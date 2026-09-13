@@ -101,7 +101,7 @@ export const DID_YOU_KNOW_ILLUSTRATIONS_EN: Record<
     "A raised, thatched grain store in a compound in the Teso country, black-and-white photograph from 1909"
   ),
   "datoga-mangati": picture(
-    "Cattle and goats resting inside a thorn-branch enclosure beneath trees, under a morning sky in Tanzania"
+    "Cattle and goats lying in a thorn-branch enclosure beneath acacias, in Tanzania"
   ),
   "azande-niamniam": picture(
     "Red and yellow flowers of Impatiens niamniamensis, grown under glass at the Berlin botanical garden."
@@ -113,7 +113,7 @@ export const DID_YOU_KNOW_ILLUSTRATIONS_EN: Record<
     "Aerial view of a flooded plain near Pibor, with green thickets rising out of the water as far as the eye can see"
   ),
   "kirdi-paien": picture(
-    "Rocky hills and scrub of the Mora massif in the Mandara Mountains, Cameroon"
+    "Rocky hills and scrub of the Mandara Mountains, in Cameroon's Far North Region"
   ),
   "bambara-refus": picture(
     "Bamana chi wara dance crest, in openwork wood, depicting an antelope with raised horns."
@@ -122,7 +122,7 @@ export const DID_YOU_KNOW_ILLUSTRATIONS_EN: Record<
     "Stone and mud-brick houses and granaries packed against the sandstone wall of the Bandiagara escarpment"
   ),
   "le-nom-est-une-reponse": picture(
-    "Compound walls painted with red, black and white figures, birds and lozenges in front of round huts at Sirigu"
+    "Low wall painted with red, black and white figures and chevrons in front of the round thatched huts of SWOPA at Sirigu"
   ),
   "guere-wobe": picture(
     "Wè ritual mask from Côte d'Ivoire, with a protruding face ringed with fibres."
@@ -143,7 +143,7 @@ export const DID_YOU_KNOW_ILLUSTRATIONS_EN: Record<
     "Round thatched houses under coconut palms, with firewood for sale beside a sandy road"
   ),
   "hutu-cartes-identite": picture(
-    "Green hills and a cultivated valley under a cloudy sky near Rumonge, Burundi"
+    "Green hills and a cultivated valley under a cloudy sky in southern Burundi"
   ),
   "kasem-gurunsi": picture(
     "Mud house covered in hand-painted black and white geometric patterns, in the royal court of Tiébélé"
@@ -152,10 +152,10 @@ export const DID_YOU_KNOW_ILLUSTRATIONS_EN: Record<
     "The Grand Mosque of Bobo-Dioulasso, built in mud brick and bristling with supporting beams."
   ),
   "teke-vendre": picture(
-    "A chain of twisted brass rings once used as currency, displayed on a museum stand"
+    "Coiled, interlinked rings of copper-coloured metal displayed on a museum stand"
   ),
   "tetela-watetera": picture(
-    "Detail of an engraved German map of the Sankuru, with the word “BATETELA” lettered along the river"
+    "Detail of a German map of the Sankuru, with the word “BATETELA” lettered by a watercourse below the place name Londo"
   ),
   "tabwa-attache": picture(
     "Tabwa male figure in carved wood, the torso covered in chevron scarifications."
@@ -170,16 +170,16 @@ export const DID_YOU_KNOW_ILLUSTRATIONS_EN: Record<
     "A bend of the Okavango River in dry savanna with golden grass"
   ),
   "kaonde-riviere": picture(
-    "A wooded riverbank at dusk, its trees mirrored in still water"
+    "The wooded bank of the Kabompo River at dusk, its trees mirrored in the water, in Zambia's North-Western Province"
   ),
   "manianga-marche": picture(
-    "A round blackened-wood powder box carved with arches and cross-hatching"
+    "Engraving of the Congo River seen from the plateau at Manyanga, above wooded slopes"
   ),
   "gorowa-village-voisin": picture(
     "Lake Babati below a wooded hill, with maize fields in the foreground, in Tanzania's Manyara Region"
   ),
   "kalabari-calabar": picture(
-    "Engraved three-panel chart of the « Nouveau Calebar » river and the Niger mouths, surveyed in 1867"
+    "1867 map in three panels and an inset of the course of the « Nouveau Calebar », the European name for the Kalabari river, and the Niger mouths"
   ),
   "omotique-fleuve-omo": picture(
     "The wide, muddy Omo winding between wooded banks under a clear sky, seen from a dry earth bluff"
@@ -212,13 +212,13 @@ export const DID_YOU_KNOW_ILLUSTRATIONS_EN: Record<
     "The reed- and palm-lined Pangalanes canal at Mananjary, with a distant dugout canoe"
   ),
   "masa-banana": picture(
-    "Two round earthen houses on sandy ground lined with palms, at Yagoua"
+    "Two conical earthen houses on sandy ground beside a row of palms, at Yagoua"
   ),
   "rendille-baton": picture(
-    "A domed Rendille house of bent poles covered with hides and mats, under a stormy sky in northern Kenya"
+    "A domed Rendille house covered with mats, hides and pieces of cloth, under a stormy sky in northern Kenya"
   ),
   "kaffa-cafe": picture(
-    "A small, worn and stained old cup resting in an open palm, used by the Kafficho for drinking coffee"
+    "Silver crown with white feather plumes in a display case, labelled “Heritage from Kaffa Kingdom”"
   ),
   "bono-brong-ahafo": picture(
     "A huge banded sandstone boulder above a grassy valley at Tanoboase, with three tiny walkers at its foot"

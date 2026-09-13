@@ -283,16 +283,16 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
     src: "/images/anecdotes/iteso-bakedi.jpg",
     alt: "Un grenier à grain surélevé, coiffé de chaume, dans une cour du pays teso, photographie en noir et blanc de 1909",
     credit:
-      "Grenier à grain dans le pays teso, Ouganda, 1909 — J. B. Purvis, Through Uganda to Mount Elgon, Wikimedia Commons, domaine public",
+      "Grenier à grain dans le pays teso, Ouganda, 1909 — photographe inconnu, publié par J. B. Purvis (Through Uganda to Mount Elgon), Wikimedia Commons, domaine public",
     filePage:
       "https://commons.wikimedia.org/wiki/File:Grain_Store_in_teh_Teso_Country.jpg",
   },
   "datoga-mangati": {
     kind: "picture",
     src: "/images/anecdotes/datoga-mangati.jpg",
-    alt: "Des vaches et des chèvres couchées dans un enclos de branches épineuses, au pied d'arbres, sous un ciel du matin en Tanzanie",
+    alt: "Des vaches et des chèvres couchées dans un enclos de branches épineuses, au pied d'acacias, en Tanzanie",
     credit:
-      "Enclos à bétail d'un foyer datooga, Tanzanie, 2022 — Erasmus Kamugisha, Wikimedia Commons, CC BY-SA 4.0",
+      "Enclos à bétail (boma) datooga, Tanzanie, 2022 — Erasmus Kamugisha, Wikimedia Commons, CC BY-SA 4.0",
     filePage:
       "https://commons.wikimedia.org/wiki/File:A_Datoga%27s_tribe_livestock_Boma.jpg",
     licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0",
@@ -312,7 +312,7 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
     src: "/images/anecdotes/wonnin-godie.jpg",
     alt: "Masque de bovin en bois peint en ocre, bleu et blanc, cornes dressées, exposé sur un socle au Musée africain de Lyon",
     credit:
-      "Masque bovin godié, Côte d'Ivoire, vers 1900, Musée africain de Lyon — Ji-Elle, Wikimedia Commons, CC BY-SA 4.0",
+      "Masque bovin wonnin, catalogué « godié », Côte d'Ivoire, vers 1900, Musée africain de Lyon — Ji-Elle, Wikimedia Commons, CC BY-SA 4.0",
     filePage:
       "https://commons.wikimedia.org/wiki/File:Masque_bovin-Godi%C3%A9-Mus%C3%A9e_africain_de_Lyon.jpg",
     licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0",
@@ -330,9 +330,9 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
   "kirdi-paien": {
     kind: "picture",
     src: "/images/anecdotes/kirdi-paien.jpg",
-    alt: "Collines rocheuses et arbustes du massif de Mora, dans les monts Mandara, au Cameroun",
+    alt: "Collines rocheuses et arbustes des monts Mandara, dans l'Extrême-Nord du Cameroun",
     credit:
-      "Massif de Mora, monts Mandara, Cameroun — Serieminou, Wikimedia Commons, CC BY-SA 4.0",
+      "Monts Mandara, Extrême-Nord, Cameroun — Serieminou, Wikimedia Commons, CC BY-SA 4.0",
     filePage:
       "https://commons.wikimedia.org/wiki/File:Massif_de_Mora_-_Mont_Mandara.jpg",
     licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0",
@@ -359,9 +359,9 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
   "le-nom-est-une-reponse": {
     kind: "picture",
     src: "/images/anecdotes/le-nom-est-une-reponse.jpg",
-    alt: "Murs d'enceinte peints de motifs rouges, noirs et blancs — personnages, oiseaux, losanges — devant des cases rondes à Sirigu",
+    alt: "Muret peint de personnages et de chevrons rouges, noirs et blancs devant les cases rondes à toit de chaume de la SWOPA, à Sirigu",
     credit:
-      "Murs peints de la SWOPA, Sirigu, Ghana — sucram21, Flickr, CC BY 2.0",
+      "Cases peintes de la SWOPA, Sirigu, village nankana, Ghana — Sucram Yef, Flickr, CC BY 2.0",
     filePage: "https://www.flickr.com/photos/146200755@N02/46832138824",
     licenceUrl: "https://creativecommons.org/licenses/by/2.0/",
   },
@@ -426,9 +426,9 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
   "hutu-cartes-identite": {
     kind: "picture",
     src: "/images/anecdotes/hutu-cartes-identite.jpg",
-    alt: "Collines verdoyantes et vallée cultivée sous un ciel nuageux, près de Rumonge, au Burundi",
+    alt: "Collines verdoyantes et vallée cultivée sous un ciel nuageux, dans le sud du Burundi",
     credit:
-      "Collines près de Rumonge, Burundi — Dave Proffer, Wikimedia Commons, CC BY 2.0",
+      "Collines du sud du Burundi, 2007 — Dave Proffer, Wikimedia Commons, CC BY 2.0",
     filePage: "https://commons.wikimedia.org/wiki/File:Burundi_landscape.jpg",
     licenceUrl: "https://creativecommons.org/licenses/by/2.0",
   },
@@ -455,9 +455,9 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
   "teke-vendre": {
     kind: "picture",
     src: "/images/anecdotes/teke-vendre.jpg",
-    alt: "Chaîne d'anneaux de laiton torsadés servant de monnaie, présentée sur un socle de musée",
+    alt: "Anneaux de métal cuivreux enroulés et entrelacés, présentés sur un socle de musée",
     credit:
-      "Mitako, monnaie de laiton teke, Museo Casa de la Moneda, Madrid — Ángel M. Felicísimo, Wikimedia Commons, CC BY 2.0",
+      "Mitako, monnaie-bracelet en laiton ou en cuivre attribuée aux Teke du Congo, Museo Casa de la Moneda, Madrid — Ángel M. Felicísimo, Wikimedia Commons, CC BY 2.0",
     filePage:
       "https://commons.wikimedia.org/wiki/File:Mitako_(52386097369).jpg",
     licenceUrl: "https://creativecommons.org/licenses/by/2.0",
@@ -465,9 +465,9 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
   "tetela-watetera": {
     kind: "picture",
     src: "/images/anecdotes/tetela-watetera.jpg",
-    alt: "Détail d'une carte allemande gravée du Sankuru, où le mot « BATETELA » est inscrit le long du fleuve",
+    alt: "Détail d'une carte allemande du Sankuru, où le mot « BATETELA » est inscrit près d'un cours d'eau, sous le nom de lieu Londo",
     credit:
-      "Carte du Sankuru (détail), Petermanns Geographische Mitteilungen, 1888 — Bruno Hassenstein, Wikimedia Commons, domaine public",
+      "Carte du Sankuru d'après les relevés de Ludwig Wolf en 1886 (détail), Petermanns Geographische Mitteilungen, 1888 — Bruno Hassenstein, Wikimedia Commons, domaine public",
     filePage:
       "https://commons.wikimedia.org/wiki/File:Originalkarte_des_Sankuru-Stromes_und_seiner_Nebenfl%C3%BCsse.png",
   },
@@ -513,7 +513,7 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
   "kaonde-riviere": {
     kind: "picture",
     src: "/images/anecdotes/kaonde-riviere.jpg",
-    alt: "Rive boisée d'une rivière calme au crépuscule, les arbres se reflétant dans l'eau",
+    alt: "Rive boisée de la rivière Kabompo au crépuscule, les arbres se reflétant dans l'eau, dans la province Nord-Ouest de la Zambie",
     credit:
       "La rivière Kabompo, parc national de West Lunga, Zambie — MarkTownsendZambia, Wikimedia Commons, CC BY-SA 4.0",
     filePage:
@@ -523,12 +523,11 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
   "manianga-marche": {
     kind: "picture",
     src: "/images/anecdotes/manianga-marche.jpg",
-    alt: "Boîte à poudre en bois noirci, ventrue, gravée d'arcs et de croisillons",
+    alt: "Gravure du fleuve Congo vu depuis le plateau de Manyanga, au-dessus de pentes boisées",
     credit:
-      "Boîte à poudre tutukipfula, Sundi, Brooklyn Museum (22.140) — Wikimedia Commons, CC BY 3.0",
+      "Le fleuve Congo vu depuis le plateau de Manyanga, gravure publiée en 1895 — Harry H. Johnston, Wikimedia Commons, domaine public",
     filePage:
-      "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_22.140_Powder_Box_Tutukipfula.jpg",
-    licenceUrl: "https://creativecommons.org/licenses/by/3.0",
+      "https://commons.wikimedia.org/wiki/File:The_River_Congo_from_its_mouth_to_B%C3%B3lob%C3%B3;_with_a_general_description_of_the_natural_history_and_anthropology_of_its_western_basin_(1895)_(14741012296).jpg",
   },
   "gorowa-village-voisin": {
     kind: "picture",
@@ -542,9 +541,9 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
   "kalabari-calabar": {
     kind: "picture",
     src: "/images/anecdotes/kalabari-calabar.jpg",
-    alt: "Carte gravée en trois panneaux du cours du « Nouveau Calebar » et des bouches du Niger, levée en 1867",
+    alt: "Carte de 1867 en trois panneaux et un carton du cours du « Nouveau Calebar », nom européen du fleuve des Kalabari, et des bouches du Niger",
     credit:
-      "Cours du Nouveau Calebar, levé de Charles Girard, 1867 — Wikimedia Commons, domaine public",
+      "Cours du Nouveau Calebar, delta du Niger, 1867 — Charles Girard, Wikimedia Commons, domaine public",
     filePage:
       "https://commons.wikimedia.org/wiki/File:Cours_du_Nouveau_Calebar_lev_par_Charles_Girard_-_DPLA_-_f87cbabca6ca78b0de53d8b42432764e.jpg",
   },
@@ -553,7 +552,7 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
     src: "/images/anecdotes/omotique-fleuve-omo.jpg",
     alt: "L'Omo, large et boueux, serpente entre des rives boisées sous un ciel clair, vu depuis un talus de terre sèche",
     credit:
-      "L'Omo vu du village karo de Duss, Éthiopie, 2012 — Bernard Gagnon, Wikimedia Commons, CC BY-SA 3.0",
+      "L'Omo vu du village karo de Doose, Éthiopie, 2012 — Bernard Gagnon, Wikimedia Commons, CC BY-SA 3.0",
     filePage: "https://commons.wikimedia.org/wiki/File:Omo_River_02.jpg",
     licenceUrl: "https://creativecommons.org/licenses/by-sa/3.0",
   },
@@ -579,7 +578,7 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
     src: "/images/anecdotes/fulbe-quatre-noms.jpg",
     alt: "Grande couverture de laine écrue tissée en bandes, ornée de motifs géométriques bruns et noirs et de deux lisérés rouges",
     credit:
-      "Couverture kaasa de style peul, Mali, Niger ou Burkina Faso, Cleveland Museum of Art — CC0",
+      "Couverture kaasa de style fulbe, Mali, Niger ou Burkina Faso, années 1930 ou avant — Cleveland Museum of Art, CC0",
     filePage: "https://clevelandart.org/art/2024.72",
     licenceUrl: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
@@ -643,16 +642,16 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
   "masa-banana": {
     kind: "picture",
     src: "/images/anecdotes/masa-banana.jpg",
-    alt: "Deux cases rondes en terre crue sur un terrain sablonneux bordé de rôniers, à Yagoua",
+    alt: "Deux cases coniques en terre crue sur un sol sablonneux, près d'une rangée de rôniers, à Yagoua",
     credit:
-      "Cases massa à Yagoua, Cameroun — Bile rene, Wikimedia Commons, CC BY-SA 4.0",
+      "Cases masa à Yagoua, Cameroun — Bile rene, Wikimedia Commons, CC BY-SA 4.0",
     filePage: "https://commons.wikimedia.org/wiki/File:Cases_Massa_Yagoua.jpg",
     licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0",
   },
   "rendille-baton": {
     kind: "picture",
     src: "/images/anecdotes/rendille-baton.jpg",
-    alt: "Une maison rendille en dôme, faite de perches courbées couvertes de peaux et de nattes, sous un ciel d'orage au nord du Kenya",
+    alt: "Une maison rendille en dôme, couverte de nattes, de peaux et de pièces de tissu, sous un ciel d'orage au nord du Kenya",
     credit:
       "Maison traditionnelle rendille, nord du Kenya, 2012 — Redemption93, Wikimedia Commons, CC BY-SA 4.0",
     filePage:
@@ -662,12 +661,12 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
   "kaffa-cafe": {
     kind: "picture",
     src: "/images/anecdotes/kaffa-cafe.jpg",
-    alt: "Un petit gobelet ancien, patiné et taché, posé dans la paume d'une main ouverte, utilisé chez les Kafficho pour boire le café",
+    alt: "Couronne d'argent ornée de plumes blanches, présentée sous vitrine avec l'étiquette « Heritage from Kaffa Kingdom »",
     credit:
-      "Ancienne tasse à café kafficho, Éthiopie — Rod Waddington, Wikimedia Commons, CC BY-SA 2.0",
+      "Couronne d'argent du royaume de Kaffa, Musée ethnologique d'Addis-Abeba — Sailko, Wikimedia Commons, CC BY 3.0",
     filePage:
-      "https://commons.wikimedia.org/wiki/File:Ancient_Coffee_Cup,_Kafa_Tribe_(13186929813).jpg",
-    licenceUrl: "https://creativecommons.org/licenses/by-sa/2.0",
+      "https://commons.wikimedia.org/wiki/File:Corona_d%27argento_con_cimiero,_dal_regno_di_kaffa.jpg",
+    licenceUrl: "https://creativecommons.org/licenses/by/3.0",
   },
   "bono-brong-ahafo": {
     kind: "picture",
