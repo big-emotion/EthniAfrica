@@ -50,6 +50,7 @@ import {
 } from "@/components/layout/SocialGlyphs";
 import type { Language } from "@/types/shared";
 
+import { DiscoveryDownloads } from "./DiscoveryDownloads";
 import styles from "./DiscoveryReader.module.css";
 
 interface DiscoveryReaderProps {
@@ -672,6 +673,12 @@ export function DiscoveryReader({
                   );
                 })}
               </div>
+              <DiscoveryDownloads
+                language={language}
+                publication={publications.find(
+                  (entry) => entry.id === sharePayload.id
+                )}
+              />
               {shareFeedback ? (
                 <p role="status" className={styles.shareFeedback}>
                   {shareFeedback}

@@ -40,6 +40,12 @@ const en = {
   home: "Home",
   referenced: "Referenced source",
   official: "Official source",
+  downloads: {
+    title: "Download the image",
+    story: "9:16 · Story and Reel",
+    post: "4:5 · Post",
+    avatar: "1:1 · Profile picture",
+  },
   credits: {
     burkina: "Ouagadougou, 1930–1931 · W. Mittelholzer · Public domain",
     guere: "Wè mask · Mickey Mystique · CC BY-SA 4.0",
@@ -91,6 +97,12 @@ const fr: DiscoveriesCopy = {
   home: "Accueil",
   referenced: "Source référencée",
   official: "Source officielle",
+  downloads: {
+    title: "Télécharger l’image",
+    story: "9:16 · Story et Reel",
+    post: "4:5 · Publication",
+    avatar: "1:1 · Photo de profil",
+  },
   credits: {
     burkina: "Ouagadougou, 1930–1931 · W. Mittelholzer · Domaine public",
     guere: "Masque wè · Mickey Mystique · CC BY-SA 4.0",
