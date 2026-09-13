@@ -89,6 +89,7 @@ describe("copy-literal guard — which files it reads", () => {
       "src/test/mockRouteLanguage.ts",
       "src/stories/Introduction.tsx",
       "src/lib/home/didYouKnowFacts.ts",
+      "src/lib/proverbs/proverbs.ts",
       "src/lib/dossiers/nommer/chapters/lePeuple.ts",
       "src/lib/legal-pages.ts",
       "src/lib/legal-pages-en.ts",

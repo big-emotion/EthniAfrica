@@ -10,6 +10,7 @@ const en = {
   image: "Photo:",
   imageUnavailable: "Photo unavailable. The discovery text remains accessible.",
   fact: "Did you know?",
+  proverb: "Proverb",
   close: "Close",
   sources: "Sources",
   atlas: "In the atlas",
@@ -59,6 +60,7 @@ const fr: DiscoveriesCopy = {
   imageUnavailable:
     "Photo indisponible. Le texte de la découverte reste accessible.",
   fact: "Saviez-vous que ?",
+  proverb: "Proverbe",
   close: "Fermer",
   sources: "Sources",
   atlas: "Dans l’atlas",

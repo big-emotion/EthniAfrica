@@ -19,6 +19,8 @@ vi.mock("@/components/layout/PageLayout", () => ({
 import DiscoveriesPage, {
   generateMetadata,
 } from "@/app/[lang]/decouvertes/[[...publication]]/page";
+import { eligiblePublications } from "@/lib/discoveries/catalog";
+import { getDiscoveryPublications } from "@/lib/discoveries/entries";
 
 const params = (publication?: string[], lang = "fr") =>
   Promise.resolve({ lang, publication });
@@ -47,8 +49,13 @@ describe("Découvertes server entry", () => {
     const html = renderToString(
       await DiscoveriesPage({ params: params(["guere-krahn-we"]) })
     );
+    const noscript = html.slice(html.indexOf("<noscript>"));
     expect(html).toContain("<noscript>");
-    expect(html).toContain("/fr/decouvertes/burkina-faso-trois-langues");
+    // The deck is drawn per request, so the next permalink is any other
+    // publication — never the one being read.
+    expect(noscript).toMatch(
+      /href="\/fr\/decouvertes\/(?!guere-krahn-we")[a-z0-9-]+"/
+    );
   });
 
   // @req REQ-158
@@ -78,5 +85,23 @@ describe("Découvertes server entry", () => {
     );
     expect(first.openGraph?.images).not.toEqual(second.openGraph?.images);
     expect(first.twitter?.images).not.toEqual(second.twitter?.images);
+  });
+
+  // A proverb carries no photo, so its share card falls back to the site's
+  // own image rather than to an address that serves nothing.
+  // @req REQ-158
+  it("leaves a proverb's share image to the site default", async () => {
+    const proverb = eligiblePublications(getDiscoveryPublications()).find(
+      (entry) => entry.kind === "proverb"
+    )!;
+    const metadata = await generateMetadata({
+      params: params([proverb.slug.fr]),
+    });
+
+    expect(metadata.title).toBe(proverb.title.fr);
+    // The locale head already carries the site's share image; the proverb
+    // adds none of its own on top of it.
+    expect(metadata.openGraph?.images).toEqual(["/opengraph-image"]);
+    expect(metadata.twitter?.images).toBeUndefined();
   });
 });

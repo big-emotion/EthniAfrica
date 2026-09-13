@@ -444,6 +444,7 @@ describe("English slugs (DEC-049)", () => {
       compare: "/en/compare",
       migrations: "/en/dossiers/migrations",
       anecdotes: "/en/dossiers/anecdotes",
+      proverbs: "/en/dossiers/proverbs",
       discoveries: "/en/discoveries",
       quiz: "/en/games/quiz",
       colonization: "/en/dossiers/perspectives/colonisation-and-resistances",

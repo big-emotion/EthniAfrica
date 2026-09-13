@@ -93,3 +93,49 @@ describe("the dossiers hub when a reading is published", () => {
     ).toBeInTheDocument();
   });
 });
+
+/**
+ * The proverbs are a reading format of their own, like the anecdotes: they sit
+ * beside the dossiers, never among them. The site plan already listed them; the
+ * hub did not, so the only way to reach the page from the axis was the menu.
+ */
+describe("the dossiers hub offers the proverbs", () => {
+  // @req REQ-114
+  it("links to the proverbs from their own landmark", () => {
+    render(<DossierDirectory />);
+
+    const proverbs = screen.getByRole("complementary", { name: "Proverbes" });
+    expect(
+      within(proverbs).getByRole("link", { name: "Lire les proverbes" })
+    ).toHaveAttribute("href", getLocalizedRoute("fr", "proverbs"));
+  });
+
+  // @req REQ-140
+  it("links to the proverbs in English", () => {
+    render(<DossierDirectory language="en" />);
+
+    expect(
+      screen.getByRole("link", { name: "Read the proverbs" })
+    ).toHaveAttribute("href", getLocalizedRoute("en", "proverbs"));
+  });
+
+  // A theme view shows the proverbs under their primary and secondary themes
+  // only, the same filter the dossiers and the anecdotes obey.
+  // @req REQ-114
+  it.each(["langues", "noms"])("keeps them under the %s theme", (theme) => {
+    render(<DossierDirectory theme={theme} />);
+
+    expect(
+      screen.getByRole("link", { name: "Lire les proverbes" })
+    ).toBeInTheDocument();
+  });
+
+  // @req REQ-114
+  it("leaves them out of an unrelated theme", () => {
+    render(<DossierDirectory theme="migrations" />);
+
+    expect(
+      screen.queryByRole("link", { name: "Lire les proverbes" })
+    ).not.toBeInTheDocument();
+  });
+});

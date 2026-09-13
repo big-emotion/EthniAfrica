@@ -125,6 +125,22 @@
   font: 700 var(--afh-text-eyebrow) / 1.3 var(--afh-font-body);
 }
 
+/* A card with no photo has nothing to keep the text off: pinned to the foot it
+   left three fifths of the frame an empty night ground at 430 px. Centred, the
+   words are the frame's content. */
+.textCard .copy {
+  top: 0;
+  align-content: center;
+}
+
+/* The proverb in its own language, above our rendering of it: the words the
+   people say lead, ours gloss them (brand charter §3). */
+.original {
+  margin: 0;
+  font: italic 400 var(--afh-text-lead) / 1.35 var(--afh-font-display);
+  text-shadow: 0 0.125rem 0.75rem var(--afh-night-ground);
+}
+
 .copy h1,
 .copy h2 {
   margin: 0;

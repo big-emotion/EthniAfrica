@@ -1,3 +1,4 @@
+import { render } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
 vi.mock("next/navigation", () => ({
@@ -23,6 +24,7 @@ import ColonizationPage from "../regards/colonisation-et-resistances/page";
 import DossierRoute from "../[dossier]/page";
 import ThemePage from "../themes/[theme]/page";
 import AnecdotesPage from "../anecdotes/page";
+import ProverbsPage from "../proverbes/page";
 import { readDossierCorpus } from "@/lib/dossiers/corpus";
 import { DOSSIER_THEMES } from "@/lib/dossiers/themes";
 
@@ -104,5 +106,21 @@ describe("the frozen dossiers serve nothing", () => {
         searchParams: Promise.resolve({}),
       })
     ).resolves.toBeTruthy();
+  });
+
+  // The second bank rendered from code is not a reworked dossier either.
+  // @req REQ-113
+  it("keeps serving the proverbs", async () => {
+    render(
+      await ProverbsPage({
+        params: Promise.resolve({ lang: "fr" }),
+        searchParams: Promise.resolve({}),
+      })
+    );
+    // A page that rendered only its empty state would still resolve to an
+    // element; serving the dossier means serving proverbs.
+    expect(
+      document.querySelectorAll("article[data-proverb]").length
+    ).toBeGreaterThan(0);
   });
 });
