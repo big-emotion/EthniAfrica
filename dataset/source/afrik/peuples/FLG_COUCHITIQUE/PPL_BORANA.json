@@ -114,6 +114,11 @@
         "title": "Oromo, Borana-Arsi-Guji – Wiktionary ISO 639-3 Africa",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
         "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Borana-Arsi-Guji Oromo (bora1271)",
+        "url": "https://glottolog.org/resource/languoid/id/bora1271",
+        "tier": "official"
       }
     ]
   },

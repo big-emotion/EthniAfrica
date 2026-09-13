@@ -90,6 +90,11 @@
         "title": "Gateway Africa Safaris – Luvale Tribe",
         "url": "https://www.gateway-africa.com/tribe/luvale_tribe.html",
         "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Luvale (luva1239)",
+        "url": "https://glottolog.org/resource/languoid/id/luva1239",
+        "tier": "official"
       }
     ]
   },

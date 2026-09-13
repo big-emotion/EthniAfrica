@@ -85,7 +85,12 @@
       {
         "title": "LearnAkan – Akan Language dialects",
         "url": "https://learnakan.com/akan-language/",
-        "tier": "needs_review"
+        "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Twi (twii1234)",
+        "url": "https://glottolog.org/resource/languoid/id/twii1234",
+        "tier": "official"
       }
     ]
   },

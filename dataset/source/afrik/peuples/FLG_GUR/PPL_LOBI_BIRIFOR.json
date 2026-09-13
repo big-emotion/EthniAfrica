@@ -117,7 +117,22 @@
       {
         "title": "Les Racines du Ciel (roman) – Gary R., 1956 (inspiration : peuple Lobi)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Lobi",
+        "url": "https://glottolog.org/resource/languoid/id/lobi1245",
+        "tier": "official"
+      },
+      {
+        "title": "Glottolog — Malba Birifor (malb1235)",
+        "url": "https://glottolog.org/resource/languoid/id/malb1235",
+        "tier": "official"
+      },
+      {
+        "title": "Glottolog — Southern Birifor (sout2790)",
+        "url": "https://glottolog.org/resource/languoid/id/sout2790",
+        "tier": "official"
       }
     ]
   },

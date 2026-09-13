@@ -99,7 +99,7 @@
       {
         "title": "TERROIR : L'histoire du peuple Koulango – Djasso.com, 2021",
         "url": "https://djasso.com/terroir-voici-toute-lrhistoire-du-peuple-koulango-a16305741701.html",
-        "tier": "needs_review"
+        "tier": "unverified"
       },
       {
         "title": "The Kulango of Cote d'Ivoire – 101 Last Tribes",
@@ -114,7 +114,17 @@
       {
         "title": "Parlons Koulango – Kra (linguistique), The Swiss Bay PDF",
         "url": null,
-        "tier": "needs_review"
+        "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Bouna Kulango (boun1243)",
+        "url": "https://glottolog.org/resource/languoid/id/boun1243",
+        "tier": "official"
+      },
+      {
+        "title": "Glottolog — Bondoukou Kulango (bond1246)",
+        "url": "https://glottolog.org/resource/languoid/id/bond1246",
+        "tier": "official"
       }
     ]
   },
