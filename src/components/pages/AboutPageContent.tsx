@@ -164,6 +164,57 @@ export default function AboutPageContent({ language }: AboutPageContentProps) {
             {purpose.claimStatus}
           </p>
         </div>
+        {/* The declaration the claim rests on, then the three sentences the
+            atlas refuses with their reasons — the corrections are the doctrine
+            (docs/editorial/purpose-doctrine.md). */}
+        <div data-testid="about-declaration" className="space-y-afh-2xl">
+          <div className="grid grid-cols-1 gap-afh-xl min-[720px]:grid-cols-3">
+            {purpose.declaration.map((part) => (
+              <div key={part.title} className="space-y-afh-sm">
+                <h3 className="font-afh-display text-afh-h3 font-black">
+                  {part.title}
+                </h3>
+                {part.paragraphs.map((paragraph) => (
+                  <p
+                    key={paragraph}
+                    className="leading-relaxed text-afh-text-soft"
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            ))}
+          </div>
+          <div
+            data-testid="about-declaration-refusals"
+            className="space-y-afh-md border-t border-afh-border pt-afh-lg"
+          >
+            <h3 className="font-afh-display text-afh-h3 font-black">
+              {purpose.refusals.title}
+            </h3>
+            <ul
+              className="grid grid-cols-1 gap-afh-md min-[720px]:grid-cols-3"
+              role="list"
+            >
+              {purpose.refusals.items.map((item) => (
+                <li
+                  key={item.sentence}
+                  className="space-y-afh-xs border-l-2 border-afh-border pl-afh-md"
+                >
+                  <p className="font-afh-display text-afh-lead font-bold">
+                    {item.sentence}
+                  </p>
+                  <p
+                    data-role="reason"
+                    className="text-afh-small leading-relaxed text-afh-text-soft"
+                  >
+                    {item.reason}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
         <ul
           className="grid grid-cols-1 gap-afh-md min-[720px]:grid-cols-3"
           role="list"

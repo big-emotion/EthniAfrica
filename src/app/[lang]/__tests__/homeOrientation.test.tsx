@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from "vitest";
-import { render, screen, within } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import React from "react";
 
 const fixtureCounts = {
@@ -34,6 +34,18 @@ vi.mock("@/lib/home/seedWords", async (importOriginal) => {
   };
 });
 
+// The document plan is asserted on the globe draw, the one that adds no
+// heading of its own; the anecdote draw's h2 is HomeHero.test.tsx's concern.
+vi.mock("@/lib/home/homeHeroVisuals", async (importOriginal) => {
+  const actual =
+    await importOriginal<typeof import("@/lib/home/homeHeroVisuals")>();
+  return {
+    ...actual,
+    drawHomeHeroVisual: () => ({ kind: "globe" }),
+    drawHomeHeroVisualSide: () => "end",
+  };
+});
+
 vi.mock("@/components/layout/PageLayout", () => ({
   PageLayout: ({ children }: { children: React.ReactNode }) => (
     <div data-testid="page-layout">{children}</div>
@@ -56,9 +68,9 @@ const precedes = (first: Element, second: Element) =>
   );
 
 describe("home — what the reader meets, and in what order (REQ-113)", () => {
-  // The DOM is the phone composition: copy/search/seeds, then the globe.
+  // The DOM is the phone composition: copy/search/seeds, then the visual.
   // Desktop reuses those nodes through grid areas rather than maintaining a
-  // second reading order.
+  // second reading order — whichever side the visual is drawn to.
   // @req REQ-113
   it("orders the search-first hero for mobile before enhancing it for desktop", async () => {
     const { container } = await renderHome();
@@ -75,20 +87,19 @@ describe("home — what the reader meets, and in what order (REQ-113)", () => {
     expect(precedes(copy!, visual!)).toBe(true);
   });
 
+  // The hero is the whole home now: the « Saviez-vous » band that followed it
+  // was retired on 2026-09-13 and its anecdote became one of the hero's draws.
   // @req REQ-113
-  it("places exactly two sourced facts after the hero and no retired section", async () => {
+  it("ends on the hero, with no band after it and no retired section", async () => {
     const { container } = await renderHome();
 
-    const hero = container.querySelector(".home-hero");
-    const section = screen.getByTestId("home-did-you-know");
-
-    expect(precedes(hero!, section)).toBe(true);
-    expect(screen.getAllByTestId("home-did-you-know")).toHaveLength(1);
-    expect(within(section).getAllByTestId("home-dyk-fact")).toHaveLength(2);
-    expect(
-      within(section).getAllByTestId("home-dyk-official-source")
-    ).toHaveLength(2);
+    const layout = screen.getByTestId("page-layout");
+    expect(layout.children).toHaveLength(1);
+    expect(layout.firstElementChild).toBe(
+      container.querySelector(".home-hero")
+    );
     for (const testId of [
+      "home-did-you-know",
       "home-purpose-blocks",
       "access-axes",
       "home-synthesis-rail",
@@ -112,16 +123,15 @@ describe("home — what the reader meets, and in what order (REQ-113)", () => {
     expect(answer).toHaveTextContent(/sourc/i);
   });
 
-  // One page title, then one title per drawn fact. The corpus figures are
-  // values, not headings competing with the page question — and the band
-  // itself takes no group title, because it draws its two facts at random:
-  // any sentence written over them is true of every draw or of none.
+  // One page title. The corpus figures are values, not headings competing
+  // with the page question, and the purpose disclosure is two sentences, not
+  // a section.
   // @req REQ-113
-  it("keeps one h1 and gives each drawn fact its own h2", async () => {
+  it("keeps one h1 and no section heading under the globe draw", async () => {
     await renderHome();
 
     expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
-    expect(screen.getAllByRole("heading", { level: 2 })).toHaveLength(2);
+    expect(screen.queryAllByRole("heading", { level: 2 })).toHaveLength(0);
     expect(screen.queryAllByRole("heading", { level: 3 })).toHaveLength(0);
   });
 

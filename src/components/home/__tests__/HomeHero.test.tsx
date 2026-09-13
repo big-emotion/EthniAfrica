@@ -1,13 +1,33 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
 import { HomeHero } from "@/components/home/HomeHero";
 import { PRODUCT_NAME } from "@/lib/brand";
 import { CORPUS_CLASSES } from "@/lib/home/corpusClasses";
+import type { DidYouKnowFact } from "@/lib/home/didYouKnowFacts";
 import { HOME_HERO_IMAGES } from "@/lib/home/homeHeroVisuals";
+import { homePurposeCopy } from "@/lib/i18n/copy/homePurpose";
+
+const ANECDOTE: DidYouKnowFact = {
+  id: "test-hero-anecdote",
+  headline: "Le Cameroun porte le nom d'un crustacé.",
+  body: [
+    "Rio dos Camarões, la rivière des crevettes.",
+    "Le nom de l'estuaire est devenu celui du pays.",
+  ],
+  entities: [{ kind: "country", id: "CMR", label: "Cameroun" }],
+  tier: "referenced",
+  sources: [
+    {
+      title: "Ministère des Relations extérieures du Cameroun — Histoire",
+      url: "https://www.diplocam.cm/histoire/",
+      tier: "official",
+    },
+  ],
+};
 
 // The band carries an interactive island since the search field landed in it,
 // and useRouter throws outside an app-router tree rather than degrading.
@@ -134,7 +154,11 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
     );
     expect(
       paragraphs.map((paragraph) => paragraph.getAttribute("data-testid"))
-    ).toEqual(["home-hero-answer"]);
+    ).toEqual([
+      "home-hero-answer",
+      "home-hero-purpose-sentence",
+      "home-hero-purpose-sentence",
+    ]);
     expect(screen.getByTestId("home-corpus-counts").tagName).toBe("DL");
     expect(container.querySelector(".home-hero-lede")).toBeNull();
     expect(container.querySelector(".home-hero-standfirst")).toBeNull();
@@ -315,6 +339,138 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
     render(<HomeHero language="fr" visual={{ kind: "globe" }} />);
     expect(screen.getByTestId("home-hero-globe")).toBeInTheDocument();
     expect(screen.queryByRole("img")).not.toBeInTheDocument();
+  });
+
+  /**
+   * The doctrine, in the two sentences the social series opens and closes on,
+   * behind a closed disclosure: the band's job is still the search, and a
+   * reader who wants to know what the atlas is for asks for it in one press.
+   * A native <details>, so the answer needs no script to open.
+   */
+  // @req REQ-115
+  it("keeps the purpose behind a closed disclosure under the answer", () => {
+    render(<HomeHero language="fr" />);
+
+    const disclosure = screen.getByTestId("home-hero-purpose");
+    expect(disclosure.tagName).toBe("DETAILS");
+    expect(disclosure).not.toHaveAttribute("open");
+    expect(disclosure.querySelector("summary")?.textContent).toBe(
+      homePurposeCopy.fr.toggle
+    );
+
+    const sentences = within(disclosure)
+      .getAllByTestId("home-hero-purpose-sentence")
+      .map((sentence) => sentence.textContent);
+    expect(sentences).toEqual(homePurposeCopy.fr.sentences);
+    expect(sentences[0]).toMatch(/cent quarante ans.*Les noms en ont mille/);
+    expect(sentences[1]).toMatch(/dessinée par-dessus/);
+
+    expect(disclosure.querySelector("a")).toHaveAttribute(
+      "href",
+      "/fr/about#about-purpose-title"
+    );
+
+    const answer = screen.getByTestId("home-hero-answer");
+    const search = screen.getByRole("search");
+    expect(
+      answer.compareDocumentPosition(disclosure) &
+        Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    expect(
+      disclosure.compareDocumentPosition(search) &
+        Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+  });
+
+  // @req REQ-145
+  it("states the purpose in English on the English home", () => {
+    render(<HomeHero language="en" />);
+
+    const disclosure = screen.getByTestId("home-hero-purpose");
+    expect(disclosure.querySelector("summary")?.textContent).toBe(
+      homePurposeCopy.en.toggle
+    );
+    expect(
+      within(disclosure)
+        .getAllByTestId("home-hero-purpose-sentence")
+        .map((sentence) => sentence.textContent)
+    ).toEqual(homePurposeCopy.en.sentences);
+  });
+
+  /**
+   * The « Saviez-vous » band is gone from the home; its anecdote now takes
+   * its turn in the hero's visual slot, whole — headline, prose, the atlas
+   * entries it names and its source — rather than as a teaser.
+   */
+  // @req REQ-115
+  it("renders a drawn anecdote whole in the visual slot", () => {
+    render(
+      <HomeHero language="fr" visual={{ kind: "anecdote", fact: ANECDOTE }} />
+    );
+
+    const slot = screen.getByTestId("home-hero-anecdote");
+    expect(
+      within(slot).getByRole("heading", { level: 2, name: ANECDOTE.headline })
+    ).toBeInTheDocument();
+    for (const paragraph of ANECDOTE.body) {
+      expect(within(slot).getByText(paragraph)).toBeInTheDocument();
+    }
+    expect(
+      within(slot).getByRole("link", { name: /^Pays\s*Cameroun$/ })
+    ).toHaveAttribute("href", expect.stringContaining("/fr/"));
+    expect(
+      within(slot).getByRole("link", { name: ANECDOTE.sources![0].title })
+    ).toHaveAttribute("href", ANECDOTE.sources![0].url);
+    expect(screen.queryByTestId("home-hero-globe")).not.toBeInTheDocument();
+  });
+
+  // A whole anecdote is far taller than the question beside it; centred, it
+  // pushed the question under a screen of empty parchment at 1440.
+  // @req REQ-115
+  it("tops the columns rather than centring them when the anecdote is drawn", () => {
+    const { container } = render(
+      <HomeHero language="fr" visual={{ kind: "anecdote", fact: ANECDOTE }} />
+    );
+
+    expect(container.querySelector(".home-hero-inner")).toHaveClass(
+      "home-hero-inner--anecdote"
+    );
+    const styles = Array.from(container.querySelectorAll("style"))
+      .map((style) => style.textContent)
+      .join("\n");
+    expect(styles).toMatch(
+      /@media\s*\(min-width:\s*1200px\)[\s\S]*\.home-hero-inner--anecdote\s*\{[^}]*align-items:\s*start/
+    );
+  });
+
+  /**
+   * The side is drawn per request and applied only where there are two
+   * columns. The source order never moves: a phone and a screen reader meet
+   * the question first whichever side the visual takes at 1200px.
+   */
+  // @req REQ-115
+  it("puts the visual on the side the page drew, at desktop only", () => {
+    const { container, rerender } = render(
+      <HomeHero language="fr" visualSide="start" />
+    );
+    const inner = () => container.querySelector(".home-hero-inner");
+
+    expect(inner()).toHaveClass("home-hero-inner--visual-start");
+    const copy = container.querySelector(".home-hero-copy")!;
+    const visual = container.querySelector(".home-hero-visual")!;
+    expect(
+      copy.compareDocumentPosition(visual) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+
+    rerender(<HomeHero language="fr" visualSide="end" />);
+    expect(inner()).not.toHaveClass("home-hero-inner--visual-start");
+
+    const styles = Array.from(container.querySelectorAll("style"))
+      .map((style) => style.textContent)
+      .join("\n");
+    expect(styles).toMatch(
+      /@media\s*\(min-width:\s*1200px\)[\s\S]*\.home-hero-inner--visual-start\s*\{[^}]*grid-template-areas:\s*"globe copy"/
+    );
   });
 
   // @req REQ-115

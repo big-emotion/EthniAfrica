@@ -272,6 +272,79 @@ describe("AboutPageContent (REQ-132)", () => {
     expect(purposeChapter).toHaveTextContent(/191 peoples/);
   });
 
+  /**
+   * The claim alone told a reader what the atlas thinks and not why. The full
+   * declaration is the operator's statement of 10 September 2026 as the agent
+   * corrected it (docs/editorial/purpose-doctrine.md): older, larger and still
+   * alive — never gentler, never lost, never a story about who drew the line.
+   */
+  // @req REQ-132
+  it("publishes the full declaration inside the purpose chapter", () => {
+    renderAbout();
+
+    const declaration = within(screen.getByTestId("about-purpose")).getByTestId(
+      "about-declaration"
+    );
+
+    expect(declaration).toHaveTextContent(
+      /Les frontières de l’Afrique ont cent quarante ans\. Les noms en ont mille\./
+    );
+    expect(declaration).toHaveTextContent(/elle le traverse/);
+    expect(declaration).toHaveTextContent(/L’ordre apparent est inversé/);
+    expect(declaration).toHaveTextContent(
+      /ce qui a l’air ancien est encore là/
+    );
+    expect(declaration).toHaveTextContent(
+      /garde le colonisateur au centre de la phrase/
+    );
+    expect(declaration).toHaveTextContent(
+      /ce qui est resté, pas de ce qui a été pris/
+    );
+  });
+
+  /**
+   * The corrections are the doctrine, so they are published with their
+   * reasons: a refused sentence printed without why reads as a taboo, and a
+   * reason without the sentence it answers reads as a lecture.
+   */
+  // @req REQ-132
+  it("names the three sentences the atlas does not write, each with its reason", () => {
+    renderAbout();
+
+    const refusals = screen.getByTestId("about-declaration-refusals");
+    const items = within(refusals).getAllByRole("listitem");
+
+    expect(items).toHaveLength(3);
+    expect(refusals).toHaveTextContent(
+      /Avant, on vivait en accord avec le continent/
+    );
+    expect(refusals).toHaveTextContent(/Les frontières sont arbitraires/);
+    expect(refusals).toHaveTextContent(/Renouer avec le passé/);
+    expect(refusals).toHaveTextContent(/reconnaître ce qui n’a jamais cessé/);
+    for (const item of items) {
+      expect(
+        item.querySelector('[data-role="reason"]')?.textContent?.trim()
+      ).toBeTruthy();
+    }
+  });
+
+  // @req REQ-145
+  it("carries the declaration in English too", () => {
+    render(<AboutPageContent language="en" />);
+
+    const declaration = screen.getByTestId("about-declaration");
+
+    expect(declaration).toHaveTextContent(
+      /Africa’s borders are a hundred and forty years old\. The names are a thousand\./
+    );
+    expect(declaration).toHaveTextContent(/The apparent order is reversed/);
+    expect(
+      within(screen.getByTestId("about-declaration-refusals")).getAllByRole(
+        "listitem"
+      )
+    ).toHaveLength(3);
+  });
+
   // Trimmed 2026-09-01: the example-country cards ("Ce que contient une
   // fiche"), the interactive access cards ("Par où commencer") and the
   // About/Doctrine distinction ("03 · La méthode") each duplicated a block

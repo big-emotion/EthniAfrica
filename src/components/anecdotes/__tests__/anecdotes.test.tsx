@@ -161,7 +161,12 @@ describe("AnecdoteReader — one anecdote at a time (REQ-113)", () => {
   it("renders its reader actions in English", () => {
     render(<AnecdoteReader language="en" {...readerProps()} />);
 
-    expect(screen.getByRole("button", { name: "Next" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: "Next anecdote" })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: "Previous anecdote" })
+    ).toBeInTheDocument();
     expect(
       screen.getByRole("button", { name: "This anecdote is interesting" })
     ).toBeInTheDocument();
@@ -189,7 +194,9 @@ describe("AnecdoteReader — one anecdote at a time (REQ-113)", () => {
     const seen: string[] = [];
     for (let turn = 0; turn < DECK.length; turn += 1) {
       seen.push(screen.getByRole("heading", { level: 2 }).textContent ?? "");
-      await user.click(screen.getByRole("button", { name: "Suivant" }));
+      await user.click(
+        screen.getByRole("button", { name: "Anecdote suivante" })
+      );
     }
 
     expect(new Set(seen).size).toBe(DECK.length);
@@ -299,7 +306,7 @@ describe("AnecdoteReader — one anecdote at a time (REQ-113)", () => {
     render(<AnecdoteReader language="fr" {...readerProps()} />);
 
     await user.click(screen.getByRole("button", { name: "Partager" }));
-    await user.click(screen.getByRole("button", { name: "Suivant" }));
+    await user.click(screen.getByRole("button", { name: "Anecdote suivante" }));
 
     expect(screen.queryByRole("link", { name: "Facebook" })).toBeNull();
   });
@@ -309,13 +316,85 @@ describe("AnecdoteReader — one anecdote at a time (REQ-113)", () => {
     const user = userEvent.setup();
     render(<AnecdoteReader language="fr" {...readerProps()} />);
 
-    await user.click(screen.getByRole("button", { name: "Suivant" }));
+    await user.click(screen.getByRole("button", { name: "Anecdote suivante" }));
 
     // The announcement names the anecdote, not a position in a deck: the page
     // no longer counts, so neither does the live region.
     expect(
       screen.getByText(`Anecdote suivante : ${UNSOURCED.headline}`)
     ).toBeInTheDocument();
+  });
+
+  // @req REQ-113
+  it("turns back to the anecdote the reader just left", async () => {
+    const user = userEvent.setup();
+    render(<AnecdoteReader language="fr" {...readerProps()} />);
+
+    await user.click(screen.getByRole("button", { name: "Anecdote suivante" }));
+    expect(screen.getByText(UNSOURCED.headline)).toBeInTheDocument();
+
+    await user.click(
+      screen.getByRole("button", { name: "Anecdote précédente" })
+    );
+    expect(screen.getByText(SOURCED.headline)).toBeInTheDocument();
+    expect(
+      screen.getByText(`Anecdote précédente : ${SOURCED.headline}`)
+    ).toBeInTheDocument();
+  });
+
+  // A way back that leads nowhere would read as a broken button.
+  // @req REQ-113
+  it("offers no way back before the reader has turned", () => {
+    render(<AnecdoteReader language="fr" {...readerProps()} />);
+
+    expect(
+      screen.getByRole("button", { name: "Anecdote précédente" })
+    ).toBeDisabled();
+  });
+
+  /**
+   * Two arrows on the card rather than a « Suivant » under it: the reader
+   * turns where the picture is, and the controls below it are left to what
+   * the reader does with the anecdote. Icons, so each carries its name.
+   */
+  // @req REQ-113
+  it("sets the turning arrows on the card, one on each side", () => {
+    const { container } = render(
+      <AnecdoteReader language="fr" {...readerProps()} />
+    );
+
+    const turns = container.querySelector(".anecdote-split .anecdote-turns");
+    expect(turns).not.toBeNull();
+    const arrows = within(turns as HTMLElement).getAllByRole("button");
+    expect(arrows.map((arrow) => arrow.getAttribute("aria-label"))).toEqual([
+      "Anecdote précédente",
+      "Anecdote suivante",
+    ]);
+    for (const arrow of arrows) {
+      expect(arrow.textContent?.trim()).toBe("");
+    }
+  });
+
+  // What the reader does with the fact comes before the fine print on it.
+  // @req REQ-113
+  it("puts the reader's reactions above the fact's provenance", () => {
+    const { container } = render(
+      <AnecdoteReader language="fr" {...readerProps()} />
+    );
+
+    const provenance = container.querySelector(".anecdote-provenance")!;
+    for (const name of [
+      "Cette anecdote est intéressante",
+      "Partager",
+      "Je conteste cette anecdote",
+    ]) {
+      expect(
+        screen
+          .getByRole("button", { name })
+          .compareDocumentPosition(provenance) &
+          Node.DOCUMENT_POSITION_FOLLOWING
+      ).toBeTruthy();
+    }
   });
 
   // @req REQ-113
@@ -330,7 +409,9 @@ describe("AnecdoteReader — one anecdote at a time (REQ-113)", () => {
     );
 
     expect(screen.getByText(/Aucune anecdote/)).toBeInTheDocument();
-    expect(screen.queryByRole("button", { name: "Suivant" })).toBeNull();
+    expect(
+      screen.queryByRole("button", { name: "Anecdote suivante" })
+    ).toBeNull();
   });
 });
 
@@ -373,9 +454,9 @@ describe("The anecdote's two-column band (REQ-113)", () => {
         : "end";
 
     expect(sideNow()).toBe("start");
-    await user.click(screen.getByRole("button", { name: "Suivant" }));
+    await user.click(screen.getByRole("button", { name: "Anecdote suivante" }));
     expect(sideNow()).toBe("end");
-    await user.click(screen.getByRole("button", { name: "Suivant" }));
+    await user.click(screen.getByRole("button", { name: "Anecdote suivante" }));
     expect(sideNow()).toBe("start");
   });
 });

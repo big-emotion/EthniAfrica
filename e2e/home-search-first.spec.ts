@@ -68,20 +68,17 @@ test.describe("Search-first home — mobile source of truth (ETNI-1513)", () => 
     const seeds = copy.getByRole("list", { name: "Exemples de recherche" });
     const globe = inner.locator(".home-hero-globe .home-globe-stage");
     const counts = copy.getByTestId("home-corpus-counts");
-    const fact = page.getByTestId("home-did-you-know");
 
     await expect(seeds.getByRole("button")).toHaveCount(3);
     await expect(page.getByTestId(/^home-count-/)).toHaveCount(3);
-    await expect(fact).toHaveCount(1);
-    await expect(
-      page.locator('.home-hero + [data-testid="home-did-you-know"]')
-    ).toHaveCount(1);
+    // The « Saviez-vous » band is retired: its anecdote is one of the hero's
+    // drawn visuals now, and nothing follows the band.
+    await expect(page.getByTestId("home-did-you-know")).toHaveCount(0);
 
     const searchBox = await elementBox(search);
     const seedsBox = await elementBox(seeds);
     const countsBox = await elementBox(counts);
     const globeBox = await elementBox(globe);
-    const factBox = await elementBox(fact);
 
     expect(searchBox.y).toBeGreaterThanOrEqual(0);
     expect(bottom(searchBox)).toBeLessThanOrEqual(MOBILE_VIEWPORT.height);
@@ -100,22 +97,17 @@ test.describe("Search-first home — mobile source of truth (ETNI-1513)", () => 
     expect(copyFlow).toEqual(["FORM", "UL", "DL"]);
 
     const pageFlow = await page
-      .locator(
-        '.home-hero-copy, .home-hero-globe, [data-testid="home-did-you-know"]'
-      )
+      .locator(".home-hero-copy, .home-hero-globe")
       .evaluateAll((nodes) =>
-        nodes.map((node) => {
-          if (node.classList.contains("home-hero-copy")) return "copy";
-          if (node.classList.contains("home-hero-globe")) return "globe";
-          return "fact";
-        })
+        nodes.map((node) =>
+          node.classList.contains("home-hero-copy") ? "copy" : "globe"
+        )
       );
-    expect(pageFlow).toEqual(["copy", "globe", "fact"]);
+    expect(pageFlow).toEqual(["copy", "globe"]);
 
     expect(seedsBox.y).toBeGreaterThanOrEqual(bottom(searchBox) - 1);
     expect(countsBox.y).toBeGreaterThanOrEqual(bottom(seedsBox) - 1);
     expect(globeBox.y).toBeGreaterThanOrEqual(bottom(countsBox) - 1);
-    expect(factBox.y).toBeGreaterThanOrEqual(bottom(globeBox) - 1);
 
     // A content-driven band keeps the same used height when only the viewport
     // height changes. The computed floors also rule out vh/svh/dvh min-size
@@ -163,7 +155,10 @@ test.describe("Search-first home — desktop widening pass (ETNI-1513)", () => {
   });
 
   // @req REQ-112
-  test("widens to two columns and lets the single fact span below them", async ({
+  // `?hero=` pins the side as well as the kind, so a browser check always
+  // meets the copy on the left; visitors get the side drawn per request.
+  // @req REQ-112
+  test("widens to two columns with the pinned globe on the right", async ({
     page,
   }) => {
     const hero = page.locator(".home-hero");
@@ -172,21 +167,15 @@ test.describe("Search-first home — desktop widening pass (ETNI-1513)", () => {
     const seeds = copy.getByRole("list", { name: "Exemples de recherche" });
     const globe = inner.locator(".home-hero-globe");
     const counts = copy.getByTestId("home-corpus-counts");
-    const fact = page.getByTestId("home-did-you-know");
 
     await expect(seeds.getByRole("button")).toHaveCount(4);
     await expect(page.getByTestId(/^home-count-/)).toHaveCount(3);
-    await expect(fact).toHaveCount(1);
-    await expect(
-      page.locator('.home-hero + [data-testid="home-did-you-know"]')
-    ).toHaveCount(1);
+    await expect(page.getByTestId("home-did-you-know")).toHaveCount(0);
 
-    const innerBox = await elementBox(inner);
     const copyBox = await elementBox(copy);
     const seedsBox = await elementBox(seeds);
     const globeBox = await elementBox(globe);
     const countsBox = await elementBox(counts);
-    const factBox = await elementBox(fact);
 
     // Copy and counts form the left column; the globe is the right column.
     expect(right(copyBox)).toBeLessThan(globeBox.x);
@@ -198,13 +187,5 @@ test.describe("Search-first home — desktop widening pass (ETNI-1513)", () => {
     expect(countsBox.y).toBeGreaterThanOrEqual(bottom(seedsBox) - 1);
     expect(countsBox.x).toBeLessThan(globeBox.x);
     expect(right(countsBox)).toBeLessThanOrEqual(globeBox.x);
-
-    // The fact is the next section, below both columns, and spans their full
-    // composition rather than becoming a third card or a right-column tail.
-    expect(factBox.y).toBeGreaterThanOrEqual(
-      Math.max(bottom(copyBox), bottom(globeBox)) - 1
-    );
-    expect(factBox.x).toBeLessThanOrEqual(innerBox.x + 1);
-    expect(right(factBox)).toBeGreaterThanOrEqual(right(innerBox) - 1);
   });
 });

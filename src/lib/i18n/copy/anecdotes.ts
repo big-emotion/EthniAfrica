@@ -30,7 +30,10 @@ const en = {
   missingProvenance:
     "Provenance to document — this fact predates the sources field.",
   nextAnnouncement: (headline: string) => `Next anecdote: ${headline}`,
-  next: "Next",
+  previousAnnouncement: (headline: string) => `Previous anecdote: ${headline}`,
+  next: "Next anecdote",
+  previous: "Previous anecdote",
+  sourceLead: "Source:",
   marked: "Anecdote saved",
   mark: "This anecdote is interesting",
   share: "Share",
@@ -67,7 +70,10 @@ const fr: AnecdotesCopy = {
   missingProvenance:
     "Provenance à documenter — ce fait est antérieur au champ de sources.",
   nextAnnouncement: (headline) => `Anecdote suivante : ${headline}`,
-  next: "Suivant",
+  previousAnnouncement: (headline) => `Anecdote précédente : ${headline}`,
+  next: "Anecdote suivante",
+  previous: "Anecdote précédente",
+  sourceLead: "Source\u00a0:",
   marked: "Anecdote retenue",
   mark: "Cette anecdote est intéressante",
   share: "Partager",
