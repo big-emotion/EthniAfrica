@@ -424,6 +424,25 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
     expect(screen.queryByTestId("home-hero-globe")).not.toBeInTheDocument();
   });
 
+  // A whole anecdote is far taller than the question beside it; centred, it
+  // pushed the question under a screen of empty parchment at 1440.
+  // @req REQ-115
+  it("tops the columns rather than centring them when the anecdote is drawn", () => {
+    const { container } = render(
+      <HomeHero language="fr" visual={{ kind: "anecdote", fact: ANECDOTE }} />
+    );
+
+    expect(container.querySelector(".home-hero-inner")).toHaveClass(
+      "home-hero-inner--anecdote"
+    );
+    const styles = Array.from(container.querySelectorAll("style"))
+      .map((style) => style.textContent)
+      .join("\n");
+    expect(styles).toMatch(
+      /@media\s*\(min-width:\s*1200px\)[\s\S]*\.home-hero-inner--anecdote\s*\{[^}]*align-items:\s*start/
+    );
+  });
+
   /**
    * The side is drawn per request and applied only where there are two
    * columns. The source order never moves: a phone and a screen reader meet

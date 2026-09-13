@@ -71,7 +71,7 @@ export function HomeHero({
     >
       {/* The shell keeps every hero item on the page's shared content edge. */}
       <div
-        className={`afh-shell home-hero-inner${
+        className={`afh-shell home-hero-inner home-hero-inner--${visual.kind}${
           visualSide === "start" ? " home-hero-inner--visual-start" : ""
         }`}
       >
@@ -454,6 +454,14 @@ export function HomeHero({
           .home-hero-inner--visual-start {
             grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
             grid-template-areas: "globe copy";
+          }
+          /* A whole anecdote runs far taller than the copy column. Centred,
+             it pushed the question a screen down under an empty gap — the
+             first thing a reader met was parchment. Measured at 1440 on the
+             first render; the globe and the images are square enough to keep
+             the centring. */
+          .home-hero-inner--anecdote {
+            align-items: start;
           }
           .home-hero-copy {
             margin: 0;
