@@ -1,0 +1,18 @@
+/* Label and value side by side: at 320 px the longest label (« Générée le »)
+   still leaves the value most of the sheet's width. */
+.provenance {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 0.25rem 1rem;
+  margin-block: 0.75rem;
+  font: 400 var(--afh-text-small) / 1.5 var(--afh-font-body);
+}
+
+.provenance dt {
+  font-weight: 700;
+}
+
+.provenance dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
