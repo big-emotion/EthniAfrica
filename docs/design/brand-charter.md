@@ -654,9 +654,9 @@ such record exists yet, the honest fallback is the corpus's own cartography,
 which the atlas generates, owns and can cite.
 
 **The site carries real images** (operator ruling, 2026-09-13). An image slot
-is filled by a photograph or a photographed document under a free licence —
-never by an AI-generated picture, and never by a typographic plate standing in
-for one. Thirty-three anecdotes were illustrated by a drawn plate showing the
+beside a text is filled by a photograph or a photographed document under a free
+licence — never by an AI-generated picture, and never by a typographic plate
+standing in for one. Thirty-three anecdotes were illustrated by a drawn plate showing the
 two names, on the reasoning that no free picture was exactly _about_ them. That
 reasoning was reversed: an exact document is the first choice, not the only
 admissible one. When it does not exist, the slot walks down a cascade and takes
@@ -683,6 +683,26 @@ shows the people it documents — only the naming of them, and the cartography.
 The fallback above licenses that, and it is still a gap. Closing it means an
 image field per fiche and eight hundred cleared images: a corpus feature, with
 its own decision about sourcing and rights.
+
+**A third register: declared fiction** (DEC-053). A generated image may be
+published, but only as its own publication and only as what it is — an
+interpretation shown as one, never a document and never an illustration slot
+beside a text. It is stylised, never photorealistic when it shows people. It is
+about one or two atlas entities, and **its subject and its picture are sourced
+separately**: the subject rests on a linked fiche's own cited source at
+`official` or `referenced`; the picture carries its provenance — tool, model,
+job, date, `ai_generated` — which is a record, not a source, and can never vouch
+for the subject. A caption stating a place, a date or a pairing that no linked
+fiche states cites its own source. The reader is told the image is generated
+before any other claim, and every downloadable format carries that mark burned
+into the file, because a file leaves its caption behind. The CC BY-SA 4.0 grant
+covers the human contribution only — the brief, the selection, the caption.
+Figures with a surviving photographic record are excluded: a generated picture
+of them is a likeness, not an interpretation. Myths and oral narratives — the
+Récits collection — are held back until a second reviewer exists.
+
+This register **declares the residual gap above; it does not close it**. A
+generated people is still not the people's own visual record.
 
 ---
 

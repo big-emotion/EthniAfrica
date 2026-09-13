@@ -103,6 +103,88 @@ describe("Découvertes publication contracts", () => {
     expect(deck).toHaveLength(3);
   });
 
+  // DEC-053: a generated image is declared fiction. Its subject rests on the
+  // linked fiche's own source; its generation record is provenance, never a
+  // source, so it cannot vouch for the subject.
+  describe("generated images", () => {
+    const generated: DiscoveryPublication = item("image:hausa-autonym", {
+      kind: "image",
+      collection: "autonymes",
+      slug: { fr: "hausa-autonyme", en: "hausa-autonym" },
+      detail: {
+        body: { fr: ["Texte"], en: ["Text"] },
+        entities: [
+          {
+            kind: "people",
+            id: "PPL_HAUSA",
+            label: { fr: "Haoussa", en: "Hausa" },
+          },
+        ],
+        sources: [],
+      },
+      image: {
+        src: "/images/discoveries/hausa-autonym.webp",
+        credit: "EthniAfrica, CC BY-SA 4.0",
+        licence: "cc-by-sa",
+        alt: { fr: "Illustration stylisée", en: "Stylised illustration" },
+      },
+      caption: { fr: "Légende", en: "Caption" },
+      generation: {
+        tool: "Higgsfield",
+        model: "nano_banana_2",
+        jobId: "job-123",
+        generatedOn: "2026-09-12",
+        sourceKind: "ai_generated",
+      },
+    });
+
+    function eligibleIds(records: DiscoveryPublication[]): string[] {
+      return eligiblePublications(records).map((entry) => entry.id);
+    }
+
+    // @req REQ-164
+    it("admits a complete generated image and resolves its localized permalink", () => {
+      const records = [generated];
+      expect(eligibleIds(records)).toEqual(["image:hausa-autonym"]);
+      const resolved = resolvePublication(records, "en", "hausa-autonym");
+      expect(resolved?.id).toBe("image:hausa-autonym");
+      expect(discoveryPath("fr", resolved)).toBe(
+        "/fr/decouvertes/hausa-autonyme"
+      );
+    });
+
+    // @req REQ-164
+    it("excludes a generated image missing its generation model and keeps the anecdotes", () => {
+      const records = [
+        item("anecdote"),
+        { ...generated, generation: { ...generated.generation, model: "" } },
+      ];
+      expect(eligibleIds(records)).toEqual(["anecdote"]);
+    });
+
+    // @req REQ-164
+    it("never lets the image's own provenance stand in for its subject source", () => {
+      expect(eligibleIds([{ ...generated, source: undefined }])).toEqual([]);
+    });
+
+    // @req REQ-164
+    it("admits a caption beyond the corpus only when it cites its own source", () => {
+      const exceeding = { ...generated, captionExceedsCorpus: true };
+      expect(eligibleIds([exceeding])).toEqual([]);
+      expect(
+        eligibleIds([
+          {
+            ...exceeding,
+            captionSource: {
+              title: "Caption source",
+              url: "https://example.org/caption",
+            },
+          },
+        ])
+      ).toEqual(["image:hausa-autonym"]);
+    });
+  });
+
   // @req REQ-158
   it("rejects ambiguous or unsafe publication slugs before exposing a deck", () => {
     const entries = [

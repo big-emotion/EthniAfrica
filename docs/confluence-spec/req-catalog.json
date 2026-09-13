@@ -159,7 +159,11 @@
     "REQ-160",
     "REQ-161",
     "REQ-162",
-    "REQ-163"
+    "REQ-163",
+    "REQ-164",
+    "REQ-165",
+    "REQ-166",
+    "REQ-167"
   ],
   "sourceMap": {
     "REQ-001": "FR1",
@@ -317,6 +321,10 @@
     "REQ-160": "Confluence REQ-160 (page 190545921) — ten icon-first truthful share choices, exact links and no unsupported media success",
     "REQ-161": "Confluence REQ-161 (page 198836243) — a people name may rest on an approved, rights-cleared oral narrative or revisable EthniAfrica synthesis with fixed provenance weights",
     "REQ-162": "Confluence REQ-162 (page 198836243) — validate the collection framework of oral narratives and syntheses without rejecting oral provenance",
-    "REQ-163": "Confluence REQ-163 (page 198836243) — show labelled oral provenance and revisable synthesis to readers"
+    "REQ-163": "Confluence REQ-163 (page 198836243) — show labelled oral provenance and revisable synthesis to readers",
+    "REQ-164": "Confluence REQ-164 (page 199131162) — A generated image enters Découvertes only as declared fiction, with its subject sourced and its own provenance recorded",
+    "REQ-165": "Confluence REQ-165 (page 199131162) — Readers see that an image is generated, and what it rests on, before any other claim",
+    "REQ-166": "Confluence REQ-166 (page 199131162) — A generated image can be downloaded per format, and each file carries its disclosure",
+    "REQ-167": "Confluence REQ-167 (page 199131162) — Generated images can be browsed as a gallery dossier fed by the same catalog as the feed"
   }
 }
