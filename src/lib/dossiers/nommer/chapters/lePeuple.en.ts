@@ -59,10 +59,10 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
             "179",
             "The name is an act of census-taking before it is a fact of language",
           ],
-          ["europ-", "118", "Navigators, explorers, cartographers"],
+          ["europ-", "120", "Navigators, explorers, cartographers"],
           [
             "voisin (‘neighbour’)",
-            "112",
+            "113",
             "An African exonym, given by a neighbouring people — often the oldest of all",
           ],
           [
