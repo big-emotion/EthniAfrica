@@ -119,7 +119,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "dépréciatif et voisins",
-              "85",
+              "84",
               "La fiche qualifie explicitement le mot de péjoratif, dépréciatif, moqueur ou dérisoire",
             ],
             sourceRefs: [],
@@ -201,7 +201,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
       blocks: [
         {
           id: "quatre-vingt-sept-fiches",
-          text: "Quatre-vingt-sept fiches qualifient leur exonyme de péjoratif, dépréciatif, moqueur ou dérisoire. Deux cas montrent ce que le mot fait, et ce que le remplacer ne répare pas.",
+          text: "Quatre-vingt-quatre fiches qualifient leur exonyme de péjoratif, dépréciatif, moqueur ou dérisoire. Deux cas montrent ce que le mot fait, et ce que le remplacer ne répare pas.",
           sourceRefs: [],
           figureRefs: ["probe-pejorative"],
         },

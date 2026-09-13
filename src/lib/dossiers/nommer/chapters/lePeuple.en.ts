@@ -67,7 +67,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
           ],
           [
             "dépréciatif and related stems",
-            "85",
+            "84",
             "The fiche explicitly calls the word pejorative, depreciative, mocking or derisive",
           ],
           [
@@ -115,7 +115,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
       heading: "When the name is a mockery",
       blocks: {
         "quatre-vingt-sept-fiches":
-          "Eighty-seven fiches call their exonym pejorative, depreciative, mocking or derisive. Two cases show what the word does, and what replacing it does not repair.",
+          "Eighty-four fiches call their exonym pejorative, depreciative, mocking or derisive. Two cases show what the word does, and what replacing it does not repair.",
       },
       pairs: [
         {
