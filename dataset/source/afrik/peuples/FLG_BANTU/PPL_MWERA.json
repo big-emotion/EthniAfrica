@@ -75,7 +75,7 @@
       {
         "title": "The Mwera People – Religion, Society, Culture – UnitedRepublicofTanzania.com",
         "url": "https://unitedrepublicoftanzania.com/the-people-of-tanzania/daily-life-in-tanzania-and-social-customs/major-tanzania-ethnic-groups/how-many-tanzania-tribes-biggest/the-mwera-people-religion-society-culture/",
-        "tier": "needs_review"
+        "tier": "unverified"
       },
       {
         "title": "Mwera in Tanzania – Joshua Project",
@@ -85,7 +85,12 @@
       {
         "title": "Mwera – Significance and symbolism, Wisdomlib (Maji Maji)",
         "url": "https://www.wisdomlib.org/concept/mwera",
-        "tier": "needs_review"
+        "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Mwera (Chimwera) (mwer1248)",
+        "url": "https://glottolog.org/resource/languoid/id/mwer1248",
+        "tier": "official"
       }
     ]
   },

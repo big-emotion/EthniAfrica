@@ -6,7 +6,7 @@
   "content": {
     "appellations": {
       "mainName": "Subiya",
-      "selfAppellation": "Baikuhane (pluriel), Muikuhane (singulier). Le terme designe les 'suiveurs du roi Ikuhane' ou 'les gens de la riviere Chobe'.",
+      "selfAppellation": "Baikuhane (pluriel : les suiveurs du roi Ikuhane, ou les gens de la riviere Chobe) ; Muikuhane (singulier)",
       "exonyms": [
         "Subia",
         "Ikuhane",
@@ -116,12 +116,17 @@
       {
         "title": "Ramsey, Jeff – Document sur les Bekuhane, Botswana Government (cite dans Zambia's Traditional History)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "unverified"
       },
       {
         "title": "Subia – Justapedia",
         "url": "https://justapedia.org/wiki/Subia_people",
         "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Subiya (subi1246)",
+        "url": "https://glottolog.org/resource/languoid/id/subi1246",
+        "tier": "official"
       }
     ]
   },

@@ -101,6 +101,11 @@
         "title": "Partners in Bible Translation – Senga Survey 2015",
         "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/SengaSurvey_2015.pdf",
         "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Tumbuka (tumb1250)",
+        "url": "https://glottolog.org/resource/languoid/id/tumb1250",
+        "tier": "official"
       }
     ]
   },

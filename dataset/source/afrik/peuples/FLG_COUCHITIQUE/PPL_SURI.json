@@ -75,12 +75,12 @@
       {
         "title": "Suri Tribe – Atlas of Humanity",
         "url": "https://www.atlasofhumanity.com/suri",
-        "tier": "needs_review"
+        "tier": "unverified"
       },
       {
         "title": "Why the Surma People of Ethiopia Wear Lip Plates – Africa Rebirth, 2024",
         "url": "https://www.africarebirth.com/the-origin-and-significance-of-wearing-lip-plates-among-ethiopias-surma-people/",
-        "tier": "needs_review"
+        "tier": "unverified"
       },
       {
         "title": "The Surma Tribe of Ethiopia, History, Culture and Facts – Kabira Safaris, 2025",
@@ -95,7 +95,12 @@
       {
         "title": "Suri Tribe – Simien Ethiopia Tours",
         "url": "https://simienethiopiatours.com/south-omo-tribes/suri-tribe/",
-        "tier": "needs_review"
+        "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Tirma-Chai (suri1267)",
+        "url": "https://glottolog.org/resource/languoid/id/suri1267",
+        "tier": "official"
       }
     ]
   },

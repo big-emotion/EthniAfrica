@@ -93,6 +93,11 @@
         "title": "Bantu, Central-Tanzania People Cluster – Joshua Project",
         "url": "https://www.joshuaproject.net/clusters/341",
         "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Konongo-Ruwila (kono1265)",
+        "url": "https://glottolog.org/resource/languoid/id/kono1265",
+        "tier": "official"
       }
     ]
   },

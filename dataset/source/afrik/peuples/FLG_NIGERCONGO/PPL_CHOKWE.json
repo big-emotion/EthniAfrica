@@ -123,6 +123,11 @@
         "title": "Chokwe language ISO 639-3 cjk – Common Crawl / web-languages, 2024",
         "url": "https://github.com/commoncrawl/web-languages/blob/main/living/chokwe.md",
         "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Chokwe (chok1245)",
+        "url": "https://glottolog.org/resource/languoid/id/chok1245",
+        "tier": "official"
       }
     ]
   },

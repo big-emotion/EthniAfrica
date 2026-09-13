@@ -79,7 +79,7 @@
       {
         "title": "Toka-Leya Culture, Zambian Traditions – Peek.com",
         "url": "https://www.peek.com/zambia/r0gbbpp/toka-leya-culture-explore-zambian-traditions/a0d9pwd9",
-        "tier": "needs_review"
+        "tier": "unverified"
       },
       {
         "title": "Toka-Leya Tribe Safari Tours – Kingsfari",
@@ -89,12 +89,17 @@
       {
         "title": "African Cultural Experience: The Leya People – Volunteer International Adventures",
         "url": "https://volunteerinternationaladventures.com/african-cultural/",
-        "tier": "needs_review"
+        "tier": "unverified"
       },
       {
         "title": "Tonga people – Chalo Chatu, Zambia Online Encyclopedia",
         "url": "http://www.chalochatu.org/index.php?title=Tonga_people",
         "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Tonga (Zambia) (tong1318)",
+        "url": "https://glottolog.org/resource/languoid/id/tong1318",
+        "tier": "official"
       }
     ]
   },

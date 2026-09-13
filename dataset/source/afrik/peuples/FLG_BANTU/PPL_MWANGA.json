@@ -87,12 +87,17 @@
       {
         "title": "African Cultures by Young Africans: Namwanga Tribe – Afrikan Princess",
         "url": "https://afrikanprincess.com/2015/12/03/african-cultures-by-young-africans-namwanga/",
-        "tier": "needs_review"
+        "tier": "unverified"
       },
       {
         "title": "Mwanga of Zambia – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg015612/",
         "tier": "unverified"
+      },
+      {
+        "title": "Nyamwanga – Glottolog 5.3, code nyam1275",
+        "url": "https://glottolog.org/resource/languoid/id/nyam1275",
+        "tier": "official"
       }
     ]
   },
