@@ -182,8 +182,10 @@ names them as pages rather than as headings. Every one of those was written as
 "there is nowhere to lead to", which was a fact about ETNI-1555 and is no
 longer one.
 
-There are at most eight editorial themes. Below 768 px the header uses a drawer;
-from 768 px it uses a panel. Theme selection remains compact below 1200 px,
+There are at most eight editorial themes. Below 1200 px the header uses a drawer;
+from 1200 px it uses a panel. This keeps tablet navigation within the same
+compact shell as mobile while the separate Découvertes destination is present.
+Theme selection remains compact below 1200 px,
 with a native select, and becomes a four-column grid from 1200 px, capped at
 two rows by the bounded vocabulary. Search and theme selection occupy two
 control rows on the dossier index at mobile and tablet sizes. Enlarged text

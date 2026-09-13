@@ -3,6 +3,7 @@ import { classificationCopy } from "@/lib/i18n/copy/classification";
 import { atlasCopy } from "@/lib/i18n/copy/atlas";
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
 import { colonizationCopy } from "@/lib/i18n/copy/colonization";
+import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import { chromeCopy } from "@/lib/i18n/copy/chrome";
 import { commonCopy } from "@/lib/i18n/copy/common";
 import { consentCopy } from "@/lib/i18n/copy/consent";
@@ -69,6 +70,7 @@ const en = {
   patronymes: patronymesCopy.en,
   migrations: migrationsCopy.en,
   colonization: colonizationCopy.en,
+  discoveries: discoveriesCopy.en,
   quiz: quizCopy.en,
   reports: reportsCopy.en,
   sourceTransparency: sourceTransparencyCopy.en,
@@ -111,6 +113,7 @@ const fr: UiDictionary = {
   patronymes: patronymesCopy.fr,
   migrations: migrationsCopy.fr,
   colonization: colonizationCopy.fr,
+  discoveries: discoveriesCopy.fr,
   quiz: quizCopy.fr,
   reports: reportsCopy.fr,
   sourceTransparency: sourceTransparencyCopy.fr,

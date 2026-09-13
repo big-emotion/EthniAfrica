@@ -151,7 +151,12 @@
     "REQ-152",
     "REQ-153",
     "REQ-154",
-    "REQ-155"
+    "REQ-155",
+    "REQ-156",
+    "REQ-157",
+    "REQ-158",
+    "REQ-159",
+    "REQ-160"
   ],
   "sourceMap": {
     "REQ-001": "FR1",
@@ -301,6 +306,11 @@
     "REQ-152": "Confluence REQ-152 (page 198672385) — two consecutive fiche chapters are separated by --afh-section-gap and by no other value",
     "REQ-153": "Confluence REQ-153 (page 198672385) — a collapsed tile states a fact before it is opened, opening adds content, and a chapter never itself collapses",
     "REQ-154": "Confluence REQ-154 (page 198672385) — the country fiche leads with its peoples after a counted summary, then presents name history, languages, history, country names, culture, onward links and sources in that order",
-    "REQ-155": "Confluence REQ-155 (page 198672385) — the people fiche has nine ordered chapters beginning with a summary and geographic distribution, with shares derived from the sum of declared distribution rows"
+    "REQ-155": "Confluence REQ-155 (page 198672385) — the people fiche has nine ordered chapters beginning with a summary and geographic distribution, with shares derived from the sum of declared distribution rows",
+    "REQ-156": "Confluence REQ-156 (page 190545921) — dedicated photo-led Découvertes destination and coherent one-at-a-time vertical browsing",
+    "REQ-157": "Confluence REQ-157 (page 190545921) — only sourced, bilingual and rights-cleared publications enter the deck, with exact details and atlas links",
+    "REQ-158": "Confluence REQ-158 (page 190545921) — stable localized publication permalinks, SSR entry, history and matching metadata",
+    "REQ-159": "Confluence REQ-159 (page 190545921) — account-free device-only keeping and retrieval with honest storage failure states",
+    "REQ-160": "Confluence REQ-160 (page 190545921) — ten icon-first truthful share choices, exact links and no unsupported media success"
   }
 }

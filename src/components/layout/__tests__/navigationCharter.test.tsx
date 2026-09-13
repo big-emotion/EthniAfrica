@@ -204,11 +204,11 @@ describe("atlas charter §3 — the menu never offers an unresolved route", () =
   });
 });
 
-describe("atlas charter §3 — mobile navigation breakpoint", () => {
-  // @req REQ-116
-  it("switches navigation at the approved 768px breakpoint", () => {
-    expect(charter()).toContain("768 px");
-    expect(source()).toContain("NAV_BREAKPOINT_PX = 768");
+describe("atlas charter §3 — compact navigation breakpoint", () => {
+  // @req REQ-156
+  it("keeps the drawer through tablet widths and switches at 1200px", () => {
+    expect(charter()).toContain("Below 1200 px the header uses a drawer");
+    expect(source()).toContain("NAV_BREAKPOINT_PX = 1200");
   });
 });
 
