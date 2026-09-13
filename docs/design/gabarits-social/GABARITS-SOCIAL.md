@@ -610,14 +610,18 @@ y renvoient et n'en gardent aucune copie. Un lot dont le type n'a pas de ligne i
 dont la case est encore « à fixer » ou « à valider », n'a pas de clôture : la ligne
 s'écrit ici d'abord, jamais dans une carte.
 
-| Le lot parle de | Patron de titre d'ouverture | Titre de clôture | Corps de clôture |
-| --- | --- | --- | --- |
-| un peuple réparti sur plusieurs pays | « Du {pays} au {pays}, les frontières traversent les **{peuple}**. » | « Ce peuple n'a pas été **divisé**. » | « C'est la carte qui a été dessinée par-dessus. » |
-| un pays et les peuples qui y vivent — *proposé le 2026-09-13, à valider par l'opérateur* | « {Pays}, c'est {n} **peuples**. » | « Ces peuples n'ont pas été **rassemblés**. » | « C'est la carte qui a été dessinée autour d'eux. » |
-| des villes, des lieux | un registre de la banque ci-dessous | « Cette ville n'a pas changé de **nom**. » | « On l'a rebaptisée. » |
-| une projection, une carte | un registre de la banque ci-dessous | « La carte ne mentait pas. Elle ne disait pas **tout**. » | « On l'a redessinée. » |
-| le nom d'un pays | un registre de la banque ci-dessous | « Ce pays ne s'est pas **renommé**. » | « On l'a rebaptisé. » — *dérivé de la ligne des villes le 2026-09-13, à valider* |
-| une langue, une famille | un registre de la banque ci-dessous | « Cette langue n'a pas **disparu**. » | *à fixer* — aucune seconde moitié n'a encore été écrite |
+| Le lot parle de | Patron de titre d'ouverture | Mot en accent à l'ouverture | Titre de clôture | Mot en accent à la clôture | Corps de clôture |
+| --- | --- | --- | --- | --- | --- |
+| un peuple réparti sur plusieurs pays | « Du {pays} au {pays}, les frontières traversent les {peuple}. » | « {peuple}. » | « Ce peuple n'a pas été divisé. » | « divisé. » | « C'est la carte qui a été dessinée par-dessus. » |
+| un pays et les peuples qui y vivent — *proposé le 2026-09-13, à valider par l'opérateur* | « {Pays}, c'est {n} peuples. » | « peuples. » | « Ces peuples n'ont pas été rassemblés. » | « rassemblés. » | « C'est la carte qui a été dessinée autour d'eux. » |
+| des villes, des lieux | un registre de la banque ci-dessous | celui du registre | « Cette ville n'a pas changé de nom. » | « nom. » | « On l'a rebaptisée. » |
+| une projection, une carte | un registre de la banque ci-dessous | celui du registre | « La carte ne mentait pas. Elle ne disait pas tout. » | « tout. » | « On l'a redessinée. » |
+| le nom d'un pays | un registre de la banque ci-dessous | celui du registre | « Ce pays ne s'est pas renommé. » | « renommé. » | « On l'a rebaptisé. » — *dérivé de la ligne des villes le 2026-09-13, à valider* |
+| une langue, une famille | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas disparu. » | « disparu. » | *à fixer* — aucune seconde moitié n'a encore été écrite |
+
+**`cards.json` ne porte jamais `**`** : les titres s'y recopient en texte brut depuis
+cette table, le moteur accentue de lui-même le dernier mot d'une clôture avec sa
+ponctuation, et sur l'ouverture seul `titre_camps` (§10) nomme un mot en accent.
 
 **Un peuple réparti sur plusieurs pays.** Le titre obéit à la doctrine des titres comme
 tout titre : un nom propre que le lecteur reconnaît, au moins un pays, une assertion
@@ -732,7 +736,8 @@ Disposition **A** ou **B**. Le renversement d'agent, puis la vision, puis la sor
    **Un panneau de cartouche est une boîte à hauteur fixe** : `top` et `bottom` posés,
    rien à comprimre. Deux phrases d'affichage y font cinq lignes, soit 572 px sur les
    747 disponibles, et le pied sort du cadre avec l'attribution. Le titre d'une clôture
-   en cartouche tient donc en une phrase, et le budget se **mesure** avant d'écrire.
+   en cartouche tient donc dans le budget mesuré de deux lignes composées — celui de la
+   projection, en deux phrases, se **mesure** avant d'accepter un cartouche.
 
    > `flex:1; min-height:0` sur un intercalaire **ne comprime rien** : un élément vide
    > mesure 0 et ne peut que pousser vers le bas. Pour épingler un pied dans une boîte
@@ -1117,8 +1122,9 @@ premier changement de format.
 - [ ] La licence de sortie est celle du lot, calculée et non recopiée.
 - [ ] Aucune note interne visible sur l'image.
 - [ ] Le crédit nomme le document réellement affiché.
-- [ ] **Ouverture et clôture sont propres au sujet** (titre et image) ; seule la ligne
-      de vision est constante, mot pour mot.
+- [ ] **Titre et image d'ouverture propres au sujet ; titre et corps de clôture fixés
+      par le type de contenu** (table de §7 ter) ; image de clôture propre au sujet ;
+      ligne de vision constante, mot pour mot.
 - [ ] **Le titre de clôture renverse le bon sujet** — pas « ce peuple » sur un lot de
       villes ou de projection.
 - [ ] **B n'est jamais une ouverture.**

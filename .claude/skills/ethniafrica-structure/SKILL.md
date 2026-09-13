@@ -88,7 +88,8 @@ Le titre et le corps de la clôture **varient avec le type de contenu** : ils
 sont fixes dans un type — c'est la signature — et changent d'un type à l'autre.
 Seule la ligne de vision est la même partout. Ils se prennent **dans la table
 par type de contenu de §7 ter** (`docs/design/gabarits-social/GABARITS-SOCIAL.md`),
-mot pour mot, au moment d'écrire. Ce skill n'en garde aucune copie : une
+mot pour mot et en texte brut, au moment d'écrire : `cards.json` ne porte jamais
+`**`, le moteur passe lui-même le dernier mot du titre de clôture en accent. Ce skill n'en garde aucune copie : une
 deuxième copie de la doctrine est celle qui dérive.
 
 Un lot dont le type n'a pas de ligne dans la table, ou dont la case est encore
