@@ -193,6 +193,7 @@ describe("moduleRegistry — access-mode → module mapping (REQ-114)", () => {
       "frise",
       "regards-colonisation",
       "proverbes",
+      "galerie",
     ]);
   });
 
@@ -311,6 +312,7 @@ describe("moduleRegistry — access-mode → module mapping (REQ-114)", () => {
       "anecdotes",
       "regards-colonisation",
       "proverbes",
+      "galerie",
     ]);
     for (const def of staticModules) {
       expect(def.page).not.toBeNull();
@@ -447,6 +449,7 @@ describe("moduleRegistry — per-module accent (atlas charter §2)", () => {
       mercator: "afh-accent-ocre",
       // Appended after the last module so none of the pins above moves.
       proverbes: "afh-accent-teal",
+      galerie: "afh-accent-terre",
     } as const);
 
     for (const [id, accent] of Object.entries(expectedAccents)) {

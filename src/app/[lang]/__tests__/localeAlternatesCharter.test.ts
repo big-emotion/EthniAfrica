@@ -132,6 +132,7 @@ const OUTSIDE = [/^admin(\/|$)/, /^signalements\/verifier$/];
  */
 const WITHDRAWN = [
   "dossiers/[dossier]",
+  "dossiers/galerie",
   "dossiers/migrations",
   "dossiers/nommer",
   "dossiers/nommer/la-chose",
@@ -226,6 +227,7 @@ const FIXTURES: Record<string, RouteFixture> = {
   },
   "dossiers/anecdotes": { expectation: { surface: "anecdotes" } },
   "dossiers/proverbes": { expectation: { surface: "proverbs" } },
+  "dossiers/galerie": { expectation: { surface: "gallery" } },
   "dossiers/migrations": { expectation: { surface: "migrations" } },
   "dossiers/nommer": { expectation: { surface: "nommer" } },
   "dossiers/nommer/la-chose": { expectation: { surface: "nommer" } },

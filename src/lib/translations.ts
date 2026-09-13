@@ -16,6 +16,7 @@ import { fieldProvenanceCopy } from "@/lib/i18n/copy/fieldProvenance";
 import { familyCopy } from "@/lib/i18n/copy/family";
 import { ficheCopy } from "@/lib/i18n/copy/fiche";
 import { footerCopy } from "@/lib/i18n/copy/footer";
+import { galleryCopy } from "@/lib/i18n/copy/gallery";
 import { gamesCopy } from "@/lib/i18n/copy/games";
 import { hubsCopy } from "@/lib/i18n/copy/hubs";
 import { languagesCopy } from "@/lib/i18n/copy/languages";
@@ -53,6 +54,7 @@ const en = {
   server: serverCopy.en,
   anecdotes: anecdotesCopy.en,
   proverbs: proverbsCopy.en,
+  gallery: galleryCopy.en,
   atlas: atlasCopy.en,
   ...commonCopy.en,
   chrome: chromeCopy.en,
@@ -97,6 +99,7 @@ const fr: UiDictionary = {
   server: serverCopy.fr,
   anecdotes: anecdotesCopy.fr,
   proverbs: proverbsCopy.fr,
+  gallery: galleryCopy.fr,
   atlas: atlasCopy.fr,
   ...commonCopy.fr,
   chrome: chromeCopy.fr,

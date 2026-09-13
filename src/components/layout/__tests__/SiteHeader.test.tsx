@@ -562,6 +562,26 @@ describe("SiteHeader â€” reachable and mature are two questions (atlas charter Â
     expect(anecdotes).not.toHaveTextContent(t.hubs.unavailableLabel);
   });
 
+  // The gallery is filed beside the anecdotes and the proverbs, and while no
+  // image publication is entered it is listed inert rather than left out: the
+  // menu names the reading, the chip says it is not open yet.
+  // @req REQ-167
+  it("lists the gallery as a dossier entry", () => {
+    renderHeader();
+
+    fireEvent.click(screen.getByTestId(BURGER));
+    const tray = screen.getByRole("dialog");
+    fireEvent.click(
+      within(tray).getByRole("button", {
+        name: new RegExp(ACCESS_MODE_LABELS.dossiers),
+      })
+    );
+
+    const gallery = within(tray).getByTestId("site-nav-module-galerie");
+    expect(gallery).toHaveTextContent(t.hubs.moduleNames.galerie);
+    expectInert(gallery);
+  });
+
   // The panel's own title is the way to the hub, whatever the rubrics below
   // it happen to be showing.
   // @req REQ-114
