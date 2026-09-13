@@ -559,7 +559,7 @@ vidéo, là où la marque **est** le sujet.
 
 ## 7 ter. L'ouverture et la clôture de série
 
-**Toute série s'ouvre et se ferme sur le même couple de cartes.** Elles ne sont pas
+**Toute série s'ouvre et se ferme sur un couple de cartes.** Elles ne sont pas
 décoratives : elles portent la vision du projet, et c'est la seule chose que le lecteur
 emporte s'il ne lit rien d'autre.
 
@@ -576,35 +576,89 @@ emporte s'il ne lit rien d'autre.
 **Deux dates, à citer plutôt qu'à paraphraser :** Berlin 1884, les indépendances 1960.
 Une frontière ne contient pas un peuple, elle le traverse.
 
-### Ouverture propre au sujet, clôture constante
+### Ce qui change avec le type de contenu, et ce qui ne change jamais
 
-| | Titre | Image | Ligne de vision |
-| --- | --- | --- | --- |
-| **Ouverture** | propre au sujet | propre au sujet | **constante** |
-| **Clôture** | propre au sujet | propre au sujet | **constante** |
+Décidé par l'opérateur le 2026-09-13 : **le titre et le corps d'une production varient
+avec le type de contenu publié ; seule la ligne de vision est constante partout.**
+
+| | Titre | Corps | Image | Ligne de vision |
+| --- | --- | --- | --- | --- |
+| **Ouverture** | propre au sujet, sur le patron de son type quand la table en fixe un | — | propre au sujet | **constante partout** |
+| **Clôture** | fixe dans un type, variable entre les types | fixe dans un type, variable entre les types | propre au sujet | **constante partout** |
 
 **La constante du projet est la ligne de vision, et elle seule.** Ni l'image, ni le
 titre : une image de clôture unique obligerait à réécrire neuf crédits et neuf licences
 de sortie pour ne rien gagner, et un titre unique ment dès que le sujet n'est pas un
-peuple — « Ce peuple n'a pas été divisé » sur un carrousel de villes, de projection ou
-de nom de pays.
+peuple réparti sur plusieurs pays — « Ce peuple n'a pas été divisé » sur un carrousel
+de villes, de projection, de nom de pays, ou sur un pays et les peuples qui y vivent.
 
 **L'ouverture est la vignette**, et une vignette décide si quelqu'un regarde. Dix séries
 qui ouvrent sur la même phrase et la même image donnent dix fois la même vignette dans
 le fil : le lecteur qui a fait défiler la première croit avoir déjà vu les neuf autres.
 Une ouverture figée est donc une erreur de diffusion, pas une économie de production.
 
-**La clôture, elle, ne change pas.** C'est la signature : c'est en répétant la même
-phrase de vision épisode après épisode qu'on finit par l'associer au projet. Une
-clôture qui varie ne signe rien.
+**La clôture est constante dans un type, variable entre les types.** Dans un type, son
+titre et son corps sont fixes : c'est la signature, et c'est en retrouvant la même
+phrase épisode après épisode qu'on finit par l'associer au projet. D'un type à l'autre
+ils changent, parce qu'un renversement d'agent n'est juste que si son sujet est le bon.
+Ce qui ne varie jamais, tous types confondus, c'est la ligne de vision.
+
+### La table par type de contenu
+
+**Une seule table, lue par l'ouverture comme par la clôture.** Les skills de la chaîne
+y renvoient et n'en gardent aucune copie. Un lot dont le type n'a pas de ligne ici, ou
+dont la case est encore « à fixer » ou « à valider », n'a pas de clôture : la ligne
+s'écrit ici d'abord, jamais dans une carte.
+
+| Le lot parle de | Patron de titre d'ouverture | Mot en accent à l'ouverture | Titre de clôture | Mot en accent à la clôture | Corps de clôture |
+| --- | --- | --- | --- | --- | --- |
+| un peuple réparti sur plusieurs pays | « Du {pays} au {pays}, les frontières traversent les {peuple}. » | « {peuple}. » | « Ce peuple n'a pas été divisé. » | « divisé. » | « C'est la carte qui a été dessinée par-dessus. » |
+| un pays et les peuples qui y vivent — *proposé le 2026-09-13, à valider par l'opérateur* | « {Pays}, c'est {n} peuples. » | « peuples. » | « Ces peuples n'ont pas été rassemblés. » | « rassemblés. » | « C'est la carte qui a été dessinée autour d'eux. » |
+| des villes, des lieux | un registre de la banque ci-dessous | celui du registre | « Cette ville n'a pas changé de nom. » | « nom. » | « On l'a rebaptisée. » |
+| une projection, une carte | un registre de la banque ci-dessous | celui du registre | « La carte ne mentait pas. Elle ne disait pas tout. » | « tout. » | « On l'a redessinée. » |
+| le nom d'un pays | un registre de la banque ci-dessous | celui du registre | « Ce pays ne s'est pas renommé. » | « renommé. » | « On l'a rebaptisé. » — *dérivé de la ligne des villes le 2026-09-13, à valider* |
+| une langue, une famille | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas disparu. » | « disparu. » | *à fixer* — aucune seconde moitié n'a encore été écrite |
+
+**`cards.json` ne porte jamais `**`** : les titres s'y recopient en texte brut depuis
+cette table, le moteur accentue de lui-même le dernier mot d'une clôture avec sa
+ponctuation, et sur l'ouverture seul `titre_camps` (§10) nomme un mot en accent.
+
+**Un peuple réparti sur plusieurs pays.** Le titre obéit à la doctrine des titres comme
+tout titre : un nom propre que le lecteur reconnaît, au moins un pays, une assertion
+plate, aucun mot qui l'envoie chercher. Le peuple y est donc nommé **par le nom que le
+lecteur reconnaît** ; le nom qu'il se donne arrive à la carte 2, dans la paire de §3 bis
+— c'est la boucle que le titre ouvre. Quand les deux noms coïncident, il n'y a rien à
+arbitrer. **Le titre inscrit au registre et le titre de la couverture sont la même
+phrase.** Exemples :
+
+> Au Sénégal, la frontière de la Gambie traverse le pays **wolof**.
+>
+> Du Sénégal au Soudan, les frontières de douze pays traversent les **Peul**.
+
+**Un pays et les peuples qui y vivent.** C'est l'épisode à densité inversée : le sujet
+est un pays, et ce qu'il faut renverser n'est pas une division mais un rassemblement.
+« Ce peuple n'a pas été divisé » y serait faux. `{n}` se **mesure sur le corpus le jour
+où le titre s'écrit**, il ne se recopie pas. Exemple :
+
+> La Tanzanie, c'est quatre-vingt-seize **peuples**.
+
+Cette ligne est **proposée le 2026-09-13 et reste à valider par l'opérateur** ; tant
+qu'elle ne l'est pas, un lot de ce type s'arrête avant d'écrire sa clôture et le dit.
+
+**Ce qu'aucune clôture n'écrit, quel que soit le type**, tant que la session de doctrine
+n'a pas tranché : « Berlin » comme celui qui a tracé les lignes — la conférence de
+Berlin a fixé des règles pour revendiquer un territoire, elle n'a tracé aucune ligne —
+et « mille ans » posé comme un fait, que rien ne date. L'audit du message du 2026-09-13
+(constat 9) a trouvé les deux sur une clôture publiée sur cinq réseaux.
 
 ### La carte d'ouverture
 
 Disposition **A**, image plein cadre. Quatre blocs :
 
 1. **Bandeau et rang**, première rangée de la colonne.
-2. **Le titre du sujet**, et il n'est pas libre : il s'écrit dans l'un des registres de
-   la doctrine ci-dessus. La banque de patrons est ce qui fait que dix ouvertures
+2. **Le titre du sujet**, et il n'est pas libre : il suit le patron de son type quand la
+   table par type de contenu en fixe un, et s'écrit sinon dans l'un des registres de la
+   doctrine ci-dessus. La banque de patrons est ce qui fait que dix ouvertures
    différentes sonnent comme la même série :
 
    | Registre | Patron |
@@ -672,31 +726,24 @@ Pas de chiffre, pas de paire, pas de source : une ouverture n'a rien à prouver 
 
 Disposition **A** ou **B**. Le renversement d'agent, puis la vision, puis la sortie :
 
-1. **Le renversement**, au titre, **en une seule phrase**, le dernier mot en accent. Il
-   se décline selon ce dont parle le lot — un renversement d'agent n'est juste que si
-   son sujet est le bon :
+1. **Le renversement**, au titre, le dernier mot en accent. Il se prend **mot pour mot
+   dans la table par type de contenu** ci-dessus, colonne « Titre de clôture » : un
+   renversement d'agent n'est juste que si son sujet est le bon.
 
-   | Le lot parle de | Titre de clôture |
-   | --- | --- |
-   | un peuple | « Ce peuple n'a pas été **divisé**. » |
-   | des villes, des lieux | « Cette ville n'a pas changé de **nom**. » |
-   | une projection, une carte | « La carte ne mentait pas. Elle ne disait pas **tout**. » |
-   | le nom d'un pays | « Ce pays ne s'est pas **renommé**. » |
-   | une langue, une famille | « Cette langue n'a pas **disparu**. » |
-
-   La seconde moitié du renversement descend au corps : « c'est la carte qui a été
-   dessinée par-dessus », « on l'a rebaptisée », « on l'a redessinée ».
+   La seconde moitié du renversement descend au corps, prise dans la même ligne,
+   colonne « Corps de clôture ». Le corps n'est pas une datation.
 
    **Un panneau de cartouche est une boîte à hauteur fixe** : `top` et `bottom` posés,
    rien à comprimre. Deux phrases d'affichage y font cinq lignes, soit 572 px sur les
    747 disponibles, et le pied sort du cadre avec l'attribution. Le titre d'une clôture
-   en cartouche tient donc en une phrase, et le budget se **mesure** avant d'écrire.
+   en cartouche tient donc dans le budget mesuré de deux lignes composées — celui de la
+   projection, en deux phrases, se **mesure** avant d'accepter un cartouche.
 
    > `flex:1; min-height:0` sur un intercalaire **ne comprime rien** : un élément vide
    > mesure 0 et ne peut que pousser vers le bas. Pour épingler un pied dans une boîte
    > à hauteur fixe, c'est `margin-top:auto` **sur le pied lui-même**.
-2. **La vision**, au corps, et c'est la seule phrase du lot qui parle du projet plutôt
-   que du sujet : nommer un peuple aussi facilement qu'un pays.
+2. **La vision**, sous le corps, et c'est la seule phrase du lot qui parle du projet
+   plutôt que du sujet : nommer un peuple aussi facilement qu'un pays.
 
    **Le corps ne redit jamais le titre.** Une clôture dont le titre énonce le
    renversement et dont le corps le reformule — « une frontière ne contient pas un
@@ -705,7 +752,9 @@ Disposition **A** ou **B**. Le renversement d'agent, puis la vision, puis la sor
 3. **La pastille** de §8.
 
 **Ce qui est interdit sur une clôture :** un appel à l'action seul. Une clôture qui ne
-dit que « ethniafrica.com » a laissé le lecteur sans la raison d'y aller.
+dit que « ethniafrica.com » a laissé le lecteur sans la raison d'y aller. Et, tant que
+la session de doctrine n'a pas tranché, « Berlin » comme celui qui a tracé les lignes
+ou « mille ans » posé comme un fait — voir la table par type de contenu.
 
 ---
 
@@ -852,25 +901,26 @@ sinon c'est le fond sous lui qui manque de voile, et aucun z-index n'y change ri
 ### La clôture porte la doctrine, jamais un lien seul
 
 « Vous pouvez trouver les peuples sur EthniAfrica » n'est pas une clôture, c'est une
-adresse. La clôture dit, dans cet ordre : le renversement d'agent, sa datation, la
-ligne de vision, puis le lien.
+adresse. La clôture dit, dans cet ordre : le titre de clôture de son type, le corps de
+clôture de son type, la ligne de vision, puis le lien. Titre et corps se prennent dans
+la table par type de contenu de §7 ter ; pour un lot sur un peuple réparti sur plusieurs
+pays :
 
-> **Une frontière ne contient pas un peuple. Elle le traverse.**
-> Tracées à la conférence de Berlin, en 1884. Les noms sont mille ans plus vieux.
+> **Ce peuple n'a pas été divisé.**
+> C'est la carte qui a été dessinée par-dessus.
 > Nommer un peuple aussi facilement qu'un pays.
-> 804 peuples · ethniafrica.com
+> {n} peuples · ethniafrica.com
 
-**Le renversement tient en une seule phrase d'affichage, les deux moitiés au même
-rang.** « Elle le traverse » est la chute : la reléguer au corps la fait lire comme une
-précision, alors que c'est l'argument. Elle passe donc en accent dans le titre, et le
-corps ne garde que la datation.
+`{n}` se mesure sur le corpus le jour du rendu.
 
-**« La conférence de Berlin »**, jamais « Berlin » : la ville n'a rien fait, la
-conférence si. Et **« mille ans plus vieux »** plutôt que « plus de mille ans » — un
-écart se comprend d'un coup, une borne demande un calcul. La comparaison est l'argument,
-pas le nombre.
+**Le dernier mot du titre passe en accent, et lui seul** — c'est la chute, comme sur
+toutes les lignes de la table. L'ancienne clôture vidéo mettait les deux phrases d'un
+renversement au titre et une datation au corps ; elle est retirée, parce que cette
+datation écrivait « Berlin » comme auteur des lignes et « mille ans » comme un fait
+(§7 ter). **Aucune datation sur une clôture** tant que la session de doctrine n'a pas
+tranché.
 
-**Budget de la clôture :** titre Anton 80 px sur trois lignes (259 px) + datation deux
+**Budget de la clôture :** titre Anton 80 px sur trois lignes (259 px) + corps deux
 lignes (96 px) = 375 px, emplacement à `top: 890` sur 380. La rampe du voile se recale
 d'autant — `top: 590`.
 
@@ -910,20 +960,26 @@ EthniAfrica on documente d'où viennent les noms » est une adresse ; un montage
 l'image dit la doctrine et dont la voix dit l'adresse se contredit sur sa dernière
 seconde.
 
-La fin parlée dit **le renversement, puis la sortie**. Rien d'autre.
+La fin parlée dit **le renversement du type — son titre puis son corps de clôture —,
+puis la sortie**. Rien d'autre. Le renversement n'est pas universel : il est celui de la
+ligne du lot dans la table par type de contenu de §7 ter. Pour un lot sur un peuple
+réparti sur plusieurs pays :
 
-> Une frontière ne contient pas un peuple. Elle le traverse.
+> Ce peuple n'a pas été divisé. C'est la carte qui a été dessinée par-dessus.
 > Retrouvez l'histoire du nom des peuples sur EthniAfrica. Et bientôt, celle des lieux.
 
-**Ce qui est écrit sur la carte ne se redit pas à la voix.** La datation et la
-ligne de vision sont composées sur la clôture, mot pour mot ; les prononcer en
-plus, c'est publier trois fois la même phrase et immobiliser l'image le temps de
-le faire.
+**Ce qui n'est écrit que sur la carte ne se dit pas à la voix.** La ligne de vision
+est composée sur la clôture, mot pour mot ; la prononcer en plus, c'est publier deux
+fois la même phrase et immobiliser l'image le temps de le faire.
 
 | Fin parlée | Mots | Carte de clôture à l'écran |
 | --- | --- | --- |
 | renversement · datation · vision · sortie | 58 | **21,4 s** |
 | renversement · sortie | 23 | **7 s** |
+
+Mesuré sur l'ancienne clôture, dont le renversement faisait dix mots. La fin parlée
+d'un lot sur un peuple en fait vingt-sept, du même ordre que la seconde ligne : la
+durée se mesure sur le lot, elle ne se recopie pas de ce tableau.
 
 Vingt secondes sur une image fixe, c'est une image qu'on quitte. La clôture doit
 être aussi brève que l'ouverture.
@@ -1066,8 +1122,9 @@ premier changement de format.
 - [ ] La licence de sortie est celle du lot, calculée et non recopiée.
 - [ ] Aucune note interne visible sur l'image.
 - [ ] Le crédit nomme le document réellement affiché.
-- [ ] **Ouverture et clôture sont propres au sujet** (titre et image) ; seule la ligne
-      de vision est constante, mot pour mot.
+- [ ] **Titre et image d'ouverture propres au sujet ; titre et corps de clôture fixés
+      par le type de contenu** (table de §7 ter) ; image de clôture propre au sujet ;
+      ligne de vision constante, mot pour mot.
 - [ ] **Le titre de clôture renverse le bon sujet** — pas « ce peuple » sur un lot de
       villes ou de projection.
 - [ ] **B n'est jamais une ouverture.**
