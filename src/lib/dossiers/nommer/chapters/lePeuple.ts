@@ -87,7 +87,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "colonial",
-              "241",
+              "240",
               "Le nom est daté de la colonisation, ou officialisé par elle",
             ],
             sourceRefs: [],
@@ -103,14 +103,14 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
             figureRefs: ["probe-administration"],
           },
           {
-            cells: ["europ-", "118", "Navigateurs, explorateurs, cartographes"],
+            cells: ["europ-", "120", "Navigateurs, explorateurs, cartographes"],
             sourceRefs: [],
             figureRefs: ["probe-european"],
           },
           {
             cells: [
               "voisin",
-              "112",
+              "113",
               "Un exonyme africain, donné par un peuple voisin — souvent le plus ancien de tous",
             ],
             sourceRefs: [],

@@ -7,10 +7,10 @@
   "content": {
     "appellations": {
       "mainName": "Kabyle",
-      "selfAppellation": "Izwawen / Iqbayliyen",
-      "originOfExonyms": "Le terme Kabyle est un exonyme, déformation de l'arabe qaba'il (قبائل) signifiant tribus ou ceux qui ont accepté (l'islam), utilisé par les Arabes après la conquête musulmane pour désigner les populations montagnardes qui acceptèrent le Coran. Le terme Zwawa (Izwawen) est l'autre appellation historique, encore en usage en Algérie occidentale.",
+      "selfAppellation": "Leqbayel (au singulier Aqbayli)",
+      "originOfExonyms": "Le terme Kabyle vient de l'arabe qabâ'il (قبائل), pluriel de qabîla, la tribu. Les citadins d'Algérie, Arabes, Berbères arabisés, Andalous et Turcs, l'employaient pour désigner les ruraux organisés en tribus, et les Français l'ont fixé au milieu du 19e siècle pour nommer la région et ses habitants. Une seconde étymologie, par le verbe qbel, accepter, en référence à l'acceptation de l'islam, est rapportée comme hypothèse et n'est pas établie. Les Kabyles ont fait leur ce mot venu de l'arabe : Leqbayel, aqbayli et taqbaylit sont attestés dans leur poésie du 19e siècle. Zwawa est une autre appellation, arabe elle aussi, employée depuis le Moyen Âge, notamment par Ibn Khaldoun, pour les tribus du Djurdjura, puis par les arabophones pour désigner les Kabyles en général ; elle a vieilli. En kabyle, azwaw est un prénom et Izwawen un nom de clan fréquent, qui ne garde que des traces sporadiques, surtout poétiques, du sens de Kabyles.",
       "whyProblematic": "L'ethnonymie kabyle est complexe : le terme Kabyle, d'origine exonyme arabe, a été repris et instrumentalisé par l'administration coloniale française dans le cadre du mythe kabyle (19e siècle), qui affirmait que les Kabyles étaient plus aptes à assimiler la civilisation française que les Arabes. Cela a politisé l'identité kabyle.",
-      "contemporaryUsage": "Le terme Kabyle est couramment utilisé en français, arabe et kabyle. Les locuteurs se désignent eux-mêmes comme Iqbayliyen ou Izwawen. Depuis le Printemps berbère de 1980, les Kabyles sont au premier plan de la revendication des langues et de l'identité berbères en Algérie.",
+      "contemporaryUsage": "Le terme Kabyle est couramment utilisé en français, arabe et kabyle. En kabyle, les Kabyles se désignent collectivement comme Leqbayel, aqbayli au singulier, un nom emprunté à l'arabe puis approprié ; Izwawen ne sert pas aujourd'hui de nom collectif. Depuis le Printemps berbère de 1980, les Kabyles sont au premier plan de la revendication des langues et de l'identité berbères en Algérie.",
       "linguisticFamily": "FLG_BERBERE",
       "ethnoLinguisticGroup": "Berbère septentrional (kabyle)",
       "historicalRegion": "Kabylie (Tamurt n Leqvayel) — massifs montagneux du Djurdjura et de Babor (Atlas tellien)",
@@ -214,6 +214,30 @@
         "title": "La Découverte / Awal, 1989",
         "url": null,
         "tier": "needs_review"
+      },
+      {
+        "title": "Bellil, R. « Kabylie : La région dans les écrits arabes ». Encyclopédie berbère, 26, 2004, p. 4016-4022",
+        "url": "https://journals.openedition.org/encyclopedieberbere/1405",
+        "tier": "referenced",
+        "notes": "Peeters. Lu : l'origine du terme Kabyle dans l'arabe qabâ'il, son usage citadin et sa fixation au milieu du 19e siècle ; les Zwawa chez Ibn Khaldoun."
+      },
+      {
+        "title": "Chaker, Salem. « Note à propos du précédent article ». Revue de l'Occident musulman et de la Méditerranée, 26, 1978, p. 103",
+        "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1826",
+        "tier": "referenced",
+        "notes": "Commentaire de l'étude de Jacques Lanfry sur les Zwawa. Lu : zwawi et zwawa comme dénomination arabe un peu vieillie des Kabyles ; azwaw comme prénom, izwawen comme nom de clan et ses traces poétiques au sens de Kabyles."
+      },
+      {
+        "title": "Assam, Malika. Des tribus en Kabylie ? Les At Zemmenzer, de la tribu précoloniale à la reconstruction identitaire berbère. Paris, Presses de l'Inalco, 2022, chapitre « Tribu » et affirmation identitaire berbère en Kabylie",
+        "url": "https://books.openedition.org/pressesinalco/45934",
+        "tier": "referenced",
+        "notes": "Lu : les deux étymologies possibles de Kabyle, par qabâ'il ou par qbel ; le nom collectif Leqbayel relevé dans le dictionnaire kabyle-français de Jean-Marie Dallet ; aqbayli, Leqbayel et taqbaylit attestés dans la poésie du 19e siècle."
+      },
+      {
+        "title": "Académie française. Dictionnaire de l'Académie française, 9e édition, article kabyle",
+        "url": "https://www.dictionnaire-academie.fr/article/A9K0006",
+        "tier": "referenced",
+        "notes": "Lu : emprunt à l'arabe qabila, tribu, famille, dont le pluriel qabâ'il désigne les Kabyles ; aucune étymologie par l'acceptation de l'islam."
       },
       {
         "title": "des illusions de l'émigré aux souffrances de l'immigré*. Paris : Seuil, 1999",

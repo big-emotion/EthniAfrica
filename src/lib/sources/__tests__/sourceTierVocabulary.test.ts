@@ -33,6 +33,7 @@ import {
 } from "@/lib/glossaire/vocabularies";
 import {
   AI_PROVENANCE_WEIGHT,
+  ORAL_NARRATIVE_KINDS,
   SOURCE_KINDS,
   SOURCE_TIERS,
   SOURCE_TIER_WEIGHTS,
@@ -297,13 +298,53 @@ describe("source tier vocabulary contract — Supabase schema", () => {
     expect([...allowed].sort()).toEqual([...SOURCE_TIERS].sort());
   });
 
-  // @req REQ-092
-  it("allows exactly the exported source kinds in the sources_source_kind_check", () => {
+  // @req REQ-161
+  it("keeps the 031 source-kind migration historical", () => {
     const allowed = checkConstraintValues(
       readMigration("031_"),
       "sources_source_kind_check"
     );
+    expect(allowed).toEqual([
+      "intergovernmental",
+      "government",
+      "official_statistics",
+      "linguistic_reference",
+      "academic",
+      "community",
+      "repository",
+      "archive",
+      "discovery",
+      "ai_generated",
+      "unknown",
+    ]);
+  });
+
+  // @req REQ-161
+  it("allows exactly the exported source kinds in the latest sources_source_kind_check", () => {
+    const allowed = checkConstraintValues(
+      readMigration("089_"),
+      "sources_source_kind_check"
+    );
     expect([...allowed].sort()).toEqual([...SOURCE_KINDS].sort());
+  });
+
+  // @req REQ-162
+  it("allows exactly the exported oral narrative kinds in the latest CHECK", () => {
+    const allowed = checkConstraintValues(
+      readMigration("089_"),
+      "oral_narratives_narrative_kind_check"
+    );
+    expect([...allowed].sort()).toEqual([...ORAL_NARRATIVE_KINDS].sort());
+    expect(ORAL_NARRATIVE_KINDS).toEqual([
+      "tradition",
+      "testimony",
+      "memory",
+      "story",
+      "song",
+      "genealogy",
+      "motto",
+      "proverb",
+    ]);
   });
 
   // @req REQ-092
