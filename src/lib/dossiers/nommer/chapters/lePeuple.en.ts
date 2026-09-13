@@ -51,28 +51,28 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
         rows: [
           [
             "colonial",
-            "239",
+            "241",
             "The name dates from colonisation, or was made official by it",
           ],
           [
             "administr-",
-            "179",
+            "180",
             "The name is an act of census-taking before it is a fact of language",
           ],
-          ["europ-", "118", "Navigators, explorers, cartographers"],
+          ["europ-", "120", "Navigators, explorers, cartographers"],
           [
             "voisin (‘neighbour’)",
-            "112",
+            "113",
             "An African exonym, given by a neighbouring people — often the oldest of all",
           ],
           [
             "dépréciatif and related stems",
-            "85",
+            "84",
             "The fiche explicitly calls the word pejorative, depreciative, mocking or derisive",
           ],
           [
             "portugais (‘Portuguese’)",
-            "83",
+            "82",
             "The deepest layer of the Atlantic coast, from the fifteenth century onwards",
           ],
           [
@@ -115,7 +115,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
       heading: "When the name is a mockery",
       blocks: {
         "quatre-vingt-sept-fiches":
-          "Eighty-seven fiches call their exonym pejorative, depreciative, mocking or derisive. Two cases show what the word does, and what replacing it does not repair.",
+          "Eighty-four fiches call their exonym pejorative, depreciative, mocking or derisive. Two cases show what the word does, and what replacing it does not repair.",
       },
       pairs: [
         {

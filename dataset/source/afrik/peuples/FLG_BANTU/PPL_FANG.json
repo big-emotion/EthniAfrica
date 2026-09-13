@@ -7,11 +7,12 @@
   "content": {
     "appellations": {
       "mainName": "Fang",
-      "selfAppellation": "Fan",
-      "exonyms": ["Pahouin", "Pangwe", "Pamue", "M'fang"],
-      "originOfExonyms": "Pahouin est le terme utilise par les colonisateurs français, derive d'un mot local. Pangwe est la denomination allemande utilisee au Cameroun colonial. Pamue est le terme employe en Guinée equatoriale sous domination espagnole. Ces appellations exterieures reflètent la diversite des contextes coloniaux dans lesquels le peuple Fang a ete decrit.",
+      "selfAppellation": "Fang (prononcé fàŋ)",
+      "exonyms": ["Pahouin", "Pangwe", "Pamue", "Mpangwe"],
+      "spellingAliases": ["Fan", "Faŋ"],
+      "originOfExonyms": "Les trois noms européens viennent d'un même mot, Mpangwe, par lequel les peuples de la côte de l'estuaire du Gabon désignaient leurs voisins de l'intérieur : ils avaient entendu ces voisins se nommer fang et l'avaient adapté à leur propre langue. Les Européens ont repris ce nom des intermédiaires côtiers vers le milieu du XIXe siècle. Les Français en ont fait Pahouin, les Allemands Pangwe, en usage au Kamerun et dans l'ethnographie allemande, les Espagnols Pamue, en usage dans la colonie de Guinée espagnole. Ces noms étaient collectifs : ils rangeaient sous une seule étiquette les Fang et des peuples voisins apparentés comme les Bulu et les Beti. Fan est une graphie française ancienne du nom que les Fang se donnent, non un autre nom.",
       "whyProblematic": "Le terme Pahouin est parfois considere comme pejoratif car associe aux stereotypes coloniaux de cannibalisme, accusations fondees sur la decouverte de boites reliquaires contenant des os ancestraux.",
-      "contemporaryUsage": "Fan ou Fang est le terme prefere par le peuple lui-meme. Il est d'usage officiel au Gabon et en Guinee equatoriale.",
+      "contemporaryUsage": "Fang, de l'autodésignation fàŋ, est la forme en usage dans la littérature en français. Fan en est une graphie ancienne. Pahouin, Pangwe et Pamue sont des noms coloniaux, repris aujourd'hui surtout pour parler de l'histoire du nom.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantou Beti-Fang (zone A70), sous-groupe Fang meridional",
       "historicalRegion": "Forets equatoriales d'Afrique centrale (sud Cameroun, nord Gabon, Rio Muni - Guinee equatoriale)",
@@ -131,6 +132,48 @@
         "title": "Qiraat Africa – The Fang people of Africa",
         "url": "https://qiraatafrican.com/en/14988/the-fang-people-of-africa/",
         "tier": "unverified"
+      },
+      {
+        "title": "Glottolog 5.3 – Fang (Equatorial Guinea)",
+        "url": "https://glottolog.org/resource/languoid/id/fang1246",
+        "tier": "official",
+        "notes": "Code ISO 639-3 fan. Noms alternatifs relevés : Pahouin, Pahoun, Pamue."
+      },
+      {
+        "title": "ELLAF – Fang",
+        "url": "https://ellaf.huma-num.fr/langues/fang/",
+        "tier": "referenced",
+        "notes": "Encyclopédie des littératures en langues africaines, hébergée par Huma-Num. Donne fang comme le glossonyme usité dans la littérature, tiré de l'autodésignation fàŋ."
+      },
+      {
+        "title": "Marquis de Compiègne, L'Afrique équatoriale. Gabonais, Pahouins, Gallois, Paris, Plon, 1875",
+        "url": "https://archive.org/details/gabonaispahouins00comp",
+        "tier": "referenced",
+        "notes": "Récit d'exploration de l'Ogooué. Note de la page 154 : le nom de Pahouins a été adopté par les Français, ces peuples se nomment eux-mêmes Fan, leurs voisins les appellent Mpangwen. Référence repérée via Wikipédia en français, puis lue dans l'exemplaire numérisé."
+      },
+      {
+        "title": "Günter Tessmann, Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, Berlin, Ernst Wasmuth, 1913",
+        "url": "https://archive.org/details/diepangwevlkerku01tess",
+        "tier": "referenced",
+        "notes": "Monographie allemande tirée de l'expédition de Lübeck (1907-1909), écrite dans le vocabulaire colonial de son époque. L'introduction rapporte que les peuples de la côte ont entendu leurs voisins se nommer fang, en ont tiré Pangwe, et que les Français en ont fait Pahouins."
+      },
+      {
+        "title": "Pierre Alexandre, Proto-histoire du groupe beti-bulu-fang : essai de synthèse provisoire, Cahiers d'études africaines, 1965",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1965_num_5_20_3049",
+        "tier": "referenced",
+        "notes": "Rapporte que les Mpangwe, signalés dans l'arrière-pays de l'estuaire du Gabon peu après 1840, sont devenus dans la bouche des Européens les Pahouins ou Pamue, et rattache ces formes à la phonologie de la langue mpongwè."
+      },
+      {
+        "title": "Raúl Sánchez Molina, El Pamue imaginado : los Fang de la literatura colonial española, UNED, 2011",
+        "url": "https://portalcientifico.uned.es/documentos/5f88ea6d29995259ef291c13",
+        "tier": "referenced",
+        "notes": "Étude du nom pamue, employé par les explorateurs, missionnaires et administrateurs pour désigner les Fang de la colonie espagnole de Guinée. Résumé consulté."
+      },
+      {
+        "title": "Lolke J. van der Veen, The Fang coming all the way down from Egyptland?, atelier Migration du programme Eurocores OMLL, 2007",
+        "url": "http://www.ddl.cnrs.fr/fulltext/Van%20Der%20Veen/Fang_WebVersion.pdf",
+        "tier": "referenced",
+        "notes": "Présentation de recherche du laboratoire Dynamique du langage, CNRS et Université Lyon 2. Range les Fang avec les Beti et les Bulu dans le groupe dit pahouin, et tient le nom Mpangwe, Pamouay ou Pamue pour un nom donné par des voisins, probablement les Mpongwe."
       }
     ]
   },

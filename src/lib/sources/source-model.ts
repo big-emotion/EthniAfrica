@@ -26,6 +26,8 @@ export const structuredSourceKindSchema = sourceKindSchema.exclude([
   "discovery",
   "ai_generated",
   "unknown",
+  "oral_tradition",
+  "ethniafrica_synthesis",
 ]);
 
 // @req REQ-093

@@ -380,6 +380,17 @@ which reproduces the retired `ai-enriched` weight of 0.2 exactly. The UI keeps t
 visible: the **Non vérifiée** badge plus an AI provenance marker driven by `source_kind`, never by
 the tier.
 
+DEC-052 makes a narrow exception for people names. `oral_tradition` and
+`ethniafrica_synthesis` both retain `tier: "unverified"`, but their source-quality
+weights are fixed by provenance at 0.6 and 0.3 respectively. These values **replace**
+the tier weight; they are not coefficients. An oral source qualifies a people name
+only through an approved, rights-cleared narrative linked to that people, and one
+such narrative is sufficient. The synthesis may qualify a people name on its own.
+Narratives with the same opaque `carrier_ref` count once in the source-count part
+of confidence. Patronyme and other name gates remain unchanged. This is a scoped
+exception to REQ-095 for the provenance of a people's name, not a change to how
+oral accounts support other assertions.
+
 A fiche sourced only at `unverified` is published and visibly marked low-confidence through
 `ConfidenceChip`. That is the intended outcome, not a defect to fix.
 

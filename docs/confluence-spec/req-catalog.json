@@ -156,7 +156,10 @@
     "REQ-157",
     "REQ-158",
     "REQ-159",
-    "REQ-160"
+    "REQ-160",
+    "REQ-161",
+    "REQ-162",
+    "REQ-163"
   ],
   "sourceMap": {
     "REQ-001": "FR1",
@@ -311,6 +314,9 @@
     "REQ-157": "Confluence REQ-157 (page 190545921) — only sourced, bilingual and rights-cleared publications enter the deck, with exact details and atlas links",
     "REQ-158": "Confluence REQ-158 (page 190545921) — stable localized publication permalinks, SSR entry, history and matching metadata",
     "REQ-159": "Confluence REQ-159 (page 190545921) — account-free device-only keeping and retrieval with honest storage failure states",
-    "REQ-160": "Confluence REQ-160 (page 190545921) — ten icon-first truthful share choices, exact links and no unsupported media success"
+    "REQ-160": "Confluence REQ-160 (page 190545921) — ten icon-first truthful share choices, exact links and no unsupported media success",
+    "REQ-161": "Confluence REQ-161 (page 198836243) — a people name may rest on an approved, rights-cleared oral narrative or revisable EthniAfrica synthesis with fixed provenance weights",
+    "REQ-162": "Confluence REQ-162 (page 198836243) — validate the collection framework of oral narratives and syntheses without rejecting oral provenance",
+    "REQ-163": "Confluence REQ-163 (page 198836243) — show labelled oral provenance and revisable synthesis to readers"
   }
 }
