@@ -3,11 +3,10 @@
  * `didYouKnowIllustrations.ts`.
  *
  * A sidecar carries the leaves it translates and nothing else, so an entry
- * here is only what an English reader hears or reads on the plate: the alt,
- * and the half-line that says who gave the name. Everything else on an
+ * here is only what an English reader hears: the alt. Everything else on an
  * illustration is invariant — the file path, the credit line a licence
- * requires verbatim, the two names on a plate, the licence and file URLs —
- * and lives once, in the French module.
+ * requires verbatim, the licence and file URLs — and lives once, in the
+ * French module.
  *
  * Every entry is an agent-produced translation and says so (`provenance:
  * "machine"`, DEC-048). Nothing here is wired into a component yet; the
@@ -17,28 +16,11 @@
 import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
 
 // @req REQ-145
-export type DidYouKnowIllustrationTranslation =
-  | { kind: "picture"; alt: string; provenance: TranslationKind }
-  | {
-      kind: "plate";
-      alt: string;
-      givenBy: string;
-      provenance: TranslationKind;
-    };
-
-/** The plate's alt reads the same way for every anecdote; only the two names change. */
-function plate(
-  given: string,
-  own: string,
-  givenBy: string
-): DidYouKnowIllustrationTranslation {
-  return {
-    kind: "plate",
-    givenBy,
-    alt: `Onomastic plate: “${given}”, the name received, above the name “${own}” this people gives itself.`,
-    provenance: "machine",
-  };
-}
+export type DidYouKnowIllustrationTranslation = {
+  kind: "picture";
+  alt: string;
+  provenance: TranslationKind;
+};
 
 function picture(alt: string): DidYouKnowIllustrationTranslation {
   return { kind: "picture", alt, provenance: "machine" };
@@ -115,130 +97,92 @@ export const DID_YOU_KNOW_ILLUSTRATIONS_EN: Record<
   "sierra-leone": picture(
     "Nautical chart of Freetown bay engraved for an 1884 sailing guide."
   ),
-  "iteso-bakedi": plate(
-    "Bakedi",
-    "Iteso",
-    "given by the Baganda, nineteenth century"
+  "iteso-bakedi": picture(
+    "A raised, thatched grain store in a compound in the Teso country, black-and-white photograph from 1909"
   ),
-  "datoga-mangati": plate(
-    "Mang'ati",
-    "Datooga",
-    "from the Maasai — “the enemies”"
+  "datoga-mangati": picture(
+    "Cattle and goats resting inside a thorn-branch enclosure beneath trees, under a morning sky in Tanzania"
   ),
   "azande-niamniam": picture(
     "Red and yellow flowers of Impatiens niamniamensis, grown under glass at the Berlin botanical garden."
   ),
-  "wonnin-godie": plate(
-    "Godié",
-    "Wonnin",
-    "from the Neyo gwèdji — “chimpanzee-panther”"
+  "wonnin-godie": picture(
+    "Painted wooden bovine mask in ochre, blue and white with upright horns, displayed on a stand at the Musée africain de Lyon"
   ),
-  "murle-moden": plate(
-    "Beir · Jebe · Ajibba",
-    "Murle",
-    "from the Dinka, the Luo and the Anuak"
+  "murle-moden": picture(
+    "Aerial view of a flooded plain near Pibor, with green thickets rising out of the water as far as the eye can see"
   ),
-  "kirdi-paien": plate(
-    "Kirdi",
-    "Mafa · Massa · Podoko",
-    "from Kanuri-Hausa — “pagan”"
+  "kirdi-paien": picture(
+    "Rocky hills and scrub of the Mora massif in the Mandara Mountains, Cameroon"
   ),
   "bambara-refus": picture(
     "Bamana chi wara dance crest, in openwork wood, depicting an antelope with raised horns."
   ),
-  "dogon-habe": plate("Habe", "Dogon", "Fula exonym — “stranger”"),
-  "le-nom-est-une-reponse": plate(
-    "Frafra",
-    "Nankana",
-    "from a greeting: ya fara fara?"
+  "dogon-habe": picture(
+    "Stone and mud-brick houses and granaries packed against the sandstone wall of the Bandiagara escarpment"
+  ),
+  "le-nom-est-une-reponse": picture(
+    "Compound walls painted with red, black and white figures, birds and lozenges in front of round huts at Sirigu"
   ),
   "guere-wobe": picture(
     "Wè ritual mask from Côte d'Ivoire, with a protruding face ringed with fibres."
   ),
-  "bamileke-cent-royaumes": plate(
-    "Bamiléké",
-    "Bandjoun · Bafoussam · Dschang",
-    "from the German administration, from 1884"
+  "bamileke-cent-royaumes": picture(
+    "Red earth avenue lined with conical thatched houses leading to the palace of the Bandjoun chiefdom"
   ),
-  "sara-douzaine": plate(
-    "Sara",
-    "Ngambay · Sar · Mbay",
-    "from outside observers, then from France"
+  "sara-douzaine": picture(
+    "Elevated view over the rooftops and trees of Moundou, Logone Occidental, Chad"
   ),
-  "bete-plantation": plate("Bété", "Magwé", "French administrative category"),
-  "bassa-nge-distinction": plate(
-    "Bassa",
-    "Bassa Nge",
-    "distinction added by the British"
+  "bete-plantation": picture(
+    "Cocoa beans spread out to dry on a wide yard in front of a thatched mud-brick house in Ziplignan"
   ),
-  "tswa-recensement": plate(
-    "Tsonga · Shangaan",
-    "Vatswa",
-    "from the censuses, since the Portuguese era"
+  "bassa-nge-distinction": picture(
+    "Lokoja and the broad river seen from the top of Mount Patti, Kogi State, Nigeria"
   ),
-  "hutu-cartes-identite": plate(
-    "Hutu",
-    "Abahutu",
-    "fixed by the Belgian identity cards, 1920"
+  "tswa-recensement": picture(
+    "Round thatched houses under coconut palms, with firewood for sale beside a sandy road"
   ),
-  "kasem-gurunsi": plate(
-    "Gurunsi",
-    "Kasena",
-    "from Zarma — “iron does not penetrate”"
+  "hutu-cartes-identite": picture(
+    "Green hills and a cultivated valley under a cloudy sky near Rumonge, Burundi"
+  ),
+  "kasem-gurunsi": picture(
+    "Mud house covered in hand-painted black and white geometric patterns, in the royal court of Tiébélé"
   ),
   "dioula-metier": picture(
     "The Grand Mosque of Bobo-Dioulasso, built in mud brick and bristling with supporting beams."
   ),
-  "teke-vendre": plate(
-    "Teke-Tege",
-    "BaTeke",
-    "a division of the linguistic catalogues"
+  "teke-vendre": picture(
+    "A chain of twisted brass rings once used as currency, displayed on a museum stand"
   ),
-  "tetela-watetera": plate(
-    "Watetera",
-    "Motetela",
-    "Arabic slave-trade term, taken up in 1885"
+  "tetela-watetera": picture(
+    "Detail of an engraved German map of the Sankuru, with the word “BATETELA” lettered along the river"
   ),
   "tabwa-attache": picture(
     "Tabwa male figure in carved wood, the torso covered in chevron scarifications."
   ),
-  "angolar-naufrage": plate(
-    "Angolares",
-    "N'golá",
-    "from Portuguese, after Angola"
+  "angolar-naufrage": picture(
+    "Dugout fishing canoes resting on a black-sand beach in the shade of trees"
   ),
-  "crioulo-cap-vert": plate(
-    "Crioulo",
-    "Kabuverdianu",
-    "from Portuguese — the slave born in the colony"
+  "crioulo-cap-vert": picture(
+    "A low blue-walled house with brown shutters on a cobbled street, a hill and palms behind"
   ),
-  "kavango-riviere": plate(
-    "Okavango people",
-    "vaKavango",
-    "after the border river"
+  "kavango-riviere": picture(
+    "A bend of the Okavango River in dry savanna with golden grass"
   ),
-  "kaonde-riviere": plate(
-    "Mushima wa Kaonde",
-    "BaKaonde",
-    "given by the Lunda victor"
+  "kaonde-riviere": picture(
+    "A wooded riverbank at dusk, its trees mirrored in still water"
   ),
-  "manianga-marche": plate(
-    "Manianga",
-    "Ba-sundi",
-    "from a market — or from Stanley, 1881"
+  "manianga-marche": picture(
+    "A round blackened-wood powder box carved with arches and cross-hatching"
   ),
-  "gorowa-village-voisin": plate(
-    "Kimbulu · Fiome",
-    "Gorwaa",
-    "from Swahili, and from the neighbouring Iraqw village"
+  "gorowa-village-voisin": picture(
+    "Lake Babati below a wooded hill, with maize fields in the foreground, in Tanzania's Manyara Region"
   ),
-  "kalabari-calabar": plate(
-    "New Calabar",
-    "Awome",
-    "from Portuguese navigators, then British ones"
+  "kalabari-calabar": picture(
+    "Engraved three-panel chart of the « Nouveau Calebar » river and the Niger mouths, surveyed in 1867"
   ),
   "omotique-fleuve-omo": picture(
-    "The lower Omo valley, in south-western Ethiopia, under a heavy sky."
+    "The wide, muddy Omo winding between wooded banks under a clear sky, seen from a dry earth bluff"
   ),
   "gur-mabia": picture(
     "Trees reflected on the surface of the Volta, in Ghana."
@@ -246,15 +190,11 @@ export const DID_YOU_KNOW_ILLUSTRATIONS_EN: Record<
   "ronga-junod": picture(
     "Map of the Tsonga groups and their location, drawn by Henri-Alexandre Junod for his study."
   ),
-  "fulbe-quatre-noms": plate(
-    "Peul · Fula · Fulani · Fellata",
-    "Fulbe",
-    "from Wolof, Mandingo, Hausa and Arabic"
+  "fulbe-quatre-noms": picture(
+    "Large cream wool blanket woven in strips, with brown and black geometric motifs and two red borders"
   ),
-  "malinke-manden": plate(
-    "Mandingo · Mandinka",
-    "Maninka",
-    "from the colonial administrations"
+  "malinke-manden": picture(
+    "Conical thatched roofs in the foreground before red sandstone cliffs and wooded slopes near Siby"
   ),
   "fang-reputation": picture(
     "Eyema byeri reliquary guardian, a Fang sculpture from Gabon, with metal-inlaid eyes."
@@ -262,36 +202,28 @@ export const DID_YOU_KNOW_ILLUSTRATIONS_EN: Record<
   "beti-cranes": picture(
     "Bust-length photographic portrait of the explorer Paul Belloni Du Chaillu."
   ),
-  "khwe-penduka": plate(
-    "Barakwena · Water Bushmen",
-    "Khwe",
-    "from Bantu neighbours, and from the administration"
+  "khwe-penduka": picture(
+    "The setting sun reflected on the Okavango River, lined by a wooded bank in silhouette, in Bwabwata National Park"
   ),
-  "west-taa-masarwa": plate(
-    "Masarwa",
-    "!Xoon",
-    "Tswana exonym, held to be pejorative"
+  "west-taa-masarwa": picture(
+    "Aerial view of Aminuis, a settlement of lined-up houses beside a salt pan in the red sands of the Namibian Kalahari"
   ),
-  "antambahoaka-surnom": plate(
-    "Ratiambahoaka",
-    "Antambahoaka",
-    "the founder's nickname — “beloved of his people”"
+  "antambahoaka-surnom": picture(
+    "The reed- and palm-lined Pangalanes canal at Mananjary, with a distant dugout canoe"
   ),
-  "masa-banana": plate("Banana", "Masana", "from neighbours — “friendly”"),
-  "rendille-baton": plate(
-    "Rertit",
-    "Rendille",
-    "from Somali — “those who refused”"
+  "masa-banana": picture(
+    "Two round earthen houses on sandy ground lined with palms, at Yagoua"
   ),
-  "kaffa-cafe": plate("Keffa", "Kafficho", "Amharic transliteration"),
-  "bono-brong-ahafo": plate(
-    "Brong · Abron",
-    "Bonofoɔ",
-    "from the Asante, then the British"
+  "rendille-baton": picture(
+    "A domed Rendille house of bent poles covered with hides and mats, under a stormy sky in northern Kenya"
   ),
-  "toura-wen": plate(
-    "Toura",
-    "Wenmebo",
-    "from the French colonial administration"
+  "kaffa-cafe": picture(
+    "A small, worn and stained old cup resting in an open palm, used by the Kafficho for drinking coffee"
+  ),
+  "bono-brong-ahafo": picture(
+    "A huge banded sandstone boulder above a grassy valley at Tanoboase, with three tiny walkers at its foot"
+  ),
+  "toura-wen": picture(
+    "A forested hill rising above the houses of Biankouma, over green fields crossed by a road"
   ),
 };

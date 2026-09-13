@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { AnecdotePlate } from "@/components/anecdotes/AnecdotePlate";
 import { TranslationProvenanceMarker } from "@/components/fiche/TranslationProvenanceMarker";
 import { SectionHeading } from "@/components/home/SectionHeading";
 import { ActionLink } from "@/components/ui/ActionLink";
@@ -82,17 +81,34 @@ export function HomeHeroAnecdote({ language, fact }: HomeHeroAnecdoteProps) {
           </div>
           <figcaption className="home-hero-anecdote-credit">
             {illustration.credit}
+            {/* Brand charter §9: a licence is published, not named — the
+                same two links the anecdote card prints. */}
+            {illustration.filePage ? (
+              <>
+                {" · "}
+                <a
+                  href={illustration.filePage}
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  {copy.file}
+                </a>
+              </>
+            ) : null}
+            {illustration.licenceUrl ? (
+              <>
+                {" · "}
+                <a
+                  href={illustration.licenceUrl}
+                  rel="noreferrer noopener license"
+                  target="_blank"
+                >
+                  {copy.licence}
+                </a>
+              </>
+            ) : null}
           </figcaption>
         </figure>
-      ) : null}
-
-      {/* Half the bank is a drawn plate rather than a photograph; the same
-          figure the anecdotes page draws, so the slot is never left empty. */}
-      {illustration?.kind === "plate" ? (
-        <AnecdotePlate
-          plate={illustration}
-          className="home-hero-anecdote-figure"
-        />
       ) : null}
 
       <h2 className="home-hero-anecdote-headline">{fact.headline}</h2>

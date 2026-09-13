@@ -73,9 +73,9 @@ Forty-three anecdotes were drawn from the people fiches of
 `dataset/source/afrik`. Ten of them found a picture that is a document the
 anecdote is _about_: the plant that carries the slur, the river a language
 family was named after, the person who did the naming, or the people's own
-sculpture. The other thirty-three are illustrated by a drawn plate
-(`kind: "plate"`) rather than by a photograph — see `AnecdotePlate` for why
-a landscape would have illustrated nothing.
+sculpture. The other thirty-three were illustrated at the time by a drawn
+plate showing the two names; those plates were replaced by photographs in
+the third batch below.
 
 Sourced across four providers, licences read from each API rather than
 assumed: `scripts/anecdotes/sourceIllustrations.ts`. Fetched at 900 px on
@@ -96,18 +96,91 @@ screen shows.
 | `guere-wobe`          | `guere-wobe.jpg`          | Ritual mask, Gere people, Ivory Coast 01.jpg                                                                                                                                         | Mickey Mystique            | CC BY-SA 4.0  | commons   |
 | `dioula-metier`       | `dioula-metier.jpg`       | ASC Leiden - van Achterberg Collection - 5 - 005 - La Grande Mosquée de Bobo-Dioulasso, avec 21 niveaux de protubérances en bois - Bobo-Dioulasso, Burkina Faso, 19-26 août 2001.tif | Angeline A. van Achterberg | CC BY-SA 4.0  | commons   |
 
-Three pictures were deliberately **not** taken, and the reason is
-editorial rather than legal:
-
-- **`west-taa-masarwa`** — Commons offers photographs captioned "Bushmen".
-  The anecdote is about that word being rejected; illustrating it with the
-  word would reproduce the naming the anecdote criticises.
-- **`iteso-bakedi`** and **`datoga-mangati`** — photographs of living people
-  exist and are freely licensed, but the anecdotes are about slurs made
-  against them. A plate showing the two names says the same thing without
-  putting a face under the insult.
+`omotique-fleuve-omo` was replaced in the third batch: its uploader credits
+pxfuel, a site that re-hosts photographs under a blanket CC0 it has no power
+to grant.
 
 The ten pictures here carry `licenceUrl` and `filePage`, so the caption
 publishes the licence rather than naming it (brand charter §9, and §4(a) of
-CC BY-SA itself). **The twenty-four pictures of the first batch still only
-name their licence** — a gap this batch did not close.
+CC BY-SA itself). The twenty-four pictures of the first batch received the
+same two links on 2026-09-13, read from the Commons API (`LicenseUrl`) and
+each matched against the shipped file by eye; public-domain files carry the
+file page only, since they ask for no licence notice.
+
+## Third batch — real pictures in place of the plates (2026-09-13)
+
+Operator ruling: the site carries real images. The thirty-three drawn plates
+of the second batch, and the pxfuel-sourced Omo picture, were replaced by
+photographs or photographed documents under a free licence. Where no picture
+is exactly about the anecdote, a neighbour was taken, walking down a cascade
+and stopping at the first rung that yields a good, free image (brand charter
+§9):
+
+1. the thing the anecdote is about;
+2. the people's own place or material culture;
+3. the country;
+4. the region.
+
+The alt and the credit name what the picture actually shows — the Rumonge
+hills, not "the Hutu". Every licence was read from the provider's API
+(Commons `extmetadata`, Cleveland `cc0`, Flickr via Openverse), every finalist
+was looked at before it was taken, and all files were fetched at 900 px on the
+long edge, JPEG quality 70.
+
+**No face under a slur.** `iteso-bakedi`, `datoga-mangati`, `west-taa-masarwa`,
+`khwe-penduka`, `kirdi-paien` and `hutu-cartes-identite` show a place, a
+dwelling, livestock or a landscape. No file was taken whose own title carries
+the slur the anecdote criticises. `hutu-cartes-identite` also carries no image
+of the genocide.
+
+**`tetela-watetera`** is a crop of the 1888 map around the label « BATETELA »:
+at card size the whole sheet reads as a grey rectangle, and the label is the
+document's point.
+
+| Anecdote                 | File                         | Work                                                                                                                                                     | Author                                                            | Licence       | Rung |
+| ------------------------ | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------- | ---- |
+| `kirdi-paien`            | `kirdi-paien.jpg`            | Mora massif, Mandara Mountains, Far North Region, Cameroon (2018)                                                                                        | Serieminou                                                        | CC BY-SA 4.0  | 2    |
+| `bamileke-cent-royaumes` | `bamileke-cent-royaumes.jpg` | Courtyard of the royal palace of the Bandjoun chiefdom, West Region, Cameroon (2013)                                                                     | Tokankh                                                           | CC BY-SA 4.0  | 2    |
+| `sara-douzaine`          | `sara-douzaine.jpg`          | Rooftop view over Moundou, Logone Occidental, Chad (2019)                                                                                                | Korom10                                                           | CC BY-SA 4.0  | 2    |
+| `masa-banana`            | `masa-banana.jpg`            | Masa earthen houses at Yagoua, Far North Region, Cameroon (2022)                                                                                         | Bile rene                                                         | CC BY-SA 4.0  | 1    |
+| `bassa-nge-distinction`  | `bassa-nge-distinction.jpg`  | Lokoja and the river seen from the summit of Mount Patti, Kogi State, Nigeria (2017)                                                                     | Dotun55                                                           | CC BY-SA 4.0  | 2    |
+| `kalabari-calabar`       | `kalabari-calabar.jpg`       | « Cours du Nouveau Calebar », survey chart of the New Calabar River by Charles Girard, 1867 (University of Illinois Library via DPLA)                    | Charles Girard (survey); Société de Géographie                    | Public domain | 1    |
+| `hutu-cartes-identite`   | `hutu-cartes-identite.jpg`   | Hills and valleys near Rumonge, Burundi (2007)                                                                                                           | Dave Proffer (d_proffer)                                          | CC BY 2.0     | 3    |
+| `antambahoaka-surnom`    | `antambahoaka-surnom.jpg`    | The Pangalanes canal at Mananjary, east coast of Madagascar (2024)                                                                                       | Privatemajory                                                     | CC BY-SA 4.0  | 2    |
+| `iteso-bakedi`           | `iteso-bakedi.jpg`           | Grain store in the Teso country, eastern Uganda, published 1909 (J. B. Purvis, _Through Uganda to Mount Elgon_)                                          | Unknown photographer                                              | Public domain | 2    |
+| `datoga-mangati`         | `datoga-mangati.jpg`         | Livestock enclosure (boma) of a Datooga homestead, Tanzania, 2022 (Wiki Loves Africa 2022)                                                               | Erasmus Kamugisha                                                 | CC BY-SA 4.0  | 2    |
+| `west-taa-masarwa`       | `west-taa-masarwa.jpg`       | Aerial view of Aminuis and its pan, Omaheke Region, Namibian Kalahari, 2017                                                                              | Hp.Baumeler                                                       | CC BY-SA 4.0  | 2    |
+| `khwe-penduka`           | `khwe-penduka.jpg`           | Sunset over the Okavango River, Bwabwata National Park, Namibia, 2018                                                                                    | Jedesto                                                           | CC BY-SA 4.0  | 2    |
+| `murle-moden`            | `murle-moden.jpg`            | Flooded plain near Pibor seen from the air, Pibor County, South Sudan, 2012 (Panoramio)                                                                  | Олег Сокол (Oleg Sokol)                                           | CC BY-SA 3.0  | 2    |
+| `gorowa-village-voisin`  | `gorowa-village-voisin.jpg`  | Lake Babati and a hill above its shore, Manyara Region, Tanzania, 2009                                                                                   | Daniel Thomas                                                     | CC BY-SA 2.0  | 2    |
+| `rendille-baton`         | `rendille-baton.jpg`         | Traditional Rendille house of bent sticks covered with skins and sisal mats, northern Kenya, 2012                                                        | Redemption93                                                      | CC BY-SA 4.0  | 2    |
+| `kaffa-cafe`             | `kaffa-cafe.jpg`             | Old coffee cup of the Kafa (Kafficho), Ethiopia, 2014                                                                                                    | Rod Waddington                                                    | CC BY-SA 2.0  | 1    |
+| `omotique-fleuve-omo`    | `omotique-fleuve-omo.jpg`    | The Omo River seen from the Karo village of Doose, lower Omo valley, Ethiopia, 2012                                                                      | Bernard Gagnon                                                    | CC BY-SA 3.0  | 1    |
+| `teke-vendre`            | `teke-vendre.jpg`            | Mitako, brass bracelet-currency from Congo (Teke), Museo Casa de la Moneda, Madrid (photo 2022)                                                          | Ángel M. Felicísimo                                               | CC BY 2.0     | 1    |
+| `tetela-watetera`        | `tetela-watetera.jpg`        | Detail of _Originalkarte des Sankuru-Stromes und seiner Nebenflüsse_, Petermanns Geographische Mitteilungen, 1888, cropped around the label « BATETELA » | Bruno Hassenstein, after Ludwig Wolf and the Wissmann expeditions | Public domain | 1    |
+| `manianga-marche`        | `manianga-marche.jpg`        | Powder box (tutukipfula), blackened carved wood, Sundi, Brooklyn Museum 22.140                                                                           | Brooklyn Museum                                                   | CC BY 3.0     | 2    |
+| `kaonde-riviere`         | `kaonde-riviere.jpg`         | Forest on the bank of the Kabompo River, West Lunga National Park, Zambia (2021)                                                                         | MarkTownsendZambia                                                | CC BY-SA 4.0  | 2    |
+| `kavango-riviere`        | `kavango-riviere.jpg`        | The Okavango River near Rundu, Namibia (2006)                                                                                                            | Peter Stenglein                                                   | CC BY-SA 2.5  | 1    |
+| `tswa-recensement`       | `tswa-recensement.jpg`       | Thatched homes in Vilankulo, Inhambane Province, Mozambique (2008)                                                                                       | Brian Dell                                                        | Public domain | 2    |
+| `angolar-naufrage`       | `angolar-naufrage.jpg`       | Dugout fishing canoes on the beach of São João dos Angolares, São Tomé (2019)                                                                            | Ji-Elle                                                           | CC BY-SA 4.0  | 2    |
+| `crioulo-cap-vert`       | `crioulo-cap-vert.jpg`       | House in rua Banana, Cidade Velha (former Ribeira Grande), Santiago, Cape Verde (2011)                                                                   | Cayambe                                                           | CC BY-SA 3.0  | 2    |
+| `wonnin-godie`           | `wonnin-godie.jpg`           | Bovine mask, Godié, Côte d'Ivoire, c. 1900, Musée africain de Lyon (photographed 2016)                                                                   | Ji-Elle                                                           | CC BY-SA 4.0  | 2    |
+| `bete-plantation`        | `bete-plantation.jpg`        | Cocoa beans drying in front of a mud-brick house, Ziplignan, Gagnoa department, Côte d'Ivoire (2010)                                                     | arno B                                                            | CC BY 3.0     | 1    |
+| `toura-wen`              | `toura-wen.jpg`              | Biankouma below its forested hills, western Côte d'Ivoire (2008)                                                                                         | Zenman                                                            | CC BY-SA 3.0  | 2    |
+| `dogon-habe`             | `dogon-habe.jpg`             | Dogon village at the foot of the Bandiagara escarpment, Mali                                                                                             | Kirua                                                             | CC BY-SA 3.0  | 2    |
+| `le-nom-est-une-reponse` | `le-nom-est-une-reponse.jpg` | Painted walls and huts at the Sirigu Women's Organisation for Pottery and Art, Upper East Region, Ghana (Flickr)                                         | sucram21                                                          | CC BY 2.0     | 2    |
+| `kasem-gurunsi`          | `kasem-gurunsi.jpg`          | Painted house in the royal court of Tiébélé, a Kasena village, Burkina Faso (2016)                                                                       | Alexander Leisser                                                 | CC BY-SA 4.0  | 2    |
+| `bono-brong-ahafo`       | `bono-brong-ahafo.jpg`       | Rock formations in the valley at Tanoboase, near Techiman, Bono East Region, Ghana (2014)                                                                | Kelsdark                                                          | CC BY-SA 3.0  | 2    |
+| `fulbe-quatre-noms`      | `fulbe-quatre-noms.jpg`      | Kaasa blanket, handwoven wool in six strips, Fulani style, Cleveland Museum of Art 2024.72                                                               | Cleveland Museum of Art                                           | CC0           | 2    |
+| `malinke-manden`         | `malinke-manden.jpg`         | Thatched hut roof and sandstone cliffs near Siby, in the Manden hills, Mali (Flickr)                                                                     | Ralf Steinberger                                                  | CC BY 2.0     | 2    |
+
+Three choices were made knowingly and are recorded so they can be revisited:
+
+- **`toura-wen`** shows the town of Biankouma, not a Toura object: the only
+  free picture of a Toura mask on Commons is a watermarked phone snapshot whose
+  attribution nothing confirms. Its caption names the town, not the people.
+- **`wonnin-godie`** is a portrait-format museum photograph; the card sets
+  pictures with `object-fit: contain`, so the horns are not cropped.
+- **`masa-banana`** — Commons files the houses under "Masa people" and
+  "Yagoua"; they may be a reconstruction, so the caption says no more than
+  "Masa houses at Yagoua".

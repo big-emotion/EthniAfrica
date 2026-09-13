@@ -66,21 +66,21 @@ function ruleBody(selector: string): string {
 
 describe("HomeHeroAnecdote — the hero's anecdote (REQ-115)", () => {
   /**
-   * Half the bank illustrates with a drawn plate rather than a photograph, and
-   * the band once rendered nothing for those: 34 of 67 facts left their image
-   * column empty. Asserted per kind, because the defect is invisible in any
-   * draw that happens to land on a photograph.
+   * The band once rendered nothing for the half of the bank illustrated by a
+   * drawn plate: 34 of 67 facts left their image column empty. The plates are
+   * gone, and `iteso-bakedi` — one of them — is kept here as the witness that
+   * a former plate now draws a photograph.
    */
   // @req REQ-113
   it.each(["monrovia", "iteso-bakedi"])(
-    "illustrates the %s fact whichever register its picture comes from",
+    "illustrates the %s fact with a photograph",
     (id) => {
       const { container } = render(
         <HomeHeroAnecdote language="fr" fact={{ ...FACT, id }} />
       );
 
       expect(
-        container.querySelector(".home-hero-anecdote-figure")
+        container.querySelector(".home-hero-anecdote-figure img")
       ).not.toBeNull();
     }
   );

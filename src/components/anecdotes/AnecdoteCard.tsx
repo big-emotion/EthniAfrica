@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-import { AnecdotePlate } from "@/components/anecdotes/AnecdotePlate";
 import { TranslationProvenanceMarker } from "@/components/fiche/TranslationProvenanceMarker";
 import type { DidYouKnowEntity } from "@/lib/home/didYouKnowFacts";
 import type { DidYouKnowIllustration } from "@/lib/home/didYouKnowIllustrations";
@@ -56,9 +55,11 @@ export interface AnecdoteCardProps {
  * alternates as the deck is walked, from a side the page draws per visit, so
  * twenty-four cards do not read as twenty-four copies of one template.
  *
- * Every anecdote carries a picture, and the picture is a document the
- * anecdote is *about* rather than decoration: the map that repeats itself,
- * the object that was traded, the person who did the naming. Its credit is
+ * Every anecdote carries a real picture. The first choice is a document the
+ * anecdote is *about* — the map that repeats itself, the object that was
+ * traded, the person who did the naming — and where none exists the picture
+ * is a neighbour: the people's place, then the country, then the region
+ * (brand charter §9). Its credit is
  * printed under it, not filed away — CC BY and CC BY-SA are satisfied by an
  * attribution the reader can see. Provenance in full is in
  * `public/images/anecdotes/CREDITS.md`.
@@ -133,10 +134,6 @@ export function AnecdoteCard({
               ) : null}
             </figcaption>
           </figure>
-        ) : null}
-
-        {illustration?.kind === "plate" ? (
-          <AnecdotePlate plate={illustration} />
         ) : null}
 
         <div className="anecdote-text">
