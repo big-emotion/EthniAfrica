@@ -362,8 +362,10 @@ console — access there is membership of `admin_allowlist`. Nothing reads `user
 - [ ] A fiche route renders for each entity type: a country, a people, a language family.
       _A green axe check has previously masked an HTTP 500 on every fiche route for two
       releases. Load one for real._
-- [ ] `/api/v2/countries` returns 200 from the browser (same-origin, no API key) and 401
-      without a key from `curl`.
+- [ ] `/api/v2/countries` returns 200 without an API key, from the browser and from `curl`
+      alike: since v4.9.0 a keyless request is the anonymous per-IP tier, and neither `Origin`
+      nor `Referer` authorises anything. A request carrying an invalid Bearer key returns 401.
+      A 500 on every `/api/v2/*` route while the pages render means Upstash is not configured.
 - [ ] Sentry shows no new issue class in the first 30 minutes.
 - [ ] If a migration shipped in this release: its state table row in
       [`runbooks/migration-state.md`](./runbooks/migration-state.md) is updated for **both**
