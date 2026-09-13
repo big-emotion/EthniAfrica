@@ -49,6 +49,7 @@ const en = {
     date: "Generated on",
     licence:
       "CC BY-SA 4.0 — covers the selection, composition, retouching and caption; the generated image itself may carry no copyright.",
+    licenceLink: "Read the licence",
     captionSource: "Caption source:",
   },
   credits: {
@@ -111,6 +112,7 @@ const fr: DiscoveriesCopy = {
     date: "Générée le",
     licence:
       "CC BY-SA 4.0 — couvre la sélection, la composition, la retouche et la légende ; l’image générée elle-même peut ne porter aucun droit d’auteur.",
+    licenceLink: "Lire la licence",
     captionSource: "Source de la légende :",
   },
   credits: {

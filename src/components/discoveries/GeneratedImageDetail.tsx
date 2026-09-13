@@ -4,6 +4,8 @@ import type { Language } from "@/types/shared";
 
 import styles from "./GeneratedImageDetail.module.css";
 
+const CC_BY_SA_4_URL = "https://creativecommons.org/licenses/by-sa/4.0/";
+
 interface GeneratedImageDetailProps {
   entry: DiscoveryPublication;
   language: Language;
@@ -33,6 +35,11 @@ export function GeneratedImageDetail({
   const { generation } = entry;
   if (entry.kind !== "image" || !generation) return null;
   const words = discoveriesCopy[language].generated;
+  // A licence is published, not named (brand charter §9): the reader gets its
+  // URI, the publication's own when it records one.
+  const licenceUrl =
+    entry.image?.licenceUrl ??
+    (entry.image?.licence === "cc-by-sa" ? CC_BY_SA_4_URL : undefined);
   return (
     <section aria-label={words.label} className={className}>
       <h3>{words.label}</h3>
@@ -49,7 +56,17 @@ export function GeneratedImageDetail({
           </time>
         </dd>
       </dl>
-      <p>{words.licence}</p>
+      <p>
+        {words.licence}
+        {licenceUrl ? (
+          <>
+            {" "}
+            <a href={licenceUrl} target="_blank" rel="noreferrer">
+              {words.licenceLink}
+            </a>
+          </>
+        ) : null}
+      </p>
       {entry.captionExceedsCorpus && entry.captionSource ? (
         <p>
           {words.captionSource}{" "}

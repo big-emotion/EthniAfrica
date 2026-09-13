@@ -566,6 +566,51 @@ describe("Découvertes generated image", () => {
     ).not.toBeInTheDocument();
   });
 
+  // A licence is published, not named (brand charter §9): the sheet links the
+  // licence's URI, the publication's own when it records one.
+  // @req REQ-165
+  it("publishes the licence URI of a generated image in its detail sheet", () => {
+    const { unmount } = render(
+      <DiscoveryReader
+        language="fr"
+        publications={[imagePublication]}
+        initialId="image:test"
+      />
+    );
+    fireEvent.click(screen.getByRole("button", { name: "En savoir plus" }));
+    expect(
+      within(screen.getByRole("dialog")).getByRole("link", {
+        name: "Lire la licence",
+      })
+    ).toHaveAttribute(
+      "href",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    );
+    unmount();
+
+    render(
+      <DiscoveryReader
+        language="en"
+        publications={[
+          {
+            ...imagePublication,
+            image: {
+              ...imagePublication.image,
+              licenceUrl: "https://example.org/licence",
+            },
+          },
+        ]}
+        initialId="image:test"
+      />
+    );
+    fireEvent.click(screen.getByRole("button", { name: "Learn more" }));
+    expect(
+      within(screen.getByRole("dialog")).getByRole("link", {
+        name: "Read the licence",
+      })
+    ).toHaveAttribute("href", "https://example.org/licence");
+  });
+
   // @req REQ-165
   it("renders the generated-image label and provenance in English from the English dictionary", () => {
     render(
