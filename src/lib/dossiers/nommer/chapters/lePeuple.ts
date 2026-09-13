@@ -26,7 +26,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
     figureRefs: ["corpus-exonyms", "corpus-autonyms"],
   },
   measure: {
-    value: "3 141",
+    value: "3 137",
     unit: "exonymes recensés",
     sourceRefs: [],
     figureRefs: ["corpus-exonyms"],
@@ -39,7 +39,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
       blocks: [
         {
           id: "quatre-pour-un",
-          text: "Les 775 fiches de peuple de l'atlas recensent 3 141 noms donnés de l'extérieur, contre 773 noms que les intéressés revendiquent. Quatre pour un.",
+          text: "Les 776 fiches de peuple de l'atlas recensent 3 137 noms donnés de l'extérieur, contre 774 noms que les intéressés revendiquent. Quatre pour un.",
           sourceRefs: [],
           figureRefs: ["corpus-peoples", "corpus-exonyms", "corpus-autonyms"],
         },
@@ -81,7 +81,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
       ],
       table: {
         caption:
-          "Radicaux relevés dans les champs « origine des exonymes » et « pourquoi c'est problématique » des 775 fiches. Un sondage lexical, pas un codage : les mentions se recoupent.",
+          "Radicaux relevés dans les champs « origine des exonymes » et « pourquoi c'est problématique » des 776 fiches. Un sondage lexical, pas un codage : les mentions se recoupent.",
         columns: ["Radical relevé", "Fiches", "Ce qu'on y lit le plus souvent"],
         rows: [
           {
@@ -103,7 +103,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
             figureRefs: ["probe-administration"],
           },
           {
-            cells: ["europ-", "120", "Navigateurs, explorateurs, cartographes"],
+            cells: ["europ-", "119", "Navigateurs, explorateurs, cartographes"],
             sourceRefs: [],
             figureRefs: ["probe-european"],
           },
@@ -137,7 +137,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "arab-",
-              "74",
+              "75",
               "Antérieur à l'Europe sur le Sahel et la côte orientale",
             ],
             sourceRefs: [],

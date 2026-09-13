@@ -7,17 +7,11 @@
   "content": {
     "appellations": {
       "mainName": "Songhai",
-      "selfAppellation": "Ayneha",
-      "exonyms": [
-        "Songhay",
-        "Sonrhai",
-        "Sonrai (influence francaise)",
-        "Songoi",
-        "Songait",
-        "Zarma-Songhai (designation englobante)"
-      ],
-      "originOfExonyms": "Le terme Songhai designe historiquement la caste dirigeante de l'empire (les Songhaiborai), et non l'ensemble du groupe. Il fut impose par les chroniqueurs arabes et les explorateurs europeens. L'autodesignation collective est Ayneha, signifiant je parle (ma langue). Le terme Zarma (ou Djerma), nom du sous-groupe le plus nombreux, est souvent employe en synonyme.",
-      "whyProblematic": "La designation Songhai amalgame des groupes linguistiques et identitaires distincts (Zarma, Dendi, Wogo, Kurtey, Arma, Sohance etc.) qui ne partagent pas tous une identite commune. Historiquement, Songhai ne designait que la caste royale de l'empire. Le terme est aujourd'hui reapproprie comme identite collective par certains, rejete par d'autres qui preferent leur designation sous-groupale.",
+      "selfAppellation": "Soŋay (écrit Songhay en orthographe courante)",
+      "exonyms": ["Songait", "Zarma-Songhai (designation englobante)"],
+      "spellingAliases": ["Songhay", "Sonrhaï", "Sonrai", "Songhoi"],
+      "originOfExonyms": "Les locuteurs reconnaissent le nom sous la forme soŋay. Les graphies Songhoi, Sonrhaï ou Sonrai viennent des transcriptions arabes puis françaises, qui ne notent pas le son ŋ, un ng nasal comme à la fin de parking : ce qui a été imposé de l'extérieur, c'est la graphie, non le nom lui-même. Selon la région, les locuteurs se désignent aussi par un nom de groupe : Koyraboro au Mali, de koyra-boro, les gens de la ville ; Zarma au Niger ; Dendi au Bénin. Le terme Zarma (ou Djerma), nom du sous-groupe le plus nombreux, est souvent employé en synonyme.",
+      "whyProblematic": "La designation Songhai amalgame des groupes linguistiques et identitaires distincts (Zarma, Dendi, Wogo, Kurtey, Arma, Sohance etc.) qui ne partagent pas tous une identite commune. Le terme est aujourd'hui reapproprie comme identite collective par certains, rejete par d'autres qui preferent leur designation sous-groupale.",
       "contemporaryUsage": "Songhai et Zarma-Songhai sont utilises dans les recensements du Niger et du Mali. Dans la vie quotidienne, chaque sous-groupe prefere sa propre denomination. La notion de Songhai est renforcee par la memoire collective de l'empire, notamment dans les regions de Gao et Tombouctou.",
       "linguisticFamily": "FLG_NILOSAHARIENNE",
       "ethnoLinguisticGroup": "Famille des langues songhai (branche independante ou nilosaharienne selon les classifications)",
@@ -134,6 +128,18 @@
         "title": "South African History Online – Songhai, African Empire 15-16th Century",
         "url": "https://sahistory.org.za/article/songhai-african-empire-15-16th-century",
         "tier": "referenced"
+      },
+      {
+        "title": "Minkailou, Mohamed et Abdoulaye, Ibrahima. Traditional personal names : an investigation into Songhay anthroponomastics. American Journal of Humanities and Social Sciences Research, vol. 4, n° 9, 2020, p. 49-58",
+        "url": "https://www.ajhssr.com/wp-content/uploads/2020/09/G20494958.pdf",
+        "tier": "referenced",
+        "notes": "Enquête auprès de locuteurs de Gao et de Tombouctou : le nom est reconnu sous la forme soŋay, et les graphies courantes viennent des transcriptions arabes et françaises. Les noms de groupe Koyraboro, Zarma et Dendi y sont rapportés par pays."
+      },
+      {
+        "title": "Heath, Jeffrey. A Grammar of Koyraboro (Koroboro) Senni : the Songhay of Gao, Mali. Rüdiger Köppe, 1999",
+        "url": "https://www.koeppe.de/titel_a-grammar-of-koyraboro-koroboro-senni",
+        "tier": "referenced",
+        "notes": "L'expression koyra-boro senn-i signifie littéralement la langue des gens de la ville."
       }
     ]
   },
