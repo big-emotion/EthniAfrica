@@ -19,7 +19,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
   standfirst:
     "The corpus holds more names given from outside than names claimed from within. The gap does not first measure colonisation: it measures who did the writing.",
   measure: {
-    value: "3,141",
+    value: "3,137",
     unit: "exonyms recorded",
   },
   sections: {
@@ -28,7 +28,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
       heading: "The measure, and what it does not measure",
       blocks: {
         "quatre-pour-un":
-          "The atlas's 775 people fiches record 3,141 names given from outside, against 773 names the people concerned claim for themselves. Four to one.",
+          "The atlas's 776 people fiches record 3,137 names given from outside, against 774 names the people concerned claim for themselves. Four to one.",
         "une-asymetrie-darchive":
           "The gap is spectacular, and it is easy to make it say what it does not. It does not measure how many peoples were forcibly renamed. It measures first of all an asymmetry of the archive: far more has been written about these peoples than they have written about themselves, and an atlas that compiles sources compiles that imbalance along with them.",
         "trois-declarations":
@@ -46,7 +46,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
       },
       table: {
         caption:
-          "Word stems found in the ‘origin of the exonyms’ and ‘why it is problematic’ fields of the 775 fiches. A lexical probe, not a coding: the mentions overlap.",
+          "Word stems found in the ‘origin of the exonyms’ and ‘why it is problematic’ fields of the 776 fiches. A lexical probe, not a coding: the mentions overlap.",
         columns: ["Stem found", "Fiches", "What is most often read there"],
         rows: [
           [
@@ -59,7 +59,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
             "180",
             "The name is an act of census-taking before it is a fact of language",
           ],
-          ["europ-", "120", "Navigators, explorers, cartographers"],
+          ["europ-", "119", "Navigators, explorers, cartographers"],
           [
             "voisin (‘neighbour’)",
             "113",
@@ -77,7 +77,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
           ],
           [
             "arab-",
-            "74",
+            "75",
             "Earlier than Europe across the Sahel and the eastern coast",
           ],
           [

@@ -60,7 +60,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "corpus-exonyms",
     label: "exonymes recensés",
-    value: 3141,
+    value: 3137,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -128,7 +128,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-european",
     label: "fiches employant le radical « europ- »",
-    value: 120,
+    value: 119,
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
