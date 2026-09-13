@@ -32,6 +32,32 @@ const proverbPublication: DiscoveryPublication = {
   },
 };
 
+const generatedFiles = {
+  "9:16": "/images/discoveries/generated/hausa-autonym/9x16.jpg",
+  "4:5": "/images/discoveries/generated/hausa-autonym/4x5.jpg",
+  "1:1": "/images/discoveries/generated/hausa-autonym/1x1.jpg",
+};
+
+const generatedPublication: DiscoveryPublication = {
+  id: "image:hausa-autonym",
+  kind: "image",
+  status: "published",
+  slug: { fr: "hausa-autonyme", en: "hausa-autonym" },
+  title: { fr: "Hausa, le nom qu’ils se donnent", en: "Hausa, their own name" },
+  description: { fr: "Une image générée.", en: "A generated image." },
+  source: {
+    title: "Fiche Haoussa",
+    url: "https://example.org/hausa",
+    tier: "referenced",
+  },
+  image: {
+    src: "/images/discoveries/generated/hausa-autonym/4x5.jpg",
+    credit: "EthniAfrica, CC BY-SA 4.0",
+    licence: "cc-by-sa",
+  },
+  downloads: generatedFiles,
+};
+
 afterEach(() => {
   vi.useRealTimers();
 });
@@ -410,6 +436,97 @@ describe("Découvertes sharing", () => {
     expect(writeText).toHaveBeenCalledWith(
       "https://ethniafrica.com/fr/decouvertes/burkina-faso-trois-langues"
     );
+  });
+});
+
+describe("Découvertes generated image downloads", () => {
+  // @req REQ-166
+  it("offers each pre-rendered format by name beside the ten link choices, for the publication being shared", () => {
+    HTMLElement.prototype.scrollIntoView = vi.fn();
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[generatedPublication, proverbPublication]}
+        initialId="image:hausa-autonym"
+      />
+    );
+    fireEvent.click(screen.getByRole("button", { name: "Partager" }));
+    const dialog = screen.getByRole("dialog");
+
+    const expected = [
+      [/^9:16 · Story et Reel\s*1080 × 1920/, generatedFiles["9:16"]],
+      [/^4:5 · Publication\s*1080 × 1350/, generatedFiles["4:5"]],
+      [/^1:1 · Photo de profil\s*1080 × 1080/, generatedFiles["1:1"]],
+    ] as const;
+    const downloads = within(dialog).getByRole("region", {
+      name: "Télécharger l’image",
+    });
+    expect(within(downloads).getAllByRole("link")).toHaveLength(3);
+    for (const [name, href] of expected) {
+      const link = within(downloads).getByRole("link", { name });
+      expect(link).toHaveAttribute("href", href);
+      expect(link).toHaveAttribute("download");
+    }
+    expect(within(dialog).getAllByTestId(/^share-choice-/)).toHaveLength(10);
+
+    fireEvent.keyDown(
+      screen.getByLabelText("Découvertes", { selector: "div" }),
+      {
+        key: "ArrowDown",
+      }
+    );
+    expect(
+      within(dialog).getByRole("link", { name: /^1:1 · Photo de profil/ })
+    ).toHaveAttribute("href", generatedFiles["1:1"]);
+  });
+
+  // @req REQ-166
+  it("leaves out a format whose file is absent without announcing anything", () => {
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[
+          {
+            ...generatedPublication,
+            downloads: {
+              "9:16": generatedFiles["9:16"],
+              "4:5": generatedFiles["4:5"],
+            },
+          },
+        ]}
+        initialId="image:hausa-autonym"
+      />
+    );
+    fireEvent.click(screen.getByRole("button", { name: "Partager" }));
+    const dialog = screen.getByRole("dialog");
+
+    const downloads = within(dialog).getByRole("region", {
+      name: "Télécharger l’image",
+    });
+    expect(
+      within(downloads)
+        .getAllByRole("link")
+        .map((link) => link.getAttribute("href"))
+    ).toEqual([generatedFiles["9:16"], generatedFiles["4:5"]]);
+    expect(within(dialog).queryByText(/1:1/)).not.toBeInTheDocument();
+    expect(within(dialog).queryByRole("status")).not.toBeInTheDocument();
+  });
+
+  // @req REQ-166
+  it("offers no download for a photographed anecdote", () => {
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={publications}
+        initialId="anecdote:burkina-faso"
+      />
+    );
+    fireEvent.click(screen.getByRole("button", { name: "Partager" }));
+    expect(
+      within(screen.getByRole("dialog")).queryByRole("region", {
+        name: "Télécharger l’image",
+      })
+    ).not.toBeInTheDocument();
   });
 });
 
