@@ -924,6 +924,8 @@ def test_the_camp_is_found_through_capitals_and_accents():
     assert avant == "UN MOT ANGOLAIS DEVENU "
     assert apres == ""
     assert gab._decouper_mot("UN MOT ANGOLAIS", "brésilien") is None
+    # The wrap glues a detached « ? » with U+00A0; the camp still has to be found.
+    assert gab._decouper_mot("DEVENU BRÉSILIEN\u00a0?", "brésilien")[1] == "BRÉSILIEN\u00a0?"
 
 
 def test_an_unfindable_camp_never_blocks():
@@ -949,14 +951,36 @@ def test_a_closing_title_puts_its_last_word_in_the_accent():
     the projection's, and in every row the accent is the last word — so a
     one-sentence closing rendered with no accent at all.
     """
-    for titre in ("Ce peuple n'a pas été divisé.",
-                  "Ces peuples n'ont pas été rassemblés.",
-                  "La carte ne mentait pas. Elle ne disait pas tout."):
-        bloc = _titre_de_cloture(titre)
-        mots = bloc.texte.split()
-        assert bloc.accent_depuis == len(mots) - 1, (
-            f"« {titre} » : accent à partir du mot {bloc.accent_depuis}, "
-            f"attendu sur le dernier ({len(mots) - 1})")
+    nbsp, fine = "\u00a0", "\u202f"
+    # Spelled out, never derived from the title: a detached « ? » is a word to
+    # `str.split`, and a test computing the last word that way accents it alone.
+    attendus = {
+        "Ce peuple n'a pas été divisé.": "DIVISÉ.",
+        "La carte ne mentait pas. Elle ne disait pas tout.": "TOUT.",
+        "Ce peuple a-t-il été divisé ?": f"DIVISÉ{nbsp}?",
+        f"Ce peuple a-t-il été divisé{nbsp}?": f"DIVISÉ{nbsp}?",
+        f"Ce peuple a-t-il été divisé{fine}?": f"DIVISÉ{nbsp}?",
+        "Ce peuple n'a pas été divisé !": f"DIVISÉ{nbsp}!",
+        f"Ce peuple n'a pas été divisé{nbsp}!": f"DIVISÉ{nbsp}!",
+        f"Ce peuple n'a pas été divisé{fine}!": f"DIVISÉ{nbsp}!",
+    }
+    for titre, accentue in attendus.items():
+        lignes = list(gab._teintes_du_bloc(_titre_de_cloture(titre), "encre", "accent"))
+        en_accent = "".join(t for runs in lignes for t, c in runs if c == "accent")
+        assert en_accent == accentue, (
+            f"« {titre} » : en accent {en_accent!r}, attendu {accentue!r}")
+        # The mark never opens a line of its own, whatever the wrap does.
+        for runs in lignes:
+            ligne = "".join(t for t, _ in runs)
+            assert ligne.strip(f" {nbsp}{fine}") not in ("?", "!"), (
+                f"« {titre} » : ponctuation seule sur une ligne {lignes!r}")
+            assert not ligne.startswith(("?", "!")), (
+                f"« {titre} » : ligne ouverte par la ponctuation {lignes!r}")
+
+    # A measure one word wide forces the break the title above may not reach.
+    etroit = gab._envelopper("ÉTÉ DIVISÉ ?", "anton", 80, 400, 10)
+    assert etroit == ["ÉTÉ", f"DIVISÉ{nbsp}?"], (
+        f"le retour à la ligne détache la ponctuation : {etroit!r}")
 
 
 def main():

@@ -233,13 +233,33 @@ def fonte(face, taille, graisse=400):
 _mesureur = ImageDraw.Draw(Image.new("RGB", (8, 8)))
 
 
+# French sets a space before « ? ! : ; » and closes « » » after one, so a wrap
+# counting words by `str.split` can strand the mark on a line of its own, and an
+# accent on « the last word » lands on the mark alone. The mark is glued to its
+# word with U+00A0 whatever space the copy used: Anton and Nunito ship no U+202F
+# glyph — it measures 40 px, the missing-glyph box — while U+00A0 is a space.
+_MARQUE_DETACHEE = frozenset("?!:;»")
+_INSECABLE = "\u00a0"
+
+
+def _jetons(texte):
+    """The words a line may break between, a detached mark glued to its word."""
+    jetons = []
+    for mot in (texte or "").split():
+        if jetons and set(mot) <= _MARQUE_DETACHEE:
+            jetons[-1] += _INSECABLE + mot
+        else:
+            jetons.append(mot)
+    return jetons
+
+
 def _envelopper(texte, face, taille, graisse, largeur_max):
     """Greedy wrap. The copy is validated word for word and is never shortened."""
     if not texte:
         return []
     f = fonte(face, taille, graisse)
     lignes, courante = [], ""
-    for mot in texte.split():
+    for mot in _jetons(texte):
         essai = f"{courante} {mot}".strip()
         if _mesureur.textlength(essai, font=f) <= largeur_max or not courante:
             courante = essai
@@ -1348,9 +1368,10 @@ def _chute(titre):
     Every row of §7 ter's content-type table accents the last word, including the
     projection's two-sentence title. The retired closing accented its whole second
     sentence, which left a one-sentence title with no accent at all. An index
-    rather than the word is what lets it survive a line break.
+    rather than the word is what lets it survive a line break; counted in
+    `_jetons` so « DIVISÉ ? » is one word here exactly as it is to the wrap.
     """
-    mots = (titre or "").split()
+    mots = _jetons(titre)
     return len(mots) - 1 if mots else -1
 
 
@@ -1438,13 +1459,11 @@ def peindre_video(carte, deck, *, image, sous_titre=False, plan_donne=None,
         encre = _teinter(bloc.couleur, _fond(deck), arrive * bloc.opacite)
         vise = _teinter(_accent(deck), _fond(deck), arrive)
         y = bloc.y + round(ENTREE_TRANSLATION * (1 - arrive))
-        vus = 0
-        for ligne in bloc.lignes:
+        for teintes in _teintes_du_bloc(bloc, encre, vise):
             x = bloc.x
-            for part, couleur in _teintes_de_ligne(ligne, bloc, vus, encre, vise):
+            for part, couleur in teintes:
                 d.text((x, y), part, font=f, fill=couleur)
                 x += _mesureur.textlength(part, font=f)
-            vus += len(ligne.split())
             y += bloc.corps * bloc.interligne
 
     _peindre_sous_titre(im, p, deck, sous_titre, ferre_a_gauche=True)
@@ -1458,6 +1477,18 @@ def peindre_video(carte, deck, *, image, sous_titre=False, plan_donne=None,
     return im.convert("RGB")
 
 
+def _teintes_du_bloc(bloc, encre, vise):
+    """Every line of a block as coloured runs, in the order they are painted.
+
+    The word count carried from line to line is what places an accent tail that
+    crosses a line break, so it lives here once rather than beside each caller.
+    """
+    vus = 0
+    for ligne in bloc.lignes:
+        yield _teintes_de_ligne(ligne, bloc, vus, encre, vise)
+        vus += len(_jetons(ligne))
+
+
 def _teintes_de_ligne(ligne, bloc, vus, encre, vise):
     """One line as coloured runs — the accent word, or the accent tail, or neither.
 
@@ -1465,7 +1496,7 @@ def _teintes_de_ligne(ligne, bloc, vus, encre, vise):
     line's own metrics: a second block would re-measure and drift off the baseline.
     """
     if bloc.accent_depuis >= 0:
-        mots = ligne.split(" ")
+        mots = _jetons(ligne)
         coupe = max(0, bloc.accent_depuis - vus)
         avant, apres = " ".join(mots[:coupe]), " ".join(mots[coupe:])
         if avant and apres:
@@ -1532,13 +1563,13 @@ def _decouper_mot(ligne, mot):
     """
     if not mot:
         return None
-    cible = [_plier(x).strip(".,;:!?«»’'") for x in mot.split() if x]
+    cible = [_plier(x).strip(".,;:!?«»’'\u00a0") for x in mot.split() if x]
     if not cible:
         return None
     morceaux = ligne.split(" ")
     debut = 0
     for i, morceau in enumerate(morceaux):
-        fenetre = [_plier(x).strip(".,;:!?«»’'") for x in morceaux[i:i + len(cible)]]
+        fenetre = [_plier(x).strip(".,;:!?«»’'\u00a0") for x in morceaux[i:i + len(cible)]]
         if fenetre == cible:
             fin = debut + len(" ".join(morceaux[i:i + len(cible)]))
             return ligne[:debut], ligne[debut:fin], ligne[fin:]
