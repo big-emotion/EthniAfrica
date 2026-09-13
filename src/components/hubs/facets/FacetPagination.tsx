@@ -176,33 +176,37 @@ export function FacetPagination({
 
       {pages}
 
-      {/* Always shown: more than one page means the selection is larger than
-          the smallest size, so every choice here changes something. The label
+      {/* Shown whenever there is a choice: more than one page means the
+          selection is larger than the smallest size, so every choice here
+          changes something. A reading offered at a single size has none, and a
+          lone size link would be a control that changes nothing. The label
           sits outside the list — it is not one of the choices. */}
-      <div className="flex flex-wrap items-center gap-1">
-        <span className="text-afh-small text-afh-text-soft">
-          {copy.perPage}
-        </span>
-        <ul
-          aria-label={copy.resultsPerPage}
-          className="flex flex-wrap items-center gap-1 p-0"
-        >
-          {pageSizes.map((size) => (
-            <li key={size} className="list-none">
-              {/* Back to page one: page 41 of a twenty-row reading is past the
+      {pageSizes.length > 1 && (
+        <div className="flex flex-wrap items-center gap-1">
+          <span className="text-afh-small text-afh-text-soft">
+            {copy.perPage}
+          </span>
+          <ul
+            aria-label={copy.resultsPerPage}
+            className="flex flex-wrap items-center gap-1 p-0"
+          >
+            {pageSizes.map((size) => (
+              <li key={size} className="list-none">
+                {/* Back to page one: page 41 of a twenty-row reading is past the
                   end of a hundred-row one. */}
-              <Link
-                href={buildHref(1, size)}
-                aria-current={size === pageSize ? true : undefined}
-                aria-label={`${size} ${copy.perPage.toLocaleLowerCase(language)}`}
-                className={controlClass}
-              >
-                {size}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+                <Link
+                  href={buildHref(1, size)}
+                  aria-current={size === pageSize ? true : undefined}
+                  aria-label={`${size} ${copy.perPage.toLocaleLowerCase(language)}`}
+                  className={controlClass}
+                >
+                  {size}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }

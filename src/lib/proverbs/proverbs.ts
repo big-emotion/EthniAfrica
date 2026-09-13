@@ -2873,14 +2873,6 @@ export const PROVERBS: Proverb[] = [
   },
 ];
 
-/** `${kind}:${id}`, the form a filter link carries. */
-export type ProverbEntityKey = `${DidYouKnowEntityKind}:${string}`;
-
-// @req REQ-113
-export function proverbEntityKey(entity: DidYouKnowEntity): ProverbEntityKey {
-  return `${entity.kind}:${entity.id}`;
-}
-
 // @req REQ-113
 export function findProverb(
   id: string | null | undefined,
@@ -2890,15 +2882,59 @@ export function findProverb(
   return bank.find((entry) => entry.id === id) ?? null;
 }
 
-// Generic so a localized bank keeps its translation marker through the filter.
+/** The narrowings the dossier offers. An absent one does not narrow. */
+export interface ProverbFilters {
+  country?: string | null;
+  people?: string | null;
+  family?: string | null;
+  origin?: ProverbOriginStatus | null;
+}
+
 // @req REQ-113
-export function proverbsConcerning<T extends Proverb>(
-  key: string | null | undefined,
-  bank: readonly T[] = PROVERBS as unknown as readonly T[]
+export const PROVERB_ORIGIN_STATUSES: readonly ProverbOriginStatus[] = [
+  "attested",
+  "estimated",
+  "unestablished",
+];
+
+/**
+ * The origin an address asks for, or none. An allowlist rather than a cast: a
+ * value the atlas does not define would otherwise narrow to an empty list the
+ * reader could only read as "no proverb has an origin".
+ */
+// @req REQ-113
+export function parseProverbOrigin(
+  value: string | null | undefined
+): ProverbOriginStatus | null {
+  return PROVERB_ORIGIN_STATUSES.find((status) => status === value) ?? null;
+}
+
+function names(
+  entry: Proverb,
+  kind: DidYouKnowEntityKind,
+  id: string | null | undefined
+): boolean {
+  return (
+    !id ||
+    entry.entities.some((entity) => entity.kind === kind && entity.id === id)
+  );
+}
+
+/**
+ * The filters cross: each one present narrows what the others left. Generic so
+ * a localized bank keeps its translation marker through the filter.
+ */
+// @req REQ-113
+export function filterProverbs<T extends Proverb>(
+  bank: readonly T[],
+  filters: ProverbFilters
 ): T[] {
-  if (!key) return [...bank];
-  return bank.filter((entry) =>
-    entry.entities.some((entity) => proverbEntityKey(entity) === key)
+  return bank.filter(
+    (entry) =>
+      names(entry, "country", filters.country) &&
+      names(entry, "people", filters.people) &&
+      names(entry, "family", filters.family) &&
+      (!filters.origin || entry.origin.status === filters.origin)
   );
 }
 
@@ -2917,7 +2953,7 @@ export function proverbEntities(
   const byKey = new Map<string, DidYouKnowEntity>();
   for (const entry of bank) {
     for (const entity of entry.entities) {
-      byKey.set(proverbEntityKey(entity), entity);
+      byKey.set(`${entity.kind}:${entity.id}`, entity);
     }
   }
   return [...byKey.values()].sort(

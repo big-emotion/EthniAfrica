@@ -1,28 +1,60 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
+import {
+  FacetFilterBar,
+  type FacetActiveFilter,
+} from "@/components/hubs/facets/FacetFilterBar";
+import { FacetPagination } from "@/components/hubs/facets/FacetPagination";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { ProverbCard } from "@/components/proverbs/ProverbCard";
 import type { DidYouKnowEntityKind } from "@/lib/home/didYouKnowFacts";
-import { DID_YOU_KNOW_ENTITY_ACCENT } from "@/lib/home/didYouKnowPresentation";
+import { definedFilter } from "@/lib/hubs/facets";
 import { proverbsCopy } from "@/lib/i18n/copy/proverbs";
+import { formatNumber } from "@/lib/languageTag";
 import {
   PROVERBS,
+  PROVERB_ORIGIN_STATUSES,
+  filterProverbs,
+  parseProverbOrigin,
   proverbEntities,
-  proverbEntityKey,
-  proverbsConcerning,
+  type ProverbFilters,
 } from "@/lib/proverbs/proverbs";
 import { localizeProverb } from "@/lib/proverbs/proverbs.en";
 import { getLocalizedRoute } from "@/lib/routing";
 import { surfaceHead } from "@/lib/seo/localeAlternates";
 import type { Language } from "@/types/shared";
 
+type ProverbSearchParams = Record<string, string | string[] | undefined>;
+
 interface ProverbsPageProps {
   params: Promise<{ lang: string }>;
-  searchParams: Promise<{ entite?: string }>;
+  searchParams: Promise<ProverbSearchParams>;
 }
 
-const FILTER_KINDS: DidYouKnowEntityKind[] = ["country", "people", "family"];
+/**
+ * Ten at a time. The whole bank on one page measured 39 721 px at 430 px — a
+ * third longer than the longest page the site had — and a proverb card is a
+ * full screen on a phone, so ten is about ten screens.
+ */
+const PROVERBS_PER_PAGE = 10;
+const PAGE_SIZES = [PROVERBS_PER_PAGE] as const;
+
+/** The address's words, in the reader's language like the facets' `pays`. */
+const PARAM = {
+  country: "pays",
+  people: "peuple",
+  family: "famille",
+  origin: "origine",
+  page: "page",
+} as const;
+
+type AddressKey = keyof typeof PARAM;
+
+/** The page a reader asked for, or the first — never NaN, never zero. */
+function requestedPage(raw: string | string[] | undefined): number {
+  const parsed = Number.parseInt(definedFilter(raw) ?? "", 10);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : 1;
+}
 
 // @req REQ-113
 // @req REQ-141
@@ -47,38 +79,126 @@ export async function generateMetadata({
 }
 
 /**
- * The proverb bank, read whole and filterable by the atlas entries it names.
+ * The proverb bank, ten at a time, narrowed by the facets' own filter bar.
  *
- * A list rather than the anecdotes' one-card reader: a proverb is read in a
- * few seconds, and the question a reader brings here is « what do the Yoruba
- * say? » — which a filter answers and a shuffled deck does not.
+ * The bar is the atlas facets' `FacetFilterBar` rather than a control of its
+ * own: a plain GET form with native selects, so every state of this page has
+ * an address, works before hydration and can be followed by a crawler. The
+ * country leads because a reader most often arrives knowing where; the people,
+ * the language family and the origin fold behind it, and each applied one is
+ * named as a chip that lifts it alone.
  *
- * The filter is a set of links, not a form: every state of the page has an
- * address, so a fiche can one day link to « the proverbs of this people »
- * and a shared URL lands on the list it promised. It stays folded under its
- * label even once a choice is in the address: unfolded, sixty entries push
- * the first proverb under the fold on a phone, so the choice is named above
- * the list with the way back beside it.
+ * The origin is the one narrowing this dossier owes that no compilation
+ * offers: « non établie » lists the sayings the web calls African while no
+ * source names a people.
  *
- * Every chip, status and source is printed from the bank, whose tests hold
- * the rule the page depends on: no chip exists that a source does not support.
+ * The filters cross, and the options are the entries the bank actually names,
+ * unnarrowed by the other choices — so a crossing can come back empty, and the
+ * page says so rather than offering fewer choices than it holds.
+ *
+ * The pages are counted on the filtered selection, and a page past its end is
+ * clamped to the last one: a page number kept from the whole bank must not
+ * read as an empty dossier once a filter shortens the list.
  */
 // @req REQ-113
+// @req REQ-108
 export default async function ProverbsPage({
   params,
   searchParams,
 }: ProverbsPageProps) {
   const { lang } = await params;
   const language = lang as Language;
-  const chosen = (await searchParams).entite ?? null;
+  const query = (await searchParams) ?? {};
   const copy = proverbsCopy[language];
 
+  const chosen: Required<ProverbFilters> = {
+    country: definedFilter(query[PARAM.country]),
+    people: definedFilter(query[PARAM.people]),
+    family: definedFilter(query[PARAM.family]),
+    origin: parseProverbOrigin(definedFilter(query[PARAM.origin])),
+  };
+
   const bank = PROVERBS.map((proverb) => localizeProverb(proverb, language));
-  const listed = proverbsConcerning(chosen, bank);
-  const entities = proverbEntities(bank);
-  const chosenEntity =
-    entities.find((entity) => proverbEntityKey(entity) === chosen) ?? null;
+  const selection = filterProverbs(bank, chosen);
+  const pageCount = Math.max(
+    1,
+    Math.ceil(selection.length / PROVERBS_PER_PAGE)
+  );
+  const page = Math.min(requestedPage(query[PARAM.page]), pageCount);
+  const shown = selection.slice(
+    (page - 1) * PROVERBS_PER_PAGE,
+    page * PROVERBS_PER_PAGE
+  );
+
   const route = getLocalizedRoute(language, "proverbs");
+  /**
+   * Every address the page emits, from the narrowings in force. The page is
+   * dropped unless named: lifting a filter or choosing another opens on page
+   * one, because page four of the whole bank is past the end of a narrowing.
+   */
+  const addressWith = (
+    overrides: Partial<Record<AddressKey, string | null>>
+  ): string => {
+    const values: Record<AddressKey, string | null> = {
+      ...chosen,
+      page: null,
+      ...overrides,
+    };
+    const address = new URLSearchParams();
+    for (const key of Object.keys(PARAM) as AddressKey[]) {
+      const value = values[key];
+      if (value) address.set(PARAM[key], value);
+    }
+    const search = address.toString();
+    return search ? `${route}?${search}` : route;
+  };
+
+  const entities = proverbEntities(bank);
+  const optionsOf = (kind: DidYouKnowEntityKind) =>
+    entities
+      .filter((entity) => entity.kind === kind)
+      .map((entity) => ({ value: entity.id, label: entity.label }));
+  const labelOf = (kind: DidYouKnowEntityKind, id: string) =>
+    entities.find((entity) => entity.kind === kind && entity.id === id)
+      ?.label ?? id;
+
+  const activeFilters: FacetActiveFilter[] = [
+    ...(["country", "people", "family"] as const).flatMap((kind) => {
+      const id = chosen[kind];
+      return id
+        ? [
+            {
+              label: labelOf(kind, id),
+              removeHref: addressWith({ [kind]: null }),
+            },
+          ]
+        : [];
+    }),
+    ...(chosen.origin
+      ? [
+          {
+            label: copy.originOptions[chosen.origin],
+            removeHref: addressWith({ origin: null }),
+          },
+        ]
+      : []),
+  ];
+
+  const pagination = (position: "top" | "bottom") => (
+    <FacetPagination
+      language={language}
+      position={position}
+      page={page}
+      pageCount={pageCount}
+      total={selection.length}
+      pageSize={PROVERBS_PER_PAGE}
+      pageSizes={PAGE_SIZES}
+      buildHref={(target) =>
+        addressWith({ page: target > 1 ? String(target) : null })
+      }
+      unitLabel={copy.unitPlural}
+    />
+  );
 
   return (
     <PageLayout
@@ -86,61 +206,74 @@ export default async function ProverbsPage({
       title={copy.pageTitle}
       subtitle={copy.pageSubtitle}
     >
-      <div className="proverbs-page" data-testid="proverbs-page">
+      {/* The dossiers axis's accent, set once at the page (brand charter
+          §5.2): the filter button and its chips read it. The chips inside
+          each card keep their entity's own accent, being objects of another
+          kind. */}
+      <div
+        className="proverbs-page afh-accent-teal"
+        data-testid="proverbs-page"
+      >
         <p className="proverbs-kicker">{copy.pageKicker}</p>
+        <p className="proverbs-count" data-testid="proverbs-count">
+          {copy.count(
+            selection.length,
+            formatNumber(language, selection.length)
+          )}
+        </p>
 
-        {chosenEntity ? (
-          <p className="proverbs-scope" data-testid="proverbs-scope">
-            {copy.filterLabel} <strong>{chosenEntity.label}</strong>
-            {" · "}
-            <Link href={route}>{copy.filterAll}</Link>
-          </p>
-        ) : null}
+        <FacetFilterBar
+          action={route}
+          primaryField={{
+            name: PARAM.country,
+            label: copy.country,
+            anyLabel: copy.allCountries,
+            options: optionsOf("country"),
+            value: chosen.country,
+          }}
+          advancedFields={[
+            {
+              name: PARAM.people,
+              label: copy.people,
+              anyLabel: copy.allPeoples,
+              options: optionsOf("people"),
+              value: chosen.people,
+            },
+            {
+              name: PARAM.family,
+              label: copy.family,
+              anyLabel: copy.allFamilies,
+              options: optionsOf("family"),
+              value: chosen.family,
+            },
+            {
+              name: PARAM.origin,
+              label: copy.origin,
+              anyLabel: copy.allOrigins,
+              options: PROVERB_ORIGIN_STATUSES.map((status) => ({
+                value: status,
+                label: copy.originOptions[status],
+              })),
+              value: chosen.origin,
+            },
+          ]}
+          activeFilters={activeFilters}
+        />
 
-        <details className="proverbs-filter">
-          <summary>{copy.filterLabel}</summary>
-          <p className="proverbs-filter-all">
-            <Link href={route} aria-current={chosen ? undefined : "page"}>
-              {copy.filterAll}
-            </Link>
-          </p>
-          {FILTER_KINDS.map((kind) => {
-            const group = entities.filter((entity) => entity.kind === kind);
-            if (!group.length) return null;
-            return (
-              <div key={kind} className="proverbs-filter-group">
-                <p className="proverbs-filter-kind">{copy.filterKinds[kind]}</p>
-                <ul>
-                  {group.map((entity) => {
-                    const key = proverbEntityKey(entity);
-                    return (
-                      <li key={key}>
-                        <Link
-                          className={`proverbs-filter-link ${DID_YOU_KNOW_ENTITY_ACCENT[kind]}`}
-                          href={`${route}?entite=${encodeURIComponent(key)}`}
-                          aria-current={key === chosen ? "page" : undefined}
-                        >
-                          {entity.label}
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            );
-          })}
-        </details>
-
-        {listed.length ? (
-          <div className="proverbs-list">
-            {listed.map((proverb) => (
-              <ProverbCard
-                key={proverb.id}
-                language={language}
-                proverb={proverb}
-              />
-            ))}
-          </div>
+        {shown.length ? (
+          <>
+            {pagination("top")}
+            <div className="proverbs-list">
+              {shown.map((proverb) => (
+                <ProverbCard
+                  key={proverb.id}
+                  language={language}
+                  proverb={proverb}
+                />
+              ))}
+            </div>
+            {pagination("bottom")}
+          </>
         ) : (
           <p className="proverbs-empty">{copy.empty}</p>
         )}
@@ -153,7 +286,7 @@ export default async function ProverbsPage({
           padding-block: 24px 64px;
         }
         .proverbs-kicker {
-          margin: 0 0 24px;
+          margin: 0 0 12px;
           text-align: center;
           font-family: var(--font-mono, ui-monospace, monospace);
           font-size: var(--afh-text-eyebrow);
@@ -161,80 +294,20 @@ export default async function ProverbsPage({
           text-transform: uppercase;
           color: var(--afh-fg-muted);
         }
-        .proverbs-scope {
-          margin: 0 0 12px;
+        .proverbs-count {
+          margin: 0 0 16px;
           text-align: left;
           font-size: var(--afh-text-body);
           color: var(--afh-text-soft);
         }
-        .proverbs-scope strong {
-          color: var(--afh-text);
-        }
-        .proverbs-scope a {
-          color: var(--afh-text);
-          text-decoration: underline;
-          text-underline-offset: 2px;
-        }
-        .proverbs-filter {
-          margin: 0 0 24px;
-          padding: 12px 16px;
-          text-align: left;
-          border: 1px solid var(--afh-border);
-          border-radius: var(--afh-radius-lg, 14px);
-          background: var(--afh-bg-warm);
-        }
-        .proverbs-filter summary {
-          min-height: 32px;
-          display: flex;
-          align-items: center;
-          cursor: pointer;
-          font-weight: 600;
-          color: var(--afh-text);
-        }
-        .proverbs-filter p {
-          margin: 12px 0 8px;
-        }
-        .proverbs-filter-kind {
-          font-family: var(--font-mono, ui-monospace, monospace);
-          font-size: var(--afh-text-eyebrow);
-          letter-spacing: 0.06em;
-          text-transform: uppercase;
-          color: var(--afh-fg-muted);
-        }
-        .proverbs-filter ul {
-          list-style: none;
-          margin: 0;
-          padding: 0;
-          display: flex;
-          flex-wrap: wrap;
-          gap: 8px;
-        }
-        .proverbs-filter-all a,
-        .proverbs-filter-link {
-          display: inline-flex;
-          align-items: center;
-          min-height: 32px;
-          padding: 4px 12px;
-          border: 1px solid var(--accent, var(--afh-border));
-          border-radius: var(--afh-radius-full);
-          background: var(--afh-color-card);
-          color: var(--accent-ink, var(--afh-text));
-          font-size: var(--afh-text-caption);
-          font-weight: 600;
-          text-decoration: none;
-        }
-        .proverbs-filter-all a[aria-current="page"],
-        .proverbs-filter-link[aria-current="page"] {
-          background: var(--accent-tint, var(--afh-bg-warm));
-          text-decoration: underline;
-          text-underline-offset: 2px;
-        }
         .proverbs-list {
+          margin-top: 16px;
           display: flex;
           flex-direction: column;
           gap: 16px;
         }
         .proverbs-empty {
+          margin-top: 24px;
           text-align: center;
           color: var(--afh-fg-muted);
         }

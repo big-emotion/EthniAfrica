@@ -3,9 +3,10 @@ import { describe, expect, it } from "vitest";
 import { violatesReaderRegister } from "@/lib/editorial/readerRegister";
 import {
   PROVERBS,
+  filterProverbs,
   findProverb,
+  parseProverbOrigin,
   proverbEntities,
-  proverbsConcerning,
   type Proverb,
 } from "@/lib/proverbs/proverbs";
 import { afrikCorpusIds } from "@/test/afrikCorpusIds";
@@ -157,7 +158,7 @@ describe("the proverb bank — provenance", () => {
   });
 });
 
-describe("proverbsConcerning — the filter the dossier page applies", () => {
+describe("filterProverbs — the narrowings the dossier page applies", () => {
   const bank = [
     proverb("a", [{ kind: "people", id: "PPL_YORUBA", label: "Yoruba" }]),
     proverb("b", [
@@ -166,31 +167,58 @@ describe("proverbsConcerning — the filter the dossier page applies", () => {
     ]),
     proverb("c"),
   ];
+  const ids = (entries: Proverb[]) => entries.map((entry) => entry.id);
 
   // @req REQ-113
-  it("returns the whole bank when no entity is named", () => {
-    expect(proverbsConcerning(null, bank).map((entry) => entry.id)).toEqual([
+  it("returns the whole bank when nothing narrows it", () => {
+    expect(ids(filterProverbs(bank, {}))).toEqual(["a", "b", "c"]);
+    expect(
+      ids(filterProverbs(bank, { country: null, people: "", origin: null }))
+    ).toEqual(["a", "b", "c"]);
+  });
+
+  // @req REQ-113
+  it("returns the proverbs whose chips name the entry", () => {
+    expect(ids(filterProverbs(bank, { people: "PPL_YORUBA" }))).toEqual([
       "a",
       "b",
+    ]);
+    expect(ids(filterProverbs(bank, { country: "NGA" }))).toEqual(["b"]);
+  });
+
+  // The filters cross rather than add up: a country and a people keep only
+  // what both describe.
+  // @req REQ-113
+  it("crosses the narrowings it is given", () => {
+    expect(
+      ids(filterProverbs(bank, { people: "PPL_YORUBA", country: "NGA" }))
+    ).toEqual(["b"]);
+    expect(
+      ids(
+        filterProverbs(bank, { people: "PPL_YORUBA", origin: "unestablished" })
+      )
+    ).toEqual([]);
+    expect(ids(filterProverbs(bank, { origin: "unestablished" }))).toEqual([
       "c",
     ]);
   });
 
+  // An address kept from a retired proverb lands on an empty result the page
+  // can say something about, not on an error.
   // @req REQ-113
-  it("returns the proverbs whose chips name the entity", () => {
-    expect(
-      proverbsConcerning("people:PPL_YORUBA", bank).map((entry) => entry.id)
-    ).toEqual(["a", "b"]);
-    expect(
-      proverbsConcerning("country:NGA", bank).map((entry) => entry.id)
-    ).toEqual(["b"]);
+  it("returns nothing for an entry no proverb names", () => {
+    expect(filterProverbs(bank, { people: "PPL_ZULU" })).toEqual([]);
   });
+});
 
-  // A filter link kept from a retired proverb lands on an empty result the
-  // page can say something about, not on an error.
+describe("parseProverbOrigin — the origin an address may ask for", () => {
   // @req REQ-113
-  it("returns nothing for an entity no proverb names", () => {
-    expect(proverbsConcerning("people:PPL_ZULU", bank)).toEqual([]);
+  it("accepts the three statuses the atlas defines and nothing else", () => {
+    expect(parseProverbOrigin("attested")).toBe("attested");
+    expect(parseProverbOrigin("estimated")).toBe("estimated");
+    expect(parseProverbOrigin("unestablished")).toBe("unestablished");
+    expect(parseProverbOrigin("bogus")).toBeNull();
+    expect(parseProverbOrigin(undefined)).toBeNull();
   });
 });
 

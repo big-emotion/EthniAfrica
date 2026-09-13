@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 
 import { FacetPagination } from "@/components/hubs/facets/FacetPagination";
 import { getFacetRoute } from "@/lib/hubs/facets";
+import { getTranslation } from "@/lib/translations";
 
 /**
  * What the pager owes a reader, as opposed to what it computes.
@@ -136,6 +137,23 @@ describe("facet pagination", () => {
     expect(screen.getByRole("link", { name: "50 par page" })).toHaveAttribute(
       "aria-current",
       "true"
+    );
+  });
+
+  // A reading offered at one size has no choice to make: a lone « 10 » link
+  // beside « Par page » is a control that changes nothing (the proverbs
+  // dossier pages ten at a time and nothing else).
+  // @req REQ-108
+  it("offers no size choice when the facet has a single size", () => {
+    renderPager({ pageSize: 10, pageSizes: [10], pageCount: 6, total: 54 });
+    const { facets } = getTranslation("fr");
+
+    expect(
+      screen.queryByRole("list", { name: facets.resultsPerPage })
+    ).toBeNull();
+    expect(screen.queryByText(facets.perPage)).toBeNull();
+    expect(screen.getByTestId("facet-pagination-count")).toHaveTextContent(
+      "1 à 10 sur 54"
     );
   });
 

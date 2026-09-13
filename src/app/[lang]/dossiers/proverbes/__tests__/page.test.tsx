@@ -1,11 +1,13 @@
-import { render, screen, within } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import type { ReactNode } from "react";
 import { describe, expect, it, vi } from "vitest";
 
+import { proverbsCopy } from "@/lib/i18n/copy/proverbs";
 import {
   PROVERBS,
+  filterProverbs,
   proverbEntities,
-  proverbsConcerning,
+  type Proverb,
 } from "@/lib/proverbs/proverbs";
 import { PROVERBS_EN } from "@/lib/proverbs/proverbs.en";
 import { getLocalizedRoute } from "@/lib/routing";
@@ -16,102 +18,176 @@ vi.mock("@/components/layout/PageLayout", () => ({
 
 import ProverbsPage from "@/app/[lang]/dossiers/proverbes/page";
 
-async function renderPage(entite?: string, lang = "fr") {
+const PER_PAGE = 10;
+const ROUTE = getLocalizedRoute("fr", "proverbs");
+
+/**
+ * The page's cards, by id, read from the DOM rather than the accessibility
+ * tree: `getByRole` over a page of cards timed out under the full suite while
+ * asserting nothing a selector does not.
+ */
+async function renderPage(query: Record<string, string> = {}, lang = "fr") {
   render(
     await ProverbsPage({
       params: Promise.resolve({ lang }),
-      searchParams: Promise.resolve({ entite }),
+      searchParams: Promise.resolve(query),
     })
   );
-  return document.querySelectorAll("article[data-proverb]");
+  return [...document.querySelectorAll("article[data-proverb]")].map(
+    (card) => card.id
+  );
 }
 
-/**
- * The filter panel's links, read from the DOM rather than the accessibility
- * tree: `getByRole` over fifty-four cards, sixty times, took 13 s under the
- * full suite and timed out, while asserting nothing a selector does not.
- */
-function filterLinks(): HTMLAnchorElement[] {
-  return [
-    ...document.querySelectorAll<HTMLAnchorElement>(
-      "details.proverbs-filter a"
-    ),
-  ];
-}
+const ids = (entries: readonly Proverb[]) => entries.map((entry) => entry.id);
 
-describe("The proverbs dossier (REQ-113)", () => {
-  // @req REQ-113
-  it("prints the whole bank when no entity is chosen", async () => {
-    const cards = await renderPage();
+const firstOfKind = (kind: "country" | "people" | "family") =>
+  proverbEntities().find((entity) => entity.kind === kind)!;
 
-    expect(PROVERBS.length).toBeGreaterThan(0);
-    expect(cards).toHaveLength(PROVERBS.length);
+describe("The proverbs dossier — ten at a time (REQ-108)", () => {
+  // Measured at 430 px: the whole bank on one page stood 39 721 px tall.
+  // @req REQ-108
+  it("opens on the first ten proverbs", async () => {
+    expect(PROVERBS.length).toBeGreaterThan(PER_PAGE);
+    expect(await renderPage()).toEqual(ids(PROVERBS.slice(0, PER_PAGE)));
   });
 
-  // @req REQ-113
-  it("narrows the list to the proverbs concerning the chosen entity", async () => {
-    const entity = proverbEntities()[0];
-    const key = `${entity.kind}:${entity.id}`;
-    const cards = await renderPage(key);
-
-    expect([...cards].map((card) => card.id)).toEqual(
-      proverbsConcerning(key).map((entry) => entry.id)
+  // @req REQ-108
+  it("shows the page its address names", async () => {
+    expect(await renderPage({ page: "2" })).toEqual(
+      ids(PROVERBS.slice(PER_PAGE, 2 * PER_PAGE))
     );
-    expect(
-      filterLinks()
-        .filter((link) => link.getAttribute("aria-current") === "page")
-        .map((link) => link.textContent)
-    ).toEqual([entity.label]);
   });
 
-  // Measured at 430 px: opening the panel for the reader who chose « Zoulou »
-  // put forty country pills between them and the first result. The choice is
-  // named above the list instead, with the way back beside it.
-  // @req REQ-113
-  it("names the chosen entity above the list and keeps the panel folded", async () => {
-    const entity = proverbEntities()[0];
-    await renderPage(`${entity.kind}:${entity.id}`);
-
-    const scope = screen.getByTestId("proverbs-scope");
-    expect(scope).toHaveTextContent(entity.label);
-    expect(
-      within(scope).getByRole("link", { name: "Tous les proverbes" })
-    ).toHaveAttribute("href", getLocalizedRoute("fr", "proverbs"));
-    expect(
-      document.querySelector("details.proverbs-filter")
-    ).not.toHaveAttribute("open");
+  // A page number kept from a longer selection lands on readings, not on an
+  // empty list that reads as an empty dossier.
+  // @req REQ-108
+  it("lands a page past the end on the last page", async () => {
+    const lastPage = Math.ceil(PROVERBS.length / PER_PAGE);
+    expect(await renderPage({ page: "99" })).toEqual(
+      ids(PROVERBS.slice((lastPage - 1) * PER_PAGE))
+    );
   });
 
-  // A filter link kept from a retired proverb still lands on a page that says
-  // something, rather than on a blank list.
-  // @req REQ-113
-  it("says so when no proverb concerns the chosen entity", async () => {
-    const cards = await renderPage("people:PPL_NOBODY");
+  // Page two of a narrowing is the second page of the narrowed set, and its
+  // links keep the narrowing.
+  // @req REQ-108
+  it("pages inside a narrowing and keeps it in every page link", async () => {
+    const narrowed = filterProverbs(PROVERBS, { origin: "attested" });
+    expect(narrowed.length).toBeGreaterThan(PER_PAGE);
 
-    expect(cards).toHaveLength(0);
+    expect(await renderPage({ origine: "attested", page: "2" })).toEqual(
+      ids(narrowed.slice(PER_PAGE, 2 * PER_PAGE))
+    );
+    const pageLinks = [
+      ...document.querySelectorAll<HTMLAnchorElement>(
+        '[data-testid="facet-pagination-top"] a[aria-label^="Page "]'
+      ),
+    ];
+    expect(pageLinks.length).toBeGreaterThan(0);
+    for (const link of pageLinks) {
+      expect(link.getAttribute("href")).toContain("origine=attested");
+    }
+  });
+});
+
+describe("The proverbs dossier — filters (REQ-113)", () => {
+  // @req REQ-113
+  it("narrows by country", async () => {
+    const country = firstOfKind("country");
+    expect(await renderPage({ pays: country.id })).toEqual(
+      ids(filterProverbs(PROVERBS, { country: country.id }).slice(0, PER_PAGE))
+    );
+  });
+
+  // The filters cross: a people and an origin together keep only what both
+  // describe.
+  // @req REQ-113
+  it("crosses a people with an origin", async () => {
+    const people = firstOfKind("people");
+    const crossed = filterProverbs(PROVERBS, {
+      people: people.id,
+      origin: "attested",
+    });
+    expect(crossed.length).toBeGreaterThan(0);
     expect(
-      screen.getByText(
-        "Aucun proverbe publié ne concerne cette entrée de l'atlas."
-      )
-    ).toBeInTheDocument();
+      await renderPage({ peuple: people.id, origine: "attested" })
+    ).toEqual(ids(crossed.slice(0, PER_PAGE)));
+  });
+
+  // The one narrowing only this dossier can offer: the sayings the web calls
+  // African while no source names a people.
+  // @req REQ-113
+  it("shows only the unestablished origins when asked", async () => {
+    const shown = await renderPage({ origine: "unestablished" });
+    expect(shown.length).toBeGreaterThan(0);
+    for (const id of shown) {
+      expect(PROVERBS.find((entry) => entry.id === id)?.origin.status).toBe(
+        "unestablished"
+      );
+    }
   });
 
   // @req REQ-113
-  it("offers every entity the bank names as a filter link", async () => {
+  it("ignores an origin the atlas does not define", async () => {
+    expect(await renderPage({ origine: "bogus" })).toEqual(
+      ids(PROVERBS.slice(0, PER_PAGE))
+    );
+  });
+
+  // Each applied narrowing is named while the fold is shut, and lifting one
+  // keeps the others.
+  // @req REQ-113
+  it("names each applied filter with a link that lifts it alone", async () => {
+    const country = firstOfKind("country");
+    await renderPage({ pays: country.id, origine: "attested", page: "2" });
+
+    const chips = [
+      ...document.querySelectorAll<HTMLAnchorElement>(
+        '[data-testid="facet-active-filters"] a'
+      ),
+    ];
+    const hrefs = chips.map((chip) => chip.getAttribute("href"));
+    expect(hrefs).toContain(`${ROUTE}?pays=${country.id}`);
+    expect(hrefs).toContain(`${ROUTE}?origine=attested`);
+  });
+
+  // A choice that narrows to nothing is a dead end offered on purpose.
+  // @req REQ-113
+  it("offers as choices only the entries the bank names", async () => {
     await renderPage();
 
-    const offered = new Map(
-      filterLinks().map((link) => [link.getAttribute("href"), link.textContent])
+    const offered = (name: string) =>
+      [
+        ...document.querySelectorAll<HTMLOptionElement>(
+          `select[name="${name}"] option`
+        ),
+      ]
+        .map((option) => option.value)
+        .filter(Boolean)
+        .sort();
+    const named = (kind: "country" | "people" | "family") =>
+      proverbEntities()
+        .filter((entity) => entity.kind === kind)
+        .map((entity) => entity.id)
+        .sort();
+
+    expect(offered("pays")).toEqual(named("country"));
+    expect(offered("peuple")).toEqual(named("people"));
+    expect(offered("famille")).toEqual(named("family"));
+    expect(offered("origine")).toEqual(
+      ["attested", "estimated", "unestablished"].sort()
     );
-    for (const entity of proverbEntities()) {
-      const href = `${getLocalizedRoute("fr", "proverbs")}?entite=${encodeURIComponent(`${entity.kind}:${entity.id}`)}`;
-      expect(offered.get(href), href).toBe(entity.label);
-    }
+  });
+
+  // @req REQ-113
+  it("says so when no proverb matches", async () => {
+    expect(await renderPage({ peuple: "PPL_NOBODY" })).toEqual([]);
+    expect(screen.getByText(proverbsCopy.fr.empty)).toBeInTheDocument();
   });
 
   // @req REQ-145
   it("prints the English bank on /en", async () => {
-    await renderPage(undefined, "en");
+    await renderPage({}, "en");
 
     const first = PROVERBS[0];
     expect(

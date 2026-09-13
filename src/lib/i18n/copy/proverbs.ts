@@ -16,14 +16,24 @@ const en = {
     estimated: "estimated",
     unestablished: "not established",
   } satisfies Record<ProverbOriginStatus, string>,
-  filterLabel: "Proverbs concerning",
-  filterAll: "All proverbs",
-  filterKinds: {
-    country: "Countries",
-    people: "Peoples",
-    family: "Language families",
-  },
-  empty: "No published proverb concerns this atlas entry.",
+  // The same statuses as choices, where they stand alone rather than finish
+  // the « Origin — » sentence of a card.
+  originOptions: {
+    attested: "Attested",
+    estimated: "Estimated",
+    unestablished: "Not established",
+  } satisfies Record<ProverbOriginStatus, string>,
+  count: (total: number, formatted: string) =>
+    total === 1 ? "1 proverb" : `${formatted} proverbs`,
+  unitPlural: "proverbs",
+  country: "Country",
+  allCountries: "All countries",
+  people: "People",
+  allPeoples: "All peoples",
+  family: "Language family",
+  allFamilies: "All language families",
+  allOrigins: "All origins",
+  empty: "No published proverb matches these filters.",
   sources: "Sources",
 };
 
@@ -43,14 +53,22 @@ const fr: ProverbsCopy = {
     estimated: "estimée",
     unestablished: "non établie",
   },
-  filterLabel: "Proverbes concernant",
-  filterAll: "Tous les proverbes",
-  filterKinds: {
-    country: "Pays",
-    people: "Peuples",
-    family: "Familles linguistiques",
+  originOptions: {
+    attested: "Attestée",
+    estimated: "Estimée",
+    unestablished: "Non établie",
   },
-  empty: "Aucun proverbe publié ne concerne cette entrée de l'atlas.",
+  count: (total, formatted) =>
+    total === 1 ? "1 proverbe" : `${formatted} proverbes`,
+  unitPlural: "proverbes",
+  country: "Pays",
+  allCountries: "Tous les pays",
+  people: "Peuple",
+  allPeoples: "Tous les peuples",
+  family: "Famille linguistique",
+  allFamilies: "Toutes les familles",
+  allOrigins: "Toutes les origines",
+  empty: "Aucun proverbe publié ne correspond à ces filtres.",
   sources: "Sources",
 };
 
