@@ -7,21 +7,17 @@
   "content": {
     "appellations": {
       "mainName": "Teke",
-      "selfAppellation": "Bateke",
+      "selfAppellation": "Tio (aussi Tyo ou Teo)",
       "exonyms": [
-        "Bateke",
-        "Tyo",
-        "Tio",
         "Teke",
-        "Bateke",
-        "Anziku",
+        "Bateke (pluriel kikongo, singulier Muteke)",
+        "Anziku (Anzique, Anziquete dans les sources europeennes anciennes)",
         "Tekke",
-        "Tio ou Tyo (terme utilise dans la litterature ethnographique francaise)",
         "Boko (designation utilisee dans certaines zones de la RDC)"
       ],
-      "originOfExonyms": "Le mot teke signifie vendre ou acheter dans leur langue, referant a leur identite historique de commercants. Tyo et Tio sont des variantes regionales. Anziku etait le nom donne au royaume Teke par les Portugais et les premiers Europeens. Les Europeens ont adopte la forme Teke ou Bateke.",
-      "whyProblematic": "Le terme Bateke recouvre plusieurs sous-groupes distincts (Teke de l'Est ou Tio, Teke du Nord en Gabon, Teke de l'Ouest) qui ont des dialectes et des histoires differentes.",
-      "contemporaryUsage": "Bateke est l'appellation usuelle au Congo-Brazzaville, en RDC et au Gabon. Le groupe est reconnu officiellement dans les trois pays. Omar Bongo, ancien president du Gabon (1967-2009), etait Teke.",
+      "originOfExonyms": "Teke est au depart un mot kikongo, forme sur la racine « vendre » : il a donne l'ethnonyme muteke au singulier et bateke au pluriel, et designait les populations des plateaux au nord du Pool Malebo, intermediaires du commerce entre le fleuve et la cote atlantique. Les explorateurs, colonisateurs et administrateurs europeens ont repris la forme Teke ou Bateke, que certaines communautes ont ensuite adoptee. Les locuteurs eux-memes se disent plutot Tio, Tyo ou Teo, formes attestees comme endonymes du royaume. Anzique ou Anziquete designait anciennement les Teke ; en 1591, l'auteur italien Filippo Pigafetta applique pourtant ce nom aux ennemis du roi kongo Zinga Kuwu, dont l'identite reste discutee.",
+      "whyProblematic": "Teke et Bateke sont des exonymes d'origine kikongo, repris par l'administration coloniale, alors que les locuteurs se designent plutot comme Tio, Tyo ou Teo. Le terme Bateke recouvre plusieurs sous-groupes distincts (Teke de l'Est ou Tio, Teke du Nord en Gabon, Teke de l'Ouest) qui ont des dialectes et des histoires differentes.",
+      "contemporaryUsage": "Bateke est l'appellation usuelle au Congo-Brazzaville, en RDC et au Gabon, et certaines communautes teke l'ont elles-memes adoptee. Le groupe est reconnu officiellement dans les trois pays. Omar Bongo, ancien president du Gabon (1967-2009), etait Teke.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantu du Nord-Ouest (Bantu Central Africain)",
       "historicalRegion": "Plateau Bateke (Congo-Brazzaville), Pool Malebo (frontiere COG-COD), Sud-Est du Gabon",
@@ -174,6 +170,30 @@
         "title": "CIA World Factbook — Democratic Republic of the Congo",
         "url": "https://www.cia.gov/the-world-factbook/countries/congo-democratic-republic-of-the/",
         "tier": "official"
+      },
+      {
+        "title": "Guy Kouarata, Sara Pacchiarotti et Koen Bostoen, « Nouvelle contribution a l'inventaire et la description des parlers teke (bantou, B70-80) », Linguistique et langues africaines, 9 (2), 2023",
+        "url": "https://journals.openedition.org/lla/12921",
+        "tier": "referenced",
+        "notes": "Revue a comite de lecture, OpenEdition. Section 2, paragraphe 6 : teke est un exonyme d'origine kikongo issu de la racine « vendre » ; les locuteurs se disent plutot Tyo ou Teo (d'apres Jacquot 1965, Vansina 1966 et Boone 1973)."
+      },
+      {
+        "title": "Igor Matonda, « L'identite des Pamzoallumbu ou Pangelungus du royaume Kongo », Cahiers d'etudes africaines, 238, 2020, p. 371-406",
+        "url": "https://journals.openedition.org/etudesafricaines/30387",
+        "tier": "referenced",
+        "notes": "Revue a comite de lecture, OpenEdition. Paragraphe 3 : Pigafetta nomme Anzique ou Anziquete les ennemis du roi Zinga Kuwu en 1591 ; le terme designait anciennement le peuple teke (d'apres Vansina 1994)."
+      },
+      {
+        "title": "Loi du 30 novembre 1882 approuvant les traite et acte signes les 10 septembre et 3 octobre 1880 par M. de Brazza et le roi Makoko, Journal officiel de la Republique francaise, 3 decembre 1882, p. 6513",
+        "url": "https://mjp.univ-perp.fr/constit/cg1880.htm",
+        "tier": "official",
+        "notes": "Texte de la loi et des deux actes annexes, lu sur la Digitheque de materiaux juridiques et politiques de l'Universite de Perpignan. Le traite est fait a Ndao, au village de Makoko, le 10 septembre 1880 ; l'acte du 3 octobre 1880, fait a Ncouna, est la prise de possession du territoire devant les chefs vassaux."
+      },
+      {
+        "title": "Marie-Claude Dupre, compte rendu de Jan Vansina, The Tio Kingdom of the Middle Congo 1880-1892, Journal des Africanistes, 45 (1-2), 1975, p. 239-241",
+        "url": "https://www.persee.fr/doc/jafr_0037-9166_1975_num_45_1_1769_t1_0239_0000_1",
+        "tier": "referenced",
+        "notes": "Persee. Le compte rendu indique qu'en 1880 le Makoko Iloo Ier, roi des Tio, signe le traite avec Brazza."
       }
     ]
   },
