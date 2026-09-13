@@ -44,6 +44,20 @@ export const AUDIENCE_CONSUMERS = [
   "ethniafrica-experience-optimizer",
 ] as const;
 
+/**
+ * The four networks the productions go out on, as the operator reads them in
+ * their studios. The message travels there before it reaches the site: the
+ * 2026-09-13 message audit counted ~18 000 views a month on them against three
+ * site visitors from them, so a producer that reads Plausible alone measures the
+ * smallest surface the message reaches.
+ */
+export const AUDIENCE_NETWORKS = [
+  "YouTube",
+  "TikTok",
+  "Instagram",
+  "Facebook",
+] as const;
+
 export interface SkillContractIssue {
   skill: string;
   detail: string;
@@ -52,7 +66,7 @@ export interface SkillContractIssue {
 /** Overrides let a test supply skill markdown without writing a broken skill to disk. */
 export type SkillMarkdownOverrides = Record<string, string>;
 
-function skillMarkdown(
+export function skillMarkdown(
   projectRoot: string,
   skill: string,
   overrides: SkillMarkdownOverrides
@@ -85,6 +99,24 @@ export function checkAudienceSkillContract(
       issues.push({
         skill: AUDIENCE_PRODUCER,
         detail: `does not write the audit report to ${AUDIENCE_REPORT_DIR}/`,
+      });
+    }
+
+    for (const network of AUDIENCE_NETWORKS) {
+      if (!producer.includes(network)) {
+        issues.push({
+          skill: AUDIENCE_PRODUCER,
+          detail: `does not collect per-post metrics from ${network}`,
+        });
+      }
+    }
+
+    // Without the campaign breakdown a post and the visits it sent never meet,
+    // and "the videos do not convert" cannot be told from "nobody measured".
+    if (!producer.includes("utm_campaign")) {
+      issues.push({
+        skill: AUDIENCE_PRODUCER,
+        detail: "does not tie a post to its site visits through utm_campaign",
       });
     }
   }

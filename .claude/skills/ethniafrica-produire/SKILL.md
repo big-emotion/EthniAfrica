@@ -1,6 +1,6 @@
 ---
 name: ethniafrica-produire
-description: Rendre les carrousels et les reels EthniAfrica depuis un cards.json et un SOURCES.md validés, conformément à GABARITS-SOCIAL.md — dispositions A/B/C, résolution ≤ ×2, zone d'interface 9:16, licence de sortie calculée. Dernière étape de la chaîne idee → structure → produire ; rien ne vient après, la publication est un acte humain. Utiliser pour « rends », « génère les images », « fais la vidéo », « sors le carrousel », ou /ethniafrica-produire. Rend toujours, en épreuve si les portes ne passent pas.
+description: Rendre les carrousels et les reels EthniAfrica depuis un cards.json et un SOURCES.md validés, conformément à GABARITS-SOCIAL.md — dispositions A/B/C, résolution ≤ ×2, zone d'interface 9:16, licence de sortie calculée. Dernière étape de la chaîne idee → structure → produire ; rien ne vient après, la publication est un acte humain. Lance d'abord l'audit du message (ethniafrica-message). Utiliser pour « rends », « génère les images », « fais la vidéo », « sors le carrousel », ou /ethniafrica-produire. Rend toujours, en épreuve si les portes ne passent pas.
 ---
 
 # produire — rendre carrousels et reels
@@ -23,12 +23,12 @@ dis pourquoi.
 
 ## Les deux sorties
 
-| Sortie            | Dossier             | Condition                 | État atteint          |
-| ----------------- | ------------------- | ------------------------- | --------------------- |
-| **Épreuve**       | `_epreuves/`        | toujours                  | 🟡 En traitement      |
-| **Bon à publier** | `images/`, `video/` | les quatre portes passées | 🟢 Validé, en attente |
+| Sortie            | Dossier             | Condition               | État atteint          |
+| ----------------- | ------------------- | ----------------------- | --------------------- |
+| **Épreuve**       | `_epreuves/`        | toujours                | 🟡 En traitement      |
+| **Bon à publier** | `images/`, `video/` | les cinq portes passées | 🟢 Validé, en attente |
 
-### Les quatre portes
+### Les cinq portes
 
 1. Toute licence d'image est nommée, et la licence de sortie est calculée.
 2. Chaque crédit nomme le document réellement affiché sur la carte.
@@ -36,6 +36,17 @@ dis pourquoi.
    confirmer », « à compléter »).
 4. Aucune image n'est agrandie au-delà de ×2, ou un repli de disposition l'a
    évité.
+5. **Le message passe.** Avant tout rendu, lance `ethniafrica-message` sur le
+   sujet. Il écrit son verdict dans `message.md`, à côté du `cards.json`. La
+   porte est franchie si ce verdict dit **passe** et s'il est plus récent que
+   `cards.json`, `narration.fr.txt` et `post.md` : un verdict rendu sur une
+   version précédente du texte ne juge pas celle qu'on rend.
+
+La cinquième porte n'empêche pas de rendre, comme les quatre autres : un message
+qui ne passe pas fait sortir le lot **en épreuve**, et l'encart de l'épreuve
+reprend les critères non tenus. Elle existe parce que l'audit du 2026-09-13 a
+trouvé la doctrine dans deux productions sur vingt-sept, alors que toutes
+avaient franchi les quatre premières portes.
 
 Une épreuve porte un **bandeau diagonal « ÉPREUVE — NE PAS PUBLIER »** et un
 encart listant les portes non franchies, en clair, avec ce qu'il faut pour les

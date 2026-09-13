@@ -4,6 +4,7 @@ import { describe, expect, it } from "vitest";
 
 import {
   AUDIENCE_CONSUMERS,
+  AUDIENCE_NETWORKS,
   AUDIENCE_PRODUCER,
   AUDIENCE_REPORT_DIR,
   checkAudienceSkillContract,
@@ -42,6 +43,33 @@ describe("audience skill contract", () => {
     expect(issues).toContainEqual({
       skill: AUDIENCE_PRODUCER,
       detail: `does not write the audit report to ${AUDIENCE_REPORT_DIR}/`,
+    });
+  });
+
+  // @req REQ-032
+  it("flags a producer that measures the site and not the networks", () => {
+    // The 2026-09-13 message audit found ~18 000 views a month on the networks
+    // against three site visitors from them. A producer that reads Plausible
+    // alone measures the smallest surface the message travels on.
+    const issues = checkAudienceSkillContract(projectRoot, {
+      [AUDIENCE_PRODUCER]: `---\nname: ${AUDIENCE_PRODUCER}\n---\nWrites ${AUDIENCE_REPORT_DIR}/ from Plausible alone.`,
+    });
+
+    expect(AUDIENCE_NETWORKS).toEqual([
+      "YouTube",
+      "TikTok",
+      "Instagram",
+      "Facebook",
+    ]);
+    for (const network of AUDIENCE_NETWORKS) {
+      expect(issues).toContainEqual({
+        skill: AUDIENCE_PRODUCER,
+        detail: `does not collect per-post metrics from ${network}`,
+      });
+    }
+    expect(issues).toContainEqual({
+      skill: AUDIENCE_PRODUCER,
+      detail: "does not tie a post to its site visits through utm_campaign",
     });
   });
 

@@ -141,4 +141,5 @@ ailleurs.
 
 Passe le sujet en **🟡 En traitement** dans l'en-tête de son `post.md`, recalcule
 l'état (`node social/tools/etat-pipeline/build-etat.mjs`), et dis en une ligne
-que l'étape suivante est `produire`. Ne la lance pas de toi-même.
+que l'étape suivante est `produire`, qui lance d'abord l'audit du message
+(`ethniafrica-message`). Ne la lance pas de toi-même.
