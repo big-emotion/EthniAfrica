@@ -177,7 +177,7 @@ one tool that files folders onto the library's own shelves.
 
 ### Publishing — the audience, the plan, the video
 
-The publishing chain runs in one order, and **all six of its skills live here**,
+The publishing chain runs in one order, and **all eight of its skills live here**,
 under their `ethniafrica-` names. They left for the private workspace on
 2026-09-10, on the rule that a public repository carries no production skills, and
 came back on 2026-09-11 when that rule was reversed: an engine and a chain whose
@@ -186,8 +186,10 @@ come back is the **output** — see `social/` below.
 
 ```
 audience-audit → content-strategist → idee → structure → produire → (fin)
-   la mesure        quoi publier                                      ↓
+ site + réseaux     quoi publier                  porte : message ↑     ↓
                                                     publication : acte humain
+
+reseaux-help — à tout moment : où j'en suis, doublons, prochain geste
 ```
 
 - **Measure before planning — `/ethniafrica-audience-audit`.** It writes one
@@ -205,6 +207,19 @@ audience-audit → content-strategist → idee → structure → produire → (f
   then the render. **Nothing comes after `produire`**: the operator posts, then
   fills the Diffusion section of the subject's `post.md`. No skill publishes and
   no skill schedules — do not invent a fourth step.
+- **The message gate — `/ethniafrica-message`.** Not a fourth step: `produire`
+  launches it before rendering, and a production whose message does not pass
+  renders as a proof only. It scores videos, carousels and site pages against
+  the doctrine in `docs/editorial/purpose-doctrine.md`, the About page's
+  `purposeChapter` and GABARITS-SOCIAL §7 ter, because the 2026-09-13 message
+  audit (`docs/audience/message/`) found that doctrine in two productions out of
+  twenty-seven while all of them had passed the four render gates.
+- **Where am I — `/ethniafrica-reseaux-help`.** Reads the pipeline state and
+  `social/tools/etat-pipeline/bilan-sujets.mjs`, flags a validated post whose
+  subject is already published in the same format, and names one next move.
+- **Anecdotes and proverbs are coming** as content types. Neither is on the site
+  nor has a template yet; the chain notes such a subject as an idea until one
+  exists.
 
 The first two are optional and upstream; `idee` can start without them. But a
 plan written without the measurement is a plan written to taste.
