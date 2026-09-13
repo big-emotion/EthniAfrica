@@ -5,8 +5,8 @@ reconciles every file under `supabase/migrations/` by name, each inside the CI j
 applies migrations to that database
 **Applies to:** every file under `supabase/migrations/`
 
-> **Measured 2026-09-12 and 2026-09-13: every migration file is applied on both databases.** The
-> directory held `001` → `088` when read.
+> **Measured 2026-09-12 and 2026-09-13: migrations `001` → `088` were applied on both databases.**
+> Migration `089` is pending; it has not been applied to either database.
 >
 > | Database                                             | How it was read                                                                                                                                | Result                                                                                                                                                                                                                                   |
 > | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -269,6 +269,7 @@ two databases the 2026-08-31 readings of `001` → `049` reached.
 | `086_flag_reporter_locale.sql`                | applied — measured 2026-09-12               | applied — measured 2026-09-12                        |
 | `087_quiz_question_locale.sql`                | applied — measured 2026-09-12               | applied — measured 2026-09-12                        |
 | `088_needs_review_source_tier.sql`            | applied — measured 2026-09-12               | applied by the v4.9.0 Release — measured 2026-09-13  |
+| `089_oral_tradition_name_provenance.sql`      | pending — not applied                       | pending — not applied                                |
 
 > **Superseded rollout notes.** The per-migration notes below were written when each file was
 > pending, and several still say "apply by hand" or "omitted from this table". They are kept for
