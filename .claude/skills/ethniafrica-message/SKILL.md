@@ -18,11 +18,11 @@ production est une première rencontre, et elle doit redonner le cadre elle-mêm
 
 Ne note jamais de mémoire. Ouvre les trois sources avant chaque audit :
 
-| Source                                           | Ce qu'elle porte                                                                   |
-| ------------------------------------------------ | ---------------------------------------------------------------------------------- |
-| `docs/editorial/purpose-doctrine.md`             | l'échange d'origine, mot pour mot, et les corrections qui font la doctrine         |
-| `src/lib/i18n/copy/about.ts`                     | la déclaration publiée au lecteur (`purposeChapter`) — la formulation de référence |
-| `docs/design/gabarits-social/GABARITS-SOCIAL.md` | §3 bis le bloc de paire, §7 ter la table des formulations, §9 bis la clôture       |
+| Source                                           | Ce qu'elle porte                                                                                                                          |
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| `docs/editorial/purpose-doctrine.md`             | l'échange d'origine, mot pour mot, et les corrections qui font la doctrine                                                                |
+| `src/lib/i18n/copy/about.ts`                     | la déclaration publiée au lecteur (`purposeChapter`) — la formulation de référence                                                        |
+| `docs/design/gabarits-social/GABARITS-SOCIAL.md` | §3 bis le bloc de paire, §7 ter la table des formulations et la table par type de contenu (ouverture et clôture), §9 bis la clôture vidéo |
 
 Ce que la doctrine dit, en bref — la source l'emporte si elle a changé depuis :
 
@@ -38,10 +38,14 @@ Ce que la doctrine dit, en bref — la source l'emporte si elle a changé depuis
   lui donnent vient après.**
 - **Trois phrases qu'on n'écrit pas** : « Avant, on vivait en accord avec le
   continent », « Les frontières sont arbitraires », « Renouer avec le passé ».
-- **Les dates :** la conférence de Berlin, 1884 — jamais « Berlin » seul, la
-  ville n'a rien tracé ; les indépendances, 1960. « Mille ans » est une
-  approximation assumée, affichée comme une position : une production qui date
-  un nom précis donne la date d'attestation de ce nom.
+- **Les dates :** la conférence de Berlin, 1884 — jamais « Berlin » seul ; les
+  indépendances, 1960. Une production qui date un nom précis donne la date
+  d'attestation de ce nom. **Deux formulations sont contestées** (audit du
+  message du 2026-09-13, constat 9) : « Berlin » comme celui qui a tracé les
+  lignes — la conférence a fixé des règles pour revendiquer un territoire, elle
+  n'a tracé aucune ligne — et « mille ans » posé comme un fait, qui ne se date
+  pas. Aucune clôture ne les porte tant que la session de doctrine n'a pas
+  tranché.
 
 ## Trois modes
 
@@ -60,16 +64,16 @@ décisions vont à `/afrik-art-director` et `/ethniafrica-experience-optimizer`.
 
 Chaque critère se note **0, 1 ou 2**, avec la phrase citée qui justifie la note.
 
-| #   | Critère                                                                                                                                                                                                                                                                              | Bloquant | Pour qui        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- | --------------- |
-| 1   | **Le cadre est dit dans la pièce elle-même.** Un peuple nommé, et ce que la frontière lui fait ou ce qui est plus vieux qu'elle. Un sujet qui n'est pas un peuple (un pays, une ville, un mot) relie son nom aux peuples qu'il désigne ; sans ce lien, 0.                            | oui      | le nouveau venu |
-| 2   | **Le nom qu'il se donne, d'abord.** Dès qu'un peuple est nommé, la paire est visible tôt — carte 2 au plus tard en carrousel, première scène après l'accroche en vidéo, premier écran sur une page — dans l'ordre nom qu'il se donne → nom qu'on lui donne, sous la forme de §3 bis. | oui      | les deux        |
-| 3   | **Le peuple est sujet de la phrase.** Le renversement d'agent de §7 ter ; le colonisateur n'est pas le sujet des phrases qui concluent.                                                                                                                                              | oui      | les deux        |
-| 4   | **Aucune phrase refusée.** Ni les trois de la doctrine, ni « les frontières sont arbitraires ».                                                                                                                                                                                      | oui      | les deux        |
-| 5   | **Les dates sont exactes.** « La conférence de Berlin », 1884, 1960 ; « mille ans » posé comme une position ; la date d'attestation propre au nom quand un nom est daté.                                                                                                             | oui      | les deux        |
-| 6   | **La fin va vers ce qui est resté** — l'origine, les liens, les pays où le peuple vit aujourd'hui — pas vers la blessure.                                                                                                                                                            | non      | les deux        |
-| 7   | **Une idée, une boucle fermée.** Une pièce qui ouvre trois sujets n'en fait passer aucun ; une question ouverte à l'accroche trouve sa réponse dans la pièce ou derrière son lien.                                                                                                   | non      | le nouveau venu |
-| 8   | **La clôture constante.** La ligne de vision mot pour mot — « Nommer un peuple aussi facilement qu'un pays. » — et la clôture de §9 bis. Sur une page du site : le propos est atteignable (« Notre propos », la page About).                                                         | oui      | l'abonné        |
+| #   | Critère                                                                                                                                                                                                                                                                                                                                                                                                                          | Bloquant | Pour qui        |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | --------------- |
+| 1   | **Le cadre est dit dans la pièce elle-même.** Un peuple nommé, et ce que la frontière lui fait ou ce qui est plus vieux qu'elle. Un sujet qui n'est pas un peuple (un pays, une ville, un mot) relie son nom aux peuples qu'il désigne ; sans ce lien, 0.                                                                                                                                                                        | oui      | le nouveau venu |
+| 2   | **Le nom qu'il se donne, d'abord.** Dès qu'un peuple est nommé, la paire est visible tôt — carte 2 au plus tard en carrousel, première scène après l'accroche en vidéo, premier écran sur une page — dans l'ordre nom qu'il se donne → nom qu'on lui donne, sous la forme de §3 bis.                                                                                                                                             | oui      | les deux        |
+| 3   | **Le peuple est sujet de la phrase.** Le renversement d'agent de §7 ter ; le colonisateur n'est pas le sujet des phrases qui concluent.                                                                                                                                                                                                                                                                                          | oui      | les deux        |
+| 4   | **Aucune phrase refusée.** Ni les trois de la doctrine, ni « les frontières sont arbitraires ».                                                                                                                                                                                                                                                                                                                                  | oui      | les deux        |
+| 5   | **Les dates sont exactes.** « La conférence de Berlin », 1884, 1960 ; la date d'attestation propre au nom quand un nom est daté. Une clôture qui fait de « Berlin » l'auteur des lignes, ou qui pose « mille ans » comme un fait : 0.                                                                                                                                                                                            | oui      | les deux        |
+| 6   | **La fin va vers ce qui est resté** — l'origine, les liens, les pays où le peuple vit aujourd'hui — pas vers la blessure.                                                                                                                                                                                                                                                                                                        | non      | les deux        |
+| 7   | **Une idée, une boucle fermée.** Une pièce qui ouvre trois sujets n'en fait passer aucun ; une question ouverte à l'accroche trouve sa réponse dans la pièce ou derrière son lien.                                                                                                                                                                                                                                               | non      | le nouveau venu |
+| 8   | **La clôture de son type.** La ligne de vision mot pour mot — « Nommer un peuple aussi facilement qu'un pays. » — et le titre et le corps de clôture du type du lot, pris mot pour mot dans la table par type de contenu de §7 ter : un lot sur un pays ne se clôt pas sur « Ce peuple n'a pas été divisé ». Un type absent de la table : 0. Sur une page du site : le propos est atteignable (« Notre propos », la page About). | oui      | l'abonné        |
 
 Les critères 1 et 7 servent le nouveau venu : il n'a que cette pièce. Le 2 et
 le 8 servent l'abonné : c'est la répétition du même bloc, à la même place, dans

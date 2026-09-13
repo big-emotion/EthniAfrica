@@ -84,31 +84,45 @@ personne"}, {"terme": "Basotho", "glose": "le peuple"}, …]`. Le parallèle
 
 ## La clôture, et la fin parlée
 
-La carte de clôture est **constante d'une série à l'autre** (§7 ter) : même
-titre, même datation, même ligne de vision, seul le lien change. Elle porte
-`titre`, `corps` (la datation), `source` (la vision), `appel` (le lien) et
-`pivot` — le membre de phrase que la plaque de vision passe en accent.
+Le titre et le corps de la clôture **varient avec le type de contenu** : ils
+sont fixes dans un type — c'est la signature — et changent d'un type à l'autre.
+Seule la ligne de vision est la même partout. Ils se prennent **dans la table
+par type de contenu de §7 ter** (`docs/design/gabarits-social/GABARITS-SOCIAL.md`),
+mot pour mot, au moment d'écrire. Ce skill n'en garde aucune copie : une
+deuxième copie de la doctrine est celle qui dérive.
 
-> `titre` Une frontière ne contient pas un peuple. Elle le traverse.
-> `corps` Tracées à la conférence de Berlin, en 1884. Les noms sont mille ans plus vieux.
-> `source` Nommer un peuple aussi facilement qu'un pays.
-> `pivot` qu'un pays
-> `appel` 776 peuples · ethniafrica.com
+Un lot dont le type n'a pas de ligne dans la table, ou dont la case est encore
+marquée « à fixer » ou « à valider », s'arrête et le dit. Une clôture ne
+s'invente pas dans une carte.
 
-Le compte de `appel` se **mesure sur le corpus**, il ne se recopie pas d'une
-vidéo précédente ni de §9 bis, qui écrit encore 804.
+La carte de clôture porte :
+
+- `titre` — le titre de clôture du type ;
+- `corps` — le corps de clôture du type, c'est-à-dire la seconde moitié du
+  renversement. Ce n'est plus une datation ;
+- `source` — la ligne de vision de §7 ter ;
+- `pivot` — le membre de phrase que la plaque de vision passe en accent ;
+- `appel` — `{n} peuples · ethniafrica.com`.
+
+Le compte de `appel` se **mesure sur le corpus**, il ne se recopie ni d'une
+vidéo précédente ni d'un exemple du gabarit.
+
+**Aucune clôture n'écrit « Berlin » comme celui qui a tracé les lignes, ni
+« mille ans » comme un fait**, tant que la session de doctrine n'a pas tranché
+(§7 ter, audit du message du 2026-09-13, constat 9).
 
 **Le dernier paragraphe de `narration.fr.txt` dit la doctrine, pas une adresse**,
-et il est court : le renversement, puis la sortie. Rien d'autre.
+et il est court : le renversement du type, son titre puis son corps, et ensuite
+la sortie. Rien d'autre. Pour un lot sur un peuple réparti sur plusieurs pays :
 
-> Une frontière ne contient pas un peuple. Elle le traverse.
+> Ce peuple n'a pas été divisé. C'est la carte qui a été dessinée par-dessus.
 > Retrouvez l'histoire du nom des peuples sur EthniAfrica. Et bientôt, celle des lieux.
 
-La datation et la vision sont **écrites sur la carte**, mot pour mot : les dire
-aussi à la voix publie la même phrase trois fois et immobilise l'image le temps
-de le faire. Mesuré : quatre temps parlés tiennent la carte 21,4 s, deux temps la
-tiennent 7,2 s. Le montage contrôle ce paragraphe contre les mots de la carte et
-le remarque quand il dérive.
+La vision est **écrite sur la carte**, mot pour mot : la dire aussi à la voix
+publie la même phrase deux fois et immobilise l'image le temps de le faire.
+Mesuré sur l'ancienne clôture : quatre temps parlés tenaient la carte 21,4 s,
+deux temps la tenaient 7,2 s. Le montage contrôle ce paragraphe contre les mots
+de la carte et le remarque quand il dérive.
 
 **Un paragraphe de narration est une scène.** Le nombre de blocs séparés d'une
 ligne vide doit égaler le nombre de cartes, sinon le montage ne peut pas caler

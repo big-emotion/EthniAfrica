@@ -165,12 +165,14 @@ Le contrôle en mouvement réduit est la version dont on juge une composition.
 renversement puis la sortie — jamais une adresse seule. Le montage le contrôle
 contre les mots de la carte de clôture elle-même et le remarque sans bloquer.
 
-**La clôture parlée est courte.** Le renversement, puis la sortie, et rien
-d'autre : « Une frontière ne contient pas un peuple. Elle le traverse. Retrouvez
-l'histoire du nom des peuples sur EthniAfrica. Et bientôt, celle des lieux. » La
-datation et la ligne de vision sont **écrites sur la carte**, mot pour mot — les
-redire à la voix met vingt secondes de doctrine sur une seule image. Mesuré :
-58 mots dictés donnent 21,4 s de carte fixe, 23 mots en donnent 7.
+**La clôture parlée est courte.** Le renversement du type du lot, pris dans la
+table par type de contenu de §7 ter, puis la sortie, et rien d'autre. Pour un
+lot sur un peuple : « Ce peuple n'a pas été divisé. C'est la carte qui a été
+dessinée par-dessus. Retrouvez l'histoire du nom des peuples sur EthniAfrica. Et
+bientôt, celle des lieux. » La ligne de vision est **écrite sur la carte**, mot
+pour mot — la redire à la voix immobilise l'image le temps de le faire. Mesuré
+sur l'ancienne clôture : 58 mots dictés donnaient 21,4 s de carte fixe, 23 mots
+en donnaient 7.
 
 **La carte de fin entre sur la phrase de sortie**, jamais avant, et joue une fois
 avant de tenir sa dernière image. Le montage l'annonce dans son journal avec la

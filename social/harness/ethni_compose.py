@@ -1216,9 +1216,9 @@ def plan_video(carte, deck, *, image, sous_titre=False):
     # One does not leaf through a video, so there is no rank; and the series name
     # on every keyframe is one of the nine defects the port produced.
     if ouverture or cloture:
-        # §7 ter — the closing is constant across every series, so it cannot carry
-        # a per-series label: the image every series ends on would name one of
-        # them. It carries the brand line instead, read off `ethni_brand` rather
+        # §7 ter — the vision is constant across every series and every content
+        # type, so the closing cannot carry a per-series label: it would name one
+        # series on the image all of them end on. It carries the brand line instead, read off `ethni_brand` rather
         # than typed here, because two spellings of one name are two that drift.
         from ethni_brand import TAGLINE
         libelle = (f"EthniAfrica · {TAGLINE}" if cloture
@@ -1249,10 +1249,9 @@ def plan_video(carte, deck, *, image, sous_titre=False):
                          # own closing budget is computed at it: 3 × 80 = 259 px.
                          encre_titre, V_MARGE_X, largeur, interligne=1.08,
                          majuscule=True)
-        # §9 bis — « Elle le traverse » is the punch, and both halves stay at the
-        # same rank. Relegated to the body it reads as a qualification; set in the
-        # accent inside the title it reads as the argument. The boundary is the
-        # last sentence break, so a closing written for another lot inherits it.
+        # §7 ter — the closing title comes from the content-type table and its
+        # last word is the punch, on every row. Read off the title rather than
+        # declared, so a type added to the table needs no engine change.
         if cloture and titre is not None:
             titre.accent_depuis = _chute(carte.get("titre", ""))
         _v_poser(slot, "v-precision", carte.get("precision", ""), V_PRECISION_CORPS,
@@ -1264,11 +1263,9 @@ def plan_video(carte, deck, *, image, sous_titre=False):
     # characters added to an opening title took it from two composed lines to
     # three — 285 px in a slot of 220 — and its first line landed 65 px above, at
     # alpha 0,43 and 2,63:1.
-    # §9 bis — on a closing the dating shares the title slot with the reversal:
-    # « titre 80 px sur trois lignes (259 px) + datation deux lignes (96 px) =
-    # 375 px » in a slot of 380. The reversal holds in one display sentence with
-    # both halves at the same rank — « Elle le traverse » is the punch, and
-    # relegated to the body it reads as a qualification.
+    # §9 bis — on a closing the body (the second half of the reversal) shares
+    # the title slot with it: « titre 80 px sur trois lignes (259 px) + corps
+    # deux lignes (96 px) = 375 px » in a slot of 380.
     if cloture:
         _v_poser(slot, "v-datation", carte.get("corps", ""), V_PRECISION_CORPS,
                  "nunito", 400, encre1, V_MARGE_X, largeur, interligne=1.41)
@@ -1346,17 +1343,15 @@ def plan_video(carte, deck, *, image, sous_titre=False):
 
 
 def _chute(titre):
-    """The word index at which a closing title's second sentence begins.
+    """The word index of a closing title's punch: its last word.
 
-    §9 bis's closing is two display sentences — « Une frontière ne contient pas un
-    peuple. Elle le traverse. » — and the second is the punch. Returning an index
-    rather than the phrase is what lets it survive a line break.
+    Every row of §7 ter's content-type table accents the last word, including the
+    projection's two-sentence title. The retired closing accented its whole second
+    sentence, which left a one-sentence title with no accent at all. An index
+    rather than the word is what lets it survive a line break.
     """
     mots = (titre or "").split()
-    for i in range(len(mots) - 1, 0, -1):
-        if mots[i - 1].endswith((".", "!", "?")):
-            return i
-    return -1
+    return len(mots) - 1 if mots else -1
 
 
 def _v_empiler(p, blocs, haut_slot, h_slot, nom_slot):

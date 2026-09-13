@@ -933,6 +933,32 @@ def test_an_unfindable_camp_never_blocks():
     assert im.size == (1080, 1350)
 
 
+def _titre_de_cloture(titre):
+    c = carte(role="bascule", titre=titre,
+              corps="C'est la carte qui a été dessinée par-dessus.",
+              source="Nommer un peuple aussi facilement qu'un pays.",
+              pivot="qu'un pays", appel="ethniafrica.com")
+    return gab.plan_video(c, DECK, image=image_test(3000, 4000)).bloc("v-titre")
+
+
+def test_a_closing_title_puts_its_last_word_in_the_accent():
+    """§7 ter — the closing title declines by content type, last word in accent.
+
+    The engine used to accent the title's second sentence, which only fits the
+    retired two-sentence closing. Every row of the table is one sentence except
+    the projection's, and in every row the accent is the last word — so a
+    one-sentence closing rendered with no accent at all.
+    """
+    for titre in ("Ce peuple n'a pas été divisé.",
+                  "Ces peuples n'ont pas été rassemblés.",
+                  "La carte ne mentait pas. Elle ne disait pas tout."):
+        bloc = _titre_de_cloture(titre)
+        mots = bloc.texte.split()
+        assert bloc.accent_depuis == len(mots) - 1, (
+            f"« {titre} » : accent à partir du mot {bloc.accent_depuis}, "
+            f"attendu sur le dernier ({len(mots) - 1})")
+
+
 def main():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     failed = 0
