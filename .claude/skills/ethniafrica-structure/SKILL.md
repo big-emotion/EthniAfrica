@@ -18,12 +18,12 @@ Le rapport de sujet écrit par `idee`.
 
 Dans `$ETHNIAFRICA_SOCIAL_PROJECTS/{Sujet}/` :
 
-| Fichier            | Ce qu'il porte                                                                |
-| ------------------ | ----------------------------------------------------------------------------- |
-| `cards.json`       | le schéma de `docs/design/gabarits-social/GABARITS-SOCIAL.md` §10, sans écart |
-| `narration.fr.txt` | le script, si le sujet vise un reel                                           |
-| `SOURCES.md`       | une entrée par image : auteur, dépôt, URL, licence lue                        |
-| `post.md`          | titre, descriptions par réseau, liens UTM, en-tête d'état                     |
+| Fichier            | Ce qu'il porte                                                                 |
+| ------------------ | ------------------------------------------------------------------------------ |
+| `cards.json`       | le schéma de `docs/design/gabarits-social/GABARITS-SOCIAL.md` §10, sans écart  |
+| `narration.fr.txt` | le script, si le sujet vise un reel                                            |
+| `SOURCES.md`       | une entrée par image : auteur, dépôt, URL, licence lue                         |
+| `post.md`          | titre, descriptions par réseau, commentaire à épingler, story, liens UTM, état |
 
 ## La règle qui prime
 
@@ -129,6 +129,32 @@ servent. Ils portent de la doctrine éditoriale datée, pas du code :
 - Registre de langue : `plain-language-doctrine-2026-09-09.md`.
 - Descriptions par réseau : `description-template-2026-09-09.md`.
 - Sourcing et personnes reconnaissables : `sourcing-et-licences-2026-09-07.md`.
+
+## Le post.md, réseau par réseau
+
+Le gabarit des descriptions fait foi. Ces règles-ci sont celles qui se perdent
+quand on ne l'ouvre pas.
+
+- **TikTok parle au « tu », en phrases courtes.** Une idée par phrase :
+  l'accroche, deux à quatre phrases de preuve, **la ligne source avec son
+  auteur, toujours**, une ligne qui demande un commentaire — jamais un tag, un
+  like ou un partage —, « lien en bio », quatre à six hashtags. Instagram,
+  Facebook et YouTube restent au « vous », LinkedIn dans son registre complet.
+- **Sous TikTok, `post.md` porte un « Commentaire à épingler ».** Une question au
+  « tu », liée au sujet, à laquelle n'importe qui sait répondre depuis sa propre
+  vie (« Quel est ton peuple ? »). Ni la copie de la dernière ligne de la
+  description, ni un lien. Un post TikTok sans elle n'est pas prêt.
+- **Sous Instagram, `post.md` porte la story : « Story — question » et « Story —
+  lien ».** La question de l'autocollant « Questions » est celle du commentaire
+  épinglé, réécrite au « vous » ; le lien est celui balisé `utm_content=story`.
+  La légende Instagram ne change pas : longue, sourcée, au « vous ».
+- **Une question posée est une dette.** Rappelle-le en une ligne à l'opérateur :
+  les réponses se lisent et se répondent dans les 48 heures, sinon la question
+  ne s'épingle pas.
+
+Règle du 2026-09-13, décidée par l'opérateur et **non mesurée** : elle remplace
+la description TikTok longue du 2026-09-12. La revue de phase 1 (3–4 octobre)
+compare les commentaires et les vues des deux formes, et garde celle qui gagne.
 
 ## Ce que tu ne fais pas
 

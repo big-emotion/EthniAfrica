@@ -76,8 +76,10 @@ working channel gets killed.
 - **Audience**: 25–40, visual-first. Saves and shares are the signals that
   matter; likes are noise.
 - **Job**: brand and aesthetic credibility. It converts slowly and compounds.
-- **Frequency**: 3 per week, same cuts as the Shorts, plus stories carrying the
-  link sticker — stories are the only place a link is one tap away.
+- **Frequency**: 3 per week, same cuts as the Shorts, plus a story on every
+  publication carrying two stickers: the link sticker — stories are the only
+  place a link is one tap away — and the « Questions » sticker, the cheapest
+  reply the platform offers, carrying the question pinned under the TikTok post.
 - **State**: 4 posts, 2 followers.
 
 ### TikTok — the youngest reach, unproven here
@@ -87,6 +89,13 @@ working channel gets killed.
 - **Job**: reach among a younger francophone audience the other channels do not
   touch.
 - **Frequency**: daily is ideal, 3 per week is the floor.
+- **Caption**: « tu », short sentences, the source line kept, one line asking
+  for a comment rather than a tag, and a pinned comment carrying a question
+  anyone can answer from their own life. Operator decision of 2026-09-13,
+  **unmeasured**: it replaces the long description of 2026-09-12, which rested
+  on TikTok's own claim of three times the views. The comment is the signal
+  missing everywhere — one in a month across four networks (message audit,
+  2026-09-13) — and the phase 1 review of 3–4 October keeps whichever form wins.
 - **State**: 0 followers, 0 likes measured 2026-09-07. **Verify the videos are
   actually live before planning anything here** — the publication record says
   they were posted manually, and the profile does not reflect it.
