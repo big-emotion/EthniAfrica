@@ -163,8 +163,26 @@ function fieldPathFor(entry: DerivedAppellation): string {
 }
 
 /**
+ * Compared as sets: the `sources` upsert returns ids in whatever order the
+ * database answers, and an order change alone is not a change of citation.
+ */
+function citesExactly(cited: unknown, sourceIds: string[]): boolean {
+  const current = Array.isArray(cited) ? [...(cited as string[])].sort() : [];
+  const wanted = [...sourceIds].sort();
+  return (
+    current.length === wanted.length &&
+    current.every((id, index) => id === wanted[index])
+  );
+}
+
+/**
  * Returns one assertion id per entry, reusing the assertions already written
  * for this fiche and inserting only what is missing.
+ *
+ * A reused assertion is pointed at the fiche's current sources. The
+ * name_records trigger (migration 067) reads `assertions.source_ids`, so an
+ * assertion left citing the sources of the load that created it would keep a
+ * name refused after a curator added the source that qualifies it.
  */
 async function resolveAssertionIds(
   supabase: AdminClient,
@@ -177,13 +195,28 @@ async function resolveAssertionIds(
 
   const { data: existing, error: selectError } = await supabase
     .from("assertions")
-    .select("id, field_path")
+    .select("id, field_path, source_ids")
     .eq("entity_type", "people")
     .eq("entity_id", peopleId)
     .in("field_path", fieldPaths);
 
   if (selectError) {
     return { error: errorMessage(selectError) };
+  }
+
+  const staleAssertionIds = (existing ?? [])
+    .filter((row) => !citesExactly(row.source_ids, sourceIds))
+    .map((row) => row.id as string);
+
+  if (staleAssertionIds.length > 0) {
+    const { error: updateError } = await supabase
+      .from("assertions")
+      .update({ source_ids: sourceIds })
+      .in("id", staleAssertionIds);
+
+    if (updateError) {
+      return { error: errorMessage(updateError) };
+    }
   }
 
   const byFieldPath = new Map<string, string>(

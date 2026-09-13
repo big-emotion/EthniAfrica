@@ -159,3 +159,90 @@ describe("loadPeopleAppellations", () => {
     ]);
   });
 });
+
+/**
+ * A client for a fiche an earlier load already wrote: its assertions exist, and
+ * they cite `citedSourceIds`. The fiche's single source upserts to
+ * `source-current`. Every `update(...).in("id", ...)` is recorded.
+ */
+function clientWithWrittenAssertions(citedSourceIds: string[]) {
+  const updates: Array<{ table: string; values: unknown; ids: unknown }> = [];
+
+  const from = (table: string) => {
+    let fieldPaths: string[] = [];
+    let pendingUpdate: unknown = null;
+
+    const chain = {
+      upsert: () => ({
+        select: async () => ({ data: [{ id: "source-current" }], error: null }),
+        then: (resolve: (value: unknown) => unknown) =>
+          Promise.resolve({ data: [], error: null }).then(resolve),
+      }),
+      update: (values: unknown) => {
+        pendingUpdate = values;
+        return chain;
+      },
+      select: () => chain,
+      eq: () => chain,
+      order: () => chain,
+      limit: () => chain,
+      in: (column: string, values: string[]) => {
+        if (pendingUpdate !== null) {
+          updates.push({ table, values: pendingUpdate, ids: values });
+        } else if (column === "field_path") {
+          fieldPaths = values;
+        }
+        return chain;
+      },
+      maybeSingle: async () => ({ data: { id: "revision-1" }, error: null }),
+      then: (resolve: (value: unknown) => unknown) =>
+        Promise.resolve({
+          data: fieldPaths.map((fieldPath, index) => ({
+            id: `assertion-${index}`,
+            field_path: fieldPath,
+            source_ids: citedSourceIds,
+          })),
+          error: null,
+        }).then(resolve),
+    };
+    return chain;
+  };
+
+  return { client: { from } as never, updates };
+}
+
+describe("loadPeopleAppellations on a fiche already loaded", () => {
+  // The name_records trigger (migration 067) reads assertions.source_ids. An
+  // assertion reused as it was keeps citing the sources of the load that created
+  // it, so a source a curator adds to the fiche never reaches it and the trigger
+  // goes on refusing the names.
+  // @req REQ-057
+  it("points existing assertions at the fiche's current sources", async () => {
+    const { client, updates } = clientWithWrittenAssertions(["source-retired"]);
+
+    await loadPeopleAppellations(client, [
+      ficheWith("PPL_REFRESHED", ["Current atlas"]),
+    ]);
+
+    expect(updates).toEqual([
+      {
+        table: "assertions",
+        values: { source_ids: ["source-current"] },
+        ids: ["assertion-0", "assertion-1"],
+      },
+    ]);
+  });
+
+  // Every load walks every fiche; rewriting assertions that already cite the
+  // right sources would add hundreds of writes that change nothing.
+  // @req REQ-057
+  it("leaves assertions alone when they already cite the fiche's sources", async () => {
+    const { client, updates } = clientWithWrittenAssertions(["source-current"]);
+
+    await loadPeopleAppellations(client, [
+      ficheWith("PPL_UNCHANGED", ["Current atlas"]),
+    ]);
+
+    expect(updates).toEqual([]);
+  });
+});
