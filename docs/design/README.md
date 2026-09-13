@@ -12,6 +12,7 @@ there.
 | **The type**            | [`typography-charter.md`](typography-charter.md) — nine roles, the fluid scale, the card's three levels                   |
 | **The clicks**          | [`actions-charter.md`](actions-charter.md) — four shapes, and what a radius means                                         |
 | **The games**           | [`games-charter.md`](games-charter.md) — the item doctrine and what the Jouer hub owes                                    |
+| **Generated imagery**   | [`imagery-collections.md`](imagery-collections.md) — the three launch collections, their locked styles and key frames     |
 | **The engine decision** | [`../adr/0007-atlas-globe-engine.md`](../adr/0007-atlas-globe-engine.md) — three.js r169, one component for every surface |
 | **The rendering**       | `mockups/` — four runnable pages, below                                                                                   |
 
