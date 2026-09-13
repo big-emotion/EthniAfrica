@@ -40,6 +40,8 @@ import {
 } from "@/lib/discoveries/sharing";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
+import { GeneratedImageBadge } from "@/components/discoveries/GeneratedImageBadge";
+import { GeneratedImageDetail } from "@/components/discoveries/GeneratedImageDetail";
 import {
   FacebookGlyph,
   InstagramGlyph,
@@ -367,7 +369,13 @@ export function DiscoveryReader({
               <div className={styles.shade} aria-hidden="true" />
               <div className={styles.copy}>
                 <p className={styles.kind}>
-                  {entry.kind === "proverb" ? words.proverb : words.fact}
+                  {entry.kind === "image" ? (
+                    <GeneratedImageBadge entry={entry} language={language} />
+                  ) : entry.kind === "proverb" ? (
+                    words.proverb
+                  ) : (
+                    words.fact
+                  )}
                 </p>
                 {entry.original ? (
                   <p className={styles.original} lang={entry.original.lang}>
@@ -379,6 +387,9 @@ export function DiscoveryReader({
                 ) : (
                   <h2>{entry.title[language]}</h2>
                 )}
+                {entry.caption ? (
+                  <p className={styles.caption}>{entry.caption[language]}</p>
+                ) : null}
                 <p className={styles.source}>
                   {entry.source?.tier === "official"
                     ? words.official
@@ -386,7 +397,10 @@ export function DiscoveryReader({
                   {" · "}
                   {entry.source?.shortTitle ?? entry.source?.title}
                 </p>
-                {!entry.image ? null : failedImageIds.has(entry.id) ? (
+                {/* A generated image is not a photo and has no original file
+                    to credit; its provenance lives in the detail sheet. */}
+                {!entry.image ||
+                entry.kind === "image" ? null : failedImageIds.has(entry.id) ? (
                   <p className={styles.credit} role="status">
                     {words.imageUnavailable}
                   </p>
@@ -479,7 +493,13 @@ export function DiscoveryReader({
                   ))}
                 </ul>
               </section>
-              {active.image ? (
+              {active.kind === "image" ? (
+                <GeneratedImageDetail
+                  entry={active}
+                  language={language}
+                  className={styles.detailSection}
+                />
+              ) : active.image ? (
                 <section className={styles.detailSection}>
                   <p>{active.image.credit}</p>
                   <a
