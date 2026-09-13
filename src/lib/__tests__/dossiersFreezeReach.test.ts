@@ -19,7 +19,13 @@ import { LIVE_ROUTES } from "../../../scripts/a11yRoutes";
  * surface: the freeze is a single decision, and it either reaches all of them
  * or it has a hole.
  */
-const WITHDRAWN_PAGES = ["nommer", "migrations", "colonization"] as const;
+const WITHDRAWN_PAGES = [
+  "nommer",
+  "migrations",
+  "colonization",
+  // Withheld until its first image publication is entered (REQ-167).
+  "gallery",
+] as const;
 
 describe("no surface advertises a withdrawn dossier", () => {
   for (const language of LOCALES) {

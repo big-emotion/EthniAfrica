@@ -68,11 +68,11 @@ describe("moduleGroups — the shelf a module sits on (REQ-120)", () => {
    * landing in the wrong rubric is the failure a count cannot see.
    */
   /**
-   * The five surfaces of the dossiers axis, filed by domain.
+   * The six surfaces of the dossiers axis, filed by domain.
    *
-   * Five, not twelve: the seven Réalités dossiers left the registry for the
-   * corpus, so what remains here is a pillar, two banks, a map and a static
-   * page.
+   * Six, not thirteen: the seven Réalités dossiers left the registry for the
+   * corpus, so what remains here is a pillar, two banks, a gallery over the
+   * Découvertes catalogue, a map and a static page.
    * The corpus half of the same filing is pinned in `dossiers/__tests__/menu`.
    */
   // @req REQ-120
@@ -82,7 +82,7 @@ describe("moduleGroups — the shelf a module sits on (REQ-120)", () => {
     expect(
       shelves.map((shelf) => [shelf.id, shelf.modules.map((m) => m.id)])
     ).toEqual([
-      ["dossiers-noms", ["nommer", "anecdotes", "proverbes"]],
+      ["dossiers-noms", ["nommer", "anecdotes", "proverbes", "galerie"]],
       ["dossiers-organisation", ["regards-colonisation"]],
       ["dossiers-populations", ["frise"]],
     ]);

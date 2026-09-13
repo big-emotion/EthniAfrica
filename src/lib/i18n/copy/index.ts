@@ -16,6 +16,7 @@ import { fieldProvenanceCopy } from "@/lib/i18n/copy/fieldProvenance";
 import { familyCopy } from "@/lib/i18n/copy/family";
 import { ficheCopy } from "@/lib/i18n/copy/fiche";
 import { footerCopy } from "@/lib/i18n/copy/footer";
+import { galleryCopy } from "@/lib/i18n/copy/gallery";
 import { gamesCopy } from "@/lib/i18n/copy/games";
 import { hubsCopy } from "@/lib/i18n/copy/hubs";
 import { languagesCopy } from "@/lib/i18n/copy/languages";
@@ -50,6 +51,7 @@ export const COPY_MODULES = {
   server: serverCopy,
   anecdotes: anecdotesCopy,
   proverbs: proverbsCopy,
+  gallery: galleryCopy,
   atlas: atlasCopy,
   common: commonCopy,
   chrome: chromeCopy,
