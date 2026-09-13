@@ -89,3 +89,27 @@ describe("The anecdotes page's payload (REQ-113)", () => {
     );
   });
 });
+
+describe("The anecdotes page's ground (REQ-113)", () => {
+  /**
+   * The home band's cultural motif moved here with the bank when the band
+   * was retired (2026-09-13): one of the three traditions, drawn per request,
+   * as decoration outside the accessible tree.
+   */
+  // @req REQ-113
+  it("lays one of the curated cultural motifs behind the reader", async () => {
+    await renderPage();
+
+    const page = document.querySelector('[data-testid="anecdotes-page"]');
+    const motif = page?.querySelector(".anecdote-motif");
+    expect(motif).not.toBeNull();
+    expect(motif).toHaveAttribute("aria-hidden", "true");
+    expect(["mande-kora", "amazigh-fibula", "punu-mukudj"]).toContain(
+      page?.getAttribute("data-motif")
+    );
+    expect(motif).toHaveAttribute(
+      "data-motif",
+      page?.getAttribute("data-motif")
+    );
+  });
+});

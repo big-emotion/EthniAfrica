@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { AnecdoteReader } from "@/components/anecdotes";
+import { DidYouKnowMotif } from "@/components/home/DidYouKnowMotif";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { shuffleAnecdoteOrder } from "@/lib/home/anecdoteDeck";
 import {
@@ -12,6 +13,7 @@ import {
   localizeDidYouKnowFact,
   localizeDidYouKnowIllustration,
 } from "@/lib/home/didYouKnowLocalization";
+import { drawDidYouKnowMotif } from "@/lib/home/didYouKnowMotifs";
 import { drawAnecdoteImageSide } from "@/lib/home/didYouKnowPresentation";
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
 import { getLocalizedRoute } from "@/lib/routing";
@@ -49,17 +51,21 @@ export async function generateMetadata({
 /**
  * The « Saviez-vous que » bank, read one card at a time.
  *
- * The home's band shows one fact and lets a reader turn through the deck;
- * that is a hook, and a hook has no URL. This page is what the hook points
- * at — and, since it stopped being a paginated feed, it reads the way the
- * band does rather than the way an archive does: a picture, a fact, and four
- * things to do with it.
+ * The home's hero draws one fact; that is a hook, and a hook has no URL. This
+ * page is what the hook points at — and, since it stopped being a paginated
+ * feed, it reads the way a single card does rather than the way an archive
+ * does: a picture, a fact, and four things to do with it.
  *
  * The draw runs here rather than in the reader. The app renders dynamically,
  * so a shuffle at request time gives every visit a different opening card
  * with no second render and no hydration mismatch — the same reasoning the
- * band's own draw rests on. `?a=<id>` overrides the opening card, which is
+ * home's own draw rests on. `?a=<id>` overrides the opening card, which is
  * what makes a shared link land on the anecdote it promised.
+ *
+ * The cultural motif behind the card is the one the home band used to carry
+ * (operator ruling, 2026-09-13): the band is retired, and the page the bank
+ * lives on inherits its ground, drawn per request from the same three
+ * traditions.
  *
  * The facts are a module in the repo, not rows in a table, so nothing here
  * awaits a query — the page renders from a constant and cannot show the
@@ -87,6 +93,7 @@ export default async function AnecdotesPage({
   // Drawn here for the same reason the order is: a coin tossed in the client
   // would flip the band a frame after paint. The reader alternates from it.
   const openingImageSide = drawAnecdoteImageSide();
+  const motif = drawDidYouKnowMotif();
   const copy = anecdotesCopy[language];
   const localizedOpening = opening
     ? localizeDidYouKnowFact(opening, language)
@@ -98,46 +105,64 @@ export default async function AnecdotesPage({
       title={copy.pageTitle}
       subtitle={copy.pageSubtitle}
     >
-      <div className="anecdotes-page">
-        {/* Not a count, and not reading instructions either. « 67 anecdotes »
-            turns the page into an inventory to get through; « une à la fois,
-            tirée au hasard » describes the mechanism, which the reader works
-            out from the button. The line states the claim every entry in the
-            bank makes, and the only one true of all of them — an exonym, an
-            endonym and a self-chosen name alike all had someone behind them. */}
-        <p className="anecdotes-count">{copy.pageKicker}</p>
+      <div
+        className="anecdotes-page"
+        data-testid="anecdotes-page"
+        data-motif={motif}
+      >
+        <DidYouKnowMotif motif={motif} />
 
-        {localizedOpening && opening ? (
-          <AnecdoteReader
-            language={language}
-            deck={deck}
-            openingCard={{
-              fact: localizedOpening,
-              illustration: localizeDidYouKnowIllustration(
-                opening.id,
-                illustrationFor(opening.id),
-                language
-              ),
-            }}
-            openingImageSide={openingImageSide}
-          />
-        ) : (
-          <p className="anecdote-empty">{copy.empty}</p>
-        )}
+        <div className="anecdotes-page-inner">
+          {/* Not a count, and not reading instructions either. « 67 anecdotes »
+              turns the page into an inventory to get through; « une à la fois,
+              tirée au hasard » describes the mechanism, which the reader works
+              out from the arrows. The line states the claim every entry in the
+              bank makes, and the only one true of all of them — an exonym, an
+              endonym and a self-chosen name alike all had someone behind them. */}
+          <p className="anecdotes-count">{copy.pageKicker}</p>
+
+          {localizedOpening && opening ? (
+            <AnecdoteReader
+              language={language}
+              deck={deck}
+              openingCard={{
+                fact: localizedOpening,
+                illustration: localizeDidYouKnowIllustration(
+                  opening.id,
+                  illustrationFor(opening.id),
+                  language
+                ),
+              }}
+              openingImageSide={openingImageSide}
+            />
+          ) : (
+            <p className="anecdote-empty">{copy.empty}</p>
+          )}
+        </div>
       </div>
 
       <style>{`
+        /* Full bleed, so the motif covers the width of the screen rather
+           than a column of it; the motif itself is laid absolutely inside. */
         .anecdotes-page {
+          position: relative;
+          overflow: hidden;
+          width: 100vw;
+          margin-left: calc(50% - 50vw);
+          margin-right: calc(50% - 50vw);
+          padding: var(--afh-space-2xl) 16px var(--afh-space-5xl);
+        }
+        .anecdotes-page-inner {
+          position: relative;
           max-width: 68ch;
           margin: 0 auto;
         }
         /* The box has to open with the card: a measure meant for one column
            of prose would hold the two-column band at half the width it asks
-           for, and the reader would get the shorter card without the wider
-           picture that pays for it. */
+           for. It also carries the arrows' gutter either side of the band. */
         @media (min-width: 768px) {
-          .anecdotes-page {
-            max-width: 1040px;
+          .anecdotes-page-inner {
+            max-width: calc(1040px + 2 * 64px);
           }
         }
         .anecdotes-count {

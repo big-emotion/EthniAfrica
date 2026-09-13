@@ -403,16 +403,17 @@ describe("people fiche accent text on the warm parchment", () => {
  * scales contrast down by roughly the same factor: the home's "Saviez-vous"
  * entity chip set --accent-ink at 0.72, which turns the ocre ink (#835514,
  * 6.41:1 on a card) into #a68556 — 3.45:1, and axe-core reported it on the
- * live /fr route.
+ * live /fr route. The band is retired; the chip moved into the hero's drawn
+ * anecdote and the guard moved with it.
  *
  * The tier line directly beneath it in the same component already records the
  * rule this encodes: a label a reader is meant to read is content, and content
  * takes an ink that clears AA. Size, weight, letter-spacing and case are what
  * carry the hierarchy.
  */
-describe("home did-you-know chip softens with ink, not opacity", () => {
+describe("home hero anecdote chip softens with ink, not opacity", () => {
   const didYouKnow = readFileSync(
-    resolve(process.cwd(), "src/components/home/DidYouKnow.tsx"),
+    resolve(process.cwd(), "src/components/home/HomeHeroAnecdote.tsx"),
     "utf8"
   );
 
@@ -427,7 +428,9 @@ describe("home did-you-know chip softens with ink, not opacity", () => {
 
   // @req REQ-090
   it("does not fade the entity-kind label below its ink", () => {
-    expect(ruleBody(".home-dyk-chip-kind")).not.toMatch(/opacity:\s*0?\.\d+/);
+    expect(ruleBody(".home-hero-anecdote-chip-kind")).not.toMatch(
+      /opacity:\s*0?\.\d+/
+    );
   });
 });
 

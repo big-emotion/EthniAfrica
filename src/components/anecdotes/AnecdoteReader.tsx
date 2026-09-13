@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import {
   useCallback,
   useEffect,
@@ -57,8 +58,14 @@ export interface AnecdoteReaderProps {
  * - **The card is addressable.** `?a=<id>` names the fact on show and the
  *   history entry is rewritten as the reader turns, so the share button, a
  *   reload and a bookmark all mean the anecdote rather than the page.
- * - **The deck is exhausted before it repeats.** A reader pressing
- *   « Suivant » reaches the twenty-fourth fact on the twenty-fourth press.
+ * - **The deck is exhausted before it repeats.** A reader turning forward
+ *   reaches the twenty-fourth fact on the twenty-fourth press.
+ *
+ * Turning is two arrows on the card rather than a « Suivant » button under it
+ * (operator ruling, 2026-09-13): the reader turns where the picture is, and
+ * the row under the card is left to what they do with the anecdote. The back
+ * arrow walks the cards already seen, and is disabled on the first one rather
+ * than inventing somewhere to go.
  *
  * The two feedback controls do different jobs and are honest about it. The
  * mark is the reader's own, kept in their browser: it builds a private trail
@@ -134,6 +141,9 @@ export function AnecdoteReader({
   const copy = anecdotesCopy[language];
   const [order, setOrder] = useState<string[]>(deck);
   const [position, setPosition] = useState(0);
+  // Which way the reader last turned, so the live region names the direction
+  // it actually went rather than always announcing « suivante ».
+  const [lastTurn, setLastTurn] = useState<"next" | "previous">("next");
   // Seeded with the one card the server rendered. The rest join it the first
   // time the reader turns, in a single deferred chunk.
   const [cards, setCards] = useState<Map<string, AnecdoteCardData>>(
@@ -184,8 +194,17 @@ export function AnecdoteReader({
     }
 
     if (!walked) setOrder(nextOrder);
+    setLastTurn("next");
     setPosition(nextPosition);
   }, [cards, fact, language, loadCards, order, position]);
+
+  // Every card behind the reader has been shown, so its prose is already
+  // loaded: going back never waits on the network.
+  const goPrevious = useCallback(() => {
+    if (position === 0) return;
+    setLastTurn("previous");
+    setPosition(position - 1);
+  }, [position]);
 
   const toggleMark = useCallback(() => {
     if (!fact) return;
@@ -251,13 +270,146 @@ export function AnecdoteReader({
         ? "end"
         : "start";
 
+  const turns = (
+    <div className="anecdote-turns">
+      <button
+        type="button"
+        className="anecdote-turn"
+        aria-label={copy.previous}
+        onClick={goPrevious}
+        disabled={position === 0}
+      >
+        <ArrowLeft aria-hidden="true" />
+      </button>
+      <button
+        type="button"
+        className="anecdote-turn anecdote-turn--next"
+        aria-label={copy.next}
+        onClick={goNext}
+      >
+        <ArrowRight aria-hidden="true" />
+      </button>
+    </div>
+  );
+
+  const actions = (
+    <div className="anecdote-actions">
+      <div className="anecdote-reactions">
+        <button
+          type="button"
+          className="anecdote-action"
+          aria-pressed={isMarked}
+          onClick={toggleMark}
+        >
+          {isMarked ? copy.marked : copy.mark}
+        </button>
+
+        <button
+          type="button"
+          className="anecdote-action"
+          aria-expanded={isSharing}
+          onClick={share}
+        >
+          {copy.share}
+        </button>
+
+        {/* The objection is taken here, not somewhere else. It used to be a
+            link to the report-error page, whose form is a Typeform embed the
+            site's own CSP blocks — so the reader left the anecdote behind
+            and arrived at a page promising a form that could never mount.
+
+            The dialog also knows which anecdote is being contested, which
+            the page never did: it read the id out of a query string and
+            handed it to a third party that had never heard of it. */}
+        <FlagTarget
+          language={language}
+          target={{
+            type: "assertion",
+            id: fact.id,
+            name: fact.headline,
+          }}
+          renderTrigger={(open) => (
+            <button type="button" className="anecdote-action" onClick={open}>
+              {copy.dispute}
+            </button>
+          )}
+        />
+      </div>
+
+      {isSharing ? (
+        <ul className="anecdote-share">
+          <li>
+            <button
+              type="button"
+              className="anecdote-share-link"
+              onClick={copyLink}
+            >
+              {isCopied ? copy.linkCopied : copy.copyLink}
+            </button>
+          </li>
+          <li>
+            <a
+              className="anecdote-share-link"
+              href={`https://x.com/intent/post?text=${encodedText}&url=${encodedUrl}`}
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              X
+            </a>
+          </li>
+          <li>
+            <a
+              className="anecdote-share-link"
+              href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a
+              className="anecdote-share-link"
+              href={`https://wa.me/?text=${encodedText}%20${encodedUrl}`}
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              WhatsApp
+            </a>
+          </li>
+          <li>
+            <a
+              className="anecdote-share-link"
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`}
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      ) : null}
+
+      {/* No « 3 / 67 ». A tally under a card the reader did not choose is a
+          length to get through, and it turns an invitation into a chore —
+          the reader starts counting what is left instead of reading what is
+          there. What survives is the reader's own trail, which they built
+          and which says nothing about how much remains. */}
+      {marked.length > 0 ? (
+        <p className="anecdote-progress">{copy.savedCount(marked.length)}</p>
+      ) : null}
+    </div>
+  );
+
   return (
     <div className={`anecdote-reader ${accent}`}>
       {/* Turning a card swaps the content under a button that has not moved:
           without this the only thing announced is that focus is still where
           the reader left it. */}
       <p className="sr-only" aria-live="polite">
-        {copy.nextAnnouncement(fact.headline)}
+        {lastTurn === "previous"
+          ? copy.previousAnnouncement(fact.headline)
+          : copy.nextAnnouncement(fact.headline)}
       </p>
 
       <AnecdoteCard
@@ -265,118 +417,9 @@ export function AnecdoteReader({
         fact={fact}
         illustration={card?.illustration}
         imageSide={imageSide}
+        turns={turns}
+        actions={actions}
       />
-
-      <div className="anecdote-controls">
-        <button type="button" className="anecdote-next" onClick={goNext}>
-          {copy.next}
-        </button>
-
-        <div className="anecdote-reactions">
-          <button
-            type="button"
-            className="anecdote-action"
-            aria-pressed={isMarked}
-            onClick={toggleMark}
-          >
-            {isMarked ? copy.marked : copy.mark}
-          </button>
-
-          <button
-            type="button"
-            className="anecdote-action"
-            aria-expanded={isSharing}
-            onClick={share}
-          >
-            {copy.share}
-          </button>
-
-          {/* The objection is taken here, not somewhere else. It used to be a
-              link to the report-error page, whose form is a Typeform embed the
-              site's own CSP blocks — so the reader left the anecdote behind
-              and arrived at a page promising a form that could never mount.
-
-              The dialog also knows which anecdote is being contested, which
-              the page never did: it read the id out of a query string and
-              handed it to a third party that had never heard of it. */}
-          <FlagTarget
-            language={language}
-            target={{
-              type: "assertion",
-              id: fact.id,
-              name: fact.headline,
-            }}
-            renderTrigger={(open) => (
-              <button type="button" className="anecdote-action" onClick={open}>
-                {copy.dispute}
-              </button>
-            )}
-          />
-        </div>
-
-        {isSharing ? (
-          <ul className="anecdote-share">
-            <li>
-              <button
-                type="button"
-                className="anecdote-share-link"
-                onClick={copyLink}
-              >
-                {isCopied ? copy.linkCopied : copy.copyLink}
-              </button>
-            </li>
-            <li>
-              <a
-                className="anecdote-share-link"
-                href={`https://x.com/intent/post?text=${encodedText}&url=${encodedUrl}`}
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                X
-              </a>
-            </li>
-            <li>
-              <a
-                className="anecdote-share-link"
-                href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a
-                className="anecdote-share-link"
-                href={`https://wa.me/?text=${encodedText}%20${encodedUrl}`}
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                WhatsApp
-              </a>
-            </li>
-            <li>
-              <a
-                className="anecdote-share-link"
-                href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`}
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                LinkedIn
-              </a>
-            </li>
-          </ul>
-        ) : null}
-
-        {/* No « 3 / 67 ». A tally under a card the reader did not choose is a
-            length to get through, and it turns an invitation into a chore —
-            the reader starts counting what is left instead of reading what is
-            there. What survives is the reader's own trail, which they built
-            and which says nothing about how much remains. */}
-        {marked.length > 0 ? (
-          <p className="anecdote-progress">{copy.savedCount(marked.length)}</p>
-        ) : null}
-      </div>
 
       <style>{`
         .anecdote-reader {
@@ -384,42 +427,92 @@ export function AnecdoteReader({
           margin: 0 auto;
         }
         /* The measure that suits one column is half a column once the card
-           splits in two, so the box widens with the band — and only with it. */
+           splits in two, so the box widens with the band — and only with it.
+           The side padding is the arrows' gutter: they sit outside the band,
+           and without a gutter of their own they would leave the viewport at
+           768px. */
         @media (min-width: 768px) {
           .anecdote-reader {
-            max-width: 1040px;
+            max-width: calc(1040px + 2 * 64px);
+            padding-inline: 64px;
           }
         }
         .anecdote-empty {
           color: var(--afh-text-soft);
         }
-        .anecdote-controls {
-          margin-top: 26px;
-          padding-top: 22px;
-          border-top: 1px solid var(--afh-border);
+
+        /* On a phone the arrows ride the picture's edges: the layer is the
+           frame's own 3/2 box, laid over the top of the band, so the arrows
+           centre on the picture rather than on a column of text they would
+           then cover. Only the buttons take the pointer. */
+        .anecdote-turns {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          aspect-ratio: 3 / 2;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-inline: 8px;
+          pointer-events: none;
+        }
+        @media (min-width: 768px) {
+          .anecdote-turns {
+            top: 50%;
+            left: -64px;
+            right: -64px;
+            aspect-ratio: auto;
+            padding-inline: 0;
+            transform: translateY(-50%);
+          }
+        }
+        .anecdote-turn {
+          pointer-events: auto;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 44px;
+          height: 44px;
+          border: 1px solid var(--afh-border);
+          border-radius: var(--afh-radius-full);
+          background: var(--afh-color-card);
+          color: var(--afh-text);
+          box-shadow: var(--afh-elev-warm);
+          cursor: pointer;
+        }
+        .anecdote-turn svg {
+          width: 20px;
+          height: 20px;
+        }
+        .anecdote-turn:hover:not(:disabled),
+        .anecdote-turn:focus-visible {
+          border-color: var(--afh-text-soft);
+        }
+        .anecdote-turn:disabled {
+          cursor: default;
+          opacity: 0.45;
+        }
+        /* Forward is the primary action, so it keeps the colour « Suivant »
+           had: terracotta on white is the pair the site's own Button ships,
+           it clears AA in both themes, and it does not depend on the
+           module's accent (brand charter §5.4). */
+        .anecdote-turn--next {
+          border-color: var(--afh-terracotta);
+          background: var(--afh-terracotta);
+          color: #fff;
+        }
+        .anecdote-turn--next:hover,
+        .anecdote-turn--next:focus-visible {
+          filter: brightness(0.94);
+        }
+
+        .anecdote-actions {
+          margin-top: 22px;
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 14px;
-        }
-        /* Terracotta rather than the surface accent: it is the pair the
-           site's own Button already ships for a primary action
-           (bg-afh-terracotta / white), it clears AA in both themes, and it
-           does not depend on which accent the module happens to sit on. */
-        .anecdote-next {
-          min-height: 48px;
-          padding: 0 34px;
-          border: 1px solid var(--afh-terracotta);
-          border-radius: var(--afh-radius-full);
-          background: var(--afh-terracotta);
-          color: #fff;
-          font-size: var(--afh-text-body);
-          font-weight: 600;
-          cursor: pointer;
-        }
-        .anecdote-next:hover,
-        .anecdote-next:focus-visible {
-          filter: brightness(0.94);
+          gap: 12px;
         }
         .anecdote-reactions {
           display: flex;

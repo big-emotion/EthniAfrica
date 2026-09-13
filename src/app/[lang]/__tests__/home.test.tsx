@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 import { CANONICAL_DOMAIN, OG_DESCRIPTION, OG_TITLE } from "@/lib/brand";
@@ -14,7 +14,7 @@ const {
   loadHeroPreviewMock,
   loadSynthesisRailMock,
   drawHomeHeroVisualMock,
-  drawDidYouKnowMotifMock,
+  drawHomeHeroVisualSideMock,
 } = vi.hoisted(() => ({
   getCorpusCountsMock: vi.fn(),
   getContinentPeopleCountsMock: vi.fn(),
@@ -22,7 +22,7 @@ const {
   loadHeroPreviewMock: vi.fn(),
   loadSynthesisRailMock: vi.fn(),
   drawHomeHeroVisualMock: vi.fn(),
-  drawDidYouKnowMotifMock: vi.fn(),
+  drawHomeHeroVisualSideMock: vi.fn(),
 }));
 
 const fixtureCounts = {
@@ -73,15 +73,7 @@ vi.mock("@/lib/home/homeHeroVisuals", async (importOriginal) => {
   return {
     ...actual,
     drawHomeHeroVisual: drawHomeHeroVisualMock,
-  };
-});
-
-vi.mock("@/lib/home/didYouKnowMotifs", async (importOriginal) => {
-  const actual =
-    await importOriginal<typeof import("@/lib/home/didYouKnowMotifs")>();
-  return {
-    ...actual,
-    drawDidYouKnowMotif: drawDidYouKnowMotifMock,
+    drawHomeHeroVisualSide: drawHomeHeroVisualSideMock,
   };
 });
 
@@ -119,15 +111,16 @@ const renderHome = async () =>
 const renderEnglishHome = async () =>
   render(await Home({ params: routeParams("en") }));
 
-describe("home page — search, corpus scale and two facts (ETNI-1404)", () => {
+describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", () => {
   beforeEach(() => {
+    vi.restoreAllMocks();
     vi.clearAllMocks();
     getCorpusCountsMock.mockResolvedValue(fixtureCounts);
     getContinentPeopleCountsMock.mockResolvedValue({});
     getHubModulesMock.mockResolvedValue([]);
     loadSynthesisRailMock.mockResolvedValue([]);
     drawHomeHeroVisualMock.mockReturnValue({ kind: "globe" });
-    drawDidYouKnowMotifMock.mockReturnValue("mande-kora");
+    drawHomeHeroVisualSideMock.mockReturnValue("end");
   });
 
   // @req REQ-044
@@ -139,7 +132,7 @@ describe("home page — search, corpus scale and two facts (ETNI-1404)", () => {
   });
 
   // @req REQ-113
-  it("states the three documented totals and shows exactly two sourced facts", async () => {
+  it("states the three documented totals", async () => {
     await renderHome();
 
     // Built from the registry, not spelled out: the labels were written into
@@ -152,41 +145,66 @@ describe("home page — search, corpus scale and two facts (ETNI-1404)", () => {
         "i"
       )
     );
-    expect(screen.getAllByTestId("home-did-you-know")).toHaveLength(1);
-    expect(
-      screen
-        .getByTestId("home-did-you-know")
-        .querySelectorAll('[data-testid="home-dyk-official-source"]')
-    ).toHaveLength(2);
-    expect(screen.getAllByTestId("home-dyk-fact")).toHaveLength(2);
+  });
+
+  /**
+   * Retired on 2026-09-13 (operator ruling): the band gave the home a second
+   * section of two random facts. One fact now takes its turn in the hero's
+   * visual slot instead, beside the question.
+   */
+  // @req REQ-113
+  it("no longer renders the « Saviez-vous » band after the hero", async () => {
+    await renderHome();
+
+    expect(screen.queryByTestId("home-did-you-know")).not.toBeInTheDocument();
+    expect(screen.queryByTestId("home-dyk-fact")).not.toBeInTheDocument();
+  });
+
+  // @req REQ-115
+  it("renders a drawn anecdote whole in the hero, from an officially sourced fact", async () => {
+    drawHomeHeroVisualMock.mockReturnValue({ kind: "anecdote" });
+
+    await renderHome();
+
+    const slot = screen.getByTestId("home-hero-anecdote");
+    const headline = within(slot).getByRole("heading", {
+      level: 2,
+    }).textContent;
+    const fact = DID_YOU_KNOW_FACTS.find(
+      (entry) => entry.headline === headline
+    );
+    expect(fact).toBeDefined();
+    expect(fact!.sources?.some((source) => source.tier === "official")).toBe(
+      true
+    );
+    expect(screen.queryByTestId("home-globe-stage")).not.toBeInTheDocument();
+    expect(getContinentPeopleCountsMock).not.toHaveBeenCalled();
   });
 
   // @req REQ-145
-  it("reads the drawn facts from the English sidecar on the English home", async () => {
-    vi.spyOn(Math, "random").mockReturnValue(0);
+  it("reads the drawn anecdote from the English sidecar on the English home", async () => {
+    drawHomeHeroVisualMock.mockReturnValue({ kind: "anecdote" });
 
     await renderEnglishHome();
 
-    const cards = screen.getAllByTestId("home-dyk-fact");
-    expect(cards).toHaveLength(2);
-    for (const card of cards) {
-      const heading = card.querySelector("h2")?.textContent;
-      expect(heading).toBeTruthy();
-      expect(
-        Object.values(DID_YOU_KNOW_FACTS_EN).some(
-          (translation) => translation.headline === heading
-        )
-      ).toBe(true);
-      expect(DID_YOU_KNOW_FACTS.some((fact) => fact.headline === heading)).toBe(
-        false
-      );
-    }
+    const heading = within(screen.getByTestId("home-hero-anecdote")).getByRole(
+      "heading",
+      { level: 2 }
+    ).textContent;
+    expect(
+      Object.values(DID_YOU_KNOW_FACTS_EN).some(
+        (translation) => translation.headline === heading
+      )
+    ).toBe(true);
+    expect(DID_YOU_KNOW_FACTS.some((fact) => fact.headline === heading)).toBe(
+      false
+    );
     expect(screen.getByText("Did you know")).toBeInTheDocument();
   });
 
-  // The illustrated section is full bleed and is the final child of main, so
-  // it owns the seam with the footer rather than leaving main's padding as a
-  // strip of unrelated ground.
+  // The hero is full bleed and is the final child of main, so it owns the
+  // seam with the footer rather than leaving main's padding as a strip of
+  // unrelated ground.
   // @req REQ-044
   it("lets the final section meet the footer without a bottom gap", async () => {
     await renderHome();
@@ -283,7 +301,26 @@ describe("home page — search, corpus scale and two facts (ETNI-1404)", () => {
   });
 
   // @req REQ-115
-  it("allows browser checks to request the globe without changing random visitors", async () => {
+  it("draws the side the visual takes for each page request", async () => {
+    drawHomeHeroVisualSideMock
+      .mockReturnValueOnce("start")
+      .mockReturnValueOnce("end");
+
+    const firstLoad = await renderHome();
+    expect(document.querySelector(".home-hero-inner")).toHaveClass(
+      "home-hero-inner--visual-start"
+    );
+    firstLoad.unmount();
+
+    await renderHome();
+    expect(document.querySelector(".home-hero-inner")).not.toHaveClass(
+      "home-hero-inner--visual-start"
+    );
+    expect(drawHomeHeroVisualSideMock).toHaveBeenCalledTimes(2);
+  });
+
+  // @req REQ-115
+  it("allows browser checks to pin the globe, on the right, without changing random visitors", async () => {
     drawHomeHeroVisualMock.mockReturnValue({
       kind: "image",
       image: {
@@ -294,6 +331,7 @@ describe("home page — search, corpus scale and two facts (ETNI-1404)", () => {
         position: "center",
       },
     });
+    drawHomeHeroVisualSideMock.mockReturnValue("start");
 
     await render(
       await Home({
@@ -303,29 +341,12 @@ describe("home page — search, corpus scale and two facts (ETNI-1404)", () => {
     );
 
     expect(screen.getByTestId("home-globe-stage")).toBeInTheDocument();
+    expect(document.querySelector(".home-hero-inner")).not.toHaveClass(
+      "home-hero-inner--visual-start"
+    );
     expect(getContinentPeopleCountsMock).toHaveBeenCalledOnce();
     expect(drawHomeHeroVisualMock).not.toHaveBeenCalled();
-  });
-
-  // @req REQ-115
-  it("draws one fresh cultural background for each page request", async () => {
-    drawDidYouKnowMotifMock
-      .mockReturnValueOnce("mande-kora")
-      .mockReturnValueOnce("punu-mukudj");
-
-    const firstLoad = await renderHome();
-    expect(screen.getByTestId("home-did-you-know")).toHaveAttribute(
-      "data-motif",
-      "mande-kora"
-    );
-    firstLoad.unmount();
-
-    await renderHome();
-    expect(screen.getByTestId("home-did-you-know")).toHaveAttribute(
-      "data-motif",
-      "punu-mukudj"
-    );
-    expect(drawDidYouKnowMotifMock).toHaveBeenCalledTimes(2);
+    expect(drawHomeHeroVisualSideMock).not.toHaveBeenCalled();
   });
 
   // @req REQ-044

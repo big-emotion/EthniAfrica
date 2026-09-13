@@ -1,5 +1,6 @@
 /**
- * Cultural objects redrawn as quiet line motifs for the home anecdote band.
+ * Cultural objects redrawn as quiet line motifs behind the anecdotes page (the
+ * home band that first carried them was retired on 2026-09-13).
  *
  * The identifiers keep each object attached to a named tradition instead of
  * presenting one anonymous "African" visual language.

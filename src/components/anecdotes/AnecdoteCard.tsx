@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 import { AnecdotePlate } from "@/components/anecdotes/AnecdotePlate";
 import { TranslationProvenanceMarker } from "@/components/fiche/TranslationProvenanceMarker";
@@ -24,6 +25,16 @@ export interface AnecdoteCardProps {
   illustration?: DidYouKnowIllustration;
   /** Drawn by the page, alternated by the reader. See the band note below. */
   imageSide?: AnecdoteImageSide;
+  /**
+   * The reader's turning arrows, laid over the picture-and-text band so they
+   * sit on the picture on a phone and either side of the band above it.
+   */
+  turns?: ReactNode;
+  /**
+   * What a reader can do with the anecdote, set between the anecdote and its
+   * provenance: the reaction comes before the fine print.
+   */
+  actions?: ReactNode;
 }
 
 /**
@@ -72,6 +83,8 @@ export function AnecdoteCard({
   fact,
   illustration,
   imageSide = "end",
+  turns,
+  actions,
 }: AnecdoteCardProps) {
   const copy = anecdotesCopy[language];
   return (
@@ -163,7 +176,11 @@ export function AnecdoteCard({
             ))}
           </ul>
         </div>
+
+        {turns}
       </div>
+
+      {actions}
 
       <footer className="anecdote-provenance">
         {/* Two tiers sit in this footer and they mean different things: the
@@ -216,7 +233,9 @@ export function AnecdoteCard({
         }
         /* One column on a phone, and the picture stays first: it is what the
            reader recognises before they have read a word. */
+        /* Positioned so the turning arrows can be laid over it. */
         .anecdote-split {
+          position: relative;
           display: flex;
           flex-direction: column;
         }

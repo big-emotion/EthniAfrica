@@ -562,8 +562,11 @@ the step exists to make the band legible, never to give it back the title it
 is not allowed to have. `SectionHeading` marks the case itself, from the
 absence of a `title`; no caller opts in, so no caller can get it wrong.
 
-Gated by `didYouKnowCharter.test.ts` (the band files itself with a kicker and
-titles nothing), `SectionHeading.test.tsx` (a title-less unit renders no
+The band itself was retired on 2026-09-13: its anecdote now takes a third of
+the hero's visual draw, one card, still filed by the kicker and still titled
+only by its own headline. Gated by `homeHeroAnecdoteCharter.test.tsx` (the
+drawn anecdote files itself with a kicker and titles nothing),
+`SectionHeading.test.tsx` (a title-less unit renders no
 heading, is marked `is-untitled`, is sized at `small`, and is asserted never
 to reach a heading role) and `homeOrientation.test.tsx` (the home's document
 plan).
