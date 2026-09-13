@@ -1,35 +1,40 @@
 # EthniAfrica — Production Readiness Audit
 
-**Date:** 2026-09-12 (fifth revision)
-**Branch:** `recette` @ `fa8803b8` · **Version:** 4.8.0 · **Deployed:** yes, releases through `v4.8.0`
+**Date:** 2026-09-13 (sixth revision)
+**Branch:** `recette` @ `e1a54e36` · **Version:** 4.8.0 · **Deployed:** yes, releases through `v4.8.0`
 **Method:** read-only. Nothing was fixed, bumped, tagged, pushed or deployed by this audit.
 
 ---
 
 ## 1. Scope and method
 
-Every long gate was run locally in a fresh worktree synced to `origin/recette` (`lint`, `typecheck`,
+Every long gate was run locally in a fresh worktree on `origin/recette` (`lint`, `typecheck`,
 `format:check`, `test:coverage`, `build`), plus the repo-specific gates (`lint:req`,
-`check:action-pins`, `check:workflow-shell`, `check:env-example`, `check:local-paths`,
-`check:migration-files`, `check:dead`, `test:charter-contracts`, `check:translation-parity`,
-`validateAfrikData.ts`, `checkEditorialRules.ts`, `checkSourceTierCoverage.ts`).
+`check:jira-template`, `check:action-pins`, `check:workflow-shell`, `check:env-example`,
+`check:local-paths`, `check:migration-files`, `check:rls-coverage`, `check:dead`,
+`check:translation-parity`, `test:social-tools`, `test:charter-contracts`, `validateAfrikData.ts`,
+`checkEditorialRules.ts`, `checkSourceTierCoverage.ts`). knip (default and `--production`), ts-prune
+and jscpd were run through `npx`; CI history, branch protection and every pinned action SHA were
+read through `gh`.
 
-**What this revision measured that the last one marked N/A:** the last 20 GitHub Actions runs and
-the logs of every persistently failing workflow, branch protection on `recette` and `main`, and the
-real Lighthouse and E2E outcomes recorded by CI. **Its focus, at the operator's request, is dead
-code and duplication** — so knip was also run _without_ tests and stories as entry points (in
-scratch, config untouched), jscpd was run over `src/`, `scripts/`, `social/tools` and `eslint/`, and
-the Python render engine under `social/harness/` was traced by hand, since no tool covers it.
+**This revision is mostly a re-verification.** It comes one day after the fifth, and in between
+`recette` merged the PRs aimed at that revision's findings (#999–#1003, #1005, #1007, #1008, migration
+`088`). Every earlier finding is marked **fixed**, **partial** or **open** below, with current
+evidence. Of the fifth revision's 33 numbered findings, 20 are fixed, 9 are partial and 4 are open.
 
-**Corrections to earlier revisions.** "53/53 tables, 98 policies" were gross counts that included
-eight dropped tables and superseded policies; the net figure is **45 live tables, 45 with RLS, 69
-live policies**. D1-1 was wrong: both tables it named already carry their deny-all comment
-(`048_antibot.sql:94`, `050_search_query_log.sql:9`). "Recent runs green" and "budgets enforced in
-`.lighthouserc.js`" were configuration readings; measured, neither holds (D3-1, D9-1).
+**Corrections to the fifth revision.** Its RLS table was already net of `contributions` and already
+listed `afrik_dossiers` and `afrik_translations`; this revision's replay agrees. A second method
+counts 75 `CREATE POLICY` survivors instead of 69 because it includes `storage.objects` policies —
+69 remains the count for public-schema tables.
 
-**Still not measured:** live Supabase configuration on either project (`check:migration-state`
-needs credentials), the self-hosted PostgREST `db-schemas`/`max-rows`, and the Traefik entrypoint's
-forwarded-header policy.
+**Still not measured:** live Supabase Auth configuration on the self-hosted production stack
+(whether sign-up is open — it decides the severity of D1-9), the Traefik forwarded-header policy
+(D1-6, D1-10), and database-vs-JSON consistency directly (it is measured by CI after each sync, not
+by this audit).
+
+**One local test failure was load, not code.** The first `test:coverage` run failed one test on a
+5 000 ms timeout while five scans ran in parallel; alone it passed 9/9, and a clean re-run of the
+full suite passed (D4-4).
 
 ---
 
@@ -37,154 +42,160 @@ forwarded-header policy.
 
 ### 2.1 Is the project ready for production?
 
-**Yes — it is in production and the release path works — conditional on two P1 security fixes.**
-`v4.7.0` and `v4.8.0` both shipped on 2026-09-12 through the GitHub Release → OVH path, and their
-production data sync succeeded. Every _required_ merge gate is green: 9 133 tests, 0 validator
-errors, 0 editorial-rule errors, RLS on every live table.
+**Yes — it is in production and the release path works — conditional on one security decision and
+one broken nightly job.** `v4.8.0` deployed through GitHub Release → OVH, its `migrate` job reported
+"applied 87 · pending 0 · orphaned 0 · drifted 0", and the production data sync that followed
+succeeded. Every required merge gate is green: 8 983 tests, 0 validator errors, 0 editorial errors,
+RLS on 45 of 45 live tables.
 
 The conditions:
 
-1. **D1-2 (P1) — the API key is not enforced for external clients.** The same-origin bypass trusts
-   `Origin`/`Referer` (`src/middleware.ts:554-567`, applied at `:783`), which any non-browser client
-   sets freely. The code's own comment promises "External clients (curl, partners, other origins)
-   must still bring a key"; one forged header defeats it. Impact is bounded — the corpus is public
-   and the 60 rpm per-IP limit still applies — but the partner-key product the API documents is not
-   what it delivers.
-2. **D1-3 (P1) — `npm audit` now reports 2 high** (`js-yaml` GHSA-2883-xcg3-v3hh through
-   `swagger-ui-react`), newly published against an unchanged lockfile.
+1. **D1-9 (P1, conditional)** — the reference-library write endpoints check that a caller is
+   _signed in_, never what role they hold. Any authenticated account can create a source at tier
+   `official`, attach sources to assertions, and upload working assets, all through the service-role
+   client (`src/api/v2/services/reference-library.ts:88-105`, `handlers/reference-library.ts:199-216`).
+   It is P1 if the self-hosted production stack allows open sign-up (the local
+   `supabase/config.toml:68` does, with GitHub and Google OAuth), P2 if it does not.
+2. **D8-7 (P1, new)** — **the nightly Confidence Recompute has failed 5 of 5.** It crashes on the
+   same `server-only` import that yesterday's fix repaired in `data-integrity.yml` but not here
+   (`.github/workflows/confidence-recompute.yml:22,28` run plain `tsx`; `scripts/checkSourceUrls.ts:22`
+   and `scripts/recomputeConfidence.ts:30` import `src/lib/supabase/admin.ts`). Confidence scores are
+   not being recomputed on schedule.
 
-And one systemic caveat: **five workflows are red on every run** (D3-1), including the E2E suite
-and Lighthouse. None blocks a merge, which is exactly why they stay red.
+And one systemic caveat: **every CI repair is on `recette` and none is on `main`** — 85 commits
+behind. Scheduled workflows and the Storybook deploy run `main`'s files, so the five workflows that
+were red yesterday are still red on their nightly runs (D3-4), and the promotion PR #1009 is blocked
+by a required smoke check that shares the recette database (D3-5).
 
 ### 2.2 Is the AFRIK editorial surface sound?
 
-**Structurally yes; doctrinally frayed, and the fray has grown.**
+**Yes — and both of yesterday's doctrinal defects are closed.**
 
-- `validateAfrikData.ts`: **50/50 checks, 0 errors**, 5 597 warnings (+65) across 1 721 tracked
-  fiches and 17 strict models.
+- `validateAfrikData.ts`: **50/50 checks, 0 errors**, 5 597 warnings, across 1 722 tracked JSON
+  files and 17 strict models.
 - **FR28 hard gate [95,105]: 0 offenders. FR28-strict [99,101]: 0 offenders.** Both fail the build.
 - `checkEditorialRules.ts`: **0 errors**, 97 warnings (95 `chronology-symmetry`, 2
   `autonym-required`); `UNDATED_POLITY_CEILING` 95, measured 95.
-- **0 untiered sources, 0 empty `sources` arrays.** Tiers: `unverified` 3 320 · `referenced` 1 900
-  (+94) · `official` 1 630 · `needs_review` 1 002.
-- Under the current policy there is no Tier-3 concept to count: nothing is forbidden, everything is
-  labelled, and every source is labelled.
+- **0 untiered sources, 0 empty `sources` arrays.** Tiers: `unverified` 3 320 · `referenced` 1 900 ·
+  `official` 1 632 · `needs_review` 1 000. The 89 links to Facebook, Blogspot, WordPress, Reddit and
+  X are all at `unverified` or `needs_review` (both weight 0.4); none points at wikipedia.org.
+- **D8-1 fixed** — migration `088_needs_review_source_tier.sql:41-43` admits `needs_review`, and
+  `recompute_confidence()` now weighs every case.
+- **D8-2 fixed** — "domain ruling" and "awaits editorial review" occur **0 times** in `dataset/`
+  (4 348 yesterday), and `src/lib/editorial/readerRegister.ts:62-65` now refuses both.
+- **D8-4 fixed on `recette`** — `editorial-rules` is a required check there (not yet on `main`).
 
-The defects:
-
-- **D8-1 (P1, unchanged)** — `needs_review` is still unstorable in the database
-  (`041_one_source_tier_vocabulary.sql:79`) and `recompute_confidence()` still has no `ELSE`
-  (`041:132-136`). No later migration touches either.
-- **D8-2 (P1, worse)** — workshop vocabulary published verbatim to readers: **3 291 occurrences of
-  "domain ruling" in 780 files and 1 057 of "awaits editorial review" in 465 files**, all inside
-  reader-facing `notes`, now also in seven English sidecars (`dataset/translations/en/pays/*`).
-  `src/lib/editorial/readerRegister.ts` still has no pattern for either phrase.
-- **D8-3 (P1, new)** — **the nightly Data Integrity run has failed 5 of 5** since 2026-09-08: the
-  `validate` job on one unreachable source URL (FR30/31, checked only on schedule), and the
-  `quiz-bank-integrity` job **crashing** on the `server-only` import at `src/lib/supabase/admin.ts:5`,
-  so the quiz-bank check has not actually run in that window.
-- **D8-4 (P1, new)** — **`editorial-rules.yml` is not a required check** on either branch. The
-  decolonial editorial gate reports; it does not block.
+What remains is the broken nightly recompute (D8-7, P1) and a vocabulary drift between loaders
+(D8-8, P2).
 
 ### 2.3 Can a new contributor go clone → running in one session?
 
-**Yes.** `check:env-example` verifies `.env.example` against the code in both directions;
-migrations are 87 sequential files; `npm run build` passes; the suite is green; the first admin is
-`scripts/seedAdmin.ts`. D4-1 from the last revision is resolved — `output/`, `Claude outputs/` and
-`skills-lock.json` are now gitignored.
+**Yes.** `check:env-example` verifies `.env.example` against the code in both directions; 88
+sequential migrations; `npm run build` passes; the suite is green; the first admin is
+`scripts/seedAdmin.ts`; `next-env.d.ts` is no longer tracked (D2-1 fixed).
 
-Two small traps remain: **`next-env.d.ts` is tracked but rewritten by every `next build`**
-(`.next/dev/types` ↔ `.next/types`), so a contributor alternating `dev` and `build` always has a
-dirty tree (D2-1, P2); and `CLAUDE.md` says `npm run lint` is `eslint .` while the script runs
-`eslint src scripts` (D10-5).
+Two small traps: **nothing stops a contributor on the wrong Node.** `package.json` and `.nvmrc` say
+22, there is no `engine-strict`, and this audit ran every gate green on Node 20.20.2, with only a
+`@supabase/supabase-js` deprecation warning in the build log (D5-2). And one test is tight enough on
+its 5 s timeout to fail on a loaded machine (D4-4).
 
 ### 2.4 What is the security posture?
 
-**Strong at the data plane, softer at the edge.**
+**Strong at the data plane and now at the edge; one authorization gap in a contributor API.**
 
-- **RLS: 45 of 45 live tables**, 69 live policies; three deny-all tables, all with the intent
-  commented. All nine live `SECURITY DEFINER` functions pin `search_path`; privileged ones revoke
-  `EXECUTE` from `PUBLIC`/`anon`.
-- **Service-role isolation holds** — `admin.ts` imports `server-only`; all 15 non-test importers are
-  server-side.
-- **API keys:** PBKDF2-SHA256 at 600 000 iterations, 16-byte salt, iteration count stored per hash.
-  But the key is bypassable by header (D1-2), and the raw key is used as the Upstash rate-limit
-  identifier (`src/lib/api/rate-limit.ts:24-26`, D1-6).
-- **CSP:** per-request nonce (`middleware.ts:738`), HSTS preload, nosniff, Referrer-Policy,
-  `frame-ancestors 'self'`. Gaps: no `Permissions-Policy`, redirect and 401/429 responses carry no
-  security headers, `connect-src` lists hosts production never calls (D1-5).
-- **Auth callback open redirect** via `/\evil.example` (`src/app/api/auth/callback/route.ts:17-22`,
-  D1-4, P2 — needs a valid PKCE exchange).
-- **Sentry:** EU DSN enforced (throws in production); the scrubber misses `Authorization`/`Cookie`
-  values, `request.cookies`, `data`, `extra` and breadcrumb data (D1-7).
-- **Secrets:** clean; gitleaks in CI pinned by digest. **Supply chain:** 0 tag-pinned actions — but
-  one SHA pin **does not exist** (D3-2), which `check:action-pins` cannot detect. `npm audit`: 0
-  critical, **2 high**, 10 moderate.
-- **Branch protection (measured):** both branches require `gitleaks`, `build`, `validate`,
-  `openapi-diff`, `axe-core (Storybook)` with `enforce_admins: true`; `main` requires a PR (0
-  approvals), `recette` does not and is `strict: false`.
+- **RLS: 45 of 45 live tables**, 69 live public-schema policies, four deny-all tables with their
+  intent commented. Migrations 081–088 add no `SECURITY DEFINER` function; the new search functions
+  are `SECURITY INVOKER`, pin `search_path` and revoke from `PUBLIC`. `check:rls-coverage` now runs in
+  CI (`ci.yml:162`).
+- **Service-role isolation holds** — `admin.ts:5` imports `server-only`; no importer is a client
+  component.
+- **API keys:** `/api/v2` is now **public by design** — the forgeable `Origin`/`Referer` bypass is
+  gone, keyless callers are rate-limited per IP, a present-but-invalid key gets 401, and a client-sent
+  `x-api-key-id` is stripped (`src/middleware.ts:812-864`); the OpenAPI declares the key optional
+  (`openapiV2.ts:4019`). PBKDF2-SHA256 at 600 000 iterations with a 16-byte salt; the rate-limit
+  identifier is now a SHA-256 of the key (`rate-limit.ts:45`).
+- **CSP and headers:** per-request nonce (`middleware.ts:604`), HSTS preload, nosniff,
+  Referrer-Policy, `frame-ancestors 'self'`, and now a `Permissions-Policy`; every redirect, 401 and
+  429 carries the header set; `connect-src` lists only the configured origins.
+- **Auth callback open redirect fixed** — `safeDestination` resolves like a browser
+  (`src/app/api/auth/callback/route.ts:27-44`).
+- **Sentry:** EU DSN enforced in all three runtimes; the scrubber now covers auth headers, cookies,
+  `data`, `query_string`, `extra`, `contexts` and breadcrumbs.
+- **Gaps:** D1-9 (role-less reference-library writes, P1 conditional); D1-10 (`GET /api/v2/keys/issue`
+  mints keys on a GET and limits them per `X-Forwarded-For`, P2); D1-6 residue (the anonymous bucket
+  trusts the first `X-Forwarded-For` entry, safe only if Traefik strips it).
+- **Supply chain:** 22 distinct pinned action SHAs, **all resolve**, and CI now checks existence
+  (`check:action-pins -- --resolve`, `ci.yml:118`); gitleaks by digest in CI and by checksum in the
+  Ferry workflows. `npm audit`: 0 critical, **0 high**, 10 moderate.
+- **Branch protection (measured):** `recette` requires nine checks — `gitleaks`, `build`, `validate`,
+  `openapi-diff`, `axe-core (Storybook)`, `Playwright smoke (fr, 430px)`, `Lighthouse gate (4 routes)`,
+  `editorial-rules`, `dependency-audit` — `enforce_admins: true`, `strict: false`, no PR required.
+  `main` still requires only the first five, `strict: true`, PR required with 0 approvals (D3-3).
 
 ### 2.5 Is the score close to 8–9/10?
 
-**6.5 / 10 — down from 7.9, and most of the drop is measurement, not regression.** Four things
-moved the number: CI runs and Lighthouse/E2E were measured instead of read from configuration (D3,
-D9); the dead-code gate was shown to be structurally blind (D4, D7); two new P1 security items
-(D1); and the provenance defects did not close while one grew (D8).
+**7.5 / 10 — up from 6.5, and this time the code moved, not the measurement.** Yesterday's three
+P0 hardcoded values are gone, the dead-code ratchet gained a production tally and its findings were
+deleted rather than documented, both AFRIK doctrinal defects closed, and every red gate was repaired
+— on `recette`.
 
 The three moves that close the most distance:
 
-1. **Make the red gates mean something** — fix or quarantine E2E and Lighthouse, repair the
-   Storybook pin and the nightly quiz-bank crash, and require `editorial-rules` (D3-1, D3-2, D8-3,
-   D8-4). Worth ~3 points across D3, D8, D9.
-2. **Give `check:dead` a production-only tally** and delete what it finds — 27 files, 7 runtime
-   dependencies (D4-2). Worth ~2 points across D4 and D7.
-3. **Close D8-1 and D8-2** — one migration and one pattern list plus a corpus rewrite.
+1. **Promote `recette` to `main`** — give the Playwright smoke check a database that the recette
+   sync cannot starve (D3-5), merge #1009, and align `main`'s required checks with `recette`'s
+   (D3-3). This turns the five nightly reds green and is worth ~1 point across D3 and D9.
+2. **Close the two P1 gaps** — role-gate the reference-library writes (D1-9) and add
+   `NODE_OPTIONS=--conditions=react-server` to `confidence-recompute.yml` (D8-7). Worth ~1 point
+   across D1 and D8.
+3. **Extend the production knip tally to exports and types, and delete what it finds** (D4-5), and
+   run a restore drill with a named owner (D10-1). Worth ~1 point across D4, D7 and D10.
 
 ---
 
 ## 3. Overall score
 
-**6.5 / 10** — mean of ten equally weighted domains.
+**7.5 / 10** — mean of ten equally weighted domains.
 
-A product whose required gates are honest and whose data plane is locked down, surrounded by a ring
-of gates that report without blocking — and a dead-code ratchet that counts exactly what it was told
-to count, which turns out not to be the dead code.
+The repair wave landed where it was aimed: the gates that reported without blocking are now
+required, the dead code is deleted, the doctrine agrees with the database. What is left is mostly
+one merge away — the fixes exist, on the branch production does not run its nightly jobs from.
 
 ---
 
 ## 4. Score per domain
 
-| #   | Domain                             | Score | Evidence                                                                                                             |
-| --- | ---------------------------------- | ----: | -------------------------------------------------------------------------------------------------------------------- |
-| 1   | Security posture                   | **8** | 45/45 RLS, definer functions pinned, service-role isolated — but API key bypassable by header (P1), 2 high CVEs      |
-| 2   | Secrets hygiene                    | **9** | Only `.env.example` files tracked; gitleaks in CI by digest; `check:env-example` both ways; `next-env.d.ts` P2       |
-| 3   | CI                                 | **6** | Required gates green; 5 workflows red on every run; a SHA pin that does not exist; `editorial-rules` not required    |
-| 4   | Correctness & tests                | **7** | 9 133 pass / 0 fail, coverage 86.8/80.3/89.9/87.9 — minus 2 for >15 P1 dead-code findings hidden from `check:dead`   |
-| 5   | Deploy coherence                   | **7** | v4.7.0 + v4.8.0 deployed and synced; 87 migrations sequential — minus 1 for 3 P0 hardcoded values                    |
-| 6   | Ferry pipeline                     | **7** | Config parses, `recette`→`recette`, pins consistent — Ferry Cost Daily 5/5 red on a missing variable                 |
-| 7   | Architecture & boundaries          | **6** | Three-layer API and client isolation hold — minus 1 (hardcoded) and minus 2 (dead code + drifted duplication)        |
-| 8   | AFRIK data integrity & Source Tier | **5** | 0 errors, FR28 0/0 — two failed checks (vocabulary fork D8-1, CI enforcement D8-3/D8-4) and one N/A (DB vs JSON)     |
-| 9   | Performance & accessibility        | **5** | axe-core required and green — Lighthouse 13/15 red (45 failed assertions), E2E 15/15 red, neither required           |
-| 10  | Docs & runbooks                    | **5** | `CLAUDE.md` contradicts itself on the gabarit spec; migration-state runbook two releases behind; drill 14 months old |
+| #   | Domain                             | Score | Evidence                                                                                                                  |
+| --- | ---------------------------------- | ----: | ------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Security posture                   | **8** | 45/45 RLS; edge hardening complete; 0 high CVEs — but reference-library writes are role-less (D1-9, P1 conditional)       |
+| 2   | Secrets hygiene                    | **9** | Only `.env.example` files tracked; gitleaks by digest; `next-env.d.ts` untracked; full-history scan not re-run locally    |
+| 3   | CI                                 | **7** | Nine required checks on `recette`, every pin resolves — but fixes unpromoted, nightlies red on `main`, #1009 blocked      |
+| 4   | Correctness & tests                | **8** | 8 983 pass / 0 fail, coverage 86.6/80.4/89.9/87.6 — minus 1 for 13 P1 test-only modules the gate cannot see               |
+| 5   | Deploy coherence                   | **8** | v4.8.0 deployed, 87/87 migrations on production, rollback documented — minus 1 for 11 P1 hardcoded values                 |
+| 6   | Ferry pipeline                     | **7** | Config parses, pins resolve and carry full versions — CLI pinned at v1.1.2 beside v1.2.0 actions; setup doc drifted       |
+| 7   | Architecture & boundaries          | **7** | Three-layer API holds (one exception), ISO table and loader writers single-sourced — minus 1 hardcoded, minus 1 dead code |
+| 8   | AFRIK data integrity & Source Tier | **7** | 50/50, FR28 0/0, D8-1 and D8-2 fixed — one failed check: nightly confidence recompute crashes (D8-7)                      |
+| 9   | Performance & accessibility        | **7** | axe-core, Lighthouse gate and Playwright smoke required and green on PRs — full matrices red on `main`, required nowhere  |
+| 10  | Docs & runbooks                    | **7** | `CLAUDE.md` contradiction and stale counts fixed — restore drill 14 months old with an `(owner)` placeholder              |
 
 ---
 
 ## 5. Strengths
 
-- **The required gates are genuinely hard to fool.** `check:dead` fails below its ceiling as well
-  as above; `check:migration-files` refuses holes; `check:env-example` checks both directions;
-  `check:local-paths` self-tests its own false positives. Local and CI knip tallies now agree
-  exactly (exports 22/22, types 49/49), so the worktree trap no longer distorts them.
-- **The data plane is locked down and reasoned.** Every live table has RLS; migration 077 repoints
-  policies with `ALTER POLICY` _before_ dropping the old helpers without `CASCADE`, so no policy was
-  silently lost; every definer function pins `search_path`.
-- **The release path is real and exercised** — two releases in one day, both deployed and both
-  followed by a successful production data sync.
-- **The test suite is large and real:** 9 133 tests across 873 files, coverage comfortably above
-  every threshold, charter contracts (1 043 tests) guarding the design system.
-- **The Python render engine documents its own transition honestly** — `ethni_compose_v1.py` and
-  `ethni_carrousel2.py` both say, in their headers, what they replace and when the old path goes.
-  The defect is that the stated condition has already been met (§6, D7-4).
+- **Findings get closed, not re-labelled.** 20 of yesterday's 33 numbered findings are fixed in
+  code within a day, and the fixes carry tests: `needsReviewTierMigration.test.ts` holds the TS tier
+  weights to the SQL ones; `generateQuizQuestionsModuleGraph.test.ts` holds the nightly job's module
+  graph; `check:action-pins --resolve` now proves a pin exists instead of matching its shape.
+- **The ratchets fail in both directions and got tighter.** `check:dead` gained a production tally
+  (files 15/15, dependencies 1/1); the default tally fell to exports 9 and types 7 (22 and 49
+  yesterday); `NEEDS_REVIEW_RATCHET` went from 1 010 upward-only to 1 000 two-way.
+- **The edge was hardened by deciding, not by patching.** Rather than harden a header check that
+  could never authenticate, `/api/v2` was declared public in the middleware and in the OpenAPI, with
+  keys reserved for quota.
+- **Lighthouse budgets say why they are what they are.** The fiche TBT ceiling of 3 600 ms is
+  documented as the cost of software rasterising a WebGL globe on a GPU-less runner, held as a
+  ratchet that may only go down (`.lighthouserc.js:199-208`).
+- **The data plane stays locked down and reasoned** — every live table under RLS, every new function
+  `SECURITY INVOKER` with a pinned `search_path`.
 
 ---
 
@@ -192,296 +203,264 @@ to count, which turns out not to be the dead code.
 
 ### Domain 1 — Security posture
 
-- **D1-2 (P1)** — API key bypassable with a forged `Referer`/`Origin`
-  (`src/middleware.ts:554-567, 783, 800-805`). Browsers send `Sec-Fetch-Site`, which non-browser
-  clients can also forge, so the honest fix is to stop treating header provenance as auth: either
-  accept that `/api/v2` is keyless-public and say so in the OpenAPI, or have the frontend call
-  through a server-side path that never leaves the host.
-- **D1-3 (P1)** — `npm audit`: 2 high, `js-yaml` via `swagger-ui-react` ^5.30.2
-  (`package.json:114`). An `overrides` pin of `js-yaml >= 4.3.2` avoids npm's suggested major
-  downgrade.
-- **D1-4 (P2)** — open redirect: `safeDestination` rejects `//` but not `/\`
-  (`src/app/api/auth/callback/route.ts:17-22`).
-- **D1-5 (P2)** — CSP: no `Permissions-Policy`; 307/308/401/429 responses carry no security headers;
-  `connect-src` allows `https://*.upstash.io` and `https://*.supabase.co`, neither called by the
-  browser in production (`middleware.ts:137-155`).
-- **D1-6 (P2)** — the raw API key becomes the Upstash identifier `key:<apikey>`
-  (`rate-limit.ts:24-26`); the rate limiter reads the first `X-Forwarded-For` entry, safe only if
-  Traefik strips client-supplied values (unverifiable from the repo).
-- **D1-7 (P2)** — Sentry `beforeSend` does not redact `Authorization`/`Cookie`, `request.cookies`,
-  `data`, `query_string`, `extra`/`contexts` or breadcrumb data
-  (`src/lib/sentry/pii-scrubber.ts:98-170`).
-- **D1-8 (P2)** — runtime drift: `engines` and most CI jobs run Node 20; the `Dockerfile` builds
-  production on `node:22-alpine`. The Ferry workflows download gitleaks with no checksum
-  (`ferry-dev.yml:91` and three siblings).
+- **D1-9 (P1 conditional, new)** — reference-library writes are authenticated but not authorized.
+  `getAuthenticatedReferenceUser` returns any valid Supabase user
+  (`src/api/v2/services/reference-library.ts:88-105`); `handleReferenceCreate` passes the
+  caller-supplied `tier` straight through (`handlers/reference-library.ts:199-216`), and the assertion
+  link and asset upload handlers do the same (`:234-249`, `:263-271`). Writes run with the service-role
+  client, so RLS does not apply. Fix: require `contributor` or above from `user_roles` in the service.
+- **D1-10 (P2, new)** — `GET /api/v2/keys/issue` inserts an `api_keys` row on a GET, enforces "one key
+  per IP" on the first `X-Forwarded-For` entry, and skips the check entirely when no IP header is
+  present (`src/app/api/v2/keys/issue/route.ts:40-61`). It is also the only v2 route that queries
+  Supabase directly, outside the service layer.
+- **D1-6 (P2, partial)** — the key identifier is hashed (fixed); the per-IP bucket still reads the
+  first `X-Forwarded-For` entry (`src/lib/api/rate-limit.ts:13`).
+- **D1-8 (P2, partial)** — `engines`, the Dockerfile and the Ferry gitleaks checksums are fixed; six CI
+  jobs still run Node 20 (`ci.yml:229`, `e2e.yml:63,206`, `editorial-rules.yml:25`,
+  `lighthouse.yml:57,143`).
+- **Fixed:** D1-2 (key bypass → public by design), D1-3 (`npm audit` 0 high, `js-yaml` override at
+  `package.json:115-117`, CI blocks on high at `ci.yml:232`), D1-4 (open redirect), D1-5 (headers on
+  every response, `Permissions-Policy`), D1-7 (Sentry scrubbing).
 
 ### Domain 2 — Secrets hygiene
 
-- **D2-1 (P2)** — `next-env.d.ts` is tracked and rewritten by every `next build`; the audit had to
-  restore it by hand to leave the tree clean.
+- **Fixed:** D2-1 — `next-env.d.ts` is ignored (`.gitignore:35`) and untracked; the tree stayed clean
+  through `build`.
+- The one secret-pattern hit is the known false positive (`PAT_BABIRYE.json:64`, an encrypted route id
+  inside a parliament URL).
 
 ### Domain 3 — CI
 
-- **D3-1 (P1)** — **five workflows fail on every run**, all outside the required set:
+- **D3-4 (P1, replaces D3-1)** — **the repairs are on `recette`; the red runs are on `main`.**
+  Scheduled workflows and `storybook-deploy` run the default branch's files, which are 85 commits
+  behind:
 
-  | Workflow                 | Record                    | Cause                                                                        |
-  | ------------------------ | ------------------------- | ---------------------------------------------------------------------------- |
-  | E2E                      | 15/15 failed or cancelled | v4.8.0: fr 57 failed / 138 passed; en 7 failed / 156 skipped                 |
-  | Lighthouse               | 13 failed, 2 cancelled    | v4.8.0: 45 failed assertions (perf ≥ 0.85, LCP, TBT, a11y = 1 on two routes) |
-  | Storybook deploy         | 15/15 failed              | pinned action SHA does not exist (D3-2)                                      |
-  | Data Integrity (nightly) | 5/5 failed                | D8-3                                                                         |
-  | Ferry Cost Daily         | 5/5 failed                | `FERRY_SPEND_CAP_EUR` not set                                                |
+  | Workflow             | Pull requests (recette) | Nightly / push (main)                       |
+  | -------------------- | ----------------------- | ------------------------------------------- |
+  | E2E                  | 7/7 pass, then D3-5     | 0/5 — stale specs (57 failed)               |
+  | Lighthouse           | 7/7 pass                | 0/5 — pre-rebase budgets                    |
+  | Storybook deploy     | —                       | 0/10 — bad pin still on `main`              |
+  | Data Integrity       | 10/10 pass              | 0/8 — `server-only` crash, fixed on recette |
+  | Confidence Recompute | —                       | 0/5 — **not fixed anywhere** (D8-7)         |
+  | Ferry Cost Daily     | —                       | 0/10 — variable set 2026-09-13 00:01Z       |
+  | Deploy production    | —                       | 6/6 pass                                    |
 
-  A gate that is always red is a gate nobody reads. The previous revision's "recent runs green" was
-  true of the required set only.
-
-- **D3-2 (P1)** — `storybook-deploy.yml:65` pins `actions/deploy-pages@d6db9016…`, and GitHub answers
-  **422 "No commit found for SHA"**. `check:action-pins` validates the pin's _shape_, not its
-  existence — the gate passes on a pin that can never resolve.
-- **D3-3 (P2)** — `recette` protection is `strict: false` with no PR requirement, while `main` is
-  `strict: true` and requires a PR.
+- **D3-5 (P1, new)** — **the promotion PR #1009 is blocked by a required check that depends on shared
+  state.** `Playwright smoke (fr, 430px)` failed 2 of 6 (the `PPL_WOLOF` and `SEN` titles) because
+  every Supabase read timed out during the build — while `Recette AFRIK Data Sync` was running against
+  the same database. The same check passed on #1008 fifteen minutes earlier. A required gate that a
+  data sync can turn red will block merges at random.
+- **D3-3 (P2, changed)** — `main` requires 5 checks and `recette` 9; a hotfix PR straight into `main`
+  skips smoke, Lighthouse, editorial rules and the dependency audit.
+- **Fixed:** D3-2 — `storybook-deploy.yml` now pins a SHA that exists (`d6db9016…c03e`, tag v4.0.5),
+  and `check:action-pins --resolve` would have caught the old one.
 
 ### Domain 4 — Correctness & tests
 
-- **D4-2 (P1)** — **the dead-code ratchet is structurally blind to anything a test or story still
-  imports.** `knip.json` declares `**/*.{test,stories}.{ts,tsx}` and `**/__tests__/**` as entry
-  points, so a component kept alive only by its own test counts as used. Re-run without them, knip
-  reports **27 unreachable files and 7 unreachable runtime dependencies** while the gate reads
-  `files 0 / dependencies 0`. Full list under _Dead code & redundancy_.
-- **D4-3 (P2)** — 55 `@typescript-eslint/no-unused-vars` warnings (about half in tests), one unused
-  `eslint-disable` (`src/hooks/use-globe-camera.ts:214`). `no-unused-vars` is a warning, so they
-  accumulate without failing anything; knip does not see unused _locals_.
-- **E2E failures** are counted canonically in D3-1 and referenced here.
+- **D4-5 (P1, replaces D4-2)** — the production knip tally counts only `files` and `dependencies`
+  (`scripts/ci/checkDeadCode.ts`); **35 exports and 11 types reached only by tests** stay invisible to
+  the gate and can grow. List under _Dead code & redundancy_.
+- **D4-4 (P2, new)** — `scripts/__tests__/initCountryEnrichment.test.ts:173` times out at 5 000 ms on
+  a loaded machine; the file's nine tests take 4.94 s together when run alone.
+- **D4-3 (P2, improved)** — lint warnings down to 39 (0 errors); six unused `React` imports remain in
+  production components.
+- E2E failures on `main` are counted canonically in D3-4.
 
 ### Domain 5 — Deploy coherence
 
-- **D5-1 (P2)** — `s-maxage=86400, immutable` on the mutable list endpoint
-  `src/app/api/v2/migrations/route.ts:94` (and `[id]:62`); production has no CDN in front of the
-  container, so `s-maxage` may be inert everywhere — worth verifying before tuning it.
+- **D5-2 (P2, new)** — nothing enforces the declared Node version locally: `engines` and `.nvmrc` say
+  22, there is no `engine-strict`, and every gate passes on Node 20.20.2.
+- **D5-3 (P2, new)** — `next build` warns that the `middleware` file convention is deprecated in
+  favour of `proxy`.
+- **D5-1 (P2, unchanged)** — `s-maxage=86400` on mutable list endpoints; production has no CDN in
+  front of the container.
+- Migration `088` is live on recette (`migrate-recette` run 34726612478) and pending the next release.
 - Hardcoded-value penalty applied — see _Hardcoded values (P0/P1)_.
 
 ### Domain 6 — Ferry pipeline
 
-- **D6-1 (P2)** — Ferry Cost Daily red on a missing repository variable (counted in D3-1);
-  `openai/codex-action@a26d2d4` is annotated `# v1` rather than a full version.
+- **D6-2 (P2, new)** — two Ferry versions in one pipeline: composite actions pinned to v1.2.0
+  (`39a42f9f…`), while `ferry-cost-daily.yml:25` and `ferry-reconcile.yml:25` set `FERRY_REF: v1.1.2`
+  and the five agent workflows run `npx -p @big-emotion/ferry@v1.1.2` (e.g. `ferry-dev.yml:139`),
+  tag-pinned with no integrity check.
+- **D6-3 (P2, new)** — `ferry-jira-automation-setup.md:70,184` names the triggers `In Development` and
+  `Ready to Merge`; `ferry.config.yaml` uses `READY FOR DEV` and `TO MERGE`, and warns that a mismatch
+  is a silent no-op. `.claude/skills/ethniafrica-ticket/SKILL.md:46` reads the review column from that
+  document.
+- **Fixed:** D6-1 — `openai/codex-action` pinned at `52fe01ec…  # v1.11`. Ferry Cost Daily's missing
+  variable was set on 2026-09-13; no run has confirmed it yet.
 
 ### Domain 7 — Architecture & boundaries
 
-- **D7-1 (P1)** — **the ISO alpha-3 → alpha-2 table exists twice and has drifted.**
-  `src/lib/countryFlag.ts` maps `ESH`, `MYT`, `REU`; `src/lib/countryNames.ts:5-62` does not. Western
-  Sahara, Mayotte and Réunion get a flag but fall back to the corpus name instead of a localized one.
-- **D7-2 (P1)** — **the three facet hub pages are copies that have diverged on error handling.**
-  `atlas/langues/page.tsx:161` and `atlas/noms/page.tsx:157` wrap their read in `try`/`catch` and
-  render an "unavailable" state; `atlas/peuples/page.tsx:161` does a bare `Promise.all`, so a
-  database failure there escapes to the error boundary. `noms` also still computes an unused
-  `peopleLabels` map on every request (`:195`).
-- **D7-3 (P1)** — AFRIK loader Supabase writers copied across five files (`nameRecordJsonLoader`,
-  `relationJsonLoader`, `migrationJsonLoader`, `personJsonLoader`, `patronymeJsonLoader`) while
-  `provenanceWriter.ts:43-117` already holds its own `findOrCreate*` pair.
-- **D7-4 (P1)** — **two generations of the social render engine coexist**, and the documentation
-  still points at the retired one. See _Dead code & redundancy_, §social.
+- **D7-5 (P1, new; counted under hardcoded values)** — production's OpenAPI document labels its own
+  server "Serveur de développement": the description keys off `VERCEL_URL`, which the OVH host never
+  sets (`src/lib/api/openapiV2.ts:36-43`).
+- **D7-6 (P2, new)** — `src/app/api/docs/route.ts:7,19-22` still points readers at `/api/docs/v1`,
+  which no longer exists.
+- **D7-2 (P2, partial)** — the three facet hubs now share `readFacet(...)` and an "unavailable" state;
+  `atlas/langues/page.tsx:170,246` and `atlas/peuples/page.tsx:184,269` still carry two cloned blocks
+  (~95 lines).
+- **D7-4 (P2, partial)** — `ethni_carousel.py` and `ethni_card.py` are deleted and the docs point at the
+  live engine; the token test (`test_ethni_tokens.py:196`) does not scan `ethni_compose_v1`,
+  `ethni_plaque`, `ethni_type` or `ethni_brand`, and `ethni_brand.py:26-28` holds colour literals.
+- **Fixed:** D7-1 (one table, `src/lib/isoCountryCodes.ts`), D7-3 (the five loaders import
+  `provenanceWriter.ts`).
 
 ### Domain 8 — AFRIK data integrity & Source Tier
 
-- **D8-1 (P1)** — `needs_review` unstorable in `sources.tier`; `recompute_confidence()` has no `ELSE`.
-- **D8-2 (P1)** — 3 291 "domain ruling" + 1 057 "awaits editorial review" in reader-facing `notes`.
-- **D8-3 (P1)** — nightly validator red on an unreachable URL; nightly quiz-bank check crashes on
-  `server-only` and has not run.
-- **D8-4 (P1)** — `editorial-rules` not a required check.
-- **D8-5 (P2)** — `check:translation-parity` run bare is a survey (1 669 findings, exit 0); it blocks
-  only with `--base`/`--staged`, which CI uses. New gaps are blocked; the backlog is not.
-- **D8-6 (P2)** — `checkSourceTierCoverage.ts:23` ceiling is 1 010 against 1 002 measured, and fails
-  only upward — 8 units of slack, unlike the other two-way ratchets.
+- **D8-7 (P1, new)** — nightly Confidence Recompute crashes on `server-only` (see §2.1); 5 of 5 runs.
+- **D8-8 (P2, new)** — two loaders store a `needs_review` source differently:
+  `peopleAppellationLoader.ts:104` folds it to `unverified`, `provenanceWriter.ts:304-310` stores
+  `NULL`. Both upsert `sources` by title, so one title's reader-facing label depends on which loader
+  ran last. Migration 088 now admits `needs_review` as a stored value, and no code writes it.
+- **D8-5 (P2, unchanged)** — `check:translation-parity` run bare is a survey (821 findings, 873
+  deferrals, down from 1 669); CI blocks with `--base`.
+- **Fixed:** D8-1 (migration 088), D8-2 (0 occurrences, patterns in `readerRegister.ts`), D8-3 on
+  `recette` (quiz-bank job runs under the react-server condition; the unreachable URL is gone from
+  the corpus), D8-4 on `recette`, D8-6 (ratchet 1 000, two-way).
 
 ### Domain 9 — Performance & accessibility
 
-- **D9-1 (P1)** — Lighthouse budgets are **declared, not enforced**: `lighthouse.yml` runs on PRs to
-  `main`, nightly and on dispatch, is not a required check, and is red 13 of 15. The v4.8.0 run
-  failed 45 assertions, including `accessibility = 1` on two routes. The `a11y.yml` axe-core gate, by
-  contrast, is required and green.
+- **D9-2 (P2, replaces D9-1)** — Lighthouse and E2E are now split into a required PR gate (4 routes;
+  fr smoke at 430 px) and a full nightly matrix that is required nowhere and red on `main` until
+  promotion (counted in D3-4). The fiche performance score is a warning only, so no gate measures
+  what a phone renders on the product's central page — the lab cannot, by the file's own account.
 
 ### Domain 10 — Docs & runbooks
 
-- **D10-1 (P1, unchanged)** — the only restore drill is `restore-drill-2025-07-14.md`, ~14 months
-  old; `restore-procedure.md:187` sets a quarterly cadence and `:194` says "Nothing since".
-- **D10-4 (P1, new)** — **`CLAUDE.md` contradicts itself.** `:120-121` says `GABARITS-SOCIAL.md` is
-  "versioned here … it used to be a derived copy"; `:274-284` ("The social gabarit spec is a derived
-  copy") still says "generated, never edited here … Fix the source, re-sync." An agent following the
-  second will refuse to edit the file the first says is canonical.
-- **D10-6 (P1, new)** — `docs/runbooks/migration-state.md` says "Last verified: 2026-08-31", its
-  banner counts "81 migration files", lists 084-085 as pending and omits 086-087 — two releases
-  after they shipped.
-- **D10-2 (P2, unchanged)** — stale counts in `CLAUDE.md`: "081 at last count" (87), "~890 .json
-  fiches" (1 721), "96 entries still violate" (95). And its claim that "most of `README.md`" is
-  stale on V1 is itself stale: `README.md:85-86` is correct.
-- **D10-3 (P2, unchanged)** — `.claude/skills/ethniafrica-audit/SKILL.md` still describes
-  Vercel-from-git, the retired Tier 1/2/3 policy, "English by default" and Next.js 15. This revision
-  scored against `CLAUDE.md` instead.
-- **D10-5 (P2)** — `CLAUDE.md` says `npm run lint` is `eslint .`; the script is `eslint src scripts`.
-- **D10-7 (P2)** — `social/harness/README.md:7-10` and `GABARITS-SOCIAL.md:4` name `ethni_render.py`,
-  `ethni_card.py` and `ethni_carousel.py` as the engine; the production skill renders with
-  `ethni_carrousel2.py` and `ethni_montage.py`.
+- **D10-1 (P1, unchanged)** — the only restore drill is `restore-drill-2025-07-14.md`;
+  `restore-procedure.md:201` says "Next drill due: 2025-10-14 — overdue" and `:205` still reads
+  `(owner — the operator must name a person here)`.
+- **D10-6 (P2, partial)** — `migration-state.md` is verified 2026-09-12 and lists 084–087; it has no
+  row for `088`, and its summary still says recette "applied 86".
+- **D10-8 (P2, new)** — this audit's own skill still requires `docs/api-contracts.md` (deleted on
+  purpose in #401) and `_bmad-output/project-context.md` (absent), so two Domain 10 checks cannot pass
+  as written (`.claude/skills/ethniafrica-audit/SKILL.md:272`).
+- **D10-9 (P2, new)** — stale comments: `src/types/sources.ts:75-76` says the weights mirror migration
+  041 (now 088); `.github/workflows/data-integrity.yml:60` says 789 people fiches (776).
+- **Fixed:** D10-2 (counts replaced by pointers to the source), D10-3 (skill brought up to date),
+  D10-4 (`CLAUDE.md` contradiction), D10-5 (`lint` description), D10-7 (engine docs).
 
 ### Hardcoded values (P0/P1)
 
-**Confidence & Scoring Thresholds (AFRIK)**
-
-- **P0** `src/lib/quiz/eligibility.ts:103`, `src/app/[lang]/atlas/noms/[slug]/page.tsx:77`,
-  `src/components/patronymes/PatronymeFicheTitle.tsx:56` — tier subsets that decide eligibility and
-  indexing are written inline instead of derived from `SOURCE_TIERS` (`src/types/sources.ts:47`);
-  `src/api/v2/schemas/languages.ts:13` re-types the tier enum. `AI_PROVENANCE_WEIGHT = 0.5`
-  (`sources.ts:71`) duplicates the SQL weight in `recompute_confidence()`.
-
-**Timeouts / Durations**
-
-- **P0** `src/lib/supabase/requestDeadline.ts:52` — `SUPABASE_BATCH_REQUEST_TIMEOUT_MS = 120_000`,
-  no env override (the 10 s request deadline at `:19` has one).
+Grouped by defect, as in the fifth revision. Two items found in
+`src/lib/rights/protected-asset-access.ts` are not counted here: the module is reached only by tests,
+so it is counted once under dead code.
 
 **Hardcoded URLs**
 
-- **P0** `src/middleware.ts:152` — `connect-src` hosts inline (`*.supabase.co`,
-  `*.ingest.de.sentry.io`, `*.upstash.io`); the production Supabase is self-hosted, so the list
-  differs per deployment. The Sentry EU host is repeated at `src/lib/sentry/pii-scrubber.ts:15`.
-- **P1** `src/middleware.ts:54` — `SUPABASE_ORIGIN_FALLBACK`, used only when the env URL is invalid.
+- **P1** `src/middleware.ts:56` — `https://supabase.ethniafrica.com` — `SUPABASE_ORIGIN_FALLBACK`: with
+  the env URL unset or invalid, any deployment's CSP admits production's Supabase.
+- **P1** `src/lib/api/openapiV2.ts:36-43`, `src/app/api/v2/feed/revisions/route.ts:167`,
+  `src/app/layout.tsx:39` — `http://localhost:3000` — site-URL fallbacks; the OpenAPI one also
+  mislabels production (D7-5).
 
-**Cache TTLs**
+**Hardcoded Roles / Tiers**
 
-- **P1** `export const revalidate = 3600` repeated in 8 route files and `{ revalidate: 3600 }` in 4
-  services (`continentPeopleCounts:21`, `countryFacet:77`, `languageFamilyAtlas:44`,
-  `languagesFacet:127`); `revalidate 60` four times; a per-file `CACHE_CONTROL = "s-maxage=3600"` in
-  13 route files.
+- **P1** `src/lib/api/auth.ts:94`, `openapiV2.ts:3971`, `013_api_keys_tier.sql:8` —
+  `public|partner|admin` — api-key tier written three times with no shared constant; `"public"` again
+  in `keys/issue/route.ts:57,84,102` and `keyService.ts:95`.
+- **P1** `SourceTier | "needs_review"` re-declared in five places with no shared constant —
+  `sourcesFacet.ts:39`, `SourceChainSheet.tsx:42,230`, `ficheSourceLabel.ts:37`,
+  `ficheSourceRegister.ts:41`, `SourceStandingBadge.tsx:6` (related: D8-8).
 
 **Pagination & Batch Sizes**
 
-- **P1** default page size `20` inline in 9 handlers/services and `.max(100).default(20)` in 9 zod
-  schemas; `MAX_LIMIT = 100` twice.
-- **P1** page size `500` as a named constant in 9 query modules plus `CHOICES_PAGE_SIZE = 1000`
-  (`sourcesFacet.ts:100`) — if the self-hosted PostgREST `max-rows` is lower, a short page reads as
-  the last one and results truncate silently.
+- **P1** limits outside `src/api/v2/schemas/pagination.ts` — `peoples/[id]/revisions/route.ts:62-63`,
+  `feed/revisions/route.ts:104-105`, `search/route.ts:202-203` (`20`/`100`, search `50`);
+  `schemas/names.ts:199`, `relations.ts:61` (inline `.max(100)`); `signalements/actions.ts:50-51`,
+  `page.tsx:36` (`50` ×3).
+- **P1** read ceilings `pageSize` 500 (sources 1 000) × `maxPages` 20–60 in 11+ query modules
+  (e.g. `languageFacet.ts:21,28`, `sitemapEntries.ts:25,32`, `sourcesFacet.ts:101,104`). Since
+  `walkRanges.ts`, hitting the cap reports `truncated` rather than truncating silently.
 
-**Size & Truncation / Rate-limit**
+**Cache TTLs**
 
-- **P1** `src/lib/antibot/proofOfWork.ts:24` — challenge TTL 5 min with no env override (difficulty
-  has one). Rate-limit windows (`rate-limit.ts:40-43`) are all env-overridable: no finding.
+- **P1** `revalidate: 60` ×4 (`signalements/[slug]/page.tsx:23`, `signalements/page.tsx:38`,
+  `hubs/moduleAvailability.ts:134,234`) and Cache-Control strings outside `CORPUS_CACHE_CONTROL`
+  (`sources/route.ts:94`, `language-families/[id]/tree/route.ts:69`, `feed/revisions/route.ts:106`,
+  two OG image routes).
 
-_3 P0 and 6 P1 → −1 on Domains 5 and 7. About 40 P2 internal constants, nearly all named._
+**Timeouts / Durations**
+
+- **P1** `src/lib/antibot/proofOfWork.ts:24` — `5 * 60 * 1000` — challenge TTL, no env override.
+- **P1** `src/lib/flags/reporterContact.ts:15` — `24 * 60 * 60 * 1000` — reporter verification TTL.
+
+**Rate-limit & Quota Thresholds**
+
+- **P1** `src/api/v2/handlers/flags.ts:88` — `MIN_DWELL_MS = 3_000` — anti-bot dwell on flag
+  submission, no env override.
+
+_0 P0 (3 yesterday, all fixed) and 11 P1 → −1 on Domains 5 and 7._ `export const revalidate = 3600`
+(×8) moved to P2: Next.js requires a literal there, and `corpusCache.ts:10` documents it. About 30 P2
+internal constants, nearly all named.
 
 ### Dead code & redundancy
 
-The CI gate is green and agrees with local (files 0, dependencies 0, exports 22/22, types 49/49).
-Everything below is what it cannot see. Each item was confirmed by grepping for importers; four were
-re-verified by hand for this report (`GamePlayHost`, `RevisionDrawer`, `DemographicsChart`,
-`clientCache`).
+The CI gate is green and agrees with local: default tally files 0, dependencies 0, exports 9/9,
+types 7/7; production tally files 15/15, dependencies 1/1 (`tailwindcss-animate`, a false positive —
+`tailwind.config.ts:2`). Every file and dependency listed yesterday is deleted. What follows is what
+the production tally does not count. Three items were re-verified by hand for this report
+(`personService`, `publishRevision`, `rights/*`).
 
-**Unreachable at runtime — kept alive only by a test or a story**
+**Unreachable at runtime — kept alive only by a test**
 
-- **P1** `package.json` — runtime dependencies nothing in production reaches: `recharts` (only via
-  the story-only `DemographicsChart.tsx`), `vaul`, `@radix-ui/react-accordion`, `-progress`,
-  `-separator` (only their own `ui/*.tsx`, only stories), `-checkbox` (only a test), `react-is`
-  (imported nowhere). Not bundled, but installed in the production image.
-- **P1** `src/components/play/GamePlayHost.tsx` — test-only; `MercatorSurface.tsx:7` now imports
-  `GamePlayIsland` directly.
-- **P1** `src/components/source-transparency/RevisionDrawer.tsx` (~355 lines) and
-  `HistoriqueSection.tsx` — test-only. `RevisionDrawer` also duplicates ~75 lines of
-  `SourceChainSheet.tsx`; deleting it removes both findings.
-- **P1** `src/components/admin/RevisionPublishDialog.tsx`, `play/MercatorProjectionStage.tsx`,
-  `fiche/CountrySynthesisBrief.tsx`, `oral-narratives/OralNarrativeForms.tsx`,
-  `patronymes/PeopleBorneNamesSection.tsx` — test-only.
-- **P1** `colonization/GazeEventNarrativeSection.tsx`, `BorderCrossingTable.tsx`,
-  `ImposedNameList.tsx` (+ `imposedNames.ts`), `system/CitationBlock.tsx`
-  (+ `citation-formatters.ts`), `HierarchyTree.tsx`, `HierarchyTextIndex.tsx`,
-  `compare/CompareShareBar.tsx` — test/story-only, several translated in the 2026-09-05→07 i18n
-  sweeps while unused.
-- **P1** `src/components/charts/DemographicsChart.tsx` — story-only; the sole reason `recharts` is a
-  dependency.
-- **P1** `src/components/country/HistoricalFactsSection.tsx` (re-exported by `country/index.ts`) and
-  the `PeopleCultureGrid` component (production uses only `splitSourcedProse` from that file).
-- **P2** `src/components/ui/{accordion,drawer,progress,separator,table,skeleton,alert,checkbox,pagination,LoadingState}.tsx`
-  — shadcn primitives reached only by stories or `charterPrimitives.test.tsx`.
+- **P1** `src/api/v2/services/personService.ts` → `src/lib/supabase/queries/afrik/persons.ts` →
+  `src/types/persons.ts` `Person` — the whole person service chain.
+- **P1** `src/lib/games/corpus.en.ts`, `landmarks.en.ts`, `projectionContrast.en.ts`,
+  `projectionContrast.ts` — the English games bank and the Mercator contrast.
+- **P1** `src/lib/revisions/publishRevision.ts`.
+- **P1** `src/lib/rights/rights-lifecycle.ts`, `src/lib/rights/protected-asset-access.ts`.
+- **P1** `src/lib/afrik/parsers/oralNarrativeParser.ts`, `sourceParser.ts` →
+  `src/lib/sources/source-model.ts`, with `StructuredSourceRecord`, `AssertionSourceReference`,
+  `LegacySourceCandidate` in `src/types/sources.ts`.
+- **P1** `src/lib/glossaire/entries.en.ts`, `src/lib/atlas/equalAreaProjection.ts`,
+  `src/lib/supabase/queries/afrik/nameVariants.ts`.
 
-**Dead code inside live modules**
+**Exports reached only by tests**
 
-- **P1** `src/lib/cache/clientCache.ts:40,101,148` — `getCachedData`, `setCachedData`, `clearCache`
-  have no callers; the whole localStorage cache is dead since the V1 removal. Its only import,
-  `CACHE_KEYS` in `afrikLoader.ts:25`, is itself unused.
-- **P1** `src/lib/cache/dataVersion.ts:28,43,53` — `getDataVersion`, `incrementAllVersions`,
-  `getAllVersions` have no callers. `POST /api/admin/revalidate` still calls `incrementDataVersion`,
-  bumping a counter nothing reads.
-- **P1** `src/lib/afrikLoader.ts:10-37` — 11 unused imports; `getLanguageFamilies` (`:95`) is
-  imported only by its test.
-- **P1** `src/api/v2/services/gamesService.ts:54,74` — private helpers `section()` and `asNumber()`
-  never called.
-- **P1** route files with unused imports: `atlas/familles/[slug]/page.tsx:38`
-  (`getLanguageFamilyById`), `atlas/peuples/[slug]/page.tsx:40` (`getPeopleById`),
-  `api/docs/route.ts:1` (`NextResponse`).
-- **P1** `src/lib/afrik/loaders/{countryJsonLoader:61,familyJsonLoader:70,peopleJsonLoader:103}` —
-  three `clear*Cache` exports never called.
-- **P1** unused exports in `src/lib`: `ficheSourceLabel.ts:33` `ficheSourceLine`,
-  `normalize.ts:17` `getNormalizedFirstLetter`, `validations/contribution.ts:9`
-  `contributionTypeSchema`, `atlas/footprintStyle.ts:36,38` `FOOTPRINT_STROKE_WIDTH*`;
-  test-only: `hooks/use-consent.tsx` `useOptionalConsent`, `atlas/projectionMorph.ts` `MORPH_VIEWBOX`.
-- **P2** `src/types/afrik.ts` (14 types) and `src/types/afrik-frontend.ts` (11 types) — V1-era CSV
-  and search shapes; `src/api/v2/schemas/*` — 17 inferred types never imported; 8 unused shadcn
-  re-exports.
-- **P2** `src/app/docs/api/v2/page.tsx:86` — a "Voir l'API v1" button to `/docs/api/v1`, which only
-  redirects back. The one surviving V1 reference in the UI. No V1 _imports_ survive.
+- **P1** `src/api/v2/services/revisions.ts:5,21` `insertRevision`/`getRevision`;
+  `services/migrations.ts:120` `listMigrationPaths`; `utils/validation.ts:72` `validateMedia`.
+- **P1** `src/lib/peopleDataTransformer.ts:213,320,355,502` — `extractAppellationShort`,
+  `hasOriginContent`, `transformEgoNetworkPreview`, `fetchPeopleNamesDossier`.
+- **P1** `src/lib/atlas/overlays.ts:151,184,648` — `getWorldCompareNameFr`, `getAfricaAdmin0Rings`,
+  `buildCountrySetOverlay`.
+- **P1** `queries/afrik/peoples.ts:427` `getAfrikPeoplesByCountry`; `module-zero-batch.ts:273`
+  `getLatestRevisionMap`; `loaders/peopleJsonLoader.ts:85` `loadPeoplesByLanguageFamily`.
+- **P1** `src/types/sources.ts:79,90` — `SOURCE_TIER_WEIGHTS`, `AI_PROVENANCE_WEIGHT`: the weights
+  `CLAUDE.md` documents are not what production uses; the SQL copy is (test-guarded, D8-1).
+- **P1** a further 20 test-only exports: `clearConsent`, `hasRenderableSynthesis`,
+  `isModuleAvailable`, `lintFicheProse`, `sidecarPathFor`/`sourcePathFor`, `MAX_ZOOM`,
+  `panelFreeRegion`, `COUNTRIES_WITHOUT_ISO_FLAG`, `modelChapterKeys`, `RELATION_TYPE_LABEL_FR`,
+  `isOptionRound`, `GAME_SLUGS`, `SCALE_FACT_PROVENANCE_PATHS`, `EDITORIAL_READINESS_STATES`,
+  `CLASS_EXCEPTIONS`, `quizTrackLabelFr`, `UNLISTED_ROUTES`, `validateAuthorizedSourceCatalog`.
+- **P1** D4-5 — the gate gap that lets all of the above grow.
 
-**Unreferenced scripts** (invisible to knip, which treats all of `scripts/**` as entries)
+**Unreferenced scripts** (invisible to knip, which treats `scripts/**` as entries)
 
-- **P2** `scripts/testLoader.ts`, `scripts/checkCountrySynthesis.ts`,
-  `scripts/anecdotes/sourceIllustrations.ts`, `scripts/audit/runAudit.ts` (sole entry to
-  `auditRunner`/`gapAnalyzer`/`reportGenerator`), and `extractClanNames.ts`,
-  `extractNameRecordsFromFiches.ts`, `alignExternalIdentifiers.ts` — named by no npm script, workflow,
-  doc or skill.
-- **P2** `scripts/setup-hooks.sh` — unreferenced, and running it would overwrite husky's `commit-msg`
-  and add a `pre-push` hook `.husky/` does not have.
-- **P2** `scripts/ci/checkRlsCoverage.ts` — a CI-shaped gate wired to nothing. Confirm whether it was
-  meant to block.
+- **P2** `scripts/anecdotes/sourceIllustrations.ts`, `extractClanNames.ts`,
+  `extractNameRecordsFromFiches.ts`, `alignExternalIdentifiers.ts` — named by no npm script or
+  workflow. `testLoader.ts`, `checkCountrySynthesis.ts`, `audit/runAudit.ts` and `setup-hooks.sh` are
+  deleted; `check:rls-coverage` is wired into CI.
 
-**Duplication** — jscpd (≥ 50 tokens, ≥ 5 lines): `src/` **4.49 %** (13 649 lines, 1 016 clones;
-269 outside tests and stories); `scripts/` + `social/tools` + `eslint/` **3.45 %** (74 clones
-outside tests).
+**Duplication** — jscpd (≥ 50 tokens, ≥ 5 lines): `src/` **4.12 %** (930 clones, 221 outside tests
+and stories; 4.49 % yesterday); `scripts/` + `social/tools` + `eslint/` **2.91 %** (3.45 %).
 
-- **P1** D7-1 — ISO code table duplicated and drifted (`countryNames.ts` ↔ `countryFlag.ts`).
-- **P1** D7-2 — facet hub pages copied across `langues`/`peuples`/`noms`, diverged on error handling.
-- **P1** D7-3 — AFRIK loader Supabase writers (`upsertSource` ~35 lines, `findOrCreateFicheRevision`
-  ~30, `findOrCreateAssertion` ~45) copied across five loaders.
-- **P1** `scripts/lib/clanNameSourceTier.ts` ↔ `personCandidateSourceTier.ts` (identical but for
-  renames, ~90 lines), `clanNameDetection.ts` ↔ `personCandidateDetection.ts`,
-  `extractClanNames.ts` ↔ `extractPersonCandidates.ts`, `clanNameTypes.ts` ↔ `personCandidateTypes.ts`.
-- **P2** v2 `[id]` route validation block (~24 lines) in 5 routes; year-range formatting in 3
-  components; 5 `dossiers/nommer/*/page.tsx` differing only in slug; three `*-bundle-size.ts`
-  scripts; `handlers/countries.ts` ↔ `handlers/peoples.ts` list envelope.
-- **P2** 11 hand-rolled NFD accent-strip snippets in `src/` beside the shared `src/lib/normalize.ts`.
+- **P2** `atlas/langues` ↔ `atlas/peuples` pages, 49 + 46 lines (D7-2).
+- **P2** `src/lib/api/openapiV2.ts:94,182,333` — a 41-line block three times in one file.
+- **P2** `queries/afrik/countries.ts:39`, `languageFamilies.ts:57`, `languages.ts:171` — a 29-line block.
+- **P2** a 17-line block in nine v2 routes and an 18-line block in five `[id]` routes.
+- **P2** `peopleAppellationLoader.ts:88-218` — a batched second writer for sources, revisions and
+  assertions beside `provenanceWriter.ts` (documented; see D8-8).
+- **P2** accent stripping outside `src/lib/normalize.ts` in 14 places (8 in `src/`, 6 in `scripts/`;
+  11 yesterday).
+- **P2** `social/harness/hf-workflows/subtitles/scripts/fonts/` — three byte-identical copies of fonts
+  in `social/harness/fonts/`.
 
-**§social — the Python render engine** (`social/harness/`, no dead-code tool covers it; traced by
-import graph)
+**Surviving V1 imports:** none. The "Voir l'API v1" button is gone; one V1 link remains (D7-6).
 
-- **P1** D7-4 — two engines coexist. The live path is `ethni_carrousel2.py` → `ethni_compose.py` and
-  `ethni_audio.py` → `ethni_montage.py`; none of them imports `ethni_render.py`, `ethni_card.py`,
-  `ethni_carousel.py`, `ethni_compose_v1.py`, `ethni_type.py`, `ethni_plaque.py` or `gold_burn.py`
-  (~1 950 lines), which only import each other.
-  - `ethni_render.py` + `ethni_compose_v1.py` are kept **on purpose** for montages of the retired
-    gabarit (production skill, "`ethni_render.py` survit pour les montages de l'ancien gabarit").
-  - `ethni_carousel.py` (+ `ethni_card.py`) is kept "until the video engine moves too"
-    (`ethni_carrousel2.py:6`). **The video engine has moved** — the stated removal condition is met.
-- **P2** `social/harness/hf-workflows/subtitles/scripts/fonts/` holds byte-identical copies
-  (same SHA-1) of `Anton-Regular.ttf`, `Montserrat-ExtraBold.ttf` and `TikTokSans-Bold.ttf` from
-  `social/harness/fonts/` (~750 KB), used only by the legacy `gold_burn.py` path.
-- **P2** the anti-literal gate `test_ethni_tokens.py:193-195` scans only `ethni_carousel.py` and
-  `ethni_render.py` — the two retired files. The live modules are clean today (no colour literal in
-  `ethni_compose`, `ethni_montage`, `ethni_carrousel2`, `ethni_soustitre`) but unguarded.
-
-**Knip configuration blind spots**
-
-1. Tests and stories as entries hide all "test/story-only" findings above. A second CI tally with
-   `knip --production` and its own ratchet would expose them without losing the current one.
-2. `scripts/**`, `social/tools/**/*.mjs` and `e2e/**` as entries hide unreferenced scripts; `.sh`
-   and `.py` are not analysed at all.
-3. `ignoreExportsUsedInFile: true` hides exports used only in their own file (minor).
-4. Unused locals are ESLint's job, and `no-unused-vars` is a warning.
-
-_Penalty: >15 P1 → −2 on Domains 4 and 7. Overlap with hardcoded values: none counted twice._
+_13 P1 → −1 on Domains 4 and 7. Overlap with hardcoded values: `protected-asset-access.ts` counted
+here only._
 
 ---
 
@@ -490,25 +469,28 @@ _Penalty: >15 P1 → −2 on Domains 4 and 7. Overlap with hardcoded values: non
 | Step                                      | Verdict                                                  |
 | ----------------------------------------- | -------------------------------------------------------- |
 | `git clone` + `npm ci --legacy-peer-deps` | ✅ legacy peer deps intentional (Storybook vs Next)      |
+| Node version                              | ⚠️ `.nvmrc` 22, not enforced; gates pass on 20 — D5-2    |
 | `.env.example` → `.env.local`             | ✅ `check:env-example` verifies both directions          |
-| `supabase/migrations/` apply in order     | ✅ 87 files, sequential, no duplicate prefix             |
-| `npm run build`                           | ✅ passes (Sentry `disableLogger` deprecation warning)   |
-| `npm run test` / `make check`             | ✅ 9 133 pass; lint 0 errors; format and typecheck clean |
-| Tree clean after `build`                  | ⚠️ `next-env.d.ts` rewritten — D2-1                      |
+| `supabase/migrations/` apply in order     | ✅ 88 files, sequential, no duplicate prefix             |
+| `npm run build`                           | ✅ passes (`middleware` → `proxy` deprecation, D5-3)     |
+| `npm run test` / `make check`             | ✅ 8 983 pass; lint 0 errors; format and typecheck clean |
+| Tree clean after `build`                  | ✅ `next-env.d.ts` untracked                             |
 | First admin seeded                        | ✅ `ADMIN_EMAIL=… npx tsx scripts/seedAdmin.ts`          |
 
 ---
 
 ## 8. Security posture
 
-**RLS coverage — 45 live tables, 45 enabled, 69 live policies.** Net of the seven V1 tables dropped
-in `007`, `contributions` dropped in `081`, and superseded policies. No `RLS = No` row: **no P0**.
+**RLS coverage — 45 live tables, 45 enabled, 69 live public-schema policies.** `check:rls-coverage`
+reports "OK (45 tables, all behind RLS)". Migrations 081–088 drop `contributions` (081) and add
+`afrik_dossiers` (082) and `afrik_translations` (085), both already reflected below. No `RLS = No`
+row: **no P0**.
 
 | Table                     | RLS (migration) | Policies | Notes                        |
 | ------------------------- | --------------- | -------: | ---------------------------- |
 | admin_allowlist           | Yes (074)       |        0 | deny-all, intent commented   |
 | afrik_countries           | Yes (019)       |        1 |                              |
-| afrik_dossiers            | Yes (082)       |        1 |                              |
+| afrik_dossiers            | Yes (082)       |        1 | public read, service writes  |
 | afrik_language_families   | Yes (019)       |        1 |                              |
 | afrik_languages           | Yes (019)       |        1 |                              |
 | afrik_media               | Yes (073)       |        1 |                              |
@@ -521,10 +503,10 @@ in `007`, `contributions` dropped in `081`, and superseded policies. No `RLS = N
 | afrik_people_languages    | Yes (054)       |        1 |                              |
 | afrik_people_relations    | Yes (030)       |        1 | policy in a `DO` block       |
 | afrik_peoples             | Yes (019)       |        1 |                              |
-| afrik_translations        | Yes (085)       |        1 |                              |
+| afrik_translations        | Yes (085)       |        1 | public read, service writes  |
 | antibot_challenges        | Yes (048)       |        0 | deny-all, commented `048:94` |
 | api_keys                  | Yes (012)       |        1 |                              |
-| assertion_references      | Yes (040)       |        1 |                              |
+| assertion_references      | Yes (040)       |        1 | service-role writes — D1-9   |
 | assertions                | Yes (015)       |        1 |                              |
 | audit_log                 | Yes (009)       |        2 | explicit insert deny         |
 | confidence_scores         | Yes (015)       |        1 |                              |
@@ -548,56 +530,67 @@ in `007`, `contributions` dropped in `081`, and superseded policies. No `RLS = N
 | revision_drafts           | Yes (023)       |        4 |                              |
 | revisions                 | Yes (021)       |        2 |                              |
 | search_query_log          | Yes (050)       |        0 | deny-all, commented `050:9`  |
-| source_working_assets     | Yes (034)       |        5 |                              |
-| sources                   | Yes (015)       |        1 |                              |
+| source_working_assets     | Yes (034)       |        5 | service-role writes — D1-9   |
+| sources                   | Yes (015)       |        1 | service-role writes — D1-9   |
 | user_roles                | Yes (008)       |        4 |                              |
 
-**Definer functions:** all nine live `SECURITY DEFINER` functions set `search_path`; privileged ones
-revoke `EXECUTE` from `PUBLIC`/`anon`; `erase_contributor_account` is `service_role` only
-(`027:90-95`); `publish_revision` checks `auth.uid()` and role in its body (`051:71-84`). The three
-`private.is_*` helpers are granted to `anon` so policies can evaluate (`077:120-122`); `private` is
-not an exposed schema per `077:7-8` — confirm `PGRST_DB_SCHEMAS` on the VPS.
+**RLS does not cover D1-9.** The reference-library handlers write `sources`, `assertion_references` and
+`source_working_assets` through the service-role client, which bypasses every policy above; the
+authorization has to live in the service.
 
-**Edge and application:** see §2.4 and D1-2 … D1-8. **Secrets:** only `.env.example` and
-`e2e/.env.example` tracked; the one pattern hit is a false positive (an encrypted route id in a
-parliament URL, `PAT_BABIRYE.json:64`). **Supply chain:** Dependabot weekly on both ecosystems; `npm
-audit` 0 critical / 2 high / 10 moderate. **Console discipline:** 25 `console.*` calls outside tests,
-4 inside the logger itself, none in a `no-console`-error directory.
+**Functions:** no new `SECURITY DEFINER` in 081–088. The five `afrik_search_*` functions (084) and
+`afrik_search_quiz` (087) are `SECURITY INVOKER`, pin `search_path` and revoke from `PUBLIC`;
+`recompute_confidence` (088) is `INVOKER` and restates `SET search_path` (`088:68`). The earlier
+definer functions are unchanged; `private` is not an exposed schema per `077:7-8` — confirm
+`PGRST_DB_SCHEMAS` on the VPS.
+
+**Edge and application:** see §2.4 and D1-6 … D1-10. **Secrets:** only `.env.example` and
+`e2e/.env.example` tracked; `.gitignore:43-47` covers every variant. **Supply chain:** 22 pinned SHAs,
+all resolving; Dependabot weekly; `npm audit` 0 critical / 0 high / 10 moderate (`@sentry/nextjs` →
+`@opentelemetry`, `uuid` via exceljs and Storybook, `fflate`, `@humanfs`). **Console discipline:** 18
+`console.*` calls outside tests — 10 in hand-run asset generators, 3 in the logger itself — none in a
+`no-console`-error directory. **Code debt:** one real `TODO` (`src/app/[lang]/not-found.tsx:59`,
+ETNI-247).
 
 ---
 
 ## 9. Performance & accessibility posture
 
-- **axe-core (`a11y.yml`)** — runs on PRs to `recette` and `main`, required as
-  `axe-core (Storybook)`, no `continue-on-error`, green. A real gate.
-- **Lighthouse (`.lighthouserc.js`, `lighthouse.yml`)** — 30 URLs, 3 runs each, mobile 360×640,
-  simulated 4G; budgets perf ≥ 0.85, a11y = 1, best-practices ≥ 0.95, LCP ≤ 5 500 ms, TBT ≤ 300 ms.
-  **Not required, red 13/15;** v4.8.0 failed 45 assertions. The migrations-route CLS/FID budgets are
-  inert because that route 404s.
-- **E2E (`e2e.yml`)** — does run `npx playwright test` and fails loudly without its secrets. Runs on
-  PRs to `main`, nightly and on dispatch; **not required, red 15/15**; v4.8.0: fr 57 failed.
+- **axe-core (`a11y.yml`)** — runs on PRs to `recette` and `main`, required on both, green.
+- **Lighthouse gate (`lighthouse.yml`, PR job)** — 4 routes, required on `recette`, 7/7 green. Budgets
+  (`.lighthouserc.js:182-228`): accessibility = 1 and best-practices ≥ 0.95 everywhere; non-fiche
+  routes performance ≥ 0.73, LCP ≤ 5 500 ms, TBT ≤ 300 ms; fiche routes LCP ≤ 6 500 ms, TBT ≤ 3 600 ms,
+  performance a **warning** at 0.85 (measured medians 0.45–0.47, attributed to software rasterisation
+  of the WebGL globe on a GPU-less runner); comparator routes CLS ≤ 0.1, max-potential-FID ≤ 200 ms.
+- **Lighthouse full matrix** — nightly, PRs to `main`, dispatch; not required; red on `main`'s
+  pre-rebase budgets until promotion (D3-4).
+- **E2E** — `Playwright smoke (fr, 430px)` required on `recette` (mobile-first width), red once on
+  shared-database contention (D3-5); full matrix nightly, not required, red on `main`'s stale specs.
+- **Core Web Vitals in the field** — no measurement found in the repository; the lab cannot speak
+  for the fiche pages (D9-2).
 
 ---
 
 ## 10. AFRIK data integrity & Source Tier compliance
 
-| Check                                            | Verdict                                                                                |
-| ------------------------------------------------ | -------------------------------------------------------------------------------------- |
-| 1. Strict model adherence (17 models, 1 721)     | ✅ 50/50 validator checks                                                              |
-| 2. Validator run                                 | ✅ 0 errors, 5 597 warnings (+65)                                                      |
-| — FR28 hard gate [95,105]                        | ✅ **0** offenders (blocking)                                                          |
-| — FR28-strict [99,101]                           | ✅ **0** offenders (blocking); only `FR52-coverage` soft (23)                          |
-| 3. FLG / PPL / ISO referential integrity         | ✅ all reference checks pass                                                           |
-| 4. Source Tier — every source carries a tier     | ✅ 0 untiered, 0 empty `sources`                                                       |
-| 4. Source Tier — vocabulary agrees across layers | ❌ **D8-1** — 1 002 `needs_review` unstorable in the DB                                |
-| 5. Database vs source JSON                       | N/A — needs credentials; not covered by `validateAfrikData.ts`                         |
-| 6. CI enforcement                                | ❌ **D8-3** nightly 5/5 red, quiz-bank check crashing; **D8-4** editorial not required |
-| 7. Known issues carry-over                       | ❌ **D8-2** — 4 348 workshop phrases in reader-facing `notes` (was 1 010 counted)      |
-| Editorial rules                                  | ✅ 0 errors, 97 warnings; chronology ratchet at ceiling (95/95)                        |
-| Translation parity                               | ✅ blocking on diffs in CI; survey backlog 1 669 (D8-5)                                |
+| Check                                            | Verdict                                                                                   |
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+| 1. Strict model adherence (17 models, 1 722)     | ✅ 50/50 validator checks; 15 fiches hand-sampled across nine models, sections in order   |
+| 2. Validator run                                 | ✅ 0 errors, 5 597 warnings                                                               |
+| — FR28 hard gate [95,105]                        | ✅ **0** offenders (blocking)                                                             |
+| — FR28-strict [99,101]                           | ✅ **0** offenders (blocking); only `FR52-coverage` soft                                  |
+| 3. FLG / PPL / ISO referential integrity         | ✅ 776 people fiches, folder = family field; 54 country codes, 34 language codes valid    |
+| 4. Source Tier — every source carries a tier     | ✅ 0 untiered, 0 empty `sources`; 89 social/blog links all at weight 0.4                  |
+| 4. Source Tier — vocabulary agrees across layers | ✅ D8-1 fixed by `088`; ⚠️ loaders disagree on storing `needs_review` (D8-8, P2)          |
+| 5. Database vs source JSON                       | ✅ by CI: `verifyCorpusInDatabase.ts` runs after every recette and production sync        |
+| 6. CI enforcement                                | ❌ **D8-7** nightly confidence recompute crashing; PR gates required and green on recette |
+| 7. Known issues carry-over                       | ✅ D8-2 at 0 occurrences; `FLG_AFROASIATIQUE` still has no people folder (informational)  |
+| Editorial rules                                  | ✅ 0 errors, 97 warnings; chronology ratchet at ceiling (95/95)                           |
+| Translation parity                               | ✅ blocking on diffs in CI; survey backlog 821 (D8-5)                                     |
+| Source-tier ratchet                              | ✅ `needs_review` 1 000 / 1 000, two-way                                                  |
 
-Warning motifs: `cites "unknown"` 3 891 (was 3 835), `carries no URL` 1 683 (was 1 674). Tier
-distribution: `unverified` 3 320 · `referenced` 1 900 · `official` 1 630 · `needs_review` 1 002.
+`classificationStatus` is absent from 311 of 776 people fiches and 5 of 24 families; the model says
+to omit it until review (`modele-peuple.json:11`), so this is an editorial backlog, not a breach.
 
 ---
 
@@ -605,36 +598,36 @@ distribution: `unverified` 3 320 · `referenced` 1 900 · `official` 1 630 · `n
 
 No finding below has a Jira ticket yet; IDs refer to this report.
 
-| #   | Pri | Action                                                                                                                                                                                           |
-| --- | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1   | P1  | **D1-2** — decide whether `/api/v2` is keyless-public; if not, stop authorizing on `Origin`/`Referer`. Document the answer in the OpenAPI either way.                                            |
-| 2   | P1  | **D1-3** — `overrides` pin `js-yaml >= 4.3.2`; re-run `npm audit`.                                                                                                                               |
-| 3   | P1  | **D3-2 + D3-1** — repair the Storybook deploy pin; make `check:action-pins` resolve each SHA, not just match its shape. Fix or quarantine E2E; set `FERRY_SPEND_CAP_EUR`.                        |
-| 4   | P1  | **D8-3** — make `generateQuizQuestions.ts --check` load without `server-only`; fix or re-tier the unreachable source URL so the nightly run goes green.                                          |
-| 5   | P1  | **D8-4** — add `editorial-rules` to the required checks on `recette` and `main`.                                                                                                                 |
-| 6   | P1  | **D4-2** — add a `knip --production` tally to `check:dead` with its own ratchet; delete the 27 unreachable files and drop the 7 runtime dependencies it finds.                                   |
-| 7   | P1  | **D8-2** — extend the reader-register patterns to "domain ruling" / "awaits editorial review", watch the gate fail, then rewrite the 4 348 occurrences.                                          |
-| 8   | P1  | **D8-1** — one migration: admit `needs_review` in `sources.tier` and give `recompute_confidence()` an `ELSE`.                                                                                    |
-| 9   | P1  | **D7-1 + D7-2** — one ISO code table; one facet-hub read wrapper (restores the missing error state on `peuples`).                                                                                |
-| 10  | P1  | **D9-1** — decide whether Lighthouse budgets gate anything; either make the workflow required on a scoped route set or record the budgets as advisory.                                           |
-| 11  | P1  | **D10-4 + D10-6** — resolve the `CLAUDE.md` gabarit-spec contradiction; bring `migration-state.md` up to 087.                                                                                    |
-| 12  | P1  | **D7-4** — retire `ethni_carousel.py` + `ethni_card.py` now that their removal condition is met; point `README.md` and `GABARITS-SOCIAL.md` at the live engine; aim the anti-literal gate at it. |
-| 13  | P1  | **D10-1** — run and record a restore drill against recette.                                                                                                                                      |
-| 14  | P1  | **D7-3** — one assertion writer for the five AFRIK loaders.                                                                                                                                      |
-| 15  | P2  | Batch: D1-4 open redirect, D1-6 hash the rate-limit identifier, D1-7 Sentry scrubbing, D2-1 untrack or stabilise `next-env.d.ts`, D10-2/3/5 doc drift, promote `no-unused-vars` to error.        |
+| #   | Pri | Action                                                                                                                                                                      |
+| --- | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | P1  | **D1-9** — confirm whether sign-up is open on the self-hosted production Auth; require `contributor`+ from `user_roles` in `reference-library.ts` either way.               |
+| 2   | P1  | **D8-7** — add `NODE_OPTIONS=--conditions=react-server` to both steps of `confidence-recompute.yml`, and extend the module-graph test to cover `recomputeConfidence.ts`.    |
+| 3   | P1  | **D3-5** — give `Playwright smoke` its own Supabase target (or serialise it with the recette data sync), then re-run and merge #1009 to promote `recette` to `main` (D3-4). |
+| 4   | P1  | **D4-5** — add `exports` and `types` to the production knip tally with their own ceilings; delete the test-only modules and exports it lists.                               |
+| 5   | P1  | **D10-1** — run and record a restore drill against recette; name the owner in `restore-procedure.md:205`.                                                                   |
+| 6   | P1  | **Hardcoded P1s** — one `API_KEY_TIERS` and one `SOURCE_STANDINGS` constant; fix the OpenAPI server label (D7-5); import pagination limits from `schemas/pagination.ts`.    |
+| 7   | P2  | **D3-3** — require the same nine checks on `main` as on `recette`.                                                                                                          |
+| 8   | P2  | **D1-10** — make key issuance a POST behind the antibot check, with one trusted client-IP helper shared with `rate-limit.ts` (D1-6); move its query into a service.         |
+| 9   | P2  | **D8-8** — one rule for storing `needs_review` across `peopleAppellationLoader.ts` and `provenanceWriter.ts`.                                                               |
+| 10  | P2  | **D6-2 + D6-3** — one Ferry version across actions and CLI; align `ferry-jira-automation-setup.md` with `ferry.config.yaml` or mark it SUPERSEDED.                          |
+| 11  | P2  | **D5-2 + D1-8** — `engine-strict=true` in `.npmrc`; move the six remaining CI jobs to Node 22.                                                                              |
+| 12  | P2  | **D4-4** — raise the timeout on `initCountryEnrichment.test.ts:173` or make the test cheaper.                                                                               |
+| 13  | P2  | **D10-6 + D10-9** — add `088` to `migration-state.md`; fix the two stale comments.                                                                                          |
+| 14  | P2  | **D10-8** — drop the `api-contracts.md` and `project-context.md` checks from the audit skill, or point them at what replaced those files.                                   |
+| 15  | P2  | Batch: D5-3 `middleware` → `proxy`, D7-6 `/api/docs/v1` link, D7-2 facet-hub clones, D7-4 token-test scope, the four unreferenced scripts, 14 accent-strip copies.          |
 
 ---
 
 ## 12. Conclusion
 
-**6.5 / 10, down from 7.9 — and the honest reading is that the number moved more than the code
-did.** This revision measured what the last one read from configuration: the CI runs, the Lighthouse
-and E2E outcomes, branch protection, and what the dead-code ratchet actually counts. Each of those
-measurements was less flattering than its configuration.
+**7.5 / 10, up from 6.5 — and unlike the last move, this one is the code.** Within a day of the fifth
+revision, 20 of its 33 findings were fixed and 9 more partly, most with a test that keeps them fixed: the gates that
+reported without blocking became required, the dead code was deleted rather than ratcheted, the tier
+vocabulary now agrees from JSON to SQL, and the edge stopped pretending a header was a credential.
 
-The core is sound. The required gates are honest, every live table is under RLS, two releases
-shipped cleanly in a day, and 9 133 tests pass. What pulls the score down is a pattern rather than a
-defect: **gates that exist, run, and do not block** — E2E, Lighthouse, editorial rules, a nightly
-quiz check that crashes before checking, an action pin that cannot resolve, a dead-code ratchet
-blind to anything a test still imports. The fix is not more gates. It is deciding, gate by gate,
-whether each one guards something — and then either making it required or removing it.
+What holds the score below 8 is narrower than yesterday. One authorization gap (D1-9) whose severity
+depends on a production setting the repository cannot show. One nightly job the repair wave missed
+(D8-7). And one merge: every CI fix lives on `recette`, the nightly runs read `main`, and the PR that
+would reconcile them is blocked by a required check that shares its database with a data sync.
+Unblock that merge and most of the red in this report turns green without touching a line of product
+code.
