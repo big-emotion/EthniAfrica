@@ -25,7 +25,7 @@
 import type { CorpusFigure, FigureKey } from "./types";
 
 /** Every count below was taken against `recette` on this date. */
-const COUNTED_ON = "2026-09-10";
+const COUNTED_ON = "2026-09-13";
 
 const PEOPLE_GLOB = "dataset/source/afrik/peuples/*/*.json";
 
@@ -152,7 +152,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-pejorative",
     label: "fiches qualifiant un exonyme de dépréciatif",
-    value: 85,
+    value: 84,
     method: `radicaux ${PEJORATIVE_STEMS.join(", ")} dans originOfExonyms + whyProblematic`,
     countedOn: COUNTED_ON,
   },
