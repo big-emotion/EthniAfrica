@@ -87,7 +87,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "colonial",
-              "240",
+              "241",
               "Le nom est daté de la colonisation, ou officialisé par elle",
             ],
             sourceRefs: [],
