@@ -11,8 +11,8 @@
  * copies were five places for them to drift.
  *
  * What genuinely differs between callers is a parameter, never a branch on the
- * entity type: which source columns a model carries, whether a revision is
- * stamped, and whether an assertion is anchored to a revision at all.
+ * entity type: which source columns a model carries and whether a revision is
+ * stamped.
  */
 
 import { logger } from "@/lib/api/logger";
@@ -189,12 +189,7 @@ export interface AssertionWrite {
   fieldPath: string;
   statement: string;
   sourceIds: string[];
-  /**
-   * `null` sends no revision at all. Only the person loader does this, and the
-   * column has been NOT NULL since migration 020 — it is a defect carried over
-   * unchanged, not a supported mode.
-   */
-  ficheRevisionId: string | null;
+  ficheRevisionId: string;
 }
 
 /**
@@ -237,9 +232,7 @@ export async function findOrCreateAssertion(
       field_path: assertion.fieldPath,
       statement: assertion.statement,
       source_ids: assertion.sourceIds,
-      ...(assertion.ficheRevisionId === null
-        ? {}
-        : { fiche_revision_id: assertion.ficheRevisionId }),
+      fiche_revision_id: assertion.ficheRevisionId,
     })
     .select("id")
     .single();

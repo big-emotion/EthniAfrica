@@ -1,6 +1,6 @@
 /**
  * Person JSON loader — reads dataset/source/afrik/personnes/*.json and writes
- * each fiche's sources, assertion and person row (plus its people/country
+ * each fiche's sources, revision, assertion and person row (plus its people/country
  * joins) into the Module 0 fabric + persons schema (ARCH-018, migration 057).
  * See ETNI-1382/ETNI-1586.
  */
@@ -10,6 +10,7 @@ import { join } from "path";
 import { logger } from "@/lib/api/logger";
 import { parsePersonFile } from "@/lib/afrik/parsers/personParser";
 import {
+  findLatestOrCreatePlaceholderRevision,
   findOrCreateAssertion,
   supabaseErrorMessage,
   upsertSource,
@@ -151,16 +152,24 @@ async function upsertPersonDossier(
     sourceIds.push(result.id);
   }
 
-  // No revision is written for a person, so the assertion carries none. The
-  // column is NOT NULL since migration 020; this is a known defect kept as-is
-  // by the writer consolidation, not a mode to copy.
+  const revision = await findLatestOrCreatePlaceholderRevision(
+    supabase,
+    "person",
+    dossier.id,
+    dossier
+  );
+  if ("error" in revision) {
+    report.errors.push(`${dossier.id}: fiche_revisions — ${revision.error}`);
+    return;
+  }
+
   const assertion = await findOrCreateAssertion(supabase, {
     entityType: "person",
     entityId: dossier.id,
     fieldPath: "person",
     statement: dossier.fullName,
     sourceIds,
-    ficheRevisionId: null,
+    ficheRevisionId: revision.id,
   });
   if ("error" in assertion) {
     report.errors.push(`${dossier.id}: assertion — ${assertion.error}`);
@@ -204,7 +213,7 @@ async function upsertPersonDossier(
 
 /**
  * Loads every non-illustrative dataset/source/afrik/personnes/*.json fiche
- * and writes sources -> assertion -> persons + person_peoples +
+ * and writes sources -> fiche_revisions -> assertion -> persons + person_peoples +
  * person_countries for each (ARCH-018, Module 0 fabric). Trigger rejections
  * (sourceless assertions, defense in depth against enforce_person_sources())
  * are logged and skipped; remaining fiches still load.
