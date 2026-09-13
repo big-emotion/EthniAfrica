@@ -35,6 +35,8 @@ const en = {
   allOrigins: "All origins",
   empty: "No published proverb matches these filters.",
   sources: "Sources",
+  // The way in from the dossiers hub.
+  readAll: "Read the proverbs",
 };
 
 type ProverbsCopy = typeof en;
@@ -70,6 +72,7 @@ const fr: ProverbsCopy = {
   allOrigins: "Toutes les origines",
   empty: "Aucun proverbe publié ne correspond à ces filtres.",
   sources: "Sources",
+  readAll: "Lire les proverbes",
 };
 
 // @req REQ-145

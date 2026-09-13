@@ -122,6 +122,7 @@ export function deriveTrail(
         const dossier = [
           ...getDossiers({ language }),
           ...getDossiers({ format: "anecdote", language }),
+          ...getDossiers({ format: "proverb", language }),
         ].find(
           (candidate) =>
             pathname === candidate.href ||
