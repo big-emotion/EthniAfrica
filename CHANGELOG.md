@@ -10,6 +10,78 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [4.9.0] - 2026-09-13
+
+### Added
+
+- **Every sync now checks that the database serves what git holds.**
+  `scripts/afrik/verifyCorpusInDatabase.ts` compares, read-only, the entity
+  backbone (families, languages, peoples, people-languages, countries,
+  people-countries, patronymes) with what the JSON loaders produce: row counts
+  in both directions, plus a deterministic sample hashed over exactly the
+  columns each loader writes. It is the last step of both the recette and the
+  production data-sync jobs.
+- Migration `088` admits `needs_review` in `sources.tier`, the fourth standing
+  the corpus, the types, the glossary and the API already carried.
+  `recompute_confidence()` now weighs `needs_review` and an absent tier at 0.4.
+  Before, an untiered source produced `NULL` and `AVG()` skipped it, so an
+  unexamined source could never pull a score down. The deploy's `migrate` job
+  applies it.
+- A people record's names chapter prints each name once. The autonym tile folds
+  in its endonym records, and every exonym (from the appellations rubric or
+  from the names dossier) becomes one card carrying its imposition context.
+
+### Changed
+
+- **The people and country records now share their chapters instead of
+  duplicating them.** One summary panel draws both records with the shared stat
+  card, at the chapter's width. One history timeline places every political
+  entry by regime (precolonial, colonial, contemporary), and on a country each
+  colonial or modern station carries the name the territory bore. One culture
+  chapter, one names chapter and one sources chapter complete the set. The
+  retired per-record components go with their tests and stories. Corpus sweeps
+  hold every station and source across all 54 countries and 776 peoples.
+- The sources chapter draws its census: one bar segment per standing, as wide
+  as its share, with sources awaiting review hatched rather than filled.
+- **5,142 generated source notes were removed from the corpus** and 21
+  rewritten across 846 source records. The enrichment pipeline had written its
+  own bookkeeping ("Tier resolved from…", "the tier awaits editorial review")
+  into notes that reach the reader verbatim. Hand-written tier reasoning in six
+  people fiches was rewritten, and `checkEditorialRules.ts` now refuses tier
+  provenance in reader-facing notes.
+- **Node 22** is now the runtime everywhere: `engines`, `.nvmrc`, and every
+  workflow including `deploy-production.yml`.
+
+### Fixed
+
+- Range walks under `src/lib/supabase/queries` stopped on the first page
+  shorter than the size they asked for. With PostgREST's `max-rows` below that
+  size every page is short, so the first read as the last and the rest of the
+  table was dropped with no error. Walks now stop on an empty page.
+- Every country record printed a people's family by its identifier
+  ("Plateaux · FLG_BANTU") under each people in its peoples list, on all 54
+  records. It now prints the family's name.
+- The peoples hub states its unavailability when its read fails, as the
+  languages and names hubs already did, instead of reaching the error boundary.
+- Person assertions are anchored to a fiche revision, which the loader created
+  or resolved before inserting, so the required revision key is set and repeat
+  loads stay idempotent (ETNI-1914, #1008).
+- The name indexes and name lists get a 44px hit area.
+
+### Security
+
+- **`/api/v2` is public.** A request without a key falls into the documented
+  anonymous tier, a per-IP rate-limit bucket. `Origin` and `Referer` no longer
+  authorise anything. An invalid Bearer key is still a 401.
+- The edge was hardened at the same time: an open redirect in the auth callback
+  (backslash and dot-segment hosts) is closed, and `Permissions-Policy` is set.
+  Security headers now also go out on the redirects, 401s and 429s the
+  middleware answers itself. API keys are compared in constant time, rate-limit
+  identifiers are SHA-256 hashed, and Sentry scrubs more PII with
+  `sendDefaultPii: false` set explicitly.
+- CI fails a pull request on a high-severity npm advisory, and every pinned
+  GitHub Action commit is checked to actually exist.
+
 ## [4.8.0] - 2026-09-12
 
 ### Changed
@@ -860,7 +932,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.8.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.9.0...HEAD
+[4.9.0]: https://github.com/big-emotion/ethniafrica/compare/v4.8.0...v4.9.0
 [4.8.0]: https://github.com/big-emotion/ethniafrica/compare/v4.7.0...v4.8.0
 [4.7.0]: https://github.com/big-emotion/ethniafrica/compare/v4.6.0...v4.7.0
 [4.6.0]: https://github.com/big-emotion/ethniafrica/compare/v4.5.0...v4.6.0
