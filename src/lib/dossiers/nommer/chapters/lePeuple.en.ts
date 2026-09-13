@@ -56,7 +56,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
           ],
           [
             "administr-",
-            "179",
+            "180",
             "The name is an act of census-taking before it is a fact of language",
           ],
           ["europ-", "118", "Navigators, explorers, cartographers"],
@@ -72,7 +72,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
           ],
           [
             "portugais (‘Portuguese’)",
-            "83",
+            "82",
             "The deepest layer of the Atlantic coast, from the fifteenth century onwards",
           ],
           [

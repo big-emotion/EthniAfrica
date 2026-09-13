@@ -96,7 +96,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "administr-",
-              "179",
+              "180",
               "Le nom est un acte de recensement avant d'être un fait de langue",
             ],
             sourceRefs: [],
@@ -128,7 +128,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "portugais",
-              "83",
+              "82",
               "La strate la plus profonde de la côte atlantique, dès le XVe siècle",
             ],
             sourceRefs: [],
