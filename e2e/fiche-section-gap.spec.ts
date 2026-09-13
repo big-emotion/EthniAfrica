@@ -65,7 +65,13 @@ for (const [kind, markup] of fixtures) {
             return Math.round(current.top - previous.bottom);
           });
           const padding = getComputedStyle(nodes[0]).padding;
-          return { token, gaps, padding };
+          const parchment = nodes[0].closest(".afh-parchment");
+          const parchmentStyle = getComputedStyle(parchment);
+          const containerWidth =
+            parchment.clientWidth -
+            Number.parseFloat(parchmentStyle.paddingLeft) -
+            Number.parseFloat(parchmentStyle.paddingRight);
+          return { token, gaps, padding, containerWidth };
         });
 
       expect(result.token, `${kind} token at ${width}px`).toBe(expectedToken);
@@ -74,8 +80,14 @@ for (const [kind, markup] of fixtures) {
         [...new Set(result.gaps)],
         `${kind} at ${width}px: ${result.gaps.join(", ")}`
       ).toEqual([result.token]);
-      // A chapter carries 16px inline below the 760px container, 24px from it.
-      expect(result.padding).toBe(width < 768 ? "24px 16px" : "32px 24px");
+      // A chapter carries 16px inline below a 760px container, 24px from it.
+      // The container query measures the parchment's content box, not the
+      // viewport: its own inline padding keeps a 768px viewport under 760px,
+      // so the expectation follows the measured width rather than `width`.
+      expect(
+        result.padding,
+        `${kind} at ${width}px, container ${result.containerWidth}px`
+      ).toBe(result.containerWidth < 760 ? "24px 16px" : "32px 24px");
     }
   });
 }
