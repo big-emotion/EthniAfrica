@@ -51,12 +51,12 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
         rows: [
           [
             "colonial",
-            "240",
+            "241",
             "The name dates from colonisation, or was made official by it",
           ],
           [
             "administr-",
-            "179",
+            "180",
             "The name is an act of census-taking before it is a fact of language",
           ],
           ["europ-", "120", "Navigators, explorers, cartographers"],
@@ -72,7 +72,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
           ],
           [
             "portugais (‘Portuguese’)",
-            "83",
+            "82",
             "The deepest layer of the Atlantic coast, from the fifteenth century onwards",
           ],
           [
