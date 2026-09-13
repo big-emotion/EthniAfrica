@@ -64,7 +64,15 @@ export interface DiscoveryPublication {
    */
   captionExceedsCorpus?: boolean;
   captionSource?: { title: string; url: string };
+  /**
+   * Pre-rendered derived files under `public/`, by format. A format is
+   * declared only once its file ships; `scripts/__tests__/generatedImageDownloads`
+   * holds each declared file to its dimensions and its IPTC disclosure.
+   */
+  downloads?: Partial<Record<DownloadFormat, string>>;
 }
+
+export type DownloadFormat = "9:16" | "4:5" | "1:1";
 
 function hasText(value: string | undefined): boolean {
   return Boolean(value?.trim());
@@ -175,4 +183,26 @@ export function orderedDeck(
     if (index > 0) [ids[0], ids[index]] = [ids[index], ids[0]];
   }
   return ids;
+}
+
+const DOWNLOAD_FORMATS = [
+  { format: "9:16", width: 1080, height: 1920 },
+  { format: "4:5", width: 1080, height: 1350 },
+  { format: "1:1", width: 1080, height: 1080 },
+] as const;
+
+// Only a generated image ships derived files carrying its disclosure; a
+// photographed anecdote's picture belongs to its author and is linked instead.
+// @req REQ-166
+export function downloadChoices(entry: DiscoveryPublication): Array<{
+  format: DownloadFormat;
+  src: string;
+  width: number;
+  height: number;
+}> {
+  if (entry.kind !== "image") return [];
+  return DOWNLOAD_FORMATS.flatMap(({ format, width, height }) => {
+    const src = entry.downloads?.[format];
+    return hasText(src) ? [{ format, src, width, height }] : [];
+  });
 }

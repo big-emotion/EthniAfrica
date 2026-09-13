@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import {
   discoveryPath,
+  downloadChoices,
   eligiblePublications,
   orderedDeck,
   resolvePublication,
@@ -182,6 +183,46 @@ describe("Découvertes publication contracts", () => {
           },
         ])
       ).toEqual(["image:hausa-autonym"]);
+    });
+
+    const rendered = {
+      "9:16": "/images/discoveries/generated/hausa-autonym/9x16.jpg",
+      "4:5": "/images/discoveries/generated/hausa-autonym/4x5.jpg",
+      "1:1": "/images/discoveries/generated/hausa-autonym/1x1.jpg",
+    };
+
+    // @req REQ-166
+    it("offers the three pre-rendered formats in a fixed order at their exact dimensions", () => {
+      expect(downloadChoices({ ...generated, downloads: rendered })).toEqual([
+        { format: "9:16", src: rendered["9:16"], width: 1080, height: 1920 },
+        { format: "4:5", src: rendered["4:5"], width: 1080, height: 1350 },
+        { format: "1:1", src: rendered["1:1"], width: 1080, height: 1080 },
+      ]);
+    });
+
+    // @req REQ-166
+    it("never offers a format whose file is not declared", () => {
+      const withoutAvatar = {
+        ...generated,
+        downloads: {
+          "1:1": "",
+          "4:5": rendered["4:5"],
+          "9:16": rendered["9:16"],
+        },
+      };
+      expect(
+        downloadChoices(withoutAvatar).map((choice) => choice.format)
+      ).toEqual(["9:16", "4:5"]);
+      expect(downloadChoices(generated)).toEqual([]);
+    });
+
+    // A download carries the generated-image disclosure in its file; a
+    // photographed anecdote has no such file to hand out.
+    // @req REQ-166
+    it("offers no download for a publication that is not a generated image", () => {
+      expect(
+        downloadChoices(item("anecdote", { downloads: rendered }))
+      ).toEqual([]);
     });
   });
 
