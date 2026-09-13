@@ -12,11 +12,11 @@
  */
 
 /**
- * Mirrors the `sources_source_kind_check` constraint (migration 031). The
+ * Mirrors the latest `sources_source_kind_check` constraint (migration 089). The
  * vocabulary contract test parses the CHECK and compares it to this list, so
  * the two cannot drift apart again.
  */
-// @req REQ-092
+// @req REQ-161
 export const SOURCE_KINDS = [
   "intergovernmental",
   "government",
@@ -29,18 +29,51 @@ export const SOURCE_KINDS = [
   "discovery",
   "ai_generated",
   "unknown",
+  "oral_tradition",
+  "ethniafrica_synthesis",
 ] as const;
 
 export type SourceKind = (typeof SOURCE_KINDS)[number];
 
+/** Oral account genres accepted by the latest database CHECK (migration 089). */
+// @req REQ-162
+type OralNarrativeKind =
+  | "tradition"
+  | "testimony"
+  | "memory"
+  | "story"
+  | "song"
+  | "genealogy"
+  | "motto"
+  | "proverb";
+
+// @req REQ-162
+export const ORAL_NARRATIVE_KINDS = [
+  "tradition",
+  "testimony",
+  "memory",
+  "story",
+  "song",
+  "genealogy",
+  "motto",
+  "proverb",
+] as const satisfies readonly OralNarrativeKind[];
+
 /**
- * Kinds that describe a citable work. `discovery` (a lookup surface),
- * `ai_generated` (machine-written text) and `unknown` are provenance markers,
- * not works, so they are excluded from the structured reference model.
+ * Kinds that describe a bibliographic work. `discovery` (a lookup surface),
+ * `ai_generated` (machine-written text), `unknown`, `oral_tradition` (a linked
+ * account) and `ethniafrica_synthesis` (an editorial synthesis) are provenance
+ * markers, not bibliographic works, so the structured reference model excludes
+ * them.
  */
+// @req REQ-161
 export type StructuredSourceKind = Exclude<
   SourceKind,
-  "discovery" | "ai_generated" | "unknown"
+  | "discovery"
+  | "ai_generated"
+  | "unknown"
+  | "oral_tradition"
+  | "ethniafrica_synthesis"
 >;
 
 // @req REQ-092

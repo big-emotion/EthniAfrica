@@ -52,6 +52,16 @@ describe("structured source model", () => {
 
     expect(result.success).toBe(false);
   });
+
+  // @req REQ-161
+  it("keeps oral accounts and editorial syntheses out of bibliographic records", () => {
+    for (const sourceKind of ["oral_tradition", "ethniafrica_synthesis"]) {
+      expect(
+        sourceRecordSchema.safeParse({ ...structuredSource, sourceKind })
+          .success
+      ).toBe(false);
+    }
+  });
 });
 
 describe("legacy source compatibility adapter", () => {
