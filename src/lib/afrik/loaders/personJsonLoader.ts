@@ -9,8 +9,14 @@ import { join } from "path";
 
 import { logger } from "@/lib/api/logger";
 import { parsePersonFile } from "@/lib/afrik/parsers/personParser";
+import {
+  findLatestOrCreatePlaceholderRevision,
+  findOrCreateAssertion,
+  supabaseErrorMessage,
+  upsertSource,
+} from "@/lib/afrik/loaders/provenanceWriter";
 import { createAdminClient } from "@/lib/supabase/admin";
-import type { PersonDossier, PersonSource } from "@/types/persons";
+import type { PersonDossier } from "@/types/persons";
 
 const AFRIK_ROOT = join(process.cwd(), "dataset/source/afrik");
 
@@ -33,10 +39,6 @@ function isIllustrative(raw: unknown): boolean {
     raw !== null &&
     (raw as { _meta?: { illustrative?: boolean } })._meta?.illustrative === true
   );
-}
-
-function errorMessage(value: { message: string } | null | undefined): string {
-  return value?.message ?? "unknown Supabase error";
 }
 
 /**
@@ -86,128 +88,6 @@ export function loadAllPersonDossiers(
   return dossiers;
 }
 
-async function upsertSource(
-  supabase: AdminClient,
-  source: PersonSource
-): Promise<{ id: string } | { error: string }> {
-  const { data, error } = await supabase
-    .from("sources")
-    .upsert(
-      {
-        title: source.title,
-        author: source.author,
-        year: source.year,
-        url: source.url,
-        tier: source.tier,
-        notes: source.notes ?? null,
-        added_at: new Date().toISOString(),
-      },
-      { onConflict: "title" }
-    )
-    .select("id")
-    .single();
-
-  if (error || !data) {
-    return { error: errorMessage(error) };
-  }
-  return { id: data.id as string };
-}
-
-// @req REQ-137
-async function findOrCreateFicheRevision(
-  supabase: AdminClient,
-  dossier: PersonDossier
-): Promise<{ id: string } | { error: string }> {
-  const { data: existing, error: selectError } = await supabase
-    .from("fiche_revisions")
-    .select("id")
-    .eq("entity_type", "person")
-    .eq("entity_id", dossier.id)
-    .order("version", { ascending: false })
-    .limit(1)
-    .maybeSingle();
-
-  if (selectError) {
-    return { error: errorMessage(selectError) };
-  }
-  if (existing) {
-    return { id: existing.id as string };
-  }
-
-  const { data: inserted, error: insertError } = await supabase
-    .from("fiche_revisions")
-    .insert({
-      entity_type: "person",
-      entity_id: dossier.id,
-      version: 1,
-      content_snapshot: dossier,
-    })
-    .select("id")
-    .single();
-
-  if (insertError || !inserted) {
-    return { error: errorMessage(insertError) };
-  }
-  return { id: inserted.id as string };
-}
-
-/**
- * assertions has no unique constraint on (entity_type, entity_id,
- * field_path), so idempotency on re-run is enforced here via
- * select-before-write rather than a database guarantee — same approach as
- * nameRecordJsonLoader's findOrCreateAssertion.
- */
-async function findOrCreateAssertion(
-  supabase: AdminClient,
-  entityId: string,
-  statement: string,
-  sourceIds: string[],
-  ficheRevisionId: string
-): Promise<{ id: string } | { error: string }> {
-  const fieldPath = "person";
-  const { data: existing, error: selectError } = await supabase
-    .from("assertions")
-    .select("id")
-    .eq("entity_type", "person")
-    .eq("entity_id", entityId)
-    .eq("field_path", fieldPath)
-    .maybeSingle();
-
-  if (selectError) {
-    return { error: errorMessage(selectError) };
-  }
-
-  if (existing) {
-    const { error: updateError } = await supabase
-      .from("assertions")
-      .update({ statement, source_ids: sourceIds })
-      .eq("id", existing.id);
-
-    if (updateError) {
-      return { error: errorMessage(updateError) };
-    }
-    return { id: existing.id as string };
-  }
-
-  const { data: inserted, error: insertError } = await supabase
-    .from("assertions")
-    .insert({
-      entity_type: "person",
-      entity_id: entityId,
-      field_path: fieldPath,
-      statement,
-      source_ids: sourceIds,
-      fiche_revision_id: ficheRevisionId,
-    })
-    .select("id")
-    .single();
-
-  if (insertError || !inserted) {
-    return { error: errorMessage(insertError) };
-  }
-  return { id: inserted.id as string };
-}
-
 async function writePersonPeoplesJoins(
   supabase: AdminClient,
   dossier: PersonDossier
@@ -222,7 +102,7 @@ async function writePersonPeoplesJoins(
       { onConflict: "person_id,people_id" }
     );
     if (error) {
-      return { error: errorMessage(error) };
+      return { error: supabaseErrorMessage(error) };
     }
   }
   return null;
@@ -240,7 +120,7 @@ async function writePersonCountriesJoins(
         { onConflict: "person_id,country_id" }
       );
     if (error) {
-      return { error: errorMessage(error) };
+      return { error: supabaseErrorMessage(error) };
     }
   }
   return null;
@@ -255,7 +135,14 @@ async function upsertPersonDossier(
 
   const sourceIds: string[] = [];
   for (const source of dossier.sources) {
-    const result = await upsertSource(supabase, source);
+    const result = await upsertSource(supabase, {
+      title: source.title,
+      author: source.author,
+      year: source.year,
+      url: source.url,
+      tier: source.tier,
+      notes: source.notes ?? null,
+    });
     if ("error" in result) {
       report.errors.push(
         `${dossier.id}: source "${source.title}" — ${result.error}`
@@ -265,21 +152,25 @@ async function upsertPersonDossier(
     sourceIds.push(result.id);
   }
 
-  const ficheRevision = await findOrCreateFicheRevision(supabase, dossier);
-  if ("error" in ficheRevision) {
-    report.errors.push(
-      `${dossier.id}: fiche_revisions — ${ficheRevision.error}`
-    );
+  const revision = await findLatestOrCreatePlaceholderRevision(
+    supabase,
+    "person",
+    dossier.id,
+    dossier
+  );
+  if ("error" in revision) {
+    report.errors.push(`${dossier.id}: fiche_revisions — ${revision.error}`);
     return;
   }
 
-  const assertion = await findOrCreateAssertion(
-    supabase,
-    dossier.id,
-    dossier.fullName,
+  const assertion = await findOrCreateAssertion(supabase, {
+    entityType: "person",
+    entityId: dossier.id,
+    fieldPath: "person",
+    statement: dossier.fullName,
     sourceIds,
-    ficheRevision.id
-  );
+    ficheRevisionId: revision.id,
+  });
   if ("error" in assertion) {
     report.errors.push(`${dossier.id}: assertion — ${assertion.error}`);
     return;
@@ -297,7 +188,7 @@ async function upsertPersonDossier(
   );
 
   if (personError) {
-    const reason = errorMessage(personError);
+    const reason = supabaseErrorMessage(personError);
     logger.warn(`persons row rejected for ${dossier.id}`, { reason });
     report.dropped.push(`${dossier.id}: ${reason}`);
     return;
