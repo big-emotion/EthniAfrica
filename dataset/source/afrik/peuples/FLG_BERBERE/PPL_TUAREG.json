@@ -2,13 +2,7 @@
   "id": "PPL_TUAREG",
   "nameMain": "Touareg",
   "languageFamilyId": "FLG_BERBERE",
-  "currentCountries": [
-    "MLI",
-    "NER",
-    "DZA",
-    "LBY",
-    "BFA"
-  ],
+  "currentCountries": ["MLI", "NER", "DZA", "LBY", "BFA"],
   "classificationStatus": "contested",
   "content": {
     "appellations": {
@@ -29,13 +23,7 @@
       "linguisticFamily": "FLG_BERBERE",
       "ethnoLinguisticGroup": "Tamasheq (berbere saharien meridional)",
       "historicalRegion": "Sahara central et occidental : Ahaggar (Algerie), Adrar des Ifoghas (Mali), Massif de l'Air (Niger), Azawagh, Adrar, Fezzan (Libye)",
-      "currentCountries": [
-        "MLI",
-        "NER",
-        "DZA",
-        "LBY",
-        "BFA"
-      ]
+      "currentCountries": ["MLI", "NER", "DZA", "LBY", "BFA"]
     },
     "ethnicities": [
       "Kel Ahaggar (Kel Hoggar) — confederation de l'Ahaggar (Algerie meridionale), centre a Tamanrasset",
@@ -77,11 +65,7 @@
     },
     "languages": {
       "mainLanguage": "Tamasheq / Tamahaq / Tamajeq (langue berbere saharienne)",
-      "isoCodes": [
-        "tmh",
-        "taq",
-        "ttq"
-      ],
+      "isoCodes": ["tmh", "taq", "ttq"],
       "dialects": [
         "Tamahaq (Tahaggart) — parle par les Kel Ahaggar et Kel Ajjer (Algerie, Libye occidentale, nord du Niger) ; environ 77 000 locuteurs ; ISO tmh",
         "Tamasheq — parle par les Kel Adrar (Adrar des Ifoghas, Mali) ; environ 500 000 locuteurs ; ISO taq",
