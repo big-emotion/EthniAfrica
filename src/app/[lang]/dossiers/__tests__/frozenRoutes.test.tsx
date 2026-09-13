@@ -1,3 +1,4 @@
+import { render } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
 vi.mock("next/navigation", () => ({
@@ -110,11 +111,16 @@ describe("the frozen dossiers serve nothing", () => {
   // The second bank rendered from code is not a reworked dossier either.
   // @req REQ-113
   it("keeps serving the proverbs", async () => {
-    await expect(
-      ProverbsPage({
+    render(
+      await ProverbsPage({
         params: Promise.resolve({ lang: "fr" }),
         searchParams: Promise.resolve({}),
       })
-    ).resolves.toBeTruthy();
+    );
+    // A page that rendered only its empty state would still resolve to an
+    // element; serving the dossier means serving proverbs.
+    expect(
+      document.querySelectorAll("article[data-proverb]").length
+    ).toBeGreaterThan(0);
   });
 });

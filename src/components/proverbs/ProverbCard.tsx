@@ -132,7 +132,7 @@ export function ProverbCard({ language, proverb }: ProverbCardProps) {
       <style>{`
         .proverb-card {
           text-align: left;
-          padding: 24px 16px;
+          padding: var(--afh-space-5xl) var(--afh-space-2xl);
           border: 1px solid var(--afh-border);
           border-radius: var(--afh-radius-lg, 14px);
           background: var(--afh-surface);
@@ -149,10 +149,10 @@ export function ProverbCard({ language, proverb }: ProverbCardProps) {
           color: var(--afh-fg-muted);
         }
         .proverb-card .proverb-original {
-          margin-top: 12px;
+          margin-top: var(--afh-space-lg);
           display: flex;
           flex-direction: column;
-          gap: 4px;
+          gap: var(--afh-space-xs);
         }
         .proverb-original-text {
           font-family: var(--afh-font-display);
@@ -166,7 +166,7 @@ export function ProverbCard({ language, proverb }: ProverbCardProps) {
           color: var(--afh-fg-muted);
         }
         .proverb-text {
-          margin: 12px 0 0;
+          margin: var(--afh-space-lg) 0 0;
           font-family: var(--afh-font-display);
           font-weight: 700;
           font-size: var(--afh-text-h3);
@@ -188,7 +188,7 @@ export function ProverbCard({ language, proverb }: ProverbCardProps) {
         }
         .proverb-card .proverb-meaning,
         .proverb-card .proverb-origin {
-          margin-top: 12px;
+          margin-top: var(--afh-space-lg);
           font-size: var(--afh-text-body);
           line-height: 1.6;
           color: var(--afh-text-soft);
@@ -205,25 +205,26 @@ export function ProverbCard({ language, proverb }: ProverbCardProps) {
           font-style: italic;
         }
         .proverb-card .proverb-origin-note {
-          margin-top: 4px;
+          margin-top: var(--afh-space-xs);
           font-size: var(--afh-text-caption);
           line-height: 1.5;
           color: var(--afh-fg-muted);
         }
         .proverb-chips {
           list-style: none;
-          margin: 16px 0 0;
+          margin: var(--afh-space-2xl) 0 0;
           padding: 0;
           display: flex;
           flex-wrap: wrap;
-          gap: 8px;
+          gap: var(--afh-space-md);
         }
         .proverb-chip {
           display: inline-flex;
           align-items: center;
-          gap: 8px;
+          gap: var(--afh-space-md);
           min-height: 32px;
-          padding: 4px 12px 4px 8px;
+          padding: var(--afh-space-xs) var(--afh-space-lg) var(--afh-space-xs)
+            var(--afh-space-md);
           border: 1px solid var(--accent);
           border-radius: var(--afh-radius-full);
           background: var(--afh-color-card);
@@ -250,23 +251,23 @@ export function ProverbCard({ language, proverb }: ProverbCardProps) {
           text-transform: uppercase;
         }
         .proverb-provenance {
-          margin-top: 16px;
-          padding-top: 12px;
+          margin-top: var(--afh-space-2xl);
+          padding-top: var(--afh-space-lg);
           border-top: 1px solid var(--afh-border);
         }
         .proverb-sources {
           list-style: none;
-          margin: 8px 0 0;
+          margin: var(--afh-space-md) 0 0;
           padding: 0;
           display: flex;
           flex-direction: column;
-          gap: 8px;
+          gap: var(--afh-space-md);
         }
         .proverb-sources li {
           display: flex;
           flex-wrap: wrap;
           align-items: baseline;
-          gap: 4px 8px;
+          gap: var(--afh-space-xs) var(--afh-space-md);
           font-size: var(--afh-text-caption);
         }
         .proverb-source-link {
@@ -292,7 +293,7 @@ export function ProverbCard({ language, proverb }: ProverbCardProps) {
         }
         @media (min-width: 768px) {
           .proverb-card {
-            padding: 32px;
+            padding: var(--afh-space-6xl);
           }
         }
       `}</style>

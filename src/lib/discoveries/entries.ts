@@ -49,7 +49,7 @@ export const DISCOVERY_PROVERB_IDS: readonly string[] = [
   "peu-a-peu-l-oeuf-marchera",
   "l-homme-est-le-remede-de-l-homme",
   "hate-hate-n-a-pas-de-benediction",
-  "connais-le-prix-de-la-chikwangue",
+  "la-grenouille-fait-tomber-la-pluie-sur-sa-tete",
   "un-pouce-seul-n-ecrase-pas-un-pou",
 ];
 
@@ -134,7 +134,9 @@ function proverbPublications(): DiscoveryPublication[] {
   return DISCOVERY_PROVERB_IDS.flatMap((id) => {
     const proverb = findProverb(id);
     const slug = slugs[`proverb:${id}`];
-    if (!proverb || !slug) return [];
+    // Enforced here, not left to the list above: an estimated proverb that
+    // happens to cite one referenced work would otherwise pass `authority`.
+    if (!proverb || !slug || proverb.origin.status !== "attested") return [];
     const english = localizeProverb(proverb, "en");
     if (!english.translationKind) return [];
     // The card's one source line names the citation that carries authority,

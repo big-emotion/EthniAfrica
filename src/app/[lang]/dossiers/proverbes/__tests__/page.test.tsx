@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { cleanup, render, screen } from "@testing-library/react";
 import type { ReactNode } from "react";
 import { describe, expect, it, vi } from "vitest";
 
@@ -103,7 +103,11 @@ describe("The proverbs dossier — filters (REQ-113)", () => {
   // describe.
   // @req REQ-113
   it("crosses a people with an origin", async () => {
-    const people = firstOfKind("people");
+    // Taken from an attested proverb, so the crossing holds something whatever
+    // order the bank grows in.
+    const people = PROVERBS.find(
+      (entry) => entry.origin.status === "attested"
+    )!.entities.find((entity) => entity.kind === "people")!;
     const crossed = filterProverbs(PROVERBS, {
       people: people.id,
       origin: "attested",
@@ -181,8 +185,33 @@ describe("The proverbs dossier — filters (REQ-113)", () => {
 
   // @req REQ-113
   it("says so when no proverb matches", async () => {
-    expect(await renderPage({ peuple: "PPL_NOBODY" })).toEqual([]);
+    // An unestablished origin carries no chip, so no people crosses it.
+    const people = firstOfKind("people");
+    expect(
+      await renderPage({ peuple: people.id, origine: "unestablished" })
+    ).toEqual([]);
     expect(screen.getByText(proverbsCopy.fr.empty)).toBeInTheDocument();
+  });
+
+  // Found in review: `?peuple=PPL_NOBODY` printed a chip reading the raw
+  // identifier while the select said « Tous les peuples ». A value the bank
+  // does not name narrows nothing and is never shown to the reader.
+  // @req REQ-113
+  it("ignores a country, people or family the bank does not name", async () => {
+    for (const query of [
+      { peuple: "PPL_NOBODY" },
+      { pays: "gha" },
+      { famille: "FLG_NOBODY" },
+    ]) {
+      cleanup();
+      expect(await renderPage(query), JSON.stringify(query)).toEqual(
+        ids(PROVERBS.slice(0, PER_PAGE))
+      );
+      expect(
+        document.querySelector('[data-testid="facet-active-filters"]'),
+        JSON.stringify(query)
+      ).toBeNull();
+    }
   });
 
   // @req REQ-145

@@ -111,14 +111,34 @@ export default async function ProverbsPage({
   const query = (await searchParams) ?? {};
   const copy = proverbsCopy[language];
 
+  const bank = PROVERBS.map((proverb) => localizeProverb(proverb, language));
+  const entities = proverbEntities(bank, language);
+
+  /**
+   * The entry an address names, only if the bank names it too. An allowlist,
+   * like the origin: an unknown value (a retired proverb's link, a lowercase
+   * `gha`) otherwise narrowed to nothing and printed its raw identifier on a
+   * chip while the select beside it said no filter was on.
+   */
+  const entityNamed = (kind: DidYouKnowEntityKind) => {
+    const id = definedFilter(query[PARAM[kind]]);
+    return (
+      entities.find((entity) => entity.kind === kind && entity.id === id) ??
+      null
+    );
+  };
+  const chosenEntity = {
+    country: entityNamed("country"),
+    people: entityNamed("people"),
+    family: entityNamed("family"),
+  };
   const chosen: Required<ProverbFilters> = {
-    country: definedFilter(query[PARAM.country]),
-    people: definedFilter(query[PARAM.people]),
-    family: definedFilter(query[PARAM.family]),
+    country: chosenEntity.country?.id ?? null,
+    people: chosenEntity.people?.id ?? null,
+    family: chosenEntity.family?.id ?? null,
     origin: parseProverbOrigin(definedFilter(query[PARAM.origin])),
   };
 
-  const bank = PROVERBS.map((proverb) => localizeProverb(proverb, language));
   const selection = filterProverbs(bank, chosen);
   const pageCount = Math.max(
     1,
@@ -153,22 +173,18 @@ export default async function ProverbsPage({
     return search ? `${route}?${search}` : route;
   };
 
-  const entities = proverbEntities(bank);
   const optionsOf = (kind: DidYouKnowEntityKind) =>
     entities
       .filter((entity) => entity.kind === kind)
       .map((entity) => ({ value: entity.id, label: entity.label }));
-  const labelOf = (kind: DidYouKnowEntityKind, id: string) =>
-    entities.find((entity) => entity.kind === kind && entity.id === id)
-      ?.label ?? id;
 
   const activeFilters: FacetActiveFilter[] = [
     ...(["country", "people", "family"] as const).flatMap((kind) => {
-      const id = chosen[kind];
-      return id
+      const entity = chosenEntity[kind];
+      return entity
         ? [
             {
-              label: labelOf(kind, id),
+              label: entity.label,
               removeHref: addressWith({ [kind]: null }),
             },
           ]
@@ -283,10 +299,10 @@ export default async function ProverbsPage({
         .proverbs-page {
           max-width: 68ch;
           margin: 0 auto;
-          padding-block: 24px 64px;
+          padding-block: var(--afh-space-5xl) var(--afh-space-9xl);
         }
         .proverbs-kicker {
-          margin: 0 0 12px;
+          margin: 0 0 var(--afh-space-lg);
           text-align: center;
           font-family: var(--font-mono, ui-monospace, monospace);
           font-size: var(--afh-text-eyebrow);
@@ -295,25 +311,25 @@ export default async function ProverbsPage({
           color: var(--afh-fg-muted);
         }
         .proverbs-count {
-          margin: 0 0 16px;
+          margin: 0 0 var(--afh-space-2xl);
           text-align: left;
           font-size: var(--afh-text-body);
           color: var(--afh-text-soft);
         }
         .proverbs-list {
-          margin-top: 16px;
+          margin-top: var(--afh-space-2xl);
           display: flex;
           flex-direction: column;
-          gap: 16px;
+          gap: var(--afh-space-2xl);
         }
         .proverbs-empty {
-          margin-top: 24px;
+          margin-top: var(--afh-space-5xl);
           text-align: center;
           color: var(--afh-fg-muted);
         }
         @media (min-width: 768px) {
           .proverbs-list {
-            gap: 24px;
+            gap: var(--afh-space-5xl);
           }
         }
       `}</style>

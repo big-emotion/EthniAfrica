@@ -2223,8 +2223,8 @@ export const PROVERBS: Proverb[] = [
     meaning:
       "Il faut apprendre de ses parents, tant qu'ils vivent, les savoirs qui permettent de subvenir à ses besoins.",
     origin: {
-      status: "attested",
-      note: "Proverbe kongo publié avec son texte original dans un recueil signé, imprimé à compte d'auteur en 2012. La chikwangue (kwanga) est un pain de manioc dont la préparation demande des mois de culture et un savoir-faire.",
+      status: "estimated",
+      note: "La seule source qui attribue ce proverbe aux Kongo est une page de la collection en ligne Afriprov. Elle donne le texte kikongo et renvoie à un recueil imprimé à compte d'auteur à Nairobi en 2012. La chikwangue (kwanga) est un pain de manioc dont la préparation demande des mois de culture et un savoir-faire.",
     },
     entities: [
       {
@@ -2263,7 +2263,7 @@ export const PROVERBS: Proverb[] = [
         title:
           'May 2012: "Know the price of a Kwanga while dad and mom are still alive." – Kongo Proverb',
         url: "https://afriprov.tangaza.ac.ke/apoftmmay2012/",
-        tier: "referenced",
+        tier: "unverified",
         notes:
           "Collection en ligne African Proverbs, Sayings and Stories. Elle attribue le proverbe aux Kongo d'Angola et des deux Congo, donne le texte kikongo, et cite le recueil « Kongo Proverbs » (imprimé à compte d'auteur, Nairobi, mai 2012, n° 44).",
       },
@@ -2946,9 +2946,11 @@ const KIND_ORDER: Record<DidYouKnowEntityKind, number> = {
   family: 2,
 };
 
+// Sorted in the reader's locale: the English bank's labels are English words.
 // @req REQ-113
 export function proverbEntities(
-  bank: readonly Proverb[] = PROVERBS
+  bank: readonly Proverb[] = PROVERBS,
+  locale: string = "fr"
 ): DidYouKnowEntity[] {
   const byKey = new Map<string, DidYouKnowEntity>();
   for (const entry of bank) {
@@ -2959,6 +2961,6 @@ export function proverbEntities(
   return [...byKey.values()].sort(
     (left, right) =>
       KIND_ORDER[left.kind] - KIND_ORDER[right.kind] ||
-      left.label.localeCompare(right.label, "fr")
+      left.label.localeCompare(right.label, locale)
   );
 }

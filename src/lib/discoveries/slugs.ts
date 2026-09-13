@@ -30,9 +30,9 @@ export const DISCOVERY_SLUGS = {
     fr: "proverbe-swahili-hate",
     en: "swahili-proverb-hurry",
   },
-  "proverb:connais-le-prix-de-la-chikwangue": {
-    fr: "proverbe-kongo-chikwangue",
-    en: "kongo-proverb-kwanga",
+  "proverb:la-grenouille-fait-tomber-la-pluie-sur-sa-tete": {
+    fr: "proverbe-zande-grenouille",
+    en: "zande-proverb-frog",
   },
   "proverb:un-pouce-seul-n-ecrase-pas-un-pou": {
     fr: "proverbe-shona-pouce",

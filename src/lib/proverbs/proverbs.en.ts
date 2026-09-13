@@ -2183,8 +2183,8 @@ export const PROVERBS_EN: Record<string, ProverbTranslation> = {
     meaning:
       "One must learn from one's parents, while they live, the skills needed to provide for oneself.",
     origin: {
-      status: "attested",
-      note: "Kongo proverb published with its original text in a signed collection, self-published in 2012. Chikwangue (kwanga) is a cassava bread whose preparation takes months of cultivation and skill.",
+      status: "estimated",
+      note: "The only source attributing this proverb to the Kongo is a page of the online Afriprov collection. It gives the Kikongo text and refers to a collection self-published in Nairobi in 2012. Chikwangue (kwanga) is a cassava bread whose preparation takes months of cultivation and skill.",
     },
     entities: [
       {
@@ -2223,7 +2223,7 @@ export const PROVERBS_EN: Record<string, ProverbTranslation> = {
         title:
           'May 2012: "Know the price of a Kwanga while dad and mom are still alive." – Kongo Proverb',
         url: "https://afriprov.tangaza.ac.ke/apoftmmay2012/",
-        tier: "referenced",
+        tier: "unverified",
         notes:
           'The online collection African Proverbs, Sayings and Stories. It attributes the proverb to the Kongo of Angola and of both Congos, gives the Kikongo text, and cites the collection "Kongo Proverbs" (self-published, Nairobi, May 2012, no. 44).',
       },
