@@ -582,6 +582,23 @@ export const MODULE_DEFINITIONS: HubModuleDefinition[] = [
     // opened on. The chip still sends a reader to the game itself.
     heroable: "globe",
   },
+  // A second bank rendered from code, `static` and `ready` for the anecdotes'
+  // reasons, and filed beside them under names: every entry is attributed to
+  // the people or language that says it, or states that no source names one.
+  //
+  // Declared last rather than after `anecdotes` because accents are walked by
+  // position (`accentForModule`): an insertion mid-list would repaint the four
+  // modules after it. Shelves are filtered by group, so it still sits second
+  // in the Noms rubric.
+  {
+    id: "proverbes",
+    group: "dossiers-noms",
+    name: "Proverbes",
+    accessMode: "dossiers",
+    page: "proverbs",
+    availability: "static",
+    editorialReadiness: "ready",
+  },
 ];
 
 // @req REQ-114

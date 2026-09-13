@@ -23,7 +23,14 @@ export interface DiscoveryPublication {
     }>;
     sources: Array<{ title: string; url: string }>;
   };
-  image: {
+  /** A proverb's words in the language that says them, as its source prints them. */
+  original?: { text: string; lang: string };
+  /**
+   * Required for every kind but `proverb`. A proverb is words rather than a
+   * scene, and a photo placed beside it would be decoration we chose, not a
+   * document the publication is about.
+   */
+  image?: {
     src: string;
     filePage: string;
     credit: string;
@@ -59,10 +66,11 @@ export function eligiblePublications(
       hasText(entry.source?.title) &&
       hasText(entry.source?.url) &&
       entry.source?.tier !== "unverified" &&
-      hasText(entry.image.src) &&
-      hasText(entry.image.filePage) &&
-      hasText(entry.image.credit) &&
-      entry.image.licence !== "unknown" &&
+      (entry.kind === "proverb" ||
+        (hasText(entry.image?.src) &&
+          hasText(entry.image?.filePage) &&
+          hasText(entry.image?.credit) &&
+          entry.image?.licence !== "unknown")) &&
       !seenIds.has(entry.id) &&
       paths.every((path) => !seenPaths.has(path));
     if (ready) {

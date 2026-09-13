@@ -12,6 +12,7 @@ export type PageType =
   | "about"
   | "sources"
   | "anecdotes"
+  | "proverbs"
   | "discoveries"
   | "names"
   | "patronymes"
@@ -73,6 +74,7 @@ const SLUGS: Record<Language, Record<PageType, string>> = {
     about: "about",
     sources: "sources",
     anecdotes: "dossiers/anecdotes",
+    proverbs: "dossiers/proverbs",
     discoveries: "discoveries",
     // The two "name" objects again (DEC-038, see the French table): the
     // PageType named `names` is the ethnonym index, so its English slug is
@@ -114,6 +116,7 @@ const SLUGS: Record<Language, Record<PageType, string>> = {
     about: "about",
     sources: "sources",
     anecdotes: "dossiers/anecdotes",
+    proverbs: "dossiers/proverbes",
     discoveries: "decouvertes",
     names: "atlas/appellations",
     // DEC-038 separates the two objects the corpus calls "name": an

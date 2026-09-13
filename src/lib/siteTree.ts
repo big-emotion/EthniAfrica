@@ -196,7 +196,10 @@ export function getSiteTree(language: Language): SiteTreeSection[] {
         // than written out. Neither the plan nor the sitemap listed them
         // before the freeze — an omission that only became visible once they
         // were the sole published reading on the axis.
-        ...getDossiers({ format: "anecdote", language }).map((dossier) => ({
+        ...[
+          ...getDossiers({ format: "anecdote", language }),
+          ...getDossiers({ format: "proverb", language }),
+        ].map((dossier) => ({
           href: dossier.href,
           label: dossier.title,
           note: dossier.summary,

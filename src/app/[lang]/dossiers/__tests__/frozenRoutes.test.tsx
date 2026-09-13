@@ -23,6 +23,7 @@ import ColonizationPage from "../regards/colonisation-et-resistances/page";
 import DossierRoute from "../[dossier]/page";
 import ThemePage from "../themes/[theme]/page";
 import AnecdotesPage from "../anecdotes/page";
+import ProverbsPage from "../proverbes/page";
 import { readDossierCorpus } from "@/lib/dossiers/corpus";
 import { DOSSIER_THEMES } from "@/lib/dossiers/themes";
 
@@ -100,6 +101,17 @@ describe("the frozen dossiers serve nothing", () => {
   it("keeps serving the anecdotes", async () => {
     await expect(
       AnecdotesPage({
+        params: Promise.resolve({ lang: "fr" }),
+        searchParams: Promise.resolve({}),
+      })
+    ).resolves.toBeTruthy();
+  });
+
+  // The second bank rendered from code is not a reworked dossier either.
+  // @req REQ-113
+  it("keeps serving the proverbs", async () => {
+    await expect(
+      ProverbsPage({
         params: Promise.resolve({ lang: "fr" }),
         searchParams: Promise.resolve({}),
       })

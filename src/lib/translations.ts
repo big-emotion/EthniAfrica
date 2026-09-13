@@ -24,6 +24,7 @@ import { migrationsCopy } from "@/lib/i18n/copy/migrations";
 import { namesCopy } from "@/lib/i18n/copy/names";
 import { patronymesCopy } from "@/lib/i18n/copy/patronymes";
 import { peopleCopy } from "@/lib/i18n/copy/people";
+import { proverbsCopy } from "@/lib/i18n/copy/proverbs";
 import { publicFlagsCopy } from "@/lib/i18n/copy/publicFlags";
 import { quizCopy } from "@/lib/i18n/copy/quiz";
 import { reportsCopy } from "@/lib/i18n/copy/reports";
@@ -51,6 +52,7 @@ const en = {
   admin: adminCopy.en,
   server: serverCopy.en,
   anecdotes: anecdotesCopy.en,
+  proverbs: proverbsCopy.en,
   atlas: atlasCopy.en,
   ...commonCopy.en,
   chrome: chromeCopy.en,
@@ -94,6 +96,7 @@ const fr: UiDictionary = {
   admin: adminCopy.fr,
   server: serverCopy.fr,
   anecdotes: anecdotesCopy.fr,
+  proverbs: proverbsCopy.fr,
   atlas: atlasCopy.fr,
   ...commonCopy.fr,
   chrome: chromeCopy.fr,

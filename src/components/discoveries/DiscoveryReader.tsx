@@ -79,7 +79,8 @@ function syncPublicationHead(language: Language, entry: DiscoveryPublication) {
   const title = entry.title[language];
   const description = entry.description[language];
   const url = `https://${CANONICAL_DOMAIN}${discoveryPath(language, entry)}`;
-  const image = `https://${CANONICAL_DOMAIN}${entry.image.src}`;
+  // A proverb has no photo; its share card is the site's own image.
+  const image = `https://${CANONICAL_DOMAIN}${entry.image?.src ?? "/opengraph-image"}`;
   document.title = title;
   const content = [
     ['meta[name="description"]', description],
@@ -337,12 +338,14 @@ export function DiscoveryReader({
         >
           {ordered.map((entry, index) => (
             <article
-              className={styles.card}
+              className={
+                entry.image ? styles.card : `${styles.card} ${styles.textCard}`
+              }
               key={entry.id}
               data-publication-id={entry.id}
               aria-label={entry.title[language]}
             >
-              {failedImageIds.has(entry.id) ? (
+              {!entry.image || failedImageIds.has(entry.id) ? (
                 <div className={styles.photoFallback} />
               ) : (
                 <Image
@@ -363,7 +366,14 @@ export function DiscoveryReader({
               )}
               <div className={styles.shade} aria-hidden="true" />
               <div className={styles.copy}>
-                <p className={styles.kind}>{words.fact}</p>
+                <p className={styles.kind}>
+                  {entry.kind === "proverb" ? words.proverb : words.fact}
+                </p>
+                {entry.original ? (
+                  <p className={styles.original} lang={entry.original.lang}>
+                    {entry.original.text}
+                  </p>
+                ) : null}
                 {index === 0 ? (
                   <h1>{entry.title[language]}</h1>
                 ) : (
@@ -376,7 +386,7 @@ export function DiscoveryReader({
                   {" · "}
                   {entry.source?.shortTitle ?? entry.source?.title}
                 </p>
-                {failedImageIds.has(entry.id) ? (
+                {!entry.image ? null : failedImageIds.has(entry.id) ? (
                   <p className={styles.credit} role="status">
                     {words.imageUnavailable}
                   </p>
@@ -469,25 +479,27 @@ export function DiscoveryReader({
                   ))}
                 </ul>
               </section>
-              <section className={styles.detailSection}>
-                <p>{active.image.credit}</p>
-                <a
-                  href={active.image.filePage}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {words.original}
-                </a>
-                {active.image.licenceUrl ? (
+              {active.image ? (
+                <section className={styles.detailSection}>
+                  <p>{active.image.credit}</p>
                   <a
-                    href={active.image.licenceUrl}
+                    href={active.image.filePage}
                     target="_blank"
                     rel="noreferrer"
                   >
-                    {words.licence}
+                    {words.original}
                   </a>
-                ) : null}
-              </section>
+                  {active.image.licenceUrl ? (
+                    <a
+                      href={active.image.licenceUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {words.licence}
+                    </a>
+                  ) : null}
+                </section>
+              ) : null}
             </SheetContent>
           </Sheet>
           <Button

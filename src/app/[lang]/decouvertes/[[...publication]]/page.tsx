@@ -43,24 +43,24 @@ export async function generateMetadata({
     ["fr"],
     { title, description }
   );
+  // A proverb carries no photo. Leaving the images out lets the site's own
+  // share image stand, rather than pointing a crawler at nothing.
+  const image = selected.image
+    ? `https://${CANONICAL_DOMAIN}${selected.image.src}`
+    : null;
   return {
     title,
     description,
     ...head,
     openGraph: {
       ...head.openGraph,
-      images: [
-        {
-          url: `https://${CANONICAL_DOMAIN}${selected.image.src}`,
-          alt: title,
-        },
-      ],
+      ...(image ? { images: [{ url: image, alt: title }] } : {}),
     },
     twitter: {
-      card: "summary_large_image",
+      card: image ? "summary_large_image" : "summary",
       title,
       description,
-      images: [`https://${CANONICAL_DOMAIN}${selected.image.src}`],
+      ...(image ? { images: [image] } : {}),
     },
   };
 }

@@ -2,10 +2,35 @@ import { act, fireEvent, render, screen, within } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { DiscoveryReader } from "@/components/discoveries/DiscoveryReader";
+import type { DiscoveryPublication } from "@/lib/discoveries/catalog";
 import { getDiscoveryPublications } from "@/lib/discoveries/entries";
 import { getCountryRoute } from "@/lib/routing";
 
-const publications = getDiscoveryPublications();
+// The photo, browsing and sharing suites below walk the two photographed
+// anecdotes in a known order; the proverbs have their own suite at the end.
+const publications = getDiscoveryPublications().filter(
+  (entry) => entry.kind === "anecdote"
+);
+
+const proverbPublication: DiscoveryPublication = {
+  id: "proverb:test",
+  kind: "proverb",
+  status: "published",
+  slug: { fr: "proverbe-test", en: "proverb-test" },
+  title: { fr: "Texte du proverbe.", en: "Proverb text." },
+  description: { fr: "Ce que dit le proverbe.", en: "What it says." },
+  original: { text: "Ọ̀rọ̀ àtijọ́", lang: "yor" },
+  source: {
+    title: "Recueil publié",
+    url: "https://example.org/recueil",
+    tier: "referenced",
+  },
+  detail: {
+    body: { fr: ["Ce que dit le proverbe."], en: ["What it says."] },
+    entities: [],
+    sources: [{ title: "Recueil publié", url: "https://example.org/recueil" }],
+  },
+};
 
 afterEach(() => {
   vi.useRealTimers();
@@ -385,5 +410,49 @@ describe("Découvertes sharing", () => {
     expect(writeText).toHaveBeenCalledWith(
       "https://ethniafrica.com/fr/decouvertes/burkina-faso-trois-langues"
     );
+  });
+});
+
+describe("Découvertes proverb frame", () => {
+  // Filed under its own kicker — « Saviez-vous que ? » over a proverb would
+  // call a people's saying a fact — and declared in its own language.
+  // @req REQ-157
+  it("files a proverb as a proverb, in its own language, with no photo to credit", () => {
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[proverbPublication]}
+        initialId="proverb:test"
+      />
+    );
+
+    const card = screen.getByRole("article");
+    expect(within(card).getByText("Proverbe")).toBeInTheDocument();
+    expect(within(card).getByText("Ọ̀rọ̀ àtijọ́")).toHaveAttribute("lang", "yor");
+    expect(within(card).getByRole("heading", { level: 1 })).toHaveTextContent(
+      "Texte du proverbe."
+    );
+    expect(within(card).queryByText(/Photo/)).not.toBeInTheDocument();
+    expect(within(card).queryAllByRole("link")).toEqual([]);
+  });
+
+  // @req REQ-157
+  it("opens a proverb's sources without an image provenance it does not have", () => {
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[proverbPublication]}
+        initialId="proverb:test"
+      />
+    );
+    fireEvent.click(screen.getByRole("button", { name: "En savoir plus" }));
+
+    const dialog = screen.getByRole("dialog");
+    expect(
+      within(dialog).getByRole("link", { name: "Recueil publié" })
+    ).toHaveAttribute("href", "https://example.org/recueil");
+    expect(
+      within(dialog).queryByRole("link", { name: "Photo originale" })
+    ).not.toBeInTheDocument();
   });
 });

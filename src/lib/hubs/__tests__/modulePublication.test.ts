@@ -37,12 +37,12 @@ describe("module publication", () => {
   // The freeze itself, stated as a number rather than a list, so adding a
   // dossier back is a deliberate edit to this line.
   // @req REQ-114
-  it("leaves Anecdotes as the only published dossier", () => {
+  it("leaves the two banks rendered from code as the only published dossiers", () => {
     const published = getModulesForAccessMode("dossiers")
       .filter((module) => isModulePublished(module.id))
       .map((module) => module.id);
 
-    expect(published).toEqual(["anecdotes"]);
+    expect(published).toEqual(["anecdotes", "proverbes"]);
   });
 
   // The freeze is confined to the dossiers: withdrawing the atlas or the

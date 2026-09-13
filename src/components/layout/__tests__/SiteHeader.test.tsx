@@ -761,17 +761,39 @@ describe("SiteHeader â€” reachable and mature are two questions (atlas charter Â
   });
 
   // One open reading is the whole of what the rubric can open, so there is
-  // nothing to see more of.
+  // nothing to see more of. Built on a corpus of one: Noms, which used to be
+  // the example, holds two open banks since the proverbs joined the anecdotes.
   // @req REQ-120
   it("offers no way out of a rubric with a single open reading", () => {
+    renderWithDossiers([
+      {
+        id: "DOS_TEST_ONLY",
+        href: `${getLocalizedRoute("fr", "dossiersHub")}/test-only`,
+        title: "Dossier seul",
+        rubric: "religions" as const,
+        offered: true,
+        publishedOn: "2026-01-01",
+      },
+    ]);
+    fireEvent.click(trigger(ACCESS_MODE_LABELS.dossiers));
+
+    expect(
+      within(panelRubric("Religions")).queryByTestId(
+        "site-nav-rubric-more-dossiers-religions"
+      )
+    ).toBeNull();
+  });
+
+  // @req REQ-120
+  it("points Noms at the hub now that it holds two open banks", () => {
     renderHeader();
     fireEvent.click(trigger(ACCESS_MODE_LABELS.dossiers));
 
     expect(
-      within(panelRubric("Noms")).queryByTestId(
+      within(panelRubric("Noms")).getByTestId(
         "site-nav-rubric-more-dossiers-noms"
       )
-    ).toBeNull();
+    ).toHaveAttribute("href", getLocalizedRoute("fr", "dossiersHub"));
   });
 
   /**

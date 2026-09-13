@@ -24,6 +24,7 @@ import { migrationsCopy } from "@/lib/i18n/copy/migrations";
 import { namesCopy } from "@/lib/i18n/copy/names";
 import { patronymesCopy } from "@/lib/i18n/copy/patronymes";
 import { peopleCopy } from "@/lib/i18n/copy/people";
+import { proverbsCopy } from "@/lib/i18n/copy/proverbs";
 import { publicFlagsCopy } from "@/lib/i18n/copy/publicFlags";
 import { quizCopy } from "@/lib/i18n/copy/quiz";
 import { reportsCopy } from "@/lib/i18n/copy/reports";
@@ -48,6 +49,7 @@ export const COPY_MODULES = {
   admin: adminCopy,
   server: serverCopy,
   anecdotes: anecdotesCopy,
+  proverbs: proverbsCopy,
   atlas: atlasCopy,
   common: commonCopy,
   chrome: chromeCopy,

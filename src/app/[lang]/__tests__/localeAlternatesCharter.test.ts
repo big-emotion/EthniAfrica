@@ -225,6 +225,7 @@ const FIXTURES: Record<string, RouteFixture> = {
     expectation: { surface: "dossierKongo" },
   },
   "dossiers/anecdotes": { expectation: { surface: "anecdotes" } },
+  "dossiers/proverbes": { expectation: { surface: "proverbs" } },
   "dossiers/migrations": { expectation: { surface: "migrations" } },
   "dossiers/nommer": { expectation: { surface: "nommer" } },
   "dossiers/nommer/la-chose": { expectation: { surface: "nommer" } },

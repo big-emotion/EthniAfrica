@@ -73,6 +73,19 @@ describe("Découvertes publication contracts", () => {
     ]);
   });
 
+  // A proverb is words, not a scene: a photo beside it would be decoration
+  // chosen by us. The photo requirement stays whole for every other kind.
+  // @req REQ-157
+  it("lets a proverb stand without a photo and still refuses an anecdote without one", () => {
+    const records = [
+      item("proverb", { kind: "proverb", image: undefined }),
+      item("anecdote-no-photo", { image: undefined }),
+    ];
+    expect(eligiblePublications(records).map((entry) => entry.id)).toEqual([
+      "proverb",
+    ]);
+  });
+
   // @req REQ-158
   it("resolves only the requested locale and never substitutes an unknown item", () => {
     const records = [item("one"), item("two")];
