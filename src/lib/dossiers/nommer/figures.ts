@@ -25,7 +25,7 @@
 import type { CorpusFigure, FigureKey } from "./types";
 
 /** Every count below was taken against `recette` on this date. */
-const COUNTED_ON = "2026-09-10";
+const COUNTED_ON = "2026-09-13";
 
 const PEOPLE_GLOB = "dataset/source/afrik/peuples/*/*.json";
 
@@ -112,7 +112,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-colonial",
     label: "fiches employant le radical « colonial »",
-    value: 240,
+    value: 239,
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -128,7 +128,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-european",
     label: "fiches employant le radical « europ- »",
-    value: 119,
+    value: 120,
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -136,7 +136,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-neighbours",
     label: "fiches attribuant un exonyme à des voisins",
-    value: 112,
+    value: 113,
     method: "radical voisin dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
