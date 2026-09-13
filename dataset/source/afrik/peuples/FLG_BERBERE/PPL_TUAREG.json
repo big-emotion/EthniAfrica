@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Touareg",
-      "selfAppellation": "Kel Tamasheq / Imajaghan / Imuhagh",
+      "selfAppellation": "Kel Tamasheq / Imuhagh / Imajaghen / Imushagh",
       "exonyms": [
         "Tuareg",
         "Twareg",
@@ -17,7 +17,7 @@
         "Blue people",
         "Mulatthamin"
       ],
-      "originOfExonyms": "Le terme Touareg est d'origine arabe et a ete utilise par les geographes arabes medievaux. Ibn Hawkal et Al-Bakri les designaient comme Mulatthamin (les voiles) en reference au tagelmust (voile indigo couvrant le visage des hommes). L'appellation Blue People vient de la teinture indigo du voile qui decolorait la peau. Les Touareg se designent eux-memes comme Kel Tamasheq (locuteurs du tamasheq) ou Imajaghan/Imuhagh (les fiers et libres).",
+      "originOfExonyms": "Le mot Touareg est emprunte a l'arabe tawariq, prononce twareg au Maghreb ; il apparait chez Ibn Khaldun au XIVe siecle et le francais l'a diffuse a l'epoque coloniale. Sa signification reste discutee : une hypothese le rattache a Targa, ancien nom du Fezzan, dont les auteurs arabes auraient tire un nom d'origine ; une autre lecture le rattache a une racine arabe, et l'interpretation par taraka (abandonner, d'ou abandonnes de Dieu) est une etymologie populaire tardive. Le surnom Mulatthamin (les voiles) renvoie au voile de bouche, le litham, que des auteurs arabes medievaux, dont al-Bakri au XIe siecle, decrivent chez les tribus sanhadja du desert, apparentees aux Touareg. L'appellation Blue People vient de la teinture indigo du voile qui decolorait la peau. Les Touareg se designent eux-memes comme Kel Tamasheq, ceux de la langue tamasheq, le nom de la langue variant selon les regions : tamahaq en Ahaggar et en Ajjer, tamajaq dans l'Air et chez les Iwellemmeden et les Kel Gress, tamasheq dans l'Adrar des Ifoghas. Ils se nomment aussi par la forme touaregue du nom berbere amazigh : Imuhagh en Ahaggar et en Ajjer, Imajaghen dans l'Air et chez les Iwellemmeden et les Kel Gress, Imushagh dans l'Adrar des Ifoghas. Au nord, ce nom designe tout membre de la societe ; au sud, il designe l'aristocratie nomade. Le sens d'hommes libres ou nobles qu'on lui prete est un usage local secondaire, pas son etymologie.",
       "whyProblematic": "Le terme Touareg a ete applique de maniere uniforme a des groupes confedres distincts qui n'avaient pas necessairement conscience d'une identite commune avant la colonisation. Les etats post-coloniaux ont souvent criminalise les revendications identitaires touaregues. Le terme Tamacheq ou Tamajaq est prefere par certains linguistes pour designer la langue plutot que le peuple.",
       "contemporaryUsage": "Touareg est le terme officiel utilise en francais et dans les etats du Sahel. Les locuteurs se designent selon leur confederation d'appartenance (Kel Ahaggar, Kel Adagh, etc.) plutot que par un nom commun. Depuis les annees 1990, une identite touaregue transnationale s'affirme dans le contexte des rebellions au Mali et au Niger et du mouvement berbere.",
       "linguisticFamily": "FLG_BERBERE",
@@ -148,6 +148,54 @@
         "title": "Joshua Project — Tuareg people groups",
         "url": "https://joshuaproject.net/",
         "tier": "unverified"
+      },
+      {
+        "title": "Chaker, Salem. Amazigh (le/un Berbere). Encyclopedie berbere, IV, 1986, p. 562-568",
+        "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+        "tier": "referenced",
+        "notes": "Article signe d'une encyclopedie scientifique publiee. Donne les formes touaregues du nom par region et precise que le sens d'homme libre ou noble est un usage local secondaire."
+      },
+      {
+        "title": "Trousset, Pol. Fezzan. Encyclopedie berbere, XVIII, 1997, p. 2777-2817",
+        "url": "https://journals.openedition.org/encyclopedieberbere/2083",
+        "tier": "referenced",
+        "notes": "Article signe d'une encyclopedie scientifique publiee. Expose l'hypothese qui rattache le mot Touareg a Targa, ancien nom du Fezzan."
+      },
+      {
+        "title": "Academie francaise. Dictionnaire, 9e edition, article touareg",
+        "url": "https://www.dictionnaire-academie.fr/article/A9T1561",
+        "tier": "referenced",
+        "notes": "Dictionnaire publie par une institution identifiable. Etablit l'emprunt a l'arabe tawariq."
+      },
+      {
+        "title": "Chaker, Salem. Touareg. Centre de recherche berbere",
+        "url": "https://centrederechercheberbere.fr/touareg.html",
+        "tier": "referenced",
+        "notes": "Notice signee par un linguiste berberisant, publiee par un centre de recherche universitaire. Glose Kel Tamasheq comme les gens de la langue touaregue."
+      },
+      {
+        "title": "Fischer, Anja. Etymology of the term Tuareg. Imuhar",
+        "url": "http://www.imuhar.eu/site/en/imuhartuareg/etymology_tuareg.php?lang=EN",
+        "tier": "unverified",
+        "notes": "Site personnel d'une anthropologue, sans relecture editoriale. S'appuie sur Hureiki 2003 et Casajus 2000 pour la premiere attestation chez Ibn Khaldun et pour rejeter les etymologies par Targa et par taraka."
+      },
+      {
+        "title": "Larousse, Encyclopedie. Touareg",
+        "url": "https://www.larousse.fr/encyclopedie/divers/Touareg/147148",
+        "tier": "unverified",
+        "notes": "Encyclopedie generale. Indique que le nom Touareg est d'origine arabe et de signification discutee, et glose Kel Tamasheq comme ceux de langue tamasheq."
+      },
+      {
+        "title": "Larousse, Encyclopedie. Almoravides",
+        "url": "https://www.larousse.fr/encyclopedie/groupe-personnage/Almoravides/104945",
+        "tier": "unverified",
+        "notes": "Encyclopedie generale. Presente les Sanhadja comme apparentes aux Touareg."
+      },
+      {
+        "title": "Al-Bakri. Origines du mouvement almoravide et portrait des Sanhadja Lamtouna, vers 1070. Culture d'Islam",
+        "url": "https://www.culture-islam.fr/contrees/maghreb/al-bakri-origines-du-mouvements-almoravide-et-portrait-des-sanhaja-lamtouna-v-1070-n-e",
+        "tier": "unverified",
+        "notes": "Extrait d'une source medievale reproduit sans nom de traducteur ni edition. Decrit le litham porte par les tribus du desert."
       }
     ]
   },

@@ -112,7 +112,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-colonial",
     label: "fiches employant le radical « colonial »",
-    value: 239,
+    value: 240,
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
