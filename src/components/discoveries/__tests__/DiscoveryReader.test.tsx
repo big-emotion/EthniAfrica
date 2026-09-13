@@ -4,7 +4,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { DiscoveryReader } from "@/components/discoveries/DiscoveryReader";
 import type { DiscoveryPublication } from "@/lib/discoveries/catalog";
 import { getDiscoveryPublications } from "@/lib/discoveries/entries";
-import { getCountryRoute } from "@/lib/routing";
+import { getCountryRoute, getPeopleRoute } from "@/lib/routing";
 
 // The photo, browsing and sharing suites below walk the two photographed
 // anecdotes in a known order; the proverbs have their own suite at the end.
@@ -570,6 +570,184 @@ describe("Découvertes proverb frame", () => {
     ).toHaveAttribute("href", "https://example.org/recueil");
     expect(
       within(dialog).queryByRole("link", { name: "Photo originale" })
+    ).not.toBeInTheDocument();
+  });
+});
+
+const imagePublication: DiscoveryPublication = {
+  id: "image:test",
+  kind: "image",
+  status: "published",
+  collection: "autonymes",
+  slug: { fr: "image-test", en: "image-test-en" },
+  title: { fr: "Les Kikuyu disent Agĩkũyũ", en: "The Kikuyu say Agĩkũyũ" },
+  description: { fr: "Un autonyme.", en: "An autonym." },
+  source: {
+    title: "Grammaire kikuyu publiée",
+    url: "https://example.org/grammaire",
+    tier: "referenced",
+  },
+  image: {
+    src: "/images/discoveries/image-test.png",
+    credit: "EthniAfrica",
+    alt: { fr: "Un marché au crépuscule.", en: "A market at dusk." },
+    licence: "cc-by-sa",
+  },
+  generation: {
+    tool: "Outil de test",
+    model: "modele-test-2",
+    jobId: "job-123",
+    generatedOn: "2026-09-12",
+    sourceKind: "ai_generated",
+  },
+  caption: {
+    fr: "Une interprétation d’un marché kikuyu.",
+    en: "An interpretation of a Kikuyu market.",
+  },
+  captionExceedsCorpus: true,
+  captionSource: {
+    title: "Étude du marché publiée",
+    url: "https://example.org/marche",
+  },
+  detail: {
+    body: { fr: ["Ce que dit l’autonyme."], en: ["What the autonym says."] },
+    entities: [
+      {
+        kind: "people",
+        id: "PPL_KIKUYU",
+        label: { fr: "Kikuyu", en: "Kikuyu" },
+      },
+    ],
+    sources: [
+      {
+        title: "Grammaire kikuyu publiée",
+        url: "https://example.org/grammaire",
+      },
+    ],
+  },
+};
+
+describe("Découvertes generated image", () => {
+  // The label sits where the kind eyebrow sits, so the reader learns the
+  // picture is generated before reading anything the picture seems to claim.
+  // @req REQ-165
+  it("labels a generated image on its card without opening the detail sheet", () => {
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[imagePublication]}
+        initialId="image:test"
+      />
+    );
+
+    const card = screen.getByRole("article");
+    expect(within(card).getByText("Image générée")).toBeVisible();
+    expect(
+      within(card).queryByText("Saviez-vous que ?")
+    ).not.toBeInTheDocument();
+    expect(
+      within(card).getByText("Une interprétation d’un marché kikuyu.")
+    ).toBeInTheDocument();
+    expect(within(card).queryByText(/Photo/)).not.toBeInTheDocument();
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+  });
+
+  // @req REQ-165
+  it("states what a generated image rests on in its detail sheet", () => {
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[imagePublication]}
+        initialId="image:test"
+      />
+    );
+    fireEvent.click(screen.getByRole("button", { name: "En savoir plus" }));
+
+    const dialog = screen.getByRole("dialog");
+    expect(within(dialog).getByText(/interprétation/i)).toBeInTheDocument();
+    expect(within(dialog).getByText("Outil de test")).toBeInTheDocument();
+    expect(within(dialog).getByText("modele-test-2")).toBeInTheDocument();
+    expect(within(dialog).getByText("12 septembre 2026")).toBeInTheDocument();
+    expect(within(dialog).getByText(/CC BY-SA 4\.0/)).toBeInTheDocument();
+    expect(
+      within(dialog).getByRole("link", { name: "Kikuyu" })
+    ).toHaveAttribute("href", getPeopleRoute("fr", "PPL_KIKUYU"));
+    expect(
+      within(dialog).getByRole("link", { name: "Grammaire kikuyu publiée" })
+    ).toHaveAttribute("href", "https://example.org/grammaire");
+    expect(
+      within(dialog).getByRole("link", { name: "Étude du marché publiée" })
+    ).toHaveAttribute("href", "https://example.org/marche");
+    expect(
+      within(dialog).queryByRole("link", { name: "Photo originale" })
+    ).not.toBeInTheDocument();
+  });
+
+  // A licence is published, not named (brand charter §9): the sheet links the
+  // licence's URI, the publication's own when it records one.
+  // @req REQ-165
+  it("publishes the licence URI of a generated image in its detail sheet", () => {
+    const { unmount } = render(
+      <DiscoveryReader
+        language="fr"
+        publications={[imagePublication]}
+        initialId="image:test"
+      />
+    );
+    fireEvent.click(screen.getByRole("button", { name: "En savoir plus" }));
+    expect(
+      within(screen.getByRole("dialog")).getByRole("link", {
+        name: "Lire la licence",
+      })
+    ).toHaveAttribute(
+      "href",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    );
+    unmount();
+
+    render(
+      <DiscoveryReader
+        language="en"
+        publications={[
+          {
+            ...imagePublication,
+            image: {
+              ...imagePublication.image,
+              licenceUrl: "https://example.org/licence",
+            },
+          },
+        ]}
+        initialId="image:test"
+      />
+    );
+    fireEvent.click(screen.getByRole("button", { name: "Learn more" }));
+    expect(
+      within(screen.getByRole("dialog")).getByRole("link", {
+        name: "Read the licence",
+      })
+    ).toHaveAttribute("href", "https://example.org/licence");
+  });
+
+  // @req REQ-165
+  it("renders the generated-image label and provenance in English from the English dictionary", () => {
+    render(
+      <DiscoveryReader
+        language="en"
+        publications={[{ ...imagePublication, captionExceedsCorpus: false }]}
+        initialId="image:test"
+      />
+    );
+
+    const card = screen.getByRole("article");
+    expect(within(card).getByText("Generated image")).toBeVisible();
+    fireEvent.click(screen.getByRole("button", { name: "Learn more" }));
+
+    const dialog = screen.getByRole("dialog");
+    expect(within(dialog).getByText("September 12, 2026")).toBeInTheDocument();
+    expect(within(dialog).getByText(/CC BY-SA 4\.0/)).toBeInTheDocument();
+    expect(within(dialog).queryByText("Image générée")).not.toBeInTheDocument();
+    expect(
+      within(dialog).queryByRole("link", { name: "Étude du marché publiée" })
     ).not.toBeInTheDocument();
   });
 });

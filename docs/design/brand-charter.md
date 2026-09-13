@@ -697,8 +697,9 @@ fiche states cites its own source. The reader is told the image is generated
 before any other claim, and every downloadable format carries that mark burned
 into the file, because a file leaves its caption behind. The CC BY-SA 4.0 grant
 covers the human contribution only — the brief, the selection, the caption.
-Figures known from photographs are excluded: a generated face beside a real one
-is a forgery. Myths are held back until the corpus can source the telling.
+Figures with a surviving photographic record are excluded: a generated picture
+of them is a likeness, not an interpretation. Myths and oral narratives — the
+Récits collection — are held back until a second reviewer exists.
 
 This register **declares the residual gap above; it does not close it**. A
 generated people is still not the people's own visual record.

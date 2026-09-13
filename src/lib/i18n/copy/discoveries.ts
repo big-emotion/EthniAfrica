@@ -40,6 +40,18 @@ const en = {
   home: "Home",
   referenced: "Referenced source",
   official: "Official source",
+  generated: {
+    label: "Generated image",
+    interpretation:
+      "This image is an interpretation made with an image generator, not a document. What the publication states rests on its sources and its atlas entries.",
+    tool: "Tool",
+    model: "Model",
+    date: "Generated on",
+    licence:
+      "CC BY-SA 4.0 — covers the selection, composition, retouching and caption; the generated image itself may carry no copyright.",
+    licenceLink: "Read the licence",
+    captionSource: "Caption source:",
+  },
   downloads: {
     title: "Download the image",
     story: "9:16 · Story and Reel",
@@ -97,6 +109,18 @@ const fr: DiscoveriesCopy = {
   home: "Accueil",
   referenced: "Source référencée",
   official: "Source officielle",
+  generated: {
+    label: "Image générée",
+    interpretation:
+      "Cette image est une interprétation produite avec un générateur d’images, pas un document. Ce que la publication affirme repose sur ses sources et ses fiches de l’atlas.",
+    tool: "Outil",
+    model: "Modèle",
+    date: "Générée le",
+    licence:
+      "CC BY-SA 4.0 — couvre la sélection, la composition, la retouche et la légende ; l’image générée elle-même peut ne porter aucun droit d’auteur.",
+    licenceLink: "Lire la licence",
+    captionSource: "Source de la légende :",
+  },
   downloads: {
     title: "Télécharger l’image",
     story: "9:16 · Story et Reel",
