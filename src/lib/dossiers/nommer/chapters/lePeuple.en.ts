@@ -51,7 +51,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
         rows: [
           [
             "colonial",
-            "239",
+            "241",
             "The name dates from colonisation, or was made official by it",
           ],
           [
