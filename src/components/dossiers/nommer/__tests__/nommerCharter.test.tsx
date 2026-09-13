@@ -163,6 +163,13 @@ describe("the Nommer dossier — charter contract", () => {
   // ships.
   // @req REQ-114
   it("gives every module of every axis a glyph of its own", () => {
+    (
+      window as unknown as {
+        happyDOM: {
+          setViewport: (size: { width: number; height: number }) => void;
+        };
+      }
+    ).happyDOM.setViewport({ width: 1440, height: 900 });
     for (const mode of ACCESS_MODES) {
       const { unmount } = render(
         <ThemeProvider attribute="class">

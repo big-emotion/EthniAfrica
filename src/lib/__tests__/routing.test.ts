@@ -444,6 +444,7 @@ describe("English slugs (DEC-049)", () => {
       compare: "/en/compare",
       migrations: "/en/dossiers/migrations",
       anecdotes: "/en/dossiers/anecdotes",
+      discoveries: "/en/discoveries",
       quiz: "/en/games/quiz",
       colonization: "/en/dossiers/perspectives/colonisation-and-resistances",
       nommer: "/en/dossiers/naming",
@@ -706,6 +707,16 @@ describe("the French route folder behind an English path (REQ-141)", () => {
     expect(toRouteFilePath("/en/compare/countries/BEN/NGA")).toBe(
       "/en/comparer/pays/BEN/NGA"
     );
+  });
+
+  // @req REQ-158
+  it("rewrites a discovery address and translates its selected item", () => {
+    expect(toRouteFilePath("/en/discoveries/guere-krahn-we-names")).toBe(
+      "/en/decouvertes/guere-krahn-we-names"
+    );
+    expect(
+      translatePath("fr", "en", "/fr/decouvertes/burkina-faso-trois-langues")
+    ).toBe("/en/discoveries/burkina-faso-three-languages");
   });
 
   // @req REQ-141

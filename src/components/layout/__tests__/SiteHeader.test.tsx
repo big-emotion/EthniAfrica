@@ -1,4 +1,3 @@
-import { getDossierThemeHref } from "@/lib/dossiers/themes";
 import {
   act,
   cleanup,
@@ -40,8 +39,7 @@ vi.mock("next/navigation", () => ({
   useRouter: () => ({ push: vi.fn() }),
 }));
 
-// jsdom evaluates the header's media queries against its own 1024px window,
-// so these run on the wide branch: the three axis triggers are painted and
+// Set the browser width to the desktop branch so the three axis triggers are painted and
 // the burger is not. The burger is therefore reached by test id — an
 // element behind `display: none` computes an empty accessible name, so a
 // role+name query cannot see it. Which branch a real width paints is
@@ -105,6 +103,13 @@ const declarationsFor = (selector: string) =>
 
 beforeEach(() => {
   mockPathname = "/fr";
+  (
+    window as unknown as {
+      happyDOM: {
+        setViewport: (size: { width: number; height: number }) => void;
+      };
+    }
+  ).happyDOM.setViewport({ width: 1440, height: 900 });
 });
 
 afterEach(cleanup);
@@ -125,6 +130,24 @@ describe("SiteHeader — the way back to the top", () => {
     renderHeader();
 
     expect(screen.getByTestId("site-header")).not.toHaveAttribute("id");
+  });
+});
+
+describe("SiteHeader — Découvertes destination", () => {
+  // @req REQ-156
+  it("provides the standalone route in both the wide bar and the narrow tray", () => {
+    renderHeader();
+    expect(screen.getByTestId("site-discoveries-link")).toHaveAttribute(
+      "href",
+      "/fr/decouvertes"
+    );
+    fireEvent.click(screen.getByTestId(BURGER));
+    expect(screen.getByTestId("site-discoveries-tray-link")).toHaveAttribute(
+      "href",
+      "/fr/decouvertes"
+    );
+    const css = headerStyleSheet();
+    expect(css).toContain("@media (min-width: 1200px)");
   });
 });
 

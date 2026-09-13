@@ -129,6 +129,8 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
     alt: "Vue aérienne de Ouagadougou photographiée depuis un avion à l'hiver 1930-1931.",
     credit:
       "Ouagadougou vue d'avion, 1930-1931 — Walter Mittelholzer, Wikimedia Commons, domaine public",
+    filePage:
+      "https://commons.wikimedia.org/wiki/File:Mittelholzer-ouagadougou.jpg",
   },
   cameroun: {
     kind: "picture",

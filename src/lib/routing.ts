@@ -1,5 +1,6 @@
 import { Language } from "@/types/shared";
 import { isLocale } from "@/lib/locale";
+import { DISCOVERY_SLUGS } from "@/lib/discoveries/slugs";
 
 export type PageType =
   | "countries"
@@ -11,6 +12,7 @@ export type PageType =
   | "about"
   | "sources"
   | "anecdotes"
+  | "discoveries"
   | "names"
   | "patronymes"
   | "compare"
@@ -71,6 +73,7 @@ const SLUGS: Record<Language, Record<PageType, string>> = {
     about: "about",
     sources: "sources",
     anecdotes: "dossiers/anecdotes",
+    discoveries: "discoveries",
     // The two "name" objects again (DEC-038, see the French table): the
     // PageType named `names` is the ethnonym index, so its English slug is
     // `ethnonyms`; the public English word "name" goes to `patronymes`,
@@ -111,6 +114,7 @@ const SLUGS: Record<Language, Record<PageType, string>> = {
     about: "about",
     sources: "sources",
     anecdotes: "dossiers/anecdotes",
+    discoveries: "decouvertes",
     names: "atlas/appellations",
     // DEC-038 separates the two objects the corpus calls "name": an
     // *appellation* is how a people is called (an ethnonym, an access point
@@ -583,6 +587,9 @@ const tailWords = (from: Language, to: Language): Record<string, string> => {
   const words: Record<string, string> = {
     [LIENS_SLUG[from]]: LIENS_SLUG[to],
   };
+  for (const slugs of Object.values(DISCOVERY_SLUGS)) {
+    words[slugs[from]] = slugs[to];
+  }
   for (const key of NOMMER_CHAPTER_KEYS) {
     words[NOMMER_CHAPTER_SLUG_TABLE[from][key]] =
       NOMMER_CHAPTER_SLUG_TABLE[to][key];
@@ -651,6 +658,11 @@ const ROUTE_FOLDER_LOCALE: Language = "fr";
 export const toRouteFilePath = (pathname: string): string | null => {
   const locale = getLanguageFromRoute(pathname);
   if (!locale || locale === ROUTE_FOLDER_LOCALE) return null;
+
+  const discoveryHead = getLocalizedRoute(locale, "discoveries");
+  if (pathname === discoveryHead || pathname.startsWith(`${discoveryHead}/`)) {
+    return `/${locale}/${SLUGS.fr.discoveries}${pathname.slice(discoveryHead.length)}`;
+  }
 
   const folderPath = translatePath(locale, ROUTE_FOLDER_LOCALE, pathname);
   const rewritten = `/${locale}${folderPath.slice(`/${ROUTE_FOLDER_LOCALE}`.length)}`;

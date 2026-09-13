@@ -34,6 +34,7 @@ import { useHeaderReveal } from "@/hooks/use-header-reveal";
 import { PRODUCT_NAME } from "@/lib/brand";
 import { cn } from "@/lib/utils";
 import { getTranslation } from "@/lib/translations";
+import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import {
   ACCENT_BY_ACCESS_MODE,
   ACCENT_CYCLE,
@@ -62,7 +63,7 @@ import type { Language } from "@/types/shared";
  * Explorer when the reader knows what they are looking for, Comprendre when
  * they want to know where what they are reading comes from, Jouer when they
  * want the corpus to answer. The modules live behind the click — a panel on
- * a wide viewport, a tray below 768px — and both are generated from
+ * a wide viewport, a tray below 1200px — and both are generated from
  * `moduleRegistry.ts`, never hand-listed.
  *
  * This replaces the flat nine-link bar that was written twice, once per
@@ -83,7 +84,7 @@ import type { Language } from "@/types/shared";
 
 // The charter's own figure, and the width `FicheHeroBand` already switches
 // its band at, so the header and the band below it change shape together.
-const NAV_BREAKPOINT_PX = 768;
+const NAV_BREAKPOINT_PX = 1200;
 
 /**
  * A glyph per rubric, not per dossier.
@@ -487,6 +488,21 @@ export function SiteHeader({
         </div>
 
         <div className="sh-controls">
+          <Link
+            href={getLocalizedRoute(language, "discoveries")}
+            data-testid="site-discoveries-link"
+            aria-current={
+              isCurrentRoute(
+                pathname,
+                getLocalizedRoute(language, "discoveries")
+              )
+                ? "page"
+                : undefined
+            }
+            className="sh-discoveries"
+          >
+            {discoveriesCopy[language].title}
+          </Link>
           <button
             type="button"
             onClick={onSearchClick}
@@ -572,6 +588,22 @@ export function SiteHeader({
         <SheetContent side="right" className="sh-tray">
           <SheetTitle className="sh-tray-title">{t.hubs.menuLabel}</SheetTitle>
           <LanguageSwitcher language={language} appearance="row" />
+          <Link
+            href={getLocalizedRoute(language, "discoveries")}
+            data-testid="site-discoveries-tray-link"
+            aria-current={
+              isCurrentRoute(
+                pathname,
+                getLocalizedRoute(language, "discoveries")
+              )
+                ? "page"
+                : undefined
+            }
+            className="sh-dest-row"
+            onClick={() => setTrayOpen(false)}
+          >
+            {discoveriesCopy[language].title}
+          </Link>
           {ACCESS_MODES.map((axis) => {
             // Everything the fold opens onto, not everything the registry
             // declares: the dossiers axis also carries its corpus, and a
@@ -827,6 +859,32 @@ export function SiteHeader({
           gap: 2px;
           flex: none;
           margin-left: auto;
+        }
+        .sh-discoveries {
+          display: none;
+          align-items: center;
+          min-height: 44px;
+          padding-inline: 12px;
+          color: var(--sh-ink);
+          font: 700 var(--afh-text-small) / 1.2 var(--afh-font-body);
+          text-decoration: none;
+        }
+        .sh-discoveries[aria-current="page"] {
+          color: var(--afh-color-green);
+          text-decoration: underline;
+          text-underline-offset: 5px;
+        }
+        .sh-dest-row {
+          display: flex;
+          align-items: center;
+          min-height: 44px;
+          margin: 8px 16px;
+          padding-inline: 14px;
+          border-radius: var(--afh-radius-lg);
+          background: var(--afh-color-green-bg);
+          color: var(--afh-color-green);
+          font-weight: 700;
+          text-decoration: none;
         }
         .sh-icon {
           display: inline-grid;
@@ -1194,8 +1252,8 @@ export function SiteHeader({
           margin-top: 7px;
         }
 
-        /* Mobile first: the phone gets the burger and the tray, and the
-           three axes only appear once the bar is wide enough to hold them.
+        /* Mobile first: the phone and tablet get the burger and the tray;
+           the three axes and the destination only join the wide bar when it fits.
            One component, one switch, so the two branches cannot disagree
            about which viewport they are on. */
         .sh-axes,
@@ -1207,6 +1265,9 @@ export function SiteHeader({
           display: inline-grid;
         }
         @media (min-width: ${NAV_BREAKPOINT_PX}px) {
+          .sh-discoveries {
+            display: inline-flex;
+          }
           .sh-axes {
             display: flex;
           }

@@ -60,6 +60,20 @@ function pairedStrings(key: LegalDocumentKey): [string, string, string][] {
 }
 
 describe("the English legal pages", () => {
+  // @req REQ-159
+  it("explains device-only discovery keeping in both privacy texts", () => {
+    const french = legalPages.dataPolicy.sections
+      .flatMap((section) => section.paragraphs)
+      .join(" ");
+    const english = legalPagesEn.dataPolicy.sections
+      .flatMap((section) => section.paragraphs)
+      .join(" ");
+    expect(french).toMatch(
+      /Découvertes.*navigateur.*identifiants de publication/
+    );
+    expect(english).toMatch(/Discoveries.*browser.*publication IDs/);
+  });
+
   // @req REQ-145
   it("carry the three French documents with the same sections and paragraphs", () => {
     expect(Object.keys(legalPagesEn).sort()).toEqual([...DOCUMENT_KEYS].sort());

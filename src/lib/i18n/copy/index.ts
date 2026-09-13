@@ -3,6 +3,7 @@ import { classificationCopy } from "@/lib/i18n/copy/classification";
 import { atlasCopy } from "@/lib/i18n/copy/atlas";
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
 import { colonizationCopy } from "@/lib/i18n/copy/colonization";
+import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import { chromeCopy } from "@/lib/i18n/copy/chrome";
 import { commonCopy } from "@/lib/i18n/copy/common";
 import { consentCopy } from "@/lib/i18n/copy/consent";
@@ -66,6 +67,7 @@ export const COPY_MODULES = {
   patronymes: patronymesCopy,
   migrations: migrationsCopy,
   colonization: colonizationCopy,
+  discoveries: discoveriesCopy,
   quiz: quizCopy,
   reports: reportsCopy,
   sourceTransparency: sourceTransparencyCopy,
