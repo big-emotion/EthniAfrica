@@ -32,16 +32,7 @@ export function localizeDidYouKnowIllustration(
   if (language === "fr" || !illustration) return illustration;
 
   const translation = DID_YOU_KNOW_ILLUSTRATIONS_EN[id];
-  if (!translation || translation.kind !== illustration.kind)
-    return illustration;
+  if (!translation) return illustration;
 
-  return illustration.kind === "picture" && translation.kind === "picture"
-    ? { ...illustration, alt: translation.alt }
-    : illustration.kind === "plate" && translation.kind === "plate"
-      ? {
-          ...illustration,
-          alt: translation.alt,
-          givenBy: translation.givenBy,
-        }
-      : illustration;
+  return { ...illustration, alt: translation.alt };
 }

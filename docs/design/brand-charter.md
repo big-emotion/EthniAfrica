@@ -653,6 +653,24 @@ discipline the text already obeys: sourced, dated, credited, tiered. Where no
 such record exists yet, the honest fallback is the corpus's own cartography,
 which the atlas generates, owns and can cite.
 
+**The site carries real images** (operator ruling, 2026-09-13). An image slot
+is filled by a photograph or a photographed document under a free licence —
+never by an AI-generated picture, and never by a typographic plate standing in
+for one. Thirty-three anecdotes were illustrated by a drawn plate showing the
+two names, on the reasoning that no free picture was exactly _about_ them. That
+reasoning was reversed: an exact document is the first choice, not the only
+admissible one. When it does not exist, the slot walks down a cascade and takes
+the first rung that yields a good, free picture — **the thing the text is
+about, then the people's own place or material culture, then the country, then
+the region.** Something always exists at the last rung. The caption stays
+truthful about which rung it came from: a landscape of the Teso sub-region is
+captioned as the landscape, not as the Iteso.
+
+**No face under a slur.** Where the text is about an insulting name, the picture
+shows a place, an object or a landscape, never a recognisable person; and a file
+whose own title carries the slur is not taken, because illustrating with the
+word reproduces the naming the text criticises.
+
 **And a licence is published, not named.** Where a picture's licence requires
 attribution, the rendered caption carries the author, the licence's **URI**,
 and a link to the file itself — not the licence's initials. A notice a reader
