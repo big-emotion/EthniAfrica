@@ -186,9 +186,10 @@
         "tier": "needs_review"
       },
       {
-        "title": "Encyclopedie berbere (CNRS/INALCO)",
-        "url": "https://journals.openedition.org/encyclopedieberbere/",
-        "tier": "referenced"
+        "title": "Encyclopédie berbère — Bijoux (H. Camps-Fabrer)",
+        "url": "https://journals.openedition.org/encyclopedieberbere/1758",
+        "tier": "referenced",
+        "notes": "Notice « Bijoux », Encyclopédie berbère, volume 10 (1991) ; la section sur les matériaux pose que l'argent est la base de la bijouterie berbère."
       },
       {
         "title": "Ibn Khaldoun, Muqaddima (14e siecle), traductions modernes",

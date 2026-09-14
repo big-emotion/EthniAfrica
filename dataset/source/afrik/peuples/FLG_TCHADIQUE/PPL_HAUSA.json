@@ -173,6 +173,12 @@
         "title": "CIA World Factbook — Nigeria",
         "url": "https://www.cia.gov/the-world-factbook/countries/nigeria/",
         "tier": "official"
+      },
+      {
+        "title": "UNESCO World Heritage Centre — La vieille ville de Zinder, quartier de Birni et le Sultanat",
+        "url": "https://whc.unesco.org/en/tentativelists/5040/",
+        "tier": "official",
+        "notes": "Soumission du Niger à la liste indicative hébergée par l'UNESCO (26 mai 2006) ; elle décrit l'architecture haoussa du quartier de Birni et des murailles en terre de 9 à 10 m de hauteur, sans constituer une inscription au patrimoine mondial."
       }
     ]
   },

@@ -133,6 +133,18 @@
         "title": "101 Last Tribes — Somali people profile",
         "url": "https://www.101lasttribes.com/tribes/somalis.html",
         "tier": "unverified"
+      },
+      {
+        "title": "Countrystudies.us — Somalia : Foreign Relations",
+        "url": "https://countrystudies.us/somalia/78.htm",
+        "tier": "referenced",
+        "notes": "Chapitre de l'étude pays sur la Somalie ; il situe des zones peuplées de Somalis à Djibouti, en Éthiopie et au Kenya."
+      },
+      {
+        "title": "Countrystudies.us — Somalia : The Economy",
+        "url": "https://countrystudies.us/somalia/56.htm",
+        "tier": "referenced",
+        "notes": "Chapitre de l'étude pays sur la Somalie ; le chameau y tient le rôle central d'indicateur de richesse et de réussite."
       }
     ]
   },
