@@ -253,8 +253,8 @@ describe("translation parity — registered UI dictionaries (REQ-145)", () => {
 });
 
 describe("translation parity — modes (REQ-145)", () => {
-  // @req REQ-145
-  it("blocks for staged/base diffs and surveys the full tree without a diff", () => {
+  // @req REQ-171
+  it("scopes staged/base runs to the diff and surveys the full tree without one", () => {
     expect(resolveParityMode([])).toEqual({ kind: "survey" });
     expect(resolveParityMode(["--all"])).toEqual({ kind: "survey" });
     expect(
@@ -274,7 +274,7 @@ describe("translation parity — modes (REQ-145)", () => {
   });
 });
 
-describe("translation parity — runner posture (REQ-145)", () => {
+describe("translation parity — runner posture (REQ-171)", () => {
   const roots: string[] = [];
 
   afterEach(() => {
@@ -298,40 +298,67 @@ describe("translation parity — runner posture (REQ-145)", () => {
     },
   ];
 
-  // @req REQ-145
-  it("blocks a changed pair but leaves the same full-tree backlog advisory", () => {
+  // @req REQ-171
+  it("reports a French field with no English counterpart in every mode and exits successfully", () => {
     const root = fixtureRoot(SOURCE);
     const changed = [`dataset/source/afrik/${RELATIVE_PATH}`];
+    const modes = [
+      { kind: "staged" },
+      { kind: "base", ref: "origin/recette" },
+      { kind: "survey" },
+    ] as const;
 
-    const blocking = runTranslationParity({
-      repoRoot: root,
-      mode: { kind: "base", ref: "origin/recette" },
-      changedPaths: changed,
-      uiDictionaries: dictionaries,
-      includeGlossary: false,
-    });
-    const survey = runTranslationParity({
-      repoRoot: root,
-      mode: { kind: "survey" },
-      uiDictionaries: dictionaries,
-      includeGlossary: false,
-    });
+    for (const mode of modes) {
+      const result = runTranslationParity({
+        repoRoot: root,
+        mode,
+        changedPaths: mode.kind === "survey" ? undefined : changed,
+        uiDictionaries: dictionaries,
+        includeGlossary: false,
+      });
 
-    expect(blocking).toMatchObject({
-      blocking: true,
-      exitCode: 1,
-      recordsScanned: 1,
-    });
-    expect(survey).toMatchObject({
-      blocking: false,
-      exitCode: 0,
-      recordsScanned: 1,
-    });
-    expect(survey.findings[0].rule).toBe("missing-translation");
+      expect(result).toMatchObject({ exitCode: 0, recordsScanned: 1 });
+      expect(result.findings).toContainEqual(
+        expect.objectContaining({
+          rule: "missing-translation",
+          field: "content.sources[0].notes",
+        })
+      );
+    }
   });
 
-  // @req REQ-145
-  it("lets a reasoned deferral pass through the blocking runner as a notice", () => {
+  // @req REQ-171
+  it("names a French field modified after its translation as drifted and exits successfully", () => {
+    const root = fixtureRoot(SOURCE);
+    const sidecarFile = join(root, "dataset/translations/en", RELATIVE_PATH);
+    mkdirSync(dirname(sidecarFile), { recursive: true });
+    writeFileSync(sidecarFile, JSON.stringify(sidecarFor()));
+    const edited = structuredClone(SOURCE);
+    edited.content.sources[0].notes = "Description française révisée.";
+    writeFileSync(
+      join(root, "dataset/source/afrik", RELATIVE_PATH),
+      JSON.stringify(edited)
+    );
+
+    const result = runTranslationParity({
+      repoRoot: root,
+      mode: { kind: "base", ref: "origin/recette" },
+      changedPaths: [`dataset/source/afrik/${RELATIVE_PATH}`],
+      uiDictionaries: dictionaries,
+      includeGlossary: false,
+    });
+
+    expect(result.exitCode).toBe(0);
+    expect(result.findings).toContainEqual(
+      expect.objectContaining({
+        rule: "translation-drift",
+        field: "content.sources[0].notes",
+      })
+    );
+  });
+
+  // @req REQ-171
+  it("carries a reasoned deferral through the diff-scoped runner as a notice", () => {
     const root = fixtureRoot({
       ...SOURCE,
       _translation: { deferred: { en: "Awaiting terminology review." } },
@@ -345,7 +372,8 @@ describe("translation parity — runner posture (REQ-145)", () => {
       includeGlossary: false,
     });
 
-    expect(result).toMatchObject({ exitCode: 0, blocking: true });
+    expect(result).toMatchObject({ exitCode: 0, findings: [] });
+    expect(result).not.toHaveProperty("blocking");
     expect(result.notices[0].reason).toBe("Awaiting terminology review.");
   });
 });

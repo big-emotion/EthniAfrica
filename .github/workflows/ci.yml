@@ -140,11 +140,15 @@ jobs:
       # only go down.
       - run: npm run check:dead
 
-      # A changed French record and its English sidecar move together, UI
-      # dictionaries keep the same keys, and translated content uses the one
-      # bilingual glossary (REQ-144, REQ-145). Bare runs survey the existing
-      # backlog; --base is the blocking PR gate.
+      # Reports what this PR leaves without a counterpart, drifted or deferred
+      # (REQ-144, REQ-145) as warning annotations. It never fails the build
+      # (REQ-171, DEC-055): publication is French-only by SITE_LOCALE_MODE, so
+      # a missing English field holds back nothing a reader sees. The script
+      # already exits 0 on findings; continue-on-error also keeps a crash of
+      # the report itself from failing a required job. UI dictionary keys are
+      # still held by copyParity.test.ts in `npm run test`.
       - run: npm run check:translation-parity -- --base "origin/$REQ_BASE"
+        continue-on-error: true
         env:
           REQ_BASE: ${{ github.head_ref == 'recette' && 'recette' || github.base_ref }}
 

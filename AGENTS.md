@@ -16,12 +16,13 @@ choice is remembered in the `ethni-locale` cookie, `/fr/*` resolves unchanged,
 and English URLs use English slugs that the middleware rewrites onto the French
 route folders (DEC-049).
 
-Content added or changed in either language must carry its counterpart in the
+Content added or changed in either language should carry its counterpart in the
 other (REQ-145). A French corpus record may temporarily defer English only with
-the non-empty source marker `_translation.deferred.en`. The blocking gate is
-`npm run check:translation-parity`; translation rules live in
-`.claude/skills/afrik-translator/`. This content readiness rule never changes
-`SITE_LOCALE_MODE` and therefore never publishes unfinished English.
+the non-empty source marker `_translation.deferred.en`. The report is
+`npm run check:translation-parity`, and it never fails a commit or a CI job
+(REQ-171, DEC-055) while publication stays French-only; translation rules live
+in `.claude/skills/afrik-translator/`. This content readiness report never
+changes `SITE_LOCALE_MODE` and therefore never publishes unfinished English.
 
 ## Before changing how a page looks
 
@@ -37,9 +38,9 @@ Architecture, commands, every CI gate, the `@req` traceability rule, the Source 
 make check                          # lint + typecheck + format:check + all tests
 npm run lint:req                    # @req annotation traceability
 npm run check:dead                  # knip ratchet
-npm run check:translation-parity    # bare run: a full-tree survey that never fails
-npm run check:translation-parity -- --staged             # blocks: what pre-commit runs
-npm run check:translation-parity -- --base origin/recette # blocks: what CI runs on a PR
+npm run check:translation-parity    # bare run: a full-tree survey
+npm run check:translation-parity -- --staged             # report on what you are about to commit
+npm run check:translation-parity -- --base origin/recette # report on the PR diff, as CI prints it
 ```
 
-The gate is CI-blocking, as `CLAUDE.md` says: blocking is chosen by the flag, not by the command. Only the bare run is a survey.
+No mode of the parity report fails, as `CLAUDE.md` says (DEC-055): the flag chooses the scope, not whether it blocks.

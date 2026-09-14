@@ -30,17 +30,31 @@ describe("translation parity gate wiring (REQ-145)", () => {
     );
   });
 
-  // @req REQ-145
-  it("blocks CI on the pull request diff against the effective base", () => {
-    expect(workflow).toContain(
-      'npm run check:translation-parity -- --base "origin/$REQ_BASE"'
-    );
+  // @req REQ-171
+  it("reports the pull request diff in CI without being able to fail the build job", () => {
+    const command =
+      'npm run check:translation-parity -- --base "origin/$REQ_BASE"';
+    expect(workflow).toContain(command);
+
+    const stepStart = workflow.indexOf(command);
+    const nextStep = workflow.indexOf("\n      - ", stepStart);
+    const step = workflow.slice(stepStart, nextStep);
+    expect(step).toMatch(/^\s+continue-on-error: true$/m);
   });
 
-  // @req REQ-145
-  it("blocks a commit when staged corpus or dictionary files break parity", () => {
-    expect(lintStaged).toContain(
-      "tsx scripts/ci/checkTranslationParity.ts --staged"
+  // @req REQ-171
+  it("never runs the parity check at commit", () => {
+    expect(lintStaged).not.toContain("checkTranslationParity");
+  });
+
+  // @req REQ-171
+  it("documents parity as reported, never blocking", () => {
+    for (const instructions of [agents, claude]) {
+      expect(instructions).toContain("DEC-055");
+      expect(instructions).not.toMatch(/translation-parity[^\n]*blocks/);
+    }
+    expect(claude).not.toContain(
+      "### Bilingual content (`npm run check:translation-parity`, CI-blocking)"
     );
   });
 

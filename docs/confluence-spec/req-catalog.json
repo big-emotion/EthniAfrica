@@ -163,7 +163,8 @@
     "REQ-164",
     "REQ-165",
     "REQ-166",
-    "REQ-167"
+    "REQ-167",
+    "REQ-171"
   ],
   "sourceMap": {
     "REQ-001": "FR1",
@@ -325,6 +326,7 @@
     "REQ-164": "Confluence REQ-164 (page 199131162) — A generated image enters Découvertes only as declared fiction, with its subject sourced and its own provenance recorded",
     "REQ-165": "Confluence REQ-165 (page 199131162) — Readers see that an image is generated, and what it rests on, before any other claim",
     "REQ-166": "Confluence REQ-166 (page 199131162) — A generated image can be downloaded per format, and each file carries its disclosure",
-    "REQ-167": "Confluence REQ-167 (page 199131162) — Generated images can be browsed as a gallery dossier fed by the same catalog as the feed"
+    "REQ-167": "Confluence REQ-167 (page 199131162) — Generated images can be browsed as a gallery dossier fed by the same catalog as the feed",
+    "REQ-171": "Confluence REQ-171 (page 200343553) — Translation parity is reported and never blocks a commit or a merge"
   }
 }
