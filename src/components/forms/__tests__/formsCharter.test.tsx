@@ -23,6 +23,9 @@ vi.mock("@/components/layout/PageLayout", () => ({
 vi.mock("@/app/[lang]/admin/connexion/actions", () => ({
   requestAdminSignInLink: vi.fn(),
 }));
+vi.mock("@/lib/auth/referenceLibraryAccess", () => ({
+  hasReferenceLibraryAccess: vi.fn().mockResolvedValue(false),
+}));
 
 import AdminConnexionPage from "@/app/[lang]/admin/connexion/page";
 import { ContributionForm } from "@/components/ContributionForm";
