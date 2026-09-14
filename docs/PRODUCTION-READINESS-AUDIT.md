@@ -1,6 +1,6 @@
 # EthniAfrica — Production Readiness Audit
 
-**Date:** 2026-09-14 (sixth revision)
+**Date:** 2026-09-14 (sixth revision; Domain 6 corrected the same day after a Ferry root-cause analysis)
 **Branch:** `recette` @ `20aaf1dd3` · **Version:** 4.9.0 · **Deployed:** yes, releases through `v4.9.0`
 **Method:** read-only. Nothing was fixed, bumped, tagged, pushed or deployed by this audit.
 
@@ -154,13 +154,14 @@ described two ways — `CLAUDE.md` names `scripts/seedAdmin.ts` into `user_roles
 
 ### 2.5 Is the score close to 8–9/10?
 
-**6.0 / 10 — down from 6.5, while nearly everything the last revision asked for was done.** Every
+**6.2 / 10 — down from 6.5, while nearly everything the last revision asked for was done.** Every
 Domain 1 finding closed, the high CVEs went, the production-only dead-code tally joined the ratchet
 and its count fell from 27 files to 15, the vocabulary fork got its migration, the workshop phrases
 left the reader's notes, `editorial-rules` became required, Storybook and the nightly checks went
-green. The number fell because this revision measured four things the last one did not: the check
-rollup of merged PRs (D3-1), the production data sync (D5-1), fiches sampled against their models
-(D8-2), and the Ferry agents' run history (D6-1) — plus one pre-existing authorization gap (D1-1).
+green. The number fell because this revision measured three things the last one did not: the check
+rollup of merged PRs (D3-1), the production data sync (D5-1) and fiches sampled against their models
+(D8-2) — plus one pre-existing authorization gap (D1-1). A first reading of Ferry's run history
+scored it 5 from the wrong workflows; the root-cause analysis in D6 corrects it to 7.
 
 The three moves that close the most distance:
 
@@ -176,7 +177,7 @@ The three moves that close the most distance:
 
 ## 3. Overall score
 
-**6.0 / 10** — mean of ten equally weighted domains.
+**6.2 / 10** — mean of ten equally weighted domains.
 
 A product whose data plane, edge and release path are in good order, whose gates are now numerous
 and correctly configured — and which, the first time its integration environment went down, merged
@@ -193,7 +194,7 @@ around them. The configuration is no longer the weak point; the discipline of wa
 | 3   | CI                                 | **6** | 9 required checks on `recette`, Storybook and nightlies green — six merges through red required checks (P1, D3-1)               |
 | 4   | Correctness & tests                | **8** | 9 187 pass, coverage 86.9/80.7/90.0/87.9 vs 70/60/70/70 — minus 1 for 12 P1 dead-code findings                                  |
 | 5   | Deploy coherence                   | **7** | v4.9.0 deployed and migrated, rollback documented — production data sync red, 28 retired peoples served (P1); minus 1 hardcoded |
-| 6   | Ferry pipeline                     | **5** | Config and pins consistent — agents idle since July, router 6/15 red, Jira doc names statuses that do not exist                 |
+| 6   | Ferry pipeline                     | **7** | Router live (210 `ferry/*` PRs merged, reviews `/ethniafrica-ticket` PRs) — duplicate Jira rule, five dead workflows, doc drift |
 | 7   | Architecture & boundaries          | **7** | Three-layer API and client isolation hold, D7-1/D7-3 resolved — minus 1 hardcoded, minus 1 dead code                            |
 | 8   | AFRIK data integrity & Source Tier | **4** | 0 validator errors, FR28 0/0 — five failed checks and one N/A; `needs_review` out of vocabulary caps at 4                       |
 | 9   | Performance & accessibility        | **5** | Lighthouse gate and smoke now required on PRs — E2E nightly 5/5 red, perf floor lowered to 0.73, no real-user Web Vitals        |
@@ -324,13 +325,28 @@ drifted 1 adjudicated`, on the `089` merge commit); today's read failed on HTTP 
 
 ### Domain 6 — Ferry pipeline
 
-- **D6-1 (P1, new)** — the pipeline is idle or failing: `ferry-router` failed 6 of its last 15 runs
-  (latest `34686519014`, "no branch 'ferry/ETNI-1891' and no open PR"); `ferry-dev`, `ferry-refine`
-  and `ferry-review` last ran 2026-07-11, `ferry-iterate` 2026-06-05, `ferry-merge` never.
-- **D6-2 (P1, new)** — `ferry-jira-automation-setup.md` names `In Development` (`:70`) and
-  `Ready to Merge` (`:184`); `ferry.config.yaml` and `CLAUDE.md` say `READY FOR DEV` and `TO MERGE`.
-  A router miss on a status name is a silent no-op, and `.claude/skills/ethniafrica-ticket/SKILL.md:46`
-  takes its review column from this doc. No SUPERSEDED banner.
+**Correction.** The first scoring read the dates of `ferry-dev`, `ferry-refine`, `ferry-review`,
+`ferry-iterate` and `ferry-merge` as "idle since July". Those five were superseded on 2026-07-21
+(#192) by `ferry-router`, which has handled every Jira transition since, merged 210 `ferry/*` PRs,
+and on 2026-09-12 reviewed and merged PRs opened by `/ethniafrica-ticket` (#979, #982–#984).
+Measured on the router, the pipeline is live.
+
+- **D6-1 (P2)** — `ferry-router` is red on 103 of its last 400 runs (08-17 → 09-12), almost all
+  noise: Jira still sends a legacy `ferry-merge` dispatch alongside `ferry-transition` on TO MERGE
+  (67 of 400 events), so one run merges and the other fails "no branch … and no open PR" (ETNI-1890:
+  run `34685322563` merged #984 at 09:17:03, run `34685319985` failed at 09:17:47); and the upstream
+  review/merge step exits 1 when a human already closed or merged the PR (ETNI-1891, run
+  `34686519014`). Operator: disable the legacy Jira "Merge" rule; upstream: make "no open PR" a no-op.
+- **D6-2 (P2)** — `ferry-jira-automation-setup.md` names `In Development` (`:70`) and
+  `Ready to Merge` (`:184`) and omits the `ferry-transition` rule actually in use. No router failure
+  came from a status name (Jira sends `READY FOR DEV` / `TO MERGE`, compared case-insensitively).
+- **D6-3 (P2)** — dead leftovers: the five superseded per-agent workflows; version strings saying
+  `v1.1.2` beside `# v1.2.0` pins (`ferry-router.yml:117`, `ferry-reconcile.yml:25`,
+  `ferry-cost-daily.yml:25`); `ferry-cost-daily` cannot trip because the router reports `cost_eur: 0`
+  on the OAuth path (`ferry-router.yml:169-171`).
+- **D6-4 (P2)** — the developer role failed on oversized tickets on 08-31/09-01 ("Prompt is too
+  long", 20 000 output-token limit); no `ferry/*` PR has been opened since #783 (09-02).
+  Implementation moved to local sessions; review and merge stayed on Ferry.
 - Holds: `base_branch`/`target_branch` both `recette`; every `ferry-*.yml` pins the same SHAs
   (`big-emotion/ferry@39a42f9f # v1.2.0`, `claude-code-action@d75b94d5 # v1.0.216`,
   `codex-action@52fe01ec # v1.11`); `ferry-reconcile` 20/20 green; gitleaks installed with a
@@ -722,7 +738,7 @@ No finding below has a Jira ticket yet; IDs refer to this report.
 | 6   | P1  | **D8-1** — decide `needs_review`: declare it in `CLAUDE.md` as a state with its ratchet, or resolve the 929; align `SourceTier` and the OpenAPI enums with zod either way.                                              |
 | 7   | P1  | **D8-3 + D8-4** — fix the two dangling family ids and the seven membership mismatches, add the check to the validator; widen the register pattern to catch "vague 1" and rewrite the 28 reasons.                        |
 | 8   | P1  | **D10-2 + D10-3 + D10-4** — bring `CLAUDE.md:71`, `README.md:106`, `docs/DEPLOYMENT.md` in line with the keyless API, the automated migrations, the self-hosted production and the allowlist admin path.                |
-| 9   | P1  | **D6-1 + D6-2** — decide whether Ferry is live: fix the router failure and the status names in `ferry-jira-automation-setup.md`, or mark the pipeline and doc SUPERSEDED.                                               |
+| 9   | P2  | **D6-1…D6-3** — disable the legacy Jira "Merge" rule; delete the five superseded Ferry workflows; fix the setup doc's statuses and version strings; file the upstream "no open PR is a no-op" change.                   |
 | 10  | P1  | **D10-1** — run and record a restore drill against recette; name the owner in `restore-procedure.md:205`.                                                                                                               |
 | 11  | P1  | **D9-1 + D9-2** — fix the remaining E2E failure; either restore the 0.85 performance floor on a scoped route set or record 0.73 as the accepted budget in the charter.                                                  |
 | 12  | P1  | **Dead code** — delete or wire the 15 production-dead files (revisions action, persons service, rights rules, orphan parsers); unify the facet hub read path (D7-2) and the three type files.                           |
@@ -734,7 +750,7 @@ No finding below has a Jira ticket yet; IDs refer to this report.
 
 ## 12. Conclusion
 
-**6.0 / 10, down from 6.5 — and this time the code moved more than the number did.** Between the two
+**6.2 / 10, down from 6.5 — and this time the code moved more than the number did.** Between the two
 revisions almost every item on the previous action list was closed, and closed properly: the API
 decision was documented, the CVEs overridden, the dead-code ratchet taught to see production
 reachability, the vocabulary migration applied on both databases, the workshop phrases removed from
