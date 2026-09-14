@@ -100,15 +100,18 @@ import {
   applyCorsHeaders,
 } from "@/lib/api/cors";
 import { logger } from "@/lib/api/logger";
-
-const DEFAULT_LIMIT = 20;
-const MAX_LIMIT = 100;
-const CACHE_CONTROL = "s-maxage=60, stale-while-revalidate=30";
+import {
+  DEFAULT_PAGE_SIZE as DEFAULT_LIMIT,
+  MAX_PAGE_SIZE as MAX_LIMIT,
+} from "@/api/v2/schemas/pagination";
+import { REVISIONS_FEED_CACHE_CONTROL as CACHE_CONTROL } from "@/api/v2/services/corpusCache";
+import { resolveSiteUrl } from "@/lib/siteUrl";
 
 function validateIso8601(value: string): boolean {
   return !isNaN(Date.parse(value));
 }
 
+// @req REQ-038
 export async function GET(request: NextRequest) {
   const startTime = Date.now();
 
@@ -163,8 +166,7 @@ export async function GET(request: NextRequest) {
 
     if (rawFormat === "atom") {
       const { items } = await listFeedRevisions(limitNum, since, cursor);
-      const baseUrl =
-        process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+      const baseUrl = resolveSiteUrl();
       const feedUrl = `${baseUrl}/api/v2/feed/revisions`;
 
       // NFR32: updated is derived from data, never from Date.now()
@@ -217,6 +219,7 @@ export async function GET(request: NextRequest) {
   }
 }
 
+// @req REQ-038
 export function OPTIONS() {
   return corsOptionsResponse();
 }

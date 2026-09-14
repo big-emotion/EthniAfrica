@@ -53,6 +53,22 @@ name on a product that then existed only in French, and it survives today only i
 places a reader reaches by accident: an API payload, a citation, a stylesheet
 header.
 
+**Where the name comes from, recorded 2026-09-14 because a reader can ask.**
+The project started as a plan to catalogue every ethnie of Africa — a
+dictionary of African ethnicities — which is the literal source of "Ethnie" +
+"Afrique". Partway through, the operator noticed two things the corpus itself
+now documents: "ethnie" is a word applied disproportionately to African
+peoples specifically, rarely to European ones, which is exactly the kind of
+naming asymmetry the atlas exists to surface; and "Afrique" is itself an
+exonym, probably from the Latin name of a North African people, the Afri (the
+atlas's own 2026-09-05 "Afrique — le nom du continent" piece). So the
+product's name is not a neutral label chosen from outside the project's
+subject — it is built from the same kind of word the atlas interrogates, on
+purpose, kept as the starting point of the inquiry rather than a settled
+position. A reader who asks "why is it called that" is asking the same
+question the atlas asks of every name it documents, and the honest answer is
+this one.
+
 One thing this section still does not settle: `CANONICAL_DOMAIN` is
 `ethniafrica.com` while recette is served from `africatlas.com`. The name
 decision is consistent with the constant, so the constant stands — but the
@@ -176,7 +192,7 @@ Three tiers, and a token belongs to exactly one:
 | ------------- | --------------------------------------------- | ------------------------------------------- |
 | **primitive** | `--afh-color-terracotta`, `--afh-cat-teal`    | the semantic tier only                      |
 | **semantic**  | `--afh-text`, `--afh-bg-warm`, `--accent-ink` | any component                               |
-| **surface**   | `--country-*`, `--home-text-*`                | that surface only, with a ticket against it |
+| **surface**   | `--country-*`, `--people-*`                   | that surface only, with a ticket against it |
 
 The surface tier is a holding pen, not a scale — `typography-charter.md` §6
 already says so for type, and it holds for every axis.
@@ -718,7 +734,40 @@ generated people is still not the people's own visual record.
 
 ---
 
-## 10. What this charter does not cover
+## 10. Performance budget
+
+A lab score is kept apart from the aim it falls short of, so that neither can
+quietly become the other.
+
+**Target: 0.85**. The Lighthouse performance score every route aims for under
+the mobile emulation the nightly matrix runs. The three assembled fiches are
+warned against it rather than failed: they open on a WebGL globe that a
+GPU-less runner rasterises on its CPU, a cost a reader's phone does not pay, and
+`.lighthouserc.js` holds their blocking time and LCP as ratchets instead.
+
+**Accepted lab floor off the fiches: 0.73**. Every route that does not open on
+an assembled fiche fails the build below this score. It is the lowest three-run
+median the 2026-09-12 nightly measured (0.75, the English home) less two points
+of runner noise, and it was accepted as the budget on 2026-09-14 (production
+audit, D9-2). What those routes share is the common client chunk, not their own
+code, so the gap to 0.85 closes in that chunk rather than route by route. That
+work is tracked on its own; this number does not drift toward the target on
+its own either.
+
+The floor is a ratchet. It rises toward the target in the same change as the
+chunk reduction that earned it, and lowering it to absorb a regression is a
+charter change argued here first.
+`scripts/__tests__/performanceBudgetCharter.test.ts` fails when this section and
+`.lighthouserc.js` disagree.
+
+A lab score is not a reader's experience either. Real-user Core Web Vitals are
+sampled through Sentry, and only for a reader who accepted analytics — the same
+choice that loads Plausible — so they describe a consented sample, never the
+audience.
+
+---
+
+## 11. What this charter does not cover
 
 - **The source code's licence.** §2 grants CC BY-SA 4.0 over the content and
   deliberately grants nothing over the code, which stays reserved until its own

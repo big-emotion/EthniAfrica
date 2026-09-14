@@ -669,9 +669,9 @@ export function HomeHeroSearch({
           margin: 8px 0 4px;
           padding: 0 8px;
           font-size: var(--afh-text-eyebrow);
-          font-weight: 600;
-          letter-spacing: 0.06em;
-          text-transform: uppercase;
+          font-weight: var(--afh-eyebrow-weight);
+          letter-spacing: var(--afh-eyebrow-tracking);
+          text-transform: var(--afh-eyebrow-transform);
           color: var(--accent-ink);
         }
 

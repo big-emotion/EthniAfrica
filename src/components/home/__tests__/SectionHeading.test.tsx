@@ -90,6 +90,9 @@ describe("SectionHeading — the one heading unit every home section uses", () =
 
   // An eyebrow is a role, not a size (type.css): the size token alone
   // yields a caption. The dress tokens are what make it read as filing.
+  // The body face, not the monospace (operator ruling, 2026-09-14): the mono
+  // made « Saviez-vous que » a third family on the home's first screen, and
+  // the mono's job is a figure aligned in a column, which a kicker is not.
   // @req REQ-113
   it("dresses the eyebrow with the role's own tokens, not just its size", () => {
     const rule = STYLESHEET.match(
@@ -99,7 +102,8 @@ describe("SectionHeading — the one heading unit every home section uses", () =
     expect(rule).toMatch(/font-size:\s*var\(--afh-text-eyebrow\)/);
     expect(rule).toMatch(/text-transform:\s*var\(--afh-eyebrow-transform\)/);
     expect(rule).toMatch(/letter-spacing:\s*var\(--afh-eyebrow-tracking\)/);
-    expect(rule).toMatch(/font-family:\s*var\(--afh-font-mono\)/);
+    expect(rule).toMatch(/font-family:\s*var\(--afh-font-body\)/);
+    expect(rule).not.toMatch(/--afh-font-mono/);
   });
 
   // No literal colour, per the token doctrine: the eyebrow takes whichever

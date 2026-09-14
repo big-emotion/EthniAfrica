@@ -73,7 +73,7 @@ export const scaleLadder: Record<Language, ScaleLadderCopy> = {
         magnitude: "Under 140 years",
         subject: "The border",
         anchor:
-          "Berlin conference, 1884. Most borders came later: 1919, 1993, 2011.",
+          "Most of today's borders were drawn later than people assume: 1919, 1993, 2011.",
         provenance: "Established historical dates.",
         inAtlas: false,
       },
@@ -134,7 +134,7 @@ export const scaleLadder: Record<Language, ScaleLadderCopy> = {
         magnitude: "Moins de 140 ans",
         subject: "La frontière",
         anchor:
-          "Conférence de Berlin, 1884. La plupart des tracés sont plus tardifs : 1919, 1993, 2011.",
+          "La plupart des tracés actuels sont plus tardifs qu'on ne le croit : 1919, 1993, 2011.",
         provenance: "Des dates historiques établies.",
         inAtlas: false,
       },

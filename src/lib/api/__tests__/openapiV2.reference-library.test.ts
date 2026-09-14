@@ -75,6 +75,7 @@ describe("OpenAPI v2 reference library contract", () => {
       "201",
       "400",
       "401",
+      "403",
       "500",
     ]);
 
@@ -142,6 +143,7 @@ describe("OpenAPI v2 reference library contract", () => {
       "201",
       "400",
       "401",
+      "403",
       "500",
     ]);
     expect(
@@ -159,6 +161,7 @@ describe("OpenAPI v2 reference library contract", () => {
       "201",
       "400",
       "401",
+      "403",
       "500",
     ]);
     expect(

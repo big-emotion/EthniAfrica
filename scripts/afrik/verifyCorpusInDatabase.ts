@@ -17,7 +17,7 @@
  * private to the loader. The test reads those upserts back so a column the
  * loader starts writing cannot go uncompared.
  *
- * Usage: npx tsx --conditions=react-server scripts/afrik/verifyCorpusInDatabase.ts --target=recette|production
+ * Usage: npx tsx --conditions=react-server scripts/afrik/verifyCorpusInDatabase.ts --target=recette|production|local
  */
 import { createHash } from "node:crypto";
 import { resolve } from "node:path";

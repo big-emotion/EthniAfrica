@@ -68,7 +68,7 @@ src/lib/api/openapiV2.ts             # OpenAPI spec (openapi:diff gates breaking
 
 Shared: `src/api/v2/utils/{validation,response}.ts`, `src/api/v2/schemas/` (zod), `src/api/v2/serializers/`, `src/lib/api/cors.ts`.
 
-`src/middleware.ts` is load-bearing and does four unrelated jobs: CSP/security headers with a per-request nonce, locale resolution (`SITE_LOCALE_MODE` failing closed to `fr-only`, the `ethni-locale` cookie for an explicit choice, English slugs rewritten onto the French route folders, the resolved locale passed down as the `x-locale` request header so the root layout can declare `<html lang>`), API-key validation for `/api/v2/*` (PBKDF2-hashed keys in `api_keys`; same-origin requests are exempt so the frontend needs no embedded key), and Upstash rate limiting.
+`src/middleware.ts` is load-bearing and does four unrelated jobs: CSP/security headers with a per-request nonce, locale resolution (`SITE_LOCALE_MODE` failing closed to `fr-only`, the `ethni-locale` cookie for an explicit choice, English slugs rewritten onto the French route folders, the resolved locale passed down as the `x-locale` request header so the root layout can declare `<html lang>`), API-key metering for `/api/v2/*` (a keyless request is served on the anonymous tier, 60 requests a minute per IP; a valid Bearer key, PBKDF2-hashed in `api_keys`, selects its tier's quota; a present but invalid key is refused with 401 rather than downgraded; `Origin` and `Referer` authorise nothing, because any client can forge them — so the frontend embeds no key and is metered like any anonymous reader), and Upstash rate limiting.
 
 ### AFRIK data pipeline
 
@@ -107,6 +107,7 @@ Migrations are numbered and sequential in `supabase/migrations/` — the directo
 
 - **Anything about the brand, the look of a page, or whether an assembly of blocks holds together — invoke `/afrik-art-director` first, every time.** It loads `docs/design/brand-charter.md`, which sits above the four surface charters and settles what none of them does: the product's one name and where it comes from, the licence the footer owes the reader, the single token spine (`--afh-*`; shadcn HSL variables are aliases confined to `ui/`), one accent per page, the two display weights that are actually loaded, vertical rhythm, one alignment per block, and the imagery doctrine. It also carries the capture harness — this surface cannot be judged from the code, and recette sits behind Vercel SSO so it has to be served locally.
 - **Start at `docs/design/atlas-charter.md`.** It is what the atlas surface asserts: the three cartographic encodings and the hard rule that a people never receives a closed line, the per-surface accent scope, the three entry points, the doctrine for showing a field the corpus does not fill, the panel's two anchorings, and the motion tokens. The reviewed rendering is `docs/design/mockups/` (four pages, `node build.js`); the engine decision and what actually shipped instead is `docs/adr/0007-atlas-globe-engine.md`. A charter-named test file is picked up by `test:charter-contracts` automatically.
+- **A face, a size, a weight or an ink — read `docs/design/typography-charter.md` before choosing one.** §1 is the nine roles and §2 why editorial roles are fluid and controls fixed. §8 is the home element by element: which face, step and ink each element takes and why that one and not another. The principle it rules: the display face names, the body face explains and operates, the monospace only aligns figures in a column; an ink states a status, never a decoration. A new element on the home takes a row of that table — `homeTypographyCharter.test.ts` holds it — and one that fits no row is a design decision, not a new dress in its component.
 - **Anything about the games — invoke `/afrik-game-designer` first, every time.** Inventing, critiquing, scoping or killing a game; writing or repairing quiz items; auditing the _Jouer_ hub; or just an offhand "ce jeu est nul" — the skill loads `docs/design/games-charter.md`, which is the contract that surface owes. The charter records why the hub cuts from eleven games to three, the item doctrine (stimulus → stem → options: a round that never names its subject is a coin flip), the near-pool rule for distractors, and the interface rules. Reasoning about a game without it re-derives conclusions that are already written down, usually wrongly.
 - Tailwind + shadcn/ui in `src/components/ui/`; feature components grouped by domain (`country/`, `people/`, `family/`, `fiche/`, `home/`, `quiz/`, `search/`, …).
 - Design tokens are CSS custom properties in `src/styles/tokens/*.css` plus per-surface `country-tokens.css` / `people-tokens.css`. Colours belong in tokens, not literals — `src/styles/__tests__/colorTokens.test.ts` and the charter contract suite assert this.
@@ -365,6 +366,32 @@ Wikipedia is not a source. A primary source _discovered through_ Wikipedia is ci
 by its own URL, and its `notes` field records which Wikipedia language versions were crossed so the
 chain stays auditable.
 
+#### `needs_review` is a transitional marker, not a tier
+
+A corpus citation nobody has ruled on yet says `tier: "needs_review"`. It is a marker at the corpus
+boundary, never a fourth tier, and it exists to disappear:
+
+- **Stored as `NULL`** in `sources.tier` by the loaders of the three directories that carry it —
+  `peuples/`, `pays/`, `famille_linguistique/` (`provenanceWriter.ts`, `peopleAppellationLoader.ts`).
+  Folding it onto `unverified` would publish a ruling nobody made. The name, patronyme, relation,
+  migration and person loaders pass `source.tier` through unchanged, which holds only while their
+  directories carry no `needs_review`. Migration `088` admits the literal.
+- **Labelled "En attente d'examen"** / "Awaiting review" (`SOURCE_PENDING_REVIEW_LABEL`), visually
+  distinct from the three tiers.
+- **Weighted 0.4** by `recompute_confidence()` (migration `088`): not yet judged cannot claim more
+  than judged weak.
+- **Held by a two-way ratchet**, `NEEDS_REVIEW_RATCHET` in `scripts/ci/checkSourceTierCoverage.ts`. Read
+  the constant for the current count.
+- **Resolved one citation at a time**, never by domain bulk: a moderator decides in the admin queue
+  (`/fr/admin/sources`), the decision is pulled into the git ledger
+  `docs/editorial/source-review/source-tier-rulings.json`, and `scripts/afrik/applySourceTierRulings.ts`
+  writes it into the fiches. A database-only edit is overwritten by the next sync, so a ruling that
+  does not reach git has not happened. The moderator's rationale lives in the ledger and never in
+  `sources[].notes`, which readers see verbatim.
+
+When the ratchet reaches zero, `needs_review` is removed everywhere it is spelled: `SourceTierState`
+and its zod, OpenAPI, badge and facet branches, and the value admitted by `sources_tier_check`.
+
 #### Tier is authority; `source_kind` is provenance
 
 They are orthogonal axes and must not be collapsed:
@@ -470,6 +497,7 @@ deployment stays on the default `fr-only` mode.
 
   It is local git state, so it cannot be committed and every new clone needs it again. Without it a worktree starts dozens of commits behind and its PR carries the whole `main → recette` delta. Verify with `git symbolic-ref --short refs/remotes/origin/HEAD`; the `worktree.baseRef` setting only chooses between that ref (`fresh`, the default) and the local HEAD (`head`) — it cannot name a branch.
 
+- **A PR is never merged over a red required check**, whatever the cause. When an environment outage turns every gate red, wait for it or fix the environment, then re-run. A red check that is "probably environmental" is unproven until it goes green: on 2026-09-14 six merges (#1037–#1041 into `recette`, #1031 into `main`) went through red `axe-core (Storybook)` and `Playwright smoke` during a recette egress-quota outage, and `main` then held code no green run had seen.
 - `recette ↔ main` sync PRs must use a **merge commit**, not a squash; squashing has broken the ancestry before.
 - Conventional commits (commitlint on `commit-msg`). Pre-commit runs `type-check` + `lint-staged`.
 - Never add `Co-Authored-By` trailers.
@@ -489,7 +517,7 @@ Two couplings that fail silently: `production-data-sync.yml` chains off the depl
 
 Project skills wrap the loop: `/ethniafrica-spec` (investigate → draft Pending REQ/DEC/ARCH + Jira tickets), `/ethniafrica-ticket` (take a Jira ticket end-to-end in an isolated worktree), `/ethniafrica-audit`, `/ethniafrica-release`.
 
-Ferry (`ferry.config.yaml`) drives agent automation off Jira status transitions on ETNI — Refinement → READY FOR DEV → In Review → Changes Requested → TO MERGE — branching `ferry/*` off `recette`.
+Ferry (`ferry.config.yaml`) drives agent automation off Jira status transitions on ETNI — Refinement → READY FOR DEV → In Review → Changes Requested → TO MERGE — branching `ferry/*` off `recette`. One workflow, `ferry-router.yml`, handles every transition: a single Jira rule dispatches `ferry-transition` with the new status, and the router picks the agent from `trigger_column`. **It reviews and merges any PR whose ticket enters IN REVIEW or TO MERGE, not only `ferry/*` branches** — a `feat/*` or `fix/*` PR opened by `/ethniafrica-ticket` is reviewed and merged the same way once its ticket moves. The five per-agent workflows (`ferry-dev`, `-refine`, `-review`, `-iterate`, `-merge`) were superseded by the router and removed; the Jira setup and the legacy rules to keep disabled are in `ferry-jira-automation-setup.md`.
 
 ### Test placement
 
@@ -501,9 +529,9 @@ TDD (failing test first) and KISS. Tests exercise the public interface — no re
 
 ### Environment
 
-Copy `.env.example` → `.env.local`. Required to run: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` (server-only). Required for reporting to work at all: `ANTIBOT_HMAC_SECRET` (server-only, any long random string) — **not** inert when unset, `GET /api/v2/antibot/challenge` answers 503 and every report dialog dies on "la vérification n'a pas abouti" while the build stays green. It replaced `CLOUDFLARE_TURNSTILE_SECRET_KEY`, which no longer exists. Optional subsystems: `UPSTASH_REDIS_REST_*` (rate limiting), `SENTRY_DSN` / `NEXT_PUBLIC_SENTRY_DSN`, `NEXT_PUBLIC_PLAUSIBLE_DOMAIN`, `ANTIBOT_DIFFICULTY_BITS`, `REVALIDATE_SECRET`, `SUPABASE_WEBHOOK_SECRET`, `NEXT_PUBLIC_FEATURE_QUIZ`. The CI build passes placeholder Supabase values so fork and Dependabot PRs still gate.
+Copy `.env.example` → `.env.local`. Required to run: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` (server-only). Required for reporting to work at all: `ANTIBOT_HMAC_SECRET` (server-only, any long random string) — **not** inert when unset, `GET /api/v2/antibot/challenge` answers 503 and every report dialog dies on "la vérification n'a pas abouti" while the build stays green. It replaced `CLOUDFLARE_TURNSTILE_SECRET_KEY`, which no longer exists. Required in production: `NEXT_PUBLIC_SITE_URL` — `src/lib/siteUrl.ts` throws on a production server without it, so every page answers 500 and the container `HEALTHCHECK` fails, while `next build` is exempt and stays green; check the VPS `.env` before a Release. Optional subsystems: `UPSTASH_REDIS_REST_*` (rate limiting), `SENTRY_DSN` / `NEXT_PUBLIC_SENTRY_DSN`, `NEXT_PUBLIC_PLAUSIBLE_DOMAIN`, `ANTIBOT_DIFFICULTY_BITS`, `ANTIBOT_TTL_MS`, `REVALIDATE_SECRET`, `SUPABASE_WEBHOOK_SECRET`, `NEXT_PUBLIC_FEATURE_QUIZ`. The CI build passes placeholder Supabase values so fork and Dependabot PRs still gate.
 
-Admin auth is Supabase Auth (magic-link, GitHub, Google OAuth); roles live in `user_roles` with values `reader`, `contributor`, `moderator`, `admin`, `advisor`. First admin: `ADMIN_EMAIL=… npx tsx scripts/seedAdmin.ts`.
+Admin auth is a Supabase Auth magic link to an address on `admin_allowlist` (migration `074`, checked by `src/lib/supabase/moderator.ts`), and nothing else: GitHub and Google are disabled in `supabase/config.toml`, because the atlas has no public accounts for a provider to federate. First moderator: `npx tsx scripts/seedAdminAllowlist.ts <email> "<note>"` with the target project's service-role key — nobody can open the console to add the first address, so whoever holds that key writes it. Procedure: `docs/runbooks/moderation-access.md`. `user_roles` and `scripts/seedAdmin.ts` are **legacy**: the role opens no door in the moderation console; the table's one remaining reader is `src/lib/rights/protected-asset-access.ts`, which no route calls.
 
 <!-- BEGIN:nextjs-agent-rules -->
 

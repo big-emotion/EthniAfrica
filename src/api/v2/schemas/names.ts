@@ -7,7 +7,10 @@
  * v1 only populates entity_type='people'.
  */
 
-import { pageSizeSchema } from "@/api/v2/schemas/pagination";
+import {
+  NAME_FORMS_PAGE_SIZE,
+  pageSizeSchema,
+} from "@/api/v2/schemas/pagination";
 import { z } from "zod";
 
 // @req REQ-057
@@ -196,7 +199,7 @@ export const listNameFormsQuerySchema = z.object({
   nameType: nameRecordTypeSchema.optional(),
   imposedOnly: z.coerce.boolean().optional().default(false),
   page: z.coerce.number().int().min(1).default(1),
-  perPage: z.coerce.number().int().min(1).max(100).default(48),
+  perPage: pageSizeSchema.default(NAME_FORMS_PAGE_SIZE),
 });
 
 export type ListNameFormsQuery = z.infer<typeof listNameFormsQuerySchema>;

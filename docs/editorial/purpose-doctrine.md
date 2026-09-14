@@ -251,14 +251,15 @@ par-dessus.** — the claim, labelled on the page as a position, not a finding.
      France. Pas renouer avec : reconnaître ce qui n'a jamais cessé. C'est plus
      vrai, et c'est moins triste.
 
-**On the home.** The two invariant sentences of the series — « La plupart des
-frontières de l'Afrique ont moins de cent quarante ans. Les noms en ont plus de
-mille. » and « Ce peuple
-n'a pas été divisé. C'est la carte qui a été dessinée par-dessus. » — sit
-behind a closed « Notre propos » disclosure under the hero's answer, with a
-link to this declaration. Closed by default because the hero's job is still
-the search; present because a reader who asks what the atlas is for should get
-the answer in two sentences, not in a scroll.
+**On the home.** The series' opening statement — « La plupart des frontières
+de l'Afrique ont moins de cent quarante ans. Les noms en ont plus de mille. » —
+sits behind a closed « Notre propos » disclosure under the hero's answer, at
+the copy column's full width, with a link to this declaration. Closed by
+default because the hero's job is still the search; present because a reader
+who asks what the atlas is for should get the answer in a sentence, not in a
+scroll. Its closing counterpart, « Ce peuple n'a pas été divisé. C'est la carte
+qui a été dessinée par-dessus. », was taken off the home on 2026-09-14
+(operator ruling) and stays in the About page's purpose chapter.
 
 **What « plus de mille » is.** A position, not a measurement: the atlas stores
 no attestation date, and for some peoples the oldest attestation is more
@@ -283,3 +284,29 @@ one: most borders are younger than the figure, not older.
 The quotations of the agent's reply above carry the corrected wording, so the
 series cannot be re-seeded from the retired one. Productions already published
 still open on it and are not re-rendered.
+
+**Berlin, 1884 is retired as a citation, not just corrected (2026-09-14).** The
+message audit of 2026-09-13 (finding 9) left open whether "Berlin" could still
+be named as long as a production did not credit it with drawing the lines. The
+operator closed that question directly: no production cites "Berlin, 1884" at
+all going forward, in any language, on any surface — not the About page's
+closing, not the scale-ladder rung, not a social closing card. The reasons
+above still explain _why_ Berlin cannot be the sole origin point (it set rules,
+drew almost no line itself); this addendum removes it as a citation entirely,
+in favour of the already-published formula, "la plupart des frontières ont
+moins de cent quarante ans," which carries the same claim without naming a
+single conference. `docs/design/gabarits-social/GABARITS-SOCIAL.md` §7 ter and
+`.claude/skills/ethniafrica-message/SKILL.md` are updated to match. Productions
+already published (the Dioula closing card among them, per the 09-13 audit)
+still carry the retired citation and are not re-rendered for this alone.
+
+**The closing doctrine also widens, the same day.** Beyond the fixed closing
+line for the peoples series ("Ce peuple n'a pas été divisé..."), the operator
+stated the doctrine's larger shape: names existed long before borders, and what
+survives the division is what actually connects every people to every other —
+not a story about who drew a line, but one of continuity and of connection
+across difference. This is a doctrine statement, not yet a formalised
+closing-line spec for every content type; folding it into this file's
+structure, GABARITS-SOCIAL §7 ter's type-by-type closing table, and the About
+page's `purposeChapter` is `/ethniafrica-message`'s work, not done by this
+edit.

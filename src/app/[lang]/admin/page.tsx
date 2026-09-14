@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { ModerationQueue } from "@/components/admin/ModerationQueue";
 import { PageLayout } from "@/components/layout/PageLayout";
@@ -153,6 +154,15 @@ export default async function ModerationQueuePage({
       <div className="mx-auto w-full max-w-4xl space-y-afh-xl">
         <p className="max-w-3xl text-afh-small text-afh-text-soft">
           {copy.guidance}
+        </p>
+
+        <p className="text-afh-small">
+          <Link
+            className="underline underline-offset-2"
+            href={`${queueRoute}/sources`}
+          >
+            {copy.sourceReviewLink}
+          </Link>
         </p>
 
         <FacetFilterBar

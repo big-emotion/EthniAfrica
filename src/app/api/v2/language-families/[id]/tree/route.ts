@@ -54,6 +54,7 @@
 
 import { getLanguageFamilyTreeHandler } from "@/api/v2/handlers/languageFamilyTree";
 import { languageFamilyTreeParamSchema } from "@/api/v2/schemas/languageFamilyTree";
+import { FAMILY_TREE_CACHE_CONTROL } from "@/api/v2/services/corpusCache";
 import { corpusDetailRoute } from "@/api/v2/utils/corpusRoute";
 import { corsOptionsResponse } from "@/lib/api/cors";
 
@@ -64,9 +65,7 @@ export const GET = corpusDetailRoute({
   isValidId: (id) => languageFamilyTreeParamSchema.safeParse({ id }).success,
   invalidIdMessage: "Invalid language family ID format",
   servesLang: false,
-  // The skeleton is a day-cached derived view, deliberately longer than the
-  // records it counts; not part of the corpus cache class.
-  cacheControl: "s-maxage=86400",
+  cacheControl: FAMILY_TREE_CACHE_CONTROL,
   rejectedLog: "Language family tree request rejected",
   resolve: (id) => getLanguageFamilyTreeHandler(id),
 });
