@@ -1,6 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { validateApiKey } from "@/lib/api/auth";
+import { isSessionAuthenticatedApiRoute } from "@/lib/api/sessionAuthenticatedRoutes";
 import {
   applyIpRateLimit,
   evaluateRateLimit,
@@ -764,16 +765,15 @@ export async function middleware(request: NextRequest) {
   const guarded = <ResponseType extends Response>(response: ResponseType) =>
     versioned(secured(response));
 
-  // The whole /api/v2/keys subtree sits outside api_keys Bearer auth: /issue
-  // is anonymous, and the self-service list/create/revoke endpoints (ETNI-81)
-  // authenticate a Supabase session access token themselves inside the route
-  // handler (see @/api/v2/services/keyService.getAuthenticatedUser) rather
-  // than through this gate — a session JWT is not an api_keys row and would
-  // otherwise be rejected here as an invalid API key before ever reaching it.
-  // It is metered in the anonymous bucket and continues to the session
+  // Routes whose handlers authenticate a Supabase session sit outside api_keys
+  // Bearer auth: a session JWT is not an api_keys row and would otherwise be
+  // rejected here as an invalid API key before ever reaching the handler. The
+  // list, and why being on it grants nothing, is in sessionAuthenticatedRoutes.
+  // They are metered in the anonymous bucket and continue to the session
   // refresh below.
-  const isKeySelfService = isApiV2 && pathname.startsWith("/api/v2/keys");
-  if (isKeySelfService) {
+  const isSessionAuthenticatedApi =
+    isApiV2 && isSessionAuthenticatedApiRoute(pathname, request.method ?? "");
+  if (isSessionAuthenticatedApi) {
     const { rejection } = await evaluateRateLimit(request);
     if (rejection) return guarded(rejection);
   }
@@ -821,7 +821,7 @@ export async function middleware(request: NextRequest) {
   // the site's own readers are throttled no harder than before. Server
   // components read the services directly and never call /api/v2 over HTTP,
   // so no container address pools every reader into one bucket.
-  if (isApiV2 && !isKeySelfService) {
+  if (isApiV2 && !isSessionAuthenticatedApi) {
     const authorization = request.headers.get("Authorization") ?? "";
     const rawKey = authorization.startsWith("Bearer ")
       ? authorization.slice("Bearer ".length).trim()

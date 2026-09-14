@@ -175,6 +175,26 @@ describe("middleware security headers", () => {
       expect(response.status).toBe(429);
       expectSecurityHeaders(response);
     });
+
+    // A route exempted from API-key validation is not exempted from anything
+    // else the middleware owes a response.
+    // @req REQ-052
+    it("secures a session-authenticated write forwarded to its handler", async () => {
+      vi.mocked(validateApiKey).mockResolvedValue({
+        valid: false,
+        reason: "invalid_api_key",
+      });
+
+      const response = await middleware(
+        new NextRequest("http://localhost:3000/api/v2/flags/flag-7kq3m2", {
+          method: "PATCH",
+          headers: { authorization: "Bearer session-jwt" },
+        })
+      );
+
+      expect(response.status).toBe(200);
+      expectSecurityHeaders(response);
+    });
   });
 
   describe("connect-src is built from configuration", () => {
