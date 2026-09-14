@@ -4,6 +4,8 @@ import {
   getQuizMinConfidence,
   toQuizConfidenceScore,
   DEFAULT_QUIZ_MIN_CONFIDENCE,
+  oralTraditionCommunity,
+  toQuizAssertionSource,
   type QuizEligibilityInput,
 } from "@/lib/quiz/eligibility";
 
@@ -178,6 +180,116 @@ describe("isQuizEligible", () => {
           assertionSources: [{ tier: "unverified", resolvable: true }],
         })
       ).toEqual({ eligible: false, reason: "no_authoritative_source" });
+    });
+  });
+
+  describe("attributed oral tradition (DEC-055)", () => {
+    const attributedOralSource = {
+      tier: "unverified" as const,
+      resolvable: false,
+      sourceKind: "oral_tradition" as const,
+      oralTradition: {
+        narrativeCode: "ORL_DOGON_ORIGINS",
+        community: "Sangha",
+      },
+    };
+
+    // @req REQ-175
+    it("plays an item resting on an oral tradition that names its narrative and community", () => {
+      expect(
+        isQuizEligible({
+          ...eligibleInput,
+          assertionSources: [attributedOralSource],
+        })
+      ).toEqual({ eligible: true, reason: null });
+    });
+
+    // @req REQ-175
+    it.each([
+      ["no narrative record", null],
+      ["no narrative code", { narrativeCode: null, community: "Sangha" }],
+      ["no community", { narrativeCode: "ORL_DOGON_ORIGINS", community: null }],
+      [
+        "a blank community",
+        { narrativeCode: "ORL_DOGON_ORIGINS", community: " " },
+      ],
+    ])("does not play an oral tradition with %s", (_label, oralTradition) => {
+      expect(
+        isQuizEligible({
+          ...eligibleInput,
+          assertionSources: [{ ...attributedOralSource, oralTradition }],
+        })
+      ).toEqual({ eligible: false, reason: "no_authoritative_source" });
+    });
+
+    // @req REQ-175
+    it("keeps every other unverified source out, even one carrying a community", () => {
+      expect(
+        isQuizEligible({
+          ...eligibleInput,
+          assertionSources: [
+            { ...attributedOralSource, sourceKind: "community" },
+            {
+              tier: "unverified",
+              resolvable: true,
+              sourceKind: "ai_generated",
+            },
+          ],
+        })
+      ).toEqual({ eligible: false, reason: "no_authoritative_source" });
+    });
+
+    // @req REQ-175
+    it("names the community whose tradition an item rests on", () => {
+      expect(oralTraditionCommunity([attributedOralSource])).toBe("Sangha");
+    });
+
+    // @req REQ-175
+    it("names no community when a written source already carries the answer", () => {
+      expect(
+        oralTraditionCommunity([
+          attributedOralSource,
+          { tier: "referenced", resolvable: false },
+        ])
+      ).toBeNull();
+      expect(
+        oralTraditionCommunity([
+          { ...attributedOralSource, oralTradition: null },
+        ])
+      ).toBeNull();
+    });
+
+    // @req REQ-175
+    it("reads a source row's kind and embedded narrative into the gate's input", () => {
+      expect(
+        toQuizAssertionSource({
+          tier: "unverified",
+          verified_at: null,
+          source_kind: "oral_tradition",
+          oral_narratives: {
+            narrative_code: "ORL_DOGON_ORIGINS",
+            community: "Sangha",
+          },
+        })
+      ).toEqual(attributedOralSource);
+      expect(
+        toQuizAssertionSource({
+          tier: "official",
+          verified_at: "2026-01-01",
+          source_kind: null,
+          oral_narratives: null,
+        })
+      ).toStrictEqual({ tier: "official", resolvable: true });
+      expect(
+        toQuizAssertionSource({
+          tier: "unverified",
+          verified_at: null,
+          source_kind: "oral_tradition",
+          oral_narratives: [
+            { narrative_code: "ORL_DOGON_ORIGINS", community: "Sangha" },
+          ],
+        })
+      ).toEqual(attributedOralSource);
     });
   });
 

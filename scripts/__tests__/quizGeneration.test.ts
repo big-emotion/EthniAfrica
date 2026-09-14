@@ -189,6 +189,50 @@ describe("evaluateCandidate", () => {
     );
   });
 
+  // @req REQ-175
+  it("generates an item resting on an attributed oral tradition, and says whose", () => {
+    const oral = binding("languageFamilyId");
+    oral.eligibility = {
+      ...eligibleInput,
+      assertionSources: [
+        {
+          tier: "unverified",
+          resolvable: false,
+          sourceKind: "oral_tradition",
+          oralTradition: {
+            narrativeCode: "ORL_YORUBA_ODUDUWA",
+            community: "Kétou",
+          },
+        },
+      ],
+    };
+
+    const french = evaluateCandidate(yoruba, "T1", oral, pools);
+    const english = evaluateCandidate(yoruba, "T1", oral, pools, "en");
+    if (french.outcome !== "generated" || english.outcome !== "generated") {
+      throw new Error("expected generated");
+    }
+
+    expect(french.record.explanationFr).toBe(
+      "Le peuple Yorùbá (Yoruba) appartient à la famille linguistique Niger-Congo (selon la tradition orale de Kétou)."
+    );
+    expect(english.record.explanationFr).toBe(
+      "The Yorùbá (Yoruba) people belong to the Niger-Congo language family (according to the oral tradition of Kétou)."
+    );
+  });
+
+  // @req REQ-175
+  it("adds no attribution when a written source carries the answer", () => {
+    const result = evaluateCandidate(
+      yoruba,
+      "T1",
+      binding("languageFamilyId"),
+      pools
+    );
+    if (result.outcome !== "generated") throw new Error("expected generated");
+    expect(result.record.explanationFr).not.toMatch(/tradition orale/);
+  });
+
   // @req REQ-103
   it("rejects with a gate_failed reason when the assertion fails FR65", () => {
     const failing = binding("languageFamilyId");

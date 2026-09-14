@@ -24,10 +24,12 @@ import {
 } from "@/lib/supabase/queries/afrik/module-zero-batch";
 import {
   isQuizEligible,
+  QUIZ_SOURCE_COLUMNS,
+  toQuizAssertionSource,
   toQuizConfidenceScore,
   type QuizAssertionSource,
+  type QuizSourceRow,
 } from "@/lib/quiz/eligibility";
-import { toSourceTier } from "@/types/sources";
 import {
   bandSubjectsByPopulation,
   composeLadder,
@@ -152,10 +154,8 @@ interface QuizQuestionRow {
   source_ids: string[] | null;
 }
 
-interface SourceGateRow {
+interface SourceGateRow extends QuizSourceRow {
   id: string;
-  tier: string | null;
-  verified_at: string | null;
 }
 
 /** Just enough of a question to band it, order it and drop it — no prose travels. */
@@ -705,7 +705,7 @@ async function getSourceGateInfoMap(
 
   const { data, error } = await supabase
     .from("sources")
-    .select("id, tier, verified_at")
+    .select(QUIZ_SOURCE_COLUMNS)
     .in("id", sourceIds);
 
   if (error) {
@@ -845,10 +845,7 @@ export async function composeQuizSession(
     const assertionSources: QuizAssertionSource[] = (row.source_ids ?? [])
       .map((sourceId) => sourceGateMap.get(sourceId))
       .filter((source): source is SourceGateRow => Boolean(source))
-      .map((source) => ({
-        tier: toSourceTier(source.tier),
-        resolvable: source.verified_at !== null,
-      }));
+      .map(toQuizAssertionSource);
 
     const gate = isQuizEligible({
       confidenceScore: toQuizConfidenceScore(confidence?.score),

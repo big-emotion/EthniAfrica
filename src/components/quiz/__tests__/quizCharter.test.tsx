@@ -9,6 +9,7 @@ import {
   sessionBandPlan,
   QUIZ_SESSION_SIZE,
 } from "@/lib/quiz/quizScope";
+import { isQuizEligible } from "@/lib/quiz/eligibility";
 import {
   QUIZ_THEME_IDS,
   QUIZ_THEME_SPECIMENS_FR,
@@ -221,5 +222,60 @@ describe("games charter §8 — no stem asks for a registry identifier", () => {
     );
 
     expect(templates).not.toMatch(/ISO 639-3/);
+  });
+});
+
+/**
+ * DEC-055 settled a contradiction: the charter promised that a claim sourced
+ * only at `unverified` is played and marked, while the gate refused it. The
+ * rule both now state is narrower than that promise — an attributed oral
+ * tradition is played and says whose it is; any other unverified source is
+ * not. The prose and the predicate are held to each other here so the next
+ * edit to either one cannot reopen the gap.
+ */
+describe("games charter §7 — which sources a round may rest on", () => {
+  const charter = readFileSync(
+    join(process.cwd(), "docs", "design", "games-charter.md"),
+    "utf8"
+  );
+
+  // @req REQ-175
+  it("no longer promises to play every unverified claim", () => {
+    expect(charter).not.toMatch(/sourced only at\s+`unverified` is played/);
+  });
+
+  // @req REQ-175
+  it("states the oral-tradition rule and the attribution a round carries", () => {
+    expect(charter).toMatch(/`oral_tradition`/);
+    expect(charter).toMatch(/selon la tradition orale de \{community\}/);
+    expect(charter).toMatch(/any other `unverified` source/);
+  });
+
+  // @req REQ-175
+  it("is the rule the eligibility gate applies", () => {
+    const base = {
+      confidenceScore: 90,
+      lastHumanAuditAt: null,
+      openFlagCount: 0,
+    };
+    const oral = {
+      tier: "unverified" as const,
+      resolvable: false,
+      sourceKind: "oral_tradition" as const,
+      oralTradition: {
+        narrativeCode: "ORL_DOGON_ORIGINS",
+        community: "Sangha",
+      },
+    };
+
+    expect(isQuizEligible({ ...base, assertionSources: [oral] }).eligible).toBe(
+      true
+    );
+    expect(
+      isQuizEligible({
+        ...base,
+        assertionSources: [{ ...oral, sourceKind: "community" }],
+      }).eligible
+    ).toBe(false);
   });
 });
