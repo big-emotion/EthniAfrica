@@ -426,7 +426,7 @@ export function RecherchePageContent() {
           aria-label={
             language === "en" ? "Search form" : "Formulaire de recherche"
           }
-          className="flex flex-col md:flex-row gap-afh-md"
+          className="relative flex flex-col md:flex-row gap-afh-md"
         >
           <div className="relative flex-1">
             <Search
@@ -449,37 +449,39 @@ export function RecherchePageContent() {
               className="pl-10 h-12 text-afh-small"
               autoComplete="off"
             />
-            {/* auto-suggest dropdown */}
-            {suggest.isOpen && (
-              <ul
-                id={suggest.listboxId}
-                role="listbox"
-                aria-label={
-                  language === "en"
-                    ? "Search suggestions"
-                    : "Suggestions de recherche"
-                }
-                className="absolute z-50 w-full bg-afh-surface border border-afh-border rounded-afh-lg shadow-afh-2 mt-afh-xs overflow-hidden"
-              >
-                {suggest.options.map((hit, index) => (
-                  <li
-                    key={hit.id}
-                    {...suggest.getOptionProps(index)}
-                    className={cn(
-                      "px-afh-2xl py-afh-md hover:bg-afh-bg-warm cursor-pointer text-afh-small",
-                      index === suggest.activeIndex && "bg-afh-bg-warm"
-                    )}
-                    onMouseDown={() => handleSuggestionClick(hit)}
-                  >
-                    {getLocalizedSearchResultName(hit, language)}
-                  </li>
-                ))}
-              </ul>
-            )}
           </div>
           <Button type="submit" className="h-12 px-6 shrink-0">
             {language === "en" ? "Search" : "Rechercher"}
           </Button>
+          {/* Hung from the form rather than the input: below md the form
+              stacks, and a panel under the input alone covered the submit
+              button, so a tap meant to submit landed on a suggestion. */}
+          {suggest.isOpen && (
+            <ul
+              id={suggest.listboxId}
+              role="listbox"
+              aria-label={
+                language === "en"
+                  ? "Search suggestions"
+                  : "Suggestions de recherche"
+              }
+              className="absolute left-0 top-full z-50 w-full bg-afh-surface border border-afh-border rounded-afh-lg shadow-afh-2 mt-afh-xs overflow-hidden"
+            >
+              {suggest.options.map((hit, index) => (
+                <li
+                  key={hit.id}
+                  {...suggest.getOptionProps(index)}
+                  className={cn(
+                    "px-afh-2xl py-afh-md hover:bg-afh-bg-warm cursor-pointer text-afh-small",
+                    index === suggest.activeIndex && "bg-afh-bg-warm"
+                  )}
+                  onMouseDown={() => handleSuggestionClick(hit)}
+                >
+                  {getLocalizedSearchResultName(hit, language)}
+                </li>
+              ))}
+            </ul>
+          )}
         </form>
 
         {/* ── filter chip row (always visible) ── */}

@@ -21,7 +21,7 @@ import {
   readFileSync,
   writeFileSync,
 } from "node:fs";
-import { dirname, join, posix, sep } from "node:path";
+import { dirname, join } from "node:path";
 import * as prettier from "prettier";
 
 import type { TranslationLocale } from "@/lib/i18n/translationLocale";
@@ -35,36 +35,6 @@ import {
 export const CORPUS_ROOT = "dataset/source/afrik";
 // @req REQ-146
 export const TRANSLATIONS_ROOT = "dataset/translations";
-
-function toPosix(path: string): string {
-  return path.split(sep).join("/");
-}
-
-// @req REQ-146
-export function sidecarPathFor(
-  sourceRelativePath: string,
-  lang: TranslationLocale
-): string {
-  return posix.join(TRANSLATIONS_ROOT, lang, toPosix(sourceRelativePath));
-}
-
-// @req REQ-146
-export function sourcePathFor(sidecarPath: string): {
-  lang: TranslationLocale;
-  sourceRelativePath: string;
-} {
-  const normalized = toPosix(sidecarPath);
-  const prefix = `${TRANSLATIONS_ROOT}/`;
-  const index = normalized.indexOf(prefix);
-  if (index === -1) {
-    throw new Error(`${sidecarPath} is not under ${TRANSLATIONS_ROOT}/`);
-  }
-  const [lang, ...rest] = normalized.slice(index + prefix.length).split("/");
-  if ((lang !== "en" && lang !== "fr") || rest.length === 0) {
-    throw new Error(`${sidecarPath} does not name a locale and a record`);
-  }
-  return { lang, sourceRelativePath: rest.join("/") };
-}
 
 /**
  * Every sidecar of one locale, as paths relative to the source corpus. A

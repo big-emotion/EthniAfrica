@@ -46,6 +46,7 @@ import {
 } from "@/lib/afrik/parsers/appellationGrammar";
 import type { createAdminClient } from "@/lib/supabase/admin";
 import type { FicheSource, People } from "@/types/afrik";
+import { isSourceTier } from "@/types/sources";
 
 type AdminClient = ReturnType<typeof createAdminClient>;
 
@@ -103,7 +104,10 @@ async function resolveSourceIds(
         // a column would be a fabricated citation.
         author: null,
         year: null,
-        tier: source.tier === "needs_review" ? "unverified" : source.tier,
+        // NULL, as provenanceWriter.ts stores it: folding `needs_review` onto
+        // `unverified` would publish a ruling nobody made, and the two stages
+        // would overwrite each other's value on every sync.
+        tier: isSourceTier(source.tier) ? source.tier : null,
         notes: source.notes ?? null,
         added_at: new Date().toISOString(),
       })),

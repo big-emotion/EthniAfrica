@@ -458,6 +458,42 @@ describe("RecherchePageContent", () => {
     expect(firstOption).toHaveAttribute("aria-selected", "true");
   });
 
+  /**
+   * Below `md` the form stacks, input above button. A panel hung from the
+   * input's own wrapper dropped straight over « Rechercher »: a tap meant to
+   * submit the typed words landed on a suggestion instead, and the nightly
+   * direct-navigation spec timed out because the button could not be clicked
+   * at 720 px. Hung from the form, the panel opens under both controls.
+   */
+  // @req REQ-002
+  it("hangs the suggestions below the whole form, never over its submit button", async () => {
+    mockFetch.mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve(suggestApiResponse),
+    });
+    render(<RecherchePageContent />);
+
+    await act(async () => {
+      fireEvent.change(screen.getByRole("combobox"), {
+        target: { value: "Yo" },
+      });
+      await new Promise((r) => setTimeout(r, 350));
+    });
+
+    const listbox = await screen.findByRole("listbox");
+    const form = screen.getByRole("search", {
+      name: /formulaire de recherche/i,
+    });
+    const submit = within(form).getByRole("button", { name: "Rechercher" });
+
+    expect(listbox.parentElement).toBe(form);
+    expect(form.className).toMatch(/(^|\s)relative(\s|$)/);
+    expect(listbox.className).toMatch(/(^|\s)top-full(\s|$)/);
+    expect(
+      submit.compareDocumentPosition(listbox) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+  });
+
   // @req REQ-002
   it("closes the suggestions on Escape without emptying the field", async () => {
     mockFetch.mockResolvedValue({

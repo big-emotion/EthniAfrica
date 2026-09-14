@@ -20,6 +20,7 @@ import {
   type ApiEnvelope,
   type ApiError,
 } from "@/api/v2/utils/response";
+import { isEmailAllowlisted } from "@/lib/auth/adminAllowlist";
 import { sourceTierSchema } from "@/lib/sources/authorized-source-catalog";
 
 const sourceKinds = [
@@ -94,7 +95,8 @@ export interface ReferenceLibraryHandlerContext {
 export interface ReferenceLibraryHandlerDependencies {
   getAuthenticatedReferenceUser: (
     accessToken: string
-  ) => Promise<{ id: string } | null>;
+  ) => Promise<{ id: string; email: string | null } | null>;
+  isEmailAllowlisted: (email: string | null | undefined) => Promise<boolean>;
   searchReferences: (
     search: string,
     limit: number
@@ -120,6 +122,7 @@ export interface ReferenceLibraryHandlerResult<T> {
 
 const defaultDependencies: ReferenceLibraryHandlerDependencies = {
   getAuthenticatedReferenceUser,
+  isEmailAllowlisted,
   searchReferences,
   createReference,
   linkReferenceToAssertion,
@@ -151,13 +154,50 @@ function unauthenticated(): ReferenceLibraryHandlerResult<ApiEnvelope<null>> {
   };
 }
 
+function forbidden(): ReferenceLibraryHandlerResult<ApiEnvelope<null>> {
+  return {
+    status: 403,
+    body: createApiError({
+      code: "UNAUTHORIZED",
+      message: "Moderator role required",
+    }),
+  };
+}
+
 async function authenticate(
   context: ReferenceLibraryHandlerContext,
   dependencies: ReferenceLibraryHandlerDependencies
-): Promise<{ id: string } | null> {
+): Promise<{ id: string; email: string | null } | null> {
   const accessToken = context.accessToken?.trim();
   if (!accessToken) return null;
   return dependencies.getAuthenticatedReferenceUser(accessToken);
+}
+
+type WriteAuthorization =
+  | { user: { id: string } }
+  | { refusal: ReferenceLibraryHandlerResult<ApiEnvelope<null>> };
+
+/**
+ * Writes to the shared library are a moderator's, by operator decision: the
+ * allowlist that opens the moderation console is the one consulted here, so
+ * the two cannot disagree on who a moderator is.
+ *
+ * Unlike `PATCH /api/v2/flags/{id}`, which answers 403 to both, a missing
+ * session and a session off the allowlist are told apart (401 / 403): the
+ * contribution page needs to know whether to ask for a sign-in or to say the
+ * tool is not for this account. The distinction reveals nothing about which
+ * addresses are allowlisted — only whether the caller's own is.
+ */
+async function authorizeModerator(
+  context: ReferenceLibraryHandlerContext,
+  dependencies: ReferenceLibraryHandlerDependencies
+): Promise<WriteAuthorization> {
+  const user = await authenticate(context, dependencies);
+  if (!user) return { refusal: unauthenticated() };
+  if (!(await dependencies.isEmailAllowlisted(user.email))) {
+    return { refusal: forbidden() };
+  }
+  return { user };
 }
 
 // @req REQ-012
@@ -196,7 +236,8 @@ export async function handleReferenceCreate(
   >
 > {
   const dependencies = resolveDependencies(injectedDependencies);
-  if (!(await authenticate(context, dependencies))) return unauthenticated();
+  const authorization = await authorizeModerator(context, dependencies);
+  if ("refusal" in authorization) return authorization.refusal;
 
   const parsed = referenceCreateSchema.safeParse(rawInput);
   if (!parsed.success) {
@@ -231,7 +272,8 @@ export async function handleAssertionReferenceCreate(
   >
 > {
   const dependencies = resolveDependencies(injectedDependencies);
-  if (!(await authenticate(context, dependencies))) return unauthenticated();
+  const authorization = await authorizeModerator(context, dependencies);
+  if ("refusal" in authorization) return authorization.refusal;
 
   const parsed = assertionReferenceCreateSchema.safeParse(rawInput);
   if (!parsed.success) {
@@ -260,21 +302,24 @@ export async function handleReferenceWorkingAssetCreate(
   >
 > {
   const dependencies = resolveDependencies(injectedDependencies);
-  const user = await authenticate(context, dependencies);
-  if (!user) return unauthenticated();
+  const authorization = await authorizeModerator(context, dependencies);
+  if ("refusal" in authorization) return authorization.refusal;
 
   const parsed = referenceWorkingAssetCreateSchema.safeParse(rawInput);
   if (!parsed.success) {
     return { status: 400, body: validationError(parsed.error.issues) };
   }
 
-  const asset = await dependencies.storeReferenceWorkingAsset(user.id, {
-    sourceId: parsed.data.source_id,
-    assetKind: parsed.data.asset_kind,
-    filename: parsed.data.filename,
-    contentType: parsed.data.content_type,
-    byteSize: parsed.data.byte_size,
-    content: parsed.data.content,
-  });
+  const asset = await dependencies.storeReferenceWorkingAsset(
+    authorization.user.id,
+    {
+      sourceId: parsed.data.source_id,
+      assetKind: parsed.data.asset_kind,
+      filename: parsed.data.filename,
+      contentType: parsed.data.content_type,
+      byteSize: parsed.data.byte_size,
+      content: parsed.data.content,
+    }
+  );
   return { status: 201, body: createApiResponse(asset) };
 }

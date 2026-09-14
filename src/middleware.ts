@@ -1,6 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { validateApiKey } from "@/lib/api/auth";
+import { isSessionAuthenticatedApiRoute } from "@/lib/api/sessionAuthenticatedRoutes";
 import {
   applyIpRateLimit,
   evaluateRateLimit,
@@ -53,8 +54,6 @@ const isPublicLocalizedPage = (pathname: string) =>
 const isDeveloperPortalPage = (pathname: string) =>
   pathname === "/docs/api" || pathname.startsWith("/docs/api/");
 
-const SUPABASE_ORIGIN_FALLBACK = "https://supabase.ethniafrica.com";
-
 // Strict routes allow the two fixed Next.js 16 runtime <style> payloads by
 // exact hash because the framework does not propagate the request nonce.
 const NEXT_RUNTIME_STYLE_HASHES = [
@@ -87,17 +86,21 @@ const FRAME_SRC_HOSTS: string[] = [];
  * NEXT_PUBLIC_SUPABASE_URL. It used to sit beside `*.supabase.co`, which
  * admitted every hosted project, anyone's. The derived origin covers both
  * hostings on its own: a hosted project by its subdomain, production's
- * self-hosted stack by its custom domain. The fallback is production's, so an
- * unusable value still yields a policy under which the atlas works.
+ * self-hosted stack by its custom domain.
+ *
+ * An unusable value yields "" and the policy names no Supabase origin. There
+ * used to be a fallback to production's host, which let a misconfigured
+ * deployment — a fork, a preview — point browsers at production's database,
+ * while its own Supabase client could not work without the variable anyway.
  */
 function supabaseOrigin(): string {
   const configured = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim();
-  if (!configured) return SUPABASE_ORIGIN_FALLBACK;
+  if (!configured) return "";
   try {
     const { origin } = new URL(configured);
-    return origin === "null" ? SUPABASE_ORIGIN_FALLBACK : origin;
+    return origin === "null" ? "" : origin;
   } catch {
-    return SUPABASE_ORIGIN_FALLBACK;
+    return "";
   }
 }
 
@@ -764,16 +767,15 @@ export async function middleware(request: NextRequest) {
   const guarded = <ResponseType extends Response>(response: ResponseType) =>
     versioned(secured(response));
 
-  // The whole /api/v2/keys subtree sits outside api_keys Bearer auth: /issue
-  // is anonymous, and the self-service list/create/revoke endpoints (ETNI-81)
-  // authenticate a Supabase session access token themselves inside the route
-  // handler (see @/api/v2/services/keyService.getAuthenticatedUser) rather
-  // than through this gate — a session JWT is not an api_keys row and would
-  // otherwise be rejected here as an invalid API key before ever reaching it.
-  // It is metered in the anonymous bucket and continues to the session
+  // Routes whose handlers authenticate a Supabase session sit outside api_keys
+  // Bearer auth: a session JWT is not an api_keys row and would otherwise be
+  // rejected here as an invalid API key before ever reaching the handler. The
+  // list, and why being on it grants nothing, is in sessionAuthenticatedRoutes.
+  // They are metered in the anonymous bucket and continue to the session
   // refresh below.
-  const isKeySelfService = isApiV2 && pathname.startsWith("/api/v2/keys");
-  if (isKeySelfService) {
+  const isSessionAuthenticatedApi =
+    isApiV2 && isSessionAuthenticatedApiRoute(pathname, request.method ?? "");
+  if (isSessionAuthenticatedApi) {
     const { rejection } = await evaluateRateLimit(request);
     if (rejection) return guarded(rejection);
   }
@@ -821,7 +823,7 @@ export async function middleware(request: NextRequest) {
   // the site's own readers are throttled no harder than before. Server
   // components read the services directly and never call /api/v2 over HTTP,
   // so no container address pools every reader into one bucket.
-  if (isApiV2 && !isKeySelfService) {
+  if (isApiV2 && !isSessionAuthenticatedApi) {
     const authorization = request.headers.get("Authorization") ?? "";
     const rawKey = authorization.startsWith("Bearer ")
       ? authorization.slice("Bearer ".length).trim()

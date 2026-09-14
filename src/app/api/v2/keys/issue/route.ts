@@ -1,7 +1,7 @@
 /**
  * @swagger
  * /api/v2/keys/issue:
- *   get:
+ *   post:
  *     summary: Issue a public read-only API key
  *     description: |
  *       Issues a shared, IP-bound, read-only public API key.
@@ -9,6 +9,35 @@
  *       Public keys are rate-limited and can only perform read operations.
  *       Partner and admin keys must be requested via the admin UI.
  *       No authentication required for this endpoint.
+ *     tags:
+ *       - API v2 - Keys
+ *     security: []
+ *     responses:
+ *       201:
+ *         description: Public key issued successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/ApiKeyIssueEnvelope'
+ *       409:
+ *         description: A public key already exists for this IP address
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/ApiErrorEnvelope'
+ *       500:
+ *         description: Failed to issue key
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/ApiErrorEnvelope'
+ *   get:
+ *     summary: Issue a public read-only API key (deprecated alias of POST)
+ *     deprecated: true
+ *     description: |
+ *       Deprecated: use POST. Creating a key is a write, and a GET that writes
+ *       can be triggered by a crawler, a link preview or a prefetch. Kept,
+ *       with the same behaviour, so existing clients do not break.
  *     tags:
  *       - API v2 - Keys
  *     security: []
@@ -43,8 +72,7 @@ function getClientIp(request: NextRequest): string | null {
   return request.headers.get("X-Real-IP") ?? null;
 }
 
-// @req REQ-084
-export async function GET(request: NextRequest) {
+async function issuePublicKey(request: NextRequest): Promise<NextResponse> {
   try {
     const ip = getClientIp(request);
     const adminClient = createAdminClient();
@@ -113,4 +141,14 @@ export async function GET(request: NextRequest) {
       { status: 500 }
     );
   }
+}
+
+// @req REQ-034
+export async function POST(request: NextRequest) {
+  return issuePublicKey(request);
+}
+
+// @req REQ-084
+export async function GET(request: NextRequest) {
+  return issuePublicKey(request);
 }

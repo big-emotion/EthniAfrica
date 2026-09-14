@@ -1,7 +1,6 @@
 import { describe, expect, it } from "vitest";
 
 import {
-  lintFicheProse,
   parseFicheProse,
   plainTextOf,
   proseOnly,
@@ -170,7 +169,6 @@ describe("parseFicheProse — degraded input is said, never mimed", () => {
       "Cérémonies appelées *-tambiko, du proto-bantou *-ntu, attesté en *hai.";
 
     expect(parseFicheProse(raw).defect).toBeNull();
-    expect(lintFicheProse(raw)).toEqual([]);
     expect(textOf(parseFicheProse(raw).blocks)[0]).toBe(raw);
   });
 
@@ -269,32 +267,5 @@ describe("proseOnly — the shape the rubric readers pass around", () => {
     expect(
       proseOnly(["Route par le **Nil**.", "Route par le *Sahel*."])
     ).toEqual(["Route par le Nil.", "Route par le Sahel."]);
-  });
-});
-
-describe("lintFicheProse — the CI gate reads every defect, not the first", () => {
-  // @req REQ-122
-  it("reports the out-of-grammar constructs the renderer passes through", () => {
-    expect(lintFicheProse("Voir [la source](https://example.org).")).toContain(
-      "unsupported-construct"
-    );
-    expect(lintFicheProse("1. Premier point")).toContain(
-      "unsupported-construct"
-    );
-    expect(lintFicheProse("### Titre")).toContain("unsupported-construct");
-  });
-
-  // @req REQ-122
-  it("reports several defects at once", () => {
-    const defects = lintFicheProse("### Titre\nUn **gras non fermé.");
-
-    expect(defects).toContain("unsupported-construct");
-    expect(defects).toContain("unbalanced-emphasis");
-  });
-
-  // @req REQ-122
-  it("stays silent on clean prose", () => {
-    expect(lintFicheProse("## Titre\nUn paragraphe **net**.")).toEqual([]);
-    expect(lintFicheProse(KONGO_INCISE)).toEqual([]);
   });
 });

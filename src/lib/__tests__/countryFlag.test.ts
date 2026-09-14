@@ -2,12 +2,22 @@ import { describe, expect, it } from "vitest";
 import { AFRICA_ADMIN0 } from "@/lib/atlas/assets/africaAdmin0";
 import { ALPHA3_TO_ALPHA2 } from "@/lib/isoCountryCodes";
 import {
-  COUNTRIES_WITHOUT_ISO_FLAG,
   flagFromISO3,
   NATURAL_EARTH_ALIASES,
   NEUTRAL_FLAG,
   regionalIndicators,
 } from "@/lib/countryFlag";
+
+/**
+ * Territories the admin-0 asset can draw that have no ISO 3166-1 code, and so
+ * no regional-indicator flag. Somaliland is the only one: it is not
+ * UN-recognised, ISO assigns it nothing, and no emoji flag exists for it.
+ * Borrowing Somalia's flag would make the page assert a sovereignty claim it
+ * has no business asserting; the neutral flag says "no code", which is the
+ * true statement. Listed explicitly so the coverage test stays meaningful for
+ * every other country instead of being weakened to accommodate this one.
+ */
+const COUNTRIES_WITHOUT_ISO_FLAG: readonly string[] = ["SOL"];
 
 describe("countryFlag", () => {
   // @req REQ-116

@@ -490,6 +490,39 @@ describe("migrateAfrikToDatabase", () => {
   });
 
   // @req REQ-032
+  it("refuses --target=local against a hosted project, and never reaches the client", async () => {
+    await expect(
+      migrateAfrikToDatabase({
+        dryRun: true,
+        writeErrorReport: false,
+        target: {
+          environment: "local",
+          activeSupabaseUrl: AFRIK_RECETTE_SUPABASE_URL,
+        },
+      })
+    ).rejects.toThrow(/--target=local/);
+
+    expect(createAdminClient).not.toHaveBeenCalled();
+  });
+
+  // @req REQ-032
+  it("previews a local stack without writing", async () => {
+    const database = useSupabaseDouble();
+
+    const report = await migrateAfrikToDatabase({
+      dryRun: true,
+      writeErrorReport: false,
+      target: {
+        environment: "local",
+        activeSupabaseUrl: "http://127.0.0.1:54321",
+      },
+    });
+
+    expect(createAdminClient).toHaveBeenCalled();
+    expect(database.operations).toHaveLength(0);
+  });
+
+  // @req REQ-032
   it("previews production against the configured production project without writing", async () => {
     const database = useSupabaseDouble();
 

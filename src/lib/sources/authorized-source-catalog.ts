@@ -29,32 +29,13 @@ export const authorizedSourceEntrySchema = z.object({
   matchDomains: z.array(z.string().min(1)).min(1),
 });
 
-// @req REQ-092
-export const authorizedSourceCatalogSchema = z.object({
-  version: z.number().int().positive(),
-  entries: z.array(authorizedSourceEntrySchema),
-});
-
-export type AuthorizedSourceCatalog = z.infer<
-  typeof authorizedSourceCatalogSchema
->;
-export type AuthorizedSourceEntry = z.infer<typeof authorizedSourceEntrySchema>;
-export type { SourceKind };
-
-export interface SourcePolicyOutcome {
-  key: string;
-  tier: SourceTier;
-  sourceKind: SourceKind;
-}
-
-// @req REQ-092
-export const authorizedSourceCatalog =
-  authorizedSourceCatalogSchema.parse(catalog);
-
-// @req REQ-092
-export function validateAuthorizedSourceCatalog(
-  value: AuthorizedSourceCatalog
-): string[] {
+/**
+ * What makes a catalogue incoherent: two sources under one key, or a source
+ * that carries no authority of its own tiered above `unverified`.
+ */
+function catalogueIncoherences(value: {
+  entries: { key: string; tier: string; sourceKind: string }[];
+}): string[] {
   const issues: string[] = [];
   const keys = new Set<string>();
 
@@ -74,6 +55,31 @@ export function validateAuthorizedSourceCatalog(
 
   return issues;
 }
+
+// @req REQ-092
+export const authorizedSourceCatalogSchema = z
+  .object({
+    version: z.number().int().positive(),
+    entries: z.array(authorizedSourceEntrySchema),
+  })
+  .superRefine((value, ctx) => {
+    for (const message of catalogueIncoherences(value)) {
+      ctx.addIssue({ code: "custom", message });
+    }
+  });
+
+export type AuthorizedSourceEntry = z.infer<typeof authorizedSourceEntrySchema>;
+export type { SourceKind };
+
+export interface SourcePolicyOutcome {
+  key: string;
+  tier: SourceTier;
+  sourceKind: SourceKind;
+}
+
+// @req REQ-092
+export const authorizedSourceCatalog =
+  authorizedSourceCatalogSchema.parse(catalog);
 
 function matchesDomain(hostname: string, domain: string): boolean {
   return hostname === domain || hostname.endsWith(`.${domain}`);
