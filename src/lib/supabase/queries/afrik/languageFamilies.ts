@@ -13,7 +13,7 @@ import type { ClassificationStatus, LanguageFamily } from "@/types/afrik";
  * `ids` is how the Explorer families facet narrows to one country: the country
  * resolves to the families present in it, and the restriction travels to the
  * database so page 2 of a filtered list is the second page *of the filtered
- * set*. There are 24 families, so the `in.()` list is nowhere near the URL
+ * set*. There are 25 families, so the `in.()` list is nowhere near the URL
  * length at which a PostgREST filter has to be batched.
  *
  * An empty `ids` is a selection, not the absence of one, and is answered here:

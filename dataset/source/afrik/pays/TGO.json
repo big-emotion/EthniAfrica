@@ -75,7 +75,7 @@
         "peopleId": "PPL_EWE",
         "mainRegion": "Sud du Togo",
         "languages": ["Ewe (ewe", "ISO 639-3)", "français"],
-        "languageFamily": "FLG_NIGERCONGO",
+        "languageFamily": "FLG_KWA",
         "appellationRemarks": "\"Eʋe\" / \"Eʋegbe\" sont les auto-appellations. Le terme \"Ewe\" est utilisé par les Européens. Pas de terme péjoratif connu. Groupe Gbe majoritaire, migration depuis Notsé (Togo) selon tradition orale."
       },
       {
@@ -98,7 +98,7 @@
         "peopleId": "PPL_MINA",
         "mainRegion": "Sud du Togo (zones côtières)",
         "languages": ["Mina (gej", "ISO 639-3)", "français", "ewe"],
-        "languageFamily": "FLG_NIGERCONGO",
+        "languageFamily": "FLG_KWA",
         "appellationRemarks": "\"Mina\" est l'auto-appellation. Pas de terme péjoratif connu. Groupe Gbe, originaire des zones côtières du Togo."
       },
       {
@@ -197,7 +197,7 @@
           "percentageInCountry": 42,
           "peopleId": "PPL_EWE",
           "region": "Sud du Togo",
-          "languageFamily": "FLG_NIGERCONGO"
+          "languageFamily": "FLG_KWA"
         },
         {
           "name": "Kabye",
@@ -212,7 +212,7 @@
           "percentageInCountry": 9.6,
           "peopleId": "PPL_MINA",
           "region": "Sud du Togo (zones côtières)",
-          "languageFamily": "FLG_NIGERCONGO"
+          "languageFamily": "FLG_KWA"
         },
         {
           "name": "Autres groupes",

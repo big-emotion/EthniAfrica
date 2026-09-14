@@ -21,6 +21,7 @@ const EXPECTED_LANGUAGE_BY_FAMILY = {
   FLG_KHOE: "naq",
   FLG_KHOISAN: "hts",
   FLG_KROU: "grb",
+  FLG_KWA: "ewe",
   FLG_KXA: "ktz",
   FLG_MANDE: "bam",
   FLG_NIGERCONGO: "swh",
@@ -61,14 +62,14 @@ function loadLanguage(file: string): LanguageFiche {
 
 describe("language fiche coverage (ETNI-1508)", () => {
   // @req REQ-136
-  it("maps every one of the 24 linguistic families to its selected first ISO 639-3 fiche", () => {
+  it("maps every one of the 25 linguistic families to its selected first ISO 639-3 fiche", () => {
     const expectedCodes = Object.values(EXPECTED_LANGUAGE_BY_FAMILY).sort();
     const files = languageFiles();
     const fiches = files.map(loadLanguage);
     const fichesById = new Map(fiches.map((fiche) => [fiche.id, fiche]));
 
-    expect(Object.keys(EXPECTED_LANGUAGE_BY_FAMILY)).toHaveLength(24);
-    expect(new Set(expectedCodes).size).toBe(24);
+    expect(Object.keys(EXPECTED_LANGUAGE_BY_FAMILY)).toHaveLength(25);
+    expect(new Set(expectedCodes).size).toBe(25);
     expect(files.map((file) => basename(file, ".json"))).toEqual(
       expect.arrayContaining(expectedCodes)
     );

@@ -99,7 +99,7 @@
         "peopleId": "PPL_AKAN",
         "mainRegion": "Centre, Sud, Ouest",
         "languages": ["Akan (Twi, Fante)", "anglais"],
-        "languageFamily": "FLG_NIGERCONGO",
+        "languageFamily": "FLG_KWA",
         "appellationRemarks": "Le terme \"Akan\" est neutre et accepté."
       },
       {
@@ -123,7 +123,7 @@
         "peopleId": "PPL_EWE",
         "mainRegion": "Volta (Est)",
         "languages": ["Ewe", "anglais"],
-        "languageFamily": "FLG_NIGERCONGO",
+        "languageFamily": "FLG_KWA",
         "appellationRemarks": "Le terme \"Ewe\" est neutre et accepté. L'auto-appellation \"Eʋe\" est préférée."
       },
       {
@@ -133,7 +133,7 @@
         "peopleId": "PPL_GA_DANGME",
         "mainRegion": "Grande Accra",
         "languages": ["Ga", "Dangme", "anglais"],
-        "languageFamily": "FLG_NIGERCONGO",
+        "languageFamily": "FLG_KWA",
         "appellationRemarks": "Le terme \"Ga-Dangme\" est neutre et accepté. Les auto-appellations \"Gã\" et \"Dangme\" sont préférées."
       },
       {
@@ -143,7 +143,7 @@
         "peopleId": "PPL_GUAN",
         "mainRegion": "Centre",
         "languages": ["Guan", "anglais"],
-        "languageFamily": "FLG_NIGERCONGO",
+        "languageFamily": "FLG_KWA",
         "appellationRemarks": "Le terme \"Guan\" est neutre et accepté."
       },
       {
@@ -265,7 +265,7 @@
           "percentageInCountry": 45.7,
           "percentageInAfrica": 1.23,
           "region": "Centre, Sud, Ouest",
-          "languageFamily": "FLG_NIGERCONGO"
+          "languageFamily": "FLG_KWA"
         },
         {
           "name": "Mole-Dagbani",
@@ -283,7 +283,7 @@
           "percentageInCountry": 12.8,
           "percentageInAfrica": 0.36,
           "region": "Volta (Est)",
-          "languageFamily": "FLG_NIGERCONGO"
+          "languageFamily": "FLG_KWA"
         },
         {
           "name": "Ga-Dangme",
@@ -292,7 +292,7 @@
           "percentageInCountry": 7.1,
           "percentageInAfrica": 0.19,
           "region": "Grande Accra",
-          "languageFamily": "FLG_NIGERCONGO"
+          "languageFamily": "FLG_KWA"
         },
         {
           "name": "Guan",
@@ -301,7 +301,7 @@
           "percentageInCountry": 3.2,
           "percentageInAfrica": 0.11,
           "region": "Centre",
-          "languageFamily": "FLG_NIGERCONGO"
+          "languageFamily": "FLG_KWA"
         },
         {
           "name": "Gurma",
@@ -337,6 +337,11 @@
           "languageFamily": null
         }
       ]
+    }
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred: 7 of the 54 country records have an English sidecar, and this one follows the country corpus's translation pass."
     }
   }
 }

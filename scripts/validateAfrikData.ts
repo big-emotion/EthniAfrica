@@ -872,6 +872,40 @@ export function checkFlgFolderMatch(datasetRoot: string): ValidationResult {
 }
 
 /**
+ * FR26 – A people fiche is filed under the family its `languageFamilyId` names.
+ *
+ * The field is what the database, the API, search and the quiz read; the folder
+ * is only where a curator looks. With nothing comparing them, one could be
+ * edited without the other — which is how PPL_ATTIE's field was "corrected" to
+ * match a wrong folder in v2.0.0, and how 54 Kwa fiches came to sit under two
+ * families that are not theirs.
+ */
+export function checkPeopleFolderMatchesFamily(
+  datasetRoot: string
+): ValidationResult {
+  const errors: string[] = [];
+  const warnings: string[] = [];
+
+  for (const { flgFolder, file, fullPath } of collectPplFiles(datasetRoot)) {
+    let languageFamilyId: unknown;
+    try {
+      languageFamilyId = JSON.parse(
+        fs.readFileSync(fullPath, "utf-8")
+      ).languageFamilyId;
+    } catch {
+      continue; // parse failures are surfaced by FR27/other checks
+    }
+    if (languageFamilyId !== flgFolder) {
+      errors.push(
+        `peuples/${flgFolder}/${file}: filed under ${flgFolder} but languageFamilyId is ${String(languageFamilyId ?? "missing")}`
+      );
+    }
+  }
+
+  return { ok: errors.length === 0, errors, warnings };
+}
+
+/**
  * FR27 – No two PPL JSON files may share the same `id` field.
  */
 export function checkPplDuplicates(datasetRoot: string): ValidationResult {
@@ -5375,6 +5409,12 @@ async function main() {
   newChecks.push({
     name: "FR26 FLG folder match",
     result: checkFlgFolderMatch(datasetRoot),
+  });
+
+  console.log("FR26 – People folder matches languageFamilyId...");
+  newChecks.push({
+    name: "FR26 People folder matches languageFamilyId",
+    result: checkPeopleFolderMatchesFamily(datasetRoot),
   });
 
   console.log("FR27 – PPL duplicates...");

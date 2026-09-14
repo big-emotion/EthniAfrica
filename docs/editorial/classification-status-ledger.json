@@ -50,6 +50,11 @@
     "rationale": "« Imposé par les navigateurs et administrateurs coloniaux européens sans consultation des populations locales », employé « comme catégorie professionnelle », « effaçant la diversité ethnolinguistique des groupes (Bété, Dida, Wè, Grebo…) »."
   },
   {
+    "id": "FLG_KWA",
+    "status": "colonial-legacy",
+    "rationale": "Introduit par Diedrich Westermann (1927), qui « réutilise un mot désignant « les gens » dans plusieurs des langues concernées » pour en faire une étiquette scientifique, puis redécoupé trois fois (Greenberg 1963, Bennett & Sterk 1977) ; Good (2020) documente que « la frontière entre Kwa et Bénoué-Congo reste débattue »."
+  },
+  {
     "id": "FLG_KXA",
     "status": "reconstructive",
     "rationale": "Le grief porte sur le « Khoisan » de Greenberg, pas sur Kx'a : le nom est une reconstruction de 2010 (Honken et Heine) tirée du mot *kxʼà, « terre », partagé par les deux branches, et fondée sur « des reconstructions phonologiques systématiques »."
