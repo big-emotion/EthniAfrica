@@ -1,7 +1,6 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { notFound, redirect } from "next/navigation";
 
-import { PageLayout } from "@/components/layout/PageLayout";
 import { DiscoveryReader } from "@/components/discoveries/DiscoveryReader";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import {
@@ -11,13 +10,24 @@ import {
   resolvePublication,
 } from "@/lib/discoveries/catalog";
 import { getDiscoveryPublications } from "@/lib/discoveries/entries";
-import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import { isLocale } from "@/lib/locale";
 import { localeHead } from "@/lib/seo/localeAlternates";
 
 interface DiscoveriesPageProps {
   params: Promise<{ lang: string; publication?: string[] }>;
 }
+
+/**
+ * theme-color cannot read a CSS variable, so the night ground is spelled here
+ * once; the route test holds it to `--afh-night-ground`. `cover` lets the stage
+ * run under the notch, which the reader then clears with the safe-area insets.
+ */
+// @req REQ-156
+export const viewport: Viewport = {
+  themeColor: "#120e0a",
+  viewportFit: "cover",
+  colorScheme: "dark",
+};
 
 function requestedEntry(lang: string, parts?: string[]) {
   if (!isLocale(lang) || (parts && parts.length !== 1)) notFound();
@@ -65,6 +75,11 @@ export async function generateMetadata({
   };
 }
 
+/**
+ * No `PageLayout`: the feed is a full-screen reading, as a Reel is, and the
+ * masthead, trail and footer would each put a band of parchment around it
+ * (brand charter §5.1). The reader carries its own way out instead.
+ */
 // @req REQ-158
 export default async function DiscoveriesPage({
   params,
@@ -78,21 +93,12 @@ export default async function DiscoveriesPage({
     const entry = byId.get(id);
     return entry ? [entry] : [];
   });
-  const label = discoveriesCopy[language].title;
 
   return (
-    <PageLayout
+    <DiscoveryReader
       language={language}
-      sectionName={label}
-      hideHeader
-      hideTrail
-      flushTop
-    >
-      <DiscoveryReader
-        language={language}
-        publications={publications}
-        initialId={selected.id}
-      />
-    </PageLayout>
+      publications={publications}
+      initialId={selected.id}
+    />
   );
 }

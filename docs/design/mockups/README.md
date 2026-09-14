@@ -73,9 +73,40 @@ product, and what the implementation does instead:
    the Tier 1/2/3 scale for Officielle / Référencée / Non vérifiée, with
    `source_kind` orthogonal for AI provenance. Take the chip's shape, not its
    wording.
-3. **The two empty cards.** The mockup hard-codes “vide” for `generalInfo.branches`
+3. **The two empty cards (atlas).** The mockup hard-codes “vide” for `generalInfo.branches`
    and `distribution.distributionByCountry`. That is true of the recette database
    and false of this repository's corpus, where all 24 family fiches declare
    branches and a distribution. The implementation drives both cards from
    `classifyFieldProvenance()` so the page reads identically today and stays
    honest the day the corpus is loaded.
+
+## Découvertes — `discoveries/discoveries-mobile.html`
+
+The mobile reader reviewed before the feed was rebuilt as a full-screen reading
+(2026-09-14). It is committed as the page Codex rendered, minus the sandbox
+shim that wrapped it; the one photograph it embeds is the public-domain
+Ouagadougou view the anecdote already publishes. Open it over HTTP — browsers
+block the Lucide script under `file://`.
+
+It was the reference the first implementation did **not** follow: that one was
+built from an earlier "photo-mobile" handoff (see
+`docs/tasks/discoveries-implementation.md`), which is why recette looked like
+neither. What the rebuild takes from it, and what it deliberately does not:
+
+- **Taken — the grammar of the reading.** A top bar of back, title and one
+  control; the actions kept on the frame rather than under it (Garder,
+  Partager, En savoir plus); the bottom sheet with a handle and a kicker
+  naming what it holds (_Sources et contexte_); the _Parcourir_ sheet listing
+  the site's destinations, because the full-screen reading hides the masthead.
+- **Not taken — the parchment ground.** The operator asked for the behaviour of
+  a Reel or a TikTok: black, edge to edge, over the site chrome. The night
+  ground is licensed for this stage by name in `brand-charter.md` §5.1.
+- **Not taken — the bottom action bar.** The actions stand on a rail at the
+  right edge instead, the shape shared by TikTok and Instagram: a bar across
+  the foot costs the photograph about 110 px on a phone, and the caption keeps
+  the full width under a rail.
+- **Not taken — Fraunces headlines in sentence case.** The card keeps the
+  condensed uppercase face of the published shorts, so a reader arriving from a
+  Reel lands on the same object.
+- **Not built — the carousel story.** The mockup labels it a demonstration;
+  no carousel is cleared for publication yet.

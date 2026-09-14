@@ -36,6 +36,22 @@ const TRAIL_MOUNTS = [
   "components/layout/AfrikBreadcrumbs",
 ];
 
+/**
+ * Routes that draw no chrome at all, each with the module that carries its way
+ * out in place of a trail. The one list this test keeps, and it is not the
+ * list the header above warns against: an entry is a charter decision with its
+ * own replacement to reach, not a mount somebody forgot.
+ *
+ * Découvertes is a full-screen reading (brand charter §5.1); a trail would be
+ * a strip of parchment over the stage.
+ */
+const IMMERSIVE_ROUTES = new Map([
+  [
+    path.join("decouvertes", "[[...publication]]", "page.tsx"),
+    "components/discoveries/DiscoveryDestinations",
+  ],
+]);
+
 function walk(dir: string): string[] {
   return readdirSync(dir).flatMap((entry) => {
     const full = path.join(dir, entry);
@@ -93,13 +109,14 @@ function importsOf(file: string): string[] {
 }
 
 /**
- * Whether a trail mount is reachable from a file, following `@/` imports.
+ * Whether one of `modules` is reachable from a file, following `@/` imports.
  *
  * Depth-limited and memoized: the point is to catch a route that mounts
  * nothing, not to type-check the graph.
  */
-function reachesTrailMount(
+function reachesModule(
   file: string,
+  modules: readonly string[],
   seen = new Set<string>(),
   depth = 0
 ): boolean {
@@ -107,12 +124,16 @@ function reachesTrailMount(
   seen.add(file);
 
   for (const specifier of importsOf(file)) {
-    if (TRAIL_MOUNTS.some((mount) => specifier === `@/${mount}`)) return true;
+    if (modules.some((module) => specifier === `@/${module}`)) return true;
     const resolved = resolveImport(specifier);
-    if (resolved && reachesTrailMount(resolved, seen, depth + 1)) return true;
+    if (resolved && reachesModule(resolved, modules, seen, depth + 1)) {
+      return true;
+    }
   }
   return false;
 }
+
+const reachesTrailMount = (file: string) => reachesModule(file, TRAIL_MOUNTS);
 
 /** Every `layout.tsx` sitting above a route, nearest last. */
 function layoutsAbove(file: string): string[] {
@@ -166,11 +187,28 @@ describe("every route of the site carries a trail", () => {
   it("mounts a trail on every route, through the shell or directly", () => {
     const unmounted = routeFiles.filter(
       (file) =>
+        !IMMERSIVE_ROUTES.has(path.relative(APP_ROOT, file)) &&
         !reachesTrailMount(file) &&
         !layoutsAbove(file).some((layout) => reachesTrailMount(layout))
     );
 
     expect(unmounted.map((file) => path.relative(APP_ROOT, file))).toEqual([]);
+  });
+
+  /**
+   * The exemption above is not a hole: an immersive route must still reach the
+   * destinations it carries in place of the trail, or a reader who arrived
+   * from a shared link is shut in the reading.
+   */
+  // @req REQ-115
+  it("gives every immersive route its own way out instead of a trail", () => {
+    for (const [route, wayOut] of IMMERSIVE_ROUTES) {
+      const file = path.join(APP_ROOT, route);
+
+      expect(routeFiles).toContain(file);
+      expect(reachesModule(file, [wayOut])).toBe(true);
+      expect(reachesTrailMount(file)).toBe(false);
+    }
   });
 
   /**

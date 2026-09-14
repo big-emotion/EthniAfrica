@@ -2,7 +2,9 @@ import type { Language } from "@/types/shared";
 
 const en = {
   title: "Discoveries",
-  introduction: "A sourced fact, an image, then another view of Africa.",
+  browse: "Browse",
+  actions: "Discovery actions",
+  context: "Sources and context",
   next: "Next discovery",
   previous: "Previous discovery",
   details: "Learn more",
@@ -68,8 +70,9 @@ type DiscoveriesCopy = typeof en;
 
 const fr: DiscoveriesCopy = {
   title: "Découvertes",
-  introduction:
-    "Un fait sourcé, une image, puis un autre regard sur l’Afrique.",
+  browse: "Parcourir",
+  actions: "Actions de la découverte",
+  context: "Sources et contexte",
   next: "Découverte suivante",
   previous: "Découverte précédente",
   details: "En savoir plus",
@@ -84,12 +87,12 @@ const fr: DiscoveriesCopy = {
   atlas: "Dans l’atlas",
   original: "Photo originale",
   licence: "Licence de la photo",
-  keep: "Conserver",
-  kept: "Conservé",
+  keep: "Garder",
+  kept: "Gardé",
   saved: "Mes découvertes",
-  empty: "Aucune découverte conservée sur cet appareil.",
+  empty: "Aucune découverte gardée sur cet appareil.",
   temporary:
-    "Conservation uniquement pendant cette visite : le stockage de cet appareil est indisponible.",
+    "Gardée uniquement pendant cette visite : le stockage de cet appareil est indisponible.",
   share: "Partager",
   copy: "Copier le lien",
   copied: "Lien copié",

@@ -195,6 +195,18 @@ The night ground `--afh-night-*` is licensed by DEC-022 for **the atlas stage
 only** — the globe band on a fiche. It is not a theme, it is a stage light. Any
 other block that goes dark is out of scope and needs its own decision.
 
+**Découvertes is the second stage** (operator ruling, 2026-09-14). The operator
+asked for the behaviour of a Reel: one publication per screen, black edge to
+edge, over the site chrome. Built first as a 612 px night frame under the
+masthead and over the footer, the reader was neither the parchment site nor the
+Reel a visitor arrived from — a card in a document, with its actions in two rows
+of buttons below the fold. So that route draws no masthead, trail or footer; the
+whole viewport is `--afh-night-ground`, the browser's own interface is tinted to
+match, and the reading carries its own way out — a rail of destinations from
+1200 px, a _Parcourir_ sheet below. The licence covers that stage and nothing
+opened from it: its sheets stay on parchment, because a source list is a
+document. Gated by `discoveriesImmersiveCharter.test.ts`.
+
 ### 5.2 Four categorical accents, and a surface takes one
 
 `--afh-cat-ocre` `#c9821f` · `--afh-cat-teal` `#33a390` ·

@@ -185,6 +185,14 @@ longer one.
 There are at most eight editorial themes. Below 1200 px the header uses a drawer;
 from 1200 px it uses a panel. This keeps tablet navigation within the same
 compact shell as mobile while the separate Découvertes destination is present.
+
+**Découvertes stands in the row without being a fourth access mode.** It is a
+destination, not a disclosure, so it is a link beside the three triggers, drawn
+in their pill so the bar reads as one row. Its seed is neutral, because a hue in
+this row teaches an axis, and it carries no caret, because it opens nothing.
+Parked beside the search and theme discs as a bold underlined word, it read as
+a utility rather than as a place. In the drawer it takes a fold trigger's row.
+Asserted by `SiteHeader.test.tsx`.
 Theme selection remains compact below 1200 px,
 with a native select, and becomes a four-column grid from 1200 px, capped at
 two rows by the bounded vocabulary. Search and theme selection occupy two

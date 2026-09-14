@@ -305,7 +305,9 @@ describe("Découvertes details", () => {
       />
     );
     fireEvent.click(screen.getByRole("button", { name: "En savoir plus" }));
-    expect(screen.getByRole("dialog")).toBeInTheDocument();
+    expect(
+      within(screen.getByRole("dialog")).getByText("Sources et contexte")
+    ).toBeInTheDocument();
     expect(screen.getByText(/Thomas Sankara le proclame/)).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Burkina Faso" })).toHaveAttribute(
       "href",
@@ -332,10 +334,8 @@ describe("Découvertes saved retrieval", () => {
         initialId="anecdote:burkina-faso"
       />
     );
-    fireEvent.click(screen.getByRole("button", { name: "Conserver" }));
-    expect(
-      screen.getByRole("button", { name: "Conservé" })
-    ).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: "Garder" }));
+    expect(screen.getByRole("button", { name: "Gardé" })).toBeInTheDocument();
     view.unmount();
 
     render(
@@ -367,7 +367,7 @@ describe("Découvertes saved retrieval", () => {
         initialId="anecdote:burkina-faso"
       />
     );
-    fireEvent.click(screen.getByRole("button", { name: "Conserver" }));
+    fireEvent.click(screen.getByRole("button", { name: "Garder" }));
     expect(
       screen.getByText(/uniquement pendant cette visite/)
     ).toBeInTheDocument();
