@@ -139,6 +139,19 @@ n'a aucune réserve verticale ; c'est l'interligne qui la fournit.
 pas dans la mesure de contraste — c'est le voile qui doit atteindre le seuil — mais il
 sauve le détail d'un glyphe qui tombe sur une zone claire du document.
 
+### Les dates s'écrivent en chiffres, jamais en lettres
+
+Décidé le 2026-09-14. Une date affichée à l'écran — année, siècle, décennie — porte
+toujours ses chiffres : `1891`, pas « mille huit cent quatre-vingt-onze » ; `XVIIe
+siècle` ou `17e siècle`, jamais « dix-septième siècle ». Vaut pour `titre`, `corps`,
+`precision`, `punchline`, et pour les sous-titres de la vidéo, qui reprennent le texte
+de `narration.fr.txt` : une date épelée dans le script s'affiche épelée au sous-titre.
+
+Ne s'applique pas à un compte qui n'est pas une date — « soixante-cinq peuples » reste
+en lettres, comme toute la doctrine des titres le veut déjà (§7 ter : « la Tanzanie,
+c'est quatre-vingt-seize peuples »). La distinction est celle-là : une date se lit sur
+une frise chronologique, un compte se dit à voix haute.
+
 ---
 
 ## 3 bis. Le bloc de paire
