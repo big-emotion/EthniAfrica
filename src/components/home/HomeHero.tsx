@@ -240,7 +240,11 @@ export function HomeHero({
              scale's ceiling. It is 34px rather than 30px at 430. */
           font-size: var(--afh-text-hero);
           line-height: var(--afh-leading-hero);
-          margin: 0 0 16px;
+          /* 12px, not 16: the hero step added four pixels to the title at
+             430, and the globe's share of the first fold (brand charter §8.3,
+             home-search-first.spec) fell to 119px of its 120. The gap under
+             the title gives them back rather than the title's step. */
+          margin: 0 0 var(--afh-space-lg);
           color: var(--afh-text);
           text-wrap: balance;
         }
