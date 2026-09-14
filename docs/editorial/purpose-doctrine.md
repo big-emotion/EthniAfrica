@@ -285,9 +285,39 @@ The quotations of the agent's reply above carry the corrected wording, so the
 series cannot be re-seeded from the retired one. Productions already published
 still open on it and are not re-rendered.
 
+**Berlin, 1884 is retired as a citation, not just corrected (2026-09-14).** The
+message audit of 2026-09-13 (finding 9) left open whether "Berlin" could still
+be named as long as a production did not credit it with drawing the lines. The
+operator closed that question directly: no production cites "Berlin, 1884" at
+all going forward, in any language, on any surface — not the About page's
+closing, not the scale-ladder rung, not a social closing card. The reasons
+above still explain _why_ Berlin cannot be the sole origin point (it set rules,
+drew almost no line itself); this addendum removes it as a citation entirely,
+in favour of the already-published formula, "la plupart des frontières ont
+moins de cent quarante ans," which carries the same claim without naming a
+single conference. `docs/design/gabarits-social/GABARITS-SOCIAL.md` §7 ter and
+`.claude/skills/ethniafrica-message/SKILL.md` are updated to match. Productions
+already published (the Dioula closing card among them, per the 09-13 audit)
+still carry the retired citation and are not re-rendered for this alone.
+
+**The closing doctrine also widens, the same day.** Beyond the fixed closing
+line for the peoples series ("Ce peuple n'a pas été divisé..."), the operator
+stated the doctrine's larger shape: names existed long before borders, and what
+survives the division is what actually connects every people to every other —
+not a story about who drew a line, but one of continuity and of connection
+across difference. This is a doctrine statement, not yet a formalised
+closing-line spec for every content type; folding it into this file's
+structure, GABARITS-SOCIAL §7 ter's type-by-type closing table, and the About
+page's `purposeChapter` is `/ethniafrica-message`'s work, not done by this
+edit.
+
 ---
 
 ## 5. A second doctrine session — the unity vision (14 September 2026)
+
+**Where this session picks up.** The addendum above widened the closing
+doctrine the same day and deferred its formalisation to `/ethniafrica-message`.
+This is that session.
 
 **What this session is.** The blocked `ethniafrica-pourquoi-les-peuples` idea
 report reached for a line close to the doctrine above without it being
@@ -412,7 +442,10 @@ correction — the same role the 191-peoples count plays for §1's opening line
    `claimStatus` sit together on the About page: a position, not a
    measurement the atlas produces.
 
-**Not yet done.** Neither line has been carried into `about.ts`'s
-`purposeChapter`, `aboutPage`, or GABARITS-SOCIAL §7 ter — those are published
-surfaces and the operator asked to confirm separately before either is
-touched. This section records the doctrine; it does not yet publish it.
+**Not yet done, before this session.** Neither line had been carried into
+`about.ts`'s `purposeChapter`, `aboutPage`, or GABARITS-SOCIAL §7 ter — those
+are published surfaces, and confirming the wording came first. Both are now
+published: the fourth refusal and the `unityClaim`/`unityClaimStatus` pair sit
+in `about.ts`, rendered as a block in `AboutPageContent.tsx` separate from the
+constant ligne de vision, and GABARITS-SOCIAL §7 ter carries the corresponding
+table row and subsection.

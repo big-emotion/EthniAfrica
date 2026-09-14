@@ -574,8 +574,12 @@ emporte s'il ne lit rien d'autre.
 | « Ce qui est resté. » | « Ce qui a été pris. » | Le contenu ne dénonce pas, il agrandit la carte. |
 | « Certaines ruptures sont plus vieilles que la carte coloniale. » | « Avant les frontières, les peuples étaient unis. » | Des parentés de langue et de culture ont parfois traversé des ruptures — une scission, une migration, une querelle de succession — bien plus anciennes que le tracé colonial. La carte n'a pas toujours créé la séparation, elle l'a souvent verrouillée. |
 
-**Deux dates, à citer plutôt qu'à paraphraser :** Berlin 1884, les indépendances 1960.
-Une frontière ne contient pas un peuple, elle le traverse.
+**Aucune conférence, aucune date unique n'est citée comme l'origine des frontières**
+(décidé par l'opérateur le 2026-09-14) : la conférence de Berlin a fixé des règles de
+revendication, elle n'a tracé presque aucune ligne elle-même, et une production qui la
+cite comme l'autrice du tracé répète une erreur déjà relevée par l'audit du message.
+La formule qui tient est celle de la table ci-dessus — « moins de 140 ans » — jamais un
+lieu et une date uniques. Une frontière ne contient pas un peuple, elle le traverse.
 
 ### Une deuxième position, distincte de la ligne de vision
 
@@ -635,6 +639,7 @@ s'écrit ici d'abord, jamais dans une carte.
 | une projection, une carte | un registre de la banque ci-dessous | celui du registre | « La carte ne mentait pas. Elle ne disait pas tout. » | « tout. » | « On l'a redessinée. » |
 | le nom d'un pays | un registre de la banque ci-dessous | celui du registre | « Ce pays ne s'est pas renommé. » | « renommé. » | « On l'a rebaptisé. » — *dérivé de la ligne des villes le 2026-09-13, à valider* |
 | une langue, une famille | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas disparu. » | « disparu. » | *à fixer* — aucune seconde moitié n'a encore été écrite |
+| une famille de langues, regroupant plusieurs peuples sous un seul nom | un registre de la banque ci-dessous | celui du registre | « Cette famille n'est pas un peuple. » | « peuple. » | « On lui a donné un nom, par-dessus des peuples qui avaient déjà le leur. » — *décidé par l'opérateur le 2026-09-14, pour le sujet Mandé — distinct de la ligne « une langue, une famille » ci-dessus : celle-ci porte la légitimité d'une classification, celle-là la confusion entre un nom de famille et un nom de peuple* |
 
 **`cards.json` ne porte jamais `**`** : les titres s'y recopient en texte brut depuis
 cette table, le moteur accentue de lui-même le dernier mot d'une clôture avec sa
