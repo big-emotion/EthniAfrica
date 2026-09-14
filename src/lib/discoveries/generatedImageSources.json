@@ -14,7 +14,7 @@
   },
   "amazigh": {
     "source": {
-      "title": "Bijoux",
+      "title": "Encyclopédie berbère — Bijoux (H. Camps-Fabrer)",
       "shortTitle": "Encyclopédie berbère",
       "url": "https://journals.openedition.org/encyclopedieberbere/1758",
       "tier": "referenced"
@@ -23,7 +23,7 @@
   },
   "ewe": {
     "source": {
-      "title": "Man's kente (prestige cloth)",
+      "title": "The Metropolitan Museum of Art — Man's kente (prestige cloth)",
       "shortTitle": "The Metropolitan Museum of Art",
       "url": "https://www.metmuseum.org/art/collection/search/320677",
       "tier": "referenced"
@@ -32,7 +32,7 @@
   },
   "swahili": {
     "source": {
-      "title": "Stone Town of Zanzibar",
+      "title": "UNESCO World Heritage — Stone Town of Zanzibar",
       "shortTitle": "UNESCO World Heritage Centre",
       "url": "https://whc.unesco.org/en/list/173/",
       "tier": "official"
@@ -41,9 +41,9 @@
   },
   "kongo": {
     "source": {
-      "title": "Kongo",
+      "title": "Ethnologue (SIL) — Kongo [kon]",
       "shortTitle": "SIL Ethnologue",
-      "url": "https://www.ethnologue.com/language/kon/",
+      "url": "https://www.ethnologue.com/language/kon",
       "tier": "official"
     },
     "captionSource": {
@@ -54,49 +54,49 @@
   },
   "somali": {
     "source": {
-      "title": "Somalia - FOREIGN RELATIONS",
+      "title": "Countrystudies.us — Somalia : Foreign Relations",
       "shortTitle": "Library of Congress Country Study",
       "url": "https://countrystudies.us/somalia/78.htm",
       "tier": "referenced"
     },
     "detailSources": [
       {
-        "title": "Somalia - The Economy",
+        "title": "Countrystudies.us — Somalia : The Economy",
         "url": "https://countrystudies.us/somalia/56.htm"
       }
     ]
   },
   "hausa": {
     "source": {
-      "title": "Hausa and the Chadic Languages",
+      "title": "Hausa and the Chadic Languages (IU ScholarWorks)",
       "shortTitle": "Paul Newman",
       "url": "https://scholarworks.iu.edu/dspace/bitstreams/b175371d-4472-4485-abd1-f96698068937/download",
       "tier": "referenced"
     },
     "detailSources": [
       {
-        "title": "La vieille ville de Zinder, quartier de Birni et le Sultanat",
+        "title": "UNESCO World Heritage Centre — La vieille ville de Zinder, quartier de Birni et le Sultanat",
         "url": "https://whc.unesco.org/en/tentativelists/5040/"
       }
     ]
   },
   "swazi": {
     "source": {
-      "title": "Census 2022 Statistical Release",
+      "title": "Statistics South Africa — Census 2022 Statistical Release",
       "shortTitle": "Statistics South Africa",
       "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
       "tier": "official"
     },
     "detailSources": [
       {
-        "title": "Swaziland Releases Population Count from 2017 Census",
+        "title": "UNFPA Eswatini — Swaziland Releases Population Count from 2017 Census",
         "url": "https://eswatini.unfpa.org/en/news/swaziland-releases-population-count-2017-census"
       }
     ]
   },
   "njinga": {
     "source": {
-      "title": "Njinga Mbandi: Queen of Ndongo and Matamba",
+      "title": "UNESCO Publishing – Njinga Mbandi: Queen of Ndongo and Matamba",
       "shortTitle": "UNESCO Publishing",
       "url": "https://shop.unesco.org/products/njinga-mbandi-queen-of-ndongo-and-matamba",
       "tier": "official"
@@ -109,7 +109,7 @@
   },
   "mansa-musa": {
     "source": {
-      "title": "Mansa Musa's Hajj to Mecca",
+      "title": "Northwestern University Library — Caravans of Gold, Fragments in Time : Mansa Musa's Hajj to Mecca",
       "shortTitle": "Northwestern University Library",
       "url": "https://caravans.library.northwestern.edu/tour/mansa-musas-hajj-to-mecca",
       "tier": "referenced"
@@ -118,7 +118,7 @@
   },
   "grand-zimbabwe": {
     "source": {
-      "title": "Great Zimbabwe National Monument",
+      "title": "UNESCO World Heritage Centre – Great Zimbabwe National Monument",
       "shortTitle": "UNESCO World Heritage Centre",
       "url": "https://whc.unesco.org/en/list/364/",
       "tier": "official"
@@ -127,7 +127,7 @@
   },
   "marrakech": {
     "source": {
-      "title": "Medina of Marrakesh",
+      "title": "UNESCO World Heritage Centre – Medina of Marrakesh",
       "shortTitle": "UNESCO World Heritage Centre",
       "url": "https://whc.unesco.org/en/list/331/",
       "tier": "official"

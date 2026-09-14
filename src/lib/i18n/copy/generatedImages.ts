@@ -62,10 +62,10 @@ const en = {
     },
     hausa: {
       title: "Hausawa on both sides",
-      description: `${enDescription} two earthen towns mirroring each other around one market.`,
+      description: `${enDescription} two towns mirroring each other around one market.`,
       alt: "Miniature model seen from above: crenellated earthen houses with white-patterned façades frame a central market; riders in blue, motorbikes, a donkey, and cultivated fields beyond.",
       caption:
-        "Hausa is the majority language of northern Nigeria and of Niger. On both sides, Hausa architecture is built in earth.",
+        "Hausa is the majority language of northern Nigeria and of Niger. In Zinder, in Niger, Hausa architecture builds in earth.",
       credit: enCredit,
     },
     swazi: {
@@ -184,10 +184,10 @@ const fr: GeneratedImagesCopy = {
     },
     hausa: {
       title: "Hausawa des deux côtés",
-      description: `${frDescription} deux villes de terre en miroir autour d’un même marché.`,
+      description: `${frDescription} deux villes en miroir autour d’un même marché.`,
       alt: "Maquette miniature vue d’en haut : des maisons de terre crénelées aux façades ornées de motifs blancs encadrent un marché central ; des cavaliers en bleu, des motos, un âne et, au loin, des champs cultivés.",
       caption:
-        "Le haoussa est la langue majoritaire du nord du Nigeria et du Niger. De part et d’autre, l’architecture haoussa est une architecture de terre.",
+        "Le haoussa est la langue majoritaire du nord du Nigeria et du Niger. À Zinder, au Niger, l’architecture haoussa bâtit en terre.",
       credit: frCredit,
     },
     swazi: {
