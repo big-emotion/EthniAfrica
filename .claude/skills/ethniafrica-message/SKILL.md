@@ -69,7 +69,7 @@ Chaque critère se note **0, 1 ou 2**, avec la phrase citée qui justifie la not
 | #   | Critère                                                                                                                                                                                                                                                                                                                                                                                                                          | Bloquant | Pour qui        |
 | --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | --------------- |
 | 1   | **Le cadre est dit dans la pièce elle-même.** Un peuple nommé, et ce que la frontière lui fait ou ce qui est plus vieux qu'elle. Un sujet qui n'est pas un peuple (un pays, une ville, un mot) relie son nom aux peuples qu'il désigne ; sans ce lien, 0.                                                                                                                                                                        | oui      | le nouveau venu |
-| 2   | **Le nom qu'il se donne, d'abord.** Dès qu'un peuple est nommé, la paire est visible tôt — carte 2 au plus tard en carrousel, première scène après l'accroche en vidéo, premier écran sur une page — dans l'ordre nom qu'il se donne → nom qu'on lui donne, sous la forme de §3 bis.                                                                                                                                             | oui      | les deux        |
+| 2   | **Le nom qu'il se donne, d'abord.** Dès qu'un peuple est nommé, la paire est visible tôt — carte 2 au plus tard en carrousel, première scène après l'accroche en vidéo, premier écran sur une page — dans l'ordre nom qu'il se donne → nom qu'on lui donne, sous la forme de §3 bis. **Sauf sous-cas « qui a nommé ce pays » — voir la note sous la grille.**                                                                    | oui      | les deux        |
 | 3   | **Le peuple est sujet de la phrase.** Le renversement d'agent de §7 ter ; le colonisateur n'est pas le sujet des phrases qui concluent.                                                                                                                                                                                                                                                                                          | oui      | les deux        |
 | 4   | **Aucune phrase refusée.** Ni les trois de la doctrine, ni « les frontières sont arbitraires ».                                                                                                                                                                                                                                                                                                                                  | oui      | les deux        |
 | 5   | **Les dates sont exactes, et aucune ne nomme Berlin.** « Moins de cent quarante ans » pour les frontières ; la date d'attestation propre au nom quand un nom est daté. Une clôture qui cite « Berlin » ou « 1884 », qui en fait l'auteur des lignes, ou qui pose « mille ans » comme un fait daté : 0.                                                                                                                           | oui      | les deux        |
@@ -80,6 +80,31 @@ Chaque critère se note **0, 1 ou 2**, avec la phrase citée qui justifie la not
 Les critères 1 et 7 servent le nouveau venu : il n'a que cette pièce. Le 2 et
 le 8 servent l'abonné : c'est la répétition du même bloc, à la même place, dans
 les mêmes mots, qui fait reconnaître la marque.
+
+### Sous-cas du critère 2 : un lot centré sur qui a nommé le pays
+
+Un lot dont le sujet déclaré est **qui a nommé ce pays** (pas un peuple — voir
+`GABARITS-SOCIAL.md` §7 ter, sous-cas de la ligne « un pays et les peuples qui y
+vivent ») lit le critère 2 **à la clôture, pas à la carte 2**. Décidé le
+2026-09-14 après un premier passage sur « qui-a-nomme-la-cote-divoire » : une
+version qui avançait la paire nom-qu'il-se-donne/nom-qu'on-lui-donne en carte 2
+avait vidé le corps du lot de tout acteur historique nommé (Bouët-Willaumez,
+Treich-Laplène, Binger n'existaient nulle part) — le critère 2 passait, mais la
+pièce ne répondait plus à la question de son propre sujet.
+
+Pour ce sous-cas :
+
+- **Le critère 1 seul garantit le cadre pour le nouveau venu.** Le critère 2 se
+  vérifie sur la clôture : la paire y apparaît comme le renversement (« voilà
+  qui a nommé ce pays ; ce peuple, lui, portait déjà son propre nom »), pas
+  comme l'ouverture.
+- **80 % du corps répond à « qui, comment, ce qui en reste »** — des acteurs
+  nommés, des traités, la toponymie qui en témoigne. Une pièce de ce sous-cas
+  qui n'atteint ce budget que par du vocabulaire abstrait (« un décret », « les
+  autorités ») sans jamais nommer qui a agi ne sert le critère 1 qu'en apparence
+  : signale-le sous le critère 1, pas sous le 2.
+- Ce sous-cas ne change rien aux critères 3 à 8 : le peuple reste sujet de la
+  phrase de clôture, aucune phrase refusée n'apparaît, et ainsi de suite.
 
 ### Le vocabulaire
 

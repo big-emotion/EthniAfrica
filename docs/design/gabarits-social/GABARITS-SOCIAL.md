@@ -634,7 +634,7 @@ s'écrit ici d'abord, jamais dans une carte.
 | Le lot parle de | Patron de titre d'ouverture | Mot en accent à l'ouverture | Titre de clôture | Mot en accent à la clôture | Corps de clôture |
 | --- | --- | --- | --- | --- | --- |
 | un peuple réparti sur plusieurs pays | « Du {pays} au {pays}, les frontières traversent les {peuple}. » | « {peuple}. » | « Ce peuple n'a pas été divisé. » | « divisé. » | « C'est la carte qui a été dessinée par-dessus. » |
-| un pays et les peuples qui y vivent — *proposé le 2026-09-13, à valider par l'opérateur* | « {Pays}, c'est {n} peuples. » | « peuples. » | « Ces peuples n'ont pas été rassemblés. » | « rassemblés. » | « C'est la carte qui a été dessinée autour d'eux. » |
+| un pays et les peuples qui y vivent — *validée le 2026-09-14* | « {Pays}, c'est {n} peuples. » — *sauf sous-cas « qui a nommé ce pays », voir ci-dessous* | « peuples. » | « Ces peuples n'ont pas été rassemblés. » | « rassemblés. » | « C'est la carte qui a été dessinée autour d'eux. » |
 | des villes, des lieux | un registre de la banque ci-dessous | celui du registre | « Cette ville n'a pas changé de nom. » | « nom. » | « On l'a rebaptisée. » |
 | une projection, une carte | un registre de la banque ci-dessous | celui du registre | « La carte ne mentait pas. Elle ne disait pas tout. » | « tout. » | « On l'a redessinée. » |
 | le nom d'un pays | un registre de la banque ci-dessous | celui du registre | « Ce pays ne s'est pas renommé. » | « renommé. » | « On l'a rebaptisé. » — *dérivé de la ligne des villes le 2026-09-13, à valider* |
@@ -661,12 +661,41 @@ phrase.** Exemples :
 **Un pays et les peuples qui y vivent.** C'est l'épisode à densité inversée : le sujet
 est un pays, et ce qu'il faut renverser n'est pas une division mais un rassemblement.
 « Ce peuple n'a pas été divisé » y serait faux. `{n}` se **mesure sur le corpus le jour
-où le titre s'écrit**, il ne se recopie pas. Exemple :
+où le titre s'écrit**, il ne se recopie pas. Exemple, pour un lot où le pays lui-même
+reste le sujet du corps :
 
 > La Tanzanie, c'est quatre-vingt-seize **peuples**.
 
-Cette ligne est **proposée le 2026-09-13 et reste à valider par l'opérateur** ; tant
-qu'elle ne l'est pas, un lot de ce type s'arrête avant d'écrire sa clôture et le dit.
+Cette ligne est **validée par l'opérateur (2026-09-14)**, après un premier passage sur
+« qui-a-nomme-la-cote-divoire » qui l'avait déjà appliquée sur cette base.
+
+**Sous-cas : un lot centré sur qui a nommé le pays — l'ordre s'inverse, et le patron
+d'ouverture ci-dessus ne s'applique pas.** Mesuré le 2026-09-14 sur ce même sujet : une
+première version ouvrait sur le compte de peuples et reléguait l'acte de nommer à un
+« décret », sans jamais dire qui l'a signé, négocié ou exploré — Bouët-Willaumez,
+Treich-Laplène, Binger n'existaient nulle part dans le montage. L'opérateur a jugé la
+pièce vide de sens : elle ne répondait à aucune question, parce que le reste du corpus
+parle déjà des peuples en permanence, et que **c'est cette parenthèse-ci qui doit parler
+du pays**.
+
+- **80 % du corps du lot répond à « qui, comment, ce qui en reste »** : les acteurs
+  nommés (explorateurs, négociants, résidents, gouverneurs, leurs rivaux), les traités,
+  les comptoirs, la résistance, et la toponymie qui en témoigne aujourd'hui — une ville,
+  un quartier qui porte encore leur nom. Nommer un acteur historique n'est pas la même
+  chose que d'en faire le sujet moral de la pièce : on dit qui a agi et ce qui est resté
+  de son passage, pas un jugement sur lui. C'est la même distinction qui tient
+  « le registre de la réparation garde le colonisateur au centre de la phrase » —
+  la toponymie qui reste **est** ce qui est resté, elle ne bascule pas dans ce registre.
+- **Les peuples n'ouvrent pas le lot et n'ont pas à apparaître en carte 2.** Ils forment
+  la parenthèse de clôture, le renversement : voilà qui a nommé ce pays ; les peuples,
+  eux, étaient déjà là sous leur propre nom, indépendamment de cette histoire. La clôture
+  du type ci-dessus (« Ces peuples n'ont pas été rassemblés. ») reste inchangée — c'est
+  l'ordre du corps qui s'inverse, pas la clôture.
+- **L'ouverture** n'utilise donc pas le patron « {Pays}, c'est {n} peuples. » pour ce
+  sous-cas : elle assertit la chose surprenante du nom lui-même (qui l'a donné, à partir
+  de quoi), dans un des registres de la banque de patrons ci-dessous — jamais le compte
+  de peuples, qui appartient à la clôture.
+- **`ethniafrica-message`, critère 2** lit ce sous-cas différemment : voir ce skill.
 
 **Ce qu'aucune clôture n'écrit, quel que soit le type**, tant que la session de doctrine
 n'a pas tranché : « Berlin » comme celui qui a tracé les lignes — la conférence de
