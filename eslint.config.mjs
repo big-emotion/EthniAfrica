@@ -104,8 +104,8 @@ const eslintConfig = [
   //
   // Do not reopen the register. A file that needs a size the scale does not
   // have takes the third route in typography-charter.md §6: a named,
-  // surface-scoped token that aliases the scale (`--country-text-*`,
-  // `--home-text-*`), with a ticket against it. That keeps the exception
+  // surface-scoped token that aliases the scale (`--country-text-*`), with a
+  // ticket against it. That keeps the exception
   // countable and in one file instead of scattered through styled-jsx.
   //
   // .css files are NOT covered: ESLint never parses them. country-tokens.css

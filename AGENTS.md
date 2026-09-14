@@ -23,6 +23,10 @@ the non-empty source marker `_translation.deferred.en`. The blocking gate is
 `.claude/skills/afrik-translator/`. This content readiness rule never changes
 `SITE_LOCALE_MODE` and therefore never publishes unfinished English.
 
+## Before changing how a page looks
+
+Read `docs/design/brand-charter.md`, then `docs/design/typography-charter.md`. Its §8 tables the home's type element by element — the face, step and ink each element takes, and why that one and not another — and `homeTypographyCharter.test.ts` holds the table. `CLAUDE.md`'s `### Frontend` section carries the full doctrine.
+
 ## Read `CLAUDE.md` for everything else
 
 Architecture, commands, every CI gate, the `@req` traceability rule, the Source Tier policy, the reader-facing register, the worktree and branch discipline. The section `### Bilingual content` is the doctrine this file summarises.

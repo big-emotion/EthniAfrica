@@ -154,11 +154,7 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
     );
     expect(
       paragraphs.map((paragraph) => paragraph.getAttribute("data-testid"))
-    ).toEqual([
-      "home-hero-answer",
-      "home-hero-purpose-sentence",
-      "home-hero-purpose-sentence",
-    ]);
+    ).toEqual(["home-hero-answer", "home-hero-purpose-sentence"]);
     expect(screen.getByTestId("home-corpus-counts").tagName).toBe("DL");
     expect(container.querySelector(".home-hero-lede")).toBeNull();
     expect(container.querySelector(".home-hero-standfirst")).toBeNull();
@@ -342,14 +338,19 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
   });
 
   /**
-   * The doctrine, in the two sentences the social series opens and closes on,
-   * behind a closed disclosure: the band's job is still the search, and a
-   * reader who wants to know what the atlas is for asks for it in one press.
-   * A native <details>, so the answer needs no script to open.
+   * The doctrine, in the statement the social series opens on, behind a
+   * closed disclosure: the band's job is still the search, and a reader who
+   * wants to know what the atlas is for asks for it in one press. A native
+   * <details>, so the answer needs no script to open.
+   *
+   * « Ce peuple n'a pas été divisé » was cut from the home (operator ruling,
+   * 2026-09-14); the About chapter the link opens still carries it. The
+   * statement runs the copy column's full width rather than the answer's
+   * 52ch measure (same ruling).
    */
   // @req REQ-115
   it("keeps the purpose behind a closed disclosure under the answer", () => {
-    render(<HomeHero language="fr" />);
+    const { container } = render(<HomeHero language="fr" />);
 
     const disclosure = screen.getByTestId("home-hero-purpose");
     expect(disclosure.tagName).toBe("DETAILS");
@@ -362,10 +363,28 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
       .getAllByTestId("home-hero-purpose-sentence")
       .map((sentence) => sentence.textContent);
     expect(sentences).toEqual(homePurposeCopy.fr.sentences);
+    expect(sentences).toHaveLength(1);
     expect(sentences[0]).toMatch(
       /^La plupart des frontières .*moins de cent quarante ans\. Les noms en ont plus de mille\.$/
     );
-    expect(sentences[1]).toMatch(/dessinée par-dessus/);
+    expect(disclosure.textContent).not.toMatch(/pas été divisé/);
+
+    const styles = Array.from(container.querySelectorAll("style"))
+      .map((style) => style.textContent)
+      .join("\n");
+    expect(styles).not.toMatch(/\.home-hero-purpose\s*\{[^}]*max-width/);
+    // Prose, so the body face at the body step (typography charter §1): in
+    // the display face at `lead` it read as a third headline voice on a band
+    // that already carries two (operator ruling, 2026-09-14).
+    const sentenceRule = styles.match(
+      /\.home-hero-purpose-sentence\s*\{([^}]*)\}/
+    )?.[1];
+    expect(sentenceRule).toMatch(/font-family:\s*var\(--afh-font-body\)/);
+    expect(sentenceRule).toMatch(/font-size:\s*var\(--afh-text-body\)/);
+    expect(sentenceRule).not.toMatch(/--afh-font-display|--afh-text-lead/);
+    expect(styles).not.toMatch(
+      /\.home-hero-purpose-sentence\s*\{[^}]*text-wrap:\s*balance/
+    );
 
     expect(disclosure.querySelector("a")).toHaveAttribute(
       "href",

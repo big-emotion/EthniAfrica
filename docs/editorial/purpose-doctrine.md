@@ -251,14 +251,15 @@ par-dessus.** — the claim, labelled on the page as a position, not a finding.
      France. Pas renouer avec : reconnaître ce qui n'a jamais cessé. C'est plus
      vrai, et c'est moins triste.
 
-**On the home.** The two invariant sentences of the series — « La plupart des
-frontières de l'Afrique ont moins de cent quarante ans. Les noms en ont plus de
-mille. » and « Ce peuple
-n'a pas été divisé. C'est la carte qui a été dessinée par-dessus. » — sit
-behind a closed « Notre propos » disclosure under the hero's answer, with a
-link to this declaration. Closed by default because the hero's job is still
-the search; present because a reader who asks what the atlas is for should get
-the answer in two sentences, not in a scroll.
+**On the home.** The series' opening statement — « La plupart des frontières
+de l'Afrique ont moins de cent quarante ans. Les noms en ont plus de mille. » —
+sits behind a closed « Notre propos » disclosure under the hero's answer, at
+the copy column's full width, with a link to this declaration. Closed by
+default because the hero's job is still the search; present because a reader
+who asks what the atlas is for should get the answer in a sentence, not in a
+scroll. Its closing counterpart, « Ce peuple n'a pas été divisé. C'est la carte
+qui a été dessinée par-dessus. », was taken off the home on 2026-09-14
+(operator ruling) and stays in the About page's purpose chapter.
 
 **What « plus de mille » is.** A position, not a measurement: the atlas stores
 no attestation date, and for some peoples the oldest attestation is more

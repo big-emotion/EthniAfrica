@@ -208,8 +208,11 @@ export function SiteFooter({ language }: SiteFooterProps) {
               {/* The masthead lockup, one role up because the mark beside it is
                   80px rather than 44px. Not `h1`: that role belongs to the fiche
                   the reader has just finished, and a wordmark that matches it
-                  makes the page look like it has two titles. */}
-              <span className="font-afh-display text-afh-h2 text-afh-text">
+                  makes the page look like it has two titles. The masthead's
+                  900 as well: with no weight it fell to 400, rendered as the
+                  nearest loaded Fraunces (500), and the one lockup wore two
+                  weights (brand charter §5.3). */}
+              <span className="font-afh-display text-afh-h2 font-black text-afh-text">
                 {PRODUCT_NAME}
               </span>
               {/* The same qualifier as the masthead, in the same gradient. It

@@ -156,8 +156,11 @@ export function HomeHeroAnecdote({ language, fact }: HomeHeroAnecdoteProps) {
           line-height: 1.6;
           color: var(--afh-text-soft);
         }
+        /* Full ink, not a larger step. At lead it ran 22px beside the hero's
+           19px answer, and the visual column outweighed the copy it serves;
+           the ink alone separates it from the soft paragraph after it
+           (typography charter §8). */
         .home-hero-anecdote-prose .home-hero-anecdote-lede {
-          font-size: var(--afh-text-lead);
           color: var(--afh-text);
         }
         .home-hero-anecdote-prose p:last-child {
@@ -198,9 +201,9 @@ export function HomeHeroAnecdote({ language, fact }: HomeHeroAnecdoteProps) {
         }
         .home-hero-anecdote-chip-kind {
           font-size: var(--afh-text-eyebrow);
-          font-weight: 500;
-          letter-spacing: 0.07em;
-          text-transform: uppercase;
+          font-weight: var(--afh-eyebrow-weight);
+          letter-spacing: var(--afh-eyebrow-tracking);
+          text-transform: var(--afh-eyebrow-transform);
         }
         .home-hero-anecdote-tier {
           margin: var(--afh-space-2xl) 0 0;

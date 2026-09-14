@@ -123,7 +123,7 @@ describe("home — what the reader meets, and in what order (REQ-113)", () => {
   });
 
   // One page title. The corpus figures are values, not headings competing
-  // with the page question, and the purpose disclosure is two sentences, not
+  // with the page question, and the purpose disclosure is one statement, not
   // a section.
   // @req REQ-113
   it("keeps one h1 and no section heading under the globe draw", async () => {
