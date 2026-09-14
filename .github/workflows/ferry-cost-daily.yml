@@ -9,6 +9,12 @@
 #
 # Production deployments must include this workflow to enforce cost governance.
 # To disable: delete this file or rename the workflow.
+#
+# Known limit on this repository: ferry-router.yml runs the claude-code (OAuth)
+# path, whose audit lines always report cost_eur 0. This check sums those lines,
+# so the spend cap cannot trip here. The job is kept so the cap applies again the
+# day the execution path changes to one that reports cost — not because it caps
+# the router's agents today.
 
 name: Ferry — Cost Daily Check
 
@@ -22,7 +28,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  FERRY_REF: v1.1.2 # pin to the same release you use for the agent stubs
+  FERRY_REF: v1.2.0 # pin to the same release you use for the agent stubs
 
 jobs:
   cost-check:

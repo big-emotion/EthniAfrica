@@ -517,7 +517,7 @@ Two couplings that fail silently: `production-data-sync.yml` chains off the depl
 
 Project skills wrap the loop: `/ethniafrica-spec` (investigate → draft Pending REQ/DEC/ARCH + Jira tickets), `/ethniafrica-ticket` (take a Jira ticket end-to-end in an isolated worktree), `/ethniafrica-audit`, `/ethniafrica-release`.
 
-Ferry (`ferry.config.yaml`) drives agent automation off Jira status transitions on ETNI — Refinement → READY FOR DEV → In Review → Changes Requested → TO MERGE — branching `ferry/*` off `recette`.
+Ferry (`ferry.config.yaml`) drives agent automation off Jira status transitions on ETNI — Refinement → READY FOR DEV → In Review → Changes Requested → TO MERGE — branching `ferry/*` off `recette`. One workflow, `ferry-router.yml`, handles every transition: a single Jira rule dispatches `ferry-transition` with the new status, and the router picks the agent from `trigger_column`. **It reviews and merges any PR whose ticket enters IN REVIEW or TO MERGE, not only `ferry/*` branches** — a `feat/*` or `fix/*` PR opened by `/ethniafrica-ticket` is reviewed and merged the same way once its ticket moves. The five per-agent workflows (`ferry-dev`, `-refine`, `-review`, `-iterate`, `-merge`) were superseded by the router and removed; the Jira setup and the legacy rules to keep disabled are in `ferry-jira-automation-setup.md`.
 
 ### Test placement
 
