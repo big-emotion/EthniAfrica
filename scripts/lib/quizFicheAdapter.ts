@@ -24,12 +24,15 @@ import type {
   QuizPeopleFixture,
 } from "@/types/quiz";
 import { proseOnly } from "@/lib/prose/ficheProse";
-import { toQuizConfidenceScore } from "@/lib/quiz/eligibility";
+import {
+  toQuizAssertionSource,
+  toQuizConfidenceScore,
+} from "@/lib/quiz/eligibility";
 import type {
   QuizAssertionSource,
   QuizEligibilityInput,
+  QuizSourceRow,
 } from "@/lib/quiz/eligibility";
-import { toSourceTier } from "@/types/sources";
 import { TEMPLATE_FIELD_PATHS } from "@/lib/quiz/segmentPolicy";
 import type { AssertionBinding } from "./quizGeneration";
 
@@ -109,10 +112,8 @@ export interface AssertionRow {
   source_ids: string[] | null;
 }
 
-export interface SourceRow {
+export interface SourceRow extends QuizSourceRow {
   id: string;
-  tier: string | null;
-  verified_at: string | null;
 }
 
 /**
@@ -284,10 +285,7 @@ export function buildAssertionBindings(
     const assertionSources: QuizAssertionSource[] = sourceIds
       .map((id) => sourceById.get(id))
       .filter((source): source is SourceRow => Boolean(source))
-      .map((source) => ({
-        tier: toSourceTier(source.tier),
-        resolvable: source.verified_at !== null,
-      }));
+      .map(toQuizAssertionSource);
 
     bindings[fieldPath] = {
       assertionId: assertion.id,
