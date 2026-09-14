@@ -110,7 +110,7 @@ taille et de sa place, jamais d'un contraste raté.**
 | --- | --- | --- | --- | --- | --- | --- |
 | Bandeau (pilier) | Nunito | 25 | — | 700 | maj., interlettre .20em | encre 1 |
 | Rang « 01/05 » | Nunito | 22 | — | 700 | interlettre .14em | accent |
-| Chiffre / mot d'accent | Anton | 216 | 1,20 | — | — | accent |
+| Chiffre / mot d'accent | Anton | 216 | 0,84 | — | — | accent |
 | Titre de couverture | Anton | 120–126 | 1,08 | — | maj. | encre 1 |
 | Titre de série | Anton | 96–118 | 1,08 | — | maj. | encre 1 |
 | Paire — terme | Anton | 56 | 1,0 | — | — | encre 1 / accent |
@@ -134,13 +134,22 @@ colonne grandit, et il ne dit rien que la gouttière ne dise déjà.
 ligne touchent les jambages de la précédente — « Brésilien » sur « angolais ». Anton
 n'a aucune réserve verticale ; c'est l'interligne qui la fournit.
 
-**L'interligne du chiffre était 0,84 et débordait sur le bloc suivant** (corrigé le
-2026-09-14, premier rendu d'une carte chiffre en image fixe — jusque-là le rôle n'avait
-servi qu'en vidéo, sur un autre calcul de bloc). Mesuré sur `"60"` en Anton 216 :
-`ImageDraw.textbbox` donne un bas de glyphe à 257 px sous l'origine du tracé, quand
-0,84 × 216 n'en réservait que 181 — 76 px manquants, et la précision qui suit se
-composait par-dessus le chiffre. Mesuré sur plusieurs jeux de caractères (chiffres et
-lettres), le minimum tenable est 1,19 ; 1,20 est la valeur retenue, avec une marge.
+**L'interligne de ce tableau gouverne l'espacement entre les lignes d'un même
+bloc, jamais la hauteur qu'une seule ligne réserve.** Le corps d'une police
+(le nombre passé au moteur — 216, 96, 32…) n'est pas la hauteur visuelle
+d'une ligne : mesuré sur les deux polices du gabarit, une ligne réelle
+occupe **1,4 à 1,5×** son corps — Anton à 216 px mesure 255 + 72 = 327 px
+d'ascendant et de descendant, Nunito à 32 px mesure 33 + 12 = 45 px. Un
+rôle à interligne ≤ 1 sur une seule ligne — ici seulement « Chiffre / mot
+d'accent », 0,84, calibré pour l'écart *entre* deux lignes d'un mot
+d'accent, jamais pour la boîte d'une ligne seule — réservait donc une
+boîte plus petite que ses propres lettres. `ethni_compose._hauteur()`
+plancher désormais chaque bloc à 1,5× son corps ; ce n'est pas une valeur
+à recopier ailleurs, c'est une garantie de moteur, pas un choix de charte.
+Mesuré le 2026-09-14 sur `zokou-gbeuly` : un « 1835 » nu chevauchait sa
+légende avant, puis ne lui laissait que 5 px d'air après un premier
+correctif trop étroit — l'écart maintenant se compare à celui d'une
+production déjà publiée (« Sénoufo », pilier Mythe déconstruit).
 
 **Halo sur tout texte d'affichage posé sur une image :**
 `text-shadow: 0 2px 20px rgba(18,14,10,.85), 0 0 6px rgba(18,14,10,.6)`. Il ne compte
@@ -1149,6 +1158,19 @@ deck au moment de rendre, comme `image.identite`.
 mesure. Ne l'employer que là où la coupe **porte du sens** — une énumération dont les
 groupes ne doivent pas se mélanger. Une coupe posée pour l'esthétique se périme au
 premier changement de format.
+
+**Quand `chiffre` est `true`, `titre` n'est plus un titre : c'est le contenu du
+rôle « Chiffre / mot d'accent »** (§3, Anton 216 px, **interligne 0,84**, aucune
+majuscule forcée — voir le tableau des rôles). Cet interligne est calibré pour
+une seule ligne courte, un nombre ou un mot d'accent (« 776 », « Nzema ») ; posé
+sur une phrase entière, il enchaîne un titre sur trois lignes qui se chevauchent
+lettre sur lettre — mesuré le 2026-09-14 sur `zokou-gbeuly`, où `titre` portait
+« Il naît en 1835, à l'ouest. » à la place d'un simple « 1835 ». La phrase
+descriptive va dans `precision` (Nunito 36 px, casse libre) ou dans `corps`,
+jamais dans `titre` d'une carte à chiffre. `qui-a-nomme-la-cote-divoire` porte
+le même défaut sur plusieurs cartes (`titre` y est une phrase complète malgré
+`chiffre: true`) et n'a jamais été rendu en image pour le révéler — à corriger
+avant son premier rendu.
 
 ---
 
