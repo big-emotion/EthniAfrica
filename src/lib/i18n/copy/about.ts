@@ -98,6 +98,13 @@ export interface PurposeChapterCopy {
   declaration: DeclarationPartCopy[];
   /** The sentences the atlas does not write, each with the reason. */
   refusals: { title: string; items: DeclarationRefusalCopy[] };
+  /**
+   * A second, separate position (purpose-doctrine.md §5, 14 September 2026):
+   * not a measurement the atlas produces, and not the constant ligne de
+   * vision above — a distinct conviction, labelled the same way `claim` is.
+   */
+  unityClaim: string;
+  unityClaimStatus: string;
   scales: PurposeScaleCopy[];
   closing: string;
 }
@@ -188,6 +195,11 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
           reason:
             "Reconnecting puts the subject in the past and assumes the break is complete. Yet these peoples are counted in 2025 and live in France. Not reconnecting with: recognising what never stopped. It is truer, and it is less sad.",
         },
+        {
+          sentence: "“Before the borders, peoples were united.”",
+          reason:
+            "Kinship of language and culture sometimes crossed ruptures older than the colonial map itself — a split, a migration, a disputed succession, long before any colonial line passed between two territories. The border did not always create the separation: it often locked one in.",
+        },
       ],
     },
     scales: [
@@ -206,6 +218,10 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
     ],
     closing:
       "Most of Africa's borders are under a hundred and forty years old. What they cut across is far older: 191 peoples live today in three countries or more. The Fula in twelve. The Soninke in eleven. Counted on 11 September 2026.",
+    unityClaim:
+      "What connects Africa’s peoples has survived their own ruptures as much as the borders imposed on them. That is where a stronger unity begins.",
+    unityClaimStatus:
+      "That is our conviction, distinct from what the atlas shows — not a measurement it produces.",
   },
   fr: {
     stepLabel: "01 · Le propos",
@@ -255,6 +271,11 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
           reason:
             "Renouer met le sujet au passé et suppose la rupture consommée. Or ces peuples sont comptés en 2025 et présents en France. Pas renouer avec : reconnaître ce qui n’a jamais cessé. C’est plus vrai, et c’est moins triste.",
         },
+        {
+          sentence: "« Avant les frontières, les peuples étaient unis. »",
+          reason:
+            "Des parentés de langue et de culture ont parfois traversé des ruptures plus anciennes que la carte coloniale elle-même — une scission, une migration, une querelle de succession, bien avant qu’un tracé colonial ne passe entre deux territoires. La frontière n’a pas toujours créé la séparation : elle l’a souvent verrouillée.",
+        },
       ],
     },
     scales: [
@@ -273,6 +294,10 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
     ],
     closing:
       "La plupart des frontières de l’Afrique ont moins de cent quarante ans. Ce qu’elles coupent est bien plus vieux : 191 peuples vivent aujourd’hui dans trois pays ou plus. Les Peul dans douze. Les Soninké dans onze. Compté le 11 septembre 2026.",
+    unityClaim:
+      "Ce qui relie les peuples d’Afrique a survécu à leurs propres ruptures autant qu’aux frontières qu’on leur a imposées. C’est là que commence une unité plus forte.",
+    unityClaimStatus:
+      "C’est notre conviction, distincte de ce que montre l’atlas — pas une mesure qu’il produit.",
   },
 };
 
