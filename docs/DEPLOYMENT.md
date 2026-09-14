@@ -2,29 +2,35 @@
 
 How an EthniAfrica change reaches users, and what an operator has to do by hand.
 
-The short version: **publishing a GitHub Release deploys the application; the database does
-not follow by itself.** Nothing else ships — not a push, not a tag. Every schema change is a
-manual, two-step operation that no pipeline performs for you.
+The short version: **publishing a GitHub Release deploys the application, and its `migrate` job
+brings production's schema up to the released tag first.** Nothing else ships — not a push, not a
+tag. Every schema change is still a two-step rollout, and both steps are automated: a merge into
+`recette` that touches `supabase/migrations/` applies recette's (`migrate-recette.yml`), and a
+published Release applies production's over an SSH tunnel before the deploy job may start. The
+corpus is a third, separate step — see [AFRIK corpus](#afrik-corpus).
 
 ---
 
 ## Environments
 
-| Environment | Ships when                                  | Hosted on                          | Supabase project                           |
-| ----------- | ------------------------------------------- | ---------------------------------- | ------------------------------------------ |
-| Local       | —                                           | your machine                       | your own project, or a shared one          |
-| Recette     | `deploy-preview-recette.yml` is run by hand | Vercel preview                     | `shmrjtnfbqzceovroqjj`                     |
-| Production  | a GitHub Release is published               | OVH VPS, Gravelines `51.195.82.98` | a second project, ref not recorded in-repo |
+| Environment | Ships when                                  | Hosted on                          | Supabase                                                         |
+| ----------- | ------------------------------------------- | ---------------------------------- | ---------------------------------------------------------------- |
+| Local       | —                                           | your machine                       | your own project, or a shared one                                |
+| Recette     | `deploy-preview-recette.yml` is run by hand | Vercel preview                     | hosted project `shmrjtnfbqzceovroqjj`                            |
+| Production  | a GitHub Release is published               | OVH VPS, Gravelines `51.195.82.98` | self-hosted stack at `https://supabase.ethniafrica.com` (no ref) |
 
 Neither environment deploys on a push any more. `recette` is still the integration branch and
 `main` is still what a release is tagged from — but the branch no longer triggers anything.
 
-**Both Supabase projects call their environment "production", and neither label means what it
-looks like.** A Supabase project has exactly one environment, and Supabase names it
+**A hosted Supabase project calls its environment "production", and the label does not mean
+what it looks like.** A Supabase project has exactly one environment, and Supabase names it
 "production" — there is no staging branch inside a project. The label therefore describes the
 project's own environment, not the application environment it serves. `shmrjtnfbqzceovroqjj`
-serves **recette**; the production application is served by the other project, whose ref is not
-recorded in this repository. Before touching a database, read
+serves **recette**. The production application is not served by a hosted project at all: it
+reads a **self-hosted** Supabase stack at `https://supabase.ethniafrica.com` on a second OVH VPS,
+which is why neither the Supabase dashboard nor the MCP can see it. `jajggbeimfudpzcxytbb` is the
+**retired** hosted project; it still answers, so never point a secret at it. Before touching a
+database, read
 [`runbooks/migration-state.md`](./runbooks/migration-state.md) — it carries the project
 identity table, the applied-migration state, and the two-step rollout rule.
 
@@ -245,23 +251,45 @@ reads. Run it after adding any `process.env` reference.
 
 The tier (`public` / `partner` / `admin`) comes from the `api_keys.tier` column (migration
 `013`), resolved by `validateApiKey()`. There is no key list to maintain in the environment.
-Same-origin requests are exempt from API-key validation, so the frontend embeds no key.
+
+No key is required. A request without an `Authorization` header is metered on the anonymous
+`RATE_LIMIT_IP_RPM` bucket; a valid Bearer key is metered on its tier; a present but unknown,
+revoked or expired key answers **401** rather than falling back to anonymous, so a broken
+integration fails loudly. `Origin` and `Referer` authorise nothing — any client can send them —
+so the frontend embeds no key and its readers share the anonymous per-IP quota. Server
+components read the services directly and never call `/api/v2` over HTTP, so the container's own
+address never pools every reader into one bucket.
 
 ---
 
 ## Database changes
 
-Schema and data are two different operations with two different runbooks. Neither is automated.
+Schema and data are two different operations with two different runbooks, and each is
+automated along the same two-step path.
 
 ### Schema
 
 Read [`runbooks/migration-state.md`](./runbooks/migration-state.md) first. It records which
-migrations are live on which project and why "the ticket is Done" has already meant "the
+migrations are live on which database and why "the ticket is Done" has already meant "the
 migration was never applied".
 
-The rule, in one line: **apply to the recette-backing project, verify against the recette
-application, then apply the same file to the production-backing project.** Never one alone,
-never production first.
+The rule, in one line: **recette first, verified against the recette application, then the same
+file on production.** Never one alone, never production first. The pipeline now performs both
+steps:
+
+1. **Merge into `recette`.** `.github/workflows/migrate-recette.yml` fires on a push to `recette`
+   that touches `supabase/migrations/**`, runs `supabase db push` with the
+   `RECETTE_SUPABASE_DB_URL` secret, then `npm run check:migration-state` must read nothing
+   pending. Without the secret it skips with a warning and applies nothing.
+2. **Publish a Release.** The `migrate` job of `.github/workflows/deploy-production.yml` measures
+   the production ledger over PostgREST, opens an SSH tunnel to the `supabase-db` container on the
+   Supabase VPS (production's Postgres port is not published), refuses a `db push` plan wider
+   than that measurement, applies, and measures again. The `deploy` job `needs:` it, so a Release
+   against a schema the job cannot bring level ships nothing.
+
+What remains a human act is the decision between the two: verifying on the recette application
+before publishing the Release. The tunnel, its secrets and the failure modes it has already had
+are in [`runbooks/migration-state.md`](./runbooks/migration-state.md#the-automation-and-what-it-does-not-cover).
 
 Migrations are numbered sequentially in `supabase/migrations/`. The highest-numbered file is not
 necessarily the highest-numbered applied migration — that gap is the whole subject of the
@@ -269,8 +297,10 @@ runbook.
 
 ### AFRIK corpus
 
-The editorial corpus lives as ~890 JSON fiches under `dataset/source/afrik/`, in git. Loading
-it into Supabase is a separate step, documented in
+The editorial corpus lives as JSON fiches under `dataset/source/afrik/`, in git — count them
+with `git ls-files 'dataset/source/afrik/**/*.json' | wc -l` rather than trusting a number
+written here, because the corpus grows with every editorial pass. Loading it into Supabase is a
+separate step, documented in
 [`runbooks/afrik-data-sync.md`](./runbooks/afrik-data-sync.md).
 
 Validate before loading anything:
@@ -303,10 +333,9 @@ failed deploy leaves the production corpus untouched. It then POSTs a cache reva
 project's, both distinct from the recette values the rest of CI uses — and fails if either is
 absent.
 
-Requires **Node ≥ 22** for the loaders: `@supabase/supabase-js` needs a native `WebSocket`, and
-on Node 20 the run dies with `native WebSocket not found` before the target guard is reached.
-(The application itself pins Node `20.x` in `package.json` `engines` — the loaders are the
-exception.)
+Requires **Node `22.x`**, the version `package.json` `engines` and the `Dockerfile` pin for the
+whole application: `@supabase/supabase-js` needs a native `WebSocket`, and on an older Node the
+loader run dies with `native WebSocket not found` before the target guard is reached.
 
 ---
 
@@ -328,12 +357,20 @@ environment's `/api/auth/callback`; otherwise Supabase silently substitutes the
 project's Site URL. Full procedure and the failure modes:
 `docs/runbooks/moderation-access.md`.
 
+Sign-in is that magic link and nothing else. GitHub and Google are disabled in
+`supabase/config.toml` (`[auth.external.github]` and `[auth.external.google]`,
+`enabled = false`): with no public accounts they would only open a second door onto the same
+allowlist check.
+
 ## Legacy `user_roles`
 
-Roles live in `user_roles` (migration `008`) with values `reader`, `contributor`, `moderator`,
-`admin`, `advisor`. They gated the legacy `/admin/contributions` workspace, which was removed
-when contributions became flags (migration `081`), and they open no door in the moderation
-console — access there is membership of `admin_allowlist`. Nothing reads `user_roles` today.
+**Do not use this to grant console access.** Roles live in `user_roles` (migration `008`) with
+values `reader`, `contributor`, `moderator`, `admin`, `advisor`. They gated the legacy
+`/admin/contributions` workspace, which was removed when contributions became flags (migration
+`081`), and they open no door in the moderation console — access there is membership of
+`admin_allowlist`. The table's one remaining reader in the code is
+`src/lib/rights/protected-asset-access.ts` (protected-asset signed URLs), which no route calls
+today. `scripts/seedAdmin.ts` is kept for that path, not for bootstrapping a moderator:
 
 1. The person signs in once at the published sign-in page (`/fr/admin/connexion` in
    `fr-only`; `/en/admin/connexion` is also available in a bilingual mode) so their auth
@@ -367,9 +404,10 @@ console — access there is membership of `admin_allowlist`. Nothing reads `user
       nor `Referer` authorises anything. A request carrying an invalid Bearer key returns 401.
       A 500 on every `/api/v2/*` route while the pages render means Upstash is not configured.
 - [ ] Sentry shows no new issue class in the first 30 minutes.
-- [ ] If a migration shipped in this release: its state table row in
+- [ ] The Release's `migrate` job ended on `applied N · pending 0 · orphaned 0 · drifted 0`. If a
+      migration shipped in this release, its state table row in
       [`runbooks/migration-state.md`](./runbooks/migration-state.md) is updated for **both**
-      projects.
+      databases, citing that run.
 
 ---
 
@@ -398,8 +436,11 @@ first, then decide about the data.
 **`Missing Supabase environment variables`** — the Supabase modules validate at module scope.
 Check `.env.local` exists and is loaded; a typo reads as absent.
 
-**API returns 401 from `curl` but works in the browser** — expected. `src/middleware.ts`
-exempts same-origin requests from API-key validation. Pass a key, or call from the app.
+**API returns 401 from `curl`** — the request carries an `Authorization` header whose key is
+unknown, revoked or expired. A keyless `curl` answers 200 on the anonymous tier; since v4.9.0 the
+middleware does not fall back to anonymous when a key is present but invalid. Drop the header or
+fix the key. A **429** instead means the anonymous per-IP quota (`RATE_LIMIT_IP_RPM`) is spent;
+`Retry-After` says for how long.
 
 **`22P02` on `migration_events.event_type`** — migration `037` is not applied on that project.
 See [`runbooks/migration-state.md`](./runbooks/migration-state.md).

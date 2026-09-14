@@ -33,6 +33,9 @@ Architecture, commands, every CI gate, the `@req` traceability rule, the Source 
 make check                          # lint + typecheck + format:check + all tests
 npm run lint:req                    # @req annotation traceability
 npm run check:dead                  # knip ratchet
-npm run check:translation-parity    # full-tree survey; non-blocking
-npm run check:translation-parity -- --staged
+npm run check:translation-parity    # bare run: a full-tree survey that never fails
+npm run check:translation-parity -- --staged             # blocks: what pre-commit runs
+npm run check:translation-parity -- --base origin/recette # blocks: what CI runs on a PR
 ```
+
+The gate is CI-blocking, as `CLAUDE.md` says: blocking is chosen by the flag, not by the command. Only the bare run is a survey.
