@@ -284,3 +284,168 @@ one: most borders are younger than the figure, not older.
 The quotations of the agent's reply above carry the corrected wording, so the
 series cannot be re-seeded from the retired one. Productions already published
 still open on it and are not re-rendered.
+
+**Berlin, 1884 is retired as a citation, not just corrected (2026-09-14).** The
+message audit of 2026-09-13 (finding 9) left open whether "Berlin" could still
+be named as long as a production did not credit it with drawing the lines. The
+operator closed that question directly: no production cites "Berlin, 1884" at
+all going forward, in any language, on any surface — not the About page's
+closing, not the scale-ladder rung, not a social closing card. The reasons
+above still explain _why_ Berlin cannot be the sole origin point (it set rules,
+drew almost no line itself); this addendum removes it as a citation entirely,
+in favour of the already-published formula, "la plupart des frontières ont
+moins de cent quarante ans," which carries the same claim without naming a
+single conference. `docs/design/gabarits-social/GABARITS-SOCIAL.md` §7 ter and
+`.claude/skills/ethniafrica-message/SKILL.md` are updated to match. Productions
+already published (the Dioula closing card among them, per the 09-13 audit)
+still carry the retired citation and are not re-rendered for this alone.
+
+**The closing doctrine also widens, the same day.** Beyond the fixed closing
+line for the peoples series ("Ce peuple n'a pas été divisé..."), the operator
+stated the doctrine's larger shape: names existed long before borders, and what
+survives the division is what actually connects every people to every other —
+not a story about who drew a line, but one of continuity and of connection
+across difference. This is a doctrine statement, not yet a formalised
+closing-line spec for every content type; folding it into this file's
+structure, GABARITS-SOCIAL §7 ter's type-by-type closing table, and the About
+page's `purposeChapter` is `/ethniafrica-message`'s work, not done by this
+edit.
+
+---
+
+## 5. A second doctrine session — the unity vision (14 September 2026)
+
+**Where this session picks up.** The addendum above widened the closing
+doctrine the same day and deferred its formalisation to `/ethniafrica-message`.
+This is that session.
+
+**What this session is.** The blocked `ethniafrica-pourquoi-les-peuples` idea
+report reached for a line close to the doctrine above without it being
+formalised — "en pensant en peuples, on voit à quel point on a été proches."
+The operator picked that up and proposed a closing sentence connecting peoples
+to each other, on top of the existing doctrine's claim about one people
+crossed by borders. The agent flagged that the two are not the same claim: §1
+measures one people split by a border (191 cases, counted); a claim that
+peoples are connected _to one another_ is a different proposition, unmeasured.
+What follows is that exchange, kept verbatim for the same reason as above: the
+corrections are the doctrine.
+
+**The operator's first formulation, and the correction.**
+
+> OK, d'accord, donc je me trompe un peu sur ce qui les relie. La réalité,
+> c'est que, effectivement, la bonne phrase, c'est : « C'est un peuple
+> traversé par plusieurs frontières. » D'ailleurs, c'est pas un peuple, c'est
+> des peuples traversés par plusieurs frontières et réunis malgré eux, malgré
+> leurs différences, et parfois séparés malgré leur familiarité.
+>
+> Maintenant, moi, derrière ça, c'est plus une vision politique : c'est que je
+> veux amener un message d'unité et d'amour. Donc, il ne faut pas relier les
+> deux, mais c'est bien deux choses différentes.
+
+The operator split the claim into two threads himself: a factual one (what
+borders do to peoples) and a political one (a message of unity). The agent
+asked which of the two "peuples séparés malgré leur familiarité" meant —
+a measurable claim (kin peoples split apart with no shared country) or a
+vision-level position — and whether the unity message should live as an
+inspiring tone behind closings, or as its own labelled sentence.
+
+> Je me fais corriger. Oui, tu peux. Vérifie donc encore plus, mais je suis
+> sûr, et donc ça, on gardera dans tous les cas au niveau de la vision. Pour
+> moi, le message d'unité et d'amour, il vit comme le ton de fond qui inspire
+> la clôture. Il vit aussi comme une phrase à part, clairement étiquetée comme
+> position, séparée de la ligne de vision actuelle.
+
+**The corpus check.** Before treating "des peuples séparés malgré leur
+familiarité" as anything more than a position, the agent measured it: across
+the 23 linguistic families with two or more peoples (macro-groups excluded,
+759 peoples), only 17 peoples share zero country with any other people of
+their own family — and nearly all of those are distant diasporas and creole
+peoples (Quilombolas in Brazil, Gullah in the United States, Ayisyen in
+Haiti, Swahili speakers in Oman and Yemen), not neighbouring kin peoples cut
+apart by a colonial line. The corpus does not currently hold the data that
+would measure that specific claim (historical proximity independent of
+linguistic kinship), so it stays at the vision level, unquantified — as the
+operator had already decided regardless of the result.
+
+**The example that sharpened the correction, and why it stays out of the
+published wording.** The operator offered a concrete case:
+
+> Bah, des peuples apparentés voisins, séparés par des tracés coloniaux. Je
+> vais te donner un exemple : les Akan, on sait qu'ils ne sont pas des
+> Achantis, mais ils viennent du peuple qui se disait bonjour en Achanti. Ils
+> parlent la même langue. Dans les Akan, tu as les Baoulés, les Zema, etc.
+> Ceux-là sont en Côte d'Ivoire, mais au Ghana, tu as deux peuples. C'est le
+> même peuple quand tu remontes l'histoire. Effectivement, il y a eu un exode
+> avant du royaume d'un des royaumes du Dahomey, je sais plus avec quel vers.
+> Il y a toute l'histoire avec la reine Kokou, etc. Mais ce que je veux dire,
+> c'est que tu as raison, en fait, dans un sens, puisque ce peuple avait quand
+> même des similitudes de langues communes, des similitudes dans leur culture,
+> leur langue, leur religion, leur façon de faire. Puis la frontière est venue
+> découper ça. Donc peut-être que tu as raison dans le sens où il y avait déjà
+> des réalités avant que les frontières arrivent. Mais dans ce cas-là, il faut
+> montrer, parce que l'utilisateur pense que, avant les frontières, les
+> peuples étaient unis. Il y a cette idée-là, un peu de déconstruire, ou en
+> tout cas à nuancer, pour amener vers la réalité. Donc il y a ce truc à
+> l'entrée, donc je suis d'accord, mais notre projet de recherche nous amène à
+> nuancer les propos, à amener la réalité. Le ton final, c'est la vision,
+> c'est la mort. Donc ne trichons pas, mais est-ce qu'on peut trouver une
+> façon de faire quelque chose de cohérent ? Enfin, c'est peut-être pas
+> l'amour, en tout cas l'unité, unité pour plus de puissance du continent
+> africain.
+
+The corpus confirmed the case with a date. `PPL_BAOULE.json`
+(`content.origins.ancientOrigins` / `.formationPeriod` / `.migrationRoutes`):
+queen Abla Pokou led part of the Ashanti people west after a disputed
+succession — the fiche names Opoku Ware I's succession, c. 1720–1730 — founding
+the Baoulé kingdom around 1730, more than a century before any colonial line
+separated the Gold Coast from Côte d'Ivoire. The split is pre-colonial. This is
+the nuance the operator was asking for against his own first framing: a
+reader who knows Baoulé/Ashanti history dismantles "before borders, peoples
+were united" in one line, exactly as "avant, on vivait en accord avec le
+continent" was already dismantled in §1. A border does not only cut through
+peoples who were previously one and undivided; it also locks in separations
+that already existed for the peoples' own reasons — a succession dispute, a
+migration — with no coloniser involved yet.
+
+The operator confirmed the correction but refused to name the example in the
+published doctrine:
+
+> Alors, le fil vision, je suis totalement d'accord. Pour la nuance factuelle,
+> j'ai pas envie de parler d'un peuple en particulier. Ça va trop orienter le
+> sujet sur un peuple. Dans la nuance factuelle il faut la reformuler: ne pas
+> parler d'un peuple.
+
+So Baoulé/Ashanti is recorded here as the dated evidence that produced the
+correction — the same role the 191-peoples count plays for §1's opening line
+— but the sentence that reaches a production names no people.
+
+**The doctrine, as this session settles it.**
+
+1. **The factual nuance**, generalised, to sit alongside the existing
+   corrections in §1 / §7 ter of GABARITS-SOCIAL:
+
+   > Des parentés de langue et de culture ont parfois traversé des ruptures
+   > plus anciennes que la carte coloniale elle-même — une scission, une
+   > migration, une querelle de succession, bien avant qu'un tracé colonial
+   > ne passe entre deux territoires. La frontière n'a pas toujours créé la
+   > séparation : elle l'a souvent verrouillée.
+
+2. **The unity vision**, a labelled position, separate from the constant
+   ligne de vision, confirmed without changes:
+
+   > Ce qui relie les peuples d'Afrique a survécu à leurs propres ruptures
+   > autant qu'aux frontières qu'on leur a imposées. C'est là que commence une
+   > unité plus forte.
+
+   Carried as the tone behind closings generally, and — the operator's own
+   distinction — also usable as its own labelled sentence, the way `claim` and
+   `claimStatus` sit together on the About page: a position, not a
+   measurement the atlas produces.
+
+**Not yet done, before this session.** Neither line had been carried into
+`about.ts`'s `purposeChapter`, `aboutPage`, or GABARITS-SOCIAL §7 ter — those
+are published surfaces, and confirming the wording came first. Both are now
+published: the fourth refusal and the `unityClaim`/`unityClaimStatus` pair sit
+in `about.ts`, rendered as a block in `AboutPageContent.tsx` separate from the
+constant ligne de vision, and GABARITS-SOCIAL §7 ter carries the corresponding
+table row and subsection.

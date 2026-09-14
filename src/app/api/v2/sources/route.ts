@@ -89,9 +89,7 @@ import { listSourcesQuerySchema } from "@/api/v2/schemas/sources";
 import { createApiError } from "@/api/v2/utils/response";
 import { jsonWithCors, corsOptionsResponse } from "@/lib/api/cors";
 import { logger } from "@/lib/api/logger";
-
-const SOURCES_CACHE_CONTROL =
-  "public, s-maxage=86400, stale-while-revalidate=86400";
+import { SOURCES_CACHE_CONTROL } from "@/api/v2/services/corpusCache";
 
 // @req REQ-092
 export async function GET(request: NextRequest) {

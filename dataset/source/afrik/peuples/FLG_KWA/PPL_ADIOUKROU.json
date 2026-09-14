@@ -6,20 +6,24 @@
   "content": {
     "appellations": {
       "mainName": "Adioukrou",
-      "selfAppellation": "Adjukru",
-      "exonyms": [
+      "selfAppellation": "Odjoukrou",
+      "exonyms": ["Boubouri", "Bubari"],
+      "spellingAliases": [
         "Adjoukrou",
+        "Adjukru",
         "Adyukru",
         "Adyoukrou",
+        "Adyukuru",
         "Ajukru",
-        "Bubari",
+        "Adiukru",
+        "Adiokrou",
         "Odjukru",
-        "Boubouri",
-        "Lebutu"
+        "Odzukru",
+        "Lodjoukrou"
       ],
-      "originOfExonyms": "Les variantes orthographiques (Adjoukrou, Adioukrou, Adjukru) resultent de transcriptions differentes en francais et en anglais. Le terme Lebutu (ou Odjukru) est l'appellation que le peuple se donne a lui-meme. Bubari est un exonyme utilise par certaines sources exterieures.",
+      "originOfExonyms": "Les Odjoukrou nomment leur pays traditionnel Lodjoukrou, terme dont dérive l'appellation ethnique et qui désigne à la fois le pays, le peuple et la culture ; leur langue est le [mɔ́ʤúkrù]. Les traditionalistes interrogés par Harris Memel-Fotê donnent à Lodjoukrou plusieurs étymologies concurrentes, liées au récit d'une maladie brusquement guérie, et le pasteur Laurent Lasm propose « qui n'accepte pas l'injustice » ; aucune ne fait consensus. Adioukrou, Adjoukrou, Adjukru, Odjukru et Odzukru sont des transcriptions du même nom, et les sources consultées ne disent pas qui a fixé la graphie Adioukrou. Boubouri, écrit aussi Bubari, est le nom de Bobor, l'une des deux anciennes confédérations du pays avec Debrimou ; des répertoires d'ethnonymes l'emploient pour l'ensemble du peuple. Lebutu, ou leboutou, n'est pas un nom du peuple : le mot désigne la tribu, communauté politique de villages, et signifie littéralement « il a reçu l'étranger ».",
       "whyProblematic": null,
-      "contemporaryUsage": "Adioukrou est l'orthographe officielle en Cote d'Ivoire. Adjoukrou et Adjukru sont courants dans les publications anglophones et academiques.",
+      "contemporaryUsage": "Adioukrou est la forme retenue par la Bibliothèque nationale de France et le nom de la langue chez Glottolog et Ethnologue. Adjoukrou reste courant dans les publications récentes sur le département de Dabou, tandis qu'Esso Lasm écrit Odjoukrou et l'historien Jean-Michel Egue Latte Odzukru. Le nom de Dabou, aujourd'hui celui du département, s'est substitué à Lodjoukrou pour désigner le territoire.",
       "linguisticFamily": "FLG_BENOUECONGO",
       "ethnoLinguisticGroup": "Akan lagunaire (Kwa)",
       "historicalRegion": "Region des Lagunes, sud de la Cote d'Ivoire (departement de Dabou)",
@@ -49,7 +53,7 @@
       "religiousAuthority": "Croyance en un etre supreme createur appele Nyam (ou Nyambe), origine de l'univers (afrnunu). Culte des ancetres (esprits des defunts) maintenu par des offrandes. Existence de genies (petites divinites animant la nature). Pratiques de sorcellerie : sorciers noirs (sorciers mauvais) et sorciers blancs (agmann, protecteurs). Les cultes sont presides par les aines sociaux. Le christianisme est desormais dominant (90%)."
     },
     "languages": {
-      "mainLanguage": "Adioukrou (Adjukru)",
+      "mainLanguage": "Adioukrou (adj)",
       "isoCodes": ["adj"],
       "dialects": [
         "dialecte central de Dabou (forme standard)",
@@ -82,24 +86,64 @@
     },
     "sources": [
       {
-        "title": "Ethnologue - Adioukrou ADJ",
+        "title": "Ethnologue : Adioukrou (adj)",
         "url": "https://www.ethnologue.com/language/adj/",
-        "tier": "official"
+        "tier": "official",
+        "notes": "SIL International, notice de la langue adj."
       },
       {
-        "title": "Joshua Project - Adjoukrou in Cote d'Ivoire",
+        "title": "Glottolog : Adioukrou (adio1239)",
+        "url": "https://glottolog.org/resource/languoid/id/adio1239",
+        "tier": "official",
+        "notes": "Classement : Atlantique-Congo, Volta-Congo, Kwa, Nyo, Agneby. Noms alternatifs : Adjukru, Adyoukrou, Adyukru, Ajukru."
+      },
+      {
+        "title": "Harris Memel-Fotê, Le Système politique de Lodjoukrou : une société lignagère à classes d'âge (Côte d'Ivoire), 1980",
+        "url": "https://www.presenceafricaine.com/livres-sciences-humaines-afrique-caraibes/542-le-systeme-politique-de-lodjoukrou-2708703811.html",
+        "tier": "referenced",
+        "notes": "Paris, Présence Africaine et Nouvelles Éditions Africaines, 479 pages, ISBN 2-7087-0381-1. Ouvrage non consulté directement : les pages 82 et 149 à 151 sont citées d'après Esso Lasm (2021)."
+      },
+      {
+        "title": "Esso Lasm Constant, Onomastique des Odjoukrou : aspects toponymique et ethnonymique, Les Cahiers de l'ACAREF, vol. 3, n° 6, tome 1, mai 2021, p. 174-188",
+        "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2021/06/10ESSO-Lasm-Constant.pdf",
+        "tier": "referenced",
+        "notes": "Université Félix Houphouët-Boigny. Étude des toponymes et des ethnonymes à partir de la tradition orale ; rapporte les étymologies de Lodjoukrou recueillies par Harris Memel-Fotê."
+      },
+      {
+        "title": "Bibliothèque nationale de France, notice d'autorité RAMEAU : Adioukrou (peuple d'Afrique)",
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb11952806n",
+        "tier": "referenced",
+        "notes": "Notice créée en 1983, mise à jour en 2002. Formes rejetées, dont : Adiokrou, Adiukru, Adjoukrou, Adjukru, Adyoukrou, Adyukru, Adyukuru, Ajukru, Boubouri, Odjoukrou, Odjukru, Odzukru. S'appuie sur des répertoires d'ethnonymes, dont le Dictionnaire des peuples de Jean-Claude Tamisier (1998)."
+      },
+      {
+        "title": "Jean-Michel Egue Latte, L'histoire des Odzukru, peuple du sud de la Côte d'Ivoire : des origines au XIXe siècle, 2018",
+        "url": "https://www.editions-harmattan.fr/catalogue/livre/lhistoire-des-odzukru-peuple-du-sud-de-la-cote-divoire/17639",
+        "tier": "referenced",
+        "notes": "L'Harmattan Côte d'Ivoire, 262 pages, ISBN 978-2-343-14449-8. Seule la présentation de l'éditeur a été lue."
+      },
+      {
+        "title": "PHOIBLE : inventaire phonologique de l'adioukrou (inventaire 650)",
+        "url": "https://phoible.org/inventories/view/650",
+        "tier": "referenced",
+        "notes": "D'après Hartell (éd.), 1993, et Chanard, 2006. Nom de la langue donné : Mↄjukru."
+      },
+      {
+        "title": "Ahouyao, Bouafou et Amani, Cultural Identities and Food Habits in Adjoukrou Country in the Department of Dabou, Ivory Coast, 2022",
+        "url": "https://ijsscfrtjournal.isrra.org/Social_Science_Journal/article/view/1115",
+        "tier": "referenced",
+        "notes": "International Journal of Social Sciences: Current and Future Research Trends, vol. 14, n° 1, p. 144-160, ISSN 2790-4008. Enquête par questionnaire auprès de 261 personnes et entretiens dans le département de Dabou."
+      },
+      {
+        "title": "Joshua Project : Adjoukrou in Côte d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/10162/IV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "notes": "Répertoire missionnaire. Noms alternatifs donnés : Ajukru, Bubari ; population annoncée : 209 000."
       },
       {
-        "title": "Lebutu Socraf - Les Adjoukrou et la democratie",
+        "title": "Lebutu Socraf : Les Adjoukrou et la démocratie, leçon d'une vie, 19 juillet 2017",
         "url": "https://lebutusocraf.wordpress.com/2017/07/19/les-adjoukrou-et-la-democratie-lecon-dune-vie/",
-        "tier": "unverified"
-      },
-      {
-        "title": "Isrra Journal - Cultural Identities and Food Habits in Adjoukrou Country",
-        "url": "https://ijsscfrtjournal.isrra.org/Social_Science_Journal/article/download/1115/86/917",
-        "tier": "needs_review"
+        "tier": "unverified",
+        "notes": "Blog consacré au patrimoine culturel adioukrou, fondé sur des témoignages oraux nommés, sans bibliographie. Variantes citées : Adjukru, Adioukrou, Adyukru, Boubouri, Odjukru."
       }
     ]
   },

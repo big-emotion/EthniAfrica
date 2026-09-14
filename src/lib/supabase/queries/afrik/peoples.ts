@@ -421,51 +421,6 @@ export async function getAfrikPeoplesByIds(
 }
 
 /**
- * Get AFRIK peoples by country
- */
-// @req REQ-019
-export async function getAfrikPeoplesByCountry(
-  countryId: string
-): Promise<People[]> {
-  const supabase = createServerClient();
-  const { data: relations, error: relationsError } = await supabase
-    .from("afrik_people_countries")
-    .select("people_id")
-    .eq("country_id", countryId);
-
-  if (relationsError) {
-    logger.error(
-      `Error fetching relations for country ${countryId}`,
-      relationsError
-    );
-    throw relationsError;
-  }
-
-  if (!relations || relations.length === 0) {
-    return [];
-  }
-
-  const peopleIds = relations.map((r) => r.people_id);
-  const { data, error } = await supabase
-    .from("afrik_peoples")
-    .select("*")
-    .in("id", peopleIds)
-    .order("name_main");
-
-  if (error) {
-    logger.error(
-      `Error fetching AFRIK peoples for country ${countryId}`,
-      error
-    );
-    throw error;
-  }
-
-  const relationsMap = await getCountryRelationsMap(supabase, peopleIds);
-
-  return mapRowsToPeoples(data || [], relationsMap);
-}
-
-/**
  * Get the number of stored afrik_peoples rows per language_family_id, in a
  * single grouped query (REQ-108). Rows with a null/empty language_family_id
  * are tallied under UNCLASSIFIED_FAMILY_KEY so callers can surface them

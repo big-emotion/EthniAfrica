@@ -147,11 +147,6 @@ export function getWorldCompareRings(shapeId: string): Ring[] | undefined {
   return shape ? toRings(shape.rings) : undefined;
 }
 
-// @req REQ-116
-export function getWorldCompareNameFr(shapeId: string): string | undefined {
-  return WORLD_COMPARE[shapeId]?.nameFr;
-}
-
 /**
  * The outlines of the countries outside Africa a round may name.
  *
@@ -170,22 +165,6 @@ export function getWorldCompareNameFr(shapeId: string): string | undefined {
  * Lighthouse budget the site actually cares about, for outlines that page
  * never draws. See `lib/atlas/worldOutlines`.
  */
-
-/**
- * Every African ring in the asset, as one flat list.
- *
- * For silhouettes rather than for choosing: the committed world path holds
- * every landmass Natural Earth does *not* assign to Africa, so a map that
- * wants a whole planet draws that path and this together. Keys are ignored
- * on purpose — a silhouette has no need of the ISO aliasing that matters
- * when a fiche asks for one country.
- */
-// @req REQ-116
-export function getAfricaAdmin0Rings(): Ring[] {
-  return Object.values(AFRICA_ADMIN0).flatMap((country) =>
-    toRings(country.rings)
-  );
-}
 
 // ─── Country: closed outline, stroked as it draws, 22% fill ────────────────
 
@@ -635,32 +614,6 @@ export interface CountrySetOverlay {
   countryIds: CountryId[];
   rings: Ring[];
   fillOpacity: number;
-}
-
-/**
- * Order is the caller's, not sorted: a round decides which choice comes first
- * and the markers follow it. Ids absent from the committed admin-0 asset drop
- * out one by one rather than voiding the round — only a round where nothing at
- * all resolves is null, which is what makes AtlasGlobe declare it missing
- * (REQ-119) instead of drawing an empty globe.
- */
-// @req REQ-120
-export function buildCountrySetOverlay(
-  countryIds: CountryId[]
-): CountrySetOverlay | null {
-  const resolvedCountryIds = Array.from(new Set(countryIds)).filter((id) =>
-    Boolean(getAdmin0Rings(id))
-  );
-  const rings = resolvedCountryIds.flatMap((id) => getAdmin0Rings(id) ?? []);
-
-  if (rings.length === 0) return null;
-
-  return {
-    kind: "country-set",
-    countryIds: resolvedCountryIds,
-    rings,
-    fillOpacity: COUNTRY_FILL_OPACITY,
-  };
 }
 
 export type AtlasOverlay =

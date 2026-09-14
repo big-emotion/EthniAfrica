@@ -6,8 +6,6 @@ import { GAME_DEFINITIONS } from "@/lib/games/gameRegistry";
 import { GAME_DEFINITIONS_EN } from "@/lib/games/gameRegistry.en";
 import { LANDMARKS } from "@/lib/games/landmarks";
 import { LANDMARK_NAMES_EN } from "@/lib/games/landmarks.en";
-import { MERCATOR_CONTRAST_PAIR } from "@/lib/games/projectionContrast";
-import { CONTRAST_SHAPE_LABELS_EN } from "@/lib/games/projectionContrast.en";
 import {
   frenchResidue,
   glossaryBreaches,
@@ -15,8 +13,8 @@ import {
 } from "@/test/englishBankParity";
 
 /**
- * The four small banks the games read beside the scale facts: places, the
- * one registered game, relation labels and the hub's contrast pair. Each is
+ * The three small banks the games read beside the scale facts: places, the
+ * one registered game and relation labels. Each is
  * a record keyed by the French record's id, so a key added on one side and
  * not the other fails here rather than rendering a hole.
  */
@@ -76,35 +74,5 @@ describe("the English relation labels", () => {
       expect(frenchResidue(entry.labelEn)).toBeNull();
       expect(entry.provenance).toBe("machine");
     }
-  });
-});
-
-describe("the English contrast labels", () => {
-  // @req REQ-145
-  it("labels exactly the two shapes the hub argues with", () => {
-    expect(Object.keys(CONTRAST_SHAPE_LABELS_EN).sort()).toEqual(
-      [
-        MERCATOR_CONTRAST_PAIR.inflatedId,
-        MERCATOR_CONTRAST_PAIR.understatedId,
-      ].sort()
-    );
-    for (const entry of Object.values(CONTRAST_SHAPE_LABELS_EN)) {
-      expect(entry.labelEn.length).toBeGreaterThan(0);
-      expect(entry.articledEn.length).toBeGreaterThan(0);
-      expect(frenchResidue(entry.articledEn)).toBeNull();
-      expect(entry.provenance).toBe("machine");
-    }
-  });
-
-  /**
-   * The articled form is lowercase for the same reason the French one is: the
-   * scene raises the first letter where a sentence starts, and a stored
-   * capital would be wrong mid-sentence.
-   */
-  // @req REQ-145
-  it("keeps the articled form lowercase where it carries an article", () => {
-    const understated =
-      CONTRAST_SHAPE_LABELS_EN[MERCATOR_CONTRAST_PAIR.understatedId];
-    expect(understated.articledEn).toMatch(/^the /);
   });
 });

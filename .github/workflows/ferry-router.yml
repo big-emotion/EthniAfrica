@@ -1,5 +1,5 @@
 # Copy this file to .github/workflows/ferry-router.yml to use the thin router model.
-# Replace @v1.1.2 with the Ferry release tag you want to pin.
+# Replace @v1.2.0 with the Ferry release tag you want to pin.
 # NOTE: the router model (ferry-run-claude-agent, ferry-transition routing) ships in
 # Ferry >= v0.18.0 — pin that release or later; earlier tags lack the composite.
 # Execution path: claude-code — agents run via claude-code-action.
@@ -30,6 +30,10 @@ on:
   repository_dispatch:
     types:
       - ferry-transition
+      # Legacy per-status event types, still mapped straight to a role by
+      # ferry-route. A Jira rule that still sends one of them doubles the run
+      # the ferry-transition rule already triggers — see
+      # ferry-jira-automation-setup.md before re-enabling any of those rules.
       - ferry-refine
       - ferry-dev
       - ferry-review
@@ -114,7 +118,7 @@ jobs:
         uses: big-emotion/ferry/.github/actions/ferry-run-claude-agent@39a42f9f5607d22c38f453bb33212c0c94750486 # v1.2.0
         with:
           role: ${{ needs.route.outputs.cc_agent }}
-          ferry_version: v1.1.2
+          ferry_version: v1.2.0
           ticket_key: ${{ github.event.client_payload.ticket_key }}
           event_id: ${{ github.event.client_payload.event_id }}
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -166,6 +170,9 @@ jobs:
           model: ${{ vars[needs.route.outputs.model_var] || (contains(fromJSON('["refiner","reviewer","merger"]'), needs.route.outputs.role) && 'claude-opus-4-8' || 'claude-sonnet-5') }}
           outcome: ${{ needs.run-agent.result }}
           # claude-code path does cost tracking best-effort by design — it emits no token/cost outputs.
+          # Consequence: every audit line this router writes says cost_eur 0, and
+          # ferry-cost-daily.yml sums those lines, so FERRY_SPEND_CAP_EUR can never
+          # trip on this path. Subscription usage is capped by the Claude plan, not by Ferry.
           input_tokens: "0"
           output_tokens: "0"
           cost_eur: "0"

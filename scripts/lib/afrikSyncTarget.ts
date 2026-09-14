@@ -22,13 +22,22 @@
  * | ------------ | ----------------------- | ----------------------------------- |
  * | `recette`    | `shmrjtnfbqzceovroqjj`  | known, checked in below             |
  * | `production` | not in this repository  | `AFRIK_PRODUCTION_SUPABASE_URL` env |
+ * | `local`      | `supabase start`        | a loopback `NEXT_PUBLIC_SUPABASE_URL` |
  *
  * Production has **no default**. A default is a way to write to the wrong
  * database by forgetting to set something, which is exactly what happened.
+ *
+ * `local` is a contributor's own stack. It names no project, so the only thing
+ * that can be checked is that the URL cannot reach anyone else's database: it
+ * must be plain HTTP on 127.0.0.1 or localhost. A `.env.local` still pointing at
+ * a hosted project is the ordinary state of a fresh clone, and declaring local
+ * must not be a way to write there.
  */
 
-/** The two application environments. Not "staging" — that name is retired. */
-export type AfrikSyncEnvironment = "recette" | "production";
+/** Recette, production, and a contributor's local stack. Not "staging" — that name is retired. */
+export type AfrikSyncEnvironment = "recette" | "production" | "local";
+
+const LOOPBACK_HOSTNAMES = new Set(["127.0.0.1", "localhost"]);
 
 /**
  * The Supabase project backing the **recette** application. Checked in because
@@ -87,7 +96,7 @@ export function resolveAfrikSyncTarget(
 ): ResolvedAfrikSyncTarget {
   if (!input.environment?.trim()) {
     throw new Error(
-      "Target environment is required — pass --target=recette or --target=production"
+      "Target environment is required — pass --target=recette, --target=production or --target=local"
     );
   }
 
@@ -97,9 +106,13 @@ export function resolveAfrikSyncTarget(
     );
   }
 
-  if (input.environment !== "recette" && input.environment !== "production") {
+  if (
+    input.environment !== "recette" &&
+    input.environment !== "production" &&
+    input.environment !== "local"
+  ) {
     throw new Error(
-      `Target environment must be exactly "recette" or "production" — got "${input.environment}"`
+      `Target environment must be exactly "local", "recette" or "production" — got "${input.environment}"`
     );
   }
 
@@ -107,6 +120,16 @@ export function resolveAfrikSyncTarget(
     "Active Supabase URL",
     input.activeSupabaseUrl
   );
+
+  if (input.environment === "local") {
+    const { protocol, hostname } = new URL(activeSupabaseUrl);
+    if (protocol !== "http:" || !LOOPBACK_HOSTNAMES.has(hostname)) {
+      throw new Error(
+        `Refusing to sync: --target=local accepts only a loopback stack (http://127.0.0.1 or http://localhost, any port), but NEXT_PUBLIC_SUPABASE_URL is ${activeSupabaseUrl}.`
+      );
+    }
+    return { environment: "local", supabaseUrl: activeSupabaseUrl };
+  }
 
   if (input.environment === "recette") {
     if (activeSupabaseUrl !== AFRIK_RECETTE_SUPABASE_URL) {

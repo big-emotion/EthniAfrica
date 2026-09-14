@@ -38,22 +38,24 @@ Ce que la doctrine dit, en bref — la source l'emporte si elle a changé depuis
   lui donnent vient après.**
 - **Trois phrases qu'on n'écrit pas** : « Avant, on vivait en accord avec le
   continent », « Les frontières sont arbitraires », « Renouer avec le passé ».
-- **Les dates :** la conférence de Berlin, 1884 — jamais « Berlin » seul ; les
-  indépendances, 1960. Une production qui date un nom précis donne la date
-  d'attestation de ce nom. **Deux formulations sont contestées** (audit du
-  message du 2026-09-13, constat 9) : « Berlin » comme celui qui a tracé les
-  lignes — la conférence a fixé des règles pour revendiquer un territoire, elle
-  n'a tracé aucune ligne — et « mille ans » posé comme un fait, qui ne se date
-  pas. Aucune clôture ne les porte tant que la session de doctrine n'a pas
-  tranché.
+- **Les dates :** plus de « Berlin, 1884 » nulle part, dans aucune production —
+  décidé par l'opérateur le 2026-09-14, qui tranche le point resté ouvert
+  depuis le constat 9 de l'audit du message du 2026-09-13. La conférence a fixé
+  des règles pour revendiquer un territoire, elle n'a tracé presque aucune
+  ligne elle-même ; la citer comme la date d'origine des frontières répète
+  l'erreur déjà relevée. La formule qui tient est celle de la doctrine :
+  « la plupart des frontières ont moins de cent quarante ans » — jamais un lieu
+  et une date uniques. « Mille ans » pour les noms reste une position, non une
+  mesure datée : voir `docs/editorial/purpose-doctrine.md`. Une production qui
+  date un nom précis donne la date d'attestation de ce nom, pas « mille ans ».
 
 ## Trois modes
 
-| Mode                    | Entrée               | Ce qui est lu                                                                                                 | Où va le verdict                                                      |
-| ----------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| **production** (défaut) | `<Sujet>`            | `cards.json`, `narration.fr.txt`, les descriptions de `post.md`, sous `$ETHNIAFRICA_SOCIAL_PROJECTS/<Sujet>/` | `message.md` dans ce dossier                                          |
-| **page**                | une route du site    | la page rendue à 430 px, premier écran d'abord, puis la page entière                                          | la conversation ; un rapport daté seulement si l'opérateur le demande |
-| **publié**              | rien, ou une période | les productions déjà en ligne                                                                                 | `docs/audience/message/message-audit-AAAA-MM-JJ.md`                   |
+| Mode                    | Entrée               | Ce qui est lu                                                                                                                                                                   | Où va le verdict                                                      |
+| ----------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| **production** (défaut) | `<Sujet>`            | `cards.json`, `narration.fr.txt` sous `$ETHNIAFRICA_SOCIAL_PROJECTS/<Sujet>/`, et les légendes de `_legendes/<id>.md` (ou de `post.md` pour un sujet écrit avant le 2026-09-14) | `message.md` dans ce dossier                                          |
+| **page**                | une route du site    | la page rendue à 430 px, premier écran d'abord, puis la page entière                                                                                                            | la conversation ; un rapport daté seulement si l'opérateur le demande |
+| **publié**              | rien, ou une période | les productions déjà en ligne                                                                                                                                                   | `docs/audience/message/message-audit-AAAA-MM-JJ.md`                   |
 
 Le mode **page** juge le site comme une production : une fiche peuple est la
 page où arrivent les clics des vidéos, et son premier écran doit tenir la
@@ -64,20 +66,65 @@ décisions vont à `/afrik-art-director` et `/ethniafrica-experience-optimizer`.
 
 Chaque critère se note **0, 1 ou 2**, avec la phrase citée qui justifie la note.
 
-| #   | Critère                                                                                                                                                                                                                                                                                                                                                                                                                          | Bloquant | Pour qui        |
-| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | --------------- |
-| 1   | **Le cadre est dit dans la pièce elle-même.** Un peuple nommé, et ce que la frontière lui fait ou ce qui est plus vieux qu'elle. Un sujet qui n'est pas un peuple (un pays, une ville, un mot) relie son nom aux peuples qu'il désigne ; sans ce lien, 0.                                                                                                                                                                        | oui      | le nouveau venu |
-| 2   | **Le nom qu'il se donne, d'abord.** Dès qu'un peuple est nommé, la paire est visible tôt — carte 2 au plus tard en carrousel, première scène après l'accroche en vidéo, premier écran sur une page — dans l'ordre nom qu'il se donne → nom qu'on lui donne, sous la forme de §3 bis.                                                                                                                                             | oui      | les deux        |
-| 3   | **Le peuple est sujet de la phrase.** Le renversement d'agent de §7 ter ; le colonisateur n'est pas le sujet des phrases qui concluent.                                                                                                                                                                                                                                                                                          | oui      | les deux        |
-| 4   | **Aucune phrase refusée.** Ni les trois de la doctrine, ni « les frontières sont arbitraires ».                                                                                                                                                                                                                                                                                                                                  | oui      | les deux        |
-| 5   | **Les dates sont exactes.** « La conférence de Berlin », 1884, 1960 ; la date d'attestation propre au nom quand un nom est daté. Une clôture qui fait de « Berlin » l'auteur des lignes, ou qui pose « mille ans » comme un fait : 0.                                                                                                                                                                                            | oui      | les deux        |
-| 6   | **La fin va vers ce qui est resté** — l'origine, les liens, les pays où le peuple vit aujourd'hui — pas vers la blessure.                                                                                                                                                                                                                                                                                                        | non      | les deux        |
-| 7   | **Une idée, une boucle fermée.** Une pièce qui ouvre trois sujets n'en fait passer aucun ; une question ouverte à l'accroche trouve sa réponse dans la pièce ou derrière son lien.                                                                                                                                                                                                                                               | non      | le nouveau venu |
-| 8   | **La clôture de son type.** La ligne de vision mot pour mot — « Nommer un peuple aussi facilement qu'un pays. » — et le titre et le corps de clôture du type du lot, pris mot pour mot dans la table par type de contenu de §7 ter : un lot sur un pays ne se clôt pas sur « Ce peuple n'a pas été divisé ». Un type absent de la table : 0. Sur une page du site : le propos est atteignable (« Notre propos », la page About). | oui      | l'abonné        |
+| #   | Critère                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Bloquant | Pour qui        |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | --------------- |
+| 1   | **Le cadre est dit dans la pièce elle-même.** Pour le type « un peuple réparti sur plusieurs pays » : un peuple nommé, et ce que la frontière lui fait ou ce qui est plus vieux qu'elle. Pour tout autre type que §7 ter reconnaît sous son propre mécanisme (§7 ter, « la table par type de contenu ») : ce mécanisme propre au type, pas la doctrine frontière/nom recopiée hors sujet — voir la note après cette grille. Un sujet qui n'est pas un peuple (un pays, une ville, un mot) relie son nom aux peuples qu'il désigne ; sans ce lien, 0. | oui      | le nouveau venu |
+| 2   | **Le nom qu'il se donne, d'abord.** Dès qu'un peuple est nommé, la paire est visible tôt — carte 2 au plus tard en carrousel, première scène après l'accroche en vidéo, premier écran sur une page — dans l'ordre nom qu'il se donne → nom qu'on lui donne, sous la forme de §3 bis. **Sauf sous-cas « qui a nommé ce pays » — voir la note sous la grille.**                                                                                                                                                                                        | oui      | les deux        |
+| 3   | **Le peuple est sujet de la phrase.** Le renversement d'agent de §7 ter ; le colonisateur n'est pas le sujet des phrases qui concluent.                                                                                                                                                                                                                                                                                                                                                                                                              | oui      | les deux        |
+| 4   | **Aucune phrase refusée.** Ni les trois de la doctrine, ni « les frontières sont arbitraires ».                                                                                                                                                                                                                                                                                                                                                                                                                                                      | oui      | les deux        |
+| 5   | **Les dates sont exactes, et aucune ne nomme Berlin.** « Moins de cent quarante ans » pour les frontières ; la date d'attestation propre au nom quand un nom est daté. Une clôture qui cite « Berlin » ou « 1884 », qui en fait l'auteur des lignes, ou qui pose « mille ans » comme un fait daté : 0.                                                                                                                                                                                                                                               | oui      | les deux        |
+| 6   | **La fin va vers ce qui est resté** — l'origine, les liens, les pays où le peuple vit aujourd'hui — pas vers la blessure.                                                                                                                                                                                                                                                                                                                                                                                                                            | non      | les deux        |
+| 7   | **Une idée, une boucle fermée.** Une pièce qui ouvre trois sujets n'en fait passer aucun ; une question ouverte à l'accroche trouve sa réponse dans la pièce ou derrière son lien.                                                                                                                                                                                                                                                                                                                                                                   | non      | le nouveau venu |
+| 8   | **La clôture de son type.** La ligne de vision mot pour mot — « Nommer un peuple aussi facilement qu'un pays. » — et le titre et le corps de clôture du type du lot, pris mot pour mot dans la table par type de contenu de §7 ter : un lot sur un pays ne se clôt pas sur « Ce peuple n'a pas été divisé ». Un type absent de la table : 0. Sur une page du site : le propos est atteignable (« Notre propos », la page About).                                                                                                                     | oui      | l'abonné        |
 
 Les critères 1 et 7 servent le nouveau venu : il n'a que cette pièce. Le 2 et
 le 8 servent l'abonné : c'est la répétition du même bloc, à la même place, dans
 les mêmes mots, qui fait reconnaître la marque.
+
+### Le critère 1, lu par type de contenu
+
+Ajouté le 2026-09-14 (audit `adioukrou-generations`, opérateur) : ce critère
+mesurait un seul mécanisme, frontière/nom, alors que §7 ter en reconnaît
+plusieurs depuis la même session. Un sujet du type « un peuple réparti sur
+plusieurs pays » continue de devoir dire ce que la frontière lui fait ou ce
+qui est plus vieux qu'elle — c'est le mécanisme que ce type porte. Un sujet
+d'un autre type dit **son** mécanisme, tel que §7 ter le nomme pour ce
+type-là : pour « un système politique sans souverain unique », c'est l'écart
+avec l'attente par défaut — un roi, un chef héréditaire, un État — pas une
+phrase sur une frontière plaquée hors sujet. Une pièce qui forcerait la
+phrase frontière/nom sur un sujet dont le type n'en porte pas invente un fait
+plutôt que d'en manquer un ; le critère se lit donc **par le mécanisme que le
+type du lot porte réellement**, jamais par un mécanisme par défaut.
+
+Un type absent de §7 ter n'a pas de mécanisme défini : le critère 1 reste à 0
+jusqu'à ce que §7 ter en porte un, exactement comme le critère 8.
+
+### Sous-cas du critère 2 : un lot centré sur qui a nommé le pays
+
+Un lot dont le sujet déclaré est **qui a nommé ce pays** (pas un peuple — voir
+`GABARITS-SOCIAL.md` §7 ter, sous-cas de la ligne « un pays et les peuples qui y
+vivent ») lit le critère 2 **à la clôture, pas à la carte 2**. Décidé le
+2026-09-14 après un premier passage sur « qui-a-nomme-la-cote-divoire » : une
+version qui avançait la paire nom-qu'il-se-donne/nom-qu'on-lui-donne en carte 2
+avait vidé le corps du lot de tout acteur historique nommé (Bouët-Willaumez,
+Treich-Laplène, Binger n'existaient nulle part) — le critère 2 passait, mais la
+pièce ne répondait plus à la question de son propre sujet.
+
+Pour ce sous-cas :
+
+- **Le critère 1 seul garantit le cadre pour le nouveau venu.** Le critère 2 se
+  vérifie sur la clôture : la paire y apparaît comme le renversement (« voilà
+  qui a nommé ce pays ; ce peuple, lui, portait déjà son propre nom »), pas
+  comme l'ouverture.
+- **80 % du corps répond à « qui, comment, ce qui en reste »** — des acteurs
+  nommés, des traités, la toponymie qui en témoigne. Une pièce de ce sous-cas
+  qui n'atteint ce budget que par du vocabulaire abstrait (« un décret », « les
+  autorités ») sans jamais nommer qui a agi ne sert le critère 1 qu'en apparence
+  : signale-le sous le critère 1, pas sous le 2.
+- Ce sous-cas ne change rien aux critères 3 à 8 : le peuple reste sujet de la
+  phrase de clôture, aucune phrase refusée n'apparaît, et ainsi de suite.
+
+> > > > > > > origin/recette
 
 ### Le vocabulaire
 

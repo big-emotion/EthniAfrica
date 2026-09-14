@@ -27,6 +27,7 @@ import {
 } from "@/lib/quiz/proseFragment";
 import {
   isQuizEligible,
+  oralTraditionCommunity,
   type QuizEligibilityInput,
   type QuizEligibilityRejectionReason,
 } from "@/lib/quiz/eligibility";
@@ -36,6 +37,7 @@ import {
   templatesFor,
 } from "@/lib/quiz/segmentPolicy";
 import {
+  attributeToOralTradition,
   isSameOptionValue,
   mainCountryOf,
   questionTemplateBuilders,
@@ -500,6 +502,9 @@ export function evaluateCandidate(
       reason: "insufficient_distractors",
     };
   }
+  const community = oralTraditionCommunity(
+    assertion.eligibility.assertionSources
+  );
   return {
     templateId,
     outcome: "generated",
@@ -513,7 +518,9 @@ export function evaluateCandidate(
       stimulusFr: candidate.stimulusFr,
       optionsFr: candidate.optionsFr,
       correctOption: candidate.correctOption,
-      explanationFr: candidate.explanationFr,
+      explanationFr: community
+        ? attributeToOralTradition(candidate.explanationFr, community, locale)
+        : candidate.explanationFr,
       assertionId: assertion.assertionId,
       sourceIds: assertion.sourceIds,
       confidenceAtGeneration: assertion.eligibility.confidenceScore,

@@ -126,6 +126,7 @@ const en = {
     attributed: (name: string) => `Account attributed to ${name}.`,
     anonymous: "Account attributed to a person who chose to remain anonymous.",
     linkedVariant: "Linked variant",
+    notYetReviewed: "Not yet reviewed",
   },
   media: {
     title: "Media credits",
@@ -289,6 +290,7 @@ const fr: PeopleCopy = {
     attributed: (name) => `Récit attribué à ${name}.`,
     anonymous: "Récit attribué à une personne ayant choisi de rester anonyme.",
     linkedVariant: "Variante liée",
+    notYetReviewed: "Pas encore relu",
   },
   media: {
     title: "Crédits médias",

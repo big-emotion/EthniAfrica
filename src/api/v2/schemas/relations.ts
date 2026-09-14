@@ -6,7 +6,10 @@
  * PublicRelationRecord), following the precedent already set by Story 11.6.
  */
 
-import { pageSizeSchema } from "@/api/v2/schemas/pagination";
+import {
+  EGO_NETWORK_PAGE_SIZE,
+  pageSizeSchema,
+} from "@/api/v2/schemas/pagination";
 import { z } from "zod";
 
 // @req REQ-097
@@ -58,7 +61,7 @@ export const egoNetworkParamSchema = z.object({
 export const egoNetworkQuerySchema = z.object({
   types: csvRelationTypes,
   includeDerived: booleanQueryParam(true),
-  limit: z.coerce.number().int().min(1).max(100).default(24),
+  limit: pageSizeSchema.default(EGO_NETWORK_PAGE_SIZE),
 });
 
 export type EgoNetworkQuery = z.infer<typeof egoNetworkQuerySchema>;

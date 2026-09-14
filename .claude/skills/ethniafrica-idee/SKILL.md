@@ -77,6 +77,16 @@ Ce qui pourrait faire échouer le sujet.
   ne devient jamais un constat historique en descendant la chaîne.
 - **N'invente ni une source, ni une licence, ni un chiffre.** Un chiffre non
   vérifié se note comme non vérifié.
+- **Un sujet centré sur qui a nommé un pays suit le sous-cas de
+  `GABARITS-SOCIAL.md` §7 ter** (ligne « un pays et les peuples qui y vivent »),
+  pas le patron par défaut de ce type : 80 % du rapport porte sur les acteurs
+  nommés de l'histoire du nom (explorateurs, négociants, traités, ce qui en
+  reste en toponymie), les peuples n'arrivent qu'en clôture, comme le
+  renversement. Décidé le 2026-09-14 après un premier passage sur
+  « qui-a-nomme-la-cote-divoire » qui avait ouvert sur le compte de peuples et
+  laissé les acteurs de côté — l'opérateur a jugé la pièce vide de sens. Ne
+  recopie pas cette règle ici épisode après épisode : le rapport de sujet la
+  cite et renvoie à la source.
 
 ## Ce que tu ne fais pas
 

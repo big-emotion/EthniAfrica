@@ -261,17 +261,17 @@ describe("validateMigrationEvents (FR80, Story 12.1)", () => {
     ).toBe(true);
   });
 
-  // @req REQ-080
-  it("reports each of six distinct violations in a single fixture", () => {
+  // @req REQ-169
+  it("reports five distinct errors and two warnings in a single fixture", () => {
     const fiche = validFiche({
-      classificationStatus: "contested", // missing 2nd source + datingNote + debate
+      classificationStatus: "contested", // missing 2nd source; datingNote + debate warn
       timeRange: { startYear: -500, endYear: -1500, datingNote: null }, // startYear > endYear
       peoplesInvolved: [{ id: "PPL_UNKNOWN", role: "origin" }], // unknown PPL id
       geometry: { type: "LineString", coordinates: [] }, // invalid GeoJSON
       content: {
         summary: "S",
         narrative: "N",
-        debate: null, // missing debate for contested
+        debate: null,
         sources: [
           { title: "T", url: "https://un.org/x", year: 2000, notes: "" },
         ], // missing tier
@@ -281,7 +281,58 @@ describe("validateMigrationEvents (FR80, Story 12.1)", () => {
 
     const result = validateMigrationEvents(tmpDir, modelPath);
     expect(result.ok).toBe(false);
-    expect(result.errors.length).toBeGreaterThanOrEqual(6);
+    expect(result.errors.length).toBeGreaterThanOrEqual(5);
+    expect(result.warnings.some((w) => w.includes("datingNote"))).toBe(true);
+    expect(result.warnings.some((w) => w.includes("debate"))).toBe(true);
+  });
+
+  // @req REQ-169
+  it("passes a contested migration without datingNote or debate, warning for each missing field", () => {
+    const fiche = validFiche({
+      classificationStatus: "contested",
+      timeRange: { startYear: -1500, endYear: -500, datingNote: null },
+      content: {
+        ...validFiche().content,
+        debate: null,
+        sources: [
+          {
+            title: "T1",
+            url: "https://un.org/x",
+            year: 2000,
+            tier: "official",
+            notes: "",
+          },
+          {
+            title: "T2",
+            url: "https://example.org/y",
+            year: 2010,
+            tier: "unverified",
+            notes: "",
+          },
+        ],
+      },
+    });
+    writeFiche(tmpDir, "contested.json", fiche);
+
+    const result = validateMigrationEvents(tmpDir, modelPath);
+    expect(result.errors).toEqual([]);
+    expect(result.ok).toBe(true);
+    expect(
+      result.warnings.some(
+        (w) => w.includes("contested.json") && w.includes("datingNote")
+      )
+    ).toBe(true);
+    expect(
+      result.warnings.some(
+        (w) => w.includes("contested.json") && w.includes("debate")
+      )
+    ).toBe(true);
+    expect(
+      result.warnings.some(
+        (w) => w.includes("contested.json") && w.includes("unverified")
+      )
+    ).toBe(true);
+    expect(result.warnings.join("\n")).not.toMatch(/Tier [123]|forbidden/i);
   });
 
   // @req REQ-080

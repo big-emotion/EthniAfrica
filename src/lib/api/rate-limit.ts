@@ -4,6 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 import * as Sentry from "@sentry/nextjs";
 import { logger } from "@/lib/api/logger";
 import type { ApiKeyTier } from "@/lib/api/auth";
+import { isProductionDeployment } from "@/lib/deployment";
 
 /** Re-exported for callers that only need the tier type, not auth internals. */
 export type { ApiKeyTier };
@@ -153,21 +154,6 @@ function getLimiters(): Limiters {
   };
 
   return limiters;
-}
-
-/**
- * True only for a real production deployment.
- *
- * Vercel compiles every deployment with `NODE_ENV=production` — previews and
- * per-PR deployments included — so `NODE_ENV` alone cannot tell a preview from
- * the real site. `VERCEL_ENV` makes that distinction (`production` / `preview`
- * / `development`) and takes precedence whenever Vercel sets it. Outside Vercel
- * (self-hosted, local, CI) it is absent and `NODE_ENV` remains the authority.
- */
-function isProductionDeployment(): boolean {
-  const vercelEnv = process.env.VERCEL_ENV;
-  if (vercelEnv) return vercelEnv === "production";
-  return process.env.NODE_ENV === "production";
 }
 
 /**

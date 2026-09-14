@@ -3,7 +3,6 @@
  */
 
 import { DEFAULT_PAGE_SIZE, MAX_PAGE_SIZE } from "@/api/v2/schemas/pagination";
-import { mediaSchema, type MediaInput } from "@/api/v2/schemas/media";
 import type { TranslationLocale } from "@/lib/i18n/translationLocale";
 
 /**
@@ -63,12 +62,4 @@ export function validatePeopleId(id: string): boolean {
 export function validateLang(raw?: string | null): TranslationLocale | null {
   if (raw === undefined || raw === null || raw === "") return "fr";
   return raw === "en" || raw === "fr" ? raw : null;
-}
-
-/**
- * Reject invalid media before it reaches the persistence layer.
- */
-// @req REQ-128
-export function validateMedia(media: unknown): MediaInput {
-  return mediaSchema.parse(media);
 }

@@ -123,6 +123,39 @@ describe("resolveAfrikSyncTarget", () => {
     });
   });
 
+  describe("local", () => {
+    // `supabase start` serves its API on the loopback interface, and a
+    // contributor's first load belongs there rather than on a shared project.
+    // @req REQ-032
+    it.each(["http://127.0.0.1:54321", "http://localhost:54321"])(
+      "accepts a loopback stack (%s)",
+      (activeSupabaseUrl) => {
+        expect(
+          resolveAfrikSyncTarget({ environment: "local", activeSupabaseUrl })
+        ).toEqual({ environment: "local", supabaseUrl: activeSupabaseUrl });
+      }
+    );
+
+    // A `.env.local` still pointing at a hosted project is the common case, so
+    // declaring local must never be a way to write to one.
+    // @req REQ-032
+    it.each([
+      AFRIK_RECETTE_SUPABASE_URL,
+      PRODUCTION_URL,
+      "https://127.0.0.1:54321",
+      "http://localhost.ethniafrica.com:54321",
+      "http://127.0.0.2:54321",
+    ])("refuses a URL that is not a plain-HTTP loopback origin (%s)", (url) => {
+      expect(() =>
+        resolveAfrikSyncTarget({
+          environment: "local",
+          activeSupabaseUrl: url,
+          productionSupabaseUrl: url,
+        })
+      ).toThrow(/--target=local/);
+    });
+  });
+
   describe("the active URL itself", () => {
     // @req REQ-032
     it.each([undefined, ""])(

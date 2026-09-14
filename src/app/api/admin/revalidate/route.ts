@@ -1,6 +1,7 @@
 import { NextRequest } from "next/server";
 import { revalidateTag } from "next/cache";
 import { jsonWithCors, corsOptionsResponse } from "@/lib/api/cors";
+import { matchesBearerSecret } from "@/lib/api/bearerSecret";
 import { logger } from "@/lib/api/logger";
 
 /**
@@ -17,11 +18,12 @@ import { logger } from "@/lib/api/logger";
 // @req REQ-091
 export async function POST(request: NextRequest) {
   try {
-    // Vérifier l'authentification avec un secret
-    const authHeader = request.headers.get("authorization");
-    const expectedToken = process.env.REVALIDATE_SECRET;
-
-    if (!expectedToken || authHeader !== `Bearer ${expectedToken}`) {
+    if (
+      !matchesBearerSecret(
+        request.headers.get("authorization"),
+        process.env.REVALIDATE_SECRET
+      )
+    ) {
       return jsonWithCors({ error: "Unauthorized" }, { status: 401 });
     }
 

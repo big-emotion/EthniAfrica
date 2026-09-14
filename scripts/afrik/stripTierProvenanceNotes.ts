@@ -18,7 +18,8 @@
  * same change made on the parsed record before anything is written.
  *
  * Two consequences of editing a French record are handled in the same pass,
- * because the translation-parity gate refuses the change otherwise:
+ * so the translation-parity report does not list the change as drift or as a
+ * missing counterpart (it no longer refuses the change, REQ-171):
  * - a record with an English sidecar has the same sentences stripped from the
  *   sidecar and its hashes refreshed — only for fields that were in sync before,
  *   so an existing drift stays visible;

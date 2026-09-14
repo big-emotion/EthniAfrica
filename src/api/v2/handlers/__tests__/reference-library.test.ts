@@ -7,7 +7,10 @@ import {
   type ReferenceLibraryHandlerDependencies,
 } from "../reference-library";
 
-const contributor = { id: "11111111-1111-4111-8111-111111111111" };
+const contributor = {
+  id: "11111111-1111-4111-8111-111111111111",
+  email: "moderation@example.org",
+};
 const source = {
   id: "22222222-2222-4222-8222-222222222222",
   source_key: "wpp-2025",
@@ -26,6 +29,7 @@ function dependencies(
 ): Partial<ReferenceLibraryHandlerDependencies> {
   return {
     getAuthenticatedReferenceUser: vi.fn().mockResolvedValue(contributor),
+    isEmailAllowlisted: vi.fn().mockResolvedValue(true),
     searchReferences: vi.fn().mockResolvedValue([source]),
     createReference: vi.fn().mockResolvedValue({ source, created: true }),
     linkReferenceToAssertion: vi.fn().mockResolvedValue({
@@ -177,5 +181,112 @@ describe("reference library handler", () => {
     });
     expect(JSON.stringify(result.body)).not.toContain("object_path");
     expect(JSON.stringify(result.body)).not.toContain('"content":');
+  });
+});
+
+describe("reference library writes are reserved to the moderator allowlist", () => {
+  const writes = [
+    {
+      name: "reference creation",
+      write: "createReference" as const,
+      run: (
+        context: { accessToken: string | null },
+        deps: Partial<ReferenceLibraryHandlerDependencies>
+      ) =>
+        handleReferenceCreate(
+          {
+            source_key: source.source_key,
+            title: source.title,
+            authors: ["United Nations"],
+            publication_year: 2025,
+            source_kind: "intergovernmental",
+            tier: "official",
+          },
+          context,
+          deps
+        ),
+    },
+    {
+      name: "assertion linking",
+      write: "linkReferenceToAssertion" as const,
+      run: (
+        context: { accessToken: string | null },
+        deps: Partial<ReferenceLibraryHandlerDependencies>
+      ) =>
+        handleAssertionReferenceCreate(
+          {
+            assertion_id: "44444444-4444-4444-8444-444444444444",
+            source_id: source.id,
+            locator_type: "page",
+            locator_value: "p. 48",
+          },
+          context,
+          deps
+        ),
+    },
+    {
+      name: "private asset upload",
+      write: "storeReferenceWorkingAsset" as const,
+      run: (
+        context: { accessToken: string | null },
+        deps: Partial<ReferenceLibraryHandlerDependencies>
+      ) =>
+        handleReferenceWorkingAssetCreate(
+          {
+            source_id: source.id,
+            asset_kind: "scan",
+            filename: "report.pdf",
+            content_type: "application/pdf",
+            byte_size: 256,
+            content: new Uint8Array([1, 2, 3]),
+          },
+          context,
+          deps
+        ),
+    },
+  ];
+
+  for (const { name, write, run } of writes) {
+    // @req REQ-042
+    it(`answers ${name} without a bearer token with 401`, async () => {
+      const deps = dependencies();
+      const result = await run({ accessToken: null }, deps);
+
+      expect(result).toMatchObject({
+        status: 401,
+        body: { data: null, errors: [{ code: "UNAUTHENTICATED" }] },
+      });
+      expect(deps[write]).not.toHaveBeenCalled();
+    });
+
+    // @req REQ-042
+    it(`answers ${name} from a signed-in address off the allowlist with 403`, async () => {
+      const deps = dependencies({
+        isEmailAllowlisted: vi.fn().mockResolvedValue(false),
+      });
+      const result = await run(authenticatedContext, deps);
+
+      expect(result).toMatchObject({
+        status: 403,
+        body: { data: null, errors: [{ code: "UNAUTHORIZED" }] },
+      });
+      expect(deps.isEmailAllowlisted).toHaveBeenCalledWith(contributor.email);
+      expect(deps[write]).not.toHaveBeenCalled();
+    });
+  }
+
+  // @req REQ-042
+  it("leaves searching open to any signed-in session", async () => {
+    const deps = dependencies({
+      isEmailAllowlisted: vi.fn().mockResolvedValue(false),
+    });
+    const result = await handleReferenceSearch(
+      { q: "population", limit: "10" },
+      authenticatedContext,
+      deps
+    );
+
+    expect(result.status).toBe(200);
+    expect(deps.isEmailAllowlisted).not.toHaveBeenCalled();
   });
 });

@@ -11,6 +11,12 @@ import type { Proof } from "@/lib/antibot/proofOfWork";
 import { ContributionForm } from "./ContributionForm";
 import { ContributionFormFields } from "./ContributionFormFields";
 
+// The public page is read by visitors: the reference library stays closed
+// unless a suite opens it on purpose.
+vi.mock("@/lib/auth/referenceLibraryAccess", () => ({
+  hasReferenceLibraryAccess: vi.fn().mockResolvedValue(false),
+}));
+
 const SOLVED_PROOF: Proof = {
   salt: "test-salt",
   nonce: "42",
@@ -95,7 +101,7 @@ describe("ContributionForm", () => {
   });
 
   // @req REQ-145
-  it("renders the contribution controls in English when requested", () => {
+  it("renders the contribution controls in English when requested", async () => {
     const { container } = renderContributionForm({ language: "en" });
 
     expect(
@@ -107,7 +113,9 @@ describe("ContributionForm", () => {
     ).not.toBeInTheDocument();
 
     selectType(container, "new_language_family");
-    expect(screen.getByText("Add a reference")).toBeInTheDocument();
+    expect(
+      await screen.findByRole("heading", { name: "Reference library" })
+    ).toBeInTheDocument();
   });
 
   // An off-catalogue citation used to disable the submit button outright.

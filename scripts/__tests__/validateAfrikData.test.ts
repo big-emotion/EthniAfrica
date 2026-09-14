@@ -1288,7 +1288,8 @@ describe("validateAfrikData – new integrity checks", () => {
       expect(result.ok).toBe(true);
     });
 
-    it("returns ok:false when sum < 95", () => {
+    // @req REQ-170
+    it("returns ok:true with a warning naming the country and the sum when sum < 95", () => {
       writePays(tmpDir, "ZAF", [
         {
           peopleId: "PPL_ZULU",
@@ -1298,11 +1299,15 @@ describe("validateAfrikData – new integrity checks", () => {
       ]);
 
       const result = checkPopulationSums(tmpDir);
-      expect(result.ok).toBe(false);
-      expect(result.errors.some((e) => e.includes("ZAF"))).toBe(true);
+      expect(result.ok).toBe(true);
+      expect(result.errors).toEqual([]);
+      expect(
+        result.warnings.some((w) => w.includes("ZAF") && w.includes("50.00%"))
+      ).toBe(true);
     });
 
-    it("returns ok:false when sum > 105", () => {
+    // @req REQ-170
+    it("returns ok:true with a warning naming the country when sum > 105", () => {
       writePays(tmpDir, "ZAF", [
         {
           peopleId: "PPL_ZULU",
@@ -1317,8 +1322,8 @@ describe("validateAfrikData – new integrity checks", () => {
       ]);
 
       const result = checkPopulationSums(tmpDir);
-      expect(result.ok).toBe(false);
-      expect(result.errors.some((e) => e.includes("ZAF"))).toBe(true);
+      expect(result.ok).toBe(true);
+      expect(result.warnings.some((w) => w.includes("ZAF"))).toBe(true);
     });
 
     it("returns ok:true when pays directory has no JSON files", () => {
@@ -1344,17 +1349,18 @@ describe("validateAfrikData – new integrity checks", () => {
   // ── FR28-declared : checkPopulationSplitDeclared ───────────────────────────
 
   describe("checkPopulationSplitDeclared (FR28-declared)", () => {
-    // @req REQ-131
-    it("returns ok:false when a reference country declares an empty peoples list", () => {
+    // @req REQ-170
+    it("warns, without failing, when a reference country declares an empty peoples list", () => {
       writePays(tmpDir, "MDG", []);
 
       const result = checkPopulationSplitDeclared(tmpDir);
-      expect(result.ok).toBe(false);
-      expect(result.errors.some((e) => e.includes("MDG"))).toBe(true);
+      expect(result.ok).toBe(true);
+      expect(result.errors).toEqual([]);
+      expect(result.warnings.some((w) => w.includes("MDG"))).toBe(true);
     });
 
-    // @req REQ-131
-    it("returns ok:false when a reference country carries no demographics block", () => {
+    // @req REQ-170
+    it("warns, without failing, when a reference country carries no demographics block", () => {
       const dir = join(tmpDir, "pays");
       mkdirSync(dir, { recursive: true });
       writeFileSync(
@@ -1363,8 +1369,8 @@ describe("validateAfrikData – new integrity checks", () => {
       );
 
       const result = checkPopulationSplitDeclared(tmpDir);
-      expect(result.ok).toBe(false);
-      expect(result.errors.some((e) => e.includes("MDG"))).toBe(true);
+      expect(result.ok).toBe(true);
+      expect(result.warnings.some((w) => w.includes("MDG"))).toBe(true);
     });
 
     // @req REQ-131
@@ -1423,6 +1429,32 @@ describe("validateAfrikData – new integrity checks", () => {
       const result = checkIsoValidity(tmpDir);
       expect(result.ok).toBe(false);
       expect(result.errors.some((e) => e.includes("ZUL"))).toBe(true);
+    });
+
+    // DEC-055 softens a source's standing, never a declared code.
+    // @req REQ-169
+    it("still fails a language code that is not ISO 639-3, naming the record", () => {
+      const dir = join(tmpDir, "peuples", "FLG_BANTU");
+      mkdirSync(dir, { recursive: true });
+      writeFileSync(
+        join(dir, "PPL_ZULU.json"),
+        JSON.stringify({
+          id: "PPL_ZULU",
+          content: {
+            languages: { isoCodes: ["zulu"] },
+            demography: {
+              distributionByCountry: [{ country: "ZAF", population: 10000000 }],
+            },
+            sources: [],
+          },
+        })
+      );
+
+      const result = checkIsoValidity(tmpDir);
+      expect(result.ok).toBe(false);
+      expect(
+        result.errors.some((e) => e.includes("PPL_ZULU") && e.includes("zulu"))
+      ).toBe(true);
     });
 
     it("returns ok:false when distributionByCountry contains invalid country code", () => {

@@ -24,7 +24,7 @@ export async function generateMetadata({
   const language = lang as Language;
   const title = reportsCopy[language].page.metadataTitle;
   // The far end of a flow, meaningless entered cold from a search result
-  // (`UNLISTED_ROUTES`): indexed in no locale, canonical declared all the same.
+  // (named on `getSiteTree`): indexed in no locale, canonical declared all the same.
   return {
     title,
     ...localeHead(

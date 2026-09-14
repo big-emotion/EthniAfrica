@@ -9,7 +9,12 @@ vi.mock("@sentry/nextjs", () => ({
   captureException: vi.fn(),
 }));
 
+vi.mock("@/lib/ratelimit/contactRateLimit", () => ({
+  checkContactRateLimit: vi.fn().mockResolvedValue({ allowed: true }),
+}));
+
 import { __resetGraphToken } from "@/lib/email/graph";
+import { checkContactRateLimit } from "@/lib/ratelimit/contactRateLimit";
 
 import { POST } from "../route";
 
@@ -213,5 +218,92 @@ describe("POST /api/contact", () => {
     const response = await POST(postRequest(validBody));
 
     expect(response.status).toBe(502);
+  });
+});
+
+describe("POST /api/contact — per-sender quota", () => {
+  const originalFetch = global.fetch;
+
+  function requestFrom(address: string, body: unknown) {
+    return new NextRequest("http://localhost/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Forwarded-For": `${address}, 10.0.0.1`,
+      },
+      body: JSON.stringify(body),
+    });
+  }
+
+  beforeEach(() => {
+    vi.clearAllMocks();
+    global.fetch = vi.fn().mockResolvedValue({
+      ok: true,
+      status: 202,
+      text: async () => "",
+      json: async () => ({ access_token: "tok-test", expires_in: 3600 }),
+    });
+  });
+
+  afterEach(() => {
+    global.fetch = originalFetch;
+  });
+
+  // @req REQ-045
+  it("answers 429 with Retry-After once the sender's quota is spent, and sends nothing", async () => {
+    vi.mocked(checkContactRateLimit).mockResolvedValueOnce({
+      allowed: false,
+      retryAfter: 120,
+    });
+
+    const response = await POST(requestFrom("203.0.113.9", validBody));
+    const body = await response.json();
+
+    expect(response.status).toBe(429);
+    expect(response.headers.get("Retry-After")).toBe("120");
+    expect(body.error).toBe("RATE_LIMITED");
+    expect(body.message).toContain("Réessayez plus tard");
+    expect(checkContactRateLimit).toHaveBeenCalledWith("203.0.113.9");
+    expect(graphSendCall()).toBeUndefined();
+  });
+
+  // @req REQ-145
+  it("says so in English to an English sender", async () => {
+    vi.mocked(checkContactRateLimit).mockResolvedValueOnce({
+      allowed: false,
+      retryAfter: 60,
+    });
+
+    const response = await POST(
+      requestFrom("203.0.113.9", { ...validBody, language: "en" })
+    );
+    const body = await response.json();
+
+    expect(response.status).toBe(429);
+    expect(body.message).toContain("Try again later");
+  });
+
+  // @req REQ-045
+  it("counts a bot that fills the honeypot against its quota too", async () => {
+    vi.mocked(checkContactRateLimit).mockResolvedValueOnce({
+      allowed: false,
+      retryAfter: 60,
+    });
+
+    const response = await POST(
+      requestFrom("198.51.100.4", { ...validBody, honeypot: "filled" })
+    );
+
+    expect(response.status).toBe(429);
+  });
+
+  // @req REQ-045
+  it("still answers the honeypot as a success while the quota lasts", async () => {
+    const response = await POST(
+      requestFrom("198.51.100.4", { ...validBody, honeypot: "filled" })
+    );
+
+    expect(response.status).toBe(201);
+    expect(graphSendCall()).toBeUndefined();
   });
 });

@@ -231,6 +231,45 @@ function copyFor(locale: TranslationLocale, templateId: QuizTemplateId) {
   return QUESTION_TEMPLATE_COPY[locale][templateId];
 }
 
+// Elision is decided on the base letter, so an accented or tone-marked
+// community name (Ìjẹ̀bú, Éwé) elides like its bare spelling would. A Y
+// elides only as a vowel: before a vowel it is a consonant (Yoruba, Yaka),
+// and « d'Yoruba » is wrong French.
+function frenchOf(community: string): string {
+  const bare = community.normalize("NFD").replace(/\p{M}/gu, "");
+  return /^(?:[aeiou]|y(?![aeiou]))/i.test(bare)
+    ? `d'${community}`
+    : `de ${community}`;
+}
+
+const ORAL_TRADITION_CLAUSE: Record<
+  TranslationLocale,
+  (community: string) => string
+> = {
+  fr: (community) => `selon la tradition orale ${frenchOf(community)}`,
+  en: (community) => `according to the oral tradition of ${community}`,
+};
+
+/**
+ * DEC-055: a round resting on an oral tradition says whose tradition it is,
+ * so a people's account is played as what that community tells rather than as
+ * a written finding. The clause closes the template's sentence instead of
+ * opening it, because every template sentence opens on a proper noun that a
+ * prefix would force into re-casing.
+ */
+// @req REQ-175
+export function attributeToOralTradition(
+  explanation: string,
+  community: string,
+  locale: TranslationLocale
+): string {
+  const clause = ORAL_TRADITION_CLAUSE[locale](community);
+  const sentence = explanation.trim().replace(/\.$/, "");
+  return sentence
+    ? `${sentence} (${clause}).`
+    : `${clause.charAt(0).toUpperCase()}${clause.slice(1)}.`;
+}
+
 // Re-exported for the callers that imported it from here before the option
 // helpers moved to @/lib/games/options (REQ-120).
 // @req REQ-103

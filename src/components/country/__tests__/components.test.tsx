@@ -277,4 +277,40 @@ describe("PeoplesSection — what the bar admits (FR28)", () => {
 
     expect(container.querySelector("[data-demo-coverage-note]")).toBeNull();
   });
+
+  // @req REQ-170
+  it("labels a breakdown that falls short of 100 % as estimated or incomplete", () => {
+    const { container } = render(
+      <PeoplesSection language="fr" data={peoples([60, 32]) as never} />
+    );
+
+    const label = container.querySelector("[data-demo-estimated]");
+    expect(label?.textContent).toBe("Répartition estimée ou incomplète");
+  });
+
+  // Over 100 % there is no remainder to describe, but the shares are still not
+  // a breakdown the reader can add up.
+  // @req REQ-170
+  it("labels a breakdown that exceeds 100 %, without claiming a remainder", () => {
+    const { container } = render(
+      <PeoplesSection language="en" data={peoples([60, 44]) as never} />
+    );
+
+    expect(container.querySelector("[data-demo-estimated]")?.textContent).toBe(
+      "Estimated or incomplete breakdown"
+    );
+    expect(
+      container.querySelector("[data-demo-coverage-note]")?.textContent
+    ).not.toContain("remainder");
+  });
+
+  // @req REQ-170
+  it("carries no such label when the shares sum to 100 %", () => {
+    const { container } = render(
+      <PeoplesSection language="fr" data={peoples([60, 40]) as never} />
+    );
+
+    expect(container.querySelector("[data-demo-estimated]")).toBeNull();
+    expect(container.textContent).not.toContain("estimée ou incomplète");
+  });
 });

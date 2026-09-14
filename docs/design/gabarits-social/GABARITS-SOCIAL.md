@@ -572,9 +572,30 @@ emporte s'il ne lit rien d'autre.
 | « Ce peuple n'a pas été divisé. C'est la carte qui a été dessinée par-dessus. » | « Ce peuple a été divisé par les colons. » | Le registre de la réparation garde le colonisateur au centre de la phrase. Le renversement d'agent rend le peuple sujet. |
 | « Tracées sans référence à qui habitait là. » | « Les frontières sont arbitraires. » | À demi faux, donc attaquable — et l'atlas peut le montrer peuple par peuple. |
 | « Ce qui est resté. » | « Ce qui a été pris. » | Le contenu ne dénonce pas, il agrandit la carte. |
+| « Certaines ruptures sont plus vieilles que la carte coloniale. » | « Avant les frontières, les peuples étaient unis. » | Des parentés de langue et de culture ont parfois traversé des ruptures — une scission, une migration, une querelle de succession — bien plus anciennes que le tracé colonial. La carte n'a pas toujours créé la séparation, elle l'a souvent verrouillée. |
 
-**Deux dates, à citer plutôt qu'à paraphraser :** Berlin 1884, les indépendances 1960.
-Une frontière ne contient pas un peuple, elle le traverse.
+**Aucune conférence, aucune date unique n'est citée comme l'origine des frontières**
+(décidé par l'opérateur le 2026-09-14) : la conférence de Berlin a fixé des règles de
+revendication, elle n'a tracé presque aucune ligne elle-même, et une production qui la
+cite comme l'autrice du tracé répète une erreur déjà relevée par l'audit du message.
+La formule qui tient est celle de la table ci-dessus — « moins de 140 ans » — jamais un
+lieu et une date uniques. Une frontière ne contient pas un peuple, elle le traverse.
+
+### Une deuxième position, distincte de la ligne de vision
+
+Décidée par l'opérateur le 2026-09-14, échange complet dans
+`docs/editorial/purpose-doctrine.md` §5 :
+
+> « Ce qui relie les peuples d'Afrique a survécu à leurs propres ruptures
+> autant qu'aux frontières qu'on leur a imposées. C'est là que commence une
+> unité plus forte. »
+
+**Ce n'est pas la ligne de vision.** Elle n'est pas obligatoire dans chaque
+clôture et ne remplace rien de ce qui précède. Elle peut inspirer le ton d'une
+clôture sans y être imprimée mot pour mot, ou apparaître comme sa propre
+carte — toujours étiquetée comme une position, jamais comme un fait que
+l'atlas démontre, au même titre que « Ce peuple n'a pas été divisé » sur la
+page À propos (`purposeChapter.unityClaim` / `.unityClaimStatus`).
 
 ### Ce qui change avec le type de contenu, et ce qui ne change jamais
 
@@ -613,11 +634,14 @@ s'écrit ici d'abord, jamais dans une carte.
 | Le lot parle de | Patron de titre d'ouverture | Mot en accent à l'ouverture | Titre de clôture | Mot en accent à la clôture | Corps de clôture |
 | --- | --- | --- | --- | --- | --- |
 | un peuple réparti sur plusieurs pays | « Du {pays} au {pays}, les frontières traversent les {peuple}. » | « {peuple}. » | « Ce peuple n'a pas été divisé. » | « divisé. » | « C'est la carte qui a été dessinée par-dessus. » |
-| un pays et les peuples qui y vivent — *proposé le 2026-09-13, à valider par l'opérateur* | « {Pays}, c'est {n} peuples. » | « peuples. » | « Ces peuples n'ont pas été rassemblés. » | « rassemblés. » | « C'est la carte qui a été dessinée autour d'eux. » |
+| un pays et les peuples qui y vivent — *validée le 2026-09-14* | « {Pays}, c'est {n} peuples. » — *sauf sous-cas « qui a nommé ce pays », voir ci-dessous* | « peuples. » | « Ces peuples n'ont pas été rassemblés. » | « rassemblés. » | « C'est la carte qui a été dessinée autour d'eux. » |
 | des villes, des lieux | un registre de la banque ci-dessous | celui du registre | « Cette ville n'a pas changé de nom. » | « nom. » | « On l'a rebaptisée. » |
 | une projection, une carte | un registre de la banque ci-dessous | celui du registre | « La carte ne mentait pas. Elle ne disait pas tout. » | « tout. » | « On l'a redessinée. » |
 | le nom d'un pays | un registre de la banque ci-dessous | celui du registre | « Ce pays ne s'est pas renommé. » | « renommé. » | « On l'a rebaptisé. » — *dérivé de la ligne des villes le 2026-09-13, à valider* |
-| une langue, une famille | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas disparu. » | « disparu. » | *à fixer* — aucune seconde moitié n'a encore été écrite |
+| une langue, une famille | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas disparu. » | « disparu. » | « C'est la case qu'on lui avait donnée qui a disparu. » — *fixé le 2026-09-14 par l'opérateur, à l'écriture de « famille-linguistique-quatre-familles »* |
+| une famille de langues, regroupant plusieurs peuples sous un seul nom | un registre de la banque ci-dessous | celui du registre | « Cette famille n'est pas un peuple. » | « peuple. » | « On lui a donné un nom, par-dessus des peuples qui avaient déjà le leur. » — *décidé par l'opérateur le 2026-09-14, pour le sujet Mandé — distinct de la ligne « une langue, une famille » ci-dessus : celle-ci porte la légitimité d'une classification, celle-là la confusion entre un nom de famille et un nom de peuple* |
+| un système politique sans souverain unique — un peuple qui gouverne autrement qu'avec un roi ou un chef héréditaire — *validé par l'opérateur le 2026-09-14* | un registre de la banque ci-dessous | celui du registre | « Ce peuple n'a jamais eu de roi. » | « roi. » | « Le pouvoir s'y prête, il ne s'y transmet pas. » |
+| un nom partagé, repris par plusieurs peuples distincts | un registre de la banque ci-dessous | celui du registre | « Ce nom n'a pas été subi. » | « subi. » | « On se l'est approprié. » — *décidé par l'opérateur le 2026-09-14, pour le sujet `creole-ne-dans-la-colonie` — distinct de la ligne « une famille de langues » ci-dessus : celle-là porte un nom imposé qui écrase des peuples ayant déjà le leur, celle-ci un nom d'abord extérieur que plusieurs peuples, sans parenté entre eux, ont chacun fait leur propre nom* |
 
 **`cards.json` ne porte jamais `**`** : les titres s'y recopient en texte brut depuis
 cette table, le moteur accentue de lui-même le dernier mot d'une clôture avec sa
@@ -638,12 +662,41 @@ phrase.** Exemples :
 **Un pays et les peuples qui y vivent.** C'est l'épisode à densité inversée : le sujet
 est un pays, et ce qu'il faut renverser n'est pas une division mais un rassemblement.
 « Ce peuple n'a pas été divisé » y serait faux. `{n}` se **mesure sur le corpus le jour
-où le titre s'écrit**, il ne se recopie pas. Exemple :
+où le titre s'écrit**, il ne se recopie pas. Exemple, pour un lot où le pays lui-même
+reste le sujet du corps :
 
 > La Tanzanie, c'est quatre-vingt-seize **peuples**.
 
-Cette ligne est **proposée le 2026-09-13 et reste à valider par l'opérateur** ; tant
-qu'elle ne l'est pas, un lot de ce type s'arrête avant d'écrire sa clôture et le dit.
+Cette ligne est **validée par l'opérateur (2026-09-14)**, après un premier passage sur
+« qui-a-nomme-la-cote-divoire » qui l'avait déjà appliquée sur cette base.
+
+**Sous-cas : un lot centré sur qui a nommé le pays — l'ordre s'inverse, et le patron
+d'ouverture ci-dessus ne s'applique pas.** Mesuré le 2026-09-14 sur ce même sujet : une
+première version ouvrait sur le compte de peuples et reléguait l'acte de nommer à un
+« décret », sans jamais dire qui l'a signé, négocié ou exploré — Bouët-Willaumez,
+Treich-Laplène, Binger n'existaient nulle part dans le montage. L'opérateur a jugé la
+pièce vide de sens : elle ne répondait à aucune question, parce que le reste du corpus
+parle déjà des peuples en permanence, et que **c'est cette parenthèse-ci qui doit parler
+du pays**.
+
+- **80 % du corps du lot répond à « qui, comment, ce qui en reste »** : les acteurs
+  nommés (explorateurs, négociants, résidents, gouverneurs, leurs rivaux), les traités,
+  les comptoirs, la résistance, et la toponymie qui en témoigne aujourd'hui — une ville,
+  un quartier qui porte encore leur nom. Nommer un acteur historique n'est pas la même
+  chose que d'en faire le sujet moral de la pièce : on dit qui a agi et ce qui est resté
+  de son passage, pas un jugement sur lui. C'est la même distinction qui tient
+  « le registre de la réparation garde le colonisateur au centre de la phrase » —
+  la toponymie qui reste **est** ce qui est resté, elle ne bascule pas dans ce registre.
+- **Les peuples n'ouvrent pas le lot et n'ont pas à apparaître en carte 2.** Ils forment
+  la parenthèse de clôture, le renversement : voilà qui a nommé ce pays ; les peuples,
+  eux, étaient déjà là sous leur propre nom, indépendamment de cette histoire. La clôture
+  du type ci-dessus (« Ces peuples n'ont pas été rassemblés. ») reste inchangée — c'est
+  l'ordre du corps qui s'inverse, pas la clôture.
+- **L'ouverture** n'utilise donc pas le patron « {Pays}, c'est {n} peuples. » pour ce
+  sous-cas : elle assertit la chose surprenante du nom lui-même (qui l'a donné, à partir
+  de quoi), dans un des registres de la banque de patrons ci-dessous — jamais le compte
+  de peuples, qui appartient à la clôture.
+- **`ethniafrica-message`, critère 2** lit ce sous-cas différemment : voir ce skill.
 
 **Ce qu'aucune clôture n'écrit, quel que soit le type**, tant que la session de doctrine
 n'a pas tranché : « Berlin » comme celui qui a tracé les lignes — la conférence de
