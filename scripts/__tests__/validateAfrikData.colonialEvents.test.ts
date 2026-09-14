@@ -207,7 +207,7 @@ describe("validateAfrikData – colonial-event checks (CR3-CR5)", () => {
 
   // ── CR4 : checkColonialEventCr4 ────────────────────────────────────────────
 
-  describe("checkColonialEventCr4 (Tier 1/2 source gate)", () => {
+  describe("checkColonialEventCr4 (source standing, DEC-055)", () => {
     // @req REQ-089
     it("passes a fully sourced consensual event", () => {
       writeFiche(
@@ -221,8 +221,8 @@ describe("validateAfrikData – colonial-event checks (CR3-CR5)", () => {
       expect(result.errors).toHaveLength(0);
     });
 
-    // @req REQ-089
-    it("errors when an event has zero Tier 1/2 sources", () => {
+    // @req REQ-169
+    it("errors when an event cites no source at all", () => {
       const fiche = validColonialFiche("displacement", {
         content: {
           summary: "S",
@@ -238,8 +238,8 @@ describe("validateAfrikData – colonial-event checks (CR3-CR5)", () => {
       expect(result.errors.some((e) => e.includes("CR4"))).toBe(true);
     });
 
-    // @req REQ-089
-    it("rejects a Wikipedia URL cited directly as a source", () => {
+    // @req REQ-169
+    it("warns, without failing, on a Wikipedia URL cited directly as a source", () => {
       const fiche = validColonialFiche("resistance", {
         content: {
           summary: "S",
@@ -250,8 +250,8 @@ describe("validateAfrikData – colonial-event checks (CR3-CR5)", () => {
               title: "Wikipedia article",
               url: "https://en.wikipedia.org/wiki/Some_event",
               year: 2020,
-              tier: "referenced",
-              notes: "Vérifié via Wikipedia EN + FR",
+              tier: "unverified",
+              notes: "",
             },
           ],
         },
@@ -259,10 +259,40 @@ describe("validateAfrikData – colonial-event checks (CR3-CR5)", () => {
       writeFiche(tmpDir, "resistance.json", fiche);
 
       const result = checkColonialEventCr4(tmpDir);
-      expect(result.ok).toBe(false);
+      expect(result.ok).toBe(true);
+      expect(result.errors).toEqual([]);
       expect(
-        result.errors.some((e) => e.includes("CR4") && /wikipedia/i.test(e))
+        result.warnings.some((w) => w.includes("CR4") && /wikipedia/i.test(w))
       ).toBe(true);
+      expect(result.warnings.join("\n")).not.toMatch(/Tier [123]|forbidden/i);
+    });
+
+    // @req REQ-169
+    it("passes an event resting only on an unverified source, warning with the record and its standing", () => {
+      const fiche = validColonialFiche("displacement", {
+        content: {
+          summary: "S",
+          narrative: "N",
+          debate: null,
+          sources: [
+            {
+              title: "Récit recueilli",
+              url: "https://example.org/x",
+              year: 2021,
+              tier: "unverified",
+              notes: "",
+            },
+          ],
+        },
+      });
+      writeFiche(tmpDir, "community.json", fiche);
+
+      const result = checkColonialEventCr4(tmpDir);
+      expect(result.ok).toBe(true);
+      expect(result.errors).toEqual([]);
+      expect(result.warnings).toHaveLength(1);
+      expect(result.warnings[0]).toContain("community.json");
+      expect(result.warnings[0]).toContain("unverified");
     });
 
     // @req REQ-089
@@ -350,8 +380,8 @@ describe("validateAfrikData – colonial-event checks (CR3-CR5)", () => {
       expect(result.errors).toHaveLength(0);
     });
 
-    // @req REQ-089
-    it("errors when a Tier 2 source has no Wikipedia cross-check path in notes", () => {
+    // @req REQ-169
+    it("asks a referenced source for no Wikipedia cross-check path in notes", () => {
       const fiche = validColonialFiche("displacement", {
         content: {
           summary: "S",
@@ -368,11 +398,12 @@ describe("validateAfrikData – colonial-event checks (CR3-CR5)", () => {
           ],
         },
       });
-      writeFiche(tmpDir, "notier2notes.json", fiche);
+      writeFiche(tmpDir, "referenced-no-notes.json", fiche);
 
       const result = checkColonialEventCr4(tmpDir);
-      expect(result.ok).toBe(false);
-      expect(result.errors.some((e) => e.includes("CR4"))).toBe(true);
+      expect(result.ok).toBe(true);
+      expect(result.errors).toEqual([]);
+      expect(result.warnings).toEqual([]);
     });
 
     // @req REQ-089

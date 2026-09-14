@@ -67,6 +67,7 @@ const en = {
     groupedCount: (count: number) => `${count} peoples`,
     coverage: (share: number) =>
       `The peoples documented here represent ${share}% of the country's population. The remainder is not yet distributed in the atlas.`,
+    estimatedBreakdown: "Estimated or incomplete breakdown",
     diversity: "Ethnolinguistic diversity",
     notDetailed: "not individually detailed",
     otherLanguages: (count: number) => `+ ${count} other languages`,
@@ -189,6 +190,7 @@ const fr: CountryCopy = {
     groupedCount: (count) => `${count} peuples`,
     coverage: (share) =>
       `Les peuples documentés ici représentent ${share}\u00a0% de la population du pays. Le reste n'est pas encore réparti dans l’atlas.`,
+    estimatedBreakdown: "Répartition estimée ou incomplète",
     diversity: "Diversité ethnolinguistique",
     notDetailed: "non détaillée individuellement",
     otherLanguages: (count) => `+ ${count} autres langues`,

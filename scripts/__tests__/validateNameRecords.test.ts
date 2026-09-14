@@ -191,9 +191,9 @@ describe("name-record validator (FR53-FR57, Story 8.3)", () => {
     });
   });
 
-  describe("FR57-source — ≥1 Tier 1|2 source; Tier 2 requires Wikipedia cross-check note", () => {
-    // @req REQ-032
-    it("checkNameRecordSources fails when a Tier 2 source has no cross-check note", () => {
+  describe("FR57-source — a name's standing is labelled, never a reason to refuse it (DEC-055)", () => {
+    // @req REQ-169
+    it("checkNameRecordSources asks a referenced source for no Wikipedia note", () => {
       writeNameFile(
         tmpDir,
         "PPL_A.json",
@@ -205,8 +205,36 @@ describe("name-record validator (FR53-FR57, Story 8.3)", () => {
                   title: "T",
                   author: "A",
                   year: 2000,
-                  url: "https://fr.wikipedia.org/wiki/X",
-                  tier: 2,
+                  url: "https://www.persee.fr/x",
+                  tier: "referenced",
+                  notes: "",
+                },
+              ],
+            }),
+          ],
+        })
+      );
+
+      const result = checkNameRecordSources(tmpDir);
+      expect(result.ok).toBe(true);
+      expect(result.errors).toEqual([]);
+      expect(result.warnings).toEqual([]);
+    });
+
+    // @req REQ-169
+    it("checkNameRecordSources fails a source that records no tier, naming the record", () => {
+      writeNameFile(
+        tmpDir,
+        "PPL_A.json",
+        validNameFile({
+          names: [
+            validNameEntry({
+              sources: [
+                {
+                  title: "T",
+                  author: "A",
+                  year: 2000,
+                  url: "https://www.un.org/en/x",
                   notes: "",
                 },
               ],
@@ -217,7 +245,14 @@ describe("name-record validator (FR53-FR57, Story 8.3)", () => {
 
       const result = checkNameRecordSources(tmpDir);
       expect(result.ok).toBe(false);
-      expect(result.errors.some((e) => e.includes("FR57-source"))).toBe(true);
+      expect(
+        result.errors.some(
+          (e) =>
+            e.includes("FR57-source") &&
+            e.includes("PPL_A.json") &&
+            e.includes("tier")
+        )
+      ).toBe(true);
     });
 
     // @req REQ-032
@@ -272,36 +307,10 @@ describe("name-record validator (FR53-FR57, Story 8.3)", () => {
       expect(checkNameRecordSources(tmpDir).ok).toBe(true);
     });
 
-    // @req REQ-032
-    it("checkNameRecordSources requires a cross-check note for a string-tier 'referenced' source, same as legacy tier 2", () => {
-      writeNameFile(
-        tmpDir,
-        "PPL_A.json",
-        validNameFile({
-          names: [
-            validNameEntry({
-              sources: [
-                {
-                  title: "T",
-                  author: "A",
-                  year: 2000,
-                  url: "https://fr.wikipedia.org/wiki/X",
-                  tier: "referenced",
-                  notes: "",
-                },
-              ],
-            }),
-          ],
-        })
-      );
-
-      const result = checkNameRecordSources(tmpDir);
-      expect(result.ok).toBe(false);
-      expect(result.errors.some((e) => e.includes("FR57-source"))).toBe(true);
-    });
-
-    // @req REQ-032
-    it("checkNameRecordSources treats a string-tier 'unverified' source as insufficient on its own", () => {
+    // DEC-052 lets an oral tradition qualify a people name; the validator used
+    // to refuse that same record at merge, before the database ever saw it.
+    // @req REQ-169
+    it("checkNameRecordSources passes a name resting only on an unverified source, with a warning naming the record and its standing", () => {
       writeNameFile(
         tmpDir,
         "PPL_A.json",
@@ -324,8 +333,14 @@ describe("name-record validator (FR53-FR57, Story 8.3)", () => {
       );
 
       const result = checkNameRecordSources(tmpDir);
-      expect(result.ok).toBe(false);
-      expect(result.errors.some((e) => e.includes("FR57-source"))).toBe(true);
+      expect(result.ok).toBe(true);
+      expect(result.errors).toEqual([]);
+      expect(result.warnings).toHaveLength(1);
+      expect(result.warnings[0]).toContain("FR57-source");
+      expect(result.warnings[0]).toContain("PPL_A.json");
+      expect(result.warnings[0]).toContain("names[0]");
+      expect(result.warnings[0]).toContain("unverified");
+      expect(result.warnings[0]).not.toMatch(/Tier [123]|forbidden/i);
     });
   });
 
