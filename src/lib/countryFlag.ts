@@ -31,18 +31,6 @@ export const NATURAL_EARTH_ALIASES: Readonly<Record<string, string>> = {
   SDS: "SSD", // South Sudan
 };
 
-/**
- * Territories the admin-0 asset can draw that have no ISO 3166-1 code, and so
- * no regional-indicator flag. Somaliland is the only one: it is not
- * UN-recognised, ISO assigns it nothing, and no emoji flag exists for it.
- * Borrowing Somalia's flag would make the page assert a sovereignty claim it
- * has no business asserting; the neutral flag says "no code", which is the
- * true statement. Listed explicitly so the coverage test stays meaningful for
- * every other country instead of being weakened to accommodate this one.
- */
-// @req REQ-116
-export const COUNTRIES_WITHOUT_ISO_FLAG: readonly string[] = ["SOL"];
-
 const REGIONAL_INDICATOR_A = 0x1f1e6;
 const LATIN_A = 65;
 

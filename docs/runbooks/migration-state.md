@@ -272,11 +272,26 @@ two databases the 2026-08-31 readings of `001` → `049` reached.
 | `087_quiz_question_locale.sql`                | applied — measured 2026-09-12               | applied — measured 2026-09-12                        |
 | `088_needs_review_source_tier.sql`            | applied — measured 2026-09-12               | applied by the v4.9.0 Release — measured 2026-09-13  |
 | `089_oral_tradition_name_provenance.sql`      | applied — measured 2026-09-13               | applied by the v4.10.0 Release — measured 2026-09-14 |
+| `091_oral_narratives_before_review.sql`       | not measured                                | not measured                                         |
 
 > **Superseded rollout notes.** The per-migration notes below were written when each file was
 > pending, and several still say "apply by hand" or "omitted from this table". They are kept for
 > the rationale of each migration; for state, the table above and its 2026-09-12 and 2026-09-13
 > measurements are the fact.
+
+> **REQ-172, REQ-173 (ETNI-1953, ETNI-1954).** `091` applies DEC-055 points 6 and 7 over
+> `089`. The `032` table `CHECK` and both public-read policies stop requiring
+> `review_status = 'approved'`: a public narrative needs `rights_status = 'cleared'` and must not be
+> `rejected`. The `032` constraint was unnamed, so `091` finds it by definition and replaces it with
+> `oral_narratives_public_visibility_check`. The `089` advisor trigger and its function are
+> dropped; `approved_by` stays as a record of who reviewed. `enforce_name_record_sources()` lets a
+> people name rest on a cleared, linked narrative whether reviewed or not, and accepts every other
+> entity type at any recorded tier (a NULL tier still qualifies nothing). `recompute_confidence()`
+> counts `COUNT(DISTINCT s.id)`: the `carrier_ref` deduplication is gone, weights unchanged. Nothing
+> is rewritten, so existing `confidence_scores` keep the deduplicated count until the next
+> recompute. Recette first, production second. Verify on recette after merge: the anon key reads
+> a public, cleared, `pending` narrative, and `/api/v2/oral-narratives` returns it with
+> `reviewed: false` after any reviewed one.
 
 > **REQ-142 (ETNI-1826).** `085` creates `afrik_translations`, the translation record keyed
 > `(entity_type, entity_id, lang)` with a checked three-value `translation_kind`. It is loaded

@@ -46,9 +46,10 @@ export interface SiteTreeSection {
 }
 
 /**
- * Routes that exist and are deliberately absent from both the plan and the
- * sitemap. Kept as a named list so the omission reads as a decision rather
- * than an oversight.
+ * The site plan, which is also the sitemap's only source.
+ *
+ * Some routes exist and are deliberately absent from both, and are named here
+ * so the omission reads as a decision rather than an oversight:
  *
  *   · `admin/**`, `compte/**` — behind authentication.
  *   · `quiz/score`, `report-error` — the far end of a flow, meaningless when
@@ -62,15 +63,6 @@ export interface SiteTreeSection {
  * the consent banner names the canonical page, and one privacy policy is now
  * the only one a reader can reach.
  */
-// @req REQ-110
-export const UNLISTED_ROUTES = [
-  "admin",
-  "compte",
-  "quiz/score",
-  "report-error",
-  "comparer/[entityType]/[...ids]",
-] as const;
-
 // @req REQ-110
 export function getSiteTree(language: Language): SiteTreeSection[] {
   const route = (page: Parameters<typeof getLocalizedRoute>[1]) =>

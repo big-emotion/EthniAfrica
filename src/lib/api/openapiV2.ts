@@ -2377,7 +2377,7 @@ const options: swaggerJsdoc.Options = {
         OralNarrative: {
           type: "object",
           description:
-            "A public, approved, rights-cleared oral narrative. This representation intentionally excludes transcripts, media locators, collector details, and restricted identity metadata.",
+            "A public, rights-cleared oral narrative, reviewed or not yet reviewed (reviewed narratives are listed first). This representation intentionally excludes transcripts, media locators, collector details, carrier references, reviewer identity, and withheld narrator names.",
           properties: {
             id: { type: "string", format: "uuid" },
             narrativeCode: { type: "string", example: "ORL_YORUBA_MEMORY_001" },
@@ -2390,6 +2390,11 @@ const options: swaggerJsdoc.Options = {
             },
             summary: { type: ["string", "null"] },
             variantOf: { type: ["string", "null"], format: "uuid" },
+            reviewed: {
+              type: "boolean",
+              description:
+                "Whether the narrative has been reviewed. An unreviewed narrative is shown labelled as not yet reviewed.",
+            },
           },
           required: [
             "id",
@@ -2400,6 +2405,7 @@ const options: swaggerJsdoc.Options = {
             "narrativeKind",
             "summary",
             "variantOf",
+            "reviewed",
           ],
         },
         OralNarrativeListResponse: {
