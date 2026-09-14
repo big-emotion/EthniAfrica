@@ -103,7 +103,7 @@
           "ISO 639-3)",
           "français"
         ],
-        "languageFamily": "FLG_NIGERCONGO",
+        "languageFamily": "FLG_KWA",
         "appellationRemarks": "\"Akan\" est un terme générique. \"Baoulé\", \"Agni\", \"Abron\", \"Attié\" sont les auto-appellations respectives des sous-groupes. Pas de terme péjoratif connu."
       },
       {
@@ -336,7 +336,7 @@
           "percentageInCountry": 42,
           "peopleId": "PPL_AKAN",
           "region": "Centre, Est et Sud de la Côte d'Ivoire",
-          "languageFamily": "FLG_NIGERCONGO"
+          "languageFamily": "FLG_KWA"
         },
         {
           "name": "Voltaïques / Gur",

@@ -51,11 +51,11 @@ Ce que la doctrine dit, en bref — la source l'emporte si elle a changé depuis
 
 ## Trois modes
 
-| Mode                    | Entrée               | Ce qui est lu                                                                                                 | Où va le verdict                                                      |
-| ----------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| **production** (défaut) | `<Sujet>`            | `cards.json`, `narration.fr.txt`, les descriptions de `post.md`, sous `$ETHNIAFRICA_SOCIAL_PROJECTS/<Sujet>/` | `message.md` dans ce dossier                                          |
-| **page**                | une route du site    | la page rendue à 430 px, premier écran d'abord, puis la page entière                                          | la conversation ; un rapport daté seulement si l'opérateur le demande |
-| **publié**              | rien, ou une période | les productions déjà en ligne                                                                                 | `docs/audience/message/message-audit-AAAA-MM-JJ.md`                   |
+| Mode                    | Entrée               | Ce qui est lu                                                                                                                                                                   | Où va le verdict                                                      |
+| ----------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| **production** (défaut) | `<Sujet>`            | `cards.json`, `narration.fr.txt` sous `$ETHNIAFRICA_SOCIAL_PROJECTS/<Sujet>/`, et les légendes de `_legendes/<id>.md` (ou de `post.md` pour un sujet écrit avant le 2026-09-14) | `message.md` dans ce dossier                                          |
+| **page**                | une route du site    | la page rendue à 430 px, premier écran d'abord, puis la page entière                                                                                                            | la conversation ; un rapport daté seulement si l'opérateur le demande |
+| **publié**              | rien, ou une période | les productions déjà en ligne                                                                                                                                                   | `docs/audience/message/message-audit-AAAA-MM-JJ.md`                   |
 
 Le mode **page** juge le site comme une production : une fiche peuple est la
 page où arrivent les clics des vidéos, et son premier écran doit tenir la

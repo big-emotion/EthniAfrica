@@ -183,7 +183,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     definition:
       "Le nom d'une langue. Un glossonyme n'est pas un ethnonyme, et une famille de langues ne décrit aucune population.",
     corpusExample:
-      "Le corpus range 800 peuples sous 24 familles ; la plus vaste porte un mot forgé en 1862.",
+      "Le corpus range 800 peuples sous 25 familles ; la plus vaste porte un mot forgé en 1862.",
     corpusPresence: "instantiated",
     seeAlso: ["ethnonyme", "reification-ethnique"],
     chapterRef: "la-langue",

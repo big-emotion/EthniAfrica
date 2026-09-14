@@ -18,6 +18,7 @@ import {
 import { join, resolve } from "path";
 import {
   checkFlgFolderMatch,
+  checkPeopleFolderMatchesFamily,
   checkPplDuplicates,
   checkRetiredIdentifiers,
   checkPeopleReferencesResolve,
@@ -251,6 +252,51 @@ describe("validateAfrikData – new integrity checks", () => {
 
       expect(result.ok).toBe(true);
       expect(result.errors).toHaveLength(0);
+    });
+  });
+
+  // ── FR26 : checkPeopleFolderMatchesFamily ──────────────────────────────────
+
+  describe("checkPeopleFolderMatchesFamily (FR26)", () => {
+    // @req REQ-026
+    it("accepts a people fiche filed under the family its languageFamilyId names", () => {
+      writeFLG(tmpDir, "FLG_KWA");
+      writePPL(tmpDir, "FLG_KWA", "PPL_EWE", { languageFamilyId: "FLG_KWA" });
+
+      const result = checkPeopleFolderMatchesFamily(tmpDir);
+
+      expect(result.ok).toBe(true);
+      expect(result.errors).toHaveLength(0);
+    });
+
+    // The v2.0.0 "fix" to PPL_ATTIE rewrote the field to match a wrong folder
+    // because nothing compared the two; this is the comparison.
+    // @req REQ-026
+    it("rejects a people fiche whose folder disagrees with its languageFamilyId", () => {
+      writeFLG(tmpDir, "FLG_KWA");
+      writeFLG(tmpDir, "FLG_BENOUECONGO");
+      writePPL(tmpDir, "FLG_BENOUECONGO", "PPL_EWE", {
+        languageFamilyId: "FLG_KWA",
+      });
+
+      const result = checkPeopleFolderMatchesFamily(tmpDir);
+
+      expect(result.ok).toBe(false);
+      expect(result.errors).toHaveLength(1);
+      expect(result.errors[0]).toContain("PPL_EWE");
+      expect(result.errors[0]).toContain("FLG_BENOUECONGO");
+      expect(result.errors[0]).toContain("FLG_KWA");
+    });
+
+    // @req REQ-026
+    it("rejects a people fiche that declares no languageFamilyId", () => {
+      writeFLG(tmpDir, "FLG_KWA");
+      writePPL(tmpDir, "FLG_KWA", "PPL_EWE");
+
+      const result = checkPeopleFolderMatchesFamily(tmpDir);
+
+      expect(result.ok).toBe(false);
+      expect(result.errors[0]).toContain("PPL_EWE");
     });
   });
 

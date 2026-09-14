@@ -14,22 +14,28 @@ compte maintenant : le catalogue entier n'aide personne à décider.
 
 ## La chaîne
 
-| Étape                | Skill                             | Ce qu'elle laisse                                         | État atteint                |
-| -------------------- | --------------------------------- | --------------------------------------------------------- | --------------------------- |
-| Mesurer              | `/ethniafrica-audience-audit`     | `docs/audience/audit-AAAA-MM-JJ.md` (site et réseaux)     | —                           |
-| Décider quoi publier | `/ethniafrica-content-strategist` | un plan dans la conversation                              | —                           |
-| Trouver le sujet     | `/ethniafrica-idee`               | `_idees/{slug}.md` dans l'atelier                         | ⚪️ Brouillon                |
-| Écrire               | `/ethniafrica-structure`          | `cards.json`, `narration.fr.txt`, `SOURCES.md`, `post.md` | 🟡 En traitement            |
-| Vérifier le message  | `/ethniafrica-message`            | `message.md`                                              | —                           |
-| Rendre               | `/ethniafrica-produire`           | une épreuve, ou le bon à publier                          | 🟡 ou 🟢 Validé, en attente |
-| Publier              | l'opérateur, à la main            | la section Diffusion du `post.md`                         | ✅ Publié                   |
+| Étape                | Skill                             | Ce qu'elle laisse                                           | État atteint                |
+| -------------------- | --------------------------------- | ----------------------------------------------------------- | --------------------------- |
+| Mesurer              | `/ethniafrica-audience-audit`     | `docs/audience/audit-AAAA-MM-JJ.md` (site et réseaux)       | —                           |
+| Décider quoi publier | `/ethniafrica-content-strategist` | un plan dans la conversation                                | —                           |
+| Trouver le sujet     | `/ethniafrica-idee`               | `_idees/{slug}.md` dans l'atelier                           | ⚪️ Brouillon                |
+| Écrire               | `/ethniafrica-structure`          | le texte dans l'atelier ; le post inscrit dans `Brouillon/` | 🟡 En traitement            |
+| Vérifier le message  | `/ethniafrica-message`            | `message.md`                                                | —                           |
+| Rendre               | `/ethniafrica-produire`           | une épreuve ou le bon à publier, dans le dossier du post    | 🟡 ou 🟢 Validé, en attente |
+| Publier              | l'opérateur, à la main            | la section Diffusion du `post.md`                           | ✅ Publié                   |
 
 `produire` lance `message` avant de rendre. Les deux premières étapes sont
 facultatives ; un plan écrit sans la mesure est un plan écrit au goût.
 
 **Les quatre états sont ceux de `social/tools/etat-pipeline/etat.mjs`, et il n'y
-en a pas de cinquième.** « En atelier » est 🟡 En traitement : le texte est dans
-l'atelier, le rendu n'est pas bon à publier.
+en a pas de cinquième.** « En atelier » est 🟡 En traitement : le post est inscrit
+dans `Brouillon/`, le rendu n'est pas bon à publier.
+
+**Un dossier d'atelier sans post dans la bibliothèque n'est compté nulle part.**
+`build-etat.mjs` ne lit que les `post.md` de la bibliothèque. Quand
+`bilan-sujets.mjs <sujet>` montre un dossier d'atelier et aucun post, le sujet a
+sauté l'inscription de fin de `structure` : c'est ce geste-là qu'il faut
+recommander, pas `produire`.
 
 ## Ce que tu lis — jamais ce dont tu te souviens
 

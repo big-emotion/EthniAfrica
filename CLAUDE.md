@@ -140,18 +140,13 @@ the engine to a layout this repository is not allowed to describe.
   unconfigured library as one with zero subjects.
 
 **A render is not aimed by either of them.** Each `cards.json` carries its own
-`outDir`, and which status bucket a post sits in is derived from the post's own
-header by the library's filing tool — never chosen by the engine, and never by
-moving a folder in the Finder. `social/tools/etat-pipeline/publier.mjs` is that
-tool for a subject's first filing (simulated by default, `--write` to act): it
-never touches the older `publications.json` ledger, and it writes a minimal
-`post.md` pointer under `Publie/<date>/<Categorie>/<slug>/` — title, state,
-`Sujet`/`Pilier`/`Montages` — while the full working files stay in the
-workshop. Decided 2026-09-14, after `zokou-gbeuly` found no tool did this at
-all (`migrate-library.mjs` only reconciles a post already listed in
-`publications.json`) and two shapes of a "filed" post already coexisted: a
-full copy carrying its own `video/`/`images/`/`SUJET.md`, and a lighter
-post.md-only pointer. The lighter one is now the only one a new filing writes.
+`outDir`, which `produire` rewrites before every render from
+`social/tools/library/register-post.mjs --where` — the folder of a post the
+library ledger knows. Which status bucket that folder sits in is derived from the
+post's `status` in that ledger, which `structure` and `produire` write through
+the same tool, and the library's filing tool moves the folder to match — never
+chosen by the engine, and never by moving a folder in the Finder. A subject left
+unregistered stays in the workshop, where the pipeline state does not look.
 
 **Any other destination inside a git checkout is refused** (`ethni_paths.py`,
 `assert_writable`). Not hypothetical: 1,2 Go of masters were once rendered into a
