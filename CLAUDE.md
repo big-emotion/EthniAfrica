@@ -340,6 +340,15 @@ _and_ its provenance, not to suppress the claim.
 The gate is therefore not "reject weak sources" but **"every source carries an explicit tier"**. A
 `sources` entry with no tier is a blocking error.
 
+**A source's standing never fails a gate** (DEC-055, REQ-169). A name record, a relation, a colonial
+border, a colonial event or a migration resting only on `unverified` sources passes
+`validateAfrikData.ts` with a warning naming the record and its standing (`FR57-source`, `REL-5`,
+`CR1`, `CR4`, `FR80`); so do a Wikipedia URL cited directly, a contested migration without
+`datingNote` or `debate`, and a non-official source without notes. What still fails is not a
+judgement of authority: a source with no tier or an invalid one, a record citing no source at all,
+an invalid ISO 639-3 or ISO 3166-1 code, a country without admin-0 geometry, a `contested` or
+`colonial-legacy` record with fewer than two sources, and a reader-facing register violation.
+
 One three-value scale is used everywhere — code identifier, DB value, API payload and user-facing
 label all say the same thing:
 
@@ -363,8 +372,8 @@ claim was deleted. It also settles the aggregator question (Joshua Project, 101l
 peoplegroups): they are cited, at `unverified`.
 
 Wikipedia is not a source. A primary source _discovered through_ Wikipedia is cited at its own tier,
-by its own URL, and its `notes` field records which Wikipedia language versions were crossed so the
-chain stays auditable.
+by its own URL, and its `notes` field may record which Wikipedia language versions were crossed. No
+gate requires that path, and a Wikipedia URL cited directly is reported, not refused.
 
 #### `needs_review` is a transitional marker, not a tier
 
@@ -432,7 +441,7 @@ A fiche sourced only at `unverified` is published and visibly marked low-confide
 
 ### Demographics
 
-2025 reference year. Per-country `percentageInCountry` must sum to 100%. The validator has a hard band [95, 105] (FR28) and a strict target band [99, 101] (FR28-strict). Both were advisory while ~30 countries' splits were re-sourced; that burn-down is finished — measured at zero offenders — so **both now fail the build**, and a fiche can no longer drift back out. Which checks remain advisory is one exported constant, `SOFT_CHECK_NAMES` in `scripts/validateAfrikData.ts`; only `FR52-coverage` is still in it.
+2025 reference year. Per-country `percentageInCountry` is meant to sum to 100%. The validator reports a wide band [95, 105] (FR28), the target band [99, 101] (FR28-strict) and a country declaring no split at all (FR28-declared) — **as warnings naming the country and the sum, never as failures** (DEC-055, REQ-170). The bands failed the build for a while after the ~30-country re-sourcing reached zero offenders; that lock was lifted because a partial figure that says it is partial serves a reader better than no figure. The reader is told instead: `PeoplesSection` labels the breakdown « Répartition estimée ou incomplète » whenever its declared shares do not round to 100 %. Which checks are advisory as a whole is one exported constant, `SOFT_CHECK_NAMES` in `scripts/validateAfrikData.ts`; only `FR52-coverage` is in it — the FR28 checks emit warnings themselves.
 
 ### Colonial terminology
 

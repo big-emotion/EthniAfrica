@@ -161,10 +161,10 @@ export function declaredShare(rows: PeopleRow[]): number {
 }
 
 /**
- * FR28: per-country shares are meant to sum to 100, and the validator now
- * fails the build outside [99, 101]. A fiche can still be read while its
- * splits are being re-sourced, so where the total falls short the page
- * says so rather than letting the bar imply full coverage.
+ * FR28 / REQ-170: per-country shares are meant to sum to 100, but DEC-055
+ * publishes a breakdown that does not, so the page labels it estimated or
+ * incomplete rather than letting the bar imply an exact split. The share
+ * sentence describes a shortfall only — above 100 there is no remainder.
  */
 function CoverageNote({
   rows,
@@ -174,15 +174,21 @@ function CoverageNote({
   language: Language;
 }) {
   const declared = declaredShare(rows);
-  if (declared >= 99) return null;
+  if (declared === 100) return null;
 
+  const copy = countryCopy[language].peoples;
   return (
     <p
       data-demo-coverage-note=""
       className="mt-[6px] text-afh-eyebrow"
       style={{ color: "var(--country-text-soft)" }}
     >
-      {countryCopy[language].peoples.coverage(declared)}
+      <span data-demo-estimated="" className="block font-bold">
+        {copy.estimatedBreakdown}
+      </span>
+      {declared < 100 ? (
+        <span className="block">{copy.coverage(declared)}</span>
+      ) : null}
     </p>
   );
 }

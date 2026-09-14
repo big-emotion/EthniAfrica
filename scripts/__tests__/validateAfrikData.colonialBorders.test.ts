@@ -137,8 +137,8 @@ describe("validateAfrikData – colonial-border checks (CR1-CR2)", () => {
       expect(result.errors).toHaveLength(0);
     });
 
-    // @req REQ-092
-    it("returns ok:false when sources[] is empty (missing Tier 1/2 source)", () => {
+    // @req REQ-169
+    it("returns ok:false when sources[] is empty (no source to label)", () => {
       writeLayer(tmpDir, "FRONTIERE_NOSOURCE", { sources: [] });
 
       const result = checkColonialBorderCr1(tmpDir);
@@ -149,51 +149,80 @@ describe("validateAfrikData – colonial-border checks (CR1-CR2)", () => {
       );
     });
 
-    // @req REQ-092
-    it("returns ok:false when a source carries a forbidden tier (3)", () => {
+    // A retired numeric tier is not a standing a reader can be shown.
+    // @req REQ-169
+    it("returns ok:false when a source carries an invalid tier (3)", () => {
       writeLayer(tmpDir, "FRONTIERE_TIER3", {
         sources: [{ reference: "Some blog post", tier: 3, notes: "" }],
       });
 
       const result = checkColonialBorderCr1(tmpDir);
       expect(result.ok).toBe(false);
-      expect(result.errors.some((e) => e.includes("CR1"))).toBe(true);
+      expect(
+        result.errors.some(
+          (e) => e.includes("CR1") && e.includes("FRONTIERE_TIER3")
+        )
+      ).toBe(true);
+      expect(result.errors.join("\n")).not.toMatch(/Tier [123]|forbidden/i);
     });
 
-    // @req REQ-092
-    it("returns ok:false when a source cites a Wikipedia URL directly", () => {
+    // @req REQ-169
+    it("warns, without failing, when a source cites a Wikipedia URL directly", () => {
       writeLayer(tmpDir, "FRONTIERE_WIKI", {
         sources: [
           {
             reference: "https://en.wikipedia.org/wiki/Togoland",
-            tier: 2,
-            notes: "Vérifié via Wikipedia EN + FR",
+            tier: "unverified",
+            notes: "",
           },
         ],
       });
 
       const result = checkColonialBorderCr1(tmpDir);
-      expect(result.ok).toBe(false);
+      expect(result.ok).toBe(true);
+      expect(result.errors).toEqual([]);
       expect(
-        result.errors.some((e) => e.includes("CR1") && /wikipedia/i.test(e))
+        result.warnings.some((w) => w.includes("CR1") && /wikipedia/i.test(w))
       ).toBe(true);
+      expect(result.warnings.join("\n")).not.toMatch(/Tier [123]|forbidden/i);
     });
 
-    // @req REQ-092
-    it("returns ok:false when a tier:2 source has no Wikipedia cross-check path in notes", () => {
-      writeLayer(tmpDir, "FRONTIERE_TIER2_NONOTES", {
+    // @req REQ-169
+    it("asks a referenced source for no Wikipedia cross-check path in notes", () => {
+      writeLayer(tmpDir, "FRONTIERE_REFERENCED_NONOTES", {
         sources: [
           {
             reference: "Sebald, Peter (1988). Togo 1884-1914.",
-            tier: 2,
+            tier: "referenced",
             notes: "Just an academic book, no cross-check trail",
           },
         ],
       });
 
       const result = checkColonialBorderCr1(tmpDir);
-      expect(result.ok).toBe(false);
-      expect(result.errors.some((e) => e.includes("CR1"))).toBe(true);
+      expect(result.ok).toBe(true);
+      expect(result.errors).toEqual([]);
+      expect(result.warnings).toEqual([]);
+    });
+
+    // @req REQ-169
+    it("passes a border with one unverified source, warning with the layer and its standing", () => {
+      writeLayer(tmpDir, "FRONTIERE_COMMUNITY", {
+        sources: [
+          {
+            reference: "Témoignage recueilli localement",
+            tier: "unverified",
+            notes: "",
+          },
+        ],
+      });
+
+      const result = checkColonialBorderCr1(tmpDir);
+      expect(result.ok).toBe(true);
+      expect(result.errors).toEqual([]);
+      expect(result.warnings).toHaveLength(1);
+      expect(result.warnings[0]).toContain("FRONTIERE_COMMUNITY");
+      expect(result.warnings[0]).toContain("unverified");
     });
 
     // @req REQ-092
