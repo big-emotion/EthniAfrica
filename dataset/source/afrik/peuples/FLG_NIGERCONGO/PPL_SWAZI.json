@@ -125,6 +125,18 @@
         "title": "Kuper, Hilda. The Swazi: A South African Kingdom. Holt, Rinehart & Winston, 1963",
         "url": null,
         "tier": "referenced"
+      },
+      {
+        "title": "Statistics South Africa — Census 2022 Statistical Release",
+        "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
+        "tier": "official",
+        "notes": "Publication P0301.4, tableau 2.8 : le siSwati est la langue la plus parlée dans le ménage pour 2,8 % de la population sud-africaine en 2022."
+      },
+      {
+        "title": "UNFPA Eswatini — Swaziland Releases Population Count from 2017 Census",
+        "url": "https://eswatini.unfpa.org/en/news/swaziland-releases-population-count-2017-census",
+        "tier": "official",
+        "notes": "Résultats préliminaires du recensement de 2017 : 1 093 238 habitants."
       }
     ]
   },

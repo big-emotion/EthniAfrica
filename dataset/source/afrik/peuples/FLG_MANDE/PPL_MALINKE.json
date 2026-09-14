@@ -183,6 +183,12 @@
         "title": "SIL Ethnologue — Mandingo macrolanguage (man)",
         "url": "https://www.ethnologue.com/language/man/",
         "tier": "official"
+      },
+      {
+        "title": "Northwestern University Library — Caravans of Gold, Fragments in Time : Mansa Musa's Hajj to Mecca",
+        "url": "https://caravans.library.northwestern.edu/tour/mansa-musas-hajj-to-mecca",
+        "tier": "referenced",
+        "notes": "Étape du parcours en ligne Caravans of Gold, Fragments in Time ; elle date de 1324 le départ de Mansa Musa pour le pèlerinage à La Mecque."
       }
     ]
   },

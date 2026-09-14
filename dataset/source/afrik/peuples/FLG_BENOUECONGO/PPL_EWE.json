@@ -120,6 +120,12 @@
         "title": "WALS Online — Language Ewe (ISO 639-3 : ewe)",
         "url": "https://wals.info/languoid/lect/wals_code_ewe",
         "tier": "official"
+      },
+      {
+        "title": "The Metropolitan Museum of Art — Man's kente (prestige cloth)",
+        "url": "https://www.metmuseum.org/art/collection/search/320677",
+        "tier": "referenced",
+        "notes": "Notice de collection, objet 2010.555 : culture « Ewe peoples », Ghana, vers 1930-1950, textile tissé en coton et soie."
       }
     ]
   },
