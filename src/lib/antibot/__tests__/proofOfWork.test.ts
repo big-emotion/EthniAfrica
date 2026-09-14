@@ -144,6 +144,31 @@ describe("proof of work", () => {
   });
 
   // @req REQ-012
+  it("expires a challenge after the configured lifetime", async () => {
+    vi.stubEnv("ANTIBOT_TTL_MS", "1000");
+    const before = Date.now();
+
+    const challenge = await issueChallenge({ difficultyBits: EASY });
+
+    expect(challenge.expiresAt).toBeGreaterThanOrEqual(before + 1000);
+    expect(challenge.expiresAt).toBeLessThanOrEqual(Date.now() + 1000);
+  });
+
+  // @req REQ-012
+  it.each([[""], ["not-a-number"], ["0"], ["-5"]])(
+    "keeps the five-minute lifetime when the configured one is %j",
+    async (configured) => {
+      vi.stubEnv("ANTIBOT_TTL_MS", configured);
+      const before = Date.now();
+
+      const challenge = await issueChallenge({ difficultyBits: EASY });
+
+      expect(challenge.expiresAt).toBeGreaterThanOrEqual(before + 300_000);
+      expect(challenge.expiresAt).toBeLessThanOrEqual(Date.now() + 300_000);
+    }
+  );
+
+  // @req REQ-012
   it("counts difficulty in leading zero bits, not bytes", () => {
     // 0x0f = 0000 1111 — four leading zero bits, and no more.
     const fourZeroBits = new Uint8Array([0x0f, 0xff]);

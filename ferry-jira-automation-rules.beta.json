@@ -89,7 +89,7 @@
           "toStatus": [
             {
               "type": "NAME",
-              "value": "In Development"
+              "value": "READY FOR DEV"
             }
           ],
           "eventKey": "jira:issue_updated",

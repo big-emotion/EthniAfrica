@@ -9,28 +9,18 @@
 
 import type {
   CountryId,
+  LanguageFamilyContent,
   LanguageFamilyId,
+  PeopleContent,
   PeopleId,
   ClassificationStatus,
   FicheSource,
-  // Content sections
-  AppellationsSection,
-  OriginsSection,
-  OrganizationSection,
-  LanguagesSection,
-  HistoricalAffiliationSection,
-  DetailedCultureSection,
-  HistoricalRoleSection,
-  GlobalDemographySection,
   HistoricalNamesSection,
   Kingdom,
   MajorPeopleEntry,
   CultureSection,
   HistoricalFactsSection,
   DemographicsSection,
-  DecolonialHeader,
-  PeopleReference,
-  ExternalIdentifiersSection,
 } from "./afrik";
 import type { PersonPeopleLink } from "./persons";
 
@@ -41,7 +31,16 @@ import type { PersonPeopleLink } from "./persons";
 /**
  * Version complète pour la page de détail d'une famille linguistique
  */
-export interface LanguageFamilyDetail {
+export interface LanguageFamilyDetail extends Pick<
+  LanguageFamilyContent,
+  | "decolonialHeader"
+  | "generalInfo"
+  | "associatedPeoples"
+  | "linguisticCharacteristics"
+  | "historyAndOrigins"
+  | "distribution"
+  | "sources"
+> {
   id: LanguageFamilyId;
   nameFr: string;
   nameEn?: string;
@@ -50,47 +49,6 @@ export interface LanguageFamilyDetail {
 
   // Editorial classification status (migration 009)
   classificationStatus?: ClassificationStatus | null;
-
-  // Section: En-tête décolonial
-  decolonialHeader?: DecolonialHeader;
-
-  // Section 1: Informations générales
-  generalInfo?: {
-    branches?: string[];
-    geographicArea?: string;
-    numberOfLanguages?: number;
-    totalSpeakers?: number;
-  };
-
-  // Section 2: Peuples associés
-  associatedPeoples?: PeopleReference[];
-
-  // Section 3: Caractéristiques linguistiques
-  linguisticCharacteristics?: {
-    typology?: string;
-    phonologicalFeatures?: string;
-    relationsWithNeighbors?: string;
-    keyInnovations?: string;
-  };
-
-  // Section 4: Histoire et origines
-  historyAndOrigins?: {
-    probableOrigin?: string;
-    emergencePeriod?: string;
-    diffusion?: string;
-    historicalBreaks?: string;
-    contactZones?: string;
-    majorEvents?: string;
-  };
-
-  // Section 5: Distribution géographique
-  distribution?: {
-    totalSpeakers?: number;
-    distributionByCountry?: Record<CountryId, number>;
-  };
-
-  // Section 6: Sources
-  sources?: FicheSource[];
 }
 
 // ==========================================
@@ -101,7 +59,20 @@ export interface LanguageFamilyDetail {
  * Version complète pour la page de détail d'un peuple
  * Inclut les 8 sections AFRIK
  */
-export interface PeopleDetail {
+export interface PeopleDetail extends Pick<
+  PeopleContent,
+  | "appellations"
+  | "ethnicities"
+  | "origins"
+  | "organization"
+  | "languages"
+  | "externalIdentifiers"
+  | "historicalAffiliation"
+  | "culture"
+  | "historicalRole"
+  | "demography"
+  | "sources"
+> {
   id: PeopleId;
   nameMain: string;
   languageFamilyId: LanguageFamilyId;
@@ -112,41 +83,6 @@ export interface PeopleDetail {
 
   // Editorial classification status (migration 009)
   classificationStatus?: ClassificationStatus | null;
-
-  // Section 1: Appellations
-  appellations?: AppellationsSection;
-
-  // Section 2: Ethnies incluses
-  ethnicities?: string[];
-
-  // Section 3: Origines, migrations, formation
-  origins?: OriginsSection;
-
-  // Section 4: Organisation et structure interne
-  organization?: OrganizationSection;
-
-  // Section 5: Langues et sous-familles
-  languages?: LanguagesSection;
-
-  // Identifiants de registre externes (DEC-033) — jamais une URL stockée.
-  externalIdentifiers?: ExternalIdentifiersSection;
-
-  // Filiation historique — REQ-127. Distinct de languageFamilyId ; présent
-  // seulement pour les peuples sans filiation linguistique défendable vers
-  // une famille africaine (ex. créolophones). Voir DIRECTIVES-AFRIK.md §12.
-  historicalAffiliation?: HistoricalAffiliationSection;
-
-  // Section 6: Culture, rites, traditions (A-F)
-  culture?: DetailedCultureSection;
-
-  // Section 7: Rôle historique et interactions régionales
-  historicalRole?: HistoricalRoleSection;
-
-  // Section 8: Démographie globale
-  demography?: GlobalDemographySection;
-
-  // Sources
-  sources?: FicheSource[];
 }
 
 // ==========================================

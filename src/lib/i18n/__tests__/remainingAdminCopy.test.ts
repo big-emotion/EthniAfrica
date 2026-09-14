@@ -15,6 +15,15 @@ describe("remaining bilingual administration copy", () => {
     expect(adminCopy.fr.apiKeys.createTitle).toBe("Créer une clé");
   });
 
+  // @req REQ-145
+  it("provides English and French copy for the source review queue", () => {
+    expect(adminCopy.en.sourceReview.title).toBe("Sources awaiting review");
+    expect(adminCopy.fr.sourceReview.title).toBe("Sources en attente d'examen");
+    expect(Object.keys(adminCopy.fr.sourceReview).sort()).toEqual(
+      Object.keys(adminCopy.en.sourceReview).sort()
+    );
+  });
+
   // @req REQ-140
   // @req REQ-145
   it("provides English and French copy for public report outcomes", () => {

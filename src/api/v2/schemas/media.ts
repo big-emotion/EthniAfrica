@@ -24,9 +24,6 @@ export const mediaSchema = z
   .strict();
 
 // @req REQ-128
-export type MediaInput = z.infer<typeof mediaSchema>;
-
-// @req REQ-128
 export const listMediaQuerySchema = z.object({
   entityType: mediaEntityTypeSchema,
   entityId: z.string().min(1),

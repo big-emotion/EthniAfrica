@@ -1,4 +1,12 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+import {
+  describe,
+  it,
+  expect,
+  vi,
+  beforeEach,
+  afterEach,
+  onTestFinished,
+} from "vitest";
 import {
   render,
   screen,
@@ -318,12 +326,27 @@ describe("HomeHeroSearch", () => {
     );
   });
 
+  /**
+   * The answer is settled inside `act`, on fake timers. The render that
+   * delivers the options also resets the highlight in an effect; waiting for
+   * the listbox with `findByRole` could return while that effect was still
+   * pending, and it then ran after the first ArrowDown and wiped it — 1 run in
+   * 24 under parallel load. Flushing the debounce, the fetch and the effects
+   * inside `act` removes the race without loosening any assertion.
+   */
   // @req REQ-002
   it("moves the active descendant with the arrow keys", async () => {
+    vi.useFakeTimers();
+    onTestFinished(() => {
+      vi.useRealTimers();
+    });
     renderSearch();
 
-    await type("yoruba");
-    await screen.findByRole("listbox");
+    await act(async () => {
+      await type("yoruba");
+      await vi.advanceTimersByTimeAsync(DEBOUNCE_MS);
+    });
+    screen.getByRole("listbox");
 
     const input = field();
     expect(input).toHaveAttribute("aria-expanded", "true");

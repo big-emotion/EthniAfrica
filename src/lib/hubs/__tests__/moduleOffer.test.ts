@@ -1,7 +1,7 @@
 /**
  * The invitation, not the existence (atlas-charter.md §3).
  *
- * `isModuleAvailable` is async because half the question is a row count, and
+ * `getHubModules` is async because half the question is a row count, and
  * that async-ness is why the header — a client component under a client
  * `PageLayout` — never asked it, and linked two modules the home and the hub
  * were both marking **Bientôt**. These are the contracts of the synchronous
@@ -31,7 +31,7 @@ describe("isModuleOffered — one answer, whatever the surface holds", () => {
   /**
    * Readiness is declared, so it outranks anything measured: a probe that
    * found rows cannot promote a module its editor has said is not worth the
-   * trip. This is the ordering `isModuleAvailable` already applies server
+   * trip. This is the ordering `getHubModules` already applies server
    * side, and stating it here is what keeps the two from parting.
    */
   // @req REQ-106

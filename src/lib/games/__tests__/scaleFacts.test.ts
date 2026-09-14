@@ -3,9 +3,9 @@ import { describe, expect, it } from "vitest";
 import { AFRICA_ADMIN0 } from "@/lib/atlas/assets/africaAdmin0";
 import { mercatorInflation } from "@/lib/games/sphericalArea";
 import { WORLD_COMPARE } from "@/lib/atlas/assets/worldCompare";
-import { LANDMARKS } from "@/lib/games/landmarks";
+import { LANDMARKS, LANDMARK_PROVENANCE_PATH } from "@/lib/games/landmarks";
+import { MERCATOR_PROVENANCE_PATH } from "@/lib/games/rounds/mercatorRound";
 import {
-  SCALE_FACT_PROVENANCE_PATHS,
   buildScaleFacts,
   buildTrueSizeClaim,
   measureScaleFigures,
@@ -43,7 +43,9 @@ describe("buildScaleFacts", () => {
   // @req REQ-120
   it("names a provenance the reveal can word in French", () => {
     for (const fact of facts) {
-      expect(SCALE_FACT_PROVENANCE_PATHS).toContain(fact.fieldPath);
+      expect([MERCATOR_PROVENANCE_PATH, LANDMARK_PROVENANCE_PATH]).toContain(
+        fact.fieldPath
+      );
       expect(revealProvenanceFr(fact.fieldPath)).toBeTruthy();
     }
   });

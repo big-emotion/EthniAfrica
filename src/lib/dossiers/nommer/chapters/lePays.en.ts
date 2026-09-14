@@ -16,7 +16,7 @@ export const CHAPITRE_LE_PAYS_EN: DossierChapterTranslation = {
   provenance: "machine",
   title: "The country",
   question:
-    "The borders come from Berlin. And the names laid over them — where do they come from?",
+    "The borders were drawn by others, at different times. And the names laid over them — where do they come from?",
   standfirst:
     "Fewer than a third of the continent's countries bear a name that Africans chose. Renaming was not a moment: it is a practice that runs across sixty years.",
   measure: {

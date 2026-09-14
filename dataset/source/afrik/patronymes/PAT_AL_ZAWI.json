@@ -97,7 +97,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Les sources consultées attestent la graphie « Al-Zawi » sans établir assez précisément le système dénominatif ; la valeur nisba héritée de la vague 1 n’est donc pas étendue par inférence."
+      "reason": "Les sources consultées attestent la graphie « Al-Zawi » sans établir assez précisément le système dénominatif ; le classement comme nisba reste donc provisoire."
     },
     {
       "fieldPath": "transmissionMode",
@@ -111,5 +111,10 @@
       "fieldPath": "countries",
       "reason": "La source propre au nom ne confirme pas le ou les pays LBY hérités de la file d’attente. Les recherches exactes « Al-Zawi surname » avec ces pays n’ont pas livré de registre officiel exploitable ; l’association reste non vérifiée."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
+    }
+  }
 }

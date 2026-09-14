@@ -80,25 +80,3 @@ export async function loadAllPeoples(): Promise<People[]> {
     return [];
   }
 }
-
-// @req REQ-033
-export async function loadPeoplesByLanguageFamily(
-  familyId: string
-): Promise<People[]> {
-  try {
-    const familyPath = join(PEOPLES_PATH, familyId);
-    const files = readdirSync(familyPath).filter(
-      (f) => f.endsWith(".json") && f.startsWith("PPL_")
-    );
-    const peoples: People[] = [];
-    for (const file of files) {
-      const peopleId = file.replace(".json", "");
-      const result = await loadPeople(peopleId);
-      if (result.success && result.data) peoples.push(result.data);
-    }
-    return peoples;
-  } catch (error) {
-    logger.error(`Failed to load peoples for family ${familyId}`, error);
-    return [];
-  }
-}

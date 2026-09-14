@@ -48,16 +48,6 @@ export interface FlagSummary {
   totalCount: number;
 }
 
-export interface Revision {
-  id: string;
-  entityId: string;
-  fieldPath: string | null;
-  newValue: unknown;
-  changedBy: string | null;
-  changeReason: string | null;
-  createdAt: string;
-}
-
 const CLOSED_FLAG_STATUSES = new Set(["resolved", "dismissed"]);
 
 const CHUNK_SIZE = 500;
@@ -258,60 +248,6 @@ export async function getFlagsSummaryMap(
         existing.openCount += 1;
       }
       map.set(row.entity_id, existing);
-    }
-  }
-  return map;
-}
-
-/**
- * Latest revision per peopleId.
- *
- * Single query (per chunk): `revisions` filtered by `entity_id IN (...)`,
- * ordered by `created_at DESC`. First row seen per entity wins.
- */
-// @req REQ-009
-export async function getLatestRevisionMap(
-  peopleIds: string[]
-): Promise<Map<string, Revision>> {
-  if (peopleIds.length === 0) return new Map();
-
-  const supabase = createServerClient();
-  const idChunks = chunk(peopleIds, CHUNK_SIZE);
-
-  const map = new Map<string, Revision>();
-  for (const ids of idChunks) {
-    const { data, error } = await supabase
-      .from("revisions")
-      .select(
-        "id, entity_id, field_path, new_value, changed_by, change_reason, created_at"
-      )
-      .order("created_at", { ascending: false })
-      .in("entity_id", ids);
-
-    if (error) {
-      logger.error("module-zero-batch.getLatestRevisionMap failed", error);
-      return new Map();
-    }
-
-    for (const row of (data || []) as Array<{
-      id: string;
-      entity_id: string;
-      field_path: string | null;
-      new_value: unknown;
-      changed_by: string | null;
-      change_reason: string | null;
-      created_at: string;
-    }>) {
-      if (map.has(row.entity_id)) continue;
-      map.set(row.entity_id, {
-        id: row.id,
-        entityId: row.entity_id,
-        fieldPath: row.field_path,
-        newValue: row.new_value,
-        changedBy: row.changed_by,
-        changeReason: row.change_reason,
-        createdAt: row.created_at,
-      });
     }
   }
   return map;

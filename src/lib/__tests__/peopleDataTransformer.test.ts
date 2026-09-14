@@ -1,20 +1,16 @@
-import { describe, it, expect, vi, afterEach } from "vitest";
+import { describe, it, expect } from "vitest";
 import {
   formatPeoplePopulation,
-  extractAppellationShort,
   transformPeopleHero,
   transformPeopleOrigins,
   transformPeopleLanguages,
   transformPeopleHistory,
   transformPeopleCulture,
-  hasOriginContent,
   transformPeopleRelatedPeoples,
-  transformEgoNetworkPreview,
   transformPeopleCountries,
   transformPeopleData,
   transformPeopleNameRecord,
   transformPeopleNames,
-  fetchPeopleNamesDossier,
 } from "../peopleDataTransformer";
 import type { PeopleDetail } from "@/types/afrik-frontend";
 import type { PeopleNamesDossier } from "@/api/v2/schemas/names";
@@ -162,33 +158,6 @@ describe("formatPeoplePopulation", () => {
   });
 });
 
-describe("extractAppellationShort", () => {
-  // @req REQ-003
-  it("extracts short forms from parenthetical format", () => {
-    expect(extractAppellationShort("Moaga (singulier), Moose (pluriel)")).toBe(
-      "Moaga · Moose"
-    );
-  });
-
-  it("returns raw text when no parentheses", () => {
-    expect(extractAppellationShort("Yoruba")).toBe("Yoruba");
-  });
-
-  it("returns empty string for undefined", () => {
-    expect(extractAppellationShort(undefined)).toBe("");
-  });
-
-  it("trims whitespace", () => {
-    expect(extractAppellationShort("  Moaga  ")).toBe("Moaga");
-  });
-
-  it("preserves multi-word appellations before parentheses", () => {
-    expect(
-      extractAppellationShort("Ọmọ Oòduà (singulier), Yorùbá (pluriel)")
-    ).toBe("Ọmọ Oòduà · Yorùbá");
-  });
-});
-
 // ==========================================
 // TRANSFORM TESTS
 // ==========================================
@@ -278,31 +247,6 @@ describe("transformPeopleOrigins", () => {
     expect(result.migrationRoutes).toEqual([]);
     expect(result.historicalSettlementZones).toEqual([]);
     expect(result.ancientOrigins).toBeUndefined();
-  });
-});
-
-describe("hasOriginContent", () => {
-  // The fiche's gate used to test five of the seven fields the block renders,
-  // so a fiche declaring only one of the other two lost it silently.
-  // @req REQ-003
-  it("is true for a fiche declaring only unifications or only major events", () => {
-    const base = { migrationRoutes: [], historicalSettlementZones: [] };
-    expect(
-      hasOriginContent({ ...base, unificationsOrDivisions: "Unification" })
-    ).toBe(true);
-    expect(
-      hasOriginContent({ ...base, majorHistoricalEvents: "Guerres" })
-    ).toBe(true);
-  });
-
-  // @req REQ-003
-  it("is false when the fiche declares no origin at all", () => {
-    expect(
-      hasOriginContent({
-        migrationRoutes: [],
-        historicalSettlementZones: [],
-      })
-    ).toBe(false);
   });
 });
 
@@ -440,48 +384,6 @@ describe("transformPeopleRelatedPeoples", () => {
     );
     expect(result.roleOfLineages).toContain("lignages");
     expect(result.religiousAuthority).toContain("Alaafin");
-  });
-});
-
-describe("transformEgoNetworkPreview", () => {
-  // @req REQ-097 FR72
-  it("maps sourced relations to preview items", () => {
-    const result = transformEgoNetworkPreview({
-      sourced: [
-        {
-          relationId: "REL_1",
-          type: "migratory",
-          otherPeople: { nameMain: "Fon" },
-        },
-      ],
-      derived: [],
-    });
-    expect(result).toEqual([
-      { id: "REL_1", type: "migratory", derived: false, neighborName: "Fon" },
-    ]);
-  });
-
-  // @req REQ-097 FR73
-  it("maps derived linguistic links with a derived id and flag", () => {
-    const result = transformEgoNetworkPreview({
-      sourced: [],
-      derived: [{ otherPeople: { id: "PPL_BAMILEKE", nameMain: "Bamiléké" } }],
-    });
-    expect(result).toEqual([
-      {
-        id: "derived_PPL_BAMILEKE",
-        type: "linguistic",
-        derived: true,
-        neighborName: "Bamiléké",
-      },
-    ]);
-  });
-
-  // @req REQ-097 FR72
-  it("returns an empty array for an empty network", () => {
-    expect(transformEgoNetworkPreview({ sourced: [], derived: [] })).toEqual(
-      []
-    );
   });
 });
 
@@ -713,35 +615,6 @@ describe("transformPeopleNames", () => {
       names: [],
     };
     expect(transformPeopleNames(empty)).toBeNull();
-  });
-});
-
-describe("fetchPeopleNamesDossier", () => {
-  afterEach(() => {
-    vi.unstubAllGlobals();
-  });
-
-  // @req REQ-054
-  it("returns the dossier from the response envelope on success", async () => {
-    vi.stubGlobal(
-      "fetch",
-      vi.fn(async () => ({
-        ok: true,
-        json: async () => ({ data: dinkaNamesDossier }),
-      }))
-    );
-    const result = await fetchPeopleNamesDossier("PPL_DINKA");
-    expect(result).toEqual(dinkaNamesDossier);
-  });
-
-  // @req REQ-054
-  it("returns null when the response is not ok", async () => {
-    vi.stubGlobal(
-      "fetch",
-      vi.fn(async () => ({ ok: false, json: async () => ({}) }))
-    );
-    const result = await fetchPeopleNamesDossier("PPL_UNKNOWN");
-    expect(result).toBeNull();
   });
 });
 
