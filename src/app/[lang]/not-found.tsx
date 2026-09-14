@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { StateMedallion } from "@/components/ui/StateMedallion";
 import { trackEvent } from "@/lib/analytics/trackEvent";
+import { CONTACT_EMAIL } from "@/lib/brand";
 import type { Language } from "@/types/shared";
 import { getLocalizedRoute } from "@/lib/routing";
 import { useRouteLanguage } from "@/hooks/use-language";
@@ -58,7 +59,7 @@ export default function NotFound() {
 
           {/* TODO: replace mailto with contribution form once available (ETNI-247) */}
           <a
-            href={`mailto:contact@ethniafrica.org?subject=${encodeURIComponent(copy.reportSubject)}`}
+            href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(copy.reportSubject)}`}
             className="inline-flex items-center justify-center px-5 py-2.5 text-afh-small text-afh-text-soft underline underline-offset-2 hover:text-afh-text transition-colors"
           >
             {copy.report}
