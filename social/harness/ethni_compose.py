@@ -2293,11 +2293,24 @@ def portes(cartes, deck, identites=None):
                     f"carte {c['rang']} : `{champ}` porte « {valeur} », une note à "
                     f"l'opérateur dans un champ imprimé — tranche-la, elle ne "
                     f"s'imprime pas")
+            # §3 — a date reads as digits, never spelled out. Checked on every
+            # printed field, not only `corps`: the miss that motivated this
+            # gate shipped in `image.identite`, not in copy read aloud.
+            if tk.date_en_lettres(valeur or ""):
+                manquantes.append(
+                    f"carte {c['rang']} : `{champ}` porte « {valeur} », une date "
+                    f"en lettres — §3 les veut en chiffres (1891, 17e siècle), "
+                    f"jamais épelées")
         for champ in ("credit", "depot", "licence"):
             if tk.note_interne(im.get(champ, "")):
                 manquantes.append(
                     f"carte {c['rang']} : « {im[champ]} » est une note interne dans le crédit — "
                     f"nomme le document et sa licence, ou change d'image")
+        for champ in ("identite", "credit", "depot"):
+            if tk.date_en_lettres(im.get(champ, "")):
+                manquantes.append(
+                    f"carte {c['rang']} : `image.{champ}` porte « {im[champ]} », "
+                    f"une date en lettres — §3 les veut en chiffres")
 
         # §10 — a forced cut carries the *words*, not only the break positions:
         # the engine draws `coupe`'s lines in place of the title. A title rewritten

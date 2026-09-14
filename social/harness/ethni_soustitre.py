@@ -17,6 +17,17 @@ alignment, and the aligner is then only asked when each piece is spoken.
 import re
 import unicodedata
 
+# Must count words exactly like `hf-workflows/subtitles/scripts/audio_to_captions.py`'s
+# TOKEN_PATTERN, because `minuter()` below walks `mots_alignes` — an array built by
+# tokenizing the script with that exact pattern — using this count as its stride.
+# A plain `.split()` sees a bare em-dash as its own word; TOKEN_PATTERN, needing a
+# leading word character, does not. One script with two em-dashes was enough to
+# desync every caption after them by two words: measured on an 11-paragraph
+# narration, `aligned-words.json` held 274 entries against 285 from `.split()`,
+# and the gap compounded until the caption band ran a full sentence behind the
+# scene it was cut against.
+TOKEN_PATTERN = re.compile(r"[^\W_]+(?:[-'’][^\W_]+)*[.,!?;:]?", re.UNICODE)
+
 # Where French prose lets a caption break without tearing anything.
 #
 # Punctuation first, because a comma or a full stop is a breath the speaker
@@ -201,7 +212,7 @@ def minuter(captions, mots_alignes):
     minutees = []
     curseur = 0
     for caption in captions:
-        n = len(caption.split())
+        n = len(TOKEN_PATTERN.findall(caption))
         tranche = mots_alignes[curseur:curseur + n]
         if not tranche:
             break

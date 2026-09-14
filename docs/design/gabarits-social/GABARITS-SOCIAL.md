@@ -151,10 +151,40 @@ colonne grandit, et il ne dit rien que la gouttière ne dise déjà.
 ligne touchent les jambages de la précédente — « Brésilien » sur « angolais ». Anton
 n'a aucune réserve verticale ; c'est l'interligne qui la fournit.
 
+**L'interligne de ce tableau gouverne l'espacement entre les lignes d'un même
+bloc, jamais la hauteur qu'une seule ligne réserve.** Le corps d'une police
+(le nombre passé au moteur — 216, 96, 32…) n'est pas la hauteur visuelle
+d'une ligne : mesuré sur les deux polices du gabarit, une ligne réelle
+occupe **1,4 à 1,5×** son corps — Anton à 216 px mesure 255 + 72 = 327 px
+d'ascendant et de descendant, Nunito à 32 px mesure 33 + 12 = 45 px. Un
+rôle à interligne ≤ 1 sur une seule ligne — ici seulement « Chiffre / mot
+d'accent », 0,84, calibré pour l'écart *entre* deux lignes d'un mot
+d'accent, jamais pour la boîte d'une ligne seule — réservait donc une
+boîte plus petite que ses propres lettres. `ethni_compose._hauteur()`
+plancher désormais chaque bloc à 1,5× son corps ; ce n'est pas une valeur
+à recopier ailleurs, c'est une garantie de moteur, pas un choix de charte.
+Mesuré le 2026-09-14 sur `zokou-gbeuly` : un « 1835 » nu chevauchait sa
+légende avant, puis ne lui laissait que 5 px d'air après un premier
+correctif trop étroit — l'écart maintenant se compare à celui d'une
+production déjà publiée (« Sénoufo », pilier Mythe déconstruit).
+
 **Halo sur tout texte d'affichage posé sur une image :**
 `text-shadow: 0 2px 20px rgba(18,14,10,.85), 0 0 6px rgba(18,14,10,.6)`. Il ne compte
 pas dans la mesure de contraste — c'est le voile qui doit atteindre le seuil — mais il
 sauve le détail d'un glyphe qui tombe sur une zone claire du document.
+
+### Les dates s'écrivent en chiffres, jamais en lettres
+
+Décidé le 2026-09-14. Une date affichée à l'écran — année, siècle, décennie — porte
+toujours ses chiffres : `1891`, pas « mille huit cent quatre-vingt-onze » ; `XVIIe
+siècle` ou `17e siècle`, jamais « dix-septième siècle ». Vaut pour `titre`, `corps`,
+`precision`, `punchline`, et pour les sous-titres de la vidéo, qui reprennent le texte
+de `narration.fr.txt` : une date épelée dans le script s'affiche épelée au sous-titre.
+
+Ne s'applique pas à un compte qui n'est pas une date — « soixante-cinq peuples » reste
+en lettres, comme toute la doctrine des titres le veut déjà (§7 ter : « la Tanzanie,
+c'est quatre-vingt-seize peuples »). La distinction est celle-là : une date se lit sur
+une frise chronologique, un compte se dit à voix haute.
 
 ---
 
@@ -660,6 +690,7 @@ s'écrit ici d'abord, jamais dans une carte.
 | un système politique sans souverain unique — un peuple qui gouverne autrement qu'avec un roi ou un chef héréditaire — *validé par l'opérateur le 2026-09-14* | un registre de la banque ci-dessous | celui du registre | « Ce peuple n'a jamais eu de roi. » | « roi. » | « Le pouvoir s'y prête, il ne s'y transmet pas. » |
 | un nom partagé, repris par plusieurs peuples distincts | un registre de la banque ci-dessous | celui du registre | « Ce nom n'a pas été subi. » | « subi. » | « On se l'est approprié. » — *décidé par l'opérateur le 2026-09-14, pour le sujet `creole-ne-dans-la-colonie` — distinct de la ligne « une famille de langues » ci-dessus : celle-là porte un nom imposé qui écrase des peuples ayant déjà le leur, celle-ci un nom d'abord extérieur que plusieurs peuples, sans parenté entre eux, ont chacun fait leur propre nom* |
 | un personnage historique — une figure individuelle, jamais un peuple ou un pays — *validé par l'opérateur le 2026-09-14* | un registre de la banque ci-dessous | celui du registre | « Il n'a pas eu qu'une ligne dans l'Histoire. » | « Histoire. » | « C'est pourtant tout ce qu'on lui avait laissé. » — *décidé pour le sujet `zokou-gbeuly-resistance-bete` : le corpus AFRIK et les histoires générales ne portent ces figures qu'en clause noyée dans la fiche d'un peuple entier — la clôture porte cet effacement documentaire, pas un mécanisme colonial spécifique, ce qui la distingue de toutes les lignes ci-dessus* |
+| un peuple né d'un départ — une migration fondatrice, plus vieille que toute frontière actuelle — *décidé par l'opérateur le 2026-09-14, pour le sujet `baoule-ashanti`* | un registre de la banque ci-dessous | « départ. » | « Ce nom n'a pas attendu la frontière. » | « frontière. » | « Il est né d'un départ, un royaume plus tôt. » — *distinct de la ligne « un peuple réparti sur plusieurs pays » ci-dessus : celle-là porte un même peuple resté des deux côtés d'une frontière, celle-ci un peuple qui est parti et s'est distingué du sien avant qu'aucune frontière actuelle n'existe — le nouveau venu, comme l'abonné, doivent lire un départ, jamais une division* |
 | un peuple connu sous plusieurs noms extérieurs, dont aucun n'est le sien | un registre de la banque ci-dessous | celui du registre | « Ce peuple n'a jamais manqué de nom. » | « nom. » | « Ce sont ses voisins qui, chacun dans sa langue, lui en ont donné d'autres. » — *décidé par l'opérateur le 2026-09-14, pour le sujet `peul-fula-fulani` — distinct de la ligne « un nom partagé, repris par plusieurs peuples distincts » ci-dessus : celle-là porte un même nom que plusieurs peuples sans parenté se sont chacun approprié, celle-ci plusieurs noms différents que des voisins ont donnés, chacun dans sa langue, à un seul peuple qui n'en a demandé aucun* |
 
 **`cards.json` ne porte jamais `**`** : les titres s'y recopient en texte brut depuis
@@ -1069,6 +1100,18 @@ un point par bloc séparé par une ligne vide ; le moteur la lit et ne la devine
 Répartis à parts égales sur les légendes, les huit plans de Libreville affichaient la
 clôture à 44,10 s quand sa première phrase se dit à 50,88 s — six secondes de doctrine
 posées sur un récit qui n'avait pas fini.
+
+### Aucune image ne tient plus de quatre secondes
+
+**Une image change au moins toutes les quatre secondes.** Passé ce seuil, l'œil a
+fini de lire le cadre et attend la suite ; au-delà, la vidéo se voit à l'arrêt même
+quand la voix continue. La Côte d'Ivoire et le Mandé ont été renvoyés en production
+pour cette raison précise : trop peu de changements d'image sur toute la durée.
+
+Seul un **passage important** — un moment que le montage doit laisser respirer, décidé
+au cas par cas et non par défaut — peut dépasser les quatre secondes. Ce n'est pas une
+dérogation tacite : le motif se justifie au même titre qu'une exception à toute autre
+règle de ce gabarit, jamais par une image qu'on n'a pas eu le temps de découper.
 
 ---
 
