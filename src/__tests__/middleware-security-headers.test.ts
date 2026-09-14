@@ -201,12 +201,20 @@ describe("middleware security headers", () => {
     });
 
     // @req REQ-052
-    it("falls back to the production Supabase origin when the URL is unusable", async () => {
+    it("names no Supabase origin, production's included, when the URL is unusable", async () => {
       vi.stubEnv("NEXT_PUBLIC_SUPABASE_URL", "not a url");
 
-      expect(connectSrcOf(await pageResponse())).toContain(
-        "https://supabase.ethniafrica.com"
-      );
+      const connectSrc = connectSrcOf(await pageResponse());
+
+      expect(connectSrc).not.toContain("https://supabase.ethniafrica.com");
+      expect(connectSrc).not.toContain("supabase");
+    });
+
+    // @req REQ-052
+    it("names no Supabase origin when the URL is not configured", async () => {
+      vi.stubEnv("NEXT_PUBLIC_SUPABASE_URL", "");
+
+      expect(connectSrcOf(await pageResponse())).not.toContain("supabase");
     });
 
     // @req REQ-052

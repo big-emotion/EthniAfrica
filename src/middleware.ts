@@ -53,8 +53,6 @@ const isPublicLocalizedPage = (pathname: string) =>
 const isDeveloperPortalPage = (pathname: string) =>
   pathname === "/docs/api" || pathname.startsWith("/docs/api/");
 
-const SUPABASE_ORIGIN_FALLBACK = "https://supabase.ethniafrica.com";
-
 // Strict routes allow the two fixed Next.js 16 runtime <style> payloads by
 // exact hash because the framework does not propagate the request nonce.
 const NEXT_RUNTIME_STYLE_HASHES = [
@@ -87,17 +85,21 @@ const FRAME_SRC_HOSTS: string[] = [];
  * NEXT_PUBLIC_SUPABASE_URL. It used to sit beside `*.supabase.co`, which
  * admitted every hosted project, anyone's. The derived origin covers both
  * hostings on its own: a hosted project by its subdomain, production's
- * self-hosted stack by its custom domain. The fallback is production's, so an
- * unusable value still yields a policy under which the atlas works.
+ * self-hosted stack by its custom domain.
+ *
+ * An unusable value yields "" and the policy names no Supabase origin. There
+ * used to be a fallback to production's host, which let a misconfigured
+ * deployment — a fork, a preview — point browsers at production's database,
+ * while its own Supabase client could not work without the variable anyway.
  */
 function supabaseOrigin(): string {
   const configured = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim();
-  if (!configured) return SUPABASE_ORIGIN_FALLBACK;
+  if (!configured) return "";
   try {
     const { origin } = new URL(configured);
-    return origin === "null" ? SUPABASE_ORIGIN_FALLBACK : origin;
+    return origin === "null" ? "" : origin;
   } catch {
-    return SUPABASE_ORIGIN_FALLBACK;
+    return "";
   }
 }
 
