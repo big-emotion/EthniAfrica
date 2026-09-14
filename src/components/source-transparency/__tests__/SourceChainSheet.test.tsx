@@ -425,6 +425,7 @@ describe("SourceChainSheet — authority first, no source hidden", () => {
 
   // @req REQ-174
   it.each([
+    [320, "bottom"],
     [430, "bottom"],
     [720, "bottom"],
     [1200, "right-wide"],
@@ -456,11 +457,57 @@ describe("SourceChainSheet — authority first, no source hidden", () => {
         expect(precedes(intro, other)).toBe(true);
       }
 
+      expect(screen.getByTestId("source-tier-official-1")).toHaveTextContent(
+        "Officielle"
+      );
       for (const id of ["narrative-1", "unverified-a", "unverified-b"]) {
-        expect(screen.getByTestId(`source-tier-${id}`)).toHaveTextContent(/\S/);
+        expect(screen.getByTestId(`source-tier-${id}`)).toHaveTextContent(
+          "Non vérifiée"
+        );
       }
     }
   );
+
+  // @req REQ-174
+  it("gives each position its own ranked list and its own introduction", () => {
+    setViewportWidth(430);
+    renderSheet({
+      sources: [],
+      positions: [
+        {
+          position: "Origine nilotique",
+          sources: [unverifiedA, officialSource],
+        },
+        {
+          position: "Origine bantoue",
+          sources: [
+            unverifiedB,
+            { ...baseSource, id: "referenced-1", tier: "referenced" },
+          ],
+        },
+        {
+          position: "Origine locale",
+          sources: [{ ...baseSource, id: "official-2", tier: "official" }],
+        },
+      ],
+    });
+
+    const groups = screen.getAllByTestId(/^position-group-/);
+    expect(groups).toHaveLength(3);
+    expect(screen.getAllByText(FR_UNCONFIRMED_INTRO)).toHaveLength(2);
+
+    const expectations: Array<[number, string, string]> = [
+      [0, "source-item-official-1", "source-item-unverified-a"],
+      [1, "source-item-referenced-1", "source-item-unverified-b"],
+    ];
+    for (const [index, confirmedId, unconfirmedId] of expectations) {
+      const group = within(groups[index]);
+      const intro = group.getByText(FR_UNCONFIRMED_INTRO);
+      expect(precedes(group.getByTestId(confirmedId), intro)).toBe(true);
+      expect(precedes(intro, group.getByTestId(unconfirmedId))).toBe(true);
+    }
+    expect(within(groups[2]).queryByText(FR_UNCONFIRMED_INTRO)).toBeNull();
+  });
 
   // @req REQ-174
   it("lists every source under the introduction when all are unverified", () => {

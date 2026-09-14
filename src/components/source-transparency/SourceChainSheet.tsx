@@ -419,6 +419,11 @@ function TierGroup({
  * why it is there (REQ-174). Nothing is filtered: a weak source is shown under
  * its own label, never dropped, because refusing it is the colonial filter
  * DEC-055 exists to remove.
+ *
+ * A contested assertion renders one list per position, and each carries its
+ * own introduction. The sentence marks where that list stops being confirmed,
+ * so a single copy hoisted above every position would either sit above
+ * confirmed sources or lie far from the second position's unconfirmed ones.
  */
 function SourceList({
   language,
