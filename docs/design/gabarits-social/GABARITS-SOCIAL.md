@@ -110,7 +110,7 @@ taille et de sa place, jamais d'un contraste raté.**
 | --- | --- | --- | --- | --- | --- | --- |
 | Bandeau (pilier) | Nunito | 25 | — | 700 | maj., interlettre .20em | encre 1 |
 | Rang « 01/05 » | Nunito | 22 | — | 700 | interlettre .14em | accent |
-| Chiffre / mot d'accent | Anton | 216 | 0,84 | — | — | accent |
+| Chiffre / mot d'accent | Anton | 216 | 1,20 | — | — | accent |
 | Titre de couverture | Anton | 120–126 | 1,08 | — | maj. | encre 1 |
 | Titre de série | Anton | 96–118 | 1,08 | — | maj. | encre 1 |
 | Paire — terme | Anton | 56 | 1,0 | — | — | encre 1 / accent |
@@ -133,6 +133,14 @@ colonne grandit, et il ne dit rien que la gouttière ne dise déjà.
 **Interligne des titres d'affichage : 1,08 minimum.** À 0,96–0,98 les accents d'une
 ligne touchent les jambages de la précédente — « Brésilien » sur « angolais ». Anton
 n'a aucune réserve verticale ; c'est l'interligne qui la fournit.
+
+**L'interligne du chiffre était 0,84 et débordait sur le bloc suivant** (corrigé le
+2026-09-14, premier rendu d'une carte chiffre en image fixe — jusque-là le rôle n'avait
+servi qu'en vidéo, sur un autre calcul de bloc). Mesuré sur `"60"` en Anton 216 :
+`ImageDraw.textbbox` donne un bas de glyphe à 257 px sous l'origine du tracé, quand
+0,84 × 216 n'en réservait que 181 — 76 px manquants, et la précision qui suit se
+composait par-dessus le chiffre. Mesuré sur plusieurs jeux de caractères (chiffres et
+lettres), le minimum tenable est 1,19 ; 1,20 est la valeur retenue, avec une marge.
 
 **Halo sur tout texte d'affichage posé sur une image :**
 `text-shadow: 0 2px 20px rgba(18,14,10,.85), 0 0 6px rgba(18,14,10,.6)`. Il ne compte
