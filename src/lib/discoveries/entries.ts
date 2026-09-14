@@ -8,6 +8,7 @@ import { localizeProverb } from "@/lib/proverbs/proverbs.en";
 import type { Language } from "@/types/shared";
 
 import type { DiscoveryPublication } from "./catalog";
+import { generatedImagePublications } from "./generatedImages";
 import { DISCOVERY_SLUGS } from "./slugs";
 
 const selections = [
@@ -182,5 +183,9 @@ function proverbPublications(): DiscoveryPublication[] {
 
 // @req REQ-157
 export function getDiscoveryPublications(): DiscoveryPublication[] {
-  return [...anecdotePublications(), ...proverbPublications()];
+  return [
+    ...anecdotePublications(),
+    ...proverbPublications(),
+    ...generatedImagePublications(),
+  ];
 }

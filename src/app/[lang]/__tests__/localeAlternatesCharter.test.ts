@@ -132,7 +132,6 @@ const OUTSIDE = [/^admin(\/|$)/, /^signalements\/verifier$/];
  */
 const WITHDRAWN = [
   "dossiers/[dossier]",
-  "dossiers/galerie",
   "dossiers/migrations",
   "dossiers/nommer",
   "dossiers/nommer/la-chose",

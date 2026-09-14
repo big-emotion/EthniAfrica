@@ -25,7 +25,6 @@ import DossierRoute from "../[dossier]/page";
 import ThemePage from "../themes/[theme]/page";
 import AnecdotesPage from "../anecdotes/page";
 import ProverbsPage from "../proverbes/page";
-import GalleryPage from "../galerie/page";
 import { readDossierCorpus } from "@/lib/dossiers/corpus";
 import { DOSSIER_THEMES } from "@/lib/dossiers/themes";
 
@@ -52,9 +51,6 @@ const WITHDRAWN_ROUTES: Array<[string, RouteComponent]> = [
   ["dossiers/nommer/le-peuple", NommerLePeuplePage],
   ["dossiers/migrations", MigrationsPage],
   ["dossiers/regards/colonisation-et-resistances", ColonizationPage],
-  // Not a reworked dossier: a gallery with no image publication entered yet,
-  // withheld until its first one is (REQ-167).
-  ["dossiers/galerie", GalleryPage],
 ];
 
 describe("the frozen dossiers serve nothing", () => {
