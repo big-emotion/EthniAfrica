@@ -153,7 +153,7 @@
         "peopleId": "PPL_NUBIENS",
         "mainRegion": "Nord du Soudan (vallée du Nil, Nubie)",
         "languages": ["Nubien (kdi", "fia", "ISO 639-3)", "arabe soudanais"],
-        "languageFamily": "FLG_NILOSAHARIEN",
+        "languageFamily": "FLG_NILOSAHARIENNE",
         "appellationRemarks": "\"Nubiens\" / \"Noba\" sont les auto-appellations. Pas de terme péjoratif connu. Groupe nilo-saharien, descendants des anciens royaumes nubiens (Koush, Méroé), christianisation puis islamisation."
       },
       {
@@ -286,7 +286,7 @@
           "percentageInCountry": 5,
           "peopleId": "PPL_NUBIENS",
           "region": "Nord du Soudan (vallée du Nil, Nubie)",
-          "languageFamily": "FLG_NILOSAHARIEN"
+          "languageFamily": "FLG_NILOSAHARIENNE"
         },
         {
           "name": "Four",
