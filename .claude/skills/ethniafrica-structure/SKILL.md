@@ -171,6 +171,40 @@ Règle du 2026-09-13, décidée par l'opérateur et **non mesurée** : elle remp
 la description TikTok longue du 2026-09-12. La revue de phase 1 (3–4 octobre)
 compare les commentaires et les vues des deux formes, et garde celle qui gagne.
 
+## La validation du texte, obligatoire
+
+Décidé le 2026-09-14, après que l'opérateur a vu une vidéo rendue sur un texte
+qu'il n'avait jamais lu en entier : **aucun texte n'atteint `produire` sans
+être passé, mot pour mot, sous les yeux de l'opérateur, et sans qu'il l'ait
+validé explicitement.** Ce n'est pas une remarque, c'est une porte — et elle
+précède les cinq portes de `produire`, elle ne s'y ajoute pas.
+
+Avant de dire que `structure` est fini :
+
+1. **Affiche le texte complet dans la conversation**, pas un lien vers le
+   fichier : le `narration.fr.txt` scène par scène (chaque paragraphe
+   identifié à sa carte), puis chaque `titre`/`corps`/`source` de
+   `cards.json` (et de `cartes.json` s'il existe), dans l'ordre du rang.
+   Un opérateur qui doit ouvrir un fichier pour vérifier n'a pas reçu la
+   validation qu'on lui doit.
+2. **Demande la validation explicitement** — pas « dis-moi si ça te va »
+   noyé dans un paragraphe, une question qui appelle une réponse claire.
+3. **N'écris `post.md`, ne le passe pas en 🟡, et ne dis pas que l'étape
+   suivante est `produire`, avant d'avoir reçu cette validation.** Si
+   l'opérateur corrige, réécris et raffiche — la porte ne s'ouvre qu'une
+   fois, sur le texte qu'il a réellement vu.
+
+Une fois validé, pose dans `post.md` :
+
+```markdown
+**Texte validé** : oui, le AAAA-MM-JJ, par l'opérateur.
+```
+
+`produire` refuse de rendre quoi que ce soit — même une épreuve — tant que
+cette ligne est absente ou plus ancienne que `cards.json`, `cartes.json` ou
+`narration.fr.txt`. Une réécriture après validation efface la ligne : le
+texte doit repasser par cette porte, pas seulement par le rendu.
+
 ## Ce que tu ne fais pas
 
 Rendre les images. Choisir les dispositions. Ouvrir `ethni_carrousel2.py`,
@@ -180,7 +214,9 @@ ailleurs.
 
 ## Pour finir
 
-Passe le sujet en **🟡 En traitement** dans l'en-tête de son `post.md`, recalcule
-l'état (`node social/tools/etat-pipeline/build-etat.mjs`), et dis en une ligne
-que l'étape suivante est `produire`, qui lance d'abord l'audit du message
+Affiche le texte et obtiens la validation (voir ci-dessus). Une fois validé,
+passe le sujet en **🟡 En traitement** dans l'en-tête de son `post.md`, pose la
+ligne **Texte validé**, recalcule l'état
+(`node social/tools/etat-pipeline/build-etat.mjs`), et dis en une ligne que
+l'étape suivante est `produire`, qui lance d'abord l'audit du message
 (`ethniafrica-message`). Ne la lance pas de toi-même.
