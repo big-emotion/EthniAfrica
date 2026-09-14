@@ -54,6 +54,8 @@ const en = {
       `Sending is temporarily unavailable. Write to us directly at ${email}.`,
     sendFailed: (email: string) =>
       `Your message could not be sent. Write to us directly at ${email}.`,
+    rateLimited: (email: string) =>
+      `Too many messages have been sent from this connection. Try again later, or write to us directly at ${email}.`,
     fieldErrors: {
       civility: "Select a valid title.",
       firstName: "Enter your first name.",
@@ -127,6 +129,8 @@ const fr: ContactCopy = {
       `L'envoi est momentanément indisponible. Écrivez-nous directement à ${email}.`,
     sendFailed: (email) =>
       `Votre message n'a pas pu être envoyé. Écrivez-nous directement à ${email}.`,
+    rateLimited: (email) =>
+      `Trop de messages ont été envoyés depuis cette connexion. Réessayez plus tard ou écrivez-nous directement à ${email}.`,
     fieldErrors: {
       civility: "Sélectionnez une civilité valide.",
       firstName: "Indiquez votre prénom.",
