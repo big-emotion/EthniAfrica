@@ -140,9 +140,13 @@ the engine to a layout this repository is not allowed to describe.
   unconfigured library as one with zero subjects.
 
 **A render is not aimed by either of them.** Each `cards.json` carries its own
-`outDir`, and which status bucket a post sits in is derived from the post's own
-header by the library's filing tool — never chosen by the engine, and never by
-moving a folder in the Finder.
+`outDir`, which `produire` rewrites before every render from
+`social/tools/library/register-post.mjs --where` — the folder of a post the
+library ledger knows. Which status bucket that folder sits in is derived from the
+post's `status` in that ledger, which `structure` and `produire` write through
+the same tool, and the library's filing tool moves the folder to match — never
+chosen by the engine, and never by moving a folder in the Finder. A subject left
+unregistered stays in the workshop, where the pipeline state does not look.
 
 **Any other destination inside a git checkout is refused** (`ethni_paths.py`,
 `assert_writable`). Not hypothetical: 1,2 Go of masters were once rendered into a
