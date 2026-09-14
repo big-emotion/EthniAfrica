@@ -572,9 +572,26 @@ emporte s'il ne lit rien d'autre.
 | « Ce peuple n'a pas été divisé. C'est la carte qui a été dessinée par-dessus. » | « Ce peuple a été divisé par les colons. » | Le registre de la réparation garde le colonisateur au centre de la phrase. Le renversement d'agent rend le peuple sujet. |
 | « Tracées sans référence à qui habitait là. » | « Les frontières sont arbitraires. » | À demi faux, donc attaquable — et l'atlas peut le montrer peuple par peuple. |
 | « Ce qui est resté. » | « Ce qui a été pris. » | Le contenu ne dénonce pas, il agrandit la carte. |
+| « Certaines ruptures sont plus vieilles que la carte coloniale. » | « Avant les frontières, les peuples étaient unis. » | Des parentés de langue et de culture ont parfois traversé des ruptures — une scission, une migration, une querelle de succession — bien plus anciennes que le tracé colonial. La carte n'a pas toujours créé la séparation, elle l'a souvent verrouillée. |
 
 **Deux dates, à citer plutôt qu'à paraphraser :** Berlin 1884, les indépendances 1960.
 Une frontière ne contient pas un peuple, elle le traverse.
+
+### Une deuxième position, distincte de la ligne de vision
+
+Décidée par l'opérateur le 2026-09-14, échange complet dans
+`docs/editorial/purpose-doctrine.md` §5 :
+
+> « Ce qui relie les peuples d'Afrique a survécu à leurs propres ruptures
+> autant qu'aux frontières qu'on leur a imposées. C'est là que commence une
+> unité plus forte. »
+
+**Ce n'est pas la ligne de vision.** Elle n'est pas obligatoire dans chaque
+clôture et ne remplace rien de ce qui précède. Elle peut inspirer le ton d'une
+clôture sans y être imprimée mot pour mot, ou apparaître comme sa propre
+carte — toujours étiquetée comme une position, jamais comme un fait que
+l'atlas démontre, au même titre que « Ce peuple n'a pas été divisé » sur la
+page À propos (`purposeChapter.unityClaim` / `.unityClaimStatus`).
 
 ### Ce qui change avec le type de contenu, et ce qui ne change jamais
 
