@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const {
   getPeoplesMock,
-  getCountriesMock,
+  countCountriesMock,
   countAfrikLanguageFamiliesMock,
   countAfrikLanguagesMock,
   listNameFormsMock,
@@ -10,7 +10,7 @@ const {
   listMigrationsMock,
 } = vi.hoisted(() => ({
   getPeoplesMock: vi.fn(),
-  getCountriesMock: vi.fn(),
+  countCountriesMock: vi.fn(),
   countAfrikLanguageFamiliesMock: vi.fn(),
   countAfrikLanguagesMock: vi.fn(),
   listNameFormsMock: vi.fn(),
@@ -26,7 +26,7 @@ vi.mock("@/api/v2/services/peopleService", () => ({
   getPeoples: getPeoplesMock,
 }));
 vi.mock("@/api/v2/services/countryService", () => ({
-  getCountries: getCountriesMock,
+  countCountries: countCountriesMock,
 }));
 vi.mock("@/lib/supabase/queries/afrik/languageFamilies", () => ({
   countAfrikLanguageFamilies: countAfrikLanguageFamiliesMock,
@@ -46,7 +46,7 @@ import type { ListPatronymesQuery } from "@/api/v2/services/patronymes";
 
 function everyReadSucceeds() {
   getPeoplesMock.mockResolvedValue({ data: [], total: 4213 });
-  getCountriesMock.mockResolvedValue({ data: [], total: 91 });
+  countCountriesMock.mockResolvedValue(91);
   countAfrikLanguageFamiliesMock.mockResolvedValue(37);
   countAfrikLanguagesMock.mockResolvedValue(748);
   listNameFormsMock.mockResolvedValue({ forms: [], total: 3134, pageCount: 1 });
@@ -83,7 +83,7 @@ describe("getCorpusCounts (ETNI-1327, REQ-113)", () => {
     await getCorpusCounts();
 
     expect(getPeoplesMock).toHaveBeenCalledOnce();
-    expect(getCountriesMock).toHaveBeenCalledOnce();
+    expect(countCountriesMock).toHaveBeenCalledOnce();
     expect(countAfrikLanguageFamiliesMock).toHaveBeenCalledOnce();
     expect(countAfrikLanguagesMock).toHaveBeenCalledOnce();
     expect(listNameFormsMock).toHaveBeenCalledOnce();
