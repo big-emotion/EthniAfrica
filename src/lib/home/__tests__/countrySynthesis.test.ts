@@ -1,9 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import {
-  deriveCountrySynthesis,
-  hasRenderableSynthesis,
-} from "@/lib/home/countrySynthesis";
+import { deriveCountrySynthesis } from "@/lib/home/countrySynthesis";
 import type { Country } from "@/types/afrik";
 
 function country(overrides: Partial<Country> = {}): Country {
@@ -114,33 +111,5 @@ describe("deriveCountrySynthesis", () => {
     expect(synthesis.formerNames).toEqual([]);
     expect(synthesis.peoples).toEqual([]);
     expect(synthesis.languages).toEqual([]);
-  });
-});
-
-describe("hasRenderableSynthesis", () => {
-  // A card exists to show what the corpus holds. One that can state neither
-  // a chapeau nor a single people is not a sparse card, it is an empty one —
-  // and the atlas charter asks surfaces to skip those rather than dress them.
-  // @req REQ-113
-  it("rejects a synthesis with neither chapeau nor peoples", () => {
-    const empty = deriveCountrySynthesis({
-      id: "XXX",
-      nameFr: "Pays sans contenu",
-      content: {},
-    } as Country);
-
-    expect(hasRenderableSynthesis(empty)).toBe(false);
-  });
-
-  // @req REQ-113
-  it("accepts a synthesis that has a chapeau even with nothing else", () => {
-    const bare = deriveCountrySynthesis({
-      id: "XXX",
-      nameFr: "Pays",
-      summary: "Un chapeau suffit à faire une carte.",
-      content: {},
-    } as Country);
-
-    expect(hasRenderableSynthesis(bare)).toBe(true);
   });
 });

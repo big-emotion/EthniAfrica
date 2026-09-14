@@ -72,10 +72,15 @@ import { validateApiKey } from "@/lib/api/auth";
 import { applyIpRateLimit, evaluateRateLimit } from "@/lib/api/rate-limit";
 import { middleware } from "../middleware";
 
-function createMockRequest(url: string, headers: Record<string, string> = {}) {
+function createMockRequest(
+  url: string,
+  headers: Record<string, string> = {},
+  method = "GET"
+) {
   const parsedUrl = new URL(url);
   return {
     url,
+    method,
     nextUrl: parsedUrl,
     headers: new Headers({ host: parsedUrl.host, ...headers }),
   } as unknown as Parameters<typeof middleware>[0];
@@ -346,6 +351,106 @@ describe("middleware - /api/v2/* authentication", () => {
 
     expect(validateApiKey).not.toHaveBeenCalled();
     expect(mockNextResponseNext).toHaveBeenCalled();
+  });
+
+  // The browser sends its Supabase session token as a bearer to the routes
+  // that authenticate a session in their handler. Read here as an API key,
+  // that token was refused before the handler could say who the caller is.
+  describe("session-authenticated routes", () => {
+    const refusedAsApiKey = () =>
+      expect(mockNextResponseJson).not.toHaveBeenCalledWith(
+        { error: "invalid_api_key" },
+        { status: 401 }
+      );
+
+    beforeEach(() => {
+      // What a session JWT would get if it reached the key check.
+      vi.mocked(validateApiKey).mockResolvedValue({
+        valid: false,
+        reason: "invalid_api_key",
+      });
+    });
+
+    // @req REQ-042
+    it("lets a moderator's session bearer reach PATCH /api/v2/flags/{id}", async () => {
+      const request = createMockRequest(
+        "https://example.com/api/v2/flags/flag-7kq3m2",
+        { authorization: "Bearer session-jwt" },
+        "PATCH"
+      );
+      await middleware(request);
+
+      expect(validateApiKey).not.toHaveBeenCalled();
+      refusedAsApiKey();
+      expect(mockNextResponseNext).toHaveBeenCalled();
+    });
+
+    // @req REQ-093
+    it.each([
+      ["POST", "/api/v2/reference-library"],
+      ["POST", "/api/v2/reference-library/assertions"],
+      ["POST", "/api/v2/reference-library/assets"],
+      ["GET", "/api/v2/reference-library"],
+    ])("lets a session bearer reach %s %s", async (method, pathname) => {
+      const request = createMockRequest(
+        `https://example.com${pathname}`,
+        { authorization: "Bearer session-jwt" },
+        method
+      );
+      await middleware(request);
+
+      expect(validateApiKey).not.toHaveBeenCalled();
+      refusedAsApiKey();
+      expect(mockNextResponseNext).toHaveBeenCalled();
+    });
+
+    // The flag detail is a public read: only the moderation write carries a
+    // session, so a bearer on GET is still an API key.
+    // @req REQ-034
+    it("still validates a bearer on GET /api/v2/flags/{id} as an API key", async () => {
+      const request = createMockRequest(
+        "https://example.com/api/v2/flags/flag-7kq3m2",
+        { authorization: "Bearer bad-key" }
+      );
+      await middleware(request);
+
+      expect(validateApiKey).toHaveBeenCalledWith("bad-key");
+      expect(mockNextResponseJson).toHaveBeenCalledWith(
+        { error: "invalid_api_key" },
+        { status: 401 }
+      );
+    });
+
+    // @req REQ-059
+    it("still meters an exempted route in the per-IP bucket", async () => {
+      const request = createMockRequest(
+        "https://example.com/api/v2/flags/flag-7kq3m2",
+        { authorization: "Bearer session-jwt" },
+        "PATCH"
+      );
+      await middleware(request);
+
+      expect(evaluateRateLimit).toHaveBeenCalledWith(request);
+    });
+
+    // @req REQ-059
+    it("returns the 429 of the per-IP bucket on an exempted route", async () => {
+      vi.mocked(evaluateRateLimit).mockResolvedValueOnce({
+        rejection: { status: 429, headers: new Headers() } as never,
+        headers: {},
+      });
+
+      const response = await middleware(
+        createMockRequest(
+          "https://example.com/api/v2/reference-library",
+          { authorization: "Bearer session-jwt" },
+          "POST"
+        )
+      );
+
+      expect(response.status).toBe(429);
+      expect(mockNextResponseNext).not.toHaveBeenCalled();
+    });
   });
 
   // The moderation console's write endpoints authenticate a Supabase session
