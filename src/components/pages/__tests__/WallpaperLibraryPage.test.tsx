@@ -29,7 +29,7 @@ describe("WallpaperLibraryPage", () => {
     ) as HTMLElement[];
 
     expect(rungs).toHaveLength(6);
-    expect(rungs[0]).toHaveTextContent("140 ans");
+    expect(rungs[0]).toHaveTextContent(/Moins de 140 ans/);
     expect(rungs[5]).toHaveTextContent("300 000 ans");
     expect(rungs.map((rung) => rung.dataset.testid)).toEqual(
       scaleLadder.fr.rungs.map((rung) => `ladder-rung-${rung.id}`)

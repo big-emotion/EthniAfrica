@@ -362,7 +362,9 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
       .getAllByTestId("home-hero-purpose-sentence")
       .map((sentence) => sentence.textContent);
     expect(sentences).toEqual(homePurposeCopy.fr.sentences);
-    expect(sentences[0]).toMatch(/cent quarante ans.*Les noms en ont mille/);
+    expect(sentences[0]).toMatch(
+      /^La plupart des frontières .*moins de cent quarante ans\. Les noms en ont plus de mille\.$/
+    );
     expect(sentences[1]).toMatch(/dessinée par-dessus/);
 
     expect(disclosure.querySelector("a")).toHaveAttribute(
@@ -424,53 +426,51 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
     expect(screen.queryByTestId("home-hero-globe")).not.toBeInTheDocument();
   });
 
-  // A whole anecdote is far taller than the question beside it; centred, it
-  // pushed the question under a screen of empty parchment at 1440.
+  /**
+   * Opening « Notre propos » grows the copy column. Centred, the visual beside
+   * it recentred and slid down under the reader's click — a control moving a
+   * block it has nothing to do with. Topped, the visual keeps its place
+   * whatever the copy column does, for every kind the page draws (operator
+   * ruling, 2026-09-14). A whole anecdote had been topped already, for the
+   * screen of empty parchment it pushed above the question when centred.
+   */
   // @req REQ-115
-  it("tops the columns rather than centring them when the anecdote is drawn", () => {
-    const { container } = render(
-      <HomeHero language="fr" visual={{ kind: "anecdote", fact: ANECDOTE }} />
-    );
+  it("tops the columns for every visual, so opening the purpose never moves it", () => {
+    const { container } = render(<HomeHero language="fr" />);
 
-    expect(container.querySelector(".home-hero-inner")).toHaveClass(
-      "home-hero-inner--anecdote"
-    );
     const styles = Array.from(container.querySelectorAll("style"))
       .map((style) => style.textContent)
       .join("\n");
     expect(styles).toMatch(
-      /@media\s*\(min-width:\s*1200px\)[\s\S]*\.home-hero-inner--anecdote\s*\{[^}]*align-items:\s*start/
+      /@media\s*\(min-width:\s*1200px\)[\s\S]*?\.home-hero-inner\s*\{[^}]*align-items:\s*start/
     );
+    const gridRules =
+      styles.match(/\.home-hero-inner[\w-]*\s*\{[^}]*\}/g) ?? [];
+    expect(gridRules.length).toBeGreaterThan(0);
+    for (const rule of gridRules) {
+      expect(rule).not.toMatch(/align-items:\s*center/);
+    }
   });
 
   /**
-   * The side is drawn per request and applied only where there are two
-   * columns. The source order never moves: a phone and a screen reader meet
-   * the question first whichever side the visual takes at 1200px.
+   * The question holds the left column on every request. The side used to be
+   * tossed per request, which moved the search — the band's primary action —
+   * from one visit to the next (operator ruling, 2026-09-14).
    */
   // @req REQ-115
-  it("puts the visual on the side the page drew, at desktop only", () => {
-    const { container, rerender } = render(
-      <HomeHero language="fr" visualSide="start" />
+  it("keeps the question on the left and the visual on the right at desktop", () => {
+    const { container } = render(<HomeHero language="fr" />);
+
+    expect(container.querySelector(".home-hero-inner")?.className).not.toMatch(
+      /visual-start/
     );
-    const inner = () => container.querySelector(".home-hero-inner");
-
-    expect(inner()).toHaveClass("home-hero-inner--visual-start");
-    const copy = container.querySelector(".home-hero-copy")!;
-    const visual = container.querySelector(".home-hero-visual")!;
-    expect(
-      copy.compareDocumentPosition(visual) & Node.DOCUMENT_POSITION_FOLLOWING
-    ).toBeTruthy();
-
-    rerender(<HomeHero language="fr" visualSide="end" />);
-    expect(inner()).not.toHaveClass("home-hero-inner--visual-start");
-
     const styles = Array.from(container.querySelectorAll("style"))
       .map((style) => style.textContent)
       .join("\n");
     expect(styles).toMatch(
-      /@media\s*\(min-width:\s*1200px\)[\s\S]*\.home-hero-inner--visual-start\s*\{[^}]*grid-template-areas:\s*"globe copy"/
+      /@media\s*\(min-width:\s*1200px\)[\s\S]*grid-template-areas:\s*"copy globe"/
     );
+    expect(styles).not.toMatch(/"globe copy"/);
   });
 
   // @req REQ-115

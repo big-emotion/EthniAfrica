@@ -42,7 +42,6 @@ vi.mock("@/lib/home/homeHeroVisuals", async (importOriginal) => {
   return {
     ...actual,
     drawHomeHeroVisual: () => ({ kind: "globe" }),
-    drawHomeHeroVisualSide: () => "end",
   };
 });
 

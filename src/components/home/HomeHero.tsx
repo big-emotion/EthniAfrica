@@ -4,10 +4,7 @@ import Link from "next/link";
 import { ContinentGlobeStage } from "@/components/atlas/ContinentGlobeStage";
 import { PRODUCT_NAME } from "@/lib/brand";
 import type { CorpusCounts } from "@/lib/home/corpusCounts";
-import type {
-  HomeHeroVisual,
-  HomeHeroVisualSide,
-} from "@/lib/home/homeHeroVisuals";
+import type { HomeHeroVisual } from "@/lib/home/homeHeroVisuals";
 import type { SeedWordsByKind } from "@/lib/home/seedWords";
 import { homePurposeCopy } from "@/lib/i18n/copy/homePurpose";
 import { getLocalizedRoute } from "@/lib/routing";
@@ -23,9 +20,10 @@ import { HomeHeroSearch } from "./HomeHeroSearch";
  * its anecdote is one of the three visuals the band draws.
  *
  * Reading order stays stable across widths: question, purpose and primary
- * search, then the drawn visual. At desktop the grid places copy and visual
- * side by side, on the sides the page drew for this request; CSS never
- * changes the accessible order.
+ * search, then the drawn visual. At desktop the grid places the copy on the
+ * left and the visual on the right, on every request (operator ruling,
+ * 2026-09-14: the side used to be tossed, which moved the search from one
+ * visit to the next); CSS never changes the accessible order.
  */
 export interface HomeHeroProps {
   language: Language;
@@ -45,8 +43,6 @@ export interface HomeHeroProps {
   counts?: CorpusCounts | null;
   /** The visual drawn once by the server for this page request. */
   visual?: HomeHeroVisual;
-  /** The column the visual takes at desktop width, drawn with it. */
-  visualSide?: HomeHeroVisualSide;
 }
 
 // @req REQ-044
@@ -57,7 +53,6 @@ export function HomeHero({
   peopleCountsByCountry,
   counts = null,
   visual = { kind: "globe" },
-  visualSide = "end",
 }: HomeHeroProps) {
   const purpose = homePurposeCopy[language];
 
@@ -70,11 +65,7 @@ export function HomeHero({
       className="home-hero"
     >
       {/* The shell keeps every hero item on the page's shared content edge. */}
-      <div
-        className={`afh-shell home-hero-inner home-hero-inner--${visual.kind}${
-          visualSide === "start" ? " home-hero-inner--visual-start" : ""
-        }`}
-      >
+      <div className="afh-shell home-hero-inner">
         <header className="home-hero-copy afh-phone-centred">
           {/* One string inside an expression, never bare JSX text: SWC drops
               the space between an expression and the text that follows it on
@@ -442,26 +433,15 @@ export function HomeHero({
                ceiling and not a floor. */
             grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
             grid-template-areas: "copy globe";
-            align-items: center;
+            /* Topped, never centred (operator ruling, 2026-09-14). Centred,
+               the visual recentred whenever the copy column changed height:
+               opening « Notre propos » slid it down under the reader's click,
+               and a whole anecdote left a screen of parchment above the
+               question. */
+            align-items: start;
             column-gap: 48px;
             row-gap: 20px;
             padding-block: 40px;
-          }
-          /* The mirror, drawn per request (operator ruling, 2026-09-13): the
-             same columns, swapped, so the copy keeps its wider share whichever
-             side it lands on. Only the grid moves — the source order, and so
-             a screen reader's order, is the phone's. */
-          .home-hero-inner--visual-start {
-            grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-            grid-template-areas: "globe copy";
-          }
-          /* A whole anecdote runs far taller than the copy column. Centred,
-             it pushed the question a screen down under an empty gap — the
-             first thing a reader met was parchment. Measured at 1440 on the
-             first render; the globe and the images are square enough to keep
-             the centring. */
-          .home-hero-inner--anecdote {
-            align-items: start;
           }
           .home-hero-copy {
             margin: 0;

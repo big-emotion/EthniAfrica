@@ -151,7 +151,7 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
       {
         title: "The names are older than the borders",
         paragraphs: [
-          "Africa’s borders are a hundred and forty years old. The names are a thousand.",
+          "Most of Africa’s borders are less than a hundred and forty years old. The names are more than a thousand years old.",
           "A border does not contain a people; it crosses it. And the same line encloses peoples who never asked to be together.",
         ],
       },
@@ -218,7 +218,7 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
       {
         title: "Les noms sont plus vieux que les frontières",
         paragraphs: [
-          "Les frontières de l’Afrique ont cent quarante ans. Les noms en ont mille.",
+          "La plupart des frontières de l’Afrique ont moins de cent quarante ans. Les noms en ont plus de mille.",
           "Une frontière ne contient pas un peuple, elle le traverse. Et le même tracé enferme ensemble des peuples qui n’ont rien demandé.",
         ],
       },

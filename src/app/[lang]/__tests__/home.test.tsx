@@ -14,7 +14,6 @@ const {
   loadHeroPreviewMock,
   loadSynthesisRailMock,
   drawHomeHeroVisualMock,
-  drawHomeHeroVisualSideMock,
 } = vi.hoisted(() => ({
   getCorpusCountsMock: vi.fn(),
   getContinentPeopleCountsMock: vi.fn(),
@@ -22,7 +21,6 @@ const {
   loadHeroPreviewMock: vi.fn(),
   loadSynthesisRailMock: vi.fn(),
   drawHomeHeroVisualMock: vi.fn(),
-  drawHomeHeroVisualSideMock: vi.fn(),
 }));
 
 const fixtureCounts = {
@@ -73,7 +71,6 @@ vi.mock("@/lib/home/homeHeroVisuals", async (importOriginal) => {
   return {
     ...actual,
     drawHomeHeroVisual: drawHomeHeroVisualMock,
-    drawHomeHeroVisualSide: drawHomeHeroVisualSideMock,
   };
 });
 
@@ -120,7 +117,6 @@ describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", ()
     getHubModulesMock.mockResolvedValue([]);
     loadSynthesisRailMock.mockResolvedValue([]);
     drawHomeHeroVisualMock.mockReturnValue({ kind: "globe" });
-    drawHomeHeroVisualSideMock.mockReturnValue("end");
   });
 
   // @req REQ-044
@@ -301,25 +297,6 @@ describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", ()
   });
 
   // @req REQ-115
-  it("draws the side the visual takes for each page request", async () => {
-    drawHomeHeroVisualSideMock
-      .mockReturnValueOnce("start")
-      .mockReturnValueOnce("end");
-
-    const firstLoad = await renderHome();
-    expect(document.querySelector(".home-hero-inner")).toHaveClass(
-      "home-hero-inner--visual-start"
-    );
-    firstLoad.unmount();
-
-    await renderHome();
-    expect(document.querySelector(".home-hero-inner")).not.toHaveClass(
-      "home-hero-inner--visual-start"
-    );
-    expect(drawHomeHeroVisualSideMock).toHaveBeenCalledTimes(2);
-  });
-
-  // @req REQ-115
   it("allows browser checks to pin the globe, on the right, without changing random visitors", async () => {
     drawHomeHeroVisualMock.mockReturnValue({
       kind: "image",
@@ -331,7 +308,6 @@ describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", ()
         position: "center",
       },
     });
-    drawHomeHeroVisualSideMock.mockReturnValue("start");
 
     await render(
       await Home({
@@ -346,7 +322,6 @@ describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", ()
     );
     expect(getContinentPeopleCountsMock).toHaveBeenCalledOnce();
     expect(drawHomeHeroVisualMock).not.toHaveBeenCalled();
-    expect(drawHomeHeroVisualSideMock).not.toHaveBeenCalled();
   });
 
   // @req REQ-044

@@ -3,7 +3,6 @@ import { describe, expect, it } from "vitest";
 import {
   HOME_HERO_IMAGES,
   drawHomeHeroVisual,
-  drawHomeHeroVisualSide,
 } from "@/lib/home/homeHeroVisuals";
 
 function sequence(...values: number[]): () => number {
@@ -50,15 +49,5 @@ describe("drawHomeHeroVisual", () => {
       expect(image.alt.trim()).not.toBe("");
       expect(image.credit.trim()).not.toBe("");
     }
-  });
-});
-
-describe("drawHomeHeroVisualSide", () => {
-  // @req REQ-115
-  it("puts the visual on either side of the question with an even toss", () => {
-    expect(drawHomeHeroVisualSide(() => 0)).toBe("start");
-    expect(drawHomeHeroVisualSide(() => 0.5 - Number.EPSILON)).toBe("start");
-    expect(drawHomeHeroVisualSide(() => 0.5)).toBe("end");
-    expect(drawHomeHeroVisualSide(() => 0.999999)).toBe("end");
   });
 });

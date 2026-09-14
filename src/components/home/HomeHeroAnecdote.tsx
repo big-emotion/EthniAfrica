@@ -1,15 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 
 import { TranslationProvenanceMarker } from "@/components/fiche/TranslationProvenanceMarker";
 import { SectionHeading } from "@/components/home/SectionHeading";
 import { ActionLink } from "@/components/ui/ActionLink";
 import type { DidYouKnowEntity } from "@/lib/home/didYouKnowFacts";
-import { illustrationFor } from "@/lib/home/didYouKnowIllustrations";
-import {
-  localizeDidYouKnowIllustration,
-  type LocalizedDidYouKnowFact,
-} from "@/lib/home/didYouKnowLocalization";
+import type { LocalizedDidYouKnowFact } from "@/lib/home/didYouKnowLocalization";
 import { DID_YOU_KNOW_ENTITY_ACCENT } from "@/lib/home/didYouKnowPresentation";
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
 import {
@@ -43,6 +38,9 @@ function entityHref(language: Language, entity: DidYouKnowEntity): string {
  * paragraph, the atlas entries it names and its source. A fact on the home
  * asserts as much as a fact on its own page and owes the same provenance.
  *
+ * Text only (operator ruling, 2026-09-14). The picture that used to open it
+ * stays on the anecdotes' own page, which is where the exit below leads.
+ *
  * Filed by a kicker, never a title — brand charter §8.5: the anecdote is
  * drawn at random, so its headline is the heading and the kicker only says
  * what kind of thing it is. It carries none of AnecdoteReader's turning,
@@ -51,11 +49,6 @@ function entityHref(language: Language, entity: DidYouKnowEntity): string {
 // @req REQ-115
 export function HomeHeroAnecdote({ language, fact }: HomeHeroAnecdoteProps) {
   const copy = anecdotesCopy[language];
-  const illustration = localizeDidYouKnowIllustration(
-    fact.id,
-    illustrationFor(fact.id),
-    language
-  );
   const officialSource = fact.sources?.find(
     (source) => source.tier === "official"
   );
@@ -66,50 +59,6 @@ export function HomeHeroAnecdote({ language, fact }: HomeHeroAnecdoteProps) {
         eyebrow={copy.homeEyebrow}
         className="home-hero-anecdote-kicker"
       />
-
-      {illustration?.kind === "picture" ? (
-        <figure className="home-hero-anecdote-figure">
-          <div className="home-hero-anecdote-frame">
-            <Image
-              src={illustration.src}
-              alt={illustration.alt}
-              fill
-              priority
-              sizes="(min-width: 1200px) 560px, (min-width: 768px) 560px, calc(100vw - 32px)"
-              className="home-hero-anecdote-image"
-            />
-          </div>
-          <figcaption className="home-hero-anecdote-credit">
-            {illustration.credit}
-            {/* Brand charter §9: a licence is published, not named — the
-                same two links the anecdote card prints. */}
-            {illustration.filePage ? (
-              <>
-                {" · "}
-                <a
-                  href={illustration.filePage}
-                  rel="noreferrer noopener"
-                  target="_blank"
-                >
-                  {copy.file}
-                </a>
-              </>
-            ) : null}
-            {illustration.licenceUrl ? (
-              <>
-                {" · "}
-                <a
-                  href={illustration.licenceUrl}
-                  rel="noreferrer noopener license"
-                  target="_blank"
-                >
-                  {copy.licence}
-                </a>
-              </>
-            ) : null}
-          </figcaption>
-        </figure>
-      ) : null}
 
       <h2 className="home-hero-anecdote-headline">{fact.headline}</h2>
 
@@ -185,29 +134,6 @@ export function HomeHeroAnecdote({ language, fact }: HomeHeroAnecdoteProps) {
         }
         .home-hero-anecdote-kicker {
           margin-bottom: var(--afh-space-lg);
-        }
-        .home-hero-anecdote-figure {
-          margin: 0 0 var(--afh-space-2xl);
-        }
-        .home-hero-anecdote-frame {
-          position: relative;
-          width: 100%;
-          aspect-ratio: 3 / 2;
-          overflow: hidden;
-          border: 1px solid var(--afh-border);
-          border-radius: var(--afh-radius-lg);
-          background: var(--afh-bg-warm);
-        }
-        /* Contained, not cropped: the bank runs from portrait engravings to
-           wide panoramas, and a crop cuts off the document the fact is about. */
-        .home-hero-anecdote-image {
-          object-fit: contain;
-        }
-        .home-hero-anecdote-credit {
-          margin: var(--afh-space-md) auto 0;
-          font-size: var(--afh-text-caption);
-          line-height: var(--afh-leading-caption);
-          color: var(--afh-fg-muted);
         }
         .home-hero-anecdote-headline {
           margin: 0 0 var(--afh-space-lg);

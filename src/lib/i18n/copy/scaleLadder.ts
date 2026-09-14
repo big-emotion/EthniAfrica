@@ -4,9 +4,10 @@ import type { Language } from "@/types/shared";
  * The scale ladder — six rungs, from the border to the species.
  *
  * **Why a ladder and not a number.** The project's shortest claim is that the
- * names are older than the borders, and the series states it as "the borders
- * are a hundred and forty years old, the names are a thousand". A reader
- * objected, rightly, that a thousand undersells a continent that carries
+ * names are older than the borders, and the series states it as "most of the
+ * borders are less than a hundred and forty years old, the names are more than
+ * a thousand". A reader objected, rightly, that a thousand undersells a
+ * continent that carries
  * Kerma, Kush, pharaonic Egypt and the oldest known members of the species.
  *
  * Inflating the name figure was the wrong answer: the atlas stores no
@@ -69,11 +70,11 @@ export const scaleLadder: Record<Language, ScaleLadderCopy> = {
     rungs: [
       {
         id: "border",
-        magnitude: "140 years",
+        magnitude: "Under 140 years",
         subject: "The border",
         anchor:
-          "The Berlin conference opens in 1884. Most African countries become independent in 1960.",
-        provenance: "An established historical fact.",
+          "Berlin conference, 1884. Most borders came later: 1919, 1993, 2011.",
+        provenance: "Established historical dates.",
         inAtlas: false,
       },
       {
@@ -130,11 +131,11 @@ export const scaleLadder: Record<Language, ScaleLadderCopy> = {
     rungs: [
       {
         id: "border",
-        magnitude: "140 ans",
+        magnitude: "Moins de 140 ans",
         subject: "La frontière",
         anchor:
-          "La conférence de Berlin s’ouvre en 1884. La plupart des pays africains deviennent indépendants en 1960.",
-        provenance: "Un fait historique établi.",
+          "Conférence de Berlin, 1884. La plupart des tracés sont plus tardifs : 1919, 1993, 2011.",
+        provenance: "Des dates historiques établies.",
         inAtlas: false,
       },
       {
