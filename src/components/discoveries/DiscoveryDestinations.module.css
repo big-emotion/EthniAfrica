@@ -1,0 +1,60 @@
+/* Colour is left to the surface that places the list: the rail sits on the
+   night ground, the Parcourir rows on the sheet's parchment. */
+.destinations {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  color: inherit;
+  font: 900 var(--afh-text-h3) / 1.15 var(--afh-font-display);
+  text-decoration: none;
+}
+
+.list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.destination {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 2.75rem;
+  padding-block: 0.5rem;
+  color: inherit;
+  font: 700 var(--afh-text-body) / 1.3 var(--afh-font-display);
+  text-decoration: none;
+}
+
+.destination:hover,
+.destination[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+.destination:focus-visible,
+.brand:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.seed {
+  flex: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: var(--afh-radius-full);
+  background: var(--accent);
+}
+
+.seedNeutral {
+  background: currentColor;
+  opacity: 0.7;
+}

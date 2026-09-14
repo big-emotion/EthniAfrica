@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import type { ReactNode } from "react";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { renderToString } from "react-dom/server";
 import { describe, expect, it, vi } from "vitest";
 
@@ -12,12 +13,9 @@ vi.mock("next/navigation", () => ({
   },
 }));
 
-vi.mock("@/components/layout/PageLayout", () => ({
-  PageLayout: ({ children }: { children: ReactNode }) => <>{children}</>,
-}));
-
 import DiscoveriesPage, {
   generateMetadata,
+  viewport,
 } from "@/app/[lang]/decouvertes/[[...publication]]/page";
 import { eligiblePublications } from "@/lib/discoveries/catalog";
 import { getDiscoveryPublications } from "@/lib/discoveries/entries";
@@ -103,5 +101,34 @@ describe("Découvertes server entry", () => {
     // adds none of its own on top of it.
     expect(metadata.openGraph?.images).toEqual(["/opengraph-image"]);
     expect(metadata.twitter?.images).toBeUndefined();
+  });
+});
+
+describe("Découvertes immersive route", () => {
+  // The feed is a full-screen reading, like a Reel: the masthead, the trail and
+  // the footer would each put a strip of parchment around a night stage.
+  // @req REQ-156
+  it("renders the feed without the site masthead or footer", async () => {
+    const { container } = render(
+      await DiscoveriesPage({ params: params(["guere-krahn-we"]) })
+    );
+    expect(screen.queryByTestId("site-header")).not.toBeInTheDocument();
+    expect(container.querySelector("footer")).toBeNull();
+  });
+
+  // A phone paints its status bar and address bar from theme-color; left to
+  // the default they stay a light band above and below a black feed.
+  // @req REQ-156
+  it("tints the browser interface with the night ground the feed is painted on", () => {
+    const nightGround = readFileSync(
+      resolve(process.cwd(), "src/styles/tokens/color.css"),
+      "utf8"
+    ).match(/--afh-night-ground:\s*(#[0-9a-f]{6});/i)?.[1];
+
+    expect(nightGround).toBeDefined();
+    expect(viewport).toMatchObject({
+      themeColor: nightGround,
+      viewportFit: "cover",
+    });
   });
 });

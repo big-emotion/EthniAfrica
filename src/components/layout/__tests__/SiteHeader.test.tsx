@@ -149,6 +149,33 @@ describe("SiteHeader — Découvertes destination", () => {
     const css = headerStyleSheet();
     expect(css).toContain("@media (min-width: 1200px)");
   });
+
+  // It used to be a bold underlined word parked beside the search and theme
+  // discs, so it read as a utility rather than as a place. It takes the axes'
+  // pill; its seed is neutral because a hue in this row teaches an axis, and it
+  // has no caret because it opens nothing.
+  // @req REQ-156
+  it("draws Découvertes in the axes' own pill without claiming a fourth axis", () => {
+    renderHeader();
+    const entries = screen.getByRole("group", { name: "Points d'entrée" });
+    const link = within(entries).getByTestId("site-discoveries-link");
+
+    expect(link.querySelector(".sh-axis-pill .sh-seed")).toBeInTheDocument();
+    expect(link.querySelector(".sh-caret")).toBeNull();
+    expect(link.className).not.toMatch(/afh-accent-/);
+    expect(within(entries).getAllByRole("button")).toHaveLength(3);
+    expect(
+      declarationsFor(
+        '\\.sh-axis-link\\[aria-current="page"\\] \\.sh-axis-pill'
+      )
+    ).toMatch(/border-color/);
+
+    fireEvent.click(screen.getByTestId(BURGER));
+    const row = screen.getByTestId("site-discoveries-tray-link");
+    expect(row).toHaveClass("sh-fold-trigger");
+    expect(row.querySelector(".sh-seed")).toBeInTheDocument();
+    expect(declarationsFor("\\.sh-dest-row")).not.toMatch(/background/);
+  });
 });
 
 describe("SiteHeader — three intentions, not ten modules (atlas charter §3)", () => {

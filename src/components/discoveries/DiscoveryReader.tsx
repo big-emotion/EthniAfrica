@@ -10,6 +10,7 @@ import {
   ChevronDown,
   ChevronUp,
   Info,
+  Menu,
   Play,
   Share2,
 } from "lucide-react";
@@ -52,6 +53,7 @@ import {
 } from "@/components/layout/SocialGlyphs";
 import type { Language } from "@/types/shared";
 
+import { DiscoveryDestinations } from "@/components/discoveries/DiscoveryDestinations";
 import { DiscoveryDownloads } from "./DiscoveryDownloads";
 import styles from "./DiscoveryReader.module.css";
 
@@ -304,25 +306,54 @@ export function DiscoveryReader({
 
   if (!active) return null;
 
+  const isSaved = savedIds.includes(active.id);
+
   return (
-    <div className={styles.layout}>
-      <div className={styles.intro}>
-        <Link
-          href={`/${language}`}
-          className={styles.back}
-          aria-label={words.home}
-        >
-          <ArrowLeft aria-hidden="true" />
-        </Link>
-        <p className={styles.eyebrow}>EthniAfrica</p>
-        <h2>{words.title}</h2>
-        <p>{words.introduction}</p>
-        <span className={styles.counter} aria-live="polite">
-          {activeIndex + 1} {words.of} {ordered.length}
-        </span>
-      </div>
+    <main className={styles.stage}>
+      <DiscoveryDestinations language={language} className={styles.rail} />
 
       <div className={styles.main}>
+        {/* Below 1200 px the rail has no room, so the frame carries the way
+            back and the Parcourir sheet over the picture, as a Reel does. */}
+        <div className={styles.topBar}>
+          <Button asChild variant="night" size="icon">
+            <Link href={`/${language}`} aria-label={words.home}>
+              <ArrowLeft aria-hidden="true" />
+            </Link>
+          </Button>
+          <p className={styles.topTitle}>{words.title}</p>
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button
+                type="button"
+                variant="night"
+                size="icon"
+                aria-label={words.browse}
+              >
+                <Menu aria-hidden="true" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent
+              side="bottom"
+              className={styles.detailSheet}
+              closeLabel={words.close}
+            >
+              <div className={styles.handle} aria-hidden="true" />
+              <SheetTitle className={styles.detailTitle}>
+                {words.browse}
+              </SheetTitle>
+              <SheetDescription className="sr-only">
+                {words.title}
+              </SheetDescription>
+              <DiscoveryDestinations language={language} />
+            </SheetContent>
+          </Sheet>
+        </div>
+
+        <span className="sr-only" aria-live="polite">
+          {activeIndex + 1} {words.of} {ordered.length}
+        </span>
+
         <div
           className={styles.feed}
           ref={feedRef}
@@ -357,7 +388,7 @@ export function DiscoveryReader({
                   alt={entry.image.alt?.[language] ?? ""}
                   fill
                   unoptimized
-                  sizes="(min-width: 1200px) 430px, (min-width: 768px) 70vw, 100vw"
+                  sizes="(min-width: 768px) 34rem, 100vw"
                   priority={index === 0}
                   style={{ objectPosition: entry.image.focus ?? "center" }}
                   onError={() =>
@@ -388,9 +419,16 @@ export function DiscoveryReader({
                 ) : (
                   <h2>{entry.title[language]}</h2>
                 )}
+                {/* A generated image's caption is its opening line; every
+                    other publication opens on its description, held to two
+                    lines — the rest is one tap away in the details sheet. */}
                 {entry.caption ? (
                   <p className={styles.caption}>{entry.caption[language]}</p>
-                ) : null}
+                ) : (
+                  <p className={styles.description}>
+                    {entry.description[language]}
+                  </p>
+                )}
                 <p className={styles.source}>
                   {entry.source?.tier === "official"
                     ? words.official
@@ -420,29 +458,48 @@ export function DiscoveryReader({
                   </p>
                 )}
               </div>
-              <div className={styles.watermark} aria-hidden="true">
-                <Image src="/africa.png" alt="" width={20} height={20} />
-                <span>EthniAfrica</span>
-              </div>
             </article>
           ))}
         </div>
-        <div className={styles.actions}>
+
+        <div role="group" aria-label={words.actions} className={styles.actions}>
           <Button
             type="button"
-            variant="outline"
-            size="icon"
-            onClick={() => move(activeIndex - 1)}
-            disabled={activeIndex === 0}
-            aria-label={words.previous}
+            variant="night"
+            size="stacked"
+            aria-pressed={isSaved}
+            onClick={toggleSaved}
           >
-            <ChevronUp aria-hidden="true" />
+            <span className={styles.actionGlyph} aria-hidden="true">
+              <Bookmark />
+            </span>
+            <span className={styles.actionLabel}>
+              {isSaved ? words.kept : words.keep}
+            </span>
+          </Button>
+          <Button
+            type="button"
+            variant="night"
+            size="stacked"
+            onClick={openShare}
+          >
+            <span className={styles.actionGlyph} aria-hidden="true">
+              <Share2 />
+            </span>
+            <span className={styles.actionLabel}>{words.share}</span>
           </Button>
           <Sheet>
             <SheetTrigger asChild>
-              <Button type="button" variant="outline" disabled={!active.detail}>
-                <Info aria-hidden="true" />
-                {words.details}
+              <Button
+                type="button"
+                variant="night"
+                size="stacked"
+                disabled={!active.detail}
+              >
+                <span className={styles.actionGlyph} aria-hidden="true">
+                  <Info />
+                </span>
+                <span className={styles.actionLabel}>{words.details}</span>
               </Button>
             </SheetTrigger>
             <SheetContent
@@ -450,6 +507,8 @@ export function DiscoveryReader({
               className={styles.detailSheet}
               closeLabel={words.close}
             >
+              <div className={styles.handle} aria-hidden="true" />
+              <p className={styles.kicker}>{words.context}</p>
               <SheetTitle className={styles.detailTitle}>
                 {active.title[language]}
               </SheetTitle>
@@ -523,45 +582,13 @@ export function DiscoveryReader({
               ) : null}
             </SheetContent>
           </Sheet>
-          <Button
-            type="button"
-            variant="outline"
-            size="icon"
-            onClick={() => move(activeIndex + 1)}
-            disabled={activeIndex === ordered.length - 1}
-            aria-label={words.next}
-          >
-            <ChevronDown aria-hidden="true" />
-          </Button>
-        </div>
-        <noscript>
-          <p className={styles.noScriptNext}>
-            <a
-              href={
-                ordered[1]
-                  ? discoveryPath(language, ordered[1])
-                  : `/${language}`
-              }
-            >
-              {ordered[1] ? words.next : words.home}
-            </a>
-          </p>
-        </noscript>
-        <div className={styles.utilities}>
-          <Button
-            type="button"
-            variant="outline"
-            aria-pressed={savedIds.includes(active.id)}
-            onClick={toggleSaved}
-          >
-            <Bookmark aria-hidden="true" />
-            {savedIds.includes(active.id) ? words.kept : words.keep}
-          </Button>
           <Sheet>
             <SheetTrigger asChild>
-              <Button type="button" variant="outline" aria-label={words.saved}>
-                <BookOpen aria-hidden="true" />
-                <span className={styles.savedLabel}>{words.saved}</span>
+              <Button type="button" variant="night" size="stacked">
+                <span className={styles.actionGlyph} aria-hidden="true">
+                  <BookOpen />
+                </span>
+                <span className={styles.actionLabel}>{words.saved}</span>
               </Button>
             </SheetTrigger>
             <SheetContent
@@ -569,6 +596,7 @@ export function DiscoveryReader({
               className={styles.detailSheet}
               closeLabel={words.close}
             >
+              <div className={styles.handle} aria-hidden="true" />
               <SheetTitle className={styles.detailTitle}>
                 {words.saved}
               </SheetTitle>
@@ -597,22 +625,56 @@ export function DiscoveryReader({
               )}
             </SheetContent>
           </Sheet>
+        </div>
+
+        {/* A phone moves by swiping, as a Reel does; from 768 px a pointer
+            reader gets the two round controls TikTok and Instagram draw at
+            the right edge. The keyboard arrows work at every width. */}
+        <div className={styles.stepper}>
           <Button
             type="button"
-            variant="outline"
-            onClick={openShare}
-            aria-label={words.share}
+            variant="night"
+            size="icon"
+            className={styles.stepButton}
+            onClick={() => move(activeIndex - 1)}
+            disabled={activeIndex === 0}
+            aria-label={words.previous}
           >
-            <Share2 aria-hidden="true" />
-            <span className={styles.shareActionLabel}>{words.share}</span>
+            <ChevronUp aria-hidden="true" />
+          </Button>
+          <Button
+            type="button"
+            variant="night"
+            size="icon"
+            className={styles.stepButton}
+            onClick={() => move(activeIndex + 1)}
+            disabled={activeIndex === ordered.length - 1}
+            aria-label={words.next}
+          >
+            <ChevronDown aria-hidden="true" />
           </Button>
         </div>
+
+        <noscript>
+          <p className={styles.noScriptNext}>
+            <a
+              href={
+                ordered[1]
+                  ? discoveryPath(language, ordered[1])
+                  : `/${language}`
+              }
+            >
+              {ordered[1] ? words.next : words.home}
+            </a>
+          </p>
+        </noscript>
         {!storageAvailable ? (
           <p className={styles.storageNotice} role="status">
             {words.temporary}
           </p>
         ) : null}
       </div>
+
       <Sheet
         open={Boolean(sharePayload)}
         onOpenChange={(open) => {
@@ -624,6 +686,7 @@ export function DiscoveryReader({
           className={styles.detailSheet}
           closeLabel={words.close}
         >
+          <div className={styles.handle} aria-hidden="true" />
           <SheetTitle className={styles.detailTitle}>{words.share}</SheetTitle>
           <SheetDescription>{sharePayload?.title}</SheetDescription>
           {sharePayload ? (
@@ -708,6 +771,6 @@ export function DiscoveryReader({
           ) : null}
         </SheetContent>
       </Sheet>
-    </div>
+    </main>
   );
 }
