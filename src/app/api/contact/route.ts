@@ -4,6 +4,7 @@ import { corsOptionsResponse, jsonWithCors } from "@/lib/api/cors";
 import { logger } from "@/lib/api/logger";
 import { CONTACT_EMAIL } from "@/lib/brand";
 import { sendContactMessage } from "@/lib/email/contactMessage";
+import { checkContactRateLimit } from "@/lib/ratelimit/contactRateLimit";
 import { contactMessageSchema } from "@/lib/validations/contact";
 import { contactCopy } from "@/lib/i18n/copy/contact";
 import { isTranslationLocale } from "@/lib/i18n/translationLocale";
@@ -17,6 +18,14 @@ function requestLanguage(body: unknown): Language {
   return isTranslationLocale(language) ? language : "fr";
 }
 
+function senderAddress(request: NextRequest): string {
+  return (
+    request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+    request.headers.get("x-real-ip") ||
+    "unknown"
+  );
+}
+
 /**
  * The contact form's only endpoint.
  *
@@ -24,7 +33,9 @@ function requestLanguage(body: unknown): Language {
  * key-gated read API of the corpus, and this is a write from the site's own
  * form with nothing to publish. `/api/contributions` is the precedent, and
  * this route copies its shape — honeypot first, then the schema, then the
- * side effect.
+ * side effect. A per-address quota runs before the honeypot, so a bot that
+ * fills the hidden field is still counted and a bot that leaves it empty
+ * cannot fill the mailbox.
  *
  * Nothing is persisted. A row would be a second inbox nobody reads, and the
  * message is already durable in the mailbox it lands in.
@@ -44,6 +55,20 @@ export async function POST(request: NextRequest) {
 
   const language = requestLanguage(body);
   const copy = contactCopy[language].server;
+
+  const quota = await checkContactRateLimit(senderAddress(request));
+  // `in`, not `!quota.allowed`: with strictNullChecks off the compiler does
+  // not narrow this union on its boolean discriminant.
+  if ("retryAfter" in quota) {
+    return jsonWithCors(
+      {
+        error: "RATE_LIMITED",
+        message: copy.rateLimited(CONTACT_EMAIL),
+        contactEmail: CONTACT_EMAIL,
+      },
+      { status: 429, headers: { "Retry-After": String(quota.retryAfter) } }
+    );
+  }
 
   // A bot that filled the hidden field is answered exactly as a reader is:
   // told the message went, told nothing about why it did not.

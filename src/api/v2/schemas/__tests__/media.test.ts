@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { validateMedia } from "../../utils/validation";
+import { mediaSchema } from "../media";
 
 const validMedia = {
   entityType: "people" as const,
@@ -12,24 +12,26 @@ const validMedia = {
   depictionTiming: "reconstitution" as const,
 };
 
-describe("validateMedia", () => {
+describe("mediaSchema", () => {
   // @req REQ-128
   it("rejects media without a licence URI", () => {
     const { licenceUri: _licenceUri, ...withoutLicence } = validMedia;
 
-    expect(() => validateMedia(withoutLicence)).toThrow();
-    expect(() => validateMedia({ ...validMedia, licenceUri: "" })).toThrow();
+    expect(() => mediaSchema.parse(withoutLicence)).toThrow();
+    expect(() =>
+      mediaSchema.parse({ ...validMedia, licenceUri: "" })
+    ).toThrow();
   });
 
   // @req REQ-128
   it("rejects a licence that is not a URI", () => {
     expect(() =>
-      validateMedia({ ...validMedia, licenceUri: "CC BY-SA 4.0" })
+      mediaSchema.parse({ ...validMedia, licenceUri: "CC BY-SA 4.0" })
     ).toThrow();
   });
 
   // @req REQ-128
   it("preserves valid authorship, provenance, period and depiction timing", () => {
-    expect(validateMedia(validMedia)).toEqual(validMedia);
+    expect(mediaSchema.parse(validMedia)).toEqual(validMedia);
   });
 });

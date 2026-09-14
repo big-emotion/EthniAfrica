@@ -70,9 +70,9 @@ import { validatePeopleId } from "@/api/v2/utils/validation";
 import { createApiError } from "@/api/v2/utils/response";
 import { jsonWithCors, corsOptionsResponse } from "@/lib/api/cors";
 import { logger } from "@/lib/api/logger";
+import { PINNED_VERSION_CACHE_CONTROL as CACHE_IMMUTABLE } from "@/api/v2/services/corpusCache";
 
-const CACHE_IMMUTABLE = "s-maxage=31536000, immutable";
-
+// @req REQ-038
 export async function GET(
   _request: NextRequest,
   { params }: { params: Promise<{ id: string; n: string }> }
@@ -144,6 +144,7 @@ export async function GET(
   }
 }
 
+// @req REQ-038
 export function OPTIONS() {
   return corsOptionsResponse();
 }

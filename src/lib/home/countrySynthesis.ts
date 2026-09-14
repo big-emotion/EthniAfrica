@@ -130,19 +130,6 @@ export function deriveCountrySynthesis(country: Country): CountrySynthesis {
 }
 
 /**
- * Whether this synthesis is worth a card.
- *
- * The atlas charter asks a surface to say what the corpus does not hold
- * rather than dress an absence up. A synthesis with neither a chapeau nor a
- * single people has nothing to say about its country, so the rail skips it
- * instead of drawing a card whose every line reads "—".
- */
-// @req REQ-113
-export function hasRenderableSynthesis(synthesis: CountrySynthesis): boolean {
-  return synthesis.summary !== null || synthesis.peoples.length > 0;
-}
-
-/**
  * The same synthesis, from the flattened shape the fiche route carries.
  *
  * `mapCountryDetail` lifts the JSONB sections to the top level for the fiche

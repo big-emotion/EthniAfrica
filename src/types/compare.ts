@@ -10,22 +10,15 @@
 import type {
   CountryId,
   LanguageFamilyId,
+  LanguageFamilyContent,
+  PeopleContent,
   PeopleId,
-  AppellationsSection,
-  OriginsSection,
-  OrganizationSection,
-  LanguagesSection,
-  DetailedCultureSection,
-  HistoricalRoleSection,
-  GlobalDemographySection,
   HistoricalNamesSection,
   Kingdom,
   MajorPeopleEntry,
   CultureSection,
   HistoricalFactsSection,
   DemographicsSection,
-  DecolonialHeader,
-  PeopleReference,
   ClassificationStatus,
 } from "./afrik";
 
@@ -33,17 +26,19 @@ import type {
 // ENTITY PAYLOADS
 // ==========================================
 
-export interface ComparePeopleEntity {
+export interface ComparePeopleEntity extends Pick<
+  PeopleContent,
+  | "appellations"
+  | "origins"
+  | "organization"
+  | "languages"
+  | "culture"
+  | "historicalRole"
+  | "demography"
+> {
   type: "peuple";
   id: PeopleId;
   label: string;
-  appellations?: AppellationsSection;
-  origins?: OriginsSection;
-  organization?: OrganizationSection;
-  languages?: LanguagesSection;
-  culture?: DetailedCultureSection;
-  historicalRole?: HistoricalRoleSection;
-  demography?: GlobalDemographySection;
 }
 
 export interface CompareCountryEntity {
@@ -58,36 +53,18 @@ export interface CompareCountryEntity {
   demographics?: DemographicsSection;
 }
 
-export interface CompareFamilyEntity {
+export interface CompareFamilyEntity extends Pick<
+  LanguageFamilyContent,
+  | "decolonialHeader"
+  | "generalInfo"
+  | "associatedPeoples"
+  | "linguisticCharacteristics"
+  | "historyAndOrigins"
+  | "distribution"
+> {
   type: "famille";
   id: LanguageFamilyId;
   label: string;
-  decolonialHeader?: DecolonialHeader;
-  generalInfo?: {
-    branches?: string[];
-    geographicArea?: string;
-    numberOfLanguages?: number;
-    totalSpeakers?: number;
-  };
-  associatedPeoples?: PeopleReference[];
-  linguisticCharacteristics?: {
-    typology?: string;
-    phonologicalFeatures?: string;
-    relationsWithNeighbors?: string;
-    keyInnovations?: string;
-  };
-  historyAndOrigins?: {
-    probableOrigin?: string;
-    emergencePeriod?: string;
-    diffusion?: string;
-    historicalBreaks?: string;
-    contactZones?: string;
-    majorEvents?: string;
-  };
-  distribution?: {
-    totalSpeakers?: number;
-    distributionByCountry?: Record<CountryId, number>;
-  };
 }
 
 export type CompareEntityPayload =

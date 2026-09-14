@@ -18,6 +18,7 @@ import {
 import { describeScope } from "@/api/v2/handlers/quiz";
 import { translations } from "@/lib/translations";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
+import { OG_IMAGE_CACHE_CONTROL } from "@/api/v2/services/corpusCache";
 
 // Deliberately French: one card is generated site-wide, and the route sits
 // outside `[lang]`. Per-locale cards are a follow-up.
@@ -123,7 +124,7 @@ export async function GET(request: Request) {
         },
       ],
       headers: {
-        "Cache-Control": "public, max-age=86400",
+        "Cache-Control": OG_IMAGE_CACHE_CONTROL,
       },
     }
   );

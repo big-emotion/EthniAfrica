@@ -82,6 +82,33 @@ export const SOURCE_TIERS = ["official", "referenced", "unverified"] as const;
 export type SourceTier = (typeof SOURCE_TIERS)[number];
 
 /**
+ * What a corpus citation can say about its authority: one of the three tiers,
+ * or `needs_review` while nobody has ruled on it. `needs_review` is a
+ * transitional marker at the corpus boundary, not a fourth tier — the database
+ * stores it as a NULL tier, and it disappears, with this union, when
+ * `NEEDS_REVIEW_RATCHET` in scripts/ci/checkSourceTierCoverage.ts reaches zero.
+ */
+// @req REQ-092
+export const SOURCE_TIER_STATES = [...SOURCE_TIERS, "needs_review"] as const;
+
+export type SourceTierState = (typeof SOURCE_TIER_STATES)[number];
+
+/**
+ * What a moderator can decide about one `needs_review` citation: give it a
+ * tier, repair its locator and give it a tier, or remove it. Mirrored by the
+ * `source_tier_ruling_drafts` CHECK and the git ruling ledger.
+ */
+// @req REQ-092
+export const SOURCE_TIER_RULING_DECISIONS = [
+  "tier",
+  "repair",
+  "remove",
+] as const;
+
+export type SourceTierRulingDecision =
+  (typeof SOURCE_TIER_RULING_DECISIONS)[number];
+
+/**
  * The tiers that carry authority of their own: every tier above the
  * `unverified` floor. A quiz answer, a name fiche's `robots` directive, its
  * "being assembled" note and its sitemap entry all draw their line here.

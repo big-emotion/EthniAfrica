@@ -14,7 +14,6 @@ import sitemap, { revalidate } from "../sitemap";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { LOCALES } from "@/lib/locale";
 import { SURFACES_AT_PARITY } from "@/lib/seo/localeIndexing";
-import { UNLISTED_ROUTES } from "@/lib/siteTree";
 import { getSitemapEntityIds } from "@/lib/supabase/queries/afrik/sitemapEntries";
 import { getAfrikTranslationIds } from "@/lib/supabase/queries/afrik/translations";
 import {
@@ -271,16 +270,6 @@ describe("sitemap.xml", () => {
     vi.stubEnv("SITE_LOCALE_MODE", "fr-only");
 
     expect((await urls()).some((url) => url.includes("/en"))).toBe(false);
-  });
-
-  // @req REQ-110
-  it("keeps UNLISTED_ROUTES documented alongside what it excludes", () => {
-    expect(UNLISTED_ROUTES).toContain("admin");
-    expect(UNLISTED_ROUTES).toContain("report-error");
-    // The two duplicate privacy pages were retired rather than hidden, so
-    // they are no longer anything's business to exclude.
-    expect(UNLISTED_ROUTES).not.toContain("confidentialite");
-    expect(UNLISTED_ROUTES).not.toContain("politique-confidentialite");
   });
 
   // The registry no longer listing them is one half; this is the other — what

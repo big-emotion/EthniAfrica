@@ -1,5 +1,6 @@
 "use server";
 
+import { PUBLIC_FLAGS_PAGE_SIZE } from "@/api/v2/schemas/pagination";
 import {
   getPublicFlagsPage,
   isValidPublicFlagsCursor,
@@ -47,8 +48,8 @@ export async function loadPublicFlagsPage(
   options: PublicFlagsPageOptions
 ): Promise<PublicFlagsPage> {
   const requestedPageSize = Number.isFinite(options.pageSize)
-    ? Math.floor(options.pageSize ?? 50)
-    : 50;
+    ? Math.floor(options.pageSize ?? PUBLIC_FLAGS_PAGE_SIZE)
+    : PUBLIC_FLAGS_PAGE_SIZE;
 
   return getPublicFlagsPage({
     statuses: allowedValues(options.statuses, PUBLIC_STATUSES),
@@ -59,6 +60,6 @@ export async function loadPublicFlagsPage(
       isValidPublicFlagsCursor(options.cursor)
         ? options.cursor
         : undefined,
-    pageSize: Math.min(50, Math.max(1, requestedPageSize)),
+    pageSize: Math.min(PUBLIC_FLAGS_PAGE_SIZE, Math.max(1, requestedPageSize)),
   });
 }

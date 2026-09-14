@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { StateMedallion } from "@/components/ui/StateMedallion";
+import { CONTACT_EMAIL } from "@/lib/brand";
 import { FALLBACK_LOCALE, isLocale } from "@/lib/locale";
 import { getLocalizedRoute } from "@/lib/routing";
 import { compareCopy } from "@/lib/i18n/copy/compare";
@@ -47,7 +48,7 @@ export default function ComparerNotFound() {
           </Link>
 
           <a
-            href={`mailto:contact@ethniafrica.org?subject=${encodeURIComponent(copy.reportBrokenUrl)}`}
+            href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(copy.reportBrokenUrl)}`}
             className="inline-flex items-center justify-center px-5 py-2.5 text-afh-small text-afh-text-soft underline underline-offset-2 hover:text-afh-text transition-colors"
           >
             {copy.reportBrokenUrl}
