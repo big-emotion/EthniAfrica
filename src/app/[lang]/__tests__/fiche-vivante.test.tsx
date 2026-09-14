@@ -28,6 +28,7 @@ import {
   YORUBA_FRAGMENTATION,
   YORUBA_NAMES_DOSSIER,
 } from "@/components/fiche/__tests__/ficheContextFixtures";
+import type { PublicOralNarrative } from "@/api/v2/services/oralNarratives";
 import type { LanguageFamily } from "@/types/afrik";
 
 // ---------------------------------------------------------------------------
@@ -391,8 +392,11 @@ function journeyAnchors(root: Element): string[] {
   return ficheSections(root).map((section) => section.id);
 }
 
-/** The rights-cleared narratives the voices chapter is built from. */
-const PUBLISHED_NARRATIVES = [
+/**
+ * The rights-cleared narratives the voices chapter is built from, typed to
+ * the API payload so a field the contract adds cannot go missing here.
+ */
+const PUBLISHED_NARRATIVES: PublicOralNarrative[] = [
   {
     id: "3f1a5f7c-2d0e-4a6b-9c31-0b5f9e2a7d84",
     narrativeCode: "ORL_YORUBA_001",
@@ -402,6 +406,7 @@ const PUBLISHED_NARRATIVES = [
     narrativeKind: "testimony",
     summary: "Un récit transmis au sein de la communauté.",
     variantOf: null,
+    reviewed: true,
   },
 ];
 

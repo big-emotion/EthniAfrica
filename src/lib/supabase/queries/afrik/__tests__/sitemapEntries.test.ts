@@ -23,6 +23,10 @@ interface FixtureRow {
  * staged without a second double. `selectsByTable` records the column list each
  * table was asked for, since which table pays for the heavier select is part of
  * what the walk owes.
+ *
+ * Rows are projected onto that column list, JSON paths (`alias:col->key`)
+ * included, so a fixture is written in the table's shape and a walk that reads
+ * a field it never selected finds nothing there.
  */
 function supabaseServing(
   rowsByTable: Record<string, FixtureRow[]>,
@@ -45,12 +49,33 @@ function supabaseServing(
       failingTables.includes(table)
         ? { data: null, error: { message: `${table} is down` } }
         : {
-            data: (rowsByTable[table] ?? []).slice(start, end + 1),
+            data: (rowsByTable[table] ?? [])
+              .slice(start, end + 1)
+              .map((row) => projectColumns(row, selectsByTable[table].at(-1))),
             error: null,
           }
     ),
   };
   return client;
+}
+
+function projectColumns(
+  row: FixtureRow,
+  columns: string
+): Record<string, unknown> {
+  const projected: Record<string, unknown> = {};
+  for (const column of columns.split(",").map((part) => part.trim())) {
+    const jsonPath = column.match(/^(\w+):(\w+)->(\w+)$/);
+    if (jsonPath) {
+      const [, alias, source, key] = jsonPath;
+      const document = row[source as keyof FixtureRow] as
+        Record<string, unknown> | null | undefined;
+      projected[alias] = document?.[key] ?? null;
+    } else {
+      projected[column] = row[column as keyof FixtureRow];
+    }
+  }
+  return projected;
 }
 
 function ids(prefix: string, count: number): FixtureRow[] {
@@ -278,6 +303,8 @@ describe("sitemap entity ids", () => {
   // The tier threshold is a name-fiche rule. The other four entity types have
   // no `content` column read here, and widening their select to fetch one
   // would cost the whole corpus for a filter that does not apply to them.
+  // The names table itself pays for `content -> sources` only: the whole
+  // dossier was ~4.3 MB per sitemap build, on a plan metered by egress.
   // @req REQ-147
   it("filters no entity type other than the names", async () => {
     const client = supabaseServing({
@@ -311,7 +338,7 @@ describe("sitemap entity ids", () => {
       afrik_countries: ["id"],
       afrik_language_families: ["id"],
       afrik_languages: ["id"],
-      afrik_patronymes: ["id, content"],
+      afrik_patronymes: ["id, sources:content->sources"],
     });
   });
 });
