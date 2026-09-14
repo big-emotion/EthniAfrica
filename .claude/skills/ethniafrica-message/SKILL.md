@@ -124,8 +124,6 @@ Pour ce sous-cas :
 - Ce sous-cas ne change rien aux critères 3 à 8 : le peuple reste sujet de la
   phrase de clôture, aucune phrase refusée n'apparaît, et ainsi de suite.
 
-> > > > > > > origin/recette
-
 ### Le vocabulaire
 
 Un même geste a eu au moins sept formulations dans les productions publiées. Un

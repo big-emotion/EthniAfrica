@@ -455,6 +455,39 @@ def note_interne(text):
     return bool(_NOTE_INTERNE.search(text or ""))
 
 
+# GABARITS-SOCIAL.md §3, « Les dates s'écrivent en chiffres, jamais en lettres »
+# — decided 2026-09-14 after a card shipped « le quinzième ou le dix-septième
+# siècle » and another shipped « dix-neuvième siècle » in `image.identite`,
+# both meant to be read on screen. A full spelled-out year ("mille huit cent
+# quatre-vingt-onze") would need its own detector and is not attempted here —
+# every real miss measured so far was a spelled-out ordinal glued to
+# « siècle » or « décennie », and that pattern does not collide with a
+# spelled-out *count* ("soixante-cinq peuples" stays legitimate copy, per the
+# same doctrine passage). Anchored on the ordinal so "vingt personnes" or
+# "quatre régions" never trips it — only a century/decade number does.
+_ORDINAUX = (
+    r"premi[eè]re?|deuxi[eè]me|troisi[eè]me|quatri[eè]me|cinqui[eè]me|"
+    r"sixi[eè]me|septi[eè]me|huiti[eè]me|neuvi[eè]me|dixi[eè]me|onzi[eè]me|"
+    r"douzi[eè]me|treizi[eè]me|quatorzi[eè]me|quinzi[eè]me|seizi[eè]me|"
+    r"dix-septi[eè]me|dix-huiti[eè]me|dix-neuvi[eè]me|vingti[eè]me|"
+    r"vingt-et-uni[eè]me|vingt-deuxi[eè]me"
+)
+_DATE_EN_LETTRES = re.compile(
+    r"\b(?:" + _ORDINAUX + r")\s+si[eè]cles?\b"
+    r"|\b(?:" + _ORDINAUX + r")\s+d[ée]cennies?\b", re.I)
+
+
+def date_en_lettres(text):
+    """True when a date (a century or a decade) is spelled out instead of numeral.
+
+    Narrow on purpose — see the comment above `_DATE_EN_LETTRES`. A count that
+    is not a date (a number of peoples, of treaties, of cards) is never a
+    false positive here, because nothing in this pattern fires without a
+    trailing "siècle" or "décennie".
+    """
+    return bool(_DATE_EN_LETTRES.search(text or ""))
+
+
 # ---------------------------------------------------------------- the palette
 
 # The names the harness has always used, each bound to the charter token that

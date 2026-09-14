@@ -188,6 +188,24 @@ def test_internal_notes_never_reach_a_printed_field():
     assert not tk.note_interne("G. W. Bacon, Londres, v. 1906")
 
 
+def test_dates_spelled_out_are_refused_counts_are_not():
+    """§3 — a century or decade is digits, never letters; a count stays copy.
+
+    Both real misses that motivated this gate, kept as fixtures: a card body
+    that spelled out "le quinzième ou le dix-septième siècle", and an
+    `image.identite` that spelled out "dix-neuvième siècle".
+    """
+    assert tk.date_en_lettres("Dès le quinzième ou le dix-septième siècle")
+    assert tk.date_en_lettres("Portrait retouché, dix-neuvième siècle.")
+    assert tk.date_en_lettres("Dans la troisième décennie du siècle")
+    # A count is not a date — the doctrine's own title example stays legitimate.
+    assert not tk.date_en_lettres("La Tanzanie, c'est quatre-vingt-seize peuples.")
+    assert not tk.date_en_lettres("Soixante-cinq peuples vivent en Côte d'Ivoire.")
+    assert not tk.date_en_lettres("En 1891, un décret nomme la colonie.")
+    assert not tk.date_en_lettres("17e siècle")
+    assert not tk.date_en_lettres("")
+
+
 # The live path — cards through `ethni_carrousel2.py` → `ethni_compose.py`, video
 # through `ethni_audio.py` → `ethni_montage.py` with `ethni_soustitre.py` — plus
 # `ethni_render.py`, which still renders montages cut on the old gabarit. The gate
