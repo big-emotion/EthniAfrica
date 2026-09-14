@@ -5,6 +5,7 @@ vi.mock("../../../server", () => ({
 }));
 
 import {
+  countAfrikCountries,
   getAllAfrikCountries,
   getAfrikCountryById,
   getAfrikCountryIndexRows,
@@ -204,6 +205,32 @@ describe("AFRIK Countries Queries", () => {
       });
 
       await expect(getAfrikCountryIndexRows()).rejects.toBeDefined();
+    });
+  });
+  describe("countAfrikCountries", () => {
+    // @req REQ-113
+    it("counts the rows without shipping any of them", async () => {
+      mockSupabase.select.mockResolvedValue({ count: 54, error: null });
+
+      await expect(countAfrikCountries()).resolves.toBe(54);
+
+      // The home only shows the total. Reading it off `select("*")` shipped
+      // every country's whole `content` JSONB (~0.6–0.95 MB) per render.
+      expect(mockSupabase.from).toHaveBeenCalledWith("afrik_countries");
+      expect(mockSupabase.select).toHaveBeenCalledWith("id", {
+        count: "exact",
+        head: true,
+      });
+    });
+
+    // @req REQ-113
+    it("raises a failed count rather than reporting zero countries", async () => {
+      mockSupabase.select.mockResolvedValue({
+        count: null,
+        error: { message: "exceed_egress_quota" },
+      });
+
+      await expect(countAfrikCountries()).rejects.toBeDefined();
     });
   });
 });
