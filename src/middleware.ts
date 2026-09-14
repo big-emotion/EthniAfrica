@@ -772,8 +772,16 @@ export async function middleware(request: NextRequest) {
   // otherwise be rejected here as an invalid API key before ever reaching it.
   // It is metered in the anonymous bucket and continues to the session
   // refresh below.
-  const isKeySelfService = isApiV2 && pathname.startsWith("/api/v2/keys");
-  if (isKeySelfService) {
+  //
+  // `/api/v2/admin/*` is the same case: the moderation console's writes carry
+  // the moderator's session token, and the handler checks it against the
+  // allowlist (getModeratorByAccessToken). Read here as an API key, that token
+  // is refused with 401 before the handler can say who the caller is.
+  const isSessionAuthenticatedApi =
+    isApiV2 &&
+    (pathname.startsWith("/api/v2/keys") ||
+      pathname.startsWith("/api/v2/admin/"));
+  if (isSessionAuthenticatedApi) {
     const { rejection } = await evaluateRateLimit(request);
     if (rejection) return guarded(rejection);
   }
@@ -821,7 +829,7 @@ export async function middleware(request: NextRequest) {
   // the site's own readers are throttled no harder than before. Server
   // components read the services directly and never call /api/v2 over HTTP,
   // so no container address pools every reader into one bucket.
-  if (isApiV2 && !isKeySelfService) {
+  if (isApiV2 && !isSessionAuthenticatedApi) {
     const authorization = request.headers.get("Authorization") ?? "";
     const rawKey = authorization.startsWith("Bearer ")
       ? authorization.slice("Bearer ".length).trim()
