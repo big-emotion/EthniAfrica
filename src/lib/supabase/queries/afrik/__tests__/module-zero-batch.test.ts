@@ -25,7 +25,6 @@ import {
   getSourcesMap,
   getConfidenceMap,
   getFlagsSummaryMap,
-  getLatestRevisionMap,
 } from "../module-zero-batch";
 import { createServerClient } from "../../../server";
 import { logger } from "@/lib/api/logger";
@@ -379,98 +378,6 @@ describe("module-zero-batch helpers", () => {
         (logger.error as unknown as { mock: { calls: unknown[][] } }).mock
           .calls[0][0]
       ).toContain("module-zero-batch.getFlagsSummaryMap");
-    });
-  });
-
-  describe("getLatestRevisionMap", () => {
-    it("returns an empty Map when peopleIds is empty (no query)", async () => {
-      const { fromSpy } = buildSupabaseMock({ data: [], error: null });
-
-      const result = await getLatestRevisionMap([]);
-
-      expect(result.size).toBe(0);
-      expect(fromSpy).not.toHaveBeenCalled();
-    });
-
-    it("performs exactly ONE query for 50 IDs", async () => {
-      const ids = makeIds(50);
-      const { fromSpy, inSpy } = buildSupabaseMock({ data: [], error: null });
-
-      await getLatestRevisionMap(ids);
-
-      expect(fromSpy).toHaveBeenCalledTimes(1);
-      expect(inSpy).toHaveBeenCalledTimes(1);
-      expect(inSpy).toHaveBeenCalledWith("entity_id", ids);
-    });
-
-    // @req REQ-009
-    it("keeps only the latest revision per peopleId", async () => {
-      buildSupabaseMock({
-        data: [
-          {
-            id: "rev-2",
-            entity_id: "PPL_A",
-            field_path: "content.name",
-            new_value: "Latest",
-            changed_by: "user-1",
-            change_reason: "fix typo",
-            created_at: "2026-05-14T10:00:00Z",
-          },
-          {
-            id: "rev-1",
-            entity_id: "PPL_A",
-            field_path: "content.name",
-            new_value: "Older",
-            changed_by: "user-2",
-            change_reason: "initial",
-            created_at: "2026-05-13T10:00:00Z",
-          },
-          {
-            id: "rev-3",
-            entity_id: "PPL_B",
-            field_path: "content.history",
-            new_value: "Foo",
-            changed_by: "user-1",
-            change_reason: null,
-            created_at: "2026-05-12T10:00:00Z",
-          },
-        ],
-        error: null,
-      });
-
-      const result = await getLatestRevisionMap(["PPL_A", "PPL_B"]);
-
-      expect(result.get("PPL_A")?.id).toBe("rev-2");
-      expect(result.get("PPL_B")?.id).toBe("rev-3");
-      expect(result.size).toBe(2);
-    });
-
-    it("chunks .in() into batches of 500 when ids.length > 500", async () => {
-      const ids = makeIds(1000);
-      const { fromSpy, inSpy } = buildSupabaseMock([
-        { data: [], error: null },
-        { data: [], error: null },
-      ]);
-
-      await getLatestRevisionMap(ids);
-
-      expect(fromSpy).toHaveBeenCalledTimes(2);
-      expect(inSpy).toHaveBeenCalledTimes(2);
-      expect((inSpy.mock.calls[0][1] as string[]).length).toBe(500);
-      expect((inSpy.mock.calls[1][1] as string[]).length).toBe(500);
-    });
-
-    it("logs via logger.error and returns empty Map on query error", async () => {
-      buildSupabaseMock({ data: null, error: { message: "boom" } });
-
-      const result = await getLatestRevisionMap(["PPL_A"]);
-
-      expect(result.size).toBe(0);
-      expect(logger.error).toHaveBeenCalledTimes(1);
-      expect(
-        (logger.error as unknown as { mock: { calls: unknown[][] } }).mock
-          .calls[0][0]
-      ).toContain("module-zero-batch.getLatestRevisionMap");
     });
   });
 });

@@ -81,9 +81,6 @@ export const GAME_DEFINITIONS: GameDefinition[] = [
 ];
 
 // @req REQ-120
-export const GAME_SLUGS: string[] = GAME_DEFINITIONS.map((game) => game.slug);
-
-// @req REQ-120
 export function getGameBySlug(slug: string): GameDefinition | null {
   return GAME_DEFINITIONS.find((game) => game.slug === slug) ?? null;
 }

@@ -33,13 +33,6 @@ export interface CameraBias {
   offsetY: number;
 }
 
-export interface FreeRegion {
-  xMin: number;
-  xMax: number;
-  yMin: number;
-  yMax: number;
-}
-
 /** No panel open, so the globe keeps the whole stage. */
 // @req REQ-117
 export const NO_BIAS: CameraBias = { offsetX: 0, offsetY: 0 };
@@ -53,18 +46,6 @@ function viewFractionFor(anchor: PanelAnchor): number {
   return anchor === "bottom"
     ? BOTTOM_SHEET_VIEW_FRACTION
     : SIDE_PANEL_VIEW_FRACTION;
-}
-
-/** The part of the stage the open panel does not cover, in clip space. */
-// @req REQ-117
-export function panelFreeRegion(anchor: PanelAnchor | null): FreeRegion {
-  const whole: FreeRegion = { xMin: -1, xMax: 1, yMin: -1, yMax: 1 };
-  if (!anchor) return whole;
-
-  const covered = 2 * viewFractionFor(anchor);
-  return anchor === "bottom"
-    ? { ...whole, yMin: -1 + covered }
-    : { ...whole, xMax: 1 - covered };
 }
 
 // @req REQ-117

@@ -48,13 +48,3 @@ export interface PersonDossier {
   peopleLinks: PersonPeopleLink[];
   sources: PersonSource[];
 }
-
-/** A persisted person, as read back through the data-access layer. */
-export interface Person {
-  id: PersonId;
-  fullName: string;
-  roleCategory: string;
-  countryIds: CountryId[];
-  peopleLinks: PersonPeopleLink[];
-  sources: PersonSource[];
-}

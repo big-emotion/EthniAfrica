@@ -3,7 +3,6 @@ import { describe, expect, it } from "vitest";
 import {
   isCorrectAnswer,
   isEstimateRound,
-  isOptionRound,
   type BinaryRound,
   type EstimateRound,
 } from "@/lib/games/gameKinds";
@@ -90,8 +89,6 @@ describe("isCorrectAnswer", () => {
 describe("round narrowing", () => {
   // @req REQ-120
   it("tells the two kinds apart without a cast", () => {
-    expect(isOptionRound(binary)).toBe(true);
-    expect(isOptionRound(estimate)).toBe(false);
     expect(isEstimateRound(estimate)).toBe(true);
     expect(isEstimateRound(binary)).toBe(false);
   });
