@@ -2442,6 +2442,114 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
 }
 
 /**
+ * Source entries whose locator is still a live World Factbook address,
+ * measured 2026-09-14.
+ *
+ * The CIA sunset The World Factbook on 2026-02-04 and its country URLs now
+ * redirect to the farewell page, so each of these citations points a reader at
+ * nothing. The edition stays an official, dated publication; only the locator
+ * died (prior art: AUDIT-CIA-FACTBOOK-RETIREMENT-2026 in
+ * docs/editorial/country-enrichment/COD-source-review.json).
+ *
+ * A ratchet with two edges, like `UNDATED_POLITY_CEILING`: above it, a new live
+ * Factbook URL was cited; below it, repairs landed and the constant must follow
+ * in the same change. A repair swaps the locator for a Wayback Machine
+ * snapshot taken before 2026-02-04, or re-sources the claim. At 0, delete the
+ * ratchet and make any live Factbook URL a plain error.
+ */
+export const RETIRED_CIA_FACTBOOK_URL_CEILING = 133;
+
+const LIVE_CIA_FACTBOOK =
+  /cia\.gov\/(?:library\/publications\/)?the-world-factbook/i;
+// An archived snapshot embeds the dead address in its own path; strip it first
+// so a repaired locator is not counted as live.
+const WAYBACK_SNAPSHOT = /web\.archive\.org\/web\/[^/\s]+\/\S*/gi;
+
+// `notes` is deliberately not read: a repaired entry may name the original
+// address there when it records the snapshot chain. `title` is, because one
+// fiche holds its only locator in the title with `url: null`.
+const FACTBOOK_LOCATOR_FIELDS = ["url", "reference", "title"] as const;
+
+function holdsLiveFactbookAddress(value: unknown): value is string {
+  return (
+    typeof value === "string" &&
+    LIVE_CIA_FACTBOOK.test(value.replace(WAYBACK_SNAPSHOT, ""))
+  );
+}
+
+export function checkRetiredCiaFactbookUrls(
+  datasetRoot: string,
+  ceiling: number = RETIRED_CIA_FACTBOOK_URL_CEILING
+): ValidationResult {
+  const citations: string[] = [];
+
+  const visit = (node: unknown, fiche: string, nodePath: string): void => {
+    if (Array.isArray(node)) {
+      node.forEach((item, i) => visit(item, fiche, `${nodePath}[${i}]`));
+      return;
+    }
+    if (typeof node !== "object" || node === null) return;
+
+    for (const [key, value] of Object.entries(node)) {
+      const childPath = nodePath ? `${nodePath}.${key}` : key;
+      if (key === "sources" && Array.isArray(value)) {
+        value.forEach((entry, i) => {
+          const record: Record<string, unknown> =
+            typeof entry === "object" && entry !== null
+              ? (entry as Record<string, unknown>)
+              : { url: entry };
+          const locator = FACTBOOK_LOCATOR_FIELDS.map((f) => record[f]).find(
+            holdsLiveFactbookAddress
+          );
+          if (!locator) return;
+          const title =
+            typeof record.title === "string" ? record.title : "(untitled)";
+          citations.push(
+            `${fiche}: ${childPath}[${i}] "${title}" cites ${locator}`
+          );
+        });
+      }
+      visit(value, fiche, childPath);
+    }
+  };
+
+  for (const fullPath of collectJsonFiles(datasetRoot)) {
+    let data: unknown;
+    try {
+      data = JSON.parse(fs.readFileSync(fullPath, "utf-8"));
+    } catch {
+      continue;
+    }
+    visit(data, path.relative(datasetRoot, fullPath), "");
+  }
+
+  const count = citations.length;
+  if (count === ceiling) return { ok: true, errors: [], warnings: [] };
+
+  if (count > ceiling) {
+    return {
+      ok: false,
+      errors: [
+        `Live World Factbook locators rose to ${count} (ceiling ${ceiling}) — ` +
+          `the Factbook was sunset on 2026-02-04; cite a dated Wayback Machine ` +
+          `snapshot taken before that day, or re-source the claim`,
+        ...citations.sort(),
+      ],
+      warnings: [],
+    };
+  }
+
+  return {
+    ok: false,
+    errors: [
+      `Live World Factbook locators fell to ${count} (ceiling ${ceiling}) — ` +
+        `lower RETIRED_CIA_FACTBOOK_URL_CEILING to ${count} in the same change`,
+    ],
+    warnings: [],
+  };
+}
+
+/**
  * FR30 + FR31 – Source URL resolvability (nightly only).
  * Skipped unless process.env.CHECK_SOURCE_URLS === "true".
  * Writes results to dataset/source-url-health.log (two levels above datasetRoot,
@@ -5036,6 +5144,12 @@ async function main() {
   newChecks.push({
     name: "Source identity",
     result: checkSourceIdentity(datasetRoot),
+  });
+
+  console.log("Retired CIA World Factbook URLs – descending ratchet...");
+  newChecks.push({
+    name: "Retired CIA World Factbook URLs",
+    result: checkRetiredCiaFactbookUrls(datasetRoot),
   });
 
   console.log("FR52 – Classification-tree integrity...");

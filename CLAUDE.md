@@ -344,9 +344,18 @@ label all say the same thing:
 
 | Identifier (code + DB) | Label (UI)       | Confidence weight | What it covers                                                                                  |
 | ---------------------- | ---------------- | ----------------- | ----------------------------------------------------------------------------------------------- |
-| `official`             | **Officielle**   | 1.0               | UN, UNFPA, CIA, SIL Ethnologue, Glottolog, UNESCO, IWGIA, national statistics institutes        |
+| `official`             | **Officielle**   | 1.0               | UN, UNFPA, SIL Ethnologue, Glottolog, UNESCO, IWGIA, national statistics institutes             |
 | `referenced`           | **Référencée**   | 0.7               | Published, identifiable, verifiable work — academic, press, books. Not necessarily official     |
 | `unverified`           | **Non vérifiée** | 0.4               | Aggregators, tertiary encyclopedias, blogs, social media, community accounts, AI-generated text |
+
+**The CIA World Factbook was sunset on 2026-02-04** (<https://www.cia.gov/the-world-factbook/>);
+its country URLs now redirect to that farewell page. An existing citation keeps its tier — an edition
+is still an official, dated publication — but its locator must become a dated Wayback Machine
+snapshot taken before that day, or the claim is re-sourced (UN, UNFPA, a national statistics
+institute). A mirror such as OpenFactbook is an aggregator, at `unverified`. A live
+`cia.gov/the-world-factbook` URL is never added as a new source: `RETIRED_CIA_FACTBOOK_URL_CEILING`
+in `validateAfrikData.ts` holds the ones still standing, and fails in both directions. Prior art:
+`AUDIT-CIA-FACTBOOK-RETIREMENT-2026` in `docs/editorial/country-enrichment/COD-source-review.json`.
 
 This supersedes the earlier Tier 1/2/3 policy, under which Tier 3 was forbidden and an uncitable
 claim was deleted. It also settles the aggregator question (Joshua Project, 101lasttribes,

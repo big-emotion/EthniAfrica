@@ -15,14 +15,33 @@ A `sources` entry with no tier is a blocking error.
 One three-value scale is used everywhere — code identifier, database value, API payload and
 user-facing label all say the same thing.
 
-| Identifier   | Label shown      | Weight | What it covers                                                                                          |
-| ------------ | ---------------- | ------ | ------------------------------------------------------------------------------------------------------- |
-| `official`   | **Officielle**   | 1.0    | UN, UNFPA, CIA World Factbook, SIL Ethnologue, Glottolog, UNESCO, IWGIA, national statistics institutes |
-| `referenced` | **Référencée**   | 0.7    | Published, identifiable, verifiable work — academic, press, books. Not necessarily official             |
-| `unverified` | **Non vérifiée** | 0.4    | Aggregators, tertiary encyclopedias, blogs, social media, community accounts, AI-generated text         |
+| Identifier   | Label shown      | Weight | What it covers                                                                                  |
+| ------------ | ---------------- | ------ | ----------------------------------------------------------------------------------------------- |
+| `official`   | **Officielle**   | 1.0    | UN, UNFPA, SIL Ethnologue, Glottolog, UNESCO, IWGIA, national statistics institutes             |
+| `referenced` | **Référencée**   | 0.7    | Published, identifiable, verifiable work — academic, press, books. Not necessarily official     |
+| `unverified` | **Non vérifiée** | 0.4    | Aggregators, tertiary encyclopedias, blogs, social media, community accounts, AI-generated text |
 
 A fiche resting only on `unverified` sources is **published**, and visibly marked
 low-confidence through `ConfidenceChip`. That is the intended outcome, not a defect to fix.
+
+### The CIA World Factbook is retired — cite an edition, never the live site
+
+The CIA sunset The World Factbook on 2026-02-04 (<https://www.cia.gov/the-world-factbook/>)
+and removed past editions from its site; every former country URL now lands on that
+farewell page. Do not reach for it as a current source.
+
+- **Never add** a live `cia.gov/the-world-factbook` URL. `validateAfrikData.ts` counts the
+  ones still in the corpus against `RETIRED_CIA_FACTBOOK_URL_CEILING` and fails on a new one.
+- **Citing an edition** is still legitimate: it stays an official, dated publication. Keep
+  `tier: "official"`, point `url` at a Wayback Machine snapshot captured before 2026-02-04
+  (`https://web.archive.org/web/<timestamp>/https://www.cia.gov/the-world-factbook/countries/<country>/`),
+  and say in `notes` which capture date the figure comes from.
+- **No usable snapshot**: re-source the claim — UN World Population Prospects, UNFPA, the
+  national statistics institute.
+- A mirror such as OpenFactbook is an aggregator, cited at `unverified`.
+
+Prior art: `AUDIT-CIA-FACTBOOK-RETIREMENT-2026` in
+`docs/editorial/country-enrichment/COD-source-review.json`.
 
 ### This replaced an earlier doctrine — do not restore it
 
@@ -40,8 +59,9 @@ must be replaced by a "primary" one before a proposal is final, it is stale.
 deliberately outside the tier union (`src/types/afrik.ts:180`), so it is never _shown_ as a
 level of authority.
 
-These are a genuine mixture: national censuses, SIL Ethnologue, UNEP and the CIA World
-Factbook sitting beside travel-agency pages. **Classify them; do not flatten them.**
+These are a genuine mixture: national censuses, SIL Ethnologue, UNEP and CIA World
+Factbook editions (retired — see above for how their locator is repaired) sitting beside
+travel-agency pages. **Classify them; do not flatten them.**
 Labelling them all `unverified` would drop a national census from 1.0 to 0.4.
 
 Ruling on a `needs_review` entry is always a welcome contribution.
@@ -114,8 +134,9 @@ a fiche that has sources somewhere.
 
 Useful starting points, not an allow-list. Anything else is citable at the tier it earns.
 
-**Demography** — UN World Population Prospects, UNFPA, UN DESA, CIA World Factbook, World
-Bank Open Data, national statistics institutes.
+**Demography** — UN World Population Prospects, UNFPA, UN DESA, World Bank Open Data,
+national statistics institutes. The CIA World Factbook is no longer one of them: an edition
+already cited is repaired through a dated snapshot, as described above.
 
 **Languages** — SIL Ethnologue (ISO 639-3, speaker counts, EGIDS), Glottolog
 (classification, glottocodes), UNESCO Atlas of Languages in Danger (vitality), WALS
