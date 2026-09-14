@@ -82,7 +82,7 @@ ref only ever answers "does this string appear somewhere?".
 - Deploying requires **publishing a GitHub Release on the upstream repository**, which requires
   write access. `deploy-production.yml` listens on `release: published` and nothing else — it
   has no `workflow_dispatch`, so there is no button either.
-- The five `PRODUCTION_OVH_SSH_*` values are GitHub Actions secrets. They are never in the
+- The five `PRODUCTION_SSH_*` values are GitHub Actions secrets. They are never in the
   repository, and GitHub does not expose secrets to workflows triggered by a fork's pull
   request.
 - The production `.env` exists only at `/srv/ethniafrica/.env` on the VPS, `chmod 600`.
@@ -295,5 +295,5 @@ Authentication → Policies.
 ## Related
 
 - [`../DEPLOYMENT.md`](../DEPLOYMENT.md) — environment variables and where each one lives
-- [`ovh-production-deploy.md`](./ovh-production-deploy.md) — deploy secrets, host, rollback
+- [`production-deploy.md`](./production-deploy.md) — deploy secrets, host, rollback
 - [`../PRODUCTION-READINESS-AUDIT.md`](../PRODUCTION-READINESS-AUDIT.md) — broader posture

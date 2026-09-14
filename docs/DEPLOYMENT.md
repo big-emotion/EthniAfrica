@@ -10,11 +10,11 @@ manual, two-step operation that no pipeline performs for you.
 
 ## Environments
 
-| Environment | Ships when                                  | Hosted on                          | Supabase project                           |
-| ----------- | ------------------------------------------- | ---------------------------------- | ------------------------------------------ |
-| Local       | —                                           | your machine                       | your own project, or a shared one          |
-| Recette     | `deploy-preview-recette.yml` is run by hand | Vercel preview                     | `shmrjtnfbqzceovroqjj`                     |
-| Production  | a GitHub Release is published               | OVH VPS, Gravelines `51.195.82.98` | a second project, ref not recorded in-repo |
+| Environment | Ships when                                  | Hosted on                              | Supabase project                           |
+| ----------- | ------------------------------------------- | -------------------------------------- | ------------------------------------------ |
+| Local       | —                                           | your machine                           | your own project, or a shared one          |
+| Recette     | `deploy-preview-recette.yml` is run by hand | Vercel preview                         | `shmrjtnfbqzceovroqjj`                     |
+| Production  | a GitHub Release is published               | self-hosted VPS (the application host) | a second project, ref not recorded in-repo |
 
 Neither environment deploys on a push any more. `recette` is still the integration branch and
 `main` is still what a release is tagged from — but the branch no longer triggers anything.
@@ -42,7 +42,7 @@ skipping, when either is missing.
 
 ## Deploying the application
 
-**Production is self-hosted on an OVH VPS in Gravelines (`51.195.82.98`), not on Vercel.**
+**Production is self-hosted on a VPS (the application host), not on Vercel.**
 
 ```
 git push origin main          →  nothing
@@ -59,7 +59,7 @@ opens an SSH session to the VPS, checks out the released tag in `/srv/ethniafric
 `workflow_dispatch`: production is not deployable from a dropdown.
 
 Full procedure, secrets, host layout and **rollback**:
-[`runbooks/ovh-production-deploy.md`](./runbooks/ovh-production-deploy.md).
+[`runbooks/production-deploy.md`](./runbooks/production-deploy.md).
 
 Vercel still hosts the **recette preview**, but nothing about it is automatic.
 [`vercel.json`](../vercel.json) sets `git.deploymentEnabled: false`, which turns off every
@@ -139,7 +139,7 @@ Publication safety:
   `bilingual-fr-default` to publish both languages while keeping `/fr` as the default, or
   `bilingual-en-default` only for the final English-default launch.
 
-  Change it in the target environment and rebuild. The OVH release workflow verifies `/`,
+  Change it in the target environment and rebuild. The production release workflow verifies `/`,
   `/fr`, `/en`, and the remembered-English-cookie path inside the new container before declaring
   the deploy healthy. A misspelled non-empty value deliberately fails that deploy even though
   the application itself remains safely French-only.
@@ -169,7 +169,7 @@ Required for a reader to report an error:
 
   ```bash
   # production — generate it on the host so the value never travels
-  ssh -p 49152 ubuntu@51.195.82.98
+  ssh -p <port> <user>@<app-host>   # values: PRODUCTION_SSH_* secrets / operator's private notes
   openssl rand -base64 48 | tr -d '\n'    # paste into /srv/ethniafrica/.env
   cd /srv/ethniafrica && docker compose up -d ethniafrica
 
@@ -295,7 +295,7 @@ hand means pointing both variables at the production project. `--target=staging`
 now throws.
 
 `.github/workflows/production-data-sync.yml` runs the same validate → preview → apply sequence
-automatically after a **successful OVH production deploy** — it is chained to
+automatically after a **successful production deploy** — it is chained to
 `deploy-production.yml` with `workflow_run` and runs only when that concluded `success`, so a
 failed deploy leaves the production corpus untouched. It then POSTs a cache revalidation to
 `https://ethniafrica.com/api/admin/revalidate`. It reads
@@ -379,7 +379,7 @@ console — access there is membership of `admin_allowlist`. Nothing reads `user
 re-published Release. Each deploy renames the outgoing image `ethniafrica:previous`, so going
 back is two commands and about ten seconds. Only one generation is kept. Full procedure —
 including rebuilding an older tag and the DNS fallback to Vercel — is in
-[`runbooks/ovh-production-deploy.md`](./runbooks/ovh-production-deploy.md). Nothing else is
+[`runbooks/production-deploy.md`](./runbooks/production-deploy.md). Nothing else is
 required: the frontend holds no state.
 
 **Database.** Migrations are not generally reversible; several drop tables and their data.
@@ -421,7 +421,7 @@ is blocking the read. Test with the anon key, never the service role.
 
 ## Related
 
-- [`runbooks/ovh-production-deploy.md`](./runbooks/ovh-production-deploy.md) — the production host, its secrets, and **rollback**
+- [`runbooks/production-deploy.md`](./runbooks/production-deploy.md) — the production host, its secrets, and **rollback**
 - [`runbooks/migration-state.md`](./runbooks/migration-state.md) — which migrations are live where
 - [`runbooks/afrik-data-sync.md`](./runbooks/afrik-data-sync.md) — loading the corpus
 - [`runbooks/restore-procedure.md`](./runbooks/restore-procedure.md) — backup restore, RTO/RPO

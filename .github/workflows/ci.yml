@@ -132,6 +132,14 @@ jobs:
       # pre-commit hook catches them locally; this catches what bypasses it.
       - run: npm run check:local-paths
 
+      # The same public-repository rule for the infrastructure: no server
+      # address, SSH port, hosting provider or datacenter location. The terms
+      # live in a repository variable, never in a tracked file, and the gate
+      # prints positions only so its log does not publish them either.
+      - run: npm run check:infra-disclosure
+        env:
+          INFRA_DISCLOSURE_TERMS: ${{ vars.INFRA_DISCLOSURE_TERMS }}
+
       # The one question none of the gates above asks: does anything still
       # import this? Ten checks watched traceability, action pins, the env
       # example, the migration sequence and the charters, and none of them

@@ -21,4 +21,11 @@ npx tsx scripts/ci/checkLocalPaths.ts --staged || {
   exit 1
 }
 
+# Ni adresse de serveur, ni port SSH, ni hébergeur, ni ville de datacenter.
+echo "🔒 Checking for host identifiers..."
+npx tsx scripts/ci/checkInfraDisclosure.ts --staged || {
+  echo "❌ A host identifier would be committed to a public repository"
+  exit 1
+}
+
 echo "✅ All pre-commit checks passed!"

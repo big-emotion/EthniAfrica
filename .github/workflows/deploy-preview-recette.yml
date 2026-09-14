@@ -28,7 +28,7 @@ jobs:
         env:
           DEPLOY_HOOK_URL: ${{ secrets.RECETTE_VERCEL_DEPLOY_HOOK_URL }}
         run: |
-          : "${DEPLOY_HOOK_URL:?RECETTE_VERCEL_DEPLOY_HOOK_URL is not set — create the hook in Vercel (Project Settings -> Git -> Deploy Hooks, branch: recette) and store its URL as a repository secret. See docs/runbooks/ovh-production-deploy.md}"
+          : "${DEPLOY_HOOK_URL:?RECETTE_VERCEL_DEPLOY_HOOK_URL is not set — create the hook in Vercel (Project Settings -> Git -> Deploy Hooks, branch: recette) and store its URL as a repository secret. See docs/runbooks/production-deploy.md}"
 
           # The hook URL is itself the credential — anyone holding it can spend build
           # minutes — so the body is written to a file rather than echoed with the URL.

@@ -59,7 +59,7 @@ a developer machine; Redirect URLs must list
 ### Production — self-hosted, not a dashboard
 
 Production is **not** `jajggbeimfudpzcxytbb`. It is a self-hosted stack at
-`https://supabase.ethniafrica.com`, on the Francfort VPS `145.239.76.125`, with
+`https://supabase.ethniafrica.com`, on the Supabase host, with
 its compose project in `/home/ubuntu/supabase/docker/`. There is no Supabase
 dashboard for it: GoTrue reads `GOTRUE_SITE_URL` and `GOTRUE_URI_ALLOW_LIST`
 from `SITE_URL` and `ADDITIONAL_REDIRECT_URLS` in that directory's `.env`.
@@ -76,7 +76,7 @@ The procedure is kept because it is how the value is changed again, and because
 `.env` is not in version control — nothing else records what production holds.
 
 ```bash
-ssh ubuntu@145.239.76.125
+ssh <user>@<supabase-host>
 cd /home/ubuntu/supabase/docker
 cp .env .env.bak-$(date +%Y%m%d)
 # ADDITIONAL_REDIRECT_URLS=https://ethniafrica.com/api/auth/callback

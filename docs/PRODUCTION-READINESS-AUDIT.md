@@ -38,7 +38,7 @@ forwarded-header policy.
 ### 2.1 Is the project ready for production?
 
 **Yes — it is in production and the release path works — conditional on two P1 security fixes.**
-`v4.7.0` and `v4.8.0` both shipped on 2026-09-12 through the GitHub Release → OVH path, and their
+`v4.7.0` and `v4.8.0` both shipped on 2026-09-12 through the GitHub Release → self-hosted VPS path, and their
 production data sync succeeded. Every _required_ merge gate is green: 9 133 tests, 0 validator
 errors, 0 editorial-rule errors, RLS on every live table.
 

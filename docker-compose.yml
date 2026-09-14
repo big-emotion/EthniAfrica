@@ -1,4 +1,4 @@
-# Production stack for the OVH VPS. Lives in the repository rather than on the host so
+# Production stack for the production VPS. Lives in the repository rather than on the host so
 # that a change to how production runs goes through a pull request like anything else.
 #
 # The host runs one compose project per application, all joined to Traefik's external
@@ -7,7 +7,7 @@
 # compose file: nothing here can take the router down with it.
 #
 # Deployed from /srv/ethniafrica by .github/workflows/deploy-production.yml.
-# Runbook: docs/runbooks/ovh-production-deploy.md
+# Runbook: docs/runbooks/production-deploy.md
 
 services:
   ethniafrica:
