@@ -1,7 +1,7 @@
 /**
  * Route-level tests for GET /api/v2/search (ETNI-38).
  * Covers: happy path, empty query, invalid params, filter combinations,
- * rate-limit 429 response, and 500 error.
+ * single metering (the middleware's, never the route's), and 500 error.
  */
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { GET, OPTIONS } from "../../v2/search/route";
@@ -351,30 +351,18 @@ describe("GET /api/v2/search (route)", () => {
   });
 
   // ── rate limiting ───────────────────────────────────────────────────────
-  it("rate-limit 429 — returns 429 with Retry-After and X-RateLimit-* headers", async () => {
-    const rateLimitedResponse = new Response(
-      JSON.stringify({ error: "rate_limited", retry_after_seconds: 30 }),
-      {
-        status: 429,
-        headers: {
-          "Retry-After": "30",
-          "X-RateLimit-Limit": "60",
-          "X-RateLimit-Remaining": "0",
-          "X-RateLimit-Reset": String(Date.now() + 30000),
-        },
-      }
-    );
-    (applyRateLimit as ReturnType<typeof vi.fn>).mockResolvedValue(
-      rateLimitedResponse
+  // @req REQ-059
+  it("is metered once, by the middleware, and never again in the route", async () => {
+    (ftsSearchHandler as ReturnType<typeof vi.fn>).mockResolvedValue(
+      mockEnvelope
     );
 
-    const req = new NextRequest("http://localhost/api/v2/search?q=Bantu");
-    const res = await GET(req);
+    const res = await GET(
+      new NextRequest("http://localhost/api/v2/search?q=Bantu")
+    );
 
-    expect(res.status).toBe(429);
-    expect(res.headers.get("Retry-After")).toBe("30");
-    expect(res.headers.get("X-RateLimit-Limit")).toBeDefined();
-    expect(res.headers.get("X-RateLimit-Remaining")).toBe("0");
+    expect(res.status).toBe(200);
+    expect(applyRateLimit).not.toHaveBeenCalled();
   });
 
   // ── error handling ──────────────────────────────────────────────────────

@@ -51,7 +51,7 @@ const options: swaggerJsdoc.Options = {
         get: {
           summary: "Search structured references",
           description:
-            "Searches the authenticated contributor reference library. The result is mutable and is never cached.",
+            "Searches the reference library. Open to any signed-in session; creating references, linking them to assertions and uploading working assets are reserved to moderators. The result is mutable and is never cached.",
           tags: ["API v2 - Reference Library"],
           security: [{ SupabaseJwtAuth: [] }],
           parameters: [
@@ -136,7 +136,7 @@ const options: swaggerJsdoc.Options = {
         post: {
           summary: "Create or resolve a structured reference",
           description:
-            "Creates a structured reference or returns an existing matching entry. The result is mutable and is never cached.",
+            "Creates a structured reference or returns an existing matching entry. Reserved to moderators: a signed-in session whose address is not on the moderator allowlist is refused with 403. The result is mutable and is never cached.",
           tags: ["API v2 - Reference Library"],
           security: [{ SupabaseJwtAuth: [] }],
           requestBody: {
@@ -206,6 +206,20 @@ const options: swaggerJsdoc.Options = {
                 },
               },
             },
+            403: {
+              description:
+                "Signed-in session whose address is not on the moderator allowlist.",
+              headers: {
+                "Cache-Control": {
+                  schema: { type: "string", example: "no-store" },
+                },
+              },
+              content: {
+                "application/json": {
+                  schema: { $ref: "#/components/schemas/ApiErrorEnvelope" },
+                },
+              },
+            },
             500: {
               description: "Internal server error.",
               headers: {
@@ -226,7 +240,7 @@ const options: swaggerJsdoc.Options = {
         post: {
           summary: "Link a reference to an assertion",
           description:
-            "Creates a structured locator linking an authenticated contributor reference to an assertion. The result is mutable and is never cached.",
+            "Creates a structured locator linking a library reference to an assertion. Reserved to moderators: a signed-in session whose address is not on the moderator allowlist is refused with 403. The result is mutable and is never cached.",
           tags: ["API v2 - Reference Library"],
           security: [{ SupabaseJwtAuth: [] }],
           requestBody: {
@@ -281,6 +295,20 @@ const options: swaggerJsdoc.Options = {
                 },
               },
             },
+            403: {
+              description:
+                "Signed-in session whose address is not on the moderator allowlist.",
+              headers: {
+                "Cache-Control": {
+                  schema: { type: "string", example: "no-store" },
+                },
+              },
+              content: {
+                "application/json": {
+                  schema: { $ref: "#/components/schemas/ApiErrorEnvelope" },
+                },
+              },
+            },
             500: {
               description: "Internal server error.",
               headers: {
@@ -301,7 +329,7 @@ const options: swaggerJsdoc.Options = {
         post: {
           summary: "Upload a private reference working asset",
           description:
-            "Stores a private scan or OCR working asset. The upload is never cached. The response contains metadata only: it omits binary content, storage bucket identifiers, and object or location paths, and it does not grant retrieval access.",
+            "Stores a private scan or OCR working asset. Reserved to moderators: a signed-in session whose address is not on the moderator allowlist is refused with 403. The upload is never cached. The response contains metadata only: it omits binary content, storage bucket identifiers, and object or location paths, and it does not grant retrieval access.",
           tags: ["API v2 - Reference Library"],
           security: [{ SupabaseJwtAuth: [] }],
           requestBody: {
@@ -357,6 +385,20 @@ const options: swaggerJsdoc.Options = {
                 },
               },
             },
+            403: {
+              description:
+                "Signed-in session whose address is not on the moderator allowlist.",
+              headers: {
+                "Cache-Control": {
+                  schema: { type: "string", example: "no-store" },
+                },
+              },
+              content: {
+                "application/json": {
+                  schema: { $ref: "#/components/schemas/ApiErrorEnvelope" },
+                },
+              },
+            },
             500: {
               description: "Internal server error.",
               headers: {
@@ -388,7 +430,7 @@ const options: swaggerJsdoc.Options = {
           scheme: "bearer",
           bearerFormat: "JWT",
           description:
-            "Supabase access token for an authenticated contributor. Pass as Authorization: Bearer <JWT>.",
+            "Supabase access token for a signed-in session. Pass as Authorization: Bearer <JWT>. A session alone does not open moderator operations: reference-library writes and report transitions also require the address to be on the moderator allowlist.",
         },
       },
       schemas: {

@@ -1,6 +1,6 @@
 /**
  * Route-level tests for GET /api/v2/compare (ETNI-480).
- * Covers: happy path, each error (400/404/429), envelope shape, cache header.
+ * Covers: happy path, each error (400/404), single metering, envelope shape, cache header.
  */
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { GET, OPTIONS } from "../compare/route";
@@ -218,33 +218,21 @@ describe("GET /api/v2/compare (route)", () => {
 
   // ── rate limiting ───────────────────────────────────────────────────────
   // @req REQ-084
-  it("rate-limit 429 — returns 429 with Retry-After and X-RateLimit-* headers", async () => {
-    const rateLimitedResponse = new Response(
-      JSON.stringify({ error: "rate_limited", retry_after_seconds: 30 }),
-      {
-        status: 429,
-        headers: {
-          "Retry-After": "30",
-          "X-RateLimit-Limit": "60",
-          "X-RateLimit-Remaining": "0",
-          "X-RateLimit-Reset": String(Date.now() + 30000),
-        },
-      }
-    );
-    (applyRateLimit as ReturnType<typeof vi.fn>).mockResolvedValue(
-      rateLimitedResponse
+  it("is metered once, by the middleware, and never again in the route", async () => {
+    (assembleComparison as ReturnType<typeof vi.fn>).mockResolvedValue({
+      ok: true,
+      entityType: "peoples",
+      entities: mockEntities,
+    });
+
+    const res = await GET(
+      new NextRequest(
+        "http://localhost/api/v2/compare?type=peoples&ids=PPL_SHONA,PPL_ZULU"
+      )
     );
 
-    const req = new NextRequest(
-      "http://localhost/api/v2/compare?type=peoples&ids=PPL_SHONA,PPL_ZULU"
-    );
-    const res = await GET(req);
-
-    expect(res.status).toBe(429);
-    expect(res.headers.get("Retry-After")).toBe("30");
-    expect(res.headers.get("X-RateLimit-Limit")).toBeDefined();
-    expect(res.headers.get("X-RateLimit-Remaining")).toBe("0");
-    expect(assembleComparison).not.toHaveBeenCalled();
+    expect(res.status).toBe(200);
+    expect(applyRateLimit).not.toHaveBeenCalled();
   });
 
   // ── error handling ──────────────────────────────────────────────────────

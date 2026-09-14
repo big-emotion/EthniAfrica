@@ -55,6 +55,7 @@
  *     tags: [API v2 - Search]
  *     security:
  *       - BearerAuth: []
+ *       - {}
  *     parameters:
  *       - in: query
  *         name: q
@@ -185,7 +186,6 @@
 import { NextRequest } from "next/server";
 import { ftsSearchHandler } from "@/api/v2/handlers/search";
 import { jsonWithCors, corsOptionsResponse } from "@/lib/api/cors";
-import { applyRateLimit } from "@/lib/api/rate-limit";
 import { createApiError } from "@/api/v2/utils/response";
 import { logger } from "@/lib/api/logger";
 import { searchQueryLog } from "@/lib/search/searchQueryLog";
@@ -341,10 +341,6 @@ function parseParams(
 // @req REQ-002
 export async function GET(request: NextRequest) {
   const startTime = Date.now();
-
-  // ── rate limiting (AR11) ──────────────────────────────────────────────────
-  const rateLimitResponse = await applyRateLimit(request);
-  if (rateLimitResponse) return rateLimitResponse;
 
   // ── param validation ──────────────────────────────────────────────────────
   const parsed = parseParams(request.nextUrl.searchParams);

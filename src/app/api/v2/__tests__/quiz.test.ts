@@ -119,17 +119,15 @@ describe("GET /api/v2/quiz/scopes (route)", () => {
   });
 
   // @req REQ-103
-  it("rate-limit 429 short-circuits before calling the handler", async () => {
-    const rateLimited = new Response(
-      JSON.stringify({ error: "rate_limited" }),
-      { status: 429, headers: { "Retry-After": "30" } }
+  it("is metered once, by the middleware, and never again in the route", async () => {
+    (getQuizScopesHandler as ReturnType<typeof vi.fn>).mockResolvedValue(
+      scopesEnvelope
     );
-    (applyRateLimit as ReturnType<typeof vi.fn>).mockResolvedValue(rateLimited);
 
     const res = await scopesGET(scopesRequest());
 
-    expect(res.status).toBe(429);
-    expect(getQuizScopesHandler).not.toHaveBeenCalled();
+    expect(res.status).toBe(200);
+    expect(applyRateLimit).not.toHaveBeenCalled();
   });
 
   // @req REQ-103
@@ -311,20 +309,13 @@ describe("GET /api/v2/quiz/session (route)", () => {
   });
 
   // @req REQ-103
-  it("rate-limit 429 short-circuits before parsing", async () => {
-    const rateLimited = new Response(
-      JSON.stringify({ error: "rate_limited" }),
-      { status: 429, headers: { "Retry-After": "30" } }
+  it("is metered once, by the middleware, and never again in the route", async () => {
+    await sessionGET(
+      new NextRequest("http://localhost/api/v2/quiz/session?pays=GHA")
     );
-    (applyRateLimit as ReturnType<typeof vi.fn>).mockResolvedValue(rateLimited);
 
-    const req = new NextRequest(
-      "http://localhost/api/v2/quiz/session?pays=GHA"
-    );
-    const res = await sessionGET(req);
-
-    expect(res.status).toBe(429);
-    expect(composeQuizSessionHandler).not.toHaveBeenCalled();
+    expect(composeQuizSessionHandler).toHaveBeenCalled();
+    expect(applyRateLimit).not.toHaveBeenCalled();
   });
 
   // @req REQ-103
