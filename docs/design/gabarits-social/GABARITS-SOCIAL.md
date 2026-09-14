@@ -617,7 +617,7 @@ s'écrit ici d'abord, jamais dans une carte.
 | des villes, des lieux | un registre de la banque ci-dessous | celui du registre | « Cette ville n'a pas changé de nom. » | « nom. » | « On l'a rebaptisée. » |
 | une projection, une carte | un registre de la banque ci-dessous | celui du registre | « La carte ne mentait pas. Elle ne disait pas tout. » | « tout. » | « On l'a redessinée. » |
 | le nom d'un pays | un registre de la banque ci-dessous | celui du registre | « Ce pays ne s'est pas renommé. » | « renommé. » | « On l'a rebaptisé. » — *dérivé de la ligne des villes le 2026-09-13, à valider* |
-| une langue, une famille | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas disparu. » | « disparu. » | *à fixer* — aucune seconde moitié n'a encore été écrite |
+| une langue, une famille | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas disparu. » | « disparu. » | « C'est la case qu'on lui avait donnée qui a disparu. » — *fixé le 2026-09-14 par l'opérateur, à l'écriture de « famille-linguistique-quatre-familles »* |
 
 **`cards.json` ne porte jamais `**`** : les titres s'y recopient en texte brut depuis
 cette table, le moteur accentue de lui-même le dernier mot d'une clôture avec sa
