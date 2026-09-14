@@ -16,8 +16,9 @@ exonym.
 
 ## Getting started
 
-Node **20.x** (`package.json` `engines`). The AFRIK data loaders are the one exception and need
-Node ≥ 22 — see [`docs/runbooks/afrik-data-sync.md`](docs/runbooks/afrik-data-sync.md).
+Node **22.x** (`package.json` `engines`, and the production `Dockerfile`). The AFRIK data loaders
+need it too: `@supabase/supabase-js` requires a native `WebSocket` — see
+[`docs/runbooks/afrik-data-sync.md`](docs/runbooks/afrik-data-sync.md).
 
 ```bash
 git clone https://github.com/big-emotion/ethniafrica.git
@@ -46,6 +47,17 @@ answers 503 and every report dialog fails while the build stays green. Sentry, P
 quiz feature flag are optional. Upstash (rate limiting) is optional locally but mandatory in
 production, where rate limiting fails closed. `.env.example` is annotated and authoritative;
 `npm run check:env-example` keeps it honest against what the code actually reads.
+
+The moderation console opens to a magic link sent to an address on `admin_allowlist`; there are no
+public accounts and no OAuth providers. Put the first address on the list with the target
+project's service-role key:
+
+```bash
+npx tsx scripts/seedAdminAllowlist.ts moderation@example.org "Editorial moderation lead"
+```
+
+`scripts/seedAdmin.ts` writes the legacy `user_roles` table, which opens no door in the console —
+see [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md#first-moderator).
 
 ---
 
@@ -87,9 +99,10 @@ and `scripts/ci/checkEditorialRules.ts` apply are documented in
 **`/api/v2` only.** V1 (`/api/regions`, `/api/ethnicities`) was removed with the schema behind
 it; anything that mentions regions or ethnicities as entities is stale.
 
-Resources under `/api/v2/`: `countries`, `peoples`, `language-families`, `relations`,
-`migrations`, `names`, `oral-narratives`, `sources`, `reference-library`, `search`, `compare`,
-`confidence`, `doctrine`, `flags`, `quiz`, `feed`, `keys`.
+Resources under `/api/v2/`: `countries`, `peoples`, `language-families`, `languages`,
+`patronymes`, `relations`, `migrations`, `names`, `oral-narratives`, `dossiers`, `media`,
+`sources`, `reference-library`, `search`, `compare`, `confidence`, `doctrine`, `flags`,
+`antibot`, `quiz`, `feed`, `keys`. The folders under `src/app/api/v2/` are the list.
 
 ```bash
 curl http://localhost:3000/api/v2/countries
@@ -103,9 +116,11 @@ Every endpoint splits across three layers — route (HTTP, CORS, cache headers) 
 OpenAPI spec in `src/lib/api/openapiV2.ts`, which `npm run openapi:diff` gates against
 breaking changes.
 
-Requests from another origin need an API key; same-origin requests are exempt, so the frontend
-embeds no key. Rate limits apply per key tier. Bulk exports: `/api/download?format=csv` or
-`format=excel`.
+No API key is required. A keyless request is served on the anonymous tier, 60 requests a minute
+per IP; an `Authorization: Bearer <key>` header selects that key's larger quota, and a key that is
+unknown, revoked or expired is refused with 401 rather than served anonymously. Where a request
+says it came from (`Origin`, `Referer`) authorises nothing, so the frontend embeds no key and is
+metered like any other reader. Bulk exports: `/api/download?format=csv` or `format=excel`.
 
 The codebase supports **English and French**, while `SITE_LOCALE_MODE` controls what a deployment
 publishes. Its safe default, `fr-only`, keeps English URLs and controls silent;

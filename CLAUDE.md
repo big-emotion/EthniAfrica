@@ -68,7 +68,7 @@ src/lib/api/openapiV2.ts             # OpenAPI spec (openapi:diff gates breaking
 
 Shared: `src/api/v2/utils/{validation,response}.ts`, `src/api/v2/schemas/` (zod), `src/api/v2/serializers/`, `src/lib/api/cors.ts`.
 
-`src/middleware.ts` is load-bearing and does four unrelated jobs: CSP/security headers with a per-request nonce, locale resolution (`SITE_LOCALE_MODE` failing closed to `fr-only`, the `ethni-locale` cookie for an explicit choice, English slugs rewritten onto the French route folders, the resolved locale passed down as the `x-locale` request header so the root layout can declare `<html lang>`), API-key validation for `/api/v2/*` (PBKDF2-hashed keys in `api_keys`; same-origin requests are exempt so the frontend needs no embedded key), and Upstash rate limiting.
+`src/middleware.ts` is load-bearing and does four unrelated jobs: CSP/security headers with a per-request nonce, locale resolution (`SITE_LOCALE_MODE` failing closed to `fr-only`, the `ethni-locale` cookie for an explicit choice, English slugs rewritten onto the French route folders, the resolved locale passed down as the `x-locale` request header so the root layout can declare `<html lang>`), API-key metering for `/api/v2/*` (a keyless request is served on the anonymous tier, 60 requests a minute per IP; a valid Bearer key, PBKDF2-hashed in `api_keys`, selects its tier's quota; a present but invalid key is refused with 401 rather than downgraded; `Origin` and `Referer` authorise nothing, because any client can forge them — so the frontend embeds no key and is metered like any anonymous reader), and Upstash rate limiting.
 
 ### AFRIK data pipeline
 
@@ -497,6 +497,7 @@ deployment stays on the default `fr-only` mode.
 
   It is local git state, so it cannot be committed and every new clone needs it again. Without it a worktree starts dozens of commits behind and its PR carries the whole `main → recette` delta. Verify with `git symbolic-ref --short refs/remotes/origin/HEAD`; the `worktree.baseRef` setting only chooses between that ref (`fresh`, the default) and the local HEAD (`head`) — it cannot name a branch.
 
+- **A PR is never merged over a red required check**, whatever the cause. When an environment outage turns every gate red, wait for it or fix the environment, then re-run. A red check that is "probably environmental" is unproven until it goes green: on 2026-09-14 six merges (#1037–#1041 into `recette`, #1031 into `main`) went through red `axe-core (Storybook)` and `Playwright smoke` during a recette egress-quota outage, and `main` then held code no green run had seen.
 - `recette ↔ main` sync PRs must use a **merge commit**, not a squash; squashing has broken the ancestry before.
 - Conventional commits (commitlint on `commit-msg`). Pre-commit runs `type-check` + `lint-staged`.
 - Never add `Co-Authored-By` trailers.
@@ -530,7 +531,7 @@ TDD (failing test first) and KISS. Tests exercise the public interface — no re
 
 Copy `.env.example` → `.env.local`. Required to run: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` (server-only). Required for reporting to work at all: `ANTIBOT_HMAC_SECRET` (server-only, any long random string) — **not** inert when unset, `GET /api/v2/antibot/challenge` answers 503 and every report dialog dies on "la vérification n'a pas abouti" while the build stays green. It replaced `CLOUDFLARE_TURNSTILE_SECRET_KEY`, which no longer exists. Required in production: `NEXT_PUBLIC_SITE_URL` — `src/lib/siteUrl.ts` throws on a production server without it, so every page answers 500 and the container `HEALTHCHECK` fails, while `next build` is exempt and stays green; check the VPS `.env` before a Release. Optional subsystems: `UPSTASH_REDIS_REST_*` (rate limiting), `SENTRY_DSN` / `NEXT_PUBLIC_SENTRY_DSN`, `NEXT_PUBLIC_PLAUSIBLE_DOMAIN`, `ANTIBOT_DIFFICULTY_BITS`, `ANTIBOT_TTL_MS`, `REVALIDATE_SECRET`, `SUPABASE_WEBHOOK_SECRET`, `NEXT_PUBLIC_FEATURE_QUIZ`. The CI build passes placeholder Supabase values so fork and Dependabot PRs still gate.
 
-Admin auth is Supabase Auth (magic-link, GitHub, Google OAuth); roles live in `user_roles` with values `reader`, `contributor`, `moderator`, `admin`, `advisor`. First admin: `ADMIN_EMAIL=… npx tsx scripts/seedAdmin.ts`.
+Admin auth is a Supabase Auth magic link to an address on `admin_allowlist` (migration `074`, checked by `src/lib/supabase/moderator.ts`), and nothing else: GitHub and Google are disabled in `supabase/config.toml`, because the atlas has no public accounts for a provider to federate. First moderator: `npx tsx scripts/seedAdminAllowlist.ts <email> "<note>"` with the target project's service-role key — nobody can open the console to add the first address, so whoever holds that key writes it. Procedure: `docs/runbooks/moderation-access.md`. `user_roles` and `scripts/seedAdmin.ts` are **legacy**: the role opens no door in the moderation console; the table's one remaining reader is `src/lib/rights/protected-asset-access.ts`, which no route calls.
 
 <!-- BEGIN:nextjs-agent-rules -->
 
