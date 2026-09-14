@@ -115,18 +115,29 @@ remplace pas** : il répond à la question « pourquoi cette série existe »,
 pas « comment une carte s'écrit ». Reste à décider avec l'opérateur, dans une
 prochaine passe :
 
-- Comment la clôture d'un épisode fait le lien explicite entre le pouvoir de
-  nommer et sa persistance aujourd'hui, sans tomber dans le registre de la
-  réparation que cet essai écarte — la clôture actuelle (« Ces peuples n'ont
-  pas été rassemblés. C'est la carte qui a été dessinée autour d'eux. ») fait
-  la moitié du chemin ; l'autre moitié (le pouvoir toujours en place, montré
-  et non jugé) n'est pas encore écrite dans le gabarit de cette série.
-- Si ce fil (« direction prise » → « ce pouvoir est-il toujours en place »)
-  doit être un renversement propre à la série, distinct de la clôture
-  générique du type de contenu.
+- **Tranché le 2026-09-14** — l'autre moitié de la clôture (le pouvoir
+  toujours en place, montré et non jugé) est une **carte propre à la série**,
+  juste avant la clôture générique du type de contenu, jamais à sa place :
+  celle-ci reste obligatoire (§7 ter, critère 8 de `ethniafrica-message`) et
+  se rend telle quelle. Première formulation proposée par l'agent — « Encore
+  aujourd'hui, la Côte d'Ivoire reste adossée à la France. » — **refusée par
+  l'opérateur** : trop large, non sourcée par l'épisode (une affirmation
+  économique et politique qu'une vidéo sur un nom ne peut pas porter), et
+  risquant de basculer soit en accusation, soit en confirmation du discours
+  négatif sur l'Afrique que cet essai écarte. Retenue à la place, strictement
+  limitée à ce que l'épisode montre — le nom, rien d'autre :
+
+  > Aucun de ces noms n'a changé depuis l'indépendance.
+
+  Une phrase, un seul constat vérifiable, aucune interprétation ajoutée.
+
 - Le sujet Côte d'Ivoire porte désormais une structure en huit points (noms de
   lieux avant/après, mot juste antérieur, comment on nomme le pays aujourd'hui,
   grandes zones, quatre régions, origine des quatre grands groupes
   ethniques, pourquoi ils se sont trouvés là) trop riche pour un seul reel de
   90 secondes — décidé le 2026-09-14 : elle se découpe en plusieurs épisodes
   courts plutôt qu'un format long, voir `post.md` du sujet pour le découpage.
+  Les groupes Akan et Krou sont déjà publiés ailleurs (carrousel Akan,
+  2026-09-12 ; vidéo Krou, 2026-09-12) — un épisode qui les nomme **renvoie**
+  vers ces productions plutôt que de les refaire. Mandé est en atelier, non
+  rendu ; Gur/Voltaïque n'a encore aucun rapport de sujet.
