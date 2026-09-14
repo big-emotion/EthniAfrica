@@ -3,6 +3,7 @@ import swaggerJsdoc from "swagger-jsdoc";
 
 import { OPENAPI_V2_TAGS } from "@/lib/api/openapiV2Tags";
 import { PRODUCT_NAME } from "@/lib/brand";
+import { resolveSiteUrl } from "@/lib/siteUrl";
 
 const options: swaggerJsdoc.Options = {
   definition: {
@@ -33,11 +34,12 @@ const options: swaggerJsdoc.Options = {
     },
     servers: [
       {
+        // A Vercel preview names its own URL; everywhere else the configured
+        // site URL, with the resolver deciding what an unset one means.
         url:
-          process.env.NEXT_PUBLIC_SITE_URL ||
-          (process.env.VERCEL_URL
+          process.env.VERCEL_URL && !process.env.NEXT_PUBLIC_SITE_URL
             ? `https://${process.env.VERCEL_URL}`
-            : "http://localhost:3000"),
+            : resolveSiteUrl(),
         description: process.env.VERCEL_URL
           ? "Serveur de production"
           : "Serveur de développement",

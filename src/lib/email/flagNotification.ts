@@ -4,6 +4,7 @@ import { graphConfigured, sendViaGraph } from "@/lib/email/graph";
 import type { Language } from "@/types/shared";
 import { getCountryRoute, getFamilyRoute, getPeopleRoute } from "@/lib/routing";
 import { getStaticPageRoute } from "@/lib/routing";
+import { resolveSiteUrl } from "@/lib/siteUrl";
 import {
   buildFlagResolutionEmailEn,
   buildFlagVerificationEmailEn,
@@ -34,12 +35,8 @@ export interface FlagResolutionRecipient {
   language?: Language;
 }
 
-function siteUrl(): string {
-  return process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-}
-
 function flagPageUrl(publicSlug: string, language: Language = FR): string {
-  return `${siteUrl()}${getStaticPageRoute(language, "reports")}/${publicSlug}`;
+  return `${resolveSiteUrl()}${getStaticPageRoute(language, "reports")}/${publicSlug}`;
 }
 
 /**
@@ -56,11 +53,11 @@ function ficheUrl(
   if (!targetType || !targetId) return null;
   switch (targetType) {
     case "people":
-      return `${siteUrl()}${getPeopleRoute(language, targetId)}`;
+      return `${resolveSiteUrl()}${getPeopleRoute(language, targetId)}`;
     case "country":
-      return `${siteUrl()}${getCountryRoute(language, targetId)}`;
+      return `${resolveSiteUrl()}${getCountryRoute(language, targetId)}`;
     case "language_family":
-      return `${siteUrl()}${getFamilyRoute(language, targetId)}`;
+      return `${resolveSiteUrl()}${getFamilyRoute(language, targetId)}`;
     default:
       return null;
   }
@@ -217,7 +214,7 @@ export async function sendFlagVerificationEmail({
   }
 
   const reportsRoute = getStaticPageRoute(language, "reports");
-  const verificationLink = `${siteUrl()}${reportsRoute}/verifier?token=${encodeURIComponent(token)}`;
+  const verificationLink = `${resolveSiteUrl()}${reportsRoute}/verifier?token=${encodeURIComponent(token)}`;
 
   if (language === "en") {
     const content = buildFlagVerificationEmailEn({
