@@ -182,7 +182,7 @@ one tool that files folders onto the library's own shelves.
 
 ### Publishing — the audience, the plan, the video
 
-The publishing chain runs in one order, and **all eight of its skills live here**,
+The publishing chain runs in one order, and **all nine of its skills live here**,
 under their `ethniafrica-` names. They left for the private workspace on
 2026-09-10, on the rule that a public repository carries no production skills, and
 came back on 2026-09-11 when that rule was reversed: an engine and a chain whose
@@ -219,6 +219,13 @@ reseaux-help — à tout moment : où j'en suis, doublons, prochain geste
   `purposeChapter` and GABARITS-SOCIAL §7 ter, because the 2026-09-13 message
   audit (`docs/audience/message/`) found that doctrine in two productions out of
   twenty-seven while all of them had passed the four render gates.
+- **The myth check — `/ethniafrica-mythe`.** Not a step either: `idee`,
+  `structure` and `produire` each call it. It asks whether the subject undoes a
+  belief its audience actually holds, and whether the correction is sourced in
+  a fiche — because a correction written from memory swaps one myth for another
+  (the first Côte d'Ivoire draft credited Bouët-Willaumez with a name the
+  Portuguese navigators used centuries before him). « explique » is a valid
+  verdict; only an invented myth or an unsourced correction blocks.
 - **Where am I — `/ethniafrica-reseaux-help`.** Reads the pipeline state and
   `social/tools/etat-pipeline/bilan-sujets.mjs`, flags a validated post whose
   subject is already published in the same format, and names one next move.

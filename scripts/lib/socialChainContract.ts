@@ -36,6 +36,27 @@ export const DOCTRINE_SOURCES = [
 ] as const;
 
 /**
+ * The myth check. It asks whether a subject undoes a belief its audience
+ * actually holds, and whether the correction is sourced — because a correction
+ * written from memory replaces one myth with another.
+ */
+export const MYTH_SKILL = "ethniafrica-mythe";
+
+/**
+ * Every step that makes content calls it, not only the render: the subject is
+ * cheapest to kill at `idee`, and the cards can drift from the verified
+ * correction between `structure` and `produire`.
+ */
+export const MYTH_CALLERS = [
+  "ethniafrica-idee",
+  "ethniafrica-structure",
+  RENDER_SKILL,
+] as const;
+
+/** Where a correction is sourced from: the fiche, not the draft's own claim. */
+export const CORPUS_SOURCE_DIR = "dataset/source/afrik/";
+
+/**
  * The state every « où j'en suis » answer must come from. The helper reads what
  * the post.md headers say, never what a previous conversation remembered.
  */
@@ -87,6 +108,26 @@ export function checkSocialChainContract(
       skill: RENDER_SKILL,
       detail: `does not gate the render on ${MESSAGE_SKILL}`,
     });
+  }
+
+  const myth = namedSkill(projectRoot, MYTH_SKILL, overrides, issues);
+  if (myth !== null && !myth.includes(CORPUS_SOURCE_DIR)) {
+    issues.push({
+      skill: MYTH_SKILL,
+      detail: `does not source the correction from ${CORPUS_SOURCE_DIR}`,
+    });
+  }
+
+  for (const caller of MYTH_CALLERS) {
+    // The render step was already loaded above; loading it again would report
+    // a broken frontmatter twice.
+    const markdown =
+      caller === RENDER_SKILL
+        ? render
+        : namedSkill(projectRoot, caller, overrides, issues);
+    if (markdown !== null && !markdown.includes(MYTH_SKILL)) {
+      issues.push({ skill: caller, detail: `does not call ${MYTH_SKILL}` });
+    }
   }
 
   const helper = namedSkill(projectRoot, HELPER_SKILL, overrides, issues);

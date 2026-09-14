@@ -193,6 +193,9 @@ précède les cinq portes de `produire`, elle ne s'y ajoute pas.
 
 Avant de dire que `structure` est fini :
 
+0. **Lance `ethniafrica-mythe` sur les cartes écrites**, et affiche son verdict
+   avec le texte : la correction que le rapport de sujet avait vérifiée a pu
+   glisser en devenant une carte.
 1. **Affiche le texte complet dans la conversation**, pas un lien vers le
    fichier : le `narration.fr.txt` scène par scène (chaque paragraphe
    identifié à sa carte), puis chaque `titre`/`corps`/`source` de
