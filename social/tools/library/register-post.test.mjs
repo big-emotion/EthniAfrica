@@ -14,8 +14,20 @@ import { spawnSync } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { test } from "node:test";
+import { after, test } from "node:test";
 import { fileURLToPath } from "node:url";
+
+const scratchDirs = [];
+after(() => {
+  for (const dir of scratchDirs)
+    fs.rmSync(dir, { recursive: true, force: true });
+});
+
+function scratchDir(prefix) {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), prefix));
+  scratchDirs.push(dir);
+  return dir;
+}
 
 const TOOL = path.join(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -78,7 +90,7 @@ const LEDGER = {
 
 /** A library laid out as the tool expects: the index beside the posts shelf. */
 function scratchLibrary({ indent = "  ", ledgerText } = {}) {
-  const root = fs.mkdtempSync(path.join(os.tmpdir(), "register-post-"));
+  const root = scratchDir("register-post-");
   const index = path.join(root, "00-Index");
   const posts = path.join(root, "02-Reseaux-sociaux");
   fs.mkdirSync(index);
@@ -307,7 +319,7 @@ test("no library, or no ledger beside it, is an error rather than an empty libra
   assert.notEqual(unconfigured.status, 0);
   assert.match(unconfigured.stderr, /ETHNIAFRICA_SOCIAL_POSTS/);
 
-  const bare = fs.mkdtempSync(path.join(os.tmpdir(), "register-post-bare-"));
+  const bare = scratchDir("register-post-bare-");
   const shelfOnly = path.join(bare, "02-Reseaux-sociaux");
   fs.mkdirSync(shelfOnly);
   const missing = register(MANDE, shelfOnly);
