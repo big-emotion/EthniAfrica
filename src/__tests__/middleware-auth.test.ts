@@ -348,6 +348,26 @@ describe("middleware - /api/v2/* authentication", () => {
     expect(mockNextResponseNext).toHaveBeenCalled();
   });
 
+  // The moderation console's write endpoints authenticate a Supabase session
+  // and check the allowlist in the handler. Read as an API key, the
+  // moderator's session token is refused here and the handler never runs.
+  // @req REQ-042
+  it("leaves the session-authenticated /api/v2/admin subtree to its handlers, metered anonymously", async () => {
+    const request = createMockRequest(
+      "https://example.com/api/v2/admin/source-tier-rulings",
+      { authorization: "Bearer session-jwt" }
+    );
+    await middleware(request);
+
+    expect(validateApiKey).not.toHaveBeenCalled();
+    expect(evaluateRateLimit).toHaveBeenCalledWith(request);
+    expect(mockNextResponseJson).not.toHaveBeenCalledWith(
+      { error: "invalid_api_key" },
+      { status: 401 }
+    );
+    expect(mockNextResponseNext).toHaveBeenCalled();
+  });
+
   it("should not apply auth logic for non-v2 routes", async () => {
     const request = createMockRequest("https://example.com/api/health");
     await middleware(request);
