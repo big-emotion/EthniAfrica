@@ -718,7 +718,40 @@ generated people is still not the people's own visual record.
 
 ---
 
-## 10. What this charter does not cover
+## 10. Performance budget
+
+A lab score is kept apart from the aim it falls short of, so that neither can
+quietly become the other.
+
+**Target: 0.85**. The Lighthouse performance score every route aims for under
+the mobile emulation the nightly matrix runs. The three assembled fiches are
+warned against it rather than failed: they open on a WebGL globe that a
+GPU-less runner rasterises on its CPU, a cost a reader's phone does not pay, and
+`.lighthouserc.js` holds their blocking time and LCP as ratchets instead.
+
+**Accepted lab floor off the fiches: 0.73**. Every route that does not open on
+an assembled fiche fails the build below this score. It is the lowest three-run
+median the 2026-09-12 nightly measured (0.75, the English home) less two points
+of runner noise, and it was accepted as the budget on 2026-09-14 (production
+audit, D9-2). What those routes share is the common client chunk, not their own
+code, so the gap to 0.85 closes in that chunk rather than route by route. That
+work is tracked on its own; this number does not drift toward the target on
+its own either.
+
+The floor is a ratchet. It rises toward the target in the same change as the
+chunk reduction that earned it, and lowering it to absorb a regression is a
+charter change argued here first.
+`scripts/__tests__/performanceBudgetCharter.test.ts` fails when this section and
+`.lighthouserc.js` disagree.
+
+A lab score is not a reader's experience either. Real-user Core Web Vitals are
+sampled through Sentry, and only for a reader who accepted analytics — the same
+choice that loads Plausible — so they describe a consented sample, never the
+audience.
+
+---
+
+## 11. What this charter does not cover
 
 - **The source code's licence.** §2 grants CC BY-SA 4.0 over the content and
   deliberately grants nothing over the code, which stays reserved until its own
