@@ -10,15 +10,12 @@ export default {
     // (REQ-145). Staged-scoped and grandfathered, so it blocks only the
     // literals this commit adds.
     "tsx scripts/ci/checkCopyLiterals.ts --staged",
-    // PROJECT-SPECIFIC: dictionary changes keep both locales on the same keys.
-    "tsx scripts/ci/checkTranslationParity.ts --staged",
+    // Translation parity is deliberately absent: it is reported, never a
+    // reason to refuse a commit (REQ-171, DEC-055). Run
+    // `npm run check:translation-parity -- --staged` to read the report.
   ],
   "*.{css,md,mjs}": ["prettier --write"],
-  "*.json": [
-    "prettier --write",
-    // PROJECT-SPECIFIC: a changed corpus record and its sidecar move together.
-    "tsx scripts/ci/checkTranslationParity.ts --staged",
-  ],
+  "*.json": ["prettier --write"],
 
   // PROJECT-SPECIFIC: this repo also carries plain JS/JSX (scripts, config)
   // and YAML workflow definitions, both covered by the previous setup.

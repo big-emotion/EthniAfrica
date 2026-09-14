@@ -471,19 +471,21 @@ So those three may carry no repository path, no JSON field path, no raw `PPL_`/`
 
 `checkEditorialRules.ts` enforces this as `reader-facing-register` at error severity; the banned vocabulary is one exported constant, `INTERNAL_REGISTER_PATTERNS`. Doctrine, rewrite table and a paste-able prompt block for curation sessions: `docs/editorial/reader-facing-register.md`.
 
-### Bilingual content (`npm run check:translation-parity`, CI-blocking)
+### Bilingual content (`npm run check:translation-parity`, reported — never blocking)
 
-Content added or changed in either language must carry its counterpart in the other, or an explicit deferral with a reason — a fiche field, a home fact, a UI string, a quiz template. The gate is symmetric: French without English fails exactly as English without French does, and a source field edited after its translation was produced is reported as drifted, not accepted (REQ-145).
+Content added or changed in either language should carry its counterpart in the other, or an explicit deferral with a reason — a fiche field, a home fact, a UI string, a quiz template. The report is symmetric: French without English is listed exactly as English without French is, and a source field edited after its translation was produced is reported as drifted (REQ-145).
+
+**Parity is reported, never blocking (REQ-171, DEC-055).** It runs in no pre-commit hook, and its CI step in `build` prints warning annotations and cannot fail the job (`continue-on-error`, and the script exits 0 on findings in every mode). Publication is French-only by `SITE_LOCALE_MODE`, so a missing English field holds back nothing a reader sees — while blocking on it held French back. The accepted cost is that English may drift; read the report before switching a locale on. This is "for now" in DEC-055's words: it is a posture tied to French-only publication, not a retired contract. Only a malformed invocation (`--base` with no ref) exits non-zero.
 
 For a French corpus record, the only deferral form is a non-empty reason at
-`_translation.deferred.en` in the source record. The gate reports that reason
-as a notice. Empty reasons fail. UI dictionary keys cannot be deferred.
+`_translation.deferred.en` in the source record. The report lists that reason
+as a notice, and an empty reason as a finding. UI dictionary keys cannot be deferred.
 
-Two kinds of content, two homes. **UI copy** lives in locale-keyed dictionaries — `src/lib/translations.ts` today, the `src/lib/i18n` modules as they land — and a keys-parity test holds `en` and `fr` to the same key set, so a string added under one locale fails the suite until the other has it. **Corpus translations** never edit the French fiche: they are records under `dataset/translations/<lang>/`, produced by `npm run translate:record`, and carry their own provenance.
+Two kinds of content, two homes. **UI copy** lives in locale-keyed dictionaries — `src/lib/translations.ts` today, the `src/lib/i18n` modules as they land — and a keys-parity test (`src/lib/i18n/__tests__/copyParity.test.ts`) holds `en` and `fr` to the same key set, so a string added under one locale fails the suite until the other has it. That test **still fails the build**: interface copy is written in both languages at once, and REQ-171 does not relax it (a DEC-055 open question). **Corpus translations** never edit the French fiche: they are records under `dataset/translations/<lang>/`, produced by `npm run translate:record`, and carry their own provenance.
 
-The rules themselves — which fields are never translated, the glossary, the English register — live in `.claude/skills/afrik-translator/` and are enforced by `scripts/ci/checkTranslationParity.ts`. This file does not restate them, because three copies of one doctrine are how it drifts: invoke the skill before translating anything and let the gate name what is missing.
+The rules themselves — which fields are never translated, the glossary, the English register — live in `.claude/skills/afrik-translator/` and are reported by `scripts/ci/checkTranslationParity.ts`. The glossary is the exception to "reported": `npm run check:glossary` (REQ-144) is its own CI step and **still fails the build**, since REQ-171 relaxes counterparts, not terminology. This file does not restate them, because three copies of one doctrine are how it drifts: invoke the skill before translating anything and let the report name what is missing.
 
-The parity gate controls content readiness, not publication. It never changes
+The parity report describes content readiness, not publication. It never changes
 `SITE_LOCALE_MODE`; unfinished English therefore remains silent while the
 deployment stays on the default `fr-only` mode.
 

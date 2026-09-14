@@ -66,10 +66,11 @@ describe("operator documents describe the code as it runs", () => {
     }
   });
 
-  // A bare run surveys; CI blocks through --base. Calling the gate
-  // "non-blocking" without that qualifier contradicts CLAUDE.md.
-  // @req REQ-145
-  it("AGENTS.md names the flag that makes translation parity block", () => {
+  // A bare run surveys the whole tree; CI reports the pull request's diff
+  // through --base. Neither blocks (REQ-171, DEC-055), so the flag is what
+  // tells an operator which of the two reports a CI annotation came from.
+  // @req REQ-171
+  it("AGENTS.md names the diff-scoped parity report CI prints", () => {
     expect(read("AGENTS.md")).toContain("check:translation-parity -- --base");
   });
 
