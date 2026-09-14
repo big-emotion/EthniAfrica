@@ -166,8 +166,11 @@
     "REQ-167",
     "REQ-169",
     "REQ-170",
+    "REQ-171",
     "REQ-172",
-    "REQ-173"
+    "REQ-173",
+    "REQ-174",
+    "REQ-175"
   ],
   "sourceMap": {
     "REQ-001": "FR1",
@@ -332,7 +335,10 @@
     "REQ-167": "Confluence REQ-167 (page 199131162) — Generated images can be browsed as a gallery dossier fed by the same catalog as the feed",
     "REQ-169": "Confluence REQ-169 (page 200343553) — The data-integrity gates warn on a source's standing and never fail on it",
     "REQ-170": "Confluence REQ-170 (page 200343553) — A demographic breakdown that does not reach 100 % warns and is shown as estimated",
+    "REQ-171": "Confluence REQ-171 (page 200343553) — Translation parity is reported and never blocks a commit or a merge",
     "REQ-172": "Confluence REQ-172 (page 200343553) — an oral narrative is shown and returned before review, labelled and listed after reviewed ones; review does not qualify a people name; every narrative counts as a source",
-    "REQ-173": "Confluence REQ-173 (page 200343553) — the database accepts a name record of any entity type at any tier, unverified included"
+    "REQ-173": "Confluence REQ-173 (page 200343553) — the database accepts a name record of any entity type at any tier, unverified included",
+    "REQ-174": "Confluence REQ-174 (page 200343553) — The source sheet shows authority first and hides no source",
+    "REQ-175": "Confluence REQ-175 (page 200343553) — The quiz may play an attributed oral tradition, and says so"
   }
 }
