@@ -11,7 +11,8 @@ import { getLocalePublicationMode } from "@/lib/locale";
  * with no way to read `CANONICAL_DOMAIN` — the first thing to go stale on a
  * domain change, and silently, since nothing fetches it in CI.
  *
- * The disallow list mirrors `UNLISTED_ROUTES` in `src/lib/siteTree.ts` for the
+ * The disallow list mirrors the unlisted routes named on `getSiteTree` in
+ * `src/lib/siteTree.ts` for the
  * paths that must not be crawled at all. It is not derived from it: the two
  * lists answer different questions — one is "what does a reader need to see",
  * the other "what must a crawler never index" — and collapsing them would put

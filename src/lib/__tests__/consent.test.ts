@@ -134,6 +134,7 @@ describe("consent utilities", () => {
   });
 
   describe("clearConsent", () => {
+    // @req REQ-046
     it("should remove consent from localStorage", () => {
       const consentState: ConsentState = {
         hasConsented: true,

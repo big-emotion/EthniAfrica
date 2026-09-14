@@ -1,6 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { GAME_DEFINITIONS, GAME_SLUGS, getGameBySlug } from "../gameRegistry";
+import { GAME_DEFINITIONS, getGameBySlug } from "../gameRegistry";
 import { MODULE_DEFINITIONS } from "@/lib/hubs/moduleRegistry";
+
+const GAME_SLUGS = GAME_DEFINITIONS.map((game) => game.slug);
 
 describe("GAME_DEFINITIONS", () => {
   // One finished game beats three approximate ones; every retired generator

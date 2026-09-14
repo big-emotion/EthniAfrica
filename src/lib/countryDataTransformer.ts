@@ -15,7 +15,6 @@ import type {
   KingdomEntryType,
   KingdomTimeRange,
   MajorPeopleEntry,
-  HistoricalNamesSection,
   HistoricalFactsSection,
   DemographicsSection,
   FicheSource,

@@ -113,16 +113,6 @@ export interface PeopleRelationPreviewItem {
   neighborName: string;
 }
 
-/** Read-time shape of the `/api/v2/peoples/{id}/relations` envelope's `data`, kept minimal on purpose. */
-export interface EgoNetworkPreviewSource {
-  sourced: Array<{
-    relationId: string;
-    type: string;
-    otherPeople: { nameMain: string };
-  }>;
-  derived: Array<{ otherPeople: { id: string; nameMain: string } }>;
-}
-
 export interface CountryDistributionRow {
   country: CountryId;
   population?: number;
@@ -205,20 +195,6 @@ export function formatPeoplePopulation(n: number, language: Language): string {
   }).format(n);
 }
 
-/**
- * Extract short display form from a selfAppellation string.
- * "Ọmọ Oòduà (singulier), Yorùbá (pluriel)" → "Ọmọ Oòduà · Yorùbá"
- */
-// @req REQ-003
-export function extractAppellationShort(selfAppellation?: string): string {
-  if (!selfAppellation) return "";
-  const parts = selfAppellation.match(/([^(,]+?)\s*\(/g);
-  if (parts) {
-    return parts.map((p) => p.replace(/\s*\($/, "").trim()).join(" · ");
-  }
-  return selfAppellation.trim();
-}
-
 // ==========================================
 // TRANSFORM FUNCTIONS
 // ==========================================
@@ -298,32 +274,6 @@ export function transformPeopleCulture(
 }
 
 /**
- * Whether the culture chapter has anything to show.
- *
- * One predicate, two callers — the fiche's section gate and the grid itself.
- * They used to carry a condition each, and the outer one tested fewer fields
- * than the inner, so a fiche could satisfy the grid and still never reach it.
- */
-// @req REQ-003
-export function hasCultureContent(culture: PeopleCultureData): boolean {
-  return Object.values(culture).some(Boolean);
-}
-
-/**
- * Whether the origins chapter has anything to show.
- *
- * Same reason as {@link hasCultureContent}: the fiche's gate tested five of
- * the seven fields `PeopleOriginBlock` renders, so a fiche declaring only
- * `unificationsOrDivisions` or `majorHistoricalEvents` had them dropped.
- */
-// @req REQ-003
-export function hasOriginContent(origin: PeopleOriginData): boolean {
-  return Object.values(origin).some((value) =>
-    Array.isArray(value) ? value.length > 0 : Boolean(value)
-  );
-}
-
-/**
  * Whether the neighbours-and-organisation chapter has anything of its own.
  *
  * The relations preview is deliberately excluded: it comes from another
@@ -351,32 +301,9 @@ export function transformPeopleRelatedPeoples(
   };
 }
 
-// @req REQ-097
-export function transformEgoNetworkPreview(
-  network: EgoNetworkPreviewSource
-): PeopleRelationPreviewItem[] {
-  return [
-    ...network.sourced.map((relation) => ({
-      id: relation.relationId,
-      type: relation.type as RelationBadgeType,
-      derived: false,
-      neighborName: relation.otherPeople.nameMain,
-    })),
-    ...network.derived.map((link) => ({
-      id: `derived_${link.otherPeople.id}`,
-      type: "linguistic" as const,
-      derived: true,
-      neighborName: link.otherPeople.nameMain,
-    })),
-  ];
-}
-
 /**
- * The same preview, from the ego network a *server* route already awaited.
- *
- * `transformEgoNetworkPreview` reads the REST envelope, which is what the
- * browser gets; a fiche route holds `SourcedRelation`s instead and would
- * otherwise have to re-serialize them into an envelope shape to reuse it.
+ * The fiche's relations preview, from the ego network its server route
+ * already awaited — `SourcedRelation`s, so no REST envelope is rebuilt.
  * Only sourced relations are mapped here: a derived link is computed from the
  * AFRIK hierarchy rather than stated by a source (FR73), and the fiche's
  * relations surface shows what the corpus documents.
@@ -495,17 +422,6 @@ export function transformPeopleNames(
     exonyms,
     spellingHistory,
   };
-}
-
-/** Fetches the names dossier for a people from the fiche's data flow (GET /v2/peoples/{id}/names). */
-// @req REQ-054
-export async function fetchPeopleNamesDossier(
-  peopleId: string
-): Promise<PeopleNamesDossier | null> {
-  const response = await fetch(`/api/v2/peoples/${peopleId}/names`);
-  if (!response.ok) return null;
-  const body = await response.json();
-  return (body.data ?? null) as PeopleNamesDossier | null;
 }
 
 // ==========================================

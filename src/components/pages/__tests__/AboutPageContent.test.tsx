@@ -314,13 +314,19 @@ describe("AboutPageContent (REQ-132)", () => {
     const refusals = screen.getByTestId("about-declaration-refusals");
     const items = within(refusals).getAllByRole("listitem");
 
-    expect(items).toHaveLength(3);
+    expect(items).toHaveLength(4);
     expect(refusals).toHaveTextContent(
       /Avant, on vivait en accord avec le continent/
     );
     expect(refusals).toHaveTextContent(/Les frontières sont arbitraires/);
     expect(refusals).toHaveTextContent(/Renouer avec le passé/);
     expect(refusals).toHaveTextContent(/reconnaître ce qui n’a jamais cessé/);
+    expect(refusals).toHaveTextContent(
+      /Avant les frontières, les peuples étaient unis/
+    );
+    expect(refusals).toHaveTextContent(
+      /La frontière n’a pas toujours créé la séparation/
+    );
     for (const item of items) {
       expect(
         item.querySelector('[data-role="reason"]')?.textContent?.trim()
@@ -342,7 +348,38 @@ describe("AboutPageContent (REQ-132)", () => {
       within(screen.getByTestId("about-declaration-refusals")).getAllByRole(
         "listitem"
       )
-    ).toHaveLength(3);
+    ).toHaveLength(4);
+  });
+
+  /**
+   * A second doctrine session (purpose-doctrine.md §5, 14 September 2026)
+   * separated a unity position from the constant ligne de vision: it must
+   * read as its own labelled conviction, not folded into `claim`.
+   */
+  // @req REQ-132
+  it("publishes the unity vision as a position separate from the constant ligne de vision", () => {
+    renderAbout();
+
+    const unityClaim = screen.getByTestId("about-purpose-unity-claim");
+    const status = screen.getByTestId("about-purpose-unity-claim-status");
+
+    expect(unityClaim).toHaveTextContent(
+      /Ce qui relie les peuples d’Afrique a survécu à leurs propres ruptures/
+    );
+    expect(status).toHaveTextContent(/notre conviction/i);
+    expect(status).toHaveTextContent(/pas une mesure qu’il produit/i);
+  });
+
+  // @req REQ-145
+  it("carries the unity vision in English too", () => {
+    render(<AboutPageContent language="en" />);
+
+    expect(screen.getByTestId("about-purpose-unity-claim")).toHaveTextContent(
+      /What connects Africa’s peoples has survived their own ruptures/
+    );
+    expect(
+      screen.getByTestId("about-purpose-unity-claim-status")
+    ).toHaveTextContent(/our conviction/i);
   });
 
   // Trimmed 2026-09-01: the example-country cards ("Ce que contient une

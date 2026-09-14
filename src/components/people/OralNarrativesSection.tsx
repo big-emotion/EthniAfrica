@@ -16,6 +16,7 @@ interface PublicOralNarrative {
   narrativeKind: string;
   summary: string | null;
   variantOf: string | null;
+  reviewed: boolean;
 }
 
 interface OralNarrativesSectionProps {
@@ -25,6 +26,7 @@ interface OralNarrativesSectionProps {
 }
 
 // @req REQ-095
+// @req REQ-172
 export function OralNarrativesSection({
   peopleId,
   language = FALLBACK_LOCALE,
@@ -58,6 +60,13 @@ export function OralNarrativesSection({
 
   if (narratives.length === 0) return null;
 
+  // The API already orders reviewed first; partitioning again keeps that
+  // promise true for any caller of this component, at no cost.
+  const ordered = [
+    ...narratives.filter((narrative) => narrative.reviewed),
+    ...narratives.filter((narrative) => !narrative.reviewed),
+  ];
+
   return (
     <section
       id={chapterAnchorId(copy.title)}
@@ -81,11 +90,16 @@ export function OralNarrativesSection({
         </p>
       </div>
       <ul className="space-y-3">
-        {narratives.map((narrative) => (
+        {ordered.map((narrative) => (
           <li
             key={narrative.id}
             className="rounded-[var(--country-radius-md)] border border-[var(--country-border)] p-3 md:p-4"
           >
+            {!narrative.reviewed && (
+              <p className="mb-2 inline-flex rounded-full border border-[var(--country-border)] px-2 py-0.5 text-afh-caption text-[var(--country-text-soft)]">
+                {copy.notYetReviewed}
+              </p>
+            )}
             <p className="text-afh-small font-semibold text-[var(--country-text)]">
               {narrative.narratorDisplayName
                 ? copy.attributed(narrative.narratorDisplayName)

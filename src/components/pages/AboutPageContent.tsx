@@ -236,6 +236,23 @@ export default function AboutPageContent({ language }: AboutPageContentProps) {
         <p className="text-afh-small leading-relaxed text-afh-text-soft">
           {purpose.closing}
         </p>
+        {/* A second, separate position (purpose-doctrine.md §5) — not the
+            constant ligne de vision above, and not a measurement the atlas
+            produces, so it carries its own status line the same way. */}
+        <div
+          data-testid="about-purpose-unity-claim"
+          className="space-y-afh-sm border-t border-afh-border pt-afh-lg"
+        >
+          <p className="font-afh-display text-afh-h3 font-black leading-tight">
+            {purpose.unityClaim}
+          </p>
+          <p
+            data-testid="about-purpose-unity-claim-status"
+            className="text-afh-small leading-relaxed text-afh-text-soft"
+          >
+            {purpose.unityClaimStatus}
+          </p>
+        </div>
       </section>
 
       <section className="space-y-afh-xl" aria-labelledby="about-content-title">

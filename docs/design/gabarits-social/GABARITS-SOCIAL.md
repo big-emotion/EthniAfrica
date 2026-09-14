@@ -572,6 +572,7 @@ emporte s'il ne lit rien d'autre.
 | « Ce peuple n'a pas été divisé. C'est la carte qui a été dessinée par-dessus. » | « Ce peuple a été divisé par les colons. » | Le registre de la réparation garde le colonisateur au centre de la phrase. Le renversement d'agent rend le peuple sujet. |
 | « Tracées sans référence à qui habitait là. » | « Les frontières sont arbitraires. » | À demi faux, donc attaquable — et l'atlas peut le montrer peuple par peuple. |
 | « Ce qui est resté. » | « Ce qui a été pris. » | Le contenu ne dénonce pas, il agrandit la carte. |
+| « Certaines ruptures sont plus vieilles que la carte coloniale. » | « Avant les frontières, les peuples étaient unis. » | Des parentés de langue et de culture ont parfois traversé des ruptures — une scission, une migration, une querelle de succession — bien plus anciennes que le tracé colonial. La carte n'a pas toujours créé la séparation, elle l'a souvent verrouillée. |
 
 **Aucune conférence, aucune date unique n'est citée comme l'origine des frontières**
 (décidé par l'opérateur le 2026-09-14) : la conférence de Berlin a fixé des règles de
@@ -579,6 +580,22 @@ revendication, elle n'a tracé presque aucune ligne elle-même, et une productio
 cite comme l'autrice du tracé répète une erreur déjà relevée par l'audit du message.
 La formule qui tient est celle de la table ci-dessus — « moins de 140 ans » — jamais un
 lieu et une date uniques. Une frontière ne contient pas un peuple, elle le traverse.
+
+### Une deuxième position, distincte de la ligne de vision
+
+Décidée par l'opérateur le 2026-09-14, échange complet dans
+`docs/editorial/purpose-doctrine.md` §5 :
+
+> « Ce qui relie les peuples d'Afrique a survécu à leurs propres ruptures
+> autant qu'aux frontières qu'on leur a imposées. C'est là que commence une
+> unité plus forte. »
+
+**Ce n'est pas la ligne de vision.** Elle n'est pas obligatoire dans chaque
+clôture et ne remplace rien de ce qui précède. Elle peut inspirer le ton d'une
+clôture sans y être imprimée mot pour mot, ou apparaître comme sa propre
+carte — toujours étiquetée comme une position, jamais comme un fait que
+l'atlas démontre, au même titre que « Ce peuple n'a pas été divisé » sur la
+page À propos (`purposeChapter.unityClaim` / `.unityClaimStatus`).
 
 ### Ce qui change avec le type de contenu, et ce qui ne change jamais
 
@@ -621,8 +638,10 @@ s'écrit ici d'abord, jamais dans une carte.
 | des villes, des lieux | un registre de la banque ci-dessous | celui du registre | « Cette ville n'a pas changé de nom. » | « nom. » | « On l'a rebaptisée. » |
 | une projection, une carte | un registre de la banque ci-dessous | celui du registre | « La carte ne mentait pas. Elle ne disait pas tout. » | « tout. » | « On l'a redessinée. » |
 | le nom d'un pays | un registre de la banque ci-dessous | celui du registre | « Ce pays ne s'est pas renommé. » | « renommé. » | « On l'a rebaptisé. » — *dérivé de la ligne des villes le 2026-09-13, à valider* |
-| une langue, une famille | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas disparu. » | « disparu. » | *à fixer* — aucune seconde moitié n'a encore été écrite |
+| une langue, une famille | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas disparu. » | « disparu. » | « C'est la case qu'on lui avait donnée qui a disparu. » — *fixé le 2026-09-14 par l'opérateur, à l'écriture de « famille-linguistique-quatre-familles »* |
 | une famille de langues, regroupant plusieurs peuples sous un seul nom | un registre de la banque ci-dessous | celui du registre | « Cette famille n'est pas un peuple. » | « peuple. » | « On lui a donné un nom, par-dessus des peuples qui avaient déjà le leur. » — *décidé par l'opérateur le 2026-09-14, pour le sujet Mandé — distinct de la ligne « une langue, une famille » ci-dessus : celle-ci porte la légitimité d'une classification, celle-là la confusion entre un nom de famille et un nom de peuple* |
+| un système politique sans souverain unique — un peuple qui gouverne autrement qu'avec un roi ou un chef héréditaire — *validé par l'opérateur le 2026-09-14* | un registre de la banque ci-dessous | celui du registre | « Ce peuple n'a jamais eu de roi. » | « roi. » | « Le pouvoir s'y prête, il ne s'y transmet pas. » |
+| un nom partagé, repris par plusieurs peuples distincts | un registre de la banque ci-dessous | celui du registre | « Ce nom n'a pas été subi. » | « subi. » | « On se l'est approprié. » — *décidé par l'opérateur le 2026-09-14, pour le sujet `creole-ne-dans-la-colonie` — distinct de la ligne « une famille de langues » ci-dessus : celle-là porte un nom imposé qui écrase des peuples ayant déjà le leur, celle-ci un nom d'abord extérieur que plusieurs peuples, sans parenté entre eux, ont chacun fait leur propre nom* |
 
 **`cards.json` ne porte jamais `**`** : les titres s'y recopient en texte brut depuis
 cette table, le moteur accentue de lui-même le dernier mot d'une clôture avec sa

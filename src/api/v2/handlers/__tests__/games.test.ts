@@ -9,7 +9,6 @@ import {
 } from "@/lib/games/rounds/inflationRound";
 import {
   isEstimateRound,
-  isOptionRound,
   type BinaryRound,
   type ListRound,
   type GameRound,
@@ -87,6 +86,10 @@ const isBorrowedLabel = (labelFr: string): boolean =>
 
 const mercator = () => getGameBySlug("mercator");
 
+/** The options-bearing round kinds, narrowed without a cast. */
+const hasOptions = (round: GameRound): round is BinaryRound | ListRound =>
+  round.kind === "binary" || round.kind === "list";
+
 /**
  * `kind` is the control a round is answered with and `template` is the
  * question it asks; two of the three templates share the same two buttons, so
@@ -97,7 +100,7 @@ const withTemplate = (
   rounds: GameRound[],
   template: RoundTemplate
 ): (BinaryRound | ListRound)[] =>
-  rounds.filter(isOptionRound).filter((round) => round.template === template);
+  rounds.filter(hasOptions).filter((round) => round.template === template);
 
 const comparisons = (rounds: GameRound[]): (BinaryRound | ListRound)[] =>
   withTemplate(rounds, "larger-area");
@@ -590,7 +593,7 @@ describe("getGameRoundsHandler", () => {
 
     const envelope = await getGameRoundsHandler(mercator(), 0);
 
-    expect(envelope.data.rounds.filter(isOptionRound)).toEqual([]);
+    expect(envelope.data.rounds.filter(hasOptions)).toEqual([]);
     expect(envelope.data.rounds.filter(isEstimateRound).length).toBeGreaterThan(
       0
     );
@@ -733,9 +736,7 @@ describe("a session mixes the two gestures", () => {
 
     const envelope = await getGameRoundsHandler(mercator(), 0);
 
-    expect(envelope.data.rounds.filter(isOptionRound).length).toBeGreaterThan(
-      0
-    );
+    expect(envelope.data.rounds.filter(hasOptions).length).toBeGreaterThan(0);
     expect(envelope.data.rounds.filter(isEstimateRound).length).toBeGreaterThan(
       0
     );

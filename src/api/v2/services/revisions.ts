@@ -1,37 +1,5 @@
 import { createServerClient } from "@/lib/supabase/server";
-import type { Revision, InsertRevisionInput } from "@/api/v2/schemas/revisions";
 import { serializePublicContent } from "@/api/v2/serializers/public-content";
-
-export async function insertRevision(
-  input: InsertRevisionInput
-): Promise<Revision> {
-  const supabase = createServerClient();
-  const { data, error } = await supabase
-    .from("revisions")
-    .insert(input)
-    .select()
-    .single();
-
-  if (error) {
-    throw new Error(`Failed to insert revision: ${error.message}`);
-  }
-  return data as Revision;
-}
-
-export async function getRevision(id: string): Promise<Revision | null> {
-  const supabase = createServerClient();
-  const { data, error } = await supabase
-    .from("revisions")
-    .select("*")
-    .eq("id", id)
-    .maybeSingle();
-
-  if (error) {
-    throw new Error(`Failed to load revision ${id}: ${error.message}`);
-  }
-  if (!data) return null;
-  return data as Revision;
-}
 
 export interface PeopleRevisionListItem {
   version: number;
@@ -76,6 +44,7 @@ function derivePseudonym(
   return `mod-${moderatorId.replace(/-/g, "").slice(0, 8)}`;
 }
 
+// @req REQ-025
 export async function listPeopleRevisions(
   entityId: string,
   limit: number,
@@ -125,6 +94,7 @@ export async function listPeopleRevisions(
   return { items, next_cursor };
 }
 
+// @req REQ-025
 export async function getLatestEntityRevisionVersion(
   entityType: string,
   entityId: string
@@ -153,6 +123,7 @@ function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
+// @req REQ-025
 export async function getRevisionSnapshot(
   entityType: RevisionEntityType,
   entityId: string,
@@ -232,6 +203,7 @@ export async function getRevisionSnapshot(
   };
 }
 
+// @req REQ-025
 export async function getPeopleRevisionSnapshot(
   entityId: string,
   version: number
