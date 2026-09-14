@@ -94,6 +94,21 @@ export const SOURCE_TIER_STATES = [...SOURCE_TIERS, "needs_review"] as const;
 export type SourceTierState = (typeof SOURCE_TIER_STATES)[number];
 
 /**
+ * What a moderator can decide about one `needs_review` citation: give it a
+ * tier, repair its locator and give it a tier, or remove it. Mirrored by the
+ * `source_tier_ruling_drafts` CHECK and the git ruling ledger.
+ */
+// @req REQ-092
+export const SOURCE_TIER_RULING_DECISIONS = [
+  "tier",
+  "repair",
+  "remove",
+] as const;
+
+export type SourceTierRulingDecision =
+  (typeof SOURCE_TIER_RULING_DECISIONS)[number];
+
+/**
  * The tiers that carry authority of their own: every tier above the
  * `unverified` floor. A quiz answer, a name fiche's `robots` directive, its
  * "being assembled" note and its sitemap entry all draw their line here.
