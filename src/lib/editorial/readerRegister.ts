@@ -54,9 +54,12 @@ export const LANGUAGE_NEUTRAL_REGISTER_PATTERNS: ReadonlyArray<RegisterPattern> 
 export const INTERNAL_REGISTER_PATTERNS: ReadonlyArray<RegisterPattern> = [
   ...LANGUAGE_NEUTRAL_REGISTER_PATTERNS,
   {
+    // A research wave is numbered with one or two digits; the lookahead and
+    // the digit cap keep "la vague 1960 des indépendances" and "une vague
+    // 1 500 ans plus tôt" readable, since a year is the subject's history.
     label: "curation vocabulary",
     pattern:
-      /file d'attente|passe de recherche|passe anthroponymique|protocole de recherche|claim-level|tier hérité|hors corpus|plan de couverture|vague \d+ du plan/i,
+      /file d'attente|passe de recherche|passe anthroponymique|protocole de recherche|claim-level|tier hérité|hors corpus|plan de couverture|\bvague \d{1,2}\b(?! ?\d)/i,
   },
   {
     label: "pipeline source note",
@@ -85,7 +88,7 @@ export const INTERNAL_REGISTER_PATTERNS_EN: ReadonlyArray<RegisterPattern> = [
   {
     label: "curation vocabulary",
     pattern:
-      /(?:candidate|work|research) queue|research (?:pass|protocol)|anthroponym pass|claim-level|inherited tier|out(?:side)? (?:of )?(?:the )?corpus|coverage plan|wave \d+ of the plan/i,
+      /(?:candidate|work|research) queue|research (?:pass|protocol)|anthroponym pass|claim-level|inherited tier|out(?:side)? (?:of )?(?:the )?corpus|coverage plan|\bwave \d{1,2}\b(?! ?\d)/i,
   },
   {
     // The tiering codemod explained its own decision in every note it wrote:
