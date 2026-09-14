@@ -39,6 +39,16 @@ updates:
     labels:
       - dependencies
       - npm
+    ignore:
+      # @typescript-eslint has no released version (checked through 8.70.0)
+      # whose peerDependencies allow TypeScript 7 — every version still pins
+      # `typescript: >=4.8.4 <6.1.0`. A major bump here broke `npm run lint`
+      # outright (PR #1049, 2026-09-14: `typescript-estree` threw reading
+      # `.Cjs` off a TS API shape that no longer exists). Remove this once
+      # @typescript-eslint ships TS7 support.
+      - dependency-name: "typescript"
+        update-types:
+          - "version-update:semver-major"
     groups:
       production-minor-and-patch:
         dependency-type: production
