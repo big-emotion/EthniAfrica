@@ -111,11 +111,11 @@ export function HomeHero({
               "l'atlas libre des peuples d'Afrique, sources à l'appui."}
           </p>
 
-          {/* What the atlas is for, in the two sentences the social series
-              opens and closes on (docs/editorial/purpose-doctrine.md). Closed:
-              the band's job is still the search. A native <details>, so the
-              answer opens with no script, and a link to the About chapter
-              that labels both sentences as the project's position. */}
+          {/* What the atlas is for, in the statement the social series opens
+              on (docs/editorial/purpose-doctrine.md). Closed: the band's job
+              is still the search. A native <details>, so the answer opens
+              with no script, and a link to the About chapter that labels the
+              statement as the project's position. */}
           <details
             className="home-hero-purpose"
             data-testid="home-hero-purpose"
@@ -262,10 +262,12 @@ export function HomeHero({
            an ocre underline that says it opens something. The disclosure
            marker is redrawn as a chevron so it turns with the state instead
            of the browser's triangle, which sits on the baseline at a
-           different size in every engine. */
+           different size in every engine.
+
+           No 52ch measure, unlike the answer above it: the statement runs the
+           copy column's full width (operator ruling, 2026-09-14). */
         .home-hero-purpose {
-          max-width: 52ch;
-          margin: var(--afh-space-sm) auto 0;
+          margin-top: var(--afh-space-sm);
         }
         .home-hero-purpose summary {
           display: inline-flex;
@@ -309,7 +311,10 @@ export function HomeHero({
           font-size: var(--afh-text-lead);
           line-height: 1.35;
           color: var(--afh-text);
-          text-wrap: balance;
+          /* pretty, not balance: balance evens the lines out and so never
+             lets them reach the column's edge, which is the width asked for.
+             pretty still refuses a one-word last line. */
+          text-wrap: pretty;
         }
         .home-hero-purpose-link {
           display: inline-flex;
@@ -460,8 +465,7 @@ export function HomeHero({
              a second left edge inside one block, which §8.1 of the brand
              charter counts as a defect. The tile band makes the same switch
              for itself, in its own file, at this same width. */
-          .home-hero-answer,
-          .home-hero-purpose {
+          .home-hero-answer {
             margin-inline: 0;
           }
           .home-hero-globe .home-globe-stage {
