@@ -5,6 +5,7 @@ import {
   getStoredConsent,
   saveConsent,
   isConsentExpired,
+  clearConsent,
 } from "../consent";
 import type { ConsentState } from "@/types/consent";
 
@@ -129,6 +130,28 @@ describe("consent utilities", () => {
 
       const result = isConsentExpired(thirteenMonthsAgo.toISOString());
       expect(result).toBe(true);
+    });
+  });
+
+  describe("clearConsent", () => {
+    // @req REQ-046
+    it("should remove consent from localStorage", () => {
+      const consentState: ConsentState = {
+        hasConsented: true,
+        preferences: DEFAULT_PREFERENCES,
+        consentDate: new Date().toISOString(),
+      };
+
+      localStorageMock.setItem(
+        CONSENT_STORAGE_KEY,
+        JSON.stringify(consentState)
+      );
+
+      clearConsent();
+
+      expect(localStorageMock.removeItem).toHaveBeenCalledWith(
+        CONSENT_STORAGE_KEY
+      );
     });
   });
 
