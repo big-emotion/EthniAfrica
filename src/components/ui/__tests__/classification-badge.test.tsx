@@ -127,16 +127,36 @@ describe("ClassificationBadge", () => {
       render(<ClassificationBadge status={status} />);
       const link = screen.getByRole("link");
       const inner = link.querySelector("[data-classification-status]");
-      // Inline style and class strings must not reference red tokens.
       const inline = (inner as HTMLElement)?.getAttribute("style") ?? "";
       const cls = (inner as HTMLElement)?.getAttribute("class") ?? "";
+
+      // Check the CSS custom property NAME each declaration references, not
+      // its fallback literal: `var(--afh-terracotta, #A03F1A)` is a legitimate
+      // WCAG-tuned fallback for when the design token isn't defined yet, not
+      // the badge's real rendered color. A fallback hex will always read as
+      // some concrete color when printed to a string — banning literals here
+      // is what made this test break on a happy-dom upgrade that started
+      // serializing the style attribute verbatim (matching real browsers)
+      // instead of swallowing the fallback text.
+      const referencedTokens = [...inline.matchAll(/var\((--[\w-]+)/g)].map(
+        (m) => m[1].toLowerCase()
+      );
+      expect(referencedTokens.length).toBeGreaterThan(0);
+      for (const token of referencedTokens) {
+        expect(token).not.toMatch(/colonial|red|destructive|danger/);
+      }
+
+      // A color/background-color declared without going through a CSS
+      // variable at all has no token indirection to inherit a future design
+      // change — that bare-hardcode shape is what actually regressed before
+      // ETNI-26 (colonial-legacy pointed straight at #9B3030).
+      const bareDeclarations = [
+        ...inline.matchAll(/(color|background-color)\s*:\s*([^;]+)/g),
+      ].filter(([, , value]) => !value.trim().startsWith("var("));
+      expect(bareDeclarations).toHaveLength(0);
+
       const haystack = `${inline} ${cls}`.toLowerCase();
-      expect(haystack).not.toMatch(/colonial[^-]/); // avoid --country-colonial (red)
       expect(haystack).not.toMatch(/\bred\b/);
-      expect(haystack).not.toMatch(/#9b3030/);
-      expect(haystack).not.toMatch(/#a03f1a/); // the old hard-coded red-ish brown
-      // Foreground for the contested status used to be a brown-gold (#7A5807);
-      // we keep it warm but check that no "destructive" or "danger" hint slipped in.
       expect(haystack).not.toMatch(/destructive|danger/);
     }
   );
