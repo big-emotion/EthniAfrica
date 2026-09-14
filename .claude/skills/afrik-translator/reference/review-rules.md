@@ -106,7 +106,7 @@ passages, so a fiche that changes shows up here.
 
 ### A — PPL_ASANTE: the reader is the anglophone
 
-`dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_ASANTE.json`
+`dataset/source/afrik/peuples/FLG_KWA/PPL_ASANTE.json`
 
 - `content.appellations.exonyms[0]`: "Ashanti (variante orthographique
   anglaise utilisee depuis la periode coloniale britannique)"

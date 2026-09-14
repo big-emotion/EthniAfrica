@@ -15,8 +15,8 @@ human or not — makes the same calls.
 
 It reads a record in one locale and emits a **sidecar proposal** for the
 other. It never writes to Supabase and never publishes; the command of
-REQ-146 is what runs it at scale, and the parity gate (REQ-145) is what admits
-the result.
+REQ-146 is what runs it at scale, and the parity report (REQ-145, REQ-171) is what names
+a missing or drifted counterpart; it never blocks.
 
 ## When to use
 
@@ -103,21 +103,21 @@ A translated record lives beside the corpus, never inside it:
 
 ```
 dataset/translations/<lang>/<same relative path as the source>/<ID>.json
-dataset/translations/en/peuples/FLG_NIGERCONGO/PPL_ASANTE.json
+dataset/translations/en/peuples/FLG_KWA/PPL_ASANTE.json
 ```
 
 It is a **full record** with the same field shape as the French source. Every
 invariant is carried byte-identically, every translatable leaf is replaced by
 its target-language value, and the record ends with a `_translation` block.
 The older dossier files are the sole exception: their reader owns a sparse
-overlay contract and the parity gate checks only that both files exist.
+overlay contract and the parity report checks only that both files exist.
 
 | Field            | Value                                                                                                                                              |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `kind`           | `machine` for anything this skill drafts; `machine_reviewed` after a named human read every class-3 leaf; `human` only for a record a person wrote |
 | `translatedAt`   | ISO-8601 date of the draft                                                                                                                         |
 | `model`          | The engine that produced the draft (the strict model is implied by the path)                                                                       |
-| `sourceHash`     | Hash of the source record at translation time — the parity gate uses it to detect a source that moved                                              |
+| `sourceHash`     | Hash of the source record at translation time — the parity report uses it to detect a source that moved                                            |
 | `fieldHashes`    | Per-leaf hashes of the source leaves translated, so a single edited chapter re-opens only that chapter                                             |
 | `reviewRequired` | The concrete paths still awaiting a human: every class-3 leaf, every judged gloss (rule 4)                                                         |
 

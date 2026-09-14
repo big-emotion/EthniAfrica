@@ -3,9 +3,12 @@ import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 
 import {
+  CORPUS_SOURCE_DIR,
   DOCTRINE_SOURCES,
   HELPER_SKILL,
   MESSAGE_SKILL,
+  MYTH_CALLERS,
+  MYTH_SKILL,
   PIPELINE_STATE_TOOL,
   RENDER_SKILL,
   checkSocialChainContract,
@@ -73,6 +76,46 @@ describe("social chain contract", () => {
     expect(issues).toContainEqual({
       skill: HELPER_SKILL,
       detail: `does not read the pipeline state from ${PIPELINE_STATE_TOOL}`,
+    });
+  });
+
+  // @req REQ-032
+  it("names the myth check and every production step that calls it", () => {
+    expect(MYTH_SKILL).toBe("ethniafrica-mythe");
+    expect(MYTH_CALLERS).toEqual([
+      "ethniafrica-idee",
+      "ethniafrica-structure",
+      "ethniafrica-produire",
+    ]);
+  });
+
+  // @req REQ-032
+  it("flags a production step that no longer calls the myth check", () => {
+    // The check is only worth something if the chain passes through it: a
+    // subject whose correction was never sourced reaches the render otherwise.
+    const [idee] = MYTH_CALLERS;
+    const issues = checkSocialChainContract(projectRoot, {
+      [idee]: `---\nname: ${idee}\n---\nWrites a subject report.`,
+    });
+
+    expect(issues).toContainEqual({
+      skill: idee,
+      detail: `does not call ${MYTH_SKILL}`,
+    });
+  });
+
+  // @req REQ-032
+  it("flags a myth check that stops opening the fiche it corrects from", () => {
+    // A correction checked against memory is how a myth gets replaced by
+    // another one — the Côte d'Ivoire draft credited Bouët-Willaumez with a name
+    // Portuguese navigators used four centuries before him.
+    const issues = checkSocialChainContract(projectRoot, {
+      [MYTH_SKILL]: `---\nname: ${MYTH_SKILL}\n---\nChecks myths.`,
+    });
+
+    expect(issues).toContainEqual({
+      skill: MYTH_SKILL,
+      detail: `does not source the correction from ${CORPUS_SOURCE_DIR}`,
     });
   });
 

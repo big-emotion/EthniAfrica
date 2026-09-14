@@ -1,0 +1,164 @@
+{
+  "id": "FLG_KWA",
+  "nameFr": "Kwa",
+  "nameEn": "Kwa",
+  "classificationStatus": "colonial-legacy",
+  "content": {
+    "decolonialHeader": {
+      "linkWithFamily": "Sous-branche du Volta-Congo, au sein de FLG_NIGERCONGO, sœur de FLG_BENOUECONGO issue du même découpage de l'ancien « Kwa » de Greenberg",
+      "historicalAppellations": [
+        "Kwa (sens large, Greenberg 1963)",
+        "Western Sudanic / langues soudanaises occidentales (Westermann 1927)"
+      ],
+      "originOfHistoricalTerm": "Le terme « Kwa » est introduit par le linguiste allemand Diedrich Westermann en 1927 dans Die westlichen Sudansprachen und ihre Beziehungen zum Bantu (Berlin, Walter de Gruyter) pour désigner un ensemble de langues du golfe de Guinée. Westermann reprend un mot attesté dans plusieurs des langues qu'il classe — une racine signifiant « les gens », « le peuple » — et en fait une étiquette scientifique couvrant un ensemble bien plus large que ce que le mot désignait dans chacune de ces langues. Joseph H. Greenberg reprend et élargit ce « Kwa » en 1963 dans The Languages of Africa (Indiana University Press) comme l'une des branches du Niger-Congo, y regroupant à la fois les langues aujourd'hui dites Kwa (Akan, Ga-Dangme, Gbe) et une grande partie de ce qui deviendra Bénoué-Congo (yoruboïde, igboïde, edoïde, idomoïde). Patrick R. Bennett et Jan P. Sterk proposent en 1977, dans « South Central Niger-Congo: A Reclassification » (Studies in African Linguistics 8(3), pp. 241-273), de scinder ce « Kwa » de Greenberg en deux branches sœurs sur un critère morphologique précis : les langues qui ont conservé un système de classes nominales de type bantou restent Bénoué-Congo, celles qui l'ont perdu — Akan, Ga-Dangme, Ewe/Gbe et leurs parentes — deviennent le Kwa au sens restreint, qui est celui de cette fiche. John M. Stewart formalise cette classification restreinte en 1989 dans le chapitre « Kwa » de The Niger-Congo Languages (Bendor-Samuel & Hartell éds., University Press of America, pp. 217-245), et Kay Williamson et Roger Blench la reprennent dans l'arbre du Volta-Congo qui reste la référence de synthèse en 2000 (« Niger-Congo », dans Heine & Nurse éds., African Languages: An Introduction, Cambridge University Press, pp. 11-42).",
+      "whyProblematic": "Le nom vient d'un linguiste européen qui a réutilisé un mot désignant « les gens » dans certaines des langues concernées pour nommer, de l'extérieur, un regroupement qu'aucune de ces communautés ne revendique pour elle-même. Le tracé du regroupement a de plus varié trois fois en un demi-siècle (Westermann 1927, Greenberg 1963, Bennett & Sterk 1977) selon les critères retenus par chaque auteur, et Jeff Good documente dans son chapitre de synthèse (2020, voir sources) que la frontière entre Kwa et Bénoué-Congo reste débattue : certains traits qui séparent les deux branches se recoupent partiellement, et aucune reconstruction du proto-Kwa aussi robuste que le proto-bantou n'a stabilisé la question. Aucun peuple ne se désigne par ce nom ; chaque peuple parlant une langue kwa a sa propre auto-appellation, documentée fiche par fiche (PPL_AKAN, PPL_EWE, PPL_GA, PPL_FON…).",
+      "selfAppellation": "Aucune auto-appellation collective : « Kwa » est un nom de classification linguistique, pas un ethnonyme. Chaque peuple se nomme par son propre autonyme (Akan : Akanfoɔ ; Ewe : Eʋeawó ; Ga : Gãmɛi…)",
+      "contemporaryUsage": "En linguistique historique du Niger-Congo, « Kwa » désigne aujourd'hui un ensemble restreint d'environ 81 langues (Glottolog, voir sources) parlées du sud-est de la Côte d'Ivoire au Bénin, le long du golfe de Guinée. Le terme est d'usage exclusivement académique — il n'apparaît dans aucun discours identitaire des peuples concernés — et reste débattu comme unité généalogique par certains spécialistes du Niger-Congo (Good 2020).",
+      "geographicArea": "Côte d'Ivoire, Ghana, Togo, Bénin, littoral et bassin de la Volta du golfe de Guinée",
+      "numberOfLanguages": 81,
+      "totalSpeakers": 32000000
+    },
+    "generalInfo": {
+      "branches": [
+        "Nyo (Potou-Tano : Akan, Anyi-Baoulé, Nzema, Ebrié, Adioukrou)",
+        "Ga–Dangme",
+        "Left Bank / Ka-Togo (Avatime, Nyangbo, Logba, Siwu, Lelemi, Tafi)",
+        "Right Bank / Gbe (Ewe, Fon, Aja, Mina, Gen)",
+        "Basila-Adele"
+      ],
+      "geographicArea": "Côte d'Ivoire, Ghana, Togo, Bénin, littoral et bassin de la Volta du golfe de Guinée",
+      "numberOfLanguages": 81,
+      "totalSpeakers": 32000000
+    },
+    "associatedPeoples": [
+      {
+        "name": "Akan (PPL_AKAN) — Ghana, Côte d'Ivoire",
+        "peopleId": "PPL_AKAN"
+      },
+      {
+        "name": "Baoulé (PPL_BAOULE) — Côte d'Ivoire",
+        "peopleId": "PPL_BAOULE"
+      },
+      {
+        "name": "Anyi (PPL_ANYI) — Côte d'Ivoire, Ghana",
+        "peopleId": "PPL_ANYI"
+      },
+      {
+        "name": "Nzema (PPL_NZEMA) — Ghana, Côte d'Ivoire",
+        "peopleId": "PPL_NZEMA"
+      },
+      { "name": "Ga (PPL_GA) — Ghana", "peopleId": "PPL_GA" },
+      { "name": "Ewe (PPL_EWE) — Ghana, Togo, Bénin", "peopleId": "PPL_EWE" },
+      { "name": "Fon (PPL_FON) — Bénin, Togo", "peopleId": "PPL_FON" },
+      { "name": "Adja (PPL_ADJA) — Bénin, Togo", "peopleId": "PPL_ADJA" }
+    ],
+    "linguisticCharacteristics": {
+      "typology": "Langues à ordre Sujet-Verbe-Objet (SVO), de morphologie majoritairement isolante à faiblement agglutinante, et sans système de classes nominales de type bantou — c'est précisément l'absence de ce trait qui a servi à distinguer le Kwa du Bénoué-Congo (Bennett & Sterk 1977). Construction verbale sérielle très productive : plusieurs verbes s'enchaînent dans une même proposition sans conjonction pour exprimer une séquence d'actions, un trait décrit en détail pour l'akan et l'éwé (Dolphyne 1988 ; Ameka, dans Capo 1991).",
+      "phonologicalFeatures": "Systèmes tonals de registre (2 à 3 tons lexicaux, akan et éwé notamment), harmonie vocalique fondée sur le trait racine de langue avancée (ATR), voyelles nasales phonémiques, et consonnes labio-vélaires doubles (kp, gb) partagées avec les langues gur et krou voisines — un trait aréal du bassin de la Volta plutôt qu'une innovation propre au Kwa.",
+      "relationsWithNeighbors": "Contacts anciens avec les langues gur au nord (zone de contact du bassin de la Volta) et avec les langues krou à l'ouest. Emprunts au portugais et au néerlandais entrés par le commerce côtier atlantique à partir du XVe siècle (forts commerciaux de la Côte-de-l'Or), puis à l'anglais et au français selon le découpage colonial du XIXe siècle qui a divisé l'aire kwa entre Gold Coast britannique, Togoland allemand puis franco-britannique, et Dahomey français.",
+      "keyInnovations": "Consonnes labio-vélaires (kp, gb), constructions à verbes sériels productives, et pronoms logophoriques distincts pour le discours rapporté — un trait particulièrement documenté dans les langues gbe (éwé, fon) et cité comme trait typologique du groupe dans la littérature comparatiste (Capo 1991)."
+    },
+    "historyAndOrigins": {
+      "probableOrigin": "Aucune reconstruction du proto-Kwa comparable en solidité au proto-bantou n'a stabilisé la question de l'origine commune. Deux positions coexistent dans la littérature : celle qui traite le Kwa restreint comme une unité généalogique réelle issue d'une divergence à partir du Volta-Congo (Stewart 1989, qui reconstruit un proto-Tano pour la branche Nyo), et celle, plus prudente, de Jeff Good (2020), qui traite Kwa et Bénoué-Congo comme des étiquettes commodes recouvrant un continuum de traits partagés par contact autant que par héritage, sans trancher sur leur statut de clades véritables.",
+      "emergencePeriod": "(1) Émergence historique : non datée avec certitude faute de reconstruction robuste ; les hypothèses glottochronologiques restent contestées et ne sont pas retenues ici comme datation. (2) Classification académique : Westermann pose le premier jalon en 1927, Greenberg élargit la catégorie en 1963, Bennett & Sterk la scindent en 1977, Stewart la formalise en 1989, et Williamson & Blench en donnent la synthèse de référence en 2000.",
+      "diffusion": "Répartition continue le long du littoral et de l'arrière-pays forestier du golfe de Guinée, du sud-est ivoirien (lagunes d'Ébrié) au sud-ouest du Nigeria, en passant par le bassin de la Volta ghanéen et le couloir togolo-béninois. Les branches Nyo et Ga-Dangme occupent le centre-ouest de cette aire (Côte d'Ivoire, Ghana), la branche Gbe son extrémité orientale (Togo, Bénin).",
+      "historicalBreaks": "Le partage colonial de la fin du XIXe siècle a coupé la continuité gbe en trois : le pays éwé s'est retrouvé scindé entre la Gold Coast britannique et le Togoland allemand (1884), puis, après 1919, entre le Togoland sous mandat britannique (annexé au Ghana en 1957) et le Togoland sous mandat français — un même peuple réparti aujourd'hui sur trois États (Ghana, Togo, Bénin) par une frontière qui ne recoupe aucune limite linguistique ou politique antérieure.",
+      "contactZones": "Bassin de la Volta (contact avec les langues gur), lagunes ivoiriennes d'Ébrié et d'Aby (contact avec les langues krou), littoral du golfe de Guinée (comptoirs commerciaux européens du XVe au XIXe siècle).",
+      "majorEvents": "Émergence de l'Empire ashanti (Akan) aux XVIIe-XIXe siècles, qui fait du twi une langue de prestige régionale ; comptoirs commerciaux portugais, néerlandais, danois et britannique sur la Côte-de-l'Or (XVe-XIXe siècles) ; partage du Togoland allemand entre la France et le Royaume-Uni après 1919, qui divise durablement l'aire gbe ; indépendance du Ghana en 1957, premier État d'Afrique subsaharienne à accéder à l'indépendance."
+    },
+    "distribution": {
+      "totalSpeakers": 32000000,
+      "distributionByCountry": {
+        "GHA": 18000000,
+        "CIV": 6000000,
+        "TGO": 3000000,
+        "BEN": 2500000
+      }
+    },
+    "sources": [
+      {
+        "title": "Westermann, Diedrich (1927) – Die westlichen Sudansprachen und ihre Beziehungen zum Bantu. Walter de Gruyter",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Première introduction du terme « Kwa » comme catégorie linguistique."
+      },
+      {
+        "title": "Greenberg, Joseph H. (1963) – The Languages of Africa. Indiana University Press",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Classe le Kwa comme branche du Niger-Congo, dans un sens plus large que la classification actuelle."
+      },
+      {
+        "title": "Bennett, Patrick R. & Sterk, Jan P. (1977) – \"South Central Niger-Congo: A Reclassification\", Studies in African Linguistics 8(3), pp. 241-273",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Article qui scinde le « Kwa » de Greenberg en Kwa restreint et Bénoué-Congo sur le critère des classes nominales."
+      },
+      {
+        "title": "Stewart, John M. (1989) – \"Kwa\", dans Bendor-Samuel, J. & Hartell, R. L. (éds.), The Niger–Congo Languages. University Press of America, pp. 217-245",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Formalise la classification restreinte du Kwa retenue par cette fiche et reconstruit un proto-Tano."
+      },
+      {
+        "title": "Williamson, Kay & Blench, Roger (2000) – \"Niger-Congo\", dans Heine, B. & Nurse, D. (éds.), African Languages: An Introduction. Cambridge University Press, pp. 11-42",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Synthèse de référence de l'arbre du Volta-Congo utilisée pour les branches internes du Kwa."
+      },
+      {
+        "title": "Good, Jeff (2020) – \"Niger-Congo, with a special focus on Benue-Congo\", dans Vossen, R. & Dimmendaal, G. J. (éds.), The Oxford Handbook of African Languages. Oxford University Press",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Discute le caractère débattu de la frontière entre Kwa et Bénoué-Congo comme unités généalogiques."
+      },
+      {
+        "title": "Dolphyne, Florence Abena (1988) – The Akan (Twi-Fante) Language: Its Sound Systems and Tonal Structure. Ghana Universities Press",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Description phonologique et tonale de l'akan, langue nyo la plus parlée du groupe."
+      },
+      {
+        "title": "Kropp Dakubu, Mary Esther (1988) – The Languages of Ghana. Kegan Paul International, pour l'International African Institute",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Inventaire de référence des langues kwa et non-kwa du Ghana, dont le ga-dangme."
+      },
+      {
+        "title": "Capo, Hounkpati B. C. (1991) – A Comparative Phonology of Gbe. Foris Publications",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Classification comparative interne des langues gbe (éwé, fon, aja, mina, gen)."
+      },
+      {
+        "title": "SIL International (2025) – Ethnologue: Languages of the World (25e édition)",
+        "url": "https://www.ethnologue.com",
+        "tier": "official",
+        "notes": "Fiches de langues individuelles du groupe kwa et estimations de locuteurs."
+      },
+      {
+        "title": "Glottolog 5.2 (2025) – \"Kwa Volta-Congo\" (kwav1236)",
+        "url": "https://glottolog.org/resource/languoid/id/kwav1236",
+        "tier": "official",
+        "notes": "Classification de référence : Atlantic-Congo > Volta-Congo > Kwa Volta-Congo, 81 langues rattachées, consultée le 2026-09-14."
+      },
+      {
+        "title": "UNFPA (2025) – World Population Dashboard",
+        "url": "https://www.unfpa.org/data/world-population-dashboard",
+        "tier": "official",
+        "notes": "Populations nationales du Ghana, de la Côte d'Ivoire, du Togo et du Bénin utilisées pour calibrer les estimations de locuteurs par pays."
+      },
+      {
+        "title": "Ghana Statistical Service (2021) – 2021 Population and Housing Census: General Report",
+        "url": "https://statsghana.gov.gh",
+        "tier": "official",
+        "notes": "Répartition linguistique déclarée au recensement ghanéen, dont akan et ewe."
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred: this is the family's first fiche and none of the 25 linguistic family records has an English sidecar yet. It follows the family corpus's first translation pass."
+    }
+  }
+}

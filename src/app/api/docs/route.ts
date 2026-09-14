@@ -5,21 +5,19 @@ import { jsonWithCors, corsOptionsResponse } from "@/lib/api/cors";
  * /api/docs:
  *   get:
  *     summary: Documentation OpenAPI/Swagger (déprécié)
- *     description: Cette route est dépréciée. Utilisez /api/docs/v1 ou /api/docs/v2
+ *     description: Cette route est dépréciée. Utilisez /api/docs/v2
  *     tags: [Documentation]
  *     responses:
  *       301:
- *         description: Redirection vers la documentation v1
+ *         description: Renvoi vers la documentation v2
  */
 // @req REQ-099
 export async function GET() {
-  // Rediriger vers v1 par défaut pour rétrocompatibilité
   return jsonWithCors(
     {
       message:
-        "Cette route est dépréciée. Utilisez /api/docs/v1 pour l'API v1 ou /api/docs/v2 pour l'API v2 (AFRIK).",
+        "This route is deprecated. Use /api/docs/v2 for the v2 (AFRIK) API.",
       links: {
-        v1: "/api/docs/v1",
         v2: "/api/docs/v2",
       },
     },

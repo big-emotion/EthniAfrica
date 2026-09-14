@@ -872,6 +872,40 @@ export function checkFlgFolderMatch(datasetRoot: string): ValidationResult {
 }
 
 /**
+ * FR26 – A people fiche is filed under the family its `languageFamilyId` names.
+ *
+ * The field is what the database, the API, search and the quiz read; the folder
+ * is only where a curator looks. With nothing comparing them, one could be
+ * edited without the other — which is how PPL_ATTIE's field was "corrected" to
+ * match a wrong folder in v2.0.0, and how 54 Kwa fiches came to sit under two
+ * families that are not theirs.
+ */
+export function checkPeopleFolderMatchesFamily(
+  datasetRoot: string
+): ValidationResult {
+  const errors: string[] = [];
+  const warnings: string[] = [];
+
+  for (const { flgFolder, file, fullPath } of collectPplFiles(datasetRoot)) {
+    let languageFamilyId: unknown;
+    try {
+      languageFamilyId = JSON.parse(
+        fs.readFileSync(fullPath, "utf-8")
+      ).languageFamilyId;
+    } catch {
+      continue; // parse failures are surfaced by FR27/other checks
+    }
+    if (languageFamilyId !== flgFolder) {
+      errors.push(
+        `peuples/${flgFolder}/${file}: filed under ${flgFolder} but languageFamilyId is ${String(languageFamilyId ?? "missing")}`
+      );
+    }
+  }
+
+  return { ok: errors.length === 0, errors, warnings };
+}
+
+/**
  * FR27 – No two PPL JSON files may share the same `id` field.
  */
 export function checkPplDuplicates(datasetRoot: string): ValidationResult {
@@ -1658,13 +1692,11 @@ export const AFRICAN_REFERENCE_COUNTRY_CODES: ReadonlySet<string> = new Set([
 
 /**
  * FR28 – For each pays JSON in the African reference set, the sum of
- * peoples[].percentageInCountry must be [95, 105].
+ * peoples[].percentageInCountry is reported when it leaves [95, 105].
  *
- * Tolerance bands (transition plan — see docs/adr/0001-fr28-demographic-tolerance.md):
- *   - Hard gate (this function):     [95, 105] — errors, fails validation.
- *   - Strict warning (checkPopulationSumsStrict): [99, 101] — warnings only.
- * The strict warning is the doctrinal target; the hard gate will be tightened
- * once all country fiches land inside [99, 101].
+ * DEC-055 (REQ-170): a breakdown that misses 100 % is published and the country
+ * fiche says it is estimated or incomplete, so this band warns and never fails
+ * a merge. The narrower target band is checkPopulationSumsStrict.
  *
  * Scope (REQ-131): a pays JSON whose id falls outside
  * AFRICAN_REFERENCE_COUNTRY_CODES carries no completeness obligation and is
@@ -1708,8 +1740,8 @@ export function checkPopulationSums(datasetRoot: string): ValidationResult {
       0
     );
     if (sum < 95 || sum > 105) {
-      errors.push(
-        `${countryId}: population percentages sum to ${sum.toFixed(2)}% (expected 95–105%)`
+      warnings.push(
+        `${countryId}: population percentages sum to ${sum.toFixed(2)}% (expected 95–105%) — the fiche shows its breakdown as estimated or incomplete`
       );
     }
   }
@@ -1721,9 +1753,9 @@ export function checkPopulationSums(datasetRoot: string): ValidationResult {
  * FR28-strict – Doctrinal target band [99, 101].
  *
  * Reports a pays JSON whose peoples[].percentageInCountry sum falls outside
- * [99, 101] but inside the FR28 hard gate [95, 105]. Advisory while ~30
- * countries' splits were being re-sourced; enforced since the whole corpus
- * landed inside the target band, so a fiche can no longer drift back out.
+ * [99, 101]. It failed the build once the corpus landed inside the band;
+ * DEC-055 (REQ-170) turned it back into a warning, because a partial figure
+ * that says it is partial is worth more to a reader than no figure.
  *
  * Scope (REQ-131): same African reference set as checkPopulationSums — a
  * pays JSON outside it carries no completeness obligation and is skipped.
@@ -1731,7 +1763,7 @@ export function checkPopulationSums(datasetRoot: string): ValidationResult {
 export function checkPopulationSumsStrict(
   datasetRoot: string
 ): ValidationResult {
-  const errors: string[] = [];
+  const warnings: string[] = [];
 
   const paysDir = path.join(datasetRoot, "pays");
   if (!fs.existsSync(paysDir)) {
@@ -1767,13 +1799,13 @@ export function checkPopulationSumsStrict(
       0
     );
     if (sum < 99 || sum > 101) {
-      errors.push(
+      warnings.push(
         `${countryId}: population percentages sum to ${sum.toFixed(2)}% (strict target 99–101%)`
       );
     }
   }
 
-  return { ok: errors.length === 0, errors, warnings: [] };
+  return { ok: true, errors: [], warnings };
 }
 
 /**
@@ -1784,14 +1816,15 @@ export function checkPopulationSumsStrict(
  * nothing to weigh when a fiche declares none, and both skip an empty list.
  * A fiche stating no split therefore had no wrong sum and passed in silence —
  * which is how MDG reached the reader showing its national total above an
- * empty chapter. The absence is the finding; this check is what states it.
+ * empty chapter. The absence is the finding; this check is what states it —
+ * as a warning since DEC-055 (REQ-170), like the two sum bands.
  *
  * Scope (REQ-131): same African reference set as checkPopulationSums.
  */
 export function checkPopulationSplitDeclared(
   datasetRoot: string
 ): ValidationResult {
-  const errors: string[] = [];
+  const warnings: string[] = [];
 
   const paysDir = path.join(datasetRoot, "pays");
   if (!fs.existsSync(paysDir)) {
@@ -1821,13 +1854,13 @@ export function checkPopulationSplitDeclared(
 
     const peoples = data?.content?.demographics?.peoples;
     if (!peoples || peoples.length === 0) {
-      errors.push(
+      warnings.push(
         `${countryId}: content.demographics.peoples declares no people — the fiche publishes its national total above an empty chapter; state the split, or record why it is unavailable`
       );
     }
   }
 
-  return { ok: errors.length === 0, errors, warnings: [] };
+  return { ok: true, errors: [], warnings };
 }
 
 /**
@@ -2918,10 +2951,10 @@ function validateGeoJson(data: unknown): string[] {
 }
 
 /**
- * CR1 – Every colonial-border layer must carry ≥ 1 source with tier 1 or 2;
- * Tier-2 entries must carry the Wikipedia-path audit trail in `notes`;
- * Wikipedia itself is never a citable `reference`; geometry must parse as
- * valid GeoJSON (FeatureCollection, closed rings).
+ * CR1 – Every colonial-border layer cites at least one source, each with a
+ * valid tier, and its geometry parses as valid GeoJSON (FeatureCollection,
+ * closed rings). A layer resting only on `unverified` sources, or citing
+ * Wikipedia directly, is reported and published labelled (DEC-055, REQ-169).
  */
 export function checkColonialBorderCr1(datasetRoot: string): ValidationResult {
   const errors: string[] = [];
@@ -2943,39 +2976,29 @@ export function checkColonialBorderCr1(datasetRoot: string): ValidationResult {
 
     if (sources.length === 0) {
       errors.push(
-        `CR1: ${layerId}: missing sources[] — at least one Tier 1 or Tier 2 source is required`
+        `CR1: ${layerId}: missing sources[] — a colonial border needs at least one source, at any standing`
       );
     }
 
-    for (const source of sources) {
+    sources.forEach((source, i) => {
       const reference =
         typeof source.reference === "string" ? source.reference : "";
-      const notes = typeof source.notes === "string" ? source.notes : "";
-      const tier = source.tier;
 
       if (/wikipedia\.org/i.test(reference)) {
-        errors.push(
-          `CR1: ${layerId}: Wikipedia cited directly as a source (forbidden — Tier 3): "${reference}"`
+        warnings.push(
+          `CR1: ${layerId}: sources[${i}] cites Wikipedia directly — cite the primary source it points to, at its own standing: "${reference}"`
         );
-        continue;
       }
 
-      if (!isAuthoritativeTier(tier)) {
+      if (declaredStanding(source.tier) === null) {
         errors.push(
-          `CR1: ${layerId}: source at standing "${String(tier)}" — a colonial border needs an official or referenced citation`
+          `CR1: ${layerId}: sources[${i}] declares standing "${String(source.tier)}" — a tier is required, one of ${[...SOURCE_STANDINGS].join(", ")}`
         );
-        continue;
       }
+    });
 
-      if (
-        normalizedNameRecordTier(tier) === "referenced" &&
-        !/wikipedia/i.test(notes)
-      ) {
-        errors.push(
-          `CR1: ${layerId}: tier 2 source missing the Wikipedia cross-check path in notes`
-        );
-      }
-    }
+    const standing = unauthoritativeStanding(sources);
+    if (standing) warnings.push(`CR1: ${layerId}: ${standing}`);
 
     if (!data.geometry_file) {
       errors.push(`CR1: ${layerId}: missing geometry_file`);
@@ -3069,7 +3092,7 @@ export function checkColonialBorderCr2(
  * Validates every dataset/source/afrik/migrations/*.json fiche against the
  * strict model public/modele-migration.json: id format/uniqueness,
  * classificationStatus, the open eventType enum (read from the model file —
- * never duplicated here), time-range coherence, Tier 1/2 sourcing, resolvable
+ * never duplicated here), time-range coherence, source tiers, resolvable
  * PPL references, valid GeoJSON geometry, and exact key match with the model.
  */
 
@@ -3364,26 +3387,25 @@ export function validateMigrationEvents(
       );
     }
 
+    // DEC-055 (REQ-169): what a contested event or a non-official source
+    // leaves unsaid is reported for the curator, never a reason to withhold
+    // the event. Fewer than two sources on a contested event still fails above.
     if (isContested) {
       const datingNote = data.timeRange?.datingNote;
       if (typeof datingNote !== "string" || !datingNote.trim()) {
-        errors.push(
-          `${file}: contested events require a non-empty timeRange.datingNote`
+        warnings.push(
+          `${file}: contested event has no timeRange.datingNote — the dates are shown without why they are debated`
         );
       }
       const debate = data.content?.debate;
       if (typeof debate !== "string" || !debate.trim()) {
-        errors.push(
-          `${file}: contested events require a non-empty content.debate`
+        warnings.push(
+          `${file}: contested event has no content.debate — the positions in the debate are not shown`
         );
       }
     }
 
     sources.forEach((source, i) => {
-      // Migration 041 retired the numeric Tier 1/2 scale for the three
-      // standings. The old rule "Tier 2 requires notes" existed so a
-      // non-authoritative citation stayed auditable; its faithful translation
-      // is that anything short of `official` carries that provenance note.
       if (!SOURCE_STANDINGS.has(String(source.tier))) {
         errors.push(
           `${file}: content.sources[${i}] must record a tier — one of ${[
@@ -3394,8 +3416,8 @@ export function validateMigrationEvents(
         source.tier !== "official" &&
         (typeof source.notes !== "string" || !source.notes.trim())
       ) {
-        errors.push(
-          `${file}: content.sources[${i}] is Tier 2 and requires non-empty notes`
+        warnings.push(
+          `${file}: content.sources[${i}] at standing "${source.tier}" carries no notes`
         );
       }
     });
@@ -3533,10 +3555,10 @@ export function checkColonialEventCr3(datasetRoot: string): ValidationResult {
 }
 
 /**
- * CR4 – Every colonial event carries ≥1 Tier 1/2 source (Wikipedia forbidden
- * as a direct citation; Tier 2 requires the Wikipedia cross-check path in
- * notes), and ≥2 valid sources when classificationStatus is "contested" or
- * "colonial-legacy".
+ * CR4 – Every colonial event cites at least one source, each with a tier, and
+ * at least two when classificationStatus is "contested" or "colonial-legacy".
+ * An event resting only on `unverified` sources, or citing Wikipedia directly,
+ * is reported and published labelled (DEC-055, REQ-169).
  */
 export function checkColonialEventCr4(datasetRoot: string): ValidationResult {
   const errors: string[] = [];
@@ -3557,20 +3579,18 @@ export function checkColonialEventCr4(datasetRoot: string): ValidationResult {
         ? data.classificationStatus
         : undefined;
 
-    const validSources = sources.filter((s) => isAuthoritativeTier(s.tier));
-    if (validSources.length === 0) {
+    if (sources.length === 0) {
       errors.push(
-        `CR4: ${file}: no source with tier 1 or tier 2 — at least one Tier 1/2 source is required`
+        `CR4: ${file}: cites no source — a colonial event needs at least one, at any standing`
       );
     }
 
     sources.forEach((source, i) => {
       const url = typeof source.url === "string" ? source.url : "";
       if (/wikipedia\.org/i.test(url)) {
-        errors.push(
-          `CR4: ${file}: content.sources[${i}] cites Wikipedia directly (forbidden — Tier 3): "${url}"`
+        warnings.push(
+          `CR4: ${file}: content.sources[${i}] cites Wikipedia directly — cite the primary source it points to, at its own standing: "${url}"`
         );
-        return;
       }
       if (!SOURCE_STANDINGS.has(String(source.tier))) {
         errors.push(
@@ -3578,22 +3598,18 @@ export function checkColonialEventCr4(datasetRoot: string): ValidationResult {
             ...SOURCE_STANDINGS,
           ].join(", ")}`
         );
-        return;
-      }
-      const notes = typeof source.notes === "string" ? source.notes : "";
-      if (source.tier === "referenced" && !/wikipedia/i.test(notes)) {
-        errors.push(
-          `CR4: ${file}: content.sources[${i}] is Tier 2 and requires the Wikipedia cross-check path in notes`
-        );
       }
     });
+
+    const standing = unauthoritativeStanding(sources);
+    if (standing) warnings.push(`CR4: ${file}: ${standing}`);
 
     const requiresTwoSources =
       classificationStatus === "contested" ||
       classificationStatus === "colonial-legacy";
-    if (requiresTwoSources && validSources.length < 2) {
+    if (requiresTwoSources && sources.length < 2) {
       errors.push(
-        `CR4: ${file}: classificationStatus "${classificationStatus}" requires at least 2 Tier 1/2 sources (found ${validSources.length})`
+        `CR4: ${file}: classificationStatus "${classificationStatus}" requires at least 2 sources (found ${sources.length})`
       );
     }
   }
@@ -3817,8 +3833,9 @@ export function checkRelationReferences(datasetRoot: string): ValidationResult {
 }
 
 /**
- * REL-5 – At least one Tier 1|2 source; every Tier 2 source records a
- * non-empty Wikipedia cross-check note.
+ * REL-5 – A relation cites at least one source, each with a tier. A relation
+ * resting only on `unverified` sources is reported and published labelled
+ * (DEC-055, REQ-169).
  */
 export function checkRelationSources(datasetRoot: string): ValidationResult {
   const errors: string[] = [];
@@ -3834,25 +3851,23 @@ export function checkRelationSources(datasetRoot: string): ValidationResult {
     }
 
     const sources = Array.isArray(data.sources) ? data.sources : [];
-    const hasValidTierSource = sources.some((s) =>
-      isAuthoritativeTier(s?.tier)
-    );
-    if (!hasValidTierSource) {
+    if (sources.length === 0) {
       errors.push(
-        `REL-5: ${file}: no source at official or referenced standing — at least one authoritative citation is required`
+        `REL-5: ${file}: cites no source — a relation needs at least one, at any standing`
       );
+      continue;
     }
 
     sources.forEach((source, i) => {
-      if (
-        normalizedNameRecordTier(source?.tier) === "referenced" &&
-        (typeof source.notes !== "string" || !source.notes.trim())
-      ) {
+      if (declaredStanding(source?.tier) === null) {
         errors.push(
-          `REL-5: ${file}: sources[${i}] is Tier 2 and requires a non-empty Wikipedia cross-check note in "notes"`
+          `REL-5: ${file}: sources[${i}] must record a tier — one of ${[...SOURCE_STANDINGS].join(", ")}`
         );
       }
     });
+
+    const standing = unauthoritativeStanding(sources);
+    if (standing) warnings.push(`REL-5: ${file}: ${standing}`);
   }
 
   return { ok: errors.length === 0, errors, warnings };
@@ -4102,14 +4117,43 @@ export function checkDossierFicheModel(datasetRoot: string): ValidationResult {
 }
 
 /**
- * True when a source carries publishable authority — the current-vocabulary
- * equivalent of the retired "Tier 1/2". `unverified` and the unadjudicated
- * `needs_review` are deliberately excluded: both are legal standings that
- * publish, neither can satisfy a gate asking for an authoritative citation.
+ * True when a source is `official` or `referenced`. `unverified` and the
+ * unadjudicated `needs_review` are legal standings that publish; they only
+ * decide whether a record is reported as resting on neither.
  */
 function isAuthoritativeTier(tier: unknown): boolean {
   const normalized = normalizedNameRecordTier(tier);
   return normalized === "official" || normalized === "referenced";
+}
+
+/**
+ * The standing a source declares, or null when it declares none a reader
+ * could be shown — the one thing about a source's standing that still fails.
+ */
+function declaredStanding(tier: unknown): string | null {
+  return tier === "needs_review" ? tier : normalizedNameRecordTier(tier);
+}
+
+/**
+ * DEC-055: a record resting on no `official` or `referenced` source is
+ * published and labelled, so the gates report the standings a reader will see
+ * instead of refusing the record. Null when there is nothing to report.
+ */
+function unauthoritativeStanding(
+  sources: ReadonlyArray<{ tier?: unknown } | null | undefined>
+): string | null {
+  if (sources.some((source) => isAuthoritativeTier(source?.tier))) return null;
+  const standings = [
+    ...new Set(
+      sources
+        .map((source) => declaredStanding(source?.tier))
+        .filter((standing): standing is string => standing !== null)
+    ),
+  ];
+  if (standings.length === 0) return null;
+  return `rests only on sources at standing ${standings
+    .map((standing) => `"${standing}"`)
+    .join(", ")} — published and labelled as such`;
 }
 
 /**
@@ -4132,10 +4176,10 @@ function normalizedNameRecordTier(tier: unknown): SourceTier | null {
 }
 
 /**
- * FR57-source – every name record cites ≥1 source at official or referenced
- * tier (the current-vocabulary equivalent of the retired "Tier 1/2"); every
- * referenced-tier source records a non-empty Wikipedia cross-check note in
- * "notes" (auditable chain required).
+ * FR57-source – every name record cites at least one source, each with a tier.
+ * A name resting only on `unverified` sources is reported and published
+ * labelled, as DEC-052 already lets an oral tradition qualify a people name
+ * (DEC-055, REQ-169).
  */
 export function checkNameRecordSources(datasetRoot: string): ValidationResult {
   const errors: string[] = [];
@@ -4153,26 +4197,24 @@ export function checkNameRecordSources(datasetRoot: string): ValidationResult {
     const names = Array.isArray(data.names) ? data.names : [];
     names.forEach((entry, i) => {
       const sources = Array.isArray(entry?.sources) ? entry.sources : [];
-      const hasValidTierSource = sources.some((s) => {
-        const tier = normalizedNameRecordTier(s?.tier);
-        return tier === "official" || tier === "referenced";
-      });
-      if (!hasValidTierSource) {
+      if (sources.length === 0) {
         errors.push(
-          `FR57-source: ${file}: names[${i}] has no source at official or referenced tier — at least one is required`
+          `FR57-source: ${file}: names[${i}] cites no source — a name needs at least one, at any standing`
         );
+        return;
       }
 
       sources.forEach((source, j) => {
-        if (
-          normalizedNameRecordTier(source?.tier) === "referenced" &&
-          (typeof source.notes !== "string" || !source.notes.trim())
-        ) {
+        if (declaredStanding(source?.tier) === null) {
           errors.push(
-            `FR57-source: ${file}: names[${i}].sources[${j}] is referenced-tier and requires a non-empty Wikipedia cross-check note in "notes"`
+            `FR57-source: ${file}: names[${i}].sources[${j}] must record a tier — one of ${[...SOURCE_STANDINGS].join(", ")}`
           );
         }
       });
+
+      const standing = unauthoritativeStanding(sources);
+      if (standing)
+        warnings.push(`FR57-source: ${file}: names[${i}] ${standing}`);
     });
   }
 
@@ -4736,7 +4778,7 @@ const STRICT_MODEL_KINDS: Record<
 export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   Record<StrictModelKind, number>
 > = {
-  peuple: 7084,
+  peuple: 7083,
   famille_linguistique: 108,
   pays: 13,
 };
@@ -5205,10 +5247,10 @@ export function checkTranslationSidecars(
  * Checks whose findings are reported without failing the build.
  *
  * FR52-coverage stays advisory while the people-to-language linkage backlog is
- * burned down (FLG_NIGERCONGO 0/179 linked). FR28 and FR28-strict left this set
- * once every country's percentageInCountry split landed inside [99, 101]:
- * softening a check is a deliberate, visible decision, not a flag buried in a
- * registration.
+ * burned down (FLG_NIGERCONGO 0/179 linked). Softening a check is a
+ * deliberate, visible decision, not a flag buried in a registration. The FR28
+ * bands and the source-standing rules are not listed here: since DEC-055 they
+ * emit warnings themselves, next to findings in the same check that still fail.
  *
  * FR27-references is advisory for the same reason FR28 once was: measured on
  * 2026-09-05, the corpus already carried 43 references to ids that have no
@@ -5369,6 +5411,12 @@ async function main() {
     result: checkFlgFolderMatch(datasetRoot),
   });
 
+  console.log("FR26 – People folder matches languageFamilyId...");
+  newChecks.push({
+    name: "FR26 People folder matches languageFamilyId",
+    result: checkPeopleFolderMatchesFamily(datasetRoot),
+  });
+
   console.log("FR27 – PPL duplicates...");
   newChecks.push({
     name: "FR27 PPL duplicates",
@@ -5524,7 +5572,7 @@ async function main() {
     result: checkColonialEventCr3(datasetRoot),
   });
 
-  console.log("CR4 – Colonial-event Tier 1/2 source gate...");
+  console.log("CR4 – Colonial-event sources...");
   newChecks.push({
     name: "CR4 Colonial-event source gate",
     result: checkColonialEventCr4(datasetRoot),
@@ -5568,9 +5616,7 @@ async function main() {
     result: checkNameRecordModel(datasetRoot),
   });
 
-  console.log(
-    "FR57-source – Name record sources (Tier 1/2 + Wikipedia cross-check)..."
-  );
+  console.log("FR57-source – Name record sources...");
   newChecks.push({
     name: "FR57-source Name record sources",
     result: checkNameRecordSources(datasetRoot),

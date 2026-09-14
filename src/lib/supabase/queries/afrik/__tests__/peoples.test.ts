@@ -9,7 +9,6 @@ import {
   getAfrikPeopleById,
   getPaginatedAfrikPeoples,
   getAfrikPeoplesByLanguageFamily,
-  getAfrikPeoplesByCountry,
   getAfrikPeoplesByIds,
   getPeopleCountsByLanguageFamily,
   UNCLASSIFIED_FAMILY_KEY,
@@ -316,58 +315,6 @@ describe("AFRIK Peoples Queries", () => {
 
       expect(result).toHaveLength(1);
       expect(result[0].languageFamilyId).toBe("FLG_BANTU");
-    });
-  });
-
-  describe("getAfrikPeoplesByCountry", () => {
-    // @req REQ-019
-    it("should filter peoples by country", async () => {
-      mockSupabase.from.mockImplementation((table: string) => {
-        if (table === "afrik_people_countries") {
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          const relChain: any = {
-            select: vi.fn(() => relChain),
-            eq: vi.fn(() =>
-              Promise.resolve({
-                data: [{ people_id: "PPL_SHONA" }],
-                error: null,
-              })
-            ),
-            in: vi.fn(() =>
-              Promise.resolve({
-                data: [{ people_id: "PPL_SHONA", country_id: "ZWE" }],
-                error: null,
-              })
-            ),
-          };
-          return relChain;
-        }
-
-        // Peoples table
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const pChain: any = {
-          select: vi.fn(() => pChain),
-          in: vi.fn(() => pChain),
-          order: vi.fn(() =>
-            Promise.resolve({
-              data: [
-                {
-                  id: "PPL_SHONA",
-                  name_main: "Shona",
-                  language_family_id: "FLG_BANTU",
-                  content: {},
-                },
-              ],
-              error: null,
-            })
-          ),
-        };
-        return pChain;
-      });
-
-      const result = await getAfrikPeoplesByCountry("ZWE");
-
-      expect(result).toHaveLength(1);
     });
   });
 

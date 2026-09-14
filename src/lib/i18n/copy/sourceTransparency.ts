@@ -19,6 +19,9 @@ const en = {
     openReports: (count: number) =>
       `${count} open ${count === 1 ? "report" : "reports"} on this assertion.`,
     sources: "Sources",
+    reviewedNarratives: "Reviewed oral narratives",
+    unconfirmedIntro:
+      "These sources are not yet confirmed. Our work is to bring up the ones closest to what peoples actually lived.",
     viewInBibliography: "View in the bibliography",
     brokenLink: (date: string) => `unresolved link — reported on ${date}`,
     reportSource: "Report this source",
@@ -63,6 +66,9 @@ const fr: SourceTransparencyCopy = {
         count > 1 ? "s" : ""
       } sur cette assertion.`,
     sources: "Sources",
+    reviewedNarratives: "Récits oraux relus",
+    unconfirmedIntro:
+      "Ces sources ne sont pas encore confirmées. Notre travail est de faire remonter celles qui se rapprochent le plus de ce que les peuples ont vécu.",
     viewInBibliography: "Voir dans la bibliographie",
     brokenLink: (date) => `lien non résolu — signalé le ${date}`,
     reportSource: "Signaler cette source",

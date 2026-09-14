@@ -6,7 +6,21 @@
  * lives in one place.
  */
 
-import { isAuthoritativeSourceTier, type SourceTier } from "@/types/sources";
+import {
+  isAuthoritativeSourceTier,
+  SOURCE_KINDS,
+  toSourceTier,
+  type SourceKind,
+  type SourceTier,
+} from "@/types/sources";
+
+/** The oral narrative an `oral_tradition` source points at, reduced to what attributes it. */
+export interface QuizOralTradition {
+  narrativeCode: string | null;
+  community: string | null;
+  /** `oral_narratives.rights_status`: the narrator's consent, `cleared` or not. */
+  rightsStatus: string | null;
+}
 
 export interface QuizAssertionSource {
   tier: SourceTier;
@@ -16,6 +30,8 @@ export interface QuizAssertionSource {
    * `hasEligibleSource`.
    */
   resolvable: boolean;
+  sourceKind?: SourceKind;
+  oralTradition?: QuizOralTradition;
 }
 
 export interface QuizEligibilityInput {
@@ -31,6 +47,8 @@ export interface QuizEligibilityInput {
   openFlagCount: number;
 }
 
+// The reason keeps its historical name: the generation-run audit counters
+// are keyed on it, and an attributed oral tradition now also satisfies it.
 export type QuizEligibilityRejectionReason =
   | "confidence_below_threshold"
   | "no_authoritative_source"
@@ -39,6 +57,61 @@ export type QuizEligibilityRejectionReason =
 export type QuizEligibilityResult =
   | { eligible: true; reason: null }
   | { eligible: false; reason: QuizEligibilityRejectionReason };
+
+/**
+ * The `sources` columns both callers read, spelled once so the generation
+ * sweep and the serve-time re-check cannot feed the gate different inputs.
+ * The narrative is embedded through `sources.oral_narrative_id` (migration
+ * 089). `rights_status` is read rather than left to RLS: the generation sweep
+ * uses the service role, which RLS does not filter, and the anon policy on
+ * `oral_narratives` is due to be rewritten (REQ-172). Consent is therefore
+ * checked by the gate itself, on both paths.
+ */
+// @req REQ-175
+export const QUIZ_SOURCE_COLUMNS =
+  "id, tier, verified_at, source_kind, oral_narratives(narrative_code, community, rights_status)";
+
+interface QuizSourceNarrativeRow {
+  narrative_code: string | null;
+  community: string | null;
+  rights_status?: string | null;
+}
+
+export interface QuizSourceRow {
+  tier: string | null;
+  verified_at: string | null;
+  source_kind?: string | null;
+  // PostgREST returns one object for this many-to-one embed, but supabase-js,
+  // with no generated database types, infers an array. Both are accepted so
+  // the type describes what the client claims and the mapper what arrives.
+  oral_narratives?: QuizSourceNarrativeRow | QuizSourceNarrativeRow[] | null;
+}
+
+/**
+ * Absent fields stay absent rather than null, so a written source maps to the
+ * same `{ tier, resolvable }` it always did.
+ */
+// @req REQ-175
+export function toQuizAssertionSource(row: QuizSourceRow): QuizAssertionSource {
+  const source: QuizAssertionSource = {
+    tier: toSourceTier(row.tier),
+    resolvable: row.verified_at !== null,
+  };
+  if (SOURCE_KINDS.includes(row.source_kind as SourceKind)) {
+    source.sourceKind = row.source_kind as SourceKind;
+  }
+  const narrative = Array.isArray(row.oral_narratives)
+    ? row.oral_narratives[0]
+    : row.oral_narratives;
+  if (narrative) {
+    source.oralTradition = {
+      narrativeCode: narrative.narrative_code,
+      community: narrative.community,
+      rightsStatus: narrative.rights_status ?? null,
+    };
+  }
+  return source;
+}
 
 /**
  * 80 was unreachable rather than strict.
@@ -84,22 +157,64 @@ export function getQuizMinConfidence(): number {
 }
 
 /**
- * An `unverified` source may back a published fiche, but it may not back a
- * quiz answer: the quiz asserts a fact as correct, so it needs a source that
- * carries authority of its own. That bar is kept.
+ * The community an `oral_tradition` source attributes its account to, or null
+ * when the attribution is incomplete or the narrator's consent is not
+ * recorded. Without the narrative the round points at nothing a reader can
+ * open; without the community it cannot say whose tradition it plays; and
+ * without cleared rights it would publish, in a publicly readable bank, a
+ * narrative its narrator never released or has withdrawn (DEC-055 keeps that
+ * gate).
+ */
+function attributedCommunity(source: QuizAssertionSource): string | null {
+  if (source.sourceKind !== "oral_tradition") return null;
+  if (source.oralTradition?.rightsStatus !== "cleared") return null;
+  const narrativeCode = source.oralTradition.narrativeCode?.trim();
+  const community = source.oralTradition.community?.trim();
+  return narrativeCode && community ? community : null;
+}
+
+/**
+ * A quiz asserts an answer as correct, so it needs a source that carries
+ * authority of its own — `official` or `referenced` — or, since DEC-055, an
+ * oral tradition attributed to a named community. The latter is played as
+ * what that community tells, and the item says so (see
+ * `oralTraditionCommunity`). Every other `unverified` source may back a
+ * published fiche but not a quiz answer.
  *
- * What was dropped is the `resolvable` conjunct — `sources.verified_at is not
- * null`, a second, separate human verification. Nothing in the corpus performs
- * it: no loader writes `verified_at`, so every source read as unresolvable and
- * this predicate returned false for all 17 802 candidates however well sourced
- * they were. The authority signal the corpus *does* record is the tier, which
- * a curator assigned fiche by fiche — that is what this now reads.
+ * What was dropped earlier is the `resolvable` conjunct — `sources.verified_at
+ * is not null`, a second, separate human verification. Nothing in the corpus
+ * performs it: no loader writes `verified_at`, so every source read as
+ * unresolvable and this predicate returned false for all 17 802 candidates
+ * however well sourced they were.
  *
  * The standing stays visible either way: the reveal renders each source's tier
  * through `SOURCE_TIER_LABELS`, so a reader sees what an answer rests on.
  */
 function hasEligibleSource(sources: QuizAssertionSource[]): boolean {
-  return sources.some((source) => isAuthoritativeSourceTier(source.tier));
+  return sources.some(
+    (source) =>
+      isAuthoritativeSourceTier(source.tier) ||
+      attributedCommunity(source) !== null
+  );
+}
+
+/**
+ * The community whose oral tradition an item rests on, when that tradition is
+ * what qualifies it. A written source at authority standing already carries
+ * the answer on its own, so such an item is not attributed to a tradition.
+ */
+// @req REQ-175
+export function oralTraditionCommunity(
+  sources: QuizAssertionSource[]
+): string | null {
+  if (sources.some((source) => isAuthoritativeSourceTier(source.tier))) {
+    return null;
+  }
+  for (const source of sources) {
+    const community = attributedCommunity(source);
+    if (community) return community;
+  }
+  return null;
 }
 
 /**
@@ -114,7 +229,7 @@ function hasEligibleSource(sources: QuizAssertionSource[]): boolean {
  * states its bar in terms of what the corpus actually records: a confidence
  * score, a source tier a curator assigned, and no open flag.
  */
-// @req REQ-103
+// @req REQ-103 REQ-175
 export function isQuizEligible(
   input: QuizEligibilityInput
 ): QuizEligibilityResult {

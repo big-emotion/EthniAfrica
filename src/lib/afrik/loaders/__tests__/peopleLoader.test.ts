@@ -1,9 +1,5 @@
 import { describe, it, expect } from "vitest";
-import {
-  loadPeople,
-  loadAllPeoples,
-  loadPeoplesByLanguageFamily,
-} from "../peopleLoader";
+import { loadPeople, loadAllPeoples } from "../peopleLoader";
 
 /**
  * TDD Phase: RED
@@ -38,20 +34,6 @@ describe("People Loader", () => {
       // Should include Shona
       const shona = peoples.find((p) => p.id === "PPL_SHONA");
       expect(shona).toBeDefined();
-    });
-  });
-
-  describe("loadPeoplesByLanguageFamily", () => {
-    it("should load peoples by language family", async () => {
-      const peoples = await loadPeoplesByLanguageFamily("FLG_BANTU");
-
-      expect(Array.isArray(peoples)).toBe(true);
-      expect(peoples.length).toBeGreaterThan(0);
-
-      // All should have FLG_BANTU as language family
-      for (const people of peoples) {
-        expect(people.languageFamilyId).toBe("FLG_BANTU");
-      }
     });
   });
 });

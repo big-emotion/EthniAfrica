@@ -17,7 +17,7 @@ const en = {
       "Language family → language → people → country. This is the hierarchy of the atlas itself, and each page can be read from the level above. Designations and personal names cross it: they name, they do not locate.",
     families: [
       "Language families",
-      "The first level: 24 families, each with its languages.",
+      "The first level: 25 families, each with its languages.",
     ],
     languages: [
       "Languages",
@@ -105,7 +105,7 @@ const fr: SiteTreeCopy = {
       "Famille linguistique → langue → peuple → pays. C'est la hiérarchie de l’atlas lui-même, et chaque page se lit depuis celle du dessus. Les appellations et les noms la traversent : ils nomment, ils ne situent pas.",
     families: [
       "Familles linguistiques",
-      "Le premier niveau : 24 familles, chacune avec ses langues.",
+      "Le premier niveau : 25 familles, chacune avec ses langues.",
     ],
     languages: [
       "Langues",
