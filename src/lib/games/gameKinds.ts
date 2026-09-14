@@ -199,14 +199,6 @@ export interface EstimateRound extends GameRoundBase {
 
 export type GameRound = BinaryRound | EstimateRound | ListRound;
 
-/** Narrows a round to the options-bearing kinds without a cast. */
-// @req REQ-120
-export function isOptionRound(
-  round: GameRound
-): round is BinaryRound | ListRound {
-  return round.kind === "binary" || round.kind === "list";
-}
-
 /** Narrows a round to the stacked-list kind without a cast. */
 // @req REQ-120
 export function isListRound(round: GameRound): round is ListRound {

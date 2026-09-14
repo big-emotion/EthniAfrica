@@ -79,7 +79,13 @@ export const DEAD_CODE_CEILINGS: Readonly<Record<DeadCodeCategory, number>> = {
   // shadcn sub-components kept as library surface, and one overlay reader
   // (`getAfricaAdmin0Rings`) whose only caller was the removed Mercator stage.
   // 9 -> 8 after the Découvertes implementation made another retained export live.
-  exports: 8,
+  //
+  // 8 -> 7 when the production dead-code pass (2026-09-14 audit, D4-2) deleted
+  // `getAfricaAdmin0Rings`, and `hasCultureContent` with it: no caller had
+  // read it for weeks, and only a {@link} in a removed sibling's doc kept
+  // knip counting it. What remains is seven shadcn sub-components kept as
+  // library surface.
+  exports: 7,
   // 50 -> 49 when the bilingual glossary's vocabulary file started keying
   // the patronyme labels by `PatronymeNameSystem`, which the parsers file
   // exported and nothing read.
@@ -90,7 +96,14 @@ export const DEAD_CODE_CEILINGS: Readonly<Record<DeadCodeCategory, number>> = {
   // 25 -> 8 after the seventeen unused z.infer param/query aliases under
   // src/api/v2/schemas were removed by the next consolidation pass.
   // 8 -> 7 after the fiche parity cleanup removed another unused type.
-  types: 7,
+  //
+  // 7 -> 10, upward and on purpose. Deleting the source model and its parser
+  // (2026-09-14 audit, D4-2) left `StructuredSourceRecord`,
+  // `AssertionSourceReference` and `LegacySourceCandidate` in
+  // src/types/sources.ts with no reader. That file is being reworked by the
+  // source-tier workstream in parallel, so the three are held here instead
+  // of deleted in a conflicting diff; removing them brings this back to 7.
+  types: 10,
   duplicates: 0,
 };
 
@@ -157,12 +170,15 @@ export function tallyKnipReport(report: KnipReport): DeadCodeCounts {
 export const PRODUCTION_DEAD_CODE_CEILINGS: Readonly<
   Record<"files" | "dependencies", number>
 > = {
-  // Fifteen modules exercised only by their tests, each waiting on a wiring
-  // decision rather than a deletion: the English games bank and the Mercator
-  // contrast it translates, the glossary's English entries, the person query
-  // and service, name variants, the rights lifecycle, revision publishing, and
-  // the oral-narrative and source parsers with the source model they share.
-  files: 15,
+  // 15 -> 3 when the modules exercised only by their tests were deleted rather
+  // than left waiting on a wiring decision (2026-09-14 audit, D4-2): revision
+  // publishing, the person query and service, the rights lifecycle and
+  // protected-asset access, the source model with the oral-narrative and
+  // source parsers, name variants, the Mercator contrast and its English
+  // labels, and the equal-area projection. The three that remain are English
+  // sidecars staged for the bilingual rollout — the games bank, its landmarks
+  // and the glossary entries — kept by operator decision until it lands.
+  files: 3,
   // `tailwindcss-animate` is imported by tailwind.config.ts, which knip's
   // production mode does not follow even when the config is marked as a
   // production entry. It is a real build dependency; the ceiling holds it at

@@ -1,16 +1,30 @@
 import { describe, expect, it } from "vitest";
 import {
   authorizedSourceCatalog,
+  authorizedSourceCatalogSchema,
   evaluateSourceUrl,
-  validateAuthorizedSourceCatalog,
 } from "@/lib/sources/authorized-source-catalog";
+
+/** The messages a catalogue is refused with, or none when it loads. */
+function catalogueIssues(value: unknown): string[] {
+  const parsed = authorizedSourceCatalogSchema.safeParse(value);
+  return parsed.success
+    ? []
+    : parsed.error.issues.map((issue) => issue.message);
+}
+
+const wikipedia = {
+  key: "wikipedia",
+  name: "Wikipedia",
+  tier: "unverified",
+  sourceKind: "discovery",
+  matchDomains: ["wikipedia.org"],
+};
 
 describe("authorized source catalogue", () => {
   // @req REQ-092
   it("contains unique stable keys and coherent tiers", () => {
-    expect(validateAuthorizedSourceCatalog(authorizedSourceCatalog)).toEqual(
-      []
-    );
+    expect(catalogueIssues(authorizedSourceCatalog)).toEqual([]);
 
     expect(
       new Set(authorizedSourceCatalog.entries.map((entry) => entry.key)).size
@@ -19,21 +33,22 @@ describe("authorized source catalogue", () => {
 
   // @req REQ-092
   it("rejects a discovery surface claiming authority", () => {
-    const issues = validateAuthorizedSourceCatalog({
+    const issues = catalogueIssues({
       version: 99,
-      entries: [
-        {
-          key: "wikipedia",
-          name: "Wikipedia",
-          tier: "official",
-          sourceKind: "discovery",
-          matchDomains: ["wikipedia.org"],
-        },
-      ],
+      entries: [{ ...wikipedia, tier: "official" }],
     });
     expect(issues).toEqual([
       'wikipedia: a discovery source cannot be tiered "official"',
     ]);
+  });
+
+  // The catalogue is read once, at import: refusing it there is what keeps an
+  // incoherent file from tiering citations for a whole build.
+  // @req REQ-092
+  it("refuses a catalogue that files two sources under one key", () => {
+    expect(
+      catalogueIssues({ version: 99, entries: [wikipedia, wikipedia] })
+    ).toEqual(["Duplicate source key: wikipedia"]);
   });
 
   // @req REQ-092

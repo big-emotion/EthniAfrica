@@ -185,17 +185,20 @@ jobs:
             nextjs-${{ hashFiles('package-lock.json') }}-
 
       # The Supabase modules validate their configuration at module scope and
-      # throw when it is missing, which fails Next's page-data collection. The
-      # build only needs values that parse — it never queries Supabase — so the
-      # placeholders keep this gate running on Dependabot and fork PRs, where
-      # secrets are not exposed. Falling back rather than skipping the job is
-      # deliberate: a skipped job reports a neutral check, which branch
-      # protection and Ferry's merger would read as success.
+      # throw when it is missing, which fails Next's page-data collection, so
+      # the build needs values that parse. It gets placeholders on every run,
+      # never the real secrets: the build is not isolated from the database —
+      # `sitemap.xml` is generated at build time and reads every entity id —
+      # and a hosted project on a metered egress quota paid for that read on
+      # every push. Against the placeholder host the sitemap's reads fail and
+      # fall back to the static rubrics, which is all this gate needs to prove
+      # the app compiles. The same values keep it running on Dependabot and
+      # fork PRs, where secrets are not exposed.
       - run: npm run build
         env:
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co' }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-anon-key' }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || 'placeholder-service-role-key' }}
+          NEXT_PUBLIC_SUPABASE_URL: "https://placeholder.supabase.co"
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: "placeholder-anon-key"
+          SUPABASE_SERVICE_ROLE_KEY: "placeholder-service-role-key"
 
       # Nothing above may rewrite a tracked file or leave an unignored one.
       # next-env.d.ts was rewritten by every `next build` and committed back by

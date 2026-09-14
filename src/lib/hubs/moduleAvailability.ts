@@ -13,7 +13,7 @@ import {
   type ModuleAvailabilityMap,
 } from "@/lib/hubs/moduleOffer";
 
-/** What `isModuleAvailable` needs of a definition to answer. */
+/** What `isModuleLive` needs of a definition to answer. */
 type AvailabilityInputs = Pick<
   HubModuleDefinition,
   "availability" | "dataSource" | "editorialReadiness"
@@ -167,21 +167,6 @@ function isModuleLive(
   // offered: an empty list is a cheaper disappointment than a door that is
   // not there, and the reader can see for themselves what the corpus holds.
   return presence[definition.dataSource] ?? true;
-}
-
-// @req REQ-106 @req REQ-114
-export async function isModuleAvailable(
-  definition: AvailabilityInputs
-): Promise<boolean> {
-  // A module its declaration already settles never pays for a round trip
-  // whose answer nobody reads.
-  const settledByDeclaration =
-    !isModuleDeclaredReady(definition) || definition.availability !== "data";
-
-  return isModuleLive(
-    definition,
-    settledByDeclaration ? {} : await corpusPresence()
-  );
 }
 
 // @req REQ-114 @req REQ-106

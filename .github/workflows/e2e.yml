@@ -26,6 +26,8 @@ concurrency:
 
 permissions:
   contents: read
+  # The smoke job's scope step lists the pull request's changed files.
+  pull-requests: read
 
 jobs:
   smoke:
@@ -57,6 +59,44 @@ jobs:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
+      # A pull request that changes only documentation skips the build and
+      # every step that reads the recette database, which sits on a plan
+      # metered by egress. The job still runs to the end and reports green, so
+      # the required check never waits on a status that will not come — which
+      # is why this is a step and not a `paths:` filter. It fails closed: a
+      # file list it cannot read, an empty one, a pull request from recette or
+      # any file outside docs/, .claude/ and root Markdown renders. A rename
+      # counts its old path too, so moving a file out of src/ is not "docs".
+      - name: Scope the checks to what the pull request changed
+        id: scope
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          HEAD_REF: ${{ github.head_ref }}
+        run: |
+          render=true
+          docs_only='^(docs/|\.claude/|[^/]+\.md$)'
+          if [ "$HEAD_REF" = "recette" ]; then
+            echo "A pull request from recette always renders."
+          elif ! files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR/files" --jq '.[] | .filename, (.previous_filename // empty)')"; then
+            echo "::warning::Could not list the pull request's files, so the checks render."
+          elif [ -z "$files" ]; then
+            echo "The pull request lists no changed files, so the checks render."
+          else
+            render=false
+            while IFS= read -r file; do
+              if [[ ! $file =~ $docs_only ]]; then
+                render=true
+                echo "$file is outside docs/, .claude/ and root Markdown, so the checks render."
+                break
+              fi
+            done <<< "$files"
+            if [ "$render" = false ]; then
+              echo "::notice::Only docs/, .claude/ or root Markdown changed: skipping the build and every step that reads the database."
+            fi
+          fi
+          echo "render=$render" >> "$GITHUB_OUTPUT"
+
       - name: Setup Node
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
@@ -86,7 +126,7 @@ jobs:
           fi
 
       - name: Restore Playwright browser cache
-        if: steps.secrets.outputs.present == 'true'
+        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ~/.cache/ms-playwright
@@ -95,11 +135,11 @@ jobs:
       # Chromium only: the smoke set runs in the `mobile-430` project, which is
       # a Pixel 5 profile. The full matrix below also needs webkit.
       - name: Install Playwright browser
-        if: steps.secrets.outputs.present == 'true'
+        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
         run: npx playwright install --with-deps chromium
 
       - name: Restore Next.js build cache
-        if: steps.secrets.outputs.present == 'true'
+        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: .next/cache
@@ -108,17 +148,17 @@ jobs:
             nextjs-${{ hashFiles('package-lock.json') }}-
 
       - name: Build app
-        if: steps.secrets.outputs.present == 'true'
+        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
         run: npm run build
 
       - name: Start app
-        if: steps.secrets.outputs.present == 'true'
+        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
         run: npx next start -p 3000 &
         env:
           PORT: 3000
 
       - name: Wait for app
-        if: steps.secrets.outputs.present == 'true'
+        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
         run: |
           # The root answers 307 to the default locale (REQ-140); -L follows it.
           for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
@@ -130,14 +170,14 @@ jobs:
           echo "App did not become ready"; exit 1
 
       - name: Run the smoke set
-        if: steps.secrets.outputs.present == 'true'
+        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
         run: npm run e2e:smoke
         env:
           BASE_URL: http://localhost:3000
           SKIP_WEB_SERVER: "1"
 
       - name: Upload report
-        if: failure() && steps.secrets.outputs.present == 'true'
+        if: failure() && steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: playwright-smoke-report

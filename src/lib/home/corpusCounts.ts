@@ -1,5 +1,5 @@
 import { getPeoples } from "@/api/v2/services/peopleService";
-import { getCountries } from "@/api/v2/services/countryService";
+import { countCountries } from "@/api/v2/services/countryService";
 import { countAfrikLanguageFamilies } from "@/lib/supabase/queries/afrik/languageFamilies";
 import { countAfrikLanguages } from "@/lib/supabase/queries/afrik/languages";
 import { listNameForms } from "@/api/v2/services/names";
@@ -65,7 +65,7 @@ export async function getCorpusCounts(): Promise<CorpusCounts> {
     migrations,
   ] = await Promise.all([
     getPeoples(1, 1).then((page) => page.total, unavailable),
-    getCountries(1, 1).then((page) => page.total, unavailable),
+    countCountries().catch(unavailable),
     countAfrikLanguageFamilies().catch(unavailable),
     countAfrikLanguages().catch(unavailable),
     listNameForms({ page: 1, perPage: 1, imposedOnly: false }).then(
