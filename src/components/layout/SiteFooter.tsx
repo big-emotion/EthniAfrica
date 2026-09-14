@@ -33,8 +33,11 @@ interface SiteFooterProps {
 // touching the type, which stays at the column's `small`.
 // `min-w-11` as well as `min-h-11`: a short label — « API », « Noms » — drew a
 // 26px-wide target however tall the row was, and the floor is a square.
+// Hover darkens the ink instead of borrowing the accent: `text-primary` on the
+// footer's warm ground measured 4.43:1, under AA, and axe-core caught it once a
+// short quiz screen left the pointer resting on « Jouer ».
 const FOOTER_LINK_CLASS =
-  "inline-flex min-h-11 min-w-11 items-center justify-center underline decoration-border underline-offset-4 transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring";
+  "inline-flex min-h-11 min-w-11 items-center justify-center underline decoration-border underline-offset-4 transition-colors hover:text-afh-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring";
 
 /**
  * Where the project is followed, and where it will be.
@@ -388,7 +391,7 @@ export function SiteFooter({ language }: SiteFooterProps) {
               href="https://big-emotion.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center gap-2 transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="inline-flex min-h-11 items-center gap-2 transition-colors hover:text-afh-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               <span>{footer.attribution}</span>
               <Image
