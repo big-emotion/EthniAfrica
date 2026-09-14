@@ -48,6 +48,38 @@ function confidenceTail(sql: string): string {
     .trim();
 }
 
+/**
+ * The tier condition `enforce_name_record_sources()` puts on a name record
+ * that is not a people's: `089` wrote it after `NOT IN ('people', 'patronyme')`,
+ * `091` after `<> 'people'`.
+ */
+function nonPeopleTierCondition(body: string): string {
+  const match =
+    /\(NEW\.entity_type (?:<> 'people'|NOT IN \('people', 'patronyme'\)) AND (s\.tier [^()]*(?:\([^)]*\))?)\)/.exec(
+      body.replace(/\s+/g, " ")
+    );
+  if (!match) throw new Error("Missing the non-people tier condition");
+  return match[1].trim();
+}
+
+/**
+ * Evaluates that condition for one source's tier. Only the two shapes the
+ * migrations use are understood; any other shape throws, so a rewrite of the
+ * gate has to come back through this test rather than pass it unread.
+ */
+function qualifiesAtTier(condition: string, tier: string | null): boolean {
+  if (condition === "s.tier IS NOT NULL") return tier !== null;
+  const listed = /^s\.tier IN \(([^)]*)\)$/.exec(condition);
+  if (!listed) throw new Error(`Unrecognised tier condition: ${condition}`);
+  return (
+    tier !== null &&
+    listed[1]
+      .split(",")
+      .map((v) => v.trim())
+      .includes(`'${tier}'`)
+  );
+}
+
 const ddl = () => withoutComments(readMigration("091_"));
 
 describe("091 oral narratives before review, name records at any tier", () => {
@@ -111,6 +143,29 @@ describe("091 oral narratives before review, name records at any tier", () => {
     expect(body).toMatch(/assertion_id is required/);
   });
 
+  // The standing stays readable because the gate only admits or refuses: it
+  // assigns nothing on NEW and rewrites no source, so the row keeps the tier
+  // it was loaded with.
+  // @req REQ-173
+  it("accepts a country or family name whose only source is unverified, which 089 refused, and keeps that standing as recorded", () => {
+    const body = functionBody(ddl(), "enforce_name_record_sources");
+    const condition = nonPeopleTierCondition(body);
+    expect(qualifiesAtTier(condition, "unverified")).toBe(true);
+    expect(qualifiesAtTier(condition, "official")).toBe(true);
+    expect(qualifiesAtTier(condition, null)).toBe(false);
+
+    const retired = nonPeopleTierCondition(
+      functionBody(
+        withoutComments(readMigration("089_")),
+        "enforce_name_record_sources"
+      )
+    );
+    expect(qualifiesAtTier(retired, "unverified")).toBe(false);
+
+    expect(body).not.toMatch(/NEW\.\w+\s*:=/);
+    expect(body).toMatch(/RETURN NEW;/);
+  });
+
   // @req REQ-172
   it("counts every oral narrative as its own source, weights unchanged", () => {
     const sql = ddl();
@@ -140,7 +195,7 @@ describe("091 oral narratives before review, name records at any tier", () => {
     expect(sql).not.toMatch(/deduplicat/i);
   });
 
-  // @req REQ-173
+  // @req REQ-172
   it("is repeatable and rewrites no source, narrative or name row", () => {
     const sql = ddl();
     expect(sql).not.toMatch(
