@@ -67,6 +67,17 @@ describe("ModerationQueuePage", () => {
     expect(mocks.getModeratorSession).toHaveBeenCalled();
   });
 
+  // The console has no navigation; without this link the source review queue
+  // is an address a moderator has to be told.
+  // @req REQ-042
+  it("links to the queue of sources awaiting review", async () => {
+    await renderQueue();
+
+    expect(
+      screen.getByRole("link", { name: "Sources en attente d'examen" })
+    ).toHaveAttribute("href", "/fr/admin/sources");
+  });
+
   /**
    * The queue served `open` and `under_review` only. A moderator who had just
    * accepted a report could no longer find it.

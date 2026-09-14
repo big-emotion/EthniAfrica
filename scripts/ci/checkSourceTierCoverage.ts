@@ -7,10 +7,21 @@
  * codemod emits when neither the authorized source catalogue, the domain
  * rulings, nor an unambiguous published-citation shape can settle the tier.
  *
+ * It also holds the corpus to the source-tier ruling ledger
+ * (docs/editorial/source-review/source-tier-rulings.json): a ruling that the
+ * fiches contradict, or that names nothing, fails here rather than silently
+ * reverting at the next sync.
+ *
  * Usage: npx tsx scripts/ci/checkSourceTierCoverage.ts [datasetRoot]
  */
-import fs from "fs";
-import path from "path";
+import {
+  SOURCE_TIER_RULINGS_LEDGER,
+  findRulingContradictions,
+  readCorpusFiches,
+  readRulingLedger,
+  validateRuling,
+  validateRulings,
+} from "../afrik/sourceTierRulings";
 
 const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
 
@@ -34,6 +45,10 @@ const TIERS_WITH_AUTHORITY = new Set<unknown>([
   2,
 ]);
 
+export function carriesTier(tier: unknown): boolean {
+  return TIERS_WITH_AUTHORITY.has(tier);
+}
+
 export interface UntieredSource {
   file: string;
   path: string;
@@ -47,18 +62,6 @@ export interface SourceTierCoverageResult {
   untiered: UntieredSource[];
   /** Why the gate failed, including which line to change; null when it holds. */
   error: string | null;
-}
-
-function collectJsonFiles(root: string): string[] {
-  if (!fs.existsSync(root)) return [];
-
-  const files: string[] = [];
-  for (const entry of fs.readdirSync(root, { withFileTypes: true }).sort()) {
-    const fullPath = path.join(root, entry.name);
-    if (entry.isDirectory()) files.push(...collectJsonFiles(fullPath));
-    else if (entry.name.endsWith(".json")) files.push(fullPath);
-  }
-  return files;
 }
 
 function describeSource(source: unknown): string {
@@ -112,17 +115,35 @@ function visit(
 export function findUntieredSources(datasetRoot: string): UntieredSource[] {
   const untiered: UntieredSource[] = [];
 
-  for (const fullPath of collectJsonFiles(datasetRoot)) {
-    let fiche: unknown;
-    try {
-      fiche = JSON.parse(fs.readFileSync(fullPath, "utf8"));
-    } catch {
-      continue;
-    }
-    visit(path.relative(datasetRoot, fullPath), fiche, "", untiered);
+  for (const fiche of readCorpusFiches(datasetRoot)) {
+    visit(fiche.path, fiche.json, "", untiered);
   }
 
   return untiered;
+}
+
+export interface SourceTierRulingsResult {
+  ok: boolean;
+  errors: string[];
+}
+
+/**
+ * The ledger's side of the gate. A malformed ruling is reported and not held
+ * against the corpus: its contradictions would only restate the malformation.
+ */
+export function checkSourceTierRulings(
+  datasetRoot: string,
+  ledgerPath: string
+): SourceTierRulingsResult {
+  const rulings = readRulingLedger(ledgerPath);
+  const wellFormed = rulings.filter(
+    (ruling, index) => validateRuling(ruling, index).length === 0
+  );
+  const errors = [
+    ...validateRulings(rulings),
+    ...findRulingContradictions(readCorpusFiches(datasetRoot), wellFormed),
+  ];
+  return { ok: errors.length === 0, errors };
 }
 
 export function checkSourceTierCoverage(
@@ -161,10 +182,14 @@ function main(): void {
     }
   }
 
-  if (!result.ok) {
-    console.error(result.error);
-    process.exit(1);
-  }
+  const rulings = checkSourceTierRulings(
+    datasetRoot,
+    SOURCE_TIER_RULINGS_LEDGER
+  );
+  for (const error of rulings.errors) console.error(error);
+
+  if (!result.ok) console.error(result.error);
+  if (!result.ok || !rulings.ok) process.exit(1);
 }
 
 if (process.argv[1] && process.argv[1].endsWith("checkSourceTierCoverage.ts")) {

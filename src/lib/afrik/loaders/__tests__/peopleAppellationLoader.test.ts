@@ -116,6 +116,26 @@ describe("loadPeopleAppellations", () => {
     expect(peak()).toBeGreaterThan(1);
   });
 
+  // `needs_review` is the absence of a ruling. Stored as `unverified` it would
+  // publish a verdict nobody reached, and the next sync of the provenance
+  // stage — which stores NULL — would flip the same row back.
+  // @req REQ-092
+  it("stores a source awaiting review with no tier, never as unverified", async () => {
+    const { client, calls } = recordingClient();
+    const fiche = ficheWith("PPL_PENDING", []);
+    (fiche.content as { sources: unknown[] }).sources = [
+      { title: "Recensement non classé", url: null, tier: "needs_review" },
+    ];
+
+    await loadPeopleAppellations(client, [fiche]);
+
+    const sourceRows = calls.find((call) => call.table === "sources")?.rows as {
+      tier: unknown;
+    }[];
+    expect(sourceRows).toHaveLength(1);
+    expect(sourceRows[0].tier).toBeNull();
+  });
+
   // Concurrency turns a shared `sources` upsert into a lock-ordering problem:
   // two fiches citing the same two sources in opposite order can deadlock in
   // Postgres. Sorting by title gives every fiche the same acquisition order.

@@ -34,6 +34,9 @@ export const SESSION_AUTHENTICATED_API_ROUTES: readonly SessionAuthenticatedApiR
     // The moderation transition. GET on the same path is the public detail,
     // so a bearer there is still an API key.
     { path: /^\/api\/v2\/flags\/[^/]+$/, methods: ["PATCH"] },
+    // The moderation console (source-tier rulings): each handler checks the
+    // session against the moderator allowlist (getModeratorByAccessToken).
+    { path: /^\/api\/v2\/admin\// },
   ];
 
 // @req REQ-056

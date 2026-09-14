@@ -18,6 +18,7 @@ import {
 import { POST as createAssertionReference } from "@/app/api/v2/reference-library/assertions/route";
 import { POST as createWorkingAsset } from "@/app/api/v2/reference-library/assets/route";
 import { PATCH as transitionFlag } from "@/app/api/v2/flags/[id]/route";
+import { POST as recordSourceTierRuling } from "@/app/api/v2/admin/source-tier-rulings/route";
 
 /**
  * The middleware skips API-key validation on these routes, so the only thing
@@ -65,6 +66,11 @@ const guardCases: GuardCase[] = [
     method: "PATCH",
     pathname: "/api/v2/flags/flag-7kq3m2",
     send: (r) => transitionFlag(r, params({ id: "flag-7kq3m2" })),
+  },
+  {
+    method: "POST",
+    pathname: "/api/v2/admin/source-tier-rulings",
+    send: (r) => recordSourceTierRuling(r),
   },
 ];
 
