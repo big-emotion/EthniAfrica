@@ -13,8 +13,8 @@ function readWorkflow(): string {
 }
 
 describe("production deploy workflow", () => {
-  // Production's Postgres is self-hosted on the OVH VPS and its port is not
-  // published: measured 2026-09-03, 145.239.76.125 answers on 443 and refuses
+  // Production's Postgres is self-hosted on its own host and its port is not
+  // published: measured 2026-09-03, the Supabase host answers on 443 and refuses
   // 5432 and 6543. The v4.1.1 deploy therefore read the ledger over PostgREST
   // and then died on `dial error (connect ECONNREFUSED …:5432)`. There is no
   // connection string that fixes that from a GitHub runner — the path has to
@@ -23,8 +23,8 @@ describe("production deploy workflow", () => {
   it("reaches the database through an SSH tunnel, not a published port", () => {
     const workflow = readWorkflow();
 
-    expect(workflow).toContain("SUPABASE_OVH_SSH_KEY");
-    expect(workflow).toContain("SUPABASE_OVH_SSH_KNOWN_HOSTS");
+    expect(workflow).toContain("SUPABASE_SSH_KEY");
+    expect(workflow).toContain("SUPABASE_SSH_KNOWN_HOSTS");
 
     // Without this the forward can fail while ssh still exits 0, and `db push`
     // then connects to nothing on a port that looks open locally.
@@ -103,7 +103,7 @@ describe("production deploy workflow", () => {
     expect(workflow).toContain("[ ! -s plan.txt ]");
   });
 
-  // The host key is pinned for the same reason the deploy job pins Gravelines':
+  // The host key is pinned for the same reason the deploy job pins the application host's:
   // an unpinned tunnel hands a database credential to whoever answers on that
   // address.
   // @req REQ-033

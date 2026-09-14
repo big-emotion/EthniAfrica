@@ -7,7 +7,7 @@ two properties — `ethniafrica.com` and `big-emotion.com` — so a change here 
 
 ## The host
 
-Same VPS as the app itself — see [`ovh-production-deploy.md`](ovh-production-deploy.md) for
+Same VPS as the app itself — see [`production-deploy.md`](production-deploy.md) for
 address, port and the `proxy` network convention. Plausible is its own compose project,
 `/srv/plausible`, on the same **one project per application** pattern as `ethniafrica`,
 `b2b-portal` and `big-emotion` — nothing here can take another application down with it.
@@ -26,14 +26,14 @@ on this host).
 
 ## DNS
 
-`stats.ethniafrica.com` needs an **A record to `51.195.82.98`**, added wherever
+`stats.ethniafrica.com` needs an **A record to the application host's address**, added wherever
 `ethniafrica.com`'s DNS is managed. A stale wildcard (`*.ethniafrica.com` → Vercel, left
 over from before `vercel.json` disabled auto-deploys) still answers for any subdomain
 without its own record — the specific record above overrides it for `stats`, but nothing
 else needs touching.
 
-`stats.big-emotion.com` needs the **same A record to `51.195.82.98`**, in the
-`big-emotion.com` zone (OVH, nameservers `ns200/dns200.anycast.me`).
+`stats.big-emotion.com` needs the **same A record to the application host's address**, in the
+`big-emotion.com` zone.
 
 **Order matters.** Traefik's `certresolver` requests a certificate per hostname on the
 first request, so the DNS record must resolve _before_ the compose change is applied.
@@ -73,7 +73,7 @@ There is no GitHub Actions workflow for this yet (unlike the app's release-trigg
 deploy) — it's a manual `docker compose` on the host:
 
 ```console
-$ ssh -p 49152 ubuntu@51.195.82.98
+$ ssh -p <port> <user>@<app-host>
 $ cd /srv/plausible
 # first time only: create .env from infra/plausible/env.example in the repo, with
 # SECRET_KEY_BASE generated on the host — never paste a secret into this session:

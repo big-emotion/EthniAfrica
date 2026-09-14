@@ -1,4 +1,4 @@
-name: Deploy Production (OVH)
+name: Deploy Production
 
 # Publishing a GitHub Release is the only thing that deploys production.
 #
@@ -10,7 +10,7 @@ name: Deploy Production (OVH)
 # There is no `workflow_dispatch` here on purpose. A production deploy that can be
 # started from a dropdown is a production deploy that happens without a release to point
 # at afterwards. Rolling back is a host-side operation, documented in
-# docs/runbooks/ovh-production-deploy.md, not a re-run of this workflow.
+# docs/runbooks/production-deploy.md, not a re-run of this workflow.
 on:
   release:
     types: [published]
@@ -63,17 +63,17 @@ jobs:
       # the SSH access needed to read it.
       - name: Require the SSH access that reaches the database
         env:
-          SSH_KEY: ${{ secrets.SUPABASE_OVH_SSH_KEY }}
-          SSH_HOST: ${{ secrets.SUPABASE_OVH_SSH_HOST }}
-          SSH_USER: ${{ secrets.SUPABASE_OVH_SSH_USER }}
-          SSH_PORT: ${{ secrets.SUPABASE_OVH_SSH_PORT }}
-          SSH_KNOWN_HOSTS: ${{ secrets.SUPABASE_OVH_SSH_KNOWN_HOSTS }}
+          SSH_KEY: ${{ secrets.SUPABASE_SSH_KEY }}
+          SSH_HOST: ${{ secrets.SUPABASE_SSH_HOST }}
+          SSH_USER: ${{ secrets.SUPABASE_SSH_USER }}
+          SSH_PORT: ${{ secrets.SUPABASE_SSH_PORT }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SUPABASE_SSH_KNOWN_HOSTS }}
         run: |
-          : "${SSH_KEY:?SUPABASE_OVH_SSH_KEY is not set. See docs/runbooks/migration-state.md}"
-          : "${SSH_HOST:?SUPABASE_OVH_SSH_HOST is not set}"
-          : "${SSH_USER:?SUPABASE_OVH_SSH_USER is not set}"
-          : "${SSH_PORT:?SUPABASE_OVH_SSH_PORT is not set}"
-          : "${SSH_KNOWN_HOSTS:?SUPABASE_OVH_SSH_KNOWN_HOSTS is not set}"
+          : "${SSH_KEY:?SUPABASE_SSH_KEY is not set. See docs/runbooks/migration-state.md}"
+          : "${SSH_HOST:?SUPABASE_SSH_HOST is not set}"
+          : "${SSH_USER:?SUPABASE_SSH_USER is not set}"
+          : "${SSH_PORT:?SUPABASE_SSH_PORT is not set}"
+          : "${SSH_KNOWN_HOSTS:?SUPABASE_SSH_KNOWN_HOSTS is not set}"
 
       # What production holds, before anything is applied. `applied_migrations()`
       # (migration 042) makes this a measurement rather than a claim in a runbook.
@@ -95,7 +95,7 @@ jobs:
         with:
           version: latest
 
-      # Production's Postgres is self-hosted on the OVH VPS and deliberately not
+      # Production's Postgres is self-hosted on its own host and deliberately not
       # on the internet. Publishing 5432 to let a runner in would put the
       # production database in front of GitHub's entire address space — the
       # runners have no stable range to restrict to. An SSH forward gives the
@@ -119,22 +119,22 @@ jobs:
       - name: Open an SSH tunnel to the self-hosted Postgres
         if: steps.before.outputs.pending != '0'
         env:
-          SSH_KEY: ${{ secrets.SUPABASE_OVH_SSH_KEY }}
-          SSH_HOST: ${{ secrets.SUPABASE_OVH_SSH_HOST }}
-          SSH_USER: ${{ secrets.SUPABASE_OVH_SSH_USER }}
-          SSH_PORT: ${{ secrets.SUPABASE_OVH_SSH_PORT }}
-          SSH_KNOWN_HOSTS: ${{ secrets.SUPABASE_OVH_SSH_KNOWN_HOSTS }}
+          SSH_KEY: ${{ secrets.SUPABASE_SSH_KEY }}
+          SSH_HOST: ${{ secrets.SUPABASE_SSH_HOST }}
+          SSH_USER: ${{ secrets.SUPABASE_SSH_USER }}
+          SSH_PORT: ${{ secrets.SUPABASE_SSH_PORT }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SUPABASE_SSH_KNOWN_HOSTS }}
           SUPABASE_STACK_DIR: /home/ubuntu/supabase/docker
           DB_CONTAINER: supabase-db
         run: |
           # No apostrophes in these messages: inside ${VAR:?word} bash reads a
           # single quote as opening a quote even within double quotes, and
           # check:workflow-shell fails the file on the unterminated string.
-          : "${SSH_KEY:?SUPABASE_OVH_SSH_KEY is not set — the migrate job cannot reach the production Postgres without it. See docs/runbooks/migration-state.md}"
-          : "${SSH_HOST:?SUPABASE_OVH_SSH_HOST is not set}"
-          : "${SSH_USER:?SUPABASE_OVH_SSH_USER is not set}"
-          : "${SSH_PORT:?SUPABASE_OVH_SSH_PORT is not set}"
-          : "${SSH_KNOWN_HOSTS:?SUPABASE_OVH_SSH_KNOWN_HOSTS is not set — pinning the host key is what stops this job from forwarding a database credential to whoever answers on that address}"
+          : "${SSH_KEY:?SUPABASE_SSH_KEY is not set — the migrate job cannot reach the production Postgres without it. See docs/runbooks/migration-state.md}"
+          : "${SSH_HOST:?SUPABASE_SSH_HOST is not set}"
+          : "${SSH_USER:?SUPABASE_SSH_USER is not set}"
+          : "${SSH_PORT:?SUPABASE_SSH_PORT is not set}"
+          : "${SSH_KNOWN_HOSTS:?SUPABASE_SSH_KNOWN_HOSTS is not set — pinning the host key is what stops this job from forwarding a database credential to whoever answers on that address}"
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
           printf '%s\n' "$SSH_KEY" > ~/.ssh/supabase_tunnel_key
@@ -281,20 +281,20 @@ jobs:
       # The runner never checks the code out. The VPS holds the clone and builds the
       # image itself, so the only credential this workflow carries is an SSH key — no
       # Supabase keys, no Sentry token, nothing that could leak into a job log.
-      - name: Open an SSH session to the OVH VPS
+      - name: Open an SSH session to the application host
         env:
-          SSH_KEY: ${{ secrets.PRODUCTION_OVH_SSH_KEY }}
-          SSH_HOST: ${{ secrets.PRODUCTION_OVH_SSH_HOST }}
-          SSH_PORT: ${{ secrets.PRODUCTION_OVH_SSH_PORT }}
-          SSH_KNOWN_HOSTS: ${{ secrets.PRODUCTION_OVH_SSH_KNOWN_HOSTS }}
+          SSH_KEY: ${{ secrets.PRODUCTION_SSH_KEY }}
+          SSH_HOST: ${{ secrets.PRODUCTION_SSH_HOST }}
+          SSH_PORT: ${{ secrets.PRODUCTION_SSH_PORT }}
+          SSH_KNOWN_HOSTS: ${{ secrets.PRODUCTION_SSH_KNOWN_HOSTS }}
         run: |
-          : "${SSH_KEY:?PRODUCTION_OVH_SSH_KEY is not set — see docs/runbooks/ovh-production-deploy.md}"
-          : "${SSH_HOST:?PRODUCTION_OVH_SSH_HOST is not set}"
+          : "${SSH_KEY:?PRODUCTION_SSH_KEY is not set — see docs/runbooks/production-deploy.md}"
+          : "${SSH_HOST:?PRODUCTION_SSH_HOST is not set}"
           # sshd does not listen on 22 on this host, and the known_hosts entry is keyed
           # `[host]:port` — a default of 22 would fail host-key verification, not merely
           # fail to connect.
-          : "${SSH_PORT:?PRODUCTION_OVH_SSH_PORT is not set}"
-          : "${SSH_KNOWN_HOSTS:?PRODUCTION_OVH_SSH_KNOWN_HOSTS is not set — pinning the host key is what stops this job from handing the deploy key to whoever answers on that address}"
+          : "${SSH_PORT:?PRODUCTION_SSH_PORT is not set}"
+          : "${SSH_KNOWN_HOSTS:?PRODUCTION_SSH_KNOWN_HOSTS is not set — pinning the host key is what stops this job from handing the deploy key to whoever answers on that address}"
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
           printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key
@@ -304,9 +304,9 @@ jobs:
 
       - name: Build and start the release on the VPS
         env:
-          SSH_HOST: ${{ secrets.PRODUCTION_OVH_SSH_HOST }}
-          SSH_USER: ${{ secrets.PRODUCTION_OVH_SSH_USER }}
-          SSH_PORT: ${{ secrets.PRODUCTION_OVH_SSH_PORT }}
+          SSH_HOST: ${{ secrets.PRODUCTION_SSH_HOST }}
+          SSH_USER: ${{ secrets.PRODUCTION_SSH_USER }}
+          SSH_PORT: ${{ secrets.PRODUCTION_SSH_PORT }}
           # github.event.release.tag_name, never github.ref_name: the workflow is keyed
           # on the Release, and this is the tag that Release actually names.
           RELEASE_TAG: ${{ github.event.release.tag_name }}
@@ -348,9 +348,9 @@ jobs:
 
       - name: Wait for the new container to answer
         env:
-          SSH_HOST: ${{ secrets.PRODUCTION_OVH_SSH_HOST }}
-          SSH_USER: ${{ secrets.PRODUCTION_OVH_SSH_USER }}
-          SSH_PORT: ${{ secrets.PRODUCTION_OVH_SSH_PORT }}
+          SSH_HOST: ${{ secrets.PRODUCTION_SSH_HOST }}
+          SSH_USER: ${{ secrets.PRODUCTION_SSH_USER }}
+          SSH_PORT: ${{ secrets.PRODUCTION_SSH_PORT }}
         run: |
           ssh -i ~/.ssh/deploy_key -p "$SSH_PORT" -o BatchMode=yes "$SSH_USER@$SSH_HOST" 'bash -s' <<'REMOTE'
           set -euo pipefail
@@ -374,7 +374,7 @@ jobs:
 
           if [ -z "$CONTAINER_READY" ]; then
             echo "the new container never answered on its root — rolling back is a host-side"
-            echo "operation, see docs/runbooks/ovh-production-deploy.md"
+            echo "operation, see docs/runbooks/production-deploy.md"
             docker compose logs --tail=100 ethniafrica
             exit 1
           fi

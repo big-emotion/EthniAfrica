@@ -1,4 +1,4 @@
-# Self-hosted Plausible Community Edition, on the same OVH VPS as the ethniafrica app
+# Self-hosted Plausible Community Edition, on the same VPS as the ethniafrica app
 # itself. Its own compose project, joined to Traefik's external `proxy` network — the same
 # convention docker-compose.yml (repo root) follows for the app, so that this stays
 # independently restartable and cannot take the app down with it.

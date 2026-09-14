@@ -14,7 +14,7 @@ only environment "production", so the label describes the project, not the appli
 
 > **Production is not covered by the two paths below.** Both assume a hosted Supabase project —
 > a dashboard, PITR, scheduled backups, `supabase projects create`. Production is a self-hosted
-> stack on an OVH VPS, which has none of those, and this runbook does not yet say how its
+> stack on a VPS, which has none of those, and this runbook does not yet say how its
 > database is backed up or restored. Treat a production restore as unrehearsed until a drill
 > against that stack is recorded here.
 

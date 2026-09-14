@@ -1,4 +1,4 @@
-# Runbook — OVH production deploy and rollback
+# Runbook — production deploy and rollback
 
 How `ethniafrica.com` is built, shipped, and put back the way it was.
 
@@ -9,21 +9,15 @@ push does not, a tag does not, and there is no button.
 
 ## The host
 
-|                  |                                                                                            |
-| ---------------- | ------------------------------------------------------------------------------------------ |
-| Provider         | OVH VPS, **Gravelines**                                                                    |
-| Address          | `51.195.82.98`, SSH on port **49152** (not 22)                                             |
-| Login            | `ubuntu`, sudo without a password                                                          |
-| Deploy directory | `/srv/ethniafrica` — a clone of `big-emotion/ethniafrica`, checked out at the released tag |
-| Reverse proxy    | Traefik `v2.11`, its own compose project at `/home/ubuntu/docker/traefik`                  |
-| Shared network   | `proxy`, external, joined by every application                                             |
-| Neighbours       | `b2b-portal`, `big-emotion`, `b2b-postgres` — all on the same host                         |
-
-> **The plan that produced this work called this host "Francfort". It is not.**
-> `51.195.82.98` is Gravelines; Frankfurt is `145.239.76.125`, a different machine
-> running different things. The name was wrong, the address was right, and the address
-> is what everything is configured against. If a document says Frankfurt and means
-> `51.195.82.98`, it means this host.
+|                  |                                                                                             |
+| ---------------- | ------------------------------------------------------------------------------------------- |
+| Provider         | a self-hosted VPS — the application host                                                    |
+| Address          | in the `PRODUCTION_SSH_*` GitHub secrets and the operator's private notes; SSH is not on 22 |
+| Login            | `ubuntu`, sudo without a password                                                           |
+| Deploy directory | `/srv/ethniafrica` — a clone of `big-emotion/ethniafrica`, checked out at the released tag  |
+| Reverse proxy    | Traefik `v2.11`, its own compose project at `/home/ubuntu/docker/traefik`                   |
+| Shared network   | `proxy`, external, joined by every application                                              |
+| Neighbours       | `b2b-portal`, `big-emotion`, `b2b-postgres` — all on the same host                          |
 
 The host runs **one compose project per application**, all attached to Traefik's
 external `proxy` network. `ethniafrica` follows that convention: its stack is
@@ -61,16 +55,16 @@ the default branch**, so both workflows must be on `main` for the chain to exist
 
 ## Repository secrets
 
-| Secret                           | Value                                   | Why                             |
-| -------------------------------- | --------------------------------------- | ------------------------------- |
-| `PRODUCTION_OVH_SSH_HOST`        | `51.195.82.98`                          |                                 |
-| `PRODUCTION_OVH_SSH_USER`        | `ubuntu`                                |                                 |
-| `PRODUCTION_OVH_SSH_PORT`        | `49152`                                 | sshd does not listen on 22 here |
-| `PRODUCTION_OVH_SSH_KEY`         | private half of a dedicated ed25519 key | not anyone's personal key       |
-| `PRODUCTION_OVH_SSH_KNOWN_HOSTS` | `ssh-keyscan -p 49152` output           | pins the host key               |
+| Secret                       | Value                                      | Why                             |
+| ---------------------------- | ------------------------------------------ | ------------------------------- |
+| `PRODUCTION_SSH_HOST`        | the application host's address             |                                 |
+| `PRODUCTION_SSH_USER`        | the login user on that host                |                                 |
+| `PRODUCTION_SSH_PORT`        | the SSH port sshd listens on for that host | sshd does not listen on 22 here |
+| `PRODUCTION_SSH_KEY`         | private half of a dedicated ed25519 key    | not anyone's personal key       |
+| `PRODUCTION_SSH_KNOWN_HOSTS` | `ssh-keyscan -p <port>` output             | pins the host key               |
 
-`PRODUCTION_OVH_SSH_KNOWN_HOSTS` is not optional and the workflow refuses to run without
-it. Its entries are keyed `[51.195.82.98]:49152` — the bracketed form is what a
+`PRODUCTION_SSH_KNOWN_HOSTS` is not optional and the workflow refuses to run without
+it. Its entries are keyed `[<app-host>]:<port>` — the bracketed form is what a
 non-default port produces, and an entry written for port 22 fails host-key verification
 rather than merely failing to connect. Without the pin the job would hand a deploy key
 to whoever answers on that address.
@@ -79,8 +73,8 @@ Rotating the deploy key:
 
 ```bash
 ssh-keygen -t ed25519 -f ./ethniafrica_deploy -N "" -C "github-actions-deploy@ethniafrica"
-ssh-copy-id -i ./ethniafrica_deploy.pub -p 49152 ubuntu@51.195.82.98
-gh secret set PRODUCTION_OVH_SSH_KEY --repo big-emotion/ethniafrica < ./ethniafrica_deploy
+ssh-copy-id -i ./ethniafrica_deploy.pub -p <port> <user>@<app-host>
+gh secret set PRODUCTION_SSH_KEY --repo big-emotion/ethniafrica < ./ethniafrica_deploy
 # then remove the old public key from ~/.ssh/authorized_keys on the host
 rm -f ./ethniafrica_deploy ./ethniafrica_deploy.pub
 ```
@@ -175,7 +169,7 @@ Each deploy renames the outgoing image `ethniafrica:previous` before the build
 overwrites `ethniafrica:live`. Going back is two commands and about ten seconds:
 
 ```bash
-ssh -p 49152 ubuntu@51.195.82.98
+ssh -p <port> <user>@<app-host>
 cd /srv/ethniafrica
 docker image tag ethniafrica:previous ethniafrica:live
 docker compose up -d --no-deps --force-recreate ethniafrica
@@ -242,9 +236,9 @@ reverse.
 emits no `release: published` — or it was marked pre-release, which the job skips by
 design. Check the Release page, not the Actions tab.
 
-**`Host key verification failed`.** `PRODUCTION_OVH_SSH_KNOWN_HOSTS` is stale or was
-generated without `-p 49152`. Regenerate:
-`ssh-keyscan -p 49152 -t ed25519,rsa 51.195.82.98`.
+**`Host key verification failed`.** `PRODUCTION_SSH_KNOWN_HOSTS` is stale or was
+generated without `-p <port>`. Regenerate:
+`ssh-keyscan -p <port> -t ed25519,rsa <app-host>`.
 
 **`production-data-sync.yml` never ran after a successful deploy.** `workflow_run` only
 fires for workflow files on the **default branch**. Both files have to be on `main`; on
@@ -261,7 +255,7 @@ with the other stacks.
 `ETHNIAFRICA_TRAEFIK_RULE` is empty — an empty rule produces a router that matches
 nothing rather than an error. `docker inspect ethniafrica --format '{{json .Config.Labels}}'`.
 
-**TLS will not issue.** The hostname in the rule does not resolve to `51.195.82.98`
+**TLS will not issue.** The hostname in the rule does not resolve to the application host
 yet. Work through the three stages above rather than pointing at the apex early.
 
 ---
