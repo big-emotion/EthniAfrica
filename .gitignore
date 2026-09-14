@@ -40,11 +40,12 @@ dist-ssr
 build
 
 # Environment variables
+# Every env file is a secret until proven otherwise. Listing variants one by
+# one left `.env.production`, `.env.development` and `.env.test` addable; the
+# two templates are the only env files this repository tracks.
 .env
-.env*.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
+!.env.example
 
 # TypeScript
 *.tsbuildinfo

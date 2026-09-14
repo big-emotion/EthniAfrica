@@ -54,8 +54,11 @@ regexes = [
 paths = [
   # Anchored so prefixes/suffixes (e.g. backup/package-lock.json) don't match.
   '''^package-lock\.json$''',
-  # Matches .env.example at any directory level but NOT .env.example.local.
-  '''(^|/)\.env\.example$''',
+  # No env template is exempted by path. `.env.example` and `e2e/.env.example`
+  # scan clean under the default rules with no allowlist at all (gitleaks
+  # 8.30.1, 2026-09-14), so the old `.env.example` entry hid nothing but a real
+  # value pasted over a placeholder. If a placeholder ever trips a rule, allow
+  # that value's shape in `regexes` above, never the file.
   # Next.js build cache: absent from CI checkouts, but --no-git ignores
   # .gitignore, so local runs flag it without this.
   '''(^|/)\.next/''',
