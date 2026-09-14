@@ -131,6 +131,18 @@
         "title": "SIL Ethnologue — Sotho Southern (sot)",
         "url": "https://www.ethnologue.com/language/sot/",
         "tier": "official"
+      },
+      {
+        "title": "Basotho Hat (Mokorotlo) – The Global Language of Headwear",
+        "url": "https://ttugloballanguageheadwear.org/exhibit_item/basotho-hat-mokorotlo/",
+        "tier": "referenced",
+        "notes": "Notice d'exposition consacrée au mokorotlo ; elle indique que ce chapeau a été choisi comme symbole ornant le drapeau national du Lesotho."
+      },
+      {
+        "title": "A nation wrapped in tradition: Over 160-years' legacy of the Basotho blankets",
+        "url": "https://zenodo.org/records/19458019",
+        "tier": "referenced",
+        "notes": "Article de Gosiame Goitsemodimo (National Museum, Bloemfontein), revue Indago, 2026, DOI 10.5281/zenodo.19458019 ; il décrit la couverture comme partie de l'identité culturelle et nationale basotho depuis plus de 160 ans."
       }
     ]
   },

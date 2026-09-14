@@ -99,7 +99,7 @@ dix fois la même vignette dans le fil.
 | Carrousel-Mercator | durée et échelle | L'Afrique fait trente millions de km². Ta carte ne le **montre** pas. |
 | Peuples-commerce | le nom imposé | On les a nommés d'après ce qu'ils **vendaient**. |
 | Peuples-exonymes | le nom imposé | Personne ne s'est jamais appelé **Hottentot**. |
-| Familles-Bantu | durée et échelle | L'étiquette a cent soixante-quatre ans. Les noms en ont **mille**. |
+| Familles-Bantu | durée et échelle | L'étiquette a cent soixante-quatre ans. Les noms en ont plus de **mille**. |
 | Peuples-Peul | le nom imposé | Aucun de ces quatre noms n'est le **leur**. |
 
 Un seul mot en accent, le dernier. Chaque affirmation est une que le deck porte déjà

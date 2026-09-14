@@ -195,6 +195,18 @@ The night ground `--afh-night-*` is licensed by DEC-022 for **the atlas stage
 only** — the globe band on a fiche. It is not a theme, it is a stage light. Any
 other block that goes dark is out of scope and needs its own decision.
 
+**Découvertes is the second stage** (operator ruling, 2026-09-14). The operator
+asked for the behaviour of a Reel: one publication per screen, black edge to
+edge, over the site chrome. Built first as a 612 px night frame under the
+masthead and over the footer, the reader was neither the parchment site nor the
+Reel a visitor arrived from — a card in a document, with its actions in two rows
+of buttons below the fold. So that route draws no masthead, trail or footer; the
+whole viewport is `--afh-night-ground`, the browser's own interface is tinted to
+match, and the reading carries its own way out — a rail of destinations from
+1200 px, a _Parcourir_ sheet below. The licence covers that stage and nothing
+opened from it: its sheets stay on parchment, because a source list is a
+document. Gated by `discoveriesImmersiveCharter.test.ts`.
+
 ### 5.2 Four categorical accents, and a surface takes one
 
 `--afh-cat-ocre` `#c9821f` · `--afh-cat-teal` `#33a390` ·
@@ -562,8 +574,11 @@ the step exists to make the band legible, never to give it back the title it
 is not allowed to have. `SectionHeading` marks the case itself, from the
 absence of a `title`; no caller opts in, so no caller can get it wrong.
 
-Gated by `didYouKnowCharter.test.ts` (the band files itself with a kicker and
-titles nothing), `SectionHeading.test.tsx` (a title-less unit renders no
+The band itself was retired on 2026-09-13: its anecdote now takes a third of
+the hero's visual draw, one card, still filed by the kicker and still titled
+only by its own headline. Gated by `homeHeroAnecdoteCharter.test.tsx` (the
+drawn anecdote files itself with a kicker and titles nothing),
+`SectionHeading.test.tsx` (a title-less unit renders no
 heading, is marked `is-untitled`, is sized at `small`, and is asserted never
 to reach a heading role) and `homeOrientation.test.tsx` (the home's document
 plan).
@@ -650,6 +665,24 @@ discipline the text already obeys: sourced, dated, credited, tiered. Where no
 such record exists yet, the honest fallback is the corpus's own cartography,
 which the atlas generates, owns and can cite.
 
+**The site carries real images** (operator ruling, 2026-09-13). An image slot
+beside a text is filled by a photograph or a photographed document under a free
+licence — never by an AI-generated picture, and never by a typographic plate
+standing in for one. Thirty-three anecdotes were illustrated by a drawn plate showing the
+two names, on the reasoning that no free picture was exactly _about_ them. That
+reasoning was reversed: an exact document is the first choice, not the only
+admissible one. When it does not exist, the slot walks down a cascade and takes
+the first rung that yields a good, free picture — **the thing the text is
+about, then the people's own place or material culture, then the country, then
+the region.** Something always exists at the last rung. The caption stays
+truthful about which rung it came from: a landscape of the Teso sub-region is
+captioned as the landscape, not as the Iteso.
+
+**No face under a slur.** Where the text is about an insulting name, the picture
+shows a place, an object or a landscape, never a recognisable person; and a file
+whose own title carries the slur is not taken, because illustrating with the
+word reproduces the naming the text criticises.
+
 **And a licence is published, not named.** Where a picture's licence requires
 attribution, the rendered caption carries the author, the licence's **URI**,
 and a link to the file itself — not the licence's initials. A notice a reader
@@ -662,6 +695,26 @@ shows the people it documents — only the naming of them, and the cartography.
 The fallback above licenses that, and it is still a gap. Closing it means an
 image field per fiche and eight hundred cleared images: a corpus feature, with
 its own decision about sourcing and rights.
+
+**A third register: declared fiction** (DEC-053). A generated image may be
+published, but only as its own publication and only as what it is — an
+interpretation shown as one, never a document and never an illustration slot
+beside a text. It is stylised, never photorealistic when it shows people. It is
+about one or two atlas entities, and **its subject and its picture are sourced
+separately**: the subject rests on a linked fiche's own cited source at
+`official` or `referenced`; the picture carries its provenance — tool, model,
+job, date, `ai_generated` — which is a record, not a source, and can never vouch
+for the subject. A caption stating a place, a date or a pairing that no linked
+fiche states cites its own source. The reader is told the image is generated
+before any other claim, and every downloadable format carries that mark burned
+into the file, because a file leaves its caption behind. The CC BY-SA 4.0 grant
+covers the human contribution only — the brief, the selection, the caption.
+Figures with a surviving photographic record are excluded: a generated picture
+of them is a likeness, not an interpretation. Myths and oral narratives — the
+Récits collection — are held back until a second reviewer exists.
+
+This register **declares the residual gap above; it does not close it**. A
+generated people is still not the people's own visual record.
 
 ---
 

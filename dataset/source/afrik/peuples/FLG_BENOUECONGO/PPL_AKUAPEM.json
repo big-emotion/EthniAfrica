@@ -84,7 +84,7 @@
       {
         "title": "AkanArchives – Christaller Bible Translation 1870-1872",
         "url": "https://x.com/AkanArchives/status/1948756016897597836",
-        "tier": "needs_review"
+        "tier": "unverified"
       },
       {
         "title": "Trip Down Memory Lane – The Akuapem People, 2013",
@@ -94,7 +94,12 @@
       {
         "title": "Visit Akuapem – Cultural Heritage",
         "url": "https://visitakuapem.com/heritage",
-        "tier": "needs_review"
+        "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Twi (twii1234)",
+        "url": "https://glottolog.org/resource/languoid/id/twii1234",
+        "tier": "official"
       }
     ]
   },

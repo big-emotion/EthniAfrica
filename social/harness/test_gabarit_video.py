@@ -428,7 +428,7 @@ def test_a_closing_draws_no_running_caption():
 
 
 def test_the_closing_label_is_the_brand_line():
-    """§7 ter — the closing is constant across every series.
+    """§7 ter — the vision line is constant across every series and content type.
 
     A label that names one series on an image every series ends on is a label
     that contradicts the doctrine it sits above.
@@ -441,28 +441,30 @@ def test_the_closing_label_is_the_brand_line():
     assert ouvre.texte != ferme.texte, "l'ouverture perd le nom de sa série"
 
 
-def test_the_closing_punch_takes_the_accent_across_the_line_break():
-    """§9 bis — « Elle le traverse » passes into the accent, in the title.
+def test_the_closing_punch_is_the_last_word_of_the_title():
+    """§7 ter — whatever the content type, the closing title's last word is the punch.
 
-    It runs across a line break, so a phrase matched inside one line finds
-    nothing. What is matched is the position: every word from the punch onward.
+    Matched on position, not on a phrase: the title is whichever row of the
+    content-type table the lot belongs to, so no sentence is spelled out here.
     """
     deck = deck_essai()
     cloture = deck["cartes"][-1]
     titre = gab.plan_video(cloture, deck, image=image_de(cloture)).bloc("v-titre")
-    assert titre.accent_depuis > 0, "la chute reste en encre 1"
     mots = titre.texte.split()
-    assert " ".join(mots[titre.accent_depuis:]).lower().startswith("elle le traverse")
+    assert titre.accent_depuis == len(mots) - 1, "la chute n'est pas le dernier mot"
 
 
-def test_the_closing_holds_the_reversal_in_one_display_sentence():
-    """Both halves at the same rank: « Elle le traverse » is the punch."""
+def test_the_closing_body_is_not_a_dating():
+    """§7 ter — no closing names Berlin as the one who drew lines, nor « mille ans » as fact.
+
+    The retired closing did both in its body and reached five networks with it
+    (message audit 2026-09-13, finding 9). The body is now the second half of the
+    reversal.
+    """
     deck = deck_essai()
-    cloture = deck["cartes"][-1]
-    titre = gab.plan_video(cloture, deck, image=image_de(cloture)).bloc("v-titre")
-    assert "ne contient pas" in titre.texte.lower()
-    assert "traverse" in titre.texte.lower(), (
-        "la chute est reléguée au corps, où elle se lit comme une précision")
+    corps = (deck["cartes"][-1].get("corps") or "").lower()
+    for conteste in ("berlin", "mille ans"):
+        assert conteste not in corps, f"le corps de clôture écrit « {conteste} »"
 
 
 def test_the_closing_slots_are_its_own():
@@ -470,10 +472,11 @@ def test_the_closing_slots_are_its_own():
     cloture = deck["cartes"][-1]
     p = gab.plan_video(cloture, deck, image=image_de(cloture))
     haut, h = gab.V_TITRE_CLOTURE
-    titre, datation = p.bloc("v-titre"), p.bloc("v-datation")
-    assert datation is not None, "la clôture ne porte pas sa datation"
+    # The block kept its retired name; it now carries the reversal's second half.
+    titre, corps = p.bloc("v-titre"), p.bloc("v-datation")
+    assert corps is not None, "la clôture ne porte pas son corps"
     assert titre.y >= haut - 1, "le titre de clôture sort de son emplacement"
-    assert datation.y + datation.h <= haut + h + 1
+    assert corps.y + corps.h <= haut + h + 1
     assert p.bloc("bande-cloture").h == gab.V_BAS_CLOTURE
 
 
@@ -511,7 +514,7 @@ def test_the_sign_off_card_follows_the_closing_and_never_eats_it():
     # Et elle laisse à la clôture de quoi se lire : quatre blocs, pas un battement.
     assert cue - debut_cloture >= 5.0, (
         f"la clôture ne tient que {cue - debut_cloture:.2f}s avant la carte de fin "
-        f"— elle porte un titre, une datation, une plaque et une pastille")
+        f"— elle porte un titre, un corps, une plaque et une pastille")
 
 
 def test_a_scene_starts_where_its_paragraph_is_spoken():
@@ -570,7 +573,8 @@ def test_the_closing_punch_holds_its_contrast_on_the_pixels():
 
     titre = plan.bloc("v-titre")
     ligne = titre.corps * titre.interligne
-    # The last composed line is entirely the punch, so its box is the accent's.
+    # The punch is the last word, so the last composed line holds it; the ground
+    # is the median of that box, which the ink-one words beside it cannot move.
     chute = gab.Bloc("chute", titre.x, round(titre.y + ligne * (len(titre.lignes) - 1)),
                      titre.w, round(ligne), "x", gab._accent(deck))
     ratio = gab.contraste_mesure(im, chute)

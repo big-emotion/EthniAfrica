@@ -72,25 +72,44 @@ describe("Anecdote illustrations — a picture that cites itself (REQ-113)", () 
     }
   });
 
-  // A plate exists to show the two names. One that repeats the same word
-  // twice, or leaves either side blank, shows nothing and should have been a
-  // photograph or nothing at all.
+  // Operator ruling, 2026-09-13: the site carries real images. An anecdote
+  // with no exact document takes a neighbouring one — the people's place,
+  // the country, the region — rather than a typographic plate.
   // @req REQ-113
-  it("gives every drawn plate two different names and an origin", () => {
-    const hollow = Object.entries(DID_YOU_KNOW_ILLUSTRATIONS)
-      .filter(([, illustration]) => illustration.kind === "plate")
-      .filter(([, plate]) => {
-        if (plate.kind !== "plate") return false;
-        return (
-          plate.given.trim() === "" ||
-          plate.own.trim() === "" ||
-          plate.givenBy.trim() === "" ||
-          plate.given.trim() === plate.own.trim()
-        );
-      })
+  it("illustrates every fact with a real picture, never a drawn plate", () => {
+    const drawn = Object.entries(DID_YOU_KNOW_ILLUSTRATIONS)
+      .filter(([, illustration]) => illustration.kind !== "picture")
       .map(([id]) => id);
 
-    expect(hollow).toEqual([]);
+    expect(drawn).toEqual([]);
+  });
+
+  // Brand charter §9: a licence is published, not named. The file page is
+  // what lets a reader check the credit; the licence URI is what CC BY and
+  // CC BY-SA §4(a) actually ask for. Public domain asks for neither URI.
+  // @req REQ-113
+  it("links the file page and, unless public domain, the licence of every picture", () => {
+    const unpublished = Object.entries(DID_YOU_KNOW_ILLUSTRATIONS)
+      .filter(
+        ([, picture]) =>
+          !/^https:\/\//.test(picture.filePage ?? "") ||
+          (!/domaine public/.test(picture.credit) &&
+            !/^https?:\/\//.test(picture.licenceUrl ?? ""))
+      )
+      .map(([id]) => id);
+
+    expect(unpublished).toEqual([]);
+  });
+
+  // pxfuel re-hosts photographs under a blanket CC0 it cannot grant; a
+  // licence the uploader had no right to give is no licence at all.
+  // @req REQ-113
+  it("credits no re-hosting aggregator in place of an author", () => {
+    const rehosted = Object.entries(DID_YOU_KNOW_ILLUSTRATIONS)
+      .filter(([, picture]) => /pxfuel|pixabay|pxhere/i.test(picture.credit))
+      .map(([id]) => id);
+
+    expect(rehosted).toEqual([]);
   });
 
   // @req REQ-113

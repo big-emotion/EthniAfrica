@@ -37,12 +37,20 @@ const buttonVariants = cva(
         secondary: "bg-afh-bg-warm text-afh-text hover:brightness-95",
         ghost: "hover:bg-afh-bg-warm hover:text-afh-text",
         link: "text-afh-terracotta underline-offset-4 hover:underline",
+        /**
+         * A control standing on the night stage (brand charter §5.1). `ghost`
+         * cannot: its hover paints the parchment ground and dark ink over a
+         * photograph.
+         */
+        night: "bg-transparent text-[color:var(--afh-night-ink)]",
       },
       size: {
         default: "h-11 px-4 py-2",
         sm: "h-9 rounded-afh-lg px-3",
         lg: "h-11 rounded-afh-lg px-8",
         icon: "h-11 w-11",
+        /** A glyph named under itself, as on a Reel's action rail. */
+        stacked: "h-auto min-h-11 flex-col gap-1 px-1 py-1",
       },
     },
     defaultVariants: {

@@ -81,6 +81,11 @@
         "title": "Bantu, Central-Tanzania People Cluster – Joshua Project",
         "url": "https://www.joshuaproject.net/clusters/341",
         "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Mpoto (mpot1240)",
+        "url": "https://glottolog.org/resource/languoid/id/mpot1240",
+        "tier": "official"
       }
     ]
   },

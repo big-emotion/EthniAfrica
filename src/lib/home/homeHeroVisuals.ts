@@ -1,3 +1,5 @@
+import type { LocalizedDidYouKnowFact } from "@/lib/home/didYouKnowLocalization";
+
 /** A project illustration suitable for a hero or an axis hub's plate. */
 export interface HomeHeroImage {
   id: string;
@@ -65,22 +67,42 @@ export const HOME_HERO_IMAGES: readonly HomeHeroImage[] = [
   },
 ];
 
+/** What the hero renders in its visual slot. */
 export type HomeHeroVisual =
-  { kind: "globe" } | { kind: "image"; image: HomeHeroImage };
+  | { kind: "globe" }
+  | { kind: "image"; image: HomeHeroImage }
+  | { kind: "anecdote"; fact: LocalizedDidYouKnowFact };
+
+/**
+ * What the draw decides. The anecdote itself is picked by the page, which
+ * knows the locale it has to read the fact in.
+ */
+type HomeHeroDraw =
+  | { kind: "globe" }
+  | { kind: "image"; image: HomeHeroImage }
+  | { kind: "anecdote" };
+
+const HERO_KINDS = ["globe", "image", "anecdote"] as const;
 
 /**
  * Draw the homepage visual once per server request.
  *
- * The lower half of the draw is the globe. The upper half draws an image from
- * the existing project stock, giving each branch a 50/50 chance. The random
- * source is injectable so the boundary and every image stay deterministic
- * under test.
+ * One third each for the globe, an image from the project stock and a
+ * « Saviez-vous » anecdote (operator ruling, 2026-09-13). The globe used to
+ * own half the draw by rule; there is no rule between the three now, so no
+ * kind is the one a returning visitor mostly sees. The random source is
+ * injectable so every boundary and every image stay deterministic under test.
  */
 // @req REQ-115
 export function drawHomeHeroVisual(
   random: () => number = Math.random
-): HomeHeroVisual {
-  if (random() < 0.5) return { kind: "globe" };
+): HomeHeroDraw {
+  const kind =
+    HERO_KINDS[
+      Math.min(HERO_KINDS.length - 1, Math.floor(random() * HERO_KINDS.length))
+    ];
+  if (kind === "globe") return { kind: "globe" };
+  if (kind === "anecdote") return { kind: "anecdote" };
 
   const imageIndex = Math.min(
     HOME_HERO_IMAGES.length - 1,

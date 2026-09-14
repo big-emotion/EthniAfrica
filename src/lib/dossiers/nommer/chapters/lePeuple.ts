@@ -26,7 +26,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
     figureRefs: ["corpus-exonyms", "corpus-autonyms"],
   },
   measure: {
-    value: "3 141",
+    value: "3 137",
     unit: "exonymes recensés",
     sourceRefs: [],
     figureRefs: ["corpus-exonyms"],
@@ -39,7 +39,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
       blocks: [
         {
           id: "quatre-pour-un",
-          text: "Les 775 fiches de peuple de l'atlas recensent 3 141 noms donnés de l'extérieur, contre 773 noms que les intéressés revendiquent. Quatre pour un.",
+          text: "Les 776 fiches de peuple de l'atlas recensent 3 137 noms donnés de l'extérieur, contre 774 noms que les intéressés revendiquent. Quatre pour un.",
           sourceRefs: [],
           figureRefs: ["corpus-peoples", "corpus-exonyms", "corpus-autonyms"],
         },
@@ -81,13 +81,13 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
       ],
       table: {
         caption:
-          "Radicaux relevés dans les champs « origine des exonymes » et « pourquoi c'est problématique » des 775 fiches. Un sondage lexical, pas un codage : les mentions se recoupent.",
+          "Radicaux relevés dans les champs « origine des exonymes » et « pourquoi c'est problématique » des 776 fiches. Un sondage lexical, pas un codage : les mentions se recoupent.",
         columns: ["Radical relevé", "Fiches", "Ce qu'on y lit le plus souvent"],
         rows: [
           {
             cells: [
               "colonial",
-              "239",
+              "241",
               "Le nom est daté de la colonisation, ou officialisé par elle",
             ],
             sourceRefs: [],
@@ -96,21 +96,21 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "administr-",
-              "179",
+              "180",
               "Le nom est un acte de recensement avant d'être un fait de langue",
             ],
             sourceRefs: [],
             figureRefs: ["probe-administration"],
           },
           {
-            cells: ["europ-", "118", "Navigateurs, explorateurs, cartographes"],
+            cells: ["europ-", "119", "Navigateurs, explorateurs, cartographes"],
             sourceRefs: [],
             figureRefs: ["probe-european"],
           },
           {
             cells: [
               "voisin",
-              "112",
+              "113",
               "Un exonyme africain, donné par un peuple voisin — souvent le plus ancien de tous",
             ],
             sourceRefs: [],
@@ -119,7 +119,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "dépréciatif et voisins",
-              "85",
+              "84",
               "La fiche qualifie explicitement le mot de péjoratif, dépréciatif, moqueur ou dérisoire",
             ],
             sourceRefs: [],
@@ -128,7 +128,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "portugais",
-              "83",
+              "82",
               "La strate la plus profonde de la côte atlantique, dès le XVe siècle",
             ],
             sourceRefs: [],
@@ -137,7 +137,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "arab-",
-              "74",
+              "75",
               "Antérieur à l'Europe sur le Sahel et la côte orientale",
             ],
             sourceRefs: [],
@@ -201,7 +201,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
       blocks: [
         {
           id: "quatre-vingt-sept-fiches",
-          text: "Quatre-vingt-sept fiches qualifient leur exonyme de péjoratif, dépréciatif, moqueur ou dérisoire. Deux cas montrent ce que le mot fait, et ce que le remplacer ne répare pas.",
+          text: "Quatre-vingt-quatre fiches qualifient leur exonyme de péjoratif, dépréciatif, moqueur ou dérisoire. Deux cas montrent ce que le mot fait, et ce que le remplacer ne répare pas.",
           sourceRefs: [],
           figureRefs: ["probe-pejorative"],
         },

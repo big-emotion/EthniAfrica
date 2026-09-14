@@ -1,28 +1,30 @@
 import type { Metadata } from "next";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { HomeHero } from "@/components/home/HomeHero";
-import { DidYouKnow } from "@/components/home/DidYouKnow";
 import { pickDidYouKnowFacts } from "@/lib/home/didYouKnowFacts";
 import { localizeDidYouKnowFact } from "@/lib/home/didYouKnowLocalization";
 import { getCorpusCounts } from "@/lib/home/corpusCounts";
 import { loadSeedWords } from "@/lib/home/seedWords";
-import { drawHomeHeroVisual } from "@/lib/home/homeHeroVisuals";
-import { drawDidYouKnowMotif } from "@/lib/home/didYouKnowMotifs";
+import {
+  drawHomeHeroVisual,
+  type HomeHeroVisual,
+} from "@/lib/home/homeHeroVisuals";
 import { getContinentPeopleCounts } from "@/api/v2/services/continentPeopleCounts";
 import { OG_TITLE, OG_DESCRIPTION } from "@/lib/brand";
 import { surfaceHead } from "@/lib/seo/localeAlternates";
 import type { Language } from "@/types/shared";
 
 /**
- * The home draws two sourced facts on every request (REQ-115), so it must not
- * be prerendered. The root layout currently awaits connection() for the CSP
- * nonce, but that is action at a distance: stating the contract here keeps a
- * future middleware change from freezing the pair forever.
+ * The home draws its hero visual and — one draw in three — a sourced
+ * fact on every request (REQ-115), so it must not be prerendered. The root
+ * layout currently awaits connection() for the CSP nonce, but that is action
+ * at a distance: stating the contract here keeps a future middleware change
+ * from freezing the draw forever.
  *
  * This is the opposite failure to the one staticParamsBan.test.ts guards:
  * there a route claimed to be static and answered 500 at request time;
  * here a route that is dynamic only by inheritance would answer 200 with
- * the same fact forever.
+ * the same visual forever.
  */
 // @req REQ-115
 export const dynamic = "force-dynamic";
@@ -59,12 +61,23 @@ export default async function Home({ params, searchParams }: HomePageProps) {
   // Drawn on the server once per request: no hydration mismatch and no visual
   // swap after the first paint. The force-dynamic contract above prevents the
   // result from being frozen into a prerendered page.
+  //
+  // `?hero=` pins the kind: a browser check measuring the two columns must
+  // meet the same composition on every run.
   const query = await searchParams;
   const heroParam = query?.hero;
-  const heroVisual =
-    heroParam === "globe" || heroParam === "mercator"
-      ? ({ kind: "globe" } as const)
-      : drawHomeHeroVisual();
+  const pinned = heroParam === "globe" || heroParam === "mercator";
+  const drawn = pinned ? ({ kind: "globe" } as const) : drawHomeHeroVisual();
+
+  // An anecdote draw that finds no officially sourced fact shows the globe
+  // rather than an empty slot or a weaker claim.
+  const [anecdote] = drawn.kind === "anecdote" ? pickDidYouKnowFacts(1) : [];
+  const heroVisual: HomeHeroVisual =
+    drawn.kind !== "anecdote"
+      ? drawn
+      : anecdote
+        ? { kind: "anecdote", fact: localizeDidYouKnowFact(anecdote, language) }
+        : { kind: "globe" };
 
   const [counts, peopleCountsByCountry, seedWords] = await Promise.all([
     // A failed total read is not an empty corpus. The counter component says
@@ -78,13 +91,6 @@ export default async function Home({ params, searchParams }: HomePageProps) {
     loadSeedWords(),
   ]);
 
-  // Drawn in the server component so it never re-runs during hydration and
-  // cannot desynchronise the client tree.
-  const didYouKnowFacts = pickDidYouKnowFacts(2).map((fact) =>
-    localizeDidYouKnowFact(fact, language)
-  );
-  const didYouKnowMotif = drawDidYouKnowMotif();
-
   return (
     <PageLayout language={language} hideHeader flushTop flushBottom>
       <HomeHero
@@ -93,11 +99,6 @@ export default async function Home({ params, searchParams }: HomePageProps) {
         peopleCountsByCountry={peopleCountsByCountry}
         counts={counts}
         visual={heroVisual}
-      />
-      <DidYouKnow
-        language={language}
-        facts={didYouKnowFacts}
-        motif={didYouKnowMotif}
       />
     </PageLayout>
   );

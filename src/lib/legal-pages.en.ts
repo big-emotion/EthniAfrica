@@ -99,7 +99,7 @@ export const legalPagesEn: Readonly<
     provenance: "machine",
     eyebrow: "Privacy and transparency",
     title: "Data policy",
-    lastUpdated: "Last updated: 25 July 2026",
+    lastUpdated: "Last updated: 13 September 2026",
     introduction:
       "EthniAfrica limits the collection of personal data to what is strictly necessary and clearly distinguishes account data, editorial contributions and technical measurements.",
     sections: [
@@ -116,6 +116,7 @@ export const legalPagesEn: Readonly<
           "When an account is created, EthniAfrica may process an email address, a display name, the information needed for authentication and the confirmation of age.",
           "Contributions, corrections and reports are kept with the information needed to examine them and for editorial transparency. Technical logs may contain limited information related to the operation and security of the service.",
           "Consent preferences are stored in the browser to remember the choices made.",
+          "In Discoveries, kept publications are stored in this device's browser as publication IDs. They are not linked to an account and are not synchronised. You can remove them in Discoveries or clear the site's data in your browser.",
         ],
       },
       {

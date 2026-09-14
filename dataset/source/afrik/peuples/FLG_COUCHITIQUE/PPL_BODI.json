@@ -108,7 +108,12 @@
       {
         "title": "Ayu Ethiopian Tribal Tours – Ka'el Festival",
         "url": "https://ayuethiopiantribaltours.com/the-bodi-tribes-kael-festival-ethiopias-remarkable-celebration-of-strength-and-prosperity/",
-        "tier": "needs_review"
+        "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Me'en, glottocode meen1242, ISO 639-3: mym",
+        "url": "https://glottolog.org/resource/languoid/id/meen1242",
+        "tier": "official"
       }
     ]
   },

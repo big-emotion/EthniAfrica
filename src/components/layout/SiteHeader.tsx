@@ -34,6 +34,7 @@ import { useHeaderReveal } from "@/hooks/use-header-reveal";
 import { PRODUCT_NAME } from "@/lib/brand";
 import { cn } from "@/lib/utils";
 import { getTranslation } from "@/lib/translations";
+import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import {
   ACCENT_BY_ACCESS_MODE,
   ACCENT_CYCLE,
@@ -62,7 +63,7 @@ import type { Language } from "@/types/shared";
  * Explorer when the reader knows what they are looking for, Comprendre when
  * they want to know where what they are reading comes from, Jouer when they
  * want the corpus to answer. The modules live behind the click — a panel on
- * a wide viewport, a tray below 768px — and both are generated from
+ * a wide viewport, a tray below 1200px — and both are generated from
  * `moduleRegistry.ts`, never hand-listed.
  *
  * This replaces the flat nine-link bar that was written twice, once per
@@ -83,7 +84,7 @@ import type { Language } from "@/types/shared";
 
 // The charter's own figure, and the width `FicheHeroBand` already switches
 // its band at, so the header and the band below it change shape together.
-const NAV_BREAKPOINT_PX = 768;
+const NAV_BREAKPOINT_PX = 1200;
 
 /**
  * A glyph per rubric, not per dossier.
@@ -484,6 +485,26 @@ export function SiteHeader({
               </span>
             </button>
           ))}
+          {/* A destination beside the three disclosures, not a fourth axis:
+              their pill, a neutral seed and no caret (atlas charter §3). */}
+          <Link
+            href={getLocalizedRoute(language, "discoveries")}
+            data-testid="site-discoveries-link"
+            aria-current={
+              isCurrentRoute(
+                pathname,
+                getLocalizedRoute(language, "discoveries")
+              )
+                ? "page"
+                : undefined
+            }
+            className="sh-axis sh-axis-link min-h-11"
+          >
+            <span className="sh-axis-pill">
+              <span className="sh-seed sh-seed-neutral" aria-hidden="true" />
+              {discoveriesCopy[language].title}
+            </span>
+          </Link>
         </div>
 
         <div className="sh-controls">
@@ -572,6 +593,23 @@ export function SiteHeader({
         <SheetContent side="right" className="sh-tray">
           <SheetTitle className="sh-tray-title">{t.hubs.menuLabel}</SheetTitle>
           <LanguageSwitcher language={language} appearance="row" />
+          <Link
+            href={getLocalizedRoute(language, "discoveries")}
+            data-testid="site-discoveries-tray-link"
+            aria-current={
+              isCurrentRoute(
+                pathname,
+                getLocalizedRoute(language, "discoveries")
+              )
+                ? "page"
+                : undefined
+            }
+            className="sh-fold-trigger sh-dest-row min-h-11"
+            onClick={() => setTrayOpen(false)}
+          >
+            <span className="sh-seed sh-seed-neutral" aria-hidden="true" />
+            {discoveriesCopy[language].title}
+          </Link>
           {ACCESS_MODES.map((axis) => {
             // Everything the fold opens onto, not everything the registry
             // declares: the dossiers axis also carries its corpus, and a
@@ -827,6 +865,40 @@ export function SiteHeader({
           gap: 2px;
           flex: none;
           margin-left: auto;
+        }
+        /* Découvertes wears the axes' pill but takes no accent: the ink stands
+           in wherever an axis reads --accent, so the row teaches no fourth hue.
+           Declared after the axis rules so each override wins by order. */
+        .sh-axis-link {
+          text-decoration: none;
+        }
+        .sh-seed-neutral {
+          background: var(--sh-ink-2);
+        }
+        .sh-axis-link:hover .sh-axis-pill {
+          border-color: var(--sh-ink-2);
+        }
+        .sh-axis-link:focus-visible .sh-axis-pill {
+          outline-color: var(--sh-ink);
+        }
+        .sh-axis-link[aria-current="page"] {
+          color: var(--sh-ink);
+        }
+        .sh-axis-link[aria-current="page"] .sh-axis-pill {
+          border-color: var(--sh-ink-2);
+          background: color-mix(in srgb, var(--sh-ink) 8%, transparent);
+        }
+        /* In the drawer it is a fold trigger's row with nothing to unfold. */
+        .sh-dest-row {
+          border-bottom: 1px solid var(--afh-border);
+          text-decoration: none;
+        }
+        .sh-dest-row[aria-current="page"] {
+          text-decoration: underline;
+          text-underline-offset: 5px;
+        }
+        .sh-dest-row.sh-fold-trigger:focus-visible {
+          outline-color: var(--sh-ink);
         }
         .sh-icon {
           display: inline-grid;
@@ -1194,8 +1266,8 @@ export function SiteHeader({
           margin-top: 7px;
         }
 
-        /* Mobile first: the phone gets the burger and the tray, and the
-           three axes only appear once the bar is wide enough to hold them.
+        /* Mobile first: the phone and tablet get the burger and the tray;
+           the three axes and the destination only join the wide bar when it fits.
            One component, one switch, so the two branches cannot disagree
            about which viewport they are on. */
         .sh-axes,

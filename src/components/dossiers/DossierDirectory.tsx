@@ -10,6 +10,7 @@ import { getDossierThemes } from "@/lib/dossiers/themes";
 import { HUB_PAGE_SIZE, pageOf } from "@/lib/dossiers/paging";
 import type { DossierIndexEntry } from "@/lib/dossiers/menu";
 import { getTranslation } from "@/lib/translations";
+import { proverbsCopy } from "@/lib/i18n/copy/proverbs";
 import styles from "./dossiers.module.css";
 
 const normalize = (value: string) =>
@@ -58,6 +59,11 @@ export function DossierDirectory({
     { theme, format: "anecdote", language },
     availability
   );
+  const proverbs = getDossiers(
+    { theme, format: "proverb", language },
+    availability
+  );
+  const proverbCopy = proverbsCopy[language];
 
   const readings = useMemo(() => {
     const needle = normalize(query.trim());
@@ -191,6 +197,15 @@ export function DossierDirectory({
           <ActionLink href={anecdotes[0].href}>
             {english ? "Read the anecdotes" : "Lire les anecdotes"}
           </ActionLink>
+        </aside>
+      )}
+      {/* A landmark of its own: two asides sharing « Lectures courtes » would be
+          two landmarks a screen reader cannot tell apart. */}
+      {proverbs.length > 0 && (
+        <aside className={styles.shortReads} aria-label={proverbCopy.pageTitle}>
+          <h2>{proverbCopy.pageKicker}</h2>
+          <p>{proverbCopy.pageSubtitle}</p>
+          <ActionLink href={proverbs[0].href}>{proverbCopy.readAll}</ActionLink>
         </aside>
       )}
     </div>

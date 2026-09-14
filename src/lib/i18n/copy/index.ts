@@ -3,6 +3,7 @@ import { classificationCopy } from "@/lib/i18n/copy/classification";
 import { atlasCopy } from "@/lib/i18n/copy/atlas";
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
 import { colonizationCopy } from "@/lib/i18n/copy/colonization";
+import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import { chromeCopy } from "@/lib/i18n/copy/chrome";
 import { commonCopy } from "@/lib/i18n/copy/common";
 import { consentCopy } from "@/lib/i18n/copy/consent";
@@ -15,7 +16,9 @@ import { fieldProvenanceCopy } from "@/lib/i18n/copy/fieldProvenance";
 import { familyCopy } from "@/lib/i18n/copy/family";
 import { ficheCopy } from "@/lib/i18n/copy/fiche";
 import { footerCopy } from "@/lib/i18n/copy/footer";
+import { galleryCopy } from "@/lib/i18n/copy/gallery";
 import { gamesCopy } from "@/lib/i18n/copy/games";
+import { generatedImagesCopy } from "@/lib/i18n/copy/generatedImages";
 import { hubsCopy } from "@/lib/i18n/copy/hubs";
 import { languagesCopy } from "@/lib/i18n/copy/languages";
 import { languageFicheCopy } from "@/lib/i18n/copy/languageFiche";
@@ -23,6 +26,7 @@ import { migrationsCopy } from "@/lib/i18n/copy/migrations";
 import { namesCopy } from "@/lib/i18n/copy/names";
 import { patronymesCopy } from "@/lib/i18n/copy/patronymes";
 import { peopleCopy } from "@/lib/i18n/copy/people";
+import { proverbsCopy } from "@/lib/i18n/copy/proverbs";
 import { publicFlagsCopy } from "@/lib/i18n/copy/publicFlags";
 import { quizCopy } from "@/lib/i18n/copy/quiz";
 import { reportsCopy } from "@/lib/i18n/copy/reports";
@@ -47,6 +51,9 @@ export const COPY_MODULES = {
   admin: adminCopy,
   server: serverCopy,
   anecdotes: anecdotesCopy,
+  proverbs: proverbsCopy,
+  gallery: galleryCopy,
+  generatedImages: generatedImagesCopy,
   atlas: atlasCopy,
   common: commonCopy,
   chrome: chromeCopy,
@@ -66,6 +73,7 @@ export const COPY_MODULES = {
   patronymes: patronymesCopy,
   migrations: migrationsCopy,
   colonization: colonizationCopy,
+  discoveries: discoveriesCopy,
   quiz: quizCopy,
   reports: reportsCopy,
   sourceTransparency: sourceTransparencyCopy,

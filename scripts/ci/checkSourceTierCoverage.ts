@@ -23,7 +23,7 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  *
  * 1010 -> 1002, measured 2026-09-12; 1002 -> 1000 after the Namibia source review.
  */
-export const NEEDS_REVIEW_RATCHET = 1000;
+export const NEEDS_REVIEW_RATCHET = 929;
 
 /** The doctrine's three tiers, plus the numeric tiers the name/relation/migration fiches still carry. */
 const TIERS_WITH_AUTHORITY = new Set<unknown>([

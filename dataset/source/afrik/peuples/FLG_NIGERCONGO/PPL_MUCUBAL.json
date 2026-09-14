@@ -90,17 +90,17 @@
       {
         "title": "Slow Food Foundation – Mucubal Cattle, Ark of Taste",
         "url": "https://www.fondazioneslowfood.com/en/ark-of-taste-slow-food/mucubal-cattle/",
-        "tier": "needs_review"
+        "tier": "unverified"
       },
       {
         "title": "Embassy of Angola – Grupos Etnicos",
         "url": "https://angola.org/grupos-etnicos/",
-        "tier": "needs_review"
+        "tier": "referenced"
       },
       {
         "title": "Responsible Travel – Angola's tribal groups",
         "url": "https://www.responsibletravel.com/holidays/angola/travel-guide/angolas-tribal-groups",
-        "tier": "needs_review"
+        "tier": "unverified"
       }
     ]
   },

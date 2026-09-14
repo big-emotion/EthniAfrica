@@ -6,7 +6,7 @@
   "content": {
     "appellations": {
       "mainName": "Shambaa",
-      "selfAppellation": "Wasambaa (pluriel), Msambaa (singulier)",
+      "selfAppellation": "Wasambaa (pluriel) ; Msambaa (singulier)",
       "exonyms": ["Shambala", "Sambaa", "Sambala", "Sambara", "Schambala"],
       "originOfExonyms": "Les exonymes derivent du nom du peuple et de sa langue. Wasambaa est le terme swahili designe le peuple. Shambala est la forme la plus repandue en anglais. Le territoire est appele Usambaa ou Usambara.",
       "whyProblematic": null,
@@ -96,6 +96,11 @@
         "title": "Omniglot – Shambala language",
         "url": "https://www.omniglot.com/writing/shambala.htm",
         "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Shambala (sham1280)",
+        "url": "https://glottolog.org/resource/languoid/id/sham1280",
+        "tier": "official"
       }
     ]
   },

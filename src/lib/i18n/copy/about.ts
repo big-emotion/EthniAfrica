@@ -94,8 +94,22 @@ export interface PurposeChapterCopy {
   title: string;
   claim: string;
   claimStatus: string;
+  /** The declaration the claim rests on, one titled part at a time. */
+  declaration: DeclarationPartCopy[];
+  /** The sentences the atlas does not write, each with the reason. */
+  refusals: { title: string; items: DeclarationRefusalCopy[] };
   scales: PurposeScaleCopy[];
   closing: string;
+}
+
+interface DeclarationPartCopy {
+  title: string;
+  paragraphs: string[];
+}
+
+interface DeclarationRefusalCopy {
+  sentence: string;
+  reason: string;
 }
 
 /**
@@ -114,6 +128,15 @@ export interface PurposeChapterCopy {
  * The figures were re-measured from `content.demography.distributionByCountry`
  * on 11 September 2026, macro-groups excluded, and `closing` states that date
  * because the corpus moves and a number printed as a constant would drift.
+ *
+ * `declaration` and `refusals` are the full statement the claim comes from:
+ * the operator's message of 10 September 2026 and the agent's corrections of
+ * it, in the agent's own words, with the second person and the workshop's
+ * vocabulary taken out (docs/editorial/purpose-doctrine.md keeps the
+ * verbatim exchange). The refusals are published with their reasons because
+ * the corrections are the doctrine: a refused sentence printed without why
+ * reads as a taboo. They sit under `claimStatus`, which labels the whole
+ * chapter as a position — « mille » included, an assumed approximation.
  */
 // @req REQ-132
 // @req REQ-145
@@ -124,6 +147,49 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
     claim: "This people was not divided. The map was drawn over it.",
     claimStatus:
       "That is what we think, not a fact the atlas proves. Here is what it rests on.",
+    declaration: [
+      {
+        title: "The names are older than the borders",
+        paragraphs: [
+          "Most of Africa’s borders are less than a hundred and forty years old. The names are more than a thousand years old.",
+          "A border does not contain a people; it crosses it. And the same line encloses peoples who never asked to be together.",
+        ],
+      },
+      {
+        title: "The apparent order is reversed",
+        paragraphs: [
+          "What is presented as natural, the nations, is the most recent layer. What is presented as archaic, the peoples, is the continuous one.",
+          "This atlas does not tell the past. It shows that what looks old is still here, and that what looks natural is very recent. Every people has a history, and its name traces it: that is what we tell.",
+        ],
+      },
+      {
+        title: "What remained, not what was taken",
+        paragraphs: [
+          "The language of reparation keeps the coloniser at the centre of the sentence. Even to accuse him, he stays the subject of the verb.",
+          "We speak of what remained, not of what was taken.",
+        ],
+      },
+    ],
+    refusals: {
+      title: "Three sentences we do not write",
+      items: [
+        {
+          sentence: "“Before, people lived in harmony with the continent.”",
+          reason:
+            "That is a golden age, and a golden age does not need to be true to be attacked. Africa before Berlin had empires, conquests and internal slave trades. The argument’s strength does not come from how gentle the past was; it comes from its duration and its scale. It is enough that it is older, larger, and alive.",
+        },
+        {
+          sentence: "“The borders are arbitrary.”",
+          reason:
+            "Half false: some follow rivers. They were drawn without reference to who lived there, and the atlas can show it people by people.",
+        },
+        {
+          sentence: "“Reconnecting with the past.”",
+          reason:
+            "Reconnecting puts the subject in the past and assumes the break is complete. Yet these peoples are counted in 2025 and live in France. Not reconnecting with: recognising what never stopped. It is truer, and it is less sad.",
+        },
+      ],
+    },
     scales: [
       {
         title: "For a people",
@@ -139,7 +205,7 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
       },
     ],
     closing:
-      "Africa’s borders are a hundred and forty years old. Berlin, 1884. Independence, 1960. What they cut across is far older: 191 peoples live today in three countries or more. The Fula in twelve. The Soninke in eleven. Counted on 11 September 2026.",
+      "Berlin, 1884. Independence, 1960. What the borders cut across is far older: 191 peoples live today in three countries or more. The Fula in twelve. The Soninke in eleven. Counted on 11 September 2026.",
   },
   fr: {
     stepLabel: "01 · Le propos",
@@ -148,6 +214,49 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
       "Ce peuple n’a pas été divisé. C’est la carte qui a été dessinée par-dessus.",
     claimStatus:
       "C’est ce que nous pensons, pas un fait que l’atlas démontre. Voici sur quoi ça repose.",
+    declaration: [
+      {
+        title: "Les noms sont plus vieux que les frontières",
+        paragraphs: [
+          "La plupart des frontières de l’Afrique ont moins de cent quarante ans. Les noms en ont plus de mille.",
+          "Une frontière ne contient pas un peuple, elle le traverse. Et le même tracé enferme ensemble des peuples qui n’ont rien demandé.",
+        ],
+      },
+      {
+        title: "L’ordre apparent est inversé",
+        paragraphs: [
+          "Ce qu’on présente comme naturel, les nations, est la couche la plus récente. Ce qu’on présente comme archaïque, les peuples, est la couche continue.",
+          "Cet atlas ne raconte pas le passé. Il montre que ce qui a l’air ancien est encore là, et que ce qui a l’air naturel est très récent. Chaque peuple a une histoire, et son nom la retrace : c’est ce que nous racontons.",
+        ],
+      },
+      {
+        title: "Ce qui est resté, pas ce qui a été pris",
+        paragraphs: [
+          "Le registre de la réparation garde le colonisateur au centre de la phrase. Même pour l’accuser, il reste le sujet du verbe.",
+          "Nous parlons de ce qui est resté, pas de ce qui a été pris.",
+        ],
+      },
+    ],
+    refusals: {
+      title: "Trois phrases que nous n’écrivons pas",
+      items: [
+        {
+          sentence: "« Avant, on vivait en accord avec le continent. »",
+          reason:
+            "C’est un âge d’or, et un âge d’or n’a pas besoin d’être vrai pour être attaquable. L’Afrique d’avant Berlin avait des empires, des conquêtes, des traites internes. La force de l’argument ne vient pas de la douceur du passé, elle vient de sa durée et de son échelle : il suffit que ce soit plus vieux, plus large, et vivant.",
+        },
+        {
+          sentence: "« Les frontières sont arbitraires. »",
+          reason:
+            "À demi faux : certaines suivent des fleuves. Elles ont été tracées sans référence à qui habitait là, et l’atlas peut le montrer peuple par peuple.",
+        },
+        {
+          sentence: "« Renouer avec le passé. »",
+          reason:
+            "Renouer met le sujet au passé et suppose la rupture consommée. Or ces peuples sont comptés en 2025 et présents en France. Pas renouer avec : reconnaître ce qui n’a jamais cessé. C’est plus vrai, et c’est moins triste.",
+        },
+      ],
+    },
     scales: [
       {
         title: "Pour un peuple",
@@ -163,7 +272,7 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
       },
     ],
     closing:
-      "Les frontières de l’Afrique ont cent quarante ans. Berlin, 1884. Les indépendances, 1960. Ce qu’elles coupent est bien plus vieux : 191 peuples vivent aujourd’hui dans trois pays ou plus. Les Peul dans douze. Les Soninké dans onze. Compté le 11 septembre 2026.",
+      "Berlin, 1884. Les indépendances, 1960. Ce que les frontières coupent est bien plus vieux : 191 peuples vivent aujourd’hui dans trois pays ou plus. Les Peul dans douze. Les Soninké dans onze. Compté le 11 septembre 2026.",
   },
 };
 

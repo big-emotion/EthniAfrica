@@ -82,7 +82,12 @@
       {
         "title": "Factors Contributing to Language Endangerment of Minority Languages – Science Publishing Group, 2018",
         "url": "https://www.sciencepublishinggroup.com/article/10.11648/j.ijeedu.20180702.11",
-        "tier": "needs_review"
+        "tier": "unverified"
+      },
+      {
+        "title": "Lala-Bisa – Glottolog",
+        "url": "https://glottolog.org/resource/languoid/id/lala1264",
+        "tier": "official"
       }
     ]
   },

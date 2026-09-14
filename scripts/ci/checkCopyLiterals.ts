@@ -69,6 +69,8 @@ export const COPY_LITERAL_EXEMPT_PATTERNS: readonly RegExp[] = [
   /^src\/stories\//,
   // Code-authored prose banks: editorial, migrated by their own wave.
   /^src\/lib\/home\//,
+  // The proverb bank: the anecdotes' shape, with its own fr/en parity suite.
+  /^src\/lib\/proverbs\//,
   /^src\/lib\/dossiers\//,
   /^src\/lib\/legal-pages[^/]*\.ts$/,
   /^src\/lib\/games\//,

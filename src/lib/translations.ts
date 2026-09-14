@@ -3,6 +3,7 @@ import { classificationCopy } from "@/lib/i18n/copy/classification";
 import { atlasCopy } from "@/lib/i18n/copy/atlas";
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
 import { colonizationCopy } from "@/lib/i18n/copy/colonization";
+import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import { chromeCopy } from "@/lib/i18n/copy/chrome";
 import { commonCopy } from "@/lib/i18n/copy/common";
 import { consentCopy } from "@/lib/i18n/copy/consent";
@@ -15,7 +16,9 @@ import { fieldProvenanceCopy } from "@/lib/i18n/copy/fieldProvenance";
 import { familyCopy } from "@/lib/i18n/copy/family";
 import { ficheCopy } from "@/lib/i18n/copy/fiche";
 import { footerCopy } from "@/lib/i18n/copy/footer";
+import { galleryCopy } from "@/lib/i18n/copy/gallery";
 import { gamesCopy } from "@/lib/i18n/copy/games";
+import { generatedImagesCopy } from "@/lib/i18n/copy/generatedImages";
 import { hubsCopy } from "@/lib/i18n/copy/hubs";
 import { languagesCopy } from "@/lib/i18n/copy/languages";
 import { languageFicheCopy } from "@/lib/i18n/copy/languageFiche";
@@ -23,6 +26,7 @@ import { migrationsCopy } from "@/lib/i18n/copy/migrations";
 import { namesCopy } from "@/lib/i18n/copy/names";
 import { patronymesCopy } from "@/lib/i18n/copy/patronymes";
 import { peopleCopy } from "@/lib/i18n/copy/people";
+import { proverbsCopy } from "@/lib/i18n/copy/proverbs";
 import { publicFlagsCopy } from "@/lib/i18n/copy/publicFlags";
 import { quizCopy } from "@/lib/i18n/copy/quiz";
 import { reportsCopy } from "@/lib/i18n/copy/reports";
@@ -50,6 +54,9 @@ const en = {
   admin: adminCopy.en,
   server: serverCopy.en,
   anecdotes: anecdotesCopy.en,
+  proverbs: proverbsCopy.en,
+  gallery: galleryCopy.en,
+  generatedImages: generatedImagesCopy.en,
   atlas: atlasCopy.en,
   ...commonCopy.en,
   chrome: chromeCopy.en,
@@ -69,6 +76,7 @@ const en = {
   patronymes: patronymesCopy.en,
   migrations: migrationsCopy.en,
   colonization: colonizationCopy.en,
+  discoveries: discoveriesCopy.en,
   quiz: quizCopy.en,
   reports: reportsCopy.en,
   sourceTransparency: sourceTransparencyCopy.en,
@@ -92,6 +100,9 @@ const fr: UiDictionary = {
   admin: adminCopy.fr,
   server: serverCopy.fr,
   anecdotes: anecdotesCopy.fr,
+  proverbs: proverbsCopy.fr,
+  gallery: galleryCopy.fr,
+  generatedImages: generatedImagesCopy.fr,
   atlas: atlasCopy.fr,
   ...commonCopy.fr,
   chrome: chromeCopy.fr,
@@ -111,6 +122,7 @@ const fr: UiDictionary = {
   patronymes: patronymesCopy.fr,
   migrations: migrationsCopy.fr,
   colonization: colonizationCopy.fr,
+  discoveries: discoveriesCopy.fr,
   quiz: quizCopy.fr,
   reports: reportsCopy.fr,
   sourceTransparency: sourceTransparencyCopy.fr,

@@ -11,7 +11,7 @@ interface Classification {
   id: string;
   primaryTheme: DossierThemeId;
   secondaryThemes: DossierThemeId[];
-  format: "dossier" | "anecdote";
+  format: "dossier" | "anecdote" | "proverb";
   summary: string;
 }
 
@@ -86,6 +86,14 @@ const CLASSIFICATIONS: Classification[] = [
     summary: "Des histoires courtes et sourcées autour des noms d'Afrique.",
   },
   {
+    id: "proverbes",
+    primaryTheme: "langues",
+    secondaryThemes: ["noms"],
+    format: "proverb",
+    summary:
+      "Des proverbes d'Afrique et le peuple qui les dit, quand une source le nomme.",
+  },
+  {
     id: "frise",
     primaryTheme: "migrations",
     secondaryThemes: [],
@@ -129,6 +137,11 @@ const ENGLISH_COPY: Record<string, { title: string; summary: string }> = {
   anecdotes: {
     title: "Anecdotes",
     summary: "Short, sourced stories about names in Africa.",
+  },
+  proverbes: {
+    title: "Proverbs",
+    summary:
+      "Proverbs from Africa and the people who say them, where a source names them.",
   },
   frise: {
     title: "First migration landmarks",

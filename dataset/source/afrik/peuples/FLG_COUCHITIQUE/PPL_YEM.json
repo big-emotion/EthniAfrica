@@ -85,12 +85,17 @@
       {
         "title": "Hebo: New Year Ritual of Yem People in South West Ethiopia – International Journal of Multidisciplinary and Current Research, 2019",
         "url": "https://ijmmu.com/index.php/ijmmu/article/download/1207/898",
-        "tier": "needs_review"
+        "tier": "unverified"
       },
       {
         "title": "The Yem people – The Tribal Society, 2025",
         "url": "https://thetribalsociety.com/the-yem-people/",
         "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Yemsa (yems1235)",
+        "url": "https://glottolog.org/resource/languoid/id/yems1235",
+        "tier": "official"
       }
     ]
   },

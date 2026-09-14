@@ -197,6 +197,12 @@
         "title": "UNFPA – World Population Dashboard — Zimbabwe",
         "url": "https://www.unfpa.org/data/world-population/ZW",
         "tier": "official"
+      },
+      {
+        "title": "UNESCO World Heritage Centre – Great Zimbabwe National Monument",
+        "url": "https://whc.unesco.org/en/list/364/",
+        "tier": "official",
+        "notes": "Bien inscrit sur la Liste du patrimoine mondial en 1986 ; la synthèse de sa valeur universelle exceptionnelle le date de 1100 à 1450 de notre ère."
       }
     ],
     "demographics": {

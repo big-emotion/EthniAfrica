@@ -32,12 +32,11 @@ const GLOBE_SURFACE_NAME = /(Globe|Carte) de l'atlas\./;
 const MORPH_NAME = "Morphing de la carte plate vers le globe";
 
 async function expectNoSeriousOrCriticalViolations(page: Page) {
-  // Audit the page at rest, not mid-arrival. The « Saviez-vous » card fades in
-  // over `home-dyk-arrive` (220ms, 80ms delay), and axe resolves a colour
-  // through the element's opacity: caught part-way, its `--afh-text-soft` ink
-  // reads #7e7062 against the warm ground for 4.12:1 and a serious
-  // colour-contrast violation, where the settled #746557 gives 4.83:1 and
-  // passes. The animation is not the defect — auditing a frame of it is.
+  // Audit the page at rest, not mid-arrival. Axe resolves a colour through an
+  // element's opacity, so a fade caught part-way reads as a contrast failure
+  // the settled page does not have: the retired « Saviez-vous » band's arrival
+  // put its `--afh-text-soft` ink at 4.12:1 mid-fade against 4.83:1 at rest.
+  // The animation is not the defect — auditing a frame of it is.
   // Only the animations that intend to end: the stage keeps looping ones of
   // its own, and waiting on those would hang until the timeout on every run.
   await page

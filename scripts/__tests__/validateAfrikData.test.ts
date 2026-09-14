@@ -39,6 +39,7 @@ import {
   checkTranslationSidecars,
   OFF_MAP_COUNTRIES,
   checkSourceIdentity,
+  checkRetiredCiaFactbookUrls,
   AFRICAN_REFERENCE_COUNTRY_CODES,
 } from "../validateAfrikData";
 
@@ -1866,6 +1867,143 @@ describe("validateAfrikData – new integrity checks", () => {
       expect(result.ok).toBe(true);
       expect(result.errors).toHaveLength(0);
       expect(result.warnings).toHaveLength(0);
+    });
+  });
+
+  describe("checkRetiredCiaFactbookUrls", () => {
+    const LIVE = "https://www.cia.gov/the-world-factbook/countries/lesotho/";
+    const citing = (...sources: Array<Record<string, unknown>>) => ({
+      content: {
+        languages: { isoCodes: ["sot"] },
+        demography: {
+          distributionByCountry: [{ country: "LSO", population: 2000000 }],
+        },
+        sources,
+      },
+    });
+
+    // @req REQ-092
+    it("passes when the live Factbook locators sit exactly on the ceiling", () => {
+      writePPL(
+        tmpDir,
+        "FLG_BANTU",
+        "PPL_SOTHO",
+        citing(
+          {
+            title: "CIA World Factbook – Lesotho",
+            url: LIVE,
+            tier: "official",
+          },
+          {
+            title: "CIA Reading Room — Southern Yemen (Aden): The Society",
+            url: "https://www.cia.gov/readingroom/docs/CIA-RDP01-00707R000200100018-6.pdf",
+            tier: "official",
+          }
+        )
+      );
+
+      expect(checkRetiredCiaFactbookUrls(tmpDir, 1)).toMatchObject({
+        ok: true,
+        errors: [],
+      });
+    });
+
+    // @req REQ-092
+    it("fails above the ceiling and names the fiche and the source", () => {
+      writePPL(
+        tmpDir,
+        "FLG_BANTU",
+        "PPL_SOTHO",
+        citing({
+          title: "CIA World Factbook – Lesotho",
+          url: LIVE,
+          tier: "official",
+        })
+      );
+      writePPL(
+        tmpDir,
+        "FLG_BANTU",
+        "PPL_ZULU",
+        citing({
+          title: "CIA World Factbook – South Africa",
+          url: "https://www.cia.gov/the-world-factbook/countries/south-africa/",
+          tier: "official",
+        })
+      );
+
+      const result = checkRetiredCiaFactbookUrls(tmpDir, 1);
+
+      expect(result.ok).toBe(false);
+      expect(result.errors).toContainEqual(
+        expect.stringContaining("rose to 2")
+      );
+      expect(result.errors).toContainEqual(
+        expect.stringMatching(
+          /PPL_ZULU\.json.*CIA World Factbook – South Africa.*countries\/south-africa/
+        )
+      );
+    });
+
+    // @req REQ-092
+    it("fails below the ceiling and names the line to change", () => {
+      writePPL(
+        tmpDir,
+        "FLG_BANTU",
+        "PPL_SOTHO",
+        citing({
+          title: "CIA World Factbook – Lesotho",
+          url: LIVE,
+          tier: "official",
+        })
+      );
+
+      const result = checkRetiredCiaFactbookUrls(tmpDir, 2);
+
+      expect(result.ok).toBe(false);
+      expect(result.errors).toContainEqual(
+        expect.stringContaining(
+          "lower RETIRED_CIA_FACTBOOK_URL_CEILING to 1 in the same change"
+        )
+      );
+    });
+
+    // @req REQ-092
+    it("does not count a dated Wayback Machine snapshot of a Factbook page", () => {
+      writePPL(
+        tmpDir,
+        "FLG_BANTU",
+        "PPL_SOTHO",
+        citing({
+          title: "CIA World Factbook – Lesotho (2026-01-19 snapshot)",
+          url: `https://web.archive.org/web/20260119000000/${LIVE}`,
+          tier: "official",
+          notes: `Archived copy of ${LIVE}, captured before the Factbook was sunset.`,
+        })
+      );
+
+      expect(checkRetiredCiaFactbookUrls(tmpDir, 0)).toMatchObject({
+        ok: true,
+        errors: [],
+      });
+    });
+
+    // @req REQ-092
+    it("counts a live Factbook address held in a title when the url is empty", () => {
+      writePPL(
+        tmpDir,
+        "FLG_BERBERE",
+        "PPL_KABYLE",
+        citing({
+          title: "www.cia.gov/the-world-factbook/countries/algeria",
+          url: null,
+          tier: "needs_review",
+        })
+      );
+
+      expect(checkRetiredCiaFactbookUrls(tmpDir, 1)).toMatchObject({
+        ok: true,
+        errors: [],
+      });
     });
   });
 

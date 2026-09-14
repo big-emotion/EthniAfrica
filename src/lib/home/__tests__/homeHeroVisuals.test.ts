@@ -11,24 +11,22 @@ function sequence(...values: number[]): () => number {
 }
 
 describe("drawHomeHeroVisual", () => {
+  // Three kinds, no rule between them: the globe used to own half the draw
+  // and the images shared the other half. An anecdote is now a third outcome
+  // of the same roll, so no kind is the default a visitor mostly sees.
   // @req REQ-115
-  it("uses the lower half of the random draw for the globe", () => {
+  it("gives the globe, an image and an anecdote one third of the draw each", () => {
     expect(drawHomeHeroVisual(() => 0)).toEqual({ kind: "globe" });
-    expect(drawHomeHeroVisual(() => 0.5 - Number.EPSILON)).toEqual({
+    expect(drawHomeHeroVisual(() => 1 / 3 - Number.EPSILON)).toEqual({
       kind: "globe",
     });
-  });
-
-  // @req REQ-115
-  it("uses the upper half of the random draw for an image", () => {
-    expect(drawHomeHeroVisual(sequence(0.5, 0))).toEqual({
+    expect(drawHomeHeroVisual(sequence(1 / 3, 0))).toEqual({
       kind: "image",
       image: HOME_HERO_IMAGES[0],
     });
-    expect(drawHomeHeroVisual(sequence(0.999999, 0.999999))).toEqual({
-      kind: "image",
-      image: HOME_HERO_IMAGES.at(-1),
-    });
+    expect(drawHomeHeroVisual(() => 2 / 3 - Number.EPSILON).kind).toBe("image");
+    expect(drawHomeHeroVisual(() => 2 / 3)).toEqual({ kind: "anecdote" });
+    expect(drawHomeHeroVisual(() => 0.999999)).toEqual({ kind: "anecdote" });
   });
 
   // @req REQ-115

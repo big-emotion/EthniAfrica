@@ -18,6 +18,16 @@ corpus : lis `etat-du-pipeline.md`, qui vit dans la bibliothèque de production,
 pour ne pas reproposer un sujet déjà en cours, puis cherche dans le corpus ce qui
 est richement documenté et jamais publié.
 
+Avant de proposer un sujet, lance
+`node social/tools/etat-pipeline/bilan-sujets.mjs <sujet>`. Un sujet déjà publié
+dans le format visé ne se repropose pas sans un angle nouveau, dit dans le
+rapport. Un sujet publié dans un seul format est une bonne idée à bas coût :
+propose l'autre format, les sources sont déjà vérifiées.
+
+Deux types de contenu arrivent, **les anecdotes et les proverbes**. Ils ne sont
+pas encore sur le site et la chaîne n'a pas leur gabarit : un sujet de ce type se
+note comme idée, avec cette réserve écrite.
+
 ## Sortie
 
 Un fichier unique : `$ETHNIAFRICA_SOCIAL_PROJECTS/_idees/{slug}.md`.

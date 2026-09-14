@@ -1,5 +1,5 @@
 /**
- * The three network marks, drawn here rather than imported.
+ * The social network marks, drawn here rather than imported.
  *
  * lucide-react shipped `Facebook`, `Linkedin` and `Instagram` until v1, which
  * dropped every brand icon — the package this repo is on exports none of
@@ -73,6 +73,16 @@ export function YoutubeGlyph({ className }: SocialGlyphProps) {
     <svg {...GLYPH_PROPS} className={className}>
       <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
       <path d="m10 15 5-3-5-3z" />
+    </svg>
+  );
+}
+
+// @req REQ-160
+export function WhatsAppGlyph({ className }: SocialGlyphProps) {
+  return (
+    <svg {...GLYPH_PROPS} className={className}>
+      <path d="M20.2 11.5a8.3 8.3 0 0 1-12.1 7.3L3 20l1.4-4.9a8.3 8.3 0 1 1 15.8-3.6z" />
+      <path d="M8.1 7.8c-.4.3-.8 1-.8 1.5 0 2.6 3.4 6 5.9 6 .7 0 1.4-.4 1.7-.9l.5-.9-2.2-1.1-.9 1c-1.1-.4-2.2-1.5-2.7-2.6l1-1-1.1-2.3z" />
     </svg>
   );
 }

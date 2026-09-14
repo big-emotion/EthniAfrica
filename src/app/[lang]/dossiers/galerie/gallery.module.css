@@ -1,0 +1,86 @@
+/* Two columns from the narrowest phone: at 320 px a tile is still about
+   140 px wide, enough to recognise a portrait, and a single column would turn
+   a browsing view back into the feed it sits beside. */
+.collection + .collection {
+  margin-top: var(--afh-space-2xl);
+}
+
+.collectionTitle {
+  margin: 0 0 var(--afh-space-md);
+  font-family: var(--afh-font-display);
+  font-size: var(--afh-text-h3);
+  line-height: 1.25;
+  color: var(--afh-text);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--afh-space-md);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-space-sm);
+  color: var(--afh-text);
+  text-decoration: none;
+}
+
+.tile:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: var(--afh-radius-md);
+}
+
+.frame {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: var(--afh-radius-md);
+  background: var(--afh-surface);
+}
+
+.image {
+  object-fit: cover;
+}
+
+/* Over the picture rather than under it: the label must be read with the
+   image, not after it. The badge carries its own ground (see its module). */
+.badge {
+  position: absolute;
+  left: var(--afh-space-sm);
+  bottom: var(--afh-space-sm);
+}
+
+.title {
+  font-family: var(--afh-font-body);
+  font-size: var(--afh-text-small);
+  line-height: 1.35;
+}
+
+.tile:hover .title {
+  text-decoration: underline;
+}
+
+.empty {
+  color: var(--afh-fg-muted);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--afh-space-lg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

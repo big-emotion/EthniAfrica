@@ -177,7 +177,7 @@ one tool that files folders onto the library's own shelves.
 
 ### Publishing — the audience, the plan, the video
 
-The publishing chain runs in one order, and **all six of its skills live here**,
+The publishing chain runs in one order, and **all eight of its skills live here**,
 under their `ethniafrica-` names. They left for the private workspace on
 2026-09-10, on the rule that a public repository carries no production skills, and
 came back on 2026-09-11 when that rule was reversed: an engine and a chain whose
@@ -186,8 +186,10 @@ come back is the **output** — see `social/` below.
 
 ```
 audience-audit → content-strategist → idee → structure → produire → (fin)
-   la mesure        quoi publier                                      ↓
+ site + réseaux     quoi publier                  porte : message ↑     ↓
                                                     publication : acte humain
+
+reseaux-help — à tout moment : où j'en suis, doublons, prochain geste
 ```
 
 - **Measure before planning — `/ethniafrica-audience-audit`.** It writes one
@@ -205,6 +207,19 @@ audience-audit → content-strategist → idee → structure → produire → (f
   then the render. **Nothing comes after `produire`**: the operator posts, then
   fills the Diffusion section of the subject's `post.md`. No skill publishes and
   no skill schedules — do not invent a fourth step.
+- **The message gate — `/ethniafrica-message`.** Not a fourth step: `produire`
+  launches it before rendering, and a production whose message does not pass
+  renders as a proof only. It scores videos, carousels and site pages against
+  the doctrine in `docs/editorial/purpose-doctrine.md`, the About page's
+  `purposeChapter` and GABARITS-SOCIAL §7 ter, because the 2026-09-13 message
+  audit (`docs/audience/message/`) found that doctrine in two productions out of
+  twenty-seven while all of them had passed the four render gates.
+- **Where am I — `/ethniafrica-reseaux-help`.** Reads the pipeline state and
+  `social/tools/etat-pipeline/bilan-sujets.mjs`, flags a validated post whose
+  subject is already published in the same format, and names one next move.
+- **Anecdotes and proverbs are coming** as content types. Neither is on the site
+  nor has a template yet; the chain notes such a subject as an idea until one
+  exists.
 
 The first two are optional and upstream; `idee` can start without them. But a
 plan written without the measurement is a plan written to taste.
@@ -329,9 +344,18 @@ label all say the same thing:
 
 | Identifier (code + DB) | Label (UI)       | Confidence weight | What it covers                                                                                  |
 | ---------------------- | ---------------- | ----------------- | ----------------------------------------------------------------------------------------------- |
-| `official`             | **Officielle**   | 1.0               | UN, UNFPA, CIA, SIL Ethnologue, Glottolog, UNESCO, IWGIA, national statistics institutes        |
+| `official`             | **Officielle**   | 1.0               | UN, UNFPA, SIL Ethnologue, Glottolog, UNESCO, IWGIA, national statistics institutes             |
 | `referenced`           | **Référencée**   | 0.7               | Published, identifiable, verifiable work — academic, press, books. Not necessarily official     |
 | `unverified`           | **Non vérifiée** | 0.4               | Aggregators, tertiary encyclopedias, blogs, social media, community accounts, AI-generated text |
+
+**The CIA World Factbook was sunset on 2026-02-04** (<https://www.cia.gov/the-world-factbook/>);
+its country URLs now redirect to that farewell page. An existing citation keeps its tier — an edition
+is still an official, dated publication — but its locator must become a dated Wayback Machine
+snapshot taken before that day, or the claim is re-sourced (UN, UNFPA, a national statistics
+institute). A mirror such as OpenFactbook is an aggregator, at `unverified`. A live
+`cia.gov/the-world-factbook` URL is never added as a new source: `RETIRED_CIA_FACTBOOK_URL_CEILING`
+in `validateAfrikData.ts` holds the ones still standing, and fails in both directions. Prior art:
+`AUDIT-CIA-FACTBOOK-RETIREMENT-2026` in `docs/editorial/country-enrichment/COD-source-review.json`.
 
 This supersedes the earlier Tier 1/2/3 policy, under which Tier 3 was forbidden and an uncitable
 claim was deleted. It also settles the aggregator question (Joshua Project, 101lasttribes,
@@ -364,6 +388,17 @@ END
 which reproduces the retired `ai-enriched` weight of 0.2 exactly. The UI keeps the distinction
 visible: the **Non vérifiée** badge plus an AI provenance marker driven by `source_kind`, never by
 the tier.
+
+DEC-052 makes a narrow exception for people names. `oral_tradition` and
+`ethniafrica_synthesis` both retain `tier: "unverified"`, but their source-quality
+weights are fixed by provenance at 0.6 and 0.3 respectively. These values **replace**
+the tier weight; they are not coefficients. An oral source qualifies a people name
+only through an approved, rights-cleared narrative linked to that people, and one
+such narrative is sufficient. The synthesis may qualify a people name on its own.
+Narratives with the same opaque `carrier_ref` count once in the source-count part
+of confidence. Patronyme and other name gates remain unchanged. This is a scoped
+exception to REQ-095 for the provenance of a people's name, not a change to how
+oral accounts support other assertions.
 
 A fiche sourced only at `unverified` is published and visibly marked low-confidence through
 `ConfidenceChip`. That is the intended outcome, not a defect to fix.

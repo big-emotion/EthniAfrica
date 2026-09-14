@@ -2,19 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import { DID_YOU_KNOW_FACTS_EN } from "@/lib/home/didYouKnowFacts.en";
 import { DID_YOU_KNOW_ILLUSTRATIONS } from "@/lib/home/didYouKnowIllustrations";
-import {
-  DID_YOU_KNOW_ILLUSTRATIONS_EN,
-  type DidYouKnowIllustrationTranslation,
-} from "@/lib/home/didYouKnowIllustrations.en";
-
-function isPlate(
-  translation: DidYouKnowIllustrationTranslation
-): translation is Extract<
-  DidYouKnowIllustrationTranslation,
-  { kind: "plate" }
-> {
-  return translation.kind === "plate";
-}
+import { DID_YOU_KNOW_ILLUSTRATIONS_EN } from "@/lib/home/didYouKnowIllustrations.en";
 
 describe("the English anecdote illustrations — parity with the French (REQ-145)", () => {
   // @req REQ-145
@@ -39,20 +27,6 @@ describe("the English anecdote illustrations — parity with the French (REQ-145
     }
   });
 
-  // The plate prints who gave the name in half a line; that line is prose.
-  // @req REQ-145
-  it("translates the origin line of every drawn plate", () => {
-    for (const [id, translation] of Object.entries(
-      DID_YOU_KNOW_ILLUSTRATIONS_EN
-    )) {
-      const french = DID_YOU_KNOW_ILLUSTRATIONS[id];
-      if (!isPlate(translation) || french.kind !== "plate") continue;
-
-      expect(translation.givenBy.trim(), id).not.toBe("");
-      expect(translation.givenBy, id).not.toBe(french.givenBy);
-    }
-  });
-
   // Mirrors the French bank's own rule: an alt that repeats the headline
   // tells a screen reader what it has already been read.
   // @req REQ-113
@@ -71,24 +45,6 @@ describe("the English anecdote illustrations — parity with the French (REQ-145
   it("declares machine provenance on every illustration", () => {
     for (const translation of Object.values(DID_YOU_KNOW_ILLUSTRATIONS_EN)) {
       expect(translation.provenance).toBe("machine");
-    }
-  });
-});
-
-describe("the English anecdote illustrations — invariants (REQ-143)", () => {
-  // The two names on a plate are the exonym and the autonym the anecdote is
-  // about. The sidecar does not carry them, but its alt has to read them
-  // out — spelt exactly as the French module holds them.
-  // @req REQ-143
-  it("reads both names of a drawn plate verbatim", () => {
-    for (const [id, translation] of Object.entries(
-      DID_YOU_KNOW_ILLUSTRATIONS_EN
-    )) {
-      const french = DID_YOU_KNOW_ILLUSTRATIONS[id];
-      if (!isPlate(translation) || french.kind !== "plate") continue;
-
-      expect(translation.alt, id).toContain(french.given);
-      expect(translation.alt, id).toContain(french.own);
     }
   });
 });

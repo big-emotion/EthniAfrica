@@ -25,6 +25,9 @@ export const TRAIL_PAGE_LABELS: Record<Language, Record<PageType, string>> = {
     about: "About",
     sources: "Sources",
     anecdotes: "Anecdotes",
+    proverbs: "Proverbs",
+    gallery: "Gallery",
+    discoveries: "Discoveries",
     // The ethnonym index. "Names" is taken by the patronyme, the way « Noms »
     // is in French (DEC-038), so this crumb says what the page holds.
     names: "Ethnonyms",
@@ -62,6 +65,9 @@ export const TRAIL_PAGE_LABELS: Record<Language, Record<PageType, string>> = {
     about: "À propos",
     sources: "Sources",
     anecdotes: "Anecdotes",
+    proverbs: "Proverbes",
+    gallery: "Galerie",
+    discoveries: "Découvertes",
     names: "Appellations",
     // The public word DEC-038 gives the patronyme, which is why the trail
     // reads "nom" where the code says `patronymes`. Plural because the crumb

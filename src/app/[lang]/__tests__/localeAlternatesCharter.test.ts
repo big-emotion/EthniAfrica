@@ -147,11 +147,16 @@ type Expectation =
   | { surface: IndexedSurface }
   // Indexed once a translation record exists for the entity — none today.
   | { surface: "fiche" }
+  // A localized publication whose English editorial review is pending.
+  | { surface: "fr-only" }
   // Indexed in no locale: canonical only.
   | { surface: "unindexed" };
 
 interface RouteFixture {
   params?: Record<string, string | string[]>;
+  paramsByLanguage?: Partial<
+    Record<Language, Record<string, string | string[]>>
+  >;
   searchParams?: Record<string, string>;
   expectation: Expectation;
 }
@@ -200,6 +205,13 @@ const FIXTURES: Record<string, RouteFixture> = {
     params: { entityType: "peuples", ids: ["PPL_YORUBA", "PPL_ZULU"] },
     expectation: { surface: "unindexed" },
   },
+  "decouvertes/[[...publication]]": {
+    paramsByLanguage: {
+      fr: { publication: ["burkina-faso-trois-langues"] },
+      en: { publication: ["burkina-faso-three-languages"] },
+    },
+    expectation: { surface: "fr-only" },
+  },
   contact: { expectation: { surface: "contact" } },
   contribute: { expectation: { surface: "contribute" } },
   doctrine: { expectation: { surface: "doctrine" } },
@@ -213,6 +225,8 @@ const FIXTURES: Record<string, RouteFixture> = {
     expectation: { surface: "dossierKongo" },
   },
   "dossiers/anecdotes": { expectation: { surface: "anecdotes" } },
+  "dossiers/proverbes": { expectation: { surface: "proverbs" } },
+  "dossiers/galerie": { expectation: { surface: "gallery" } },
   "dossiers/migrations": { expectation: { surface: "migrations" } },
   "dossiers/nommer": { expectation: { surface: "nommer" } },
   "dossiers/nommer/la-chose": { expectation: { surface: "nommer" } },
@@ -305,7 +319,11 @@ async function headOf(route: string, lang: Language) {
   ).toBe("function");
 
   return routeModule.generateMetadata({
-    params: Promise.resolve({ lang, ...fixture.params }),
+    params: Promise.resolve({
+      lang,
+      ...fixture.params,
+      ...fixture.paramsByLanguage?.[lang],
+    }),
     searchParams: Promise.resolve(fixture.searchParams ?? {}),
   });
 }
@@ -313,7 +331,8 @@ async function headOf(route: string, lang: Language) {
 /** The locales the expectation says the page is indexed in. */
 function indexedLocalesOf(expectation: Expectation): Language[] {
   if (expectation.surface === "unindexed") return [];
-  if (expectation.surface === "fiche") return ["fr"];
+  if (expectation.surface === "fiche" || expectation.surface === "fr-only")
+    return ["fr"];
   return surfaceIndexedLocales(expectation.surface);
 }
 

@@ -78,7 +78,8 @@ export const DEAD_CODE_CEILINGS: Readonly<Record<DeadCodeCategory, number>> = {
   // handful of helpers left behind by removed callers. What remains is eight
   // shadcn sub-components kept as library surface, and one overlay reader
   // (`getAfricaAdmin0Rings`) whose only caller was the removed Mercator stage.
-  exports: 9,
+  // 9 -> 8 after the Découvertes implementation made another retained export live.
+  exports: 8,
   // 50 -> 49 when the bilingual glossary's vocabulary file started keying
   // the patronyme labels by `PatronymeNameSystem`, which the parsers file
   // exported and nothing read.

@@ -582,6 +582,42 @@ export const MODULE_DEFINITIONS: HubModuleDefinition[] = [
     // opened on. The chip still sends a reader to the game itself.
     heroable: "globe",
   },
+  // A second bank rendered from code, `static` and `ready` for the anecdotes'
+  // reasons, and filed beside them under names: every entry is attributed to
+  // the people or language that says it, or states that no source names one.
+  //
+  // Declared last rather than after `anecdotes` because accents are walked by
+  // position (`accentForModule`): an insertion mid-list would repaint the four
+  // modules after it. Shelves are filtered by group, so it still sits second
+  // in the Noms rubric.
+  {
+    id: "proverbes",
+    group: "dossiers-noms",
+    name: "Proverbes",
+    accessMode: "dossiers",
+    page: "proverbs",
+    availability: "static",
+    editorialReadiness: "ready",
+  },
+  // The generated images of Découvertes, shelved by collection (REQ-167). A
+  // view over the feed's own catalogue rather than a bank of its own, filed
+  // under names because two of its three collections are autonyms and the
+  // people behind them. Appended last for the accent walk, like `proverbes`.
+  //
+  // `ready` since the first twelve images were entered, each with a verified
+  // subject source and its derived files committed. It was `draft` until
+  // then, because an open gallery listing nothing promises what it does not
+  // hold; the route came off the withdrawn lists in `frozenRoutes`, the
+  // locale-alternates charter and `dossiersFreezeReach` in the same change.
+  {
+    id: "galerie",
+    group: "dossiers-noms",
+    name: "Galerie",
+    accessMode: "dossiers",
+    page: "gallery",
+    availability: "static",
+    editorialReadiness: "ready",
+  },
 ];
 
 // @req REQ-114

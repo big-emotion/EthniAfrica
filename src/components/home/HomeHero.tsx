@@ -1,22 +1,29 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { ContinentGlobeStage } from "@/components/atlas/ContinentGlobeStage";
 import { PRODUCT_NAME } from "@/lib/brand";
 import type { CorpusCounts } from "@/lib/home/corpusCounts";
 import type { HomeHeroVisual } from "@/lib/home/homeHeroVisuals";
 import type { SeedWordsByKind } from "@/lib/home/seedWords";
+import { homePurposeCopy } from "@/lib/i18n/copy/homePurpose";
+import { getLocalizedRoute } from "@/lib/routing";
 import type { Language } from "@/types/shared";
 
 import { HomeCorpusCounts } from "./HomeCorpusCounts";
+import { HomeHeroAnecdote } from "./HomeHeroAnecdote";
 import { HomeHeroSearch } from "./HomeHeroSearch";
 
 /**
- * The search-first opening band (REQ-115, ETNI-1404).
+ * The search-first opening band (REQ-115, ETNI-1404), and since 2026-09-13 the
+ * whole of the home: the « Saviez-vous » band that followed it is retired, and
+ * its anecdote is one of the three visuals the band draws.
  *
- * Reading order stays stable across widths: question and primary search,
- * then drawn visual. At desktop the grid places the copy in the left column
- * while the visual occupies the right; CSS never changes the accessible
- * order.
+ * Reading order stays stable across widths: question, purpose and primary
+ * search, then the drawn visual. At desktop the grid places the copy on the
+ * left and the visual on the right, on every request (operator ruling,
+ * 2026-09-14: the side used to be tossed, which moved the search from one
+ * visit to the next); CSS never changes the accessible order.
  */
 export interface HomeHeroProps {
   language: Language;
@@ -47,6 +54,8 @@ export function HomeHero({
   counts = null,
   visual = { kind: "globe" },
 }: HomeHeroProps) {
+  const purpose = homePurposeCopy[language];
+
   return (
     <section
       // Landmark label dropped during the light-parchment swap (ETNI-820,
@@ -102,6 +111,35 @@ export function HomeHero({
               "l'atlas libre des peuples d'Afrique, sources à l'appui."}
           </p>
 
+          {/* What the atlas is for, in the two sentences the social series
+              opens and closes on (docs/editorial/purpose-doctrine.md). Closed:
+              the band's job is still the search. A native <details>, so the
+              answer opens with no script, and a link to the About chapter
+              that labels both sentences as the project's position. */}
+          <details
+            className="home-hero-purpose"
+            data-testid="home-hero-purpose"
+          >
+            <summary>{purpose.toggle}</summary>
+            <div className="home-hero-purpose-panel">
+              {purpose.sentences.map((sentence) => (
+                <p
+                  key={sentence}
+                  className="home-hero-purpose-sentence"
+                  data-testid="home-hero-purpose-sentence"
+                >
+                  {sentence}
+                </p>
+              ))}
+              <Link
+                className="home-hero-purpose-link"
+                href={`${getLocalizedRoute(language, "about")}#about-purpose-title`}
+              >
+                {purpose.linkLabel}
+              </Link>
+            </div>
+          </details>
+
           {/* Search is the band's primary action; seed words keep its three
               corpus entry types visible before the reader starts typing. */}
           <HomeHeroSearch language={language} seedWords={seedWords} />
@@ -126,7 +164,8 @@ export function HomeHero({
               presentation="hero"
               autoRotate
             />
-          ) : (
+          ) : null}
+          {visual.kind === "image" ? (
             <figure className="home-hero-figure" data-testid="home-hero-figure">
               <div className="home-hero-image-frame">
                 <Image
@@ -140,7 +179,10 @@ export function HomeHero({
               </div>
               <figcaption>{visual.image.credit}</figcaption>
             </figure>
-          )}
+          ) : null}
+          {visual.kind === "anecdote" ? (
+            <HomeHeroAnecdote language={language} fact={visual.fact} />
+          ) : null}
         </div>
       </div>
 
@@ -203,17 +245,89 @@ export function HomeHero({
            a single class, so an element rule would silently override
            whatever the answer sets for itself.
 
-           Reading size and full ink, because this is now the band's only
-           prose. At the retired lede's smaller, softer grey it would read
-           as a caption under the headline rather than as its answer. No
-           rule above it either — the hairline separated a standfirst from
-           a lede, and neither is here now. */
+           Reading size and full ink, because this is the band's prose. At
+           the retired lede's smaller, softer grey it would read as a caption
+           under the headline rather than as its answer. No rule above it
+           either — the hairline separated a standfirst from a lede, and
+           neither is here now. */
         .home-hero-answer {
           margin: 0 auto;
           max-width: 52ch;
           font-size: var(--afh-text-body);
           line-height: var(--afh-leading-body);
           color: var(--afh-text);
+        }
+
+        /* A quiet control rather than a second argument: small, soft ink,
+           an ocre underline that says it opens something. The disclosure
+           marker is redrawn as a chevron so it turns with the state instead
+           of the browser's triangle, which sits on the baseline at a
+           different size in every engine. */
+        .home-hero-purpose {
+          max-width: 52ch;
+          margin: var(--afh-space-sm) auto 0;
+        }
+        .home-hero-purpose summary {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          min-height: 44px;
+          cursor: pointer;
+          list-style: none;
+          font-size: var(--afh-text-small);
+          font-weight: 600;
+          color: var(--afh-text-soft);
+          text-decoration: underline;
+          text-decoration-color: var(--afh-cat-ocre);
+          text-underline-offset: 4px;
+        }
+        .home-hero-purpose summary::-webkit-details-marker {
+          display: none;
+        }
+        .home-hero-purpose summary::after {
+          content: "";
+          width: 7px;
+          height: 7px;
+          border-right: 1.5px solid currentColor;
+          border-bottom: 1.5px solid currentColor;
+          transform: translateY(-2px) rotate(45deg);
+          transition: transform 160ms ease-out;
+        }
+        .home-hero-purpose[open] summary::after {
+          transform: translateY(2px) rotate(-135deg);
+        }
+        .home-hero-purpose summary:hover,
+        .home-hero-purpose summary:focus-visible {
+          color: var(--afh-text);
+        }
+        .home-hero-purpose-panel {
+          padding-block: var(--afh-space-xs) var(--afh-space-sm);
+        }
+        .home-hero-purpose-sentence {
+          margin: 0 0 var(--afh-space-xs);
+          font-family: var(--afh-font-display);
+          font-size: var(--afh-text-lead);
+          line-height: 1.35;
+          color: var(--afh-text);
+          text-wrap: balance;
+        }
+        .home-hero-purpose-link {
+          display: inline-flex;
+          align-items: center;
+          min-height: 44px;
+          font-size: var(--afh-text-small);
+          font-weight: 600;
+          color: var(--afh-text-soft);
+          text-underline-offset: 4px;
+        }
+        .home-hero-purpose-link:hover,
+        .home-hero-purpose-link:focus-visible {
+          color: var(--afh-text);
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .home-hero-purpose summary::after {
+            transition: none;
+          }
         }
 
         /* The tile band, under the search rather than under the prose.
@@ -319,7 +433,12 @@ export function HomeHero({
                ceiling and not a floor. */
             grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
             grid-template-areas: "copy globe";
-            align-items: center;
+            /* Topped, never centred (operator ruling, 2026-09-14). Centred,
+               the visual recentred whenever the copy column changed height:
+               opening « Notre propos » slid it down under the reader's click,
+               and a whole anecdote left a screen of parchment above the
+               question. */
+            align-items: start;
             column-gap: 48px;
             row-gap: 20px;
             padding-block: 40px;
@@ -341,7 +460,8 @@ export function HomeHero({
              a second left edge inside one block, which §8.1 of the brand
              charter counts as a defect. The tile band makes the same switch
              for itself, in its own file, at this same width. */
-          .home-hero-answer {
+          .home-hero-answer,
+          .home-hero-purpose {
             margin-inline: 0;
           }
           .home-hero-globe .home-globe-stage {

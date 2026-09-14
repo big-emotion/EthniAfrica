@@ -28,7 +28,7 @@ export const CHAPITRE_LA_LANGUE_EN: DossierChapterTranslation = {
       heading: "A word coined in an office, in 1862",
       blocks: {
         "un-nom-sans-locuteurs":
-          "The atlas files its 775 peoples under twenty-four language families. The largest bears a name that has no speakers: nobody ever called themselves ‘Bantu’ before a linguist wrote it down.",
+          "The atlas files its 776 peoples under twenty-four language families. The largest bears a name that has no speakers: nobody ever called themselves ‘Bantu’ before a linguist wrote it down.",
         "bleek-et-abantu":
           "The word is coined in 1862 by Wilhelm Bleek, in his Comparative Grammar of South African Languages. He takes the Zulu abantu, ‘the people’ — ba-, the human plural prefix, and -ntu, the person — and makes it a label of classification. The gesture is ordinary in nineteenth-century comparative philology; what is less so is the place.",
         "bleek-dans-ladministration":

@@ -20,7 +20,7 @@ function KoraPattern({ id }: PatternProps) {
     >
       {/* Mandinka kora: long neck, twin hand posts and calabash resonator. */}
       <g
-        className="home-dyk-motif-mark"
+        className="anecdote-motif-mark"
         transform="translate(24 18) scale(.72)"
       >
         <path d="M42 96V8M34 96V36M50 96V36" />
@@ -29,7 +29,7 @@ function KoraPattern({ id }: PatternProps) {
         <path d="M25 70c4 8 4 41 0 48M59 70c-4 8-4 41 0 48M36 78h12v34H36z" />
       </g>
       <g
-        className="home-dyk-motif-mark"
+        className="anecdote-motif-mark"
         transform="translate(162 145) scale(.92) rotate(7 42 66)"
       >
         <path d="M42 96V8M34 96V36M50 96V36" />
@@ -38,7 +38,7 @@ function KoraPattern({ id }: PatternProps) {
         <path d="M25 70c4 8 4 41 0 48M59 70c-4 8-4 41 0 48M36 78h12v34H36z" />
       </g>
       <g
-        className="home-dyk-motif-mark"
+        className="anecdote-motif-mark"
         transform="translate(190 -34) scale(.46) rotate(12 42 66)"
       >
         <path d="M42 96V8M34 96V36M50 96V36" />
@@ -62,7 +62,7 @@ function FibulaPattern({ id }: PatternProps) {
     >
       {/* Atlas silver fibula: ring, triangular plate and cloak pin. */}
       <g
-        className="home-dyk-motif-mark"
+        className="anecdote-motif-mark"
         transform="translate(26 27) scale(.82)"
       >
         <circle cx="42" cy="24" r="13" />
@@ -72,7 +72,7 @@ function FibulaPattern({ id }: PatternProps) {
         <path d="M42 90v31M36 116l6 9 6-9" />
       </g>
       <g
-        className="home-dyk-motif-mark"
+        className="anecdote-motif-mark"
         transform="translate(164 144) scale(.98) rotate(7 42 67)"
       >
         <circle cx="42" cy="24" r="13" />
@@ -82,7 +82,7 @@ function FibulaPattern({ id }: PatternProps) {
         <path d="M42 90v31M36 116l6 9 6-9" />
       </g>
       <g
-        className="home-dyk-motif-mark"
+        className="anecdote-motif-mark"
         transform="translate(190 -38) scale(.5) rotate(12 42 67)"
       >
         <circle cx="42" cy="24" r="13" />
@@ -107,7 +107,7 @@ function MukudjPattern({ id }: PatternProps) {
     >
       {/* Punu mukudj: high coiffure, oval face and narrow curved eyes. */}
       <g
-        className="home-dyk-motif-mark"
+        className="anecdote-motif-mark"
         transform="translate(28 24) scale(.78)"
       >
         <path d="M21 48c1-21 8-35 21-42 13 7 20 21 21 42" />
@@ -118,7 +118,7 @@ function MukudjPattern({ id }: PatternProps) {
         <path d="m42 42-5 6 5 6 5-6Z" />
       </g>
       <g
-        className="home-dyk-motif-mark"
+        className="anecdote-motif-mark"
         transform="translate(166 142) scale(.92) rotate(7 42 64)"
       >
         <path d="M21 48c1-21 8-35 21-42 13 7 20 21 21 42" />
@@ -129,7 +129,7 @@ function MukudjPattern({ id }: PatternProps) {
         <path d="m42 42-5 6 5 6 5-6Z" />
       </g>
       <g
-        className="home-dyk-motif-mark"
+        className="anecdote-motif-mark"
         transform="translate(194 -42) scale(.46) rotate(12 42 64)"
       >
         <path d="M21 48c1-21 8-35 21-42 13 7 20 21 21 42" />
@@ -143,13 +143,20 @@ function MukudjPattern({ id }: PatternProps) {
   );
 }
 
-/** A culturally specific but non-semantic background for the anecdote band. */
+/**
+ * A culturally specific but non-semantic background for the anecdotes.
+ *
+ * It carries its own dress. It used to borrow it from the home band's
+ * stylesheet, which was fine while the band was its only host; mounted on the
+ * anecdotes page that borrowing would have painted an unsized SVG at full
+ * opacity. The host only has to be positioned and clip its overflow.
+ */
 // @req REQ-115
 export function DidYouKnowMotif({ motif }: DidYouKnowMotifProps) {
-  const patternId = `home-dyk-motif-${motif}`;
+  const patternId = `anecdote-motif-${motif}`;
 
   return (
-    <div className="home-dyk-motif" data-motif={motif} aria-hidden="true">
+    <div className="anecdote-motif" data-motif={motif} aria-hidden="true">
       <svg focusable="false">
         <defs>
           {motif === "mande-kora" ? <KoraPattern id={patternId} /> : null}
@@ -158,6 +165,28 @@ export function DidYouKnowMotif({ motif }: DidYouKnowMotifProps) {
         </defs>
         <rect width="100%" height="100%" fill={`url(#${patternId})`} />
       </svg>
+      <style>{`
+        .anecdote-motif {
+          position: absolute;
+          inset: 0;
+          pointer-events: none;
+          opacity: 0.04;
+          color: var(--afh-text);
+        }
+        .anecdote-motif svg {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+        .anecdote-motif-mark {
+          fill: none;
+          stroke: currentColor;
+          stroke-width: 2.4;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          vector-effect: non-scaling-stroke;
+        }
+      `}</style>
     </div>
   );
 }

@@ -1,4 +1,3 @@
-import { getDossierThemeHref } from "@/lib/dossiers/themes";
 import {
   act,
   cleanup,
@@ -40,8 +39,7 @@ vi.mock("next/navigation", () => ({
   useRouter: () => ({ push: vi.fn() }),
 }));
 
-// jsdom evaluates the header's media queries against its own 1024px window,
-// so these run on the wide branch: the three axis triggers are painted and
+// Set the browser width to the desktop branch so the three axis triggers are painted and
 // the burger is not. The burger is therefore reached by test id — an
 // element behind `display: none` computes an empty accessible name, so a
 // role+name query cannot see it. Which branch a real width paints is
@@ -105,6 +103,13 @@ const declarationsFor = (selector: string) =>
 
 beforeEach(() => {
   mockPathname = "/fr";
+  (
+    window as unknown as {
+      happyDOM: {
+        setViewport: (size: { width: number; height: number }) => void;
+      };
+    }
+  ).happyDOM.setViewport({ width: 1440, height: 900 });
 });
 
 afterEach(cleanup);
@@ -125,6 +130,51 @@ describe("SiteHeader — the way back to the top", () => {
     renderHeader();
 
     expect(screen.getByTestId("site-header")).not.toHaveAttribute("id");
+  });
+});
+
+describe("SiteHeader — Découvertes destination", () => {
+  // @req REQ-156
+  it("provides the standalone route in both the wide bar and the narrow tray", () => {
+    renderHeader();
+    expect(screen.getByTestId("site-discoveries-link")).toHaveAttribute(
+      "href",
+      "/fr/decouvertes"
+    );
+    fireEvent.click(screen.getByTestId(BURGER));
+    expect(screen.getByTestId("site-discoveries-tray-link")).toHaveAttribute(
+      "href",
+      "/fr/decouvertes"
+    );
+    const css = headerStyleSheet();
+    expect(css).toContain("@media (min-width: 1200px)");
+  });
+
+  // It used to be a bold underlined word parked beside the search and theme
+  // discs, so it read as a utility rather than as a place. It takes the axes'
+  // pill; its seed is neutral because a hue in this row teaches an axis, and it
+  // has no caret because it opens nothing.
+  // @req REQ-156
+  it("draws Découvertes in the axes' own pill without claiming a fourth axis", () => {
+    renderHeader();
+    const entries = screen.getByRole("group", { name: "Points d'entrée" });
+    const link = within(entries).getByTestId("site-discoveries-link");
+
+    expect(link.querySelector(".sh-axis-pill .sh-seed")).toBeInTheDocument();
+    expect(link.querySelector(".sh-caret")).toBeNull();
+    expect(link.className).not.toMatch(/afh-accent-/);
+    expect(within(entries).getAllByRole("button")).toHaveLength(3);
+    expect(
+      declarationsFor(
+        '\\.sh-axis-link\\[aria-current="page"\\] \\.sh-axis-pill'
+      )
+    ).toMatch(/border-color/);
+
+    fireEvent.click(screen.getByTestId(BURGER));
+    const row = screen.getByTestId("site-discoveries-tray-link");
+    expect(row).toHaveClass("sh-fold-trigger");
+    expect(row.querySelector(".sh-seed")).toBeInTheDocument();
+    expect(declarationsFor("\\.sh-dest-row")).not.toMatch(/background/);
   });
 });
 
@@ -539,6 +589,26 @@ describe("SiteHeader — reachable and mature are two questions (atlas charter �
     expect(anecdotes).not.toHaveTextContent(t.hubs.unavailableLabel);
   });
 
+  // The gallery is filed beside the anecdotes and the proverbs, and opens like
+  // them now that its images are entered: a link, with no Bientôt chip.
+  // @req REQ-167
+  it("lists the gallery as a dossier entry", () => {
+    renderHeader();
+
+    fireEvent.click(screen.getByTestId(BURGER));
+    const tray = screen.getByRole("dialog");
+    fireEvent.click(
+      within(tray).getByRole("button", {
+        name: new RegExp(ACCESS_MODE_LABELS.dossiers),
+      })
+    );
+
+    const gallery = within(tray).getByTestId("site-nav-module-galerie");
+    expect(gallery).toHaveTextContent(t.hubs.moduleNames.galerie);
+    expect(gallery.tagName).toBe("A");
+    expect(gallery).not.toHaveTextContent(t.hubs.unavailableLabel);
+  });
+
   // The panel's own title is the way to the hub, whatever the rubrics below
   // it happen to be showing.
   // @req REQ-114
@@ -738,17 +808,39 @@ describe("SiteHeader — reachable and mature are two questions (atlas charter �
   });
 
   // One open reading is the whole of what the rubric can open, so there is
-  // nothing to see more of.
+  // nothing to see more of. Built on a corpus of one: Noms, which used to be
+  // the example, holds two open banks since the proverbs joined the anecdotes.
   // @req REQ-120
   it("offers no way out of a rubric with a single open reading", () => {
+    renderWithDossiers([
+      {
+        id: "DOS_TEST_ONLY",
+        href: `${getLocalizedRoute("fr", "dossiersHub")}/test-only`,
+        title: "Dossier seul",
+        rubric: "religions" as const,
+        offered: true,
+        publishedOn: "2026-01-01",
+      },
+    ]);
+    fireEvent.click(trigger(ACCESS_MODE_LABELS.dossiers));
+
+    expect(
+      within(panelRubric("Religions")).queryByTestId(
+        "site-nav-rubric-more-dossiers-religions"
+      )
+    ).toBeNull();
+  });
+
+  // @req REQ-120
+  it("points Noms at the hub now that it holds two open banks", () => {
     renderHeader();
     fireEvent.click(trigger(ACCESS_MODE_LABELS.dossiers));
 
     expect(
-      within(panelRubric("Noms")).queryByTestId(
+      within(panelRubric("Noms")).getByTestId(
         "site-nav-rubric-more-dossiers-noms"
       )
-    ).toBeNull();
+    ).toHaveAttribute("href", getLocalizedRoute("fr", "dossiersHub"));
   });
 
   /**

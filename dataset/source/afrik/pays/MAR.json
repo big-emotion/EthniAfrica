@@ -262,6 +262,12 @@
         "title": "UNFPA – World Population Dashboard — Maroc",
         "url": "https://www.unfpa.org/data/world-population/MA",
         "tier": "official"
+      },
+      {
+        "title": "UNESCO World Heritage Centre – Medina of Marrakesh",
+        "url": "https://whc.unesco.org/en/list/331/",
+        "tier": "official",
+        "notes": "Bien inscrit sur la Liste du patrimoine mondial en 1985 ; la synthèse de sa valeur universelle exceptionnelle indique une fondation en 1070-1072 par les Almoravides (1056-1147)."
       }
     ],
     "demographics": {

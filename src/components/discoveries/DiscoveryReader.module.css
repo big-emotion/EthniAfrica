@@ -1,0 +1,520 @@
+@font-face {
+  font-family: "Discovery Anton";
+  src: url("/fonts/discoveries-anton.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* The whole viewport, over the site chrome: the behaviour of a Reel, licensed
+   by name in brand charter §5.1. Fixed rather than 100vh tall so the document
+   under it has nothing to scroll and the feed is the only scroller. */
+.stage {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  background: var(--afh-night-ground);
+  color: var(--afh-night-ink);
+  color-scheme: dark;
+}
+
+/* mobile-text.css centres headings and paragraphs below 768 px; a caption
+   pinned to the foot of a photo is one ragged-right block (brand charter
+   §8.1). */
+.stage :is(h1, h2, p) {
+  text-align: left;
+}
+
+.rail {
+  display: none;
+}
+
+.main {
+  position: relative;
+  min-width: 0;
+  height: 100%;
+}
+
+.topBar {
+  position: absolute;
+  z-index: 2;
+  inset-inline: 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  padding-top: env(safe-area-inset-top);
+  padding-inline: 0.25rem;
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--afh-night-ground) 72%, transparent),
+    transparent
+  );
+}
+
+.topBar .topTitle {
+  margin: 0;
+  text-align: center;
+  font: 700 var(--afh-text-lead) / 1.2 var(--afh-font-display);
+}
+
+.feed {
+  height: 100%;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  overscroll-behavior-y: contain;
+  scrollbar-width: none;
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  position: relative;
+  isolation: isolate;
+  height: 100%;
+  overflow: hidden;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  background: var(--afh-night-ground);
+}
+
+.photo {
+  z-index: -2;
+  object-fit: cover;
+}
+
+.photoFallback {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  background: var(--afh-night-ground);
+}
+
+/* Dark at both ends: the top bar and the caption each need a ground the
+   photograph cannot be trusted to give them. */
+.shade {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--afh-night-ground) 45%, transparent) 0%,
+    transparent 18%,
+    transparent 42%,
+    color-mix(in srgb, var(--afh-night-ground) 78%, transparent) 72%,
+    color-mix(in srgb, var(--afh-night-ground) 88%, transparent) 100%
+  );
+}
+
+/* The right padding keeps the caption clear of the action rail. */
+.copy {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  display: grid;
+  gap: 0.625rem;
+  max-width: 40rem;
+  padding: 1.25rem 5rem 1.25rem 1.25rem;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 1.5rem);
+}
+
+.kind {
+  justify-self: start;
+  margin: 0;
+  padding: 0.375rem 0.625rem;
+  background: color-mix(in srgb, var(--afh-night-ground) 60%, transparent);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font: 700 var(--afh-text-eyebrow) / 1.3 var(--afh-font-body);
+}
+
+/* A card with no photo has nothing to keep the text off: pinned to the foot it
+   left three fifths of the frame an empty night ground at 430 px. Centred, the
+   words are the frame's content. */
+.textCard .copy {
+  top: 0;
+  align-content: center;
+}
+
+/* The proverb in its own language, above our rendering of it: the words the
+   people say lead, ours gloss them (brand charter §3). */
+.original {
+  margin: 0;
+  font: italic 400 var(--afh-text-lead) / 1.35 var(--afh-font-display);
+  text-shadow: 0 0.125rem 0.75rem var(--afh-night-ground);
+}
+
+.copy h1,
+.copy h2 {
+  margin: 0;
+  text-transform: uppercase;
+  text-wrap: normal;
+  font:
+    400 clamp(2rem, 8.5vw, 2.5rem) / 1.1 "Discovery Anton",
+    Impact,
+    sans-serif;
+  text-shadow: 0 0.125rem 0.75rem var(--afh-night-ground);
+}
+
+.description,
+.caption {
+  margin: 0;
+  font: 400 var(--afh-text-small) / 1.45 var(--afh-font-body);
+  text-shadow: 0 0.125rem 0.75rem var(--afh-night-ground);
+  text-wrap: pretty;
+}
+
+/* Held to two lines, as a Reel holds its caption; the whole text is the
+   first thing the details sheet shows. */
+.description {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.source,
+.credit {
+  margin: 0;
+  color: var(--afh-night-ink-2);
+  font: 600 var(--afh-text-caption) / 1.4 var(--afh-font-body);
+  text-wrap: pretty;
+}
+
+.credit {
+  font-size: var(--afh-text-eyebrow);
+}
+
+.credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* The shape TikTok and Instagram share: one column of round glyphs, each
+   named under itself, at the right edge of the picture. */
+.actions {
+  position: absolute;
+  z-index: 2;
+  right: 0.5rem;
+  bottom: calc(env(safe-area-inset-bottom) + 1.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.actionGlyph {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--afh-radius-full);
+  background: color-mix(in srgb, var(--afh-night-ground) 50%, transparent);
+}
+
+.actions .actionGlyph svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.actions [aria-pressed="true"] .actionGlyph {
+  background: var(--afh-night-ink);
+  color: var(--afh-night-ground);
+}
+
+.actionLabel {
+  max-width: 4.5rem;
+  white-space: normal;
+  text-align: center;
+  font: 700 var(--afh-text-eyebrow) / 1.2 var(--afh-font-body);
+  text-shadow: 0 0.0625rem 0.375rem var(--afh-night-ground);
+}
+
+.stepper {
+  display: none;
+}
+
+.stepper .stepButton {
+  border-radius: var(--afh-radius-full);
+  background: var(--afh-night-surface-2);
+}
+
+.noScriptNext {
+  position: absolute;
+  z-index: 2;
+  top: calc(env(safe-area-inset-top) + 3.5rem);
+  left: 1.25rem;
+}
+
+.noScriptNext a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.storageNotice {
+  position: absolute;
+  z-index: 3;
+  inset-inline: 1.25rem;
+  top: calc(env(safe-area-inset-top) + 3.25rem);
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-night-surface);
+  color: var(--afh-night-ink-2);
+  font: 400 var(--afh-text-caption) / 1.5 var(--afh-font-body);
+}
+
+/* The sheets stay on parchment: a source list is a document, and the night
+   licence covers the stage, not what opens from it. */
+.detailSheet {
+  max-height: 90svh;
+  overflow-y: auto;
+  background: var(--afh-color-bg);
+  color: var(--afh-color-text);
+  padding: 1rem 1.5rem 1.5rem;
+  padding-right: 3.5rem;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 1.5rem);
+  border-color: var(--afh-color-border);
+  border-radius: var(--afh-radius-lg) var(--afh-radius-lg) 0 0;
+}
+
+.handle {
+  width: 2rem;
+  height: 0.25rem;
+  margin: 0 auto 0.5rem;
+  border-radius: var(--afh-radius-full);
+  background: var(--afh-color-border);
+}
+
+.kicker {
+  margin: 0;
+  color: var(--afh-color-text-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font: 700 var(--afh-text-eyebrow) / 1.3 var(--afh-font-body);
+}
+
+.detailTitle {
+  max-width: 28ch;
+  margin-bottom: 1rem;
+  font: 700 var(--afh-text-h2) / 1.2 var(--afh-font-display);
+  text-align: left;
+}
+
+.detailBody {
+  max-width: 68ch;
+  font: 400 var(--afh-text-small) / 1.65 var(--afh-font-body);
+}
+
+.detailSection {
+  padding-top: 1rem;
+  border-top: 1px solid var(--afh-color-border);
+}
+
+.detailSection h3 {
+  font: 700 var(--afh-text-small) / 1.3 var(--afh-font-display);
+}
+
+.detailSection a {
+  color: var(--afh-color-green);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pills a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  border: 1px solid var(--afh-color-border);
+  border-radius: 999px;
+  padding: 0.5rem 0.875rem;
+  background: var(--afh-color-green-bg);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sourceList {
+  display: grid;
+  gap: 0.75rem;
+  padding-left: 1.25rem;
+}
+
+.savedList {
+  display: grid;
+  gap: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+.savedList a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: var(--afh-color-green);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.shareUrl {
+  overflow-wrap: anywhere;
+  padding: 0.75rem;
+  border-radius: var(--afh-radius-lg, 0.75rem);
+  background: var(--afh-color-bg-warm);
+  font: 400 var(--afh-text-caption) / 1.5 var(--afh-font-body);
+  user-select: all;
+}
+
+.shareChoices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.shareChoice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  min-height: 6rem;
+  padding: 0.625rem;
+  border: 1px solid var(--afh-color-border);
+  border-radius: var(--afh-radius-lg, 0.75rem);
+  background: var(--afh-color-card);
+  color: var(--afh-color-text);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.shareGlyph {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  color: var(--afh-color-green);
+}
+
+.shareGlyph > svg:first-child {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.shareVariant {
+  position: absolute;
+  right: -0.125rem;
+  bottom: -0.125rem;
+  width: 1rem;
+  height: 1rem;
+  padding: 0.125rem;
+  border-radius: 50%;
+  background: var(--afh-color-card);
+}
+
+.shareChoice:focus-visible,
+.shareChoice:hover {
+  outline: 2px solid var(--afh-color-green);
+  outline-offset: 2px;
+}
+
+.shareChoice strong {
+  font: 700 var(--afh-text-caption) / 1.2 var(--afh-font-body);
+}
+
+.shareChoice > span:last-child {
+  color: var(--afh-color-text-soft);
+  font: 400 var(--afh-text-eyebrow) / 1.3 var(--afh-font-body);
+}
+
+.shareChoice[data-testid^="share-choice-youtube"] .shareGlyph,
+.shareChoice[data-testid$="reels"] .shareGlyph,
+.shareChoice[data-testid="share-choice-tiktok-story"] .shareGlyph {
+  color: var(--afh-color-text-soft);
+}
+
+.shareFeedback {
+  padding: 0.75rem;
+  color: var(--afh-color-text);
+  background: var(--afh-color-green-bg);
+  border-radius: var(--afh-radius-lg, 0.75rem);
+}
+
+/* From 768 px the picture is a 9:16 column at the height of the window, and
+   the rail stands beside it rather than over it — the desktop TikTok. */
+@media (min-width: 768px) {
+  .main {
+    width: min(100%, calc((100dvh - 2rem) * 9 / 16));
+    height: calc(100dvh - 2rem);
+    margin: 1rem auto;
+  }
+
+  .feed,
+  .card {
+    border-radius: var(--afh-radius-lg);
+  }
+
+  .topBar {
+    border-radius: var(--afh-radius-lg) var(--afh-radius-lg) 0 0;
+  }
+
+  .copy {
+    padding-right: 1.25rem;
+  }
+
+  .actions {
+    right: -4.75rem;
+    bottom: 0;
+  }
+
+  .actionGlyph {
+    background: var(--afh-night-surface-2);
+  }
+
+  .stepper {
+    position: fixed;
+    top: 50%;
+    right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transform: translateY(-50%);
+  }
+
+  .detailSheet {
+    max-width: 34rem;
+    margin-inline: auto;
+  }
+}
+
+/* From 1200 px the rail takes the masthead's job, as TikTok's sidebar does. */
+@media (min-width: 1200px) {
+  .stage {
+    grid-template-columns: 15rem minmax(0, 1fr);
+  }
+
+  .rail {
+    display: grid;
+    padding: 1.5rem 1.25rem;
+    border-right: 1px solid var(--afh-night-line);
+  }
+
+  .topBar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feed {
+    scroll-behavior: auto;
+  }
+}

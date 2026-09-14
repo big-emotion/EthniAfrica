@@ -1,6 +1,6 @@
 ---
 name: ethniafrica-audience-audit
-description: Measures what the EthniAfrica audience actually does, and writes the dated report the two downstream skills consume. Crosses Plausible analytics with the repository's own URL inventory to classify every page as Keep / Improve / Merge / Create, and to surface dead-end pages, cannibalised fiches, unattributed channels and the mobile-desktop gap. Read-only on source. Use when the user asks "what does the traffic say", "which pages work", "audit de trafic", "rapport d'audience", "content audit", or invokes /ethniafrica-audience-audit.
+description: Measures what the EthniAfrica audience actually does, and writes the dated report the two downstream skills consume. Crosses Plausible analytics with the repository's own URL inventory to classify every page as Keep / Improve / Merge / Create, and to surface dead-end pages, cannibalised fiches, unattributed channels and the mobile-desktop gap. Reads per-post metrics from YouTube, TikTok, Instagram and Facebook, and ties each post to its site visits through utm_campaign. Read-only on source. Use when the user asks "what does the traffic say", "which pages work", "audit de trafic", "rapport d'audience", "content audit", or invokes /ethniafrica-audience-audit.
 metadata:
   author: Big Emotion
   version: "1.0.0"
@@ -36,7 +36,9 @@ Markdown file.
 ## Preconditions
 
 - Network access to `stats.ethniafrica.com`. **No authentication and no browser
-  are required** — see Step 1.
+  are required** for the site — see Step 1.
+- For the networks, the operator's logged-in Chrome session — see Step 1 bis.
+  Read only: never post, like, reply, follow or change a setting.
 - Run from the repository root. A worktree is not required — this skill writes
   one file — but a background session must still isolate itself before writing.
 
@@ -57,7 +59,15 @@ curl -s "$BASE/exit-pages?period=30d&detailed=true&limit=100"
 curl -s "$BASE/sources?period=30d&detailed=true"
 curl -s "$BASE/screen-sizes?period=30d&detailed=true"
 curl -s "$BASE/countries?period=30d"
+curl -s "$BASE/utm_campaigns?period=30d&detailed=true"
+curl -s "$BASE/utm_contents?period=30d&detailed=true"
 ```
+
+**`utm_campaign` is the join between a post and the site.** The link-builder
+writes one campaign per subject and one `utm_content` per format, so each
+tagged visit names the post that sent it. Read the campaign rows next to the
+network table of Step 1 bis; a post with views and no campaign row either sent
+nobody or went out with a bare link — the post's `post.md` says which.
 
 **`detailed=true` is what makes this audit possible.** Without it the breakdown
 endpoints return only `visitors` and `percentage`; with it every row carries
@@ -92,6 +102,51 @@ Two consequences the consumers depend on:
   precision does not.
 - **A zero is not proof of absence.** A channel with no attributed visit may be
   sending unconsented traffic, or traffic the referrer strips.
+
+## Step 1 bis — Read the networks, post by post
+
+The message reaches the networks long before it reaches the site. Measured
+2026-09-13: ~18 000 views a month on YouTube, TikTok, Instagram and Facebook,
+almost all served by feeds to people who do not follow the account, against
+three site visitors attributed to those networks. An audit that reads Plausible
+alone measures the smallest surface the message travels on.
+
+No API is connected. Read each studio in the operator's logged-in Chrome
+session, read only.
+
+| Network   | Route that reads cleanly                                       | What to take                                                                                             |
+| --------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| YouTube   | Studio → Content → Shorts list; Analytics → Content tab        | Views and comments per Short; stayed-to-watch vs swiped away; traffic sources                            |
+| TikTok    | TikTok Studio → `analytics/overview`, then `analytics/content` | Views, profile views, likes, comments, shares; the search queries that reach the account; top posts      |
+| Instagram | `accounts/insights/?timeframe=30`                              | Views, non-follower share, interactions, accounts engaged, profile visits, external link taps            |
+| Facebook  | Meta Business Suite → Insights → Overview                      | Views, non-follower share, 3-second views, watch time, interactions; recent posts with caption and views |
+
+Traps already met, so the next run does not rediscover them:
+
+- YouTube Studio's advanced-mode table (per-Short retention) stalled on load
+  twice. Take what the Content tab gives and say retention was not read.
+- TikTok Studio's posts list renders only the visible rows, and an in-page
+  script over it froze the renderer. Do not script it; `analytics/content`
+  lists the top five cleanly.
+- Instagram's content grid shows view counts without titles. Name the posts
+  only when the dashboard does.
+
+**Signals of understanding first, views as context.** In order: comments (count,
+and what they say — understood, misunderstood, contested, a question), shares,
+saves, stayed-to-watch or 3-second views, profile visits, link taps, and tagged
+site visits per `utm_campaign`. A view says the feed showed the post; it says
+nothing about whether the message arrived.
+
+**Record each post's publication date next to its figures.** Posts of different
+ages never compare as equals; a one-day-old post at 9 views is not a failure.
+
+Join each post to its `post.md` through the campaign slug in its tagged links.
+`node social/tools/etat-pipeline/bilan-sujets.mjs <sujet>` lists a subject's
+posts, formats and networks.
+
+This step measures. Whether a production carries the message is scored by
+`/ethniafrica-message`; put the two side by side in the report, never merge
+them into one number.
 
 ## Step 2 — Inventory the site's own URLs
 
@@ -167,6 +222,17 @@ Period measured: … (consented sessions only; a floor, not the audience)
 
 Per source: visitors, bounce, duration. Name every published channel that
 carries zero attributed traffic, and whether UTM tagging would explain it.
+Per `utm_campaign`: visitors, landing page, bounce.
+
+## Networks
+
+Per network: views, non-follower share, the attention signal it exposes, and
+what could not be read. Then one row per post:
+
+| Post | Network | Published | Views | Stayed / 3 s | Comments | Shares | Link taps · tagged visits |
+
+Then the signals of understanding, in words: what the comments say, or that
+there are none.
 
 ## Devices
 

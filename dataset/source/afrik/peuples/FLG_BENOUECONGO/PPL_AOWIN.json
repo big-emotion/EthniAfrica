@@ -91,6 +91,11 @@
         "title": "Joshua Project – Ghana people groups",
         "url": "https://joshuaproject.net/countries/gh",
         "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Anyin (anyi1245)",
+        "url": "https://glottolog.org/resource/languoid/id/anyi1245",
+        "tier": "official"
       }
     ]
   },
