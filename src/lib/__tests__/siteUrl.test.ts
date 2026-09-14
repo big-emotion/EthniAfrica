@@ -37,6 +37,15 @@ describe("resolveSiteUrl", () => {
   });
 
   // @req REQ-044
+  it("reads a scheme only where one is written, not in a host that starts with http", () => {
+    vi.stubEnv("NEXT_PUBLIC_SITE_URL", "httpbin.example");
+    expect(resolveSiteUrl()).toBe("http://httpbin.example");
+
+    vi.stubEnv("NEXT_PUBLIC_SITE_URL", "HTTPS://ethniafrica.com");
+    expect(resolveSiteUrl()).toBe("HTTPS://ethniafrica.com");
+  });
+
+  // @req REQ-044
   it("falls back to the local dev server outside production", () => {
     vi.stubEnv("NODE_ENV", "development");
 

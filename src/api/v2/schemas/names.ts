@@ -8,7 +8,6 @@
  */
 
 import {
-  MAX_PAGE_SIZE,
   NAME_FORMS_PAGE_SIZE,
   pageSizeSchema,
 } from "@/api/v2/schemas/pagination";
@@ -200,12 +199,7 @@ export const listNameFormsQuerySchema = z.object({
   nameType: nameRecordTypeSchema.optional(),
   imposedOnly: z.coerce.boolean().optional().default(false),
   page: z.coerce.number().int().min(1).default(1),
-  perPage: z.coerce
-    .number()
-    .int()
-    .min(1)
-    .max(MAX_PAGE_SIZE)
-    .default(NAME_FORMS_PAGE_SIZE),
+  perPage: pageSizeSchema.default(NAME_FORMS_PAGE_SIZE),
 });
 
 export type ListNameFormsQuery = z.infer<typeof listNameFormsQuerySchema>;

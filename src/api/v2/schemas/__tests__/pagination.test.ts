@@ -36,24 +36,31 @@ describe("API page size", () => {
 
   // @req REQ-110
   it("names each surface that pages at its own size, under the shared maximum", () => {
-    expect(listNameFormsQuerySchema.parse({}).perPage).toBe(
-      NAME_FORMS_PAGE_SIZE
-    );
+    expect(listNameFormsQuerySchema.parse({}).perPage).toBe(48);
     expect(
       listNameFormsQuerySchema.safeParse({ perPage: MAX_PAGE_SIZE + 1 }).success
     ).toBe(false);
-    expect(egoNetworkQuerySchema.parse({}).limit).toBe(EGO_NETWORK_PAGE_SIZE);
+    expect(egoNetworkQuerySchema.parse({}).limit).toBe(24);
     expect(
       egoNetworkQuerySchema.safeParse({ limit: MAX_PAGE_SIZE + 1 }).success
     ).toBe(false);
 
-    for (const size of [
+    // Pinned as literals: naming these values promised not to change them, and
+    // comparing each constant with itself would not notice if one did.
+    expect({
+      DEFAULT_PAGE_SIZE,
+      MAX_PAGE_SIZE,
       NAME_FORMS_PAGE_SIZE,
       EGO_NETWORK_PAGE_SIZE,
       PUBLIC_FLAGS_PAGE_SIZE,
       SEARCH_MAX_PAGE_SIZE,
-    ]) {
-      expect(size).toBeLessThanOrEqual(MAX_PAGE_SIZE);
-    }
+    }).toEqual({
+      DEFAULT_PAGE_SIZE: 20,
+      MAX_PAGE_SIZE: 100,
+      NAME_FORMS_PAGE_SIZE: 48,
+      EGO_NETWORK_PAGE_SIZE: 24,
+      PUBLIC_FLAGS_PAGE_SIZE: 50,
+      SEARCH_MAX_PAGE_SIZE: 50,
+    });
   });
 });

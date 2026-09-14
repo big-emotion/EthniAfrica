@@ -27,7 +27,9 @@ const DEVELOPMENT_SITE_URL = "http://localhost:3000";
 export function resolveSiteUrl(): string {
   const configured = process.env.NEXT_PUBLIC_SITE_URL?.trim();
   if (configured) {
-    return configured.startsWith("http") ? configured : `http://${configured}`;
+    return /^https?:\/\//i.test(configured)
+      ? configured
+      : `http://${configured}`;
   }
 
   if (

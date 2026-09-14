@@ -8,7 +8,6 @@
 
 import {
   EGO_NETWORK_PAGE_SIZE,
-  MAX_PAGE_SIZE,
   pageSizeSchema,
 } from "@/api/v2/schemas/pagination";
 import { z } from "zod";
@@ -62,12 +61,7 @@ export const egoNetworkParamSchema = z.object({
 export const egoNetworkQuerySchema = z.object({
   types: csvRelationTypes,
   includeDerived: booleanQueryParam(true),
-  limit: z.coerce
-    .number()
-    .int()
-    .min(1)
-    .max(MAX_PAGE_SIZE)
-    .default(EGO_NETWORK_PAGE_SIZE),
+  limit: pageSizeSchema.default(EGO_NETWORK_PAGE_SIZE),
 });
 
 export type EgoNetworkQuery = z.infer<typeof egoNetworkQuerySchema>;

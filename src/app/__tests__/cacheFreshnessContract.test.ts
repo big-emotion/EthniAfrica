@@ -19,7 +19,10 @@ import { CORPUS_CACHE_CONTROL } from "@/api/v2/utils/corpusRoute";
 
 const APP_DIR = join(process.cwd(), "src", "app");
 const TEST_PATH = /(^|\/)__tests__\/|\.(test|spec)\.tsx?$/;
-const REVALIDATE_LITERAL = /^export const revalidate = (\d+);$/m;
+// Every export is collected, and only the bare form yields a number: a trailing
+// comment or an expression (`60 * 60`) must fail here, not slip past the match.
+const REVALIDATE_EXPORT = /^export const revalidate\b.*$/gm;
+const BARE_SECONDS = /^export const revalidate = (\d+);$/;
 
 function appSources(dir: string, out: string[] = []): string[] {
   for (const entry of readdirSync(dir)) {
@@ -40,11 +43,21 @@ describe("cache freshness", () => {
 
   // @req REQ-110
   it("holds every page-level revalidate literal to its named window", () => {
-    const windows = appSources(APP_DIR).flatMap((file) => {
-      const match = readFileSync(file, "utf8").match(REVALIDATE_LITERAL);
-      const seconds = match ? Number(match[1]) : 0;
-      return seconds > 0 ? [{ file: relative(APP_DIR, file), seconds }] : [];
-    });
+    const windows = appSources(APP_DIR).flatMap((file) =>
+      (readFileSync(file, "utf8").match(REVALIDATE_EXPORT) ?? []).flatMap(
+        (line) => {
+          const bare = line.match(BARE_SECONDS);
+          // `revalidate = 0` opts a route out of caching; it has no window.
+          if (bare && Number(bare[1]) === 0) return [];
+          return [
+            {
+              file: relative(APP_DIR, file),
+              seconds: bare ? Number(bare[1]) : line,
+            },
+          ];
+        }
+      )
+    );
 
     expect(windows.length).toBeGreaterThan(0);
     for (const { file, seconds } of windows) {
