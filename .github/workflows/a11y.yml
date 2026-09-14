@@ -28,6 +28,11 @@ jobs:
     env:
       # Test-only publication: production remains fail-closed to fr-only.
       SITE_LOCALE_MODE: bilingual-fr-default
+      # `npm run start` serves in production mode, and a production server with
+      # no public site URL refuses to render (src/lib/siteUrl.ts). This one
+      # really is on localhost; e2e and Lighthouse get the same fallback from
+      # `VERCEL_ENV: preview` instead.
+      NEXT_PUBLIC_SITE_URL: http://localhost:3000
 
     steps:
       - name: Checkout

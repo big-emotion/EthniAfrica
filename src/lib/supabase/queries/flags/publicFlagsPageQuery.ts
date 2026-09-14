@@ -1,6 +1,7 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { z } from "zod";
 
+import { PUBLIC_FLAGS_PAGE_SIZE } from "@/api/v2/schemas/pagination";
 import { logger } from "@/lib/api/logger";
 import type { FlagRow } from "@/types/module-zero";
 
@@ -107,7 +108,6 @@ interface EntityReference {
   entityId: string | null;
 }
 
-const MAX_PAGE_SIZE = 50;
 const ANONYMOUS_CONTRIBUTOR_NAME = "";
 const FICHE_ENTITY_TYPES = [
   "fiche_section",
@@ -169,11 +169,11 @@ export function isValidPublicFlagsCursor(cursor: string): boolean {
 }
 
 function normalizePageSize(pageSize: number | undefined): number {
-  if (!Number.isFinite(pageSize)) return MAX_PAGE_SIZE;
+  if (!Number.isFinite(pageSize)) return PUBLIC_FLAGS_PAGE_SIZE;
 
   return Math.min(
-    MAX_PAGE_SIZE,
-    Math.max(1, Math.floor(pageSize ?? MAX_PAGE_SIZE))
+    PUBLIC_FLAGS_PAGE_SIZE,
+    Math.max(1, Math.floor(pageSize ?? PUBLIC_FLAGS_PAGE_SIZE))
   );
 }
 

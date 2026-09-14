@@ -573,8 +573,12 @@ emporte s'il ne lit rien d'autre.
 | « Tracées sans référence à qui habitait là. » | « Les frontières sont arbitraires. » | À demi faux, donc attaquable — et l'atlas peut le montrer peuple par peuple. |
 | « Ce qui est resté. » | « Ce qui a été pris. » | Le contenu ne dénonce pas, il agrandit la carte. |
 
-**Deux dates, à citer plutôt qu'à paraphraser :** Berlin 1884, les indépendances 1960.
-Une frontière ne contient pas un peuple, elle le traverse.
+**Aucune conférence, aucune date unique n'est citée comme l'origine des frontières**
+(décidé par l'opérateur le 2026-09-14) : la conférence de Berlin a fixé des règles de
+revendication, elle n'a tracé presque aucune ligne elle-même, et une production qui la
+cite comme l'autrice du tracé répète une erreur déjà relevée par l'audit du message.
+La formule qui tient est celle de la table ci-dessus — « moins de 140 ans » — jamais un
+lieu et une date uniques. Une frontière ne contient pas un peuple, elle le traverse.
 
 ### Ce qui change avec le type de contenu, et ce qui ne change jamais
 
@@ -618,6 +622,7 @@ s'écrit ici d'abord, jamais dans une carte.
 | une projection, une carte | un registre de la banque ci-dessous | celui du registre | « La carte ne mentait pas. Elle ne disait pas tout. » | « tout. » | « On l'a redessinée. » |
 | le nom d'un pays | un registre de la banque ci-dessous | celui du registre | « Ce pays ne s'est pas renommé. » | « renommé. » | « On l'a rebaptisé. » — *dérivé de la ligne des villes le 2026-09-13, à valider* |
 | une langue, une famille | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas disparu. » | « disparu. » | « C'est la case qu'on lui avait donnée qui a disparu. » — *fixé le 2026-09-14 par l'opérateur, à l'écriture de « famille-linguistique-quatre-familles »* |
+| une famille de langues, regroupant plusieurs peuples sous un seul nom | un registre de la banque ci-dessous | celui du registre | « Cette famille n'est pas un peuple. » | « peuple. » | « On lui a donné un nom, par-dessus des peuples qui avaient déjà le leur. » — *décidé par l'opérateur le 2026-09-14, pour le sujet Mandé — distinct de la ligne « une langue, une famille » ci-dessus : celle-ci porte la légitimité d'une classification, celle-là la confusion entre un nom de famille et un nom de peuple* |
 
 **`cards.json` ne porte jamais `**`** : les titres s'y recopient en texte brut depuis
 cette table, le moteur accentue de lui-même le dernier mot d'une clôture avec sa

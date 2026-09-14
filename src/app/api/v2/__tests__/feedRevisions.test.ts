@@ -198,6 +198,29 @@ describe("GET /api/v2/feed/revisions (Atom)", () => {
     expect(response.headers.get("Cache-Control")).toContain("s-maxage=60");
   });
 
+  // @req REQ-038
+  it("answers 500 rather than publish localhost links from a production server", async () => {
+    vi.mocked(listFeedRevisions).mockResolvedValue({
+      items: FEED_ENVELOPE.data,
+      next_cursor: null,
+    });
+    vi.stubEnv("NODE_ENV", "production");
+    vi.stubEnv("VERCEL_ENV", "");
+    vi.stubEnv("NEXT_PHASE", "");
+    vi.stubEnv("NEXT_PUBLIC_SITE_URL", "");
+
+    try {
+      const response = await GET(
+        new NextRequest("http://localhost/api/v2/feed/revisions?format=atom")
+      );
+
+      expect(response.status).toBe(500);
+      expect(buildAtomFeed).not.toHaveBeenCalled();
+    } finally {
+      vi.unstubAllEnvs();
+    }
+  });
+
   it("calls buildAtomFeed and returns its output", async () => {
     vi.mocked(listFeedRevisions).mockResolvedValue({
       items: FEED_ENVELOPE.data,

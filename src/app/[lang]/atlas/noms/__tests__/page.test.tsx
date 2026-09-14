@@ -253,9 +253,11 @@ describe("the name facet page", () => {
       await NomsHubPage({ params: FR, searchParams: Promise.resolve({}) })
     );
 
-    const alert = screen.getByRole("alert");
-    expect(alert.textContent).not.toMatch(/aucun/i);
-    expect(alert.textContent?.toLowerCase()).toContain("pas pu être charg");
+    // A status, as on the two sibling facets: an outage is news the reader
+    // should hear, not an alert that interrupts whatever they were reading.
+    const status = screen.getByRole("status");
+    expect(status.textContent).not.toMatch(/aucun/i);
+    expect(status.textContent?.toLowerCase()).toContain("pas pu être charg");
     expect(screen.queryByRole("link")).not.toBeInTheDocument();
   });
 

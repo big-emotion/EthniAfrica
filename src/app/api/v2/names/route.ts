@@ -109,15 +109,11 @@ import { listNamesHandler } from "@/api/v2/handlers/names";
 import { listNamesQuerySchema } from "@/api/v2/schemas/names";
 import { createApiError } from "@/api/v2/utils/response";
 import { jsonWithCors, corsOptionsResponse } from "@/lib/api/cors";
-import { applyRateLimit } from "@/lib/api/rate-limit";
 import { logger } from "@/lib/api/logger";
 
+// @req REQ-057
 export async function GET(request: NextRequest) {
   const startTime = Date.now();
-
-  // ── rate limiting (AR11) ──────────────────────────────────────────────────
-  const rateLimitResponse = await applyRateLimit(request);
-  if (rateLimitResponse) return rateLimitResponse;
 
   try {
     const searchParams = request.nextUrl.searchParams;
@@ -173,6 +169,7 @@ export async function GET(request: NextRequest) {
   }
 }
 
+// @req REQ-057
 export function OPTIONS() {
   return corsOptionsResponse();
 }

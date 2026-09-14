@@ -4694,6 +4694,315 @@ export function checkLanguageStrictSchema(
   return { ok: errors.length === 0, errors, warnings };
 }
 
+// ─── People, family and country strict models ────────────────────────────────
+
+export type StrictModelKind = "peuple" | "famille_linguistique" | "pays";
+
+// Each kind is held on its top level, its `content` level, and the one nested
+// section where the drift was measured: people fiches carry four appellation
+// keys the model moved elsewhere, family fiches lack four decolonialHeader
+// keys, and countries lack culture.mainLanguages.
+const STRICT_MODEL_KINDS: Record<
+  StrictModelKind,
+  { directory: string; modelFile: string; nestedSection: string }
+> = {
+  peuple: {
+    directory: "peuples",
+    modelFile: "modele-peuple.json",
+    nestedSection: "appellations",
+  },
+  famille_linguistique: {
+    directory: "famille_linguistique",
+    modelFile: "modele-linguistique.json",
+    nestedSection: "decolonialHeader",
+  },
+  pays: {
+    directory: "pays",
+    modelFile: "modele-pays.json",
+    nestedSection: "culture",
+  },
+};
+
+/**
+ * Key-level drift from each strict model, measured 2026-09-14: one count per
+ * fiche per key that is missing from the fiche or absent from the model.
+ *
+ * The drift is an editorial program (conform the fiches, or amend a model
+ * deliberately), so it is held rather than fixed. A ratchet with two edges,
+ * like `RETIRED_CIA_FACTBOOK_URL_CEILING`: above it, a fiche drifted further;
+ * below it, a burn-down landed and the constant must follow in the same
+ * change. At 0 for a kind, replace its ratchet with a plain error.
+ */
+export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
+  Record<StrictModelKind, number>
+> = {
+  peuple: 7084,
+  famille_linguistique: 108,
+  pays: 13,
+};
+
+// Authoring blocks no model declares: `_meta` is curator metadata and
+// `_translation` is the parity gate's deferral, exactly as the language check.
+const AUTHORING_KEYS = new Set(["_meta", "_translation"]);
+
+function declaredKeys(value: unknown): Set<string> {
+  if (typeof value !== "object" || value === null || Array.isArray(value)) {
+    return new Set();
+  }
+  return new Set(Object.keys(value).filter((key) => !AUTHORING_KEYS.has(key)));
+}
+
+function strictModelFiches(
+  datasetRoot: string,
+  kind: StrictModelKind
+): Array<{ file: string; fullPath: string }> {
+  const { directory } = STRICT_MODEL_KINDS[kind];
+  if (kind === "peuple") {
+    return collectPplFiles(datasetRoot).map(
+      ({ flgFolder, file, fullPath }) => ({
+        file: `${directory}/${flgFolder}/${file}`,
+        fullPath,
+      })
+    );
+  }
+  const dir = path.join(datasetRoot, directory);
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((name) => name.endsWith(".json") && !name.startsWith("_"))
+    .sort()
+    .map((name) => ({
+      file: `${directory}/${name}`,
+      fullPath: path.join(dir, name),
+    }));
+}
+
+function readFiche(fullPath: string): Record<string, unknown> | null {
+  try {
+    return JSON.parse(fs.readFileSync(fullPath, "utf-8"));
+  } catch {
+    return null;
+  }
+}
+
+export function checkStrictModelKeys(
+  datasetRoot: string,
+  modelsRoot: string,
+  kind: StrictModelKind,
+  ceiling: number = STRICT_MODEL_DRIFT_CEILINGS[kind]
+): ValidationResult {
+  const { modelFile, nestedSection } = STRICT_MODEL_KINDS[kind];
+  const model = readFiche(path.join(modelsRoot, modelFile));
+  if (!model) {
+    return {
+      ok: false,
+      errors: [`Strict model ${modelFile} not readable under ${modelsRoot}`],
+      warnings: [],
+    };
+  }
+
+  const ficheCountByFinding = new Map<string, number>();
+  const unreadable: string[] = [];
+  let count = 0;
+
+  const compare = (section: string, modelPart: unknown, fichePart: unknown) => {
+    const modelKeys = declaredKeys(modelPart);
+    const ficheKeys = declaredKeys(fichePart);
+    const findings = [
+      ...[...modelKeys]
+        .filter((key) => !ficheKeys.has(key))
+        .map((key) => `${section}: missing key "${key}"`),
+      ...[...ficheKeys]
+        .filter((key) => !modelKeys.has(key))
+        .map((key) => `${section}: unexpected key "${key}"`),
+    ];
+    for (const finding of findings) {
+      ficheCountByFinding.set(
+        finding,
+        (ficheCountByFinding.get(finding) ?? 0) + 1
+      );
+      count += 1;
+    }
+  };
+
+  const modelContent = model.content as Record<string, unknown> | undefined;
+
+  for (const { file, fullPath } of strictModelFiches(datasetRoot, kind)) {
+    const fiche = readFiche(fullPath);
+    if (!fiche) {
+      unreadable.push(`${file}: could not parse JSON`);
+      continue;
+    }
+    compare("top level", model, fiche);
+
+    const content = fiche.content;
+    if (typeof content !== "object" || content === null) continue;
+    compare("content", modelContent, content);
+
+    const nested = (content as Record<string, unknown>)[nestedSection];
+    if (typeof nested !== "object" || nested === null) continue;
+    compare(`content.${nestedSection}`, modelContent?.[nestedSection], nested);
+  }
+
+  if (unreadable.length > 0) {
+    return { ok: false, errors: unreadable, warnings: [] };
+  }
+  if (count === ceiling) return { ok: true, errors: [], warnings: [] };
+
+  if (count > ceiling) {
+    return {
+      ok: false,
+      errors: [
+        `${kind} strict-model drift rose to ${count} (ceiling ${ceiling}) — ` +
+          `a fiche gained a key ${modelFile} does not declare, or lost one it ` +
+          `does; conform the fiche, or amend the model deliberately`,
+        ...[...ficheCountByFinding]
+          .map(([finding, fiches]) => `${finding} in ${fiches} fiche(s)`)
+          .sort(),
+      ],
+      warnings: [],
+    };
+  }
+
+  return {
+    ok: false,
+    errors: [
+      `${kind} strict-model drift fell to ${count} (ceiling ${ceiling}) — ` +
+        `lower STRICT_MODEL_DRIFT_CEILINGS.${kind} to ${count} in the same change`,
+    ],
+    warnings: [],
+  };
+}
+
+// Both lists a country fiche uses to name its peoples carry the same
+// `peopleId` and `languageFamily` pair.
+const COUNTRY_PEOPLE_LISTS: ReadonlyArray<{
+  fieldPath: string;
+  read: (content: Record<string, unknown>) => unknown;
+}> = [
+  { fieldPath: "content.majorPeoples", read: (c) => c.majorPeoples },
+  {
+    fieldPath: "content.demographics.peoples",
+    read: (c) =>
+      (c.demographics as Record<string, unknown> | undefined)?.peoples,
+  },
+];
+
+function countryPeopleEntries(
+  country: Record<string, unknown>
+): Array<{ fieldPath: string; entry: Record<string, unknown> }> {
+  const content = (country.content ?? {}) as Record<string, unknown>;
+  return COUNTRY_PEOPLE_LISTS.flatMap(({ fieldPath, read }) => {
+    const list = read(content);
+    if (!Array.isArray(list)) return [];
+    return list.flatMap((entry, index) =>
+      typeof entry === "object" && entry !== null
+        ? [{ fieldPath: `${fieldPath}[${index}]`, entry }]
+        : []
+    );
+  });
+}
+
+/**
+ * A family a country names for one of its peoples must have a fiche. Two such
+ * ids were misspelled for a year (FLG_SAHARIENNE, FLG_NILOSAHARIEN) and nothing
+ * noticed, because no check read `languageFamily` on a country. A null family
+ * is a declared absence, not a broken link.
+ */
+export function checkCountryFamilyReferences(
+  datasetRoot: string
+): ValidationResult {
+  const errors: string[] = [];
+  const flgIds = loadFlgIds(datasetRoot);
+
+  for (const { file, fullPath } of strictModelFiches(datasetRoot, "pays")) {
+    const country = readFiche(fullPath);
+    if (!country) continue;
+    for (const { fieldPath, entry } of countryPeopleEntries(country)) {
+      const family = entry.languageFamily;
+      if (typeof family !== "string" || flgIds.has(family)) continue;
+      errors.push(
+        `${file}: ${fieldPath}.languageFamily names ${family} (${entry.peopleId}), ` +
+          `which has no fiche under famille_linguistique/`
+      );
+    }
+  }
+
+  return { ok: errors.length === 0, errors, warnings: [] };
+}
+
+/**
+ * Country/people pairs where the country lists a people whose
+ * `currentCountries` omits that country, measured 2026-09-14.
+ *
+ * Which side is right is editorial judgement (a diaspora listing, a merged id,
+ * a stale country list), so the pairs are held, not fixed. Counted once per
+ * pair however many of the country's lists name the people. Two-way ratchet:
+ * above it a new mismatch appeared; below it the constant must follow.
+ */
+export const COUNTRY_PEOPLE_MEMBERSHIP_CEILING = 9;
+
+export function checkCountryPeopleMembership(
+  datasetRoot: string,
+  ceiling: number = COUNTRY_PEOPLE_MEMBERSHIP_CEILING
+): ValidationResult {
+  const currentCountriesByPeople = new Map<string, string[]>();
+  for (const { file, fullPath } of collectPplFiles(datasetRoot)) {
+    const people = readFiche(fullPath);
+    if (people && Array.isArray(people.currentCountries)) {
+      currentCountriesByPeople.set(
+        path.basename(file, ".json"),
+        people.currentCountries as string[]
+      );
+    }
+  }
+
+  const mismatches = new Set<string>();
+  for (const { file, fullPath } of strictModelFiches(datasetRoot, "pays")) {
+    const country = readFiche(fullPath);
+    if (!country) continue;
+    const iso =
+      typeof country.id === "string"
+        ? country.id
+        : path.basename(file, ".json");
+    for (const { entry } of countryPeopleEntries(country)) {
+      const peopleId = entry.peopleId;
+      if (typeof peopleId !== "string") continue;
+      const currentCountries = currentCountriesByPeople.get(peopleId);
+      if (!currentCountries || currentCountries.includes(iso)) continue;
+      mismatches.add(
+        `${file} lists ${peopleId}, whose currentCountries ` +
+          `(${currentCountries.join(", ")}) omits ${iso}`
+      );
+    }
+  }
+
+  const count = mismatches.size;
+  if (count === ceiling) return { ok: true, errors: [], warnings: [] };
+
+  if (count > ceiling) {
+    return {
+      ok: false,
+      errors: [
+        `Country/people membership mismatches rose to ${count} (ceiling ${ceiling}) — ` +
+          `a country lists a people whose currentCountries omits it; add the ` +
+          `country to the people fiche or remove the people from the country`,
+        ...[...mismatches].sort(),
+      ],
+      warnings: [],
+    };
+  }
+
+  return {
+    ok: false,
+    errors: [
+      `Country/people membership mismatches fell to ${count} (ceiling ${ceiling}) — ` +
+        `lower COUNTRY_PEOPLE_MEMBERSHIP_CEILING to ${count} in the same change`,
+    ],
+    warnings: [],
+  };
+}
+
 /**
  * REQ-143 — every leaf of every strict model carries a translation class.
  *
@@ -5332,6 +5641,28 @@ async function main() {
       datasetRoot,
       path.join(PUBLIC_ROOT, "modele-langue.json")
     ),
+  });
+
+  for (const kind of Object.keys(
+    STRICT_MODEL_DRIFT_CEILINGS
+  ) as StrictModelKind[]) {
+    console.log(`REQ-136 – ${kind} strict-model keys (two-way ratchet)...`);
+    newChecks.push({
+      name: `REQ-136 ${kind} strict-model keys`,
+      result: checkStrictModelKeys(datasetRoot, PUBLIC_ROOT, kind),
+    });
+  }
+
+  console.log("REQ-149 – Country family references resolve...");
+  newChecks.push({
+    name: "REQ-149 Country family references",
+    result: checkCountryFamilyReferences(datasetRoot),
+  });
+
+  console.log("REQ-149 – Country/people membership (two-way ratchet)...");
+  newChecks.push({
+    name: "REQ-149 Country/people membership",
+    result: checkCountryPeopleMembership(datasetRoot),
   });
 
   console.log(

@@ -16,7 +16,6 @@ import { describe, expect, it } from "vitest";
 
 import {
   ACCESS_MODES,
-  EDITORIAL_READINESS_STATES,
   MODULE_DEFINITIONS,
   getModulesForAccessMode,
   getNavModules,
@@ -164,9 +163,7 @@ describe("module visibility charter", () => {
         Object.prototype.hasOwnProperty.call(definition, "editorialReadiness"),
         `${definition.id} declares no editorialReadiness`
       ).toBe(true);
-      expect(EDITORIAL_READINESS_STATES).toContain(
-        definition.editorialReadiness
-      );
+      expect(["ready", "draft"]).toContain(definition.editorialReadiness);
     }
   });
 

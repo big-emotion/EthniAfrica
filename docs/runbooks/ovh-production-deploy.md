@@ -101,8 +101,12 @@ so it cannot reach an image layer, and the Sentry token does not ship inside the
 The variables themselves are described in [`../DEPLOYMENT.md`](../DEPLOYMENT.md) — that
 is the authoritative list, not this file.
 
-Two of them decide whether the site works at all:
+Three of them decide whether the site works at all:
 
+- `NEXT_PUBLIC_SITE_URL` — the public origin (`https://ethniafrica.com`). Unset, the root
+  layout throws when the server loads it (`src/lib/siteUrl.ts`), every page answers 500 and
+  the container's `HEALTHCHECK` on `/` fails. `next build` is let through without it, so a
+  green image proves nothing: check this line before publishing a Release.
 - `ANTIBOT_HMAC_SECRET` — unset, `GET /api/v2/antibot/challenge` answers 503 and every
   reader's report dialog dies on _"la vérification n'a pas abouti"_, while every other
   check stays green.

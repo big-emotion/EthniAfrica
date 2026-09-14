@@ -22,6 +22,7 @@ import {
   sourceKindSchema,
   sourceTierSchema,
 } from "@/lib/sources/authorized-source-catalog";
+import { SOURCE_TIER_STATES } from "@/types/sources";
 
 /**
  * The tier the catalogue assigns to a citation's domain, alongside the kind of
@@ -77,7 +78,7 @@ export const listSourcesQuerySchema = z.object({
   page: z.coerce.number().int().min(1).default(1),
   perPage: pageSizeSchema,
   q: z.string().trim().min(1).optional(),
-  tier: z.union([sourceTierSchema, z.literal("needs_review")]).optional(),
+  tier: z.enum(SOURCE_TIER_STATES).optional(),
   sourceKind: sourceKindSchema.optional(),
   decade: z.coerce.number().int().min(1000).max(2999).optional(),
   sort: z.enum(["title", "year", "added"]).optional(),

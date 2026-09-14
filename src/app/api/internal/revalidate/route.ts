@@ -1,5 +1,6 @@
 import { NextRequest } from "next/server";
 import { revalidateTag, revalidatePath } from "next/cache";
+import { matchesBearerSecret } from "@/lib/api/bearerSecret";
 import { logger } from "@/lib/api/logger";
 import { LOCALES } from "@/lib/locale";
 import { getLocalizedRoute } from "@/lib/routing";
@@ -28,10 +29,12 @@ const STABLE_REF_TAGS = ["afrik-language-families", "afrik-countries"] as const;
 
 // @req REQ-091
 export async function POST(request: NextRequest) {
-  const expectedSecret = process.env.SUPABASE_WEBHOOK_SECRET;
-  const authHeader = request.headers.get("authorization");
-
-  if (!expectedSecret || authHeader !== `Bearer ${expectedSecret}`) {
+  if (
+    !matchesBearerSecret(
+      request.headers.get("authorization"),
+      process.env.SUPABASE_WEBHOOK_SECRET
+    )
+  ) {
     return Response.json({ error: "UNAUTHENTICATED" }, { status: 401 });
   }
 

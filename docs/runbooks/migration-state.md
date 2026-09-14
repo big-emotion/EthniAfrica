@@ -1,19 +1,20 @@
 # Runbook — Supabase migration state
 
-**Last verified:** 2026-09-13 — both ledgers read through `check:migration-state`, which
+**Last verified:** 2026-09-14 — both ledgers read through `check:migration-state`, which
 reconciles every file under `supabase/migrations/` by name, each inside the CI job that
 applies migrations to that database
 **Applies to:** every file under `supabase/migrations/`
 
-> **Measured 2026-09-12 and 2026-09-13: migrations `001` → `088` were applied on both databases.**
-> Migration `089` is pending; it has not been applied to either database.
+> **Measured 2026-09-13 and 2026-09-14: migrations `001` → `089` are applied on both databases.**
 >
-> | Database                                             | How it was read                                                                                                                                | Result                                                                                                                                                                                                                                   |
-> | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-> | Recette (`shmrjtnfbqzceovroqjj`)                     | `check:migration-state` inside `migrate-recette.yml` on the merge of #998, which added `088` (Actions run `34726612478`, 2026-09-12 23:54 UTC) | applied 87 · pending 0 · orphaned 0 · drifted 1 — the drift is `038_user_roles_rls_recursion_fix.sql`, adjudicated in `scripts/ci/adjudicatedDrift.ts`. `db push` found nothing to apply: `088` was already on recette before the merge. |
-> | Production (self-hosted, `supabase.ethniafrica.com`) | `check:migration-state:production` inside the v4.9.0 Release's `migrate` job (Actions run `34742585193`, 2026-09-13 06:22 UTC)                 | before: 1 pending, `needs_review_source_tier`. The job applied `088`, then read again: applied 88 · pending 0 · orphaned 0 · drifted 0                                                                                                   |
+> | Database                                             | How it was read                                                                                                                                                           | Result                                                                                                                                                                                                                                   |
+> | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+> | Recette (`shmrjtnfbqzceovroqjj`)                     | `check:migration-state` inside `migrate-recette.yml` on the merge of #1026, which added `089` (Actions run `34754524408`, merge commit `53a0f2993`, 2026-09-13 11:29 UTC) | applied 88 · pending 0 · orphaned 0 · drifted 1 — the drift is `038_user_roles_rls_recursion_fix.sql`, adjudicated in `scripts/ci/adjudicatedDrift.ts`. `db push` found nothing to apply: `089` was already on recette before the merge. |
+> | Production (self-hosted, `supabase.ethniafrica.com`) | `check:migration-state:production` inside the v4.10.0 Release's `migrate` job (Actions run `34798280256`, job `103835571436`, 2026-09-14 02:11 UTC)                       | before: 1 pending, `oral_tradition_name_provenance`. The job planned exactly that file, applied `089`, then read again: applied 89 · pending 0 · orphaned 0 · drifted 0                                                                  |
 >
-> `applied` excludes a drifted migration, so each row accounts for all 88 files. The recette
+> `applied` excludes a drifted migration, so each row accounts for all 89 files. The v4.9.0
+> Release (run `34742585193`, 2026-09-13 06:22 UTC) had read production at applied 88 · pending 0,
+> before `089` existed. The recette
 > figure is also CI's own reading: a local run on the machine that refreshed this runbook
 > refused because recette's credentials were not in its environment.
 >
@@ -165,7 +166,8 @@ Rows `001` through `049` are measurements read from each project's
 production over a direct Postgres connection. Rows `050` through `087` are the 2026-09-12
 measurement in the banner above: `check:migration-state` matched each file to a ledger row by
 name on both databases, so the table records the state, not the version string. Row `088` is
-the 2026-09-12 recette and 2026-09-13 production reading in the banner. Neither column infers
+the 2026-09-12 recette and 2026-09-13 production reading; row `089` is the 2026-09-13 recette and
+2026-09-14 production reading in the banner. Neither column infers
 database state from what a branch carries; a row added later stays `not measured` until a
 ledger read says otherwise.
 
@@ -269,7 +271,7 @@ two databases the 2026-08-31 readings of `001` → `049` reached.
 | `086_flag_reporter_locale.sql`                | applied — measured 2026-09-12               | applied — measured 2026-09-12                        |
 | `087_quiz_question_locale.sql`                | applied — measured 2026-09-12               | applied — measured 2026-09-12                        |
 | `088_needs_review_source_tier.sql`            | applied — measured 2026-09-12               | applied by the v4.9.0 Release — measured 2026-09-13  |
-| `089_oral_tradition_name_provenance.sql`      | pending — not applied                       | pending — not applied                                |
+| `089_oral_tradition_name_provenance.sql`      | applied — measured 2026-09-13               | applied by the v4.10.0 Release — measured 2026-09-14 |
 
 > **Superseded rollout notes.** The per-migration notes below were written when each file was
 > pending, and several still say "apply by hand" or "omitted from this table". They are kept for

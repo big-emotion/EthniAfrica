@@ -373,22 +373,19 @@ function findDuplicateClusters(peoples: PeopleFiche[]): DuplicateCluster[] {
   const clusters: DuplicateCluster[] = [];
   for (const [stem, members] of byStem) {
     if (members.length < 2) continue;
-    const scored: (ClusterMember & { fiche: PeopleFiche })[] = members.map(
-      (fiche) => ({
-        fiche,
-        id: fiche.id,
-        name: fiche.nameMain,
-        totalPopulation: fiche.content.demography?.totalPopulation ?? null,
-        languageFamilyId: fiche.languageFamilyId,
-        countries: [...distribution(fiche).keys()].sort(),
-        contentChars: proseLength(fiche.content),
-        sources: (fiche.content.sources ?? []).length,
-        officialSources: (fiche.content.sources ?? []).filter(
-          (source) => source.tier === "official"
-        ).length,
-        selfAppellation: fiche.content.appellations?.selfAppellation ?? null,
-      })
-    );
+    const scored: ClusterMember[] = members.map((fiche) => ({
+      id: fiche.id,
+      name: fiche.nameMain,
+      totalPopulation: fiche.content.demography?.totalPopulation ?? null,
+      languageFamilyId: fiche.languageFamilyId,
+      countries: [...distribution(fiche).keys()].sort(),
+      contentChars: proseLength(fiche.content),
+      sources: (fiche.content.sources ?? []).length,
+      officialSources: (fiche.content.sources ?? []).filter(
+        (source) => source.tier === "official"
+      ).length,
+      selfAppellation: fiche.content.appellations?.selfAppellation ?? null,
+    }));
 
     // Widest scope, not biggest figure: the pan-ethnic fiche is the one a
     // country-scoped fiche should attach to, and its number is often the weakest.
@@ -407,9 +404,9 @@ function findDuplicateClusters(peoples: PeopleFiche[]): DuplicateCluster[] {
       proposedPrincipal: principal.id,
       richestText: richest.id,
       textConflict: principal.id !== richest.id,
-      members: scored
-        .map(({ fiche: _fiche, ...member }) => member)
-        .sort((a, b) => (b.totalPopulation ?? 0) - (a.totalPopulation ?? 0)),
+      members: [...scored].sort(
+        (a, b) => (b.totalPopulation ?? 0) - (a.totalPopulation ?? 0)
+      ),
     });
   }
   return clusters.sort(

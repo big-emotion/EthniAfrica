@@ -31,10 +31,7 @@ export type ProseBlock =
 
 /** Why a field could not be read as prose. `null` means it was clean. */
 export type ProseDefect =
-  | "serialised-json"
-  | "unbalanced-emphasis"
-  | "orphan-heading"
-  | "unsupported-construct";
+  "serialised-json" | "unbalanced-emphasis" | "orphan-heading";
 
 export interface ParsedProse {
   blocks: ProseBlock[];
@@ -49,21 +46,6 @@ export interface ParsedProse {
 const HEADING = /^##(?:\s+(.*))?$/;
 const LIST_ITEM = /^-\s+(.*)$/;
 const INLINE_RUN = /(\*\*|\*)(?!\s)([\s\S]+?)(?<!\s)\1/g;
-
-/**
- * Constructs a reader may legitimately meet in the corpus but the grammar does
- * not carry. They pass through as text; only the linter names them, because a
- * page that scolded its reader about corpus debt would be the wrong surface for
- * the complaint.
- */
-const UNSUPPORTED = [
-  /\[[^\]\n]+\]\([^)\n]+\)/, // markdown link — sources link, prose does not
-  /(^|\n)\s*\d+\.\s/, // ordered list
-  /(^|\n)#(?!#\s)#*\s/, // any heading depth but two
-  /(^|\n)\s*>\s/, // block quote
-  /\|[^\n|]*\|/, // table row
-  /`[^`\n]+`/, // inline code
-];
 
 /** A field whose first non-blank character opens a JSON document. */
 function isSerialisedJson(raw: string): boolean {
@@ -216,29 +198,6 @@ export function plainTextOf(raw: string): string {
     )
     .join(" ")
     .trim();
-}
-
-/**
- * Every defect in a field, not just the first one the renderer tripped over.
- * The renderer must stay total and cheap — it runs for eleven chapters inside a
- * server component — while the gate must be exhaustive. One function could not
- * be both without being either slow or lax.
- */
-// @req REQ-122
-export function lintFicheProse(raw: string): ProseDefect[] {
-  if (!raw || raw.trim() === "") return [];
-
-  const defects: ProseDefect[] = [];
-  if (isSerialisedJson(raw)) return ["serialised-json"];
-  if (hasUnbalancedEmphasis(raw)) defects.push("unbalanced-emphasis");
-  if (UNSUPPORTED.some((pattern) => pattern.test(raw))) {
-    defects.push("unsupported-construct");
-  }
-
-  const { defect } = parseFicheProse(raw);
-  if (defect === "orphan-heading") defects.push("orphan-heading");
-
-  return defects;
 }
 
 /**

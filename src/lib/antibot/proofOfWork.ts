@@ -140,7 +140,7 @@ export async function issueChallenge(
   options: IssueOptions = {}
 ): Promise<Challenge> {
   const difficultyBits = options.difficultyBits ?? configuredDifficulty();
-  const expiresAt = Date.now() + (options.ttlMs ?? DEFAULT_TTL_MS);
+  const expiresAt = Date.now() + (options.ttlMs ?? configuredTtlMs());
   const salt = toHex(crypto.getRandomValues(new Uint8Array(16)));
 
   return {
@@ -155,6 +155,16 @@ export async function issueChallenge(
 export function configuredDifficulty(): number {
   const raw = Number(process.env.ANTIBOT_DIFFICULTY_BITS);
   return Number.isFinite(raw) && raw > 0 ? raw : DEFAULT_DIFFICULTY_BITS;
+}
+
+/**
+ * Tuned alongside the difficulty: a harder puzzle on a slow phone needs a
+ * longer window before the solved proof comes back expired.
+ */
+// @req REQ-012
+export function configuredTtlMs(): number {
+  const raw = Number(process.env.ANTIBOT_TTL_MS);
+  return Number.isFinite(raw) && raw > 0 ? raw : DEFAULT_TTL_MS;
 }
 
 /**

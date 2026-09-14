@@ -1,6 +1,7 @@
 import { beforeEach, describe, it, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import NotFound from "@/app/[lang]/not-found";
+import { CONTACT_EMAIL } from "@/lib/brand";
 import { getLocalizedRoute } from "@/lib/routing";
 
 const mockUsePathname = vi.fn(() => "/fr/introuvable");
@@ -57,6 +58,16 @@ describe("NotFound ([lang]/not-found)", () => {
   it("renders Signaler une URL cassée CTA", () => {
     render(<NotFound />);
     expect(screen.getByText(/signaler une url cassée/i)).toBeTruthy();
+  });
+
+  // @req REQ-099
+  it("addresses the broken-link report to the brand's contact mailbox", () => {
+    render(<NotFound />);
+    const href = screen
+      .getByRole("link", { name: /signaler une url cassée/i })
+      .getAttribute("href");
+
+    expect(href?.split("?")[0]).toBe(`mailto:${CONTACT_EMAIL}`);
   });
 
   // @req REQ-145

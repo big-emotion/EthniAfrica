@@ -59,19 +59,38 @@ Deliberately ignored at launch: follower count, isolated likes.
 
 ## Where measurement now contradicts the plan
 
-Two corrections the 2026-09-07 data forces. Both are refinements of the phasing,
-not rejections of the plan.
+Updated 2026-09-14. The 09-07 corrections below are superseded by what actually
+happened, not by further analysis: the operator opened all five channels at
+once on 09-11 and again on 09-12, four to seven weeks before their scheduled
+phases. The channel sequence is no longer a plan being followed with two
+refinements — it has already been abandoned in practice, twice, deliberately.
+Treat "all five channels, same day" as the current default cadence; do not
+re-propose the phased sequence without a reason to reinstate it.
 
-1. **LinkedIn is scheduled for Phase 3 and is already the site's largest traffic
-   source** — 45 % of visitors, before its phase even opens. The channel
-   sequence was built on an assumption about where the audience would come from,
-   and the assumption was wrong. LinkedIn should be running now, weekly, and it
-   should not be video: on this channel video produced zero clicks and text
-   produced all of them.
-2. **The plan's 70 % three-second retention target cannot currently be
-   measured** post by post, and the Phase 1 exit gate depends on it. Either the
-   per-post retention gets collected before 3 October, or the gate has to be
-   decided on view counts, which the plan itself ranks last.
+1. **LinkedIn's traffic role has reversed since 09-07, not just moved.** On
+   09-07 it was 45 % of site visitors. By 09-13–09-14 it sent zero, while
+   Instagram's bio link sent 28 — the first channel in the whole record to
+   convert reliably. LinkedIn's video posts still produce 0–2 impressions and
+   0 clicks each (reread 09-14, five posts), the same failure measured on
+   09-07. What has **not** been reread is the personal profile, which is where
+   09-07's 45 % actually came from — read it before concluding LinkedIn is
+   dead rather than just off the company page.
+2. **The plan's 70 % three-second retention target is now partly measurable.**
+   YouTube's per-Short average-percentage-viewed is collected in the 09-14
+   audit and shows two clean batches: 63–97 % for 09-05→09-09, 53–67 % for
+   09-12. TikTok and Instagram per-post retention are still not collected.
+   Because the channel sequence's phases are already moot, the 3–4 October
+   exit gate should be re-scoped from "review before opening Phase 2" to "review
+   what the last month actually measured" — the gate's question survives, its
+   trigger condition does not.
+3. **The plan's link problem is half-solved.** Scheme-tagged UTM links still
+   send almost nobody (one visitor, ever, on the `traore-diop` campaign).
+   Instagram's own auto-tagged bio link is the only link in the whole system
+   that has converted at volume. This does not validate the link-builder
+   tool — it validates putting one clickable link in one place a reader
+   already trusts, which is what the bio has always been.
 
 The plan's own note stands: its dates start 7 September 2026, and any launch
-slip must shift the whole calendar accordingly.
+slip must shift the whole calendar accordingly. That note now matters less
+than the fact that the calendar itself stopped governing which channels are
+live on any given day.
