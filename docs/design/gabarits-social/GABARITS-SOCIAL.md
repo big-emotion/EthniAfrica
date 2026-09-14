@@ -642,6 +642,7 @@ s'écrit ici d'abord, jamais dans une carte.
 | une famille de langues, regroupant plusieurs peuples sous un seul nom | un registre de la banque ci-dessous | celui du registre | « Cette famille n'est pas un peuple. » | « peuple. » | « On lui a donné un nom, par-dessus des peuples qui avaient déjà le leur. » — *décidé par l'opérateur le 2026-09-14, pour le sujet Mandé — distinct de la ligne « une langue, une famille » ci-dessus : celle-ci porte la légitimité d'une classification, celle-là la confusion entre un nom de famille et un nom de peuple* |
 | un système politique sans souverain unique — un peuple qui gouverne autrement qu'avec un roi ou un chef héréditaire — *validé par l'opérateur le 2026-09-14* | un registre de la banque ci-dessous | celui du registre | « Ce peuple n'a jamais eu de roi. » | « roi. » | « Le pouvoir s'y prête, il ne s'y transmet pas. » |
 | un nom partagé, repris par plusieurs peuples distincts | un registre de la banque ci-dessous | celui du registre | « Ce nom n'a pas été subi. » | « subi. » | « On se l'est approprié. » — *décidé par l'opérateur le 2026-09-14, pour le sujet `creole-ne-dans-la-colonie` — distinct de la ligne « une famille de langues » ci-dessus : celle-là porte un nom imposé qui écrase des peuples ayant déjà le leur, celle-ci un nom d'abord extérieur que plusieurs peuples, sans parenté entre eux, ont chacun fait leur propre nom* |
+| un personnage historique — une figure individuelle, jamais un peuple ou un pays — *validé par l'opérateur le 2026-09-14* | un registre de la banque ci-dessous | celui du registre | « Il n'a pas eu qu'une ligne dans l'Histoire. » | « Histoire. » | « C'est pourtant tout ce qu'on lui avait laissé. » — *décidé pour le sujet `zokou-gbeuly-resistance-bete` : le corpus AFRIK et les histoires générales ne portent ces figures qu'en clause noyée dans la fiche d'un peuple entier — la clôture porte cet effacement documentaire, pas un mécanisme colonial spécifique, ce qui la distingue de toutes les lignes ci-dessus* |
 
 **`cards.json` ne porte jamais `**`** : les titres s'y recopient en texte brut depuis
 cette table, le moteur accentue de lui-même le dernier mot d'une clôture avec sa
@@ -1140,6 +1141,19 @@ deck au moment de rendre, comme `image.identite`.
 mesure. Ne l'employer que là où la coupe **porte du sens** — une énumération dont les
 groupes ne doivent pas se mélanger. Une coupe posée pour l'esthétique se périme au
 premier changement de format.
+
+**Quand `chiffre` est `true`, `titre` n'est plus un titre : c'est le contenu du
+rôle « Chiffre / mot d'accent »** (§3, Anton 216 px, **interligne 0,84**, aucune
+majuscule forcée — voir le tableau des rôles). Cet interligne est calibré pour
+une seule ligne courte, un nombre ou un mot d'accent (« 776 », « Nzema ») ; posé
+sur une phrase entière, il enchaîne un titre sur trois lignes qui se chevauchent
+lettre sur lettre — mesuré le 2026-09-14 sur `zokou-gbeuly`, où `titre` portait
+« Il naît en 1835, à l'ouest. » à la place d'un simple « 1835 ». La phrase
+descriptive va dans `precision` (Nunito 36 px, casse libre) ou dans `corps`,
+jamais dans `titre` d'une carte à chiffre. `qui-a-nomme-la-cote-divoire` porte
+le même défaut sur plusieurs cartes (`titre` y est une phrase complète malgré
+`chiffre: true`) et n'a jamais été rendu en image pour le révéler — à corriger
+avant son premier rendu.
 
 ---
 

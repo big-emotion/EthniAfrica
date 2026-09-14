@@ -69,7 +69,7 @@ Chaque critère se note **0, 1 ou 2**, avec la phrase citée qui justifie la not
 | #   | Critère                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Bloquant | Pour qui        |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | --------------- |
 | 1   | **Le cadre est dit dans la pièce elle-même.** Pour le type « un peuple réparti sur plusieurs pays » : un peuple nommé, et ce que la frontière lui fait ou ce qui est plus vieux qu'elle. Pour tout autre type que §7 ter reconnaît sous son propre mécanisme (§7 ter, « la table par type de contenu ») : ce mécanisme propre au type, pas la doctrine frontière/nom recopiée hors sujet — voir la note après cette grille. Un sujet qui n'est pas un peuple (un pays, une ville, un mot) relie son nom aux peuples qu'il désigne ; sans ce lien, 0. | oui      | le nouveau venu |
-| 2   | **Le nom qu'il se donne, d'abord.** Dès qu'un peuple est nommé, la paire est visible tôt — carte 2 au plus tard en carrousel, première scène après l'accroche en vidéo, premier écran sur une page — dans l'ordre nom qu'il se donne → nom qu'on lui donne, sous la forme de §3 bis. **Sauf sous-cas « qui a nommé ce pays » — voir la note sous la grille.**                                                                                                                                                                                        | oui      | les deux        |
+| 2   | **Le nom qu'il se donne, d'abord.** Dès qu'un peuple est le sujet déclaré du lot, la paire est visible tôt — carte 2 au plus tard en carrousel, première scène après l'accroche en vidéo, premier écran sur une page — dans l'ordre nom qu'il se donne → nom qu'on lui donne, sous la forme de §3 bis. **Sauf sous-cas « qui a nommé ce pays » — voir la note sous la grille — et ne s'applique pas à un peuple cité en passant dans un lot d'un autre sujet, voir « Le critère 2, lu par sujet déclaré » ci-dessous.**                              | oui      | les deux        |
 | 3   | **Le peuple est sujet de la phrase.** Le renversement d'agent de §7 ter ; le colonisateur n'est pas le sujet des phrases qui concluent.                                                                                                                                                                                                                                                                                                                                                                                                              | oui      | les deux        |
 | 4   | **Aucune phrase refusée.** Ni les trois de la doctrine, ni « les frontières sont arbitraires ».                                                                                                                                                                                                                                                                                                                                                                                                                                                      | oui      | les deux        |
 | 5   | **Les dates sont exactes, et aucune ne nomme Berlin.** « Moins de cent quarante ans » pour les frontières ; la date d'attestation propre au nom quand un nom est daté. Une clôture qui cite « Berlin » ou « 1884 », qui en fait l'auteur des lignes, ou qui pose « mille ans » comme un fait daté : 0.                                                                                                                                                                                                                                               | oui      | les deux        |
@@ -98,6 +98,25 @@ type du lot porte réellement**, jamais par un mécanisme par défaut.
 
 Un type absent de §7 ter n'a pas de mécanisme défini : le critère 1 reste à 0
 jusqu'à ce que §7 ter en porte un, exactement comme le critère 8.
+
+### Le critère 2, lu par sujet déclaré
+
+Décidé par l'opérateur le 2026-09-14, sur l'audit `zokou-gbeuly` — premier
+lot du type « un personnage historique » : **le critère 2 ne s'applique
+qu'aux lots dont le sujet déclaré est un peuple**, pas à un lot d'un autre
+type qui nomme un peuple en passant. `zokou-gbeuly` cite le peuple bété une
+fois, pour situer qui était Zokou Gbeuly ; le sujet du lot est l'homme, pas
+le nom du peuple bété, et aucune source lue ne documentait de toute façon une
+dualité autonyme/exonyme pertinente pour ce nom précis. Exiger une paire
+aurait forcé une seconde idée, hors sujet, dans un lot que le critère 7
+tient déjà à une seule boucle.
+
+C'est la même lecture que le critère 1 : un critère qui mesure un mécanisme
+de peuple ne s'applique qu'aux types dont le peuple est le sujet réel, jamais
+à un type qui se contente d'en nommer un. Un lot du type « un personnage
+historique », « une projection, une carte » ou tout autre type sans peuple
+pour sujet déclaré passe donc le critère 2 par défaut (2, sans paire à
+produire), sauf s'il relève du sous-cas ci-dessous.
 
 ### Sous-cas du critère 2 : un lot centré sur qui a nommé le pays
 
