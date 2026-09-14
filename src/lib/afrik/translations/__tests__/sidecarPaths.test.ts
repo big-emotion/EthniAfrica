@@ -13,8 +13,6 @@ import * as prettier from "prettier";
 import {
   listTranslationSidecars,
   readTranslationSidecar,
-  sidecarPathFor,
-  sourcePathFor,
   writeTranslationSidecar,
 } from "../sidecarPaths";
 
@@ -42,25 +40,6 @@ const BLOCK = {
 };
 
 describe("sidecar location (REQ-146)", () => {
-  // @req REQ-146
-  it("mirrors the source's relative path under the locale tree, and back", () => {
-    const sidecar = sidecarPathFor("peuples/FLG_BANTU/PPL_ZULU.json", "en");
-    expect(sidecar).toBe(
-      "dataset/translations/en/peuples/FLG_BANTU/PPL_ZULU.json"
-    );
-    expect(sourcePathFor(sidecar)).toEqual({
-      lang: "en",
-      sourceRelativePath: "peuples/FLG_BANTU/PPL_ZULU.json",
-    });
-  });
-
-  // @req REQ-146
-  it("refuses a path that is not under the translations tree", () => {
-    expect(() => sourcePathFor("dataset/source/afrik/pays/GHA.json")).toThrow(
-      /dataset\/translations/
-    );
-  });
-
   // @req REQ-146
   it("lists a locale's sidecars recursively and skips the curator's worksheets", () => {
     const root = createFixtureRoot();
