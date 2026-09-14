@@ -253,7 +253,7 @@ describe("translation parity — registered UI dictionaries (REQ-145)", () => {
 });
 
 describe("translation parity — modes (REQ-145)", () => {
-  // @req REQ-171
+  // @req REQ-145
   it("scopes staged/base runs to the diff and surveys the full tree without one", () => {
     expect(resolveParityMode([])).toEqual({ kind: "survey" });
     expect(resolveParityMode(["--all"])).toEqual({ kind: "survey" });

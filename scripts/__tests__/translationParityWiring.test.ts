@@ -42,6 +42,20 @@ describe("translation parity gate wiring (REQ-145)", () => {
     expect(step).toMatch(/^\s+continue-on-error: true$/m);
   });
 
+  // REQ-171 relaxes missing, deferred and drifted counterparts only; the
+  // glossary is not part of that decision, so it keeps its own blocking step
+  // rather than inheriting the parity report's continue-on-error.
+  // @req REQ-144
+  it("blocks CI on glossary divergences in a step of its own", () => {
+    const command = "- run: npm run check:glossary";
+    expect(workflow).toContain(command);
+
+    const stepStart = workflow.indexOf(command);
+    const nextStep = workflow.indexOf("\n      - ", stepStart + 1);
+    const step = workflow.slice(stepStart, nextStep);
+    expect(step).not.toContain("continue-on-error");
+  });
+
   // @req REQ-171
   it("never runs the parity check at commit", () => {
     expect(lintStaged).not.toContain("checkTranslationParity");

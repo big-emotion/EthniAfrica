@@ -66,8 +66,11 @@ npm run check:translation-parity -- --all
 ```
 
 The staged and base modes scope the same report to a diff. They check changed
-corpus pairs in both directions, source drift, every registered UI dictionary
-and the bilingual glossary.
+corpus pairs in both directions, source drift and every registered UI
+dictionary. The bilingual glossary is not in this report: it still blocks, as
+its own CI step (`npm run check:glossary`, REQ-144), because REQ-171 relaxes
+counterparts and not terminology. Run it locally before pushing translated
+content.
 
 ```bash
 npm run check:translation-parity -- --staged

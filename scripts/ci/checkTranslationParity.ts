@@ -6,8 +6,9 @@
  * may opt out temporarily through `_translation.deferred.en`, but only with a
  * written reason. Existing pairs must keep the same field shape and the
  * hashes stored by `translate:record` must still describe the current source.
- * Registered UI dictionaries and the bilingual glossary ride on the same
- * command, so one report covers the whole translation contract.
+ * Registered UI dictionaries ride on the same report. The bilingual glossary
+ * (REQ-144) is left out of the command-line run: it still blocks, through its
+ * own `check:glossary` step, because REQ-171 does not relax it.
  *
  * Every finding is reported and none fails the run (DEC-055): publication is
  * French-only by `SITE_LOCALE_MODE`, so a missing English counterpart holds
@@ -672,7 +673,13 @@ function main(): void {
     return;
   }
 
-  const result = runTranslationParity({ repoRoot: process.cwd(), mode });
+  // The glossary blocks through its own `check:glossary` step; folding it into
+  // a report that never fails would make it non-blocking by accident.
+  const result = runTranslationParity({
+    repoRoot: process.cwd(),
+    mode,
+    includeGlossary: false,
+  });
   result.notices.forEach((item) => console.log(noticeAnnotation(item)));
   result.findings.forEach((item) => console.log(annotation(item)));
   const scope = mode.kind === "survey" ? "full tree" : `${mode.kind} diff`;
