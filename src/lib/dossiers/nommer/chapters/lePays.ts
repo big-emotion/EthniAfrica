@@ -20,7 +20,7 @@ export const CHAPITRE_LE_PAYS: DossierChapter = {
   ordinal: "02",
   title: "Le pays",
   question:
-    "Les frontières viennent de Berlin. Et les noms qu'on a posés dessus, d'où viennent-ils ?",
+    "Les frontières ont été tracées par d'autres, à des dates différentes. Et les noms qu'on a posés dessus, d'où viennent-ils ?",
   standfirst: {
     id: "standfirst",
     text: "Moins d'un tiers des pays du continent portent un nom que des Africains ont choisi. Renommer n'a pas été un moment : c'est une pratique qui court sur soixante ans.",
