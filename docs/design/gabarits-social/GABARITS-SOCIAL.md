@@ -120,6 +120,23 @@ taille et de sa place, jamais d'un contraste raté.**
 | **Corps** | Nunito | **32** | 1,55 | 400 | — | encre 2 |
 | Source | Nunito | 20 | — | 700 | maj., interlettre .09em | encre 2, op. .92 |
 | **Crédit** | Nunito | **18** | 1,5 | 400 | — | encre 2, op. .88 |
+
+**L'interligne de ce tableau gouverne l'espacement entre les lignes d'un même
+bloc, jamais la hauteur qu'une seule ligne réserve.** Le corps d'une police
+(le nombre passé au moteur — 216, 96, 32…) n'est pas la hauteur visuelle
+d'une ligne : mesuré sur les deux polices du gabarit, une ligne réelle
+occupe **1,4 à 1,5×** son corps — Anton à 216 px mesure 255 + 72 = 327 px
+d'ascendant et de descendant, Nunito à 32 px mesure 33 + 12 = 45 px. Un
+rôle à interligne ≤ 1 sur une seule ligne — ici seulement « Chiffre / mot
+d'accent », 0,84, calibré pour l'écart *entre* deux lignes d'un mot
+d'accent, jamais pour la boîte d'une ligne seule — réservait donc une
+boîte plus petite que ses propres lettres. `ethni_compose._hauteur()`
+plancher désormais chaque bloc à 1,5× son corps ; ce n'est pas une valeur
+à recopier ailleurs, c'est une garantie de moteur, pas un choix de charte.
+Mesuré le 2026-09-14 sur `zokou-gbeuly` : un « 1835 » nu chevauchait sa
+légende avant, puis ne lui laissait que 5 px d'air après un premier
+correctif trop étroit — l'écart maintenant se compare à celui d'une
+production déjà publiée (« Sénoufo », pilier Mythe déconstruit).
 | Sous-titre narration | Nunito | 44–46 | 1,30 | 800 | — | encre 1 |
 
 **Mesures maximales** (rag maîtrisé) : précision 800 px · punchline 880 px ·
