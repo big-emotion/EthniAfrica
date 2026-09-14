@@ -10,6 +10,48 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [4.10.0] - 2026-09-14
+
+### Added
+
+- **Découvertes reads as a full-screen reel.** A photo-led reader opens over
+  the site chrome and walks through the images, anecdotes and proverbs one
+  card at a time (#1017, #1041).
+- **Generated images are published as declared fiction.** They carry their
+  own provenance, never a documentary one, and readers see that an image is
+  generated. The share sheet offers per-format downloads, each held to its
+  declared size and IPTC disclosure and published with its licence URI.
+  Eligible images are shelved by collection and browsable as a gallery
+  dossier. The first twelve are published and the gallery is open
+  (ETNI-1932, ETNI-1933, ETNI-1942–ETNI-1947, #1039).
+- A sourced proverbs dossier, with proverb cards in Découvertes (#1028).
+- Every anecdote is illustrated with a real, freely licensed picture (#1029).
+- The home hero draws a globe, an image or an anecdote, and the purpose
+  doctrine is published (#1013).
+- Migration `089` admits oral tradition as provenance for people names, with
+  the fixed source-quality weights of DEC-052 (ETNI-1924, #1026). The
+  deploy's `migrate` job applies it.
+- The CIA World Factbook's retirement on 2026-02-04 is recorded, and its
+  remaining live citations are held by a ratchet that fails in both
+  directions (#1038).
+
+### Changed
+
+- Self-names corrected and sourced, with the origin of their exonyms:
+  `PPL_SONGHAI` (the unsourced Ayneha autonym replaced, #1024), `PPL_TEKE`
+  (Tio, #1023), `PPL_TUAREG` (#1022), `PPL_SARA` (a contradiction between two
+  self-appellations resolved, #1025), `PPL_FANG` (and its three colonial
+  exonyms, #1020), `PPL_KABYLE` (#1021).
+- 43 people fiches that the name gate refused now carry a qualifying source
+  (#1019).
+- Reused appellation assertions point at the fiche's current sources (#1016).
+- The subjects of the generated images cite verified sources (#1037).
+
+### Fixed
+
+- Home: the borders sentence is qualified, the hero visual is pinned, and
+  search stays on the left (#1040).
+
 ## [4.9.0] - 2026-09-13
 
 ### Added
@@ -932,7 +974,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.9.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.10.0...HEAD
+[4.10.0]: https://github.com/big-emotion/ethniafrica/compare/v4.9.0...v4.10.0
 [4.9.0]: https://github.com/big-emotion/ethniafrica/compare/v4.8.0...v4.9.0
 [4.8.0]: https://github.com/big-emotion/ethniafrica/compare/v4.7.0...v4.8.0
 [4.7.0]: https://github.com/big-emotion/ethniafrica/compare/v4.6.0...v4.7.0
