@@ -1053,6 +1053,18 @@ Répartis à parts égales sur les légendes, les huit plans de Libreville affic
 clôture à 44,10 s quand sa première phrase se dit à 50,88 s — six secondes de doctrine
 posées sur un récit qui n'avait pas fini.
 
+### Aucune image ne tient plus de quatre secondes
+
+**Une image change au moins toutes les quatre secondes.** Passé ce seuil, l'œil a
+fini de lire le cadre et attend la suite ; au-delà, la vidéo se voit à l'arrêt même
+quand la voix continue. La Côte d'Ivoire et le Mandé ont été renvoyés en production
+pour cette raison précise : trop peu de changements d'image sur toute la durée.
+
+Seul un **passage important** — un moment que le montage doit laisser respirer, décidé
+au cas par cas et non par défaut — peut dépasser les quatre secondes. Ce n'est pas une
+dérogation tacite : le motif se justifie au même titre qu'une exception à toute autre
+règle de ce gabarit, jamais par une image qu'on n'a pas eu le temps de découper.
+
 ---
 
 ### Réserve assumée sur le crédit
