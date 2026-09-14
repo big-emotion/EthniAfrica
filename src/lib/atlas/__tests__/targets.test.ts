@@ -3,10 +3,23 @@ import { describe, expect, it } from "vitest";
 import {
   buildContinentOverlay,
   buildCountryOutlineOverlay,
-  buildCountrySetOverlay,
   buildFamilyFootprintOverlay,
   buildPeopleFieldOverlay,
+  COUNTRY_FILL_OPACITY,
+  getAdmin0Rings,
+  type CountrySetOverlay,
 } from "../overlays";
+import type { CountryId } from "@/types/afrik";
+
+/** A game round's overlay: every proposed country, in the order proposed. */
+function countrySet(countryIds: CountryId[]): CountrySetOverlay {
+  return {
+    kind: "country-set",
+    countryIds,
+    rings: countryIds.flatMap((id) => getAdmin0Rings(id) ?? []),
+    fillOpacity: COUNTRY_FILL_OPACITY,
+  };
+}
 import {
   buildAtlasTargets,
   buildCountryPickerTargets,
@@ -112,7 +125,7 @@ describe("buildAtlasTargets (REQ-117 AC1)", () => {
 
   // @req REQ-120
   it("gives a game round one choosable target per proposed country, in the order proposed", () => {
-    const overlay = buildCountrySetOverlay(["CMR", "NGA"]);
+    const overlay = countrySet(["CMR", "NGA"]);
 
     expect(
       buildAtlasTargets(overlay).map((target) => target.countryId)
@@ -121,7 +134,7 @@ describe("buildAtlasTargets (REQ-117 AC1)", () => {
 
   // @req REQ-120
   it("names a round's targets in French, so a choice never reads as an ISO code", () => {
-    const targets = buildAtlasTargets(buildCountrySetOverlay(["ZAF"]));
+    const targets = buildAtlasTargets(countrySet(["ZAF"]));
 
     expect(targets[0].nameFr).toBe("Afrique du Sud");
   });

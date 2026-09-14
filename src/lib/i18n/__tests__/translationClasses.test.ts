@@ -7,7 +7,6 @@ import { parsePatronymeFile } from "@/lib/afrik/parsers/patronymeParser";
 
 import { recordLeaves } from "../modelLeafPaths";
 import {
-  CLASS_EXCEPTIONS,
   classOf,
   coverageGaps,
   GLOSSED_INVARIANT_PATHS,
@@ -18,6 +17,54 @@ import {
   TRANSLATION_CLASSES,
   type StrictModelFile,
 } from "../translationClasses";
+
+interface ClassException {
+  leafName: string;
+  reason: string;
+}
+
+/**
+ * Leaf names that legitimately carry different classes in different models.
+ * The consistency test refuses any other divergence, so a new one has to be
+ * argued here rather than slipped into a table.
+ */
+const CLASS_EXCEPTIONS: readonly ClassException[] = [
+  {
+    leafName: "title",
+    reason:
+      "a dossier title is reader-facing prose (translatable); a source title is a citation (invariant)",
+  },
+  {
+    leafName: "nameMain",
+    reason:
+      "a people, a name or a naming system is a proper name (invariant); a migration's nameMain is an event title (translatable)",
+  },
+  {
+    leafName: "claim",
+    reason:
+      "oral traditions and written chronicles narrate (translatable); a linguistic reconstruction is a claim about the word (review_required)",
+  },
+  {
+    leafName: "value",
+    reason:
+      "the parser's {value, sourceRefs} wrapper holds prose under casteOrSocialFunction and totemicFoodProhibition, an enum under nisbaSubtype",
+  },
+  {
+    leafName: "label",
+    reason:
+      "relation.period.label is a French period wording (translatable); a patronyme homonym's label is the homonymous string itself (invariant)",
+  },
+  {
+    leafName: "vehicularRole",
+    reason:
+      "an enum on the langue model (invariant), a paragraph on the peuple model (translatable)",
+  },
+  {
+    leafName: "name",
+    reason:
+      "a people's or a language's name is a proper name (invariant); a kingdom's name has conventional English forms — Royaume du Kongo is the Kingdom of Kongo (review_required)",
+  },
+];
 
 const PUBLIC_ROOT = join(__dirname, "../../../../public");
 

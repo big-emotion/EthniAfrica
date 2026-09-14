@@ -6,7 +6,6 @@ import {
   PANEL_SIDE_BREAKPOINT_PX,
   SIDE_PANEL_VIEW_FRACTION,
   biasForPanel,
-  panelFreeRegion,
   resolvePanelAnchor,
 } from "../panelBias";
 
@@ -50,7 +49,17 @@ describe("biasForPanel (REQ-117 AC2, AC3)", () => {
   it("settles the subject inside the region the panel leaves free, at both anchorings", () => {
     for (const anchor of ["bottom", "side"] as const) {
       const bias = biasForPanel(anchor);
-      const free = panelFreeRegion(anchor);
+      // The clip-space rectangle the panel leaves uncovered: a bottom sheet
+      // takes its share off the bottom of [-1, 1], a side panel off the right.
+      const covered =
+        2 *
+        (anchor === "bottom"
+          ? BOTTOM_SHEET_VIEW_FRACTION
+          : SIDE_PANEL_VIEW_FRACTION);
+      const free =
+        anchor === "bottom"
+          ? { xMin: -1, xMax: 1, yMin: -1 + covered, yMax: 1 }
+          : { xMin: -1, xMax: 1 - covered, yMin: -1, yMax: 1 };
 
       expect(bias.offsetX).toBeGreaterThan(free.xMin);
       expect(bias.offsetX).toBeLessThan(free.xMax);

@@ -46,13 +46,6 @@ export interface ScaleFact {
   fieldPath: string;
 }
 
-/** The two assets every fact rests on. Asserted against by the bank's test. */
-// @req REQ-120
-export const SCALE_FACT_PROVENANCE_PATHS = [
-  MERCATOR_PROVENANCE_PATH,
-  LANDMARK_PROVENANCE_PATH,
-] as const;
-
 const worldArea = (id: string): number => shapeAreaKm2(WORLD_COMPARE[id].rings);
 const worldInflation = (id: string): number =>
   shapeInflation(WORLD_COMPARE[id].rings);

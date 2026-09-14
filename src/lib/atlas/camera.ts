@@ -71,10 +71,6 @@ const FIT_DISTANCE_PER_DEG = 1 / 78;
 /** The whole globe, undollied — what an unchosen fiche opens on. */
 // @req REQ-117
 export const MIN_ZOOM = 1;
-/** The tightest framing the curve above can reach. */
-// @req REQ-117
-export const MAX_ZOOM = 1 / FIT_DISTANCE_NEAREST;
-
 /**
  * How far in the reader may go by hand, which is further than any automatic
  * framing goes. The 1.62x ceiling above answers "frame this country with its

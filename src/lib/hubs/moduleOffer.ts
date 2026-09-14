@@ -9,7 +9,7 @@ import {
  *
  * The charter (§3) splits one question in two: a module is *listed* because it
  * exists, and *clickable* because what sits behind the click is worth the
- * reader's trip. `isModuleAvailable` answers the second, but it is async — one
+ * reader's trip. `getHubModules` answers the second, but it is async — one
  * half of it is a row count — and that is exactly why the header never asked
  * it. `SiteHeader` is a client component under a client `PageLayout`, so it
  * resolved clickability from `getModuleHref` alone, which only ever answers
@@ -69,7 +69,7 @@ export function isModuleOffered(
   definition: ReadinessInputs & { id: string },
   availability?: ModuleAvailabilityMap | null
 ): boolean {
-  // Declared beats measured, both here and in `isModuleAvailable`: a probe
+  // Declared beats measured, both here and in `getHubModules`: a probe
   // that found rows must not talk a module its editor called unready back
   // into the menu.
   if (!isModuleDeclaredReady(definition)) return false;

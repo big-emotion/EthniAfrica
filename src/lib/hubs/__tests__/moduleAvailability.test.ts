@@ -16,10 +16,7 @@ vi.mock("@/lib/supabase/server", () => ({
   createServerClient: createServerClientMock,
 }));
 
-import {
-  getHubModules,
-  isModuleAvailable,
-} from "@/lib/hubs/moduleAvailability";
+import { getHubModules } from "@/lib/hubs/moduleAvailability";
 import {
   MODULE_DEFINITIONS,
   getNavModules,
@@ -333,14 +330,6 @@ describe("moduleAvailability — REQ-106/REQ-114 data-backed hub availability", 
   });
 
   // @req REQ-106 @req REQ-114
-  it("keeps a static module live without ever touching the database", async () => {
-    const available = await isModuleAvailable({ availability: "static" });
-
-    expect(available).toBe(true);
-    expect(createServerClientMock).not.toHaveBeenCalled();
-  });
-
-  // @req REQ-106 @req REQ-114
   it("surfaces a static module as live even when every source is empty", async () => {
     createServerClientMock.mockReturnValue(
       buildSupabaseMock({
@@ -447,21 +436,6 @@ describe("moduleAvailability — REQ-106/REQ-114 data-backed hub availability", 
 
     expect(frise).toBeDefined();
     expect(frise?.available).toBe(false);
-  });
-
-  // Readiness is declared, so answering it costs nothing — and asking the
-  // database about a module we have already decided is unready would be a
-  // round trip whose answer is discarded.
-  // @req REQ-106 @req REQ-114
-  it("settles a module in preparation without touching the database", async () => {
-    const available = await isModuleAvailable({
-      availability: "data",
-      dataSource: "migration_events",
-      editorialReadiness: "draft",
-    });
-
-    expect(available).toBe(false);
-    expect(createServerClientMock).not.toHaveBeenCalled();
   });
 
   // The state `static` was the trap: with no table to consult, a static
