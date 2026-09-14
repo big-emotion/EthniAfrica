@@ -205,6 +205,11 @@ Required for a reader to report an error:
 
 Required in production, whatever their reputation as an optional extra:
 
+- `NEXT_PUBLIC_SITE_URL` — the public origin, for `metadataBase`, the Atom feed, the
+  flag-resolution email and the OpenAPI server. `resolveSiteUrl()` in `src/lib/siteUrl.ts`
+  throws on a production server when it is unset, so every page answers 500; `next build`
+  is exempt, which means a green build does not prove the value is there.
+
 - `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN`.
 
   Rate limiting **fails closed**. `checkUpstashConfigured()` in `src/lib/api/rate-limit.ts`
@@ -220,6 +225,7 @@ Required in production, whatever their reputation as an optional extra:
 
 Optional subsystems, each genuinely inert when unset: `SENTRY_DSN` / `NEXT_PUBLIC_SENTRY_DSN`,
 `NEXT_PUBLIC_PLAUSIBLE_DOMAIN`, `ANTIBOT_DIFFICULTY_BITS` (defaults to 20),
+`ANTIBOT_TTL_MS` (challenge lifetime, defaults to 300000),
 `REVALIDATE_SECRET`, `SUPABASE_WEBHOOK_SECRET`, `NEXT_PUBLIC_FEATURE_QUIZ`,
 `CORS_ALLOWED_ORIGIN`.
 

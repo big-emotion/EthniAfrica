@@ -87,6 +87,9 @@ const ALWAYS_DEFINED = new Set([
   "CI",
   "VERCEL",
   "VERCEL_URL",
+  // Set by `next build` itself, to tell a module it is being evaluated for the
+  // build rather than serving a request (`src/lib/siteUrl.ts`).
+  "NEXT_PHASE",
   // Not supplied by a deployment: the render engine sets it on the environment
   // of its own caption subprocess, one line before that subprocess reads it.
   // Documenting it in `.env.example` would invite somebody to set it by hand and

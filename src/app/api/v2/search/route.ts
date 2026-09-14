@@ -191,6 +191,10 @@ import { logger } from "@/lib/api/logger";
 import { searchQueryLog } from "@/lib/search/searchQueryLog";
 import { isTranslationLocale } from "@/lib/i18n/translationLocale";
 import type { FtsSearchParams } from "@/types/afrik";
+import {
+  DEFAULT_PAGE_SIZE as DEFAULT_LIMIT,
+  SEARCH_MAX_PAGE_SIZE as MAX_LIMIT,
+} from "@/api/v2/schemas/pagination";
 
 const VALID_CLASSIFICATION_STATUSES = new Set([
   "consensual",
@@ -199,8 +203,6 @@ const VALID_CLASSIFICATION_STATUSES = new Set([
   "reconstructive",
 ]);
 
-const MAX_LIMIT = 50;
-const DEFAULT_LIMIT = 20;
 const DEFAULT_OFFSET = 0;
 
 const FAMILY_ID = /^FLG_[A-Z0-9_]+$/;
