@@ -79,16 +79,12 @@ import { assembleComparison } from "@/api/v2/handlers/compare";
 import { compareQuerySchema } from "@/api/v2/schemas/compare";
 import { createApiResponse, createApiError } from "@/api/v2/utils/response";
 import { jsonWithCors, corsOptionsResponse } from "@/lib/api/cors";
-import { applyRateLimit } from "@/lib/api/rate-limit";
 import { CORPUS_CACHE_CONTROL as CACHE_CONTROL } from "@/api/v2/utils/corpusRoute";
 import { logger } from "@/lib/api/logger";
 
 // @req REQ-084
 export async function GET(request: NextRequest) {
   const startTime = Date.now();
-
-  const rateLimitResponse = await applyRateLimit(request);
-  if (rateLimitResponse) return rateLimitResponse;
 
   try {
     const searchParams = request.nextUrl.searchParams;

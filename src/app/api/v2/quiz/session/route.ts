@@ -128,7 +128,6 @@ import { composeQuizSessionHandler } from "@/api/v2/handlers/quiz";
 import { quizSessionQuerySchema } from "@/api/v2/schemas/quiz";
 import { createApiError } from "@/api/v2/utils/response";
 import { jsonWithCors, corsOptionsResponse } from "@/lib/api/cors";
-import { applyRateLimit } from "@/lib/api/rate-limit";
 import { logger } from "@/lib/api/logger";
 
 const NO_STORE_HEADERS = { "Cache-Control": "no-store" };
@@ -136,9 +135,6 @@ const NO_STORE_HEADERS = { "Cache-Control": "no-store" };
 // @req REQ-103
 export async function GET(request: NextRequest) {
   const startTime = Date.now();
-
-  const rateLimitResponse = await applyRateLimit(request);
-  if (rateLimitResponse) return rateLimitResponse;
 
   try {
     const searchParams = request.nextUrl.searchParams;
