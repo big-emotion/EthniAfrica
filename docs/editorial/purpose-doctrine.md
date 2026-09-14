@@ -251,6 +251,45 @@ par-dessus.** — the claim, labelled on the page as a position, not a finding.
      France. Pas renouer avec : reconnaître ce qui n'a jamais cessé. C'est plus
      vrai, et c'est moins triste.
 
+**A rule added 14 September 2026, from reviewing a draft, generalised to every
+production.** Reviewing the text of the Mandé carrousel before validating it —
+itself a new gate, added the same day after a video had been rendered on text
+the operator had never read in full — the operator flagged that the second
+card named several peoples (Maninka/Malinké, Bamana/Bambara, Soninké, Susu)
+only by the form most readers already know, with no endonym shown for any of
+them but the one carrying the card's `paires` pair. The card immediately after
+moved straight to the scholarly history of the family name (a German
+missionary, 1854) without having first grounded the piece in how those
+peoples name themselves. The operator's instruction, kept close to verbatim:
+
+> En fait, ça, c'est une règle que tu peux rajouter dans le projet pour
+> toutes les productions : on met d'abord en avant l'endonyme, on met
+> d'abord en avant comment ils se nomment eux-mêmes dans leur langue, et
+> ensuite on parle de comment les autres les ont nommés.
+
+**The rule, generalised beyond this one card.** Wherever a production names a
+people, the name it gives itself comes first — in the running prose, not only
+in a card's dedicated `paires` block. A `paires` pair stays the visible,
+labelled demonstration of the mechanism for one or two featured peoples per
+card (§3 bis of `GABARITS-SOCIAL.md` still bounds it at two to four entries);
+every other people named in the same sentence or the same card's body still
+opens on its own name before any exonym follows, even in a plain list — never
+the exonym alone, with the self-name omitted because there was no room for a
+second visual pair. Concretely, applied to this carrousel: "Maninka (qu'on
+appelle Malinké), Bamana (Bambara), Soninké, Susu…" rather than "Malinké,
+Bambara, Soninké, Susu…" The corpus fiches already carry this distinction on
+`content.appellations` (`selfAppellation` vs `mainName`/`exonyms`) for most
+peoples; a production names it from there rather than defaulting to the
+`mainName` a French reader already recognises.
+
+**Where this rule already lived, and what changes.** `ethniafrica-message`'s
+own vocabulary table already preferred « le nom qu'il se donne » wording and
+its criterion 2 already required a `paires` pair visible early — but scoped to
+the one people carrying that pair, not to every people a production names in
+passing. This addendum widens the same principle to the running prose; it
+does not replace the `paires` mechanism, which stays the featured
+demonstration.
+
 **On the home.** The series' opening statement — « La plupart des frontières
 de l'Afrique ont moins de cent quarante ans. Les noms en ont plus de mille. » —
 sits behind a closed « Notre propos » disclosure under the hero's answer, at

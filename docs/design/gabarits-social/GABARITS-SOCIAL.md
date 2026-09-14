@@ -151,6 +151,23 @@ colonne grandit, et il ne dit rien que la gouttière ne dise déjà.
 ligne touchent les jambages de la précédente — « Brésilien » sur « angolais ». Anton
 n'a aucune réserve verticale ; c'est l'interligne qui la fournit.
 
+**L'interligne de ce tableau gouverne l'espacement entre les lignes d'un même
+bloc, jamais la hauteur qu'une seule ligne réserve.** Le corps d'une police
+(le nombre passé au moteur — 216, 96, 32…) n'est pas la hauteur visuelle
+d'une ligne : mesuré sur les deux polices du gabarit, une ligne réelle
+occupe **1,4 à 1,5×** son corps — Anton à 216 px mesure 255 + 72 = 327 px
+d'ascendant et de descendant, Nunito à 32 px mesure 33 + 12 = 45 px. Un
+rôle à interligne ≤ 1 sur une seule ligne — ici seulement « Chiffre / mot
+d'accent », 0,84, calibré pour l'écart *entre* deux lignes d'un mot
+d'accent, jamais pour la boîte d'une ligne seule — réservait donc une
+boîte plus petite que ses propres lettres. `ethni_compose._hauteur()`
+plancher désormais chaque bloc à 1,5× son corps ; ce n'est pas une valeur
+à recopier ailleurs, c'est une garantie de moteur, pas un choix de charte.
+Mesuré le 2026-09-14 sur `zokou-gbeuly` : un « 1835 » nu chevauchait sa
+légende avant, puis ne lui laissait que 5 px d'air après un premier
+correctif trop étroit — l'écart maintenant se compare à celui d'une
+production déjà publiée (« Sénoufo », pilier Mythe déconstruit).
+
 **Halo sur tout texte d'affichage posé sur une image :**
 `text-shadow: 0 2px 20px rgba(18,14,10,.85), 0 0 6px rgba(18,14,10,.6)`. Il ne compte
 pas dans la mesure de contraste — c'est le voile qui doit atteindre le seuil — mais il
@@ -1184,6 +1201,19 @@ deck au moment de rendre, comme `image.identite`.
 mesure. Ne l'employer que là où la coupe **porte du sens** — une énumération dont les
 groupes ne doivent pas se mélanger. Une coupe posée pour l'esthétique se périme au
 premier changement de format.
+
+**Quand `chiffre` est `true`, `titre` n'est plus un titre : c'est le contenu du
+rôle « Chiffre / mot d'accent »** (§3, Anton 216 px, **interligne 0,84**, aucune
+majuscule forcée — voir le tableau des rôles). Cet interligne est calibré pour
+une seule ligne courte, un nombre ou un mot d'accent (« 776 », « Nzema ») ; posé
+sur une phrase entière, il enchaîne un titre sur trois lignes qui se chevauchent
+lettre sur lettre — mesuré le 2026-09-14 sur `zokou-gbeuly`, où `titre` portait
+« Il naît en 1835, à l'ouest. » à la place d'un simple « 1835 ». La phrase
+descriptive va dans `precision` (Nunito 36 px, casse libre) ou dans `corps`,
+jamais dans `titre` d'une carte à chiffre. `qui-a-nomme-la-cote-divoire` porte
+le même défaut sur plusieurs cartes (`titre` y est une phrase complète malgré
+`chiffre: true`) et n'a jamais été rendu en image pour le révéler — à corriger
+avant son premier rendu.
 
 ---
 
