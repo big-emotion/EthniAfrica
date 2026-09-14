@@ -273,7 +273,10 @@ def rendre_images(projet, deck, sous_titres, duree_par_scene, dossier, controle,
     for carte, duree in zip(deck["cartes"], duree_par_scene):
         if plafond is not None and n >= plafond:
             break
-        image = Image.open(projet / "assets" / carte["image"]["fichier"]).convert("RGB")
+        # §9 bis — several images per scene, none held past four seconds. Opened
+        # once each, not once per frame.
+        fichiers = {im["fichier"]: Image.open(projet / "assets" / im["fichier"]).convert("RGB")
+                    for im in gab.images_de(carte)}
         images = max(1, round(duree * FPS))
         if plafond is not None:
             images = min(images, plafond - n)
@@ -281,11 +284,12 @@ def rendre_images(projet, deck, sous_titres, duree_par_scene, dossier, controle,
         for i in range(images):
             instant = i / FPS
             st_ = sous_titre_a(sous_titres, debut_scene + instant, carte.get("pivot"))
+            vue = gab.carte_a(carte, instant, duree)
             # §9 bis — the video gabarit, not the carousel one. A video is not a
             # carousel that moves: ported as it stood, the carousel gabarit
             # produced nine recorded defects on this very montage.
             im = gab.peindre_video(
-                carte, deck, image=image, sous_titre=st_,
+                vue, deck, image=fichiers[vue["image"]["fichier"]], sous_titre=st_,
                 # The control renders with the clock switched off, not with a
                 # different composition: same durations, everything present.
                 instant=None if controle else instant,

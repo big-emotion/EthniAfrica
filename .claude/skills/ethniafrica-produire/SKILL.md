@@ -233,6 +233,9 @@ s'invente pas**. Deux choses s'apprennent à la prise :
   continu.** Même voix, mêmes réglages : le corps de Libreville sort à 3,96 mots
   par seconde et une clôture de 23 mots à 2,25. Une clôture regénérée seule
   demande donc `speech_rate` autour de **35** pour rejoindre le rythme du corps.
+- **`pauses` dans `production.json` fixe les silences minimaux** que la passe audio
+  complète (virgule, phrase, paragraphe, question, accroche — §9 bis). Un sujet choisi à
+  l'écoute sur un rythme resserré les baisse ici, sinon la passe les rallonge.
 - **`tempo` dans `production.json` étire la prise** : plus il est bas, plus le
   film est lent _et_ plus la voix souffre. **0,85 est le plancher** — en dessous,
   un humain doit écouter avant publication. Libreville était à 0,79 et y est

@@ -1112,6 +1112,30 @@ au cas par cas et non par défaut — peut dépasser les quatre secondes. Ce n'e
 dérogation tacite : le motif se justifie au même titre qu'une exception à toute autre
 règle de ce gabarit, jamais par une image qu'on n'a pas eu le temps de découper.
 
+**Le moteur l'applique (2026-09-14).** Une scène peut porter plusieurs images, dans
+`images` (§10). La durée de la scène se découpe en créneaux égaux d'au plus quatre
+secondes, au moins un par image ; le premier créneau est la première image, **qui
+présente le sujet de la scène** — un personnage, un lieu, un document. Une scène plus
+longue que ses images ne peut couvrir **reprend la liste depuis la première** plutôt que
+de figer une image : une reprise se lit comme un rythme, un cadre figé comme un arrêt.
+Le crédit affiché est toujours **celui de l'image à l'écran**, et les portes 1 à 3
+lisent chaque image de la scène, pas seulement la première.
+
+**Un parallèle se montre, il ne se dit pas.** Une image peut porter un `surtitre` —
+« Pendant ce temps, en France : 1889, la tour Eiffel est inaugurée » — affiché tant que
+cette image est à l'écran, dans l'emplacement du nom de série (`top: 131`), qu'aucune
+scène entre l'ouverture et la clôture n'occupe. Il n'entre pas dans `narration.fr.txt`
+et ne change donc ni la voix, ni l'alignement, ni le début des scènes. La porte 3 le lit
+comme tout champ imprimé.
+
+**Le rythme des pauses se règle par sujet.** La passe audio complète chaque silence
+jusqu'à une pause minimale — virgule 0,20 s, phrase 0,40 s, paragraphe 0,48 s, question
+en fin de paragraphe 0,64 s, atterrissage de l'accroche 0,76 s, en secondes finales.
+Un sujet coupé pour un rythme plus rapide les resserre dans `production.json` →
+`"pauses": {"virgule": …, "phrase": …, "paragraphe": …, "question": …, "accroche": …}` ;
+une clé absente garde sa valeur. Sans ce réglage, la passe rallongeait les silences
+qu'on venait de resserrer à l'écoute.
+
 ---
 
 ### Réserve assumée sur le crédit
@@ -1169,6 +1193,14 @@ sous-titre, transitions entre séquences. §9 et le brief vidéo portent la cade
 ```
 
 `disposition` accepte `auto`, `A`, `B`, `C`. `auto` applique §6.
+
+`images` — **vidéo seulement, facultatif** — liste, dans l'ordre, les images d'une scène
+qui en porte plusieurs (§9 bis, « Aucune image ne tient plus de quatre secondes »).
+Chaque entrée a exactement la forme de `image` : `fichier`, `w`, `h`, `cadrage`,
+`identite`, `verifie`, `credit`, `depot`, `licence`, plus un `surtitre` facultatif,
+affiché avec cette image et jamais dit. **La première présente le sujet de la scène.** Sans `images`, la scène garde son `image` unique : tous les decks écrits
+avant le 2026-09-14 se rendent sans changement. La licence de sortie se calcule sur
+toutes les images du lot.
 
 `image.identite` **décrit ce que l'image montre**, en une phrase, sans nommer son
 auteur ni sa licence. C'est ce que la porte 2 compare au crédit : sans lui, la porte
