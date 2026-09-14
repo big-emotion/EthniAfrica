@@ -205,7 +205,7 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
       },
     ],
     closing:
-      "Berlin, 1884. Independence, 1960. What the borders cut across is far older: 191 peoples live today in three countries or more. The Fula in twelve. The Soninke in eleven. Counted on 11 September 2026.",
+      "Most of Africa's borders are under a hundred and forty years old. What they cut across is far older: 191 peoples live today in three countries or more. The Fula in twelve. The Soninke in eleven. Counted on 11 September 2026.",
   },
   fr: {
     stepLabel: "01 · Le propos",
@@ -272,7 +272,7 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
       },
     ],
     closing:
-      "Berlin, 1884. Les indépendances, 1960. Ce que les frontières coupent est bien plus vieux : 191 peuples vivent aujourd’hui dans trois pays ou plus. Les Peul dans douze. Les Soninké dans onze. Compté le 11 septembre 2026.",
+      "La plupart des frontières de l’Afrique ont moins de cent quarante ans. Ce qu’elles coupent est bien plus vieux : 191 peuples vivent aujourd’hui dans trois pays ou plus. Les Peul dans douze. Les Soninké dans onze. Compté le 11 septembre 2026.",
   },
 };
 

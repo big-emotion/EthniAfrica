@@ -38,14 +38,16 @@ Ce que la doctrine dit, en bref — la source l'emporte si elle a changé depuis
   lui donnent vient après.**
 - **Trois phrases qu'on n'écrit pas** : « Avant, on vivait en accord avec le
   continent », « Les frontières sont arbitraires », « Renouer avec le passé ».
-- **Les dates :** la conférence de Berlin, 1884 — jamais « Berlin » seul ; les
-  indépendances, 1960. Une production qui date un nom précis donne la date
-  d'attestation de ce nom. **Deux formulations sont contestées** (audit du
-  message du 2026-09-13, constat 9) : « Berlin » comme celui qui a tracé les
-  lignes — la conférence a fixé des règles pour revendiquer un territoire, elle
-  n'a tracé aucune ligne — et « mille ans » posé comme un fait, qui ne se date
-  pas. Aucune clôture ne les porte tant que la session de doctrine n'a pas
-  tranché.
+- **Les dates :** plus de « Berlin, 1884 » nulle part, dans aucune production —
+  décidé par l'opérateur le 2026-09-14, qui tranche le point resté ouvert
+  depuis le constat 9 de l'audit du message du 2026-09-13. La conférence a fixé
+  des règles pour revendiquer un territoire, elle n'a tracé presque aucune
+  ligne elle-même ; la citer comme la date d'origine des frontières répète
+  l'erreur déjà relevée. La formule qui tient est celle de la doctrine :
+  « la plupart des frontières ont moins de cent quarante ans » — jamais un lieu
+  et une date uniques. « Mille ans » pour les noms reste une position, non une
+  mesure datée : voir `docs/editorial/purpose-doctrine.md`. Une production qui
+  date un nom précis donne la date d'attestation de ce nom, pas « mille ans ».
 
 ## Trois modes
 
@@ -70,7 +72,7 @@ Chaque critère se note **0, 1 ou 2**, avec la phrase citée qui justifie la not
 | 2   | **Le nom qu'il se donne, d'abord.** Dès qu'un peuple est nommé, la paire est visible tôt — carte 2 au plus tard en carrousel, première scène après l'accroche en vidéo, premier écran sur une page — dans l'ordre nom qu'il se donne → nom qu'on lui donne, sous la forme de §3 bis.                                                                                                                                             | oui      | les deux        |
 | 3   | **Le peuple est sujet de la phrase.** Le renversement d'agent de §7 ter ; le colonisateur n'est pas le sujet des phrases qui concluent.                                                                                                                                                                                                                                                                                          | oui      | les deux        |
 | 4   | **Aucune phrase refusée.** Ni les trois de la doctrine, ni « les frontières sont arbitraires ».                                                                                                                                                                                                                                                                                                                                  | oui      | les deux        |
-| 5   | **Les dates sont exactes.** « La conférence de Berlin », 1884, 1960 ; la date d'attestation propre au nom quand un nom est daté. Une clôture qui fait de « Berlin » l'auteur des lignes, ou qui pose « mille ans » comme un fait : 0.                                                                                                                                                                                            | oui      | les deux        |
+| 5   | **Les dates sont exactes, et aucune ne nomme Berlin.** « Moins de cent quarante ans » pour les frontières ; la date d'attestation propre au nom quand un nom est daté. Une clôture qui cite « Berlin » ou « 1884 », qui en fait l'auteur des lignes, ou qui pose « mille ans » comme un fait daté : 0.                                                                                                                           | oui      | les deux        |
 | 6   | **La fin va vers ce qui est resté** — l'origine, les liens, les pays où le peuple vit aujourd'hui — pas vers la blessure.                                                                                                                                                                                                                                                                                                        | non      | les deux        |
 | 7   | **Une idée, une boucle fermée.** Une pièce qui ouvre trois sujets n'en fait passer aucun ; une question ouverte à l'accroche trouve sa réponse dans la pièce ou derrière son lien.                                                                                                                                                                                                                                               | non      | le nouveau venu |
 | 8   | **La clôture de son type.** La ligne de vision mot pour mot — « Nommer un peuple aussi facilement qu'un pays. » — et le titre et le corps de clôture du type du lot, pris mot pour mot dans la table par type de contenu de §7 ter : un lot sur un pays ne se clôt pas sur « Ce peuple n'a pas été divisé ». Un type absent de la table : 0. Sur une page du site : le propos est atteignable (« Notre propos », la page About). | oui      | l'abonné        |

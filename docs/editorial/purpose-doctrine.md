@@ -283,3 +283,29 @@ one: most borders are younger than the figure, not older.
 The quotations of the agent's reply above carry the corrected wording, so the
 series cannot be re-seeded from the retired one. Productions already published
 still open on it and are not re-rendered.
+
+**Berlin, 1884 is retired as a citation, not just corrected (2026-09-14).** The
+message audit of 2026-09-13 (finding 9) left open whether "Berlin" could still
+be named as long as a production did not credit it with drawing the lines. The
+operator closed that question directly: no production cites "Berlin, 1884" at
+all going forward, in any language, on any surface — not the About page's
+closing, not the scale-ladder rung, not a social closing card. The reasons
+above still explain _why_ Berlin cannot be the sole origin point (it set rules,
+drew almost no line itself); this addendum removes it as a citation entirely,
+in favour of the already-published formula, "la plupart des frontières ont
+moins de cent quarante ans," which carries the same claim without naming a
+single conference. `docs/design/gabarits-social/GABARITS-SOCIAL.md` §7 ter and
+`.claude/skills/ethniafrica-message/SKILL.md` are updated to match. Productions
+already published (the Dioula closing card among them, per the 09-13 audit)
+still carry the retired citation and are not re-rendered for this alone.
+
+**The closing doctrine also widens, the same day.** Beyond the fixed closing
+line for the peoples series ("Ce peuple n'a pas été divisé..."), the operator
+stated the doctrine's larger shape: names existed long before borders, and what
+survives the division is what actually connects every people to every other —
+not a story about who drew a line, but one of continuity and of connection
+across difference. This is a doctrine statement, not yet a formalised
+closing-line spec for every content type; folding it into this file's
+structure, GABARITS-SOCIAL §7 ter's type-by-type closing table, and the About
+page's `purposeChapter` is `/ethniafrica-message`'s work, not done by this
+edit.

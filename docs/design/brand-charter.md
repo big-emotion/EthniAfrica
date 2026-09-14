@@ -53,6 +53,22 @@ name on a product that then existed only in French, and it survives today only i
 places a reader reaches by accident: an API payload, a citation, a stylesheet
 header.
 
+**Where the name comes from, recorded 2026-09-14 because a reader can ask.**
+The project started as a plan to catalogue every ethnie of Africa — a
+dictionary of African ethnicities — which is the literal source of "Ethnie" +
+"Afrique". Partway through, the operator noticed two things the corpus itself
+now documents: "ethnie" is a word applied disproportionately to African
+peoples specifically, rarely to European ones, which is exactly the kind of
+naming asymmetry the atlas exists to surface; and "Afrique" is itself an
+exonym, probably from the Latin name of a North African people, the Afri (the
+atlas's own 2026-09-05 "Afrique — le nom du continent" piece). So the
+product's name is not a neutral label chosen from outside the project's
+subject — it is built from the same kind of word the atlas interrogates, on
+purpose, kept as the starting point of the inquiry rather than a settled
+position. A reader who asks "why is it called that" is asking the same
+question the atlas asks of every name it documents, and the honest answer is
+this one.
+
 One thing this section still does not settle: `CANONICAL_DOMAIN` is
 `ethniafrica.com` while recette is served from `africatlas.com`. The name
 decision is consistent with the constant, so the constant stands — but the
