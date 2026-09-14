@@ -50,6 +50,11 @@ Une phrase. Ce que ce sujet dit que personne ne dit ailleurs.
 
 Une phrase, au futur du lecteur : ce qu'il saura après.
 
+## Le mythe
+
+Les trois lignes et le verdict d'`ethniafrica-mythe` : le mythe attesté, la
+correction sourcée, et « défait un mythe », « explique » ou « ne passe pas ».
+
 ## Ce que le sujet ne dira pas
 
 La liste des choses que le corpus ne permet pas d'affirmer. C'est la section
@@ -69,6 +74,9 @@ Ce qui pourrait faire échouer le sujet.
 ## Les règles
 
 - **Un sujet, un pilier, un angle.** Deux angles sont deux sujets.
+- **Lance `ethniafrica-mythe` avant d'écrire la promesse.** Un sujet dont le
+  verdict est « ne passe pas » meurt ici ; « explique » est un sujet valable, dit
+  comme tel.
 - **Une accroche dont le corpus ne peut pas payer la dette n'est pas une
   accroche, c'est un appât.** Sur un atlas sourcé c'est aussi un mensonge sur le
   corpus. Si la promesse n'est pas tenable, le rapport le dit et le sujet meurt

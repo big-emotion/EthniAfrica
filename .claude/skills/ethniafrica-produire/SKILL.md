@@ -56,7 +56,9 @@ Le dossier du post est celui de la bibliothèque, pas celui de l'atelier — voi
    sujet. Il écrit son verdict dans `message.md`, à côté du `cards.json`. La
    porte est franchie si ce verdict dit **passe** et s'il est plus récent que
    `cards.json`, `narration.fr.txt` et `post.md` : un verdict rendu sur une
-   version précédente du texte ne juge pas celle qu'on rend.
+   version précédente du texte ne juge pas celle qu'on rend. Lance aussi
+   `ethniafrica-mythe` : un `mythe.md` qui dit **ne passe pas**, ou plus ancien
+   que ces fichiers, ferme cette porte de la même façon.
 
 La cinquième porte n'empêche pas de rendre, comme les quatre autres : un message
 qui ne passe pas fait sortir le lot **en épreuve**, et l'encart de l'épreuve
