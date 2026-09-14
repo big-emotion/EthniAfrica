@@ -180,7 +180,7 @@ jobs:
         run: |
           mkdir -p codex-home
           npx -y -p @big-emotion/ferry@v1.1.2 ferry-codex-config > codex-home/config.toml
-      - uses: openai/codex-action@52fe01ec70a42f454c9d2ebd47598f9fd6893d56 # v1.11
+      - uses: openai/codex-action@86365089eb2b84e0a8fb0717b304f8bdcb13b20e # v1.12
         with:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
           prompt: ${{ steps.prompt.outputs.prompt }}
