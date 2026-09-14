@@ -618,6 +618,7 @@ s'écrit ici d'abord, jamais dans une carte.
 | une projection, une carte | un registre de la banque ci-dessous | celui du registre | « La carte ne mentait pas. Elle ne disait pas tout. » | « tout. » | « On l'a redessinée. » |
 | le nom d'un pays | un registre de la banque ci-dessous | celui du registre | « Ce pays ne s'est pas renommé. » | « renommé. » | « On l'a rebaptisé. » — *dérivé de la ligne des villes le 2026-09-13, à valider* |
 | une langue, une famille | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas disparu. » | « disparu. » | *à fixer* — aucune seconde moitié n'a encore été écrite |
+| un système politique sans souverain unique — un peuple qui gouverne autrement qu'avec un roi ou un chef héréditaire — *validé par l'opérateur le 2026-09-14* | un registre de la banque ci-dessous | celui du registre | « Ce peuple n'a jamais eu de roi. » | « roi. » | « Le pouvoir s'y prête, il ne s'y transmet pas. » |
 
 **`cards.json` ne porte jamais `**`** : les titres s'y recopient en texte brut depuis
 cette table, le moteur accentue de lui-même le dernier mot d'une clôture avec sa
