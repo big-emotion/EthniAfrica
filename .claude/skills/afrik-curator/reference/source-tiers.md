@@ -54,8 +54,11 @@ must be replaced by a "primary" one before a proposal is final, it is stale.
 
 ## `needs_review` is not a tier
 
-1 031 entries in the corpus carry `tier: "needs_review"` — 398 people fiches, 54 countries,
-17 families. It marks the tail that has not been ruled on yet, and the code keeps it
+The number of corpus entries still carrying `tier: "needs_review"` is
+`NEEDS_REVIEW_RATCHET` in `scripts/ci/checkSourceTierCoverage.ts` — read it there; a count
+copied here goes stale with the next ruling. It marks the tail that has not been ruled on
+yet, is resolved one citation at a time through the ruling ledger
+(`docs/editorial/source-review/source-tier-rulings.json`), and the code keeps it
 deliberately outside the tier union (`src/types/afrik.ts:180`), so it is never _shown_ as a
 level of authority.
 

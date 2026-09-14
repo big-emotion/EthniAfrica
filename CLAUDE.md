@@ -365,6 +365,29 @@ Wikipedia is not a source. A primary source _discovered through_ Wikipedia is ci
 by its own URL, and its `notes` field records which Wikipedia language versions were crossed so the
 chain stays auditable.
 
+#### `needs_review` is a transitional marker, not a tier
+
+A corpus citation nobody has ruled on yet says `tier: "needs_review"`. It is a marker at the corpus
+boundary, never a fourth tier, and it exists to disappear:
+
+- **Stored as `NULL`** in `sources.tier` by every loader — folding it onto `unverified` would publish a
+  ruling nobody made. Migration `088` admits the literal, but no loader writes it.
+- **Labelled "En attente d'examen"** / "Awaiting review" (`SOURCE_PENDING_REVIEW_LABEL`), visually
+  distinct from the three tiers.
+- **Weighted 0.4** by `recompute_confidence()` (migration `088`): not yet judged cannot claim more
+  than judged weak.
+- **Held by a two-way ratchet**, `NEEDS_REVIEW_RATCHET` in `scripts/ci/checkSourceTierCoverage.ts`. Read
+  the constant for the current count.
+- **Resolved one citation at a time**, never by domain bulk: a moderator decides in the admin queue
+  (`/fr/admin/sources`), the decision is pulled into the git ledger
+  `docs/editorial/source-review/source-tier-rulings.json`, and `scripts/afrik/applySourceTierRulings.ts`
+  writes it into the fiches. A database-only edit is overwritten by the next sync, so a ruling that
+  does not reach git has not happened. The moderator's rationale lives in the ledger and never in
+  `sources[].notes`, which readers see verbatim.
+
+When the ratchet reaches zero, `needs_review` is removed everywhere it is spelled: `SourceTierState`
+and its zod, OpenAPI, badge and facet branches, and the value admitted by `sources_tier_check`.
+
 #### Tier is authority; `source_kind` is provenance
 
 They are orthogonal axes and must not be collapsed:

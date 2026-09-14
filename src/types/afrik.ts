@@ -7,7 +7,7 @@
  * - New sections can be added to TXT files without schema migration
  */
 
-import type { SourceTier } from "@/types/sources";
+import type { SourceTierState } from "@/types/sources";
 import type { PersonId, PersonPeopleLink } from "@/types/persons";
 import type { TranslationLocale } from "@/lib/i18n/translationLocale";
 
@@ -194,7 +194,7 @@ export interface People {
 export interface FicheSource {
   title: string;
   url: string | null;
-  tier: SourceTier | "needs_review";
+  tier: SourceTierState;
   notes?: string;
 }
 
