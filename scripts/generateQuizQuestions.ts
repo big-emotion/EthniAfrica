@@ -25,7 +25,10 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 
 import { createAdminClient } from "../src/lib/supabase/admin";
 import { logger } from "../src/lib/api/logger";
-import { getQuizMinConfidence } from "../src/lib/quiz/eligibility";
+import {
+  getQuizMinConfidence,
+  QUIZ_SOURCE_COLUMNS,
+} from "../src/lib/quiz/eligibility";
 import type { TranslationLocale } from "../src/lib/i18n/translationLocale";
 import type { AutonymExonymName } from "../src/types/quiz";
 import {
@@ -163,7 +166,7 @@ async function fetchProvenance(
     (idChunk, from, to) =>
       supabase
         .from("sources")
-        .select("id, tier, verified_at")
+        .select(QUIZ_SOURCE_COLUMNS)
         .in("id", idChunk)
         .range(from, to)
   );

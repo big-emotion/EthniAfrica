@@ -713,6 +713,25 @@ describe("composeQuizSession", () => {
     expect(session.map((question) => question.id)).toEqual(["q-self"]);
   });
 
+  /**
+   * The source read embeds `oral_narratives`. Should PostgREST refuse that
+   * embed, every question loses its sources and fails the gate: the session
+   * is empty rather than served on sources nobody could read. Pinned so that
+   * outcome is a decision, not an accident of the error branch.
+   */
+  // @req REQ-175
+  it("serves nothing when the source read fails, rather than ungated rounds", async () => {
+    tableRows.set("quiz_questions", [questionRow("q-a", "PPL_A")]);
+    tableErrors.set("sources", { message: "could not embed oral_narratives" });
+
+    const { questions: session } = await composeQuizSession({
+      scope: { kind: "mixed" },
+      count: 8,
+    });
+
+    expect(session).toEqual([]);
+  });
+
   // @req REQ-103
   it("returns an empty array without throwing on a query error", async () => {
     tableErrors.set("quiz_questions", { message: "boom" });

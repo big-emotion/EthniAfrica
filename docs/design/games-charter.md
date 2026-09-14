@@ -301,9 +301,19 @@ The reveal shows, in this order:
 
 1. **Right or wrong**, plainly.
 2. **The verbatim corpus text** — `GameReveal.textFr`, never paraphrased.
-3. **The source and its tier**, through `ConfidenceChip`. A game round rests on
-   the same provenance doctrine as a fiche: a claim sourced only at
-   `unverified` is played _and_ visibly marked.
+3. **The source and its tier**, through `ConfidenceChip`. A round asserts an
+   answer as correct, so it rests on a source at `official` or `referenced`, or
+   on an `oral_tradition` source that names its narrative and the community it
+   was collected in, and whose narrator has consented: the narrative's
+   `rights_status` is `cleared` (DEC-055, REQ-175). A narrative still pending
+   or revoked is not played, whatever the key the bank is generated with. A
+   round resting on an oral tradition
+   says whose it is, at the end of its explanation:
+   « selon la tradition orale de {community} », in English "according to the
+   oral tradition of {community}". A people's own account is played as what
+   that community tells, never as a written finding. A round resting only on
+   any other `unverified` source is not generated: the fiche still publishes
+   and labels that claim, the quiz does not assert it.
 4. **A way in** — a link to the fiche of the people or country just played.
 
 A wrong answer is the most valuable moment in the session. It is the one time
