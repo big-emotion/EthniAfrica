@@ -1,0 +1,137 @@
+{
+  "basotho": {
+    "source": {
+      "title": "Basotho Hat (Mokorotlo) – The Global Language of Headwear",
+      "url": "https://ttugloballanguageheadwear.org/exhibit_item/basotho-hat-mokorotlo/",
+      "tier": "referenced"
+    },
+    "detailSources": [
+      {
+        "title": "A nation wrapped in tradition: Over 160-years' legacy of the Basotho blankets",
+        "url": "https://zenodo.org/records/19458019"
+      }
+    ]
+  },
+  "amazigh": {
+    "source": {
+      "title": "Bijoux",
+      "shortTitle": "Encyclopédie berbère",
+      "url": "https://journals.openedition.org/encyclopedieberbere/1758",
+      "tier": "referenced"
+    },
+    "detailSources": []
+  },
+  "ewe": {
+    "source": {
+      "title": "Man's kente (prestige cloth)",
+      "shortTitle": "The Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/art/collection/search/320677",
+      "tier": "referenced"
+    },
+    "detailSources": []
+  },
+  "swahili": {
+    "source": {
+      "title": "Stone Town of Zanzibar",
+      "shortTitle": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/173/",
+      "tier": "official"
+    },
+    "detailSources": []
+  },
+  "kongo": {
+    "source": {
+      "title": "Kongo",
+      "shortTitle": "SIL Ethnologue",
+      "url": "https://www.ethnologue.com/language/kon/",
+      "tier": "official"
+    },
+    "captionSource": {
+      "title": "Congo / R.D. Congo. Le Pool, Kinshasa et Brazzaville : deux métropoles frontalières",
+      "url": "https://cnes.fr/geoimage/congo-rd-congo-pool-kinshasa-brazzaville-deux-metropoles-frontalieres-fleuve-congo-aux-defis"
+    },
+    "detailSources": []
+  },
+  "somali": {
+    "source": {
+      "title": "Somalia - FOREIGN RELATIONS",
+      "shortTitle": "Library of Congress Country Study",
+      "url": "https://countrystudies.us/somalia/78.htm",
+      "tier": "referenced"
+    },
+    "detailSources": [
+      {
+        "title": "Somalia - The Economy",
+        "url": "https://countrystudies.us/somalia/56.htm"
+      }
+    ]
+  },
+  "hausa": {
+    "source": {
+      "title": "Hausa and the Chadic Languages",
+      "shortTitle": "Paul Newman",
+      "url": "https://scholarworks.iu.edu/dspace/bitstreams/b175371d-4472-4485-abd1-f96698068937/download",
+      "tier": "referenced"
+    },
+    "detailSources": [
+      {
+        "title": "La vieille ville de Zinder, quartier de Birni et le Sultanat",
+        "url": "https://whc.unesco.org/en/tentativelists/5040/"
+      }
+    ]
+  },
+  "swazi": {
+    "source": {
+      "title": "Census 2022 Statistical Release",
+      "shortTitle": "Statistics South Africa",
+      "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
+      "tier": "official"
+    },
+    "detailSources": [
+      {
+        "title": "Swaziland Releases Population Count from 2017 Census",
+        "url": "https://eswatini.unfpa.org/en/news/swaziland-releases-population-count-2017-census"
+      }
+    ]
+  },
+  "njinga": {
+    "source": {
+      "title": "Njinga Mbandi: Queen of Ndongo and Matamba",
+      "shortTitle": "UNESCO Publishing",
+      "url": "https://shop.unesco.org/products/njinga-mbandi-queen-of-ndongo-and-matamba",
+      "tier": "official"
+    },
+    "captionSource": {
+      "title": "Património histórico angolano deixado ao abandono",
+      "url": "https://www.voaportugues.com/a/angola-turismo-abandono/3822128.html"
+    },
+    "detailSources": []
+  },
+  "mansa-musa": {
+    "source": {
+      "title": "Mansa Musa's Hajj to Mecca",
+      "shortTitle": "Northwestern University Library",
+      "url": "https://caravans.library.northwestern.edu/tour/mansa-musas-hajj-to-mecca",
+      "tier": "referenced"
+    },
+    "detailSources": []
+  },
+  "grand-zimbabwe": {
+    "source": {
+      "title": "Great Zimbabwe National Monument",
+      "shortTitle": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/364/",
+      "tier": "official"
+    },
+    "detailSources": []
+  },
+  "marrakech": {
+    "source": {
+      "title": "Medina of Marrakesh",
+      "shortTitle": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/331/",
+      "tier": "official"
+    },
+    "detailSources": []
+  }
+}

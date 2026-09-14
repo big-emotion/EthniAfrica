@@ -38,4 +38,26 @@ export const DISCOVERY_SLUGS = {
     fr: "proverbe-shona-pouce",
     en: "shona-proverb-thumb",
   },
+  // Generated images (DEC-053), keyed `image:<slug>` for the same reason.
+  "image:basotho": { fr: "autonyme-basotho", en: "basotho-autonym" },
+  "image:amazigh": { fr: "autonyme-imazighen", en: "imazighen-autonym" },
+  "image:ewe": { fr: "autonyme-ewe", en: "ewe-autonym" },
+  "image:swahili": { fr: "autonyme-waswahili", en: "waswahili-autonym" },
+  "image:kongo": { fr: "bakongo-deux-rives", en: "bakongo-both-banks" },
+  "image:somali": { fr: "soomaali-deux-cotes", en: "soomaali-both-sides" },
+  "image:hausa": { fr: "hausawa-deux-cotes", en: "hausawa-both-sides" },
+  "image:swazi": { fr: "emaswati-deux-cotes", en: "emaswati-both-sides" },
+  "image:njinga": { fr: "reine-njinga-mbande", en: "queen-njinga-mbande" },
+  "image:mansa-musa": {
+    fr: "mansa-musa-pelerinage-1324",
+    en: "mansa-musa-pilgrimage-1324",
+  },
+  "image:grand-zimbabwe": {
+    fr: "grand-zimbabwe-maisons-de-pierre",
+    en: "great-zimbabwe-houses-of-stone",
+  },
+  "image:marrakech": {
+    fr: "marrakech-almoravide",
+    en: "almoravid-marrakesh",
+  },
 } satisfies Record<string, Record<Language, string>>;
