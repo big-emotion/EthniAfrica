@@ -17,7 +17,7 @@ import { formatDate } from "@/lib/languageTag";
 import { getSourceRoute } from "@/lib/routing";
 import { sourceStandingLabel } from "@/lib/glossaire/vocabularies";
 import type { Language } from "@/types/shared";
-import { SOURCE_TIERS, toSourceTier, type SourceTier } from "@/types/sources";
+import { toSourceTier, type SourceTier } from "@/types/sources";
 import { sourceTransparencyCopy } from "@/lib/i18n/copy/sourceTransparency";
 
 /* -------------------------------------------------------------------------- */
@@ -40,6 +40,12 @@ export type Source = {
    * with everything it did not recognise.
    */
   tier: SourceTier | "needs_review";
+  /**
+   * Set only on an oral narrative: `true` once its review is approved. A
+   * reviewed narrative keeps its `unverified` tier yet is read with the
+   * confirmed sources (DEC-055); an unreviewed one stays with the others.
+   */
+  reviewedNarrative?: boolean;
   /** Its place in the citing fiche's bibliography, when the fiche has one. */
   bibliographyNumber?: number;
   /** ISO date string YYYY-MM-DD when the nightly health-check flagged the link. */
@@ -93,15 +99,6 @@ export type SourceChainSheetProps = {
 /* -------------------------------------------------------------------------- */
 /*  Constants                                                                  */
 /* -------------------------------------------------------------------------- */
-
-/**
- * Most authoritative first — the reading order of the groups.
- *
- * `needs_review` closes the list rather than joining the tiers, because it is
- * not one: it is the sources nobody has classified, and ranking them among the
- * three would place a judgement where none was made.
- */
-const TIER_ORDER = [...SOURCE_TIERS, "needs_review" as const];
 
 const CITE_DELAY_MS = 4000;
 
@@ -305,7 +302,9 @@ function SourceItem({
       className="space-y-1 rounded-md border border-[var(--afh-border,var(--country-border,#e5e7eb))] bg-[var(--afh-surface,var(--country-surface,#fff))] p-3"
     >
       <div className="flex items-start justify-between gap-2">
-        <p className="text-afh-small font-medium text-[var(--afh-fg,var(--country-fg,#111827))]">
+        {/* min-w-0 lets a long title wrap instead of pushing the standing
+            label off a 320 px sheet. */}
+        <p className="min-w-0 break-words text-afh-small font-medium text-[var(--afh-fg,var(--country-fg,#111827))]">
           {/* The number the fiche's bibliography gave this source. It is the
               only place a reader sees the two numbering schemes together —
               the callout counts passages, the footer counts sources — so
@@ -415,6 +414,12 @@ function TierGroup({
   );
 }
 
+/**
+ * Confirmed sources first, then everything else behind one sentence that says
+ * why it is there (REQ-174). Nothing is filtered: a weak source is shown under
+ * its own label, never dropped, because refusing it is the colonial filter
+ * DEC-055 exists to remove.
+ */
 function SourceList({
   language,
   sources,
@@ -422,17 +427,57 @@ function SourceList({
   language: Language;
   sources: Source[];
 }) {
-  const grouped = groupByTier(sources);
+  const copy = sourceTransparencyCopy[language].sourceChain;
+  const reviewedNarratives = sources.filter((s) => s.reviewedNarrative);
+  const grouped = groupByTier(sources.filter((s) => !s.reviewedNarrative));
+  const unconfirmedCount =
+    grouped.unverified.length + grouped.needs_review.length;
+
   return (
     <div className="space-y-4">
-      {TIER_ORDER.map((tier) => (
-        <TierGroup
-          key={tier}
-          language={language}
-          tier={tier}
-          sources={grouped[tier]}
-        />
-      ))}
+      {/* `needs_review` closes the list rather than joining the tiers: it is
+          the sources nobody has classified, and ranking them among the three
+          would place a judgement where none was made. */}
+      <TierGroup
+        language={language}
+        tier="official"
+        sources={grouped.official}
+      />
+      <TierGroup
+        language={language}
+        tier="referenced"
+        sources={grouped.referenced}
+      />
+      {reviewedNarratives.length > 0 ? (
+        <div data-testid="reviewed-narratives-group" className="space-y-2">
+          <h4 className="text-afh-eyebrow font-semibold uppercase tracking-wide text-[var(--afh-fg-muted,var(--country-fg-muted,#6b7280))]">
+            {copy.reviewedNarratives}
+          </h4>
+          <ul className="space-y-2">
+            {reviewedNarratives.map((s) => (
+              <SourceItem key={s.id} language={language} source={s} />
+            ))}
+          </ul>
+        </div>
+      ) : null}
+      {unconfirmedCount > 0 ? (
+        <p
+          data-testid="sources-unconfirmed-intro"
+          className="text-afh-small text-[var(--afh-fg-muted,var(--country-fg-muted,#6b7280))]"
+        >
+          {copy.unconfirmedIntro}
+        </p>
+      ) : null}
+      <TierGroup
+        language={language}
+        tier="unverified"
+        sources={grouped.unverified}
+      />
+      <TierGroup
+        language={language}
+        tier="needs_review"
+        sources={grouped.needs_review}
+      />
     </div>
   );
 }
