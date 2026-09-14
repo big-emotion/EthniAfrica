@@ -373,6 +373,15 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
       .map((style) => style.textContent)
       .join("\n");
     expect(styles).not.toMatch(/\.home-hero-purpose\s*\{[^}]*max-width/);
+    // Prose, so the body face at the body step (typography charter §1): in
+    // the display face at `lead` it read as a third headline voice on a band
+    // that already carries two (operator ruling, 2026-09-14).
+    const sentenceRule = styles.match(
+      /\.home-hero-purpose-sentence\s*\{([^}]*)\}/
+    )?.[1];
+    expect(sentenceRule).toMatch(/font-family:\s*var\(--afh-font-body\)/);
+    expect(sentenceRule).toMatch(/font-size:\s*var\(--afh-text-body\)/);
+    expect(sentenceRule).not.toMatch(/--afh-font-display|--afh-text-lead/);
     expect(styles).not.toMatch(
       /\.home-hero-purpose-sentence\s*\{[^}]*text-wrap:\s*balance/
     );

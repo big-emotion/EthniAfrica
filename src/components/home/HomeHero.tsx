@@ -305,11 +305,17 @@ export function HomeHero({
         .home-hero-purpose-panel {
           padding-block: var(--afh-space-xs) var(--afh-space-sm);
         }
+        /* Prose, so the answer's own dress: body face, body step, full ink.
+           Set in the display face at lead it was a third headline voice on a
+           band whose display face already speaks twice (the title at 900, the
+           anecdote at 700), and at a weight Fraunces is not even loaded in.
+           One voice for what the atlas says, the display face for what it
+           names (operator ruling, 2026-09-14). */
         .home-hero-purpose-sentence {
           margin: 0 0 var(--afh-space-xs);
-          font-family: var(--afh-font-display);
-          font-size: var(--afh-text-lead);
-          line-height: 1.35;
+          font-family: var(--afh-font-body);
+          font-size: var(--afh-text-body);
+          line-height: var(--afh-leading-body);
           color: var(--afh-text);
           /* pretty, not balance: balance evens the lines out and so never
              lets them reach the column's edge, which is the width asked for.
