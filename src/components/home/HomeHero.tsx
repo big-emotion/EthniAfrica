@@ -234,8 +234,12 @@ export function HomeHero({
         .home-hero-copy h1 {
           font-family: var(--afh-font-display);
           font-weight: 900;
-          font-size: var(--home-text-hero-title);
-          line-height: 1.04;
+          /* The scale's hero step, not the home's own clamp: that one was
+             written in px, which ignores the reader's font-size setting
+             (typography charter §2), and topped out at 56px, above the
+             scale's ceiling. It is 34px rather than 30px at 430. */
+          font-size: var(--afh-text-hero);
+          line-height: var(--afh-leading-hero);
           margin: 0 0 16px;
           color: var(--afh-text);
           text-wrap: balance;

@@ -147,10 +147,11 @@ In descending order of preference:
    declared in `tailwind.config.ts` and every entry maps 1:1 onto a token.
 2. **The token in CSS** — `font-size: var(--afh-text-body);`. For styled-jsx,
    `.css` files, and inline `style` objects.
-3. **A surface-scoped token that aliases the scale** — `--country-text-*`,
-   `--home-text-*`. Legitimate only as a named, greppable holding pen for a
-   value not yet reconciled with the scale, with a ticket against it. Never as
-   a permanent parallel scale.
+3. **A surface-scoped token that aliases the scale** — `--country-text-*`.
+   Legitimate only as a named, greppable holding pen for a value not yet
+   reconciled with the scale, with a ticket against it. Never as a permanent
+   parallel scale. The home's own pen, `--home-text-*`, was the last one
+   emptied and is closed (§7).
 
 Everything else is a defect the linter reports:
 
@@ -185,10 +186,84 @@ accumulate new debt.
 
 Do not reopen it. A surface that needs a size the scale does not have takes
 route 3 of §6 — a named, surface-scoped token with a ticket against it. The
-worked example is `src/styles/home-tokens.css`: the home carried 25 hand-set
+worked example was `src/styles/home-tokens.css`: the home carried 25 hand-set
 sizes, 20 of them half-steps (15.5, 14.5, 13.5, 12.5, 11.5, 10.5 px) that land
 on no step of the scale. Rounding 12.5 to 12 or to 13 on the most visited page
 in the product is a design decision no test here can settle, so the values were
-named at their current pixel, byte for byte, and the reconciliation is a
-separate ticket. The dette is now one table of twenty rows for a designer to
-rule on, instead of a diff across eight components.
+named at their current pixel, byte for byte, and the reconciliation was a
+separate ticket. The dette became one table for a designer to rule on, instead
+of a diff across eight components.
+
+**That pen is closed.** Its last token, the title's `clamp(30px, 5.6vw, 56px)`,
+moved onto `--afh-text-hero` on 2026-09-14 with the rest of §8, and the file was
+deleted. `homeTokensCharter.test.ts` keeps it closed: a `--home-text-*` token
+reappearing anywhere on the home fails the build.
+
+## 8. The home, element by element
+
+The home's first screen was measured on 2026-09-14 at 430, 720 and 1200 px, and
+it failed the eye before it failed any rule: **three families on one screen**
+(Fraunces, Nunito Sans, and JetBrains Mono on the « Saviez-vous que » kicker),
+**three Fraunces voices** (900 on the title, 700 on the anecdote headline, and
+500 on « Notre propos », which asked for a 400 the face is not loaded in), and
+**seven sizes**. Every element was defensible alone; together they did not read
+as one page. This section is the operator's ruling on each of them.
+
+### 8.1 The principle
+
+**The display face names. The body face explains and operates. The monospace
+aligns figures in a column.** The home has no column of figures, so it carries
+no monospace. Any screen of the home therefore shows two families, and the
+display face speaks at two weights only: 900 for the page's own title, a key
+figure and the lockup; 700 for a heading role (brand charter §6).
+
+**An ink states a status, never a decoration.** Four inks, and each one is a
+claim about the text it paints. The contrast ratios are measured on the home's
+own grounds, and every one clears AA, so the choice between them is about
+meaning, not legibility:
+
+| Ink                   | Means                                  | Contrast                                                       |
+| --------------------- | -------------------------------------- | -------------------------------------------------------------- |
+| `--afh-text`          | text that is read                      | 14.8:1 on `--afh-bg`                                           |
+| `--afh-text-soft`     | secondary or optional                  | 5.3:1 on `--afh-bg`, 4.8:1 on `--afh-bg-warm`                  |
+| `--accent-ink`        | leads into the corpus, or codes a kind | 6.0:1 (ocre) and 5.8:1 (teal) on `--afh-bg`                    |
+| `--accent-foreground` | text laid on the accent fill           | 5.9:1 on the ocre fill, where `--afh-text-soft` measures 1.8:1 |
+
+### 8.2 The table
+
+| Element                                   | Face · weight                        | Step                                                   | Ink                                        | Why this, and not another                                                                                                                                                            |
+| ----------------------------------------- | ------------------------------------ | ------------------------------------------------------ | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Masthead name                             | display 900                          | `h3`                                                   | `--afh-text`                               | It is the mark. It takes the title's weight so the brand and the page speak in one voice.                                                                                            |
+| Masthead qualifier                        | display 700                          | `caption`                                              | brand gradient                             | The one place the gradient is licensed (brand charter §5.3). At 13 px a 900 fills the counters.                                                                                      |
+| Masthead navigation                       | body 400                             | `body`                                                 | `--afh-text-soft`                          | Chrome, not content: present on every page, so it never outweighs the page it sits above.                                                                                            |
+| Page title                                | display 900                          | `hero`                                                 | `--afh-text`                               | The one thing to read first. The scale's top step, and no higher: the bespoke 56 px clamp it replaced sat above the scale's ceiling and ignored the reader's font-size setting (§2). |
+| Answer under the title                    | body 400                             | `body`                                                 | `--afh-text`                               | Prose takes the body face. `body`, not `lead`: it is the band's only paragraph and must not compete with the title.                                                                  |
+| « Notre propos » toggle, declaration link | body 600                             | `small`                                                | `--afh-text-soft`                          | Controls keep a fixed step (§2). The soft ink says optional; 600 makes a 16 px label read as pressable.                                                                              |
+| « Notre propos » statement                | body 400                             | `body`                                                 | `--afh-text`                               | The answer's own dress: both are the atlas speaking. In the display face at `lead` it read as a second headline; its place under the toggle is what sets it apart.                   |
+| Search label                              | body 600                             | `small`                                                | `--afh-text`                               | It instructs the primary action, so full ink rather than soft.                                                                                                                       |
+| Search field and button                   | body 400 · 500                       | `small`                                                | `--afh-text` · `--accent-foreground`       | 16 px is the floor under which iOS Safari zooms a focused field. The button's label is the darkest ink because it sits on the fill.                                                  |
+| Seed words                                | body 400                             | `small`                                                | `--accent-ink`                             | The accent ink says « leads to a record ». 400, so six chips never outweigh the button beside them.                                                                                  |
+| Corpus figures                            | display 900 · label body 600         | `h2` · `caption`                                       | `--afh-text` · `--afh-text-soft`           | The key-figure case (§3.1). The label qualifies the number and never competes with it.                                                                                               |
+| Section kicker (« Saviez-vous que »)      | body 600, uppercase, 0.16em          | `small` when the band is untitled (brand charter §8.5) | `--accent-ink`                             | A label, so the body face. In the monospace it was the third family on the first screen, and the monospace's job — a figure in a column — is not a kicker's.                         |
+| Anecdote headline                         | display 700                          | `h2`                                                   | `--afh-text`                               | A heading role's weight, one weight and one step under the title, so the question on the left is still read first.                                                                   |
+| Anecdote first paragraph                  | body 400                             | `body`                                                 | `--afh-text`                               | At `lead` it ran 22 px beside the answer's 19 px, and the visual column outweighed the copy column it serves.                                                                        |
+| Anecdote following paragraphs             | body 400                             | `body`                                                 | `--afh-text-soft`                          | Set back by ink, not by size: the reader keeps one reading size inside one card.                                                                                                     |
+| Entity chips                              | body 600 · kind in the eyebrow dress | `caption` · `eyebrow`                                  | `--accent-ink` (ocre people, teal country) | The colour is the entity code, the legitimate nested accent of brand charter §5.2. The kind wears the eyebrow tokens, never a tracking of its own.                                   |
+| Source line, figure caption               | body 400                             | `caption`                                              | `--afh-text-soft`                          | Provenance is always present and never competes with what it sources.                                                                                                                |
+| « Lire d'autres anecdotes »               | body 600                             | `small`                                                | `--accent-ink`                             | An action link, so the accent.                                                                                                                                                       |
+| Search panel group label                  | body 600, uppercase, 0.16em          | `eyebrow`                                              | `--accent-ink`                             | The kicker's role, so the kicker's dress. It carried 0.06em of its own.                                                                                                              |
+| Footer lockup name                        | display 900                          | `h2`                                                   | `--afh-text`                               | One lockup, one treatment (brand charter §5.3). With no weight declared it rendered at Fraunces 500 against the masthead's 900.                                                      |
+| Footer rubric                             | display 700                          | `body`                                                 | `--afh-text`                               | A card title (§4): display face at the body step.                                                                                                                                    |
+| Footer links                              | body 400                             | `small`                                                | `--afh-text-soft`                          | Control labels.                                                                                                                                                                      |
+
+### 8.3 Holding it
+
+A new element on the home takes a row of this table. One that fits no row is a
+design decision to rule on and add here, never a new dress invented in its
+component — which is how the home reached seven sizes with every one of them
+defensible.
+
+Gated by `homeTypographyCharter.test.ts` (the title's step, the anecdote's
+first paragraph, the two small kickers, the footer lockup's weight),
+`SectionHeading.test.tsx` (the kicker's face), `HomeHero.test.tsx` (the
+statement's face and step) and `homeTokensCharter.test.ts` (the closed pen).

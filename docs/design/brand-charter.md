@@ -176,7 +176,7 @@ Three tiers, and a token belongs to exactly one:
 | ------------- | --------------------------------------------- | ------------------------------------------- |
 | **primitive** | `--afh-color-terracotta`, `--afh-cat-teal`    | the semantic tier only                      |
 | **semantic**  | `--afh-text`, `--afh-bg-warm`, `--accent-ink` | any component                               |
-| **surface**   | `--country-*`, `--home-text-*`                | that surface only, with a ticket against it |
+| **surface**   | `--country-*`, `--people-*`                   | that surface only, with a ticket against it |
 
 The surface tier is a holding pen, not a scale — `typography-charter.md` §6
 already says so for type, and it holds for every axis.

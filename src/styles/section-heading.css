@@ -7,10 +7,13 @@
 
    Two roles, stacked:
 
-     eyebrow — what kind of section this is. Mono, uppercase and
-               widely tracked, in the section's own accent ink. It
-               files the section; it is not a rung of the outline,
-               so SectionHeading marks it up as a paragraph.
+     eyebrow — what kind of section this is. Body face, uppercase
+               and widely tracked, in the section's own accent ink.
+               It files the section; it is not a rung of the outline,
+               so SectionHeading marks it up as a paragraph. Not the
+               monospace: that face aligns figures in a column, and
+               on the home it was a third family on the first screen
+               (operator ruling, 2026-09-14; typography charter §8).
 
      title   — what this section says. Fraunces at --afh-text-h1,
                one step above the --afh-text-h2 that both the
@@ -42,7 +45,7 @@
      running text (mobile-text.css). Without this an `.is-centred` unit would
      put its title in the middle and its own kicker at the left edge. */
   text-align: inherit;
-  font-family: var(--afh-font-mono);
+  font-family: var(--afh-font-body);
   font-size: var(--afh-text-eyebrow);
   font-weight: var(--afh-eyebrow-weight);
   line-height: var(--afh-leading-eyebrow);
