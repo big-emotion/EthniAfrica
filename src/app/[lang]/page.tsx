@@ -7,9 +7,7 @@ import { getCorpusCounts } from "@/lib/home/corpusCounts";
 import { loadSeedWords } from "@/lib/home/seedWords";
 import {
   drawHomeHeroVisual,
-  drawHomeHeroVisualSide,
   type HomeHeroVisual,
-  type HomeHeroVisualSide,
 } from "@/lib/home/homeHeroVisuals";
 import { getContinentPeopleCounts } from "@/api/v2/services/continentPeopleCounts";
 import { OG_TITLE, OG_DESCRIPTION } from "@/lib/brand";
@@ -17,7 +15,7 @@ import { surfaceHead } from "@/lib/seo/localeAlternates";
 import type { Language } from "@/types/shared";
 
 /**
- * The home draws its hero visual, its side and — one draw in three — a sourced
+ * The home draws its hero visual and — one draw in three — a sourced
  * fact on every request (REQ-115), so it must not be prerendered. The root
  * layout currently awaits connection() for the CSP nonce, but that is action
  * at a distance: stating the contract here keeps a future middleware change
@@ -64,15 +62,12 @@ export default async function Home({ params, searchParams }: HomePageProps) {
   // swap after the first paint. The force-dynamic contract above prevents the
   // result from being frozen into a prerendered page.
   //
-  // `?hero=` pins the side as well as the kind: a browser check measuring the
-  // two columns must meet the same composition on every run.
+  // `?hero=` pins the kind: a browser check measuring the two columns must
+  // meet the same composition on every run.
   const query = await searchParams;
   const heroParam = query?.hero;
   const pinned = heroParam === "globe" || heroParam === "mercator";
   const drawn = pinned ? ({ kind: "globe" } as const) : drawHomeHeroVisual();
-  const visualSide: HomeHeroVisualSide = pinned
-    ? "end"
-    : drawHomeHeroVisualSide();
 
   // An anecdote draw that finds no officially sourced fact shows the globe
   // rather than an empty slot or a weaker claim.
@@ -104,7 +99,6 @@ export default async function Home({ params, searchParams }: HomePageProps) {
         peopleCountsByCountry={peopleCountsByCountry}
         counts={counts}
         visual={heroVisual}
-        visualSide={visualSide}
       />
     </PageLayout>
   );

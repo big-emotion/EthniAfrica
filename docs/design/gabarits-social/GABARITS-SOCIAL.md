@@ -567,7 +567,7 @@ emporte s'il ne lit rien d'autre.
 
 | Ce qu'on écrit | Ce qu'on n'écrit plus | Pourquoi |
 | --- | --- | --- |
-| « Les frontières ont 140 ans. Les noms en ont mille. » | « Avant, on vivait en accord avec le continent. » | La force de l'argument vient de la **durée et de l'échelle**, pas de la douceur du passé. Un âge d'or n'a pas besoin d'être vrai pour être attaquable — et l'Afrique d'avant Berlin avait des empires, des conquêtes, des traites internes. |
+| « La plupart des frontières ont moins de 140 ans. Les noms en ont plus de mille. » | « Avant, on vivait en accord avec le continent. » | La force de l'argument vient de la **durée et de l'échelle**, pas de la douceur du passé. Un âge d'or n'a pas besoin d'être vrai pour être attaquable — et l'Afrique d'avant Berlin avait des empires, des conquêtes, des traites internes. |
 | « Reconnaître ce qui n'a jamais cessé. » | « Renouer avec le passé. » | Renouer met le sujet au passé et suppose la rupture consommée. |
 | « Ce peuple n'a pas été divisé. C'est la carte qui a été dessinée par-dessus. » | « Ce peuple a été divisé par les colons. » | Le registre de la réparation garde le colonisateur au centre de la phrase. Le renversement d'agent rend le peuple sujet. |
 | « Tracées sans référence à qui habitait là. » | « Les frontières sont arbitraires. » | À demi faux, donc attaquable — et l'atlas peut le montrer peuple par peuple. |
@@ -663,7 +663,7 @@ Disposition **A**, image plein cadre. Quatre blocs :
 
    | Registre | Patron |
    | --- | --- |
-   | Durée et échelle | « 140 ans de frontières. Mille ans de **noms**. » |
+   | Durée et échelle | « Moins de 140 ans de frontières. Plus de mille ans de **noms**. » |
    | Renversement d'agent | « Ce peuple n'a pas été **divisé**. » |
    | Ce qui n'a jamais cessé | « Ils écrivaient **déjà**. » |
    | Le nom imposé | « Personne ne s'est jamais appelé **comme ça**. » |
@@ -673,9 +673,12 @@ Disposition **A**, image plein cadre. Quatre blocs :
 
    **Budget : deux lignes composées, mesurées — jamais un compte de caractères.** Le
    nombre de caractères tenant sur une ligne dépend du corps et de la mesure : 18 à
-   106 px sur 888 px, 22 à 88 px. « 140 ans de frontières. Mille ans de noms. » fait
-   41 caractères et tient en deux lignes à 88 px ; un budget de 36 signes l'aurait
-   refusé à tort. Le moteur compose le titre et **compte les lignes rendues** ; s'il en
+   106 px sur 888 px, 22 à 88 px. L'ancien patron « 140 ans de frontières. Mille ans de
+   noms. » faisait 41 caractères et tenait en deux lignes à 88 px ; un budget de 36
+   signes l'aurait refusé à tort. Sa forme corrigée (2026-09-14), « Moins de 140 ans
+   de frontières. Plus de mille ans de noms. », fait 58 caractères : à 22 par ligne
+   elle en demande trois, et le moteur la rendra au rapport. Un titre de ce registre
+   se raccourcit avant le rendu, jamais en revenant à la forme non qualifiée. Le moteur compose le titre et **compte les lignes rendues** ; s'il en
    fait plus de deux, il descend d'un cran de corps jusqu'à 80 px, puis rend le titre
    au rapport plutôt que de le dessiner sur quatre lignes.
 

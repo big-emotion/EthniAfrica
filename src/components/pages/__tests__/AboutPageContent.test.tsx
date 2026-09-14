@@ -287,7 +287,7 @@ describe("AboutPageContent (REQ-132)", () => {
     );
 
     expect(declaration).toHaveTextContent(
-      /Les frontières de l’Afrique ont cent quarante ans\. Les noms en ont mille\./
+      /La plupart des frontières de l’Afrique ont moins de cent quarante ans\. Les noms en ont plus de mille\./
     );
     expect(declaration).toHaveTextContent(/elle le traverse/);
     expect(declaration).toHaveTextContent(/L’ordre apparent est inversé/);
@@ -335,7 +335,7 @@ describe("AboutPageContent (REQ-132)", () => {
     const declaration = screen.getByTestId("about-declaration");
 
     expect(declaration).toHaveTextContent(
-      /Africa’s borders are a hundred and forty years old\. The names are a thousand\./
+      /Most of Africa’s borders are less than a hundred and forty years old\. The names are more than a thousand years old\./
     );
     expect(declaration).toHaveTextContent(/The apparent order is reversed/);
     expect(

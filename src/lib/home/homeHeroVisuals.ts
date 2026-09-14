@@ -82,9 +82,6 @@ type HomeHeroDraw =
   | { kind: "image"; image: HomeHeroImage }
   | { kind: "anecdote" };
 
-/** Which column the visual takes once the band has two. */
-export type HomeHeroVisualSide = "start" | "end";
-
 const HERO_KINDS = ["globe", "image", "anecdote"] as const;
 
 /**
@@ -112,16 +109,4 @@ export function drawHomeHeroVisual(
     Math.floor(random() * HOME_HERO_IMAGES.length)
   );
   return { kind: "image", image: HOME_HERO_IMAGES[imageIndex] };
-}
-
-/**
- * Toss for the column the visual takes at desktop width, once per request.
- * Server-side for the same reason as the visual: a client toss would swap the
- * columns a frame after paint.
- */
-// @req REQ-115
-export function drawHomeHeroVisualSide(
-  random: () => number = Math.random
-): HomeHeroVisualSide {
-  return random() < 0.5 ? "start" : "end";
 }

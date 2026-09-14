@@ -33,8 +33,8 @@ forward. The series should carry that moral in a fixed opening and a fixed
 closing, episode after episode.
 
 **What the agent kept.** The moral is right, and it is the site's DNA. It
-reduced it to four propositions that the corpus can back: borders are 140 years
-old; a border does not contain a people, it crosses it (191 peoples of the atlas
+reduced it to four propositions that the corpus can back: most borders are
+under 140 years old; a border does not contain a people, it crosses it (191 peoples of the atlas
 live in three countries or more); the same line encloses peoples who asked for
 nothing; so the apparent order is inverted — the nations are the most recent
 layer, the peoples the continuous one.
@@ -130,8 +130,9 @@ The corpus moves; a figure printed here is dated, never a constant.
 >
 > Quatre propositions, et seule la dernière compte.
 >
-> Les frontières ont **cent quarante ans**, Berlin c'est 1884, les
-> indépendances 1960. Une frontière ne contient pas un peuple, **elle le
+> La plupart des frontières ont **moins de cent quarante ans** : Berlin
+> c'est 1884, les indépendances 1960, et certaines lignes sont bien plus
+> tardives. Une frontière ne contient pas un peuple, **elle le
 > traverse** : cent quatre-vingt-onze peuples de l'atlas vivent dans trois pays
 > ou plus. Et le même tracé enferme ensemble des peuples qui n'ont rien
 > demandé : la Tanzanie en documente quatre-vingt-seize, le Ghana
@@ -168,8 +169,8 @@ The corpus moves; a figure printed here is dated, never a constant.
 >
 > ### La forme, puisque tu veux la même intro et la même outro
 >
-> **Ouverture, identique à chaque épisode.** « Les frontières de l'Afrique ont
-> cent quarante ans. Les noms en ont mille. »
+> **Ouverture, identique à chaque épisode.** « La plupart des frontières de
+> l'Afrique ont moins de cent quarante ans. Les noms en ont plus de mille. »
 >
 > **Clôture, identique à chaque épisode.** « Ce peuple n'a pas été divisé.
 > C'est la carte qui a été dessinée par-dessus. »
@@ -221,8 +222,9 @@ and the figures follow the About page's dated measurement.
 **Ce peuple n'a pas été divisé. C'est la carte qui a été dessinée
 par-dessus.** — the claim, labelled on the page as a position, not a finding.
 
-1. **Les noms sont plus vieux que les frontières.** Les frontières de l'Afrique
-   ont cent quarante ans. Les noms en ont mille. Une frontière ne contient pas
+1. **Les noms sont plus vieux que les frontières.** La plupart des frontières
+   de l'Afrique ont moins de cent quarante ans. Les noms en ont plus de mille.
+   Une frontière ne contient pas
    un peuple, elle le traverse. Et le même tracé enferme ensemble des peuples
    qui n'ont rien demandé.
 2. **L'ordre apparent est inversé.** Ce qu'on présente comme naturel, les
@@ -249,15 +251,35 @@ par-dessus.** — the claim, labelled on the page as a position, not a finding.
      France. Pas renouer avec : reconnaître ce qui n'a jamais cessé. C'est plus
      vrai, et c'est moins triste.
 
-**On the home.** The two invariant sentences of the series — « Les frontières
-de l'Afrique ont cent quarante ans. Les noms en ont mille. » and « Ce peuple
+**On the home.** The two invariant sentences of the series — « La plupart des
+frontières de l'Afrique ont moins de cent quarante ans. Les noms en ont plus de
+mille. » and « Ce peuple
 n'a pas été divisé. C'est la carte qui a été dessinée par-dessus. » — sit
 behind a closed « Notre propos » disclosure under the hero's answer, with a
 link to this declaration. Closed by default because the hero's job is still
 the search; present because a reader who asks what the atlas is for should get
 the answer in two sentences, not in a scroll.
 
-**What « mille » is.** An assumed approximation, flagged as such in the series
-guide: for some peoples the oldest attestation is more recent. It stands on
-the site as the project's position, under the same label as the claim. A
-surface that dates one specific name owes that name's own date instead.
+**What « plus de mille » is.** A position, not a measurement: the atlas stores
+no attestation date, and for some peoples the oldest attestation is more
+recent. It stands on the site as the project's position, under the same label
+as the claim. A surface that dates one specific name owes that name's own date
+instead.
+
+**Why « la plupart » and « moins de » (corrected 2026-09-14).** The first
+wording, « Les frontières de l'Afrique ont cent quarante ans », dated every
+border from the Berlin conference, and it was false in both directions. Berlin
+(1884–1885) set the rules of the partition and drew almost no line itself; the
+lines came afterwards, in treaties between the powers. One is older than
+Berlin — the northern Morocco–Algeria border follows the treaty of Lalla
+Maghnia, 1845 — and many are younger: German Togo and Kamerun were partitioned
+after 1914, Jubaland changed hands in 1925, Eritrea's border became
+international in 1993, Bakassi was handed to Cameroon in 2008, and South
+Sudan's border dates from 2011. A reader quoting any one of them dismantled the
+unqualified sentence in a line, which is exactly why « Les frontières sont
+arbitraires » is refused above. The corrected sentence is also the stronger
+one: most borders are younger than the figure, not older.
+
+The quotations of the agent's reply above carry the corrected wording, so the
+series cannot be re-seeded from the retired one. Productions already published
+still open on it and are not re-rendered.
