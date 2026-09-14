@@ -13,6 +13,19 @@ ne programmes pas, tu ne proposes pas de le faire.
 Si `cards.json` ou `SOURCES.md` manquent, dis-le et propose `structure`. Ne saute
 pas l'étape.
 
+## La porte qui précède les cinq autres : le texte validé
+
+Décidé le 2026-09-14, après qu'une vidéo a été rendue — deux fois — sur un
+texte que l'opérateur n'avait jamais vu en entier avant de la regarder rendue.
+**Si `post.md` ne porte pas la ligne `**Texte validé** : oui, le AAAA-MM-JJ,
+par l'opérateur.`, ou si elle est plus ancienne que `cards.json`, `cartes.json`
+ou `narration.fr.txt`, ne rends rien — ni épreuve, ni bon à publier.** Dis-le,
+affiche le texte actuel toi-même si `structure` ne l'a pas fait, et attends la
+validation avant de continuer. Cette porte est la seule exception à « tu rends
+toujours » ci-dessous : elle protège un coût réel (la voix se paie en crédits)
+et une lecture réelle (personne ne devrait découvrir un script en le voyant
+monté).
+
 ## Tu rends toujours
 
 Une épreuve se regarde, même imparfaite : c'est en la voyant qu'on décide. Ce qui

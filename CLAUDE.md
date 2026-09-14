@@ -375,6 +375,17 @@ Wikipedia is not a source. A primary source _discovered through_ Wikipedia is ci
 by its own URL, and its `notes` field may record which Wikipedia language versions were crossed. No
 gate requires that path, and a Wikipedia URL cited directly is reported, not refused.
 
+**Wikipedia is a first-pass verification tool, and this applies to every action, not only citing a
+claim** — curation, production, an audit, a rewrite. Decided 2026-09-14, after a video script asserted
+a claim from memory that no source backed and dropped a real, footnoted naming theory the corpus had
+not yet surfaced. Before asserting a claim (a date, a name, an origin, a figure), open the relevant
+Wikipedia article and read what it says and — more importantly — what it cites. A discrepancy between
+a draft and Wikipedia's own footnoted sources is a signal to re-check, not proof either side is wrong:
+Wikipedia's citations are themselves tiered like any other source, never taken as true because
+Wikipedia states them. Sourcing has no bottom rung reached by insisting harder — even an `official`
+source ultimately rests on someone's report, record or analysis — so the discipline is to cite at the
+right tier, not to chase an unsourced certainty that does not exist.
+
 #### `needs_review` is a transitional marker, not a tier
 
 A corpus citation nobody has ruled on yet says `tier: "needs_review"`. It is a marker at the corpus
