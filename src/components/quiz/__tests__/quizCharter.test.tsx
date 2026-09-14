@@ -252,6 +252,11 @@ describe("games charter §7 — which sources a round may rest on", () => {
   });
 
   // @req REQ-175
+  it("states that a round plays only a narrative its narrator has cleared", () => {
+    expect(charter).toMatch(/`rights_status`\s+is\s+`cleared`/);
+  });
+
+  // @req REQ-175
   it("is the rule the eligibility gate applies", () => {
     const base = {
       confidenceScore: 90,
@@ -265,6 +270,7 @@ describe("games charter §7 — which sources a round may rest on", () => {
       oralTradition: {
         narrativeCode: "ORL_DOGON_ORIGINS",
         community: "Sangha",
+        rightsStatus: "cleared",
       },
     };
 
@@ -275,6 +281,17 @@ describe("games charter §7 — which sources a round may rest on", () => {
       isQuizEligible({
         ...base,
         assertionSources: [{ ...oral, sourceKind: "community" }],
+      }).eligible
+    ).toBe(false);
+    expect(
+      isQuizEligible({
+        ...base,
+        assertionSources: [
+          {
+            ...oral,
+            oralTradition: { ...oral.oralTradition, rightsStatus: "pending" },
+          },
+        ],
       }).eligible
     ).toBe(false);
   });

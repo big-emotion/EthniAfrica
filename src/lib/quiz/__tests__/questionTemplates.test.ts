@@ -573,6 +573,16 @@ describe("attributeToOralTradition", () => {
   });
 
   // @req REQ-175
+  it("keeps « de » before a community whose name opens on a consonant Y", () => {
+    expect(attributeToOralTradition("Réponse.", "Yoruba", "fr")).toBe(
+      "Réponse (selon la tradition orale de Yoruba)."
+    );
+    expect(attributeToOralTradition("Réponse.", "Yaka", "fr")).toBe(
+      "Réponse (selon la tradition orale de Yaka)."
+    );
+  });
+
+  // @req REQ-175
   it("says the same thing in English", () => {
     expect(
       attributeToOralTradition(

@@ -491,6 +491,7 @@ describe("buildAssertionBindings", () => {
           oral_narratives: {
             narrative_code: "ORL_YORUBA_ODUDUWA",
             community: "Kétou",
+            rights_status: "cleared",
           },
         },
       ],
@@ -516,6 +517,7 @@ describe("buildAssertionBindings", () => {
         oralTradition: {
           narrativeCode: "ORL_YORUBA_ODUDUWA",
           community: "Kétou",
+          rightsStatus: "cleared",
         },
       },
     ]);

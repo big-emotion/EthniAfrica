@@ -202,6 +202,7 @@ describe("evaluateCandidate", () => {
           oralTradition: {
             narrativeCode: "ORL_YORUBA_ODUDUWA",
             community: "Kétou",
+            rightsStatus: "cleared",
           },
         },
       ],

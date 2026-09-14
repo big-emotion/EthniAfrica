@@ -232,9 +232,12 @@ function copyFor(locale: TranslationLocale, templateId: QuizTemplateId) {
 }
 
 // Elision is decided on the base letter, so an accented or tone-marked
-// community name (Ìjẹ̀bú, Éwé) elides like its bare spelling would.
+// community name (Ìjẹ̀bú, Éwé) elides like its bare spelling would. A Y
+// elides only as a vowel: before a vowel it is a consonant (Yoruba, Yaka),
+// and « d'Yoruba » is wrong French.
 function frenchOf(community: string): string {
-  return /^[aeiouy]/i.test(community.normalize("NFD"))
+  const bare = community.normalize("NFD").replace(/\p{M}/gu, "");
+  return /^(?:[aeiou]|y(?![aeiou]))/i.test(bare)
     ? `d'${community}`
     : `de ${community}`;
 }

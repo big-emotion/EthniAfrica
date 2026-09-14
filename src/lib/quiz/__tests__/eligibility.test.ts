@@ -191,6 +191,7 @@ describe("isQuizEligible", () => {
       oralTradition: {
         narrativeCode: "ORL_DOGON_ORIGINS",
         community: "Sangha",
+        rightsStatus: "cleared",
       },
     };
 
@@ -207,11 +208,25 @@ describe("isQuizEligible", () => {
     // @req REQ-175
     it.each([
       ["no narrative record", null],
-      ["no narrative code", { narrativeCode: null, community: "Sangha" }],
-      ["no community", { narrativeCode: "ORL_DOGON_ORIGINS", community: null }],
+      [
+        "no narrative code",
+        { narrativeCode: null, community: "Sangha", rightsStatus: "cleared" },
+      ],
+      [
+        "no community",
+        {
+          narrativeCode: "ORL_DOGON_ORIGINS",
+          community: null,
+          rightsStatus: "cleared",
+        },
+      ],
       [
         "a blank community",
-        { narrativeCode: "ORL_DOGON_ORIGINS", community: " " },
+        {
+          narrativeCode: "ORL_DOGON_ORIGINS",
+          community: " ",
+          rightsStatus: "cleared",
+        },
       ],
     ])("does not play an oral tradition with %s", (_label, oralTradition) => {
       expect(
@@ -221,6 +236,30 @@ describe("isQuizEligible", () => {
         })
       ).toEqual({ eligible: false, reason: "no_authoritative_source" });
     });
+
+    /**
+     * The generation sweep reads through the service role, which RLS does not
+     * filter, so the narrator's consent is checked here: an item written to
+     * the publicly readable bank would otherwise name a community whose
+     * narrative was never cleared, or was withdrawn.
+     */
+    // @req REQ-175
+    it.each(["pending", "revoked", null])(
+      "neither plays nor attributes an oral tradition whose rights are %s",
+      (rightsStatus) => {
+        const unconsented = {
+          ...attributedOralSource,
+          oralTradition: {
+            ...attributedOralSource.oralTradition,
+            rightsStatus,
+          },
+        };
+        expect(
+          isQuizEligible({ ...eligibleInput, assertionSources: [unconsented] })
+        ).toEqual({ eligible: false, reason: "no_authoritative_source" });
+        expect(oralTraditionCommunity([unconsented])).toBeNull();
+      }
+    );
 
     // @req REQ-175
     it("keeps every other unverified source out, even one carrying a community", () => {
@@ -269,6 +308,7 @@ describe("isQuizEligible", () => {
           oral_narratives: {
             narrative_code: "ORL_DOGON_ORIGINS",
             community: "Sangha",
+            rights_status: "cleared",
           },
         })
       ).toEqual(attributedOralSource);
@@ -286,7 +326,11 @@ describe("isQuizEligible", () => {
           verified_at: null,
           source_kind: "oral_tradition",
           oral_narratives: [
-            { narrative_code: "ORL_DOGON_ORIGINS", community: "Sangha" },
+            {
+              narrative_code: "ORL_DOGON_ORIGINS",
+              community: "Sangha",
+              rights_status: "cleared",
+            },
           ],
         })
       ).toEqual(attributedOralSource);

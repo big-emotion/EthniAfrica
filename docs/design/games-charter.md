@@ -304,7 +304,10 @@ The reveal shows, in this order:
 3. **The source and its tier**, through `ConfidenceChip`. A round asserts an
    answer as correct, so it rests on a source at `official` or `referenced`, or
    on an `oral_tradition` source that names its narrative and the community it
-   was collected in (DEC-055, REQ-175). A round resting on an oral tradition
+   was collected in, and whose narrator has consented: the narrative's
+   `rights_status` is `cleared` (DEC-055, REQ-175). A narrative still pending
+   or revoked is not played, whatever the key the bank is generated with. A
+   round resting on an oral tradition
    says whose it is, at the end of its explanation:
    « selon la tradition orale de {community} », in English "according to the
    oral tradition of {community}". A people's own account is played as what

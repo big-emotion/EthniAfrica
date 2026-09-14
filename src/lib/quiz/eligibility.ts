@@ -18,6 +18,8 @@ import {
 export interface QuizOralTradition {
   narrativeCode: string | null;
   community: string | null;
+  /** `oral_narratives.rights_status`: the narrator's consent, `cleared` or not. */
+  rightsStatus: string | null;
 }
 
 export interface QuizAssertionSource {
@@ -60,16 +62,19 @@ export type QuizEligibilityResult =
  * The `sources` columns both callers read, spelled once so the generation
  * sweep and the serve-time re-check cannot feed the gate different inputs.
  * The narrative is embedded through `sources.oral_narrative_id` (migration
- * 089). Under the anon key its RLS hides a narrative that is not public, and
- * the embed then reads null — the gate fails closed on it rather than open.
+ * 089). `rights_status` is read rather than left to RLS: the generation sweep
+ * uses the service role, which RLS does not filter, and the anon policy on
+ * `oral_narratives` is due to be rewritten (REQ-172). Consent is therefore
+ * checked by the gate itself, on both paths.
  */
 // @req REQ-175
 export const QUIZ_SOURCE_COLUMNS =
-  "id, tier, verified_at, source_kind, oral_narratives(narrative_code, community)";
+  "id, tier, verified_at, source_kind, oral_narratives(narrative_code, community, rights_status)";
 
 interface QuizSourceNarrativeRow {
   narrative_code: string | null;
   community: string | null;
+  rights_status?: string | null;
 }
 
 export interface QuizSourceRow {
@@ -102,6 +107,7 @@ export function toQuizAssertionSource(row: QuizSourceRow): QuizAssertionSource {
     source.oralTradition = {
       narrativeCode: narrative.narrative_code,
       community: narrative.community,
+      rightsStatus: narrative.rights_status ?? null,
     };
   }
   return source;
@@ -152,14 +158,18 @@ export function getQuizMinConfidence(): number {
 
 /**
  * The community an `oral_tradition` source attributes its account to, or null
- * when either half of the attribution is missing. Both halves are required:
- * without the narrative the round points at nothing a reader can open, and
- * without the community it cannot say whose tradition it plays.
+ * when the attribution is incomplete or the narrator's consent is not
+ * recorded. Without the narrative the round points at nothing a reader can
+ * open; without the community it cannot say whose tradition it plays; and
+ * without cleared rights it would publish, in a publicly readable bank, a
+ * narrative its narrator never released or has withdrawn (DEC-055 keeps that
+ * gate).
  */
 function attributedCommunity(source: QuizAssertionSource): string | null {
   if (source.sourceKind !== "oral_tradition") return null;
-  const narrativeCode = source.oralTradition?.narrativeCode?.trim();
-  const community = source.oralTradition?.community?.trim();
+  if (source.oralTradition?.rightsStatus !== "cleared") return null;
+  const narrativeCode = source.oralTradition.narrativeCode?.trim();
+  const community = source.oralTradition.community?.trim();
   return narrativeCode && community ? community : null;
 }
 
