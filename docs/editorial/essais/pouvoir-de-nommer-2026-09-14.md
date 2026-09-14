@@ -81,6 +81,31 @@ venir, pas seulement à celui-ci** : la base idéologique du projet reste
 **positive et panafricaine**. Un essai, une série ou une production qui verse
 dans l'accusation ou dans le silence n'est pas fini.
 
+## Suite de l'échange — le pouvoir est-il toujours en place ?
+
+> En tout cas, ce qui est clair aujourd'hui, c'est que le pays est toujours
+> nommé d'après [la France]. Là, oui, pour le cas de la Côte d'Ivoire, il n'y
+> a aucune envie. D'ailleurs, on le voit avec tout ce qui est politique, tous
+> les échanges, le fait qu'encore la France est forte. Historiquement,
+> économiquement, la Côte d'Ivoire est très liée à la France. Donc là, il n'y
+> a pas de séparation, il n'y a pas de dépassement. La Côte d'Ivoire, toujours
+> adossée à la France, donc ça, c'est une réalité. C'est important aussi de
+> savoir, de comprendre pourquoi la Côte d'Ivoire a commencé adossée à la
+> France. Qu'est-ce qu'il en est aujourd'hui ? La finalité de la vidéo, c'est
+> d'expliquer que, jusqu'à aujourd'hui encore, selon les noms imposés, il n'y
+> a pas de changement.
+
+**Réponse à la question laissée ouverte plus haut** : oui, pour la Côte
+d'Ivoire, le pouvoir de nommer est toujours en place aujourd'hui. La preuve
+que l'opérateur retient n'est pas un jugement, c'est une continuité
+observable : le pays reste nommé d'après la France, et le lien historique et
+économique entre les deux n'a connu ni séparation ni dépassement. La
+finalité d'un épisode de cette série n'est donc pas seulement de raconter
+d'où vient un nom — c'est de montrer que **les noms imposés n'ont pas changé
+jusqu'à aujourd'hui**, et de laisser l'audience faire le lien avec ce que ça
+implique pour le présent, sans que la pièce elle-même ne porte le verdict à
+sa place.
+
 ## Ce qui en découle, à écrire ailleurs si l'opérateur confirme
 
 Cet essai motive une partie des décisions déjà prises sur cette série (le
@@ -94,8 +119,14 @@ prochaine passe :
   nommer et sa persistance aujourd'hui, sans tomber dans le registre de la
   réparation que cet essai écarte — la clôture actuelle (« Ces peuples n'ont
   pas été rassemblés. C'est la carte qui a été dessinée autour d'eux. ») fait
-  la moitié du chemin ; l'autre moitié (le pouvoir toujours en place) n'est
-  pas encore écrite dans le gabarit de cette série.
+  la moitié du chemin ; l'autre moitié (le pouvoir toujours en place, montré
+  et non jugé) n'est pas encore écrite dans le gabarit de cette série.
 - Si ce fil (« direction prise » → « ce pouvoir est-il toujours en place »)
   doit être un renversement propre à la série, distinct de la clôture
   générique du type de contenu.
+- Le sujet Côte d'Ivoire porte désormais une structure en huit points (noms de
+  lieux avant/après, mot juste antérieur, comment on nomme le pays aujourd'hui,
+  grandes zones, quatre régions, origine des quatre grands groupes
+  ethniques, pourquoi ils se sont trouvés là) trop riche pour un seul reel de
+  90 secondes — décidé le 2026-09-14 : elle se découpe en plusieurs épisodes
+  courts plutôt qu'un format long, voir `post.md` du sujet pour le découpage.
