@@ -25,6 +25,7 @@ describe("oral narratives handler", () => {
           narrativeKind: "testimony",
           summary: "An attributed account.",
           variantOf: null,
+          reviewed: true,
         },
       ],
       total: 1,
