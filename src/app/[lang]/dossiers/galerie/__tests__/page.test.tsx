@@ -21,8 +21,8 @@ vi.mock("@/components/layout/PageLayout", () => ({
   PageLayout: ({ children }: { children: ReactNode }) => <>{children}</>,
 }));
 
-// The module ships `draft` until its first image is entered, so the page is
-// exercised as it will read the day the content pass flips it to `ready`.
+// Publication is mocked so the page is exercised against fixtures in both
+// states: open, as the registry now declares it, and withheld.
 const publication = vi.hoisted(() => ({ galerie: true }));
 vi.mock("@/lib/hubs/moduleOffer", async (importOriginal) => ({
   ...(await importOriginal<object>()),

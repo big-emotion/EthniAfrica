@@ -1,58 +1,70 @@
 import { describe, expect, it } from "vitest";
 
-import { eligiblePublications, type DiscoveryPublication } from "../catalog";
-import { getDiscoveryPublications } from "../entries";
 import {
-  generatedDownloadPath,
-  generatedImagePublications,
-} from "../generatedImages";
+  downloadChoices,
+  eligiblePublications,
+  type DiscoveryPublication,
+} from "../catalog";
+import { getDiscoveryPublications } from "../entries";
+import { galleryCollections } from "../gallery";
+import { generatedImagePublications } from "../generatedImages";
 
 const CAPTIONS_WITH_THEIR_OWN_SOURCE = ["image:kongo", "image:njinga"];
-
-function withShippedFiles(
-  publication: DiscoveryPublication
-): DiscoveryPublication {
-  const slug = publication.id.replace("image:", "");
-  return {
-    ...publication,
-    image: {
-      src: generatedDownloadPath(slug, "4:5"),
-      credit: "EthniAfrica",
-      alt: { fr: "Texte", en: "Text" },
-      licence: "cc-by-sa",
-    },
-  };
-}
 
 describe("the generated images of Découvertes", () => {
   const publications = generatedImagePublications();
 
-  // Their derived files are not committed yet: a card with no picture would
-  // be a caption about an image nobody can see.
   // @req REQ-164
-  it("keeps all twelve out of the feed and the gallery until their files ship", () => {
+  it("publishes all twelve in the feed, each with its picture and its three downloads", () => {
     expect(publications).toHaveLength(12);
-    expect(eligiblePublications(publications)).toEqual([]);
-    expect(
-      getDiscoveryPublications().filter((entry) => entry.kind === "image")
-    ).toHaveLength(12);
+    expect(eligiblePublications(getDiscoveryPublications())).toEqual(
+      expect.arrayContaining(publications)
+    );
+    for (const entry of publications) {
+      expect(entry.image?.src, entry.id).toBe(entry.downloads?.["4:5"]);
+    }
+    expect(publications.flatMap(downloadChoices)).toHaveLength(36);
   });
 
-  // Proves the sources recorded today are complete: shipping the files is
-  // the only step left, and a caption beyond the corpus still needs its own.
+  // @req REQ-167
+  it("shelves the twelve in the gallery, four per collection, in the fixed order", () => {
+    expect(
+      galleryCollections(getDiscoveryPublications()).map((group) => [
+        group.collection,
+        group.publications.map((entry) => entry.id),
+      ])
+    ).toEqual([
+      [
+        "autonymes",
+        ["image:basotho", "image:amazigh", "image:ewe", "image:swahili"],
+      ],
+      [
+        "traversees",
+        ["image:kongo", "image:somali", "image:hausa", "image:swazi"],
+      ],
+      [
+        "figures-et-moments",
+        [
+          "image:njinga",
+          "image:mansa-musa",
+          "image:grand-zimbabwe",
+          "image:marrakech",
+        ],
+      ],
+    ]);
+  });
+
+  // A caption stating what no linked fiche states must not reach a reader
+  // without its own source, even with every other field in place.
   // @req REQ-164
-  it("admits every image once its files ship, and no caption beyond the corpus without its source", () => {
-    const shipped = publications.map(withShippedFiles);
-    expect(eligiblePublications(shipped).map((entry) => entry.id)).toEqual(
-      publications.map((entry) => entry.id)
+  it("refuses a caption beyond the corpus once its own source is removed", () => {
+    const unsourcedCaptions: DiscoveryPublication[] = publications.map(
+      (entry) => ({ ...entry, captionSource: undefined })
     );
-    const unsourcedCaptions = shipped.map((entry) => ({
-      ...entry,
-      captionSource: undefined,
-    }));
     const admitted = eligiblePublications(unsourcedCaptions).map(
       (entry) => entry.id
     );
+    expect(admitted).toHaveLength(12 - CAPTIONS_WITH_THEIR_OWN_SOURCE.length);
     for (const id of CAPTIONS_WITH_THEIR_OWN_SOURCE) {
       expect(admitted).not.toContain(id);
     }

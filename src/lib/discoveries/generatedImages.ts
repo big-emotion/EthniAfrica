@@ -62,7 +62,20 @@ const VERIFIED_SOURCES = verifiedSources as Partial<
  * feed even once its source is verified.
  */
 const SHIPPED_DOWNLOADS: ReadonlySet<GeneratedImageSlug> =
-  new Set<GeneratedImageSlug>();
+  new Set<GeneratedImageSlug>([
+    "basotho",
+    "amazigh",
+    "ewe",
+    "swahili",
+    "kongo",
+    "somali",
+    "hausa",
+    "swazi",
+    "njinga",
+    "mansa-musa",
+    "grand-zimbabwe",
+    "marrakech",
+  ]);
 
 const GENERATION = {
   tool: "Higgsfield",

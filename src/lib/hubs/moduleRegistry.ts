@@ -604,11 +604,11 @@ export const MODULE_DEFINITIONS: HubModuleDefinition[] = [
   // under names because two of its three collections are autonyms and the
   // people behind them. Appended last for the accent walk, like `proverbes`.
   //
-  // `draft` because no image publication is entered yet: an open gallery
-  // listing nothing is a reading that promises what it does not hold. The
-  // content pass that enters the first image flips this to `ready`, and takes
-  // the route off the withdrawn lists in `frozenRoutes`, the locale-alternates
-  // charter and `dossiersFreezeReach`.
+  // `ready` since the first twelve images were entered, each with a verified
+  // subject source and its derived files committed. It was `draft` until
+  // then, because an open gallery listing nothing promises what it does not
+  // hold; the route came off the withdrawn lists in `frozenRoutes`, the
+  // locale-alternates charter and `dossiersFreezeReach` in the same change.
   {
     id: "galerie",
     group: "dossiers-noms",
@@ -616,7 +616,7 @@ export const MODULE_DEFINITIONS: HubModuleDefinition[] = [
     accessMode: "dossiers",
     page: "gallery",
     availability: "static",
-    editorialReadiness: "draft",
+    editorialReadiness: "ready",
   },
 ];
 

@@ -12,6 +12,7 @@ import type {
 import { GENERATED_IMAGE_MANIFEST } from "@/lib/discoveries/generatedImages";
 
 import {
+  AUTONYM_RING,
   deriveGeneratedImage,
   fitPlan,
   markPlacement,
@@ -79,6 +80,43 @@ describe("where the generated-image mark is burned", () => {
         expect(Math.hypot(x - 540, y - 540)).toBeLessThan(radius);
       }
     }
+  });
+});
+
+describe("the mark on an autonym's avatar", () => {
+  // The portrait is painted inside a gold ring. A mark across the ring
+  // collides with the painting, and one below it in the cream band is cut by
+  // a round avatar crop, so it must sit wholly inside the ring's inner edge.
+  // @req REQ-166
+  it("keeps every corner inside the painted ring's inner edge, clear of its band", () => {
+    const scale = 1080 / AUTONYM_RING.masterSize;
+    const ringInner = AUTONYM_RING.innerRadius * scale;
+    const ringOuter = AUTONYM_RING.outerRadius * scale;
+    for (const mark of MARK_SIZES) {
+      const box = markPlacement("1:1", mark, "autonymes");
+      expect(box.left + box.width / 2).toBeCloseTo(540, 0);
+      const corners = [
+        [box.left, box.top],
+        [box.left + box.width, box.top],
+        [box.left, box.top + box.height],
+        [box.left + box.width, box.top + box.height],
+      ];
+      for (const [x, y] of corners) {
+        const distance = Math.hypot(x - 540, y - 540);
+        expect(distance).toBeLessThan(ringInner);
+        expect(distance < ringInner || distance > ringOuter).toBe(true);
+      }
+      // Still the bottom of the avatar, not drifted towards the face.
+      expect(box.top + box.height).toBeGreaterThan(540 + ringInner * 0.8);
+    }
+  });
+
+  // @req REQ-166
+  it("leaves a scene's 1:1 mark on the avatar's own circle", () => {
+    const mark = { width: 182, height: 32 };
+    expect(markPlacement("1:1", mark, "traversees")).toEqual(
+      markPlacement("1:1", mark)
+    );
   });
 });
 

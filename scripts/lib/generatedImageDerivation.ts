@@ -48,10 +48,28 @@ interface Box {
 type Fit = "resize" | "extend" | "cover";
 type Colour = [number, number, number];
 
+/**
+ * The gold ring painted around every autonym portrait, in master pixels.
+ * Measured 2026-09-14 on the four 2048 px masters, along rays from the centre
+ * within 20° of straight down (the arc a bottom-centred mark can reach): the
+ * ring's inner edge sat between 856 and 865 px from the centre, its outer edge
+ * between 912 and 920. The smallest inner radius is kept, so the mark clears
+ * the ring on every portrait. A 1:1 mark on the ring collides with the painting;
+ * one in the cream band below it is cut by a round avatar crop.
+ */
+export const AUTONYM_RING = {
+  masterSize: 2048,
+  innerRadius: 856,
+  outerRadius: 920,
+} as const;
+// Enough that brush speckle on the ring's inner edge never touches a glyph.
+const RING_CLEARANCE = 12;
+
 // @req REQ-166
 export function markPlacement(
   format: DownloadFormat,
-  mark: { width: number; height: number }
+  mark: { width: number; height: number },
+  collection?: GeneratedImageMaster["collection"]
 ): Box {
   const { width, height } = FRAMES[format];
   if (format === "9:16") {
@@ -65,7 +83,11 @@ export function markPlacement(
     };
   }
   const centre = width / 2;
-  const radius = centre - AVATAR_CIRCLE_INSET;
+  const radius =
+    collection === "autonymes"
+      ? (AUTONYM_RING.innerRadius * width) / AUTONYM_RING.masterSize -
+        RING_CLEARANCE
+      : centre - AVATAR_CIRCLE_INSET;
   const bottom = centre + Math.sqrt(radius ** 2 - (mark.width / 2) ** 2);
   return {
     left: Math.floor((width - mark.width) / 2),
@@ -186,7 +208,8 @@ async function fittedFrame(
 async function inkedMark(
   markAsset: string,
   ground: Buffer,
-  format: DownloadFormat
+  format: DownloadFormat,
+  collection: GeneratedImageMaster["collection"]
 ): Promise<{ input: Buffer; left: number; top: number }> {
   const { data: alpha, info } = await sharp(markAsset)
     .resize({ height: MARK_HEIGHT })
@@ -194,7 +217,11 @@ async function inkedMark(
     .linear(MARK_OPACITY, 0)
     .raw()
     .toBuffer({ resolveWithObject: true });
-  const box = markPlacement(format, { width: info.width, height: info.height });
+  const box = markPlacement(
+    format,
+    { width: info.width, height: info.height },
+    collection
+  );
   // `stats()` describes the input, not the extracted pipeline output, so the
   // region is materialised first; otherwise the ink follows the frame's
   // average and a light corner of a dark scene gets light ink.
@@ -240,7 +267,7 @@ export async function deriveGeneratedImage(
       plan.fit,
       format
     );
-    const mark = await inkedMark(markAsset, frame, format);
+    const mark = await inkedMark(markAsset, frame, format, entry.collection);
     const publicPath = generatedDownloadPath(entry.slug, format);
     const file = path.join(options.publicDir, publicPath);
     mkdirSync(path.dirname(file), { recursive: true });
