@@ -65,7 +65,11 @@ export interface SourceTierRulingReport {
 interface FicheOutcome {
   citationsChanged: number;
   untieredCleared: number;
-  /** A removal or a repaired url; a tier alone changes no translated field. */
+  /**
+   * Only a removal: it shifts the `sources[]` indices a sidecar was hashed
+   * against. The translation hash leaves tiers and source urls out on purpose
+   * (src/lib/afrik/translations/hashing.ts), so a tier or a repair drifts nothing.
+   */
   fieldSetChanged: boolean;
 }
 
@@ -98,7 +102,6 @@ function applyRulings(
         } else if (ruling.decision === "repair") {
           source.url = ruling.repairedUrl;
           source.tier = ruling.tier;
-          outcome.fieldSetChanged = true;
         } else {
           source.tier = ruling.tier;
         }
@@ -199,7 +202,7 @@ async function main(): Promise<void> {
   }
 
   if (report.sidecarsToRedrift.length > 0) {
-    console.log("English sidecars drifted by a removal or a repair:");
+    console.log("English sidecars drifted by a removal:");
     for (const command of report.sidecarsToRedrift) console.log(`  ${command}`);
   }
 

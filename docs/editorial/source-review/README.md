@@ -56,15 +56,21 @@ the rationale is workshop vocabulary, which `reader-facing-register` refuses the
 
 1. A moderator decides in the admin queue, `/fr/admin/sources`. That writes a draft row, not a
    ruling.
-2. `npx tsx scripts/afrik/pullSourceTierRulings.ts --target=recette|production` appends the new
-   drafts here (idempotent on `draftId`).
+2. `npx tsx scripts/afrik/pullSourceTierRulings.ts --target=recette|production` appends one
+   ruling per citation (idempotent on `draftId`). When a moderator decided the same citation
+   twice before the pull, the latest draft wins and the earlier ones are listed as superseded. A
+   draft on a citation this ledger already rules on is listed and not appended: revise that
+   ruling by hand if the new decision stands.
 3. `npx tsx scripts/afrik/applySourceTierRulings.ts` prints what would change;
-   `--apply` writes the fiches. It lists the English sidecars a `repair` or `remove` drifts
-   (run the `translate:record --drift` lines it prints) and the `NEEDS_REVIEW_RATCHET` line to
-   lower in the same change.
+   `--apply` writes the fiches. It lists the English sidecars a `remove` drifts (run the
+   `translate:record --drift` lines it prints) and the `NEEDS_REVIEW_RATCHET` line to lower in
+   the same change. A `tier` or a `repair` drifts no sidecar: the translation hash leaves tiers
+   and source urls out on purpose (`src/lib/afrik/translations/hashing.ts`), while a removal
+   shifts the `sources[]` entries the sidecar was hashed against.
 4. `npx tsx scripts/ci/checkSourceTierCoverage.ts` fails if a fiche contradicts a ruling, a ruled
    citation still says `needs_review`, a ruling states `needs_review` or an unknown tier, a
-   rationale is empty, or a ruling matches nothing.
+   rationale is empty, a ruling matches nothing, or two rulings name the same citation for a
+   shared fiche (an absent `appliesTo` shares every fiche).
 
 No editorial ruling is recorded here by tooling on its own: every entry is a moderator's
 decision.

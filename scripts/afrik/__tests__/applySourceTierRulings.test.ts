@@ -152,10 +152,11 @@ describe("runSourceTierRulings", () => {
     expect(readFiche("pays/TCD.json")).toBe(untouched);
   });
 
-  // A removal or a repaired locator changes what the English sidecar was
-  // translated from; a tier does not, since tier, title and url are invariant.
+  // A removal shifts the indices of `sources[]` the English sidecar was hashed
+  // against. A tier or a repaired url does not: the translation hash leaves
+  // tiers and source urls out on purpose (src/lib/afrik/translations/hashing.ts).
   // @req REQ-092
-  it("lists the English sidecars a removal or a repair drifts, and none for a tier", async () => {
+  it("lists the English sidecars a removal drifts, and none for a repair or a tier", async () => {
     await writeFiche("pays/BEN.json", country("BEN", [WPP]));
     await writeFiche(
       "pays/SEN.json",
@@ -204,9 +205,8 @@ describe("runSourceTierRulings", () => {
       write: true,
     });
 
-    expect(report.sidecarsToRedrift.sort()).toEqual([
+    expect(report.sidecarsToRedrift).toEqual([
       "npm run translate:record -- --id NER --lang en --drift",
-      "npm run translate:record -- --id SEN --lang en --drift",
     ]);
     const senegal = JSON.parse(readFiche("pays/SEN.json"));
     expect(senegal.content.sources).toEqual([

@@ -54,6 +54,19 @@ export const sourceTierRulingDraftSchema = z
         message: "A repair states the corrected address",
       });
     }
+    // The ledger refuses this shape, and one refused ruling stops apply for
+    // the whole ledger.
+    if (
+      draft.decision === "repair" &&
+      draft.repaired_url &&
+      draft.repaired_url === draft.source_url?.trim()
+    ) {
+      context.addIssue({
+        code: "custom",
+        path: ["repaired_url"],
+        message: "A repair states an address other than the one it repairs",
+      });
+    }
     if (draft.decision !== "repair" && draft.repaired_url) {
       context.addIssue({
         code: "custom",

@@ -6,8 +6,9 @@
  * (migration 090). It becomes a ruling only here, in git, because the corpus
  * sync overwrites any tier changed in the database alone. This script reads
  * the drafts over PostgREST with the service role — one GET, nothing written
- * to the database — and appends each draft not already in the ledger, keyed on
- * its `draftId`, so running it twice appends nothing the second time.
+ * to the database — and appends one ruling per citation: the latest draft on a
+ * (title, url) pair the ledger does not already rule on. Drafts already pulled
+ * are skipped on their `draftId`, so running it twice appends nothing.
  *
  * It does not apply anything: the printed command does, after review.
  *
@@ -29,6 +30,7 @@ import { resolveMigrationStateTarget } from "../lib/migrationStateTarget";
 import type { SourceTier, SourceTierRulingDecision } from "@/types/sources";
 import {
   SOURCE_TIER_RULINGS_LEDGER,
+  citationKey,
   type SourceTierRuling,
 } from "./sourceTierRulings";
 
@@ -51,6 +53,15 @@ export interface PullSourceTierRulingsOptions {
   fetchImpl?: typeof fetch;
 }
 
+interface PullSourceTierRulingsResult {
+  /** Ruling ids written to the ledger. */
+  appended: string[];
+  /** Draft ids a later draft on the same citation replaced; never written. */
+  superseded: string[];
+  /** Draft ids on a citation the ledger already rules on; revise that ruling by hand. */
+  alreadyRuled: string[];
+}
+
 function draftToRuling(draft: RulingDraftRow): SourceTierRuling {
   return {
     id: `STR-${draft.id}`,
@@ -67,7 +78,7 @@ function draftToRuling(draft: RulingDraftRow): SourceTierRuling {
 
 export async function pullSourceTierRulings(
   options: PullSourceTierRulingsOptions
-): Promise<{ appended: string[] }> {
+): Promise<PullSourceTierRulingsResult> {
   const fetchImpl = options.fetchImpl ?? fetch;
   const response = await fetchImpl(
     `${options.supabaseUrl.replace(/\/$/, "")}/rest/v1/source_tier_ruling_drafts?select=*&order=decided_at.asc`,
@@ -95,10 +106,39 @@ export async function pullSourceTierRulings(
   const rulings = Array.isArray(ledger.rulings) ? ledger.rulings : [];
 
   const pulled = new Set(rulings.map((ruling) => ruling.draftId));
-  const fresh = drafts
-    .filter((draft) => !pulled.has(draft.id))
-    .map(draftToRuling);
-  if (fresh.length === 0) return { appended: [] };
+  const ruled = new Set(
+    rulings.map((ruling) => citationKey(ruling.match.title, ruling.match.url))
+  );
+
+  // One ruling per citation: the ledger refuses two, because applied in order
+  // the earlier one stays contradicted by the fiche. A moderator correcting a
+  // decision before the pull therefore means the latest draft wins.
+  const latestByCitation = new Map<string, RulingDraftRow>();
+  const superseded: string[] = [];
+  for (const draft of drafts) {
+    if (pulled.has(draft.id)) continue;
+    const key = citationKey(draft.source_title, draft.source_url);
+    const current = latestByCitation.get(key);
+    if (!current) {
+      latestByCitation.set(key, draft);
+    } else if (Date.parse(draft.decided_at) > Date.parse(current.decided_at)) {
+      superseded.push(current.id);
+      latestByCitation.set(key, draft);
+    } else {
+      superseded.push(draft.id);
+    }
+  }
+
+  // A correction arriving after its citation was pulled is not appended: the
+  // ledger entry is already reviewed git history, revised by hand.
+  const alreadyRuled: string[] = [];
+  const fresh: SourceTierRuling[] = [];
+  for (const [key, draft] of latestByCitation) {
+    if (ruled.has(key)) alreadyRuled.push(draft.id);
+    else fresh.push(draftToRuling(draft));
+  }
+
+  if (fresh.length === 0) return { appended: [], superseded, alreadyRuled };
 
   ledger.rulings = [...rulings, ...fresh];
   const config = (await prettier.resolveConfig(options.ledgerPath)) ?? {};
@@ -110,7 +150,11 @@ export async function pullSourceTierRulings(
     }),
     "utf8"
   );
-  return { appended: fresh.map((ruling) => ruling.id) };
+  return {
+    appended: fresh.map((ruling) => ruling.id),
+    superseded,
+    alreadyRuled,
+  };
 }
 
 async function main(): Promise<void> {
@@ -126,7 +170,7 @@ async function main(): Promise<void> {
     productionKey: process.env.PRODUCTION_SUPABASE_SERVICE_ROLE_KEY,
   });
 
-  const { appended } = await pullSourceTierRulings({
+  const { appended, superseded, alreadyRuled } = await pullSourceTierRulings({
     supabaseUrl: credentials.supabaseUrl,
     serviceRoleKey: credentials.serviceRoleKey,
     ledgerPath: SOURCE_TIER_RULINGS_LEDGER,
@@ -136,6 +180,18 @@ async function main(): Promise<void> {
     `Pulled ${appended.length} new ruling(s) from ${credentials.environment} into ${SOURCE_TIER_RULINGS_LEDGER}`
   );
   for (const id of appended) console.log(`  ${id}`);
+  if (superseded.length > 0) {
+    console.log(
+      "Not pulled — a later draft on the same citation replaced these drafts:"
+    );
+    for (const id of superseded) console.log(`  ${id}`);
+  }
+  if (alreadyRuled.length > 0) {
+    console.log(
+      "Not pulled — the ledger already rules on these drafts' citations; revise that ruling by hand if the new decision stands:"
+    );
+    for (const id of alreadyRuled) console.log(`  ${id}`);
+  }
   if (appended.length > 0) {
     console.log(
       "Review them, then: npx tsx scripts/afrik/applySourceTierRulings.ts (dry run), and --apply to write the fiches."

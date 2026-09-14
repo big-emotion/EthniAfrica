@@ -275,6 +275,47 @@ describe("checkSourceTierRulings", () => {
     ]);
   });
 
+  // Applied in order, two rulings on one citation leave the earlier one
+  // contradicted by the fiche forever; the ledger refuses the pair instead.
+  // @req REQ-092
+  it("fails two rulings on the same citation for the same fiches", () => {
+    citing("referenced");
+
+    const { errors } = checkSourceTierRulings(
+      datasetRoot,
+      writeLedger([ruling(), ruling({ id: "STR-0002", tier: "referenced" })])
+    );
+
+    expect(errors).toContain(
+      `STR-0002: rules on "${WPP_TITLE}" (no url) for fiches STR-0001 already rules on — one ruling per citation`
+    );
+  });
+
+  // @req REQ-092
+  it("accepts two rulings on the same citation for disjoint fiches", () => {
+    citing("official");
+    writeFiche("pays/SEN.json", {
+      id: "SEN",
+      content: {
+        sources: [{ title: WPP_TITLE, url: null, tier: "referenced" }],
+      },
+    });
+
+    const { errors } = checkSourceTierRulings(
+      datasetRoot,
+      writeLedger([
+        ruling({ appliesTo: ["pays/BEN.json"] }),
+        ruling({
+          id: "STR-0002",
+          tier: "referenced",
+          appliesTo: ["pays/SEN.json"],
+        }),
+      ])
+    );
+
+    expect(errors).toEqual([]);
+  });
+
   // @req REQ-092
   it("holds the live corpus to the committed ledger", () => {
     const live = checkSourceTierRulings(

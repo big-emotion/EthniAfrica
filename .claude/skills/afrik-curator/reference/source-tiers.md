@@ -59,7 +59,8 @@ The number of corpus entries still carrying `tier: "needs_review"` is
 copied here goes stale with the next ruling. It marks the tail that has not been ruled on
 yet, is resolved one citation at a time through the ruling ledger
 (`docs/editorial/source-review/source-tier-rulings.json`), and the code keeps it
-deliberately outside the tier union (`src/types/afrik.ts:180`), so it is never _shown_ as a
+deliberately outside the tier union (`SOURCE_TIERS` in `src/types/sources.ts`; fiche
+citations are typed `SourceTierState`, which adds only this marker), so it is never _shown_ as a
 level of authority.
 
 These are a genuine mixture: national censuses, SIL Ethnologue, UNEP and CIA World

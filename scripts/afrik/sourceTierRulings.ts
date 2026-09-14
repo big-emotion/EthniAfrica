@@ -97,6 +97,11 @@ export function normalizeUrl(url: unknown): string | null {
   return typeof url === "string" && url.trim() !== "" ? url : null;
 }
 
+/** The citation identity a ruling names, as one comparable string. */
+export function citationKey(title: string, url: unknown): string {
+  return JSON.stringify([title, normalizeUrl(url)]);
+}
+
 export function citesPair(
   source: unknown,
   title: string,
@@ -210,7 +215,39 @@ export function validateRulings(rulings: SourceTierRuling[]): string[] {
     if (seen.has(ruling.id)) errors.push(`${ruling.id}: duplicate id`);
     seen.add(ruling.id);
   }
+
+  // Rulings apply in ledger order, so two on one citation for a shared fiche
+  // leave the earlier one contradicted by the corpus with no way to go green.
+  for (let later = 0; later < rulings.length; later += 1) {
+    const ruling = rulings[later];
+    if (isBlank(ruling?.match?.title)) continue;
+    const key = citationKey(ruling.match.title, ruling.match.url);
+    const earlier = rulings
+      .slice(0, later)
+      .find(
+        (other) =>
+          !isBlank(other?.match?.title) &&
+          citationKey(other.match.title, other.match.url) === key &&
+          appliesToOverlap(other, ruling)
+      );
+    if (earlier) {
+      errors.push(
+        `${rulingLabel(ruling, later)}: rules on "${ruling.match.title}" (${normalizeUrl(ruling.match.url) ?? "no url"}) for fiches ${rulingLabel(earlier, rulings.indexOf(earlier))} already rules on — one ruling per citation`
+      );
+    }
+  }
   return errors;
+}
+
+/** An absent `appliesTo` means every citing fiche, so it overlaps anything. */
+function appliesToOverlap(
+  first: SourceTierRuling,
+  second: SourceTierRuling
+): boolean {
+  if (!Array.isArray(first.appliesTo) || !Array.isArray(second.appliesTo)) {
+    return true;
+  }
+  return first.appliesTo.some((fiche) => second.appliesTo.includes(fiche));
 }
 
 function awaitsReview(tier: unknown): boolean {

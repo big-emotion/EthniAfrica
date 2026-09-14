@@ -98,6 +98,78 @@ describe("pullSourceTierRulings", () => {
     expect(JSON.parse(afterFirst).description).toBe("ledger");
   });
 
+  // A moderator may correct a decision before it is pulled. Two rulings on one
+  // citation would contradict each other in the gate for good, so only the
+  // latest decision becomes a ruling.
+  // @req REQ-092
+  it("keeps only the latest draft of a citation and reports the drafts it superseded", async () => {
+    const first = { ...drafts[0] };
+    const correction = {
+      ...drafts[0],
+      id: "33333333-3333-4333-8333-333333333333",
+      tier: "referenced",
+      rationale: "Corrected: a derived table, not the UN release itself.",
+      decided_at: "2026-09-14T12:00:00.000Z",
+    };
+    // Newest first, as the admin page lists them, to prove order is not trusted.
+    const fetchImpl = vi.fn(
+      async () =>
+        new Response(JSON.stringify([correction, first]), { status: 200 })
+    );
+
+    const result = await pullSourceTierRulings({
+      supabaseUrl: "https://db.example",
+      serviceRoleKey: "service-role",
+      ledgerPath,
+      fetchImpl,
+    });
+
+    expect(result.appended).toEqual([`STR-${correction.id}`]);
+    expect(result.superseded).toEqual([first.id]);
+    const rulings = readRulingLedger(ledgerPath);
+    expect(rulings).toHaveLength(1);
+    expect(rulings[0].tier).toBe("referenced");
+    expect(validateRulings(rulings)).toEqual([]);
+  });
+
+  // @req REQ-092
+  it("appends no draft for a citation the ledger already rules on, and names it", async () => {
+    const pulledEarlier = drafts[0];
+    const lateCorrection = {
+      ...drafts[0],
+      id: "44444444-4444-4444-8444-444444444444",
+      tier: "unverified",
+      decided_at: "2026-09-15T09:00:00.000Z",
+    };
+    const options = {
+      supabaseUrl: "https://db.example",
+      serviceRoleKey: "service-role",
+      ledgerPath,
+    };
+    await pullSourceTierRulings({
+      ...options,
+      fetchImpl: vi.fn(
+        async () =>
+          new Response(JSON.stringify([pulledEarlier]), { status: 200 })
+      ),
+    });
+    const afterFirst = fs.readFileSync(ledgerPath, "utf8");
+
+    const result = await pullSourceTierRulings({
+      ...options,
+      fetchImpl: vi.fn(
+        async () =>
+          new Response(JSON.stringify([pulledEarlier, lateCorrection]), {
+            status: 200,
+          })
+      ),
+    });
+
+    expect(result.appended).toEqual([]);
+    expect(result.alreadyRuled).toEqual([lateCorrection.id]);
+    expect(fs.readFileSync(ledgerPath, "utf8")).toBe(afterFirst);
+  });
+
   // Read-only on the database: one GET, service-role authenticated.
   // @req REQ-092
   it("reads the drafts with a single service-role GET", async () => {

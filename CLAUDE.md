@@ -370,8 +370,11 @@ chain stays auditable.
 A corpus citation nobody has ruled on yet says `tier: "needs_review"`. It is a marker at the corpus
 boundary, never a fourth tier, and it exists to disappear:
 
-- **Stored as `NULL`** in `sources.tier` by every loader — folding it onto `unverified` would publish a
-  ruling nobody made. Migration `088` admits the literal, but no loader writes it.
+- **Stored as `NULL`** in `sources.tier` by the loaders of the three directories that carry it —
+  `peuples/`, `pays/`, `famille_linguistique/` (`provenanceWriter.ts`, `peopleAppellationLoader.ts`).
+  Folding it onto `unverified` would publish a ruling nobody made. The name, patronyme, relation,
+  migration and person loaders pass `source.tier` through unchanged, which holds only while their
+  directories carry no `needs_review`. Migration `088` admits the literal.
 - **Labelled "En attente d'examen"** / "Awaiting review" (`SOURCE_PENDING_REVIEW_LABEL`), visually
   distinct from the three tiers.
 - **Weighted 0.4** by `recompute_confidence()` (migration `088`): not yet judged cannot claim more

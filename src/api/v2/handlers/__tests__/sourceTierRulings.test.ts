@@ -127,6 +127,27 @@ describe("handleSourceTierRulingDraftCreate", () => {
     expect(dependencies.insertSourceTierRulingDraft).not.toHaveBeenCalled();
   });
 
+  // The ledger refuses a repair to the url it repairs, and one such ruling
+  // makes apply refuse the whole ledger; it is stopped here instead.
+  // @req REQ-092
+  it("answers 400 to a repair whose corrected address is the address it repairs", async () => {
+    const dependencies = makeDependencies();
+
+    const result = await handleSourceTierRulingDraftCreate(
+      validBody({
+        source_url: "https://dead.example/page",
+        decision: "repair",
+        tier: "referenced",
+        repaired_url: "https://dead.example/page",
+      }),
+      { accessToken: "moderator-token" },
+      dependencies
+    );
+
+    expect(result.status).toBe(400);
+    expect(dependencies.insertSourceTierRulingDraft).not.toHaveBeenCalled();
+  });
+
   // @req REQ-042
   it("records the draft under the moderator's id, writes an audit row and answers 201", async () => {
     const dependencies = makeDependencies();
