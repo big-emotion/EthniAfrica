@@ -393,7 +393,7 @@ def test_a_figure_no_longer_earns_a_cartouche_on_its_own():
     overflows on its own merits, and falls to C for the reason §6 gives — the
     composed column does not hold — not for carrying a figure.
     """
-    chiffre = carte(chiffre="30,38", corps="", punchline="")
+    chiffre = carte(chiffre=True, titre="30,38", corps="", punchline="")
     assert gab.plan(chiffre, DECK, "carrousel", image=image_test(3000, 4000)).disposition == "A"
 
 
