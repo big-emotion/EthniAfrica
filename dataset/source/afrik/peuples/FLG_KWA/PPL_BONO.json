@@ -53,7 +53,7 @@
     "culture": {
       "majorRites": "Festivals royaux associes aux tabourets ancestraux. Rites de libation et de veneration des ancetres dans les maisons de sanctuaires. Funerailles avec ceremonies de cour royale et musique. Ceremonies d'investiture royale. Festival de l'igname (Yam festival) celebre la recolte et renforce la cohesion communautaire.",
       "symbols": "Regalia royaux: parapluies ceremonials, tabourets, insignes en or, trompes en ivoire, chasse-mouches, epees en or. Symboles adinkra: ideogrammes philosophiques originaires des Bono (la tradition orale attribue la creation des adinkra au roi des Jaman, en Cote d'Ivoire actuelle). Poids a or (goldweights) et balances. Poterie et metallurgie locales.",
-      "artsAndMusic": "Tissage: gagawuga, kyenkyen, kente (le tissage du kente serait originaire des Bono-Akan). Musique: Kete, Adowa, fontomfrom (tambours parlants, originellement bono-akan) lors des festivals, funerailles et ceremonies royales. Artisanat: poterie, metallurgie, forgeage, balances et poids a or. Les fontomfrom et la seperewa (harpe-luth) sont des instruments originairement bono-akan adoptes par les Ashanti.",
+      "artsAndMusic": "Tissage: gagawuga, kyenkyen, kente (le tissage du kente serait originaire des Bono-Akan). Musique: Kete, Adowa, fontomfrom (tambours parlants, originellement bono-akan) lors des festivals, funerailles et ceremonies royales. Artisanat: poterie, metallurgie, forgeage, balances et poids a or. Les fontomfrom et la seperewa (harpe-luth) sont des instruments originairement bono-akan adoptes par les Ashanti. La langue akan porte un corpus proverbial (mmebusem) de plus de 3 600 entrées, compilé dès 1879 par le linguiste missionnaire Johann Gottlieb Christaller à partir des dialectes twi et fante — un usage partagé par l'ensemble des groupes de langue akan.",
       "spiritualities": "Religion akan traditionnelle: veneration d'Amowi comme lieu d'origine sacre, des ancetres (nsamanfo), libations regulieres. Expansion de l'islam depuis le contact avec les marchands mande (quartier Kramo a Begho). Christianisme present depuis la periode coloniale. Syncretsime entre traditions ancestrales akan et pratiques des religions monotheistes."
     },
     "historicalRole": {
@@ -102,6 +102,12 @@
         "title": "Stahl, Ann Brower – Making History in Banda: Anthropological Visions of Africa's Past, Cambridge University Press, 2001",
         "url": null,
         "tier": "referenced"
+      },
+      {
+        "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
       }
     ]
   },

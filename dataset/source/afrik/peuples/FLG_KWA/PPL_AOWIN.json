@@ -55,7 +55,7 @@
     "culture": {
       "majorRites": "Festival Elulie de l'igname : preserve les elements symboliques et calendaires de la tradition aowin, avec dimension ceremoniale communautaire. Rituels d'intronisation de l'Omanhene. Ceremonies de veneration des ancetres et de demande de protection. Festivals commemorant les liens ancestraux avec l'etat historique Aowin (dans le district Aowin Municipal du Ghana, celebration periodique selon Wikipedia EN Anyi).",
       "symbols": "Regalia sacres aowin : tabouret royal d'Ano Assinman (symbole de l'autorite et de la continuite de l'etat), Amuan (charms de guerre), momome (defenses rituelles). Les rivieres Tano et Bia comme espaces symboliques du territoire ancestral. La tradition de l'or comme richesse fondatrice de l'identite aowin.",
-      "artsAndMusic": "Traditions artisanales akan (orfevrerie, tissage, sculpture). Heritage oral riche (genealogies, recits de fondation des royaumes). Production de cacao, huile de palme et exploitation forestiere dans le district Aowin (Ghana). Les peuples Sefwi ont adopte des elements des structures politiques, des coutumes spirituelles et de la langue aowin.",
+      "artsAndMusic": "Traditions artisanales akan (orfevrerie, tissage, sculpture). Heritage oral riche (genealogies, recits de fondation des royaumes). Production de cacao, huile de palme et exploitation forestiere dans le district Aowin (Ghana). Les peuples Sefwi ont adopte des elements des structures politiques, des coutumes spirituelles et de la langue aowin. La langue akan porte un corpus proverbial (mmebusem) de plus de 3 600 entrées, compilé dès 1879 par le linguiste missionnaire Johann Gottlieb Christaller à partir des dialectes twi et fante — un usage partagé par l'ensemble des groupes de langue akan.",
       "spiritualities": "Religion traditionnelle akan : veneration des ancetres, rituel cosmologique, pratiques magico-religieuses (Amuan, momome). Le christianisme est repandu au Ghana (protestantisme, presbyterianisme, pentecotisme). En Cote d'Ivoire, les descendants anyi/agni combinent animisme traditionnel et christianisme. Culture of Ivory Coast Wikipedia note une population anyi/aowin d'environ 40 000 personnes parlant aowin en Cote d'Ivoire."
     },
     "historicalRole": {
@@ -96,6 +96,12 @@
         "title": "Glottolog — Anyin (anyi1245)",
         "url": "https://glottolog.org/resource/languoid/id/anyi1245",
         "tier": "official"
+      },
+      {
+        "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
       }
     ]
   },

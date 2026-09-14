@@ -51,7 +51,7 @@
     "culture": {
       "majorRites": "Festival Wassa Akwasidae : celebration periodique honorant les ancetres et les divinites, commune a la tradition akan. Ceremonies de chefferie liees aux tabourets ancestraux (nnua). Rituels lies aux activites minieres et agricoles.",
       "symbols": "L'or est le symbole central de l'identite wassa : les Wassa sont credites d'avoir enseigne l'extraction et la fonte de l'or au Ghana. Le tissage du kente et les ornements en or symbolisent le statut social. La foret tropicale et ses ressources sont intimement liees a l'identite territoriale wassa.",
-      "artsAndMusic": "Riche tradition de musique et de danse avec des instruments comme le tambour djembe et le fontomfrom. Expertise reconnue en sculpture sur bois et en orfevrerie (creations en or finement travaillees). Vetements en kente (tissu colore tisse avec des motifs symboliques). Les Wassa sont credites d'avoir ete parmi les premiers orfevres d'or du Ghana.",
+      "artsAndMusic": "Riche tradition de musique et de danse avec des instruments comme le tambour djembe et le fontomfrom. Expertise reconnue en sculpture sur bois et en orfevrerie (creations en or finement travaillees). Vetements en kente (tissu colore tisse avec des motifs symboliques). Les Wassa sont credites d'avoir ete parmi les premiers orfevres d'or du Ghana. La langue akan porte un corpus proverbial (mmebusem) de plus de 3 600 entrées, compilé dès 1879 par le linguiste missionnaire Johann Gottlieb Christaller à partir des dialectes twi et fante — un usage partagé par l'ensemble des groupes de langue akan.",
       "spiritualities": "Religion traditionnelle akan : culte du dieu supreme (Nyame/Onyame) et des ancetres. Respect des anciens (sagesse, connaissance, guidance). Forte cohesion communautaire et familiale elargie. Christianisme majoritaire aujourd'hui."
     },
     "historicalRole": {
@@ -82,6 +82,12 @@
         "title": "Akan Heritage – History of Wassa",
         "url": "https://akanheritage.com.gh/history.html",
         "tier": "unverified"
+      },
+      {
+        "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
       }
     ]
   },

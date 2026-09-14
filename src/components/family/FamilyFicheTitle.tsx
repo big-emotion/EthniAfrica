@@ -65,7 +65,7 @@ export function FamilyFicheTitle({
             hero.nameFr
           )}
         </h1>
-        {/* 19 of the 24 families explain in prose that their name was imposed
+        {/* 20 of the 25 families explain in prose that their name was imposed
             — Bantou was coined by Bleek and made an apartheid legal category —
             and the head could not say so as data. The badge stands alone under
             the name rather than opening a chip row: the chips are figures

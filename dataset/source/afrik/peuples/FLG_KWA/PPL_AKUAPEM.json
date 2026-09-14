@@ -54,7 +54,7 @@
     "culture": {
       "majorRites": "Festival Odwira (festival annuel de purete et d'action de grace reunissant les 17 villes de la confederation, celebration de la recolte et purification spirituelle). Funerailles elaborees avec ceremonies de deuil communautaire. Pratiques ancestrales de veneration des esprits fondateurs.",
       "symbols": "Le tabouret royal (siège sacre symbolisant l'autorite du chef), les regalia de la chefferie, les drapeaux de clan. La crete de l'Akuapem elle-meme constitue un territoire symbolique fort, associe a la resistance contre l'Akwamu.",
-      "artsAndMusic": "Artisanat akan : tissage de kente, sculpture sur bois (tabourets, statues), orfevrerie. Musique percussive ceremonielle, chants d'eglise presbyteriens heriters de la tradition de la Basel Mission. La mission de Bale a contribue a developper une tradition d'imprimerie et d'edition en twi akuapem.",
+      "artsAndMusic": "Artisanat akan : tissage de kente, sculpture sur bois (tabourets, statues), orfevrerie. Musique percussive ceremonielle, chants d'eglise presbyteriens heriters de la tradition de la Basel Mission. La mission de Bale a contribue a developper une tradition d'imprimerie et d'edition en twi akuapem. La langue akan porte un corpus proverbial (mmebusem) de plus de 3 600 entrées, compilé dès 1879 par le linguiste missionnaire Johann Gottlieb Christaller à partir des dialectes twi et fante — un usage partagé par l'ensemble des groupes de langue akan.",
       "spiritualities": "Animisme traditionnel akan (veneration des ancetres, croyance aux obosom, esprits de la nature et des rivieres). Depuis 1835, le christianisme presbyterien est predominant, issu de la Basel Mission. La presence de l'Eglise presbyterienne du Ghana reste forte sur la crete."
     },
     "historicalRole": {
@@ -100,6 +100,12 @@
         "title": "Glottolog — Twi (twii1234)",
         "url": "https://glottolog.org/resource/languoid/id/twii1234",
         "tier": "official"
+      },
+      {
+        "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
       }
     ]
   },

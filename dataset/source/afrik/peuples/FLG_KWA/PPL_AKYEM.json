@@ -55,7 +55,7 @@
     "culture": {
       "majorRites": "Festival Ohum (biannuel, en juin-juillet et septembre-octobre) : celebration de la recolte de l'igname, veneration des ancetres et des divinites, avec la riviere Birim comme element sacre central. Funerailles elaborees avec deuil public et ceremonies de transition vers le monde spirituel. Rites d'intronisation des chefs impliquant les tabourets sacres.",
       "symbols": "La riviere Birim (riviere sacree, source de vie et de diamants, symbole de renouvellement). Le tabouret sacre (siege de l'autorite et de l'ame de la communaute). L'inhumation symbolique dans une pierre a Akuapem comme promesse de protection. Les regalia royaux de l'Okyenhene.",
-      "artsAndMusic": "Artisanat akan : tissage de kente, orfevrerie (tradition ancienne liee au commerce de l'or), sculpture sur bois (tabourets, statues). Musique ceremonielle avec tambours, percussions et chants rituels. La region est connue pour ses riches traditions orales et genealogiques.",
+      "artsAndMusic": "Artisanat akan : tissage de kente, orfevrerie (tradition ancienne liee au commerce de l'or), sculpture sur bois (tabourets, statues). Musique ceremonielle avec tambours, percussions et chants rituels. La region est connue pour ses riches traditions orales et genealogiques. La langue akan porte un corpus proverbial (mmebusem) de plus de 3 600 entrées, compilé dès 1879 par le linguiste missionnaire Johann Gottlieb Christaller à partir des dialectes twi et fante — un usage partagé par l'ensemble des groupes de langue akan.",
       "spiritualities": "Religion traditionnelle akan : veneration des ancetres, croyance en les obosom (divinites de la nature), culte de la riviere Birim. Depuis le XIXe siecle, le christianisme (protestantisme methodiste, presbyterien, adventiste, catholique) est largement repandu. Societe matrilineaire avec forte coherence clanique."
     },
     "historicalRole": {
@@ -91,6 +91,12 @@
         "title": "Glottolog — Twi (twii1234)",
         "url": "https://glottolog.org/resource/languoid/id/twii1234",
         "tier": "official"
+      },
+      {
+        "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
       }
     ]
   },

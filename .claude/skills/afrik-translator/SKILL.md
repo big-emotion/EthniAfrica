@@ -103,7 +103,7 @@ A translated record lives beside the corpus, never inside it:
 
 ```
 dataset/translations/<lang>/<same relative path as the source>/<ID>.json
-dataset/translations/en/peuples/FLG_NIGERCONGO/PPL_ASANTE.json
+dataset/translations/en/peuples/FLG_KWA/PPL_ASANTE.json
 ```
 
 It is a **full record** with the same field shape as the French source. Every

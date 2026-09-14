@@ -47,7 +47,7 @@
     "culture": {
       "majorRites": "Festival Sacraboutou a Bondoukou, festival de l'igname (Yam Festival) marquant le debut des recoltes. Funerailles elaborees avec arts funeraires remarques par les historiens. Lors du festival annuel, le roi et les chefs provinciaux recoivent tribut et offrandes des villages Kulango et Abron.",
       "symbols": "Regalia royaux de type Akan : parasols ceremonials, tabourets sacres, ornements en or, epees, sandales en or, ivoire sculpte. Les symboles Adinkra, profondement ancres dans la cosmologie de la cour Bono/Abron, leur sont attribues comme lieu d'origine. Le tisserand kente est pratique par les specialistes Abron.",
-      "artsAndMusic": "Tissage (Abron et specialistes Dyula), orfevrerie et bijouterie en or, poterie. Musique ceremoniale Kete, Adowa et Fontomfrom lors des festivals royaux et funerailles. Art funeraire developpe et riche.",
+      "artsAndMusic": "Tissage (Abron et specialistes Dyula), orfevrerie et bijouterie en or, poterie. Musique ceremoniale Kete, Adowa et Fontomfrom lors des festivals royaux et funerailles. Art funeraire developpe et riche. La langue akan porte un corpus proverbial (mmebusem) de plus de 3 600 entrées, compilé dès 1879 par le linguiste missionnaire Johann Gottlieb Christaller à partir des dialectes twi et fante — un usage partagé par l'ensemble des groupes de langue akan.",
       "spiritualities": "Religion traditionnelle Akan centree sur la veneration des ancetres et des tabourets sacres. Culte aux abosom (divinites). L'islam sunnite est pratique par une partie de la population depuis l'influence Dyula, faisant de Bondoukou un centre islamique avec universite coranique historique. Coexistence de la chefferie sacree et du savoir islamique."
     },
     "historicalRole": {
@@ -86,6 +86,12 @@
         "title": "Terray, Emmanuel - A History of the Abron Kingdom of Gyaman, Michigan State University, 1980",
         "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F1980v12n1%2Fasrv012001002.pdf",
         "tier": "referenced"
+      },
+      {
+        "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
       }
     ]
   },

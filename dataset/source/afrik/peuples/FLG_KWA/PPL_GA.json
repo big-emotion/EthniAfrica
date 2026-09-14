@@ -67,7 +67,7 @@
     "culture": {
       "majorRites": "Homowo (hooting at hunger, railler la faim) est le festival annuel central des Ga, célébré en août. Il commémore la grande famine que subirent les Ga lors de leur installation côtière ; la survie est célébrée avec abondance alimentaire, tambours et danses. Le cycle commence en mai avec la plantation des cultures, suivi de gbemlilaa (voie fermée, période de restrictions), puis de la grande célébration en août. Nungua ouvre le cycle, Tema le ferme en tant que ville la plus jeune. Twins Festival (Yeyeye) : festival dédié aux jumeaux avec deuil traditionnel et célébration communautaire. Asafo/Asafotu (festival guerrier de Ada) : reconstitution de batailles et durbar des chefs.",
       "symbols": "Le stool (trône) — objet sacré de chaque ville, symbole de l'âme collective et du pouvoir de guerre. Les cercueils fantaisie (fantasy coffins) — créations artistiques funéraires reflétant l'identité du défunt (taxi, poisson, lion, animal totem du clan). Le kpokpoi — plat rituel de Homowo préparé à base de noix de palme et de farine de maïs, partagé avec les ancêtres lors de libations.",
-      "artsAndMusic": "Les cercueils fantaisie (fantasy coffins) sont une tradition artistique ga née dans les années 1950. Pionniers : Ataa Oko (1919-2012, La), Seth Kane Kwei (1925-1992, Teshie) ; suivis de Paa Joe, Daniel Mensah, Kudjoe Affutu. Ces cercueils sculptés en formes symboliques (voiture, oiseau, animal totem) expriment la continuité de la vie après la mort et coûtent jusqu'à 600 dollars. Musique traditionnelle : kpanlogo (genre modernisé v. 1960), Klama, Kpatsa. Tambours et danses cérémonielles lors de Homowo. Quartier de boxeurs de Bukom (pêcheurs Ga d'Accra) : Azumah Nelson, David Kotei, Ike Quartey — tradition de champions du monde issus de la communauté Ga.",
+      "artsAndMusic": "Les cercueils fantaisie (fantasy coffins) sont une tradition artistique ga née dans les années 1950. Pionniers : Ataa Oko (1919-2012, La), Seth Kane Kwei (1925-1992, Teshie) ; suivis de Paa Joe, Daniel Mensah, Kudjoe Affutu. Ces cercueils sculptés en formes symboliques (voiture, oiseau, animal totem) expriment la continuité de la vie après la mort et coûtent jusqu'à 600 dollars. Musique traditionnelle : kpanlogo (genre modernisé v. 1960), Klama, Kpatsa. Tambours et danses cérémonielles lors de Homowo. Quartier de boxeurs de Bukom (pêcheurs Ga d'Accra) : Azumah Nelson, David Kotei, Ike Quartey — tradition de champions du monde issus de la communauté Ga. La tradition orale ga-dangme comprend un corpus de proverbes transmis lors des cérémonies rituelles, documenté dans le survol linguistique du ghana de Kropp Dakubu (1988).",
       "spiritualities": "Religion traditionnelle centrée sur les divinités (obosom) et les ancêtres. Chaque ville a ses propres cultes. Les ancêtres sont puissants et présents dans la vie des vivants ; les funérailles sont des célébrations élaborées pour les accompagner dans l'au-delà. Homowo est à la fois fête de la récolte et communion avec les ancêtres (libations versées aux carrefours et dans les maisons). Forte présence chrétienne contemporaine (protestantisme, catholicisme, pentecôtisme largement répandus à Accra)."
     },
     "historicalRole": {
@@ -107,6 +107,12 @@
         "title": "Carleton University — The Ga People and Homowo Festival (Osabu-Kle)",
         "url": "https://carleton.ca/africanstudies/wp-content/uploads/Ga-People-and-Homowo-Festival.pdf",
         "tier": "referenced"
+      },
+      {
+        "title": "Kropp Dakubu, Mary Esther (1988) – The Languages of Ghana. Kegan Paul International, pour l'International African Institute",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Survol linguistique des langues du Ghana, dont le ga-dangme et ses traditions orales."
       }
     ]
   },

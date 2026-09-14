@@ -65,7 +65,7 @@
     "culture": {
       "majorRites": "Epe-Ekpe : fete annuelle celebree en septembre, marquant le Nouvel An lunaire des Mina. Sur quatre jours, la fete inclut musique et danse, et culmine avec le kpesoso (revelation de la pierre sacree de Glidji). La couleur de la pierre predit le destin de Glidji pour l'annee a venir. Fete de l'igname (yam festival) celebrant les recoltes avec ceremonies elaborees et rassemblements communautaires. Ceremonies du Vodun Tchamba pour honorer la memoire des ancetres esclaves et marchands d'esclaves.",
       "symbols": "La pierre sacree de Glidji (revelee lors du kpesoso a l'Epe-Ekpe) est le principal symbole spirituel et identitaire du royaume Gen. Le canoe (pirogue) est un symbole historique fondamental : les Ane d'Aneho etaient initialement des 'canoiers d'Elmina' selon les sources europeennes du 17e siecle.",
-      "artsAndMusic": "Musique traditionnelle avec tambours, instruments a percussion et chant. Danse ceremonielle lors des fetes Epe-Ekpe et des evenements sociaux. Ensembles de percussions et chorales. Les troupes folkloriques (comme la Troupe Folklorique d'Aneho) maintiennent les traditions musicales Gen-Mina. Les Gen-Mina ont developpe une culture commerciale et maritime liee a leur position cotiere.",
+      "artsAndMusic": "Musique traditionnelle avec tambours, instruments a percussion et chant. Danse ceremonielle lors des fetes Epe-Ekpe et des evenements sociaux. Ensembles de percussions et chorales. Les troupes folkloriques (comme la Troupe Folklorique d'Aneho) maintiennent les traditions musicales Gen-Mina. Les Gen-Mina ont developpe une culture commerciale et maritime liee a leur position cotiere. Comme les autres locuteurs gbe (éwé, fon, aja), la tradition orale s'appuie sur un large corpus de proverbes, documenté par la phonologie comparative des langues gbe (Capo, 1991).",
       "spiritualities": "Vodun (Voodoo) central dans la vie spirituelle : croyance en diverses divinites et esprits habitant le monde naturel. Culte des ancetres. Vodun Tchamba : variete specifique de Vodun mettant en evidence les experiences des ancetres esclaves et des marchands d'esclaves ; pratique distinctive chez les Mina du Togo. Certains Gen-Mina pratiquent aussi le christianisme catholique ou protestant, heritage des missions du 19e siecle."
     },
     "historicalRole": {
@@ -114,6 +114,12 @@
         "title": "ALMA – The Language of African Music: Gen-Mina",
         "url": "https://alma.matrix.msu.edu/the-language-of-african-music-gen-mina",
         "tier": "referenced"
+      },
+      {
+        "title": "Capo, Hounkpati B. C. (1991) – A Comparative Phonology of Gbe. Foris Publications",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Classification comparative interne des langues gbe (éwé, fon, aja, mina, gen)."
       }
     ]
   },

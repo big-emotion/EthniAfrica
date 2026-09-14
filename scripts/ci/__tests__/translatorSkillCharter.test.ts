@@ -214,7 +214,7 @@ describe("afrik-translator skill — worked examples still hold in the corpus", 
   const examples: Array<[string, string, string]> = [
     [
       "PPL_ASANTE",
-      "peuples/FLG_NIGERCONGO/PPL_ASANTE.json",
+      "peuples/FLG_KWA/PPL_ASANTE.json",
       "Les chercheurs anglophones utilisent les deux formes de facon interchangeable",
     ],
     [

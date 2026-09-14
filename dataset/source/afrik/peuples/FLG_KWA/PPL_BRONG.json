@@ -69,7 +69,7 @@
     "culture": {
       "majorRites": "Funerailles : evenement social majeur, le plus important de la vie communautaire. Les proches en deuil portent de vieux habits sombres pendant 6 jours. Les pretres et la famille royale observent 7 jours de deuil; toute la nation se joint au deuil d'un roi. Ceremonies de puberte pour garcons et filles. Trois grandes ceremonies religieuses fixes annuelles : Odiwera (grand festival de l'igname en octobre), Adae (tribut aux ancetres), Fofye (tribut aux dieux locaux et aux esprits des pretres defunts). Mariage : ceremonies de 10 jours impliquant la mariee, le marie, leurs familles et le village. Ceremonies d'accueil du nouveau-ne par les femmes de la famille maternelle.",
       "symbols": "Adinkra : symboles culturels et philosophiques originaires de la cour de Bono-Manso, rayonnant de la comme hub de la culture akan. Tabouret sacre royal (signe de l'autorite et de la continuite dynastique). Ombrelles royales (symbole de la dignite du roi). Trompettes en ivoire, chasse-mouches, epees ceremoniales. Or et poudre d'or (monnaie et symbole de richesse depuis le XIIe siecle). Kente : tissu ceremonialement tisse, dont les origines remontent au Bonoman.",
-      "artsAndMusic": "Tissage : gagawuga, kyenkyen et kente (tissage de coton et de soie avec motifs symboliques). Fonte du laiton (poids a or, figurines). Poterie et vases en argile pour le stockage alimentaire. Musique royale : tambours fontomfrom et atumpan (originaires du Bonoman), utilises dans les ceremonies, les funerailles et les evenements royaux. Danses : Kete, Adowa, fontomfrom. Trompettes royales en ivoire. Regalia royale elaborate.",
+      "artsAndMusic": "Tissage : gagawuga, kyenkyen et kente (tissage de coton et de soie avec motifs symboliques). Fonte du laiton (poids a or, figurines). Poterie et vases en argile pour le stockage alimentaire. Musique royale : tambours fontomfrom et atumpan (originaires du Bonoman), utilises dans les ceremonies, les funerailles et les evenements royaux. Danses : Kete, Adowa, fontomfrom. Trompettes royales en ivoire. Regalia royale elaborate. La langue akan porte un corpus proverbial (mmebusem) de plus de 3 600 entrées, compilé dès 1879 par le linguiste missionnaire Johann Gottlieb Christaller à partir des dialectes twi et fante — un usage partagé par l'ensemble des groupes de langue akan.",
       "spiritualities": "Nyame : Etre supreme et Createur qui a engendre l'univers en donnant naissance au soleil (Amowia) ; dieu supreme, ne se mele guere des affaires quotidiennes des hommes ; la reine-mere en symbolise les aspects feminins (fille de la lune). Tano : dieu-fleuve invoque en temps de besoin. Gbawkaw : dieux personnels des pretres, habitant des lieux naturels (montagnes, rivieres, arbres). Culte des ancetres (Adae : ceremonie de tribut reguliere). Syncrétisme contemporain avec le christianisme predominant."
     },
     "historicalRole": {
@@ -115,6 +115,12 @@
         "title": "Joshua Project — Brong people group profile",
         "url": null,
         "tier": "needs_review"
+      },
+      {
+        "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
       }
     ]
   },

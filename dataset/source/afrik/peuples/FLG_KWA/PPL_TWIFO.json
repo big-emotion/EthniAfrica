@@ -58,7 +58,7 @@
     "culture": {
       "majorRites": "Festival Tuango : commemoration de l'exode du clan Aduana depuis Hemang, celebre depuis la fin du 18e siecle. Ce festival honore ceux qui partirent pour fonder de nouvelles communautes et ceux qui resterent pour proteger et perpetuer l'heritage Aduana. Ceremonies de chefferie liees aux tabourets ancestraux.",
       "symbols": "Le tabouret palais Tu a anko (ceux qui n'ont pas migre) est le symbole identitaire central des Twifo. L'etymologie meme du nom du groupe constitue un symbole de resilience et de fidelite au territoire. La riviere Pra et les mines d'or en bordure de la Jimi constituent des references identitaires territoriales.",
-      "artsAndMusic": "Artisanat akan : orfevrerie (poids en or, bijoux), sculpture. Les Twifo etaient renommes pour la qualite de leur or, dont les marchands europeens soulignaient la purete. Activites de chasse, agriculture (palmier notamment) et artisanat.",
+      "artsAndMusic": "Artisanat akan : orfevrerie (poids en or, bijoux), sculpture. Les Twifo etaient renommes pour la qualite de leur or, dont les marchands europeens soulignaient la purete. Activites de chasse, agriculture (palmier notamment) et artisanat. La langue akan porte un corpus proverbial (mmebusem) de plus de 3 600 entrées, compilé dès 1879 par le linguiste missionnaire Johann Gottlieb Christaller à partir des dialectes twi et fante — un usage partagé par l'ensemble des groupes de langue akan.",
       "spiritualities": "Religion traditionnelle akan : culte du dieu supreme (Nyame/Onyame), veneration des ancetres, sacralite des tabourets de chef. Christianisme majoritaire aujourd'hui dans la Central Region du Ghana."
     },
     "historicalRole": {
@@ -104,6 +104,12 @@
         "title": "Ghana 2021 Population and Housing Census",
         "url": "https://ghdx.healthdata.org/record/ghana-population-and-housing-census-2021",
         "tier": "referenced"
+      },
+      {
+        "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
       }
     ]
   },

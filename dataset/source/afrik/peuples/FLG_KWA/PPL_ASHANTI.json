@@ -48,7 +48,7 @@
     "culture": {
       "majorRites": "Bragoro (rites de puberte pour les filles de 13 a 20 ans apres les premieres menstruations): marque l'entree dans l'age adulte et conditionne le mariage; la jeune fille est baignee par des ainesses (mmerewa), nourrie d'oeufs bouillis, de poisson et de beignets de plantain (eto), puis presentee en habit blanc (ntoma) et bijoux en or. Awade (mariage): la famille du garcon offre des biens a la famille de la fille. Festivals royaux: Adae (tous les 42 jours), Adae Kese (grand Adae), Akwasidae (dimanche d'Adae), Awukudae (mercredi d'Adae), festival des ignames asante.",
       "symbols": "Tabouret d'Or (Sika Dwa Kofi): ame collective de la nation asante, symbole supreme du pouvoir royal. Symboles adinkra (originellement bono-akan): ideogrammes representant des concepts philosophiques et moraux. Ntoma blanc: vitalite, saintete, victoire, purete. Or et bijoux en or: royaute, richesse, continuite de la vie. Embleme national asante et sceptre royal.",
-      "artsAndMusic": "Kente: tissu tisse en bandes de soie ou coton aux motifs geometriques colores, symbole de statut royal. Bijouterie et orfèvrerie en or. Sculpture sur bois. Seperewa: harpe-luth a 10-14 cordes (instrument originellement bono-akan). Fontomfrom: tambours parlants royaux (originellement bono-akan). Musique et danse lors des ceremonies d'Adae. Cors de chasse en ivoire.",
+      "artsAndMusic": "Kente: tissu tisse en bandes de soie ou coton aux motifs geometriques colores, symbole de statut royal. Bijouterie et orfèvrerie en or. Sculpture sur bois. Seperewa: harpe-luth a 10-14 cordes (instrument originellement bono-akan). Fontomfrom: tambours parlants royaux (originellement bono-akan). Musique et danse lors des ceremonies d'Adae. Cors de chasse en ivoire. La langue akan porte un corpus proverbial (mmebusem) de plus de 3 600 entrées, compilé dès 1879 par le linguiste missionnaire Johann Gottlieb Christaller à partir des dialectes twi et fante — un usage partagé par l'ensemble des groupes de langue akan.",
       "spiritualities": "Religion akan traditionnelle fondee sur la veneration des ancetres et la croyance en un dieu supreme (Nyame) et des divinites intermediaires (abosom). Pratiques en lente diminution mais revivifiees lors des grandes ceremonies et dans la diaspora mondiale. Christianisme (catholicisme romain et protestantisme) largement repandu. Islam present depuis les contacts avec l'Afrique du Nord, avec port d'amulettes coraniques."
     },
     "historicalRole": {
@@ -91,6 +91,12 @@
         "title": "McCaskie, T. C. – State and Society in Pre-colonial Asante, Cambridge University Press, 1995",
         "url": null,
         "tier": "referenced"
+      },
+      {
+        "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
       }
     ]
   },

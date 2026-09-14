@@ -49,7 +49,7 @@
     "culture": {
       "majorRites": "Festival Asafotu, celebre annuellement en decembre par les Tongu, commemore les victoires et la bravoure des ancetres guerriers. Le Gbedzimido est une danse de guerre transformee en danse ceremonielle, executee lors de l'Asafotu et aux funerailles de personages importants. Le festival Afenorto de Mepe est une celebration annuelle de la zone Tongu. Rites funeraires elabores avec percussions.",
       "symbols": "Le fleuve et le lac Volta sont des symboles identitaires centraux pour les Tongu (le nom meme signifie pres de la riviere). Le Gbedzimido (danse de guerre) est un symbole de bravoure ancestrale.",
-      "artsAndMusic": "Musique de percussion complexe : tambour atsimevu (grand-pere), sogo (pere), kidi (mere), kagan (petit frere). Tissage en bandes (strip weaving) avec motifs bleus et blancs, tradition commune a l'ensemble des Ewe. Chants et danses ceremoniales varies : Agbekor (guerre), Agbadza (sociale), Atsiagbekor (formation militaire transformee). Le culte de Yewe possede une musique sacree tres developpee.",
+      "artsAndMusic": "Musique de percussion complexe : tambour atsimevu (grand-pere), sogo (pere), kidi (mere), kagan (petit frere). Tissage en bandes (strip weaving) avec motifs bleus et blancs, tradition commune a l'ensemble des Ewe. Chants et danses ceremoniales varies : Agbekor (guerre), Agbadza (sociale), Atsiagbekor (formation militaire transformee). Le culte de Yewe possede une musique sacree tres developpee. Comme les autres locuteurs gbe (éwé, fon, aja), la tradition orale s'appuie sur un large corpus de proverbes, documenté par la phonologie comparative des langues gbe (Capo, 1991).",
       "spiritualities": "Religion traditionnelle Ewe (Vodun) centree sur Mawu (dieu createur) et des divinites intermediaires (trowo). Culte des ancetres fondamental. Yewe, dieu du tonnerre, est venere dans la region du Volta par un culte exclusif a initiation. Environ 89% des Ewe se sont convertis au christianisme (missions protestantes puis catholiques), tout en maintenant des pratiques traditionnelles."
     },
     "historicalRole": {
@@ -94,6 +94,12 @@
         "title": "Localizely – Ewe language code",
         "url": "https://localizely.com/language-code/ewe/",
         "tier": "unverified"
+      },
+      {
+        "title": "Capo, Hounkpati B. C. (1991) – A Comparative Phonology of Gbe. Foris Publications",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Classification comparative interne des langues gbe (éwé, fon, aja, mina, gen)."
       }
     ]
   },

@@ -80,7 +80,7 @@
     "culture": {
       "majorRites": "Dipo : rite de passage majeur des jeunes filles dangme (surtout Krobo, Shai), consistant en une initiation à la vie adulte sur plusieurs jours en avril, incluant purification rituelle, transmission des savoirs féminins, ornementation de perles colorées, danses Klama publiques et reconnaissance sociale comme femme. Le rite Dipo est à la fois une formation vocationnelle pour les rôles féminins et une cérémonie spirituelle de purification pré-matrimoniale. Festival Asafotu (ou Asafotufiam) : festival guerrier annuel d'Ada (du dernier jeudi de juillet au premier week-end d'août), commémorant les victoires militaires, avec reconstitution en costume de guerre traditionnel, procession de chefs en palanquins, Asafo Companies, danses, libations et déclarations d'allégeance. Festival Ngmayem : festival annuel des récoltes du Krobo (dernier week-end d'octobre), avec pèlerinage au Krobo Mountain ancestral, réunion du Konor et des sous-chefs. Rites funéraires patrilinéaires avec retour des membres du lignage à la maison ancestrale.",
       "symbols": "Perles krobo (Krobo beads) : perles en poudre de verre fabriquées selon une technique ancestrale unique, portées lors du Dipo et comme marqueurs sociaux et spirituels ; exportées dans toute l'Afrique de l'Ouest. Krobo Mountain : montagne sacrée des Krobo (338 m), centre spirituel et ancestral même après l'éviction coloniale. Stool (trône) : symbole de l'autorité du chef, hérité par le système cheffal. Klama : langue et musique sacrée, gardienne de l'histoire du peuple.",
-      "artsAndMusic": "Klama : musique et danse folklorique ancestrale, fondement de l'identité culturelle dangme. La danse Klama suit un modèle de call-and-response, avec accompagnement musical guidant le rythme. Elle est exécutée lors des rites de puberté, des funérailles, des festivals et des cérémonies communautaires. Kpatsa : autre danse traditionnelle des femmes ga-dangme. Fabrication de perles (Krobo beads) : artisanat de renommée internationale, technique de fusion de poudre de verre en moule d'argile, produisant des perles polychromes utilisées dans l'ornementation et le commerce. Poterie, tissage de pagnes, agriculture (culture de l'igname, du manioc, de la canne à sucre, du cacao).",
+      "artsAndMusic": "Klama : musique et danse folklorique ancestrale, fondement de l'identité culturelle dangme. La danse Klama suit un modèle de call-and-response, avec accompagnement musical guidant le rythme. Elle est exécutée lors des rites de puberté, des funérailles, des festivals et des cérémonies communautaires. Kpatsa : autre danse traditionnelle des femmes ga-dangme. Fabrication de perles (Krobo beads) : artisanat de renommée internationale, technique de fusion de poudre de verre en moule d'argile, produisant des perles polychromes utilisées dans l'ornementation et le commerce. Poterie, tissage de pagnes, agriculture (culture de l'igname, du manioc, de la canne à sucre, du cacao). La tradition orale ga-dangme comprend un corpus de proverbes transmis lors des cérémonies rituelles, documenté dans le survol linguistique du ghana de Kropp Dakubu (1988).",
       "spiritualities": "Tradition animiste originelle : culte des ancêtres patrilinéaires (libations, retour aux maisons ancestrales lors des festivals), culte de divinités des cours d'eau et des forêts, système de dieux des lignages (fêtes des dieux du lignage plusieurs fois par an). La montagne Krobo est un site sacré toujours vénéré. Le Dipo rite intègre des invocations spirituelles et des rites de purification religieuse. La grande majorité des Dangme sont aujourd'hui chrétiens (Joshua Project indique 10-50% d'évangéliques et 50-100% d'adhérents chrétiens en 2025). La religion traditionnelle subsiste en syncrétisme avec le christianisme. L'islam est minoritaire."
     },
     "historicalRole": {
@@ -125,6 +125,12 @@
         "title": "Accent Network : Dangme language and culture",
         "url": "https://accentnetwork.com/dangme/",
         "tier": "needs_review"
+      },
+      {
+        "title": "Kropp Dakubu, Mary Esther (1988) – The Languages of Ghana. Kegan Paul International, pour l'International African Institute",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Survol linguistique des langues du Ghana, dont le ga-dangme et ses traditions orales."
       }
     ]
   },

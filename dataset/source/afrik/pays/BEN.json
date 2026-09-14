@@ -87,7 +87,7 @@
         "peopleId": "PPL_FON",
         "mainRegion": "Sud du Bénin (Abomey, Porto-Novo, Cotonou)",
         "languages": ["Fon (fon", "ISO 639-3)", "français"],
-        "languageFamily": "FLG_BENOUECONGO",
+        "languageFamily": "FLG_KWA",
         "appellationRemarks": "Le terme \"Fon\" est l'auto-appellation et est utilisé de manière respectueuse. \"Dahoméens\" fait référence au royaume historique et n'est pas péjoratif, mais est moins utilisé aujourd'hui."
       },
       {
@@ -103,7 +103,7 @@
           "ISO 639-3)",
           "français"
         ],
-        "languageFamily": "FLG_BENOUECONGO",
+        "languageFamily": "FLG_KWA",
         "appellationRemarks": "\"Adja\" et \"Ewe\" sont les auto-appellations respectives. Pas de terme péjoratif connu."
       },
       {
@@ -361,7 +361,7 @@
           "percentageInCountry": 38,
           "peopleId": "PPL_FON",
           "region": "Sud du Bénin (Abomey, Porto-Novo, Cotonou)",
-          "languageFamily": "FLG_BENOUECONGO"
+          "languageFamily": "FLG_KWA"
         },
         {
           "name": "Adja-Ewe",
@@ -369,7 +369,7 @@
           "percentageInCountry": 16,
           "peopleId": "PPL_ADJA",
           "region": "Sud-ouest du Bénin (Mono, Couffo), frontière avec le Togo",
-          "languageFamily": "FLG_BENOUECONGO"
+          "languageFamily": "FLG_KWA"
         },
         {
           "name": "Yoruba / Nago",

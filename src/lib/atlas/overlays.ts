@@ -332,7 +332,7 @@ export interface FamilyFootprintOverlay {
  * The footprint is the union of `currentCountries` over every people carrying
  * this family's languageFamilyId — never the family's own
  * `distribution.distributionByCountry`, which the recette database reads empty
- * for all 24 families (atlas-charter §4). `memberCurrentCountries` is one array
+ * for all 25 families (atlas-charter §4). `memberCurrentCountries` is one array
  * per member people; the caller (the family fiche route) is the one that
  * already knows which peoples carry this family's id.
  *

@@ -64,7 +64,7 @@
     "culture": {
       "majorRites": "Dipo : rite de passage des jeunes filles; historiquement les filles passaient un a trois ans sur la montagne Krobo pour accomplir les coutumes traditionnelles, avant de rejoindre la communaute adulte. Festival Ngmayem : commemoration annuelle de l'expulsion de la montagne en 1892 et celebration de la recolte. Festival Kloyosikplem : pelerinage annuel sur la montagne Krobo.",
       "symbols": "Perles Krobo : l'art de la fabrication de perles en verre fusionne est une tradition distinctive des Krobo, reconnue internationalement. La montagne Krobo (Klo yo) est le symbole identitaire supreme du peuple. Architecture de pierre multi-etages sur la montagne (maisons de 20 a 30 pieces), sans equivalent note par les missionnaires de l'epoque.",
-      "artsAndMusic": "Fabrication de perles (poudre de verre, verre fusionne, fragments de verre) : artisanat traditionnel et source de revenus contemporain. Agriculture comme activite principale (plaines d'Accra, montagnes Akuapem, bassin de l'Afram). Traditions orales transmises lors des festivals.",
+      "artsAndMusic": "Fabrication de perles (poudre de verre, verre fusionne, fragments de verre) : artisanat traditionnel et source de revenus contemporain. Agriculture comme activite principale (plaines d'Accra, montagnes Akuapem, bassin de l'Afram). Traditions orales transmises lors des festivals. La tradition orale ga-dangme comprend un corpus de proverbes transmis lors des cérémonies rituelles, documenté dans le survol linguistique du ghana de Kropp Dakubu (1988).",
       "spiritualities": "La montagne Krobo est le centre spirituel et rituel du peuple. Culte des ancetres (enterrements dans les maisons familiales). Role central des Djemli (pretres) dans les rituels de la montagne. Christianisme largement repandu dans la communaute contemporaine, coexistant souvent avec des pratiques traditionnelles lors des festivals."
     },
     "historicalRole": {
@@ -109,6 +109,12 @@
         "title": "Lower Manya Krobo Ghana statistics 2025 – Global Populations",
         "url": "https://globalpopulations.com/gh/2840258-lower-manya-krobo/",
         "tier": "unverified"
+      },
+      {
+        "title": "Kropp Dakubu, Mary Esther (1988) – The Languages of Ghana. Kegan Paul International, pour l'International African Institute",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Survol linguistique des langues du Ghana, dont le ga-dangme et ses traditions orales."
       }
     ]
   },

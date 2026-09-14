@@ -49,7 +49,7 @@
     "culture": {
       "majorRites": "Rites de passage akan: puberte, mariage, funerailles avec veille et ceremonies communautaires. Chieftaincy investiture avec tabouret sacre. Festival de la riviere Donko Nsuo a Assin Manso, lieu de commemoration de la traite transatlantique des esclaves, centre de pelerinage pour la diaspora africaine-americaine.",
       "symbols": "Tabouret sacre (dwa) comme symbole de l'autorite chiefly. Insignes royaux kan communs: umbrellas cerimoniales, sceptres. Le site d'Assin Manso (Donko Nsuo, riviere des esclaves) est devenu un symbole de memoire et de deuil pour la diaspora africaine.",
-      "artsAndMusic": "Artisanat akan: tissage, poterie, travail du metal. Danse et musique lors des ceremonies de chefferie et des funerailles. Kente traditionnel porte lors des occasions cerimoniales.",
+      "artsAndMusic": "Artisanat akan: tissage, poterie, travail du metal. Danse et musique lors des ceremonies de chefferie et des funerailles. Kente traditionnel porte lors des occasions cerimoniales. La langue akan porte un corpus proverbial (mmebusem) de plus de 3 600 entrées, compilé dès 1879 par le linguiste missionnaire Johann Gottlieb Christaller à partir des dialectes twi et fante — un usage partagé par l'ensemble des groupes de langue akan.",
       "spiritualities": "Religion akan traditionnelle: croyance en Nyame (dieu supreme), veneration des ancetres (nsamanfo), pratiques divinatoires. Le christianisme (protestantisme et catholicisme) est aujourd'hui predominant dans la region Assin."
     },
     "historicalRole": {
@@ -84,6 +84,12 @@
         "title": "Modern Ghana – Discover the historic colonial treasures in Assin area, 2021",
         "url": "https://www.modernghana.com/news/1110502/discover-the-historic-colonial-treasures-in-assin.html",
         "tier": "referenced"
+      },
+      {
+        "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
       }
     ]
   },
