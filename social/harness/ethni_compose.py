@@ -1270,6 +1270,16 @@ def plan_video(carte, deck, *, image, sous_titre=False):
                         t["graisse"], encre1, V_MARGE_X, largeur)
         if bloc is not None:
             bloc.y = V_SERIE_Y
+    elif (carte.get("image") or {}).get("surtitre"):
+        # §9 bis — a line shown with one image and never spoken (« Pendant ce temps,
+        # en France : … »). It takes the series slot, which every scene between the
+        # opening and the closing leaves empty, so nothing moves when it appears. Not
+        # in `ORDRE_LECTURE`: it arrives with its image, not on the reading cadence.
+        t = _role_type("Bandeau", "reel")
+        bloc = _v_poser(p.blocs, "v-surtitre", carte["image"]["surtitre"], t["corps"],
+                        t["face"], t["graisse"], encre1, V_MARGE_X, largeur)
+        if bloc is not None:
+            bloc.y = V_SERIE_Y
 
     # ── the title slot ───────────────────────────────────────────────────────
     # §4 — at 0,72 the gold does not survive, so the display is in ink 1, figure
@@ -2203,6 +2213,42 @@ class Verdict:
 
 _PORTE_D_UNE_CARTE = re.compile(r"^carte \d+ : ")
 
+# §9 bis — « une image change au moins toutes les quatre secondes ».
+IMAGE_PLAFOND_S = 4.0
+
+
+def images_de(carte):
+    """A scene's images in order: `images` when the deck lists several, else `image`.
+
+    `image` stays the single-image form every deck written before 2026-09-14 uses,
+    so those render unchanged.
+    """
+    return carte.get("images") or [carte.get("image", {})]
+
+
+def image_a(carte, instant, duree, plafond=IMAGE_PLAFOND_S):
+    """(index, image) on screen `instant` seconds into a scene lasting `duree`.
+
+    The scene is cut into equal slots no longer than `plafond`, at least one per
+    image. Slot 0 is the first image, which introduces the scene's subject. A scene
+    with fewer images than slots cycles back through them rather than holding one
+    past the ceiling: a repeat reads as rhythm, a frozen frame reads as a stop.
+    """
+    images = images_de(carte)
+    creneaux = max(len(images), math.ceil(duree / plafond)) if duree else len(images)
+    creneau = min(int(instant * creneaux / duree), creneaux - 1) if duree else 0
+    k = creneau % len(images)
+    return k, images[k]
+
+
+def carte_a(carte, instant, duree):
+    """The card as painted at `instant`: `image` is the image on screen then.
+
+    Handing the painter a card whose `image` is already the current one keeps the
+    credit and the crop following the image without touching the painter.
+    """
+    return {**carte, "image": image_a(carte, instant, duree)[1]}
+
 
 def portes_de_la_carte(manquantes, carte):
     """The gates this one card has to answer for, plus those naming no card.
@@ -2227,36 +2273,67 @@ def portes(cartes, deck, identites=None):
     identites = identites or {}
 
     # 1 — every licence named, and the output licence computed from the lot.
-    licences = [c.get("image", {}).get("licence", "") for c in cartes]
+    # Every image of a scene counts, not only its first: a scene of several images
+    # ships under the most constraining licence among all of them.
+    licences = [im.get("licence", "") for c in cartes for im in images_de(c)]
     sortie = tk.licence_sortie(licences)
     if sortie is None:
-        sans = [c["rang"] for c, l in zip(cartes, licences) if not l]
+        sans = sorted({c["rang"] for c in cartes for im in images_de(c)
+                       if not im.get("licence")})
         manquantes.append(
             f"la licence n'est pas nommée sur les cartes {sans or '?'} — ouvre la page "
             f"du dépôt, lis la mention, et reporte-la, ou change d'image")
 
     for c in cartes:
-        im = c.get("image", {})
+        images = images_de(c)
+        for k, im in enumerate(images, 1):
+            # « carte N : » keeps `portes_de_la_carte` scoping the gate to its card;
+            # « image k : » says which image, once a scene carries several.
+            etiquette = f"carte {c['rang']} : " + (f"image {k} : " if len(images) > 1 else "")
 
-        # 2 — the credit names the document actually composed.
-        identite = (im.get("identite") or "").strip()
-        if not identite:
-            manquantes.append(
-                f"carte {c['rang']} : l'image ne dit pas ce qu'elle montre. \u00c9cris "
-                f"`image.identite` en regardant l'image, puis relis le cr\u00e9dit \u00e0 "
-                f"c\u00f4t\u00e9 \u2014 sans \u00e7a la porte 2 ne garde rien")
-        elif not _atteste(im):
-            manquantes.append(
-                f"carte {c['rang']} : personne n'a sign\u00e9 la comparaison du "
-                f"cr\u00e9dit \u00e0 l'image. Regarde les deux, puis pose "
-                f"`image.verifie` \u00e0 {{\"par\": \"<qui>\", \"le\": \"<AAAA-MM-JJ>\"}}")
-        elif not _decrivent_la_meme_chose(identite, im.get("credit", "")):
-            # A remark, not a refusal: a caption and a description legitimately
-            # share no vocabulary, and this fired on twenty correct cards.
-            remarques.append(
-                f"carte {c['rang']} : \u00ab {im['credit']} \u00bb et \u00ab {identite} \u00bb "
-                f"ne partagent aucun mot \u2014 v\u00e9rifie que c'est bien le m\u00eame "
-                f"document")
+            # 2 — the credit names the document actually composed.
+            identite = (im.get("identite") or "").strip()
+            if not identite:
+                manquantes.append(
+                    f"{etiquette}l'image ne dit pas ce qu'elle montre. Écris "
+                    f"`image.identite` en regardant l'image, puis relis le crédit à "
+                    f"côté — sans ça la porte 2 ne garde rien")
+            elif not _atteste(im):
+                manquantes.append(
+                    f"{etiquette}personne n'a signé la comparaison du "
+                    f"crédit à l'image. Regarde les deux, puis pose "
+                    f"`image.verifie` à {{\"par\": \"<qui>\", \"le\": \"<AAAA-MM-JJ>\"}}")
+            elif not _decrivent_la_meme_chose(identite, im.get("credit", "")):
+                # A remark, not a refusal: a caption and a description legitimately
+                # share no vocabulary, and this fired on twenty correct cards.
+                remarques.append(
+                    f"{etiquette}« {im['credit']} » et « {identite} » "
+                    f"ne partagent aucun mot — vérifie que c'est bien le même "
+                    f"document")
+
+            # 3, for the parallel shown with this image — printed, so held like any
+            # printed field.
+            surtitre = im.get("surtitre") or ""
+            if tk.note_interne(surtitre):
+                manquantes.append(
+                    f"{etiquette}`image.surtitre` porte « {surtitre} », une note à "
+                    f"l'opérateur dans un champ imprimé — tranche-la, elle ne s'imprime pas")
+            if tk.date_en_lettres(surtitre):
+                manquantes.append(
+                    f"{etiquette}`image.surtitre` porte « {surtitre} », une date en "
+                    f"lettres — §3 les veut en chiffres")
+
+            # 3, for the credit — no internal note, no spelled-out date.
+            for champ in ("credit", "depot", "licence"):
+                if tk.note_interne(im.get(champ, "")):
+                    manquantes.append(
+                        f"{etiquette}« {im[champ]} » est une note interne dans le crédit — "
+                        f"nomme le document et sa licence, ou change d'image")
+            for champ in ("identite", "credit", "depot"):
+                if tk.date_en_lettres(im.get(champ, "")):
+                    manquantes.append(
+                        f"{etiquette}`image.{champ}` porte « {im[champ]} », "
+                        f"une date en lettres — §3 les veut en chiffres")
 
         # §10 — a body or a table, never both. A card carrying the two does not
         # know what it is showing, and the renderer would silently pick one.
@@ -2301,16 +2378,6 @@ def portes(cartes, deck, identites=None):
                     f"carte {c['rang']} : `{champ}` porte « {valeur} », une date "
                     f"en lettres — §3 les veut en chiffres (1891, 17e siècle), "
                     f"jamais épelées")
-        for champ in ("credit", "depot", "licence"):
-            if tk.note_interne(im.get(champ, "")):
-                manquantes.append(
-                    f"carte {c['rang']} : « {im[champ]} » est une note interne dans le crédit — "
-                    f"nomme le document et sa licence, ou change d'image")
-        for champ in ("identite", "credit", "depot"):
-            if tk.date_en_lettres(im.get(champ, "")):
-                manquantes.append(
-                    f"carte {c['rang']} : `image.{champ}` porte « {im[champ]} », "
-                    f"une date en lettres — §3 les veut en chiffres")
 
         # §10 — a forced cut carries the *words*, not only the break positions:
         # the engine draws `coupe`'s lines in place of the title. A title rewritten

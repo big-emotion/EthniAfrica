@@ -56,6 +56,11 @@ puis `cartes[]` avec `rang`, `role`, `titre`, `chiffre`, `precision`,
   intuition, parce qu'il mesure la résolution.
 - `image.w` et `image.h` sont les **pixels réels du fichier décodé**, jamais une
   estimation ni une lecture du nom. C'est sur eux que repose le repli de §6.
+- **Une scène vidéo de plus de quatre secondes porte `images`, une liste**, et non
+  `image` seul : aucune image ne tient plus de quatre secondes (§9 bis). Compte
+  `ceil(durée / 4)` images par scène ; **la première présente le sujet de la scène**
+  (un personnage, un lieu, un document). Chaque entrée a la forme d'`image`, et peut
+  porter un `surtitre` affiché sans être dit — « Pendant ce temps, en France : … ».
 - **`image.identite` est obligatoire.** Une phrase décrivant ce que l'image
   montre, écrite **en la regardant**, sans nommer son auteur ni sa licence. C'est
   ce que la porte 2 oppose au crédit ; recopiée du crédit, elle ne garde rien.
