@@ -7,6 +7,8 @@ import {
   AUDIENCE_NETWORKS,
   AUDIENCE_PRODUCER,
   AUDIENCE_REPORT_DIR,
+  STRATEGIST_COLLECTION_RULE,
+  STRATEGIST_NETWORKS,
   checkAudienceSkillContract,
 } from "../lib/audienceSkillContract";
 
@@ -116,6 +118,36 @@ describe("audience skill contract", () => {
     expect(issues).toContainEqual({
       skill: firstConsumer,
       detail: `frontmatter name is "renamed-by-accident", expected ${JSON.stringify(firstConsumer)}`,
+    });
+  });
+
+  // @req REQ-032
+  it("flags a strategist that no longer collects every network on every run", () => {
+    // On 2026-09-15 a run skipped Instagram, TikTok and Facebook because the
+    // audit had read them the day before, and planned on a Facebook reel it
+    // could not see: 21 211 views in fourteen hours. The operator ruled that
+    // every run reads all five networks.
+    const strategist = "ethniafrica-content-strategist";
+    const issues = checkAudienceSkillContract(projectRoot, {
+      [strategist]: `---\nname: ${strategist}\n---\nReads ${AUDIENCE_REPORT_DIR}/ from ${AUDIENCE_PRODUCER}, then YouTube when stale.`,
+    });
+
+    expect(STRATEGIST_NETWORKS).toEqual([
+      "YouTube",
+      "LinkedIn",
+      "Instagram",
+      "TikTok",
+      "Facebook",
+    ]);
+    for (const network of STRATEGIST_NETWORKS.filter((n) => n !== "YouTube")) {
+      expect(issues).toContainEqual({
+        skill: strategist,
+        detail: `does not collect ${network} metrics`,
+      });
+    }
+    expect(issues).toContainEqual({
+      skill: strategist,
+      detail: `does not state the rule: ${STRATEGIST_COLLECTION_RULE}`,
     });
   });
 

@@ -13,6 +13,7 @@ import { getComparisonEntities } from "@/api/v2/services/comparisonService";
 import { transformComparisonData } from "@/lib/comparisonDataTransformer";
 import { buildComparisonOgCard } from "@/lib/comparisonOgCard";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
+import { OG_IMAGE_CACHE_CONTROL } from "@/api/v2/services/corpusCache";
 import type { CompareEntityType } from "@/types/compare";
 import { isTranslationLocale } from "@/lib/i18n/translationLocale";
 
@@ -203,7 +204,7 @@ export async function GET(
         },
       ],
       headers: {
-        "Cache-Control": "public, max-age=86400",
+        "Cache-Control": OG_IMAGE_CACHE_CONTROL,
       },
     }
   );

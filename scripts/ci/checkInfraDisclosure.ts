@@ -4,15 +4,23 @@
  *   npx tsx scripts/ci/checkInfraDisclosure.ts            every tracked file
  *   npx tsx scripts/ci/checkInfraDisclosure.ts --staged   what is about to be committed
  *
- * The terms come from `INFRA_DISCLOSURE_TERMS`; `scripts/lib/infraDisclosure.ts`
- * says why they are not in the repository. With none configured — a fork, a
- * Dependabot run, a fresh clone — the check says so and passes, rather than
- * reporting a clean repository it never looked at.
+ * Two rules, one gate. **Terms** — the real addresses, ports, provider and
+ * locations — come from `INFRA_DISCLOSURE_TERMS` and are checked on every
+ * tracked file; `scripts/lib/infraDisclosure.ts` says why they are not in the
+ * repository. **Shapes** — anything that addresses or locates a machine at all —
+ * are checked on the files whose purpose is to describe the infrastructure, and
+ * need no variable, so a fork, a Dependabot run and a fresh clone still enforce
+ * that much. With no variable configured the check says which half it ran.
  */
 import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync, statSync } from "node:fs";
 
-import { findDisclosures, parseDisclosureTerms } from "../lib/infraDisclosure";
+import {
+  SHAPE_GUARDED_PATHS,
+  findDisclosures,
+  findIdentifierShapes,
+  parseDisclosureTerms,
+} from "../lib/infraDisclosure";
 
 const VARIABLE = "INFRA_DISCLOSURE_TERMS";
 
@@ -46,16 +54,27 @@ function candidateFiles(stagedOnly: boolean): string[] {
 }
 
 function main(): number {
+  const offences: string[] = [];
+
+  for (const file of SHAPE_GUARDED_PATHS) {
+    if (!existsSync(file)) continue;
+    for (const { line, shape } of findIdentifierShapes(
+      readFileSync(file, "utf8")
+    )) {
+      offences.push(`  ${file}:${line} — ${shape}`);
+    }
+  }
+
   const terms = configuredTerms();
   if (terms.length === 0) {
     console.log(
-      `ℹ ${VARIABLE} is not configured — host identifier check skipped`
+      `ℹ ${VARIABLE} is not configured — only the ${SHAPE_GUARDED_PATHS.length} shape-guarded file(s) were checked`
     );
-    return 0;
   }
 
-  const offences: string[] = [];
-  for (const file of candidateFiles(process.argv.includes("--staged"))) {
+  for (const file of terms.length === 0
+    ? []
+    : candidateFiles(process.argv.includes("--staged"))) {
     let content: string;
     try {
       if (statSync(file).size > 2_000_000) continue;
@@ -78,7 +97,9 @@ function main(): number {
     );
     return 1;
   }
-  console.log(`✔ no host identifier (${terms.length} term(s) checked)`);
+  console.log(
+    `✔ no host identifier (${terms.length} term(s), ${SHAPE_GUARDED_PATHS.length} shape-guarded file(s))`
+  );
   return 0;
 }
 

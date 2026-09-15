@@ -13,6 +13,7 @@ import { FacetFilterBar } from "@/components/hubs/facets/FacetFilterBar";
 import type { FacetActiveFilter } from "@/components/hubs/facets/FacetFilterBar";
 import { FacetLetterRail } from "@/components/hubs/facets/FacetLetterRail";
 import { FacetPagination } from "@/components/hubs/facets/FacetPagination";
+import { FacetUnavailable } from "@/components/hubs/facets/FacetUnavailable";
 import { buildFacetCountryIndex, readFacet } from "@/lib/hubs/facetHub";
 import { definedFilter, getFacetRoute } from "@/lib/hubs/facets";
 import { PAGE_SIZE_PARAM, resolvePageSize } from "@/lib/hubs/pagination";
@@ -147,16 +148,8 @@ export default async function NomsHubPage({ params, searchParams }: PageProps) {
     ])
   );
 
-  // Thirty names are always published, so a read failure is never an empty
-  // corpus — say so explicitly rather than render "0 résultats".
   if (facetReading === null) {
-    return (
-      <div className="afh-facet-reading">
-        <p role="alert" className="afh-facet-reading-lede">
-          {t.index.unavailable}
-        </p>
-      </div>
-    );
+    return <FacetUnavailable message={t.index.unavailable} />;
   }
 
   const [choices, reading, index] = facetReading;

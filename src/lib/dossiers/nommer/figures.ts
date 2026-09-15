@@ -60,7 +60,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "corpus-exonyms",
     label: "exonymes recensés",
-    value: 3137,
+    value: 3131,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -273,10 +273,10 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "corpus-language-families",
     label: "familles linguistiques",
-    value: 24,
+    value: 25,
     method:
       "nombre de fichiers dataset/source/afrik/famille_linguistique/FLG_*.json",
-    countedOn: COUNTED_ON,
+    countedOn: "2026-09-14",
   },
 
   // The number the dossier would most like to print and cannot. Stating the

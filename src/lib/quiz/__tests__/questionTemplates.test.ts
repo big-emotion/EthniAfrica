@@ -9,6 +9,7 @@ import {
   buildT13EtymologyTemplate,
   buildT16KingdomTemplate,
   QUESTION_TEMPLATE_COPY,
+  attributeToOralTradition,
   questionTemplateBuilders,
 } from "../questionTemplates";
 import { QUIZ_TEMPLATE_IDS } from "@/lib/quiz/segmentPolicy";
@@ -547,5 +548,57 @@ describe("questionTemplateBuilders barrel", () => {
     );
     expect(questionTemplateBuilders.T1).toBe(buildT1LanguageFamilyTemplate);
     expect(questionTemplateBuilders.T12).toBe(buildT12ContestedExonymTemplate);
+  });
+});
+
+describe("attributeToOralTradition", () => {
+  // @req REQ-175
+  it("says, in French, whose oral tradition the answer is given by", () => {
+    expect(
+      attributeToOralTradition(
+        "Le peuple Dogon appartient à la famille linguistique Niger-Congo.",
+        "Sangha",
+        "fr"
+      )
+    ).toBe(
+      "Le peuple Dogon appartient à la famille linguistique Niger-Congo (selon la tradition orale de Sangha)."
+    );
+  });
+
+  // @req REQ-175
+  it("elides « de » before a community whose name opens on a vowel", () => {
+    expect(attributeToOralTradition("Réponse.", "Ifẹ̀", "fr")).toBe(
+      "Réponse (selon la tradition orale d'Ifẹ̀)."
+    );
+  });
+
+  // @req REQ-175
+  it("keeps « de » before a community whose name opens on a consonant Y", () => {
+    expect(attributeToOralTradition("Réponse.", "Yoruba", "fr")).toBe(
+      "Réponse (selon la tradition orale de Yoruba)."
+    );
+    expect(attributeToOralTradition("Réponse.", "Yaka", "fr")).toBe(
+      "Réponse (selon la tradition orale de Yaka)."
+    );
+  });
+
+  // @req REQ-175
+  it("says the same thing in English", () => {
+    expect(
+      attributeToOralTradition(
+        "The Dogon people belong to the Niger-Congo language family.",
+        "Sangha",
+        "en"
+      )
+    ).toBe(
+      "The Dogon people belong to the Niger-Congo language family (according to the oral tradition of Sangha)."
+    );
+  });
+
+  // @req REQ-175
+  it("stands as its own sentence when the template has no explanation", () => {
+    expect(attributeToOralTradition("", "Sangha", "fr")).toBe(
+      "Selon la tradition orale de Sangha."
+    );
   });
 });

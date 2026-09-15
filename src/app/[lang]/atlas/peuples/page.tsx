@@ -14,6 +14,7 @@ import { FacetFilterBar } from "@/components/hubs/facets/FacetFilterBar";
 import type { FacetActiveFilter } from "@/components/hubs/facets/FacetFilterBar";
 import { FacetLetterRail } from "@/components/hubs/facets/FacetLetterRail";
 import { FacetPagination } from "@/components/hubs/facets/FacetPagination";
+import { FacetUnavailable } from "@/components/hubs/facets/FacetUnavailable";
 import { AutonymExonymHeading } from "@/components/ui/AutonymExonymHeading";
 import { ClassificationBadge } from "@/components/ui/classification-badge";
 import { buildFacetCountryIndex, readFacet } from "@/lib/hubs/facetHub";
@@ -163,16 +164,8 @@ export default async function PeuplesHubPage({
     ])
   );
 
-  // A failed read is not an empty corpus: say so rather than print
-  // "0 peuples dans cette sélection" about a count nobody measured.
   if (facetReading === null) {
-    return (
-      <div className="afh-facet-reading">
-        <p role="status" className="afh-facet-reading-lede">
-          {copy.unavailable}
-        </p>
-      </div>
-    );
+    return <FacetUnavailable message={copy.unavailable} />;
   }
 
   const [choices, reading, index] = facetReading;

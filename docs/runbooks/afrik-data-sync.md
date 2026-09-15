@@ -10,13 +10,15 @@ own two-step rule — see [`migration-state.md`](./migration-state.md).
 
 ## Which environment am I writing to?
 
-`--target` names the **application** environment, and the two possible values are `recette` and
-`production` — the same vocabulary as the branches and the Vercel environments.
+`--target` names the **application** environment, and the two shared values are `recette` and
+`production` — the same vocabulary as the branches and the Vercel environments. A third value,
+`local`, names a contributor's own `supabase start` stack; see [Local bootstrap](#local-bootstrap).
 
 | Application environment | Supabase project                | Where the loader reads its URL                                              |
 | ----------------------- | ------------------------------- | --------------------------------------------------------------------------- |
 | `recette`               | `shmrjtnfbqzceovroqjj`          | `AFRIK_RECETTE_SUPABASE_URL`, checked into `scripts/lib/afrikSyncTarget.ts` |
 | `production`            | not recorded in this repository | the `AFRIK_PRODUCTION_SUPABASE_URL` environment variable — no default       |
+| `local`                 | your own `supabase start` stack | `NEXT_PUBLIC_SUPABASE_URL`, which must be `http://127.0.0.1` or `localhost` |
 
 Every Supabase project has exactly one environment and Supabase calls it "production", so that
 label never identifies the application environment. `shmrjtnfbqzceovroqjj`'s dashboard says
@@ -67,8 +69,11 @@ All three are applied by a human, never auto-applied. Their current state per pr
 
 ## Safety properties
 
-- The target is mandatory and must be exactly `recette` or `production`; anything else is
-  rejected, and `staging` is rejected with a message naming its replacement.
+- The target is mandatory and must be exactly `recette`, `production` or `local`; anything else
+  is rejected, and `staging` is rejected with a message naming its replacement.
+- For `--target=local`, `NEXT_PUBLIC_SUPABASE_URL` must be plain HTTP on `127.0.0.1` or
+  `localhost` (any port). A hosted project, HTTPS, or a hostname that merely starts with
+  `localhost` is refused.
 - Every check below runs before the admin client is constructed, so a wrong target fails
   without opening a connection.
 - For `--target=recette`, `NEXT_PUBLIC_SUPABASE_URL` must be the recette project.
@@ -163,6 +168,74 @@ diagnosis, then restore the pre-sync snapshot if the target is not internally co
 automatically after a successful production deploy of `main`. If you are loading by
 hand shortly after a deploy, check whether that workflow has already done it — see
 [the automated production sync](#the-automated-production-sync) for the secrets it needs.
+
+---
+
+## Local bootstrap
+
+A contributor can build the whole schema and load the corpus on their own machine, without
+credentials for either shared project. This is the path to take before touching a migration,
+a loader or anything that reads the corpus from the database.
+
+**Prerequisites:** Docker running, the [Supabase CLI](https://supabase.com/docs/guides/local-development),
+and Node ≥ 22 (the loader's requirement, above).
+
+### 1. Start the stack and build the schema
+
+```bash
+supabase start      # pulls the images, creates the database, applies every migration
+supabase db reset   # optional: drops it and replays every migration from nothing
+```
+
+These are the two commands `.github/workflows/migrations-replay.yml` runs on every pull request
+that changes `supabase/migrations/**`, so a sequence that builds locally builds there too.
+
+`supabase/config.toml` binds the database to host port **5432**, not the CLI's usual 54322. If
+another Postgres already listens on 5432, `supabase start` fails on the port; stop that server
+first. The API stays on 54321 and the mail catcher on 54324.
+
+### 2. Point `.env.local` at the local stack
+
+`supabase status -o env` prints the values. Copy three of them into `.env.local`:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=http://127.0.0.1:54321
+NEXT_PUBLIC_SUPABASE_ANON_KEY=<ANON_KEY from supabase status>
+SUPABASE_SERVICE_ROLE_KEY=<SERVICE_ROLE_KEY from supabase status>
+```
+
+Leave `AFRIK_PRODUCTION_SUPABASE_URL` unset. Keep a copy of the hosted values you replaced if you
+will need them again; nothing else in `.env.local` has to change to run the loader.
+
+### 3. Load the corpus
+
+Validate first, exactly as for a shared target, then preview and apply:
+
+```bash
+npx tsx scripts/validateAfrikData.ts
+npx tsx --conditions=react-server scripts/migrateAfrikToDatabase.ts --target=local
+npx tsx --conditions=react-server scripts/migrateAfrikToDatabase.ts --target=local --apply
+npx tsx --conditions=react-server scripts/afrik/verifyCorpusInDatabase.ts --target=local
+```
+
+`--target=local` accepts only a plain-HTTP loopback URL (`http://127.0.0.1` or `http://localhost`,
+any port). If `.env.local` still names recette or production, the loader refuses before it opens
+a connection — so a forgotten edit in step 2 cannot load a shared project by mistake.
+
+### 4. Seed the first moderator
+
+The moderation console opens only to addresses on `admin_allowlist`, and there is no screen for
+adding the first one. Write it with the service-role key:
+
+```bash
+npx tsx --env-file=.env.local scripts/seedAdminAllowlist.ts you@example.org "Local moderator"
+```
+
+Unlike the loader, this script does not read `.env.local` on its own, hence `--env-file`. Then
+request a sign-in link at `http://localhost:3000/fr/admin/connexion` (`npm run dev`); the local
+stack does not send mail, it captures it at `http://127.0.0.1:54324`.
+
+`supabase stop` keeps the data for next time; `supabase stop --no-backup` discards it.
 
 ---
 

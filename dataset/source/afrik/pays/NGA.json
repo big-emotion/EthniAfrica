@@ -169,7 +169,7 @@
         "peopleId": "PPL_KANURI",
         "mainRegion": "Nord-Est (Borno)",
         "languages": ["Kanuri", "haoussa", "anglais"],
-        "languageFamily": "FLG_SAHARIENNE",
+        "languageFamily": "FLG_SAHARIEN",
         "appellationRemarks": "Le terme \"Kanuri\" est neutre et accepté."
       },
       {
@@ -332,7 +332,7 @@
           "name": "Kanuri",
           "peopleId": "PPL_KANURI",
           "region": "Nord-Est (Borno)",
-          "languageFamily": "FLG_SAHARIENNE",
+          "languageFamily": "FLG_SAHARIEN",
           "percentageInCountry": 2.4
         },
         {

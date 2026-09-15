@@ -128,6 +128,9 @@ const en = {
     uploaded: "Private document saved.",
     uploadError: "The private document could not be saved.",
     authRequired: "Sign in to add a reference.",
+    moderatorOnlyTitle: "Reference library",
+    moderatorOnly:
+      "Adding references to the shared library is reserved for moderators. Cite your sources in the contribution itself, in the form fields or the notes, and a moderator will file them.",
     requestError: "The request could not be completed.",
     sourceKinds: {
       intergovernmental: "Intergovernmental organisation",
@@ -279,6 +282,9 @@ const fr: ContributeCopy = {
     uploaded: "Document privé enregistré.",
     uploadError: "Le document privé n'a pas pu être enregistré.",
     authRequired: "Connectez-vous pour ajouter une référence.",
+    moderatorOnlyTitle: "Bibliothèque de références",
+    moderatorOnly:
+      "L’ajout de références à la bibliothèque partagée est réservé aux modérateurs. Citez vos sources dans la contribution elle-même, dans les champs du formulaire ou dans les notes : un modérateur les enregistrera.",
     requestError: "La demande n'a pas pu être traitée.",
     sourceKinds: {
       intergovernmental: "Organisation intergouvernementale",

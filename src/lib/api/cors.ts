@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 
-// PATCH is here for the moderator transition on /v2/flags/{id} (ETNI-72).
-// This only advertises the verb in the preflight; a route still answers no
-// method it does not export.
-const ALLOWED_METHODS = "GET,POST,PATCH,OPTIONS";
+// PATCH is here for the moderator transition on /v2/flags/{id} (ETNI-72),
+// DELETE for key revocation on /v2/keys/{id}. This only advertises the verbs
+// in the preflight; a route still answers no method it does not export.
+const ALLOWED_METHODS = "GET,POST,PATCH,DELETE,OPTIONS";
 const ALLOWED_HEADERS = "Content-Type,Authorization";
 
 /**
@@ -35,15 +35,18 @@ export const applyCorsHeaders = (response: Response) => {
   }
 
   // With no origin configured the response carries no Access-Control-Allow-
-  // Origin at all. The former "*" fallback was worse than useless: paired with
-  // Allow-Credentials every browser rejects it outright, so credentialed calls
-  // broke anyway — while a misconfigured deployment silently advertised
-  // POST /api/v2/flags as open to the whole web. Failing closed leaves
-  // same-origin traffic (the frontend) untouched, since CORS never applies to
-  // it, and makes the missing variable visible as a blocked cross-origin call.
+  // Origin at all. The former "*" fallback silently advertised
+  // POST /api/v2/flags as open to the whole web on a misconfigured
+  // deployment. Failing closed leaves same-origin traffic (the frontend)
+  // untouched, since CORS never applies to it, and makes the missing variable
+  // visible as a blocked cross-origin call.
+  //
+  // No Access-Control-Allow-Credentials: every credential this API accepts is
+  // an Authorization bearer header, which a cross-origin caller sends without
+  // it. Allowing credentials would only let a browser attach the site's
+  // cookies to a cross-origin request, and no route reads them for auth.
   if (origin) {
     response.headers.set("Access-Control-Allow-Origin", origin);
-    response.headers.set("Access-Control-Allow-Credentials", "true");
   }
 
   return response;

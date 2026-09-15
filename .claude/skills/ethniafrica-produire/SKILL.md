@@ -13,6 +13,19 @@ ne programmes pas, tu ne proposes pas de le faire.
 Si `cards.json` ou `SOURCES.md` manquent, dis-le et propose `structure`. Ne saute
 pas l'étape.
 
+## La porte qui précède les cinq autres : le texte validé
+
+Décidé le 2026-09-14, après qu'une vidéo a été rendue — deux fois — sur un
+texte que l'opérateur n'avait jamais vu en entier avant de la regarder rendue.
+**Si `post.md` ne porte pas la ligne `**Texte validé** : oui, le AAAA-MM-JJ,
+par l'opérateur.`, ou si elle est plus ancienne que `cards.json`, `cartes.json`
+ou `narration.fr.txt`, ne rends rien — ni épreuve, ni bon à publier.** Dis-le,
+affiche le texte actuel toi-même si `structure` ne l'a pas fait, et attends la
+validation avant de continuer. Cette porte est la seule exception à « tu rends
+toujours » ci-dessous : elle protège un coût réel (la voix se paie en crédits)
+et une lecture réelle (personne ne devrait découvrir un script en le voyant
+monté).
+
 ## Tu rends toujours
 
 Une épreuve se regarde, même imparfaite : c'est en la voyant qu'on décide. Ce qui
@@ -23,10 +36,13 @@ dis pourquoi.
 
 ## Les deux sorties
 
-| Sortie            | Dossier             | Condition               | État atteint          |
-| ----------------- | ------------------- | ----------------------- | --------------------- |
-| **Épreuve**       | `_epreuves/`        | toujours                | 🟡 En traitement      |
-| **Bon à publier** | `images/`, `video/` | les cinq portes passées | 🟢 Validé, en attente |
+| Sortie            | Dossier, dans le dossier du post | Condition               | État atteint          |
+| ----------------- | -------------------------------- | ----------------------- | --------------------- |
+| **Épreuve**       | `_epreuves/`                     | toujours                | 🟡 En traitement      |
+| **Bon à publier** | `images/`, `video/`              | les cinq portes passées | 🟢 Validé, en attente |
+
+Le dossier du post est celui de la bibliothèque, pas celui de l'atelier — voir
+« Où ça s'écrit ».
 
 ### Les cinq portes
 
@@ -40,7 +56,9 @@ dis pourquoi.
    sujet. Il écrit son verdict dans `message.md`, à côté du `cards.json`. La
    porte est franchie si ce verdict dit **passe** et s'il est plus récent que
    `cards.json`, `narration.fr.txt` et `post.md` : un verdict rendu sur une
-   version précédente du texte ne juge pas celle qu'on rend.
+   version précédente du texte ne juge pas celle qu'on rend. Lance aussi
+   `ethniafrica-mythe` : un `mythe.md` qui dit **ne passe pas**, ou plus ancien
+   que ces fichiers, ferme cette porte de la même façon.
 
 La cinquième porte n'empêche pas de rendre, comme les quatre autres : un message
 qui ne passe pas fait sortir le lot **en épreuve**, et l'encart de l'épreuve
@@ -92,9 +110,38 @@ l'atelier, hors dépôt, où vivent le `cards.json`, les `assets/` vérifiés et
 travail. C'est un dépannage, pas une adresse : dis-le à l'opérateur plutôt que de
 livrer un lot qui sera perdu.
 
-**Ce n'est pas là que partent les images finies.** Chaque deck porte son propre
-`outDir`, et le bac de statut d'un post se déduit de son en-tête. Ne déplace
-jamais un dossier à la main pour changer son bac.
+**Ce n'est pas là que partent les images finies.** Elles partent dans le dossier
+du post, dans la bibliothèque, que `structure` a inscrit. Avant chaque rendu de
+carrousel :
+
+```
+node social/tools/library/register-post.mjs --where <id>
+```
+
+imprime le dossier où le post se trouve — le bac lu sur le disque, sinon celui
+que son statut dérive par la règle de la bibliothèque. **Écris dans `cards.json`
+`"outDir": "<ce chemin>/images"`, à chaque rendu**, jamais retapé ni gardé d'un
+rendu précédent : un post classé dans un autre bac laisse un `outDir` périmé, et
+le moteur recrée en silence un dossier sans `post.md` — mesuré le 2026-09-12,
+165 PNG rendus pour rien. Vérifie que ce dossier contient un `post.md` avant de
+lancer le moteur. Si `--where` ne connaît pas le post, il n'a pas été inscrit :
+arrête-toi et renvoie à la fin de `structure`.
+
+**La vidéo** reste rendue dans l'atelier (`<Sujet>/video/`, par
+`ethni_montage.py`), puis se livre par le registre, jamais par une copie à la
+main. Pour un montage qui franchit les portes :
+
+```
+node social/tools/library/register-post.mjs --id <id> \
+  --video <fichier>.mp4=<Sujet>/video/<fichier>.mp4 --write
+node <00-Index>/sync-deliverables.mjs --write
+```
+
+`sync-deliverables.mjs` copie ce que `renderedFrom` nomme dans le `video/` du
+post, et le recopie à chaque nouveau rendu. Une épreuve ne s'inscrit pas.
+
+Le bac d'un post se déduit de son `status` dans le registre, jamais de son
+dossier. Ne déplace jamais un dossier à la main pour changer son bac.
 
 Le moteur refuse toute autre écriture sous un dépôt git. Ce n'est pas une
 précaution théorique : 1,2 Go de masters ont fini une fois dans un `output/`
@@ -188,6 +235,9 @@ s'invente pas**. Deux choses s'apprennent à la prise :
   continu.** Même voix, mêmes réglages : le corps de Libreville sort à 3,96 mots
   par seconde et une clôture de 23 mots à 2,25. Une clôture regénérée seule
   demande donc `speech_rate` autour de **35** pour rejoindre le rythme du corps.
+- **`pauses` dans `production.json` fixe les silences minimaux** que la passe audio
+  complète (virgule, phrase, paragraphe, question, accroche — §9 bis). Un sujet choisi à
+  l'écoute sur un rythme resserré les baisse ici, sinon la passe les rallonge.
 - **`tempo` dans `production.json` étire la prise** : plus il est bas, plus le
   film est lent _et_ plus la voix souffre. **0,85 est le plancher** — en dessous,
   un humain doit écouter avant publication. Libreville était à 0,79 et y est
@@ -235,6 +285,21 @@ passerait partout, y compris sur la carte dont l'image a changé.
 épreuve.
 
 ## Pour finir
+
+Si les cinq portes sont franchies, le post passe en 🟢 par le registre, pas par
+son en-tête :
+
+```
+node social/tools/library/register-post.mjs --id <id> --status pret --write
+node <00-Index>/migrate-library.mjs --write     # Brouillon → Valide, dossier et rendus compris
+node <00-Index>/build-index.mjs
+node <00-Index>/sync-deliverables.mjs --write  # après le déplacement : il compare au bac du statut
+```
+
+`migrate-library.mjs --write` peut afficher une pile d'appels et sortir en
+erreur **après** avoir déplacé le dossier et régénéré les vues. Ne relance rien :
+vérifie le bac et le `post.md`, pas le code de sortie. Plusieurs montages sans
+`selected` restent dans `Brouillon/`, c'est voulu.
 
 Recalcule l'état : `node social/tools/etat-pipeline/build-etat.mjs`.
 

@@ -1,0 +1,4 @@
+{
+  "description": "One ruling per citation identity (exact title + url) on a source the corpus still marks needs_review. Schema and doctrine: README.md in this directory. Applied to the fiches by scripts/afrik/applySourceTierRulings.ts and held by scripts/ci/checkSourceTierCoverage.ts.",
+  "rulings": []
+}

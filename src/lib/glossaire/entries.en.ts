@@ -118,7 +118,7 @@ export const GLOSSARY_DEFINITIONS_EN: Readonly<
     definition:
       "The name of a language. A glossonym is not the name of a people, and a language family describes no population.",
     corpusExample:
-      "The corpus files 800 peoples under 24 families; the largest bears a word coined in 1862.",
+      "The corpus files 800 peoples under 25 families; the largest bears a word coined in 1862.",
     provenance: "machine",
   },
   hydronyme: {

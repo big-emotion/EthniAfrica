@@ -88,7 +88,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Les sources consultées attestent la graphie « Al-Mismari » sans établir assez précisément le système dénominatif ; la valeur nisba héritée de la vague 1 n’est donc pas étendue par inférence."
+      "reason": "Les sources consultées attestent la graphie « Al-Mismari » sans établir assez précisément le système dénominatif ; le classement comme nisba reste donc provisoire."
     },
     {
       "fieldPath": "transmissionMode",
@@ -98,5 +98,10 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Al-Mismari lignée », « Al-Mismari clan », « Al-Mismari tribe » et « Al-Mismari place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
+    }
+  }
 }

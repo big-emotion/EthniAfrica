@@ -50,3 +50,39 @@ export function findDisclosures(text: string, terms: string[]): Disclosure[] {
   });
   return disclosures;
 }
+
+export interface IdentifierShape {
+  line: number;
+  shape: string;
+}
+
+/**
+ * Files whose whole purpose is to describe the infrastructure, and which
+ * therefore may carry no shape at all — not only the terms somebody thought to
+ * list. Checked without the variable, so a fork or a Dependabot run enforces
+ * this much too.
+ */
+export const SHAPE_GUARDED_PATHS = [
+  ".claude/skills/ethniafrica-infra/SKILL.md",
+];
+
+const IDENTIFIER_SHAPES: Array<[string, RegExp]> = [
+  ["an IPv4 address", /\b(?:\d{1,3}\.){3}\d{1,3}\b/],
+  ["an IPv6 address", /\b(?:[0-9a-f]{1,4}:){4,7}[0-9a-f]{1,4}\b/i],
+  // Well-known ports (443, 5432, 8000…) are architecture; a five-digit port is
+  // a host's own choice and a reconnaissance detail.
+  ["a non-standard port number", /\b(?:[1-5]\d{4}|6[0-5]\d{3})\b/],
+  ["a provider-assigned server name", /\bvps-[0-9a-f]{6,}\b/i],
+  ["a link", /\bhttps?:\/\//i],
+  ["an e-mail address", /\b[\w.+-]+@[\w-]+\.[a-z]{2,}\b/i],
+];
+
+export function findIdentifierShapes(text: string): IdentifierShape[] {
+  const found: IdentifierShape[] = [];
+  text.split("\n").forEach((content, index) => {
+    for (const [shape, pattern] of IDENTIFIER_SHAPES) {
+      if (pattern.test(content)) found.push({ line: index + 1, shape });
+    }
+  });
+  return found;
+}

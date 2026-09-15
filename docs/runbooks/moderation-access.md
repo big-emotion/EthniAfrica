@@ -1,7 +1,7 @@
 # Moderation access
 
-How somebody gets into the moderation console, and the one piece of configuration that is not
-in this repository and will silently break the whole thing if it is wrong. Use `/fr/admin`
+How somebody gets into the moderation console, and the pieces of configuration that are not
+in this repository and will silently break the whole thing if they are wrong. Use `/fr/admin`
 during the French-only rollout; `/en/admin` becomes reachable only after a bilingual
 `SITE_LOCALE_MODE` is explicitly enabled.
 
@@ -14,6 +14,10 @@ the console authorizes an **e-mail address** against the `admin_allowlist` table
 surface in the product; it sends a magic link to an address on the list and
 answers a stranger with the identical sentence, so the form cannot be used to
 enumerate moderators.
+
+That identical sentence is also given when **no mail leaves at all**: the action
+swallows every refusal from Supabase on purpose. Nothing on the page tells a working
+sign-in from a broken one — read the Auth logs (§2) before concluding anything.
 
 ## 1. Auth redirect allow-lists — do this first
 
@@ -93,7 +97,95 @@ share a database and must not share an allow-list.
 must carry the `/api/auth/callback` of the environment you asked from. Anything
 else means the entry did not match and GoTrue fell back to the Site URL.
 
-## 2. Add the first moderator
+## 2. The sign-in mail — Auth hands it to Microsoft Graph
+
+**Production Auth sends no mail of its own.** Measured 2026-09-15: the stack's
+`.env` still held the self-hosted placeholders (`SMTP_HOST=supabase-mail`,
+`SMTP_USER=fake_mail_user`, `SMTP_ADMIN_EMAIL=admin@example.com`), no `supabase-mail`
+container exists, and every request failed in the Auth logs with
+`dial tcp: lookup supabase-mail … server misbehaving` while the page gave its
+neutral answer.
+
+SMTP is not the repair. `contact@ethniafrica.com` is a **shared mailbox** in the
+Microsoft 365 tenant that also serves big-emotion.com — no licence, sign-in blocked —
+so it has no password for SMTP to log in with, and Microsoft retires password SMTP
+for Exchange Online anyway. The site already sends every other mail through
+Microsoft Graph (`src/lib/email/graph.ts`), which can send as a shared mailbox. So
+Auth is configured with a **send-email hook**: instead of speaking SMTP it POSTs
+each mail, signed, to `POST /api/auth/send-email`, which writes the sign-in mail
+(`src/lib/email/signInLink.ts`) and sends it through Graph. With the hook enabled,
+the `SMTP_*` values are no longer read.
+
+Order matters: **the application first, then Auth.** A hook pointing at a route the
+running release does not have turns every sign-in into a 404.
+
+### 2a. The Graph app registration
+
+Entra admin center → **App registrations** → the application whose client ID is
+`GRAPH_CLIENT_ID` → **API permissions**: **Microsoft Graph · Mail.Send ·
+Application**, with admin consent granted. If an Exchange application access
+policy scopes that app to some mailboxes, `contact@ethniafrica.com` must be in
+scope — Graph answers 403 otherwise, and the hook reports it as a 502.
+
+### 2b. The application host
+
+Generate one secret, used on both hosts:
+
+```bash
+echo "v1,whsec_$(openssl rand -base64 32)"
+```
+
+In the application's production environment (the `.env` the container reads):
+
+```bash
+SEND_EMAIL_HOOK_SECRET=v1,whsec_…
+GRAPH_TENANT_ID=…
+GRAPH_CLIENT_ID=…
+GRAPH_CLIENT_SECRET=…
+MAIL_SENDER=contact@ethniafrica.com
+MAIL_FROM_NAME=EthniAfrica
+```
+
+The four Graph credentials are a set (`graphConfigured()`); with one missing the
+hook answers 503 and Auth reports the send as failed. Deploy the release that
+carries `/api/auth/send-email` with these values in place.
+
+### 2c. Auth on the Supabase host
+
+The stack's `docker-compose.yml` passes no hook variable to Auth — its hook lines
+are commented examples — so they are added to the `auth` service's `environment:`
+block, and the secret to `.env`:
+
+```bash
+# Connection details: the SUPABASE_SSH_* GitHub secrets and the operator's private notes.
+ssh <user>@<supabase-host>
+cd /home/ubuntu/supabase/docker
+cp .env .env.bak-$(date +%Y%m%d)
+cp docker-compose.yml docker-compose.yml.bak-$(date +%Y%m%d)
+nano .env                 # SEND_EMAIL_HOOK_SECRET=v1,whsec_…  (the same value as 2b)
+nano docker-compose.yml   # under services → auth → environment:
+#   GOTRUE_HOOK_SEND_EMAIL_ENABLED: "true"
+#   GOTRUE_HOOK_SEND_EMAIL_URI: https://ethniafrica.com/api/auth/send-email
+#   GOTRUE_HOOK_SEND_EMAIL_SECRETS: ${SEND_EMAIL_HOOK_SECRET}
+docker compose up -d --force-recreate auth
+docker exec supabase-auth env | grep GOTRUE_HOOK_SEND_EMAIL_ENABLED
+```
+
+The compose file is not in version control either; this block is the only record
+of what was added to it.
+
+### Proof it worked
+
+Request a link on `/fr/admin/connexion`, then:
+
+- the mail arrives in the `contact@ethniafrica.com` shared mailbox;
+- the application logs `Sign-in mail sent through Microsoft Graph`;
+- `docker logs --since 5m supabase-auth 2>&1 | grep -i -E 'hook|mail'` shows no error.
+
+Open the link **in the browser that asked for it**: the sign-in is PKCE, and the
+code the link brings back is only redeemable next to that browser's verifier cookie.
+
+## 3. Add a moderator
 
 Nobody can open the console until an address is on the list, and there is no
 screen for adding one because adding one would need the console. The first entry
@@ -104,14 +196,21 @@ NEXT_PUBLIC_SUPABASE_URL=… SUPABASE_SERVICE_ROLE_KEY=… \
   npx tsx scripts/seedAdminAllowlist.ts moderation@example.org "Responsable éditorial de la modération"
 ```
 
+On the self-hosted production stack, the database container is reachable over SSH
+without the service-role key:
+
+```bash
+ssh <user>@<supabase-host> "docker exec supabase-db psql -U postgres -c \"insert into admin_allowlist (email, note) values ('moderation@example.org', 'Responsable éditorial de la modération') on conflict (email) do nothing;\""
+```
+
 The address does not need a Supabase account first: `signInWithOtp` is called
 with `shouldCreateUser: true`, because the allowlist is the gate and an
 authorized person should not additionally have to have registered.
 
-Recette carries one entry as of 2026-09-01. Production carries none: the table
-arrives there with the release, and the first entry has to be written after it.
+Recette carries one entry as of 2026-09-01. Production carries one as of
+2026-09-15: `contact@ethniafrica.com`.
 
-## 3. Remove a moderator
+## 4. Remove a moderator
 
 Delete the row. The next request for a session — and every page load, since
 `getModeratorSession()` consults the list on each one — refuses. There is no
@@ -123,10 +222,14 @@ delete from admin_allowlist where email = 'moderation@example.org';
 
 ## What breaks quietly
 
-- **`RESEND_API_KEY` unset.** The console works, reports arrive, decisions get
-  made — and no reader is ever told. Both the verification link and the decision
-  are sent through Resend; unset, they log a warning and skip. The build stays
-  green.
+- **Graph not configured on the application.** The console works, reports arrive,
+  decisions get made — and no reader is ever told, because the verification link and
+  the decision skip with a warning. The sign-in hook answers 503, Auth reports the
+  send as failed, and the sign-in page still gives its neutral answer. The build
+  stays green.
+- **The hook secret differs between the two hosts.** The route answers 401 to every
+  mail (`Send-email hook refused: missing or invalid signature` in the application
+  logs), and nobody can sign in.
 - **A redirect URL missing from Supabase.** Sign-in appears to work right up to
   the click, then lands on a stale deployment. See §1.
 - **`admin_allowlist` unreadable.** `isEmailAllowlisted` fails closed: an outage

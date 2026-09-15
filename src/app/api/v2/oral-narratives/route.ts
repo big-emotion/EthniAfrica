@@ -3,7 +3,7 @@
  * /api/v2/oral-narratives:
  *   get:
  *     summary: List public oral narratives for a fiche
- *     description: Returns only public narratives that have been approved and rights-cleared. Responses omit transcripts, media locators, collector details, and restricted identity metadata.
+ *     description: Returns public, rights-cleared narratives whether reviewed or not, reviewed first, each with a reviewed flag. Rejected narratives are excluded. Responses omit transcripts, media locators, collector details, carrier references, reviewer identity, and withheld narrator names.
  *     tags:
  *       - API v2 - Oral Narratives
  *     parameters:

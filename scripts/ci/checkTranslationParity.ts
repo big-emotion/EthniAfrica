@@ -1,17 +1,22 @@
 #!/usr/bin/env tsx
 /**
- * Diff-scoped translation parity gate (REQ-145).
+ * Translation parity report (REQ-145, REQ-171).
  *
  * A source record and its English sidecar move together. A source-only record
  * may opt out temporarily through `_translation.deferred.en`, but only with a
  * written reason. Existing pairs must keep the same field shape and the
  * hashes stored by `translate:record` must still describe the current source.
- * Registered UI dictionaries and the bilingual glossary ride on the same
- * command, so CI has one blocking translation contract.
+ * Registered UI dictionaries ride on the same report. The bilingual glossary
+ * (REQ-144) is left out of the command-line run: it still blocks, through its
+ * own `check:glossary` step, because REQ-171 does not relax it.
  *
- * `--base <ref>` and `--staged` block. A bare run (or `--all`) surveys the
- * complete corpus and exits zero so the pre-existing translation backlog is
- * visible without making the rollout unsafe.
+ * Every finding is reported and none fails the run (DEC-055): publication is
+ * French-only by `SITE_LOCALE_MODE`, so a missing English counterpart holds
+ * nothing back that a reader could see, and blocking on it held French back.
+ * `--base <ref>` and `--staged` scope the report to a diff; a bare run (or
+ * `--all`) surveys the complete corpus. Only a malformed invocation exits
+ * non-zero. The UI dictionaries' key set is still held by the vitest suite
+ * (`copyParity.test.ts`), which this posture does not relax.
  */
 
 import { execFileSync } from "node:child_process";
@@ -98,8 +103,7 @@ export interface RunTranslationParityOptions {
 }
 
 export interface TranslationParityResult extends PairResult {
-  blocking: boolean;
-  exitCode: 0 | 1;
+  exitCode: 0;
   recordsScanned: number;
 }
 
@@ -639,18 +643,18 @@ export function runTranslationParity(
     );
   }
 
-  const blocking = options.mode.kind !== "survey";
   return {
     findings,
     notices,
-    blocking,
-    exitCode: blocking && findings.length > 0 ? 1 : 0,
+    exitCode: 0,
     recordsScanned: records.length,
   };
 }
 
+// A `::warning`, not an `::error`: the step succeeds by design, and a red
+// annotation on a green job would read as a failure nobody has to fix.
 function annotation(item: ParityFinding): string {
-  return `::error file=${toPosix(item.file)},title=${escapeWorkflowCommand(item.rule)}::${escapeWorkflowCommand(`${item.record} — ${item.field}: ${item.message}`)}`;
+  return `::warning file=${toPosix(item.file)},title=${escapeWorkflowCommand(item.rule)}::${escapeWorkflowCommand(`${item.record} — ${item.field}: ${item.message}`)}`;
 }
 
 function noticeAnnotation(item: ParityNotice): string {
@@ -669,12 +673,18 @@ function main(): void {
     return;
   }
 
-  const result = runTranslationParity({ repoRoot: process.cwd(), mode });
+  // The glossary blocks through its own `check:glossary` step; folding it into
+  // a report that never fails would make it non-blocking by accident.
+  const result = runTranslationParity({
+    repoRoot: process.cwd(),
+    mode,
+    includeGlossary: false,
+  });
   result.notices.forEach((item) => console.log(noticeAnnotation(item)));
   result.findings.forEach((item) => console.log(annotation(item)));
-  const posture = result.blocking ? "blocking" : "survey; not blocking";
+  const scope = mode.kind === "survey" ? "full tree" : `${mode.kind} diff`;
   console.error(
-    `check:translation-parity — ${result.findings.length} finding(s), ${result.notices.length} deferral(s), ${result.recordsScanned} record(s) scanned (${posture})`
+    `check:translation-parity — ${result.findings.length} finding(s), ${result.notices.length} deferral(s), ${result.recordsScanned} record(s) scanned (${scope}; reported, never blocking)`
   );
   process.exitCode = result.exitCode;
 }

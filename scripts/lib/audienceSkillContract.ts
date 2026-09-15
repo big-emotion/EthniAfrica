@@ -58,6 +58,25 @@ export const AUDIENCE_NETWORKS = [
   "Facebook",
 ] as const;
 
+/**
+ * The strategist plans on every network the productions go out on, LinkedIn
+ * included, and reads all of them on every run. On 2026-09-15 a run skipped
+ * three networks because the audit had read them the day before, and planned
+ * without a Facebook reel at 21 211 views in fourteen hours; the operator ruled
+ * that collection is never optional. The rule sentence is what keeps a later
+ * edit from softening "every run" back into "when stale".
+ */
+export const STRATEGIST = "ethniafrica-content-strategist";
+export const STRATEGIST_NETWORKS = [
+  "YouTube",
+  "LinkedIn",
+  "Instagram",
+  "TikTok",
+  "Facebook",
+] as const;
+export const STRATEGIST_COLLECTION_RULE =
+  "collects all five networks on every run";
+
 export interface SkillContractIssue {
   skill: string;
   detail: string;
@@ -149,6 +168,20 @@ export function checkAudienceSkillContract(
         skill,
         detail: `does not name its producer skill ${AUDIENCE_PRODUCER}`,
       });
+    }
+
+    if (skill === STRATEGIST) {
+      for (const network of STRATEGIST_NETWORKS) {
+        if (!markdown.includes(network)) {
+          issues.push({ skill, detail: `does not collect ${network} metrics` });
+        }
+      }
+      if (!markdown.includes(STRATEGIST_COLLECTION_RULE)) {
+        issues.push({
+          skill,
+          detail: `does not state the rule: ${STRATEGIST_COLLECTION_RULE}`,
+        });
+      }
     }
   }
 

@@ -17,7 +17,7 @@ vi.mock("@/lib/supabase/admin", () => ({
 import { NextRequest } from "next/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { API_ATTRIBUTION, API_LICENSE } from "@/api/v2/utils/response";
-import { GET } from "../route";
+import { GET, POST } from "../route";
 
 function makeRequest(headers: Record<string, string> = {}): NextRequest {
   return {
@@ -142,6 +142,37 @@ describe("GET /api/v2/keys/issue", () => {
           "An active public API key has already been issued for this IP address.",
       },
     ]);
+    expect(mockInsert).not.toHaveBeenCalled();
+  });
+
+  // @req REQ-034
+  it("issues a public key on POST, the verb that creates one", async () => {
+    const response = await POST(
+      makeRequest({ "X-Forwarded-For": "203.0.113.7" })
+    );
+    const json = await response.json();
+
+    expect(response.status).toBe(201);
+    expect(json.data.tier).toBe("public");
+    expect(json.data.key.startsWith("pub_")).toBe(true);
+    expect(mockInsert.mock.calls[0][0]).toMatchObject({
+      tier: "public",
+      ip_address: "203.0.113.7",
+    });
+  });
+
+  // @req REQ-034
+  it("refuses a second POST from an address that already holds a key, as the GET does", async () => {
+    mockMaybySingle.mockResolvedValue({
+      data: { id: "existing-key-id" },
+      error: null,
+    });
+
+    const response = await POST(
+      makeRequest({ "X-Forwarded-For": "203.0.113.1" })
+    );
+
+    expect(response.status).toBe(409);
     expect(mockInsert).not.toHaveBeenCalled();
   });
 

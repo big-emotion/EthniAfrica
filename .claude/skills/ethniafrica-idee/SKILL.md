@@ -37,10 +37,11 @@ Un fichier unique : `$ETHNIAFRICA_SOCIAL_PROJECTS/_idees/{slug}.md`.
 
 Écrit le {AAAA-MM-JJ}.
 
-|               |                               |
-| ------------- | ----------------------------- |
-| Pilier        | {un seul}                     |
-| Formats visés | {carrousel · reel · les deux} |
+|               |                                                          |
+| ------------- | -------------------------------------------------------- |
+| Pilier        | {un seul}                                                |
+| Formats visés | {carrousel · reel · les deux}                            |
+| Réseaux       | {ceux que GABARITS-SOCIAL.md §1 bis donne à ces formats} |
 
 ## L'angle
 
@@ -49,6 +50,11 @@ Une phrase. Ce que ce sujet dit que personne ne dit ailleurs.
 ## La promesse
 
 Une phrase, au futur du lecteur : ce qu'il saura après.
+
+## Le mythe
+
+Les trois lignes et le verdict d'`ethniafrica-mythe` : le mythe attesté, la
+correction sourcée, et « défait un mythe », « explique » ou « ne passe pas ».
 
 ## Ce que le sujet ne dira pas
 
@@ -69,6 +75,13 @@ Ce qui pourrait faire échouer le sujet.
 ## Les règles
 
 - **Un sujet, un pilier, un angle.** Deux angles sont deux sujets.
+- **Les formats visés décident des réseaux, par la table de
+  `docs/design/gabarits-social/GABARITS-SOCIAL.md` §1 bis.** Un sujet qui vise
+  les cinq réseaux vise les deux formats ; un sujet à un seul format ne part que
+  sur les réseaux de sa colonne, et le rapport les nomme.
+- **Lance `ethniafrica-mythe` avant d'écrire la promesse.** Un sujet dont le
+  verdict est « ne passe pas » meurt ici ; « explique » est un sujet valable, dit
+  comme tel.
 - **Une accroche dont le corpus ne peut pas payer la dette n'est pas une
   accroche, c'est un appât.** Sur un atlas sourcé c'est aussi un mensonge sur le
   corpus. Si la promesse n'est pas tenable, le rapport le dit et le sujet meurt
@@ -77,6 +90,16 @@ Ce qui pourrait faire échouer le sujet.
   ne devient jamais un constat historique en descendant la chaîne.
 - **N'invente ni une source, ni une licence, ni un chiffre.** Un chiffre non
   vérifié se note comme non vérifié.
+- **Un sujet centré sur qui a nommé un pays suit le sous-cas de
+  `GABARITS-SOCIAL.md` §7 ter** (ligne « un pays et les peuples qui y vivent »),
+  pas le patron par défaut de ce type : 80 % du rapport porte sur les acteurs
+  nommés de l'histoire du nom (explorateurs, négociants, traités, ce qui en
+  reste en toponymie), les peuples n'arrivent qu'en clôture, comme le
+  renversement. Décidé le 2026-09-14 après un premier passage sur
+  « qui-a-nomme-la-cote-divoire » qui avait ouvert sur le compte de peuples et
+  laissé les acteurs de côté — l'opérateur a jugé la pièce vide de sens. Ne
+  recopie pas cette règle ici épisode après épisode : le rapport de sujet la
+  cite et renvoie à la source.
 
 ## Ce que tu ne fais pas
 

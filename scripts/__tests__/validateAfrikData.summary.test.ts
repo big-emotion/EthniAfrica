@@ -36,7 +36,7 @@ function passing(): ValidationResult {
   return { ok: true, errors: [], warnings: [] };
 }
 
-describe("FR28 demographics gate", () => {
+describe("FR28 demographics band (DEC-055: warns, never fails)", () => {
   let tmpDir: string;
 
   beforeEach(() => {
@@ -51,27 +51,47 @@ describe("FR28 demographics gate", () => {
     rmSync(tmpDir, { recursive: true, force: true });
   });
 
-  // @req REQ-028
-  it("fails a country whose percentageInCountry sum leaves the hard band [95, 105]", () => {
-    writePays(tmpDir, "ZAF", [60, 60]);
+  // @req REQ-170
+  it("passes a country whose shares sum to 92 %, with a warning naming the country and the sum", () => {
+    writePays(tmpDir, "CIV", [60, 32]);
 
-    const result = checkPopulationSums(tmpDir);
+    const sums = checkPopulationSums(tmpDir);
+    const strict = checkPopulationSumsStrict(tmpDir);
 
-    expect(result.ok).toBe(false);
-    expect(result.errors.some((e) => e.includes("ZAF"))).toBe(true);
+    for (const result of [sums, strict]) {
+      expect(result.ok).toBe(true);
+      expect(result.errors).toEqual([]);
+      expect(
+        result.warnings.some((w) => w.includes("CIV") && w.includes("92.00%"))
+      ).toBe(true);
+    }
+
+    const summary = summarizeValidationRun(
+      [],
+      [
+        { name: "FR28 Population sums", result: sums },
+        {
+          name: "FR28-strict Population sums (target 99–101%)",
+          result: strict,
+        },
+      ]
+    );
+    expect(summary.failed).toBe(false);
+    expect(summary.errorCount).toBe(0);
+    expect(summary.warningCount).toBe(2);
   });
 
-  // A 104% split clears the hard band but misses the doctrinal target, which is
-  // exactly the drift FR28-strict exists to catch.
-  // @req REQ-028
-  it("fails a country inside [95, 105] but outside the target band [99, 101]", () => {
+  // A 104% split clears the wide band but misses the doctrinal target, which is
+  // exactly the drift FR28-strict exists to report.
+  // @req REQ-170
+  it("warns on a country inside [95, 105] but outside the target band [99, 101]", () => {
     writePays(tmpDir, "NGA", [54, 50]);
 
-    expect(checkPopulationSums(tmpDir).ok).toBe(true);
+    expect(checkPopulationSums(tmpDir).warnings).toEqual([]);
 
     const strict = checkPopulationSumsStrict(tmpDir);
-    expect(strict.ok).toBe(false);
-    expect(strict.errors.some((e) => e.includes("NGA"))).toBe(true);
+    expect(strict.ok).toBe(true);
+    expect(strict.warnings.some((w) => w.includes("NGA"))).toBe(true);
   });
 
   // @req REQ-028
@@ -80,14 +100,6 @@ describe("FR28 demographics gate", () => {
 
     expect(checkPopulationSums(tmpDir).ok).toBe(true);
     expect(checkPopulationSumsStrict(tmpDir).ok).toBe(true);
-  });
-
-  // @req REQ-028
-  it("gates the build on FR28: neither variant is registered as advisory", () => {
-    expect(SOFT_CHECK_NAMES.has("FR28 Population sums")).toBe(false);
-    expect(
-      SOFT_CHECK_NAMES.has("FR28-strict Population sums (target 99–101%)")
-    ).toBe(false);
   });
 
   /**
@@ -138,11 +150,13 @@ describe("FR28/FR28-strict scope to the 54-country African reference set (REQ-13
     expect(AFRICAN_REFERENCE_COUNTRY_CODES.has("FRA")).toBe(false);
   });
 
-  // @req REQ-131
-  it("still fails a country inside the reference set whose sum leaves the hard band", () => {
+  // @req REQ-170
+  it("still reports a country inside the reference set whose sum leaves the wide band", () => {
     writePays(tmpDir, "ZAF", [60, 60]);
 
-    expect(checkPopulationSums(tmpDir).ok).toBe(false);
+    expect(
+      checkPopulationSums(tmpDir).warnings.some((w) => w.includes("ZAF"))
+    ).toBe(true);
   });
 
   // @req REQ-131
@@ -215,8 +229,8 @@ describe("validation run summary", () => {
       [],
       [
         {
-          name: "FR28 Population sums",
-          result: { ok: false, errors: ["ZAF sums to 120%"], warnings: [] },
+          name: "FR29 ISO validity",
+          result: { ok: false, errors: ["PPL_ZULU: ZUL"], warnings: [] },
         },
       ]
     );

@@ -4,6 +4,7 @@
 
 import { DEFAULT_PAGE_SIZE } from "@/api/v2/schemas/pagination";
 import {
+  countAfrikCountries,
   getAllAfrikCountries,
   getAfrikCountryById,
   getAfrikCountryIndexRows,
@@ -33,6 +34,11 @@ export async function getCountries(
   const start = (page - 1) * perPage;
   const data = all.slice(start, start + perPage);
   return { data, total: all.length };
+}
+
+// @req REQ-113
+export async function countCountries(): Promise<number> {
+  return countAfrikCountries();
 }
 
 /**

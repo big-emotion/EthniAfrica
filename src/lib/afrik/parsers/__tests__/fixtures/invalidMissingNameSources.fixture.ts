@@ -1,5 +1,6 @@
 // (illustrative, not data) — shape-only fixture for nameRecordParser tests. Never loaded into Supabase.
-// Invalid: sources array is empty — at least one Tier 1/2 source is required.
+// Invalid: sources array is empty — a name needs at least one source, at any standing.
+/** @req REQ-056 */
 export const invalidMissingNameSources = {
   _meta: {
     format: "AFRIK JSON v2",

@@ -115,4 +115,4 @@ npm run check:copy-literals
 npm run check:translation-parity -- --base origin/recette
 ```
 
-The literal survey remains informational because it deliberately sees editorial content, language-processing inputs, and parallel bilingual dictionaries. Translation parity is the blocking structural gate for changed copy modules.
+The literal survey remains informational because it deliberately sees editorial content, language-processing inputs, and parallel bilingual dictionaries. Translation parity reports changed copy modules without blocking (REQ-171, DEC-055); the keys-parity test `src/lib/i18n/__tests__/copyParity.test.ts` is what still fails the suite on a key present in one locale only.

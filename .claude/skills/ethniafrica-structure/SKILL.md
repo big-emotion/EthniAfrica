@@ -18,12 +18,20 @@ Le rapport de sujet écrit par `idee`.
 
 Dans `$ETHNIAFRICA_SOCIAL_PROJECTS/{Sujet}/` :
 
-| Fichier            | Ce qu'il porte                                                                 |
-| ------------------ | ------------------------------------------------------------------------------ |
-| `cards.json`       | le schéma de `docs/design/gabarits-social/GABARITS-SOCIAL.md` §10, sans écart  |
-| `narration.fr.txt` | le script, si le sujet vise un reel                                            |
-| `SOURCES.md`       | une entrée par image : auteur, dépôt, URL, licence lue                         |
-| `post.md`          | titre, descriptions par réseau, commentaire à épingler, story, liens UTM, état |
+| Fichier            | Ce qu'il porte                                                                |
+| ------------------ | ----------------------------------------------------------------------------- |
+| `cards.json`       | le schéma de `docs/design/gabarits-social/GABARITS-SOCIAL.md` §10, sans écart |
+| `narration.fr.txt` | le script, si le sujet vise un reel                                           |
+| `SOURCES.md`       | une entrée par image : auteur, dépôt, URL, licence lue                        |
+| `post.md`          | la note de travail : titre, intention, À savoir, ligne **Texte validé**       |
+
+Dans `$ETHNIAFRICA_SOCIAL_PROJECTS/_legendes/` : **`<id>.md`**, les descriptions
+par réseau, le commentaire à épingler et la story — un fichier par post.
+
+Et dans la bibliothèque, **une fois le texte validé** (voir « Pour finir ») :
+une entrée par post dans le registre de la bibliothèque, et son dossier
+`$ETHNIAFRICA_SOCIAL_POSTS/Brouillon/<Prefixe-Sujet>/<id>/`, dont le `post.md`
+est généré. Aucun dossier ne se crée ni ne se déplace à la main.
 
 ## La règle qui prime
 
@@ -48,6 +56,11 @@ puis `cartes[]` avec `rang`, `role`, `titre`, `chiffre`, `precision`,
   intuition, parce qu'il mesure la résolution.
 - `image.w` et `image.h` sont les **pixels réels du fichier décodé**, jamais une
   estimation ni une lecture du nom. C'est sur eux que repose le repli de §6.
+- **Une scène vidéo de plus de quatre secondes porte `images`, une liste**, et non
+  `image` seul : aucune image ne tient plus de quatre secondes (§9 bis). Compte
+  `ceil(durée / 4)` images par scène ; **la première présente le sujet de la scène**
+  (un personnage, un lieu, un document). Chaque entrée a la forme d'`image`, et peut
+  porter un `surtitre` affiché sans être dit — « Pendant ce temps, en France : … ».
 - **`image.identite` est obligatoire.** Une phrase décrivant ce que l'image
   montre, écrite **en la regardant**, sans nommer son auteur ni sa licence. C'est
   ce que la porte 2 oppose au crédit ; recopiée du crédit, elle ne garde rien.
@@ -145,21 +158,33 @@ servent. Ils portent de la doctrine éditoriale datée, pas du code :
 - Descriptions par réseau : `description-template-2026-09-09.md`.
 - Sourcing et personnes reconnaissables : `sourcing-et-licences-2026-09-07.md`.
 
-## Le post.md, réseau par réseau
+## Les légendes, réseau par réseau
+
+Elles s'écrivent dans `_legendes/<id>.md`, pas dans le `post.md` de l'atelier :
+c'est ce fichier que le `post.md` de la bibliothèque recopie sous « Légendes par
+réseau », et c'est ce `post.md`-là que l'opérateur ouvre pour publier.
 
 Le gabarit des descriptions fait foi. Ces règles-ci sont celles qui se perdent
 quand on ne l'ouvre pas.
 
+- **Le titre de la carte d'ouverture est la miniature : huit mots au plus, la
+  chute sur le dernier** (`GABARITS-SOCIAL.md` §1 ter). C'est la seule image que
+  la plupart des gens verront ; le moteur ne la rapetisse plus pour faire tenir
+  une phrase, il refuse et le dit. Le développement commence à la carte suivante.
+- **Un post n'a de légende que pour les réseaux que `GABARITS-SOCIAL.md` §1 bis
+  donne à son format.** Un réseau absent de sa ligne ne reçoit ni légende ni
+  lien balisé. Le texte LinkedIn, sans média, s'écrit une fois par sujet : dans
+  les légendes du reel quand il existe, sinon dans celles du carrousel.
 - **TikTok parle au « tu », en phrases courtes.** Une idée par phrase :
   l'accroche, deux à quatre phrases de preuve, **la ligne source avec son
   auteur, toujours**, une ligne qui demande un commentaire — jamais un tag, un
   like ou un partage —, « lien en bio », quatre à six hashtags. Instagram,
   Facebook et YouTube restent au « vous », LinkedIn dans son registre complet.
-- **Sous TikTok, `post.md` porte un « Commentaire à épingler ».** Une question au
+- **Sous TikTok, les légendes portent un « Commentaire à épingler ».** Une question au
   « tu », liée au sujet, à laquelle n'importe qui sait répondre depuis sa propre
   vie (« Quel est ton peuple ? »). Ni la copie de la dernière ligne de la
   description, ni un lien. Un post TikTok sans elle n'est pas prêt.
-- **Sous Instagram, `post.md` porte la story : « Story — question » et « Story —
+- **Sous Instagram, les légendes portent la story : « Story — question » et « Story —
   lien ».** La question de l'autocollant « Questions » est celle du commentaire
   épinglé, réécrite au « vous » ; le lien est celui balisé `utm_content=story`.
   La légende Instagram ne change pas : longue, sourcée, au « vous ».
@@ -171,6 +196,44 @@ Règle du 2026-09-13, décidée par l'opérateur et **non mesurée** : elle remp
 la description TikTok longue du 2026-09-12. La revue de phase 1 (3–4 octobre)
 compare les commentaires et les vues des deux formes, et garde celle qui gagne.
 
+## La validation du texte, obligatoire
+
+Décidé le 2026-09-14, après que l'opérateur a vu une vidéo rendue sur un texte
+qu'il n'avait jamais lu en entier : **aucun texte n'atteint `produire` sans
+être passé, mot pour mot, sous les yeux de l'opérateur, et sans qu'il l'ait
+validé explicitement.** Ce n'est pas une remarque, c'est une porte — et elle
+précède les cinq portes de `produire`, elle ne s'y ajoute pas.
+
+Avant de dire que `structure` est fini :
+
+0. **Lance `ethniafrica-mythe` sur les cartes écrites**, et affiche son verdict
+   avec le texte : la correction que le rapport de sujet avait vérifiée a pu
+   glisser en devenant une carte.
+1. **Affiche le texte complet dans la conversation**, pas un lien vers le
+   fichier : le `narration.fr.txt` scène par scène (chaque paragraphe
+   identifié à sa carte), puis chaque `titre`/`corps`/`source` de
+   `cards.json` (et de `cartes.json` s'il existe), dans l'ordre du rang.
+   Un opérateur qui doit ouvrir un fichier pour vérifier n'a pas reçu la
+   validation qu'on lui doit.
+2. **Demande la validation explicitement** — pas « dis-moi si ça te va »
+   noyé dans un paragraphe, une question qui appelle une réponse claire.
+3. **N'écris pas la ligne Texte validé, n'inscris pas le post dans la
+   bibliothèque, et ne dis pas que l'étape suivante est `produire`, avant
+   d'avoir reçu cette validation.** Si l'opérateur corrige, réécris et
+   raffiche — la porte ne s'ouvre qu'une fois, sur le texte qu'il a réellement
+   vu.
+
+Une fois validé, pose dans le `post.md` de l'atelier :
+
+```markdown
+**Texte validé** : oui, le AAAA-MM-JJ, par l'opérateur.
+```
+
+`produire` refuse de rendre quoi que ce soit — même une épreuve — tant que
+cette ligne est absente ou plus ancienne que `cards.json`, `cartes.json` ou
+`narration.fr.txt`. Une réécriture après validation efface la ligne : le
+texte doit repasser par cette porte, pas seulement par le rendu.
+
 ## Ce que tu ne fais pas
 
 Rendre les images. Choisir les dispositions. Ouvrir `ethni_carrousel2.py`,
@@ -180,7 +243,50 @@ ailleurs.
 
 ## Pour finir
 
-Passe le sujet en **🟡 En traitement** dans l'en-tête de son `post.md`, recalcule
-l'état (`node social/tools/etat-pipeline/build-etat.mjs`), et dis en une ligne
-que l'étape suivante est `produire`, qui lance d'abord l'audit du message
-(`ethniafrica-message`). Ne la lance pas de toi-même.
+Affiche le texte et obtiens la validation (voir ci-dessus). Une fois validé :
+
+1. **Pose la ligne Texte validé** dans le `post.md` de l'atelier.
+2. **Inscris chaque post dans la bibliothèque.** Sans cette entrée, le sujet
+   reste dans l'atelier, où `build-etat.mjs` ne regarde pas : il n'existe pour
+   aucun état du pipeline.
+
+   ```
+   node social/tools/library/register-post.mjs \
+     --id <id> --dir <Prefixe-Sujet>/<id> \
+     --title "<titre de la carte 1>" --subject "Peuple · <nom>" --pillar "<pilier>" \
+     --status a-produire --copy _legendes/<id>.md \
+     --link-path /fr/atlas/<…> --content carrousel      # ou video
+   ```
+
+   Lis la simulation, puis relance avec `--write`. L'outil crée le dossier du
+   post dans `Brouillon/` et imprime les commandes suivantes, chemins compris.
+
+   - **Un post par format.** Carrousel seul : `<id>` = la campagne. Reel et
+     carrousel : le reel est `<campagne>`, le carrousel `<campagne>-carrousel`,
+     comme `appolo-nzema`. Un post porte un seul jeu de liens balisés, et
+     `bilan-sujets.mjs` repère les doublons format par format.
+   - **`--status a-produire`**, parce que `build-index.mjs` l'écrit
+     « ⚪️ À produire », qu'`etat.mjs` lit comme 🟡 En traitement : le texte est
+     écrit, le rendu attendu. `brouillon` se lirait ⚪️ et `a-programmer` ne se
+     lit pas du tout. Les deux restent dans `Brouillon/`.
+   - **`--dir`** reprend le dossier de sujet existant s'il y en a un
+     (`bilan-sujets.mjs <nom>` le montre), sinon un préfixe existant :
+     `Pays-`, `Peuples-`, `Langues-`, `Familles-`, `Noms-`, `Villes-`,
+     `Dossiers-`, `Continent-`.
+   - **`--copy _legendes/<id>.md`**, jamais le `post.md` de l'atelier.
+     `build-index.mjs` recopie le fichier nommé tel quel sous « Légendes par
+     réseau » : pointé sur la note de travail, il collerait un second en-tête
+     d'état, les notes internes et la ligne Texte validé dans le `post.md` de la
+     bibliothèque — dont `build-etat.mjs` lit le premier marqueur et où il
+     cherche les mentions internes.
+
+3. **Régénère les vues** : `node <00-Index>/build-index.mjs`, au chemin que
+   l'outil a imprimé. C'est lui qui écrit le `post.md` du nouveau dossier ;
+   `migrate-library.mjs --write` ne régénère rien quand il n'a rien déplacé. Un
+   « Copie introuvable » dans ce `post.md` veut dire que `_legendes/<id>.md`
+   n'est pas écrit.
+4. **Recalcule l'état** (`node social/tools/etat-pipeline/build-etat.mjs`) et
+   vérifie que le post y figure en 🟡.
+
+Puis dis en une ligne que l'étape suivante est `produire`, qui lance d'abord
+l'audit du message (`ethniafrica-message`). Ne la lance pas de toi-même.

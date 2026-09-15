@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { vi } from "vitest";
 import ComparerNotFound from "@/app/[lang]/comparer/not-found";
+import { CONTACT_EMAIL } from "@/lib/brand";
 
 vi.mock("next/navigation", () => ({
   useParams: () => ({ lang: "fr" }),
@@ -45,6 +46,17 @@ describe("NotFound ([lang]/comparer/not-found)", () => {
     expect(links.some((l) => l.getAttribute("href") === "/fr/comparer")).toBe(
       true
     );
+  });
+
+  // @req REQ-099
+  it("addresses the broken-URL report to the brand's contact mailbox", () => {
+    render(<ComparerNotFound />);
+    const mailto = screen
+      .getAllByRole("link")
+      .map((link) => link.getAttribute("href") ?? "")
+      .find((href) => href.startsWith("mailto:"));
+
+    expect(mailto?.split("?")[0]).toBe(`mailto:${CONTACT_EMAIL}`);
   });
 
   // @req REQ-099

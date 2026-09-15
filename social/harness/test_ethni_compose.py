@@ -393,7 +393,7 @@ def test_a_figure_no_longer_earns_a_cartouche_on_its_own():
     overflows on its own merits, and falls to C for the reason §6 gives — the
     composed column does not hold — not for carrying a figure.
     """
-    chiffre = carte(chiffre="30,38", corps="", punchline="")
+    chiffre = carte(chiffre=True, titre="30,38", corps="", punchline="")
     assert gab.plan(chiffre, DECK, "carrousel", image=image_test(3000, 4000)).disposition == "A"
 
 
@@ -981,6 +981,96 @@ def test_a_closing_title_puts_its_last_word_in_the_accent():
     etroit = gab._envelopper("ÉTÉ DIVISÉ ?", "anton", 80, 400, 10)
     assert etroit == ["ÉTÉ", f"DIVISÉ{nbsp}?"], (
         f"le retour à la ligne détache la ponctuation : {etroit!r}")
+
+
+# ------------------------------------------ §9 bis several images in a scene
+
+
+def _images(n):
+    base = carte()["image"]
+    return [dict(base, fichier=f"{k}.jpg", credit=f"Document {k}") for k in range(n)]
+
+
+def test_a_scene_longer_than_four_seconds_changes_image_at_least_every_four_seconds():
+    """§9 bis — no image holds the frame more than four seconds.
+
+    The Côte d'Ivoire and Mandé montages went back to production for exactly this:
+    one image per narration paragraph, held for twenty seconds while the voice ran
+    on. The first image introduces the scene's subject, and the credit on screen
+    is the credit of the image on screen — not the scene's first image's.
+    """
+    c = carte(images=_images(3))
+    duree, pas = 11.0, 1 / 25
+    courant, depuis, t = None, 0.0, 0.0
+    while t < duree:
+        k, im = gab.image_a(c, t, duree)
+        if t == 0.0:
+            assert im["fichier"] == "0.jpg", "la première image doit présenter le sujet"
+        if im["fichier"] != courant:
+            courant, depuis = im["fichier"], t
+        assert t - depuis <= gab.IMAGE_PLAFOND_S + pas, (
+            f"t={t:.2f}s : même image depuis {t - depuis:.2f}s")
+        vue = gab.carte_a(c, t, duree)
+        credit = gab.plan_video(vue, DECK, image=image_test(3000, 4000)).bloc("credit-0")
+        assert f"Document {k}" in credit.texte, f"t={t:.2f}s : crédit « {credit.texte} »"
+        t += pas
+
+
+def test_a_card_with_a_single_image_keeps_it_for_the_whole_scene():
+    """Every deck written before this change carries `image`, and renders unchanged."""
+    c = carte()
+    for t in (0.0, 5.0, 10.5):
+        assert gab.image_a(c, t, 11.0) == (0, c["image"])
+
+
+def test_too_few_images_for_a_long_scene_cycle_rather_than_hold():
+    """Two images for eleven seconds come back round instead of freezing on one."""
+    c = carte(images=_images(2))
+    vus = [gab.image_a(c, t, 11.0)[1]["fichier"] for t in (0.5, 4.0, 8.0)]
+    assert vus == ["0.jpg", "1.jpg", "0.jpg"], vus
+
+
+def test_the_gates_read_every_image_of_a_scene_not_only_the_first():
+    """A licence or an identity missing on the second image is still a refusal."""
+    images = _images(2)
+    images[1] = dict(images[1], licence="", identite="")
+    verdict = gab.portes([carte(images=images)], DECK)
+    assert not verdict.passe
+    assert any("licence" in m for m in verdict.manquantes), verdict.manquantes
+    assert any(m.startswith("carte 2 : image 2") for m in verdict.manquantes), verdict.manquantes
+
+
+def test_the_output_licence_is_computed_over_every_image_of_a_scene():
+    base = carte()["image"]
+    images = [dict(base, fichier="0.jpg", licence="domaine public"),
+              dict(base, fichier="1.jpg", licence="CC BY-SA 4.0")]
+    c = carte(image=dict(base, licence="domaine public"), images=images)
+    assert gab.portes([c], DECK).licence_sortie == "CC BY-SA 4.0"
+
+
+def test_a_parallel_shown_on_screen_appears_with_its_image_only():
+    """« Pendant ce temps, en France » is displayed, never spoken, and belongs to one image.
+
+    It sits in the series slot, which a scene between the opening and the closing
+    leaves empty, so no block moves when it appears.
+    """
+    images = _images(2)
+    images[1] = dict(images[1], surtitre="Pendant ce temps, en France : 1889, la tour Eiffel")
+    c = carte(images=images)
+    avant = gab.plan_video(gab.carte_a(c, 1.0, 8.0), DECK, image=image_test(3000, 4000))
+    pendant = gab.plan_video(gab.carte_a(c, 5.0, 8.0), DECK, image=image_test(3000, 4000))
+    assert avant.bloc("v-surtitre") is None, "le parallèle apparaît avant son image"
+    bloc = pendant.bloc("v-surtitre")
+    assert bloc is not None and "TOUR EIFFEL" in bloc.texte.upper(), bloc
+    assert bloc.y == gab.V_SERIE_Y, f"surtitre en y={bloc.y}, emplacement {gab.V_SERIE_Y}"
+
+
+def test_the_gates_read_the_parallel_like_any_printed_field():
+    images = _images(2)
+    images[1] = dict(images[1], surtitre="Pendant ce temps : à confirmer")
+    verdict = gab.portes([carte(images=images)], DECK)
+    assert any(m.startswith("carte 2 : image 2") and "surtitre" in m
+               for m in verdict.manquantes), verdict.manquantes
 
 
 def main():

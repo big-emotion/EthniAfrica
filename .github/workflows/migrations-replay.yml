@@ -1,0 +1,59 @@
+name: Migrations Replay
+
+# Every migration has only ever run against a database that already held all
+# the migrations before it: recette on merge, production on a Release. Nothing
+# proved the sequence still builds a schema from nothing — which is what a new
+# contributor's `supabase db reset` asks of it, and what a rebuilt database
+# would need. A migration that quietly depends on state created by hand passes
+# every other gate and fails only there.
+#
+# The Supabase CLI's local stack is used rather than a bare Postgres service
+# container because the migrations reference `auth.users`, `auth.uid()`,
+# `storage.objects`, `cron.schedule` and the anon/authenticated/service_role
+# roles, none of which a stock Postgres image provides.
+#
+# The database is created on the runner and discarded with it: no credential is
+# read, so the check runs identically on a fork's pull request.
+
+on:
+  pull_request:
+    branches: [recette, main]
+    paths:
+      - "supabase/migrations/**"
+      - "supabase/config.toml"
+      - ".github/workflows/migrations-replay.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: migrations-replay-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      # Pinned rather than `latest`: the CLI decides the Postgres image and the
+      # auth/storage schema versions the replay runs against, and a replay that
+      # changes under an unchanged pull request is not a measurement.
+      - uses: supabase/setup-cli@46f7f98c7f948ad727d22c1e67fab04c223a0520 # v3.0.0
+        with:
+          version: 2.116.0
+
+      # `start` applies every migration while creating the database. Auth and
+      # storage stay up because they own the schemas the migrations extend; the
+      # rest of the stack has no bearing on whether the schema builds.
+      - name: Start the local stack and apply every migration
+        run: supabase start -x realtime,imgproxy,mailpit,postgres-meta,studio,edge-runtime,logflare,vector,supavisor
+
+      # Drops the database and replays the whole sequence a second time, the way
+      # a contributor resets their stack.
+      - name: Replay every migration from an empty database
+        run: supabase db reset

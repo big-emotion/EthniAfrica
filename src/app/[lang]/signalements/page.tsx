@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { unstable_cache } from "next/cache";
 
+import { PUBLIC_FLAGS_PAGE_SIZE } from "@/api/v2/schemas/pagination";
+import { PUBLIC_FLAGS_REVALIDATE_SECONDS } from "@/api/v2/services/corpusCache";
 import { PublicFlagsQueue } from "@/components/flags/PublicFlagsQueue";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { getStaticPageRoute } from "@/lib/routing";
@@ -33,9 +35,9 @@ export async function generateMetadata({
 }
 
 const getInitialPublicFlagsPage = unstable_cache(
-  () => getPublicFlagsPage({ pageSize: 50 }),
+  () => getPublicFlagsPage({ pageSize: PUBLIC_FLAGS_PAGE_SIZE }),
   ["public-flags-index"],
-  { revalidate: 60 }
+  { revalidate: PUBLIC_FLAGS_REVALIDATE_SECONDS }
 );
 
 // @req REQ-014

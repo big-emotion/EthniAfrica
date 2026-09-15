@@ -44,6 +44,28 @@ export async function getAllAfrikCountries(
 }
 
 /**
+ * How many country fiches the corpus holds, without reading one.
+ *
+ * The home's tile used to take `.total` off `getAllAfrikCountries`, whose
+ * `select("*")` ships every fiche's `content` JSONB (~0.6–0.95 MB) per render
+ * on a database metered by egress. A `head: true` count returns no rows.
+ */
+// @req REQ-113
+export async function countAfrikCountries(): Promise<number> {
+  const supabase = createServerClient();
+  const { count, error } = await supabase
+    .from("afrik_countries")
+    .select("id", { count: "exact", head: true });
+
+  if (error) {
+    logger.error("Error counting AFRIK countries", error);
+    throw error;
+  }
+
+  return count ?? 0;
+}
+
+/**
  * Every country's id and French name, and nothing else.
  *
  * `getAllAfrikCountries` answers the same question, and answering it that way

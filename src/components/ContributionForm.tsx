@@ -16,7 +16,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { ContributionFormFields } from "./ContributionFormFields";
-import { ReferenceLibraryFlow } from "./ReferenceLibraryFlow";
+import { ReferenceLibraryStep } from "./ReferenceLibraryStep";
 import { Language } from "@/types/shared";
 import { getContributionSourceCitations } from "@/lib/validations/contribution";
 import { FormFieldError } from "@/components/forms/FormFieldError";
@@ -266,7 +266,7 @@ export function ContributionForm({
           )
         )}
 
-        {type && <ReferenceLibraryFlow language={language} />}
+        {type && <ReferenceLibraryStep language={language} />}
 
         <div>
           <Label htmlFor="name">{t.name}</Label>
