@@ -5,7 +5,12 @@ import { Fraunces, Nunito_Sans, JetBrains_Mono } from "next/font/google";
 import "@/index.css";
 import { Providers } from "./providers";
 import { TypeformPreload } from "@/components/TypeformPreload";
-import { PRODUCT_NAME, OG_TITLE, OG_DESCRIPTION } from "@/lib/brand";
+import {
+  PRODUCT_NAME,
+  OG_TITLE,
+  OG_DESCRIPTION,
+  SOCIAL_HANDLE,
+} from "@/lib/brand";
 import { LOCALE_HEADER, resolveLocale } from "@/lib/locale";
 import { resolveSiteUrl } from "@/lib/siteUrl";
 import PlausibleScript from "@/components/PlausibleScript";
@@ -52,7 +57,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@big_emotion",
+    site: SOCIAL_HANDLE,
     images: ["/twitter-image"],
   },
 };
