@@ -134,11 +134,14 @@ jobs:
 
       # The same public-repository rule for the infrastructure: no server
       # address, SSH port, hosting provider or datacenter location. The terms
-      # live in a repository variable, never in a tracked file, and the gate
-      # prints positions only so its log does not publish them either.
+      # live outside the repository and the gate prints positions only, never a
+      # match. They travel as a **secret**, not a variable: the runner echoes
+      # every step's `env:` block, and the Actions logs of a public repository
+      # are public — a variable published the whole deny-list in clear text
+      # from 2026-09-14 until this line changed. A secret is masked as `***`.
       - run: npm run check:infra-disclosure
         env:
-          INFRA_DISCLOSURE_TERMS: ${{ vars.INFRA_DISCLOSURE_TERMS }}
+          INFRA_DISCLOSURE_TERMS: ${{ secrets.INFRA_DISCLOSURE_TERMS }}
 
       # The one question none of the gates above asks: does anything still
       # import this? Ten checks watched traceability, action pins, the env

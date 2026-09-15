@@ -3,9 +3,11 @@
  * the SSH port, the hosting provider, the datacenter locations.
  *
  * The terms themselves are not in the repository. CI reads them from the
- * `INFRA_DISCLOSURE_TERMS` Actions variable, a local checkout from the same name
- * in its environment or its gitignored `.env.local`. Keeping the list outside is
- * the point: a deny-list committed here would publish every value it forbids.
+ * `INFRA_DISCLOSURE_TERMS` Actions **secret** — masked in the log, unlike a
+ * variable, which the runner echoes in a step's `env:` block for anyone to read
+ * — and a local checkout from the same name in its environment or its gitignored
+ * `.env.local`. Keeping the list outside is the point: a deny-list committed
+ * here would publish every value it forbids.
  */
 
 export interface Disclosure {

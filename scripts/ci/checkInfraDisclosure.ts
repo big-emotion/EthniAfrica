@@ -5,9 +5,10 @@
  *   npx tsx scripts/ci/checkInfraDisclosure.ts --staged   what is about to be committed
  *
  * Two rules, one gate. **Terms** — the real addresses, ports, provider and
- * locations — come from `INFRA_DISCLOSURE_TERMS` and are checked on every
- * tracked file; `scripts/lib/infraDisclosure.ts` says why they are not in the
- * repository. **Shapes** — anything that addresses or locates a machine at all —
+ * locations — come from the `INFRA_DISCLOSURE_TERMS` secret and are checked on
+ * every tracked file; `scripts/lib/infraDisclosure.ts` says why they are not in
+ * the repository, and why a secret rather than a variable.
+ * **Shapes** — anything that addresses or locates a machine at all —
  * are checked on the files whose purpose is to describe the infrastructure, and
  * need no variable, so a fork, a Dependabot run and a fresh clone still enforce
  * that much. With no variable configured the check says which half it ran.
