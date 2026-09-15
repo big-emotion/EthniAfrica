@@ -33,6 +33,10 @@ HARNESS = pathlib.Path(__file__).resolve().parent
 PROJETS = productions_root()
 
 FPS = 25
+# §1 ter — the opening is the thumbnail. It circulates in the feed far longer than
+# it lasts in playback, so for its first seconds it carries its title alone: a
+# narration caption under it prints the same sentence twice, small under large.
+MINIATURE_S = 1.5
 FORMAT = "reel"
 
 # §9 bis — **the sign-off card follows the closing; it never replaces it.**
@@ -252,6 +256,27 @@ def _images_fin(dossier, premier, combien):
         tuyau.wait()
 
 
+def sous_titre_de_scene(carte, instant, sous_titre):
+    """The caption to draw, or None while the opening is serving as the thumbnail."""
+    if carte.get("role") == "ouverture" and instant < MINIATURE_S:
+        return None
+    return sous_titre
+
+
+def exporter_couverture(images, sortie):
+    """The montage's first frame, filed beside it as the cover to upload.
+
+    Every network offers a frame of its own choosing as the cover, and none of
+    them picks this one. The operator uploads it.
+    """
+    premiere = pathlib.Path(images) / "000000.png"
+    if not premiere.exists():
+        return None
+    sortie = pathlib.Path(sortie)
+    sortie.write_bytes(premiere.read_bytes())
+    return sortie
+
+
 def rendre_images(projet, deck, sous_titres, duree_par_scene, dossier, controle,
                   plafond_secondes=None, manquantes=None):
     """Every keyframe of every scene, numbered so ffmpeg can read them in order.
@@ -283,7 +308,9 @@ def rendre_images(projet, deck, sous_titres, duree_par_scene, dossier, controle,
 
         for i in range(images):
             instant = i / FPS
-            st_ = sous_titre_a(sous_titres, debut_scene + instant, carte.get("pivot"))
+            st_ = sous_titre_de_scene(
+                carte, instant,
+                sous_titre_a(sous_titres, debut_scene + instant, carte.get("pivot")))
             vue = gab.carte_a(carte, instant, duree)
             # §9 bis — the video gabarit, not the carousel one. A video is not a
             # carousel that moves: ported as it stood, the carousel gabarit
@@ -409,6 +436,11 @@ def main():
         _images_fin(dossier, images, round(fin_totale * FPS) - images)
         images = round(fin_totale * FPS)
     print(f"\n{images} images clés rendues", flush=True)
+
+    couverture = exporter_couverture(
+        dossier, racine / f"{deck['campagne']}{suffixe}-couverture.png")
+    if couverture is not None:
+        print(f"couverture : {couverture}", flush=True)
 
     assembler(projet / "work" / f"images{suffixe}", projet / "work" / "narration.wav",
               sortie, images)

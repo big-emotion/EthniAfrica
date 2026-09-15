@@ -142,6 +142,11 @@ ENTREE_TRANSLATION = 28          # px at k = 1, upward
 # the honest answer is a shorter sentence rather than smaller type.
 SOUS_TITRE_PLANCHER = 30
 
+# §1 ter — the thumbnail's word ceiling. Past it the title wraps to a fifth line,
+# the type has to come down to fit, and the first image stops reading in the feed
+# — which is the one job it has.
+MINIATURE_MOTS_MAX = 8
+
 # §9 — the plate's horizontal padding around the caption. Named because the
 # flush-left video layout has to put the plate's own edge on the margin, which
 # means offsetting the text by exactly this much.
@@ -602,22 +607,45 @@ def plan(carte, deck, fmt_key, *, image, sous_titre=False, disposition=None):
     plafond = bande_h + gouttiere if disposition != "A" else marge_haute * 2
     dispo = colonne_bas - plafond
     if haut_total > dispo:
-        # §6 — the column had to give up type to fit, so it did not hold at the
-        # sizes §3 sets. `colonne_A_tient` reads this: without it the fit trial
-        # always succeeded, because compression can always shrink something.
-        p.comprime = True
-        contenu, tient = _comprimer(contenu, dispo, gouttiere)
-        haut_total = hauteur_totale(contenu)
+        # §1 ter — **the opening is the thumbnail, and its type never gives way.**
+        # A title shrunk to fit is the defect the rule exists to remove: measured
+        # on the workshop, six openings out of sixteen had come down to 106 or
+        # 88 px to fit their band, silently, including the two the operator picked
+        # out of his own grid. So the copy is what gives — the fault below says
+        # which, and `structure` shortens the hook.
+        if carte.get("role") == "ouverture":
+            tient = False
+        else:
+            # §6 — the column had to give up type to fit, so it did not hold at the
+            # sizes §3 sets. `colonne_A_tient` reads this: without it the fit trial
+            # always succeeded, because compression can always shrink something.
+            p.comprime = True
+            contenu, tient = _comprimer(contenu, dispo, gouttiere)
+            haut_total = hauteur_totale(contenu)
         if not tient:
             # §11 — a block that overflows is a layout fault, never something to
             # let overlap. The column is clipped to its box so nothing collides,
             # and the fault is named so the render report can carry it.
             p.fautes.append(
+                f"la miniature demande {haut_total} px pour {dispo} px disponibles "
+                f"en {disposition}/{fmt_key} — §1 ter interdit de réduire le titre "
+                f"d'une ouverture : raccourcis l'accroche, huit mots au plus"
+                if carte.get("role") == "ouverture" else
                 f"la colonne demande {haut_total} px pour {dispo} px disponibles en "
                 f"{disposition}/{fmt_key} — raccourcis le corps, ou passe la carte "
                 f"en deux")
-            while contenu and hauteur_totale(contenu) > dispo:
-                retire = contenu.pop()
+            # §1 ter — on an opening the title is the one block that may not go:
+            # it *is* the thumbnail. Dropping it left two of the workshop's
+            # sixteen openings composed without a title at all, which is worse
+            # than the shrinking this rule came to remove. What surrounds it
+            # gives way instead, and if the title alone still overflows it is
+            # kept and the fault says so.
+            protege = "titre" if carte.get("role") == "ouverture" else None
+            while hauteur_totale(contenu) > dispo:
+                jetables = [i for i, b in enumerate(contenu) if b.nom != protege]
+                if not jetables:
+                    break
+                retire = contenu.pop(jetables[-1])
                 p.fautes.append(f"« {retire.nom} » n'a pas été composé, faute de place")
             haut_total = hauteur_totale(contenu)
 
@@ -786,8 +814,15 @@ def _colonne(carte, deck, fmt_key, largeur, disposition, k):
         # §7 ter makes an opening title a whole sentence: at 120 the Familles-Bantu
         # opening ran to five lines and 610 px, and the column held only by giving
         # up type — which §6 reads, rightly, as not holding.
+        #
+        # §1 ter — **the opening is the thumbnail, and it takes the cover row
+        # whatever its layout.** It circulates in the feed at a sixth of its width,
+        # where a series title reads as a smudge; the eight-word ceiling is what
+        # buys back the lines the larger type costs. A sentence-long opening title
+        # is now a copy fault, reported by `portes`, not a reason to set it small.
         ajouter("titre", carte.get("titre", ""),
-                "Titre de série" if disposition == "A" else "Titre de couverture",
+                "Titre de série" if disposition == "A" and carte.get("role") != "ouverture"
+                else "Titre de couverture",
                 encre1, majuscule=True, coupe=carte.get("coupe"))
         titre = next((b for b in blocs if b.nom == "titre"), None)
         if titre is not None and camps.get("deux"):
@@ -1165,6 +1200,13 @@ V_CREDIT_BAS = 44
 # enough to carry the plate *and* the pastille.
 V_TITRE_CLOTURE = (890, 380)
 V_BAS_CLOTURE = 270
+# §1 ter — the opening is the thumbnail. Its title is set at the cover row and it
+# needs the room: a taller slot, ending clear of the narration band, and the
+# scrim's ramp moved up to meet it. Measured on « Le commandant Bouët-Willaumez
+# a-t-il inventé la Côte d'Ivoire ? »: 233 px of title in a slot of 220, at 76 px
+# — the copy already did not fit the small type it was shrunk into.
+V_TITRE_OUVERTURE = (560, 720)
+V_VOILE_HAUT_OUVERTURE = 520
 
 # §9 bis — the two scrims. The profile is deliberately not monotone: 0,95 at the
 # top, 0 in the middle, 0,93 at the base. That is licit **because no text lives in
@@ -1201,9 +1243,15 @@ V_PASTILLE_CORPS = 27
 V_PASTILLE_PADDING = (20, 38)
 
 
-def _v_alpha(y, cloture=False):
-    """The scrim's alpha at an ordinate, by §9 bis's own stops."""
-    decalage = V_VOILE_HAUT_CLOTURE - V_VOILE_HAUT if cloture else 0
+def _v_alpha(y, cloture=False, haut=None):
+    """The scrim's alpha at an ordinate, by §9 bis's own stops.
+
+    `haut` is where the ramp starts. The closing and the opening both move it up
+    to meet a taller title, so the flag no longer names every case.
+    """
+    if haut is None:
+        haut = V_VOILE_HAUT_CLOTURE if cloture else V_VOILE_HAUT
+    decalage = haut - V_VOILE_HAUT
     arrets = [(y0 + decalage if y0 < 1920 else y0, a) for y0, a in V_VOILE_ARRETS]
     if y <= arrets[0][0]:
         return 0.0
@@ -1247,7 +1295,9 @@ def plan_video(carte, deck, *, image, sous_titre=False):
 
     # ── the two scrims ───────────────────────────────────────────────────────
     p.blocs.append(Bloc("voile-plaque", 0, 0, W, V_PLAQUE_H))
-    haut = V_VOILE_HAUT_CLOTURE if cloture else V_VOILE_HAUT
+    haut = (V_VOILE_HAUT_CLOTURE if cloture
+            else V_VOILE_HAUT_OUVERTURE if ouverture
+            else V_VOILE_HAUT)
     p.blocs.append(Bloc("voile-bas", 0, haut, W, H - haut))
 
     encre1, encre2 = _encre(deck, 1), _encre(deck, 2)
@@ -1284,10 +1334,12 @@ def plan_video(carte, deck, *, image, sous_titre=False):
     # ── the title slot ───────────────────────────────────────────────────────
     # §4 — at 0,72 the gold does not survive, so the display is in ink 1, figure
     # included. The accent is not lost: it moves into the narration plate.
-    alpha_titre = _v_alpha(V_TITRE_CLOTURE[0] if cloture else V_TITRE[0], cloture)
+    haut_slot, h_slot = (V_TITRE_CLOTURE if cloture
+                         else V_TITRE_OUVERTURE if ouverture
+                         else V_TITRE)
+    alpha_titre = _v_alpha(haut_slot, haut=haut)
     encre_titre = tk.encre_affichage(alpha_titre, accent, encre1)
 
-    haut_slot, h_slot = V_TITRE_CLOTURE if cloture else V_TITRE
     slot = []
     if carte.get("chiffre"):
         _v_poser(slot, "v-chiffre", carte.get("titre", ""), 150, "anton", 400,
@@ -1295,7 +1347,11 @@ def plan_video(carte, deck, *, image, sous_titre=False):
         _v_poser(slot, "v-precision", carte.get("precision", ""), V_PRECISION_CORPS,
                  "nunito", 600, encre1, V_MARGE_X, largeur, interligne=1.3)
     else:
-        corps = V_TITRE_CLOTURE_CORPS if cloture else V_TITRE_CORPS
+        # §1 ter — the opening is the thumbnail, so it is set at the cover row,
+        # the same rank the carousel's own opening takes.
+        corps = (V_TITRE_CLOTURE_CORPS if cloture
+                 else _role_type("Titre de couverture", "reel")["corps"] if ouverture
+                 else V_TITRE_CORPS)
         titre = _v_poser(slot, "v-titre", carte.get("titre", ""), corps, "anton", 400,
                          # §3 — 1,08 is the floor for a display face, and §9 bis's
                          # own closing budget is computed at it: 3 × 80 = 259 px.
@@ -1303,8 +1359,10 @@ def plan_video(carte, deck, *, image, sous_titre=False):
                          majuscule=True)
         # §7 ter — the closing title comes from the content-type table and its
         # last word is the punch, on every row. Read off the title rather than
-        # declared, so a type added to the table needs no engine change.
-        if cloture and titre is not None:
+        # declared, so a type added to the table needs no engine change. §1 ter
+        # gives the opening the same chute: one accent word, the last, and the
+        # thumbnail's eye lands on it.
+        if titre is not None and (cloture or ouverture):
             titre.accent_depuis = _chute(carte.get("titre", ""))
         _v_poser(slot, "v-precision", carte.get("precision", ""), V_PRECISION_CORPS,
                  "nunito", 600, encre1, V_MARGE_X, largeur, interligne=1.3)
@@ -2383,6 +2441,18 @@ def portes(cartes, deck, identites=None):
         # the engine draws `coupe`'s lines in place of the title. A title rewritten
         # without its cut therefore renders the old one, in silence — which is what
         # three of the ten openings did on the first pass of this very rewrite.
+        # §1 ter — the opening is the thumbnail, and it is read at a sixth of its
+        # width. A remark, not a refusal: the lot still renders, and the copy is
+        # shortened in `structure`, which is the only place that can.
+        if c.get("role") == "ouverture":
+            mots = _mots(c.get("titre", "") or "")
+            if len(mots) > MINIATURE_MOTS_MAX:
+                remarques.append(
+                    f"carte {c['rang']} : la miniature porte {len(mots)} mots, et "
+                    f"§1 ter en veut {MINIATURE_MOTS_MAX} au plus — « "
+                    f"{c.get('titre', '')[:60]} ». Raccourcis l'accroche : le "
+                    f"développement commence à la carte suivante")
+
         coupe = c.get("coupe")
         if coupe and _mots(" ".join(coupe)) != _mots(c.get("titre", "")):
             manquantes.append(

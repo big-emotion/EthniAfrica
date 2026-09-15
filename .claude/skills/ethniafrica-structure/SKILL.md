@@ -167,6 +167,10 @@ réseau », et c'est ce `post.md`-là que l'opérateur ouvre pour publier.
 Le gabarit des descriptions fait foi. Ces règles-ci sont celles qui se perdent
 quand on ne l'ouvre pas.
 
+- **Le titre de la carte d'ouverture est la miniature : huit mots au plus, la
+  chute sur le dernier** (`GABARITS-SOCIAL.md` §1 ter). C'est la seule image que
+  la plupart des gens verront ; le moteur ne la rapetisse plus pour faire tenir
+  une phrase, il refuse et le dit. Le développement commence à la carte suivante.
 - **Un post n'a de légende que pour les réseaux que `GABARITS-SOCIAL.md` §1 bis
   donne à son format.** Un réseau absent de sa ligne ne reçoit ni légende ni
   lien balisé. Le texte LinkedIn, sans média, s'écrit une fois par sujet : dans
