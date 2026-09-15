@@ -112,7 +112,7 @@ channel by a reach metric, is how a working channel gets killed.
   matter; likes are noise.
 - **Job**: brand and aesthetic credibility — **plus traffic, as of 09-13**, the
   first measured evidence any channel here reliably converts to a site visit.
-- **Frequency**: 3 per week, same cuts as the Shorts, plus a story on every
+- **Frequency**: 3 per week, the reel and the carousel (`GABARITS-SOCIAL.md` §1 bis), plus a story on every
   publication carrying two stickers: the link sticker — stories are the only
   place a link is one tap away — and the « Questions » sticker, the cheapest
   reply the platform offers, carrying the question pinned under the TikTok post.
@@ -168,11 +168,13 @@ The launch plan's cadence — **3 videos per week, Monday / Wednesday / Friday,
 batched on Sunday** — is sound and is already running. Do not propose a
 different cadence without a measured reason.
 
-What changes per channel is not the cadence but the **cut and the caption**:
-one production, publications on the same days across Shorts, Reels, TikTok and
-Facebook, plus the Instagram story with its link and Questions stickers on
-every publication, and **one separate weekly LinkedIn post that is not the
-video** — because the video is the format that fails there, measured twice.
+What changes per channel is not the cadence but the **format and the caption**.
+Which format goes where is a rule, not a per-post choice:
+`docs/design/gabarits-social/GABARITS-SOCIAL.md` §1 bis, decided by the operator
+on 2026-09-16 from the 2026-09-15 measurement. Every publication also carries the
+Instagram story with its link and Questions stickers. This skill proposes a
+change to that table only with the numbers that justify it, and the change is
+written into §1 bis with its date — never applied to one post by taste.
 The operator has already run all five networks simultaneously twice (09-11,
 09-12) rather than phasing them in; treat that as the current default cadence
 unless told otherwise.

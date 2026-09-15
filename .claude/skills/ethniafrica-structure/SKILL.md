@@ -162,6 +162,10 @@ réseau », et c'est ce `post.md`-là que l'opérateur ouvre pour publier.
 Le gabarit des descriptions fait foi. Ces règles-ci sont celles qui se perdent
 quand on ne l'ouvre pas.
 
+- **Un post n'a de légende que pour les réseaux que `GABARITS-SOCIAL.md` §1 bis
+  donne à son format.** Un réseau absent de sa ligne ne reçoit ni légende ni
+  lien balisé. Le texte LinkedIn, sans média, s'écrit une fois par sujet : dans
+  les légendes du reel quand il existe, sinon dans celles du carrousel.
 - **TikTok parle au « tu », en phrases courtes.** Une idée par phrase :
   l'accroche, deux à quatre phrases de preuve, **la ligne source avec son
   auteur, toujours**, une ligne qui demande un commentaire — jamais un tag, un

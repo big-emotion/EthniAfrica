@@ -37,10 +37,11 @@ Un fichier unique : `$ETHNIAFRICA_SOCIAL_PROJECTS/_idees/{slug}.md`.
 
 Écrit le {AAAA-MM-JJ}.
 
-|               |                               |
-| ------------- | ----------------------------- |
-| Pilier        | {un seul}                     |
-| Formats visés | {carrousel · reel · les deux} |
+|               |                                                          |
+| ------------- | -------------------------------------------------------- |
+| Pilier        | {un seul}                                                |
+| Formats visés | {carrousel · reel · les deux}                            |
+| Réseaux       | {ceux que GABARITS-SOCIAL.md §1 bis donne à ces formats} |
 
 ## L'angle
 
@@ -74,6 +75,10 @@ Ce qui pourrait faire échouer le sujet.
 ## Les règles
 
 - **Un sujet, un pilier, un angle.** Deux angles sont deux sujets.
+- **Les formats visés décident des réseaux, par la table de
+  `docs/design/gabarits-social/GABARITS-SOCIAL.md` §1 bis.** Un sujet qui vise
+  les cinq réseaux vise les deux formats ; un sujet à un seul format ne part que
+  sur les réseaux de sa colonne, et le rapport les nomme.
 - **Lance `ethniafrica-mythe` avant d'écrire la promesse.** Un sujet dont le
   verdict est « ne passe pas » meurt ici ; « explique » est un sujet valable, dit
   comme tel.

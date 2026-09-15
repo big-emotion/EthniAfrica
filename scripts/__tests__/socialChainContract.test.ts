@@ -5,6 +5,11 @@ import { describe, expect, it } from "vitest";
 import {
   CORPUS_SOURCE_DIR,
   DOCTRINE_SOURCES,
+  FORMAT_RULE_CALLERS,
+  FORMAT_RULE_HEADING,
+  FORMAT_RULE_NETWORKS,
+  FORMAT_RULE_REFERENCE,
+  FORMAT_RULE_SOURCE,
   HELPER_SKILL,
   MESSAGE_SKILL,
   MYTH_CALLERS,
@@ -142,6 +147,57 @@ describe("social chain contract", () => {
     expect(issues).toContainEqual({
       skill: HELPER_SKILL,
       detail: "SKILL.md is missing",
+    });
+  });
+
+  // @req REQ-032
+  it("flags a template spec that loses the per-network format table", () => {
+    // Decided 2026-09-16 on the 2026-09-15 measurement: each network receives
+    // the format that works there. Without the table, a production step falls
+    // back to one cut sent everywhere — the carousels that drew 9 to 14 views
+    // on Facebook.
+    const issues = checkSocialChainContract(projectRoot, {
+      [FORMAT_RULE_SOURCE]: "# Gabarits\n\n## 1. Formats\n",
+    });
+
+    expect(issues).toContainEqual({
+      skill: FORMAT_RULE_SOURCE,
+      detail: `does not carry the section ${FORMAT_RULE_HEADING}`,
+    });
+  });
+
+  // @req REQ-032
+  it("flags a format table that leaves a network without a format", () => {
+    expect(FORMAT_RULE_NETWORKS).toEqual([
+      "TikTok",
+      "Instagram",
+      "Facebook",
+      "YouTube",
+      "LinkedIn",
+    ]);
+    const withoutLinkedIn = FORMAT_RULE_NETWORKS.filter(
+      (network) => network !== "LinkedIn"
+    ).join(" · ");
+    const issues = checkSocialChainContract(projectRoot, {
+      [FORMAT_RULE_SOURCE]: `${FORMAT_RULE_HEADING}\n\n${withoutLinkedIn}\n\n## 2. Couleurs\n\nLinkedIn`,
+    });
+
+    expect(issues).toContainEqual({
+      skill: FORMAT_RULE_SOURCE,
+      detail: "does not assign a format to LinkedIn",
+    });
+  });
+
+  // @req REQ-032
+  it("flags a production step that no longer follows the format table", () => {
+    const [firstCaller] = FORMAT_RULE_CALLERS;
+    const issues = checkSocialChainContract(projectRoot, {
+      [firstCaller]: `---\nname: ${firstCaller}\n---\nCalls ethniafrica-mythe, picks a format by taste.`,
+    });
+
+    expect(issues).toContainEqual({
+      skill: firstCaller,
+      detail: `does not follow ${FORMAT_RULE_REFERENCE} of GABARITS-SOCIAL.md`,
     });
   });
 });

@@ -37,6 +37,35 @@ par l'interface TikTok / Reels. Rien de lisible ne descend sous **y = 1620**.
 
 ---
 
+## 1 bis. Un format par réseau
+
+**Chaque réseau reçoit le format qui y marche, et seulement lui.** Décision de
+l'opérateur du 16 septembre 2026, sur la mesure du 15. La règle vaut pour toute
+production à venir : un post ne part pas sur un réseau que sa ligne ne lui donne
+pas.
+
+| Réseau | Reçoit | Ne reçoit pas | Mesure du 15 septembre 2026 |
+| --- | --- | --- | --- |
+| TikTok | carrousel | reel | carrousels : Daloa 2 076 vues et 12 commentaires, Sénoufo 1 018, Krio 927 · vidéos : Côte d'Ivoire 785, Nzema 375, Peul 326 |
+| Instagram | reel et carrousel | — | reels : Nzema 1 977 vues, Côte d'Ivoire 1 469 · carrousels : Daloa 241, Krio 179 — moins de portée, autant d'interactions par vue (Daloa 10,8 %, Côte d'Ivoire 11,7 %) |
+| Facebook | reel | carrousel | reel Côte d'Ivoire : 21 211 vues, 191 partages · carrousels : Daloa 13, Sénoufo 14, Krio 9 |
+| YouTube | reel (Shorts) | carrousel | un Short est une vidéo · Keïta–Coulibaly 1 388 vues, Nzema 1 176 en un jour |
+| LinkedIn | texte avec lien, depuis le profil personnel | reel, carrousel | profil personnel : 31 visites de lien en 28 jours · vidéos de la page : 0 à 2 impressions, 0 clic (7 et 14 septembre) |
+
+- **Un sujet destiné aux cinq réseaux se produit dans les deux formats**, plus le
+  texte LinkedIn. Un sujet produit dans un seul format ne part que sur les
+  réseaux de sa colonne : un reel seul ne va pas sur TikTok, un carrousel seul ne
+  va ni sur Facebook ni sur YouTube.
+- **La sortie LinkedIn 1080 × 1080 du §1 n'est plus publiée**, puisque LinkedIn
+  ne reçoit plus d'image. Le moteur la rend encore ; la retirer est un chantier
+  du moteur, pas de cette règle.
+- **La table se révise, elle ne s'enfreint pas.** Une ligne ne change que sur une
+  mesure de `ethniafrica-content-strategist`, écrite ici avec sa date. Une seule
+  semaine de mesure la fonde : la revue de phase 1 des 3 et 4 octobre la relit
+  en premier.
+
+---
+
 ## 2. Couleurs — jetons de la charte, jamais de littéral
 
 ### Thème nuit (défaut)
@@ -1250,6 +1279,7 @@ avant son premier rendu.
       **y compris sur la ligne de crédit**, qui est celle qui passe le moins.
 - [ ] **L'annexe est en encre 2, pas en encre 3** (plafond 4,94:1, voir §3).
 - [ ] En 9:16, rien de lisible sous y = 1620.
+- [ ] **Le post ne part que sur les réseaux que §1 bis donne à son format.**
 - [ ] La licence de sortie est celle du lot, calculée et non recopiée.
 - [ ] Aucune note interne visible sur l'image.
 - [ ] Le crédit nomme le document réellement affiché.
