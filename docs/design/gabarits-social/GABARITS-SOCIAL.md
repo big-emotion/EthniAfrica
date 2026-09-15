@@ -66,6 +66,49 @@ pas.
 
 ---
 
+## 1 ter. La miniature
+
+**La première image est une miniature avant d'être une carte.** Elle circule dans
+le fil bien plus longtemps qu'elle ne dure à l'écran, à peu près au sixième de sa
+largeur, et c'est elle qui décide qui regarde. Décidé le 16 septembre 2026, en
+comparant la grille TikTok du compte : les vidéos ouvraient sur un titre de 76 px
+au tiers bas, doublé par la plaque de narration — deux fois la même phrase, et
+aucune des deux lisible en vignette.
+
+Quatre règles, carrousel et vidéo ensemble.
+
+1. **Le titre d'ouverture prend le rang couverture du §3**, quelle que soit sa
+   disposition : 120 px en 4:5, 130 px en 9:16. Le rang « Titre de série » est
+   celui des cartes de développement.
+2. **Il ne se comprime jamais.** Mesuré sur l'atelier le 16 septembre : six
+   ouvertures sur seize étaient descendues à 106 ou 88 px pour tenir dans leur
+   bandeau, sans que rien ne le dise. C'est la copie qui cède désormais, et le
+   moteur nomme la faute plutôt que de rapetisser en silence.
+3. **Huit mots au plus, et le dernier porte l'accent** — c'est la chute. Les deux
+   productions qui tenaient à la mesure en faisaient exactement huit ; celles qui
+   ne tenaient pas en faisaient onze, treize et quinze. Au-delà, `portes` le
+   signale : le développement commence à la carte suivante.
+4. **Rien d'autre ne la charge.** En vidéo, l'emplacement de narration reste vide
+   pendant les 1,5 premières secondes : une légende y répéterait, en petit, la
+   phrase que le titre porte déjà en grand. Le montage dépose cette première
+   image à côté de lui en PNG — chaque réseau propose une couverture, aucun ne
+   choisit celle-là tout seul.
+
+**Ce qui cède quand elle ne tient pas.** Le titre, jamais : ce qui l'entoure. Le
+§7 ter ne donne que quatre blocs à une ouverture — bandeau et rang, titre, ligne
+de vision, indication de défilement —, donc un corps, une punchline ou une
+précision posés là sont déjà hors gabarit, et ce sont eux que le moteur retire, en
+nommant la faute. Mesuré le 16 septembre : six ouvertures sur seize dépassaient,
+et toutes les six portaient un de ces blocs en trop.
+
+**Ce qu'une miniature ne fait pas** : promettre ce que la production ne paie pas.
+Une accroche dont la pièce ne referme pas la question n'est pas une accroche,
+c'est un appât — et sur un atlas sourcé, c'est aussi un mensonge sur le corpus.
+La chute du §7 ter reste la règle : la miniature dit la chute du sujet, elle ne
+l'annonce pas.
+
+---
+
 ## 2. Couleurs — jetons de la charte, jamais de littéral
 
 ### Thème nuit (défaut)
@@ -964,8 +1007,14 @@ s'efface se lit comme un défaut de rendu.
 | Narration | `top: 1300`, hauteur **190** | la plaque de sous-titre, **réservé même vide** |
 | Crédit + filigrane | `bottom: 44` | 17 px, **une ou deux lignes**, filigrane à droite, opacité 0,72 |
 
-La clôture est la seule exception : titre à `top: 890` sur 380 px, et son emplacement bas
-fait 270 px pour porter la plaque **et** la pastille.
+La clôture est la première exception : titre à `top: 890` sur 380 px, et son emplacement
+bas fait 270 px pour porter la plaque **et** la pastille.
+
+**L'ouverture est la seconde**, et c'est le §1 ter qui la fixe : titre à `top: 560` sur
+720 px, au rang couverture (130 px en 9:16), la rampe du voile remontée de 840 à 520
+pour venir sous lui, et l'emplacement de narration laissé vide pendant 1,5 s. Rien ne
+bouge pour autant : les deux emplacements sont fixes pour toute la scène, et la légende
+qui arrive ensuite se pose dans une bande déjà réservée.
 
 > Le filigrane est à **0,72**, non à 0,55 comme en carrousel : posé sur un aplat de nuit
 > à 0,93 plutôt que sur une image, il s'éteint à l'opacité du carrousel.
@@ -1311,6 +1360,8 @@ avant son premier rendu.
       **y compris sur la ligne de crédit**, qui est celle qui passe le moins.
 - [ ] **L'annexe est en encre 2, pas en encre 3** (plafond 4,94:1, voir §3).
 - [ ] En 9:16, rien de lisible sous y = 1620.
+- [ ] **La miniature est au rang couverture, jamais comprimée, huit mots au plus,
+      l'accent sur le dernier** (§1 ter).
 - [ ] **Le post ne part que sur les réseaux que §1 bis donne à son format.**
 - [ ] La licence de sortie est celle du lot, calculée et non recopiée.
 - [ ] Aucune note interne visible sur l'image.
