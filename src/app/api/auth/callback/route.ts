@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createServerSupabaseClient } from "@/lib/supabase/auth-server";
 import { logger } from "@/lib/api/logger";
+import { resolveSiteUrl } from "@/lib/siteUrl";
 
 const SIGN_IN_PATH = "/fr/admin/connexion";
 const DEFAULT_DESTINATION = "/fr/admin";
@@ -54,7 +55,10 @@ function safeDestination(raw: string | null): string {
  */
 // @req REQ-042
 export async function GET(request: NextRequest) {
-  const { searchParams, origin } = request.nextUrl;
+  const { searchParams } = request.nextUrl;
+  // Not `request.nextUrl.origin`: behind the production container that is the
+  // server's bind address (`http://0.0.0.0:3000`), which no browser can open.
+  const origin = resolveSiteUrl();
   const code = searchParams.get("code");
   const destination = safeDestination(searchParams.get("redirect"));
 
