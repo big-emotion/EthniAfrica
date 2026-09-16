@@ -5,6 +5,7 @@ import { FicheTileChapter } from "@/components/fiche/FicheTileChapter";
 import { countryLanguageTiles } from "@/lib/fiche/languages";
 import { PeoplesSection } from "@/components/country/PeoplesSection";
 import { FicheSources } from "@/components/fiche/FicheSources";
+import { ProvenanceBanner } from "@/components/source-transparency/ProvenanceBanner";
 import { FicheSection as Section } from "@/components/fiche/FicheSection";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
 import {
@@ -18,6 +19,7 @@ import { FicheTile } from "@/components/fiche/FicheTile";
 import { splitLeadSentence } from "@/lib/fiche/prose";
 import { chapterAnchorId } from "@/lib/ficheChapters";
 import type { ProvenanceState } from "@/lib/fieldProvenance";
+import type { ProvenanceCensus } from "@/api/v2/schemas/confidence";
 import type { CountryPageData } from "@/lib/countryDataTransformer";
 import type { LanguageReference } from "@/types/afrik";
 import type { CountryDetail } from "@/types/afrik-frontend";
@@ -34,6 +36,12 @@ export interface CountryParchmentProps {
   summaryFigures?: CountrySummaryFigures;
   languagesState?: ProvenanceState | "unavailable";
   hasSourceFlag?: boolean;
+  /**
+   * What the fiche's assertions rest on, counted by standing and resolved by
+   * the route. Null when the read failed; absent when the caller does not
+   * carry it. Either way the banner stays away rather than guessing.
+   */
+  provenance?: ProvenanceCensus | null;
   /**
    * The languages the record shows — declared, or derived from its peoples by
    * the route. Absent, the record falls back to the ones it declares.
@@ -66,6 +74,7 @@ export function CountryParchment({
   languagesState,
   hasSourceFlag,
   languages,
+  provenance = null,
   children,
   onward,
 }: CountryParchmentProps) {
@@ -95,6 +104,15 @@ export function CountryParchment({
       {/* The chapter's own heading, as on the people record: the panel used
           to open on an eyebrow and a second title repeating the name. */}
       <Section title={copy.summary.title}>
+        {/* The census rides inside the first chapter rather than above it, on
+            the people record's precedent: the parchment keeps no child off the
+            chapter ground, and the banner's own link points at this document's
+            sources footer. */}
+        {provenance ? (
+          <div className="afh-parchment-provenance">
+            <ProvenanceBanner language={language} census={provenance} />
+          </div>
+        ) : null}
         <FicheSummaryBrief
           kind="country"
           entityId={country.id}

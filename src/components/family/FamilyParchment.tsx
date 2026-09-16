@@ -26,6 +26,8 @@ import { ficheSourceLabel } from "@/lib/afrik/ficheSourceLabel";
 import { sourceStandingLabel } from "@/lib/glossaire/vocabularies";
 import { isSourceTier } from "@/types/sources";
 import type { Language } from "@/types/shared";
+import type { ProvenanceCensus } from "@/api/v2/schemas/confidence";
+import { ProvenanceBanner } from "@/components/source-transparency/ProvenanceBanner";
 import { familyCopy } from "@/lib/i18n/copy/family";
 import { ficheCopy } from "@/lib/i18n/copy/fiche";
 
@@ -62,6 +64,12 @@ export interface FamilyParchmentProps {
    * rule the page actually applied (REQ-116).
    */
   footprintProvenance?: FamilyFootprintProvenance;
+  /**
+   * What the fiche's assertions rest on, counted by standing and resolved by
+   * the route. Null when the read failed; absent when the caller does not
+   * carry it. Either way the banner stays away rather than guessing.
+   */
+  provenance?: ProvenanceCensus | null;
   /**
    * Chapters the route composes outside this file, slotted before the sources
    * footer. The footer closes the fiche — the reading rail lists chapters in
@@ -155,6 +163,7 @@ export function FamilyParchment({
   memberPeoples,
   memberPeopleCount,
   footprintProvenance = "member-peoples",
+  provenance = null,
   children,
   onward,
 }: FamilyParchmentProps) {
@@ -219,6 +228,14 @@ export function FamilyParchment({
       )}
 
       <Section title={copy.figures}>
+        {/* Inside the first chapter, on the people record's precedent: the
+            parchment keeps no child off the chapter ground, and the banner's
+            link points at this document's own sources footer. */}
+        {provenance ? (
+          <div className="afh-parchment-provenance">
+            <ProvenanceBanner language={language} census={provenance} />
+          </div>
+        ) : null}
         <div className="afh-stat-cards">
           <StatCard
             language={language}
