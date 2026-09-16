@@ -23,9 +23,11 @@ import { hubsCopy } from "@/lib/i18n/copy/hubs";
 import { languagesCopy } from "@/lib/i18n/copy/languages";
 import { languageFicheCopy } from "@/lib/i18n/copy/languageFiche";
 import { migrationsCopy } from "@/lib/i18n/copy/migrations";
+import { moderationConsoleCopy } from "@/lib/i18n/copy/moderationConsole";
 import { namesCopy } from "@/lib/i18n/copy/names";
 import { patronymesCopy } from "@/lib/i18n/copy/patronymes";
 import { peopleCopy } from "@/lib/i18n/copy/people";
+import { provenanceCopy } from "@/lib/i18n/copy/provenance";
 import { proverbsCopy } from "@/lib/i18n/copy/proverbs";
 import { publicFlagsCopy } from "@/lib/i18n/copy/publicFlags";
 import { quizCopy } from "@/lib/i18n/copy/quiz";
@@ -72,11 +74,13 @@ export const COPY_MODULES = {
   languages: languagesCopy,
   patronymes: patronymesCopy,
   migrations: migrationsCopy,
+  moderationConsole: moderationConsoleCopy,
   colonization: colonizationCopy,
   discoveries: discoveriesCopy,
   quiz: quizCopy,
   reports: reportsCopy,
   sourceTransparency: sourceTransparencyCopy,
+  provenance: provenanceCopy,
   fieldProvenance: fieldProvenanceCopy,
   family: familyCopy,
   fiche: ficheCopy,

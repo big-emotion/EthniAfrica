@@ -72,13 +72,19 @@ describe("ModerationQueue — reports and contributions side by side", () => {
    * The atlas is edited from `dataset/source/afrik/*.json`. The console that
    * approved a contribution and wrote it straight into the tables is gone, and
    * with it the buttons that started that write.
+   *
+   * The assertion is on the writes, not on the count of buttons: the case
+   * file's disclosure is a control that reads, and a contribution has a
+   * register to read like any other row.
    */
   // @req REQ-091
   it("offers no action on a contribution — it can only be read", () => {
     render(<ModerationQueue language="fr" reports={[contribution]} />);
 
     const row = rowFor("HJK456MNPQ");
-    expect(within(row).queryByRole("button")).toBeNull();
+    for (const label of [/examiner/i, /accepter/i, /rejeter/i, /doublon/i]) {
+      expect(within(row).queryByRole("button", { name: label })).toBeNull();
+    }
     expect(within(row).queryByLabelText("Note de modération")).toBeNull();
   });
 

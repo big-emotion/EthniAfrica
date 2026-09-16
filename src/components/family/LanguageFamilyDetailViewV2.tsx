@@ -10,6 +10,7 @@ import { FamilyHistorySection } from "@/components/family/FamilyHistorySection";
 import { FamilyDecolonialHeader } from "@/components/family/FamilyDecolonialHeader";
 import { FamilyLinguisticTraits } from "@/components/family/FamilyLinguisticTraits";
 import type { Language } from "@/types/shared";
+import type { ProvenanceCensus } from "@/api/v2/schemas/confidence";
 
 /**
  * The Record of a family fiche: the reading the globe band opens onto.
@@ -65,6 +66,8 @@ export interface LanguageFamilyDetailViewV2Props {
   memberPeopleCount?: number;
   /** Which rule built the footprint, so the parchment describes the one the page applied. */
   footprintProvenance?: FamilyFootprintProvenance;
+  /** The assertion census the head's provenance banner states, or null. */
+  provenance?: ProvenanceCensus | null;
   /** The way out of the fiche, composed by the route and passed straight down. */
   onward?: ReactNode;
 }
@@ -77,6 +80,7 @@ export function LanguageFamilyDetailViewV2({
   memberPeoples = [],
   memberPeopleCount = 0,
   footprintProvenance = "member-peoples",
+  provenance = null,
   onward,
 }: LanguageFamilyDetailViewV2Props) {
   const data = transformFamilyData(family);
@@ -91,6 +95,7 @@ export function LanguageFamilyDetailViewV2({
       memberPeoples={memberPeoples}
       memberPeopleCount={memberPeopleCount}
       footprintProvenance={footprintProvenance}
+      provenance={provenance}
       onward={onward}
     >
       <div className="afh-parchment-section">

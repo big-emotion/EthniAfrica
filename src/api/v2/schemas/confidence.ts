@@ -72,3 +72,69 @@ export const confidenceRecordSchema = z.object({
 });
 
 export type ConfidenceRecord = z.infer<typeof confidenceRecordSchema>;
+
+/**
+ * The provenance census — a second, deliberately different reading of the
+ * same fabric.
+ *
+ * `ConfidenceRecord` above answers "how strong is this fiche", with one
+ * number. The census answers "what is this fiche made of", with four counts
+ * and no number at all. They are not two views of one value: an aggregate
+ * over an identity chapter resting on `official` sources and an oral-tradition
+ * chapter resting on `unverified` ones describes neither chapter, and it is
+ * the only figure a reader remembers. The banner that consumes this shape is
+ * forbidden from averaging it (docs/design/atlas-charter.md §8).
+ *
+ * Its entity types are the fiche surfaces, not the confidence fabric's:
+ * countries and languages carry assertions but no `confidence_scores` row,
+ * and their identifiers are ISO codes rather than the `PPL_`/`FLG_` prefixes
+ * `confidenceEntityIdSchema` enforces.
+ */
+// @req REQ-084
+export const provenanceEntityTypeSchema = z.enum([
+  "people",
+  "country",
+  "language",
+  "language-family",
+]);
+
+export type ProvenanceEntityType = z.infer<typeof provenanceEntityTypeSchema>;
+
+/**
+ * Four identifier shapes in one pattern: `PPL_*`, `FLG_*`, an ISO 3166-1
+ * alpha-3 country code and an ISO 639-3 language code. Spelling each per
+ * entity type would re-add the prefix cross-check the confidence endpoint
+ * carries; here the service simply finds nothing for a mismatched pair,
+ * which is the same 404 by a shorter road.
+ */
+// @req REQ-084
+export const provenanceEntityIdSchema = z
+  .string()
+  .min(2)
+  .max(64)
+  .regex(/^[A-Za-z][A-Za-z0-9_]*$/, {
+    message: "Invalid entity id format",
+  });
+
+// @req REQ-084
+export const provenanceCensusParamsSchema = z.object({
+  entityType: provenanceEntityTypeSchema,
+  entityId: provenanceEntityIdSchema,
+});
+
+// @req REQ-084
+export const provenanceCensusSchema = z.object({
+  entityType: provenanceEntityTypeSchema,
+  entityId: z.string(),
+  /** Assertions counted — always the sum of the four standings. */
+  assertionCount: z.number().int().min(0),
+  standings: z.object({
+    official: z.number().int().min(0),
+    referenced: z.number().int().min(0),
+    unverified: z.number().int().min(0),
+    needs_review: z.number().int().min(0),
+  }),
+  lastHumanAuditAt: z.string().nullable(),
+});
+
+export type ProvenanceCensus = z.infer<typeof provenanceCensusSchema>;
