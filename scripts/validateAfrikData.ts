@@ -4778,7 +4778,7 @@ const STRICT_MODEL_KINDS: Record<
 export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   Record<StrictModelKind, number>
 > = {
-  peuple: 7064,
+  peuple: 7063,
   famille_linguistique: 108,
   pays: 13,
 };
