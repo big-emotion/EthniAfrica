@@ -471,6 +471,58 @@ oral accounts support other assertions.
 A fiche sourced only at `unverified` is published and visibly marked low-confidence through
 `ConfidenceChip`. That is the intended outcome, not a defect to fix.
 
+#### Assertion tracks certainty, in the sentence itself
+
+**The more a claim is disputed, the less assertive the sentence that carries it.** A tier
+labels a source; this rule governs the prose that rests on it, everywhere the project
+writes — fiche text, dossier chapters, card copy, narration, captions. It is not a style
+preference. A flat assertion over a contested claim is a factual error about the state of
+knowledge, and on a sourced atlas it is also a claim about the corpus that the corpus does
+not support.
+
+The register has three steps, and the right one is chosen by what the sources actually do:
+
+| What the sources do                             | How the sentence reads                                                                |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------- |
+| They agree, at `official` or `referenced`       | « X est Y. »                                                                          |
+| They diverge, or a single tier carries it alone | « Selon X, … », « une lecture y voit… », « la piste la plus citée est… »              |
+| They do not settle it                           | « L'origine de X n'est pas établie. » — then the paths, each attributed, none crowned |
+
+Where several explanations compete, **the piece names more than one or names none**.
+Picking one and stating it flat is the failure this rule exists to stop: it was measured
+on 2026-09-16, when a Guinea card asserted « Guinée est un mot portugais » while the
+corpus held three unsettled accounts of that name and the subject report had already
+recorded that none could be preferred.
+
+Note the asymmetry this creates with the tier scale, and keep it: an `official` source
+still carries a contested claim when other sources contradict it. **Tier measures who is
+speaking, not whether the question is closed.**
+
+#### Whose account gets told, when the corpus is lopsided
+
+The AFRIK corpus is built overwhelmingly on European scholarship — colonial
+administrators, missionary linguists, metropolitan academies — because that is what was
+written down, catalogued and digitised. African oral, community and vernacular accounts of
+the same names are thinner in it, and often absent. That imbalance is a property of the
+archive, **not a verdict on which account is true.**
+
+So defaulting to the European explanation because it is the one the corpus carries is not
+neutrality. It reproduces the archive's bias and publishes it as rigour, to an audience
+that is largely African and reads that choice immediately. The discipline that follows:
+
+- **Where a local account exists, it is named alongside the external one**, at its own
+  tier, in the same breath — not relegated to a footnote or dropped for being weaker.
+  Excluding it would be the colonial filter the Source Tier Policy exists to refuse.
+- **Scientific and linguistic method stays the frame for verifying sources, never the
+  arbiter of whose account deserves to be heard.** It answers « is this attested, by whom,
+  when » — it does not answer « which people's explanation of their own name counts ».
+- **Silence about the imbalance is itself a choice.** Where the corpus can only offer
+  outside sources on a name, the piece may say so.
+
+The operative version for productions, with the questions to run and what to do when a
+local account and an outside one disagree, is in `.claude/skills/ethniafrica-onomastique/`.
+It is written once, there; this section states the rule and does not restate the procedure.
+
 ### Demographics
 
 2025 reference year. Per-country `percentageInCountry` is meant to sum to 100%. The validator reports a wide band [95, 105] (FR28), the target band [99, 101] (FR28-strict) and a country declaring no split at all (FR28-declared) — **as warnings naming the country and the sum, never as failures** (DEC-055, REQ-170). The bands failed the build for a while after the ~30-country re-sourcing reached zero offenders; that lock was lifted because a partial figure that says it is partial serves a reader better than no figure. The reader is told instead: `PeoplesSection` labels the breakdown « Répartition estimée ou incomplète » whenever its declared shares do not round to 100 %. Which checks are advisory as a whole is one exported constant, `SOFT_CHECK_NAMES` in `scripts/validateAfrikData.ts`; only `FR52-coverage` is in it — the FR28 checks emit warnings themselves.

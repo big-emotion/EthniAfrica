@@ -155,6 +155,21 @@ lecteur qui rencontre la marque cinq fois ne doit pas apprendre cinq mots.
 | « Le vrai nom », comme nom de pilier                              | « le vrai nom » dans la glose d'une paire                                           | l'autre nom n'est pas faux, il vient d'ailleurs         |
 | l'orthographe du nom de la fiche                                  | trois graphies du même peuple dans une pièce                                        | Duala, Duàlá et Douala se sont croisés dans un seul lot |
 
+### Une affirmation plate sur un nom contesté
+
+Quand la pièce explique l'origine d'un nom, vérifie que le lecteur puisse deviner
+si cette origine est établie ou débattue. Une explication contestée énoncée à plat
+— « X est un mot portugais » là où le corpus porte trois récits concurrents — est
+un défaut de message, pas seulement de sourcing : elle affirme au lecteur que la
+question est close, et elle tranche presque toujours en faveur de la source que
+l'archive a le mieux conservée, c'est-à-dire européenne.
+
+**La question complète, et quoi faire quand un récit local contredit un récit
+extérieur, vivent dans `ethniafrica-onomastique`, cinquième question.** La règle
+de langue qui en découle est dans `CLAUDE.md`. Ce skill les signale ici et n'en
+garde aucune copie : renvoie l'opérateur à `/ethniafrica-onomastique` dès qu'une
+pièce explique un nom.
+
 ## Le verdict
 
 - **passe** : aucun critère bloquant à 0.
