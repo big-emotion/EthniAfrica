@@ -23,6 +23,15 @@ vi.mock("@/lib/supabase/queries/afrik/flags", () => ({
     mockGetActiveSourceFlags(...args),
 }));
 
+// The census the route now reads for the provenance banner. Unmocked it would
+// open a Supabase client and hang the whole file on a five-second timeout.
+const mockReadProvenanceCensus = vi.fn();
+
+vi.mock("@/lib/fiche/provenanceCensus", () => ({
+  readProvenanceCensus: (...args: unknown[]) =>
+    mockReadProvenanceCensus(...args),
+}));
+
 // PageLayout passthrough
 vi.mock("@/components/layout/PageLayout", () => ({
   PageLayout: ({
@@ -44,15 +53,18 @@ vi.mock("@/components/language/LanguageDetailViewV2", () => ({
   LanguageDetailViewV2: ({
     data,
     hasSourceFlag,
+    provenance,
   }: {
     data: { id: string; name: string };
     hasSourceFlag?: boolean;
+    provenance?: { assertionCount: number } | null;
   }) => (
     <div
       data-testid="language-detail-live"
       data-language-id={data?.id}
       data-language-name={data?.name}
       data-source-flag={hasSourceFlag}
+      data-assertion-count={provenance?.assertionCount}
     >
       Dossier AFRIK
     </div>
@@ -89,6 +101,7 @@ describe("/[lang]/atlas/langues/[slug] page", () => {
   beforeEach(() => {
     vi.clearAllMocks();
     mockGetActiveSourceFlags.mockResolvedValue([]);
+    mockReadProvenanceCensus.mockResolvedValue(null);
   });
 
   // @req REQ-136
@@ -103,6 +116,37 @@ describe("/[lang]/atlas/langues/[slug] page", () => {
     const record = screen.getByTestId("language-detail-live");
     expect(record).toHaveAttribute("data-language-id", "yor");
     expect(record).toHaveAttribute("data-language-name", "Yoruba");
+  });
+
+  // The language fiche rendered no provenance apparatus at all before this:
+  // the census is read by the route because the parchment must stay
+  // synchronous, so the hand-off is what has to be held.
+  // @req REQ-084
+  it("hands the language fiche the census its provenance banner states", async () => {
+    mockGetLanguageById.mockResolvedValue(YORUBA);
+    mockReadProvenanceCensus.mockResolvedValue({
+      entityType: "language",
+      entityId: "yor",
+      assertionCount: 7,
+      standings: {
+        official: 3,
+        referenced: 2,
+        unverified: 1,
+        needs_review: 1,
+      },
+      lastHumanAuditAt: null,
+    });
+
+    const ui = await callPage("yor");
+    const { render } = await import("@testing-library/react");
+    // This file renders into one shared document, so the assertion reads its
+    // own container rather than `screen`, which would find the earlier renders.
+    const { container } = render(ui as React.ReactElement);
+
+    expect(mockReadProvenanceCensus).toHaveBeenCalledWith("language", "yor");
+    expect(
+      container.querySelector('[data-testid="language-detail-live"]')
+    ).toHaveAttribute("data-assertion-count", "7");
   });
 
   // @req REQ-142

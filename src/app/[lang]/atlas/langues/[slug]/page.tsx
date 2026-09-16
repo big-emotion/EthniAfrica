@@ -13,6 +13,7 @@ import { languageOnwardGroups } from "@/lib/fiche/onwardGroups";
 import { FicheHeroHead } from "@/components/fiche/FicheHeroHead";
 import { LanguageFicheTitle } from "@/components/language/LanguageFicheTitle";
 import { LanguageDetailViewV2 } from "@/components/language/LanguageDetailViewV2";
+import { readProvenanceCensus } from "@/lib/fiche/provenanceCensus";
 import { getLanguageById } from "@/api/v2/services/languageService";
 import { transformLanguageData } from "@/lib/languageDataTransformer";
 import { getActiveSourceFlags } from "@/lib/supabase/queries/afrik/flags";
@@ -69,9 +70,10 @@ export default async function LanguesSlugPage({
     notFound();
   }
 
-  const [language, sourceFlags] = await Promise.all([
+  const [language, sourceFlags, provenance] = await Promise.all([
     getLanguageById(parsed.slug, lang as Language),
     getActiveSourceFlags("language", parsed.slug),
+    readProvenanceCensus("language", parsed.slug),
   ]);
   if (!language) {
     notFound();
@@ -105,6 +107,7 @@ export default async function LanguesSlugPage({
             language={lang as Language}
             data={data}
             hasSourceFlag={sourceFlags.length > 0}
+            provenance={provenance}
             onward={
               <FicheOnward
                 from="language"

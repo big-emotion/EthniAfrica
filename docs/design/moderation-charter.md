@@ -237,18 +237,69 @@ The register at `/fr/signalements` is public at every state, including `open`.
 Publishing only resolved reports would let the atlas choose which criticism
 exists.
 
-| State          | Shown publicly                       | Moderator note |
-| -------------- | ------------------------------------ | -------------- |
-| `open`         | the report, its target, its date     | none yet       |
-| `under_review` | same, marked as being examined       | optional       |
-| `accepted`     | same, marked accepted                | **required**   |
-| `rejected`     | same, marked rejected                | **required**   |
-| `duplicate`    | same, pointing at the original       | **required**   |
-| `withdrawn`    | the fact of withdrawal, not the text | none           |
+### Two axes, never one label
 
-**A terminal decision carries its reason.** Accepting or rejecting in silence
-tells the reader their report was read and nothing more. The note is what makes
-the register a conversation rather than a bin.
+**A disposition is an opinion. A remediation is a record. One label cannot be
+both, and the attempt lies.**
+
+Flag `00EZK83QDV` — Western Sahara drawn inside Morocco — was accepted on
+2026-09-16 at 08:02 UTC. Its public page read « acceptée · page mise à jour »
+from that minute on. The map fix was merged into the integration branch and
+deployed nowhere; the page the reader was told had been updated was unchanged
+in production. The label was hard-coded per status, so **accepting a report
+always asserted a correction**, whoever had or had not published one.
+
+So the public page carries two independent axes:
+
+- **Disposition** — `flags.status`. What the atlas thinks of the remark. Its
+  labels name no part of the corpus: `accepted` reads « Acceptée » and stops
+  there. Any status label carrying corpus vocabulary is a defect, not a
+  wording preference.
+- **Remediation** — `flags.remediation_state` (migration `092`). What changed
+  in the corpus. It is written by the publication of a correction and **never
+  by a moderator's click**; Postgres refuses `published` without
+  `remediation_published_at`, so no application path can declare a correction
+  done.
+
+| State          | Disposition shown                    | Remediation shown           | Moderator note |
+| -------------- | ------------------------------------ | --------------------------- | -------------- |
+| `open`         | the report, its target, its date     | none — nothing decided yet  | none yet       |
+| `under_review` | same, marked as being examined       | none — nothing decided yet  | optional       |
+| `accepted`     | same, marked accepted                | `not_started` → `published` | **required**   |
+| `rejected`     | same, marked rejected                | nothing at all              | **required**   |
+| `duplicate`    | same, pointing at the original       | nothing at all              | **required**   |
+| `withdrawn`    | the fact of withdrawal, not the text | nothing at all              | none           |
+
+On a report that was not accepted the remediation axis prints **nothing**. The
+absence is itself the information — nothing was corrected because nothing was
+agreed — and « sans objet » would be the workshop's bookkeeping on the reader's
+page.
+
+**Shape carries the distinction before a word is read.** The disposition wears
+the pill (`--afh-radius-full`): one value among several, the shape of an
+opinion that could have been another. The remediation wears `--afh-radius-0`,
+the sharp corner the actions charter (§6) reserves for the source apparatus — a
+published correction is a version banner, and the reader learns to tell what
+the atlas thinks from what the atlas has done by looking, not by parsing.
+
+`remediation_summary` is published to the reader verbatim. It is therefore
+subject to the reader-facing register like `gaps[].reason` and
+`sources[].notes`: no repository path, no field path, no raw corpus identifier,
+none of the pipeline's own vocabulary.
+
+**A terminal decision carries its reason, labelled and signed.** Accepting or
+rejecting in silence tells the reader their report was read and nothing more.
+The note is what makes the register a conversation rather than a bin — and the
+page already quotes the reporter, so an unlabelled second quote leaves the
+reader guessing which one is the atlas speaking. The block is headed « Réponse
+de la modération » and signed « Modération EthniAfrica · {date} ».
+
+The note used to be withheld on exactly the state that most needs it: the
+component rendered it for `rejected` and `duplicate` only, so on an accepted
+report the moderator's answer was fetched, serialised, shipped to the browser
+and never painted. The table above had required it since it was written.
+
+Held by `src/components/flags/__tests__/moderationRemediationCharter.test.tsx`.
 
 The report's own text is published as written, under the contributor's name when
 one is attributed and as _anonyme_ otherwise. A report is not a signed
@@ -285,10 +336,17 @@ as belonging to someone who never reported anything, because it may.
 
 Named here so the gaps are visible rather than discovered:
 
-- **Revisions.** Accepting a report should produce a correction to the corpus.
-  The `revision_drafts` table and `RevisionDrawer` exist and are wired to
-  nothing. Until that loop closes, `accepted` means "the atlas agrees", not "the
-  atlas has fixed it", and the note must say which.
+- **Revisions — half settled.** Accepting a report should produce a correction
+  to the corpus. `accepted` means "the atlas agrees" and not "the atlas has
+  fixed it", and §5 now says so on the page instead of leaving it to a note:
+  the remediation axis states the corpus's own state, and a report the atlas
+  agreed with sits visibly at « Correction non encore publiée » until a
+  correction is published. What is still open is the **producing** half. The
+  `revision_drafts` table and `RevisionDrawer` are still wired to nothing;
+  `flags.revision_draft_id` is the column that will link them, and until a
+  publication path writes it, `remediation_state` is set by hand and
+  `remediation_published_at` is what proves it. The reader is no longer told a
+  correction happened — but nothing yet makes one happen.
 - **Rate limiting.** Anonymous reporting makes it a prerequisite rather than a
   refinement.
 - **The three role models.** `user_roles`, `contributor_profiles.moderator_role`

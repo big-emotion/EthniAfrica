@@ -153,6 +153,11 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
         // ETNI-21: Africa History radii (additive).
+        // Square corners are a design decision on this scale — source
+        // apparatus takes them against the content panels' 14 px — so the
+        // token has a utility rather than sending callers to `rounded-none`,
+        // which leaves the scale to say the same thing.
+        "afh-0": "var(--afh-radius-0)",
         "afh-sm": "var(--afh-radius-sm)",
         "afh-md": "var(--afh-radius-md)",
         "afh-base": "var(--afh-radius-base)",

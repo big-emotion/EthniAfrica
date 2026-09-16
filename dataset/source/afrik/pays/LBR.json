@@ -3,17 +3,17 @@
   "nameFr": "Libéria",
   "nameEn": "Liberia",
   "nameOfficial": "République du Libéria (Republic of Liberia)",
-  "summary": "Le Libéria tire son nom du latin « liber », libre : il fut fondé à partir de 1822 par l'American Colonization Society pour y installer des Afro-Américains affranchis. Le territoire était déjà celui des chefferies kpelle, bassa, grebo et gio. Sa capitale, Monrovia, porte le nom d'un président des États-Unis.",
-  "etymology": "Le nom \"Libéria\" vient du latin \"liber\" (libre), en référence à la fondation du pays comme colonie pour les esclaves affranchis des États-Unis. Le nom a été donné par l'American Colonization Society (Société américaine de colonisation) qui a fondé la colonie en 1822.",
-  "nameOriginActor": "Le nom \"Libéria\" a été donné par l'American Colonization Society lors de la fondation de la colonie en 1822. Le nom signifie \"terre de la liberté\" en latin, en référence à la libération des esclaves afro-américains. Le nom a été officialisé à l'indépendance en 1847.",
+  "summary": "Le Libéria porte un nom formé sur le latin « liber », libre, attaché à la colonie que l'American Colonization Society, organisation privée américaine, fonde à partir de 1822 pour y installer des Afro-Américains affranchis ; qui l'a employé le premier n'est pas établi. Le territoire était déjà celui des chefferies kpelle, bassa, grebo, gio et de leurs voisines, et le cap où s'élève Monrovia s'appelait Ducor. La capitale porte le nom d'un président des États-Unis.",
+  "etymology": "Le nom « Libéria » est formé sur le latin « liber », libre, en référence à l'installation d'Afro-Américains affranchis sur cette côte à partir de 1822. Qui l'a employé le premier n'est pas établi. La version la plus répandue attribue le nom au juriste américain Robert Goodloe Harper, membre de l'American Colonization Society, qui l'aurait proposé à l'assemblée annuelle de février 1824 ; les archives d'État du Maryland, qui retracent sa carrière, lui rattachent la ville de Harper mais pas le nom du pays. Une étude publiée en 2026 relève des emplois du mot antérieurs à cette date, dès 1822, et conclut qu'aucun auteur identifié ne convient. Avant ce nom, le cap où fut bâtie Monrovia s'appelait Ducor, du nom que lui donnaient les Dei et les Bassa.",
+  "nameOriginActor": "L'American Colonization Society, organisation privée américaine fondée en 1816, est à l'origine de l'établissement et porte le nom dans ses publications. La personne qui a formé le mot n'est pas identifiée : l'attribution courante à Robert Goodloe Harper, pour l'assemblée de février 1824, est contredite par des emplois relevés dès 1822. Le nom devient celui d'un État souverain à la déclaration d'indépendance du 26 juillet 1847. La capitale, Monrovia, porte le nom de James Monroe, alors président des États-Unis.",
   "content": {
     "historicalNames": {
       "formerNames": ["Colonie de l'American Colonization Society (1822-1847)"],
       "antiquity": "Le territoire actuel du Libéria était peuplé de diverses sociétés sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs territoires.",
       "middleAges": "Migrations de peuples mandé, krou et atlantiques vers la région. Développement de chefferies et royaumes locaux. Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Mosaïque de chefferies et royaumes autonomes : chefferies Kpelle, Bassa, Grebo, Gio, Mano, Krahn, Gola, Kru, Klao, Mandingo, et autres peuples autochtones. Les Européens utilisaient des termes génériques pour désigner la région (Côte des Grains, Côte du Poivre).",
-      "colonization": "1822-1847 : Colonie de l'American Colonization Society (ACS). Les Américains ont fondé la colonie du Libéria en 1822 pour y installer des esclaves affranchis des États-Unis. Le territoire était administré par l'ACS jusqu'à l'indépendance en 1847.",
-      "contemporary": "1847 : Indépendance du Libéria (26 juillet 1847), proclamation de la République du Libéria. Le Libéria est le premier pays africain à avoir proclamé son indépendance. Le nom \"Libéria\" est officialisé."
+      "precolonial": "Mosaïque de chefferies et de royaumes autonomes : chefferies kpelle, bassa, grebo, gio, mano, krahn, gola, kru, mandingue, et autres peuples autochtones. Le cap où s'élève aujourd'hui Monrovia portait le nom de Ducor. Les Européens désignaient la région par sa marchandise, la maniguette ou poivre de Guinée : la Côte des Graines.",
+      "colonization": "1822-1847 : colonie de l'American Colonization Society, organisation privée américaine qui y installe des Afro-Américains affranchis et administre le territoire jusqu'à l'indépendance. Le nom du pays apparaît dans cette période, sans qu'on sache qui l'a formé.",
+      "contemporary": "26 juillet 1847 : déclaration d'indépendance et proclamation de la République du Libéria, première république indépendante d'Afrique. Joseph Jenkins Roberts en est le premier président. Le nom « Libéria » devient celui d'un État souverain."
     },
     "kingdoms": [
       {
@@ -178,21 +178,6 @@
         "appellationRemarks": "\"Vai\" est l'auto-appellation. Pas de terme péjoratif connu. Inventeurs de l'écriture Vai, un des rares systèmes d'écriture indigènes d'Afrique."
       },
       {
-        "selfAppellation": "Mandinka / Mandiŋka",
-        "exonyms": [
-          "Mandingo (terme utilisé par les Européens)",
-          "Mandinka (terme alternatif)",
-          "\"Mandingo\" (terme historique",
-          "parfois péjoratif)"
-        ],
-        "peopleId": "PPL_MALINKE",
-        "mainRegion": "Toutes les régions du Libéria",
-        "languages": ["Mandinka (mnk", "ISO 639-3)", "anglais"],
-        "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Mandinka\" ou \"Mandiŋka\" est l'auto-appellation. \"Mandingo\" est un terme historique qui peut avoir une connotation péjorative dans certains contextes et doit être évité.",
-        "name": "- Auto-appellation"
-      },
-      {
         "name": "Loma",
         "selfAppellation": "Loma",
         "exonyms": ["Loma (terme utilisé par les Européens)"],
@@ -338,161 +323,202 @@
     "historicalFacts": {
       "ancientPeriods": "Peuplement initial par les peuples mandé, krou et atlantiques. Migrations vers la région. Développement de chefferies locales.",
       "middleAges": "Migrations continues. Développement de structures politiques locales. Contacts avec les peuples voisins.",
-      "precolonial": "Consolidation des chefferies Kpelle, Bassa, Grebo, Gio, Mano, Kru, Vai, Gola, Loma, Kissi, Mandingo, Mende, Dei. Les Vai développent un des rares systèmes d'écriture indigènes (l'écriture Vai). Les Kru, connus comme marins, résistent fortement aux Européens. Commerce régional et côtier. Contacts avec les Européens (Portugais, Britanniques, Américains). Commerce des esclaves le long de la côte. Les Portugais appellent la zone \"Grain Coast\" (Côte du Poivre) pour le commerce de malaguetta.",
-      "colonization": "1822 : Fondation de la colonie du Libéria par l'American Colonization Society (ACS). Période coloniale américaine (1822-1847), installation d'esclaves affranchis des États-Unis, développement de l'administration coloniale, résistance des peuples autochtones. Développement du mouvement indépendantiste.",
-      "independenceStruggle": "1840s : Mouvement pour l'indépendance mené par les dirigeants américano-libériens. 1847 : Indépendance du Libéria (26 juillet 1847), proclamation de la République du Libéria. Le Libéria est le premier pays africain à avoir proclamé son indépendance. Joseph Jenkins Roberts devient premier président.",
+      "precolonial": "Consolidation des chefferies kpelle, bassa, grebo, gio, mano, kru, vai, gola, loma, kissi, mandingue, mende et dei. Les Vai mettent au point l'un des rares systèmes d'écriture conçus en Afrique, l'écriture vai. Les Kru, connus comme marins, résistent fortement aux Européens. Commerce régional et côtier, puis contacts européens et traite le long de la côte. Les Européens désignent la région par sa marchandise, la maniguette ou poivre de Guinée : la Côte des Graines.",
+      "colonization": "1822 : fondation de la colonie par l'American Colonization Society, organisation privée américaine créée en 1816. Installation d'Afro-Américains affranchis, mise en place d'une administration coloniale, résistance des peuples autochtones, puis montée d'un mouvement indépendantiste.",
+      "independenceStruggle": "Années 1840 : mouvement pour l'indépendance mené par les dirigeants américano-libériens. 26 juillet 1847 : indépendance du Libéria et proclamation de la République, première république indépendante d'Afrique. Joseph Jenkins Roberts devient premier président.",
       "postIndependence": "1847-1980 : Domination politique des Américano-Libériens, présidence de plusieurs présidents américano-libériens. Les Américano-Libériens ont dominé l'État pendant plus d'un siècle. 1980 : Coup d'État, présidence de Samuel Doe (1980-1990), fin de la domination américano-libérienne. 1989-2003 : Guerres civiles libériennes, conflits ethniques, instabilité politique. 2003-présent : Transition démocratique, élection d'Ellen Johnson Sirleaf (2006-2018, première femme présidente d'Afrique), puis George Weah (2018-2024). Défis : pauvreté, reconstruction post-conflit, développement économique, réconciliation nationale. Le Libéria est l'un des pays les plus pauvres d'Afrique. La société est marquée par une dualité historique entre autochtones et descendants d'esclaves affranchis."
     },
     "sources": [
       {
-        "title": "SIL Ethnologue – Languages of Liberia",
-        "url": null,
-        "tier": "needs_review"
-      },
-      {
-        "title": "CIA World Factbook – Liberia",
-        "url": null,
-        "tier": "needs_review"
-      },
-      {
-        "title": "UNFPA – World Population Dashboard — Libéria",
+        "title": "UNFPA – World Population Dashboard, Libéria",
         "url": "https://www.unfpa.org/data/world-population/LR",
-        "tier": "official"
-      },
-      {
-        "title": "Recensements libériens",
-        "url": null,
-        "tier": "needs_review"
-      },
-      {
-        "title": "Études anthropologiques sur les peuples du Libéria",
-        "url": null,
-        "tier": "needs_review"
-      },
-      {
-        "title": "Études historiques sur la fondation du Libéria et l'American Colonization Society",
-        "url": null,
-        "tier": "needs_review"
-      },
-      {
-        "title": "CIA World Factbook – Liberia (ethnic groups, 2008 census)",
-        "url": null,
-        "tier": "needs_review"
+        "tier": "official",
+        "notes": "Fonds des Nations unies pour la population. Population totale retenue pour l'année de référence 2025."
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "notes": "Division de statistique des Nations unies. Code pays et forme française du nom."
+      },
+      {
+        "title": "Republic of Liberia, 2008 Population and Housing Census – Highlights",
+        "url": "https://www.paris21.org/sites/default/files/LIBERIA_census.pdf",
+        "tier": "official",
+        "notes": "Institut libérien de statistique et de services d'information géographique, avec PARIS21. Dénombrement du 21 au 30 mars 2008 : 3 476 608 habitants, répartition par comté et par ville."
+      },
+      {
+        "title": "Banque mondiale – catalogue de microdonnées, recensement libérien de 2008",
+        "url": "https://microdata.worldbank.org/index.php/catalog/2098",
+        "tier": "official",
+        "notes": "Notice documentaire du recensement de 2008. Elle atteste que l'appartenance ethnique et la langue figuraient parmi les variables collectées."
+      },
+      {
+        "title": "CIA World Factbook – Liberia, édition archivée du 26 décembre 2025",
+        "url": "https://web.archive.org/web/20251226162048/https://www.cia.gov/the-world-factbook/countries/liberia/",
+        "tier": "official",
+        "notes": "Instantané pris avant l'arrêt de la publication, le 4 février 2026. Origine de la répartition par peuple retenue ici, que cette édition rapportait du recensement libérien de 2008."
+      },
+      {
+        "title": "SIL Ethnologue – Languages of Liberia",
+        "url": "https://www.ethnologue.com/country/LR/",
+        "tier": "official",
+        "notes": "Summer Institute of Linguistics. Inventaire des langues du Libéria et codes ISO 639-3."
+      },
+      {
+        "title": "Glottolog – langues du Libéria",
+        "url": "https://glottolog.org/glottolog/language.map.html?country=LR",
+        "tier": "official",
+        "notes": "Institut Max-Planck d'anthropologie évolutionniste. Rattachement des langues du pays à leurs familles."
+      },
+      {
+        "title": "Fred P. M. van der Kraaij, Liberia in the 19th Century: From American Colony to African Republic",
+        "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
+        "tier": "referenced",
+        "notes": "African Studies Centre Leiden, 2026, ISBN 9789054482093, consultable en ligne. Relève des emplois du nom « Liberia » antérieurs à l'attribution couramment retenue de 1824."
+      },
+      {
+        "title": "African Studies Centre Leiden – présentation de l'ouvrage de Fred P. M. van der Kraaij",
+        "url": "https://ascleiden.nl/news/liberia-19th-century-american-colony-african-republic",
+        "tier": "referenced",
+        "notes": "Notice de l'éditeur, 20 juillet 2026."
+      },
+      {
+        "title": "Maryland State Archives – notice biographique de Robert Goodloe Harper",
+        "url": "https://msa.maryland.gov/megafile/msa/speccol/sc3500/sc3520/002000/002031/html/02031bio.html",
+        "tier": "official",
+        "notes": "Archives d'État du Maryland. Carrière de Robert Goodloe Harper (1765-1825) ; la notice rattache à son nom la ville de Harper, et non le nom du pays."
+      },
+      {
+        "title": "Transcription en ligne du contrat de Ducor, 15 décembre 1821",
+        "url": "https://liberianhistory101.blogspot.com/2011/10/ducor-contract-primary-document.html",
+        "tier": "unverified",
+        "notes": "Transcription de l'acte de cession du cap Mesurado, où le lieu est nommé Ducor avant la fondation de Monrovia. Aucune édition imprimée n'a été consultée."
       }
     ],
     "demographics": {
       "totalPopulation": 5700000,
       "referenceYear": 2025,
-      "source": "UNFPA – World Population Dashboard",
+      "source": "UNFPA – World Population Dashboard (population totale 2025) ; recensement national libérien de 2008 (répartition par peuple)",
       "peoples": [
         {
           "name": "Kpelle",
           "percentageInCountry": 20.3,
           "peopleId": "PPL_KPELLE",
           "region": "Intérieur du Libéria",
-          "languageFamily": "FLG_MANDE"
+          "languageFamily": "FLG_MANDE",
+          "referenceYear": 2008
         },
         {
           "name": "Bassa",
           "percentageInCountry": 13.4,
           "peopleId": "PPL_BASSA",
           "region": "Côte libérienne (centre et sud)",
-          "languageFamily": "FLG_KROU"
+          "languageFamily": "FLG_KROU",
+          "referenceYear": 2008
         },
         {
           "name": "Grebo",
           "percentageInCountry": 10,
           "peopleId": "PPL_GREBO",
           "region": "Côte sud-est",
-          "languageFamily": "FLG_KROU"
+          "languageFamily": "FLG_KROU",
+          "referenceYear": 2008
         },
         {
           "name": "Gio / Dan",
           "percentageInCountry": 8,
           "peopleId": "PPL_GIO",
           "region": "Nord du Libéria",
-          "languageFamily": "FLG_MANDE"
+          "languageFamily": "FLG_MANDE",
+          "referenceYear": 2008
         },
         {
           "name": "Mano",
           "percentageInCountry": 7.9,
           "peopleId": "PPL_MANO",
           "region": "Nord du Libéria",
-          "languageFamily": "FLG_MANDE"
+          "languageFamily": "FLG_MANDE",
+          "referenceYear": 2008
         },
         {
           "name": "Kru",
           "percentageInCountry": 6,
           "peopleId": "PPL_KRU",
           "region": "Côte du Libéria",
-          "languageFamily": "FLG_KROU"
+          "languageFamily": "FLG_KROU",
+          "referenceYear": 2008
         },
         {
           "name": "Vai",
           "percentageInCountry": 4,
           "peopleId": "PPL_VAI",
           "region": "Côte ouest du Libéria",
-          "languageFamily": "FLG_MANDE"
+          "languageFamily": "FLG_MANDE",
+          "referenceYear": 2008
         },
         {
           "name": "Gola",
           "percentageInCountry": 4.4,
           "peopleId": "PPL_GOLA",
           "region": "Ouest du Libéria",
-          "languageFamily": "FLG_ATLANTIQUE"
+          "languageFamily": "FLG_ATLANTIQUE",
+          "referenceYear": 2008
         },
         {
           "name": "Loma",
           "percentageInCountry": 5.1,
           "peopleId": "PPL_TOMA_LOMA",
           "region": "Nord du Libéria",
-          "languageFamily": "FLG_MANDE"
+          "languageFamily": "FLG_MANDE",
+          "referenceYear": 2008
         },
         {
           "name": "Kissi",
           "percentageInCountry": 4.8,
           "peopleId": "PPL_KISSI",
           "region": "Nord du Libéria",
-          "languageFamily": "FLG_ATLANTIQUE"
+          "languageFamily": "FLG_ATLANTIQUE",
+          "referenceYear": 2008
         },
         {
           "name": "Mandingo / Mandinka",
           "percentageInCountry": 3.2,
           "peopleId": "PPL_MALINKE",
           "region": "Toutes les régions du Libéria",
-          "languageFamily": "FLG_MANDE"
+          "languageFamily": "FLG_MANDE",
+          "referenceYear": 2008
         },
         {
           "name": "Dei",
           "percentageInCountry": 0.3,
           "peopleId": "PPL_DEI",
           "region": "Côte du Libéria",
-          "languageFamily": "FLG_ATLANTIQUE"
+          "languageFamily": "FLG_ATLANTIQUE",
+          "referenceYear": 2008
         },
         {
           "name": "Mende",
           "percentageInCountry": 1.3,
           "peopleId": "PPL_MENDE",
           "region": "Diverses régions du Libéria",
-          "languageFamily": "FLG_MANDE"
+          "languageFamily": "FLG_MANDE",
+          "referenceYear": 2008
         },
         {
           "name": "Américano-Libériens",
           "percentageInCountry": 2.5,
           "peopleId": "PPL_AMERICANO_LIBERIENS",
-          "region": ""
+          "region": "",
+          "referenceYear": 2008
         },
         {
           "name": "Autres groupes ethniques",
           "peopleId": null,
           "region": "Divers",
           "languageFamily": null,
-          "percentageInCountry": 8.8
+          "percentageInCountry": 8.8,
+          "referenceYear": 2008
         }
       ]
     }

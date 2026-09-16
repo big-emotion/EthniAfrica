@@ -23,6 +23,7 @@ import { hubsCopy } from "@/lib/i18n/copy/hubs";
 import { languagesCopy } from "@/lib/i18n/copy/languages";
 import { languageFicheCopy } from "@/lib/i18n/copy/languageFiche";
 import { migrationsCopy } from "@/lib/i18n/copy/migrations";
+import { moderationConsoleCopy } from "@/lib/i18n/copy/moderationConsole";
 import { namesCopy } from "@/lib/i18n/copy/names";
 import { patronymesCopy } from "@/lib/i18n/copy/patronymes";
 import { peopleCopy } from "@/lib/i18n/copy/people";
@@ -31,6 +32,7 @@ import { publicFlagsCopy } from "@/lib/i18n/copy/publicFlags";
 import { quizCopy } from "@/lib/i18n/copy/quiz";
 import { reportsCopy } from "@/lib/i18n/copy/reports";
 import { serverCopy } from "@/lib/i18n/copy/server";
+import { provenanceCopy } from "@/lib/i18n/copy/provenance";
 import { sourceTransparencyCopy } from "@/lib/i18n/copy/sourceTransparency";
 import { sitemapPageCopy } from "@/lib/i18n/copy/sitemapPage";
 import { systemCopy } from "@/lib/i18n/copy/system";
@@ -75,11 +77,13 @@ const en = {
   languages: languagesCopy.en,
   patronymes: patronymesCopy.en,
   migrations: migrationsCopy.en,
+  moderationConsole: moderationConsoleCopy.en,
   colonization: colonizationCopy.en,
   discoveries: discoveriesCopy.en,
   quiz: quizCopy.en,
   reports: reportsCopy.en,
   sourceTransparency: sourceTransparencyCopy.en,
+  provenance: provenanceCopy.en,
   fieldProvenance: fieldProvenanceCopy.en,
   family: familyCopy.en,
   fiche: ficheCopy.en,
@@ -121,11 +125,13 @@ const fr: UiDictionary = {
   languages: languagesCopy.fr,
   patronymes: patronymesCopy.fr,
   migrations: migrationsCopy.fr,
+  moderationConsole: moderationConsoleCopy.fr,
   colonization: colonizationCopy.fr,
   discoveries: discoveriesCopy.fr,
   quiz: quizCopy.fr,
   reports: reportsCopy.fr,
   sourceTransparency: sourceTransparencyCopy.fr,
+  provenance: provenanceCopy.fr,
   fieldProvenance: fieldProvenanceCopy.fr,
   family: familyCopy.fr,
   fiche: ficheCopy.fr,

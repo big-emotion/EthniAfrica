@@ -13,14 +13,51 @@ const stylesheet = readFileSync(
   "utf8"
 );
 
+const SELECTOR_SPECIALS = /[.[\]="^$*+?()|{}\\:>]/g;
+
 /** The body of the first top-level rule for exactly this selector. */
 function ruleBody(selector: string): string {
-  const escaped = selector.replace(/[.[\]="^$*+?()|{}\\:>]/g, "\\$&");
+  const escaped = selector.replace(SELECTOR_SPECIALS, "\\$&");
   const match = stylesheet.match(
     new RegExp(`(?:^|\\n)${escaped}\\s*\\{([^}]*)\\}`)
   );
   if (!match) throw new Error(`No top-level rule for ${selector}`);
   return match[1];
+}
+
+/** Every `@container (min-width: 760px)` body, brace-matched. */
+function wideContainerBodies(): string[] {
+  const opener = /@container \(min-width: 760px\)\s*\{/g;
+  const bodies: string[] = [];
+  while (opener.exec(stylesheet) !== null) {
+    let depth = 1;
+    let cursor = opener.lastIndex;
+    while (depth > 0 && cursor < stylesheet.length) {
+      if (stylesheet[cursor] === "{") depth += 1;
+      else if (stylesheet[cursor] === "}") depth -= 1;
+      cursor += 1;
+    }
+    bodies.push(stylesheet.slice(opener.lastIndex, cursor - 1));
+  }
+  return bodies;
+}
+
+/**
+ * The body of a rule for exactly this selector inside the wide layout. The
+ * sheet opens `@container (min-width: 760px)` in more than one place, so the
+ * rule is looked for in all of them — reading only the first would report a
+ * live declaration as missing.
+ */
+function wideRuleBody(selector: string): string {
+  const escaped = selector.replace(SELECTOR_SPECIALS, "\\$&");
+  const pattern = new RegExp(`(?:^|\\n)\\s*${escaped}\\s*\\{([^}]*)\\}`);
+  for (const body of wideContainerBodies()) {
+    const match = body.match(pattern);
+    if (match) return match[1];
+  }
+  throw new Error(
+    `No rule for ${selector} inside @container (min-width: 760px)`
+  );
 }
 
 describe("FicheTile charter (REQ-153)", () => {
@@ -262,9 +299,7 @@ describe("FicheTile charter (REQ-153)", () => {
   // @req REQ-153
   it("dresses a tile at 16px inside, 12px apart, clamped to two lines when closed", () => {
     const grid = ruleBody(".afh-tiles");
-    expect(grid).toMatch(
-      /grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/
-    );
+    expect(grid).toMatch(/grid-template-columns:\s*minmax\(0,\s*1fr\)/);
     expect(grid).toMatch(/gap:\s*12px/);
 
     const tile = ruleBody(".afh-tile");
@@ -282,5 +317,19 @@ describe("FicheTile charter (REQ-153)", () => {
       /\.afh-tiles\s*>\s*:last-child:nth-child\(odd\)/
     );
     expect(stylesheet).not.toMatch(/\.afh-tile[^{]*\{[^}]*transition/);
+  });
+
+  /**
+   * A tile carries prose, and two columns on a 430px phone left each one
+   * about 140px of measure — 12 to 20 characters a line, against the 45 to 75
+   * a reader is comfortable with. The second column is not deleted, it is
+   * deferred to the same 760px the parchment already changes its padding at.
+   */
+  // @req REQ-153
+  it("gives a tile a full measure on a phone and the second column only when the parchment is wide", () => {
+    expect(ruleBody(".afh-tiles")).not.toMatch(/repeat\(2/);
+    expect(wideRuleBody(".afh-tiles")).toMatch(
+      /grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/
+    );
   });
 });

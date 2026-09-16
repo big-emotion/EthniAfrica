@@ -2534,6 +2534,58 @@ const options: swaggerJsdoc.Options = {
             },
           },
         },
+        ProvenanceCensus: {
+          type: "object",
+          description:
+            "How many of a fiche's assertions rest on each source standing, each assertion counted once under the standing of its strongest source. Deliberately not a score: an aggregate over chapters of unequal provenance describes none of them, so no field here averages anything. `assertionCount` is always the sum of the four standings; an assertion citing no source is excluded rather than given a bucket.",
+          properties: {
+            entityType: {
+              type: "string",
+              enum: ["people", "country", "language", "language-family"],
+            },
+            entityId: { type: "string", example: "CIV" },
+            assertionCount: { type: "integer", minimum: 0, example: 21 },
+            standings: {
+              type: "object",
+              description:
+                "One count per value of the published source scale. `needs_review` is a transitional marker, not a fourth tier, and it also covers a source row the database left untiered.",
+              properties: {
+                official: { type: "integer", minimum: 0, example: 4 },
+                referenced: { type: "integer", minimum: 0, example: 11 },
+                unverified: { type: "integer", minimum: 0, example: 4 },
+                needs_review: { type: "integer", minimum: 0, example: 2 },
+              },
+              required: [
+                "official",
+                "referenced",
+                "unverified",
+                "needs_review",
+              ],
+            },
+            lastHumanAuditAt: {
+              type: ["string", "null"],
+              format: "date-time",
+            },
+          },
+          required: [
+            "entityType",
+            "entityId",
+            "assertionCount",
+            "standings",
+            "lastHumanAuditAt",
+          ],
+        },
+        ProvenanceCensusResponse: {
+          type: "object",
+          properties: {
+            data: { $ref: "#/components/schemas/ProvenanceCensus" },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+            },
+          },
+        },
         // -----------------------------------------------------------------
         // Epic 13 — Colonization & Resistances: fragmentation (FR85)
         // -----------------------------------------------------------------
@@ -3675,6 +3727,38 @@ const options: swaggerJsdoc.Options = {
               format: "date-time",
               example: null,
             },
+            moderator_notes: {
+              type: ["string", "null"],
+              description:
+                "The moderator's answer on a decided report. Required by the moderation charter on accepted, rejected and duplicate.",
+              example: null,
+            },
+            remediation_state: {
+              type: ["string", "null"],
+              enum: [
+                "not_started",
+                "in_progress",
+                "published",
+                "not_applicable",
+                null,
+              ],
+              description:
+                "What changed in the corpus, separately from what the atlas thought of the report. Written by the publication of a correction, never by a moderator decision. NULL while the report is open or under review.",
+              example: null,
+            },
+            remediation_published_at: {
+              type: ["string", "null"],
+              format: "date-time",
+              description:
+                "When the correction reached the published corpus. Never null when remediation_state is published.",
+              example: null,
+            },
+            remediation_summary: {
+              type: ["string", "null"],
+              description:
+                "One reader-facing sentence naming what changed, shown verbatim on the public report page.",
+              example: null,
+            },
           },
           required: [
             "id",
@@ -3695,6 +3779,10 @@ const options: swaggerJsdoc.Options = {
             "created_at",
             "updated_at",
             "resolved_at",
+            "moderator_notes",
+            "remediation_state",
+            "remediation_published_at",
+            "remediation_summary",
           ],
           example: {
             id: "9c81ca0d-ae45-4f08-8f53-2ac0a9673abd",
@@ -3718,6 +3806,10 @@ const options: swaggerJsdoc.Options = {
             created_at: "2026-07-24T10:15:30.000Z",
             updated_at: "2026-07-24T11:00:00.000Z",
             resolved_at: null,
+            moderator_notes: null,
+            remediation_state: null,
+            remediation_published_at: null,
+            remediation_summary: null,
           },
         },
         FlagCursorPaginationMeta: {
@@ -3787,6 +3879,72 @@ const options: swaggerJsdoc.Options = {
           type: "object",
           properties: {
             data: { $ref: "#/components/schemas/PublicFlag" },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+              maxItems: 0,
+            },
+          },
+          required: ["data", "meta", "errors"],
+        },
+        FlagAuditEntry: {
+          type: "object",
+          description:
+            "One recorded step in a report's life. It names the role that acted and the level it was authorised at, never the person: a register has to establish that a decision was taken and at what level of authorisation, and a public register backed by an internal console has no reason to go further.",
+          properties: {
+            event: {
+              type: "string",
+              enum: [
+                "received",
+                "under_review",
+                "accepted",
+                "rejected",
+                "duplicate",
+                "withdrawn",
+                "revision_linked",
+              ],
+              example: "accepted",
+            },
+            occurredAt: {
+              type: "string",
+              format: "date-time",
+              description:
+                "When the step was recorded. The console renders it in UTC, so a moderation timeline reads the same from every time zone.",
+              example: "2026-09-16T08:02:00.000Z",
+            },
+            actorRole: {
+              type: "string",
+              enum: ["reader", "moderator"],
+              example: "moderator",
+            },
+            authorisationLevel: {
+              type: ["string", "null"],
+              enum: ["admin", null],
+              description:
+                "The level the actor held, or null for a reader. The moderation allowlist is flat, so `admin` is the only level the console grants.",
+              example: "admin",
+            },
+          },
+          required: ["event", "occurredAt", "actorRole", "authorisationLevel"],
+        },
+        FlagAuditTrail: {
+          type: "object",
+          properties: {
+            publicSlug: { type: "string", example: "00EZK83QDV" },
+            entries: {
+              type: "array",
+              description:
+                "Oldest first. The first entry is the report's arrival, credited to a reader.",
+              items: { $ref: "#/components/schemas/FlagAuditEntry" },
+            },
+          },
+          required: ["publicSlug", "entries"],
+        },
+        FlagAuditTrailResponse: {
+          type: "object",
+          properties: {
+            data: { $ref: "#/components/schemas/FlagAuditTrail" },
             meta: { $ref: "#/components/schemas/ApiResponseMeta" },
             errors: {
               type: "array",

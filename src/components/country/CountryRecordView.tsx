@@ -12,6 +12,7 @@ import type { CountryLanguagesFact } from "@/lib/countryLanguagesFact";
 import type { CountrySummaryFigures } from "@/components/fiche/FicheSummaryBrief";
 import type { CountryPatronymes } from "@/api/v2/services/patronymeFicheLinks";
 import type { CountryDetail } from "@/types/afrik-frontend";
+import type { ProvenanceCensus } from "@/api/v2/schemas/confidence";
 import type { Language } from "@/types/shared";
 import { countryCopy } from "@/lib/i18n/copy/country";
 
@@ -43,6 +44,8 @@ export interface CountryRecordViewProps {
    * them.
    */
   familyNamesById?: ReadonlyMap<string, string>;
+  /** The assertion census the head's provenance banner states, or null. */
+  provenance?: ProvenanceCensus | null;
   /** The way out of the fiche, composed by the route and passed straight down. */
   onward?: ReactNode;
   /** Cloudflare Turnstile public site key; without it the flag control is inert. */
@@ -57,6 +60,7 @@ export function CountryRecordView({
   summaryFigures,
   countryLanguages,
   familyNamesById,
+  provenance = null,
   onward,
 }: CountryRecordViewProps) {
   const copy = countryCopy[language];
@@ -76,6 +80,7 @@ export function CountryRecordView({
             : countryLanguages?.provenance
         }
         languages={countryLanguages?.value}
+        provenance={provenance}
         onward={onward}
       >
         {/* After the languages, not beside "Noms à travers l'histoire": that

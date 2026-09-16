@@ -24,6 +24,12 @@ import type { Language } from "@/types/shared";
  * reader already knows from the country, people and family hubs — the same two
  * primitives, so the two surfaces cannot drift apart.
  *
+ * Each row opens into a case file — what is contested, the reader's
+ * counter-source, the recorded audit trail and the remediation state — which
+ * is collapsed by default and reads its own register when it opens. The trail
+ * had been written since migration 022 and displayed nowhere, so a moderator
+ * ruled without seeing what had been ruled before them.
+ *
  * What it deliberately does **not** do is edit the corpus. Deciding on a report
  * says what the atlas thinks of a claim; changing the claim is an editorial act
  * with its own provenance, and it does not happen here. `accepted` means "the
