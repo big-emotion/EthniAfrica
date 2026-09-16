@@ -46,6 +46,7 @@ describe("globe legend and stage read the probe differently", () => {
     countryId: "ZAF",
     rings: [square],
     fillOpacity: 0.22,
+    sovereigntyContested: false,
   };
 
   const renderGlobe = (probedWebglSupport?: boolean) =>

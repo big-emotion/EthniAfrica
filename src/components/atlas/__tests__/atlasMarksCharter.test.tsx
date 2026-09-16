@@ -38,6 +38,7 @@ describe("atlas marks — the stage says a point opens (charter §1)", () => {
     countryId: "ZAF",
     rings: [square],
     fillOpacity: 0.22,
+    sovereigntyContested: false,
   };
 
   // A country fiche as it ships: one outline traced, its countries offered in
