@@ -77,9 +77,51 @@ Chaque critère se note **0, 1 ou 2**, avec la phrase citée qui justifie la not
 | 7   | **Une idée, une boucle fermée.** Une pièce qui ouvre trois sujets n'en fait passer aucun ; une question ouverte à l'accroche trouve sa réponse dans la pièce ou derrière son lien.                                                                                                                                                                                                                                                                                                                                                                   | non      | le nouveau venu |
 | 8   | **La clôture de son type.** La ligne de vision mot pour mot — « Nommer un peuple aussi facilement qu'un pays. » — et le titre et le corps de clôture du type du lot, pris mot pour mot dans la table par type de contenu de §7 ter : un lot sur un pays ne se clôt pas sur « Ce peuple n'a pas été divisé ». Un type absent de la table : 0. Sur une page du site : le propos est atteignable (« Notre propos », la page About).                                                                                                                     | oui      | l'abonné        |
 
+| 9 | **Aucun groupe n'est rendu plus chez lui qu'un autre.** Ni en le disant, ni en le laissant entendre. Nommer les peuples qui sont « entiers », « chez eux », « là depuis toujours », « les premiers » fabrique un dehors pour tous ceux qu'on ne nomme pas. La mesure se publie ; le classement, jamais. Un lot qui hiérarchise l'appartenance, même par omission : 0. | oui | les deux |
+
 Les critères 1 et 7 servent le nouveau venu : il n'a que cette pièce. Le 2 et
 le 8 servent l'abonné : c'est la répétition du même bloc, à la même place, dans
-les mêmes mots, qui fait reconnaître la marque.
+les mêmes mots, qui fait reconnaître la marque. Le 9 sert tout le monde, et il
+sert d'abord le compte.
+
+### Le critère 9, et pourquoi il a fallu une production ratée pour l'écrire
+
+Ajouté le 2026-09-16, sur le carrousel `cote-divoire-le-renversement`, rendu et
+passé en 🟢 avant que l'opérateur ne le rejette. Verdict de l'audit : **passe**,
+huit critères sur huit tenus. La carte 8 disait :
+
+> Trente et un ne vivent qu'ici : les Baoulé, les Bété, les Ébrié sont entiers,
+> chez eux.
+
+Aucun critère de la grille ne s'en émeut. La phrase est vraie, sourcée, le
+peuple est sujet, la clôture est la bonne, aucune phrase refusée n'apparaît.
+**Et elle fabrique une hiérarchie d'appartenance** : si ces trois-là sont
+entiers et chez eux, les autres sont implicitement des invités. Mot de
+l'opérateur : « ça va créer la division de l'attention ».
+
+Le mécanisme, en clair : **sur un sujet ethnique, toute phrase qui distingue un
+sous-ensemble de peuples par leur enracinement est lue comme un classement**,
+quelle que soit l'intention. Le lecteur ne se demande pas si la mesure est
+juste, il se demande de quel côté il est. C'est précisément l'attention que le
+projet ne veut pas capter.
+
+La règle qui en sort, dictée par l'opérateur : **on désescalade, et chaque
+groupe est chez lui.** Une nation d'aujourd'hui rassemble des groupes venus de
+plusieurs horizons — certains installés depuis très longtemps, d'autres arrivés
+plus tard, tous chez eux. Une pièce qui compte peut dire ses chiffres ; elle les
+dit pour tous, ou elle ne les dit pour personne.
+
+Trois formes à refuser, toutes rencontrées dans la même production :
+
+| La phrase                                                       | Ce qu'elle fait entendre                        | La forme qui tient                                                                                                                |
+| --------------------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| « les Baoulé, les Bété, les Ébrié sont entiers, chez eux »      | les autres sont des morceaux, ou des invités    | « Les uns comme les autres sont chez eux. »                                                                                       |
+| « certains sont là depuis très longtemps » suivi de trois noms  | les non-nommés sont arrivés après               | « À l'ouest, l'atlas date plus loin qu'ailleurs. Ailleurs, on date moins bien : ça ne veut pas dire qu'on est arrivé plus tard. » |
+| « 31 sur 70 ne vivent qu'en Côte d'Ivoire » en chiffre d'accent | le chiffre qui compte est celui des vrais d'ici | « 70 peuples vivent en Côte d'Ivoire » — le compte du pays, pas celui d'un sous-groupe                                            |
+
+**Une absence de date n'est jamais une preuve d'arrivée tardive.** Le corpus
+date inégalement, et le dire fait partie du critère : sans cette phrase, le
+silence de l'atlas se lit comme un jugement.
 
 ### Le critère 1, lu par type de contenu
 
