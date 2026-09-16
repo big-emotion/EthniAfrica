@@ -640,6 +640,49 @@ Gated by `axisHubSpreadCharter.test.ts` and, at the route level, by
 `axisHubCharter.test.ts` — which asserts the three pages exist, replacing
 `axisHubRemovalCharter.test.ts`, which asserted that two of them did not.
 
+### 8.7 Two columns on a phone admit only atomic cells
+
+On `/fr/atlas/pays/MAR`, measured 2026-09-16, `.afh-tiles` ran two columns from
+430 px up. Each tile was 172 px wide and carried 16 px of padding on both
+sides, which left **140 px of measure**. « Islam sunnite (école malékite
+majoritaire), soufisme important » — 62 characters — fell on **five lines of
+twelve characters**, against a 45–75 character comfort range and an absolute
+mobile floor of about 35. The chapter had written a sentence; the grid printed
+a column of fragments.
+
+Two further defects arrived with the first, and neither is about the measure:
+
+- **Columns of free height rag the bottom.** Two tiles of unequal content in
+  one row leave the shorter one's card standing empty beside the taller one's
+  fourth line — a white box the reader has to rule out as a missing fact.
+- **Two `details` in one row put their controls at two heights.** Each
+  « + en savoir plus » sits at the foot of its own tile, so a row offers two
+  controls on two baselines and there is no row of controls left to scan. A
+  grid of disclosures that cannot be read across is a list that has paid for a
+  second column.
+
+**The rule.** Two columns on a phone admit only atomic cells. A cell is atomic
+when its content cannot wrap: a number, a proper noun, a date. The moment a
+cell carries prose, the grid linearises.
+
+The corollary settles both of the record's grids at once, so neither is decided
+tile by tile:
+
+- `.afh-tiles` carries prose — a culture field, a folded passage, a language
+  note. It is one column on a phone, and its two columns return at the
+  `@container (min-width: 760px)` the parchment already uses for its chapter
+  padding, which is the width at which a column holds a sentence.
+- `.fiche-summary-brief__counted` carries five numbers and nothing that wraps,
+  so it keeps its two columns on a phone. Linearising it would print five
+  figures down a screen and lose the comparison the block exists to make.
+
+The measure is a **rendered** value — a function of the viewport, the container
+query and the loaded face, none of which exists in a unit test. That is why two
+columns of twelve characters shipped under a green suite, and why the gate is
+`e2e/fiche-tile-measure.spec.ts`: it opens a culture tile at 430 px, measures
+the body against thirty-five characters set in the body's own type, and asserts
+the two columns come back above the container threshold.
+
 ---
 
 ## 9. Imagery
