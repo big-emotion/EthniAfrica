@@ -51,6 +51,25 @@ function buildInQuery(
   return query;
 }
 
+/**
+ * `afrik_patronyme_bearers` narrows by name and then by status, so its fake
+ * has to stay chainable through `eq` where the other joins resolve there.
+ *
+ * It deliberately answers with whatever rows the test hands it, ignoring the
+ * status filter: that is what lets a test prove the projection refuses a
+ * non-publishable bearer on its own, instead of trusting a `where` clause a
+ * unit test cannot observe.
+ */
+function buildNamedBearerQuery(
+  rows: Array<Record<string, unknown>>
+): FakeQuery {
+  const query: FakeQuery = {} as FakeQuery;
+  query.select = vi.fn(() => query);
+  query.eq = vi.fn(() => query);
+  query.in = vi.fn(() => Promise.resolve({ data: rows, error: null }));
+  return query;
+}
+
 const patronymeRow = {
   id: "PAT_KEITA",
   name_system: "clan_name",
@@ -82,6 +101,7 @@ function mockTables({
   countries = [{ id: "MLI", name_fr: "Mali" }],
   patronymePersons = [{ patronyme_id: "PAT_KEITA", person_id: "PER_BEARER_1" }],
   persons = [makeBearerRow(1)],
+  namedBearers = [{ display_name: "Soundiata Keïta", status: "deceased" }],
   alliedPatronymes = [],
 }: {
   patronyme?: Record<string, unknown> | null;
@@ -92,6 +112,7 @@ function mockTables({
   countries?: Array<Record<string, unknown>>;
   patronymePersons?: Array<Record<string, unknown>>;
   persons?: Array<Record<string, unknown>>;
+  namedBearers?: Array<Record<string, unknown>>;
 } = {}) {
   fromMock.mockImplementation((table: string) => {
     if (table === "afrik_patronymes")
@@ -105,6 +126,8 @@ function mockTables({
     if (table === "afrik_patronyme_persons")
       return buildInQuery(patronymePersons);
     if (table === "persons") return buildInQuery(persons);
+    if (table === "afrik_patronyme_bearers")
+      return buildNamedBearerQuery(namedBearers);
     throw new Error(`Unexpected table: ${table}`);
   });
 }
@@ -180,6 +203,45 @@ describe("patronymes service — getPatronymeById", () => {
       "fullName",
       "id",
       "roleCategory",
+    ]);
+  });
+
+  // @req REQ-133
+  it("returns the bearers the corpus can only name, from their own table", async () => {
+    mockTables({
+      namedBearers: [
+        { display_name: "Soundiata Keïta", status: "deceased" },
+        { display_name: "Modibo Keïta", status: "deceased" },
+      ],
+    });
+
+    const result = await getPatronymeById("PAT_KEITA");
+
+    expect(result?.namedBearers).toEqual([
+      { displayName: "Soundiata Keïta", status: "deceased" },
+      { displayName: "Modibo Keïta", status: "deceased" },
+    ]);
+  });
+
+  // A family name is an ethnic marker, so serving a living bearer under one
+  // would publish their ethnic origin — DEC-040, RGPD art. 9.
+  // @req REQ-133
+  it("serves no named bearer the corpus does not record as dead (DEC-040)", async () => {
+    mockTables({
+      namedBearers: [
+        { display_name: "Soundiata Keïta", status: "deceased" },
+        {
+          display_name: "Une personne vivante",
+          status: "living_self_identified",
+        },
+        { display_name: "Des familles de Bamako", status: "aggregated" },
+      ],
+    });
+
+    const result = await getPatronymeById("PAT_KEITA");
+
+    expect(result?.namedBearers).toEqual([
+      { displayName: "Soundiata Keïta", status: "deceased" },
     ]);
   });
 
@@ -354,7 +416,10 @@ describe("patronymes service — getPatronymeById", () => {
       calledTables.filter((t) => t === "afrik_patronyme_persons")
     ).toHaveLength(1);
     expect(calledTables.filter((t) => t === "persons")).toHaveLength(1);
-    expect(calledTables).toHaveLength(7);
+    expect(
+      calledTables.filter((t) => t === "afrik_patronyme_bearers")
+    ).toHaveLength(1);
+    expect(calledTables).toHaveLength(8);
   });
 });
 

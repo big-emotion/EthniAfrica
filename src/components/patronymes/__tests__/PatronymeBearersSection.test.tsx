@@ -13,6 +13,7 @@ const base: PublicPatronyme = {
   associatedPeoples: [],
   associatedCountries: [],
   bearers: [],
+  namedBearers: [],
   alliances: [],
 };
 
@@ -72,19 +73,20 @@ describe("PatronymeBearersSection (AC3, DEC-040, REQ-133)", () => {
     expect(screen.getByRole("status")).toBeInTheDocument();
   });
 
-  // The corpus names its bearers in the dossier (displayName) rather than
-  // through person records, and the fiche said "Donnée manquante" over a
-  // dossier that named Soundiata Keïta.
+  // The corpus names its bearers by displayName rather than through person
+  // records, and the fiche said "Donnée manquante" over a dossier that named
+  // Soundiata Keïta. The API now serves those bearers under `namedBearers`,
+  // already restricted to a publishable status.
   // @req REQ-133
-  it("lists a bearer the dossier names itself when no person record exists", () => {
+  it("lists a bearer the API serves under namedBearers", () => {
     render(
       <PatronymeBearersSection
         language="fr"
         patronyme={{
           ...base,
-          content: {
-            bearers: [{ status: "deceased", displayName: "Soundiata Keïta" }],
-          },
+          namedBearers: [
+            { displayName: "Soundiata Keïta", status: "deceased" },
+          ],
         }}
       />
     );
@@ -93,8 +95,33 @@ describe("PatronymeBearersSection (AC3, DEC-040, REQ-133)", () => {
     expect(screen.queryByRole("status")).not.toBeInTheDocument();
   });
 
+  // DEC-040 / RGPD art. 9: `content` is the dossier served verbatim and holds
+  // bearers of every status, so reading it here published a living person's
+  // ethnic origin. The chapter must see nothing but the filtered field — that
+  // is what makes the guarantee a property of the code rather than of whatever
+  // the corpus happens to contain today.
   // @req REQ-133
-  it("does not print a bearer twice when the record and the dossier both name them", () => {
+  it("ignores bearers written only in the unfiltered content dossier", () => {
+    render(
+      <PatronymeBearersSection
+        language="fr"
+        patronyme={{
+          ...base,
+          content: {
+            bearers: [
+              { status: "living_self_identified", displayName: "Awa Keïta" },
+            ],
+          },
+        }}
+      />
+    );
+
+    expect(screen.queryByText("Awa Keïta")).not.toBeInTheDocument();
+    expect(screen.getByRole("status")).toBeInTheDocument();
+  });
+
+  // @req REQ-133
+  it("does not print a bearer twice when a person record and a named bearer agree", () => {
     render(
       <PatronymeBearersSection
         language="fr"
@@ -107,7 +134,7 @@ describe("PatronymeBearersSection (AC3, DEC-040, REQ-133)", () => {
               roleCategory: "chef d'État",
             },
           ],
-          content: { bearers: [{ displayName: "Modibo Keïta" }] },
+          namedBearers: [{ displayName: "Modibo Keïta", status: "deceased" }],
         }}
       />
     );

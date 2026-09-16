@@ -12,7 +12,12 @@
   "alternateNames": [],
   "spellingAliases": [],
   "familyId": "FLG_MANDE",
-  "peoples": [],
+  "peoples": [
+    {
+      "name": "Bambara",
+      "peopleId": "PPL_BAMBARA"
+    }
+  ],
   "content": {
     "vehicularRole": null,
     "dialects": [

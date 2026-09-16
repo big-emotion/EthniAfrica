@@ -1,7 +1,7 @@
 import type { PublicPatronyme } from "@/api/v2/schemas/patronymes";
 import { FicheSection } from "@/components/fiche/FicheSection";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
-import { readCorpusBearers, readGaps } from "@/lib/patronymes/content";
+import { readGaps } from "@/lib/patronymes/content";
 import { resolveChapter } from "@/lib/fieldProvenance";
 import { getTranslation } from "@/lib/translations";
 import type { Language } from "@/types/shared";
@@ -19,11 +19,19 @@ import type { Language } from "@/types/shared";
  * guarantee enforced when `afrik_patronyme_persons` rows are authored, not
  * something this component can verify at render time.
  *
- * Two lists feed the chapter. The person records the API joins carry a role;
- * the bearers the dossier names itself carry only a name. The corpus has
- * written every one of its 89 bearers the second way and the loader links
- * only the first, so until now the chapter said "Donnée manquante" on the
- * Keïta fiche while the dossier named Soundiata Keïta.
+ * Two lists feed the chapter, and both arrive from the API. The person records
+ * it joins carry a role; the bearers the corpus only names arrive as
+ * `namedBearers`. The corpus has written every one of its 89 bearers the
+ * second way and the loader links only the first, so the chapter used to say
+ * "Donnée manquante" on the Keïta fiche while the dossier named Soundiata
+ * Keïta.
+ *
+ * The named list is deliberately *not* read back out of `patronyme.content`.
+ * That JSONB dossier is passed through verbatim and holds bearers of every
+ * status, so rendering from it published a living person under an ethnic
+ * marker on nothing but the fiche author's care. `namedBearers` is filtered on
+ * `PUBLISHABLE_BEARER_STATUSES` in SQL, in the zod schema and by the type
+ * guard, which makes DEC-040 a guarantee of the code rather than of the data.
  */
 // @req REQ-133
 export function PatronymeBearersSection({
@@ -34,12 +42,12 @@ export function PatronymeBearersSection({
   language: Language;
 }) {
   const t = getTranslation(language).patronymes;
-  const { bearers } = patronyme;
+  const { bearers, namedBearers } = patronyme;
   const namedInRecords = new Set(bearers.map((bearer) => bearer.fullName));
-  const corpusBearers = readCorpusBearers(patronyme.content).filter(
+  const unlistedNamedBearers = namedBearers.filter(
     (bearer) => !namedInRecords.has(bearer.displayName)
   );
-  const documented = bearers.length + corpusBearers.length > 0;
+  const documented = bearers.length + unlistedNamedBearers.length > 0;
 
   // An undocumented chapter is marked the way every other fiche marks one
   // (charter §4, REQ-119), rather than by a sentence of its own: this section
@@ -48,7 +56,7 @@ export function PatronymeBearersSection({
   const chapter = resolveChapter(
     "name",
     "bearers",
-    documented ? [...bearers, ...corpusBearers] : null,
+    documented ? [...bearers, ...unlistedNamedBearers] : null,
     readGaps(patronyme.content)
   );
 
@@ -68,7 +76,7 @@ export function PatronymeBearersSection({
               <span>{bearer.roleCategory || t.roleCategoryFallback}</span>
             </li>
           ))}
-          {corpusBearers.map((bearer) => (
+          {unlistedNamedBearers.map((bearer) => (
             <li key={bearer.displayName}>
               <span>{bearer.displayName}</span>
             </li>

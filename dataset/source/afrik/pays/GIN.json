@@ -27,8 +27,7 @@
         },
         "dominantPeoples": ["Malinké", "autres peuples mandé"],
         "politicalCenters": [
-          "Niani (capitale historique",
-          "aujourd'hui en Guinée)",
+          "Niani, longtemps identifiée comme la capitale, identification réfutée par l'archéologie",
           "autres centres"
         ],
         "historicalRole": "Empire du Mali puissant, centre historique du Mandé, berceau de la culture mandé. La Guinée était au cœur de l'empire du Mali. Développement de l'islam, commerce transsaharien, épopée de Soundiata. Rôle majeur dans la diffusion culturelle mandé."
@@ -279,6 +278,18 @@
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official"
+      },
+      {
+        "title": "Fauvelle-Aymar, François-Xavier (2012) – Niani redux : mise au point sur la ville éponyme de l'empire du Mali, P@lethnology 4",
+        "url": "https://blogs.univ-tlse2.fr/palethnologie/en/2012-10-fauvelle-aymar/",
+        "tier": "referenced",
+        "notes": "Réexamen des fouilles polono-guinéennes menées sur le site entre 1965 et 1973. Accès libre."
+      },
+      {
+        "title": "Collet, Hadrien (2013) – L'introuvable capitale du Mali, Afriques 4",
+        "url": "https://journals.openedition.org/afriques/1098",
+        "tier": "referenced",
+        "notes": "Retrace comment la lecture Niani a été substituée à un tracé consonantique arabe que les manuscrits ne vocalisent pas. Accès libre."
       }
     ],
     "demographics": {
