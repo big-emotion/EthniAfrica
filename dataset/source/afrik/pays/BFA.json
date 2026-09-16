@@ -273,7 +273,7 @@
       "regionalRelations": "Relations historiques avec le Mali (commerce, peuples transfrontaliers), la Côte d'Ivoire (commerce, migrations), le Ghana (Dagara, commerce), le Niger (Touaregs, commerce transsaharien). Intégration dans la CEDEAO (Communauté économique des États de l'Afrique de l'Ouest) et l'UEMOA (Union économique et monétaire ouest-africaine). Relations commerciales et culturelles transfrontalières."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement initial par diverses sociétés sans nom unifié. Développement de chefferies et royaumes locaux. Arrivée et expansion des peuples gur et mandé dans la région.",
+      "ancientPeriods": "Peuplement initial par diverses sociétés sans nom unifié. La production du fer est attestée très tôt sur ce territoire : à Douroula, une datation remonte au VIIIe siècle avant notre ère, le témoin le plus ancien du développement de la production du fer identifié à ce jour au Burkina Faso. Vers 500 avant notre ère, cette technologie est déjà largement diffusée dans toute la région. Quatre autres sites — Tiwêga, Yamané, Kindibo et Békuy — documentent l'intensification de la production au cours du second millénaire de notre ère, soit une continuité de production sur plus de 2700 ans ; des traditions de forgerons y vivent encore aujourd'hui. Développement de chefferies et royaumes locaux. Arrivée et expansion des peuples gur et mandé dans la région.",
       "middleAges": "Formation et développement des royaumes mossi (XIe siècle), légende fondatrice de Yennenga et Naaba Wedraogo. Apogée des royaumes mossi (Wogodogo, Yatenga, Tenkodogo, Fada N'Gourma). Développement de réseaux commerciaux régionaux et transsahariens. Résistance aux empires voisins (Songhay, Mali).",
       "precolonial": "Consolidation des royaumes mossi, système monarchique (naaba). Développement des chefferies gur (Bobo, Gourounsi, Dagara, Lobi). Peuples Peuls et Touaregs en transhumance dans le nord. Résistance aux pressions extérieures. Commerce transsaharien.",
       "colonization": "1896-1897 : Conquête française des royaumes mossi. 1919 : Création de la colonie de Haute-Volta par les Français, intégration dans l'AOF. 1932 : Dissolution de la Haute-Volta (territoire réparti entre le Soudan français, la Côte d'Ivoire et le Niger). 1947 : Rétablissement de la Haute-Volta. Période coloniale française, exploitation économique (coton, arachides), développement de l'administration coloniale, résistance des peuples autochtones. XXe siècle : Développement du mouvement indépendantiste, formation de partis politiques.",
@@ -332,6 +332,12 @@
         "url": "https://www.jeuneafrique.com/48652/politique/le-4-ao-t-1984-thomas-sankara-rebaptisait-la-haute-volta-en-burkina-faso/",
         "tier": "referenced",
         "notes": "Article de presse signé et daté. Donne la date de l'ordonnance, le 2 août 1984, et son entrée en vigueur le 4 août 1984."
+      },
+      {
+        "title": "UNESCO, Centre du patrimoine mondial — Sites de métallurgie ancienne du fer du Burkina Faso, bien n° 1602, inscrit en 2019",
+        "url": "https://whc.unesco.org/fr/list/1602/",
+        "tier": "official",
+        "notes": "Déclaration de valeur universelle exceptionnelle publiée par le Centre du patrimoine mondial. Lue le 16 septembre 2026 : la datation de Douroula au VIIIe siècle avant notre ère, la diffusion de la technologie du fer vers 500 avant notre ère, la continuité de production sur plus de 2700 ans, et les traditions de forgerons vivantes à Yamané, Kindibo et Douroula."
       }
     ],
     "demographics": {
