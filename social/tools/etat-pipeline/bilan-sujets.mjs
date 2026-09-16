@@ -13,6 +13,7 @@ import path from "node:path";
 
 import { productionsRoot, publicationsRoot } from "../paths.mjs";
 import { etat } from "./etat.mjs";
+import { aDesImages } from "./rendu-reseaux.mjs";
 import { bilanSujet, decrirePost, regrouper } from "./sujets.mjs";
 
 const LIBRAIRIE = publicationsRoot();
@@ -51,7 +52,7 @@ const plier = (t) =>
 const posts = [...postsMd(LIBRAIRIE)].map((fichier) => {
   const dossier = path.dirname(fichier);
   return decrirePost(fs.readFileSync(fichier, "utf8"), {
-    images: rendu(dossier, "images"),
+    images: aDesImages(dossier),
     video: rendu(dossier, "video"),
     chemin: path.relative(LIBRAIRIE, dossier),
   });

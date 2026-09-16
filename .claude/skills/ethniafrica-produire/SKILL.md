@@ -36,10 +36,10 @@ dis pourquoi.
 
 ## Les deux sorties
 
-| Sortie            | Dossier, dans le dossier du post | Condition               | État atteint          |
-| ----------------- | -------------------------------- | ----------------------- | --------------------- |
-| **Épreuve**       | `_epreuves/`                     | toujours                | 🟡 En traitement      |
-| **Bon à publier** | `images/`, `video/`              | les cinq portes passées | 🟢 Validé, en attente |
+| Sortie            | Dossier, dans le dossier du post                         | Condition               | État atteint          |
+| ----------------- | -------------------------------------------------------- | ----------------------- | --------------------- |
+| **Épreuve**       | `_epreuves/`                                             | toujours                | 🟡 En traitement      |
+| **Bon à publier** | un dossier par réseau (`TikTok-Instagram/`, …), `video/` | les cinq portes passées | 🟢 Validé, en attente |
 
 Le dossier du post est celui de la bibliothèque, pas celui de l'atelier — voir
 « Où ça s'écrit ».
@@ -68,8 +68,8 @@ avaient franchi les quatre premières portes.
 
 Une épreuve porte un **bandeau diagonal « ÉPREUVE — NE PAS PUBLIER »** et un
 encart listant les portes non franchies, en clair, avec ce qu'il faut pour les
-franchir. Elle ne va jamais dans `images/`, et son nom de fichier porte le
-suffixe `-epreuve`.
+franchir. Elle ne va jamais dans un dossier-réseau, et son nom de fichier porte
+le suffixe `-epreuve`.
 
 ## Ce que tu appliques
 
@@ -155,14 +155,15 @@ node social/tools/migrate-cards/migrate-cards.mjs <Sujet> --essai
 node social/tools/migrate-cards/migrate-cards.mjs <Sujet>
 
 cd social/harness
-./venv/bin/python ethni_carrousel2.py <Sujet>   # le carrousel, les trois formats
+./venv/bin/python ethni_carrousel2.py <Sujet>   # le carrousel, les deux formats
 ./venv/bin/python test_ethni_tokens.py          # la porte anti-littéral
 ./venv/bin/python test_ethni_compose.py         # le contrat de composition
 ./venv/bin/python test_corpus_compose.py        # les mêmes règles sur tout le corpus
 ./venv/bin/python test_gabarit_video.py         # le contrat de §9 bis
 ```
 
-**`ethni_carrousel2.py` refuse d'écrire dans un `images/` qui porte déjà des
+**`ethni_carrousel2.py` refuse d'écrire dans un dossier-réseau
+(`TikTok-Instagram/`, `Instagram-Facebook-YouTube-X/`) qui porte déjà des
 rendus** et bascule le lot en épreuve. Deux jeux de rendus côte à côte sont
 indiscernables dans un sélecteur de fichiers. `--remplacer` lève le refus.
 
@@ -281,8 +282,8 @@ Dérivée du crédit, elle ferait comparer une chaîne à sa propre copie et la 
 passerait partout, y compris sur la carte dont l'image a changé.
 
 **`--remplacer` remplace vraiment** : les rendus précédents partent dans
-`_rendus-remplaces/`. Sans lui, un `images/` déjà peuplé bascule le lot en
-épreuve.
+`_rendus-remplaces/`. Sans lui, un dossier-réseau déjà peuplé bascule le lot
+en épreuve.
 
 ## Pour finir
 

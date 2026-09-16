@@ -57,9 +57,15 @@ pas.
   texte LinkedIn. Un sujet produit dans un seul format ne part que sur les
   réseaux de sa colonne : un reel seul ne va pas sur TikTok, un carrousel seul ne
   va ni sur Facebook, ni sur YouTube, ni sur X.
-- **La sortie LinkedIn 1080 × 1080 du §1 n'est plus publiée**, puisque LinkedIn
-  ne reçoit plus d'image. Le moteur la rend encore ; la retirer est un chantier
-  du moteur, pas de cette règle.
+- **La sortie LinkedIn 1080 × 1080 du §1 n'est plus rendue**, puisque LinkedIn
+  ne reçoit plus d'image. Retiré du moteur le 16 septembre 2026 ; §1 garde la
+  ligne pour mémoire du format, mais `ethni_carrousel2.py` ne l'appelle plus.
+- **Un lot qui passe part dans un dossier par format, nommé d'après les
+  réseaux qui le reçoivent** — `TikTok-Instagram/` pour le carrousel,
+  `Instagram-Facebook-YouTube-X/` pour le reel — et non plus dans un `images/`
+  à plat que l'opérateur devait trier réseau par réseau avant de publier. Le
+  nom se lit dans la colonne « Reçoit » ci-dessus, dans son propre ordre : une
+  ligne révisée change le rangement sans un second edit dans le moteur.
 - **La table se révise, elle ne s'enfreint pas.** Une ligne ne change que sur une
   mesure de `ethniafrica-content-strategist`, écrite ici avec sa date. Une seule
   semaine de mesure la fonde : la revue de phase 1 des 3 et 4 octobre la relit

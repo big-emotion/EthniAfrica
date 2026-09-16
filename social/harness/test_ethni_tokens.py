@@ -110,6 +110,16 @@ def test_formats_come_from_the_spec():
     assert reel["marge_basse"] == 391
 
 
+def test_networks_come_from_the_1bis_table():
+    """§1 bis — parsed from the "Reçoit" column, never a second list.
+
+    Order matches the table's own row order, which is also the order the render
+    engine joins into an output folder name.
+    """
+    assert tk.reseaux("carrousel") == ["TikTok", "Instagram"]
+    assert tk.reseaux("reel") == ["Instagram", "Facebook", "YouTube", "X"]
+
+
 def test_the_interface_floor_is_a_number_not_a_habit():
     """§1 — nothing legible below y = 1620 in 9:16."""
     assert tk.SAFE_FLOOR_9_16 == 1620
