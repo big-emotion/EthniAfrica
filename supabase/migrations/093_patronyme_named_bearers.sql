@@ -1,4 +1,4 @@
--- Migration 092 — the bearers the corpus can only name: afrik_patronyme_bearers
+-- Migration 093 — the bearers the corpus can only name: afrik_patronyme_bearers
 --
 -- 064 gave a name its bearers as a join to persons (ARCH-018). That join has
 -- never carried a row from the corpus, and cannot: ARCH-018 defines no

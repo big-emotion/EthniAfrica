@@ -83,7 +83,7 @@ export type PatronymeBearerSummary = z.infer<
  * a living person under one publishes their ethnic origin. The strict fiche
  * model knows three statuses — deceased, aggregated, living_self_identified
  * — and only the first may be served by name. `afrik_patronyme_bearers`
- * (migration 092) stores the status as plain TEXT, so nothing below this
+ * (migration 093) stores the status as plain TEXT, so nothing below this
  * constant narrows it: the service filters its query and its projection on
  * this list, and widening the guarantee means editing this line, not a
  * `where` clause.

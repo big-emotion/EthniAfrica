@@ -13,7 +13,7 @@
  *
  * The fifth query exists because the fourth cannot answer for the corpus:
  * every bearer the editorial work records names its subject in prose, and
- * migration 092 gave those bearers the table this reads.
+ * migration 093 gave those bearers the table this reads.
  *
  * Bearer projection is deliberately narrow (id, fullName, roleCategory) —
  * DEC-040 forbids a code path that takes a family name and returns an
@@ -393,7 +393,7 @@ async function getBearers(
 }
 
 /**
- * The bearers the corpus can only name (migration 092).
+ * The bearers the corpus can only name (migration 093).
  *
  * `afrik_patronyme_persons` cannot hold them: no person record can be
  * authored for a bearer a fiche merely names (ARCH-018 defines no person
