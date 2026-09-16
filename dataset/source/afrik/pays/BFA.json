@@ -15,8 +15,8 @@
         "République de Haute-Volta (1960-1984)"
       ],
       "antiquity": "Le territoire actuel du Burkina Faso était peuplé de diverses sociétés sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs royaumes et territoires (royaumes mossi, chefferies gur, etc.).",
-      "middleAges": "Développement de royaumes mossi (XIe-XIXe siècles) : Wogodogo (Ouagadougou), Yatenga, Tenkodogo, Fada N'Gourma. Développement de chefferies gur (Bobo, Gourounsi, Dagara, etc.). Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Mosaïque de royaumes et chefferies autonomes : royaumes mossi (Wogodogo, Yatenga, Tenkodogo, Fada N'Gourma), chefferies Bobo, Lobi, Dagara, Gourounsi, Senoufo. Peuples Peuls et Touaregs en transhumance dans le nord. Les Européens utilisaient le terme \"Haute-Volta\" pour désigner la région (dérivé du fleuve Volta).",
+      "middleAges": "Développement des royaumes mossi : Tenkodogo, Yatenga, Ouagadougou, Fada N'Gourma et Boussouma. Les travaux publiés situent leur formation à la fin du 15e siècle ; la tradition mossi la fait remonter plus haut. Développement de chefferies gur (Bobo, Gourounsi, Dagara). Pas de nom unifié pour l'ensemble du territoire.",
+      "precolonial": "Mosaïque de royaumes et de chefferies autonomes : royaumes mossi (Tenkodogo, Yatenga, Ouagadougou, Fada N'Gourma, Boussouma), chefferies bobo, lobi, dagara, gourounsi, sénoufo. Peuples peul et touareg présents dans le nord. Aucun nom ne désigne l'ensemble du territoire avant la colonie : la Haute-Volta est un découpage tardif, créé en 1919. La nomenclature coloniale elle-même, qui parle de pays Mossi, de pays Gourounsi ou du Yatenga, témoigne de la préexistence et de l'identité de ces territoires.",
       "colonization": "1919-1960 : Haute-Volta, dans l'Afrique-Occidentale française. La colonie est créée par décret du 1er mars 1919, détachée du Haut-Sénégal-Niger, avec Ouagadougou pour capitale. Parmi les motifs invoqués lors de sa création figurait la réorientation, vers la Côte d'Ivoire qui manquait de main-d'oeuvre, d'un courant migratoire qui se dirigeait vers la Gold Coast. Un décret du 5 septembre 1932 supprime la colonie et rattache ses territoires à la Côte d'Ivoire, au Soudan français et au Niger ; la partition s'applique à partir du 1er janvier 1933. La Côte d'Ivoire en reçoit la plus grande part, et la plus peuplée : les cercles de Ouagadougou, Gaoua, Batié, Bobo-Dioulasso et une partie de celui de Dédougou. Un décret du 13 juillet 1937 réunit ces territoires sous le nom de Région de la Haute Côte-d'Ivoire, dotée d'une autonomie relative. La loi du 4 septembre 1947 rétablit la Haute-Volta dans ses limites du 5 septembre 1932, avec Ouagadougou pour capitale.",
       "contemporary": "1960-1984 : République de Haute-Volta, indépendante le 5 août 1960. Le 4 août 1983, Thomas Sankara et un groupe de jeunes officiers prennent le pouvoir. Une ordonnance du 2 août 1984 change le nom du pays, avec effet au 4 août 1984, premier anniversaire de ce changement de régime. Le nom Burkina Faso est officiel depuis cette date, et le gentilé burkinabè remplace voltaïque."
     },
@@ -338,6 +338,12 @@
         "url": "https://whc.unesco.org/fr/list/1602/",
         "tier": "official",
         "notes": "Déclaration de valeur universelle exceptionnelle publiée par le Centre du patrimoine mondial. Lue le 16 septembre 2026 : la datation de Douroula au VIIIe siècle avant notre ère, la diffusion de la technologie du fer vers 500 avant notre ère, la continuité de production sur plus de 2700 ans, et les traditions de forgerons vivantes à Yamané, Kindibo et Douroula."
+      },
+      {
+        "title": "EBSCO Research Starters — Mossi (people)",
+        "url": "https://www.ebsco.com/research-starters/language-and-linguistics/mossi-people",
+        "tier": "referenced",
+        "notes": "Notice encyclopédique éditorialisée. Lue le 16 septembre 2026 : elle nomme les royaumes mossi de Tenkodogo, Yatenga, Ouagadougou, Fada N'Gourma et Boussouma, et situe la formation des royaumes à la fin du 15e siècle, les Mossi datant eux-mêmes leur pouvoir des environs de 1500."
       }
     ],
     "demographics": {
