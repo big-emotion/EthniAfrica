@@ -9,7 +9,7 @@
       "selfAppellation": "Senufo / Syénfo / Syénambélé",
       "exonyms": ["Senoufo", "Siena", "Sienambele", "Syen"],
       "originOfExonyms": "Le terme Senufo est la forme française et internationale la plus repandue (Senoufo en orthographe française). L'endonyme Syénambélé signifie les gens du nord ou les gens de Syen. Korhogo, ville principale du nord de la Cote d'Ivoire, est historiquement le centre culturel et commercial du monde Senufo.",
-      "whyProblematic": null,
+      "whyProblematic": "Le nom Sénoufo apparaît d'abord dans des publications françaises de la fin du XIXe siècle, chez Tautain en 1887 puis chez Binger en 1892, et s'impose ensuite dans la littérature savante et sur le marché de l'art. La recherche récente réexamine cette désignation et la manière dont elle a été construite. Les intéressés se nomment Syénambélé, et se désignent le plus souvent par leur sous-groupe : Cebaara, Supyire, Djimini.",
       "contemporaryUsage": "Senufo et Senoufo sont tous deux couramment employes en anglais et en français. Les locuteurs se designent selon leur sous-groupe (Cebaara, Supyire, Djimini, etc.). L'identite Senufo est federee autour des institutions du Poro (societe secrete masculine) et du Sandogo (societe féminine).",
       "linguisticFamily": "FLG_GUR",
       "ethnoLinguisticGroup": "Senufo (branche propre de l'Atlantic-Congo, parfois integree dans Gur), Niger-Congo",
@@ -144,6 +144,24 @@
         "title": "CIA World Factbook - Burkina Faso",
         "url": "https://www.cia.gov/the-world-factbook/countries/burkina-faso/",
         "tier": "official"
+      },
+      {
+        "title": "Tautain, Louis Frédéric Émile — Le Dioula-dougou et le Sénéfo, Revue d'ethnographie, tome 6, 1887",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Article d'ethnographie française de 1887 qui emploie déjà le nom Sénoufo, avant que la colonie de Côte d'Ivoire n'existe."
+      },
+      {
+        "title": "Binger, Louis-Gustave — Du Niger au golfe de Guinée par le pays de Kong et le Mossi, 1887-1889, Hachette, Paris, 1892",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Récit de voyage français qui décrit des populations, une langue et des arts qu'il range sous le nom Sénoufo."
+      },
+      {
+        "title": "Gagliardi, Susan Elizabeth et Petridis, Constantine — Mapping Senufo: Reframing Questions, Reevaluating Sources, and Reimagining a Digital Monograph, History in Africa, volume 48, 2021, pages 165 à 209",
+        "url": "https://doi.org/10.1017/hia.2021.5",
+        "tier": "referenced",
+        "notes": "Travail universitaire qui rouvre les questions et réexamine les sources sur l'ensemble d'objets et de populations désignés comme Sénoufo, et sur la façon dont cette désignation s'est construite."
       }
     ]
   },
