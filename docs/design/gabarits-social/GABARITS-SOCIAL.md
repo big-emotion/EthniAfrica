@@ -633,8 +633,16 @@ qu'une seule carte tombe en C.
 | **A — tiers bas ancré** | **au moins 60 %**, et la majorité dans tous les cas |
 | C — cartouche | au plus 40 % |
 
-B ne compte pas dans ce calcul : il est réservé à l'ouverture et à la bascule, donc
-**au plus 2 par deck** et jamais sur une carte de série.
+B ne compte pas dans ce calcul : il est **réservé à la bascule**, donc **au plus 2 par
+deck** et jamais sur une carte de série ni sur une ouverture.
+
+> Cette ligne disait « réservé à l'ouverture et à la bascule » jusqu'au 2026-09-16,
+> contre les deux énoncés normatifs qui l'encadrent — « B est la disposition de la
+> bascule, jamais de l'ouverture » ci-dessus, et la ligne de §11. `choisir()` suivait
+> la moitié périmée. Corrigé dans les deux, moteur et charte, le jour où le carrousel
+> `diallo-djallo` a vu son ouverture partir en B et son titre de huit mots déborder
+> la fente plus étroite de B — 600 px demandés pour 507 — ce que §1 ter interdit de
+> résoudre en rapetissant le titre.
 
 Un lot hors quota **sort en épreuve** avec le motif, et le rapport de rendu nomme les
 cartes tombées en C et pourquoi. Ce n'est jamais une faute de composition : c'est le

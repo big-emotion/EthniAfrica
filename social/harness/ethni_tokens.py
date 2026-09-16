@@ -399,12 +399,22 @@ def choisir(carte, w, h, fmt_key, image=None, tient=None):
     rule, the engine takes the measurement. Called without it, only the rules that
     need no composition apply.
     """
-    # B is the word that carries, with one line to explain it. Without that
-    # allowance B does not exist at all — every opening card has a body, so none
-    # ever meets the condition and the ceiling of two holds at zero, an exception
-    # its own rule made impossible. What B refuses is the pair: a full-frame word
-    # and a two-term table fight over the same centre.
-    if (carte.get("role") in ("ouverture", "bascule")
+    # B is the word that carries, with one line to explain it — and it is the
+    # layout of the bascule, never of the opening. §7 ter fixes the opening in A,
+    # and §11 states it as a checklist line of its own.
+    #
+    # This admitted « ouverture » until 2026-09-16, against both. What let it
+    # through was reading the vision line as that one explaining line: an opening
+    # carries it, it is short, so every opening qualified for B. But the vision
+    # line is constant furniture, identical on every lot ever published — it is
+    # not the card's argument, and it should decide nothing. Measured on
+    # `diallo-djallo`: the opening took B on a 44-sign vision line, and its
+    # eight-word title then asked 600 px of B's 507 — an overflow §1 ter forbids
+    # resolving by shrinking the title, so the lot could only go out as a proof.
+    #
+    # What B refuses besides: the pair. A full-frame word and a two-term table
+    # fight over the same centre.
+    if (carte.get("role") == "bascule"
             and not carte.get("paires")
             and len(carte.get("corps") or "") <= CORPS_COURT):
         return "B"
