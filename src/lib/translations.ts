@@ -31,6 +31,7 @@ import { publicFlagsCopy } from "@/lib/i18n/copy/publicFlags";
 import { quizCopy } from "@/lib/i18n/copy/quiz";
 import { reportsCopy } from "@/lib/i18n/copy/reports";
 import { serverCopy } from "@/lib/i18n/copy/server";
+import { provenanceCopy } from "@/lib/i18n/copy/provenance";
 import { sourceTransparencyCopy } from "@/lib/i18n/copy/sourceTransparency";
 import { sitemapPageCopy } from "@/lib/i18n/copy/sitemapPage";
 import { systemCopy } from "@/lib/i18n/copy/system";
@@ -80,6 +81,7 @@ const en = {
   quiz: quizCopy.en,
   reports: reportsCopy.en,
   sourceTransparency: sourceTransparencyCopy.en,
+  provenance: provenanceCopy.en,
   fieldProvenance: fieldProvenanceCopy.en,
   family: familyCopy.en,
   fiche: ficheCopy.en,
@@ -126,6 +128,7 @@ const fr: UiDictionary = {
   quiz: quizCopy.fr,
   reports: reportsCopy.fr,
   sourceTransparency: sourceTransparencyCopy.fr,
+  provenance: provenanceCopy.fr,
   fieldProvenance: fieldProvenanceCopy.fr,
   family: familyCopy.fr,
   fiche: ficheCopy.fr,

@@ -229,6 +229,39 @@
   margin-inline-start: -4px;
 }
 
+/* The provenance census sits at the head of the first chapter, on the same
+   gutter as the confidence chip and for the same reason: it declares no gutter
+   of its own, so it can never drift from the column the reader lines up
+   against. Its own width is bounded by the banner (the reading measure) — a
+   census stretched across the parchment reads as a navigation bar, which is
+   the one object readers have learned to skip. */
+.afh-parchment-provenance {
+  margin-bottom: var(--afh-space-lg);
+}
+
+/* The banner owns its ink and its rhythm in CSS rather than in utilities,
+   because it stands inside a chapter and `.afh-parchment-section p` already
+   declares both at a specificity no Tailwind utility reaches. Left to the
+   utilities, the loud state rendered a gold frame around a grey sentence and
+   the census ran straight into the line below it — two blocks where the
+   component declares one. */
+.afh-provenance-banner p,
+.afh-provenance-banner dl {
+  margin: var(--afh-space-lg) 0 0;
+  color: inherit;
+  line-height: 1.55;
+}
+
+.afh-provenance-banner > p:first-child {
+  margin-top: 0;
+}
+
+.afh-provenance-banner dt,
+.afh-provenance-banner dd {
+  margin: 0;
+  color: inherit;
+}
+
 /* ── Structured prose ─────────────────────────────────────────────── */
 
 /* The chapter is an h2, and the corpus has exactly one level under it. There

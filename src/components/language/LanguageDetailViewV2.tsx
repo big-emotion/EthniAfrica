@@ -8,7 +8,9 @@ import { getFamilyRoute, getPeopleRoute } from "@/lib/routing";
 import { FicheSection } from "@/components/fiche/FicheSection";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
 import { FicheSources } from "@/components/fiche/FicheSources";
+import { ProvenanceBanner } from "@/components/source-transparency/ProvenanceBanner";
 import type { Language } from "@/types/shared";
+import type { ProvenanceCensus } from "@/api/v2/schemas/confidence";
 import { languageFicheCopy } from "@/lib/i18n/copy/languageFiche";
 import { ficheCopy } from "@/lib/i18n/copy/fiche";
 
@@ -17,6 +19,12 @@ export interface LanguageDetailViewV2Props {
   language: Language;
   /** An open flag on this fiche's sourcing, resolved by the route. */
   hasSourceFlag?: boolean;
+  /**
+   * What the fiche's assertions rest on, counted by standing and resolved by
+   * the route. Null when the read failed; absent when the caller does not
+   * carry it. Either way the banner stays away rather than guessing.
+   */
+  provenance?: ProvenanceCensus | null;
   /**
    * The way out of the fiche — `FicheOnward`, composed by the route.
    *
@@ -47,6 +55,7 @@ export function LanguageDetailViewV2({
   data,
   language,
   hasSourceFlag = false,
+  provenance = null,
   onward,
 }: LanguageDetailViewV2Props) {
   const copy = languageFicheCopy[language];
@@ -62,6 +71,14 @@ export function LanguageDetailViewV2({
   return (
     <div className="afh-parchment" id="fiche">
       <FicheSection title={copy.identifiers}>
+        {/* Inside the first chapter, on the people record's precedent: the
+            parchment keeps no child off the chapter ground, and the banner's
+            link points at this document's own sources footer. */}
+        {provenance ? (
+          <div className="afh-parchment-provenance">
+            <ProvenanceBanner language={language} census={provenance} />
+          </div>
+        ) : null}
         <dl className="afh-pairs">
           <dt>ISO 639-3</dt>
           <dd>{data.isoCode639_3}</dd>

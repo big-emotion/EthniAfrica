@@ -2516,6 +2516,58 @@ const options: swaggerJsdoc.Options = {
             },
           },
         },
+        ProvenanceCensus: {
+          type: "object",
+          description:
+            "How many of a fiche's assertions rest on each source standing, each assertion counted once under the standing of its strongest source. Deliberately not a score: an aggregate over chapters of unequal provenance describes none of them, so no field here averages anything. `assertionCount` is always the sum of the four standings; an assertion citing no source is excluded rather than given a bucket.",
+          properties: {
+            entityType: {
+              type: "string",
+              enum: ["people", "country", "language", "language-family"],
+            },
+            entityId: { type: "string", example: "CIV" },
+            assertionCount: { type: "integer", minimum: 0, example: 21 },
+            standings: {
+              type: "object",
+              description:
+                "One count per value of the published source scale. `needs_review` is a transitional marker, not a fourth tier, and it also covers a source row the database left untiered.",
+              properties: {
+                official: { type: "integer", minimum: 0, example: 4 },
+                referenced: { type: "integer", minimum: 0, example: 11 },
+                unverified: { type: "integer", minimum: 0, example: 4 },
+                needs_review: { type: "integer", minimum: 0, example: 2 },
+              },
+              required: [
+                "official",
+                "referenced",
+                "unverified",
+                "needs_review",
+              ],
+            },
+            lastHumanAuditAt: {
+              type: ["string", "null"],
+              format: "date-time",
+            },
+          },
+          required: [
+            "entityType",
+            "entityId",
+            "assertionCount",
+            "standings",
+            "lastHumanAuditAt",
+          ],
+        },
+        ProvenanceCensusResponse: {
+          type: "object",
+          properties: {
+            data: { $ref: "#/components/schemas/ProvenanceCensus" },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+            },
+          },
+        },
         // -----------------------------------------------------------------
         // Epic 13 — Colonization & Resistances: fragmentation (FR85)
         // -----------------------------------------------------------------
