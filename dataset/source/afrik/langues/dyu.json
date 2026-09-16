@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "langue",
+    "directives": "Voir DIRECTIVES-AFRIK.md pour les règles de rédaction complètes."
+  },
+  "id": "dyu",
+  "isoCode639_3": "dyu",
+  "glottocode": "dyul1238",
+  "nameFr": "Dioula",
+  "nameEn": "Dyula",
+  "alternateNames": [],
+  "spellingAliases": [],
+  "familyId": "FLG_MANDE",
+  "peoples": [
+    {
+      "name": "Dioula",
+      "peopleId": "PPL_DIOULA"
+    }
+  ],
+  "content": {
+    "vehicularRole": "regional_lingua_franca",
+    "dialects": ["Dioula Véhiculaire", "Kong Jula", "Tagboussikan"],
+    "vitalityStatus": {
+      "status": "Wider communication",
+      "scale": "EGIDS (Ethnologue)",
+      "asOf": 2025
+    },
+    "sources": [
+      {
+        "title": "Glottolog 5.3 — Dyula (dyul1238)",
+        "url": "https://glottolog.org/resource/languoid/id/dyul1238",
+        "tier": "official",
+        "notes": "Notice directe pour le code ISO 639-3 dyu et le glottocode dyul1238. Classification Glottolog, du plus large au plus étroit : Mande, Mande occidental, Manding-Kpelle, Mande central, Manding-Jogo, Manding-Vai, Manding-Mokole, Manding, Manding oriental. La notice reprend l'appréciation EGIDS d'Ethnologue 2025, niveau 3, communication élargie, et note un usage de langue véhiculaire en Côte d'Ivoire ainsi qu'au Burkina Faso, dans le commerce, la chasse, la religion et l'enseignement. Les dialectes listés sont les sous-languoids que Glottolog rattache à dyul1238, hors languoids portant leur propre code ISO 639-3. Consultée le 2026-09-16."
+      },
+      {
+        "title": "ISO 639-3, tables de codes publiées par SIL Global, autorité d'enregistrement de la norme",
+        "url": "https://iso639-3.sil.org/code_tables/download_tables",
+        "tier": "official",
+        "notes": "Tables du 2026-07-15, consultées le 2026-09-16. La table des macrolangues n'associe le code dyu à aucune macrolangue, non plus que le code bam du bambara, tandis qu'elle rattache le maninkakan de l'Est et le mandinka à la macrolangue man, Mandingo. Le partage entre langue et dialecte est ici une décision de codification, prise code par code par un organisme, et non une frontière relevée sur le terrain."
+      }
+    ]
+  }
+}

@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Fiche générée depuis la file d'attente des candidats (vague 1 du plan de couverture anthroponymique). Elle ne porte aucune recherche : ne pas étendre ses affirmations sans appliquer le protocole docs/runbooks/anthroponym-fiche-research.md."
+    "directives": "Dossier fondé sur les sources nommées ci-dessous, relues une à une. Ne pas étendre une affirmation au-delà de ce que la source citée en regard énonce."
   },
   "id": "PAT_CONDE",
   "nameMain": "Condé",
@@ -11,75 +11,130 @@
     {
       "spelling": "Condé",
       "attestations": [
-        { "countryId": "GIN", "sourceRefs": ["afrik-candidate-queue"] }
+        { "countryId": "GIN", "sourceRefs": ["bulman-sunjata-checklist"] }
       ]
     },
     {
       "spelling": "Conde",
-      "attestations": [
-        { "countryId": "GIN", "sourceRefs": ["afrik-candidate-queue"] }
-      ]
+      "attestations": [{ "countryId": "GIN", "sourceRefs": ["gha-iv-mali"] }]
+    },
+    {
+      "spelling": "Kònde",
+      "attestations": [{ "countryId": "GIN", "sourceRefs": ["bamadaba-jamuw"] }]
     }
   ],
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
+    "oralTraditions": [
+      {
+        "claim": "Les bardes Condé de Fadama, sur le Niandan, tiennent l'un des centres de tradition orale du Manden, au même titre que Kéla près de Kangaba et Djélibakoro. C'est là que le belentigui Babou Condé a récité l'épopée de Soundiata au romancier Camara Laye, en mars et avril 1963 ; la récitation a été transcrite, traduite et romancée avant d'être publiée quinze ans plus tard.",
+        "claimStatus": "established",
+        "griot": "Babou Condé, belentigui de Fadama (Guinée), mort vers 1964",
+        "transcription": "Camara Laye, Le maître de la parole : Kouma Lafôlô Kouma, Plon, 1978 ; édition anglaise The Guardian of the Word, traduite par James Kirkup, Fontana-Collins, 1980",
+        "sourceRefs": ["bulman-sunjata-checklist", "gha-iv-mali"]
+      }
+    ],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Avant l'empire du Mali, la tradition connaît deux royaumes distincts : le Do ou Dodougou, habité par le clan Condé, et le Kiri ou Manden, tenu au sud par les Konaté et les Kéita. Le Do comptait douze villes, dont la tradition orale ne rapporte pas les noms.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["gha-iv-mali"]
+      },
+      {
+        "claim": "Sogolon Condé, mère de Soundiata, est la femme raillée par les autres épouses du roi pendant l'enfance infirme de son fils. Après la victoire, l'assemblée décrète que les princes devront toujours prendre leur première épouse dans le clan Condé, en mémoire de cette union. Faony Condé figure par ailleurs parmi les généraux qui scellent l'alliance avec Soundiata dans la plaine de Sibi.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["gha-iv-mali"]
+      },
+      {
+        "claim": "À l'est du Fouta-Djalon, l'expansion malinké s'est faite hors du cadre impérial : de grands lignages nobles s'y partageaient le pouvoir sans centralisation politique, et c'est le cas des Condé du Sankaran, sur le haut Niger, attestés là au moins dès le XIVe siècle.",
+        "claimStatus": "established",
+        "sourceRefs": ["gha-iv-mali"]
+      },
+      {
+        "claim": "Le dictionnaire des noms claniques attache à son entrée Kònde deux termes de statut mandingues, hɔ́rɔn, l'homme libre, et tontigi, le porteur de carquois, et situe l'entrée à Kouroussa, au Sankaran, à Faranah et à Kankan. Le carquois et l'arc étaient les emblèmes des hommes libres, seuls autorisés à porter les armes.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw", "gha-iv-mali"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_MALINKE",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["gha-iv-mali"]
     }
   ],
   "countries": [
     {
       "countryId": "GIN",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["gha-iv-mali", "bulman-sunjata-checklist"]
     }
   ],
-  "alliances": [],
-  "casteOrSocialFunction": null,
-  "bearers": [],
+  "alliances": [
+    {
+      "targetPatronymeId": "PAT_NDIAYE",
+      "allianceType": "fraternité clanique",
+      "sourceRefs": ["gha-iv-mali"]
+    }
+  ],
+  "casteOrSocialFunction": {
+    "value": "Deux positions sous un même nom, et les sources ne les confondent pas. Au Sankaran, sur le haut Niger, les Condé forment de grands lignages nobles qui se partagent le pouvoir, ce que recoupe le dictionnaire des noms claniques en attachant à son entrée les termes hɔ́rɔn, homme libre, et tontigi, porteur de carquois. À Fadama, sur le Niandan, les Condé tiennent au contraire une lignée de bardes, l'un des centres où se transmet l'épopée du Manden. Le nom ne désigne donc pas à lui seul un statut.",
+    "sourceRefs": ["gha-iv-mali", "bamadaba-jamuw", "bulman-sunjata-checklist"]
+  },
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Babou Condé (mort vers 1964)",
+      "sourceRefs": ["bulman-sunjata-checklist"]
+    },
+    {
+      "status": "deceased",
+      "displayName": "Mamadi Condé (mort en janvier 1994)",
+      "sourceRefs": ["bulman-sunjata-checklist"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
-      "sourceKey": "afrik-candidate-queue",
-      "title": "Relevé de couverture anthroponymique EthniAfrica",
-      "url": null,
-      "tier": "unverified",
-      "source_kind": "ai_generated",
-      "notes": "Ce nom figure au relevé de couverture de l'atlas : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+      "sourceKey": "gha-iv-mali",
+      "title": "Histoire générale de l'Afrique, volume IV : l'Afrique du XIIe au XVIe siècle",
+      "url": "https://archive.org/details/unesco_general_history_africa_iv",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, 1984, sous la direction de D. T. Niane ; consulté sur le texte intégral de l'exemplaire numérisé. Le chapitre 6, « Mali and the second Mandingo expansion » (D. T. Niane), donne le royaume du Do ou Dodougou habité par le clan Condé (p. 127), signale en note 28 qu'un centre de tradition orale tenu par les griots Condé existe à Fadama sur le Niandan, en Guinée (p. 127), raconte l'enfance de Soundiata et les moqueries faites à sa mère Sogolon Condé (p. 131), cite le général Faony Condé parmi ceux qui scellent l'alliance à Sibi (p. 131), rapporte la règle d'assemblée voulant que les princes prennent toujours leur première épouse dans le clan Condé (p. 134), et note en 43 qu'un homme du clan Condé est tenu pour frère par ceux du clan Ndiaye en pays wolof (p. 134). Le chapitre suivant situe les Condé du Sankaran sur le haut Niger au moins dès le XIVe siècle (p. 311). L'ouvrage est une synthèse savante et non une chronique."
+    },
+    {
+      "sourceKey": "bulman-sunjata-checklist",
+      "title": "A Checklist of English and French Versions of the Sunjata Epic Published before the 21st Century",
+      "url": "https://verbafricana.org/malinke-fr/griots/Bulman.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bulman, Stephen ; version légèrement révisée d'un article paru dans History in Africa en 1997, mise en ligne sur le portail Verba Africana. Le relevé donne pour chaque version publiée le nom du récitant, le lieu et la date de la performance, le collecteur et le format. Son entrée Condé nomme Babou Condé, mort vers 1964, belentigui de Fadama en Guinée, enregistré à Fadama en mars et avril 1963 par le romancier guinéen Camara Laye (1928-1980) et publié en 1978. Son entrée suivante nomme Mamadi Condé, mort en janvier 1994, jeli de Fadama, dont deux récits ont paru dans un recueil de traditions orales maninka publié à Madison en 1997."
+    },
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs, et la lecture retenue est celle que le fichier impose : la ligne des termes de statut porte les mots mandingues eux-mêmes (nùmu, jèli, hɔ́rɔn, tontigi). L'entrée Kònde porte hɔ́rɔn et tontigi, et situe le nom à Kurusa, Sanakaran, Farana et Kankan. Elle ne porte aucun lien clanique, si bien que le fichier ne donne pour ce nom aucune paire d'alliance à plaisanterie."
     }
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "L'atlas ne documente pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
       "fieldPath": "alliances",
-      "reason": "L'atlas ne documente pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "casteOrSocialFunction",
-      "reason": "L'atlas ne documente pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "bearers",
-      "reason": "L'atlas ne documente pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Une seule relation est attestée par les sources consultées, et elle n'est pas une alliance à plaisanterie : c'est une fraternité de clan, qui permet en pays wolof d'être reçu comme un frère et, pour d'autres paires, de prendre le nom de l'autre clan. Le dictionnaire de noms claniques consulté n'enregistre aucun lien d'alliance pour ce nom."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "L'atlas ne documente pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les sources consultées ne distinguent aucune lignée homonyme d'origine séparée. Elles rapportent au même nom deux positions sociales différentes, l'une noble au Sankaran et l'autre de bardes à Fadama, sans en faire deux clans distincts."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : l'atlas ne le documente pas encore pour ce nom."
+      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission, et aucune des sources consultées ne dit comment ce nom-ci se transmet."
     }
   ]
 }

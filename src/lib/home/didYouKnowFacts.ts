@@ -194,15 +194,15 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "burkina-faso",
-    headline: "Le nom du Burkina Faso est écrit dans trois langues à la fois.",
+    headline:
+      "Le nom du Burkina Faso est fait de deux mots pris dans deux langues.",
     body: [
-      "Burkina vient du mooré et signifie « intègre » ; faso vient du dioula, où fa est le père et so la maison — la patrie. Le gentilé, burkinabè, prend le suffixe -ɓe du peul, celui qu'on retrouve dans Fulɓe. Trois langues du pays dans deux mots et un adjectif.",
-      "Thomas Sankara le proclame le 4 août 1984, en remplacement de Haute-Volta — un nom de fleuve, donné par l'administration coloniale, qui ne disait rien des soixante et quelques peuples qu'il recouvrait. Le nouveau nom n'en choisit aucun : il les fait parler ensemble.",
+      "Burkina vient du mooré et dit l'intégrité, l'honneur ; faso vient du dioula et dit le pays, la patrie. Ensemble : la patrie des hommes intègres. Le gentilé, burkinabè, n'appartient à aucune des deux — le géographe Alain Maharaux écrit qu'il emprunte aux trois langues principales du pays.",
+      "Une ordonnance du 2 août 1984 le substitue à Haute-Volta, avec effet au 4 août, un an jour pour jour après l'arrivée au pouvoir de Thomas Sankara. Haute-Volta était un nom donné par l'administration coloniale, qui ne disait rien des peuples qu'il recouvrait. Le nouveau n'en choisit aucun : il les fait parler ensemble.",
     ],
     entities: [
       { kind: "country", id: "BFA", label: "Burkina Faso" },
       { kind: "people", id: "PPL_MOSSI", label: "Mossi" },
-      { kind: "people", id: "PPL_FULANI", label: "Fulɓe (Peul)" },
     ],
     tier: "referenced",
     sources: [
@@ -210,6 +210,12 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title:
           "Jeune Afrique — Le 4 août 1984, Thomas Sankara rebaptisait la Haute-Volta en Burkina Faso",
         url: "https://www.jeuneafrique.com/48652/politique/le-4-ao-t-1984-thomas-sankara-rebaptisait-la-haute-volta-en-burkina-faso/",
+        tier: "referenced",
+      },
+      {
+        title:
+          "Alain Maharaux — La Haute-Volta devient Burkina Faso : un territoire qui se crée, se défait et s'affirme au rythme des enjeux, 1995",
+        url: "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-32.pdf",
         tier: "referenced",
       },
     ],

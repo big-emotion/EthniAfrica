@@ -210,6 +210,7 @@ export function emptyMigrationReport(): MigrationReport {
       peopleLinks: 0,
       countryLinks: 0,
       bearerLinks: 0,
+      namedBearerLinks: 0,
       alliances: 0,
       errors: [],
     },

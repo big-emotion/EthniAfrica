@@ -13,7 +13,7 @@
         "Fédération du Mali (1959-1960)"
       ],
       "antiquity": "Le territoire était peuplé de groupes proto-mandé, soninké, peuls, bozo sans nom unifié. Les empires régionaux (Ghana, Mali, Songhai) ont dominé la région.",
-      "middleAges": "IIIe-XIIIe siècles : Empire du Ghana (Wagadu), dominé par les Soninké. XIIIe-XVIe siècles : Empire du Mali (fondé par Soundiata Keïta), capitale Niani. XVe-XVIe siècles : Empire Songhai (Gao, Tombouctou, Djenné).",
+      "middleAges": "IIIe-XIIIe siècles : Empire du Ghana (Wagadu), dominé par les Soninké. XIIIe-XVIe siècles : Empire du Mali, fondé par Soundiata Keïta ; la localisation de sa capitale n'est pas établie, l'identification ancienne avec Niani étant réfutée par l'archéologie. XVe-XVIe siècles : Empire Songhai (Gao, Tombouctou, Djenné).",
       "precolonial": "Empires du Ghana, du Mali et Songhai. Royaumes touaregs (Kel Adagh, Ifoghas, Tagelmoust). Royaumes bambara. Commerce transsaharien majeur.",
       "colonization": "1892-1958 : Soudan français (AOF). Le territoire est appelé \"Soudan français\" par les colonisateurs français. 1959-1960 : Fédération du Mali (avec le Sénégal).",
       "contemporary": "Indépendance en 1960 sous le nom de \"République du Mali\". Le nom \"Mali\" a été choisi en référence à l'empire historique du Mali."
@@ -42,7 +42,10 @@
           "precision": "century"
         },
         "dominantPeoples": ["Malinké", "Bambara"],
-        "politicalCenters": ["Niani (capitale)", "Kangaba"],
+        "politicalCenters": [
+          "Niani, longtemps identifiée comme la capitale, identification réfutée par l'archéologie",
+          "Kangaba"
+        ],
         "historicalRole": "Un des plus grands empires d'Afrique de l'Ouest, fondé par Soundiata Keïta. Commerce transsaharien, diffusion de l'islam, centre culturel majeur (Tombouctou)."
       },
       {
@@ -277,6 +280,18 @@
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official"
+      },
+      {
+        "title": "Fauvelle-Aymar, François-Xavier (2012) – Niani redux : mise au point sur la ville éponyme de l'empire du Mali, P@lethnology 4",
+        "url": "https://blogs.univ-tlse2.fr/palethnologie/en/2012-10-fauvelle-aymar/",
+        "tier": "referenced",
+        "notes": "Réexamen des fouilles polono-guinéennes menées sur le site entre 1965 et 1973. Accès libre."
+      },
+      {
+        "title": "Collet, Hadrien (2013) – L'introuvable capitale du Mali, Afriques 4",
+        "url": "https://journals.openedition.org/afriques/1098",
+        "tier": "referenced",
+        "notes": "Retrace comment la lecture Niani a été substituée à un tracé consonantique arabe que les manuscrits ne vocalisent pas. Accès libre."
       }
     ],
     "demographics": {

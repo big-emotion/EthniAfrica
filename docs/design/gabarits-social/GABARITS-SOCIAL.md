@@ -679,6 +679,42 @@ ethniafrica.com · @ethniafrica
 - En 9:16 le bloc est au-dessus de y = 1620, sinon l'obligation d'attribution
   est masquée par l'interface.
 
+### Quand le document exact n'existe pas — le voisin le plus proche
+
+**Décidé par l'opérateur le 2026-09-16**, en cherchant une photographie des
+fourneaux de Douroula pour le sujet Burkina Faso. Commons n'en porte aucune, et
+cinq échelons sont revenus vides l'un après l'autre : le site, la commune, la
+région, le fleuve, les forgerons du pays.
+
+La règle : **on descend d'échelon en échelon vers le voisin le plus proche du
+sujet, et on s'arrête au premier document réellement disponible, qu'on crédite
+pour ce qu'il est.** Le voisinage se mesure sur le sujet — le lieu, le peuple, la
+langue, la matière — jamais sur la ressemblance de l'image. Un fourneau camerounais
+dans une scène sur Douroula reste un fourneau camerounais : le crédit le dira,
+et la scène se videra au lieu d'être servie. Un substitut qui ressemble n'est pas
+un voisin.
+
+Quand tous les échelons sont vides, deux issues, jamais l'approximation : une carte
+sans photographie — disposition B, mot plein cadre (§5) — ou une image générée,
+ci-dessous.
+
+### Une image générée est admise, et elle se déclare
+
+**Décidé par l'opérateur le 2026-09-16**, pour une scène dont aucun document libre
+n'existe. Elle suit la doctrine déjà écrite pour les Découvertes,
+`docs/design/imagery-collections.md`, qui gouverne la génération et **n'est pas
+recopiée ici** : stylisée, jamais photoréaliste, **jamais de personne
+photoréaliste**, et portant la marque « image générée ».
+
+Sur une carte sociale, le bloc de crédit nomme la génération à la place de
+l'auteur et du dépôt, et la licence de l'image est CC BY-SA 4.0, limitée à la part
+humaine. Elle entre dans le calcul de la licence de sortie comme toute autre.
+
+**Une image générée ne remplace jamais un document qui existe.** Elle est le
+dernier échelon du voisinage, pas un raccourci pour éviter la recherche : une
+scène rendue en image générée alors qu'une photographie libre existait est une
+scène qui a menti par confort.
+
 ---
 
 ## 7 bis. Le filigrane

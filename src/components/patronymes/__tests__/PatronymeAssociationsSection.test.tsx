@@ -21,6 +21,7 @@ const base: PublicPatronyme = {
   ],
   associatedCountries: [{ id: "MLI", nameFr: "Mali" }],
   bearers: [],
+  namedBearers: [],
   alliances: [],
 };
 

@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "langue",
+    "directives": "Voir DIRECTIVES-AFRIK.md pour les règles de rédaction complètes."
+  },
+  "id": "emk",
+  "isoCode639_3": "emk",
+  "glottocode": "east2426",
+  "nameFr": "Maninkakan de l'Est",
+  "nameEn": "Eastern Maninkakan",
+  "alternateNames": [],
+  "spellingAliases": [],
+  "familyId": "FLG_MANDE",
+  "peoples": [
+    {
+      "name": "Malinké",
+      "peopleId": "PPL_MALINKE"
+    }
+  ],
+  "content": {
+    "vehicularRole": null,
+    "dialects": ["Amana", "Bö", "Koulounkalan", "Wasulu"],
+    "vitalityStatus": {
+      "status": "Wider communication",
+      "scale": "EGIDS (Ethnologue)",
+      "asOf": 2025
+    },
+    "sources": [
+      {
+        "title": "Glottolog 5.3 — Eastern Maninkakan (east2426)",
+        "url": "https://glottolog.org/resource/languoid/id/east2426",
+        "tier": "official",
+        "notes": "Notice directe pour le code ISO 639-3 emk et le glottocode east2426. Classification Glottolog, du plus large au plus étroit : Mande, Mande occidental, Manding-Kpelle, Mande central, Manding-Jogo, Manding-Vai, Manding-Mokole, Manding, Manding oriental, Manenkan. La notice reprend l'appréciation EGIDS d'Ethnologue 2025, niveau 3, communication élargie, situe la langue en Guinée, au Mali, en Sierra Leone, au Liberia et en Côte d'Ivoire, et rappelle son usage de langue de cour et de gouvernement sous l'empire du Mali. Les dialectes listés sont les sous-languoids que Glottolog rattache à east2426, hors languoids portant leur propre code ISO 639-3. Consultée le 2026-09-16."
+      },
+      {
+        "title": "ISO 639-3, tables de codes publiées par SIL Global, autorité d'enregistrement de la norme",
+        "url": "https://iso639-3.sil.org/code_tables/download_tables",
+        "tier": "official",
+        "notes": "Tables du 2026-07-15, consultées le 2026-09-16. La table des macrolangues rattache le code emk à la macrolangue man, Mandingo, aux côtés notamment du mandinka. Les codes du bambara et du dioula, eux, n'appartiennent à aucune macrolangue. Un même continuum mandingue est donc coupé de deux façons selon le code, ce qui montre que le partage entre langue et dialecte est ici une décision de codification, prise code par code par un organisme, et non une frontière relevée sur le terrain."
+      }
+    ]
+  }
+}
