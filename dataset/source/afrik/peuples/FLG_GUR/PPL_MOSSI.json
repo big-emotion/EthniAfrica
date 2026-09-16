@@ -25,8 +25,8 @@
       "Nyon-nyonse (anciens habitants des zones controlees par les Mossi avant leur arrivee)"
     ],
     "origins": {
-      "ancientOrigins": "Selon la tradition orale et les archives mossi en ecriture Ajami, les Mossi sont issus du mariage entre la princesse guerriere yennenga, fille du roi Naa Gbewaa de l'actuel nord Ghana (Dagomba), et un chasseur Mande nomme Riale. Leur fils Ouedraogo est considere comme le pere fondateur du peuple mossi. L'histoire recense leur existence en tant qu'etat des le 11e siecle. Ils conquirent un vaste territoire en maitisant le cheval.",
-      "formationPeriod": "Les differents clans mossi se constituerent en ethnie unifiee vers 1500 lorsque les cavaliers conquerants Nakomse creerent une classe dirigeante sur les peuples locaux (Tengabisi). L'empire mossi se consolida avec Ouagadougou comme capitale. La colonisation française (protectorat accepte en 1896) freina l'expansion mais ne detruisit pas l'organisation politique.",
+      "ancientOrigins": "Selon la tradition orale et les archives mossi en ecriture Ajami, les Mossi sont issus du mariage entre la princesse guerriere yennenga, fille du roi Naa Gbewaa de l'actuel nord Ghana (Dagomba), et un chasseur Mande nomme Riale. Leur fils Ouedraogo est considere comme le pere fondateur du peuple mossi. La tradition mossi fait remonter leur existence en tant qu'État au 11e siècle ; les travaux publiés situent la formation des royaumes à la fin du 15e siècle, et les Mossi datent eux-mêmes leur pouvoir des environs de 1500. Ils conquirent un vaste territoire en maitisant le cheval.",
+      "formationPeriod": "Les differents clans mossi se constituerent en ethnie unifiee vers 1500 lorsque les cavaliers conquerants Nakomse creerent une classe dirigeante sur les peuples locaux (Tengabisi). L'empire mossi se consolida avec Ouagadougou comme capitale. La conquête française — prise de Ouagadougou en 1896, traité de protectorat en 1897 — freina l'expansion mais ne détruisit pas l'organisation politique.",
       "migrationRoutes": [
         "Origines au nord de l'actuel Ghana (region de Pusiga, berceau de Naa Gbewaa)",
         "Migration vers le nord et le centre de l'actuel Burkina Faso (Volta basin)",
@@ -42,7 +42,7 @@
       ],
       "unificationsOrDivisions": "Les Mossi forment une entite plurielle composee de plusieurs royaumes (Ouagadougou, Yatenga, Tenkodogo, Zandoma, Bulkiemdé). Le Mogho Naaba de Ouagadougou est reconnu comme autorite morale supremes. La scission entre les royaumes de Ouagadougou et Yatenga, liee a une dispute de succession ou la soeur du Moro Naaba s'enfuit vers Yatenga avec les amulettes de pouvoir (nam), est fondatrice de la dualite politique mossi.",
       "externalInfluences": "Islamisation partielle depuis le 18e siecle par les marchands musulmans, mais la population generale resista longtemps a la conversion. Colonisation française (1896-1960) : le Mogho Naaba fut reconnu comme autorite secondaire. Incorporation dans la Haute-Volta puis le Burkina Faso (independance 1960). Influence de l'emigration vers la Cote d'Ivoire depuis les annees 1950.",
-      "majorHistoricalEvents": "11e siecle : formation du premier etat mossi. 1495 : fondation du royaume de Yatenga. 1737 : tentative repoussee d'invasion de Tombouctou. 1896 : acceptation du protectorat français par le Mogho Naaba apres la bataille de Ouagadougou. Seconde Guerre mondiale : engagement massif des Mossi dans les Tirailleurs Senegalais. 1960 : independance de la Haute-Volta (future Burkina Faso). Aujourd'hui, le Mogho Naaba reste une figure morale de premier plan."
+      "majorHistoricalEvents": "11e siècle : formation du premier État mossi selon la tradition ; la fin du 15e siècle selon les travaux publiés. 1495 : fondation du royaume de Yatenga. 1737 : tentative repoussee d'invasion de Tombouctou. 1896 : le Mogho Naaba Wobgo refuse les propositions françaises ; la colonne du lieutenant Voulet prend Ouagadougou le 1er septembre et le souverain quitte sa capitale. 1897 : un traité place le Mogho sous protectorat français, obtenu d'un Mogho Naaba installé à sa place. Seconde Guerre mondiale : engagement massif des Mossi dans les Tirailleurs Senegalais. 1960 : independance de la Haute-Volta (future Burkina Faso). Aujourd'hui, le Mogho Naaba reste une figure morale de premier plan."
     },
     "organization": {
       "traditionalPoliticalSystem": "L'organisation politique mossi est hierarchique, avec le Mogho Naaba (roi suprême du Moogho) residant a Ouagadougou. Il exerce un pouvoir executif, et est consulte pour les decisions importantes. Les Nakomse (nobles) de la famille du Mogho Naaba gouvernent les provinces (chefs de villages ou de cantons appeles Naaba) en son nom. Le systeme distingue une classe politique (Nakomse, conquerants) et une classe spirituelle (Tengabisi, proprietaires de la terre par droit d'occupation premiere).",
@@ -136,6 +136,18 @@
         "title": "CIA World Factbook - Burkina Faso",
         "url": "https://www.cia.gov/the-world-factbook/countries/burkina-faso/",
         "tier": "official"
+      },
+      {
+        "title": "Alain Maharaux, « La Haute-Volta devient Burkina Faso : un territoire qui se crée, se défait et s'affirme au rythme des enjeux », colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995",
+        "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-32.pdf",
+        "tier": "referenced",
+        "notes": "Communication de colloque, archivée par l'Institut de recherche pour le développement. Lue le 16 septembre 2026 : la conquête des pays mossi en 1896 y est décrite comme une opération militaire."
+      },
+      {
+        "title": "« Septembre 1896 – septembre 2016, il y a 110 ans la bataille et la prise de Ouagadougou », leFaso.net",
+        "url": "https://lefaso.net/spip.php?article73244",
+        "tier": "referenced",
+        "notes": "Presse burkinabè. Lue le 16 septembre 2026 : le refus opposé par le Mogho Naaba Wobgo, la marche de la colonne Voulet, la prise de Ouagadougou le 1er septembre 1896, le départ du souverain et le traité obtenu en janvier 1897. L'article date par ailleurs la conférence de Berlin de 1888, ce qui est inexact."
       }
     ]
   },
