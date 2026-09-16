@@ -4982,7 +4982,7 @@ export function checkCountryFamilyReferences(
  * pair however many of the country's lists name the people. Two-way ratchet:
  * above it a new mismatch appeared; below it the constant must follow.
  */
-export const COUNTRY_PEOPLE_MEMBERSHIP_CEILING = 9;
+export const COUNTRY_PEOPLE_MEMBERSHIP_CEILING = 8;
 
 export function checkCountryPeopleMembership(
   datasetRoot: string,

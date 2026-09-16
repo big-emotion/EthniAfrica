@@ -4,12 +4,12 @@
   "nameEn": "Côte d'Ivoire",
   "nameOfficial": "République de Côte d'Ivoire (République de Côte d'Ivoire)",
   "summary": "La Côte d'Ivoire porte le nom d'une marchandise : les navigateurs portugais désignaient ce littoral par ce qu'on y achetait, et le français a fixé l'appellation au XIXe siècle. Le pays réunit royaumes akan, peuples krou, mandé et voltaïques, soit une soixantaine de groupes. Le baoulé, l'agni et le dioula structurent le quotidien à côté du français.",
-  "etymology": "Le nom \"Côte d'Ivoire\" provient du français et fait référence au commerce de l'ivoire qui se pratiquait le long de la côte atlantique depuis le XVe siècle. Les navigateurs portugais utilisaient le terme \"Costa do Marfim\" (Côte d'Ivoire en portugais) pour désigner cette région riche en éléphants et en ivoire. Le nom a été officialisé par les Français lors de la création de la colonie en 1893.",
-  "nameOriginActor": "Le nom \"Côte d'Ivoire\" a été donné par les navigateurs européens (portugais, puis français) à partir du XVe siècle en référence au commerce de l'ivoire pratiqué le long de la côte. Les Français ont officialisé ce nom lors de la création de la colonie de Côte d'Ivoire en 1893. Le nom n'est pas traduit dans les langues étrangères (contrairement à d'autres pays) pour préserver l'identité nationale.",
+  "etymology": "Le nom Côte d'Ivoire renvoie au commerce de l'ivoire pratiqué le long du littoral. Des navigateurs portugais passent le cap des Palmes en 1471, mais l'appellation qui a donné le nom actuel est néerlandaise : au début du XVIIe siècle, des marchands hollandais trouvent l'ivoire en abondance entre le cap des Palmes et Fresco et nomment ce littoral Tand Kust, la côte des dents. Alfred Schwartz, qui a étudié cette période, attribue à cette appellation l'origine du nom actuel. Les Français le fixent ensuite : le décret du 17 décembre 1891 crée la colonie de Côte d'Ivoire, celui du 10 mars 1893 l'organise comme colonie distincte, aux côtés de la Guinée française et du Bénin.",
+  "nameOriginActor": "Le nom a été donné depuis la mer, par des marchands et des navigateurs européens, en référence à ce qu'on achetait sur ce littoral. L'appellation néerlandaise Tand Kust, la côte des dents, employée au début du XVIIe siècle, est celle dont procède le nom actuel. L'administration française l'a ensuite fixé par décret, à la fin du XIXe siècle. Depuis 1985, la Côte d'Ivoire demande que son nom ne soit plus traduit dans les autres langues.",
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Costa do Marfim (portugais, XVe siècle)",
+        "Tand Kust, la côte des dents (néerlandais, XVIIe siècle)",
         "Colonie de Côte d'Ivoire (1893-1960)"
       ],
       "antiquity": "Le territoire actuel de la Côte d'Ivoire était peuplé de diverses sociétés sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs royaumes et territoires (royaumes Akan, chefferies Krou, etc.).",
@@ -98,9 +98,7 @@
           "Baoulé",
           "Agni",
           "Abron",
-          "Attié (dialectes akan",
-          "aka",
-          "ISO 639-3)",
+          "Attié (dialectes akan, aka, ISO 639-3)",
           "français"
         ],
         "languageFamily": "FLG_KWA",
@@ -117,12 +115,8 @@
         "peopleId": "PPL_SENUFO",
         "mainRegion": "Nord de la Côte d'Ivoire",
         "languages": [
-          "Sénufo (sen",
-          "sef",
-          "seq",
-          "ISO 639-3)",
-          "Lobi (lob",
-          "ISO 639-3)",
+          "Sénufo (sen, sef, seq, ISO 639-3)",
+          "Lobi (lob, ISO 639-3)",
           "Koulango",
           "français"
         ],
@@ -136,16 +130,13 @@
           "Malinké (terme français)",
           "Mandinka (terme anglophone)",
           "Dioula (terme utilisé pour les commerçants mandé)",
-          "\"Mandingo\" (terme historique",
-          "parfois péjoratif)"
+          "Mandingo (terme historique, parfois péjoratif)"
         ],
         "peopleId": "PPL_MALINKE",
         "mainRegion": "Nord de la Côte d'Ivoire",
         "languages": [
-          "Malinké / Mandinka (mlq",
-          "ISO 639-3)",
-          "Dioula (diu",
-          "ISO 639-3)",
+          "Malinké / Mandinka (mlq, ISO 639-3)",
+          "Dioula (diu, ISO 639-3)",
           "français"
         ],
         "languageFamily": "FLG_MANDE",
@@ -163,12 +154,9 @@
         "peopleId": "PPL_MANDE_DU_SUD",
         "mainRegion": "Ouest de la Côte d'Ivoire",
         "languages": [
-          "Dan (dnj",
-          "ISO 639-3)",
-          "Gouro (goa",
-          "ISO 639-3)",
-          "Wan (wan",
-          "ISO 639-3)",
+          "Dan (dnj, ISO 639-3)",
+          "Gouro (goa, ISO 639-3)",
+          "Wan (wan, ISO 639-3)",
           "français"
         ],
         "languageFamily": "FLG_MANDE",
@@ -183,17 +171,12 @@
           "Guéré (terme utilisé pour Wé)",
           "Dida (termes utilisés par les Européens)"
         ],
-        "peopleId": "PPL_BETE",
+        "peopleId": "PPL_KROU_MACRO",
         "mainRegion": "Centre-Ouest et Ouest de la Côte d'Ivoire (forêts)",
         "languages": [
-          "Bété (bev",
-          "bet",
-          "btg",
-          "ISO 639-3)",
-          "Wé / Guéré (wec",
-          "ISO 639-3)",
-          "Dida (gud",
-          "ISO 639-3)",
+          "Bété (bev, bet, btg, ISO 639-3)",
+          "Wé / Guéré (wec, ISO 639-3)",
+          "Dida (gud, ISO 639-3)",
           "français"
         ],
         "languageFamily": "FLG_KROU",
@@ -203,7 +186,7 @@
         "name": "Autres peuples",
         "selfAppellation": "Variées selon les groupes",
         "exonyms": ["Variées selon les groupes"],
-        "peopleId": "PPL_DIOLA",
+        "peopleId": null,
         "mainRegion": "Diverses régions de la Côte d'Ivoire",
         "languages": ["Langues diverses", "français"],
         "appellationRemarks": "Chaque groupe a sa propre auto-appellation. Pas de terme péjoratif connu."
@@ -324,6 +307,12 @@
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official"
+      },
+      {
+        "title": "Schwartz, Alfred — Histoire de la Côte des Dents (Sud-Ouest ivoirien), ORSTOM, 1972",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Étude du peuplement du sud-ouest ivoirien. Elle attribue aux marchands hollandais l'appellation Tand Kust, la côte des dents, dont procède le nom du pays."
       }
     ],
     "demographics": {
@@ -364,7 +353,7 @@
           "name": "Krou",
           "population": 2970000,
           "percentageInCountry": 11,
-          "peopleId": "PPL_BETE",
+          "peopleId": "PPL_KROU_MACRO",
           "region": "Centre-Ouest et Ouest de la Côte d'Ivoire (forêts)",
           "languageFamily": "FLG_KROU"
         },
@@ -372,7 +361,7 @@
           "name": "Autres peuples",
           "population": 1080000,
           "percentageInCountry": 4,
-          "peopleId": "PPL_DIOLA",
+          "peopleId": null,
           "region": "Diverses régions de la Côte d'Ivoire"
         }
       ]
