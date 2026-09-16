@@ -753,7 +753,7 @@ s'écrit ici d'abord, jamais dans une carte.
 | Le lot parle de | Patron de titre d'ouverture | Mot en accent à l'ouverture | Titre de clôture | Mot en accent à la clôture | Corps de clôture |
 | --- | --- | --- | --- | --- | --- |
 | un peuple réparti sur plusieurs pays | « Du {pays} au {pays}, les frontières traversent les {peuple}. » | « {peuple}. » | « Ce peuple n'a pas été divisé. » | « divisé. » | « C'est la carte qui a été dessinée par-dessus. » |
-| un pays et les peuples qui y vivent — *validée le 2026-09-14* | « {Pays}, c'est {n} peuples. » — *sauf sous-cas « qui a nommé ce pays », voir ci-dessous* | « peuples. » | « Ces peuples n'ont pas été rassemblés. » | « rassemblés. » | « C'est la carte qui a été dessinée autour d'eux. » |
+| un pays et les peuples qui y vivent — *validée le 2026-09-14* | « {Pays}, c'est {n} peuples. » — *sauf sous-cas « qui a nommé ce pays » ou « le mythe du surnom », voir ci-dessous* | « peuples. » | « Ces peuples n'ont pas été rassemblés. » | « rassemblés. » | « C'est la carte qui a été dessinée autour d'eux. » |
 | des villes, des lieux | un registre de la banque ci-dessous | celui du registre | « Cette ville n'a pas changé de nom. » | « nom. » | « On l'a rebaptisée. » |
 | une projection, une carte | un registre de la banque ci-dessous | celui du registre | « La carte ne mentait pas. Elle ne disait pas tout. » | « tout. » | « On l'a redessinée. » |
 | le nom d'un pays | un registre de la banque ci-dessous | celui du registre | « Ce pays ne s'est pas renommé. » | « renommé. » | « On l'a rebaptisé. » — *dérivé de la ligne des villes le 2026-09-13, à valider* |
@@ -819,6 +819,30 @@ du pays**.
   de quoi), dans un des registres de la banque de patrons ci-dessous — jamais le compte
   de peuples, qui appartient à la clôture.
 - **`ethniafrica-message`, critère 2** lit ce sous-cas différemment : voir ce skill.
+
+**Second sous-cas : un lot qui défait un mythe porté par le surnom du pays lui-même —
+l'ouverture assertit le surnom, pas le compte.** Décidé par l'opérateur le 2026-09-16,
+pour le sujet `cameroun-afrique-en-miniature` : le mythe n'est pas « ce pays est trop peu
+connu », c'est une revendication déjà répandue — « on y retrouve tous les peuples
+d'Afrique », d'où le surnom « le Continent » — que le compte de peuples vient justement
+mesurer et contredire. Ouvrir sur « {Pays}, c'est {n} peuples. » énoncerait la conclusion
+avant la question et viderait la suite de sa tension : le lecteur doit d'abord reconnaître
+la croyance, avant que la pièce ne la mesure.
+
+- **L'ouverture assertit le surnom lui-même**, dans un des registres de la banque de
+  patrons ci-dessous — jamais le compte de peuples, qui reste réservé au corps du lot, là
+  où il contredit la revendication.
+- **Le compte de peuples migre au corps**, comme démonstration plutôt que comme titre : il
+  y assume sa source (un chiffre publié, jamais recopié du corpus sans le dire) et sa
+  limite (ce que l'atlas documente lui-même, s'il est moindre).
+- **La clôture du type ci-dessus (« Ces peuples n'ont pas été rassemblés. ») reste
+  inchangée** — comme pour le sous-cas « qui a nommé le pays », c'est l'ouverture qui
+  s'écarte du patron, jamais la clôture.
+- **Distinct du sous-cas « qui a nommé le pays » ci-dessus** : celui-là renverse l'ordre
+  du corps parce que le sujet est un acte (nommer) ; celui-ci renverse l'ouverture parce
+  que le sujet est une croyance (un surnom) que le compte vient réfuter — une pièce qui
+  ouvre sur le compte n'a encore fait reconnaître à personne la croyance qu'elle va
+  démonter.
 
 **Ce qu'aucune clôture n'écrit, quel que soit le type**, tant que la session de doctrine
 n'a pas tranché : « Berlin » comme celui qui a tracé les lignes — la conférence de
