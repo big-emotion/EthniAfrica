@@ -381,7 +381,7 @@ def test_the_engine_applies_the_rule_it_does_not_decide():
 
 def test_auto_follows_paragraph_6_including_the_resolution_fallback():
     grande, petite = image_test(3000, 4000), image_test(900, 533)
-    assert gab.plan(carte(role="ouverture", corps=""), DECK, "carrousel",
+    assert gab.plan(carte(role="bascule", corps=""), DECK, "carrousel",
                     image=grande).disposition == "B"
     assert gab.plan(carte(), DECK, "carrousel", image=grande).disposition == "A"
     assert gab.plan(carte(), DECK, "reel", image=petite).disposition == "C"
@@ -399,24 +399,38 @@ def test_a_figure_no_longer_earns_a_cartouche_on_its_own():
 
 
 def test_B_takes_one_line_of_explanation_and_refuses_a_pair():
-    """§6 — without that allowance B does not exist.
+    """§6 — B is the layout of the bascule, and of nothing else.
 
-    Every opening card carries a body, so the « no body » condition was never met
-    by anything: the ceiling of two held at zero, an exception its own rule made
-    impossible. What B refuses is the pair — a full-frame word and a two-term table
-    fight over the same centre.
+    The word carries, one line explains it. What B refuses is the pair: a
+    full-frame word and a two-term table fight over the same centre.
     """
     grande = image_test(3000, 4000)
-    for role in ("ouverture", "bascule"):
-        court = carte(role=role, corps="Une ligne qui explique le mot.")
-        assert len(court["corps"]) <= tk.CORPS_COURT
-        assert gab.plan(court, DECK, "carrousel", image=grande).disposition == "B"
+    court = carte(role="bascule", corps="Une ligne qui explique le mot.")
+    assert len(court["corps"]) <= tk.CORPS_COURT
+    assert gab.plan(court, DECK, "carrousel", image=grande).disposition == "B"
 
-        long = carte(role=role, corps="x" * (tk.CORPS_COURT + 1))
-        assert gab.plan(long, DECK, "carrousel", image=grande).disposition != "B"
+    long = carte(role="bascule", corps="x" * (tk.CORPS_COURT + 1))
+    assert gab.plan(long, DECK, "carrousel", image=grande).disposition != "B"
 
-        avec_paire = carte(role=role, corps="Court.", paires=PAIRE)
-        assert gab.plan(avec_paire, DECK, "carrousel", image=grande).disposition != "B"
+    avec_paire = carte(role="bascule", corps="Court.", paires=PAIRE)
+    assert gab.plan(avec_paire, DECK, "carrousel", image=grande).disposition != "B"
+
+
+def test_an_opening_is_never_B():
+    """§6 and §11 — « B est la disposition de la bascule, jamais de l'ouverture ».
+
+    `choisir()` admitted the opening until 2026-09-16, reading the vision line an
+    opening carries as B's one explaining line. That line is constant furniture,
+    identical on every lot ever published; it is not the card's argument and it
+    should decide no layout. Measured on `diallo-djallo`: the opening took B on a
+    44-sign vision line, and its eight-word title then asked 600 px of B's 507 —
+    an overflow §1 ter forbids resolving by shrinking the title.
+    """
+    grande = image_test(3000, 4000)
+    for corps in ("", "Nommer un peuple aussi facilement qu'un pays."):
+        p = gab.plan(carte(role="ouverture", corps=corps), DECK, "carrousel",
+                     image=grande)
+        assert p.disposition == "A", f"ouverture en {p.disposition} avec corps {corps!r}"
 
 
 def test_the_choice_of_A_is_measured_not_counted():

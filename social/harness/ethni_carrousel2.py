@@ -82,6 +82,18 @@ def main():
     verdict = gab.portes(deck["cartes"], deck)
     deck["licence_sortie"] = verdict.licence_sortie
 
+    # §5 — the message gate, read from the verdicts filed beside the deck. It is
+    # the fifth of the five `ethniafrica-produire` names, and the engine held only
+    # four until 2026-09-16: a lot that cleared licences, credits, internal notes
+    # and enlargement was filed as publishable however the message audit had ruled.
+    # It refuses nothing that the others do not already refuse the same way — the
+    # lot still renders, it renders as a proof.
+    message = gab.porte_message(racine)
+    if message:
+        verdict = gab.Verdict(passe=False, manquantes=verdict.manquantes + message,
+                              licence_sortie=verdict.licence_sortie,
+                              remarques=verdict.remarques)
+
     # §6 — the layout quota is a property of the lot, so it has to be known before
     # a single file is written: a deck out of quota must not reach `images/`.
     # Planning costs nothing to run twice — it asserts geometry without drawing —
@@ -200,7 +212,7 @@ def main():
 
     if verdict.passe:
         cibles = ", ".join(f"{fmt_key} → `{nom}/`" for fmt_key, nom in dossiers_reseaux.items())
-        lignes += [f"Les quatre portes sont franchies. Le lot part par réseau : {cibles}.", ""]
+        lignes += [f"Les cinq portes sont franchies. Le lot part par réseau : {cibles}.", ""]
     else:
         lignes += ["**Épreuve.** Portes non franchies :", ""]
         lignes += [f"- {m}" for m in verdict.manquantes]

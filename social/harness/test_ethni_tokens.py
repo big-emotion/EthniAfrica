@@ -155,12 +155,23 @@ def test_oversample_ceiling_and_layout_choice():
         "un plafond en signes n'est plus la règle : voir `colonne_A_tient`")
 
     # B is the word that carries, with one line to explain it.
-    assert tk.choisir({"role": "ouverture", "corps": "Une ligne."},
+    assert tk.choisir({"role": "bascule", "corps": "Une ligne."},
                       w=3000, h=4000, fmt_key="carrousel") == "B"
-    assert tk.choisir({"role": "ouverture", "corps": "x" * 91},
+    assert tk.choisir({"role": "bascule", "corps": "x" * 91},
                       w=3000, h=4000, fmt_key="carrousel") == "A"
     # What B refuses is the pair.
-    assert tk.choisir({"role": "ouverture", "corps": "Court.", "paires": [1, 2]},
+    assert tk.choisir({"role": "bascule", "corps": "Court.", "paires": [1, 2]},
+                      w=3000, h=4000, fmt_key="carrousel") == "A"
+
+    # §6 and §11 — « B est la disposition de la bascule, jamais de l'ouverture »,
+    # and §7 ter fixes the opening in A. The vision line an opening carries is
+    # constant furniture, not the card's argument, so it must not be what decides
+    # a layout. Measured on `diallo-djallo`, 2026-09-16: the opening went to B on
+    # a 44-sign vision line and its eight-word title then overflowed B's tighter
+    # slot — 600 px asked of 507 — which §1 ter forbids resolving by shrinking.
+    assert tk.choisir({"role": "ouverture", "corps": "Une ligne."},
+                      w=3000, h=4000, fmt_key="carrousel") == "A"
+    assert tk.choisir({"role": "ouverture", "corps": ""},
                       w=3000, h=4000, fmt_key="carrousel") == "A"
     # A figure earns no cartouche on its own.
     assert tk.choisir({"role": "entree", "chiffre": "30,38", "corps": ""}, w=3000, h=4000, fmt_key="carrousel") == "A"

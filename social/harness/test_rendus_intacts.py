@@ -107,6 +107,16 @@ def _deck_temporaire(source_nom, bac, casser_licence, casser_composition=False):
         ouverture["disposition"] = "auto"   # this deck pins its opening to A
     (projet / "cards.json").write_text(json.dumps(deck, ensure_ascii=False, indent=2),
                                        encoding="utf-8")
+
+    # §5 — the message gate reads a verdict filed beside the deck and refuses one
+    # older than the text it judges. Copying a deck and rewriting its `cards.json`
+    # makes the real `message.md` stale by construction, so the fixture files a
+    # fresh passing verdict: what these tests are about is where renders land, not
+    # whether an audit was run.
+    (projet / "message.md").write_text(
+        "# Audit du message\n\nverdict : **passe**\n", encoding="utf-8")
+    (projet / "mythe.md").write_text(
+        "# Mythe\n\nverdict : **explique**\n", encoding="utf-8")
     return projet, sujet
 
 
@@ -185,7 +195,7 @@ def test_a_composition_fault_never_reaches_a_network_folder():
             f"une épreuve porte le suffixe `-epreuve` : {sorted(epreuves)}")
 
         rapport = (sujet / "_epreuves" / "RENDU.md").read_text(encoding="utf-8")
-        assert "Les quatre portes sont franchies" not in rapport, (
+        assert "Les cinq portes sont franchies" not in rapport, (
             "le rapport d'une épreuve ne peut pas annoncer un lot qui passe")
 
 

@@ -2324,6 +2324,60 @@ def portes_de_la_carte(manquantes, carte):
             if m.startswith(prefixe) or not _PORTE_D_UNE_CARTE.match(m)]
 
 
+#: The two verdicts written beside a deck, and the wording that refuses a lot.
+#: `mythe.md` is optional — `ethniafrica-mythe` says an absent check is not a
+#: refusal — while `message.md` is not: no audit is not a pass, since the gate
+#: exists precisely for the lots nobody had looked at.
+_AUDITS = (("message.md", True), ("mythe.md", False))
+_REFUS = "ne passe pas"
+
+
+def porte_message(racine):
+    """§5 — the message gate, read from the verdicts filed beside the deck.
+
+    `ethniafrica-produire` describes five gates and the engine only held four:
+    the fifth lived in the skill's head, so a lot clearing licences, credits,
+    internal notes and enlargement was filed as publishable however the message
+    audit had ruled. Measured on `diallo-djallo`, 2026-09-16 — `message.md` said
+    « ne passe pas », twelve renders went to the network folders anyway.
+
+    Dates count as much as wording. A verdict older than the text it judges has
+    judged a different text, which is the failure mode `produire` names: « un
+    verdict rendu sur une version précédente du texte ne juge pas celle qu'on
+    rend ».
+    """
+    racine = pathlib.Path(racine)
+    juges = [racine / nom for nom in ("cards.json", "cartes.json",
+                                      "narration.fr.txt", "post.md")]
+    juges = [p for p in juges if p.exists()]
+
+    manquantes = []
+    for nom, obligatoire in _AUDITS:
+        audit = racine / nom
+        if not audit.exists():
+            if obligatoire:
+                manquantes.append(
+                    f"aucun `{nom}` à côté du deck — lance l'audit du message "
+                    f"avant de rendre : sans verdict, la cinquième porte est fermée")
+            continue
+
+        texte = audit.read_text(encoding="utf-8", errors="replace").lower()
+        # « ne passe pas » contains « passe ». Refusal is read first, always.
+        if _REFUS in texte:
+            manquantes.append(
+                f"`{nom}` dit « ne passe pas » — le lot sort en épreuve tant que "
+                f"le verdict n'a pas changé")
+            continue
+
+        perimes = [p.name for p in juges if p.stat().st_mtime > audit.stat().st_mtime]
+        if perimes:
+            manquantes.append(
+                f"`{nom}` est plus ancien que {', '.join(sorted(perimes))} — "
+                f"il juge une version précédente du texte, relance l'audit")
+
+    return manquantes
+
+
 def portes(cartes, deck, identites=None):
     """§7 and §11 — the four gates, as one verdict in the operator's language."""
     manquantes = []
