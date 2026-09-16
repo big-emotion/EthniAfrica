@@ -102,6 +102,53 @@ def main():
                               licence_sortie=verdict.licence_sortie,
                               remarques=verdict.remarques)
 
+    # Composition faults are a property of the lot too, and for the same reason:
+    # the verdict decides *where* a render is filed, so everything that can refuse
+    # the lot has to be known before the first file is written.
+    #
+    # Measured on `diallo-djallo`, 2026-09-16. This pass used to live inside the
+    # render loop, so the destination was chosen from a verdict that still said
+    # « passe » and the twelve renders landed in the network folders — unstamped,
+    # unsuffixed, one upload away from publication — while the report went to
+    # `_epreuves/` announcing that the four gates had been cleared. Nothing in the
+    # run said the two disagreed.
+    #
+    # Planning and painting cost nothing to run twice: neither writes.
+    fautes = []
+    blocages = []
+    rangees = []
+    for carte in deck["cartes"]:
+        image = images[carte["image"]["fichier"]]
+        for fmt_key in FORMATS:
+            plan = gab.plan(carte, deck, fmt_key, image=image)
+            cadre = tk.fmt(fmt_key)
+            sur_ech = max(cadre["w"] / image.width, cadre["h"] / image.height)
+
+            # The plan says what should be on the card; painting says what is.
+            # Nothing compared them, and three blocks went missing that way — the
+            # rank's total, the pastille and the lockup.
+            for nom in gab.blocs_non_peints(carte, deck, fmt_key, image=image):
+                blocages.append(f"carte {carte['rang']:02d} en {fmt_key} : "
+                                f"« {nom} » est au plan et n'est pas peint")
+            pourquoi = _pourquoi(plan, carte, image, fmt_key, deck)
+            if plan.fautes:
+                # A composition fault is not a remark. A lot that could not be made
+                # legible without drowning its own photograph does not ship.
+                blocages.extend(f"carte {carte['rang']:02d} en {fmt_key} : {f}"
+                                for f in plan.fautes)
+                pourquoi += " — **" + " · ".join(plan.fautes) + "**"
+                fautes.append(f"carte {carte['rang']:02d} en {fmt_key} : {plan.fautes[0]}")
+            rangees.append(
+                f"| {carte['rang']:02d} | {fmt_key} | {plan.disposition} | "
+                f"{pourquoi} | ×{sur_ech:.2f} |")
+            print(f"  {carte['rang']:02d} {fmt_key} → {plan.disposition}", flush=True)
+
+    if blocages:
+        verdict = gab.Verdict(passe=False,
+                              manquantes=verdict.manquantes + blocages,
+                              licence_sortie=verdict.licence_sortie,
+                              remarques=verdict.remarques)
+
     # `outDir` in the retired schema pointed straight at `images/`. The proof
     # folder is its sibling, not its child: an épreuve inside `images/` is one
     # upload away from being published, which is the one thing it must not be.
@@ -159,11 +206,7 @@ def main():
         lignes += [f"- {m}" for m in verdict.manquantes]
         lignes += ["", "Le lot reste dans `_epreuves/` et le sujet en 🟡.", ""]
 
-    fautes = []
     ecrits = set()
-    # Composition faults are refusals, not remarks: a lot that could not be
-    # made legible without drowning its own photograph does not ship.
-    blocages = []
     if verdict.remarques:
         lignes += ["", "**À regarder de près.** Ces cartes passent, mais le crédit et "
                    "l'identité ne se recoupent pas :", ""]
@@ -194,34 +237,16 @@ def main():
     lignes += ["| Carte | Format | Disposition | Pourquoi | Agrandissement |",
                "| --- | --- | --- | --- | --- |"]
 
+    # The verdict is settled above, so this loop only writes: every card of the lot
+    # is filed the same way, and none of them can be filed on a verdict a later
+    # card is about to overturn.
+    lignes += rangees
     for carte in deck["cartes"]:
         image = images[carte["image"]["fichier"]]
         for fmt_key in FORMATS:
-            plan = gab.plan(carte, deck, fmt_key, image=image)
-            cadre = tk.fmt(fmt_key)
-            sur_ech = max(cadre["w"] / image.width, cadre["h"] / image.height)
             _, ecrit = gab.rendre(carte, deck, fmt_key, image=image, racine=sortie,
                                   verdict=verdict)
             ecrits.add(ecrit.name)
-
-            # The plan says what should be on the card; the render says what is.
-            # Nothing compared them, and three blocks went missing that way — the
-            # rank's total, the pastille and the lockup.
-            for nom in gab.blocs_non_peints(carte, deck, fmt_key, image=image):
-                blocages.append(f"carte {carte['rang']:02d} en {fmt_key} : "
-                                f"« {nom} » est au plan et n'est pas peint")
-            pourquoi = _pourquoi(plan, carte, image, fmt_key, deck)
-            if plan.fautes:
-                # A composition fault is not a remark. A lot that could not be made
-                # legible without drowning its own photograph does not ship.
-                blocages.extend(f"carte {carte['rang']:02d} en {fmt_key} : {f}"
-                                for f in plan.fautes)
-                pourquoi += " — **" + " · ".join(plan.fautes) + "**"
-                fautes.append(f"carte {carte['rang']:02d} en {fmt_key} : {plan.fautes[0]}")
-            lignes.append(
-                f"| {carte['rang']:02d} | {fmt_key} | {plan.disposition} | "
-                f"{pourquoi} | ×{sur_ech:.2f} |")
-            print(f"  {carte['rang']:02d} {fmt_key} → {plan.disposition}", flush=True)
 
     # The new generation is on disk, so the old one can step aside: only the files
     # that were there before, and only those the render did not overwrite.
@@ -247,15 +272,13 @@ def main():
             print(f"{ecartes} rendus remplac\u00e9s d\u00e9plac\u00e9s dans "
                   f"_rendus-remplaces/", flush=True)
 
-    if blocages:
-        verdict = gab.Verdict(passe=False,
-                              manquantes=verdict.manquantes + blocages,
-                              licence_sortie=verdict.licence_sortie,
-                              remarques=verdict.remarques)
-
     # A passing lot no longer has a single folder to nest the report under — it
     # has one per format — so the report sits at the post's root instead.
     rapport = sortie / "_epreuves" / "RENDU.md" if not verdict.passe else sortie / "RENDU.md"
+    # `rendre()` creates `_epreuves/` on its way past, but only for a lot it knows
+    # is a proof. A lot refused after the last card was written found no folder
+    # here and died on the report instead of filing one.
+    rapport.parent.mkdir(parents=True, exist_ok=True)
     rapport.write_text("\n".join(lignes) + "\n", encoding="utf-8")
 
     if fautes:
