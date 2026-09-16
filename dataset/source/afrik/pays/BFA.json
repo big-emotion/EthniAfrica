@@ -4,19 +4,21 @@
   "nameEn": "Burkina Faso",
   "nameOfficial": "Burkina Faso (Burkina Faso)",
   "summary": "Le nom du Burkina Faso est composé dans deux langues nationales : « pays des hommes intègres », de « burkina » en mooré et « faso » en dioula. Le pays s'appelait Haute-Volta jusqu'en 1984. Son histoire est celle des royaumes mossi — Wogodogo, Yatenga, Tenkodogo — et d'une soixantaine de peuples voltaïques.",
-  "etymology": "Le nom \"Burkina Faso\" signifie \"Pays des hommes intègres\" en mooré (langue mossi) et en dioula (langue mandé). \"Burkina\" vient du mooré et signifie \"intègres\" ou \"honnêtes\", tandis que \"Faso\" vient du dioula et signifie \"pays\" ou \"patrie\". Le nom a été adopté en 1984 par le président Thomas Sankara pour remplacer \"Haute-Volta\", nom colonial français.",
-  "nameOriginActor": "Le nom \"Burkina Faso\" a été choisi par le président Thomas Sankara en 1984 lors de la révolution burkinabè. Il remplace \"Haute-Volta\" (nom colonial français dérivé du fleuve Volta). Le nom reflète l'identité pan-africaine et la diversité linguistique du pays (mooré et dioula).",
+  "etymology": "Le nom \"Burkina Faso\" est composé de deux mots pris dans deux langues différentes du pays : \"burkina\", qui dit l'intégrité et l'honneur en mooré, la langue des Mossi, et \"faso\", qui dit le pays, la terre ou la patrie en dioula, une langue mandé. Ensemble, ils se traduisent par \"la patrie des hommes intègres\". Le nom remplace \"Haute-Volta\", que l'administration coloniale française avait donné à la colonie d'après le fleuve Volta. Une ordonnance du 2 août 1984 établit le changement, qui prend effet le 4 août 1984, jour du premier anniversaire de l'arrivée au pouvoir de Thomas Sankara. Le gentilé \"burkinabè\" n'est formé dans aucune de ces deux langues seule : le géographe Alain Maharaux écrit qu'il emprunte aux trois langues principales du pays. La langue d'origine de sa terminaison et son sens précis ne sont pas établis par les sources réunies ici.",
+  "nameOriginActor": "Le nom a été choisi sous la présidence de Thomas Sankara et établi par une ordonnance du 2 août 1984, entrée en vigueur le 4 août. Les deux mots qui le composent ne sont pas des créations : ils existaient déjà en mooré et en dioula, et le nom les assemble. Le nom qu'il remplace, \"Haute-Volta\", venait du fleuve Volta et avait été donné par l'administration coloniale française, qui créa la colonie par décret du 1er mars 1919 avec Ouagadougou pour capitale.",
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Haute-Volta (1919-1960)",
+        "Haute-Volta (1919-1932)",
+        "Région de la Haute Côte-d'Ivoire (1937-1947)",
+        "Haute-Volta (1947-1960)",
         "République de Haute-Volta (1960-1984)"
       ],
       "antiquity": "Le territoire actuel du Burkina Faso était peuplé de diverses sociétés sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs royaumes et territoires (royaumes mossi, chefferies gur, etc.).",
       "middleAges": "Développement de royaumes mossi (XIe-XIXe siècles) : Wogodogo (Ouagadougou), Yatenga, Tenkodogo, Fada N'Gourma. Développement de chefferies gur (Bobo, Gourounsi, Dagara, etc.). Pas de nom unifié pour l'ensemble du territoire.",
       "precolonial": "Mosaïque de royaumes et chefferies autonomes : royaumes mossi (Wogodogo, Yatenga, Tenkodogo, Fada N'Gourma), chefferies Bobo, Lobi, Dagara, Gourounsi, Senoufo. Peuples Peuls et Touaregs en transhumance dans le nord. Les Européens utilisaient le terme \"Haute-Volta\" pour désigner la région (dérivé du fleuve Volta).",
-      "colonization": "1919-1960 : Haute-Volta (partie de l'Afrique-Occidentale française, AOF). Les Français ont créé la colonie de Haute-Volta en 1919, puis l'ont dissoute en 1932 (territoire réparti entre le Soudan français, la Côte d'Ivoire et le Niger). 1947 : Rétablissement de la Haute-Volta. Le territoire était administré comme une colonie française jusqu'à l'indépendance en 1960.",
-      "contemporary": "1960-1984 : République de Haute-Volta (indépendance le 5 août 1960). 1984 : Burkina Faso (changement de nom le 4 août 1984 par Thomas Sankara). Le nom \"Burkina Faso\" est officiel depuis 1984."
+      "colonization": "1919-1960 : Haute-Volta, dans l'Afrique-Occidentale française. La colonie est créée par décret du 1er mars 1919, détachée du Haut-Sénégal-Niger, avec Ouagadougou pour capitale. Parmi les motifs invoqués lors de sa création figurait la réorientation, vers la Côte d'Ivoire qui manquait de main-d'oeuvre, d'un courant migratoire qui se dirigeait vers la Gold Coast. Un décret du 5 septembre 1932 supprime la colonie et rattache ses territoires à la Côte d'Ivoire, au Soudan français et au Niger ; la partition s'applique à partir du 1er janvier 1933. La Côte d'Ivoire en reçoit la plus grande part, et la plus peuplée : les cercles de Ouagadougou, Gaoua, Batié, Bobo-Dioulasso et une partie de celui de Dédougou. Un décret du 13 juillet 1937 réunit ces territoires sous le nom de Région de la Haute Côte-d'Ivoire, dotée d'une autonomie relative. La loi du 4 septembre 1947 rétablit la Haute-Volta dans ses limites du 5 septembre 1932, avec Ouagadougou pour capitale.",
+      "contemporary": "1960-1984 : République de Haute-Volta, indépendante le 5 août 1960. Le 4 août 1983, Thomas Sankara et un groupe de jeunes officiers prennent le pouvoir. Une ordonnance du 2 août 1984 change le nom du pays, avec effet au 4 août 1984, premier anniversaire de ce changement de régime. Le nom Burkina Faso est officiel depuis cette date, et le gentilé burkinabè remplace voltaïque."
     },
     "kingdoms": [
       {
@@ -318,6 +320,18 @@
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official"
+      },
+      {
+        "title": "Alain Maharaux, « La Haute-Volta devient Burkina Faso : un territoire qui se crée, se défait et s'affirme au rythme des enjeux », colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995",
+        "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-32.pdf",
+        "tier": "referenced",
+        "notes": "Communication de colloque, archivée par l'Institut de recherche pour le développement. Lue intégralement : la création de la colonie en 1919, sa suppression en 1932 et le partage de son territoire, la Région de la Haute Côte-d'Ivoire, le rétablissement de 1947, et la phrase selon laquelle le gentilé emprunte aux trois langues principales du pays."
+      },
+      {
+        "title": "Benjamin Roger, « Le 4 août 1984, Thomas Sankara rebaptisait la Haute-Volta en Burkina Faso », Jeune Afrique, 25 juillet 2014",
+        "url": "https://www.jeuneafrique.com/48652/politique/le-4-ao-t-1984-thomas-sankara-rebaptisait-la-haute-volta-en-burkina-faso/",
+        "tier": "referenced",
+        "notes": "Article de presse signé et daté. Donne la date de l'ordonnance, le 2 août 1984, et son entrée en vigueur le 4 août 1984."
       }
     ],
     "demographics": {
