@@ -10,6 +10,90 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [4.11.0] - 2026-09-16
+
+### Added
+
+- **Every render is filed by the network it is made for.** A production no
+  longer lands in one flat `images/` folder: each destination network gets the
+  format that works there, and a one-time migration moves the back catalogue
+  into the per-network folders (#1095, #1108, #1109).
+- **X is a network of the publishing chain, not an account beside it.** The
+  content strategist now collects per-post figures from all five networks on
+  every run (#1092, #1105).
+- **A video scene may carry several images, and none is held past four
+  seconds.** The first image of a production is a thumbnail and is set like
+  one (#1090, #1096).
+- **The myth check every production step calls.** `ethniafrica-mythe` asks
+  whether a subject undoes a belief its audience actually holds and whether
+  the correction is sourced in a fiche; `idee`, `structure` and `produire`
+  each invoke it (#1088).
+- `ethniafrica-onomastique`, which challenges a production against the
+  project's own subject — who named this people or place, since when, why it
+  sits here, and what the namers left behind (#1106).
+- `ethniafrica-infra`, a platform engineering skill that names no host
+  (#1064).
+- **A source-tier ruling ledger and an admin review queue** for `needs_review`
+  citations, resolved one citation at a time and pulled back into git
+  (#1063). Migration `090` carries the ruling drafts.
+- **Oral narratives are shown before review, and a name record is accepted at
+  any tier** (ETNI-1953, ETNI-1954, #1076). Migration `091` admits them.
+- The quiz plays an attributed oral tradition and says whose it is
+  (ETNI-1956, #1077).
+- The source sheet lists confirmed sources first and introduces the others
+  (REQ-174, #1074).
+- The sign-in mail is sent through Microsoft Graph via Auth's send-email hook
+  (#1094).
+- Translation parity is reported without blocking a commit or a merge
+  (ETNI-1952, #1075).
+- A local Supabase bootstrap and a CI migrations replay (#1054).
+- Gates for strict-model drift, country family references and the
+  research-wave register (#1056).
+- The home's typography is harmonised and tabled in the charter (#1050).
+- Dates are written as digits — doctrine, engine gate, and `/essai` (#1081).
+
+### Changed
+
+- **`FLG_KWA` is created and its 54 peoples are relocated to it** (#1084).
+- **The Amhara titulature and the Rastafari name origin are sourced** (#1104).
+- **Endonym before exonym for every named people**, and the unity-vision
+  doctrine is published as a position separate from the ligne de vision
+  (#1072, #1086).
+- The closing doctrine gains sub-cases for a shared reclaimed name, a people
+  born of a departure, a people known by several exonyms, a family name
+  mistaken for a people, a language wrongly credited to colonizers, a place
+  claimed as discovered, a king-exception subject, a myth carried by a
+  country's own nickname, an acephalous political system, and a word derived
+  from a person's name and title (#1069, #1070, #1071, #1079, #1083, #1085,
+  #1099, #1100, #1101, #1102, #1103).
+- Country-naming episodes lead with actors, not peoples, and a validated text
+  is required before any render — with Wikipedia used to verify claims.
+- A source's standing and a partial breakdown are labelled rather than failing
+  the build (#1078).
+- Chain posts are registered in the library ledger so they land in Brouillon
+  (#1082).
+- Recette egress is cut from the sitemap, the home and the CI renders (#1068).
+- Production code only its own tests reached is removed (#1061).
+- The superseded per-agent Ferry workflows are removed and the Jira setup is
+  aligned with the router (#1053).
+
+### Fixed
+
+- `PPL_YOMBE`'s sourcing is corrected and its duplicate `PPL_KONGO_MAYOMBE` is
+  merged (#1107).
+- A fabricated Kelly/2018 citation is removed from `PPL_VAI` (#1098).
+- The Odjoukrou autonym is recorded and the Adioukrou sources are tiered
+  (#1065).
+- The Twitter card is attributed to the atlas, not the studio (#1097).
+- The sign-in callback redirects to the public site origin (#1093).
+- Session-authenticated routes are let past the API-key check (#1066).
+- Reference-library writes are reserved to moderators and the API edge is
+  hardened (#1058).
+- The site URL, page sizes and cache lifetimes are resolved from named values
+  (#1057).
+- Node 22 everywhere, consent-gated Web Vitals, and the nightly E2E root
+  causes (#1059).
+
 ## [4.10.0] - 2026-09-14
 
 ### Added
@@ -974,7 +1058,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.10.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.11.0...HEAD
+[4.11.0]: https://github.com/big-emotion/ethniafrica/compare/v4.10.0...v4.11.0
 [4.10.0]: https://github.com/big-emotion/ethniafrica/compare/v4.9.0...v4.10.0
 [4.9.0]: https://github.com/big-emotion/ethniafrica/compare/v4.8.0...v4.9.0
 [4.8.0]: https://github.com/big-emotion/ethniafrica/compare/v4.7.0...v4.8.0
