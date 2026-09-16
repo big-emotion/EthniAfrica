@@ -3870,6 +3870,72 @@ const options: swaggerJsdoc.Options = {
           },
           required: ["data", "meta", "errors"],
         },
+        FlagAuditEntry: {
+          type: "object",
+          description:
+            "One recorded step in a report's life. It names the role that acted and the level it was authorised at, never the person: a register has to establish that a decision was taken and at what level of authorisation, and a public register backed by an internal console has no reason to go further.",
+          properties: {
+            event: {
+              type: "string",
+              enum: [
+                "received",
+                "under_review",
+                "accepted",
+                "rejected",
+                "duplicate",
+                "withdrawn",
+                "revision_linked",
+              ],
+              example: "accepted",
+            },
+            occurredAt: {
+              type: "string",
+              format: "date-time",
+              description:
+                "When the step was recorded. The console renders it in UTC, so a moderation timeline reads the same from every time zone.",
+              example: "2026-09-16T08:02:00.000Z",
+            },
+            actorRole: {
+              type: "string",
+              enum: ["reader", "moderator"],
+              example: "moderator",
+            },
+            authorisationLevel: {
+              type: ["string", "null"],
+              enum: ["admin", null],
+              description:
+                "The level the actor held, or null for a reader. The moderation allowlist is flat, so `admin` is the only level the console grants.",
+              example: "admin",
+            },
+          },
+          required: ["event", "occurredAt", "actorRole", "authorisationLevel"],
+        },
+        FlagAuditTrail: {
+          type: "object",
+          properties: {
+            publicSlug: { type: "string", example: "00EZK83QDV" },
+            entries: {
+              type: "array",
+              description:
+                "Oldest first. The first entry is the report's arrival, credited to a reader.",
+              items: { $ref: "#/components/schemas/FlagAuditEntry" },
+            },
+          },
+          required: ["publicSlug", "entries"],
+        },
+        FlagAuditTrailResponse: {
+          type: "object",
+          properties: {
+            data: { $ref: "#/components/schemas/FlagAuditTrail" },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+              maxItems: 0,
+            },
+          },
+          required: ["data", "meta", "errors"],
+        },
         // -----------------------------------------------------------------
         // Epic 10 — Smart Quiz (FR65/FR66, Story 10.7, ETNI-496)
         // -----------------------------------------------------------------

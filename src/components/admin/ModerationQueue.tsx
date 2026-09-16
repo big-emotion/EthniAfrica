@@ -2,11 +2,13 @@
 
 import { useId, useState } from "react";
 
+import { CaseFile } from "@/components/admin/CaseFile";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { formatDate } from "@/lib/languageTag";
 import { adminCopy } from "@/lib/i18n/copy/admin";
+import { moderationConsoleCopy } from "@/lib/i18n/copy/moderationConsole";
 import { createBrowserSupabaseClient } from "@/lib/supabase/auth-client";
 import type { Language } from "@/types/shared";
 
@@ -21,6 +23,22 @@ export interface QueuedReport {
   created_at: string;
   /** Set on a contribution, null on a report. */
   contribution_payload?: Record<string, unknown> | null;
+  target_field_path?: string | null;
+  counter_source_url?: string | null;
+  counter_source_citation?: string | null;
+  /**
+   * The remediation columns, passed through untouched. The case file reads
+   * them defensively — they arrive with their own migration — and the queue
+   * has no opinion on their spelling.
+   */
+  remediationState?: string | null;
+  remediation_state?: string | null;
+  remediationPublishedAt?: string | null;
+  remediation_published_at?: string | null;
+  remediationSummary?: string | null;
+  remediation_summary?: string | null;
+  revisionDraftId?: string | null;
+  revision_draft_id?: string | null;
 }
 
 export interface ModerationQueueProps {
@@ -82,11 +100,19 @@ function QueueRow({
   report: QueuedReport;
 }) {
   const noteId = useId();
+  const caseFileId = useId();
   const [status, setStatus] = useState(report.status);
   const [note, setNote] = useState("");
   const [error, setError] = useState("");
   const [pending, setPending] = useState(false);
+  /**
+   * Collapsed by default, and the panel is unmounted rather than hidden: it
+   * reads the report's register on mount, and a queue of a hundred rows would
+   * otherwise open a hundred requests to show none of them.
+   */
+  const [caseFileOpen, setCaseFileOpen] = useState(false);
   const copy = adminCopy[language].queue;
+  const caseFileCopy = moderationConsoleCopy[language].caseFile;
   const statusLabels: Record<string, string> = {
     open: copy.status.open,
     under_review: copy.status.underReview,
@@ -209,6 +235,24 @@ function QueueRow({
         <p className="mt-afh-md text-afh-small text-afh-flag-open" role="alert">
           {error}
         </p>
+      )}
+
+      <div className="mt-afh-md">
+        <Button
+          aria-controls={caseFileId}
+          aria-expanded={caseFileOpen}
+          onClick={() => setCaseFileOpen((open) => !open)}
+          type="button"
+          variant="outline"
+        >
+          {caseFileOpen ? caseFileCopy.collapse : caseFileCopy.expand}
+        </Button>
+      </div>
+
+      {caseFileOpen && (
+        <div className="mt-afh-md" id={caseFileId}>
+          <CaseFile language={language} report={report} />
+        </div>
       )}
     </li>
   );

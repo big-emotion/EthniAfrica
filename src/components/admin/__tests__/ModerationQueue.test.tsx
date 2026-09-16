@@ -160,6 +160,33 @@ describe("ModerationQueue", () => {
     expect(await screen.findByRole("alert")).toHaveTextContent(/refusé/i);
   });
 
+  /**
+   * The case file reads the report's register when it mounts. Opening every
+   * row's register to show none of them would cost a moderator the queue, so
+   * the panel is unmounted until it is asked for.
+   */
+  // @req REQ-041
+  it("keeps the case file collapsed, and reads no register, until it is opened", () => {
+    const fetchMock = stubFetch();
+    render(<ModerationQueue language="fr" reports={[openReport]} />);
+
+    const toggle = screen.getByRole("button", { name: /ouvrir le dossier/i });
+    expect(toggle).toHaveAttribute("aria-expanded", "false");
+    expect(screen.queryByText(/piste d'audit/i)).toBeNull();
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
+  // @req REQ-041
+  it("opens the case file on the row, showing the trail and the remediation", async () => {
+    stubFetch();
+    render(<ModerationQueue language="fr" reports={[openReport]} />);
+
+    fireEvent.click(screen.getByRole("button", { name: /ouvrir le dossier/i }));
+
+    expect(await screen.findByText(/piste d'audit/i)).toBeInTheDocument();
+    expect(screen.getByText("Lecture seule")).toBeInTheDocument();
+  });
+
   // @req REQ-140
   // @req REQ-145
   it("renders statuses, controls and validation in English", async () => {

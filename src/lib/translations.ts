@@ -23,6 +23,7 @@ import { hubsCopy } from "@/lib/i18n/copy/hubs";
 import { languagesCopy } from "@/lib/i18n/copy/languages";
 import { languageFicheCopy } from "@/lib/i18n/copy/languageFiche";
 import { migrationsCopy } from "@/lib/i18n/copy/migrations";
+import { moderationConsoleCopy } from "@/lib/i18n/copy/moderationConsole";
 import { namesCopy } from "@/lib/i18n/copy/names";
 import { patronymesCopy } from "@/lib/i18n/copy/patronymes";
 import { peopleCopy } from "@/lib/i18n/copy/people";
@@ -76,6 +77,7 @@ const en = {
   languages: languagesCopy.en,
   patronymes: patronymesCopy.en,
   migrations: migrationsCopy.en,
+  moderationConsole: moderationConsoleCopy.en,
   colonization: colonizationCopy.en,
   discoveries: discoveriesCopy.en,
   quiz: quizCopy.en,
@@ -123,6 +125,7 @@ const fr: UiDictionary = {
   languages: languagesCopy.fr,
   patronymes: patronymesCopy.fr,
   migrations: migrationsCopy.fr,
+  moderationConsole: moderationConsoleCopy.fr,
   colonization: colonizationCopy.fr,
   discoveries: discoveriesCopy.fr,
   quiz: quizCopy.fr,
