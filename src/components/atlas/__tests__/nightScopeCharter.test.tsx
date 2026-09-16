@@ -52,6 +52,7 @@ const ficheOverlay: CountryOutlineOverlay = {
   countryId: "ZAF",
   rings: [square],
   fillOpacity: 0.22,
+  sovereigntyContested: false,
 };
 
 function withWebgl() {

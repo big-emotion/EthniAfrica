@@ -144,6 +144,54 @@ as `SDS` and Western Sahara as `SAH`, where the corpus writes `SSD` and `ESH`;
 code at all — it is deliberately **not** aliased onto `SOM`, which would make
 the atlas assert a sovereignty claim no source in the corpus supports.
 
+### `MAR` and `SAH` depart from Natural Earth on purpose
+
+**Natural Earth's admin-0 layer encodes _de facto_ control, not territory**, and
+copying it verbatim published a military line as an administrative border.
+Upstream splits Western Sahara along the Moroccan berm: `MAR` reaches down to
+21.42° N and swallows El Aaiún, Smara and Bou Craa, while `SAH` keeps only the
+Free Zone east of it. Measured against published figures, that gave the asset a
+Morocco **30.4 % too large** and no usable Western Sahara at all. A reader
+reported it on 2026-09-08 (flag `00EZK83QDV`).
+
+These two entries are therefore rebuilt, and **re-running the plain command
+above would undo it**. The line used instead is the territory's own and it is
+citable: the 1912 Franco-Spanish convention sets the northern limit at the
+**27°40′N parallel** out to 8°40′W — also the extent the UN has listed since
+1963 — so the split is one horizontal cut.
+
+```bash
+curl -o /tmp/ne50.geojson \
+  https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@master/geojson/ne_50m_admin_0_countries.geojson
+
+# Morocco and Western Sahara overlap upstream: dissolve them, then cut at the
+# parallel. -clip keeps the territory, -erase keeps Morocco proper.
+npx mapshaper -i /tmp/ne50.geojson \
+  -filter 'ADM0_A3=="MAR"||ADM0_A3=="SAH"' -dissolve \
+  -o format=geojson /tmp/combined.geojson
+
+npx mapshaper -i /tmp/combined.geojson -clip  bbox=-20,15,-5,27.666667 \
+  -simplify 40% visvalingam keep-shapes \
+  -o format=geojson precision=0.01 /tmp/esh.geojson   # -> SAH
+
+npx mapshaper -i /tmp/combined.geojson -erase bbox=-20,15,-5,27.666667 \
+  -simplify 40% visvalingam keep-shapes \
+  -o format=geojson precision=0.01 /tmp/mar.geojson   # -> MAR
+```
+
+Areas after the cut, against published figures: Western Sahara **+1.2 %**
+(269 282 km² vs 266 000), Morocco **−9.6 %** (403 901 km² vs 446 550). The
+remaining Moroccan deficit is inherited from the upstream outline — it is
+unchanged by the simplification level — and it replaces a **+32.7 %** error, so
+the cut improves both entries. For scale, the same measurement puts the
+untouched neighbours within ±4 % (Algeria −2.5 %, Mauritania +0.7 %, Tunisia
+−4.2 %, Mali +1.5 %, Egypt +0.2 %).
+
+What the atlas does with the result is a charter matter, not a data one: see
+`docs/design/atlas-charter.md` §1 and
+`src/components/atlas/__tests__/disputedTerritoryCharter.test.tsx`, which fails
+if either entry drifts back.
+
 `overlays.ts` treats an unresolvable country as the missing state
 (atlas-charter §4), never as a silently dropped shape: `buildPeopleFieldOverlay`
 carries every entry it cannot draw in `undrawn`, and

@@ -25,6 +25,35 @@ allowed to claim.
 simplification, not "just for the hover state", not in the non-WebGL fallback.
 If a future feature needs a people-shaped polygon, it needs a source first.
 
+**The country encoding asserts two things, and they can be withheld
+separately.** The closing trace says _this boundary is published, dated and
+citable_; the fill says _a recognised sovereignty occupies it_. A contested
+territory supports the first and not the second, so it takes **the trace
+without the fill** — not a fourth encoding, the country encoding with one of
+its two claims withdrawn.
+
+Western Sahara is the worked example, and it is a reader's finding: on
+2026-09-08 someone reported that the map drew Morocco englobing it. The cause
+was upstream — Natural Earth encodes _de facto_ control, so it hands the
+Moroccan-held west to `MAR` and keeps only the Free Zone as `SAH` — and copying
+it published a military line as an administrative border, settling a contested
+sovereignty in silence on a surface whose whole argument is provenance.
+
+The dash is **not** the answer here, and that is the instructive part. The dash
+belongs to the family row above and means _this area was reconstructed_. The
+Sahrawi outline is not reconstructed: the 1912 Franco-Spanish convention bounds
+it at the 27°40′N parallel, which is also the extent the UN has listed since 1963. Reaching for the dash because it looks tentative would have claimed the
+atlas guessed a line it can cite — a different statement, and a false one.
+
+**And the withholding is stated, or it reads as a bug.** An outline with
+nothing inside and no sentence beside it is a rendering fault to every reader
+who meets it. The note names both institutions and lets them disagree — the UN
+records no administering power since Spain withdrew in 1976; the African Union
+seats a member state, the Sahrawi Arab Democratic Republic — because
+reconciling them into one neutral sentence would be the atlas settling the
+question again, quietly, which is the whole defect being undone. Contract:
+`src/components/atlas/__tests__/disputedTerritoryCharter.test.tsx`.
+
 **And it is stated once, next to the mark.** The globe's legend — "Aucune
 frontière ici. Une présence, et sa densité." — is where the reader is told why
 the field has no edge, because that is where the field is. The people fiche's
