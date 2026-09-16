@@ -4,8 +4,8 @@
   "nameEn": "Guinea",
   "nameOfficial": "République de Guinée (République de Guinée)",
   "summary": "La Guinée porte un nom que les Portugais appliquaient au XVe siècle à toute la côte ouest-africaine. Le pays articule quatre ensembles : le Fouta-Djalon peul, la Haute-Guinée malinké héritée de l'empire du Mali, la Basse-Guinée soussou et les peuples forestiers. Griots, kora et balafon y portent une tradition orale continue.",
-  "etymology": "Le nom \"Guinée\" provient du portugais \"Guiné\", terme utilisé par les navigateurs portugais au XVe siècle pour désigner la côte ouest-africaine au sud du Sénégal. L'origine du terme \"Guiné\" est incertaine, mais pourrait dériver du berbère \"Akal n-Iguinawen\" (terre des Noirs) ou d'un terme local. Les Français ont adapté ce nom pour leur colonie.",
-  "nameOriginActor": "Le nom \"Guinée\" a été donné par les navigateurs portugais au XVe siècle pour désigner la côte ouest-africaine. Les Français ont officialisé ce nom lors de la création de la colonie de Guinée française en 1891. Le nom a été officialisé à l'indépendance en 1958.",
+  "etymology": "L'origine du nom Guinée n'est pas établie, et trois lectures coexistent. En Guinée, on rattache couramment le mot au soussou guinè, qui désigne la femme. Une deuxième lecture le fait venir de l'expression amazighe akal n ignawen, la terre des ignawen, par laquelle les berbérophones désignaient au Moyen Âge la zone sahélienne ; on la traduit d'ordinaire par pays des Noirs, d'après Maurice Delafosse en 1924. Les linguistes rattachent agnaw au verbe gnu, coudre : l'agnaw serait celui qui a la langue cousue, c'est-à-dire celui qui ne parle pas la langue de celui qui le nomme. Les navigateurs portugais, enfin, écrivent Guiné dès le XVe siècle pour toute la côte ouest-africaine au sud du Sénégal. Les Français ont repris ce nom pour leur colonie en 1891.",
+  "nameOriginActor": "Les navigateurs portugais écrivent Guiné dès le XVe siècle et répandent la forme écrite du nom en Europe, sans que son origine soit établie. Les Français la reprennent en 1891 pour la colonie de Guinée française. Le pays garde ce nom à l'indépendance, le 2 octobre 1958.",
   "content": {
     "historicalNames": {
       "formerNames": ["Guinée française (1891-1958)"],
@@ -278,6 +278,12 @@
         "url": "https://journals.openedition.org/afriques/1098",
         "tier": "referenced",
         "notes": "Retrace comment la lecture Niani a été substituée à un tracé consonantique arabe que les manuscrits ne vocalisent pas. Accès libre."
+      },
+      {
+        "title": "Agrour, Rachid - Contribution à l'étude d'un mot voyageur : Chleuh - Cahiers d'Études africaines, 208, 2012, p. 767-811",
+        "url": "https://doi.org/10.4000/etudesafricaines.17161",
+        "tier": "referenced",
+        "notes": "Rattache l'expression amazighe akal n ignawen à la désignation médiévale de la zone sahélienne par les berbérophones, en citant Maurice Delafosse (1924, page 153), et rapporte l'étymologie d'agnaw par le verbe gnu, coudre. Accès libre."
       }
     ],
     "demographics": {
