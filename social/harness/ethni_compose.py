@@ -2527,7 +2527,19 @@ def rendre(carte, deck, fmt_key, *, image, racine, verdict, sous_titre=False):
 
     campagne = _NON_MOT.sub("-", (deck.get("campagne") or "carte").lower()).strip("-")
     nom = f"{campagne}_{carte['rang']:02d}_{fmt_key}_{cadre['w']}x{cadre['h']}"
-    dossier = racine / ("_epreuves" if epreuve else "images")
+
+    # A passing render is filed under the networks that actually receive its
+    # format (§1 bis), not under a flat `images/` an operator then has to sort by
+    # hand, network by network, before posting.
+    if epreuve:
+        dossier = racine / "_epreuves"
+    else:
+        cibles = tk.reseaux(fmt_key)
+        if not cibles:
+            raise ValueError(
+                f"aucun réseau ne reçoit le format {fmt_key!r} — voir "
+                f"GABARITS-SOCIAL.md §1 bis")
+        dossier = racine / "-".join(cibles)
     dossier.mkdir(parents=True, exist_ok=True)
 
     chemin = dossier / f"{nom}{'-epreuve' if epreuve else ''}.png"
