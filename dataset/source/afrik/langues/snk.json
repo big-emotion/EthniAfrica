@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "langue",
+    "directives": "Voir DIRECTIVES-AFRIK.md pour les règles de rédaction complètes."
+  },
+  "id": "snk",
+  "isoCode639_3": "snk",
+  "glottocode": "soni1259",
+  "nameFr": "Soninké",
+  "nameEn": "Soninke",
+  "alternateNames": [],
+  "spellingAliases": [],
+  "familyId": "FLG_MANDE",
+  "peoples": [
+    {
+      "name": "Soninke",
+      "peopleId": "PPL_SONINKE"
+    }
+  ],
+  "content": {
+    "vehicularRole": null,
+    "dialects": ["Azer", "Gadyaga", "Kinbakka", "Xenqenna"],
+    "vitalityStatus": {
+      "status": "Developing",
+      "scale": "EGIDS (Ethnologue)",
+      "asOf": 2025
+    },
+    "sources": [
+      {
+        "title": "Glottolog 5.3 — Soninke (soni1259)",
+        "url": "https://glottolog.org/resource/languoid/id/soni1259",
+        "tier": "official",
+        "notes": "Notice directe pour le code ISO 639-3 snk et le glottocode soni1259. Classification Glottolog, du plus large au plus étroit : Mande, Mande occidental, Mande du Nord-Ouest, Soninke-Bozo, Soninkéen. La notice situe la langue en Gambie, en Guinée, en Guinée-Bissau, au Mali, en Mauritanie et au Sénégal, et reprend l'appréciation EGIDS d'Ethnologue 2025, niveau 5, langue en développement, avec la mention d'une reconnaissance officielle par décret en 1982. Les dialectes listés sont les sous-languoids que Glottolog rattache à soni1259, hors languoids portant leur propre code ISO 639-3. Consultée le 2026-09-16."
+      },
+      {
+        "title": "ISO 639-3, tables de codes publiées par SIL Global, autorité d'enregistrement de la norme",
+        "url": "https://iso639-3.sil.org/code_tables/download_tables",
+        "tier": "official",
+        "notes": "Tables du 2026-07-15, consultées le 2026-09-16. La table des macrolangues n'associe le code snk à aucune macrolangue : le soninké est codé comme une langue pleine, là où plusieurs parlers mandingues sont regroupés sous la macrolangue man, Mandingo. Le partage entre langue et dialecte est ici une décision de codification, prise code par code par un organisme, et non une frontière relevée sur le terrain."
+      }
+    ]
+  }
+}
