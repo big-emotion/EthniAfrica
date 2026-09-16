@@ -308,7 +308,9 @@ describe("Découvertes details", () => {
     expect(
       within(screen.getByRole("dialog")).getByText("Sources et contexte")
     ).toBeInTheDocument();
-    expect(screen.getByText(/Thomas Sankara le proclame/)).toBeInTheDocument();
+    expect(
+      screen.getByText(/une ordonnance du 2 août 1984/i)
+    ).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Burkina Faso" })).toHaveAttribute(
       "href",
       getCountryRoute("fr", "BFA")
