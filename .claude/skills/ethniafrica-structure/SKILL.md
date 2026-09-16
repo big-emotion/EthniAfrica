@@ -180,6 +180,15 @@ quand on ne l'ouvre pas.
   auteur, toujours**, une ligne qui demande un commentaire — jamais un tag, un
   like ou un partage —, « lien en bio », quatre à six hashtags. Instagram,
   Facebook et YouTube restent au « vous », LinkedIn dans son registre complet.
+- **X s'écrit au « vous », sans hashtag, et le lien va dans le post.** Deux
+  différences de plateforme, pas de goût : le lien y est cliquable — donc jamais
+  « lien en bio » —, et les hashtags y sont pénalisés au lieu d'y aider. 280
+  caractères par post, une URL comptant pour 23 quelle que soit sa longueur.
+  **X est le seul réseau de la table où le texte nu est un format natif** : quand
+  le sujet ne tient pas en un post, il s'écrit en fil, la vidéo jointe au premier
+  et à lui seul, le lien balisé au dernier. Un fil n'est pas un post découpé —
+  seul le premier paraît dans le fil d'actualité, les suivants sont derrière
+  « Afficher ce fil », donc le premier porte l'accroche entière.
 - **Sous TikTok, les légendes portent un « Commentaire à épingler ».** Une question au
   « tu », liée au sujet, à laquelle n'importe qui sait répondre depuis sa propre
   vie (« Quel est ton peuple ? »). Ni la copie de la dernière ligne de la

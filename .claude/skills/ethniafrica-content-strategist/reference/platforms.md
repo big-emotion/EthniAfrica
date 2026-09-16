@@ -177,7 +177,41 @@ change to that table only with the numbers that justify it, and the change is
 written into §1 bis with its date — never applied to one post by taste.
 The operator has already run all five networks simultaneously twice (09-11,
 09-12) rather than phasing them in; treat that as the current default cadence
-unless told otherwise.
+unless told otherwise. X opened on 09-16 and joins that same-day set, so the
+default is now six.
+
+### X — the written argument, and nothing measured yet
+
+- **Opened**: 2026-09-16, `@ethniafrica`, professional account, category
+  Education. Zero posts at the time of writing.
+- **Audience**: unknown. Say so. Every other section here rests on a measurement
+  and this one rests on none, which is the only honest thing it can assert.
+- **Job, as a hypothesis and not a finding**: the written argument and the
+  clickable link — the two things the video channels cannot carry. X is the only
+  channel in the table where a text post is a native format, and the corpus is
+  text. It is also, with Facebook, one of the two where a link in the post is
+  normal rather than punished.
+- **Format**: the reel, per §1 bis. **X has no carousel** — a multi-image post
+  is a grid of at most four cropped thumbnails, never a swipe — and that is a
+  platform constraint, not a measurement.
+- **Frequency**: not set. Setting one before a single post exists would be
+  taste dressed as doctrine. Mirror the reel days, read what happens, then write
+  a cadence here with its date.
+- **Caption**: « vous ». No hashtags — X penalises them where Instagram and
+  TikTok reward them. The tagged link goes in the post. 280 characters, a URL
+  counting 23 whatever its length; beyond that, a thread, with the video on the
+  first post alone.
+- **Measurement, and its ceiling**: there is no dashboard. Account analytics are
+  a X Premium feature — `/i/account_analytics` and Creator Studio both land on
+  `analytics_paywall` (measured 2026-09-16). What is readable for free: the view
+  count under each post, and site-side, `utm_source=x` plus Plausible's `t.co`
+  referrals. **No retention, no non-follower share, no traffic source.** So X
+  cannot be ranked against the reach channels on their own metrics, and this
+  skill must not pretend otherwise.
+- **The first question to answer**, once posts exist: does X send clicks? That
+  is the one thing the free surface can measure, and it is also what decides
+  whether X is a reach channel or a traffic channel — the distinction the rest
+  of this file is built on.
 
 ## Ranking metrics, per channel
 

@@ -82,7 +82,7 @@ changes.
 
 Unchanged and binding: `description-template-2026-09-09.md` — the hook, the
 proof, the exit; the first hundred characters complete before the cut; the
-claim identical on all five networks and the form rewritten for each. Plain
+claim identical on all six networks and the form rewritten for each. Plain
 language everywhere except LinkedIn. TikTok's caption form changed on
 2026-09-13 (operator decision, unmeasured): short "tu" sentences, source line
 kept, one line asking for a comment, a pinned comment carrying a question —
@@ -114,7 +114,9 @@ open flag, so treat it as cleared until told otherwise.
    from the page's per-post analytics on 2026-09-14 — the doctrine that video
    fails on LinkedIn holds even after the account grew to 34 followers and
    even inside the all-network blast. See `platforms.md`.
-3. **Whether to keep publishing to all five networks simultaneously**, or
+3. **Whether to keep publishing to all six networks simultaneously**, or
    return to the plan's phased cadence — the operator has already chosen
    simultaneous release twice; this file records it as the current default,
-   not a question, unless the operator says otherwise.
+   not a question, unless the operator says otherwise. X joined the set on
+   2026-09-16 and has published nothing yet, so the first release that includes
+   it is also the first chance to see whether six is still one gesture.

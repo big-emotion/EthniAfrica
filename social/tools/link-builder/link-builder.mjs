@@ -13,12 +13,16 @@
  */
 import { buildLinks, buildBioLinks, verify, tag, NETWORKS } from "./links.mjs";
 
+// Deux de ces chemins ne s'ouvrent pas comme ils se lisent : Instagram refuse
+// l'édition du lien depuis un navigateur de bureau, et TikTok n'offre aucun
+// champ « Site web » sans compte Business.
 const BIO_INSTALL = {
   youtube: "YouTube Studio → Personnalisation → Informations de base → Liens",
   tiktok: "TikTok → Profil → Modifier le profil → Site web",
   instagram: "Instagram → Modifier le profil → Liens → Ajouter un lien externe",
   facebook: "Page Facebook → Modifier les infos → Site web",
   linkedin: "LinkedIn → Profil personnel → Modifier → Site web",
+  x: "X → Profil → Edit profile → Website",
 };
 
 function readArguments(argv) {
@@ -37,7 +41,7 @@ const options = readArguments(process.argv.slice(2));
 if (options.bio) {
   const links = buildBioLinks(options.path ?? "/fr");
   if (options.check) await check(links);
-  console.log("\nLiens de bio — à installer à la main sur les cinq profils\n");
+  console.log("\nLiens de bio — à installer à la main sur les six profils\n");
   for (const { network, url } of links) {
     console.log(`  ${network}`);
     console.log(`    ${url}`);
@@ -68,8 +72,8 @@ for (const { network, content, url } of links) {
 }
 
 /**
- * One call, not one per link: the seven differ only by two parameters the
- * server never reads, so seven requests would measure the same thing seven
+ * One call, not one per link: the eight differ only by two parameters the
+ * server never reads, so eight requests would measure the same thing eight
  * times. The one call is made *with* the parameters, because a redirect eating
  * them is the failure this is guarding against.
  */

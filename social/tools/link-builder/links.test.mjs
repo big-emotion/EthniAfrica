@@ -43,7 +43,7 @@ test("carries one campaign slug across every network", () => {
 });
 
 // @req REQ-032
-test("covers the five networks plus the story and the pinned comment", () => {
+test("covers the six networks plus the story and the pinned comment", () => {
   const links = buildLinks({
     path: "/fr/atlas/noms/PAT_TRAORE",
     campaign: "traore-diop",
@@ -80,9 +80,9 @@ test("refuses a path that is not a site path", () => {
 });
 
 // @req REQ-032
-test("refuses a campaign slug the five networks could spell differently", () => {
+test("refuses a campaign slug the six networks could spell differently", () => {
   // A slug carrying a capital, a space or an accent is one the operator retypes
-  // by hand on the fifth network, and the comparison silently splits in two.
+  // by hand on the sixth network, and the comparison silently splits in two.
   for (const spelling of ["Traoré Diop", "traore_diop ", "TRAORE"]) {
     assert.throws(() => tag("/fr", "youtube", spelling, "video"), /slug/);
   }

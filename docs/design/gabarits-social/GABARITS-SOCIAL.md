@@ -51,11 +51,12 @@ pas.
 | Facebook | reel | carrousel | reel Côte d'Ivoire : 21 211 vues, 191 partages · carrousels : Daloa 13, Sénoufo 14, Krio 9 |
 | YouTube | reel (Shorts) | carrousel | un Short est une vidéo · Keïta–Coulibaly 1 388 vues, Nzema 1 176 en un jour |
 | LinkedIn | texte avec lien, depuis le profil personnel | reel, carrousel | profil personnel : 31 visites de lien en 28 jours · vidéos de la page : 0 à 2 impressions, 0 clic (7 et 14 septembre) |
+| X (Twitter) | reel, et le texte avec lien | carrousel | aucune mesure — le compte a ouvert le 16 septembre 2026 avec zéro post. Contrainte de plateforme, pas mesure : **X n'a pas de carrousel**, un post multi-images y est une grille d'au plus quatre vignettes rognées, jamais un balayage. |
 
-- **Un sujet destiné aux cinq réseaux se produit dans les deux formats**, plus le
+- **Un sujet destiné aux six réseaux se produit dans les deux formats**, plus le
   texte LinkedIn. Un sujet produit dans un seul format ne part que sur les
   réseaux de sa colonne : un reel seul ne va pas sur TikTok, un carrousel seul ne
-  va ni sur Facebook ni sur YouTube.
+  va ni sur Facebook, ni sur YouTube, ni sur X.
 - **La sortie LinkedIn 1080 × 1080 du §1 n'est plus publiée**, puisque LinkedIn
   ne reçoit plus d'image. Le moteur la rend encore ; la retirer est un chantier
   du moteur, pas de cette règle.
@@ -63,6 +64,18 @@ pas.
   mesure de `ethniafrica-content-strategist`, écrite ici avec sa date. Une seule
   semaine de mesure la fonde : la revue de phase 1 des 3 et 4 octobre la relit
   en premier.
+- **La ligne X est la seule que rien ne mesure, et elle le dit.** Les cinq autres
+  reposent sur le 15 septembre ; X a ouvert le 16 avec zéro post, donc il n'y a
+  rien à lire. Ce qui la fonde est vérifiable sans mesure — la plateforme ne
+  propose pas de carrousel — et rien d'autre n'y est affirmé : ni portée
+  attendue, ni cadence, ni public. **Une ligne fondée sur une contrainte ne se
+  cite pas comme une ligne fondée sur une mesure.** Elle est la première que la
+  revue de phase 1 doit remplacer par des chiffres.
+- **Le reel part sur X avec sa marge d'interface, et c'est une dette assumée.**
+  Le 1080 × 1920 du §1 réserve 391 px en bas pour l'interface TikTok / Reels ;
+  sur X cette bande ne recouvre rien et reste vide. Rendre une sortie propre pour
+  X est un chantier du moteur, pas de cette règle — on mesure d'abord que X vaut
+  le rendu, on l'optimise ensuite.
 
 ---
 

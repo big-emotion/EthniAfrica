@@ -45,17 +45,28 @@ export const AUDIENCE_CONSUMERS = [
 ] as const;
 
 /**
- * The four networks the productions go out on, as the operator reads them in
- * their studios. The message travels there before it reaches the site: the
- * 2026-09-13 message audit counted ~18 000 views a month on them against three
- * site visitors from them, so a producer that reads Plausible alone measures the
+ * The networks the productions go out on, as the operator reads them in their
+ * studios. The message travels there before it reaches the site: the 2026-09-13
+ * message audit counted ~18 000 views a month on them against three site
+ * visitors from them, so a producer that reads Plausible alone measures the
  * smallest surface the message reaches.
+ *
+ * X joined on 2026-09-16. It is the one network here whose own dashboard cannot
+ * be read: account analytics sit behind X Premium, and the audit is expected to
+ * read the view count printed under each post instead. A skill that sends the
+ * operator to a paywall reports nothing and looks like it tried.
+ *
+ * Each name is matched as a substring of the skill, so "X" alone would find
+ * itself in any capital X the file contains — see {@link FORMAT_RULE_NETWORKS}
+ * in `socialChainContract.ts`, which carries the same spelling for the same
+ * reason.
  */
 export const AUDIENCE_NETWORKS = [
   "YouTube",
   "TikTok",
   "Instagram",
   "Facebook",
+  "X (Twitter)",
 ] as const;
 
 /**
@@ -73,9 +84,18 @@ export const STRATEGIST_NETWORKS = [
   "Instagram",
   "TikTok",
   "Facebook",
+  "X (Twitter)",
 ] as const;
+/**
+ * The sentence, not the count, is what the checker looks for — so the number in
+ * it has to be maintained by hand, and that is deliberate. A rule that read
+ * "collects every network" would survive a network being dropped from the list
+ * without a word changing anywhere; spelling the count forces the skill and this
+ * file to be edited in the same commit, which is the only moment anyone rereads
+ * both.
+ */
 export const STRATEGIST_COLLECTION_RULE =
-  "collects all five networks on every run";
+  "collects all six networks on every run";
 
 export interface SkillContractIssue {
   skill: string;
