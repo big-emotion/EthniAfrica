@@ -17,7 +17,7 @@ import type { Language } from "@/types/shared";
  * reads as decoration.
  *
  * The third measure is the one that matters most and is easiest to get wrong.
- * 445 of 775 is 57,4 %, and printing that percentage would let a reader infer
+ * 445 of 774 is 57,5 %, and printing that percentage would let a reader infer
  * that the other 330 fiches were examined and found sound. 311 were never
  * examined at all. So the band publishes the gap beside the finding, which is
  * what the atlas charter §4 asks of an absent value.

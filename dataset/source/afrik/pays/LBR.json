@@ -399,7 +399,7 @@
     "demographics": {
       "totalPopulation": 5700000,
       "referenceYear": 2025,
-      "source": "UNFPA – World Population Dashboard (population totale 2025) ; recensement national libérien de 2008 (répartition par peuple)",
+      "source": "UNFPA – World Population Dashboard",
       "peoples": [
         {
           "name": "Kpelle",
