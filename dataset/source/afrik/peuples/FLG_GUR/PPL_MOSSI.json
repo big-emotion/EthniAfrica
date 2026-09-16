@@ -25,10 +25,10 @@
       "Nyon-nyonse (anciens habitants des zones controlees par les Mossi avant leur arrivee)"
     ],
     "origins": {
-      "ancientOrigins": "Selon la tradition orale et les archives mossi en ecriture Ajami, les Mossi sont issus du mariage entre la princesse guerriere yennenga, fille du roi Naa Gbewaa de l'actuel nord Ghana (Dagomba), et un chasseur Mande nomme Riale. Leur fils Ouedraogo est considere comme le pere fondateur du peuple mossi. La tradition mossi fait remonter leur existence en tant qu'État au 11e siècle ; les travaux publiés situent la formation des royaumes à la fin du 15e siècle, et les Mossi datent eux-mêmes leur pouvoir des environs de 1500. Ils conquirent un vaste territoire en maitisant le cheval.",
+      "ancientOrigins": "Selon la tradition mossi, les Mossi descendent de la princesse Yennenga, fille du roi Nedega, souverain mamprusi d'un royaume situé dans l'actuel nord du Ghana. Son père refusant qu'elle se marie, elle quitte le royaume à cheval et épouse un chasseur d'éléphants nommé Rialle, rencontré en chemin. Leur fils reçoit le nom de Ouedraogo, « étalon », en souvenir de la monture de sa mère ; il est tenu pour le père fondateur du peuple mossi. Revenu auprès de son grand-père, il sert dans son armée, puis conquiert à la tête de ses troupes la terre de son père et y fonde le premier royaume mossi. La tradition mossi fait remonter leur existence en tant qu'État au 11e siècle ; les travaux publiés situent la formation des royaumes à la fin du 15e siècle, et les Mossi datent eux-mêmes leur pouvoir des environs de 1500. Ils conquirent un vaste territoire en maîtrisant le cheval.",
       "formationPeriod": "Les differents clans mossi se constituerent en ethnie unifiee vers 1500 lorsque les cavaliers conquerants Nakomse creerent une classe dirigeante sur les peuples locaux (Tengabisi). L'empire mossi se consolida avec Ouagadougou comme capitale. La conquête française — prise de Ouagadougou en 1896, traité de protectorat en 1897 — freina l'expansion mais ne détruisit pas l'organisation politique.",
       "migrationRoutes": [
-        "Origines au nord de l'actuel Ghana (region de Pusiga, berceau de Naa Gbewaa)",
+        "Origines au nord de l'actuel Ghana",
         "Migration vers le nord et le centre de l'actuel Burkina Faso (Volta basin)",
         "Expansion du plateau mossi vers les regions peripheriques sous les royaumes de Ouagadougou et Yatenga",
         "Migration economique vers le sud (Cote d'Ivoire, Ghana) au 20e siecle"
@@ -41,7 +41,7 @@
         "Zones de migration en Cote d'Ivoire (region d'Abidjan, Bouake)"
       ],
       "unificationsOrDivisions": "Les Mossi forment une entite plurielle composee de plusieurs royaumes (Ouagadougou, Yatenga, Tenkodogo, Zandoma, Bulkiemdé). Le Mogho Naaba de Ouagadougou est reconnu comme autorite morale supremes. La scission entre les royaumes de Ouagadougou et Yatenga, liee a une dispute de succession ou la soeur du Moro Naaba s'enfuit vers Yatenga avec les amulettes de pouvoir (nam), est fondatrice de la dualite politique mossi.",
-      "externalInfluences": "Islamisation partielle depuis le 18e siecle par les marchands musulmans, mais la population generale resista longtemps a la conversion. Colonisation française (1896-1960) : le Mogho Naaba fut reconnu comme autorite secondaire. Incorporation dans la Haute-Volta puis le Burkina Faso (independance 1960). Influence de l'emigration vers la Cote d'Ivoire depuis les annees 1950.",
+      "externalInfluences": "Islamisation partielle depuis le 18e siecle par les marchands musulmans, mais la population generale resista longtemps a la conversion. Colonisation française (1896-1960) : le Mogho Naaba fut reconnu comme autorite secondaire. Incorporation dans la Haute-Volta puis le Burkina Faso (independance 1960). Sous l'administration coloniale française, de nombreux Mossi sont contraints de migrer vers la Côte d'Ivoire et le Ghana voisins pour travailler dans les plantations. Les Mossi sont aujourd'hui le premier groupe du Burkina Faso et le deuxième de Côte d'Ivoire, où ils étaient 3,6 millions en 2017, soit environ 15 pour cent de la population.",
       "majorHistoricalEvents": "11e siècle : formation du premier État mossi selon la tradition ; la fin du 15e siècle selon les travaux publiés. 1495 : fondation du royaume de Yatenga. 1737 : tentative repoussee d'invasion de Tombouctou. 1896 : le Mogho Naaba Wobgo refuse les propositions françaises ; la colonne du lieutenant Voulet prend Ouagadougou le 1er septembre et le souverain quitte sa capitale. 1897 : un traité place le Mogho sous protectorat français, obtenu d'un Mogho Naaba installé à sa place. Seconde Guerre mondiale : engagement massif des Mossi dans les Tirailleurs Senegalais. 1960 : independance de la Haute-Volta (future Burkina Faso). Aujourd'hui, le Mogho Naaba reste une figure morale de premier plan."
     },
     "organization": {
@@ -125,7 +125,8 @@
       {
         "title": "EBSCO Research Starters - Mossi (people)",
         "url": "https://www.ebsco.com/research-starters/language-and-linguistics/mossi-people",
-        "tier": "referenced"
+        "tier": "referenced",
+        "notes": "Notice encyclopédique éditorialisée, avec bibliographie. Lue intégralement le 16 septembre 2026 : le récit fondateur de Yennenga, du roi Nedega et du chasseur Rialle, les cinq royaumes mossi, la datation de la formation des royaumes à la fin du 15e siècle, les classes nakomse et nyonyose, la conquête française de 1897, et la migration forcée vers la Côte d'Ivoire et le Ghana sous l'administration coloniale."
       },
       {
         "title": "Glottolog - Mossi",
