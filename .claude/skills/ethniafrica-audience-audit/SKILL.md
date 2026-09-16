@@ -1,6 +1,6 @@
 ---
 name: ethniafrica-audience-audit
-description: Measures what the EthniAfrica audience actually does, and writes the dated report the two downstream skills consume. Crosses Plausible analytics with the repository's own URL inventory to classify every page as Keep / Improve / Merge / Create, and to surface dead-end pages, cannibalised fiches, unattributed channels and the mobile-desktop gap. Reads per-post metrics from YouTube, TikTok, Instagram and Facebook, and ties each post to its site visits through utm_campaign. Read-only on source. Use when the user asks "what does the traffic say", "which pages work", "audit de trafic", "rapport d'audience", "content audit", or invokes /ethniafrica-audience-audit.
+description: Measures what the EthniAfrica audience actually does, and writes the dated report the two downstream skills consume. Crosses Plausible analytics with the repository's own URL inventory to classify every page as Keep / Improve / Merge / Create, and to surface dead-end pages, cannibalised fiches, unattributed channels and the mobile-desktop gap. Reads per-post metrics from YouTube, TikTok, Instagram, Facebook and X, and ties each post to its site visits through utm_campaign. Read-only on source. Use when the user asks "what does the traffic say", "which pages work", "audit de trafic", "rapport d'audience", "content audit", or invokes /ethniafrica-audience-audit.
 metadata:
   author: Big Emotion
   version: "1.0.0"
@@ -114,12 +114,13 @@ alone measures the smallest surface the message travels on.
 No API is connected. Read each studio in the operator's logged-in Chrome
 session, read only.
 
-| Network   | Route that reads cleanly                                       | What to take                                                                                             |
-| --------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| YouTube   | Studio → Content → Shorts list; Analytics → Content tab        | Views and comments per Short; stayed-to-watch vs swiped away; traffic sources                            |
-| TikTok    | TikTok Studio → `analytics/overview`, then `analytics/content` | Views, profile views, likes, comments, shares; the search queries that reach the account; top posts      |
-| Instagram | `accounts/insights/?timeframe=30`                              | Views, non-follower share, interactions, accounts engaged, profile visits, external link taps            |
-| Facebook  | Meta Business Suite → Insights → Overview                      | Views, non-follower share, 3-second views, watch time, interactions; recent posts with caption and views |
+| Network     | Route that reads cleanly                                       | What to take                                                                                                   |
+| ----------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| YouTube     | Studio → Content → Shorts list; Analytics → Content tab        | Views and comments per Short; stayed-to-watch vs swiped away; traffic sources                                  |
+| TikTok      | TikTok Studio → `analytics/overview`, then `analytics/content` | Views, profile views, likes, comments, shares; the search queries that reach the account; top posts            |
+| Instagram   | `accounts/insights/?timeframe=30`                              | Views, non-follower share, interactions, accounts engaged, profile visits, external link taps                  |
+| Facebook    | Meta Business Suite → Insights → Overview                      | Views, non-follower share, 3-second views, watch time, interactions; recent posts with caption and views       |
+| X (Twitter) | `x.com/ethniafrica`, post by post — there is no studio to open | The view count printed under each post, and nothing else. Report it as a post figure, never as an audience one |
 
 Traps already met, so the next run does not rediscover them:
 
@@ -130,6 +131,12 @@ Traps already met, so the next run does not rediscover them:
   lists the top five cleanly.
 - Instagram's content grid shows view counts without titles. Name the posts
   only when the dashboard does.
+- **X has no dashboard to read, and looking for one wastes a run.** Measured
+  2026-09-16: `/i/account_analytics` and Creator Studio both land on a page the
+  platform names `analytics_paywall` — the figures are a X Premium feature, and
+  the account is professional but not subscribed. Go to the profile and read the
+  posts. There is no retention, no non-follower share and no traffic source to
+  be had, so the report says so rather than leaving those columns blank.
 
 **Signals of understanding first, views as context.** In order: comments (count,
 and what they say — understood, misunderstood, contested, a question), shares,

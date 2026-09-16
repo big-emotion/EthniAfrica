@@ -12,9 +12,9 @@ not restated as prose here: `links.mjs` is its executable copy and
 `links.test.mjs` holds the two together.
 
 ```
-?utm_source=<youtube|tiktok|instagram|facebook|linkedin>
+?utm_source=<youtube|tiktok|instagram|facebook|linkedin|x>
 &utm_medium=social
-&utm_campaign=<subject slug, identical on all five networks>
+&utm_campaign=<subject slug, identical on all six networks>
 &utm_content=<video|carrousel|image|story|commentaire-epingle|bio>
 ```
 
@@ -23,7 +23,7 @@ not restated as prose here: `links.mjs` is its executable copy and
 ```bash
 node link-builder.mjs --path /fr/atlas/noms/PAT_TRAORE --campaign traore-diop
 node link-builder.mjs --path /fr/jeux/mercator --campaign mercator --content carrousel
-node link-builder.mjs --bio          # the five profile links, and where to paste them
+node link-builder.mjs --bio          # the six profile links, and where to paste them
 
 node check-anchors.mjs               # calls all twenty retained destinations, live
 node --test                          # the scheme's own suite
@@ -67,7 +67,7 @@ not reload, so the pageview fires after acceptance with the parameters intact.
 
 ## What no script here can do
 
-The five bio links are installed inside the platforms. `--bio` prints them with
+The six bio links are installed inside the platforms. `--bio` prints them with
 the path to each setting; a human pastes them.
 
 Publications already online are not re-tagged. Editing a `post.md` does not

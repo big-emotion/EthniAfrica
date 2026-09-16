@@ -57,6 +57,26 @@ export const PRODUCT_NAME =
 // @req REQ-019
 export const PRODUCT_TAGLINE = "Atlas des Peuples d'Afrique";
 
+/**
+ * The handle the product answers to on social networks.
+ *
+ * One spelling across every network the atlas holds — Instagram, TikTok, X —
+ * and the same one the render engine already burns into every card's third
+ * credit line (`ethniafrica.com · @ethniafrica`). It lives here for the reason
+ * §1 of the brand charter gives about the name: an identity string spelled in
+ * two places is an identity spelled two ways. `twitter:site` carried
+ * `@big_emotion` — the publisher's account, not the product's — for as long as
+ * the product had no account of its own, so every page shared on X credited
+ * the studio.
+ *
+ * No `NEXT_PUBLIC_*` override, on the same terms as {@link PRODUCT_TAGLINE}:
+ * `checkEnvExample.ts` gates the code and `.env.example` against each other in
+ * both directions, so a new variable is only half a change until the example
+ * file declares it too.
+ */
+// @req REQ-019
+export const SOCIAL_HANDLE = "@ethniafrica";
+
 /** The canonical domain for the application (without protocol) */
 // @req REQ-019
 export const CANONICAL_DOMAIN =

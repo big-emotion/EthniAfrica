@@ -42,6 +42,16 @@ export const FORMAT_RULE_NETWORKS = [
   "Facebook",
   "YouTube",
   "LinkedIn",
+  /**
+   * Named with its old name in parentheses, and not as a bare "X".
+   *
+   * The check below is `section.includes(network)`. A one-letter needle finds
+   * itself in any capital X the section happens to contain, so a bare "X" would
+   * report a format assigned to a network nobody had written a line for — a
+   * gate that passes on a coincidence is worse than no gate. It also spares a
+   * reader the one ambiguous name in the set.
+   */
+  "X (Twitter)",
 ] as const;
 export const FORMAT_RULE_CALLERS = [
   "ethniafrica-idee",

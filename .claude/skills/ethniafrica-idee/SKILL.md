@@ -77,8 +77,10 @@ Ce qui pourrait faire échouer le sujet.
 - **Un sujet, un pilier, un angle.** Deux angles sont deux sujets.
 - **Les formats visés décident des réseaux, par la table de
   `docs/design/gabarits-social/GABARITS-SOCIAL.md` §1 bis.** Un sujet qui vise
-  les cinq réseaux vise les deux formats ; un sujet à un seul format ne part que
-  sur les réseaux de sa colonne, et le rapport les nomme.
+  les six réseaux vise les deux formats, plus le texte LinkedIn ; un sujet à un
+  seul format ne part que sur les réseaux de sa colonne, et le rapport les
+  nomme. X reçoit le reel — il n'a pas de carrousel —, donc un sujet produit en
+  carrousel seul n'y va pas.
 - **Lance `ethniafrica-mythe` avant d'écrire la promesse.** Un sujet dont le
   verdict est « ne passe pas » meurt ici ; « explique » est un sujet valable, dit
   comme tel.

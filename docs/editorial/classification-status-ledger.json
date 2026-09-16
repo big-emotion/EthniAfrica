@@ -1095,11 +1095,6 @@
     "rationale": "La fiche fonde l'ecart sur le protectorat portugais du Traite de Simulambuco (1885) et attribue Fiote/Bafiote aux missionnaires chretiens des Ameriques."
   },
   {
-    "id": "PPL_KONGO_MAYOMBE",
-    "status": "contested",
-    "rationale": "La fiche conteste un regroupement de populations reparties entre trois Etats aux identites qui se recoupent sans etre identiques ; Mayombe est dit d'origine locale."
-  },
-  {
     "id": "PPL_KONGO_SUD",
     "status": "colonial-legacy",
     "rationale": "L'etiquette Kongo du Bas-Congo repose sur le terme Bas-Congo, dit d'origine coloniale belge, et regroupe de nombreux sous-groupes aux identites et dialectes propres."

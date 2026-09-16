@@ -51,18 +51,37 @@ pas.
 | Facebook | reel | carrousel | reel Côte d'Ivoire : 21 211 vues, 191 partages · carrousels : Daloa 13, Sénoufo 14, Krio 9 |
 | YouTube | reel (Shorts) | carrousel | un Short est une vidéo · Keïta–Coulibaly 1 388 vues, Nzema 1 176 en un jour |
 | LinkedIn | texte avec lien, depuis le profil personnel | reel, carrousel | profil personnel : 31 visites de lien en 28 jours · vidéos de la page : 0 à 2 impressions, 0 clic (7 et 14 septembre) |
+| X (Twitter) | reel, et le texte avec lien | carrousel | aucune mesure — le compte a ouvert le 16 septembre 2026 avec zéro post. Contrainte de plateforme, pas mesure : **X n'a pas de carrousel**, un post multi-images y est une grille d'au plus quatre vignettes rognées, jamais un balayage. |
 
-- **Un sujet destiné aux cinq réseaux se produit dans les deux formats**, plus le
+- **Un sujet destiné aux six réseaux se produit dans les deux formats**, plus le
   texte LinkedIn. Un sujet produit dans un seul format ne part que sur les
   réseaux de sa colonne : un reel seul ne va pas sur TikTok, un carrousel seul ne
-  va ni sur Facebook ni sur YouTube.
-- **La sortie LinkedIn 1080 × 1080 du §1 n'est plus publiée**, puisque LinkedIn
-  ne reçoit plus d'image. Le moteur la rend encore ; la retirer est un chantier
-  du moteur, pas de cette règle.
+  va ni sur Facebook, ni sur YouTube, ni sur X.
+- **La sortie LinkedIn 1080 × 1080 du §1 n'est plus rendue**, puisque LinkedIn
+  ne reçoit plus d'image. Retiré du moteur le 16 septembre 2026 ; §1 garde la
+  ligne pour mémoire du format, mais `ethni_carrousel2.py` ne l'appelle plus.
+- **Un lot qui passe part dans un dossier par format, nommé d'après les
+  réseaux qui le reçoivent** — `TikTok-Instagram/` pour le carrousel,
+  `Instagram-Facebook-YouTube-X/` pour le reel — et non plus dans un `images/`
+  à plat que l'opérateur devait trier réseau par réseau avant de publier. Le
+  nom se lit dans la colonne « Reçoit » ci-dessus, dans son propre ordre : une
+  ligne révisée change le rangement sans un second edit dans le moteur.
 - **La table se révise, elle ne s'enfreint pas.** Une ligne ne change que sur une
   mesure de `ethniafrica-content-strategist`, écrite ici avec sa date. Une seule
   semaine de mesure la fonde : la revue de phase 1 des 3 et 4 octobre la relit
   en premier.
+- **La ligne X est la seule que rien ne mesure, et elle le dit.** Les cinq autres
+  reposent sur le 15 septembre ; X a ouvert le 16 avec zéro post, donc il n'y a
+  rien à lire. Ce qui la fonde est vérifiable sans mesure — la plateforme ne
+  propose pas de carrousel — et rien d'autre n'y est affirmé : ni portée
+  attendue, ni cadence, ni public. **Une ligne fondée sur une contrainte ne se
+  cite pas comme une ligne fondée sur une mesure.** Elle est la première que la
+  revue de phase 1 doit remplacer par des chiffres.
+- **Le reel part sur X avec sa marge d'interface, et c'est une dette assumée.**
+  Le 1080 × 1920 du §1 réserve 391 px en bas pour l'interface TikTok / Reels ;
+  sur X cette bande ne recouvre rien et reste vide. Rendre une sortie propre pour
+  X est un chantier du moteur, pas de cette règle — on mesure d'abord que X vaut
+  le rendu, on l'optimise ensuite.
 
 ---
 
@@ -753,17 +772,20 @@ s'écrit ici d'abord, jamais dans une carte.
 | Le lot parle de | Patron de titre d'ouverture | Mot en accent à l'ouverture | Titre de clôture | Mot en accent à la clôture | Corps de clôture |
 | --- | --- | --- | --- | --- | --- |
 | un peuple réparti sur plusieurs pays | « Du {pays} au {pays}, les frontières traversent les {peuple}. » | « {peuple}. » | « Ce peuple n'a pas été divisé. » | « divisé. » | « C'est la carte qui a été dessinée par-dessus. » |
-| un pays et les peuples qui y vivent — *validée le 2026-09-14* | « {Pays}, c'est {n} peuples. » — *sauf sous-cas « qui a nommé ce pays », voir ci-dessous* | « peuples. » | « Ces peuples n'ont pas été rassemblés. » | « rassemblés. » | « C'est la carte qui a été dessinée autour d'eux. » |
+| un pays et les peuples qui y vivent — *validée le 2026-09-14* | « {Pays}, c'est {n} peuples. » — *sauf sous-cas « qui a nommé ce pays » ou « le mythe du surnom », voir ci-dessous* | « peuples. » | « Ces peuples n'ont pas été rassemblés. » | « rassemblés. » | « C'est la carte qui a été dessinée autour d'eux. » |
 | des villes, des lieux | un registre de la banque ci-dessous | celui du registre | « Cette ville n'a pas changé de nom. » | « nom. » | « On l'a rebaptisée. » |
 | une projection, une carte | un registre de la banque ci-dessous | celui du registre | « La carte ne mentait pas. Elle ne disait pas tout. » | « tout. » | « On l'a redessinée. » |
 | le nom d'un pays | un registre de la banque ci-dessous | celui du registre | « Ce pays ne s'est pas renommé. » | « renommé. » | « On l'a rebaptisé. » — *dérivé de la ligne des villes le 2026-09-13, à valider* |
 | une langue, une famille | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas disparu. » | « disparu. » | « C'est la case qu'on lui avait donnée qui a disparu. » — *fixé le 2026-09-14 par l'opérateur, à l'écriture de « famille-linguistique-quatre-familles »* |
+| une langue accusée d'invention coloniale — le mythe porte sur la langue elle-même, jamais sur son nom, qui peut rester un débat sourcé — *décidé par l'opérateur le 2026-09-16, pour le sujet `lingala-invente-par-les-belges`* | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas été inventée. » | « inventée. » | « Elle existait déjà — on lui a seulement donné un nom écrit. » — *distinct de la ligne « une langue, une famille » ci-dessus : celle-ci porte la légitimité d'une classification qui ne disparaît pas, celle-là un mythe d'invention coloniale que l'existence antérieure de la langue dément, indépendamment de tout débat sur son nom écrit* |
 | une famille de langues, regroupant plusieurs peuples sous un seul nom | un registre de la banque ci-dessous | celui du registre | « Cette famille n'est pas un peuple. » | « peuple. » | « On lui a donné un nom, par-dessus des peuples qui avaient déjà le leur. » — *décidé par l'opérateur le 2026-09-14, pour le sujet Mandé — distinct de la ligne « une langue, une famille » ci-dessus : celle-ci porte la légitimité d'une classification, celle-là la confusion entre un nom de famille et un nom de peuple* |
 | un système politique sans souverain unique — un peuple qui gouverne autrement qu'avec un roi ou un chef héréditaire — *validé par l'opérateur le 2026-09-14* | un registre de la banque ci-dessous | celui du registre | « Ce peuple n'a jamais eu de roi. » | « roi. » | « Le pouvoir s'y prête, il ne s'y transmet pas. » |
+| un système politique sans souverain unique, où une exception documentée interdit le mot « jamais » — *décidé par l'opérateur le 2026-09-16, pour le sujet `igbo-enwe-eze-sans-roi` — distinct de la ligne ci-dessus : celle-là porte un peuple sans aucune exception connue, celle-ci un peuple dont une minorité de communautés avait bien un roi (Eze Nri, Obi d'Onitsha) et où des titres pouvaient s'hériter autant que se mériter, ce qui rend « jamais » et « ne se transmet pas » faux pour ce sujet précis* | un registre de la banque ci-dessous | celui du registre | « Ce peuple n'a pas eu de roi unique. » | « unique. » | « La plupart de ses villages se gouvernaient sans roi. » |
 | un nom partagé, repris par plusieurs peuples distincts | un registre de la banque ci-dessous | celui du registre | « Ce nom n'a pas été subi. » | « subi. » | « On se l'est approprié. » — *décidé par l'opérateur le 2026-09-14, pour le sujet `creole-ne-dans-la-colonie` — distinct de la ligne « une famille de langues » ci-dessus : celle-là porte un nom imposé qui écrase des peuples ayant déjà le leur, celle-ci un nom d'abord extérieur que plusieurs peuples, sans parenté entre eux, ont chacun fait leur propre nom* |
 | un personnage historique — une figure individuelle, jamais un peuple ou un pays — *validé par l'opérateur le 2026-09-14* | un registre de la banque ci-dessous | celui du registre | « Il n'a pas eu qu'une ligne dans l'Histoire. » | « Histoire. » | « C'est pourtant tout ce qu'on lui avait laissé. » — *décidé pour le sujet `zokou-gbeuly-resistance-bete` : le corpus AFRIK et les histoires générales ne portent ces figures qu'en clause noyée dans la fiche d'un peuple entier — la clôture porte cet effacement documentaire, pas un mécanisme colonial spécifique, ce qui la distingue de toutes les lignes ci-dessus* |
 | un peuple né d'un départ — une migration fondatrice, plus vieille que toute frontière actuelle — *décidé par l'opérateur le 2026-09-14, pour le sujet `baoule-ashanti`* | un registre de la banque ci-dessous | « départ. » | « Ce nom n'a pas attendu la frontière. » | « frontière. » | « Il est né d'un départ, un royaume plus tôt. » — *distinct de la ligne « un peuple réparti sur plusieurs pays » ci-dessus : celle-là porte un même peuple resté des deux côtés d'une frontière, celle-ci un peuple qui est parti et s'est distingué du sien avant qu'aucune frontière actuelle n'existe — le nouveau venu, comme l'abonné, doivent lire un départ, jamais une division* |
 | un peuple connu sous plusieurs noms extérieurs, dont aucun n'est le sien | un registre de la banque ci-dessous | celui du registre | « Ce peuple n'a jamais manqué de nom. » | « nom. » | « Ce sont ses voisins qui, chacun dans sa langue, lui en ont donné d'autres. » — *décidé par l'opérateur le 2026-09-14, pour le sujet `peul-fula-fulani` — distinct de la ligne « un nom partagé, repris par plusieurs peuples distincts » ci-dessus : celle-là porte un même nom que plusieurs peuples sans parenté se sont chacun approprié, celle-ci plusieurs noms différents que des voisins ont donnés, chacun dans sa langue, à un seul peuple qui n'en a demandé aucun* |
+| un lieu prétendument découvert — l'atteinte d'un lieu par un explorateur, présentée comme sa découverte alors qu'il était déjà habité, nommé et parcouru — *validé par l'opérateur le 2026-09-16* | un registre de la banque ci-dessous | celui du registre | « Ce lieu n'a pas été découvert. » | « découvert. » | « Il a été montré. » — *décidé pour le sujet `mungo-park-a-t-il-decouvert-le-fleuve-niger` : distinct de « des villes, des lieux » ci-dessus, qui porte un lieu déjà nommé qu'on a rebaptisé — celui-ci porte un lieu qu'on prétend avoir trouvé, alors que ceux qui y vivaient le connaissaient déjà et l'ont montré à qui le cherchait* |
 
 **`cards.json` ne porte jamais `**`** : les titres s'y recopient en texte brut depuis
 cette table, le moteur accentue de lui-même le dernier mot d'une clôture avec sa
@@ -819,6 +841,30 @@ du pays**.
   de quoi), dans un des registres de la banque de patrons ci-dessous — jamais le compte
   de peuples, qui appartient à la clôture.
 - **`ethniafrica-message`, critère 2** lit ce sous-cas différemment : voir ce skill.
+
+**Second sous-cas : un lot qui défait un mythe porté par le surnom du pays lui-même —
+l'ouverture assertit le surnom, pas le compte.** Décidé par l'opérateur le 2026-09-16,
+pour le sujet `cameroun-afrique-en-miniature` : le mythe n'est pas « ce pays est trop peu
+connu », c'est une revendication déjà répandue — « on y retrouve tous les peuples
+d'Afrique », d'où le surnom « le Continent » — que le compte de peuples vient justement
+mesurer et contredire. Ouvrir sur « {Pays}, c'est {n} peuples. » énoncerait la conclusion
+avant la question et viderait la suite de sa tension : le lecteur doit d'abord reconnaître
+la croyance, avant que la pièce ne la mesure.
+
+- **L'ouverture assertit le surnom lui-même**, dans un des registres de la banque de
+  patrons ci-dessous — jamais le compte de peuples, qui reste réservé au corps du lot, là
+  où il contredit la revendication.
+- **Le compte de peuples migre au corps**, comme démonstration plutôt que comme titre : il
+  y assume sa source (un chiffre publié, jamais recopié du corpus sans le dire) et sa
+  limite (ce que l'atlas documente lui-même, s'il est moindre).
+- **La clôture du type ci-dessus (« Ces peuples n'ont pas été rassemblés. ») reste
+  inchangée** — comme pour le sous-cas « qui a nommé le pays », c'est l'ouverture qui
+  s'écarte du patron, jamais la clôture.
+- **Distinct du sous-cas « qui a nommé le pays » ci-dessus** : celui-là renverse l'ordre
+  du corps parce que le sujet est un acte (nommer) ; celui-ci renverse l'ouverture parce
+  que le sujet est une croyance (un surnom) que le compte vient réfuter — une pièce qui
+  ouvre sur le compte n'a encore fait reconnaître à personne la croyance qu'elle va
+  démonter.
 
 **Ce qu'aucune clôture n'écrit, quel que soit le type**, tant que la session de doctrine
 n'a pas tranché : « Berlin » comme celui qui a tracé les lignes — la conférence de
