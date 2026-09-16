@@ -3657,13 +3657,13 @@ const options: swaggerJsdoc.Options = {
               format: "date-time",
               example: null,
             },
-            moderatorNotes: {
+            moderator_notes: {
               type: ["string", "null"],
               description:
                 "The moderator's answer on a decided report. Required by the moderation charter on accepted, rejected and duplicate.",
               example: null,
             },
-            remediationState: {
+            remediation_state: {
               type: ["string", "null"],
               enum: [
                 "not_started",
@@ -3676,14 +3676,14 @@ const options: swaggerJsdoc.Options = {
                 "What changed in the corpus, separately from what the atlas thought of the report. Written by the publication of a correction, never by a moderator decision. NULL while the report is open or under review.",
               example: null,
             },
-            remediationPublishedAt: {
+            remediation_published_at: {
               type: ["string", "null"],
               format: "date-time",
               description:
-                "When the correction reached the published corpus. Never null when remediationState is published.",
+                "When the correction reached the published corpus. Never null when remediation_state is published.",
               example: null,
             },
-            remediationSummary: {
+            remediation_summary: {
               type: ["string", "null"],
               description:
                 "One reader-facing sentence naming what changed, shown verbatim on the public report page.",
@@ -3709,10 +3709,10 @@ const options: swaggerJsdoc.Options = {
             "created_at",
             "updated_at",
             "resolved_at",
-            "moderatorNotes",
-            "remediationState",
-            "remediationPublishedAt",
-            "remediationSummary",
+            "moderator_notes",
+            "remediation_state",
+            "remediation_published_at",
+            "remediation_summary",
           ],
           example: {
             id: "9c81ca0d-ae45-4f08-8f53-2ac0a9673abd",
@@ -3736,10 +3736,10 @@ const options: swaggerJsdoc.Options = {
             created_at: "2026-07-24T10:15:30.000Z",
             updated_at: "2026-07-24T11:00:00.000Z",
             resolved_at: null,
-            moderatorNotes: null,
-            remediationState: null,
-            remediationPublishedAt: null,
-            remediationSummary: null,
+            moderator_notes: null,
+            remediation_state: null,
+            remediation_published_at: null,
+            remediation_summary: null,
           },
         },
         FlagCursorPaginationMeta: {

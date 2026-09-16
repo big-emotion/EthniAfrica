@@ -62,11 +62,11 @@ export interface PublicFlag {
    * rather than leaving the one surface that reads it to query the table
    * directly.
    */
-  moderatorNotes: string | null;
+  moderator_notes: string | null;
   /** The second axis — what changed in the corpus (migration 092). */
-  remediationState: FlagRemediationState | null;
-  remediationPublishedAt: string | null;
-  remediationSummary: string | null;
+  remediation_state: FlagRemediationState | null;
+  remediation_published_at: string | null;
+  remediation_summary: string | null;
 }
 
 export interface FlagListFilters {
@@ -328,10 +328,10 @@ function mapFlagRow(row: FlagRow): PublicFlag {
     created_at: row.created_at,
     updated_at: row.updated_at,
     resolved_at: row.resolved_at,
-    moderatorNotes: row.moderator_notes ?? null,
-    remediationState: row.remediation_state ?? null,
-    remediationPublishedAt: row.remediation_published_at ?? null,
-    remediationSummary: row.remediation_summary ?? null,
+    moderator_notes: row.moderator_notes ?? null,
+    remediation_state: row.remediation_state ?? null,
+    remediation_published_at: row.remediation_published_at ?? null,
+    remediation_summary: row.remediation_summary ?? null,
   };
 }
 

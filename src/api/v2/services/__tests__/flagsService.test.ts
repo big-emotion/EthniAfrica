@@ -480,10 +480,10 @@ describe("getFlagByIdOrSlug", () => {
     await expect(getFlagByIdOrSlug("012345678A")).resolves.toEqual(
       expect.objectContaining({
         status: "accepted",
-        moderatorNotes: "Le tracé retenu suit la ligne de 1991.",
-        remediationState: "not_started",
-        remediationPublishedAt: null,
-        remediationSummary: null,
+        moderator_notes: "Le tracé retenu suit la ligne de 1991.",
+        remediation_state: "not_started",
+        remediation_published_at: null,
+        remediation_summary: null,
       })
     );
   });

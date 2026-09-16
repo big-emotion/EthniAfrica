@@ -207,10 +207,10 @@ describe("OpenAPI v2 flags contract", () => {
       "created_at",
       "updated_at",
       "resolved_at",
-      "moderatorNotes",
-      "remediationState",
-      "remediationPublishedAt",
-      "remediationSummary",
+      "moderator_notes",
+      "remediation_state",
+      "remediation_published_at",
+      "remediation_summary",
     ]);
     expect(schemas.PublicFlag.example).toMatchObject({
       flag_kind: "inaccurate",
