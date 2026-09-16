@@ -174,6 +174,11 @@ describe("social chain contract", () => {
       "Facebook",
       "YouTube",
       "LinkedIn",
+      // Spelled with the old name on purpose. The check is a substring search
+      // inside §1 bis, and a bare "X" is one character: it would match any
+      // capital X in the section and report a format assigned that nobody
+      // wrote. The parenthesis is what makes this gate mean something.
+      "X (Twitter)",
     ]);
     const withoutLinkedIn = FORMAT_RULE_NETWORKS.filter(
       (network) => network !== "LinkedIn"
