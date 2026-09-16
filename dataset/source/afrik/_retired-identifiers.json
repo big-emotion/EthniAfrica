@@ -1,6 +1,13 @@
 [
   {
     "decision": "merged",
+    "retiredId": "PPL_KONGO_MAYOMBE",
+    "successorId": "PPL_YOMBE",
+    "reason": "Same people (Bayombe of the Mayombe forest, Kongo H16c, COD/COG/AGO): same nine Mbaangala clans, same nkisi nkondi and phemba art, same origin narrative, and no relation record ever linked the two. The keeper is what PAT_TCHICAYA and PAT_MAVOUNGOU already point at. The retiree's official-tier Ethnologue citation, Guthrie H16c classification, Manyanga/Bwende sub-groups, Palo Mayombe diaspora and Ibinda dialect note are folded in. The two demographic estimates (1,000,000 vs 600,000, disagreeing on which country holds the largest population) could not be reconciled from the available sources and are both recorded in the keeper's demography.source rather than one being silently discarded.",
+    "decidedOn": "2026-09-16"
+  },
+  {
+    "decision": "merged",
     "retiredId": "PPL_DASSANECH",
     "successorId": "PPL_DASANECH",
     "reason": "Same people (Daasanach, ISO dsh, ETH/KEN/SSD). The keeper carries the spelling Ethnologue and Glottolog recommend and the eight territorial sections; the retiree's exonyms and sources are folded in.",
