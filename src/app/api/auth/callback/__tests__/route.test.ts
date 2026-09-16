@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { NextRequest } from "next/server";
 
 const mocks = vi.hoisted(() => ({
@@ -25,6 +25,48 @@ function callbackFor(query: string) {
     new NextRequest(`http://localhost:3000/api/auth/callback${query}`)
   );
 }
+
+// The production container serves Next on its bind address, so the request
+// URL a route handler sees is `http://0.0.0.0:3000/...` while the reader came
+// from https://ethniafrica.com. A redirect built from that URL sent the first
+// moderator who signed in to an address their browser could not open.
+describe("GET /api/auth/callback behind the production container", () => {
+  function callbackOnBindAddress(query: string) {
+    return GET(
+      new NextRequest(`http://0.0.0.0:3000/api/auth/callback${query}`)
+    );
+  }
+
+  beforeEach(() => {
+    vi.clearAllMocks();
+    mocks.exchangeCodeForSession.mockResolvedValue({ error: null });
+    vi.stubEnv("NEXT_PUBLIC_SITE_URL", "https://ethniafrica.com");
+  });
+
+  afterEach(() => {
+    vi.unstubAllEnvs();
+  });
+
+  // @req REQ-042
+  it("lands a signed-in moderator on the public site, not the server's bind address", async () => {
+    const response = await callbackOnBindAddress(
+      "?code=abc&redirect=%2Ffr%2Fadmin"
+    );
+
+    expect(response.headers.get("location")).toBe(
+      "https://ethniafrica.com/fr/admin"
+    );
+  });
+
+  // @req REQ-042
+  it("sends a refused sign-in back to the public sign-in page", async () => {
+    const response = await callbackOnBindAddress("?redirect=%2Ffr%2Fadmin");
+
+    expect(response.headers.get("location")).toMatch(
+      /^https:\/\/ethniafrica\.com\/fr\/admin\/connexion\?error=/
+    );
+  });
+});
 
 describe("GET /api/auth/callback", () => {
   beforeEach(() => {

@@ -35,7 +35,7 @@ export const SEED_WORDS_PER_POOL = 10;
  * non génétique)", "République démocratique du Congo", "Peuples autochtones
  * des forêts d'Afrique centrale (Baka, Bagyeli, Bedzan)" — and none of them
  * is a query a reader would type. 694 of 789 peoples, 49 of 54 countries and
- * 17 of 24 families remain eligible.
+ * 18 of 25 families remain eligible.
  *
  * The countries are the sharp edge, and what it exposes is a corpus defect
  * rather than a limit of this rule. `name_fr` is the name of ordinary use and
@@ -88,7 +88,7 @@ export function drawSeedWords(
   if (eligible.length < 2) return [...fallback];
 
   // Fisher-Yates over a copy, then take the head: picking N random indices
-  // instead would have to reject collisions, and rejection on a pool of 17
+  // instead would have to reject collisions, and rejection on a pool of 18
   // families is a loop whose length depends on luck.
   for (let i = eligible.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));

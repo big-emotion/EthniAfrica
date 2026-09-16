@@ -6,7 +6,7 @@ import type { LanguageFamily } from "@/types/afrik";
 import { getLocalizedRoute } from "@/lib/routing";
 
 /**
- * ETNI-1359. 19 of the 24 family fiches carry a `whyProblematic` paragraph
+ * ETNI-1359. 20 of the 25 family fiches carry a `whyProblematic` paragraph
  * explaining that their name was imposed — Bantou is the worked case, coined
  * by Bleek and turned into an apartheid legal category — while the head that
  * names the family said nothing machine-readable about it.

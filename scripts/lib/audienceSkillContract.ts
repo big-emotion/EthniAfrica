@@ -45,18 +45,57 @@ export const AUDIENCE_CONSUMERS = [
 ] as const;
 
 /**
- * The four networks the productions go out on, as the operator reads them in
- * their studios. The message travels there before it reaches the site: the
- * 2026-09-13 message audit counted ~18 000 views a month on them against three
- * site visitors from them, so a producer that reads Plausible alone measures the
+ * The networks the productions go out on, as the operator reads them in their
+ * studios. The message travels there before it reaches the site: the 2026-09-13
+ * message audit counted ~18 000 views a month on them against three site
+ * visitors from them, so a producer that reads Plausible alone measures the
  * smallest surface the message reaches.
+ *
+ * X joined on 2026-09-16. It is the one network here whose own dashboard cannot
+ * be read: account analytics sit behind X Premium, and the audit is expected to
+ * read the view count printed under each post instead. A skill that sends the
+ * operator to a paywall reports nothing and looks like it tried.
+ *
+ * Each name is matched as a substring of the skill, so "X" alone would find
+ * itself in any capital X the file contains — see {@link FORMAT_RULE_NETWORKS}
+ * in `socialChainContract.ts`, which carries the same spelling for the same
+ * reason.
  */
 export const AUDIENCE_NETWORKS = [
   "YouTube",
   "TikTok",
   "Instagram",
   "Facebook",
+  "X (Twitter)",
 ] as const;
+
+/**
+ * The strategist plans on every network the productions go out on, LinkedIn
+ * included, and reads all of them on every run. On 2026-09-15 a run skipped
+ * three networks because the audit had read them the day before, and planned
+ * without a Facebook reel at 21 211 views in fourteen hours; the operator ruled
+ * that collection is never optional. The rule sentence is what keeps a later
+ * edit from softening "every run" back into "when stale".
+ */
+export const STRATEGIST = "ethniafrica-content-strategist";
+export const STRATEGIST_NETWORKS = [
+  "YouTube",
+  "LinkedIn",
+  "Instagram",
+  "TikTok",
+  "Facebook",
+  "X (Twitter)",
+] as const;
+/**
+ * The sentence, not the count, is what the checker looks for — so the number in
+ * it has to be maintained by hand, and that is deliberate. A rule that read
+ * "collects every network" would survive a network being dropped from the list
+ * without a word changing anywhere; spelling the count forces the skill and this
+ * file to be edited in the same commit, which is the only moment anyone rereads
+ * both.
+ */
+export const STRATEGIST_COLLECTION_RULE =
+  "collects all six networks on every run";
 
 export interface SkillContractIssue {
   skill: string;
@@ -149,6 +188,20 @@ export function checkAudienceSkillContract(
         skill,
         detail: `does not name its producer skill ${AUDIENCE_PRODUCER}`,
       });
+    }
+
+    if (skill === STRATEGIST) {
+      for (const network of STRATEGIST_NETWORKS) {
+        if (!markdown.includes(network)) {
+          issues.push({ skill, detail: `does not collect ${network} metrics` });
+        }
+      }
+      if (!markdown.includes(STRATEGIST_COLLECTION_RULE)) {
+        issues.push({
+          skill,
+          detail: `does not state the rule: ${STRATEGIST_COLLECTION_RULE}`,
+        });
+      }
     }
   }
 

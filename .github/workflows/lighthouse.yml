@@ -51,10 +51,48 @@ jobs:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
+      # A pull request that changes only documentation skips the build and
+      # every step that reads the recette database, which sits on a plan
+      # metered by egress. The job still runs to the end and reports green, so
+      # the required check never waits on a status that will not come — which
+      # is why this is a step and not a `paths:` filter. It fails closed: a
+      # file list it cannot read, an empty one, a pull request from recette or
+      # any file outside docs/, .claude/ and root Markdown renders. A rename
+      # counts its old path too, so moving a file out of src/ is not "docs".
+      - name: Scope the checks to what the pull request changed
+        id: scope
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          HEAD_REF: ${{ github.head_ref }}
+        run: |
+          render=true
+          docs_only='^(docs/|\.claude/|[^/]+\.md$)'
+          if [ "$HEAD_REF" = "recette" ]; then
+            echo "A pull request from recette always renders."
+          elif ! files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR/files" --jq '.[] | .filename, (.previous_filename // empty)')"; then
+            echo "::warning::Could not list the pull request's files, so the checks render."
+          elif [ -z "$files" ]; then
+            echo "The pull request lists no changed files, so the checks render."
+          else
+            render=false
+            while IFS= read -r file; do
+              if [[ ! $file =~ $docs_only ]]; then
+                render=true
+                echo "$file is outside docs/, .claude/ and root Markdown, so the checks render."
+                break
+              fi
+            done <<< "$files"
+            if [ "$render" = false ]; then
+              echo "::notice::Only docs/, .claude/ or root Markdown changed: skipping the build and every step that reads the database."
+            fi
+          fi
+          echo "render=$render" >> "$GITHUB_OUTPUT"
+
       - name: Setup Node
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - name: Install dependencies
@@ -80,7 +118,7 @@ jobs:
           fi
 
       - name: Restore Next.js build cache
-        if: steps.secrets.outputs.present == 'true'
+        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: .next/cache
@@ -89,31 +127,31 @@ jobs:
             nextjs-${{ hashFiles('package-lock.json') }}-
 
       - name: Build Next.js app
-        if: steps.secrets.outputs.present == 'true'
+        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
         run: npm run build
 
       - name: Start Next.js server
-        if: steps.secrets.outputs.present == 'true'
+        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
         run: npm run start &
 
       - name: Wait for server to be ready
-        if: steps.secrets.outputs.present == 'true'
+        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
         run: npx wait-on http://localhost:3000 --timeout 60000
 
       # Pinned: an unpinned global install is a different auditor on the day a
       # release changes an audit's scoring, and the gate would move with it.
       - name: Install @lhci/cli
-        if: steps.secrets.outputs.present == 'true'
+        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
         run: npm install -g @lhci/cli@0.15.1 --legacy-peer-deps
 
       - name: Install Chromium for Lighthouse
-        if: steps.secrets.outputs.present == 'true'
+        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
         run: |
           npx playwright install --with-deps chromium
           node -e 'console.log("CHROME_PATH=" + require("playwright").chromium.executablePath())' >> "$GITHUB_ENV"
 
       - name: Run the Lighthouse gate
-        if: steps.secrets.outputs.present == 'true'
+        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
         run: lhci autorun --config=./.lighthouserc.gate.js
 
   lighthouse:
@@ -140,7 +178,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - name: Install dependencies

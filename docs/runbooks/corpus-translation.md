@@ -57,16 +57,20 @@ dictionary keys cannot use this deferral.
 
 ## Verify
 
-The bare command surveys the full backlog and always exits zero. Use it for an
-inventory, not as proof that a change is ready:
+The parity check is a report and exits zero in every mode (REQ-171, DEC-055):
+a finding is something to read, not something that stops a commit or a merge.
+The bare command surveys the full backlog:
 
 ```bash
 npm run check:translation-parity -- --all
 ```
 
-The staged and base modes are blocking. They check changed corpus pairs in both
-directions, source drift, every registered UI dictionary and the bilingual
-glossary.
+The staged and base modes scope the same report to a diff. They check changed
+corpus pairs in both directions, source drift and every registered UI
+dictionary. The bilingual glossary is not in this report: it still blocks, as
+its own CI step (`npm run check:glossary`, REQ-144), because REQ-171 relaxes
+counterparts and not terminology. Run it locally before pushing translated
+content.
 
 ```bash
 npm run check:translation-parity -- --staged
@@ -74,7 +78,10 @@ npm run check:translation-parity -- --base origin/recette
 ```
 
 Before committing, stage the source and sidecar together and run the staged
-command. CI repeats the base form against the pull request target.
+command yourself — pre-commit no longer runs it. CI prints the base form
+against the pull request target as warning annotations. Because nothing fails,
+a sidecar that should have moved with its source is caught only by reading the
+report.
 
 ## Human review
 

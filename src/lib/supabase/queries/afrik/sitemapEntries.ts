@@ -60,7 +60,7 @@ type SupabaseClient = ReturnType<typeof createServerClient>;
 /** A row as the walk reads it: an id, plus whatever the caller selected. */
 interface SitemapRow {
   id: string;
-  content?: unknown;
+  sources?: unknown;
 }
 
 /**
@@ -157,17 +157,14 @@ async function idsInTable(
  * The tier is decided here, in TypeScript, over the rows already fetched. As a
  * PostgREST filter it would be a JSON path over `content -> sources[]`, an
  * unindexed array walk expressed as an opaque query string — a sequential scan
- * that reads as line noise, for a table of ~800 rows. The price is `content`
- * on the name select instead of `id` alone, which is a heavier payload than
- * the other four walks pull; it is paid once per sitemap build, and no other
- * table pays it.
+ * that reads as line noise, for a table of ~800 rows.
+ *
+ * Only `content -> sources` is fetched, never the whole dossier: the standing
+ * reads nothing else, and the full `content` column was ~4.3 MB per sitemap
+ * build — paid by every `next build` against a database metered by egress.
  */
 function nameCarriesIndexableStanding(row: SitemapRow): boolean {
-  const content = row.content;
-  if (typeof content !== "object" || content === null || Array.isArray(content))
-    return false;
-
-  const standing = readNameStanding(content as Record<string, unknown>);
+  const standing = readNameStanding({ sources: row.sources });
   return standing !== null && isAuthoritativeSourceTier(standing.tier);
 }
 
@@ -197,7 +194,7 @@ export async function getSitemapEntityIds(): Promise<SitemapEntityIds> {
       idsInTable(supabase, TABLES.families),
       idsInTable(supabase, TABLES.languages),
       idsInTable(supabase, TABLES.patronymes, {
-        columns: "id, content",
+        columns: "id, sources:content->sources",
         keeps: nameCarriesIndexableStanding,
       }),
     ]);

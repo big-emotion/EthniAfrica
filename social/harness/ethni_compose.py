@@ -142,6 +142,11 @@ ENTREE_TRANSLATION = 28          # px at k = 1, upward
 # the honest answer is a shorter sentence rather than smaller type.
 SOUS_TITRE_PLANCHER = 30
 
+# §1 ter — the thumbnail's word ceiling. Past it the title wraps to a fifth line,
+# the type has to come down to fit, and the first image stops reading in the feed
+# — which is the one job it has.
+MINIATURE_MOTS_MAX = 8
+
 # §9 — the plate's horizontal padding around the caption. Named because the
 # flush-left video layout has to put the plate's own edge on the margin, which
 # means offsetting the text by exactly this much.
@@ -272,7 +277,29 @@ def _envelopper(texte, face, taille, graisse, largeur_max):
 
 
 def _hauteur(lignes, taille, interligne):
-    return round(len(lignes) * taille * interligne) if lignes else 0
+    """A block's reserved height — never smaller than one line's real box.
+
+    `len(lignes) * taille * interligne` is right for spacing *between* lines,
+    but it treats `taille` (the nominal pixel size passed to Pillow) as if it
+    were the glyph's full visual height. It never is: measured on the two
+    faces this engine draws with, a line's real box (`font.getmetrics()`,
+    ascent + descent) runs **1,4 to 1,5×** the nominal size — Anton 216 px
+    measures 255 + 72 = 327 px, Nunito 32 px measures 33 + 12 = 45 px. At
+    `interligne >= 1,1` the formula already clears that floor and nothing
+    changes; at `interligne` at or below roughly 1 — only "Chiffre / mot
+    d'accent", 0,84, calibrated for the gap *between* two lines of a multi-
+    line accent word, never for a single line's own box — it fell short.
+    Measured 2026-09-14 on `zokou-gbeuly`: a bare "1835" at 216 px first
+    reserved 181 px (the digits overlapped the caption below), then a floor
+    at `taille` alone (216 px) still left only ~5 px of the ~110 px a real
+    line of this face needs — visibly cramped, not overlapping, still wrong.
+    The 1,5× floor applies to every single-line block, not only `chiffre`:
+    it is what a line already needed, whether or not the old formula happened
+    to clear it.
+    """
+    if not lignes:
+        return 0
+    return round(max(taille * 1.5, len(lignes) * taille * interligne))
 
 
 def _theme(deck):
@@ -580,22 +607,45 @@ def plan(carte, deck, fmt_key, *, image, sous_titre=False, disposition=None):
     plafond = bande_h + gouttiere if disposition != "A" else marge_haute * 2
     dispo = colonne_bas - plafond
     if haut_total > dispo:
-        # §6 — the column had to give up type to fit, so it did not hold at the
-        # sizes §3 sets. `colonne_A_tient` reads this: without it the fit trial
-        # always succeeded, because compression can always shrink something.
-        p.comprime = True
-        contenu, tient = _comprimer(contenu, dispo, gouttiere)
-        haut_total = hauteur_totale(contenu)
+        # §1 ter — **the opening is the thumbnail, and its type never gives way.**
+        # A title shrunk to fit is the defect the rule exists to remove: measured
+        # on the workshop, six openings out of sixteen had come down to 106 or
+        # 88 px to fit their band, silently, including the two the operator picked
+        # out of his own grid. So the copy is what gives — the fault below says
+        # which, and `structure` shortens the hook.
+        if carte.get("role") == "ouverture":
+            tient = False
+        else:
+            # §6 — the column had to give up type to fit, so it did not hold at the
+            # sizes §3 sets. `colonne_A_tient` reads this: without it the fit trial
+            # always succeeded, because compression can always shrink something.
+            p.comprime = True
+            contenu, tient = _comprimer(contenu, dispo, gouttiere)
+            haut_total = hauteur_totale(contenu)
         if not tient:
             # §11 — a block that overflows is a layout fault, never something to
             # let overlap. The column is clipped to its box so nothing collides,
             # and the fault is named so the render report can carry it.
             p.fautes.append(
+                f"la miniature demande {haut_total} px pour {dispo} px disponibles "
+                f"en {disposition}/{fmt_key} — §1 ter interdit de réduire le titre "
+                f"d'une ouverture : raccourcis l'accroche, huit mots au plus"
+                if carte.get("role") == "ouverture" else
                 f"la colonne demande {haut_total} px pour {dispo} px disponibles en "
                 f"{disposition}/{fmt_key} — raccourcis le corps, ou passe la carte "
                 f"en deux")
-            while contenu and hauteur_totale(contenu) > dispo:
-                retire = contenu.pop()
+            # §1 ter — on an opening the title is the one block that may not go:
+            # it *is* the thumbnail. Dropping it left two of the workshop's
+            # sixteen openings composed without a title at all, which is worse
+            # than the shrinking this rule came to remove. What surrounds it
+            # gives way instead, and if the title alone still overflows it is
+            # kept and the fault says so.
+            protege = "titre" if carte.get("role") == "ouverture" else None
+            while hauteur_totale(contenu) > dispo:
+                jetables = [i for i, b in enumerate(contenu) if b.nom != protege]
+                if not jetables:
+                    break
+                retire = contenu.pop(jetables[-1])
                 p.fautes.append(f"« {retire.nom} » n'a pas été composé, faute de place")
             haut_total = hauteur_totale(contenu)
 
@@ -764,8 +814,15 @@ def _colonne(carte, deck, fmt_key, largeur, disposition, k):
         # §7 ter makes an opening title a whole sentence: at 120 the Familles-Bantu
         # opening ran to five lines and 610 px, and the column held only by giving
         # up type — which §6 reads, rightly, as not holding.
+        #
+        # §1 ter — **the opening is the thumbnail, and it takes the cover row
+        # whatever its layout.** It circulates in the feed at a sixth of its width,
+        # where a series title reads as a smudge; the eight-word ceiling is what
+        # buys back the lines the larger type costs. A sentence-long opening title
+        # is now a copy fault, reported by `portes`, not a reason to set it small.
         ajouter("titre", carte.get("titre", ""),
-                "Titre de série" if disposition == "A" else "Titre de couverture",
+                "Titre de série" if disposition == "A" and carte.get("role") != "ouverture"
+                else "Titre de couverture",
                 encre1, majuscule=True, coupe=carte.get("coupe"))
         titre = next((b for b in blocs if b.nom == "titre"), None)
         if titre is not None and camps.get("deux"):
@@ -1143,6 +1200,13 @@ V_CREDIT_BAS = 44
 # enough to carry the plate *and* the pastille.
 V_TITRE_CLOTURE = (890, 380)
 V_BAS_CLOTURE = 270
+# §1 ter — the opening is the thumbnail. Its title is set at the cover row and it
+# needs the room: a taller slot, ending clear of the narration band, and the
+# scrim's ramp moved up to meet it. Measured on « Le commandant Bouët-Willaumez
+# a-t-il inventé la Côte d'Ivoire ? »: 233 px of title in a slot of 220, at 76 px
+# — the copy already did not fit the small type it was shrunk into.
+V_TITRE_OUVERTURE = (560, 720)
+V_VOILE_HAUT_OUVERTURE = 520
 
 # §9 bis — the two scrims. The profile is deliberately not monotone: 0,95 at the
 # top, 0 in the middle, 0,93 at the base. That is licit **because no text lives in
@@ -1179,9 +1243,15 @@ V_PASTILLE_CORPS = 27
 V_PASTILLE_PADDING = (20, 38)
 
 
-def _v_alpha(y, cloture=False):
-    """The scrim's alpha at an ordinate, by §9 bis's own stops."""
-    decalage = V_VOILE_HAUT_CLOTURE - V_VOILE_HAUT if cloture else 0
+def _v_alpha(y, cloture=False, haut=None):
+    """The scrim's alpha at an ordinate, by §9 bis's own stops.
+
+    `haut` is where the ramp starts. The closing and the opening both move it up
+    to meet a taller title, so the flag no longer names every case.
+    """
+    if haut is None:
+        haut = V_VOILE_HAUT_CLOTURE if cloture else V_VOILE_HAUT
+    decalage = haut - V_VOILE_HAUT
     arrets = [(y0 + decalage if y0 < 1920 else y0, a) for y0, a in V_VOILE_ARRETS]
     if y <= arrets[0][0]:
         return 0.0
@@ -1225,7 +1295,9 @@ def plan_video(carte, deck, *, image, sous_titre=False):
 
     # ── the two scrims ───────────────────────────────────────────────────────
     p.blocs.append(Bloc("voile-plaque", 0, 0, W, V_PLAQUE_H))
-    haut = V_VOILE_HAUT_CLOTURE if cloture else V_VOILE_HAUT
+    haut = (V_VOILE_HAUT_CLOTURE if cloture
+            else V_VOILE_HAUT_OUVERTURE if ouverture
+            else V_VOILE_HAUT)
     p.blocs.append(Bloc("voile-bas", 0, haut, W, H - haut))
 
     encre1, encre2 = _encre(deck, 1), _encre(deck, 2)
@@ -1248,14 +1320,26 @@ def plan_video(carte, deck, *, image, sous_titre=False):
                         t["graisse"], encre1, V_MARGE_X, largeur)
         if bloc is not None:
             bloc.y = V_SERIE_Y
+    elif (carte.get("image") or {}).get("surtitre"):
+        # §9 bis — a line shown with one image and never spoken (« Pendant ce temps,
+        # en France : … »). It takes the series slot, which every scene between the
+        # opening and the closing leaves empty, so nothing moves when it appears. Not
+        # in `ORDRE_LECTURE`: it arrives with its image, not on the reading cadence.
+        t = _role_type("Bandeau", "reel")
+        bloc = _v_poser(p.blocs, "v-surtitre", carte["image"]["surtitre"], t["corps"],
+                        t["face"], t["graisse"], encre1, V_MARGE_X, largeur)
+        if bloc is not None:
+            bloc.y = V_SERIE_Y
 
     # ── the title slot ───────────────────────────────────────────────────────
     # §4 — at 0,72 the gold does not survive, so the display is in ink 1, figure
     # included. The accent is not lost: it moves into the narration plate.
-    alpha_titre = _v_alpha(V_TITRE_CLOTURE[0] if cloture else V_TITRE[0], cloture)
+    haut_slot, h_slot = (V_TITRE_CLOTURE if cloture
+                         else V_TITRE_OUVERTURE if ouverture
+                         else V_TITRE)
+    alpha_titre = _v_alpha(haut_slot, haut=haut)
     encre_titre = tk.encre_affichage(alpha_titre, accent, encre1)
 
-    haut_slot, h_slot = V_TITRE_CLOTURE if cloture else V_TITRE
     slot = []
     if carte.get("chiffre"):
         _v_poser(slot, "v-chiffre", carte.get("titre", ""), 150, "anton", 400,
@@ -1263,7 +1347,11 @@ def plan_video(carte, deck, *, image, sous_titre=False):
         _v_poser(slot, "v-precision", carte.get("precision", ""), V_PRECISION_CORPS,
                  "nunito", 600, encre1, V_MARGE_X, largeur, interligne=1.3)
     else:
-        corps = V_TITRE_CLOTURE_CORPS if cloture else V_TITRE_CORPS
+        # §1 ter — the opening is the thumbnail, so it is set at the cover row,
+        # the same rank the carousel's own opening takes.
+        corps = (V_TITRE_CLOTURE_CORPS if cloture
+                 else _role_type("Titre de couverture", "reel")["corps"] if ouverture
+                 else V_TITRE_CORPS)
         titre = _v_poser(slot, "v-titre", carte.get("titre", ""), corps, "anton", 400,
                          # §3 — 1,08 is the floor for a display face, and §9 bis's
                          # own closing budget is computed at it: 3 × 80 = 259 px.
@@ -1271,8 +1359,10 @@ def plan_video(carte, deck, *, image, sous_titre=False):
                          majuscule=True)
         # §7 ter — the closing title comes from the content-type table and its
         # last word is the punch, on every row. Read off the title rather than
-        # declared, so a type added to the table needs no engine change.
-        if cloture and titre is not None:
+        # declared, so a type added to the table needs no engine change. §1 ter
+        # gives the opening the same chute: one accent word, the last, and the
+        # thumbnail's eye lands on it.
+        if titre is not None and (cloture or ouverture):
             titre.accent_depuis = _chute(carte.get("titre", ""))
         _v_poser(slot, "v-precision", carte.get("precision", ""), V_PRECISION_CORPS,
                  "nunito", 600, encre1, V_MARGE_X, largeur, interligne=1.3)
@@ -2181,6 +2271,42 @@ class Verdict:
 
 _PORTE_D_UNE_CARTE = re.compile(r"^carte \d+ : ")
 
+# §9 bis — « une image change au moins toutes les quatre secondes ».
+IMAGE_PLAFOND_S = 4.0
+
+
+def images_de(carte):
+    """A scene's images in order: `images` when the deck lists several, else `image`.
+
+    `image` stays the single-image form every deck written before 2026-09-14 uses,
+    so those render unchanged.
+    """
+    return carte.get("images") or [carte.get("image", {})]
+
+
+def image_a(carte, instant, duree, plafond=IMAGE_PLAFOND_S):
+    """(index, image) on screen `instant` seconds into a scene lasting `duree`.
+
+    The scene is cut into equal slots no longer than `plafond`, at least one per
+    image. Slot 0 is the first image, which introduces the scene's subject. A scene
+    with fewer images than slots cycles back through them rather than holding one
+    past the ceiling: a repeat reads as rhythm, a frozen frame reads as a stop.
+    """
+    images = images_de(carte)
+    creneaux = max(len(images), math.ceil(duree / plafond)) if duree else len(images)
+    creneau = min(int(instant * creneaux / duree), creneaux - 1) if duree else 0
+    k = creneau % len(images)
+    return k, images[k]
+
+
+def carte_a(carte, instant, duree):
+    """The card as painted at `instant`: `image` is the image on screen then.
+
+    Handing the painter a card whose `image` is already the current one keeps the
+    credit and the crop following the image without touching the painter.
+    """
+    return {**carte, "image": image_a(carte, instant, duree)[1]}
+
 
 def portes_de_la_carte(manquantes, carte):
     """The gates this one card has to answer for, plus those naming no card.
@@ -2205,36 +2331,67 @@ def portes(cartes, deck, identites=None):
     identites = identites or {}
 
     # 1 — every licence named, and the output licence computed from the lot.
-    licences = [c.get("image", {}).get("licence", "") for c in cartes]
+    # Every image of a scene counts, not only its first: a scene of several images
+    # ships under the most constraining licence among all of them.
+    licences = [im.get("licence", "") for c in cartes for im in images_de(c)]
     sortie = tk.licence_sortie(licences)
     if sortie is None:
-        sans = [c["rang"] for c, l in zip(cartes, licences) if not l]
+        sans = sorted({c["rang"] for c in cartes for im in images_de(c)
+                       if not im.get("licence")})
         manquantes.append(
             f"la licence n'est pas nommée sur les cartes {sans or '?'} — ouvre la page "
             f"du dépôt, lis la mention, et reporte-la, ou change d'image")
 
     for c in cartes:
-        im = c.get("image", {})
+        images = images_de(c)
+        for k, im in enumerate(images, 1):
+            # « carte N : » keeps `portes_de_la_carte` scoping the gate to its card;
+            # « image k : » says which image, once a scene carries several.
+            etiquette = f"carte {c['rang']} : " + (f"image {k} : " if len(images) > 1 else "")
 
-        # 2 — the credit names the document actually composed.
-        identite = (im.get("identite") or "").strip()
-        if not identite:
-            manquantes.append(
-                f"carte {c['rang']} : l'image ne dit pas ce qu'elle montre. \u00c9cris "
-                f"`image.identite` en regardant l'image, puis relis le cr\u00e9dit \u00e0 "
-                f"c\u00f4t\u00e9 \u2014 sans \u00e7a la porte 2 ne garde rien")
-        elif not _atteste(im):
-            manquantes.append(
-                f"carte {c['rang']} : personne n'a sign\u00e9 la comparaison du "
-                f"cr\u00e9dit \u00e0 l'image. Regarde les deux, puis pose "
-                f"`image.verifie` \u00e0 {{\"par\": \"<qui>\", \"le\": \"<AAAA-MM-JJ>\"}}")
-        elif not _decrivent_la_meme_chose(identite, im.get("credit", "")):
-            # A remark, not a refusal: a caption and a description legitimately
-            # share no vocabulary, and this fired on twenty correct cards.
-            remarques.append(
-                f"carte {c['rang']} : \u00ab {im['credit']} \u00bb et \u00ab {identite} \u00bb "
-                f"ne partagent aucun mot \u2014 v\u00e9rifie que c'est bien le m\u00eame "
-                f"document")
+            # 2 — the credit names the document actually composed.
+            identite = (im.get("identite") or "").strip()
+            if not identite:
+                manquantes.append(
+                    f"{etiquette}l'image ne dit pas ce qu'elle montre. Écris "
+                    f"`image.identite` en regardant l'image, puis relis le crédit à "
+                    f"côté — sans ça la porte 2 ne garde rien")
+            elif not _atteste(im):
+                manquantes.append(
+                    f"{etiquette}personne n'a signé la comparaison du "
+                    f"crédit à l'image. Regarde les deux, puis pose "
+                    f"`image.verifie` à {{\"par\": \"<qui>\", \"le\": \"<AAAA-MM-JJ>\"}}")
+            elif not _decrivent_la_meme_chose(identite, im.get("credit", "")):
+                # A remark, not a refusal: a caption and a description legitimately
+                # share no vocabulary, and this fired on twenty correct cards.
+                remarques.append(
+                    f"{etiquette}« {im['credit']} » et « {identite} » "
+                    f"ne partagent aucun mot — vérifie que c'est bien le même "
+                    f"document")
+
+            # 3, for the parallel shown with this image — printed, so held like any
+            # printed field.
+            surtitre = im.get("surtitre") or ""
+            if tk.note_interne(surtitre):
+                manquantes.append(
+                    f"{etiquette}`image.surtitre` porte « {surtitre} », une note à "
+                    f"l'opérateur dans un champ imprimé — tranche-la, elle ne s'imprime pas")
+            if tk.date_en_lettres(surtitre):
+                manquantes.append(
+                    f"{etiquette}`image.surtitre` porte « {surtitre} », une date en "
+                    f"lettres — §3 les veut en chiffres")
+
+            # 3, for the credit — no internal note, no spelled-out date.
+            for champ in ("credit", "depot", "licence"):
+                if tk.note_interne(im.get(champ, "")):
+                    manquantes.append(
+                        f"{etiquette}« {im[champ]} » est une note interne dans le crédit — "
+                        f"nomme le document et sa licence, ou change d'image")
+            for champ in ("identite", "credit", "depot"):
+                if tk.date_en_lettres(im.get(champ, "")):
+                    manquantes.append(
+                        f"{etiquette}`image.{champ}` porte « {im[champ]} », "
+                        f"une date en lettres — §3 les veut en chiffres")
 
         # §10 — a body or a table, never both. A card carrying the two does not
         # know what it is showing, and the renderer would silently pick one.
@@ -2271,16 +2428,31 @@ def portes(cartes, deck, identites=None):
                     f"carte {c['rang']} : `{champ}` porte « {valeur} », une note à "
                     f"l'opérateur dans un champ imprimé — tranche-la, elle ne "
                     f"s'imprime pas")
-        for champ in ("credit", "depot", "licence"):
-            if tk.note_interne(im.get(champ, "")):
+            # §3 — a date reads as digits, never spelled out. Checked on every
+            # printed field, not only `corps`: the miss that motivated this
+            # gate shipped in `image.identite`, not in copy read aloud.
+            if tk.date_en_lettres(valeur or ""):
                 manquantes.append(
-                    f"carte {c['rang']} : « {im[champ]} » est une note interne dans le crédit — "
-                    f"nomme le document et sa licence, ou change d'image")
+                    f"carte {c['rang']} : `{champ}` porte « {valeur} », une date "
+                    f"en lettres — §3 les veut en chiffres (1891, 17e siècle), "
+                    f"jamais épelées")
 
         # §10 — a forced cut carries the *words*, not only the break positions:
         # the engine draws `coupe`'s lines in place of the title. A title rewritten
         # without its cut therefore renders the old one, in silence — which is what
         # three of the ten openings did on the first pass of this very rewrite.
+        # §1 ter — the opening is the thumbnail, and it is read at a sixth of its
+        # width. A remark, not a refusal: the lot still renders, and the copy is
+        # shortened in `structure`, which is the only place that can.
+        if c.get("role") == "ouverture":
+            mots = _mots(c.get("titre", "") or "")
+            if len(mots) > MINIATURE_MOTS_MAX:
+                remarques.append(
+                    f"carte {c['rang']} : la miniature porte {len(mots)} mots, et "
+                    f"§1 ter en veut {MINIATURE_MOTS_MAX} au plus — « "
+                    f"{c.get('titre', '')[:60]} ». Raccourcis l'accroche : le "
+                    f"développement commence à la carte suivante")
+
         coupe = c.get("coupe")
         if coupe and _mots(" ".join(coupe)) != _mots(c.get("titre", "")):
             manquantes.append(
@@ -2355,7 +2527,19 @@ def rendre(carte, deck, fmt_key, *, image, racine, verdict, sous_titre=False):
 
     campagne = _NON_MOT.sub("-", (deck.get("campagne") or "carte").lower()).strip("-")
     nom = f"{campagne}_{carte['rang']:02d}_{fmt_key}_{cadre['w']}x{cadre['h']}"
-    dossier = racine / ("_epreuves" if epreuve else "images")
+
+    # A passing render is filed under the networks that actually receive its
+    # format (§1 bis), not under a flat `images/` an operator then has to sort by
+    # hand, network by network, before posting.
+    if epreuve:
+        dossier = racine / "_epreuves"
+    else:
+        cibles = tk.reseaux(fmt_key)
+        if not cibles:
+            raise ValueError(
+                f"aucun réseau ne reçoit le format {fmt_key!r} — voir "
+                f"GABARITS-SOCIAL.md §1 bis")
+        dossier = racine / "-".join(cibles)
     dossier.mkdir(parents=True, exist_ok=True)
 
     chemin = dossier / f"{nom}{'-epreuve' if epreuve else ''}.png"

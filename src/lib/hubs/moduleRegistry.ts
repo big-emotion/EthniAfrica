@@ -208,12 +208,6 @@ export type ModuleAvailability = "data" | "static";
  */
 export type EditorialReadiness = "ready" | "draft";
 
-// @req REQ-114
-export const EDITORIAL_READINESS_STATES: EditorialReadiness[] = [
-  "ready",
-  "draft",
-];
-
 export interface HubModuleDefinition {
   id: string;
   name: string;

@@ -5,8 +5,14 @@ import { Fraunces, Nunito_Sans, JetBrains_Mono } from "next/font/google";
 import "@/index.css";
 import { Providers } from "./providers";
 import { TypeformPreload } from "@/components/TypeformPreload";
-import { PRODUCT_NAME, OG_TITLE, OG_DESCRIPTION } from "@/lib/brand";
+import {
+  PRODUCT_NAME,
+  OG_TITLE,
+  OG_DESCRIPTION,
+  SOCIAL_HANDLE,
+} from "@/lib/brand";
 import { LOCALE_HEADER, resolveLocale } from "@/lib/locale";
+import { resolveSiteUrl } from "@/lib/siteUrl";
 import PlausibleScript from "@/components/PlausibleScript";
 
 const fraunces = Fraunces({
@@ -34,12 +40,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 // @req REQ-044
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    (() => {
-      const url = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-      return url.startsWith("http") ? url : `http://${url}`;
-    })()
-  ),
+  metadataBase: new URL(resolveSiteUrl()),
   title: `${PRODUCT_NAME} | Dictionnaire des Ethnies d'Afrique`,
   description:
     "Encyclopédie des peuples, langues, familles linguistiques, pays, appellations et noms d'Afrique. Chaque fiche cite ses sources.",
@@ -56,7 +57,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@big_emotion",
+    site: SOCIAL_HANDLE,
     images: ["/twitter-image"],
   },
 };

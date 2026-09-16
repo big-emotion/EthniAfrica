@@ -111,11 +111,11 @@ export function HomeHero({
               "l'atlas libre des peuples d'Afrique, sources à l'appui."}
           </p>
 
-          {/* What the atlas is for, in the two sentences the social series
-              opens and closes on (docs/editorial/purpose-doctrine.md). Closed:
-              the band's job is still the search. A native <details>, so the
-              answer opens with no script, and a link to the About chapter
-              that labels both sentences as the project's position. */}
+          {/* What the atlas is for, in the statement the social series opens
+              on (docs/editorial/purpose-doctrine.md). Closed: the band's job
+              is still the search. A native <details>, so the answer opens
+              with no script, and a link to the About chapter that labels the
+              statement as the project's position. */}
           <details
             className="home-hero-purpose"
             data-testid="home-hero-purpose"
@@ -234,9 +234,17 @@ export function HomeHero({
         .home-hero-copy h1 {
           font-family: var(--afh-font-display);
           font-weight: 900;
-          font-size: var(--home-text-hero-title);
-          line-height: 1.04;
-          margin: 0 0 16px;
+          /* The scale's hero step, not the home's own clamp: that one was
+             written in px, which ignores the reader's font-size setting
+             (typography charter §2), and topped out at 56px, above the
+             scale's ceiling. It is 34px rather than 30px at 430. */
+          font-size: var(--afh-text-hero);
+          line-height: var(--afh-leading-hero);
+          /* 12px, not 16: the hero step added four pixels to the title at
+             430, and the globe's share of the first fold (brand charter §8.3,
+             home-search-first.spec) fell to 119px of its 120. The gap under
+             the title gives them back rather than the title's step. */
+          margin: 0 0 var(--afh-space-lg);
           color: var(--afh-text);
           text-wrap: balance;
         }
@@ -262,10 +270,12 @@ export function HomeHero({
            an ocre underline that says it opens something. The disclosure
            marker is redrawn as a chevron so it turns with the state instead
            of the browser's triangle, which sits on the baseline at a
-           different size in every engine. */
+           different size in every engine.
+
+           No 52ch measure, unlike the answer above it: the statement runs the
+           copy column's full width (operator ruling, 2026-09-14). */
         .home-hero-purpose {
-          max-width: 52ch;
-          margin: var(--afh-space-sm) auto 0;
+          margin-top: var(--afh-space-sm);
         }
         .home-hero-purpose summary {
           display: inline-flex;
@@ -303,13 +313,22 @@ export function HomeHero({
         .home-hero-purpose-panel {
           padding-block: var(--afh-space-xs) var(--afh-space-sm);
         }
+        /* Prose, so the answer's own dress: body face, body step, full ink.
+           Set in the display face at lead it was a third headline voice on a
+           band whose display face already speaks twice (the title at 900, the
+           anecdote at 700), and at a weight Fraunces is not even loaded in.
+           One voice for what the atlas says, the display face for what it
+           names (operator ruling, 2026-09-14). */
         .home-hero-purpose-sentence {
           margin: 0 0 var(--afh-space-xs);
-          font-family: var(--afh-font-display);
-          font-size: var(--afh-text-lead);
-          line-height: 1.35;
+          font-family: var(--afh-font-body);
+          font-size: var(--afh-text-body);
+          line-height: var(--afh-leading-body);
           color: var(--afh-text);
-          text-wrap: balance;
+          /* pretty, not balance: balance evens the lines out and so never
+             lets them reach the column's edge, which is the width asked for.
+             pretty still refuses a one-word last line. */
+          text-wrap: pretty;
         }
         .home-hero-purpose-link {
           display: inline-flex;
@@ -460,8 +479,7 @@ export function HomeHero({
              a second left edge inside one block, which §8.1 of the brand
              charter counts as a defect. The tile band makes the same switch
              for itself, in its own file, at this same width. */
-          .home-hero-answer,
-          .home-hero-purpose {
+          .home-hero-answer {
             margin-inline: 0;
           }
           .home-hero-globe .home-globe-stage {

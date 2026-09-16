@@ -118,20 +118,12 @@ with wave.open("source.wav") as f:
     assert f.getsampwidth() == 2
     samples = np.frombuffer(f.readframes(f.getnframes()), dtype="<i2").reshape(-1, channels).copy()
 
-# Intended gap after each token, in final (post-tempo) seconds. The hook gets the
-# long landing the format asks for; other block breaks get a change-of-idea beat.
-targets = {}
-offset = 0
-for li, line in enumerate(lines):
-    ts = cap.TOKEN_PATTERN.findall(line)
-    for j, t in enumerate(ts[:-1]):
-        if t.endswith(","):
-            targets[offset + j] = 0.20
-        elif t.endswith((".", "?", "!")):
-            targets[offset + j] = 0.40
-    offset += len(ts)
-    if li < len(lines) - 1:
-        targets[offset - 1] = 0.76 if li == 0 else (0.64 if line.endswith("?") else 0.48)
+# Intended gap after each token, in final (post-tempo) seconds. The defaults live
+# in `ethni_pauses`; `production.json` → `pauses` tightens them for a subject cut
+# to a faster rhythm, which the constants used to undo.
+from ethni_pauses import cibles_de_pause
+
+targets = cibles_de_pause(lines, cap.TOKEN_PATTERN.findall, config.get("pauses"))
 
 mono = samples.astype(np.float64).mean(axis=1) / 32768
 silence_run = subprocess.run(

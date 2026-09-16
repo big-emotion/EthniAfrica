@@ -87,7 +87,7 @@ vi.mock("@/api/v2/services/patronymes", async (importOriginal) => ({
 }));
 
 import { metadata as rootLayoutMetadata } from "@/app/layout";
-import { CANONICAL_DOMAIN, OG_DESCRIPTION } from "@/lib/brand";
+import { CANONICAL_DOMAIN, OG_DESCRIPTION, SOCIAL_HANDLE } from "@/lib/brand";
 import {
   getCountryRoute,
   getFamilyRoute,
@@ -257,10 +257,26 @@ describe("root layout metadata — the only <head> the fiche routes get", () => 
       },
       twitter: {
         card: "summary_large_image",
-        site: "@big_emotion",
+        // Read from the constant for the same reason `description` above is:
+        // the handle is an identity string, and this literal spelled the
+        // publisher's account rather than the product's for as long as the
+        // product had no account of its own to name.
+        site: SOCIAL_HANDLE,
         images: ["/twitter-image"],
       },
     });
+  });
+
+  /**
+   * A card attributed to the wrong account is not a cosmetic defect: X prints
+   * the handle under the preview, so every EthniAfrica page shared there
+   * credited the studio. The value is asserted here, and not only wired,
+   * because "reads a constant" stays true while the constant is wrong.
+   */
+  // @req REQ-019
+  it("attributes the card to the product's account, not the publisher's", () => {
+    expect(SOCIAL_HANDLE).toBe("@ethniafrica");
+    expect(rootLayoutMetadata.twitter).toMatchObject({ site: "@ethniafrica" });
   });
 
   // The layout sits above `[lang]` and cannot know which locale a page was

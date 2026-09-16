@@ -7,6 +7,7 @@ import {
   checkRelationReferences,
   checkRelationSources,
   checkRelationDuplicates,
+  summarizeValidationRun,
 } from "../validateAfrikData";
 
 // ─── helpers ──────────────────────────────────────────────────────────────────
@@ -268,9 +269,10 @@ describe("relation validator (REL-1..REL-7, Story 11.3)", () => {
     });
   });
 
-  describe("REL-5 — ≥1 Tier 1|2 source; Tier 2 requires Wikipedia cross-check note", () => {
-    // @req REQ-032
-    it("checkRelationSources fails when there is no Tier 1 or Tier 2 source", () => {
+  describe("REL-5 — a relation's standing is labelled, never a reason to refuse it (DEC-055)", () => {
+    // A relation with no source has no standing to show, so it still fails.
+    // @req REQ-169
+    it("checkRelationSources still fails a relation that cites no source at all", () => {
       writeRelation(
         tmpDir,
         "REL_NO_SOURCE.json",
@@ -279,22 +281,85 @@ describe("relation validator (REL-1..REL-7, Story 11.3)", () => {
 
       const result = checkRelationSources(tmpDir);
       expect(result.ok).toBe(false);
-      expect(result.errors.some((e) => e.includes("REL-5"))).toBe(true);
+      expect(
+        result.errors.some(
+          (e) => e.includes("REL-5") && e.includes("REL_NO_SOURCE.json")
+        )
+      ).toBe(true);
     });
 
-    // @req REQ-032
-    it("checkRelationSources fails when a Tier 2 source has no cross-check note", () => {
+    // @req REQ-169
+    it("checkRelationSources passes a relation known only from an unverified source, with one warning naming it and its standing", () => {
       writeRelation(
         tmpDir,
-        "REL_TIER2_NO_NOTE.json",
+        "REL_COMMUNITY.json",
+        validRelation({
+          sources: [
+            {
+              title: "Récit communautaire",
+              author: "A",
+              year: 2020,
+              url: "https://example.org/x",
+              tier: "unverified",
+              notes: "",
+            },
+          ],
+        })
+      );
+
+      const result = checkRelationSources(tmpDir);
+      expect(result.ok).toBe(true);
+      expect(result.errors).toEqual([]);
+      expect(result.warnings).toHaveLength(1);
+      expect(result.warnings[0]).toContain("REL_COMMUNITY.json");
+      expect(result.warnings[0]).toContain("unverified");
+      expect(result.warnings[0]).not.toMatch(/Tier [123]|forbidden/i);
+
+      const summary = summarizeValidationRun(
+        [],
+        [{ name: "REL-5 Relation sources", result }]
+      );
+      expect(summary.failed).toBe(false);
+      expect(summary.warningCount).toBe(1);
+    });
+
+    // @req REQ-169
+    it("checkRelationSources asks a referenced source for no Wikipedia note", () => {
+      writeRelation(
+        tmpDir,
+        "REL_REFERENCED_NO_NOTE.json",
         validRelation({
           sources: [
             {
               title: "T",
               author: "A",
               year: 2000,
-              url: "https://fr.wikipedia.org/wiki/X",
-              tier: 2,
+              url: "https://www.persee.fr/x",
+              tier: "referenced",
+              notes: "",
+            },
+          ],
+        })
+      );
+
+      const result = checkRelationSources(tmpDir);
+      expect(result.ok).toBe(true);
+      expect(result.errors).toEqual([]);
+      expect(result.warnings).toEqual([]);
+    });
+
+    // @req REQ-169
+    it("checkRelationSources fails a source that records no tier, naming the relation", () => {
+      writeRelation(
+        tmpDir,
+        "REL_NO_TIER.json",
+        validRelation({
+          sources: [
+            {
+              title: "T",
+              author: "A",
+              year: 2000,
+              url: "https://www.un.org/en/x",
               notes: "",
             },
           ],
@@ -303,30 +368,11 @@ describe("relation validator (REL-1..REL-7, Story 11.3)", () => {
 
       const result = checkRelationSources(tmpDir);
       expect(result.ok).toBe(false);
-      expect(result.errors.some((e) => e.includes("REL-5"))).toBe(true);
-    });
-
-    // @req REQ-032
-    it("checkRelationSources passes when a Tier 2 source carries a cross-check note", () => {
-      writeRelation(
-        tmpDir,
-        "REL_TIER2_OK.json",
-        validRelation({
-          sources: [
-            {
-              title: "T",
-              author: "A",
-              year: 2000,
-              url: "https://fr.wikipedia.org/wiki/X",
-              tier: 2,
-              notes: "Cross-checked FR + EN Wikipedia, primary source: ...",
-            },
-          ],
-        })
-      );
-
-      const result = checkRelationSources(tmpDir);
-      expect(result.ok).toBe(true);
+      expect(
+        result.errors.some(
+          (e) => e.includes("REL_NO_TIER.json") && e.includes("tier")
+        )
+      ).toBe(true);
     });
   });
 

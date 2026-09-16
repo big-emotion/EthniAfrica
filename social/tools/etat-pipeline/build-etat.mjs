@@ -21,6 +21,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
+import { aDesImages } from "./rendu-reseaux.mjs";
 import {
   ETATS,
   etat,
@@ -78,11 +79,12 @@ function blocage(dossier, texte, cle) {
     );
   if (bloqueurs.length) return bloqueurs.join(" · ");
 
-  const a = (sous) =>
+  const aVideo = (sous) =>
     fs.existsSync(path.join(dossier, sous)) &&
     fs.readdirSync(path.join(dossier, sous)).some((n) => !n.startsWith("."));
-  if (!a("images") && !a("video")) return "aucun rendu";
-  if (!a("images")) return "images non rendues";
+  const images = aDesImages(dossier);
+  if (!images && !aVideo("video")) return "aucun rendu";
+  if (!images) return "images non rendues";
 
   // §7 and §11 — a note to the operator left in a printed field blocks the card.
   if (/à\s+(nommer|confirmer|compléter|vérifier)/i.test(texte)) {

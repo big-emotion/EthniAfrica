@@ -197,3 +197,32 @@ export const Desktop: Story = {
   },
   parameters: { viewport: { defaultViewport: "desktop" } },
 };
+
+/* ----- Authority first, nothing hidden (DEC-055) ------------------------- */
+
+// @req REQ-174
+export const UnconfirmedSourcesIntroduced: Story = {
+  args: {
+    anchorId: "chip-paragraph-unconfirmed",
+    assertion: {
+      statement:
+        "Le fondateur du lignage serait venu de l'est avec ses troupeaux.",
+      confidenceScore: 0.48,
+      sourceCount: 4,
+      lastHumanAuditAt: null,
+    },
+    sources: [
+      tertiarySource,
+      {
+        id: "s-narrative-unreviewed",
+        title: "Récit du fondateur, recueilli en 2025",
+        tier: "unverified",
+        reviewedNarrative: false,
+        brokenAt: null,
+      },
+      primarySource,
+      aiSource,
+    ],
+  },
+  parameters: { viewport: { defaultViewport: "mobile1" } },
+};

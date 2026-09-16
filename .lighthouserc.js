@@ -183,8 +183,11 @@ module.exports = {
             "categories:best-practices": ["error", { minScore: 0.95 }],
           },
         },
-        // Every route that does not open on an assembled fiche. The lowest
-        // three-run median measured was 0.75 (the English home); two points
+        // Every route that does not open on an assembled fiche. Its 0.73 floor
+        // is the accepted lab budget recorded in docs/design/brand-charter.md
+        // §10, beside the 0.85 target it falls short of; change the two
+        // together. The lowest three-run median measured was 0.75 (the
+        // English home); two points
         // under it absorb runner noise without licensing a slide. The cost
         // these routes share is the common chunk, not their own code, so the
         // floor moves up when that chunk shrinks — not route by route.

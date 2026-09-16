@@ -77,6 +77,20 @@ export function YoutubeGlyph({ className }: SocialGlyphProps) {
   );
 }
 
+// The X wordmark is a filled counter-form, which this file's one stroke system
+// has no way to draw. Two crossed strokes say the same thing in the same hand,
+// inset to 5–19 so the diagonals do not read heavier than the square and
+// circular marks beside them.
+// @req REQ-046
+export function XGlyph({ className }: SocialGlyphProps) {
+  return (
+    <svg {...GLYPH_PROPS} className={className}>
+      <line x1="5" y1="5" x2="19" y2="19" />
+      <line x1="19" y1="5" x2="5" y2="19" />
+    </svg>
+  );
+}
+
 // @req REQ-160
 export function WhatsAppGlyph({ className }: SocialGlyphProps) {
   return (

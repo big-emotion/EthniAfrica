@@ -21,6 +21,10 @@ coverage
 playwright-report/
 test-results/
 .playwright-cache/
+# The Playwright MCP drops console logs and page snapshots into the cwd of every
+# agent session. `*.log` already hid the logs; the `page-*.yml` snapshots kept
+# surfacing as untracked litter in the main checkout.
+.playwright-mcp/
 storybook-static/
 
 # Next.js
@@ -40,11 +44,12 @@ dist-ssr
 build
 
 # Environment variables
+# Every env file is a secret until proven otherwise. Listing variants one by
+# one left `.env.production`, `.env.development` and `.env.test` addable; the
+# two templates are the only env files this repository tracks.
 .env
-.env*.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
+!.env.example
 
 # TypeScript
 *.tsbuildinfo
@@ -69,8 +74,12 @@ build
 !.claude/skills/ethniafrica-audit/
 !.claude/skills/ethniafrica-bootstrap-confluence/
 !.claude/skills/ethniafrica-content-strategist/
+!.claude/skills/ethniafrica-essai/
 !.claude/skills/ethniafrica-idee/
+!.claude/skills/ethniafrica-infra/
 !.claude/skills/ethniafrica-message/
+!.claude/skills/ethniafrica-mythe/
+!.claude/skills/ethniafrica-onomastique/
 !.claude/skills/ethniafrica-produire/
 !.claude/skills/ethniafrica-reseaux-help/
 !.claude/skills/ethniafrica-structure/

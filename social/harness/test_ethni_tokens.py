@@ -110,6 +110,16 @@ def test_formats_come_from_the_spec():
     assert reel["marge_basse"] == 391
 
 
+def test_networks_come_from_the_1bis_table():
+    """§1 bis — parsed from the "Reçoit" column, never a second list.
+
+    Order matches the table's own row order, which is also the order the render
+    engine joins into an output folder name.
+    """
+    assert tk.reseaux("carrousel") == ["TikTok", "Instagram"]
+    assert tk.reseaux("reel") == ["Instagram", "Facebook", "YouTube", "X"]
+
+
 def test_the_interface_floor_is_a_number_not_a_habit():
     """§1 — nothing legible below y = 1620 in 9:16."""
     assert tk.SAFE_FLOOR_9_16 == 1620
@@ -186,6 +196,24 @@ def test_internal_notes_never_reach_a_printed_field():
     assert tk.note_interne("série à confirmer")
     assert tk.note_interne("crédit à compléter")
     assert not tk.note_interne("G. W. Bacon, Londres, v. 1906")
+
+
+def test_dates_spelled_out_are_refused_counts_are_not():
+    """§3 — a century or decade is digits, never letters; a count stays copy.
+
+    Both real misses that motivated this gate, kept as fixtures: a card body
+    that spelled out "le quinzième ou le dix-septième siècle", and an
+    `image.identite` that spelled out "dix-neuvième siècle".
+    """
+    assert tk.date_en_lettres("Dès le quinzième ou le dix-septième siècle")
+    assert tk.date_en_lettres("Portrait retouché, dix-neuvième siècle.")
+    assert tk.date_en_lettres("Dans la troisième décennie du siècle")
+    # A count is not a date — the doctrine's own title example stays legitimate.
+    assert not tk.date_en_lettres("La Tanzanie, c'est quatre-vingt-seize peuples.")
+    assert not tk.date_en_lettres("Soixante-cinq peuples vivent en Côte d'Ivoire.")
+    assert not tk.date_en_lettres("En 1891, un décret nomme la colonie.")
+    assert not tk.date_en_lettres("17e siècle")
+    assert not tk.date_en_lettres("")
 
 
 # The live path — cards through `ethni_carrousel2.py` → `ethni_compose.py`, video

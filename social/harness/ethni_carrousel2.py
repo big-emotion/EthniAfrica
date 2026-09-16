@@ -1,4 +1,4 @@
-"""Render one deck to the new gabarit — three formats, with a render report.
+"""Render one deck to the new gabarit — two formats, with a render report.
 
     ./venv/bin/python ethni_carrousel2.py <Sujet> [--sortie <dossier>]
 
@@ -7,8 +7,14 @@ retired-gabarit carousel script and its single-card sibling, both deleted once t
 video engine had moved to `ethni_montage.py` too.
 
 **It always renders.** A lot that fails a gate goes to `_epreuves/` stamped and
-annotated; a lot that passes goes to `images/`. Nothing here asks permission: a
+annotated; a lot that passes goes to one folder per format, named after the
+networks that format reaches (§1 bis) — `TikTok-Instagram/` for the carrousel,
+`Instagram-Facebook-YouTube-X/` for the reel. Nothing here asks permission: a
 proof is looked at, and that is how it gets decided.
+
+The `linkedin` format (1080 × 1080) is retired from this loop: no network in
+§1 bis's table receives it as an image any more, LinkedIn's own line taking a
+text post instead. §1 still carries its pixel spec for the record.
 
 The report is the deliverable, not a courtesy. It says which layout each card got
 and **why**, each image's enlargement factor, which gates held, and the computed
@@ -24,7 +30,7 @@ import ethni_compose as gab
 import ethni_tokens as tk
 from ethni_paths import resolve_project
 
-FORMATS = ("carrousel", "linkedin", "reel")
+FORMATS = ("carrousel", "reel")
 
 
 def _pourquoi(plan, carte, image, fmt_key, deck):
@@ -103,42 +109,51 @@ def main():
     if sortie.name == "images":
         sortie = sortie.parent
 
-    # A lot that clears its gates lands in `images/`. When a previous gabarit's
-    # renders are already sitting there, that means dropping a second set beside
-    # a set somebody could upload — and the two are indistinguishable in a file
+    # A lot that clears its gates lands one folder per format, named after the
+    # networks §1 bis gives that format. When a previous gabarit's renders are
+    # already sitting there, that means dropping a second set beside a set
+    # somebody could upload — and the two are indistinguishable in a file
     # picker. So the lot goes to `_epreuves/` instead unless the operator says to
     # replace, and it says which.
     #
     # This is not hypothetical: a verification pass on 2026-09-10 put 189 files
     # next to the 199 already there, and they had to be moved back out one deck
     # at a time.
-    deja = sortie / "images"
-    encombre = deja.exists() and any(f.suffix.lower() in (".png", ".jpg") for f in deja.iterdir())
+    dossiers_reseaux = {fmt_key: "-".join(tk.reseaux(fmt_key)) for fmt_key in FORMATS}
+    deja = {nom: sortie / nom for nom in sorted(set(dossiers_reseaux.values()))}
+    encombres = {nom: chemin for nom, chemin in deja.items()
+                if chemin.exists()
+                and any(f.suffix.lower() in (".png", ".jpg") for f in chemin.iterdir())}
+    encombre = bool(encombres)
 
     # Captured before the render and moved *after* it. Replacing means replacing —
     # two generations in one folder are indistinguishable in a file picker — but
     # the set-aside must never run before the replacement exists.
     #
     # Mercator lost fifteen renders to the other order: its lot failed gate 1 and
-    # went to `_epreuves/`, so `images/` never received anything, while the
+    # went to `_epreuves/`, so no network folder ever received anything, while the
     # previous generation had already been carried out of it.
     remplacer = verdict.passe and encombre and "--remplacer" in sys.argv
-    a_ecarter = ([f for f in deja.iterdir() if f.suffix.lower() in (".png", ".jpg")]
+    a_ecarter = ([f for chemin in encombres.values() for f in chemin.iterdir()
+                 if f.suffix.lower() in (".png", ".jpg")]
                  if remplacer else [])
 
     if verdict.passe and encombre and "--remplacer" not in sys.argv:
+        noms = ", ".join(f"`{nom}/`" for nom in encombres)
+        total_existant = sum(len(list(c.glob("*.png"))) for c in encombres.values())
         verdict = gab.Verdict(
             passe=False,
             manquantes=[
-                f"`images/` porte déjà {len(list(deja.glob('*.png')))} rendus de "
-                f"l'ancien gabarit — relance avec `--remplacer` pour les remplacer, "
-                f"ou vide le dossier d'abord"],
+                f"{noms} porte(nt) déjà {total_existant} rendus de l'ancien "
+                f"gabarit — relance avec `--remplacer` pour les remplacer, ou "
+                f"vide le(s) dossier(s) d'abord"],
             licence_sortie=verdict.licence_sortie)
     lignes = [f"# Rendu — {deck.get('campagne')}", "",
               f"licence de sortie calculée : **{verdict.licence_sortie or 'aucune'}**", ""]
 
     if verdict.passe:
-        lignes += ["Les quatre portes sont franchies. Le lot part dans `images/`.", ""]
+        cibles = ", ".join(f"{fmt_key} → `{nom}/`" for fmt_key, nom in dossiers_reseaux.items())
+        lignes += [f"Les quatre portes sont franchies. Le lot part par réseau : {cibles}.", ""]
     else:
         lignes += ["**Épreuve.** Portes non franchies :", ""]
         lignes += [f"- {m}" for m in verdict.manquantes]
@@ -211,17 +226,22 @@ def main():
     # The new generation is on disk, so the old one can step aside: only the files
     # that were there before, and only those the render did not overwrite.
     if a_ecarter:
-        grenier = sortie / "_rendus-remplaces"
-        grenier.mkdir(parents=True, exist_ok=True)
         ecartes = 0
         for f in a_ecarter:
             # By name, not by existence: a re-render writes the same filenames, so
             # the path still exists — pointing at the new file. Checking existence
-            # carried the fresh generation into the attic and emptied `images/`.
+            # carried the fresh generation into the attic and emptied the network
+            # folder it came from.
             if f.name in ecrits:
                 continue
             if f.exists():
-                f.rename(grenier / f.name)
+                # Namespaced by the source folder: `carrousel` and `reel` no
+                # longer share one destination the way `images/` did, so a flat
+                # attic would let a same-named leftover from one silently
+                # overwrite the other's — the one thing this step must not do.
+                sous_grenier = sortie / "_rendus-remplaces" / f.parent.name
+                sous_grenier.mkdir(parents=True, exist_ok=True)
+                f.rename(sous_grenier / f.name)
                 ecartes += 1
         if ecartes:
             print(f"{ecartes} rendus remplac\u00e9s d\u00e9plac\u00e9s dans "
@@ -233,7 +253,9 @@ def main():
                               licence_sortie=verdict.licence_sortie,
                               remarques=verdict.remarques)
 
-    rapport = sortie / ("_epreuves" if not verdict.passe else "images") / "RENDU.md"
+    # A passing lot no longer has a single folder to nest the report under — it
+    # has one per format — so the report sits at the post's root instead.
+    rapport = sortie / "_epreuves" / "RENDU.md" if not verdict.passe else sortie / "RENDU.md"
     rapport.write_text("\n".join(lignes) + "\n", encoding="utf-8")
 
     if fautes:
@@ -242,7 +264,11 @@ def main():
             print("  • " + f)
 
     total = len(deck["cartes"]) * len(FORMATS)
-    print(f"\n{total} images → {rapport.parent}")
+    if verdict.passe:
+        cibles = ", ".join(f"{nom}/" for nom in sorted(set(dossiers_reseaux.values())))
+        print(f"\n{total} images → {cibles}")
+    else:
+        print(f"\n{total} images → {rapport.parent}")
     print(f"rapport : {rapport}")
     print(f"licence de sortie : {verdict.licence_sortie or 'aucune'}")
     if not verdict.passe:

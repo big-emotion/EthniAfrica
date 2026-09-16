@@ -2,7 +2,6 @@ import { describe, expect, it } from "vitest";
 
 import {
   IDLE_POSE,
-  MAX_ZOOM,
   MIN_ZOOM,
   PITCH_LIMIT_RADIANS,
   READER_MAX_ZOOM,
@@ -53,6 +52,9 @@ function renderTarget(
   };
 }
 
+/** The tightest automatic framing: the reciprocal of the nearest fit distance, 0.62. */
+const TIGHTEST_FRAMING = 1 / 0.62;
+
 describe("poseForTarget (REQ-117 AC1)", () => {
   // @req REQ-117
   it("turns the globe so the chosen target faces the reader", () => {
@@ -102,14 +104,14 @@ describe("zoomForAngularSpan (REQ-117 AC1)", () => {
 
   // @req REQ-117
   it("never dollies past the bounds that keep the surrounding continent readable", () => {
-    expect(zoomForAngularSpan(0.01)).toBeLessThanOrEqual(MAX_ZOOM);
+    expect(zoomForAngularSpan(0.01)).toBeLessThanOrEqual(TIGHTEST_FRAMING);
     expect(zoomForAngularSpan(180)).toBeGreaterThanOrEqual(MIN_ZOOM);
   });
 
   // @req REQ-117
   it("treats a degenerate span as a bounded dolly rather than an infinite one", () => {
     expect(Number.isFinite(zoomForAngularSpan(0))).toBe(true);
-    expect(zoomForAngularSpan(0)).toBeLessThanOrEqual(MAX_ZOOM);
+    expect(zoomForAngularSpan(0)).toBeLessThanOrEqual(TIGHTEST_FRAMING);
   });
 });
 
@@ -205,7 +207,7 @@ describe("the morph in the pose (REQ-112)", () => {
 
 /**
  * The bounds above are self-referential: they assert the dolly stays inside
- * MIN_ZOOM..MAX_ZOOM, which holds for any value those constants take. That is
+ * MIN_ZOOM..TIGHTEST_FRAMING, which holds for any value those constants take. That is
  * how a 3.2x ceiling shipped and flew the country fiche so close that the
  * sphere's limb left the stage on every side — the very thing the constants
  * are named for preventing.
@@ -229,7 +231,7 @@ describe("zoomForAngularSpan keeps the continent around the subject", () => {
     // stage in recette: it must land inside the range, not on the ceiling.
     const zaf = zoomForAngularSpan(17);
     expect(zaf).toBeGreaterThan(MIN_ZOOM);
-    expect(zaf).toBeLessThan(MAX_ZOOM);
+    expect(zaf).toBeLessThan(TIGHTEST_FRAMING);
   });
 
   // @req REQ-117
@@ -292,7 +294,7 @@ describe("clampZoom bounds the reader's own dolly", () => {
   it("lets the reader go closer than any automatic framing does", () => {
     // The whole point of the control: 1.62x frames a country with its
     // neighbours, and that is not close enough to aim at the Gambia.
-    expect(READER_MAX_ZOOM).toBeGreaterThan(MAX_ZOOM);
+    expect(READER_MAX_ZOOM).toBeGreaterThan(TIGHTEST_FRAMING);
     expect(clampZoom(4)).toBe(4);
   });
 

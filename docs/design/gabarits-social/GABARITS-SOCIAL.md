@@ -37,6 +37,97 @@ par l'interface TikTok / Reels. Rien de lisible ne descend sous **y = 1620**.
 
 ---
 
+## 1 bis. Un format par réseau
+
+**Chaque réseau reçoit le format qui y marche, et seulement lui.** Décision de
+l'opérateur du 16 septembre 2026, sur la mesure du 15. La règle vaut pour toute
+production à venir : un post ne part pas sur un réseau que sa ligne ne lui donne
+pas.
+
+| Réseau | Reçoit | Ne reçoit pas | Mesure du 15 septembre 2026 |
+| --- | --- | --- | --- |
+| TikTok | carrousel | reel | carrousels : Daloa 2 076 vues et 12 commentaires, Sénoufo 1 018, Krio 927 · vidéos : Côte d'Ivoire 785, Nzema 375, Peul 326 |
+| Instagram | reel et carrousel | — | reels : Nzema 1 977 vues, Côte d'Ivoire 1 469 · carrousels : Daloa 241, Krio 179 — moins de portée, autant d'interactions par vue (Daloa 10,8 %, Côte d'Ivoire 11,7 %) |
+| Facebook | reel | carrousel | reel Côte d'Ivoire : 21 211 vues, 191 partages · carrousels : Daloa 13, Sénoufo 14, Krio 9 |
+| YouTube | reel (Shorts) | carrousel | un Short est une vidéo · Keïta–Coulibaly 1 388 vues, Nzema 1 176 en un jour |
+| LinkedIn | texte avec lien, depuis le profil personnel | reel, carrousel | profil personnel : 31 visites de lien en 28 jours · vidéos de la page : 0 à 2 impressions, 0 clic (7 et 14 septembre) |
+| X (Twitter) | reel, et le texte avec lien | carrousel | aucune mesure — le compte a ouvert le 16 septembre 2026 avec zéro post. Contrainte de plateforme, pas mesure : **X n'a pas de carrousel**, un post multi-images y est une grille d'au plus quatre vignettes rognées, jamais un balayage. |
+
+- **Un sujet destiné aux six réseaux se produit dans les deux formats**, plus le
+  texte LinkedIn. Un sujet produit dans un seul format ne part que sur les
+  réseaux de sa colonne : un reel seul ne va pas sur TikTok, un carrousel seul ne
+  va ni sur Facebook, ni sur YouTube, ni sur X.
+- **La sortie LinkedIn 1080 × 1080 du §1 n'est plus rendue**, puisque LinkedIn
+  ne reçoit plus d'image. Retiré du moteur le 16 septembre 2026 ; §1 garde la
+  ligne pour mémoire du format, mais `ethni_carrousel2.py` ne l'appelle plus.
+- **Un lot qui passe part dans un dossier par format, nommé d'après les
+  réseaux qui le reçoivent** — `TikTok-Instagram/` pour le carrousel,
+  `Instagram-Facebook-YouTube-X/` pour le reel — et non plus dans un `images/`
+  à plat que l'opérateur devait trier réseau par réseau avant de publier. Le
+  nom se lit dans la colonne « Reçoit » ci-dessus, dans son propre ordre : une
+  ligne révisée change le rangement sans un second edit dans le moteur.
+- **La table se révise, elle ne s'enfreint pas.** Une ligne ne change que sur une
+  mesure de `ethniafrica-content-strategist`, écrite ici avec sa date. Une seule
+  semaine de mesure la fonde : la revue de phase 1 des 3 et 4 octobre la relit
+  en premier.
+- **La ligne X est la seule que rien ne mesure, et elle le dit.** Les cinq autres
+  reposent sur le 15 septembre ; X a ouvert le 16 avec zéro post, donc il n'y a
+  rien à lire. Ce qui la fonde est vérifiable sans mesure — la plateforme ne
+  propose pas de carrousel — et rien d'autre n'y est affirmé : ni portée
+  attendue, ni cadence, ni public. **Une ligne fondée sur une contrainte ne se
+  cite pas comme une ligne fondée sur une mesure.** Elle est la première que la
+  revue de phase 1 doit remplacer par des chiffres.
+- **Le reel part sur X avec sa marge d'interface, et c'est une dette assumée.**
+  Le 1080 × 1920 du §1 réserve 391 px en bas pour l'interface TikTok / Reels ;
+  sur X cette bande ne recouvre rien et reste vide. Rendre une sortie propre pour
+  X est un chantier du moteur, pas de cette règle — on mesure d'abord que X vaut
+  le rendu, on l'optimise ensuite.
+
+---
+
+## 1 ter. La miniature
+
+**La première image est une miniature avant d'être une carte.** Elle circule dans
+le fil bien plus longtemps qu'elle ne dure à l'écran, à peu près au sixième de sa
+largeur, et c'est elle qui décide qui regarde. Décidé le 16 septembre 2026, en
+comparant la grille TikTok du compte : les vidéos ouvraient sur un titre de 76 px
+au tiers bas, doublé par la plaque de narration — deux fois la même phrase, et
+aucune des deux lisible en vignette.
+
+Quatre règles, carrousel et vidéo ensemble.
+
+1. **Le titre d'ouverture prend le rang couverture du §3**, quelle que soit sa
+   disposition : 120 px en 4:5, 130 px en 9:16. Le rang « Titre de série » est
+   celui des cartes de développement.
+2. **Il ne se comprime jamais.** Mesuré sur l'atelier le 16 septembre : six
+   ouvertures sur seize étaient descendues à 106 ou 88 px pour tenir dans leur
+   bandeau, sans que rien ne le dise. C'est la copie qui cède désormais, et le
+   moteur nomme la faute plutôt que de rapetisser en silence.
+3. **Huit mots au plus, et le dernier porte l'accent** — c'est la chute. Les deux
+   productions qui tenaient à la mesure en faisaient exactement huit ; celles qui
+   ne tenaient pas en faisaient onze, treize et quinze. Au-delà, `portes` le
+   signale : le développement commence à la carte suivante.
+4. **Rien d'autre ne la charge.** En vidéo, l'emplacement de narration reste vide
+   pendant les 1,5 premières secondes : une légende y répéterait, en petit, la
+   phrase que le titre porte déjà en grand. Le montage dépose cette première
+   image à côté de lui en PNG — chaque réseau propose une couverture, aucun ne
+   choisit celle-là tout seul.
+
+**Ce qui cède quand elle ne tient pas.** Le titre, jamais : ce qui l'entoure. Le
+§7 ter ne donne que quatre blocs à une ouverture — bandeau et rang, titre, ligne
+de vision, indication de défilement —, donc un corps, une punchline ou une
+précision posés là sont déjà hors gabarit, et ce sont eux que le moteur retire, en
+nommant la faute. Mesuré le 16 septembre : six ouvertures sur seize dépassaient,
+et toutes les six portaient un de ces blocs en trop.
+
+**Ce qu'une miniature ne fait pas** : promettre ce que la production ne paie pas.
+Une accroche dont la pièce ne referme pas la question n'est pas une accroche,
+c'est un appât — et sur un atlas sourcé, c'est aussi un mensonge sur le corpus.
+La chute du §7 ter reste la règle : la miniature dit la chute du sujet, elle ne
+l'annonce pas.
+
+---
+
 ## 2. Couleurs — jetons de la charte, jamais de littéral
 
 ### Thème nuit (défaut)
@@ -120,6 +211,23 @@ taille et de sa place, jamais d'un contraste raté.**
 | **Corps** | Nunito | **32** | 1,55 | 400 | — | encre 2 |
 | Source | Nunito | 20 | — | 700 | maj., interlettre .09em | encre 2, op. .92 |
 | **Crédit** | Nunito | **18** | 1,5 | 400 | — | encre 2, op. .88 |
+
+**L'interligne de ce tableau gouverne l'espacement entre les lignes d'un même
+bloc, jamais la hauteur qu'une seule ligne réserve.** Le corps d'une police
+(le nombre passé au moteur — 216, 96, 32…) n'est pas la hauteur visuelle
+d'une ligne : mesuré sur les deux polices du gabarit, une ligne réelle
+occupe **1,4 à 1,5×** son corps — Anton à 216 px mesure 255 + 72 = 327 px
+d'ascendant et de descendant, Nunito à 32 px mesure 33 + 12 = 45 px. Un
+rôle à interligne ≤ 1 sur une seule ligne — ici seulement « Chiffre / mot
+d'accent », 0,84, calibré pour l'écart *entre* deux lignes d'un mot
+d'accent, jamais pour la boîte d'une ligne seule — réservait donc une
+boîte plus petite que ses propres lettres. `ethni_compose._hauteur()`
+plancher désormais chaque bloc à 1,5× son corps ; ce n'est pas une valeur
+à recopier ailleurs, c'est une garantie de moteur, pas un choix de charte.
+Mesuré le 2026-09-14 sur `zokou-gbeuly` : un « 1835 » nu chevauchait sa
+légende avant, puis ne lui laissait que 5 px d'air après un premier
+correctif trop étroit — l'écart maintenant se compare à celui d'une
+production déjà publiée (« Sénoufo », pilier Mythe déconstruit).
 | Sous-titre narration | Nunito | 44–46 | 1,30 | 800 | — | encre 1 |
 
 **Mesures maximales** (rag maîtrisé) : précision 800 px · punchline 880 px ·
@@ -134,10 +242,40 @@ colonne grandit, et il ne dit rien que la gouttière ne dise déjà.
 ligne touchent les jambages de la précédente — « Brésilien » sur « angolais ». Anton
 n'a aucune réserve verticale ; c'est l'interligne qui la fournit.
 
+**L'interligne de ce tableau gouverne l'espacement entre les lignes d'un même
+bloc, jamais la hauteur qu'une seule ligne réserve.** Le corps d'une police
+(le nombre passé au moteur — 216, 96, 32…) n'est pas la hauteur visuelle
+d'une ligne : mesuré sur les deux polices du gabarit, une ligne réelle
+occupe **1,4 à 1,5×** son corps — Anton à 216 px mesure 255 + 72 = 327 px
+d'ascendant et de descendant, Nunito à 32 px mesure 33 + 12 = 45 px. Un
+rôle à interligne ≤ 1 sur une seule ligne — ici seulement « Chiffre / mot
+d'accent », 0,84, calibré pour l'écart *entre* deux lignes d'un mot
+d'accent, jamais pour la boîte d'une ligne seule — réservait donc une
+boîte plus petite que ses propres lettres. `ethni_compose._hauteur()`
+plancher désormais chaque bloc à 1,5× son corps ; ce n'est pas une valeur
+à recopier ailleurs, c'est une garantie de moteur, pas un choix de charte.
+Mesuré le 2026-09-14 sur `zokou-gbeuly` : un « 1835 » nu chevauchait sa
+légende avant, puis ne lui laissait que 5 px d'air après un premier
+correctif trop étroit — l'écart maintenant se compare à celui d'une
+production déjà publiée (« Sénoufo », pilier Mythe déconstruit).
+
 **Halo sur tout texte d'affichage posé sur une image :**
 `text-shadow: 0 2px 20px rgba(18,14,10,.85), 0 0 6px rgba(18,14,10,.6)`. Il ne compte
 pas dans la mesure de contraste — c'est le voile qui doit atteindre le seuil — mais il
 sauve le détail d'un glyphe qui tombe sur une zone claire du document.
+
+### Les dates s'écrivent en chiffres, jamais en lettres
+
+Décidé le 2026-09-14. Une date affichée à l'écran — année, siècle, décennie — porte
+toujours ses chiffres : `1891`, pas « mille huit cent quatre-vingt-onze » ; `XVIIe
+siècle` ou `17e siècle`, jamais « dix-septième siècle ». Vaut pour `titre`, `corps`,
+`precision`, `punchline`, et pour les sous-titres de la vidéo, qui reprennent le texte
+de `narration.fr.txt` : une date épelée dans le script s'affiche épelée au sous-titre.
+
+Ne s'applique pas à un compte qui n'est pas une date — « soixante-cinq peuples » reste
+en lettres, comme toute la doctrine des titres le veut déjà (§7 ter : « la Tanzanie,
+c'est quatre-vingt-seize peuples »). La distinction est celle-là : une date se lit sur
+une frise chronologique, un compte se dit à voix haute.
 
 ---
 
@@ -572,9 +710,30 @@ emporte s'il ne lit rien d'autre.
 | « Ce peuple n'a pas été divisé. C'est la carte qui a été dessinée par-dessus. » | « Ce peuple a été divisé par les colons. » | Le registre de la réparation garde le colonisateur au centre de la phrase. Le renversement d'agent rend le peuple sujet. |
 | « Tracées sans référence à qui habitait là. » | « Les frontières sont arbitraires. » | À demi faux, donc attaquable — et l'atlas peut le montrer peuple par peuple. |
 | « Ce qui est resté. » | « Ce qui a été pris. » | Le contenu ne dénonce pas, il agrandit la carte. |
+| « Certaines ruptures sont plus vieilles que la carte coloniale. » | « Avant les frontières, les peuples étaient unis. » | Des parentés de langue et de culture ont parfois traversé des ruptures — une scission, une migration, une querelle de succession — bien plus anciennes que le tracé colonial. La carte n'a pas toujours créé la séparation, elle l'a souvent verrouillée. |
 
-**Deux dates, à citer plutôt qu'à paraphraser :** Berlin 1884, les indépendances 1960.
-Une frontière ne contient pas un peuple, elle le traverse.
+**Aucune conférence, aucune date unique n'est citée comme l'origine des frontières**
+(décidé par l'opérateur le 2026-09-14) : la conférence de Berlin a fixé des règles de
+revendication, elle n'a tracé presque aucune ligne elle-même, et une production qui la
+cite comme l'autrice du tracé répète une erreur déjà relevée par l'audit du message.
+La formule qui tient est celle de la table ci-dessus — « moins de 140 ans » — jamais un
+lieu et une date uniques. Une frontière ne contient pas un peuple, elle le traverse.
+
+### Une deuxième position, distincte de la ligne de vision
+
+Décidée par l'opérateur le 2026-09-14, échange complet dans
+`docs/editorial/purpose-doctrine.md` §5 :
+
+> « Ce qui relie les peuples d'Afrique a survécu à leurs propres ruptures
+> autant qu'aux frontières qu'on leur a imposées. C'est là que commence une
+> unité plus forte. »
+
+**Ce n'est pas la ligne de vision.** Elle n'est pas obligatoire dans chaque
+clôture et ne remplace rien de ce qui précède. Elle peut inspirer le ton d'une
+clôture sans y être imprimée mot pour mot, ou apparaître comme sa propre
+carte — toujours étiquetée comme une position, jamais comme un fait que
+l'atlas démontre, au même titre que « Ce peuple n'a pas été divisé » sur la
+page À propos (`purposeChapter.unityClaim` / `.unityClaimStatus`).
 
 ### Ce qui change avec le type de contenu, et ce qui ne change jamais
 
@@ -613,11 +772,21 @@ s'écrit ici d'abord, jamais dans une carte.
 | Le lot parle de | Patron de titre d'ouverture | Mot en accent à l'ouverture | Titre de clôture | Mot en accent à la clôture | Corps de clôture |
 | --- | --- | --- | --- | --- | --- |
 | un peuple réparti sur plusieurs pays | « Du {pays} au {pays}, les frontières traversent les {peuple}. » | « {peuple}. » | « Ce peuple n'a pas été divisé. » | « divisé. » | « C'est la carte qui a été dessinée par-dessus. » |
-| un pays et les peuples qui y vivent — *proposé le 2026-09-13, à valider par l'opérateur* | « {Pays}, c'est {n} peuples. » | « peuples. » | « Ces peuples n'ont pas été rassemblés. » | « rassemblés. » | « C'est la carte qui a été dessinée autour d'eux. » |
+| un pays et les peuples qui y vivent — *validée le 2026-09-14* | « {Pays}, c'est {n} peuples. » — *sauf sous-cas « qui a nommé ce pays » ou « le mythe du surnom », voir ci-dessous* | « peuples. » | « Ces peuples n'ont pas été rassemblés. » | « rassemblés. » | « C'est la carte qui a été dessinée autour d'eux. » |
 | des villes, des lieux | un registre de la banque ci-dessous | celui du registre | « Cette ville n'a pas changé de nom. » | « nom. » | « On l'a rebaptisée. » |
 | une projection, une carte | un registre de la banque ci-dessous | celui du registre | « La carte ne mentait pas. Elle ne disait pas tout. » | « tout. » | « On l'a redessinée. » |
 | le nom d'un pays | un registre de la banque ci-dessous | celui du registre | « Ce pays ne s'est pas renommé. » | « renommé. » | « On l'a rebaptisé. » — *dérivé de la ligne des villes le 2026-09-13, à valider* |
-| une langue, une famille | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas disparu. » | « disparu. » | *à fixer* — aucune seconde moitié n'a encore été écrite |
+| une langue, une famille | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas disparu. » | « disparu. » | « C'est la case qu'on lui avait donnée qui a disparu. » — *fixé le 2026-09-14 par l'opérateur, à l'écriture de « famille-linguistique-quatre-familles »* |
+| une langue accusée d'invention coloniale — le mythe porte sur la langue elle-même, jamais sur son nom, qui peut rester un débat sourcé — *décidé par l'opérateur le 2026-09-16, pour le sujet `lingala-invente-par-les-belges`* | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas été inventée. » | « inventée. » | « Elle existait déjà — on lui a seulement donné un nom écrit. » — *distinct de la ligne « une langue, une famille » ci-dessus : celle-ci porte la légitimité d'une classification qui ne disparaît pas, celle-là un mythe d'invention coloniale que l'existence antérieure de la langue dément, indépendamment de tout débat sur son nom écrit* |
+| une famille de langues, regroupant plusieurs peuples sous un seul nom | un registre de la banque ci-dessous | celui du registre | « Cette famille n'est pas un peuple. » | « peuple. » | « On lui a donné un nom, par-dessus des peuples qui avaient déjà le leur. » — *décidé par l'opérateur le 2026-09-14, pour le sujet Mandé — distinct de la ligne « une langue, une famille » ci-dessus : celle-ci porte la légitimité d'une classification, celle-là la confusion entre un nom de famille et un nom de peuple* |
+| un système politique sans souverain unique — un peuple qui gouverne autrement qu'avec un roi ou un chef héréditaire — *validé par l'opérateur le 2026-09-14* | un registre de la banque ci-dessous | celui du registre | « Ce peuple n'a jamais eu de roi. » | « roi. » | « Le pouvoir s'y prête, il ne s'y transmet pas. » |
+| un système politique sans souverain unique, où une exception documentée interdit le mot « jamais » — *décidé par l'opérateur le 2026-09-16, pour le sujet `igbo-enwe-eze-sans-roi` — distinct de la ligne ci-dessus : celle-là porte un peuple sans aucune exception connue, celle-ci un peuple dont une minorité de communautés avait bien un roi (Eze Nri, Obi d'Onitsha) et où des titres pouvaient s'hériter autant que se mériter, ce qui rend « jamais » et « ne se transmet pas » faux pour ce sujet précis* | un registre de la banque ci-dessous | celui du registre | « Ce peuple n'a pas eu de roi unique. » | « unique. » | « La plupart de ses villages se gouvernaient sans roi. » |
+| un nom partagé, repris par plusieurs peuples distincts | un registre de la banque ci-dessous | celui du registre | « Ce nom n'a pas été subi. » | « subi. » | « On se l'est approprié. » — *décidé par l'opérateur le 2026-09-14, pour le sujet `creole-ne-dans-la-colonie` — distinct de la ligne « une famille de langues » ci-dessus : celle-là porte un nom imposé qui écrase des peuples ayant déjà le leur, celle-ci un nom d'abord extérieur que plusieurs peuples, sans parenté entre eux, ont chacun fait leur propre nom* |
+| un personnage historique — une figure individuelle, jamais un peuple ou un pays — *validé par l'opérateur le 2026-09-14* | un registre de la banque ci-dessous | celui du registre | « Il n'a pas eu qu'une ligne dans l'Histoire. » | « Histoire. » | « C'est pourtant tout ce qu'on lui avait laissé. » — *décidé pour le sujet `zokou-gbeuly-resistance-bete` : le corpus AFRIK et les histoires générales ne portent ces figures qu'en clause noyée dans la fiche d'un peuple entier — la clôture porte cet effacement documentaire, pas un mécanisme colonial spécifique, ce qui la distingue de toutes les lignes ci-dessus* |
+| un peuple né d'un départ — une migration fondatrice, plus vieille que toute frontière actuelle — *décidé par l'opérateur le 2026-09-14, pour le sujet `baoule-ashanti`* | un registre de la banque ci-dessous | « départ. » | « Ce nom n'a pas attendu la frontière. » | « frontière. » | « Il est né d'un départ, un royaume plus tôt. » — *distinct de la ligne « un peuple réparti sur plusieurs pays » ci-dessus : celle-là porte un même peuple resté des deux côtés d'une frontière, celle-ci un peuple qui est parti et s'est distingué du sien avant qu'aucune frontière actuelle n'existe — le nouveau venu, comme l'abonné, doivent lire un départ, jamais une division* |
+| un peuple connu sous plusieurs noms extérieurs, dont aucun n'est le sien | un registre de la banque ci-dessous | celui du registre | « Ce peuple n'a jamais manqué de nom. » | « nom. » | « Ce sont ses voisins qui, chacun dans sa langue, lui en ont donné d'autres. » — *décidé par l'opérateur le 2026-09-14, pour le sujet `peul-fula-fulani` — distinct de la ligne « un nom partagé, repris par plusieurs peuples distincts » ci-dessus : celle-là porte un même nom que plusieurs peuples sans parenté se sont chacun approprié, celle-ci plusieurs noms différents que des voisins ont donnés, chacun dans sa langue, à un seul peuple qui n'en a demandé aucun* |
+| un mot d'usage courant, qui reprend le nom et le titre d'une personne | un registre de la banque ci-dessous | celui du registre | « Ce mot n'était pas anonyme. » | « anonyme. » | « C'est un nom d'homme, titre après titre. » — *validé par l'opérateur le 2026-09-16, pour le sujet `rastafari-ras-tafari` — distinct de la ligne « un personnage historique » ci-dessus : celle-là porte l'effacement documentaire d'une figure que le corpus ne retient qu'en clause noyée dans la fiche d'un peuple entier, celle-ci un mot déjà connu d'un très large public dont l'origine — le nom et la titulature d'un homme précis, identifiable — n'a simplement jamais été lue ; distinct aussi de « un nom partagé, repris par plusieurs peuples distincts » : celle-là porte l'appropriation d'un même nom par plusieurs peuples sans parenté entre eux, celle-ci la décomposition d'un seul mot en la titulature d'un seul homme* |
+| un lieu prétendument découvert — l'atteinte d'un lieu par un explorateur, présentée comme sa découverte alors qu'il était déjà habité, nommé et parcouru — *validé par l'opérateur le 2026-09-16* | un registre de la banque ci-dessous | celui du registre | « Ce lieu n'a pas été découvert. » | « découvert. » | « Il a été montré. » — *décidé pour le sujet `mungo-park-a-t-il-decouvert-le-fleuve-niger` : distinct de « des villes, des lieux » ci-dessus, qui porte un lieu déjà nommé qu'on a rebaptisé — celui-ci porte un lieu qu'on prétend avoir trouvé, alors que ceux qui y vivaient le connaissaient déjà et l'ont montré à qui le cherchait* |
 
 **`cards.json` ne porte jamais `**`** : les titres s'y recopient en texte brut depuis
 cette table, le moteur accentue de lui-même le dernier mot d'une clôture avec sa
@@ -638,12 +807,65 @@ phrase.** Exemples :
 **Un pays et les peuples qui y vivent.** C'est l'épisode à densité inversée : le sujet
 est un pays, et ce qu'il faut renverser n'est pas une division mais un rassemblement.
 « Ce peuple n'a pas été divisé » y serait faux. `{n}` se **mesure sur le corpus le jour
-où le titre s'écrit**, il ne se recopie pas. Exemple :
+où le titre s'écrit**, il ne se recopie pas. Exemple, pour un lot où le pays lui-même
+reste le sujet du corps :
 
 > La Tanzanie, c'est quatre-vingt-seize **peuples**.
 
-Cette ligne est **proposée le 2026-09-13 et reste à valider par l'opérateur** ; tant
-qu'elle ne l'est pas, un lot de ce type s'arrête avant d'écrire sa clôture et le dit.
+Cette ligne est **validée par l'opérateur (2026-09-14)**, après un premier passage sur
+« qui-a-nomme-la-cote-divoire » qui l'avait déjà appliquée sur cette base.
+
+**Sous-cas : un lot centré sur qui a nommé le pays — l'ordre s'inverse, et le patron
+d'ouverture ci-dessus ne s'applique pas.** Mesuré le 2026-09-14 sur ce même sujet : une
+première version ouvrait sur le compte de peuples et reléguait l'acte de nommer à un
+« décret », sans jamais dire qui l'a signé, négocié ou exploré — Bouët-Willaumez,
+Treich-Laplène, Binger n'existaient nulle part dans le montage. L'opérateur a jugé la
+pièce vide de sens : elle ne répondait à aucune question, parce que le reste du corpus
+parle déjà des peuples en permanence, et que **c'est cette parenthèse-ci qui doit parler
+du pays**.
+
+- **80 % du corps du lot répond à « qui, comment, ce qui en reste »** : les acteurs
+  nommés (explorateurs, négociants, résidents, gouverneurs, leurs rivaux), les traités,
+  les comptoirs, la résistance, et la toponymie qui en témoigne aujourd'hui — une ville,
+  un quartier qui porte encore leur nom. Nommer un acteur historique n'est pas la même
+  chose que d'en faire le sujet moral de la pièce : on dit qui a agi et ce qui est resté
+  de son passage, pas un jugement sur lui. C'est la même distinction qui tient
+  « le registre de la réparation garde le colonisateur au centre de la phrase » —
+  la toponymie qui reste **est** ce qui est resté, elle ne bascule pas dans ce registre.
+- **Les peuples n'ouvrent pas le lot et n'ont pas à apparaître en carte 2.** Ils forment
+  la parenthèse de clôture, le renversement : voilà qui a nommé ce pays ; les peuples,
+  eux, étaient déjà là sous leur propre nom, indépendamment de cette histoire. La clôture
+  du type ci-dessus (« Ces peuples n'ont pas été rassemblés. ») reste inchangée — c'est
+  l'ordre du corps qui s'inverse, pas la clôture.
+- **L'ouverture** n'utilise donc pas le patron « {Pays}, c'est {n} peuples. » pour ce
+  sous-cas : elle assertit la chose surprenante du nom lui-même (qui l'a donné, à partir
+  de quoi), dans un des registres de la banque de patrons ci-dessous — jamais le compte
+  de peuples, qui appartient à la clôture.
+- **`ethniafrica-message`, critère 2** lit ce sous-cas différemment : voir ce skill.
+
+**Second sous-cas : un lot qui défait un mythe porté par le surnom du pays lui-même —
+l'ouverture assertit le surnom, pas le compte.** Décidé par l'opérateur le 2026-09-16,
+pour le sujet `cameroun-afrique-en-miniature` : le mythe n'est pas « ce pays est trop peu
+connu », c'est une revendication déjà répandue — « on y retrouve tous les peuples
+d'Afrique », d'où le surnom « le Continent » — que le compte de peuples vient justement
+mesurer et contredire. Ouvrir sur « {Pays}, c'est {n} peuples. » énoncerait la conclusion
+avant la question et viderait la suite de sa tension : le lecteur doit d'abord reconnaître
+la croyance, avant que la pièce ne la mesure.
+
+- **L'ouverture assertit le surnom lui-même**, dans un des registres de la banque de
+  patrons ci-dessous — jamais le compte de peuples, qui reste réservé au corps du lot, là
+  où il contredit la revendication.
+- **Le compte de peuples migre au corps**, comme démonstration plutôt que comme titre : il
+  y assume sa source (un chiffre publié, jamais recopié du corpus sans le dire) et sa
+  limite (ce que l'atlas documente lui-même, s'il est moindre).
+- **La clôture du type ci-dessus (« Ces peuples n'ont pas été rassemblés. ») reste
+  inchangée** — comme pour le sous-cas « qui a nommé le pays », c'est l'ouverture qui
+  s'écarte du patron, jamais la clôture.
+- **Distinct du sous-cas « qui a nommé le pays » ci-dessus** : celui-là renverse l'ordre
+  du corps parce que le sujet est un acte (nommer) ; celui-ci renverse l'ouverture parce
+  que le sujet est une croyance (un surnom) que le compte vient réfuter — une pièce qui
+  ouvre sur le compte n'a encore fait reconnaître à personne la croyance qu'elle va
+  démonter.
 
 **Ce qu'aucune clôture n'écrit, quel que soit le type**, tant que la session de doctrine
 n'a pas tranché : « Berlin » comme celui qui a tracé les lignes — la conférence de
@@ -832,8 +1054,14 @@ s'efface se lit comme un défaut de rendu.
 | Narration | `top: 1300`, hauteur **190** | la plaque de sous-titre, **réservé même vide** |
 | Crédit + filigrane | `bottom: 44` | 17 px, **une ou deux lignes**, filigrane à droite, opacité 0,72 |
 
-La clôture est la seule exception : titre à `top: 890` sur 380 px, et son emplacement bas
-fait 270 px pour porter la plaque **et** la pastille.
+La clôture est la première exception : titre à `top: 890` sur 380 px, et son emplacement
+bas fait 270 px pour porter la plaque **et** la pastille.
+
+**L'ouverture est la seconde**, et c'est le §1 ter qui la fixe : titre à `top: 560` sur
+720 px, au rang couverture (130 px en 9:16), la rampe du voile remontée de 840 à 520
+pour venir sous lui, et l'emplacement de narration laissé vide pendant 1,5 s. Rien ne
+bouge pour autant : les deux emplacements sont fixes pour toute la scène, et la légende
+qui arrive ensuite se pose dans une bande déjà réservée.
 
 > Le filigrane est à **0,72**, non à 0,55 comme en carrousel : posé sur un aplat de nuit
 > à 0,93 plutôt que sur une image, il s'éteint à l'opacité du carrousel.
@@ -998,6 +1226,42 @@ Répartis à parts égales sur les légendes, les huit plans de Libreville affic
 clôture à 44,10 s quand sa première phrase se dit à 50,88 s — six secondes de doctrine
 posées sur un récit qui n'avait pas fini.
 
+### Aucune image ne tient plus de quatre secondes
+
+**Une image change au moins toutes les quatre secondes.** Passé ce seuil, l'œil a
+fini de lire le cadre et attend la suite ; au-delà, la vidéo se voit à l'arrêt même
+quand la voix continue. La Côte d'Ivoire et le Mandé ont été renvoyés en production
+pour cette raison précise : trop peu de changements d'image sur toute la durée.
+
+Seul un **passage important** — un moment que le montage doit laisser respirer, décidé
+au cas par cas et non par défaut — peut dépasser les quatre secondes. Ce n'est pas une
+dérogation tacite : le motif se justifie au même titre qu'une exception à toute autre
+règle de ce gabarit, jamais par une image qu'on n'a pas eu le temps de découper.
+
+**Le moteur l'applique (2026-09-14).** Une scène peut porter plusieurs images, dans
+`images` (§10). La durée de la scène se découpe en créneaux égaux d'au plus quatre
+secondes, au moins un par image ; le premier créneau est la première image, **qui
+présente le sujet de la scène** — un personnage, un lieu, un document. Une scène plus
+longue que ses images ne peut couvrir **reprend la liste depuis la première** plutôt que
+de figer une image : une reprise se lit comme un rythme, un cadre figé comme un arrêt.
+Le crédit affiché est toujours **celui de l'image à l'écran**, et les portes 1 à 3
+lisent chaque image de la scène, pas seulement la première.
+
+**Un parallèle se montre, il ne se dit pas.** Une image peut porter un `surtitre` —
+« Pendant ce temps, en France : 1889, la tour Eiffel est inaugurée » — affiché tant que
+cette image est à l'écran, dans l'emplacement du nom de série (`top: 131`), qu'aucune
+scène entre l'ouverture et la clôture n'occupe. Il n'entre pas dans `narration.fr.txt`
+et ne change donc ni la voix, ni l'alignement, ni le début des scènes. La porte 3 le lit
+comme tout champ imprimé.
+
+**Le rythme des pauses se règle par sujet.** La passe audio complète chaque silence
+jusqu'à une pause minimale — virgule 0,20 s, phrase 0,40 s, paragraphe 0,48 s, question
+en fin de paragraphe 0,64 s, atterrissage de l'accroche 0,76 s, en secondes finales.
+Un sujet coupé pour un rythme plus rapide les resserre dans `production.json` →
+`"pauses": {"virgule": …, "phrase": …, "paragraphe": …, "question": …, "accroche": …}` ;
+une clé absente garde sa valeur. Sans ce réglage, la passe rallongeait les silences
+qu'on venait de resserrer à l'écoute.
+
 ---
 
 ### Réserve assumée sur le crédit
@@ -1056,6 +1320,14 @@ sous-titre, transitions entre séquences. §9 et le brief vidéo portent la cade
 
 `disposition` accepte `auto`, `A`, `B`, `C`. `auto` applique §6.
 
+`images` — **vidéo seulement, facultatif** — liste, dans l'ordre, les images d'une scène
+qui en porte plusieurs (§9 bis, « Aucune image ne tient plus de quatre secondes »).
+Chaque entrée a exactement la forme de `image` : `fichier`, `w`, `h`, `cadrage`,
+`identite`, `verifie`, `credit`, `depot`, `licence`, plus un `surtitre` facultatif,
+affiché avec cette image et jamais dit. **La première présente le sujet de la scène.** Sans `images`, la scène garde son `image` unique : tous les decks écrits
+avant le 2026-09-14 se rendent sans changement. La licence de sortie se calcule sur
+toutes les images du lot.
+
 `image.identite` **décrit ce que l'image montre**, en une phrase, sans nommer son
 auteur ni sa licence. C'est ce que la porte 2 compare au crédit : sans lui, la porte
 la plus utile du lot s'abstient. Champ obligatoire pour tout nouveau sujet.
@@ -1087,6 +1359,19 @@ deck au moment de rendre, comme `image.identite`.
 mesure. Ne l'employer que là où la coupe **porte du sens** — une énumération dont les
 groupes ne doivent pas se mélanger. Une coupe posée pour l'esthétique se périme au
 premier changement de format.
+
+**Quand `chiffre` est `true`, `titre` n'est plus un titre : c'est le contenu du
+rôle « Chiffre / mot d'accent »** (§3, Anton 216 px, **interligne 0,84**, aucune
+majuscule forcée — voir le tableau des rôles). Cet interligne est calibré pour
+une seule ligne courte, un nombre ou un mot d'accent (« 776 », « Nzema ») ; posé
+sur une phrase entière, il enchaîne un titre sur trois lignes qui se chevauchent
+lettre sur lettre — mesuré le 2026-09-14 sur `zokou-gbeuly`, où `titre` portait
+« Il naît en 1835, à l'ouest. » à la place d'un simple « 1835 ». La phrase
+descriptive va dans `precision` (Nunito 36 px, casse libre) ou dans `corps`,
+jamais dans `titre` d'une carte à chiffre. `qui-a-nomme-la-cote-divoire` porte
+le même défaut sur plusieurs cartes (`titre` y est une phrase complète malgré
+`chiffre: true`) et n'a jamais été rendu en image pour le révéler — à corriger
+avant son premier rendu.
 
 ---
 
@@ -1122,6 +1407,9 @@ premier changement de format.
       **y compris sur la ligne de crédit**, qui est celle qui passe le moins.
 - [ ] **L'annexe est en encre 2, pas en encre 3** (plafond 4,94:1, voir §3).
 - [ ] En 9:16, rien de lisible sous y = 1620.
+- [ ] **La miniature est au rang couverture, jamais comprimée, huit mots au plus,
+      l'accent sur le dernier** (§1 ter).
+- [ ] **Le post ne part que sur les réseaux que §1 bis donne à son format.**
 - [ ] La licence de sortie est celle du lot, calculée et non recopiée.
 - [ ] Aucune note interne visible sur l'image.
 - [ ] Le crédit nomme le document réellement affiché.

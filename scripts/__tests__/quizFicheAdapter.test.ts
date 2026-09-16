@@ -478,6 +478,51 @@ describe("buildAssertionBindings", () => {
     ]);
   });
 
+  // @req REQ-175
+  it("carries an oral tradition's narrative and community into the binding", () => {
+    const oralSources = new Map([
+      [
+        "SRC_ORAL",
+        {
+          id: "SRC_ORAL",
+          tier: "unverified",
+          verified_at: null,
+          source_kind: "oral_tradition",
+          oral_narratives: {
+            narrative_code: "ORL_YORUBA_ODUDUWA",
+            community: "Kétou",
+            rights_status: "cleared",
+          },
+        },
+      ],
+    ]);
+    const bindings = buildAssertionBindings(
+      [
+        {
+          id: "AST_1",
+          entity_id: "PPL_YORUBA",
+          field_path: "languageFamilyId",
+          source_ids: ["SRC_ORAL"],
+        },
+      ],
+      oralSources,
+      baseEligibility
+    );
+
+    expect(bindings.languageFamilyId.eligibility.assertionSources).toEqual([
+      {
+        tier: "unverified",
+        resolvable: false,
+        sourceKind: "oral_tradition",
+        oralTradition: {
+          narrativeCode: "ORL_YORUBA_ODUDUWA",
+          community: "Kétou",
+          rightsStatus: "cleared",
+        },
+      },
+    ]);
+  });
+
   // @req REQ-103
   it("treats a null source_ids as an empty source list", () => {
     const assertions: AssertionRow[] = [

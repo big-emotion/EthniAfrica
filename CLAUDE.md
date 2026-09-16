@@ -68,7 +68,7 @@ src/lib/api/openapiV2.ts             # OpenAPI spec (openapi:diff gates breaking
 
 Shared: `src/api/v2/utils/{validation,response}.ts`, `src/api/v2/schemas/` (zod), `src/api/v2/serializers/`, `src/lib/api/cors.ts`.
 
-`src/middleware.ts` is load-bearing and does four unrelated jobs: CSP/security headers with a per-request nonce, locale resolution (`SITE_LOCALE_MODE` failing closed to `fr-only`, the `ethni-locale` cookie for an explicit choice, English slugs rewritten onto the French route folders, the resolved locale passed down as the `x-locale` request header so the root layout can declare `<html lang>`), API-key validation for `/api/v2/*` (PBKDF2-hashed keys in `api_keys`; same-origin requests are exempt so the frontend needs no embedded key), and Upstash rate limiting.
+`src/middleware.ts` is load-bearing and does four unrelated jobs: CSP/security headers with a per-request nonce, locale resolution (`SITE_LOCALE_MODE` failing closed to `fr-only`, the `ethni-locale` cookie for an explicit choice, English slugs rewritten onto the French route folders, the resolved locale passed down as the `x-locale` request header so the root layout can declare `<html lang>`), API-key metering for `/api/v2/*` (a keyless request is served on the anonymous tier, 60 requests a minute per IP; a valid Bearer key, PBKDF2-hashed in `api_keys`, selects its tier's quota; a present but invalid key is refused with 401 rather than downgraded; `Origin` and `Referer` authorise nothing, because any client can forge them — so the frontend embeds no key and is metered like any anonymous reader), and Upstash rate limiting.
 
 ### AFRIK data pipeline
 
@@ -107,6 +107,7 @@ Migrations are numbered and sequential in `supabase/migrations/` — the directo
 
 - **Anything about the brand, the look of a page, or whether an assembly of blocks holds together — invoke `/afrik-art-director` first, every time.** It loads `docs/design/brand-charter.md`, which sits above the four surface charters and settles what none of them does: the product's one name and where it comes from, the licence the footer owes the reader, the single token spine (`--afh-*`; shadcn HSL variables are aliases confined to `ui/`), one accent per page, the two display weights that are actually loaded, vertical rhythm, one alignment per block, and the imagery doctrine. It also carries the capture harness — this surface cannot be judged from the code, and recette sits behind Vercel SSO so it has to be served locally.
 - **Start at `docs/design/atlas-charter.md`.** It is what the atlas surface asserts: the three cartographic encodings and the hard rule that a people never receives a closed line, the per-surface accent scope, the three entry points, the doctrine for showing a field the corpus does not fill, the panel's two anchorings, and the motion tokens. The reviewed rendering is `docs/design/mockups/` (four pages, `node build.js`); the engine decision and what actually shipped instead is `docs/adr/0007-atlas-globe-engine.md`. A charter-named test file is picked up by `test:charter-contracts` automatically.
+- **A face, a size, a weight or an ink — read `docs/design/typography-charter.md` before choosing one.** §1 is the nine roles and §2 why editorial roles are fluid and controls fixed. §8 is the home element by element: which face, step and ink each element takes and why that one and not another. The principle it rules: the display face names, the body face explains and operates, the monospace only aligns figures in a column; an ink states a status, never a decoration. A new element on the home takes a row of that table — `homeTypographyCharter.test.ts` holds it — and one that fits no row is a design decision, not a new dress in its component.
 - **Anything about the games — invoke `/afrik-game-designer` first, every time.** Inventing, critiquing, scoping or killing a game; writing or repairing quiz items; auditing the _Jouer_ hub; or just an offhand "ce jeu est nul" — the skill loads `docs/design/games-charter.md`, which is the contract that surface owes. The charter records why the hub cuts from eleven games to three, the item doctrine (stimulus → stem → options: a round that never names its subject is a coin flip), the near-pool rule for distractors, and the interface rules. Reasoning about a game without it re-derives conclusions that are already written down, usually wrongly.
 - Tailwind + shadcn/ui in `src/components/ui/`; feature components grouped by domain (`country/`, `people/`, `family/`, `fiche/`, `home/`, `quiz/`, `search/`, …).
 - Design tokens are CSS custom properties in `src/styles/tokens/*.css` plus per-surface `country-tokens.css` / `people-tokens.css`. Colours belong in tokens, not literals — `src/styles/__tests__/colorTokens.test.ts` and the charter contract suite assert this.
@@ -139,9 +140,13 @@ the engine to a layout this repository is not allowed to describe.
   unconfigured library as one with zero subjects.
 
 **A render is not aimed by either of them.** Each `cards.json` carries its own
-`outDir`, and which status bucket a post sits in is derived from the post's own
-header by the library's filing tool — never chosen by the engine, and never by
-moving a folder in the Finder.
+`outDir`, which `produire` rewrites before every render from
+`social/tools/library/register-post.mjs --where` — the folder of a post the
+library ledger knows. Which status bucket that folder sits in is derived from the
+post's `status` in that ledger, which `structure` and `produire` write through
+the same tool, and the library's filing tool moves the folder to match — never
+chosen by the engine, and never by moving a folder in the Finder. A subject left
+unregistered stays in the workshop, where the pipeline state does not look.
 
 **Any other destination inside a git checkout is refused** (`ethni_paths.py`,
 `assert_writable`). Not hypothetical: 1,2 Go of masters were once rendered into a
@@ -177,7 +182,7 @@ one tool that files folders onto the library's own shelves.
 
 ### Publishing — the audience, the plan, the video
 
-The publishing chain runs in one order, and **all eight of its skills live here**,
+The publishing chain runs in one order, and **all ten of its skills live here**,
 under their `ethniafrica-` names. They left for the private workspace on
 2026-09-10, on the rule that a public repository carries no production skills, and
 came back on 2026-09-11 when that rule was reversed: an engine and a chain whose
@@ -214,6 +219,23 @@ reseaux-help — à tout moment : où j'en suis, doublons, prochain geste
   `purposeChapter` and GABARITS-SOCIAL §7 ter, because the 2026-09-13 message
   audit (`docs/audience/message/`) found that doctrine in two productions out of
   twenty-seven while all of them had passed the four render gates.
+- **The myth check — `/ethniafrica-mythe`.** Not a step either: `idee`,
+  `structure` and `produire` each call it. It asks whether the subject undoes a
+  belief its audience actually holds, and whether the correction is sourced in
+  a fiche — because a correction written from memory swaps one myth for another
+  (the first Côte d'Ivoire draft credited Bouët-Willaumez with a name the
+  Portuguese navigators used centuries before him). « explique » is a valid
+  verdict; only an invented myth or an unsourced correction blocks.
+- **The onomastic challenge — `/ethniafrica-onomastique`.** Also not a step:
+  invoked on demand, at any point, to check that a piece actually engages the
+  project's own subject rather than the history around it — who named this
+  people or place, since when, why it sits here on the map, and what the
+  namers' heritage left behind, on the people's name and on the land's,
+  separately. Born 2026-09-16 on `cabinda-yombe-trois-lignes`, whose first
+  draft documented three border conventions with precision and never asked
+  who named anything. Also checks that a piece about what several peoples or
+  countries share closes with the unity conviction (`unityClaim` in
+  `about.ts`), not only the agent-reversal clôture.
 - **Where am I — `/ethniafrica-reseaux-help`.** Reads the pipeline state and
   `social/tools/etat-pipeline/bilan-sujets.mjs`, flags a validated post whose
   subject is already published in the same format, and names one next move.
@@ -339,6 +361,15 @@ _and_ its provenance, not to suppress the claim.
 The gate is therefore not "reject weak sources" but **"every source carries an explicit tier"**. A
 `sources` entry with no tier is a blocking error.
 
+**A source's standing never fails a gate** (DEC-055, REQ-169). A name record, a relation, a colonial
+border, a colonial event or a migration resting only on `unverified` sources passes
+`validateAfrikData.ts` with a warning naming the record and its standing (`FR57-source`, `REL-5`,
+`CR1`, `CR4`, `FR80`); so do a Wikipedia URL cited directly, a contested migration without
+`datingNote` or `debate`, and a non-official source without notes. What still fails is not a
+judgement of authority: a source with no tier or an invalid one, a record citing no source at all,
+an invalid ISO 639-3 or ISO 3166-1 code, a country without admin-0 geometry, a `contested` or
+`colonial-legacy` record with fewer than two sources, and a reader-facing register violation.
+
 One three-value scale is used everywhere — code identifier, DB value, API payload and user-facing
 label all say the same thing:
 
@@ -362,8 +393,45 @@ claim was deleted. It also settles the aggregator question (Joshua Project, 101l
 peoplegroups): they are cited, at `unverified`.
 
 Wikipedia is not a source. A primary source _discovered through_ Wikipedia is cited at its own tier,
-by its own URL, and its `notes` field records which Wikipedia language versions were crossed so the
-chain stays auditable.
+by its own URL, and its `notes` field may record which Wikipedia language versions were crossed. No
+gate requires that path, and a Wikipedia URL cited directly is reported, not refused.
+
+**Wikipedia is a first-pass verification tool, and this applies to every action, not only citing a
+claim** — curation, production, an audit, a rewrite. Decided 2026-09-14, after a video script asserted
+a claim from memory that no source backed and dropped a real, footnoted naming theory the corpus had
+not yet surfaced. Before asserting a claim (a date, a name, an origin, a figure), open the relevant
+Wikipedia article and read what it says and — more importantly — what it cites. A discrepancy between
+a draft and Wikipedia's own footnoted sources is a signal to re-check, not proof either side is wrong:
+Wikipedia's citations are themselves tiered like any other source, never taken as true because
+Wikipedia states them. Sourcing has no bottom rung reached by insisting harder — even an `official`
+source ultimately rests on someone's report, record or analysis — so the discipline is to cite at the
+right tier, not to chase an unsourced certainty that does not exist.
+
+#### `needs_review` is a transitional marker, not a tier
+
+A corpus citation nobody has ruled on yet says `tier: "needs_review"`. It is a marker at the corpus
+boundary, never a fourth tier, and it exists to disappear:
+
+- **Stored as `NULL`** in `sources.tier` by the loaders of the three directories that carry it —
+  `peuples/`, `pays/`, `famille_linguistique/` (`provenanceWriter.ts`, `peopleAppellationLoader.ts`).
+  Folding it onto `unverified` would publish a ruling nobody made. The name, patronyme, relation,
+  migration and person loaders pass `source.tier` through unchanged, which holds only while their
+  directories carry no `needs_review`. Migration `088` admits the literal.
+- **Labelled "En attente d'examen"** / "Awaiting review" (`SOURCE_PENDING_REVIEW_LABEL`), visually
+  distinct from the three tiers.
+- **Weighted 0.4** by `recompute_confidence()` (migration `088`): not yet judged cannot claim more
+  than judged weak.
+- **Held by a two-way ratchet**, `NEEDS_REVIEW_RATCHET` in `scripts/ci/checkSourceTierCoverage.ts`. Read
+  the constant for the current count.
+- **Resolved one citation at a time**, never by domain bulk: a moderator decides in the admin queue
+  (`/fr/admin/sources`), the decision is pulled into the git ledger
+  `docs/editorial/source-review/source-tier-rulings.json`, and `scripts/afrik/applySourceTierRulings.ts`
+  writes it into the fiches. A database-only edit is overwritten by the next sync, so a ruling that
+  does not reach git has not happened. The moderator's rationale lives in the ledger and never in
+  `sources[].notes`, which readers see verbatim.
+
+When the ratchet reaches zero, `needs_review` is removed everywhere it is spelled: `SourceTierState`
+and its zod, OpenAPI, badge and facet branches, and the value admitted by `sources_tier_check`.
 
 #### Tier is authority; `source_kind` is provenance
 
@@ -405,7 +473,7 @@ A fiche sourced only at `unverified` is published and visibly marked low-confide
 
 ### Demographics
 
-2025 reference year. Per-country `percentageInCountry` must sum to 100%. The validator has a hard band [95, 105] (FR28) and a strict target band [99, 101] (FR28-strict). Both were advisory while ~30 countries' splits were re-sourced; that burn-down is finished — measured at zero offenders — so **both now fail the build**, and a fiche can no longer drift back out. Which checks remain advisory is one exported constant, `SOFT_CHECK_NAMES` in `scripts/validateAfrikData.ts`; only `FR52-coverage` is still in it.
+2025 reference year. Per-country `percentageInCountry` is meant to sum to 100%. The validator reports a wide band [95, 105] (FR28), the target band [99, 101] (FR28-strict) and a country declaring no split at all (FR28-declared) — **as warnings naming the country and the sum, never as failures** (DEC-055, REQ-170). The bands failed the build for a while after the ~30-country re-sourcing reached zero offenders; that lock was lifted because a partial figure that says it is partial serves a reader better than no figure. The reader is told instead: `PeoplesSection` labels the breakdown « Répartition estimée ou incomplète » whenever its declared shares do not round to 100 %. Which checks are advisory as a whole is one exported constant, `SOFT_CHECK_NAMES` in `scripts/validateAfrikData.ts`; only `FR52-coverage` is in it — the FR28 checks emit warnings themselves.
 
 ### Colonial terminology
 
@@ -435,19 +503,21 @@ So those three may carry no repository path, no JSON field path, no raw `PPL_`/`
 
 `checkEditorialRules.ts` enforces this as `reader-facing-register` at error severity; the banned vocabulary is one exported constant, `INTERNAL_REGISTER_PATTERNS`. Doctrine, rewrite table and a paste-able prompt block for curation sessions: `docs/editorial/reader-facing-register.md`.
 
-### Bilingual content (`npm run check:translation-parity`, CI-blocking)
+### Bilingual content (`npm run check:translation-parity`, reported — never blocking)
 
-Content added or changed in either language must carry its counterpart in the other, or an explicit deferral with a reason — a fiche field, a home fact, a UI string, a quiz template. The gate is symmetric: French without English fails exactly as English without French does, and a source field edited after its translation was produced is reported as drifted, not accepted (REQ-145).
+Content added or changed in either language should carry its counterpart in the other, or an explicit deferral with a reason — a fiche field, a home fact, a UI string, a quiz template. The report is symmetric: French without English is listed exactly as English without French is, and a source field edited after its translation was produced is reported as drifted (REQ-145).
+
+**Parity is reported, never blocking (REQ-171, DEC-055).** It runs in no pre-commit hook, and its CI step in `build` prints warning annotations and cannot fail the job (`continue-on-error`, and the script exits 0 on findings in every mode). Publication is French-only by `SITE_LOCALE_MODE`, so a missing English field holds back nothing a reader sees — while blocking on it held French back. The accepted cost is that English may drift; read the report before switching a locale on. This is "for now" in DEC-055's words: it is a posture tied to French-only publication, not a retired contract. Only a malformed invocation (`--base` with no ref) exits non-zero.
 
 For a French corpus record, the only deferral form is a non-empty reason at
-`_translation.deferred.en` in the source record. The gate reports that reason
-as a notice. Empty reasons fail. UI dictionary keys cannot be deferred.
+`_translation.deferred.en` in the source record. The report lists that reason
+as a notice, and an empty reason as a finding. UI dictionary keys cannot be deferred.
 
-Two kinds of content, two homes. **UI copy** lives in locale-keyed dictionaries — `src/lib/translations.ts` today, the `src/lib/i18n` modules as they land — and a keys-parity test holds `en` and `fr` to the same key set, so a string added under one locale fails the suite until the other has it. **Corpus translations** never edit the French fiche: they are records under `dataset/translations/<lang>/`, produced by `npm run translate:record`, and carry their own provenance.
+Two kinds of content, two homes. **UI copy** lives in locale-keyed dictionaries — `src/lib/translations.ts` today, the `src/lib/i18n` modules as they land — and a keys-parity test (`src/lib/i18n/__tests__/copyParity.test.ts`) holds `en` and `fr` to the same key set, so a string added under one locale fails the suite until the other has it. That test **still fails the build**: interface copy is written in both languages at once, and REQ-171 does not relax it (a DEC-055 open question). **Corpus translations** never edit the French fiche: they are records under `dataset/translations/<lang>/`, produced by `npm run translate:record`, and carry their own provenance.
 
-The rules themselves — which fields are never translated, the glossary, the English register — live in `.claude/skills/afrik-translator/` and are enforced by `scripts/ci/checkTranslationParity.ts`. This file does not restate them, because three copies of one doctrine are how it drifts: invoke the skill before translating anything and let the gate name what is missing.
+The rules themselves — which fields are never translated, the glossary, the English register — live in `.claude/skills/afrik-translator/` and are reported by `scripts/ci/checkTranslationParity.ts`. The glossary is the exception to "reported": `npm run check:glossary` (REQ-144) is its own CI step and **still fails the build**, since REQ-171 relaxes counterparts, not terminology. This file does not restate them, because three copies of one doctrine are how it drifts: invoke the skill before translating anything and let the report name what is missing.
 
-The parity gate controls content readiness, not publication. It never changes
+The parity report describes content readiness, not publication. It never changes
 `SITE_LOCALE_MODE`; unfinished English therefore remains silent while the
 deployment stays on the default `fr-only` mode.
 
@@ -470,6 +540,7 @@ deployment stays on the default `fr-only` mode.
 
   It is local git state, so it cannot be committed and every new clone needs it again. Without it a worktree starts dozens of commits behind and its PR carries the whole `main → recette` delta. Verify with `git symbolic-ref --short refs/remotes/origin/HEAD`; the `worktree.baseRef` setting only chooses between that ref (`fresh`, the default) and the local HEAD (`head`) — it cannot name a branch.
 
+- **A PR is never merged over a red required check**, whatever the cause. When an environment outage turns every gate red, wait for it or fix the environment, then re-run. A red check that is "probably environmental" is unproven until it goes green: on 2026-09-14 six merges (#1037–#1041 into `recette`, #1031 into `main`) went through red `axe-core (Storybook)` and `Playwright smoke` during a recette egress-quota outage, and `main` then held code no green run had seen.
 - `recette ↔ main` sync PRs must use a **merge commit**, not a squash; squashing has broken the ancestry before.
 - Conventional commits (commitlint on `commit-msg`). Pre-commit runs `type-check` + `lint-staged`.
 - Never add `Co-Authored-By` trailers.
@@ -489,7 +560,7 @@ Two couplings that fail silently: `production-data-sync.yml` chains off the depl
 
 Project skills wrap the loop: `/ethniafrica-spec` (investigate → draft Pending REQ/DEC/ARCH + Jira tickets), `/ethniafrica-ticket` (take a Jira ticket end-to-end in an isolated worktree), `/ethniafrica-audit`, `/ethniafrica-release`.
 
-Ferry (`ferry.config.yaml`) drives agent automation off Jira status transitions on ETNI — Refinement → READY FOR DEV → In Review → Changes Requested → TO MERGE — branching `ferry/*` off `recette`.
+Ferry (`ferry.config.yaml`) drives agent automation off Jira status transitions on ETNI — Refinement → READY FOR DEV → In Review → Changes Requested → TO MERGE — branching `ferry/*` off `recette`. One workflow, `ferry-router.yml`, handles every transition: a single Jira rule dispatches `ferry-transition` with the new status, and the router picks the agent from `trigger_column`. **It reviews and merges any PR whose ticket enters IN REVIEW or TO MERGE, not only `ferry/*` branches** — a `feat/*` or `fix/*` PR opened by `/ethniafrica-ticket` is reviewed and merged the same way once its ticket moves. The five per-agent workflows (`ferry-dev`, `-refine`, `-review`, `-iterate`, `-merge`) were superseded by the router and removed; the Jira setup and the legacy rules to keep disabled are in `ferry-jira-automation-setup.md`.
 
 ### Test placement
 
@@ -501,9 +572,9 @@ TDD (failing test first) and KISS. Tests exercise the public interface — no re
 
 ### Environment
 
-Copy `.env.example` → `.env.local`. Required to run: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` (server-only). Required for reporting to work at all: `ANTIBOT_HMAC_SECRET` (server-only, any long random string) — **not** inert when unset, `GET /api/v2/antibot/challenge` answers 503 and every report dialog dies on "la vérification n'a pas abouti" while the build stays green. It replaced `CLOUDFLARE_TURNSTILE_SECRET_KEY`, which no longer exists. Optional subsystems: `UPSTASH_REDIS_REST_*` (rate limiting), `SENTRY_DSN` / `NEXT_PUBLIC_SENTRY_DSN`, `NEXT_PUBLIC_PLAUSIBLE_DOMAIN`, `ANTIBOT_DIFFICULTY_BITS`, `REVALIDATE_SECRET`, `SUPABASE_WEBHOOK_SECRET`, `NEXT_PUBLIC_FEATURE_QUIZ`. The CI build passes placeholder Supabase values so fork and Dependabot PRs still gate.
+Copy `.env.example` → `.env.local`. Required to run: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` (server-only). Required for reporting to work at all: `ANTIBOT_HMAC_SECRET` (server-only, any long random string) — **not** inert when unset, `GET /api/v2/antibot/challenge` answers 503 and every report dialog dies on "la vérification n'a pas abouti" while the build stays green. It replaced `CLOUDFLARE_TURNSTILE_SECRET_KEY`, which no longer exists. Required in production: `NEXT_PUBLIC_SITE_URL` — `src/lib/siteUrl.ts` throws on a production server without it, so every page answers 500 and the container `HEALTHCHECK` fails, while `next build` is exempt and stays green; check the VPS `.env` before a Release. Optional subsystems: `UPSTASH_REDIS_REST_*` (rate limiting), `SENTRY_DSN` / `NEXT_PUBLIC_SENTRY_DSN`, `NEXT_PUBLIC_PLAUSIBLE_DOMAIN`, `ANTIBOT_DIFFICULTY_BITS`, `ANTIBOT_TTL_MS`, `REVALIDATE_SECRET`, `SUPABASE_WEBHOOK_SECRET`, `NEXT_PUBLIC_FEATURE_QUIZ`. The CI build passes placeholder Supabase values so fork and Dependabot PRs still gate.
 
-Admin auth is Supabase Auth (magic-link, GitHub, Google OAuth); roles live in `user_roles` with values `reader`, `contributor`, `moderator`, `admin`, `advisor`. First admin: `ADMIN_EMAIL=… npx tsx scripts/seedAdmin.ts`.
+Admin auth is a Supabase Auth magic link to an address on `admin_allowlist` (migration `074`, checked by `src/lib/supabase/moderator.ts`), and nothing else: GitHub and Google are disabled in `supabase/config.toml`, because the atlas has no public accounts for a provider to federate. First moderator: `npx tsx scripts/seedAdminAllowlist.ts <email> "<note>"` with the target project's service-role key — nobody can open the console to add the first address, so whoever holds that key writes it. Procedure: `docs/runbooks/moderation-access.md`. `user_roles` and `scripts/seedAdmin.ts` are **legacy**: the role opens no door in the moderation console; the table's one remaining reader is `src/lib/rights/protected-asset-access.ts`, which no route calls.
 
 <!-- BEGIN:nextjs-agent-rules -->
 

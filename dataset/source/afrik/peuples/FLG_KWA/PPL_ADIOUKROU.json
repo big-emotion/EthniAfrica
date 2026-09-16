@@ -1,0 +1,155 @@
+{
+  "id": "PPL_ADIOUKROU",
+  "nameMain": "Adioukrou",
+  "languageFamilyId": "FLG_KWA",
+  "currentCountries": ["CIV"],
+  "content": {
+    "appellations": {
+      "mainName": "Adioukrou",
+      "selfAppellation": "Odjoukrou",
+      "exonyms": ["Boubouri", "Bubari"],
+      "spellingAliases": [
+        "Adjoukrou",
+        "Adjukru",
+        "Adyukru",
+        "Adyoukrou",
+        "Adyukuru",
+        "Ajukru",
+        "Adiukru",
+        "Adiokrou",
+        "Odjukru",
+        "Odzukru",
+        "Lodjoukrou"
+      ],
+      "originOfExonyms": "Les Odjoukrou nomment leur pays traditionnel Lodjoukrou, terme dont dérive l'appellation ethnique et qui désigne à la fois le pays, le peuple et la culture ; leur langue est le [mɔ́ʤúkrù]. Les traditionalistes interrogés par Harris Memel-Fotê donnent à Lodjoukrou plusieurs étymologies concurrentes, liées au récit d'une maladie brusquement guérie, et le pasteur Laurent Lasm propose « qui n'accepte pas l'injustice » ; aucune ne fait consensus. Adioukrou, Adjoukrou, Adjukru, Odjukru et Odzukru sont des transcriptions du même nom, et les sources consultées ne disent pas qui a fixé la graphie Adioukrou. Boubouri, écrit aussi Bubari, est le nom de Bobor, l'une des deux anciennes confédérations du pays avec Debrimou ; des répertoires d'ethnonymes l'emploient pour l'ensemble du peuple. Lebutu, ou leboutou, n'est pas un nom du peuple : le mot désigne la tribu, communauté politique de villages, et signifie littéralement « il a reçu l'étranger ».",
+      "whyProblematic": null,
+      "contemporaryUsage": "Adioukrou est la forme retenue par la Bibliothèque nationale de France et le nom de la langue chez Glottolog et Ethnologue. Adjoukrou reste courant dans les publications récentes sur le département de Dabou, tandis qu'Esso Lasm écrit Odjoukrou et l'historien Jean-Michel Egue Latte Odzukru. Le nom de Dabou, aujourd'hui celui du département, s'est substitué à Lodjoukrou pour désigner le territoire.",
+      "linguisticFamily": "FLG_BENOUECONGO",
+      "ethnoLinguisticGroup": "Akan lagunaire (Kwa)",
+      "historicalRegion": "Region des Lagunes, sud de la Cote d'Ivoire (departement de Dabou)",
+      "currentCountries": ["CIV"]
+    },
+    "ethnicities": ["Adioukrou"],
+    "origins": {
+      "ancientOrigins": "Les Adioukrou sont un peuple d'origine composite. Selon les historiens, ils seraient originellement un peuple Krou venu de la region de Gagnoa-Divo (centre-ouest de la Cote d'Ivoire), qui a ete absorbe et transforme par des vagues de populations Akan venues du Ghana. Sous la pression des Bete, ils migrent vers les lagunes et se melent aux peuples Akan lagunaires (Ebrie, Attie). D'autres traditions ancestrales evoquent une origine du Benin, et des similitudes avec des peuples d'Afrique centrale ont ete notees. L'identite Adioukrou est nee de ce brassage culturel.",
+      "formationPeriod": "Formation progressive sur plusieurs siecles, essentiellement entre le 15e et le 18e siecle, par convergence de populations d'origines diverses vers le territoire lagunaire de Dabou.",
+      "migrationRoutes": [
+        "Region de Gagnoa-Divo (centre-ouest CIV) -> lagunes (sous pression des Bete)",
+        "Apports Akan venus de l'est (Ghana) par migrations successives"
+      ],
+      "historicalSettlementZones": [
+        "Region de Dabou (Grands-Ponts, CIV)",
+        "Rive occidentale de la lagune Ebrie",
+        "49 villages dans le departement de Dabou"
+      ],
+      "unificationsOrDivisions": "Le passage de la succession patrilineaire a la succession matrilineaire reflete l'integration progressive des traits culturels Akan. Les plus anciens villages Adioukrou sont Toupah, Akradio, Grand-Bouboury, Pkass, Mopoil et Debrimou.",
+      "externalInfluences": "Influence Akan majeure, en particulier les Ebrie et les Attie. Colonisation francaise a partir de la fin du 19e siecle. Christianisation massive (environ 90% de la population actuelle se declare chretienne). Proximite d'Abidjan (50 km) entrainant une integration economique et une pression d'urbanisation.",
+      "majorHistoricalEvents": "Contact avec les navigateurs europeens a partir du 15e-16e siecle ; colonisation francaise et travail force perturbant les structures sociales traditionnelles ; independence de la Cote d'Ivoire en 1960."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "Systeme de classes d'age (sete) constituant l'organisation sociale fondamentale. La societe Adioukrou est structuree en 7 classes d'age : Sete, Ndjrouman, Abrouman, Mbedie, Mborman, Nigbessi et Bodjl. Chaque classe est subdivisee en 4 categories (Odjogba, Bago, Kata, Boman). Le pouvoir politique tourne tous les 8 ans lors de la ceremonie Ebeb, qui confie la direction du village aux Ebebu (gouvernants). Ce systeme assure une democratie rotative ou le commandement est collectif et limit dans le temps.",
+      "clanOrganization": "Organisation duale : a la naissance, l'enfant appartient au clan paternel (systeme patrilineaire initial) ; apres la ceremonie du Low pour les hommes, il integre le clan maternel (basculement vers le matrilineaire). Ce mecanisme unique combine filiation paternelle pour l'enfance et maternelle pour la vie adulte.",
+      "roleOfLineages": "Le referent social de l'adulte est l'oncle maternel. La transmission du pouvoir politique et des terres suit la lignee maternelle. Les Ebebu (anciens de la classe dirigeante) sont proprietaires terriens et garants des traditions.",
+      "religiousAuthority": "Croyance en un etre supreme createur appele Nyam (ou Nyambe), origine de l'univers (afrnunu). Culte des ancetres (esprits des defunts) maintenu par des offrandes. Existence de genies (petites divinites animant la nature). Pratiques de sorcellerie : sorciers noirs (sorciers mauvais) et sorciers blancs (agmann, protecteurs). Les cultes sont presides par les aines sociaux. Le christianisme est desormais dominant (90%)."
+    },
+    "languages": {
+      "mainLanguage": "Adioukrou (adj)",
+      "isoCodes": ["adj"],
+      "dialects": [
+        "dialecte central de Dabou (forme standard)",
+        "variantes villageoises (Lopou, Debrimou, Kpass)"
+      ],
+      "vehicularRole": "Le francais est utilise comme langue officielle et d'enseignement. L'adioukrou est la langue de la vie communautaire locale, des ceremonies et de la transmission orale. La langue appartient au rameau Kwa de la famille Niger-Congo, avec une classification incertaine au sein du Kwa (position proche du Tano central ou Agneby selon les linguistes)."
+    },
+    "culture": {
+      "majorRites": "Fete du Low : initiation masculine durant 3 a 5 semaines pour les hommes de 18 a 25 ans, marquant le passage a l'age adulte ; confere une identite sociale et le droit de participer a la defense du village. Dediakp : ceremonie de puberte feminine vers 18-23 ans, marquant la disponibilite au mariage. Angbandji (ou Agbandji) : fete de noblesse, de partage et de solidarite, ou le candidat distribue de la nourriture et des boissons a toute la communaute. Ebeb : investiture politique transmettant le pouvoir tous les 8 ans aux Ebebu ; couronnement d'une vie accomplie. Fete de l'igname (Capul) : festival annuel de purification et de regeneration sociale.",
+      "symbols": "Le systeme des classes d'age est le symbole identitaire fondateur des Adioukrou. Le kaolin (Fefr) applique sur le front lors de l'Ebeb symbolise la consecration au pouvoir. Le bas traditionnel, le chapeau et la canne sont signes du statut d'ancien.",
+      "artsAndMusic": "Musique adjoukrou avec tambours et danses guerrieres (Yaye) lors de la fete de l'igname. Chants initiatiques du Low. Production artisanale d'attieke (semoule de manioc fermente), d'huile de palme, de palmier a raphia. Activites traditionnelles : agriculture (igname, manioc, plantain, mais), peche en lagune, chasse.",
+      "spiritualities": "Religion traditionnelle basee sur la cosmologie a trois niveaux : Nyam (etre supreme createur), genies de la nature, esprits des ancetres. Culte des ancetres materialise par des photos, offrandes de repas sur les tombes et ceremonies des classes d'age. Totems et tabous animaux specifiques par village (caiman, crocodile, varan, python en general ; cerf a Debrimou). Christianisme dominant (environ 90% de la population) avec coexistence des pratiques traditionnelles."
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": "Pas de royaume centralise majeur. Organisation en villages autonomes gouvernes par des chefferies villageoises et des conseils d'anciens selon le systeme des classes d'age. Le Pays Adioukrou (Lodjoukrou) forme une entite culturelle coherente sans Etat centralize.",
+      "relationsWithNeighbors": "Voisinage et melange avec les peuples lagunaires Ebrie (Tchaman) et Alladian. Relations avec les peuples Akan du Ghana via migrations. Competition historique avec les Bete, qui sont a l'origine de leur migration vers les lagunes. Integration dans l'ensemble des peuples lagunaires de Cote d'Ivoire.",
+      "conflictsOrAlliances": "Migration initiale sous pression Bete. Periode de travail force sous la colonisation francaise perturbant les structures sociales. Cohabitation generalement pacifique avec les voisins lagunaires.",
+      "diaspora": "Peu de presence significative hors de Cote d'Ivoire. Migration interne vers Abidjan importante pour des raisons economiques et educatives, ou les communautes Adioukrou maintiennent leurs pratiques culturelles."
+    },
+    "demography": {
+      "totalPopulation": 155000,
+      "referenceYear": 2025,
+      "source": "Ethnologue (ADJ) : 140 000 locuteurs en 2017 ; estimation 2025 environ 155 000.",
+      "distributionByCountry": [
+        {
+          "country": "CIV",
+          "population": 155000
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Ethnologue : Adioukrou (adj)",
+        "url": "https://www.ethnologue.com/language/adj/",
+        "tier": "official",
+        "notes": "SIL International, notice de la langue adj."
+      },
+      {
+        "title": "Glottolog : Adioukrou (adio1239)",
+        "url": "https://glottolog.org/resource/languoid/id/adio1239",
+        "tier": "official",
+        "notes": "Classement : Atlantique-Congo, Volta-Congo, Kwa, Nyo, Agneby. Noms alternatifs : Adjukru, Adyoukrou, Adyukru, Ajukru."
+      },
+      {
+        "title": "Harris Memel-Fotê, Le Système politique de Lodjoukrou : une société lignagère à classes d'âge (Côte d'Ivoire), 1980",
+        "url": "https://www.presenceafricaine.com/livres-sciences-humaines-afrique-caraibes/542-le-systeme-politique-de-lodjoukrou-2708703811.html",
+        "tier": "referenced",
+        "notes": "Paris, Présence Africaine et Nouvelles Éditions Africaines, 479 pages, ISBN 2-7087-0381-1. Ouvrage non consulté directement : les pages 82 et 149 à 151 sont citées d'après Esso Lasm (2021)."
+      },
+      {
+        "title": "Esso Lasm Constant, Onomastique des Odjoukrou : aspects toponymique et ethnonymique, Les Cahiers de l'ACAREF, vol. 3, n° 6, tome 1, mai 2021, p. 174-188",
+        "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2021/06/10ESSO-Lasm-Constant.pdf",
+        "tier": "referenced",
+        "notes": "Université Félix Houphouët-Boigny. Étude des toponymes et des ethnonymes à partir de la tradition orale ; rapporte les étymologies de Lodjoukrou recueillies par Harris Memel-Fotê."
+      },
+      {
+        "title": "Bibliothèque nationale de France, notice d'autorité RAMEAU : Adioukrou (peuple d'Afrique)",
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb11952806n",
+        "tier": "referenced",
+        "notes": "Notice créée en 1983, mise à jour en 2002. Formes rejetées, dont : Adiokrou, Adiukru, Adjoukrou, Adjukru, Adyoukrou, Adyukru, Adyukuru, Ajukru, Boubouri, Odjoukrou, Odjukru, Odzukru. S'appuie sur des répertoires d'ethnonymes, dont le Dictionnaire des peuples de Jean-Claude Tamisier (1998)."
+      },
+      {
+        "title": "Jean-Michel Egue Latte, L'histoire des Odzukru, peuple du sud de la Côte d'Ivoire : des origines au XIXe siècle, 2018",
+        "url": "https://www.editions-harmattan.fr/catalogue/livre/lhistoire-des-odzukru-peuple-du-sud-de-la-cote-divoire/17639",
+        "tier": "referenced",
+        "notes": "L'Harmattan Côte d'Ivoire, 262 pages, ISBN 978-2-343-14449-8. Seule la présentation de l'éditeur a été lue."
+      },
+      {
+        "title": "PHOIBLE : inventaire phonologique de l'adioukrou (inventaire 650)",
+        "url": "https://phoible.org/inventories/view/650",
+        "tier": "referenced",
+        "notes": "D'après Hartell (éd.), 1993, et Chanard, 2006. Nom de la langue donné : Mↄjukru."
+      },
+      {
+        "title": "Ahouyao, Bouafou et Amani, Cultural Identities and Food Habits in Adjoukrou Country in the Department of Dabou, Ivory Coast, 2022",
+        "url": "https://ijsscfrtjournal.isrra.org/Social_Science_Journal/article/view/1115",
+        "tier": "referenced",
+        "notes": "International Journal of Social Sciences: Current and Future Research Trends, vol. 14, n° 1, p. 144-160, ISSN 2790-4008. Enquête par questionnaire auprès de 261 personnes et entretiens dans le département de Dabou."
+      },
+      {
+        "title": "Joshua Project : Adjoukrou in Côte d'Ivoire",
+        "url": "https://joshuaproject.net/people_groups/10162/IV",
+        "tier": "unverified",
+        "notes": "Répertoire missionnaire. Noms alternatifs donnés : Ajukru, Bubari ; population annoncée : 209 000."
+      },
+      {
+        "title": "Lebutu Socraf : Les Adjoukrou et la démocratie, leçon d'une vie, 19 juillet 2017",
+        "url": "https://lebutusocraf.wordpress.com/2017/07/19/les-adjoukrou-et-la-democratie-lecon-dune-vie/",
+        "tier": "unverified",
+        "notes": "Blog consacré au patrimoine culturel adioukrou, fondé sur des témoignages oraux nommés, sans bibliographie. Variantes citées : Adjukru, Adioukrou, Adyukru, Boubouri, Odjukru."
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred: translate:record refuses this record on content.appellations.ethnoLinguisticGroup, which modele-peuple.json does not declare and translationClasses.ts does not classify, so the pipeline carries its French verbatim and the glossary check rejects \"peuples\". Measured 2026-09-10: 743 of the 776 people records carry that field and none of the 776 has an English sidecar, so no people record can be translated until the declaration covers it. Both sonnet and opus refused twice."
+    }
+  }
+}

@@ -46,10 +46,10 @@ describe("applyCorsHeaders — no allowed origin configured", () => {
   });
 
   // @req REQ-084
-  it("still announces the methods and headers the API accepts", () => {
+  it("announces every verb a route answers, DELETE for key revocation included", () => {
     const response = applyCorsHeaders(new Response(null));
     expect(response.headers.get("Access-Control-Allow-Methods")).toBe(
-      "GET,POST,PATCH,OPTIONS"
+      "GET,POST,PATCH,DELETE,OPTIONS"
     );
     expect(response.headers.get("Access-Control-Allow-Headers")).toBe(
       "Content-Type,Authorization"
@@ -59,11 +59,11 @@ describe("applyCorsHeaders — no allowed origin configured", () => {
 
 describe("applyCorsHeaders — an allowed origin is configured", () => {
   // @req REQ-084
-  it("echoes the configured origin and only then allows credentials", () => {
+  it("echoes the configured origin without allowing credentials, since auth is a bearer header", () => {
     process.env.CORS_ALLOWED_ORIGIN = "https://ethniafrica.org";
     expect(corsHeaders(applyCorsHeaders(new Response(null)))).toMatchObject({
       origin: "https://ethniafrica.org",
-      credentials: "true",
+      credentials: null,
     });
   });
 
@@ -154,7 +154,7 @@ describe("the helpers that wrap applyCorsHeaders", () => {
     expect(response.status).toBe(204);
     expect(corsHeaders(response)).toEqual({
       origin: "https://ethniafrica.org",
-      credentials: "true",
+      credentials: null,
       vary: "Origin",
     });
   });

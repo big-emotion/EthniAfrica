@@ -8,6 +8,7 @@ import {
   InstagramGlyph,
   LinkedinGlyph,
   TiktokGlyph,
+  XGlyph,
   YoutubeGlyph,
 } from "@/components/layout/SocialGlyphs";
 import { useConsent } from "@/hooks/use-consent";
@@ -33,8 +34,11 @@ interface SiteFooterProps {
 // touching the type, which stays at the column's `small`.
 // `min-w-11` as well as `min-h-11`: a short label — « API », « Noms » — drew a
 // 26px-wide target however tall the row was, and the floor is a square.
+// Hover darkens the ink instead of borrowing the accent: `text-primary` on the
+// footer's warm ground measured 4.43:1, under AA, and axe-core caught it once a
+// short quiz screen left the pointer resting on « Jouer ».
 const FOOTER_LINK_CLASS =
-  "inline-flex min-h-11 min-w-11 items-center justify-center underline decoration-border underline-offset-4 transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring";
+  "inline-flex min-h-11 min-w-11 items-center justify-center underline decoration-border underline-offset-4 transition-colors hover:text-afh-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring";
 
 /**
  * Where the project is followed, and where it will be.
@@ -53,12 +57,13 @@ const SOCIAL_NETWORKS: ReadonlyArray<{
     Glyph: FacebookGlyph,
     href: "https://www.facebook.com/profile.php?id=61593966096643",
   },
-  // The company slug carries a typographic apostrophe (U+2019), kept
-  // percent-encoded so the URL survives copy, log and redirect untouched.
+  // The page was renamed on 2026-09-16 and its public URL is the product name
+  // now: the old slug, and the typographic apostrophe (U+2019) it had to carry
+  // percent-encoded, are both gone.
   {
     name: "LinkedIn",
     Glyph: LinkedinGlyph,
-    href: "https://www.linkedin.com/company/dictionnaire-des-ethnies-d%E2%80%99afrique/",
+    href: "https://www.linkedin.com/company/ethniafrica/",
   },
   {
     name: "Instagram",
@@ -74,6 +79,11 @@ const SOCIAL_NETWORKS: ReadonlyArray<{
     name: "YouTube",
     Glyph: YoutubeGlyph,
     href: "https://www.youtube.com/channel/UCcJiwOQJ7-ajWnYFTDTOt0A",
+  },
+  {
+    name: "X",
+    Glyph: XGlyph,
+    href: "https://x.com/ethniafrica",
   },
 ];
 
@@ -208,8 +218,11 @@ export function SiteFooter({ language }: SiteFooterProps) {
               {/* The masthead lockup, one role up because the mark beside it is
                   80px rather than 44px. Not `h1`: that role belongs to the fiche
                   the reader has just finished, and a wordmark that matches it
-                  makes the page look like it has two titles. */}
-              <span className="font-afh-display text-afh-h2 text-afh-text">
+                  makes the page look like it has two titles. The masthead's
+                  900 as well: with no weight it fell to 400, rendered as the
+                  nearest loaded Fraunces (500), and the one lockup wore two
+                  weights (brand charter §5.3). */}
+              <span className="font-afh-display text-afh-h2 font-black text-afh-text">
                 {PRODUCT_NAME}
               </span>
               {/* The same qualifier as the masthead, in the same gradient. It
@@ -262,10 +275,10 @@ export function SiteFooter({ language }: SiteFooterProps) {
               {directory.followHeading}
             </p>
             {/* Capped at three marks' width — 3 × 44px hit areas plus the two
-                  gaps between them — so a fourth and fifth mark wrap onto a
+                  gaps between them — so the fourth mark onwards wrap onto a
                   second row instead of stretching the line. `flex-wrap` then
-                  justifies each row on its own axis, so both the row of three
-                  and the row of two centre independently under the heading. */}
+                  justifies each row on its own axis, so both rows of three
+                  centre independently under the heading. */}
             {/* Wraps for the same reason it did before: at 200% text zoom
                   each 44px target measures 88px, and an uncapped row would
                   still overrun the viewport. WCAG 1.4.10 forbids the
@@ -388,7 +401,7 @@ export function SiteFooter({ language }: SiteFooterProps) {
               href="https://big-emotion.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center gap-2 transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="inline-flex min-h-11 items-center gap-2 transition-colors hover:text-afh-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               <span>{footer.attribution}</span>
               <Image

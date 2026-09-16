@@ -22,6 +22,19 @@ const nextConfig: NextConfig = {
       "./dataset/source/afrik/dossiers/*.json",
       "./dataset/translations/en/dossiers/*.json",
     ],
+    // The source review queue is built from the fiches in git: a ruling has to
+    // name the citation the corpus actually carries, not the database's copy.
+    "/*/admin/sources": [
+      "./dataset/source/afrik/peuples/**/*.json",
+      "./dataset/source/afrik/pays/*.json",
+      "./dataset/source/afrik/famille_linguistique/*.json",
+    ],
+  },
+  // The tracer reads the queue's `join(…, "peuples")` as any `peuples/`
+  // directory and pulls in `archive/peuples/*.txt` too — 5.5 MB of pre-JSON
+  // sources the page never opens. Measured in the built trace, 2026-09-14.
+  outputFileTracingExcludes: {
+    "/*/admin/sources": ["./dataset/source/afrik/archive/**"],
   },
   experimental: {
     authInterrupts: true,

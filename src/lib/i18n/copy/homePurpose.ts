@@ -2,17 +2,18 @@ import type { Language } from "@/types/shared";
 
 export interface HomePurposeCopy {
   toggle: string;
-  sentences: [string, string];
+  sentences: [string];
   linkLabel: string;
 }
 
 /**
- * What the atlas is for, in the two sentences the social series opens and
- * closes on, behind the home's « Notre propos » disclosure.
+ * What the atlas is for, in the statement the social series opens on, behind
+ * the home's « Notre propos » disclosure. Its closing counterpart, « Ce peuple
+ * n'a pas été divisé », was cut from the home (operator ruling, 2026-09-14)
+ * and stays on the About page's purpose chapter.
  *
- * Both are the project's position rather than a finding the atlas proves, and
- * the link goes to the About page's purpose chapter, which says so in as many
- * words. « Plus de mille » is a position, never a dated attestation: the
+ * It is the project's position rather than a finding the atlas proves, and
+ * the link goes to that chapter, which says so in as many words. « Plus de mille » is a position, never a dated attestation: the
  * atlas dates no name (docs/editorial/purpose-doctrine.md). « La plupart » and
  * « moins de » are not a softening. Berlin drew almost no line itself, one
  * border is older than it (Morocco–Algeria, 1845) and many are younger (Togo
@@ -30,7 +31,6 @@ export const homePurposeCopy: Record<Language, HomePurposeCopy> = {
     toggle: "What we stand for",
     sentences: [
       "Most of Africa’s borders are less than a hundred and forty years old. The names are more than a thousand years old.",
-      "This people was not divided. The map was drawn over it.",
     ],
     linkLabel: "Read the full statement",
   },
@@ -38,7 +38,6 @@ export const homePurposeCopy: Record<Language, HomePurposeCopy> = {
     toggle: "Notre propos",
     sentences: [
       "La plupart des frontières de l’Afrique ont moins de cent quarante ans. Les noms en ont plus de mille.",
-      "Ce peuple n’a pas été divisé. C’est la carte qui a été dessinée par-dessus.",
     ],
     linkLabel: "Lire la déclaration",
   },
