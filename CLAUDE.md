@@ -182,7 +182,7 @@ one tool that files folders onto the library's own shelves.
 
 ### Publishing — the audience, the plan, the video
 
-The publishing chain runs in one order, and **all nine of its skills live here**,
+The publishing chain runs in one order, and **all ten of its skills live here**,
 under their `ethniafrica-` names. They left for the private workspace on
 2026-09-10, on the rule that a public repository carries no production skills, and
 came back on 2026-09-11 when that rule was reversed: an engine and a chain whose
@@ -226,6 +226,16 @@ reseaux-help — à tout moment : où j'en suis, doublons, prochain geste
   (the first Côte d'Ivoire draft credited Bouët-Willaumez with a name the
   Portuguese navigators used centuries before him). « explique » is a valid
   verdict; only an invented myth or an unsourced correction blocks.
+- **The onomastic challenge — `/ethniafrica-onomastique`.** Also not a step:
+  invoked on demand, at any point, to check that a piece actually engages the
+  project's own subject rather than the history around it — who named this
+  people or place, since when, why it sits here on the map, and what the
+  namers' heritage left behind, on the people's name and on the land's,
+  separately. Born 2026-09-16 on `cabinda-yombe-trois-lignes`, whose first
+  draft documented three border conventions with precision and never asked
+  who named anything. Also checks that a piece about what several peoples or
+  countries share closes with the unity conviction (`unityClaim` in
+  `about.ts`), not only the agent-reversal clôture.
 - **Where am I — `/ethniafrica-reseaux-help`.** Reads the pipeline state and
   `social/tools/etat-pipeline/bilan-sujets.mjs`, flags a validated post whose
   subject is already published in the same format, and names one next move.

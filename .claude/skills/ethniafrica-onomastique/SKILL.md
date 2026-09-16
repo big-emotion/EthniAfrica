@@ -1,0 +1,121 @@
+---
+name: ethniafrica-onomastique
+description: Challenger une production EthniAfrica (idée, cards.json, narration, page) contre la doctrine qui fonde le projet — raconter les noms. Quatre questions systématiques (qui a nommé, depuis quand, pourquoi se retrouve-t-il ici, quel héritage laissent les nommeurs) et une vérification de ton (clore sur l'amour et l'unité, pas seulement sur le renversement). Se lance à tout moment de la chaîne idee → structure → produire, ou seul sur un sujet déjà écrit. Utiliser pour « est-ce qu'on parle bien des noms », « recentre sur le propos du projet », « check onomastique », « pourquoi on ne nomme personne dans cette pièce », ou /ethniafrica-onomastique.
+---
+
+# onomastique — cette pièce raconte-t-elle un nom, ou seulement un événement ?
+
+Né le 2026-09-16, sur `cabinda-yombe-trois-lignes` : un premier jet racontait
+avec exactitude trois conventions frontalières et une carte de conflit, sans
+jamais poser la question qui fonde le projet — qui a nommé ce peuple, qui a
+nommé cette terre. L'opérateur a rappelé la doctrine ; ce skill fige ce rappel
+pour qu'il n'ait plus à être répété à la main, sujet après sujet.
+
+**EthniAfrica ne raconte pas des frontières. Il raconte des noms — et les
+frontières n'en sont qu'une preuve, la carte cachée qui les traverse sans les
+éteindre.** Une pièce qui documente une ligne, une date, un traité, sans
+jamais nommer qui a nommé quoi, a raconté le décor et manqué le sujet.
+
+## Les quatre questions
+
+À poser sur toute pièce — un rapport de sujet, un `cards.json`, une
+`narration.fr.txt`, une page de fiche — et à généraliser au-delà du seul
+peuple qui en est le centre : au territoire qu'il habite, à la langue qu'il
+parle, à tout nom que la pièce prononce sans l'interroger.
+
+1. **Qui a nommé ce peuple (ou ce lieu, cette langue) ?** L'autonyme d'abord
+   — le nom qu'il se donne — puis l'exonyme, et qui l'a choisi : ses voisins,
+   un colonisateur, un cartographe, personne d'identifiable.
+2. **Depuis quand ?** Ce nom est-il attesté avant tout contact extérieur, ou
+   seulement depuis qu'une administration l'a couché par écrit ? Le corpus ne
+   date presque aucune attestation ([[le-corpus-ne-date-aucune-attestation]]
+   dans la mémoire du projet) — l'absence de date est elle-même une réponse à
+   écrire, pas un trou à taire.
+3. **Pourquoi ce peuple, ce nom, se retrouve-t-il ici** — sur cette carte,
+   dans cette configuration de frontières, de ce côté-ci d'une ligne plutôt
+   que de l'autre ? C'est la question qui relie le nom au territoire : une
+   pièce peut très bien répondre aux deux premières questions et rater
+   celle-ci, en racontant un peuple sans jamais dire comment il en est arrivé
+   à vivre là.
+4. **Quel est l'héritage de ceux qui ont nommé** — le peuple, et le territoire
+   qu'il habite encore ? Deux héritages à distinguer, et à ne pas confondre :
+   celui du nom (a-t-il survécu tel quel, ou a-t-il été recouvert par un
+   exonyme qui a fini par s'imposer ?) et celui de la frontière (qu'ont
+   laissé, concrètement, ceux qui l'ont tracée — une ligne, un protocole, rien
+   d'autre). Une pièce qui répond à cette question montre souvent que les deux
+   héritages divergent : le nom du peuple a traversé intact ce que la carte
+   n'a pas traversé.
+
+Une pièce n'a pas à répondre en détail aux quatre pour chaque nom qu'elle
+prononce — mais si elle n'en engage **aucune**, sur **aucun** des noms
+qu'elle porte, elle a manqué le sujet du projet, quelle que soit par ailleurs
+la qualité de sa recherche historique.
+
+## Ce que chaque réponse doit porter
+
+Comme pour toute affirmation de la chaîne : un ancrage. « Qui a nommé »
+n'est pas une question rhétorique qu'on résout à l'intuition — c'est une
+affirmation comme une autre, sourcée à son tier
+([[source-tier-doctrine-2026-08]]). Quand aucune source ne tranche,
+**la pièce le dit** plutôt que d'inventer une réponse commode : « personne ne
+sait avec certitude » est une réponse honnête et publiable, à condition que
+les pistes trouvées soient elles-mêmes citées et tiérées — jamais une seule
+présentée comme la vérité.
+
+## Le ton de clôture : pas seulement le renversement
+
+`GABARITS-SOCIAL.md` §7 ter fixe le renversement d'agent comme clôture de
+série (« Ce peuple n'a pas été divisé. C'est la carte qui a été dessinée
+par-dessus. ») — et prévoit, à part, une **deuxième position**, distincte de
+ce renversement : la conviction d'unité du projet
+(`src/lib/i18n/copy/about.ts`, `purposeChapter.unityClaim` :
+« Ce qui relie les peuples d'Afrique a survécu à leurs propres ruptures
+autant qu'aux frontières qu'on leur a imposées. C'est là que commence une
+unité plus forte. »).
+
+Le renversement d'agent corrige un mythe ; il reste un constat, parfois sec.
+**Ce skill vérifie qu'une pièce qui le mérite — un sujet qui parle
+explicitement de ce qui relie plusieurs peuples ou plusieurs pays — porte
+aussi cette seconde voix**, celle qui clôt sur l'amour et l'unité plutôt que
+sur le seul constat de la carte redessinée. Elle n'est obligatoire dans aucun
+gabarit ; elle est ici rappelée parce qu'elle se laisse oublier. Deux façons
+de la porter, toutes deux valides (§7 ter) :
+
+- comme sa propre carte, reprenant `unityClaim` mot pour mot ou presque, et
+  **sans `source`** — une conviction du projet ne se cite pas comme une
+  preuve du corpus, `unityClaimStatus` l'étiquette déjà comme telle sur la
+  page À propos ;
+- en laissant simplement le ton de la clôture s'en inspirer, sans l'imprimer.
+
+## Comment challenger une session
+
+Ce skill se lance à tout moment — pas seulement en fin de chaîne. Sur un
+`cards.json` déjà écrit, une idée en cours de rédaction, ou une page
+existante :
+
+1. Relire la pièce carte par carte (ou section par section).
+2. Pour chaque nom qu'elle prononce (peuple, lieu, langue), pointer où — quel
+   rang, quelle carte — chacune des quatre questions trouve sa réponse, et où
+   elle reste sans réponse.
+3. Vérifier que chaque réponse porte son ancrage (fiche, tier).
+4. Vérifier la présence d'une voix de clôture en amour/unité si le sujet s'y
+   prête, et sa conformité à §7 ter (reprise ou inspiration, jamais présentée
+   comme un fait).
+5. Rendre un verdict court : **engage le propos** (les quatre questions sont
+   posées, au moins une avec une réponse sourcée, la clôture porte l'unité) |
+   **raconte sans nommer** (l'histoire tient, mais aucune des quatre
+   questions n'est posée) | **nomme sans sourcer** (les questions sont posées
+   mais la réponse invente une certitude que rien n'appuie).
+
+## Ce que tu ne fais pas
+
+- Juger si le mythe est bien défait → `ethniafrica-mythe`.
+- Noter la pièce sur la grille complète de doctrine → `ethniafrica-message`.
+- Écrire ou corriger une fiche → `/afrik-curator`.
+- Réécrire les cartes, rendre, publier.
+
+## Pour finir
+
+Une ligne : le verdict, et le nom ou le territoire dont la question — qui l'a
+nommé, depuis quand, pourquoi ici, quel héritage — reste sans réponse s'il y
+en a un.
