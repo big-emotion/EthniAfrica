@@ -734,14 +734,27 @@
 }
 
 /* ── Tiles ──────────────────────────────────────────────────────────
-   The unit every chapter folds its prose into. Two columns from the phone
-   up, 12px apart, 16px inside: on production the tiles sat 6px apart with
-   their text against the border, and each chapter chose its own gap. An odd
-   last tile takes the whole row rather than leaving a hole beside it. */
+   The unit every chapter folds its prose into: 12px apart, 16px inside. On
+   production the tiles sat 6px apart with their text against the border,
+   and each chapter chose its own gap. An odd last tile takes the whole row
+   rather than leaving a hole beside it.
+
+   One column on a phone. These tiles carry prose, and two columns gave each
+   of them 140px of measure — "Islam sunnite (école malékite majoritaire),
+   soufisme important", 62 characters, fell on five lines at twelve
+   characters each, against a 45-75 comfort floor (measured on MAR,
+   2026-09-16). Two further defects came with it: columns of free height
+   left an empty card beside four lines of text, and two `details` side by
+   side put their controls at two different heights, so there was no row of
+   controls left to scan.
+
+   Two columns return at the parchment's own 760px, where each measure is
+   wide enough to carry a sentence. Brand charter §8.7 states the rule this
+   obeys: two columns on a phone admit only atomic cells. */
 
 .afh-tiles {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 12px;
 }
 
@@ -1212,10 +1225,14 @@
   color: var(--afh-text);
 }
 
+/* Two columns on a phone, and here that is deliberate: every cell is atomic
+   — a count, a date — so nothing wraps and no measure is at stake. This is
+   the other half of brand charter §8.7, whose first half linearises the
+   tiles above. */
 .fiche-summary-brief__counted {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  gap: 0 22px;
 }
 
 /* The lead figure takes the whole row. A tile beside it would read as its
@@ -1223,7 +1240,90 @@
    the country or the people itself. */
 .fiche-summary-brief__counted > [data-emphasis="lead"] {
   grid-column: 1 / -1;
-  border-left: 4px solid var(--accent);
+}
+
+/* ── The figures of the summary, stripped of their cards ──────────────
+   Four counts wore four white grounds, four borders, four radii and four
+   paddings — four "separate object" signals for a one-character datum, and
+   on a desktop parchment a "5" sat in 600px of white. The container weighed
+   more than the content it carried. A hairline under each pair is the whole
+   of the device now; the typography charter §4 reserves a card for a
+   preview, and a counted figure previews nothing.
+
+   The figures also leave the monospace. "The display face names, the body
+   face explains and operates, the monospace aligns figures in a column" —
+   and 5, 7, 2 and 79 are four unrelated magnitudes in a 2x2 grid, never a
+   column to align, so `tabular-nums` buys nothing and the face is not
+   earned. This is why the peoples chapter next door reads warmer than the
+   panel above it: it was already in the display face. */
+.fiche-summary-brief__counted > .afh-stat-card {
+  margin-top: 11px;
+  padding: 0 0 11px;
+  border: 0;
+  border-bottom: 1px solid var(--afh-border);
+  border-radius: 0;
+  background: none;
+}
+
+.fiche-summary-brief__counted > .afh-stat-card[data-emphasis="lead"] {
+  margin-top: 0;
+  padding: 0 0 14px;
+}
+
+.fiche-summary-brief__counted > .afh-stat-card[data-emphasis="tile"] {
+  padding: 0 0 11px;
+}
+
+/* A rule under the last row would close a table that nothing continues. */
+.fiche-summary-brief__counted > .afh-stat-card:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.fiche-summary-brief__counted > .afh-stat-card .afh-stat-card-n {
+  font-family: var(--afh-font-display);
+  font-weight: 900;
+  letter-spacing: -0.015em;
+  font-variant-numeric: normal;
+}
+
+/* One figure is inked, and only one. The ink says "population", not
+   "number": spent on all five it would stop teaching anything, and the four
+   counts beside it would claim the weight the lead is owed. It is the same
+   reading the peoples chapter gives its national total. */
+.fiche-summary-brief__counted
+  > .afh-stat-card[data-emphasis="lead"]
+  .afh-stat-card-n {
+  color: var(--afh-figure-lead-ink);
+  line-height: 1;
+}
+
+/* An absence is a different statement from a measurement, and dropping the
+   card must not drop that distinction with it. The colonial tint moves from
+   a filled ground to the hairline, and a missing lead keeps the colonial ink
+   rather than the figure ink above — a population nobody has sourced must
+   not be painted like one that is. */
+.fiche-summary-brief__counted > .afh-stat-card[data-provenance="missing"] {
+  border-bottom-color: var(--afh-color-colonial);
+}
+
+.fiche-summary-brief__counted
+  > .afh-stat-card[data-emphasis="lead"][data-provenance="missing"]
+  .afh-stat-card-n {
+  color: var(--afh-color-colonial);
+}
+
+/* Four counts across, once the parchment has the width. At two columns a
+   desktop reader met two half-screen slabs holding one digit each; four
+   turns the row into a strip of figures, and it is that density — not an
+   alignment — that was making the panel feel unfinished. */
+@container (min-width: 760px) {
+  .fiche-summary-brief__counted {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .fiche-summary-brief__counted > .afh-stat-card:nth-last-child(-n + 4) {
+    border-bottom: 0;
+  }
 }
 
 /* A rule down the left rather than a line across the top. A top rule reads
@@ -1385,6 +1485,12 @@
 @container (min-width: 760px) {
   .afh-parchment-head {
     padding: 34px 40px;
+  }
+
+  /* Wide enough for two measures, which is the only condition under which a
+     tile of prose may share its row. */
+  .afh-tiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .afh-parchment-section {

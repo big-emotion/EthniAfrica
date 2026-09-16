@@ -171,6 +171,21 @@
   --afh-terracotta: var(--afh-color-terracotta);
   --afh-gold: var(--afh-color-gold);
 
+  /* The ink of a record's lead figure — the one count a reader came for, on
+     both the country and the people summary. It is a role, not a hue: the
+     four counts beside it keep the text ink, because a terracotta spent on
+     all five would stop meaning « population » and start meaning « number ».
+
+     It needs a night value of its own, which is why it is a token rather
+     than a reuse of the terracotta alias above. Raw terracotta reaches only
+     2.5:1 on the night ground — a figure nobody can read. The terre ink ramp
+     clears 4.5:1 there.
+
+     Written without a colon after any token name: charterTokens.test.ts
+     reads this file line by line, and prose shaped like a declaration is
+     picked up as one. */
+  --afh-figure-lead-ink: var(--afh-color-terracotta);
+
   /* Confidence tier — applied to data lineage badges, sources, etc.
      high  → 95–100 % corroborated by primary sources
      mid   → 70–94 %  mixed primary + secondary
@@ -381,6 +396,10 @@
   --afh-text-muted: var(--afh-night-ink-3);
 
   --afh-colonial-ink: var(--afh-night-colonial);
+
+  /* Raw terracotta is a dark red on a dark ground — 2.5:1, a figure nobody
+     can read. The terre ink ramp is the same hue lifted for type. */
+  --afh-figure-lead-ink: var(--afh-cat-terre-ink-night);
 
   /* fg-muted must clear AA on --afh-muted; ink-3 sits at 4.2:1 on the
      raised surface, so the muted pair takes ink-2 the way the parchment
