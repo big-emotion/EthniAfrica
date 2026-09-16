@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "entries": [
     {
       "key": "un-desa-wpp",
@@ -243,6 +243,37 @@
         "claude.ai",
         "gemini.google.com"
       ]
+    },
+    {
+      "key": "paris21",
+      "name": "PARIS21 — Partnership in Statistics for Development in the 21st Century",
+      "tier": "official",
+      "sourceKind": "official_statistics",
+      "matchDomains": ["paris21.org"]
+    },
+    {
+      "key": "leiden-scholarly-publications",
+      "name": "Leiden University Scholarly Publications",
+      "tier": "referenced",
+      "sourceKind": "repository",
+      "matchDomains": [
+        "scholarlypublications.universiteitleiden.nl",
+        "universiteitleiden.nl"
+      ]
+    },
+    {
+      "key": "asc-leiden",
+      "name": "African Studies Centre Leiden",
+      "tier": "referenced",
+      "sourceKind": "academic",
+      "matchDomains": ["ascleiden.nl"]
+    },
+    {
+      "key": "maryland-state-archives",
+      "name": "Maryland State Archives",
+      "tier": "official",
+      "sourceKind": "government",
+      "matchDomains": ["msa.maryland.gov"]
     }
   ]
 }
