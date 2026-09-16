@@ -10,6 +10,7 @@ import { usePathname, useRouter } from "next/navigation";
 
 import { loadPublicFlagsPage } from "@/app/[lang]/signalements/actions";
 import { FlagPublicStatus } from "@/components/flags/FlagPublicStatus";
+import { remediationStateLabel } from "@/components/flags/FlagRemediationRecord";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -203,6 +204,11 @@ function PublicFlagRow({
   const targetName = getTargetName(item);
   const reason = item.reasonText?.trim();
   const copy = publicFlagsCopy[language];
+  const remediationLabel = remediationStateLabel(
+    language,
+    item.remediationState,
+    item.remediationPublishedAt
+  );
 
   return (
     <article className="group border-b border-afh-border bg-afh-surface first:border-t">
@@ -267,8 +273,24 @@ function PublicFlagRow({
           </div>
         </div>
 
-        <div className="flex items-center border-t border-afh-border bg-afh-bg px-4 py-3 md:border-l md:border-t-0 md:px-5">
+        <div className="flex flex-col items-start justify-center gap-2 border-t border-afh-border bg-afh-bg px-4 py-3 md:border-l md:border-t-0 md:px-5">
           <FlagPublicStatus status={item.status} language={language} />
+          {/* Sharp-cornered beside the pill: the disposition is an opinion,
+              the remediation is a record, and the actions charter (§6) makes
+              the reader able to tell them apart before reading either. */}
+          {remediationLabel && (
+            <span
+              data-testid="flag-remediation-mark"
+              data-remediation-state={item.remediationState}
+              className={`rounded-none px-2 py-0.5 font-afh text-afh-caption font-semibold ${
+                item.remediationState === "published"
+                  ? "bg-[var(--afh-color-green-bg)] text-[color:var(--afh-color-green)]"
+                  : "bg-[var(--afh-color-gold-bg)] text-[color:var(--afh-color-gold)]"
+              }`}
+            >
+              {remediationLabel}
+            </span>
+          )}
         </div>
       </Link>
     </article>

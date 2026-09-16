@@ -22,13 +22,44 @@ const en = {
     withdrawn: "Withdrawn",
     duplicate: "Duplicate",
   },
+  /**
+   * The disposition axis: what the atlas thinks of the remark, and nothing
+   * about the corpus. `accepted` used to read "accepted · page updated", which
+   * asserted a correction the moderator's click never produced.
+   */
   statusDescriptions: {
     open: "in progress — editorial review",
     under_review: "in progress — editorial review",
-    accepted: "accepted · page updated",
+    accepted: "accepted",
     rejected: "rejected",
     duplicate: "duplicate",
     withdrawn: "withdrawn",
+  },
+  /** The remediation axis: what changed in the corpus, and when. */
+  remediation: {
+    label: "Corpus state",
+    notStarted: {
+      state: "Correction not yet published",
+      body: (decidedOn: string) =>
+        `The atlas agreed with this report on ${decidedOn}. The page it concerns has not changed to date.`,
+    },
+    inProgress: {
+      state: "Correction under way",
+    },
+    published: {
+      state: (publishedOn: string) => `Corrected on ${publishedOn}`,
+      link: "See what changed",
+    },
+  },
+  /**
+   * The report page already quotes the reporter. Without a label the
+   * moderator's answer is a second quoted block, and nothing tells the reader
+   * which one is the atlas speaking.
+   */
+  moderation: {
+    responseLabel: "Moderation response",
+    signature: (decidedOn: string) =>
+      `${PRODUCT_NAME} moderation · ${decidedOn}`,
   },
   kinds: {
     inaccurate: "Inaccurate information",
@@ -90,10 +121,30 @@ const fr: PublicFlagsCopy = {
   statusDescriptions: {
     open: "en cours — examen par l'équipe éditoriale",
     under_review: "en cours — examen par l'équipe éditoriale",
-    accepted: "acceptée · page mise à jour",
+    accepted: "acceptée",
     rejected: "rejetée",
     duplicate: "doublon",
     withdrawn: "retirée",
+  },
+  remediation: {
+    label: "État du corpus",
+    notStarted: {
+      state: "Correction non encore publiée",
+      body: (decidedOn: string) =>
+        `L'atlas a donné raison à cette remarque le ${decidedOn}. La page concernée n'a pas changé à ce jour.`,
+    },
+    inProgress: {
+      state: "Correction en cours",
+    },
+    published: {
+      state: (publishedOn: string) => `Corrigée le ${publishedOn}`,
+      link: "Voir ce qui a changé",
+    },
+  },
+  moderation: {
+    responseLabel: "Réponse de la modération",
+    signature: (decidedOn: string) =>
+      `Modération ${PRODUCT_NAME} · ${decidedOn}`,
   },
   kinds: {
     inaccurate: "Information inexacte",
