@@ -1,7 +1,7 @@
 {
   "id": "PPL_YALUNKA",
   "nameMain": "Yalunka",
-  "languageFamilyId": "FLG_ATLANTIQUE",
+  "languageFamilyId": "FLG_MANDE",
   "currentCountries": ["GIN", "SLE", "MLI", "SEN"],
   "classificationStatus": "colonial-legacy",
   "content": {
@@ -18,10 +18,10 @@
         "Dialonka",
         "Dyalonke"
       ],
-      "originOfExonyms": "Le terme Dialonke ou Jalonke derive de Jalon (montagne en yalunka), suivi du suffixe -ke signifiant habitants de. Il signifie donc habitants des montagnes du Jallon (Fouta Djalon). Ce nom refere directement au territoire montagneux du Fouta Djallon en Guinee, berceau historique du peuple.",
-      "whyProblematic": "La multiplicite des graphies (Djallonke, Dialonke, Yalunka, Jalunka) reflete les translitera-tions differentes des explorateurs et administrateurs coloniaux francais et britanniques. Le terme peut aussi preter a confusion avec Djalonke, qui designe parfois l'ensemble des peuples pre-fulanis du Fouta Djallon.",
+      "originOfExonyms": "Le terme Dialonke ou Jalonke derive de Jalon, qui signifie montagne en langue yalunka, suivi du suffixe -ke signifiant habitants de. Il designe donc les habitants des montagnes du Jallon. Ce nom refere directement au territoire montagneux du Fouta Djallon en Guinee, berceau historique du peuple : Fouta est le mot par lequel les Fulbe designent une region qu'ils habitent, et le massif porte ainsi, en deux mots, le nom des deux peuples qui s'y sont succede.",
+      "whyProblematic": "La multiplicite des graphies (Djallonke, Dialonke, Yalunka, Jalunka) reflete les translitterations differentes des explorateurs et administrateurs coloniaux francais et britanniques. Le terme peut aussi preter a confusion avec Djalonke, qui designe parfois l'ensemble des peuples pre-fulanis du Fouta Djallon. L'origine du second element du nom Fouta Djallon est par ailleurs discutee : l'administrateur colonial Andre Arcin le faisait deriver du patronyme peul Diallo, lecture que les travaux ulterieurs ecartent au profit de Jalon, la montagne en langue yalunka.",
       "contemporaryUsage": "Yalunka est la forme standardisee en anglais. Dialonke est prefere en contexte francophone (Guinee). Les deux formes coexistent dans la litterature academique.",
-      "linguisticFamily": "FLG_ATLANTIQUE",
+      "linguisticFamily": "FLG_MANDE",
       "ethnoLinguisticGroup": "Mandingue (branche Mande du Niger-Congo)",
       "historicalRegion": "Fouta Djallon (Futa Jallon) : massif montagneux du centre de la Guinee, source des fleuves Gambie, Niger et Senegal",
       "currentCountries": ["GIN", "SLE", "MLI", "SEN"]
@@ -132,6 +132,31 @@
         "title": "Encyclopaedia Britannica – Yalunka",
         "url": "https://www.britannica.com/topic/Yalunka",
         "tier": "unverified"
+      },
+      {
+        "title": "Glottolog - Yalunka, classee dans la famille mande (mande, mande occidental, central, susu-yalunka)",
+        "url": "https://glottolog.org/resource/languoid/id/yalu1240",
+        "tier": "official"
+      },
+      {
+        "title": "N'Daou, Mohamed Saidou - Sangalan Oral Traditions as Philosophy and Ideologies - History in Africa, 26, 1999, p. 239-267",
+        "url": "https://doi.org/10.2307/3172143",
+        "tier": "referenced"
+      },
+      {
+        "title": "Fyle, C. Magbaily - The Solima Yalunka Kingdom: Pre-colonial Politics, Economics and Society - Nyakon Publishers, 1979, p. 6",
+        "url": null,
+        "tier": "referenced"
+      },
+      {
+        "title": "Orange, Didier - Hydroclimatologie du Fouta Djalon et dynamique actuelle d'un vieux paysage lateritique (Afrique de l'Ouest) - Sciences Geologiques, memoire 93, Strasbourg, 1992",
+        "url": "https://www.persee.fr/doc/sgeol_0302-2684_1992_mon_93_1",
+        "tier": "referenced"
+      },
+      {
+        "title": "Fieloux, Michele - compte rendu de Thierno Diallo, Les institutions politiques du Fouta Dyalon au XIXe siecle (Dakar, IFAN, 1972) - Cahiers d'Etudes africaines, 14 (54), 1974, p. 402-403",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1974_num_14_54_2655_t1_0402_0000_2",
+        "tier": "referenced"
       }
     ]
   },

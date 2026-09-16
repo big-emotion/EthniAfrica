@@ -2490,7 +2490,7 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
  * snapshot taken before 2026-02-04, or re-sources the claim. At 0, delete the
  * ratchet and make any live Factbook URL a plain error.
  */
-export const RETIRED_CIA_FACTBOOK_URL_CEILING = 133;
+export const RETIRED_CIA_FACTBOOK_URL_CEILING = 132;
 
 const LIVE_CIA_FACTBOOK =
   /cia\.gov\/(?:library\/publications\/)?the-world-factbook/i;
@@ -4778,7 +4778,7 @@ const STRICT_MODEL_KINDS: Record<
 export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   Record<StrictModelKind, number>
 > = {
-  peuple: 7074,
+  peuple: 7064,
   famille_linguistique: 108,
   pays: 13,
 };
