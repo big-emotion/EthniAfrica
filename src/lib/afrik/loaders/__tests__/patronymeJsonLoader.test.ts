@@ -38,6 +38,7 @@ function createSupabaseDouble(options: SupabaseDoubleOptions = {}) {
     afrik_patronyme_peoples: [],
     afrik_patronyme_countries: [],
     afrik_patronyme_persons: [],
+    afrik_patronyme_bearers: [],
     afrik_patronyme_alliances: [],
     name_records: [],
   };
@@ -173,6 +174,7 @@ function createSupabaseDouble(options: SupabaseDoubleOptions = {}) {
       afrik_patronyme_peoples: ["patronyme_id", "people_id"],
       afrik_patronyme_countries: ["patronyme_id", "country_id"],
       afrik_patronyme_persons: ["patronyme_id", "person_id"],
+      afrik_patronyme_bearers: ["patronyme_id", "display_name"],
       afrik_patronyme_alliances: ["name_id_a", "name_id_b"],
     };
     if (keyColumns[table]) {
@@ -469,6 +471,75 @@ describe("patronymeJsonLoader", () => {
     expect(database.rows.afrik_patronyme_alliances).toContainEqual(
       expect.objectContaining({ alliance_type: "joking_kinship" })
     );
+  });
+
+  // No fiche in the corpus carries a personId: persons cannot be authored
+  // (ARCH-018 defines no person model and no personnes/ directory), so every
+  // bearer the editorial work records names its subject inline.
+  // @req REQ-133
+  it("projects a bearer named only by displayName", async () => {
+    const database = createSupabaseDouble();
+    const dossier = validPatronymeFiche({
+      bearers: [
+        {
+          status: "deceased",
+          displayName: "Soundiata Keïta",
+          sourceRefs: [SOURCE_KEY],
+        },
+      ],
+    }) as PatronymeDossier;
+
+    const report = await loadPatronymes(database.client as never, {
+      dossiers: [dossier, secondDossier()],
+      errors: [],
+    });
+
+    expect(report.errors).toEqual([]);
+    expect(report.namedBearerLinks).toBe(1);
+    expect(database.rows.afrik_patronyme_bearers).toEqual([
+      {
+        patronyme_id: "PAT_KEITA",
+        display_name: "Soundiata Keïta",
+        status: "deceased",
+      },
+    ]);
+  });
+
+  // @req REQ-133
+  it("announces named bearers in a preview and writes each of them once", async () => {
+    const database = createSupabaseDouble();
+    const batch = {
+      dossiers: [
+        validPatronymeFiche({
+          bearers: [
+            {
+              status: "deceased",
+              displayName: "Soundiata Keïta",
+              sourceRefs: [SOURCE_KEY],
+            },
+            {
+              status: "deceased",
+              displayName: "Fakoli Doumbia",
+              sourceRefs: [SOURCE_KEY],
+            },
+          ],
+        }) as PatronymeDossier,
+        secondDossier(),
+      ],
+      errors: [],
+    };
+
+    const preview = await loadPatronymes(database.client as never, batch, {
+      dryRun: true,
+    });
+    expect(preview).toMatchObject({ namedBearerLinks: 2, errors: [] });
+    expect(database.writes).toEqual([]);
+
+    await loadPatronymes(database.client as never, batch);
+    const replay = await loadPatronymes(database.client as never, batch);
+
+    expect(replay.errors).toEqual([]);
+    expect(database.rows.afrik_patronyme_bearers).toHaveLength(2);
   });
 
   // The loaders once carried private copies of the same writers; this pins

@@ -14,6 +14,7 @@ function baseAggregate(
     associatedPeoples: [],
     associatedCountries: [],
     bearers: [],
+    namedBearers: [],
     alliances: [],
     ...overrides,
   };
@@ -130,5 +131,44 @@ describe("serializePatronyme", () => {
     );
 
     expect(result.bearers.map((b) => b.id)).toEqual(["PER_A", "PER_B"]);
+  });
+
+  // The join table has no editorial order to preserve — its primary key is
+  // (patronyme_id, display_name) and nothing ranks the rows — so the payload
+  // orders them itself rather than publishing whatever Postgres returned.
+  // @req REQ-133
+  it("sorts named bearers by the name the fiche states", () => {
+    const result = serializePatronyme(
+      baseAggregate({
+        namedBearers: [
+          { displayName: "Soundiata Keïta", status: "deceased" },
+          { displayName: "Modibo Keïta", status: "deceased" },
+        ],
+      })
+    );
+
+    expect(result.namedBearers.map((bearer) => bearer.displayName)).toEqual([
+      "Modibo Keïta",
+      "Soundiata Keïta",
+    ]);
+  });
+
+  // @req REQ-133
+  it("strips a named bearer down to displayName and status (DEC-040)", () => {
+    const dirtyNamedBearer = {
+      displayName: "Soundiata Keïta",
+      status: "deceased",
+      personId: "PER_SOUNDIATA",
+      peopleLinks: [{ peopleId: "PPL_MALINKE" }],
+    } as unknown as PatronymeAggregate["namedBearers"][number];
+
+    const result = serializePatronyme(
+      baseAggregate({ namedBearers: [dirtyNamedBearer] })
+    );
+
+    expect(Object.keys(result.namedBearers[0]).sort()).toEqual([
+      "displayName",
+      "status",
+    ]);
   });
 });

@@ -3,6 +3,7 @@ import type {
   PatronymeAllianceSummary,
   PatronymeBearerSummary,
   PatronymeCountrySummary,
+  PatronymeNamedBearer,
   PatronymePeopleSummary,
   PublicPatronyme,
 } from "@/api/v2/schemas/patronymes";
@@ -54,6 +55,25 @@ function serializeBearer(
 }
 
 /**
+ * Rebuilt field-by-field for the same reason as `serializeBearer`, and
+ * ordered by the name itself: `afrik_patronyme_bearers` ranks nothing — its
+ * primary key is (patronyme_id, display_name) — so an unsorted payload would
+ * publish whatever order Postgres happened to return.
+ */
+function serializeNamedBearer(
+  bearer: PatronymeNamedBearer
+): PatronymeNamedBearer {
+  return { displayName: bearer.displayName, status: bearer.status };
+}
+
+function compareNamedBearers(
+  left: PatronymeNamedBearer,
+  right: PatronymeNamedBearer
+): number {
+  return left.displayName.localeCompare(right.displayName, "fr");
+}
+
+/**
  * Alliances keep the corpus's order: a curator lists the best-attested pact
  * first, and that ranking is editorial, not alphabetical.
  */
@@ -82,6 +102,9 @@ export function serializePatronyme(
       compareCountries
     ),
     bearers: [...aggregate.bearers].sort(compareBearers).map(serializeBearer),
+    namedBearers: [...aggregate.namedBearers]
+      .sort(compareNamedBearers)
+      .map(serializeNamedBearer),
     alliances: aggregate.alliances.map(serializeAlliance),
   };
 }

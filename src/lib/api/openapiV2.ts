@@ -1380,6 +1380,23 @@ const options: swaggerJsdoc.Options = {
                 required: ["id", "fullName", "roleCategory"],
               },
             },
+            namedBearers: {
+              type: "array",
+              description:
+                "Bearers the corpus can only name, because no person record exists for them — they carry a name and a status, never an id, a role or a biography, which is why they are a separate list and not a `bearers` entry with empty fields. Only a bearer the corpus records as dead is served: a family name is an ethnic marker, so publishing a living one would publish their ethnic origin (DEC-040, RGPD art. 9).",
+              items: {
+                type: "object",
+                properties: {
+                  displayName: {
+                    type: "string",
+                    minLength: 1,
+                    example: "Arisekola Alao",
+                  },
+                  status: { type: "string", enum: ["deceased"] },
+                },
+                required: ["displayName", "status"],
+              },
+            },
             alliances: {
               type: "array",
               description:
@@ -1411,6 +1428,7 @@ const options: swaggerJsdoc.Options = {
             "associatedPeoples",
             "associatedCountries",
             "bearers",
+            "namedBearers",
             "alliances",
           ],
         },

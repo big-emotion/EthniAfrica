@@ -51,6 +51,7 @@ export interface PatronymeLoadReport {
   peopleLinks: number;
   countryLinks: number;
   bearerLinks: number;
+  namedBearerLinks: number;
   alliances: number;
   errors: string[];
 }
@@ -68,6 +69,7 @@ function createReport(batch: PatronymeBatch): PatronymeLoadReport {
     peopleLinks: 0,
     countryLinks: 0,
     bearerLinks: 0,
+    namedBearerLinks: 0,
     alliances: 0,
     errors: [...batch.errors],
   };
@@ -312,17 +314,48 @@ export function preflightPatronymeBatch(
   return errors;
 }
 
+interface NamedBearer {
+  displayName: string;
+  status: string;
+}
+
+/**
+ * A bearer the corpus can only name in prose. ARCH-018 defines no person
+ * model and no dataset directory to author one, so a PER_ identifier cannot
+ * be minted from a fiche and every bearer the editorial work records carries
+ * a displayName instead. Deduplicated by that name: one bearer is one row,
+ * however many citations mention them.
+ */
+function namedBearers(dossier: PatronymeDossier): NamedBearer[] {
+  const byDisplayName = new Map<string, NamedBearer>();
+  for (const bearer of dossier.bearers) {
+    if (!("displayName" in bearer) || !bearer.displayName) continue;
+    if (byDisplayName.has(bearer.displayName)) continue;
+    byDisplayName.set(bearer.displayName, {
+      displayName: bearer.displayName,
+      status: bearer.status,
+    });
+  }
+  return Array.from(byDisplayName.values());
+}
+
 function plannedProjectionCounts(
   dossiers: PatronymeDossier[]
 ): Pick<
   PatronymeLoadReport,
-  "spellings" | "peopleLinks" | "countryLinks" | "bearerLinks" | "alliances"
+  | "spellings"
+  | "peopleLinks"
+  | "countryLinks"
+  | "bearerLinks"
+  | "namedBearerLinks"
+  | "alliances"
 > {
   const alliances = new Set<string>();
   let spellings = 0;
   let peopleLinks = 0;
   let countryLinks = 0;
   let bearerLinks = 0;
+  let namedBearerLinks = 0;
 
   for (const dossier of dossiers) {
     spellings += dossier.spellings.length;
@@ -335,6 +368,7 @@ function plannedProjectionCounts(
         "personId" in bearer && bearer.personId ? [bearer.personId] : []
       )
     ).size;
+    namedBearerLinks += namedBearers(dossier).length;
     dossier.alliances.forEach(({ targetPatronymeId }) => {
       alliances.add([dossier.id, targetPatronymeId].sort().join(":"));
     });
@@ -345,6 +379,7 @@ function plannedProjectionCounts(
     peopleLinks,
     countryLinks,
     bearerLinks,
+    namedBearerLinks,
     alliances: alliances.size,
   };
 }
@@ -402,7 +437,8 @@ async function upsertJoin(
   table:
     | "afrik_patronyme_peoples"
     | "afrik_patronyme_countries"
-    | "afrik_patronyme_persons",
+    | "afrik_patronyme_persons"
+    | "afrik_patronyme_bearers",
   row: Record<string, string>,
   onConflict: string
 ): Promise<string | null> {
@@ -625,6 +661,22 @@ export async function loadPatronymes(
       );
       if (error) report.errors.push(`${dossier.id} ↔ ${personId}: ${error}`);
       else report.bearerLinks += 1;
+    }
+
+    for (const bearer of namedBearers(dossier)) {
+      const error = await upsertJoin(
+        supabase,
+        "afrik_patronyme_bearers",
+        {
+          patronyme_id: dossier.id,
+          display_name: bearer.displayName,
+          status: bearer.status,
+        },
+        "patronyme_id,display_name"
+      );
+      if (error)
+        report.errors.push(`${dossier.id} ↔ ${bearer.displayName}: ${error}`);
+      else report.namedBearerLinks += 1;
     }
   }
 

@@ -24,6 +24,7 @@ const camara: PublicPatronyme = {
   associatedPeoples: [],
   associatedCountries: [],
   bearers: [],
+  namedBearers: [],
   alliances: [],
   content: {
     nameMain: "Camara",

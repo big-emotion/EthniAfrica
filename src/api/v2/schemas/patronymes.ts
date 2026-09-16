@@ -76,6 +76,50 @@ export type PatronymeBearerSummary = z.infer<
 >;
 
 /**
+ * The bearer statuses a public payload may carry, and the only place that
+ * list is written.
+ *
+ * DEC-040 and RGPD art. 9: a family name is an ethnic marker, so publishing
+ * a living person under one publishes their ethnic origin. The strict fiche
+ * model knows three statuses — deceased, aggregated, living_self_identified
+ * — and only the first may be served by name. `afrik_patronyme_bearers`
+ * (migration 092) stores the status as plain TEXT, so nothing below this
+ * constant narrows it: the service filters its query and its projection on
+ * this list, and widening the guarantee means editing this line, not a
+ * `where` clause.
+ */
+// @req REQ-133
+export const PUBLISHABLE_BEARER_STATUSES = ["deceased"] as const;
+
+export type PublishableBearerStatus =
+  (typeof PUBLISHABLE_BEARER_STATUSES)[number];
+
+// @req REQ-133
+export function isPublishableBearerStatus(
+  status: string
+): status is PublishableBearerStatus {
+  return (PUBLISHABLE_BEARER_STATUSES as readonly string[]).includes(status);
+}
+
+/**
+ * A bearer the corpus can only name.
+ *
+ * Kept apart from `bearers` rather than merged into it: a `PatronymeBearerSummary`
+ * promises an `id` and a `roleCategory`, and this bearer has neither — no
+ * person record exists for them (ARCH-018 defines no person model), which is
+ * exactly why they need their own table and their own entry. Merging would
+ * have meant minting an identifier the corpus never wrote and an empty role,
+ * i.e. telling a consumer that a lookup exists when none does.
+ */
+// @req REQ-133
+export const patronymeNamedBearerSchema = z.object({
+  displayName: z.string().min(1),
+  status: z.enum(PUBLISHABLE_BEARER_STATUSES),
+});
+
+export type PatronymeNamedBearer = z.infer<typeof patronymeNamedBearerSchema>;
+
+/**
  * A name this name is allied with, resolved to something a reader can read.
  *
  * The corpus writes `alliances[].targetPatronymeId`. Forwarding the id alone
@@ -107,6 +151,7 @@ export const publicPatronymeSchema = z.object({
   associatedPeoples: z.array(patronymePeopleSummarySchema),
   associatedCountries: z.array(patronymeCountrySummarySchema),
   bearers: z.array(patronymeBearerSummarySchema),
+  namedBearers: z.array(patronymeNamedBearerSchema),
   alliances: z.array(patronymeAllianceSummarySchema),
 });
 
