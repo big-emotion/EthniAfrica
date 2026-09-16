@@ -775,7 +775,6 @@ s'écrit ici d'abord, jamais dans une carte.
 | un pays et les peuples qui y vivent — *validée le 2026-09-14* | « {Pays}, c'est {n} peuples. » — *sauf sous-cas « qui a nommé ce pays » ou « le mythe du surnom », voir ci-dessous* | « peuples. » | « Ces peuples n'ont pas été rassemblés. » | « rassemblés. » | « C'est la carte qui a été dessinée autour d'eux. » |
 | des villes, des lieux | un registre de la banque ci-dessous | celui du registre | « Cette ville n'a pas changé de nom. » | « nom. » | « On l'a rebaptisée. » |
 | une projection, une carte | un registre de la banque ci-dessous | celui du registre | « La carte ne mentait pas. Elle ne disait pas tout. » | « tout. » | « On l'a redessinée. » |
-| le nom d'un pays | un registre de la banque ci-dessous | celui du registre | « Ce pays ne s'est pas renommé. » | « renommé. » | « On l'a rebaptisé. » — *dérivé de la ligne des villes le 2026-09-13, à valider* |
 | une langue, une famille | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas disparu. » | « disparu. » | « C'est la case qu'on lui avait donnée qui a disparu. » — *fixé le 2026-09-14 par l'opérateur, à l'écriture de « famille-linguistique-quatre-familles »* |
 | une langue accusée d'invention coloniale — le mythe porte sur la langue elle-même, jamais sur son nom, qui peut rester un débat sourcé — *décidé par l'opérateur le 2026-09-16, pour le sujet `lingala-invente-par-les-belges`* | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas été inventée. » | « inventée. » | « Elle existait déjà — on lui a seulement donné un nom écrit. » — *distinct de la ligne « une langue, une famille » ci-dessus : celle-ci porte la légitimité d'une classification qui ne disparaît pas, celle-là un mythe d'invention coloniale que l'existence antérieure de la langue dément, indépendamment de tout débat sur son nom écrit* |
 | une famille de langues, regroupant plusieurs peuples sous un seul nom | un registre de la banque ci-dessous | celui du registre | « Cette famille n'est pas un peuple. » | « peuple. » | « On lui a donné un nom, par-dessus des peuples qui avaient déjà le leur. » — *décidé par l'opérateur le 2026-09-14, pour le sujet Mandé — distinct de la ligne « une langue, une famille » ci-dessus : celle-ci porte la légitimité d'une classification, celle-là la confusion entre un nom de famille et un nom de peuple* |
@@ -814,6 +813,22 @@ reste le sujet du corps :
 
 Cette ligne est **validée par l'opérateur (2026-09-14)**, après un premier passage sur
 « qui-a-nomme-la-cote-divoire » qui l'avait déjà appliquée sur cette base.
+
+**C'est aussi la ligne d'un lot sur le nom d'un pays** : il n'y en a pas d'autre, et il
+ne faut pas en dériver une. La table en a porté une, « le nom d'un pays », clôturant sur
+« Ce pays ne s'est pas renommé. » / « On l'a rebaptisé. » — dérivée de la ligne des villes
+le 2026-09-13, jamais validée, et **retirée le 2026-09-16 parce que le premier sujet qui
+s'y est présenté la contredit**. Le Burkina Faso s'est renommé, lui-même, en 1984 ; le
+Ghana l'avait fait en 1957 et le Bénin en 1975, et ce dernier est déjà publié. La clôture
+aurait imprimé un fait faux sur trois sujets au moins.
+
+La dérivation était fautive dans son principe, pas seulement dans ses dates : une ville
+est rebaptisée **par** quelqu'un, et le renversement de sa ligne tient parce que l'acteur
+est extérieur. Un pays indépendant qui change de nom est l'acteur de sa propre phrase —
+c'est même, sur ces sujets, tout l'intérêt. Une clôture qui le nie enlève au lot ce qu'il
+était venu montrer. Un lot sur le nom d'un pays prend donc la ligne ci-dessus, dont le
+renversement — les peuples étaient là avant le nom, quel qu'il soit et quel qu'en soit
+l'auteur — reste vrai que le pays se soit renommé ou non.
 
 **Sous-cas : un lot centré sur qui a nommé le pays — l'ordre s'inverse, et le patron
 d'ouverture ci-dessus ne s'applique pas.** Mesuré le 2026-09-14 sur ce même sujet : une
