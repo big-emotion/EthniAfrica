@@ -40,7 +40,7 @@
       ],
       "unificationsOrDivisions": "Les Vai furent a une epoque des negociants actifs dans la traite des esclaves. Sous la direction de la famille royale Massaquoi, ils constituerent un groupe politique coherent. Momulu Massaquoi (1870-1938) fut reconnu roi des Vai et diplomate liberien. La penetration coloniale britannique au Liberia et en Sierra Leone les integra progressivement dans ces Etats modernes.",
       "externalInfluences": "Influence mandinka depuis les origines (langue, islam). Contacts avec les marchands europeens (portugais, neerlandais, britanniques) a partir du 15e siecle. Islamisation progressive a partir du 16e siecle via les marchands mandinka. Integration dans l'Etat liberien au 19e siecle.",
-      "majorHistoricalEvents": "Invention du syllabaire vai vers 1833 par Momolu Duwalu Bukele, l'un des rares systemes d'ecriture indigenes inventes en Afrique subsaharienne. En 1834, les missionnaires americains et le philologue Sigismund Wilhelm Koelle signalerent l'existence de ce systeme. En 1962, le Comite de standardisation de l'Universite du Liberia normalisa le syllabaire. En 2003, le Nouveau Testament fut publie en script vai."
+      "majorHistoricalEvents": "Invention du syllabaire vai vers 1833 par Momolu Duwalu Bukele, l'un des rares systemes d'ecriture indigenes inventes en Afrique subsaharienne. En 1834, les missionnaires americains John Leighton Wilson et Wynkoop en signalerent l'existence, dans le plus ancien echantillon connu du syllabaire aujourd'hui conserve a l'universite Harvard. En 1849, le missionnaire et philologue allemand Sigismund Wilhelm Koelle rencontra Bukele au Cap Mount et publia le premier recit detaille de l'invention du systeme. En 1962, le Comite de standardisation de l'Universite du Liberia normalisa le syllabaire. En 2003, le Nouveau Testament fut publie en script vai."
     },
     "organization": {
       "traditionalPoliticalSystem": "Organisation en chefferies dirigees par des chefs de clan (notamment le clan Camara et la famille Massaquoi). La famille Massaquoi detint le titre de roi des Vai jusqu'au 20e siecle. Governance par conseils d'anciens au niveau villageois.",
@@ -56,11 +56,11 @@
         "Dialecte liberien — Grand Cape Mount County, variete principale",
         "Dialecte sierra-leonais — district de Pujehun, variete minoritaire"
       ],
-      "vehicularRole": "Le vai est parle par environ 104 000 personnes au Liberia et 15 500 en Sierra Leone (Ethnologue, 2024). Il est remarquable pour son systeme d'ecriture indigene — le syllabaire vai — invente vers 1833 par Momolu Duwalu Bukele, comptant 212 symboles representant chacun une syllabe. C'est l'un des rares systemes d'ecriture subsahariens indigenes non derive de l'alphabet latin ou arabe. Le syllabaire fut standardise par le Comite de standardisation de l'Universite du Liberia en 1962 et encode dans Unicode depuis 2009. L'anglais sert de langue officielle au Liberia et vehiculaire dans les contextes formels."
+      "vehicularRole": "Le vai est parle par environ 104 000 personnes au Liberia et 15 500 en Sierra Leone (Ethnologue, 2024). Il est remarquable pour son systeme d'ecriture indigene — le syllabaire vai — invente vers 1833 par Momolu Duwalu Bukele, et comptant environ 205 graphemes dans sa forme standardisee actuelle. C'est l'un des rares systemes d'ecriture subsahariens indigenes non derive de l'alphabet latin ou arabe. Le syllabaire fut standardise par le Comite de standardisation de l'Universite du Liberia en 1962 et encode dans Unicode depuis 2008 (version 5.1). L'anglais sert de langue officielle au Liberia et vehiculaire dans les contextes formels."
     },
     "culture": {
       "majorRites": "Societe initiatique Poro (hommes) : certains chercheurs situent dans le territoire vai l'origine du Poro, societe secrete masculine repandue dans toute l'Afrique de l'Ouest. L'initiation au Poro constitue le rite de passage majeur vers l'age adulte masculin. Les Vai pratiquent egalement des ceremonies funeraires au cours desquelles des vetements et de la nourriture sont deposes pres des tombes des defunts, afin d'accompagner l'ame du mort. Trois types d'enseignement structurent l'entree dans l'age adulte : l'ecole buissonniere (apprentissage culturel vai et techniques de survie, duree de quatre a cinq ans), l'ecole anglophone, et l'ecole coranique (apprentissage de l'arabe classique sous la direction de l'imam du village).",
-      "symbols": "Le syllabaire vai (Vai script), systeme d'ecriture syllabique indigene compte 212 symboles uniques. Ce systeme, qui a connu une renaissance grace aux technologies numeriques contemporaines, constitue le symbole identitaire le plus distinctif du peuple vai en Afrique. L'arbre palmier occupe une place symbolique centrale dans la vie vai : il fournit noix, beurre, vin, carburant, savon et materiaux pour la vannerie, et n'est jamais abattu lors du defrichage des terres agricoles.",
+      "symbols": "Le syllabaire vai (Vai script), systeme d'ecriture syllabique indigene, compte environ 205 graphemes dans sa forme standardisee actuelle. Ce systeme, qui a connu une renaissance grace aux technologies numeriques contemporaines, constitue le symbole identitaire le plus distinctif du peuple vai en Afrique. L'arbre palmier occupe une place symbolique centrale dans la vie vai : il fournit noix, beurre, vin, carburant, savon et materiaux pour la vannerie, et n'est jamais abattu lors du defrichage des terres agricoles.",
       "artsAndMusic": "Les Vai sont reputes pour leurs talents de charpentiers, tisserands et tailleurs. Ils fabriquent des objets artisanaux de valeur, bien que les biens importes tendent a les supplanter. La musique est partie integrante de la vie vai : ils jouent de nombreux instruments et executent des danses lors des occasions ceremoniales. Le tissage est une activite artisanale importante pour les deux sexes. Les Vai cultivent aussi le cacao, le cafe et le coton, dont les produits sont echanges dans des marches locaux.",
       "spiritualities": "Les Vai sont majoritairement musulmans et pratiquent des traditions islamiques depuis des siecles, notamment l'etude du Coran, adoptee sous l'influence des marchands mandinka a partir du 16e siecle. Cette pratique islamique coexiste avec des croyances traditionnelles en des entites surnaturelles : un dieu supreme, createur et controleur de la Terre, manifeste a travers les esprits et la nature, considere trop distant pour etre adore directement, et dont l'acces se fait par l'intermediaire d'un medium spirituel. Les Vai croient etre entoures d'esprits capables de prendre la forme d'etres vivants ou d'objets, avec le pouvoir de causer du mal. Le caiman est associe aux esprits malveillants. Des pratiques chamaniques et de sorcellerie demeurent repandues."
     },
@@ -119,8 +119,23 @@
         "tier": "needs_review"
       },
       {
-        "title": "Kelly, Piers. The Vai script — origin and development. Annual Review of Linguistics, 2018",
-        "url": "https://www.annualreviews.org/doi/abs/10.1146/annurev-linguistics-011718-012348",
+        "title": "Tykhostup, Olena & Kelly, Piers. A Diachronic Comparison of the Vai Script of Liberia (1834-2005). Journal of Open Humanities Data, 2018",
+        "url": "https://openhumanitiesdata.metajnl.com/articles/10.5334/johd.10",
+        "tier": "referenced"
+      },
+      {
+        "title": "Kelly, Piers; Winters, James; Miton, Helena & Morin, Olivier. The Predictable Evolution of Letter Shapes: An Emergent Script of West Africa Recapitulates Historical Change in Writing Systems. Current Anthropology, 2021",
+        "url": "https://www.journals.uchicago.edu/doi/10.1086/717779",
+        "tier": "referenced"
+      },
+      {
+        "title": "Koelle, Sigismund Wilhelm. Narrative of an Expedition into the Vy Country of West Africa, and the Discovery of a System of Syllabic Writing, Recently Invented by the Natives of the Vy Tribe. Church Missionary House, 1849",
+        "url": null,
+        "tier": "referenced"
+      },
+      {
+        "title": "Tuchscherer, Konrad & Hair, P.E.H. Cherokee and West Africa: Examining the Origins of the Vai Script. History in Africa, 2002",
+        "url": "https://www.cambridge.org/core/journals/history-in-africa/article/abs/cherokee-and-west-africa-examining-the-origins-of-the-vai-script/5123DB37F287706DF5F0EAB6E0A3B283",
         "tier": "referenced"
       }
     ]

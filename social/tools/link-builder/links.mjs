@@ -18,13 +18,21 @@
 
 export const SITE = "https://ethniafrica.com";
 
-/** The five profiles that carry a link, in the order the template lists them. */
+/**
+ * The six profiles that carry a link, in the order the template lists them.
+ *
+ * Lowercase slugs: each one becomes a `utm_source` value, and Plausible groups
+ * by the string it is given. `x` is the platform's own name and stays one
+ * letter — a source column is read by machines, not by someone wondering which
+ * network a capital X meant.
+ */
 export const NETWORKS = [
   "youtube",
   "tiktok",
   "instagram",
   "facebook",
   "linkedin",
+  "x",
 ];
 
 /**
@@ -42,7 +50,7 @@ export const CONTENTS = [
 ];
 
 /**
- * A campaign slug has to survive being retyped on five platforms by a human in
+ * A campaign slug has to survive being retyped on six platforms by a human in
  * a hurry. Accents, capitals and spaces are what make two spellings of one
  * subject, and two spellings are two campaigns that never add up again.
  */
@@ -72,7 +80,7 @@ export function tag(path, network, campaign, content) {
 }
 
 /**
- * The five to seven links one subject needs: one per network in the format the
+ * The six to eight links one subject needs: one per network in the format the
  * piece actually is, plus the two placements that are their own measurement —
  * the Instagram story, and the pinned YouTube comment that carries the link the
  * description cannot make clickable.
@@ -90,7 +98,7 @@ export function buildLinks({ path, campaign, content = "video" }) {
   }));
 }
 
-/** The five bio links, which only a human can install. */
+/** The six bio links, which only a human can install. */
 export function buildBioLinks(path = "/fr") {
   return NETWORKS.map((network) => ({
     network,

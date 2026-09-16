@@ -8,6 +8,7 @@ import {
   InstagramGlyph,
   LinkedinGlyph,
   TiktokGlyph,
+  XGlyph,
   YoutubeGlyph,
 } from "@/components/layout/SocialGlyphs";
 import { useConsent } from "@/hooks/use-consent";
@@ -56,12 +57,13 @@ const SOCIAL_NETWORKS: ReadonlyArray<{
     Glyph: FacebookGlyph,
     href: "https://www.facebook.com/profile.php?id=61593966096643",
   },
-  // The company slug carries a typographic apostrophe (U+2019), kept
-  // percent-encoded so the URL survives copy, log and redirect untouched.
+  // The page was renamed on 2026-09-16 and its public URL is the product name
+  // now: the old slug, and the typographic apostrophe (U+2019) it had to carry
+  // percent-encoded, are both gone.
   {
     name: "LinkedIn",
     Glyph: LinkedinGlyph,
-    href: "https://www.linkedin.com/company/dictionnaire-des-ethnies-d%E2%80%99afrique/",
+    href: "https://www.linkedin.com/company/ethniafrica/",
   },
   {
     name: "Instagram",
@@ -77,6 +79,11 @@ const SOCIAL_NETWORKS: ReadonlyArray<{
     name: "YouTube",
     Glyph: YoutubeGlyph,
     href: "https://www.youtube.com/channel/UCcJiwOQJ7-ajWnYFTDTOt0A",
+  },
+  {
+    name: "X",
+    Glyph: XGlyph,
+    href: "https://x.com/ethniafrica",
   },
 ];
 
@@ -268,10 +275,10 @@ export function SiteFooter({ language }: SiteFooterProps) {
               {directory.followHeading}
             </p>
             {/* Capped at three marks' width — 3 × 44px hit areas plus the two
-                  gaps between them — so a fourth and fifth mark wrap onto a
+                  gaps between them — so the fourth mark onwards wrap onto a
                   second row instead of stretching the line. `flex-wrap` then
-                  justifies each row on its own axis, so both the row of three
-                  and the row of two centre independently under the heading. */}
+                  justifies each row on its own axis, so both rows of three
+                  centre independently under the heading. */}
             {/* Wraps for the same reason it did before: at 200% text zoom
                   each 44px target measures 88px, and an uncapped row would
                   still overrun the viewport. WCAG 1.4.10 forbids the

@@ -291,6 +291,23 @@ _FORMAT_KEYS = {
 }
 
 
+def reseaux(fmt_key):
+    """Which networks receive a format, in §1 bis's own row order.
+
+    Read straight from the "Reçoit" column rather than a second, hand-kept list:
+    §1 bis is revised, not broken (« la table se révise, elle ne s'enfreint pas »),
+    and a revised line must not need a matching edit here to take effect.
+    """
+    cibles = []
+    for row in _tables()["1 bis. Un format par réseau"]:
+        reseau, recoit = row[0], row[1]
+        if reseau == "Réseau":
+            continue
+        if fmt_key in recoit.lower():
+            cibles.append(reseau.split(" (")[0].strip())
+    return cibles
+
+
 def fmt(key):
     """One of the three outputs of §1: pixels, scale factor and bottom margin."""
     for row in _tables()["1. Formats"]:

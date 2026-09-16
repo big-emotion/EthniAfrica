@@ -167,7 +167,7 @@ describe("the footer directory — the site's rubrics under the fiche (REQ-046)"
 
     expect(linkedin).toHaveAttribute(
       "href",
-      "https://www.linkedin.com/company/dictionnaire-des-ethnies-d%E2%80%99afrique/"
+      "https://www.linkedin.com/company/ethniafrica/"
     );
     expect(linkedin).toHaveAttribute("target", "_blank");
     expect(linkedin).toHaveAttribute("rel", "noopener noreferrer");
@@ -189,15 +189,18 @@ describe("the footer directory — the site's rubrics under the fiche (REQ-046)"
       "Instagram",
       "TikTok",
       "YouTube",
+      "X",
     ]) {
+      // Anchored at the start of the name: unanchored, the one-letter "X"
+      // would be satisfied by any label that merely contains an x.
       expect(
-        within(follow).getByLabelText(new RegExp(network))
+        within(follow).getByLabelText(new RegExp(`^${network}\\b`))
       ).toBeInTheDocument();
     }
   });
 
   /**
-   * Instagram, TikTok, YouTube and finally Facebook opened after LinkedIn —
+   * Instagram, TikTok, YouTube, Facebook and finally X opened after LinkedIn —
    * each becomes a live link the same way LinkedIn did, opening off-site
    * rather than losing the reader's place in the corpus.
    */
@@ -207,6 +210,7 @@ describe("the footer directory — the site's rubrics under the fiche (REQ-046)"
     ["TikTok", "https://www.tiktok.com/@ethniafrica"],
     ["YouTube", "https://www.youtube.com/channel/UCcJiwOQJ7-ajWnYFTDTOt0A"],
     ["Facebook", "https://www.facebook.com/profile.php?id=61593966096643"],
+    ["X", "https://x.com/ethniafrica"],
   ])("opens the %s mark on the project's account", (name, href) => {
     render(<SiteFooter language="fr" />);
 
@@ -220,9 +224,10 @@ describe("the footer directory — the site's rubrics under the fiche (REQ-046)"
   });
 
   /**
-   * Five marks in a row ran wider than three, so the row is capped to three
+   * Six marks in a row run far wider than three, so the row is capped to three
    * marks' width and left to wrap — `flex-wrap` then justifies each of the
-   * two resulting rows on its own axis, centring both under the heading.
+   * two resulting rows of three on its own axis, centring both under the
+   * heading.
    */
   // @req REQ-046
   it("caps the follow row at three marks so a fourth wraps onto a centred second row", () => {

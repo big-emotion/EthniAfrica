@@ -62,6 +62,7 @@ describe("audience skill contract", () => {
       "TikTok",
       "Instagram",
       "Facebook",
+      "X (Twitter)",
     ]);
     for (const network of AUDIENCE_NETWORKS) {
       expect(issues).toContainEqual({
@@ -126,7 +127,7 @@ describe("audience skill contract", () => {
     // On 2026-09-15 a run skipped Instagram, TikTok and Facebook because the
     // audit had read them the day before, and planned on a Facebook reel it
     // could not see: 21 211 views in fourteen hours. The operator ruled that
-    // every run reads all five networks.
+    // every run reads all six networks.
     const strategist = "ethniafrica-content-strategist";
     const issues = checkAudienceSkillContract(projectRoot, {
       [strategist]: `---\nname: ${strategist}\n---\nReads ${AUDIENCE_REPORT_DIR}/ from ${AUDIENCE_PRODUCER}, then YouTube when stale.`,
@@ -138,6 +139,7 @@ describe("audience skill contract", () => {
       "Instagram",
       "TikTok",
       "Facebook",
+      "X (Twitter)",
     ]);
     for (const network of STRATEGIST_NETWORKS.filter((n) => n !== "YouTube")) {
       expect(issues).toContainEqual({

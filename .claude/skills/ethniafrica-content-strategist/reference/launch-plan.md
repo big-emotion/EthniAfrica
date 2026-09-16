@@ -64,8 +64,10 @@ happened, not by further analysis: the operator opened all five channels at
 once on 09-11 and again on 09-12, four to seven weeks before their scheduled
 phases. The channel sequence is no longer a plan being followed with two
 refinements — it has already been abandoned in practice, twice, deliberately.
-Treat "all five channels, same day" as the current default cadence; do not
-re-propose the phased sequence without a reason to reinstate it.
+Treat "all channels, same day" as the current default cadence; do not
+re-propose the phased sequence without a reason to reinstate it. The set became
+six on 2026-09-16, when X opened — a network the plan below never anticipated,
+which is a third reason its sequence is not the thing to follow.
 
 1. **LinkedIn's traffic role has reversed since 09-07, not just moved.** On
    09-07 it was 45 % of site visitors. By 09-13–09-14 it sent zero, while

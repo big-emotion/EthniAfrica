@@ -10,6 +10,7 @@ independently of the block above it.
 """
 import pathlib
 import sys
+import tempfile
 
 from PIL import Image
 
@@ -553,6 +554,20 @@ def test_a_proof_is_marked_and_never_lands_in_images():
                                 [carte(source="à confirmer")], DECK))
     assert "_epreuves" in str(chemin), "une épreuve ne va jamais dans images/"
     assert chemin.name.endswith("-epreuve.png")
+
+
+def test_a_passing_lot_lands_in_a_folder_named_for_its_networks():
+    """§1 bis — the folder name is the networks the format reaches, not `images/`."""
+    with tempfile.TemporaryDirectory() as bac:
+        racine = pathlib.Path(bac)
+        _, chemin = gab.rendre(carte(), DECK, "carrousel", image=image_test(3000, 4000),
+                               racine=racine, verdict=gab.portes([carte()], DECK))
+        assert chemin.parent.name == "-".join(tk.reseaux("carrousel"))
+        assert chemin.parent == racine / "TikTok-Instagram"
+
+        _, chemin_reel = gab.rendre(carte(), DECK, "reel", image=image_test(3000, 4000),
+                                    racine=racine, verdict=gab.portes([carte()], DECK))
+        assert chemin_reel.parent == racine / "Instagram-Facebook-YouTube-X"
 
 
 def test_layout_A_packs_its_column_onto_the_foot():
