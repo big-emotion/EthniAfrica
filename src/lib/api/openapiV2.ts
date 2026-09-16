@@ -3657,6 +3657,38 @@ const options: swaggerJsdoc.Options = {
               format: "date-time",
               example: null,
             },
+            moderatorNotes: {
+              type: ["string", "null"],
+              description:
+                "The moderator's answer on a decided report. Required by the moderation charter on accepted, rejected and duplicate.",
+              example: null,
+            },
+            remediationState: {
+              type: ["string", "null"],
+              enum: [
+                "not_started",
+                "in_progress",
+                "published",
+                "not_applicable",
+                null,
+              ],
+              description:
+                "What changed in the corpus, separately from what the atlas thought of the report. Written by the publication of a correction, never by a moderator decision. NULL while the report is open or under review.",
+              example: null,
+            },
+            remediationPublishedAt: {
+              type: ["string", "null"],
+              format: "date-time",
+              description:
+                "When the correction reached the published corpus. Never null when remediationState is published.",
+              example: null,
+            },
+            remediationSummary: {
+              type: ["string", "null"],
+              description:
+                "One reader-facing sentence naming what changed, shown verbatim on the public report page.",
+              example: null,
+            },
           },
           required: [
             "id",
@@ -3677,6 +3709,10 @@ const options: swaggerJsdoc.Options = {
             "created_at",
             "updated_at",
             "resolved_at",
+            "moderatorNotes",
+            "remediationState",
+            "remediationPublishedAt",
+            "remediationSummary",
           ],
           example: {
             id: "9c81ca0d-ae45-4f08-8f53-2ac0a9673abd",
@@ -3700,6 +3736,10 @@ const options: swaggerJsdoc.Options = {
             created_at: "2026-07-24T10:15:30.000Z",
             updated_at: "2026-07-24T11:00:00.000Z",
             resolved_at: null,
+            moderatorNotes: null,
+            remediationState: null,
+            remediationPublishedAt: null,
+            remediationSummary: null,
           },
         },
         FlagCursorPaginationMeta: {

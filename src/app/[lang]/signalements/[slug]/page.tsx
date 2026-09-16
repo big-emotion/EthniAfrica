@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { FlagPublicStatus } from "@/components/flags/FlagPublicStatus";
+import { FlagRemediationRecord } from "@/components/flags/FlagRemediationRecord";
 import {
   getContributorAttribution,
   getFlagBySlug,
@@ -108,8 +109,20 @@ export default async function SignalementsSlugPage({
           <FlagPublicStatus
             status={flag.status}
             moderatorNotes={flag.moderator_notes}
+            resolvedAt={flag.resolved_at}
+            language={language}
           />
         </header>
+
+        {/* The second axis. It answers "did the corpus change?", which the
+            badge above deliberately no longer claims to. */}
+        <FlagRemediationRecord
+          state={flag.remediation_state}
+          publishedAt={flag.remediation_published_at}
+          summary={flag.remediation_summary}
+          decidedAt={flag.resolved_at}
+          language={language}
+        />
 
         {/* Target */}
         <section className="space-y-2">

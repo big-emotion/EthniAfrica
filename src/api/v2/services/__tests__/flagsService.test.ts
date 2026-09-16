@@ -456,6 +456,38 @@ describe("getFlagByIdOrSlug", () => {
     expect(query.eq).toHaveBeenCalledWith("public_slug", "012345678A");
   });
 
+  // The public page is the only surface that reads the note and the corpus
+  // state, and it used to reach the table directly because neither was on the
+  // API's own payload.
+  // @req REQ-014
+  it("returns both axes and the moderator's answer on a decided report", async () => {
+    const query = resolvedQuery({
+      data: {
+        ...publicRows[0],
+        status: "accepted",
+        resolved_at: "2026-09-16T08:02:00.000Z",
+        moderator_notes: "Le tracé retenu suit la ligne de 1991.",
+        remediation_state: "not_started",
+        remediation_published_at: null,
+        remediation_summary: null,
+      },
+      error: null,
+    });
+    mocks.createAdminClient.mockReturnValue({
+      from: vi.fn(() => query),
+    });
+
+    await expect(getFlagByIdOrSlug("012345678A")).resolves.toEqual(
+      expect.objectContaining({
+        status: "accepted",
+        moderatorNotes: "Le tracé retenu suit la ligne de 1991.",
+        remediationState: "not_started",
+        remediationPublishedAt: null,
+        remediationSummary: null,
+      })
+    );
+  });
+
   // @req REQ-014
   it("returns null when the flag does not exist", async () => {
     const query = resolvedQuery({ data: null, error: null });

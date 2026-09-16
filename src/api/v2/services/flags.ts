@@ -34,6 +34,9 @@ export interface CreatedFlag {
   created_at: string;
 }
 
+export type FlagRemediationState =
+  "not_started" | "in_progress" | "published" | "not_applicable";
+
 export interface PublicFlag {
   id: string;
   public_slug: string;
@@ -53,6 +56,17 @@ export interface PublicFlag {
   created_at: string;
   updated_at: string | null;
   resolved_at: string | null;
+  /**
+   * The moderator's answer. Required by the moderation charter on every
+   * decided report and shown on the public page, so the public API returns it
+   * rather than leaving the one surface that reads it to query the table
+   * directly.
+   */
+  moderatorNotes: string | null;
+  /** The second axis — what changed in the corpus (migration 092). */
+  remediationState: FlagRemediationState | null;
+  remediationPublishedAt: string | null;
+  remediationSummary: string | null;
 }
 
 export interface FlagListFilters {
@@ -87,11 +101,15 @@ interface FlagRow {
   created_at: string;
   updated_at: string | null;
   resolved_at: string | null;
+  moderator_notes?: string | null;
+  remediation_state?: FlagRemediationState | null;
+  remediation_published_at?: string | null;
+  remediation_summary?: string | null;
   contribution_payload?: Record<string, unknown> | null;
 }
 
 const PUBLIC_FLAG_COLUMNS =
-  "id, public_slug, entity_type, entity_id, assertion_field_path, assertion_id, flag_kind, reason_text, counter_source_url, counter_source_citation, proposed_rewrite, contributor_id, severity, auto_generated, status, created_at, updated_at, resolved_at";
+  "id, public_slug, entity_type, entity_id, assertion_field_path, assertion_id, flag_kind, reason_text, counter_source_url, counter_source_citation, proposed_rewrite, contributor_id, severity, auto_generated, status, created_at, updated_at, resolved_at, moderator_notes, remediation_state, remediation_published_at, remediation_summary";
 
 /**
  * What the moderator's console reads, and the public API deliberately does not.
@@ -105,7 +123,7 @@ const PUBLIC_FLAG_COLUMNS =
 // Spelled out rather than interpolated from PUBLIC_FLAG_COLUMNS: PostgREST's
 // typings read the select string literally, and a template kills the inference.
 const MODERATION_FLAG_COLUMNS =
-  "id, public_slug, entity_type, entity_id, assertion_field_path, assertion_id, flag_kind, reason_text, counter_source_url, counter_source_citation, proposed_rewrite, contributor_id, severity, auto_generated, status, created_at, updated_at, resolved_at, contribution_payload";
+  "id, public_slug, entity_type, entity_id, assertion_field_path, assertion_id, flag_kind, reason_text, counter_source_url, counter_source_citation, proposed_rewrite, contributor_id, severity, auto_generated, status, created_at, updated_at, resolved_at, moderator_notes, remediation_state, remediation_published_at, remediation_summary, revision_draft_id, contribution_payload";
 
 const UUID_PATTERN =
   /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -310,6 +328,10 @@ function mapFlagRow(row: FlagRow): PublicFlag {
     created_at: row.created_at,
     updated_at: row.updated_at,
     resolved_at: row.resolved_at,
+    moderatorNotes: row.moderator_notes ?? null,
+    remediationState: row.remediation_state ?? null,
+    remediationPublishedAt: row.remediation_published_at ?? null,
+    remediationSummary: row.remediation_summary ?? null,
   };
 }
 
