@@ -213,7 +213,7 @@ describe("AboutPageContent (REQ-132)", () => {
     const corpus = screen.getByTestId("about-content-families");
 
     expect(purposeChapter).toHaveTextContent(
-      /Ce peuple n’a pas été divisé\. C’est la carte qui a été dessinée par-dessus\./
+      /Nous ne jugeons personne\. Nous racontons les noms\./
     );
     expect(
       purposeChapter.compareDocumentPosition(corpus) &
@@ -222,10 +222,10 @@ describe("AboutPageContent (REQ-132)", () => {
   });
 
   /**
-   * The claim is editorial emphasis, not a finding the corpus establishes, and
-   * an atlas that sells its provenance cannot print it unlabelled. Same
-   * doctrine as the Source Tier policy: nothing is forbidden, everything is
-   * labelled.
+   * The claim is a commitment the project makes, not a finding the corpus
+   * establishes, and an atlas that sells its provenance cannot print it
+   * unlabelled. Same doctrine as the Source Tier policy: nothing is
+   * forbidden, everything is labelled.
    */
   // @req REQ-132
   it("marks the central claim as the project's position rather than a corpus finding", () => {
@@ -233,8 +233,8 @@ describe("AboutPageContent (REQ-132)", () => {
 
     const status = screen.getByTestId("about-purpose-claim-status");
 
-    expect(status).toHaveTextContent(/ce que nous pensons/i);
-    expect(status).toHaveTextContent(/pas un fait que l’atlas démontre/i);
+    expect(status).toHaveTextContent(/un engagement/i);
+    expect(status).toHaveTextContent(/pas un résultat de nos recherches/i);
   });
 
   /**
@@ -264,19 +264,20 @@ describe("AboutPageContent (REQ-132)", () => {
     const purposeChapter = screen.getByTestId("about-purpose");
 
     expect(purposeChapter).toHaveTextContent(
-      /This people was not divided\. The map was drawn over it\./
+      /We judge no one\. We tell the names\./
     );
     expect(screen.getByTestId("about-purpose-claim-status")).toHaveTextContent(
-      /what we think/i
+      /a commitment, not a result of our research/i
     );
     expect(purposeChapter).toHaveTextContent(/191 peoples/);
   });
 
   /**
-   * The claim alone told a reader what the atlas thinks and not why. The full
-   * declaration is the operator's statement of 10 September 2026 as the agent
-   * corrected it (docs/editorial/purpose-doctrine.md): older, larger and still
-   * alive — never gentler, never lost, never a story about who drew the line.
+   * The claim alone told a reader what the project commits to and not what
+   * that commitment costs. The declaration is the five parts it rests on
+   * (docs/editorial/purpose-doctrine.md): a name is never fixed, the source
+   * closest to the autonym counts most, the gaps still weigh, nobody is being
+   * singled out, and what the atlas is after is understanding.
    */
   // @req REQ-132
   it("publishes the full declaration inside the purpose chapter", () => {
@@ -286,19 +287,20 @@ describe("AboutPageContent (REQ-132)", () => {
       "about-declaration"
     );
 
+    expect(declaration).toHaveTextContent(/Un nom n’est jamais figé/);
+    expect(declaration).toHaveTextContent(/Aucun n’est faux/);
+    expect(declaration).toHaveTextContent(/La source qui compte le plus/);
     expect(declaration).toHaveTextContent(
-      /La plupart des frontières de l’Afrique ont moins de cent quarante ans\. Les noms en ont plus de mille\./
+      /personne n’est mieux placé que lui pour raconter son histoire/
     );
-    expect(declaration).toHaveTextContent(/elle le traverse/);
-    expect(declaration).toHaveTextContent(/L’ordre apparent est inversé/);
+    expect(declaration).toHaveTextContent(/Ces écarts pèsent encore/);
+    expect(declaration).toHaveTextContent(/Personne n’est visé/);
     expect(declaration).toHaveTextContent(
-      /ce qui a l’air ancien est encore là/
+      /nous ne désignons aucun responsable/
     );
+    expect(declaration).toHaveTextContent(/Ce que nous cherchons/);
     expect(declaration).toHaveTextContent(
-      /garde le colonisateur au centre de la phrase/
-    );
-    expect(declaration).toHaveTextContent(
-      /ce qui est resté, pas de ce qui a été pris/
+      /l’appeler comme il s’appelle ne retire rien à personne/
     );
   });
 
@@ -340,10 +342,11 @@ describe("AboutPageContent (REQ-132)", () => {
 
     const declaration = screen.getByTestId("about-declaration");
 
+    expect(declaration).toHaveTextContent(/A name is never fixed/);
+    expect(declaration).toHaveTextContent(/None of them is false\./);
     expect(declaration).toHaveTextContent(
-      /Most of Africa’s borders are less than a hundred and forty years old\. The names are more than a thousand years old\./
+      /nobody is better placed than they are to tell their own history/
     );
-    expect(declaration).toHaveTextContent(/The apparent order is reversed/);
     expect(
       within(screen.getByTestId("about-declaration-refusals")).getAllByRole(
         "listitem"
