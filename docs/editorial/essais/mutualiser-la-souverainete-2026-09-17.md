@@ -3,11 +3,12 @@
 Écrit le 2026-09-17. Quatrième essai enregistré sous cette commande, le même
 jour que [saluer l'autre comme il se nomme](saluer-l-autre-comme-il-se-nomme-2026-09-17.md).
 
-**Ce fichier n'est pas une position du projet.** Il enregistre des **propos
-rapportés** que l'opérateur a soumis à la chaîne, et ce que le projet en
-retient — deux choses distinctes, tenues séparées ici parce qu'un essai qui les
-confond devient illisible à la relecture. L'opérateur a confirmé le 2026-09-17
-qu'il citait quelqu'un.
+**La citation n'est pas une position du projet ; ce que le projet en retient en
+est une.** Ce fichier tient les deux séparées, parce qu'un essai qui les confond
+devient illisible à la relecture. L'opérateur a confirmé le 2026-09-17 qu'il
+citait quelqu'un, puis a tranché le même jour ce que la chaîne en garde : on
+s'en inspire, la conclusion sur les bailleurs est abandonnée (voir « La décision
+de l'opérateur »).
 
 **Auteur de la citation : _à renseigner par l'opérateur._** Tant que ce champ
 est vide, cette page ne peut servir qu'à raisonner en interne : une citation
@@ -45,6 +46,48 @@ L'angle du projet est le diagnostic : une conséquence a une cause, on la nomme
 pour comprendre. Une dépendance au financement extérieur est une cause nommable,
 et la taire serait le silence que la commande `essai` refuse autant que
 l'accusation.
+
+## La décision de l'opérateur, le même jour
+
+Posée après lecture des réserves ci-dessous, et elle les tranche : **on s'en
+inspire, on n'en reprend pas la conclusion.**
+
+> Alors, le passage sur la mutualisation et sur la souveraineté, il faut juste
+> s'en inspirer, sans la conclusion avec la Banque mondiale et tout ça. Il faut
+> juste s'en inspirer pour le message.
+>
+> En fait, c'est pour pouvoir comprendre qu'il y a aussi un intérêt à l'Afrique,
+> tout un intérêt pour l'Afrique à agir ensemble. C'est à tous les peuples, à
+> toutes les personnes, de pouvoir mutualiser les forces. Ceci, c'est comprendre
+> l'autre. Donc, ce travail, en fait, s'inscrit dans cette compréhension-là.
+
+**Ce que cette décision fait, et c'est la partie importante.** Elle ne se
+contente pas de retrancher la Banque mondiale : elle **retourne l'argument**. La
+citation d'origine mesurait ce que l'Afrique ne peut pas — c'était sa faiblesse
+de registre. L'opérateur mesure ce que l'Afrique gagne. Le sujet de la phrase
+change de camp, et l'énoncé passe du constat d'incapacité à l'intérêt partagé.
+
+**Et il ferme la boucle avec le projet, ce que je n'avais pas su faire.** La
+chaîne est celle-ci :
+
+1. On raconte les noms — celui qu'un peuple, une langue, un lieu, une personne
+   se donne, et celui que d'autres leur ont donné.
+2. Comprendre un nom, c'est comprendre l'autre tel qu'il se comprend lui-même.
+3. Des peuples qui se comprennent peuvent **agir ensemble**.
+4. Mutualiser les forces, c'est l'intérêt de tous — des peuples comme des
+   personnes.
+
+**Donc le travail sur les noms n'est pas voisin de la mutualisation : il en est
+la condition.** On ne mutualise pas avec quelqu'un qu'on ne comprend pas. C'est
+la première fois, dans les quatre essais, que la méthode du projet reçoit une
+conséquence pratique à l'échelle du continent — et elle est positive, ce que la
+contrainte permanente exige.
+
+Note d'échelle, à ne pas perdre : l'opérateur dit « à tous les peuples, à toutes
+les **personnes** ». La mutualisation n'est pas seulement affaire d'États. Cela
+la met hors de portée du reproche qu'on adresse d'ordinaire aux projets
+d'intégration continentale, et cela la raccorde au lecteur, qui n'est pas un
+État.
 
 ## Ce que le projet ne reprend pas, et pourquoi
 
@@ -88,12 +131,20 @@ pour comprendre, jamais pour accuser — et sa direction est la guérison.
 juste survit entièrement à sa reformulation ; c'est pourquoi elle est gardée
 ici, et pourquoi elle n'est pas reprise telle quelle.
 
+L'opérateur a tranché le même jour, et dans ce sens : on s'en inspire, la
+conclusion sur les bailleurs est abandonnée. Ce qui est retenu est l'intérêt
+partagé à agir ensemble, jamais le constat d'une incapacité.
+
 ## Ce que cet essai n'est pas
 
-Il n'engage aucune décision de gabarit ni de structure. Il n'ouvre aucune série :
-la mutualisation n'engage **aucune** des quatre questions onomastiques (qui a
-nommé, depuis quand, pourquoi ici, quel héritage), et un sujet de publication
-tiré directement de cette page raconterait une thèse économique sans raconter un
-nom. Le pont vers le projet passe par la frontière — la souveraineté en cause
-est celle de lignes de moins de cent quarante ans — et c'est ce pont, pas la
-citation, qui pourrait un jour porter une production.
+Il n'ouvre aucune série et ne fixe aucun gabarit. La mutualisation n'engage
+**aucune** des quatre questions onomastiques (qui a nommé, depuis quand,
+pourquoi ici, quel héritage) : un sujet de publication tiré directement de cette
+page raconterait une thèse économique sans raconter un nom.
+
+Ce qu'il engage, en revanche, c'est **le ton du propos du compte** — l'opérateur
+l'a dit : « il faut juste s'en inspirer pour le message ». Ce que la légende
+porte est donc l'intérêt partagé à agir ensemble, et le fait que comprendre les
+noms en est la condition. Jamais la souveraineté, jamais les bailleurs, jamais
+un chiffre : ce sont des sujets que le corpus ne documente pas, et une
+production qui les avancerait sortirait de ce que l'atlas peut tenir.
