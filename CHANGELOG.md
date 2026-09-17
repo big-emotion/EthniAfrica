@@ -10,6 +10,66 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [4.12.0] - 2026-09-17
+
+### Added
+
+- **The About page opens on what the project does with names.** The purpose
+  chapter now leads with a commitment — « Nous ne jugeons personne. Nous
+  racontons les noms. » — labelled as a commitment rather than a result of
+  research, and followed by the five parts it rests on: a name is never fixed,
+  the source closest to the autonym counts most, those gaps still weigh, nobody
+  is being singled out, and understanding is what the atlas is after (#1137).
+- **A provenance census on countries, families and languages.** Each surface
+  states where its sources stand instead of leaving a reader to infer it
+  (#1124).
+- **A report's disposition is separated from its remediation**, so accepting a
+  report no longer announces a correction that has not been made. Migration
+  `092` carries the remediation state (#1122).
+- **A moderation queue row opens into a case file** carrying its own audit
+  trail (#1123).
+- The Gur column is sourced, and what is not established is said rather than
+  asserted (#1131).
+- Named bearers of a patronyme are read from their own relation instead of the
+  `content` blob. Migration `093` closes the gap (#1126).
+
+### Changed
+
+- **Assertion tracks certainty.** The more a claim is disputed, the less
+  assertive the sentence that carries it; where several explanations compete, a
+  piece names more than one or names none. Where the corpus holds only outside
+  scholarship, the European account is no longer the default and the imbalance
+  may be stated (#1129).
+- The closing doctrine for a country's name leads with who named it rather than
+  with the border that followed (#1121).
+- A fiche's tile grid is linearised on a phone and its summary figures are
+  dropped (#1120).
+
+### Fixed
+
+- **Western Sahara is no longer drawn inside Morocco.** Natural Earth encodes de
+  facto control; the geometry is cut at 27°40′N (#1118).
+- `FLG_SENOUFO`'s classification is declared, and the _Nommer_ dossier figures
+  are recounted against it (#1135).
+- Guinea's name is given its three unsettled readings instead of one asserted
+  origin (#1130).
+- A contested attribution for Liberia's name is no longer stated flat (#1125).
+- The Fouta Djallon toponym is sourced and the duplicate Susu fiche is merged
+  (#1127).
+- The Mandé record is corrected, its continuum is shown, and the bearer status
+  hole is closed (#1126).
+- Côte d'Ivoire's links are repaired and claims no source pays are unwritten
+  (#1132).
+- The home no longer claims three languages the source never carries, and four
+  corpus commits are re-landed (#1128).
+- The Burkina Faso name and the 1932–1947 partition are sourced, and an
+  unsourced inference is dropped (#1119).
+- The message grid could not see a hierarchy of belonging (#1133).
+- The render engine settles a production's verdict before writing, so a proof
+  never reaches a network folder, and layout B is the bascule's alone (#1112).
+- The About page's suite asserts the purpose chapter the page actually
+  publishes (#1139).
+
 ## [4.11.0] - 2026-09-16
 
 ### Added
@@ -1058,7 +1118,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.11.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.12.0...HEAD
+[4.12.0]: https://github.com/big-emotion/ethniafrica/compare/v4.11.0...v4.12.0
 [4.11.0]: https://github.com/big-emotion/ethniafrica/compare/v4.10.0...v4.11.0
 [4.10.0]: https://github.com/big-emotion/ethniafrica/compare/v4.9.0...v4.10.0
 [4.9.0]: https://github.com/big-emotion/ethniafrica/compare/v4.8.0...v4.9.0
