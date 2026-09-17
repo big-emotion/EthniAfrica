@@ -150,35 +150,47 @@ interface DeclarationRefusalCopy {
 export const purposeChapter: Record<Language, PurposeChapterCopy> = {
   en: {
     stepLabel: "01 · Purpose",
-    title: "What this atlas sets out to change",
-    claim: "This people was not divided. The map was drawn over it.",
+    title: "Why we tell names",
+    claim: "We judge no one. We tell the names.",
     claimStatus:
-      "That is what we think, not a fact the atlas proves. Here is what it rests on.",
+      "That is a commitment, not a result of our research. Here is what it requires of us.",
     declaration: [
       {
-        title: "The names are older than the borders",
+        title: "A name is never fixed",
         paragraphs: [
-          "Most of Africa’s borders are less than a hundred and forty years old. The names are more than a thousand years old.",
-          "A border does not contain a people; it crosses it. And the same line encloses peoples who never asked to be together.",
+          "A name changes with time, and with whoever tells it. A people, a language or a place can carry several names at once: the one they give themselves, the ones their neighbours give them, the one an administration wrote down one day. None of them is false. They simply do not come from the same place.",
         ],
       },
       {
-        title: "The apparent order is reversed",
+        title: "The source that counts most",
         paragraphs: [
-          "What is presented as natural, the nations, is the most recent layer. What is presented as archaic, the peoples, is the continuous one.",
-          "This atlas does not tell the past. It shows that what looks old is still here, and that what looks natural is very recent. Every people has a history, and its name traces it: that is what we tell.",
+          "That is why several sources exist on the same name, and why they do not agree.",
+          "The one that counts most is the one closest to the name a people gives itself: nobody is better placed than they are to tell their own history. Finding it takes work, and that work produces mistakes.",
         ],
       },
       {
-        title: "What remained, not what was taken",
+        title: "Those gaps still weigh",
         paragraphs: [
-          "The language of reparation keeps the coloniser at the centre of the sentence. Even to accuse him, he stays the subject of the verb.",
-          "We speak of what remained, not of what was taken.",
+          "Today still, the same people, the same language or the same place can carry several names depending on who is speaking. Those gaps sustain tensions — and very often, knowing where each name comes from is enough to dissolve the misunderstanding feeding them.",
+        ],
+      },
+      {
+        title: "Nobody is being singled out",
+        paragraphs: [
+          "These subjects are sensitive, and we know it. We are not trying to take legitimacy away from any people, any language or any person, and we name no culprit.",
+          "If you feel singled out reading us, that is not the intent — and if we got it wrong, tell us: every correction is read.",
+        ],
+      },
+      {
+        title: "What we are after",
+        paragraphs: [
+          "Understanding someone as they understand themselves. It is the cheapest gesture there is: calling someone what they call themselves takes nothing away from anyone.",
+          "And understanding each other is what makes acting together possible. Africa’s peoples, and individuals too, have every interest in pooling their strength. Nobody pools their strength with someone they do not understand.",
         ],
       },
     ],
     refusals: {
-      title: "Three sentences we do not write",
+      title: "Four sentences we do not write",
       items: [
         {
           sentence: "“Before, people lived in harmony with the continent.”",
@@ -225,36 +237,47 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
   },
   fr: {
     stepLabel: "01 · Le propos",
-    title: "Ce que cet atlas veut changer",
-    claim:
-      "Ce peuple n’a pas été divisé. C’est la carte qui a été dessinée par-dessus.",
+    title: "Pourquoi nous racontons les noms",
+    claim: "Nous ne jugeons personne. Nous racontons les noms.",
     claimStatus:
-      "C’est ce que nous pensons, pas un fait que l’atlas démontre. Voici sur quoi ça repose.",
+      "C’est un engagement, pas un résultat de nos recherches. Voici ce qu’il nous impose.",
     declaration: [
       {
-        title: "Les noms sont plus vieux que les frontières",
+        title: "Un nom n’est jamais figé",
         paragraphs: [
-          "La plupart des frontières de l’Afrique ont moins de cent quarante ans. Les noms en ont plus de mille.",
-          "Une frontière ne contient pas un peuple, elle le traverse. Et le même tracé enferme ensemble des peuples qui n’ont rien demandé.",
+          "Un nom change avec le temps, et selon qui le raconte. Un peuple, une langue ou un lieu peuvent porter plusieurs noms à la fois : celui qu’ils se donnent, ceux que leurs voisins leur donnent, celui qu’une administration a écrit un jour. Aucun n’est faux. Ils ne viennent simplement pas du même endroit.",
         ],
       },
       {
-        title: "L’ordre apparent est inversé",
+        title: "La source qui compte le plus",
         paragraphs: [
-          "Ce qu’on présente comme naturel, les nations, est la couche la plus récente. Ce qu’on présente comme archaïque, les peuples, est la couche continue.",
-          "Cet atlas ne raconte pas le passé. Il montre que ce qui a l’air ancien est encore là, et que ce qui a l’air naturel est très récent. Chaque peuple a une histoire, et son nom la retrace : c’est ce que nous racontons.",
+          "C’est pour cette raison qu’il existe plusieurs sources sur un même nom, et qu’elles ne se recoupent pas.",
+          "Celle qui compte le plus est celle qui s’approche le plus du nom qu’un peuple se donne : personne n’est mieux placé que lui pour raconter son histoire. La chercher demande du travail, et ce travail produit des erreurs.",
         ],
       },
       {
-        title: "Ce qui est resté, pas ce qui a été pris",
+        title: "Ces écarts pèsent encore",
         paragraphs: [
-          "Le registre de la réparation garde le colonisateur au centre de la phrase. Même pour l’accuser, il reste le sujet du verbe.",
-          "Nous parlons de ce qui est resté, pas de ce qui a été pris.",
+          "Aujourd’hui encore, un même peuple, une même langue ou un même lieu peut porter plusieurs noms selon qui parle. Ces écarts entretiennent des tensions — et bien souvent, savoir d’où vient chaque nom suffit à faire tomber le malentendu qui les nourrit.",
+        ],
+      },
+      {
+        title: "Personne n’est visé",
+        paragraphs: [
+          "Ces sujets sont sensibles, et nous le savons. Nous ne cherchons à retirer sa légitimité à aucun peuple, à aucune langue, à aucune personne, et nous ne désignons aucun responsable.",
+          "Si vous vous sentez visé en nous lisant, ce n’est pas l’intention — et si nous nous sommes trompés, dites-le-nous : toute correction est lue.",
+        ],
+      },
+      {
+        title: "Ce que nous cherchons",
+        paragraphs: [
+          "Comprendre quelqu’un tel qu’il se comprend lui-même. C’est le geste le moins coûteux qui soit : l’appeler comme il s’appelle ne retire rien à personne.",
+          "Et se comprendre est ce qui permet d’agir ensemble. Les peuples d’Afrique, et les personnes aussi, ont tout intérêt à mutualiser leurs forces. On ne met pas ses forces en commun avec quelqu’un qu’on ne comprend pas.",
         ],
       },
     ],
     refusals: {
-      title: "Trois phrases que nous n’écrivons pas",
+      title: "Quatre phrases que nous n’écrivons pas",
       items: [
         {
           sentence: "« Avant, on vivait en accord avec le continent. »",
