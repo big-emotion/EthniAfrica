@@ -198,6 +198,42 @@ aveu est ce qui distingue un atlas sourcé d'une chaîne d'opinion — et il
 désamorce, avant qu'elle ne parte, la lecture selon laquelle publier sur un
 peuple serait porter un jugement sur lui.
 
+## Complément du même jour — la hiérarchie des sources
+
+Dicté par l'opérateur le 2026-09-17, en écrivant la carte de message. C'est la
+partie de l'essai qui a la portée la plus pratique, parce qu'elle donne un
+critère de tri là où le projet n'en avait pas.
+
+> Nous racontons les noms des peuples, des lieux, des personnes. Et ce nom est
+> parfois différent à travers le temps et selon les personnes qui en parlent.
+> C'est pour ça qu'il y a différentes sources.
+>
+> La source la plus importante est celle qui se rapproche le plus possible de
+> l'endonyme. Et c'est ce qui demande du travail de recherches et induit des
+> erreurs, mais la cause importe, elle sert à mieux nous connaître. Car
+> personne d'autre que chaque peuple n'est le meilleur garant de son histoire.
+
+**Ce que ça ajoute.** Jusqu'ici le projet mesurait une seule chose sur une
+source : son **autorité** — officielle, référencée, non vérifiée. L'opérateur en
+ajoute une seconde, orthogonale : sa **proximité au nom que le peuple se
+donne**. Les deux ne se confondent pas. Une source officielle écrite par une
+administration coloniale a beaucoup d'autorité et une proximité nulle ; un récit
+communautaire a peu d'autorité et une proximité maximale.
+
+**Et ça explique la pluralité des sources autrement.** Il y a plusieurs sources
+non pas parce que les chercheurs se contredisent, mais parce qu'**un nom change
+avec le temps et avec celui qui le prononce**. Chaque source est donc un point
+de vue daté et situé, pas une tentative ratée de dire la même chose.
+
+**Le fondement, qui est une position et doit être étiquetée comme telle :**
+personne n'est mieux placé qu'un peuple pour être garant de sa propre histoire.
+C'est ce qui justifie la primauté de l'autonyme — jusqu'ici posée comme une
+règle sans sa raison.
+
+**La vulgarisation obligatoire.** « Endonyme » ne se publie pas au lecteur : la
+formulation du site est « le nom qu'il se donne » (voir la table de vocabulaire
+de `ethniafrica-message`). L'opérateur l'a demandé explicitement.
+
 ## Ce qui en découle, à écrire ailleurs si l'opérateur confirme
 
 Cet essai motive une règle ; il ne l'écrit pas. Quatre conséquences, dont deux
