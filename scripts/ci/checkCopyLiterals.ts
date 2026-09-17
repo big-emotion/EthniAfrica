@@ -79,6 +79,13 @@ export const COPY_LITERAL_EXEMPT_PATTERNS: readonly RegExp[] = [
   /^src\/lib\/email\//,
   // Generated from Natural Earth; carries `nameFr` by design.
   /^src\/lib\/atlas\/assets\//,
+  // The brand constants. PRODUCT_TAGLINE and OG_TITLE are identity strings,
+  // not surface copy: brand.ts documents that they deliberately carry no
+  // locale override, and §1 of the brand charter is why — an identity string
+  // spelled in two places is an identity spelled two ways. Splitting them per
+  // locale would be the defect, not the fix. Exempted 2026-09-18, when the
+  // reorientation changed the tagline and the gate flagged both.
+  /^src\/lib\/brand\.ts$/,
 ];
 
 const SOURCE_FILE_PATTERN = /\.tsx?$/;

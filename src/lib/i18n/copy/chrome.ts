@@ -1,7 +1,7 @@
 import type { Language } from "@/types/shared";
 
 const en = {
-  headerTagline: "Atlas of the Peoples of Africa",
+  headerTagline: "Where the names come from",
   mainNavigation: "Main navigation",
   entryPoints: "Entry points",
   search: "Search",
@@ -29,7 +29,7 @@ const en = {
 type ChromeCopy = typeof en;
 
 const fr: ChromeCopy = {
-  headerTagline: "Atlas des Peuples d'Afrique",
+  headerTagline: "D'où viennent les noms",
   mainNavigation: "Navigation principale",
   entryPoints: "Points d'entrée",
   search: "Rechercher",

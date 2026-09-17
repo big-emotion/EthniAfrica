@@ -5,6 +5,7 @@ import { render, screen, within } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
 import { HomeHero } from "@/components/home/HomeHero";
+import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
 import { PRODUCT_NAME } from "@/lib/brand";
 import { CORPUS_CLASSES } from "@/lib/home/corpusClasses";
 import type { DidYouKnowFact } from "@/lib/home/didYouKnowFacts";
@@ -69,10 +70,12 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
     expect(screen.queryAllByRole("heading", { level: 3 })).toHaveLength(0);
   });
 
-  // The band no longer narrows to one class, and no longer hides four. The
-  // headline asks about the continent; the tile band under the search states
-  // the classes it counts. \s rather than a literal space: the no-break space
-  // before « ? » is deliberate and must not be asserted as an ordinary one.
+  // The headline asks the one question the atlas answers — where a name comes
+  // from — and the tile band under the search states the classes it counts. It
+  // used to ask about the continent, which invited any question; the site
+  // answers one kind, and the social format asks it in the same words.
+  // \s rather than a literal space: the no-break space before « ? » is
+  // deliberate and must not be asserted as an ordinary one.
   //
   // The words come from the registry rather than a literal list. They were
   // written out once — peuples, langues, pays — and the day pays gave its tile
@@ -80,11 +83,14 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
   // shape of a test that pins the classes instead of the division of labour
   // between the headline and the band.
   // @req REQ-044
-  it("asks about the continent and leaves the totals to the tile band", () => {
+  it("asks where a name comes from and leaves the totals to the tile band", () => {
     render(<HomeHero language="fr" />);
 
     const h1 = screen.getByRole("heading", { level: 1 });
-    expect(h1.textContent).toMatch(/^Une question sur l'Afrique\s?\?$/);
+    // Read from the dictionary, never retyped: the copy files use the
+    // typographic apostrophe, and a hand-written regex asserts the straight
+    // one and fails on copy that is correct.
+    expect(h1.textContent).toBe(homeHeroCopy.fr.question);
 
     const tiles = screen.getByTestId("home-corpus-counts");
     for (const { tileLabel } of CORPUS_CLASSES) {

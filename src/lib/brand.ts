@@ -55,7 +55,7 @@ export const PRODUCT_NAME =
  * is edited in the same commit — not before, or the gate goes red for everyone.
  */
 // @req REQ-019
-export const PRODUCT_TAGLINE = "Atlas des Peuples d'Afrique";
+export const PRODUCT_TAGLINE = "D'où viennent les noms des peuples d'Afrique";
 
 /**
  * The handle the product answers to on social networks.
@@ -110,7 +110,7 @@ export const ATTRIBUTION_STRING =
 // @req REQ-019
 export const OG_TITLE =
   process.env.NEXT_PUBLIC_OG_TITLE ||
-  "EthniAfrica — Atlas des Peuples d'Afrique";
+  "EthniAfrica — D'où viennent les noms des peuples d'Afrique";
 
 /**
  * Open Graph description for social media previews.
