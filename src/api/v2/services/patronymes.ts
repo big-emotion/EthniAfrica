@@ -8,6 +8,12 @@
  *   3) one `afrik_patronyme_countries` + one `afrik_countries` query for its
  *      associated countries
  *   4) one `afrik_patronyme_persons` + one `persons` query for its bearers
+ *   5) one `afrik_patronyme_bearers` query for the bearers the corpus can
+ *      only name
+ *
+ * The fifth query exists because the fourth cannot answer for the corpus:
+ * every bearer the editorial work records names its subject in prose, and
+ * migration 093 gave those bearers the table this reads.
  *
  * Bearer projection is deliberately narrow (id, fullName, roleCategory) —
  * DEC-040 forbids a code path that takes a family name and returns an
@@ -20,12 +26,15 @@ import { walkRanges } from "@/lib/supabase/queries/walkRanges";
 import { readAlliances } from "@/lib/patronymes/content";
 import { createServerClient } from "@/lib/supabase/server";
 import type { TranslationLocale } from "@/lib/i18n/translationLocale";
-import type {
-  PatronymeAllianceSummary,
-  PatronymeBearerSummary,
-  PatronymeCountrySummary,
-  PatronymeNameSystem,
-  PatronymePeopleSummary,
+import {
+  isPublishableBearerStatus,
+  PUBLISHABLE_BEARER_STATUSES,
+  type PatronymeAllianceSummary,
+  type PatronymeBearerSummary,
+  type PatronymeCountrySummary,
+  type PatronymeNamedBearer,
+  type PatronymeNameSystem,
+  type PatronymePeopleSummary,
 } from "@/api/v2/schemas/patronymes";
 import { withTranslation, type TranslatedEntity } from "./translations";
 
@@ -38,6 +47,7 @@ export interface PatronymeAggregate {
   associatedPeoples: PatronymePeopleSummary[];
   associatedCountries: PatronymeCountrySummary[];
   bearers: PatronymeBearerSummary[];
+  namedBearers: PatronymeNamedBearer[];
   alliances: PatronymeAllianceSummary[];
 }
 
@@ -383,6 +393,43 @@ async function getBearers(
 }
 
 /**
+ * The bearers the corpus can only name (migration 093).
+ *
+ * `afrik_patronyme_persons` cannot hold them: no person record can be
+ * authored for a bearer a fiche merely names (ARCH-018 defines no person
+ * model), so that join stayed empty while 89 bearers sat in the fiches.
+ *
+ * The status narrowing is the DEC-040 / RGPD art. 9 rule itself, not a
+ * precaution: a family name is an ethnic marker, so a living bearer served
+ * under one would have their ethnic origin published. It is applied twice on
+ * purpose — in the query, so a row that may not be served never leaves
+ * Postgres, and on the projection, because the column is plain TEXT and the
+ * guard is also what earns the narrowed status type without a cast.
+ */
+async function getNamedBearers(
+  supabase: ReturnType<typeof createServerClient>,
+  patronymeId: string
+): Promise<PatronymeNamedBearer[]> {
+  const { data, error } = await supabase
+    .from("afrik_patronyme_bearers")
+    .select("display_name, status")
+    .eq("patronyme_id", patronymeId)
+    .in("status", [...PUBLISHABLE_BEARER_STATUSES]);
+
+  if (error) {
+    throw new Error(`Failed to load named patronyme bearers: ${error.message}`);
+  }
+
+  return (
+    (data ?? []) as Array<{ display_name: string; status: string }>
+  ).flatMap((row) =>
+    isPublishableBearerStatus(row.status)
+      ? [{ displayName: row.display_name, status: row.status }]
+      : []
+  );
+}
+
+/**
  * The three columns a row of the list draws, and no fourth.
  *
  * The name was read out of `content` until the atlas hub started failing its
@@ -590,13 +637,19 @@ export async function getPatronymeById(
     row.content ?? {}
   );
 
-  const [associatedPeoples, associatedCountries, bearers, alliances] =
-    await Promise.all([
-      getAssociatedPeoples(supabase, id),
-      getAssociatedCountries(supabase, id),
-      getBearers(supabase, id),
-      getAlliances(supabase, content),
-    ]);
+  const [
+    associatedPeoples,
+    associatedCountries,
+    bearers,
+    namedBearers,
+    alliances,
+  ] = await Promise.all([
+    getAssociatedPeoples(supabase, id),
+    getAssociatedCountries(supabase, id),
+    getBearers(supabase, id),
+    getNamedBearers(supabase, id),
+    getAlliances(supabase, content),
+  ]);
 
   const aggregate: PatronymeAggregate = {
     id: row.id,
@@ -607,6 +660,7 @@ export async function getPatronymeById(
     associatedPeoples,
     associatedCountries,
     bearers,
+    namedBearers,
     alliances,
   };
 

@@ -26,6 +26,7 @@ const KEITA = {
     { id: "PER_B", fullName: "Bearer", roleCategory: "author" },
     { id: "PER_A", fullName: "Aearer", roleCategory: "author" },
   ],
+  namedBearers: [],
   alliances: [
     {
       targetId: "PAT_COULIBALY",

@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Fiche générée depuis la file d'attente des candidats (vague 1 du plan de couverture anthroponymique). Elle ne porte aucune recherche : ne pas étendre ses affirmations sans appliquer le protocole docs/runbooks/anthroponym-fiche-research.md."
+    "directives": "Dossier fondé sur les sources nommées ci-dessous, relues une à une. Ne pas étendre une affirmation au-delà de ce que la source citée en regard énonce."
   },
   "id": "PAT_TOURE",
   "nameMain": "Touré",
@@ -11,42 +11,72 @@
     {
       "spelling": "Touré",
       "attestations": [
-        { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] },
+        { "countryId": "MLI", "sourceRefs": ["gha-iv-mali"] },
         { "countryId": "GIN", "sourceRefs": ["afrik-candidate-queue"] }
       ]
     },
     {
       "spelling": "Toure",
       "attestations": [
-        { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] },
+        { "countryId": "MLI", "sourceRefs": ["gha-iv-mali"] },
         { "countryId": "GIN", "sourceRefs": ["afrik-candidate-queue"] }
       ]
+    },
+    {
+      "spelling": "Ture",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["gha-iv-mali"] }]
+    },
+    {
+      "spelling": "Tùre",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
     }
   ],
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "writtenChronicles": [
+      {
+        "claim": "Les chroniques soudanaises donnent deux noms pour l'askiya qui prend le pouvoir à Gao à la fin du XVe siècle : Muhammad Ture ou Muhammad Sylla. La synthèse qui les rapporte le dit d'origine soninké, du clan Ture ou Sylla du Takrur, et précise que Ture était alors un titre religieux, comme Cisse, et qu'il fut ensuite adopté par les conquérants marocains. Le nom se lit donc ici comme une qualité de lettré musulman avant de se lire comme une ascendance.",
+        "claimStatus": "contested",
+        "sourceRefs": ["gha-iv-mali"]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "Les Ture figurent parmi les plus anciens clans d'origine soninké du monde songhay, avec les Sylla, les Tunkara, les Cissé, les Jakhité, les Dramé et les Diawara. La famille est l'unité de base et le clan un groupement de familles.",
+        "claimStatus": "established",
+        "sourceRefs": ["gha-iv-mali"]
+      },
+      {
+        "claim": "Après la victoire de Soundiata, l'assemblée du Manden range les Touré et les Bérété parmi les cinq clans maraboutiques, premiers alliés de Soundiata, qui l'avaient cherché pendant son exil et qui sont proclamés les cinq gardiens de la foi, Mori Kanda Lolu. Le groupe compte aussi les Cissé du Wagadou, convertis à l'islam et alliés politiques de Soundiata.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["gha-iv-mali"]
+      },
+      {
+        "claim": "Le père de Samory, Lakhafia Touré, est décrit par un officier français du XIXe siècle comme un Dyula pauvre marié à une femme Mara, et son fils comme né à Sanankoro. L'historien qui rassemble ces témoignages souligne aussitôt qu'ils se contredisent d'un auteur à l'autre, un autre récit plaçant la naissance ailleurs. Le rattachement du nom au monde marchand dyula repose donc sur un témoignage colonial isolé, non sur une filiation établie.",
+        "claimStatus": "contested",
+        "sourceRefs": ["person-1963-ancetres-samori"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_SONINKE",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["gha-iv-mali"]
     },
     {
       "peopleId": "PPL_MALINKE",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["gha-iv-mali"]
     }
   ],
   "countries": [
     {
       "countryId": "MLI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["gha-iv-mali"]
     },
     {
       "countryId": "GIN",
@@ -54,44 +84,83 @@
       "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
-  "alliances": [],
-  "casteOrSocialFunction": null,
-  "bearers": [],
+  "alliances": [
+    {
+      "targetPatronymeId": "PAT_TRAORE",
+      "allianceType": "senankuya",
+      "sourceRefs": ["bamadaba-jamuw"]
+    }
+  ],
+  "casteOrSocialFunction": {
+    "value": "Clan maraboutique dans la tradition du Manden : les Touré comptent parmi les cinq clans proclamés gardiens de la foi après la victoire de Soundiata, et le nom est porté par des lignées de lettrés musulmans et de marchands. Le dictionnaire des noms claniques n'attache aucun terme de statut mandingue à son entrée Tùre, là où il en attache aux entrées Kònde et Kántɛ : le nom ne désigne donc ni un groupe d'artisans ni un groupe de musiciens.",
+    "sourceRefs": ["gha-iv-mali", "bamadaba-jamuw"]
+  },
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Samory Touré (vers 1830-1900)",
+      "sourceRefs": ["gha-vii-colonial", "person-1963-ancetres-samori"]
+    }
+  ],
   "homonyms": [],
   "sources": [
+    {
+      "sourceKey": "gha-iv-mali",
+      "title": "Histoire générale de l'Afrique, volume IV : l'Afrique du XIIe au XVIe siècle",
+      "url": "https://archive.org/details/unesco_general_history_africa_iv",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, 1984, sous la direction de D. T. Niane ; consulté sur le texte intégral de l'exemplaire numérisé. Le chapitre 6, « Mali and the second Mandingo expansion » (D. T. Niane), range les Touré et les Bérété parmi les cinq clans maraboutiques proclamés « cinq gardiens de la foi », Mori Kanda Lolu, aux côtés des Cissé du Wagadou (p. 134). Le chapitre consacré au Songhay nomme les Ture parmi les plus anciens clans soninké, avec les Sylla, Tunkara, Cissé, Jakhité, Dramé et Diawara (p. 205), et sa note 13 (p. 191) rapporte que les chroniques donnent Muhammad Ture ou Sylla pour l'askiya et que Ture était alors un titre religieux, comme Cisse. L'ouvrage est une synthèse savante et non une chronique ; seule la mention explicite des chroniques est rangée comme telle."
+    },
+    {
+      "sourceKey": "gha-vii-colonial",
+      "title": "Histoire générale de l'Afrique, volume VII : l'Afrique sous domination coloniale, 1880-1935",
+      "url": "https://www.unesco.org/en/articles/general-history-africa-vii-africa-under-colonial-domination-1880-1935",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, 1985, sous la direction de A. Adu Boahen ; consulté sur le texte intégral du volume. Le chapitre 6 date Samory Touré « vers 1830-1900 », décrit l'armée et l'empire qu'il bâtit entre le nord de l'actuelle Sierra Leone et le Sassandra, puis rapporte sa capture par surprise à Guélémou, le 29 septembre 1898, par la colonne de Gouraud, et sa déportation au Gabon, où il meurt en 1900. Le volume renvoie pour le détail aux trois tomes de la thèse d'Yves Person."
+    },
+    {
+      "sourceKey": "person-1963-ancetres-samori",
+      "title": "Les ancêtres de Samori",
+      "url": "https://www.persee.fr/doc/cea_0008-0055_1963_num_4_13_3008",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Person, Yves, Cahiers d'études africaines, volume 4, numéro 13, 1963, p. 125-156 ; texte intégral en accès libre. L'auteur est celui de la thèse « Samori : une révolution dyula », publiée en trois tomes par l'Institut fondamental d'Afrique noire entre 1968 et 1975. L'article rassemble les récits contradictoires que les officiers français du XIXe siècle donnaient de l'ascendance de Samory : l'un le dit fils d'un Dyula pauvre nommé Lakhafia Touré et le fait naître à Sanankoro, un autre le fait naître ailleurs, un rapport anglais en fait un pillard arabe. Cité pour la contradiction elle-même autant que pour la version dyula."
+    },
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs, et la lecture retenue est celle que le fichier impose : la ligne des termes de statut porte les mots mandingues eux-mêmes (nùmu, jèli, hɔ́rɔn, tontigi), et la ligne des liens claniques se lit senankuya parce que l'entrée Kúyate annote la sienne d'une réserve disant que cette relation-là est une entente amicale et non un senankuya. Ces liens ne sont pas réciproques d'une entrée à l'autre : la paire citée ici est celle que porte l'entrée Tùre, qui ne renvoie qu'à Tarawele et ne reçoit aucun terme de statut."
+    },
     {
       "sourceKey": "afrik-candidate-queue",
       "title": "Relevé de couverture anthroponymique EthniAfrica",
       "url": null,
       "tier": "unverified",
       "source_kind": "ai_generated",
-      "notes": "Ce nom figure au relevé de couverture de l'atlas : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+      "notes": "Relevé interne de l'atlas. Il enregistre que le nom est porté en Guinée, sans qu'un travail publié ait été consulté pour cette attestation-là : les sources nommées à côté documentent le nom au Mali et dans le Manden, non sa répartition guinéenne. Les autres affirmations de cette fiche ne reposent pas sur ce relevé."
     }
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "L'atlas ne documente pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "fieldPath": "origin.nisba",
+      "reason": "Les sources consultées ne rattachent pas le nom à une nisba arabe. Elles disent seulement que Ture valait à l'époque des empires soudanais comme un titre religieux, au même rang que Cisse, ce qui n'est pas la même chose qu'une filiation onomastique arabe et ne suffit pas à l'établir."
     },
     {
       "fieldPath": "alliances",
-      "reason": "L'atlas ne documente pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "casteOrSocialFunction",
-      "reason": "L'atlas ne documente pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "bearers",
-      "reason": "L'atlas ne documente pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Une seule paire d'alliance à plaisanterie est attestée par les sources consultées. Le dictionnaire de noms claniques qui la porte n'enregistre pas ses liens dans les deux sens, si bien que d'autres paires peuvent exister sans y figurer."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "L'atlas ne documente pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les sources consultées ne distinguent aucune lignée homonyme d'origine séparée : elles rapportent le même nom à un même ensemble de clans soninké et malinké."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : l'atlas ne le documente pas encore pour ce nom."
+      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission, et aucune des sources consultées ne dit comment ce nom-ci se transmet."
     }
   ]
 }

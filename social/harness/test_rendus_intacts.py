@@ -30,6 +30,13 @@ CARROUSEL_DIR = "-".join(reseaux("carrousel"))
 REEL_DIR = "-".join(reseaux("reel"))
 DOSSIERS_PASSANTS = (CARROUSEL_DIR, REEL_DIR)
 
+# The deck the suite renders. It has to be one that still exists: the workshop is
+# not versioned, and the fixture this suite named until 2026-09-16 — `Pays-Benin`
+# — lost its `cards.json` in the 12 September reset. Every test here had been
+# erroring on the missing file ever since, and nothing said so, because the suite
+# reads the corpus and CI reports it « not run » rather than red.
+DECK_TEMOIN = "creole-ne-dans-la-colonie"
+
 
 def _empreinte(dossier):
     """Name and size of every render, which is what « unchanged » has to mean."""
@@ -67,7 +74,7 @@ def _empreinte_ecartes(sujet):
     return _empreinte_qualifiee(sujet / "_rendus-remplaces", DOSSIERS_PASSANTS)
 
 
-def _deck_temporaire(source_nom, bac, casser_licence):
+def _deck_temporaire(source_nom, bac, casser_licence, casser_composition=False):
     """A copy of a real deck, pointed at the scratch directory."""
     source = PROJETS / source_nom
     projet = bac / source_nom
@@ -86,8 +93,30 @@ def _deck_temporaire(source_nom, bac, casser_licence):
     deck["outDir"] = str(sujet)
     if casser_licence:
         deck["cartes"][0]["image"]["licence"] = ""     # gate 1 will refuse the lot
+    if casser_composition:
+        # A fault gate 1 cannot see: it is only found by composing the card. The
+        # opening title is the one block §1 ter forbids shrinking, so an
+        # over-long one overflows its slot instead of quietly reducing — and the
+        # slot is tightest in B, which §6 gives an opening whose body is short
+        # and which carries no pair. That is the shape `diallo-djallo` had.
+        ouverture = deck["cartes"][0]
+        ouverture["titre"] = ("Les frontières de huit pays traversent les Diallo "
+                              "et personne ne l'avait encore écrit nulle part.")
+        ouverture["corps"] = "Nommer un peuple aussi facilement qu'un pays."
+        ouverture["paires"] = None
+        ouverture["disposition"] = "auto"   # this deck pins its opening to A
     (projet / "cards.json").write_text(json.dumps(deck, ensure_ascii=False, indent=2),
                                        encoding="utf-8")
+
+    # §5 — the message gate reads a verdict filed beside the deck and refuses one
+    # older than the text it judges. Copying a deck and rewriting its `cards.json`
+    # makes the real `message.md` stale by construction, so the fixture files a
+    # fresh passing verdict: what these tests are about is where renders land, not
+    # whether an audit was run.
+    (projet / "message.md").write_text(
+        "# Audit du message\n\nverdict : **passe**\n", encoding="utf-8")
+    (projet / "mythe.md").write_text(
+        "# Mythe\n\nverdict : **explique**\n", encoding="utf-8")
     return projet, sujet
 
 
@@ -111,7 +140,7 @@ def test_a_failed_gate_leaves_images_untouched():
     """
     with tempfile.TemporaryDirectory() as bac:
         bac = pathlib.Path(bac)
-        projet, sujet = _deck_temporaire("Pays-Benin", bac, casser_licence=True)
+        projet, sujet = _deck_temporaire(DECK_TEMOIN, bac, casser_licence=True)
 
         avant = _empreinte_totale(sujet)
         assert avant, "le décor du test doit poser une génération précédente"
@@ -129,11 +158,52 @@ def test_a_failed_gate_leaves_images_untouched():
         assert _empreinte(sujet / "_epreuves"), "l'épreuve doit être rendue quand même"
 
 
+def test_a_composition_fault_never_reaches_a_network_folder():
+    """A gate found *while* composing files the lot like any other refusal.
+
+    Measured on `diallo-djallo`, 2026-09-16: the opening title overflowed its
+    slot, which only composing the card can reveal. The engine had already
+    chosen its destination from a verdict that still said « passe », so the
+    twelve renders landed in the network folders — unstamped, unsuffixed, and
+    one upload away from being published — while the report was written to
+    `_epreuves/` saying the four gates had been cleared.
+
+    The order is the whole fix: measure every card, then settle the verdict,
+    then write.
+    """
+    with tempfile.TemporaryDirectory() as bac:
+        bac = pathlib.Path(bac)
+        projet, sujet = _deck_temporaire(DECK_TEMOIN, bac, casser_licence=False,
+                                         casser_composition=True)
+
+        avant = _empreinte_totale(sujet)
+        assert avant, "le décor du test doit poser une génération précédente"
+
+        r = _rendre(projet, "--remplacer")
+        assert "ÉPREUVE" in r.stdout, r.stdout[-600:]
+
+        apres = _empreinte_totale(sujet)
+        assert apres == avant, (
+            f"un lot en faute de composition a écrit dans un dossier-réseau : "
+            f"{sorted(set(apres) - set(avant))}")
+        assert not (sujet / "_rendus-remplaces").exists(), (
+            "un lot refusé ne doit rien écarter")
+
+        epreuves = _empreinte(sujet / "_epreuves")
+        assert epreuves, "l'épreuve doit être rendue quand même"
+        assert all(nom.endswith("-epreuve.png") for nom in epreuves), (
+            f"une épreuve porte le suffixe `-epreuve` : {sorted(epreuves)}")
+
+        rapport = (sujet / "_epreuves" / "RENDU.md").read_text(encoding="utf-8")
+        assert "Les cinq portes sont franchies" not in rapport, (
+            "le rapport d'une épreuve ne peut pas annoncer un lot qui passe")
+
+
 def test_a_passing_lot_replaces_only_after_writing():
     """The set-aside happens after the write, and only over what was there before."""
     with tempfile.TemporaryDirectory() as bac:
         bac = pathlib.Path(bac)
-        projet, sujet = _deck_temporaire("Pays-Benin", bac, casser_licence=False)
+        projet, sujet = _deck_temporaire(DECK_TEMOIN, bac, casser_licence=False)
 
         avant = _empreinte_totale(sujet)
         r = _rendre(projet, "--remplacer")
@@ -154,7 +224,7 @@ def test_nothing_is_deleted_only_moved():
     """The atelier has no version control, so a delete here is final."""
     with tempfile.TemporaryDirectory() as bac:
         bac = pathlib.Path(bac)
-        projet, sujet = _deck_temporaire("Pays-Benin", bac, casser_licence=False)
+        projet, sujet = _deck_temporaire(DECK_TEMOIN, bac, casser_licence=False)
 
         avant = _empreinte_totale(sujet)
         _rendre(projet, "--remplacer")

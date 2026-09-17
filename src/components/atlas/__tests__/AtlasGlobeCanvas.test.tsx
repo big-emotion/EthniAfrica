@@ -24,6 +24,7 @@ const countryOverlay: CountryOutlineOverlay = {
   countryId: "ZAF",
   rings: [square],
   fillOpacity: 0.22,
+  sovereigntyContested: false,
 };
 
 /** Five points, not four, so a per-country draw is distinguishable from the square's by its vertex count alone. */

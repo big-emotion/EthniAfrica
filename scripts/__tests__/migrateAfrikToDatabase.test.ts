@@ -320,6 +320,7 @@ describe("migrateAfrikToDatabase", () => {
       peopleLinks: 0,
       countryLinks: 0,
       bearerLinks: 0,
+      namedBearerLinks: 0,
       alliances: 0,
       errors: [],
     });
@@ -585,6 +586,7 @@ describe("migrateAfrikToDatabase", () => {
       peopleLinks: 2,
       countryLinks: 2,
       bearerLinks: 1,
+      namedBearerLinks: 1,
       alliances: 1,
       errors: [],
     });
@@ -642,6 +644,7 @@ describe("migrateAfrikToDatabase", () => {
         peopleLinks: 1,
         countryLinks: 1,
         bearerLinks: 1,
+        namedBearerLinks: 0,
         alliances: 0,
         errors: [],
       };

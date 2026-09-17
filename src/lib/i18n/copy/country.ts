@@ -101,6 +101,22 @@ const en = {
     areaNoun: "the atlas",
     returnTo: (name: string) => `Return to ${name}`,
     missingOutline: (name: string) => `Outline unavailable for ${name}`,
+    /**
+     * Atlas charter §1 asks for the reason to be stated once, next to the
+     * mark. The two institutions are named separately and left to disagree:
+     * reconciling them into one neutral sentence would be the atlas settling
+     * the question again, quietly, which is the defect this whole encoding
+     * exists to undo.
+     *
+     * `encoding` is not decoration. Without it an outline with nothing inside
+     * reads as a rendering fault rather than as a statement.
+     */
+    disputedStatus: {
+      label: "Contested status",
+      body: "This territory's extent is dated and citable: the 1912 Franco-Spanish convention sets its northern limit at the 27°40′N parallel. Its sovereignty is not. The United Nations has listed it among the non-self-governing territories since 1963 and records no administering power there since Spain withdrew in 1976; the African Union seats a member state for it, the Sahrawi Arab Democratic Republic.",
+      encoding:
+        "So the atlas traces what it can cite and leaves unfilled what it cannot: the outline closes, the inside stays empty.",
+    },
   },
   generated: {
     eras: {
@@ -218,6 +234,12 @@ const fr: CountryCopy = {
     areaNoun: "l'atlas",
     returnTo: (name) => `Revenir à ${name}`,
     missingOutline: (name) => `Contour non disponible pour ${name}`,
+    disputedStatus: {
+      label: "Statut contesté",
+      body: "L'étendue de ce territoire est datée et citable : la convention franco-espagnole de 1912 en fixe la limite nord au parallèle 27°40′N. Sa souveraineté ne l'est pas. L'ONU l'inscrit depuis 1963 parmi les territoires non autonomes et n'y enregistre aucune puissance administrante depuis le retrait espagnol de 1976 ; l'Union africaine y siège un État membre, la République arabe sahraouie démocratique.",
+      encoding:
+        "L'atlas trace donc ce qu'il peut citer et laisse vide ce qu'il ne peut pas : le trait se referme, l'intérieur reste vide.",
+    },
   },
   generated: {
     eras: {

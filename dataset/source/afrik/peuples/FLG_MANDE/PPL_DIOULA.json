@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Dioula",
-      "selfAppellation": "Jula ou Dyula (le peuple se designe en langue dioula par Julakan, signifiant les gens du commerce ou les commerçants)",
+      "selfAppellation": "Jula ou Dyula. Le mot jula désigne le marchand ; au pluriel, julaw. Julakan est le nom de la langue, le suffixe kan désignant en mandingue la langue et non les gens.",
       "exonyms": [
         "Dyula (graphie anglophone internationale)",
         "Jula (graphie phonologique adoptee par les linguistes)",
@@ -136,6 +136,18 @@
         "title": "Minority Rights Group – Cote d'Ivoire",
         "url": "https://minorityrights.org/country/cote-divoire/",
         "tier": "referenced"
+      },
+      {
+        "title": "Donaldson, Coleman (2017) – Orthography, Standardization, and Register: The Case of Manding",
+        "url": "https://core.ac.uk/download/219377367.pdf",
+        "tier": "referenced",
+        "notes": "Chapitre de Standardizing Minority Languages, Routledge. Donne la morphologie des glottonymes mandingues : ka pour l'habitant, kan pour la langue."
+      },
+      {
+        "title": "Dictionnaire bambara et dioula An ka taa",
+        "url": "https://dictionary.ankataa.com/lexicon.php?letter=11",
+        "tier": "unverified",
+        "notes": "Compilation en ligne dérivée des dictionnaires de Bailleul, Dumestre et Vydrin. Donne jula pour le commerçant, jago pour le commerce, et julakan pour la langue."
       }
     ]
   },

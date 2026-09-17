@@ -52,6 +52,17 @@ export interface AssertionRow {
 // flags (post-018 additions)
 // ---------------------------------------------------------------------------
 
+/**
+ * The second axis of a report, orthogonal to `status` (migration 092).
+ *
+ * `status` is the disposition — what the atlas thinks of the remark.
+ * This is the remediation — what changed in the corpus. It is written by the
+ * publication of a correction, never by a moderator's decision, which is the
+ * whole reason the two are not one label.
+ */
+export type FlagRemediationState =
+  "not_started" | "in_progress" | "published" | "not_applicable";
+
 export interface FlagRow {
   id: string;
   entity_type: string | null;
@@ -95,4 +106,12 @@ export interface FlagRow {
    * contributor left, which the public API never returns (migration 081).
    */
   contribution_payload: Record<string, unknown> | null;
+  /** NULL while the report is still open or under review — see migration 092. */
+  remediation_state: FlagRemediationState | null;
+  /** Mandatory in Postgres whenever `remediation_state` is `published`. */
+  remediation_published_at: string | null;
+  /** Published to the reader verbatim; obeys the reader-facing register. */
+  remediation_summary: string | null;
+  /** The draft carrying the correction, once the revision loop is wired. */
+  revision_draft_id: string | null;
 }

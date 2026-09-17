@@ -54,6 +54,9 @@ export interface PublicFlagListItem {
   createdAt: string;
   contributorName: string;
   target: PublicFlagTarget;
+  /** The second axis: what changed in the corpus (migration 092). */
+  remediationState: FlagRow["remediation_state"];
+  remediationPublishedAt: string | null;
 }
 
 export interface PublicFlagsPage {
@@ -75,6 +78,8 @@ interface PublicFlagQueryRow {
   severity: FlagRow["severity"];
   auto_generated: boolean;
   created_at: string;
+  remediation_state: FlagRow["remediation_state"];
+  remediation_published_at: string | null;
 }
 
 interface AssertionContextRow {
@@ -352,7 +357,7 @@ export async function queryPublicFlagsPage(
   let query = supabase
     .from("flags")
     .select(
-      "id, public_slug, flag_kind, status, entity_type, entity_id, reason_text, contributor_id, assertion_id, assertion_field_path, severity, auto_generated, created_at"
+      "id, public_slug, flag_kind, status, entity_type, entity_id, reason_text, contributor_id, assertion_id, assertion_field_path, severity, auto_generated, created_at, remediation_state, remediation_published_at"
     );
 
   if (statuses.length > 0) {
@@ -478,6 +483,8 @@ export async function queryPublicFlagsPage(
       createdAt: row.created_at,
       contributorName: getContributorName(contributor),
       target,
+      remediationState: row.remediation_state ?? null,
+      remediationPublishedAt: row.remediation_published_at ?? null,
     };
   });
 

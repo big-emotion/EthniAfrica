@@ -148,15 +148,14 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
     },
     "burkina-faso": {
       headline:
-        "The name of Burkina Faso is written in three languages at once.",
+        "The name of Burkina Faso is made of two words taken from two languages.",
       body: [
-        "Burkina comes from Mooré and means “upright”; faso comes from Dioula, where fa is the father and so the house — the homeland. The demonym, Burkinabè, takes the Fula suffix -ɓe, the one found in Fulɓe. Three languages of the country in two words and an adjective.",
-        "Thomas Sankara proclaims it on 4 August 1984, replacing Upper Volta — a river's name, given by the colonial administration, which said nothing of the sixty-odd peoples it covered. The new name chooses none of them: it makes them speak together.",
+        "Burkina comes from Mooré and says integrity, honour; faso comes from Dioula and says the country, the homeland. Together: the homeland of upright people. The demonym, Burkinabè, belongs to neither — the geographer Alain Maharaux writes that it borrows from the country's three main languages.",
+        "An ordinance of 2 August 1984 substitutes it for Upper Volta, effective on 4 August, a year to the day after Thomas Sankara came to power. Upper Volta was a name given by the colonial administration, which said nothing of the peoples it covered. The new one chooses none of them: it makes them speak together.",
       ],
       entities: [
         { kind: "country", id: "BFA", label: "Burkina Faso" },
         { kind: "people", id: "PPL_MOSSI", label: "Mossi" },
-        { kind: "people", id: "PPL_FULANI", label: "Fulɓe (Peul)" },
       ],
       tier: "referenced",
       sources: [
@@ -164,6 +163,12 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           title:
             "Jeune Afrique — Le 4 août 1984, Thomas Sankara rebaptisait la Haute-Volta en Burkina Faso",
           url: "https://www.jeuneafrique.com/48652/politique/le-4-ao-t-1984-thomas-sankara-rebaptisait-la-haute-volta-en-burkina-faso/",
+          tier: "referenced",
+        },
+        {
+          title:
+            "Alain Maharaux — La Haute-Volta devient Burkina Faso : un territoire qui se crée, se défait et s'affirme au rythme des enjeux, 1995",
+          url: "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-32.pdf",
           tier: "referenced",
         },
       ],

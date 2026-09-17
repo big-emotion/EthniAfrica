@@ -70,7 +70,7 @@
       "migrationRoutes": [
         "Du Sahara occidental vers la vallee du Senegal (Fouta Toro/Tekrur) — avant le Xe siecle",
         "Du Fouta Toro vers l'est, Hausaland et Bornou — XIe au XIVe siecle",
-        "Vers le Fouta Djallon (Guinee) — a partir du XVIIe siecle",
+        "Vers le Fouta Djallon (Guinee) - deux vagues distinctes : eleveurs animistes a partir du XIVe siecle, puis musulmans aux XVIIe et XVIIIe siecles, qui fondent la theocratie",
         "Vers le Hausaland et Bornou — XVe siecle, flux constant",
         "Vers le Baghirmi — debut XVIe siecle",
         "Vers la vallee de la Benoue et l'Adamaoua — fin XVIIIe siecle",
@@ -78,7 +78,7 @@
       ],
       "historicalSettlementZones": [
         "Fouta Toro (Senegal/Mauritanie meridionale) — zone originelle",
-        "Fouta Djallon (Guinee centrale) — haute altitude, XIIe-XVIIIe siecle",
+        "Fouta Djallon (Guinee centrale) - haute altitude ; Peul eleveurs et animistes a partir du XIVe siecle, puis musulmans aux XVIIe et XVIIIe siecles",
         "Massina/Macina (delta interieur du Niger, Mali) — siecles XII-XIX",
         "Hausaland (nord Nigeria/sud Niger) — emirats du Califat de Sokoto",
         "Adamaoua (Nigeria nord-est, Cameroun) — XIX siecle",
@@ -202,9 +202,9 @@
         "tier": "official"
       },
       {
-        "title": "CIA World Factbook — Country profiles",
-        "url": "https://www.cia.gov/the-world-factbook/",
-        "tier": "official"
+        "title": "Fieloux, Michele - compte rendu de Thierno Diallo, Les institutions politiques du Fouta Dyalon au XIXe siecle (Dakar, IFAN, 1972) - Cahiers d'Etudes africaines, 14 (54), 1974, p. 402-403",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1974_num_14_54_2655_t1_0402_0000_2",
+        "tier": "referenced"
       }
     ]
   },

@@ -2,6 +2,7 @@ import { render, screen, within } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
 import { NOMMER_CHAPTERS } from "@/lib/dossiers/nommer/chapters";
+import { NOMMER_FIGURES } from "@/lib/dossiers/nommer/figures";
 import { NOMMER_CHAPTERS_EN } from "@/lib/dossiers/nommer/chapters/index.en";
 import { getNommerChapterRoute } from "@/lib/routing";
 
@@ -66,16 +67,34 @@ describe("the Nommer pillar", () => {
 
   // The three numbers that replace a percentage: the gap is published beside
   // the finding, which is the whole reason the band exists.
+  //
+  // The counts are read from the ledger rather than spelled out, because the
+  // corpus moves and this test is not the one that guards their value —
+  // nommerFigures.test.ts replays every count against the fiches on disk. What
+  // is asserted here is that the band states the gap in the same breath as the
+  // finding, which is what a hardcoded pair of numbers kept failing to protect.
   // @req REQ-113
   it("states the undeclared pages beside the contested ones", () => {
     render(<NommerPillarPage language="fr" />);
 
-    expect(screen.getByText(/445 sur 775/)).toBeInTheDocument();
+    const counted = (figureKey: string): number => {
+      const figure = NOMMER_FIGURES[figureKey];
+      expect(figure.kind, `figure ${figureKey} is counted`).toBe("counted");
+      return (figure as { value: number }).value;
+    };
+    const peoples = counted("corpus-peoples");
+
     expect(
-      screen.getByText(/311 pages de peuple sur 775 ne déclarent aucun statut/)
+      screen.getByText(
+        new RegExp(`${counted("status-contested-or-colonial")} sur ${peoples}`)
+      )
     ).toBeInTheDocument();
     expect(
-      screen.getByText(/311 pages de peuple sur 775 ne déclarent aucun statut/)
+      screen.getByText(
+        new RegExp(
+          `${counted("status-undeclared")} pages de peuple sur ${peoples} ne déclarent aucun statut`
+        )
+      )
     ).toBeInTheDocument();
   });
 

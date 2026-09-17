@@ -95,6 +95,71 @@ personne"}, {"terme": "Basotho", "glose": "le peuple"}, …]`. Le parallèle
   contraignante du lot, et `produire` la recalcule. Écris ce que tu crois, elle
   sera vérifiée.
 
+## Un lot sur un pays : ce que l'audience doit repartir avec
+
+Décidé par l'opérateur le 2026-09-16, sur un premier jet Guinée dont le flux
+était juste et dont on ne retenait que trois choses : le nom vient de la mer, il
+y a eu un État, un autre peuple était là aussi. C'est un décor, pas un savoir.
+La trame de référence est `cote-divoire-le-renversement`, dont la carte 5 fait
+à elle seule ce que ce jet entier avait manqué.
+
+**Le nom remonte, puis les peuples remontent.** Le lot monte du nom actuel vers
+le moment le plus ancien qui représente ce pays — puis, arrivé là, il redescend
+sur les gens : d'où vient chacun de ceux qui l'habitent. Quatre choses doivent
+être acquises à la fin, et elles se vérifient carte par carte.
+
+### 1. Les interprétations du nom sont le contenu, pas une liste à expédier
+
+Quand un nom a plusieurs origines proposées, **chacune se raconte** : de quelle
+langue elle vient, ce que le mot y veut dire, qui la porte. « L'origine est
+incertaine, voici trois pistes » en une carte ne laisse rien au lecteur — il
+retient « on ne sait pas », ce qui est le contraire d'un savoir.
+
+Une piste qui vaut d'être citée vaut d'être expliquée. Si le lot n'a pas la
+place de le faire pour les trois, il en prend une ou deux et le dit, plutôt que
+de toutes les mentionner sans en éclairer aucune. **Ce sont ces interprétations
+que l'audience vient chercher** — pas l'arbitrage entre elles, qui d'ailleurs
+ne nous appartient pas (`CLAUDE.md`, Source Tier Policy ; cinquième question
+d'`ethniafrica-onomastique`).
+
+### 2. D'où vient chaque peuple, nommé un par un
+
+C'est la carte qui manque le plus souvent, et c'est celle qui porte le propos
+du projet. Pas « les peuples ont migré » : **quel peuple, depuis où**.
+
+> Les Akan, de l'est, du Ghana d'aujourd'hui. Les Mandé, du Manden, à cheval sur
+> le Mali et la Guinée. Les Sénoufo, du Mali. Les Krou ont quitté la savane pour
+> la forêt. — `cote-divoire-le-renversement`, carte 5
+
+Un lot sur un pays répond à cette question pour **chacun de ses grands groupes**,
+y compris le majoritaire — surtout le majoritaire, puisque c'est lui qu'on croit
+autochtone. Une origine que le corpus ne porte pas se dit comme telle ; elle ne
+se remplace pas par un silence qui laisse croire que ce peuple a toujours été là.
+
+### 3. Pourquoi le nom est resté, et ce que celui qui l'a donné a laissé
+
+Un pays qui garde son nom colonial, ou un nom venu du dehors, **a une raison de
+l'avoir gardé**, et cette raison est un contenu. Le lot dit qui l'a donné, et ce
+qu'il en reste aujourd'hui autrement que le nom : une ville, un quartier, une
+langue officielle, une frontière, une institution. C'est la quatrième question
+d'`ethniafrica-onomastique` appliquée au pays, et elle est rarement posée parce
+que le nom semble aller de soi une fois son étymologie donnée.
+
+Quand un pays s'est renommé, la question s'inverse et reste la même : qui a
+choisi le nouveau nom, et qu'est-il resté de l'ancien.
+
+### 4. L'endonyme, y compris dans les mots de la pièce
+
+La règle « l'endonyme d'abord » (`docs/editorial/purpose-doctrine.md`, 2026-09-14)
+ne vaut pas que pour les peuples dont le lot parle : **elle vaut pour les mots
+que le lot emploie en passant.** Écrire « le berbère _akal n-iguinawen_ » dans une
+pièce qui explique que les exonymes ont été imposés se contredit dans sa propre
+phrase — c'est **amazigh**, pluriel **imazighen**. De même **Fulɓe** plutôt que
+« peul » dès que la pièce a la place de le poser.
+
+Relis le lot en cherchant les exonymes que tu as employés sans t'en apercevoir,
+comme s'ils étaient des mots neutres : ce sont ceux-là qui passent.
+
 ## La clôture, et la fin parlée
 
 Le titre et le corps de la clôture **varient avec le type de contenu** : ils

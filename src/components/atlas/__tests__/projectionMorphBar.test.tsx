@@ -29,6 +29,7 @@ const countryOverlay: CountryOutlineOverlay = {
   countryId: "ZAF",
   rings: [square],
   fillOpacity: 0.22,
+  sovereigntyContested: false,
 };
 
 const MORPH_BAR_NAME = "Morphing de la carte plate vers le globe";

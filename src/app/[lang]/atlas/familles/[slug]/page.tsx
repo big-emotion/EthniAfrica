@@ -30,6 +30,7 @@ import { FamilyFicheTitle } from "@/components/family/FamilyFicheTitle";
 import { FamilyFootprintLegend } from "@/components/family/FamilyFootprintLegend";
 import { buildFamilyTargetFacts } from "@/components/family/familyTargetFacts";
 import { LanguageFamilyDetailViewV2 } from "@/components/family/LanguageFamilyDetailViewV2";
+import { readProvenanceCensus } from "@/lib/fiche/provenanceCensus";
 import {
   buildFamilyFootprintOverlay,
   getAdmin0Name,
@@ -222,6 +223,7 @@ export default async function FamillesSlugPage({
   const familyLanguages = await getAfrikLanguagesByFamily(parsed.slug).catch(
     () => []
   );
+  const provenance = await readProvenanceCensus("language-family", family.id);
 
   const recordView = (
     <LanguageFamilyDetailViewV2
@@ -231,6 +233,7 @@ export default async function FamillesSlugPage({
       memberPeoples={memberPeoples}
       memberPeopleCount={memberPeoples.length}
       footprintProvenance={footprintProvenance}
+      provenance={provenance}
       onward={
         <FicheOnward
           from="language-family"

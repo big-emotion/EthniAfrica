@@ -174,11 +174,44 @@ export function getWorldCompareRings(shapeId: string): Ring[] | undefined {
 // from the graticule and neighbour lines crossing underneath it.
 export const COUNTRY_FILL_OPACITY = 0.34;
 
+/**
+ * The country encoding asserts two separate things, and a contested territory
+ * can only support one of them: the closing trace says *this boundary is
+ * published, dated and citable*, the fill says *a recognised sovereignty
+ * occupies it*. Western Sahara's extent is citable — the 1912 Franco-Spanish
+ * convention bounds it at the 27°40′N parallel, the extent the UN has listed
+ * since 1963 — while no state's authority over it is. So the trace stays and
+ * the fill goes.
+ *
+ * A dashed boundary would be the wrong borrow: the dash belongs to the family
+ * encoding and means *this area was reconstructed*, which would claim the
+ * atlas guessed an outline it can in fact cite.
+ */
+// @req REQ-116
+export const CONTESTED_TERRITORY_FILL_OPACITY = 0;
+
+/**
+ * Territories the asset draws whose sovereignty no source in the corpus
+ * settles. Keyed by every id `admin0Entry` accepts, so the ISO code and the
+ * asset's own Natural Earth key cannot disagree about the same shape.
+ *
+ * Somaliland is not here because it never reaches this function: it has no ISO
+ * code and `ADMIN0_KEY_BY_ISO` deliberately leaves `SOL` unaliased, so no
+ * corpus record resolves to it.
+ */
+const CONTESTED_SOVEREIGNTY_IDS = new Set(["ESH", "SAH"]);
+
 export interface CountryOutlineOverlay {
   kind: "country-outline";
   countryId: CountryId;
   rings: Ring[];
   fillOpacity: number;
+  /**
+   * True where the outline is drawn but the fill is withheld. Carried
+   * explicitly rather than inferred from `fillOpacity === 0` so a renderer
+   * cannot paint the inside back in by treating the zero as a default.
+   */
+  sovereigntyContested: boolean;
 }
 
 // @req REQ-116
@@ -187,11 +220,15 @@ export function buildCountryOutlineOverlay(
 ): CountryOutlineOverlay | null {
   const rings = getAdmin0Rings(countryId);
   if (!rings || rings.length === 0) return null;
+  const sovereigntyContested = CONTESTED_SOVEREIGNTY_IDS.has(countryId);
   return {
     kind: "country-outline",
     countryId,
     rings,
-    fillOpacity: COUNTRY_FILL_OPACITY,
+    fillOpacity: sovereigntyContested
+      ? CONTESTED_TERRITORY_FILL_OPACITY
+      : COUNTRY_FILL_OPACITY,
+    sovereigntyContested,
   };
 }
 

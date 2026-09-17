@@ -71,6 +71,7 @@ const countryOverlay: CountryOutlineOverlay = {
   countryId: "ZAF",
   rings: [square],
   fillOpacity: 0.22,
+  sovereigntyContested: false,
 };
 
 const peopleOverlay: PeopleFieldOverlay = {

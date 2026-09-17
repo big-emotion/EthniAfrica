@@ -66,6 +66,14 @@ reprend les critères non tenus. Elle existe parce que l'audit du 2026-09-13 a
 trouvé la doctrine dans deux productions sur vingt-sept, alors que toutes
 avaient franchi les quatre premières portes.
 
+**Le moteur la tient lui-même depuis le 2026-09-16** (`porte_message`) : il lit
+`message.md` et `mythe.md` à côté du deck, et refuse le lot si le verdict dit
+« ne passe pas », s'il est plus ancien que le texte qu'il juge, ou — pour
+`message.md` seul — s'il n'existe pas. Jusque-là cette porte ne vivait que dans
+ce skill, et un lot qui franchissait les quatre portes mécaniques partait en
+dossier-réseau quel qu'ait été le verdict du message. **Lancer l'audit reste ton
+travail** : le moteur lit un verdict, il ne sait pas en rendre un.
+
 Une épreuve porte un **bandeau diagonal « ÉPREUVE — NE PAS PUBLIER »** et un
 encart listant les portes non franchies, en clair, avec ce qu'il faut pour les
 franchir. Elle ne va jamais dans un dossier-réseau, et son nom de fichier porte

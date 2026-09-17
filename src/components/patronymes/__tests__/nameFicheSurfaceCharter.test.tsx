@@ -55,6 +55,7 @@ const filled: PublicPatronyme = {
       roleCategory: "Souverain précolonial",
     },
   ],
+  namedBearers: [{ displayName: "Sogolon Kedjou", status: "deceased" }],
   content: {
     nameMain: "Keïta",
     nameSystem: "clan_name",
@@ -108,6 +109,7 @@ const filled: PublicPatronyme = {
 /** The same dossier with nothing documented and no editor's wording either. */
 const bare: PublicPatronyme = {
   ...filled,
+  namedBearers: [],
   alliances: [],
   casteOrSocialFunction: null,
   associatedPeoples: [],

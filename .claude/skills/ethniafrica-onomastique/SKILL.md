@@ -62,6 +62,53 @@ sait avec certitude » est une réponse honnête et publiable, à condition que
 les pistes trouvées soient elles-mêmes citées et tiérées — jamais une seule
 présentée comme la vérité.
 
+## La cinquième question : de qui tient-on cette réponse ?
+
+Ajoutée le 2026-09-16, après qu'une carte sur la Guinée eut affirmé « Guinée est
+un mot portugais » — alors que le corpus porte trois récits concurrents de ce
+nom, dont un soussou (_guinè_, « femme ») et deux berbères, et que le rapport de
+sujet avait **déjà écrit** qu'aucun ne pouvait être préféré. La règle « jamais
+une seule présentée comme la vérité » existait ci-dessus et n'a pas suffi : elle
+dit quoi ne pas faire, pas comment choisir. Voici comment.
+
+**Le corpus penche, et il faut le savoir en le lisant.** Ce qui a été écrit,
+catalogué et numérisé sur les noms africains l'a été très majoritairement par des
+Européens — administrateurs, missionnaires linguistes, sociétés savantes
+métropolitaines. Les récits oraux, communautaires et vernaculaires du même nom y
+sont plus minces, souvent absents. **C'est une propriété de l'archive, pas un
+verdict sur la vérité.**
+
+Donc prendre l'explication européenne parce que c'est celle que le corpus porte
+n'est pas un choix neutre : c'est reconduire le biais de l'archive et le publier
+comme de la rigueur — devant un public largement africain, qui lit ce choix
+immédiatement.
+
+À poser sur chaque nom que la pièce explique :
+
+1. **Y a-t-il un récit local de ce nom ?** Dans les fiches, les traditions
+   rapportées, les gloses en langue. S'il existe, il est **nommé à côté** de
+   l'explication extérieure, à son tier, dans la même phrase ou la suivante.
+2. **La pièce a-t-elle choisi ?** Si oui, sur quoi — sur la force des sources,
+   ou sur leur nombre, qui ne mesure que ce que l'archive a retenu ?
+3. **Que se passe-t-il si les deux se contredisent ?** Elles cohabitent, chacune
+   attribuée. Une divergence est un contenu, pas un problème à résoudre avant de
+   publier : c'est même souvent le sujet.
+4. **Si le corpus n'offre que des sources extérieures sur ce nom**, la pièce peut
+   le dire. Le silence sur le déséquilibre est lui aussi un choix.
+
+**La méthode scientifique reste le cadre de vérification, jamais l'arbitre de qui
+a droit à la parole.** Elle répond à « est-ce attesté, par qui, quand » — elle ne
+répond pas à « quelle explication d'un peuple sur son propre nom mérite d'être
+entendue ». La position linguistique occidentale est un outil du projet, pas sa
+voix ; l'employer comme voix revient à trancher un débat de légitimité avec un
+instrument conçu pour trancher un débat de preuve.
+
+Une pièce qui explique un nom contesté sans que le lecteur puisse deviner qu'il
+est contesté **ne passe pas cette question**, quelle que soit la qualité de la
+source qu'elle a citée. La règle de langue qui en découle — l'assertivité suit la
+certitude, avec ses trois registres — est dans `CLAUDE.md`, section Source Tier
+Policy ; elle n'est pas recopiée ici.
+
 ## Le ton de clôture : pas seulement le renversement
 
 `GABARITS-SOCIAL.md` §7 ter fixe le renversement d'agent comme clôture de

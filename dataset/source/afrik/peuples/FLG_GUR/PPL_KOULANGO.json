@@ -23,12 +23,12 @@
         "Goutougo"
       ],
       "originOfExonyms": "Les Lorhon sont les ancêtres des Koulango. Sous le règne de Bounkani (XVIIe siècle), le fondateur du royaume aurait renommé son peuple Koulango, terme signifiant 'ceux qui n'ont pas peur de la mort' en référence à l'esprit guerrier qu'il voulait inculquer. Les Dioula les appelaient Pakhallas. Le nom Lorhon (ou Ngwela, Babé) désigne les populations proto-Koulango antérieures au royaume de Bounkani. Goutougo est le nom local du dialecte de Bondoukou.",
-      "whyProblematic": "La dénomination Koulango recouvre deux dialectes distincts (Bouna et Bondoukou), parfois traités comme des langues séparées par les linguistes (codes ISO distincts : nku pour Bouna, kzc pour Bondoukou). Le terme Lorhon peut désigner les ancêtres Koulango mais est encore utilisé pour certaines communautés.",
+      "whyProblematic": "La dénomination Koulango recouvre deux dialectes distincts (Bouna et Bondoukou), parfois traités comme des langues séparées par les linguistes (codes ISO distincts : nku pour Bouna, kzc pour Bondoukou). Le terme Lorhon peut désigner les ancêtres Koulango mais est encore utilisé pour certaines communautés. Le nom Koulango a par ailleurs d'abord désigné une catégorie sociale, et n'a pris son sens ethnique qu'à l'époque coloniale.",
       "contemporaryUsage": "Koulango est l'appellation officielle en Côte d'Ivoire. La variante Kulango est préférée dans la littérature anglophone et ghanéenne. Les deux graphies coexistent dans les publications académiques et les organisations de développement."
     },
     "ethnicities": ["Koulango", "Lorhon"],
     "origins": {
-      "ancientOrigins": "Les ancêtres des Koulango, appelés Lorhon, occupaient la région de Bouna (nord-est de la Côte d'Ivoire) depuis au moins le XIe siècle. Vers ce siècle, ils étaient organisés en une petite chefferie à Kodo (village situé à 60 km de Bouna), sous la direction du roi Haingère qui cumulait les fonctions de chef de terre (Goro-Issié). La tradition orale situe l'origine de la royauté dans la rencontre entre un prince Dagomba du Ghana actuel (Garzyao) et les Lorhon locaux.",
+      "ancientOrigins": "Les traditions rapportées font des Lorhon les habitants anciens de la région de Bouna, dans le nord-est de la Côte d'Ivoire, et situent une petite chefferie à Kodo, village à soixante kilomètres de Bouna, sous la direction du roi Haingère, qui cumulait la fonction de chef de terre. Ces mêmes récits placent l'origine de la royauté dans la rencontre entre un prince dagomba venu du Ghana actuel et les Lorhon. Aucune étude publiée ne date cette présence ancienne. Le premier repère daté par la recherche est la fondation du royaume par Bounkani, au début du XVIIe siècle.",
       "formationPeriod": "Le Royaume Koulango de Bouna est fondé au début du XVIIe siècle par Bounkani, fils d'un prince Dagomba et d'une mère Lorhon. Bounkani transforme la chefferie Lorhon en royaume guerrier de type Dagomba par voie de conquête, et institue une succession patrilinéaire en remplacement de l'organisation matrilinéaire traditionnelle des Lorhon. Ce royaume devient le premier État à pouvoir centralisé formé dans les frontières de l'actuelle Côte d'Ivoire.",
       "migrationRoutes": [
         "Peuplement autochtone Lorhon dans la région de Bouna (XIe siècle)",
@@ -125,6 +125,24 @@
         "title": "Glottolog — Bondoukou Kulango (bond1246)",
         "url": "https://glottolog.org/resource/languoid/id/bond1246",
         "tier": "official"
+      },
+      {
+        "title": "Boutillier, Jean-Louis — Bouna, royaume de la savane ivoirienne. Princes, marchands et paysans, Karthala et ORSTOM, collection Hommes et Sociétés, 1993, 396 pages",
+        "url": "https://www.documentation.ird.fr/hor/fdi:37306",
+        "tier": "referenced",
+        "notes": "Étude de référence sur le royaume de Bouna. Elle date sa fondation du début du XVIIe siècle, sous Bounkani, et tient ce royaume pour le plus ancien connu de Côte d'Ivoire en l'état des connaissances."
+      },
+      {
+        "title": "Boulègue, Jean — Compte rendu de Bouna, royaume de la savane ivoirienne, Outre-Mers. Revue d'histoire, tome 82, numéro 306, 1995",
+        "url": "https://www.persee.fr/doc/outre_0300-9513_1995_num_82_306_3296_t1_0111_0000_2",
+        "tier": "referenced",
+        "notes": "Cette lecture retient que le nom Koulango a d'abord désigné une catégorie sociale, avant de prendre un sens ethnique à l'époque coloniale."
+      },
+      {
+        "title": "Viti, Fabio — Compte rendu de Bouna, royaume de la savane ivoirienne, Cahiers d'Études africaines, volume 35, numéro 138-139, 1995",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1995_num_35_138_1467_t1_0669_0000_2",
+        "tier": "referenced",
+        "notes": "Seconde lecture de la même étude, qui situe elle aussi la fondation du royaume au début du XVIIe siècle."
       }
     ]
   },

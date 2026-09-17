@@ -633,8 +633,16 @@ qu'une seule carte tombe en C.
 | **A — tiers bas ancré** | **au moins 60 %**, et la majorité dans tous les cas |
 | C — cartouche | au plus 40 % |
 
-B ne compte pas dans ce calcul : il est réservé à l'ouverture et à la bascule, donc
-**au plus 2 par deck** et jamais sur une carte de série.
+B ne compte pas dans ce calcul : il est **réservé à la bascule**, donc **au plus 2 par
+deck** et jamais sur une carte de série ni sur une ouverture.
+
+> Cette ligne disait « réservé à l'ouverture et à la bascule » jusqu'au 2026-09-16,
+> contre les deux énoncés normatifs qui l'encadrent — « B est la disposition de la
+> bascule, jamais de l'ouverture » ci-dessus, et la ligne de §11. `choisir()` suivait
+> la moitié périmée. Corrigé dans les deux, moteur et charte, le jour où le carrousel
+> `diallo-djallo` a vu son ouverture partir en B et son titre de huit mots déborder
+> la fente plus étroite de B — 600 px demandés pour 507 — ce que §1 ter interdit de
+> résoudre en rapetissant le titre.
 
 Un lot hors quota **sort en épreuve** avec le motif, et le rapport de rendu nomme les
 cartes tombées en C et pourquoi. Ce n'est jamais une faute de composition : c'est le
@@ -670,6 +678,42 @@ ethniafrica.com · @ethniafrica
   ils ne s'impriment pas. Si la licence n'est pas connue, la carte ne sort pas.
 - En 9:16 le bloc est au-dessus de y = 1620, sinon l'obligation d'attribution
   est masquée par l'interface.
+
+### Quand le document exact n'existe pas — le voisin le plus proche
+
+**Décidé par l'opérateur le 2026-09-16**, en cherchant une photographie des
+fourneaux de Douroula pour le sujet Burkina Faso. Commons n'en porte aucune, et
+cinq échelons sont revenus vides l'un après l'autre : le site, la commune, la
+région, le fleuve, les forgerons du pays.
+
+La règle : **on descend d'échelon en échelon vers le voisin le plus proche du
+sujet, et on s'arrête au premier document réellement disponible, qu'on crédite
+pour ce qu'il est.** Le voisinage se mesure sur le sujet — le lieu, le peuple, la
+langue, la matière — jamais sur la ressemblance de l'image. Un fourneau camerounais
+dans une scène sur Douroula reste un fourneau camerounais : le crédit le dira,
+et la scène se videra au lieu d'être servie. Un substitut qui ressemble n'est pas
+un voisin.
+
+Quand tous les échelons sont vides, deux issues, jamais l'approximation : une carte
+sans photographie — disposition B, mot plein cadre (§5) — ou une image générée,
+ci-dessous.
+
+### Une image générée est admise, et elle se déclare
+
+**Décidé par l'opérateur le 2026-09-16**, pour une scène dont aucun document libre
+n'existe. Elle suit la doctrine déjà écrite pour les Découvertes,
+`docs/design/imagery-collections.md`, qui gouverne la génération et **n'est pas
+recopiée ici** : stylisée, jamais photoréaliste, **jamais de personne
+photoréaliste**, et portant la marque « image générée ».
+
+Sur une carte sociale, le bloc de crédit nomme la génération à la place de
+l'auteur et du dépôt, et la licence de l'image est CC BY-SA 4.0, limitée à la part
+humaine. Elle entre dans le calcul de la licence de sortie comme toute autre.
+
+**Une image générée ne remplace jamais un document qui existe.** Elle est le
+dernier échelon du voisinage, pas un raccourci pour éviter la recherche : une
+scène rendue en image générée alors qu'une photographie libre existait est une
+scène qui a menti par confort.
 
 ---
 
@@ -775,7 +819,6 @@ s'écrit ici d'abord, jamais dans une carte.
 | un pays et les peuples qui y vivent — *validée le 2026-09-14* | « {Pays}, c'est {n} peuples. » — *sauf sous-cas « qui a nommé ce pays » ou « le mythe du surnom », voir ci-dessous* | « peuples. » | « Ces peuples n'ont pas été rassemblés. » | « rassemblés. » | « C'est la carte qui a été dessinée autour d'eux. » |
 | des villes, des lieux | un registre de la banque ci-dessous | celui du registre | « Cette ville n'a pas changé de nom. » | « nom. » | « On l'a rebaptisée. » |
 | une projection, une carte | un registre de la banque ci-dessous | celui du registre | « La carte ne mentait pas. Elle ne disait pas tout. » | « tout. » | « On l'a redessinée. » |
-| le nom d'un pays | un registre de la banque ci-dessous | celui du registre | « Ce pays ne s'est pas renommé. » | « renommé. » | « On l'a rebaptisé. » — *dérivé de la ligne des villes le 2026-09-13, à valider* |
 | une langue, une famille | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas disparu. » | « disparu. » | « C'est la case qu'on lui avait donnée qui a disparu. » — *fixé le 2026-09-14 par l'opérateur, à l'écriture de « famille-linguistique-quatre-familles »* |
 | une langue accusée d'invention coloniale — le mythe porte sur la langue elle-même, jamais sur son nom, qui peut rester un débat sourcé — *décidé par l'opérateur le 2026-09-16, pour le sujet `lingala-invente-par-les-belges`* | un registre de la banque ci-dessous | celui du registre | « Cette langue n'a pas été inventée. » | « inventée. » | « Elle existait déjà — on lui a seulement donné un nom écrit. » — *distinct de la ligne « une langue, une famille » ci-dessus : celle-ci porte la légitimité d'une classification qui ne disparaît pas, celle-là un mythe d'invention coloniale que l'existence antérieure de la langue dément, indépendamment de tout débat sur son nom écrit* |
 | une famille de langues, regroupant plusieurs peuples sous un seul nom | un registre de la banque ci-dessous | celui du registre | « Cette famille n'est pas un peuple. » | « peuple. » | « On lui a donné un nom, par-dessus des peuples qui avaient déjà le leur. » — *décidé par l'opérateur le 2026-09-14, pour le sujet Mandé — distinct de la ligne « une langue, une famille » ci-dessus : celle-ci porte la légitimité d'une classification, celle-là la confusion entre un nom de famille et un nom de peuple* |
@@ -814,6 +857,22 @@ reste le sujet du corps :
 
 Cette ligne est **validée par l'opérateur (2026-09-14)**, après un premier passage sur
 « qui-a-nomme-la-cote-divoire » qui l'avait déjà appliquée sur cette base.
+
+**C'est aussi la ligne d'un lot sur le nom d'un pays** : il n'y en a pas d'autre, et il
+ne faut pas en dériver une. La table en a porté une, « le nom d'un pays », clôturant sur
+« Ce pays ne s'est pas renommé. » / « On l'a rebaptisé. » — dérivée de la ligne des villes
+le 2026-09-13, jamais validée, et **retirée le 2026-09-16 parce que le premier sujet qui
+s'y est présenté la contredit**. Le Burkina Faso s'est renommé, lui-même, en 1984 ; le
+Ghana l'avait fait en 1957 et le Bénin en 1975, et ce dernier est déjà publié. La clôture
+aurait imprimé un fait faux sur trois sujets au moins.
+
+La dérivation était fautive dans son principe, pas seulement dans ses dates : une ville
+est rebaptisée **par** quelqu'un, et le renversement de sa ligne tient parce que l'acteur
+est extérieur. Un pays indépendant qui change de nom est l'acteur de sa propre phrase —
+c'est même, sur ces sujets, tout l'intérêt. Une clôture qui le nie enlève au lot ce qu'il
+était venu montrer. Un lot sur le nom d'un pays prend donc la ligne ci-dessus, dont le
+renversement — les peuples étaient là avant le nom, quel qu'il soit et quel qu'en soit
+l'auteur — reste vrai que le pays se soit renommé ou non.
 
 **Sous-cas : un lot centré sur qui a nommé le pays — l'ordre s'inverse, et le patron
 d'ouverture ci-dessus ne s'applique pas.** Mesuré le 2026-09-14 sur ce même sujet : une

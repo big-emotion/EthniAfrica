@@ -68,6 +68,7 @@ import { useGlobeCamera } from "@/hooks/use-globe-camera";
 import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
 import { cn } from "@/lib/utils";
 import { atlasCopy } from "@/lib/i18n/copy/atlas";
+import { countryCopy } from "@/lib/i18n/copy/country";
 import type { Language } from "@/types/shared";
 
 const LazyAtlasGlobeCanvas = dynamic(
@@ -1779,6 +1780,29 @@ export function AtlasGlobe({
       </div>
 
       {legend}
+
+      {/*
+       * Atlas charter §1 — the reason an encoding withholds something is
+       * stated once, next to the mark, the way the people field's "Aucune
+       * frontière ici" sits under the field itself.
+       *
+       * It hangs off the *drawn* overlay rather than the prop so that picking
+       * the territory from another fiche's picker brings its justification
+       * with it. A reader who meets an outline with nothing inside and no
+       * sentence beside it reads a rendering fault, not a statement.
+       */}
+      {drawnOverlay?.kind === "country-outline" &&
+        drawnOverlay.sovereigntyContested && (
+          <p
+            data-atlas-disputed-status=""
+            className="w-full text-afh-caption"
+            style={{ color: "var(--afh-globe-stage-ink)" }}
+          >
+            <strong>{countryCopy[language].atlas.disputedStatus.label}</strong>{" "}
+            {countryCopy[language].atlas.disputedStatus.body}{" "}
+            {countryCopy[language].atlas.disputedStatus.encoding}
+          </p>
+        )}
 
       {/* The mockup lays these out at every width — centred, wrapping. They
           used to be hidden below 760px, which left a phone with no way to

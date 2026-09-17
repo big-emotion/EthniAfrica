@@ -32,7 +32,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
         "une-asymetrie-darchive":
           "The gap is spectacular, and it is easy to make it say what it does not. It does not measure how many peoples were forcibly renamed. It measures first of all an asymmetry of the archive: far more has been written about these peoples than they have written about themselves, and an atlas that compiles sources compiles that imbalance along with them.",
         "trois-declarations":
-          "On the classification of their own name, the fiches say three things. 445 declare their name contested or inherited from colonisation. 19 declare something else. And 311 declare nothing at all.",
+          "On the classification of their own name, the fiches say three things. 446 declare their name contested or inherited from colonisation. 19 declare something else. And 309 declare nothing at all.",
         "le-troisieme-nombre":
           "That third number is the subject of the sentence, not its footnote. Writing ‘57% of the atlas's peoples contest their name’ would suggest that the others had been examined and found unproblematic. They have not been examined. The work is open, and a percentage would book it as a result.",
       },
@@ -167,7 +167,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
         "compter-le-mot-administration":
           "The corpus records where an exonym comes from. It does not record what made it hold. One can count the fiches that use the word ‘administration’; one cannot count the names an administration actually imposed, and this chapter does not.",
         "les-fiches-muettes":
-          "And there remain the 311 silent fiches. They do not say that all is well: they say that nobody has looked yet. That is the first debt this dossier owes to its own corpus.",
+          "And there remain the 309 silent fiches. They do not say that all is well: they say that nobody has looked yet. That is the first debt this dossier owes to its own corpus.",
       },
     },
   },

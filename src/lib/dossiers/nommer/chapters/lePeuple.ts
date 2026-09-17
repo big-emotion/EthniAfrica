@@ -51,7 +51,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
         },
         {
           id: "trois-declarations",
-          text: "Sur la classification de leur propre nom, les fiches disent trois choses. 445 déclarent leur appellation contestée ou héritée de la colonisation. 19 déclarent autre chose. Et 311 ne déclarent rien du tout.",
+          text: "Sur la classification de leur propre nom, les fiches disent trois choses. 446 déclarent leur appellation contestée ou héritée de la colonisation. 19 déclarent autre chose. Et 309 ne déclarent rien du tout.",
           sourceRefs: [],
           figureRefs: [
             "status-contested-or-colonial",
@@ -300,7 +300,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
         },
         {
           id: "les-fiches-muettes",
-          text: "Et il reste les 311 fiches muettes. Elles ne disent pas que tout va bien : elles disent que personne n'a encore regardé. C'est la première dette de ce dossier envers son propre corpus.",
+          text: "Et il reste les 309 fiches muettes. Elles ne disent pas que tout va bien : elles disent que personne n'a encore regardé. C'est la première dette de ce dossier envers son propre corpus.",
           sourceRefs: [],
           figureRefs: ["status-undeclared"],
         },

@@ -29,6 +29,7 @@ import { FicheHeroHead } from "@/components/fiche/FicheHeroHead";
 import { FicheHeroBand } from "@/components/fiche/FicheHeroBand";
 import { CountryFicheTitle } from "@/components/country/CountryFicheTitle";
 import { CountryRecordView } from "@/components/country/CountryRecordView";
+import { readProvenanceCensus } from "@/lib/fiche/provenanceCensus";
 import {
   compactCountryAtlasLanguages,
   deriveCountrySynthesisFromDetail,
@@ -192,12 +193,13 @@ export default async function PaysSlugPage({
 
   const navigationContext = (await searchParams) ?? {};
   const countryDetail = mapCountryDetail(country);
-  const [countryLanguages, familyCount] = await Promise.all([
+  const [countryLanguages, familyCount, provenance] = await Promise.all([
     getCountryLanguagesFact(
       countryDetail.id,
       countryDetail.culture?.mainLanguages
     ).catch(() => null),
     getCountryFamilyCount(countryDetail.id).catch(() => null),
+    readProvenanceCensus("country", countryDetail.id),
   ]);
 
   /** The only place a country fiche's `FLG_*` identifiers get a name. */
@@ -314,6 +316,7 @@ export default async function PaysSlugPage({
               fromPeopleId={navigationContext.fromPeopleId}
               patronymes={patronymes}
               countryLanguages={countryLanguages}
+              provenance={provenance}
               summaryFigures={{
                 population:
                   countryDetail.demographics?.totalPopulation &&

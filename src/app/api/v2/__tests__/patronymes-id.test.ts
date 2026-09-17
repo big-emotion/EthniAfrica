@@ -40,6 +40,7 @@ const validEnvelope = {
     associatedPeoples: [],
     associatedCountries: [],
     bearers: [],
+    namedBearers: [],
     alliances: [],
   },
   meta: {
