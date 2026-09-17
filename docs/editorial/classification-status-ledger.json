@@ -1935,6 +1935,11 @@
     "rationale": "Le nom « aurait été donné par les Tumbuka » lors de la migration — exonyme d'un voisin africain — et il est « souvent confondu avec Nsenga » : aucun auteur colonial n'est nommé."
   },
   {
+    "id": "PPL_SENUFO",
+    "status": "colonial-legacy",
+    "rationale": "La fiche dit que le nom « apparaît d'abord dans des publications françaises de la fin du XIXe siècle, chez Tautain en 1887 puis chez Binger en 1892 », puis « s'impose ensuite dans la littérature savante et sur le marché de l'art » ; les intéressés se nomment Syénambélé."
+  },
+  {
     "id": "PPL_SERER",
     "status": "contested",
     "rationale": "Le problème posé est savant : « la classification Niger-Congo est débattue » et les langues cangin ont « une faible intelligibilité mutuelle » avec le sérère-sine ; aucun auteur colonial n'est nommé."

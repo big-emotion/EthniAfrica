@@ -25,7 +25,7 @@
 import type { CorpusFigure, FigureKey } from "./types";
 
 /** Every count below was taken against `recette` on this date. */
-const COUNTED_ON = "2026-09-16";
+const COUNTED_ON = "2026-09-17";
 
 const PEOPLE_GLOB = "dataset/source/afrik/peuples/*/*.json";
 
@@ -76,17 +76,18 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
   },
 
   // The three numbers that replace « 57,5 % ». Publishing the ratio alone
-  // would have let a reader infer that the other 340 fiches were examined and
-  // found sound; 321 of them were never examined at all, and that is the
-  // finding, not the footnote.
+  // would have let a reader infer that every fiche outside it was examined and
+  // found sound, when the large majority were never examined at all — and that
+  // is the finding, not the footnote. The counts live in the three fields
+  // below and nowhere else: restating them in this comment is how they drift.
   "status-contested-or-colonial": {
     kind: "counted",
     figureKey: "status-contested-or-colonial",
     label:
       "fiches déclarant leur appellation contestée ou héritée de la colonisation",
-    value: 445,
+    value: 446,
     method:
-      "fiches dont classificationStatus vaut contested (254) ou colonial-legacy (191)",
+      "fiches dont classificationStatus vaut contested (254) ou colonial-legacy (192)",
     countedOn: COUNTED_ON,
   },
   "status-other": {
@@ -102,7 +103,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "status-undeclared",
     label: "fiches ne déclarant aucun statut",
-    value: 310,
+    value: 309,
     method: "fiches sans classificationStatus",
     countedOn: COUNTED_ON,
   },
@@ -112,7 +113,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-colonial",
     label: "fiches employant le radical « colonial »",
-    value: 242,
+    value: 243,
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },

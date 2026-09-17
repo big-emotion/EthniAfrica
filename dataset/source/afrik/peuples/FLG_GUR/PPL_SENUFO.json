@@ -3,6 +3,7 @@
   "nameMain": "Senufo",
   "languageFamilyId": "FLG_GUR",
   "currentCountries": ["CIV", "MLI", "BFA", "GHA"],
+  "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {
       "mainName": "Senufo",
