@@ -164,6 +164,17 @@
       /* Each line is its own element so the reel can raise them one at a
          time; the mask is what makes a line rise out of nothing rather
          than slide over the line above it. */
+      /* The mask must be as tall as the glyphs, not as tall as the
+         leading. Anton descends about a fifth of an em below the
+         baseline, so a mask cut to a 0.92 line-height clips the g of
+         "jugeons", its j, and the p of "personne" — invisibly, because
+         the headline still reads. The span therefore carries a
+         descender-safe line box, and the lines are pulled back to the
+         authored leading by the negative margin below.
+
+         The extra height is taken at the BOTTOM only: the mask hides
+         the line before it rises, and a mask that grew downward past
+         the next line would show it early. */
       .line {
         display: block;
         overflow: hidden;
@@ -171,6 +182,11 @@
 
       .line > span {
         display: block;
+        line-height: var(--mask-lead, 1.24);
+      }
+
+      .line + .line {
+        margin-top: calc((var(--lead) - var(--mask-lead, 1.24)) * 1em);
       }
 
       .hl {
@@ -204,12 +220,17 @@
         margin-top: 1.5em;
       }
 
+      /* The humility about sources lives at the quietest rank on the
+         card, on purpose: stated louder it reads as a posture rather
+         than as a working rule. Two authored rows, so it takes a read
+         line's leading, not a signature's. */
       .foot {
         font-family: var(--font-body);
         font-weight: 600;
         font-size: var(--foot);
+        line-height: 1.45;
         color: var(--ink-3);
-        margin-top: 1.9em;
+        margin-top: 1.7em;
       }
 
       /* ── The reel's nine seconds ──────────────────────────────────
@@ -308,7 +329,9 @@
         </div>
 
         <p class="foot" data-anim="fade" data-at="2.85">
-          Chaque information est sourcée sur ethniafrica.com
+          Beaucoup de sources sur l'Afrique ont été écrites ailleurs.<br />Nous
+          les citons toutes. Nous pouvons nous tromper.<br />Corrigez-nous
+          — ethniafrica.com
         </p>
       </div>
     </div>
