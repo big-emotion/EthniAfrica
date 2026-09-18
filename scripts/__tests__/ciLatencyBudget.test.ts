@@ -112,14 +112,16 @@ describe("CI latency budget", () => {
       });
 
       // A required check that concludes success without having run is a gate
-      // that says "green" about nothing. Only a fork or a bot, which genuinely
-      // cannot read secrets, may skip.
-      // @req REQ-032
-      it("fails the short job loudly when its secrets are missing", () => {
+      // that says "green" about nothing. Since ETNI-1948 the short job needs
+      // no repository secret at all — its database is started fresh inside
+      // the job by the ephemeral-supabase action — so a fork or a bot PR now
+      // gets the real audit too, rather than a documented skip.
+      // @req REQ-176
+      it("needs no repository secret: its database is the ephemeral-supabase action's own", () => {
         const block = jobBlock(workflow, gate);
 
-        expect(block).toMatch(/IS_FORK_PR/);
-        expect(block).toMatch(/::error::[^\n]*\n\s+exit 1/);
+        expect(block).toContain("uses: ./.github/actions/ephemeral-supabase");
+        expect(block).not.toMatch(/IS_FORK_PR/);
       });
 
       // A scheduled event always fires against the default branch, which is

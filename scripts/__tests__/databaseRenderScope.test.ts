@@ -223,39 +223,37 @@ describe.each(RENDERING_JOBS)(
       ).toBe("true");
     });
 
-    // @req REQ-032
+    // Since ETNI-1948 these three jobs need no repository secret — their
+    // database is the ephemeral-supabase action's own — so the scope is the
+    // only guard left on a build/serve step.
+    // @req REQ-176
     it("guards every step that builds, serves or reads the app with the scope", () => {
-      const secretGuarded = steps.filter((step) =>
-        conditionOf(step).includes("steps.secrets.outputs.present == 'true'")
+      const scopeGuarded = steps.filter((step) =>
+        conditionOf(step).includes("steps.scope.outputs.render == 'true'")
       );
 
-      expect(secretGuarded.length).toBeGreaterThan(0);
+      expect(scopeGuarded.length).toBeGreaterThan(0);
       expect(
         steps.filter((step) =>
           /run: (npm run build$|npm run start &$|npx next start )/m.test(step)
         )
       ).toSatisfy((serving: string[]) =>
-        serving.every((step) => secretGuarded.includes(step))
+        serving.every((step) => scopeGuarded.includes(step))
       );
-      for (const step of secretGuarded) {
-        expect(conditionOf(step)).toContain(
-          "steps.scope.outputs.render == 'true'"
-        );
-      }
     });
   }
 );
 
 describe("a11y.yml › axe", () => {
-  // @req REQ-032
-  it("audits live routes only when secrets are present and the scope renders", () => {
+  // @req REQ-176
+  it("audits live routes only when the scope renders", () => {
     const run = stepsOf(jobBlock("a11y.yml", "axe")).find((step) =>
       step.includes("npx tsx scripts/a11y-test.ts")
     );
 
     expect(conditionOf(run ?? "")).toBe("");
     expect(run).toContain(
-      "A11Y_LIVE_BASE_URL: ${{ steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true' && 'http://localhost:3000' || '' }}"
+      "A11Y_LIVE_BASE_URL: ${{ steps.scope.outputs.render == 'true' && 'http://localhost:3000' || '' }}"
     );
   });
 });

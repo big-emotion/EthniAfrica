@@ -9,9 +9,7 @@ import {
   checkDoctrineLinkCardSnapshot,
   checkCompetingAppellations,
   checkUndatedPolityCeiling,
-  checkUndecidedAppellationsCeiling,
   UNDATED_POLITY_CEILING,
-  UNDECIDED_APPELLATIONS_CEILING,
   escapeWorkflowCommand,
   extractAutonym,
   extractConfidence,
@@ -493,6 +491,7 @@ describe("checkCompetingAppellations", () => {
     const findings = checkCompetingAppellations(fiche, peopleFile);
     expect(findings).toHaveLength(1);
     expect(findings[0].rule).toBe("competing-appellations");
+    expect(findings[0].severity).toBe("error");
     expect(findings[0].message).toContain("exonyms");
   });
 
@@ -542,34 +541,6 @@ describe("checkCompetingAppellations", () => {
   it("asks nothing of a country, which aggregates many peoples", () => {
     const file = "dataset/source/afrik/pays/GAB.json";
     expect(checkCompetingAppellations({ id: "GAB" }, file)).toEqual([]);
-  });
-});
-
-describe("checkUndecidedAppellationsCeiling (the ratchet)", () => {
-  // @req REQ-169
-  it("passes when the corpus sits exactly at the recorded ceiling", () => {
-    expect(
-      checkUndecidedAppellationsCeiling(
-        UNDECIDED_APPELLATIONS_CEILING,
-        UNDECIDED_APPELLATIONS_CEILING
-      )
-    ).toBeNull();
-  });
-
-  // @req REQ-169
-  it("fails when a fiche stops saying which names it is known by", () => {
-    const finding = checkUndecidedAppellationsCeiling(4, 3);
-    expect(finding?.severity).toBe("error");
-    expect(finding?.message).toContain("rose to 4");
-  });
-
-  // Both directions, because a ceiling left above the real number is a licence
-  // to climb back to it.
-  // @req REQ-169
-  it("fails when the count falls and the ceiling is not lowered with it", () => {
-    const finding = checkUndecidedAppellationsCeiling(1, 3);
-    expect(finding?.severity).toBe("error");
-    expect(finding?.message).toContain("lower UNDECIDED_APPELLATIONS_CEILING");
   });
 });
 
@@ -659,7 +630,11 @@ describe("runEditorialRules — end-to-end", () => {
     writeFiche("peuples/FLG_BANTU/PPL_WARN.json", {
       id: "PPL_WARN",
       confidence: "low",
-      content: { sources: ["a", "b"] },
+      content: {
+        // Declared, so this fixture trips only the rule it is about.
+        appellations: { exonyms: [] },
+        sources: ["a", "b"],
+      },
     });
     const r = runEditorialRules({ repoRoot: tmpRoot });
     expect(r.exitCode).toBe(0);
@@ -693,7 +668,7 @@ describe("runEditorialRules — end-to-end", () => {
       id: "PPL_COLONIAL",
       classification_status: "colonial-legacy",
       content: {
-        appellations: { selfAppellation: "Endonym present" },
+        appellations: { selfAppellation: "Endonym present", exonyms: [] },
         sources: ["a", "b"],
       },
     });

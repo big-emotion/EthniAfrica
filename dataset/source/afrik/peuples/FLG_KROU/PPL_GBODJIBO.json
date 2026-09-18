@@ -7,10 +7,8 @@
     "appellations": {
       "mainName": "Gbodjibo",
       "selfAppellation": "Gbodjibo",
-      "exonyms": [
-        "Gbodjibo (terme utilisé dans la littérature académique et administrative ivoirienne)"
-      ],
-      "originOfExonyms": null,
+      "exonyms": [],
+      "originOfExonyms": "Ce peuple ne porte qu'un seul nom. Celui qu'il se donne est aussi celui qu'emploient la littérature académique et les travaux administratifs ivoiriens. Aucune source que l'atlas tient ne dit d'où ce nom vient, ni ce qu'il voulait dire.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Gbodjibo est utilisé de façon courante dans la région et la littérature ivoirienne pour désigner ce sous-groupe krou de Côte d'Ivoire. Il est également associé à la localité de Godjiboué en pays Godié, sous-préfecture de Sago, région de Sassandra, ce qui témoigne de la proximité géographique et culturelle entre ces deux groupes krou voisins.",
       "linguisticFamily": "FLG_KROU",

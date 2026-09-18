@@ -14,7 +14,8 @@
       "linguisticFamily": "FLG_BERBERE",
       "ethnoLinguisticGroup": "Berbère septentrional (kabyle)",
       "historicalRegion": "Kabylie (Tamurt n Leqvayel) — massifs montagneux du Djurdjura et de Babor (Atlas tellien)",
-      "currentCountries": ["DZA"]
+      "currentCountries": ["DZA"],
+      "exonyms": ["Kabyle", "Zwawa"]
     },
     "ethnicities": [
       "confédération de la Grande Kabylie, région de Tizi Ouzou",

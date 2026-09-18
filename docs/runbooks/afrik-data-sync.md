@@ -241,6 +241,57 @@ stack does not send mail, it captures it at `http://127.0.0.1:54324`.
 
 ---
 
+## Ephemeral database for the three CI gates
+
+The axe live-route audit (`a11y.yml`'s `axe` job), the Lighthouse gate (`lighthouse.yml`'s `gate`
+job) and the Playwright smoke set (`e2e.yml`'s `smoke` job) each start their own throwaway
+database inside the job, seed it with only the entities their own routes render, and discard it
+with the runner (ETNI-1948/REQ-176). None of the three reads the self-hosted recette database, and
+none needs a repository secret — a fork or Dependabot pull request gets the real audit too, not a
+skip.
+
+The composite action `.github/actions/ephemeral-supabase` does the same three things this local
+bootstrap does by hand, unattended: `supabase start` (excluding Studio, storage, realtime, edge
+functions, imgproxy and the analytics/logs stack — nothing a rendered route needs), applies every
+migration the same way `supabase start` always does, then runs `scripts/ci/seedEphemeralDatabase.ts`
+and exports `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` /
+`SUPABASE_SERVICE_ROLE_KEY` to `$GITHUB_ENV` for the job's later steps.
+
+**What gets seeded, and how that list is kept honest.** `scripts/ci/ephemeralSeedManifest.ts`
+derives the entity IDs (language families, peoples, countries) by reading `scripts/a11yRoutes.ts`,
+`.lighthouserc.gate.js` and the `@smoke` e2e specs as text and pattern-matching the route-builder
+calls and raw URLs — never by importing them, the same reason `a11yRoutes.ts` itself does not
+import `a11y-test.ts`. `scripts/ci/__tests__/ephemeralSeedManifest.test.ts` is the gate on that
+list: it re-scans the same three sources with a broader, independent pattern and fails if it finds
+an entity ID the manifest's own extraction missed. Add a gated route naming a **new** entity and
+this test fails until the manifest builder's patterns are widened to catch it — the seed can never
+silently go stale under a route that changed.
+
+`scripts/ci/seedEphemeralDatabase.ts` reuses `migrateAfrikToDatabase.ts`'s own exported
+`upsertLanguageFamilies` / `upsertPeoples` / `upsertCountries`, so a fiche seeded here carries the
+same classification-protection and assertion-writing logic a real sync does — the confidence chip
+on `PPL_WOLOF`'s ephemeral fiche is not a stub. It does **not** reuse that script's orchestration:
+the drift comparison and orphan scan there assume they are reading the whole corpus, and would
+misread a deliberately partial one as thousands of missing rows. Out of scope, on purpose:
+`afrik_languages` and `afrik_people_languages` — none of the three gates' routes render a
+language-specific page or a section that depends on that join; widen the seeder and the manifest
+together if a future gated route does.
+
+**Running it by hand**, to test a manifest or seeder change before opening a pull request:
+
+```bash
+supabase start -x realtime,imgproxy,mailpit,postgres-meta,studio,edge-runtime,logflare,vector,supavisor
+# supabase status -o env prints NEXT_PUBLIC_SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY;
+# export them the same way .env.local would for the full local bootstrap above.
+npx tsx --conditions=react-server scripts/ci/seedEphemeralDatabase.ts
+```
+
+If port `5432` is already bound by another local Postgres on your machine, `[db] port` in
+`supabase/config.toml` is the fix — but revert it before committing; the checked-in value is what
+every contributor's local dev and CI itself expect.
+
+---
+
 ## The automated recette sync
 
 `recette-data-sync.yml` loads the corpus into recette on every push to `recette` that touches
