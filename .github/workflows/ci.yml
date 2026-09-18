@@ -132,6 +132,12 @@ jobs:
       # pre-commit hook catches them locally; this catches what bypasses it.
       - run: npm run check:local-paths
 
+      # The same question, asked of prose. check:dead holds unreferenced code
+      # at zero; nothing held documentation, and 15 of 84 tracked documents
+      # were referenced by nothing at all — two of them written that week. A
+      # charter nobody can reach is a charter nobody applies.
+      - run: npm run check:orphan-docs
+
       # The one question none of the gates above asks: does anything still
       # import this? Ten checks watched traceability, action pins, the env
       # example, the migration sequence and the charters, and none of them

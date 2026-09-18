@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700&display=swap">
+  <style>
+    body { margin: 0; font-family: "Nunito Sans", system-ui, sans-serif; background: #fbf7f2; color: #2c2018; }
+    a { color: #835514; } a:hover { color: #5c3b0e; }
+  </style>
+</helmet>
+
+<div style="width: 1280px; height: 1100px; box-sizing: border-box; background: #fbf7f2; display: flex; flex-direction: column;">
+
+  <div style="padding: 16px 48px; border-bottom: 1px solid #e8dfd3; display: flex; align-items: center; justify-content: space-between;">
+    <div style="display: flex; align-items: baseline; gap: 12px;">
+      <div style="font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 19px;">EthniAfrica</div>
+      <div style="font-size: 12px; color: #746557;">D&#39;o&ugrave; viennent les noms</div>
+    </div>
+    <div style="display: flex; gap: 22px; font-size: 14px; color: #746557;">
+      <a href="#a" style="text-decoration: none; color: inherit;">L&#39;atlas</a>
+      <a href="#d" style="text-decoration: none; color: inherit;">Les dossiers</a>
+      <a href="#j" style="text-decoration: none; color: inherit;">Jouer</a>
+      <a href="#p" style="text-decoration: none; color: inherit;">&Agrave; propos</a>
+    </div>
+  </div>
+
+  <!-- Deux états, l'un sous l'autre. Ni l'un ni l'autre n'a de matière à étaler
+       sur 1280 : la mesure de lecture reste celle d'un article. -->
+  <div style="padding: 34px 0 0 0; display: flex; justify-content: center;">
+    <div style="width: 720px;">
+
+      <div style="padding: 0 0 22px 0; border-bottom: 1px solid #e8dfd3;">
+        <label for="dqi-1" style="display: block; font-size: 12px; color: #746557; margin-bottom: 6px;">Rechercher un nom</label>
+        <div style="display: flex; align-items: center; gap: 10px; background: #ffffff; border: 1px solid #e8dfd3; border-radius: 10px; padding: 12px 15px;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#746557" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+          <input id="dqi-1" type="search" value="mandinké" style="border: 0; outline: 0; font-size: 16px; font-family: inherit; color: #2c2018; background: transparent; width: 100%;">
+        </div>
+
+        <p style="margin: 20px 0 0 0; font-size: 16px; line-height: 1.6; color: #746557;">Aucune fiche ne porte exactement <strong style="color: #2c2018;">&laquo;&nbsp;mandink&eacute;&nbsp;&raquo;</strong>.</p>
+        <p style="margin: 10px 0 0 0; font-size: 19px; line-height: 1.5;">Vouliez-vous dire <a href="#mandinka" style="font-weight: 700;">Mandinka</a>&nbsp;? C&#39;est l&#39;un des noms que les peuples mand&eacute; se donnent, en Gambie et au S&eacute;n&eacute;gal.</p>
+
+        <div style="margin-top: 20px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; color: #746557;">Formes proches trouv&eacute;es</div>
+        <div style="margin-top: 12px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px;">
+          <a href="#mandinka" style="display: block; background: #ffffff; border: 1px solid #e8dfd3; border-radius: 11px; padding: 15px 17px; text-decoration: none; color: inherit;">
+            <div style="font-family: 'Fraunces', Georgia, serif; font-size: 19px; font-weight: 600;">Mandinka</div>
+            <div style="margin-top: 4px; font-size: 13px; color: #746557;">nom que se donnent les Mand&eacute; de Gambie</div>
+          </a>
+          <a href="#malinke" style="display: block; background: #ffffff; border: 1px solid #e8dfd3; border-radius: 11px; padding: 15px 17px; text-decoration: none; color: inherit;">
+            <div style="font-family: 'Fraunces', Georgia, serif; font-size: 19px; font-weight: 600;">Malink&eacute;</div>
+            <div style="margin-top: 4px; font-size: 13px; color: #746557;">un peuple mand&eacute;</div>
+          </a>
+          <a href="#mandingue" style="display: block; background: #ffffff; border: 1px solid #e8dfd3; border-radius: 11px; padding: 15px 17px; text-decoration: none; color: inherit;">
+            <div style="font-family: 'Fraunces', Georgia, serif; font-size: 19px; font-weight: 600;">Mandingue</div>
+            <div style="margin-top: 4px; font-size: 13px; color: #746557;">fran&ccedil;ais colonial, pour l&#39;ensemble mand&eacute;</div>
+          </a>
+        </div>
+      </div>
+
+      <div style="margin-top: 26px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; color: #9b8b7d;">Second cas &mdash; un nom que l&#39;atlas ne conna&icirc;t pas</div>
+
+      <div style="margin-top: 14px;">
+        <label for="dqi-2" style="display: block; font-size: 12px; color: #746557; margin-bottom: 6px;">Rechercher un nom</label>
+        <div style="display: flex; align-items: center; gap: 10px; background: #ffffff; border: 1px solid #e8dfd3; border-radius: 10px; padding: 12px 15px;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#746557" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+          <input id="dqi-2" type="search" value="kirdi-nassarao" style="border: 0; outline: 0; font-size: 16px; font-family: inherit; color: #2c2018; background: transparent; width: 100%;">
+        </div>
+
+        <h1 style="margin: 22px 0 0 0; font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 40px; line-height: 1.1;">Nous ne connaissons pas ce nom.</h1>
+        <p style="margin: 12px 0 0 0; font-size: 17px; line-height: 1.6;">Ce n&#39;est pas une r&eacute;ponse&nbsp;: c&#39;est un aveu. L&#39;atlas tient 774 peuples, et il en manque.</p>
+      </div>
+
+      <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 18px;">
+        <div style="background: #f5ede0; border-radius: 12px; padding: 17px 20px;">
+          <div style="font-weight: 700; font-size: 15px;">Personne n&#39;est mieux plac&eacute; que vous pour raconter votre histoire.</div>
+          <p style="margin: 7px 0 0 0; font-size: 14px; line-height: 1.6; color: #2c2018;">C&#39;est pour cela que ce champ existe, et que toute correction est lue.</p>
+        </div>
+        <div style="background: #ffffff; border: 1px solid #c9821f; border-radius: 12px; padding: 18px 20px;">
+          <div style="font-weight: 700; font-size: 15px;">Nous parler de ce nom</div>
+          <p style="margin: 7px 0 13px 0; font-size: 14px; line-height: 1.6;">Si ce nom est le v&ocirc;tre, ou celui d&#39;un peuple, d&#39;une langue ou d&#39;un lieu que vous connaissez, dites-le-nous. C&#39;est comme &ccedil;a que l&#39;atlas grandit.</p>
+          <button type="button" style="font-family: inherit; font-size: 14px; font-weight: 700; color: #2c2018; background: #f1d9ae; border: 1px solid #c9821f; border-radius: 9px; padding: 12px 18px; min-height: 44px; cursor: pointer;">Proposer ce nom</button>
+        </div>
+        <div>
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; color: #746557;">Aller plus loin</div>
+          <div style="margin-top: 11px; display: flex; flex-wrap: wrap; gap: 8px;">
+            <a href="#pe" style="font-size: 13px; border: 1px solid #e8dfd3; background: #ffffff; border-radius: 999px; padding: 8px 14px; text-decoration: none;">Parcourir les peuples</a>
+            <a href="#fa" style="font-size: 13px; border: 1px solid #e8dfd3; background: #ffffff; border-radius: 999px; padding: 8px 14px; text-decoration: none;">Les familles de langues</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{"$preview":{"width":1280,"height":1100}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
