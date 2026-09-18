@@ -18,8 +18,12 @@ const en = {
   title: PRODUCT_NAME,
   // Drawn into the social-card images, so it is read far more often than it
   // is seen on the site.
+  // Not a word-for-word of the French. « Appellations » is glossed to "name"
+  // (domain.appellation: the plain word does the work, "appellation" reads as a
+  // wine label), which collides with the names axis right beside it — so the
+  // English says what the two axes are instead of listing both as "names".
   subtitle:
-    "Peoples, languages, language families, countries, appellations and names — each with where its name comes from, and the sources that attest it.",
+    "Peoples, languages, language families, countries, and the names they are known by — each with where its name comes from, and the sources that attest it.",
   byCountry: "By country",
   byPeople: "By people",
   byFamily: "By language family",
