@@ -135,6 +135,33 @@ export function extractAutonym(fiche: Fiche): string | null {
 }
 
 /**
+ * Whether the fiche answers "there is no endonym" rather than saying nothing.
+ *
+ * A language family usually has none: its archive says so outright — « il
+ * n'existe pas de terme endogène unique couvrant l'ensemble des peuples
+ * nilotiques », and the same sentence for seven others. A rule that asks such
+ * a fiche for an autonym asks for something the entity does not have, and
+ * that pressure is what put the family's own English name in the field on
+ * twenty-three of twenty-five — "Cushitic", "Nilotic", "Semitic" — which the
+ * result page then drew to a reader under « le nom qu'ils se donnent ».
+ *
+ * `null` written into the field is the answer; an absent key is still the
+ * unanswered question. It is `exonyms: []` against a missing key, one rule
+ * over, and an empty string is neither: a blanked field reads as unfinished.
+ */
+// @req REQ-095
+export function declaresNoAutonym(fiche: Fiche): boolean {
+  const blocks = [fiche.content?.appellations, fiche.content?.decolonialHeader];
+  return blocks.some(
+    (block) =>
+      block !== undefined &&
+      block !== null &&
+      "selfAppellation" in block &&
+      (block as { selfAppellation?: unknown }).selfAppellation === null
+  );
+}
+
+/**
  * Country fiches (under `pays/`) don't carry a single autonym — they aggregate
  * many peoples, each with their own `selfAppellation`.
  */
@@ -213,6 +240,7 @@ export function checkAutonym(fiche: Fiche, file: string): RuleResult | null {
 
   const autonym = extractAutonym(fiche);
   if (autonym !== null) return null;
+  if (declaresNoAutonym(fiche)) return null;
 
   const confidence = extractConfidence(fiche);
   const blocking = confidence !== null && CONFIDENCE_BLOCKING.has(confidence);
