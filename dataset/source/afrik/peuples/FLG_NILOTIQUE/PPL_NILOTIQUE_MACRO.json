@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Peuples Nilotiques",
-      "selfAppellation": "Designations propres a chaque groupe : Naath (Nuer), Jieng (Dinka), Cøllo (Shilluk), Lokop (Samburu), Ilmaasai (Maasai), etc.",
+      "selfAppellation": null,
       "exonyms": [
         "Nilotes",
         "Nilo-Sahariens (usage imprecis)",
@@ -16,7 +16,7 @@
       ],
       "originOfExonyms": "Le terme nilotique fut employe par les anthropologues et linguistes europeens du 19e siecle pour designer les populations du bassin du Haut-Nil parlant des langues apparentees. Il derive du latin Nilus (Nil). Le regroupement sous cette appellation repose desormais sur des criteres linguistiques (famille de langues nilotiques) plutot que raciaux ou geographiques.",
       "whyProblematic": "Le terme nilotique est anthropologiquement contestable car il regroupe des peuples tres divers sur les plans culturel, historique et meme linguistique. Les classifications raciales historiques (grande taille, peau tres sombre, membres longs) ont ete abandonnees au profit de la linguistique. Certains groupes classes comme nilotiques (ex: Kalenjin) sont linguistiquement nilotiques mais culturellement tres differents des Dinka ou Nuer.",
-      "contemporaryUsage": "Le terme peuples nilotiques est utilise dans la litterature academique, les classifications ethnolinguistiques (SIL Ethnologue, Glottolog) et les etudes demographiques pour designer l'ensemble des locuteurs de langues nilotiques. Il est courant dans les contextes politique et journalistique en Afrique de l'Est et au Soudan du Sud.",
+      "contemporaryUsage": "Le terme peuples nilotiques est utilise dans la litterature academique, les classifications ethnolinguistiques (SIL Ethnologue, Glottolog) et les etudes demographiques pour designer l'ensemble des locuteurs de langues nilotiques. Il est courant dans les contextes politique et journalistique en Afrique de l'Est et au Soudan du Sud. Il n'existe pas d'auto-appellation collective : chaque groupe se designe par son propre nom, notamment Naath (Nuer), Jieng (Dinka), Cøllo (Shilluk), Lokop (Samburu) et Ilmaasai (Maasai).",
       "linguisticFamily": "FLG_NILOTIQUE",
       "ethnoLinguisticGroup": "Nilotique (macro-groupe) — trois branches : nilotique occidental, nilotique central, nilotique oriental et meridional",
       "historicalRegion": "Bassin du Nil superieur (Soudan du Sud, Soudan), Rift est-africain (Kenya, Ouganda, Tanzanie, Ethiopie occidentale)",
