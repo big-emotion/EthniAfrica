@@ -435,9 +435,13 @@ describe("home hero anecdote chip softens with ink, not opacity", () => {
 });
 
 /**
- * The brand lockup — the mark, « EthniAfrica », « Atlas des Peuples d'Afrique »
- * — appears twice on every page, in the masthead and in the footer, and it gets
- * **one** colour treatment.
+ * The brand lockup — the mark, the product name and its qualifier, both read
+ * from `src/lib/brand.ts` — appears twice on every page, in the masthead and in
+ * the footer, and it gets **one** colour treatment.
+ *
+ * The qualifier is not quoted here on purpose. It was, and the quotation went
+ * stale the day it changed (2026-09-17): a comment that repeats a constant is a
+ * second place for that constant to be wrong.
  *
  * It got two. The masthead painted the qualifier in `--afh-gradient-brand`;
  * the footer painted the identical string in `--afh-gradient-spectrum`, a

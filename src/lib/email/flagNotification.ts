@@ -1,3 +1,4 @@
+import { emailSignature } from "@/lib/email/signature";
 import * as Sentry from "@sentry/nextjs";
 import { logger } from "@/lib/api/logger";
 import { graphConfigured, sendViaGraph } from "@/lib/email/graph";
@@ -232,7 +233,7 @@ export async function sendFlagVerificationEmail({
       "Pour recevoir la décision de la modération par e-mail, confirmez cette adresse :",
       verificationLink,
       "Ce lien est valable 24 heures et ne fonctionne qu'une fois. Si vous n'avez rien signalé, ignorez ce message : sans confirmation, cette adresse ne sera plus utilisée.",
-      "EthniAfrica — Atlas des Peuples d'Afrique",
+      emailSignature("fr"),
     ].join("\n\n"),
   });
 }
