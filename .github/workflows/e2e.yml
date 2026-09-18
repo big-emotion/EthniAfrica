@@ -37,13 +37,10 @@ jobs:
     timeout-minutes: 15
 
     env:
-      # NEVER production credentials. Same fallback as the full matrix below:
-      # `TEST_SUPABASE_*` when a dedicated test project exists, recette otherwise
-      # (recette's own self-hosted stack since ETNI-1958/1961 — the TEST_SUPABASE_*
-      # branch is untouched here, ETNI-1948's concern, not this one's).
-      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.TEST_SUPABASE_URL || secrets.RECETTE_SUPABASE_URL }}
-      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.TEST_SUPABASE_SERVICE_ROLE_KEY || secrets.RECETTE_SUPABASE_SERVICE_ROLE_KEY }}
-      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.TEST_SUPABASE_ANON_KEY || secrets.RECETTE_SUPABASE_ANON_KEY }}
+      # NEVER production credentials, and since ETNI-1948 no repository
+      # secret at all: this job's database is started fresh inside it (see
+      # the ephemeral-supabase step below), seeded with just the entities
+      # the smoke set's four routes render.
       CI: "true"
       # Test-only publication: production remains fail-closed to fr-only.
       SITE_LOCALE_MODE: bilingual-fr-default
@@ -108,27 +105,14 @@ jobs:
       - name: Install deps
         run: npm ci
 
-      # A fork or bot PR cannot read repository secrets, so it skips. Anywhere
-      # else a missing secret fails the job: a required check that reports
-      # success without having run is worse than a red one.
-      - name: Check required secrets are present
-        id: secrets
-        env:
-          IS_FORK_PR: ${{ github.event.pull_request.head.repo.fork || false }}
-          IS_BOT: ${{ github.actor == 'dependabot[bot]' }}
-        run: |
-          if [ -n "$NEXT_PUBLIC_SUPABASE_URL" ] && [ -n "$NEXT_PUBLIC_SUPABASE_ANON_KEY" ]; then
-            echo "present=true" >> "$GITHUB_OUTPUT"
-          elif [ "$IS_FORK_PR" = "true" ] || [ "$IS_BOT" = "true" ]; then
-            echo "present=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::Skipping the Playwright smoke set — a fork or bot PR cannot read repository secrets."
-          else
-            echo "::error::No Supabase URL and anon key reached this job, so the smoke set cannot run. Set NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_ANON_KEY (or the TEST_SUPABASE_* pair) to arm this gate."
-            exit 1
-          fi
+      # No repository secret is needed any more: a fork or bot PR gets the
+      # smoke set too, not a skip.
+      - name: Start an ephemeral Supabase and seed the gated routes' entities
+        if: steps.scope.outputs.render == 'true'
+        uses: ./.github/actions/ephemeral-supabase
 
       - name: Restore Playwright browser cache
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ~/.cache/ms-playwright
@@ -137,11 +121,11 @@ jobs:
       # Chromium only: the smoke set runs in the `mobile-430` project, which is
       # a Pixel 5 profile. The full matrix below also needs webkit.
       - name: Install Playwright browser
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         run: npx playwright install --with-deps chromium
 
       - name: Restore Next.js build cache
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: .next/cache
@@ -150,17 +134,17 @@ jobs:
             nextjs-${{ hashFiles('package-lock.json') }}-
 
       - name: Build app
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         run: npm run build
 
       - name: Start app
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         run: npx next start -p 3000 &
         env:
           PORT: 3000
 
       - name: Wait for app
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         run: |
           # The root answers 307 to the default locale (REQ-140); -L follows it.
           for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
@@ -172,14 +156,14 @@ jobs:
           echo "App did not become ready"; exit 1
 
       - name: Run the smoke set
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         run: npm run e2e:smoke
         env:
           BASE_URL: http://localhost:3000
           SKIP_WEB_SERVER: "1"
 
       - name: Upload report
-        if: failure() && steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: failure() && steps.scope.outputs.render == 'true'
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: playwright-smoke-report

@@ -315,7 +315,7 @@ function errorMessage(error: unknown): string {
   return error instanceof Error ? error.message : "Unknown error";
 }
 
-async function readClassificationStatuses(
+export async function readClassificationStatuses(
   supabase: AdminClient,
   table: ClassifiedAfrikTable
 ): Promise<Map<string, unknown>> {
@@ -433,7 +433,7 @@ function findProtectedClassificationDrift(
   });
 }
 
-async function upsertLanguageFamilies(
+export async function upsertLanguageFamilies(
   supabase: AdminClient,
   languageFamilies: LanguageFamily[],
   existingStatuses: Map<string, unknown>,
@@ -495,7 +495,7 @@ async function upsertLanguageFamilies(
   );
 }
 
-async function upsertPeoples(
+export async function upsertPeoples(
   supabase: AdminClient,
   peoples: People[],
   validFamilyIds: Set<string>,
@@ -567,7 +567,7 @@ async function upsertPeoples(
   );
 }
 
-async function upsertCountries(
+export async function upsertCountries(
   supabase: AdminClient,
   countries: Country[],
   report: MigrationReport
