@@ -5,7 +5,8 @@ import { render, screen, within } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
 import { SiteHeader } from "@/components/layout/SiteHeader";
-import { PRODUCT_NAME, PRODUCT_TAGLINE } from "@/lib/brand";
+import { PRODUCT_NAME } from "@/lib/brand";
+import { chromeCopy } from "@/lib/i18n/copy/chrome";
 
 vi.mock("next/navigation", () => ({
   usePathname: () => "/fr",
@@ -57,7 +58,14 @@ describe("the brand lockup — the mark, the name, and what the site is (REQ-114
     const brand = screen.getByTestId("site-brand");
 
     expect(within(brand).getByText(PRODUCT_NAME)).toBeInTheDocument();
-    expect(within(brand).getByText(PRODUCT_TAGLINE)).toBeInTheDocument();
+    // The header's own tagline, not PRODUCT_TAGLINE: the bar gives the lockup
+    // 201px at 430px, so it carries the short form while the footer and the
+    // Open Graph title carry the full site slogan. The two constants held the
+    // same string until they diverged, and this assertion read the wrong one
+    // the whole time without failing.
+    expect(
+      within(brand).getByText(chromeCopy.fr.headerTagline)
+    ).toBeInTheDocument();
   });
 
   /**
