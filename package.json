@@ -66,7 +66,8 @@
     "openapi:generate": "tsx scripts/generate-openapi-spec.ts",
     "openapi:diff": "tsx scripts/openapi-diff.ts",
     "prepare": "husky",
-    "check:local-paths": "tsx scripts/ci/checkLocalPaths.ts --selftest && tsx scripts/ci/checkLocalPaths.ts"
+    "check:local-paths": "tsx scripts/ci/checkLocalPaths.ts --selftest && tsx scripts/ci/checkLocalPaths.ts",
+    "check:infra-disclosure": "tsx scripts/ci/checkInfraDisclosure.ts"
   },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.1.23",

@@ -12,7 +12,7 @@ function readWorkflow(): string {
 }
 
 describe("production AFRIK data sync workflow", () => {
-  // Production left Vercel for the OVH VPS, so `vercel[bot]` never creates a
+  // Production left Vercel for a self-hosted VPS, so `vercel[bot]` never creates a
   // deployment for it again. This assertion used to pin the sync to that event; had it
   // not been updated with the trigger, the workflow would have gone quiet permanently
   // while every board stayed green and the production corpus froze.
@@ -21,7 +21,7 @@ describe("production AFRIK data sync workflow", () => {
     const workflow = readWorkflow();
 
     expect(workflow).toMatch(/^\s*workflow_run:/m);
-    expect(workflow).toContain('workflows: ["Deploy Production (OVH)"]');
+    expect(workflow).toContain('workflows: ["Deploy Production"]');
     expect(workflow).toContain(
       "github.event.workflow_run.conclusion == 'success'"
     );

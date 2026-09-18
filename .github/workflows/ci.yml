@@ -132,6 +132,17 @@ jobs:
       # pre-commit hook catches them locally; this catches what bypasses it.
       - run: npm run check:local-paths
 
+      # The same public-repository rule for the infrastructure: no server
+      # address, SSH port, hosting provider or datacenter location. The terms
+      # live outside the repository and the gate prints positions only, never a
+      # match. They travel as a **secret**, not a variable: the runner echoes
+      # every step's `env:` block, and the Actions logs of a public repository
+      # are public — a variable published the whole deny-list in clear text
+      # from 2026-09-14 until this line changed. A secret is masked as `***`.
+      - run: npm run check:infra-disclosure
+        env:
+          INFRA_DISCLOSURE_TERMS: ${{ secrets.INFRA_DISCLOSURE_TERMS }}
+
       # The one question none of the gates above asks: does anything still
       # import this? Ten checks watched traceability, action pins, the env
       # example, the migration sequence and the charters, and none of them
