@@ -3,15 +3,17 @@
 // The nightly matrix (`.lighthouserc.js`) measures 29 URLs three times in
 // ~16 minutes, and its performance numbers move with the runner. A required
 // check has to be short and has to fail only on something the pull request
-// did, so this one asserts the two categories a GPU-less, throttled runner
-// cannot distort — accessibility and best practices — as errors, on four
-// routes that cover the home, both globe fiches and the search page. The
-// performance metrics are still collected and printed as warnings, so a
-// regression is visible on the pull request without making it unmergeable on
-// runner noise; the nightly matrix is where performance blocks.
+// did, so this one asserts the one category a GPU-less, throttled runner
+// cannot distort — best practices — as an error, on four routes that cover
+// the home, both globe fiches and the search page. Accessibility is asserted
+// by axe-core (a11y.yml) on the same routes instead, since ETNI-1948/DEC-054
+// — see lighthouseAxeCoverage.test.ts. The performance metrics are still
+// collected and printed as warnings, so a regression is visible on the pull
+// request without making it unmergeable on runner noise; the nightly matrix
+// is where performance blocks.
 //
-// One run per URL: accessibility and best-practices audits read the DOM and
-// the console, not timings, so a median of three would buy nothing but time.
+// One run per URL: best-practices audits read the DOM and the console, not
+// timings, so a median of three would buy nothing but time.
 // eslint-disable-next-line @typescript-eslint/no-require-imports -- the lhci CLI loads this file as CommonJS, like the config it borrows from
 const nightly = require("./.lighthouserc.js").ci;
 
@@ -29,7 +31,11 @@ module.exports = {
     },
     assert: {
       assertions: {
-        "categories:accessibility": ["error", { minScore: 1 }],
+        // Dropped since ETNI-1948/DEC-054: axe-core (a11y.yml) already audits
+        // every route this gate visits — lighthouseAxeCoverage.test.ts holds
+        // that precondition — and Lighthouse's accessibility score is the
+        // same axe-core engine run a second time on the same DOM. Two audits
+        // of one tree bought nothing but the time to run the second one.
         "categories:best-practices": ["error", { minScore: 0.95 }],
         "categories:performance": ["warn", { minScore: 0.85 }],
         "largest-contentful-paint": ["warn", { maxNumericValue: 5500 }],

@@ -1,0 +1,54 @@
+name: Ephemeral Supabase for a gated CI job
+description: >
+  Starts a throwaway Supabase inside the calling job, replays every
+  migration, and seeds only the entities the three database-reading PR
+  gates render (REQ-176/REQ-168) — never the full corpus. No credential
+  reaches the hosted or self-hosted recette project from here: the database
+  this action creates is discarded with the runner.
+
+# Caller is expected to have already run actions/checkout and
+# actions/setup-node — this action does not repeat either, since every job
+# that uses it already needs its own checkout ref and Node version choice.
+
+runs:
+  using: composite
+  steps:
+    # Pinned rather than `latest`, matching migrations-replay.yml: the CLI
+    # decides the Postgres image and the auth/storage schema versions the
+    # gate renders against, and a database that changes under an unchanged
+    # pull request is not a measurement.
+    - uses: supabase/setup-cli@46f7f98c7f948ad727d22c1e67fab04c223a0520 # v3.0.0
+      with:
+        version: 2.116.0
+
+    # Excludes every service no gated render needs: Studio, storage,
+    # realtime, edge functions, imgproxy and the analytics/logs stack.
+    # Auth stays up because GoTrue owns schemas the migrations extend, the
+    # same reason migrations-replay.yml keeps it.
+    - name: Start the ephemeral Supabase and apply every migration
+      shell: bash
+      run: |
+        supabase start -x realtime,imgproxy,mailpit,postgres-meta,studio,edge-runtime,logflare,vector,supavisor
+
+    # Exported to $GITHUB_ENV, not just this step's own output: the calling
+    # job's later steps (build, start the app, run the gate itself) read
+    # these as plain NEXT_PUBLIC_SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY,
+    # the same names every other workflow in this repository already uses.
+    - name: Export the ephemeral stack's credentials
+      shell: bash
+      run: |
+        supabase status -o env \
+          --override-name api.url=NEXT_PUBLIC_SUPABASE_URL \
+          --override-name auth.anon_key=NEXT_PUBLIC_SUPABASE_ANON_KEY \
+          --override-name auth.service_role_key=SUPABASE_SERVICE_ROLE_KEY \
+          | tr -d '"' \
+          | grep -E '^(NEXT_PUBLIC_SUPABASE_URL|NEXT_PUBLIC_SUPABASE_ANON_KEY|SUPABASE_SERVICE_ROLE_KEY)=' \
+          >> "$GITHUB_ENV"
+
+    # Seeds exactly the entities scripts/ci/ephemeralSeedManifest.ts derives
+    # from the three gated jobs' own route lists — never the full corpus.
+    # `--conditions=react-server` is load-bearing: the seeder reaches
+    # src/lib/supabase/admin.ts, which imports `server-only`.
+    - name: Seed the entities the gated routes render
+      shell: bash
+      run: npx tsx --conditions=react-server scripts/ci/seedEphemeralDatabase.ts

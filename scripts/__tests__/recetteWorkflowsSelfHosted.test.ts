@@ -42,6 +42,13 @@ describe("recette workflows read the self-hosted database, not the retired hoste
       }
     });
 
+    // Since ETNI-1948, a11y.yml's one job (`axe`) reads no repository secret
+    // at all — its database is the ephemeral-supabase action's own, started
+    // fresh inside the job. `ephemeralSupabaseWiring.test.ts` holds that job
+    // to the ephemeral action; this file's job is only "not the retired
+    // hosted project", checked above, which an absent reference satisfies.
+    if (name === "a11y.yml") continue;
+
     // @req REQ-176
     it(`${name} reads a RECETTE_SUPABASE_* secret`, () => {
       const workflow = readWorkflow(name);
