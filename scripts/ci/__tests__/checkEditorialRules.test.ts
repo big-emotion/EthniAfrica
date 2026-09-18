@@ -495,6 +495,85 @@ describe("checkCompetingAppellations", () => {
     expect(findings[0].message).toContain("exonyms");
   });
 
+  // The hole this rule shipped with: it returned early on anything that was
+  // not an array, so a *string* read to it as a declared silence. Twenty-four
+  // of the twenty-five family fiches store `historicalAppellations` as one,
+  // and the rule saw nothing for a week. `readNaming` reads arrays only, so
+  // those strings also reach the result page as no forms at all — a field that
+  // is full, a gate that is quiet, and a reader who is shown nothing.
+  // @req REQ-169
+  it("refuses a string where the model declares a list", () => {
+    const fiche: Fiche = {
+      id: "FLG_TEST",
+      content: {
+        decolonialHeader: { historicalAppellations: "Afroasiatic" },
+      },
+    };
+    const findings = checkCompetingAppellations(
+      fiche,
+      "dataset/source/afrik/famille_linguistique/FLG_TEST.json"
+    );
+    expect(findings).toHaveLength(1);
+    expect(findings[0].severity).toBe("error");
+    expect(findings[0].message).toContain("historicalAppellations");
+  });
+
+  // The two families whose header cannot be written yet are named rather than
+  // counted: a number says how much debt there is, a list says which fiche and
+  // lets the next pass find it. They are downgraded, never excused.
+  // @req REQ-169
+  it("downgrades a named debtor to a warning instead of failing the build", () => {
+    const fiche: Fiche = {
+      id: "FLG_BERBERE",
+      content: {
+        decolonialHeader: { historicalAppellations: "Berber / Amazigh" },
+      },
+    };
+    const findings = checkCompetingAppellations(
+      fiche,
+      "dataset/source/afrik/famille_linguistique/FLG_BERBERE.json"
+    );
+    expect(findings).toHaveLength(1);
+    expect(findings[0].severity).toBe("warning");
+  });
+
+  // The other direction, which is what makes it a ratchet rather than a
+  // permanent exemption: once the fiche carries a list, the entry has to go,
+  // or the next family to regress inherits a free pass.
+  // @req REQ-169
+  it("fails when a named debtor no longer needs to be named", () => {
+    const fiche: Fiche = {
+      id: "FLG_BERBERE",
+      content: {
+        decolonialHeader: {
+          historicalAppellations: ["Libyque"],
+          originOfHistoricalTerm: "Du grec barbaros.",
+        },
+      },
+    };
+    const findings = checkCompetingAppellations(
+      fiche,
+      "dataset/source/afrik/famille_linguistique/FLG_BERBERE.json"
+    );
+    expect(findings).toHaveLength(1);
+    expect(findings[0].severity).toBe("error");
+    expect(findings[0].message).toContain("STRING_APPELLATIONS_DEBT");
+  });
+
+  // A declared silence still has to be a list. `null` is the other shape that
+  // used to slip through, and it is what an absent key looks like once a
+  // serialiser has been over the fiche.
+  // @req REQ-169
+  it("refuses null where the model declares a list", () => {
+    const fiche: Fiche = {
+      id: "PPL_TEST",
+      content: { appellations: { exonyms: null } },
+    };
+    const findings = checkCompetingAppellations(fiche, peopleFile);
+    expect(findings).toHaveLength(1);
+    expect(findings[0].severity).toBe("error");
+  });
+
   // @req REQ-169
   it("refuses forms with nowhere they come from", () => {
     const fiche: Fiche = {
