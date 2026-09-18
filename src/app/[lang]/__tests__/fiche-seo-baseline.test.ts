@@ -239,9 +239,11 @@ describe("root layout metadata — the only <head> the fiche routes get", () => 
       // actually matters is asserted below.
       metadataBase: expect.any(URL),
       // Read from the constant for the reason the two fields below already
-      // give. This was a fourth spelling of the qualifier — the tab said
-      // "Dictionnaire des Ethnies d'Afrique" while the card said something
-      // else — and a copied literal is what let the two disagree in silence.
+      // give. This was a fourth spelling of the qualifier: the tab carried its
+      // own and the card carried another, so a reader opening one and a reader
+      // seeing the other were told the product was two different things. The
+      // dead spelling is not quoted here — a comment repeating a constant is a
+      // second place for that constant to be wrong.
       title: OG_TITLE,
       // Present and a string, not a frozen sentence. What the description has
       // to *say* is siteDescription.test.ts's contract, derived from the module

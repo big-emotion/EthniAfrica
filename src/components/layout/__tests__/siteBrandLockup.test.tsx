@@ -25,8 +25,10 @@ const source = () =>
 /**
  * The masthead is the one thing on every page, and it was the smallest thing
  * on every page: a 26px mark beside a 16px wordmark, with nothing saying what
- * EthniAfrica is. Production says it — "Atlas des Peuples d'Afrique", beside
- * the mark, in the warm gradient — and the app had dropped it.
+ * EthniAfrica is. Production said it — the qualifier from `brand.ts`, beside
+ * the mark, in the warm gradient — and the app had dropped it. The value is
+ * read, never quoted: it changed on 2026-09-17 and a quotation would have gone
+ * stale with it.
  *
  * The dress is asserted by reading the inline stylesheet back out of the
  * component, which is the pattern `navigationCharter.test.tsx` established:

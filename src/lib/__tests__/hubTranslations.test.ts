@@ -110,9 +110,9 @@ describe("header panel blurbs", () => {
 /**
  * The band above a hub names the page, not the product.
  *
- * It used to fall back to the product name, so `/fr/dossiers` opened on
- * « Atlas des Peuples d'Afrique » — already spelled out in the bar directly
- * above it — and told a reader nothing about where they stood. The title the
+ * It used to fall back to the product name, so `/fr/dossiers` opened on the
+ * brand qualifier — already spelled out in the bar directly above it — and told
+ * a reader nothing about where they stood. The title the
  * band now carries states the axis *and* what the axis leads into, which is
  * the hierarchy the URL encodes.
  */

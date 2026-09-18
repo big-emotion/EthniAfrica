@@ -1,3 +1,4 @@
+import { emailSignature } from "@/lib/email/signature";
 import { buildSignInLinkEmailEn } from "@/lib/email/signInLink.en";
 import type { Language } from "@/types/shared";
 
@@ -33,7 +34,7 @@ export function buildSignInLinkEmail(
       link,
       "Il ne sert qu'une fois et n'est valable que peu de temps. Ouvrez-le dans le navigateur où vous avez demandé la connexion.",
       "Si vous n'avez rien demandé, ignorez ce message : sans ce lien, personne ne peut se connecter avec votre adresse.",
-      "EthniAfrica — Atlas des Peuples d'Afrique",
+      emailSignature("fr"),
     ].join("\n\n"),
   };
 }

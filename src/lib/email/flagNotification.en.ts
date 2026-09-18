@@ -1,3 +1,4 @@
+import { emailSignature } from "@/lib/email/signature";
 import type { FlagResolutionStatus } from "@/lib/email/flagNotification";
 import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
 
@@ -106,7 +107,7 @@ export function buildFlagVerificationEmailEn({
       // The French signs off with PRODUCT_TAGLINE; its English form is a
       // brand decision the charter has not taken, so this is the plain
       // translation until it does.
-      "EthniAfrica — Atlas of the Peoples of Africa",
+      emailSignature("en"),
     ]),
     provenance: "machine",
   };
