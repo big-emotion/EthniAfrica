@@ -10,7 +10,7 @@ const en = {
     title: TRAIL_PAGE_LABELS.en.atlasHub,
     pageTitle: "Explore the peoples of Africa",
     blurb:
-      "The page axis: language families, languages, peoples, countries and names, each under its own.",
+      "One page per family of languages, per language, per people, per country and per name.",
     menuBlurb:
       "The pages of language families, languages, peoples, countries and names, plus the search.",
     hubEntryName: "The exploration hub",
@@ -19,7 +19,7 @@ const en = {
     title: TRAIL_PAGE_LABELS.en.dossiersHub,
     pageTitle: "Understand the peoples of Africa",
     blurb:
-      "The relations axis: where a name comes from, where the peoples passed, and which sources the atlas rests on.",
+      "Where a name comes from, where the peoples passed, and which sources the atlas rests on.",
     menuBlurb: "Read by theme, across peoples, territories and eras.",
     hubEntryName: "The reading hub",
     // The hub shows one page of readings at a time; these are its controls.
@@ -34,7 +34,7 @@ const en = {
     title: TRAIL_PAGE_LABELS.en.jeuxHub,
     pageTitle: "Play with the peoples of Africa",
     blurb:
-      "The testing axis: games and quizzes drawn from the pages, each answer leading back to its own.",
+      "Games and quizzes drawn from the pages, each answer leading back to its own.",
     menuBlurb:
       "A quiz drawn from the pages, and the Mercator projection cut down to size.",
     hubEntryName: "The games hub",
@@ -120,6 +120,14 @@ type HubsCopy = typeof en;
 // descriptions. The clause is gone; what the axis actually holds, which
 // was already the back half of every one of these, is now the whole of
 // it. The home's cards (AccessAxes) carry the same change.
+//
+// What replaced it still opened on « L'axe des… », and that went too
+// (2026-09-18). The reader meets this triptych as « Trois chemins » in the
+// header panel and « Trois manières d'entrer » on the About page; a third
+// name for it, and the only one taken from the inside, is the same failing
+// recorded just above against « le corpus » and « une entité ». The
+// sentences now start on the contents, which is what was left once the
+// filing word came off the front of them.
 const fr: HubsCopy = {
   atlas: {
     title: ACCESS_MODE_LABELS.atlas,
@@ -142,7 +150,7 @@ const fr: HubsCopy = {
     // 2026 (atlas-charter.md §3), and a sentence that promises what the row
     // below it does not offer is the same defect in the other direction.
     blurb:
-      "L'axe des pages : familles linguistiques, langues, peuples, pays et noms, chacun sous la sienne.",
+      "Une page par famille de langues, par langue, par peuple, par pays et par nom.",
     menuBlurb:
       "Les pages de familles linguistiques, langues, peuples, pays et noms, plus la recherche.",
     hubEntryName: "Le hub d'exploration",
@@ -151,7 +159,7 @@ const fr: HubsCopy = {
     title: ACCESS_MODE_LABELS.dossiers,
     pageTitle: "Comprendre les peuples d'Afrique",
     blurb:
-      "L'axe des relations : d'où vient un nom, par où sont passés les peuples, et sur quelles sources l'atlas s'appuie.",
+      "D'où vient un nom, par où sont passés les peuples, et sur quelles sources l'atlas s'appuie.",
     menuBlurb:
       "Des lectures par thème, à travers les peuples, les territoires et les époques.",
     hubEntryName: "Le hub de lecture",
@@ -166,7 +174,7 @@ const fr: HubsCopy = {
     title: ACCESS_MODE_LABELS.jeux,
     pageTitle: "Jouer avec les peuples d'Afrique",
     blurb:
-      "L'axe de la mise à l'épreuve : des jeux et des quiz tirés des pages, dont chaque réponse renvoie à la sienne.",
+      "Des jeux et des quiz tirés des pages, dont chaque réponse renvoie à la sienne.",
     menuBlurb:
       "Un quiz tiré des pages, et la projection de Mercator remise à sa juste taille.",
     hubEntryName: "Le hub des jeux",
