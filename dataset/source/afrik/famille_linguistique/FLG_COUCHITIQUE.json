@@ -8,7 +8,11 @@
       "whyProblematic": " - Le mot « couchitique » est hérité d'une grille de lecture biblique/coloniale qui attribuait des origines « extra-africaines » à certains peuples pour les distinguer des Africains « noirs » dans une logique raciale. Cette théorie a été utilisée pour justifier des hiérarchies raciales et des politiques coloniales.",
       "selfAppellation": "Cushitic",
       "contemporaryUsage": " Branche majeure de l'Afro-asiatique, extrêmement présente en Éthiopie, Somalie, Djibouti, Érythrée et nord du Kenya. Comprend l'oromo, le somali, l'afar, le sidamo, le saho, l'agaw, le rendille, etc. Classification purement linguistique, sans connotation raciale.",
-      "historicalAppellations": "Cushitic",
+      "historicalAppellations": [
+        "Langues couchitiques",
+        "Langues de Koush/Cush",
+        "chamitique"
+      ],
       "originOfHistoricalTerm": " Le terme « Cushitic » a été créé par le linguiste autrichien Friedrich Müller (1834-1898) en 1876 dans son ouvrage *Grundriss der Sprachwissenschaft* (Vienne, 1876-1888). Müller a dérivé ce terme de « Koush/Cush », figure biblique mentionnée dans la Genèse (10:6-8) comme fils de Cham et petit-fils de Noé, considéré comme l'ancêtre éponyme des peuples de la région de Koush (Nubie, Éthiopie). Cette appellation a été adoptée par les linguistes européens du XIXᵉ siècle selon une vision pseudo-généalogique inspirée de la Bible, dans le cadre de la théorie « chamito-couchitique » qui classait les langues africaines selon des critères raciaux."
     },
     "generalInfo": {
