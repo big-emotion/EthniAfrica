@@ -56,12 +56,12 @@ describe("recette AFRIK data sync workflow", () => {
   // The mirror of production-data-sync's rule: recette's credentials here, and
   // never production's. A load pointed at the wrong project is the exact defect
   // that made every production deploy write into recette.
-  // @req REQ-032
+  // @req REQ-176
   it("reads the recette project and never names the production secrets", () => {
     const workflow = readWorkflow();
 
-    expect(workflow).toContain("secrets.NEXT_PUBLIC_SUPABASE_URL");
-    expect(workflow).toContain("secrets.SUPABASE_SERVICE_ROLE_KEY");
+    expect(workflow).toContain("secrets.RECETTE_SUPABASE_URL");
+    expect(workflow).toContain("secrets.RECETTE_SUPABASE_SERVICE_ROLE_KEY");
     expect(workflow).not.toContain("PRODUCTION_SUPABASE_URL");
     expect(workflow).not.toContain("PRODUCTION_SUPABASE_SERVICE_ROLE_KEY");
     expect(workflow).toContain("--target=recette");

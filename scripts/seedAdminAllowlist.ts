@@ -10,8 +10,10 @@
  * service-role key, which is exactly the right authority for it.
  *
  * Reads NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY from the
- * environment — point them at the project you mean. Both Supabase projects
- * label their environment "production"; `shmrjtnfbqzceovroqjj` serves recette.
+ * environment — point them at the project you mean. Supabase labels every
+ * project's own environment "production" regardless of which application it
+ * serves; recette is self-hosted since ETNI-1958 (`shmrjtnfbqzceovroqjj` was
+ * its retired hosted project, kept as a rollback path until ETNI-1962).
  */
 import { createClient } from "@supabase/supabase-js";
 
