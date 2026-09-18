@@ -64,6 +64,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Source tier rulings](editorial/source-review/README.md)
 - [Translation classes](editorial/translation-classes.md)
 - [Interface copy](editorial/ui-copy.md)
+- [Vocabulary census — what the reader is actually told](editorial/vocabulary-census-2026-09-17.md)
 
 ## Audience — the dated reports the publishing chain reads
 
