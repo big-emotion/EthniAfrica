@@ -38,10 +38,12 @@ jobs:
 
     env:
       # NEVER production credentials. Same fallback as the full matrix below:
-      # `TEST_SUPABASE_*` when a dedicated test project exists, recette otherwise.
-      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.TEST_SUPABASE_URL || secrets.NEXT_PUBLIC_SUPABASE_URL }}
-      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.TEST_SUPABASE_SERVICE_ROLE_KEY || secrets.SUPABASE_SERVICE_ROLE_KEY }}
-      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.TEST_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+      # `TEST_SUPABASE_*` when a dedicated test project exists, recette otherwise
+      # (recette's own self-hosted stack since ETNI-1958/1961 — the TEST_SUPABASE_*
+      # branch is untouched here, ETNI-1948's concern, not this one's).
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.TEST_SUPABASE_URL || secrets.RECETTE_SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.TEST_SUPABASE_SERVICE_ROLE_KEY || secrets.RECETTE_SUPABASE_SERVICE_ROLE_KEY }}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.TEST_SUPABASE_ANON_KEY || secrets.RECETTE_SUPABASE_ANON_KEY }}
       CI: "true"
       # Test-only publication: production remains fail-closed to fr-only.
       SITE_LOCALE_MODE: bilingual-fr-default
@@ -216,9 +218,9 @@ jobs:
       # asserts it before any test runs. No current spec uses it: the write
       # factories (flag, fiche, key) exist, and Playwright fixtures are lazy,
       # so `supabaseAdmin` is never constructed by the specs that ship today.
-      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.TEST_SUPABASE_URL || secrets.NEXT_PUBLIC_SUPABASE_URL }}
-      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.TEST_SUPABASE_SERVICE_ROLE_KEY || secrets.SUPABASE_SERVICE_ROLE_KEY }}
-      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.TEST_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.TEST_SUPABASE_URL || secrets.RECETTE_SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.TEST_SUPABASE_SERVICE_ROLE_KEY || secrets.RECETTE_SUPABASE_SERVICE_ROLE_KEY }}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.TEST_SUPABASE_ANON_KEY || secrets.RECETTE_SUPABASE_ANON_KEY }}
       CI: "true"
       # Test-only publication: production remains fail-closed to fr-only.
       SITE_LOCALE_MODE: bilingual-fr-default

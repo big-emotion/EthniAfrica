@@ -594,11 +594,20 @@ recette project, then re-runs the reconciliation to prove the apply did what it 
 logs the SQL it is about to run first, so the job output is the record of what that deploy
 changed in the database.
 
-It needs one secret, **`RECETTE_SUPABASE_DB_URL`** — the recette project's Postgres connection
-string (Supabase dashboard → Project Settings → Database → Connection string → URI, with the
-password filled in). Without it the job **skips loudly** with a warning rather than failing, so
-a fork or Dependabot pull request does not read as broken. Nothing is applied while that secret
-is absent, which means the gap this workflow exists to close stays open until it is set.
+Since ETNI-1958/1961, recette's Postgres is self-hosted on the same VPS as production's, with no
+published port any more than production's has — so the job goes through the same SSH-tunnel
+mechanism documented in full below for `deploy-production.yml`, forwarding to the `recette-db`
+container instead of `supabase-db`, and reads `POSTGRES_PASSWORD` from
+`/home/ubuntu/supabase-recette/docker/.env` rather than the production stack's `.env`. It reuses
+the same `SUPABASE_SSH_*` secrets — same host, same key — rather than a second set. **There is no
+`RECETTE_SUPABASE_DB_URL`**, for the identical reason there is no `PRODUCTION_SUPABASE_DB_URL`: a
+stored connection string cannot name a host:port that is not published, so it could only ever be
+wrong. (The secret existed briefly under that name, from before this stack existed; it is left in
+place, unused, rather than deleted.)
+
+The job gates on **`RECETTE_SUPABASE_URL`** being present — the REST-facing secret it also uses
+for `migrations:diff` and `check:migration-state`. Without it the job **skips loudly** with a
+warning rather than failing, so a fork or Dependabot pull request does not read as broken.
 
 ### On a published Release — `deploy-production.yml`, the `migrate` job
 
@@ -678,8 +687,9 @@ planning none of them is not a quiet success. A gate that can only catch "too wi
 "never happened".
 
 Five secrets, alongside the existing `PRODUCTION_SSH_*` set for the application host — these
-name the **Supabase** host, which is a different machine from
-the application host that runs the app:
+name the **Supabase** host, which is a different machine from the application host that runs the
+app. Since ETNI-1958/1961 the same five back `migrate-recette.yml` too: recette's Postgres is
+self-hosted on this same host, in its own container, no second SSH keypair needed:
 
 | Secret                     | Value                                                     |
 | -------------------------- | --------------------------------------------------------- |

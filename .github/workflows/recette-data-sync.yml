@@ -57,8 +57,8 @@ jobs:
       # Recette's own credentials — the pair the rest of CI uses. The production
       # project must not be reachable from this file: pointing a load at the wrong
       # project is precisely the defect production-data-sync.yml was repaired for.
-      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.RECETTE_SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.RECETTE_SUPABASE_SERVICE_ROLE_KEY }}
 
     steps:
       - name: Check out the merged commit
