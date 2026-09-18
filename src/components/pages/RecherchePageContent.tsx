@@ -331,7 +331,12 @@ export function RecherchePageContent() {
 
   // Only once the fetch has resolved does the page know what it is answering
   // with — showing a head ahead of that paints a stale one for a frame.
-  const showQueryHead = status === "loaded";
+  //
+  // A resolved zero keeps the default title rather than heading the page with
+  // its own count. « 0 résultat pour « X » » sat directly above « Nous ne
+  // connaissons pas ce nom »: two answers to one question, and the count is
+  // the colder of the two.
+  const showQueryHead = status === "loaded" && sortedResults.length > 0;
 
   // The head is the count, always. It used to be the crowned answer's own
   // name when a pivot existed; DEC-057 retires that, and the name the reader

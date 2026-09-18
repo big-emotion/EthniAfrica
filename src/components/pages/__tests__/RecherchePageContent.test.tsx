@@ -1246,6 +1246,31 @@ describe("RecherchePageContent", () => {
     expect(heading).toHaveTextContent(/2 résultats pour/i);
   });
 
+  // The head counts an answer, and there is none to count. It was printing
+  // « 0 résultat pour « X » » directly above « Nous ne connaissons pas ce
+  // nom » — two answers to one question, and a count is the colder of the
+  // two. The boards give this case no count head at all.
+  // @req REQ-178
+  it("counts nothing over the page that says it holds nothing", async () => {
+    mockFetch.mockResolvedValue(okJson(emptyApiResponse));
+    render(<RecherchePageContent />);
+
+    await act(async () => {
+      fireEvent.change(screen.getByRole("combobox"), {
+        target: { value: "xyzzy" },
+      });
+      fireEvent.click(screen.getByRole("button", { name: /rechercher/i }));
+      await new Promise((r) => setTimeout(r, 100));
+    });
+
+    await waitFor(() => {
+      expect(screen.getByTestId("name-answer-unknown")).toBeInTheDocument();
+    });
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "Recherche"
+    );
+  });
+
   // @req REQ-124
   it("titles the page 'Recherche' before any query is committed", () => {
     render(<RecherchePageContent />);
