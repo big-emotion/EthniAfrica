@@ -218,13 +218,38 @@ two versions have to stay the same mockup, or comparing them proves nothing abou
 the theme. Every value comes from the `--afh-night-*` group of
 `src/styles/tokens/color.css`.
 
+## 4 bis. What the corpus can actually fill
+
+`search-result-data-shape.md` measures it, class by class, and two of its
+findings change what this charter may promise.
+
+**Four classes store their naming under four different keys** — peoples under
+`content.appellations`, countries at the root plus `content.historicalNames`,
+families under `content.decolonialHeader`, patronymes under `spellings[]` and
+`origin`. A page with one promise reads five shapes to keep it.
+
+**The appellations list is fully renderable on fewer than a quarter of
+peoples.** Of 3 127 exonyms, 75.4 % are bare forms; the qualifier the boards
+show beside each one lives, where it lives at all, _inside_ the form string, in
+677 distinct free-text values. **So the qualifier is shown when the corpus
+carries one and omitted when it does not — never parsed out of the form, never
+invented.**
+
+And the boards over-represent: `Mande` and `Peul` sit in the 23 % whose every
+exonym is qualified. The ordinary case — a people with four exonyms and no
+qualifier, 56 % of the corpus — has no board.
+
 ## 5. What the page cannot deliver yet
 
 Two blockers measured 2026-09-17, both visible as an empty band on every artboard:
 
-- **The corpus dates almost no attestation.** The « À travers le temps » block —
-  migrations and changes through time — has no data behind it. The mockups show
-  the declared silence rather than an empty section.
+- **The corpus dates almost no attestation — for four classes out of five.**
+  Measured 2026-09-18 (`search-result-data-shape.md`): not one of the 774
+  peoples, 25 families, 39 languages or 796 patronymes dates a single
+  attestation. **All 54 countries date theirs**, across six named eras, at
+  100 %. So « À travers le temps » is not a dead block: its condition is per
+  class, and the mockups — which draw four peoples and a disambiguation — drew
+  the four classes that cannot fill it.
 - **No gate guards the competing appellations.** `checkEditorialRules.ts` requires
   the self-given name and nothing requires the others
   (`docs/editorial/audit-doctrine-publication-2026-09-17.md`, finding 1). A page

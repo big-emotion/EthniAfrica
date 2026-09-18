@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700&display=swap">
+  <style>
+    body { margin: 0; font-family: "Nunito Sans", system-ui, sans-serif; background: #fbf7f2; color: #2c2018; }
+    a { color: #835514; } a:hover { color: #5c3b0e; }
+  </style>
+</helmet>
+
+<div style="width: 430px; height: 2230px; box-sizing: border-box; background: #fbf7f2; padding: 0 0 28px 0; display: flex; flex-direction: column;">
+
+  <div style="padding: 14px 20px; border-bottom: 1px solid #e8dfd3; display: flex; align-items: center; gap: 10px;">
+    <div style="font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 17px;">EthniAfrica</div>
+    <div style="font-size: 11px; color: #746557;">D&#39;o&ugrave; viennent les noms</div>
+  </div>
+
+  <div style="padding: 16px 20px 0 20px;">
+    <label for="q-fang" style="display: block; font-size: 12px; color: #746557; margin-bottom: 6px;">Rechercher un nom</label>
+    <div style="display: flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e8dfd3; border-radius: 10px; padding: 11px 13px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#746557" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+      <input id="q-fang" type="search" value="pahouin" style="border: 0; outline: 0; font-size: 16px; font-family: inherit; color: #2c2018; background: transparent; width: 100%;">
+    </div>
+  </div>
+
+  <div style="padding: 24px 20px 0 20px;">
+    <div style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700; color: #835514;">D&#39;o&ugrave; vient ce nom</div>
+    <h1 style="margin: 8px 0 0 0; font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 40px; line-height: 1.05;">Fang</h1>
+  </div>
+
+  <div style="margin: 16px 20px 0 20px; background: #f0d2c8; border-left: 3px solid #974331; border-radius: 0 10px 10px 0; padding: 14px 16px;">
+    <div style="font-weight: 700; font-size: 15px; color: #974331;">Trois noms europ&eacute;ens, un seul mot au d&eacute;part.</div>
+    <p style="margin: 6px 0 0 0; font-size: 14px; line-height: 1.55; color: #2c2018;">Ils se disent <strong>Fang</strong>, prononc&eacute; f&agrave;&#331;. Les trois autres viennent de voisins qui les avaient entendus le dire.</p>
+  </div>
+
+  <div style="padding: 26px 20px 0 20px;">
+    <h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-size: 20px; font-weight: 600;">Les appellations</h2>
+    <p style="margin: 4px 0 0 0; font-size: 12px; color: #746557;">Les plus communes d&#39;abord. Aucune n&#39;est &laquo;&nbsp;la bonne&nbsp;&raquo;.</p>
+  </div>
+
+  <!-- La colonne de droite est vide sur cette planche, et c'est le cas ordinaire :
+       75 % des exonymes du corpus sont des formes nues. La nuance est portée
+       par les blocs de prose en dessous, pas par une étiquette inventée ici. -->
+  <div style="padding: 14px 20px 0 20px; display: flex; flex-direction: column; gap: 8px;">
+    <div style="background: #ffffff; border: 1px solid #e8dfd3; border-radius: 10px; padding: 12px 14px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px;">
+      <div style="font-family: 'Fraunces', Georgia, serif; font-size: 18px; font-weight: 600;">Fang</div>
+      <div style="font-size: 12px; color: #746557;">le nom qu&#39;ils se donnent</div>
+    </div>
+    <div style="background: #ffffff; border: 1px solid #c9821f; border-radius: 10px; padding: 12px 14px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px;">
+      <div style="font-family: 'Fraunces', Georgia, serif; font-size: 18px; font-weight: 600;">Pahouin</div>
+      <div style="font-size: 12px; color: #835514; font-weight: 700;">votre recherche</div>
+    </div>
+    <div style="background: #ffffff; border: 1px solid #e8dfd3; border-radius: 10px; padding: 12px 14px;">
+      <div style="font-family: 'Fraunces', Georgia, serif; font-size: 18px; font-weight: 600;">Pangwe</div>
+    </div>
+    <div style="background: #ffffff; border: 1px solid #e8dfd3; border-radius: 10px; padding: 12px 14px;">
+      <div style="font-family: 'Fraunces', Georgia, serif; font-size: 18px; font-weight: 600;">Pamue</div>
+    </div>
+    <div style="background: #ffffff; border: 1px solid #e8dfd3; border-radius: 10px; padding: 12px 14px;">
+      <div style="font-family: 'Fraunces', Georgia, serif; font-size: 18px; font-weight: 600;">Mpangwe</div>
+    </div>
+  </div>
+
+  <div style="margin: 24px 20px 0 20px; background: #ffffff; border: 1px solid #e8dfd3; border-radius: 12px; padding: 16px;">
+    <h2 style="margin: 0 0 8px 0; font-family: 'Fraunces', Georgia, serif; font-size: 18px; font-weight: 600;">D&#39;o&ugrave; elles viennent</h2>
+    <p style="margin: 0; font-size: 14px; line-height: 1.6;">Les trois noms europ&eacute;ens viennent d&#39;un m&ecirc;me mot, <strong>Mpangwe</strong>, par lequel les peuples de la c&ocirc;te de l&#39;estuaire du Gabon d&eacute;signaient leurs voisins de l&#39;int&eacute;rieur&nbsp;: ils les avaient entendus se nommer <strong>fang</strong> et l&#39;avaient adapt&eacute; &agrave; leur propre langue.</p>
+    <p style="margin: 10px 0 0 0; font-size: 14px; line-height: 1.6;">Les Europ&eacute;ens l&#39;ont repris de ces interm&eacute;diaires vers le milieu du XIX<sup>e</sup> si&egrave;cle. Les Fran&ccedil;ais en ont fait <strong>Pahouin</strong>, les Allemands <strong>Pangwe</strong>, les Espagnols <strong>Pamue</strong>.</p>
+    <div style="margin-top: 12px; display: flex; gap: 9px; align-items: center;">
+      <span style="font-size: 10px; font-weight: 700; color: #ffffff; background: #5b8db8; border-radius: 999px; padding: 3px 9px;">R&eacute;f&eacute;renc&eacute;e</span>
+      <a href="#s" style="font-size: 13px;">Voir les 13 sources</a>
+    </div>
+  </div>
+
+  <div style="margin: 20px 20px 0 20px; background: #f5ede0; border-radius: 12px; padding: 16px;">
+    <h2 style="margin: 0 0 8px 0; font-family: 'Fraunces', Georgia, serif; font-size: 18px; font-weight: 600;">Ce que ces noms posent probl&egrave;me</h2>
+    <p style="margin: 0; font-size: 14px; line-height: 1.6;">Ces noms &eacute;taient collectifs&nbsp;: ils rangeaient sous une seule &eacute;tiquette les Fang et des peuples voisins apparent&eacute;s, les Bulu et les Beti.</p>
+    <p style="margin: 10px 0 0 0; font-size: 14px; line-height: 1.6;"><strong>Pahouin</strong> est parfois tenu pour p&eacute;joratif&nbsp;: il s&#39;est charg&eacute; de st&eacute;r&eacute;otypes coloniaux, n&eacute;s de la d&eacute;couverte de bo&icirc;tes reliquaires contenant des os d&#39;anc&ecirc;tres.</p>
+  </div>
+
+  <div style="margin: 20px 20px 0 20px; background: #ffffff; border: 1px solid #e8dfd3; border-radius: 12px; padding: 16px;">
+    <h2 style="margin: 0 0 8px 0; font-family: 'Fraunces', Georgia, serif; font-size: 18px; font-weight: 600;">Qui dit quoi, aujourd&#39;hui</h2>
+    <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>Fang</strong> est la forme en usage dans la litt&eacute;rature en fran&ccedil;ais. <strong>Fan</strong> en est une graphie ancienne &mdash; une orthographe du m&ecirc;me nom, pas un autre nom.</p>
+    <p style="margin: 10px 0 0 0; font-size: 14px; line-height: 1.6;"><strong>Pahouin</strong>, <strong>Pangwe</strong> et <strong>Pamue</strong> sont des noms coloniaux, repris aujourd&#39;hui surtout pour parler de l&#39;histoire du nom.</p>
+  </div>
+
+  <div style="padding: 26px 20px 0 20px;">
+    <h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-size: 20px; font-weight: 600;">Ce que l&#39;atlas ne dit pas</h2>
+    <p style="margin: 4px 0 0 0; font-size: 12px; color: #746557;">Un silence d&eacute;clar&eacute;, pas un oubli.</p>
+  </div>
+
+  <div style="padding: 14px 20px 0 20px; display: flex; flex-direction: column; gap: 10px;">
+    <div style="border: 1px dashed #cfc3b4; border-radius: 11px; padding: 14px;">
+      <div style="font-weight: 700; font-size: 14px; color: #746557;">Aucune attestation dat&eacute;e</div>
+      <div style="margin-top: 4px; font-size: 13px; line-height: 1.5; color: #746557;">L&#39;atlas situe l&#39;emprunt europ&eacute;en au milieu du XIX<sup>e</sup> si&egrave;cle, mais ne date aucune de ces formes une par une.</div>
+    </div>
+    <div style="border: 1px dashed #cfc3b4; border-radius: 11px; padding: 14px;">
+      <div style="font-weight: 700; font-size: 14px; color: #746557;">Ce que chaque nom veut dire</div>
+      <div style="margin-top: 4px; font-size: 13px; line-height: 1.5; color: #746557;">L&#39;atlas dit d&#39;o&ugrave; vient chaque forme, pas ce qu&#39;elle signifiait dans la langue de ceux qui l&#39;ont &eacute;crite.</div>
+    </div>
+  </div>
+
+  <div style="margin: 24px 20px 0 20px; background: #f5ede0; border-radius: 12px; padding: 15px 16px;">
+    <div style="font-weight: 700; font-size: 14px;">Aucun de ces noms n&#39;est faux.</div>
+    <p style="margin: 6px 0 0 0; font-size: 13px; line-height: 1.55; color: #2c2018;">Ils ne viennent simplement pas du m&ecirc;me endroit&nbsp;: celui qu&#39;un peuple se donne, ceux que ses voisins lui donnent, celui qu&#39;une administration a &eacute;crit un jour.</p>
+  </div>
+
+  <div style="margin: 22px 20px 0 20px; background: #ffffff; border: 1px solid #c9821f; border-radius: 12px; padding: 16px;">
+    <div style="font-weight: 700; font-size: 15px;">Nous nous sommes tromp&eacute;s&nbsp;?</div>
+    <p style="margin: 6px 0 12px 0; font-size: 14px; line-height: 1.55; color: #2c2018;">Si vous connaissez une source sur l&#39;un de ces noms, elle sera lue.</p>
+    <button type="button" style="font-family: inherit; font-size: 14px; font-weight: 700; color: #2c2018; background: #f1d9ae; border: 1px solid #c9821f; border-radius: 9px; padding: 11px 16px; min-height: 44px; cursor: pointer;">Proposer une source</button>
+  </div>
+
+  <div style="padding: 22px 20px 0 20px;">
+    <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; color: #746557;">Aller plus loin</div>
+    <div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 7px;">
+      <a href="#f" style="font-size: 13px; border: 1px solid #e8dfd3; background: #ffffff; border-radius: 999px; padding: 7px 13px; text-decoration: none;">Famille bantu</a>
+      <a href="#b" style="font-size: 13px; border: 1px solid #e8dfd3; background: #ffffff; border-radius: 999px; padding: 7px 13px; text-decoration: none;">Bulu</a>
+      <a href="#be" style="font-size: 13px; border: 1px solid #e8dfd3; background: #ffffff; border-radius: 999px; padding: 7px 13px; text-decoration: none;">Beti</a>
+      <a href="#g" style="font-size: 13px; border: 1px solid #e8dfd3; background: #ffffff; border-radius: 999px; padding: 7px 13px; text-decoration: none;">Gabon</a>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{"$preview":{"width":430,"height":2230}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

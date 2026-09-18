@@ -84,7 +84,9 @@ export const RESULT_BLOCKS: readonly ResultBlock[] = [
   {
     id: "through-time",
     movement: "holds",
-    when: "the corpus dates at least one attestation — never, today",
+    when:
+      "the class dates its names — every country does, across six named " +
+      "eras; no people, family, language or patronyme dates anything",
   },
   {
     id: "atlas-holds",

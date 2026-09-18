@@ -37,6 +37,7 @@ were referenced by nothing at all, two of them written that same week.
 - [How a name reaches a country](design/name-to-country-linking.md)
 - [Naming-subtype taxonomy (ETNI-1460)](design/naming-subtype-taxonomy.md)
 - [The search-result charter — what a name page owes its reader](design/search-result-charter.md)
+- [The result page's data shape — what it needs, what the corpus holds](design/search-result-data-shape.md)
 - [Typography Charter](design/typography-charter.md)
 
 ## Editorial — doctrine, audits and essays

@@ -25,7 +25,7 @@ anything reads it.
 
 ## The grid
 
-Five cases, four variants each. Every case exists at both review widths and in
+Six cases, four variants each. Every case exists at both review widths and in
 both themes; `resultGrammarCharter.test.ts` fails if one goes missing.
 
 | Case          | What it settles                                                  |
@@ -35,10 +35,24 @@ both themes; `resultGrammarCharter.test.ts` fails if one goes missing.
 | `Ekpeye`      | Almost nothing known — declared, not hidden                      |
 | `Introuvable` | A typo reaches the right page; an unknown name gets an admission |
 | `Bassa`       | One name, three peoples, three language families, no link        |
+| `Fang`        | **The ordinary case** — four exonyms, not one of them qualified  |
 
 Mobile is 430, desktop 1280. The night variants are **derived by token
 substitution, never rewritten** — the two versions have to stay the same
 mockup, or comparing them proves nothing about the theme.
+
+### Why `Fang` exists
+
+`Mande` and `Peul` sit in the 23 % of people fiches whose every exonym is
+qualified; they were chosen for being interesting, which made them
+unrepresentative. **`Fang` is the ordinary case**: four exonyms — Pahouin,
+Pangwe, Pamue, Mpangwe — and **not one of them qualified**, which is 56 % of the
+corpus. Its right-hand column is empty on purpose, and the nuance lives in the
+prose blocks below rather than in a label invented for the board.
+
+It is also a case worth reading: the three European names all descend from one
+word, `Mpangwe`, that coastal neighbours had made out of hearing these people
+say *fang*.
 
 ## What parity is, and what it is not
 
