@@ -33,8 +33,26 @@ export function selectNameSubject(
   const wanted = normalizeString(query.trim());
   if (!wanted) return [];
 
-  return results.filter(
-    (result) =>
-      normalizeString(getLocalizedSearchResultName(result, language)) === wanted
+  return results.filter((result) =>
+    namesOf(result, language).some((name) => normalizeString(name) === wanted)
   );
+}
+
+/**
+ * Every name the entry answers to: the one it is filed under, and every form
+ * the corpus records for it.
+ *
+ * Matching the filed name alone was the narrower reading, and it failed the
+ * premise. `Peul` is an exonym of an entry named `Fula (Fulbe / Peul)`; the
+ * most-searched African ethnonym in French reached no subject at all, and the
+ * page answered it with a bare result card.
+ *
+ * Forms are compared whole. A quarter of the corpus's exonyms carry their
+ * qualifier inside the string — `Mandingue (français colonial)` — and
+ * splitting on the parenthesis to widen the match would make `français
+ * colonial` a name a people answers to.
+ */
+function namesOf(result: SearchResult, language: Language): string[] {
+  const forms = result.naming?.forms.map((form) => form.form) ?? [];
+  return [getLocalizedSearchResultName(result, language), ...forms];
 }

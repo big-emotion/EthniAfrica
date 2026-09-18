@@ -746,6 +746,30 @@ describe("RecherchePageContent", () => {
     expect(screen.queryByTestId("name-answer-unknown")).not.toBeInTheDocument();
   });
 
+  // Measured on « peul », which the corpus answers with `Fula (Fulbe / Peul)`:
+  // 40 million people, found and listed, under a page saying the atlas does not
+  // know the name. The subject selector matches a name exactly and returns
+  // nothing here, which is right — but nothing is not the same fact as the
+  // corpus holding nothing, and only the second one is a confession.
+  // @req REQ-178
+  it("does not confess a gap while it is listing results for the query", async () => {
+    mockFetch.mockResolvedValue(okJson(searchApiResponse));
+    render(<RecherchePageContent />);
+
+    await act(async () => {
+      fireEvent.change(screen.getByRole("combobox"), {
+        target: { value: "zoulou" },
+      });
+      fireEvent.click(screen.getByRole("button", { name: /rechercher/i }));
+      await new Promise((r) => setTimeout(r, 100));
+    });
+
+    await waitFor(() => {
+      expect(screen.getByTestId("search-results-list")).toBeInTheDocument();
+    });
+    expect(screen.queryByTestId("name-answer-unknown")).not.toBeInTheDocument();
+  });
+
   // @req REQ-125
   it("empty state renders the near-miss leads the API returns", async () => {
     mockFetch.mockResolvedValue(

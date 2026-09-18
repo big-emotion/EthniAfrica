@@ -535,7 +535,7 @@ export function RecherchePageContent() {
             count are unaffected. */}
         {/* Named positively rather than as a list of exclusions, because the
             negative form silently admitted every status nobody had thought of:
-            `failed` fell through it and drew the unknown-name answer — an
+            `failed` fell through it and drew the unknown-name answer — a
             confession about the corpus — on a request that never reached it. */}
         {(status === "idle" || (status === "loaded" && results.length > 0)) && (
           <div data-testid="search-results-layout" className="space-y-afh-5xl">
@@ -543,7 +543,13 @@ export function RecherchePageContent() {
                 surviving clauses of REQ-124 still require. One column at every
                 width: the side rail asserted a hierarchy the corpus does not
                 support, and moving it below would have kept the assertion. */}
-            {committedQuery && !relation ? (
+            {/* Only where a subject was found. No subject alongside results
+                means the query matched no name exactly — « peul » against
+                `Fula (Fulbe / Peul)` — which is a question this block cannot
+                answer, not a name the corpus lacks. Passing the empty set
+                through drew the confession over 40 million people the page was
+                listing directly underneath. */}
+            {nameSubjects.length > 0 && !relation ? (
               <NameAnswer
                 subjects={nameSubjects}
                 query={committedQuery}
