@@ -209,7 +209,7 @@ describe("the result page's block grammar, on the reviewed mockups", () => {
 
       for (const id of UNCONDITIONAL_BLOCK_IDS) {
         // The verdict's eyebrow is absent from the two-state « introuvable »
-        // board, whose answer is the admission itself.
+        // board, whose answer is that it does not know the name.
         if (id === "verdict" && board.startsWith("Introuvable")) continue;
         // A board with a single appellation declares its silences in place of
         // the block; `Introuvable` has no entity to be silent about.
