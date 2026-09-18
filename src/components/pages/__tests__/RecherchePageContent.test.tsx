@@ -9,6 +9,7 @@ import {
 } from "@testing-library/react";
 import * as nextNavigation from "next/navigation";
 import { RecherchePageContent } from "../RecherchePageContent";
+import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { getLocalizedRoute, getPeopleRoute } from "@/lib/routing";
 import { SEARCH_RESULT_GROUPS } from "@/lib/search/searchVocabulary";
 
@@ -608,7 +609,8 @@ describe("RecherchePageContent", () => {
 
   // ── 6. empty state (post-search, no results) ───────────────────────────────
 
-  it("shows the empty-state after a search that returns no results", async () => {
+  // @req REQ-178
+  it("admits the atlas does not hold the name, rather than reporting a count", async () => {
     mockFetch.mockResolvedValue(okJson(emptyApiResponse));
     render(<RecherchePageContent />);
 
@@ -622,52 +624,57 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByText(/aucun résultat/i)).toBeInTheDocument();
+      expect(screen.getByTestId("name-answer-unknown")).toBeInTheDocument();
     });
+    expect(screen.getByText(nameAnswerCopy.fr.unknownName)).toBeInTheDocument();
   });
 
-  it("empty state includes a check-spelling suggestion", async () => {
-    mockFetch.mockResolvedValue(okJson(emptyApiResponse));
+  // The confession is owed for a name nothing came close to — not for a typo,
+  // which the near-miss leads answer on their own. Asserting the two apart is
+  // the point: stacked, the page would confess a gap the corpus does not have.
+  // @req REQ-178
+  it("keeps the confession off a search the engine found near-misses for", async () => {
+    mockFetch.mockResolvedValue(
+      okJson({
+        data: {
+          peoples: [],
+          countries: [],
+          families: [],
+          languages: [],
+          patronymes: [],
+          persons: [],
+          total: 0,
+          leads: [
+            {
+              kind: "people",
+              id: "PPL_MANDINKA",
+              name: "Mandinka",
+              similarity: 0.6,
+            },
+          ],
+        },
+        meta: {},
+      })
+    );
     render(<RecherchePageContent />);
 
     const input = screen.getByRole("combobox");
     const submit = screen.getByRole("button", { name: /rechercher/i });
 
     await act(async () => {
-      fireEvent.change(input, { target: { value: "xyzzy" } });
+      fireEvent.change(input, { target: { value: "mandink" } });
       fireEvent.click(submit);
       await new Promise((r) => setTimeout(r, 100));
     });
 
     await waitFor(() => {
-      expect(screen.getByText(/vérifiez l.orthographe/i)).toBeInTheDocument();
+      expect(screen.getByTestId("no-results-leads")).toBeInTheDocument();
     });
+    expect(screen.queryByTestId("name-answer-unknown")).not.toBeInTheDocument();
   });
 
   // @req REQ-002
-  it("empty state has a 'Parcourir par famille' link to the families directory", async () => {
-    mockFetch.mockResolvedValue(okJson(emptyApiResponse));
-    render(<RecherchePageContent />);
-
-    const input = screen.getByRole("combobox");
-    const submit = screen.getByRole("button", { name: /rechercher/i });
-
-    await act(async () => {
-      fireEvent.change(input, { target: { value: "xyzzy" } });
-      fireEvent.click(submit);
-      await new Promise((r) => setTimeout(r, 100));
-    });
-
-    await waitFor(() => {
-      const link = screen.getByRole("link", { name: /parcourir par famille/i });
-      expect(link).toBeInTheDocument();
-      expect(link.getAttribute("href")).toBe(
-        getLocalizedRoute("fr", "families")
-      );
-    });
-  });
-
-  it("empty state has 'Signaler donnée manquante' link that pre-populates the query", async () => {
+  it("empty state links to the families directory", async () => {
     mockFetch.mockResolvedValue(okJson(emptyApiResponse));
     render(<RecherchePageContent />);
 
@@ -682,12 +689,85 @@ describe("RecherchePageContent", () => {
 
     await waitFor(() => {
       const link = screen.getByRole("link", {
-        name: /signaler donn.e manquante/i,
+        name: nameAnswerCopy.fr.browseFamilies,
       });
       expect(link).toBeInTheDocument();
+      expect(link.getAttribute("href")).toBe(
+        getLocalizedRoute("fr", "families")
+      );
+    });
+  });
+
+  // @req REQ-178
+  it("carries the typed name into the form the confession invites the reader to", async () => {
+    mockFetch.mockResolvedValue(okJson(emptyApiResponse));
+    render(<RecherchePageContent />);
+
+    const input = screen.getByRole("combobox");
+    const submit = screen.getByRole("button", { name: /rechercher/i });
+
+    await act(async () => {
+      fireEvent.change(input, { target: { value: "xyzzy" } });
+      fireEvent.click(submit);
+      await new Promise((r) => setTimeout(r, 100));
+    });
+
+    await waitFor(() => {
+      const link = screen.getByRole("link", {
+        name: nameAnswerCopy.fr.invitationAction,
+      });
       expect(link.getAttribute("href")).toMatch(/contribute/);
       expect(link.getAttribute("href")).toMatch(/xyzzy/);
     });
+  });
+
+  // An unanswered request is not a silence in the corpus. The confession names
+  // the atlas as the thing that is missing something, so putting it on an
+  // outage publishes a claim about the corpus that the corpus never made —
+  // and the loader already separates the two facts through `answered`.
+  // @req REQ-178
+  it("does not confess a gap when the search never reached the corpus", async () => {
+    mockFetch.mockRejectedValue(new Error("network down"));
+    render(<RecherchePageContent />);
+
+    await act(async () => {
+      fireEvent.change(screen.getByRole("combobox"), {
+        target: { value: "bambara" },
+      });
+      fireEvent.click(screen.getByRole("button", { name: /rechercher/i }));
+      await new Promise((r) => setTimeout(r, 100));
+    });
+
+    await waitFor(() => {
+      expect(
+        screen.getByText(nameAnswerCopy.fr.searchUnavailable)
+      ).toBeInTheDocument();
+    });
+    expect(screen.queryByTestId("name-answer-unknown")).not.toBeInTheDocument();
+  });
+
+  // Measured on « peul », which the corpus answers with `Fula (Fulbe / Peul)`:
+  // 40 million people, found and listed, under a page saying the atlas does not
+  // know the name. The subject selector matches a name exactly and returns
+  // nothing here, which is right — but nothing is not the same fact as the
+  // corpus holding nothing, and only the second one is a confession.
+  // @req REQ-178
+  it("does not confess a gap while it is listing results for the query", async () => {
+    mockFetch.mockResolvedValue(okJson(searchApiResponse));
+    render(<RecherchePageContent />);
+
+    await act(async () => {
+      fireEvent.change(screen.getByRole("combobox"), {
+        target: { value: "zoulou" },
+      });
+      fireEvent.click(screen.getByRole("button", { name: /rechercher/i }));
+      await new Promise((r) => setTimeout(r, 100));
+    });
+
+    await waitFor(() => {
+      expect(screen.getByTestId("search-results-list")).toBeInTheDocument();
+    });
+    expect(screen.queryByTestId("name-answer-unknown")).not.toBeInTheDocument();
   });
 
   // @req REQ-125
@@ -744,7 +824,7 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByText(/aucun résultat/i)).toBeInTheDocument();
+      expect(screen.getByTestId("name-answer-unknown")).toBeInTheDocument();
     });
     expect(screen.queryByTestId("no-results-leads")).not.toBeInTheDocument();
   });
@@ -1046,7 +1126,7 @@ describe("RecherchePageContent", () => {
     await waitFor(() => {
       expect(screen.getByTestId("search-results-list")).toBeInTheDocument();
     });
-    expect(screen.queryByText(/aucun résultat/i)).not.toBeInTheDocument();
+    expect(screen.queryByTestId("name-answer-unknown")).not.toBeInTheDocument();
     expect(screen.queryByRole("listbox")).not.toBeInTheDocument();
   });
 
@@ -1188,7 +1268,7 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getAllByText(/aucun résultat/i)).toHaveLength(1);
+      expect(screen.getAllByTestId("name-answer-unknown")).toHaveLength(1);
     });
     expect(screen.queryByTestId("search-results-list")).not.toBeInTheDocument();
     expect(
@@ -1274,7 +1354,9 @@ describe("what the SERP reports about a search", () => {
     await submit("Zulu");
 
     await waitFor(() =>
-      expect(screen.getAllByText(/aucun résultat/i).length).toBeGreaterThan(0)
+      expect(
+        screen.getByText(nameAnswerCopy.fr.searchUnavailable)
+      ).toBeInTheDocument()
     );
     expect(submissions()).toHaveLength(0);
   });

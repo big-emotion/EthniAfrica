@@ -86,6 +86,49 @@ describe("the subject of a name search", () => {
     expect(subjects).toHaveLength(2);
   });
 
+  // The product's whole premise: a reader arrives typing the name they know,
+  // which is usually not the one the corpus filed the entry under. `Peul` is
+  // an exonym of an entry whose `nameMain` is `Fula (Fulbe / Peul)`, and
+  // matching that field alone left the most-searched name in French answering
+  // with a bare result card. The form is compared whole — nothing is parsed
+  // out of it — so a qualifier written inside a form never becomes a match.
+  // @req REQ-178
+  it("answers to a name the entry is known by, not only the one it is filed under", () => {
+    const fula: SearchResult = {
+      type: "people",
+      id: "PPL_FULA",
+      name: "Fula (Fulbe / Peul)",
+      naming: {
+        selfGiven: "Fulbe (pluriel), Pullo (singulier)",
+        forms: [{ form: "Peul" }, { form: "Fulani" }],
+        eras: [],
+      },
+    };
+
+    expect(selectNameSubject([fula], "peul").map((e) => e.id)).toEqual([
+      "PPL_FULA",
+    ]);
+    expect(selectNameSubject([fula], "Fulani").map((e) => e.id)).toEqual([
+      "PPL_FULA",
+    ]);
+  });
+
+  // @req REQ-178
+  it("does not match a qualifier written inside a form", () => {
+    const mande: SearchResult = {
+      type: "people",
+      id: "PPL_MANDE",
+      name: "Mandé",
+      naming: {
+        forms: [{ form: "Mandingue (français colonial)" }],
+        eras: [],
+      },
+    };
+
+    expect(selectNameSubject([mande], "français colonial")).toEqual([]);
+    expect(selectNameSubject([mande], "mandingue")).toEqual([]);
+  });
+
   // @req REQ-178
   it("has no subject when nothing carries the name", () => {
     expect(selectNameSubject([people("PPL_FANG", "Fang")], "kirdi")).toEqual(

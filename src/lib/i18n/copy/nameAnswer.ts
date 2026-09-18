@@ -44,6 +44,19 @@ export interface NameAnswerCopy {
   /** Said when the atlas holds no such name at all. */
   unknownName: string;
   unknownNameBody: string;
+  /**
+   * The near-miss case, which the boards keep separate from the confession: a
+   * search whose spelling missed is not a name the atlas lacks, and saying so
+   * spares the reader a confession that is not owed to them.
+   */
+  noExactMatch: string;
+  browsePeoples: string;
+  browseFamilies: string;
+  /**
+   * Said when the request never reached the corpus. It is deliberately not an
+   * confession: the atlas may well hold this name, and only the search failed.
+   */
+  searchUnavailable: string;
   /** The closing conviction, and the line that keeps it honest. */
   conviction: string;
   convictionBody: string;
@@ -54,7 +67,7 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
   en: {
     eyebrow: "Where this name comes from",
     disambiguation: "Which one are you looking for?",
-    appellations: "The appellations",
+    appellations: "The names",
     appellationsLead: "The most common first. None of them is “the right one”.",
     origins: "Where they come from",
     selfGiven: "What the peoples call themselves",
@@ -77,6 +90,11 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     unknownName: "We do not know this name.",
     unknownNameBody:
       "That is not an answer: it is a confession. If this name is yours, or one of a people, a language or a place you know, tell us. That is how the atlas grows.",
+    noExactMatch: "No entry carries exactly",
+    searchUnavailable:
+      "The search is unavailable at the moment. Nothing is missing from the atlas — it is the search that did not answer. Please try again shortly.",
+    browsePeoples: "Browse the peoples",
+    browseFamilies: "The language families",
     conviction: "None of these names is false.",
     convictionBody:
       "They simply do not come from the same place: the one a people gives itself, the ones its neighbours give it, the one an administration wrote down one day.",
@@ -107,6 +125,11 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     unknownName: "Nous ne connaissons pas ce nom.",
     unknownNameBody:
       "Ce n’est pas une réponse : c’est un aveu. Si ce nom est le vôtre, ou celui d’un peuple, d’une langue ou d’un lieu que vous connaissez, dites-le-nous. C’est comme ça que l’atlas grandit.",
+    noExactMatch: "Aucune fiche ne porte exactement",
+    searchUnavailable:
+      "La recherche est indisponible pour le moment. Rien ne manque à l’atlas : c’est la recherche qui n’a pas répondu. Réessayez dans un instant.",
+    browsePeoples: "Parcourir les peuples",
+    browseFamilies: "Les familles de langues",
     conviction: "Aucun de ces noms n’est faux.",
     convictionBody:
       "Ils ne viennent simplement pas du même endroit : celui qu’un peuple se donne, ceux que ses voisins lui donnent, celui qu’une administration a écrit un jour.",
