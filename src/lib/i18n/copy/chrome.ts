@@ -29,7 +29,7 @@ const en = {
 type ChromeCopy = typeof en;
 
 const fr: ChromeCopy = {
-  headerTagline: "D'où viennent les noms",
+  headerTagline: "D’où viennent les noms",
   mainNavigation: "Navigation principale",
   entryPoints: "Points d'entrée",
   search: "Rechercher",

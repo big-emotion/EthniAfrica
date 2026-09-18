@@ -36,10 +36,18 @@ describe("brand", () => {
     // to say what EthniAfrica is. PRODUCT_NAME stays the bare brand, because
     // every inner page suffixes it to a title that already has its own
     // qualifier.
+    //
+    // Composed rather than restated. The literal that used to sit here went
+    // stale twice in two days — once when the qualifier changed, once when its
+    // apostrophe did — and each time the failure said only that two strings
+    // differed, never which of them was wrong. What the constant actually owes
+    // is that it is the name, qualified by the tagline; that is what is
+    // asserted, and it cannot drift.
     // @req REQ-019
     it("should export OG_TITLE with default value", async () => {
-      const { OG_TITLE } = await import("../brand");
-      expect(OG_TITLE).toBe("EthniAfrica — Atlas des Peuples d'Afrique");
+      const { OG_TITLE, PRODUCT_NAME, PRODUCT_TAGLINE } =
+        await import("../brand");
+      expect(OG_TITLE).toBe(`${PRODUCT_NAME} — ${PRODUCT_TAGLINE}`);
     });
 
     // What the sentence must *say* is siteDescription.test.ts's contract,
