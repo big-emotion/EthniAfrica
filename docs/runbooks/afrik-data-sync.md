@@ -165,7 +165,7 @@ verification. On failure, keep `dataset/source/afrik/logs/migration_errors_<date
 diagnosis, then restore the pre-sync snapshot if the target is not internally consistent.
 
 `.github/workflows/production-data-sync.yml` runs this same validate → preview → apply sequence
-automatically after a successful OVH production deploy of `main`. If you are loading by
+automatically after a successful production deploy of `main`. If you are loading by
 hand shortly after a deploy, check whether that workflow has already done it — see
 [the automated production sync](#the-automated-production-sync) for the secrets it needs.
 
@@ -300,8 +300,8 @@ serving continuous public traffic. Revisit this if the AFRIK service caches ever
 
 ## The automated production sync
 
-The workflow chains off the **OVH production deploy** (`workflow_run` on "Deploy Production
-(OVH)"), runs `--target=production`, then POSTs a cache revalidation to
+The workflow chains off the **production deploy** (`workflow_run` on "Deploy Production"),
+runs `--target=production`, then POSTs a cache revalidation to
 `https://ethniafrica.com`. It used to key on a Vercel _Production_ deployment of `main`;
 production left Vercel, so `vercel[bot]` will never create such a deployment again and the
 workflow would simply have stopped running, silently. Note that `workflow_run` only fires for a
@@ -465,7 +465,7 @@ prune: `assertions`, `fiche_revisions`, `name_records`, `quiz_questions`, `flags
 and `oral_narratives`. The public readers join `afrik_peoples`, so nothing stale is served, but
 the rows are dead weight and their counts drift the audits. Build the id list from the ledger
 and run this against the same target, in the SQL editor for recette and through the SSH tunnel
-`deploy-production.yml` uses for production (see `docs/runbooks/ovh-production-deploy.md`):
+`deploy-production.yml` uses for production (see `docs/runbooks/production-deploy.md`):
 
 ```bash
 jq -r '[.[] | select(.decision != "kept-distinct") | .retiredId] | map("('" + . + "')") | join(", ")' \

@@ -1,4 +1,4 @@
-# Production image for the self-hosted OVH deployment (see docs/runbooks/ovh-production-deploy.md).
+# Production image for the self-hosted deployment (see docs/runbooks/production-deploy.md).
 #
 # Built on the VPS by `docker compose build ethniafrica`, never on a GitHub runner:
 # the build needs the production environment file, and keeping it on the host means

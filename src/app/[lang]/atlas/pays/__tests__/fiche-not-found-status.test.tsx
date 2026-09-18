@@ -33,7 +33,7 @@ vi.mock("@/lib/seo/ficheCanonical", () => ({
  * flushes the shell — and a `200` — before the page body runs, so the body's
  * own `notFound()` could no longer change the status: an unknown country
  * answered `200` with an error page, and search engines indexed it as real.
- * Measured against production the day of the OVH cutover: the VPS answered 200
+ * Measured against production the day of the self-hosted cutover: the VPS answered 200
  * on `/fr/atlas/pays/ZZZ` where Vercel answered 404.
  *
  * The check therefore lives in `generateMetadata`, which runs before the flush.

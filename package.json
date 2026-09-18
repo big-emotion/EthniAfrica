@@ -21,6 +21,7 @@
     "check:dead": "tsx scripts/ci/checkDeadCode.ts",
     "check:env-example": "tsx scripts/checkEnvExample.ts",
     "check:glossary": "tsx scripts/ci/checkGlossary.ts",
+    "check:infra-disclosure": "tsx scripts/ci/checkInfraDisclosure.ts",
     "check:jira-template": "tsx scripts/checkJiraTemplate.ts",
     "check:local-paths": "tsx scripts/ci/checkLocalPaths.ts --selftest && tsx scripts/ci/checkLocalPaths.ts",
     "check:migration-files": "tsx scripts/ci/checkMigrationState.ts --files-only",

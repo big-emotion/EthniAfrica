@@ -1,6 +1,6 @@
 name: Production AFRIK Data Sync
 
-# Chained to the OVH deploy, not to a Vercel deployment_status. Production left Vercel,
+# Chained to the self-hosted production deploy, not to a Vercel deployment_status. Production left Vercel,
 # so `vercel[bot]` will never create a deployment for it again and this workflow would
 # simply have stopped running — silently, with a green board and a corpus frozen at
 # whatever the last Vercel deploy loaded.
@@ -14,7 +14,7 @@ name: Production AFRIK Data Sync
 # to workflow_run: GitHub only offers it for a file on the default branch.
 on:
   workflow_run:
-    workflows: ["Deploy Production (OVH)"]
+    workflows: ["Deploy Production"]
     types: [completed]
   workflow_dispatch:
 
@@ -42,7 +42,7 @@ jobs:
     # trips, which this budget only stops from publishing a half-loaded corpus.
     timeout-minutes: 90
     env:
-      # This job runs after a successful OVH production deploy and revalidates
+      # This job runs after a successful production deploy and revalidates
       # ethniafrica.com, so every credential here must be the production project's.
       #
       # It used to hard-code the recette project ref, because the constant it read was
@@ -109,7 +109,7 @@ jobs:
       #
       # This never surfaced while the workflow was keyed on a Vercel
       # deployment_status: its `if:` conditions skipped every run, so the job was
-      # inert rather than working. Chaining it to the OVH deploy is what made it
+      # inert rather than working. Chaining it to the production deploy is what made it
       # execute for the first time.
       - name: Preview production synchronization
         run: npx tsx --conditions=react-server scripts/migrateAfrikToDatabase.ts --target=production

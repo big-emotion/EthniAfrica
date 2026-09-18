@@ -60,9 +60,9 @@ read the ledger. Recette is currently restricted; see D3-1.
 **Conditional. It is in production and the release path works; three things stand between the
 current state and the next release being safe.**
 
-`v4.7.0`, `v4.8.0` and `v4.9.0` all deployed through the GitHub Release → OVH path, and the v4.9.0
-`migrate` job read `applied 88 · pending 0 · orphaned 0 · drifted 0`. Production answers, fails
-closed to French, and rate-limits its public API through Upstash.
+`v4.7.0`, `v4.8.0` and `v4.9.0` all deployed through the GitHub Release → self-hosted VPS path, and
+the v4.9.0 `migrate` job read `applied 88 · pending 0 · orphaned 0 · drifted 0`. Production answers,
+fails closed to French, and rate-limits its public API through Upstash.
 
 The conditions:
 
@@ -320,7 +320,7 @@ drifted 1 adjudicated`, on the `089` merge commit); today's read failed on HTTP 
   read `applied 88 · pending 0` at v4.9.0; `089` is pending there by design until the next Release.
 - Deploy path otherwise sound: only `release: published` reaches the VPS, `vercel.json` keeps git
   deployments off, both `workflow_run` workflows are on `main`, the container runs non-root with a
-  healthcheck, rollback is in `docs/runbooks/ovh-production-deploy.md:166-236`.
+  healthcheck, rollback is in `docs/runbooks/production-deploy.md:166-236`.
 - Hardcoded-value penalty applied — see _Hardcoded values (P0/P1)_.
 
 ### Domain 6 — Ferry pipeline
