@@ -131,9 +131,14 @@ were chosen for being interesting, which made them unrepresentative. `Ekpeye`
 was drawn as the poor case and it is poor in a different way — one appellation
 rather than several unqualified ones.
 
-**The case the twenty boards do not draw is the ordinary one**: a people with
-four exonyms and not one of them qualified. It is 56 % of the corpus and it has
-no board.
+**The case the first twenty boards did not draw is the ordinary one**: a people
+with four exonyms and not one of them qualified — 56 % of the corpus.
+
+**It has a board now.** `Fang` was added the same day, in all four variants:
+Pahouin, Pangwe, Pamue and Mpangwe, none qualified, its right-hand column empty
+on purpose. The three European names all descend from one word that coastal
+neighbours had made out of hearing these people say _fang_ — so the block that
+carries the case is the origin prose, not the list.
 
 ## 4. Which side moves
 
@@ -154,7 +159,7 @@ people model converges toward it rather than inventing a shape. That is a
 migration with a ticket, a validator change and 774 fiches behind it — it is not
 a prerequisite for the page, because a form with no qualifier renders as a form.
 
-## 5. What `searchEnvelope` becomes
+## 5. What `searchEnvelope` became
 
 Today it carries, for peoples only:
 
@@ -167,18 +172,29 @@ read from `appellations` on the API payload. Nothing reaches the envelope from
 `historicalNames`, `decolonialHeader` or `spellings` — so **three of the five
 classes deliver none of their naming to the page that now exists to show it.**
 
-What has to change:
+**Done, 2026-09-18** — `src/lib/search/naming.ts`:
 
-- **One naming projection, four readers.** The envelope gains a single shape —
-  the self-given name, the forms with an optional qualifier and an optional
-  source, the origin prose, the problem prose, the usage prose, the dated eras —
-  and each class's service fills what it has. The page then reads one shape and
-  the grammar's conditions become field checks rather than class branches.
-- **`exonyms: string[]` becomes a list of records**, so the qualifier has
-  somewhere to live that is not inside the form. The value stays `undefined`
-  for the 75 % that carry none; nothing is parsed.
-- **The 0 % of dated attestations is load-bearing.** `through-time` reads the
-  country's six eras and nothing else until a dating pass exists.
+- **One projection, five readers.** `readNaming(type, content, root)` returns
+  the same `NamingProjection` for every class: the self-given name, the forms,
+  the origin prose, the problem prose, the usage prose, and the dated eras. Each
+  branch of `mapSearchEnvelope` calls it with its own class. The page reads one
+  shape, and the grammar's conditions become field checks rather than class
+  branches.
+- **A form is a record, not a string.** `NamingForm` carries an optional
+  `qualifier` and an optional `attestedIn`, so the qualifier has somewhere to
+  live that is not inside the form. **It stays `undefined` until a field exists
+  and is never parsed out of the form** — a test asserts exactly that on
+  « Mandingue (français colonial) ».
+- **The eras are a country's alone.** `NAMING_ERAS` names the six, and no other
+  reader fills them, because no other class dates anything.
+- **A class with nothing to say returns the empty projection**, never
+  `undefined`, so a caller writes `naming.forms.length > 0` and never a null
+  guard.
+
+What is still owed: the API payload has to carry `content` for the classes whose
+RPC does not forward it yet, or the reader receives an empty object and reports
+a silence the corpus does not have. That is measurable per class and is the
+first thing to check when a block goes missing.
 
 ## 6. What `DominantAnswerPanel`'s retirement takes with it
 
