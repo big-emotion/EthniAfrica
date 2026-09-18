@@ -87,7 +87,12 @@ vi.mock("@/api/v2/services/patronymes", async (importOriginal) => ({
 }));
 
 import { metadata as rootLayoutMetadata } from "@/app/layout";
-import { CANONICAL_DOMAIN, OG_DESCRIPTION, SOCIAL_HANDLE } from "@/lib/brand";
+import {
+  CANONICAL_DOMAIN,
+  OG_DESCRIPTION,
+  OG_TITLE,
+  SOCIAL_HANDLE,
+} from "@/lib/brand";
 import {
   getCountryRoute,
   getFamilyRoute,
@@ -233,7 +238,11 @@ describe("root layout metadata — the only <head> the fiche routes get", () => 
       // environment; only its shape is frozen here, and the guarantee that
       // actually matters is asserted below.
       metadataBase: expect.any(URL),
-      title: "EthniAfrica | Dictionnaire des Ethnies d'Afrique",
+      // Read from the constant for the reason the two fields below already
+      // give. This was a fourth spelling of the qualifier — the tab said
+      // "Dictionnaire des Ethnies d'Afrique" while the card said something
+      // else — and a copied literal is what let the two disagree in silence.
+      title: OG_TITLE,
       // Present and a string, not a frozen sentence. What the description has
       // to *say* is siteDescription.test.ts's contract, derived from the module
       // registry — pinning the copy in a second suite is what let it name four
@@ -247,7 +256,7 @@ describe("root layout metadata — the only <head> the fiche routes get", () => 
       openGraph: {
         // The site's own title, qualified: a social card carries no masthead
         // beside it to say what EthniAfrica is.
-        title: "EthniAfrica — Atlas des Peuples d'Afrique",
+        title: OG_TITLE,
         // Read from the constant rather than copied: what is asserted here is
         // that the layout wires the site's one OG description, not what that
         // sentence happens to say today.

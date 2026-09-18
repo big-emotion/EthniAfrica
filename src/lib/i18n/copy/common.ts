@@ -19,7 +19,7 @@ const en = {
   // Drawn into the social-card images, so it is read far more often than it
   // is seen on the site.
   subtitle:
-    "Encyclopaedia of the peoples, languages, language families, countries, ethnonyms and names of Africa",
+    "Peoples, languages, language families, countries, appellations and names — each with where its name comes from, and the sources that attest it.",
   byCountry: "By country",
   byPeople: "By people",
   byFamily: "By language family",
@@ -54,11 +54,13 @@ type CommonCopy = typeof en;
 
 const fr: CommonCopy = {
   title: PRODUCT_NAME,
-  // Drawn into the social-card images (opengraph-image.tsx,
-  // twitter-image.tsx), so it is read far more often than it is seen on the
-  // site. Held to the six atlas classes by siteDescription.test.ts.
+  // Drawn into the social-card images (siteShareCard.tsx), so it is read far
+  // more often than it is seen on the site. Held to the six atlas classes by
+  // siteDescription.test.ts. It sits *under* the question on the card, where
+  // it answers "what is in there" for a reader the question has already
+  // stopped — which is the only moment an enumeration earns its room.
   subtitle:
-    "Encyclopédie des peuples, langues, familles linguistiques, pays, appellations et noms d'Afrique",
+    "Peuples, langues, familles linguistiques, pays, appellations et noms — chacun avec l’origine de son nom et les sources qui l’attestent.",
   byCountry: "Par Pays",
   byPeople: "Par Peuple",
   byFamily: "Par Famille Linguistique",

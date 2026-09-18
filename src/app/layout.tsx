@@ -41,9 +41,18 @@ const jetbrainsMono = JetBrains_Mono({
 // @req REQ-044
 export const metadata: Metadata = {
   metadataBase: new URL(resolveSiteUrl()),
-  title: `${PRODUCT_NAME} | Dictionnaire des Ethnies d'Afrique`,
-  description:
-    "Encyclopédie des peuples, langues, familles linguistiques, pays, appellations et noms d'Afrique. Chaque fiche cite ses sources.",
+  // `OG_TITLE`'s own doc says it is "the home tab and the social card"; the tab
+  // carried a fourth spelling of the qualifier instead — "Dictionnaire des
+  // Ethnies d'Afrique" — which brand charter §1 exists to forbid. A reader
+  // opening the tab and a reader seeing the shared link were told the product
+  // was two different things.
+  title: OG_TITLE,
+  // The same sentence as the social card's, because it does the same job — say
+  // what this is to somebody who has not arrived. It was a near-duplicate
+  // literal instead, differing from `OG_DESCRIPTION` by three words, which is
+  // exactly the drift `siteDescription.test.ts` was written to catch after both
+  // had fallen two corpus classes behind.
+  description: OG_DESCRIPTION,
   authors: [{ name: PRODUCT_NAME }],
   icons: {
     icon: "/favicon.ico",
