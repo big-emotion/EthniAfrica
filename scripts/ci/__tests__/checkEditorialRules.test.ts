@@ -135,6 +135,63 @@ describe("checkEditorialRules — helpers", () => {
 });
 
 describe("checkAutonym (Rule 1)", () => {
+  /**
+   * The distinction this corpus draws everywhere else, brought to this rule.
+   *
+   * A language family mostly has no endonym at all: its archives say so in as
+   * many words — "il n'existe pas de terme endogène unique couvrant l'ensemble
+   * des peuples nilotiques", and the same sentence for seven others. Asking
+   * such a fiche for an autonym forever is asking for something the entity
+   * does not have, and it is what pushed twenty-three of them to answer with
+   * their own English name — "Cushitic", "Nilotic", "Semitic" — which the
+   * result page then drew under "the name they give themselves".
+   *
+   * So `null` written in the field is an answer: somebody looked, and there is
+   * none. An absent key is still the unanswered question it always was. This
+   * is `exonyms: []` against a missing key, one rule over.
+   */
+  // @req REQ-095
+  it("accepts an explicit null as a searched-for absence", () => {
+    const fiche: Fiche = {
+      id: "FLG_NILOTIQUE",
+      content: { decolonialHeader: { selfAppellation: null } },
+    };
+    expect(
+      checkAutonym(
+        fiche,
+        "dataset/source/afrik/famille_linguistique/FLG_NILOTIQUE.json"
+      )
+    ).toBeNull();
+  });
+
+  // @req REQ-095
+  it("still asks a fiche that never declared the field at all", () => {
+    const fiche: Fiche = {
+      id: "FLG_SILENT",
+      content: { decolonialHeader: {} },
+    };
+    const r = checkAutonym(
+      fiche,
+      "dataset/source/afrik/famille_linguistique/FLG_SILENT.json"
+    );
+    expect(r?.severity).toBe("warning");
+  });
+
+  // An empty string is not a declared absence — it is a field somebody
+  // blanked, and it reads to a human as unfinished rather than as an answer.
+  // @req REQ-095
+  it("does not accept an empty string as an answer", () => {
+    const fiche: Fiche = {
+      id: "PPL_X",
+      content: { appellations: { selfAppellation: "   " } },
+    };
+    const r = checkAutonym(
+      fiche,
+      "dataset/source/afrik/peuples/FLG_X/PPL_X.json"
+    );
+    expect(r).not.toBeNull();
+  });
+
   it("passes when autonym is present, regardless of confidence", () => {
     const fiche: Fiche = {
       id: "PPL_X",
