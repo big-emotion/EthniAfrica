@@ -14,16 +14,18 @@ own two-step rule — see [`migration-state.md`](./migration-state.md).
 `production` — the same vocabulary as the branches and the Vercel environments. A third value,
 `local`, names a contributor's own `supabase start` stack; see [Local bootstrap](#local-bootstrap).
 
-| Application environment | Supabase project                | Where the loader reads its URL                                              |
-| ----------------------- | ------------------------------- | --------------------------------------------------------------------------- |
-| `recette`               | `shmrjtnfbqzceovroqjj`          | `AFRIK_RECETTE_SUPABASE_URL`, checked into `scripts/lib/afrikSyncTarget.ts` |
-| `production`            | not recorded in this repository | the `AFRIK_PRODUCTION_SUPABASE_URL` environment variable — no default       |
-| `local`                 | your own `supabase start` stack | `NEXT_PUBLIC_SUPABASE_URL`, which must be `http://127.0.0.1` or `localhost` |
+| Application environment | Supabase project                             | Where the loader reads its URL                                              |
+| ----------------------- | -------------------------------------------- | --------------------------------------------------------------------------- |
+| `recette`               | self-hosted, recette's own stack (ETNI-1958) | `AFRIK_RECETTE_SUPABASE_URL`, checked into `scripts/lib/afrikSyncTarget.ts` |
+| `production`            | not recorded in this repository              | the `AFRIK_PRODUCTION_SUPABASE_URL` environment variable — no default       |
+| `local`                 | your own `supabase start` stack              | `NEXT_PUBLIC_SUPABASE_URL`, which must be `http://127.0.0.1` or `localhost` |
 
 Every Supabase project has exactly one environment and Supabase calls it "production", so that
-label never identifies the application environment. `shmrjtnfbqzceovroqjj`'s dashboard says
-"production" and the project backs **recette**. Read the environment off the `--target` value,
-never off a Supabase dashboard.
+label never identifies the application environment. Read the environment off the `--target`
+value, never off a Supabase dashboard. Recette moved off a hosted project
+(`shmrjtnfbqzceovroqjj`, whose dashboard also said "production" while backing recette) onto its
+own self-hosted stack after a recurring egress-quota restriction with no reset date (ETNI-1958,
+DEC-056). The hosted project is kept only as a rollback path until ETNI-1962 decommissions it.
 
 This distinction used to be wrong in code, and the wrongness was enforced rather than caught:
 `AFRIK_PRODUCTION_SUPABASE_URL` was a checked-in constant holding the recette ref, so
@@ -104,8 +106,8 @@ All three are applied by a human, never auto-applied. Their current state per pr
    For `--target=recette`:
 
    ```env
-   NEXT_PUBLIC_SUPABASE_URL=https://shmrjtnfbqzceovroqjj.supabase.co
-   SUPABASE_SERVICE_ROLE_KEY=<the recette project's service-role key>
+   NEXT_PUBLIC_SUPABASE_URL=https://supabase-recette.ethniafrica.com
+   SUPABASE_SERVICE_ROLE_KEY=<recette's self-hosted service-role key>
    ```
 
    For `--target=production` — both URLs must name the production project, and be identical:

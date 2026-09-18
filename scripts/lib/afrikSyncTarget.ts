@@ -20,7 +20,7 @@
  *
  * | Environment  | Supabase project        | Where its URL comes from            |
  * | ------------ | ----------------------- | ----------------------------------- |
- * | `recette`    | `shmrjtnfbqzceovroqjj`  | known, checked in below             |
+ * | `recette`    | self-hosted              | known, checked in below           |
  * | `production` | not in this repository  | `AFRIK_PRODUCTION_SUPABASE_URL` env |
  * | `local`      | `supabase start`        | a loopback `NEXT_PUBLIC_SUPABASE_URL` |
  *
@@ -43,9 +43,16 @@ const LOOPBACK_HOSTNAMES = new Set(["127.0.0.1", "localhost"]);
  * The Supabase project backing the **recette** application. Checked in because
  * it is not a secret and because pinning it is what stops a mistyped
  * `NEXT_PUBLIC_SUPABASE_URL` from quietly loading the corpus somewhere else.
+ *
+ * Self-hosted on the Supabase VPS since ETNI-1958/DEC-056/ARCH-023,
+ * replacing the hosted `shmrjtnfbqzceovroqjj` project — blocked by a
+ * recurring egress quota with no reset date across multiple billing cycles
+ * (see the `recette-402-exceed-egress-quota` runbook note). The hosted
+ * project is retired by ETNI-1962 once one release cycle has run clean
+ * against this one.
  */
 export const AFRIK_RECETTE_SUPABASE_URL =
-  "https://shmrjtnfbqzceovroqjj.supabase.co";
+  "https://supabase-recette.ethniafrica.com";
 
 export interface AfrikSyncTargetInput {
   /** The `--target=` value. */

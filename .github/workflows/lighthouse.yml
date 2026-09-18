@@ -38,9 +38,9 @@ jobs:
       # Test-only publication: production remains fail-closed to fr-only.
       SITE_LOCALE_MODE: bilingual-fr-default
       NEXT_TELEMETRY_DISABLED: 1
-      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
-      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.RECETTE_SUPABASE_URL }}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.RECETTE_SUPABASE_ANON_KEY }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.RECETTE_SUPABASE_SERVICE_ROLE_KEY }}
       NEXT_PUBLIC_FEATURE_QUIZ: "true"
       # A test deployment: without Upstash credentials a production one
       # answers 500 on every /api/v2 call, and the console errors that follow
@@ -207,11 +207,11 @@ jobs:
       - name: Check required secrets are present
         id: secrets
         run: |
-          if [ -n "${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}" ]; then
+          if [ -n "${{ secrets.RECETTE_SUPABASE_URL }}" ]; then
             echo "present=true" >> "$GITHUB_OUTPUT"
           else
             echo "present=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::Skipping Lighthouse — NEXT_PUBLIC_SUPABASE_URL secret not available (fork or Dependabot PR)."
+            echo "::notice::Skipping Lighthouse — RECETTE_SUPABASE_URL secret not available (fork or Dependabot PR)."
           fi
 
       - name: Build Next.js app
@@ -219,9 +219,9 @@ jobs:
         run: npm run build
         env:
           NEXT_TELEMETRY_DISABLED: 1
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.RECETTE_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.RECETTE_SUPABASE_ANON_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.RECETTE_SUPABASE_SERVICE_ROLE_KEY }}
           # Epic 10, Story 10.11 (ETNI-500) — the quiz route 404s
           # (isQuizFeatureEnabled) unless this is set, which would silently
           # audit nothing.
@@ -232,9 +232,9 @@ jobs:
         run: npm run start &
         env:
           NEXT_TELEMETRY_DISABLED: 1
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.RECETTE_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.RECETTE_SUPABASE_ANON_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.RECETTE_SUPABASE_SERVICE_ROLE_KEY }}
           NEXT_PUBLIC_FEATURE_QUIZ: "true"
 
       - name: Wait for server to be ready
