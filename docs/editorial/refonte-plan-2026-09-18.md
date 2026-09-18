@@ -161,6 +161,12 @@ form a people is known by, resting on a field nothing fills.
 It is corpus and gate work, it is real, and it is **not on the critical path** —
 see C. It runs beside B and C rather than before them.
 
+**The gate landed 2026-09-18.** `competing-appellations` asks every ethnographic
+fiche to have decided about the names it is known by, without demanding an
+exonym — an empty list is a declared silence, an absent key is an unanswered
+question. Three fiches fail it, held by a two-way ratchet, and each one is
+editorial work rather than a code fix. The corpus half of E is what remains.
+
 ## What blocks what
 
 ```

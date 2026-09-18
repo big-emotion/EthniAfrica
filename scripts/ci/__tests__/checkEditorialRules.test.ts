@@ -7,8 +7,11 @@ import {
   checkChronologySymmetry,
   checkSourcesCount,
   checkDoctrineLinkCardSnapshot,
+  checkCompetingAppellations,
   checkUndatedPolityCeiling,
+  checkUndecidedAppellationsCeiling,
   UNDATED_POLITY_CEILING,
+  UNDECIDED_APPELLATIONS_CEILING,
   escapeWorkflowCommand,
   extractAutonym,
   extractConfidence,
@@ -466,6 +469,110 @@ describe("the ratchet on the real corpus", () => {
   });
 });
 
+describe("checkCompetingAppellations", () => {
+  const peopleFile = "dataset/source/afrik/peuples/FLG_X/PPL_TEST.json";
+
+  // The rule this one is written against: a people known by one name only is a
+  // truth the atlas publishes — Ekpeye is the board drawn for it — so an empty
+  // list passes and only an absent key fails.
+  // @req REQ-169
+  it("accepts an empty list as a declared silence", () => {
+    const fiche: Fiche = {
+      id: "PPL_TEST",
+      content: { appellations: { exonyms: [] } },
+    };
+    expect(checkCompetingAppellations(fiche, peopleFile)).toEqual([]);
+  });
+
+  // @req REQ-169
+  it("refuses an absent key, which is an unanswered question", () => {
+    const fiche: Fiche = {
+      id: "PPL_TEST",
+      content: { appellations: { selfAppellation: "Iqbayliyen" } },
+    };
+    const findings = checkCompetingAppellations(fiche, peopleFile);
+    expect(findings).toHaveLength(1);
+    expect(findings[0].rule).toBe("competing-appellations");
+    expect(findings[0].message).toContain("exonyms");
+  });
+
+  // @req REQ-169
+  it("refuses forms with nowhere they come from", () => {
+    const fiche: Fiche = {
+      id: "PPL_TEST",
+      content: { appellations: { exonyms: ["Pahouin"], originOfExonyms: "" } },
+    };
+    const findings = checkCompetingAppellations(fiche, peopleFile);
+    expect(findings).toHaveLength(1);
+    expect(findings[0].message).toContain("originOfExonyms");
+  });
+
+  // @req REQ-169
+  it("accepts forms that carry their origin", () => {
+    const fiche: Fiche = {
+      id: "PPL_TEST",
+      content: {
+        appellations: {
+          exonyms: ["Pahouin"],
+          originOfExonyms: "Des intermédiaires côtiers.",
+        },
+      },
+    };
+    expect(checkCompetingAppellations(fiche, peopleFile)).toEqual([]);
+  });
+
+  // A family stores the same thing under another key, which is the finding
+  // that produced this rule: five classes, five schemas, one question.
+  // @req REQ-169
+  it("reads a family from decolonialHeader instead", () => {
+    const file = "dataset/source/afrik/famille_linguistique/FLG_TEST.json";
+    const fiche: Fiche = {
+      id: "FLG_TEST",
+      content: {
+        decolonialHeader: {
+          historicalAppellations: ["Hamito-sémitique"],
+          originOfHistoricalTerm: "Forgé au XIXe siècle.",
+        },
+      },
+    };
+    expect(checkCompetingAppellations(fiche, file)).toEqual([]);
+  });
+
+  // @req REQ-169
+  it("asks nothing of a country, which aggregates many peoples", () => {
+    const file = "dataset/source/afrik/pays/GAB.json";
+    expect(checkCompetingAppellations({ id: "GAB" }, file)).toEqual([]);
+  });
+});
+
+describe("checkUndecidedAppellationsCeiling (the ratchet)", () => {
+  // @req REQ-169
+  it("passes when the corpus sits exactly at the recorded ceiling", () => {
+    expect(
+      checkUndecidedAppellationsCeiling(
+        UNDECIDED_APPELLATIONS_CEILING,
+        UNDECIDED_APPELLATIONS_CEILING
+      )
+    ).toBeNull();
+  });
+
+  // @req REQ-169
+  it("fails when a fiche stops saying which names it is known by", () => {
+    const finding = checkUndecidedAppellationsCeiling(4, 3);
+    expect(finding?.severity).toBe("error");
+    expect(finding?.message).toContain("rose to 4");
+  });
+
+  // Both directions, because a ceiling left above the real number is a licence
+  // to climb back to it.
+  // @req REQ-169
+  it("fails when the count falls and the ceiling is not lowered with it", () => {
+    const finding = checkUndecidedAppellationsCeiling(1, 3);
+    expect(finding?.severity).toBe("error");
+    expect(finding?.message).toContain("lower UNDECIDED_APPELLATIONS_CEILING");
+  });
+});
+
 describe("checkUndatedPolityCeiling (the ratchet)", () => {
   // @req REQ-148
   it("passes when the corpus sits exactly at the recorded ceiling", () => {
@@ -521,7 +628,9 @@ describe("runEditorialRules — end-to-end", () => {
     writeFiche("peuples/FLG_BANTU/PPL_CLEAN.json", {
       id: "PPL_CLEAN",
       content: {
-        appellations: { selfAppellation: "Test endonym" },
+        // `exonyms: []` is what makes this fixture clean under
+        // `competing-appellations`: a declared silence, not an absent key.
+        appellations: { selfAppellation: "Test endonym", exonyms: [] },
         sources: ["one", "two"],
       },
     });
@@ -621,7 +730,9 @@ describe("runEditorialRules — end-to-end", () => {
     writeFiche("peuples/FLG_BANTU/PPL_CLEAN.json", {
       id: "PPL_CLEAN",
       content: {
-        appellations: { selfAppellation: "Test endonym" },
+        // `exonyms: []` is what makes this fixture clean under
+        // `competing-appellations`: a declared silence, not an absent key.
+        appellations: { selfAppellation: "Test endonym", exonyms: [] },
         sources: ["one", "two"],
       },
     });
