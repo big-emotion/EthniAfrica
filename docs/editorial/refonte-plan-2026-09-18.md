@@ -159,20 +159,21 @@ pass exists to catch, because neither uses the word:
 Both now lead with the question. The card keeps naming its modules, which is a
 separate contract (`modulesNamedIn`, ≥2) and a loose one.
 
-**One finding is left open, because it reverses a recorded decision.** The three
-hub pages open on « L'axe des pages », « L'axe des relations » and « L'axe de la
-mise à l'épreuve ». _Axe_ is the workshop's own word for the shelving rule: the
-header panel calls the same three things « Trois chemins » and the About page
-« Trois manières d'entrer », so a reader meets three names for one idea, one of
-which is internal — the very failing `hubs.ts` records against « le corpus » and
-« une entité ». The atlas one is also a bare taxonomy list.
+**The third finding needed an operator ruling, and got one the same day.** The
+three hub pages opened on « L'axe des pages », « L'axe des relations » and
+« L'axe de la mise à l'épreuve ». _Axe_ is the workshop's own word for the
+shelving rule: the header panel calls the same three things « Trois chemins »
+and the About page « Trois manières d'entrer », so a reader met three names for
+one idea, and the only one taken from the inside — the very failing `hubs.ts`
+records against « le corpus » and « une entité ». The atlas one was also a bare
+taxonomy list.
 
-It is not fixed here because `hubTranslations.test.ts` pins the opening with
-`toMatch(/^L'axe /)`, which that suite's own header says it set out not to do
-(« without pinning the prose »). Replacing the pin is easy; deciding the three
-sentences is an editorial call, and the proposal on the table is to drop the
-prefix and keep what follows it — « Une page par famille de langues, par langue,
-par peuple, par pays et par nom. » and its two counterparts.
+**Ruled 2026-09-18: drop the prefix, keep what follows.** The sentences now open
+on the contents, which is what was already there once the filing word came off
+the front of them. `hubTranslations.test.ts` no longer pins the opening with
+`toMatch(/^L'axe /)` — a pin that suite's own header says it set out not to lay
+(« without pinning the prose »). It refuses the filing word instead, which is
+the rule rather than one spelling of it.
 
 **`CLAUDE.md`.** The operator has asked to rewrite it from zero. It is not in
 this chantier, on purpose: it is the file every agent reads first, and rewriting
