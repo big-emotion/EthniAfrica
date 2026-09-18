@@ -14,13 +14,14 @@ import { AutonymExonymHeading } from "@/components/ui/AutonymExonymHeading";
 import { SearchResultCard } from "@/components/search/SearchResultCard";
 import { SearchPeopleGroupCard } from "@/components/search/SearchPeopleGroupCard";
 import { NameAnswer } from "@/components/search/NameAnswer";
+import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { SourcedHighlightBlock } from "@/components/search/SourcedHighlightBlock";
 import { SearchLensBar } from "@/components/search/SearchLensBar";
 import { NoNameFicheNote } from "@/components/search/NoNameFicheNote";
 import { NoResultsLeads } from "@/components/search/NoResultsLeads";
 import { useLanguage } from "@/hooks/use-language";
 import { useAutocomplete } from "@/hooks/use-autocomplete";
-import { getLocalizedRoute, getStaticPageRoute } from "@/lib/routing";
+import { getLocalizedRoute } from "@/lib/routing";
 import { cn } from "@/lib/utils";
 import {
   compareByRelevance,
@@ -66,7 +67,8 @@ type SearchHit = SearchResult;
 /**
  * `idle` — nothing committed yet, the page shows its default head.
  * `loading` — a fetch for the committed query is in flight or has not run.
- * `loaded` — the fetch resolved (success or failure); results reflect it.
+ * `loaded` — the corpus answered; results reflect what it holds.
+ * `failed` — the request never reached the corpus.
  *
  * A `?q=` on arrival used to initialise a `hasSearched` flag straight to
  * `true` before any fetch had run, so the empty-state block could paint on
@@ -75,8 +77,14 @@ type SearchHit = SearchResult;
  * `loading` whenever the URL already commits a query closes that gap: the
  * empty state is gated on `loaded`, which nothing reaches before the fetch
  * itself does.
+ *
+ * `failed` is separate from `loaded` so the page can tell an outage from a
+ * silence. The loader degrades every failure to an empty envelope, which is
+ * right for rendering and wrong for what the page then says: its answer to a
+ * name it does not find is a confession about the corpus, and an unanswered
+ * request is not one.
  */
-type SearchStatus = "idle" | "loading" | "loaded";
+type SearchStatus = "idle" | "loading" | "loaded" | "failed";
 
 // ── component ─────────────────────────────────────────────────────────────────
 
@@ -174,12 +182,12 @@ export function RecherchePageContent() {
             results: hits.length,
           });
         }
+        setStatus(answered ? "loaded" : "failed");
       } catch {
         setResults([]);
         setLeads([]);
         setCounts(EMPTY_SEARCH_LENS_COUNTS);
-      } finally {
-        setStatus("loaded");
+        setStatus("failed");
       }
     },
     [language]
@@ -525,66 +533,82 @@ export function RecherchePageContent() {
         {/* Split fiches of the same people (ETNI-1391) are grouped into one
             card here, at display time only — the underlying result order and
             count are unaffected. */}
-        {/* The empty state owns the surface when a search returned nothing:
-            drawing the answer container beside it would show a page that says
-            both "here is what we hold" and "we hold nothing". */}
-        {status !== "loading" &&
-          !(status === "loaded" && results.length === 0) && (
-            <div
-              data-testid="search-results-layout"
-              className="space-y-afh-5xl"
-            >
-              {/* The answer to the name, then the complete typed result set the
+        {/* Named positively rather than as a list of exclusions, because the
+            negative form silently admitted every status nobody had thought of:
+            `failed` fell through it and drew the unknown-name answer — an
+            confession about the corpus — on a request that never reached it. */}
+        {(status === "idle" || (status === "loaded" && results.length > 0)) && (
+          <div data-testid="search-results-layout" className="space-y-afh-5xl">
+            {/* The answer to the name, then the complete typed result set the
                 surviving clauses of REQ-124 still require. One column at every
                 width: the side rail asserted a hierarchy the corpus does not
                 support, and moving it below would have kept the assertion. */}
-              {committedQuery && !relation ? (
-                <NameAnswer
-                  subjects={nameSubjects}
-                  query={committedQuery}
-                  language={language}
-                />
-              ) : null}
-              {nameSubjects.length === 1 ? (
-                <SourcedHighlightBlock
-                  result={nameSubjects[0]}
-                  language={language}
-                />
-              ) : null}
-              {refinements}
-              {resultsList}
-            </div>
-          )}
+            {committedQuery && !relation ? (
+              <NameAnswer
+                subjects={nameSubjects}
+                query={committedQuery}
+                language={language}
+              />
+            ) : null}
+            {nameSubjects.length === 1 ? (
+              <SourcedHighlightBlock
+                result={nameSubjects[0]}
+                language={language}
+              />
+            ) : null}
+            {refinements}
+            {resultsList}
+          </div>
+        )}
 
-        {/* ── empty state (post-search, no results) ── */}
+        {status === "failed" && (
+          <div className="bg-afh-bg-warm rounded-afh-lg px-afh-5xl py-afh-7xl text-center">
+            <p
+              className="text-afh-small text-afh-text-soft mx-auto max-w-sm"
+              role="status"
+            >
+              {nameAnswerCopy[language].searchUnavailable}
+            </p>
+          </div>
+        )}
+
+        {/* ── a search that returned nothing ──
+            The boards keep two cases apart here, and so does this. A spelling
+            that missed gets the near-misses the engine found; only a name
+            nothing came close to gets the confession REQ-178 asks for. Stacking
+            them would confess a gap on a query that was merely mistyped.
+
+            What both replace opened on the reader's spelling — a search engine
+            apologising for its index, where the doctrine says the silence is
+            the atlas's own. */}
         {status === "loaded" && results.length === 0 && (
-          <div className="flex flex-col items-center justify-center min-h-[16rem] gap-afh-2xl px-afh-5xl py-afh-7xl bg-afh-bg-warm rounded-afh-lg text-center">
-            <p className="text-afh-small text-afh-text-soft max-w-sm">
-              {language === "en" ? "No results for" : "Aucun résultat pour"} «{" "}
-              {committedQuery} ».
-            </p>
-            <p className="text-afh-small text-afh-text-soft">
-              {language === "en"
-                ? "Check the spelling or try another term."
-                : "Vérifiez l’orthographe ou essayez un autre terme."}
-            </p>
-            <NoResultsLeads leads={leads} language={language} />
-            <div className="flex flex-col gap-afh-md text-afh-small">
+          <div className="space-y-afh-2xl">
+            {leads.length > 0 ? (
+              <div className="flex flex-col items-center gap-afh-2xl bg-afh-bg-warm rounded-afh-lg px-afh-5xl py-afh-7xl text-center">
+                <p className="text-afh-small text-afh-text-soft max-w-sm">
+                  {nameAnswerCopy[language].noExactMatch} « {committedQuery} ».
+                </p>
+                <NoResultsLeads leads={leads} language={language} />
+              </div>
+            ) : (
+              <NameAnswer
+                subjects={[]}
+                query={committedQuery}
+                language={language}
+              />
+            )}
+            <div className="flex flex-col items-center gap-afh-md text-afh-small">
+              <Link
+                href={getLocalizedRoute(language, "peoples")}
+                className="underline underline-offset-2 hover:text-afh-text transition-colors"
+              >
+                {nameAnswerCopy[language].browsePeoples}
+              </Link>
               <Link
                 href={getLocalizedRoute(language, "families")}
                 className="underline underline-offset-2 hover:text-afh-text transition-colors"
               >
-                {language === "en"
-                  ? "Browse by family"
-                  : "Parcourir par famille"}
-              </Link>
-              <Link
-                href={`${getStaticPageRoute(language, "contribute")}?q=${encodeURIComponent(committedQuery)}`}
-                className="underline underline-offset-2 hover:text-afh-text transition-colors"
-              >
-                {language === "en"
-                  ? "Report missing data"
-                  : "Signaler donnée manquante"}
+                {nameAnswerCopy[language].browseFamilies}
               </Link>
             </div>
           </div>

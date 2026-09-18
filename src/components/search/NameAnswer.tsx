@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
+import { getStaticPageRoute } from "@/lib/routing";
 import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
 import type { NamingProjection } from "@/lib/search/naming";
 import { cn } from "@/lib/utils";
@@ -144,7 +145,10 @@ export function NameAnswer({ subjects, query, language }: NameAnswerProps) {
         <p className="text-afh-text mt-3 text-base leading-relaxed">
           {copy.unknownNameBody}
         </p>
-        <Invitation copy={copy} />
+        <Invitation
+          copy={copy}
+          href={`${getStaticPageRoute(language, "contribute")}?q=${encodeURIComponent(query)}`}
+        />
       </section>
     );
   }
@@ -169,7 +173,7 @@ export function NameAnswer({ subjects, query, language }: NameAnswerProps) {
             </li>
           ))}
         </ul>
-        <Owed copy={copy} />
+        <Owed copy={copy} language={language} />
       </section>
     );
   }
@@ -214,7 +218,11 @@ export function NameAnswer({ subjects, query, language }: NameAnswerProps) {
         </section>
       ) : null}
 
-      <Owed copy={copy} datedEras={naming ? naming.eras.length > 0 : false} />
+      <Owed
+        copy={copy}
+        language={language}
+        datedEras={naming ? naming.eras.length > 0 : false}
+      />
     </section>
   );
 }
@@ -225,9 +233,11 @@ export function NameAnswer({ subjects, query, language }: NameAnswerProps) {
  */
 function Owed({
   copy,
+  language,
   datedEras = false,
 }: {
   copy: (typeof nameAnswerCopy)[Language];
+  language: Language;
   datedEras?: boolean;
 }) {
   return (
@@ -252,12 +262,18 @@ function Owed({
         </p>
       </section>
 
-      <Invitation copy={copy} />
+      <Invitation copy={copy} href={getStaticPageRoute(language, "contact")} />
     </>
   );
 }
 
-function Invitation({ copy }: { copy: (typeof nameAnswerCopy)[Language] }) {
+function Invitation({
+  copy,
+  href,
+}: {
+  copy: (typeof nameAnswerCopy)[Language];
+  href: string;
+}) {
   return (
     <section className="border-afh-accent-ink bg-afh-surface mt-afh-2xl rounded-afh-lg border p-afh-lg">
       <p className="text-afh-text text-sm font-bold">{copy.invitation}</p>
@@ -265,7 +281,7 @@ function Invitation({ copy }: { copy: (typeof nameAnswerCopy)[Language] }) {
         {copy.invitationBody}
       </p>
       <Link
-        href="/fr/contact"
+        href={href}
         className={cn(
           "bg-afh-accent-tint border-afh-accent-ink text-afh-text mt-3 inline-flex min-h-[44px] items-center rounded-afh-md border px-4 text-sm font-bold",
           CHARTER_FOCUS_RING
