@@ -61,11 +61,24 @@ Coverage today:
 
 **One board per case exists at mobile/day, and nowhere else.**
 
-**Order inside B, and it is not negotiable: the five deltas first, the nine
-missing boards after.** Deriving a night or desktop variant from a board that is
-about to gain a conviction line and an invitation to correct is drawing it
-twice. The night variants are derived by token substitution and never rewritten,
-which only holds if the day board is final.
+**Order inside B, and it is not negotiable: the five deltas first, the missing
+boards after.** Deriving a night or desktop variant from a board that is about
+to gain a conviction line and an invitation to correct is drawing it twice. The
+night variants are derived by token substitution and never rewritten, which only
+holds if the day board is final.
+
+**Mobile is done, 2026-09-18** — five cases by two themes, each board carrying
+the §3 bis grammar, each height measured from a render rather than estimated.
+Two things the render caught that the markup did not: three boards had their
+invitation _before_ their conviction, because the insertion anchored on « Aller
+plus loin » without seeing what already sat there; and the boards grew by about
+a third, so a fixed wrapper height would have clipped them silently.
+
+**What is left is the desktop row, and it is ten operations, not six.** The
+three desktop boards that exist were derived before §3 bis and carry the old
+grammar, so they absorb the deltas too; `Peul` and `Introuvable` have no desktop
+board at all; and all five night variants follow from those. The full grid is
+five cases by four variants — twenty boards, of which ten now conform.
 
 **B blocks C.** A data shape derived from a mockup that is about to change is
 derived twice as well.
