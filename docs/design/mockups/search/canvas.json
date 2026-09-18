@@ -1,0 +1,262 @@
+{
+  "attachments": {},
+  "boards": {
+    "Bassa.dc.html": {
+      "h": 1910,
+      "title": "Bassa — un nom, trois peuples sans parenté",
+      "w": 430,
+      "x": 2040,
+      "y": 0
+    },
+    "BassaDesktop.dc.html": {
+      "h": 1520,
+      "title": "Bassa — desktop 1280",
+      "w": 1280,
+      "x": 5440,
+      "y": 4900
+    },
+    "BassaDesktopNuit.dc.html": {
+      "h": 1520,
+      "title": "Bassa — desktop, nuit",
+      "w": 1280,
+      "x": 5440,
+      "y": 6780
+    },
+    "BassaNuit.dc.html": {
+      "h": 1910,
+      "title": "Bassa — nuit",
+      "w": 430,
+      "x": 2040,
+      "y": 2400
+    },
+    "Ekpeye.dc.html": {
+      "h": 1400,
+      "title": "Ekpeye — le cas pauvre, silences déclarés",
+      "w": 430,
+      "x": 1020,
+      "y": 0
+    },
+    "EkpeyeDesktop.dc.html": {
+      "h": 1280,
+      "title": "Ekpeye — desktop 1280",
+      "w": 1280,
+      "x": 2720,
+      "y": 4900
+    },
+    "EkpeyeDesktopNuit.dc.html": {
+      "h": 1280,
+      "title": "Ekpeye — desktop, nuit",
+      "w": 1280,
+      "x": 2720,
+      "y": 6780
+    },
+    "EkpeyeNuit.dc.html": {
+      "h": 1400,
+      "title": "Ekpeye — nuit",
+      "w": 430,
+      "x": 1020,
+      "y": 2400
+    },
+    "Introuvable.dc.html": {
+      "h": 1460,
+      "is_interactive": true,
+      "title": "Mal écrit, puis inconnu",
+      "w": 430,
+      "x": 1530,
+      "y": 0
+    },
+    "IntrouvableDesktop.dc.html": {
+      "h": 1100,
+      "title": "Introuvable — desktop 1280",
+      "w": 1280,
+      "x": 4080,
+      "y": 4900
+    },
+    "IntrouvableDesktopNuit.dc.html": {
+      "h": 1100,
+      "title": "Introuvable — desktop, nuit",
+      "w": 1280,
+      "x": 4080,
+      "y": 6780
+    },
+    "IntrouvableNuit.dc.html": {
+      "h": 1460,
+      "is_interactive": true,
+      "title": "Introuvable — nuit",
+      "w": 430,
+      "x": 1530,
+      "y": 2400
+    },
+    "Mande.dc.html": {
+      "h": 1870,
+      "title": "Mandé — le nom cherché vient du dehors",
+      "w": 430,
+      "x": 0,
+      "y": 0
+    },
+    "MandeDesktop.dc.html": {
+      "h": 1580,
+      "title": "Mande — desktop 1280",
+      "w": 1280,
+      "x": 0,
+      "y": 4900
+    },
+    "MandeDesktopNuit.dc.html": {
+      "h": 1580,
+      "title": "Mande — desktop, nuit",
+      "w": 1280,
+      "x": 0,
+      "y": 6780
+    },
+    "MandeNuit.dc.html": {
+      "h": 1870,
+      "title": "Mande — nuit",
+      "w": 430,
+      "x": 0,
+      "y": 2400
+    },
+    "Peul.dc.html": {
+      "h": 1950,
+      "title": "Peul — sept noms extérieurs, dont un péjoratif",
+      "w": 430,
+      "x": 510,
+      "y": 0
+    },
+    "PeulDesktop.dc.html": {
+      "h": 1560,
+      "title": "Peul — desktop 1280",
+      "w": 1280,
+      "x": 1360,
+      "y": 4900
+    },
+    "PeulDesktopNuit.dc.html": {
+      "h": 1560,
+      "title": "Peul — desktop, nuit",
+      "w": 1280,
+      "x": 1360,
+      "y": 6780
+    },
+    "PeulNuit.dc.html": {
+      "h": 1950,
+      "title": "Peul — nuit",
+      "w": 430,
+      "x": 510,
+      "y": 2400
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-09-18T08:00:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "note-bassa": {
+      "text": "Un nom, plusieurs référents différents. Trois peuples réels, trois familles de langues, aucune parenté établie — et dans deux cas sur trois l'orthographe « Bassa » vient d'une administration extérieure. L'ambiguïté est en partie fabriquée.",
+      "w": 430,
+      "x": 2040,
+      "y": 1970
+    },
+    "note-desktop": {
+      "text": "Les cinq cas, en 1280. Les convictions sont les mêmes qu'en mobile : une maquette qui change de phrase selon la largeur ne prouve plus rien. Ekpeye garde sa mesure de lecture de 720 px — une page pauvre ne s'étale pas — et Introuvable fait de même, ses deux états l'un sous l'autre.",
+      "w": 900,
+      "x": 5440,
+      "y": 4900
+    },
+    "note-ekpeye": {
+      "text": "Une seule appellation, aucune origine, aucune date. Trois silences déclarés plutôt qu'une page à moitié vide — puis ce que l'atlas tient vraiment, et l'appel à la correction.",
+      "w": 430,
+      "x": 1020,
+      "y": 1460
+    },
+    "note-introuvable": {
+      "text": "Deux états. En haut, une faute de frappe mène au bon article. En bas l'aveu : 774 peuples, et il en manque. Cliquable — les cartes mènent à Mandé.",
+      "w": 430,
+      "x": 1530,
+      "y": 1520
+    },
+    "note-mande": {
+      "text": "Le renversement est déjà dans la donnée : le corpus enregistre « Mandé » comme un nom venu du dehors. La page le dit d'emblée.",
+      "w": 430,
+      "x": 0,
+      "y": 1930
+    },
+    "note-nuit": {
+      "text": "Dérivées par substitution de tokens, jamais réécrites : les deux versions doivent rester la même maquette, sinon les comparer ne prouve rien. Valeurs prises dans le groupe --afh-night-* de color.css.",
+      "w": 430,
+      "x": 2550,
+      "y": 2400
+    },
+    "note-peul": {
+      "text": "Le cas qui teste la doctrine : Fellata est déclaré péjoratif par le corpus. On le montre quand même, et on dit pourquoi. Le cacher serait trancher.",
+      "w": 430,
+      "x": 510,
+      "y": 2010
+    },
+    "socle": {
+      "text": "Référence de la page de résultats, complète : cinq cas × quatre variantes. Tout suit la grammaire de blocs du §3 bis de la charte — ce que l'atlas tient, les silences rassemblés, la conviction, l'appel à correction, aller plus loin. Sur desktop, le mouvement II peut se répartir en colonnes et le mouvement III est une bande pleine largeur en pied, parce qu'une page à deux colonnes a deux ordres de lecture. Chaque hauteur est mesurée sur un rendu. Tout le contenu vient du corpus réel. Aucun terme savant sur la page.",
+      "w": 900,
+      "x": 0,
+      "y": -150
+    },
+    "titre": {
+      "kind": "title1",
+      "maxW": 2470,
+      "text": "D'où vient ce nom ? — la page de résultats, mobile, jour",
+      "w": 240,
+      "x": 0,
+      "y": -300
+    },
+    "titre-desktop": {
+      "kind": "title1",
+      "maxW": 4000,
+      "text": "Desktop 1280, jour",
+      "w": 240,
+      "x": 0,
+      "y": 4660
+    },
+    "titre-desktop-nuit": {
+      "kind": "title1",
+      "maxW": 2720,
+      "text": "Desktop 1280, nuit",
+      "w": 240,
+      "x": 0,
+      "y": 6540
+    },
+    "titre-nuit": {
+      "kind": "title1",
+      "maxW": 1960,
+      "text": "Mobile, nuit",
+      "w": 240,
+      "x": 0,
+      "y": 2160
+    }
+  },
+  "order": [
+    "Mande.dc.html",
+    "MandeNuit.dc.html",
+    "Peul.dc.html",
+    "PeulNuit.dc.html",
+    "Ekpeye.dc.html",
+    "EkpeyeNuit.dc.html",
+    "Introuvable.dc.html",
+    "IntrouvableNuit.dc.html",
+    "Bassa.dc.html",
+    "BassaNuit.dc.html",
+    "MandeDesktop.dc.html",
+    "MandeDesktopNuit.dc.html",
+    "PeulDesktop.dc.html",
+    "PeulDesktopNuit.dc.html",
+    "EkpeyeDesktop.dc.html",
+    "EkpeyeDesktopNuit.dc.html",
+    "IntrouvableDesktop.dc.html",
+    "IntrouvableDesktopNuit.dc.html",
+    "BassaDesktop.dc.html",
+    "BassaDesktopNuit.dc.html"
+  ],
+  "pages": [],
+  "title": "EthniAfrica — page de résultats, la référence",
+  "v": 3
+}

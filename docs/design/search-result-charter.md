@@ -152,9 +152,31 @@ do not carry it at all. Reserving the invitation for thin pages says the rich
 ones are settled — exactly what "no appellation is crowned" refuses. A page
 showing seven names is the page most in need of correction.
 
-### What the artboards still have to become
+### Two columns have two reading orders
 
-None conforms entirely. The deltas, named so they are held:
+§3 bis states a sequence, and a sequence assumes one column. The three desktop
+boards each resolved that differently — `Mande` put a dated silence in its right
+rail, `Bassa` its conviction, `Ekpeye` its invitation beside a facts panel — so
+the same grammar produced three different closings.
+
+**The rule. Movement II may use columns; movement III is one full-width band at
+the foot, in the grammar's order.** What the atlas holds can be read in parallel;
+what it owes the reader is read in sequence, and a conviction sitting in a rail
+beside an unrelated panel is not a closing.
+
+**And the convictions do not change with the width.** A mockup that says
+something different at 1280 than at 430 has stopped being one mockup, and
+comparing the two proves nothing — the same reason the night variants are derived
+by substitution rather than rewritten.
+
+**A thin page keeps its measure in the band too.** `Ekpeye` and `Introuvable`
+hold 720 px at 1280; their bands are centred on the same column rather than run
+to the 900 px the rich boards use.
+
+### What the artboards became, 2026-09-18
+
+**All twenty conform**: five cases by four variants — mobile and desktop, day and
+night. What changed, and what the pass cost:
 
 | Board         | What changes                                                              |
 | ------------- | ------------------------------------------------------------------------- |
@@ -164,9 +186,17 @@ None conforms entirely. The deltas, named so they are held:
 | `Bassa`       | its silence moves up into the silences block; gains the invitation        |
 | `Introuvable` | « En attendant » takes the name "Aller plus loin"; gains the conviction   |
 
-Until they change, **the artboards remain the reference for the rendering and
-this section the reference for the sequence.** It is the one place where the two
-disagree, and it is written here so nobody discovers it in the code.
+Two things only a render could have caught, both recorded because a future pass
+will hit them again:
+
+- **Three boards ended up asking for a correction before saying what they stand
+  for.** The insertion anchored on « Aller plus loin » without seeing that an
+  invitation already sat there. The markup read as correct in every diff.
+- **The boards grew by about a third**, and a board declares its height in two
+  places — its own wrapper and the canvas index. An estimate would have clipped
+  them in silence, so every height is measured from a render.
+
+The artboards and this section no longer disagree.
 
 ## 4. What the layout settles
 
