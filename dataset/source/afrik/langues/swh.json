@@ -9,7 +9,14 @@
   "glottocode": "swah1253",
   "nameFr": "Swahili",
   "nameEn": "Swahili",
-  "alternateNames": [],
+  "alternateNames": [
+    "Arab-Swahili",
+    "KiSwahili",
+    "Kisuaheli",
+    "Kiswaheli",
+    "Kiswahili",
+    "Suahili"
+  ],
   "spellingAliases": [],
   "familyId": "FLG_NIGERCONGO",
   "peoples": [],

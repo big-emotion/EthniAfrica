@@ -9,7 +9,13 @@
   "glottocode": "stan1318",
   "nameFr": "Arabe standard moderne",
   "nameEn": "Standard Arabic",
-  "alternateNames": [],
+  "alternateNames": [
+    "Al Arabiya",
+    "Al-Arabiyya",
+    "Al-Fus-Ha",
+    "Al-FusHa",
+    "al-Fusḥa"
+  ],
   "spellingAliases": [],
   "familyId": "FLG_SEMITIQUE",
   "peoples": [],
