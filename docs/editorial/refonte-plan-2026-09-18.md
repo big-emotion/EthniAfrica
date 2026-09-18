@@ -143,6 +143,37 @@ pass over the reader-facing copy modules — `homePurpose.ts`, `doctrine.ts`,
 `about.ts`, the hub copy — and it belongs in D, after B has settled what the new
 register sounds like.
 
+**D2 ran on 2026-09-18. Three of the four modules were already right**, which is
+worth recording: `homePurpose.ts` leads with « Les noms en ont plus de mille »,
+`doctrine.ts` is a method page about classification badges and asserts nothing
+about the positioning, and `about.ts`'s purpose chapter had already been
+rewritten as « Pourquoi nous racontons les noms ».
+
+Two sentences in `about.ts` had not. Both were inventories — the failure this
+pass exists to catch, because neither uses the word:
+
+- the page's **opening sentence**, which listed the contents and put the names
+  third of three;
+- the **atlas access-mode card**, which opened « Tout ce que l'atlas contient ».
+
+Both now lead with the question. The card keeps naming its modules, which is a
+separate contract (`modulesNamedIn`, ≥2) and a loose one.
+
+**One finding is left open, because it reverses a recorded decision.** The three
+hub pages open on « L'axe des pages », « L'axe des relations » and « L'axe de la
+mise à l'épreuve ». _Axe_ is the workshop's own word for the shelving rule: the
+header panel calls the same three things « Trois chemins » and the About page
+« Trois manières d'entrer », so a reader meets three names for one idea, one of
+which is internal — the very failing `hubs.ts` records against « le corpus » and
+« une entité ». The atlas one is also a bare taxonomy list.
+
+It is not fixed here because `hubTranslations.test.ts` pins the opening with
+`toMatch(/^L'axe /)`, which that suite's own header says it set out not to do
+(« without pinning the prose »). Replacing the pin is easy; deciding the three
+sentences is an editorial call, and the proposal on the table is to drop the
+prefix and keep what follows it — « Une page par famille de langues, par langue,
+par peuple, par pays et par nom. » and its two counterparts.
+
 **`CLAUDE.md`.** The operator has asked to rewrite it from zero. It is not in
 this chantier, on purpose: it is the file every agent reads first, and rewriting
 it while the shape of the work is still moving means rewriting it twice. It is

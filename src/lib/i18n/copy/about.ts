@@ -41,7 +41,7 @@ export const accessModeCards: Record<Language, AccessModeCardCopy[]> = {
       id: "atlas",
       label: "The atlas",
       description:
-        "Everything the atlas holds: families, languages, peoples, countries and names, plus free search.",
+        "Search a name and see where it comes from, then the peoples, languages, families of languages, countries and names that carry it.",
       accentClass: ACCENT_CLASS.atlas,
     },
     {
@@ -64,7 +64,7 @@ export const accessModeCards: Record<Language, AccessModeCardCopy[]> = {
       id: "atlas",
       label: "L'atlas",
       description:
-        "Tout ce que l’atlas contient : familles de langues, langues, peuples, pays et noms, plus la recherche libre.",
+        "Chercher un nom et voir d’où il vient, puis les peuples, les langues, les familles de langues, les pays et les noms qui le portent.",
       accentClass: ACCENT_CLASS.atlas,
     },
     {
@@ -389,7 +389,7 @@ export const aboutPage: Record<Language, AboutPageCopy> = {
     title: "About",
     overview: {
       eyebrow: "The project",
-      lead: "EthniAfrica tells the story of Africa’s peoples: where they live, the languages they speak, and where their names come from.",
+      lead: "EthniAfrica tells where names come from: the names of Africa’s peoples, of the languages they speak, and of the countries where they live.",
       asideLead:
         "Everything written here comes from a source, and the source is shown.",
       asideNote:
@@ -441,7 +441,7 @@ export const aboutPage: Record<Language, AboutPageCopy> = {
     title: "À propos",
     overview: {
       eyebrow: "Le projet",
-      lead: "EthniAfrica raconte les peuples d’Afrique : où ils vivent, quelles langues ils parlent, et d’où viennent leurs noms.",
+      lead: "EthniAfrica raconte d’où viennent les noms : ceux des peuples d’Afrique, des langues qu’ils parlent et des pays où ils vivent.",
       asideLead:
         "Tout ce qui est écrit ici vient d’une source, et la source est affichée.",
       asideNote:
