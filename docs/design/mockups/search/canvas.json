@@ -13,21 +13,21 @@
       "title": "Bassa — desktop 1280",
       "w": 1280,
       "x": 5440,
-      "y": 4900
+      "y": 5460
     },
     "BassaDesktopNuit.dc.html": {
       "h": 1520,
       "title": "Bassa — desktop, nuit",
       "w": 1280,
       "x": 5440,
-      "y": 6780
+      "y": 7510
     },
     "BassaNuit.dc.html": {
       "h": 1910,
       "title": "Bassa — nuit",
       "w": 430,
       "x": 2040,
-      "y": 2400
+      "y": 2680
     },
     "Ekpeye.dc.html": {
       "h": 1400,
@@ -41,21 +41,49 @@
       "title": "Ekpeye — desktop 1280",
       "w": 1280,
       "x": 2720,
-      "y": 4900
+      "y": 5460
     },
     "EkpeyeDesktopNuit.dc.html": {
       "h": 1280,
       "title": "Ekpeye — desktop, nuit",
       "w": 1280,
       "x": 2720,
-      "y": 6780
+      "y": 7510
     },
     "EkpeyeNuit.dc.html": {
       "h": 1400,
       "title": "Ekpeye — nuit",
       "w": 430,
       "x": 1020,
-      "y": 2400
+      "y": 2680
+    },
+    "Fang.dc.html": {
+      "h": 2230,
+      "title": "Fang — le cas ordinaire, aucune forme qualifiée",
+      "w": 430,
+      "x": 2550,
+      "y": 0
+    },
+    "FangDesktop.dc.html": {
+      "h": 1750,
+      "title": "Fang — desktop 1280",
+      "w": 1280,
+      "x": 6800,
+      "y": 5460
+    },
+    "FangDesktopNuit.dc.html": {
+      "h": 1750,
+      "title": "Fang — desktop, nuit",
+      "w": 1280,
+      "x": 6800,
+      "y": 7510
+    },
+    "FangNuit.dc.html": {
+      "h": 2230,
+      "title": "Fang — nuit",
+      "w": 430,
+      "x": 2550,
+      "y": 2680
     },
     "Introuvable.dc.html": {
       "h": 1460,
@@ -70,14 +98,14 @@
       "title": "Introuvable — desktop 1280",
       "w": 1280,
       "x": 4080,
-      "y": 4900
+      "y": 5460
     },
     "IntrouvableDesktopNuit.dc.html": {
       "h": 1100,
       "title": "Introuvable — desktop, nuit",
       "w": 1280,
       "x": 4080,
-      "y": 6780
+      "y": 7510
     },
     "IntrouvableNuit.dc.html": {
       "h": 1460,
@@ -85,7 +113,7 @@
       "title": "Introuvable — nuit",
       "w": 430,
       "x": 1530,
-      "y": 2400
+      "y": 2680
     },
     "Mande.dc.html": {
       "h": 1870,
@@ -99,21 +127,21 @@
       "title": "Mande — desktop 1280",
       "w": 1280,
       "x": 0,
-      "y": 4900
+      "y": 5460
     },
     "MandeDesktopNuit.dc.html": {
       "h": 1580,
       "title": "Mande — desktop, nuit",
       "w": 1280,
       "x": 0,
-      "y": 6780
+      "y": 7510
     },
     "MandeNuit.dc.html": {
       "h": 1870,
       "title": "Mande — nuit",
       "w": 430,
       "x": 0,
-      "y": 2400
+      "y": 2680
     },
     "Peul.dc.html": {
       "h": 1950,
@@ -127,21 +155,21 @@
       "title": "Peul — desktop 1280",
       "w": 1280,
       "x": 1360,
-      "y": 4900
+      "y": 5460
     },
     "PeulDesktopNuit.dc.html": {
       "h": 1560,
       "title": "Peul — desktop, nuit",
       "w": 1280,
       "x": 1360,
-      "y": 6780
+      "y": 7510
     },
     "PeulNuit.dc.html": {
       "h": 1950,
       "title": "Peul — nuit",
       "w": 430,
       "x": 510,
-      "y": 2400
+      "y": 2680
     }
   },
   "createdOnFiles": {
@@ -162,14 +190,20 @@
     "note-desktop": {
       "text": "Les cinq cas, en 1280. Les convictions sont les mêmes qu'en mobile : une maquette qui change de phrase selon la largeur ne prouve plus rien. Ekpeye garde sa mesure de lecture de 720 px — une page pauvre ne s'étale pas — et Introuvable fait de même, ses deux états l'un sous l'autre.",
       "w": 900,
-      "x": 5440,
-      "y": 4900
+      "x": 6800,
+      "y": 5460
     },
     "note-ekpeye": {
       "text": "Une seule appellation, aucune origine, aucune date. Trois silences déclarés plutôt qu'une page à moitié vide — puis ce que l'atlas tient vraiment, et l'appel à la correction.",
       "w": 430,
       "x": 1020,
       "y": 1460
+    },
+    "note-fang": {
+      "text": "Le cas ordinaire, et celui qui manquait. Quatre exonymes — Pahouin, Pangwe, Pamue, Mpangwe — et aucun qualifié : c'est 56 % du corpus, contre 23 % pour Mandé et Peul. La colonne de droite est vide exprès, et la nuance est portée par la prose en dessous plutôt que par une étiquette inventée ici.",
+      "w": 430,
+      "x": 2550,
+      "y": 2290
     },
     "note-introuvable": {
       "text": "Deux états. En haut, une faute de frappe mène au bon article. En bas l'aveu : 774 peuples, et il en manque. Cliquable — les cartes mènent à Mandé.",
@@ -186,8 +220,8 @@
     "note-nuit": {
       "text": "Dérivées par substitution de tokens, jamais réécrites : les deux versions doivent rester la même maquette, sinon les comparer ne prouve rien. Valeurs prises dans le groupe --afh-night-* de color.css.",
       "w": 430,
-      "x": 2550,
-      "y": 2400
+      "x": 3060,
+      "y": 2680
     },
     "note-peul": {
       "text": "Le cas qui teste la doctrine : Fellata est déclaré péjoratif par le corpus. On le montre quand même, et on dit pourquoi. Le cacher serait trancher.",
@@ -215,7 +249,7 @@
       "text": "Desktop 1280, jour",
       "w": 240,
       "x": 0,
-      "y": 4660
+      "y": 5220
     },
     "titre-desktop-nuit": {
       "kind": "title1",
@@ -223,7 +257,7 @@
       "text": "Desktop 1280, nuit",
       "w": 240,
       "x": 0,
-      "y": 6540
+      "y": 7270
     },
     "titre-nuit": {
       "kind": "title1",
@@ -231,7 +265,7 @@
       "text": "Mobile, nuit",
       "w": 240,
       "x": 0,
-      "y": 2160
+      "y": 2440
     }
   },
   "order": [
@@ -245,6 +279,8 @@
     "IntrouvableNuit.dc.html",
     "Bassa.dc.html",
     "BassaNuit.dc.html",
+    "Fang.dc.html",
+    "FangNuit.dc.html",
     "MandeDesktop.dc.html",
     "MandeDesktopNuit.dc.html",
     "PeulDesktop.dc.html",
@@ -254,7 +290,9 @@
     "IntrouvableDesktop.dc.html",
     "IntrouvableDesktopNuit.dc.html",
     "BassaDesktop.dc.html",
-    "BassaDesktopNuit.dc.html"
+    "BassaDesktopNuit.dc.html",
+    "FangDesktop.dc.html",
+    "FangDesktopNuit.dc.html"
   ],
   "pages": [],
   "title": "EthniAfrica — page de résultats, la référence",
