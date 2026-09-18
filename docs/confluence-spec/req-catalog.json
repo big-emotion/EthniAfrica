@@ -171,7 +171,10 @@
     "REQ-173",
     "REQ-174",
     "REQ-175",
-    "REQ-176"
+    "REQ-176",
+    "REQ-177",
+    "REQ-178",
+    "REQ-179"
   ],
   "sourceMap": {
     "REQ-001": "FR1",
@@ -341,6 +344,9 @@
     "REQ-173": "Confluence REQ-173 (page 200343553) — the database accepts a name record of any entity type at any tier, unverified included",
     "REQ-174": "Confluence REQ-174 (page 200343553) — The source sheet shows authority first and hides no source",
     "REQ-175": "Confluence REQ-175 (page 200343553) — The quiz may play an attributed oral tradition, and says so",
-    "REQ-176": "Confluence REQ-176 (page 202047490) — Recette's environment does not depend on a third-party hosted database's quota or billing state"
+    "REQ-176": "Confluence REQ-176 (page 202047490) — Recette's environment does not depend on a third-party hosted database's quota or billing state",
+    "REQ-177": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/202211350",
+    "REQ-178": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/202113048",
+    "REQ-179": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/202080280"
   }
 }
