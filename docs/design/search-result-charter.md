@@ -261,10 +261,13 @@ Two blockers measured 2026-09-17, both visible as an empty band on every artboar
   demands is that the question was asked: an empty list is a declared silence, an
   absent key is nobody having looked, and the page cannot tell those apart.
 
-  Three fiches out of 774 fail it today, held by `UNDECIDED_APPELLATIONS_CEILING`
-  — a two-way ratchet. The most telling is `PPL_KABYLE`, which never declares the
-  field: « Kabyle » is itself a name from outside, the Arabic _qabāʾil_, and they
-  say Iqbayliyen. The fiche that most needs the field is the one that did not
-  have it.
+  **The corpus is at zero, so the findings are errors and there is no ratchet.**
+  Three fiches failed it when it shipped, and all three were correctable from
+  prose they already published. `PPL_KABYLE` never declared the field while its
+  own sourced paragraph named two outside forms — « Kabyle », the Arabic
+  _qabāʾil_, and « Zwawa », used since Ibn Khaldoun; they say Iqbayliyen. The
+  other two were not incomplete at all: each listed **its own name** as a
+  competing appellation, with a note in brackets, which is a people known by one
+  name mis-encoded as a people known by two.
 
 The first says where the work starts. The second no longer does.

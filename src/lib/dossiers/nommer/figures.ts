@@ -25,7 +25,7 @@
 import type { CorpusFigure, FigureKey } from "./types";
 
 /** Every count below was taken against `recette` on this date. */
-const COUNTED_ON = "2026-09-17";
+const COUNTED_ON = "2026-09-18";
 
 const PEOPLE_GLOB = "dataset/source/afrik/peuples/*/*.json";
 
@@ -121,7 +121,11 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-administration",
     label: "fiches employant le radical « administr- »",
-    value: 180,
+    // 180 -> 181 on 2026-09-18. Gbodjibo was not counted: its « administratif »
+    // lived inside the exonym string, which this probe does not read. Writing it
+    // into the field the probe does read brought the fiche into the count — the
+    // figure moved because the corpus got more legible, not because it grew.
+    value: 181,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },

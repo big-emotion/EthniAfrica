@@ -248,9 +248,15 @@ const APPELLATIONS_RULE: RuleName = "competing-appellations";
  * 2026-09-18 — 770 of 774 peoples carry forms, three declare an empty list, and
  * one never declared the key at all.
  *
- * And a fiche that does carry forms says where they come from. That costs
- * nothing today (every fiche with an exonym has an `originOfExonyms`) and it is
- * the field the page's « D'où elles viennent » block reads.
+ * And a fiche that does carry forms says where they come from — the field the
+ * page's « D'où elles viennent » block reads.
+ *
+ * **It is an error, not a warning, because the corpus is at zero.** It shipped
+ * as a warning behind a ratchet of three; all three were correctable from prose
+ * the fiches already published, so the ratchet was deleted in the same session
+ * that created it. Two of the three were not incomplete at all — they listed
+ * their own name as a competing appellation, with a note in brackets, which is
+ * a people known by one name mis-encoded as a people known by two.
  */
 export function checkCompetingAppellations(
   fiche: Fiche,
@@ -270,7 +276,7 @@ export function checkCompetingAppellations(
     return [
       {
         rule: APPELLATIONS_RULE,
-        severity: "warning",
+        severity: "error",
         file,
         slug,
         message: `Fiche ${slug} never declares \`${formsKey}\`. A people known by one name only is a truth the atlas publishes — say so with an empty list. An absent key is an unanswered question, and the result page cannot tell the two apart.`,
@@ -286,7 +292,7 @@ export function checkCompetingAppellations(
     return [
       {
         rule: APPELLATIONS_RULE,
-        severity: "warning",
+        severity: "error",
         file,
         slug,
         message: `Fiche ${slug} lists ${forms.length} competing appellation(s) and says nowhere where they come from (\`${originKey}\` is empty). Showing a name without its provenance is the one thing this atlas does not do.`,
@@ -296,26 +302,6 @@ export function checkCompetingAppellations(
 
   return [];
 }
-
-/**
- * Fiches that have not decided about their competing appellations.
- *
- * A two-way ratchet, exactly as `UNDATED_POLITY_CEILING` is: a count above it
- * fails, and so does a count below it, with the line to change. A ceiling left
- * standing above the real number is a licence to climb back to it.
- *
- * The three, measured 2026-09-18 — each one editorial work, not a code fix:
- *
- * - `PPL_KABYLE` never declares `exonyms`, and « Kabyle » is itself a name from
- *   outside: the Arabic *qabāʾil*. They say Iqbayliyen. The fiche that most
- *   needs the field is the one that does not have it.
- * - `PPL_HOBA` and `PPL_GBODJIBO` each list one competing form and say nowhere
- *   where it comes from.
- *
- * Each pass lowers this in the same change. At zero the ratchet goes and the
- * findings become errors.
- */
-export const UNDECIDED_APPELLATIONS_CEILING = 3;
 
 // ───── Rule 2: sources count ──────────────────────────────────────────────
 
@@ -735,29 +721,6 @@ export function checkUndatedPolityCeiling(
   };
 }
 
-/**
- * The appellations ratchet. Same shape and same reasoning as the polity one:
- * both directions are errors, and the message names the measured number so the
- * fix is to edit one line.
- */
-export function checkUndecidedAppellationsCeiling(
-  count: number,
-  ceiling: number
-): RuleResult | null {
-  if (count === ceiling) return null;
-  const direction =
-    count > ceiling
-      ? `rose to ${count} (ceiling ${ceiling}) — a fiche stopped saying which names it is known by`
-      : `fell to ${count} (ceiling ${ceiling}) — lower UNDECIDED_APPELLATIONS_CEILING to ${count} in the same change`;
-  return {
-    rule: APPELLATIONS_RULE,
-    severity: "error",
-    file: "scripts/ci/checkEditorialRules.ts",
-    slug: "UNDECIDED_APPELLATIONS_CEILING",
-    message: `Fiches undecided about their competing appellations ${direction}.`,
-  };
-}
-
 // ───── Loader ─────────────────────────────────────────────────────────────
 
 interface LoadedFiche {
@@ -854,7 +817,6 @@ export interface RunOptions {
    * `UNDATED_POLITY_CEILING`; that call site is the arming.
    */
   undatedPolityCeiling?: number;
-  undecidedAppellationsCeiling?: number;
 }
 
 export function runEditorialRules(opts: RunOptions): RunResult {
@@ -911,17 +873,6 @@ export function runEditorialRules(opts: RunOptions): RunResult {
     findings.push(...checkChronologySymmetry(fiche, relPath));
 
     findings.push(...checkCompetingAppellations(fiche, relPath));
-  }
-
-  if (opts.undecidedAppellationsCeiling !== undefined) {
-    const undecided = findings.filter(
-      (f) => f.rule === APPELLATIONS_RULE
-    ).length;
-    const ratchet = checkUndecidedAppellationsCeiling(
-      undecided,
-      opts.undecidedAppellationsCeiling
-    );
-    if (ratchet) findings.push(ratchet);
   }
 
   if (opts.undatedPolityCeiling !== undefined) {
@@ -984,7 +935,6 @@ async function main(): Promise<void> {
   const result = runEditorialRules({
     repoRoot,
     undatedPolityCeiling: UNDATED_POLITY_CEILING,
-    undecidedAppellationsCeiling: UNDECIDED_APPELLATIONS_CEILING,
   });
   for (const line of result.annotations) {
     // PR annotations must be written to stdout for GitHub Actions to pick
