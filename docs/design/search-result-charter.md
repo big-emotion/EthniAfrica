@@ -250,9 +250,21 @@ Two blockers measured 2026-09-17, both visible as an empty band on every artboar
   100 %. So « À travers le temps » is not a dead block: its condition is per
   class, and the mockups — which draw four peoples and a disambiguation — drew
   the four classes that cannot fill it.
-- **No gate guards the competing appellations.** `checkEditorialRules.ts` requires
-  the self-given name and nothing requires the others
-  (`docs/editorial/audit-doctrine-publication-2026-09-17.md`, finding 1). A page
-  that promises to show them all rests on a field nothing fills.
+- ~~**No gate guards the competing appellations.**~~ **Closed 2026-09-18.**
+  `competing-appellations` in `checkEditorialRules.ts` now asks every
+  ethnographic fiche to have _decided_ about the names it is known by besides
+  its own — reading `exonyms` on a people and `historicalAppellations` on a
+  family, and asking for the origin wherever forms exist.
 
-Neither invalidates the charter. They say where the work starts.
+  **It does not demand an exonym**, because a people known by one name only is a
+  truth this atlas publishes and `Ekpeye` is the board drawn for it. What it
+  demands is that the question was asked: an empty list is a declared silence, an
+  absent key is nobody having looked, and the page cannot tell those apart.
+
+  Three fiches out of 774 fail it today, held by `UNDECIDED_APPELLATIONS_CEILING`
+  — a two-way ratchet. The most telling is `PPL_KABYLE`, which never declares the
+  field: « Kabyle » is itself a name from outside, the Arabic _qabāʾil_, and they
+  say Iqbayliyen. The fiche that most needs the field is the one that did not
+  have it.
+
+The first says where the work starts. The second no longer does.
