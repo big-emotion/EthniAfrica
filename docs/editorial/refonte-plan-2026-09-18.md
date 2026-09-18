@@ -205,3 +205,74 @@ above owns —
 And a trap on the way in: the Requirements page is **split across twelve
 sub-pages**, and reading the parent alone makes you re-allocate an existing REQ
 number.
+
+---
+
+## Two questions this plan did not answer, and now does
+
+### Is this enough for an implementing agent to reach parity with the mockup?
+
+**No, and the repository already knew why.** `docs/design/mockups/README.md`
+exists precisely for this case: it lists the artefact URLs _and_ vendors the
+sources, because **an agent implementing a page cannot open a `claude.ai`
+link.** The search-result charter points at an artefact and nothing else, which
+is a regression against a practice this repository had already established.
+
+Three things are missing, and none of them is the plan's sequencing:
+
+1. **The mockup has to be in the repository.** The twenty artboards are vendored
+   under `docs/design/mockups/` the way the four atlas pages are, with the same
+   README shape: what each board is, which artefact it came from, and why the
+   source rather than the published file.
+2. **Parity has to be defined, because pixel parity is the wrong target.** The
+   boards carry fixed content; the page renders from a corpus whose strings are
+   any length. What must match is the **block grammar** — which blocks appear,
+   in what order, under which condition — plus the tokens, the type scale and
+   the spacing steps. A page that draws the same blocks in the same order with
+   the same tokens _is_ the mockup; one that matches it pixel for pixel on
+   Mandé and breaks on a name twice as long has matched the wrong thing.
+3. **A gate has to measure it.** A unit test cannot see a rendered page (the
+   brand charter's own note on this). A Playwright assertion at 430 and 1280, in
+   both themes, counting the blocks and their order against the grammar, is what
+   makes the charter enforceable rather than advisory.
+
+Until those three exist, an agent will produce something defensible and
+different, and nothing will say which of the two is wrong.
+
+### How are duplicate and obsolete files found and removed?
+
+**Code is already covered and the answer is "do not delete by hand".**
+`check:dead` holds `files` at **0**, so an unreferenced module fails the build
+the day it stops being imported. It is a **two-way ratchet**: deleting code
+lowers the count and fails the build just as adding dead code does, unless the
+ceiling moves in the same commit.
+
+**Prose is not covered at all**, and that is the real gap. Measured 2026-09-18:
+
+```
+docs tracked          83
+referenced by nothing 20
+```
+
+The command is the same shape as the local-paths gate — every tracked file is
+read, and a doc whose basename appears nowhere but in itself is an orphan.
+
+**An orphan is a candidate, never a verdict.** The twenty split three ways:
+
+- **Ledger entries** — the dated `gabarits-social/notes/_*.md`, the audience
+  audits. They are a record; they are linked from their directory's README or
+  left alone, never deleted.
+- **Newly written and not yet linked** — `search-result-charter.md`,
+  `reset-inventory-2026-09-17.md`, and this file. That is a finding about the
+  writing, not the file: a document nothing points at is a document nobody will
+  read. Each gets its pointer.
+- **Genuinely superseded** — `runbooks/v1-removal-cutover-2026-05.md` describes
+  a cutover that happened, `runbooks/bilingual-copy-survey.md` a parity gate
+  that REQ-171 made non-blocking, `design/dossier-theme-architecture-proposal.md`
+  a proposal nothing records accepting. These are read, then deleted or dated
+  as historical.
+
+The gate worth adding is the orphan count as its own ratchet, in the shape
+`check:dead` already uses — a number that can only go down, with the three-way
+triage written beside it so the next reader does not mistake a ledger for a
+leftover.
