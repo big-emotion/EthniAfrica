@@ -6,13 +6,16 @@
  * `assembleComparison` because this route also needs the batched Module #0
  * confidence read (`assembleComparison` does not fetch confidence).
  */
-import fs from "node:fs";
-import path from "node:path";
 import { ImageResponse } from "next/og";
 import { getComparisonEntities } from "@/api/v2/services/comparisonService";
 import { transformComparisonData } from "@/lib/comparisonDataTransformer";
 import { buildComparisonOgCard } from "@/lib/comparisonOgCard";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
+import {
+  SHARE_CARD_SIZE,
+  SHARE_CARD_THEME,
+  shareCardFonts,
+} from "@/lib/seo/shareCard";
 import { OG_IMAGE_CACHE_CONTROL } from "@/api/v2/services/corpusCache";
 import type { CompareEntityType } from "@/types/compare";
 import { isTranslationLocale } from "@/lib/i18n/translationLocale";
@@ -24,8 +27,6 @@ interface RouteParams {
   lang: string;
   entityType: string;
 }
-
-const IMAGE_SIZE = { width: 1200, height: 630 };
 
 const ENTITY_TYPE_SLUGS = ["peuples", "pays", "familles"] as const;
 type ComparerEntityTypeSlug = (typeof ENTITY_TYPE_SLUGS)[number];
@@ -50,12 +51,6 @@ function hasValidSegmentShape(
   if (!isComparerEntityTypeSlug(entityType)) return false;
   if (ids.length < 2 || ids.length > 3) return false;
   return new Set(ids).size === ids.length;
-}
-
-function readFontFile(fileName: string): Buffer {
-  return fs.readFileSync(
-    path.join(process.cwd(), "src/app/[lang]/comparer/_fonts", fileName)
-  );
 }
 
 // @req REQ-097
@@ -114,13 +109,19 @@ export async function GET(
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        background:
-          "linear-gradient(135deg, #0f172a 0%, #1e293b 35%, #111827 100%)",
-        color: "white",
+        background: SHARE_CARD_THEME.ground,
+        color: SHARE_CARD_THEME.ink,
         padding: "56px",
       }}
     >
-      <div style={{ display: "flex", fontSize: 24, opacity: 0.85 }}>
+      <div
+        style={{
+          display: "flex",
+          fontFamily: "Nunito Sans",
+          fontSize: 24,
+          color: SHARE_CARD_THEME.inkSoft,
+        }}
+      >
         {card.entityTypeLabel} · {card.comparisonLabel}
       </div>
       <div style={{ display: "flex", gap: 32, alignItems: "stretch" }}>
@@ -134,7 +135,8 @@ export async function GET(
               gap: 12,
               padding: "24px",
               borderRadius: 16,
-              background: "rgba(255, 255, 255, 0.06)",
+              background: "#ffffff",
+              border: `1px solid ${SHARE_CARD_THEME.line}`,
             }}
           >
             <div
@@ -154,7 +156,7 @@ export async function GET(
                   display: "flex",
                   fontFamily: "Nunito Sans",
                   fontSize: 22,
-                  opacity: 0.75,
+                  color: SHARE_CARD_THEME.inkSoft,
                 }}
               >
                 {entity.exonym}
@@ -165,7 +167,7 @@ export async function GET(
                 display: "flex",
                 fontFamily: "Nunito Sans",
                 fontSize: 18,
-                opacity: 0.65,
+                color: SHARE_CARD_THEME.inkSoft,
               }}
             >
               {entity.confidenceLabel}
@@ -180,7 +182,7 @@ export async function GET(
           justifyContent: "space-between",
           fontFamily: "Nunito Sans",
           fontSize: 20,
-          opacity: 0.9,
+          color: SHARE_CARD_THEME.accent,
         }}
       >
         <div style={{ display: "flex" }}>{CANONICAL_DOMAIN}</div>
@@ -188,21 +190,8 @@ export async function GET(
       </div>
     </div>,
     {
-      ...IMAGE_SIZE,
-      fonts: [
-        {
-          name: "Fraunces",
-          data: readFontFile("Fraunces-600-subset.ttf"),
-          weight: 600,
-          style: "normal",
-        },
-        {
-          name: "Nunito Sans",
-          data: readFontFile("NunitoSans-400-subset.ttf"),
-          weight: 400,
-          style: "normal",
-        },
-      ],
+      ...SHARE_CARD_SIZE,
+      fonts: shareCardFonts(),
       headers: {
         "Cache-Control": OG_IMAGE_CACHE_CONTROL,
       },

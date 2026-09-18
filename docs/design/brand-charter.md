@@ -48,6 +48,31 @@ in `src/`.
 `PRODUCT_NAME` and `PRODUCT_TAGLINE`, so the decision costs no new constant —
 it makes the other four spellings wrong, which is the point.
 
+**The qualifier was replaced on 17 September 2026: `D'où viennent les noms des
+peuples d'Afrique`.** The reorientation onto onomastics
+(`docs/editorial/essais/dou-viennent-les-noms-2026-09-17.md`) makes the site
+answer a question rather than announce a category, and the qualifier is where a
+reader meets that question first. `Atlas des Peuples d'Afrique` named what the
+product _is_; the new one names what it _does_, which is the only thing a
+stranger scrolling a feed can act on. The name itself is untouched.
+
+**Two spellings fell out of that swap, and both are what this section exists to
+catch.** The browser tab kept a literal — `EthniAfrica | Dictionnaire des
+Ethnies d'Afrique` — so a reader opening the tab and a reader seeing the shared
+link were told the product was two different things; it now reads `OG_TITLE`,
+which its own doc comment already claimed it did. And the slogan was written
+with a straight apostrophe in four constants while the home `h1` used the
+typographic one, so the product spelled its own slogan two ways on two
+surfaces. **The slogan is an identity string and takes `’` everywhere.** The
+wider copy base is genuinely undecided — measured 2026-09-18, 197 typographic
+against 219 straight — and settling that is its own pass; an identity string
+does not wait for it.
+
+The lesson the second one leaves: `OG_TITLE` is now **composed** in its test
+from `PRODUCT_NAME` and `PRODUCT_TAGLINE` rather than restated. A literal
+duplicating a constant went stale twice in two days, and each failure reported
+only that two strings differed — never which of them was wrong.
+
 `Africa History` is retired, and with it `africahistory.org`. It was an English
 name on a product that then existed only in French, and it survives today only in
 places a reader reaches by accident: an API payload, a citation, a stylesheet
@@ -774,6 +799,63 @@ Récits collection — are held back until a second reviewer exists.
 
 This register **declares the residual gap above; it does not close it**. A
 generated people is still not the people's own visual record.
+
+### 9.1 The share card is a surface, and it was the one nobody looked at
+
+A card previewing a shared link is the **most-seen surface of the brand**: it is
+read in a feed, in a message, in a search result, by people who have not been to
+the site and may never go. It had no rule, and it showed.
+
+Four routes draw one — the site card, its Twitter twin, the comparison card, the
+quiz score. Each declared its own ground. **Three of them landed on the same
+cold slate gradient, `#0f172a → #1e293b → #111827`, a colour that appears
+nowhere else in the product**; the fourth was already on parchment. Nothing was
+red, because no page renders these files and no gate read them. The defect was
+found the way this class of defect is always found: someone shared a link and
+looked at it.
+
+**The rule.** A share card is the product's own surface and is drawn like one.
+
+- **Parchment, never a dark neutral.** §5.1 already said the warm paper is never
+  traded for a neutral grey; nothing exempted the one surface a stranger sees
+  first.
+- **The product's faces, loaded as files.** Satori never sees the Next font
+  loader, so a card that ships no `fonts` array renders in the runtime's default
+  — which is how the site card came to be set in a grotesque while every page of
+  the site is Fraunces. Nothing in the output says so; it just looks like a
+  different product.
+- **One accent, and it is ocre.** The brand gradient is allowed on the mark
+  alone, per §5.3. At the 22 px the mark occupies it reads as a solid warm
+  orange, and that is fine — it is the mark's colour, not a decoration to be
+  admired.
+- **The colours are copies of tokens, and a gate holds the copies.** Satori
+  resolves no custom property, so a card cannot read the spine at render time
+  and a literal is unavoidable. `SHARE_CARD_THEME` holds them in one place and
+  `shareCardCharter.test.ts` asserts each against `src/styles/tokens/`, in both
+  directions. That test finds the drawings by looking for `new ImageResponse(`
+  rather than from a list, because a list is what a fifth card would sit outside
+  of.
+- **No publisher lockup.** The old card gave its bottom-right corner to
+  `BIG EMOTION` — the one element naming neither the product nor what it does,
+  set at the same weight as the domain. The corner is now empty and the domain
+  stands alone, which is what the quiz card had been doing correctly all along.
+- **And no licence line.** It is tempting, since §2 makes the licence something
+  the reader is owed. But `DossierChapterBlock` already settled it: naming
+  `CC BY-SA 4.0` satisfies nothing, because §4(a) of that licence asks for its
+  URI. A card carries no link, so it carries no licence.
+
+**What the card says, and in what order.** The question first, the name above it
+small where a masthead sits, the enumeration of what the corpus holds third. The
+previous card inverted all three: it set the product name at 72 px — twice over,
+once as an eyebrow and once as the title — and gave the promise 28 px
+underneath. A reader scrolling a feed gives a card one glance, and
+« EthniAfrica » alone tells them nothing they can want.
+
+**One thing this rule does not yet reach.** The cards are set in Fraunces at
+weight 600, from a subset file named for it, while §6 retired 600 in favour of
+700 and 900. Changing it means cutting a new subset and re-checking its glyph
+coverage — the coverage being the thing that breaks silently. Recorded here
+rather than done.
 
 ---
 

@@ -14,8 +14,14 @@
  * | NEXT_PUBLIC_PRODUCT_NAME          | PRODUCT_NAME       | "EthniAfrica"                                                           |
  * | NEXT_PUBLIC_CANONICAL_DOMAIN      | CANONICAL_DOMAIN   | "ethniafrica.com"                                                     |
  * | NEXT_PUBLIC_ATTRIBUTION_STRING    | ATTRIBUTION_STRING | "Fait avec émotion pour l'Afrique"                                    |
- * | NEXT_PUBLIC_OG_TITLE              | OG_TITLE           | "EthniAfrica — Atlas des Peuples d'Afrique"                            |
- * | NEXT_PUBLIC_OG_DESCRIPTION        | OG_DESCRIPTION     | "Encyclopédie des peuples, langues et familles linguistiques d'Afrique" |
+ * | NEXT_PUBLIC_OG_TITLE              | OG_TITLE           | see the constant — the qualifier is the site's one question           |
+ * | NEXT_PUBLIC_OG_DESCRIPTION        | OG_DESCRIPTION     | see the constant — that question, then the six corpus classes         |
+ *
+ * The last two rows named a value rather than pointing at one, and both had
+ * gone stale: the table still read "Atlas des Peuples d'Afrique" and an
+ * enumeration of three classes long after the constants below said otherwise.
+ * A default copied into a doc table is a second source of truth in the file
+ * whose whole point is being the only one.
  *
  * There is no site-locale variable. `NEXT_PUBLIC_SITE_LOCALE` used to name a
  * single locale for the whole site — the model the bilingual site ends
@@ -55,7 +61,7 @@ export const PRODUCT_NAME =
  * is edited in the same commit — not before, or the gate goes red for everyone.
  */
 // @req REQ-019
-export const PRODUCT_TAGLINE = "Atlas des Peuples d'Afrique";
+export const PRODUCT_TAGLINE = "D’où viennent les noms des peuples d’Afrique";
 
 /**
  * The handle the product answers to on social networks.
@@ -110,7 +116,7 @@ export const ATTRIBUTION_STRING =
 // @req REQ-019
 export const OG_TITLE =
   process.env.NEXT_PUBLIC_OG_TITLE ||
-  "EthniAfrica — Atlas des Peuples d'Afrique";
+  "EthniAfrica — D’où viennent les noms des peuples d’Afrique";
 
 /**
  * Open Graph description for social media previews.
@@ -119,8 +125,14 @@ export const OG_TITLE =
  * the registry so a seventh cannot ship without this sentence saying so. The
  * three sentences that describe the product to someone who has not arrived
  * yet named four for as long as the atlas kept growing.
+ *
+ * **The enumeration comes second, and that order is the point.** This sentence
+ * used to open on it — a table of contents, handed to a reader scrolling a feed
+ * who has no reason yet to want a table of contents. It now opens on the
+ * question the site answers and keeps the six classes behind it, so the gate
+ * above still holds while the promise leads.
  */
 // @req REQ-019
 export const OG_DESCRIPTION =
   process.env.NEXT_PUBLIC_OG_DESCRIPTION ||
-  "Encyclopédie des peuples, langues, familles linguistiques, pays, appellations et noms d'Afrique";
+  "D’où viennent les noms des peuples d’Afrique ? Peuples, langues, familles linguistiques, pays, appellations et noms, chacun avec l’origine de son nom et ses sources.";
