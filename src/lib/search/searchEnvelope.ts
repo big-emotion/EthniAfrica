@@ -155,7 +155,7 @@ function isHttpUrl(value: string): boolean {
  * `content.peoples`/`content.countries` (`modele-nom-patronyme.json`), which
  * the search RPC forwards untouched — the same posture as `appellationsOf`
  * above. A country counts only when the fiche marks it `attested`, not
- * `supposed`: `DominantAnswerPanel` (ETNI-1806) must not present a guess as
+ * `supposed`: the result page (ETNI-1806) must not present a guess as
  * a fact.
  */
 function patronymeAssociationsOf(content: unknown): {

@@ -193,7 +193,7 @@ async function renderPivotWithRelatedResults() {
   });
 
   await waitFor(() => {
-    expect(screen.getByTestId("search-pivot")).toBeInTheDocument();
+    expect(screen.getByTestId("name-answer")).toBeInTheDocument();
   });
 }
 
@@ -337,11 +337,12 @@ describe("RecherchePageContent", () => {
       await new Promise((resolve) => setTimeout(resolve, 100));
     });
 
-    expect(await screen.findByTestId("search-pivot")).toBeInTheDocument();
+    expect(await screen.findByTestId("name-answer")).toBeInTheDocument();
+    // The name is a second-level heading: the page's own h1 is the result
+    // count, so a name here would give the document two top-level headings.
     expect(
-      screen.getByRole("heading", { level: 1, name: "Chad" })
+      screen.getByRole("heading", { level: 2, name: "Chad" })
     ).toBeInTheDocument();
-    expect(screen.getByText("Primary result")).toBeInTheDocument();
   });
 
   it("always renders the filter chip row (even with no active filters)", () => {
@@ -765,7 +766,7 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByTestId("search-pivot")).toBeInTheDocument();
+      expect(screen.getByTestId("name-answer")).toBeInTheDocument();
     });
   });
 
@@ -957,7 +958,13 @@ describe("RecherchePageContent", () => {
   });
 
   // @req REQ-002
-  it("leads with a pivot block when the query names one entity exactly", async () => {
+  // DEC-057 retired the dominant answer, and with it the ten tests that stood
+  // here: they specified its side rail, its sticky pinning, its bottom-sheet
+  // fallback and the two-column grid of the remainder — a layout whose
+  // structure asserted one entity above the rest. What follows asserts the
+  // promise that replaced it: every name shown, none crowned.
+  // @req REQ-178
+  it("answers the searched name without promoting any form of it", async () => {
     mockFetch.mockResolvedValue(okJson(searchApiResponse));
     render(<RecherchePageContent />);
 
@@ -970,211 +977,32 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByTestId("search-pivot")).toBeInTheDocument();
+      expect(screen.getByTestId("name-answer")).toBeInTheDocument();
     });
-    // Promoted, not duplicated.
-    expect(screen.queryAllByTestId("search-result-card")).toHaveLength(0);
+    expect(screen.queryByTestId("search-pivot")).not.toBeInTheDocument();
     expect(
-      within(screen.getByTestId("search-pivot")).getByRole("link", {
-        name: /ouvrir la fiche/i,
-      })
-    ).toHaveAttribute("href", getPeopleRoute("fr", "PPL_ZULU"));
-  });
-
-  // @req REQ-124
-  it("keeps the desktop complementary panel when the dominant answer is the only result", async () => {
-    mockFetch.mockResolvedValue(okJson(searchApiResponse));
-    render(<RecherchePageContent />);
-
-    await act(async () => {
-      fireEvent.change(screen.getByRole("combobox"), {
-        target: { value: "Zulu" },
-      });
-      fireEvent.click(screen.getByRole("button", { name: /rechercher/i }));
-      await new Promise((resolve) => setTimeout(resolve, 100));
-    });
-
-    await waitFor(() => {
-      expect(screen.getByTestId("search-pivot")).toBeInTheDocument();
-    });
-    expect(
-      screen.getByTestId("dominant-answer-panel-wrapper")
-    ).toBeInTheDocument();
-  });
-
-  // @req REQ-124
-  it("keeps the pivot and result list in the flexible column of a desktop main-aside layout", async () => {
-    await renderPivotWithRelatedResults();
-
-    const layout = screen.getByTestId("search-results-layout");
-    const main = within(layout).getByTestId("search-results-main");
-    expect(layout.className).toMatch(
-      /min-\[760px\]:grid-cols-\[minmax\(0,1fr\)_[^\]]+\]/
-    );
-    expect(layout.className).not.toMatch(/(?:sm|md|lg):grid-cols-/);
-    expect(within(main).getByTestId("search-pivot")).toBeInTheDocument();
-    expect(within(main).getByTestId("search-results-list")).toBeInTheDocument();
-  });
-
-  // Atlas charter §5: one component, two anchorings — a bottom sheet below
-  // 760px, a side panel above, same facts either way. The panel used to be
-  // `hidden` below the breakpoint, which dropped the facts entirely at
-  // 430px; it now stays in flow and is only re-styled from a rule
-  // (border-t) into a side panel at the breakpoint.
-  // @req REQ-124
-  it("keeps the complementary answer in flow as a bottom sheet below 760px, and as a side panel at that breakpoint (ETNI-1796)", async () => {
-    await renderPivotWithRelatedResults();
-
-    const wrapper = screen.getByTestId("dominant-answer-panel-wrapper");
-    expect(wrapper.className).not.toMatch(/\bhidden\b/);
-    expect(wrapper.className).toContain("border-t");
-    expect(wrapper.className).toContain("min-[760px]:border-t-0");
-    expect(wrapper.className).toContain("min-[760px]:self-start");
-    expect(wrapper.className).not.toMatch(/(?:sm|md|lg):block/);
-  });
-
-  // @req REQ-124
-  it("turns only the remaining desktop results into a two-column grid", async () => {
-    await renderPivotWithRelatedResults();
-
-    const list = screen.getByTestId("search-results-list");
-    expect(list.className).toContain("grid-cols-1");
-    expect(list.className).toContain("min-[760px]:grid-cols-2");
-    expect(list.className).not.toMatch(/(?:sm|md|lg):grid-cols-2/);
-    expect(within(list).getAllByRole("listitem")).toHaveLength(2);
-  });
-
-  // The panel used to pin itself with `sticky` under the retracting header;
-  // ETNI-1807 (SERP consolidation) drops that so the panel scrolls with the
-  // page like the rest of the unified surface.
-  // @req REQ-124
-  it("no longer pins the complementary panel with position: sticky (ETNI-1807)", async () => {
-    await renderPivotWithRelatedResults();
-
-    const wrapper = screen.getByTestId("dominant-answer-panel-wrapper");
-    expect(wrapper.className).not.toMatch(/\bsticky\b/);
-    expect(wrapper.className).not.toMatch(/top-\[calc/);
-  });
-
-  // @req REQ-124
-  it("shows the sourced highlight block between the pivot card and the results, with its tier visible", async () => {
-    await renderPivotWithRelatedResults();
-
-    const main = screen.getByTestId("search-results-main");
-    const children = Array.from(main.children);
-    const pivotIndex = children.indexOf(screen.getByTestId("search-pivot"));
-    const highlightIndex = children.indexOf(
-      screen.getByTestId("sourced-highlight-block")
-    );
-    expect(highlightIndex).toBeGreaterThan(pivotIndex);
-
-    expect(screen.getByTestId("sourced-highlight-block")).toHaveTextContent(
-      /philologue en 1862/
-    );
-    expect(screen.getByTestId("sourced-highlight-tier")).toHaveTextContent(
-      "Source référencée"
-    );
-  });
-
-  // @req REQ-124
-  it("omits the sourced highlight block when the bank has no fact about the pivot", async () => {
-    mockFetch.mockResolvedValue(
-      okJson({
-        data: {
-          peoples: [
-            {
-              id: "PPL_UNKNOWN_ENTITY",
-              nameMain: "Peuple inconnu",
-              content: {},
-            },
-          ],
-          countries: [],
-          families: [],
-          total: 1,
-        },
-      })
-    );
-    render(<RecherchePageContent />);
-
-    await act(async () => {
-      fireEvent.change(screen.getByRole("combobox"), {
-        target: { value: "Peuple inconnu" },
-      });
-      fireEvent.click(screen.getByRole("button", { name: /rechercher/i }));
-      await new Promise((resolve) => setTimeout(resolve, 100));
-    });
-
-    await waitFor(() => {
-      expect(screen.getByTestId("search-pivot")).toBeInTheDocument();
-    });
-    expect(
-      screen.queryByTestId("sourced-highlight-block")
+      screen.queryByTestId("dominant-answer-panel-wrapper")
     ).not.toBeInTheDocument();
   });
 
-  // @req REQ-002
-  it("renders no pivot for an ambiguous query", async () => {
-    mockFetch.mockResolvedValue(
-      okJson({
-        data: {
-          peoples: [
-            { id: "A", nameMain: "Bété", relevance: 0.8, content: {} },
-            { id: "B", nameMain: "Béti", relevance: 0.75, content: {} },
-          ],
-          countries: [],
-          families: [],
-          total: 2,
-        },
-      })
-    );
+  // The rail is gone rather than moved: pushing it below would have kept the
+  // hierarchy it asserts and only changed where the assertion sits.
+  // @req REQ-178
+  it("keeps one column at every width", async () => {
+    mockFetch.mockResolvedValue(okJson(searchApiResponse));
     render(<RecherchePageContent />);
 
     await act(async () => {
       fireEvent.change(screen.getByRole("combobox"), {
-        target: { value: "bet" },
+        target: { value: "Zulu" },
       });
       fireEvent.click(screen.getByRole("button", { name: /rechercher/i }));
       await new Promise((r) => setTimeout(r, 100));
     });
 
-    await waitFor(() => {
-      expect(screen.getAllByTestId("search-result-card")).toHaveLength(2);
-    });
-    expect(screen.queryByTestId("search-pivot")).not.toBeInTheDocument();
+    const layout = await screen.findByTestId("search-results-layout");
+    expect(layout.className).not.toMatch(/grid-cols-\[/);
   });
-
-  // @req REQ-124
-  it("promotes no card and keeps the list flat when two results share a normalized name (homonymy)", async () => {
-    mockFetch.mockResolvedValue(
-      okJson({
-        data: {
-          peoples: [
-            { id: "A", nameMain: "Bété", relevance: 0.9, content: {} },
-            { id: "B", nameMain: "BETE", relevance: 0.1, content: {} },
-          ],
-          countries: [],
-          families: [],
-          total: 2,
-        },
-      })
-    );
-    render(<RecherchePageContent />);
-
-    await act(async () => {
-      fireEvent.change(screen.getByRole("combobox"), {
-        target: { value: "Bété" },
-      });
-      fireEvent.click(screen.getByRole("button", { name: /rechercher/i }));
-      await new Promise((r) => setTimeout(r, 100));
-    });
-
-    await waitFor(() => {
-      expect(screen.getAllByTestId("search-result-card")).toHaveLength(2);
-    });
-    expect(screen.queryByTestId("search-pivot")).not.toBeInTheDocument();
-  });
-
-  // ── 8. no session history ──────────────────────────────────────────────────
 
   it("input uses autocomplete=off to prevent browser search history", () => {
     render(<RecherchePageContent />);
@@ -1270,7 +1098,7 @@ describe("RecherchePageContent", () => {
   });
 
   // @req REQ-124
-  it("titles the page with the pivot's autonym, the exonym alongside it in the same heading", async () => {
+  it("titles the page with the result count, never with one name promoted above the others", async () => {
     mockFetch.mockResolvedValue(
       okJson({
         data: {
@@ -1298,12 +1126,12 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByTestId("search-pivot")).toBeInTheDocument();
+      expect(screen.getByTestId("name-answer")).toBeInTheDocument();
     });
-    // Exact rather than substring content: "Zulu" is itself a substring of
-    // "amaZulu", so a loose match would pass even without the exonym.
+    // The head states how many results there are and crowns nothing. The
+    // autonym is carried by the answer below it.
     const heading = screen.getByRole("heading", { level: 1 });
-    expect(heading.textContent).toBe("amaZulu Zulu");
+    expect(heading.textContent).toMatch(/résultat/i);
   });
 
   // @req REQ-124
@@ -1484,7 +1312,7 @@ describe("what the SERP reports about a search", () => {
     expect(resultClicks()).toHaveLength(1);
     expect(resultClicks()[0][1].props).toMatchObject({
       surface: "serp",
-      rank: 2,
+      rank: 1,
     });
   });
 
@@ -1492,10 +1320,12 @@ describe("what the SERP reports about a search", () => {
   // counting it among the cards below would put the dominant answer and the
   // runner-up at the same position.
   // @req REQ-046
-  it("gives the dominant answer the first rank", async () => {
+  it("ranks the first card of the list first, since nothing is promoted above it", async () => {
     await renderPivotWithRelatedResults();
 
-    fireEvent.click(screen.getByTestId("search-pivot"));
+    // Nothing sits above the list any more, so the first card carries rank 1
+    // rather than the rank 2 it held beneath the crowned answer.
+    fireEvent.click(screen.getAllByTestId("search-result-card")[0]);
 
     expect(resultClicks()).toHaveLength(1);
     expect(resultClicks()[0][1].props).toMatchObject({ rank: 1 });
