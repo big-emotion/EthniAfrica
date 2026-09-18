@@ -9,7 +9,14 @@
   "glottocode": "nucl1347",
   "nameFr": "Wolof",
   "nameEn": "Wolof",
-  "alternateNames": [],
+  "alternateNames": [
+    "Dyolof",
+    "Ouolof",
+    "Volof",
+    "Walaf",
+    "Waro-Waro",
+    "Yallof"
+  ],
   "spellingAliases": [],
   "familyId": "FLG_ATLANTIQUE",
   "peoples": [],

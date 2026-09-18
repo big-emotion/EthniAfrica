@@ -111,6 +111,7 @@ were referenced by nothing at all, two of them written that same week.
 
 - [Deployment guide](DEPLOYMENT.md)
 - [EthniAfrica — Production Readiness Audit](PRODUCTION-READINESS-AUDIT.md)
+- [Language alternate names — the pass of 18 September 2026](data-audits/language-alternate-names-2026-09-18.md)
 - [Language-tier catalog audit against Glottolog 5.3](data-audits/language-tier-audit-glottolog-5.3.md)
 - [Reset inventory — every configuration, documentation and rule file](reset-inventory-2026-09-17.md)
 - [Découvertes source-bank inventory](tasks/discoveries-content-inventory.md)
