@@ -149,6 +149,19 @@ jobs:
       # charter nobody can reach is a charter nobody applies.
       - run: npm run check:orphan-docs
 
+      # Three gates that existed and ran nowhere, measured 2026-09-18. Two of
+      # them are named in CLAUDE.md's list of gates headed "all CI-blocking on
+      # every PR", which is the worst shape a check can take: believed, and
+      # protecting only whoever remembers to type it. They are cheap — two tsx
+      # scripts and a node --test suite — so the answer was to make the
+      # sentence true rather than to soften it.
+      #
+      # test:social-engine stays out and is documented as local: its suites
+      # need python3, the three exactly-pinned wheels and ffmpeg on the runner.
+      - run: npm run check:skill-parity
+      - run: npm run check:pagination-contract
+      - run: npm run test:social-tools
+
       # The one question none of the gates above asks: does anything still
       # import this? Ten checks watched traceability, action pins, the env
       # example, the migration sequence and the charters, and none of them

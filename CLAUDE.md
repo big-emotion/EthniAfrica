@@ -2,9 +2,18 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Project Overview
+## What this is, and the one question it answers
 
 **EthniAfrica** is a Next.js 16 App Router app publishing an open, sourced atlas of African peoples, languages, linguistic families and countries, organised by the **AFRIK methodology** in a decolonial editorial posture.
+
+Since the reorientation of 17 September 2026 it answers **one question — where the names of Africa's peoples come from.** That is a change of centre, not a tagline, and the plan that carried it is `docs/editorial/refonte-plan-2026-09-18.md`. The corpus did not move. What moved is **which surface is the product**: the search result page, not the fiche and not the home (REQ-178, DEC-057, ARCH-024). A reader arrives with the name they know, and the page shows every form the entry is known by, at the same weight, crowning none. The atlas, the dossiers and the games are what that answer rests on.
+
+Four consequences, before anything below makes sense:
+
+- **No form is promoted, anywhere.** DEC-057 retired the "pivot" — a head result promoted because its relevance doubled the runner-up's. A page that crowns a name contradicts the doctrine it exists to publish. `selectNameSubject` returns _every_ entity answering to the name, and several means a disambiguation rather than a choice made for the reader.
+- **A reader arrives with an exonym, not with the filed name.** The Fula entry is filed `Fula (Fulbe / Peul)`; « peul » is what gets typed. Matching the filed name alone made the most-searched African ethnonym in French reach no subject at all.
+- **Five classes answer this question in five storage shapes**, and exactly one module reads all five. See below.
+- **Listing what the corpus contains is the retired register.** Sentences that enumerate the six classes read as an encyclopaedia without using the word, which is what the reorientation moved away from. The copy modules were passed for this on 18 September 2026; `docs/editorial/refonte-plan-2026-09-18.md` records what was found and what was deliberately left.
 
 The codebase is **bilingual — English and French — while publication fails closed to French-only** (ARCH-021, REQ-140). `Language = "en" | "fr"` is derived from `LOCALES` in `src/lib/locale.ts`, and `[lang]` resolves to either only when `SITE_LOCALE_MODE` publishes both. Missing or invalid configuration means `fr-only`; `bilingual-fr-default` publishes both while keeping `/` on French, and `bilingual-en-default` is the later explicit English-default launch. A reader's explicit choice is remembered in the `ethni-locale` cookie; only the language switcher writes that cookie. `/fr/*` resolves unchanged. English URLs carry **English slugs** (`/en/atlas/peoples/...`) that `src/middleware.ts` rewrites onto the French route folders under `src/app/[lang]/` (DEC-049), so a route rename is two slug entries in `src/lib/routing.ts`, never a second folder tree. There is no third locale: `es`/`pt` and any other two-letter segment 308 to the configured default. An `en` branch is expected wherever a locale is switched on; a `["fr"].includes(lang)` guard is the retired shape.
 
@@ -35,7 +44,18 @@ npm run e2e                 # Playwright; intentionally outside `make check`
 npm run storybook           # :6006
 ```
 
-### Repo-specific gates (all CI-blocking on every PR)
+### Repo-specific gates
+
+**Two lists, because the difference is what matters.** This was one list headed
+"all CI-blocking on every PR", and four of the gates named under it ran nowhere
+— measured 2026-09-18 by grepping `.github/workflows` for every `check:` and
+`test:` script in `package.json`. A gate believed to block, protecting only
+whoever remembers to type it, is the worst shape a check can take. Three were
+wired into CI in the same change; the fourth is listed below for what it is.
+
+Run the same measurement before adding a line here.
+
+**CI-blocking on every PR:**
 
 ```bash
 npm run lint:req                    # @req annotation traceability (see below)
@@ -45,16 +65,118 @@ npm run check:workflow-shell        # every workflow `run:` block must parse und
 npm run check:env-example           # .env.example and the code agree, both directions
 npm run check:local-paths           # no local filesystem path in a public repo
 npm run check:infra-disclosure      # no server address, SSH port, provider or datacenter name
-npm run test:social-tools           # the social/ Node utilities (in `make check`)
-npm run test:social-engine          # every test_*.py suite of the render engine
+npm run check:copy-literals         # French literals in components (survey; --staged blocks)
+npm run check:orphan-docs           # a document nothing links to (ceiling 0)
+npm run check:glossary              # the bilingual glossary (REQ-144) — still blocks under REQ-171
+npm run check:skill-parity          # a skill's canonical copy and its Codex entry point agree
+npm run check:pagination-contract   # perPage default and maximum match every documented endpoint
+npm run check:afrik-loader          # the loaders against the strict models
+npm run check:rls-coverage          # every table reachable by PostgREST has a policy
 npm run check:migration-files       # no duplicate version or name, no hole in the sequence
 npm run check:dead                  # knip: unreferenced files, exports, dependencies (ratcheted ceilings)
+npm run test:social-tools           # the social/ Node utilities (node --test, not vitest)
 npm run test:charter-contracts      # aggregated design-charter contract suite
-npx tsx scripts/validateAfrikData.ts        # AFRIK data integrity (FR26–FR52)
-npx tsx scripts/ci/checkEditorialRules.ts   # decolonial editorial rules on fiches
+npx tsx scripts/validateAfrikData.ts        # AFRIK data integrity (FR26–FR52) — data-integrity.yml
+npx tsx scripts/ci/checkEditorialRules.ts   # decolonial editorial rules — editorial-rules.yml
 ```
 
+**Local only — nothing fails if you skip it:**
+
+```bash
+npm run test:social-engine          # the render engine's test_*.py suites
+```
+
+It stays out of CI because it needs `python3`, the three exactly-pinned wheels
+and `ffmpeg` on the runner. That is a cost, not an oversight — but it does mean
+the engine drifts silently until somebody runs `make social-engine`, so run it
+in any change that touches `social/harness`.
+
+`npm run check:translation-parity` runs in CI and **cannot** fail the job
+(`continue-on-error`, and the script exits 0 on findings). It is a report; see
+the bilingual-content rule below.
+
 ## Architecture
+
+### The result page — the surface everything else feeds
+
+`/{lang}/atlas/recherche` is the product. Its contract is **REQ-178**, its
+reviewed rendering is `docs/design/mockups/search/` (six cases × mobile,
+desktop, and both at night), and its written grammar is
+`docs/design/search-result-charter.md`.
+
+```
+src/lib/search/nameSubject.ts     # which entities the query is *about*
+src/lib/search/naming.ts          # one projection over five storage shapes
+src/components/search/NameAnswer.tsx   # the three movements, in order
+src/lib/i18n/copy/nameAnswer.ts   # every word the page says, fr + en
+```
+
+Three movements. The first and third are **unconditional**; only the second
+varies with what the corpus holds:
+
+1. **What was searched** — the entry, or an admission that the atlas holds no
+   such name, or a disambiguation when several answer to it.
+2. **What the corpus has** — the forms, where they come from, what they raise,
+   who says what today, and the eras, each block drawn only if a field fills it.
+   A block never renders to announce that it is empty.
+3. **What is owed regardless** — the declared silences, the conviction, and the
+   invitation to correct. This is the half that does not depend on the data, and
+   therefore the half a thin fiche would otherwise quietly drop.
+
+Four rules, each of which was a defect first:
+
+- **The confession belongs to the empty state alone.** « Nous ne connaissons pas
+  ce nom » is a claim about the corpus. Drawing it while results are listed, or
+  on a request that never reached the corpus, publishes a claim the corpus never
+  made. `SearchStatus` carries `failed` separately from `loaded` for exactly
+  this — the loader degrades every failure to an empty envelope and reports the
+  difference through `answered`.
+- **A qualifier is shown, never derived.** Three quarters of the corpus's
+  exonyms are bare forms; the rest carry the qualifier inside the string, in 677
+  distinct free-text values across 759 uses. Splitting on the parenthesis would
+  publish those as if they were a vocabulary.
+- **The searched form is marked, not promoted.** It tells the reader where they
+  are without telling them which name is right.
+- **A corpus field is never copied onto this page, it is translated.** No
+  scholarly word reaches this surface — not _exonyme_, not _endonyme_, not
+  _corpus_. A reader who wants the vocabulary meets it on a fiche or in the
+  glossary.
+
+**This surface cannot be judged from its tests.** Its suite was green on 9 563
+tests while four of its states never reached a reader — the unknown-name state
+unreachable, an outage drawing the confession, « peul » confessing ignorance
+above a 40-million-person entry, and the head counting « 0 résultat » above the
+confession. Render the page and look at each case; the capture harness is in
+`/afrik-art-director`'s `references/capture.md`.
+
+### Five storage shapes, one projection
+
+The five classes all answer "where does this name come from" and each stores the
+answer under a different key:
+
+| Class     | Where the names live                                             |
+| --------- | ---------------------------------------------------------------- |
+| people    | `content.appellations`                                           |
+| country   | root `etymology` / `nameOriginActor` + `content.historicalNames` |
+| family    | `content.decolonialHeader`                                       |
+| patronyme | root `spellings[]` + `origin`                                    |
+| language  | root `alternateNames[]`                                          |
+
+**`src/lib/search/naming.ts` is the only module that reads all five**, and
+`readNaming(type, content, root)` returns one `NamingProjection` whatever it was
+handed. Counts and the measurement behind the table:
+`docs/design/search-result-data-shape.md`.
+
+Before it, the search envelope surfaced naming for **peoples only**, so three of
+the five classes delivered none of their names to the page that exists to show
+them. Reading five shapes inside the component is how a block ends up rendering
+on one class and silently missing on another; reading them here turns the
+grammar's conditions into field checks.
+
+The corpus's own patronyme model already has the shape the other four are
+converging toward — one record per form, with its attestations and its sources.
+That convergence is corpus work, tracked in the reorientation plan's chantier C,
+and until it lands `readNaming` is what hides the difference.
 
 ### API: three layers, never two
 
@@ -107,6 +229,7 @@ Migrations are numbered and sequential in `supabase/migrations/` — the directo
 ### Frontend
 
 - **Anything about the brand, the look of a page, or whether an assembly of blocks holds together — invoke `/afrik-art-director` first, every time.** It loads `docs/design/brand-charter.md`, which sits above the four surface charters and settles what none of them does: the product's one name and where it comes from, the licence the footer owes the reader, the single token spine (`--afh-*`; shadcn HSL variables are aliases confined to `ui/`), one accent per page, the two display weights that are actually loaded, vertical rhythm, one alignment per block, and the imagery doctrine. It also carries the capture harness — this surface cannot be judged from the code, and recette sits behind Vercel SSO so it has to be served locally.
+- **The result page has its own charter — `docs/design/search-result-charter.md`.** It is listed first because that surface is the product (see the architecture section above), and because it is the one charter whose rules are refusals: no form promoted, no qualifier derived, no block rendered to say it is empty, no confession outside the empty state. Its reviewed rendering is `docs/design/mockups/search/` and the shape of the data under it is `docs/design/search-result-data-shape.md`.
 - **Start at `docs/design/atlas-charter.md`.** It is what the atlas surface asserts: the three cartographic encodings and the hard rule that a people never receives a closed line, the per-surface accent scope, the three entry points, the doctrine for showing a field the corpus does not fill, the panel's two anchorings, and the motion tokens. The reviewed rendering is `docs/design/mockups/` (four pages, `node build.js`); the engine decision and what actually shipped instead is `docs/adr/0007-atlas-globe-engine.md`. A charter-named test file is picked up by `test:charter-contracts` automatically.
 - **A face, a size, a weight or an ink — read `docs/design/typography-charter.md` before choosing one.** §1 is the nine roles and §2 why editorial roles are fluid and controls fixed. §8 is the home element by element: which face, step and ink each element takes and why that one and not another. The principle it rules: the display face names, the body face explains and operates, the monospace only aligns figures in a column; an ink states a status, never a decoration. A new element on the home takes a row of that table — `homeTypographyCharter.test.ts` holds it — and one that fits no row is a design decision, not a new dress in its component.
 - **Anything about the games — invoke `/afrik-game-designer` first, every time.** Inventing, critiquing, scoping or killing a game; writing or repairing quiz items; auditing the _Jouer_ hub; or just an offhand "ce jeu est nul" — the skill loads `docs/design/games-charter.md`, which is the contract that surface owes. The charter records why the hub cuts from eleven games to three, the item doctrine (stimulus → stem → options: a round that never names its subject is a coin flip), the near-pool rule for distractors, and the interface rules. Reasoning about a game without it re-derives conclusions that are already written down, usually wrongly.
@@ -531,6 +654,18 @@ It is written once, there; this section states the rule and does not restate the
 ### Colonial terminology
 
 Keep colonial-era names but explain why they are problematic, and always surface the autonym. `checkEditorialRules.ts` enforces: an autonym is required at `confidence >= medium`, and ≥2 sources when `classification_status` is `contested` or `colonial-legacy`.
+
+**And that the fiche has decided about the names it is known by** —
+`competing-appellations`, added 2026-09-18 with the reorientation. The autonym
+was required and the competing forms were required nowhere, which left the
+result page promising every name a people is known by while resting on a field
+nothing filled. The rule does **not** demand an exonym: an empty list is a
+declared silence and passes, an absent key is an unanswered question and fails.
+Countries are exempt — they carry their names under a different key. Three
+fiches failed it on the day it landed and were corrected from their own sourced
+prose rather than from new research; the corpus half of the work, filling the
+competing forms where the fiche is silent, is the reorientation plan's
+chantier E.
 
 ### Chronological symmetry (REQ-148)
 
