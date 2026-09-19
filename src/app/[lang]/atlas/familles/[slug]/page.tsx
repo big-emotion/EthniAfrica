@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
 import { notFound, redirect } from "next/navigation";
 
 import {
@@ -45,22 +44,10 @@ import {
   resolveFootprintProvenance,
 } from "@/lib/familyFootprintSource";
 import { familyCopy } from "@/lib/i18n/copy/family";
+import { FicheAtlasGlobeIsland } from "@/components/atlas/FicheAtlasGlobeIsland";
 
 // @req REQ-019
 export const revalidate = 3600;
-
-/**
- * ETNI-1378/ETNI-1478 — statically importing AtlasGlobe put its whole client
- * bundle (marker placement, camera hooks, target picker, facts panel, SVG
- * fallback) into this page's own hydration task, which is what blew the
- * mobile Total Blocking Time budget on this route (2.9-3.7s against 300ms).
- * `dynamic()` code-splits it, the same mechanism the explorer hub already
- * uses (ExplorerContinent, FacetGlobeIsland) — `ssr: false` is not used here
- * because the globe is this fiche's hero and still has to reach first paint.
- */
-const AtlasGlobe = dynamic(() =>
-  import("@/components/atlas/AtlasGlobe").then((m) => m.AtlasGlobe)
-);
 
 interface PageParams {
   lang: string;
@@ -290,7 +277,7 @@ export default async function FamillesSlugPage({
         entityName={familyDetail.nameFr}
         globe={
           <FicheHeroBand>
-            <AtlasGlobe
+            <FicheAtlasGlobeIsland
               language={lang as Language}
               overlay={familyOverlay}
               targetPicker="list"

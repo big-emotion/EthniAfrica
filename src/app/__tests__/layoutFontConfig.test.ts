@@ -36,6 +36,10 @@ describe("root layout font configuration", () => {
 
     expect(monoConfig).not.toBeNull();
     expect(monoConfig?.[1]).toContain('variable: "--font-jetbrains-mono"');
+    // Mono labels and tabular figures sit below the opening copy on the
+    // canonical routes. Preloading their face makes it compete with the body
+    // and display fonts that first paint actually needs.
+    expect(monoConfig?.[1]).toContain("preload: false");
     expect(layout).toContain("jetbrainsMono.variable");
 
     // Loading the face is only half of it: the token has to resolve to it, or

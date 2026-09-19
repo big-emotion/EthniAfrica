@@ -13,19 +13,8 @@ vi.mock("@sentry/nextjs", () => ({
 
 // UI primitives
 vi.mock("@/components/ui/toaster", () => ({ Toaster: () => null }));
-vi.mock("@/components/ui/sonner", () => ({ Toaster: () => null }));
 vi.mock("@/components/ui/tooltip", () => ({
   TooltipProvider: ({ children }: { children: React.ReactNode }) => (
-    <>{children}</>
-  ),
-}));
-
-// react-query
-vi.mock("@tanstack/react-query", () => ({
-  QueryClient: class {
-    constructor() {}
-  },
-  QueryClientProvider: ({ children }: { children: React.ReactNode }) => (
     <>{children}</>
   ),
 }));

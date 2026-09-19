@@ -7,17 +7,16 @@ import { describe, expect, test } from "vitest";
  * statically imported AtlasGlobe, so its whole client bundle (marker
  * placement, camera hooks, target picker, facts panel, SVG fallback — every
  * effect it runs) evaluated and hydrated as one synchronous task with the
- * rest of the page. The hub routes (ExplorerContinent, FacetGlobeIsland)
- * already load AtlasGlobe through `next/dynamic`, which code-splits it into
- * its own chunk and lets React hydrate the rest of the page without waiting
- * on it — the difference that keeps their Total Blocking Time under budget
- * while the fiche routes blew 2.9-3.7s against a 300ms budget (reference
- * run: github.com/big-emotion/ethniafrica/actions/runs/33368057398).
+ * rest of the page. Loading it through `next/dynamic` in the server route
+ * split the file but still scheduled the client chunk before the browser had
+ * painted the server response. The mobile Lighthouse runner consequently did
+ * roughly seven seconds of main-thread work before it could paint the fiche
+ * lede (reference run: github.com/big-emotion/ethniafrica/actions/runs/35433936660).
  *
- * `ssr: false` is deliberately not required here (unlike the hub's usage):
- * the fiche globe is the page's hero, so its server-rendered fallback still
- * has to reach the first paint for LCP. Only the static-import mechanism —
- * the actual cause of the oversized hydration task — needs to go.
+ * FicheAtlasGlobeIsland keeps a zero-dependency Africa map in the server
+ * response and upgrades it only when the reader asks to interact. The map
+ * therefore still leads the fiche while a GPU-less audit — or a reader who
+ * only wants the record — never pays the globe's JavaScript cost.
  */
 const FICHE_PAGES = [
   "familles/[slug]/page.tsx",
@@ -25,12 +24,11 @@ const FICHE_PAGES = [
   "peuples/[slug]/page.tsx",
 ] as const;
 
-const STATIC_IMPORT_PATTERN =
-  /import\s*\{\s*AtlasGlobe\s*\}\s*from\s*["']@\/components\/atlas\/AtlasGlobe["']/;
-const DYNAMIC_IMPORT_PATTERN =
-  /dynamic\(\s*\(\)\s*=>\s*import\(\s*["']@\/components\/atlas\/AtlasGlobe["']\s*\)/;
+const ATLAS_GLOBE_IMPORT_PATTERN = /@\/components\/atlas\/AtlasGlobe/;
+const FICHE_ISLAND_IMPORT_PATTERN =
+  /import\s*\{\s*FicheAtlasGlobeIsland\s*\}\s*from\s*["']@\/components\/atlas\/FicheAtlasGlobeIsland["']/;
 
-describe("fiche routes mount AtlasGlobe through next/dynamic", () => {
+describe("fiche routes defer the interactive AtlasGlobe until reader intent", () => {
   for (const relativePath of FICHE_PAGES) {
     // @req REQ-112
     test(`${relativePath} does not statically import AtlasGlobe`, () => {
@@ -38,16 +36,17 @@ describe("fiche routes mount AtlasGlobe through next/dynamic", () => {
         path.join(__dirname, "..", relativePath),
         "utf8"
       );
-      expect(source).not.toMatch(STATIC_IMPORT_PATTERN);
+      expect(source).not.toMatch(ATLAS_GLOBE_IMPORT_PATTERN);
     });
 
     // @req REQ-112
-    test(`${relativePath} lazily loads AtlasGlobe via next/dynamic`, () => {
+    test(`${relativePath} mounts the fiche globe island`, () => {
       const source = readFileSync(
         path.join(__dirname, "..", relativePath),
         "utf8"
       );
-      expect(source).toMatch(DYNAMIC_IMPORT_PATTERN);
+      expect(source).toMatch(FICHE_ISLAND_IMPORT_PATTERN);
+      expect(source).toContain("<FicheAtlasGlobeIsland");
     });
   }
 });

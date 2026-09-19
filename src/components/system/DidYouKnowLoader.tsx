@@ -120,7 +120,11 @@ export function DidYouKnowLoader({
                   src={illustration.src}
                   alt={illustration.alt}
                   fill
-                  priority
+                  // This image belongs to a transient Suspense fallback. A
+                  // preload survives after the destination replaces it and
+                  // competes with that destination's fonts and scripts, so
+                  // it must load only if the wait remains on screen.
+                  loading="lazy"
                   sizes="(min-width: 768px) 42vw, calc(100vw - 44px)"
                   className="afh-dykl-image"
                 />

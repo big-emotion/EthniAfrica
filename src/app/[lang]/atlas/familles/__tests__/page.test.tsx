@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { render, within } from "@testing-library/react";
+import { fireEvent, render, within } from "@testing-library/react";
 import React from "react";
 
 import type { LanguageFamily } from "@/types/afrik";
@@ -324,8 +324,12 @@ describe("/[lang]/familles/[slug] page", () => {
 
       const { findByRole } = await renderFamillesPage("FLG_AFROASIATIQUE");
 
-      // AtlasGlobe now mounts through next/dynamic (ETNI-1378), which
-      // resolves its chunk a tick after the initial render.
+      fireEvent.click(
+        await findByRole("button", {
+          name: "Activer la carte interactive",
+        })
+      );
+
       expect(
         await findByRole("button", { name: "Toute l'empreinte" })
       ).toBeInTheDocument();
@@ -346,11 +350,15 @@ describe("/[lang]/familles/[slug] page", () => {
       mockGetPeoplesByLanguageFamily.mockResolvedValue([]);
       mockGetPeoplesByIds.mockResolvedValue([]);
 
-      const { queryByRole, findByText } =
+      const { queryByRole, findByRole, findByText } =
         await renderFamillesPage("FLG_AFROASIATIQUE");
 
-      // AtlasGlobe now mounts through next/dynamic (ETNI-1378), which
-      // resolves its chunk a tick after the initial render.
+      fireEvent.click(
+        await findByRole("button", {
+          name: "Activer la carte interactive",
+        })
+      );
+
       expect(
         await findByText(/Empreinte géographique non disponible/i)
       ).toBeInTheDocument();

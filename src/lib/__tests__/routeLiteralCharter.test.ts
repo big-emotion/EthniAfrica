@@ -1,4 +1,11 @@
-import { readdirSync, readFileSync } from "node:fs";
+import { execFileSync } from "node:child_process";
+import {
+  existsSync,
+  mkdirSync,
+  readFileSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
 import { join, resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 
@@ -132,28 +139,43 @@ function routeCode(line: string): string {
   return code(line).replace(/dataset\/translations\/(?:en|fr)\//g, "");
 }
 
-function walk(directory: string, found: string[] = []): string[] {
-  for (const entry of readdirSync(resolve(ROOT, directory), {
-    withFileTypes: true,
-  })) {
-    const path = join(directory, entry.name);
-    if (entry.isDirectory()) {
-      walk(path, found);
-    } else if (/\.tsx?$/.test(entry.name)) {
-      found.push(path);
-    }
-  }
-  return found;
-}
-
 function sourceFiles(): string[] {
-  return ["src", "scripts", "e2e"]
-    .flatMap((directory) => walk(directory))
-    .filter((file) => !EXEMPT.has(file))
-    .sort();
+  return (
+    execFileSync("git", ["ls-files", "--", "src", "scripts", "e2e"], {
+      cwd: ROOT,
+      encoding: "utf8",
+    })
+      .split("\n")
+      .filter((file) => /\.tsx?$/.test(file))
+      // `git ls-files` includes paths deleted in the working tree until the
+      // deletion is staged. Audit the files that exist in this checkout.
+      .filter((file) => existsSync(resolve(ROOT, file)))
+      .filter((file) => !EXEMPT.has(file))
+      .sort()
+  );
 }
 
 describe("module URLs are composed, never written out", () => {
+  // @req REQ-091
+  it("ignores untracked source-shaped files created by parallel tests", () => {
+    const transientDirectory = resolve(
+      ROOT,
+      "scripts/__tests__/tmp_test_route_literal_charter"
+    );
+    const transientFile = join(transientDirectory, "generated.ts");
+
+    mkdirSync(transientDirectory, { recursive: true });
+    writeFileSync(transientFile, 'export const route = "/fr/atlas/pays";\n');
+
+    try {
+      expect(sourceFiles()).not.toContain(
+        "scripts/__tests__/tmp_test_route_literal_charter/generated.ts"
+      );
+    } finally {
+      rmSync(transientDirectory, { recursive: true, force: true });
+    }
+  });
+
   // @req REQ-141
   it("parameterises every single-locale Playwright spec", () => {
     const offenders = sourceFiles()

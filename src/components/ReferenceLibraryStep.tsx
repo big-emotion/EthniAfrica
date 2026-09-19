@@ -5,6 +5,7 @@ import { hasReferenceLibraryAccess } from "@/lib/auth/referenceLibraryAccess";
 import { contributeCopy } from "@/lib/i18n/copy/contribute";
 import type { Language } from "@/types/shared";
 import { ReferenceLibraryFlow } from "./ReferenceLibraryFlow";
+import { QueryProvider } from "@/components/QueryProvider";
 
 type LibraryAccess = "pending" | "moderator" | "visitor";
 
@@ -43,7 +44,11 @@ export function ReferenceLibraryStep({
 
   if (access === "pending") return null;
   if (access === "moderator") {
-    return <ReferenceLibraryFlow language={language} />;
+    return (
+      <QueryProvider>
+        <ReferenceLibraryFlow language={language} />
+      </QueryProvider>
+    );
   }
 
   const copy = contributeCopy[language].reference;

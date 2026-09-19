@@ -75,6 +75,17 @@ describe("DidYouKnowLoader (REQ-104 — the wait is spent reading)", () => {
     );
   });
 
+  // @req REQ-104 @req REQ-112
+  it("does not let a transient wait image pre-empt the destination page", () => {
+    render(<DidYouKnowLoader fact={FACT} label="Chargement" />);
+
+    const image = screen.getByRole("img", {
+      name: /Défense d'éléphant sculptée/i,
+    });
+    expect(image).toHaveAttribute("loading", "lazy");
+    expect(image).not.toHaveAttribute("fetchpriority", "high");
+  });
+
   // Bank order determines the side, so consecutive illustrations do not all
   // settle into the same template on wider screens.
   // @req REQ-104 @req REQ-113

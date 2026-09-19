@@ -202,9 +202,9 @@ The only drill on record is [2025-07-14](./restore-drill-2025-07-14.md). Nothing
 quarter. It stays overdue until a `restore-drill-<YYYY-MM-DD>.md` record lands, and the date above
 moves to that record plus one quarter in the same change.
 
-**Drill owner: `(owner — the operator must name a person here)`.** A quarterly loop with no named
-owner is how this one lapsed for more than a year. A drill is a human action — it creates a
-throwaway project and restores real data — and no agent session runs one.
+**Drill owner: project operator.** The project operator owns scheduling, execution, evidence, and
+the next due date. A drill is a human action — it creates a throwaway project and restores real
+data — and no agent session runs one.
 
 ---
 

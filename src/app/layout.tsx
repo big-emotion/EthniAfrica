@@ -4,7 +4,6 @@ import { headers } from "next/headers";
 import { Fraunces, Nunito_Sans, JetBrains_Mono } from "next/font/google";
 import "@/index.css";
 import { Providers } from "./providers";
-import { TypeformPreload } from "@/components/TypeformPreload";
 import {
   PRODUCT_NAME,
   OG_TITLE,
@@ -35,6 +34,10 @@ const nunitoSans = Nunito_Sans({
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
+  // Mono serves field labels and tabular figures below the opening copy. It
+  // remains self-hosted, but must not compete with the display and body faces
+  // that the first viewport needs.
+  preload: false,
   variable: "--font-jetbrains-mono",
 });
 
@@ -96,7 +99,6 @@ export default async function RootLayout({
       suppressHydrationWarning
     >
       <body className="font-sans antialiased">
-        <TypeformPreload />
         <Providers nonce={nonce}>
           {children}
           <PlausibleScript />
