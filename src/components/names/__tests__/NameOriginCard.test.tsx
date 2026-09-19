@@ -105,6 +105,27 @@ describe("NameOriginCard", () => {
     expect(screen.getByText("nom imposé")).toBeInTheDocument();
   });
 
+  // @req REQ-091
+  it("does not expose residual AFRIK identifiers from stale name records", () => {
+    render(
+      <NameOriginCard
+        record={{
+          ...baseRecord,
+          whyProblematic:
+            "PPL_LUNDA_CHOKWE complète PPL_CHOKWE, tandis que FLG_NIGERCONGO/PPL_LUO_BANTU décrit une autre fiche.",
+        }}
+        confidenceChip={<span>chip</span>}
+      />
+    );
+
+    expect(screen.queryByText(/PPL_|FLG_/)).toBeNull();
+    expect(
+      screen.getByText(
+        /Lunda Chokwe complète Chokwe, tandis que Luo Bantu décrit une autre fiche/
+      )
+    ).toBeVisible();
+  });
+
   // @req REQ-056
   it("renders without a lang attribute when languageOfOrigin is missing, without throwing", () => {
     const record: NameRecordView = {
