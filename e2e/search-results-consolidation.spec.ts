@@ -21,9 +21,10 @@ test.skip(
 
 const SERP_URL = getLocalizedRoute(LOCALE, "search");
 
-// "Yoruba" is an exact-name match in the AFRIK corpus. It gives the page one
-// unambiguous name subject and therefore the complete `NameAnswer` movement.
-const DOMINANT_QUERY = "Yoruba";
+// "Yoruba" is an exact name shared by a people and a language in the live
+// AFRIK corpus. The page must keep both subjects and ask which one the reader
+// means instead of promoting either result.
+const DISAMBIGUATED_QUERY = "Yoruba";
 // Long enough to be well past the corpus, short enough to stay a single
 // query — guaranteed zero hits, so the page must admit that the atlas does not
 // know the name instead of presenting a zero-result count as its answer.
@@ -63,20 +64,23 @@ test.describe("SERP title and answer rule (REQ-178, DEC-057)", () => {
   });
 
   // @req REQ-124
-  test("keeps the result count in h1 and answers the exact name below it", async ({
+  test("keeps the result count in h1 and disambiguates exact subjects below it", async ({
     page,
   }) => {
-    await page.goto(`${SERP_URL}?q=${encodeURIComponent(DOMINANT_QUERY)}`);
+    await page.goto(`${SERP_URL}?q=${encodeURIComponent(DISAMBIGUATED_QUERY)}`);
     const headings = page.getByRole("heading", { level: 1 });
     await expect(headings).toHaveCount(1);
     await expect(headings.first()).toContainText("résultat");
-    await expect(headings.first()).toContainText(DOMINANT_QUERY);
+    await expect(headings.first()).toContainText(DISAMBIGUATED_QUERY);
 
-    const answer = page.getByTestId("name-answer");
+    const answer = page.getByTestId("name-answer-disambiguation");
     await expect(answer).toBeVisible();
+    await expect(answer.getByRole("heading", { level: 2 }).first()).toHaveText(
+      "Lequel cherchez-vous ?"
+    );
     await expect(
-      answer.getByRole("heading", { level: 2 }).first()
-    ).toContainText(DOMINANT_QUERY);
+      answer.getByRole("link", { name: DISAMBIGUATED_QUERY, exact: true })
+    ).toHaveCount(2);
     await expect(page.getByTestId("search-pivot")).toHaveCount(0);
   });
 
@@ -102,10 +106,12 @@ test.describe("SERP one-column answer rule (REQ-178, DEC-057)", () => {
       page,
     }) => {
       await page.setViewportSize(viewport);
-      await page.goto(`${SERP_URL}?q=${encodeURIComponent(DOMINANT_QUERY)}`);
+      await page.goto(
+        `${SERP_URL}?q=${encodeURIComponent(DISAMBIGUATED_QUERY)}`
+      );
 
       const layout = page.getByTestId("search-results-layout");
-      const answer = page.getByTestId("name-answer");
+      const answer = page.getByTestId("name-answer-disambiguation");
       await expect(layout).toBeVisible();
       await expect(answer).toBeVisible();
 
