@@ -534,7 +534,7 @@ export function RecherchePageContent() {
     const feedCopy = searchFeedCopy[language];
     return (
       <SearchFeedFrame language={language}>
-        <div className="space-y-afh-5xl">
+        <div>
           <form
             onSubmit={handleSubmit}
             role="search"
@@ -607,7 +607,7 @@ export function RecherchePageContent() {
               data-testid="search-feed-loading"
               aria-live="polite"
               aria-busy="true"
-              className="space-y-afh-2xl"
+              className="mt-afh-5xl space-y-afh-2xl"
             >
               <span className="sr-only">{feedCopy.status.loading}</span>
               <div className="h-3 w-32 rounded-afh-lg bg-afh-bg-warm motion-safe:animate-pulse" />
@@ -635,7 +635,7 @@ export function RecherchePageContent() {
           {status === "failed" ? (
             <div
               data-testid="search-feed-failed"
-              className="rounded-afh-lg bg-afh-bg-warm px-afh-5xl py-afh-7xl text-center"
+              className="mt-afh-5xl rounded-afh-lg bg-afh-bg-warm px-afh-5xl py-afh-7xl text-center"
             >
               <p
                 className="mx-auto max-w-sm text-afh-small text-afh-text-soft"

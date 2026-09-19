@@ -111,12 +111,19 @@ export function resolveSearchFeedAssetPath(
   return remainsInside(realAssetRoot, realCandidate) ? realCandidate : null;
 }
 
+export function searchFeedAssetRequestPath(requestUrl: string): string {
+  const url = new URL(requestUrl);
+  return url.pathname === "/_next/image"
+    ? (url.searchParams.get("url") ?? url.pathname)
+    : url.pathname;
+}
+
 export async function routeCommittedSearchFeedAssets(
   page: RoutingPage,
   repositoryRoot = process.cwd()
 ): Promise<void> {
   await page.route("**/*", async (route) => {
-    const pathname = new URL(route.request().url()).pathname;
+    const pathname = searchFeedAssetRequestPath(route.request().url());
     const assetPath = resolveSearchFeedAssetPath(pathname, repositoryRoot);
 
     if (!assetPath) {

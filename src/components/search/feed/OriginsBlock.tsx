@@ -39,11 +39,11 @@ export function OriginsBlock({
       {lede ? (
         <p className="mt-afh-lg text-afh-small text-afh-text">{lede}</p>
       ) : null}
-      <ul className="mt-afh-lg flex list-none gap-afh-lg overflow-x-auto pb-afh-md min-[1200px]:grid min-[1200px]:grid-cols-2 min-[1200px]:gap-afh-2xl min-[1200px]:overflow-visible">
+      <ul className="mt-afh-lg flex snap-x snap-mandatory scroll-px-afh-lg list-none gap-afh-lg overflow-x-auto pb-afh-md min-[1200px]:grid min-[1200px]:grid-cols-2 min-[1200px]:gap-afh-2xl min-[1200px]:overflow-visible min-[1200px]:snap-none">
         {items.map((item) => (
           <li
             key={`${item.name}-${item.qualifier ?? ""}`}
-            className="w-[290px] shrink-0 rounded-afh-lg border border-afh-border bg-afh-surface p-afh-2xl min-[1200px]:w-auto"
+            className="w-[min(290px,100%)] shrink-0 snap-start rounded-afh-lg border border-afh-border bg-afh-surface p-afh-2xl min-[1200px]:w-auto"
           >
             <div className="flex items-baseline justify-between gap-afh-lg">
               <h3 className="font-afh-display text-afh-body font-bold text-afh-text">

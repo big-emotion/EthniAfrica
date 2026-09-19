@@ -224,6 +224,26 @@ function resolvedPeoplesOf(value: unknown): SearchResult["associatedPeoples"] {
   });
 }
 
+function declaredPeoplesOf(
+  content: unknown,
+  field: "associatedPeoples" | "majorPeoples"
+): SearchResult["associatedPeoples"] {
+  if (!content || typeof content !== "object" || Array.isArray(content)) {
+    return undefined;
+  }
+  const entries = (content as Record<string, unknown>)[field];
+  if (!Array.isArray(entries)) return undefined;
+
+  const peoples = entries.flatMap((entry) => {
+    if (!entry || typeof entry !== "object" || Array.isArray(entry)) return [];
+    const { peopleId, name } = entry as Record<string, unknown>;
+    return typeof peopleId === "string" && typeof name === "string"
+      ? [{ id: peopleId, name }]
+      : [];
+  });
+  return peoples.length > 0 ? peoples : undefined;
+}
+
 /**
  * The speaker peoples a language fiche declares (ETNI-1804), read off
  * `content.peoples` (`persistedContent` in `languageProvenanceLoader.ts`).
@@ -322,6 +342,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
       id: String(row.id),
       name: String(row.nameFr ?? ""),
       nameEn: englishNameOf(row.nameEn),
+      associatedPeoples: declaredPeoplesOf(row.content, "majorPeoples"),
       // The match excerpt says why this row surfaced; the etymology only
       // says what the country is. Prefer the former when the API sends it.
       snippet:
@@ -335,6 +356,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
       id: String(row.id),
       name: String(row.nameFr ?? ""),
       nameEn: englishNameOf(row.nameEn),
+      associatedPeoples: declaredPeoplesOf(row.content, "associatedPeoples"),
       relevance: numberOrUndefined(row.relevance),
       exactMatch: row.exactMatch === true,
     })),

@@ -123,6 +123,23 @@ describe("QuizAnswerReveal (Epic 10, Story 10.9, ETNI-1134, FR68/FR71)", () => {
     );
   });
 
+  // @req REQ-103 REQ-180
+  it("keeps the source-chain action at the minimum touch-target height", () => {
+    render(
+      <QuizAnswerReveal
+        language="fr"
+        question={QUESTION}
+        isCorrect={false}
+        isLastQuestion={false}
+        onNext={vi.fn()}
+      />
+    );
+
+    expect(
+      screen.getByRole("button", { name: "Ouvrir la chaîne de sources" })
+    ).toHaveClass("inline-flex", "min-h-11", "items-center");
+  });
+
   // @req REQ-103 FR68
   it("announces the verdict and explanation via aria-live=polite", () => {
     render(

@@ -28,7 +28,7 @@ export function SearchFeedSectionHeading({
         >
           {title}
         </h2>
-        {action ? <div className="shrink-0">{action}</div> : null}
+        {action ? <div className="-my-[9px] shrink-0">{action}</div> : null}
       </div>
       {subtitle ? (
         <p className="mt-afh-xs text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">

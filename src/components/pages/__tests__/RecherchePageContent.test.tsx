@@ -1452,7 +1452,9 @@ describe("RecherchePageContent feed orchestration", () => {
     } as Response);
 
     await submitQuery("Zulu");
-    await screen.findByTestId("search-feed-failed");
+    expect(await screen.findByTestId("search-feed-failed")).toHaveClass(
+      "mt-afh-5xl"
+    );
 
     expect(document.querySelectorAll("[data-feed-block]")).toHaveLength(0);
     expect(
@@ -1490,7 +1492,9 @@ describe("RecherchePageContent feed orchestration", () => {
     );
 
     await submitQuery("Zulu");
-    await screen.findByTestId("search-feed-loading");
+    expect(await screen.findByTestId("search-feed-loading")).toHaveClass(
+      "mt-afh-5xl"
+    );
     const signal = (mockFetch.mock.calls[0][1] as RequestInit).signal;
 
     fireEvent.click(screen.getByRole("button", { name: "Effacer" }));

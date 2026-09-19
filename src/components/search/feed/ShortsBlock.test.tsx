@@ -55,11 +55,24 @@ describe("ShortsBlock", () => {
 
     const block = screen.getByTestId("feed-block-shorts");
     expect(block).toHaveAttribute("data-feed-zone", "first");
-    expect(screen.getByRole("list")).toHaveClass("overflow-x-auto");
-    expect(screen.getByRole("link", { name: /Mande/ })).toHaveClass(
-      "w-[130px]",
-      "min-[1200px]:w-[160px]"
+    expect(screen.getByRole("list")).toHaveClass(
+      "overflow-x-auto",
+      "snap-x",
+      "snap-mandatory",
+      "scroll-px-afh-lg",
+      "mt-afh-md",
+      "min-[1200px]:mt-afh-lg"
     );
+    const shortLink = screen.getByRole("link", { name: /Mande/ });
+    expect(shortLink).toHaveClass("w-[130px]", "min-[1200px]:w-[160px]");
+    expect(shortLink.closest("li")).toHaveClass("snap-start");
+    expect(shortLink.firstElementChild).toHaveClass(
+      "h-[231px]",
+      "min-[1200px]:h-[284px]"
+    );
+    expect(
+      shortLink.firstElementChild?.querySelector('[aria-hidden="true"]')
+    ).toHaveClass("size-8", "min-[1200px]:size-9");
     expect(
       screen.getByRole("button", { name: "Proposer une source" })
     ).toHaveClass("min-h-11");

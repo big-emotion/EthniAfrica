@@ -1,5 +1,6 @@
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
+import { cn } from "@/lib/utils";
 import type { Language } from "@/types/shared";
 
 export interface VerdictBlockProps {
@@ -10,6 +11,7 @@ export interface VerdictBlockProps {
   eyebrow?: string;
   language?: Language;
   tone?: "answer" | "plain";
+  className?: string;
 }
 
 /** The answer movement: searched name first, then a one-sentence verdict. */
@@ -22,12 +24,13 @@ export function VerdictBlock({
   eyebrow,
   language = "fr",
   tone = "answer",
+  className,
 }: VerdictBlockProps) {
   return (
     <SearchFeedBlock
       id="verdict"
       zone="first"
-      className="pt-afh-2xl min-[1200px]:pt-afh-5xl"
+      className={cn("pt-afh-2xl min-[1200px]:pt-0", className)}
     >
       <p
         data-testid="verdict-eyebrow"

@@ -55,6 +55,8 @@ describe("SearchFeedSectionHeading", () => {
       screen.getByRole("heading", { level: 2, name: "D’où elles viennent" })
     ).toHaveAttribute("id", "origins-title");
     expect(screen.getByText("Chaque origine reste attribuée.")).toBeVisible();
-    expect(screen.getByRole("link", { name: "Tout voir" })).toBeVisible();
+    const action = screen.getByRole("link", { name: "Tout voir" });
+    expect(action).toBeVisible();
+    expect(action.parentElement).toHaveClass("-my-[9px]");
   });
 });

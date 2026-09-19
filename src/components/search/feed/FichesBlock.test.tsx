@@ -3,7 +3,7 @@ import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 
 import { FichesBlock } from "@/components/search/feed/FichesBlock";
-import { getPeopleRoute } from "@/lib/routing";
+import { getFamilyRoute, getPeopleRoute } from "@/lib/routing";
 
 // @req REQ-180
 describe("FichesBlock", () => {
@@ -26,6 +26,33 @@ describe("FichesBlock", () => {
       "min-[1200px]:grid-cols-1"
     );
     expect(screen.getByRole("link", { name: /Mande/ })).toHaveClass("min-h-11");
+  });
+
+  // @req REQ-180
+  it("keeps multiple fiches in one column until a full 430 px mobile canvas", () => {
+    render(
+      <FichesBlock
+        items={[
+          {
+            kind: "Famille de langues",
+            name: "A very long documented name",
+            meta: "Fiche documentée",
+            href: getFamilyRoute("fr", "test-a"),
+          },
+          {
+            kind: "Famille de langues",
+            name: "Another very long documented name",
+            meta: "Fiche documentée",
+            href: getFamilyRoute("fr", "test-b"),
+          },
+        ]}
+      />
+    );
+
+    expect(screen.getByRole("list")).toHaveClass(
+      "grid-cols-1",
+      "min-[430px]:grid-cols-2"
+    );
   });
 
   // @req REQ-180

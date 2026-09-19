@@ -134,7 +134,7 @@ export const QuizAnswerReveal = ({
       <button
         type="button"
         onClick={() => setSheetOpen(true)}
-        className="self-start text-afh-small font-medium text-afh-terracotta underline underline-offset-2"
+        className="inline-flex min-h-11 items-center self-start text-afh-small font-medium text-afh-terracotta underline underline-offset-2"
       >
         {t.openSourceChain}
       </button>

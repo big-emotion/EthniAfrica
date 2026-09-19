@@ -112,6 +112,46 @@ describe("SearchFeed", () => {
   });
 
   // @req REQ-180
+  it("carries the approved first-screen geometry without duplicating blocks", () => {
+    const value = fixture("mande");
+    const { container } = render(
+      <SearchFeed
+        query={value.query}
+        language="fr"
+        state="exact"
+        results={value.production.search.results}
+        subjects={value.production.search.results}
+        leads={value.production.search.leads}
+        companions={value.production.companions}
+      />
+    );
+
+    expect(container.querySelector('[data-feed-block="lenses"]')).toHaveClass(
+      "min-[1200px]:max-w-[640px]"
+    );
+    const answer = container.querySelector('[data-feed-opening="answer"]');
+    expect(answer).toHaveClass(
+      "min-[1200px]:grid",
+      "min-[1200px]:grid-cols-12",
+      "min-[1200px]:gap-afh-6xl",
+      "min-[1200px]:pt-afh-5xl"
+    );
+    expect(answer?.querySelector('[data-feed-block="verdict"]')).toHaveClass(
+      "min-[1200px]:col-span-7"
+    );
+    expect(
+      answer?.querySelector('[data-feed-block="appellations"]')
+    ).toHaveClass("min-[1200px]:col-span-5");
+    expect(container.querySelector('[data-feed-opening="shorts"]')).toHaveClass(
+      "mt-afh-lg",
+      "min-[1200px]:mt-afh-5xl"
+    );
+    expect(
+      container.querySelectorAll('[data-feed-block="verdict"]')
+    ).toHaveLength(1);
+  });
+
+  // @req REQ-180
   it("marks the localized filed name as the searched English form", () => {
     const result = namedResult();
     const { container } = render(

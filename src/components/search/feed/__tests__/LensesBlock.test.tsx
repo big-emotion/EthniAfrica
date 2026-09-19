@@ -30,6 +30,9 @@ describe("LensesBlock", () => {
     expect(navigation).toHaveClass(
       "overflow-x-auto",
       "flex-nowrap",
+      "snap-x",
+      "snap-mandatory",
+      "scroll-px-afh-lg",
       "[scrollbar-width:none]",
       "[&::-webkit-scrollbar]:hidden"
     );
@@ -38,7 +41,7 @@ describe("LensesBlock", () => {
     const active = screen.getByRole("button", { name: "Images 1" });
     expect(active).toHaveAttribute("aria-pressed", "true");
     for (const button of screen.getAllByRole("button")) {
-      expect(button).toHaveClass("min-h-11", "shrink-0");
+      expect(button).toHaveClass("min-h-11", "shrink-0", "snap-start");
     }
 
     fireEvent.click(screen.getByRole("button", { name: "Shorts 4" }));

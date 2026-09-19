@@ -18,10 +18,28 @@ describe("search feed responsive contract", () => {
   // @req REQ-180
   it("keeps one mobile-first column until the explicit 1200 px composition", () => {
     for (const { file, source } of productionSources()) {
-      const forbidden = source.match(
+      // Fiche cards alone gain a second column at the canonical 430 px board
+      // width. At 320–429 px they remain one column so long names cannot be
+      // clipped; this does not change the feed's single movement-II stream.
+      const responsiveSource =
+        file === "FichesBlock.tsx"
+          ? source.replaceAll("min-[430px]:", "")
+          : source;
+      const forbidden = responsiveSource.match(
         /\b(?:sm|md|lg|xl|2xl):|min-\[(?!1200px\])[^\]]+\]:/g
       );
       expect(forbidden, file).toBeNull();
+    }
+  });
+
+  // @req REQ-180
+  it("reserves the 430 px exception for the fiche grid", () => {
+    for (const { file, source } of productionSources()) {
+      if (file === "FichesBlock.tsx") {
+        expect(source).toContain("min-[430px]:grid-cols-2");
+      } else {
+        expect(source, file).not.toContain("min-[430px]:");
+      }
     }
   });
 

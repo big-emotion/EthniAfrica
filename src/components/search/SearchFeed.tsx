@@ -452,10 +452,17 @@ export function SearchFeed({
             summary={summary}
             language={language}
             tone={state === "typo" || state === "unknown" ? "plain" : "answer"}
+            className="min-[1200px]:col-span-7"
           />
         );
       case "appellations":
-        return <AppellationsBlock forms={forms} language={language} />;
+        return (
+          <AppellationsBlock
+            forms={forms}
+            language={language}
+            className="min-[1200px]:col-span-5"
+          />
+        );
       case "shorts":
         return needsEmptyShort ? (
           <ShortsBlock
@@ -658,11 +665,33 @@ export function SearchFeed({
   const firstIds = plan.desktop.first.filter((id) =>
     lensAllows(activeLens, id)
   );
+  const hasAppellations = firstIds.includes("appellations");
   const first = (
     <>
-      {firstIds.map((id) => (
-        <Fragment key={id}>{renderBlock(id)}</Fragment>
-      ))}
+      {firstIds.includes("lenses") ? renderBlock("lenses") : null}
+      <div
+        data-feed-opening="answer"
+        className="min-w-0 min-[1200px]:grid min-[1200px]:grid-cols-12 min-[1200px]:items-start min-[1200px]:gap-afh-6xl min-[1200px]:pt-afh-5xl"
+      >
+        {firstIds.includes("verdict") ? (
+          hasAppellations ? (
+            renderBlock("verdict")
+          ) : (
+            <div className="min-[1200px]:col-span-12">
+              {renderBlock("verdict")}
+            </div>
+          )
+        ) : null}
+        {hasAppellations ? renderBlock("appellations") : null}
+      </div>
+      {firstIds.includes("shorts") ? (
+        <div
+          data-feed-opening="shorts"
+          className="mt-afh-lg min-[1200px]:mt-afh-5xl"
+        >
+          {renderBlock("shorts")}
+        </div>
+      ) : null}
     </>
   );
   const closingIds = plan.desktop.closing.filter((id) =>

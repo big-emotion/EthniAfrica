@@ -84,12 +84,12 @@ export function ShortsBlock({
         </p>
       ) : null}
       <ul
-        className="mt-afh-lg flex list-none gap-afh-lg overflow-x-auto pb-afh-md min-[1200px]:gap-afh-2xl"
+        className="mt-afh-md flex snap-x snap-mandatory scroll-px-afh-lg list-none gap-afh-lg overflow-x-auto pb-afh-md min-[1200px]:mt-afh-lg min-[1200px]:gap-afh-2xl"
         aria-label={resolvedTitle}
       >
         {emptySlot ? (
-          <li className="w-[130px] shrink-0 min-[1200px]:w-[160px]">
-            <div className="flex aspect-[9/16] flex-col justify-between rounded-afh-lg border border-dashed border-afh-border p-afh-lg">
+          <li className="w-[130px] shrink-0 snap-start min-[1200px]:w-[160px]">
+            <div className="flex h-[231px] flex-col justify-between rounded-afh-lg border border-dashed border-afh-border p-afh-lg min-[1200px]:h-[284px]">
               <p className="font-afh-display text-afh-small font-bold uppercase text-afh-text-soft">
                 {emptySlot.name}
               </p>
@@ -115,12 +115,12 @@ export function ShortsBlock({
         {items.map((item) => {
           const duration = durationLabel(item.durationSeconds);
           return (
-            <li key={item.href} className="shrink-0">
+            <li key={item.href} className="shrink-0 snap-start">
               <Link
                 href={item.href}
                 className={`block w-[130px] text-afh-text no-underline ${CHARTER_FOCUS_RING} min-[1200px]:w-[160px]`}
               >
-                <div className="relative aspect-[9/16] overflow-hidden rounded-afh-lg bg-afh-bg-warm">
+                <div className="relative h-[231px] overflow-hidden rounded-afh-lg bg-afh-bg-warm min-[1200px]:h-[284px]">
                   <Image
                     src={item.poster.src}
                     alt={item.poster.alt}
@@ -134,7 +134,7 @@ export function ShortsBlock({
                   </span>
                   <span
                     aria-hidden="true"
-                    className="absolute left-1/2 top-1/2 size-9 -translate-x-1/2 -translate-y-1/2"
+                    className="absolute left-1/2 top-1/2 size-8 -translate-x-1/2 -translate-y-1/2 min-[1200px]:size-9"
                   >
                     <svg viewBox="0 0 36 36" role="presentation">
                       <circle

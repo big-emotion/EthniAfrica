@@ -48,10 +48,10 @@ export function FichesBlock({
     items.length <= 1
       ? "grid-cols-1 min-[1200px]:grid-cols-1"
       : items.length === 2
-        ? "grid-cols-2 min-[1200px]:grid-cols-2"
+        ? "grid-cols-1 min-[430px]:grid-cols-2 min-[1200px]:grid-cols-2"
         : items.length === 3
-          ? "grid-cols-2 min-[1200px]:grid-cols-3"
-          : "grid-cols-2 min-[1200px]:grid-cols-4";
+          ? "grid-cols-1 min-[430px]:grid-cols-2 min-[1200px]:grid-cols-3"
+          : "grid-cols-1 min-[430px]:grid-cols-2 min-[1200px]:grid-cols-4";
 
   return (
     <SearchFeedBlock id="fiches" zone={zone}>

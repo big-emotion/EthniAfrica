@@ -12,6 +12,7 @@ import { describe, expect, it, vi } from "vitest";
 
 import {
   resolveSearchFeedAssetPath,
+  searchFeedAssetRequestPath,
   waitForSearchFeedReady,
 } from "../../../../e2e/support/search-feed-browser";
 
@@ -77,6 +78,20 @@ describe("search-feed browser harness", () => {
         root
       )
     ).toBeNull();
+  });
+
+  // @req REQ-180
+  it("unwraps the original asset path from a Next image optimization request", () => {
+    expect(
+      searchFeedAssetRequestPath(
+        "http://127.0.0.1:3111/_next/image?url=%2Fdocs%2Fdesign%2Fmockups%2Fsearch-feed%2Fposters%2Fmande.jpg&w=384&q=75"
+      )
+    ).toBe("/docs/design/mockups/search-feed/posters/mande.jpg");
+    expect(
+      searchFeedAssetRequestPath(
+        "http://127.0.0.1:3111/public/images/anecdotes/malinke-manden.jpg"
+      )
+    ).toBe("/public/images/anecdotes/malinke-manden.jpg");
   });
 
   // @req REQ-180

@@ -18,7 +18,7 @@ describe("VerdictBlock", () => {
 
     const block = container.querySelector('[data-feed-block="verdict"]');
     expect(block).toHaveAttribute("data-feed-zone", "first");
-    expect(block).toHaveClass("pt-afh-2xl", "min-[1200px]:pt-afh-5xl");
+    expect(block).toHaveClass("pt-afh-2xl", "min-[1200px]:pt-0");
 
     const eyebrow = screen.getByTestId("verdict-eyebrow");
     expect(eyebrow).toHaveTextContent("D’où vient ce nom · Peuple");

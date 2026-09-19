@@ -63,11 +63,20 @@ describe("PlatesBlock", () => {
     const list = screen.getByRole("list", {
       name: "Récits et proverbes",
     });
-    expect(list).toHaveClass("overflow-x-auto");
+    expect(list).toHaveClass(
+      "overflow-x-auto",
+      "snap-x",
+      "snap-mandatory",
+      "scroll-px-afh-lg"
+    );
     const items = Array.from(list.children);
     expect(items[0]).toHaveTextContent("Le nom voyage");
     expect(items[1]).toHaveTextContent("Une graphie devenue commune");
-    expect(items[0]).toHaveClass("w-[250px]", "min-[1200px]:w-[232px]");
+    expect(items[0]).toHaveClass(
+      "w-[250px]",
+      "snap-start",
+      "min-[1200px]:w-[232px]"
+    );
     expect(screen.getByText("Même pays")).toHaveAttribute(
       "data-companion-relation",
       "linked-country"

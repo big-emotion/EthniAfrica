@@ -17,6 +17,7 @@ export interface AppellationsBlockProps {
   forms: readonly AppellationItem[];
   language?: Language;
   originsHref?: string;
+  className?: string;
 }
 
 function visibleForms(
@@ -128,11 +129,16 @@ export function AppellationsBlock({
   forms,
   language = "fr",
   originsHref = "#origins",
+  className,
 }: AppellationsBlockProps) {
   const copy = nameAnswerCopy[language];
 
   return (
-    <SearchFeedBlock id="appellations" zone="first" className="pt-afh-lg">
+    <SearchFeedBlock
+      id="appellations"
+      zone="first"
+      className={cn("pt-afh-lg min-[1200px]:pt-afh-md", className)}
+    >
       <SearchFeedSectionHeading title={copy.appellations} />
       <FormsList
         forms={visibleForms(forms, 3)}

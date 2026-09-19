@@ -18,6 +18,8 @@ import {
   type SearchFeedManifestEntry,
 } from "../../../../e2e/support/search-feed-visual";
 import { resolveSearchFeedAssetPath } from "../../../../e2e/support/search-feed-browser";
+import { searchEnvelopeForFixture } from "../../../../e2e/support/search-feed-fixture";
+import { mapSearchEnvelope } from "@/lib/search/searchEnvelope";
 
 const EXPECTED_CASE_IDS = [
   "mande",
@@ -63,6 +65,22 @@ describe("search-feed case fixtures", () => {
       expect(fixture.production.search.answered, fixture.id).toBe(true);
     }
   });
+
+  // @req REQ-180
+  it.each(["mande", "nigeria"] as const)(
+    "keeps associated peoples in the raw $id browser fixture envelope",
+    (id) => {
+      const fixture = FEED_CASES.find((candidate) => candidate.id === id)!;
+      const source = fixture.production.search.results.find(
+        (result) => result.associatedPeoples
+      )!;
+      const result = mapSearchEnvelope(searchEnvelopeForFixture(fixture)).find(
+        (candidate) => candidate.id === source.id
+      )!;
+
+      expect(result.associatedPeoples).toEqual(source.associatedPeoples);
+    }
+  );
 
   // @req REQ-180
   it("matches one structural fixture to all four generated variants", () => {

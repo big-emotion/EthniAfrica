@@ -214,6 +214,45 @@ describe("mapSearchEnvelope", () => {
     expect(country.snippet).toBe("Côte des dents");
   });
 
+  // @req REQ-180
+  it("projects the peoples declared by country and family search rows", () => {
+    const results = mapSearchEnvelope({
+      data: {
+        countries: [
+          {
+            id: "NGA",
+            nameFr: "Nigeria",
+            content: {
+              majorPeoples: [
+                { peopleId: "PPL_YORUBA", name: "Yoruba" },
+                { peopleId: null, name: "Unresolved people" },
+              ],
+            },
+          },
+        ],
+        families: [
+          {
+            id: "FLG_MANDE",
+            nameFr: "Mandé",
+            content: {
+              associatedPeoples: [
+                { peopleId: "PPL_MALINKE", name: "Malinké" },
+                { peopleId: "PPL_NAMELESS" },
+              ],
+            },
+          },
+        ],
+      },
+    });
+
+    expect(results[0].associatedPeoples).toEqual([
+      { id: "PPL_YORUBA", name: "Yoruba" },
+    ]);
+    expect(results[1].associatedPeoples).toEqual([
+      { id: "PPL_MALINKE", name: "Malinké" },
+    ]);
+  });
+
   // @req REQ-002
   it("returns nothing rather than throwing on the legacy flat-array shape", () => {
     expect(mapSearchEnvelope({ data: [{ id: "PPL_BETE" }] })).toEqual([]);

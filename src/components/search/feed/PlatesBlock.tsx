@@ -84,12 +84,12 @@ export function PlatesBlock({
       />
       <ul
         aria-label={resolvedTitle}
-        className="mt-afh-lg flex list-none items-stretch gap-afh-lg overflow-x-auto pb-afh-md min-[1200px]:gap-afh-2xl"
+        className="mt-afh-lg flex snap-x snap-mandatory scroll-px-afh-lg list-none items-stretch gap-afh-lg overflow-x-auto pb-afh-md min-[1200px]:gap-afh-2xl"
       >
         {items.map((item) => (
           <li
             key={`${item.type}-${item.id}`}
-            className="w-[250px] shrink-0 min-[1200px]:w-[232px]"
+            className="w-[250px] shrink-0 snap-start min-[1200px]:w-[232px]"
           >
             <article className="flex h-full flex-col overflow-hidden rounded-afh-lg border border-afh-border bg-afh-surface text-afh-text">
               {item.type === "anecdote" ? (

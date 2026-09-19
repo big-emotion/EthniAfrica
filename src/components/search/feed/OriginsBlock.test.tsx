@@ -34,8 +34,17 @@ describe("OriginsBlock", () => {
     );
 
     const list = screen.getByRole("list");
-    expect(list).toHaveClass("overflow-x-auto", "min-[1200px]:grid");
-    expect(screen.getAllByRole("listitem")[0]).toHaveClass("w-[290px]");
+    expect(list).toHaveClass(
+      "overflow-x-auto",
+      "snap-x",
+      "snap-mandatory",
+      "scroll-px-afh-lg",
+      "min-[1200px]:grid"
+    );
+    expect(screen.getAllByRole("listitem")[0]).toHaveClass(
+      "w-[min(290px,100%)]",
+      "snap-start"
+    );
     expect(screen.getByRole("heading", { level: 2 })).toHaveTextContent(
       "D’où elles viennent"
     );
