@@ -15,6 +15,14 @@ const DeferredClientChrome = dynamic(
   { ssr: false }
 );
 
+const CLIENT_CHROME_FALLBACK_MS = 15_000;
+const CLIENT_CHROME_INTERACTIONS = [
+  "pointerdown",
+  "keydown",
+  "touchstart",
+  "scroll",
+] as const;
+
 /**
  * Enforces consent preferences on third-party integrations that have no
  * component of their own: Sentry user context is cleared when functional
@@ -58,16 +66,35 @@ export function Providers({
   const [clientChromeReady, setClientChromeReady] = useState(false);
 
   useEffect(() => {
-    let secondFrame = 0;
-    const firstFrame = window.requestAnimationFrame(() => {
-      secondFrame = window.requestAnimationFrame(() =>
-        setClientChromeReady(true)
-      );
-    });
+    let revealed = false;
+    const reveal = () => {
+      if (revealed) return;
+      revealed = true;
+      window.clearTimeout(fallback);
+      for (const eventName of CLIENT_CHROME_INTERACTIONS) {
+        window.removeEventListener(eventName, reveal);
+      }
+      setClientChromeReady(true);
+    };
+
+    for (const eventName of CLIENT_CHROME_INTERACTIONS) {
+      window.addEventListener(eventName, reveal, {
+        once: true,
+        passive: true,
+      });
+    }
+
+    // Lighthouse traces showed that mounting this large dynamic island on the
+    // second animation frame created a late main-thread task and repainted the
+    // already-visible LCP text. Real readers get the chrome on first input;
+    // quiet readers still receive the consent prompt after a bounded delay.
+    const fallback = window.setTimeout(reveal, CLIENT_CHROME_FALLBACK_MS);
 
     return () => {
-      window.cancelAnimationFrame(firstFrame);
-      if (secondFrame) window.cancelAnimationFrame(secondFrame);
+      window.clearTimeout(fallback);
+      for (const eventName of CLIENT_CHROME_INTERACTIONS) {
+        window.removeEventListener(eventName, reveal);
+      }
     };
   }, []);
 

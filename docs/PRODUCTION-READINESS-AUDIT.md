@@ -1,12 +1,12 @@
 # EthniAfrica — Production Readiness Audit
 
 **Audit date:** 2026-09-19<br>
-**Audited checkout:** `origin/recette` at `2d5064f7f` plus the remediation listed in this report<br>
+**Audited checkout:** `origin/recette` at `2d5064f7f` plus PR #1174 remediation<br>
 **Application version:** `4.12.0`<br>
 **Overall score:** **8.2 / 10**<br>
 **Release verdict:** **CONDITIONAL GO.** The production foundation and the recette database are
-operational. Merge or release remains conditional on the required CI checks for the remediation
-commit; the optional 29-route Lighthouse matrix is still the main residual risk.
+operational. Required product checks are green on PR #1174; the optional 29-route Lighthouse
+matrix is still the main residual risk.
 
 ## 1. Scope and method
 
@@ -26,32 +26,33 @@ The remediation was implemented test-first and kept deliberately narrow:
 - update migration, recovery, and Source Tier audit doctrine;
 - make both protected branches strict, admin-enforced, and dependent on the same nine checks.
 
-| Check                  | Outcome | Evidence                                                                                      |
-| ---------------------- | ------- | --------------------------------------------------------------------------------------------- |
-| `make check`           | PASS    | Full local gate completed on the remediated checkout                                          |
-| Lint                   | PASS    | Zero errors; 37 non-blocking warnings; scoped cache at `package.json:49`                      |
-| Typecheck / format     | PASS    | Included in `make check`                                                                      |
-| Unit tests             | PASS    | 9,603 pass, 21 skip; streaming and query-count regressions included                           |
-| Coverage               | PASS    | 86.93% statements, 80.66% branches, 90.12% functions, 87.98% lines                            |
-| Production build       | PASS    | Next.js compiled, typechecked, and generated 46 pages                                         |
-| Dead-code ratchet      | PASS    | 0 new findings; production ceilings remain three files and one dependency                     |
-| Dependency audit       | WARN    | Six moderate; zero high; zero critical                                                        |
-| RLS coverage           | PASS    | 47/47 live tables covered                                                                     |
-| AFRIK validator        | PASS    | 57/57 checks; zero errors                                                                     |
-| Editorial rules        | PASS    | Zero errors; known warnings remain within ratchets                                            |
-| Database/source parity | PASS    | Exact equality for all seven synchronized entity/join classes                                 |
-| Migration state        | PASS    | Recette and production: 93 applied, 0 pending, 0 orphaned, 0 drifted                          |
-| Required CI            | PASS    | Latest completed CI, data, editorial, OpenAPI, axe, E2E, and canonical Lighthouse gates green |
-| Expanded Lighthouse    | OPEN    | Run `35440731116` cleared appellations; five fiche routes and compare remain over budget      |
+| Check                  | Outcome | Evidence                                                                                         |
+| ---------------------- | ------- | ------------------------------------------------------------------------------------------------ |
+| `make check`           | PASS    | Full local gate completed on the remediated checkout                                             |
+| Lint                   | PASS    | Zero errors; 37 non-blocking warnings; scoped cache at `package.json:49`                         |
+| Typecheck / format     | PASS    | Included in `make check`                                                                         |
+| Unit tests             | PASS    | 9,605 pass, 21 skip; streaming, query-count, and deferred-chrome regressions included            |
+| Coverage               | PASS    | 86.93% statements, 80.66% branches, 90.12% functions, 87.98% lines                               |
+| Production build       | PASS    | Next.js compiled, typechecked, and generated 46 pages                                            |
+| Dead-code ratchet      | PASS    | 0 new findings; production ceilings remain three files and one dependency                        |
+| Dependency audit       | WARN    | Six moderate; zero high; zero critical                                                           |
+| RLS coverage           | PASS    | 47/47 live tables covered                                                                        |
+| AFRIK validator        | PASS    | 57/57 checks; zero errors                                                                        |
+| Editorial rules        | PASS    | Zero errors; known warnings remain within ratchets                                               |
+| Database/source parity | PASS    | Exact equality for all seven synchronized entity/join classes                                    |
+| Migration state        | PASS    | Recette and production: 93 applied, 0 pending, 0 orphaned, 0 drifted                             |
+| Required CI            | PASS    | Latest completed CI, data, editorial, OpenAPI, axe, E2E, and canonical Lighthouse gates green    |
+| Expanded Lighthouse    | OPEN    | Run `35442544721` cleared people LCP; family, links, one country, and compare remain over budget |
 
 ## 2. The five canonical questions
 
 ### 2.1 Is the project ready for production?
 
 **Conditionally yes.** The deployed release, both migration ledgers, recette corpus parity, security
-controls, required CI, and local quality gate are healthy. The remediation itself still needs to be
-committed and exercised by the required checks. The optional expanded Lighthouse matrix should
-also pass before treating the performance work as proven on every representative route.
+controls, required CI, and local quality gate are healthy. PR #1174 passes every required product
+check; its Claude review failure is an external quota condition and is not merge-blocking. The
+optional expanded Lighthouse matrix should also pass before treating the performance work as
+proven on every representative route.
 
 ### 2.2 Is the AFRIK editorial surface sound?
 
@@ -142,8 +143,8 @@ waive the requirement that the remediation commit pass its own remote checks.
   editorial rules, dependency audit, axe-core, and French 430 px Playwright smoke.
 - **Accepted constraint:** Approval count is zero because the repository is currently maintained by
   one person. Pull requests are still mandatory and administrators cannot bypass the gates.
-- **P2:** Full 29-route Lighthouse run `35440731116` completed red. The required four-route gate is
-  green; the database-round-trip remediation still needs its own remote revision.
+- **P2:** Full 29-route Lighthouse run `35442544721` completed red. The required four-route gate is
+  green; the late global-client-chrome remediation still needs its own remote revision.
 
 ### Domain 4 — Correctness & tests
 
@@ -195,12 +196,13 @@ waive the requirement that the remediation commit pass its own remote checks.
 
 - **Resolved:** The required four-route Lighthouse gate is green and required on both protected
   branches. Axe-core and full E2E are also green.
-- **P1 D9-1:** Expanded run `35440731116` proved the route-streaming correction on appellations,
-  which now passes. Five data-backed fiche routes remained narrowly over their LCP budgets: French
-  people 6.548 s, French family 6.701 s, links 6.719 s, English people 6.665 s, and English family
-  6.771 s. Links also scored 0.63 against a 0.73 performance budget. Compare exceeded its maximum
-  potential FID budget by 12 ms (212 ms against 200 ms). Trace evidence attributed roughly 93–94%
-  of the fiche LCP to render delay while the route awaited secondary database reads.
+- **P1 D9-1:** Expanded run `35442544721` proved that the database-round-trip correction moved both
+  people fiches under their LCP budget and improved links from a 0.63 to 0.72 performance score and
+  from 6.719 s to 6.355 s LCP. Remaining failures were French family at 6.807 s, links at 6.355 s,
+  English country at 6.818 s, English family at 6.688 s, and compare maximum potential FID at 205 ms
+  in French and 203 ms in English. Trace evidence found a shared 205–230 ms dynamic-chunk task at
+  roughly 5.4–6.5 s; the page content itself was ready around 1.2 s, but mounting global client
+  chrome repainted the already-visible LCP text late.
 - **Remediated; remote measurement pending:** Responsive page spacing now stays in CSS, removing the hydration shift
   that delayed text LCP. Fiche WebGL loads only after the reader activates the interactive map,
   while a static Africa map remains above the fold. Transient anecdote images load lazily
@@ -213,8 +215,10 @@ waive the requirement that the remediation commit pass its own remote checks.
   second PostgREST query; family and people reads start concurrently; and relationship derivation
   no longer repeats two sourced-neighbor queries already de-duplicated by the service. The links
   route also starts its independent ego-network read with the fiche read. Query-count and ordering
-  tests cover these changes. Their data-backed result awaits the next remote matrix because the
-  local Supabase project was not reachable from the audit environment.
+  tests cover these changes. Global interaction chrome now loads on the reader's first pointer,
+  keyboard, touch, or scroll input, with a 15-second fallback for a quiet reader, instead of
+  creating a late task on the second animation frame. The final client-chrome result awaits the next
+  remote matrix because the local Supabase project was not reachable from the audit environment.
 - **Resolved:** Core Web Vitals are collected through Sentry after consent. The prior report's
   “no RUM” statement was incorrect.
 
@@ -312,7 +316,7 @@ intentional deny-all stores. No RLS P0 exists.
 | Full E2E                     | PASS   | Latest run executed tests and completed successfully  |
 | Mobile smoke                 | PASS   | French 430 px required on both protected branches     |
 | Core Web Vitals              | PASS   | Consent-aware Sentry collection                       |
-| Expanded 29-route Lighthouse | OPEN   | Appellations fixed; latest query fix not yet measured |
+| Expanded 29-route Lighthouse | OPEN   | People LCP fixed; late-client-chrome fix awaits proof |
 
 The local performance changes preserve mobile-first layout and improve competition for first paint;
 they are not presented as a measured remote win until their own CI revision runs.
