@@ -1,0 +1,72 @@
+"use client";
+
+import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
+import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
+import { cn } from "@/lib/utils";
+import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
+import type { Language } from "@/types/shared";
+
+export type FeedLensId = "all" | "shorts" | "images" | "quiz" | "fiches";
+
+export interface FeedLens {
+  id: FeedLensId;
+  label: string;
+  count?: number;
+}
+
+export interface LensesBlockProps {
+  language?: Language;
+  lenses: readonly FeedLens[];
+  active: FeedLensId;
+  onChange: (id: FeedLensId) => void;
+}
+
+/** Controlled content filters that remain reachable on narrow screens. */
+// @req REQ-180
+export function LensesBlock({
+  language = "fr",
+  lenses,
+  active,
+  onChange,
+}: LensesBlockProps) {
+  return (
+    <SearchFeedBlock
+      as="nav"
+      id="lenses"
+      zone="first"
+      ariaLabel={searchFeedCopy[language].filters.label}
+      className="mt-afh-lg flex flex-nowrap gap-afh-md overflow-x-auto overflow-y-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+    >
+      {lenses.map((lens) => {
+        const selected = lens.id === active;
+        return (
+          <button
+            key={lens.id}
+            type="button"
+            aria-pressed={selected}
+            onClick={() => onChange(lens.id)}
+            className={cn(
+              "inline-flex min-h-11 shrink-0 items-center gap-afh-xs rounded-afh-full border px-afh-2xl text-afh-caption font-bold leading-[var(--afh-leading-caption)]",
+              CHARTER_FOCUS_RING,
+              selected
+                ? "border-transparent bg-afh-text text-afh-bg"
+                : "border-afh-border bg-afh-surface text-afh-text"
+            )}
+          >
+            <span>{lens.label}</span>
+            {lens.count !== undefined ? (
+              <span
+                className={cn(
+                  "font-semibold",
+                  selected ? "text-afh-bg" : "text-afh-text-soft"
+                )}
+              >
+                {lens.count}
+              </span>
+            ) : null}
+          </button>
+        );
+      })}
+    </SearchFeedBlock>
+  );
+}

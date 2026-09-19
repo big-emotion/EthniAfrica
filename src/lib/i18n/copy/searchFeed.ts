@@ -24,6 +24,19 @@ export interface SearchFeedCopy {
   };
   wideningNote: string;
   seeAll: string;
+  labels: {
+    anecdote: string;
+    proverb: string;
+    photoCredit: string;
+    generatedImage: string;
+    generatedWith: string;
+    source: string;
+    discoveries: string;
+    noShortYet: string;
+    playWithName: string;
+    allQuestions: string;
+    fichesSubtitle: string;
+  };
   filters: {
     label: string;
     all: string;
@@ -60,6 +73,19 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
     },
     wideningNote: "Around this name — related context, not the same name",
     seeAll: "See all",
+    labels: {
+      anecdote: "Story",
+      proverb: "Proverb",
+      photoCredit: "Image",
+      generatedImage: "Generated image — an interpretation",
+      generatedWith: "Generated with",
+      source: "Source",
+      discoveries: "Discoveries",
+      noShortYet: "No short yet",
+      playWithName: "Play with this name",
+      allQuestions: "All questions",
+      fichesSubtitle: "Go deeper with each entry and all of its sources.",
+    },
     filters: {
       label: "Filter this result feed",
       all: "All",
@@ -93,6 +119,20 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
     },
     wideningNote: "Autour de ce nom — un contexte lié, pas le même nom",
     seeAll: "Tout voir",
+    labels: {
+      anecdote: "Anecdote",
+      proverb: "Proverbe",
+      photoCredit: "Image",
+      generatedImage: "Image générée — une interprétation",
+      generatedWith: "Générée avec",
+      source: "Source",
+      discoveries: "Découvertes",
+      noShortYet: "Pas encore de short",
+      playWithName: "Joue avec ce nom",
+      allQuestions: "Toutes les questions",
+      fichesSubtitle:
+        "Pour aller au fond : chaque fiche, avec toutes ses sources.",
+    },
     filters: {
       label: "Filtrer ce fil de résultats",
       all: "Tout",

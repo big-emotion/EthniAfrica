@@ -4,7 +4,6 @@ import * as React from "react";
 import { CheckCircle2, XCircle } from "lucide-react";
 
 import { LazySourceChainSheet } from "@/components/source-transparency/SourceChainSheet.lazy";
-import { SOURCE_TIER_LABELS } from "@/lib/glossaire/vocabularies";
 import { toSourceTier } from "@/types/sources";
 import { cn } from "@/lib/utils";
 import { quizCopy } from "@/lib/i18n/copy/quiz";
@@ -14,11 +13,10 @@ import type {
 } from "@/api/v2/schemas/quiz";
 import { Button } from "@/components/ui/button";
 import type { Language } from "@/types/shared";
+import { SourceStandingBadge } from "@/components/sources/SourceStandingBadge";
 
 // @req REQ-103
 export const QUIZ_REVEAL_MIN_HEIGHT_CLASS = "min-h-[22rem]";
-
-const TIER_BADGE_LABELS = SOURCE_TIER_LABELS.fr;
 
 function optionLabel(option: QuizOptionValue): string {
   return typeof option === "string" ? option : option.autonym;
@@ -39,8 +37,18 @@ function usePrefersReducedMotion(): boolean {
   return reduced;
 }
 
+export type QuizAnswerRevealQuestion = Pick<
+  QuizSessionQuestionView,
+  | "promptFr"
+  | "optionsFr"
+  | "correctOption"
+  | "explanationFr"
+  | "source"
+  | "assertionId"
+>;
+
 interface QuizAnswerRevealProps {
-  question: QuizSessionQuestionView;
+  question: QuizAnswerRevealQuestion;
   isCorrect: boolean;
   isLastQuestion: boolean;
   onNext: () => void;
@@ -120,9 +128,7 @@ export const QuizAnswerReveal = ({
       <div className="flex items-center gap-2 border-t border-afh-border pt-3 text-afh-small text-afh-text-soft">
         <span>{question.source.title}</span>
         {question.source.year ? <span>· {question.source.year}</span> : null}
-        <span className="rounded-full bg-afh-bg-warm px-2 py-0.5 text-afh-caption font-medium">
-          {TIER_BADGE_LABELS[tier]}
-        </span>
+        <SourceStandingBadge standing={tier} language={language} />
       </div>
 
       <button

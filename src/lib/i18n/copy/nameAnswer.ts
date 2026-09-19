@@ -41,6 +41,7 @@ export interface NameAnswerCopy {
   /** The searched form, marked in the list without being promoted. */
   yourSearch: string;
   selfGivenMark: string;
+  problematicMark: string;
   /** Said when the atlas holds no such name at all. */
   unknownName: string;
   unknownNameBody: string;
@@ -87,6 +88,7 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     further: "Going further",
     yourSearch: "your search",
     selfGivenMark: "the name they give themselves",
+    problematicMark: "contested form",
     unknownName: "We do not know this name.",
     unknownNameBody:
       "That is not an answer: it is a confession. If this name is yours, or one of a people, a language or a place you know, tell us. That is how the atlas grows.",
@@ -122,6 +124,7 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     further: "Aller plus loin",
     yourSearch: "votre recherche",
     selfGivenMark: "le nom qu’ils se donnent",
+    problematicMark: "forme contestée",
     unknownName: "Nous ne connaissons pas ce nom.",
     unknownNameBody:
       "Ce n’est pas une réponse : c’est un aveu. Si ce nom est le vôtre, ou celui d’un peuple, d’une langue ou d’un lieu que vous connaissez, dites-le-nous. C’est comme ça que l’atlas grandit.",

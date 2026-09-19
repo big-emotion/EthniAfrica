@@ -51,6 +51,22 @@ describe("QuizAnswerReveal (Epic 10, Story 10.9, ETNI-1134, FR68/FR71)", () => {
     ).toBeInTheDocument();
   });
 
+  // @req REQ-145 REQ-180
+  it("localises the source standing in an English embedded reveal", () => {
+    render(
+      <QuizAnswerReveal
+        language="en"
+        question={QUESTION}
+        isCorrect
+        isLastQuestion={false}
+        onNext={vi.fn()}
+      />
+    );
+
+    expect(screen.getByText("Official")).toBeInTheDocument();
+    expect(screen.queryByText("Officielle")).not.toBeInTheDocument();
+  });
+
   // @req REQ-103 FR68
   it("uses --afh-terracotta and never --afh-error for an incorrect verdict", () => {
     render(

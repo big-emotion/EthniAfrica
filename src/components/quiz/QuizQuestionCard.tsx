@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useRef } from "react";
+
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { cn } from "@/lib/utils";
 import { quizCopy } from "@/lib/i18n/copy/quiz";
@@ -10,13 +12,21 @@ import type {
 import { Button } from "@/components/ui/button";
 import type { Language } from "@/types/shared";
 
+export type QuizQuestionCardPresentation = "default" | "embedded";
+
+export type QuizQuestionCardView = Pick<
+  QuizSessionQuestionView,
+  "templateId" | "promptFr" | "stimulusFr" | "optionsFr"
+>;
+
 interface QuizQuestionCardProps {
-  question: QuizSessionQuestionView;
+  question: QuizQuestionCardView;
   selectedOption: number | null;
   onSelectOption: (optionIndex: number) => void;
-  onValidate: () => void;
+  onValidate: (optionIndex?: number) => void;
   language: Language;
   className?: string;
+  presentation?: QuizQuestionCardPresentation;
 }
 
 function optionLabel(option: QuizOptionValue): string {
@@ -45,6 +55,7 @@ const STIMULUS_ID = "quiz-stimulus";
  * navigation + Space selection over the options. No timer, no auto-advance.
  */
 // @req REQ-103 FR67
+// @req REQ-180
 export const QuizQuestionCard = ({
   question,
   selectedOption,
@@ -52,12 +63,30 @@ export const QuizQuestionCard = ({
   onValidate,
   language,
   className,
+  presentation = "default",
 }: QuizQuestionCardProps) => {
   const t = quizCopy[language];
+  const isEmbedded = presentation === "embedded";
+  const selectedOptionRef = useRef(selectedOption);
+  const pointerSelectionRef = useRef(false);
+
+  useEffect(() => {
+    selectedOptionRef.current = selectedOption;
+  }, [selectedOption]);
 
   return (
     <form
       className={cn("space-y-4", className)}
+      onKeyDown={(event) => {
+        if (
+          isEmbedded &&
+          event.key === "Enter" &&
+          selectedOptionRef.current !== null
+        ) {
+          event.preventDefault();
+          onValidate(selectedOptionRef.current);
+        }
+      }}
       onSubmit={(event) => {
         event.preventDefault();
         if (selectedOption !== null) onValidate();
@@ -101,9 +130,26 @@ export const QuizQuestionCard = ({
           two-line answer's radio aligned with its first line.
         */}
         <RadioGroup
+          onPointerDownCapture={() => {
+            pointerSelectionRef.current = true;
+            window.setTimeout(() => {
+              pointerSelectionRef.current = false;
+            }, 0);
+          }}
           value={selectedOption !== null ? String(selectedOption) : undefined}
-          onValueChange={(value) => onSelectOption(Number(value))}
-          className="grid grid-cols-1 gap-3 min-[430px]:grid-cols-2"
+          onValueChange={(value) => {
+            const optionIndex = Number(value);
+            selectedOptionRef.current = optionIndex;
+            onSelectOption(optionIndex);
+            if (isEmbedded && pointerSelectionRef.current) {
+              onValidate(optionIndex);
+            }
+            pointerSelectionRef.current = false;
+          }}
+          className={cn(
+            "grid grid-cols-1 gap-3",
+            !isEmbedded && "min-[430px]:grid-cols-2"
+          )}
         >
           {question.optionsFr.map((option, index) => (
             <label
@@ -121,13 +167,15 @@ export const QuizQuestionCard = ({
           ))}
         </RadioGroup>
       </fieldset>
-      <Button
-        type="submit"
-        disabled={selectedOption === null}
-        className="w-full"
-      >
-        {t.validate}
-      </Button>
+      {isEmbedded ? null : (
+        <Button
+          type="submit"
+          disabled={selectedOption === null}
+          className="w-full"
+        >
+          {t.validate}
+        </Button>
+      )}
     </form>
   );
 };
