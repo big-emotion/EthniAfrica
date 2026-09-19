@@ -129,6 +129,88 @@ describe("the subject of a name search", () => {
     expect(selectNameSubject([mande], "mandingue")).toEqual([]);
   });
 
+  // Bassa is three peoples, filed « Bassa », « Bassa du Cameroun » and « Bassa
+  // Nge ». Matching the filed name exactly found one and listed the other two as
+  // ordinary results, so the page answered a question about three peoples as
+  // if it concerned one. A name that begins with the searched word, as a word,
+  // is a people answering to that name too — Bassari, which only begins with
+  // the same letters, is not.
+  // @req REQ-178
+  it("asks which one when other entries of the same kind carry the name as their first word", () => {
+    const subjects = selectNameSubject(
+      [
+        people("PPL_BASSA", "Bassa"),
+        people("PPL_BASSA_CAM", "Bassa du Cameroun"),
+        people("PPL_BASSA_NIGERIA", "Bassa Nge"),
+        people("PPL_BASSARI", "Bassari"),
+      ],
+      "bassa"
+    );
+
+    expect(subjects.map((entity) => entity.id)).toEqual([
+      "PPL_BASSA",
+      "PPL_BASSA_CAM",
+      "PPL_BASSA_NIGERIA",
+    ]);
+  });
+
+  // A parenthesis marks a fiche split by country, not a second people: « Fang
+  // (Gabon) » is the Fang. The page groups those at display, and counting them
+  // as subjects would ask the reader to choose between a people and itself.
+  // @req REQ-178
+  it("does not treat a people's country split as another people", () => {
+    const subjects = selectNameSubject(
+      [people("PPL_FANG", "Fang"), people("PPL_FANG_GABON", "Fang (Gabon)")],
+      "fang"
+    );
+
+    expect(subjects.map((entity) => entity.id)).toEqual(["PPL_FANG"]);
+  });
+
+  // `peopleGroupId` is the corpus declaring « these fiches are one people,
+  // split » — the signal the result list already groups on. An entry that
+  // shares it with the exact match is that people, whatever its filed name
+  // looks like, and asking the reader to choose between them would contradict
+  // the grouped card directly below.
+  // @req REQ-178
+  it("does not ask the reader to choose between fiches the corpus declares one people", () => {
+    const kongo = (id: string, name: string): SearchResult => ({
+      ...people(id, name),
+      peopleGroupId: "PGRP_KONGO",
+    });
+    const subjects = selectNameSubject(
+      [kongo("PPL_KONGO", "Kongo"), kongo("PPL_KONGO_SUD", "Kongo du Sud")],
+      "kongo"
+    );
+
+    expect(subjects.map((entity) => entity.id)).toEqual(["PPL_KONGO"]);
+  });
+
+  // « mandé » answers exactly to the family; « Mande du Sud » is a people. A
+  // widening across kinds would turn every family into a disambiguation with
+  // the peoples named after it, which is a relation, not an ambiguity.
+  // @req REQ-178
+  it("widens only within the kind the exact match belongs to", () => {
+    const subjects = selectNameSubject(
+      [
+        { type: "languageFamily", id: "FLG_MANDE", name: "Mandé" },
+        people("PPL_MANDE_DU_SUD", "Mande du Sud"),
+      ],
+      "mandé"
+    );
+
+    expect(subjects.map((entity) => entity.id)).toEqual(["FLG_MANDE"]);
+  });
+
+  // With no exact match there is nothing to widen from: a query that names no
+  // entry does not acquire subjects because longer names start with it.
+  // @req REQ-178
+  it("does not widen when nothing carries the name exactly", () => {
+    expect(
+      selectNameSubject([people("PPL_BASSA_CAM", "Bassa du Cameroun")], "bassa")
+    ).toEqual([]);
+  });
+
   // @req REQ-178
   it("has no subject when nothing carries the name", () => {
     expect(selectNameSubject([people("PPL_FANG", "Fang")], "kirdi")).toEqual(

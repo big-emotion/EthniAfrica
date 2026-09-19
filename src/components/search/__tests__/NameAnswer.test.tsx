@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 
 import { NameAnswer } from "@/components/search/NameAnswer";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
+import { getPeopleRoute } from "@/lib/routing";
 import type { NamingProjection } from "@/lib/search/naming";
 import type { SearchResult } from "@/types/afrik-frontend";
 
@@ -152,6 +153,28 @@ describe("the answer a result page gives to a name", () => {
 
     expect(screen.getByText(fr.disambiguation)).toBeInTheDocument();
     expect(screen.getByText(fr.conviction)).toBeInTheDocument();
+  });
+
+  // The question « Lequel cherchez-vous ? » is only honest if the reader can
+  // answer it. Each entry used to be plain text, which was survivable while
+  // two of three Bassa still sat in the result list below as cards; once all
+  // three are subjects the list is empty, and the page asked the reader to
+  // choose with nothing to click.
+  // @req REQ-178
+  it("lets the reader answer the question it asks, one link per entity", () => {
+    render(
+      <NameAnswer
+        language="fr"
+        query="bassa"
+        subjects={[subject("Bassa"), subject("Bassa du Cameroun")]}
+      />
+    );
+
+    const links = screen.getAllByRole("link", { name: /^Bassa/ });
+    expect(links.map((link) => link.getAttribute("href"))).toEqual([
+      getPeopleRoute("fr", "PPL_BASSA"),
+      getPeopleRoute("fr", "PPL_BASSA DU CAMEROUN"),
+    ]);
   });
 
   // @req REQ-178
