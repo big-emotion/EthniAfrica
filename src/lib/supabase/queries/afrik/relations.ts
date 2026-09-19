@@ -5,8 +5,8 @@
  * neighbor fiche data + confidence in a bounded number of queries — no
  * per-edge queries (NFR3). getDerivedLinguisticLinks derives
  * linguistic-proximity links from the AFRIK hierarchy (shared
- * languageFamilyId) via one indexed query, excluding peoples already linked
- * by a sourced relation (FR73). Every function returns an empty
+ * languageFamilyId) via one indexed query. The service composer removes
+ * sourced duplicates (FR73). Every function returns an empty
  * array/Map — never null, never throws — on error or when nothing matches.
  */
 
@@ -205,50 +205,10 @@ export async function getRelationsForPeople(
 }
 
 /**
- * Ids of peoples already linked to pplId by a sourced relation (side A or
- * B), via two lean `.eq()` queries on the indexed people_id_a/people_id_b
- * columns — not the full sourced-relation hydration.
- */
-async function getSourcedNeighborIds(
-  supabase: ReturnType<typeof createServerClient>,
-  pplId: string
-): Promise<string[]> {
-  const [aSide, bSide] = await Promise.all([
-    supabase
-      .from("afrik_people_relations")
-      .select("people_id_a, people_id_b")
-      .eq("people_id_a", pplId),
-    supabase
-      .from("afrik_people_relations")
-      .select("people_id_a, people_id_b")
-      .eq("people_id_b", pplId),
-  ]);
-
-  if (aSide.error || bSide.error) {
-    logger.error(
-      "relations.getSourcedNeighborIds failed",
-      aSide.error || bSide.error
-    );
-    return [];
-  }
-
-  const rows = [
-    ...((aSide.data || []) as Array<{
-      people_id_a: string;
-      people_id_b: string;
-    }>),
-    ...((bSide.data || []) as Array<{
-      people_id_a: string;
-      people_id_b: string;
-    }>),
-  ];
-
-  return uniqueStrings(rows.map((r) => otherSideId(r as RelationRow, pplId)));
-}
-
-/**
  * Same-family peoples via one indexed query on languageFamilyId, excluding
- * pplId itself and any people already linked to it by a sourced relation.
+ * pplId itself. The ego-network service removes sourced duplicates after its
+ * two independent reads settle; repeating the relation lookup here added a
+ * full network round trip without changing the public result.
  * Never null, never throws.
  */
 // @req REQ-093
@@ -278,20 +238,11 @@ export async function getDerivedLinguisticLinks(
     .language_family_id;
   if (!familyId) return [];
 
-  const excludeIds = uniqueStrings([
-    pplId,
-    ...(await getSourcedNeighborIds(supabase, pplId)),
-  ]);
-
-  let query = supabase
+  const query = supabase
     .from("afrik_peoples")
     .select("id, name_main, language_family_id")
     .eq("language_family_id", familyId)
     .neq("id", pplId);
-
-  if (excludeIds.length > 0) {
-    query = query.not("id", "in", `(${excludeIds.join(",")})`);
-  }
 
   const { data, error } = await query.order("name_main").limit(limit);
 

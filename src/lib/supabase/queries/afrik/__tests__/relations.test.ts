@@ -3,8 +3,8 @@
  *
  * getRelationsForPeople/getRelationsMap batch-fetch sourced relations (no
  * per-edge queries, NFR3); getDerivedLinguisticLinks derives same-family
- * peoples from the AFRIK hierarchy via one indexed query, excluding peoples
- * already linked by a sourced relation (FR73).
+ * peoples from the AFRIK hierarchy via one indexed query. The service layer
+ * removes sourced duplicates after both independent reads settle (FR73).
  */
 
 import { describe, it, expect, vi, beforeEach } from "vitest";
@@ -70,8 +70,7 @@ function relationRow(
 /**
  * Builds a Supabase mock whose `.from(table)` routing supports:
  *  - "afrik_people_relations": `.select().in("people_id_a"|"people_id_b", ids)`
- *    resolving from a queue (one entry per call), plus `.select().eq(...)`
- *    for the lean self-relations lookup used by getDerivedLinguisticLinks.
+ *    resolving from a queue (one entry per call).
  *  - "afrik_peoples": `.select().in("id", ids)` for neighbor hydration, and
  *    `.select().eq("id", pplId).single()` / the family-scoped chain
  *    (`.eq("language_family_id", ...).neq().order().limit()` [+ `.not()`]).
@@ -385,37 +384,30 @@ describe("relations query layer", () => {
     });
 
     // @req REQ-093
-    it("excludes peoples already linked by a sourced relation", async () => {
-      const { peoples } = buildSupabaseMock({
+    it("leaves sourced de-duplication to the ego-network service without extra relation reads", async () => {
+      const { fromSpy, peoples } = buildSupabaseMock({
         peopleSingleResult: {
           data: { id: "PPL_A", language_family_id: "FLG_X" },
           error: null,
         },
-        relationsEqQueue: [
-          {
-            data: [{ people_id_a: "PPL_A", people_id_b: "PPL_SOURCED" }],
-            error: null,
-          },
-          { data: [], error: null },
-        ],
         familyResult: {
-          data: [{ id: "PPL_D", name_main: "D", language_family_id: "FLG_X" }],
+          data: [
+            {
+              id: "PPL_SOURCED",
+              name_main: "Sourced",
+              language_family_id: "FLG_X",
+            },
+          ],
           error: null,
         },
       });
 
       const result = await getDerivedLinguisticLinks("PPL_A", 24);
 
-      // Asserts the exclusion ids are actually computed from the sourced
-      // relation and passed into the `.not("id", "in", ...)` filter — not
-      // just that the (mocked) family result happens to omit them.
-      expect(peoples.notSpy).toHaveBeenCalledWith(
-        "id",
-        "in",
-        expect.stringContaining("PPL_SOURCED")
-      );
-      expect(result.some((link) => link.neighbor.id === "PPL_SOURCED")).toBe(
-        false
+      expect(fromSpy).not.toHaveBeenCalledWith("afrik_people_relations");
+      expect(peoples.notSpy).not.toHaveBeenCalled();
+      expect(result.map((link) => link.neighbor.id)).toEqual(
+        expect.arrayContaining(["PPL_SOURCED"])
       );
     });
 

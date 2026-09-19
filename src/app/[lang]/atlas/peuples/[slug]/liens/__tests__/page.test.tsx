@@ -61,6 +61,7 @@ vi.mock("@/components/layout/PageLayout", () => ({
 // ---------------------------------------------------------------------------
 import { notFound, redirect } from "next/navigation";
 import PeopleLinksPage, { generateMetadata } from "../page";
+import { resolveAsyncServerComponents } from "@/test/resolveAsyncServerComponents";
 import { RELATIONS } from "@/components/fiche/__tests__/ficheContextFixtures";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { getPeopleLinksRoute, getPeopleRoute } from "@/lib/routing";
@@ -69,7 +70,7 @@ async function renderPage(slug: string, lang = "fr") {
   const ui = await PeopleLinksPage({
     params: Promise.resolve({ lang, slug }),
   });
-  return render(ui as React.ReactElement);
+  return render((await resolveAsyncServerComponents(ui)) as React.ReactElement);
 }
 
 async function callPage(slug: string, lang = "fr") {
@@ -94,6 +95,17 @@ describe("/[lang]/peuples/[slug]/liens page", () => {
       nameFr: "Niger-Congo",
       content: {},
     });
+  });
+
+  // @req REQ-097 FR72
+  it("starts the relation read early without delaying the named page", async () => {
+    mockGetEgoNetwork.mockReturnValue(new Promise(() => {}));
+
+    await PeopleLinksPage({
+      params: Promise.resolve({ lang: "fr", slug: "PPL_YORUBA" }),
+    });
+
+    expect(mockGetEgoNetwork).toHaveBeenCalledWith("PPL_YORUBA");
   });
 
   // @req REQ-140

@@ -122,6 +122,7 @@ vi.mock("@/components/source-transparency/PinnedVersionBanner", () => ({
 // ---------------------------------------------------------------------------
 
 import FamillesSlugPage from "../[slug]/page";
+import { resolveAsyncServerComponents } from "@/test/resolveAsyncServerComponents";
 import { redirect } from "next/navigation";
 import { getFamilyRoute, getLocalizedRoute } from "@/lib/routing";
 
@@ -184,7 +185,7 @@ async function renderFamillesPage(slug: string, lang = "fr") {
   const ui = await FamillesSlugPage({
     params: Promise.resolve({ lang, slug }),
   });
-  return render(ui as React.ReactElement);
+  return render((await resolveAsyncServerComponents(ui)) as React.ReactElement);
 }
 
 /** For the paths that never reach a render: notFound() and redirect() throw. */
@@ -233,6 +234,16 @@ describe("/[lang]/familles/[slug] page", () => {
     mockGetFamilyTreeSkeleton.mockResolvedValue(BANTU_TREE);
     mockGetPeoplesByLanguageFamily.mockResolvedValue([]);
     mockGetPeoplesByIds.mockResolvedValue([]);
+  });
+
+  // @req REQ-019
+  it("returns the fiche head before starting secondary footprint reads", async () => {
+    await FamillesSlugPage({
+      params: Promise.resolve({ lang: "fr", slug: "FLG_BANTU" }),
+    });
+
+    expect(mockGetPeoplesByLanguageFamily).not.toHaveBeenCalled();
+    expect(mockGetPeoplesByIds).not.toHaveBeenCalled();
   });
 
   afterEach(() => {

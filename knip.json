@@ -15,6 +15,7 @@
     "social/tools/**/*.mjs!",
     "e2e/**/*.ts",
     "src/test/server-only-stub.ts",
+    "src/test/resolveAsyncServerComponents.tsx",
     "src/lib/search/resultGrammar.ts!",
     "src/lib/atlas/assets/generate-*.mjs!",
     "supabase/functions/**/index.ts!",

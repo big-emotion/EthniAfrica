@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
+import { Suspense } from "react";
 
 import {
   isFicheKnownAbsent,
@@ -52,6 +53,112 @@ export const revalidate = 3600;
 interface PageParams {
   lang: string;
   slug: string;
+}
+
+async function FamilyLiveContent({
+  family,
+  familyDetail,
+  language,
+}: {
+  family: NonNullable<Awaited<ReturnType<typeof loadLanguageFamilyFiche>>>;
+  familyDetail: ReturnType<typeof mapLanguageFamilyDetail>;
+  language: Language;
+}) {
+  const [familyMemberPeoples, familyLanguages, provenance] = await Promise.all([
+    getPeoplesByLanguageFamily(family.id),
+    getAfrikLanguagesByFamily(family.id).catch(() => []),
+    readProvenanceCensus("language-family", family.id),
+  ]);
+  const footprintProvenance = resolveFootprintProvenance(
+    familyMemberPeoples.length
+  );
+  const memberPeoples =
+    footprintProvenance === "member-peoples"
+      ? familyMemberPeoples
+      : await getPeoplesByIds(declaredAssociatedPeopleIds(family));
+  const familyOverlay = buildFamilyFootprintOverlay(
+    memberPeoples.map((person) => person.currentCountries),
+    memberPeoples.length
+  );
+  const peopleNamesByCountry: Record<string, string[]> = {};
+  for (const person of memberPeoples) {
+    for (const countryId of new Set(person.currentCountries)) {
+      (peopleNamesByCountry[countryId] ??= []).push(person.nameMain);
+    }
+  }
+  const familyTargetFacts = buildFamilyTargetFacts({
+    language,
+    familyNameFr: familyDetail.nameFr,
+    memberPeopleCount: memberPeoples.length,
+    peopleNamesByCountry,
+    countryNamesFr: Object.fromEntries(
+      (familyOverlay?.countries ?? []).map((country) => [
+        country.countryId,
+        getAdmin0Name(country.countryId, "fr") ?? country.countryId,
+      ])
+    ),
+  });
+  const copy = familyCopy[language];
+  const atlasFamilyName =
+    language === "en"
+      ? familyDetail.nameEn || familyDetail.nameFr
+      : familyDetail.nameFr;
+
+  return (
+    <>
+      <FicheJsonLd
+        graph={await ficheJsonLdFor("language-family", language, family.id)}
+      />
+      <FicheSequence
+        language={language}
+        entityType="language-family"
+        entityId={family.id}
+        entityName={familyDetail.nameFr}
+        globe={
+          <FicheHeroBand>
+            <FicheAtlasGlobeIsland
+              language={language}
+              overlay={familyOverlay}
+              targetPicker="list"
+              facts={familyTargetFacts}
+              legend={
+                <FamilyFootprintLegend
+                  provenance={footprintProvenance}
+                  language={language}
+                />
+              }
+              missingMessage={copy.atlas.missingFootprint(atlasFamilyName)}
+            />
+          </FicheHeroBand>
+        }
+        record={
+          <LanguageFamilyDetailViewV2
+            language={language}
+            family={family}
+            footprintCountries={familyOverlay?.countries ?? []}
+            memberPeoples={memberPeoples}
+            memberPeopleCount={memberPeoples.length}
+            footprintProvenance={footprintProvenance}
+            provenance={provenance}
+            onward={
+              <FicheOnward
+                from="language-family"
+                language={language}
+                links={buildOnwardLinks(
+                  familyOnwardGroups({
+                    languages: familyLanguages,
+                    peoples: rankMemberPeoplesByReach(memberPeoples),
+                    language,
+                  }),
+                  language
+                )}
+              />
+            }
+          />
+        }
+      />
+    </>
+  );
 }
 
 // @req REQ-091
@@ -142,111 +249,7 @@ export default async function FamillesSlugPage({
   if (!family) {
     notFound();
   }
-
-  const familyMemberPeoples = await getPeoplesByLanguageFamily(parsed.slug);
-
-  // Afro-asiatique is a macro-family: its peoples all carry a sub-family's id
-  // (Berbère, Tchadique, Couchitique, Sémitique), so the query above returns
-  // nothing and the footprint would collapse to the missing-overlay
-  // placeholder. The fiche's own `associatedPeoples` is the fallback, and
-  // deliberately not the union of the sub-families — see
-  // src/lib/familyFootprintSource.ts for why the wider area is the wrong one.
-  const footprintProvenance = resolveFootprintProvenance(
-    familyMemberPeoples.length
-  );
-  const memberPeoples =
-    footprintProvenance === "member-peoples"
-      ? familyMemberPeoples
-      : await getPeoplesByIds(declaredAssociatedPeopleIds(family));
-
-  // The globe's footprint is the union of currentCountries across the peoples
-  // resolved above (REQ-116 AC4) — never family.distribution.distributionByCountry.
-  //
-  // Not because that field is empty: every FLG_*.json in dataset/source
-  // declares one, and the recette database reads them all empty only because
-  // the loader drops the field. It is passed over because it is too thin to be
-  // a footprint — Afro-asiatique declares four countries where its peoples
-  // reach twenty-one — and the charter (§4) asks the atlas to reconstruct the
-  // area from the peoples rather than restate an under-declared one.
   const familyDetail = mapLanguageFamilyDetail(family);
-  const familyOverlay = buildFamilyFootprintOverlay(
-    memberPeoples.map((person) => person.currentCountries),
-    memberPeoples.length
-  );
-
-  // Which member peoples each country actually carries, so the panel can name
-  // them rather than only counting them — a count a reader cannot check is a
-  // number they have to take on trust, which is the opposite of the posture.
-  const peopleNamesByCountry: Record<string, string[]> = {};
-  for (const person of memberPeoples) {
-    for (const countryId of new Set(person.currentCountries)) {
-      (peopleNamesByCountry[countryId] ??= []).push(person.nameMain);
-    }
-  }
-
-  // Precomputed here, on the server, and handed over as data. AtlasGlobe is a
-  // client component: a resolver function cannot cross that boundary.
-  const familyTargetFacts = buildFamilyTargetFacts({
-    language: lang as Language,
-    familyNameFr: familyDetail.nameFr,
-    memberPeopleCount: memberPeoples.length,
-    peopleNamesByCountry,
-    countryNamesFr: Object.fromEntries(
-      (familyOverlay?.countries ?? []).map((country) => [
-        country.countryId,
-        getAdmin0Name(country.countryId, "fr") ?? country.countryId,
-      ])
-    ),
-  });
-
-  /**
-   * The family's own languages, which no other part of this route needs.
-   *
-   * `generalInfo.branches` looks like the answer and is not: it holds prose
-   * labels ("East Bantu", "Mbam-Bubi") that no field ties to a language, so it
-   * can name a branch but never address one. Caught rather than awaited bare —
-   * a fiche must not 500 over the block that closes it.
-   */
-  const familyLanguages = await getAfrikLanguagesByFamily(parsed.slug).catch(
-    () => []
-  );
-  const provenance = await readProvenanceCensus("language-family", family.id);
-
-  const recordView = (
-    <LanguageFamilyDetailViewV2
-      language={lang as Language}
-      family={family}
-      footprintCountries={familyOverlay?.countries ?? []}
-      memberPeoples={memberPeoples}
-      memberPeopleCount={memberPeoples.length}
-      footprintProvenance={footprintProvenance}
-      provenance={provenance}
-      onward={
-        <FicheOnward
-          from="language-family"
-          language={lang as Language}
-          links={buildOnwardLinks(
-            familyOnwardGroups({
-              languages: familyLanguages,
-              // Widest reach first: the peoples the family gathers across the
-              // most countries are the ones a reader has most chance of
-              // having heard of, and the ranking is the fiche's own.
-              peoples: rankMemberPeoplesByReach(memberPeoples),
-              language: lang as Language,
-            }),
-            lang as Language
-          )}
-        />
-      }
-    />
-  );
-
-  // Live version (revalidate = 3600 at segment level)
-  const copy = familyCopy[lang as Language];
-  const atlasFamilyName =
-    lang === "en"
-      ? familyDetail.nameEn || familyDetail.nameFr
-      : familyDetail.nameFr;
 
   return (
     <PageLayout
@@ -263,37 +266,13 @@ export default async function FamillesSlugPage({
         </FicheHeroHead>
       }
     >
-      <FicheJsonLd
-        graph={await ficheJsonLdFor(
-          "language-family",
-          lang as Language,
-          parsed.slug
-        )}
-      />
-      <FicheSequence
-        language={lang as Language}
-        entityType="language-family"
-        entityId={parsed.slug}
-        entityName={familyDetail.nameFr}
-        globe={
-          <FicheHeroBand>
-            <FicheAtlasGlobeIsland
-              language={lang as Language}
-              overlay={familyOverlay}
-              targetPicker="list"
-              facts={familyTargetFacts}
-              legend={
-                <FamilyFootprintLegend
-                  provenance={footprintProvenance}
-                  language={lang as Language}
-                />
-              }
-              missingMessage={copy.atlas.missingFootprint(atlasFamilyName)}
-            />
-          </FicheHeroBand>
-        }
-        record={recordView}
-      />
+      <Suspense fallback={<div aria-busy="true" className="min-h-[60vh]" />}>
+        <FamilyLiveContent
+          family={family}
+          familyDetail={familyDetail}
+          language={lang as Language}
+        />
+      </Suspense>
     </PageLayout>
   );
 }

@@ -28,7 +28,12 @@ describe("root client payload", () => {
     expect(providers).toContain(
       'import("@/components/system/DeferredClientChrome")'
     );
-    expect(providers).toContain("requestAnimationFrame");
+    expect(providers).not.toContain("requestAnimationFrame");
+    expect(providers).toContain("pointerdown");
+    expect(providers).toContain("keydown");
+    expect(providers).toContain("touchstart");
+    expect(providers).toContain("scroll");
+    expect(providers).toContain("15_000");
   });
 
   // @req REQ-112

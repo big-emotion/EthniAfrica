@@ -4,9 +4,8 @@
  * Composes a people's ego network from exactly two query-layer calls
  * (FR73): sourced relations (getRelationsForPeople) and derived
  * linguistic-proximity links (getDerivedLinguisticLinks). The
- * sourced/derived split is guaranteed by construction — derived is filtered
- * against the sourced neighbor set here, independent of query-layer
- * correctness.
+ * sourced/derived split is guaranteed here after both independent reads
+ * settle, so the query layer does not repeat the relation lookup.
  */
 
 import {
@@ -30,6 +29,7 @@ export interface EgoNetwork {
   derived: DerivedLinguisticLink[];
 }
 
+// @req REQ-097
 export class PeopleNotFoundError extends Error {
   constructor(pplId: string) {
     super(`People not found: ${pplId}`);
@@ -43,6 +43,7 @@ export class PeopleNotFoundError extends Error {
  * sourced excluded. Never returns null; never throws for an unknown or
  * relation-less people (both collections default to empty arrays).
  */
+// @req REQ-093
 export async function getEgoNetwork(
   pplId: string,
   derivedLimit: number = DEFAULT_DERIVED_LIMIT
@@ -68,6 +69,7 @@ export async function getEgoNetwork(
  * (by design — Story 11.6); this wrapper adds that check for the route layer
  * without changing getEgoNetwork's existing contract.
  */
+// @req REQ-097
 export async function getEgoNetworkOrNotFound(
   pplId: string,
   derivedLimit: number = DEFAULT_DERIVED_LIMIT
@@ -81,6 +83,7 @@ export async function getEgoNetworkOrNotFound(
 /**
  * Paginated, filterable relation records for `GET /v2/relations`.
  */
+// @req REQ-097
 export async function listRelations(
   filters: ListRelationRecordsFilters
 ): Promise<{ data: PublicRelationRecord[]; total: number }> {
@@ -91,6 +94,7 @@ export async function listRelations(
  * Single relation detail for `GET /v2/relations/{id}`. Returns null for an
  * unknown id — the handler maps that to 404 NOT_FOUND.
  */
+// @req REQ-097
 export async function getRelationById(
   id: string
 ): Promise<PublicRelationRecord | null> {

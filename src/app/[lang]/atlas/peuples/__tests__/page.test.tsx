@@ -127,6 +127,7 @@ vi.mock("@/components/source-transparency/PinnedVersionBanner", () => ({
 import { render } from "@testing-library/react";
 import { notFound, redirect } from "next/navigation";
 import PeoplesSlugPage, { generateMetadata } from "../[slug]/page";
+import { resolveAsyncServerComponents } from "@/test/resolveAsyncServerComponents";
 import {
   RELATIONS,
   YORUBA_FRAGMENTATION,
@@ -141,7 +142,7 @@ async function renderPage(slug: string, lang = "fr") {
   const ui = await PeoplesSlugPage({
     params: Promise.resolve({ lang, slug }),
   });
-  return render(ui as React.ReactElement);
+  return render((await resolveAsyncServerComponents(ui)) as React.ReactElement);
 }
 
 async function callPage(slug: string, lang = "fr") {
@@ -224,6 +225,17 @@ describe("/[lang]/peuples/[slug] page", () => {
     mockGetPeopleFragmentation.mockResolvedValue(null);
     mockGetEgoNetwork.mockResolvedValue({ sourced: [], derived: [] });
     mockListPublicOralNarratives.mockResolvedValue({ data: [], total: 0 });
+  });
+
+  // @req REQ-019
+  it("returns the fiche head before starting secondary dossier reads", async () => {
+    await PeoplesSlugPage({
+      params: Promise.resolve({ lang: "fr", slug: "PPL_YORUBA" }),
+    });
+
+    expect(mockGetPeopleNamesDossier).not.toHaveBeenCalled();
+    expect(mockGetPeopleFragmentation).not.toHaveBeenCalled();
+    expect(mockGetEgoNetwork).not.toHaveBeenCalled();
   });
 
   afterEach(() => {
