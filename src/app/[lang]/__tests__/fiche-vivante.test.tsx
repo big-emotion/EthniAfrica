@@ -30,6 +30,7 @@ import {
 } from "@/components/fiche/__tests__/ficheContextFixtures";
 import type { PublicOralNarrative } from "@/api/v2/services/oralNarratives";
 import type { LanguageFamily } from "@/types/afrik";
+import { resolveAsyncServerComponents } from "@/test/resolveAsyncServerComponents";
 
 // ---------------------------------------------------------------------------
 // Boundaries — Supabase-backed services, the legacy detail views, page chrome.
@@ -375,7 +376,7 @@ async function renderFiche(route: FicheRouteUnderTest, slug: string) {
   const page = await route.page({
     params: Promise.resolve({ lang: "fr", slug }),
   });
-  return render(page as ReactElement);
+  return render((await resolveAsyncServerComponents(page)) as ReactElement);
 }
 
 function renderLiveFiche(route: FicheRouteUnderTest) {

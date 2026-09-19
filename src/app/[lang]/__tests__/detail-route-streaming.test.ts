@@ -15,14 +15,18 @@ describe("detail route streaming", () => {
   });
 
   // @req REQ-046
-  it("does not nest detail views in a second Suspense boundary", () => {
+  it("streams each fiche head before its secondary dossier reads", () => {
     const countryPage = readSource("src/app/[lang]/atlas/pays/[slug]/page.tsx");
     const peoplePage = readSource(
       "src/app/[lang]/atlas/peuples/[slug]/page.tsx"
     );
 
-    expect(countryPage).not.toContain("<Suspense");
-    expect(peoplePage).not.toContain("<Suspense");
+    for (const source of [countryPage, peoplePage]) {
+      expect(source).toContain("<Suspense");
+      expect(source.indexOf("heroHead={")).toBeLessThan(
+        source.lastIndexOf("<Suspense")
+      );
+    }
   });
 
   // The country dossier used to be a client view that re-fetched a fiche the

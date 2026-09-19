@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
+import { Suspense } from "react";
 
 import { PageLayout } from "@/components/layout/PageLayout";
 import { RETIRED_PEOPLE_IDS } from "@/lib/afrik/retiredPeopleIds";
@@ -19,6 +20,34 @@ export const revalidate = 3600;
 interface PageParams {
   lang: string;
   slug: string;
+}
+
+async function PeopleRelationsContent({
+  people,
+  language,
+}: {
+  people: NonNullable<Awaited<ReturnType<typeof getPeopleById>>>;
+  language: Language;
+}) {
+  const egoNetwork = await getEgoNetwork(people.id);
+  const items = transformRelationsToListItems(
+    egoNetwork.sourced,
+    egoNetwork.derived
+  );
+  const copy = relationsCopy[language].page;
+
+  return (
+    <div className="container mx-auto max-w-4xl px-4 py-8">
+      <h1 className="text-afh-h2 font-semibold mt-4 mb-6 text-afh-text">
+        {copy.title(people.nameMain)}
+      </h1>
+      <RelationsListWithSourceSheet
+        items={items}
+        center={{ id: people.id, nameMain: people.nameMain }}
+        language={language}
+      />
+    </div>
+  );
 }
 
 // @req REQ-097 FR72
@@ -86,19 +115,11 @@ export default async function PeopleLinksPage({
     redirect(getPeopleLinksRoute(language, successorId));
   }
 
-  const [people, egoNetwork] = await Promise.all([
-    getPeopleById(slug),
-    getEgoNetwork(slug),
-  ]);
+  const people = await getPeopleById(slug);
 
   if (!people) {
     notFound();
   }
-
-  const items = transformRelationsToListItems(
-    egoNetwork.sourced,
-    egoNetwork.derived
-  );
 
   return (
     <PageLayout
@@ -106,16 +127,9 @@ export default async function PeopleLinksPage({
       sectionName={copy.section}
       trailLabel={people.nameMain}
     >
-      <div className="container mx-auto max-w-4xl px-4 py-8">
-        <h1 className="text-afh-h2 font-semibold mt-4 mb-6 text-afh-text">
-          {copy.title(people.nameMain)}
-        </h1>
-        <RelationsListWithSourceSheet
-          items={items}
-          center={{ id: people.id, nameMain: people.nameMain }}
-          language={language}
-        />
-      </div>
+      <Suspense fallback={<div aria-busy="true" className="min-h-48" />}>
+        <PeopleRelationsContent people={people} language={language} />
+      </Suspense>
     </PageLayout>
   );
 }

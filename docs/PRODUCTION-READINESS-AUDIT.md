@@ -30,8 +30,8 @@ The remediation was implemented test-first and kept deliberately narrow:
 | `make check`           | PASS    | Full local gate completed on the remediated checkout                                          |
 | Lint                   | PASS    | Zero errors; 37 non-blocking warnings; scoped cache at `package.json:49`                      |
 | Typecheck / format     | PASS    | Included in `make check`                                                                      |
-| Unit tests             | PASS    | Full suite green after the two remediation-contract fixes                                     |
-| Coverage               | PASS    | 9,586 pass, 21 skip; 86.93% statements, 80.66% branches, 90.12% functions, 87.98% lines       |
+| Unit tests             | PASS    | 9,602 pass, 21 skip; streaming regressions included                                           |
+| Coverage               | PASS    | 86.93% statements, 80.66% branches, 90.12% functions, 87.98% lines                            |
 | Production build       | PASS    | Next.js compiled, typechecked, and generated 46 pages                                         |
 | Dead-code ratchet      | PASS    | 0 new findings; production ceilings remain three files and one dependency                     |
 | Dependency audit       | WARN    | Six moderate; zero high; zero critical                                                        |
@@ -41,7 +41,7 @@ The remediation was implemented test-first and kept deliberately narrow:
 | Database/source parity | PASS    | Exact equality for all seven synchronized entity/join classes                                 |
 | Migration state        | PASS    | Recette and production: 93 applied, 0 pending, 0 orphaned, 0 drifted                          |
 | Required CI            | PASS    | Latest completed CI, data, editorial, OpenAPI, axe, E2E, and canonical Lighthouse gates green |
-| Expanded Lighthouse    | OPEN    | Latest 29-route run was red; the local root causes are corrected but not remotely measured    |
+| Expanded Lighthouse    | OPEN    | Latest 29-route run improved fiche performance materially; streaming fix awaits remote proof  |
 
 ## 2. The five canonical questions
 
@@ -141,8 +141,8 @@ waive the requirement that the remediation commit pass its own remote checks.
   editorial rules, dependency audit, axe-core, and French 430 px Playwright smoke.
 - **Accepted constraint:** Approval count is zero because the repository is currently maintained by
   one person. Pull requests are still mandatory and administrators cannot bypass the gates.
-- **P2:** The latest full 29-route Lighthouse job completed red. The last completed canonical gate
-  was green; the local remediation still needs its own remote revision.
+- **P2:** The latest full 29-route Lighthouse job completed red. The required four-route gate is
+  green; the route-streaming remediation still needs its own remote revision.
 
 ### Domain 4 — Correctness & tests
 
@@ -194,16 +194,22 @@ waive the requirement that the remediation commit pass its own remote checks.
 
 - **Resolved:** The required four-route Lighthouse gate is green and required on both protected
   branches. Axe-core and full E2E are also green.
-- **P1 D9-1:** The latest expanded 29-route run (`35435495874`) exceeded LCP budgets on
-  appellations, search, links, and the representative French and English country/people/family
-  fiches; the comparator also exceeded its interaction proxy by 5 ms.
+- **P1 D9-1:** Expanded run `35438722703` improved representative fiche performance scores from
+  roughly 0.39–0.43 to 0.69–0.72 after WebGL deferral, but still exceeded LCP budgets on
+  appellations, links, and the representative French and English country/people/family fiches.
+  Trace evidence attributed roughly 93–94% of fiche LCP to render delay while the route awaited
+  secondary database reads.
 - **Remediated locally:** Responsive page spacing now stays in CSS, removing the hydration shift
   that delayed text LCP. Fiche WebGL loads only after the reader activates the interactive map,
   while a static Africa map remains above the fold. Transient anecdote images load lazily
   (`src/components/system/DidYouKnowLoader.tsx:127`); JetBrains Mono no longer preloads
   (`src/app/layout.tsx:40`); global interaction chrome is deferred
   (`src/app/providers.tsx:10-95`); React Query is scoped to its actual consumers
-  (`src/components/QueryProvider.tsx:12`).
+  (`src/components/QueryProvider.tsx:12`). Appellations and the country, people, family, and
+  relationship fiches now stream their stable heading before secondary data and wrap the slower
+  record body in Suspense. A local production run reduced appellations LCP to roughly 4.82 s; the
+  data-backed fiche result awaits the remote matrix because the local Supabase project was not
+  reachable from the audit environment.
 - **Resolved:** Core Web Vitals are collected through Sentry after consent. The prior report's
   “no RUM” statement was incorrect.
 
