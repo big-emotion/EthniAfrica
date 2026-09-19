@@ -1,4 +1,5 @@
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
+import { InlineMarkup } from "@/components/search/feed/InlineMarkup";
 import { SearchFeedEvidenceAction } from "@/components/search/feed/SearchFeedEvidenceAction";
 import { SearchFeedSectionHeading } from "@/components/search/feed/SearchFeedSectionHeading";
 import { SourceStandingBadge } from "@/components/sources/SourceStandingBadge";
@@ -35,7 +36,7 @@ export function ProseBlock({
         <div className="space-y-afh-lg">
           {paragraphs.map((paragraph) => (
             <p key={paragraph} className="text-afh-small text-afh-text">
-              {paragraph}
+              <InlineMarkup text={paragraph} />
             </p>
           ))}
         </div>

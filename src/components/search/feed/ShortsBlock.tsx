@@ -14,6 +14,7 @@ import { SearchFeedSectionHeading } from "@/components/search/feed/SearchFeedSec
 import type { Language } from "@/types/shared";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { formatProductionNameQuestion } from "@/lib/editorial/productionNameQuestion";
+import { cn } from "@/lib/utils";
 
 export type FeedShortItem = SearchCompanionsData["shorts"]["items"][number] & {
   label?: string;
@@ -28,6 +29,7 @@ export interface FeedEmptyShortSlot {
 
 interface ShortsBlockBaseProps {
   items: FeedShortItem[];
+  reviewed?: boolean;
   title?: string;
   subtitle?: string;
   allHref?: string;
@@ -56,6 +58,7 @@ function durationLabel(durationSeconds: number): string {
 // @req REQ-180
 export function ShortsBlock({
   items,
+  reviewed = false,
   title,
   subtitle,
   allHref,
@@ -68,13 +71,27 @@ export function ShortsBlock({
   const resolvedTitle = title ?? copy.shelves.shorts;
 
   return (
-    <SearchFeedBlock id="shorts" zone="first">
+    <SearchFeedBlock
+      id="shorts"
+      zone="first"
+      className={reviewed ? "pt-afh-lg min-[1200px]:pt-afh-5xl" : undefined}
+    >
       <SearchFeedSectionHeading
         title={resolvedTitle}
         subtitle={subtitle}
+        subtitleClassName={reviewed ? "hidden min-[1200px]:block" : undefined}
         action={
           allHref ? (
-            <ActionLink href={allHref}>{copy.seeAll}</ActionLink>
+            reviewed ? (
+              <Link
+                href={allHref}
+                className={`relative text-afh-small font-semibold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] after:absolute after:-inset-y-[10px] after:inset-x-0 ${CHARTER_FOCUS_RING}`}
+              >
+                {copy.seeAll} →
+              </Link>
+            ) : (
+              <ActionLink href={allHref}>{copy.seeAll}</ActionLink>
+            )
           ) : undefined
         }
       />
@@ -84,7 +101,11 @@ export function ShortsBlock({
         </p>
       ) : null}
       <ul
-        className="mt-afh-md flex snap-x snap-mandatory scroll-px-afh-lg list-none gap-afh-lg overflow-x-auto pb-afh-md min-[1200px]:mt-afh-lg min-[1200px]:gap-afh-2xl"
+        className={cn(
+          "flex snap-x snap-mandatory scroll-px-afh-lg list-none gap-afh-lg overflow-x-auto min-[1200px]:mt-afh-lg min-[1200px]:gap-afh-2xl",
+          reviewed ? "mt-[9px]" : "mt-afh-md",
+          !reviewed && "pb-afh-md"
+        )}
         aria-label={resolvedTitle}
       >
         {emptySlot ? (
@@ -112,10 +133,16 @@ export function ShortsBlock({
             </p>
           </li>
         ) : null}
-        {items.map((item) => {
+        {items.map((item, index) => {
           const duration = durationLabel(item.durationSeconds);
           return (
-            <li key={item.href} className="shrink-0 snap-start">
+            <li
+              key={item.href}
+              className={cn(
+                "shrink-0 snap-start",
+                reviewed && index >= 5 && "hidden min-[1200px]:block"
+              )}
+            >
               <Link
                 href={item.href}
                 className={`block w-[130px] text-afh-text no-underline ${CHARTER_FOCUS_RING} min-[1200px]:w-[160px]`}
@@ -124,6 +151,7 @@ export function ShortsBlock({
                   <Image
                     src={item.poster.src}
                     alt={item.poster.alt}
+                    unoptimized={reviewed}
                     width={item.poster.width}
                     height={item.poster.height}
                     sizes="(min-width: 1200px) 160px, 130px"
@@ -150,16 +178,18 @@ export function ShortsBlock({
                     </svg>
                   </span>
                 </div>
-                <p className="mt-afh-md text-afh-caption font-bold">
+                <p className="mt-afh-md text-afh-caption font-bold leading-[var(--afh-leading-caption)]">
                   {formatProductionNameQuestion(item.name, language)}
                 </p>
-                <p className="text-afh-eyebrow uppercase text-afh-text-soft">
+                <p className="text-afh-eyebrow leading-[var(--afh-leading-eyebrow)] text-afh-text-soft">
                   {duration} · {item.label ?? copy.labels.discoveries}
                 </p>
-                <CompanionRelationLabel
-                  match={item.match}
-                  language={language}
-                />
+                {reviewed ? null : (
+                  <CompanionRelationLabel
+                    match={item.match}
+                    language={language}
+                  />
+                )}
               </Link>
             </li>
           );

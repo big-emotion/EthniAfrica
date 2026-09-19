@@ -20,6 +20,7 @@ interface QuizBlockResult {
 
 export interface QuizBlockProps {
   question: CompanionQuizQuestion;
+  reviewed?: boolean;
   selectedOption: number | null;
   onSelectOption: (optionIndex: number) => void;
   onValidate: (optionIndex?: number) => void;
@@ -33,6 +34,7 @@ export interface QuizBlockProps {
 // @req REQ-180
 export function QuizBlock({
   question,
+  reviewed = false,
   selectedOption,
   onSelectOption,
   onValidate,
@@ -59,6 +61,45 @@ export function QuizBlock({
     assertionId: question.assertionId,
   };
 
+  if (reviewed && !result) {
+    return (
+      <SearchFeedBlock id="quiz" zone={zone}>
+        <div className="flex flex-col gap-afh-lg rounded-afh-lg border border-[color:var(--accent)] bg-afh-surface p-afh-2xl">
+          <p className="text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[var(--afh-eyebrow-tracking)] text-[color:var(--accent-ink)]">
+            {copy.labels.playWithName}
+          </p>
+          <p className="font-afh-display text-afh-h3 font-bold leading-[var(--afh-leading-h3)] text-afh-text">
+            {question.prompt}
+          </p>
+          <div className="grid grid-cols-1 gap-afh-md">
+            {question.options.map((option, index) => (
+              <button
+                key={index}
+                type="button"
+                onClick={() => {
+                  onSelectOption(index);
+                  onValidate(index);
+                }}
+                className="min-h-11 rounded-afh-lg border border-afh-border bg-afh-surface px-afh-2xl py-afh-md text-left text-afh-small font-bold leading-[var(--afh-leading-small)] text-afh-text"
+              >
+                {typeof option === "string" ? option : option.autonym}
+              </button>
+            ))}
+          </div>
+          <div className="flex items-center justify-between gap-afh-lg text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
+            <span>{questionCountLabel}</span>
+            <a
+              href={allHref}
+              className="font-bold text-[color:var(--accent-ink)]"
+            >
+              {copy.labels.allQuestions} →
+            </a>
+          </div>
+        </div>
+      </SearchFeedBlock>
+    );
+  }
+
   return (
     <SearchFeedBlock
       id="quiz"
@@ -66,10 +107,12 @@ export function QuizBlock({
       className="rounded-afh-lg border border-[color:var(--accent)] bg-afh-surface p-afh-2xl"
     >
       <div className="mb-afh-lg flex flex-wrap items-center justify-between gap-afh-sm">
-        <p className="text-afh-eyebrow font-semibold uppercase tracking-[var(--afh-eyebrow-tracking)] text-[color:var(--accent-ink)]">
+        <p className="text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[var(--afh-eyebrow-tracking)] text-[color:var(--accent-ink)]">
           {copy.labels.playWithName}
         </p>
-        <CompanionRelationLabel match={question.match} language={language} />
+        {reviewed ? null : (
+          <CompanionRelationLabel match={question.match} language={language} />
+        )}
       </div>
       {result ? (
         <QuizAnswerReveal
@@ -90,9 +133,18 @@ export function QuizBlock({
           presentation="embedded"
         />
       )}
-      <div className="mt-afh-lg flex items-center justify-between gap-afh-lg text-afh-caption text-afh-text-soft">
+      <div className="mt-afh-lg flex items-center justify-between gap-afh-lg text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
         <span>{questionCountLabel}</span>
-        <ActionLink href={allHref}>{copy.labels.allQuestions}</ActionLink>
+        {reviewed ? (
+          <a
+            href={allHref}
+            className="font-bold text-[color:var(--accent-ink)]"
+          >
+            {copy.labels.allQuestions} →
+          </a>
+        ) : (
+          <ActionLink href={allHref}>{copy.labels.allQuestions}</ActionLink>
+        )}
       </div>
     </SearchFeedBlock>
   );

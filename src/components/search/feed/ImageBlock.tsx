@@ -16,8 +16,10 @@ export type FeedGeneratedImageItem =
 
 export interface ImageBlockProps {
   item: FeedGeneratedImageItem;
+  reviewed?: boolean;
   title?: string;
   subtitle?: string;
+  licenceText?: string;
   language?: Language;
   zone?: FeedMovementZone;
 }
@@ -43,8 +45,10 @@ const LICENCE_LABEL = {
 // @req REQ-180
 export function ImageBlock({
   item,
+  reviewed = false,
   title,
   subtitle,
+  licenceText,
   language = "fr",
   zone = "primary",
 }: ImageBlockProps) {
@@ -55,48 +59,80 @@ export function ImageBlock({
     <SearchFeedBlock id="images" zone={zone}>
       <SearchFeedSectionHeading title={resolvedTitle} subtitle={subtitle} />
       <article className="mt-afh-lg w-[300px] max-w-full overflow-hidden rounded-afh-lg border border-afh-border bg-afh-surface">
-        <p className="bg-[color:var(--accent-tint)] px-afh-lg py-afh-md text-afh-caption font-bold text-[color:var(--accent-foreground)]">
+        <p className="bg-[color:var(--accent-tint)] px-afh-lg py-afh-md text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-foreground)]">
           {copy.labels.generatedImage}
         </p>
         <Link
           href={item.href}
-          className={`relative block aspect-[4/5] bg-afh-bg-warm ${CHARTER_FOCUS_RING}`}
+          className={`relative block h-[375px] ${reviewed ? "w-[300px]" : "w-full"} bg-afh-bg-warm ${CHARTER_FOCUS_RING}`}
         >
           <Image
             src={item.image.src}
             alt={item.image.alt}
+            unoptimized={reviewed}
             width={300}
             height={375}
             sizes="300px"
-            className="size-full object-cover"
+            className={
+              reviewed
+                ? "h-[375px] w-[300px] max-w-none object-cover"
+                : "size-full object-cover"
+            }
           />
         </Link>
-        <div className="space-y-afh-md p-afh-2xl">
-          <CompanionRelationLabel match={item.match} language={language} />
-          <h3 className="font-afh-display text-afh-body font-bold text-afh-text">
+        <div
+          className={
+            reviewed
+              ? "flex flex-col gap-afh-md px-afh-2xl pb-afh-2xl pt-afh-lg"
+              : "space-y-afh-md p-afh-2xl"
+          }
+        >
+          {reviewed ? null : (
+            <CompanionRelationLabel match={item.match} language={language} />
+          )}
+          <h3 className="font-afh-display text-afh-body font-bold leading-[1.3] text-afh-text">
             {item.caption}
           </h3>
-          <p className="text-afh-caption text-afh-text-soft">
-            {item.description}
-          </p>
-          <p className="text-afh-caption text-afh-text-soft">
-            {copy.labels.generatedWith} {item.generation.tool} ·{" "}
-            {item.generation.model}
-          </p>
-          <p className="text-afh-caption text-afh-text-soft">
-            {item.image.credit}
-          </p>
-          <div className="flex flex-wrap items-center gap-afh-sm text-afh-caption text-afh-text-soft">
+          {reviewed ? null : (
+            <>
+              <p className="text-afh-caption text-afh-text-soft">
+                {item.description}
+              </p>
+              <p className="text-afh-caption text-afh-text-soft">
+                {copy.labels.generatedWith} {item.generation.tool} ·{" "}
+                {item.generation.model}
+              </p>
+            </>
+          )}
+          {reviewed ? null : (
+            <p className="text-afh-caption text-afh-text-soft">
+              {item.image.credit}
+            </p>
+          )}
+          <div
+            className={
+              reviewed
+                ? "flex items-center gap-afh-md text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft"
+                : "flex flex-wrap items-center gap-afh-md text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft"
+            }
+          >
             <SourceStandingBadge
               standing={item.source.tier}
               language={language}
+              className={
+                reviewed ? "leading-[var(--afh-leading-eyebrow)]" : undefined
+              }
             />
             {item.source.url ? (
               <a
                 href={item.source.url}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex min-h-11 items-center font-semibold text-[color:var(--accent-ink)]"
+                className={
+                  reviewed
+                    ? "font-normal text-afh-text-soft"
+                    : "inline-flex min-h-11 items-center font-semibold text-[color:var(--accent-ink)]"
+                }
               >
                 {item.source.title}
               </a>
@@ -106,16 +142,20 @@ export function ImageBlock({
           </div>
           {item.image.licenceUrl ? (
             <a
-              className="inline-flex min-h-11 items-center font-semibold text-[color:var(--accent-ink)]"
+              className={
+                reviewed
+                  ? "text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft"
+                  : "inline-flex min-h-11 items-center font-semibold text-[color:var(--accent-ink)]"
+              }
               href={item.image.licenceUrl}
               rel="license noreferrer"
               target="_blank"
             >
-              {LICENCE_LABEL[language][item.image.licence]}
+              {licenceText ?? LICENCE_LABEL[language][item.image.licence]}
             </a>
           ) : (
-            <p className="text-afh-caption text-afh-text-soft">
-              {LICENCE_LABEL[language][item.image.licence]}
+            <p className="text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
+              {licenceText ?? LICENCE_LABEL[language][item.image.licence]}
             </p>
           )}
         </div>

@@ -116,6 +116,10 @@ function renderedOwedParts(container: HTMLElement) {
   );
 }
 
+function visibleReviewedCopy(value: string): string {
+  return value.replace(/<[^>]+>/g, "");
+}
+
 // @req REQ-180
 describe("search-feed plan", () => {
   // @req REQ-180
@@ -132,7 +136,15 @@ describe("search-feed plan", () => {
       setDesktop(viewport === "desktop");
       navigation.query = new URLSearchParams({ q: fixture.query }).toString();
       loader.search.mockResolvedValue([]);
-      loader.searchWithLeads.mockResolvedValue(fixture.production.search);
+      loader.searchWithLeads.mockResolvedValue({
+        ...fixture.production.search,
+        counts: {
+          ...fixture.production.search.counts,
+          all:
+            fixture.board.lenses.fiches ?? fixture.production.search.counts.all,
+        },
+        presentation: fixture.board.presentation,
+      });
       loader.loadSearchCompanions.mockResolvedValue(
         fixture.production.companions
       );
@@ -146,6 +158,12 @@ describe("search-feed plan", () => {
       });
 
       expect(renderedOwedParts(container)).toEqual(expected.owedParts);
+      expect(container).toHaveTextContent(
+        visibleReviewedCopy(fixture.board.copy.verdict)
+      );
+      expect(container).toHaveTextContent(
+        visibleReviewedCopy(fixture.board.copy.summary)
+      );
       expect(loader.searchWithLeads).toHaveBeenCalledTimes(1);
       expect(loader.searchWithLeads).toHaveBeenCalledWith(
         fixture.query,

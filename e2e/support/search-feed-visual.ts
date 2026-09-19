@@ -288,6 +288,59 @@ export async function comparePngs(
 }
 
 // @req REQ-180
+export async function createSearchFeedDiffPng(
+  expectedPng: PngInput,
+  actualPng: PngInput
+): Promise<Buffer> {
+  const [expected, actual] = await Promise.all([
+    decodePng(expectedPng),
+    decodePng(actualPng),
+  ]);
+
+  assertExactScreenshotDimensions(expected.info, actual.info);
+
+  const { width, height, channels } = expected.info;
+  const totalPixels = width * height;
+  const diff = Buffer.alloc(totalPixels * 4);
+
+  for (let pixel = 0; pixel < totalPixels; pixel += 1) {
+    const sourceOffset = pixel * channels;
+    const diffOffset = pixel * 4;
+    let different = false;
+    for (let channel = 0; channel < channels; channel += 1) {
+      if (
+        expected.data[sourceOffset + channel] !==
+        actual.data[sourceOffset + channel]
+      ) {
+        different = true;
+        break;
+      }
+    }
+
+    if (different) {
+      diff[diffOffset] = 255;
+      diff[diffOffset + 1] = 0;
+      diff[diffOffset + 2] = 0;
+    } else {
+      const luminance = Math.round(
+        expected.data[sourceOffset] * 0.2126 +
+          expected.data[sourceOffset + 1] * 0.7152 +
+          expected.data[sourceOffset + 2] * 0.0722
+      );
+      const muted = Math.round(luminance * 0.35 + 166);
+      diff[diffOffset] = muted;
+      diff[diffOffset + 1] = muted;
+      diff[diffOffset + 2] = muted;
+    }
+    diff[diffOffset + 3] = 255;
+  }
+
+  return sharp(diff, { raw: { width, height, channels: 4 } })
+    .png()
+    .toBuffer();
+}
+
+// @req REQ-180
 export async function assertPixelParity(
   expectedPng: PngInput,
   actualPng: PngInput,

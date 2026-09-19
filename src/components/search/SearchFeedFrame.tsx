@@ -22,7 +22,7 @@ export function SearchFeedFrame({ children, language }: SearchFeedFrameProps) {
       <div className="bg-afh-bg pt-afh-6xl">
         <div
           data-feed-root=""
-          className="afh-shell afh-accent-ocre min-w-0 w-full max-w-full overflow-x-clip bg-afh-bg"
+          className="afh-shell afh-accent-ocre min-w-0 w-full max-w-full overflow-x-clip bg-afh-bg subpixel-antialiased"
         >
           {children}
         </div>

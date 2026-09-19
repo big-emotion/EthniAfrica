@@ -15,6 +15,7 @@ export interface FeedSilence {
 
 export interface OwedBlockProps {
   language?: Language;
+  reviewed?: boolean;
   thin?: boolean;
   silences?: FeedSilence[];
   conviction: { title: string; body: string };
@@ -25,6 +26,7 @@ export interface OwedBlockProps {
 // @req REQ-180
 export function OwedBlock({
   language = "fr",
+  reviewed = false,
   thin = false,
   silences = [],
   conviction,
@@ -56,10 +58,10 @@ export function OwedBlock({
                   key={silence.id ?? silence.title}
                   className="rounded-afh-lg border border-dashed border-afh-border p-afh-2xl"
                 >
-                  <p className="text-afh-small font-bold text-afh-text-soft">
+                  <p className="text-afh-small font-bold leading-[var(--afh-leading-small)] text-afh-text-soft">
                     {silence.title}
                   </p>
-                  <p className="mt-afh-xs text-afh-caption text-afh-text-soft">
+                  <p className="mt-afh-xs text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
                     {silence.detail}
                   </p>
                 </li>
@@ -72,10 +74,16 @@ export function OwedBlock({
             data-feed-part="conviction"
             className="rounded-afh-lg bg-afh-bg-warm p-afh-2xl"
           >
-            <p className="text-afh-small font-bold text-afh-text">
+            <p className="text-afh-small font-bold leading-[var(--afh-leading-small)] text-afh-text">
               {conviction.title}
             </p>
-            <p className="mt-afh-xs text-afh-small text-afh-text">
+            <p
+              className={
+                reviewed
+                  ? "mt-afh-xs text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text min-[1200px]:text-afh-small min-[1200px]:leading-[var(--afh-leading-small)]"
+                  : "mt-afh-xs text-afh-small text-afh-text"
+              }
+            >
               {conviction.body}
             </p>
           </div>
@@ -83,10 +91,10 @@ export function OwedBlock({
             data-feed-part="invitation"
             className="rounded-afh-lg border border-[color:var(--accent)] bg-afh-surface p-afh-2xl"
           >
-            <p className="text-afh-small font-bold text-afh-text">
+            <p className="text-afh-small font-bold leading-[var(--afh-leading-small)] text-afh-text">
               {invitation.title}
             </p>
-            <p className="mt-afh-xs text-afh-small text-afh-text">
+            <p className="mt-afh-xs text-afh-small leading-[var(--afh-leading-small)] text-afh-text">
               {invitation.body}
             </p>
             <SearchFeedContributionAction

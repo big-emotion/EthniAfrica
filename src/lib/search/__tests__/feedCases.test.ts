@@ -20,6 +20,7 @@ import {
 import { resolveSearchFeedAssetPath } from "../../../../e2e/support/search-feed-browser";
 import { searchEnvelopeForFixture } from "../../../../e2e/support/search-feed-fixture";
 import { mapSearchEnvelope } from "@/lib/search/searchEnvelope";
+import { searchFeedPresentationSchema } from "@/lib/search/searchFeedPresentation";
 
 const EXPECTED_CASE_IDS = [
   "mande",
@@ -67,20 +68,118 @@ describe("search-feed case fixtures", () => {
   });
 
   // @req REQ-180
-  it.each(["mande", "nigeria"] as const)(
-    "keeps associated peoples in the raw $id browser fixture envelope",
-    (id) => {
-      const fixture = FEED_CASES.find((candidate) => candidate.id === id)!;
-      const source = fixture.production.search.results.find(
-        (result) => result.associatedPeoples
-      )!;
-      const result = mapSearchEnvelope(searchEnvelopeForFixture(fixture)).find(
-        (candidate) => candidate.id === source.id
-      )!;
+  it("keeps the visible fiche cards separate from truthful search results", () => {
+    const expectedResultCounts = [1, 1, 1, 3, 1, 1, 1, 1, 0, 0];
 
-      expect(result.associatedPeoples).toEqual(source.associatedPeoples);
+    expect(
+      FEED_CASES.map(({ production }) => production.search.results.length)
+    ).toEqual(expectedResultCounts);
+    for (const fixture of FEED_CASES) {
+      expect(
+        fixture.production.search.results.some(({ name }) =>
+          name.startsWith("Related fixture")
+        ),
+        fixture.id
+      ).toBe(false);
+      expect(
+        mapSearchEnvelope(searchEnvelopeForFixture(fixture)).some(({ name }) =>
+          name.startsWith("Related fixture")
+        ),
+        fixture.id
+      ).toBe(false);
     }
-  );
+  });
+
+  // @req REQ-180
+  it("adapts every authoring case to the strict feed presentation contract", () => {
+    for (const fixture of FEED_CASES) {
+      const authoring = FEED_BOARD_AUTHORING.find(
+        ({ id }) => id === fixture.id
+      )!;
+      const presentation = searchFeedPresentationSchema.parse(
+        fixture.board.presentation
+      );
+
+      expect(presentation.answer, fixture.id).toMatchObject({
+        name: authoring.name,
+        verdict: authoring.verdict,
+        summary: authoring.sub,
+      });
+      expect(
+        presentation.appellations?.forms.map(({ form, qualifier }) => [
+          form,
+          qualifier ?? null,
+        ]),
+        fixture.id
+      ).toEqual(authoring.forms?.map(([form, qualifier]) => [form, qualifier]));
+      expect(
+        presentation.fiches?.items.map(({ kind, name, meta }) => [
+          kind,
+          name,
+          meta,
+        ]),
+        fixture.id
+      ).toEqual(authoring.fiches);
+      expect(presentation.shorts?.title, fixture.id).toBe("Les shorts");
+      expect(fixture.board.shorts.title, fixture.id).toBe("Les shorts");
+      expect(presentation.plates?.title, fixture.id).toBe(
+        authoring.plates ? "Anecdotes et proverbes" : undefined
+      );
+      expect(presentation.quiz?.questionCountLabel, fixture.id).toBe(
+        authoring.quiz?.count
+      );
+      expect(presentation.images?.licenceText, fixture.id).toBe(
+        authoring.image?.licence
+      );
+    }
+  });
+
+  // @req REQ-180
+  it("projects exact board plates, quizzes and generated images as companions", () => {
+    for (const fixture of FEED_CASES) {
+      const authoring = FEED_BOARD_AUTHORING.find(
+        ({ id }) => id === fixture.id
+      )!;
+      const companions = fixture.production.companions;
+      const projectedPlates = [
+        ...companions.anecdotes.items.map(({ headline }) => headline),
+        ...companions.proverbs.items.map(({ text }) => text),
+      ];
+      const authoredPlates = (authoring.plates ?? []).map((plate) =>
+        plate.type === "anecdote" ? plate.headline : plate.text
+      );
+
+      expect(projectedPlates.sort(), fixture.id).toEqual(authoredPlates.sort());
+      expect(companions.quiz.item?.prompt, fixture.id).toBe(authoring.quiz?.q);
+      expect(companions.quiz.item?.options, fixture.id).toEqual(
+        authoring.quiz?.options
+      );
+      expect(companions.images.items[0]?.caption, fixture.id).toBe(
+        authoring.image?.caption
+      );
+      expect(companions.images.items[0]?.source.title, fixture.id).toBe(
+        authoring.image?.source
+      );
+      expect(
+        companions.shorts.items.map(({ label }) => label ?? null),
+        fixture.id
+      ).toEqual(authoring.shorts.items.map(([, , label]) => label));
+      expect(
+        companions.anecdotes.items.map(({ about }) => about),
+        fixture.id
+      ).toEqual(
+        (authoring.plates ?? [])
+          .filter((plate) => plate.type === "anecdote")
+          .map((plate) => plate.about)
+      );
+      expect(fixture.board.presentation.plates?.order, fixture.id).toEqual(
+        authoring.plates?.map(
+          (plate, index) =>
+            `fixture-${plate.type === "anecdote" ? "anecdote" : "proverb"}-${index + 1}-${fixture.id}`
+        )
+      );
+    }
+  });
 
   // @req REQ-180
   it("matches one structural fixture to all four generated variants", () => {

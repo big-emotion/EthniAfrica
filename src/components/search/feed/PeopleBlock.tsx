@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
+import { InlineMarkup } from "@/components/search/feed/InlineMarkup";
 import { SearchFeedSectionHeading } from "@/components/search/feed/SearchFeedSectionHeading";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import type { FeedMovementZone } from "@/components/search/feed/feedBlockTypes";
@@ -37,10 +38,14 @@ export function PeopleBlock({
               className={`flex min-h-11 h-full flex-col gap-afh-md rounded-afh-lg border border-afh-border bg-afh-surface p-afh-2xl text-afh-text no-underline ${CHARTER_FOCUS_RING}`}
             >
               <h3 className="font-afh-display text-afh-body font-bold">
-                {item.name}
+                <InlineMarkup text={item.name} />
               </h3>
-              <p className="text-afh-caption text-afh-text-soft">{item.meta}</p>
-              <p className="text-afh-small">{item.description}</p>
+              <p className="text-afh-caption text-afh-text-soft">
+                <InlineMarkup text={item.meta} />
+              </p>
+              <p className="text-afh-small">
+                <InlineMarkup text={item.description} />
+              </p>
             </Link>
           </li>
         ))}

@@ -88,4 +88,42 @@ describe("PlatesBlock", () => {
     ).toBeInTheDocument();
     expect(screen.getByText(/Archive nationale/)).toBeInTheDocument();
   });
+
+  // @req REQ-178
+  it("uses the reviewed board card density without relation or source-list rows", () => {
+    render(
+      <PlatesBlock
+        reviewed
+        items={[
+          {
+            type: "anecdote",
+            id: "anecdote-reviewed",
+            contentLanguage: "fr",
+            headline: "Une graphie documentée",
+            body: ["Hidden long body."],
+            tier: "referenced",
+            sources: [
+              { title: "Hidden source", url: null, tier: "referenced" },
+            ],
+            match: {
+              relation: "linked-country",
+              entityType: "country",
+              entityId: "MLI",
+            },
+            illustration: {
+              src: "/images/a.jpg",
+              alt: "Document historique",
+              credit: "Archive nationale",
+            },
+          },
+        ]}
+      />
+    );
+
+    expect(screen.queryByText("Même pays")).toBeNull();
+    expect(screen.queryByText("Hidden long body.")).toBeNull();
+    expect(screen.queryByText("Hidden source")).toBeNull();
+    expect(screen.getByText("Référencée")).toBeInTheDocument();
+    expect(screen.getByText(/Archive nationale/)).toBeInTheDocument();
+  });
 });

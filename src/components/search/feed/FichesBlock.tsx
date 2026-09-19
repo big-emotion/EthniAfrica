@@ -63,13 +63,13 @@ export function FichesBlock({
         {items.map((item) => {
           const content = (
             <>
-              <span className="text-afh-eyebrow font-semibold uppercase tracking-[var(--afh-eyebrow-tracking)] text-afh-text-soft">
+              <span className="text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[var(--afh-eyebrow-tracking)] text-afh-text-soft">
                 {item.kind}
               </span>
-              <span className="font-afh-display text-afh-body font-bold">
+              <span className="font-afh-display text-afh-body font-bold leading-[1.3]">
                 {item.name}
               </span>
-              <span className="text-afh-caption text-afh-text-soft">
+              <span className="text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
                 {item.meta}
               </span>
             </>

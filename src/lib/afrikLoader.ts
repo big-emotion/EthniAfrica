@@ -29,6 +29,10 @@ import {
   type SearchLensCounts,
   type SearchQueryOptions,
 } from "@/lib/search/searchEnvelope";
+import {
+  mapSearchFeedPresentation,
+  type SearchFeedPresentation,
+} from "@/lib/search/searchFeedPresentation";
 import { logger } from "@/lib/api/logger";
 
 // ==========================================
@@ -149,6 +153,8 @@ export interface SearchWithLeads {
   nearNames: SearchNearName[];
   /** Per-type match counts (REQ-124) for the named-lens chips. */
   counts: SearchLensCounts;
+  /** Reviewed, serializable feed copy when the response provides one. */
+  presentation?: SearchFeedPresentation;
   /**
    * Whether the API answered at all.
    *
@@ -197,6 +203,7 @@ export async function searchWithLeads(
     const leads = mapSearchLeads(envelope);
     const nearNames = mapSearchNearNames(envelope);
     const counts = mapSearchCounts(envelope);
+    const presentation = mapSearchFeedPresentation(envelope);
 
     return {
       results: options.type
@@ -205,6 +212,7 @@ export async function searchWithLeads(
       leads,
       nearNames,
       counts,
+      presentation,
       answered: true,
     };
   } catch (error) {

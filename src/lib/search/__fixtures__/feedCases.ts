@@ -5,7 +5,10 @@ import {
   type SearchCompanionsData,
 } from "@/api/v2/schemas/searchCompanions";
 import type { SearchWithLeads } from "@/lib/afrikLoader";
-import { formatProductionPosterAlt } from "@/lib/editorial/productionNameQuestion";
+import {
+  formatProductionNameQuestion,
+  formatProductionPosterAlt,
+} from "@/lib/editorial/productionNameQuestion";
 import {
   FEED_BLOCKS,
   FEED_ZONES,
@@ -15,6 +18,10 @@ import {
   type OwedPartId,
   type SearchResultState,
 } from "@/lib/search/resultGrammar";
+import {
+  searchFeedPresentationSchema,
+  type SearchFeedPresentation,
+} from "@/lib/search/searchFeedPresentation";
 import type {
   SearchLead,
   SearchNearName,
@@ -39,6 +46,60 @@ export const FEED_CASE_IDS = [
 
 export type FeedCaseId = (typeof FEED_CASE_IDS)[number];
 
+const boardStandingSchema = z.enum(["official", "referenced", "unverified"]);
+const boardMarkerSchema = z.enum(["", "you", "own", "bad"]);
+const boardFormSchema = z.tuple([
+  z.string().min(1),
+  z.string().nullable(),
+  boardMarkerSchema,
+]);
+const boardOriginSchema = z
+  .object({
+    title: z.string().min(1).optional(),
+    sub: z.string().nullable().optional(),
+    lede: z.string().min(1).optional(),
+    cards: z.array(
+      z.tuple([
+        z.string().min(1),
+        z.string().min(1),
+        z.string().min(1),
+        z
+          .union([
+            z.string().min(1),
+            z.tuple([z.string().min(1), z.string().min(1)]),
+          ])
+          .nullable(),
+        boardStandingSchema.nullable(),
+        boardMarkerSchema,
+      ])
+    ),
+  })
+  .strict();
+const boardPlateSchema = z.discriminatedUnion("type", [
+  z
+    .object({
+      type: z.literal("anecdote"),
+      img: z.string().min(1),
+      about: z.string().min(1),
+      tier: boardStandingSchema,
+      headline: z.string().min(1),
+      alt: z.string().min(1),
+      credit: z.string().min(1),
+    })
+    .strict(),
+  z
+    .object({
+      type: z.literal("proverbe"),
+      lang: z.string().min(1),
+      iso: z.string().min(2),
+      text: z.string().min(1),
+      original: z.string().min(1).optional(),
+      meaning: z.string().min(1).optional(),
+      origin: z.string().min(1),
+    })
+    .strict(),
+]);
+
 const feedBoardAuthoringSchema = z
   .array(
     z
@@ -52,12 +113,12 @@ const feedBoardAuthoringSchema = z
         title: z.string().min(1),
         eyebrow: z.string().min(1).optional(),
         verdict: z.string().min(1),
+        verdict_plain: z.boolean().optional(),
         sub: z.string().min(1),
-        forms: z
-          .array(
-            z.tuple([z.string().min(1), z.string().nullable(), z.string()])
-          )
-          .optional(),
+        kind: z.string().min(1).optional(),
+        forms_title: z.string().min(1).optional(),
+        forms_sub: z.string().nullable().optional(),
+        forms: z.array(boardFormSchema).optional(),
         lens: z.array(
           z.union([
             z.tuple([z.literal("Shorts"), z.number().int().nonnegative()]),
@@ -82,6 +143,85 @@ const feedBoardAuthoringSchema = z
             ),
           })
           .strict(),
+        origins: boardOriginSchema.optional(),
+        tiles: z
+          .object({
+            title: z.string().min(1),
+            sub: z.string().nullable().optional(),
+            items: z.array(z.tuple([z.string().min(1), z.string().min(1)])),
+            link: z.string().min(1).optional(),
+          })
+          .strict()
+          .optional(),
+        people: z
+          .object({
+            title: z.string().min(1),
+            sub: z.string().nullable().optional(),
+            items: z.array(
+              z.tuple([z.string().min(1), z.string(), z.string().min(1)])
+            ),
+          })
+          .strict()
+          .optional(),
+        facts: z
+          .object({
+            title: z.string().min(1),
+            items: z.array(z.tuple([z.string().min(1), z.string().min(1)])),
+          })
+          .strict()
+          .optional(),
+        prose: z
+          .object({
+            title: z.string().min(1),
+            tier: boardStandingSchema.optional(),
+            paras: z.array(z.string().min(1)).min(1),
+          })
+          .strict()
+          .optional(),
+        prose2: z
+          .object({
+            title: z.string().min(1),
+            paras: z.array(z.string().min(1)).min(1),
+          })
+          .strict()
+          .optional(),
+        plates_sub: z.string().min(1).optional(),
+        plates: z.array(boardPlateSchema).optional(),
+        quiz: z
+          .object({
+            q: z.string().min(1),
+            options: z.array(z.string().min(1)).min(2),
+            count: z.string().min(1),
+          })
+          .strict()
+          .optional(),
+        image: z
+          .object({
+            img: z.string().min(1),
+            caption: z.string().min(1),
+            tier: boardStandingSchema,
+            source: z.string().min(1),
+            licence: z.string().min(1),
+            alt: z.string().min(1),
+          })
+          .strict()
+          .optional(),
+        fiches: z
+          .array(z.tuple([z.string().min(1), z.string().min(1), z.string()]))
+          .optional(),
+        band: z
+          .object({
+            silences: z
+              .array(z.tuple([z.string().min(1), z.string().min(1)]))
+              .optional(),
+            conv: z.tuple([z.string().min(1), z.string().min(1)]),
+            invite: z.string().min(1).optional(),
+            invite_sub: z.string().min(1).optional(),
+            button: z.string().min(1).optional(),
+          })
+          .strict()
+          .optional(),
+        further: z.array(z.string().min(1)).optional(),
         order: z.array(z.enum(FEED_BLOCKS)),
       })
       .passthrough()
@@ -197,8 +337,10 @@ export const feedCaseFixturesSchema = z
                 summary: z.string().min(1),
               })
               .strict(),
+            presentation: searchFeedPresentationSchema,
             shorts: z
               .object({
+                title: z.literal("Les shorts"),
                 items: z.array(
                   z
                     .object({
@@ -266,7 +408,9 @@ export interface FeedCaseFixture {
       verdict: string;
       summary: string;
     };
+    presentation: SearchFeedPresentation;
     shorts: {
+      title: "Les shorts";
       items: Array<{
         fixture: true;
         name: string;
@@ -294,6 +438,12 @@ const FIXTURE_SOURCE = {
   title: "Approved search-feed board fixture",
   url: "https://example.org/search-feed-fixture",
   tier: "referenced" as const,
+};
+
+const DEFAULT_INVITATION = {
+  title: "Nous nous sommes trompés ?",
+  body: "Si vous connaissez une source sur l'un de ces noms, elle sera lue.",
+  action: "Proposer une source",
 };
 
 function block(id: FeedBlockId, zone: FeedZone) {
@@ -356,6 +506,232 @@ function durationSeconds(duration: string): number {
   return minutes * 60 + seconds;
 }
 
+function fixtureHref(kind: string, name: string): string {
+  return `#${posterSlug(`${kind}-${name}`)}`;
+}
+
+function presentationFor(
+  authoring: FeedBoardAuthoring[number]
+): SearchFeedPresentation {
+  const presentation: SearchFeedPresentation = {
+    answer: {
+      name: authoring.name,
+      ...(authoring.eyebrow ? { eyebrow: authoring.eyebrow } : {}),
+      ...(authoring.kind ? { kind: authoring.kind } : {}),
+      verdict: authoring.verdict,
+      summary: authoring.sub,
+      ...(authoring.verdict_plain ? { tone: "plain" as const } : {}),
+    },
+    ...(authoring.forms
+      ? {
+          appellations: {
+            ...(authoring.forms_title ? { title: authoring.forms_title } : {}),
+            ...(authoring.forms_sub !== undefined
+              ? { subtitle: authoring.forms_sub }
+              : {}),
+            forms: authoring.forms.map(([form, qualifier, marker]) => ({
+              form,
+              ...(qualifier ? { qualifier } : {}),
+              ...(marker === "own" ? { selfGiven: true } : {}),
+              ...(marker === "bad" ? { problematic: "recorded" as const } : {}),
+              ...(marker === "you" ? { searched: true } : {}),
+            })),
+          },
+        }
+      : {}),
+    shorts: {
+      title: "Les shorts",
+      ...(authoring.shorts.sub !== undefined
+        ? { subtitle: authoring.shorts.sub }
+        : {}),
+      ...(authoring.shorts.note ? { wideningNote: authoring.shorts.note } : {}),
+      ...(authoring.shorts.empty
+        ? {
+            emptySlot: {
+              name: authoring.name,
+              question: authoring.shorts.empty[0],
+              body: authoring.shorts.empty[1],
+              action: authoring.shorts.empty[2],
+            },
+          }
+        : {}),
+    },
+    ...(authoring.origins
+      ? {
+          origins: {
+            title: authoring.origins.title ?? "D'où elles viennent",
+            ...(authoring.origins.sub !== undefined
+              ? { subtitle: authoring.origins.sub }
+              : {}),
+            ...(authoring.origins.lede ? { lede: authoring.origins.lede } : {}),
+            items: authoring.origins.cards.map(
+              ([name, qualifier, description, usage, standing, style]) => ({
+                name,
+                qualifier,
+                description,
+                ...(usage
+                  ? {
+                      currentUsage: Array.isArray(usage)
+                        ? { label: usage[0], text: usage[1] }
+                        : { label: "Aujourd'hui", text: usage },
+                    }
+                  : {}),
+                ...(standing ? { standing } : {}),
+                ...(style ? { style } : {}),
+              })
+            ),
+          },
+        }
+      : {}),
+    ...(authoring.people
+      ? {
+          peoples: {
+            title: authoring.people.title,
+            ...(authoring.people.sub !== undefined
+              ? { subtitle: authoring.people.sub }
+              : {}),
+            items: authoring.people.items.map(([name, meta, description]) => ({
+              name,
+              meta,
+              description,
+              href: fixtureHref("people", name),
+            })),
+          },
+        }
+      : {}),
+    ...((authoring.prose || authoring.prose2) && {
+      prose: [
+        ...(authoring.prose
+          ? [
+              {
+                id: authoring.order.includes("shared-name")
+                  ? ("shared-name" as const)
+                  : ("problem" as const),
+                title: authoring.prose.title,
+                paragraphs: authoring.prose.paras,
+                ...(authoring.prose.tier
+                  ? { standing: authoring.prose.tier }
+                  : {}),
+              },
+            ]
+          : []),
+        ...(authoring.prose2
+          ? [
+              {
+                id: "near-name" as const,
+                title: authoring.prose2.title,
+                paragraphs: authoring.prose2.paras,
+              },
+            ]
+          : []),
+      ],
+    }),
+    ...(authoring.tiles
+      ? {
+          tiles: {
+            title: authoring.tiles.title,
+            ...(authoring.tiles.sub !== undefined
+              ? { subtitle: authoring.tiles.sub }
+              : {}),
+            items: authoring.tiles.items.map(([title, meta]) => ({
+              title,
+              meta,
+              href: fixtureHref("tile", title),
+            })),
+            ...(authoring.tiles.link
+              ? {
+                  actionLabel: authoring.tiles.link,
+                  actionHref: "#tiles",
+                }
+              : {}),
+          },
+        }
+      : {}),
+    ...(authoring.facts
+      ? {
+          facts: {
+            title: authoring.facts.title,
+            items: authoring.facts.items.map(([label, value]) => ({
+              label,
+              value,
+            })),
+          },
+        }
+      : {}),
+    ...((authoring.plates || authoring.plates_sub) && {
+      plates: {
+        title: "Anecdotes et proverbes",
+        ...(authoring.plates_sub ? { subtitle: authoring.plates_sub } : {}),
+        order: (authoring.plates ?? []).map(
+          (plate, index) =>
+            `fixture-${plate.type === "anecdote" ? "anecdote" : "proverb"}-${index + 1}-${authoring.id}`
+        ),
+      },
+    }),
+    ...(authoring.quiz
+      ? { quiz: { questionCountLabel: authoring.quiz.count } }
+      : {}),
+    ...(authoring.image
+      ? {
+          images: {
+            title: "Les images",
+            subtitle: "Des interprétations, jamais des portraits.",
+            licenceText: authoring.image.licence,
+          },
+        }
+      : {}),
+    ...(authoring.fiches
+      ? {
+          fiches: {
+            title: "Les fiches",
+            subtitle:
+              "Pour aller au fond : chaque fiche, avec toutes ses sources.",
+            items: authoring.fiches.map(([kind, name, meta]) => ({
+              kind,
+              name,
+              meta,
+              href: fixtureHref(kind, name),
+            })),
+          },
+        }
+      : {}),
+    ...(authoring.band
+      ? {
+          owed: {
+            silences: (authoring.band.silences ?? []).map(
+              ([title, detail], index) => ({
+                id: `${authoring.id}-silence-${index + 1}`,
+                title,
+                detail,
+              })
+            ),
+            conviction: {
+              title: authoring.band.conv[0],
+              body: authoring.band.conv[1],
+            },
+            invitation: {
+              title: authoring.band.invite ?? DEFAULT_INVITATION.title,
+              body: authoring.band.invite_sub ?? DEFAULT_INVITATION.body,
+              action: authoring.band.button ?? DEFAULT_INVITATION.action,
+            },
+          },
+        }
+      : {}),
+    ...(authoring.further
+      ? {
+          further: {
+            links: authoring.further.map((label) => ({
+              label,
+              href: fixtureHref("further", label),
+            })),
+          },
+        }
+      : {}),
+  };
+
+  return searchFeedPresentationSchema.parse(presentation);
+}
+
 function countsFor(results: readonly SearchResult[]) {
   const counts: SearchWithLeads["counts"] = {
     all: results.length,
@@ -391,8 +767,102 @@ function match(subject: Subject, relation: Match["relation"] = "exact"): Match {
 function companions(
   subjects: Subject[],
   shorts: BoardShort[],
-  matches: Match[]
+  matches: Match[],
+  authoring: FeedBoardAuthoring[number],
+  board: FeedCaseFixture["board"]
 ): SearchCompanionsData {
+  const matchValue = fixtureMatch(matches);
+  let anecdoteAssetIndex = 0;
+  const anecdotes = (authoring.plates ?? []).flatMap((plate, index) => {
+    if (plate.type !== "anecdote") return [];
+    const illustration = board.editorialImages[anecdoteAssetIndex++];
+    return [
+      {
+        id: `fixture-anecdote-${index + 1}-${authoring.id}`,
+        contentLanguage: "fr" as const,
+        headline: plate.headline,
+        about: plate.about,
+        body: [plate.headline],
+        tier: plate.tier,
+        sources: [{ ...FIXTURE_SOURCE, tier: plate.tier }],
+        illustration: {
+          src: illustration?.requestPath ?? "/images/ethniafrica-logo.png",
+          alt: plate.alt,
+          credit: plate.credit,
+        },
+        match: matchValue,
+      },
+    ];
+  });
+  const proverbs = (authoring.plates ?? []).flatMap((plate, index) => {
+    if (plate.type !== "proverbe") return [];
+    return [
+      {
+        id: `fixture-proverb-${index + 1}-${authoring.id}`,
+        contentLanguage: "fr" as const,
+        text: plate.text,
+        meaning: plate.meaning ?? plate.text,
+        original: plate.original
+          ? { text: plate.original, lang: plate.iso, language: plate.lang }
+          : null,
+        origin: { status: "attested" as const, note: plate.origin },
+        sources: [FIXTURE_SOURCE],
+        match: matchValue,
+      },
+    ];
+  });
+  const images = authoring.image
+    ? [
+        {
+          id: `fixture-image-${authoring.id}`,
+          href: `#image-${authoring.id}`,
+          slug: authoring.image.img,
+          title: authoring.image.caption,
+          description: authoring.image.caption,
+          caption: authoring.image.caption,
+          image: {
+            src:
+              board.editorialImages.at(-1)?.requestPath ??
+              "/images/ethniafrica-logo.png",
+            alt: authoring.image.alt,
+            credit: authoring.image.source,
+            licence: "cc-by-sa" as const,
+          },
+          generation: {
+            tool: "fixture",
+            model: "reviewed-board",
+            generatedOn: "2026-09-01",
+            sourceKind: "ai_generated" as const,
+          },
+          source: {
+            title: authoring.image.source,
+            url: null,
+            tier: authoring.image.tier,
+          },
+          match: matchValue,
+        },
+      ]
+    : [];
+  const quiz = authoring.quiz
+    ? {
+        count: 1,
+        item: {
+          id: `fixture-quiz-${authoring.id}`,
+          templateId: "T2" as const,
+          contentLanguage: "fr" as const,
+          prompt: authoring.quiz.q,
+          stimulus: null,
+          options: authoring.quiz.options,
+          correctOption: 0,
+          explanation: authoring.quiz.options[0],
+          assertionId: `fixture-assertion-${authoring.id}`,
+          source: FIXTURE_SOURCE,
+          entity: { type: "country" as const, id: "NGA" },
+          match: matchValue,
+        },
+      }
+    : { count: 0, item: null };
+
   return {
     subjects,
     shorts: {
@@ -401,7 +871,8 @@ function companions(
         id: `fixture-short-${item.poster.repositoryPath.split("/").at(-1)!.replace(".jpg", "")}`,
         href: `/fr/decouvertes/${item.poster.repositoryPath.split("/").at(-1)!.replace(".jpg", "")}`,
         name: item.name,
-        description: `Illustrative board fixture for ${item.name}.`,
+        ...(item.label ? { label: item.label } : {}),
+        description: formatProductionNameQuestion(item.name, "fr"),
         publishedAt: "2026-09-01",
         durationSeconds: item.durationSeconds,
         watchUrl: "https://www.youtube.com/watch?v=fixture",
@@ -415,10 +886,10 @@ function companions(
         match: matches[index] ?? matches[0],
       })),
     },
-    anecdotes: { count: 0, items: [] },
-    proverbs: { count: 0, items: [] },
-    images: { count: 0, items: [] },
-    quiz: { count: 0, item: null },
+    anecdotes: { count: anecdotes.length, items: anecdotes },
+    proverbs: { count: proverbs.length, items: proverbs },
+    images: { count: images.length, items: images },
+    quiz,
   };
 }
 
@@ -430,172 +901,6 @@ function fixtureMatch(matches: Match[]): Match {
       entityId: "NGA",
     }
   );
-}
-
-function enrichFixtureCompanions(
-  data: SearchCompanionsData,
-  board: FeedCaseFixture["board"],
-  matches: Match[]
-): SearchCompanionsData {
-  const blockIds = new Set(board.blocks.mobile.map(({ id }) => id));
-  const matchValue = fixtureMatch(matches);
-  const hasImage = blockIds.has("images");
-  const visualCount = board.lenses.images ?? (blockIds.has("plates") ? 1 : 0);
-  const plateCount = blockIds.has("plates")
-    ? Math.max(1, visualCount - (hasImage ? 1 : 0))
-    : 0;
-  const anecdoteCount = Math.min(3, plateCount);
-  const proverbCount = Math.max(0, plateCount - anecdoteCount);
-  const anecdotes = Array.from({ length: anecdoteCount }, (_, index) => ({
-    id: `fixture-anecdote-${index + 1}-${matchValue.entityId.toLowerCase()}`,
-    contentLanguage: "fr" as const,
-    headline: `Illustrative sourced story ${index + 1}`,
-    body: ["Illustrative board fixture."],
-    tier: "referenced" as const,
-    sources: [FIXTURE_SOURCE],
-    illustration: {
-      src:
-        board.editorialImages[index]?.requestPath ??
-        board.editorialImages[0]?.requestPath ??
-        "/images/ethniafrica-logo.png",
-      alt: "Illustrative board fixture",
-      credit: "EthniAfrica fixture",
-    },
-    match: matchValue,
-  }));
-  const images = hasImage
-    ? [
-        {
-          id: `fixture-image-${matchValue.entityId.toLowerCase()}`,
-          href: "/fixture/image",
-          slug: "fixture-image",
-          title: "Illustrative generated image",
-          description: "Illustrative board fixture.",
-          caption: "Illustrative board fixture.",
-          image: {
-            src:
-              board.editorialImages.at(-1)?.requestPath ??
-              "/images/ethniafrica-logo.png",
-            alt: "Illustrative board fixture",
-            credit: "EthniAfrica fixture",
-            licence: "cc-by-sa" as const,
-          },
-          generation: {
-            tool: "fixture",
-            model: "fixture",
-            generatedOn: "2026-09-01",
-            sourceKind: "ai_generated" as const,
-          },
-          source: FIXTURE_SOURCE,
-          match: matchValue,
-        },
-      ]
-    : [];
-  const proverbs = Array.from({ length: proverbCount }, (_, index) => ({
-    id: `fixture-proverb-${index + 1}-${matchValue.entityId.toLowerCase()}`,
-    contentLanguage: "fr" as const,
-    text: `Illustrative sourced proverb ${index + 1}`,
-    meaning: "Illustrative board fixture.",
-    original: null,
-    origin: { status: "attested" as const, note: "Fixture" },
-    sources: [FIXTURE_SOURCE],
-    match: matchValue,
-  }));
-  const quiz = blockIds.has("quiz")
-    ? {
-        count: 1,
-        item: {
-          id: `fixture-quiz-${matchValue.entityId.toLowerCase()}`,
-          templateId: "T2" as const,
-          contentLanguage: "fr" as const,
-          prompt: "Quelle réponse la source documente-t-elle ?",
-          stimulus: null,
-          options: ["La première", "La seconde"],
-          correctOption: 0,
-          explanation: "La première réponse est documentée.",
-          assertionId: `fixture-assertion-${matchValue.entityId.toLowerCase()}`,
-          source: FIXTURE_SOURCE,
-          entity: { type: "country" as const, id: "NGA" },
-          match: matchValue,
-        },
-      }
-    : { count: 0, item: null };
-
-  return {
-    ...data,
-    anecdotes: { count: anecdotes.length, items: anecdotes },
-    proverbs: { count: proverbs.length, items: proverbs },
-    images: { count: images.length, items: images },
-    quiz,
-  };
-}
-
-function enrichFixtureResults(
-  results: SearchResult[],
-  subjects: Subject[],
-  board: FeedCaseFixture["board"],
-  fixtureId: FeedCaseId
-): SearchResult[] {
-  const blockIds = new Set(board.blocks.mobile.map(({ id }) => id));
-  const expectedFiches = board.lenses.fiches ?? results.length;
-  const enriched = [...results];
-  while (enriched.length > 0 && enriched.length < expectedFiches) {
-    const index = enriched.length;
-    enriched.push({
-      type: "people",
-      id: `PPL_FIXTURE_${fixtureId.toUpperCase()}_${index + 1}`,
-      name: `Related fixture ${index + 1}`,
-      exactMatch: false,
-    });
-  }
-
-  const subjectKeys = new Set(
-    subjects.map(({ entityType, entityId }) => `${entityType}:${entityId}`)
-  );
-  return enriched.map((result) => {
-    if (!subjectKeys.has(`${result.type}:${result.id}`)) return result;
-    const presentationForm = {
-      form: result.name,
-      selfGiven: result.autonym === result.name ? true : null,
-      ...(blockIds.has("origins")
-        ? { origin: { meaning: "Illustrative documented origin" } }
-        : {}),
-      attestations: [],
-      evidence: [],
-    };
-    const existingPresentation = result.naming?.presentation;
-    return {
-      ...result,
-      naming: {
-        ...result.naming,
-        forms: result.naming?.forms ?? [],
-        eras: result.naming?.eras ?? [],
-        presentation: {
-          ...existingPresentation,
-          forms:
-            existingPresentation && existingPresentation.forms.length > 0
-              ? existingPresentation.forms
-              : [presentationForm],
-          eras: existingPresentation?.eras ?? [],
-          disagreements: existingPresentation?.disagreements ?? [],
-          ...(blockIds.has("problem")
-            ? { problematic: "recorded" as const }
-            : {}),
-          evidence: existingPresentation?.evidence ?? [],
-        },
-      },
-      ...(blockIds.has("tiles")
-        ? {
-            associatedPeoples: [
-              {
-                id: `PPL_FIXTURE_${fixtureId.toUpperCase()}_TILE`,
-                name: "Related people",
-              },
-            ],
-          }
-        : {}),
-    };
-  });
 }
 
 function caseFixture(
@@ -643,7 +948,9 @@ function caseFixture(
       verdict: authoring.verdict,
       summary: authoring.sub,
     },
+    presentation: presentationFor(authoring),
     shorts: {
+      title: "Les shorts",
       items: boardShorts,
       ...(authoring.shorts.empty
         ? {
@@ -659,16 +966,12 @@ function caseFixture(
     },
   };
 
-  const productionResults = enrichFixtureResults(
-    results,
+  const productionCompanions = companions(
     subjects,
-    board,
-    fixture.id
-  );
-  const productionCompanions = enrichFixtureCompanions(
-    companions(subjects, boardShorts, matches),
-    board,
-    matches
+    boardShorts,
+    matches,
+    authoring,
+    board
   );
 
   return {
@@ -679,7 +982,7 @@ function caseFixture(
     resultState: authoring.result_state,
     board,
     production: {
-      search: search(productionResults, leads, nearNames),
+      search: search(results, leads, nearNames),
       companions: productionCompanions,
     },
   };

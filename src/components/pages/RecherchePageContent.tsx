@@ -55,6 +55,7 @@ import {
 } from "@/lib/search/searchFeedPlan";
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
+import type { SearchFeedPresentation } from "@/lib/search/searchFeedPresentation";
 import {
   getLocalizedSearchResultFamilyName,
   getLocalizedSearchResultName,
@@ -142,6 +143,8 @@ export function RecherchePageContent() {
   const [feedState, setFeedState] = useState<SearchFeedAnswerState | null>(
     null
   );
+  const [feedPresentation, setFeedPresentation] =
+    useState<SearchFeedPresentation>();
   const [feedSubjects, setFeedSubjects] = useState<SearchHit[]>([]);
   const requestController = useRef<AbortController | null>(null);
   const requestTicket = useRef(0);
@@ -188,6 +191,7 @@ export function RecherchePageContent() {
         setCounts(EMPTY_SEARCH_LENS_COUNTS);
         setCompanions(null);
         setFeedState(null);
+        setFeedPresentation(undefined);
         setFeedSubjects([]);
         setStatus("idle");
         return;
@@ -195,6 +199,7 @@ export function RecherchePageContent() {
       setStatus("loading");
       setCompanions(null);
       setFeedState(null);
+      setFeedPresentation(undefined);
       setFeedSubjects([]);
       try {
         const {
@@ -202,6 +207,7 @@ export function RecherchePageContent() {
           leads: nearMisses,
           nearNames: qualifiedNearNames = [],
           counts: lensCounts,
+          presentation,
           answered,
         } = await searchWithLeads(q, {
           limit: RESULTS_PER_SEARCH,
@@ -214,6 +220,7 @@ export function RecherchePageContent() {
         setLeads(nearMisses);
         setNearNames(qualifiedNearNames);
         setCounts(lensCounts);
+        setFeedPresentation(presentation);
         // Reported here rather than from the submit handler, so a query that
         // arrives by URL — a shared link, a bookmark — counts as the search it
         // is. Only the modal used to report, which left every such arrival out.
@@ -276,6 +283,7 @@ export function RecherchePageContent() {
         setCounts(EMPTY_SEARCH_LENS_COUNTS);
         setCompanions(null);
         setFeedState(null);
+        setFeedPresentation(undefined);
         setFeedSubjects([]);
         setStatus("failed");
       }
@@ -373,6 +381,7 @@ export function RecherchePageContent() {
     setCounts(EMPTY_SEARCH_LENS_COUNTS);
     setCompanions(null);
     setFeedState(null);
+    setFeedPresentation(undefined);
     setFeedSubjects([]);
     setStatus("idle");
     syncURL("", relation);
@@ -664,6 +673,8 @@ export function RecherchePageContent() {
               leads={leads}
               nearNames={nearNames}
               companions={companions}
+              resultCount={counts.all}
+              presentation={feedPresentation}
               onResultNavigate={trackResultClick}
             />
           ) : null}

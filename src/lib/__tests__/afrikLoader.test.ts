@@ -385,6 +385,39 @@ describe("afrikLoader", () => {
       });
     });
 
+    // @req REQ-180
+    it("carries an optional validated feed presentation from the search envelope", async () => {
+      mockFetch.mockResolvedValueOnce({
+        ok: true,
+        json: () =>
+          Promise.resolve({
+            data: {
+              peoples: [],
+              countries: [],
+              families: [],
+              total: 0,
+              feedPresentation: {
+                answer: {
+                  name: "Kossiwa",
+                  verdict: "Nous ne connaissons pas ce nom.",
+                  summary: "Ce n'est pas une réponse : c'est un aveu.",
+                },
+              },
+            },
+          }),
+      });
+
+      const { presentation } = await searchWithLeads("kossiwa");
+
+      expect(presentation).toEqual({
+        answer: {
+          name: "Kossiwa",
+          verdict: "Nous ne connaissons pas ce nom.",
+          summary: "Ce n'est pas une réponse : c'est un aveu.",
+        },
+      });
+    });
+
     // @req REQ-124
     it("defaults every lens count to zero on error", async () => {
       mockFetch.mockResolvedValueOnce({

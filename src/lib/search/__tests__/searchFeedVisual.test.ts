@@ -5,6 +5,7 @@ import { describe, expect, it } from "vitest";
 import {
   assertPixelParity,
   comparePngs,
+  createSearchFeedDiffPng,
   loadSearchFeedManifest,
   parseSearchFeedManifest,
 } from "../../../../e2e/support/search-feed-visual";
@@ -83,6 +84,23 @@ describe("search-feed visual parity helpers", () => {
       differentPixels: 2,
       differentPixelRatio: 0.02,
     });
+  });
+
+  // @req REQ-180
+  it("renders changed pixels in red for review artifacts", async () => {
+    const expected = await solidPng(2, 1);
+    const actual = await solidPng(2, 1, [0]);
+
+    const { data, info } = await sharp(
+      await createSearchFeedDiffPng(expected, actual)
+    )
+      .ensureAlpha()
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+
+    expect(info).toMatchObject({ width: 2, height: 1, channels: 4 });
+    expect(Array.from(data.subarray(0, 4))).toEqual([255, 0, 0, 255]);
+    expect(Array.from(data.subarray(4, 8))).toEqual([255, 255, 255, 255]);
   });
 
   // @req REQ-180

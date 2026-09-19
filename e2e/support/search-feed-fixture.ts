@@ -136,19 +136,35 @@ export function searchEnvelopeForFixture(fixture: FeedCaseFixture) {
   }
 
   const counts = fixture.production.search.counts;
+  const illustratedTotal = fixture.board.lenses.fiches ?? counts.all;
+  const totals = {
+    people: counts.people,
+    country: counts.country,
+    languageFamily: counts.languageFamily,
+    language: counts.language,
+    person: counts.person,
+    patronyme: counts.patronyme,
+  };
+  const illustratedKind =
+    fixture.production.search.results[0]?.type ??
+    fixture.production.search.leads[0]?.type;
+  if (illustratedKind && illustratedTotal > counts.all) {
+    totals[illustratedKind] += illustratedTotal - counts.all;
+  }
   return {
     data: {
       ...grouped,
+      feedPresentation: fixture.board.presentation,
       quizzes: [],
       results: [],
-      peoplesTotal: counts.people,
-      countriesTotal: counts.country,
-      familiesTotal: counts.languageFamily,
-      personsTotal: counts.person,
-      patronymesTotal: counts.patronyme,
+      peoplesTotal: totals.people,
+      countriesTotal: totals.country,
+      familiesTotal: totals.languageFamily,
+      personsTotal: totals.person,
+      patronymesTotal: totals.patronyme,
       quizzesTotal: 0,
-      languagesTotal: counts.language,
-      total: counts.all,
+      languagesTotal: totals.language,
+      total: illustratedTotal,
       leads: fixture.production.search.leads.map(rawLead),
       nearNames: fixture.production.search.nearNames.map(rawLead),
     },

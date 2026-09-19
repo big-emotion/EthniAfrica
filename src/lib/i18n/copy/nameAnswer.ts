@@ -102,7 +102,7 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
       "They simply do not come from the same place: the one a people gives itself, the ones its neighbours give it, the one an administration wrote down one day.",
   },
   fr: {
-    eyebrow: "D’où vient ce nom",
+    eyebrow: "D'où vient ce nom",
     disambiguation: "Lequel cherchez-vous ?",
     appellations: "Les appellations",
     appellationsLead: "Les plus communes d’abord. Aucune n’est « la bonne ».",
@@ -112,7 +112,7 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     usageToday: "Qui dit quoi, aujourd’hui",
     throughTime: "À travers le temps",
     atlasHolds: "Ce que l’atlas tient",
-    silences: "Ce que l’atlas ne dit pas",
+    silences: "Ce que l'atlas ne dit pas",
     silencesLead: "Un silence déclaré, pas un oubli.",
     noDatedAttestation: "Aucune attestation datée",
     noDatedAttestationBody:

@@ -134,6 +134,7 @@ const shortSchema = z.object({
   id: z.string().min(1),
   href: z.string().min(1),
   name: z.string().min(1),
+  label: z.string().min(1).optional(),
   description: z.string().min(1),
   publishedAt: z.union([
     z.string().date(),
@@ -149,6 +150,7 @@ const anecdoteSchema = z.object({
   id: z.string().min(1),
   contentLanguage: z.enum(["en", "fr"]),
   headline: z.string().min(1),
+  about: z.string().min(1).optional(),
   body: z.array(z.string().min(1)).min(1).max(2),
   tier: sourceTierSchema,
   sources: z.array(sourceSchema).min(1),

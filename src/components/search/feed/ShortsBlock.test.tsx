@@ -82,6 +82,30 @@ describe("ShortsBlock", () => {
     );
   });
 
+  // @req REQ-178
+  it("uses the board shelf density without per-item relation labels", () => {
+    const item = FEED_CASES[0]!.production.companions.shorts.items[0]!;
+    render(
+      <ShortsBlock
+        items={[
+          {
+            ...item,
+            match: {
+              relation: "linked-family",
+              entityType: "languageFamily",
+              entityId: "FLG_MANDE",
+            },
+          },
+        ]}
+        reviewed
+      />
+    );
+
+    expect(
+      screen.queryByText("Même famille de langues")
+    ).not.toBeInTheDocument();
+  });
+
   // @req REQ-180
   it.each(FEED_CASES)(
     "uses the canonical production question for $id fixture shorts",

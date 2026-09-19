@@ -56,6 +56,17 @@ describe("ImageBlock", () => {
     );
   });
 
+  // @req REQ-178
+  it("uses the reviewed board metadata density", () => {
+    render(<ImageBlock item={imageItem} reviewed />);
+
+    expect(screen.queryByText("Récent dans l’atlas")).toBeNull();
+    expect(screen.queryByText("Une interprétation documentée.")).toBeNull();
+    expect(screen.queryByText(/Test tool · Test model/)).toBeNull();
+    expect(screen.getByText("Source documentée")).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "CC BY-SA" })).toBeVisible();
+  });
+
   // @req REQ-180
   it("localizes the public-domain licence label", () => {
     const publicDomainItem: FeedGeneratedImageItem = {

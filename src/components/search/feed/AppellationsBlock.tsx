@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
+import { InlineMarkup } from "@/components/search/feed/InlineMarkup";
 import { SearchFeedSectionHeading } from "@/components/search/feed/SearchFeedSectionHeading";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
@@ -10,11 +11,18 @@ import type { Language } from "@/types/shared";
 
 export type AppellationItem = Pick<
   NamingPresentationForm,
-  "form" | "qualifier" | "selfGiven" | "problematic"
-> & { searched?: boolean; subjectId?: string };
+  "form" | "qualifier"
+> &
+  Partial<Pick<NamingPresentationForm, "selfGiven" | "problematic">> & {
+    searched?: boolean;
+    subjectId?: string;
+  };
 
 export interface AppellationsBlockProps {
   forms: readonly AppellationItem[];
+  reviewed?: boolean;
+  title?: string;
+  subtitle?: string;
   language?: Language;
   originsHref?: string;
   className?: string;
@@ -45,6 +53,7 @@ function FormsList({
   allForms,
   language,
   originsHref,
+  reviewed,
   className,
   testId,
 }: {
@@ -52,6 +61,7 @@ function FormsList({
   allForms: readonly AppellationItem[];
   language: Language;
   originsHref: string;
+  reviewed: boolean;
   className: string;
   testId: string;
 }) {
@@ -82,36 +92,54 @@ function FormsList({
           )}
         >
           <span className="font-afh-display text-afh-small font-bold text-afh-text">
-            {item.form}
+            <InlineMarkup text={item.form} />
           </span>
           {item.searched ? (
-            <span className="text-afh-eyebrow font-bold text-[color:var(--accent-ink)]">
+            <span
+              className={cn(
+                "text-afh-eyebrow font-bold text-[color:var(--accent-ink)]",
+                item.qualifier && "min-[1200px]:hidden"
+              )}
+            >
               {copy.yourSearch}
             </span>
           ) : null}
           {item.selfGiven === true ? (
-            <span className="text-afh-eyebrow font-bold text-[color:var(--accent-ink)]">
+            <span
+              className={cn(
+                "text-afh-eyebrow font-bold text-[color:var(--accent-ink)]",
+                item.qualifier && "min-[1200px]:hidden"
+              )}
+            >
               {copy.selfGivenMark}
             </span>
           ) : null}
           {item.problematic === "recorded" ? (
-            <span className="text-afh-eyebrow font-bold text-[color:var(--afh-colonial-ink)]">
+            <span
+              className={cn(
+                "text-afh-eyebrow font-bold text-[color:var(--afh-colonial-ink)]",
+                item.qualifier && "min-[1200px]:hidden"
+              )}
+            >
               {copy.problematicMark}
             </span>
           ) : null}
           {item.qualifier ? (
             <span className="hidden text-afh-eyebrow font-semibold text-afh-text-soft min-[1200px]:inline">
-              {item.qualifier}
+              <InlineMarkup text={item.qualifier} />
             </span>
           ) : null}
         </li>
       ))}
       {remainder > 0 ? (
-        <li className="flex min-h-11 items-center">
+        <li className={cn("flex items-center", !reviewed && "min-h-11")}>
           <Link
             href={originsHref}
             className={cn(
-              "inline-flex min-h-11 items-center px-afh-xs text-afh-caption font-bold text-[color:var(--accent-ink)]",
+              "relative inline-flex items-center px-afh-xs text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)]",
+              reviewed
+                ? "after:absolute after:-inset-y-[5px] after:inset-x-0"
+                : "min-h-11",
               CHARTER_FOCUS_RING
             )}
           >
@@ -127,6 +155,9 @@ function FormsList({
 // @req REQ-180
 export function AppellationsBlock({
   forms,
+  reviewed = false,
+  title,
+  subtitle,
   language = "fr",
   originsHref = "#origins",
   className,
@@ -139,12 +170,17 @@ export function AppellationsBlock({
       zone="first"
       className={cn("pt-afh-lg min-[1200px]:pt-afh-md", className)}
     >
-      <SearchFeedSectionHeading title={copy.appellations} />
+      <SearchFeedSectionHeading
+        title={title ?? copy.appellations}
+        subtitle={subtitle}
+        subtitleClassName="hidden min-[1200px]:block"
+      />
       <FormsList
         forms={visibleForms(forms, 3)}
         allForms={forms}
         language={language}
         originsHref={originsHref}
+        reviewed={reviewed}
         className="min-[1200px]:hidden"
         testId="appellations-mobile"
       />
@@ -153,6 +189,7 @@ export function AppellationsBlock({
         allForms={forms}
         language={language}
         originsHref={originsHref}
+        reviewed={reviewed}
         className="hidden min-[1200px]:flex"
         testId="appellations-desktop"
       />

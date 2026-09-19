@@ -21,7 +21,7 @@ describe("VerdictBlock", () => {
     expect(block).toHaveClass("pt-afh-2xl", "min-[1200px]:pt-0");
 
     const eyebrow = screen.getByTestId("verdict-eyebrow");
-    expect(eyebrow).toHaveTextContent("D’où vient ce nom · Peuple");
+    expect(eyebrow).toHaveTextContent("D'où vient ce nom · Peuple");
     expect(eyebrow.querySelector("span")).toHaveTextContent("· Peuple");
 
     const heading = screen.getByRole("heading", { level: 1, name: "Fang" });

@@ -41,6 +41,8 @@ export interface SearchFeedLayoutProps {
   composition: SearchFeedComposition;
   /** Full-width movement III blocks in rhetorical order. */
   closing?: readonly ReactNode[];
+  /** Preserve the approved board's block boxes as well as its visible gaps. */
+  reviewed?: boolean;
   className?: string;
 }
 
@@ -50,12 +52,16 @@ function FeedStream({
   className,
   testId,
   composition,
+  reviewed = false,
+  reviewedPadding = "none",
 }: {
   name: "primary" | "secondary" | "closing";
   children: readonly ReactNode[];
   className?: string;
   testId?: string;
   composition?: SearchFeedComposition["mode"];
+  reviewed?: boolean;
+  reviewedPadding?: "all" | "after-first" | "none";
 }) {
   return (
     <div
@@ -63,7 +69,14 @@ function FeedStream({
       data-feed-composition={composition}
       data-testid={testId}
       className={cn(
-        "flex min-w-0 flex-col gap-[var(--afh-section-gap)]",
+        "flex min-w-0 flex-col",
+        reviewed ? "gap-0" : "gap-[var(--afh-section-gap)]",
+        reviewed &&
+          reviewedPadding === "all" &&
+          "[&>[data-feed-block]]:pt-[var(--afh-section-gap)]",
+        reviewed &&
+          reviewedPadding === "after-first" &&
+          "[&>[data-feed-block]+[data-feed-block]]:pt-[var(--afh-section-gap)]",
         className
       )}
     >
@@ -87,6 +100,7 @@ export function SearchFeedLayout({
   first,
   composition,
   closing = [],
+  reviewed = false,
   className,
 }: SearchFeedLayoutProps) {
   const thin = composition.mode === "desktop-thin";
@@ -96,7 +110,7 @@ export function SearchFeedLayout({
       data-testid="feed-layout"
       data-feed-layout={composition.mode}
       className={cn(
-        "min-w-0",
+        "min-w-0 text-left",
         thin &&
           "min-[1200px]:mx-auto min-[1200px]:w-[880px] min-[1200px]:max-w-full",
         className
@@ -110,9 +124,11 @@ export function SearchFeedLayout({
         composition.blocks.length > 0 ? (
           <FeedStream
             name="primary"
-            className="mt-[var(--afh-section-gap)]"
+            className={reviewed ? "mt-0" : "mt-[var(--afh-section-gap)]"}
             testId="feed-movement"
             composition={composition.mode}
+            reviewed={reviewed}
+            reviewedPadding="all"
           >
             {composition.blocks}
           </FeedStream>
@@ -121,28 +137,50 @@ export function SearchFeedLayout({
         <div
           data-testid="feed-movement"
           data-feed-composition={composition.mode}
-          className="mt-[var(--afh-section-gap)] flex min-w-0 flex-col gap-[var(--afh-section-gap)] min-[1200px]:grid min-[1200px]:grid-cols-12 min-[1200px]:gap-afh-6xl"
+          className={cn(
+            "flex min-w-0 flex-col min-[1200px]:grid min-[1200px]:grid-cols-12 min-[1200px]:gap-afh-6xl",
+            reviewed
+              ? "mt-0 gap-0 pt-[var(--afh-section-gap)]"
+              : "mt-[var(--afh-section-gap)] gap-[var(--afh-section-gap)]"
+          )}
         >
-          <FeedStream name="primary" className="min-[1200px]:col-span-8">
+          <FeedStream
+            name="primary"
+            className="min-[1200px]:col-span-8"
+            reviewed={reviewed}
+            reviewedPadding="after-first"
+          >
             {composition.primary}
           </FeedStream>
-          <FeedStream name="secondary" className="min-[1200px]:col-span-4">
+          <FeedStream
+            name="secondary"
+            className="min-[1200px]:col-span-4"
+            reviewed={reviewed}
+            reviewedPadding="after-first"
+          >
             {composition.secondary}
           </FeedStream>
         </div>
       ) : composition.primary.length > 0 ? (
         <FeedStream
           name="primary"
-          className="mt-[var(--afh-section-gap)]"
+          className={reviewed ? "mt-0" : "mt-[var(--afh-section-gap)]"}
           testId="feed-movement"
           composition={composition.mode}
+          reviewed={reviewed}
+          reviewedPadding="all"
         >
           {composition.primary}
         </FeedStream>
       ) : null}
 
       {closing.length > 0 ? (
-        <FeedStream name="closing" className="mt-[var(--afh-section-gap)]">
+        <FeedStream
+          name="closing"
+          className={reviewed ? "mt-0" : "mt-[var(--afh-section-gap)]"}
+          reviewed={reviewed}
+          reviewedPadding="all"
+        >
           {closing}
         </FeedStream>
       ) : null}

@@ -50,6 +50,7 @@ import {
 } from "@/lib/search/searchFeedPlan";
 import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
 import type { FeedBlockId } from "@/lib/search/resultGrammar";
+import type { SearchFeedPresentation } from "@/lib/search/searchFeedPresentation";
 import type {
   SearchLead,
   SearchNearName,
@@ -86,6 +87,8 @@ export interface SearchFeedProps {
   leads: readonly SearchLead[];
   nearNames?: readonly SearchNearName[];
   companions: SearchCompanionsData;
+  resultCount?: number;
+  presentation?: SearchFeedPresentation;
   onResultNavigate?: (type: string, rank: number) => void;
 }
 
@@ -204,6 +207,8 @@ export function SearchFeed({
   leads,
   nearNames = [],
   companions: loadedCompanions,
+  resultCount,
+  presentation,
   onResultNavigate,
 }: SearchFeedProps) {
   const [activeLens, setActiveLens] = useState<FeedLensId>("all");
@@ -224,11 +229,12 @@ export function SearchFeed({
         quiz: { count: 0, item: null },
       }
     : loadedCompanions;
-  const forms = resultForms(state, query, subjects, leads, language);
+  const derivedForms = resultForms(state, query, subjects, leads, language);
+  const forms = presentation?.appellations?.forms ?? derivedForms;
   const presentations = subjects.flatMap((subject) =>
     subject.naming ? [subject.naming.presentation] : []
   );
-  const originItems = subjects.flatMap((subject) =>
+  const derivedOriginItems = subjects.flatMap((subject) =>
     (subject.naming?.presentation.forms ?? []).flatMap((form) =>
       form.origin
         ? [
@@ -249,7 +255,8 @@ export function SearchFeed({
         : []
     )
   );
-  const tileRows = subjects.flatMap((subject) =>
+  const originItems = presentation?.origins?.items ?? derivedOriginItems;
+  const derivedTileRows = subjects.flatMap((subject) =>
     (subject.associatedPeoples ?? []).map((people) => ({
       title: people.name,
       meta: getSearchEntityLabel("people", language),
@@ -259,6 +266,7 @@ export function SearchFeed({
       ),
     }))
   );
+  const tileRows = presentation?.tiles?.items ?? derivedTileRows;
   const disagreementStatements = presentations.flatMap((presentation) =>
     presentation.disagreements.flatMap(({ positions }) =>
       positions.flatMap(({ statement }) => (statement ? [statement] : []))
@@ -268,12 +276,16 @@ export function SearchFeed({
     (presentation) =>
       presentation.problematic || presentation.disagreements.length > 0
   );
+  const prosePresentation = (id: "shared-name" | "problem" | "near-name") =>
+    presentation?.prose?.find((item) => item.id === id);
+  const presentedProblem = prosePresentation("problem");
   const problemParagraphs =
-    disagreementStatements.length > 0
+    presentedProblem?.paragraphs ??
+    (disagreementStatements.length > 0
       ? disagreementStatements
       : hasRecordedProblem
         ? [copy.blocks.problematicBody]
-        : [];
+        : []);
   const subjectIdentities = new Set(
     subjects.map((subject) => subject.peopleGroupId ?? subject.id)
   );
@@ -281,7 +293,7 @@ export function SearchFeed({
     subjects.length >= 2 &&
     subjects.every((subject) => subject.type === "people") &&
     subjectIdentities.size >= 2;
-  const subjectSilences = subjects.flatMap((subject) => {
+  const derivedSubjectSilences = subjects.flatMap((subject) => {
     const naming = subject.naming;
     const isDated = Boolean(
       naming &&
@@ -301,6 +313,8 @@ export function SearchFeed({
       },
     ];
   });
+  const subjectSilences =
+    presentation?.owed?.silences ?? derivedSubjectSilences;
   const availability = feedAvailability(
     state,
     subjects,
@@ -315,7 +329,7 @@ export function SearchFeed({
     nearNames.length
   );
   const plan = buildSearchFeedPlan(state, availability, { relatedOnly });
-  const plates: FeedPlateItem[] = [
+  const combinedPlates: FeedPlateItem[] = [
     ...companions.anecdotes.items.map((item) => ({
       ...item,
       type: "anecdote" as const,
@@ -325,9 +339,20 @@ export function SearchFeed({
       type: "proverb" as const,
     })),
   ];
+  const plateOrder = new Map(
+    (presentation?.plates?.order ?? []).map((id, index) => [id, index])
+  );
+  const plates =
+    plateOrder.size > 0
+      ? [...combinedPlates].sort(
+          (left, right) =>
+            (plateOrder.get(left.id) ?? Number.MAX_SAFE_INTEGER) -
+            (plateOrder.get(right.id) ?? Number.MAX_SAFE_INTEGER)
+        )
+      : combinedPlates;
   const ficheEntries =
     results.length > 0 ? groupPeopleResults([...results]) : leads;
-  const ficheRows = ficheEntries.map((entry, index): FeedFicheItem =>
+  const derivedFicheRows = ficheEntries.map((entry, index): FeedFicheItem =>
     entry.type === "peopleGroup"
       ? {
           kind: getSearchEntityLabel("people", language),
@@ -347,14 +372,17 @@ export function SearchFeed({
           onNavigate: () => onResultNavigate?.(entry.type, index + 1),
         }
   );
+  const ficheRows = presentation?.fiches?.items ?? derivedFicheRows;
   const displayName =
-    state === "typo" && leads[0]
+    presentation?.answer?.name ??
+    (state === "typo" && leads[0]
       ? leads[0].name
       : subjects[0]
         ? getLocalizedSearchResultName(subjects[0], language)
-        : query;
+        : query);
   const verdict =
-    state === "unknown"
+    presentation?.answer?.verdict ??
+    (state === "unknown"
       ? answerCopy.unknownName
       : state === "typo"
         ? copy.answer.typo(displayName)
@@ -364,13 +392,14 @@ export function SearchFeed({
             ? subjects.length > 0
               ? copy.answer.widened
               : copy.answer.relatedOnly
-            : copy.answer.exact;
+            : copy.answer.exact);
   const summary =
-    state === "unknown"
+    presentation?.answer?.summary ??
+    (state === "unknown"
       ? answerCopy.unknownNameBody
       : state === "widened"
         ? copy.answer.widenedSummary
-        : copy.answer.exactSummary;
+        : copy.answer.exactSummary);
   const contributionTarget = subjects[0]
     ? {
         type: subjects[0].type,
@@ -423,11 +452,24 @@ export function SearchFeed({
           {
             id: "fiches" as const,
             label: copy.filters.fiches,
-            count: ficheRows.length,
+            count: resultCount ?? ficheRows.length,
           },
         ]
       : []),
   ];
+  const appellationsSubtitle = presentation?.appellations
+    ? Object.prototype.hasOwnProperty.call(
+        presentation.appellations,
+        "subtitle"
+      )
+      ? (presentation.appellations.subtitle ?? undefined)
+      : answerCopy.appellationsLead
+    : undefined;
+  const reviewedWideningNote = presentation
+    ? presentation.shorts?.wideningNote
+    : companions.shorts.items.some(({ match }) => match.relation !== "exact")
+      ? copy.wideningNote
+      : undefined;
 
   const renderBlock = (
     id: FeedBlockId,
@@ -450,8 +492,13 @@ export function SearchFeed({
             name={displayName}
             verdict={verdict}
             summary={summary}
+            kind={presentation?.answer?.kind}
+            eyebrow={presentation?.answer?.eyebrow}
             language={language}
-            tone={state === "typo" || state === "unknown" ? "plain" : "answer"}
+            tone={
+              presentation?.answer?.tone ??
+              (state === "typo" || state === "unknown" ? "plain" : "answer")
+            }
             className="min-[1200px]:col-span-7"
           />
         );
@@ -459,6 +506,9 @@ export function SearchFeed({
         return (
           <AppellationsBlock
             forms={forms}
+            reviewed={Boolean(presentation)}
+            title={presentation?.appellations?.title}
+            subtitle={appellationsSubtitle}
             language={language}
             className="min-[1200px]:col-span-5"
           />
@@ -467,42 +517,41 @@ export function SearchFeed({
         return needsEmptyShort ? (
           <ShortsBlock
             items={companions.shorts.items}
+            reviewed={Boolean(presentation)}
+            title={presentation?.shorts?.title}
+            subtitle={presentation?.shorts?.subtitle ?? undefined}
             language={language}
             allHref={getLocalizedRoute(language, "discoveries")}
-            wideningNote={
-              companions.shorts.items.some(
-                ({ match }) => match.relation !== "exact"
-              )
-                ? copy.wideningNote
-                : undefined
+            wideningNote={reviewedWideningNote}
+            emptySlot={
+              presentation?.shorts?.emptySlot ?? {
+                name: displayName,
+                question: formatProductionNameQuestion(displayName, language),
+                body: copy.emptyShort.body,
+                action: copy.emptyShort.action,
+              }
             }
-            emptySlot={{
-              name: displayName,
-              question: formatProductionNameQuestion(displayName, language),
-              body: copy.emptyShort.body,
-              action: copy.emptyShort.action,
-            }}
             contributionTarget={contributionTarget}
           />
         ) : (
           <ShortsBlock
             items={companions.shorts.items}
+            reviewed={Boolean(presentation)}
+            title={presentation?.shorts?.title}
+            subtitle={presentation?.shorts?.subtitle ?? undefined}
             language={language}
             allHref={getLocalizedRoute(language, "discoveries")}
-            wideningNote={
-              companions.shorts.items.some(
-                ({ match }) => match.relation !== "exact"
-              )
-                ? copy.wideningNote
-                : undefined
-            }
+            wideningNote={reviewedWideningNote}
           />
         );
       case "origins": {
         return (
           <OriginsBlock
-            title={answerCopy.origins}
+            title={presentation?.origins?.title ?? answerCopy.origins}
+            subtitle={presentation?.origins?.subtitle ?? undefined}
+            lede={presentation?.origins?.lede}
             items={originItems}
+            reviewed={Boolean(presentation)}
             language={language}
             zone={zone}
           />
@@ -511,23 +560,30 @@ export function SearchFeed({
       case "peoples":
         return (
           <PeopleBlock
-            title={copy.shelves.peoples}
+            title={presentation?.peoples?.title ?? copy.shelves.peoples}
+            subtitle={presentation?.peoples?.subtitle ?? undefined}
             zone={zone}
-            items={subjects.map((subject) => ({
-              name: getLocalizedSearchResultName(subject, language),
-              meta: copy.blocks.peopleMeta,
-              description:
-                plainSnippet(subject.snippet) ?? copy.blocks.peopleDescription,
-              href: ficheHrefFor(subject, language),
-            }))}
+            items={
+              presentation?.peoples?.items ??
+              subjects.map((subject) => ({
+                name: getLocalizedSearchResultName(subject, language),
+                meta: copy.blocks.peopleMeta,
+                description:
+                  plainSnippet(subject.snippet) ??
+                  copy.blocks.peopleDescription,
+                href: ficheHrefFor(subject, language),
+              }))
+            }
           />
         );
       case "shared-name":
+        const sharedName = prosePresentation("shared-name");
         return (
           <ProseBlock
             blockId="shared-name"
-            title={copy.shelves.sharedName}
-            paragraphs={[copy.blocks.sharedNameBody]}
+            title={sharedName?.title ?? copy.shelves.sharedName}
+            paragraphs={sharedName?.paragraphs ?? [copy.blocks.sharedNameBody]}
+            standing={sharedName?.standing}
             language={language}
             zone={zone}
           />
@@ -535,27 +591,40 @@ export function SearchFeed({
       case "tiles":
         return (
           <TilesBlock
-            title={copy.blocks.relatedPeoplesTitle}
+            title={
+              presentation?.tiles?.title ?? copy.blocks.relatedPeoplesTitle
+            }
+            subtitle={presentation?.tiles?.subtitle ?? undefined}
             zone={zone}
             items={tileRows}
+            actionHref={presentation?.tiles?.actionHref}
+            actionLabel={presentation?.tiles?.actionLabel}
+            reviewed={Boolean(presentation)}
           />
         );
       case "atlas-holds":
         return (
           <FactsBlock
-            title={answerCopy.atlasHolds}
-            subtitle={copy.blocks.atlasHoldsSummary}
+            title={presentation?.facts?.title ?? answerCopy.atlasHolds}
+            subtitle={
+              presentation?.facts?.subtitle ?? copy.blocks.atlasHoldsSummary
+            }
             zone={zone}
-            items={[
-              { label: answerCopy.appellations, value: String(forms.length) },
-              { label: copy.shelves.fiches, value: String(ficheRows.length) },
-            ]}
+            items={
+              presentation?.facts?.items ?? [
+                { label: answerCopy.appellations, value: String(forms.length) },
+                { label: copy.shelves.fiches, value: String(ficheRows.length) },
+              ]
+            }
           />
         );
       case "plates":
         return (
           <PlatesBlock
             items={plates}
+            reviewed={Boolean(presentation)}
+            title={presentation?.plates?.title}
+            subtitle={presentation?.plates?.subtitle ?? undefined}
             language={language}
             zone={zone}
             allHref={getLocalizedRoute(language, "discoveries")}
@@ -564,6 +633,7 @@ export function SearchFeed({
       case "quiz":
         return companions.quiz.item ? (
           <QuizBlock
+            reviewed={Boolean(presentation)}
             question={companions.quiz.item}
             selectedOption={selectedOption}
             onSelectOption={setSelectedOption}
@@ -571,7 +641,10 @@ export function SearchFeed({
               setValidatedOption(option ?? selectedOption)
             }
             language={language}
-            questionCountLabel={copy.blocks.questionCount}
+            questionCountLabel={
+              presentation?.quiz?.questionCountLabel ??
+              copy.blocks.questionCount
+            }
             allHref={getLocalizedRoute(language, "quiz")}
             zone={zone}
             result={
@@ -593,6 +666,10 @@ export function SearchFeed({
         return companions.images.items[0] ? (
           <ImageBlock
             item={companions.images.items[0]}
+            reviewed={Boolean(presentation)}
+            title={presentation?.images?.title}
+            subtitle={presentation?.images?.subtitle ?? undefined}
+            licenceText={presentation?.images?.licenceText}
             language={language}
             zone={zone}
           />
@@ -601,43 +678,58 @@ export function SearchFeed({
         return (
           <ProseBlock
             blockId="problem"
-            title={answerCopy.problem}
+            title={presentedProblem?.title ?? answerCopy.problem}
             paragraphs={problemParagraphs}
+            standing={presentedProblem?.standing}
             language={language}
             zone={zone}
           />
         );
       case "near-name":
+        const nearName = prosePresentation("near-name");
         return (
           <ProseBlock
             blockId="near-name"
-            title={copy.shelves.nearName}
-            paragraphs={nearNames.map((result) =>
-              copy.blocks.nearNameBody(result.name)
-            )}
+            title={nearName?.title ?? copy.shelves.nearName}
+            paragraphs={
+              nearName?.paragraphs ??
+              nearNames.map((result) => copy.blocks.nearNameBody(result.name))
+            }
+            standing={nearName?.standing}
             language={language}
             zone={zone}
           />
         );
       case "fiches":
         return (
-          <FichesBlock items={ficheRows} language={language} zone={zone} />
+          <FichesBlock
+            items={ficheRows}
+            title={presentation?.fiches?.title}
+            subtitle={presentation?.fiches?.subtitle ?? undefined}
+            language={language}
+            zone={zone}
+          />
         );
       case "owed":
         return (
           <OwedBlock
             language={language}
+            reviewed={Boolean(presentation)}
             thin={plan.thin}
             silences={subjectSilences}
-            conviction={{
-              title: answerCopy.conviction,
-              body: answerCopy.convictionBody,
-            }}
-            invitation={{
-              title: answerCopy.invitation,
-              body: answerCopy.invitationBody,
-              action: answerCopy.invitationAction,
-            }}
+            conviction={
+              presentation?.owed?.conviction ?? {
+                title: answerCopy.conviction,
+                body: answerCopy.convictionBody,
+              }
+            }
+            invitation={
+              presentation?.owed?.invitation ?? {
+                title: answerCopy.invitation,
+                body: answerCopy.invitationBody,
+                action: answerCopy.invitationAction,
+              }
+            }
             contributionTarget={contributionTarget}
           />
         );
@@ -646,14 +738,16 @@ export function SearchFeed({
           <FurtherBlock
             language={language}
             links={[
-              {
-                href: getLocalizedRoute(language, "peoples"),
-                label: answerCopy.browsePeoples,
-              },
-              {
-                href: getLocalizedRoute(language, "families"),
-                label: answerCopy.browseFamilies,
-              },
+              ...(presentation?.further?.links ?? [
+                {
+                  href: getLocalizedRoute(language, "peoples"),
+                  label: answerCopy.browsePeoples,
+                },
+                {
+                  href: getLocalizedRoute(language, "families"),
+                  label: answerCopy.browseFamilies,
+                },
+              ]),
             ]}
           />
         );
@@ -687,7 +781,9 @@ export function SearchFeed({
       {firstIds.includes("shorts") ? (
         <div
           data-feed-opening="shorts"
-          className="mt-afh-lg min-[1200px]:mt-afh-5xl"
+          className={
+            presentation ? "mt-0" : "mt-afh-lg min-[1200px]:mt-afh-5xl"
+          }
         >
           {renderBlock("shorts")}
         </div>
@@ -709,6 +805,7 @@ export function SearchFeed({
     return (
       <SearchFeedLayout
         className="text-afh-text"
+        reviewed={Boolean(presentation)}
         first={first}
         composition={{
           mode: "mobile",
@@ -724,6 +821,7 @@ export function SearchFeed({
   return (
     <SearchFeedLayout
       className="text-afh-text"
+      reviewed={Boolean(presentation)}
       first={first}
       composition={
         plan.thin

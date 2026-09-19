@@ -46,11 +46,11 @@ export function LensesBlock({
             aria-pressed={selected}
             onClick={() => onChange(lens.id)}
             className={cn(
-              "inline-flex min-h-11 shrink-0 snap-start items-center gap-afh-xs rounded-afh-full border px-afh-2xl text-afh-caption font-bold leading-[var(--afh-leading-caption)]",
+              "inline-flex min-h-11 shrink-0 snap-start items-center gap-afh-xs rounded-afh-full px-afh-2xl text-afh-caption font-bold leading-[var(--afh-leading-caption)]",
               CHARTER_FOCUS_RING,
               selected
-                ? "border-transparent bg-afh-text text-afh-bg"
-                : "border-afh-border bg-afh-surface text-afh-text"
+                ? "border-0 bg-afh-text text-afh-bg"
+                : "border border-afh-border bg-afh-surface text-afh-text"
             )}
           >
             <span>{lens.label}</span>

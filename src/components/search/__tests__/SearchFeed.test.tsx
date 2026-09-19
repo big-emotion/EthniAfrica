@@ -112,6 +112,48 @@ describe("SearchFeed", () => {
   });
 
   // @req REQ-180
+  it("renders reviewed presentation copy and keeps lens totals separate from visible cards", () => {
+    const value = fixture("mande");
+    const visibleResult = value.production.search.results[0]!;
+    const { container } = render(
+      <SearchFeed
+        query={value.query}
+        language="fr"
+        state="exact"
+        results={[visibleResult]}
+        subjects={[visibleResult]}
+        leads={[]}
+        companions={value.production.companions}
+        resultCount={34}
+        presentation={{
+          answer: {
+            name: "Mandé",
+            verdict: "Un nom venu du dehors.",
+            summary: "Reviewed fixture summary.",
+          },
+          fiches: {
+            items: [
+              {
+                kind: "Famille",
+                name: "Mandé",
+                meta: "31 peuples",
+                href: "/fr/familles/mande",
+              },
+            ],
+          },
+        }}
+      />
+    );
+
+    expect(screen.getByText("Un nom venu du dehors.")).toBeInTheDocument();
+    expect(screen.getByText("Reviewed fixture summary.")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Fiches 34/ })).toBeVisible();
+    expect(
+      container.querySelectorAll('[data-feed-block="fiches"] li')
+    ).toHaveLength(1);
+  });
+
+  // @req REQ-180
   it("carries the approved first-screen geometry without duplicating blocks", () => {
     const value = fixture("mande");
     const { container } = render(

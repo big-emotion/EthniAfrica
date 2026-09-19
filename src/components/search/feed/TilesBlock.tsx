@@ -18,16 +18,19 @@ export interface TilesBlockProps {
   items: FeedTileItem[];
   actionHref?: string;
   actionLabel?: string;
+  reviewed?: boolean;
   zone?: FeedMovementZone;
 }
 
 function TileContent({ item }: { item: FeedTileItem }) {
   return (
     <>
-      <span className="text-afh-small font-bold text-afh-text">
+      <span className="text-afh-small font-bold leading-[var(--afh-leading-small)] text-afh-text">
         {item.title}
       </span>
-      <span className="text-afh-caption text-afh-text-soft">{item.meta}</span>
+      <span className="text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
+        {item.meta}
+      </span>
     </>
   );
 }
@@ -39,6 +42,7 @@ export function TilesBlock({
   items,
   actionHref,
   actionLabel,
+  reviewed = false,
   zone = "primary",
 }: TilesBlockProps) {
   return (
@@ -47,8 +51,10 @@ export function TilesBlock({
         title={title}
         subtitle={subtitle}
         action={
-          actionHref && actionLabel ? (
-            <ActionLink href={actionHref}>{actionLabel}</ActionLink>
+          actionHref && actionLabel && !reviewed ? (
+            <ActionLink href={actionHref}>
+              {actionLabel.replace(/\s*→$/, "")}
+            </ActionLink>
           ) : undefined
         }
       />
@@ -70,6 +76,16 @@ export function TilesBlock({
           </li>
         ))}
       </ul>
+      {reviewed && actionHref && actionLabel ? (
+        <div className="mt-afh-lg">
+          <Link
+            href={actionHref}
+            className={`text-afh-small font-bold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] ${CHARTER_FOCUS_RING}`}
+          >
+            {actionLabel}
+          </Link>
+        </div>
+      ) : null}
     </SearchFeedBlock>
   );
 }

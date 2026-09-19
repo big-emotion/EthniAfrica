@@ -1,10 +1,12 @@
 import type { ReactNode } from "react";
 
+import { InlineMarkup } from "@/components/search/feed/InlineMarkup";
 import { cn } from "@/lib/utils";
 
 export interface SearchFeedSectionHeadingProps {
   title: string;
   subtitle?: string;
+  subtitleClassName?: string;
   action?: ReactNode;
   id?: string;
   className?: string;
@@ -15,6 +17,7 @@ export interface SearchFeedSectionHeadingProps {
 export function SearchFeedSectionHeading({
   title,
   subtitle,
+  subtitleClassName,
   action,
   id,
   className,
@@ -26,13 +29,18 @@ export function SearchFeedSectionHeading({
           id={id}
           className="font-afh-display text-afh-h3 font-bold leading-[var(--afh-leading-h3)] text-afh-text"
         >
-          {title}
+          <InlineMarkup text={title} />
         </h2>
         {action ? <div className="-my-[9px] shrink-0">{action}</div> : null}
       </div>
       {subtitle ? (
-        <p className="mt-afh-xs text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
-          {subtitle}
+        <p
+          className={cn(
+            "mt-afh-xs text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft",
+            subtitleClassName
+          )}
+        >
+          <InlineMarkup text={subtitle} />
         </p>
       ) : null}
     </header>

@@ -53,6 +53,24 @@ describe("QuizBlock", () => {
     );
   });
 
+  // @req REQ-178
+  it("suppresses the item-level relation in reviewed board mode", () => {
+    render(
+      <QuizBlock
+        reviewed
+        question={question}
+        selectedOption={null}
+        onSelectOption={vi.fn()}
+        onValidate={vi.fn()}
+        language="fr"
+        questionCountLabel="Une question"
+        allHref={getLocalizedRoute("fr", "quiz")}
+      />
+    );
+
+    expect(screen.queryByText("Peuple lié")).toBeNull();
+  });
+
   // @req REQ-180
   it("renders the sourced reveal state without inventing session metadata", () => {
     const onNext = vi.fn();
