@@ -30,6 +30,21 @@ const BREAKPOINTS = [430, 720, 1200] as const;
 // honest on a runner whose WebGL is unusable, where the map is all there is.
 const GLOBE_SURFACE_NAME = /(Globe|Carte) de l'atlas\./;
 const MORPH_NAME = "Morphing de la carte plate vers le globe";
+const ACTIVATE_GLOBE_NAME = "Activer la carte interactive";
+
+async function activateInteractiveMap(page: Page) {
+  const activateButton = page.getByRole("button", {
+    name: ACTIVATE_GLOBE_NAME,
+  });
+  await expect(activateButton).toBeVisible();
+  await activateButton.click();
+
+  const globeSurface = page.getByRole("application", {
+    name: GLOBE_SURFACE_NAME,
+  });
+  await expect(globeSurface).toBeVisible();
+  return globeSurface;
+}
 
 async function expectNoSeriousOrCriticalViolations(page: Page) {
   // Audit the page at rest, not mid-arrival. Axe resolves a colour through an
@@ -86,10 +101,7 @@ test.describe("Home hero interactive globe (REQ-112)", () => {
       await page.setViewportSize({ width, height: 900 });
       await page.goto(HOME_URL);
 
-      const globeSurface = page.getByRole("application", {
-        name: GLOBE_SURFACE_NAME,
-      });
-      await expect(globeSurface).toBeVisible();
+      const globeSurface = await activateInteractiveMap(page);
       await expect(
         page.getByRole("button", { name: "Recentrer sur l’Afrique" })
       ).toBeVisible();
@@ -164,6 +176,7 @@ test.describe("Home hero interactive globe (REQ-112)", () => {
     });
 
     await page.goto(HOME_URL);
+    await activateInteractiveMap(page);
 
     await expect(page.locator("path#africa-landmass")).toBeVisible();
     // The flat map cannot morph or light WebGL indicatrices, so neither
@@ -185,10 +198,7 @@ test.describe("Home hero interactive globe (REQ-112)", () => {
     await page.emulateMedia({ reducedMotion: "reduce" });
     await page.goto(HOME_URL);
 
-    const globeSurface = page.getByRole("application", {
-      name: GLOBE_SURFACE_NAME,
-    });
-    await expect(globeSurface).toBeVisible();
+    await activateInteractiveMap(page);
 
     const morph = page.getByRole("slider", { name: MORPH_NAME });
     await expect(morph).toHaveAttribute("aria-valuetext", "Globe");
@@ -215,15 +225,11 @@ test.describe("Home hero interactive globe (REQ-112)", () => {
 
     const body = await response.text();
 
-    // The capability gate (ContinentGlobeStage) mounts nothing at all until a
-    // client-side effect has answered, so the raw server response carries
-    // neither the WebGL runtime nor the flat map. The fallback is for a
-    // browser that has been *found* to have no WebGL; painting it server-side
-    // showed it to everyone for the second the chunk took to arrive, which
-    // reads as a glitch rather than as a fallback. The stage's own box holds
-    // the space open in the meantime.
+    // The raw response paints the committed static map immediately, but does
+    // not load or render the WebGL runtime before the reader explicitly asks
+    // for the interactive experience.
     expect(body).toContain("home-globe-stage");
-    expect(body).not.toContain('id="africa-landmass"');
+    expect(body).toContain('id="africa-landmass"');
     expect(body.toLowerCase()).not.toContain("<canvas");
   });
 
@@ -234,9 +240,7 @@ test.describe("Home hero interactive globe (REQ-112)", () => {
     }) => {
       await page.setViewportSize({ width, height: 900 });
       await page.goto(HOME_URL);
-      await expect(
-        page.getByRole("application", { name: GLOBE_SURFACE_NAME })
-      ).toBeVisible();
+      await activateInteractiveMap(page);
 
       await expectNoSeriousOrCriticalViolations(page);
     });

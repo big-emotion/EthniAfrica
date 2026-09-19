@@ -131,20 +131,22 @@ export function CompareEntityHeader({
               />
             </Suspense>
           </div>
-          <Suspense fallback={null}>
-            <LazySourceChainSheet
-              open={sheetOpen}
-              onOpenChange={setSheetOpen}
-              assertion={{
-                statement: copy.editorialConfidence(column.label),
-                confidenceScore: confidenceScore ?? 0,
-                sourceCount: sourceCount ?? 0,
-                lastHumanAuditAt,
-              }}
-              sources={EMPTY_SOURCES}
-              anchorId={anchorId}
-            />
-          </Suspense>
+          {sheetOpen && (
+            <Suspense fallback={null}>
+              <LazySourceChainSheet
+                open
+                onOpenChange={setSheetOpen}
+                assertion={{
+                  statement: copy.editorialConfidence(column.label),
+                  confidenceScore: confidenceScore ?? 0,
+                  sourceCount: sourceCount ?? 0,
+                  lastHumanAuditAt,
+                }}
+                sources={EMPTY_SOURCES}
+                anchorId={anchorId}
+              />
+            </Suspense>
+          )}
         </>
       ) : (
         <UnauditedDisclaimer

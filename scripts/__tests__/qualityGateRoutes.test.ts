@@ -387,6 +387,10 @@ describe("browser quality-gate routes", () => {
           "error",
           { maxNumericValue: 0.1 },
         ]);
+        expect(scoped[0].assertions["max-potential-fid"]).toEqual([
+          "error",
+          { maxNumericValue: 250 },
+        ]);
       }
     }
   });

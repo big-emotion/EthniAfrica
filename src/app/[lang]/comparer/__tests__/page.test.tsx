@@ -9,7 +9,6 @@ const push = vi.fn();
 const route = vi.hoisted(() => ({ lang: "fr" }));
 
 vi.mock("next/navigation", () => ({
-  useParams: () => ({ lang: route.lang }),
   useRouter: () => ({ push }),
 }));
 
@@ -39,14 +38,15 @@ const PEOPLES_ENVELOPE = {
   },
 };
 
-function renderPage() {
+async function renderPage() {
   const queryClient = new QueryClient({
     defaultOptions: { queries: { retry: false } },
   });
+  const page = await ComparerPickerPage({
+    params: Promise.resolve({ lang: route.lang }),
+  });
   return render(
-    <QueryClientProvider client={queryClient}>
-      <ComparerPickerPage />
-    </QueryClientProvider>
+    <QueryClientProvider client={queryClient}>{page}</QueryClientProvider>
   );
 }
 
@@ -75,8 +75,8 @@ describe("/[lang]/comparer picker page", () => {
   });
 
   // @req REQ-091
-  it("renders inside the PageLayout with the Comparer section name", () => {
-    renderPage();
+  it("renders inside the PageLayout with the Comparer section name", async () => {
+    await renderPage();
     expect(screen.getByTestId("page-layout").getAttribute("data-section")).toBe(
       "Comparer"
     );
@@ -86,8 +86,8 @@ describe("/[lang]/comparer picker page", () => {
   });
 
   // @req REQ-097
-  it("replaces the static shell copy with the interactive picker", () => {
-    renderPage();
+  it("replaces the static shell copy with the interactive picker", async () => {
+    await renderPage();
     expect(
       screen.getByRole("radiogroup", { name: /type d.?entité/i })
     ).toBeInTheDocument();
@@ -98,8 +98,8 @@ describe("/[lang]/comparer picker page", () => {
   });
 
   // @req REQ-097
-  it("offers the compare action bar, disabled until the minimum is reached", () => {
-    renderPage();
+  it("offers the compare action bar, disabled until the minimum is reached", async () => {
+    await renderPage();
     const bar = screen.getByRole("region", {
       name: /sélection de comparaison/i,
     });
@@ -110,7 +110,7 @@ describe("/[lang]/comparer picker page", () => {
 
   // @req REQ-097
   it("sends the reader to the result route once two peoples are chosen", async () => {
-    renderPage();
+    await renderPage();
 
     await pickEntity(/yoruba/i);
     await pickEntity(/zulu/i);
@@ -131,7 +131,7 @@ describe("/[lang]/comparer picker page", () => {
   it("composes the result route in the locale the picker is served in", async () => {
     route.lang = "en";
     try {
-      renderPage();
+      await renderPage();
 
       await pickEntity(/yoruba/i);
       await pickEntity(/zulu/i);
@@ -153,7 +153,7 @@ describe("/[lang]/comparer picker page", () => {
   // @req REQ-140
   it("sends the page locale with English picker suggestions", async () => {
     route.lang = "en";
-    renderPage();
+    await renderPage();
 
     fireEvent.change(screen.getByRole("combobox"), {
       target: { value: "yo" },
