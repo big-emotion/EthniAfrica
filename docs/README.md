@@ -32,6 +32,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Games rollout plan — from REQ-120's original scope to three finished games](design/games-rollout-plan.md)
 - [Generated imagery — the three launch collections](design/imagery-collections.md)
 - [Atlas mockups — the visual oracle](design/mockups/README.md)
+- [The result-page feed mockups — forty boards](design/mockups/search-feed/README.md)
 - [The result-page mockups — twenty boards, and what parity means](design/mockups/search/README.md)
 - [Moderation charter](design/moderation-charter.md)
 - [How a name reaches a country](design/name-to-country-linking.md)
@@ -106,6 +107,7 @@ were referenced by nothing at all, two of them written that same week.
 ## Plans
 
 - [Congo history dossiers: implementation plan](plans/congo-history-dossiers.md)
+- [Search-result feed: implementation plan](plans/search-result-feed.md)
 
 ## Elsewhere
 
