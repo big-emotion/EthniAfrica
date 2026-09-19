@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// AR41: Why this file uses flat config and `eslint .` instead of `next lint`
+// AR41: Why this file uses flat config and the ESLint CLI instead of `next lint`
 // -----------------------------------------------------------------------------
 // Next.js ≤15 ships a `next lint` command that wraps ESLint v8 with a legacy
 // .eslintrc-style config.  ESLint v9 (used here) dropped legacy config support
@@ -7,8 +7,9 @@
 // does not yet invoke the flat-config path, so it throws a configuration error
 // (AR41) when eslint.config.mjs is the only config file present.
 //
-// Deliberate trade-off: the lint script uses bare `eslint .` with this flat
-// config instead of `next lint`.  All Next.js-specific rules remain active
+// Deliberate trade-off: the lint script runs ESLint directly over the owned
+// `src` and `scripts` trees instead of using `next lint`. All Next.js-specific
+// rules remain active
 // because `eslint-config-next` (spread below) includes them, including
 // `@next/next/no-html-link-for-anchor` and the full `@next/next` plugin rule
 // set.  No Next.js rules are lost; only the `next lint` wrapper is bypassed.
