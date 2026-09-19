@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import { ACCENT_CLASS_BY_ENTITY } from "@/components/fiche/FicheSequence";
+import { ACCENT_CLASS_BY_ENTITY } from "@/components/fiche/ficheAccent";
 import { TranslationProvenanceMarker } from "@/components/fiche/TranslationProvenanceMarker";
 import type { TranslationProvenance } from "@/lib/afrik/translations/types";
 import type { FicheEntityType } from "@/types/fiche";

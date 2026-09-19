@@ -5,7 +5,6 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
 
 import { RelationsList, type RelationsListProps } from "./RelationsList";
-import SourceChainSheet from "@/components/source-transparency/SourceChainSheet";
 import type { EgoNetworkGraphCenter } from "@/components/relations/EgoNetworkGraph";
 import type { RelationListItem } from "@/lib/relationsDataTransformer";
 import { getPeopleLinksRoute } from "@/lib/routing";
@@ -21,6 +20,11 @@ const LazyEgoNetworkGraph = dynamic(
     import("@/components/relations/EgoNetworkGraph").then(
       (mod) => mod.EgoNetworkGraph
     ),
+  { ssr: false }
+);
+
+const LazySourceChainSheet = dynamic(
+  () => import("@/components/source-transparency/SourceChainSheet"),
   { ssr: false }
 );
 
@@ -80,7 +84,7 @@ export function RelationsListWithSourceSheet({
         setShouldLoadGraph(true);
         observer.disconnect();
       },
-      { rootMargin: "200px" }
+      { rootMargin: "0px", threshold: 0.25 }
     );
 
     observer.observe(graphContainer);
@@ -138,7 +142,7 @@ export function RelationsListWithSourceSheet({
         </div>
       )}
       {activeItem && (
-        <SourceChainSheet
+        <LazySourceChainSheet
           language={language}
           open={openRelationId !== null}
           onOpenChange={(open) => {
