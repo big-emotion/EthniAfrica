@@ -15,13 +15,7 @@ Where a value comes from:
   shell     measured on /fr/atlas/recherche: header 61, main py-8, two nested
             .afh-shell (12+12 px at 430; 1112 px content at 1280)
 """
-import os, re, sys
-
-ROOT = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(ROOT, "canvas", "project")
-
-FONT = ("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900"
-        "&family=Nunito+Sans:wght@300;400;500;600;700;800&display=swap")  # the files next/font loads (src/app/layout.tsx)
+import re, sys
 SERIF = "font-family: 'Fraunces', Georgia, serif;"
 CLAMP = "display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; "
 
@@ -68,17 +62,17 @@ R = "border-radius: 14px;"        # --afh-radius-lg: every surface and control
 PILL = "border-radius: 9999px;"   # --afh-radius-full: chips
 GAP_SECTION = lambda d: 48 if d else 24   # --afh-section-gap at 1280 / 430
 
-IMG = {  # canvas asset urls; vendored copies are rewritten to public/images
-    "malinke": "/_blob/d46771f7a5f711fb62e7190763704fd9",
-    "bambara": "/_blob/ce928a25b3a08248d953eb96e3acb8e0",
-    "dioula": "/_blob/6cba4db21265b84e9c38594963b68ee6",
-    "peul": "/_blob/d2ca8b498d8f36f94be2a4be489b36bf",
-    "fulbe": "/_blob/5a77ed543ceb048b285f3259fe99c1db",
-    "fang": "/_blob/3c1d396b8b16d2bc65ab4d0c22d063ce",
-    "bassange": "/_blob/f3e4ac4721ddfdfa9716210e7fef7f63",
-    "mansa": "/_blob/3b268f4fac6547d55364008d6fcc024a",
-    "nigeria": "/_blob/bdbd5a6e59d7db22d83a95cd119296d8",
-    "lingala": "/_blob/f4b9a88f7a15933ab03f48ee41f9e180",
+IMG = {
+    "malinke": "../../../../public/images/anecdotes/malinke-manden.jpg",
+    "bambara": "../../../../public/images/anecdotes/bambara-refus.jpg",
+    "dioula": "../../../../public/images/anecdotes/dioula-metier.jpg",
+    "peul": "../../../../public/images/anecdotes/peul-dix-noms.jpg",
+    "fulbe": "../../../../public/images/anecdotes/fulbe-quatre-noms.jpg",
+    "fang": "../../../../public/images/anecdotes/fang-reputation.jpg",
+    "bassange": "../../../../public/images/anecdotes/bassa-nge-distinction.jpg",
+    "mansa": "../../../../public/images/discoveries/generated/mansa-musa/4x5.jpg",
+    "nigeria": "../../../../public/images/anecdotes/nigeria-flora-shaw.jpg",
+    "lingala": "../../../../public/images/anecdotes/lingala.jpg",
 }
 POSTERS = {}  # slug -> url, filled by build.py from posters.json
 
@@ -141,14 +135,17 @@ def search(c, d, fid):
 def lenses(c, d):
     width = "width: 640px; margin: 12px auto 0 auto;" if d else "margin-top: 12px;"
     items = [("Tout", None, True)] + [(k, v, False) for k, v in c.get("lens", []) if v]
-    out = f'<nav aria-label="Filtrer les résultats" style="{width} display: flex; gap: 8px; flex-wrap: nowrap; overflow: hidden;">'
-    base = f"flex: none; box-sizing: border-box; min-height: 44px; display: inline-flex; align-items: center; padding: 0 16px; {PILL} text-decoration: none; {t('caption', d, 700)}"
+    out = (f'<nav class="feed-lenses" data-feed-block="lenses" data-feed-zone="first" aria-label="Filtrer les résultats" '
+           f'style="{width} display: flex; gap: 8px; flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; -ms-overflow-style: none;">')
+    base = (f"appearance: none; flex: none; box-sizing: border-box; min-height: 44px; display: inline-flex; "
+            f"align-items: center; padding: 0 16px; {PILL} text-decoration: none; border: 0; font-family: inherit; "
+            f"cursor: pointer; {t('caption', d, 700)}")
     for label, n, on in items:
         if on:
-            out += f'<a href="#tout" aria-current="true" style="{base} background: {TEXT}; color: {BG};">{label}</a>'
+            out += f'<button type="button" aria-pressed="true" style="{base} background: {TEXT}; color: {BG};">{label}</button>'
         else:
             count = f'&nbsp;<span style="color: {SOFT}; font-weight: 600;">{n}</span>' if n is not True else ""
-            out += f'<a href="#{label.lower()}" style="{base} background: {SURFACE}; border: 1px solid {LINE}; color: {TEXT};">{label}{count}</a>'
+            out += f'<button type="button" aria-pressed="false" style="{base} background: {SURFACE}; border: 1px solid {LINE}; color: {TEXT};">{label}{count}</button>'
     return out + "</nav>"
 
 
@@ -384,11 +381,11 @@ def band(c, d, stacked=False):
     sil = "".join(
         f'<div style="border: 1px dashed {LINE}; {R} padding: 16px;"><div style="{t("small", d, 700)} color: {SOFT};">{a}</div>'
         f'<div style="margin-top: 4px; {t("caption", d)} color: {SOFT};">{x}</div></div>' for a, x in b.get("silences", []))
-    s = (h2("Ce que l&#39;atlas ne dit pas", d, "Un silence déclaré, pas un oubli.")
-         + f'<div style="margin-top: 12px; display: flex; flex-direction: column; gap: 12px;">{sil}</div>') if b.get("silences") else ""
-    conv = (f'<div style="background: {WARM}; {R} padding: 16px;"><div style="{t("small", d, 700)} color: {TEXT};">{b["conv"][0]}</div>'
+    s = (f'<div data-feed-part="silences">{h2("Ce que l&#39;atlas ne dit pas", d, "Un silence déclaré, pas un oubli.")}'
+         + f'<div style="margin-top: 12px; display: flex; flex-direction: column; gap: 12px;">{sil}</div></div>') if b.get("silences") else ""
+    conv = (f'<div data-feed-part="conviction" style="background: {WARM}; {R} padding: 16px;"><div style="{t("small", d, 700)} color: {TEXT};">{b["conv"][0]}</div>'
             f'<p style="margin: 4px 0 0 0; {t("small" if d else "caption", d)} color: {TEXT};">{b["conv"][1]}</p></div>')
-    inv = (f'<div style="background: {SURFACE}; border: 1px solid {OCRE}; {R} padding: 16px;"><div style="{t("small", d, 700)} color: {TEXT};">{b.get("invite", "Nous nous sommes trompés&nbsp;?")}</div>'
+    inv = (f'<div data-feed-part="invitation" style="background: {SURFACE}; border: 1px solid {OCRE}; {R} padding: 16px;"><div style="{t("small", d, 700)} color: {TEXT};">{b.get("invite", "Nous nous sommes trompés&nbsp;?")}</div>'
            f'<p style="margin: 4px 0 12px 0; {t("small", d)} color: {TEXT};">{b.get("invite_sub", "Si vous connaissez une source sur l&#39;un de ces noms, elle sera lue.")}</p>'
            f'<button type="button" style="font-family: inherit; {t("small", d, 600)} color: {OCRE_FG}; background: {OCRE_TINT}; border: 1px solid {OCRE}; {R} padding: 0 16px; min-height: 44px; cursor: pointer;">{b.get("button", "Proposer une source")}</button></div>')
     if not s:
@@ -410,32 +407,79 @@ def further(c, d):
 
 # ---------------------------------------------------------------- assembly
 
-MAIN_COLUMN = {"origins", "people", "plates", "fiches"}
+MAIN_COLUMN = {"origins", "peoples", "plates", "fiches"}
+
+
+def present_feed_keys(c):
+    source = {
+        "origins": "origins",
+        "peoples": "people",
+        "tiles": "tiles",
+        "plates": "plates",
+        "quiz": "quiz",
+        "images": "image",
+        "atlas-holds": "facts",
+        "problem": "prose",
+        "shared-name": "prose",
+        "near-name": "prose2",
+        "fiches": "fiches",
+    }
+    return [key for key in c.get("order", []) if c.get(source[key])]
 
 
 def feed_blocks(c, d):
-    order = c.get("order", [])
     make = {
         "origins": lambda: origins(c, d) if c.get("origins") else "",
-        "people": lambda: people_cards(c["people"], d) if c.get("people") else "",
+        "peoples": lambda: people_cards(c["people"], d) if c.get("people") else "",
         "tiles": lambda: tiles(c["tiles"], d) if c.get("tiles") else "",
         "plates": lambda: plates(c, d) if c.get("plates") else "",
         "quiz": lambda: quiz(c, d) if c.get("quiz") else "",
-        "image": lambda: gen_image(c, d) if c.get("image") else "",
-        "facts": lambda: facts(c["facts"], d) if c.get("facts") else "",
-        "prose": lambda: prose(c["prose"], d) if c.get("prose") else "",
-        "prose2": lambda: prose(c["prose2"], d) if c.get("prose2") else "",
+        "images": lambda: gen_image(c, d) if c.get("image") else "",
+        "atlas-holds": lambda: facts(c["facts"], d) if c.get("facts") else "",
+        "problem": lambda: prose(c["prose"], d) if c.get("prose") else "",
+        "shared-name": lambda: prose(c["prose"], d) if c.get("prose") else "",
+        "near-name": lambda: prose(c["prose2"], d) if c.get("prose2") else "",
         "fiches": lambda: fiches(c, d) if c.get("fiches") else "",
     }
-    return [(k, make[k]()) for k in order if make[k]()]
+    return [(key, make[key]()) for key in present_feed_keys(c)]
 
 
-FEED_ID = {"origins": "origins", "people": "peoples", "tiles": "tiles", "plates": "plates", "quiz": "quiz",
-           "image": "images", "facts": "atlas-holds", "prose": "problem", "prose2": "near-name", "fiches": "fiches"}
+def block(bid, html, gap, zone):
+    return f'<div data-feed-block="{bid}" data-feed-zone="{zone}" style="padding-top: {gap}px;">{html}</div>'
 
 
-def block(bid, html, gap):
-    return f'<div data-feed-block="{bid}" style="padding-top: {gap}px;">{html}</div>'
+def manifest_blocks(c, d):
+    opening = [("lenses", "first"), ("verdict", "first")]
+    if c.get("forms"):
+        opening.append(("appellations", "first"))
+    if c.get("shorts"):
+        opening.append(("shorts", "first"))
+
+    keys = present_feed_keys(c)
+    if not d or c.get("thin"):
+        middle = [(key, "primary") for key in keys]
+    else:
+        main = [key for key in keys if key in MAIN_COLUMN]
+        rail = [key for key in keys if key not in MAIN_COLUMN]
+        middle = ([(key, "primary") for key in main]
+                  + [(key, "secondary") for key in rail])
+
+    closing = []
+    if c.get("band"):
+        closing.append(("owed", "closing"))
+    if c.get("further"):
+        closing.append(("further", "closing"))
+    return opening + middle + closing
+
+
+def owed_parts(c):
+    if not c.get("band"):
+        return []
+    parts = []
+    if c["band"].get("silences"):
+        parts.append("silences")
+    parts.extend(["conviction", "invitation"])
+    return parts
 
 
 def first_screen(c, d):
@@ -443,15 +487,15 @@ def first_screen(c, d):
     out = search(c, d, fid) + lenses(c, d)
     gap = 24 if d else 16
     if d and c.get("forms"):
-        out += (f'<div data-feed-block="verdict" style="padding-top: {gap}px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 32px; align-items: start;">'
-                f'<div style="grid-column: span 7;">{answer(c, d)}</div>'
-                f'<div data-feed-block="appellations" style="grid-column: span 5; padding-top: 8px;">{appellations(c, d)}</div></div>')
+        out += (f'<div style="padding-top: {gap}px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 32px; align-items: start;">'
+                f'<div data-feed-block="verdict" data-feed-zone="first" style="grid-column: span 7;">{answer(c, d)}</div>'
+                f'<div data-feed-block="appellations" data-feed-zone="first" style="grid-column: span 5; padding-top: 8px;">{appellations(c, d)}</div></div>')
     else:
-        out += block("verdict", answer(c, d), gap)
+        out += block("verdict", answer(c, d), gap, "first")
         if c.get("forms"):
-            out += block("appellations", appellations(c, d), 12)
+            out += block("appellations", appellations(c, d), 12, "first")
     if c.get("shorts"):
-        out += block("shorts", shorts(c, d), 24 if d else 12)
+        out += block("shorts", shorts(c, d), 24 if d else 12, "first")
     return out
 
 
@@ -459,22 +503,27 @@ def feed(c, d, thin):
     blocks = feed_blocks(c, d)
     gap = GAP_SECTION(d)
     if not d or thin:
-        return "".join(block(FEED_ID[k], h, gap) for k, h in blocks)
+        return "".join(block(key, html, gap, "primary") for key, html in blocks)
     main = [(k, h) for k, h in blocks if k in MAIN_COLUMN]
     rail = [(k, h) for k, h in blocks if k not in MAIN_COLUMN]
-    stack = lambda bs: "".join(block(FEED_ID[k], h, 0 if i == 0 else gap) for i, (k, h) in enumerate(bs))
+    def stack(items, zone):
+        return "".join(
+            block(key, html, 0 if index == 0 else gap, zone)
+            for index, (key, html) in enumerate(items)
+        )
     if main and rail:
         return (f'<div style="padding-top: {gap}px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 32px; align-items: start;">'
-                f'<div style="grid-column: span 8;">{stack(main)}</div><div style="grid-column: span 4;">{stack(rail)}</div></div>')
-    return f'<div style="padding-top: {gap}px;">{stack(main or rail)}</div>'
+                f'<div style="grid-column: span 8;">{stack(main, "primary")}</div><div style="grid-column: span 4;">{stack(rail, "secondary")}</div></div>')
+    zone = "primary" if main else "secondary"
+    return f'<div style="padding-top: {gap}px;">{stack(main or rail, zone)}</div>'
 
 
 def owed(c, d, thin):
     out = ""
     if c.get("band"):
-        out += block("owed", band(c, d, stacked=thin), GAP_SECTION(d))
+        out += block("owed", band(c, d, stacked=thin), GAP_SECTION(d), "closing")
     if c.get("further"):
-        out += block("further", further(c, d), GAP_SECTION(d))
+        out += block("further", further(c, d), GAP_SECTION(d), "closing")
     return out
 
 
@@ -496,10 +545,11 @@ def document(c, d, height):
     title = f'{c["name_plain"]} — fil, {"desktop" if d else "mobile"}'
     hstyle = "height: auto;" if height is None else f"height: {height}px;"
     return ('<!doctype html>\n<html lang="fr">\n<head>\n<meta charset="utf-8">\n'
-            f'<title>{title}</title>\n<script src="./support.js"></script>\n</head>\n<body>\n<x-dc>\n<helmet>\n'
-            f'  <link rel="stylesheet" href="{FONT.replace("&", "&amp;")}">\n'
-            f'  <style>\n    body {{ margin: 0; font-family: "Nunito Sans", system-ui, sans-serif; background: {BG}; color: {TEXT}; }}\n'
-            f'    a {{ color: {OCRE_INK}; text-underline-offset: 2px; }}\n  </style>\n</helmet>\n\n'
+            f'<title>{title}</title>\n<link rel="stylesheet" href="fonts/search-feed.css">\n</head>\n<body>\n<x-dc>\n<helmet>\n'
+            f'  <style>\n'
+            f'    body {{ margin: 0; font-family: "Nunito Sans", system-ui, sans-serif; background: {BG}; color: {TEXT}; }}\n'
+            f'    a {{ color: {OCRE_INK}; text-underline-offset: 2px; }}\n'
+            f'    .feed-lenses::-webkit-scrollbar {{ display: none; }}\n  </style>\n</helmet>\n\n'
             f'<div data-board-root="1" style="width: {w}px; {hstyle} box-sizing: border-box; background: {BG}; overflow: hidden;">\n'
             f'{body(c, d)}\n</div>\n</x-dc>\n'
             f'<script type="text/x-dc" data-dc-script data-props=\'{{"$preview":{{"width":{w},"height":{height or 1000}}}}}\'>\n'
