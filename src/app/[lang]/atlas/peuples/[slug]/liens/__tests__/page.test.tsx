@@ -1,6 +1,12 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import React from "react";
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import {
+  act,
+  render,
+  screen,
+  fireEvent,
+  waitFor,
+} from "@testing-library/react";
 
 // ---------------------------------------------------------------------------
 // Mocks
@@ -95,6 +101,10 @@ describe("/[lang]/peuples/[slug]/liens page", () => {
       nameFr: "Niger-Congo",
       content: {},
     });
+  });
+
+  afterEach(() => {
+    vi.unstubAllGlobals();
   });
 
   // @req REQ-097 FR72
@@ -250,13 +260,54 @@ describe("/[lang]/peuples/[slug]/liens page", () => {
   describe("ego-network graph integration (11.11)", () => {
     beforeEach(() => {
       mockGetEgoNetwork.mockResolvedValue({ sourced: RELATIONS, derived: [] });
+      // Interaction tests exercise the explicit fallback used by environments
+      // without IntersectionObserver. The visibility test below installs a
+      // controllable observer instead.
+      vi.stubGlobal("IntersectionObserver", undefined);
+    });
+
+    // @req REQ-097 FR75 UX-DR46
+    it("keeps the below-the-fold graph unloaded until its reserved container approaches the viewport", async () => {
+      let revealGraph: (() => void) | undefined;
+
+      class IntersectionObserverStub {
+        constructor(callback: IntersectionObserverCallback) {
+          revealGraph = () =>
+            callback(
+              [{ isIntersecting: true } as IntersectionObserverEntry],
+              this as unknown as IntersectionObserver
+            );
+        }
+
+        observe() {}
+        unobserve() {}
+        disconnect() {}
+      }
+
+      vi.stubGlobal("IntersectionObserver", IntersectionObserverStub);
+
+      await renderPage("PPL_YORUBA");
+
+      expect(
+        screen.getByTestId("ego-network-graph-container")
+      ).toBeInTheDocument();
+      expect(screen.queryByRole("application")).not.toBeInTheDocument();
+      expect(revealGraph).toBeTypeOf("function");
+
+      act(() => revealGraph?.());
+
+      expect(
+        await screen.findByRole("application", {
+          name: /Graphe de relations centré sur Yoruba/,
+        })
+      ).toBeInTheDocument();
     });
 
     // @req REQ-097 FR75 UX-DR46
     it("renders the complete relations list before the lazily-mounted graph, inside a reserved aspect-ratio container", async () => {
       await renderPage("PPL_YORUBA");
 
-      const list = screen.getByText("Fon").closest("ul") as HTMLElement;
+      const list = screen.getByRole("list");
       const graphContainer = screen.getByTestId("ego-network-graph-container");
 
       expect(list).toBeInTheDocument();
