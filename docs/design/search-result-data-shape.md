@@ -15,13 +15,13 @@ corpus can fill it, and what has to change where it cannot.
 **Four entity classes answer the same question and each stores the answer under
 a different key.**
 
-| Class           | Where its naming lives                                          |
-| --------------- | --------------------------------------------------------------- |
-| peuple (774)    | `content.appellations`                                          |
-| pays (54)       | root `etymology`, `nameOriginActor` + `content.historicalNames` |
-| famille (25)    | `content.decolonialHeader`                                      |
-| patronyme (796) | root `spellings[]` + `origin`                                   |
-| langue (39)     | root `alternateNames[]` — and nothing else                      |
+| Class           | Where its naming lives                                                                           |
+| --------------- | ------------------------------------------------------------------------------------------------ |
+| peuple (774)    | `content.appellations`                                                                           |
+| pays (54)       | root `etymology`, `nameOriginActor` + `content.historicalNames`                                  |
+| famille (25)    | `content.decolonialHeader`                                                                       |
+| patronyme (796) | root `spellings[]` + `origin`                                                                    |
+| langue (39)     | root `alternateNames[]` + `whyProblematic` (since 2026-09-19); both inside `content` once loaded |
 
 A page whose single promise is « d'où vient ce nom » currently has to read five
 shapes to keep it. This is not a rendering problem that a component can absorb:

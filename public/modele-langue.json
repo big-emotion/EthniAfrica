@@ -10,6 +10,7 @@
   "nameFr": "<Nom français de la langue>",
   "nameEn": "<English name>",
   "alternateNames": ["<Nom attesté 1>", "<Nom attesté 2>"],
+  "whyProblematic": "<Ce que ces noms posent, si l'un d'eux est colonial ou péjoratif — sinon null>",
   "spellingAliases": ["<Orthographe alternative 1 (si applicable)>"],
   "familyId": "FLG_XXXXX",
   "peoples": [{ "name": "<Nom du peuple>", "peopleId": "PPL_XXXXX" }],

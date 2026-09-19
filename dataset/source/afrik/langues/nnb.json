@@ -10,6 +10,7 @@
   "nameFr": "Nande (kinande)",
   "nameEn": "Nande",
   "alternateNames": ["Kinande", "Kinandi", "Orundande"],
+  "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
   "peoples": [{ "name": "Nande", "peopleId": "PPL_NANDE" }],

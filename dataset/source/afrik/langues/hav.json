@@ -10,6 +10,7 @@
   "nameFr": "Havu (kihavu)",
   "nameEn": "Havu",
   "alternateNames": ["Haavu", "Kihavu"],
+  "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
   "peoples": [{ "name": "Havu", "peopleId": "PPL_HAVU" }],

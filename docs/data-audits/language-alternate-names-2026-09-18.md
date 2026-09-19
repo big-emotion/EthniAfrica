@@ -50,7 +50,19 @@ Glottolog groups its "Alternative Names" by cataloguing source. Applied to each:
 
 ## Result
 
-24 fiches filled, **206 forms published**. Coverage went from 11/39 to 35/39.
+24 fiches filled, **206 forms written**. Coverage in the fiches went from 11/39
+to 35/39.
+
+**Correction, 2026-09-19: none of them reached the result page.** That coverage
+was measured by running the projection over the fiche JSON, where
+`alternateNames` sits at the root. The loader stores it inside `content`, the
+search RPC returns `content` whole, and the projection read the root only — so
+every language, the 11 filled before this pass included, reached the page with
+no names at all. Its unit test passed a fiche-shaped root and stayed green. The
+projection now reads `content` first, and the test that proves it passes a row
+shaped the way the RPC returns one. Measuring through the fiche shape rather
+than the API shape is the error; the numbers above are true of the fiches and
+were never true of the page.
 
 ## The four not filled, and why
 
@@ -92,6 +104,22 @@ What it takes, when someone rules on it: a `whyProblematic` (or equivalent) on
 page drawing it the way it draws a people's — which it already can, since
 `NamingProjection` has a `problem` slot that only the people and family classes
 currently fill.
+
+**Ruled 2026-09-19: add the field.** `modele-langue.json` gains a root
+`whyProblematic`, classed `review_required` like its people and family
+counterparts; all thirty-nine records carry it, at `null` unless something is
+said. The loader stores it in `content` and the projection reads it into
+`problem`.
+
+`naq` then takes 28 forms under the rule above, with one refinement the field
+makes possible: the three Hottentot forms are **kept**, because the fiche now
+says what they are in the same block, on François-Xavier Fauvelle-Aymar (2002) —
+the same entry FLG_KHOE cites, copied verbatim so the work keeps one locator.
+Every other form Glottolog quotes anywhere stays out, which is the rule that
+covers « Klipkaffer », « Kupkaffer » and « Cape Hottentot ». The autonym
+Khoekhoegowab is kept although one catalogue quotes it, as the `lexvo` autonyms
+were; « Khoeknoegowap » is dropped as a misprint of Khoekhoegowap and « Khoekhoe
+du Cap » as a qualified variant.
 
 ## Related
 

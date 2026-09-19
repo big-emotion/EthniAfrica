@@ -154,13 +154,13 @@ confession. Render the page and look at each case; the capture harness is in
 The five classes all answer "where does this name come from" and each stores the
 answer under a different key:
 
-| Class     | Where the names live                                             |
-| --------- | ---------------------------------------------------------------- |
-| people    | `content.appellations`                                           |
-| country   | root `etymology` / `nameOriginActor` + `content.historicalNames` |
-| family    | `content.decolonialHeader`                                       |
-| patronyme | root `spellings[]` + `origin`                                    |
-| language  | root `alternateNames[]`                                          |
+| Class     | Where the names live                                                      |
+| --------- | ------------------------------------------------------------------------- |
+| people    | `content.appellations`                                                    |
+| country   | root `etymology` / `nameOriginActor` + `content.historicalNames`          |
+| family    | `content.decolonialHeader`                                                |
+| patronyme | root `spellings[]` + `origin`                                             |
+| language  | root `alternateNames[]` + `whyProblematic` — inside `content` once loaded |
 
 **`src/lib/search/naming.ts` is the only module that reads all five**, and
 `readNaming(type, content, root)` returns one `NamingProjection` whatever it was

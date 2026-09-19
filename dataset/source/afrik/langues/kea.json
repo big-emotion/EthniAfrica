@@ -10,6 +10,7 @@
   "nameFr": "Créole cap-verdien",
   "nameEn": "Kabuverdianu",
   "alternateNames": ["Caboverdiano", "Crioulo"],
+  "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_CREOLE",
   "peoples": [],
