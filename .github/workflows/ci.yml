@@ -273,4 +273,22 @@ jobs:
           node-version: "22.x"
           cache: "npm"
 
-      - run: npm audit --audit-level=high
+      # Audit the committed lockfile directly. Without an installed tree npm
+      # falls back to its retired quick-audit endpoint and rejects the job
+      # before it can inspect advisories. The registry occasionally returns a
+      # transient 5xx during maintenance, so retry briefly without ever turning
+      # a final audit failure into a passing result.
+      - name: Audit dependencies
+        run: |
+          for attempt in 1 2 3; do
+            if npm audit --package-lock-only --audit-level=high; then
+              exit 0
+            fi
+
+            if [ "$attempt" -eq 3 ]; then
+              exit 1
+            fi
+
+            echo "Dependency audit attempt $attempt failed; retrying in 20 seconds."
+            sleep 20
+          done

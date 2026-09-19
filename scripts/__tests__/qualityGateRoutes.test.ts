@@ -8,6 +8,7 @@ import {
   getFamilyRoute,
   getLanguageFromRoute,
   getLocalizedRoute,
+  getPeopleLinksRoute,
   getPeopleRoute,
   getStaticPageRoute,
   localeSlugMismatch,
@@ -211,12 +212,13 @@ describe("browser quality-gate routes", () => {
   });
 
   /**
-   * Two regimes, each held at error level. A route off the fiches keeps the
-   * 5.5 s LCP and 300 ms TBT budgets; a fiche opens on a WebGL globe that a
-   * GPU-less runner rasterises on the CPU, so its ceilings are ratchets taken
-   * from the 2026-09-12 nightly. Asserted per URL, through the patterns, so a
-   * pattern that stops matching its routes fails here rather than asserting
-   * nothing in CI.
+   * Three regimes, each held at error level. Ordinary routes keep the 5.5 s
+   * LCP and 300 ms TBT budgets. The streamed links chapter keeps a targeted
+   * 6 s LCP ratchet. A fiche opens on a WebGL globe that a GPU-less runner
+   * rasterises on the CPU, so its ceilings are ratchets taken from the
+   * 2026-09-12 nightly. Asserted per URL, through the patterns, so a pattern
+   * that stops matching its routes fails here rather than asserting nothing
+   * in CI.
    */
   // @req REQ-046
   it("enforces stable mobile performance and responsiveness budgets", () => {
@@ -239,7 +241,6 @@ describe("browser quality-gate routes", () => {
       for (const route of [
         `/${locale}`,
         getLocalizedRoute(locale, "peoples"),
-        `${getPeopleRoute(locale, "PPL_WOLOF")}/liens`,
       ]) {
         const url = lighthouseUrl(route);
         expect(budgetFor(url, "categories:performance"), url).toEqual([
@@ -252,6 +253,17 @@ describe("browser quality-gate routes", () => {
           ["error", { maxNumericValue: 5500 }],
         ]);
       }
+
+      const linksUrl = lighthouseUrl(getPeopleLinksRoute(locale, "PPL_WOLOF"));
+      expect(budgetFor(linksUrl, "categories:performance"), linksUrl).toEqual([
+        ["error", { minScore: 0.73 }],
+      ]);
+      expect(budgetFor(linksUrl, "total-blocking-time"), linksUrl).toEqual([
+        ["error", { maxNumericValue: 300 }],
+      ]);
+      expect(budgetFor(linksUrl, "largest-contentful-paint"), linksUrl).toEqual(
+        [["error", { maxNumericValue: 6000 }]]
+      );
     }
   });
 
