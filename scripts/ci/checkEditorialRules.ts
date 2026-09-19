@@ -262,36 +262,6 @@ export function checkAutonym(fiche: Fiche, file: string): RuleResult | null {
 const APPELLATIONS_RULE: RuleName = "competing-appellations";
 
 /**
- * The fiches still storing `historicalAppellations` as a string, named rather
- * than counted.
- *
- * Twenty-four of the twenty-five families held one — and it was the family's
- * own English name, "Afroasiatic", "Bantu", "Cushitic". Two defects in one
- * field: the wrong content, since a family's own name is not a historical
- * appellation of itself, and the wrong shape, since `readNaming` projects
- * arrays and only arrays, so the result page was shown nothing for the whole
- * class. Twenty-two were rewritten from their archives on 2026-09-18.
- *
- * FLG_BERBERE is not, and the reason is specific rather than a lack of time:
- * it carries no `originOfHistoricalTerm`, which this rule requires beside a
- * non-empty list, and its archive's account of the term rests on Ibn Khaldoun
- * and on Hanoteau & Letourneux, neither of which the fiche cites. It is in the
- * family-restoration queue (`docs/editorial/family-restoration/`), where a
- * header is written together with the sources that carry it.
- *
- * FLG_KHOE was named here too, on a reason that was wrong: this comment said
- * its fiche did not cite the VOC journals, when it cites them — and
- * Fauvelle-Aymar, Merians and Jeffreys besides. It left on 2026-09-19 with its
- * header written from those sources.
- *
- * A named entry is downgraded to a warning, never excused — and the rule fails
- * in the other direction too, when a fiche here starts carrying a list. An
- * entry left standing is a free pass for the next fiche that regresses. When
- * the last one is gone, delete the set.
- */
-const STRING_APPELLATIONS_DEBT = new Set(["FLG_BERBERE"]);
-
-/**
  * A fiche must have *decided* about the names it is known by besides its own.
  *
  * The result page promises to show every form and to crown none of them
@@ -344,31 +314,21 @@ export function checkCompetingAppellations(
 
   const forms = (block as Record<string, unknown>)[formsKey];
   const origin = (block as Record<string, unknown>)[originKey];
-  const owesAList = STRING_APPELLATIONS_DEBT.has(slug);
-
-  if (owesAList && Array.isArray(forms)) {
-    return [
-      {
-        rule: APPELLATIONS_RULE,
-        severity: "error",
-        file,
-        slug,
-        message: `Fiche ${slug} now declares \`${formsKey}\` as a list. Remove it from STRING_APPELLATIONS_DEBT in the same change — an entry left standing is a free pass for the next fiche that regresses.`,
-      },
-    ];
-  }
 
   // A declared silence is an empty *list*. Anything else that is not a list is
   // an answer nothing can read: `readNaming` projects arrays and only arrays,
   // so a string sits in a full field and reaches the reader as no forms at
   // all. This rule used to return early here on any non-array, which made a
-  // string indistinguishable from a silence — and twenty-four of the
-  // twenty-five family fiches store one.
+  // string indistinguishable from a silence — and on 2026-09-18 twenty-four of
+  // the twenty-five family fiches stored one, their own English name. They
+  // were rewritten from their archives over two days, the last two held by a
+  // named debt that was deleted when it reached zero; a string is an error for
+  // every fiche again.
   if (!Array.isArray(forms)) {
     return [
       {
         rule: APPELLATIONS_RULE,
-        severity: owesAList ? "warning" : "error",
+        severity: "error",
         file,
         slug,
         message: `Fiche ${slug} declares \`${formsKey}\` as ${forms === null ? "null" : typeof forms}, where the strict model declares a list. A declared silence is an empty list; anything else is a value the result page cannot read, and this rule could not tell the two apart.`,

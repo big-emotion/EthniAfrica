@@ -132,5 +132,14 @@ forms out of a string is the rule the result page is built against. Each family
 needs its real historical appellations read out of its archive header, which is
 editorial work per family and not a conversion.
 
-`competing-appellations` does not catch it: the rule returns early on a
-non-array value, so a string reads to it as a declared silence.
+`competing-appellations` did not catch it: the rule returned early on a
+non-array value, so a string read to it as a declared silence.
+
+**Resolved 2026-09-19.** The rule now refuses a non-list value. Twenty-two
+families were rewritten from their archives the same day (#1161); Khoe (#1164)
+and Berber followed once their headers could be written from sources their
+fiches cite — Berber after a new source was added, Yves Modéran (2003), because
+its archive stated the Greek etymology flat where Modéran, read at the passage,
+refines its path through spoken Latin. The named debt that held the last two was
+deleted when it reached zero. Measured through the projection, 21 of 25 families
+delivered forms to the result page after the first pass; with these two, 23.
