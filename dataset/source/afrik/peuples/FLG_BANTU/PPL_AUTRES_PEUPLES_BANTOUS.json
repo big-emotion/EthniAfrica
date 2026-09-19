@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Autres peuples bantous du Gabon",
-      "selfAppellation": "Chaque groupe possede sa propre auto-appellation (ex : Omyene pour les Myene, Lipunu pour les Punu, Ikota pour les Kota)",
+      "selfAppellation": null,
       "exonyms": [
         "Bantous du Gabon",
         "peuples de l'Ogooue",
@@ -15,7 +15,7 @@
       ],
       "originOfExonyms": "La denomination 'autres peuples bantous' est une categorie residuelle regroupant les groupes ethniques du Gabon qui ne font pas partie des ethnies majoritaires (Fang, Sira-Punu, Nzebi, Mbete). Elle couvre une dizaine de familles linguistiques bantoues distinctes.",
       "whyProblematic": "La categorisation 'autres' efface les identites specifiques de chaque groupe. Le Gabon compte une quarantaine de peuples aux langues et cultures distinctes, tous classe dans dix grands groupes linguistiques bantous.",
-      "contemporaryUsage": "Dans les recensements gabonais, les groupes mineurs sont souvent regroupes sous des etiquettes agregees. La Britannica denombre une quarantaine de peuples au Gabon, tous de langue bantoue sauf quelques milliers de Pygmees.",
+      "contemporaryUsage": "Dans les recensements gabonais, les groupes mineurs sont souvent regroupes sous des etiquettes agregees. La Britannica denombre une quarantaine de peuples au Gabon, tous de langue bantoue sauf quelques milliers de Pygmees. Chaque groupe possede sa propre auto-appellation, par exemple Omyene pour les Myene, Lipunu pour les Punu et Ikota pour les Kota.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantou occidental (zones A et B de la classification Guthrie)",
       "historicalRegion": "Ensemble du territoire gabonais, avec des foyers specifiques le long de l'Ogooue et de ses affluents",

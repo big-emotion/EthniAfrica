@@ -7,14 +7,14 @@
   "content": {
     "appellations": {
       "mainName": "Peuples Soudaniques Centraux",
-      "selfAppellation": "Pas de denomination collective partagee ; chaque groupe se designe par son propre nom (Lugbara, Mangbetu, Sara, Azande, Banda, Madi, Moru, etc.)",
+      "selfAppellation": null,
       "exonyms": [
         "Central Sudanic peoples (anglophone)",
         "Central Sudanic languages (classification linguistique Greenberg 1963)"
       ],
       "originOfExonyms": "Le terme Soudanique Central a ete cree par le linguiste Joseph Greenberg en 1963 pour classifier un ensemble de langues parlees dans la region du Soudan central geographique. Ce terme designe donc en premier lieu une famille linguistique, mais il est utilise par extension pour designer les peuples locuteurs de ces langues.",
       "whyProblematic": "Le terme Soudanique Central est une categorie linguistique et non une categorie ethnique ou culturelle. Les peuples ainsi designes n'ont pas de conscience d'appartenir a un groupe commun et presentent une tres grande diversite culturelle, sociale et historique. Certaines classifications (Blench 2023, Starostin 2016) remettent en cause la coherence interne de cette famille, notamment pour sa branche occidentale (Bongo-Bagirmi).",
-      "contemporaryUsage": "Employe dans les publications linguistiques et anthropologiques pour designer l'ensemble des peuples parlant des langues de la famille Soudanique Centrale. Non utilise dans la vie courante par les membres de ces groupes.",
+      "contemporaryUsage": "Employe dans les publications linguistiques et anthropologiques pour designer l'ensemble des peuples parlant des langues de la famille Soudanique Centrale. Non utilise dans la vie courante par les membres de ces groupes. Il n'existe pas de denomination collective partagee ; chaque groupe se designe par son propre nom, notamment Lugbara, Mangbetu, Sara, Azande, Banda, Madi et Moru.",
       "linguisticFamily": "FLG_SOUDANIQUECENTRAL",
       "ethnoLinguisticGroup": "Macro-groupe Soudanique Central (classification linguistique Greenberg)",
       "historicalRegion": "Bassin du Haut-Nil, nord-est de la RDC, sud-ouest du Soudan, RCA, sud du Tchad, nord de l'Ouganda",

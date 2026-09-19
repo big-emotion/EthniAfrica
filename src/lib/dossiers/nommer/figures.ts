@@ -69,7 +69,12 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "corpus-autonyms",
     label: "autonymes déclarés",
-    value: 772,
+    // 772 until eight macro-group fiches were corrected: their field held a
+    // sentence listing *other* groups' names — « Variées selon les groupes :
+    // Maninka, Bambara, Dioula… » — which the count took for an autonym. A
+    // grouping of peoples has no name for itself, so those fiches now declare
+    // the absence with `null`, and the figure counts only what it says it does.
+    value: 764,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
     countedOn: COUNTED_ON,
