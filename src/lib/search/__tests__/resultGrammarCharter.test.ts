@@ -63,6 +63,8 @@ const INVITATION_PHRASES = [
  */
 
 const MOCKUP_DIR = "docs/design/mockups/search";
+const CHARTER_PATH = "docs/design/search-result-charter.md";
+const BRAND_CHARTER_PATH = "docs/design/brand-charter.md";
 
 function boards(): string[] {
   return fs
@@ -165,6 +167,33 @@ function blockPositions(text: string): Map<string, number> {
 }
 
 describe("the result page's block grammar, on the reviewed mockups", () => {
+  // A visual board cannot define runtime data, and production data cannot
+  // silently redefine the approved composition. Keeping the three authorities
+  // explicit is what lets the parity suite stay strict without becoming a
+  // second product specification.
+  // @req REQ-180
+  it("separates visual, structural, and production-data authority", () => {
+    const charter = fs.readFileSync(
+      path.join(process.cwd(), CHARTER_PATH),
+      "utf8"
+    );
+    const brandCharter = fs.readFileSync(
+      path.join(process.cwd(), BRAND_CHARTER_PATH),
+      "utf8"
+    );
+
+    expect(charter).toContain("The forty boards govern visual rendering");
+    expect(charter).toContain(
+      "The generated manifest and this charter govern structure and behaviour"
+    );
+    expect(charter).toContain(
+      "Typed application projections and API schemas govern production data"
+    );
+    expect(brandCharter).toContain(
+      "DEC-058 licenses the search-result feed's night variant"
+    );
+  });
+
   // The case list is derived from the day boards rather than written down, so
   // adding a case adds its three obligations instead of failing a hard count.
   // @req REQ-044

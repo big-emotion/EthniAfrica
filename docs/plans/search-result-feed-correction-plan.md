@@ -1,6 +1,6 @@
 # Search-result feed — correction and implementation sequencing plan
 
-Status: proposed course correction, awaiting operator approval  
+Status: approved course correction — REQ-180, DEC-058, ETNI-1966  
 Scope: correction of `docs/plans/search-result-feed.md`; no reduction of the
 approved product scope  
 Rendering reference: `docs/design/mockups/search-feed/`  
