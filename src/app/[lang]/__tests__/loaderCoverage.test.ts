@@ -159,10 +159,14 @@ describe("every wait on the site is the same wait (REQ-104)", () => {
     // The home has no boundary of its own and the routes that can 404 must
     // not be given one, so the overlay is the only thing standing between
     // those navigations and a blank wait. It is mounted once, for all of
-    // them, in providers.
+    // them, in the deferred client chrome mounted by providers.
     const providers = read(join(process.cwd(), "src/app/providers.tsx"));
+    const deferredChrome = read(
+      join(process.cwd(), "src/components/system/DeferredClientChrome.tsx")
+    );
 
-    expect(providers).toContain("RouteTransitionLoader");
+    expect(providers).toContain("DeferredClientChrome");
+    expect(deferredChrome).toContain("RouteTransitionLoader");
   });
 });
 

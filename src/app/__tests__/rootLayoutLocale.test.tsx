@@ -20,9 +20,6 @@ vi.mock("@/index.css", () => ({}));
 vi.mock("@/app/providers", () => ({
   Providers: ({ children }: { children: React.ReactNode }) => children,
 }));
-vi.mock("@/components/TypeformPreload", () => ({
-  TypeformPreload: () => null,
-}));
 vi.mock("@/components/PlausibleScript", () => ({ default: () => null }));
 
 import RootLayout from "@/app/layout";

@@ -7,7 +7,6 @@ import { SiteTrail } from "@/components/layout/SiteTrail";
 import { SearchModalV2 } from "@/components/search/SearchModalV2";
 import { KeyboardShortcutsModal } from "@/components/layout/KeyboardShortcutsModal";
 import { useKeyboardShortcuts } from "@/hooks/use-keyboard-shortcuts";
-import { useIsMobile } from "@/hooks/use-mobile";
 import { useRouter } from "next/navigation";
 import { getLocalizedRoute } from "@/lib/routing";
 import { SiteFooter } from "@/components/layout/SiteFooter";
@@ -92,7 +91,6 @@ export const PageLayout = ({
   flushBottom = false,
   trailLabel,
 }: PageLayoutProps) => {
-  const isMobile = useIsMobile();
   const router = useRouter();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isShortcutsOpen, setIsShortcutsOpen] = useState(false);
@@ -132,9 +130,9 @@ export const PageLayout = ({
   return (
     <div className="min-h-screen gradient-earth">
       {/* One bar for every width. The two it replaces were picked apart by
-          `useIsMobile()`, so the server sent one and the client swapped in
-          the other; the switch is now a media query inside the bar and the
-          first paint is the right one. */}
+          a client-side viewport check, so the server sent one and hydration
+          swapped in the other; the switch is now a media query inside the bar
+          and the first paint is the right one. */}
       <SiteHeader
         language={language}
         onSearchClick={() => setIsSearchOpen(true)}
@@ -187,16 +185,10 @@ export const PageLayout = ({
           flushTop && flushBottom
             ? ""
             : flushTop
-              ? isMobile
-                ? "pb-4"
-                : "pb-8"
+              ? "pb-4 md:pb-8"
               : flushBottom
-                ? isMobile
-                  ? "pt-4"
-                  : "pt-8"
-                : isMobile
-                  ? "py-4"
-                  : "py-8"
+                ? "pt-4 md:pt-8"
+                : "py-4 md:py-8"
         }`}
       >
         {children}

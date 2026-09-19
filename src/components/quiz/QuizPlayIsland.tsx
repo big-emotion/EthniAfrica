@@ -13,6 +13,7 @@ import type { QuizScope } from "@/lib/quiz/quizScope";
 import { quizCopy } from "@/lib/i18n/copy/quiz";
 import { cn } from "@/lib/utils";
 import type { Language } from "@/types/shared";
+import { QueryProvider } from "@/components/QueryProvider";
 
 /**
  * Lazily, and the split is load-bearing rather than incidental: the wait
@@ -48,14 +49,14 @@ interface QuizPlayIslandProps {
  * lazily via `next/dynamic` once a track is chosen (ETNI-1137).
  */
 // @req REQ-103 FR67 FR71
-export const QuizPlayIsland = ({
+function QuizPlayIslandContent({
   scope,
   theme = null,
   scopeLabelFr,
   exitHref,
   language,
   className,
-}: QuizPlayIslandProps) => {
+}: QuizPlayIslandProps) {
   const t = quizCopy[language];
   const session = useQuizSession({ scope, theme, language });
 
@@ -151,4 +152,11 @@ export const QuizPlayIsland = ({
       )}
     </div>
   );
-};
+}
+
+// @req REQ-103 FR67 FR71
+export const QuizPlayIsland = (props: QuizPlayIslandProps) => (
+  <QueryProvider>
+    <QuizPlayIslandContent {...props} />
+  </QueryProvider>
+);

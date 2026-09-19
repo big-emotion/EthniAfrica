@@ -106,15 +106,52 @@ jobs:
       checks: read
       actions: read
       id-token: write # required by anthropics/claude-code-action@v1 OIDC auth
+    outputs:
+      routable: ${{ steps.target.outputs.routable }}
     steps:
+      - name: Check agent target
+        id: target
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          ROLE: ${{ needs.route.outputs.cc_agent }}
+          TICKET_KEY: ${{ github.event.client_payload.ticket_key }}
+        run: |
+          set -euo pipefail
+
+          routable=false
+          if [ "$ROLE" = "refiner" ] || [ "$ROLE" = "dev" ]; then
+            routable=true
+          else
+            refs="$(gh api "repos/$REPOSITORY/git/matching-refs/heads/ferry/$TICKET_KEY")"
+            pull_requests="$(gh pr list --repo "$REPOSITORY" --state open --limit 100 --json headRefName,title)"
+            key_lc="$(printf '%s' "$TICKET_KEY" | tr '[:upper:]' '[:lower:]')"
+
+            if jq -e --arg ref "refs/heads/ferry/$TICKET_KEY" \
+              'any(.[]; .ref == $ref)' <<<"$refs" >/dev/null || \
+              jq -e --arg key "$key_lc" \
+              'any(.[]; ((.headRefName | ascii_downcase | contains($key)) or (.title | ascii_downcase | contains($key))))' \
+              <<<"$pull_requests" >/dev/null; then
+              routable=true
+            fi
+          fi
+
+          echo "routable=$routable" >> "$GITHUB_OUTPUT"
+          if [ "$routable" = "false" ]; then
+            echo "::notice::Ferry: no branch or open pull request references $TICKET_KEY; this stale transition is a no-op."
+          fi
+
       - name: Generate Ferry GitHub App token
         id: ferry-token
+        if: steps.target.outputs.routable == 'true'
         uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
         with:
           app-id: ${{ secrets.FERRY_APP_ID }}
           private-key: ${{ secrets.FERRY_PRIVATE_KEY }}
 
       - name: Run Ferry agent
+        if: steps.target.outputs.routable == 'true'
         uses: big-emotion/ferry/.github/actions/ferry-run-claude-agent@39a42f9f5607d22c38f453bb33212c0c94750486 # v1.2.0
         with:
           role: ${{ needs.route.outputs.cc_agent }}
@@ -153,6 +190,7 @@ jobs:
     needs: [route, run-agent]
     if: >-
       !cancelled() && needs.route.outputs.role != 'none' &&
+      needs.run-agent.outputs.routable == 'true' &&
       needs.run-agent.result != 'skipped'
     runs-on: ${{ fromJSON(vars.FERRY_RUNNER || '"ubuntu-latest"') }}
     permissions:
