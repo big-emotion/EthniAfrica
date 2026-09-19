@@ -1,6 +1,7 @@
 import { test, expect } from "./support/fixtures";
 import type { Locator, Page } from "@playwright/test";
 import { getFamilyRoute } from "@/lib/routing";
+import { activateFicheGlobe } from "./support/atlas";
 import { LOCALE } from "./support/locale";
 
 // English UI copy lands per translation wave (REQ-142 to REQ-146). Until it
@@ -84,13 +85,14 @@ function factsPanel(page: Page): Locator {
   return page.locator("[data-atlas-facts-panel]");
 }
 
-async function openFicheGlobe(page: Page, width: number): Promise<Locator> {
+async function openFicheGlobe(
+  page: Page,
+  width: number,
+  activation: "keyboard" | "pointer" = "pointer"
+): Promise<Locator> {
   await page.setViewportSize({ width, height: VIEWPORT_HEIGHT });
   await page.goto(FICHE_GLOBE_URL);
-
-  const stage = page.locator("[data-atlas-stage]");
-  await expect(stage).toBeVisible();
-  return stage;
+  return activateFicheGlobe(page, activation);
 }
 
 /**
@@ -267,7 +269,7 @@ test.describe("Fiche globe fly-to and facts panel (REQ-117)", () => {
   test("lets a target be reached and chosen from the keyboard alone", async ({
     page,
   }) => {
-    const stage = await openFicheGlobe(page, 430);
+    const stage = await openFicheGlobe(page, 430, "keyboard");
 
     // The picker is the keyboard path on a fiche globe — the choice marks are
     // `aria-hidden` decoration, and a 7px dot was never the way in. Reaching

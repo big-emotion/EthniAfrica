@@ -1,5 +1,6 @@
 import { test, expect } from "./support/fixtures";
 import { getCountryRoute } from "@/lib/routing";
+import { activateFicheGlobe } from "./support/atlas";
 import { LOCALE } from "./support/locale";
 
 // English UI copy lands per translation wave (REQ-142 to REQ-146). Until it
@@ -30,6 +31,7 @@ test.describe("@phase-1 country fiche — the globe is operable", () => {
   }) => {
     await page.setViewportSize(DESKTOP);
     await page.goto(COUNTRY_FICHE_URL);
+    await activateFicheGlobe(page);
 
     const surface = page.locator("[data-atlas-surface]");
     await expect(surface).toHaveAttribute("aria-label", /globe/i);
@@ -42,6 +44,7 @@ test.describe("@phase-1 country fiche — the globe is operable", () => {
   }) => {
     await page.setViewportSize(DESKTOP);
     await page.goto(COUNTRY_FICHE_URL);
+    await activateFicheGlobe(page);
 
     const toggle = page.getByRole("button", {
       name: "Ce que la carte plate en fait",
@@ -61,6 +64,7 @@ test.describe("@phase-1 country fiche — the globe is operable", () => {
   }) => {
     await page.setViewportSize(DESKTOP);
     await page.goto(COUNTRY_FICHE_URL);
+    await activateFicheGlobe(page);
 
     await page
       .getByRole("button", { name: "Ce que la carte plate en fait" })
@@ -80,6 +84,7 @@ test.describe("@phase-1 country fiche — moving to another country", () => {
   }) => {
     await page.setViewportSize(DESKTOP);
     await page.goto(COUNTRY_FICHE_URL);
+    await activateFicheGlobe(page);
 
     await page.getByRole("button", { name: /^Choisir un pays/ }).click();
 
@@ -116,7 +121,7 @@ test.describe("@phase-1 country fiche — moving to another country", () => {
     await page.setViewportSize(DESKTOP);
     await page.goto(getCountryRoute(LOCALE, "COM"));
 
-    await expect(page.locator("[data-atlas-stage]")).toBeVisible();
+    await activateFicheGlobe(page);
     await expect(page.getByText(/Contour non disponible/)).toHaveCount(0);
   });
 });
