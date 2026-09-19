@@ -5,6 +5,7 @@ import {
   downloadChoices,
   eligiblePublications,
   orderedDeck,
+  publicationsForSubjects,
   resolvePublication,
   type DiscoveryPublication,
 } from "../catalog";
@@ -102,6 +103,133 @@ describe("Découvertes publication contracts", () => {
     expect(deck[0]).toBe("b");
     expect(new Set(deck).size).toBe(3);
     expect(deck).toHaveLength(3);
+  });
+
+  describe("subject scope", () => {
+    const records = [
+      item("country", {
+        detail: {
+          body: { fr: ["Texte"], en: ["Text"] },
+          entities: [
+            {
+              kind: "country",
+              id: "NGA",
+              label: { fr: "Nigeria", en: "Nigeria" },
+            },
+          ],
+          sources: [],
+        },
+      }),
+      item("family", {
+        detail: {
+          body: { fr: ["Texte"], en: ["Text"] },
+          entities: [
+            {
+              kind: "family",
+              id: "FLG_MANDE",
+              label: { fr: "Mandé", en: "Mande" },
+            },
+            {
+              kind: "people",
+              id: "PPL_BAMBARA",
+              label: { fr: "Bambara", en: "Bambara" },
+            },
+          ],
+          sources: [],
+        },
+      }),
+      item("people", {
+        detail: {
+          body: { fr: ["Texte"], en: ["Text"] },
+          entities: [
+            {
+              kind: "people",
+              id: "PPL_HAUSA",
+              label: { fr: "Haoussa", en: "Hausa" },
+            },
+          ],
+          sources: [],
+        },
+      }),
+      item("language", {
+        detail: {
+          body: { fr: ["Texte"], en: ["Text"] },
+          entities: [
+            {
+              kind: "language",
+              id: "lin",
+              label: { fr: "Lingala", en: "Lingala" },
+            },
+          ],
+          sources: [],
+        },
+      }),
+      item("patronyme", {
+        detail: {
+          body: { fr: ["Texte"], en: ["Text"] },
+          entities: [
+            {
+              kind: "patronyme",
+              id: "PAT_TRAORE",
+              label: { fr: "Traoré", en: "Traore" },
+            },
+          ],
+          sources: [],
+        },
+      }),
+      item("draft-country", {
+        status: "draft",
+        detail: {
+          body: { fr: ["Texte"], en: ["Text"] },
+          entities: [
+            {
+              kind: "country",
+              id: "NGA",
+              label: { fr: "Nigeria", en: "Nigeria" },
+            },
+          ],
+          sources: [],
+        },
+      }),
+    ];
+
+    // @req REQ-180
+    it("keeps eligible catalog order while matching exact typed subjects", () => {
+      expect(
+        publicationsForSubjects(records, [
+          { kind: "people", id: "PPL_HAUSA" },
+          { kind: "country", id: "NGA" },
+          { kind: "people", id: "PPL_BAMBARA" },
+          { kind: "language", id: "lin" },
+          { kind: "patronyme", id: "PAT_TRAORE" },
+        ]).map((entry) => entry.id)
+      ).toEqual(["country", "family", "people", "language", "patronyme"]);
+
+      expect(
+        publicationsForSubjects(records, [
+          { kind: "family", id: "PPL_BAMBARA" },
+        ])
+      ).toEqual([]);
+    });
+
+    // @req REQ-180
+    it("leaves the unscoped catalog, current item and deck behavior unchanged", () => {
+      const eligible = eligiblePublications(records);
+      const unscoped = publicationsForSubjects(records, []);
+
+      expect(publicationsForSubjects(records)).toEqual(eligible);
+      expect(unscoped).toEqual(eligible);
+      expect(resolvePublication(unscoped, "fr", "country-fr")?.id).toBe(
+        "country"
+      );
+      expect(orderedDeck(unscoped, "family", () => 0)).toEqual([
+        "family",
+        "people",
+        "language",
+        "patronyme",
+        "country",
+      ]);
+    });
   });
 
   // DEC-053: a generated image is declared fiction. Its subject rests on the

@@ -13,6 +13,11 @@ const en = {
   imageUnavailable: "Photo unavailable. The discovery text remains accessible.",
   fact: "Did you know?",
   proverb: "Proverb",
+  production: {
+    nameQuestion: (name: string) => `Where does the name “${name}” come from?`,
+    posterAlt: (name: string) =>
+      `Cover: Where does the name “${name}” come from?`,
+  },
   close: "Close",
   sources: "Sources",
   atlas: "In the atlas",
@@ -82,6 +87,10 @@ const fr: DiscoveriesCopy = {
     "Photo indisponible. Le texte de la découverte reste accessible.",
   fact: "Saviez-vous que ?",
   proverb: "Proverbe",
+  production: {
+    nameQuestion: (name) => `D’où vient le nom « ${name} » ?`,
+    posterAlt: (name) => `Couverture : D’où vient le nom « ${name} » ?`,
+  },
   close: "Fermer",
   sources: "Sources",
   atlas: "Dans l’atlas",

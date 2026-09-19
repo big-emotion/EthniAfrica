@@ -81,8 +81,10 @@ the `next/font` configuration requests, including separate Fraunces Roman and
 italic files. The boards never depend on a network font response.
 
 Posters are images — `posters/*.jpg`, drawn by `generator/posters.py` in the
-production covers' style (Anton, burnt-in title, accent on the name) — because the
-page shows the pipeline's cover images, not typeset titles.
+production covers' style (Anton, burnt-in title, accent on the name) — because
+the page shows the pipeline's cover images, not typeset titles. Every cover
+uses the single production question `D’où vient le nom « X » ?`; the shorter
+`D’où vient X ?` form is not a valid production title.
 
 ## Night boards
 

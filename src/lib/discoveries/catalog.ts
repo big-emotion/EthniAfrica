@@ -1,9 +1,21 @@
 import type { Language } from "@/types/shared";
+import {
+  formatProductionNameQuestion,
+  formatProductionPosterAlt,
+} from "@/lib/editorial/productionNameQuestion";
 import { getLocalizedRoute } from "@/lib/routing";
+
+export type DiscoverySubjectKind =
+  "country" | "family" | "people" | "language" | "patronyme";
+
+export interface DiscoverySubjectReference {
+  kind: DiscoverySubjectKind;
+  id: string;
+}
 
 export interface DiscoveryPublication {
   id: string;
-  kind: "anecdote" | "proverb" | "carousel" | "image";
+  kind: "anecdote" | "proverb" | "carousel" | "image" | "video";
   status: "draft" | "published";
   slug: Record<Language, string>;
   title: Record<Language, string>;
@@ -17,7 +29,7 @@ export interface DiscoveryPublication {
   detail?: {
     body: Record<Language, string[]>;
     entities: Array<{
-      kind: "country" | "family" | "people";
+      kind: DiscoverySubjectKind;
       id: string;
       label: Record<Language, string>;
     }>;
@@ -64,6 +76,20 @@ export interface DiscoveryPublication {
    */
   captionExceedsCorpus?: boolean;
   captionSource?: { title: string; url: string };
+  /** Runtime metadata for a short; its title and poster alt are derived. */
+  video?: {
+    name: Record<Language, string>;
+    publishedAt: string;
+    durationSeconds: number;
+    watchUrl: string;
+    poster: {
+      src: string;
+      alt: Record<Language, string>;
+      width: number;
+      height: number;
+    };
+    transcript?: Partial<Record<Language, string>>;
+  };
   /**
    * Pre-rendered derived files under `public/`, by format. A format is
    * declared only once its file ships; `scripts/__tests__/generatedImageDownloads`
@@ -111,7 +137,35 @@ function isDeclaredFiction(entry: DiscoveryPublication): boolean {
 function hasPublishableVisual(entry: DiscoveryPublication): boolean {
   if (entry.kind === "proverb") return true;
   if (entry.kind === "image") return isDeclaredFiction(entry);
+  if (entry.kind === "video") {
+    const { video } = entry;
+    return Boolean(
+      video &&
+      entry.detail?.entities.length &&
+      hasText(video.name.fr) &&
+      hasText(video.name.en) &&
+      entry.title.fr === formatProductionNameQuestion(video.name.fr, "fr") &&
+      entry.title.en === formatProductionNameQuestion(video.name.en, "en") &&
+      !Number.isNaN(Date.parse(video.publishedAt)) &&
+      Number.isFinite(video.durationSeconds) &&
+      video.durationSeconds > 0 &&
+      hasText(video.poster.src) &&
+      video.poster.alt.fr === formatProductionPosterAlt(video.name.fr, "fr") &&
+      video.poster.alt.en === formatProductionPosterAlt(video.name.en, "en") &&
+      video.poster.width > 0 &&
+      video.poster.height > 0 &&
+      isHttpsUrl(video.watchUrl)
+    );
+  }
   return hasClearedPicture(entry) && hasText(entry.image?.filePage);
+}
+
+function isHttpsUrl(value: string): boolean {
+  try {
+    return new URL(value).protocol === "https:";
+  } catch {
+    return false;
+  }
 }
 
 // @req REQ-157
@@ -144,6 +198,27 @@ export function eligiblePublications(
     }
     return ready;
   });
+}
+
+/**
+ * Narrows the publishable Discovery catalog to exact typed subjects.
+ * An absent scope keeps the existing unscoped catalog unchanged.
+ */
+// @req REQ-180
+export function publicationsForSubjects(
+  records: readonly DiscoveryPublication[],
+  subjects: readonly DiscoverySubjectReference[] = []
+): DiscoveryPublication[] {
+  const eligible = eligiblePublications(records);
+  if (subjects.length === 0) return eligible;
+
+  return eligible.filter((entry) =>
+    entry.detail?.entities.some((entity) =>
+      subjects.some(
+        (subject) => subject.kind === entity.kind && subject.id === entity.id
+      )
+    )
+  );
 }
 
 // @req REQ-158

@@ -250,6 +250,20 @@ class SearchFeedGeneratorTest(unittest.TestCase):
         self.assertIn("shared-name", bassa["order"])
         self.assertNotIn("problem", bassa["order"])
 
+    def test_every_authored_production_uses_the_canonical_name_question(self):
+        for case in CASES:
+            empty = case.get("shorts", {}).get("empty")
+            if empty:
+                self.assertRegex(
+                    empty[0],
+                    r"^D’où vient le nom «\u00a0.+\u00a0» \?$",
+                    case["id"],
+                )
+
+        poster_source = (GENERATOR_DIR / "posters.py").read_text(encoding="utf-8")
+        self.assertIn("D’OÙ VIENT LE NOM", poster_source)
+        self.assertNotIn('d.text((20, H - 196), "D\'OÙ VIENT"', poster_source)
+
     def test_lenses_are_buttons_and_opening_blocks_are_siblings(self):
         for entry in self.entries:
             parser = parse_board(self.output / entry["file"])

@@ -255,6 +255,12 @@ Every short, anecdote, proverb, image and quiz question carries
 `CompanionMatch`. Localised relation labels are produced by `searchFeedCopy`,
 not returned by the API.
 
+Every production format that names a subject uses the same editorial question:
+`D’où vient le nom « X » ?` in French and its reviewed locale counterpart.
+The question is derived from the subject name rather than stored as free copy.
+The shorter `D’où vient X ?` form is not accepted in catalog records, fixtures,
+poster accessibility text or generated poster briefs.
+
 The endpoint contract must additionally settle before implementation:
 
 - exact fields for every companion item;
