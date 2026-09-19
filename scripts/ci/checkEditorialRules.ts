@@ -272,20 +272,24 @@ const APPELLATIONS_RULE: RuleName = "competing-appellations";
  * arrays and only arrays, so the result page was shown nothing for the whole
  * class. Twenty-two were rewritten from their archives on 2026-09-18.
  *
- * These two are not, and the reason is specific rather than a lack of time:
- * neither carries `originOfHistoricalTerm`, which this rule requires beside a
- * non-empty list, and writing one would mean naming authorities their fiches
- * do not cite — Ibn Khaldoun and Hanoteau & Letourneux for Berber, the VOC
- * journals for Khoe. Both are in the family-restoration queue
- * (`docs/editorial/family-restoration/`), where a header is written together
- * with the sources that carry it.
+ * FLG_BERBERE is not, and the reason is specific rather than a lack of time:
+ * it carries no `originOfHistoricalTerm`, which this rule requires beside a
+ * non-empty list, and its archive's account of the term rests on Ibn Khaldoun
+ * and on Hanoteau & Letourneux, neither of which the fiche cites. It is in the
+ * family-restoration queue (`docs/editorial/family-restoration/`), where a
+ * header is written together with the sources that carry it.
+ *
+ * FLG_KHOE was named here too, on a reason that was wrong: this comment said
+ * its fiche did not cite the VOC journals, when it cites them — and
+ * Fauvelle-Aymar, Merians and Jeffreys besides. It left on 2026-09-19 with its
+ * header written from those sources.
  *
  * A named entry is downgraded to a warning, never excused — and the rule fails
  * in the other direction too, when a fiche here starts carrying a list. An
  * entry left standing is a free pass for the next fiche that regresses. When
- * both are gone, delete the set.
+ * the last one is gone, delete the set.
  */
-const STRING_APPELLATIONS_DEBT = new Set(["FLG_BERBERE", "FLG_KHOE"]);
+const STRING_APPELLATIONS_DEBT = new Set(["FLG_BERBERE"]);
 
 /**
  * A fiche must have *decided* about the names it is known by besides its own.

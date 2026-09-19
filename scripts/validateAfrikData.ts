@@ -4779,7 +4779,10 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   Record<StrictModelKind, number>
 > = {
   peuple: 7062,
-  famille_linguistique: 108,
+  // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
+  // `originOfHistoricalTerm` and `whyProblematic` when its historical
+  // appellations were written from the sources it cites.
+  famille_linguistique: 105,
   pays: 13,
 };
 
