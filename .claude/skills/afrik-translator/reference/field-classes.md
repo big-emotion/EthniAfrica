@@ -142,28 +142,29 @@ contract test is what keeps them equal to it, row for row and model for model.
 
 ### modele-langue.json
 
-| Leaf                            | Class          | Note              |
-| ------------------------------- | -------------- | ----------------- |
-| `_meta.*`                       | `invariant`    |                   |
-| `id`                            | `invariant`    |                   |
-| `isoCode639_3`                  | `invariant`    |                   |
-| `glottocode`                    | `invariant`    |                   |
-| `nameFr`                        | `invariant`    |                   |
-| `nameEn`                        | `invariant`    |                   |
-| `alternateNames[]`              | `invariant`    | glossed invariant |
-| `spellingAliases[]`             | `invariant`    | glossed invariant |
-| `familyId`                      | `invariant`    |                   |
-| `peoples[].name`                | `invariant`    |                   |
-| `peoples[].peopleId`            | `invariant`    |                   |
-| `content.vehicularRole`         | `invariant`    |                   |
-| `content.dialects[]`            | `invariant`    | glossed invariant |
-| `content.vitalityStatus.status` | `invariant`    |                   |
-| `content.vitalityStatus.scale`  | `invariant`    |                   |
-| `content.vitalityStatus.asOf`   | `invariant`    |                   |
-| `content.sources[].title`       | `invariant`    |                   |
-| `content.sources[].url`         | `invariant`    |                   |
-| `content.sources[].tier`        | `invariant`    |                   |
-| `content.sources[].notes`       | `translatable` |                   |
+| Leaf                            | Class             | Note              |
+| ------------------------------- | ----------------- | ----------------- |
+| `_meta.*`                       | `invariant`       |                   |
+| `id`                            | `invariant`       |                   |
+| `isoCode639_3`                  | `invariant`       |                   |
+| `glottocode`                    | `invariant`       |                   |
+| `nameFr`                        | `invariant`       |                   |
+| `nameEn`                        | `invariant`       |                   |
+| `alternateNames[]`              | `invariant`       | glossed invariant |
+| `whyProblematic`                | `review_required` |                   |
+| `spellingAliases[]`             | `invariant`       | glossed invariant |
+| `familyId`                      | `invariant`       |                   |
+| `peoples[].name`                | `invariant`       |                   |
+| `peoples[].peopleId`            | `invariant`       |                   |
+| `content.vehicularRole`         | `invariant`       |                   |
+| `content.dialects[]`            | `invariant`       | glossed invariant |
+| `content.vitalityStatus.status` | `invariant`       |                   |
+| `content.vitalityStatus.scale`  | `invariant`       |                   |
+| `content.vitalityStatus.asOf`   | `invariant`       |                   |
+| `content.sources[].title`       | `invariant`       |                   |
+| `content.sources[].url`         | `invariant`       |                   |
+| `content.sources[].tier`        | `invariant`       |                   |
+| `content.sources[].notes`       | `translatable`    |                   |
 
 ### modele-linguistique.json
 

@@ -10,6 +10,7 @@
   "nameFr": "Hunde (kihunde)",
   "nameEn": "Hunde",
   "alternateNames": ["Kihunde", "Kobi", "Rukobi"],
+  "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
   "peoples": [{ "name": "Hunde", "peopleId": "PPL_HUNDE" }],

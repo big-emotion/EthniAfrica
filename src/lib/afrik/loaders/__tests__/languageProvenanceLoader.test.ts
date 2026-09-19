@@ -164,6 +164,26 @@ describe("loadLanguages", () => {
     });
   });
 
+  // The search RPC returns `content` whole, so a field left out here never
+  // reaches the result page, whatever the fiche says. A language that carries
+  // colonial names needs what they raise to travel with them.
+  // @req REQ-178
+  it("persists what a language's names raise alongside the names", async () => {
+    const double = createSupabaseDouble();
+
+    await loadLanguages(asClient(double), [
+      sourced({
+        alternateNames: ["Hottentot"],
+        whyProblematic: "Terme colonial, tenu pour raciste.",
+      }),
+    ]);
+
+    expect(double.languages[0].content).toMatchObject({
+      alternateNames: ["Hottentot"],
+      whyProblematic: "Terme colonial, tenu pour raciste.",
+    });
+  });
+
   // AC: an enriched fiche persists all public content and every explicit source.
   // @req REQ-136
   it("persists enriched fiche content, aliases, and all source tiers", async () => {

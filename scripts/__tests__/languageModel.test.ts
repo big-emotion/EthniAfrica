@@ -17,6 +17,7 @@ function validFiche(overrides: Record<string, unknown> = {}) {
     nameFr: "Yoruba",
     nameEn: "Yoruba",
     alternateNames: ["Yariba"],
+    whyProblematic: null,
     spellingAliases: [],
     familyId: "FLG_BENOUECONGO",
     peoples: [{ name: "Yoruba", peopleId: "PPL_YORUBA" }],

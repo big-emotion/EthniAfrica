@@ -210,13 +210,23 @@ export function readNaming(
       return fromCountry(contentRecord, rootRecord);
     case "patronyme":
       return fromSpellings(rootRecord);
+    // The loader stores a language's names inside `content` and the search
+    // RPC returns `content` whole, so that is where they are on a search row;
+    // a fiche carries them at its root. Reading the root alone matched the
+    // fiche and missed the API, and every language reached the result page
+    // with no names — measured 2026-09-19, after 206 had been written in.
+    // `spellingAliases` is a column of its own the RPC does not return, so it
+    // only arrives from a fiche-shaped root.
     case "language":
       return {
         ...EMPTY,
         forms: bareForms([
-          ...strings(rootRecord.alternateNames),
+          ...strings(contentRecord.alternateNames ?? rootRecord.alternateNames),
           ...strings(rootRecord.spellingAliases),
         ]),
+        problem: text(
+          contentRecord.whyProblematic ?? rootRecord.whyProblematic
+        ),
       };
     default:
       return EMPTY;

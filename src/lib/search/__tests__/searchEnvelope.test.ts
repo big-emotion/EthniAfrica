@@ -431,6 +431,59 @@ describe("mapSearchEnvelope", () => {
     expect(language.sourceCount).toBe(1);
   });
 
+  // The loader stores a language's names inside `content`, and the search RPC
+  // returns `content` whole — so that is where the names are when a row
+  // reaches this mapper. The projection read them at the row's root, which is
+  // where they sit in a fiche and nowhere in the API. Its unit test passed a
+  // fiche-shaped root, so it stayed green while every language reached the
+  // result page with no names at all, the 206 forms written on 2026-09-18
+  // included.
+  // @req REQ-178
+  it("delivers a language's names where the search row actually carries them", () => {
+    const [language] = mapSearchEnvelope({
+      data: {
+        languages: [
+          {
+            id: "wol",
+            name: "Wolof",
+            familyId: "FLG_ATLANTIQUE",
+            content: { alternateNames: ["Ouolof", "Volof", "Walaf"] },
+          },
+        ],
+      },
+    });
+
+    expect(language.naming?.forms.map((form) => form.form)).toEqual([
+      "Ouolof",
+      "Volof",
+      "Walaf",
+    ]);
+  });
+
+  // The language model gained the field the people and family models already
+  // had, so a language can say what a name raises instead of publishing it
+  // bare under « Aucun de ces noms n'est faux ».
+  // @req REQ-178
+  it("delivers what a language's names raise", () => {
+    const [language] = mapSearchEnvelope({
+      data: {
+        languages: [
+          {
+            id: "naq",
+            name: "Nama",
+            familyId: "FLG_KHOE",
+            content: {
+              alternateNames: ["Hottentot"],
+              whyProblematic: "Terme colonial, tenu pour raciste.",
+            },
+          },
+        ],
+      },
+    });
+
+    expect(language.naming?.problem).toBe("Terme colonial, tenu pour raciste.");
+  });
+
   // REQ-136 AC: "Given a language name and a people name that match a query
   // equally well, when results are rendered, then both kinds are returned,
   // grouped by kind, and neither is silently dropped."

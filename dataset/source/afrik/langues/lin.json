@@ -10,6 +10,7 @@
   "nameFr": "Lingala",
   "nameEn": "Kinshasa Lingala",
   "alternateNames": ["Losengo", "Ngala"],
+  "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
   "peoples": [],

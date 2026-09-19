@@ -9,7 +9,37 @@
   "glottocode": "nama1264",
   "nameFr": "Nama",
   "nameEn": "Nama (Namibia)",
-  "alternateNames": [],
+  "alternateNames": [
+    "Berdama",
+    "Bergdama",
+    "Bergdamara",
+    "Dama",
+    "Damaqua",
+    "Damara",
+    "Gri",
+    "Grikwa",
+    "Griqua",
+    "Gry",
+    "Khiri",
+    "Khoe",
+    "Khoekhoe",
+    "Khoekhoegowab",
+    "Khoekhoegowap",
+    "Khoi",
+    "Maqua",
+    "Namakwa",
+    "Naman",
+    "Namaqua",
+    "Tama",
+    "Tamakwa",
+    "Tamma",
+    "Xirikwa",
+    "Xrikwa",
+    "Hottentot",
+    "Hottentottisch",
+    "Nama Hottentot"
+  ],
+  "whyProblematic": "Hottentot, Hottentottisch et Nama Hottentot sont des noms coloniaux. Ils dérivent du terme que les colons néerlandais du Cap appliquèrent aux Khoekhoe au milieu du XVIIe siècle ; François-Xavier Fauvelle-Aymar (2002) montre comment ce terme est devenu un stéréotype colonial, et il est aujourd'hui tenu pour raciste et offensant. Glottolog imprime entre guillemets les formes qu'il tient pour dépréciées, dont plusieurs termes injurieux : celles-là ne sont pas reprises ici. Les locuteurs nomment leur langue Khoekhoegowab.",
   "spellingAliases": [],
   "familyId": "FLG_KHOE",
   "peoples": [],
@@ -30,6 +60,11 @@
         "url": "https://glottolog.org/resource/languoid/id/nama1264",
         "tier": "official",
         "notes": "Glottolog name: Nama (Namibia); classification includes Khoe. Les dialectes listés sont les sous-languoids que Glottolog rattache à nama1264, hors languoids portant leur propre code ISO 639-3."
+      },
+      {
+        "title": "Fauvelle-Aymar, François-Xavier (2002) – *L'Invention du Hottentot : histoire du regard occidental sur les Khoisan (XVe-XIXe siècle)*. Publications de la Sorbonne",
+        "url": null,
+        "tier": "referenced"
       }
     ]
   }
