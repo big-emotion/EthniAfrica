@@ -575,11 +575,12 @@ describe("checkCompetingAppellations", () => {
     expect(findings[0].message).toContain("historicalAppellations");
   });
 
-  // The two families whose header cannot be written yet are named rather than
-  // counted: a number says how much debt there is, a list says which fiche and
-  // lets the next pass find it. They are downgraded, never excused.
+  // The last two fiches allowed a string were held by a named debt, downgraded
+  // to a warning. It reached zero on 2026-09-19 and was deleted, as its own
+  // comment required, so no fiche is exempt any more — including the one that
+  // was last to leave.
   // @req REQ-169
-  it("downgrades a named debtor to a warning instead of failing the build", () => {
+  it("exempts no fiche from the list shape now that the debt is gone", () => {
     const fiche: Fiche = {
       id: "FLG_BERBERE",
       content: {
@@ -591,30 +592,7 @@ describe("checkCompetingAppellations", () => {
       "dataset/source/afrik/famille_linguistique/FLG_BERBERE.json"
     );
     expect(findings).toHaveLength(1);
-    expect(findings[0].severity).toBe("warning");
-  });
-
-  // The other direction, which is what makes it a ratchet rather than a
-  // permanent exemption: once the fiche carries a list, the entry has to go,
-  // or the next family to regress inherits a free pass.
-  // @req REQ-169
-  it("fails when a named debtor no longer needs to be named", () => {
-    const fiche: Fiche = {
-      id: "FLG_BERBERE",
-      content: {
-        decolonialHeader: {
-          historicalAppellations: ["Libyque"],
-          originOfHistoricalTerm: "Du grec barbaros.",
-        },
-      },
-    };
-    const findings = checkCompetingAppellations(
-      fiche,
-      "dataset/source/afrik/famille_linguistique/FLG_BERBERE.json"
-    );
-    expect(findings).toHaveLength(1);
     expect(findings[0].severity).toBe("error");
-    expect(findings[0].message).toContain("STRING_APPELLATIONS_DEBT");
   });
 
   // A declared silence still has to be a list. `null` is the other shape that
