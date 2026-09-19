@@ -177,7 +177,10 @@ export async function generateMetadata({
   const parsedForExistence = parseVersionedSlug(decodeURIComponent(slug));
   if (
     parsedForExistence?.mode === "live" &&
-    (await isFicheKnownAbsent(loadLanguageFamilyFiche, parsedForExistence.slug))
+    (await isFicheKnownAbsent(
+      (id) => loadLanguageFamilyFiche(id, lang as Language),
+      parsedForExistence.slug
+    ))
   ) {
     notFound();
   }
