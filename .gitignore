@@ -151,3 +151,4 @@ social/harness/venv/
 Claude outputs/
 skills-lock.json
 .env*
+!.env.example
