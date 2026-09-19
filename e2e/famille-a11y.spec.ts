@@ -1,6 +1,7 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "./support/fixtures";
 import { getFamilyRoute } from "@/lib/routing";
+import { activateFicheGlobe } from "./support/atlas";
 import { LOCALE } from "./support/locale";
 
 // English UI copy lands per translation wave (REQ-142 to REQ-146). Until it
@@ -63,6 +64,7 @@ test.describe("@nfr-a11y family fiche at the globe — axe-core", () => {
   test("has zero serious/critical violations with the facts panel open", async ({
     page,
   }) => {
+    await activateFicheGlobe(page);
     await page.getByRole("button", { name: /pays de l'empreinte/i }).click();
     await page.getByRole("option").first().click();
     // The panel by its own handle, not by landmark role: the fiche already

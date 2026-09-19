@@ -37,10 +37,17 @@ vi.mock("next/navigation", () => ({
 }));
 
 vi.mock("@/components/atlas/ContinentGlobeStage", () => ({
-  ContinentGlobeStage: ({ autoRotate }: { autoRotate?: boolean }) => (
+  ContinentGlobeStage: ({
+    activation,
+    autoRotate,
+  }: {
+    activation?: "automatic" | "explicit";
+    autoRotate?: boolean;
+  }) => (
     <div
       className="home-globe-stage"
       data-testid="home-globe-stage"
+      data-activation={activation}
       data-autoplay={String(Boolean(autoRotate))}
     />
   ),
@@ -505,6 +512,16 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
     expect(screen.getByTestId("home-globe-stage")).toHaveAttribute(
       "data-autoplay",
       "true"
+    );
+  });
+
+  // @req REQ-112 REQ-115
+  it("keeps the costly WebGL upgrade behind the reader's explicit action", () => {
+    render(<HomeHero language="fr" visual={{ kind: "globe" }} />);
+
+    expect(screen.getByTestId("home-globe-stage")).toHaveAttribute(
+      "data-activation",
+      "explicit"
     );
   });
 });

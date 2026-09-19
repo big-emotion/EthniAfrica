@@ -74,14 +74,24 @@ describe("AFRIK Peoples Queries", () => {
 
     if (peoplesData !== undefined) {
       mockSupabase.order.mockResolvedValue({
-        data: peoplesData,
+        data: peoplesData.map((people) => ({
+          ...people,
+          afrik_people_countries: (relationsData || [])
+            .filter((relation) => relation.people_id === people.id)
+            .map((relation) => ({ country_id: relation.country_id })),
+        })),
         error: peoplesError || null,
       });
     }
 
     if (peoplesSingleData !== undefined) {
       mockSupabase.single.mockResolvedValue({
-        data: peoplesSingleData,
+        data: {
+          ...peoplesSingleData,
+          afrik_people_countries: (relationsData || [])
+            .filter((relation) => relation.people_id === peoplesSingleData.id)
+            .map((relation) => ({ country_id: relation.country_id })),
+        },
         error: peoplesError || null,
       });
     }
@@ -251,6 +261,10 @@ describe("AFRIK Peoples Queries", () => {
       expect(result).toBeDefined();
       expect(result?.id).toBe("PPL_SHONA");
       expect(result?.currentCountries).toContain("ZWE");
+      expect(mockSupabase.select).toHaveBeenCalledWith(
+        "*, afrik_people_countries(country_id)"
+      );
+      expect(mockSupabase.from).toHaveBeenCalledTimes(1);
     });
 
     // @req REQ-019
@@ -315,6 +329,10 @@ describe("AFRIK Peoples Queries", () => {
 
       expect(result).toHaveLength(1);
       expect(result[0].languageFamilyId).toBe("FLG_BANTU");
+      expect(mockSupabase.select).toHaveBeenCalledWith(
+        "*, afrik_people_countries(country_id)"
+      );
+      expect(mockSupabase.from).toHaveBeenCalledTimes(1);
     });
   });
 

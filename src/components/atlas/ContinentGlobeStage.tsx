@@ -4,6 +4,8 @@ import { useTheme } from "next-themes";
 import { useEffect, useMemo, useState } from "react";
 
 import { AtlasGlobe } from "@/components/atlas/AtlasGlobe";
+import { AfricaBasemap } from "@/components/system/AfricaBasemap";
+import { Button } from "@/components/ui/button";
 import type { GlobeSurface } from "@/lib/atlas/globePalette";
 import {
   buildContinentOverlay,
@@ -11,6 +13,7 @@ import {
 } from "@/lib/atlas/overlays";
 import { canCreateWebglContext } from "@/lib/home/webglSupport";
 import { gamesCopy } from "@/lib/i18n/copy/games";
+import { atlasCopy } from "@/lib/i18n/copy/atlas";
 import type { Language } from "@/types/shared";
 
 /**
@@ -27,6 +30,13 @@ import type { Language } from "@/types/shared";
  */
 export interface ContinentGlobeStageProps {
   language?: Language;
+  /**
+   * Whether WebGL starts immediately or only after the reader asks for it.
+   * The home keeps a static map in the first frame so its primary search and
+   * copy are not blocked by GPU setup on low-end devices. Game rounds keep the
+   * automatic default because the projection itself is their active surface.
+   */
+  activation?: "automatic" | "explicit";
   /**
    * Documented peoples per country, the continent scene's own signal (REQ-116).
    *
@@ -103,6 +113,7 @@ const NO_BORROWED_OUTLINES: ContinentFrameCountry[] = [];
 // @req REQ-120
 export function ContinentGlobeStage({
   language = "fr",
+  activation = "automatic",
   peopleCountsByCountry,
   pinnedProjection,
   pinnedProjectionNote,
@@ -112,6 +123,7 @@ export function ContinentGlobeStage({
   offContinentOutlines = NO_BORROWED_OUTLINES,
 }: ContinentGlobeStageProps) {
   const [webglSupported, setWebglSupported] = useState<boolean | null>(null);
+  const [activated, setActivated] = useState(activation === "automatic");
 
   /**
    * This stage is not a fiche, so DEC-022 does not license the night ground
@@ -130,9 +142,10 @@ export function ContinentGlobeStage({
     resolvedTheme === "dark" ? "night" : "parchment";
 
   useEffect(() => {
+    if (!activated) return;
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setWebglSupported(canCreateWebglContext());
-  }, []);
+  }, [activated]);
 
   /**
    * Memoised because the identity of this object is what drives the WebGL
@@ -155,6 +168,8 @@ export function ContinentGlobeStage({
     [peopleCountsByCountry, countriesUnderQuestion, offContinentOutlines]
   );
   const copy = gamesCopy[language].continentGlobe;
+  const showExplicitPlaceholder =
+    activation === "explicit" && (!activated || webglSupported === null);
 
   return (
     <div
@@ -162,7 +177,20 @@ export function ContinentGlobeStage({
         presentation === "hero" ? " home-globe-stage--hero" : ""
       }`}
     >
-      {webglSupported !== null && (
+      {showExplicitPlaceholder ? (
+        <div className="home-globe-stage__placeholder">
+          <AfricaBasemap data-testid="home-globe-static-map" />
+          <Button
+            type="button"
+            variant="accent"
+            className="absolute bottom-4 left-1/2 z-[7] -translate-x-1/2"
+            disabled={activated}
+            onClick={() => setActivated(true)}
+          >
+            {atlasCopy[language].activateInteractiveMap}
+          </Button>
+        </div>
+      ) : webglSupported !== null ? (
         <AtlasGlobe
           language={language}
           overlay={overlay}
@@ -211,7 +239,7 @@ export function ContinentGlobeStage({
            */
           projectionControl="morph"
         />
-      )}
+      ) : null}
       <style>{`
         /* The demo's stage heights were 380 / 460: the globe reads as a marble
            at those, and they were raised once by the height of the chrome,
@@ -240,6 +268,17 @@ export function ContinentGlobeStage({
              (470/520, space.css) is shorter than the floors below. Left alone,
              the box and the figure inside it disagree at every breakpoint. */
           --afh-globe-stage-height: 560px;
+        }
+        .home-globe-stage__placeholder {
+          position: relative;
+          display: grid;
+          place-items: center;
+          min-height: var(--afh-globe-stage-height);
+          overflow: hidden;
+        }
+        .home-globe-stage__placeholder > svg {
+          width: min(100%, 560px);
+          opacity: 0.72;
         }
         /* The external range and its compact figure tools are absolutely
            anchored immediately after the visual stage. Reserving their full

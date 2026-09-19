@@ -1,6 +1,12 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import React from "react";
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import {
+  act,
+  render,
+  screen,
+  fireEvent,
+  waitFor,
+} from "@testing-library/react";
 
 // ---------------------------------------------------------------------------
 // Mocks
@@ -22,6 +28,27 @@ vi.mock("next/navigation", () => ({
 const mockGetPeopleById = vi.fn();
 const mockGetEgoNetwork = vi.fn();
 const mockGetLanguageFamilyById = vi.fn();
+const cacheRegistration = vi.hoisted(() => ({
+  keyParts: [] as string[],
+  revalidate: 0,
+}));
+const unstableCacheMock = vi.hoisted(() =>
+  vi.fn(
+    (
+      callback: (...args: never[]) => unknown,
+      keyParts: string[],
+      options: { revalidate: number }
+    ) => {
+      cacheRegistration.keyParts = keyParts;
+      cacheRegistration.revalidate = options.revalidate;
+      return callback;
+    }
+  )
+);
+
+vi.mock("next/cache", () => ({
+  unstable_cache: unstableCacheMock,
+}));
 
 vi.mock("@/api/v2/services/peopleService", () => ({
   getPeopleById: (...args: unknown[]) => mockGetPeopleById(...args),
@@ -61,15 +88,16 @@ vi.mock("@/components/layout/PageLayout", () => ({
 // ---------------------------------------------------------------------------
 import { notFound, redirect } from "next/navigation";
 import PeopleLinksPage, { generateMetadata } from "../page";
+import { resolveAsyncServerComponents } from "@/test/resolveAsyncServerComponents";
 import { RELATIONS } from "@/components/fiche/__tests__/ficheContextFixtures";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
-import { getPeopleLinksRoute, getPeopleRoute } from "@/lib/routing";
+import { getPeopleLinksRoute } from "@/lib/routing";
 
 async function renderPage(slug: string, lang = "fr") {
   const ui = await PeopleLinksPage({
     params: Promise.resolve({ lang, slug }),
   });
-  return render(ui as React.ReactElement);
+  return render((await resolveAsyncServerComponents(ui)) as React.ReactElement);
 }
 
 async function callPage(slug: string, lang = "fr") {
@@ -94,6 +122,29 @@ describe("/[lang]/peuples/[slug]/liens page", () => {
       nameFr: "Niger-Congo",
       content: {},
     });
+  });
+
+  afterEach(() => {
+    vi.unstubAllGlobals();
+  });
+
+  // @req REQ-097 FR72
+  it("caches the relation network for the route's one-hour freshness window", () => {
+    expect(cacheRegistration).toEqual({
+      keyParts: ["people-links-ego-network"],
+      revalidate: 3600,
+    });
+  });
+
+  // @req REQ-097 FR72
+  it("starts the relation read early without delaying the named page", async () => {
+    mockGetEgoNetwork.mockReturnValue(new Promise(() => {}));
+
+    await PeopleLinksPage({
+      params: Promise.resolve({ lang: "fr", slug: "PPL_YORUBA" }),
+    });
+
+    expect(mockGetEgoNetwork).toHaveBeenCalledWith("PPL_YORUBA");
   });
 
   // @req REQ-140
@@ -238,13 +289,54 @@ describe("/[lang]/peuples/[slug]/liens page", () => {
   describe("ego-network graph integration (11.11)", () => {
     beforeEach(() => {
       mockGetEgoNetwork.mockResolvedValue({ sourced: RELATIONS, derived: [] });
+      // Interaction tests exercise the explicit fallback used by environments
+      // without IntersectionObserver. The visibility test below installs a
+      // controllable observer instead.
+      vi.stubGlobal("IntersectionObserver", undefined);
+    });
+
+    // @req REQ-097 FR75 UX-DR46
+    it("keeps the below-the-fold graph unloaded until its reserved container approaches the viewport", async () => {
+      let revealGraph: (() => void) | undefined;
+
+      class IntersectionObserverStub {
+        constructor(callback: IntersectionObserverCallback) {
+          revealGraph = () =>
+            callback(
+              [{ isIntersecting: true } as IntersectionObserverEntry],
+              this as unknown as IntersectionObserver
+            );
+        }
+
+        observe() {}
+        unobserve() {}
+        disconnect() {}
+      }
+
+      vi.stubGlobal("IntersectionObserver", IntersectionObserverStub);
+
+      await renderPage("PPL_YORUBA");
+
+      expect(
+        screen.getByTestId("ego-network-graph-container")
+      ).toBeInTheDocument();
+      expect(screen.queryByRole("application")).not.toBeInTheDocument();
+      expect(revealGraph).toBeTypeOf("function");
+
+      act(() => revealGraph?.());
+
+      expect(
+        await screen.findByRole("application", {
+          name: /Graphe de relations centré sur Yoruba/,
+        })
+      ).toBeInTheDocument();
     });
 
     // @req REQ-097 FR75 UX-DR46
     it("renders the complete relations list before the lazily-mounted graph, inside a reserved aspect-ratio container", async () => {
       await renderPage("PPL_YORUBA");
 
-      const list = screen.getByText("Fon").closest("ul") as HTMLElement;
+      const list = screen.getByRole("list");
       const graphContainer = screen.getByTestId("ego-network-graph-container");
 
       expect(list).toBeInTheDocument();

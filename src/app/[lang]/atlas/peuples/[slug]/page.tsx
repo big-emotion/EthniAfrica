@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
 import { notFound, redirect } from "next/navigation";
+import { Suspense } from "react";
 
 import {
   isFicheKnownAbsent,
@@ -44,26 +44,160 @@ import { getEgoNetwork } from "@/api/v2/services/relations";
 import { mapPeopleDetail } from "@/lib/afrikDetailMapper";
 import { getActiveSourceFlags } from "@/lib/supabase/queries/afrik/flags";
 import { peopleCopy } from "@/lib/i18n/copy/people";
+import { FicheAtlasGlobeIsland } from "@/components/atlas/FicheAtlasGlobeIsland";
 
 // @req REQ-019
 export const revalidate = 3600;
 
-/**
- * ETNI-1378/ETNI-1478 — statically importing AtlasGlobe put its whole client
- * bundle (marker placement, camera hooks, target picker, facts panel, SVG
- * fallback) into this page's own hydration task, which is what blew the
- * mobile Total Blocking Time budget on this route (2.9-3.7s against 300ms).
- * `dynamic()` code-splits it, the same mechanism the explorer hub already
- * uses (ExplorerContinent, FacetGlobeIsland) — `ssr: false` is not used here
- * because the globe is this fiche's hero and still has to reach first paint.
- */
-const AtlasGlobe = dynamic(() =>
-  import("@/components/atlas/AtlasGlobe").then((m) => m.AtlasGlobe)
-);
-
 interface PageParams {
   lang: string;
   slug: string;
+}
+
+async function PeopleLiveContent({
+  people,
+  peopleDetail,
+  language,
+}: {
+  people: NonNullable<Awaited<ReturnType<typeof loadPeopleFiche>>>;
+  peopleDetail: ReturnType<typeof mapPeopleDetail>;
+  language: Language;
+}) {
+  const isoCodes = peopleDetail.languages?.isoCodes ?? [];
+  const [
+    sourceFlags,
+    namesDossier,
+    fragmentation,
+    egoNetwork,
+    fieldNotes,
+    borneNames,
+    peopleNameIndex,
+    languageFamily,
+    spokenLanguages,
+  ] = await Promise.all([
+    getActiveSourceFlags("people", peopleDetail.id),
+    getPeopleNamesDossier(peopleDetail.id).catch(() => null),
+    getPeopleFragmentation(peopleDetail.id).catch(() => null),
+    getEgoNetwork(peopleDetail.id),
+    getFieldNotes("people", peopleDetail.id).catch(() => []),
+    getPatronymesBorneByPeople(peopleDetail.id).catch(() => null),
+    getPeopleNameIndex(),
+    getLanguageFamilyById(peopleDetail.languageFamilyId, language)
+      .then((family) =>
+        family
+          ? {
+              id: family.id,
+              name:
+                language === "en"
+                  ? (family.nameEn ?? family.nameFr)
+                  : family.nameFr,
+            }
+          : null
+      )
+      .catch(() => null),
+    listAfrikLanguages({ filters: { ids: [...isoCodes] }, perPage: 4 })
+      .then((result) => result.languages)
+      .catch(() => []),
+  ]);
+
+  const register = buildFicheSourceRegister(
+    ficheSourceEntries(people.content?.sources),
+    fieldNotes.flatMap((note) => note.sources)
+  );
+  const notes = buildPeopleFicheNotes(
+    fieldNotes,
+    register.numberBySourceId,
+    language
+  );
+  const peopleFieldOverlay = buildPeopleFieldOverlay(
+    peopleDetail.demography?.distributionByCountry
+  );
+  const copy = peopleCopy[language];
+
+  return (
+    <>
+      <FicheJsonLd
+        graph={await ficheJsonLdFor("people", language, peopleDetail.id)}
+      />
+      <FicheSequence
+        language={language}
+        entityType="people"
+        entityId={peopleDetail.id}
+        entityName={peopleDetail.nameMain}
+        globe={
+          <FicheHeroBand>
+            <FicheAtlasGlobeIsland
+              language={language}
+              overlay={peopleFieldOverlay}
+              missingMessage={copy.atlas.missingDistribution(
+                peopleDetail.nameMain
+              )}
+              facts={buildPeoplePresenceFacts({
+                language,
+                peopleName: peopleDetail.nameMain,
+                peopleId: peopleDetail.id,
+                demography: peopleDetail.demography,
+              })}
+              fallbackNote={peopleFallbackNote(
+                peopleDetail.nameMain,
+                peopleFieldOverlay,
+                language
+              )}
+              targetPicker="list"
+              wholeAreaLabel={copy.atlas.wholeArea}
+              areaNoun={copy.atlas.areaNoun}
+              legend={
+                <p
+                  data-atlas-legend=""
+                  className="pointer-events-none absolute inset-x-0 top-0 hidden max-w-[22ch] p-3 text-afh-caption min-[760px]:block"
+                  style={{ color: "var(--afh-night-ink-3)" }}
+                >
+                  {copy.atlas.noBoundary}
+                  <br />
+                  {copy.atlas.presenceAndDensity}
+                </p>
+              }
+            />
+          </FicheHeroBand>
+        }
+        record={
+          <PeopleDetailViewV2
+            people={peopleDetail}
+            language={language}
+            namesDossier={namesDossier}
+            fragmentation={fragmentation}
+            hasSourceFlag={sourceFlags.length > 0}
+            relations={egoNetwork.sourced}
+            notes={notes}
+            borneNames={borneNames}
+            peopleNameIndex={peopleNameIndex}
+            resolvedFamilyName={languageFamily?.name}
+            bibliography={notes.count > 0 ? register.entries : undefined}
+            onward={
+              <FicheOnward
+                from="people"
+                language={language}
+                links={buildOnwardLinks(
+                  peopleOnwardGroups({
+                    family: languageFamily,
+                    languages: spokenLanguages,
+                    countryCodes: peopleDetail.currentCountries,
+                    sameFamilyPeoples: egoNetwork.derived.map(
+                      (link) => link.neighbor
+                    ),
+                    borneNames: borneNames ?? [],
+                    language,
+                  }),
+                  language,
+                  { kind: "people", id: peopleDetail.id }
+                )}
+              />
+            }
+          />
+        }
+      />
+    </>
+  );
 }
 
 /**
@@ -167,105 +301,12 @@ export default async function PeoplesSlugPage({
     );
   }
 
-  // The parchment's corpora are side-loaded alongside the fiche itself, so a
-  // cold render does not pay for them one after the other even with
-  // revalidate = 3600 amortising the cost.
-  //
-  // A people with no names dossier and a people confined to a single country
-  // are ordinary states of the corpus, and both services signal them by
-  // throwing. Each rejection is caught on its own promise so the degradation
-  // stays local — an absent dossier must not also cost the fragmentation
-  // section — and so an optional section can never turn the fiche into a 500.
-  //
-  // The narratives are not counted here: OralNarrativesSection fetches them
-  // itself from the browser, and the count only ever existed to decide whether
-  // the voices chapter got an anchor before hydration. The parchment has no
-  // such chapter to gate.
-  const [
-    people,
-    sourceFlags,
-    namesDossier,
-    fragmentation,
-    egoNetwork,
-    fieldNotes,
-    borneNames,
-    peopleNameIndex,
-  ] = await Promise.all([
-    loadPeopleFiche(parsed.slug, lang as Language),
-    getActiveSourceFlags("people", parsed.slug),
-    getPeopleNamesDossier(parsed.slug).catch(() => null),
-    getPeopleFragmentation(parsed.slug).catch(() => null),
-    getEgoNetwork(parsed.slug),
-    // Alongside its neighbours rather than after them, and caught like them:
-    // the citation apparatus must never be able to cost the fiche.
-    getFieldNotes("people", parsed.slug).catch(() => []),
-    // Caught to `null` rather than to `[]`: an empty list is the corpus
-    // saying this people carries no name, which is the ordinary answer and
-    // one the chapter prints. A failed read must not be able to say that.
-    getPatronymesBorneByPeople(parsed.slug).catch(() => null),
-    // Which of this fiche's "groupes associés" the corpus holds a fiche for.
-    // The service already answers `[]` when the read fails, and an empty index
-    // costs links rather than the chips themselves.
-    getPeopleNameIndex(),
-  ]);
+  const people = await loadPeopleFiche(parsed.slug, lang as Language);
   if (!people) {
     notFound();
   }
 
   const peopleDetail = mapPeopleDetail(people);
-
-  /**
-   * The family and the languages, named.
-   *
-   * A people carries its family as an identifier and its languages as bare
-   * ISO 639-3 codes; neither has a name beside it, and `mainLanguage` is prose
-   * that cannot be split per code — "Kriolu capverdien (langue vehiculaire
-   * locale) ; portugais" for two codes. Without these two reads the block
-   * would print `FLG_BENOUECONGO` and `yor`, which is the corpus's filing
-   * rather than anything a reader can use.
-   *
-   * Both are caught: a fiche must not 500 over the chapter that closes it.
-   */
-  const isoCodes = peopleDetail.languages?.isoCodes ?? [];
-  const [languageFamily, spokenLanguages] = await Promise.all([
-    getLanguageFamilyById(peopleDetail.languageFamilyId, lang as Language)
-      .then((family) =>
-        family
-          ? {
-              id: family.id,
-              name:
-                lang === "en"
-                  ? (family.nameEn ?? family.nameFr)
-                  : family.nameFr,
-            }
-          : null
-      )
-      .catch(() => null),
-    listAfrikLanguages({ filters: { ids: [...isoCodes] }, perPage: 4 })
-      .then((result) => result.languages)
-      .catch(() => []),
-  ]);
-
-  /**
-   * The fiche's bibliography, and the callouts that index it.
-   *
-   * The register is built from both lists — what the fiche declares and what
-   * its assertions cite — because a callout must never point at an unnumbered
-   * source, and a declared source must never disappear for want of a citation.
-   */
-  const register = buildFicheSourceRegister(
-    ficheSourceEntries(people.content?.sources),
-    fieldNotes.flatMap((note) => note.sources)
-  );
-  const notes = buildPeopleFicheNotes(
-    fieldNotes,
-    register.numberBySourceId,
-    lang as Language
-  );
-  const peopleFieldOverlay = buildPeopleFieldOverlay(
-    peopleDetail.demography?.distributionByCountry
-  );
-  const copy = peopleCopy[lang as Language];
 
   // Live version (revalidate = 3600 at segment level)
   //
@@ -285,104 +326,13 @@ export default async function PeoplesSlugPage({
         </FicheHeroHead>
       }
     >
-      <FicheJsonLd
-        graph={await ficheJsonLdFor("people", lang as Language, parsed.slug)}
-      />
-      <FicheSequence
-        language={lang as Language}
-        entityType="people"
-        entityId={parsed.slug}
-        entityName={peopleDetail.nameMain}
-        globe={
-          <FicheHeroBand>
-            <AtlasGlobe
-              language={lang as Language}
-              overlay={peopleFieldOverlay}
-              missingMessage={copy.atlas.missingDistribution(
-                peopleDetail.nameMain
-              )}
-              facts={buildPeoplePresenceFacts({
-                language: lang as Language,
-                peopleName: peopleDetail.nameMain,
-                peopleId: parsed.slug,
-                demography: peopleDetail.demography,
-              })}
-              fallbackNote={peopleFallbackNote(
-                peopleDetail.nameMain,
-                peopleFieldOverlay,
-                lang as Language
-              )}
-              // Markers sit on the sphere, so a country that has rotated
-              // behind it has no button to click. The list names every
-              // presence country instead, at any count.
-              targetPicker="list"
-              wholeAreaLabel={copy.atlas.wholeArea}
-              areaNoun={copy.atlas.areaNoun}
-              // The mockup's own caption. The default states what the globe
-              // is; a people fiche has to state what it is *not* — the one
-              // fiche of the three whose subject has no line to close.
-              legend={
-                <p
-                  data-atlas-legend=""
-                  className="pointer-events-none absolute inset-x-0 top-0 hidden max-w-[22ch] p-3 text-afh-caption min-[760px]:block"
-                  style={{ color: "var(--afh-night-ink-3)" }}
-                >
-                  {copy.atlas.noBoundary}
-                  <br />
-                  {copy.atlas.presenceAndDensity}
-                </p>
-              }
-            />
-          </FicheHeroBand>
-        }
-        // The mockup has no reading gate: the parchment is the fiche, not a
-        // chapter filed under it.
-        record={
-          // Server-rendered, from what this route already awaited. The view
-          // it replaces fetched the same fiche, fragmentation and names
-          // dossier again from the browser, which cost the page its server
-          // rendering — and with it the axe audit and the Lighthouse score.
-          <PeopleDetailViewV2
-            people={peopleDetail}
-            language={lang as Language}
-            namesDossier={namesDossier}
-            fragmentation={fragmentation}
-            hasSourceFlag={sourceFlags.length > 0}
-            relations={egoNetwork.sourced}
-            notes={notes}
-            borneNames={borneNames}
-            peopleNameIndex={peopleNameIndex}
-            resolvedFamilyName={languageFamily?.name}
-            // Only when something cites it: a bibliography numbered for
-            // nobody promises an anchor that does not exist.
-            bibliography={notes.count > 0 ? register.entries : undefined}
-            onward={
-              <FicheOnward
-                from="people"
-                language={lang as Language}
-                links={buildOnwardLinks(
-                  peopleOnwardGroups({
-                    family: languageFamily,
-                    languages: spokenLanguages,
-                    countryCodes: peopleDetail.currentCountries,
-                    // The half of the ego network the fiche throws away: the
-                    // sourced relations already have a chapter of their own,
-                    // and these are the peoples sharing this one's family,
-                    // ordered by name and disjoint from them by construction.
-                    sameFamilyPeoples: egoNetwork.derived.map(
-                      (link) => link.neighbor
-                    ),
-                    borneNames: borneNames ?? [],
-                    language: lang as Language,
-                  }),
-                  lang as Language,
-                  { kind: "people", id: peopleDetail.id }
-                )}
-              />
-            }
-          />
-        }
-      />
+      <Suspense fallback={<div aria-busy="true" className="min-h-[60vh]" />}>
+        <PeopleLiveContent
+          people={people}
+          peopleDetail={peopleDetail}
+          language={lang as Language}
+        />
+      </Suspense>
     </PageLayout>
   );
 }

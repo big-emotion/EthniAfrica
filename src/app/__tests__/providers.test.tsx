@@ -1,5 +1,5 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
-import { render } from "@testing-library/react";
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+import { act, fireEvent, render, screen } from "@testing-library/react";
 import * as Sentry from "@sentry/nextjs";
 
 // ---------------------------------------------------------------------------
@@ -13,25 +13,21 @@ vi.mock("@sentry/nextjs", () => ({
 
 // UI primitives
 vi.mock("@/components/ui/toaster", () => ({ Toaster: () => null }));
-vi.mock("@/components/ui/sonner", () => ({ Toaster: () => null }));
 vi.mock("@/components/ui/tooltip", () => ({
   TooltipProvider: ({ children }: { children: React.ReactNode }) => (
     <>{children}</>
   ),
 }));
 
-// react-query
-vi.mock("@tanstack/react-query", () => ({
-  QueryClient: class {
-    constructor() {}
-  },
-  QueryClientProvider: ({ children }: { children: React.ReactNode }) => (
-    <>{children}</>
-  ),
-}));
-
 // ConsentBanner — not under test here
 vi.mock("@/components/consent", () => ({ ConsentBanner: () => null }));
+
+vi.mock("next/dynamic", () => ({
+  default: () =>
+    function DeferredChromeStub() {
+      return <div data-testid="deferred-client-chrome" />;
+    },
+}));
 
 // next-themes — capture the props so the nonce contract can be asserted
 const themeProviderProps = vi.fn();
@@ -142,6 +138,38 @@ describe("ConsentEnforcer", () => {
       functional: true,
     });
     expect(vi.mocked(Sentry.setUser)).not.toHaveBeenCalled();
+  });
+});
+
+describe("Providers — deferred client chrome", () => {
+  beforeEach(() => {
+    vi.useFakeTimers();
+  });
+
+  afterEach(() => {
+    vi.useRealTimers();
+  });
+
+  // @req REQ-112
+  it("loads interaction chrome on the reader's first interaction", () => {
+    render(<Providers>child</Providers>);
+
+    act(() => vi.advanceTimersByTime(5_000));
+    expect(screen.queryByTestId("deferred-client-chrome")).toBeNull();
+
+    fireEvent.pointerDown(window);
+    expect(screen.getByTestId("deferred-client-chrome")).toBeInTheDocument();
+  });
+
+  // @req REQ-112
+  it("loads interaction chrome after a quiet-reader fallback", () => {
+    render(<Providers>child</Providers>);
+
+    act(() => vi.advanceTimersByTime(14_999));
+    expect(screen.queryByTestId("deferred-client-chrome")).toBeNull();
+
+    act(() => vi.advanceTimersByTime(1));
+    expect(screen.getByTestId("deferred-client-chrome")).toBeInTheDocument();
   });
 });
 

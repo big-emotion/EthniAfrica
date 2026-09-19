@@ -28,10 +28,6 @@ vi.mock("@/hooks/use-keyboard-shortcuts", () => ({
   useKeyboardShortcuts: () => undefined,
 }));
 
-vi.mock("@/hooks/use-mobile", () => ({
-  useIsMobile: () => true,
-}));
-
 let mockPathname = "/fr/peuples-dafrique";
 
 vi.mock("next/navigation", () => ({
@@ -127,8 +123,7 @@ describe("PageLayout — header/main offset (ETNI-820: nav is never fixed, on or
     );
 
     const main = screen.getByTestId("content").closest("main");
-    // useIsMobile is mocked to true in this file, so the mobile fixed-nav
-    // offset (pt-24) is the one under test off the home route.
+    // Neither responsive branch may restore the former fixed-nav offset.
     expect(main?.className).not.toMatch(/pt-24|pt-28/);
   });
 
@@ -215,8 +210,18 @@ describe("PageLayout — the trail the shell owns", () => {
 });
 
 describe("PageLayout — flushTop", () => {
+  // @req REQ-044 NFR
+  it("keeps responsive spacing in CSS so hydration cannot move the LCP", () => {
+    const source = readFileSync(
+      resolve(process.cwd(), "src/components/layout/PageLayout.tsx"),
+      "utf8"
+    );
+
+    expect(source).not.toContain("useIsMobile");
+  });
+
   // @req REQ-044
-  it("keeps main's top padding by default", () => {
+  it("keeps mobile-first main padding by default", () => {
     mockPathname = "/fr";
     render(
       <PageLayout language="fr" hideHeader>
@@ -225,7 +230,7 @@ describe("PageLayout — flushTop", () => {
     );
 
     const main = screen.getByTestId("content").closest("main");
-    expect(main?.className).toMatch(/\bpy-4\b/);
+    expect(main).toHaveClass("py-4", "md:py-8");
   });
 
   // @req REQ-044
@@ -238,7 +243,7 @@ describe("PageLayout — flushTop", () => {
     );
 
     const main = screen.getByTestId("content").closest("main");
-    expect(main?.className).toMatch(/\bpb-4\b/);
+    expect(main).toHaveClass("pb-4", "md:pb-8");
     expect(main?.className).not.toMatch(/\bpy-\d/);
     expect(main?.className).not.toMatch(/\bpt-\d/);
   });

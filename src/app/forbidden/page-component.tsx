@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { StateMedallion } from "@/components/ui/StateMedallion";
-import { createBrowserSupabaseClient } from "@/lib/supabase/auth-client";
 import { systemStatesCopy } from "@/lib/i18n/copy/systemStates";
 import { useRouteLanguage } from "@/hooks/use-language";
 import type { Language } from "@/types/shared";
@@ -18,6 +17,8 @@ export default function ForbiddenPageComponent({
   const activeLanguage = language ?? routeLanguage;
   const copy = systemStatesCopy[activeLanguage].forbidden;
   const handleSignOut = async () => {
+    const { createBrowserSupabaseClient } =
+      await import("@/lib/supabase/auth-client");
     const supabase = createBrowserSupabaseClient();
     await supabase.auth.signOut();
     window.location.href = "/";

@@ -161,8 +161,10 @@ export function HomeHero({
                probing, its SVG fallback, keyboard controls and reduced-motion
                behaviour. */
             <ContinentGlobeStage
+              language={language}
               peopleCountsByCountry={peopleCountsByCountry}
               presentation="hero"
+              activation="explicit"
               autoRotate
             />
           ) : null}

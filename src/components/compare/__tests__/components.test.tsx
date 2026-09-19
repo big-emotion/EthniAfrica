@@ -185,13 +185,16 @@ describe("EntityComparePicker", () => {
     renderPicker();
     const input = screen.getByRole("combobox");
     fireEvent.change(input, { target: { value: "yo" } });
-    await screen.findByRole("option", { name: /yoruba/i });
+    const option = await screen.findByRole("option", { name: /yoruba/i });
 
     fireEvent.keyDown(input, { key: "ArrowDown" });
+    await waitFor(() =>
+      expect(option).toHaveAttribute("aria-selected", "true")
+    );
     fireEvent.keyDown(input, { key: "Enter" });
 
     expect(
-      screen.getByRole("button", { name: /retirer yorùbá/i })
+      await screen.findByRole("button", { name: /retirer yorùbá/i })
     ).toBeInTheDocument();
     expect(screen.getByRole("status")).toHaveTextContent(
       "Yorùbá ajouté à la comparaison, 1 sur 3"

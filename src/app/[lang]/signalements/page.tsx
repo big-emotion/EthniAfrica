@@ -10,6 +10,7 @@ import { surfaceHead } from "@/lib/seo/localeAlternates";
 import { getPublicFlagsPage } from "@/lib/supabase/queries/flags/getPublicFlagsPage";
 import { getTranslation } from "@/lib/translations";
 import type { Language } from "@/types/shared";
+import { QueryProvider } from "@/components/QueryProvider";
 
 interface PageProps {
   params: Promise<{ lang: string }>;
@@ -53,7 +54,9 @@ export default async function SignalementsPage({ params }: PageProps) {
         <p className="max-w-3xl font-afh text-afh-small leading-relaxed text-afh-text-soft">
           {copy.introduction}
         </p>
-        <PublicFlagsQueue initialPage={initialPage} initialFilters={{}} />
+        <QueryProvider>
+          <PublicFlagsQueue initialPage={initialPage} initialFilters={{}} />
+        </QueryProvider>
       </div>
     </PageLayout>
   );

@@ -1,6 +1,7 @@
 import AxeBuilder from "@axe-core/playwright";
 import { test, expect } from "./support/fixtures";
 import { getPeopleRoute } from "@/lib/routing";
+import { activateFicheGlobe } from "./support/atlas";
 import { LOCALE } from "./support/locale";
 
 // English UI copy lands per translation wave (REQ-142 to REQ-146). Until it
@@ -73,6 +74,7 @@ test.describe("@nfr-a11y people fiche — axe-core", () => {
   }) => {
     await page.goto(getPeopleRoute(LOCALE, "PPL_YORUBA"));
     await page.waitForLoadState("networkidle");
+    await activateFicheGlobe(page, "keyboard");
 
     // Found by its accessible name, the way the readers this test is about
     // find it. The selector here used to be `[data-atlas-picker]`, an

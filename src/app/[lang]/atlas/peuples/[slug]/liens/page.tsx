@@ -1,24 +1,63 @@
 import type { Metadata } from "next";
+import { unstable_cache } from "next/cache";
 import { notFound, redirect } from "next/navigation";
+import { Suspense } from "react";
 
 import { PageLayout } from "@/components/layout/PageLayout";
 import { RETIRED_PEOPLE_IDS } from "@/lib/afrik/retiredPeopleIds";
+import { loadPeopleFiche } from "@/lib/fiche/ficheExistence";
 import { getPeopleLinksRoute } from "@/lib/routing";
 import { ficheCanonical } from "@/lib/seo/ficheCanonical";
 import type { Language } from "@/types/shared";
 import { RelationsListWithSourceSheet } from "@/components/relations/RelationsListWithSourceSheet";
-import { getPeopleById } from "@/api/v2/services/peopleService";
 import { getEgoNetwork } from "@/api/v2/services/relations";
 import { transformRelationsToListItems } from "@/lib/relationsDataTransformer";
 import { logger } from "@/lib/api/logger";
 import { relationsCopy } from "@/lib/i18n/copy/relations";
+import { CORPUS_AGGREGATE_REVALIDATE_SECONDS } from "@/api/v2/services/corpusCache";
 
 // @req REQ-097 FR72
 export const revalidate = 3600;
 
+const getCachedEgoNetwork = unstable_cache(
+  (peopleId: string) => getEgoNetwork(peopleId),
+  ["people-links-ego-network"],
+  { revalidate: CORPUS_AGGREGATE_REVALIDATE_SECONDS }
+);
+
 interface PageParams {
   lang: string;
   slug: string;
+}
+
+async function PeopleRelationsContent({
+  people,
+  language,
+  egoNetworkPromise,
+}: {
+  people: NonNullable<Awaited<ReturnType<typeof loadPeopleFiche>>>;
+  language: Language;
+  egoNetworkPromise: ReturnType<typeof getEgoNetwork>;
+}) {
+  const egoNetwork = await egoNetworkPromise;
+  const items = transformRelationsToListItems(
+    egoNetwork.sourced,
+    egoNetwork.derived
+  );
+  const copy = relationsCopy[language].page;
+
+  return (
+    <div className="container mx-auto max-w-4xl px-4 py-8">
+      <h1 className="text-afh-h2 font-semibold mt-4 mb-6 text-afh-text">
+        {copy.title(people.nameMain)}
+      </h1>
+      <RelationsListWithSourceSheet
+        items={items}
+        center={{ id: people.id, nameMain: people.nameMain }}
+        language={language}
+      />
+    </div>
+  );
 }
 
 // @req REQ-097 FR72
@@ -41,9 +80,9 @@ export async function generateMetadata({
   // `document-title` violation. The unnamed fallback below is the honest
   // answer to "we could not read who this is", and the body still surfaces the
   // failure itself.
-  let people: Awaited<ReturnType<typeof getPeopleById>> = null;
+  let people: Awaited<ReturnType<typeof loadPeopleFiche>> = null;
   try {
-    people = await getPeopleById(slug);
+    people = await loadPeopleFiche(slug, language);
   } catch (error) {
     logger.error(`Links metadata read failed for ${slug}`, error);
     return { ...head, title: copy.fallbackTitle };
@@ -86,19 +125,13 @@ export default async function PeopleLinksPage({
     redirect(getPeopleLinksRoute(language, successorId));
   }
 
-  const [people, egoNetwork] = await Promise.all([
-    getPeopleById(slug),
-    getEgoNetwork(slug),
-  ]);
+  const peoplePromise = loadPeopleFiche(slug, language);
+  const egoNetworkPromise = getCachedEgoNetwork(slug);
+  const people = await peoplePromise;
 
   if (!people) {
     notFound();
   }
-
-  const items = transformRelationsToListItems(
-    egoNetwork.sourced,
-    egoNetwork.derived
-  );
 
   return (
     <PageLayout
@@ -106,16 +139,13 @@ export default async function PeopleLinksPage({
       sectionName={copy.section}
       trailLabel={people.nameMain}
     >
-      <div className="container mx-auto max-w-4xl px-4 py-8">
-        <h1 className="text-afh-h2 font-semibold mt-4 mb-6 text-afh-text">
-          {copy.title(people.nameMain)}
-        </h1>
-        <RelationsListWithSourceSheet
-          items={items}
-          center={{ id: people.id, nameMain: people.nameMain }}
+      <Suspense fallback={<div aria-busy="true" className="min-h-48" />}>
+        <PeopleRelationsContent
+          people={people}
           language={language}
+          egoNetworkPromise={egoNetworkPromise}
         />
-      </div>
+      </Suspense>
     </PageLayout>
   );
 }

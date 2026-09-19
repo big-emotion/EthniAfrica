@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { NameNomenclature } from "@/components/names/NameNomenclature";
 import {
@@ -7,7 +8,10 @@ import {
   NamesSchemaUnavailableError,
   type ListNameFormsResult,
 } from "@/api/v2/services/names";
-import { listNameFormsQuerySchema } from "@/api/v2/schemas/names";
+import {
+  listNameFormsQuerySchema,
+  type ListNameFormsQuery,
+} from "@/api/v2/schemas/names";
 import { getTranslation } from "@/lib/translations";
 import { getLocalizedRoute } from "@/lib/routing";
 import { surfaceHead } from "@/lib/seo/localeAlternates";
@@ -23,6 +27,45 @@ interface AppellationsPageProps {
     imposedOnly?: string;
     page?: string;
   }>;
+}
+
+async function AppellationsNomenclature({
+  language,
+  query,
+}: {
+  language: Language;
+  query: ListNameFormsQuery;
+}) {
+  let result: ListNameFormsResult;
+  let typeCounts: Awaited<ReturnType<typeof getNameTypeCounts>>;
+  try {
+    [result, typeCounts] = await Promise.all([
+      listNameForms(query),
+      getNameTypeCounts(),
+    ]);
+  } catch (error) {
+    if (!(error instanceof NamesSchemaUnavailableError)) {
+      throw error;
+    }
+    result = { forms: [], total: 0, pageCount: 1 };
+    typeCounts = { byType: {}, imposed: 0 };
+  }
+
+  return (
+    <NameNomenclature
+      language={language}
+      forms={result.forms}
+      total={result.total}
+      page={query.page}
+      pageCount={result.pageCount}
+      perPage={query.perPage}
+      query={query.q}
+      nameType={query.nameType}
+      imposedOnly={query.imposedOnly}
+      typeCounts={typeCounts.byType}
+      imposedCount={typeCounts.imposed}
+    />
+  );
 }
 
 // @req REQ-054 @req FR95
@@ -68,21 +111,6 @@ export default async function AppellationsPage({
     ? parsed.data
     : { page: 1, perPage: PER_PAGE, imposedOnly: false };
 
-  let result: ListNameFormsResult;
-  let typeCounts: Awaited<ReturnType<typeof getNameTypeCounts>>;
-  try {
-    [result, typeCounts] = await Promise.all([
-      listNameForms(query),
-      getNameTypeCounts(),
-    ]);
-  } catch (error) {
-    if (!(error instanceof NamesSchemaUnavailableError)) {
-      throw error;
-    }
-    result = { forms: [], total: 0, pageCount: 1 };
-    typeCounts = { byType: {}, imposed: 0 };
-  }
-
   return (
     <PageLayout
       language={language}
@@ -103,19 +131,17 @@ export default async function AppellationsPage({
         >
           {t.genealogyNote}
         </p>
-        <NameNomenclature
-          language={language}
-          forms={result.forms}
-          total={result.total}
-          page={query.page}
-          pageCount={result.pageCount}
-          perPage={PER_PAGE}
-          query={query.q}
-          nameType={query.nameType}
-          imposedOnly={query.imposedOnly}
-          typeCounts={typeCounts.byType}
-          imposedCount={typeCounts.imposed}
-        />
+        <Suspense
+          fallback={
+            <div
+              aria-busy="true"
+              aria-label={language === "fr" ? "Chargement" : "Loading"}
+              className="min-h-48"
+            />
+          }
+        >
+          <AppellationsNomenclature language={language} query={query} />
+        </Suspense>
       </div>
     </PageLayout>
   );

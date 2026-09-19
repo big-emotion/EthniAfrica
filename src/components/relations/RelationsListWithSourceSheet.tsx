@@ -5,7 +5,6 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
 
 import { RelationsList, type RelationsListProps } from "./RelationsList";
-import SourceChainSheet from "@/components/source-transparency/SourceChainSheet";
 import type { EgoNetworkGraphCenter } from "@/components/relations/EgoNetworkGraph";
 import type { RelationListItem } from "@/lib/relationsDataTransformer";
 import { getPeopleLinksRoute } from "@/lib/routing";
@@ -21,6 +20,11 @@ const LazyEgoNetworkGraph = dynamic(
     import("@/components/relations/EgoNetworkGraph").then(
       (mod) => mod.EgoNetworkGraph
     ),
+  { ssr: false }
+);
+
+const LazySourceChainSheet = dynamic(
+  () => import("@/components/source-transparency/SourceChainSheet"),
   { ssr: false }
 );
 
@@ -53,12 +57,39 @@ export function RelationsListWithSourceSheet({
   const copy = relationsCopy[language];
   const router = useRouter();
   const [openRelationId, setOpenRelationId] = useState<string | null>(null);
+  const [shouldLoadGraph, setShouldLoadGraph] = useState(false);
   const activeItem = items.find((item) => item.id === openRelationId) ?? null;
   // Radix restores focus to the pre-open element itself, but only if that
   // element is still mounted when its own (deferred) restore fires; since
   // the sheet here is conditionally unmounted by `activeItem` rather than
   // by Radix's own exit transition, we capture and restore explicitly.
   const graphTriggerRef = useRef<(HTMLElement | SVGElement) | null>(null);
+  const graphContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (items.length === 0 || shouldLoadGraph) return;
+
+    const graphContainer = graphContainerRef.current;
+    if (!graphContainer) return;
+
+    if (typeof IntersectionObserver === "undefined") {
+      const frame = requestAnimationFrame(() => setShouldLoadGraph(true));
+      return () => cancelAnimationFrame(frame);
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+
+        setShouldLoadGraph(true);
+        observer.disconnect();
+      },
+      { rootMargin: "0px", threshold: 0.25 }
+    );
+
+    observer.observe(graphContainer);
+    return () => observer.disconnect();
+  }, [items.length, shouldLoadGraph]);
 
   // Derived edges have no per-relation sourced explanation (FR73) — only
   // sourced activation opens the sheet.
@@ -94,21 +125,24 @@ export function RelationsListWithSourceSheet({
       />
       {items.length > 0 && (
         <div
+          ref={graphContainerRef}
           data-testid="ego-network-graph-container"
           className="mt-afh-md aspect-square w-full max-w-md"
         >
-          <LazyEgoNetworkGraph
-            center={center}
-            edges={items}
-            neighborLangById={neighborLangById}
-            language={language}
-            onEdgeActivate={handleEdgeActivate}
-            onNodeActivate={handleNodeActivate}
-          />
+          {shouldLoadGraph ? (
+            <LazyEgoNetworkGraph
+              center={center}
+              edges={items}
+              neighborLangById={neighborLangById}
+              language={language}
+              onEdgeActivate={handleEdgeActivate}
+              onNodeActivate={handleNodeActivate}
+            />
+          ) : null}
         </div>
       )}
       {activeItem && (
-        <SourceChainSheet
+        <LazySourceChainSheet
           language={language}
           open={openRelationId !== null}
           onOpenChange={(open) => {

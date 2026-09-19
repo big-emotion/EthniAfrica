@@ -1,18 +1,32 @@
 "use client";
 
 import { ReactNode, useRef, useState } from "react";
+import dynamic from "next/dynamic";
 import { Language } from "@/types/shared";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteTrail } from "@/components/layout/SiteTrail";
-import { SearchModalV2 } from "@/components/search/SearchModalV2";
-import { KeyboardShortcutsModal } from "@/components/layout/KeyboardShortcutsModal";
 import { useKeyboardShortcuts } from "@/hooks/use-keyboard-shortcuts";
-import { useIsMobile } from "@/hooks/use-mobile";
 import { useRouter } from "next/navigation";
 import { getLocalizedRoute } from "@/lib/routing";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { BackToTop } from "@/components/layout/BackToTop";
 import { PageHero } from "@/components/layout/PageHero";
+
+const SearchModalV2 = dynamic(
+  () =>
+    import("@/components/search/SearchModalV2").then(
+      (mod) => mod.SearchModalV2
+    ),
+  { ssr: false }
+);
+
+const KeyboardShortcutsModal = dynamic(
+  () =>
+    import("@/components/layout/KeyboardShortcutsModal").then(
+      (mod) => mod.KeyboardShortcutsModal
+    ),
+  { ssr: false }
+);
 
 interface PageLayoutProps {
   children: ReactNode;
@@ -92,7 +106,6 @@ export const PageLayout = ({
   flushBottom = false,
   trailLabel,
 }: PageLayoutProps) => {
-  const isMobile = useIsMobile();
   const router = useRouter();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isShortcutsOpen, setIsShortcutsOpen] = useState(false);
@@ -132,28 +145,32 @@ export const PageLayout = ({
   return (
     <div className="min-h-screen gradient-earth">
       {/* One bar for every width. The two it replaces were picked apart by
-          `useIsMobile()`, so the server sent one and the client swapped in
-          the other; the switch is now a media query inside the bar and the
-          first paint is the right one. */}
+          a client-side viewport check, so the server sent one and hydration
+          swapped in the other; the switch is now a media query inside the bar
+          and the first paint is the right one. */}
       <SiteHeader
         language={language}
         onSearchClick={() => setIsSearchOpen(true)}
         mastheadRef={mastheadRef}
       />
 
-      {/* Search modal */}
-      <SearchModalV2
-        open={isSearchOpen}
-        onClose={() => setIsSearchOpen(false)}
-        language={language}
-      />
+      {/* Search modal code is fetched only when the reader opens it. */}
+      {isSearchOpen ? (
+        <SearchModalV2
+          open
+          onClose={() => setIsSearchOpen(false)}
+          language={language}
+        />
+      ) : null}
 
-      {/* Keyboard shortcuts cheatsheet */}
-      <KeyboardShortcutsModal
-        language={language}
-        open={isShortcutsOpen}
-        onClose={() => setIsShortcutsOpen(false)}
-      />
+      {/* The shortcuts cheatsheet follows the same on-demand boundary. */}
+      {isShortcutsOpen ? (
+        <KeyboardShortcutsModal
+          language={language}
+          open
+          onClose={() => setIsShortcutsOpen(false)}
+        />
+      ) : null}
 
       {/* The hero, and the trail it now carries.
 
@@ -187,16 +204,10 @@ export const PageLayout = ({
           flushTop && flushBottom
             ? ""
             : flushTop
-              ? isMobile
-                ? "pb-4"
-                : "pb-8"
+              ? "pb-4 md:pb-8"
               : flushBottom
-                ? isMobile
-                  ? "pt-4"
-                  : "pt-8"
-                : isMobile
-                  ? "py-4"
-                  : "py-8"
+                ? "pt-4 md:pt-8"
+                : "py-4 md:py-8"
         }`}
       >
         {children}

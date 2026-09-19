@@ -21,7 +21,6 @@ import {
   type FlagSubmissionPayload,
 } from "@/components/flags/FlagForm";
 import { ProofOfWorkGate } from "@/components/flags/ProofOfWorkGate";
-import { submitFlag } from "@/components/flags/submitFlag";
 import { trackEvent } from "@/lib/analytics/trackEvent";
 
 export interface FlagTargetProps {
@@ -66,6 +65,7 @@ export function FlagTarget({
   }
 
   async function handleSubmit(payload: FlagSubmissionPayload) {
+    const { submitFlag } = await import("@/components/flags/submitFlag");
     const { public_slug: publicSlug } = await submitFlag(payload);
 
     trackEvent("report:submit", { target_type: target.type });

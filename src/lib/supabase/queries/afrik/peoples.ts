@@ -138,6 +138,22 @@ function mapRowsToPeoples(
   }));
 }
 
+/** Map rows whose country join was embedded by PostgREST in the same read. */
+function mapRowsWithEmbeddedCountries(
+  rows: Array<Record<string, unknown>>
+): People[] {
+  const relationsMap = new Map<string, string[]>();
+  for (const row of rows) {
+    relationsMap.set(
+      row.id as string,
+      ((row.afrik_people_countries as Array<{ country_id: string }>) || []).map(
+        (relation) => relation.country_id
+      )
+    );
+  }
+  return mapRowsToPeoples(rows, relationsMap);
+}
+
 /**
  * Get all AFRIK peoples with optional pagination
  */
@@ -341,7 +357,7 @@ export async function getAfrikPeopleById(id: string): Promise<People | null> {
   const supabase = createServerClient();
   const { data, error } = await supabase
     .from("afrik_peoples")
-    .select("*")
+    .select("*, afrik_people_countries(country_id)")
     .eq("id", id)
     .single();
 
@@ -355,9 +371,7 @@ export async function getAfrikPeopleById(id: string): Promise<People | null> {
 
   if (!data) return null;
 
-  const relationsMap = await getCountryRelationsMap(supabase, [id]);
-
-  return mapRowsToPeoples([data], relationsMap)[0];
+  return mapRowsWithEmbeddedCountries([data])[0];
 }
 
 /**
@@ -370,7 +384,7 @@ export async function getAfrikPeoplesByLanguageFamily(
   const supabase = createServerClient();
   const { data, error } = await supabase
     .from("afrik_peoples")
-    .select("*")
+    .select("*, afrik_people_countries(country_id)")
     .eq("language_family_id", familyId)
     .order("name_main");
 
@@ -379,10 +393,7 @@ export async function getAfrikPeoplesByLanguageFamily(
     throw error;
   }
 
-  const peopleIds = (data || []).map((row) => row.id);
-  const relationsMap = await getCountryRelationsMap(supabase, peopleIds);
-
-  return mapRowsToPeoples(data || [], relationsMap);
+  return mapRowsWithEmbeddedCountries(data || []);
 }
 
 /**

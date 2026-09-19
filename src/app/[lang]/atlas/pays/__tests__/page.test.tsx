@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from "@testing-library/react";
+import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import React from "react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
@@ -120,6 +120,7 @@ vi.mock("@/components/source-transparency/PinnedVersionBanner", () => ({
 import PaysSlugPage from "../[slug]/page";
 import { FICHE_RECORD_ANCHOR } from "@/lib/ficheChapters";
 import { getCountryRoute, getLocalizedRoute } from "@/lib/routing";
+import { resolveAsyncServerComponents } from "@/test/resolveAsyncServerComponents";
 
 /**
  * A country row carrying every editorial section the strict country model
@@ -183,7 +184,7 @@ async function renderPage(
       ? Promise.resolve(navigationContext)
       : undefined,
   });
-  return render(ui);
+  return render((await resolveAsyncServerComponents(ui)) as React.ReactElement);
 }
 
 describe("/[lang]/pays/[slug] page", () => {
@@ -196,6 +197,16 @@ describe("/[lang]/pays/[slug] page", () => {
       { id: "NGA", languages: ["haoussa", "yoruba", "igbo"] },
       { id: "KEN", languages: ["swahili", "anglais", "kikuyu"] },
     ]);
+  });
+
+  // @req REQ-019
+  it("returns the fiche head before starting secondary atlas reads", async () => {
+    await PaysSlugPage({
+      params: Promise.resolve({ lang: "fr", slug: "NGA" }),
+    });
+
+    expect(mockGetCountryAtlasIndex).not.toHaveBeenCalled();
+    expect(mockGetActiveSourceFlags).not.toHaveBeenCalled();
   });
 
   // @req REQ-019
@@ -369,8 +380,10 @@ describe("/[lang]/pays/[slug] — panel sequence", () => {
     const band = screen.getByTestId("fiche-hero-band");
     expect(band).toBeInTheDocument();
 
-    // AtlasGlobe now mounts through next/dynamic (ETNI-1378), which resolves
-    // its chunk a tick after the initial render.
+    fireEvent.click(
+      screen.getByRole("button", { name: "Activer la carte interactive" })
+    );
+
     await waitFor(() =>
       expect(
         band.contains(container.querySelector("[data-atlas-surface]"))

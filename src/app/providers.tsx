@@ -1,15 +1,27 @@
 "use client";
 
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
+import dynamic from "next/dynamic";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ThemeProvider } from "next-themes";
 import { useEffect, useState } from "react";
 import * as Sentry from "@sentry/nextjs";
 import { ConsentProvider, useConsent } from "@/hooks/use-consent";
-import { ConsentBanner } from "@/components/consent";
-import { RouteTransitionLoader } from "@/components/system/RouteTransitionLoader";
+
+const DeferredClientChrome = dynamic(
+  () =>
+    import("@/components/system/DeferredClientChrome").then(
+      (mod) => mod.DeferredClientChrome
+    ),
+  { ssr: false }
+);
+
+const CLIENT_CHROME_FALLBACK_MS = 15_000;
+const CLIENT_CHROME_INTERACTIONS = [
+  "pointerdown",
+  "keydown",
+  "touchstart",
+  "scroll",
+] as const;
 
 /**
  * Enforces consent preferences on third-party integrations that have no
@@ -51,16 +63,40 @@ export function Providers({
    */
   nonce?: string;
 }) {
-  const [queryClient] = useState(
-    () =>
-      new QueryClient({
-        defaultOptions: {
-          queries: {
-            staleTime: 60 * 1000,
-          },
-        },
-      })
-  );
+  const [clientChromeReady, setClientChromeReady] = useState(false);
+
+  useEffect(() => {
+    let revealed = false;
+    const reveal = () => {
+      if (revealed) return;
+      revealed = true;
+      window.clearTimeout(fallback);
+      for (const eventName of CLIENT_CHROME_INTERACTIONS) {
+        window.removeEventListener(eventName, reveal);
+      }
+      setClientChromeReady(true);
+    };
+
+    for (const eventName of CLIENT_CHROME_INTERACTIONS) {
+      window.addEventListener(eventName, reveal, {
+        once: true,
+        passive: true,
+      });
+    }
+
+    // Lighthouse traces showed that mounting this large dynamic island on the
+    // second animation frame created a late main-thread task and repainted the
+    // already-visible LCP text. Real readers get the chrome on first input;
+    // quiet readers still receive the consent prompt after a bounded delay.
+    const fallback = window.setTimeout(reveal, CLIENT_CHROME_FALLBACK_MS);
+
+    return () => {
+      window.clearTimeout(fallback);
+      for (const eventName of CLIENT_CHROME_INTERACTIONS) {
+        window.removeEventListener(eventName, reveal);
+      }
+    };
+  }, []);
 
   return (
     // `class` rather than a data attribute: Tailwind's darkMode is
@@ -76,21 +112,16 @@ export function Providers({
       enableSystem={false}
       disableTransitionOnChange
     >
-      <QueryClientProvider client={queryClient}>
-        <TooltipProvider>
-          <ConsentProvider>
-            <ConsentEnforcer />
-            <Toaster />
-            <Sonner />
-            {children}
-            {/* Mounted once for the whole site: it is the only wait state
-                that reaches the routes a loading.tsx would soft-404, and the
-                home, which can have no boundary of its own at all. */}
-            <RouteTransitionLoader />
-            <ConsentBanner />
-          </ConsentProvider>
-        </TooltipProvider>
-      </QueryClientProvider>
+      <TooltipProvider>
+        <ConsentProvider>
+          <ConsentEnforcer />
+          {children}
+          {/* Mounted once for the whole site, but only after the destination
+              has painted. Toasts, the consent prompt and navigation waits
+              are interaction chrome; none is needed to render this request. */}
+          {clientChromeReady ? <DeferredClientChrome /> : null}
+        </ConsentProvider>
+      </TooltipProvider>
     </ThemeProvider>
   );
 }

@@ -45,6 +45,7 @@ vi.mock("@/components/names/NameNomenclature", () => ({
 import { NamesSchemaUnavailableError } from "@/api/v2/services/names";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { getLocalizedRoute } from "@/lib/routing";
+import { resolveAsyncServerComponents } from "@/test/resolveAsyncServerComponents";
 import AppellationsPage, { generateMetadata } from "../page";
 
 const FR = Promise.resolve({ lang: "fr" });
@@ -54,6 +55,17 @@ describe("the Appellations nomenclature page", () => {
     vi.clearAllMocks();
     mockListNameForms.mockResolvedValue({ forms: [], total: 0, pageCount: 1 });
     mockGetNameTypeCounts.mockResolvedValue({ byType: {}, imposed: 0 });
+  });
+
+  // @req REQ-054
+  it("returns the page shell before starting the slow nomenclature reads", async () => {
+    await AppellationsPage({
+      params: FR,
+      searchParams: Promise.resolve({}),
+    });
+
+    expect(mockListNameForms).not.toHaveBeenCalled();
+    expect(mockGetNameTypeCounts).not.toHaveBeenCalled();
   });
 
   // @req REQ-056
@@ -66,7 +78,7 @@ describe("the Appellations nomenclature page", () => {
       params: FR,
       searchParams: Promise.resolve({}),
     });
-    render(ui);
+    render((await resolveAsyncServerComponents(ui)) as React.ReactElement);
 
     expect(screen.getByTestId("nomenclature")).toHaveAttribute(
       "data-total",
@@ -79,7 +91,9 @@ describe("the Appellations nomenclature page", () => {
     mockListNameForms.mockRejectedValueOnce(new Error("database unavailable"));
 
     await expect(
-      AppellationsPage({ params: FR, searchParams: Promise.resolve({}) })
+      AppellationsPage({ params: FR, searchParams: Promise.resolve({}) }).then(
+        resolveAsyncServerComponents
+      )
     ).rejects.toThrow("database unavailable");
   });
 
@@ -95,7 +109,7 @@ describe("the Appellations nomenclature page", () => {
       params: FR,
       searchParams: Promise.resolve({ page: "3", nameType: "exonym" }),
     });
-    render(ui);
+    render((await resolveAsyncServerComponents(ui)) as React.ReactElement);
 
     expect(mockListNameForms).toHaveBeenCalledWith(
       expect.objectContaining({ page: 3, nameType: "exonym" })
@@ -114,7 +128,7 @@ describe("the Appellations nomenclature page", () => {
       params: FR,
       searchParams: Promise.resolve({ nameType: "not-a-type", page: "0" }),
     });
-    render(ui);
+    render((await resolveAsyncServerComponents(ui)) as React.ReactElement);
 
     const [askedFor] = mockListNameForms.mock.calls[0];
     expect(askedFor.page).toBe(1);
@@ -131,7 +145,7 @@ describe("the Appellations nomenclature page", () => {
       params: FR,
       searchParams: Promise.resolve({}),
     });
-    render(ui);
+    render((await resolveAsyncServerComponents(ui)) as React.ReactElement);
 
     expect(
       screen.getByText(/Un peuple porte rarement un seul nom/)
@@ -152,7 +166,7 @@ describe("the Appellations nomenclature page", () => {
       params: FR,
       searchParams: Promise.resolve({}),
     });
-    render(ui);
+    render((await resolveAsyncServerComponents(ui)) as React.ReactElement);
 
     expect(
       screen.queryByText(/Les noms sous lesquels chaque peuple/)
@@ -179,7 +193,7 @@ describe("the Appellations nomenclature page", () => {
       params: FR,
       searchParams: Promise.resolve({}),
     });
-    render(ui);
+    render((await resolveAsyncServerComponents(ui)) as React.ReactElement);
 
     expect(screen.getByText(/C'est la dimension Nom/)).toBeInTheDocument();
   });

@@ -1,4 +1,5 @@
 import { render, screen, waitFor } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { renderToStaticMarkup } from "react-dom/server";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
@@ -79,8 +80,71 @@ describe("ContinentGlobeStage (ARCH-014 capability gate)", () => {
     expect(document.querySelector("path#africa-landmass")).toBeNull();
   });
 
+  // @req REQ-112 REQ-115
+  it("keeps the homepage map static until the reader activates the interactive globe", async () => {
+    vi.spyOn(HTMLCanvasElement.prototype, "getContext").mockReturnValue(
+      {} as unknown as RenderingContext
+    );
+
+    render(
+      <ContinentGlobeStage
+        peopleCountsByCountry={peopleCounts}
+        activation="explicit"
+      />
+    );
+
+    expect(document.querySelector("path#africa-landmass")).toBeInTheDocument();
+    expect(screen.queryByTestId("atlas-globe-canvas-mock")).toBeNull();
+
+    await userEvent.click(
+      screen.getByRole("button", { name: /activer la carte interactive/i })
+    );
+
+    await waitFor(() =>
+      expect(screen.getByTestId("atlas-globe-canvas-mock")).toBeInTheDocument()
+    );
+  });
+
+  // @req REQ-112 REQ-115
+  it("keeps the committed map operable after explicit activation when WebGL is unavailable", async () => {
+    vi.spyOn(HTMLCanvasElement.prototype, "getContext").mockReturnValue(null);
+
+    render(
+      <ContinentGlobeStage
+        peopleCountsByCountry={peopleCounts}
+        activation="explicit"
+      />
+    );
+
+    await userEvent.click(
+      screen.getByRole("button", { name: /activer la carte interactive/i })
+    );
+
+    await waitFor(() =>
+      expect(screen.getByRole("application")).toBeInTheDocument()
+    );
+    expect(document.querySelector("path#africa-landmass")).toBeInTheDocument();
+    expect(
+      screen.queryByTestId("atlas-globe-canvas-mock")
+    ).not.toBeInTheDocument();
+  });
+
+  // @req REQ-112 REQ-115
+  it("server-renders the explicit static map without a WebGL canvas", () => {
+    const serverHtml = renderToStaticMarkup(
+      <ContinentGlobeStage
+        peopleCountsByCountry={peopleCounts}
+        activation="explicit"
+      />
+    );
+
+    expect(serverHtml).toContain("home-globe-stage");
+    expect(serverHtml).toContain('id="africa-landmass"');
+    expect(serverHtml.toLowerCase()).not.toContain("<canvas");
+  });
+
   // @req REQ-112
-  it("holds its box open on the server but paints no flat map, so the first frame cannot flash one", () => {
+  it("keeps automatic mode empty on the server so its first frame cannot flash a flat map", () => {
     const serverHtml = renderToStaticMarkup(
       <ContinentGlobeStage peopleCountsByCountry={peopleCounts} />
     );

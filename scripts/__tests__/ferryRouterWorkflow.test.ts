@@ -24,4 +24,16 @@ describe("Ferry router workflow", () => {
       "checkout_token: ${{ secrets.FERRY_CHECKOUT_TOKEN }}"
     );
   });
+
+  // @req REQ-085
+  it("treats a missing review target as a successful no-op", () => {
+    expect(workflow).toContain("id: target");
+    expect(workflow).toContain('echo "routable=$routable" >> "$GITHUB_OUTPUT"');
+    expect(workflow).toContain("this stale transition is a no-op");
+    expect(workflow).toContain("if: steps.target.outputs.routable == 'true'");
+    expect(workflow).toContain(
+      "routable: ${{ steps.target.outputs.routable }}"
+    );
+    expect(workflow).toContain("needs.run-agent.outputs.routable == 'true'");
+  });
 });

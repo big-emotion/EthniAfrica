@@ -1,30 +1,20 @@
 # Runbook — Supabase migration state
 
-**Last verified:** 2026-09-14 — both ledgers read through `check:migration-state`, which
+**Last verified:** 2026-09-18 — both ledgers read through `check:migration-state`, which
 reconciles every file under `supabase/migrations/` by name, each inside the CI job that
 applies migrations to that database
 **Applies to:** every file under `supabase/migrations/`
 
-> **Measured 2026-09-13 and 2026-09-14: migrations `001` → `089` are applied on both databases.**
+> **Measured 2026-09-17 and 2026-09-18: migrations `001` → `093` are applied on both databases.**
 >
-> | Database                                             | How it was read                                                                                                                                                           | Result                                                                                                                                                                                                                                   |
-> | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-> | Recette (`shmrjtnfbqzceovroqjj`)                     | `check:migration-state` inside `migrate-recette.yml` on the merge of #1026, which added `089` (Actions run `34754524408`, merge commit `53a0f2993`, 2026-09-13 11:29 UTC) | applied 88 · pending 0 · orphaned 0 · drifted 1 — the drift is `038_user_roles_rls_recursion_fix.sql`, adjudicated in `scripts/ci/adjudicatedDrift.ts`. `db push` found nothing to apply: `089` was already on recette before the merge. |
-> | Production (self-hosted, `supabase.ethniafrica.com`) | `check:migration-state:production` inside the v4.10.0 Release's `migrate` job (Actions run `34798280256`, job `103835571436`, 2026-09-14 02:11 UTC)                       | before: 1 pending, `oral_tradition_name_provenance`. The job planned exactly that file, applied `089`, then read again: applied 89 · pending 0 · orphaned 0 · drifted 0                                                                  |
+> | Database               | How it was read                                                                                                          | Result                                                                                |
+> | ---------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+> | Recette application    | `check:migration-state` inside `migrate-recette.yml` (Actions run `35331102644`, 2026-09-18 09:46 UTC)                   | applied 93 · pending 0 · orphaned 0 · drifted 0; `db push` found nothing to apply     |
+> | Production application | `check:migration-state:production` after the v4.12.0 Release applied its exact two-file plan (Actions run `35263800150`) | applied 93 · pending 0 · orphaned 0 · drifted 0 after applying migrations 092 and 093 |
 >
-> `applied` excludes a drifted migration, so each row accounts for all 89 files. The v4.9.0
-> Release (run `34742585193`, 2026-09-13 06:22 UTC) had read production at applied 88 · pending 0,
-> before `089` existed. The recette
-> figure is also CI's own reading: a local run on the machine that refreshed this runbook
-> refused because recette's credentials were not in its environment.
->
-> The production figure is the deploy job's own reading, not a local one: the production
-> credentials are not configured on the machine that refreshed this runbook, so the local run
-> refused rather than guessing. Anything merged after that Release is **unmeasured on
-> production** until the next Release's `migrate` job reads it.
->
-> This replaces a banner listing thirteen files whose state had never been recorded, among them
-> the two security migrations `076` and `077`. All thirteen are in the counts above.
+> Both figures are the deployment jobs' own ledger reads, not local inference. Anything merged
+> after those runs is **unmeasured** on the corresponding database until its migration job reads
+> the ledger again.
 
 There are two Supabase projects, and both look like "production" for a structural reason: **a
 Supabase project has exactly one environment, and Supabase itself calls that environment
@@ -165,9 +155,9 @@ Rows `001` through `049` are measurements read from each project's
 `supabase_migrations.schema_migrations` ledger on 2026-08-31 — recette over the Supabase MCP,
 production over a direct Postgres connection. Rows `050` through `087` are the 2026-09-12
 measurement in the banner above: `check:migration-state` matched each file to a ledger row by
-name on both databases, so the table records the state, not the version string. Row `088` is
-the 2026-09-12 recette and 2026-09-13 production reading; row `089` is the 2026-09-13 recette and
-2026-09-14 production reading in the banner. Neither column infers
+name on both databases, so the table records the state, not the version string. Rows `088` and
+`089` retain their earlier measurements; rows `090` through `093` are covered by the
+2026-09-17 and 2026-09-18 readings in the banner. Neither column infers
 database state from what a branch carries; a row added later stays `not measured` until a
 ledger read says otherwise.
 
@@ -181,7 +171,7 @@ project, not the database production runs on; the readings from 2026-09-12 onwar
 on the self-hosted stack by the Release `migrate` job. This table does not record which of the
 two databases the 2026-08-31 readings of `001` → `049` reached.
 
-| File                                          | Recette (`shmrjtnfbqzceovroqjj`)            | Production (self-hosted, `supabase.ethniafrica.com`) |
+| File                                          | Recette application database                | Production application database                      |
 | --------------------------------------------- | ------------------------------------------- | ---------------------------------------------------- |
 | `001_initial_schema.sql`                      | applied (`001`)                             | applied                                              |
 | `002_add_enriched_fields.sql`                 | applied (`002`)                             | applied                                              |
@@ -272,7 +262,10 @@ two databases the 2026-08-31 readings of `001` → `049` reached.
 | `087_quiz_question_locale.sql`                | applied — measured 2026-09-12               | applied — measured 2026-09-12                        |
 | `088_needs_review_source_tier.sql`            | applied — measured 2026-09-12               | applied by the v4.9.0 Release — measured 2026-09-13  |
 | `089_oral_tradition_name_provenance.sql`      | applied — measured 2026-09-13               | applied by the v4.10.0 Release — measured 2026-09-14 |
-| `091_oral_narratives_before_review.sql`       | not measured                                | not measured                                         |
+| `090_source_tier_ruling_drafts.sql`           | applied — measured 2026-09-18               | applied — measured 2026-09-17                        |
+| `091_oral_narratives_before_review.sql`       | applied — measured 2026-09-18               | applied — measured 2026-09-17                        |
+| `092_flag_remediation_state.sql`              | applied — measured 2026-09-18               | applied by the v4.12.0 Release — measured 2026-09-17 |
+| `093_patronyme_named_bearers.sql`             | applied — measured 2026-09-18               | applied by the v4.12.0 Release — measured 2026-09-17 |
 
 > **Superseded rollout notes.** The per-migration notes below were written when each file was
 > pending, and several still say "apply by hand" or "omitted from this table". They are kept for
