@@ -1,7 +1,7 @@
 import { headers } from "next/headers";
 
 import { PageLayout } from "@/components/layout/PageLayout";
-import { ACCENT_CLASS_BY_ENTITY } from "@/components/fiche/FicheSequence";
+import { ACCENT_CLASS_BY_ENTITY } from "@/components/fiche/ficheAccent";
 import type { FicheEntityType } from "@/types/fiche";
 import type { Language } from "@/types/shared";
 import { DidYouKnowLoader } from "@/components/system/DidYouKnowLoader";

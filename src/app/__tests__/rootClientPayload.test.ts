@@ -62,4 +62,24 @@ describe("root client payload", () => {
     expect(pageLayout).toContain("isSearchOpen ? (");
     expect(pageLayout).toContain("isShortcutsOpen ? (");
   });
+
+  // @req REQ-112
+  test("loads the forbidden-state auth client only when signing out", () => {
+    const forbiddenState = read("src/app/forbidden/page-component.tsx");
+
+    expect(forbiddenState).not.toMatch(
+      /import\s+\{\s*createBrowserSupabaseClient\s*\}\s+from\s+["']@\/lib\/supabase\/auth-client["']/
+    );
+    expect(forbiddenState).toMatch(
+      /await import\(\s*["']@\/lib\/supabase\/auth-client["']\s*\)/
+    );
+  });
+
+  // @req REQ-104
+  test("keeps the fiche loading screen independent from the interactive fiche shell", () => {
+    const loadingScreen = read("src/components/fiche/FicheLoadingScreen.tsx");
+
+    expect(loadingScreen).not.toContain("@/components/fiche/FicheSequence");
+    expect(loadingScreen).toContain("@/components/fiche/ficheAccent");
+  });
 });
