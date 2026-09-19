@@ -10,6 +10,7 @@ import {
 import * as nextNavigation from "next/navigation";
 import { RecherchePageContent } from "../RecherchePageContent";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
+import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { getLocalizedRoute, getPeopleRoute } from "@/lib/routing";
 import { SEARCH_RESULT_GROUPS } from "@/lib/search/searchVocabulary";
 
@@ -61,12 +62,14 @@ vi.mock("next/link", () => ({
     href,
     children,
     className,
+    onClick,
   }: {
     href: string;
     children: React.ReactNode;
     className?: string;
+    onClick?: React.MouseEventHandler<HTMLAnchorElement>;
   }) => (
-    <a href={href} className={className}>
+    <a href={href} className={className} onClick={onClick}>
       {children}
     </a>
   ),
@@ -81,7 +84,13 @@ class ResizeObserverMock {
 global.ResizeObserver = ResizeObserverMock;
 
 const mockFetch = vi.fn();
-global.fetch = mockFetch as unknown as typeof fetch;
+const mockCompanionFetch = vi.fn();
+global.fetch = vi.fn((input: RequestInfo | URL, init?: RequestInit) => {
+  const target = String(input).startsWith("/api/v2/search/companions?")
+    ? mockCompanionFetch
+    : mockFetch;
+  return init ? target(input, init) : target(input);
+}) as unknown as typeof fetch;
 
 // ── fixtures ─────────────────────────────────────────────────────────────────
 // These mirror the envelope /api/v2/search actually emits: typed arrays of
@@ -89,6 +98,16 @@ global.fetch = mockFetch as unknown as typeof fetch;
 // it kept the suite green while the page rendered nothing in production.
 const emptyApiResponse = {
   data: { peoples: [], countries: [], families: [], total: 0 },
+};
+const emptyCompanionsApiResponse = {
+  data: {
+    subjects: [],
+    shorts: { count: 0, items: [] },
+    anecdotes: { count: 0, items: [] },
+    proverbs: { count: 0, items: [] },
+    images: { count: 0, items: [] },
+    quiz: { count: 0, item: null },
+  },
 };
 const suggestApiResponse = {
   data: {
@@ -194,7 +213,7 @@ async function renderPivotWithRelatedResults() {
   });
 
   await waitFor(() => {
-    expect(screen.getByTestId("name-answer")).toBeInTheDocument();
+    expect(screen.getByTestId("feed-block-fiches")).toBeInTheDocument();
   });
 }
 
@@ -222,6 +241,7 @@ describe("the scope the SERP declares", () => {
       push: vi.fn(),
     } as unknown as ReturnType<typeof nextNavigation.useRouter>);
     mockFetch.mockResolvedValue(okJson(emptyApiResponse));
+    mockCompanionFetch.mockResolvedValue(okJson(emptyCompanionsApiResponse));
   });
 
   // The landing state of /fr/recherche is where a reader decides whether the
@@ -292,6 +312,7 @@ describe("RecherchePageContent", () => {
       ok: true,
       json: () => Promise.resolve(emptyApiResponse),
     });
+    mockCompanionFetch.mockResolvedValue(okJson(emptyCompanionsApiResponse));
   });
 
   // ── 1. basic structure ─────────────────────────────────────────────────────
@@ -324,7 +345,7 @@ describe("RecherchePageContent", () => {
   });
 
   // @req REQ-140
-  it("promotes and renders an exact English country name", async () => {
+  it("renders an exact English country name in the feed verdict", async () => {
     locale.language = "en";
     vi.mocked(nextNavigation.useSearchParams).mockReturnValue(
       new URLSearchParams("q=Chad") as ReturnType<
@@ -338,11 +359,9 @@ describe("RecherchePageContent", () => {
       await new Promise((resolve) => setTimeout(resolve, 100));
     });
 
-    expect(await screen.findByTestId("name-answer")).toBeInTheDocument();
-    // The name is a second-level heading: the page's own h1 is the result
-    // count, so a name here would give the document two top-level headings.
+    expect(await screen.findByTestId("feed-block-verdict")).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { level: 2, name: "Chad" })
+      screen.getByRole("heading", { level: 1, name: "Chad" })
     ).toBeInTheDocument();
   });
 
@@ -571,7 +590,8 @@ describe("RecherchePageContent", () => {
     });
 
     expect(mockFetch).toHaveBeenCalledWith(
-      expect.stringMatching(/\/api\/v2\/search\?.*limit=20.*lang=en/)
+      expect.stringMatching(/\/api\/v2\/search\?.*limit=20.*lang=en/),
+      expect.objectContaining({ signal: expect.any(AbortSignal) })
     );
   });
 
@@ -624,7 +644,7 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByTestId("name-answer-unknown")).toBeInTheDocument();
+      expect(screen.getByTestId("feed-block-verdict")).toBeInTheDocument();
     });
     expect(screen.getByText(nameAnswerCopy.fr.unknownName)).toBeInTheDocument();
   });
@@ -668,9 +688,12 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByTestId("no-results-leads")).toBeInTheDocument();
+      expect(screen.getByTestId("feed-block-verdict")).toBeInTheDocument();
     });
-    expect(screen.queryByTestId("name-answer-unknown")).not.toBeInTheDocument();
+    expect(
+      screen.getByText("Vouliez-vous dire Mandinka ?")
+    ).toBeInTheDocument();
+    expect(screen.queryByTestId("feed-block-owed")).not.toBeInTheDocument();
   });
 
   // @req REQ-002
@@ -699,7 +722,7 @@ describe("RecherchePageContent", () => {
   });
 
   // @req REQ-178
-  it("carries the typed name into the form the confession invites the reader to", async () => {
+  it("targets the contribution flow at the typed unknown name", async () => {
     mockFetch.mockResolvedValue(okJson(emptyApiResponse));
     render(<RecherchePageContent />);
 
@@ -713,11 +736,13 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      const link = screen.getByRole("link", {
+      const actions = screen.getAllByRole("button", {
         name: nameAnswerCopy.fr.invitationAction,
       });
-      expect(link.getAttribute("href")).toMatch(/contribute/);
-      expect(link.getAttribute("href")).toMatch(/xyzzy/);
+      expect(actions.length).toBeGreaterThan(0);
+      for (const action of actions) {
+        expect(action).toHaveAttribute("data-flag-kind", "contribution");
+      }
     });
   });
 
@@ -743,7 +768,7 @@ describe("RecherchePageContent", () => {
         screen.getByText(nameAnswerCopy.fr.searchUnavailable)
       ).toBeInTheDocument();
     });
-    expect(screen.queryByTestId("name-answer-unknown")).not.toBeInTheDocument();
+    expect(screen.queryByTestId("feed-block-verdict")).not.toBeInTheDocument();
   });
 
   // Measured on « peul », which the corpus answers with `Fula (Fulbe / Peul)`:
@@ -765,9 +790,17 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByTestId("search-results-list")).toBeInTheDocument();
+      expect(screen.getByTestId("feed-block-fiches")).toBeInTheDocument();
     });
-    expect(screen.queryByTestId("name-answer-unknown")).not.toBeInTheDocument();
+    expect(
+      screen.queryByText(nameAnswerCopy.fr.unknownName)
+    ).not.toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "zoulou"
+    );
+    expect(screen.getByRole("heading", { level: 1 })).not.toHaveTextContent(
+      "Zulu"
+    );
   });
 
   // @req REQ-125
@@ -824,9 +857,9 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByTestId("name-answer-unknown")).toBeInTheDocument();
+      expect(screen.getByTestId("feed-block-verdict")).toBeInTheDocument();
     });
-    expect(screen.queryByTestId("no-results-leads")).not.toBeInTheDocument();
+    expect(screen.queryByTestId("feed-block-fiches")).not.toBeInTheDocument();
   });
 
   // ── 7. results list ────────────────────────────────────────────────────────
@@ -846,12 +879,12 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByTestId("name-answer")).toBeInTheDocument();
+      expect(screen.getByTestId("feed-block-verdict")).toBeInTheDocument();
     });
   });
 
   // @req REQ-002
-  it("makes every result card a link to its fiche", async () => {
+  it("makes every result tile a link to its fiche", async () => {
     mockFetch.mockResolvedValue(okJson(searchApiResponse));
     render(<RecherchePageContent />);
 
@@ -864,7 +897,7 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByRole("link", { name: "Zulu" })).toHaveAttribute(
+      expect(screen.getByRole("link", { name: /Zulu/ })).toHaveAttribute(
         "href",
         getPeopleRoute("fr", "PPL_ZULU")
       );
@@ -896,14 +929,14 @@ describe("RecherchePageContent", () => {
       await new Promise((r) => setTimeout(r, 100));
     });
 
-    // The envelope groups peoples first; "Pertinence" must reorder across
-    // kinds rather than fall through to a no-op comparator.
+    // The envelope groups peoples first; the feed must reorder its fiche links
+    // across kinds rather than fall through to that transport order.
     await waitFor(() => {
-      expect(
-        screen
-          .getAllByTestId("search-result-card")
-          .map((card) => card.getAttribute("data-result-type"))
-      ).toEqual(["country", "people"]);
+      const links = within(
+        screen.getByTestId("feed-block-fiches")
+      ).getAllByRole("link");
+      expect(links[0]).toHaveTextContent("Côte d'Ivoire");
+      expect(links[1]).toHaveTextContent("Peuple");
     });
   });
 
@@ -953,17 +986,15 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(
-        screen.getByTestId("search-people-group-card")
-      ).toBeInTheDocument();
+      expect(screen.getByTestId("feed-people-group")).toBeInTheDocument();
     });
-    expect(screen.queryAllByTestId("search-result-card")).toHaveLength(0);
-    expect(screen.getByRole("link", { name: "Peul" })).toHaveAttribute(
+    const group = screen.getByTestId("feed-people-group");
+    expect(within(group).getByRole("link", { name: "Peul" })).toHaveAttribute(
       "href",
       getPeopleRoute("fr", "PPL_FULANI")
     );
     expect(
-      screen.getByRole("link", { name: "Peul du Massina" })
+      within(group).getByRole("link", { name: "Peul du Massina" })
     ).toHaveAttribute("href", getPeopleRoute("fr", "PPL_FULANI_MASSINA"));
   });
 
@@ -982,7 +1013,8 @@ describe("RecherchePageContent", () => {
     });
 
     expect(mockFetch).toHaveBeenCalledWith(
-      expect.stringContaining("familyId=FLG_KROU")
+      expect.stringContaining("familyId=FLG_KROU"),
+      expect.objectContaining({ signal: expect.any(AbortSignal) })
     );
   });
 
@@ -1057,7 +1089,7 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByTestId("name-answer")).toBeInTheDocument();
+      expect(screen.getByTestId("feed-block-verdict")).toBeInTheDocument();
     });
     expect(screen.queryByTestId("search-pivot")).not.toBeInTheDocument();
     expect(
@@ -1068,7 +1100,7 @@ describe("RecherchePageContent", () => {
   // The rail is gone rather than moved: pushing it below would have kept the
   // hierarchy it asserts and only changed where the assertion sits.
   // @req REQ-178
-  it("keeps one column at every width", async () => {
+  it("mounts exactly one viewport-specific feed tree", async () => {
     mockFetch.mockResolvedValue(okJson(searchApiResponse));
     render(<RecherchePageContent />);
 
@@ -1080,8 +1112,9 @@ describe("RecherchePageContent", () => {
       await new Promise((r) => setTimeout(r, 100));
     });
 
-    const layout = await screen.findByTestId("search-results-layout");
-    expect(layout.className).not.toMatch(/grid-cols-\[/);
+    const layout = await screen.findByTestId("feed-layout");
+    expect(screen.getAllByTestId("feed-layout")).toHaveLength(1);
+    expect(layout).toHaveAttribute("data-feed-layout", "mobile");
   });
 
   it("input uses autocomplete=off to prevent browser search history", () => {
@@ -1124,14 +1157,16 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByTestId("search-results-list")).toBeInTheDocument();
+      expect(screen.getByTestId("feed-block-fiches")).toBeInTheDocument();
     });
-    expect(screen.queryByTestId("name-answer-unknown")).not.toBeInTheDocument();
+    expect(
+      screen.queryByText(nameAnswerCopy.fr.unknownName)
+    ).not.toBeInTheDocument();
     expect(screen.queryByRole("listbox")).not.toBeInTheDocument();
   });
 
   // @req REQ-124
-  it("omits a lens whose corpus-wide count is 0 from the mounted lens bar", async () => {
+  it("omits unavailable optional companion lenses from the feed", async () => {
     mockFetch.mockResolvedValue(
       okJson({
         data: {
@@ -1160,25 +1195,26 @@ describe("RecherchePageContent", () => {
       await new Promise((r) => setTimeout(r, 100));
     });
 
-    // The page shows a count on every chip label ("Tout (1)"), so the lens
-    // name is matched as a prefix rather than an exact string.
     await waitFor(() => {
-      expect(
-        screen.getByRole("button", { name: /^Tout\b/ })
-      ).toBeInTheDocument();
+      expect(screen.getByTestId("feed-block-lenses")).toBeInTheDocument();
     });
+    expect(screen.getByRole("button", { name: "Tout" })).toBeInTheDocument();
     expect(
-      screen.getByRole("button", { name: /^Peuples\b/ })
+      screen.getByRole("button", { name: "Shorts 0" })
     ).toBeInTheDocument();
-    for (const name of ["Langues", "Familles", "Pays", "Noms", "Personnes"]) {
-      expect(
-        screen.queryByRole("button", { name: new RegExp(`^${name}\\b`) })
-      ).not.toBeInTheDocument();
-    }
+    expect(
+      screen.getByRole("button", { name: "Fiches 1" })
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByRole("button", { name: /^Images\b/ })
+    ).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole("button", { name: /^Jeux\b/ })
+    ).not.toBeInTheDocument();
   });
 
   // @req REQ-124
-  it("titles the page with the result count, never with one name promoted above the others", async () => {
+  it("titles the answered feed with the searched name", async () => {
     mockFetch.mockResolvedValue(
       okJson({
         data: {
@@ -1206,16 +1242,15 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByTestId("name-answer")).toBeInTheDocument();
+      expect(screen.getByTestId("feed-block-verdict")).toBeInTheDocument();
     });
-    // The head states how many results there are and crowns nothing. The
-    // autonym is carried by the answer below it.
     const heading = screen.getByRole("heading", { level: 1 });
-    expect(heading.textContent).toMatch(/résultat/i);
+    expect(heading).toHaveTextContent("Zulu");
+    expect(heading).not.toHaveTextContent(/résultat/i);
   });
 
   // @req REQ-124
-  it("titles the page with the result count when no pivot resolves", async () => {
+  it("uses the first equally ranked subject as the feed title", async () => {
     mockFetch.mockResolvedValue(
       okJson({
         data: {
@@ -1239,11 +1274,9 @@ describe("RecherchePageContent", () => {
       await new Promise((r) => setTimeout(r, 100));
     });
 
-    await waitFor(() => {
-      expect(screen.queryByTestId("search-pivot")).not.toBeInTheDocument();
-    });
-    const heading = screen.getByRole("heading", { level: 1 });
-    expect(heading).toHaveTextContent(/2 résultats pour/i);
+    expect(
+      await screen.findByRole("heading", { level: 1, name: "Bété" })
+    ).toBeInTheDocument();
   });
 
   // The head counts an answer, and there is none to count. It was printing
@@ -1251,7 +1284,7 @@ describe("RecherchePageContent", () => {
   // nom » — two answers to one question, and a count is the colder of the
   // two. The boards give this case no count head at all.
   // @req REQ-178
-  it("counts nothing over the page that says it holds nothing", async () => {
+  it("uses the searched spelling rather than a zero-result title", async () => {
     mockFetch.mockResolvedValue(okJson(emptyApiResponse));
     render(<RecherchePageContent />);
 
@@ -1264,10 +1297,13 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByTestId("name-answer-unknown")).toBeInTheDocument();
+      expect(screen.getByTestId("feed-block-verdict")).toBeInTheDocument();
     });
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
-      "Recherche"
+      "xyzzy"
+    );
+    expect(screen.getByRole("heading", { level: 1 })).not.toHaveTextContent(
+      /résultat/i
     );
   });
 
@@ -1280,7 +1316,7 @@ describe("RecherchePageContent", () => {
   });
 
   // @req REQ-124
-  it("renders the empty state exactly once, with no result grid, for a zero-result response", async () => {
+  it("renders the unknown verdict exactly once, with no fiche shelf", async () => {
     mockFetch.mockResolvedValue(okJson(emptyApiResponse));
     render(<RecherchePageContent />);
 
@@ -1293,13 +1329,257 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getAllByTestId("name-answer-unknown")).toHaveLength(1);
+      expect(screen.getAllByText(nameAnswerCopy.fr.unknownName)).toHaveLength(
+        1
+      );
     });
-    expect(screen.queryByTestId("search-results-list")).not.toBeInTheDocument();
-    expect(
-      screen.queryByTestId("search-results-layout")
-    ).not.toBeInTheDocument();
+    expect(screen.queryByTestId("feed-block-fiches")).not.toBeInTheDocument();
   });
+});
+
+describe("RecherchePageContent feed orchestration", () => {
+  const routerReplace = vi.fn();
+
+  beforeEach(() => {
+    vi.clearAllMocks();
+    locale.language = "fr";
+    vi.mocked(nextNavigation.useSearchParams).mockReturnValue(
+      new URLSearchParams() as ReturnType<typeof nextNavigation.useSearchParams>
+    );
+    vi.mocked(nextNavigation.useRouter).mockReturnValue({
+      replace: routerReplace,
+      push: vi.fn(),
+      back: vi.fn(),
+      forward: vi.fn(),
+      refresh: vi.fn(),
+      prefetch: vi.fn(),
+    } as unknown as ReturnType<typeof nextNavigation.useRouter>);
+    mockFetch.mockResolvedValue(okJson(emptyApiResponse));
+    mockCompanionFetch.mockResolvedValue(okJson(emptyCompanionsApiResponse));
+  });
+
+  async function submitQuery(query: string) {
+    render(<RecherchePageContent />);
+    fireEvent.change(screen.getByRole("combobox"), {
+      target: { value: query },
+    });
+    fireEvent.click(screen.getByRole("button", { name: /rechercher/i }));
+  }
+
+  // @req REQ-180
+  it("loads companions once after a resolved search with its typed subject", async () => {
+    mockFetch.mockResolvedValue(okJson(searchApiResponse));
+
+    await submitQuery("Zulu");
+    await screen.findByTestId("feed-layout");
+
+    expect(mockFetch).toHaveBeenCalledTimes(1);
+    expect(mockCompanionFetch).toHaveBeenCalledTimes(1);
+    expect(mockFetch.mock.invocationCallOrder[0]).toBeLessThan(
+      mockCompanionFetch.mock.invocationCallOrder[0]
+    );
+    const requested = new URL(
+      String(mockCompanionFetch.mock.calls[0][0]),
+      "http://localhost"
+    );
+    expect(Object.fromEntries(requested.searchParams)).toEqual({
+      subjects: "people:PPL_ZULU",
+      lang: "fr",
+    });
+    expect(document.querySelector("[data-feed-root]")).not.toBeNull();
+  });
+
+  // @req REQ-180
+  it("loads the unknown-name feed with no companion subjects", async () => {
+    await submitQuery("xyzzy");
+    await screen.findByTestId("feed-layout");
+
+    const requested = new URL(
+      String(mockCompanionFetch.mock.calls[0][0]),
+      "http://localhost"
+    );
+    expect(Object.fromEntries(requested.searchParams)).toEqual({ lang: "fr" });
+    expect(screen.getByTestId("feed-block-verdict")).toBeInTheDocument();
+    expect(screen.getByTestId("feed-block-owed")).toBeInTheDocument();
+    expect(screen.getByTestId("feed-block-further")).toBeInTheDocument();
+  });
+
+  // @req REQ-180
+  it("keeps unsupported person hits in related-only results", async () => {
+    mockFetch.mockResolvedValue(
+      okJson({
+        data: {
+          peoples: [],
+          countries: [],
+          families: [],
+          persons: [
+            {
+              id: "PER_DELAFOSSE",
+              fullName: "Maurice Delafosse",
+              roleCategory: "ethnographer",
+              exactMatch: true,
+            },
+          ],
+          total: 1,
+        },
+      })
+    );
+
+    await submitQuery("Maurice Delafosse");
+    await screen.findByTestId("feed-layout");
+
+    const requested = new URL(
+      String(mockCompanionFetch.mock.calls[0][0]),
+      "http://localhost"
+    );
+    expect(Object.fromEntries(requested.searchParams)).toEqual({ lang: "fr" });
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "Maurice Delafosse"
+    );
+    expect(
+      screen.getByText(searchFeedCopy.fr.answer.relatedOnly)
+    ).toBeVisible();
+    expect(screen.queryByTestId("feed-block-owed")).toBeNull();
+  });
+
+  // @req REQ-180
+  it("shows a retry state without substitute shelves when companions fail", async () => {
+    mockFetch.mockResolvedValue(okJson(searchApiResponse));
+    mockCompanionFetch.mockResolvedValue({
+      ok: false,
+      status: 503,
+      json: () => Promise.resolve({ error: { message: "Unavailable" } }),
+    } as Response);
+
+    await submitQuery("Zulu");
+    await screen.findByTestId("search-feed-failed");
+
+    expect(document.querySelectorAll("[data-feed-block]")).toHaveLength(0);
+    expect(
+      screen.getByRole("button", { name: "Réessayer" })
+    ).toBeInTheDocument();
+  });
+
+  // @req REQ-180
+  it("retries both requests and renders the feed after a transient companion failure", async () => {
+    mockFetch.mockResolvedValue(okJson(searchApiResponse));
+    mockCompanionFetch
+      .mockResolvedValueOnce({
+        ok: false,
+        status: 503,
+        json: () => Promise.resolve({ error: { message: "Unavailable" } }),
+      } as Response)
+      .mockResolvedValueOnce(okJson(emptyCompanionsApiResponse));
+
+    await submitQuery("Zulu");
+    fireEvent.click(await screen.findByRole("button", { name: "Réessayer" }));
+    await screen.findByTestId("feed-layout");
+
+    expect(mockFetch).toHaveBeenCalledTimes(2);
+    expect(mockCompanionFetch).toHaveBeenCalledTimes(2);
+    expect(screen.queryByTestId("search-feed-failed")).not.toBeInTheDocument();
+  });
+
+  // @req REQ-180
+  it("clears the query and aborts its in-flight search", async () => {
+    let resolveSearch!: (response: Response) => void;
+    mockFetch.mockReturnValueOnce(
+      new Promise<Response>((resolve) => {
+        resolveSearch = resolve;
+      })
+    );
+
+    await submitQuery("Zulu");
+    await screen.findByTestId("search-feed-loading");
+    const signal = (mockFetch.mock.calls[0][1] as RequestInit).signal;
+
+    fireEvent.click(screen.getByRole("button", { name: "Effacer" }));
+
+    expect(signal?.aborted).toBe(true);
+    expect(screen.getByRole("combobox")).toHaveValue("");
+    expect(screen.getByRole("combobox")).toHaveFocus();
+    expect(document.querySelector("[data-feed-root]")).toBeNull();
+    expect(routerReplace).toHaveBeenLastCalledWith(
+      getLocalizedRoute("fr", "search"),
+      {
+        scroll: false,
+      }
+    );
+
+    resolveSearch({
+      ok: true,
+      json: () => Promise.resolve(searchApiResponse),
+    } as Response);
+  });
+
+  // @req REQ-180
+  it("keeps a stale response from replacing the newer query", async () => {
+    let resolveZulu!: (response: Response) => void;
+    const xhosaApiResponse = {
+      data: {
+        peoples: [
+          { id: "PPL_XHOSA", nameMain: "Xhosa", exactMatch: true, content: {} },
+        ],
+        countries: [],
+        families: [],
+        total: 1,
+      },
+    };
+    mockFetch
+      .mockReturnValueOnce(
+        new Promise<Response>((resolve) => {
+          resolveZulu = resolve;
+        })
+      )
+      .mockResolvedValueOnce(okJson(xhosaApiResponse));
+
+    await submitQuery("Zulu");
+    await screen.findByTestId("search-feed-loading");
+    const zuluSignal = (mockFetch.mock.calls[0][1] as RequestInit).signal;
+
+    fireEvent.change(screen.getByRole("combobox"), {
+      target: { value: "Xhosa" },
+    });
+    fireEvent.submit(screen.getByRole("search"));
+
+    expect(
+      await screen.findByRole("heading", { level: 1, name: "Xhosa" })
+    ).toBeInTheDocument();
+    expect(zuluSignal?.aborted).toBe(true);
+
+    await act(async () => {
+      resolveZulu({
+        ok: true,
+        json: () => Promise.resolve(searchApiResponse),
+      } as Response);
+      await Promise.resolve();
+    });
+
+    expect(
+      screen.getByRole("heading", { level: 1, name: "Xhosa" })
+    ).toBeInTheDocument();
+    expect(mockCompanionFetch).toHaveBeenCalledTimes(1);
+  });
+
+  // @req REQ-180
+  it.each(["country=CIV", "q=Zulu&country=CIV"])(
+    "keeps relation search %s on the legacy path without companions",
+    async (params) => {
+      vi.mocked(nextNavigation.useSearchParams).mockReturnValue(
+        new URLSearchParams(params) as ReturnType<
+          typeof nextNavigation.useSearchParams
+        >
+      );
+      mockFetch.mockResolvedValue(okJson(searchApiResponse));
+
+      render(<RecherchePageContent />);
+      await screen.findByTestId("search-results-list");
+
+      expect(mockFetch).toHaveBeenCalledTimes(1);
+      expect(mockCompanionFetch).not.toHaveBeenCalled();
+      expect(document.querySelector("[data-feed-root]")).toBeNull();
+    }
+  );
 });
 
 /**
@@ -1327,6 +1607,7 @@ describe("what the SERP reports about a search", () => {
       push: vi.fn(),
     } as unknown as ReturnType<typeof nextNavigation.useRouter>);
     mockFetch.mockResolvedValue(okJson(emptyApiResponse));
+    mockCompanionFetch.mockResolvedValue(okJson(emptyCompanionsApiResponse));
     window.plausible = plausible;
   });
 
@@ -1411,10 +1692,12 @@ describe("what the SERP reports about a search", () => {
 
   // A search that ran and a search that led somewhere were the same event.
   // @req REQ-046
-  it("reports which rank of result the reader opened", async () => {
+  it("reports which rank of result tile the reader opened", async () => {
     await renderPivotWithRelatedResults();
 
-    fireEvent.click(screen.getAllByTestId("search-result-card")[0]);
+    fireEvent.click(
+      within(screen.getByTestId("feed-block-fiches")).getAllByRole("link")[0]
+    );
 
     expect(resultClicks()).toHaveLength(1);
     expect(resultClicks()[0][1].props).toMatchObject({
@@ -1427,12 +1710,14 @@ describe("what the SERP reports about a search", () => {
   // counting it among the cards below would put the dominant answer and the
   // runner-up at the same position.
   // @req REQ-046
-  it("ranks the first card of the list first, since nothing is promoted above it", async () => {
+  it("ranks the first fiche tile first, since nothing is promoted above it", async () => {
     await renderPivotWithRelatedResults();
 
-    // Nothing sits above the list any more, so the first card carries rank 1
+    // Nothing sits above the list any more, so the first tile carries rank 1
     // rather than the rank 2 it held beneath the crowned answer.
-    fireEvent.click(screen.getAllByTestId("search-result-card")[0]);
+    fireEvent.click(
+      within(screen.getByTestId("feed-block-fiches")).getAllByRole("link")[0]
+    );
 
     expect(resultClicks()).toHaveLength(1);
     expect(resultClicks()[0][1].props).toMatchObject({ rank: 1 });

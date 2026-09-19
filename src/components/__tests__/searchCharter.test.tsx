@@ -33,6 +33,7 @@ const IN_SCOPE_FILES = [
   "components/search/SearchSnippet.tsx",
   "components/search/NameAnswer.tsx",
   "components/search/SearchLensBar.tsx",
+  "components/search/SearchFeed.tsx",
   "components/search/SearchFeedFrame.tsx",
   "components/search/feed/AppellationsBlock.tsx",
   "components/search/feed/CompanionRelationLabel.tsx",

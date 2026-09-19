@@ -145,6 +145,18 @@ describe("OpenAPI v2 unified search contract", () => {
     expect(results?.description).toMatch(/ties broken/i);
   });
 
+  // @req REQ-180
+  it("documents qualified near names separately from zero-result leads", () => {
+    const data = schemas.SearchResponseData;
+    const nearNames = data.properties?.nearNames;
+
+    expect(nearNames?.type).toBe("array");
+    expect(schemaName(nearNames?.items?.$ref ?? "")).toBe("SearchNearNameV2");
+    expect(data.required).toContain("nearNames");
+    expect(nearNames?.description).toMatch(/non-empty search/i);
+    expect(nearNames?.description).toMatch(/similarity/i);
+  });
+
   // @req REQ-002
   it("enumerates every kind the merge can emit", () => {
     const kind = schemas.SearchHitV2?.properties?.kind;

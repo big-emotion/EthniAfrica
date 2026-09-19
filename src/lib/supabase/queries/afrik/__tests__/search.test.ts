@@ -163,6 +163,7 @@ describe("ftsSearchEntities", () => {
   let quizPayload: { total: number; rows: unknown[] };
   let languagesPayload: { total: number; rows: unknown[] };
   let leadsPayload: { rows: unknown[] };
+  let leadsError: { message: string } | null;
   let personPeoplesRows: Record<string, unknown>[];
 
   beforeEach(() => {
@@ -176,6 +177,7 @@ describe("ftsSearchEntities", () => {
     quizPayload = { total: 0, rows: [] };
     languagesPayload = { total: 0, rows: [] };
     leadsPayload = { rows: [] };
+    leadsError = null;
     personPeoplesRows = [];
 
     rpc = vi.fn((fn: string) => {
@@ -194,7 +196,7 @@ describe("ftsSearchEntities", () => {
       if (fn === "afrik_search_languages")
         return Promise.resolve({ data: languagesPayload, error: null });
       if (fn === "afrik_search_leads")
-        return Promise.resolve({ data: leadsPayload, error: null });
+        return Promise.resolve({ data: leadsPayload, error: leadsError });
       throw new Error(`unexpected rpc ${fn}`);
     });
 
@@ -1581,25 +1583,99 @@ describe("ftsSearchEntities", () => {
     });
   });
 
-  // @req REQ-125
-  it("never calls afrik_search_leads when a match already exists", async () => {
+  // @req REQ-180
+  it("projects qualified near names when a match already exists", async () => {
     peoplesPayload = {
-      total: 1,
-      rows: [peopleRow("PPL_BAMBARA", "Bambara")],
+      total: 3,
+      rows: [
+        peopleRow("PPL_BASSA", "Bassa"),
+        peopleRow("PPL_BASSA_CAM", "Basaa"),
+        peopleRow("PPL_BASSA_NIGERIA", "Bassa Nge"),
+      ],
+    };
+    leadsPayload = {
+      rows: [
+        { kind: "people", id: "PPL_BASSA", name: "Bassa", similarity: 1 },
+        {
+          kind: "people",
+          id: "PPL_BASSA_CAM",
+          name: "Basaa",
+          similarity: 0.8,
+        },
+        {
+          kind: "people",
+          id: "PPL_BASSA_NIGERIA",
+          name: "Bassa Nge",
+          similarity: 0.7,
+        },
+        {
+          kind: "people",
+          id: "PPL_BASSARI",
+          name: "Bassari",
+          similarity: 0.6,
+        },
+      ],
     };
 
     const result = await ftsSearchEntities({
-      q: "Bambara",
+      q: "Bassa",
+      limit: 20,
+      offset: 0,
+    });
+
+    expect(result.total).toBe(3);
+    expect(result.leads).toEqual([]);
+    expect(result.nearNames).toEqual([
+      {
+        kind: "people",
+        id: "PPL_BASSARI",
+        name: "Bassari",
+        similarity: 0.6,
+      },
+    ]);
+    expect(rpc).toHaveBeenCalledWith("afrik_search_leads", {
+      p_q: "Bassa",
+      p_limit: 6,
+    });
+  });
+
+  // An optional editorial shelf must never turn valid ranked results into a
+  // page-wide search failure.
+  // @req REQ-180
+  it("keeps answered results when similar-name lookup fails", async () => {
+    peoplesPayload = {
+      total: 1,
+      rows: [peopleRow("PPL_BASSA", "Bassa")],
+    };
+    leadsError = { message: "similar-name lookup unavailable" };
+
+    const result = await ftsSearchEntities({
+      q: "Bassa",
       limit: 20,
       offset: 0,
     });
 
     expect(result.total).toBe(1);
-    expect(result.leads).toEqual([]);
-    expect(rpc).not.toHaveBeenCalledWith(
-      "afrik_search_leads",
-      expect.anything()
-    );
+    expect(result.peoples).toHaveLength(1);
+    expect(result.nearNames).toEqual([]);
+  });
+
+  // @req REQ-125
+  it("keeps zero-result suggestions in leads rather than nearNames", async () => {
+    leadsPayload = {
+      rows: [
+        { kind: "people", id: "PPL_BAMBARA", name: "Bambara", similarity: 0.4 },
+      ],
+    };
+
+    const result = await ftsSearchEntities({
+      q: "bamba",
+      limit: 20,
+      offset: 0,
+    });
+
+    expect(result.leads).toHaveLength(1);
+    expect(result.nearNames).toEqual([]);
   });
 
   // ETNI-1463 AC3 (ETNI-1744): a name query that resolves to nothing — no

@@ -3,6 +3,7 @@ import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 
 import { QuizBlock } from "@/components/search/feed/QuizBlock";
+import { getLocalizedRoute } from "@/lib/routing";
 const question = {
   id: "q-1",
   templateId: "T2" as const,
@@ -37,7 +38,7 @@ describe("QuizBlock", () => {
         onValidate={onValidate}
         language="fr"
         questionCountLabel="12 questions"
-        allHref="/fr/jouer"
+        allHref={getLocalizedRoute("fr", "quiz")}
       />
     );
 
@@ -64,7 +65,7 @@ describe("QuizBlock", () => {
         onValidate={vi.fn()}
         language="fr"
         questionCountLabel="12 questions"
-        allHref="/fr/jouer"
+        allHref={getLocalizedRoute("fr", "quiz")}
         result={{ isCorrect: true, isLastQuestion: false, onNext }}
       />
     );

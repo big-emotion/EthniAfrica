@@ -8,6 +8,7 @@ import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import type { Language } from "@/types/shared";
 
 export interface FeedSilence {
+  id?: string;
   title: string;
   detail: string;
 }
@@ -52,7 +53,7 @@ export function OwedBlock({
             <ul className="mt-afh-lg space-y-afh-lg">
               {silences.map((silence) => (
                 <li
-                  key={silence.title}
+                  key={silence.id ?? silence.title}
                   className="rounded-afh-lg border border-dashed border-afh-border p-afh-2xl"
                 >
                   <p className="text-afh-small font-bold text-afh-text-soft">

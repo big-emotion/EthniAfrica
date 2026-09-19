@@ -15,7 +15,11 @@ import {
   type OwedPartId,
   type SearchResultState,
 } from "@/lib/search/resultGrammar";
-import type { SearchLead, SearchResult } from "@/types/afrik-frontend";
+import type {
+  SearchLead,
+  SearchNearName,
+  SearchResult,
+} from "@/types/afrik-frontend";
 
 import boardAuthoring from "./feedBoardCases.json";
 
@@ -49,6 +53,11 @@ const feedBoardAuthoringSchema = z
         eyebrow: z.string().min(1).optional(),
         verdict: z.string().min(1),
         sub: z.string().min(1),
+        forms: z
+          .array(
+            z.tuple([z.string().min(1), z.string().nullable(), z.string()])
+          )
+          .optional(),
         lens: z.array(
           z.union([
             z.tuple([z.literal("Shorts"), z.number().int().nonnegative()]),
@@ -155,6 +164,7 @@ export const feedCaseFixturesSchema = z
               .object({
                 results: z.array(searchResultSchema),
                 leads: z.array(searchLeadSchema),
+                nearNames: z.array(searchLeadSchema),
                 counts: lensCountsSchema,
                 answered: z.literal(true),
               })
@@ -362,9 +372,16 @@ function countsFor(results: readonly SearchResult[]) {
 
 function search(
   results: SearchResult[],
-  leads: SearchLead[] = []
+  leads: SearchLead[] = [],
+  nearNames: SearchNearName[] = []
 ): SearchWithLeads {
-  return { results, leads, counts: countsFor(results), answered: true };
+  return {
+    results,
+    leads,
+    nearNames,
+    counts: countsFor(results),
+    answered: true,
+  };
 }
 
 function match(subject: Subject, relation: Match["relation"] = "exact"): Match {
@@ -405,10 +422,187 @@ function companions(
   };
 }
 
+function fixtureMatch(matches: Match[]): Match {
+  return (
+    matches[0] ?? {
+      relation: "recent",
+      entityType: "country",
+      entityId: "NGA",
+    }
+  );
+}
+
+function enrichFixtureCompanions(
+  data: SearchCompanionsData,
+  board: FeedCaseFixture["board"],
+  matches: Match[]
+): SearchCompanionsData {
+  const blockIds = new Set(board.blocks.mobile.map(({ id }) => id));
+  const matchValue = fixtureMatch(matches);
+  const hasImage = blockIds.has("images");
+  const visualCount = board.lenses.images ?? (blockIds.has("plates") ? 1 : 0);
+  const plateCount = blockIds.has("plates")
+    ? Math.max(1, visualCount - (hasImage ? 1 : 0))
+    : 0;
+  const anecdoteCount = Math.min(3, plateCount);
+  const proverbCount = Math.max(0, plateCount - anecdoteCount);
+  const anecdotes = Array.from({ length: anecdoteCount }, (_, index) => ({
+    id: `fixture-anecdote-${index + 1}-${matchValue.entityId.toLowerCase()}`,
+    contentLanguage: "fr" as const,
+    headline: `Illustrative sourced story ${index + 1}`,
+    body: ["Illustrative board fixture."],
+    tier: "referenced" as const,
+    sources: [FIXTURE_SOURCE],
+    illustration: {
+      src:
+        board.editorialImages[index]?.requestPath ??
+        board.editorialImages[0]?.requestPath ??
+        "/images/ethniafrica-logo.png",
+      alt: "Illustrative board fixture",
+      credit: "EthniAfrica fixture",
+    },
+    match: matchValue,
+  }));
+  const images = hasImage
+    ? [
+        {
+          id: `fixture-image-${matchValue.entityId.toLowerCase()}`,
+          href: "/fixture/image",
+          slug: "fixture-image",
+          title: "Illustrative generated image",
+          description: "Illustrative board fixture.",
+          caption: "Illustrative board fixture.",
+          image: {
+            src:
+              board.editorialImages.at(-1)?.requestPath ??
+              "/images/ethniafrica-logo.png",
+            alt: "Illustrative board fixture",
+            credit: "EthniAfrica fixture",
+            licence: "cc-by-sa" as const,
+          },
+          generation: {
+            tool: "fixture",
+            model: "fixture",
+            generatedOn: "2026-09-01",
+            sourceKind: "ai_generated" as const,
+          },
+          source: FIXTURE_SOURCE,
+          match: matchValue,
+        },
+      ]
+    : [];
+  const proverbs = Array.from({ length: proverbCount }, (_, index) => ({
+    id: `fixture-proverb-${index + 1}-${matchValue.entityId.toLowerCase()}`,
+    contentLanguage: "fr" as const,
+    text: `Illustrative sourced proverb ${index + 1}`,
+    meaning: "Illustrative board fixture.",
+    original: null,
+    origin: { status: "attested" as const, note: "Fixture" },
+    sources: [FIXTURE_SOURCE],
+    match: matchValue,
+  }));
+  const quiz = blockIds.has("quiz")
+    ? {
+        count: 1,
+        item: {
+          id: `fixture-quiz-${matchValue.entityId.toLowerCase()}`,
+          templateId: "T2" as const,
+          contentLanguage: "fr" as const,
+          prompt: "Quelle réponse la source documente-t-elle ?",
+          stimulus: null,
+          options: ["La première", "La seconde"],
+          correctOption: 0,
+          explanation: "La première réponse est documentée.",
+          assertionId: `fixture-assertion-${matchValue.entityId.toLowerCase()}`,
+          source: FIXTURE_SOURCE,
+          entity: { type: "country" as const, id: "NGA" },
+          match: matchValue,
+        },
+      }
+    : { count: 0, item: null };
+
+  return {
+    ...data,
+    anecdotes: { count: anecdotes.length, items: anecdotes },
+    proverbs: { count: proverbs.length, items: proverbs },
+    images: { count: images.length, items: images },
+    quiz,
+  };
+}
+
+function enrichFixtureResults(
+  results: SearchResult[],
+  subjects: Subject[],
+  board: FeedCaseFixture["board"],
+  fixtureId: FeedCaseId
+): SearchResult[] {
+  const blockIds = new Set(board.blocks.mobile.map(({ id }) => id));
+  const expectedFiches = board.lenses.fiches ?? results.length;
+  const enriched = [...results];
+  while (enriched.length > 0 && enriched.length < expectedFiches) {
+    const index = enriched.length;
+    enriched.push({
+      type: "people",
+      id: `PPL_FIXTURE_${fixtureId.toUpperCase()}_${index + 1}`,
+      name: `Related fixture ${index + 1}`,
+      exactMatch: false,
+    });
+  }
+
+  const subjectKeys = new Set(
+    subjects.map(({ entityType, entityId }) => `${entityType}:${entityId}`)
+  );
+  return enriched.map((result) => {
+    if (!subjectKeys.has(`${result.type}:${result.id}`)) return result;
+    const presentationForm = {
+      form: result.name,
+      selfGiven: result.autonym === result.name ? true : null,
+      ...(blockIds.has("origins")
+        ? { origin: { meaning: "Illustrative documented origin" } }
+        : {}),
+      attestations: [],
+      evidence: [],
+    };
+    const existingPresentation = result.naming?.presentation;
+    return {
+      ...result,
+      naming: {
+        ...result.naming,
+        forms: result.naming?.forms ?? [],
+        eras: result.naming?.eras ?? [],
+        presentation: {
+          ...existingPresentation,
+          forms:
+            existingPresentation && existingPresentation.forms.length > 0
+              ? existingPresentation.forms
+              : [presentationForm],
+          eras: existingPresentation?.eras ?? [],
+          disagreements: existingPresentation?.disagreements ?? [],
+          ...(blockIds.has("problem")
+            ? { problematic: "recorded" as const }
+            : {}),
+          evidence: existingPresentation?.evidence ?? [],
+        },
+      },
+      ...(blockIds.has("tiles")
+        ? {
+            associatedPeoples: [
+              {
+                id: `PPL_FIXTURE_${fixtureId.toUpperCase()}_TILE`,
+                name: "Related people",
+              },
+            ],
+          }
+        : {}),
+    };
+  });
+}
+
 function caseFixture(
   value: Pick<FeedCaseFixture, "id"> & {
     results: SearchResult[];
     leads?: SearchLead[];
+    nearNames?: SearchNearName[];
     subjects: Subject[];
     matches: Match[];
     board: Pick<
@@ -417,7 +611,7 @@ function caseFixture(
     >;
   }
 ): FeedCaseFixture {
-  const { results, leads, subjects, matches, ...fixture } = value;
+  const { results, leads, nearNames, subjects, matches, ...fixture } = value;
   const authoring = FEED_BOARD_AUTHORING.find(({ id }) => id === fixture.id);
   if (!authoring) {
     throw new Error(`Missing board authoring for feed case: ${fixture.id}`);
@@ -465,6 +659,18 @@ function caseFixture(
     },
   };
 
+  const productionResults = enrichFixtureResults(
+    results,
+    subjects,
+    board,
+    fixture.id
+  );
+  const productionCompanions = enrichFixtureCompanions(
+    companions(subjects, boardShorts, matches),
+    board,
+    matches
+  );
+
   return {
     fixture: true,
     id: fixture.id,
@@ -473,8 +679,8 @@ function caseFixture(
     resultState: authoring.result_state,
     board,
     production: {
-      search: search(results, leads),
-      companions: companions(subjects, boardShorts, matches),
+      search: search(productionResults, leads, nearNames),
+      companions: productionCompanions,
     },
   };
 }
@@ -569,6 +775,16 @@ const FEED_CASE_VALUES: FeedCaseFixture[] = [
         name: "Fang",
         autonym: "Fang",
         exactMatch: true,
+        naming: {
+          forms: [{ form: "Pahouin" }],
+          eras: [],
+          presentation: {
+            forms: [],
+            eras: [],
+            disagreements: [],
+            evidence: [],
+          },
+        },
       },
     ],
     subjects: [fangSubject],
@@ -585,13 +801,52 @@ const FEED_CASE_VALUES: FeedCaseFixture[] = [
   }),
   caseFixture({
     id: "bassa",
-    results: bassaSubjects.map((subject, index) => ({
-      type: "people" as const,
-      id: subject.entityId,
-      name: ["Bassa", "Basaa", "Bassa Nge"][index],
-      exactMatch: true,
-    })),
+    results: [
+      {
+        type: "people",
+        id: bassaSubjects[0].entityId,
+        name: "Bassa",
+        exactMatch: true,
+      },
+      {
+        type: "people",
+        id: bassaSubjects[1].entityId,
+        name: "Bassa du Cameroun",
+        exactMatch: false,
+        naming: {
+          forms: [{ form: "Basaa" }],
+          eras: [],
+          presentation: {
+            forms: [
+              {
+                form: "Basaa",
+                selfGiven: null,
+                attestations: [],
+                evidence: [],
+              },
+            ],
+            eras: [],
+            disagreements: [],
+            evidence: [],
+          },
+        },
+      },
+      {
+        type: "people",
+        id: bassaSubjects[2].entityId,
+        name: "Bassa Nge",
+        exactMatch: false,
+      },
+    ],
     subjects: bassaSubjects,
+    nearNames: [
+      {
+        type: "people",
+        id: "PPL_BASSARI",
+        name: "Bassari",
+        similarity: 0.72,
+      },
+    ],
     matches: [match(bassaSubjects[1]), match(bassaSubjects[2])],
     board: {
       blocks: standardBlocks(

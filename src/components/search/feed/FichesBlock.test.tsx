@@ -1,7 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import userEvent from "@testing-library/user-event";
+import { describe, expect, it, vi } from "vitest";
 
 import { FichesBlock } from "@/components/search/feed/FichesBlock";
+import { getPeopleRoute } from "@/lib/routing";
 
 // @req REQ-180
 describe("FichesBlock", () => {
@@ -13,7 +15,7 @@ describe("FichesBlock", () => {
             kind: "Peuple",
             name: "Mande",
             meta: "Afrique de l’Ouest",
-            href: "/fr/atlas/peuples/PPL_MANDE",
+            href: getPeopleRoute("fr", "PPL_MANDE"),
           },
         ]}
       />
@@ -36,5 +38,39 @@ describe("FichesBlock", () => {
     expect(
       screen.getByText("Go deeper with each entry and all of its sources.")
     ).toBeInTheDocument();
+  });
+
+  // @req REQ-002
+  it("keeps split people fiches grouped while every member remains reachable", async () => {
+    const onNavigate = vi.fn();
+    render(
+      <FichesBlock
+        items={[
+          {
+            kind: "Peuple",
+            name: "Peul",
+            meta: "2 fiches",
+            links: [
+              {
+                name: "Peul",
+                href: getPeopleRoute("fr", "PPL_PEUL"),
+                onNavigate,
+              },
+              {
+                name: "Peul du Massina",
+                href: getPeopleRoute("fr", "PPL_PEUL_MASSINA"),
+                onNavigate,
+              },
+            ],
+          },
+        ]}
+      />
+    );
+
+    expect(screen.getAllByRole("listitem")).toHaveLength(3);
+    await userEvent.click(
+      screen.getByRole("link", { name: "Peul du Massina" })
+    );
+    expect(onNavigate).toHaveBeenCalledOnce();
   });
 });

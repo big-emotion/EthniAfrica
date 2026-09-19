@@ -136,6 +136,7 @@ function response(): FtsSearchResponse {
     languagesTotal: 1,
     total: 7,
     leads: [],
+    nearNames: [],
   };
 }
 

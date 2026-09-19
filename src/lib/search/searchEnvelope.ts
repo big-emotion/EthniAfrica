@@ -16,6 +16,7 @@ import type { NamingProjection } from "@/lib/search/naming";
 import type {
   SearchEntityType,
   SearchLead,
+  SearchNearName,
   SearchResult,
 } from "@/types/afrik-frontend";
 import type { PersonPeopleLink } from "@/types/persons";
@@ -413,6 +414,32 @@ export function mapSearchLeads(envelope: unknown): SearchLead[] {
   const { leads } = data as Record<string, unknown>;
 
   return asRows(leads).flatMap((row): SearchLead[] => {
+    const type = LEAD_KIND_TO_TYPE[row.kind as string];
+    if (!type) return [];
+    return [
+      {
+        type,
+        id: String(row.id),
+        name: String(row.name ?? ""),
+        similarity: numberOrUndefined(row.similarity) ?? 0,
+      },
+    ];
+  });
+}
+
+/**
+ * Similar-name candidates qualified by the API for a non-empty search.
+ * This reads only the dedicated projection: ordinary ranked results do not
+ * carry trigram similarity and must never be guessed into this role.
+ */
+// @req REQ-180
+export function mapSearchNearNames(envelope: unknown): SearchNearName[] {
+  const data = (envelope as { data?: unknown })?.data;
+  if (!data || Array.isArray(data)) return [];
+
+  const { nearNames } = data as Record<string, unknown>;
+
+  return asRows(nearNames).flatMap((row): SearchNearName[] => {
     const type = LEAD_KIND_TO_TYPE[row.kind as string];
     if (!type) return [];
     return [

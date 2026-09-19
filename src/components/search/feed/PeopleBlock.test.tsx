@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
 import { PeopleBlock } from "@/components/search/feed/PeopleBlock";
+import { getPeopleRoute } from "@/lib/routing";
 
 // @req REQ-180
 describe("PeopleBlock", () => {
@@ -14,7 +15,7 @@ describe("PeopleBlock", () => {
             name: "Bassa",
             meta: "Cameroun",
             description: "Famille bantoue",
-            href: "/fr/atlas/peuples/PPL_BASSA",
+            href: getPeopleRoute("fr", "PPL_BASSA"),
           },
         ]}
       />
@@ -26,7 +27,7 @@ describe("PeopleBlock", () => {
     );
     expect(screen.getByRole("link", { name: /Bassa/ })).toHaveAttribute(
       "href",
-      "/fr/atlas/peuples/PPL_BASSA"
+      getPeopleRoute("fr", "PPL_BASSA")
     );
   });
 });

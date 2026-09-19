@@ -6,6 +6,7 @@ import {
   mapSearchCounts,
   mapSearchEnvelope,
   mapSearchLeads,
+  mapSearchNearNames,
 } from "@/lib/search/searchEnvelope";
 import type { SearchResult } from "@/types/afrik-frontend";
 
@@ -849,6 +850,51 @@ describe("mapSearchLeads", () => {
     expect(mapSearchLeads({ data: [{ id: "PPL_BETE" }] })).toEqual([]);
     expect(mapSearchLeads({})).toEqual([]);
     expect(mapSearchLeads(null)).toEqual([]);
+  });
+});
+
+describe("mapSearchNearNames", () => {
+  // @req REQ-180
+  it("maps the qualified near-name projection independently of ordinary results", () => {
+    const nearNames = mapSearchNearNames({
+      data: {
+        peoples: [
+          { id: "PPL_BASSA", nameMain: "Bassa", relevance: 0.9 },
+          { id: "PPL_BASSARI", nameMain: "Bassari", relevance: 0.6 },
+        ],
+        nearNames: [
+          {
+            kind: "people",
+            id: "PPL_BASSARI",
+            name: "Bassari",
+            similarity: 0.6,
+          },
+        ],
+      },
+    });
+
+    expect(nearNames).toEqual([
+      {
+        type: "people",
+        id: "PPL_BASSARI",
+        name: "Bassari",
+        similarity: 0.6,
+      },
+    ]);
+  });
+
+  // @req REQ-180
+  it("does not infer near names from ordinary ranked results", () => {
+    expect(
+      mapSearchNearNames({
+        data: {
+          peoples: [
+            { id: "PPL_BASSA", nameMain: "Bassa", relevance: 0.9 },
+            { id: "PPL_BASSARI", nameMain: "Bassari", relevance: 0.6 },
+          ],
+        },
+      })
+    ).toEqual([]);
   });
 });
 

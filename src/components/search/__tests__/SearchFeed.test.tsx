@@ -1,0 +1,423 @@
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import { describe, expect, it, vi } from "vitest";
+
+import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
+import { SearchFeed } from "@/components/search/SearchFeed";
+import { FEED_CASES } from "@/lib/search/__fixtures__/feedCases";
+import type { SearchResult } from "@/types/afrik-frontend";
+
+function fixture(id: string) {
+  const value = FEED_CASES.find((candidate) => candidate.id === id);
+  if (!value) throw new Error(`Missing fixture ${id}`);
+  return value;
+}
+
+function blockIds(container: HTMLElement): string[] {
+  return Array.from(
+    container.querySelectorAll<HTMLElement>("[data-feed-block]"),
+    (element) => element.dataset.feedBlock ?? ""
+  );
+}
+
+const emptyCompanions: SearchCompanionsData = {
+  subjects: [],
+  shorts: { count: 0, items: [] },
+  anecdotes: { count: 0, items: [] },
+  proverbs: { count: 0, items: [] },
+  images: { count: 0, items: [] },
+  quiz: { count: 0, item: null },
+};
+
+function namedResult(overrides: Partial<SearchResult> = {}): SearchResult {
+  return {
+    type: "country",
+    id: "TCD",
+    name: "Tchad",
+    nameEn: "Chad",
+    exactMatch: true,
+    naming: {
+      forms: [],
+      eras: [],
+      presentation: {
+        forms: [],
+        eras: [],
+        disagreements: [],
+        evidence: [],
+      },
+    },
+    ...overrides,
+  };
+}
+
+// @req REQ-180
+describe("SearchFeed", () => {
+  // @req REQ-180
+  it("renders the deterministic unknown-name movement without substitute shelves", () => {
+    const value = fixture("inconnu");
+    const { container } = render(
+      <SearchFeed
+        query={value.query}
+        language="fr"
+        state="unknown"
+        results={value.production.search.results}
+        subjects={value.production.search.results}
+        leads={value.production.search.leads}
+        companions={value.production.companions}
+      />
+    );
+
+    expect(blockIds(container)).toEqual([
+      "lenses",
+      "verdict",
+      "shorts",
+      "owed",
+      "further",
+    ]);
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "kossiwa"
+    );
+    expect(
+      screen.getByText("Nous ne connaissons pas ce nom.")
+    ).toBeInTheDocument();
+  });
+
+  // @req REQ-180
+  it("filters shelves in place without mutating the naming answer", async () => {
+    const value = fixture("mande");
+    const { container } = render(
+      <SearchFeed
+        query={value.query}
+        language="fr"
+        state="exact"
+        results={value.production.search.results}
+        subjects={value.production.search.results}
+        leads={value.production.search.leads}
+        companions={value.production.companions}
+      />
+    );
+
+    expect(blockIds(container)).toContain("fiches");
+    await userEvent.click(screen.getByRole("button", { name: /Shorts 6/ }));
+
+    expect(blockIds(container)).toEqual([
+      "lenses",
+      "verdict",
+      "appellations",
+      "shorts",
+    ]);
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "Mandé"
+    );
+  });
+
+  // @req REQ-180
+  it("marks the localized filed name as the searched English form", () => {
+    const result = namedResult();
+    const { container } = render(
+      <SearchFeed
+        query="Chad"
+        language="en"
+        state="exact"
+        results={[result]}
+        subjects={[result]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    expect(
+      container.querySelector('[data-appellation][data-searched="true"]')
+    ).toHaveTextContent("Chad");
+  });
+
+  // @req REQ-180
+  it("does not draw an empty origins block from a marker without origin facts", () => {
+    const result = namedResult({
+      naming: {
+        forms: [],
+        eras: [],
+        presentation: {
+          forms: [],
+          eras: [],
+          disagreements: [],
+          origin: "recorded",
+          evidence: [],
+        },
+      },
+    });
+    const { container } = render(
+      <SearchFeed
+        query="Tchad"
+        language="fr"
+        state="exact"
+        results={[result]}
+        subjects={[result]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    expect(blockIds(container)).not.toContain("origins");
+  });
+
+  // @req REQ-178
+  it("keeps related-only results non-confessional and does not invent a silence", () => {
+    const result = namedResult();
+    const recentCompanions = fixture("inconnu").production.companions;
+    const { container } = render(
+      <SearchFeed
+        query="sahel"
+        language="fr"
+        state="widened"
+        results={[result]}
+        subjects={[]}
+        leads={[]}
+        companions={recentCompanions}
+      />
+    );
+
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "sahel"
+    );
+    expect(
+      screen.getByText(
+        "L’atlas a trouvé des fiches liées sans établir qu’elles répondent à ce nom."
+      )
+    ).toBeInTheDocument();
+    expect(screen.queryByText("Nous ne connaissons pas ce nom.")).toBeNull();
+    expect(container.querySelector('[data-feed-block="owed"]')).toBeNull();
+    expect(container.querySelector('[data-feed-part="silences"]')).toBeNull();
+    expect(
+      screen.queryByText(recentCompanions.shorts.items[0].name)
+    ).toBeNull();
+  });
+
+  // @req REQ-180
+  it("describes a recorded naming problem without reusing shared-name copy", () => {
+    const result = namedResult({
+      naming: {
+        forms: [],
+        eras: [],
+        presentation: {
+          forms: [],
+          eras: [],
+          disagreements: [],
+          problematic: "recorded",
+          evidence: [],
+        },
+      },
+    });
+    render(
+      <SearchFeed
+        query="Tchad"
+        language="fr"
+        state="exact"
+        results={[result]}
+        subjects={[result]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    expect(
+      screen.getByText(
+        "Le corpus signale un problème ou un désaccord autour d’au moins une forme de ce nom."
+      )
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByText(
+        "Une orthographe partagée ne suffit pas à établir une parenté entre des peuples."
+      )
+    ).toBeNull();
+  });
+
+  // @req REQ-180
+  it("renders near-name copy only from the qualified similarity projection", () => {
+    const subject = namedResult({
+      type: "people",
+      id: "PPL_BASSA",
+      name: "Bassa",
+    });
+    const ordinaryResult = namedResult({
+      type: "people",
+      id: "PPL_TEXT_MATCH",
+      name: "Unrelated text match",
+      exactMatch: false,
+    });
+    const { container } = render(
+      <SearchFeed
+        query="Bassa"
+        language="fr"
+        state="exact"
+        results={[subject, ordinaryResult]}
+        subjects={[subject]}
+        leads={[]}
+        nearNames={[
+          {
+            type: "people",
+            id: "PPL_BASSARI",
+            name: "Bassari",
+            similarity: 0.72,
+          },
+        ]}
+        companions={emptyCompanions}
+      />
+    );
+
+    const nearName = container.querySelector('[data-feed-block="near-name"]');
+    expect(nearName).toHaveTextContent(
+      "Bassari a une graphie proche et correspond à une autre fiche de l’atlas."
+    );
+    expect(nearName).not.toHaveTextContent("aucun lien");
+    expect(nearName).not.toHaveTextContent("Unrelated text match");
+  });
+
+  // @req REQ-180
+  it("omits the dated-attestation silence when the corpus dates a form", () => {
+    const result = namedResult({
+      naming: {
+        forms: [],
+        eras: [],
+        presentation: {
+          forms: [
+            {
+              form: "Tchad",
+              selfGiven: null,
+              attestationPeriod: "1900",
+              attestations: [],
+              evidence: [],
+            },
+          ],
+          eras: [],
+          disagreements: [],
+          evidence: [],
+        },
+      },
+    });
+    const { container } = render(
+      <SearchFeed
+        query="Tchad"
+        language="fr"
+        state="exact"
+        results={[result]}
+        subjects={[result]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    expect(container.querySelector('[data-feed-block="owed"]')).not.toBeNull();
+    expect(container.querySelector('[data-feed-part="silences"]')).toBeNull();
+  });
+
+  // @req REQ-180
+  it("declares dating silences per undated subject", () => {
+    const dated = namedResult({
+      type: "people",
+      id: "PPL_DATED",
+      name: "Bassa",
+      nameEn: undefined,
+      naming: {
+        forms: [],
+        eras: [],
+        presentation: {
+          forms: [
+            {
+              form: "Bassa",
+              selfGiven: null,
+              attestationPeriod: "1900",
+              attestations: [],
+              evidence: [],
+            },
+          ],
+          eras: [],
+          disagreements: [],
+          evidence: [],
+        },
+      },
+    });
+    const undated = namedResult({
+      type: "people",
+      id: "PPL_UNDATED",
+      name: "Bassa Nge",
+      nameEn: undefined,
+    });
+    const { container } = render(
+      <SearchFeed
+        query="Bassa"
+        language="fr"
+        state="exact"
+        results={[dated, undated]}
+        subjects={[dated, undated]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    const silences = container.querySelector('[data-feed-part="silences"]');
+    expect(silences).toHaveTextContent("Bassa Nge");
+    expect(silences).not.toHaveTextContent("Bassa —");
+  });
+
+  // @req REQ-180
+  it("keeps the same spelling once for each distinct subject", () => {
+    const subjects = ["PPL_BASSA_A", "PPL_BASSA_B"].map((id) =>
+      namedResult({
+        type: "people",
+        id,
+        name: "Bassa",
+        nameEn: undefined,
+      })
+    );
+    const { container } = render(
+      <SearchFeed
+        query="Bassa"
+        language="fr"
+        state="exact"
+        results={subjects}
+        subjects={subjects}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    expect(
+      container.querySelectorAll(
+        '[data-testid="appellations-mobile"] [data-appellation][data-subject-id]'
+      )
+    ).toHaveLength(2);
+  });
+
+  // @req REQ-002
+  it("groups split people fiches and preserves privacy-safe click analytics", async () => {
+    const onResultNavigate = vi.fn();
+    const members: SearchResult[] = ["PPL_PEUL", "PPL_PEUL_MASSINA"].map(
+      (id, index) => ({
+        type: "people",
+        id,
+        name: index === 0 ? "Peul" : "Peul du Massina",
+        peopleGroupId: "peul",
+        peopleGroupLabel: "Peul",
+      })
+    );
+    render(
+      <SearchFeed
+        query="Peul"
+        language="fr"
+        state="exact"
+        results={members}
+        subjects={[members[0]]}
+        leads={[]}
+        companions={emptyCompanions}
+        onResultNavigate={onResultNavigate}
+      />
+    );
+
+    expect(screen.getByTestId("feed-people-group")).toBeInTheDocument();
+    await userEvent.click(
+      screen.getByRole("link", { name: "Peul du Massina" })
+    );
+    expect(onResultNavigate).toHaveBeenCalledWith("peopleGroup", 1);
+  });
+});

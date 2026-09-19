@@ -841,6 +841,18 @@ export interface SearchLead {
   similarity: number;
 }
 
+/**
+ * A qualified similar name for an answered, non-empty search (REQ-180).
+ * Unlike `SearchLead`, this never stands in for a missing result: its entity
+ * is distinct from every returned people, country and family subject.
+ */
+export interface SearchNearName {
+  kind: SearchLead["kind"];
+  id: string;
+  name: string;
+  similarity: number;
+}
+
 export interface FtsSearchResponse {
   peoples: RankedPeople[];
   countries: RankedCountry[];
@@ -862,6 +874,8 @@ export interface FtsSearchResponse {
   total: number;
   /** Populated only when `total` is 0 (REQ-125); empty otherwise. */
   leads: SearchLead[];
+  /** Qualified similar names for a non-empty search; empty otherwise. */
+  nearNames: SearchNearName[];
 }
 
 // ==========================================

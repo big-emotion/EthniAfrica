@@ -11,7 +11,7 @@ import type { Language } from "@/types/shared";
 export type AppellationItem = Pick<
   NamingPresentationForm,
   "form" | "qualifier" | "selfGiven" | "problematic"
-> & { searched?: boolean };
+> & { searched?: boolean; subjectId?: string };
 
 export interface AppellationsBlockProps {
   forms: readonly AppellationItem[];
@@ -64,8 +64,9 @@ function FormsList({
     >
       {forms.map((item) => (
         <li
-          key={`${item.form}-${item.qualifier ?? "form"}`}
+          key={`${item.subjectId ?? "lead"}-${item.form}-${item.qualifier ?? "form"}`}
           data-appellation=""
+          data-subject-id={item.subjectId}
           data-searched={item.searched || undefined}
           data-self-given={item.selfGiven === true || undefined}
           data-problematic={item.problematic === "recorded" || undefined}

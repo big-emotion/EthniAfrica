@@ -1,6 +1,15 @@
 import type { Language } from "@/types/shared";
 
 export interface SearchFeedCopy {
+  answer: {
+    exact: string;
+    widened: string;
+    relatedOnly: string;
+    typo: (name: string) => string;
+    shared: (count: number) => string;
+    exactSummary: string;
+    widenedSummary: string;
+  };
   shelves: {
     shorts: string;
     plates: string;
@@ -45,11 +54,40 @@ export interface SearchFeedCopy {
     quiz: string;
     fiches: string;
   };
+  blocks: {
+    sharedNameBody: string;
+    nearNameBody: (name: string) => string;
+    problematicBody: string;
+    relatedPeoplesTitle: string;
+    atlasHoldsSummary: string;
+    ficheMeta: string;
+    groupMeta: (count: number) => string;
+    peopleMeta: string;
+    peopleDescription: string;
+    questionCount: string;
+  };
+  status: {
+    loading: string;
+    retry: string;
+  };
 }
 
 // @req REQ-180
 export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
   en: {
+    answer: {
+      exact: "The atlas documents this name.",
+      widened:
+        "The atlas documents this name, but the context below is related rather than identical.",
+      relatedOnly:
+        "The atlas found related entries without establishing that they answer to this name.",
+      typo: (name) => `Did you mean ${name}?`,
+      shared: (count) => `${count} peoples carry this name.`,
+      exactSummary:
+        "The forms and sources below state what the atlas can establish.",
+      widenedSummary:
+        "Every widened item says how it is related to the searched name.",
+    },
     shelves: {
       shorts: "In under one minute",
       plates: "Stories and proverbs",
@@ -94,8 +132,41 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       quiz: "Games",
       fiches: "Entries",
     },
+    blocks: {
+      sharedNameBody:
+        "A shared spelling does not establish kinship between peoples.",
+      nearNameBody: (name) =>
+        `${name} has a similar spelling and belongs to a different atlas entry.`,
+      problematicBody:
+        "The corpus records a problem or disagreement about at least one form of this name.",
+      relatedPeoplesTitle: "Peoples linked to this name",
+      atlasHoldsSummary:
+        "The atlas states the facts it holds and leaves the missing origin undeclared.",
+      ficheMeta: "Atlas entry",
+      groupMeta: (count) => `${count} records`,
+      peopleMeta: "Documented people",
+      peopleDescription: "Open the entry to read its complete sourced account.",
+      questionCount: "One question from this page",
+    },
+    status: {
+      loading: "Loading search",
+      retry: "Try again",
+    },
   },
   fr: {
+    answer: {
+      exact: "L’atlas documente ce nom.",
+      widened:
+        "L’atlas documente ce nom, mais le contexte ci-dessous est lié plutôt qu’identique.",
+      relatedOnly:
+        "L’atlas a trouvé des fiches liées sans établir qu’elles répondent à ce nom.",
+      typo: (name) => `Vouliez-vous dire ${name} ?`,
+      shared: (count) => `${count} peuples portent ce nom.`,
+      exactSummary:
+        "Les formes et les sources ci-dessous disent ce que l’atlas peut établir.",
+      widenedSummary:
+        "Chaque contenu élargi indique ce qui le relie au nom cherché.",
+    },
     shelves: {
       shorts: "En moins d’une minute",
       plates: "Récits et proverbes",
@@ -140,6 +211,27 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       images: "Images",
       quiz: "Jeux",
       fiches: "Fiches",
+    },
+    blocks: {
+      sharedNameBody:
+        "Une orthographe partagée ne suffit pas à établir une parenté entre des peuples.",
+      nearNameBody: (name) =>
+        `${name} a une graphie proche et correspond à une autre fiche de l’atlas.`,
+      problematicBody:
+        "Le corpus signale un problème ou un désaccord autour d’au moins une forme de ce nom.",
+      relatedPeoplesTitle: "Les peuples liés à ce nom",
+      atlasHoldsSummary:
+        "L’atlas énonce les faits qu’il tient et laisse l’origine manquante déclarée.",
+      ficheMeta: "Fiche de l’atlas",
+      groupMeta: (count) => `${count} fiches`,
+      peopleMeta: "Peuple documenté",
+      peopleDescription:
+        "Ouvrir la fiche pour lire son récit complet et sourcé.",
+      questionCount: "Une question tirée de cette page",
+    },
+    status: {
+      loading: "Chargement en cours",
+      retry: "Réessayer",
     },
   },
 };

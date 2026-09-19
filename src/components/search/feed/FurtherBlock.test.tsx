@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
 import { FurtherBlock } from "@/components/search/feed/FurtherBlock";
+import { getLocalizedRoute } from "@/lib/routing";
 
 // @req REQ-180
 describe("FurtherBlock", () => {
@@ -9,7 +10,12 @@ describe("FurtherBlock", () => {
     render(
       <FurtherBlock
         language="en"
-        links={[{ href: "/fr/atlas", label: "Parcourir l’atlas" }]}
+        links={[
+          {
+            href: getLocalizedRoute("fr", "atlasHub"),
+            label: "Parcourir l’atlas",
+          },
+        ]}
       />
     );
 

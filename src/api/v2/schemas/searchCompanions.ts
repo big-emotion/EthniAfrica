@@ -31,6 +31,10 @@ export const searchCompanionSubjectSchema = z.object({
   entityId: z.string().min(1),
 });
 
+export type SearchCompanionSubject = z.infer<
+  typeof searchCompanionSubjectSchema
+>;
+
 type SearchCompanionQuerySubject = {
   type: z.infer<typeof searchCompanionSubjectTypeSchema>;
   id: string;

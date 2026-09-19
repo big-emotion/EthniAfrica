@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { search, searchWithLeads } from "../afrikLoader";
+import { loadSearchCompanions, search, searchWithLeads } from "../afrikLoader";
 
 // Mock fetch globally
 const mockFetch = vi.fn();
@@ -202,6 +202,21 @@ describe("afrikLoader", () => {
   });
 
   describe("searchWithLeads", () => {
+    // @req REQ-180
+    it("passes an abort signal through and lets cancellation escape", async () => {
+      const controller = new AbortController();
+      const aborted = new DOMException("Aborted", "AbortError");
+      mockFetch.mockRejectedValueOnce(aborted);
+
+      await expect(
+        searchWithLeads("mande", { signal: controller.signal })
+      ).rejects.toBe(aborted);
+      expect(mockFetch).toHaveBeenCalledWith(
+        "/api/v2/search?q=mande",
+        expect.objectContaining({ signal: controller.signal })
+      );
+    });
+
     // @req REQ-125
     it("carries near-miss leads alongside the results", async () => {
       mockFetch.mockResolvedValueOnce({
@@ -248,10 +263,47 @@ describe("afrikLoader", () => {
           }),
       });
 
-      const { results, leads } = await searchWithLeads("shona");
+      const { results, leads, nearNames } = await searchWithLeads("shona");
 
       expect(results).toHaveLength(1);
       expect(leads).toEqual([]);
+      expect(nearNames).toEqual([]);
+    });
+
+    // @req REQ-180
+    it("carries qualified near names separately from matched results", async () => {
+      mockFetch.mockResolvedValueOnce({
+        ok: true,
+        json: () =>
+          Promise.resolve({
+            data: {
+              peoples: [{ id: "PPL_BASSA", nameMain: "Bassa", content: {} }],
+              total: 1,
+              leads: [],
+              nearNames: [
+                {
+                  kind: "people",
+                  id: "PPL_BASSARI",
+                  name: "Bassari",
+                  similarity: 0.6,
+                },
+              ],
+            },
+          }),
+      });
+
+      const { results, leads, nearNames } = await searchWithLeads("bassa");
+
+      expect(results.map((result) => result.id)).toEqual(["PPL_BASSA"]);
+      expect(leads).toEqual([]);
+      expect(nearNames).toEqual([
+        {
+          type: "people",
+          id: "PPL_BASSARI",
+          name: "Bassari",
+          similarity: 0.6,
+        },
+      ]);
     });
 
     // @req REQ-125
@@ -351,6 +403,55 @@ describe("afrikLoader", () => {
         language: 0,
         person: 0,
         patronyme: 0,
+      });
+    });
+  });
+
+  describe("loadSearchCompanions", () => {
+    const emptyCompanions = {
+      subjects: [{ entityType: "people", entityId: "PPL_MANDE" }],
+      shorts: { count: 0, items: [] },
+      anecdotes: { count: 0, items: [] },
+      proverbs: { count: 0, items: [] },
+      images: { count: 0, items: [] },
+      quiz: { count: 0, item: null },
+    };
+
+    // @req REQ-180
+    it("loads typed subjects once with locale and abort support", async () => {
+      const controller = new AbortController();
+      mockFetch.mockResolvedValueOnce({
+        ok: true,
+        json: () => Promise.resolve({ data: emptyCompanions }),
+      });
+
+      await expect(
+        loadSearchCompanions(
+          [{ entityType: "people", entityId: "PPL_MANDE" }],
+          "fr",
+          controller.signal
+        )
+      ).resolves.toEqual(emptyCompanions);
+
+      const [url, init] = mockFetch.mock.calls[0];
+      expect(searchParamsOf(mockFetch)).toEqual({
+        subjects: "people:PPL_MANDE",
+        lang: "fr",
+      });
+      expect(String(url)).toContain("/api/v2/search/companions?");
+      expect(init).toEqual({ signal: controller.signal });
+    });
+
+    // @req REQ-180
+    it("rejects a failed companions request instead of inventing shelves", async () => {
+      mockFetch.mockResolvedValueOnce({
+        ok: false,
+        status: 503,
+        json: () => Promise.resolve({ error: { message: "Unavailable" } }),
+      });
+
+      await expect(loadSearchCompanions([], "en")).rejects.toMatchObject({
+        code: "HTTP_503",
       });
     });
   });

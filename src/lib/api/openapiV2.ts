@@ -854,6 +854,12 @@ const options: swaggerJsdoc.Options = {
               description:
                 "Near-miss leads (REQ-125), populated only when total is 0: up to 3 suggestions across peoples, countries and language families, ranked by pg_trgm similarity alone (migration 069) below the main search's own fuzzy floor. Always an empty array when total is greater than 0.",
             },
+            nearNames: {
+              type: "array",
+              items: { $ref: "#/components/schemas/SearchNearNameV2" },
+              description:
+                "Qualified similar names (REQ-180) for a non-empty search: up to 3 distinct peoples, countries or language families, ranked by pg_trgm similarity and excluding entities already returned by the search. Always empty for zero-result and quiz-lens searches.",
+            },
           },
           required: [
             "peoples",
@@ -873,6 +879,7 @@ const options: swaggerJsdoc.Options = {
             "languagesTotal",
             "total",
             "leads",
+            "nearNames",
           ],
         },
         SearchLeadV2: {
@@ -893,6 +900,25 @@ const options: swaggerJsdoc.Options = {
               description:
                 "pg_trgm similarity of the folded query against this name, in [0.2, 1].",
               example: 0.27,
+            },
+          },
+          required: ["kind", "id", "name", "similarity"],
+        },
+        SearchNearNameV2: {
+          type: "object",
+          description:
+            "A name qualified by the API as similar to a non-empty search, with its pg_trgm similarity. It is a distinct entity from every returned people, country and language-family result.",
+          properties: {
+            kind: {
+              type: "string",
+              enum: ["people", "country", "family"],
+            },
+            id: { type: "string" },
+            name: { type: "string" },
+            similarity: {
+              type: "number",
+              minimum: 0.2,
+              maximum: 1,
             },
           },
           required: ["kind", "id", "name", "similarity"],

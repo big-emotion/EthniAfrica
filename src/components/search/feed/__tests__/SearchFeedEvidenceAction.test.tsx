@@ -2,10 +2,11 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
 import { SearchFeedEvidenceAction } from "@/components/search/feed/SearchFeedEvidenceAction";
+import { getLocalizedRoute } from "@/lib/routing";
 import type { SearchEvidence } from "@/lib/search/evidence";
 
 vi.mock("next/navigation", () => ({
-  usePathname: () => "/fr/atlas/recherche",
+  usePathname: () => getLocalizedRoute("fr", "search"),
   useRouter: () => ({ push: vi.fn() }),
 }));
 
@@ -64,7 +65,7 @@ describe("SearchFeedEvidenceAction", () => {
 
   // @req REQ-180
   it("renders the shareable source anchor and keeps the hash on activation", async () => {
-    window.history.replaceState(null, "", "/fr/atlas/recherche");
+    window.history.replaceState(null, "", getLocalizedRoute("fr", "search"));
 
     render(
       <SearchFeedEvidenceAction

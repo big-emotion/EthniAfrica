@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
 import { TilesBlock } from "@/components/search/feed/TilesBlock";
+import { getLocalizedRoute, getPeopleRoute } from "@/lib/routing";
 
 // @req REQ-180
 describe("TilesBlock", () => {
@@ -9,13 +10,13 @@ describe("TilesBlock", () => {
     render(
       <TilesBlock
         title="Trois peuples"
-        actionHref="/fr/atlas/peuples"
+        actionHref={getLocalizedRoute("fr", "peoples")}
         actionLabel="Les 31 peuples mandé"
         items={[
           {
             title: "Bassa",
             meta: "Cameroun",
-            href: "/fr/atlas/peuples/PPL_BASSA",
+            href: getPeopleRoute("fr", "PPL_BASSA"),
           },
         ]}
       />
@@ -25,7 +26,7 @@ describe("TilesBlock", () => {
     expect(screen.getByRole("link", { name: /Bassa/ })).toHaveClass("min-h-11");
     expect(
       screen.getByRole("link", { name: "Les 31 peuples mandé" })
-    ).toHaveAttribute("href", "/fr/atlas/peuples");
+    ).toHaveAttribute("href", getLocalizedRoute("fr", "peoples"));
     expect(screen.getByTestId("feed-block-tiles")).toHaveAttribute(
       "data-feed-zone",
       "primary"
