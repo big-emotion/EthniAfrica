@@ -21,6 +21,10 @@ const config: StorybookConfig = {
   },
   staticDirs: ["../public"],
   async viteFinal(config) {
+    // Storybook copies staticDirs itself. Letting Vite copy its default
+    // publicDir at the same time races both writers into storybook-static and
+    // intermittently fails when they create the same directory concurrently.
+    config.publicDir = false;
     config.resolve = config.resolve ?? {};
     config.resolve.alias = {
       ...(config.resolve.alias ?? {}),
