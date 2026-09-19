@@ -57,6 +57,8 @@ export interface LanguageRecord {
   spellingAliases?: string[]; // Alternate spellings of the same name (DEC-034)
   nameEn?: string;
   alternateNames?: string[];
+  /** What those names raise — the field the people and family models had. */
+  whyProblematic?: string | null;
   peoples?: Array<{ name: string; peopleId?: string }>;
   vehicularRole?: string | null;
   dialects?: string[];

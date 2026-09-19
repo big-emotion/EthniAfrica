@@ -569,7 +569,7 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 ### Added
 
 - **Self-hosted Plausible Analytics.** New `infra/plausible/` compose stack (Community
-  Edition v3.2.1, vendored from `plausible/hosting`) running on the OVH VPS at
+  Edition v3.2.1, vendored from `plausible/hosting`) running on the production VPS at
   `stats.ethniafrica.com`, alongside the app's existing consent banner and
   `PlausibleScript` integration — cookie-less, GDPR-compliant visitor and pageview
   analytics for the production site. See `docs/runbooks/plausible-self-hosted.md`.
@@ -837,7 +837,7 @@ because production left Vercel. 97 commits since `3.0.0`.
   now return the Module #0 envelope: licence, attribution, pagination and typed
   errors, consistently. Every consumer parsing a v2 payload must be updated
   (ETNI-1377).
-- **Production is self-hosted on an OVH VPS in Gravelines and deploys only when a
+- **Production is self-hosted on a VPS and deploys only when a
   GitHub Release is published.** Not a push, not a tag. Vercel's automatic
   deployments are off — per-push preview builds from parallel agent sessions
   exhausted the Hobby plan's quota until the rate limit landed on `main` itself.

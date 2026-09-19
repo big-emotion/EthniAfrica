@@ -5,6 +5,8 @@ import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
 import { colonizationCopy } from "@/lib/i18n/copy/colonization";
 import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import { chromeCopy } from "@/lib/i18n/copy/chrome";
+import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
+import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { commonCopy } from "@/lib/i18n/copy/common";
 import { consentCopy } from "@/lib/i18n/copy/consent";
 import { compareCopy } from "@/lib/i18n/copy/compare";
@@ -62,6 +64,8 @@ const en = {
   atlas: atlasCopy.en,
   ...commonCopy.en,
   chrome: chromeCopy.en,
+  homeHero: homeHeroCopy.en,
+  nameAnswer: nameAnswerCopy.en,
   consent: consentCopy.en,
   compare: compareCopy.en,
   contact: contactCopy.en,
@@ -110,6 +114,8 @@ const fr: UiDictionary = {
   atlas: atlasCopy.fr,
   ...commonCopy.fr,
   chrome: chromeCopy.fr,
+  homeHero: homeHeroCopy.fr,
+  nameAnswer: nameAnswerCopy.fr,
   consent: consentCopy.fr,
   compare: compareCopy.fr,
   contact: contactCopy.fr,

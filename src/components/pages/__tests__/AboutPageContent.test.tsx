@@ -36,7 +36,7 @@ describe("AboutPageContent (REQ-132)", () => {
       screen.getByRole("heading", { level: 1, name: "About" })
     ).toBeInTheDocument();
     expect(screen.getByTestId("about-overview")).toHaveTextContent(
-      /EthniAfrica tells the story of Africa’s peoples/i
+      /EthniAfrica tells where names come from/i
     );
     expect(screen.getByRole("link", { name: "how we write" })).toHaveAttribute(
       "href",
@@ -45,16 +45,21 @@ describe("AboutPageContent (REQ-132)", () => {
     expect(screen.getByText("Three ways in")).toBeInTheDocument();
   });
 
+  // The opening sentence is where a reader decides what this is. It used to
+  // list what the project holds — peoples, then languages, then names third —
+  // which is an inventory, and reads as an encyclopaedia without ever using
+  // the word. The subject is the question; the rest is what it is asked about.
   // @req REQ-132
-  it("opens with a clear overview of EthniAfrica", () => {
+  it("opens on the question the project answers, not on what it holds", () => {
     renderAbout();
 
     expect(
       screen.getByRole("heading", { level: 1, name: "À propos" })
     ).toBeTruthy();
-    expect(screen.getByTestId("about-overview")).toHaveTextContent(
-      /EthniAfrica raconte les peuples d’Afrique/i
-    );
+
+    const overview = screen.getByTestId("about-overview");
+    expect(overview).toHaveTextContent(/EthniAfrica/);
+    expect(overview).toHaveTextContent(/d’où viennent les noms/i);
   });
 
   /**

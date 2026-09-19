@@ -8,8 +8,6 @@
  * Reuses Epic 9's font subsets and the single OG pattern established by
  * src/app/[lang]/comparer/[entityType]/opengraph-image/route.tsx (AR30).
  */
-import fs from "node:fs";
-import path from "node:path";
 import { ImageResponse } from "next/og";
 import {
   parseScoreCardParams,
@@ -18,6 +16,11 @@ import {
 import { describeScope } from "@/api/v2/handlers/quiz";
 import { translations } from "@/lib/translations";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
+import {
+  SHARE_CARD_SIZE,
+  SHARE_CARD_THEME,
+  shareCardFonts,
+} from "@/lib/seo/shareCard";
 import { OG_IMAGE_CACHE_CONTROL } from "@/api/v2/services/corpusCache";
 
 // Deliberately French: one card is generated site-wide, and the route sits
@@ -26,14 +29,6 @@ const t = translations.fr.quiz;
 
 // @req REQ-103 FR70
 export const runtime = "nodejs";
-
-const IMAGE_SIZE = { width: 1200, height: 630 };
-
-function readFontFile(fileName: string): Buffer {
-  return fs.readFileSync(
-    path.join(process.cwd(), "src/app/[lang]/comparer/_fonts", fileName)
-  );
-}
 
 // @req REQ-103 FR70
 export async function GET(request: Request) {
@@ -59,8 +54,8 @@ export async function GET(request: Request) {
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        background: "#fbf7f2",
-        color: "#2c2018",
+        background: SHARE_CARD_THEME.ground,
+        color: SHARE_CARD_THEME.ink,
         padding: "56px",
       }}
     >
@@ -69,7 +64,7 @@ export async function GET(request: Request) {
           display: "flex",
           fontFamily: "Nunito Sans",
           fontSize: 24,
-          opacity: 0.75,
+          color: SHARE_CARD_THEME.inkSoft,
         }}
       >
         {scope.labelFr}
@@ -90,7 +85,7 @@ export async function GET(request: Request) {
             display: "flex",
             fontFamily: "Nunito Sans",
             fontSize: 28,
-            color: "#b64e27",
+            color: SHARE_CARD_THEME.accent,
           }}
         >
           {t.ogSourcedLine}
@@ -101,28 +96,15 @@ export async function GET(request: Request) {
           display: "flex",
           fontFamily: "Nunito Sans",
           fontSize: 20,
-          opacity: 0.7,
+          color: SHARE_CARD_THEME.inkSoft,
         }}
       >
         {CANONICAL_DOMAIN}
       </div>
     </div>,
     {
-      ...IMAGE_SIZE,
-      fonts: [
-        {
-          name: "Fraunces",
-          data: readFontFile("Fraunces-600-subset.ttf"),
-          weight: 600,
-          style: "normal",
-        },
-        {
-          name: "Nunito Sans",
-          data: readFontFile("NunitoSans-400-subset.ttf"),
-          weight: 400,
-          style: "normal",
-        },
-      ],
+      ...SHARE_CARD_SIZE,
+      fonts: shareCardFonts(),
       headers: {
         "Cache-Control": OG_IMAGE_CACHE_CONTROL,
       },

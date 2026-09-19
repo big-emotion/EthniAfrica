@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Peuples Khoe (macro-groupe)",
-      "selfAppellation": "Variee selon les groupes : Khoekhoe (Khoikhoi), Nama (Namakhoen), Damara (ǂNukhoen), Haiǁom (Haiǁomkhoen), Gǀwi, Gǁana, Naro, Kxoe, Shua, Tsoa, Kwadi (eteinte)",
+      "selfAppellation": null,
       "exonyms": [
         "Khoi",
         "Khoikhoi",
@@ -16,7 +16,7 @@
       ],
       "originOfExonyms": "Le terme Khoikhoi ou Khoekhoe signifie 'hommes des hommes' ou 'les vrais hommes' en langue khoekhoe. L'appellation coloniale pejorative 'Hottentot' fut utilisee par les colons neerlandais des 17e-18e siecles pour imiter les sons clics de la langue, percus comme incomprehensibles. Central Khoisan est une classification linguistique obsolete remplacee par Khoe-Kwadi.",
       "whyProblematic": "Le terme 'Khoisan' regroupe des peuples genetiquement et culturellement distincts (Khoekhoe pastoraux et San chasseurs-cueilleurs) sous une seule etiquette. La famille linguistique Khoe-Kwadi n'est plus consideree comme faisant partie d'un macro-groupe 'Khoisan' unifie : Khoe-Kwadi, Kx'a (Ju) et Tuu sont trois familles independantes sans lien genetique etabli.",
-      "contemporaryUsage": "Khoe ou Khoi est la designation generique adoptee dans la litterature scientifique et officielle depuis les annees 1990. En Namibie, Khoekhoe est une langue nationale. En Afrique du Sud, Khoekhoe (ou Khoikhoi) est une identite revendiquee par les groupes Nama et Griqua.",
+      "contemporaryUsage": "Khoe ou Khoi est la designation generique adoptee dans la litterature scientifique et officielle depuis les annees 1990. En Namibie, Khoekhoe est une langue nationale. En Afrique du Sud, Khoekhoe (ou Khoikhoi) est une identite revendiquee par les groupes Nama et Griqua. Il n'existe pas d'auto-appellation collective : chaque groupe se designe par son propre nom, Khoekhoe (Khoikhoi), Nama (Namakhoen), Damara (ǂNukhoen), Haiǁom (Haiǁomkhoen), Gǀwi, Gǁana, Naro, Kxoe, Shua ou Tsoa, le kwadi etant aujourd'hui eteint.",
       "linguisticFamily": "FLG_KHOE",
       "ethnoLinguisticGroup": "Khoe-Kwadi (macro-groupe linguistique indigene d'Afrique australe)",
       "historicalRegion": "Afrique australe : Namibie, Botswana, Afrique du Sud (Cap), Zimbabwe occidental, Angola sud-occidental",

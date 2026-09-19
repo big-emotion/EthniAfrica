@@ -4,9 +4,10 @@
   "nameEn": "Berber / Amazigh",
   "content": {
     "decolonialHeader": {
-      "selfAppellation": "Berber / Amazigh",
-      "contemporaryUsage": " - Terme \"Amazigh/Imazighen\" officialisé dans les constitutions marocaine (2011, article 5) et algérienne (2016, article 4).",
-      "historicalAppellations": "Berber / Amazigh"
+      "selfAppellation": "Tamazight",
+      "contemporaryUsage": "Terme \"Amazigh/Imazighen\" officialisé dans les constitutions marocaine (2011, article 5) et algérienne (2016, article 4).",
+      "historicalAppellations": ["Libyque", "Numide", "Maure", "Barbar"],
+      "originOfHistoricalTerm": "Ce sont les noms que d'autres ont donnés. Libyque, Numide et Maure viennent des sources grecques et latines ; selon Yves Modéran (2003), Mauri domine dans les sources officielles du IVe au VIIe siècle. Barbar est le nom arabe, et c'est de lui que vient le français berbère. Pour Modéran, il dérive du latin barbarus, non par la forme savante barbari mais par le barbar du latin parlé des villes et des campagnes romanisées, que les Arabes entendent dès leur arrivée en Ifrîkiya ; sa première attestation sûre se trouve chez Ibn al-Kalbî, dans la seconde moitié du VIIIe siècle, et des traditions remontant aux environs de 730 le mentionnent déjà."
     },
     "generalInfo": {
       "branches": [
@@ -129,6 +130,12 @@
         "url": null,
         "tier": "referenced",
         "notes": "Monographie d'auteur nommé avec année ; source de l'hypothèse d'un ensemble négro-égyptien incluant le berbère comme branche périphérique."
+      },
+      {
+        "title": "Modéran, Yves (2003) — Les Maures et l'Afrique romaine (IVe-VIIe siècle). Rome : École française de Rome, Bibliothèque des Écoles françaises d'Athènes et de Rome",
+        "url": "https://books.openedition.org/efr/1431",
+        "tier": "referenced",
+        "notes": "Monographie d'historien. L'introduction de sa cinquième partie retrace l'origine du nom arabe des Berbères et sa première attestation."
       }
     ]
   },

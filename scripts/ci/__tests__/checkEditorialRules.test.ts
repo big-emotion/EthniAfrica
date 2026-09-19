@@ -7,6 +7,7 @@ import {
   checkChronologySymmetry,
   checkSourcesCount,
   checkDoctrineLinkCardSnapshot,
+  checkCompetingAppellations,
   checkUndatedPolityCeiling,
   UNDATED_POLITY_CEILING,
   escapeWorkflowCommand,
@@ -134,6 +135,63 @@ describe("checkEditorialRules — helpers", () => {
 });
 
 describe("checkAutonym (Rule 1)", () => {
+  /**
+   * The distinction this corpus draws everywhere else, brought to this rule.
+   *
+   * A language family mostly has no endonym at all: its archives say so in as
+   * many words — "il n'existe pas de terme endogène unique couvrant l'ensemble
+   * des peuples nilotiques", and the same sentence for seven others. Asking
+   * such a fiche for an autonym forever is asking for something the entity
+   * does not have, and it is what pushed twenty-three of them to answer with
+   * their own English name — "Cushitic", "Nilotic", "Semitic" — which the
+   * result page then drew under "the name they give themselves".
+   *
+   * So `null` written in the field is an answer: somebody looked, and there is
+   * none. An absent key is still the unanswered question it always was. This
+   * is `exonyms: []` against a missing key, one rule over.
+   */
+  // @req REQ-095
+  it("accepts an explicit null as a searched-for absence", () => {
+    const fiche: Fiche = {
+      id: "FLG_NILOTIQUE",
+      content: { decolonialHeader: { selfAppellation: null } },
+    };
+    expect(
+      checkAutonym(
+        fiche,
+        "dataset/source/afrik/famille_linguistique/FLG_NILOTIQUE.json"
+      )
+    ).toBeNull();
+  });
+
+  // @req REQ-095
+  it("still asks a fiche that never declared the field at all", () => {
+    const fiche: Fiche = {
+      id: "FLG_SILENT",
+      content: { decolonialHeader: {} },
+    };
+    const r = checkAutonym(
+      fiche,
+      "dataset/source/afrik/famille_linguistique/FLG_SILENT.json"
+    );
+    expect(r?.severity).toBe("warning");
+  });
+
+  // An empty string is not a declared absence — it is a field somebody
+  // blanked, and it reads to a human as unfinished rather than as an answer.
+  // @req REQ-095
+  it("does not accept an empty string as an answer", () => {
+    const fiche: Fiche = {
+      id: "PPL_X",
+      content: { appellations: { selfAppellation: "   " } },
+    };
+    const r = checkAutonym(
+      fiche,
+      "dataset/source/afrik/peuples/FLG_X/PPL_X.json"
+    );
+    expect(r).not.toBeNull();
+  });
+
   it("passes when autonym is present, regardless of confidence", () => {
     const fiche: Fiche = {
       id: "PPL_X",
@@ -466,6 +524,140 @@ describe("the ratchet on the real corpus", () => {
   });
 });
 
+describe("checkCompetingAppellations", () => {
+  const peopleFile = "dataset/source/afrik/peuples/FLG_X/PPL_TEST.json";
+
+  // The rule this one is written against: a people known by one name only is a
+  // truth the atlas publishes — Ekpeye is the board drawn for it — so an empty
+  // list passes and only an absent key fails.
+  // @req REQ-169
+  it("accepts an empty list as a declared silence", () => {
+    const fiche: Fiche = {
+      id: "PPL_TEST",
+      content: { appellations: { exonyms: [] } },
+    };
+    expect(checkCompetingAppellations(fiche, peopleFile)).toEqual([]);
+  });
+
+  // @req REQ-169
+  it("refuses an absent key, which is an unanswered question", () => {
+    const fiche: Fiche = {
+      id: "PPL_TEST",
+      content: { appellations: { selfAppellation: "Iqbayliyen" } },
+    };
+    const findings = checkCompetingAppellations(fiche, peopleFile);
+    expect(findings).toHaveLength(1);
+    expect(findings[0].rule).toBe("competing-appellations");
+    expect(findings[0].severity).toBe("error");
+    expect(findings[0].message).toContain("exonyms");
+  });
+
+  // The hole this rule shipped with: it returned early on anything that was
+  // not an array, so a *string* read to it as a declared silence. Twenty-four
+  // of the twenty-five family fiches store `historicalAppellations` as one,
+  // and the rule saw nothing for a week. `readNaming` reads arrays only, so
+  // those strings also reach the result page as no forms at all — a field that
+  // is full, a gate that is quiet, and a reader who is shown nothing.
+  // @req REQ-169
+  it("refuses a string where the model declares a list", () => {
+    const fiche: Fiche = {
+      id: "FLG_TEST",
+      content: {
+        decolonialHeader: { historicalAppellations: "Afroasiatic" },
+      },
+    };
+    const findings = checkCompetingAppellations(
+      fiche,
+      "dataset/source/afrik/famille_linguistique/FLG_TEST.json"
+    );
+    expect(findings).toHaveLength(1);
+    expect(findings[0].severity).toBe("error");
+    expect(findings[0].message).toContain("historicalAppellations");
+  });
+
+  // The last two fiches allowed a string were held by a named debt, downgraded
+  // to a warning. It reached zero on 2026-09-19 and was deleted, as its own
+  // comment required, so no fiche is exempt any more — including the one that
+  // was last to leave.
+  // @req REQ-169
+  it("exempts no fiche from the list shape now that the debt is gone", () => {
+    const fiche: Fiche = {
+      id: "FLG_BERBERE",
+      content: {
+        decolonialHeader: { historicalAppellations: "Berber / Amazigh" },
+      },
+    };
+    const findings = checkCompetingAppellations(
+      fiche,
+      "dataset/source/afrik/famille_linguistique/FLG_BERBERE.json"
+    );
+    expect(findings).toHaveLength(1);
+    expect(findings[0].severity).toBe("error");
+  });
+
+  // A declared silence still has to be a list. `null` is the other shape that
+  // used to slip through, and it is what an absent key looks like once a
+  // serialiser has been over the fiche.
+  // @req REQ-169
+  it("refuses null where the model declares a list", () => {
+    const fiche: Fiche = {
+      id: "PPL_TEST",
+      content: { appellations: { exonyms: null } },
+    };
+    const findings = checkCompetingAppellations(fiche, peopleFile);
+    expect(findings).toHaveLength(1);
+    expect(findings[0].severity).toBe("error");
+  });
+
+  // @req REQ-169
+  it("refuses forms with nowhere they come from", () => {
+    const fiche: Fiche = {
+      id: "PPL_TEST",
+      content: { appellations: { exonyms: ["Pahouin"], originOfExonyms: "" } },
+    };
+    const findings = checkCompetingAppellations(fiche, peopleFile);
+    expect(findings).toHaveLength(1);
+    expect(findings[0].message).toContain("originOfExonyms");
+  });
+
+  // @req REQ-169
+  it("accepts forms that carry their origin", () => {
+    const fiche: Fiche = {
+      id: "PPL_TEST",
+      content: {
+        appellations: {
+          exonyms: ["Pahouin"],
+          originOfExonyms: "Des intermédiaires côtiers.",
+        },
+      },
+    };
+    expect(checkCompetingAppellations(fiche, peopleFile)).toEqual([]);
+  });
+
+  // A family stores the same thing under another key, which is the finding
+  // that produced this rule: five classes, five schemas, one question.
+  // @req REQ-169
+  it("reads a family from decolonialHeader instead", () => {
+    const file = "dataset/source/afrik/famille_linguistique/FLG_TEST.json";
+    const fiche: Fiche = {
+      id: "FLG_TEST",
+      content: {
+        decolonialHeader: {
+          historicalAppellations: ["Hamito-sémitique"],
+          originOfHistoricalTerm: "Forgé au XIXe siècle.",
+        },
+      },
+    };
+    expect(checkCompetingAppellations(fiche, file)).toEqual([]);
+  });
+
+  // @req REQ-169
+  it("asks nothing of a country, which aggregates many peoples", () => {
+    const file = "dataset/source/afrik/pays/GAB.json";
+    expect(checkCompetingAppellations({ id: "GAB" }, file)).toEqual([]);
+  });
+});
+
 describe("checkUndatedPolityCeiling (the ratchet)", () => {
   // @req REQ-148
   it("passes when the corpus sits exactly at the recorded ceiling", () => {
@@ -521,7 +713,9 @@ describe("runEditorialRules — end-to-end", () => {
     writeFiche("peuples/FLG_BANTU/PPL_CLEAN.json", {
       id: "PPL_CLEAN",
       content: {
-        appellations: { selfAppellation: "Test endonym" },
+        // `exonyms: []` is what makes this fixture clean under
+        // `competing-appellations`: a declared silence, not an absent key.
+        appellations: { selfAppellation: "Test endonym", exonyms: [] },
         sources: ["one", "two"],
       },
     });
@@ -550,7 +744,11 @@ describe("runEditorialRules — end-to-end", () => {
     writeFiche("peuples/FLG_BANTU/PPL_WARN.json", {
       id: "PPL_WARN",
       confidence: "low",
-      content: { sources: ["a", "b"] },
+      content: {
+        // Declared, so this fixture trips only the rule it is about.
+        appellations: { exonyms: [] },
+        sources: ["a", "b"],
+      },
     });
     const r = runEditorialRules({ repoRoot: tmpRoot });
     expect(r.exitCode).toBe(0);
@@ -584,7 +782,7 @@ describe("runEditorialRules — end-to-end", () => {
       id: "PPL_COLONIAL",
       classification_status: "colonial-legacy",
       content: {
-        appellations: { selfAppellation: "Endonym present" },
+        appellations: { selfAppellation: "Endonym present", exonyms: [] },
         sources: ["a", "b"],
       },
     });
@@ -621,7 +819,9 @@ describe("runEditorialRules — end-to-end", () => {
     writeFiche("peuples/FLG_BANTU/PPL_CLEAN.json", {
       id: "PPL_CLEAN",
       content: {
-        appellations: { selfAppellation: "Test endonym" },
+        // `exonyms: []` is what makes this fixture clean under
+        // `competing-appellations`: a declared silence, not an absent key.
+        appellations: { selfAppellation: "Test endonym", exonyms: [] },
         sources: ["one", "two"],
       },
     });

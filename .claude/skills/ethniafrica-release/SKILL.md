@@ -14,9 +14,7 @@ This skill writes to the local repo first. It only runs `git push` after the use
 
 ## Deployment reality — read this before promising anything
 
-Production is **self-hosted on the OVH VPS in Gravelines** (`51.195.82.98`, SSH on port `49152`), not on Vercel. It is built and started by `.github/workflows/deploy-production.yml`, which listens on exactly one event: **a published GitHub Release**.
-
-> Documents produced during this migration call that host "Francfort". They are wrong about the name and right about the address — Frankfurt is `145.239.76.125`, a different machine running different things. Everything is configured against the address.
+Production is **self-hosted on a VPS**, not on Vercel. It is built and started by `.github/workflows/deploy-production.yml`, which listens on exactly one event: **a published GitHub Release**. The SSH connection details live in the `PRODUCTION_SSH_*` GitHub secrets and the operator's private notes.
 
 Consequences this skill must state truthfully, every run:
 
@@ -24,12 +22,12 @@ Consequences this skill must state truthfully, every run:
 - **Pushing `main` deploys nothing.** `vercel.json` sets `git.deploymentEnabled: false`, so no push and no pull request builds anything on Vercel any more. That was deliberate: automatic preview builds from parallel agent sessions exhausted the Hobby plan's deployment quota, and the rate limit eventually landed on `main` itself.
 - **Pushing the tag deploys nothing either.** The tag is the thing the Release will point at. It has to exist on `origin` before the Release is created, which is why Step 7 pushes it and Step 8 publishes the Release — in that order, never merged into one step.
 - **Creating the Release is therefore no longer optional.** Step 8 is part of shipping, not a nicety. A release that stops after the tag has bumped a version and shipped nothing.
-- **The AFRIK corpus sync rides on the deploy.** `production-data-sync.yml` triggers on `workflow_run` of `Deploy Production (OVH)` and only when it concluded `success`. A failed deploy leaves the production corpus untouched, which is correct. When the sync itself fails, its per-fiche error report is uploaded as the `afrik-migration-errors-production` artifact — the loader only logs a path, and a path on a runner is unreadable.
+- **The AFRIK corpus sync rides on the deploy.** `production-data-sync.yml` triggers on `workflow_run` of `Deploy Production` and only when it concluded `success`. A failed deploy leaves the production corpus untouched, which is correct. When the sync itself fails, its per-fiche error report is uploaded as the `afrik-migration-errors-production` artifact — the loader only logs a path, and a path on a runner is unreadable.
 - **`workflow_run` only fires for workflow files that live on the default branch.** Both workflows must be on `main` for the chain to work. Precondition 6 (`recette` is an ancestor of `main`) already covers the usual way this goes wrong.
 - The recette preview still exists on Vercel but is manual: `deploy-preview-recette.yml`, `workflow_dispatch` only.
 - The CI/quality workflows (`ci.yml`, `a11y.yml`, `lighthouse.yml`, `data-integrity.yml`, `openapi-diff.yml`, `e2e.yml`) still react to pushes and pull requests. None of them deploy.
 
-Rollback is a host-side operation on the VPS, not a re-run of anything here — see [`docs/runbooks/ovh-production-deploy.md`](../../../docs/runbooks/ovh-production-deploy.md).
+Rollback is a host-side operation on the VPS, not a re-run of anything here — see [`docs/runbooks/production-deploy.md`](../../../docs/runbooks/production-deploy.md).
 
 ## When to Activate
 
@@ -229,14 +227,14 @@ What this actually does, in order:
   2. `git push origin v<next_version>` → publishes the tag. Still deploys
      nothing. The tag exists so the Release has something to point at.
   3. `gh release create v<next_version>` → THIS is the deploy trigger. It fires
-     `deploy-production.yml`, which SSHes to the OVH VPS in Gravelines, checks
+     `deploy-production.yml`, which SSHes to the production host, checks
      out this exact tag, rebuilds the image and restarts the container on
      ethniafrica.com. On success, `production-data-sync.yml` then loads the
      AFRIK corpus into the production Supabase project and busts its caches.
 
 Stopping after step 2 is a valid outcome: version bumped, nothing shipped.
 Rolling back afterwards is a host-side operation on the VPS —
-docs/runbooks/ovh-production-deploy.md.
+docs/runbooks/production-deploy.md.
 
 Reply `yes` / `push` / `ship` / `go` / `oui` / `ok` to proceed with all three.
 Anything else → keeps commit + tag local only.
@@ -299,13 +297,13 @@ Report the outcome honestly:
 Released v<next_version>.
 
   Release:  https://github.com/big-emotion/ethniafrica/releases/tag/v<next_version>
-  Deploy:   Deploy Production (OVH) — <conclusion> — <run url>
+  Deploy:   Deploy Production — <conclusion> — <run url>
   Corpus:   Production AFRIK Data Sync runs next, only if the deploy succeeded
 
 Verify: docs/DEPLOYMENT.md → Post-deploy verification.
 ```
 
-If the deploy run failed, say so and do not describe the release as shipped. The tag and the Release page exist either way; the site does not. Point at the rollback procedure in [`docs/runbooks/ovh-production-deploy.md`](../../../docs/runbooks/ovh-production-deploy.md) rather than attempting one from here — it is a host-side operation.
+If the deploy run failed, say so and do not describe the release as shipped. The tag and the Release page exist either way; the site does not. Point at the rollback procedure in [`docs/runbooks/production-deploy.md`](../../../docs/runbooks/production-deploy.md) rather than attempting one from here — it is a host-side operation.
 
 ### Step 9 — Verification checklist
 
@@ -314,7 +312,7 @@ If the deploy run failed, say so and do not describe the release as shipped. The
 - [ ] Exactly one commit was created. Exactly one annotated tag was created.
 - [ ] If user confirmed: `main` and `v<next_version>` are pushed, **and** the GitHub Release is published — not a draft.
 - [ ] If user did not confirm: commit + tag remain local only, no `git push` was executed and no Release was created.
-- [ ] The report told the truth about deployment: publishing the Release deploys via OVH; pushing `main` and pushing the tag do not.
+- [ ] The report told the truth about deployment: publishing the Release deploys to the production host; pushing `main` and pushing the tag do not.
 - [ ] The reported deploy outcome matches the actual conclusion of the `deploy-production.yml` run. A published Release with a failed deploy is not a shipped release.
 
 ## Failure Modes — Stop Without Modifying
@@ -335,7 +333,7 @@ If the deploy run failed, say so and do not describe the release as shipped. The
 ## Out of Scope
 
 - npm publish (package is `private: true`).
-- The build + deploy mechanics themselves — `deploy-production.yml` owns them, driven by the published Release. This skill publishes the Release and lets the workflow take over; it never SSHes to the VPS, never runs `docker compose`, and never performs a rollback. Rollback is documented in [`docs/runbooks/ovh-production-deploy.md`](../../../docs/runbooks/ovh-production-deploy.md) and is a deliberate human act.
+- The build + deploy mechanics themselves — `deploy-production.yml` owns them, driven by the published Release. This skill publishes the Release and lets the workflow take over; it never SSHes to the VPS, never runs `docker compose`, and never performs a rollback. Rollback is documented in [`docs/runbooks/production-deploy.md`](../../../docs/runbooks/production-deploy.md) and is a deliberate human act.
 - Applying Supabase migrations or running `tsx scripts/migrateAfrikToDatabase.ts` against any database. Precondition 8 only _checks_. The corpus sync that follows a successful deploy is `production-data-sync.yml`'s job, not this skill's.
 - Recette previews — those are `deploy-preview-recette.yml`, run by hand from the Actions tab, and have nothing to do with a release.
 - Bumping sub-package manifests (the root `package.json` is the only version source).

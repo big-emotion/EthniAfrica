@@ -5,7 +5,8 @@ import { render, screen, within } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
 import { SiteHeader } from "@/components/layout/SiteHeader";
-import { PRODUCT_NAME, PRODUCT_TAGLINE } from "@/lib/brand";
+import { PRODUCT_NAME } from "@/lib/brand";
+import { chromeCopy } from "@/lib/i18n/copy/chrome";
 
 vi.mock("next/navigation", () => ({
   usePathname: () => "/fr",
@@ -24,8 +25,10 @@ const source = () =>
 /**
  * The masthead is the one thing on every page, and it was the smallest thing
  * on every page: a 26px mark beside a 16px wordmark, with nothing saying what
- * EthniAfrica is. Production says it — "Atlas des Peuples d'Afrique", beside
- * the mark, in the warm gradient — and the app had dropped it.
+ * EthniAfrica is. Production said it — the qualifier from `brand.ts`, beside
+ * the mark, in the warm gradient — and the app had dropped it. The value is
+ * read, never quoted: it changed on 2026-09-17 and a quotation would have gone
+ * stale with it.
  *
  * The dress is asserted by reading the inline stylesheet back out of the
  * component, which is the pattern `navigationCharter.test.tsx` established:
@@ -57,7 +60,14 @@ describe("the brand lockup — the mark, the name, and what the site is (REQ-114
     const brand = screen.getByTestId("site-brand");
 
     expect(within(brand).getByText(PRODUCT_NAME)).toBeInTheDocument();
-    expect(within(brand).getByText(PRODUCT_TAGLINE)).toBeInTheDocument();
+    // The header's own tagline, not PRODUCT_TAGLINE: the bar gives the lockup
+    // 201px at 430px, so it carries the short form while the footer and the
+    // Open Graph title carry the full site slogan. The two constants held the
+    // same string until they diverged, and this assertion read the wrong one
+    // the whole time without failing.
+    expect(
+      within(brand).getByText(chromeCopy.fr.headerTagline)
+    ).toBeInTheDocument();
   });
 
   /**

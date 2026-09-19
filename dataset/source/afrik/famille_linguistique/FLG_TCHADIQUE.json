@@ -6,9 +6,14 @@
   "content": {
     "decolonialHeader": {
       "whyProblematic": " L'étiquette « hamite » associait à tort des peuples africains à une origine non-africaine prétendument « civilisatrice ». Le regroupement « hamitique » servait une hiérarchie raciale artificielle. **PREUVES** :",
-      "selfAppellation": "Chadic",
+      "selfAppellation": null,
       "contemporaryUsage": "Le terme est maintenant universellement accepté en linguistique (SIL Ethnologue, Glottolog, UNESCO) et préféré à « hamitique » pour des raisons scientifiques et décoloniales.",
-      "historicalAppellations": "Chadic",
+      "historicalAppellations": [
+        "Hamitique",
+        "Langues tchadiennes",
+        "Sous-groupe tchadique",
+        "Hamito-Chadic"
+      ],
       "originOfHistoricalTerm": " Le terme « tchadique » (Chadic) provient géographiquement du bassin du lac Tchad, où se concentrent les principales langues du groupe. L'origine académique du terme remonte à la classification afro-asiatique moderne :"
     },
     "generalInfo": {

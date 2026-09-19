@@ -25,7 +25,7 @@
 import type { CorpusFigure, FigureKey } from "./types";
 
 /** Every count below was taken against `recette` on this date. */
-const COUNTED_ON = "2026-09-17";
+const COUNTED_ON = "2026-09-18";
 
 const PEOPLE_GLOB = "dataset/source/afrik/peuples/*/*.json";
 
@@ -69,7 +69,12 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "corpus-autonyms",
     label: "autonymes déclarés",
-    value: 772,
+    // 772 until eight macro-group fiches were corrected: their field held a
+    // sentence listing *other* groups' names — « Variées selon les groupes :
+    // Maninka, Bambara, Dioula… » — which the count took for an autonym. A
+    // grouping of peoples has no name for itself, so those fiches now declare
+    // the absence with `null`, and the figure counts only what it says it does.
+    value: 764,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
     countedOn: COUNTED_ON,
@@ -121,7 +126,11 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-administration",
     label: "fiches employant le radical « administr- »",
-    value: 180,
+    // 180 -> 181 on 2026-09-18. Gbodjibo was not counted: its « administratif »
+    // lived inside the exonym string, which this probe does not read. Writing it
+    // into the field the probe does read brought the fiche into the count — the
+    // figure moved because the corpus got more legible, not because it grew.
+    value: 181,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },

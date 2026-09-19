@@ -9,7 +9,18 @@
   "glottocode": "east2426",
   "nameFr": "Maninkakan de l'Est",
   "nameEn": "Eastern Maninkakan",
-  "alternateNames": [],
+  "alternateNames": [
+    "Eastern Malinke",
+    "Kankan Maninka",
+    "Madingo",
+    "Mande",
+    "Mandingo",
+    "Maninka",
+    "Maninka-Mori",
+    "Maninkakan",
+    "Southern Maninka"
+  ],
+  "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_MANDE",
   "peoples": [

@@ -22,6 +22,7 @@ interface LanguageFiche {
   nameFr: string;
   nameEn?: string;
   alternateNames?: string[];
+  whyProblematic?: string | null;
   spellingAliases?: string[];
   familyId?: string;
   peoples?: Array<{ name: string; peopleId?: string }>;
@@ -48,6 +49,7 @@ function toLanguageRecord(fiche: LanguageFiche): LanguageRecord {
     spellingAliases: fiche.spellingAliases ?? [],
     nameEn: fiche.nameEn,
     alternateNames: fiche.alternateNames ?? [],
+    whyProblematic: fiche.whyProblematic,
     peoples: fiche.peoples ?? [],
     vehicularRole: fiche.content?.vehicularRole,
     dialects: fiche.content?.dialects ?? [],

@@ -1,0 +1,100 @@
+{
+  "familyId": "FLG_KHOE",
+  "generatedAt": "2026-09-19",
+  "archivePath": "dataset/source/afrik/archive/famille_linguistique/FLG_KHOE.txt",
+  "fichePath": "dataset/source/afrik/famille_linguistique/FLG_KHOE.json",
+  "charRatio": 0.638,
+  "anchorBudget": 28,
+  "sections": [
+    {
+      "heading": "## HEADER DÉCOLONIAL (obligatoire)",
+      "target": "content.decolonialHeader",
+      "emptyTarget": false,
+      "archiveChars": 7842,
+      "jsonChars": 1819,
+      "missingAnchors": [
+        "149",
+        "150",
+        "1677",
+        "172",
+        "1809",
+        "1828",
+        "199",
+        "2021",
+        "2022",
+        "2024",
+        "African Affairs",
+        "Code Hottentot",
+        "Hottentot Proclamation"
+      ],
+      "missingSubheadings": []
+    },
+    {
+      "heading": "# 1. Informations générales",
+      "target": "content.generalInfo",
+      "emptyTarget": false,
+      "archiveChars": 298,
+      "jsonChars": 224,
+      "missingAnchors": ["Kalahari Khoe"],
+      "missingSubheadings": []
+    },
+    {
+      "heading": "# 2. Peuples associés",
+      "target": "content.associatedPeoples",
+      "emptyTarget": false,
+      "archiveChars": 91,
+      "jsonChars": 119,
+      "missingAnchors": [],
+      "missingSubheadings": []
+    },
+    {
+      "heading": "# 3. Caractéristiques linguistiques",
+      "target": "content.linguisticCharacteristics",
+      "emptyTarget": false,
+      "archiveChars": 4224,
+      "jsonChars": 624,
+      "missingAnchors": ["2024", "Cambridge Core"],
+      "missingSubheadings": []
+    },
+    {
+      "heading": "# 4. Histoire et origines",
+      "target": "content.historyAndOrigins",
+      "emptyTarget": false,
+      "archiveChars": 7359,
+      "jsonChars": 7641,
+      "missingAnchors": [],
+      "missingSubheadings": []
+    },
+    {
+      "heading": "# 5. Répartition géographique et démographie",
+      "target": "content.distribution",
+      "emptyTarget": false,
+      "archiveChars": 1737,
+      "jsonChars": 83,
+      "missingAnchors": [
+        "2003",
+        "2013",
+        "2023",
+        "2024",
+        "2025",
+        "Automated Similarity",
+        "Endangered Languages",
+        "Housing Census",
+        "Judgment Program",
+        "Namibie Population",
+        "Northern Cape",
+        "Southern African"
+      ],
+      "missingSubheadings": []
+    },
+    {
+      "heading": "# 6. Sources",
+      "target": "content.sources",
+      "emptyTarget": false,
+      "archiveChars": 2633,
+      "jsonChars": 4509,
+      "missingAnchors": [],
+      "missingSubheadings": []
+    }
+  ]
+}

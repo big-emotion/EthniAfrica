@@ -64,6 +64,7 @@ export type RuleName =
   | "source-ref-resolves"
   | "reader-facing-register"
   | "chronology-symmetry"
+  | "competing-appellations"
   | "json-parse";
 
 export interface RuleResult {
@@ -84,8 +85,16 @@ export interface Fiche {
   sources?: unknown[];
   names?: unknown[];
   content?: {
-    appellations?: { selfAppellation?: string | null };
-    decolonialHeader?: { selfAppellation?: string | null };
+    appellations?: {
+      selfAppellation?: string | null;
+      exonyms?: unknown;
+      originOfExonyms?: string | null;
+    };
+    decolonialHeader?: {
+      selfAppellation?: string | null;
+      historicalAppellations?: unknown;
+      originOfHistoricalTerm?: string | null;
+    };
     sources?: unknown[];
     kingdoms?: unknown[];
     // Chapters beyond the ones the rules name — historicalAffiliation carries
@@ -123,6 +132,33 @@ export function extractAutonym(fiche: Fiche): string | null {
   if (typeof flg === "string" && flg.trim().length > 0) return flg;
 
   return null;
+}
+
+/**
+ * Whether the fiche answers "there is no endonym" rather than saying nothing.
+ *
+ * A language family usually has none: its archive says so outright — « il
+ * n'existe pas de terme endogène unique couvrant l'ensemble des peuples
+ * nilotiques », and the same sentence for seven others. A rule that asks such
+ * a fiche for an autonym asks for something the entity does not have, and
+ * that pressure is what put the family's own English name in the field on
+ * twenty-three of twenty-five — "Cushitic", "Nilotic", "Semitic" — which the
+ * result page then drew to a reader under « le nom qu'ils se donnent ».
+ *
+ * `null` written into the field is the answer; an absent key is still the
+ * unanswered question. It is `exonyms: []` against a missing key, one rule
+ * over, and an empty string is neither: a blanked field reads as unfinished.
+ */
+// @req REQ-095
+export function declaresNoAutonym(fiche: Fiche): boolean {
+  const blocks = [fiche.content?.appellations, fiche.content?.decolonialHeader];
+  return blocks.some(
+    (block) =>
+      block !== undefined &&
+      block !== null &&
+      "selfAppellation" in block &&
+      (block as { selfAppellation?: unknown }).selfAppellation === null
+  );
 }
 
 /**
@@ -204,6 +240,7 @@ export function checkAutonym(fiche: Fiche, file: string): RuleResult | null {
 
   const autonym = extractAutonym(fiche);
   if (autonym !== null) return null;
+  if (declaresNoAutonym(fiche)) return null;
 
   const confidence = extractConfidence(fiche);
   const blocking = confidence !== null && CONFIDENCE_BLOCKING.has(confidence);
@@ -218,6 +255,102 @@ export function checkAutonym(fiche: Fiche, file: string): RuleResult | null {
     slug,
     message: `Fiche ${slug} has no autonym (endonym). Confidence=${confidenceLabel}. Decolonial posture requires every fiche to provide its self-appellation before reaching confidence >= medium.`,
   };
+}
+
+// ───── Rule: competing appellations ───────────────────────────────────────
+
+const APPELLATIONS_RULE: RuleName = "competing-appellations";
+
+/**
+ * A fiche must have *decided* about the names it is known by besides its own.
+ *
+ * The result page promises to show every form and to crown none of them
+ * (`docs/design/search-result-charter.md`). Nothing required a fiche to carry
+ * those forms, so the promise rested on a field that could empty without a test
+ * noticing — the blocker §5 of that charter names about itself.
+ *
+ * **It cannot demand an exonym.** A people known by one name only is a truth
+ * the atlas publishes, and `Ekpeye` is the board drawn for it. What it demands
+ * is that the question was asked: the key present, so an empty list reads as
+ * « we looked and found none » rather than as nobody having looked. Measured
+ * 2026-09-18 — 770 of 774 peoples carry forms, three declare an empty list, and
+ * one never declared the key at all.
+ *
+ * And a fiche that does carry forms says where they come from — the field the
+ * page's « D'où elles viennent » block reads.
+ *
+ * **It is an error, not a warning, because the corpus is at zero.** It shipped
+ * as a warning behind a ratchet of three; all three were correctable from prose
+ * the fiches already published, so the ratchet was deleted in the same session
+ * that created it. Two of the three were not incomplete at all — they listed
+ * their own name as a competing appellation, with a note in brackets, which is
+ * a people known by one name mis-encoded as a people known by two.
+ */
+export function checkCompetingAppellations(
+  fiche: Fiche,
+  file: string
+): RuleResult[] {
+  if (!isEthnographicFiche(file)) return [];
+
+  const slug = getSlug(fiche, file);
+  const isFamily = file.split(/[\\/]/).includes("famille_linguistique");
+  const block = isFamily
+    ? fiche.content?.decolonialHeader
+    : fiche.content?.appellations;
+  const formsKey = isFamily ? "historicalAppellations" : "exonyms";
+  const originKey = isFamily ? "originOfHistoricalTerm" : "originOfExonyms";
+
+  if (!block || !(formsKey in block)) {
+    return [
+      {
+        rule: APPELLATIONS_RULE,
+        severity: "error",
+        file,
+        slug,
+        message: `Fiche ${slug} never declares \`${formsKey}\`. A people known by one name only is a truth the atlas publishes — say so with an empty list. An absent key is an unanswered question, and the result page cannot tell the two apart.`,
+      },
+    ];
+  }
+
+  const forms = (block as Record<string, unknown>)[formsKey];
+  const origin = (block as Record<string, unknown>)[originKey];
+
+  // A declared silence is an empty *list*. Anything else that is not a list is
+  // an answer nothing can read: `readNaming` projects arrays and only arrays,
+  // so a string sits in a full field and reaches the reader as no forms at
+  // all. This rule used to return early here on any non-array, which made a
+  // string indistinguishable from a silence — and on 2026-09-18 twenty-four of
+  // the twenty-five family fiches stored one, their own English name. They
+  // were rewritten from their archives over two days, the last two held by a
+  // named debt that was deleted when it reached zero; a string is an error for
+  // every fiche again.
+  if (!Array.isArray(forms)) {
+    return [
+      {
+        rule: APPELLATIONS_RULE,
+        severity: "error",
+        file,
+        slug,
+        message: `Fiche ${slug} declares \`${formsKey}\` as ${forms === null ? "null" : typeof forms}, where the strict model declares a list. A declared silence is an empty list; anything else is a value the result page cannot read, and this rule could not tell the two apart.`,
+      },
+    ];
+  }
+
+  if (forms.length === 0) return [];
+
+  if (typeof origin !== "string" || origin.trim().length === 0) {
+    return [
+      {
+        rule: APPELLATIONS_RULE,
+        severity: "error",
+        file,
+        slug,
+        message: `Fiche ${slug} lists ${forms.length} competing appellation(s) and says nowhere where they come from (\`${originKey}\` is empty). Showing a name without its provenance is the one thing this atlas does not do.`,
+      },
+    ];
+  }
+
+  return [];
 }
 
 // ───── Rule 2: sources count ──────────────────────────────────────────────
@@ -788,6 +921,8 @@ export function runEditorialRules(opts: RunOptions): RunResult {
     findings.push(...checkReaderFacingRegister(fiche, relPath));
 
     findings.push(...checkChronologySymmetry(fiche, relPath));
+
+    findings.push(...checkCompetingAppellations(fiche, relPath));
   }
 
   if (opts.undatedPolityCeiling !== undefined) {

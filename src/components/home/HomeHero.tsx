@@ -6,6 +6,7 @@ import { PRODUCT_NAME } from "@/lib/brand";
 import type { CorpusCounts } from "@/lib/home/corpusCounts";
 import type { HomeHeroVisual } from "@/lib/home/homeHeroVisuals";
 import type { SeedWordsByKind } from "@/lib/home/seedWords";
+import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
 import { homePurposeCopy } from "@/lib/i18n/copy/homePurpose";
 import { getLocalizedRoute } from "@/lib/routing";
 import type { Language } from "@/types/shared";
@@ -84,7 +85,7 @@ export function HomeHero({
               landmark whose name was a different sentence from its text. The
               tiles below carry the corpus's size now, so the heading says the
               one thing it means and is called by it. */}
-          <h1>{"Une question sur l'Afrique\u00a0?"}</h1>
+          <h1>{homeHeroCopy[language].question}</h1>
           {/* Three imperatives, then what the site is, then what it owes.
 
               The band answers « what can I do here », and it used to answer

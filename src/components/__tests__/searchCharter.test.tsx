@@ -31,8 +31,7 @@ const IN_SCOPE_FILES = [
   "components/search/SearchModalV2.tsx",
   "components/search/SearchResultCard.tsx",
   "components/search/SearchSnippet.tsx",
-  "components/search/SearchPivotCard.tsx",
-  "components/search/DominantAnswerPanel.tsx",
+  "components/search/NameAnswer.tsx",
   "components/search/SearchLensBar.tsx",
   "components/pages/RecherchePageContent.tsx",
 ];

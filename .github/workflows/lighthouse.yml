@@ -38,9 +38,6 @@ jobs:
       # Test-only publication: production remains fail-closed to fr-only.
       SITE_LOCALE_MODE: bilingual-fr-default
       NEXT_TELEMETRY_DISABLED: 1
-      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
-      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
       NEXT_PUBLIC_FEATURE_QUIZ: "true"
       # A test deployment: without Upstash credentials a production one
       # answers 500 on every /api/v2 call, and the console errors that follow
@@ -98,27 +95,14 @@ jobs:
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
 
-      # A fork or bot PR cannot read repository secrets, so it skips. Anywhere
-      # else a missing secret fails the job: a required check that reports
-      # success without having audited anything is worse than a red one.
-      - name: Check required secrets are present
-        id: secrets
-        env:
-          IS_FORK_PR: ${{ github.event.pull_request.head.repo.fork || false }}
-          IS_BOT: ${{ github.actor == 'dependabot[bot]' }}
-        run: |
-          if [ -n "$NEXT_PUBLIC_SUPABASE_URL" ] && [ -n "$NEXT_PUBLIC_SUPABASE_ANON_KEY" ]; then
-            echo "present=true" >> "$GITHUB_OUTPUT"
-          elif [ "$IS_FORK_PR" = "true" ] || [ "$IS_BOT" = "true" ]; then
-            echo "present=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::Skipping the Lighthouse gate — a fork or bot PR cannot read repository secrets."
-          else
-            echo "::error::No Supabase URL and anon key reached this job, so the Lighthouse gate cannot run. Set NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_ANON_KEY to arm it."
-            exit 1
-          fi
+      # No repository secret is needed any more: the ephemeral database below
+      # needs none, so a fork or bot pull request gets the gate too.
+      - name: Start an ephemeral Supabase and seed the gated routes' entities
+        if: steps.scope.outputs.render == 'true'
+        uses: ./.github/actions/ephemeral-supabase
 
       - name: Restore Next.js build cache
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: .next/cache
@@ -127,31 +111,31 @@ jobs:
             nextjs-${{ hashFiles('package-lock.json') }}-
 
       - name: Build Next.js app
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         run: npm run build
 
       - name: Start Next.js server
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         run: npm run start &
 
       - name: Wait for server to be ready
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         run: npx wait-on http://localhost:3000 --timeout 60000
 
       # Pinned: an unpinned global install is a different auditor on the day a
       # release changes an audit's scoring, and the gate would move with it.
       - name: Install @lhci/cli
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         run: npm install -g @lhci/cli@0.15.1 --legacy-peer-deps
 
       - name: Install Chromium for Lighthouse
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         run: |
           npx playwright install --with-deps chromium
           node -e 'console.log("CHROME_PATH=" + require("playwright").chromium.executablePath())' >> "$GITHUB_ENV"
 
       - name: Run the Lighthouse gate
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         run: lhci autorun --config=./.lighthouserc.gate.js
 
   lighthouse:
@@ -207,11 +191,11 @@ jobs:
       - name: Check required secrets are present
         id: secrets
         run: |
-          if [ -n "${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}" ]; then
+          if [ -n "${{ secrets.RECETTE_SUPABASE_URL }}" ]; then
             echo "present=true" >> "$GITHUB_OUTPUT"
           else
             echo "present=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::Skipping Lighthouse — NEXT_PUBLIC_SUPABASE_URL secret not available (fork or Dependabot PR)."
+            echo "::notice::Skipping Lighthouse — RECETTE_SUPABASE_URL secret not available (fork or Dependabot PR)."
           fi
 
       - name: Build Next.js app
@@ -219,9 +203,9 @@ jobs:
         run: npm run build
         env:
           NEXT_TELEMETRY_DISABLED: 1
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.RECETTE_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.RECETTE_SUPABASE_ANON_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.RECETTE_SUPABASE_SERVICE_ROLE_KEY }}
           # Epic 10, Story 10.11 (ETNI-500) — the quiz route 404s
           # (isQuizFeatureEnabled) unless this is set, which would silently
           # audit nothing.
@@ -232,9 +216,9 @@ jobs:
         run: npm run start &
         env:
           NEXT_TELEMETRY_DISABLED: 1
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.RECETTE_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.RECETTE_SUPABASE_ANON_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.RECETTE_SUPABASE_SERVICE_ROLE_KEY }}
           NEXT_PUBLIC_FEATURE_QUIZ: "true"
 
       - name: Wait for server to be ready

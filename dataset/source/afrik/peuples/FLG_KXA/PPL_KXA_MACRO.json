@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Peuples Kx'a (macro-groupe)",
-      "selfAppellation": "Variees selon les groupes : Ju|'hoansi (vrais gens), !Kung / !Xun (gens), ǂHoan (nom propre du groupe), Bugakhoe (nom du groupe Bugakwe)",
+      "selfAppellation": null,
       "exonyms": [
         "Ju–ǂHoan",
         "Northern Khoisan (terme obsolete)",
@@ -16,7 +16,7 @@
       ],
       "originOfExonyms": "Le terme Kx'a fut cree en 2010 par Heine et Honken pour remplacer le compose Ju-ǂHoan (facilement confondu avec la langue Ju|'hoan) en choisissant le mot proto-Kx'a reconstruit signifiant terre, sol. Northern Khoisan est une denomination obsolete issue de la classification de Greenberg (1963) qui regroupait ces langues dans un hypothetique macro-ensemble Khoisan desormais rejete. San est un terme khoekhoegowab utilise comme terme collectif politiquement correct pour les populations autochtones de chasseurs-cueilleurs d'Afrique australe.",
       "whyProblematic": "La designation macro-groupe Kx'a est avant tout une categorie linguistique et non un groupe ethnique unifie. Les peuples qui parlent des langues Kx'a n'ont pas de conscience collective commune ni d'organisation politique partagee. La notion de groupe Khoisan, jadis utilisee, est scientifiquement invalide car les trois familles linguistiques concernees (Kx'a, Tuu, Khoe-Kwadi) ne sont pas genealogiquement liees.",
-      "contemporaryUsage": "Kx'a est un terme strictement academique (linguistique et genetique). Dans les contextes politiques et associatifs, les termes San ou Bushmen sont preferes comme denominateurs communs. Chaque groupe prefere son endonyme specifique pour l'usage courant.",
+      "contemporaryUsage": "Kx'a est un terme strictement academique (linguistique et genetique). Dans les contextes politiques et associatifs, les termes San ou Bushmen sont preferes comme denominateurs communs. Chaque groupe prefere son endonyme specifique pour l'usage courant. Ces endonymes sont notamment Ju|'hoansi (vrais gens), !Kung ou !Xun (gens), ǂHoan et Bugakhoe.",
       "linguisticFamily": "FLG_KXA",
       "ethnoLinguisticGroup": "Kx'a (famille linguistique comprenant les branches Ju et ǂ'Amkoe)",
       "historicalRegion": "Kalahari septentrional et central (Namibie, Botswana, Angola meridional)",

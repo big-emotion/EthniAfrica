@@ -1,3 +1,4 @@
+import { emailSignature } from "@/lib/email/signature";
 import type { EmailContentEn } from "@/lib/email/flagNotification.en";
 
 /**
@@ -14,7 +15,7 @@ export function buildSignInLinkEmailEn(link: string): EmailContentEn {
       link,
       "It works once and is only valid for a short time. Open it in the browser where you asked to sign in.",
       "If you did not ask for it, ignore this message: without this link, nobody can sign in with your address.",
-      "EthniAfrica — Atlas of the Peoples of Africa",
+      emailSignature("en"),
     ].join("\n\n"),
     provenance: "machine",
   };

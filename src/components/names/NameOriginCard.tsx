@@ -15,9 +15,10 @@
 import type { ReactNode } from "react";
 
 import { NameTypeBadge } from "@/components/names/NameTypeBadge";
-import type { NameRecordView } from "@/types/names";
+import { readerFacingProse } from "@/lib/afrik/readerFacingProse";
 import { bcp47LanguageTag } from "@/lib/languageTag";
 import { FALLBACK_LOCALE } from "@/lib/locale";
+import type { NameRecordView } from "@/types/names";
 import type { Language } from "@/types/shared";
 
 export interface NameOriginCardProps {
@@ -68,11 +69,12 @@ export function NameOriginCard({
     whyProblematic,
     contemporaryUsage,
   } = record;
+  const readerWhyProblematic = readerFacingProse(whyProblematic);
 
   const hasImpositionContext =
     Boolean(imposedBy) ||
     Boolean(impositionPeriod) ||
-    Boolean(whyProblematic) ||
+    Boolean(readerWhyProblematic) ||
     Boolean(contemporaryUsage);
 
   return (
@@ -113,10 +115,10 @@ export function NameOriginCard({
               <dd className="inline">{impositionPeriod}</dd>
             </div>
           ) : null}
-          {whyProblematic ? (
+          {readerWhyProblematic ? (
             <div>
               <dt className="inline font-semibold">{labels.problematic} </dt>
-              <dd className="inline">{whyProblematic}</dd>
+              <dd className="inline">{readerWhyProblematic}</dd>
             </div>
           ) : null}
           {contemporaryUsage ? (

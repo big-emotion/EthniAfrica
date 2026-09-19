@@ -58,14 +58,14 @@ reaches real users.
 
 ## Project identity
 
-|                       | Backs **recette**                                                    | Backs **production**                                                                                                                               |
-| --------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Supabase project ref  | `shmrjtnfbqzceovroqjj`                                               | none — a self-hosted stack at `supabase.ethniafrica.com` on an OVH VPS; `jajggbeimfudpzcxytbb`, described below, is the **retired** hosted project |
-| Dashboard name        | `ethniafrica` — its environment is labelled _production_ by Supabase | _unknown_                                                                                                                                          |
-| Region                | `eu-west-1`                                                          | _unknown_                                                                                                                                          |
-| Created               | 2026-07-24                                                           | _unknown_                                                                                                                                          |
-| Named in this repo as | `AFRIK_RECETTE_SUPABASE_URL` (`scripts/lib/afrikSyncTarget.ts`)      | the `AFRIK_PRODUCTION_SUPABASE_URL` environment variable                                                                                           |
-| Reached by the flag   | `--target=recette`                                                   | `--target=production`                                                                                                                              |
+|                       | Backs **recette**                                                    | Backs **production**                                                                                                                          |
+| --------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Supabase project ref  | `shmrjtnfbqzceovroqjj`                                               | none — a self-hosted stack at `supabase.ethniafrica.com` on a VPS; `jajggbeimfudpzcxytbb`, described below, is the **retired** hosted project |
+| Dashboard name        | `ethniafrica` — its environment is labelled _production_ by Supabase | _unknown_                                                                                                                                     |
+| Region                | `eu-west-1`                                                          | _unknown_                                                                                                                                     |
+| Created               | 2026-07-24                                                           | _unknown_                                                                                                                                     |
+| Named in this repo as | `AFRIK_RECETTE_SUPABASE_URL` (`scripts/lib/afrikSyncTarget.ts`)      | the `AFRIK_PRODUCTION_SUPABASE_URL` environment variable                                                                                      |
+| Reached by the flag   | `--target=recette`                                                   | `--target=production`                                                                                                                         |
 
 The corpus sync now names the **application** environment in both rows, so the flag and the
 project agree. Only the recette ref is checked in; production is configuration with no default,
@@ -594,11 +594,20 @@ recette project, then re-runs the reconciliation to prove the apply did what it 
 logs the SQL it is about to run first, so the job output is the record of what that deploy
 changed in the database.
 
-It needs one secret, **`RECETTE_SUPABASE_DB_URL`** — the recette project's Postgres connection
-string (Supabase dashboard → Project Settings → Database → Connection string → URI, with the
-password filled in). Without it the job **skips loudly** with a warning rather than failing, so
-a fork or Dependabot pull request does not read as broken. Nothing is applied while that secret
-is absent, which means the gap this workflow exists to close stays open until it is set.
+Since ETNI-1958/1961, recette's Postgres is self-hosted on the same VPS as production's, with no
+published port any more than production's has — so the job goes through the same SSH-tunnel
+mechanism documented in full below for `deploy-production.yml`, forwarding to the `recette-db`
+container instead of `supabase-db`, and reads `POSTGRES_PASSWORD` from
+`/home/ubuntu/supabase-recette/docker/.env` rather than the production stack's `.env`. It reuses
+the same `SUPABASE_SSH_*` secrets — same host, same key — rather than a second set. **There is no
+`RECETTE_SUPABASE_DB_URL`**, for the identical reason there is no `PRODUCTION_SUPABASE_DB_URL`: a
+stored connection string cannot name a host:port that is not published, so it could only ever be
+wrong. (The secret existed briefly under that name, from before this stack existed; it is left in
+place, unused, rather than deleted.)
+
+The job gates on **`RECETTE_SUPABASE_URL`** being present — the REST-facing secret it also uses
+for `migrations:diff` and `check:migration-state`. Without it the job **skips loudly** with a
+warning rather than failing, so a fork or Dependabot pull request does not read as broken.
 
 ### On a published Release — `deploy-production.yml`, the `migrate` job
 
@@ -616,7 +625,7 @@ before anything reaches the VPS.
 #### Why it goes through an SSH tunnel
 
 **The production Postgres is not on the internet, and no connection string changes that.**
-Measured 2026-09-03: `supabase.ethniafrica.com` (`145.239.76.125`) answers on `443` and refuses
+Measured 2026-09-03: `supabase.ethniafrica.com` (the Supabase host) answers on `443` and refuses
 `5432` and `6543`. The v4.1.1 deploy read the ledger fine — that goes over PostgREST on 443 —
 and then died on `dial error (connect ECONNREFUSED …:5432)` because `db push` needs Postgres
 itself. The two production secrets had been pointing at **different machines**: the PostgREST
@@ -654,8 +663,8 @@ Consequences, both asserted by `scripts/__tests__/deployProductionWorkflow.test.
 - **`ExitOnForwardFailure=yes` is load-bearing.** Without it `ssh -f` exits 0 having established
   nothing, and the runner then has a local port that accepts no connection — which `db push`
   would report as a database problem.
-- **The host key is pinned** through `SUPABASE_OVH_SSH_KNOWN_HOSTS`, for the same reason the
-  deploy job pins Gravelines: an unpinned tunnel forwards a database credential to whoever
+- **The host key is pinned** through `SUPABASE_SSH_KNOWN_HOSTS`, for the same reason the
+  deploy job pins the application host: an unpinned tunnel forwards a database credential to whoever
   answers on that address.
 - **`sslmode=disable`.** The self-hosted Postgres offers no TLS and the Supabase CLI asks for it:
   v4.2.0 reached the server and died on `tls error (The server does not support SSL connections)`.
@@ -677,17 +686,18 @@ sets `pipefail`, and **refuses a plan of zero** — it only runs when migrations
 planning none of them is not a quiet success. A gate that can only catch "too wide" cannot catch
 "never happened".
 
-Five secrets, alongside the existing `PRODUCTION_OVH_SSH_*` set for the application host — these
-name the **Supabase** host (Francfort, `145.239.76.125:22`), which is a different machine from
-the one that runs the app (Gravelines, `51.195.82.98:49152`):
+Five secrets, alongside the existing `PRODUCTION_SSH_*` set for the application host — these
+name the **Supabase** host, which is a different machine from the application host that runs the
+app. Since ETNI-1958/1961 the same five back `migrate-recette.yml` too: recette's Postgres is
+self-hosted on this same host, in its own container, no second SSH keypair needed:
 
-| Secret                         | Value                                                     |
-| ------------------------------ | --------------------------------------------------------- |
-| `SUPABASE_OVH_SSH_KEY`         | private half of a CI-only keypair                         |
-| `SUPABASE_OVH_SSH_KNOWN_HOSTS` | `ssh-keyscan -H <host>` output                            |
-| `SUPABASE_OVH_SSH_HOST`        | the Supabase VPS address                                  |
-| `SUPABASE_OVH_SSH_USER`        | the account whose `authorized_keys` holds the public half |
-| `SUPABASE_OVH_SSH_PORT`        | `22` on that host                                         |
+| Secret                     | Value                                                     |
+| -------------------------- | --------------------------------------------------------- |
+| `SUPABASE_SSH_KEY`         | private half of a CI-only keypair                         |
+| `SUPABASE_SSH_KNOWN_HOSTS` | `ssh-keyscan -H <host>` output                            |
+| `SUPABASE_SSH_HOST`        | the Supabase VPS address                                  |
+| `SUPABASE_SSH_USER`        | the account whose `authorized_keys` holds the public half |
+| `SUPABASE_SSH_PORT`        | `22` on that host                                         |
 
 The key is **created, not retrieved** — there is no dashboard for a self-hosted stack, and the
 Postgres password lives in the stack's own `.env` (`POSTGRES_PASSWORD`), not in a settings page:
@@ -695,8 +705,8 @@ Postgres password lives in the stack's own `.env` (`POSTGRES_PASSWORD`), not in 
 ```bash
 ssh-keygen -t ed25519 -N "" -C "gha-migrate" -f ~/.ssh/gha_migrate
 ssh-copy-id -i ~/.ssh/gha_migrate.pub <user>@<supabase-host>
-gh secret set SUPABASE_OVH_SSH_KEY --repo big-emotion/ethniafrica < ~/.ssh/gha_migrate
-ssh-keyscan -H <supabase-host> | gh secret set SUPABASE_OVH_SSH_KNOWN_HOSTS --repo big-emotion/ethniafrica
+gh secret set SUPABASE_SSH_KEY --repo big-emotion/ethniafrica < ~/.ssh/gha_migrate
+ssh-keyscan -H <supabase-host> | gh secret set SUPABASE_SSH_KNOWN_HOSTS --repo big-emotion/ethniafrica
 ```
 
 Re-running a failed deploy does **not** pick up a fixed workflow: a re-run replays the workflow

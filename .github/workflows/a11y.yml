@@ -103,25 +103,18 @@ jobs:
       - name: Install Playwright (chromium)
         run: npx playwright install --with-deps chromium
 
-      # Skip cleanly on forks / Dependabot PRs that cannot access the Supabase
-      # secrets, and on documentation-only PRs (the scope step above) — the
-      # Storybook-only axe check above still runs and gates.
-      # Mirrors .github/workflows/lighthouse.yml.
-      - name: Check required secrets are present
-        id: secrets
-        run: |
-          if [ -n "${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}" ]; then
-            echo "present=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "present=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::Skipping live-route a11y audit (scripts/a11yRoutes.ts, both locales) — NEXT_PUBLIC_SUPABASE_URL secret not available (fork or Dependabot PR)."
-          fi
+      # No repository secret is needed any more: the ephemeral database below
+      # needs none, so a fork or Dependabot pull request gets the live-route
+      # audit too, not a skip. Only the documentation-only scope still skips.
+      - name: Start an ephemeral Supabase and seed the gated routes' entities
+        if: steps.scope.outputs.render == 'true'
+        uses: ./.github/actions/ephemeral-supabase
 
       # Same artefact ci.yml already builds for this commit: restoring it takes
       # the build from ~45 s to ~11 s. .next/cache is content-hashed by Next, so
       # a stale entry is ignored rather than mis-served.
       - name: Restore Next.js build cache
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: .next/cache
@@ -129,33 +122,30 @@ jobs:
           restore-keys: |
             nextjs-${{ hashFiles('package-lock.json') }}-
 
+      # NEXT_PUBLIC_SUPABASE_URL / _ANON_KEY / SUPABASE_SERVICE_ROLE_KEY reach
+      # this step already exported to $GITHUB_ENV by the ephemeral-supabase
+      # action above — nothing to pass here.
       - name: Build Next.js app
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         run: npm run build
         env:
           NEXT_TELEMETRY_DISABLED: 1
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           # Epic 10, Story 10.11 (ETNI-500) — the quiz route 404s (isQuizFeatureEnabled)
           # unless this is set, which would silently audit nothing.
           NEXT_PUBLIC_FEATURE_QUIZ: "true"
 
       - name: Start Next.js server
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         run: npm run start &
         env:
           NEXT_TELEMETRY_DISABLED: 1
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           NEXT_PUBLIC_FEATURE_QUIZ: "true"
 
       - name: Wait for server to be ready
-        if: steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true'
+        if: steps.scope.outputs.render == 'true'
         run: npx wait-on http://localhost:3000 --timeout 60000
 
       - name: Run axe-core checks
         run: npx tsx scripts/a11y-test.ts
         env:
-          A11Y_LIVE_BASE_URL: ${{ steps.secrets.outputs.present == 'true' && steps.scope.outputs.render == 'true' && 'http://localhost:3000' || '' }}
+          A11Y_LIVE_BASE_URL: ${{ steps.scope.outputs.render == 'true' && 'http://localhost:3000' || '' }}

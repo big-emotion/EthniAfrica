@@ -13,15 +13,15 @@ import { trackEvent } from "@/lib/analytics/trackEvent";
 import { AutonymExonymHeading } from "@/components/ui/AutonymExonymHeading";
 import { SearchResultCard } from "@/components/search/SearchResultCard";
 import { SearchPeopleGroupCard } from "@/components/search/SearchPeopleGroupCard";
-import { SearchPivotCard } from "@/components/search/SearchPivotCard";
-import { DominantAnswerPanel } from "@/components/search/DominantAnswerPanel";
+import { NameAnswer } from "@/components/search/NameAnswer";
+import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { SourcedHighlightBlock } from "@/components/search/SourcedHighlightBlock";
 import { SearchLensBar } from "@/components/search/SearchLensBar";
 import { NoNameFicheNote } from "@/components/search/NoNameFicheNote";
 import { NoResultsLeads } from "@/components/search/NoResultsLeads";
 import { useLanguage } from "@/hooks/use-language";
 import { useAutocomplete } from "@/hooks/use-autocomplete";
-import { getLocalizedRoute, getStaticPageRoute } from "@/lib/routing";
+import { getLocalizedRoute } from "@/lib/routing";
 import { cn } from "@/lib/utils";
 import {
   compareByRelevance,
@@ -34,7 +34,7 @@ import {
   relationSearchParams,
   type SearchRelation,
 } from "@/lib/search/relationSearch";
-import { selectPivot } from "@/lib/search/pivot";
+import { selectNameSubject } from "@/lib/search/nameSubject";
 import {
   getSearchLabel,
   getSearchPlaceholder,
@@ -67,7 +67,8 @@ type SearchHit = SearchResult;
 /**
  * `idle` — nothing committed yet, the page shows its default head.
  * `loading` — a fetch for the committed query is in flight or has not run.
- * `loaded` — the fetch resolved (success or failure); results reflect it.
+ * `loaded` — the corpus answered; results reflect what it holds.
+ * `failed` — the request never reached the corpus.
  *
  * A `?q=` on arrival used to initialise a `hasSearched` flag straight to
  * `true` before any fetch had run, so the empty-state block could paint on
@@ -76,8 +77,14 @@ type SearchHit = SearchResult;
  * `loading` whenever the URL already commits a query closes that gap: the
  * empty state is gated on `loaded`, which nothing reaches before the fetch
  * itself does.
+ *
+ * `failed` is separate from `loaded` so the page can tell an outage from a
+ * silence. The loader degrades every failure to an empty envelope, which is
+ * right for rendering and wrong for what the page then says: its answer to a
+ * name it does not find is a confession about the corpus, and an unanswered
+ * request is not one.
  */
-type SearchStatus = "idle" | "loading" | "loaded";
+type SearchStatus = "idle" | "loading" | "loaded" | "failed";
 
 // ── component ─────────────────────────────────────────────────────────────────
 
@@ -175,12 +182,12 @@ export function RecherchePageContent() {
             results: hits.length,
           });
         }
+        setStatus(answered ? "loaded" : "failed");
       } catch {
         setResults([]);
         setLeads([]);
         setCounts(EMPTY_SEARCH_LENS_COUNTS);
-      } finally {
-        setStatus("loaded");
+        setStatus("failed");
       }
     },
     [language]
@@ -281,28 +288,20 @@ export function RecherchePageContent() {
   // through `compareByRelevance`, which decides on `exactMatch` first.
   const sortedResults = [...lensFilteredResults].sort(compareByRelevance);
 
-  // A relation-scoped list ("the peoples of the Krou family") has no single
-  // answer, so it never gets a pivot.
-  const pivot = relation
-    ? null
-    : selectPivot(sortedResults, committedQuery, language);
-  const listResults = pivot
-    ? sortedResults.filter((r) => r !== pivot)
-    : sortedResults;
+  // Every entity that answers to the name, which may be none, one, or —
+  // « Bassa » — three unrelated peoples. A relation-scoped list ("the peoples
+  // of the Krou family") is a browse rather than a question about a name, so
+  // it has no subject at all.
+  const nameSubjects = relation
+    ? []
+    : selectNameSubject(sortedResults, committedQuery, language);
 
-  // The pivot is the answer the page leads with, so it holds the first rank
-  // and the grid starts below it. Counting it among the cards would put the
-  // dominant answer and the runner-up at the same position.
-  const firstListRank = pivot ? 2 : 1;
-
-  // A name imposed from outside never stands alone where the self-appellation
-  // exists — the same rule `SearchPivotCard` applies to its own heading.
-  const pivotName = pivot
-    ? getLocalizedSearchResultName(pivot, language)
-    : undefined;
-  const pivotHasAutonym = Boolean(
-    pivot?.autonym && pivot.autonym !== pivotName
+  // The subjects are answered above the list, so the list does not repeat
+  // them. Every remaining card keeps its rank from the top of that list.
+  const listResults = sortedResults.filter(
+    (result) => !nameSubjects.includes(result)
   );
+  const firstListRank = 1;
 
   // A relation-scoped list ("the peoples of the Krou family") has no single
   // answer, so it never gets a pivot.
@@ -330,21 +329,23 @@ export function RecherchePageContent() {
           sortedResults.length > 1 ? "s" : ""
         }${committedQuery ? ` pour « ${committedQuery} »` : ""}`;
 
-  // Only once the fetch has resolved does the page know whether it is
-  // answering with a pivot or a count — showing either ahead of that would
-  // paint a wrong or stale head for one frame.
-  const showQueryHead = status === "loaded";
+  // Only once the fetch has resolved does the page know what it is answering
+  // with — showing a head ahead of that paints a stale one for a frame.
+  //
+  // A resolved zero keeps the default title rather than heading the page with
+  // its own count. « 0 résultat pour « X » » sat directly above « Nous ne
+  // connaissons pas ce nom »: two answers to one question, and the count is
+  // the colder of the two.
+  const showQueryHead = status === "loaded" && sortedResults.length > 0;
 
-  const heroHead = !showQueryHead ? undefined : pivot ? (
-    <AutonymExonymHeading
-      variant="hero"
-      autonym={pivotHasAutonym ? pivot.autonym : pivotName}
-      exonym={pivotHasAutonym ? pivotName : undefined}
-    />
-  ) : (
-    // The brand gradient is scoped to the literal word "Recherche"
-    // (brand charter §5.3); a pivot's name or a result count is corpus
-    // content, not the brand lockup, so it never gets the gradient.
+  // The head is the count, always. It used to be the crowned answer's own
+  // name when a pivot existed; DEC-057 retires that, and the name the reader
+  // typed is now answered by `NameAnswer` below, where every form it is known
+  // by is drawn at the same weight.
+  //
+  // The brand gradient stays scoped to the literal word "Recherche" (brand
+  // charter §5.3): a result count is corpus content, not the brand lockup.
+  const heroHead = !showQueryHead ? undefined : (
     <h1 className="afh-hero-title" style={{ fontWeight: 900 }}>
       {resultCountLabel}
     </h1>
@@ -537,72 +538,88 @@ export function RecherchePageContent() {
         {/* Split fiches of the same people (ETNI-1391) are grouped into one
             card here, at display time only — the underlying result order and
             count are unaffected. */}
-        {status !== "loading" &&
-          (pivot ? (
-            <div
-              data-testid="search-results-layout"
-              className="grid grid-cols-1 gap-afh-5xl min-[760px]:grid-cols-[minmax(0,1fr)_minmax(18rem,20rem)] min-[760px]:items-start"
-            >
-              <div
-                data-testid="search-results-main"
-                className="min-w-0 space-y-afh-5xl"
-              >
-                <SearchPivotCard
-                  result={pivot}
-                  language={language}
-                  onNavigate={() => trackResultClick(pivot.type, 1)}
-                />
-                <SourcedHighlightBlock result={pivot} language={language} />
-                {refinements}
-                {resultsList}
-              </div>
-              {/* Atlas charter §5: one component, two anchorings. Above
-                  760px it sits beside the results as a side panel; below,
-                  it stays in flow as a bottom sheet — a rule (border-t),
-                  never a hidden block, so the facts survive at 430px. */}
-              <div
-                data-testid="dominant-answer-panel-wrapper"
-                className="border-t border-afh-border pt-afh-lg min-[760px]:border-t-0 min-[760px]:pt-0 min-[760px]:self-start"
-              >
-                <DominantAnswerPanel result={pivot} language={language} />
-              </div>
-            </div>
-          ) : (
-            <div className="space-y-afh-5xl">
-              {refinements}
-              {resultsList}
-            </div>
-          ))}
+        {/* Named positively rather than as a list of exclusions, because the
+            negative form silently admitted every status nobody had thought of:
+            `failed` fell through it and drew the unknown-name answer — a
+            confession about the corpus — on a request that never reached it. */}
+        {(status === "idle" || (status === "loaded" && results.length > 0)) && (
+          <div data-testid="search-results-layout" className="space-y-afh-5xl">
+            {/* The answer to the name, then the complete typed result set the
+                surviving clauses of REQ-124 still require. One column at every
+                width: the side rail asserted a hierarchy the corpus does not
+                support, and moving it below would have kept the assertion. */}
+            {/* Only where a subject was found. No subject alongside results
+                means the query matched no name exactly — « peul » against
+                `Fula (Fulbe / Peul)` — which is a question this block cannot
+                answer, not a name the corpus lacks. Passing the empty set
+                through drew the confession over 40 million people the page was
+                listing directly underneath. */}
+            {nameSubjects.length > 0 && !relation ? (
+              <NameAnswer
+                subjects={nameSubjects}
+                query={committedQuery}
+                language={language}
+              />
+            ) : null}
+            {nameSubjects.length === 1 ? (
+              <SourcedHighlightBlock
+                result={nameSubjects[0]}
+                language={language}
+              />
+            ) : null}
+            {refinements}
+            {resultsList}
+          </div>
+        )}
 
-        {/* ── empty state (post-search, no results) ── */}
+        {status === "failed" && (
+          <div className="bg-afh-bg-warm rounded-afh-lg px-afh-5xl py-afh-7xl text-center">
+            <p
+              className="text-afh-small text-afh-text-soft mx-auto max-w-sm"
+              role="status"
+            >
+              {nameAnswerCopy[language].searchUnavailable}
+            </p>
+          </div>
+        )}
+
+        {/* ── a search that returned nothing ──
+            The boards keep two cases apart here, and so does this. A spelling
+            that missed gets the near-misses the engine found; only a name
+            nothing came close to gets the confession REQ-178 asks for. Stacking
+            them would confess a gap on a query that was merely mistyped.
+
+            What both replace opened on the reader's spelling — a search engine
+            apologising for its index, where the doctrine says the silence is
+            the atlas's own. */}
         {status === "loaded" && results.length === 0 && (
-          <div className="flex flex-col items-center justify-center min-h-[16rem] gap-afh-2xl px-afh-5xl py-afh-7xl bg-afh-bg-warm rounded-afh-lg text-center">
-            <p className="text-afh-small text-afh-text-soft max-w-sm">
-              {language === "en" ? "No results for" : "Aucun résultat pour"} «{" "}
-              {committedQuery} ».
-            </p>
-            <p className="text-afh-small text-afh-text-soft">
-              {language === "en"
-                ? "Check the spelling or try another term."
-                : "Vérifiez l’orthographe ou essayez un autre terme."}
-            </p>
-            <NoResultsLeads leads={leads} language={language} />
-            <div className="flex flex-col gap-afh-md text-afh-small">
+          <div className="space-y-afh-2xl">
+            {leads.length > 0 ? (
+              <div className="flex flex-col items-center gap-afh-2xl bg-afh-bg-warm rounded-afh-lg px-afh-5xl py-afh-7xl text-center">
+                <p className="text-afh-small text-afh-text-soft max-w-sm">
+                  {nameAnswerCopy[language].noExactMatch} « {committedQuery} ».
+                </p>
+                <NoResultsLeads leads={leads} language={language} />
+              </div>
+            ) : (
+              <NameAnswer
+                subjects={[]}
+                query={committedQuery}
+                language={language}
+              />
+            )}
+            <div className="flex flex-col items-center gap-afh-md text-afh-small">
+              <Link
+                href={getLocalizedRoute(language, "peoples")}
+                className="underline underline-offset-2 hover:text-afh-text transition-colors"
+              >
+                {nameAnswerCopy[language].browsePeoples}
+              </Link>
               <Link
                 href={getLocalizedRoute(language, "families")}
                 className="underline underline-offset-2 hover:text-afh-text transition-colors"
               >
-                {language === "en"
-                  ? "Browse by family"
-                  : "Parcourir par famille"}
-              </Link>
-              <Link
-                href={`${getStaticPageRoute(language, "contribute")}?q=${encodeURIComponent(committedQuery)}`}
-                className="underline underline-offset-2 hover:text-afh-text transition-colors"
-              >
-                {language === "en"
-                  ? "Report missing data"
-                  : "Signaler donnée manquante"}
+                {nameAnswerCopy[language].browseFamilies}
               </Link>
             </div>
           </div>

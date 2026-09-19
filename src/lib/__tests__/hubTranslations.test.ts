@@ -26,7 +26,24 @@ describe("hub blurbs", () => {
     for (const axis of axes) {
       expect(hubs[axis].blurb).not.toMatch(/\bil arrive\b/i);
       expect(hubs[axis].blurb).not.toMatch(/\bil repart\b/i);
-      expect(hubs[axis].blurb).toMatch(/^L'axe /);
+    }
+  });
+
+  /**
+   * The shelving rule is the workshop's, and the reader never asked for it.
+   * The same three things are « Trois chemins » in the header panel and
+   * « Trois manières d'entrer » on the About page, so opening the pages
+   * themselves on « L'axe des… » gave one idea a third name, taken from the
+   * inside — the failing `hubs.ts` already records against « le corpus » and
+   * « une entité ». The blurb starts on what the reader came for instead.
+   *
+   * This replaces a `toMatch(/^L'axe /)` that pinned the opening word, which
+   * is what the header above says these tests set out not to do.
+   */
+  // @req REQ-114
+  it("opens on the contents rather than on the name the workshop files them under", () => {
+    for (const axis of axes) {
+      expect(hubs[axis].blurb).not.toMatch(/^L'axe\b/);
     }
   });
 
@@ -110,9 +127,9 @@ describe("header panel blurbs", () => {
 /**
  * The band above a hub names the page, not the product.
  *
- * It used to fall back to the product name, so `/fr/dossiers` opened on
- * « Atlas des Peuples d'Afrique » — already spelled out in the bar directly
- * above it — and told a reader nothing about where they stood. The title the
+ * It used to fall back to the product name, so `/fr/dossiers` opened on the
+ * brand qualifier — already spelled out in the bar directly above it — and told
+ * a reader nothing about where they stood. The title the
  * band now carries states the axis *and* what the axis leads into, which is
  * the hierarchy the URL encodes.
  */

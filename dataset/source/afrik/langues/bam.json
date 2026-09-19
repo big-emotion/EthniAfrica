@@ -9,7 +9,8 @@
   "glottocode": "bamb1269",
   "nameFr": "Bambara",
   "nameEn": "Bambara",
-  "alternateNames": [],
+  "alternateNames": ["Bamana", "Bamanakan", "Bamanankan"],
+  "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_MANDE",
   "peoples": [

@@ -4,9 +4,14 @@
   "nameEn": "Songhay",
   "content": {
     "decolonialHeader": {
-      "selfAppellation": "Songhay",
+      "selfAppellation": "Soŋay",
       "contemporaryUsage": "Le terme est maintenant largement accepté en linguistique (SIL Ethnologue, Glottolog, UNESCO) pour désigner cette famille linguistique, bien que son affiliation génétique (Nilo-saharien vs famille indépendante) reste débattue.",
-      "historicalAppellations": "Songhay",
+      "historicalAppellations": [
+        "Songhai",
+        "Langues soudanaises",
+        "Nilo-saharienne",
+        "Hamitique"
+      ],
       "originOfHistoricalTerm": " Le nom vient de l'ancien Empire Songhay (XVe–XVIe siècles) basé à Gao. Les populations zarma et songhay se nomment *Soŋay*, *Soŋai*, *Sonrai* selon les dialectes. L'origine académique du terme remonte aux classifications linguistiques modernes :"
     },
     "generalInfo": {

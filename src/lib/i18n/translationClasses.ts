@@ -184,6 +184,9 @@ export const TRANSLATION_CLASSES: Readonly<
     nameFr: "invariant",
     nameEn: "invariant",
     "alternateNames[]": "invariant",
+    // Prose about what a colonial or pejorative name raises — reviewed like
+    // its people and family counterparts, never machine-published.
+    whyProblematic: "review_required",
     "spellingAliases[]": "invariant",
     familyId: "invariant",
     "peoples[].name": "invariant",

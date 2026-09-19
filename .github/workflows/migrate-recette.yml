@@ -50,11 +50,11 @@ jobs:
       - name: Check for the recette database credential
         id: secrets
         run: |
-          if [ -n "${{ secrets.RECETTE_SUPABASE_DB_URL }}" ]; then
+          if [ -n "${{ secrets.RECETTE_SUPABASE_URL }}" ]; then
             echo "present=true" >> "$GITHUB_OUTPUT"
           else
             echo "present=false" >> "$GITHUB_OUTPUT"
-            echo "::warning::RECETTE_SUPABASE_DB_URL is not set — migrations were NOT applied. See docs/runbooks/migration-state.md."
+            echo "::warning::RECETTE_SUPABASE_URL is not set — migrations were NOT applied. See docs/runbooks/migration-state.md."
           fi
 
       # What would run, before it runs. The log is the record of what this
@@ -64,22 +64,117 @@ jobs:
         run: npm run migrations:diff -- --sql
         continue-on-error: true
         env:
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.RECETTE_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.RECETTE_SUPABASE_SERVICE_ROLE_KEY }}
 
       - uses: supabase/setup-cli@46f7f98c7f948ad727d22c1e67fab04c223a0520 # v3.0.0
         if: steps.secrets.outputs.present == 'true'
         with:
           version: latest
 
+      # recette's Postgres is self-hosted on the same VPS as production and,
+      # deliberately, not on the internet — no host port is published for
+      # `recette-db` any more than there is for `supabase-db`. A stored
+      # RECETTE_SUPABASE_DB_URL was tried first and abandoned for exactly the
+      # reason production's own stored URL was: there is no public host:port for
+      # it to name, so it could only ever be wrong. This reuses the SUPABASE_SSH_*
+      # secrets already granted for production's own migrate job (same host, same
+      # key) and forwards to a different container.
+      - name: Require the SSH access that reaches recette's database
+        if: steps.secrets.outputs.present == 'true'
+        env:
+          SSH_KEY: ${{ secrets.SUPABASE_SSH_KEY }}
+          SSH_HOST: ${{ secrets.SUPABASE_SSH_HOST }}
+          SSH_USER: ${{ secrets.SUPABASE_SSH_USER }}
+          SSH_PORT: ${{ secrets.SUPABASE_SSH_PORT }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SUPABASE_SSH_KNOWN_HOSTS }}
+        run: |
+          : "${SSH_KEY:?SUPABASE_SSH_KEY is not set. See docs/runbooks/migration-state.md}"
+          : "${SSH_HOST:?SUPABASE_SSH_HOST is not set}"
+          : "${SSH_USER:?SUPABASE_SSH_USER is not set}"
+          : "${SSH_PORT:?SUPABASE_SSH_PORT is not set}"
+          : "${SSH_KNOWN_HOSTS:?SUPABASE_SSH_KNOWN_HOSTS is not set}"
+
+      # The container IP is resolved at tunnel time rather than pinned: it is
+      # assigned by Docker and changes whenever the container is recreated.
+      - name: Open an SSH tunnel to recette's self-hosted Postgres
+        if: steps.secrets.outputs.present == 'true'
+        env:
+          SSH_KEY: ${{ secrets.SUPABASE_SSH_KEY }}
+          SSH_HOST: ${{ secrets.SUPABASE_SSH_HOST }}
+          SSH_USER: ${{ secrets.SUPABASE_SSH_USER }}
+          SSH_PORT: ${{ secrets.SUPABASE_SSH_PORT }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SUPABASE_SSH_KNOWN_HOSTS }}
+          SUPABASE_STACK_DIR: /home/ubuntu/supabase-recette/docker
+          DB_CONTAINER: recette-db
+        run: |
+          # No apostrophes in these messages: inside ${VAR:?word} bash reads a
+          # single quote as opening a quote even within double quotes, and
+          # check:workflow-shell fails the file on the unterminated string.
+          : "${SSH_KEY:?SUPABASE_SSH_KEY is not set — the migrate job cannot reach the recette Postgres without it. See docs/runbooks/migration-state.md}"
+          : "${SSH_HOST:?SUPABASE_SSH_HOST is not set}"
+          : "${SSH_USER:?SUPABASE_SSH_USER is not set}"
+          : "${SSH_PORT:?SUPABASE_SSH_PORT is not set}"
+          : "${SSH_KNOWN_HOSTS:?SUPABASE_SSH_KNOWN_HOSTS is not set — pinning the host key is what stops this job from forwarding a database credential to whoever answers on that address}"
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/supabase_tunnel_key
+          chmod 600 ~/.ssh/supabase_tunnel_key
+          printf '%s\n' "$SSH_KNOWN_HOSTS" >> ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
+
+          SSH_OPTS="-i $HOME/.ssh/supabase_tunnel_key -p $SSH_PORT -o BatchMode=yes"
+
+          DB_IP=$(ssh $SSH_OPTS "$SSH_USER@$SSH_HOST" \
+            "docker inspect -f '{{range \$k, \$v := .NetworkSettings.Networks}}{{\$v.IPAddress}} {{end}}' $DB_CONTAINER" \
+            | tr ' ' '\n' | grep -E '^[0-9]+\.' | head -1)
+          if [ -z "$DB_IP" ]; then
+            echo "::error::could not resolve an IPv4 address for the $DB_CONTAINER container on the VPS. Check that it is running and named as expected."
+            exit 1
+          fi
+          echo "Forwarding to $DB_CONTAINER at $DB_IP inside the Docker network."
+
+          PGPW=$(ssh $SSH_OPTS "$SSH_USER@$SSH_HOST" \
+            "grep '^POSTGRES_PASSWORD=' $SUPABASE_STACK_DIR/.env | cut -d= -f2- | tr -d '\r\n'")
+          if [ -z "$PGPW" ]; then
+            echo "::error::POSTGRES_PASSWORD is empty or absent in $SUPABASE_STACK_DIR/.env on the VPS."
+            exit 1
+          fi
+          echo "::add-mask::$PGPW"
+
+          ssh -f -N $SSH_OPTS \
+            -o ExitOnForwardFailure=yes \
+            -o ServerAliveInterval=30 \
+            -L "5432:$DB_IP:5432" \
+            "$SSH_USER@$SSH_HOST"
+
+          TUNNEL_UP=""
+          for _ in $(seq 1 20); do
+            if timeout 2 bash -c 'cat < /dev/null > /dev/tcp/127.0.0.1/5432' 2>/dev/null; then
+              TUNNEL_UP=yes
+              break
+            fi
+            sleep 1
+          done
+          if [ -z "$TUNNEL_UP" ]; then
+            echo "::error::the SSH tunnel never started listening on 127.0.0.1:5432, having forwarded to $DB_IP. Check that $DB_CONTAINER accepts connections on 5432 inside the Docker network."
+            exit 1
+          fi
+          echo "The tunnel is accepting connections on 127.0.0.1:5432."
+
+          umask 077
+          printf 'postgresql://postgres:%s@127.0.0.1:5432/postgres?sslmode=disable' "$PGPW" \
+            > "$RUNNER_TEMP/db-url"
+
       # `db push` reads the ledger, applies only what is missing, and records
       # each migration with the statements it ran — which is what makes drift
       # detectable later. Re-running it on an up-to-date database is a no-op.
       - name: Apply pending migrations
         if: steps.secrets.outputs.present == 'true'
-        run: supabase db push --db-url "$RECETTE_SUPABASE_DB_URL" --include-all
-        env:
-          RECETTE_SUPABASE_DB_URL: ${{ secrets.RECETTE_SUPABASE_DB_URL }}
+        run: |
+          DB_URL=$(cat "$RUNNER_TEMP/db-url")
+          echo "::add-mask::$DB_URL"
+          supabase db push --db-url "$DB_URL" --include-all
 
       # Proves the apply did what it claimed. Without this the job could report
       # success on a partial push, which is the failure this workflow exists to
@@ -88,5 +183,5 @@ jobs:
         if: steps.secrets.outputs.present == 'true'
         run: npm run check:migration-state
         env:
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.RECETTE_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.RECETTE_SUPABASE_SERVICE_ROLE_KEY }}

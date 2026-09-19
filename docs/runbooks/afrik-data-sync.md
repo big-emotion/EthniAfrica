@@ -14,16 +14,18 @@ own two-step rule — see [`migration-state.md`](./migration-state.md).
 `production` — the same vocabulary as the branches and the Vercel environments. A third value,
 `local`, names a contributor's own `supabase start` stack; see [Local bootstrap](#local-bootstrap).
 
-| Application environment | Supabase project                | Where the loader reads its URL                                              |
-| ----------------------- | ------------------------------- | --------------------------------------------------------------------------- |
-| `recette`               | `shmrjtnfbqzceovroqjj`          | `AFRIK_RECETTE_SUPABASE_URL`, checked into `scripts/lib/afrikSyncTarget.ts` |
-| `production`            | not recorded in this repository | the `AFRIK_PRODUCTION_SUPABASE_URL` environment variable — no default       |
-| `local`                 | your own `supabase start` stack | `NEXT_PUBLIC_SUPABASE_URL`, which must be `http://127.0.0.1` or `localhost` |
+| Application environment | Supabase project                             | Where the loader reads its URL                                              |
+| ----------------------- | -------------------------------------------- | --------------------------------------------------------------------------- |
+| `recette`               | self-hosted, recette's own stack (ETNI-1958) | `AFRIK_RECETTE_SUPABASE_URL`, checked into `scripts/lib/afrikSyncTarget.ts` |
+| `production`            | not recorded in this repository              | the `AFRIK_PRODUCTION_SUPABASE_URL` environment variable — no default       |
+| `local`                 | your own `supabase start` stack              | `NEXT_PUBLIC_SUPABASE_URL`, which must be `http://127.0.0.1` or `localhost` |
 
 Every Supabase project has exactly one environment and Supabase calls it "production", so that
-label never identifies the application environment. `shmrjtnfbqzceovroqjj`'s dashboard says
-"production" and the project backs **recette**. Read the environment off the `--target` value,
-never off a Supabase dashboard.
+label never identifies the application environment. Read the environment off the `--target`
+value, never off a Supabase dashboard. Recette moved off a hosted project
+(`shmrjtnfbqzceovroqjj`, whose dashboard also said "production" while backing recette) onto its
+own self-hosted stack after a recurring egress-quota restriction with no reset date (ETNI-1958,
+DEC-056). The hosted project is kept only as a rollback path until ETNI-1962 decommissions it.
 
 This distinction used to be wrong in code, and the wrongness was enforced rather than caught:
 `AFRIK_PRODUCTION_SUPABASE_URL` was a checked-in constant holding the recette ref, so
@@ -104,8 +106,8 @@ All three are applied by a human, never auto-applied. Their current state per pr
    For `--target=recette`:
 
    ```env
-   NEXT_PUBLIC_SUPABASE_URL=https://shmrjtnfbqzceovroqjj.supabase.co
-   SUPABASE_SERVICE_ROLE_KEY=<the recette project's service-role key>
+   NEXT_PUBLIC_SUPABASE_URL=https://supabase-recette.ethniafrica.com
+   SUPABASE_SERVICE_ROLE_KEY=<recette's self-hosted service-role key>
    ```
 
    For `--target=production` — both URLs must name the production project, and be identical:
@@ -165,7 +167,7 @@ verification. On failure, keep `dataset/source/afrik/logs/migration_errors_<date
 diagnosis, then restore the pre-sync snapshot if the target is not internally consistent.
 
 `.github/workflows/production-data-sync.yml` runs this same validate → preview → apply sequence
-automatically after a successful OVH production deploy of `main`. If you are loading by
+automatically after a successful production deploy of `main`. If you are loading by
 hand shortly after a deploy, check whether that workflow has already done it — see
 [the automated production sync](#the-automated-production-sync) for the secrets it needs.
 
@@ -239,6 +241,57 @@ stack does not send mail, it captures it at `http://127.0.0.1:54324`.
 
 ---
 
+## Ephemeral database for the three CI gates
+
+The axe live-route audit (`a11y.yml`'s `axe` job), the Lighthouse gate (`lighthouse.yml`'s `gate`
+job) and the Playwright smoke set (`e2e.yml`'s `smoke` job) each start their own throwaway
+database inside the job, seed it with only the entities their own routes render, and discard it
+with the runner (ETNI-1948/REQ-176). None of the three reads the self-hosted recette database, and
+none needs a repository secret — a fork or Dependabot pull request gets the real audit too, not a
+skip.
+
+The composite action `.github/actions/ephemeral-supabase` does the same three things this local
+bootstrap does by hand, unattended: `supabase start` (excluding Studio, storage, realtime, edge
+functions, imgproxy and the analytics/logs stack — nothing a rendered route needs), applies every
+migration the same way `supabase start` always does, then runs `scripts/ci/seedEphemeralDatabase.ts`
+and exports `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` /
+`SUPABASE_SERVICE_ROLE_KEY` to `$GITHUB_ENV` for the job's later steps.
+
+**What gets seeded, and how that list is kept honest.** `scripts/ci/ephemeralSeedManifest.ts`
+derives the entity IDs (language families, peoples, countries) by reading `scripts/a11yRoutes.ts`,
+`.lighthouserc.gate.js` and the `@smoke` e2e specs as text and pattern-matching the route-builder
+calls and raw URLs — never by importing them, the same reason `a11yRoutes.ts` itself does not
+import `a11y-test.ts`. `scripts/ci/__tests__/ephemeralSeedManifest.test.ts` is the gate on that
+list: it re-scans the same three sources with a broader, independent pattern and fails if it finds
+an entity ID the manifest's own extraction missed. Add a gated route naming a **new** entity and
+this test fails until the manifest builder's patterns are widened to catch it — the seed can never
+silently go stale under a route that changed.
+
+`scripts/ci/seedEphemeralDatabase.ts` reuses `migrateAfrikToDatabase.ts`'s own exported
+`upsertLanguageFamilies` / `upsertPeoples` / `upsertCountries`, so a fiche seeded here carries the
+same classification-protection and assertion-writing logic a real sync does — the confidence chip
+on `PPL_WOLOF`'s ephemeral fiche is not a stub. It does **not** reuse that script's orchestration:
+the drift comparison and orphan scan there assume they are reading the whole corpus, and would
+misread a deliberately partial one as thousands of missing rows. Out of scope, on purpose:
+`afrik_languages` and `afrik_people_languages` — none of the three gates' routes render a
+language-specific page or a section that depends on that join; widen the seeder and the manifest
+together if a future gated route does.
+
+**Running it by hand**, to test a manifest or seeder change before opening a pull request:
+
+```bash
+supabase start -x realtime,imgproxy,mailpit,postgres-meta,studio,edge-runtime,logflare,vector,supavisor
+# supabase status -o env prints NEXT_PUBLIC_SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY;
+# export them the same way .env.local would for the full local bootstrap above.
+npx tsx --conditions=react-server scripts/ci/seedEphemeralDatabase.ts
+```
+
+If port `5432` is already bound by another local Postgres on your machine, `[db] port` in
+`supabase/config.toml` is the fix — but revert it before committing; the checked-in value is what
+every contributor's local dev and CI itself expect.
+
+---
+
 ## The automated recette sync
 
 `recette-data-sync.yml` loads the corpus into recette on every push to `recette` that touches
@@ -300,8 +353,8 @@ serving continuous public traffic. Revisit this if the AFRIK service caches ever
 
 ## The automated production sync
 
-The workflow chains off the **OVH production deploy** (`workflow_run` on "Deploy Production
-(OVH)"), runs `--target=production`, then POSTs a cache revalidation to
+The workflow chains off the **production deploy** (`workflow_run` on "Deploy Production"),
+runs `--target=production`, then POSTs a cache revalidation to
 `https://ethniafrica.com`. It used to key on a Vercel _Production_ deployment of `main`;
 production left Vercel, so `vercel[bot]` will never create such a deployment again and the
 workflow would simply have stopped running, silently. Note that `workflow_run` only fires for a
@@ -465,7 +518,7 @@ prune: `assertions`, `fiche_revisions`, `name_records`, `quiz_questions`, `flags
 and `oral_narratives`. The public readers join `afrik_peoples`, so nothing stale is served, but
 the rows are dead weight and their counts drift the audits. Build the id list from the ledger
 and run this against the same target, in the SQL editor for recette and through the SSH tunnel
-`deploy-production.yml` uses for production (see `docs/runbooks/ovh-production-deploy.md`):
+`deploy-production.yml` uses for production (see `docs/runbooks/production-deploy.md`):
 
 ```bash
 jq -r '[.[] | select(.decision != "kept-distinct") | .retiredId] | map("('" + . + "')") | join(", ")' \

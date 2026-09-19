@@ -9,7 +9,15 @@
   "glottocode": "bert1248",
   "nameFr": "Berta",
   "nameEn": "Berta",
-  "alternateNames": [],
+  "alternateNames": [
+    "Barta",
+    "Beni Shangul",
+    "Bertha",
+    "Burta",
+    "Jebelawi",
+    "Wetawit"
+  ],
+  "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_NILOSAHARIENNE",
   "peoples": [],

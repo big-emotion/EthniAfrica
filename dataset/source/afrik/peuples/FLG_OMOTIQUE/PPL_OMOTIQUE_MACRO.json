@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Peuples Omotiques (macro-groupe)",
-      "selfAppellation": "Appellations multiples selon les groupes : Bench (Nao), Dizi (Maji), Me'en (Mekan), Kafa (Kafficho), Wolaita, Gamo, Dawro, Maale (Male), Sheko, Hamer-Banna, Aari, Dime, et autres",
+      "selfAppellation": null,
       "exonyms": [
         "Langues omotiques",
         "West Cushitic (dénomination obsolète de Greenberg)",
@@ -15,7 +15,7 @@
       ],
       "originOfExonyms": "Le terme Omotic a été proposé par Harold C. Fleming en 1969, en remplacement de la désignation West Cushitic utilisée jusqu'à Greenberg (1963), pour désigner un groupe de langues d'Ethiopie du Sud-Ouest jugé suffisamment distinct pour constituer une branche indépendante de l'afro-asiatique. La dénomination Omotic fait référence au fleuve Omo, au bord duquel vivent la plupart de ces peuples. La proposition fut en grande partie acceptée après les travaux de Bender (1971).",
       "whyProblematic": "Le terme Omotique est une construction linguistique et non une identité partagée par les peuples ainsi classés. L'homogénéité interne de la famille omotique est contestée : certains linguistes (Güldemann) estiment que les langues Mao et Aroid (Sud-Omotique) n'appartiennent pas à l'afro-asiatique et constituent des familles distinctes influencées par les contacts. L'inclusion de groupes comme les Me'en (Surmique, Nilo-Saharien) dans des listes omotiques est une erreur de classification fréquente.",
-      "contemporaryUsage": "Le terme Omotic est utilisé exclusivement dans la littérature académique et ne correspond à aucune identité collective partagée par les peuples concernés. Chaque groupe se désigne par son propre ethnonyme. L'administration éthiopienne reconnaît individuellement les groupes omotiques dans ses recensements.",
+      "contemporaryUsage": "Le terme Omotic est utilisé exclusivement dans la littérature académique et ne correspond à aucune identité collective partagée par les peuples concernés. Chaque groupe se désigne par son propre ethnonyme. L'administration éthiopienne reconnaît individuellement les groupes omotiques dans ses recensements. Parmi eux : Bench (Nao), Dizi (Maji), Me'en (Mekan), Kafa (Kafficho), Wolaita, Gamo, Dawro, Maale (Male), Sheko, Hamer-Banna, Aari et Dime.",
       "linguisticFamily": "FLG_OMOTIQUE",
       "ethnoLinguisticGroup": "Famille afro-asiatique — branches Damotique (Nord-Omotique), Dizoïde (Majoid), Mao, et Aroïde (Sud-Omotique)",
       "historicalRegion": "Ethiopie du Sud-Ouest — vallée de l'Omo, hautes terres du SNNPR (Southern Nations, Nationalities and Peoples' Region), zones Bench Sheko, South Omo (Debub Omo), Wolaita, Dawro, Gamo Gofa, Kefa et Sheka",

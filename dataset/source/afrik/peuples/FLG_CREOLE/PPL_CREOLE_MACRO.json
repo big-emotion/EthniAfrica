@@ -7,11 +7,11 @@
   "content": {
     "appellations": {
       "mainName": "Peuples Créoles (macro-groupe)",
-      "selfAppellation": "Variées selon les groupes : Kreol, Krio, Crioulo, Seselwa",
+      "selfAppellation": null,
       "exonyms": ["Creoles", "Crioulos", "Créoles africains"],
       "originOfExonyms": "Le terme créole vient du portugais crioulo, désignant à l'origine une personne née dans la colonie par opposition à celle venue de la métropole. Il s'est ensuite appliqué aux langues et aux peuples issus des contacts entre Européens, Africains et autres populations dans les territoires coloniaux.",
       "whyProblematic": "Le terme est polysémique et varie selon les régions : à la Réunion il désigne tout habitant né sur l'île, à Maurice il identifie les descendants d'esclaves africains chrétiens, en Sierra Leone il désigne un groupe ethnique précis. Cette variabilité peut créer des confusions identitaires et politiques.",
-      "contemporaryUsage": "Le terme est aujourd'hui revendiqué comme marqueur identitaire positif dans les communautés créoles de l'océan Indien et d'Afrique de l'Ouest. Des festivals comme le Festival Kreol aux Seychelles et le Carnaval mauricien valorisent la culture créole contemporaine.",
+      "contemporaryUsage": "Le terme est aujourd'hui revendiqué comme marqueur identitaire positif dans les communautés créoles de l'océan Indien et d'Afrique de l'Ouest. Des festivals comme le Festival Kreol aux Seychelles et le Carnaval mauricien valorisent la culture créole contemporaine. Il n'existe pas d'auto-appellation collective : chaque groupe se nomme dans sa propre langue, Kreol, Krio, Crioulo ou Seselwa.",
       "linguisticFamily": "FLG_CREOLE",
       "ethnoLinguisticGroup": "Créole (macro-groupe : afro-français, afro-portugais, afro-anglais)",
       "historicalRegion": "Zones côtières d'Afrique de l'Ouest, îles atlantiques (Cap-Vert, São Tomé-et-Príncipe), îles de l'océan Indien (Maurice, Seychelles, Réunion)",

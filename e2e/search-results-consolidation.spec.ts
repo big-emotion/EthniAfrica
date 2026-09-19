@@ -12,25 +12,22 @@ test.skip(
 );
 
 /**
- * The two SERP rules ETNI-1796 (search results consolidation) calls out as
- * needing a Playwright assertion rather than a unit test: they are about the
- * actually-rendered page (computed style, font scale, breakpoint layout),
- * which happy-dom cannot see. The unit suites (RecherchePageContent.test.tsx,
- * DominantAnswerPanel.test.tsx) already cover the branching logic — this
- * spec only re-checks the two rendered-page facts on top of a live corpus.
+ * The rendered-page rules behind REQ-178 and DEC-057: the result count owns
+ * the page title, while `NameAnswer` answers the reader's name without
+ * promoting one form or moving the answer into a side rail. Unit tests cover
+ * the branching grammar; this spec covers its live-corpus and breakpoint
+ * layout contract.
  */
 
 const SERP_URL = getLocalizedRoute(LOCALE, "search");
 
-// "Yoruba" is an exact-name match in the AFRIK corpus (dataset/source/afrik/
-// peuples/FLG_BENOUECONGO/PPL_YORUBA.json) whose autonym string
-// ("Yoruba (Yoruba eniyan)") differs from its main name — the one condition
-// `selectPivot` needs to promote a head result and the one `RecherchePageContent`
-// needs to render the exonym span at all.
-const DOMINANT_QUERY = "Yoruba";
+// "Yoruba" is an exact name shared by a people and a language in the live
+// AFRIK corpus. The page must keep both subjects and ask which one the reader
+// means instead of promoting either result.
+const DISAMBIGUATED_QUERY = "Yoruba";
 // Long enough to be well past the corpus, short enough to stay a single
-// query — guaranteed zero hits, so `selectPivot` never gets a runner-up to
-// compare against and the page falls back to the result-count head.
+// query — guaranteed zero hits, so the page must admit that the atlas does not
+// know the name instead of presenting a zero-result count as its answer.
 const NO_MATCH_QUERY = "zzzznonexistentqueryxyz12345";
 
 test.beforeEach(async ({ page }) => {
@@ -57,7 +54,7 @@ async function noHorizontalScroll(page: import("@playwright/test").Page) {
   );
 }
 
-test.describe("SERP title rule (ETNI-1796)", () => {
+test.describe("SERP title and answer rule (REQ-178, DEC-057)", () => {
   // @req REQ-124
   test("shows the brand title before any query is run", async ({ page }) => {
     await page.goto(SERP_URL);
@@ -67,126 +64,72 @@ test.describe("SERP title rule (ETNI-1796)", () => {
   });
 
   // @req REQ-124
-  test("promotes the autonym to h1 with the exonym one rung below, inside the same element", async ({
+  test("keeps the result count in h1 and disambiguates exact subjects below it", async ({
     page,
   }) => {
-    await page.goto(`${SERP_URL}?q=${encodeURIComponent(DOMINANT_QUERY)}`);
-    await expect(page.getByTestId("search-pivot")).toBeVisible();
-
-    // Exactly one h1 on the page — the pivot's heading is the page's only
-    // title, not an addition next to a generic "Recherche" one.
+    await page.goto(`${SERP_URL}?q=${encodeURIComponent(DISAMBIGUATED_QUERY)}`);
     const headings = page.getByRole("heading", { level: 1 });
     await expect(headings).toHaveCount(1);
-    const h1 = headings.first();
+    await expect(headings.first()).toContainText("résultat");
+    await expect(headings.first()).toContainText(DISAMBIGUATED_QUERY);
 
-    // AutonymExonymHeading's hero variant renders the autonym as the h1's
-    // first <span> and, when an exonym exists, the exonym as its second —
-    // no `lang` attribute is guaranteed here since RecherchePageContent
-    // never passes an ISO code to this particular heading, so position
-    // rather than `[lang]` is what locates each name.
-    const spans = h1.locator("span");
-    await expect(spans).toHaveCount(2);
-    const autonymHandle = spans.nth(0);
-    const autonymText = (await autonymHandle.textContent())?.trim() ?? "";
-    expect(autonymText.toLowerCase()).toContain("yoruba");
-
-    // The exonym is a plain span inside the h1 — not a second heading
-    // element — carrying the fiche's main name, sized one typographic rung
-    // below the autonym rather than promoted to its own <h2>.
-    const exonymHandle = spans.nth(1);
-    await expect(exonymHandle).toBeVisible();
-    const [exonymTag, exonymFontSize, autonymFontSize] = await Promise.all([
-      exonymHandle.evaluate((el) => el.tagName),
-      exonymHandle.evaluate((el) => parseFloat(getComputedStyle(el).fontSize)),
-      autonymHandle.evaluate((el) => parseFloat(getComputedStyle(el).fontSize)),
-    ]);
-    expect(exonymTag).toBe("SPAN");
-    expect(exonymFontSize).toBeLessThan(autonymFontSize);
+    const answer = page.getByTestId("name-answer-disambiguation");
+    await expect(answer).toBeVisible();
+    await expect(answer.getByRole("heading", { level: 2 }).first()).toHaveText(
+      "Lequel cherchez-vous ?"
+    );
+    await expect(
+      answer.getByRole("link", { name: DISAMBIGUATED_QUERY, exact: true })
+    ).toHaveCount(2);
+    await expect(page.getByTestId("search-pivot")).toHaveCount(0);
   });
 
   // @req REQ-124
-  test("falls back to the result-count text when no dominant answer emerges", async ({
+  test("keeps the default title and admits when the atlas does not know the name", async ({
     page,
   }) => {
     await page.goto(`${SERP_URL}?q=${encodeURIComponent(NO_MATCH_QUERY)}`);
     const heading = page.getByRole("heading", { level: 1 });
-    await expect(heading).toContainText("résultat");
-    await expect(heading).toContainText(NO_MATCH_QUERY);
-    await expect(page.getByTestId("search-pivot")).toHaveCount(0);
+    await expect(heading).toHaveText("Recherche");
+    await expect(page.getByTestId("name-answer-unknown")).toBeVisible();
   });
 });
 
-test.describe("SERP dominant-answer panel rule (ETNI-1796)", () => {
-  // @req REQ-124
-  test("renders beside the grid, not pinned with position: sticky, above the tablet breakpoint", async ({
-    page,
-  }) => {
-    await page.setViewportSize({ width: 1440, height: 900 });
-    await page.goto(`${SERP_URL}?q=${encodeURIComponent(DOMINANT_QUERY)}`);
-    await expect(page.getByTestId("search-pivot")).toBeVisible();
+test.describe("SERP one-column answer rule (REQ-178, DEC-057)", () => {
+  for (const viewport of [
+    { name: "mobile", width: 430, height: 812 },
+    { name: "tablet", width: 720, height: 1024 },
+    { name: "desktop", width: 1440, height: 900 },
+  ]) {
+    // @req REQ-178
+    test(`keeps the answer in the result column on ${viewport.name}`, async ({
+      page,
+    }) => {
+      await page.setViewportSize(viewport);
+      await page.goto(
+        `${SERP_URL}?q=${encodeURIComponent(DISAMBIGUATED_QUERY)}`
+      );
 
-    const panel = page.getByTestId("dominant-answer-panel-wrapper");
-    await expect(panel).toBeVisible();
+      const layout = page.getByTestId("search-results-layout");
+      const answer = page.getByTestId("name-answer-disambiguation");
+      await expect(layout).toBeVisible();
+      await expect(answer).toBeVisible();
 
-    const main = page.getByTestId("search-results-main");
-    const [panelBox, mainBox, position] = await Promise.all([
-      panel.boundingBox(),
-      main.boundingBox(),
-      panel.evaluate((el) => getComputedStyle(el).position),
-    ]);
-    expect(panelBox).not.toBeNull();
-    expect(mainBox).not.toBeNull();
-    // Beside the grid, not below it: the panel starts to the right of the
-    // main column rather than under it.
-    expect(panelBox!.x).toBeGreaterThanOrEqual(mainBox!.x + mainBox!.width);
-    expect(position).not.toBe("sticky");
-
-    expect(await noHorizontalScroll(page)).toBe(true);
-  });
-
-  // @req REQ-124
-  test("stays visible at exactly the 720px tablet breakpoint", async ({
-    page,
-  }) => {
-    await page.setViewportSize({ width: 720, height: 1024 });
-    await page.goto(`${SERP_URL}?q=${encodeURIComponent(DOMINANT_QUERY)}`);
-    await expect(page.getByTestId("search-pivot")).toBeVisible();
-
-    const panel = page.getByTestId("dominant-answer-panel-wrapper");
-    await expect(panel).toBeVisible();
-    expect(
-      await panel.evaluate((el) => getComputedStyle(el).position)
-    ).not.toBe("sticky");
-    expect(await noHorizontalScroll(page)).toBe(true);
-  });
-
-  // Atlas charter §5: one component, two anchorings. Below 760px the panel
-  // stays in flow under the results as a bottom sheet — it used to be hidden
-  // there, which dropped the facts from the phone entirely, and this spec
-  // asserted that hiding for as long as it shipped.
-  // @req REQ-124
-  test("keeps the panel in flow under the results below the tablet breakpoint", async ({
-    page,
-  }) => {
-    await page.setViewportSize({ width: 430, height: 812 });
-    await page.goto(`${SERP_URL}?q=${encodeURIComponent(DOMINANT_QUERY)}`);
-    await expect(page.getByTestId("search-pivot")).toBeVisible();
-
-    const panel = page.getByTestId("dominant-answer-panel-wrapper");
-    await expect(panel).toBeVisible();
-
-    const main = page.getByTestId("search-results-main");
-    const [panelBox, mainBox, position] = await Promise.all([
-      panel.boundingBox(),
-      main.boundingBox(),
-      panel.evaluate((el) => getComputedStyle(el).position),
-    ]);
-    expect(panelBox).not.toBeNull();
-    expect(mainBox).not.toBeNull();
-    expect(panelBox!.y).toBeGreaterThanOrEqual(
-      mainBox!.y + mainBox!.height - 1
-    );
-    expect(position).not.toBe("sticky");
-    expect(await noHorizontalScroll(page)).toBe(true);
-  });
+      const [layoutBox, answerBox, position] = await Promise.all([
+        layout.boundingBox(),
+        answer.boundingBox(),
+        answer.evaluate((element) => getComputedStyle(element).position),
+      ]);
+      expect(layoutBox).not.toBeNull();
+      expect(answerBox).not.toBeNull();
+      expect(Math.abs(answerBox!.x - layoutBox!.x)).toBeLessThanOrEqual(1);
+      expect(
+        Math.abs(
+          answerBox!.x + answerBox!.width - (layoutBox!.x + layoutBox!.width)
+        )
+      ).toBeLessThanOrEqual(1);
+      expect(position).not.toBe("sticky");
+      expect(await noHorizontalScroll(page)).toBe(true);
+    });
+  }
 });

@@ -10,6 +10,7 @@
   "nameFr": "Otetela",
   "nameEn": "Tetela",
   "alternateNames": ["Kitetela", "Sungu"],
+  "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
   "peoples": [{ "name": "Tetela", "peopleId": "PPL_TETELA" }],

@@ -9,7 +9,17 @@
   "glottocode": "mand1436",
   "nameFr": "Mandinka",
   "nameEn": "Mandinka",
-  "alternateNames": [],
+  "alternateNames": [
+    "Mandingue",
+    "Mandinga",
+    "Mandingo",
+    "Mandinque",
+    "Mandé",
+    "Manding",
+    "Mande",
+    "Socé"
+  ],
+  "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_MANDE",
   "peoples": [

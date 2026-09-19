@@ -6,9 +6,16 @@
   "content": {
     "decolonialHeader": {
       "whyProblematic": " Termes coloniaux péjoratifs appliqués aux créoles africains : - Les langues créoles africaines ont longtemps été dévalorisées par les autorités coloniales, exclues de l'éducation formelle et considérées comme des \"baragouins\" ou \"jargons\", niant leur statut de langues à part entière avec leurs propres structures grammaticales. - L'usage du terme \"créole\" lui-même, issu d'un contexte colonial (criollo/crioulo désignant initialement les personnes nées dans les colonies), peut être perçu comme portant l'héritage de classifications raciales coloniales.",
-      "selfAppellation": "Creole (African Creoles)",
+      "selfAppellation": null,
       "contemporaryUsage": " Les créoles d'Afrique sont des langues de contact afro-européennes, devenues langues maternelles et nationales dans plusieurs pays. Plusieurs créoles sont langues officielles (Cap-Vert, Seychelles) ou co-officielles (Maurice).",
-      "historicalAppellations": "Creole (African Creoles)",
+      "historicalAppellations": [
+        "Pidgins et créoles",
+        "langues de nègres",
+        "langues d'esclaves",
+        "nigger Portuguese",
+        "petit-nègre",
+        "sabir"
+      ],
       "originOfHistoricalTerm": " Le terme \"créole\" provient de l'espagnol *criollo* et du portugais *crioulo*, eux-mêmes dérivés du latin *creare* signifiant « élever » ou « nourrir ». Application aux langues créoles d'Afrique : En Afrique, le terme \"créole\" est utilisé principalement pour désigner des langues nées du contact entre langues européennes (portugais, français, anglais) et langues africaines dans des contextes de commerce, de comptoirs coloniaux et de traite transatlantique. Les créoles africains les plus anciens sont les créoles à base portugaise, attestés dès le XVIIe siècle dans les comptoirs portugais d'Afrique de l'Ouest (Cap-Vert, Guinée-Bissau). Le terme *Kriolu* / *Kriol* (du portugais *crioulo*) est l'auto-appellation des locuteurs cap-verdiens et bissau-guinéens depuis cette époque. Contexte historique africain : Les familles linguistiques créoles d'Afrique sont nées dans des contextes : - d'esclavage transatlantique (XVIe-XIXe siècle), - de domination coloniale portugaise, française et britannique, - de contacts forcés entre langues africaines (bantoues, mandé, atlantiques) et langues européennes (portugais, français, anglais)."
     },
     "generalInfo": {

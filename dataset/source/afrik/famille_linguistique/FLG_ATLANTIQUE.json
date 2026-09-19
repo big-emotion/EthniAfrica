@@ -6,9 +6,13 @@
   "content": {
     "decolonialHeader": {
       "whyProblematic": " L'appellation est critiquée car elle est purement géographique et ne garantit pas une unité génétique cohérente. Historiquement, le terme \"West Atlantic\" a souvent servi de catégorie résiduelle pour classer les langues de la côte ouest-africaine qui ne correspondaient pas aux familles Mandé ou Kwa, créant des confusions avec d'autres groupes côtiers comme les langues Krou (Kru) ou les langues lagunaires. De plus, la diversité interne est telle que certains linguistes (comme Dalby) ont remis en question l'existence de cette famille comme une unité génétique valide, la considérant parfois davantage comme une aire de convergence linguistique. vers Aujourd'hui, le terme est conservé par convention scientifique pour désigner ce regroupement géographique spécifique.",
-      "selfAppellation": "Atlantic (anciennement West Atlantic)",
+      "selfAppellation": null,
       "contemporaryUsage": " Regroupe les langues du Sénégal, Gambie, Guinée-Bissau et Guinée (Fula, Wolof, Serer, Diola, Temne, etc.).",
-      "historicalAppellations": "Atlantic (anciennement West Atlantic)",
+      "historicalAppellations": [
+        "Langues atlantique-occidentales",
+        "West Atlantic",
+        "langues de la côte de Guinée"
+      ],
       "originOfHistoricalTerm": " Le terme est purement géographique, créé par les linguistes (Koelle, puis Westermann et Greenberg) pour désigner les langues \"non-mandé\" de la côte ouest-africaine (Sénégal à Libéria)."
     },
     "generalInfo": {

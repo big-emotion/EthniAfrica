@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Peuples Mandé (macro-groupe)",
-      "selfAppellation": "Variées selon les groupes : Maninka (Guinée, Mali), Bambara (Mali), Dioula (Burkina Faso, Côte d'Ivoire), Mandinka (Gambie, Sénégal), Soninké (Mali, Mauritanie), Kpelle (Libéria, Guinée), Mende (Sierra Leone)",
+      "selfAppellation": null,
       "exonyms": [
         "Mandé",
         "Mande",
@@ -17,7 +17,7 @@
       ],
       "originOfExonyms": "Le terme Mandé (ou Mande) désigne une famille de langues et un ensemble de peuples liés par une origine commune dans la région du Manden (actuel Mali méridional et Guinée nord-orientale). Mandingo est la version anglophone utilisée par les colonisateurs britanniques pour désigner l'ensemble des peuples mandé. Mandingue est l'équivalent français colonial. Manding est une forme pan-mandé couramment utilisée dans la littérature académique pour les langues du sous-groupe Manding (Bambara, Malinké, Dioula, Mandinka).",
       "whyProblematic": "Le terme Mandé recouvre une réalité linguistique (famille de langues) et une réalité ethno-culturelle (peuples partageant des origines communes) qui ne se superposent pas parfaitement. Certains groupes classifiés comme mandé (ex. Kpelle, Mende) diffèrent culturellement des groupes mandé du cœur sahélien (Bambara, Malinké). De plus, les frontières entre Mandé et d'autres familles (Gur, Kwa) ne sont pas toujours claires dans les sources populaires.",
-      "contemporaryUsage": "Mandé est le terme académique standardisé en linguistique et en anthropologie pour désigner cette famille de langues et les peuples associés. L'écriture N'Ko (créée en 1949 par Solomana Kante) constitue une tentative d'unification culturelle pan-mandé, utilisée notamment en Guinée, au Mali et au Burkina Faso.",
+      "contemporaryUsage": "Mandé est le terme académique standardisé en linguistique et en anthropologie pour désigner cette famille de langues et les peuples associés. L'écriture N'Ko (créée en 1949 par Solomana Kante) constitue une tentative d'unification culturelle pan-mandé, utilisée notamment en Guinée, au Mali et au Burkina Faso. Il n'existe pas d'auto-appellation collective : chaque groupe se nomme par son propre ethnonyme, Maninka (Guinée, Mali), Bambara (Mali), Dioula (Burkina Faso, Côte d'Ivoire), Mandinka (Gambie, Sénégal), Soninké (Mali, Mauritanie), Kpelle (Libéria, Guinée) ou Mende (Sierra Leone).",
       "linguisticFamily": "FLG_MANDE",
       "ethnoLinguisticGroup": "Mandé (macro-groupe, comprenant Mandé occidental et Mandé oriental)",
       "historicalRegion": "Sahel occidental, savane soudanienne et zones forestières de l'Afrique de l'Ouest : du Sénégal et de la Mauritanie à l'ouest jusqu'au Nigeria à l'est, de la Mauritanie au nord à la Côte d'Ivoire et au Libéria au sud",

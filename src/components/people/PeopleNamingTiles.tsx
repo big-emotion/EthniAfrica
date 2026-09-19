@@ -4,6 +4,7 @@ import { NameSpellingHistory } from "@/components/names/NameSpellingHistory";
 import { ConfidenceChip } from "@/components/source-transparency/ConfidenceChip";
 import { DoctrineLinkCard } from "@/components/source-transparency/DoctrineLinkCard";
 import { AutonymExonymHeading } from "@/components/ui/AutonymExonymHeading";
+import { readerFacingProse } from "@/lib/afrik/readerFacingProse";
 import { splitLeadSentence } from "@/lib/fiche/prose";
 import { peopleCopy } from "@/lib/i18n/copy/people";
 import { FALLBACK_LOCALE } from "@/lib/locale";
@@ -142,7 +143,10 @@ export function PeopleNamingTiles({
     .join(" ");
   // A record that only repeats the autonym has nothing to fold behind it.
   const endonymBody = endonyms.length > 0 && !sameName(endonymText, autonym);
-  const usage = contemporaryUsage || whyProblematic;
+  const originProse = readerFacingProse(originOfExonyms);
+  const problematicProse = readerFacingProse(whyProblematic);
+  const contemporaryProse = readerFacingProse(contemporaryUsage);
+  const usage = contemporaryProse || problematicProse;
 
   return (
     <FicheTiles>
@@ -217,14 +221,14 @@ export function PeopleNamingTiles({
         </FicheTile>
       )}
 
-      {originOfExonyms && (
+      {originProse && (
         <FicheTile
           language={language}
           title={copy.origin}
-          closedFact={splitLeadSentence(originOfExonyms).lead}
+          closedFact={splitLeadSentence(originProse).lead}
           bodyRestatesPreview
         >
-          <p className="afh-tile-prose">{originOfExonyms}</p>
+          <p className="afh-tile-prose">{originProse}</p>
         </FicheTile>
       )}
 
@@ -236,9 +240,9 @@ export function PeopleNamingTiles({
           bodyRestatesPreview
         >
           <p className="afh-tile-prose">{usage}</p>
-          {contemporaryUsage && whyProblematic ? (
+          {contemporaryProse && problematicProse ? (
             <p>
-              <strong>{copy.problematic}</strong> {whyProblematic}
+              <strong>{copy.problematic}</strong> {problematicProse}
             </p>
           ) : null}
         </FicheTile>

@@ -5,6 +5,8 @@ import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
 import { colonizationCopy } from "@/lib/i18n/copy/colonization";
 import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import { chromeCopy } from "@/lib/i18n/copy/chrome";
+import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
+import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { commonCopy } from "@/lib/i18n/copy/common";
 import { consentCopy } from "@/lib/i18n/copy/consent";
 import { compareCopy } from "@/lib/i18n/copy/compare";
@@ -59,6 +61,8 @@ export const COPY_MODULES = {
   atlas: atlasCopy,
   common: commonCopy,
   chrome: chromeCopy,
+  homeHero: homeHeroCopy,
+  nameAnswer: nameAnswerCopy,
   consent: consentCopy,
   compare: compareCopy,
   contact: contactCopy,

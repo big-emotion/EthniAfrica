@@ -12,6 +12,7 @@
  * impossible rather than merely fixed.
  */
 
+import { readNaming } from "@/lib/search/naming";
 import type {
   SearchEntityType,
   SearchLead,
@@ -154,7 +155,7 @@ function isHttpUrl(value: string): boolean {
  * `content.peoples`/`content.countries` (`modele-nom-patronyme.json`), which
  * the search RPC forwards untouched — the same posture as `appellationsOf`
  * above. A country counts only when the fiche marks it `attested`, not
- * `supposed`: `DominantAnswerPanel` (ETNI-1806) must not present a guess as
+ * `supposed`: the result page (ETNI-1806) must not present a guess as
  * a fact.
  */
 function patronymeAssociationsOf(content: unknown): {
@@ -278,6 +279,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
   return [
     ...asRows(peoples).map((row): SearchResult => ({
       type: "people",
+      naming: readNaming("people", row.content, row),
       id: String(row.id),
       name: String(row.nameMain ?? ""),
       languageFamilyId:
@@ -297,6 +299,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     })),
     ...asRows(countries).map((row): SearchResult => ({
       type: "country",
+      naming: readNaming("country", row.content, row),
       id: String(row.id),
       name: String(row.nameFr ?? ""),
       nameEn: englishNameOf(row.nameEn),
@@ -309,6 +312,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     })),
     ...asRows(families).map((row): SearchResult => ({
       type: "languageFamily",
+      naming: readNaming("languageFamily", row.content, row),
       id: String(row.id),
       name: String(row.nameFr ?? ""),
       nameEn: englishNameOf(row.nameEn),
@@ -334,6 +338,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     // country or family must still return something.
     ...asRows(patronymes).map((row): SearchResult => ({
       type: "patronyme",
+      naming: readNaming("patronyme", row.content, row),
       id: String(row.id),
       name: String(row.nameMain ?? ""),
       nameSystem: row.nameSystem as SearchResult["nameSystem"],
@@ -350,6 +355,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     // only through the peoples that mention it.
     ...asRows(languages).map((row): SearchResult => ({
       type: "language",
+      naming: readNaming("language", row.content, row),
       id: String(row.id),
       name: String(row.name ?? ""),
       nameEn: englishNameOf(row.nameEn),

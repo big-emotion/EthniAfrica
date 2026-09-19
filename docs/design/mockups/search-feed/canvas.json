@@ -1,0 +1,814 @@
+{
+  "v": 3,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-09-19T07:34:38Z"
+  },
+  "title": "Fil des noms",
+  "launch": {
+    "view": "canvas"
+  },
+  "pages": [],
+  "boards": {
+    "Mande.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 430,
+      "h": 3730,
+      "title": "Mandé — le nom cherché vient du dehors",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "Peul.dc.html": {
+      "x": 510,
+      "y": 0,
+      "w": 430,
+      "h": 3040,
+      "title": "Peul — sept noms extérieurs, dont un péjoratif",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "Fang.dc.html": {
+      "x": 1020,
+      "y": 0,
+      "w": 430,
+      "h": 3340,
+      "title": "Fang — le cas ordinaire, aucune forme qualifiée",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "Bassa.dc.html": {
+      "x": 1530,
+      "y": 0,
+      "w": 430,
+      "h": 3550,
+      "title": "Bassa — un nom, trois peuples sans parenté",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "Ekpeye.dc.html": {
+      "x": 2040,
+      "y": 0,
+      "w": 430,
+      "h": 2750,
+      "title": "Ekpeye — le cas pauvre, silences déclarés",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "Nigeria.dc.html": {
+      "x": 2550,
+      "y": 0,
+      "w": 430,
+      "h": 3480,
+      "title": "Nigeria — un pays nommé dans un journal",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "Lingala.dc.html": {
+      "x": 3060,
+      "y": 0,
+      "w": 430,
+      "h": 3230,
+      "title": "Lingala — un nom de missionnaires, une langue plus ancienne",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "Traore.dc.html": {
+      "x": 3570,
+      "y": 0,
+      "w": 430,
+      "h": 3460,
+      "title": "Traoré — un nom de clan, une transcription coloniale",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "Introuvable.dc.html": {
+      "x": 4080,
+      "y": 0,
+      "w": 430,
+      "h": 1690,
+      "title": "Introuvable — une faute de frappe mène au bon article",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "Inconnu.dc.html": {
+      "x": 4590,
+      "y": 0,
+      "w": 430,
+      "h": 1250,
+      "title": "Inconnu — un nom que l'atlas ne connaît pas",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "MandeNuit.dc.html": {
+      "x": 0,
+      "y": 4150,
+      "w": 430,
+      "h": 3730,
+      "title": "Mandé — mobile, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "PeulNuit.dc.html": {
+      "x": 510,
+      "y": 4150,
+      "w": 430,
+      "h": 3040,
+      "title": "Peul — mobile, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "FangNuit.dc.html": {
+      "x": 1020,
+      "y": 4150,
+      "w": 430,
+      "h": 3340,
+      "title": "Fang — mobile, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "BassaNuit.dc.html": {
+      "x": 1530,
+      "y": 4150,
+      "w": 430,
+      "h": 3550,
+      "title": "Bassa — mobile, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "EkpeyeNuit.dc.html": {
+      "x": 2040,
+      "y": 4150,
+      "w": 430,
+      "h": 2750,
+      "title": "Ekpeye — mobile, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "NigeriaNuit.dc.html": {
+      "x": 2550,
+      "y": 4150,
+      "w": 430,
+      "h": 3480,
+      "title": "Nigeria — mobile, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "LingalaNuit.dc.html": {
+      "x": 3060,
+      "y": 4150,
+      "w": 430,
+      "h": 3230,
+      "title": "Lingala — mobile, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "TraoreNuit.dc.html": {
+      "x": 3570,
+      "y": 4150,
+      "w": 430,
+      "h": 3460,
+      "title": "Traoré — mobile, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "IntrouvableNuit.dc.html": {
+      "x": 4080,
+      "y": 4150,
+      "w": 430,
+      "h": 1690,
+      "title": "Introuvable — mobile, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "InconnuNuit.dc.html": {
+      "x": 4590,
+      "y": 4150,
+      "w": 430,
+      "h": 1250,
+      "title": "Inconnu — mobile, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "MandeDesktop.dc.html": {
+      "x": 0,
+      "y": 8300,
+      "w": 1280,
+      "h": 2720,
+      "title": "Mandé — desktop 1280",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "PeulDesktop.dc.html": {
+      "x": 1360,
+      "y": 8300,
+      "w": 1280,
+      "h": 2690,
+      "title": "Peul — desktop 1280",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "FangDesktop.dc.html": {
+      "x": 2720,
+      "y": 8300,
+      "w": 1280,
+      "h": 2810,
+      "title": "Fang — desktop 1280",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "BassaDesktop.dc.html": {
+      "x": 4080,
+      "y": 8300,
+      "w": 1280,
+      "h": 2240,
+      "title": "Bassa — desktop 1280",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "EkpeyeDesktop.dc.html": {
+      "x": 5440,
+      "y": 8300,
+      "w": 1280,
+      "h": 2810,
+      "title": "Ekpeye — desktop 1280",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "NigeriaDesktop.dc.html": {
+      "x": 6800,
+      "y": 8300,
+      "w": 1280,
+      "h": 2550,
+      "title": "Nigeria — desktop 1280",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "LingalaDesktop.dc.html": {
+      "x": 8160,
+      "y": 8300,
+      "w": 1280,
+      "h": 2460,
+      "title": "Lingala — desktop 1280",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "TraoreDesktop.dc.html": {
+      "x": 9520,
+      "y": 8300,
+      "w": 1280,
+      "h": 2480,
+      "title": "Traoré — desktop 1280",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "IntrouvableDesktop.dc.html": {
+      "x": 10880,
+      "y": 8300,
+      "w": 1280,
+      "h": 1730,
+      "title": "Introuvable — desktop 1280",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "InconnuDesktop.dc.html": {
+      "x": 12240,
+      "y": 8300,
+      "w": 1280,
+      "h": 1290,
+      "title": "Inconnu — desktop 1280",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "MandeDesktopNuit.dc.html": {
+      "x": 0,
+      "y": 11530,
+      "w": 1280,
+      "h": 2720,
+      "title": "Mandé — desktop 1280, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "PeulDesktopNuit.dc.html": {
+      "x": 1360,
+      "y": 11530,
+      "w": 1280,
+      "h": 2690,
+      "title": "Peul — desktop 1280, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "FangDesktopNuit.dc.html": {
+      "x": 2720,
+      "y": 11530,
+      "w": 1280,
+      "h": 2810,
+      "title": "Fang — desktop 1280, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "BassaDesktopNuit.dc.html": {
+      "x": 4080,
+      "y": 11530,
+      "w": 1280,
+      "h": 2240,
+      "title": "Bassa — desktop 1280, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "EkpeyeDesktopNuit.dc.html": {
+      "x": 5440,
+      "y": 11530,
+      "w": 1280,
+      "h": 2810,
+      "title": "Ekpeye — desktop 1280, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "NigeriaDesktopNuit.dc.html": {
+      "x": 6800,
+      "y": 11530,
+      "w": 1280,
+      "h": 2550,
+      "title": "Nigeria — desktop 1280, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "LingalaDesktopNuit.dc.html": {
+      "x": 8160,
+      "y": 11530,
+      "w": 1280,
+      "h": 2460,
+      "title": "Lingala — desktop 1280, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "TraoreDesktopNuit.dc.html": {
+      "x": 9520,
+      "y": 11530,
+      "w": 1280,
+      "h": 2480,
+      "title": "Traoré — desktop 1280, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "IntrouvableDesktopNuit.dc.html": {
+      "x": 10880,
+      "y": 11530,
+      "w": 1280,
+      "h": 1730,
+      "title": "Introuvable — desktop 1280, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    },
+    "InconnuDesktopNuit.dc.html": {
+      "x": 12240,
+      "y": 11530,
+      "w": 1280,
+      "h": 1290,
+      "title": "Inconnu — desktop 1280, nuit",
+      "guides": [
+        {
+          "kind": "rows",
+          "count": 1,
+          "size": 800,
+          "gutter": 0,
+          "align": "start",
+          "offset": 0,
+          "color": "rgba(201,130,31,0.14)"
+        }
+      ]
+    }
+  },
+  "order": [
+    "Mande.dc.html",
+    "Peul.dc.html",
+    "Fang.dc.html",
+    "Bassa.dc.html",
+    "Ekpeye.dc.html",
+    "Nigeria.dc.html",
+    "Lingala.dc.html",
+    "Traore.dc.html",
+    "Introuvable.dc.html",
+    "Inconnu.dc.html",
+    "MandeNuit.dc.html",
+    "PeulNuit.dc.html",
+    "FangNuit.dc.html",
+    "BassaNuit.dc.html",
+    "EkpeyeNuit.dc.html",
+    "NigeriaNuit.dc.html",
+    "LingalaNuit.dc.html",
+    "TraoreNuit.dc.html",
+    "IntrouvableNuit.dc.html",
+    "InconnuNuit.dc.html",
+    "MandeDesktop.dc.html",
+    "PeulDesktop.dc.html",
+    "FangDesktop.dc.html",
+    "BassaDesktop.dc.html",
+    "EkpeyeDesktop.dc.html",
+    "NigeriaDesktop.dc.html",
+    "LingalaDesktop.dc.html",
+    "TraoreDesktop.dc.html",
+    "IntrouvableDesktop.dc.html",
+    "InconnuDesktop.dc.html",
+    "MandeDesktopNuit.dc.html",
+    "PeulDesktopNuit.dc.html",
+    "FangDesktopNuit.dc.html",
+    "BassaDesktopNuit.dc.html",
+    "EkpeyeDesktopNuit.dc.html",
+    "NigeriaDesktopNuit.dc.html",
+    "LingalaDesktopNuit.dc.html",
+    "TraoreDesktopNuit.dc.html",
+    "IntrouvableDesktopNuit.dc.html",
+    "InconnuDesktopNuit.dc.html"
+  ],
+  "notes": {
+    "t-mob": {
+      "x": 0,
+      "y": -300,
+      "text": "Le fil — mobile 430, jour",
+      "kind": "title1",
+      "maxW": 5020
+    },
+    "t-mobn": {
+      "x": 0,
+      "y": 3850,
+      "text": "Le fil — mobile 430, nuit",
+      "kind": "title1",
+      "maxW": 5020
+    },
+    "t-desk": {
+      "x": 0,
+      "y": 8000,
+      "text": "Le fil — desktop 1280, jour",
+      "kind": "title1",
+      "maxW": 13520
+    },
+    "t-deskn": {
+      "x": 0,
+      "y": 11230,
+      "text": "Le fil — desktop 1280, nuit",
+      "kind": "title1",
+      "maxW": 13520
+    },
+    "legend": {
+      "x": -560,
+      "y": 0,
+      "w": 460,
+      "text": "Le fil des noms — version 2, fidèle au design system.\n\nChaque valeur est celle que le code rend à 430 et 1280 px : rôles typographiques du site (nom en « hero » 900, titres de blocs en « h3 », cartes titre/texte/métadonnées), rampe d'espacement, rayon 14 px et pastilles, badge de source neutre, en-tête réel de 61 px et gouttières mesurées sur la page. La nuit reprend exactement les valeurs de .dark : les teintes d'accent restent claires, avec une encre sombre dessus.\n\nLa bande ocre marque le premier écran (800 px) : « D'où vient ce nom », le verdict, les appellations et les shorts y tiennent dans tous les cas.\n\nLes affiches sont des images, comme sur le site : la couverture produite par la chaîne sociale, titre incrusté. Réel : anecdotes, proverbes, photos et crédits, image de Mansa Musa, textes des cas approuvés et des fiches. Illustratif : titres et durées des shorts, compteurs, questions de quiz.\n\nDesktop : colonne principale (origines, anecdotes, fiches) et rail (tuiles, jeu, images, textes longs)."
+    }
+  },
+  "designSystems": [],
+  "attachments": {}
+}

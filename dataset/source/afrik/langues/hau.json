@@ -9,7 +9,17 @@
   "glottocode": "haus1257",
   "nameFr": "Hausa",
   "nameEn": "Hausa",
-  "alternateNames": [],
+  "alternateNames": [
+    "Abakwariga",
+    "Habe",
+    "Haoussa",
+    "Hausawa",
+    "Haussa",
+    "Hawsa",
+    "Kado",
+    "Mgbakpa"
+  ],
+  "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_TCHADIQUE",
   "peoples": [],

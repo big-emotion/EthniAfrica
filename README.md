@@ -178,7 +178,7 @@ nullability here — **the tests are the real gate.** Write the failing test fir
 pull request, never push directly. Conventional commits (commitlint on `commit-msg`).
 `recette ↔ main` sync PRs need a **merge commit**, not a squash.
 
-**Publishing a GitHub Release is the only thing that deploys production**, to an OVH VPS. A push
+**Publishing a GitHub Release is the only thing that deploys production**, to a self-hosted VPS. A push
 deploys nothing and neither does a tag; Vercel builds only the recette preview, and only when
 someone runs that workflow by hand. See [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
 
@@ -219,7 +219,7 @@ tablet `md` 720px · desktop `xl` 800px.
 **Operators, read this first:** a hosted Supabase project labels its only environment
 "production" — the label describes the project, not the application it serves.
 `shmrjtnfbqzceovroqjj` backs **recette**. Production is not a hosted project at all: it is a
-self-hosted Supabase stack on an OVH VPS, which the Supabase dashboard and MCP cannot see.
+self-hosted Supabase stack on a VPS, which the Supabase dashboard and MCP cannot see.
 `jajggbeimfudpzcxytbb` is a retired hosted project that still answers — never point a secret at
 it. Every migration is a two-step rollout, recette first. Applying
 one and calling it done has already left a corpus loaded on one database and missing on the

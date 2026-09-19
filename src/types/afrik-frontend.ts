@@ -23,6 +23,7 @@ import type {
   DemographicsSection,
 } from "./afrik";
 import type { PersonPeopleLink } from "./persons";
+import type { NamingProjection } from "@/lib/search/naming";
 
 // ==========================================
 // LANGUAGE FAMILY TYPES
@@ -171,6 +172,22 @@ export interface SearchResult {
   classificationStatus?: ClassificationStatus | null;
   /** Score de confiance sur [0, 1] — l'échelle de la base, pas celle du chip. */
   confidence?: number;
+  /**
+   * What this result says about its own name, in one shape whatever class it
+   * came from — the self-given form, the other forms, where they come from,
+   * what they carry, who uses which today, and the dated eras a country
+   * records.
+   *
+   * Five classes store that under five different keys, so `readNaming` reads
+   * whichever one applies and the page reads only this. Until it existed the
+   * envelope surfaced naming for peoples alone, and three classes out of five
+   * delivered none of their names to the surface that exists to show them
+   * (`docs/design/search-result-data-shape.md`).
+   *
+   * `autonym` and `exonyms` below are the people-only pair it generalises;
+   * they stay for the callers that already key on them.
+   */
+  naming?: NamingProjection;
   /** Autonyme (selfAppellation) du peuple, quand le corpus le porte. */
   autonym?: string;
   /** Exonymes connus, dans l'ordre de la fiche. */
