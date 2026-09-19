@@ -4,11 +4,11 @@ import { Suspense } from "react";
 
 import { PageLayout } from "@/components/layout/PageLayout";
 import { RETIRED_PEOPLE_IDS } from "@/lib/afrik/retiredPeopleIds";
+import { loadPeopleFiche } from "@/lib/fiche/ficheExistence";
 import { getPeopleLinksRoute } from "@/lib/routing";
 import { ficheCanonical } from "@/lib/seo/ficheCanonical";
 import type { Language } from "@/types/shared";
 import { RelationsListWithSourceSheet } from "@/components/relations/RelationsListWithSourceSheet";
-import { getPeopleById } from "@/api/v2/services/peopleService";
 import { getEgoNetwork } from "@/api/v2/services/relations";
 import { transformRelationsToListItems } from "@/lib/relationsDataTransformer";
 import { logger } from "@/lib/api/logger";
@@ -25,11 +25,13 @@ interface PageParams {
 async function PeopleRelationsContent({
   people,
   language,
+  egoNetworkPromise,
 }: {
-  people: NonNullable<Awaited<ReturnType<typeof getPeopleById>>>;
+  people: NonNullable<Awaited<ReturnType<typeof loadPeopleFiche>>>;
   language: Language;
+  egoNetworkPromise: ReturnType<typeof getEgoNetwork>;
 }) {
-  const egoNetwork = await getEgoNetwork(people.id);
+  const egoNetwork = await egoNetworkPromise;
   const items = transformRelationsToListItems(
     egoNetwork.sourced,
     egoNetwork.derived
@@ -70,9 +72,9 @@ export async function generateMetadata({
   // `document-title` violation. The unnamed fallback below is the honest
   // answer to "we could not read who this is", and the body still surfaces the
   // failure itself.
-  let people: Awaited<ReturnType<typeof getPeopleById>> = null;
+  let people: Awaited<ReturnType<typeof loadPeopleFiche>> = null;
   try {
-    people = await getPeopleById(slug);
+    people = await loadPeopleFiche(slug, language);
   } catch (error) {
     logger.error(`Links metadata read failed for ${slug}`, error);
     return { ...head, title: copy.fallbackTitle };
@@ -115,7 +117,9 @@ export default async function PeopleLinksPage({
     redirect(getPeopleLinksRoute(language, successorId));
   }
 
-  const people = await getPeopleById(slug);
+  const peoplePromise = loadPeopleFiche(slug, language);
+  const egoNetworkPromise = getEgoNetwork(slug);
+  const people = await peoplePromise;
 
   if (!people) {
     notFound();
@@ -128,7 +132,11 @@ export default async function PeopleLinksPage({
       trailLabel={people.nameMain}
     >
       <Suspense fallback={<div aria-busy="true" className="min-h-48" />}>
-        <PeopleRelationsContent people={people} language={language} />
+        <PeopleRelationsContent
+          people={people}
+          language={language}
+          egoNetworkPromise={egoNetworkPromise}
+        />
       </Suspense>
     </PageLayout>
   );

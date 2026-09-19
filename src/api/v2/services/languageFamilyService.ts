@@ -116,13 +116,25 @@ export async function getLanguageFamilyById(
   id: string,
   lang: TranslationLocale = "fr"
 ): Promise<TranslatedEntity<LanguageFamily> | null> {
-  const family = await getAfrikLanguageFamilyById(id);
+  const familyPromise = getAfrikLanguageFamilyById(id);
+  let peoplesError: unknown;
+  const peoplesPromise = getAfrikPeoplesByLanguageFamily(id).catch((error) => {
+    // Attach the rejection handler immediately: the family read can settle
+    // later, and leaving this promise temporarily unobserved makes Node report
+    // a false unhandled rejection even though the returned service promise is
+    // caught by its caller.
+    peoplesError = error;
+    return [];
+  });
+  const family = await familyPromise;
 
   if (!family) {
+    await peoplesPromise;
     return null;
   }
 
-  const peoples = await getAfrikPeoplesByLanguageFamily(id);
+  const peoples = await peoplesPromise;
+  if (peoplesError) throw peoplesError;
   const derived = peoples.map((people) => ({
     name: people.nameMain,
     peopleId: people.id,

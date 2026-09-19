@@ -280,6 +280,32 @@ describe("Language Family Service", () => {
   });
 
   describe("getLanguageFamilyById", () => {
+    // @req REQ-033
+    it("starts the independent family and people reads together", async () => {
+      let resolveFamily!: (family: {
+        id: string;
+        nameFr: string;
+        content: Record<string, unknown>;
+      }) => void;
+      const familyPending = new Promise<{
+        id: string;
+        nameFr: string;
+        content: Record<string, unknown>;
+      }>((resolve) => {
+        resolveFamily = resolve;
+      });
+      vi.mocked(getAfrikLanguageFamilyById).mockReturnValue(familyPending);
+      vi.mocked(getAfrikPeoplesByLanguageFamily).mockResolvedValue([]);
+
+      const result = getLanguageFamilyById("FLG_BANTU");
+      await Promise.resolve();
+
+      expect(getAfrikPeoplesByLanguageFamily).toHaveBeenCalledWith("FLG_BANTU");
+
+      resolveFamily({ id: "FLG_BANTU", nameFr: "Bantou", content: {} });
+      await expect(result).resolves.toMatchObject({ id: "FLG_BANTU" });
+    });
+
     // @req REQ-142
     it("overlays the English prose after deriving the peoples, and carries the provenance", async () => {
       vi.mocked(getAfrikLanguageFamilyById).mockResolvedValue({
@@ -398,13 +424,16 @@ describe("Language Family Service", () => {
     });
 
     // @req REQ-033
-    it("should return null without querying peoples for a missing family", async () => {
+    it("should return null after settling the speculative people read for a missing family", async () => {
       vi.mocked(getAfrikLanguageFamilyById).mockResolvedValue(null);
+      vi.mocked(getAfrikPeoplesByLanguageFamily).mockResolvedValue([]);
 
       const family = await getLanguageFamilyById("FLG_NONEXISTENT");
 
       expect(family).toBeNull();
-      expect(getAfrikPeoplesByLanguageFamily).not.toHaveBeenCalled();
+      expect(getAfrikPeoplesByLanguageFamily).toHaveBeenCalledWith(
+        "FLG_NONEXISTENT"
+      );
     });
 
     // @req REQ-119

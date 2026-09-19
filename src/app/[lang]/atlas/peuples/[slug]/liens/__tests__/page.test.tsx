@@ -98,12 +98,14 @@ describe("/[lang]/peuples/[slug]/liens page", () => {
   });
 
   // @req REQ-097 FR72
-  it("returns the named page before starting the relation read", async () => {
+  it("starts the relation read early without delaying the named page", async () => {
+    mockGetEgoNetwork.mockReturnValue(new Promise(() => {}));
+
     await PeopleLinksPage({
       params: Promise.resolve({ lang: "fr", slug: "PPL_YORUBA" }),
     });
 
-    expect(mockGetEgoNetwork).not.toHaveBeenCalled();
+    expect(mockGetEgoNetwork).toHaveBeenCalledWith("PPL_YORUBA");
   });
 
   // @req REQ-140
