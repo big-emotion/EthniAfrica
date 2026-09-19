@@ -230,6 +230,25 @@ describe("fiche routes — the crawler-facing surface", () => {
   }
 });
 
+describe("family fiche request cache", () => {
+  // @req REQ-019
+  it("uses the page locale for the early existence read", () => {
+    const routeSource = readFileSync(
+      resolve(process.cwd(), "src/app/[lang]/atlas/familles/[slug]/page.tsx"),
+      "utf8"
+    );
+    const headSource = readFileSync(
+      resolve(process.cwd(), "src/lib/seo/ficheHead.ts"),
+      "utf8"
+    );
+
+    expect(routeSource).toContain(
+      "(id) => loadLanguageFamilyFiche(id, lang as Language)"
+    );
+    expect(headSource).toContain("loadLanguageFamilyFiche(id, lang)");
+  });
+});
+
 describe("root layout metadata — the only <head> the fiche routes get", () => {
   // @req REQ-019
   it("matches the pre-swap baseline", () => {

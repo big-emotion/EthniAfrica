@@ -1,4 +1,5 @@
 import { render, screen, waitFor } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { renderToStaticMarkup } from "react-dom/server";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
@@ -77,6 +78,31 @@ describe("ContinentGlobeStage (ARCH-014 capability gate)", () => {
       expect(screen.getByTestId("atlas-globe-canvas-mock")).toBeInTheDocument()
     );
     expect(document.querySelector("path#africa-landmass")).toBeNull();
+  });
+
+  // @req REQ-112 REQ-115
+  it("keeps the homepage map static until the reader activates the interactive globe", async () => {
+    vi.spyOn(HTMLCanvasElement.prototype, "getContext").mockReturnValue(
+      {} as unknown as RenderingContext
+    );
+
+    render(
+      <ContinentGlobeStage
+        peopleCountsByCountry={peopleCounts}
+        activation="explicit"
+      />
+    );
+
+    expect(document.querySelector("path#africa-landmass")).toBeInTheDocument();
+    expect(screen.queryByTestId("atlas-globe-canvas-mock")).toBeNull();
+
+    await userEvent.click(
+      screen.getByRole("button", { name: /activer la carte interactive/i })
+    );
+
+    await waitFor(() =>
+      expect(screen.getByTestId("atlas-globe-canvas-mock")).toBeInTheDocument()
+    );
   });
 
   // @req REQ-112

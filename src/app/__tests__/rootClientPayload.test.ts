@@ -75,6 +75,18 @@ describe("root client payload", () => {
     );
   });
 
+  // @req REQ-012 REQ-112
+  test("loads the reporting client only when a report is submitted", () => {
+    const flagTarget = read("src/components/flags/FlagTarget.tsx");
+
+    expect(flagTarget).not.toMatch(
+      /import\s+\{\s*submitFlag\s*\}\s+from\s+["']@\/components\/flags\/submitFlag["']/
+    );
+    expect(flagTarget).toMatch(
+      /await import\(\s*["']@\/components\/flags\/submitFlag["']\s*\)/
+    );
+  });
+
   // @req REQ-104
   test("keeps the fiche loading screen independent from the interactive fiche shell", () => {
     const loadingScreen = read("src/components/fiche/FicheLoadingScreen.tsx");
