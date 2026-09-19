@@ -1,7 +1,13 @@
 """draft: boards at natural height + measure.html. final <heights.json>: fixed
 heights, night variants, canvas index."""
 import json, os, sys, datetime
+HERE = os.path.dirname(os.path.abspath(__file__))
+HEIGHTS = os.path.abspath(sys.argv[2]) if len(sys.argv) > 2 else None
+os.chdir(HERE)
+sys.path.insert(0, HERE)
+import gen
 from gen import document, night, OUT
+gen.POSTERS.update({k: "/_blob/" + v for k, v in json.load(open("posters.json")).items()})
 from cases import CASES
 
 os.makedirs(OUT, exist_ok=True)
@@ -23,7 +29,7 @@ if mode == "draft":
     print(len(frames), "draft boards")
     sys.exit()
 
-heights = json.load(open(sys.argv[2]))
+heights = json.load(open(HEIGHTS))
 boards, order = {}, []
 GAP_X, GAP_ROW = 80, 420
 mob_h = max(v["h"] for k, v in heights.items() if "Desktop" not in k)

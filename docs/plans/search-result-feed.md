@@ -20,8 +20,8 @@ anything. Where the plan does not decide, it says so in §12 and names the defau
    `/docs/design/mockups/search-feed/Mande.dc.html`; `file://` is blocked.
 3. [`docs/design/mockups/search-feed/generator/gen.py`](../design/mockups/search-feed/generator/gen.py)
    — one Python function per tile. Every size, gap and colour quoted in §5 comes
-   from it; when this plan and `gen.py` disagree on a number, `gen.py` is the
-   board and §3 decides how the number becomes a token.
+   from it, and every number in it is already the token value (§3); when this
+   plan and `gen.py` disagree, `gen.py` is the board.
 4. [`docs/design/search-result-charter.md`](../design/search-result-charter.md) —
    the contract this plan amends (Phase 0).
 5. `docs/design/brand-charter.md`, `typography-charter.md`, `actions-charter.md`,
@@ -114,116 +114,120 @@ Each case is a fixture (Phase 5) and a parity test (Phase 9). Boards:
 Verify each resolution against the corpus in Phase 5 (`dataset/source/afrik/`);
 if an ID differs, keep the case and fix the fixture, never the board copy.
 
-## 3. What « exact parity » means here
+## 3. Parity: what the boards guarantee
 
-The boards are drawn with literal pixels and hex values. The code may not use
-either: five contract tests and one ESLint rule refuse them. Parity is therefore
-defined as **the same structure, the same copy, and every visual value replaced by
-the token this section assigns to it** — deterministically, so two implementers
-produce the same page.
+The boards are **version 2** (2026-09-19): every value in them is the value the
+design system renders at 430 and 1280 px — the type roles evaluated at those
+widths, the spacing ramp, the two radii, the page frame measured on the live
+page, and the colours `.dark` actually binds. Code that uses the classes below
+therefore reproduces the boards **to the pixel**, and §10.4 proves it by
+comparing screenshots.
 
-### 3.1 Three levels, all gated
+### 3.1 What is compared
 
-| Level          | Asserted by (Phase 9)                              | Tolerance                         |
-| -------------- | -------------------------------------------------- | --------------------------------- |
-| Structure/copy | DOM parity test against the boards' text, per case | none: same blocks, order, strings |
-| Tokens         | charter contract tests + this table                | none                              |
-| Geometry       | Playwright at 430×800 and 1280×800, day and night  | §10.3                             |
+| Level          | How (Phase 9)                                                                                             | Tolerance                                                     |
+| -------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Structure/copy | DOM test: block ids, order and strings against the board's text                                           | none                                                          |
+| Tokens         | charter contract tests + §3.3–3.5                                                                         | none                                                          |
+| Pixels         | Playwright: screenshot of `[data-feed-root]` on the page vs on the board, 10 cases × 430/1280 × day/night | same width and height; ≤ 1 % differing pixels (anti-aliasing) |
 
-### 3.2 Colour (day → token → night)
+Not compared: the site header (the boards draw a 61 px stand-in so the first
+screen is measured from the right place), the footer, and nothing outside
+`[data-feed-root]`.
 
-The page keeps its one accent, **ocre** (`afh-accent-ocre` on the page wrapper,
-already there). Components read `var(--accent*)` and `--afh-*` semantics only —
-never `--afh-cat-*`, `--afh-night-*` or a hex (color.css:319-327, :80-83).
+### 3.2 The page frame (measured on `/fr/atlas/recherche`, 2026-09-19)
 
-| Board (day)                           | Use in boards                         | Token / class                                                                                                                       | Night value the code gives               |
-| ------------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| `#fbf7f2`                             | page ground                           | `bg-afh-bg` (`--afh-bg`)                                                                                                            | `#120e0a` (= board)                      |
-| `#ffffff`                             | cards, field, chips, quiz             | `bg-afh-surface`                                                                                                                    | `#271e14` (board `#1d1710`, **D6**)      |
-| `#f5ede0`                             | tiles, proverb plate, conviction      | `bg-afh-bg-warm`                                                                                                                    | `#1d1710` (board `#271e14`, **D6**)      |
-| `#e8dfd3`                             | every hairline and card border        | `border-afh-border`                                                                                                                 | `#3a2e1f` (= board)                      |
-| `#2c2018`                             | text                                  | `text-afh-text`                                                                                                                     | `#f1e7d8` (= board)                      |
-| `#746557`                             | secondary text, tags                  | `text-afh-text-soft`                                                                                                                | `#c9b99f` (= board)                      |
-| `#835514`                             | eyebrows, links, « votre recherche »  | `text-[var(--accent-ink)]` (`var(--accent-ink)`)                                                                                    | `#c9821f` (board `#e8b96a`, **D7**)      |
-| `#c9821f`                             | searched chip/card border, quiz frame | `border-[var(--accent)]` (`var(--accent)`)                                                                                          | `#c9821f` (= board)                      |
-| `#f1d9ae`                             | invitation button, image label strip  | `bg-[var(--accent-tint)]` (`var(--accent-tint)`)                                                                                    | **verify** (Phase 7, **D8**)             |
-| `#f0d2c8` + `#974331`                 | verdict box and its ink               | verdict box wrapped in `afh-accent-terre`, then `bg-[var(--accent-tint)]`, `border-[var(--accent-ink)]`, `text-[var(--accent-ink)]` | `#cd725e` ink; tint: **verify** (**D8**) |
-| `#9b3030`                             | pejorative chip border/tag, card      | `border-[var(--afh-colonial-ink)]` / `text-[var(--afh-colonial-ink)]` (`--afh-colonial-ink`; never `--afh-error`)                   | `#d98a7a` (= board)                      |
-| `#cfc3b4`                             | dashed border: silences, empty short  | `border-afh-border border-dashed` (existing `NameAnswer` silence)                                                                   | `#3a2e1f` (**D9**)                       |
-| `#5b8db8`, `#2b6b42`, `#746557` pills | source tier badges                    | `<SourceStandingBadge>` (`src/components/sources/SourceStandingBadge.tsx`)                                                          | its own (**D5**)                         |
-| `#2c2018` fill + `#fbf7f2` label      | selected lens chip                    | `bg-afh-text text-afh-bg`                                                                                                           | swaps correctly                          |
-| poster gradients                      | placeholder art in the boards         | not implemented: posters are images (§5.6)                                                                                          | —                                        |
-| `rgba(0,0,0,.55)` + `#f1e7d8`         | duration / label badge on a poster    | new tokens `--afh-media-badge-bg`, `--afh-media-badge-ink` (Phase 7)                                                                | same values both themes                  |
+- `SiteHeader`: **61 px**, unchanged.
+- `PageLayout` with **`hideHeader`** when a query is committed: no hero, no trail
+  (the hero measured 277 px and pushed the form to y = 338).
+- `main.afh-shell py-8` (32 px top) contains the page's own
+  `div.afh-shell.afh-accent-ocre`, which receives **`data-feed-root`**. Keep both
+  shells: they give a **24 px gutter at 430** (12 + 12; content x = 24, 382 wide)
+  and **1112 px of content at 1280** (x = 84). `[data-feed-root]` itself measures
+  x = 12, 406 wide at 430 and x = 52, 1176 wide at 1280 — the boards match.
+- 768–1199 px: the shells give 24 + 24; render the mobile layout inside.
 
-### 3.3 Type
+### 3.3 Colour
 
-Fonts are already loaded (`src/app/layout.tsx:18-39`): Fraunces
-300/500/700/900, Nunito Sans 300–800. **Fraunces 600 is not loaded and
-`displayWeightCharter.test.ts` allows 700 and 900 only**, so every board weight 600
-on the display face becomes `font-bold` (700). `afh/no-raw-font-size` forbids
-`text-[Npx]`; sizes below 12 px are retired (`typeScaleCharter.test.ts`).
+Components read `var(--accent*)` and `--afh-*` semantics only.
 
-The mapping is by board pixel size, applied everywhere:
+| Board day                        | Role                                                  | Class                                                                 | Night (`.dark`)         |
+| -------------------------------- | ----------------------------------------------------- | --------------------------------------------------------------------- | ----------------------- |
+| `#fbf7f2`                        | page ground; selected lens label                      | `bg-afh-bg` / `text-afh-bg`                                           | `#120e0a`               |
+| `#ffffff`                        | cards, field, lens chips, quiz, owed boxes            | `bg-afh-surface`                                                      | `#271e14`               |
+| `#f5ede0`                        | tiles, proverb plate, conviction, badge               | `bg-afh-bg-warm`                                                      | `#1d1710`               |
+| `#e8dfd3`                        | every border, dashed silences and empty slot          | `border-afh-border`                                                   | `#3a2e1f`               |
+| `#2c2018`                        | text; selected lens fill                              | `text-afh-text` / `bg-afh-text`                                       | `#f1e7d8`               |
+| `#746557`                        | secondary text, tags, meta                            | `text-afh-text-soft`                                                  | `#c9b99f`               |
+| `#835514`                        | eyebrows, links, state tags                           | `text-[var(--accent-ink)]`                                            | `#c9821f`               |
+| `#c9821f`                        | searched chip/card border, quiz and invitation frames | `border-[var(--accent)]`                                              | `#c9821f`               |
+| `#f1d9ae`                        | invitation button, image label strip                  | `bg-[var(--accent-tint)]`                                             | `#f1d9ae` (not rebound) |
+| `#1a1208`                        | words on an ocre tint                                 | `text-[var(--accent-foreground)]`                                     | `#1a1208`               |
+| `#f0d2c8`                        | verdict box (inside `afh-accent-terre`)               | `bg-[var(--accent-tint)]`                                             | `#f0d2c8` (not rebound) |
+| `#974331`                        | verdict box left rule                                 | `border-[var(--accent-ink)]`                                          | `#cd725e`               |
+| `#000000`                        | words in the verdict box                              | `text-[var(--accent-foreground)]`                                     | `#000000`               |
+| `#9b3030`                        | pejorative chip/card border and tag                   | `border-[var(--afh-colonial-ink)]` / `text-[var(--afh-colonial-ink)]` | `#d98a7a`               |
+| `rgba(18,14,10,.72)` + `#f1e7d8` | duration badge on a poster, play glyph                | new tokens `--afh-media-badge-bg` / `--afh-media-badge-ink` (Phase 7) | same                    |
 
-| Board px           | Class                                                     | Rendered |
-| ------------------ | --------------------------------------------------------- | -------- |
-| 10, 10.5, 11, 12   | `text-afh-eyebrow` when uppercase-tracked, else `text-xs` | 12       |
-| 13                 | `text-afh-caption`                                        | 13       |
-| 14                 | `text-sm`                                                 | 14       |
-| 15, 16             | `text-base`                                               | 16       |
-| 17, 18             | `text-lg`                                                 | 18       |
-| 19, 20, 21         | `text-xl`                                                 | 20       |
-| 23                 | `text-2xl`                                                | 24       |
-| 40 / 56 (the name) | `text-afh-hero` (34→52 clamp)                             | fluid    |
+**Rules.** Words on any `--accent-tint` fill take `--accent-foreground` in both
+themes — the tints are deliberately not rebound at night (`color.css`, the
+comment above `.dark`), so a light patch stays light and its ink stays dark. The
+terre ink on the terre tint measures 4.22:1, under AA for 16 px, which is why the
+verdict's words are not terre. Source-tier marks are `<SourceStandingBadge>`.
 
-Faces: board `'Fraunces'` → `font-display`; everything else is the body face.
-Eyebrows (uppercase, tracked): `uppercase tracking-[0.16em]` at 12 px for the page
-eyebrow, `tracking-[0.14em]` for card eyebrows, weight `font-bold` — as
-`NameAnswer.tsx:186` already does. The poster's burnt-in title is **not** set in
-type (§5.6).
+### 3.4 Type
 
-### 3.4 Space, radius, width
+Fonts are those `next/font` loads (`src/app/layout.tsx`): Fraunces 300/500/700/900,
+Nunito Sans 300–800. The boards load the same files from Google Fonts, **without
+the `opsz` axis**, so glyphs match. Sizes are the role tokens evaluated at 430 /
+1280 (`src/styles/tokens/type.css`).
 
-- **Spacing ramp** (brand charter §7): 4·8·12·16·24·32·48·64·96, tokens
-  `afh-xs 4`, `afh-md 8`, `afh-lg 12`, `afh-2xl 16`, `afh-5xl 24`, `afh-6xl 32`,
-  `[var(--afh-space-8xl)] 48`. Round every board gap/padding to the nearest step,
-  ties upward: 6,7,9→8 · 10,11,13→12 · 14,15,18→16 · 20,22,26→24 · 28,30,34→32 ·
-  40,44→48.
-- **Between sections**: `--afh-section-gap` (24 / 32 / 48 at <768 / 768–1199 /
-  ≥1200) and nothing else (**D3**).
-- **Radius** (actions charter §6): every card, box, field, button, plate, poster →
-  `rounded-afh-lg` (14); every chip and lens → `rounded-afh-full`; source marks →
-  radius 0 (the badge component already does it). The verdict box keeps its square
-  left edge: `rounded-r-afh-lg`.
-- **Gutters**: the page keeps `.afh-shell` (`--afh-page-padding` 12 / 24 / 32)
-  (**D4**).
-- **Breakpoints**: mobile < 768 renders the mobile board; 768–1199 renders the
-  mobile board inside a 720 px centred column; ≥ 1200 renders the desktop board.
-  Tailwind has no custom screens: use `md:` for 768 and `min-[1200px]:` for 1200.
-  Desktop content max-width 1184 (1280 − 2×48); thin pages 880.
-- Touch targets ≥ 44 px on every control (chips, lens, options, buttons).
+| Element                                                   | Classes                                                                   | px 430 / 1280 | lh         | weight                    |
+| --------------------------------------------------------- | ------------------------------------------------------------------------- | ------------- | ---------- | ------------------------- |
+| Page eyebrow « D'où vient ce nom »                        | `text-afh-eyebrow font-semibold uppercase tracking-[0.16em]`              | 12            | 1.4        | 600                       |
+| Card eyebrow (Anecdote, Proverbe, kinds, Joue…)           | same, `tracking-[0.14em]`                                                 | 12            | 1.4        | 600                       |
+| The name `<h1>`                                           | `font-display text-afh-hero font-black leading-[var(--afh-leading-hero)]` | 34.88 / 52    | 1.05       | 900                       |
+| Block headings `<h2>`, quiz stem, plain verdict           | `font-display text-afh-h3 font-bold leading-[var(--afh-leading-h3)]`      | 19.2 / 23     | 1.3        | 700                       |
+| Card titles (origin, plate, fiche, people, image caption) | `font-display text-afh-body font-bold leading-[1.3]`                      | 17.1 / 19     | 1.3        | 700                       |
+| Chip name                                                 | `font-display text-afh-small font-bold`                                   | 16            | 1.5        | 700                       |
+| Running text (cards, prose, lede, tiles, owed)            | `text-afh-small`                                                          | 16            | 1.5        | 400                       |
+| Verdict line                                              | `text-afh-small font-bold`                                                | 16            | 1.5        | 700                       |
+| Verdict sub                                               | `text-afh-caption min-[1200px]:text-afh-small line-clamp-2`               | 13 / 16       | 1.45 / 1.5 | 400                       |
+| Subs, meta, credits, « Aujourd'hui » lines                | `text-afh-caption`                                                        | 13            | 1.45       | 400                       |
+| Tags, poster meta, « Glissez », media badges              | `text-afh-eyebrow` (no uppercase)                                         | 12            | 1.4        | 700 state tags · 400 else |
+| Lens chips                                                | `text-afh-caption font-bold` (count `font-semibold`)                      | 13            | 1.45       | 700                       |
+| « Tout voir → » actions                                   | `text-afh-small font-semibold` via `ActionLink`                           | 16            | 1.5        | 600                       |
+| Inline links (« Voir la source »…)                        | `text-afh-caption font-bold`                                              | 13            | 1.45       | 700                       |
 
-### 3.5 Deliberate deviations from the boards
+### 3.5 Space, radius and fixed sizes
 
-Each is forced by a rule a test enforces; each is visible in a side-by-side
-review, and none changes structure or copy.
+All values are on the ramp 4·8·12·16·24·32·48 (`afh-xs`, `afh-md`, `afh-lg`,
+`afh-2xl`, `afh-5xl`, `afh-6xl`, `[var(--afh-space-8xl)]`).
 
-| ID  | Board                                  | Code                                 | Why (rule → test)                                           |
-| --- | -------------------------------------- | ------------------------------------ | ----------------------------------------------------------- |
-| D1  | text at 10.5–11 px                     | 12 px                                | no size < 12 → `typeScaleCharter.test.ts`                   |
-| D2  | Fraunces 600                           | 700                                  | display weights 700/900 → `displayWeightCharter.test.ts`    |
-| D3  | section gaps 30–34 px on mobile        | 24 px (`--afh-section-gap`)          | brand charter §7                                            |
-| D4  | 20 / 48 px gutters                     | 12 / 32 px (`.afh-shell`)            | layout tokens; the page already uses the shell              |
-| D5  | coloured round tier pills              | neutral square `SourceStandingBadge` | tiers are neutral marks, radius 0 → actions charter §6      |
-| D6  | night: cards `#1d1710`, warm `#271e14` | cards `#271e14`, warm `#1d1710`      | `.dark` rebinding in `color.css:390-391`                    |
-| D7  | night accent ink `#e8b96a`             | `#c9821f`                            | `--accent-ink` under `.afh-accent-ocre` (color.css:514-519) |
-| D8  | night tints `#33281a`, `#2f201a`       | whatever `--accent-tint` gives       | resolved in Phase 7                                         |
-| D9  | dashed `#cfc3b4`                       | dashed `--afh-border`                | no token; matches today's `NameAnswer` silences             |
-| D10 | radii 9–12 px                          | 14 px                                | actions charter §6 → `actionsCharter.test.tsx`              |
+| Where                                            | 430      | 1280                                                      |
+| ------------------------------------------------ | -------- | --------------------------------------------------------- |
+| Field → lens row                                 | 12       | 12                                                        |
+| Lens row → verdict                               | 16       | 24                                                        |
+| Eyebrow → name                                   | 4        | 8                                                         |
+| Name → verdict box                               | 8        | 12                                                        |
+| Verdict box padding                              | 12 × 16  | 16 × 24                                                   |
+| Verdict → appellations                           | 12       | beside it (7/5 grid, column gap 32, appellations 8 lower) |
+| Appellations heading → chips; chip gap           | 12; 8    | 12; 8                                                     |
+| Appellations → shorts                            | 12       | 24                                                        |
+| Shorts heading → row; poster gap                 | 8; 12    | 12; 16                                                    |
+| Between feed blocks (`--afh-section-gap`)        | 24       | 48                                                        |
+| Desktop main (span 8) / rail (span 4) column gap | —        | 32                                                        |
+| Card padding; gap inside a card                  | 16; 8    | 16; 8                                                     |
+| Grids: tiles; cards, fiches, peoples; origins    | 8; 12; — | 8; 12; 16                                                 |
 
-**If the operator wants pixel identity instead**, the generator is re-run with §3's
-table applied (a one-hour change to `gen.py`) and the boards are republished; the
-plan does not change. Do not edit boards by hand.
+- Radius: every surface and control `rounded-afh-lg` (14); chips and lenses
+  `rounded-afh-full`; the verdict box `rounded-r-afh-lg`; source marks 0.
+- Fixed sizes: field height 48; lens chips `min-h-11` (44) with `px-afh-2xl`;
+  posters 130 × 231 / 160 × 284; origin cards 290 wide on mobile; plates 250 /
+  232 wide, their image 0.62 × width tall; generated image card 300 wide, image
+  4:5; quiz options and owed buttons `min-h-11`.
+- Chips in « Les appellations » are **labels, not controls** (no 44 px minimum):
+  padding 4 × 12.
 
 ## 4. The feed grammar
 
@@ -260,7 +264,7 @@ the old `disambiguation` block becomes the first-screen chips (3) plus block 6.
 
 ### 4.2 Desktop placement (≥ 1200 px)
 
-- Row 1: 12-column grid, `column-gap` 32 (§3.4): verdict (block 2) spans 7,
+- Row 1: 12-column grid, `column-gap` 32 (§3.5): verdict (block 2) spans 7,
   appellations (3) span 5 with 8 px top offset.
 - Row 2: shorts (4), full width.
 - Row 3: **main column** span 8 stacks, in canonical order, the blocks
@@ -280,211 +284,186 @@ band in its mobile layout.
 
 ## 5. Tile specifications
 
-Numbers are the board's (mobile / desktop) before §3's translation. Component
-names are the ones to create under `src/components/search/feed/` (Phase 6).
+Component names are the ones to create under `src/components/search/feed/`
+(Phase 6). Type classes are §3.4's, spacing §3.5's, colours §3.3's; this section
+states what each tile holds and how it behaves. The generator function that drew
+each tile is named in brackets — its markup is the reference.
 
-### 5.1 `FeedLensRow` (block 1)
+### 5.1 `FeedLensRow` (block 1) [`lenses`]
 
-Horizontal row, no wrap, overflow hidden on mobile, centred 640 px on desktop.
-Chips: pill, `text-sm` bold, padding 6×13 → `py-afh-md px-afh-lg`, min-height 44.
-Selected: `bg-afh-text text-afh-bg`, `aria-current="true"`. Others:
-`bg-afh-surface border border-afh-border`, label + count in `text-afh-text-soft`.
-Items: « Tout », « Shorts n », « Images n », « Jeux » (no count), « Fiches n »;
-an item with count 0 is not rendered. Filtering (Phase 8): Shorts → only block 4
-as a 2-column grid of every short; Images → blocks 10 and 12; Jeux → block 11;
-Fiches → block 15 plus today's `SearchLensBar` (entity kinds) as a second row.
-`Images n` = anecdotes + proverbs + images linked; `Fiches n` = `counts.all`.
+`<nav aria-label="Filtrer les résultats">`, one row, no wrap, overflow hidden on
+mobile, centred 640 px on desktop. Chips are links: pill, `min-h-11`, `px-afh-2xl`,
+lens-chip type. Selected: `bg-afh-text text-afh-bg`, `aria-current="true"`.
+Others: `bg-afh-surface border border-afh-border`, count in
+`text-afh-text-soft font-semibold`. Items: « Tout », « Shorts n », « Images n »,
+« Jeux » (no count), « Fiches n »; a zero count is not rendered. Filtering
+(Phase 8): Shorts → block 4 alone as a 2-column grid of every short; Images →
+blocks 10 and 12; Jeux → block 11; Fiches → block 15 plus today's `SearchLensBar`
+(entity kinds) as a second row. `Images n` = anecdotes + proverbs + images
+linked; `Fiches n` = `counts.all`.
 
-### 5.2 `FeedVerdict` (block 2)
+### 5.2 `FeedVerdict` (block 2) [`answer`]
 
-- Eyebrow: « D'où vient ce nom », `text-afh-eyebrow` uppercase tracking .16em
-  bold `text-[var(--accent-ink)]`; kind suffix « · Pays » / « · Langue » / « · Nom de
-  famille » in `text-afh-text-soft` (peoples and families: no suffix).
-- Name: `<h1>` — the page's only h1 — `font-display font-bold text-afh-hero
-leading-[1.02]`, margin-top 6/10 → 8/12. Peoples render through
-  `<AutonymExonymHeading>` (`src/components/ui/AutonymExonymHeading.tsx`) so the
-  `lang` attribute is kept.
-- Verdict box (subject found): wrapper `afh-accent-terre`, `bg-[var(--accent-tint)]`,
-  left border 3/4 px `border-[var(--accent-ink)]`, `rounded-r-afh-lg`, padding
-  12×14 / 16×20. Line 1: verdict, `text-base min-[1200px]:text-lg font-bold
-text-[var(--accent-ink)]`. Line 2 (sub), `text-afh-caption
-min-[1200px]:text-base leading-relaxed text-afh-text`.
-- Plain verdict (typo, unknown): no box; `font-display font-bold text-xl
-min-[1200px]:text-2xl leading-tight`, sub `text-sm min-[1200px]:text-base`.
-- Copy: the verdict sentence comes from the corpus (§6.1); the eyebrow, suffixes
-  and plain verdicts from `nameAnswerCopy`.
+- Eyebrow « D'où vient ce nom » in `text-[var(--accent-ink)]`; kind suffix
+  « · Pays » / « · Langue » / « · Nom de famille » in `text-afh-text-soft`
+  (peoples and families: none).
+- `<h1>` — the page's only h1 — the name. Peoples render through
+  `<AutonymExonymHeading>` so the `lang` attribute is kept.
+- Verdict box when a subject is found: wrapper `afh-accent-terre`; left rule 3 /
+  4 px; words per §3.3; sub clamped to two lines.
+- Plain verdict (typo, unknown): no box, heading style, sub `text-afh-small`
+  clamped to two lines.
+- Copy: the verdict sentence and sub from the corpus (§6.1); eyebrow, suffixes and
+  plain verdicts from `nameAnswerCopy`.
 
-### 5.3 `FeedAppellations` (block 3)
+### 5.3 `FeedAppellations` (block 3) [`appellations`, `chip`]
 
-- `<h2>` `font-display font-bold text-xl min-[1200px]:text-2xl`; sub `text-xs
-text-afh-text-soft` « Les plus communes d'abord. Aucune n'est « la bonne ». »
-  (country: « Le nom, puis ceux qui l'ont précédé ou suivi. »; disambiguation:
-  « Trois peuples, trois familles de langues. »).
-- Chips: wrap, gap 7 → 8. Chip: pill, `bg-afh-surface border border-afh-border`,
-  padding 6×12 / 7×14 → `py-afh-md px-afh-lg`; name `font-display font-bold
-text-base min-[1200px]:text-lg`; tag `text-xs`.
-- States: searched form → `border-[var(--accent)]`, tag « votre recherche »
-  `text-[var(--accent-ink)] font-bold`; self-given name → `bg-afh-bg-warm`, tag « leur
-  nom » `text-[var(--accent-ink)] font-bold`; pejorative (a form the corpus declares
-  pejorative — never inferred, Fang proves it) → `border-[var(--afh-colonial-ink)]`, tag
-  « péjoratif » `text-[var(--afh-colonial-ink)] font-bold`; others → qualifier in
-  `text-afh-text-soft` when the corpus has one, no tag otherwise.
-- **At most four chips**, in corpus order (most common first); if more, a link
-  « +N autres » (`text-sm font-bold`) scrolling to block 5 (`href="#origines"`).
-- Disambiguation variant: one chip per subject, name + « famille · pays » tag.
-- Typo variant: one chip per lead; the first is the suggested one (`you` style).
+- `<h2>` « Les appellations »; sub **desktop only** (« Les plus communes d'abord.
+  Aucune n'est « la bonne ». »; country « Le nom, puis ceux qui l'ont précédé ou
+  suivi. »; disambiguation « Trois peuples, trois familles de langues. »).
+- Chips are **labels** (`<span>`, not links): pill, padding 4 × 12, name +
+  optional tag, baseline-aligned, gap 8.
+- States: searched form → `border-[var(--accent)]`, tag « votre recherche »;
+  self-given name → `bg-afh-bg-warm`, tag « leur nom »; pejorative (declared by the
+  corpus, never inferred — Fang proves it) → colonial border, tag « péjoratif »;
+  other forms → `border-afh-border`, qualifier tag when the corpus has one.
+- **Mobile: three chips, and tags only for the three states above.** Desktop:
+  four chips, every tag. The searched form is always among the chips shown (it
+  replaces the last one if it would fall outside). Beyond, a link « +N autre(s) »
+  to `#origines`.
+- Disambiguation: one chip per subject, tag « famille · pays ». Typo: one chip
+  per lead, the suggested one in the searched style.
 
 ### 5.4 First-screen budget
 
-At 430×800 and 1280×800 **the first poster of block 4 is fully visible** without
-scrolling (§10.3). If a real case overflows, compress in this order and stop as
-soon as it fits: (1) hide the appellations sub on mobile; (2) clamp the verdict
-sub to two lines (`line-clamp-2`); (3) cap chips at three plus « +N ». Never
-shrink posters below 130×231.
+At 430 × 800 and 1280 × 800 **the first poster of block 4 is entirely visible**
+without scrolling. The boards satisfy it for all ten cases (measured: first row
+of posters starts at y ≤ 569 on mobile, ≤ 516 on desktop); §10.3 asserts it on the
+page. The three measures that made it fit are part of the spec, not options: the
+appellations sub is hidden on mobile, the verdict sub is clamped to two lines,
+mobile shows three chips.
 
-### 5.5 `FeedShelf` (the row used by blocks 4, 5, 10)
+### 5.5 `FeedShelf` (the row of blocks 4, 5, 10) [`shorts`, `origins`, `plates`]
 
-A horizontal row that scrolls on touch and never auto-advances: `flex gap`,
-`overflow-x-auto snap-x snap-mandatory`, `scroll-padding` equal to the gutter,
-items `snap-start flex-none`, the next item peeking at the edge (item widths below
-guarantee it at 430). Keyboard: the row is a `role="list"` region with
-`aria-label`; items are links/buttons in tab order. `prefers-reduced-motion`:
-no smooth scroll. No dots, no arrows on mobile (NN/g; the boards have none).
-Desktop: blocks 4 and 10 remain rows (no scroll needed at ≤ 6 / ≤ 3 items; hide
-overflow), block 5 becomes a 2-column grid (§5.7).
+`role="list"` with an `aria-label`; `flex`, `overflow-x-auto snap-x
+snap-mandatory`, items `snap-start flex-none`, `scroll-padding-inline` equal to
+the gutter; the next item peeks at 430 by construction of the widths. Never
+auto-advances, no dots, no arrows; `prefers-reduced-motion` → no smooth scroll.
+Desktop: blocks 4 and 10 stay rows (≤ 6 and ≤ 3 items fit), block 5 becomes a
+2-column grid.
 
-### 5.6 Shorts (block 4)
+### 5.6 Shorts (block 4) [`shorts`, `poster`, `empty_poster`]
 
-- Header: `<h2>` « Les shorts » + action link « Tout voir → » (`ActionLink`,
-  `src/components/ui/ActionLink.tsx` — the arrow lives there only) to the scoped
+- Header: `<h2>` « Les shorts » + `ActionLink` « Tout voir → » to the scoped
   Découvertes deck (§6.5). Desktop only: sub « Chacun répond à « D'où vient le
-  nom… ? » en moins d'une minute. » Optional note line (`text-xs font-bold
-text-[var(--accent-ink)]`) when the shelf is widened (texts in §5.9).
-- Poster card (`ShortPosterCard`): width 130 / 160, ratio 9:16 (231 / 284 tall),
-  `rounded-afh-lg overflow-hidden`. **The poster is the cover image the production
-  pipeline exports next to each video (GABARITS-SOCIAL §1 ter)** — its title is
-  burnt in, so the site sets no title over it. Overlays: duration badge top-right,
-  optional relation label top-left, both `text-xs font-bold`, padding 2×6 →
-  `py-afh-xs px-afh-md`, `rounded-afh-full` (they are chips; the boards' 4 px
-  corner is not a token), `bg-[var(--afh-media-badge-bg)]
-text-[var(--afh-media-badge-ink)]`. A play glyph
-  (inline SVG, `aria-hidden`) centred at 44 % height, 32 / 36 px, filled circle
-  `--afh-media-badge-ink`, triangle `--afh-media-badge-bg`.
-- Under the poster: title « D'où vient le nom « X » ? » `text-xs
-min-[1200px]:text-sm font-bold leading-snug` (non-breaking spaces inside the
-  guillemets), meta « 0:41 · Découvertes » `text-xs text-afh-text-soft`.
-- Whole card is one link to the short's Découvertes permalink.
-- Count: mobile shows up to 5 (row scrolls), desktop up to 6.
-- **Empty slot** (`ShortEmptySlot`), first in the row when the searched subject
-  has no short: same size, `border border-dashed border-afh-border
-rounded-afh-lg p-afh-lg`, space-between column: the question in `font-display
-font-bold uppercase text-base text-afh-text-soft`, a sentence `text-xs
-text-afh-text-soft`, an action link `text-xs font-bold`; caption below « Pas encore
-  de short » `text-xs font-bold text-afh-text-soft`. Sentences: no documented
-  origin → « Aucune source lue ne dit d'où vient ce nom. Pas de short sans
-  réponse. » + « Vous savez ? Proposer une source → »; documented but not
-  produced → « Pas encore de short sur ce nom. » + « Proposer une source → »;
-  unknown name → « Personne ne nous l'a encore raconté. » + « Nous parler de ce
-  nom → ».
-- Relation labels (top-left), derived, never typed per page: patronyme of a
-  searched people/family → « Nom de famille »; alliance partner → « Son allié »;
-  the people of a searched patronyme → « Le peuple »; language of a searched
-  people → « La langue »; people of a searched country → « Peuple du {pays} »;
-  neighbouring people (relations) → « Peuple voisin »; widened by family → the
-  family name (« Bénoué-Congo »); multiple subjects → « {nom} · {pays} ». A video
-  may override with its manifest `label` (e.g. « Le fleuve »). Exact subject and
-  the peoples a family/name designates → no label.
+  nom… ? » en moins d'une minute. » Widened shelf: a note line
+  (`text-afh-caption font-bold text-[var(--accent-ink)]`), texts in §5.9.
+- `ShortPosterCard`: one link to the short's Découvertes permalink. The poster is
+  an **image** — the cover the production pipeline exports next to each video
+  (GABARITS-SOCIAL §1 ter), title burnt in — `rounded-afh-lg overflow-hidden`,
+  130 × 231 / 160 × 284, `object-cover`, `alt` « Couverture : D'où vient le nom
+  « X » ? ». Over it: the duration badge top-right (media-badge tokens, pill,
+  padding 2 × 8) and a play glyph (inline SVG, `aria-hidden`, 32 / 36 px, centred
+  at 44 % height). Under it: « D'où vient le nom « X » ? » (`text-afh-caption
+font-bold`, non-breaking spaces inside the guillemets) and a meta line
+  « {durée} · {relation label or « Découvertes »} ».
+- Up to 5 on mobile (the row scrolls), up to 6 on desktop.
+- `ShortEmptySlot`, first in the row when the searched subject has no short: same
+  size, `border border-dashed border-afh-border rounded-afh-lg p-afh-lg`, three
+  lines spaced apart — the question (`font-display text-afh-small font-bold
+uppercase text-afh-text-soft`), a sentence (`text-afh-caption soft`), an action
+  link — and the caption « Pas encore de short ». Sentences: no documented origin →
+  « Aucune source lue ne dit d'où vient ce nom. Pas de short sans réponse. » +
+  « Vous savez ? Proposer une source → »; documented but not produced → « Pas encore
+  de short sur les … » + « Proposer une source → »; unknown name → « Personne ne
+  nous l'a encore raconté. » + « Nous parler de ce nom → ».
+- Relation labels, derived, never typed per page: patronyme of a searched
+  people/family → « Nom de famille »; alliance partner → « Son allié »; the people
+  of a searched patronyme → « Le peuple »; language of a searched people → « La
+  langue »; people of a searched country → « Peuple du {pays} »; neighbouring
+  people (relations) → « Peuple voisin »; widened by family → the family name
+  (« Bénoué-Congo »); several subjects → « {nom} · {pays} ». A video may override
+  with its manifest `label` (« Le fleuve »). Exact subject and the peoples a
+  family/name designates → no label.
 
-### 5.7 `FeedOrigins` (block 5)
+### 5.7 `FeedOrigins` (block 5) [`origins`, `origin_card`]
 
-- `<h2>` « D'où elles viennent » (country/language/patronyme: « D'où il vient »),
-  sub `text-xs text-afh-text-soft` (« Chaque forme, d'où elle vient, et qui
-  l'emploie encore. » — or the disagreement notice, §5.13), anchor
-  `id="origines"`.
-- Optional lede paragraph `text-sm leading-relaxed` when the entity-level origin
-  explains all forms at once (Fang).
-- Cards: mobile, `FeedShelf` items 290 wide, then « Glissez · N formes » `text-xs
-text-afh-text-soft` when N > 1; desktop, 2-column grid, gap 12.
+- `<h2 id="origines">` « D'où elles viennent » (country, language, patronyme:
+  « D'où il vient »), sub (« Chaque forme, d'où elle vient, et qui l'emploie
+  encore. », or the disagreement notice §5.13). Optional lede (`text-afh-small`)
+  when one entity-level origin explains all forms (Fang).
+- Mobile: `FeedShelf` of 290-wide cards, then « Glissez · N formes » when N > 1.
+  Desktop: 2-column grid, gap 16.
 - `OriginCard`: `bg-afh-surface border rounded-afh-lg p-afh-2xl flex-col
-gap-afh-md`, border as the chip states (searched/pejorative/else). Header row:
-  form `font-display font-bold text-xl`, tag `text-xs font-bold` right-aligned.
-  Text `text-sm leading-relaxed`. Optional line `text-afh-caption
-text-afh-text-soft` with a bold ink label — « Aujourd'hui — … » for usage,
-  « Quand — … », « Selon — … », « Une nuance — … » as the data says. Footer:
-  `<SourceStandingBadge>` + « Voir la source » inline link opening the
-  record's sources (existing `SourceChainSheet`).
-- After the cards: « Il en manque une ? Proposer une source → » (`text-sm
-font-bold`) — opens the invitation dialog (§5.15) with `fieldPath` =
-  `appellations`.
+gap-afh-md`, border by state as the chips. Header: form (card title) and tag
+  (state colour, right-aligned). Text `text-afh-small`. Optional line
+  `text-afh-caption soft` with a bold `text-afh-text` label — « Aujourd'hui », « Quand »,
+  « Selon », « Une nuance » as the data says. Footer: `<SourceStandingBadge>` +
+  « Voir la source » (opens the existing `SourceChainSheet`).
+- Then « Il en manque une ? Proposer une source → » (`text-afh-small font-bold`),
+  opening the invitation dialog (§5.15) with `fieldPath: "appellations"`.
 
-### 5.8 `FeedTiles`, `FeedPeoples`, `FeedAtlasHolds` (blocks 6, 8, 9)
+### 5.8 `FeedTiles`, `FeedPeoples`, `FeedAtlasHolds` (blocks 6, 8, 9) [`tiles`, `people_cards`, `facts`]
 
-- Tiles: 2-column grid gap 8; tile `bg-afh-bg-warm rounded-afh-lg py-afh-lg
-px-afh-lg`; label `text-sm font-bold`, meta `text-xs text-afh-text-soft`; optional
-  link below (« Les 31 peuples mandé → »). Each tile links to its fiche.
-- Peoples (disambiguation): cards `bg-afh-surface border rounded-afh-lg
-p-afh-2xl`, name `font-display font-bold text-xl`, meta `text-xs soft`, text
-  `text-sm`; 1 column mobile, N columns desktop.
-- Atlas holds: 2-column grid of warm tiles, label `text-xs soft` above value
-  `text-sm font-bold` (Famille, Région, Pays, Sources).
+- Tiles: 2-column grid, gap 8; each tile is a link to its fiche,
+  `bg-afh-bg-warm rounded-afh-lg p-afh-lg`, name `text-afh-small font-bold`, meta
+  `text-afh-caption soft`; optional link below (« Les 31 peuples mandé → »).
+- Peoples: cards `bg-afh-surface border rounded-afh-lg p-afh-2xl gap-afh-md`,
+  card title, meta caption, text small; 1 column mobile, N columns desktop.
+- Atlas holds: 2-column grid of warm tiles, label caption above value
+  `text-afh-small font-bold` (Famille, Région, Pays, Sources).
 
-### 5.9 `FeedPlates` (block 10)
+### 5.9 `FeedPlates` (block 10) [`plates`, `plate`]
 
-- `<h2>` « Anecdotes et proverbes » + « Tout voir → » (scoped Découvertes); when
-  widened, a sub naming the widening, e.g. « Rien encore sur Ekpeye. Autour : le
-  Nigeria, son pays. » / « Rien encore sur Traoré lui-même. Autour : les Bambara,
-  le peuple auquel l'atlas le rattache. »
-- Plates 250 wide, row gap 10 / 14, equal heights (`items-stretch`).
-- `AnecdotePlate`: `bg-afh-surface border rounded-afh-lg overflow-hidden`; image
-  250×155 `object-cover` (`next/image`, `alt` from the illustration record); body
-  padding 12×14: eyebrow « Anecdote · {sujet} » (`text-afh-eyebrow tracking-[0.14em]
-text-[var(--accent-ink)]`), headline `font-display font-bold text-lg leading-snug`,
-  `<SourceStandingBadge>`, credit « Photo : {credit} » `text-xs soft`. Links to
-  the anecdote reader (`/fr/dossiers/anecdotes?a={id}`).
-- `ProverbPlate`: `bg-afh-bg-warm rounded-afh-lg p-afh-2xl gap-afh-md`: eyebrow
-  « Proverbe {langue} », text in guillemets `font-display font-bold text-xl`,
-  original `text-afh-caption italic soft` **with `lang="{ISO 639-1 or -3}"`**,
-  meaning `text-afh-caption`, origin line `text-xs soft`. Only **attested**
-  proverbs (`origin.status === "attested"`).
-- Widening (both shelves 4 and 10), in this order, stopping at the first ring with
-  content, max ring 1: the subject → its linked entities (family ↔ its peoples,
-  patronyme → its peoples, language → its speaker peoples and family, country →
-  its major peoples) → its country. The shelf then carries the note/sub naming
-  the ring. Never widen to unrelated content, except block 4 for an unknown name:
-  « Les plus récents de l'atlas — sans rapport avec « {q} » » (3 most recent).
+- `<h2>` « Anecdotes et proverbes » + `ActionLink` « Tout voir → »; when widened, a
+  sub naming the ring (« Rien encore sur Ekpeye. Autour : le Nigeria, son pays. »,
+  « Rien encore sur Traoré lui-même. Autour : les Bambara, le peuple auquel l'atlas
+  le rattache. »).
+- Plates 250 / 232 wide, gap 12 / 16, equal heights.
+- `AnecdotePlate` (link to `/fr/dossiers/anecdotes?a={id}`): `bg-afh-surface
+border rounded-afh-lg overflow-hidden`; image `next/image`, width × 0.62,
+  `object-cover`, `alt` from the illustration record; body padding 12/16/16/16,
+  gap 8: card eyebrow « Anecdote · {sujet} », headline (card title),
+  `<SourceStandingBadge>`, « Photo : {credit} » caption.
+- `ProverbPlate`: `bg-afh-bg-warm rounded-afh-lg p-afh-2xl gap-afh-md`: card
+  eyebrow « Proverbe {langue} », the text in guillemets (card title), the original
+  `text-afh-small italic soft` **with its `lang` attribute**, meaning
+  `text-afh-small`, origin line caption. Attested proverbs only.
+- Widening (shelves 4 and 10), stopping at the first ring with content, max ring 1:
+  the subject → its linked entities (family ↔ peoples, patronyme → peoples,
+  language → speaker peoples and family, country → major peoples) → its country.
+  The shelf then carries the note/sub naming the ring. Never unrelated content,
+  except block 4 for an unknown name: « Les plus récents de l'atlas — sans rapport
+  avec « {q} » » (the three most recent).
 
-### 5.10 `FeedNameQuiz` (block 11)
+### 5.10 `FeedNameQuiz` (block 11) [`quiz`]
 
-- `bg-afh-surface border border-[var(--accent)] rounded-afh-lg p-afh-2xl gap-afh-lg`;
-  eyebrow « Joue avec ce nom »; stem `font-display font-bold text-xl`; options:
-  stacked full-width `<button>`s, `text-sm font-bold text-left bg-afh-surface
-border border-afh-border rounded-afh-lg py-afh-lg px-afh-lg min-h-11`; footer
-  `text-xs soft` « Une question tirée de cette page » + « Toutes les questions → »
-  (`/fr/jeux/quiz` with `pays=`/`famille=` when the subject maps to a scope).
-- Behaviour: reuse `QuizQuestionCard` / `QuizAnswerReveal`
-  (`src/components/quiz/`) in their single-question mode; the reveal keeps the
-  games charter §7 (right/wrong, verbatim, source + tier, « A way in » link). The
-  tile is **lazy**: dynamic import when it enters the viewport; the quiz island
-  budget (`scripts/quiz-bundle-size.ts`, 15 KB gzip) must stay green.
-- Only questions from `quiz_questions` for a subject or ring-1 entity, not revoked,
-  locale = page locale, with a non-`unverified` source (charter §7). Board
-  questions are illustrative.
+- `bg-afh-surface border border-[var(--accent)] rounded-afh-lg p-afh-2xl
+gap-afh-lg`; card eyebrow « Joue avec ce nom »; stem in heading style; options:
+  stacked full-width `<button>`s, `text-afh-small font-bold text-left
+bg-afh-surface border border-afh-border rounded-afh-lg py-afh-md px-afh-2xl
+min-h-11`, gap 8; footer caption « Une question tirée de cette page » + « Toutes
+  les questions → » (`/fr/jeux/quiz` with `pays=` / `famille=` when a scope exists).
+- Reuse `QuizQuestionCard` / `QuizAnswerReveal` single-question mode; the reveal
+  keeps games charter §7. Lazy: dynamic import when the tile enters the viewport;
+  `scripts/quiz-bundle-size.ts` (15 KB gzip) stays green.
+- Only active, locale-matching, non-`unverified` questions for a subject or ring-1
+  entity. Board questions are illustrative.
 
-### 5.11 `FeedGeneratedImage` (block 12)
+### 5.11 `FeedGeneratedImage` (block 12) [`gen_image`]
 
 `<h2>` « Les images », sub « Des interprétations, jamais des portraits. »; card
-250 / 300 wide `bg-afh-surface border rounded-afh-lg overflow-hidden`; **label
-strip first** « Image générée — une interprétation » (`text-xs font-bold
-text-[var(--accent-ink)] bg-[var(--accent-tint)]`, padding 9×12 → 8×12) — the reader is told
-before seeing it (brand charter §9, DEC-053); image 4:5; caption `font-display
-font-bold text-lg`; `<SourceStandingBadge>` + source short title; licence line
-`text-xs soft` from `generatedImagesCopy`. Reuse `GeneratedImageBadge` if it
-renders the same strip. Links to the Découvertes permalink.
+300 wide `bg-afh-surface border rounded-afh-lg overflow-hidden`; **label strip
+first** « Image générée — une interprétation » (`text-afh-caption font-bold`,
+`bg-[var(--accent-tint)] text-[var(--accent-foreground)]`, padding 8 × 12) — the
+reader is told before seeing it (brand charter §9, DEC-053); image 4:5; body:
+caption (card title), `<SourceStandingBadge>` + source short title, licence line
+from `generatedImagesCopy`. Links to the Découvertes permalink.
 
-### 5.12 `FeedProse` (blocks 7, 13, 14)
+### 5.12 `FeedProse` (blocks 7, 13, 14) [`prose`]
 
 `<h2>` + one `bg-afh-surface border rounded-afh-lg p-afh-2xl` box, paragraphs
-`text-sm leading-relaxed` spaced 12, optional badge + « Voir la source ». Copy is
+`text-afh-small` spaced 12, optional badge + « Voir la source ». Copy is
 translated from corpus fields, never pasted (charter §3: no scholarly word).
 
 ### 5.13 Disagreement and silence copy
@@ -494,32 +473,34 @@ so in the sub of block 5 and in block 13, **never picks one** (CLAUDE.md,
 « Assertion tracks certainty »). Silences come from the corpus's declared gaps
 (`gaps[]`, missing attestation dates, missing origin), one dashed card each.
 
-### 5.14 `FeedFiches` (block 15)
+### 5.14 `FeedFiches` (block 15) [`fiches`]
 
 `<h2>` « Les fiches », sub « Pour aller au fond : chaque fiche, avec toutes ses
-sources. »; grid 2 columns mobile (1 if a single fiche), 4 on desktop main column
-(fewer if fewer); card `bg-afh-surface border rounded-afh-lg py-afh-lg px-afh-2xl`:
-kind eyebrow `text-afh-eyebrow tracking-[0.14em] text-afh-text-soft`, name
-`font-display font-bold text-lg`, meta `text-xs soft`. Links via `ficheHrefFor`
-(`SearchResultCard.tsx:59`). At least one fiche whenever a subject exists; all
-remaining results follow as today's `SearchResultCard` list under « Fiches ».
+sources. »; grid 2 columns mobile (1 for a single fiche), up to 4 in the desktop
+main column; card link `bg-afh-surface border rounded-afh-lg py-afh-lg
+px-afh-2xl gap-afh-xs`: card eyebrow (kind) in `text-afh-text-soft`, name (card
+title), meta caption. Links via `ficheHrefFor` (`SearchResultCard.tsx:59`).
+Remaining results follow as today's `SearchResultCard` list under « Fiches ».
 
-### 5.15 `FeedOwedBand` (blocks 16–19)
+### 5.15 `FeedOwedBand` (blocks 16–19) [`band`, `further`]
 
 Silences: `<h2>` + sub « Un silence déclaré, pas un oubli. », dashed cards
-`rounded-afh-lg p-afh-2xl`, title `text-sm font-bold soft`, text
-`text-afh-caption soft`. Conviction: `bg-afh-bg-warm rounded-afh-lg p-afh-2xl`,
-title `text-sm min-[1200px]:text-base font-bold`, body `text-afh-caption
-min-[1200px]:text-sm`. Invitation: `bg-afh-surface border border-[var(--accent)]
-rounded-afh-lg p-afh-2xl`, title `text-base font-bold`, body `text-sm`, button
-`bg-[var(--accent-tint)] border border-[var(--accent)] rounded-afh-lg min-h-11 px-afh-2xl
-text-sm font-bold` (a `variant="accent"` button if it renders identically). **The
-button opens `FlagTarget`** (`src/components/flags/FlagTarget.tsx`) with
-`target = { type: <subject type>, id, name, fieldPath: "appellations" }` and
-`flag_kind` `correction-proposal` — today it is a plain link to `/contact`, which
-loses the subject. Unknown name: button « Nous parler de ce nom », target
-`{ type: "name-proposal", id: q }`, kind `contribution`. Further (typo/unknown):
-pill links « Parcourir les peuples », « Les familles de langues ».
+`border-afh-border rounded-afh-lg p-afh-2xl`, title `text-afh-small font-bold
+soft`, text caption soft, gap 12. Conviction: `bg-afh-bg-warm rounded-afh-lg
+p-afh-2xl`, title `text-afh-small font-bold`, body caption (mobile) / small
+(desktop). Invitation: `bg-afh-surface border border-[var(--accent)]
+rounded-afh-lg p-afh-2xl`, title `text-afh-small font-bold`, body small, button
+`bg-[var(--accent-tint)] text-[var(--accent-foreground)] border
+border-[var(--accent)] rounded-afh-lg min-h-11 px-afh-2xl text-afh-small
+font-semibold`. **The button opens `FlagTarget`**
+(`src/components/flags/FlagTarget.tsx`) with `target = { type: <subject type>, id,
+name, fieldPath: "appellations" }`, `flag_kind` `correction-proposal` — today it
+is a plain link to `/contact`, which loses the subject. Unknown name: « Nous parler
+de ce nom », target `{ type: "name-proposal", id: q }`, kind `contribution`.
+Desktop: silences span 6, conviction + invitation stacked span 6; thin pages
+stack all three. Further (typo/unknown): pill links `min-h-11 px-afh-2xl
+text-afh-caption font-semibold` « Parcourir les peuples », « Les familles de
+langues ».
 
 ## 6. Data: where each tile comes from
 
@@ -733,12 +714,12 @@ Each phase: **tests first**, then code, then its gates. Commit per phase
 
 ### Phase 7 — Tokens for night and media badges
 
-- Tests first (`colorTokens.test.ts`): `--afh-media-badge-bg/ink` exist and
-  contrast ≥ 4.5:1; under `.dark`, `--accent-tint` inside `.afh-accent-ocre` and
-  `.afh-accent-terre` resolves to a dark tint (target `#33281a` / `#2f201a`, the
-  boards' values) with ink ≥ 4.5:1 on it. If the test shows today's tint is
-  already dark, keep it and close D8.
-- Code: the tokens in `src/styles/tokens/color.css`, nothing else.
+- Tests first (`colorTokens.test.ts`): `--afh-media-badge-bg` (`rgba(18, 14, 10,
+0.72)`) and `--afh-media-badge-ink` (`#f1e7d8`) exist, identical in both themes,
+  ink on badge ≥ 4.5:1; `--accent-foreground` on `--accent-tint` ≥ 4.5:1 inside
+  `.afh-accent-ocre` and `.afh-accent-terre`, day and night (the tints are not
+  rebound at night — the boards assume it).
+- Code: the two tokens in `src/styles/tokens/color.css`, nothing else.
 
 ### Phase 8 — Page composition and states
 
@@ -749,7 +730,11 @@ Each phase: **tests first**, then code, then its gates. Commit per phase
   (`?country=`) keeps today's behaviour without the feed.
 - Code: `RecherchePageContent` renders `<SearchFeed>` when a query is committed;
   `PageLayout` gets `hideHeader` in that state (the boards have no page hero and
-  no trail); the form stays at the top. Remove `SourcedHighlightBlock` from the
+  no trail); `data-feed-root` goes on the page's own `div.afh-shell` (§3.2). The
+  form is the field alone, 48 px high, full width on mobile and 640 px centred on
+  desktop: search icon, input, clear button (`aria-label` « Effacer »); submission
+  by Enter plus a visually hidden submit button — the visible « Rechercher »
+  button of today (which stacks under the field on mobile, 56 px) is removed. Remove `SourcedHighlightBlock` from the
   page (the anecdote shelf replaces it). Keep `NoResultsLeads` data but render it
   through blocks 2–3 typo variant.
 
@@ -763,7 +748,9 @@ field, « La recherche ne répond pas pour l'instant. », a « Réessayer » but
 
 ### Phase 9 — Parity suite
 
-See §10. Tests only; fix components until green.
+§10.1 to §10.5, in that order: the structure test first (cheap, in `make check`),
+then geometry, then the pixel comparison, then axe. Tests only; fix components
+until the forty pixel comparisons pass.
 
 ### Phase 10 — Clean-up
 
@@ -778,7 +765,8 @@ See §10. Tests only; fix components until green.
 ## 9. Expected blocks per case
 
 Order of rendered block ids (mobile; desktop places them per §4.2). « w » =
-widened with its note.
+widened with its note. Appellation counts are the desktop ones; mobile shows three
+chips at most (§5.3), the rest behind « +N ».
 
 | Case        | First screen                                                                       | Feed                                                                                | Owed                                                        |
 | ----------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -799,38 +787,71 @@ widened with its note.
 
 For each case: render the page with the case fixture (day), extract visible text
 in document order, and compare with the board's text (same extraction as the
-grammar test: between `</helmet>` and `</x-dc>`, tags stripped, entities
-decoded), after normalising `'`/`’`, `&nbsp;`, whitespace. Assert: the ordered
-block headings are identical; every sentence of the board's verdict, forms,
-silences, conviction and invitation appears verbatim. Illustrative content
-(short titles, durations, lens counts, quiz stems) is compared **by presence and
-count**, not text. Mobile board for < 1200, desktop board for the desktop layout
-(render at both with `matchMedia` mocked).
+grammar test: between `</helmet>` and `</x-dc>`, tags stripped, entities decoded),
+after normalising `'`/`’`, `&nbsp;` and whitespace. Assert the ordered
+`data-feed-block` ids and headings are identical, and that every sentence of the
+board appears verbatim. Mobile board below 1200 px, desktop board above
+(`matchMedia` mocked).
 
 ### 10.2 Tokens
 
-Existing contract tests (§0) plus: no file under `src/components/search/feed/`
-contains `#`-hex, `rgb(`, `text-[`, `rounded-[`, `--afh-cat-`, `--afh-night-`.
+The charter contract tests of §0, plus: no file under `src/components/search/feed/`
+contains a `#`-hex, `rgb(`, `text-[` with a size, `rounded-[`, `--afh-cat-` or
+`--afh-night-`.
 
-### 10.3 Geometry — `e2e/search-feed.spec.ts` (Playwright)
+### 10.3 Geometry — `e2e/search-feed.spec.ts`
 
 Route the page to the fixtures (`page.route` on `/api/v2/search*` and
-`/api/v2/search/companions*`), for each case at 430×800 and 1280×800, with and
-without `.dark` on `<html>`:
+`/api/v2/search/companions*`, and on the poster URLs to
+`docs/design/mockups/search-feed/posters/*.jpg`). For each case at 430 × 800 and
+1280 × 800:
 
-- the first poster's box is fully inside the viewport (top ≥ 0, bottom ≤ 800);
-- `document.documentElement.scrollWidth === innerWidth` (no horizontal scroll);
-- blocks appear in §9 order (`data-feed-block="<id>"` on each block root);
-- desktop: main and rail columns exist when both are non-empty; thin cases are
-  ≤ 880 px wide;
-- poster size 130×231 / 160×284 (±1 px); lens and option targets ≥ 44 px;
-- a screenshot per case/width/theme is attached to the report for the
-  art-director review (`/afrik-art-director`), which is the last gate.
+- the first poster's box is entirely inside the viewport;
+- no horizontal scroll (`scrollWidth === innerWidth`);
+- `[data-feed-root]` is at x = 12, 406 wide (430) and x = 52, 1176 wide (1280);
+- blocks carry `data-feed-block` and appear in §9's order; desktop main and rail
+  exist when both are non-empty; thin cases are 880 px wide inside the root;
+- posters 130 × 231 / 160 × 284; lens chips, quiz options and owed buttons ≥ 44 px.
 
-Playwright is outside `make check`; run `npm run e2e -- search-feed` and attach
-the report to the PR.
+### 10.4 Pixels — `e2e/search-feed-parity.spec.ts`
 
-### 10.4 Accessibility
+The board is the baseline, rendered at test time — no image is committed:
+
+```ts
+// @req REQ-<feed REQ from Phase 0>
+test(`${stem} ${width} ${theme}`, async ({ page, browser }, testInfo) => {
+  const name = `${stem}-${width}-${theme}.png`;
+  const board = await browser.newPage({ viewport: { width, height: 800 } });
+  await board.goto(pathToFileURL(boardFile(stem, width, theme)).href);
+  await board.evaluate(() => document.fonts.ready);
+  const expected = await board.locator("[data-feed-root]").screenshot();
+  fs.mkdirSync(path.dirname(testInfo.snapshotPath(name)), { recursive: true });
+  fs.writeFileSync(testInfo.snapshotPath(name), expected);
+
+  if (theme === "night")
+    await page.addInitScript(() => localStorage.setItem("theme", "dark"));
+  await routeFixtures(page, stem);
+  await page.setViewportSize({ width, height: 800 });
+  await page.goto(`/fr/atlas/recherche?q=${encodeURIComponent(query(stem))}`);
+  await page.evaluate(() => document.fonts.ready);
+  const actual = await page
+    .locator("[data-feed-root]")
+    .screenshot({ animations: "disabled" });
+  expect(actual).toMatchSnapshot(name, { maxDiffPixelRatio: 0.01 });
+});
+```
+
+- 10 cases × 2 widths × 2 themes = 40 comparisons; a size mismatch fails outright.
+- Fixtures reproduce the boards' illustrative content exactly (shorts titles and
+  durations, lens counts, quiz questions), and the posters are the committed
+  images of `docs/design/mockups/search-feed/posters/`.
+- `next-themes` stores the theme under `localStorage.theme` (`attribute="class"`,
+  `src/app/providers.tsx`); verify the key before relying on it.
+- Run: `npm run e2e -- search-feed-parity`. Attach the diff images of any failure
+  to the PR. The art-director review (`/afrik-art-director`) reads the passing
+  screenshots last.
+
+### 10.5 Accessibility
 
 `scripts/a11yRoutes.ts` already lists the search route; add `?q=mandé` and
 `?q=kossiwa` for both locales. axe must be clean in day and night.
@@ -846,7 +867,8 @@ npm run check:dead
 npm run check:local-paths
 npx tsx scripts/quiz-bundle-size.ts
 npm run openapi:diff            # after Phase 5
-npm run e2e -- search-feed      # Phase 9 onward
+npm run e2e -- search-feed          # Phase 9 onward
+npm run e2e -- search-feed-parity   # Phase 9 onward: 40 pixel comparisons
 ```
 
 ## 12. Open decisions (defaults apply until the operator says otherwise)
@@ -854,7 +876,6 @@ npm run e2e -- search-feed      # Phase 9 onward
 | ID  | Question                                                | Default in this plan                                |
 | --- | ------------------------------------------------------- | --------------------------------------------------- |
 | D-A | Video playback: self-hosted, YouTube embed, or link out | Link out (« Regarder sur YouTube »), no iframe      |
-| D-B | Pixel identity with the boards (§3.5)                   | Token parity; regenerate boards only if asked       |
 | D-C | Terre verdict box as a second accent                    | Kept, recorded as a charter exception (Phase 0)     |
 | D-D | Who writes per-form origins where the corpus has none   | Nobody in this plan: entity-level lede + bare cards |
 | D-E | Relation labels vocabulary (§5.6)                       | As listed; new relations need a charter line        |

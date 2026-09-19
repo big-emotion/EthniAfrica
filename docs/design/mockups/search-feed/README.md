@@ -40,8 +40,8 @@ The boards are canvas sources (`.dc.html`). A browser ignores `<x-dc>`, the
 `support.js` line and the `text/x-dc` script, and renders the board. Serve the
 repository root over HTTP and open, for example,
 `/docs/design/mockups/search-feed/Mande.dc.html` — images resolve to
-`public/images/` through relative paths. `file://` is blocked by the browsers the
-project tests with.
+`public/images/` and `posters/` through relative paths. Playwright can also open a
+board with `file://` (the parity test does); some browser tooling cannot.
 
 `canvas.json` is the canvas index as the editor saved it. Each board carries a
 `rows` guide of 800 px: **the first screen**. It is drawn by the canvas, never in
@@ -56,29 +56,49 @@ the markup, and the plan turns it into an assertion.
 | Anecdotes, proverbs, their images and credit lines              | Quiz questions (written from the page's own facts) |
 | The generated image of Mansa Musa and its source                |                                                    |
 
+## Version 2 — the boards are the design system
+
+The boards were redrawn on 2026-09-19 so that every value is what the code
+renders at 430 and 1280 px: the type roles evaluated at those widths, the spacing
+ramp, the two radii, `SourceStandingBadge`, the page frame measured on the live
+page (61 px header, two nested `.afh-shell`), and the fonts `next/font` loads
+(Fraunces without the `opsz` axis). Code that uses the plan's classes reproduces
+them to the pixel, and the plan's §10.4 compares screenshots of
+`[data-feed-root]` on the page and on the board.
+
+Posters are images — `posters/*.jpg`, drawn by `generator/posters.py` in the
+production covers' style (Anton, burnt-in title, accent on the name) — because the
+page shows the pipeline's cover images, not typeset titles.
+
 ## Night boards
 
-Derived from the day boards by the substitution table of
-`../search/derive-night.mjs`, plus one pair this feed adds: the selected lens chip
-(`background: #2c2018; color: #fbf7f2` → `background: #f1e7d8; color: #120e0a`).
-Never edit a night board by hand.
+Derived from the day boards by `NIGHT` in `generator/gen.py`, which is exactly
+what `.dark` binds in `src/styles/tokens/color.css`: ground `#120e0a`, surfaces
+`#271e14`, warm `#1d1710`, ink `#f1e7d8`, accent ink `#c9821f`. Accent tints are
+not rebound at night, so the verdict box and the invitation button stay light,
+with dark words. Never edit a night board by hand.
 
 ## The generator
 
 `generator/` holds the script that wrote the boards. It is the most precise
 specification of each tile's markup, and the plan cites its functions by name.
 
-- `gen.py` — one function per tile (`answer`, `appellations`, `shorts`,
-  `origins`, `tiles`, `people_cards`, `plates`, `quiz`, `gen_image`, `prose`,
-  `facts`, `fiches`, `band`), the two layouts (`mobile_body`, `desktop_body`) and
-  the night substitution (`SWAPS`).
+- `gen.py` — the tokens as values (`role`, colours, `NIGHT`), one function per
+  tile (`search`, `lenses`, `answer`, `appellations`, `chip`, `shorts`, `poster`,
+  `empty_poster`, `origins`, `origin_card`, `tiles`, `people_cards`, `plates`,
+  `plate`, `quiz`, `gen_image`, `prose`, `facts`, `fiches`, `band`, `further`),
+  and the page (`first_screen`, `feed` with its main column and rail, `owed`,
+  `body` with the measured frame).
 - `cases.py` — the ten cases as data.
 - `build.py` — `draft` writes boards at natural height plus a `measure.html`;
   `final heights.json` fixes heights, derives night boards and writes the index.
   Heights come from a browser render (fonts loaded), rounded up to 10 px.
+- `posters.py` — draws the posters (needs `social/harness/fonts/Anton-Regular.ttf`);
+  `posters.json` maps each to its canvas asset.
 
 The generator writes canvas image URLs (`/_blob/…`). The copies here were
-rewritten to repository paths:
+rewritten to repository paths — posters to `posters/<slug>.jpg`, the rest as
+follows:
 
 | Canvas asset                        | Repository file                                         |
 | ----------------------------------- | ------------------------------------------------------- |
