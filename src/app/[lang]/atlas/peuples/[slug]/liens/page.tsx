@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { unstable_cache } from "next/cache";
 import { notFound, redirect } from "next/navigation";
 import { Suspense } from "react";
 
@@ -13,9 +14,16 @@ import { getEgoNetwork } from "@/api/v2/services/relations";
 import { transformRelationsToListItems } from "@/lib/relationsDataTransformer";
 import { logger } from "@/lib/api/logger";
 import { relationsCopy } from "@/lib/i18n/copy/relations";
+import { CORPUS_AGGREGATE_REVALIDATE_SECONDS } from "@/api/v2/services/corpusCache";
 
 // @req REQ-097 FR72
 export const revalidate = 3600;
+
+const getCachedEgoNetwork = unstable_cache(
+  (peopleId: string) => getEgoNetwork(peopleId),
+  ["people-links-ego-network"],
+  { revalidate: CORPUS_AGGREGATE_REVALIDATE_SECONDS }
+);
 
 interface PageParams {
   lang: string;
@@ -118,7 +126,7 @@ export default async function PeopleLinksPage({
   }
 
   const peoplePromise = loadPeopleFiche(slug, language);
-  const egoNetworkPromise = getEgoNetwork(slug);
+  const egoNetworkPromise = getCachedEgoNetwork(slug);
   const people = await peoplePromise;
 
   if (!people) {

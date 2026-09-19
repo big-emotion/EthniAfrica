@@ -28,6 +28,27 @@ vi.mock("next/navigation", () => ({
 const mockGetPeopleById = vi.fn();
 const mockGetEgoNetwork = vi.fn();
 const mockGetLanguageFamilyById = vi.fn();
+const cacheRegistration = vi.hoisted(() => ({
+  keyParts: [] as string[],
+  revalidate: 0,
+}));
+const unstableCacheMock = vi.hoisted(() =>
+  vi.fn(
+    (
+      callback: (...args: never[]) => unknown,
+      keyParts: string[],
+      options: { revalidate: number }
+    ) => {
+      cacheRegistration.keyParts = keyParts;
+      cacheRegistration.revalidate = options.revalidate;
+      return callback;
+    }
+  )
+);
+
+vi.mock("next/cache", () => ({
+  unstable_cache: unstableCacheMock,
+}));
 
 vi.mock("@/api/v2/services/peopleService", () => ({
   getPeopleById: (...args: unknown[]) => mockGetPeopleById(...args),
@@ -70,7 +91,7 @@ import PeopleLinksPage, { generateMetadata } from "../page";
 import { resolveAsyncServerComponents } from "@/test/resolveAsyncServerComponents";
 import { RELATIONS } from "@/components/fiche/__tests__/ficheContextFixtures";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
-import { getPeopleLinksRoute, getPeopleRoute } from "@/lib/routing";
+import { getPeopleLinksRoute } from "@/lib/routing";
 
 async function renderPage(slug: string, lang = "fr") {
   const ui = await PeopleLinksPage({
@@ -105,6 +126,14 @@ describe("/[lang]/peuples/[slug]/liens page", () => {
 
   afterEach(() => {
     vi.unstubAllGlobals();
+  });
+
+  // @req REQ-097 FR72
+  it("caches the relation network for the route's one-hour freshness window", () => {
+    expect(cacheRegistration).toEqual({
+      keyParts: ["people-links-ego-network"],
+      revalidate: 3600,
+    });
   });
 
   // @req REQ-097 FR72
