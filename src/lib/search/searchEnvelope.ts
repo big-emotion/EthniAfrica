@@ -12,7 +12,7 @@
  * impossible rather than merely fixed.
  */
 
-import { readNaming } from "@/lib/search/naming";
+import type { NamingProjection } from "@/lib/search/naming";
 import type {
   SearchEntityType,
   SearchLead,
@@ -76,6 +76,24 @@ function englishNameOf(value: unknown): string | undefined {
 
 function asRows(value: unknown): Record<string, unknown>[] {
   return Array.isArray(value) ? (value as Record<string, unknown>[]) : [];
+}
+
+function isNamingProjection(value: unknown): value is NamingProjection {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const naming = value as Partial<NamingProjection>;
+  return (
+    Array.isArray(naming.forms) &&
+    Array.isArray(naming.eras) &&
+    Boolean(naming.presentation) &&
+    Array.isArray(naming.presentation?.forms) &&
+    Array.isArray(naming.presentation?.eras) &&
+    Array.isArray(naming.presentation?.disagreements) &&
+    Array.isArray(naming.presentation?.evidence)
+  );
+}
+
+function namingOf(row: Record<string, unknown>): NamingProjection | undefined {
+  return isNamingProjection(row.naming) ? row.naming : undefined;
 }
 
 /**
@@ -279,7 +297,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
   return [
     ...asRows(peoples).map((row): SearchResult => ({
       type: "people",
-      naming: readNaming("people", row.content, row),
+      naming: namingOf(row),
       id: String(row.id),
       name: String(row.nameMain ?? ""),
       languageFamilyId:
@@ -299,7 +317,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     })),
     ...asRows(countries).map((row): SearchResult => ({
       type: "country",
-      naming: readNaming("country", row.content, row),
+      naming: namingOf(row),
       id: String(row.id),
       name: String(row.nameFr ?? ""),
       nameEn: englishNameOf(row.nameEn),
@@ -312,7 +330,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     })),
     ...asRows(families).map((row): SearchResult => ({
       type: "languageFamily",
-      naming: readNaming("languageFamily", row.content, row),
+      naming: namingOf(row),
       id: String(row.id),
       name: String(row.nameFr ?? ""),
       nameEn: englishNameOf(row.nameEn),
@@ -338,7 +356,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     // country or family must still return something.
     ...asRows(patronymes).map((row): SearchResult => ({
       type: "patronyme",
-      naming: readNaming("patronyme", row.content, row),
+      naming: namingOf(row),
       id: String(row.id),
       name: String(row.nameMain ?? ""),
       nameSystem: row.nameSystem as SearchResult["nameSystem"],
@@ -355,7 +373,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     // only through the peoples that mention it.
     ...asRows(languages).map((row): SearchResult => ({
       type: "language",
-      naming: readNaming("language", row.content, row),
+      naming: namingOf(row),
       id: String(row.id),
       name: String(row.name ?? ""),
       nameEn: englishNameOf(row.nameEn),

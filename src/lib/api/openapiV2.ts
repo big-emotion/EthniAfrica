@@ -499,6 +499,259 @@ const options: swaggerJsdoc.Options = {
             },
           },
         },
+        SearchNamingFormV2: {
+          type: "object",
+          description:
+            "One legacy-compatible name form. A qualifier is only returned when the corpus records one; it is never parsed from the form.",
+          properties: {
+            form: { type: "string", example: "Peul" },
+            qualifier: { type: "string" },
+            attestedIn: {
+              type: "array",
+              items: { type: "string" },
+              description:
+                "Country identifiers where this form is attested, when the name record carries them.",
+            },
+          },
+          required: ["form"],
+        },
+        SearchNamingEraV2: {
+          type: "object",
+          properties: {
+            era: {
+              type: "string",
+              enum: [
+                "formerNames",
+                "antiquity",
+                "middleAges",
+                "precolonial",
+                "colonization",
+                "contemporary",
+              ],
+            },
+            text: { type: "string" },
+          },
+          required: ["era", "text"],
+        },
+        SearchNamingOriginFactV2: {
+          type: "object",
+          description:
+            "Structured origin facts retained only when safe for the reader-facing search surface.",
+          properties: {
+            languageCode: { type: "string" },
+            meaning: { type: "string" },
+            imposedBy: { type: "string" },
+            period: { type: "string" },
+          },
+        },
+        SearchNamingEvidenceSourceV2: {
+          type: "object",
+          description:
+            "A hydrated source for a naming assertion. Source identifiers without these details are not exposed as evidence.",
+          properties: {
+            id: { type: "string" },
+            title: { type: "string" },
+            author: { type: "string" },
+            year: { type: "integer" },
+            page: { type: "string" },
+            url: { type: "string", format: "uri" },
+            tier: {
+              type: "string",
+              enum: ["official", "referenced", "unverified", "needs_review"],
+            },
+            reviewedNarrative: { type: "boolean" },
+            bibliographyNumber: { type: "integer" },
+            brokenAt: { type: ["string", "null"], format: "date-time" },
+            citation: { type: "string" },
+          },
+          required: ["id", "title", "tier"],
+        },
+        SearchNamingEvidenceAssertionV2: {
+          type: "object",
+          properties: {
+            id: { type: "string" },
+            statement: { type: "string" },
+            position: { type: "string" },
+            fieldPath: { type: "string" },
+            confidenceScore: {
+              type: "number",
+              minimum: 0,
+              maximum: 1,
+              description:
+                "Computed confidence when the entity class has a confidence record. Its absence means unmeasured, never zero.",
+            },
+            sourceCount: { type: "integer", minimum: 1 },
+            lastHumanAuditAt: {
+              type: ["string", "null"],
+              format: "date-time",
+            },
+          },
+          required: ["statement", "sourceCount", "lastHumanAuditAt"],
+        },
+        SearchNamingEvidenceV2: {
+          type: "object",
+          description:
+            "Complete evidence for one naming assertion: the assertion and every resolved cited source travel together.",
+          properties: {
+            assertion: {
+              $ref: "#/components/schemas/SearchNamingEvidenceAssertionV2",
+            },
+            sources: {
+              type: "array",
+              minItems: 1,
+              items: {
+                $ref: "#/components/schemas/SearchNamingEvidenceSourceV2",
+              },
+            },
+            standing: {
+              type: "string",
+              enum: ["official", "referenced", "unverified", "needs_review"],
+            },
+          },
+          required: ["assertion", "sources", "standing"],
+        },
+        SearchNamingPresentationFormV2: {
+          type: "object",
+          description:
+            "One name form as the search feed can present it, without deriving facts the corpus did not record.",
+          properties: {
+            form: { type: "string" },
+            selfGiven: {
+              type: ["boolean", "null"],
+              description:
+                "True or false only when the corpus classifies the form on this axis; null means it does not.",
+            },
+            qualifier: { type: "string" },
+            origin: {
+              $ref: "#/components/schemas/SearchNamingOriginFactV2",
+            },
+            attestationPeriod: { type: "string" },
+            attestations: {
+              type: "array",
+              items: { type: "string" },
+            },
+            problematic: { type: "string", enum: ["recorded"] },
+            currentUsage: { type: "string", enum: ["recorded"] },
+            claimStatus: {
+              type: "string",
+              enum: ["established", "claimed", "contested"],
+            },
+            evidence: {
+              type: "array",
+              items: {
+                $ref: "#/components/schemas/SearchNamingEvidenceV2",
+              },
+            },
+          },
+          required: ["form", "selfGiven", "attestations", "evidence"],
+        },
+        SearchNamingPositionV2: {
+          type: "object",
+          properties: {
+            statement: { type: "string" },
+            claimStatus: {
+              type: "string",
+              enum: ["established", "claimed", "contested"],
+            },
+            evidence: {
+              type: "array",
+              items: {
+                $ref: "#/components/schemas/SearchNamingEvidenceV2",
+              },
+            },
+          },
+          required: ["claimStatus", "evidence"],
+        },
+        SearchNamingDisagreementV2: {
+          type: "object",
+          properties: {
+            positions: {
+              type: "array",
+              minItems: 1,
+              items: {
+                $ref: "#/components/schemas/SearchNamingPositionV2",
+              },
+            },
+          },
+          required: ["positions"],
+        },
+        SearchNamingPresentationEraV2: {
+          type: "object",
+          description:
+            "A recorded era marker. The feed receives no historical prose through this reader-facing projection.",
+          properties: {
+            era: {
+              type: "string",
+              enum: [
+                "formerNames",
+                "antiquity",
+                "middleAges",
+                "precolonial",
+                "colonization",
+                "contemporary",
+              ],
+            },
+          },
+          required: ["era"],
+        },
+        SearchNamingPresentationV2: {
+          type: "object",
+          description:
+            "Reader-facing structured naming facts. Missing facts are omitted rather than inferred or rendered as empty prose.",
+          properties: {
+            forms: {
+              type: "array",
+              items: {
+                $ref: "#/components/schemas/SearchNamingPresentationFormV2",
+              },
+            },
+            eras: {
+              type: "array",
+              items: {
+                $ref: "#/components/schemas/SearchNamingPresentationEraV2",
+              },
+            },
+            disagreements: {
+              type: "array",
+              items: {
+                $ref: "#/components/schemas/SearchNamingDisagreementV2",
+              },
+            },
+            origin: { type: "string", enum: ["recorded"] },
+            problematic: { type: "string", enum: ["recorded"] },
+            currentUsage: { type: "string", enum: ["recorded"] },
+            evidence: {
+              type: "array",
+              items: {
+                $ref: "#/components/schemas/SearchNamingEvidenceV2",
+              },
+            },
+          },
+          required: ["forms", "eras", "disagreements", "evidence"],
+        },
+        SearchNamingProjectionV2: {
+          type: "object",
+          description:
+            "The server-built naming projection shared by peoples, countries, language families, names and languages in search results.",
+          properties: {
+            selfGiven: { type: "string" },
+            forms: {
+              type: "array",
+              items: { $ref: "#/components/schemas/SearchNamingFormV2" },
+            },
+            origin: { type: "string" },
+            problem: { type: "string" },
+            usageToday: { type: "string" },
+            eras: {
+              type: "array",
+              items: { $ref: "#/components/schemas/SearchNamingEraV2" },
+            },
+            presentation: {
+              $ref: "#/components/schemas/SearchNamingPresentationV2",
+            },
+          },
+          required: ["forms", "eras", "presentation"],
+        },
         SearchResponseData: {
           type: "object",
           description:
@@ -924,6 +1177,9 @@ const options: swaggerJsdoc.Options = {
               type: "object",
               description: "Contenu évolutif en JSONB",
             },
+            naming: {
+              $ref: "#/components/schemas/SearchNamingProjectionV2",
+            },
           },
         },
         PeopleV2: {
@@ -953,6 +1209,9 @@ const options: swaggerJsdoc.Options = {
             content: {
               type: "object",
               description: "Contenu évolutif en JSONB",
+            },
+            naming: {
+              $ref: "#/components/schemas/SearchNamingProjectionV2",
             },
           },
         },
@@ -1057,6 +1316,9 @@ const options: swaggerJsdoc.Options = {
               type: "object",
               description: "Evolutionary JSONB content, forwarded opaquely.",
             },
+            naming: {
+              $ref: "#/components/schemas/SearchNamingProjectionV2",
+            },
             associatedPeoples: {
               type: "array",
               description:
@@ -1141,6 +1403,9 @@ const options: swaggerJsdoc.Options = {
               type: "object",
               description: "Evolutionary JSONB content, forwarded opaquely.",
             },
+            naming: {
+              $ref: "#/components/schemas/SearchNamingProjectionV2",
+            },
             relevance: {
               type: "number",
               example: 0.82,
@@ -1215,6 +1480,9 @@ const options: swaggerJsdoc.Options = {
               type: "object",
               description:
                 "Evolutionary JSONB content. Its associatedPeoples property is a legacy compatibility copy derived from the canonical top-level array.",
+            },
+            naming: {
+              $ref: "#/components/schemas/SearchNamingProjectionV2",
             },
           },
         },

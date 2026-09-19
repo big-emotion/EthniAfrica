@@ -10,6 +10,10 @@ import { describe, it, expect, vi, beforeEach } from "vitest";
 vi.mock("@/lib/supabase/queries/afrik/search", () => ({
   ftsSearchEntities: vi.fn(),
 }));
+vi.mock("@/lib/supabase/queries/afrik/searchNaming", () => ({
+  loadSearchNamingData: vi.fn(async () => new Map()),
+  searchNamingKey: (type: string, id: string) => `${type}:${id}`,
+}));
 
 import { ftsSearchEntities } from "@/lib/supabase/queries/afrik/search";
 import { ftsSearch } from "@/api/v2/services/searchService";
@@ -31,7 +35,30 @@ const mockCountry = {
   content: {},
 };
 
-const emptyResult = { peoples: [], countries: [], families: [], total: 0 };
+function completeResult(overrides: Record<string, unknown> = {}) {
+  return {
+    peoples: [],
+    countries: [],
+    families: [],
+    persons: [],
+    patronymes: [],
+    quizzes: [],
+    languages: [],
+    results: [],
+    peoplesTotal: 0,
+    countriesTotal: 0,
+    familiesTotal: 0,
+    personsTotal: 0,
+    patronymesTotal: 0,
+    quizzesTotal: 0,
+    languagesTotal: 0,
+    total: 0,
+    leads: [],
+    ...overrides,
+  };
+}
+
+const emptyResult = completeResult();
 
 const mockQuiz = {
   id: "QZ_1",
@@ -50,11 +77,15 @@ describe("ftsSearch (service)", () => {
   beforeEach(() => vi.clearAllMocks());
 
   it("happy path — returns peoples and countries for a valid query", async () => {
-    (ftsSearchEntities as ReturnType<typeof vi.fn>).mockResolvedValue({
-      peoples: [mockPeople],
-      countries: [mockCountry],
-      total: 2,
-    });
+    (ftsSearchEntities as ReturnType<typeof vi.fn>).mockResolvedValue(
+      completeResult({
+        peoples: [mockPeople],
+        countries: [mockCountry],
+        peoplesTotal: 1,
+        countriesTotal: 1,
+        total: 2,
+      })
+    );
 
     const result = await ftsSearch({ q: "Yoruba", limit: 20, offset: 0 });
 
@@ -94,11 +125,13 @@ describe("ftsSearch (service)", () => {
   });
 
   it("filter combination — passes classificationStatus to query", async () => {
-    (ftsSearchEntities as ReturnType<typeof vi.fn>).mockResolvedValue({
-      peoples: [mockPeople],
-      countries: [],
-      total: 1,
-    });
+    (ftsSearchEntities as ReturnType<typeof vi.fn>).mockResolvedValue(
+      completeResult({
+        peoples: [mockPeople],
+        peoplesTotal: 1,
+        total: 1,
+      })
+    );
 
     await ftsSearch({
       q: "Yoruba",
@@ -247,11 +280,15 @@ describe("ftsSearchHandler (handler)", () => {
   beforeEach(() => vi.clearAllMocks());
 
   it("response envelope — has data.peoples, data.countries, data.total, meta.license, meta.attribution, errors", async () => {
-    (ftsSearchEntities as ReturnType<typeof vi.fn>).mockResolvedValue({
-      peoples: [mockPeople],
-      countries: [mockCountry],
-      total: 2,
-    });
+    (ftsSearchEntities as ReturnType<typeof vi.fn>).mockResolvedValue(
+      completeResult({
+        peoples: [mockPeople],
+        countries: [mockCountry],
+        peoplesTotal: 1,
+        countriesTotal: 1,
+        total: 2,
+      })
+    );
 
     const result = await ftsSearchHandler({
       q: "Yoruba",
@@ -345,11 +382,17 @@ describe("ftsSearchHandler (handler)", () => {
 
   // @req REQ-125
   it("near-miss leads — defaults to an empty array when the service omits leads", async () => {
-    (ftsSearchEntities as ReturnType<typeof vi.fn>).mockResolvedValue({
+    const withoutLeads = completeResult({
       peoples: [mockPeople],
       countries: [mockCountry],
+      peoplesTotal: 1,
+      countriesTotal: 1,
       total: 2,
     });
+    delete withoutLeads.leads;
+    (ftsSearchEntities as ReturnType<typeof vi.fn>).mockResolvedValue(
+      withoutLeads
+    );
 
     const result = await ftsSearchHandler({
       q: "Yoruba",

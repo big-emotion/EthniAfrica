@@ -102,6 +102,7 @@ describe("the subject of a name search", () => {
         selfGiven: "Fulbe (pluriel), Pullo (singulier)",
         forms: [{ form: "Peul" }, { form: "Fulani" }],
         eras: [],
+        presentation: { forms: [], eras: [], disagreements: [], evidence: [] },
       },
     };
 
@@ -122,6 +123,7 @@ describe("the subject of a name search", () => {
       naming: {
         forms: [{ form: "Mandingue (français colonial)" }],
         eras: [],
+        presentation: { forms: [], eras: [], disagreements: [], evidence: [] },
       },
     };
 

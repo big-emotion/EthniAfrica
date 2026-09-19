@@ -17,7 +17,12 @@ function subject(
     type: "people",
     id: `PPL_${name.toUpperCase()}`,
     name,
-    naming: { forms: [], eras: [], ...naming },
+    naming: {
+      forms: [],
+      eras: [],
+      presentation: { forms: [], eras: [], disagreements: [], evidence: [] },
+      ...naming,
+    },
   };
 }
 

@@ -167,6 +167,44 @@ describe("mapSearchEnvelope", () => {
     expect(people.population).toBe(1_500_000);
   });
 
+  // @req REQ-180
+  it("forwards the server naming projection instead of rebuilding it in the browser", () => {
+    const serverNaming = {
+      forms: [{ form: "Server form" }],
+      eras: [],
+      presentation: {
+        forms: [
+          {
+            form: "Server form",
+            selfGiven: null,
+            attestations: [],
+            evidence: [],
+          },
+        ],
+        eras: [],
+        disagreements: [],
+        evidence: [],
+      },
+    };
+    const [language] = mapSearchEnvelope({
+      data: {
+        languages: [
+          {
+            id: "lin",
+            name: "Lingala",
+            familyId: "FLG_BANTU",
+            content: { alternateNames: ["Client-derived form"] },
+            naming: serverNaming,
+          },
+        ],
+      },
+    });
+
+    expect(language.naming).toBe(serverNaming);
+    expect(language.naming?.presentation.forms[0].form).toBe("Server form");
+    expect(language.naming).not.toHaveProperty("sourceIds");
+  });
+
   // @req REQ-002
   it("reads a country's display name from nameFr and shows its etymology", () => {
     const country = mapSearchEnvelope(envelope)[1];
@@ -431,15 +469,11 @@ describe("mapSearchEnvelope", () => {
     expect(language.sourceCount).toBe(1);
   });
 
-  // The loader stores a language's names inside `content`, and the search RPC
-  // returns `content` whole — so that is where the names are when a row
-  // reaches this mapper. The projection read them at the row's root, which is
-  // where they sit in a fiche and nowhere in the API. Its unit test passed a
-  // fiche-shaped root, so it stayed green while every language reached the
-  // result page with no names at all, the 206 forms written on 2026-09-18
-  // included.
-  // @req REQ-178
-  it("delivers a language's names where the search row actually carries them", () => {
+  // Naming is a server projection. Rebuilding it here would put corpus prose
+  // and evidence interpretation back in the browser and create a second
+  // authority beside the search service.
+  // @req REQ-180
+  it("does not derive naming from raw content when the server projection is absent", () => {
     const [language] = mapSearchEnvelope({
       data: {
         languages: [
@@ -447,41 +481,16 @@ describe("mapSearchEnvelope", () => {
             id: "wol",
             name: "Wolof",
             familyId: "FLG_ATLANTIQUE",
-            content: { alternateNames: ["Ouolof", "Volof", "Walaf"] },
-          },
-        ],
-      },
-    });
-
-    expect(language.naming?.forms.map((form) => form.form)).toEqual([
-      "Ouolof",
-      "Volof",
-      "Walaf",
-    ]);
-  });
-
-  // The language model gained the field the people and family models already
-  // had, so a language can say what a name raises instead of publishing it
-  // bare under « Aucun de ces noms n'est faux ».
-  // @req REQ-178
-  it("delivers what a language's names raise", () => {
-    const [language] = mapSearchEnvelope({
-      data: {
-        languages: [
-          {
-            id: "naq",
-            name: "Nama",
-            familyId: "FLG_KHOE",
             content: {
-              alternateNames: ["Hottentot"],
-              whyProblematic: "Terme colonial, tenu pour raciste.",
+              alternateNames: ["Ouolof", "Volof", "Walaf"],
+              whyProblematic: "Curator prose that the client must not render.",
             },
           },
         ],
       },
     });
 
-    expect(language.naming?.problem).toBe("Terme colonial, tenu pour raciste.");
+    expect(language.naming).toBeUndefined();
   });
 
   // REQ-136 AC: "Given a language name and a people name that match a query
