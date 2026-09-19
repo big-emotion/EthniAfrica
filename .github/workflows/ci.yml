@@ -256,11 +256,11 @@ jobs:
           fi
 
   dependency-audit:
-    # A high-severity advisory in the installed tree fails the PR that
-    # introduces it. Its own job so it reports without waiting on the build,
-    # and so a new advisory published against an untouched lockfile names
-    # itself instead of hiding inside the build's failure. Moderate findings
-    # stay visible in the log without blocking.
+    # A high-severity advisory in a dependency change fails the PR that
+    # introduces it. GitHub's dependency diff is independent of npm's audit
+    # endpoint, whose bulk API can fall back to the retired quick API during
+    # registry incidents and fail before it examines a single advisory.
+    # Moderate findings stay visible in the job summary without blocking.
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -268,27 +268,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+      - name: Review dependency changes
+        uses: actions/dependency-review-action@a1d282b36b6f3519aa1f3fc636f609c47dddb294 # v5.0.0
         with:
-          node-version: "22.x"
-          cache: "npm"
-
-      # Audit the committed lockfile directly. Without an installed tree npm
-      # falls back to its retired quick-audit endpoint and rejects the job
-      # before it can inspect advisories. The registry occasionally returns a
-      # transient 5xx during maintenance, so retry briefly without ever turning
-      # a final audit failure into a passing result.
-      - name: Audit dependencies
-        run: |
-          for attempt in 1 2 3; do
-            if npm audit --package-lock-only --audit-level=high; then
-              exit 0
-            fi
-
-            if [ "$attempt" -eq 3 ]; then
-              exit 1
-            fi
-
-            echo "Dependency audit attempt $attempt failed; retrying in 20 seconds."
-            sleep 20
-          done
+          fail-on-severity: high

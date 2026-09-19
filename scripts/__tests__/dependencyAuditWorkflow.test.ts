@@ -9,11 +9,11 @@ const workflow = readFileSync(
 
 describe("dependency audit workflow", () => {
   // @req REQ-091
-  it("audits the lockfile through npm's supported bulk advisory endpoint", () => {
+  it("blocks newly introduced high-severity vulnerable dependencies", () => {
     expect(workflow).toContain(
-      "npm audit --package-lock-only --audit-level=high"
+      "actions/dependency-review-action@a1d282b36b6f3519aa1f3fc636f609c47dddb294"
     );
-    expect(workflow).toContain("for attempt in 1 2 3");
-    expect(workflow).not.toContain("run: npm audit --audit-level=high");
+    expect(workflow).toContain("fail-on-severity: high");
+    expect(workflow).not.toContain("npm audit");
   });
 });
