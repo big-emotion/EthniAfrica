@@ -2,6 +2,14 @@
 
 Date: 2026-09-19. Status: **approved design, not started**. Target branch: `recette`.
 
+> **Course-correction notice (2026-09-19).** Read this plan for the complete
+> product scope, then follow
+> [`search-result-feed-correction-plan.md`](./search-result-feed-correction-plan.md)
+> for the corrected contracts and implementation order. The correction plan
+> supersedes this file where block identity, responsive coverage, data contracts,
+> phase order or visual-test mechanics differ; it does not reduce the approved
+> feature scope.
+
 This plan turns the search-result page (`/fr/atlas/recherche?q=…`) into a feed:
 the name answer and the shorts in the first screen, then visual shelves, then the
 reference material. It is written so that an agent with **only this repository**
@@ -13,18 +21,20 @@ anything. Where the plan does not decide, it says so in §12 and names the defau
 **Read, in this order, before touching code:**
 
 1. This file, entirely.
-2. [`docs/design/mockups/search-feed/README.md`](../design/mockups/search-feed/README.md)
+2. [`docs/plans/search-result-feed-correction-plan.md`](./search-result-feed-correction-plan.md),
+   which closes the readiness findings and supplies the executable phase order.
+3. [`docs/design/mockups/search-feed/README.md`](../design/mockups/search-feed/README.md)
    and the forty boards beside it — the rendering this plan is measured against.
    Serve the repository root over HTTP (`npx serve .` or
    `python3 -m http.server`) and open
    `/docs/design/mockups/search-feed/Mande.dc.html`; `file://` is blocked.
-3. [`docs/design/mockups/search-feed/generator/gen.py`](../design/mockups/search-feed/generator/gen.py)
+4. [`docs/design/mockups/search-feed/generator/gen.py`](../design/mockups/search-feed/generator/gen.py)
    — one Python function per tile. Every size, gap and colour quoted in §5 comes
    from it, and every number in it is already the token value (§3); when this
    plan and `gen.py` disagree, `gen.py` is the board.
-4. [`docs/design/search-result-charter.md`](../design/search-result-charter.md) —
+5. [`docs/design/search-result-charter.md`](../design/search-result-charter.md) —
    the contract this plan amends (Phase 0).
-5. `docs/design/brand-charter.md`, `typography-charter.md`, `actions-charter.md`,
+6. `docs/design/brand-charter.md`, `typography-charter.md`, `actions-charter.md`,
    `games-charter.md` — the rules §3 applies.
 
 **Working rules** (from `CLAUDE.md`, repeated because each has already cost a red

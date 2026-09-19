@@ -108,6 +108,7 @@ were referenced by nothing at all, two of them written that same week.
 
 - [Congo history dossiers: implementation plan](plans/congo-history-dossiers.md)
 - [Search-result feed: implementation plan](plans/search-result-feed.md)
+- [Search-result feed: correction and implementation sequencing plan](plans/search-result-feed-correction-plan.md)
 
 ## Elsewhere
 
