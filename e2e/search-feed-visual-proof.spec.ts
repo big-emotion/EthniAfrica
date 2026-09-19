@@ -9,6 +9,7 @@ import {
   assertPixelParity,
   loadSearchFeedManifest,
 } from "./support/search-feed-visual";
+import { LOCALE } from "./support/locale";
 
 const FEED_ROOT = "[data-feed-root]";
 const BOARD_PATH = "/docs/design/mockups/search-feed/Mande.dc.html";
@@ -70,6 +71,7 @@ function expectBoxWithinOnePixel(
 
 test.describe("search-feed visual harness proof", () => {
   test.use({ deviceScaleFactor: 1, viewport: { width: 430, height: 800 } });
+  test.skip(LOCALE !== "fr", "The approved board copy is French");
 
   // @req REQ-180
   test("proves Mande mobile-day parity and rejects a one-pixel mutation", async ({
