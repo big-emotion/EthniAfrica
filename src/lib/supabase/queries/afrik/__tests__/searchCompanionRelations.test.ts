@@ -144,6 +144,12 @@ describe("batched search companion relations", () => {
           error: null,
         },
       ],
+      afrik_patronymes: [
+        {
+          data: [{ id: "PAT_TRAORE" }],
+          error: null,
+        },
+      ],
     });
 
     const graph = await loadSearchCompanionRelations(
@@ -167,6 +173,7 @@ describe("batched search companion relations", () => {
       "afrik_languages",
       "afrik_people_languages",
       "afrik_patronyme_peoples",
+      "afrik_patronymes",
     ]);
     expect([...graph.keys()]).toEqual([
       "people:PPL_EKPEYE",
@@ -265,7 +272,7 @@ describe("batched search companion relations", () => {
   });
 
   // @req REQ-180
-  it("does no work for an empty input and keeps unknown subjects as empty graph nodes", async () => {
+  it("does no work for an empty input and omits unknown subjects", async () => {
     const emptyClient = { from: vi.fn() };
     expect(
       await loadSearchCompanionRelations([], emptyClient as never)
@@ -279,7 +286,7 @@ describe("batched search companion relations", () => {
       [subject("country", "ZZZ")],
       client as never
     );
-    expect(graph.get("country:ZZZ")).toEqual([]);
+    expect(graph.has("country:ZZZ")).toBe(false);
   });
 
   // @req REQ-180

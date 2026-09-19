@@ -348,21 +348,21 @@ describe("search companion catalogs", () => {
         subjects: [peopleSubject],
         eligible: true,
         difficulty: 3,
-        templateId: "meaning",
+        templateId: "T2",
       },
       {
         id: "easy-b",
         subjects: [peopleSubject],
         eligible: true,
         difficulty: 1,
-        templateId: "origin",
+        templateId: "T1",
       },
       {
         id: "easy-a",
         subjects: [peopleSubject],
         eligible: false,
         difficulty: 1,
-        templateId: "origin",
+        templateId: "T1",
       },
     ]);
 

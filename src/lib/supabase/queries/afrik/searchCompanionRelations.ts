@@ -128,12 +128,6 @@ export async function loadSearchCompanionRelations(
   }
   if (unique.length === 0) return new Map();
 
-  const graph = new Map<string, SearchCompanionRelatedSubject[]>(
-    unique.map((subject) => [
-      searchCompanionSubjectKey(subject.type, subject.id),
-      [],
-    ])
-  );
   const peopleIds = idsOf(unique, "people");
   const countryIds = idsOf(unique, "country");
   const familyIds = idsOf(unique, "languageFamily");
@@ -205,6 +199,14 @@ export async function loadSearchCompanionRelations(
           .in("patronyme_id", patronymeIds)
           .order("people_id", { ascending: true })
       : Promise.resolve(EMPTY_RESULT);
+  const patronymesPromise =
+    patronymeIds.length > 0
+      ? client
+          .from("afrik_patronymes")
+          .select("id")
+          .in("id", patronymeIds)
+          .order("id", { ascending: true })
+      : Promise.resolve(EMPTY_RESULT);
 
   const [
     peopleResult,
@@ -215,6 +217,7 @@ export async function loadSearchCompanionRelations(
     languagesResult,
     languagePeoplesResult,
     patronymePeoplesResult,
+    patronymesResult,
   ] = await Promise.all([
     peoplePromise,
     peopleCountriesPromise,
@@ -224,6 +227,7 @@ export async function loadSearchCompanionRelations(
     languagesPromise,
     languagePeoplesPromise,
     patronymePeoplesPromise,
+    patronymesPromise,
   ]);
 
   const results = [
@@ -235,10 +239,39 @@ export async function loadSearchCompanionRelations(
     ["afrik_languages", languagesResult],
     ["afrik_people_languages", languagePeoplesResult],
     ["afrik_patronyme_peoples", patronymePeoplesResult],
+    ["afrik_patronymes", patronymesResult],
   ] as const;
   for (const [table, result] of results) {
     if (result.error) throw failure(table, result.error);
   }
+
+  const knownKeys = new Set<string>();
+  for (const row of asRows(peopleResult.data)) {
+    const id = text(row.id);
+    if (id) knownKeys.add(searchCompanionSubjectKey("people", id));
+  }
+  for (const row of asRows(familiesResult.data)) {
+    const id = text(row.id);
+    if (id) knownKeys.add(searchCompanionSubjectKey("languageFamily", id));
+  }
+  for (const row of asRows(countriesResult.data)) {
+    const id = text(row.id);
+    if (id) knownKeys.add(searchCompanionSubjectKey("country", id));
+  }
+  for (const row of asRows(languagesResult.data)) {
+    const id = text(row.id);
+    if (id) knownKeys.add(searchCompanionSubjectKey("language", id));
+  }
+  for (const row of asRows(patronymesResult.data)) {
+    const id = text(row.id);
+    if (id) knownKeys.add(searchCompanionSubjectKey("patronyme", id));
+  }
+  const graph = new Map<string, SearchCompanionRelatedSubject[]>(
+    unique.flatMap((subject) => {
+      const key = searchCompanionSubjectKey(subject.type, subject.id);
+      return knownKeys.has(key) ? [[key, []]] : [];
+    })
+  );
 
   for (const row of asRows(peopleResult.data)) {
     const id = text(row.id);

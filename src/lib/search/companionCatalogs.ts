@@ -22,6 +22,7 @@ import {
 } from "@/lib/home/didYouKnowIllustrations";
 import { PROVERBS, type Proverb } from "@/lib/proverbs/proverbs";
 import type { Language } from "@/types/shared";
+import type { QuizTemplateId } from "@/types/quiz";
 
 import {
   orderCompanionMatches,
@@ -60,7 +61,7 @@ export interface CompanionShort extends CompanionCatalogItem {
 export interface CompanionQuizCandidate extends CompanionCatalogItem {
   eligible: boolean;
   difficulty: number;
-  templateId: string;
+  templateId: QuizTemplateId;
 }
 
 // @req REQ-180
@@ -230,11 +231,11 @@ export function shortsForTargets(
 }
 
 // @req REQ-180
-export function quizForTargets(
+export function quizForTargets<Item extends CompanionQuizCandidate>(
   targets: readonly CompanionMatch[],
-  candidates: readonly CompanionQuizCandidate[],
+  candidates: readonly Item[],
   limit = 1
-): CompanionSelection<CompanionQuizCandidate> {
+): CompanionSelection<Item> {
   const eligible = candidates
     .filter((candidate) => candidate.eligible)
     .slice()
