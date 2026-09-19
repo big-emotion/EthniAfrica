@@ -40,6 +40,11 @@
     "rationale": "« Voltaïque » est « un terme purement géographique imposé par l'administration coloniale, sans consultation des communautés locales », créé par des administrateurs et linguistes coloniaux français ; « Gur » ne fait que lui succéder."
   },
   {
+    "id": "FLG_KHOE",
+    "status": "reconstructive",
+    "rationale": "Le grief vise « Hottentot », forgé par les colons de la VOC vers 1650-1670, pas « Khoe » : le nom de la famille vient de l'autonyme khoe, « personne », et désigne la reconstruction khoe-kwadi de Tom Güldemann, qui réunit les langues khoe vivantes et le kwadi éteint — le même motif que ses deux familles sœurs, Kx'a et Tuu."
+  },
+  {
     "id": "FLG_KHOISAN",
     "status": "colonial-legacy",
     "rationale": "Forgé en 1928 par Leonhard Schultze « sur des critères biométriques et raciaux », dans le courant anthropologique d'Eugen Fischer ; la fiche y attache aussi « Hottentot » et « Bushmen ». Le défaut génétique — trois familles distinctes — vient après la charge coloniale."

@@ -2,11 +2,14 @@
   "id": "FLG_KHOE",
   "nameFr": "Khoe",
   "nameEn": "Khoe / Khoeid",
+  "classificationStatus": "reconstructive",
   "content": {
     "decolonialHeader": {
       "selfAppellation": "Khoekhoe",
       "contemporaryUsage": "Khoe languages / Langues khoe (Tom Güldemann, Bonny Sands, classification moderne).",
-      "historicalAppellations": "Khoe / Khoeid"
+      "historicalAppellations": ["Hottentot", "Nama-Hottentot"],
+      "originOfHistoricalTerm": "Le terme Hottentot est forgé par les colons néerlandais de la Compagnie néerlandaise des Indes orientales vers 1650-1670, lors de l'établissement de la station de ravitaillement du Cap ; les journaux de Jan van Riebeeck, au milieu des années 1650, mentionnent fréquemment les Khoikhoi, dont ils transcrivent mal le nom (Cochoqua, Khoe-Khoi, Khoi-Khoi). Deux explications circulent et aucune n'est établie : l'une y voit les syllabes néerlandaises hot en tot, qui moqueraient la phonologie à clics ; l'autre, proposée par M. D. W. Jeffreys (1947), un emprunt aux chants et aux danses khoekhoe. Le composé Nama-Hottentot accole ensuite ce terme à l'endonyme nama dans les sources et l'administration coloniales. Le nom que les locuteurs se donnent vient de leur propre langue : khoe, « personne », redoublé, soit « vrais gens ».",
+      "whyProblematic": "Le terme Hottentot a été construit comme un stéréotype colonial. François-Xavier Fauvelle-Aymar (2002) montre comment les récits de voyageurs, du XVe au XIXe siècle, en ont fait une figure homogène, tantôt bon sauvage, tantôt monstre primitif, que naturalistes et anatomistes ont ensuite mesurée et hiérarchisée, jusqu'à l'exhibition de Sarah Baartman, dite Vénus hottentote, en Europe au début du XIXe siècle ; cette figure a servi à justifier la dépossession des terres. Linda Evi Merians (2001) retrace la même construction dans la littérature anglaise des XVIe au XVIIIe siècles, faite de motifs de bestialité et de primitivisme. Le terme est aujourd'hui tenu pour raciste et offensant ; les locuteurs se désignent par Khoekhoegowab, Nama ou Damara."
     },
     "generalInfo": {
       "branches": [
