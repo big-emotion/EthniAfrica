@@ -15,8 +15,8 @@ import { LOCALE } from "./support/locale";
  * record cannot legitimately vary: one width, one ground, one radius, one
  * gap, left-aligned headings, and no pipeline or identifier text.
  *
- * Pages settle on `load` plus 2.5 s, which is how the height baseline was
- * measured, so the height comparison is like for like.
+ * Pages settle on network idle, final fonts and 2.5 s, which is how the height
+ * baseline was measured, so the height comparison is like for like.
  */
 
 const baseline = JSON.parse(
@@ -64,6 +64,11 @@ async function openRecord(page: Page, path: string) {
   const response = await page.goto(path, { waitUntil: "load" });
   expect(response?.status(), path).toBeLessThan(400);
   await page.locator(".afh-parchment").first().waitFor();
+  // The committed baseline was captured after network idle with the final
+  // fonts. Keep the live measurement on that same settled render: measuring
+  // the fallback face made the height gate depend on font-download timing.
+  await page.waitForLoadState("networkidle");
+  await page.evaluate(() => document.fonts.ready);
   await page.waitForTimeout(2_500);
 }
 

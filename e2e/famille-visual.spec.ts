@@ -71,6 +71,12 @@ test.describe("Family fiche at the mobile source-of-truth width", () => {
     await page.setViewportSize({ width: 430, height: 900 });
     await page.goto(FAMILY_URL);
     await page.waitForLoadState("networkidle");
+    await page.locator(".afh-parchment").first().waitFor();
+    await page.evaluate(() => document.fonts.ready);
+    // The known overflow appears only after the fiche has settled. Measuring
+    // earlier made the expected-failure marker alternate between a surprise
+    // pass and the real product failure across retries.
+    await page.waitForTimeout(2500);
 
     expect(
       await page.evaluate(
