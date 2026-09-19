@@ -208,11 +208,11 @@ def poster(s, i, d, w):
     size = 36 if d else 32
     return (f'<a href="#short-{i}" style="flex: none; width: {w}px; text-decoration: none; color: {TEXT};">'
             f'<div style="position: relative; width: {w}px; height: {h}px; {R} overflow: hidden;">'
-            f'<img src="{POSTERS[slug(title)]}" alt="Couverture : D&#39;où vient le nom « {title} » ?" style="width: {w}px; height: {h}px; object-fit: cover; display: block;">'
+            f'<img src="{POSTERS[slug(title)]}" alt="Couverture : D’où vient le nom «&nbsp;{title}&nbsp;» ?" style="width: {w}px; height: {h}px; object-fit: cover; display: block;">'
             f'<span style="{chip_style} right: 8px;">{dur}</span>'
             f'<svg width="{size}" height="{size}" viewBox="0 0 36 36" aria-hidden="true" style="position: absolute; top: 44%; left: 50%; margin-left: -{size // 2}px;">'
             f'<circle cx="18" cy="18" r="18" fill="{MEDIA_INK}"></circle><path d="M14 11 L26 18 L14 25 Z" fill="#120e0a"></path></svg></div>'
-            f'<div style="margin-top: 8px; {t("caption", d, 700)} color: {TEXT};">D&#39;où vient le nom «&nbsp;{title}&nbsp;»&nbsp;?</div>'
+            f'<div style="margin-top: 8px; {t("caption", d, 700)} color: {TEXT};">D’où vient le nom «&nbsp;{title}&nbsp;» ?</div>'
             f'<div style="{t("eyebrow", d)} color: {SOFT};">{dur} · {label or "Découvertes"}</div></a>')
 
 

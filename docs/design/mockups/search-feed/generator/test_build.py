@@ -260,6 +260,19 @@ class SearchFeedGeneratorTest(unittest.TestCase):
                     case["id"],
                 )
 
+            board = next(
+                entry
+                for entry in self.entries
+                if entry["case"] == case["id"]
+                and entry["variant"] == "desktop-day"
+            )
+            markup = html.unescape(
+                (self.output / board["file"]).read_text(encoding="utf-8")
+            )
+            for name, _, _ in case.get("shorts", {}).get("items", []):
+                question = f"D’où vient le nom «\u00a0{name}\u00a0» ?"
+                self.assertEqual(markup.count(question), 2, (case["id"], name))
+
         poster_source = (GENERATOR_DIR / "posters.py").read_text(encoding="utf-8")
         self.assertIn("D’OÙ VIENT LE NOM", poster_source)
         self.assertNotIn('d.text((20, H - 196), "D\'OÙ VIENT"', poster_source)
