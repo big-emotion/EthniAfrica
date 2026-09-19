@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { ficheHrefFor } from "@/components/search/SearchResultCard";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { getStaticPageRoute } from "@/lib/routing";
@@ -162,8 +163,22 @@ export function NameAnswer({ subjects, query, language }: NameAnswerProps) {
         <ul className="mt-afh-lg flex flex-col gap-3">
           {subjects.map((subject) => (
             <li key={`${subject.type}-${subject.id}`}>
+              {/* The question is only honest if the reader can answer it: once
+                  every entity is a subject the result list below is empty, so
+                  this link is the only way to one of them. */}
+              {/* Held in the paragraph the name always sat in: a bare link
+                  inherits the mobile centring rule and would sit centred
+                  above a left-aligned autonym — two alignments in one entry. */}
               <p className="font-display text-afh-text text-lg font-semibold">
-                {getLocalizedSearchResultName(subject, language)}
+                <Link
+                  href={ficheHrefFor(subject, language)}
+                  className={cn(
+                    "underline decoration-afh-border underline-offset-4 hover:decoration-afh-accent-ink",
+                    CHARTER_FOCUS_RING
+                  )}
+                >
+                  {getLocalizedSearchResultName(subject, language)}
+                </Link>
               </p>
               {subject.naming?.selfGiven ? (
                 <p className="text-afh-text-soft mt-1 text-sm">

@@ -33,9 +33,51 @@ export function selectNameSubject(
   const wanted = normalizeString(query.trim());
   if (!wanted) return [];
 
-  return results.filter((result) =>
+  const exact = results.filter((result) =>
     namesOf(result, language).some((name) => normalizeString(name) === wanted)
   );
+  if (exact.length === 0) return [];
+
+  // Bassa is three peoples filed « Bassa », « Bassa du Cameroun » and « Bassa
+  // Nge »; the exact match alone answered about one of them. So an entry whose
+  // filed name begins with the searched word — as a word, followed by a space —
+  // answers to the name too, and the page asks which one. The bounds are what
+  // the corpus measured on 2026-09-19:
+  //
+  // - a space, not a parenthesis: « Fang (Gabon) » is the Fang split by
+  //   country, grouped at display, not a second people;
+  // - the kind of an exact match: « mandé » answers to the family, and « Mande
+  //   du Sud », a people, is related to it rather than confused with it;
+  // - never without an exact match, so no query acquires subjects merely
+  //   because longer names start with it.
+  const kinds = new Set(exact.map((result) => result.type));
+  // Fiches the corpus declares one people split — the signal the result list
+  // groups on — are that people, not a second one to choose between.
+  const groups = new Set(
+    exact.map((result) => result.peopleGroupId).filter(Boolean)
+  );
+  const widened = results.filter(
+    (result) =>
+      !exact.includes(result) &&
+      kinds.has(result.type) &&
+      !(result.peopleGroupId && groups.has(result.peopleGroupId)) &&
+      carriesAsFirstWord(
+        normalizeString(getLocalizedSearchResultName(result, language)),
+        wanted
+      )
+  );
+
+  return [...exact, ...widened];
+}
+
+/**
+ * « bassa du cameroun » carries « bassa » as its first word; « bassari » does
+ * not, and neither does « fang (gabon) », whose next word is a parenthesis —
+ * the corpus's mark for a people split by country rather than a second one.
+ */
+function carriesAsFirstWord(name: string, word: string): boolean {
+  if (!name.startsWith(`${word} `)) return false;
+  return !name.slice(word.length).trimStart().startsWith("(");
 }
 
 /**
