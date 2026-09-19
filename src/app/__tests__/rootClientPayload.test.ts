@@ -44,4 +44,22 @@ describe("root client payload", () => {
     expect(layout).not.toContain("TypeformPreload");
     expect(packageJson).not.toContain('"sonner"');
   });
+
+  // @req REQ-112
+  test("loads global dialog code only when a dialog is opened", () => {
+    const pageLayout = read("src/components/layout/PageLayout.tsx");
+
+    expect(pageLayout).not.toMatch(
+      /import\s+\{\s*SearchModalV2\s*\}\s+from\s+["']@\/components\/search\/SearchModalV2["']/
+    );
+    expect(pageLayout).not.toMatch(
+      /import\s+\{\s*KeyboardShortcutsModal\s*\}\s+from\s+["']@\/components\/layout\/KeyboardShortcutsModal["']/
+    );
+    expect(pageLayout).toContain('import("@/components/search/SearchModalV2")');
+    expect(pageLayout).toContain(
+      'import("@/components/layout/KeyboardShortcutsModal")'
+    );
+    expect(pageLayout).toContain("isSearchOpen ? (");
+    expect(pageLayout).toContain("isShortcutsOpen ? (");
+  });
 });

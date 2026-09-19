@@ -1,17 +1,32 @@
 "use client";
 
 import { ReactNode, useRef, useState } from "react";
+import dynamic from "next/dynamic";
 import { Language } from "@/types/shared";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteTrail } from "@/components/layout/SiteTrail";
-import { SearchModalV2 } from "@/components/search/SearchModalV2";
-import { KeyboardShortcutsModal } from "@/components/layout/KeyboardShortcutsModal";
 import { useKeyboardShortcuts } from "@/hooks/use-keyboard-shortcuts";
 import { useRouter } from "next/navigation";
 import { getLocalizedRoute } from "@/lib/routing";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { BackToTop } from "@/components/layout/BackToTop";
 import { PageHero } from "@/components/layout/PageHero";
+
+const SearchModalV2 = dynamic(
+  () =>
+    import("@/components/search/SearchModalV2").then(
+      (mod) => mod.SearchModalV2
+    ),
+  { ssr: false }
+);
+
+const KeyboardShortcutsModal = dynamic(
+  () =>
+    import("@/components/layout/KeyboardShortcutsModal").then(
+      (mod) => mod.KeyboardShortcutsModal
+    ),
+  { ssr: false }
+);
 
 interface PageLayoutProps {
   children: ReactNode;
@@ -139,19 +154,23 @@ export const PageLayout = ({
         mastheadRef={mastheadRef}
       />
 
-      {/* Search modal */}
-      <SearchModalV2
-        open={isSearchOpen}
-        onClose={() => setIsSearchOpen(false)}
-        language={language}
-      />
+      {/* Search modal code is fetched only when the reader opens it. */}
+      {isSearchOpen ? (
+        <SearchModalV2
+          open
+          onClose={() => setIsSearchOpen(false)}
+          language={language}
+        />
+      ) : null}
 
-      {/* Keyboard shortcuts cheatsheet */}
-      <KeyboardShortcutsModal
-        language={language}
-        open={isShortcutsOpen}
-        onClose={() => setIsShortcutsOpen(false)}
-      />
+      {/* The shortcuts cheatsheet follows the same on-demand boundary. */}
+      {isShortcutsOpen ? (
+        <KeyboardShortcutsModal
+          language={language}
+          open
+          onClose={() => setIsShortcutsOpen(false)}
+        />
+      ) : null}
 
       {/* The hero, and the trail it now carries.
 
