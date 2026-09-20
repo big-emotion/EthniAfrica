@@ -84,13 +84,68 @@ que les sources ne portent pas.
 Une ligne par source, avec son tier et pourquoi on pense qu'elle tient.
 Aucune licence n'est vérifiée à cette étape — c'est le travail de `structure`.
 
+## Recherche externe
+
+Le prompt autonome décrit dans « La recherche externe » ci-dessous, prêt à
+copier, rempli pour ce sujet précis.
+
 ## Réserves
 
 Ce qui pourrait faire échouer le sujet.
 ```
 
+## La recherche externe
+
+Chaque sujet appelle deux travaux : **la curation des données du site** (ce que
+le corpus dit déjà de ce nom) et **un sourcing profond hors du corpus** (ce que
+la recherche publiée dit de son origine). Le second, l'opérateur le confie à un
+autre agent, connecté à Internet (Google, Grok ou équivalent) : produis donc, en
+plus du rapport, **un prompt autonome qu'il envoie lui-même à cet agent**. Il
+figure dans la section « Recherche externe » du rapport, et **s'affiche aussi en
+clair dans la conversation**, pour qu'il puisse le copier sans ouvrir de
+fichier.
+
+**Le prompt tient debout seul** : l'agent qui le reçoit ne sait rien du projet,
+du corpus ni de cette conversation. Remplace chaque `{…}` du gabarit ci-dessous
+par les valeurs du sujet, sans rien laisser entre accolades :
+
+> Tu es un agent de recherche connecté à Internet. Ta tâche : remonter l'origine
+> du nom « {nom exact} » ({typologie : peuple, pays, patronyme, lieu ou langue}),
+> le plus loin possible dans l'histoire, en citant une source (titre et URL)
+> pour chaque affirmation.
+>
+> 1. Pars de la forme actuelle du nom, puis remonte vers chaque forme antérieure
+>    attestée : quel nom portait-il avant, dans quelle langue, donné par qui,
+>    vers quelle date. Distingue le nom que le peuple, le lieu ou la langue se
+>    donne lui-même (endonyme) de celui que d'autres lui ont donné (exonyme).
+> 2. Le contexte historique, politique, culturel ou socio-économique ne
+>    t'intéresse que pour expliquer pourquoi le nom a changé, est resté ou a été
+>    imposé. Ne le développe jamais pour lui-même : la réponse est l'origine du
+>    nom, pas l'histoire qui l'entoure.
+> 3. Quand plusieurs origines concurrentes existent, rapporte-les toutes avec
+>    leur source, sans en privilégier une. Une source européenne, africaine,
+>    orale ou non officielle vaut chacune d'être rapportée : nous assignons le
+>    niveau de confiance ensuite, ce n'est pas à toi de trancher.
+> 4. Rends une liste, du plus récent au plus ancien : {affirmation} — {source
+>    et URL} — {ce que la source dit exactement, en une phrase}.
+> 5. Dis explicitement ce que tu n'as pas trouvé plutôt que de le déduire, et ne
+>    présente jamais une hypothèse comme un fait établi.
+
+**Ce que l'agent te rendra n'entre pas dans le rapport tout seul.** L'opérateur
+te le rapporte, et tu le passes au crible comme n'importe quelle source : un tier
+par ligne (`official`, `referenced`, `unverified`), jamais un classement par
+l'origine de la source. Tant qu'il ne l'a pas fait, la section « Sources
+pressenties » reste ce qu'elle est — des pressentiments, pas des vérifications.
+
 ## Les règles
 
+- **Le nom est toujours le centre.** L'information principale d'un sujet est
+  l'origine du nom, remontée le plus haut et le plus longuement possible. Le
+  contexte historique, politique, culturel ou socio-économique se dit pour
+  comprendre ce qui a fait bouger le nom, et s'arrête là : un rapport dont la
+  moitié parle d'histoire générale sans que le nom y change a perdu son sujet.
+  Décidé par l'opérateur le 2026-09-20, pour tous les sujets de la chaîne et
+  pas seulement celui-ci.
 - **Une seule typologie, parmi cinq : peuple, pays, patronyme, lieu, langue.**
   Un sujet répond toujours à « D'où vient le nom {X} ? » pour l'une de ces
   cinq — jamais une sixième. `lieu` ne nomme aucune table du corpus à part :
@@ -141,6 +196,11 @@ Créer un dossier dans `02-Reseaux-sociaux/`.
 ## Pour finir
 
 Recalcule l'état : `node social/tools/etat-pipeline/build-etat.mjs`.
+
+Affiche le prompt de recherche externe **en clair dans la conversation**, pas
+seulement dans le fichier, et dis à l'opérateur de l'envoyer à l'agent connecté
+avant `structure` : ce que cet agent rapporte peut changer les sources, voire
+l'angle.
 
 Puis dis à l'opérateur, en une ligne, que le sujet est en ⚪️ Brouillon et que
 l'étape suivante est `structure`. Ne la lance pas de toi-même.
