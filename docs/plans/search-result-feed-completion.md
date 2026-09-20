@@ -442,19 +442,61 @@ plan's seven update sessions). Typecheck and lint clean throughout.
 
 **What phase 12 actually has left, now that item 1 is done:**
 
-- Storybook stories (item 4 of §5) — not started. Real scaffolding work
-  (one story per block × ten fixtures × day/night), not a blocker for
-  anything else, and not attempted this session for that reason.
+- Storybook stories (item 4 of §5) — **started, in an eighth session.**
+  `src/components/search/SearchFeed.stories.tsx` gives the top-level
+  composition one story per `FEED_CASES` fixture (all ten), each passing the
+  fixture's own `board.presentation` so the story shows the approved
+  rendering, not a derived approximation. Verified two ways: `npm run
+build-storybook` bundles it without error, and a full local run of
+  `scripts/a11y-test.ts` against the built `storybook-static/` output — 290
+  stories, the ten new ones included — reports zero violations, confirming
+  this does not newly break the CI-blocking `axe-core (Storybook)` check.
+  Per-block stories (fifteen components) and a night-theme/desktop pass are
+  still unstarted; this covers only the top-level composition at its
+  default mobile-day rendering. One real defect surfaced building this:
+  `sourceTierVocabulary.test.ts`'s retired-identifier scan flagged the word
+  "admission" in a story comment as a collision with a retired source-tier
+  term (`/\badmissions?\b/i`) — an accidental English-word match, not an
+  actual reference, fixed by rewording. Left as a note for whoever adds the
+  next story: the scan runs on every line in `src`, not just source code.
+- The dead-code ceiling — **partially fixed, and precisely scoped.**
+  `feedCases.ts` is now a declared knip entry (moved `files` from 4/3 to
+  3/3, matching the existing pattern for `resultGrammar.ts` — knip's
+  `--production` mode discounts anything only reachable from a test/spec
+  entry regardless of the general `e2e/**/*.ts` pattern already in scope),
+  and two genuinely dead types in `feedBlockTypes.ts` (`FeedImage`,
+  `FeedCompanionSource`, confirmed unread anywhere via grep) are deleted,
+  moving `types` from 13 to 11. The ceiling itself stays at 10 rather than
+  being bumped to 11: `checkDeadCode.ts`'s own comment trail shows every
+  prior ceiling raise was justified item by item (the last one names
+  exactly which three `sources.ts` types and why they're held for a
+  parallel workstream), and the remaining 11 unused types include those
+  three plus eight more across subsystems this session has no context on
+  (games, consent, module-zero, revalidate schema, search companions, an
+  authorized-source catalog). Bumping the ceiling to paper over unaccounted
+  debt is exactly what the ratchet exists to prevent, so `check:dead` stays
+  red — honestly, for a reason now precisely named, rather than silently
+  widened.
 - The live confirming run of the rewritten consolidation spec, once
-  recette's egress quota clears (an infrastructure question, not a code one).
-- The dead-code ceiling overage this section just confirmed is unrelated to
-  search — a separate cleanup in the games/glossaire subsystem, out of this
-  plan's scope entirely.
+  recette's egress quota clears (an infrastructure question, not a code
+  one — confirmed via the live dev-server check in §1e:
+  `exceed_egress_quota`, "the project owner must upgrade their plan or
+  remove spend caps to restore service").
 - Phase 11's pixel-convergence pass (§3) — all forty boards reach the pixel
-  stage (§1c), none pass it yet; the residual diffs range from ~1px to
-  bassa's unexplained 13.5px (§1b), and closing them needs the kind of
-  fine-grained, iterative browser measurement this session's tooling proved
-  unreliable at (§1b's bassa investigation).
+  stage (§1c), none pass it yet. Revisited in an eighth session: `mande
+mobile-day`'s two full-page screenshots (reference and actual, both
+  attached from a real Playwright run) are visually indistinguishable at
+  normal viewing resolution despite a measured 1.7% pixel difference —
+  consistent with the sub-pixel font-rounding cause §1c's type-role
+  decision already named, not a new structural bug. All four of this
+  section's own open decisions are resolved (above), which is real
+  progress on the _causes_ this pass will need, but does not by itself
+  close any board under the 1% ceiling. Closing the remaining gap needs
+  either the boards regenerated at full clamp precision (the alternative
+  this session declined in favour of the documented override) or
+  per-board, per-pixel measurement this session's tooling could not do
+  reliably (§1b's bassa investigation: two scripted debug attempts hung on
+  environment/port contention before producing a measurement).
 
 ## 2. The rule that decides every remaining fix
 
