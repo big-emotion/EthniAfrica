@@ -70,6 +70,9 @@ export function ShortsBlock({
 }: ShortsBlockProps) {
   const copy = searchFeedCopy[language];
   const resolvedTitle = title ?? copy.shelves.shorts;
+  // The reviewed boards keep their dashed slot: it is part of the approved
+  // rendering. Production, with nothing to show, says so in one line.
+  const noShortYet = !reviewed && items.length === 0;
 
   return (
     <SearchFeedBlock
@@ -96,114 +99,121 @@ export function ShortsBlock({
           ) : undefined
         }
       />
-      {wideningNote ? (
+      {noShortYet ? (
+        <p className="mt-afh-md text-afh-caption font-bold text-afh-text-soft">
+          {copy.labels.noShortYet}
+        </p>
+      ) : null}
+      {wideningNote && !noShortYet ? (
         <p className="mt-afh-md text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)]">
           {wideningNote}
         </p>
       ) : null}
-      <ul
-        className={cn(
-          "flex snap-x snap-mandatory scroll-px-afh-lg list-none gap-afh-lg overflow-x-auto min-[1200px]:mt-afh-lg min-[1200px]:gap-afh-2xl",
-          "mt-afh-md",
-          !reviewed && "pb-afh-md"
-        )}
-        aria-label={resolvedTitle}
-      >
-        {emptySlot ? (
-          <li className="w-[130px] shrink-0 snap-start min-[1200px]:w-[160px]">
-            <div className="flex h-[231px] flex-col justify-between rounded-afh-lg border border-dashed border-afh-border p-afh-lg min-[1200px]:h-[284px]">
-              <p className="font-afh-display text-afh-small font-bold uppercase leading-[var(--afh-leading-small)] text-afh-text-soft">
-                {emptySlot.question}
-              </p>
-              <p className="text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
-                {emptySlot.body}
-              </p>
-              <SearchFeedContributionAction
-                language={language}
-                target={contributionTarget}
-                label={emptySlot.action}
-                variant="ghost"
-                className={
-                  reviewed
-                    ? `h-auto min-h-0 justify-start whitespace-normal p-0 text-left text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)] underline ${FEED_TEXT_LINK_HIT_AREA}`
-                    : "h-auto min-h-11 whitespace-normal px-0 text-left text-afh-caption text-[color:var(--accent-ink)]"
-                }
-              />
-            </div>
-            <p className="mt-afh-md text-afh-caption font-bold text-afh-text-soft">
-              {copy.labels.noShortYet}
-            </p>
-          </li>
-        ) : null}
-        {items.map((item, index) => {
-          const duration = durationLabel(item.durationSeconds);
-          return (
-            <li
-              key={item.href}
-              className={cn(
-                "shrink-0 snap-start",
-                reviewed && index >= 5 && "hidden min-[1200px]:block"
-              )}
-            >
-              <Link
-                href={item.href}
-                className={`block w-[130px] text-afh-text no-underline ${CHARTER_FOCUS_RING} min-[1200px]:w-[160px]`}
-              >
-                <div className="relative h-[231px] overflow-hidden rounded-afh-lg bg-afh-bg-warm min-[1200px]:h-[284px]">
-                  <Image
-                    src={item.poster.src}
-                    alt={item.poster.alt}
-                    unoptimized={reviewed}
-                    width={item.poster.width}
-                    height={item.poster.height}
-                    sizes="(min-width: 1200px) 160px, 130px"
-                    className="size-full object-cover"
-                  />
-                  <span
-                    className={cn(
-                      "absolute right-afh-md top-afh-md rounded-full bg-[color:var(--afh-media-badge-bg)] px-afh-md text-afh-eyebrow font-bold text-[color:var(--afh-media-badge-ink)]",
-                      reviewed
-                        ? "py-0.5 leading-[var(--afh-leading-eyebrow)]"
-                        : "py-afh-xs"
-                    )}
-                  >
-                    {duration}
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="absolute left-1/2 top-1/2 size-8 -translate-x-1/2 -translate-y-1/2 min-[1200px]:size-9"
-                  >
-                    <svg viewBox="0 0 36 36" role="presentation">
-                      <circle
-                        cx="18"
-                        cy="18"
-                        r="18"
-                        fill="var(--afh-media-badge-ink)"
-                      />
-                      <path
-                        d="M14 11 L26 18 L14 25 Z"
-                        fill="var(--afh-media-badge-bg)"
-                      />
-                    </svg>
-                  </span>
-                </div>
-                <p className="mt-afh-md text-afh-caption font-bold leading-[var(--afh-leading-caption)]">
-                  {formatProductionNameQuestion(item.name, language)}
+      {noShortYet ? null : (
+        <ul
+          className={cn(
+            "flex snap-x snap-mandatory scroll-px-afh-lg list-none gap-afh-lg overflow-x-auto min-[1200px]:mt-afh-lg min-[1200px]:gap-afh-2xl",
+            "mt-afh-md",
+            !reviewed && "pb-afh-md"
+          )}
+          aria-label={resolvedTitle}
+        >
+          {emptySlot ? (
+            <li className="w-[130px] shrink-0 snap-start min-[1200px]:w-[160px]">
+              <div className="flex h-[231px] flex-col justify-between rounded-afh-lg border border-dashed border-afh-border p-afh-lg min-[1200px]:h-[284px]">
+                <p className="font-afh-display text-afh-small font-bold uppercase leading-[var(--afh-leading-small)] text-afh-text-soft">
+                  {emptySlot.question}
                 </p>
-                <p className="text-afh-eyebrow leading-[var(--afh-leading-eyebrow)] text-afh-text-soft">
-                  {duration} · {item.label ?? copy.labels.discoveries}
+                <p className="text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
+                  {emptySlot.body}
                 </p>
-                {reviewed ? null : (
-                  <CompanionRelationLabel
-                    match={item.match}
-                    language={language}
-                  />
-                )}
-              </Link>
+                <SearchFeedContributionAction
+                  language={language}
+                  target={contributionTarget}
+                  label={emptySlot.action}
+                  variant="ghost"
+                  className={
+                    reviewed
+                      ? `h-auto min-h-0 justify-start whitespace-normal p-0 text-left text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)] underline ${FEED_TEXT_LINK_HIT_AREA}`
+                      : "h-auto min-h-11 whitespace-normal px-0 text-left text-afh-caption text-[color:var(--accent-ink)]"
+                  }
+                />
+              </div>
+              <p className="mt-afh-md text-afh-caption font-bold text-afh-text-soft">
+                {copy.labels.noShortYet}
+              </p>
             </li>
-          );
-        })}
-      </ul>
+          ) : null}
+          {items.map((item, index) => {
+            const duration = durationLabel(item.durationSeconds);
+            return (
+              <li
+                key={item.href}
+                className={cn(
+                  "shrink-0 snap-start",
+                  reviewed && index >= 5 && "hidden min-[1200px]:block"
+                )}
+              >
+                <Link
+                  href={item.href}
+                  className={`block w-[130px] text-afh-text no-underline ${CHARTER_FOCUS_RING} min-[1200px]:w-[160px]`}
+                >
+                  <div className="relative h-[231px] overflow-hidden rounded-afh-lg bg-afh-bg-warm min-[1200px]:h-[284px]">
+                    <Image
+                      src={item.poster.src}
+                      alt={item.poster.alt}
+                      unoptimized={reviewed}
+                      width={item.poster.width}
+                      height={item.poster.height}
+                      sizes="(min-width: 1200px) 160px, 130px"
+                      className="size-full object-cover"
+                    />
+                    <span
+                      className={cn(
+                        "absolute right-afh-md top-afh-md rounded-full bg-[color:var(--afh-media-badge-bg)] px-afh-md text-afh-eyebrow font-bold text-[color:var(--afh-media-badge-ink)]",
+                        reviewed
+                          ? "py-0.5 leading-[var(--afh-leading-eyebrow)]"
+                          : "py-afh-xs"
+                      )}
+                    >
+                      {duration}
+                    </span>
+                    <span
+                      aria-hidden="true"
+                      className="absolute left-1/2 top-1/2 size-8 -translate-x-1/2 -translate-y-1/2 min-[1200px]:size-9"
+                    >
+                      <svg viewBox="0 0 36 36" role="presentation">
+                        <circle
+                          cx="18"
+                          cy="18"
+                          r="18"
+                          fill="var(--afh-media-badge-ink)"
+                        />
+                        <path
+                          d="M14 11 L26 18 L14 25 Z"
+                          fill="var(--afh-media-badge-bg)"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <p className="mt-afh-md text-afh-caption font-bold leading-[var(--afh-leading-caption)]">
+                    {formatProductionNameQuestion(item.name, language)}
+                  </p>
+                  <p className="text-afh-eyebrow leading-[var(--afh-leading-eyebrow)] text-afh-text-soft">
+                    {duration} · {item.label ?? copy.labels.discoveries}
+                  </p>
+                  {reviewed ? null : (
+                    <CompanionRelationLabel
+                      match={item.match}
+                      language={language}
+                    />
+                  )}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </SearchFeedBlock>
   );
 }

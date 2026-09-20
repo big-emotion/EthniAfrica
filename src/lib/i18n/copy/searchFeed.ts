@@ -52,6 +52,7 @@ export interface SearchFeedCopy {
     source: string;
     discoveries: string;
     noShortYet: string;
+    seeMore: string;
     playWithName: string;
     allQuestions: string;
     fichesSubtitle: string;
@@ -113,7 +114,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       plates: "Stories and proverbs",
       quiz: "Test what you have read",
       images: "In pictures",
-      fiches: "In the atlas",
+      fiches: "Discover",
       peoples: "The peoples who share this name",
       sharedEntries: "The entries that share this name",
       sharedName: "Why the same name?",
@@ -141,6 +142,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       source: "Source",
       discoveries: "Discoveries",
       noShortYet: "No short yet",
+      seeMore: "See more",
       playWithName: "Play with this name",
       allQuestions: "All questions",
       fichesSubtitle: "Go deeper with each entry and all of its sources.",
@@ -203,7 +205,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       plates: "Récits et proverbes",
       quiz: "Vérifier ce que vous avez lu",
       images: "En images",
-      fiches: "Dans l’atlas",
+      fiches: "Découvrir",
       peoples: "Les peuples qui partagent ce nom",
       sharedEntries: "Les entrées qui partagent ce nom",
       sharedName: "Pourquoi le même nom ?",
@@ -231,6 +233,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       source: "Source",
       discoveries: "Découvertes",
       noShortYet: "Pas encore de short",
+      seeMore: "Voir plus",
       playWithName: "Joue avec ce nom",
       allQuestions: "Toutes les questions",
       fichesSubtitle:

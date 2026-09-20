@@ -207,27 +207,14 @@ function companionShort(short: SearchShort): CompanionShort {
 export function shortsForTargets(
   targets: readonly CompanionMatch[],
   shorts: readonly SearchShort[] = SEARCH_SHORTS,
-  options: { limit?: number; includeRecent?: boolean } = {}
+  options: { limit?: number } = {}
 ): CompanionSelection<CompanionShort> {
   const eligible = eligibleSearchShorts(shorts).map(companionShort);
-  const limit = options.limit ?? 6;
   const matched = orderCompanionMatches(eligible, targets);
-  if (matched.length || !options.includeRecent) {
-    return { count: matched.length, items: matched.slice(0, limit) };
-  }
-
-  const recent = eligible
-    .slice()
-    .sort(
-      (left, right) =>
-        Date.parse(right.publishedAt) - Date.parse(left.publishedAt) ||
-        left.id.localeCompare(right.id)
-    )
-    .map((item) => ({
-      item,
-      match: { ...item.subjects[0], relation: "recent" as const },
-    }));
-  return { count: recent.length, items: recent.slice(0, limit) };
+  return {
+    count: matched.length,
+    items: matched.slice(0, options.limit ?? 6),
+  };
 }
 
 // @req REQ-180

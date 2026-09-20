@@ -90,6 +90,12 @@ interface PageLayoutProps {
    * `SiteTrail`.
    */
   trailLabel?: string;
+  /**
+   * Lift the shell's `max-width` for the whole page — masthead, main and
+   * footer together, since they share one measure and would otherwise stop
+   * sharing a vertical. Gutters stay; only the cap goes.
+   */
+  wide?: boolean;
 }
 
 // @req REQ-043
@@ -105,6 +111,7 @@ export const PageLayout = ({
   flushTop = false,
   flushBottom = false,
   trailLabel,
+  wide = false,
 }: PageLayoutProps) => {
   const router = useRouter();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -143,7 +150,9 @@ export const PageLayout = ({
   });
 
   return (
-    <div className="min-h-screen gradient-earth">
+    <div
+      className={`min-h-screen gradient-earth${wide ? " afh-shell-wide" : ""}`}
+    >
       {/* One bar for every width. The two it replaces were picked apart by
           a client-side viewport check, so the server sent one and hydration
           swapped in the other; the switch is now a media query inside the bar
