@@ -78,6 +78,18 @@ const moderatorDesktop = {
   viewport: { width: 1280, height: 900 },
 };
 
+// These two specs measure a fixture harness, not the app this config boots:
+// the visual proof reads reviewed boards served on :4173 and the responsive
+// geometry runs against `search-feed-dev-server.mjs`. Each has its own config
+// (`e2e:search-feed-parity`, `e2e:search-feed-responsive`). Picked up here they
+// fail on the missing board server and on the real app's aborted RSC prefetches,
+// which is 51 red tests that say nothing about the search page.
+const NOT_RUN_HERE = [
+  /\.setup\.ts$/,
+  /search-feed-visual-proof\.spec\.ts$/,
+  /search-feed-responsive\.spec\.ts$/,
+];
+
 export default defineConfig({
   testDir: "./e2e",
   timeout: 60_000,
@@ -129,28 +141,28 @@ export default defineConfig({
       name: "mobile-430",
       use: referenceMobile,
       dependencies: ["setup"],
-      testIgnore: /\.setup\.ts$/,
+      testIgnore: NOT_RUN_HERE,
     },
     // Widening passes — should not introduce new features, only confirm layout.
     {
       name: "tablet-720",
       use: referenceTablet,
       dependencies: ["setup"],
-      testIgnore: /\.setup\.ts$/,
+      testIgnore: NOT_RUN_HERE,
       grep: /@cross-viewport/,
     },
     {
       name: "desktop-800",
       use: referenceDesktop,
       dependencies: ["setup"],
-      testIgnore: /\.setup\.ts$/,
+      testIgnore: NOT_RUN_HERE,
       grep: /@cross-viewport/,
     },
     {
       name: "desktop-1200",
       use: wideDesktop,
       dependencies: ["setup"],
-      testIgnore: /\.setup\.ts$/,
+      testIgnore: NOT_RUN_HERE,
       grep: /@cross-viewport/,
     },
     // Fatou (moderator) journey runs on desktop ≥ 1024 px per UX spec L91.
@@ -158,7 +170,7 @@ export default defineConfig({
       name: "moderator-1024",
       use: moderatorDesktop,
       dependencies: ["setup"],
-      testIgnore: /\.setup\.ts$/,
+      testIgnore: NOT_RUN_HERE,
       grep: /@fatou/,
     },
   ],
