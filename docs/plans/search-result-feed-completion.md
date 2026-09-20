@@ -11,6 +11,8 @@ is measured here, so the work left is a list rather than an estimate.
 
 ## 1. Where the work actually stands
 
+_This table is the snapshot the work started from. The current state is in §1g._
+
 Measured on the PR head `54d790b00`, CI run 35470185186 (2026-09-19).
 
 | Gate                           | State                                                             |
@@ -451,9 +453,10 @@ build-storybook` bundles it without error, and a full local run of
   `scripts/a11y-test.ts` against the built `storybook-static/` output — 290
   stories, the ten new ones included — reports zero violations, confirming
   this does not newly break the CI-blocking `axe-core (Storybook)` check.
-  Per-block stories (fifteen components) and a night-theme/desktop pass are
-  still unstarted; this covers only the top-level composition at its
-  default mobile-day rendering. One real defect surfaced building this:
+  This covers only the top-level composition at its default mobile-day
+  rendering; the per-block stories (all sixteen blocks, with desktop and
+  night variants, 44 stories in `feed/SearchFeedBlocks.stories.tsx`) landed in
+  §1g, and the same a11y gate reports zero violations on them. One real defect surfaced building this:
   `sourceTierVocabulary.test.ts`'s retired-identifier scan flagged the word
   "admission" in a story comment as a collision with a retired source-tier
   term (`/\badmissions?\b/i`) — an accidental English-word match, not an
@@ -474,65 +477,74 @@ build-storybook` bundles it without error, and a full local run of
   one — confirmed via the live dev-server check in §1e:
   `exceed_egress_quota`, "the project owner must upgrade their plan or
   remove spend caps to restore service").
-- Phase 11's pixel-convergence pass (§3) — **not finished**. `mande
-mobile-day` now passes the text and block-geometry stages exactly (every
-  block `dy`/`dh` is 0.000) and stands at about 19.7k of 1.46M differing
-  pixels (1.35%) against the 1% ceiling; no board passes the pixel stage.
-  This session fixed the systematic geometry causes and measured what is
-  left, and the measurement changes what the remaining work is.
+- Phase 11's pixel-convergence pass (§3) and the phase 10 responsive spec —
+  closed in §1g below.
 
-  Geometry causes found and fixed, each by comparing the board's and the
-  app's element rectangles rather than by reading percentages:
-  - the section heading's action wrapper carried `-my-[9px]`, which removed
-    the link from the row's height; the board's row is 26px (a 16px/1.5
-    link baseline-aligned against a 19.2px heading). Removing the negative
-    margin restored the 26px row, so the shorts list's `mt-[9px]` and the
-    plates list's `top-px` — both compensating for it — were removed too;
-  - the anecdote badge wrapper (`leading-[normal]`) and the prose block's
-    badge (`leading-[var(--afh-leading-eyebrow)]`) inherited the 24px body
-    line height where the board's do not, +1.203px per card;
-  - the appellation chip aligned its tag with `items-center` where the board
-    uses `items-baseline`, which put the "votre recherche" tag 2.4px high;
-  - a lens count's spacing is now `ml-[3.515625px]`, the measured advance of
-    the NBSP the board uses, so the accessible name stays clean and the
-    pills land on the board's x positions to the third decimal;
-  - the search field's icon is 14.16px, not 20px (the board's 16px SVG is
-    flex-shrunk by the input's 100% width), and its text starts at 53.16px;
-  - the board underlines its standalone text links (`Tout voir`, `Voir la
-source`, `+N autres`, the peoples and quiz links); the app did not;
-  - the harness screenshot included Next's dev indicator in the feed's
-    bottom-left corner, which made the diff vary between runs; it is now
-    hidden (`nextjs-portal`).
+## 1g. Update — 2026-09-20, eighth session — forty boards and thirty responsive checks pass
 
-  What the remaining 1.35% is made of. A histogram of per-pixel channel
-  differences on `mande mobile-day` gives **15.6k pixels off by exactly one
-  level** (of 19.7k), about 1.1% of the page on their own, and only about
-  4k pixels (0.28%) with a visible difference. The harness counts any
-  unequal channel (`e2e/support/search-feed-visual.ts`), so the one-level
-  noise alone exceeds the ceiling. It sits on anti-aliased glyph and border
-  edges; it is absent from the filled "Tout" pill and present on the "Jeux"
-  pill's text, so it is not simply about fractional y. Computed text
-  properties, colours, font files (byte-identical), and text-node rectangles
-  (to three decimals) are identical between board and app.
-  Compositing matters: forcing a composited layer on the app's feed root
-  raised the one-level count to 17.5k, and forcing it on both roots lowered
-  it to 12.7k, so the two pages are being rasterised down different paths.
-  Tried and **ruled out**, each with no change to the count: `-webkit-font-smoothing`,
-  `color-scheme`, an opaque `html`/`body` background, the board's own
-  `@font-face` declarations, an `overflow: hidden` ancestor. The cause is not
-  yet found; it is a property of how the two pages are painted, not of a
-  block's markup, and it must be resolved (or the comparison made
-  tolerant of one-level differences, a decision the plan reserves) before
-  the per-board pass can finish.
+**State now:** `npm run e2e:search-feed-parity` passes 42 of 42 (the forty
+boards and the two harness safeguards) and `npm run e2e:search-feed-responsive`
+passes 30 of 30. Both were red when this session began: no board passed the
+pixel stage, and the responsive spec, which section 1 recorded as "green — 30/30",
+was already failing 18 of 30 on the commit this session started from (measured
+by running it there in a scratch worktree), because the phase 11 pixel
+corrections had shrunk text links below 44px and clipped two rails.
 
-  A correction to the previous version of this section, which is kept here
-  because the error is instructive: it reported that `decoding="auto"` on the
-  reviewed `ImageBlock` image moved `mande mobile-day` from 1.8916% to
-  1.7660%. That was wrong. The comparison was made across other changes; a
-  clean A/B afterwards showed **no effect at all**, and the line was
-  removed. Decode mode is not a contributor. The dense red noise over the
-  illustration that section described was not reproduced in the regions of the
-  diff inspected this session (the page top and the owed block).
+**Layout causes found by comparing element rectangles, not percentages:**
+
+- the heading action's `-my-[9px]` hid a 26px row the boards draw; the shorts
+  `mt-[9px]` and plates `top-px` that compensated for it are gone;
+- badge and link struts inheriting the 24px body line height where the boards
+  do not; the appellation chip aligning its tag with `items-center` where the
+  boards use `items-baseline`;
+- the native superscript (`font-size: smaller`, `vertical-align: super`) that
+  Tailwind's reset replaces, which changed the line box around « XIX<sup>e</sup> »;
+- people-card, facts and widening-note line heights; the desktop origins list
+  spacing and its footer link, which the boards show on desktop; the owed
+  block's gap when silences are present; the unknown-name desktop verdict's
+  24px top padding; the empty-slot link (an 18.85px text link, not a 44px
+  button);
+- lens count spacing (`ml-[3.515625px]`, the measured advance of the NBSP the
+  boards use), the search icon (the boards' 16px SVG is flex-shrunk to
+  14.16px), the boards' underlined text links, and Next's dev indicator, which
+  landed in the screenshot.
+
+**Two harness defects, not app defects:** the size assertion expected
+`Math.round(height)` while Chromium captures a fractional box on its outer
+whole pixels, which failed every board whose height ended below one half; and
+the comparison counted a one-level colour difference as a different pixel.
+
+**The tolerance, and why it is not a loosening of the gate.** Board and app
+anti-alias glyph and border edges one colour level apart although layout, fonts
+(byte-identical), computed styles and text rectangles (to five decimals) are
+identical; 15.6k of 19.7k unequal pixels on `mande mobile-day` were exactly one
+level, on the mobile boards only, and the cause was not found after ruling out
+font smoothing, colour scheme, page background, `@font-face` declarations,
+ancestor overflow and layer promotion. The comparison now ignores a
+one-level-per-channel difference (`SEARCH_FEED_CHANNEL_TOLERANCE`) and keeps the
+1% ceiling for anything two levels or more. The reader-visible differences the
+tolerance does not hide were fixed above. Decided by the project owner on
+2026-09-20.
+
+**Responsive spec.** Text links grow a centred 44px `::after` hit area
+(`feedHitArea.ts`) that paints nothing; the reviewed origins and plates rails
+scroll with a hidden scrollbar rather than clipping cards; the image link fits
+a 320px viewport; the spec measures the `::after` reach and the last _rendered_
+rail child (the sixth short is `display: none` below 1200px).
+
+**Storybook.** `feed/SearchFeedBlocks.stories.tsx` adds 44 stories: every
+block, desktop variants where the block differs at 1200px (a new
+`feedDesktop1280` viewport, since the fiche viewports stop at 800px), and night
+variants through the semantic tokens. `scripts/a11y-test.ts` over the built
+Storybook reports zero violations on all 334 stories. It is a story-only audit;
+it does not replace the live-route a11y run.
+
+**A correction that stays here because the error is instructive.** An earlier
+version of this document reported that `decoding="auto"` on the reviewed image
+moved `mande mobile-day` from 1.8916% to 1.7660%. That was wrong; a clean A/B
+showed no effect and the line was removed. Separately, giving that image
+`w-full` instead of `w-[300px]` moved 5% of the page, because the resampling
+route changed: the illustration must keep its fixed pixel size.
 
 ## 2. The rule that decides every remaining fix
 

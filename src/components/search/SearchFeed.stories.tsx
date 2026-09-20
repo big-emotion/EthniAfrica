@@ -14,9 +14,8 @@ import {
  * harness compares pixel for pixel — so what Storybook shows is the
  * approved rendering, not a derived approximation of it.
  *
- * Only the mobile-day composition is covered; the desktop and night
- * variants, and per-block stories for the fifteen feed components, are the
- * remaining scope of `docs/plans/search-result-feed-completion.md` §5 item 4.
+ * Only the mobile-day composition is covered here; each block, with its
+ * desktop and night variants, is in `feed/SearchFeedBlocks.stories.tsx`.
  */
 function fixture(id: FeedCaseId) {
   const value = FEED_CASES.find((candidate) => candidate.id === id);
