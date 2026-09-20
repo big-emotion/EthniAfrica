@@ -29,6 +29,7 @@
     "check:migration-state:production": "tsx scripts/ci/checkMigrationState.ts --target=production",
     "check:orphan-docs": "tsx scripts/ci/checkOrphanDocs.ts",
     "check:pagination-contract": "tsx scripts/checkPaginationContractDrift.ts",
+    "check:production-ledger": "tsx scripts/ci/checkProductionLedger.ts --selftest && tsx scripts/ci/checkProductionLedger.ts",
     "check:rls-coverage": "tsx scripts/ci/checkRlsCoverage.ts",
     "check:skill-parity": "tsx scripts/ci/checkSkillParity.ts",
     "check:translation-parity": "tsx scripts/ci/checkTranslationParity.ts",
