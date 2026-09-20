@@ -547,9 +547,11 @@ correctly shows its "search unavailable" state: two pass, five fail for that
 one reason. The same six assertions were run against the fixture-mocked search
 responses of the parity harness (temporary spec, removed) and pass — three
 layout checks unchanged, and a real defect fixed in the spec: for an unknown
-name the reviewed feed's `h1` is the searched form, not "Recherche". What stays
-unverified is only the live-corpus claim (« Yoruba » answering as a people and
-a language); it needs the database to answer.
+name the reviewed feed's `h1` is the searched form, not "Recherche". The corpus premise
+of the live claim holds in the source files: `dataset/source/afrik/langues/yor.json`
+(`nameFr` "Yoruba") and `PPL_YORUBA` are both filed, so the name answers as a
+language and as a people. What stays unverified is only that the running API
+returns both for `q=Yoruba`, which needs the database to answer.
 
 **A correction that stays here because the error is instructive.** An earlier
 version of this document reported that `decoding="auto"` on the reviewed image
