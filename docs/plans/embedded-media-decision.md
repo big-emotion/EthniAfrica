@@ -515,9 +515,10 @@ claiming a measurement nobody took.
 
 Two consequences for the rollout:
 
-- **`/fr/decouvertes` is not among the four routes** the required gate visits
+- **`/fr/decouvertes` was not among the four routes** the required gate visited
   (`/fr`, `/fr/atlas/pays/SEN`, `/fr/atlas/peuples/PPL_WOLOF`,
-  `/fr/atlas/recherche`). If Découvertes is to own playback it should be added
+  `/fr/atlas/recherche`); it is the fifth since ETNI-1970, in the gate and in
+  axe's `LIVE_ROUTES` together. If Découvertes is to own playback it should be added
   to `.lighthouserc.gate.js` — which measures the facade state, the one CI can
   see, and is worth having for the full-screen scroll regardless of embeds.
   Note `lighthouseAxeCoverage.test.ts` holds the precondition that axe-core
@@ -526,6 +527,48 @@ Two consequences for the rollout:
 - **The post-click state is measured by hand, once per provider, and the figures
   are written into this file** as part of stage 3's gate. A number in a document
   somebody took is worth more than a threshold nobody's tooling evaluates.
+
+**Measured, 2026-09-20, YouTube, the post-click state.** The sharp edge above was
+a prediction; this is the measurement, and it landed on the threshold rather than
+under it.
+
+_How._ A production build served locally, the first record's own page
+(`/fr/decouvertes/origine-du-nom-mande`) at 430 x 932 and a device pixel ratio
+of 2, Chrome for Testing 152, Lighthouse 12.8.2 driven through its user-flow API
+with `best-practices` only. The banner was already answered, so it did not
+cover the card. One run, on one machine: a point measurement, not a budget.
+
+| Step                                           | `best-practices` | Third-party requests |
+| ---------------------------------------------- | ---------------- | -------------------- |
+| Navigation, nothing touched                    | **1.00**         | **0**                |
+| Timespan around the click, six seconds playing | **0.95**         | 38, to 8 hosts       |
+| Snapshot after the click                       | 1.00             | —                    |
+
+- **Before the click the page asks nothing of any platform**, measured in a
+  browser rather than inferred from the code: zero requests to any host outside
+  our own, no frame, and the consent choice still `false`.
+- **After the click the score is exactly the error threshold.** The gate asserts
+  `minScore: 0.95` and 0.95 passes, so this is green with no margin: one more
+  finding in the Issues panel puts it under. The only audit that fails is
+  `inspector-issues` ("Issues were logged in the Issues panel in Chrome
+  DevTools"). It is not the third-party-cookie audit this section predicted; the
+  prediction named the right category and the wrong culprit.
+- **A snapshot is blind to it.** The snapshot after the click reads 1.00, because
+  a snapshot audits the DOM and has no console or Issues log to read. A future
+  reader who runs only that mode would conclude the post-click state is clean.
+  The timespan is the mode that sees it.
+- **The frame's own requests go to eight hosts, not the two `frame-src` names**:
+  `www.youtube-nocookie.com`, `www.google.com`, `m.youtube.com`,
+  `i.ytimg.com`, `yt3.ggpht.com`, `fonts.gstatic.com`, `jnn-pa.googleapis.com`
+  and a `googlevideo.com` media node (the node's name varies). This is §4.1 seen
+  from the other side: `frame-src` governs the frame's navigation, not what the
+  framed document loads, and nothing in our policy could or should restrict it.
+  It is also what the legal paragraph says Google receives.
+- **Nothing here is enforced.** No CI job clicks, so this number can move with
+  no change on our side, because it depends on what YouTube ships that day. The
+  availability watch (`checkEmbedAvailability.ts`) asks whether a piece still
+  plays, not what the player logs. Re-measure by hand when the provider list
+  changes, and whenever the figure would matter.
 
 ### 4.4 Which surface owns playback (brief §3.3 q14)
 
@@ -1036,7 +1079,7 @@ The shelf's `href` moves from the section head to the piece's Découvertes entry
 same change, `a11y.yml` — `lighthouseAxeCoverage.test.ts` holds the precondition
 that axe-core covers every route the gate visits. `checkEmbedAvailability.ts`
 starts running nightly. The hand-measured post-click Lighthouse figures from
-§4.3 are written back into this file.
+§4.3 are written back into this file (done 2026-09-20, in §4.3).
 
 **Reverses by** reverting the `href`; the rest is measurement and removing it
 only removes information.

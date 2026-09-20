@@ -35,6 +35,7 @@
     "check:rls-coverage": "tsx scripts/ci/checkRlsCoverage.ts",
     "check:skill-parity": "tsx scripts/ci/checkSkillParity.ts",
     "check:translation-parity": "tsx scripts/ci/checkTranslationParity.ts",
+    "check:embed-availability": "tsx scripts/checkEmbedAvailability.ts",
     "check:workflow-shell": "tsx scripts/checkWorkflowShellSyntax.ts",
     "confluence:bootstrap:build": "tsx scripts/buildConfluenceBootstrap.ts",
     "dev": "next dev",

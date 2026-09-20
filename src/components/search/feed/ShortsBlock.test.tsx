@@ -82,6 +82,40 @@ describe("ShortsBlock", () => {
     );
   });
 
+  // The shelf cannot host a player: at 130 px wide YouTube's controls are
+  // unusable and drawing the site's own over them is forbidden. It navigates,
+  // to the piece where the site owns playback. The section head is where "see
+  // all" goes; the platform is the link of last resort inside the piece.
+  // @req REQ-181
+  it("sends a card to the piece's own entry, not to the section head or the platform", () => {
+    const item = FEED_CASES[0]!.production.companions.shorts.items[0]!;
+    render(
+      <ShortsBlock
+        items={[
+          {
+            ...item,
+            href: "/fr/decouvertes/origine-du-nom-mande",
+            watchUrl: "https://www.youtube.com/shorts/vESK91smqxQ",
+          },
+        ]}
+        allHref="/fr/decouvertes"
+      />
+    );
+
+    const card = screen
+      .getAllByRole("link")
+      .find((link) => link.className.includes("w-[130px]"));
+    expect(card).toHaveAttribute(
+      "href",
+      "/fr/decouvertes/origine-du-nom-mande"
+    );
+    expect(card).not.toHaveAttribute("href", "/fr/decouvertes");
+    expect(card?.getAttribute("href")).not.toMatch(/youtube/);
+    // Leaving the site for a platform from the result page is the opposite of
+    // what the shelf is for.
+    expect(card).not.toHaveAttribute("target", "_blank");
+  });
+
   // @req REQ-178
   it("uses the board shelf density without per-item relation labels", () => {
     const item = FEED_CASES[0]!.production.companions.shorts.items[0]!;

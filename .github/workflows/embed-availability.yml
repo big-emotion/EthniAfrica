@@ -1,0 +1,39 @@
+name: Embed availability
+
+# The player is a cross-origin frame, so the page cannot see that a production
+# was deleted or had embedding turned off at its platform. This asks the
+# platform's oEmbed endpoint instead (REQ-181, DEC-059).
+#
+# It is a report, not a gate, and it is deliberately kept off pull requests: a
+# round-trip to a third party must not be able to block a merge, and the script
+# exits 0 on findings for the same reason (the shape of translation parity).
+# A finding shows up as a warning annotation on the run page. The fix is a hand
+# edit of DISCOVERY_VIDEOS: drop the record's `embed`, keep its `watchUrl`.
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  availability:
+    name: Embedded productions still play
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Check embedded productions
+        run: npm run check:embed-availability

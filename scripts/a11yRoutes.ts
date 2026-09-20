@@ -117,6 +117,10 @@ const liveRoutesFor = (locale: Language): string[] => [
   // not here: `qualityGateRoutes.test.ts` keeps every axis landing page out of
   // both browser gates, and that rule does not bend for a freeze.
   getLocalizedRoute(locale, "anecdotes"),
+  // The reader that mounts the third-party player facade (REQ-181). The bare
+  // route redirects to one publication's permalink, which is the page a reader
+  // lands on; the facade's post-click state is not reachable by a page audit.
+  getLocalizedRoute(locale, "discoveries"),
   getLocalizedRoute(locale, "doctrine"),
   `${getLocalizedRoute(locale, "doctrine")}/classifications-contestees`,
 ];

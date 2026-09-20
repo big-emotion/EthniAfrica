@@ -24,6 +24,21 @@ describe("the Lighthouse gate visits no route outside axe's own coverage", () =>
     });
   }
 
+  // The Lighthouse gate never clicks, so it cannot see the mounted player; what
+  // it can hold is the page that carries the facade, at the same 0.95.
+  // @req REQ-181
+  it("visits the Découvertes reader that carries the player facade", () => {
+    expect(gateRoutes).toContain("/fr/decouvertes");
+    expect(gateRoutes).toHaveLength(5);
+  });
+
+  // @req REQ-181
+  it("holds best-practices at 0.95 as a blocking assertion on all five routes", () => {
+    expect(
+      gateConfig.ci.assert.assertions["categories:best-practices"]
+    ).toEqual(["error", { minScore: 0.95 }]);
+  });
+
   // @req REQ-176
   it("names at least one route, so the assertions above are not vacuous", () => {
     expect(gateRoutes.length).toBeGreaterThan(0);

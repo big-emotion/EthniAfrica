@@ -4,8 +4,8 @@
 // ~16 minutes, and its performance numbers move with the runner. A required
 // check has to be short and has to fail only on something the pull request
 // did, so this one asserts the one category a GPU-less, throttled runner
-// cannot distort — best practices — as an error, on four routes that cover
-// the home, both globe fiches and the search page. Accessibility is asserted
+// cannot distort — best practices — as an error, on five routes that cover
+// the home, both globe fiches, the search page and the Découvertes reader. Accessibility is asserted
 // by axe-core (a11y.yml) on the same routes instead, since ETNI-1948/DEC-054
 // — see lighthouseAxeCoverage.test.ts. The performance metrics are still
 // collected and printed as warnings, so a regression is visible on the pull
@@ -26,6 +26,9 @@ module.exports = {
         "http://localhost:3000/fr/atlas/pays/SEN",
         "http://localhost:3000/fr/atlas/peuples/PPL_WOLOF",
         "http://localhost:3000/fr/atlas/recherche",
+        // The reader that mounts the third-party player facade. The gate never
+        // clicks, so it holds the page as served, not the post-click state.
+        "http://localhost:3000/fr/decouvertes",
       ],
       numberOfRuns: 1,
     },

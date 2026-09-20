@@ -425,15 +425,16 @@ describe("browser quality-gate routes", () => {
     for (const routes of perLocale) {
       expect(routes).toHaveLength(perLocale[0].length);
     }
-    // Eighteen per locale while the dossiers are withdrawn; twenty-two when
+    // Nineteen per locale while the dossiers are withdrawn; twenty-three when
     // they return. Sixteen plus the two search-feed states added in ETNI-1966
     // (an exact match and an unknown name — the bare search route audited
-    // only the empty state). The number is the wall clock of the one required
+    // only the empty state), plus the Découvertes reader that mounts the
+    // third-party player facade (REQ-181). The number is the wall clock of the one required
     // check, and it is written out rather than derived so that adding a route
     // is a decision taken here — a count computed from the list under test
     // would agree with whatever that list happened to say.
     const perLocaleRoutes =
-      18 +
+      19 +
       (isModulePublished("nommer") ? 2 : 0) +
       (isModulePublished("frise") ? 1 : 0) +
       (isModulePublished("regards-colonisation") ? 1 : 0);

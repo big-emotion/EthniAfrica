@@ -3,7 +3,7 @@ import path from "node:path";
 
 import { describe, expect, it } from "vitest";
 
-import { eligiblePublications } from "@/lib/discoveries/catalog";
+import { discoveryPath, eligiblePublications } from "@/lib/discoveries/catalog";
 import { getDiscoveryPublications } from "@/lib/discoveries/entries";
 import { DISCOVERY_SLUGS } from "@/lib/discoveries/slugs";
 import {
@@ -12,6 +12,10 @@ import {
   type DiscoveryVideoRecord,
 } from "@/lib/discoveries/videos";
 import { embedPlayerUrl } from "@/lib/embeds/providers";
+import {
+  SEARCH_SHORTS,
+  searchShortDiscoveryPublication,
+} from "@/lib/search/companionCatalogs";
 
 const RECORD: DiscoveryVideoRecord = {
   id: "video-test",
@@ -152,4 +156,32 @@ describe("the published video catalog", () => {
   it("ships exactly one embedded production", () => {
     expect(DISCOVERY_VIDEOS.filter((record) => record.embed)).toHaveLength(1);
   });
+});
+
+// The result page's shelf points each card at a Découvertes entry. A card whose
+// destination is not in the deck is a link to a 404, which is what the first
+// record did until the deck listed videos: the shelf tests were green and the
+// page answered not found.
+describe("the shorts shelf destinations", () => {
+  // @req REQ-181
+  it.each(["fr", "en"] as const)(
+    "resolve to an entry of the Découvertes deck in %s",
+    (language) => {
+      const reachable = new Set(
+        getDiscoveryPublications().map((publication) =>
+          discoveryPath(language, publication)
+        )
+      );
+
+      for (const short of SEARCH_SHORTS.filter(
+        (candidate) => candidate.status === "published"
+      )) {
+        const destination = discoveryPath(
+          language,
+          searchShortDiscoveryPublication(short)
+        );
+        expect(reachable.has(destination), destination).toBe(true);
+      }
+    }
+  );
 });
