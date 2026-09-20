@@ -1084,10 +1084,12 @@ Reading the code and measuring moved four things away from the text above:
   (`burkina-faso-trois-langues`), so auditing it would have audited an unrelated
   entry and moved with the catalogue's order. The axe route list is
   `scripts/a11yRoutes.ts`, composed from the slug table, not `a11y.yml`. The
-  required check keeps the name _Lighthouse gate (4 routes)_ though it now visits
-  five: branch protection on `recette` matches required checks by name, so a
-  rename without the protection rule leaves the check unreported and blocks
-  every pull request.
+  required check is now named _Lighthouse gate_, without a route count. It kept
+  its old name, _(4 routes)_, for a short while though it visited five, because branch
+  protection on `recette` matches required checks by name and a rename without
+  the protection rule leaves the check unreported and blocks every pull request;
+  it was renamed in three steps with a temporary alias job (#1202), and the alias
+  is gone.
 - **axe found a real violation the plan did not expect.** `valid-lang` failed on
   the Amharic and Shona proverbs (`lang="amh"`, `lang="sna"`), which the gate's
   ISO 639-3 allowance in `scripts/a11y-test.ts` did not name. Adding the route

@@ -18,39 +18,24 @@ function job(key: string): string {
 }
 
 /**
- * Branch protection on `recette` matches a required check by its name. The
- * gate used to be named after the number of routes it visits, and that number
+ * Branch protection on `recette` matches a required check by its name. The gate
+ * used to be named after the number of routes it visits, and that number
  * moved: renaming the job alone left the old name never reported and blocked
- * every pull request with all checks green.
+ * every pull request with all checks green. It was renamed in three steps, a
+ * temporary alias job carrying the old name while protection was switched.
  *
- * So the rename is done in three steps, and this holds the middle one: the job
- * has its permanent, count-free name, and a second job keeps reporting the old
- * name until protection requires the new one, then goes.
+ * This holds the end state. The name has no route count, so the next route
+ * added is not a rename, and the retired name is not reported by anything: a
+ * job that reported it again would be an alias nobody requires any more.
  */
-describe("the Lighthouse gate's check names", () => {
+describe("the Lighthouse gate's check name", () => {
   // @req REQ-085
   it("names the gate without the number of routes it visits", () => {
     expect(job("gate")).toMatch(/\n {4}name: Lighthouse gate\n/);
   });
 
   // @req REQ-085
-  it("keeps reporting the old required name until branch protection is switched", () => {
-    const alias = job("gate-legacy-name");
-
-    expect(alias).toMatch(/\n {4}name: Lighthouse gate \(4 routes\)\n/);
-    expect(alias).toMatch(/\n {4}needs: gate\n/);
-  });
-
-  // A skipped required check counts as passing. An alias that were skipped
-  // when the gate fails would switch the gate off under its old name, so it
-  // has to run whatever the gate did, and fail unless the gate succeeded.
-  // @req REQ-085
-  it("fails the old name whenever the gate did not succeed, and is never skipped", () => {
-    const alias = job("gate-legacy-name");
-
-    expect(alias).toMatch(/\n {4}if: always\(\)/);
-    expect(alias).toContain("${{ needs.gate.result }}");
-    expect(alias).toContain('[ "$GATE_RESULT" = "success" ]');
-    expect(alias).not.toContain("continue-on-error");
+  it("reports no check under the retired, route-counting name", () => {
+    expect(workflow).not.toMatch(/name: Lighthouse gate \(\d+ routes\)/);
   });
 });
