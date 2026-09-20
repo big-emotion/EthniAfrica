@@ -124,7 +124,7 @@ export const legalPagesEn: Readonly<
         title: "Purposes and legal bases",
         paragraphs: [
           "Account data serves to provide access to the contribution features. Reports and editorial logs answer the project’s legitimate interest in reliability, security and transparency.",
-          "Plausible audience measurement is activated only after consent. The functional preference controls whether a user context is attached to Sentry error tracking, when it is enabled; without it, that context is erased. Technical diagnostics strictly necessary for security and stability may be processed on the basis of legitimate interest.",
+          "Plausible audience measurement is activated only after consent. Technical diagnostics strictly necessary for security and stability may be processed on the basis of legitimate interest.",
           "Rate limiting protects the API and the contact form against abuse; it rests on the legitimate interest in the security of the service and does not depend on consent. Sending emails — sign-in link, moderation notifications, contact message — is necessary for the service requested.",
           "Consent choices can be changed at any time from “Cookie settings” in the footer.",
         ],
@@ -137,7 +137,6 @@ export const legalPagesEn: Readonly<
           "Upstash, Inc. hosts the rate-limiting counter. For any request to the public API — including those the browser makes to display the site — or to the contact form, the sender’s IP address, or the fingerprint of their API key, serves as a key name in that counter for the length of the counting window: one minute for the API, one hour for the contact form.",
           "Microsoft Corporation, through its Microsoft Graph service, sends the site’s emails: sign-in link, moderation notifications sent to contributors, and contact-form messages passed to the publisher. These emails pass through its servers together with the address of their recipient.",
           "Upstash, Inc. and Microsoft Corporation are companies under United States law: a transfer of this data to the United States cannot be ruled out. The publisher’s own servers, by contrast, are located in the European Union.",
-          "When Sentry error tracking is enabled, it may receive a limited technical context, stripped of personally identifiable data, in order to diagnose errors.",
           "No personal data is sold, rented or used for advertising profiling.",
         ],
       },
@@ -146,14 +145,14 @@ export const legalPagesEn: Readonly<
         paragraphs: [
           "The site sets no advertising or tracking cookie. Two cookies may be written, each necessary for a function you request and therefore exempt from consent: “ethni-locale”, which remembers for one year the language chosen with the language switcher and is written only when you use it, and an authentication session cookie, specific to signed-in contributors.",
           "Your consent choices are stored in your browser’s local storage under the name “ethni-consent”, and not in a cookie, for twelve months at most. The site also keeps there, on your device only, the publications kept in Discoveries and the state of a few reading aids, such as a dismissed banner. None of this is sent to the publisher.",
-          "Audience measurement and error tracking set no cookie. You can erase this data at any time in your browser settings, or change your choices from “Cookie settings” in the footer.",
+          "Audience measurement sets no cookie. You can erase this data at any time in your browser settings, or change your choices from “Cookie settings” in the footer.",
         ],
       },
       {
         title: "Retention periods",
         paragraphs: [
           "The contributor profile is kept for as long as the account remains active, then deleted within thirty days of a closure request.",
-          "Contributions and reports may be kept in the editorial log; they are anonymised when an account is erased. When Sentry error tracking is enabled, its logs are kept for thirty days at most. Consent preferences expire after twelve months.",
+          "Contributions and reports may be kept in the editorial log; they are anonymised when an account is erased. Consent preferences expire after twelve months.",
         ],
       },
       {

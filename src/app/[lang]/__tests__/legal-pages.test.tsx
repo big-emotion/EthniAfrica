@@ -135,7 +135,19 @@ describe("footer destination pages", () => {
     ).toBeInTheDocument();
     expect(screen.getByText(/Supabase/i)).toBeInTheDocument();
     expect(screen.getByText(/Plausible Analytics/i)).toBeInTheDocument();
-    expect(screen.getAllByText(/Sentry/i)).not.toHaveLength(0);
+  });
+
+  // Sentry has no DSN provisioned anywhere: naming it would declare a
+  // processor the site never contacts.
+  // @req REQ-088
+  it("names no processor that is not active", async () => {
+    for (const lang of ["fr", "en"] as const) {
+      const { container, unmount } = render(
+        await DataPolicyPage({ params: routeParams(lang) })
+      );
+      expect(container.textContent, lang).not.toMatch(/Sentry/i);
+      unmount();
+    }
   });
 
   // @req REQ-090
