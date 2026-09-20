@@ -142,6 +142,10 @@ export function validateEntry(
     errors.push("episode must be a positive integer");
   }
 
+  // EthniAfrica never asserts an origin, it always poses one — see
+  // docs/productions/README.md's "Never an assertion" section. `question`
+  // and `myth` are the two fields a reader sees rendered close to verbatim,
+  // so both must read as a question, not a stated fact, even a hedged one.
   for (const [field, label] of [
     ["question", "question"],
     ["myth", "myth"],
@@ -149,9 +153,17 @@ export function validateEntry(
     const value = record[field] as { fr?: unknown; en?: unknown } | undefined;
     if (!value || typeof value.fr !== "string" || !value.fr.trim()) {
       errors.push(`${label}.fr must be a non-empty string`);
+    } else if (!value.fr.trim().endsWith("?")) {
+      errors.push(`${label}.fr must be phrased as a question, ending in "?"`);
     }
     if (value?.en !== undefined && typeof value.en !== "string") {
       errors.push(`${label}.en must be a string when present`);
+    } else if (
+      typeof value?.en === "string" &&
+      value.en.trim() &&
+      !value.en.trim().endsWith("?")
+    ) {
+      errors.push(`${label}.en must be phrased as a question, ending in "?"`);
     }
   }
 
@@ -343,7 +355,7 @@ function validLingalaEntry(): LedgerEntry {
       fr: "D'où vient le nom lingala ?",
       en: "Where does the name Lingala come from?",
     },
-    myth: { fr: "Le lingala n'a pas été inventé par les colons.", en: "" },
+    myth: { fr: "Le Lingala, un nom inventé par les colons belges ?", en: "" },
     narrativePattern: "une langue accusée d'invention coloniale",
     subjects: [
       { kind: "language", id: "lin", label: { fr: "Lingala", en: "Lingala" } },
@@ -416,6 +428,33 @@ const FIXTURES: Fixture[] = [
   ],
   ["episode zero", { ...validLingalaEntry(), episode: 0 }, true],
   ["missing myth.fr", { ...validLingalaEntry(), myth: { fr: "" } }, true],
+  [
+    "myth stated as a flat assertion, not a question",
+    {
+      ...validLingalaEntry(),
+      myth: { fr: "Le lingala a été inventé par les colons belges." },
+    },
+    true,
+  ],
+  [
+    "question stated as a flat assertion, not a question",
+    {
+      ...validLingalaEntry(),
+      question: { fr: "Le nom lingala vient des colons belges." },
+    },
+    true,
+  ],
+  [
+    "myth.en present but stated as a flat assertion",
+    {
+      ...validLingalaEntry(),
+      myth: {
+        fr: "Le Lingala, un nom inventé par les colons belges ?",
+        en: "Lingala was invented by Belgian colonists.",
+      },
+    },
+    true,
+  ],
   [
     "malformed publishedAt",
     {

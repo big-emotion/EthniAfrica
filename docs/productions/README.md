@@ -11,6 +11,37 @@ holds only what a skill or a human needs at hand while filing an entry.
 composed is `docs/design/gabarits-social/GABARITS-SOCIAL.md`'s job; this file
 never restates it, only points at it where the two touch.
 
+## Never an assertion
+
+**EthniAfrica poses a name's origin, it never states one.** A name is either
+an endonym or an exonym, and it keeps moving through history — a fiche
+publishes the forms and their sources, never a verdict on which is right.
+This is not a stance the ledger invents; it is the same discipline
+`CLAUDE.md`'s Source Tier Policy and its "Assertion tracks certainty" rule
+already hold for every fiche, restated here for the two fields a reader sees
+closest to verbatim:
+
+- **`question` and `myth` must both read as a question, never as a stated
+  fact — even a hedged one.** "Le lingala aurait été inventé par les colons
+  belges." still asserts, softened only by "aurait". "Le Lingala, un nom
+  inventé par les colons belges ?" poses the same claim as a question the
+  piece goes on to examine. The gate enforces this literally: both fields
+  must end in `?`.
+- **No source outranks another by origin.** A European source can be right; an
+  African source can be right; a non-official or oral source can be right.
+  The project does not adjudicate that — it surfaces that several accounts
+  exist, at their own tier (`official`/`referenced`/`unverified`, never
+  ranked by whose account it is), and leaves the judgment to the reader.
+  Where a local account and an outside one disagree, both are named; neither
+  is dropped for being weaker.
+- **The point a reader should leave with** is that a name almost always has
+  more than one appellation and more than one possible reading — not which
+  one to believe.
+
+This is doctrine for the _data_ this directory versions. The actual on-screen
+card copy is authored in `cards.json` by `ethniafrica-structure`, and the same
+rule applies there once that skill is updated to write to this ledger.
+
 ## The fixed format
 
 - **Three publication days**: Monday, Wednesday, Friday.
