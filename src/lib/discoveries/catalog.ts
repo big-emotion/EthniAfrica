@@ -44,6 +44,21 @@ export interface DiscoveryPublication {
     licenceUrl?: string;
     licence: "public-domain" | "cc0" | "cc-by" | "cc-by-sa" | "unknown";
   };
+  /**
+   * A series' frames, in reading order, served from `public/`. They are the
+   * project's own render rather than a platform's copy of it: the files exist
+   * before the post does, so embedding one to show them back would route our
+   * output through a third party to retrieve it. `image` above stays the
+   * cover, and carries the credit and licence for the whole series.
+   */
+  carousel?: {
+    frames: ReadonlyArray<{
+      src: string;
+      width: number;
+      height: number;
+      alt: Record<Language, string>;
+    }>;
+  };
   // The fields below belong to `image` publications only (DEC-053).
   collection?: "autonymes" | "traversees" | "figures-et-moments";
   /**
@@ -108,9 +123,32 @@ function isDeclaredFiction(entry: DiscoveryPublication): boolean {
   );
 }
 
+// Two frames is the floor rather than one: a track with nowhere to go is an
+// `image` publication filed under the wrong kind, and it promises the reader a
+// series the publication does not have.
+function hasBrowsableSeries(entry: DiscoveryPublication): boolean {
+  const frames = entry.carousel?.frames ?? [];
+  return (
+    frames.length >= 2 &&
+    frames.every(
+      (frame) =>
+        hasText(frame.src) &&
+        frame.width > 0 &&
+        frame.height > 0 &&
+        hasText(frame.alt?.fr) &&
+        hasText(frame.alt?.en)
+    )
+  );
+}
+
 function hasPublishableVisual(entry: DiscoveryPublication): boolean {
   if (entry.kind === "proverb") return true;
   if (entry.kind === "image") return isDeclaredFiction(entry);
+  // A series has no original elsewhere — this publication is its file page —
+  // so it owes a cleared cover and its frames, not an outside permalink.
+  if (entry.kind === "carousel") {
+    return hasClearedPicture(entry) && hasBrowsableSeries(entry);
+  }
   return hasClearedPicture(entry) && hasText(entry.image?.filePage);
 }
 
