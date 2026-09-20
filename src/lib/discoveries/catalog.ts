@@ -1,9 +1,22 @@
+import type { EmbedRef } from "@/lib/embeds/providers";
 import type { Language } from "@/types/shared";
+import {
+  formatProductionNameQuestion,
+  formatProductionPosterAlt,
+} from "@/lib/editorial/productionNameQuestion";
 import { getLocalizedRoute } from "@/lib/routing";
+
+export type DiscoverySubjectKind =
+  "country" | "family" | "people" | "language" | "patronyme";
+
+export interface DiscoverySubjectReference {
+  kind: DiscoverySubjectKind;
+  id: string;
+}
 
 export interface DiscoveryPublication {
   id: string;
-  kind: "anecdote" | "proverb" | "carousel" | "image";
+  kind: "anecdote" | "proverb" | "carousel" | "image" | "video";
   status: "draft" | "published";
   slug: Record<Language, string>;
   title: Record<Language, string>;
@@ -17,7 +30,7 @@ export interface DiscoveryPublication {
   detail?: {
     body: Record<Language, string[]>;
     entities: Array<{
-      kind: "country" | "family" | "people";
+      kind: DiscoverySubjectKind;
       id: string;
       label: Record<Language, string>;
     }>;
@@ -44,6 +57,21 @@ export interface DiscoveryPublication {
     licenceUrl?: string;
     licence: "public-domain" | "cc0" | "cc-by" | "cc-by-sa" | "unknown";
   };
+  /**
+   * A series' frames, in reading order, served from `public/`. They are the
+   * project's own render rather than a platform's copy of it: the files exist
+   * before the post does, so embedding one to show them back would route our
+   * output through a third party to retrieve it. `image` above stays the
+   * cover, and carries the credit and licence for the whole series.
+   */
+  carousel?: {
+    frames: ReadonlyArray<{
+      src: string;
+      width: number;
+      height: number;
+      alt: Record<Language, string>;
+    }>;
+  };
   // The fields below belong to `image` publications only (DEC-053).
   collection?: "autonymes" | "traversees" | "figures-et-moments";
   /**
@@ -64,12 +92,44 @@ export interface DiscoveryPublication {
    */
   captionExceedsCorpus?: boolean;
   captionSource?: { title: string; url: string };
+  /** Runtime metadata for a short; its title and poster alt are derived. */
+  video?: {
+    name: Record<Language, string>;
+    publishedAt: string;
+    durationSeconds: number;
+    watchUrl: string;
+    /**
+     * Provider and identifier only, never a URL: a stored string that becomes an
+     * iframe `src` is an unvalidated address. Optional, so a record without one
+     * is the link out it was before.
+     */
+    embed?: EmbedRef;
+    credit?: DiscoveryVideoCredit;
+    poster: {
+      src: string;
+      alt: Record<Language, string>;
+      width: number;
+      height: number;
+    };
+    transcript?: Partial<Record<Language, string>>;
+  };
   /**
    * Pre-rendered derived files under `public/`, by format. A format is
    * declared only once its file ships; `scripts/__tests__/generatedImageDownloads`
    * holds each declared file to its dimensions and its IPTC disclosure.
    */
   downloads?: Partial<Record<DownloadFormat, string>>;
+}
+
+/**
+ * Who made a production and under what licence it is shown (REQ-128). It sits
+ * beside the watch link rather than being derived from it: the platform's page
+ * says who uploaded a piece, not who authored it or what it may be reused for.
+ */
+export interface DiscoveryVideoCredit {
+  author: string;
+  licence: "public-domain" | "cc0" | "cc-by" | "cc-by-sa";
+  licenceUrl: string;
 }
 
 export type DownloadFormat = "9:16" | "4:5" | "1:1";
@@ -108,10 +168,61 @@ function isDeclaredFiction(entry: DiscoveryPublication): boolean {
   );
 }
 
+// Two frames is the floor rather than one: a track with nowhere to go is an
+// `image` publication filed under the wrong kind, and it promises the reader a
+// series the publication does not have.
+function hasBrowsableSeries(entry: DiscoveryPublication): boolean {
+  const frames = entry.carousel?.frames ?? [];
+  return (
+    frames.length >= 2 &&
+    frames.every(
+      (frame) =>
+        hasText(frame.src) &&
+        frame.width > 0 &&
+        frame.height > 0 &&
+        hasText(frame.alt?.fr) &&
+        hasText(frame.alt?.en)
+    )
+  );
+}
+
 function hasPublishableVisual(entry: DiscoveryPublication): boolean {
   if (entry.kind === "proverb") return true;
   if (entry.kind === "image") return isDeclaredFiction(entry);
+  if (entry.kind === "video") {
+    const { video } = entry;
+    return Boolean(
+      video &&
+      entry.detail?.entities.length &&
+      hasText(video.name.fr) &&
+      hasText(video.name.en) &&
+      entry.title.fr === formatProductionNameQuestion(video.name.fr, "fr") &&
+      entry.title.en === formatProductionNameQuestion(video.name.en, "en") &&
+      !Number.isNaN(Date.parse(video.publishedAt)) &&
+      Number.isFinite(video.durationSeconds) &&
+      video.durationSeconds > 0 &&
+      hasText(video.poster.src) &&
+      video.poster.alt.fr === formatProductionPosterAlt(video.name.fr, "fr") &&
+      video.poster.alt.en === formatProductionPosterAlt(video.name.en, "en") &&
+      video.poster.width > 0 &&
+      video.poster.height > 0 &&
+      isHttpsUrl(video.watchUrl)
+    );
+  }
+  // A series has no original elsewhere — this publication is its file page —
+  // so it owes a cleared cover and its frames, not an outside permalink.
+  if (entry.kind === "carousel") {
+    return hasClearedPicture(entry) && hasBrowsableSeries(entry);
+  }
   return hasClearedPicture(entry) && hasText(entry.image?.filePage);
+}
+
+function isHttpsUrl(value: string): boolean {
+  try {
+    return new URL(value).protocol === "https:";
+  } catch {
+    return false;
+  }
 }
 
 // @req REQ-157
@@ -144,6 +255,27 @@ export function eligiblePublications(
     }
     return ready;
   });
+}
+
+/**
+ * Narrows the publishable Discovery catalog to exact typed subjects.
+ * An absent scope keeps the existing unscoped catalog unchanged.
+ */
+// @req REQ-180
+export function publicationsForSubjects(
+  records: readonly DiscoveryPublication[],
+  subjects: readonly DiscoverySubjectReference[] = []
+): DiscoveryPublication[] {
+  const eligible = eligiblePublications(records);
+  if (subjects.length === 0) return eligible;
+
+  return eligible.filter((entry) =>
+    entry.detail?.entities.some((entity) =>
+      subjects.some(
+        (subject) => subject.kind === entity.kind && subject.id === entity.id
+      )
+    )
+  );
 }
 
 // @req REQ-158

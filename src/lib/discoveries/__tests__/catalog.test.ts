@@ -5,6 +5,7 @@ import {
   downloadChoices,
   eligiblePublications,
   orderedDeck,
+  publicationsForSubjects,
   resolvePublication,
   type DiscoveryPublication,
 } from "../catalog";
@@ -102,6 +103,133 @@ describe("Découvertes publication contracts", () => {
     expect(deck[0]).toBe("b");
     expect(new Set(deck).size).toBe(3);
     expect(deck).toHaveLength(3);
+  });
+
+  describe("subject scope", () => {
+    const records = [
+      item("country", {
+        detail: {
+          body: { fr: ["Texte"], en: ["Text"] },
+          entities: [
+            {
+              kind: "country",
+              id: "NGA",
+              label: { fr: "Nigeria", en: "Nigeria" },
+            },
+          ],
+          sources: [],
+        },
+      }),
+      item("family", {
+        detail: {
+          body: { fr: ["Texte"], en: ["Text"] },
+          entities: [
+            {
+              kind: "family",
+              id: "FLG_MANDE",
+              label: { fr: "Mandé", en: "Mande" },
+            },
+            {
+              kind: "people",
+              id: "PPL_BAMBARA",
+              label: { fr: "Bambara", en: "Bambara" },
+            },
+          ],
+          sources: [],
+        },
+      }),
+      item("people", {
+        detail: {
+          body: { fr: ["Texte"], en: ["Text"] },
+          entities: [
+            {
+              kind: "people",
+              id: "PPL_HAUSA",
+              label: { fr: "Haoussa", en: "Hausa" },
+            },
+          ],
+          sources: [],
+        },
+      }),
+      item("language", {
+        detail: {
+          body: { fr: ["Texte"], en: ["Text"] },
+          entities: [
+            {
+              kind: "language",
+              id: "lin",
+              label: { fr: "Lingala", en: "Lingala" },
+            },
+          ],
+          sources: [],
+        },
+      }),
+      item("patronyme", {
+        detail: {
+          body: { fr: ["Texte"], en: ["Text"] },
+          entities: [
+            {
+              kind: "patronyme",
+              id: "PAT_TRAORE",
+              label: { fr: "Traoré", en: "Traore" },
+            },
+          ],
+          sources: [],
+        },
+      }),
+      item("draft-country", {
+        status: "draft",
+        detail: {
+          body: { fr: ["Texte"], en: ["Text"] },
+          entities: [
+            {
+              kind: "country",
+              id: "NGA",
+              label: { fr: "Nigeria", en: "Nigeria" },
+            },
+          ],
+          sources: [],
+        },
+      }),
+    ];
+
+    // @req REQ-180
+    it("keeps eligible catalog order while matching exact typed subjects", () => {
+      expect(
+        publicationsForSubjects(records, [
+          { kind: "people", id: "PPL_HAUSA" },
+          { kind: "country", id: "NGA" },
+          { kind: "people", id: "PPL_BAMBARA" },
+          { kind: "language", id: "lin" },
+          { kind: "patronyme", id: "PAT_TRAORE" },
+        ]).map((entry) => entry.id)
+      ).toEqual(["country", "family", "people", "language", "patronyme"]);
+
+      expect(
+        publicationsForSubjects(records, [
+          { kind: "family", id: "PPL_BAMBARA" },
+        ])
+      ).toEqual([]);
+    });
+
+    // @req REQ-180
+    it("leaves the unscoped catalog, current item and deck behavior unchanged", () => {
+      const eligible = eligiblePublications(records);
+      const unscoped = publicationsForSubjects(records, []);
+
+      expect(publicationsForSubjects(records)).toEqual(eligible);
+      expect(unscoped).toEqual(eligible);
+      expect(resolvePublication(unscoped, "fr", "country-fr")?.id).toBe(
+        "country"
+      );
+      expect(orderedDeck(unscoped, "family", () => 0)).toEqual([
+        "family",
+        "people",
+        "language",
+        "patronyme",
+        "country",
+      ]);
+    });
   });
 
   // DEC-053: a generated image is declared fiction. Its subject rests on the
@@ -237,5 +365,85 @@ describe("Découvertes publication contracts", () => {
     expect(eligiblePublications(entries).map((entry) => entry.id)).toEqual([
       "safe",
     ]);
+  });
+});
+
+const frames = [
+  {
+    src: "/images/discoveries/carousel/exemple/1.jpg",
+    width: 1080,
+    height: 1350,
+    alt: { fr: "Première carte", en: "First card" },
+  },
+  {
+    src: "/images/discoveries/carousel/exemple/2.jpg",
+    width: 1080,
+    height: 1350,
+    alt: { fr: "Deuxième carte", en: "Second card" },
+  },
+];
+
+// The cover carries the credit and the licence, as it does for an anecdote;
+// what a carousel does not have is a file page, because the frames are the
+// project's own render and their original is this publication.
+const cover = {
+  src: "/images/discoveries/carousel/exemple/1.jpg",
+  credit: "EthniAfrica, CC BY-SA 4.0",
+  licence: "cc-by-sa" as const,
+};
+
+describe("Découvertes carousels", () => {
+  // @req REQ-157
+  it("publishes a carousel on its own frames, without the file page an outside photo owes", () => {
+    const entry = item("carousel:exemple", {
+      kind: "carousel",
+      slug: { fr: "serie-exemple-fr", en: "serie-exemple-en" },
+      image: cover,
+      carousel: { frames },
+    });
+
+    expect(eligiblePublications([entry]).map((one) => one.id)).toEqual([
+      "carousel:exemple",
+    ]);
+  });
+
+  // A single frame renders a track with nowhere to go. It is an `image`
+  // publication that filed itself under the wrong kind, and publishing it
+  // would promise the reader a series the publication does not have.
+  // @req REQ-157
+  it("withholds a carousel of one frame", () => {
+    const entry = item("carousel:seule", {
+      kind: "carousel",
+      slug: { fr: "serie-seule-fr", en: "serie-seule-en" },
+      image: cover,
+      carousel: { frames: [frames[0]] },
+    });
+
+    expect(eligiblePublications([entry])).toEqual([]);
+  });
+
+  // @req REQ-157
+  it("withholds a carousel whose frames are not described in both languages", () => {
+    const entry = item("carousel:muet", {
+      kind: "carousel",
+      slug: { fr: "serie-muet-fr", en: "serie-muet-en" },
+      image: cover,
+      carousel: {
+        frames: [frames[0], { ...frames[1], alt: { fr: "Deuxième", en: "" } }],
+      },
+    });
+
+    expect(eligiblePublications([entry])).toEqual([]);
+  });
+
+  // @req REQ-157
+  it("withholds a carousel that declares the kind and carries no frames at all", () => {
+    const entry = item("carousel:vide", {
+      kind: "carousel",
+      slug: { fr: "serie-vide-fr", en: "serie-vide-en" },
+      image: cover,
+    });
+
+    expect(eligiblePublications([entry])).toEqual([]);
   });
 });

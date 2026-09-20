@@ -27,20 +27,24 @@ export function ConsentBanner() {
   const [showCustomize, setShowCustomize] = useState(false);
   // Track local overrides for preferences - null means use consentState
   const [localAnalytics, setLocalAnalytics] = useState<boolean | null>(null);
-  const [localFunctional, setLocalFunctional] = useState<boolean | null>(null);
+  const [localEmbeds, setLocalEmbeds] = useState<boolean | null>(null);
   const bannerRef = useRef<HTMLDivElement>(null);
   const firstFocusableRef = useRef<HTMLButtonElement>(null);
 
-  // Derive preferences from consent state with local overrides
+  // Derive preferences from consent state with local overrides. `functional`
+  // is carried through untouched: the banner no longer offers it, because the
+  // only thing it ever controlled was a Sentry user context and no Sentry runs.
   const preferences: ConsentPreferences = useMemo(
     () => ({
       essential: true,
       analytics: localAnalytics ?? consentState.preferences.analytics,
-      functional: localFunctional ?? consentState.preferences.functional,
+      functional: consentState.preferences.functional,
+      embeds: localEmbeds ?? consentState.preferences.embeds,
     }),
     [
       localAnalytics,
-      localFunctional,
+      localEmbeds,
+      consentState.preferences.embeds,
       consentState.preferences.analytics,
       consentState.preferences.functional,
     ]
@@ -100,16 +104,16 @@ export function ConsentBanner() {
     return () => banner.removeEventListener("keydown", handleKeyDown);
   }, [showBanner, rejectAll]);
 
+  const handleToggleEmbeds = useCallback((checked: boolean) => {
+    setLocalEmbeds(checked);
+  }, []);
+
   const handleSavePreferences = useCallback(() => {
     updatePreferences(preferences);
   }, [preferences, updatePreferences]);
 
   const handleToggleAnalytics = useCallback((checked: boolean) => {
     setLocalAnalytics(checked);
-  }, []);
-
-  const handleToggleFunctional = useCallback((checked: boolean) => {
-    setLocalFunctional(checked);
   }, []);
 
   if (!showBanner) {
@@ -198,24 +202,26 @@ export function ConsentBanner() {
                 />
               </div>
 
-              {/* Functional cookies */}
+              {/* Third-party players. Only the panel lists this, so it can be
+                  withdrawn; the play click writes it on. The arrival banner
+                  offers no such switch about content the reader has not reached. */}
               <div className="flex items-center justify-between gap-4">
                 <div className="flex flex-col gap-0.5">
                   <label
-                    htmlFor="functional-switch"
+                    htmlFor="embeds-switch"
                     className="text-afh-small font-medium text-foreground"
                   >
-                    {copy.functional}
+                    {copy.embeds}
                   </label>
                   <span className="text-afh-caption text-muted-foreground">
-                    {copy.functionalDescription}
+                    {copy.embedsDescription}
                   </span>
                 </div>
                 <Switch
-                  id="functional-switch"
-                  aria-label={copy.functional}
-                  checked={preferences.functional}
-                  onCheckedChange={handleToggleFunctional}
+                  id="embeds-switch"
+                  aria-label={copy.embeds}
+                  checked={preferences.embeds}
+                  onCheckedChange={handleToggleEmbeds}
                 />
               </div>
 

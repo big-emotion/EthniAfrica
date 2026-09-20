@@ -10,9 +10,19 @@ Source canvas: <https://claude.ai/artifact/324LZEFsdRcHi2bHUEpu9j>, approved by
 the operator on 2026-09-19. It is built on the approved result-page canvas
 (`../search/`), whose copy it reuses verbatim.
 
-**When the code and these boards disagree, the boards win**, exactly as for
-`../search/`. An agent implementing the page cannot open a `claude.ai` link, which
-is why the boards live here.
+The reference contract deliberately has three authorities:
+
+- **These forty boards govern pixels**: typography, colour, spacing, density,
+  media, theme and geometry at 430 and 1280 px.
+- **The generated manifest and the search-result charter govern structure and
+  behaviour**: block identity, state, zone, order and the parts of `owed`.
+- **Typed application projections and API schemas govern production data**:
+  illustrative board copy never becomes a runtime data contract.
+
+When the code and a board disagree visually at a reference width, the board
+wins. When board markup disagrees with the generated manifest, the manifest
+wins and the board must be regenerated. An agent implementing the page cannot
+open a `claude.ai` link, which is why the reviewed boards live here.
 
 ## The grid
 
@@ -36,8 +46,8 @@ File names follow `../search/`: `<Stem>.dc.html` (mobile, day),
 
 ## Reading a board
 
-The boards are canvas sources (`.dc.html`). A browser ignores `<x-dc>`, the
-`support.js` line and the `text/x-dc` script, and renders the board. Serve the
+The boards are canvas sources (`.dc.html`). A browser ignores `<x-dc>` and the
+`text/x-dc` script, and renders the board. Serve the
 repository root over HTTP and open, for example,
 `/docs/design/mockups/search-feed/Mande.dc.html` — images resolve to
 `public/images/` and `posters/` through relative paths. Playwright can also open a
@@ -66,9 +76,15 @@ page (61 px header, two nested `.afh-shell`), and the fonts `next/font` loads
 them to the pixel, and the plan's §10.4 compares screenshots of
 `[data-feed-root]` on the page and on the board.
 
+`fonts/search-feed.css` binds the exact self-hosted Google Fonts subsets that
+the `next/font` configuration requests, including separate Fraunces Roman and
+italic files. The boards never depend on a network font response.
+
 Posters are images — `posters/*.jpg`, drawn by `generator/posters.py` in the
-production covers' style (Anton, burnt-in title, accent on the name) — because the
-page shows the pipeline's cover images, not typeset titles.
+production covers' style (Anton, burnt-in title, accent on the name) — because
+the page shows the pipeline's cover images, not typeset titles. Every cover
+uses the single production question `D’où vient le nom « X » ?`; the shorter
+`D’où vient X ?` form is not a valid production title.
 
 ## Night boards
 
@@ -83,6 +99,11 @@ with dark words. Never edit a night board by hand.
 `generator/` holds the script that wrote the boards. It is the most precise
 specification of each tile's markup, and the plan cites its functions by name.
 
+`generator/test_build.py` rebuilds the boards, manifest and canvas index in a
+clean temporary directory, compares them byte for byte with this directory and
+performs a second build with no diff. This is the reproducibility gate: generated
+paths, semantic attributes and index metadata all participate in it.
+
 - `gen.py` — the tokens as values (`role`, colours, `NIGHT`), one function per
   tile (`search`, `lenses`, `answer`, `appellations`, `chip`, `shorts`, `poster`,
   `empty_poster`, `origins`, `origin_card`, `tiles`, `people_cards`, `plates`,
@@ -93,12 +114,13 @@ specification of each tile's markup, and the plan cites its functions by name.
 - `build.py` — `draft` writes boards at natural height plus a `measure.html`;
   `final heights.json` fixes heights, derives night boards and writes the index.
   Heights come from a browser render (fonts loaded), rounded up to 10 px.
+- `test_build.py` — validates the 10 × 4 matrix, manifest schema, semantic
+  markup, local assets and clean deterministic regeneration.
 - `posters.py` — draws the posters (needs `social/harness/fonts/Anton-Regular.ttf`);
   `posters.json` maps each to its canvas asset.
 
-The generator writes canvas image URLs (`/_blob/…`). The copies here were
-rewritten to repository paths — posters to `posters/<slug>.jpg`, the rest as
-follows:
+The generator writes repository paths directly — posters to
+`posters/<slug>.jpg`, the rest as follows:
 
 | Canvas asset                        | Repository file                                         |
 | ----------------------------------- | ------------------------------------------------------- |

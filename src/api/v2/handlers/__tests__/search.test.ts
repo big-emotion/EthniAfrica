@@ -184,6 +184,8 @@ function serviceResponse(
     quizzesTotal: 0,
     languagesTotal: 0,
     total: 0,
+    leads: [],
+    nearNames: [],
     ...overrides,
   } as FtsSearchResponse;
 }
@@ -328,5 +330,26 @@ describe("ftsSearchHandler — unified results", () => {
       total: 16,
     });
     expect(envelope.data.results).toHaveLength(RANKED_HITS.length - 1);
+  });
+
+  // @req REQ-180
+  it("publishes near names only on the main search stream", async () => {
+    const nearNames = [
+      {
+        kind: "people" as const,
+        id: "PPL_BASSARI",
+        name: "Bassari",
+        similarity: 0.6,
+      },
+    ];
+    vi.mocked(ftsSearch).mockResolvedValue(
+      serviceResponse({ nearNames, peoplesTotal: 1, total: 1 })
+    );
+
+    const main = await ftsSearchHandler(QUERY);
+    const quiz = await ftsSearchHandler({ ...QUERY, lens: "quiz" });
+
+    expect(main.data.nearNames).toEqual(nearNames);
+    expect(quiz.data.nearNames).toEqual([]);
   });
 });

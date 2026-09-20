@@ -145,9 +145,11 @@ Read the live list before reasoning about it:
 
 Three required checks render real pages against the **recette database**, and so
 spend its egress quota on every pull request: the live-route half of
-`axe-core (Storybook)` (nineteen routes in each published locale, listed in
-`scripts/a11yRoutes.ts`), `Lighthouse gate (4 routes)` (whose accessibility
-category runs the same axe engine on routes axe already audits), and
+`axe-core (Storybook)` (the routes in each published locale, listed in
+`scripts/a11yRoutes.ts`), `Lighthouse gate` (whose accessibility category runs
+the same axe engine on routes axe already audits; its name has no route count
+so that adding a route is not a rename, because branch protection matches a
+required check by name), and
 `Playwright smoke (fr, 430px)`. The Storybook half of the axe job reads no
 database and does not block. Many parallel pull requests multiply the cost.
 

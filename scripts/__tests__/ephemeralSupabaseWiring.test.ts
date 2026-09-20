@@ -41,7 +41,7 @@ const RETIRED_SECRET_REFS = [
 
 const GATED_JOBS = [
   { file: "a11y.yml", nameLine: "name: axe-core (Storybook)" },
-  { file: "lighthouse.yml", nameLine: "name: Lighthouse gate (4 routes)" },
+  { file: "lighthouse.yml", nameLine: "name: Lighthouse gate" },
   { file: "e2e.yml", nameLine: "name: Playwright smoke (fr, 430px)" },
 ] as const;
 

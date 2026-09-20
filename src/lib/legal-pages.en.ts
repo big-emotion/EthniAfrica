@@ -40,7 +40,7 @@ export const legalPagesEn: Readonly<
     provenance: "machine",
     eyebrow: "Essential information",
     title: "Legal notice",
-    lastUpdated: "Last updated: 25 July 2026",
+    lastUpdated: "Last updated: 20 September 2026",
     introduction:
       "This page presents the publisher, the publication director and the host of EthniAfrica.",
     sections: [
@@ -68,7 +68,7 @@ export const legalPagesEn: Readonly<
       {
         title: "Hosting",
         paragraphs: [
-          "The site is hosted and delivered by Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, United States. The application services and the project’s data are configured according to the regions documented in EthniAfrica’s infrastructure.",
+          "The site is hosted {host}. The servers of the application and of the database are located in the European Union.",
         ],
       },
       {
@@ -99,7 +99,7 @@ export const legalPagesEn: Readonly<
     provenance: "machine",
     eyebrow: "Privacy and transparency",
     title: "Data policy",
-    lastUpdated: "Last updated: 13 September 2026",
+    lastUpdated: "Last updated: 20 September 2026",
     introduction:
       "EthniAfrica limits the collection of personal data to what is strictly necessary and clearly distinguishes account data, editorial contributions and technical measurements.",
     sections: [
@@ -115,7 +115,8 @@ export const legalPagesEn: Readonly<
         paragraphs: [
           "When an account is created, EthniAfrica may process an email address, a display name, the information needed for authentication and the confirmation of age.",
           "Contributions, corrections and reports are kept with the information needed to examine them and for editorial transparency. Technical logs may contain limited information related to the operation and security of the service.",
-          "Consent preferences are stored in the browser to remember the choices made.",
+          "Consent preferences are stored in the browser’s local storage to remember the choices made (see “Cookies and local storage”).",
+          "The IP address of a request to the public API or to the contact form is used to limit the number of requests (see “Services and processors”).",
           "In Discoveries, kept publications are stored in this device's browser as publication IDs. They are not linked to an account and are not synchronised. You can remove them in Discoveries or clear the site's data in your browser.",
         ],
       },
@@ -123,23 +124,36 @@ export const legalPagesEn: Readonly<
         title: "Purposes and legal bases",
         paragraphs: [
           "Account data serves to provide access to the contribution features. Reports and editorial logs answer the project’s legitimate interest in reliability, security and transparency.",
-          "Plausible audience measurement is activated only after consent. The functional preference controls whether a user context is attached to Sentry; without it, that context is erased. Technical diagnostics strictly necessary for security and stability may be processed on the basis of legitimate interest.",
+          "Plausible audience measurement is activated only after consent. Playing a third-party production on the site rests on your consent, collected at the moment you ask for it. Technical diagnostics strictly necessary for security and stability may be processed on the basis of legitimate interest.",
+          "Rate limiting protects the API and the contact form against abuse; it rests on the legitimate interest in the security of the service and does not depend on consent. Sending emails — sign-in link, moderation notifications, contact message — is necessary for the service requested.",
           "Consent choices can be changed at any time from “Cookie settings” in the footer.",
         ],
       },
       {
         title: "Services and processors",
         paragraphs: [
-          "Supabase provides authentication and database hosting. Vercel provides the hosting and delivery of the application.",
-          "Plausible Analytics provides, after consent, audience statistics without advertising cookies. Sentry may receive a limited technical context, stripped of personally identifiable data, in order to diagnose errors.",
+          "Supabase provides authentication and the database; this software is self-hosted on servers operated on the publisher’s behalf, in the European Union, and is not entrusted to a third-party provider.",
+          "Plausible Analytics, self-hosted on the application’s server, provides, after consent, audience statistics without advertising cookies. This instance is shared with the publisher’s site big-emotion.com; each site is measured separately.",
+          "Upstash, Inc. hosts the rate-limiting counter in Frankfurt (Germany). For any request to the public API — including those the browser makes to display the site — or to the contact form, the sender’s IP address, or the fingerprint of their API key, serves as a key name in that counter for the length of the counting window: one minute for the API, one hour for the contact form.",
+          "Microsoft Corporation, through its Microsoft Graph service, sends the site’s emails: sign-in link, moderation notifications sent to contributors, and contact-form messages passed to the publisher. These emails pass through its servers together with the address of their recipient, and are held at rest by Microsoft, in the publisher’s Microsoft 365 tenant, in the European Union (today, in France).",
+          "Upstash, Inc. and Microsoft Corporation are companies under United States law: access from the United States, or a transfer of this data to that country, cannot be ruled out, even though Upstash’s counter and the emails Microsoft holds are located in the European Union. The publisher’s own servers are also located there.",
+          "When you ask for a production to play on the site, the YouTube player is loaded from youtube-nocookie.com, provided by Google Ireland Limited. Playback happens only after an explicit action on your part: no request is made to Google until you ask for one. Google then receives your IP address, your browser’s characteristics and the playback context, and writes to your device, under its own policy, local storage and cookies. At our last check, the player tried to write two cookies: “TESTCOOKIESENABLED”, which by its name checks that the browser accepts cookies, and “LAST_RESULT_ENTRY_KEY”, whose name repeats that of one of the player’s local-storage keys. Depending on your browser, these cookies are refused outright or stored. That processing is Google’s, as a separate controller; its retention periods are Google’s and are not set by EthniAfrica. It involves a transfer outside the European Union, framed by the standard contractual clauses and the EU–US Data Privacy Framework. Your choice is kept for twelve months and can be withdrawn at any time from “Cookie settings”. Every production remains reachable directly on the platform that publishes it, without going through the player.",
           "No personal data is sold, rented or used for advertising profiling.",
+        ],
+      },
+      {
+        title: "Cookies and local storage",
+        paragraphs: [
+          "The site sets no advertising or tracking cookie. Two cookies may be written, each necessary for a function you request and therefore exempt from consent: “ethni-locale”, which remembers for one year the language chosen with the language switcher and is written only when you use it, and an authentication session cookie, specific to signed-in contributors.",
+          "Your consent choices are stored in your browser’s local storage under the name “ethni-consent”, and not in a cookie, for twelve months at most. The site also keeps there, on your device only, the publications kept in Discoveries and the state of a few reading aids, such as a dismissed banner. None of this is sent to the publisher.",
+          "Audience measurement sets no cookie. You can erase this data at any time in your browser settings, or change your choices from “Cookie settings” in the footer.",
         ],
       },
       {
         title: "Retention periods",
         paragraphs: [
           "The contributor profile is kept for as long as the account remains active, then deleted within thirty days of a closure request.",
-          "Contributions and reports may be kept in the editorial log; they are anonymised when an account is erased. Sentry error logs are kept for thirty days at most. Consent preferences expire after twelve months.",
+          "Contributions and reports may be kept in the editorial log; they are anonymised when an account is erased. Consent preferences expire after twelve months.",
         ],
       },
       {

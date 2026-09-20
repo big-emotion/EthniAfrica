@@ -43,6 +43,7 @@ function renderForm(
       target={target}
       onSubmit={onSubmit}
       onCancel={onCancel}
+      preferredKind={overrides.preferredKind}
       renderVerification={overrides.renderVerification}
     />
   );
@@ -191,6 +192,27 @@ describe("FlagForm contract and validation", () => {
     expect(vi.mocked(onSubmit).mock.calls[0][0].flag_kind).toBe(
       "missing-source"
     );
+  });
+
+  // @req REQ-180
+  it("files a preferred contribution with a non-empty API payload", async () => {
+    const { onSubmit, solve } = renderWithVerification({
+      preferredKind: "contribution",
+    });
+    fireEvent.change(screen.getByLabelText(REASON_LABEL), {
+      target: {
+        value: "Je peux proposer une production consacrée à ce nom.",
+      },
+    });
+    solve();
+
+    fireEvent.click(screen.getByRole("button", { name: "Envoyer" }));
+
+    await waitFor(() => expect(onSubmit).toHaveBeenCalledOnce());
+    expect(vi.mocked(onSubmit).mock.calls[0][0]).toMatchObject({
+      flag_kind: "contribution",
+      contribution_payload: { contribution_type: "search-feed" },
+    });
   });
 
   // @req REQ-012

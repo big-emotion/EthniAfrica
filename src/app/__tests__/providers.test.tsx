@@ -50,11 +50,17 @@ type Preferences = {
   essential: boolean;
   analytics: boolean;
   functional: boolean;
+  embeds: boolean;
 };
 
 const mockConsentState = {
   hasConsented: false,
-  preferences: { essential: true, analytics: false, functional: false },
+  preferences: {
+    essential: true,
+    analytics: false,
+    functional: false,
+    embeds: false,
+  },
   consentDate: null,
 };
 const mockUseConsent = vi.fn(() => ({
@@ -114,6 +120,7 @@ describe("ConsentEnforcer", () => {
       essential: true,
       analytics: true,
       functional: true,
+      embeds: false,
     });
     expect(queryByTestId("plausible-script")).toBeNull();
   });
@@ -127,6 +134,7 @@ describe("ConsentEnforcer", () => {
       essential: true,
       analytics: false,
       functional: false,
+      embeds: false,
     });
     expect(vi.mocked(Sentry.setUser)).toHaveBeenCalledWith(null);
   });
@@ -136,6 +144,7 @@ describe("ConsentEnforcer", () => {
       essential: true,
       analytics: false,
       functional: true,
+      embeds: false,
     });
     expect(vi.mocked(Sentry.setUser)).not.toHaveBeenCalled();
   });

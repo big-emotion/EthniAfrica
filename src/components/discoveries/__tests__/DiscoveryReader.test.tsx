@@ -4,6 +4,8 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { DiscoveryReader } from "@/components/discoveries/DiscoveryReader";
 import type { DiscoveryPublication } from "@/lib/discoveries/catalog";
 import { getDiscoveryPublications } from "@/lib/discoveries/entries";
+import { ConsentProvider } from "@/hooks/use-consent";
+import { DISCOVERY_VIDEOS, videoPublications } from "@/lib/discoveries/videos";
 import { getCountryRoute, getPeopleRoute } from "@/lib/routing";
 
 // The photo, browsing and sharing suites below walk the two photographed
@@ -751,5 +753,243 @@ describe("Découvertes generated image", () => {
     expect(
       within(dialog).queryByRole("link", { name: "Étude du marché publiée" })
     ).not.toBeInTheDocument();
+  });
+});
+
+const carouselPublication: DiscoveryPublication = {
+  id: "carousel:guinee",
+  kind: "carousel",
+  status: "published",
+  slug: { fr: "guinee-trois-recits", en: "guinea-three-accounts" },
+  title: { fr: "Guinée, trois récits", en: "Guinea, three accounts" },
+  description: {
+    fr: "Ce que le nom raconte.",
+    en: "What the name tells.",
+  },
+  source: {
+    title: "Fiche Guinée",
+    url: "https://example.org/guinee",
+    tier: "referenced",
+  },
+  image: {
+    src: "/images/discoveries/carousel/guinee/1.jpg",
+    credit: "EthniAfrica, CC BY-SA 4.0",
+    licence: "cc-by-sa",
+  },
+  carousel: {
+    frames: [
+      {
+        src: "/images/discoveries/carousel/guinee/1.jpg",
+        width: 1080,
+        height: 1350,
+        alt: { fr: "Première carte", en: "First card" },
+      },
+      {
+        src: "/images/discoveries/carousel/guinee/2.jpg",
+        width: 1080,
+        height: 1350,
+        alt: { fr: "Deuxième carte", en: "Second card" },
+      },
+      {
+        src: "/images/discoveries/carousel/guinee/3.jpg",
+        width: 1080,
+        height: 1350,
+        alt: { fr: "Troisième carte", en: "Third card" },
+      },
+    ],
+  },
+};
+
+describe("Découvertes carousel frame", () => {
+  // @req REQ-156
+  it("puts every frame of the series in one track, each described in the reader's language", () => {
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[carouselPublication]}
+        initialId={carouselPublication.id}
+      />
+    );
+
+    const track = screen.getByRole("group", {
+      name: "Images de cette découverte",
+    });
+    expect(
+      within(track)
+        .getAllByRole("img")
+        .map((frame) => frame.getAttribute("alt"))
+    ).toEqual(["Première carte", "Deuxième carte", "Troisième carte"]);
+  });
+
+  // The dots say "there is more sideways" to a reader who can see them. A
+  // reader who cannot gets the same fact as a sentence, or gets nothing.
+  // @req REQ-156
+  it("announces which frame is showing, and how many there are", () => {
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[carouselPublication]}
+        initialId={carouselPublication.id}
+      />
+    );
+
+    expect(screen.getByText("Image 1 sur 3")).toBeTruthy();
+  });
+
+  // @req REQ-156
+  it("moves through the frames with the horizontal arrows, and stops at both ends", () => {
+    HTMLElement.prototype.scrollIntoView = vi.fn();
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[carouselPublication]}
+        initialId={carouselPublication.id}
+      />
+    );
+    const feed = screen.getByLabelText("Découvertes", { selector: "div" });
+
+    fireEvent.keyDown(feed, { key: "ArrowLeft" });
+    expect(screen.getByText("Image 1 sur 3")).toBeTruthy();
+
+    fireEvent.keyDown(feed, { key: "ArrowRight" });
+    expect(screen.getByText("Image 2 sur 3")).toBeTruthy();
+
+    fireEvent.keyDown(feed, { key: "ArrowRight" });
+    fireEvent.keyDown(feed, { key: "ArrowRight" });
+    expect(screen.getByText("Image 3 sur 3")).toBeTruthy();
+  });
+
+  // The vertical deck and the horizontal series share one key handler, and a
+  // frame move must not also move the publication.
+  // @req REQ-156
+  it("leaves the deck's own vertical keys to the deck", () => {
+    HTMLElement.prototype.scrollIntoView = vi.fn();
+    window.history.replaceState({}, "", "/fr/decouvertes/guinee-trois-recits");
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[carouselPublication, ...publications]}
+        initialId={carouselPublication.id}
+      />
+    );
+    const feed = screen.getByLabelText("Découvertes", { selector: "div" });
+
+    fireEvent.keyDown(feed, { key: "ArrowRight" });
+    expect(window.location.pathname).toBe(
+      "/fr/decouvertes/guinee-trois-recits"
+    );
+
+    fireEvent.keyDown(feed, { key: "ArrowDown" });
+    expect(window.location.pathname).toBe(
+      "/fr/decouvertes/burkina-faso-trois-langues"
+    );
+  });
+
+  // @req REQ-157
+  it("files a series as a series, and credits it without a file page it does not have", () => {
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[carouselPublication]}
+        initialId={carouselPublication.id}
+      />
+    );
+
+    expect(screen.getByText("Série")).toBeTruthy();
+    const credit = screen.getByText(/EthniAfrica, CC BY-SA 4\.0/);
+    expect(credit.querySelector("a")).toBeNull();
+  });
+
+  // A carousel has no photograph elsewhere, so its share card is its own
+  // first frame rather than the site's default image.
+  // @req REQ-158
+  it("shares the series on its first frame", () => {
+    document.head.innerHTML = '<meta property="og:image" content="" />';
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[carouselPublication]}
+        initialId={carouselPublication.id}
+      />
+    );
+
+    expect(
+      document.head
+        .querySelector('meta[property="og:image"]')
+        ?.getAttribute("content")
+    ).toContain("/images/discoveries/carousel/guinee/1.jpg");
+  });
+});
+
+describe("Découvertes video", () => {
+  const [video] = videoPublications(DISCOVERY_VIDEOS);
+  const withoutEmbed: DiscoveryPublication = {
+    ...video,
+    id: "video:no-embed",
+    slug: { fr: "sans-lecteur", en: "no-player" },
+    video: { ...video.video!, embed: undefined },
+  };
+
+  const renderVideo = (publication: DiscoveryPublication, language = "fr") =>
+    render(
+      <ConsentProvider>
+        <DiscoveryReader
+          language={language as "fr" | "en"}
+          publications={[publication]}
+          initialId={publication.id}
+        />
+      </ConsentProvider>
+    );
+
+  // The reader shows a production without asking anything of a platform: the
+  // facade is a button and a link, and no frame exists until the click.
+  // @req REQ-181
+  it("shows a production behind a facade, with no frame and the link out", () => {
+    const { container } = renderVideo(video);
+
+    expect(container.querySelector("iframe")).toBeNull();
+    expect(
+      screen.getByRole("button", { name: /charge le lecteur de YouTube/i })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: /regarder sur youtube/i })
+    ).toHaveAttribute("href", video.video!.watchUrl);
+    expect(screen.getByText("Vidéo")).toBeInTheDocument();
+  });
+
+  // A record without an embed is the link out it was before this change.
+  // @req REQ-181
+  it("shows only the link out when the record has no embed", () => {
+    const { container } = renderVideo(withoutEmbed);
+
+    expect(container.querySelector("iframe")).toBeNull();
+    expect(
+      screen.queryByRole("button", { name: /charge le lecteur/i })
+    ).not.toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: /regarder sur youtube/i })
+    ).toBeInTheDocument();
+  });
+
+  // REQ-128: author, licence and the page the piece is published on.
+  // @req REQ-181
+  it("credits the author and links the licence", () => {
+    renderVideo(video);
+
+    expect(screen.getByText(/EthniAfrica/, { selector: "p" })).toBeTruthy();
+    expect(screen.getByRole("link", { name: "CC BY-SA 4.0" })).toHaveAttribute(
+      "href",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    );
+  });
+
+  // @req REQ-181
+  it("speaks English on an English route", () => {
+    renderVideo(video, "en");
+
+    expect(screen.getByText("Video")).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /loads YouTube's player/i })
+    ).toBeInTheDocument();
   });
 });

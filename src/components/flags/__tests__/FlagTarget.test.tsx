@@ -2,7 +2,7 @@ import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-import { FlagTarget } from "../FlagTarget";
+import { FlagTarget, type FlagTargetProps } from "../FlagTarget";
 import { createBrowserSupabaseClient } from "@/lib/supabase/auth-client";
 import { useToast } from "@/hooks/use-toast";
 
@@ -92,9 +92,14 @@ const sourceTarget = {
   snapshotQuote: "UNESCO, rapport 2025.",
 };
 
-function renderFlagTarget(overrides: Partial<{ target: unknown }> = {}) {
+function renderFlagTarget(
+  overrides: Partial<FlagTargetProps> & { target?: unknown } = {}
+) {
   return render(
-    <FlagTarget target={(overrides.target as never) ?? assertionTarget} />
+    <FlagTarget
+      {...overrides}
+      target={(overrides.target as never) ?? assertionTarget}
+    />
   );
 }
 
@@ -212,6 +217,32 @@ describe("FlagTarget", () => {
           props: expect.objectContaining({ target_type: "assertion" }),
         })
       );
+    });
+  });
+
+  // @req REQ-180
+  it("propagates a preferred contribution kind to the submitted payload", async () => {
+    const user = userEvent.setup();
+    mockSupabaseClient({ session: null });
+    renderFlagTarget({ preferredKind: "contribution" });
+
+    await user.click(screen.getByRole("button", { name: /signaler/i }));
+    await user.type(
+      screen.getByLabelText(/qu.est-ce qui ne va pas/i),
+      "Je peux proposer une production consacrée à ce nom."
+    );
+    await user.click(
+      screen.getByRole("button", { name: /valider le contrôle/i })
+    );
+    await user.click(screen.getByRole("button", { name: "Envoyer" }));
+
+    await waitFor(() => expect(fetch).toHaveBeenCalledOnce());
+    const request = vi.mocked(fetch).mock.calls[0][1];
+    const body = JSON.parse(String(request?.body));
+
+    expect(body.flag_kind).toBe("contribution");
+    expect(body.contribution_payload).toEqual({
+      contribution_type: "search-feed",
     });
   });
 

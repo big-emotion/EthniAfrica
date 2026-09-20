@@ -61,7 +61,7 @@ export const PRODUCT_NAME =
  * is edited in the same commit — not before, or the gate goes red for everyone.
  */
 // @req REQ-019
-export const PRODUCT_TAGLINE = "D’où viennent les noms des peuples d’Afrique";
+export const PRODUCT_TAGLINE = "D’où viennent les noms d’Afrique";
 
 /**
  * The handle the product answers to on social networks.
@@ -116,7 +116,7 @@ export const ATTRIBUTION_STRING =
 // @req REQ-019
 export const OG_TITLE =
   process.env.NEXT_PUBLIC_OG_TITLE ||
-  "EthniAfrica — D’où viennent les noms des peuples d’Afrique";
+  "EthniAfrica — D’où viennent les noms d’Afrique";
 
 /**
  * Open Graph description for social media previews.
@@ -135,4 +135,4 @@ export const OG_TITLE =
 // @req REQ-019
 export const OG_DESCRIPTION =
   process.env.NEXT_PUBLIC_OG_DESCRIPTION ||
-  "D’où viennent les noms des peuples d’Afrique ? Peuples, langues, familles linguistiques, pays, appellations et noms, chacun avec l’origine de son nom et ses sources.";
+  "D’où vient le nom ? Peuples, pays, langues, familles linguistiques, noms et appellations : chacun avec l’origine de son nom et ses sources, sans trancher.";

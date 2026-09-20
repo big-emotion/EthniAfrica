@@ -57,6 +57,29 @@ describe("Découvertes immersive stage (brand charter §5.1)", () => {
     expect(colourGround).toMatch(/Découvertes/);
   });
 
+  // The shade is decoration: `aria-hidden` to a screen reader, and it must be
+  // the same to a pointer. Nothing behind it was interactive while the card
+  // held one photograph, so an opaque overlay cost nothing and was never
+  // noticed; a carousel track behind it makes the asymmetry a swipe that
+  // never lands.
+  // @req REQ-156
+  it("lets a pointer through the shade it cannot see", () => {
+    expect(declarationsFor("\\.shade")).toMatch(/pointer-events:\s*none/);
+  });
+
+  // Two snap containers, one inside the other, on perpendicular axes: the
+  // deck moves between publications and the track between the frames of one.
+  // Sharing an axis would make every swipe ambiguous.
+  // @req REQ-156
+  it("snaps the series across and the deck down", () => {
+    expect(declarationsFor("\\.feed")).toMatch(
+      /scroll-snap-type:\s*y\s+mandatory/
+    );
+    expect(declarationsFor("\\.carousel")).toMatch(
+      /scroll-snap-type:\s*x\s+mandatory/
+    );
+  });
+
   // @req REQ-156
   it("keeps the reviewed mockup beside the other design references", () => {
     expect(

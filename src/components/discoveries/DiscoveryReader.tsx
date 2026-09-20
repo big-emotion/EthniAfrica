@@ -41,6 +41,7 @@ import {
 } from "@/lib/discoveries/sharing";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
+import { EmbedFacade } from "@/components/media/EmbedFacade";
 import { GeneratedImageBadge } from "@/components/discoveries/GeneratedImageBadge";
 import { GeneratedImageDetail } from "@/components/discoveries/GeneratedImageDetail";
 import {
@@ -84,8 +85,11 @@ function syncPublicationHead(language: Language, entry: DiscoveryPublication) {
   const title = entry.title[language];
   const description = entry.description[language];
   const url = `https://${CANONICAL_DOMAIN}${discoveryPath(language, entry)}`;
-  // A proverb has no photo; its share card is the site's own image.
-  const image = `https://${CANONICAL_DOMAIN}${entry.image?.src ?? "/opengraph-image"}`;
+  // A proverb has no photo; its share card is the site's own image. A series
+  // has no photograph elsewhere either, and its first frame is its cover.
+  const cover =
+    entry.image?.src ?? entry.carousel?.frames[0]?.src ?? "/opengraph-image";
+  const image = `https://${CANONICAL_DOMAIN}${cover}`;
   document.title = title;
   const content = [
     ['meta[name="description"]', description],
@@ -175,6 +179,13 @@ export function DiscoveryReader({
   );
   const feedRef = useRef<HTMLDivElement>(null);
   const scrollTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // Which frame each series is showing, kept by publication id: the deck
+  // mounts every card at once, so a series keeps its place when the reader
+  // scrolls past it and comes back.
+  const [frameByPublication, setFrameByPublication] = useState<
+    Record<string, number>
+  >({});
+  const trackRefs = useRef<Record<string, HTMLDivElement | null>>({});
   const active = ordered[activeIndex];
   const words = discoveriesCopy[language];
 
@@ -254,6 +265,50 @@ export function DiscoveryReader({
     activeIdRef.current = ordered[index].id;
     setActiveIndex(index);
     window.history.pushState({}, "", discoveryPath(language, ordered[index]));
+  };
+
+  const showFrame = (entry: DiscoveryPublication, index: number) => {
+    const frames = entry.carousel?.frames ?? [];
+    const next = Math.min(Math.max(index, 0), frames.length - 1);
+    if ((frameByPublication[entry.id] ?? 0) === next) return;
+    setFrameByPublication((current) => ({ ...current, [entry.id]: next }));
+  };
+
+  // Scrolling the track rather than scrollIntoView: the frame is inside the
+  // vertical deck, and asking the browser to bring it into view moves both
+  // scrollers at once.
+  const stepFrame = (delta: number) => {
+    const frames = active.carousel?.frames ?? [];
+    if (frames.length === 0) return;
+    const current = frameByPublication[active.id] ?? 0;
+    const next = Math.min(Math.max(current + delta, 0), frames.length - 1);
+    if (next === current) return;
+    const track = trackRefs.current[active.id];
+    const target = track?.children[next] as HTMLElement | undefined;
+    const reduceMotion = window.matchMedia?.(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+    track?.scrollTo?.({
+      left: target?.offsetLeft ?? 0,
+      behavior: reduceMotion ? "instant" : "smooth",
+    });
+    showFrame(active, next);
+  };
+
+  const settleFrame = (entry: DiscoveryPublication) => {
+    const track = trackRefs.current[entry.id];
+    if (!track) return;
+    const frames = Array.from(track.children) as HTMLElement[];
+    if (frames.length === 0) return;
+    const nearest = frames.reduce(
+      (best, frame, index) =>
+        Math.abs(frame.offsetLeft - track.scrollLeft) <
+        Math.abs(frames[best].offsetLeft - track.scrollLeft)
+          ? index
+          : best,
+      0
+    );
+    showFrame(entry, nearest);
   };
 
   const toggleSaved = () => {
@@ -359,12 +414,20 @@ export function DiscoveryReader({
           ref={feedRef}
           onScroll={settle}
           onKeyDown={(event) => {
+            // Down and up belong to the deck, right and left to the series
+            // inside the publication being read. One handler, two axes.
             if (event.key === "ArrowDown") {
               event.preventDefault();
               move(activeIndex + 1);
             } else if (event.key === "ArrowUp") {
               event.preventDefault();
               move(activeIndex - 1);
+            } else if (event.key === "ArrowRight") {
+              event.preventDefault();
+              stepFrame(1);
+            } else if (event.key === "ArrowLeft") {
+              event.preventDefault();
+              stepFrame(-1);
             }
           }}
           tabIndex={0}
@@ -379,7 +442,35 @@ export function DiscoveryReader({
               data-publication-id={entry.id}
               aria-label={entry.title[language]}
             >
-              {!entry.image || failedImageIds.has(entry.id) ? (
+              {entry.carousel && !failedImageIds.has(entry.id) ? (
+                <div
+                  className={styles.carousel}
+                  role="group"
+                  aria-label={words.carouselLabel}
+                  ref={(node) => {
+                    trackRefs.current[entry.id] = node;
+                  }}
+                  onScroll={() => settleFrame(entry)}
+                >
+                  {entry.carousel.frames.map((frame) => (
+                    <Image
+                      className={styles.carouselFrame}
+                      key={frame.src}
+                      src={frame.src}
+                      alt={frame.alt[language]}
+                      width={frame.width}
+                      height={frame.height}
+                      unoptimized
+                      priority={index === 0}
+                      onError={() =>
+                        setFailedImageIds((current) =>
+                          new Set(current).add(entry.id)
+                        )
+                      }
+                    />
+                  ))}
+                </div>
+              ) : !entry.image || failedImageIds.has(entry.id) ? (
                 <div className={styles.photoFallback} />
               ) : (
                 <Image
@@ -400,11 +491,34 @@ export function DiscoveryReader({
               )}
               <div className={styles.shade} aria-hidden="true" />
               <div className={styles.copy}>
+                {entry.carousel && !failedImageIds.has(entry.id) ? (
+                  <>
+                    <div className={styles.dots} aria-hidden="true">
+                      {entry.carousel.frames.map((frame, position) => (
+                        <span
+                          key={frame.src}
+                          className={
+                            position === (frameByPublication[entry.id] ?? 0)
+                              ? `${styles.dot} ${styles.dotCurrent}`
+                              : styles.dot
+                          }
+                        />
+                      ))}
+                    </div>
+                    <span className="sr-only" aria-live="polite">
+                      {`${words.frame} ${(frameByPublication[entry.id] ?? 0) + 1} ${words.of} ${entry.carousel.frames.length}`}
+                    </span>
+                  </>
+                ) : null}
                 <p className={styles.kind}>
                   {entry.kind === "image" ? (
                     <GeneratedImageBadge entry={entry} language={language} />
                   ) : entry.kind === "proverb" ? (
                     words.proverb
+                  ) : entry.kind === "carousel" ? (
+                    words.carousel
+                  ) : entry.kind === "video" ? (
+                    words.video
                   ) : (
                     words.fact
                   )}
@@ -436,6 +550,37 @@ export function DiscoveryReader({
                   {" · "}
                   {entry.source?.shortTitle ?? entry.source?.title}
                 </p>
+                {/* The production is played, or linked to, from here. The facade
+                    sits after the words and before the credit, and only the
+                    card on screen keeps its controls in the tab order. */}
+                {entry.video ? (
+                  <>
+                    <EmbedFacade
+                      language={language}
+                      name={entry.title[language]}
+                      embed={entry.video.embed}
+                      poster={entry.video.poster}
+                      watchUrl={entry.video.watchUrl}
+                      active={index === activeIndex}
+                    />
+                    {entry.video.credit ? (
+                      <p className={styles.credit}>
+                        {words.video}
+                        {" : "}
+                        {entry.video.credit.author}
+                        {" · "}
+                        <a
+                          href={entry.video.credit.licenceUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          tabIndex={index === activeIndex ? 0 : -1}
+                        >
+                          {words.videoLicences[entry.video.credit.licence]}
+                        </a>
+                      </p>
+                    ) : null}
+                  </>
+                ) : null}
                 {/* A generated image is not a photo and has no original file
                     to credit; its provenance lives in the detail sheet. */}
                 {!entry.image ||
@@ -446,15 +591,22 @@ export function DiscoveryReader({
                 ) : (
                   <p className={styles.credit}>
                     {words.image}{" "}
-                    <a
-                      href={entry.image.filePage}
-                      target="_blank"
-                      rel="noreferrer"
-                      tabIndex={index === activeIndex ? 0 : -1}
-                    >
-                      {entry.image.shortCredit?.[language] ??
-                        entry.image.credit}
-                    </a>
+                    {/* A series was rendered here, so there is no file page
+                        elsewhere to send the reader to; the credit still is. */}
+                    {entry.image.filePage ? (
+                      <a
+                        href={entry.image.filePage}
+                        target="_blank"
+                        rel="noreferrer"
+                        tabIndex={index === activeIndex ? 0 : -1}
+                      >
+                        {entry.image.shortCredit?.[language] ??
+                          entry.image.credit}
+                      </a>
+                    ) : (
+                      (entry.image.shortCredit?.[language] ??
+                      entry.image.credit)
+                    )}
                   </p>
                 )}
               </div>

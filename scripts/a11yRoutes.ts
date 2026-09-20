@@ -1,4 +1,5 @@
 import type { Language } from "@/types/shared";
+import { DISCOVERY_SLUGS } from "@/lib/discoveries/slugs";
 import {
   COMPARE_ENTITY_SEGMENTS,
   getCountryRoute,
@@ -80,6 +81,13 @@ const liveRoutesFor = (locale: Language): string[] => [
   getLocalizedRoute(locale, "names"),
   getLocalizedRoute(locale, "peoples"),
   getLocalizedRoute(locale, "search"),
+  // The bare search route above audits the empty state only. These two cover
+  // the result feed's other two states this gate had never reached: an exact
+  // match against real corpus data (`Mandé`, FLG_MANDE) and a name the corpus
+  // holds nothing for, which draws the unknown-name confession rather than an
+  // empty results list (ETNI-1966, search-result-feed-completion.md §5.3).
+  `${getLocalizedRoute(locale, "search")}?q=mand%C3%A9`,
+  `${getLocalizedRoute(locale, "search")}?q=kossiwa`,
   getStaticPageRoute(locale, "legalNotice"),
   `${getStaticPageRoute(locale, "admin")}/connexion`,
   getFamilyRoute(locale, "FLG_BANTU"),
@@ -110,6 +118,15 @@ const liveRoutesFor = (locale: Language): string[] => [
   // not here: `qualityGateRoutes.test.ts` keeps every axis landing page out of
   // both browser gates, and that rule does not bend for a freeze.
   getLocalizedRoute(locale, "anecdotes"),
+  // Where a production is played (REQ-181, DEC-059): the entry that carries
+  // the consent facade and, once a reader clicks, a third-party frame. The
+  // result page's shelf navigates here and owns no player. Not the section
+  // route: it only redirects to the deck's first entry, so auditing it would
+  // audit whichever entry the catalogue happens to lead with. Composed from the
+  // slug table, so withdrawing the record fails here instead of turning into a
+  // 404 the gate reports as a clean run. The Lighthouse gate visits it too,
+  // which is why it must be audited here first (lighthouseAxeCoverage.test.ts).
+  `${getLocalizedRoute(locale, "discoveries")}/${DISCOVERY_SLUGS["video:origine-du-nom-mande"][locale]}`,
   getLocalizedRoute(locale, "doctrine"),
   `${getLocalizedRoute(locale, "doctrine")}/classifications-contestees`,
 ];

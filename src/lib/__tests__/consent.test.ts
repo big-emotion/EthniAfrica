@@ -55,6 +55,7 @@ describe("consent utilities", () => {
           essential: true,
           analytics: true,
           functional: false,
+          embeds: false,
         },
         consentDate: "2024-01-15T10:00:00.000Z",
       };
@@ -66,6 +67,24 @@ describe("consent utilities", () => {
 
       const result = getStoredConsent();
       expect(result).toEqual(mockConsent);
+    });
+
+    // Records written before the `embeds` category existed carry no such key.
+    // It must read as "refused", never as `undefined` a caller might treat as
+    // "not yet asked" and prompt for on every page.
+    // @req REQ-181
+    it("reads a record from before the embeds category as refused", () => {
+      localStorageMock.setItem(
+        CONSENT_STORAGE_KEY,
+        JSON.stringify({
+          hasConsented: true,
+          preferences: { essential: true, analytics: true, functional: false },
+          consentDate: "2024-01-15T10:00:00.000Z",
+        })
+      );
+
+      expect(getStoredConsent()?.preferences.embeds).toBe(false);
+      expect(getStoredConsent()?.preferences.analytics).toBe(true);
     });
 
     it("should return null for invalid JSON", () => {
@@ -84,6 +103,7 @@ describe("consent utilities", () => {
           essential: true,
           analytics: true,
           functional: true,
+          embeds: false,
         },
         consentDate: "2024-06-15T12:00:00.000Z",
       };
@@ -166,6 +186,12 @@ describe("consent utilities", () => {
 
     it("should have functional as false", () => {
       expect(DEFAULT_PREFERENCES.functional).toBe(false);
+    });
+
+    // A third-party player is absent until the reader asks for one.
+    // @req REQ-181
+    it("should have embeds as false", () => {
+      expect(DEFAULT_PREFERENCES.embeds).toBe(false);
     });
   });
 });

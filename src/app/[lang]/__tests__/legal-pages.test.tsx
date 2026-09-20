@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { describe, expect, it, vi } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import AccessibilityPage from "@/app/[lang]/accessibilite/page";
 import LegalNoticePage from "@/app/[lang]/mentions-legales/page";
 import DataPolicyPage from "@/app/[lang]/politique-de-donnees/page";
@@ -14,7 +14,19 @@ vi.mock("@/components/layout/PageLayout", () => ({
   }) => <div data-language={language}>{children}</div>,
 }));
 
+vi.mock("@/lib/api/logger", () => ({ logger: { error: vi.fn() } }));
+
 const routeParams = (lang: string) => Promise.resolve({ lang });
+
+afterEach(() => {
+  vi.unstubAllEnvs();
+});
+
+/** The text of one `<section>` as a reader meets it, found from its heading. */
+function sectionText(heading: string): string {
+  const title = screen.getByRole("heading", { level: 2, name: heading });
+  return title.closest("section")?.textContent ?? "";
+}
 
 describe("footer destination pages", () => {
   // @req REQ-088
@@ -25,7 +37,6 @@ describe("footer destination pages", () => {
       screen.getByRole("heading", { level: 1, name: "Mentions légales" })
     ).toBeInTheDocument();
     expect(screen.getByText(/BIG EMOTION, SASU/i)).toBeInTheDocument();
-    expect(screen.getByText(/Vercel Inc\./i)).toBeInTheDocument();
     expect(screen.getAllByText(/hello@big-emotion\.com/i)).not.toHaveLength(0);
     expect(
       screen.getByRole("heading", {
@@ -43,6 +54,167 @@ describe("footer destination pages", () => {
     ).toBeInTheDocument();
   });
 
+  // The host is production's own machine, and its name is configuration: the
+  // repository is public and does not carry it.
+  // @req REQ-088
+  it("names the host the environment provides, and no platform the site does not run on", async () => {
+    vi.stubEnv("LEGAL_HOST_NAME", "Exemple Hébergement SAS");
+    vi.stubEnv("LEGAL_HOST_ADDRESS", "1 rue de l’Exemple, 00000 Ville, Pays");
+    const { container } = render(
+      await LegalNoticePage({ params: routeParams("fr") })
+    );
+
+    const hosting = sectionText("Hébergement");
+    expect(hosting).toContain("Exemple Hébergement SAS");
+    expect(hosting).toContain("Union européenne");
+    expect(container.textContent).not.toMatch(/Vercel/i);
+  });
+
+  // @req REQ-088
+  it("states the role of the host, without a name, when none is configured", async () => {
+    vi.stubEnv("LEGAL_HOST_NAME", "");
+    vi.stubEnv("LEGAL_HOST_ADDRESS", "");
+    render(await LegalNoticePage({ params: routeParams("fr") }));
+
+    expect(sectionText("Hébergement")).toContain(
+      "serveur dédié exploité pour le compte de l’éditeur"
+    );
+  });
+
+  // @req REQ-088
+  it("declares every processor the site contacts about a reader, in both languages", async () => {
+    for (const [lang, heading, upstashRegion] of [
+      ["fr", "Services et sous-traitants", /Upstash, Inc\.[^.]*Francfort/],
+      ["en", "Services and processors", /Upstash, Inc\.[^.]*Frankfurt/],
+    ] as const) {
+      const { unmount } = render(
+        await DataPolicyPage({ params: routeParams(lang) })
+      );
+      const processors = sectionText(heading);
+      // Measured in Upstash's console: the Redis instance is in eu-central-1.
+      expect(processors, lang).toMatch(upstashRegion);
+      expect(processors, lang).toMatch(/Microsoft/);
+      expect(processors, lang).not.toMatch(/Vercel/i);
+      unmount();
+    }
+  });
+
+  // Where Microsoft keeps the mail the site sends, read by the operator from
+  // the tenant's Data location card in the Microsoft 365 admin center
+  // (2026-09-20): Exchange Online, current and committed geography France. The
+  // card also says storage is moving from in-country to regional within the EU
+  // Data Boundary, so the policy commits to the Union and names France only as
+  // where it is today.
+  // @req REQ-182
+  it("says where Microsoft keeps the mail the site sends, as the Union and, today, France", async () => {
+    for (const [lang, held] of [
+      [
+        "fr",
+        /conservés au repos par Microsoft[^.]*Union européenne[^.]*à ce jour, en France/,
+      ],
+      [
+        "en",
+        /held at rest by Microsoft[^.]*European Union[^.]*today, in France/,
+      ],
+    ] as const) {
+      const { unmount } = render(
+        await DataPolicyPage({ params: routeParams(lang) })
+      );
+      const processors = sectionText(
+        lang === "fr" ? "Services et sous-traitants" : "Services and processors"
+      );
+      expect(processors, lang).toMatch(held);
+      unmount();
+    }
+  });
+
+  // The site contacts Google only after the reader asks for a video, and says
+  // so where it names its processors and where it names its legal bases. This
+  // stops being true the day ENABLED_EMBED_PROVIDERS is emptied, and the two
+  // paragraphs must leave in the same commit.
+  // @req REQ-182
+  it("declares the YouTube player, and the consent it rests on, in both languages", async () => {
+    for (const [lang, processorsHeading, basesHeading, google, consent] of [
+      [
+        "fr",
+        "Services et sous-traitants",
+        "Finalités et bases légales",
+        /Google Ireland Limited/,
+        /repose sur votre consentement/,
+      ],
+      [
+        "en",
+        "Services and processors",
+        "Purposes and legal bases",
+        /Google Ireland Limited/,
+        /rests on your consent/,
+      ],
+    ] as const) {
+      const { unmount } = render(
+        await DataPolicyPage({ params: routeParams(lang) })
+      );
+      const processors = sectionText(processorsHeading);
+      expect(processors, lang).toMatch(google);
+      expect(processors, lang).toMatch(/youtube-nocookie\.com/);
+      expect(processors, lang).toMatch(
+        lang === "fr"
+          ? /aucune requête n’est adressée à Google/
+          : /no request is made to Google/
+      );
+      expect(sectionText(basesHeading), lang).toMatch(consent);
+      unmount();
+    }
+  });
+
+  // The player was measured attempting two cookies on play, which a browser may
+  // exclude or keep (docs/plans/embedded-media-decision.md §6.1). A policy that
+  // says only "trackers" leaves a reader unable to check what was written, so
+  // it names them, and says that keeping them depends on the browser.
+  // @req REQ-182
+  it("names the two cookies the YouTube player tries to write, and that their fate is the browser's", async () => {
+    for (const [lang, processorsHeading, browserDecides] of [
+      ["fr", "Services et sous-traitants", /refusés d’office ou enregistrés/],
+      ["en", "Services and processors", /refused outright or stored/],
+    ] as const) {
+      const { unmount } = render(
+        await DataPolicyPage({ params: routeParams(lang) })
+      );
+      const processors = sectionText(processorsHeading);
+      expect(processors, lang).toMatch(/TESTCOOKIESENABLED/);
+      expect(processors, lang).toMatch(/LAST_RESULT_ENTRY_KEY/);
+      expect(processors, lang).toMatch(browserDecides);
+      unmount();
+    }
+  });
+
+  // @req REQ-088
+  it("describes Plausible as self-hosted and shared with the publisher's other site", async () => {
+    render(await DataPolicyPage({ params: routeParams("fr") }));
+
+    const processors = sectionText("Services et sous-traitants");
+    expect(processors).toMatch(/Plausible[^.]*auto-hébergé/);
+    expect(processors).toMatch(/big-emotion\.com/);
+  });
+
+  // The consent choice lives in localStorage, and calling it a cookie is what
+  // the banner, the footer and this page each did differently.
+  // @req REQ-088
+  it("has a cookies section that says where the choice is kept", async () => {
+    for (const [lang, heading, storage] of [
+      ["fr", "Cookies et stockage local", /stockage local/],
+      ["en", "Cookies and local storage", /local storage/],
+    ] as const) {
+      const { unmount } = render(
+        await DataPolicyPage({ params: routeParams(lang) })
+      );
+      const cookies = sectionText(heading);
+      expect(cookies, lang).toMatch(storage);
+      expect(cookies, lang).toMatch(/ethni-consent/);
+      expect(cookies, lang).toMatch(/ethni-locale/);
+      unmount();
+    }
+  });
+
   // @req REQ-088
   it("describes EthniAfrica's actual data-processing categories", async () => {
     render(await DataPolicyPage({ params: routeParams("fr") }));
@@ -52,7 +224,19 @@ describe("footer destination pages", () => {
     ).toBeInTheDocument();
     expect(screen.getByText(/Supabase/i)).toBeInTheDocument();
     expect(screen.getByText(/Plausible Analytics/i)).toBeInTheDocument();
-    expect(screen.getAllByText(/Sentry/i)).not.toHaveLength(0);
+  });
+
+  // Sentry has no DSN provisioned anywhere: naming it would declare a
+  // processor the site never contacts.
+  // @req REQ-088
+  it("names no processor that is not active", async () => {
+    for (const lang of ["fr", "en"] as const) {
+      const { container, unmount } = render(
+        await DataPolicyPage({ params: routeParams(lang) })
+      );
+      expect(container.textContent, lang).not.toMatch(/Sentry/i);
+      unmount();
+    }
   });
 
   // @req REQ-090

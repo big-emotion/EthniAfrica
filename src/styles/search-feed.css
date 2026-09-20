@@ -1,0 +1,13 @@
+/* The reviewed boards publish rounded reference-width values for the three
+   fluid editorial roles used by the search feed. Keep the scale fluid between
+   its existing bounds while landing exactly on the approved 430 px rendering.
+   The forty-board Playwright gate holds both these values and their desktop
+   maxima to the reviewed output (REQ-180). */
+.search-feed-reviewed {
+  --search-feed-text-hero: clamp(2.125rem, 1.5828375rem + 2.222vw, 3.25rem);
+  --search-feed-text-h3: clamp(1.1875rem, 1.0672375rem + 0.494vw, 1.4375rem);
+  --search-feed-text-body: clamp(1.0625rem, 1.00236875rem + 0.247vw, 1.1875rem);
+  --afh-text-hero: var(--search-feed-text-hero);
+  --afh-text-h3: var(--search-feed-text-h3);
+  --afh-text-body: var(--search-feed-text-body);
+}

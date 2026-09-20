@@ -175,7 +175,10 @@
     "REQ-176",
     "REQ-177",
     "REQ-178",
-    "REQ-179"
+    "REQ-179",
+    "REQ-180",
+    "REQ-181",
+    "REQ-182"
   ],
   "sourceMap": {
     "REQ-001": "FR1",
@@ -349,6 +352,9 @@
     "REQ-176": "Confluence REQ-176 (page 202047490) — Recette's environment does not depend on a third-party hosted database's quota or billing state",
     "REQ-177": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/202211350",
     "REQ-178": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/202113048",
-    "REQ-179": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/202080280"
+    "REQ-179": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/202080280",
+    "REQ-180": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/203227138",
+    "REQ-181": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/203653121",
+    "REQ-182": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/203685889"
   }
 }

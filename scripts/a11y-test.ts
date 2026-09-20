@@ -26,7 +26,20 @@ const STORY_SWEEP_LANES = 4;
 // built-in list rather than replace it, so genuinely invalid `lang` values
 // are still caught. `validLangs` isn't part of axe-core's public TS types.
 const AXE_UTILS = axeCore.utils as unknown as { validLangs: () => string[] };
-const AFRIK_ISO_639_3_CODES = ["kon", "lin", "yor", "hau", "ibo", "ful", "wol"];
+// `amh` and `sna` are the Amharic and Shona proverbs Découvertes prints in the
+// original language: the deck is on the Lighthouse gate now (ETNI-1970), and
+// without them `valid-lang` fails every pull request on markup that is correct.
+const AFRIK_ISO_639_3_CODES = [
+  "kon",
+  "lin",
+  "yor",
+  "hau",
+  "ibo",
+  "ful",
+  "wol",
+  "amh",
+  "sna",
+];
 // axe-core's `RunOptions` type only exposes rule-level `{ enabled }` toggles,
 // but check-level options (like `valid-lang`'s custom `value` list) are a
 // runtime-supported `checks` key that the public TS types don't model. The

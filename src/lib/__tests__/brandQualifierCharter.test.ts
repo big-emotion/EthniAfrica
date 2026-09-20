@@ -2,7 +2,12 @@ import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 
-import { OG_TITLE, PRODUCT_NAME, PRODUCT_TAGLINE } from "@/lib/brand";
+import {
+  OG_DESCRIPTION,
+  OG_TITLE,
+  PRODUCT_NAME,
+  PRODUCT_TAGLINE,
+} from "@/lib/brand";
 
 /**
  * Brand charter §1: the product name and its qualifier are read from
@@ -55,9 +60,26 @@ const QUALIFIERS = [
   "Atlas des Peuples d'Afrique",
   "Atlas of the Peoples of Africa",
   "Dictionnaire des Ethnies d'Afrique",
+  // Retired 2026-09-20: it named peoples alone, once the site asked the
+  // question of five kinds of name.
+  "D’où viennent les noms des peuples d’Afrique",
 ];
 
 describe("the product's qualifier, spelled in one place", () => {
+  // The site asks « d'où vient ce nom ? » of a people, a country, a language, a
+  // place and a family name. A title that says "peoples" tells a reader who
+  // arrives for a country or a surname that this is not their site.
+  // @req REQ-019
+  it("does not narrow the question to peoples alone", () => {
+    expect(PRODUCT_TAGLINE.toLowerCase()).not.toContain("peuples");
+    expect(OG_DESCRIPTION.split("?")[0].toLowerCase()).not.toContain("peuples");
+  });
+
+  // @req REQ-019
+  it("opens the description on the question", () => {
+    expect(OG_DESCRIPTION.startsWith("D’où vient")).toBe(true);
+  });
+
   // @req REQ-019
   it("composes OG_TITLE from the name and the qualifier", () => {
     expect(OG_TITLE).toBe(`${PRODUCT_NAME} — ${PRODUCT_TAGLINE}`);

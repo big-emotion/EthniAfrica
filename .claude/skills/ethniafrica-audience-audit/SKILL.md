@@ -236,7 +236,13 @@ Per `utm_campaign`: visitors, landing page, bounce.
 Per network: views, non-follower share, the attention signal it exposes, and
 what could not be read. Then one row per post:
 
-| Post | Network | Published | Views | Stayed / 3 s | Comments | Shares | Link taps · tagged visits |
+| Post | Campaign | Network | Published | Views | Stayed / 3 s | Comments | Shares | Link taps · tagged visits |
+
+**`Campaign` is the same slug as `utm_campaign` and as
+`docs/productions/<typologie>/<NNN>-<slug>.json`'s `campaign` field** — a human
+title changes across a rewrite, a translation or a typo; the slug does not.
+Filling this column is what lets a later session join this report to a
+production's ledger file without re-reading both side by side.
 
 Then the signals of understanding, in words: what the comments say, or that
 there are none.

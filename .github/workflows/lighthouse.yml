@@ -4,7 +4,7 @@ on:
   # Two jobs on two paths, the same split as e2e.yml.
   #
   # `gate` runs on every pull request, into `recette` included, and is meant to
-  # be a required check: four routes, one run each, asserting accessibility and
+  # be a required check: five routes, one run each, asserting accessibility and
   # best practices as errors and printing performance as warnings (see
   # `.lighthouserc.gate.js` for why the performance half cannot block here).
   #
@@ -30,7 +30,11 @@ permissions:
 
 jobs:
   gate:
-    name: Lighthouse gate (4 routes)
+    # No route count in the name: the count moved (four, then five), and branch
+    # protection on `recette` matches a required check by name, so every change
+    # of it is a coordinated rename: change the protection rule in the same step,
+    # and in ephemeralSupabaseWiring.test.ts and lighthouseGateNames.test.ts.
+    name: Lighthouse gate
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -174,6 +178,12 @@ jobs:
       # including on forks / Dependabot PRs.
       - name: Check quiz play-island bundle size (≤ 15 KB gzipped)
         run: npm run bundle-size:quiz
+
+      # REQ-181 — the third-party player facade the Découvertes reader mounts
+      # for every production. Same standalone esbuild measurement, same reason
+      # to run on forks: it needs no secret.
+      - name: Check embed facade bundle size (≤ 8 KB gzipped)
+        run: npm run bundle-size:embed-facade
 
       # The home's two WebGL islands, measured the same standalone way: the
       # hero globe (DEC-020, 170 KB) and the axis panels' link graph

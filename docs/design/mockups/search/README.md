@@ -1,5 +1,18 @@
 # The result-page mockups — twenty boards, and what parity means
 
+**Superseded by `docs/design/mockups/search-feed/` (the forty-board reviewed
+feed, ETNI-1966) — kept here as reference, not as a live contract.** The page
+these boards described, `NameAnswer`, was deleted once its two blocking gaps
+(relation-scoped search, cross-type name disambiguation) were closed in the
+reviewed feed — see `docs/plans/search-result-feed-completion.md` §1e-§1f. No
+component reads this directory any more; `resultGrammarCharter.test.ts` still
+does, because it validates the boards' own internal grammar against
+`src/lib/search/resultGrammar.ts`, which stays as a record of what the retired
+page's contract was. This directory is not deleted alongside `NameAnswer`
+because the boards remain the documented history of what REQ-178 asked for
+before DEC-057's forty-board revision — the same reason superseded design
+history elsewhere in `docs/design/` is kept rather than removed.
+
 The reviewed rendering the search-result page answers to. The contract itself is
 `docs/design/search-result-charter.md`; this directory is the rendering, and
 `src/lib/search/resultGrammar.ts` is the part of the charter a test can read.

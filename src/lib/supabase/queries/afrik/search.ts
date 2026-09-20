@@ -25,6 +25,7 @@ import type {
   RankedSearchHit,
   SearchHitKind,
   SearchLead,
+  SearchNearName,
 } from "@/types/afrik";
 import type {
   PersonPeopleLink,
@@ -222,12 +223,39 @@ export async function ftsSearchEntities(
     quizPayload.total +
     languagePayload.total;
 
-  // Leads are only worth computing once the main search has already come up
-  // empty (REQ-125) — a non-empty result set is not a dead end, so it never
-  // needs a near-miss.
-  const leads =
-    !quizOnly && text && total === 0
-      ? await fetchSearchLeads(supabase, text, lang)
+  const visibleNameKeys = new Set([
+    ...peoples.map((item) => nameEntityKey("people", item.id)),
+    ...countries.map((item) => nameEntityKey("country", item.id)),
+    ...families.map((item) => nameEntityKey("family", item.id)),
+  ]);
+  let nameSuggestions: SearchLead[] = [];
+  if (!quizOnly && text) {
+    try {
+      nameSuggestions = await fetchSearchNameSuggestions(
+        supabase,
+        text,
+        total === 0 ? 3 : visibleNameKeys.size + 3,
+        lang
+      );
+    } catch (error) {
+      // A near-name shelf enriches an answered search; it cannot invalidate
+      // the ranked results. Zero-result leads are the answer itself and retain
+      // their existing fail-closed behaviour.
+      if (total === 0) throw error;
+    }
+  }
+  // REQ-125 keeps zero-result recovery distinct from the similar-name
+  // editorial block on an answered search. The latter excludes entities
+  // already present in the grouped result arrays, then keeps the same public
+  // three-item bound.
+  const leads = total === 0 ? nameSuggestions.slice(0, 3) : [];
+  const nearNames: SearchNearName[] =
+    total > 0
+      ? nameSuggestions
+          .filter(
+            (item) => !visibleNameKeys.has(nameEntityKey(item.kind, item.id))
+          )
+          .slice(0, 3)
       : [];
 
   return {
@@ -258,17 +286,23 @@ export async function ftsSearchEntities(
     languagesTotal: languagePayload.total,
     total,
     leads,
+    nearNames,
   };
 }
 
-async function fetchSearchLeads(
+function nameEntityKey(kind: SearchLead["kind"], id: string): string {
+  return `${kind}:${id}`;
+}
+
+async function fetchSearchNameSuggestions(
   supabase: ReturnType<typeof createServerClient>,
   text: string,
+  limit: number,
   lang?: FtsSearchParams["lang"]
 ): Promise<SearchLead[]> {
   const { data, error } = await supabase.rpc("afrik_search_leads", {
     p_q: text,
-    p_limit: 3,
+    p_limit: limit,
     ...(lang !== undefined && { p_lang: lang }),
   });
 

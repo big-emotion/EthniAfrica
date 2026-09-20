@@ -56,6 +56,20 @@ reader meets that question first. `Atlas des Peuples d'Afrique` named what the
 product _is_; the new one names what it _does_, which is the only thing a
 stranger scrolling a feed can act on. The name itself is untouched.
 
+**The qualifier was narrowed out of `peuples` on 20 September 2026: `D'où
+viennent les noms d'Afrique`.** The publishing format asks the same question of
+five kinds of name — a people, a country, a place, a family name, a language —
+and a qualifier that says "peoples" tells a reader who arrives for a country or
+a surname that this is not their site. `OG_DESCRIPTION` follows: it opens on the
+question, keeps the six corpus classes behind it (`siteDescription.test.ts`
+still holds it to the registry), and closes on « sans trancher », the project's
+rule that it presents sources and does not rank them. `brandQualifierCharter.test.ts`
+now refuses `peuples` in the qualifier and in the description's question, and
+the retired wording joins the list of spellings no source file may print.
+The classes the description enumerates are unchanged, and so is
+`translations.*.subtitle`, which sits under the question on the share card and
+already enumerates them.
+
 **Two spellings fell out of that swap, and both are what this section exists to
 catch.** The browser tab kept a literal — `EthniAfrica | Dictionnaire des
 Ethnies d'Afrique` — so a reader opening the tab and a reader seeing the shared
@@ -247,6 +261,17 @@ match, and the reading carries its own way out — a rail of destinations from
 1200 px, a _Parcourir_ sheet below. The licence covers that stage and nothing
 opened from it: its sheets stay on parchment, because a source list is a
 document. Gated by `discoveriesImmersiveCharter.test.ts`.
+
+**DEC-058 licenses the search-result feed's night variant as a third scoped
+surface.** It is a theme variant of the same feed, never the route's default and
+never a licence for a global dark theme. It substitutes the documented
+`--afh-night-*` ground, surface, warm and ink roles while preserving the same
+manifest, copy, media and block geometry as day. The light verdict surface and
+light contribution action remain light with dark text because their role is a
+quoted answer and an open door, not an extension of the stage ground. Source
+apparatus opened from the feed remains a parchment document, as it does from
+Découvertes. REQ-180's day/night structural comparison holds this scope: a
+night board that changes content or order is a different page, not a theme.
 
 ### 5.2 Four categorical accents, and a surface takes one
 

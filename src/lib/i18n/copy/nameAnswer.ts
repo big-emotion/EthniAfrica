@@ -41,6 +41,7 @@ export interface NameAnswerCopy {
   /** The searched form, marked in the list without being promoted. */
   yourSearch: string;
   selfGivenMark: string;
+  problematicMark: string;
   /** Said when the atlas holds no such name at all. */
   unknownName: string;
   unknownNameBody: string;
@@ -87,6 +88,7 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     further: "Going further",
     yourSearch: "your search",
     selfGivenMark: "the name they give themselves",
+    problematicMark: "contested form",
     unknownName: "We do not know this name.",
     unknownNameBody:
       "That is not an answer: it is a confession. If this name is yours, or one of a people, a language or a place you know, tell us. That is how the atlas grows.",
@@ -100,17 +102,17 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
       "They simply do not come from the same place: the one a people gives itself, the ones its neighbours give it, the one an administration wrote down one day.",
   },
   fr: {
-    eyebrow: "D’où vient ce nom",
+    eyebrow: "D'où vient ce nom",
     disambiguation: "Lequel cherchez-vous ?",
     appellations: "Les appellations",
-    appellationsLead: "Les plus communes d’abord. Aucune n’est « la bonne ».",
+    appellationsLead: "Les plus communes d'abord. Aucune n'est « la bonne ».",
     origins: "D’où elles viennent",
     selfGiven: "Ce que les peuples se donnent",
     problem: "Ce que ces noms posent",
     usageToday: "Qui dit quoi, aujourd’hui",
     throughTime: "À travers le temps",
     atlasHolds: "Ce que l’atlas tient",
-    silences: "Ce que l’atlas ne dit pas",
+    silences: "Ce que l'atlas ne dit pas",
     silencesLead: "Un silence déclaré, pas un oubli.",
     noDatedAttestation: "Aucune attestation datée",
     noDatedAttestationBody:
@@ -122,6 +124,7 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     further: "Aller plus loin",
     yourSearch: "votre recherche",
     selfGivenMark: "le nom qu’ils se donnent",
+    problematicMark: "forme contestée",
     unknownName: "Nous ne connaissons pas ce nom.",
     unknownNameBody:
       "Ce n’est pas une réponse : c’est un aveu. Si ce nom est le vôtre, ou celui d’un peuple, d’une langue ou d’un lieu que vous connaissez, dites-le-nous. C’est comme ça que l’atlas grandit.",

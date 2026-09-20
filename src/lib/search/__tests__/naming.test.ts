@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { readNaming } from "@/lib/search/naming";
+import type { SearchNameRecord } from "@/lib/search/naming";
 
 /**
  * Five classes store their naming under five different keys, and the result
@@ -143,5 +144,286 @@ describe("the naming projection", () => {
     expect(naming.forms).toEqual([]);
     expect(naming.eras).toEqual([]);
     expect(naming.selfGiven).toBeUndefined();
+  });
+
+  // @req REQ-180
+  it("builds per-form presentation facts from one structured name record", () => {
+    const records: SearchNameRecord[] = [
+      {
+        id: "name-mandingo",
+        entityType: "people",
+        entityId: "PPL_MANDE",
+        form: "Mandingo",
+        kind: "exonym",
+        languageOfOrigin: "eng",
+        meaning: "The English rendering of Mandingue",
+        periodLabel: "colonial period",
+        imposedBy: "British administrations",
+        impositionPeriod: "nineteenth century",
+        problematic: true,
+        usedToday: true,
+        claimStatus: "contested",
+        evidence: [
+          {
+            assertion: {
+              id: "assertion-mandingo",
+              statement: "Mandingo is attested in English-language sources.",
+              position: "English-language usage",
+              fieldPath: "content.appellations.exonyms.0",
+              confidenceScore: 0.8,
+              sourceCount: 1,
+              lastHumanAuditAt: "2026-09-01",
+            },
+            sources: [
+              {
+                id: "source-mandingo",
+                title: "A referenced work",
+                url: "https://example.org/source",
+                year: 1972,
+                tier: "referenced",
+              },
+            ],
+            standing: "referenced",
+          },
+        ],
+      },
+    ];
+
+    const naming = readNaming(
+      "people",
+      {
+        appellations: {
+          selfAppellation: "Maninka",
+          exonyms: ["Mandingo"],
+        },
+      },
+      { id: "PPL_MANDE" },
+      records
+    );
+
+    expect(naming.presentation.forms).toEqual([
+      {
+        form: "Maninka",
+        selfGiven: true,
+        attestations: [],
+        evidence: [],
+      },
+      expect.objectContaining({
+        form: "Mandingo",
+        selfGiven: false,
+        origin: {
+          languageCode: "eng",
+          meaning: "The English rendering of Mandingue",
+          imposedBy: "British administrations",
+          period: "nineteenth century",
+        },
+        attestationPeriod: "colonial period",
+        problematic: "recorded",
+        currentUsage: "recorded",
+        claimStatus: "contested",
+      }),
+    ]);
+    expect(naming.presentation.forms[1].evidence).toHaveLength(1);
+  });
+
+  // @req REQ-180
+  it("keeps an explicitly contested patronym origin as positions instead of resolving it", () => {
+    const evidence = [
+      {
+        assertion: {
+          id: "assertion-problem",
+          statement: "One source records ‘problem’.",
+          fieldPath: "origin.linguisticReconstructions.0.claim",
+          sourceCount: 1,
+          lastHumanAuditAt: null,
+        },
+        sources: [
+          {
+            id: "source-a",
+            title: "First source",
+            tier: "referenced" as const,
+          },
+        ],
+        standing: "referenced" as const,
+      },
+      {
+        assertion: {
+          id: "assertion-sanctuary",
+          statement: "Another records ‘sanctuary’.",
+          fieldPath: "origin.linguisticReconstructions.1.claim",
+          sourceCount: 1,
+          lastHumanAuditAt: null,
+        },
+        sources: [
+          {
+            id: "source-b",
+            title: "Second source",
+            tier: "official" as const,
+          },
+        ],
+        standing: "official" as const,
+      },
+    ];
+    const naming = readNaming(
+      "patronyme",
+      {},
+      {
+        nameMain: "Riek",
+        spellings: [{ spelling: "Riek", attestations: [{ countryId: "SSD" }] }],
+        origin: {
+          linguisticReconstructions: [
+            {
+              claim: "One source records ‘problem’.",
+              claimStatus: "contested",
+              sourceRefs: ["source-a"],
+            },
+            {
+              claim: "Another records ‘sanctuary’.",
+              claimStatus: "claimed",
+              sourceRefs: ["source-b"],
+            },
+          ],
+        },
+      },
+      [],
+      evidence
+    );
+
+    expect(naming.presentation.disagreements).toEqual([
+      {
+        positions: [
+          {
+            statement: "One source records ‘problem’.",
+            claimStatus: "contested",
+            evidence: [evidence[0]],
+          },
+          {
+            statement: "Another records ‘sanctuary’.",
+            claimStatus: "claimed",
+            evidence: [evidence[1]],
+          },
+        ],
+      },
+    ]);
+  });
+
+  // @req REQ-180
+  it("does not confuse disagreement path indices 1 and 10", () => {
+    const claims = Array.from({ length: 11 }, (_, index) => ({
+      claim: `Recorded position ${index}.`,
+      claimStatus: index === 1 ? "contested" : "claimed",
+    }));
+    const evidence = [1, 10].map((index) => ({
+      assertion: {
+        id: `assertion-${index}`,
+        statement: `Recorded position ${index}.`,
+        fieldPath: `origin.linguisticReconstructions.${index}.claim`,
+        sourceCount: 1,
+        lastHumanAuditAt: null,
+      },
+      sources: [
+        {
+          id: `source-${index}`,
+          title: `Source ${index}`,
+          tier: "referenced" as const,
+        },
+      ],
+      standing: "referenced" as const,
+    }));
+
+    const naming = readNaming(
+      "patronyme",
+      {},
+      { origin: { linguisticReconstructions: claims } },
+      [],
+      evidence
+    );
+    const positions = naming.presentation.disagreements[0].positions;
+
+    expect(positions[1].evidence[0].sources[0].id).toBe("source-1");
+    expect(positions[10].evidence[0].sources[0].id).toBe("source-10");
+    expect(positions[1].evidence).toHaveLength(1);
+    expect(positions[10].evidence).toHaveLength(1);
+  });
+
+  // @req REQ-180
+  it("never leaks workshop or scholarly vocabulary into presentation facts", () => {
+    const naming = readNaming(
+      "language",
+      {
+        alternateNames: ["Bangala"],
+        whyProblematic: "The corpus calls this an exonym.",
+      },
+      {},
+      [
+        {
+          id: "name-bangala",
+          entityType: "language",
+          entityId: "lin",
+          form: "Bangala",
+          kind: "historical_spelling",
+          meaning: "Corpus AFRIK — content.alternateNames",
+          imposedBy: "missionaries",
+          problematic: true,
+          usedToday: false,
+          evidence: [],
+        },
+      ]
+    );
+
+    expect(naming.presentation.forms[0]).toMatchObject({
+      form: "Bangala",
+      problematic: "recorded",
+      origin: { imposedBy: "missionaries" },
+    });
+    expect(naming.presentation.forms[0].origin).not.toHaveProperty("meaning");
+    expect(JSON.stringify(naming.presentation)).not.toMatch(
+      /corpus|exonym|endonym|autonym|etymolog/i
+    );
+  });
+
+  // @req REQ-180
+  it("projects all five subject classes without deriving missing facts", () => {
+    const projections = [
+      readNaming("people", {
+        appellations: { selfAppellation: "Fang", exonyms: ["Pahouin"] },
+      }),
+      readNaming("languageFamily", {
+        decolonialHeader: {
+          selfAppellation: "Afro-asiatique",
+          historicalAppellations: ["Hamito-sémitique"],
+        },
+      }),
+      readNaming(
+        "country",
+        {
+          historicalNames: {
+            formerNames: ["Niger Area"],
+            contemporary: "Nigeria",
+          },
+        },
+        {}
+      ),
+      readNaming("language", { alternateNames: ["Bangala"] }),
+      readNaming(
+        "patronyme",
+        {},
+        {
+          spellings: [
+            { spelling: "Traoré", attestations: [{ countryId: "MLI" }] },
+          ],
+        }
+      ),
+    ];
+
+    expect(projections.map((item) => item.presentation.forms.length)).toEqual([
+      2, 2, 1, 1, 1,
+    ]);
+    expect(projections[2].presentation.eras.map(({ era }) => era)).toEqual([
+      "formerNames",
+      "contemporary",
+    ]);
+    expect(projections[3].presentation.forms[0]).not.toHaveProperty("origin");
+    expect(projections[4].presentation.forms[0].attestations).toEqual(["MLI"]);
   });
 });

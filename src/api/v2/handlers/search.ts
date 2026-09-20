@@ -10,6 +10,7 @@ import type {
   FtsSearchParams,
   FtsSearchResponse,
   RankedSearchHit,
+  SearchNearName,
 } from "@/types/afrik";
 import type { ApiEnvelope } from "../utils/response";
 
@@ -42,6 +43,8 @@ export interface FtsSearchData {
   total: number;
   /** Near-miss leads (REQ-125), populated only when `total` is 0. */
   leads: object[];
+  /** Qualified similar names (REQ-180), populated only for a non-empty search. */
+  nearNames: SearchNearName[];
 }
 
 // @req REQ-002
@@ -78,6 +81,7 @@ function shapeSearchData(
       languagesTotal: 0,
       total: quizzesTotal,
       leads: [],
+      nearNames: [],
     };
   }
 
@@ -113,5 +117,6 @@ function shapeSearchData(
       patronymesTotal +
       languagesTotal,
     leads: (result.leads ?? []) as object[],
+    nearNames: result.nearNames ?? [],
   };
 }
