@@ -111,15 +111,12 @@ export function ShortsBlock({
         {emptySlot ? (
           <li className="w-[130px] shrink-0 snap-start min-[1200px]:w-[160px]">
             <div className="flex h-[231px] flex-col justify-between rounded-afh-lg border border-dashed border-afh-border p-afh-lg min-[1200px]:h-[284px]">
-              <p className="font-afh-display text-afh-small font-bold uppercase text-afh-text-soft">
-                {emptySlot.name}
+              <p className="font-afh-display text-afh-small font-bold uppercase leading-[var(--afh-leading-small)] text-afh-text-soft">
+                {emptySlot.question}
               </p>
-              <div className="space-y-afh-xs text-afh-caption text-afh-text-soft">
-                <p className="font-semibold text-afh-text">
-                  {emptySlot.question}
-                </p>
-                <p>{emptySlot.body}</p>
-              </div>
+              <p className="text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
+                {emptySlot.body}
+              </p>
               <SearchFeedContributionAction
                 language={language}
                 target={contributionTarget}

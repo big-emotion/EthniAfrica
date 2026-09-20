@@ -607,9 +607,7 @@ export function SearchFeed({
         return (
           <FactsBlock
             title={presentation?.facts?.title ?? answerCopy.atlasHolds}
-            subtitle={
-              presentation?.facts?.subtitle ?? copy.blocks.atlasHoldsSummary
-            }
+            subtitle={presentation?.facts?.subtitle}
             zone={zone}
             items={
               presentation?.facts?.items ?? [

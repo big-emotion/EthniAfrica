@@ -81,6 +81,52 @@ component patches. It needs its own investigation pass per case
 before touching `naming.ts`, because that module also feeds the people fiche
 naming tiles — a change here is not scoped to search.
 
+## 1b. Update — 2026-09-20, third session (causes 3, 4, 5)
+
+Fixed all three, TDD'd and unit-tested, each confirmed against the real board
+HTML (not the stale table) before patching:
+
+- **Cause #3 (`ShortsBlock` empty slot).** The board never renders a leading
+  subject-name label at all — confirmed in both `Bassa.dc.html` and
+  `Ekpeye.dc.html`: the dashed card's three flex children are the question
+  (uppercase, bold, `text-afh-small`), the body, and the action link, nothing
+  else. The component's `<p>{emptySlot.name}</p>` was dropped, and the
+  question paragraph now carries the classes the `name` paragraph used to
+  (uppercase/bold/`text-afh-small`, plus the board's own declared
+  `leading-[var(--afh-leading-small)]` / `leading-[var(--afh-leading-caption)]`
+  on the two lines). `emptySlot.name` stays in the type and is still
+  constructed in `SearchFeed.tsx` — nothing else reads it yet, but removing it
+  from the interface is a separate, unforced decision.
+- **Cause #4 (`FactsBlock` invented lead).** `SearchFeed.tsx` always fell back
+  to `copy.blocks.atlasHoldsSummary` when `presentation.facts.subtitle` was
+  unset. Ekpeye is the only fixture case using the `atlas-holds` block, and its
+  board has no subtitle line under the heading at all. Fixed by dropping the
+  fallback — `subtitle` is now `presentation?.facts?.subtitle` and nothing
+  else. `atlasHoldsSummary` is now an orphaned copy key (only that one call
+  site read it); left in place rather than deleted in the same change, since
+  copy-dictionary cleanup is phase 12's job, not phase 11's.
+- **Cause #5 (`PlatesBlock` duplicated proverb).** `ReviewedPlate`'s proverb
+  branch rendered `item.meaning` unconditionally. The Peul proverb's `meaning`
+  field equals its `text` field verbatim in the fixture (a corpus-side
+  duplication, not something to special-case by ID), so the paragraph now only
+  renders when `item.meaning && item.meaning !== item.text`.
+
+**Verification, and one still-open residual.** Unit suite: 347/347 (was 345).
+Re-running the real cases: `peul mobile-day` and `ekpeye mobile-day` now pass
+the **text** assertion entirely — `peul` fails only on a 1.3 px root-height
+pixel diff (pure convergence work, §3 below), and `ekpeye` fails only on the
+appellations chip tag (causes 6-10, §1a). `bassa mobile-day` also passes text,
+but its root height is off by **13.5 px**, reproduced identically before and
+after adding the board's own declared line-heights to the empty-slot
+paragraphs (so it is not a line-height issue). The empty-slot question wraps
+to three lines in the live render (confirmed by screenshot); whether the board
+also wraps to three lines at a tighter line-height, or wraps to two and
+something else in the row accounts for 13.5 px, was not resolved — chasing it
+further needs a real per-block geometry dump, and two attempts at scripting
+one against the live harness both hung on environment/port contention rather
+than producing a measurement. Left as a named residual for the pixel-
+convergence pass (§3) rather than guessed at further.
+
 ## 2. The rule that decides every remaining fix
 
 `docs/design/search-result-charter.md`, as PR #1188 rewrote it, gives three

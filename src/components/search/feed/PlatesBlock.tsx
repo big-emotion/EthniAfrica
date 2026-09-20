@@ -126,9 +126,11 @@ function ReviewedPlate({
           {item.original.text}
         </p>
       ) : null}
-      <p className="text-afh-small leading-[var(--afh-leading-small)]">
-        {item.meaning}
-      </p>
+      {item.meaning && item.meaning !== item.text ? (
+        <p className="text-afh-small leading-[var(--afh-leading-small)]">
+          {item.meaning}
+        </p>
+      ) : null}
       {item.origin.note ? (
         <p className="text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
           {item.origin.note}

@@ -126,4 +126,46 @@ describe("PlatesBlock", () => {
     expect(screen.getByText("Référencée")).toBeInTheDocument();
     expect(screen.getByText(/Archive nationale/)).toBeInTheDocument();
   });
+
+  // @req REQ-178
+  it("does not repeat a proverb's meaning when it restates the quoted text", () => {
+    render(
+      <PlatesBlock
+        reviewed
+        items={[
+          {
+            type: "proverb",
+            id: "proverb-reviewed",
+            contentLanguage: "fr",
+            text: "La langue est l’ennemie de son propriétaire.",
+            meaning: "La langue est l’ennemie de son propriétaire.",
+            original: {
+              text: "ɗemngal ko ganyo jooma mum",
+              lang: "ff",
+              language: "peul",
+            },
+            origin: {
+              status: "attested",
+              note: "Proverbe peul du Fouladou (Sénégal), publié en 1987 avec son texte original.",
+            },
+            sources: [{ title: "Recueil", url: null, tier: "referenced" }],
+            match: {
+              relation: "linked-country",
+              entityType: "country",
+              entityId: "SEN",
+            },
+          },
+        ]}
+      />
+    );
+
+    expect(
+      screen.getByText("« La langue est l’ennemie de son propriétaire. »")
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByText("La langue est l’ennemie de son propriétaire.", {
+        exact: true,
+      })
+    ).not.toBeInTheDocument();
+  });
 });

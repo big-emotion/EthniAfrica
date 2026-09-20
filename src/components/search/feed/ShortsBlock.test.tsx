@@ -107,6 +107,34 @@ describe("ShortsBlock", () => {
   });
 
   // @req REQ-180
+  it("opens the reviewed empty slot on the question, without a leading subject label", () => {
+    render(
+      <ShortsBlock
+        items={[]}
+        reviewed
+        emptySlot={{
+          name: "Bassa",
+          question: "D’où vient le nom « Bassa » ?",
+          body: "Pas encore de short sur les Bassa de la famille krou.",
+          action: "Proposer une source →",
+        }}
+        contributionTarget={{
+          type: "search-query",
+          id: "bassa",
+          name: "Bassa",
+          fieldPath: "shorts",
+          fieldLabel: "Les shorts",
+        }}
+      />
+    );
+
+    expect(screen.queryByText("Bassa")).not.toBeInTheDocument();
+    expect(
+      screen.getByText("D’où vient le nom « Bassa » ?")
+    ).toBeInTheDocument();
+  });
+
+  // @req REQ-180
   it.each(FEED_CASES)(
     "uses the canonical production question for $id fixture shorts",
     (fixture) => {
