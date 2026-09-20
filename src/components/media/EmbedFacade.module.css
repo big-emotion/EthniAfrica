@@ -83,6 +83,23 @@
   font: 700 var(--afh-text-small) / 1.2 var(--afh-font-body);
 }
 
+/* The name of the settings, set in the sentence that mentions it. */
+.settingsLink {
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.settingsLink:focus-visible {
+  outline: 0.125rem solid var(--afh-night-ink);
+  outline-offset: 0.125rem;
+}
+
 .notice {
   max-width: 24rem;
   margin: 0;
