@@ -44,13 +44,14 @@ export function EmbedFacade({
   active = true,
 }: EmbedFacadeProps) {
   const copy = embedFacadeCopy[language];
-  const { consentState, setEmbedsConsent } = useConsent();
+  const { consentState, setEmbedsConsent, setShowBanner } = useConsent();
   const [playing, setPlaying] = useState(false);
   const playButton = useRef<HTMLButtonElement>(null);
   const frame = useRef<HTMLIFrameElement>(null);
   const returnFocus = useRef(false);
   const noticeId = useId();
   const tabIndex = active ? 0 : -1;
+  const [beforeSettings, afterSettings] = copy.notice.split("{settings}");
 
   const playerUrl = embed ? embedPlayerUrl(embed) : null;
 
@@ -139,7 +140,19 @@ export function EmbedFacade({
         </button>
       ) : (
         <p className={styles.notice} id={noticeId}>
-          {copy.notice.replace("{settings}", consentCopy[language].title)}
+          {beforeSettings}
+          {/* The reader has no footer, so the panel the notice names would
+              otherwise be nowhere on the page: withdrawal has to be as easy as
+              giving, and a control that lives elsewhere is not. */}
+          <button
+            type="button"
+            className={styles.settingsLink}
+            tabIndex={tabIndex}
+            onClick={() => setShowBanner(true)}
+          >
+            {consentCopy[language].title}
+          </button>
+          {afterSettings}
         </p>
       )}
     </div>

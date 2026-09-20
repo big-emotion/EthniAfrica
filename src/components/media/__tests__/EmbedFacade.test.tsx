@@ -19,9 +19,10 @@ const poster = {
 
 /** Stands in for the cookie-settings panel, which is where the choice is withdrawn. */
 function ConsentPanel() {
-  const { setEmbedsConsent } = useConsent();
+  const { setEmbedsConsent, showBanner } = useConsent();
   return (
     <>
+      <output data-testid="banner">{showBanner ? "open" : "closed"}</output>
       <button onClick={() => setEmbedsConsent(false)}>withdraw</button>
       <button onClick={() => setEmbedsConsent(true)}>grant</button>
     </>
@@ -184,6 +185,38 @@ describe("EmbedFacade", () => {
 
     expect(container.querySelector("iframe")).toBeNull();
     expect(playButton()).toBeInTheDocument();
+  });
+
+  // The reader is immersive: it has no footer, so the footer's "Gestion des
+  // cookies" is not on the page. The notice tells the reader the choice can be
+  // withdrawn there, so the notice has to be the way to it.
+  // @req REQ-181
+  it("opens the cookie settings from the notice, where the page has no footer", async () => {
+    const user = userEvent.setup();
+    localStorage.setItem(
+      CONSENT_STORAGE_KEY,
+      JSON.stringify({
+        hasConsented: true,
+        preferences: {
+          essential: true,
+          analytics: false,
+          functional: false,
+          embeds: false,
+        },
+        consentDate: new Date().toISOString(),
+      })
+    );
+    renderFacade();
+    await act(async () => {
+      await new Promise((resolve) => setTimeout(resolve, 0));
+    });
+    expect(screen.getByTestId("banner")).toHaveTextContent("closed");
+
+    await user.click(
+      screen.getByRole("button", { name: "Gestion des cookies" })
+    );
+
+    expect(screen.getByTestId("banner")).toHaveTextContent("open");
   });
 
   // @req REQ-181
