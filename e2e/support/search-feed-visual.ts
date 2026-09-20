@@ -3,6 +3,31 @@ import sharp from "sharp";
 
 export const SEARCH_FEED_MAX_DIFFERENT_PIXEL_RATIO = 0.01;
 
+/**
+ * Board and app anti-alias glyph and border edges one colour level apart (a
+ * measured 15k of the 20k unequal pixels on a mobile board) although layout,
+ * fonts and colours are identical. One level of 255 is invisible, so it is not
+ * a difference; two or more still is.
+ */
+export const SEARCH_FEED_CHANNEL_TOLERANCE = 1;
+
+function pixelDiffers(
+  expected: Buffer,
+  actual: Buffer,
+  offset: number,
+  channels: number
+): boolean {
+  for (let channel = 0; channel < channels; channel += 1) {
+    if (
+      Math.abs(expected[offset + channel] - actual[offset + channel]) >
+      SEARCH_FEED_CHANNEL_TOLERANCE
+    ) {
+      return true;
+    }
+  }
+  return false;
+}
+
 export type SearchFeedVariant =
   "mobile-day" | "mobile-night" | "desktop-day" | "desktop-night";
 export type SearchFeedTheme = "day" | "night";
@@ -269,12 +294,8 @@ export async function comparePngs(
   let differentPixels = 0;
 
   for (let pixel = 0; pixel < totalPixels; pixel += 1) {
-    const offset = pixel * channels;
-    for (let channel = 0; channel < channels; channel += 1) {
-      if (expected.data[offset + channel] !== actual.data[offset + channel]) {
-        differentPixels += 1;
-        break;
-      }
+    if (pixelDiffers(expected.data, actual.data, pixel * channels, channels)) {
+      differentPixels += 1;
     }
   }
 
@@ -306,18 +327,7 @@ export async function createSearchFeedDiffPng(
   for (let pixel = 0; pixel < totalPixels; pixel += 1) {
     const sourceOffset = pixel * channels;
     const diffOffset = pixel * 4;
-    let different = false;
-    for (let channel = 0; channel < channels; channel += 1) {
-      if (
-        expected.data[sourceOffset + channel] !==
-        actual.data[sourceOffset + channel]
-      ) {
-        different = true;
-        break;
-      }
-    }
-
-    if (different) {
+    if (pixelDiffers(expected.data, actual.data, sourceOffset, channels)) {
       diff[diffOffset] = 255;
       diff[diffOffset + 1] = 0;
       diff[diffOffset + 2] = 0;

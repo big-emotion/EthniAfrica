@@ -10,7 +10,19 @@ function reviewedNode(
 ): ReactNode {
   if (tag === "strong") return <strong key={key}>{content}</strong>;
   if (tag === "em") return <em key={key}>{content}</em>;
-  if (tag === "sup") return <sup key={key}>{content}</sup>;
+  if (tag === "sup") {
+    // The boards keep the browser's default superscript (font-size: smaller,
+    // normal line height); Tailwind's reset would shrink it to 75% and zero its
+    // line height, which changes the line box around an ordinal.
+    return (
+      <sup
+        key={key}
+        className="[font-size:smaller] [line-height:normal] [position:static] [vertical-align:super]"
+      >
+        {content}
+      </sup>
+    );
+  }
   return (
     <span key={key} className="font-normal text-afh-text-soft">
       {content}

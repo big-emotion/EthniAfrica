@@ -37,13 +37,13 @@ export function PeopleBlock({
               href={item.href}
               className={`flex min-h-11 h-full flex-col gap-afh-md rounded-afh-lg border border-afh-border bg-afh-surface p-afh-2xl text-afh-text no-underline ${CHARTER_FOCUS_RING}`}
             >
-              <h3 className="font-afh-display text-afh-body font-bold">
+              <h3 className="font-afh-display text-afh-body font-bold leading-[1.3]">
                 <InlineMarkup text={item.name} />
               </h3>
-              <p className="text-afh-caption text-afh-text-soft">
+              <p className="text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
                 <InlineMarkup text={item.meta} />
               </p>
-              <p className="text-afh-small">
+              <p className="text-afh-small leading-[var(--afh-leading-small)]">
                 <InlineMarkup text={item.description} />
               </p>
             </Link>

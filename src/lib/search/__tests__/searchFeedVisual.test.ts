@@ -87,6 +87,36 @@ describe("search-feed visual parity helpers", () => {
   });
 
   // @req REQ-180
+  it("ignores a one-level anti-aliasing difference but counts a two-level one", async () => {
+    const channels = 4;
+    const paint = async (red: number[]) => {
+      const pixels = Buffer.alloc(red.length * channels, 255);
+      red.forEach((value, index) => {
+        pixels[index * channels] = value;
+      });
+      return sharp(pixels, { raw: { width: red.length, height: 1, channels } })
+        .png()
+        .toBuffer();
+    };
+
+    const reference = await paint([100, 100, 100]);
+    const actual = await paint([101, 99, 102]);
+
+    await expect(comparePngs(reference, actual)).resolves.toMatchObject({
+      differentPixels: 1,
+    });
+
+    const { data } = await sharp(
+      await createSearchFeedDiffPng(reference, actual)
+    )
+      .ensureAlpha()
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+    expect(Array.from(data.subarray(0, 3))).not.toEqual([255, 0, 0]);
+    expect(Array.from(data.subarray(8, 11))).toEqual([255, 0, 0]);
+  });
+
+  // @req REQ-180
   it("renders changed pixels in red for review artifacts", async () => {
     const expected = await solidPng(2, 1);
     const actual = await solidPng(2, 1, [0]);

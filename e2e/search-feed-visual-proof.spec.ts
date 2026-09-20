@@ -443,11 +443,13 @@ test.describe("search-feed forty-board visual parity", () => {
           );
         }
 
+        // Chromium captures a fractional box on its outer whole pixels, so a
+        // 2583.47px root is a 2584-row image; rounding failed every fraction < .5.
         await expect(
           assertPixelParity(reference, actual)
         ).resolves.toMatchObject({
-          width: Math.round(expectedGeometry.root.width),
-          height: Math.round(expectedGeometry.root.height),
+          width: Math.ceil(expectedGeometry.root.width),
+          height: Math.ceil(expectedGeometry.root.height),
         });
       } catch (error) {
         await attachFailure(

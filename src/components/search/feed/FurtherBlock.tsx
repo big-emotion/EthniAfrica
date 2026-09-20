@@ -19,7 +19,7 @@ export interface FurtherBlockProps {
 export function FurtherBlock({ links, language = "fr" }: FurtherBlockProps) {
   return (
     <SearchFeedBlock id="further" zone="closing">
-      <p className="text-afh-eyebrow font-semibold uppercase tracking-[var(--afh-eyebrow-tracking)] text-afh-text-soft">
+      <p className="text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[0.14em] text-afh-text-soft">
         {nameAnswerCopy[language].further}
       </p>
       <ul className="mt-afh-lg flex list-none flex-wrap gap-afh-md">

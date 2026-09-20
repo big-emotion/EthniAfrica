@@ -30,7 +30,9 @@ export function FactsBlock({
             key={item.label}
             className="rounded-afh-lg bg-afh-bg-warm p-afh-lg"
           >
-            <p className="text-afh-caption text-afh-text-soft">{item.label}</p>
+            <p className="text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
+              {item.label}
+            </p>
             <p className="text-afh-small font-bold text-afh-text">
               {item.value}
             </p>

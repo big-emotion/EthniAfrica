@@ -44,7 +44,9 @@ export function OwedBlock({
         className={
           usesTwoColumns
             ? "grid gap-afh-5xl min-[1200px]:grid-cols-2 min-[1200px]:gap-afh-6xl"
-            : "grid gap-afh-2xl"
+            : hasSilences
+              ? "grid gap-afh-5xl"
+              : "grid gap-afh-2xl"
         }
       >
         {hasSilences ? (

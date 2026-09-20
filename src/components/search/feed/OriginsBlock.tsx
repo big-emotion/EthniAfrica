@@ -50,7 +50,7 @@ export function OriginsBlock({
       <ul
         className={
           reviewed
-            ? "mt-afh-lg flex list-none gap-afh-lg overflow-hidden min-[1200px]:grid min-[1200px]:grid-cols-2 min-[1200px]:gap-afh-2xl min-[1200px]:overflow-visible"
+            ? "mt-afh-lg flex list-none gap-afh-lg overflow-hidden min-[1200px]:mt-afh-2xl min-[1200px]:grid min-[1200px]:grid-cols-2 min-[1200px]:gap-afh-2xl min-[1200px]:overflow-visible"
             : "mt-afh-lg flex snap-x snap-mandatory scroll-px-afh-lg list-none gap-afh-lg overflow-x-auto pb-afh-md min-[1200px]:grid min-[1200px]:grid-cols-2 min-[1200px]:gap-afh-2xl min-[1200px]:overflow-visible min-[1200px]:snap-none"
         }
       >
@@ -127,8 +127,8 @@ export function OriginsBlock({
         ))}
       </ul>
       {reviewed ? (
-        <div className="min-[1200px]:hidden">
-          <p className="mt-afh-md text-afh-eyebrow leading-[var(--afh-leading-eyebrow)] text-afh-text-soft">
+        <>
+          <p className="mt-afh-md text-afh-eyebrow leading-[var(--afh-leading-eyebrow)] text-afh-text-soft min-[1200px]:hidden">
             Glissez · {items.length} formes
           </p>
           <div className="mt-afh-lg">
@@ -139,7 +139,7 @@ export function OriginsBlock({
               Il en manque une ? Proposer une source →
             </a>
           </div>
-        </div>
+        </>
       ) : null}
     </SearchFeedBlock>
   );

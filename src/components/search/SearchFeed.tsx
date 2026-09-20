@@ -51,6 +51,7 @@ import {
   type SearchFeedAvailability,
 } from "@/lib/search/searchFeedPlan";
 import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
+import { cn } from "@/lib/utils";
 import type { FeedBlockId } from "@/lib/search/resultGrammar";
 import type { SearchFeedPresentation } from "@/lib/search/searchFeedPresentation";
 import type {
@@ -560,7 +561,11 @@ export function SearchFeed({
               presentation?.answer?.tone ??
               (state === "typo" || state === "unknown" ? "plain" : "answer")
             }
-            className="min-[1200px]:col-span-7"
+            className={
+              state === "unknown" && presentation
+                ? "min-[1200px]:col-span-7 min-[1200px]:pt-afh-5xl"
+                : "min-[1200px]:col-span-7"
+            }
           />
         );
       case "appellations":
@@ -834,12 +839,18 @@ export function SearchFeed({
     lensAllows(activeLens, id)
   );
   const hasAppellations = firstIds.includes("appellations");
+  // The unknown-name board pads the verdict block itself; every other board
+  // pads the grid that holds it.
+  const opensWithPaddedVerdict = state === "unknown" && Boolean(presentation);
   const first = (
     <>
       {firstIds.includes("lenses") ? renderBlock("lenses") : null}
       <div
         data-feed-opening="answer"
-        className="min-w-0 min-[1200px]:grid min-[1200px]:grid-cols-12 min-[1200px]:items-start min-[1200px]:gap-afh-6xl min-[1200px]:pt-afh-5xl"
+        className={cn(
+          "min-w-0 min-[1200px]:grid min-[1200px]:grid-cols-12 min-[1200px]:items-start min-[1200px]:gap-afh-6xl",
+          !opensWithPaddedVerdict && "min-[1200px]:pt-afh-5xl"
+        )}
       >
         {firstIds.includes("verdict") ? (
           hasAppellations ? (

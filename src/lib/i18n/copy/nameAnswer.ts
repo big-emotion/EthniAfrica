@@ -105,7 +105,7 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     eyebrow: "D'où vient ce nom",
     disambiguation: "Lequel cherchez-vous ?",
     appellations: "Les appellations",
-    appellationsLead: "Les plus communes d’abord. Aucune n’est « la bonne ».",
+    appellationsLead: "Les plus communes d'abord. Aucune n'est « la bonne ».",
     origins: "D’où elles viennent",
     selfGiven: "Ce que les peuples se donnent",
     problem: "Ce que ces noms posent",

@@ -96,7 +96,7 @@ export function ShortsBlock({
         }
       />
       {wideningNote ? (
-        <p className="mt-afh-md text-afh-caption font-bold text-[color:var(--accent-ink)]">
+        <p className="mt-afh-md text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)]">
           {wideningNote}
         </p>
       ) : null}
@@ -122,7 +122,11 @@ export function ShortsBlock({
                 target={contributionTarget}
                 label={emptySlot.action}
                 variant="ghost"
-                className="h-auto min-h-11 whitespace-normal px-0 text-left text-afh-caption text-[color:var(--accent-ink)]"
+                className={
+                  reviewed
+                    ? "relative h-auto min-h-0 justify-start whitespace-normal p-0 text-left text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)] underline after:absolute after:-inset-y-[3px] after:inset-x-0"
+                    : "h-auto min-h-11 whitespace-normal px-0 text-left text-afh-caption text-[color:var(--accent-ink)]"
+                }
               />
             </div>
             <p className="mt-afh-md text-afh-caption font-bold text-afh-text-soft">
