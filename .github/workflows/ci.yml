@@ -202,6 +202,12 @@ jobs:
       # script existed, passed, and was wired to nothing.
       - run: npm run check:rls-coverage
 
+      # Validates docs/productions/ — the versioned publishing-cadence ledger
+      # (docs/plans/production-history-plan.md). Not a ratchet: every entry
+      # is authored once, correctly, by a skill that already has the corpus
+      # loader and GABARITS §1 bis's network/format table available to it.
+      - run: npm run check:production-ledger
+
       - run: npm run typecheck
 
       - run: npm run format:check

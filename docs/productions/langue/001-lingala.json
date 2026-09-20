@@ -1,0 +1,23 @@
+{
+  "campaign": "lingala-invente-par-les-belges",
+  "typologie": "langue",
+  "episode": 1,
+  "question": {
+    "fr": "D'où vient le nom lingala ?",
+    "en": "Where does the name Lingala come from?"
+  },
+  "myth": {
+    "fr": "Le lingala aurait été inventé par les colons belges.",
+    "en": "Lingala was supposedly invented by Belgian colonists."
+  },
+  "narrativePattern": "une langue accusée d'invention coloniale",
+  "subjects": [
+    {
+      "kind": "language",
+      "id": "lin",
+      "label": { "fr": "Lingala", "en": "Lingala" }
+    }
+  ],
+  "sitePath": "/fr/atlas/langues/lin",
+  "publications": []
+}

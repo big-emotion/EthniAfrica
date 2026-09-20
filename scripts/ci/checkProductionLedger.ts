@@ -1,0 +1,544 @@
+/**
+ * Validate the versioned production history under `docs/productions/`.
+ *
+ *   npx tsx scripts/ci/checkProductionLedger.ts --selftest   fixtures only
+ *   npx tsx scripts/ci/checkProductionLedger.ts               every ledger file
+ *
+ * One JSON file per subject, at `docs/productions/<typologie>/<NNN>-<slug>.json`.
+ * The schema and the reasoning behind it are in
+ * `docs/plans/production-history-plan.md` §2–3. This gate enforces what a
+ * skill filling the file correctly can always get right the first time — it
+ * is not a ratchet, unlike `check:dead` or `chronology-symmetry`: there is no
+ * backlog to lower, only entries authored from now on.
+ *
+ * What it refuses: a schema violation, a duplicate or non-contiguous episode
+ * number within a typology, a duplicate campaign, a subject id the corpus
+ * does not hold, a `sitePath` that names no known route for that subject, and
+ * a network × format pairing GABARITS §1 bis does not allow.
+ *
+ * What it does not refuse: a missing publication URL (recorded as
+ * unpublished, not an error — the private ledger already tracks "publié,
+ * URL non enregistrée" and losing that fact loses the publication), a missing
+ * English `question`/`myth` (that is `check:translation-parity`'s report, not
+ * this gate), and a subject with an empty `publications[]` (not yet posted).
+ */
+import { readFileSync, readdirSync } from "node:fs";
+import path from "node:path";
+
+import { corpusIdExists, type CorpusKind } from "../lib/afrikCorpusIds";
+import {
+  networkAcceptsFormat,
+  type Network,
+  type ProductionFormat,
+} from "../lib/socialFormatMatrix";
+
+const LEDGER_ROOT = path.join(__dirname, "../../docs/productions");
+
+const TYPOLOGIES = ["peuple", "pays", "patronyme", "lieu", "langue"] as const;
+type Typologie = (typeof TYPOLOGIES)[number];
+
+const NETWORKS: readonly Network[] = [
+  "tiktok",
+  "instagram",
+  "facebook",
+  "youtube",
+  "linkedin",
+  "x",
+];
+const FORMATS: readonly ProductionFormat[] = ["video", "carrousel", "texte"];
+
+const CORPUS_KINDS = [
+  "people",
+  "country",
+  "family",
+  "language",
+  "patronyme",
+] as const;
+
+/** `lieu` names no corpus table of its own — a toponym is always filed under
+ * one of the other four (almost always `country`, sometimes `people`). This
+ * is why `subjects[].kind` is never derived from `typologie`. */
+const ROUTE_SEGMENT_BY_KIND: Record<(typeof CORPUS_KINDS)[number], string> = {
+  people: "atlas/peuples",
+  country: "atlas/pays",
+  family: "atlas/familles",
+  language: "atlas/langues",
+  patronyme: "atlas/noms",
+};
+
+export interface LedgerEntry {
+  campaign: string;
+  typologie: string;
+  episode: number;
+  question: { fr: string; en?: string };
+  myth: { fr: string; en?: string };
+  narrativePattern?: string;
+  subjects: Array<{
+    kind: string;
+    id: string;
+    label: { fr: string; en?: string };
+  }>;
+  sitePath: string;
+  publications: Array<{
+    network: string;
+    format: string;
+    url?: string;
+    publishedAt?: string;
+  }>;
+  poster?: { src: string; width: number; height: number };
+  durationSeconds?: number;
+  sources?: Array<{ title: string; url: string; tier: string }>;
+}
+
+export interface ValidationDeps {
+  corpusIdExists: (kind: CorpusKind, id: string) => boolean;
+  networkAcceptsFormat: (network: Network, format: ProductionFormat) => boolean;
+}
+
+const REAL_DEPS: ValidationDeps = { corpusIdExists, networkAcceptsFormat };
+
+const ALLOWED_TOP_LEVEL_KEYS = new Set([
+  "campaign",
+  "typologie",
+  "episode",
+  "question",
+  "myth",
+  "narrativePattern",
+  "subjects",
+  "sitePath",
+  "publications",
+  "poster",
+  "durationSeconds",
+  "sources",
+]);
+
+const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
+
+/** Validates one already-parsed entry in isolation — no episode/campaign
+ * uniqueness here, that needs the whole ledger (see `validateLedger`). */
+export function validateEntry(
+  entry: unknown,
+  deps: ValidationDeps = REAL_DEPS
+): string[] {
+  const errors: string[] = [];
+  if (typeof entry !== "object" || entry === null || Array.isArray(entry)) {
+    return ["not a JSON object"];
+  }
+  const record = entry as Record<string, unknown>;
+
+  for (const key of Object.keys(record)) {
+    if (!ALLOWED_TOP_LEVEL_KEYS.has(key)) errors.push(`unknown field "${key}"`);
+  }
+
+  if (typeof record.campaign !== "string" || !record.campaign) {
+    errors.push("campaign must be a non-empty string");
+  }
+
+  if (!TYPOLOGIES.includes(record.typologie as Typologie)) {
+    errors.push(`typologie must be one of ${TYPOLOGIES.join(", ")}`);
+  }
+
+  if (!Number.isInteger(record.episode) || (record.episode as number) < 1) {
+    errors.push("episode must be a positive integer");
+  }
+
+  for (const [field, label] of [
+    ["question", "question"],
+    ["myth", "myth"],
+  ] as const) {
+    const value = record[field] as { fr?: unknown; en?: unknown } | undefined;
+    if (!value || typeof value.fr !== "string" || !value.fr.trim()) {
+      errors.push(`${label}.fr must be a non-empty string`);
+    }
+    if (value?.en !== undefined && typeof value.en !== "string") {
+      errors.push(`${label}.en must be a string when present`);
+    }
+  }
+
+  const subjects = record.subjects;
+  if (!Array.isArray(subjects) || subjects.length === 0) {
+    errors.push("subjects must be a non-empty array");
+  } else {
+    subjects.forEach((subject, index) => {
+      const kind = subject?.kind;
+      const id = subject?.id;
+      if (!CORPUS_KINDS.includes(kind)) {
+        errors.push(
+          `subjects[${index}].kind must be one of ${CORPUS_KINDS.join(", ")}`
+        );
+      } else if (typeof id !== "string" || !id) {
+        errors.push(`subjects[${index}].id must be a non-empty string`);
+      } else if (!deps.corpusIdExists(kind, id)) {
+        errors.push(`subjects[${index}] — no ${kind} fiche carries id "${id}"`);
+      }
+      if (typeof subject?.label?.fr !== "string" || !subject.label.fr.trim()) {
+        errors.push(`subjects[${index}].label.fr must be a non-empty string`);
+      }
+    });
+  }
+
+  if (
+    typeof record.sitePath !== "string" ||
+    !record.sitePath.startsWith("/fr/")
+  ) {
+    errors.push("sitePath must be a French route starting with /fr/");
+  } else if (Array.isArray(subjects)) {
+    const matchesAny = subjects.some((subject) => {
+      const segment =
+        ROUTE_SEGMENT_BY_KIND[
+          subject?.kind as keyof typeof ROUTE_SEGMENT_BY_KIND
+        ];
+      return segment && record.sitePath === `/fr/${segment}/${subject.id}`;
+    });
+    if (subjects.length > 0 && !matchesAny) {
+      errors.push(
+        `sitePath "${record.sitePath}" matches no subject's route (expected /fr/<segment>/<id>)`
+      );
+    }
+  }
+
+  const publications = record.publications;
+  if (!Array.isArray(publications)) {
+    errors.push(
+      "publications must be an array (empty when nothing is posted yet)"
+    );
+  } else {
+    publications.forEach((publication, index) => {
+      const network = publication?.network;
+      const format = publication?.format;
+      if (!NETWORKS.includes(network)) {
+        errors.push(
+          `publications[${index}].network must be one of ${NETWORKS.join(", ")}`
+        );
+      }
+      if (!FORMATS.includes(format)) {
+        errors.push(
+          `publications[${index}].format must be one of ${FORMATS.join(", ")}`
+        );
+      }
+      if (
+        NETWORKS.includes(network) &&
+        FORMATS.includes(format) &&
+        !deps.networkAcceptsFormat(network, format)
+      ) {
+        errors.push(
+          `publications[${index}] — ${network} does not receive ${format} (GABARITS §1 bis)`
+        );
+      }
+      if (
+        publication?.url !== undefined &&
+        typeof publication.url !== "string"
+      ) {
+        errors.push(`publications[${index}].url must be a string when present`);
+      }
+      if (
+        publication?.publishedAt !== undefined &&
+        !ISO_DATE.test(publication.publishedAt)
+      ) {
+        errors.push(`publications[${index}].publishedAt must be YYYY-MM-DD`);
+      }
+    });
+  }
+
+  return errors;
+}
+
+export interface LedgerFile {
+  filePath: string;
+  entry: unknown;
+}
+
+export interface LedgerValidationResult {
+  errorsByFile: Map<string, string[]>;
+}
+
+/** Validates the whole ledger together — this is where cross-file rules
+ * (unique campaign, contiguous episode numbers per typologie) live, since a
+ * single file cannot know about its siblings. */
+export function validateLedger(
+  files: LedgerFile[],
+  deps: ValidationDeps = REAL_DEPS
+): LedgerValidationResult {
+  const errorsByFile = new Map<string, string[]>();
+  const campaignSeenAt = new Map<string, string>();
+  const episodesByTypologie = new Map<Typologie, Map<number, string>>();
+
+  for (const { filePath, entry } of files) {
+    const errors = validateEntry(entry, deps);
+    const record =
+      typeof entry === "object" && entry !== null
+        ? (entry as Record<string, unknown>)
+        : {};
+
+    const campaign = record.campaign;
+    if (typeof campaign === "string" && campaign) {
+      const seenAt = campaignSeenAt.get(campaign);
+      if (seenAt) {
+        errors.push(`campaign "${campaign}" is also used by ${seenAt}`);
+      } else {
+        campaignSeenAt.set(campaign, filePath);
+      }
+    }
+
+    const typologie = record.typologie as Typologie;
+    const episode = record.episode;
+    if (TYPOLOGIES.includes(typologie) && Number.isInteger(episode)) {
+      const perTypologie = episodesByTypologie.get(typologie) ?? new Map();
+      const existing = perTypologie.get(episode as number);
+      if (existing) {
+        errors.push(
+          `episode ${episode} in "${typologie}" is also used by ${existing}`
+        );
+      } else {
+        perTypologie.set(episode as number, filePath);
+      }
+      episodesByTypologie.set(typologie, perTypologie);
+    }
+
+    errorsByFile.set(filePath, errors);
+  }
+
+  for (const [typologie, perTypologie] of episodesByTypologie) {
+    const episodes = [...perTypologie.keys()].sort((a, b) => a - b);
+    episodes.forEach((episode, index) => {
+      const expected = index + 1;
+      if (episode !== expected) {
+        const filePath = perTypologie.get(episode)!;
+        const existing = errorsByFile.get(filePath) ?? [];
+        existing.push(
+          `episode ${episode} leaves a hole in "${typologie}" — expected ${expected} next`
+        );
+        errorsByFile.set(filePath, existing);
+      }
+    });
+  }
+
+  return { errorsByFile };
+}
+
+// ---------------------------------------------------------------------------
+// --selftest: the fixtures below are written before the validation logic
+// above ever ran, per this repository's test-first rule for infra scripts —
+// see scripts/ci/checkLocalPaths.ts for the precedent this follows. A
+// vitest `it()` file is not used here because a brand-new test file would
+// need a fresh `@req` id from Confluence (lint:req), which this ledger has
+// not been assigned yet; the CLI selftest carries the same rigor without one.
+// ---------------------------------------------------------------------------
+
+const STUB_DEPS: ValidationDeps = {
+  corpusIdExists: (kind, id) =>
+    (kind === "language" && id === "lin") ||
+    (kind === "patronyme" && id === "PAT_TRAORE") ||
+    (kind === "country" && id === "MWI") ||
+    (kind === "people" && id === "PPL_WOLOF"),
+  networkAcceptsFormat,
+};
+
+function validLingalaEntry(): LedgerEntry {
+  return {
+    campaign: "lingala",
+    typologie: "langue",
+    episode: 1,
+    question: {
+      fr: "D'où vient le nom lingala ?",
+      en: "Where does the name Lingala come from?",
+    },
+    myth: { fr: "Le lingala n'a pas été inventé par les colons.", en: "" },
+    narrativePattern: "une langue accusée d'invention coloniale",
+    subjects: [
+      { kind: "language", id: "lin", label: { fr: "Lingala", en: "Lingala" } },
+    ],
+    sitePath: "/fr/atlas/langues/lin",
+    publications: [
+      {
+        network: "youtube",
+        format: "video",
+        url: "https://youtube.com/x",
+        publishedAt: "2026-09-05",
+      },
+      { network: "instagram", format: "carrousel", publishedAt: "2026-09-05" },
+    ],
+  };
+}
+
+type Fixture = [string, unknown, boolean];
+
+const FIXTURES: Fixture[] = [
+  ["a well-formed entry", validLingalaEntry(), false],
+  [
+    "a publication with no url yet",
+    {
+      ...validLingalaEntry(),
+      publications: [{ network: "facebook", format: "video" }],
+    },
+    false,
+  ],
+  [
+    "an unknown corpus id",
+    {
+      ...validLingalaEntry(),
+      subjects: [
+        { kind: "language", id: "not-a-real-language", label: { fr: "Faux" } },
+      ],
+    },
+    true,
+  ],
+  [
+    "carousel sent to Facebook",
+    {
+      ...validLingalaEntry(),
+      publications: [{ network: "facebook", format: "carrousel" }],
+    },
+    true,
+  ],
+  [
+    "video sent to TikTok",
+    {
+      ...validLingalaEntry(),
+      publications: [{ network: "tiktok", format: "video" }],
+    },
+    true,
+  ],
+  [
+    "sitePath matching no subject",
+    { ...validLingalaEntry(), sitePath: "/fr/atlas/pays/SEN" },
+    true,
+  ],
+  [
+    "unknown top-level field",
+    { ...validLingalaEntry(), extra: "should not be here" },
+    true,
+  ],
+  [
+    "typologie outside the five",
+    { ...validLingalaEntry(), typologie: "ville" },
+    true,
+  ],
+  ["episode zero", { ...validLingalaEntry(), episode: 0 }, true],
+  ["missing myth.fr", { ...validLingalaEntry(), myth: { fr: "" } }, true],
+  [
+    "malformed publishedAt",
+    {
+      ...validLingalaEntry(),
+      publications: [
+        { network: "youtube", format: "video", publishedAt: "5 sept 2026" },
+      ],
+    },
+    true,
+  ],
+];
+
+function selftestEntries(): number {
+  const failures: string[] = [];
+  for (const [label, entry, shouldFail] of FIXTURES) {
+    const errors = validateEntry(entry, STUB_DEPS);
+    const failed = errors.length > 0;
+    if (failed !== shouldFail) {
+      failures.push(
+        `  ${label}: expected ${shouldFail ? "a failure" : "no failure"}, got ${
+          errors.length
+        } error(s)${errors.length ? ` — ${errors.join("; ")}` : ""}`
+      );
+    }
+  }
+
+  const duplicateCampaign = validateLedger(
+    [
+      { filePath: "a.json", entry: validLingalaEntry() },
+      { filePath: "b.json", entry: validLingalaEntry() },
+    ],
+    STUB_DEPS
+  );
+  if (
+    ![...duplicateCampaign.errorsByFile.values()].some(
+      (errs) => errs.length > 0
+    )
+  ) {
+    failures.push(
+      "  duplicate campaign across two files should have failed both"
+    );
+  }
+
+  const episodeHole = validateLedger(
+    [
+      {
+        filePath: "ep1.json",
+        entry: { ...validLingalaEntry(), campaign: "a", episode: 1 },
+      },
+      {
+        filePath: "ep3.json",
+        entry: { ...validLingalaEntry(), campaign: "b", episode: 3 },
+      },
+    ],
+    STUB_DEPS
+  );
+  if (
+    !(episodeHole.errorsByFile.get("ep3.json") ?? []).some((e) =>
+      e.includes("hole")
+    )
+  ) {
+    failures.push(
+      "  a hole in the episode sequence should have failed the later file"
+    );
+  }
+
+  if (failures.length) {
+    console.error(
+      `✖ ${failures.length} cas sur ${FIXTURES.length + 2} :\n${failures.join("\n")}`
+    );
+    return 1;
+  }
+  console.log(`✔ ${FIXTURES.length + 2} cas de contrôle passent`);
+  return 0;
+}
+
+// ---------------------------------------------------------------------------
+
+function loadLedgerFiles(): LedgerFile[] {
+  let typologyDirs: string[];
+  try {
+    typologyDirs = readdirSync(LEDGER_ROOT, { withFileTypes: true })
+      .filter((entryDir) => entryDir.isDirectory())
+      .map((entryDir) => entryDir.name);
+  } catch {
+    return [];
+  }
+  const files: LedgerFile[] = [];
+  for (const dir of typologyDirs) {
+    for (const name of readdirSync(path.join(LEDGER_ROOT, dir))) {
+      if (!name.endsWith(".json")) continue;
+      const filePath = path.join("docs/productions", dir, name);
+      const raw = readFileSync(path.join(LEDGER_ROOT, dir, name), "utf8");
+      try {
+        files.push({ filePath, entry: JSON.parse(raw) });
+      } catch (error) {
+        files.push({ filePath, entry: { __parseError: String(error) } });
+      }
+    }
+  }
+  return files;
+}
+
+function main(): number {
+  if (process.argv.includes("--selftest")) return selftestEntries();
+
+  const files = loadLedgerFiles();
+  const { errorsByFile } = validateLedger(files);
+  const offences: string[] = [];
+  for (const [filePath, errors] of errorsByFile) {
+    for (const error of errors) offences.push(`${filePath}: ${error}`);
+  }
+
+  if (offences.length) {
+    console.error(
+      `\n✖ ${offences.length} problème(s) dans docs/productions/ :\n\n${offences.join("\n")}\n`
+    );
+    return 1;
+  }
+  console.log(`✔ ${files.length} fiche(s) de production valides`);
+  return 0;
+}
+
+if (require.main === module) {
+  process.exit(main());
+}
