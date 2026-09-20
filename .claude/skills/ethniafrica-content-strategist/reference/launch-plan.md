@@ -27,6 +27,15 @@ saying which one it replaces.
 - **15 minutes a day** answering comments.
 - **15 minutes a week** reviewing native retention curves, best and worst performer.
 
+**Superseded 2026-09-20, days kept, count changed.** The operator fixed a new,
+versioned cadence — `docs/productions/README.md` — that keeps Monday/
+Wednesday/Friday but replaces "3 videos a week" with five subjects a day at
+its target stage (one video and one carousel each), ramped up from one
+subject at a time rather than started at that rate. Read that file's current
+stage before proposing a day's slate; this section stays for the ritual
+(Sunday batch, daily comment time) that the new cadence does not itself
+restate.
+
 ## The channel sequence
 
 Channels open in phases and are never replaced, only added to.

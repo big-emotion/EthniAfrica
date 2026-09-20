@@ -85,6 +85,14 @@ lancer. Recommande de lancer chaque skill dans une conversation neuve.
 réseaux —, ce qui est déjà publié, les doublons, le format jamais publié, le
 dossier d'atelier, le rapport d'idée et l'audit du message s'ils existent.
 
+**Complète avec `docs/productions/<typologie>/<NNN>-<slug>.json`**, cherché par
+`campaign` égal au sujet demandé (le même id que `--id` dans la bibliothèque) —
+c'est là, et non dans `bilan-sujets.mjs`, que la question exacte de l'opérateur
+se répond : ce sujet est-il sorti en carrousel sur tel réseau et en vidéo sur
+tel autre, avec quel lien pour chacun. Un fichier trouvé sans réponse à
+`bilan-sujets.mjs` (ou l'inverse) est un signe que l'un des deux registres a
+manqué une écriture — dis-le plutôt que de trancher.
+
 Raconte-le simplement : ce qui a été fait, ce qui est en cours, ce qui manque,
 et le prochain geste. Si le sujet n'existe nulle part, dis-le et propose
 `/ethniafrica-idee`.
