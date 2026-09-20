@@ -7,6 +7,8 @@ export interface SearchFeedCopy {
     relatedOnly: string;
     typo: (name: string) => string;
     shared: (count: number) => string;
+    /** A cross-type clash (a people and a language filed under the same name) — `shared` reads as people-specific. */
+    sharedGeneric: (count: number) => string;
     exactSummary: string;
     widenedSummary: string;
     /** A relation-scoped browse (a family or country chip), never a name search. */
@@ -23,6 +25,8 @@ export interface SearchFeedCopy {
     images: string;
     fiches: string;
     peoples: string;
+    /** A cross-type clash — `peoples` names only one of the kinds listed. */
+    sharedEntries: string;
     sharedName: string;
     nearName: string;
   };
@@ -62,6 +66,8 @@ export interface SearchFeedCopy {
   };
   blocks: {
     sharedNameBody: string;
+    /** A cross-type clash — "kinship between peoples" does not apply to a people and a language. */
+    sharedNameBodyGeneric: string;
     nearNameBody: (name: string) => string;
     problematicBody: string;
     relatedPeoplesTitle: string;
@@ -89,6 +95,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
         "The atlas found related entries without establishing that they answer to this name.",
       typo: (name) => `Did you mean ${name}?`,
       shared: (count) => `${count} peoples carry this name.`,
+      sharedGeneric: (count) => `${count} atlas entries carry this name.`,
       exactSummary:
         "The forms and sources below state what the atlas can establish.",
       widenedSummary:
@@ -108,6 +115,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       images: "In pictures",
       fiches: "In the atlas",
       peoples: "The peoples who share this name",
+      sharedEntries: "The entries that share this name",
       sharedName: "Why the same name?",
       nearName: "A similar name, elsewhere",
     },
@@ -148,6 +156,8 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
     blocks: {
       sharedNameBody:
         "A shared spelling does not establish kinship between peoples.",
+      sharedNameBodyGeneric:
+        "A name shared across different kinds of entries does not link them.",
       nearNameBody: (name) =>
         `${name} has a similar spelling and belongs to a different atlas entry.`,
       problematicBody:
@@ -175,6 +185,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
         "L’atlas a trouvé des fiches liées sans établir qu’elles répondent à ce nom.",
       typo: (name) => `Vouliez-vous dire ${name} ?`,
       shared: (count) => `${count} peuples portent ce nom.`,
+      sharedGeneric: (count) => `${count} entrées de l’atlas portent ce nom.`,
       exactSummary:
         "Les formes et les sources ci-dessous disent ce que l’atlas peut établir.",
       widenedSummary:
@@ -194,6 +205,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       images: "En images",
       fiches: "Dans l’atlas",
       peoples: "Les peuples qui partagent ce nom",
+      sharedEntries: "Les entrées qui partagent ce nom",
       sharedName: "Pourquoi le même nom ?",
       nearName: "Un nom proche, ailleurs",
     },
@@ -235,6 +247,8 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
     blocks: {
       sharedNameBody:
         "Une orthographe partagée ne suffit pas à établir une parenté entre des peuples.",
+      sharedNameBodyGeneric:
+        "Un même nom porté par des entrées de nature différente ne les relie pas entre elles.",
       nearNameBody: (name) =>
         `${name} a une graphie proche et correspond à une autre fiche de l’atlas.`,
       problematicBody:

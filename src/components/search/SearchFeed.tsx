@@ -177,14 +177,14 @@ function feedAvailability(
   originCount: number,
   tileCount: number,
   problemCount: number,
-  hasPeopleDisambiguation: boolean,
+  hasNameDisambiguation: boolean,
   nearNameCount: number
 ): SearchFeedAvailability {
   return {
     appellations: formCount > 0,
     origins: originCount > 0,
-    peoples: hasPeopleDisambiguation,
-    sharedName: hasPeopleDisambiguation,
+    peoples: hasNameDisambiguation,
+    sharedName: hasNameDisambiguation,
     tiles: tileCount > 0,
     atlasHolds: state === "widened",
     plates:
@@ -307,10 +307,24 @@ export function SearchFeed({
   const subjectIdentities = new Set(
     subjects.map((subject) => subject.peopleGroupId ?? subject.id)
   );
+  const subjectTypes = new Set(subjects.map((subject) => subject.type));
+  // « Yoruba » files both a people and a language: selectNameSubject puts no
+  // type restriction on an exact match, so subjects can already mix types.
+  // The two disambiguation shapes read differently — same-type asks whether
+  // the entries are related, cross-type only has to say they are different
+  // things that happen to share a spelling — so they stay two flags rather
+  // than one, even though both open the same two blocks.
   const hasPeopleDisambiguation =
     subjects.length >= 2 &&
-    subjects.every((subject) => subject.type === "people") &&
+    subjectTypes.size === 1 &&
+    subjectTypes.has("people") &&
     subjectIdentities.size >= 2;
+  const hasCrossTypeDisambiguation =
+    subjects.length >= 2 &&
+    subjectTypes.size >= 2 &&
+    subjectIdentities.size >= 2;
+  const hasNameDisambiguation =
+    hasPeopleDisambiguation || hasCrossTypeDisambiguation;
   const derivedSubjectSilences = subjects.flatMap((subject) => {
     const naming = subject.naming;
     const isDated = Boolean(
@@ -343,7 +357,7 @@ export function SearchFeed({
     originItems.length,
     tileRows.length,
     problemParagraphs.length,
-    hasPeopleDisambiguation,
+    hasNameDisambiguation,
     nearNames.length
   );
   const plan = buildSearchFeedPlan(state, availability, { relatedOnly });
@@ -421,17 +435,19 @@ export function SearchFeed({
         ? copy.answer.typo(displayName)
         : hasPeopleDisambiguation
           ? copy.answer.shared(subjects.length)
-          : state === "widened"
-            ? subjects.length > 0
-              ? copy.answer.widened
-              : relation?.kind === "family" && relationLabel
-                ? copy.answer.relationFamilyVerdict(relationLabel)
-                : relation?.kind === "country"
-                  ? copy.answer.relationCountryVerdict(
-                      inCountry(relation.id, displayName, language)
-                    )
-                  : copy.answer.relatedOnly
-            : copy.answer.exact);
+          : hasCrossTypeDisambiguation
+            ? copy.answer.sharedGeneric(subjects.length)
+            : state === "widened"
+              ? subjects.length > 0
+                ? copy.answer.widened
+                : relation?.kind === "family" && relationLabel
+                  ? copy.answer.relationFamilyVerdict(relationLabel)
+                  : relation?.kind === "country"
+                    ? copy.answer.relationCountryVerdict(
+                        inCountry(relation.id, displayName, language)
+                      )
+                    : copy.answer.relatedOnly
+              : copy.answer.exact);
   const summary =
     presentation?.answer?.summary ??
     (state === "unknown"
@@ -605,14 +621,22 @@ export function SearchFeed({
       case "peoples":
         return (
           <PeopleBlock
-            title={presentation?.peoples?.title ?? copy.shelves.peoples}
+            title={
+              presentation?.peoples?.title ??
+              (hasPeopleDisambiguation
+                ? copy.shelves.peoples
+                : copy.shelves.sharedEntries)
+            }
             subtitle={presentation?.peoples?.subtitle ?? undefined}
             zone={zone}
             items={
               presentation?.peoples?.items ??
               subjects.map((subject) => ({
                 name: getLocalizedSearchResultName(subject, language),
-                meta: copy.blocks.peopleMeta,
+                meta:
+                  subject.type === "people"
+                    ? copy.blocks.peopleMeta
+                    : getSearchEntityLabel(subject.type, language),
                 description:
                   plainSnippet(subject.snippet) ??
                   copy.blocks.peopleDescription,
@@ -627,7 +651,13 @@ export function SearchFeed({
           <ProseBlock
             blockId="shared-name"
             title={sharedName?.title ?? copy.shelves.sharedName}
-            paragraphs={sharedName?.paragraphs ?? [copy.blocks.sharedNameBody]}
+            paragraphs={
+              sharedName?.paragraphs ?? [
+                hasPeopleDisambiguation
+                  ? copy.blocks.sharedNameBody
+                  : copy.blocks.sharedNameBodyGeneric,
+              ]
+            }
             standing={sharedName?.standing}
             language={language}
             zone={zone}

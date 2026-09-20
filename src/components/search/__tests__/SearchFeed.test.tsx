@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 
@@ -532,6 +532,68 @@ describe("SearchFeed", () => {
         '[data-testid="appellations-mobile"] [data-appellation][data-subject-id]'
       )
     ).toHaveLength(2);
+  });
+
+  // "Yoruba" files both a people and a language in the AFRIK corpus —
+  // selectNameSubject puts no type restriction on an exact match, so a
+  // cross-type clash reaches SearchFeed the same way a same-type one
+  // (Bassa) does. Answering only the first would silently promote one
+  // form over the other, which DEC-057 exists to prevent.
+  // @req REQ-178
+  it("disambiguates a cross-type name clash without promoting either type", () => {
+    const subjects = [
+      namedResult({
+        type: "people",
+        id: "PPL_YORUBA",
+        name: "Yoruba",
+        nameEn: undefined,
+      }),
+      namedResult({
+        type: "language",
+        id: "yor",
+        name: "Yoruba",
+        nameEn: undefined,
+      }),
+    ];
+    render(
+      <SearchFeed
+        query="Yoruba"
+        language="fr"
+        state="exact"
+        results={subjects}
+        subjects={subjects}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    expect(
+      screen.getByRole("heading", { level: 1, name: "Yoruba" })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText("2 entrées de l’atlas portent ce nom.")
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        level: 2,
+        name: "Les entrées qui partagent ce nom",
+      })
+    ).toBeInTheDocument();
+    const peoplesBlock = screen.getByTestId("feed-block-peoples");
+    expect(
+      within(peoplesBlock).getByText("Peuple documenté")
+    ).toBeInTheDocument();
+    expect(within(peoplesBlock).getByText("Langue")).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        "Un même nom porté par des entrées de nature différente ne les relie pas entre elles."
+      )
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByText(
+        "Une orthographe partagée ne suffit pas à établir une parenté entre des peuples."
+      )
+    ).not.toBeInTheDocument();
   });
 
   // @req REQ-002
