@@ -527,6 +527,20 @@ Two consequences for the rollout:
   are written into this file** as part of stage 3's gate. A number in a document
   somebody took is worth more than a threshold nobody's tooling evaluates.
 
+  **Measured 2026-09-20 (ETNI-1980), YouTube, on the production build.** A
+  Lighthouse 12.6.1 user flow on `/fr/decouvertes/origine-du-nom-mande`, mobile
+  emulation, Chrome for Testing on a developer machine, consent seeded the way
+  the gate seeds it. Best practices: **1.00** on a navigation with the facade
+  only (the gate's own measurement); **0.95** on a timespan covering the click,
+  the frame mounting and eight seconds of playback; **1.00** on a snapshot with
+  the player mounted. Three runs, the same figures. The frame mounted, so
+  `frame-src` admits it in a real browser; no console error or warning; no
+  cookie kept for the YouTube hosts. The one failing audit is `inspector-issues`,
+  a single _Cookie_ issue, which is the finding amended at §6.1. **The click
+  state sits exactly on the 0.95 threshold**, so a second issue would put it
+  under. A timespan is scored over fewer audits than a navigation, so its figure
+  is not comparable one to one with the gate's.
+
 ### 4.4 Which surface owns playback (brief §3.3 q14)
 
 **Découvertes owns playback. The shelf navigates.** One player, one consent
@@ -738,6 +752,23 @@ media CDN — and **still sets no cookie**. The secondary reporting in §11 says
 play sets `VISITOR_INFO1_LIVE`, `YSC` and `GPS`; on this measurement, on this
 host, it does not. That reporting predates the behaviour and is now corrected
 here rather than carried forward.
+
+**Amended 2026-09-20 (ETNI-1980): no cookie _kept_ is not no cookie
+_attempted_.** The measurement above reads the browser's cookie jar, which shows
+what was kept. A Lighthouse flow through the click also reads DevTools' own
+issue log for the frame, and it records four `SetCookie` operations from
+`www.youtube-nocookie.com` on play: `TESTCOOKIESENABLED` (a probe for cookie
+support, repeated) and `LAST_RESULT_ENTRY_KEY` on `.www.youtube-nocookie.com`,
+the same name as the `ytidb::LAST_RESULT_ENTRY_KEY` storage key above, so a
+cookie fallback for it. None carries a `SameSite` attribute, and Chrome excludes
+such a cookie in a cross-site frame (`ExcludeSameSiteUnspecifiedTreatedAsLax`),
+which is why the jar stayed empty. **The host tries to write cookies on play;
+whether they are kept is the browser's decision**, and a browser that does not
+apply that default would keep them. Read every "sets no cookie on play" in this
+document as "kept no cookie in Chrome". The decision does not move: the facade
+and the click are what stand between the reader and this, the drafted legal
+paragraph (§3.4) already says Google writes trackers to the device on play, and
+neither sentence claimed otherwise.
 
 ### 6.2 What a signed-out reader actually sees
 
@@ -1041,7 +1072,7 @@ starts running nightly. The hand-measured post-click Lighthouse figures from
 **Reverses by** reverting the `href`; the rest is measurement and removing it
 only removes information.
 
-**Status, 2026-09-20 (ETNI-1970): done, except the post-click measurement.**
+**Status, 2026-09-20 (ETNI-1970, ETNI-1980): done.**
 Reading the code and measuring moved four things away from the text above:
 
 - **The shelf's `href` was already the piece's Découvertes entry**
@@ -1073,10 +1104,10 @@ The nightly check is `scripts/checkEmbedAvailability.ts`
 against YouTube's oEmbed endpoint: the real record answers 200 and an unknown
 identifier 404. A 401 for a private piece is reported behaviour, not measured.
 
-**Still open: the post-click figures.** The gate never clicks, so no number for
-the mounted third-party frame exists yet, and none is written here. It needs a
-person with a browser to load the entry, press the facade button and run
-Lighthouse on that state (ETNI-1980).
+**The post-click figures (ETNI-1980) were measured on 2026-09-20 and are at
+§4.3:** 1.00 with the facade, 0.95 across the click and eight seconds of
+playback, 1.00 with the player mounted. Taking them surfaced the cookie attempt
+amended at §6.1.
 
 ## 10. Gates, and the tests each stage breaks on purpose
 
