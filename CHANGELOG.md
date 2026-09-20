@@ -10,6 +10,66 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [4.13.0] - 2026-09-19
+
+### Added
+
+- **Search now answers the name itself across peoples, languages, linguistic
+  families, countries and patronymes.** One projection gathers every known
+  form, distinguishes an exonym from the entry it names, keeps the unknown-name
+  answer reachable, and asks the reader which subject they mean when a bounded
+  prefix such as Bassa names several unrelated peoples (#1168).
+- **Competing appellations are an editorial gate rather than an unmeasured
+  convention.** A fiche must qualify the names it publishes, and the initial
+  debt was repaired down to zero.
+- Database-reading pull-request gates now use an ephemeral Supabase instance,
+  while recette workflows target the self-hosted recette database instead of a
+  hosted project constrained by egress quotas.
+
+### Changed
+
+- **The product opens on the question it answers: where a name comes from.**
+  The home, About page, atlas hubs, result-page grammar and agent brief now
+  share that onomastic orientation.
+- Language names now reach the result page from the API shape that production
+  actually serves. Alternate names and the `whyProblematic` field were aligned
+  across `alz`, `arb`, `bam`, `bmi`, `cop`, `din`, `dje`, `dyu`, `egy`, `emk`,
+  `ewe`, `grb`, `hau`, `hav`, `hke`, `hts`, `kab`, `kea`, `ktu`, `ktz`, `lin`,
+  `lua`, `lub`, `mnk`, `mos`, `naq`, `ngh`, `nnb`, `plt`, `snk`, `som`, `swc`,
+  `swh`, `tll`, `tuq`, `wal`, `wol`, `wti` and `yor` (#1166).
+- Historical appellations were normalised and qualified across
+  `FLG_AFROASIATIQUE`, `FLG_ATLANTIQUE`, `FLG_AUSTRONESIENNE`, `FLG_BANTU`,
+  `FLG_BENOUECONGO`, `FLG_BERBERE`, `FLG_COUCHITIQUE`, `FLG_CREOLE`, `FLG_GUR`,
+  `FLG_KHOE`, `FLG_KHOISAN`, `FLG_KROU`, `FLG_KWA`, `FLG_KXA`, `FLG_MANDE`,
+  `FLG_NIGERCONGO`, `FLG_NILOSAHARIENNE`, `FLG_NILOTIQUE`, `FLG_OMOTIQUE`,
+  `FLG_SAHARIEN`, `FLG_SEMITIQUE`, `FLG_SONGHAY`,
+  `FLG_SOUDANIQUECENTRAL`, `FLG_TCHADIQUE` and `FLG_TUU`. Khoe's missing
+  history was restored, and the Khoe and Berber historical names now carry
+  their cited origins and qualifications (#1162–#1165).
+- Invalid collective self-appellations were removed or rewritten for
+  `PPL_AUSTRO_MACRO`, `PPL_AUTRES_PEUPLES_BANTOUS`, `PPL_CREOLE_MACRO`,
+  `PPL_KHOE_MACRO`, `PPL_KXA_MACRO`, `PPL_MANDE_MACRO`,
+  `PPL_NILOTIQUE_MACRO`, `PPL_OMOTIQUE_MACRO` and `PPL_SCT_MACRO`; related
+  corpus repairs cover `PPL_HOBA`, `PPL_KABYLE`, `PPL_GBODJIBO`,
+  `PPL_LUNDA_CHOKWE` and `PPL_LUO_BANTU`.
+- Atlas routes stream their headers before secondary data, collapse redundant
+  database round trips and defer non-critical fiche, globe and global-chrome
+  clients until reader interaction. The resulting mobile Lighthouse evidence
+  is recorded with the production-readiness audit (#1178, #1180, #1181).
+
+### Fixed
+
+- Search no longer counts absent material, hides the unknown-name answer or
+  answers an exonym with the wrong entry. Bassa disambiguation entries are now
+  actionable links rather than an unclickable list (#1168).
+- Lazy fiche globes activate under the real end-to-end interaction path, and
+  keyboard selection waits for its observable state (#1176, #1179).
+- Release browser checks, dependency review, Storybook publication and
+  Lighthouse audits were stabilised after the production-readiness pass
+  (#1172, #1182, #1183).
+- English appellations copy no longer repeats the French label, and four
+  transactional emails no longer greet readers with a retired qualifier.
+
 ## [4.12.0] - 2026-09-17
 
 ### Added
@@ -1118,7 +1178,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.12.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.13.0...HEAD
+[4.13.0]: https://github.com/big-emotion/ethniafrica/compare/v4.12.0...v4.13.0
 [4.12.0]: https://github.com/big-emotion/ethniafrica/compare/v4.11.0...v4.12.0
 [4.11.0]: https://github.com/big-emotion/ethniafrica/compare/v4.10.0...v4.11.0
 [4.10.0]: https://github.com/big-emotion/ethniafrica/compare/v4.9.0...v4.10.0
