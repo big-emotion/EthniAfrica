@@ -36,10 +36,10 @@ dis pourquoi.
 
 ## Les deux sorties
 
-| Sortie            | Dossier, dans le dossier du post                         | Condition               | État atteint          |
-| ----------------- | -------------------------------------------------------- | ----------------------- | --------------------- |
-| **Épreuve**       | `_epreuves/`                                             | toujours                | 🟡 En traitement      |
-| **Bon à publier** | un dossier par réseau (`TikTok-Instagram/`, …), `video/` | les cinq portes passées | 🟢 Validé, en attente |
+| Sortie            | Dossier, dans le dossier du post                                    | Condition               | État atteint          |
+| ----------------- | ------------------------------------------------------------------- | ----------------------- | --------------------- |
+| **Épreuve**       | `_epreuves/`                                                        | toujours                | 🟡 En traitement      |
+| **Bon à publier** | un dossier par format, nommé d'après ses réseaux (§1 bis), `video/` | les cinq portes passées | 🟢 Validé, en attente |
 
 Le dossier du post est celui de la bibliothèque, pas celui de l'atelier — voir
 « Où ça s'écrit ».
@@ -170,9 +170,8 @@ cd social/harness
 ./venv/bin/python test_gabarit_video.py         # le contrat de §9 bis
 ```
 
-**`ethni_carrousel2.py` refuse d'écrire dans un dossier-réseau
-(`TikTok-Instagram/`, `Instagram-Facebook-YouTube-X/`) qui porte déjà des
-rendus** et bascule le lot en épreuve. Deux jeux de rendus côte à côte sont
+**`ethni_carrousel2.py` refuse d'écrire dans un dossier-réseau (nommé d'après
+la colonne « Reçoit » de §1 bis) qui porte déjà des rendus** et bascule le lot en épreuve. Deux jeux de rendus côte à côte sont
 indiscernables dans un sélecteur de fichiers. `--remplacer` lève le refus.
 
 **La vidéo se rend par `ethni_montage.py`**, pas par `ethni_render.py` :

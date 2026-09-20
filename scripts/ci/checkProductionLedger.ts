@@ -411,19 +411,29 @@ const FIXTURES: Fixture[] = [
     },
     true,
   ],
+  // The 2026-09-21 revision of §1 bis: both formats go to every network, and
+  // X alone refuses the carrousel because the platform has none.
   [
     "carousel sent to Facebook",
     {
       ...validLingalaEntry(),
       publications: [{ network: "facebook", format: "carrousel" }],
     },
-    true,
+    false,
   ],
   [
     "video sent to TikTok",
     {
       ...validLingalaEntry(),
       publications: [{ network: "tiktok", format: "video" }],
+    },
+    false,
+  ],
+  [
+    "carousel sent to X, which has no carousel",
+    {
+      ...validLingalaEntry(),
+      publications: [{ network: "x", format: "carrousel" }],
     },
     true,
   ],

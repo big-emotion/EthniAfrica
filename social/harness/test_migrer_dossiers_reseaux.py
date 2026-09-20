@@ -25,9 +25,9 @@ def test_carrousel_and_reel_go_to_their_network_folders():
     cibles = {source.name: str(dest.relative_to(RACINE)) for source, dest in plan}
     origines = {source.name: str(source.relative_to(RACINE)) for source, dest in plan}
     assert cibles["sujet_01_carrousel_1080x1350.png"] == \
-        "TikTok-Instagram/sujet_01_carrousel_1080x1350.png"
+        "TikTok-Instagram-Facebook-YouTube-LinkedIn/sujet_01_carrousel_1080x1350.png"
     assert cibles["sujet_01_reel_1080x1920.png"] == \
-        "Instagram-Facebook-YouTube-X/sujet_01_reel_1080x1920.png"
+        "TikTok-Instagram-Facebook-YouTube-LinkedIn-X/sujet_01_reel_1080x1920.png"
     assert cibles["RENDU.md"] == "RENDU.md"
     assert origines["sujet_01_carrousel_1080x1350.png"] == \
         "images/sujet_01_carrousel_1080x1350.png"

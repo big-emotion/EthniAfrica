@@ -67,9 +67,10 @@ rule applies there once that skill is updated to write to this ledger.
 ## The network × format mapping
 
 **Already fixed in GABARITS §1 bis, dated 2026-09-16 — not repeated or
-re-derived here.** In short: the video/reel goes to Instagram, Facebook,
-YouTube and X; the carousel goes to TikTok and Instagram only. LinkedIn and X
-also carry a text-with-link form. `scripts/lib/socialFormatMatrix.ts` is the
+re-derived here.** In short: since the operator's 2026-09-21 revision, both
+formats go to every network, and only X refuses the carousel because the
+platform has none. LinkedIn and X also carry a text-with-link form.
+`scripts/lib/socialFormatMatrix.ts` is the
 one machine-readable copy of that table, used by the gate — if §1 bis is
 revised, that file is revised in the same change, and this paragraph is not a
 second copy to keep in sync.

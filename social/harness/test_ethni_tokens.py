@@ -116,8 +116,12 @@ def test_networks_come_from_the_1bis_table():
     Order matches the table's own row order, which is also the order the render
     engine joins into an output folder name.
     """
-    assert tk.reseaux("carrousel") == ["TikTok", "Instagram"]
-    assert tk.reseaux("reel") == ["Instagram", "Facebook", "YouTube", "X"]
+    # Revised 2026-09-21: both formats go to every network, and X alone has no
+    # carrousel because the platform has none.
+    assert tk.reseaux("carrousel") == [
+        "TikTok", "Instagram", "Facebook", "YouTube", "LinkedIn"]
+    assert tk.reseaux("reel") == [
+        "TikTok", "Instagram", "Facebook", "YouTube", "LinkedIn", "X"]
 
 
 def test_the_interface_floor_is_a_number_not_a_habit():

@@ -8,8 +8,8 @@ video engine had moved to `ethni_montage.py` too.
 
 **It always renders.** A lot that fails a gate goes to `_epreuves/` stamped and
 annotated; a lot that passes goes to one folder per format, named after the
-networks that format reaches (§1 bis) — `TikTok-Instagram/` for the carrousel,
-`Instagram-Facebook-YouTube-X/` for the reel. Nothing here asks permission: a
+networks that format reaches (§1 bis, read from its « Reçoit » column). Nothing
+here asks permission: a
 proof is looked at, and that is how it gets decided.
 
 The `linkedin` format (1080 × 1080) is retired from this loop: no network in
