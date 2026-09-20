@@ -541,6 +541,27 @@ Two consequences for the rollout:
   under. A timespan is scored over fewer audits than a navigation, so its figure
   is not comparable one to one with the gate's.
 
+  **Reproduced the same day by a second session (PR #1198), with other
+  tooling:** Lighthouse 12.8.2 through its user-flow API, Chrome for Testing 152,
+  430 x 932 at a device pixel ratio of 2, the consent banner already answered,
+  one run. The same three figures, 1.00, 0.95 and 1.00. It counted what the
+  first measurement did not, and **I have not re-run these three points**:
+  - **Third-party requests.** None before the click; **38, to eight hosts**,
+    across the click and six seconds of playback: `www.youtube-nocookie.com`,
+    `www.google.com`, `m.youtube.com`, `i.ytimg.com`, `yt3.ggpht.com`,
+    `fonts.gstatic.com`, `jnn-pa.googleapis.com` and a `googlevideo.com` media
+    node (its name varies). This is §4.1 seen from the other side: `frame-src`
+    governs the frame's navigation, not what the framed document loads, and
+    nothing in our policy could or should restrict it.
+  - **A snapshot is blind to the click state.** It reads 1.00 because a snapshot
+    audits the DOM and has no console or Issues log to read; only the timespan
+    sees the `inspector-issues` finding. Someone who ran only that mode would
+    conclude the post-click state is clean.
+  - **Nothing here is enforced.** No CI job clicks, so the figure can move with no
+    change on our side, because it depends on what YouTube ships that day. The
+    availability watch asks whether a piece still plays, not what the player
+    logs. Re-measure by hand when the provider list changes.
+
 ### 4.4 Which surface owns playback (brief §3.3 q14)
 
 **Découvertes owns playback. The shelf navigates.** One player, one consent
