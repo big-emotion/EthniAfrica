@@ -109,6 +109,9 @@ were referenced by nothing at all, two of them written that same week.
 - [Congo history dossiers: implementation plan](plans/congo-history-dossiers.md)
 - [Search-result feed: implementation plan](plans/search-result-feed.md)
 - [Search-result feed: correction and implementation sequencing plan](plans/search-result-feed-correction-plan.md)
+- [Search-result feed: finishing phases 11 and 12](plans/search-result-feed-completion.md)
+- [Playing the productions on the site: analysis brief](plans/embedded-media-brief.md)
+- [The publishing format and a production history the site can read: brief](plans/production-history-brief.md)
 
 ## Elsewhere
 
