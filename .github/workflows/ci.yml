@@ -149,6 +149,14 @@ jobs:
       # charter nobody can reach is a charter nobody applies.
       - run: npm run check:orphan-docs
 
+      # public/ is served from the repository and had no size check at all —
+      # no .gitattributes, no LFS, nothing in CI. Survivable for a fixed set
+      # of illustrations; not for the carousel frames, which arrive by the
+      # dozen. The ceiling lands before the first pass rather than after it,
+      # because a budget written once the directory has doubled is a budget
+      # written around the damage.
+      - run: npm run check:asset-weight
+
       # Three gates that existed and ran nowhere, measured 2026-09-18. Two of
       # them are named in CLAUDE.md's list of gates headed "all CI-blocking on
       # every PR", which is the worst shape a check can take: believed, and

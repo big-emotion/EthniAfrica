@@ -67,6 +67,7 @@ npm run check:local-paths           # no local filesystem path in a public repo
 npm run check:infra-disclosure      # no server address, SSH port, provider or datacenter name
 npm run check:copy-literals         # French literals in components (survey; --staged blocks)
 npm run check:orphan-docs           # a document nothing links to (ceiling 0)
+npm run check:asset-weight          # tracked weight of public/ (total + per-file ceilings)
 npm run check:glossary              # the bilingual glossary (REQ-144) — still blocks under REQ-171
 npm run check:skill-parity          # a skill's canonical copy and its Codex entry point agree
 npm run check:pagination-contract   # perPage default and maximum match every documented endpoint

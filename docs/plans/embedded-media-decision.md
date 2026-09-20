@@ -1,6 +1,7 @@
 # Playing the productions on the site — decision
 
-Date: 2026-09-20. Status: **analysis complete, nothing implemented.** This
+Date: 2026-09-20. Status: **analysis complete; §6 measured 2026-09-20; stage 1
+implemented.** This
 document authorises the work; it is not the work. No code, CSP, consent
 category or legal page was touched in the pass that produced it.
 
@@ -27,15 +28,22 @@ provenance rather than suppressed or dressed up:
 | **measured**   | Run against this repository, on the branch named. Reproducible here.                                             |
 | **documented** | The platform's own developer documentation, reached through search result summaries rather than the page itself. |
 | **reported**   | Secondary technical reporting or a consent-tooling vendor. Useful, interested, not authoritative.                |
+| **observed**   | Run 2026-09-20 in a clean, signed-out browser context against the project's own public posts. See §6.            |
 | **untested**   | The browser observation the brief asked for. Not performed.                                                      |
 
-Everything in the brief's §3.1 q2 (login wall) and q3 (what is written to
-the device) is **untested** here. §6 hands the operator a fifteen-minute
-protocol that settles both, and the rollout in §9 makes that protocol a gate
-rather than a suggestion — stage 2 does not ship until it has been run and its
-result written back into this file. **No recommendation below depends on an
-untested claim**; where one would have, the recommendation is to not ship that
-platform, which is the safe direction to be wrong in.
+The brief's §3.1 q2 (login wall) and q3 (what is written to the device) were
+**untested** when this document was drafted. **They were measured on
+2026-09-20**, on a machine with ordinary outbound access, and §6 now carries the
+numbers, the controls and the screenshots instead of a protocol. Two of this
+document's own claims did not survive that pass — the cookies YouTube was
+reported to set on play, and TikTok's rank among the alternatives — and both are
+corrected at §6.3 rather than quietly edited out of the table.
+
+What the measurement could **not** settle stays marked: whether a hand-built
+facade over a Meta embed is permitted is a terms question, and no browser
+answers it. **No recommendation below depends on an untested claim**; where one
+would have, the recommendation is to not ship that platform, which is the safe
+direction to be wrong in.
 
 ## 1. Re-verification, and one correction to the brief
 
@@ -95,14 +103,14 @@ stage 3 below is the natural moment to make it, since it opens that file anyway.
 One row per platform, answering the brief's §3.1. Every cell carries its mark.
 Tested on — nothing: see §0.
 
-|                                                 | **YouTube**                                                                                                                                                                                                                                                                                                                                                                                                              | **TikTok**                                                                                                                                                                                                                           | **Instagram**                                                                                                                                                                                                                                                                                            | **Facebook**                                                                                                                                                                                                        |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1. Official mechanism**                       | Pure `<iframe>`. `https://www.youtube-nocookie.com/embed/{id}` is the privacy-enhanced host. No script required unless the IFrame Player API is wanted. **documented**                                                                                                                                                                                                                                                   | Pure `<iframe>`: `https://www.tiktok.com/player/v1/{id}`, with `postMessage` control. The Share → Embed snippet is the _other_ mechanism: `<blockquote class="tiktok-embed">` plus `https://www.tiktok.com/embed.js`. **documented** | Meta's oEmbed API returns a `<blockquote class="instagram-media">` plus `instagram.com/embed.js`. Since **15 June 2026** oEmbed is callable **tokenless**, reversing the October 2020 token requirement. The legacy `/p/{code}/embed/` iframe is undocumented and unconfirmed. **documented / reported** | `<iframe>` via the Embedded Video Player plugin (`facebook.com/plugins/video.php`), or the SDK plus a `<div class="fb-video">`. **documented**                                                                      |
-| **2. Login to watch?**                          | No. Public videos play signed-out; this is the operator's stated reason for preferring it and nothing found contradicts it. **untested**                                                                                                                                                                                                                                                                                 | No login reported for the official embed. The strongest claim found is a negative from general guides, which is the weakest kind of source. **untested**                                                                             | Unresolved. Public posts are the only embeddable ones; nothing found states whether a signed-out viewer sees the media or a wall. **untested**                                                                                                                                                           | Only public Page/profile posts embed. A post restricted to friends **does not play unless the viewer is logged in** — so the login wall is real for non-public content and reported absent for public. **untested** |
-| **3. Written to the device before interaction** | With **no facade**: `youtube-nocookie.com` sets no cookie on load but writes a device identifier `yt-remote-device-id` to `localStorage`; on **play** Google sets cookies including `VISITOR_INFO1_LIVE`, `YSC`, `GPS` and receives IP, browser characteristics and viewing context. With a **facade**: nothing, because no request is made. **reported**                                                                | Reported to set **6 cookies** on sites loading its script, and to initialise client-side storage, make network requests and fire telemetry **before play**. A cookie named `__tt_embed__mounting` is catalogued. **reported**        | Not established. Meta's embed script is a first-party-to-Meta script running in the page, so the exposure is strictly larger than an iframe's. **untested**                                                                                                                                              | As Instagram when the SDK is used; an iframe confines it to the frame. **untested**                                                                                                                                 |
-| **4. ToS: self-hosted poster + click-to-load?** | Permitted in substance, with a floor: a thumbnail that initiates playback must be **≥ 120 × 70 px** (the shelf's 130 × 231 clears it), YouTube attribution must not be obscured, and **no overlay, frame or visual element may sit in front of any part of the player, including its controls.** A facade _before_ the player mounts is not an overlay over it; anything drawn over the mounted frame is. **documented** | No prohibition found. The official player exists precisely to be framed. **documented**                                                                                                                                              | oEmbed no longer needs an app token (June 2026), so that is **not** a blocker any more. Whether a hand-built facade over the canonical embed is permitted was not established. **documented / untested**                                                                                                 | Not established. **untested**                                                                                                                                                                                       |
-| **5. What breaks, and how the site sees it**    | Deletion, going private or a geoblock leaves the frame rendering YouTube's own error. The embedding page **cannot** read that: the frame is cross-origin and the site would need the JS API to hear it. Detectable out of band — the oEmbed endpoint 404s for a removed video. **documented**                                                                                                                            | Same structural answer: cross-origin, invisible to the page, detectable out of band via oEmbed. **documented**                                                                                                                       | Same. Additionally exposed to Meta changing the contract unilaterally — it did exactly that in October 2020 and again in June 2026. **reported**                                                                                                                                                         | Same, plus: changing a post's audience from Public after embedding kills the embed. **documented**                                                                                                                  |
-| **6. Aspect and chrome**                        | Fills the box given; a 9:16 short in a 9:16 frame fills it. `rel=0` has **not** disabled related videos since 25 September 2018 — it restricts the end screen to the same channel. Branding and the title bar are not removable. **documented**                                                                                                                                                                          | Default aspect **9:16**. `controls` can hide the controls, `description` and `music_info` add chrome. **documented**                                                                                                                 | Blockquote chrome is Instagram's: header, caption, actions. Not a bare player. **documented**                                                                                                                                                                                                            | Plugin chrome, configurable width. **documented**                                                                                                                                                                   |
+|                                                 | **YouTube**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | **TikTok**                                                                                                                                                                                                                                                                                              | **Instagram**                                                                                                                                                                                                                                                                                            | **Facebook**                                                                                                                                                                                                                  |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Official mechanism**                       | Pure `<iframe>`. `https://www.youtube-nocookie.com/embed/{id}` is the privacy-enhanced host. No script required unless the IFrame Player API is wanted. **documented**                                                                                                                                                                                                                                                                                                                                                                                                             | Pure `<iframe>`: `https://www.tiktok.com/player/v1/{id}`, with `postMessage` control. The Share → Embed snippet is the _other_ mechanism: `<blockquote class="tiktok-embed">` plus `https://www.tiktok.com/embed.js`. **documented**                                                                    | Meta's oEmbed API returns a `<blockquote class="instagram-media">` plus `instagram.com/embed.js`. Since **15 June 2026** oEmbed is callable **tokenless**, reversing the October 2020 token requirement. The legacy `/p/{code}/embed/` iframe is undocumented and unconfirmed. **documented / reported** | `<iframe>` via the Embedded Video Player plugin (`facebook.com/plugins/video.php`), or the SDK plus a `<div class="fb-video">`. **documented**                                                                                |
+| **2. Login to watch?**                          | No. Public videos play signed-out; this is the operator's stated reason for preferring it. Measured: the project's own short plays in a 360 × 640 frame, signed out, no wall. **observed**                                                                                                                                                                                                                                                                                                                                                                                         | No login wall — but the player draws **TikTok's own cookie banner, in English, over the video**, which must be dismissed before the piece can be watched. **observed**                                                                                                                                  | No wall: `/p/{code}/embed/` and `/reel/{code}/embed/` both render a public post signed out, inside Instagram's own card chrome. **observed**                                                                                                                                                             | Only public Page/profile posts embed. A post restricted to friends **does not play unless the viewer is logged in**. For a public Page video, measured: `plugins/video.php` renders and offers Play, signed out. **observed** |
+| **3. Written to the device before interaction** | With **no facade**: `youtube-nocookie.com` sets no cookie on load but writes a device identifier `yt-remote-device-id` to `localStorage`; on **play** Google sets cookies including `VISITOR_INFO1_LIVE`, `YSC`, `GPS` and receives IP, browser characteristics and viewing context. With a **facade**: nothing — 0 requests, 0 cookies, 0 storage keys, measured. Corrected at §6.1: on `youtube-nocookie.com` play sets **no cookie**, and both YouTube hosts write **2 `localStorage` keys before any interaction**, which is what Article 5(3) actually turns on. **observed** | Measured on the official `player/v1` iframe, untouched: **4 cookies** (`ttwid`, `msToken` × 2, `tt_chain_token`), **18 `localStorage` + 6 `sessionStorage` keys**, and **86 requests across 12 hosts**, four of them named telemetry endpoints. The dirtiest of the four by a wide margin. **observed** | The **script** mechanism runs first-party-to-Meta code in the page, so its exposure is strictly larger than an iframe's. The undocumented **iframe** route, measured untouched: **0 cookies, 0 storage**, 57 requests to CDN hosts. **observed**                                                         | As Instagram when the SDK is used. The `plugins/video.php` **iframe**, measured untouched: **0 cookies, 0 storage**, 47 requests to `fbcdn.net` hosts. **observed**                                                           |
+| **4. ToS: self-hosted poster + click-to-load?** | Permitted in substance, with a floor: a thumbnail that initiates playback must be **≥ 120 × 70 px** (the shelf's 130 × 231 clears it), YouTube attribution must not be obscured, and **no overlay, frame or visual element may sit in front of any part of the player, including its controls.** A facade _before_ the player mounts is not an overlay over it; anything drawn over the mounted frame is. **documented**                                                                                                                                                           | No prohibition found. The official player exists precisely to be framed. **documented**                                                                                                                                                                                                                 | oEmbed no longer needs an app token (June 2026), so that is **not** a blocker any more. Whether a hand-built facade over the canonical embed is permitted was not established. **documented / untested**                                                                                                 | Not established. **untested**                                                                                                                                                                                                 |
+| **5. What breaks, and how the site sees it**    | Deletion, going private or a geoblock leaves the frame rendering YouTube's own error. The embedding page **cannot** read that: the frame is cross-origin and the site would need the JS API to hear it. Detectable out of band — the oEmbed endpoint 404s for a removed video. **documented**                                                                                                                                                                                                                                                                                      | Same structural answer: cross-origin, invisible to the page, detectable out of band via oEmbed. **documented**                                                                                                                                                                                          | Same. Additionally exposed to Meta changing the contract unilaterally — it did exactly that in October 2020 and again in June 2026. **reported**                                                                                                                                                         | Same, plus: changing a post's audience from Public after embedding kills the embed. **documented**                                                                                                                            |
+| **6. Aspect and chrome**                        | Fills the box given; a 9:16 short in a 9:16 frame fills it. `rel=0` has **not** disabled related videos since 25 September 2018 — it restricts the end screen to the same channel. Branding and the title bar are not removable. **documented**                                                                                                                                                                                                                                                                                                                                    | Default aspect **9:16**. `controls` can hide the controls, `description` and `music_info` add chrome. **documented**                                                                                                                                                                                    | Blockquote chrome is Instagram's: header, caption, actions. Not a bare player. **documented**                                                                                                                                                                                                            | Plugin chrome, configurable width. **documented**                                                                                                                                                                             |
 
 ### What the table decides on its own
 
@@ -680,29 +688,123 @@ only watchable on the four platforms is an atlas that has outsourced its own
 work to them. That is a doctrine cost, not a UX one, and it is why "do nothing"
 is the baseline rather than the recommendation.
 
-## 6. The test the analysis owes, and could not run
+## 6. The test the analysis owed, and what it returned
 
-Fifteen minutes, a private window, no account, devtools open on Application and
-Network. One public piece per platform. It settles the brief's §3.1 q2 and q3,
-which are the only inputs below marked **untested**.
+**Run 2026-09-20.** One clean Chromium context per platform — a fresh profile,
+no account, no prior cookies — against the project's **own public posts**, with
+the frame mounted on a local scratch page and every request, cookie and storage
+key recorded from outside the frame. Each figure below is first-hand; the
+protocol is at the end of this section so it can be repeated.
 
-For each of YouTube (`youtube-nocookie.com/embed/{id}`), TikTok
-(`tiktok.com/player/v1/{id}`), Instagram and Facebook, on a scratch page:
+### 6.1 What each platform writes before it is touched
 
-1. **Load the page with the frame present and do not touch it.** Record every
-   cookie, `localStorage` and `sessionStorage` key written, and every request
-   made, with its host. This is the number that decides whether a facade is
-   sufficient or merely polite.
-2. **Press play.** Record the same three lists again, and the delta.
-3. **Record what is actually on screen**, signed out: the piece, a login wall,
-   or a blank frame. A screenshot, not a description.
-4. **Repeat with the facade in place** and confirm the first list is empty
-   before the click — which is the claim §3.1 above rests on, and the one a
-   reviewer will most want to see demonstrated.
+Frame mounted, nothing clicked. Cookies are read from the browser's own jar, so
+the frame's third-party cookies are counted; storage is read **inside** the
+frame, at its own origin.
 
-Write the result into §2's table, replacing the **untested** marks with
-**measured** and the date. A row that still reads **untested** after that pass
-is a row whose platform does not ship.
+| Embed, untouched                        | Requests / hosts | Cookies | localStorage | sessionStorage |
+| --------------------------------------- | ---------------: | ------: | -----------: | -------------: |
+| `youtube-nocookie.com/embed/{id}`       |     14 / 6 hosts |   **0** |            2 |              0 |
+| `youtube.com/embed/{id}`                |                — |   **5** |            2 |              0 |
+| `tiktok.com/player/v1/{id}`             |    86 / 12 hosts |   **4** |       **18** |          **6** |
+| `instagram.com/{p\|reel}/{code}/embed/` |     57 / 3 hosts |   **0** |            0 |              0 |
+| `facebook.com/plugins/video.php?href=…` |     47 / 8 hosts |   **0** |            0 |              0 |
+| **Any of them behind the facade**       |        **0 / 0** |   **0** |        **0** |          **0** |
+
+**The facade line is the one that matters, and it is exact.** With a poster and
+a button in front, the page makes no request to any platform host, sets no
+cookie and writes nothing to the device. The claim §3.1 rests on is not an
+inference from "a facade makes no request" — it was measured, three times.
+
+**Zero cookies is the host's doing, not the browser's**, and that needed its own
+control or the whole row would be worthless. Loaded top-level, `youtube.com`
+sets five (`VISITOR_INFO1_LIVE`, `YSC`, `__Secure-YNID`, `__Secure-ROLLOUT_TOKEN`,
+`VISITOR_PRIVACY_METADATA`) and `youtube-nocookie.com` sets none; framed and
+untouched, `youtube.com` sets the same five. So third-party cookies are neither
+blocked nor partitioned away in this context, the jar works, and the
+privacy-enhanced host genuinely does what its name says.
+
+**But no cookie is not no storage, and that decides the consent question.**
+Both YouTube hosts write two `localStorage` keys before any interaction
+(`yt-icons-last-purged`, `ytidb::LAST_RESULT_ENTRY_KEY`), and pressing play adds
+a third (`yt-player-caption-persistence`). Article 5(3) covers _storing
+information on the device_, not cookies specifically, so a bare frame needs
+consent on this evidence even on the no-cookie host. That is an argument **for**
+the facade, not against it — and it is the one a reviewer should check first,
+because it is the point where "nocookie" invites a wrong conclusion.
+
+On play, `youtube-nocookie.com` adds exactly one host — a `googlevideo.com`
+media CDN — and **still sets no cookie**. The secondary reporting in §11 says
+play sets `VISITOR_INFO1_LIVE`, `YSC` and `GPS`; on this measurement, on this
+host, it does not. That reporting predates the behaviour and is now corrected
+here rather than carried forward.
+
+### 6.2 What a signed-out reader actually sees
+
+Screenshots, per the brief, in `docs/plans/embedded-media-captures/`.
+
+- **YouTube** (`youtube-after.png`) — the project's own short plays, signed
+  out, no wall, filling a 360 × 640 box edge to edge. §1's arithmetic holds in
+  pixels: a 9:16 short in a 9:16 frame fills it.
+- **TikTok** (`tiktok-before.png`) — **the official player draws TikTok's own
+  cookie banner inside the frame, in English, over the video.** "Allow cookies
+  from TikTok on this browser?", with _Decline optional cookies_ and _Allow
+  all_. This is the finding the documentation could not have given, and it is
+  disqualifying on its own: embedding TikTok puts a second consent dialog, from
+  a second party, in a second language, on top of the project's own production —
+  after the reader has already answered the site's banner. The piece cannot be
+  watched until someone else's consent interface has been dismissed.
+- **Instagram** (`instagram-reel.png`) — the reel renders signed out, but
+  inside a white card carrying Instagram's header, profile button, like,
+  comment, share and save controls and a _Voir plus sur Instagram_ link. §2's
+  row 6 said the blockquote is "not a bare player"; the iframe is not either.
+  On the Découvertes night stage that is a white panel of another product's
+  interface.
+- **Facebook** (`facebook-before.png`) — `plugins/video.php` renders the video
+  signed out with a Play control and a "Cliquez pour regarder sur Facebook"
+  overlay. No wall for a public Page video.
+
+### 6.3 One ranking this overturns
+
+§7 called TikTok "closer than expected and still second". **On measurement it
+is the worst of the four**, by a wide margin and on every axis: 86 requests
+across 12 hosts including four named telemetry endpoints
+(`mon16-normal-*.tiktokv.eu`, `mcs-ie2.tiktokw.eu`, `mcs16-normal-*.tiktokw.eu`,
+`mon.tiktokv.com`), 4 cookies and 24 storage keys before anything is touched,
+and its own consent banner over the piece.
+
+And the pair the analysis called weak is, on this one axis, clean: both Meta
+**iframe** routes set no cookie and write no storage before interaction. That
+does not promote them. The objection to Meta was never this axis — it is that
+the _canonical, documented_ mechanism is a script in the page, that the iframe
+route for Instagram is undocumented and has been broken twice, and that the
+chrome is another product's. But it is recorded here because the analysis
+argued Meta was worse than TikTok on privacy, and on the numbers that is the
+wrong way round.
+
+**None of this changes the first choice.** YouTube remains the only route that
+is documented, cookie-free on a named privacy host, free of third-party script,
+free of a foreign consent dialog, and already where the operator publishes.
+
+### 6.4 The protocol, to repeat it
+
+Fifteen minutes. A clean profile, no account, devtools on Application and
+Network. One public piece per platform, framed on a local scratch page:
+
+1. Load with the frame present and **do not touch it**. Record every cookie,
+   `localStorage` and `sessionStorage` key written, and every request with its
+   host. Read storage from inside the frame; the parent cannot see it.
+2. Press play. Record the same three lists and the delta.
+3. Screenshot what is on screen, signed out: the piece, a wall, or a banner.
+4. Repeat with the facade in place and confirm the first list is empty.
+5. **Run the first-party control**: load the same embed document top-level. If
+   cookies appear there and not in the frame, the browser is blocking or
+   partitioning third-party cookies and every framed zero is an artefact.
+
+Step 5 is the one this pass added, and it is not optional. Without it the
+headline result — "the privacy host sets no cookie" — is indistinguishable from
+"this browser refuses third-party cookies", and the analysis would have
+published a property of the test bench as a property of Google.
 
 ## 7. Recommendation
 
@@ -710,11 +812,12 @@ is a row whose platform does not ship.
 click-to-load facade over `youtube-nocookie.com`, YouTube alone.** TikTok,
 Instagram and Facebook keep linking out.
 
-It is the only route where every load-bearing claim is **documented** rather
-than **untested**: a plain iframe, a privacy-enhanced host, no third-party
-script, no login wall the operator or anyone else reports, a thumbnail floor
-(120 × 70) the reviewed geometry already clears, and a CSP delta of exactly one
-directive. It answers the operator's actual request — the pieces become
+It is the only route where every load-bearing claim is now **observed** rather
+than argued: a plain iframe, a privacy-enhanced host that sets **no cookie** on
+load or on play (§6.1, with the first-party control that makes the zero mean
+something), no third-party script, no login wall and no foreign consent dialog
+(§6.2), a thumbnail floor (120 × 70) the reviewed geometry already clears, and a
+CSP delta of exactly one directive. It answers the operator's actual request — the pieces become
 watchable on the site, in Découvertes, with the shelf pointing at them — and its
 kill switch is one constant: `ENABLED_EMBED_PROVIDERS = []` closes the policy
 and the facade stops rendering. One commit, though not one line — §9's stage 3
@@ -745,12 +848,23 @@ ship: it is a system, not a component. Seven gigabytes a year, order a euro a
 month of delivery, and an encoding ladder, a player and a publish step to
 build and keep.
 
+**One correction the measurement forced, kept in view.** The paragraph below
+called TikTok "closer than expected" and ranked Meta last on exposure. On the
+numbers that is the wrong way round: TikTok is the dirtiest of the four before
+any interaction, and both Meta iframe routes set nothing at all. The conclusion
+does not move — Meta's _documented_ mechanism is still a script in the page and
+Instagram's iframe is still undocumented and twice-broken — but the reason has
+changed, and §6.3 carries it.
+
 **Not recommended, and why, so it does not get re-litigated quarterly.**
 Instagram and Facebook: their canonical mechanism puts a Meta script in the
 page, and `script-src` is the directive this project should be least willing to
-open. TikTok: closer than expected — `player/v1` is a real iframe — but there is
-no `nocookie` equivalent, the pre-play storage is reported as six cookies and
-telemetry, and §3.5's Commission findings are about that company's design. All
+open. TikTok: `player/v1` is a real iframe, and that is the end of the good news.
+Measured untouched it sets 4 cookies and 24 storage keys over 86 requests to 12
+hosts, four of them telemetry endpoints — and it **draws its own cookie banner,
+in English, over the video** (§6.2), so a French reader who has already answered
+this site's banner is asked again, by someone else, before seeing the piece.
+§3.5's Commission findings are about that company's design. All
 three keep linking out, which is what they do today.
 
 ## 8. Spec of the chosen route
@@ -836,11 +950,30 @@ degradation path is the reason `embed` is optional rather than required.
 
 Four stages. Each ships on its own and each reverses in one commit.
 
-### Stage 1 — Carousels, self-hosted
+### Stage 1 — Carousels, self-hosted · **done 2026-09-20**
 
-The `carousel` branch in `DiscoveryReader`, the `carousel` field per §4.5, the
-first records, and a tracked-file weight ratchet before the first pass lands
-rather than after it.
+The `carousel` branch in `DiscoveryReader`, the `carousel` field per §4.5, and a
+tracked-file weight ceiling before the first pass lands rather than after it.
+
+**Two deviations from this section as written, both deliberate.**
+
+_The weight gate is a one-way ceiling, not a two-way ratchet._
+`scripts/ci/checkPublicAssetWeight.ts` fails above 36 MiB total or 2 MiB for any
+single file, and prints the headroom on every run; it does not fail when the
+number goes down. The ratchet shape in `checkDeadCode.ts` works on a count of
+findings, which moves only when somebody decides it should. A byte total moves
+whenever an image is re-encoded, and a gate that fails the build because a
+picture got _smaller_ is a gate that gets routed around within a week — which is
+the failure the ratchet doctrine exists to prevent. Measured at landing: 146
+tracked files, 35.29 MiB, 0.71 MiB of headroom.
+
+_No first record ships with it._ A published carousel needs real frames from the
+render library, licence-checked, and that library is outside this repository.
+Inventing frames to fill the branch would publish files the project cannot state
+a licence for — so the branch, the contract and the gate land here, and the
+first record is content work that follows. The eligibility rule refuses a
+carousel of fewer than two frames, or one whose frames are not described in both
+languages, so an under-specified record cannot reach a reader by accident.
 
 No third party, no consent, no CSP, no legal change. It is first because it
 delivers a working half of the operator's request while stage 2 is still a
@@ -850,18 +983,24 @@ whatever the rest of this document turns out to be wrong about.
 **Reverses by** removing the branch; the records degrade to the existing photo
 fallback.
 
-### Stage 2 — The measurement
+### Stage 2 — The measurement · **done 2026-09-20**
 
-Run §6. Write the result into §2's table, replacing every **untested** mark
-with **measured** and the date, and amend §7 if it contradicts the
+Run §6, write the result into §2's table and amend §7 if it contradicts the
 recommendation. No code.
 
-It is a stage rather than a footnote because it is a **gate**: stage 3 does not
-begin until §2 has no **untested** mark left in the YouTube column. If the test
-shows `youtube-nocookie.com` writing `yt-remote-device-id` on load even behind
-a facade — which it cannot, since a facade makes no request, but which is
-exactly the kind of assumption this stage exists to stop trusting — the second
-choice in §7 takes over and stage 3 is a different stage.
+**Run, and the gate is open.** §2's YouTube column carries no **untested** mark:
+the frame is cookie-free on load and on play, the facade makes no request at
+all, and the first-party control proves both numbers are the platform's
+behaviour rather than the test bench's. §6.3 records the two claims that did not
+survive — YouTube's cookies on play, and TikTok's rank — and neither moves the
+first choice.
+
+It was a stage rather than a footnote because it was a **gate**: had the test
+shown `youtube-nocookie.com` writing to the device from behind a facade, the
+second choice in §7 would have taken over and stage 3 would be a different
+stage. It did not. What it did show is that a **bare** frame writes two
+`localStorage` keys before any interaction, which is the strongest argument in
+this document for the facade being required rather than courteous.
 
 ### Stage 3 — The switch-on
 
@@ -910,7 +1049,7 @@ change with the behaviour rather than be loosened to accommodate it.
 
 | Stage | Must pass                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Breaks on purpose                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1** | `check:dead` (the new branch must be referenced — a `carousel` renderer nothing reaches is exactly what knip holds at zero), `test:charter-contracts`, `copyParity.test.ts`, `check:copy-literals` (the carousel's copy goes through `i18n/copy/discoveries.ts`, never a literal in the component), the new weight ratchet, `check:orphan-docs`                                                                                                                                          | `DiscoveryReader` tests asserting that a non-`image`, non-`proverb` kind falls through to the photo fallback. That assertion is right until `carousel` is a branch and wrong after.                                                                                                                                                                                                                                   |
+| **1** | `check:dead`, `test:charter-contracts`, `copyParity.test.ts`, `check:copy-literals` (the carousel's copy goes through `i18n/copy/discoveries.ts`, never a literal in the component), the new `check:asset-weight`, `check:orphan-docs`                                                                                                                                                                                                                                                   | Predicted, and **did not happen**: no test on `recette` asserted that a non-`image`, non-`proverb` kind falls through to the photo fallback. The prediction was made against the codex branch's reader. Nothing had to be loosened, and the suite went green on the new branch without touching an existing assertion.                                                                                                |
 | **2** | —                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | —                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | **3** | `lint:req` (every new test annotated; REQ-128 owns the media-and-embeds decision, and the consent category needs a REQ drafted through `/ethniafrica-spec` before the tests that cite it are written), `copyParity.test.ts` (the `embeds` strings land in `fr` and `en` together — REQ-171 does not relax interface copy), `check:copy-literals`, `check:dead`, `.lighthouserc.gate.js` at `best-practices ≥ 0.95` on all four routes, the new `embed-facade-bundle-size` budget at 8 KB | **`src/__tests__/middleware.test.ts:767`**, `expect(frameSrc).toBe("frame-src 'self'")` — split into the two strict-equality tests in §4.1, never loosened to `toContain`. Any consent test enumerating exactly three categories: `src/lib/__tests__/consent.test.ts`, `src/hooks/__tests__/use-consent.test.tsx`, `src/components/consent/__tests__/ConsentBanner.test.tsx`, `src/app/__tests__/providers.test.tsx`. |
 | **4** | `lighthouseAxeCoverage.test.ts` (the new route covered in both configs), `.lighthouserc.gate.js` on five routes, `ShortsBlock` tests updated for the new destination                                                                                                                                                                                                                                                                                                                     | `ShortsBlock` tests asserting the shelf links to the section head.                                                                                                                                                                                                                                                                                                                                                    |
