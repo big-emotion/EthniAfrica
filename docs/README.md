@@ -75,6 +75,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Audience audit — 2026-09-12](audience/audit-2026-09-12.md)
 - [Audience audit — 2026-09-14](audience/audit-2026-09-14.md)
 - [Audience audit — 2026-09-17](audience/audit-2026-09-17.md)
+- [Audience audit — 2026-09-20](audience/audit-2026-09-20.md)
 - [Message audit — 2026-09-13](audience/message/message-audit-2026-09-13.md)
 
 ## Runbooks — procedures, and records of ones already run
