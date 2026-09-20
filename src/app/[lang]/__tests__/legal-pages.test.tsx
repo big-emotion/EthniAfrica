@@ -83,15 +83,16 @@ describe("footer destination pages", () => {
 
   // @req REQ-088
   it("declares every processor the site contacts about a reader, in both languages", async () => {
-    for (const [lang, heading] of [
-      ["fr", "Services et sous-traitants"],
-      ["en", "Services and processors"],
+    for (const [lang, heading, upstashRegion] of [
+      ["fr", "Services et sous-traitants", /Upstash, Inc\.[^.]*Francfort/],
+      ["en", "Services and processors", /Upstash, Inc\.[^.]*Frankfurt/],
     ] as const) {
       const { unmount } = render(
         await DataPolicyPage({ params: routeParams(lang) })
       );
       const processors = sectionText(heading);
-      expect(processors, lang).toMatch(/Upstash/);
+      // Measured in Upstash's console: the Redis instance is in eu-central-1.
+      expect(processors, lang).toMatch(upstashRegion);
       expect(processors, lang).toMatch(/Microsoft/);
       expect(processors, lang).not.toMatch(/Vercel/i);
       unmount();

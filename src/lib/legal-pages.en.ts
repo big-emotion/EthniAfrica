@@ -134,9 +134,9 @@ export const legalPagesEn: Readonly<
         paragraphs: [
           "Supabase provides authentication and the database; this software is self-hosted on servers operated on the publisher’s behalf, in the European Union, and is not entrusted to a third-party provider.",
           "Plausible Analytics, self-hosted on the application’s server, provides, after consent, audience statistics without advertising cookies. This instance is shared with the publisher’s site big-emotion.com; each site is measured separately.",
-          "Upstash, Inc. hosts the rate-limiting counter. For any request to the public API — including those the browser makes to display the site — or to the contact form, the sender’s IP address, or the fingerprint of their API key, serves as a key name in that counter for the length of the counting window: one minute for the API, one hour for the contact form.",
+          "Upstash, Inc. hosts the rate-limiting counter in Frankfurt (Germany). For any request to the public API — including those the browser makes to display the site — or to the contact form, the sender’s IP address, or the fingerprint of their API key, serves as a key name in that counter for the length of the counting window: one minute for the API, one hour for the contact form.",
           "Microsoft Corporation, through its Microsoft Graph service, sends the site’s emails: sign-in link, moderation notifications sent to contributors, and contact-form messages passed to the publisher. These emails pass through its servers together with the address of their recipient.",
-          "Upstash, Inc. and Microsoft Corporation are companies under United States law: a transfer of this data to the United States cannot be ruled out. The publisher’s own servers, by contrast, are located in the European Union.",
+          "Upstash, Inc. and Microsoft Corporation are companies under United States law: access from the United States, or a transfer of this data to that country, cannot be ruled out, even though Upstash’s counter is located in the European Union. The publisher’s own servers are also located there.",
           "No personal data is sold, rented or used for advertising profiling.",
         ],
       },

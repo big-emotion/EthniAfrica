@@ -107,9 +107,9 @@ export const legalPages = {
         paragraphs: [
           "Supabase assure l’authentification et la base de données ; ce logiciel est auto-hébergé sur des serveurs exploités pour le compte de l’éditeur, dans l’Union européenne, et non confié à un prestataire tiers.",
           "Plausible Analytics, auto-hébergé sur le serveur de l’application, fournit après consentement des statistiques de fréquentation sans cookie publicitaire. Cette instance est partagée avec le site big-emotion.com de l’éditeur ; chaque site y est mesuré séparément.",
-          "Upstash, Inc. héberge le compteur de la limitation de débit. Pour toute requête adressée à l’API publique — y compris celles que le navigateur émet pour afficher le site — ou au formulaire de contact, l’adresse IP de l’émetteur, ou l’empreinte de sa clé d’API, sert de nom de clé dans ce compteur le temps de la fenêtre de comptage : une minute pour l’API, une heure pour le formulaire de contact.",
+          "Upstash, Inc. héberge à Francfort (Allemagne) le compteur de la limitation de débit. Pour toute requête adressée à l’API publique — y compris celles que le navigateur émet pour afficher le site — ou au formulaire de contact, l’adresse IP de l’émetteur, ou l’empreinte de sa clé d’API, sert de nom de clé dans ce compteur le temps de la fenêtre de comptage : une minute pour l’API, une heure pour le formulaire de contact.",
           "Microsoft Corporation, par son service Microsoft Graph, envoie les courriels du site : lien de connexion, notifications de modération adressées aux contributeurs, et messages du formulaire de contact transmis à l’éditeur. Ces courriels transitent par ses serveurs avec l’adresse de leur destinataire.",
-          "Upstash, Inc. et Microsoft Corporation sont des sociétés de droit américain : un transfert de ces données vers les États-Unis n’est pas exclu. Les serveurs de l’éditeur, eux, sont situés dans l’Union européenne.",
+          "Upstash, Inc. et Microsoft Corporation sont des sociétés de droit américain : un accès depuis les États-Unis, ou un transfert de ces données vers ce pays, n’est pas exclu, même si le compteur d’Upstash est situé dans l’Union européenne. Les serveurs de l’éditeur, eux, y sont aussi situés.",
           "Aucune donnée personnelle n’est vendue, louée ou utilisée à des fins de profilage publicitaire.",
         ],
       },
