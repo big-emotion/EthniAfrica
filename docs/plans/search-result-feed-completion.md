@@ -483,20 +483,62 @@ build-storybook` bundles it without error, and a full local run of
   `exceed_egress_quota`, "the project owner must upgrade their plan or
   remove spend caps to restore service").
 - Phase 11's pixel-convergence pass (§3) — all forty boards reach the pixel
-  stage (§1c), none pass it yet. Revisited in an eighth session: `mande
-mobile-day`'s two full-page screenshots (reference and actual, both
-  attached from a real Playwright run) are visually indistinguishable at
-  normal viewing resolution despite a measured 1.7% pixel difference —
-  consistent with the sub-pixel font-rounding cause §1c's type-role
-  decision already named, not a new structural bug. All four of this
-  section's own open decisions are resolved (above), which is real
-  progress on the _causes_ this pass will need, but does not by itself
-  close any board under the 1% ceiling. Closing the remaining gap needs
-  either the boards regenerated at full clamp precision (the alternative
-  this session declined in favour of the documented override) or
-  per-board, per-pixel measurement this session's tooling could not do
-  reliably (§1b's bassa investigation: two scripted debug attempts hung on
-  environment/port contention before producing a measurement).
+  stage (§1c), none pass it yet, and this session isolated where the
+  remaining gap actually concentrates rather than continuing to chase it
+  page-wide. First confirmed the diff is **deterministic**: `mande
+mobile-day` measured at the exact same value (27617/1459976 px, 1.8916%)
+  on two consecutive runs with zero code changes between them, ruling out
+  render-timing noise as the explanation before reading anything into the
+  number.
+
+  Then read the harness's own `diff.png` attachment (playwright-report's
+  `data/` dir; not surfaced by default in the CLI failure message, only in
+  the trace) rather than guessing from the percentage alone — the first
+  time this session actually looked at a pixel diff visualization instead
+  of two side-by-side screenshots. It shows two visually distinct kinds of
+  difference, not one: thin, sparse red outlines on button and chip
+  borders throughout the page (consistent with §4's sub-pixel font/border
+  rounding, already documented as an accepted, tiny residual), and a
+  single block of dense, saturated red noise covering almost the entire
+  Mansa Musa illustration in the Images shelf — visually the dominant
+  contributor by area, on a page with otherwise sparse, thin differences.
+  `ImageBlock.tsx`'s `<Image>` already sets `unoptimized={reviewed}` and
+  matches the board's own `width: 300px; height: 375px; object-fit: cover`
+  exactly, so it is not the known "Next.js re-encodes the asset" failure
+  mode. Incomplete decode at screenshot time was the second candidate and
+  is **ruled out**, not just assumed away: `waitForFeedAssets`
+  (`e2e/search-feed-visual-proof.spec.ts`) already `await`s
+  `image.decode()` on every `<img>` under `Promise.allSettled` and throws
+  if any decode rejects or a `naturalWidth` stays zero, before the
+  function returns and before either screenshot is taken.
+
+  The `srcset` hypothesis was checked against the real elements, not
+  guessed: a temporary log in the harness (reverted) printed both
+  `<img>` elements' attributes after readiness. Neither carries `srcset`
+  or `sizes`; both report `natural` 1080×1350, `rendered` 300×375, DPR 1,
+  and the same file path on their respective origins. So the geometry and
+  source are identical from every angle this session could read. The one
+  attribute that differed was `decoding`: the app's `next/image` sets
+  `"async"` by default, the board's plain `<img>` carries none. Setting
+  `decoding="auto"` on the reviewed `ImageBlock` image (`ImageBlock.tsx`,
+  kept) moved the same case from **1.8916% to 1.7660%** — a real but
+  small effect (~1,250 px of ~27,600), so decode mode is a contributor,
+  not the dominant cause.
+
+  What that leaves, honestly: the dense noise over the illustration is
+  still mostly unexplained. Remaining candidates this session did not
+  test are the compositing path (the image sits inside an
+  `overflow-hidden rounded-afh-lg` article, and a rounded clip can move a
+  large raster onto a different resampling route than an unclipped one)
+  and Chromium's scaled-JPEG decode (1080→300 is a 3.6× reduction). Both
+  are checkable the same way — one temporary probe, one re-run, compare
+  the percentage — and neither was attempted here.
+
+  This reframes the remaining phase-11 gap for whoever continues it: not
+  "forty boards each need diffuse, page-wide pixel debugging," but "the
+  illustration blocks are the concentrated, measurable target, with the
+  border-edge noise elsewhere an accepted, documented residual, and
+  `srcset` and decode timing already eliminated."
 
 ## 2. The rule that decides every remaining fix
 
