@@ -25,6 +25,14 @@
 import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 
+import {
+  getCountryRoute,
+  getFamilyRoute,
+  getLanguageRoute,
+  getPatronymeRoute,
+  getPeopleRoute,
+} from "@/lib/routing";
+
 import { corpusIdExists, type CorpusKind } from "../lib/afrikCorpusIds";
 import {
   networkAcceptsFormat,
@@ -57,13 +65,21 @@ const CORPUS_KINDS = [
 
 /** `lieu` names no corpus table of its own — a toponym is always filed under
  * one of the other four (almost always `country`, sometimes `people`). This
- * is why `subjects[].kind` is never derived from `typologie`. */
-const ROUTE_SEGMENT_BY_KIND: Record<(typeof CORPUS_KINDS)[number], string> = {
-  people: "atlas/peuples",
-  country: "atlas/pays",
-  family: "atlas/familles",
-  language: "atlas/langues",
-  patronyme: "atlas/noms",
+ * is why `subjects[].kind` is never derived from `typologie`.
+ *
+ * Composed through `routing.ts`'s own helpers rather than a hardcoded segment
+ * map — `routeLiteralCharter.test.ts` refuses a written-out `/fr/atlas/...`
+ * anywhere but `routing.ts` itself, and a second segment table here would be
+ * exactly the kind of copy that gate exists to catch. */
+const ROUTE_FN_BY_KIND: Record<
+  (typeof CORPUS_KINDS)[number],
+  (id: string) => string
+> = {
+  people: (id) => getPeopleRoute("fr", id),
+  country: (id) => getCountryRoute("fr", id),
+  family: (id) => getFamilyRoute("fr", id),
+  language: (id) => getLanguageRoute("fr", id),
+  patronyme: (id) => getPatronymeRoute("fr", id),
 };
 
 export interface LedgerEntry {
@@ -196,16 +212,16 @@ export function validateEntry(
     errors.push("sitePath must be a French route starting with /fr/");
   } else if (Array.isArray(subjects)) {
     const matchesAny = subjects.some((subject) => {
-      const segment =
-        ROUTE_SEGMENT_BY_KIND[
-          subject?.kind as keyof typeof ROUTE_SEGMENT_BY_KIND
-        ];
-      return segment && record.sitePath === `/fr/${segment}/${subject.id}`;
+      const routeFor =
+        ROUTE_FN_BY_KIND[subject?.kind as keyof typeof ROUTE_FN_BY_KIND];
+      return (
+        routeFor &&
+        typeof subject?.id === "string" &&
+        record.sitePath === routeFor(subject.id)
+      );
     });
     if (subjects.length > 0 && !matchesAny) {
-      errors.push(
-        `sitePath "${record.sitePath}" matches no subject's route (expected /fr/<segment>/<id>)`
-      );
+      errors.push(`sitePath "${record.sitePath}" matches no subject's route`);
     }
   }
 
@@ -360,7 +376,7 @@ function validLingalaEntry(): LedgerEntry {
     subjects: [
       { kind: "language", id: "lin", label: { fr: "Lingala", en: "Lingala" } },
     ],
-    sitePath: "/fr/atlas/langues/lin",
+    sitePath: getLanguageRoute("fr", "lin"),
     publications: [
       {
         network: "youtube",
@@ -413,7 +429,7 @@ const FIXTURES: Fixture[] = [
   ],
   [
     "sitePath matching no subject",
-    { ...validLingalaEntry(), sitePath: "/fr/atlas/pays/SEN" },
+    { ...validLingalaEntry(), sitePath: getCountryRoute("fr", "SEN") },
     true,
   ],
   [
