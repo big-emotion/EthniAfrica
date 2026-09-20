@@ -39,33 +39,45 @@ par l'interface TikTok / Reels. Rien de lisible ne descend sous **y = 1620**.
 
 ## 1 bis. Un format par réseau
 
-**Chaque réseau reçoit le format qui y marche, et seulement lui.** Décision de
-l'opérateur du 16 septembre 2026, sur la mesure du 15. La règle vaut pour toute
-production à venir : un post ne part pas sur un réseau que sa ligne ne lui donne
-pas.
+**Les deux formats partent sur chaque réseau ; seule la plateforme peut en
+refuser un.** Décision de l'opérateur du **21 septembre 2026**, qui remplace
+celle du 16 septembre (« chaque réseau reçoit le format qui y marche, et
+seulement lui »). L'opérateur ne trie plus par réseau : une vidéo et un
+carrousel par sujet, publiés partout où la plateforme les accepte. La règle vaut
+pour toute production à venir : un post ne part pas sur un réseau que sa ligne ne
+lui donne pas.
 
-| Réseau | Reçoit | Ne reçoit pas | Mesure du 15 septembre 2026 |
+**Cette révision est une décision, pas une mesure.** La règle du 16 septembre se
+fondait sur la mesure du 15 ; la colonne de droite la garde telle quelle, comme le
+coût connu du choix, et non comme sa justification. La revue de phase 1 des 3 et
+4 octobre relit ces chiffres en premier.
+
+| Réseau | Reçoit | Ne reçoit pas | Mesure du 15 septembre 2026 (avant la révision) |
 | --- | --- | --- | --- |
-| TikTok | carrousel | reel | carrousels : Daloa 2 076 vues et 12 commentaires, Sénoufo 1 018, Krio 927 · vidéos : Côte d'Ivoire 785, Nzema 375, Peul 326 |
+| TikTok | reel et carrousel | — | carrousels : Daloa 2 076 vues et 12 commentaires, Sénoufo 1 018, Krio 927 · vidéos : Côte d'Ivoire 785, Nzema 375, Peul 326 |
 | Instagram | reel et carrousel | — | reels : Nzema 1 977 vues, Côte d'Ivoire 1 469 · carrousels : Daloa 241, Krio 179 — moins de portée, autant d'interactions par vue (Daloa 10,8 %, Côte d'Ivoire 11,7 %) |
-| Facebook | reel | carrousel | reel Côte d'Ivoire : 21 211 vues, 191 partages · carrousels : Daloa 13, Sénoufo 14, Krio 9 |
-| YouTube | reel (Shorts) | carrousel | un Short est une vidéo · Keïta–Coulibaly 1 388 vues, Nzema 1 176 en un jour |
-| LinkedIn | texte avec lien, depuis le profil personnel | reel, carrousel | profil personnel : 31 visites de lien en 28 jours · vidéos de la page : 0 à 2 impressions, 0 clic (7 et 14 septembre) |
+| Facebook | reel et carrousel | — | reel Côte d'Ivoire : 21 211 vues, 191 partages · carrousels : Daloa 13, Sénoufo 14, Krio 9 |
+| YouTube | reel (Shorts) et carrousel | — | un Short est une vidéo · Keïta–Coulibaly 1 388 vues, Nzema 1 176 en un jour · aucun carrousel mesuré |
+| LinkedIn | reel, carrousel, et le texte avec lien depuis le profil personnel | — | profil personnel : 31 visites de lien en 28 jours · vidéos de la page : 0 à 2 impressions, 0 clic (7 et 14 septembre) |
 | X (Twitter) | reel, et le texte avec lien | carrousel | aucune mesure — le compte a ouvert le 16 septembre 2026 avec zéro post. Contrainte de plateforme, pas mesure : **X n'a pas de carrousel**, un post multi-images y est une grille d'au plus quatre vignettes rognées, jamais un balayage. |
 
-- **Un sujet destiné aux six réseaux se produit dans les deux formats**, plus le
-  texte LinkedIn. Un sujet produit dans un seul format ne part que sur les
-  réseaux de sa colonne : un reel seul ne va pas sur TikTok, un carrousel seul ne
-  va ni sur Facebook, ni sur YouTube, ni sur X.
-- **La sortie LinkedIn 1080 × 1080 du §1 n'est plus rendue**, puisque LinkedIn
-  ne reçoit plus d'image. Retiré du moteur le 16 septembre 2026 ; §1 garde la
-  ligne pour mémoire du format, mais `ethni_carrousel2.py` ne l'appelle plus.
+- **Un sujet se produit dans les deux formats, plus le texte LinkedIn.** Un
+  carrousel n'existe que si le sujet défait un mythe attesté et sourcé
+  (`ethniafrica-mythe`) ; un sujet sans mythe part en vidéo seule, sur tous les
+  réseaux qui reçoivent le reel. Le carrousel ne va jamais sur X.
+- **LinkedIn reçoit le carrousel dans la même sortie 4:5 que les autres réseaux.**
+  La sortie LinkedIn 1080 × 1080 du §1 reste retirée du moteur (16 septembre
+  2026) : `ethni_carrousel2.py` ne l'appelle pas, et la réintroduire est un
+  chantier du moteur, pas de cette règle.
 - **Un lot qui passe part dans un dossier par format, nommé d'après les
-  réseaux qui le reçoivent** — `TikTok-Instagram/` pour le carrousel,
-  `Instagram-Facebook-YouTube-X/` pour le reel — et non plus dans un `images/`
-  à plat que l'opérateur devait trier réseau par réseau avant de publier. Le
-  nom se lit dans la colonne « Reçoit » ci-dessus, dans son propre ordre : une
-  ligne révisée change le rangement sans un second edit dans le moteur.
+  réseaux qui le reçoivent** — `TikTok-Instagram-Facebook-YouTube-LinkedIn/`
+  pour le carrousel, `TikTok-Instagram-Facebook-YouTube-LinkedIn-X/` pour le
+  reel — et non plus dans un `images/` à plat que l'opérateur devait trier
+  réseau par réseau avant de publier. Le nom se lit dans la colonne « Reçoit »
+  ci-dessus, dans son propre ordre : une ligne révisée change le rangement sans
+  un second edit dans le moteur. **Les lots déjà rangés sous l'ancien nom
+  (`TikTok-Instagram/`, `Instagram-Facebook-YouTube-X/`) ne sont pas déplacés** :
+  un rendu de remplacement s'écrit sous le nouveau nom, à côté.
 - **La table se révise, elle ne s'enfreint pas.** Une ligne ne change que sur une
   mesure de `ethniafrica-content-strategist`, écrite ici avec sa date. Une seule
   semaine de mesure la fonde : la revue de phase 1 des 3 et 4 octobre la relit

@@ -284,9 +284,11 @@ quand on ne l'ouvre pas.
   lien balisé. Le texte LinkedIn, sans média, s'écrit une fois par sujet : dans
   les légendes du reel quand il existe, sinon dans celles du carrousel.
 - **Chaque titre de réseau porte son format entre parenthèses** — `## TikTok
-(carrousel)`, `## Instagram (reel)`, `## LinkedIn (texte, sans média)`. Le
-  moteur range désormais les rendus par dossier-réseau (`TikTok-Instagram/`,
-  `Instagram-Facebook-YouTube-X/`), et c'est cette parenthèse qui dit à
+(carrousel)`, `## TikTok (reel)`, `## LinkedIn (texte, sans média)`. Depuis la
+  révision du 2026-09-21 de §1 bis, un réseau reçoit les deux formats (X n'a pas
+  de carrousel) : un sujet sans mythe n'a pas de carrousel, donc pas de titre
+  `(carrousel)`. Le moteur range les rendus par dossier-réseau, nommé d'après
+  la colonne « Reçoit » de §1 bis, et c'est cette parenthèse qui dit à
   l'opérateur, sujet par sujet, quel dossier ouvrir sans redescendre à
   `GABARITS-SOCIAL.md` §1 bis pour le retrouver.
 - **TikTok parle au « tu », en phrases courtes.** Une idée par phrase :
