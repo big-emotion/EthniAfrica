@@ -14,7 +14,6 @@ import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import { trackEvent } from "@/lib/analytics/trackEvent";
 import { SearchResultCard } from "@/components/search/SearchResultCard";
 import { SearchPeopleGroupCard } from "@/components/search/SearchPeopleGroupCard";
-import { NameAnswer } from "@/components/search/NameAnswer";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { SourcedHighlightBlock } from "@/components/search/SourcedHighlightBlock";
 import { SearchLensBar } from "@/components/search/SearchLensBar";
@@ -480,8 +479,9 @@ export function RecherchePageContent() {
 
   // The head is the count, always. It used to be the crowned answer's own
   // name when a pivot existed; DEC-057 retires that, and the name the reader
-  // typed is now answered by `NameAnswer` below, where every form it is known
-  // by is drawn at the same weight.
+  // typed is answered by the reviewed feed (SearchFeed) whenever there is one
+  // to search — this branch only draws once committedQuery and relation are
+  // both empty.
   //
   // The brand gradient stays scoped to the literal word "Recherche" (brand
   // charter §5.3): a result count is corpus content, not the brand lockup.
@@ -862,25 +862,18 @@ export function RecherchePageContent() {
             negative form silently admitted every status nobody had thought of:
             `failed` fell through it and drew the unknown-name answer — a
             confession about the corpus — on a request that never reached it. */}
+        {/* Reached only when both committedQuery and relation are empty — the
+            branch above this one (`if (committedQuery || relation)`) sends
+            every other case to the reviewed feed. `status === "loaded"` here
+            is therefore always a stale render from a relation filter cleared
+            without a fresh search (setRelation resets nothing else), never a
+            live answer; nameSubjects is always empty in it, since it depends
+            on the same committedQuery. The name-answering block this used to
+            hold (NameAnswer) was removed once that made it unreachable
+            (ETNI-1966) — restoring it here would answer a name nobody
+            searched. */}
         {(status === "idle" || (status === "loaded" && results.length > 0)) && (
           <div data-testid="search-results-layout" className="space-y-afh-5xl">
-            {/* The answer to the name, then the complete typed result set the
-                surviving clauses of REQ-124 still require. One column at every
-                width: the side rail asserted a hierarchy the corpus does not
-                support, and moving it below would have kept the assertion. */}
-            {/* Only where a subject was found. No subject alongside results
-                means the query matched no name exactly — « peul » against
-                `Fula (Fulbe / Peul)` — which is a question this block cannot
-                answer, not a name the corpus lacks. Passing the empty set
-                through drew the confession over 40 million people the page was
-                listing directly underneath. */}
-            {nameSubjects.length > 0 && !relation ? (
-              <NameAnswer
-                subjects={nameSubjects}
-                query={committedQuery}
-                language={language}
-              />
-            ) : null}
             {nameSubjects.length === 1 ? (
               <SourcedHighlightBlock
                 result={nameSubjects[0]}
@@ -921,13 +914,7 @@ export function RecherchePageContent() {
                 </p>
                 <NoResultsLeads leads={leads} language={language} />
               </div>
-            ) : (
-              <NameAnswer
-                subjects={[]}
-                query={committedQuery}
-                language={language}
-              />
-            )}
+            ) : null}
             <div className="flex flex-col items-center gap-afh-md text-afh-small">
               <Link
                 href={getLocalizedRoute(language, "peoples")}
