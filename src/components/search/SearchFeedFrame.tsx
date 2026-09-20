@@ -18,7 +18,7 @@ interface SearchFeedFrameProps {
 // @req REQ-180
 export function SearchFeedFrame({ children, language }: SearchFeedFrameProps) {
   return (
-    <PageLayout language={language} hideHeader hideTrail flushTop>
+    <PageLayout language={language} hideHeader hideTrail flushTop wide>
       <div className="bg-afh-bg pt-afh-6xl">
         <div
           data-feed-root=""

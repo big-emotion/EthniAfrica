@@ -267,6 +267,45 @@ describe("PageLayout — flushTop", () => {
   });
 });
 
+describe("PageLayout — wide", () => {
+  // The masthead, main and footer share one measure (`--afh-shell-max`), so a
+  // page that lifts the cap must lift it for all three or their verticals
+  // stop lining up. The variable is set once, on the root they all inherit from.
+  // @req REQ-043
+  it("lifts the shell cap on the root when wide is set", () => {
+    mockPathname = "/fr";
+    const { container } = render(
+      <PageLayout language="fr" hideHeader wide>
+        <p>corps</p>
+      </PageLayout>
+    );
+
+    expect(container.firstElementChild).toHaveClass("afh-shell-wide");
+  });
+
+  // @req REQ-043
+  it("keeps the capped shell by default", () => {
+    mockPathname = "/fr";
+    const { container } = render(
+      <PageLayout language="fr" hideHeader>
+        <p>corps</p>
+      </PageLayout>
+    );
+
+    expect(container.firstElementChild).not.toHaveClass("afh-shell-wide");
+  });
+
+  // @req REQ-043
+  it("defines the wide shell as an uncapped measure in the stylesheet", () => {
+    const shell = readFileSync(
+      resolve(process.cwd(), "src/styles/shell.css"),
+      "utf8"
+    );
+
+    expect(shell).toMatch(/\.afh-shell-wide\s*\{[^}]*--afh-shell-max:\s*none;/);
+  });
+});
+
 /**
  * A fiche brings its own title — the entity's name, on the parchment. Leaving
  * the section band on gave the three globe fiches two `h1`s, the first of them

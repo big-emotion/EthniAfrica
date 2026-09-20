@@ -35,7 +35,7 @@ export async function getSearchCompanionSelections(
   return {
     subjects: knownSubjects,
     targets,
-    shorts: shortsForTargets(targets, undefined, { includeRecent: true }),
+    shorts: shortsForTargets(targets),
     anecdotes: anecdotesForTargets(targets),
     proverbs: proverbsForTargets(targets),
     images: imagesForTargets(targets),

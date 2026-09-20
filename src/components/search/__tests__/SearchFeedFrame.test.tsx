@@ -27,17 +27,20 @@ vi.mock("@/components/layout/PageLayout", () => ({
     hideHeader,
     hideTrail,
     flushTop,
+    wide,
   }: {
     children: ReactNode;
     hideHeader?: boolean;
     hideTrail?: boolean;
     flushTop?: boolean;
+    wide?: boolean;
   }) => (
     <main
       className="afh-shell"
       data-hide-header={String(Boolean(hideHeader))}
       data-hide-trail={String(Boolean(hideTrail))}
       data-flush-top={String(Boolean(flushTop))}
+      data-wide={String(Boolean(wide))}
     >
       {children}
     </main>
@@ -60,6 +63,22 @@ describe("SearchFeedFrame", () => {
     expect(layout).toHaveAttribute("data-hide-header", "true");
     expect(layout).toHaveAttribute("data-hide-trail", "true");
     expect(layout).toHaveAttribute("data-flush-top", "true");
+  });
+
+  // The answer is the product, and on a wide screen it is not read inside a
+  // 1240 px column: the frame asks the shell to lift its cap.
+  // @req REQ-180
+  it("asks the page shell to run the full width of the screen", () => {
+    const { container } = render(
+      <SearchFeedFrame language="fr">
+        <p>Feed</p>
+      </SearchFeedFrame>
+    );
+
+    expect(container.querySelector("main")).toHaveAttribute(
+      "data-wide",
+      "true"
+    );
   });
 
   // The approved board was measured through two shell applications: the page

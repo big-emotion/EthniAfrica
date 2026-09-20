@@ -1,7 +1,34 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
-import { PlatesBlock } from "@/components/search/feed/PlatesBlock";
+import {
+  PlatesBlock,
+  type FeedPlateItem,
+} from "@/components/search/feed/PlatesBlock";
+
+const anecdote: FeedPlateItem = {
+  type: "anecdote",
+  id: "fact-frontiere",
+  contentLanguage: "fr",
+  headline: "Le même peuple change de nom à chaque frontière",
+  body: ["Premier paragraphe.", "Second paragraphe."],
+  tier: "referenced",
+  sources: [{ title: "Recueil", url: null, tier: "referenced" }],
+  match: { relation: "exact", entityType: "people", entityId: "PPL_FULA" },
+  illustration: { src: "/images/a.jpg", alt: "Gare", credit: "ASC Leiden" },
+};
+
+const proverb: FeedPlateItem = {
+  type: "proverb",
+  id: "proverb-langue",
+  contentLanguage: "fr",
+  text: "Le nom voyage.",
+  meaning: "Les mots changent avec les chemins.",
+  original: null,
+  origin: { status: "attested", note: "Attesté dans le recueil." },
+  sources: [{ title: "Recueil", url: null, tier: "referenced" }],
+  match: { relation: "linked-country", entityType: "country", entityId: "SEN" },
+};
 
 // @req REQ-180
 describe("PlatesBlock", () => {
@@ -75,7 +102,7 @@ describe("PlatesBlock", () => {
     expect(items[0]).toHaveClass(
       "w-[250px]",
       "snap-start",
-      "min-[1200px]:w-[232px]"
+      "min-[1200px]:w-[calc((100%-var(--afh-space-2xl))/2)]"
     );
     expect(screen.getByText("Même pays")).toHaveAttribute(
       "data-companion-relation",
@@ -167,5 +194,79 @@ describe("PlatesBlock", () => {
         exact: true,
       })
     ).not.toBeInTheDocument();
+  });
+
+  // On a desktop the tile is a preview, not the piece: the title, a few lines
+  // and the way to the rest. A phone keeps the whole text, as before.
+  // @req REQ-180
+  it("clamps an anecdote to five lines on desktop and leaves the phone as it was", () => {
+    render(<PlatesBlock items={[anecdote]} />);
+
+    const first = screen.getByText("Premier paragraphe.");
+    expect(first).toHaveClass("min-[1200px]:line-clamp-5");
+    expect(first).not.toHaveClass("hidden");
+    expect(screen.getByText("Second paragraphe.")).toHaveClass(
+      "min-[1200px]:hidden"
+    );
+    expect(screen.getByText("Second paragraphe.")).not.toHaveClass(
+      "line-clamp-5"
+    );
+  });
+
+  // @req REQ-180
+  it("raises the desktop image by a third without touching its phone ratio", () => {
+    render(<PlatesBlock items={[anecdote]} />);
+
+    const frame = screen.getByRole("img", { name: "Gare" }).parentElement;
+    expect(frame).toHaveClass(
+      "aspect-[8/5]",
+      "min-[1200px]:aspect-auto",
+      "min-[1200px]:h-[193px]"
+    );
+  });
+
+  // @req REQ-180
+  it("sends an anecdote's Voir plus to that anecdote in the dossier", () => {
+    render(<PlatesBlock items={[anecdote]} />);
+
+    const link = screen.getByRole("link", { name: "Voir plus" });
+    expect(link).toHaveAttribute(
+      "href",
+      "/fr/dossiers/anecdotes?a=fact-frontiere"
+    );
+    expect(link).toHaveClass("hidden", "min-[1200px]:inline-flex");
+  });
+
+  // The proverb bank is paginated by ten, so the fragment alone lands on the
+  // list's first page whatever the proverb; the entity filter keeps it there.
+  // @req REQ-180
+  it("sends a proverb's Voir plus to its card, narrowed to the entity it matched", () => {
+    render(<PlatesBlock items={[proverb]} />);
+
+    expect(screen.getByRole("link", { name: "Voir plus" })).toHaveAttribute(
+      "href",
+      "/fr/dossiers/proverbes?pays=SEN#proverb-langue"
+    );
+  });
+
+  // @req REQ-180
+  it("keeps the source tier on desktop while the source list moves to the piece", () => {
+    render(<PlatesBlock items={[anecdote]} />);
+
+    expect(screen.getByText("Recueil").closest("ul")).toHaveClass(
+      "min-[1200px]:hidden"
+    );
+    expect(
+      screen
+        .getAllByText("Référencée")
+        .some((node) => node.className.includes("min-[1200px]"))
+    ).toBe(true);
+  });
+
+  // @req REQ-178
+  it("leaves the reviewed board card untouched", () => {
+    render(<PlatesBlock reviewed items={[anecdote]} />);
+
+    expect(screen.queryByRole("link", { name: "Voir plus" })).toBeNull();
   });
 });

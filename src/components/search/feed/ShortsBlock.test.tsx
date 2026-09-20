@@ -168,6 +168,65 @@ describe("ShortsBlock", () => {
     ).toBeInTheDocument();
   });
 
+  // With nothing to show, the shelf says so in one line. A dashed tile that
+  // repeats the searched name as a question, a body and a call to action makes
+  // an absence read as a piece of content.
+  // @req REQ-180
+  it("says only that there is no short yet when the atlas holds none", () => {
+    render(
+      <ShortsBlock
+        items={[]}
+        allHref="/fr/decouvertes"
+        emptySlot={{
+          name: "Sénégal",
+          question: "D’où vient le nom « Sénégal » ?",
+          body: "Aucune source lue par l’atlas ne répond encore à cette question.",
+          action: "Proposer une source",
+        }}
+        contributionTarget={{
+          type: "search-query",
+          id: "senegal",
+          name: "Sénégal",
+          fieldPath: "shorts",
+          fieldLabel: "Les shorts",
+        }}
+      />
+    );
+
+    expect(screen.getByText("Pas encore de short")).toBeInTheDocument();
+    expect(screen.queryByText(/D’où vient le nom/)).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole("button", { name: "Proposer une source" })
+    ).not.toBeInTheDocument();
+    expect(screen.queryByRole("list")).not.toBeInTheDocument();
+  });
+
+  // The related-context note only qualifies shorts that are on the page.
+  // @req REQ-180
+  it("keeps the dashed slot beside shorts that are there", () => {
+    const item = FEED_CASES[0]!.production.companions.shorts.items[0]!;
+    render(
+      <ShortsBlock
+        items={[item]}
+        emptySlot={{
+          name: "Sénégal",
+          question: "D’où vient le nom « Sénégal » ?",
+          body: "Aucune source lue par l’atlas ne répond encore à cette question.",
+          action: "Proposer une source",
+        }}
+        contributionTarget={{
+          type: "search-query",
+          id: "senegal",
+          name: "Sénégal",
+          fieldPath: "shorts",
+          fieldLabel: "Les shorts",
+        }}
+      />
+    );
+
+    expect(screen.getByText("D’où vient le nom « Sénégal » ?")).toBeVisible();
+  });
+
   // @req REQ-180
   it.each(FEED_CASES)(
     "uses the canonical production question for $id fixture shorts",

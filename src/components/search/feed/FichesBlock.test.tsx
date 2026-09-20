@@ -60,11 +60,23 @@ describe("FichesBlock", () => {
     render(<FichesBlock language="en" items={[]} />);
 
     expect(
-      screen.getByRole("heading", { name: "In the atlas" })
+      screen.getByRole("heading", { name: "Discover" })
     ).toBeInTheDocument();
     expect(
       screen.getByText("Go deeper with each entry and all of its sources.")
     ).toBeInTheDocument();
+  });
+
+  // "Dans l’atlas" said where the entries were and not what to do with them;
+  // the heading now names the action the shelf offers.
+  // @req REQ-180
+  it("names the shelf by what the reader can do with it", () => {
+    render(<FichesBlock language="fr" items={[]} />);
+
+    expect(
+      screen.getByRole("heading", { name: "Découvrir" })
+    ).toBeInTheDocument();
+    expect(screen.queryByText("Dans l’atlas")).not.toBeInTheDocument();
   });
 
   // @req REQ-002

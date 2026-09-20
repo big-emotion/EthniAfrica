@@ -97,11 +97,9 @@ describe("search companions service", () => {
       targets,
       "fr"
     );
-    expect(shortsForTargets).toHaveBeenCalledWith(
-      targets,
-      undefined,
-      expect.objectContaining({ includeRecent: true })
-    );
+    // A short is offered only for a subject it is mapped to. Falling back to
+    // "the most recent short" put one unrelated video under every query.
+    expect(shortsForTargets).toHaveBeenCalledWith(targets);
     expect(anecdotesForTargets).toHaveBeenCalledWith(targets);
     expect(proverbsForTargets).toHaveBeenCalledWith(targets);
     expect(imagesForTargets).toHaveBeenCalledWith(targets);
@@ -148,11 +146,7 @@ describe("search companions service", () => {
     });
 
     expect(result.targets).toEqual([]);
-    expect(shortsForTargets).toHaveBeenCalledWith(
-      [],
-      undefined,
-      expect.objectContaining({ includeRecent: true })
-    );
+    expect(shortsForTargets).toHaveBeenCalledWith([]);
     expect(anecdotesForTargets).toHaveBeenCalledWith([]);
     expect(proverbsForTargets).toHaveBeenCalledWith([]);
     expect(imagesForTargets).toHaveBeenCalledWith([]);
