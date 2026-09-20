@@ -806,6 +806,28 @@ phrase épisode après épisode qu'on finit par l'associer au projet. D'un type 
 ils changent, parce qu'un renversement d'agent n'est juste que si son sujet est le bon.
 Ce qui ne varie jamais, tous types confondus, c'est la ligne de vision.
 
+### La typologie du sujet n'est pas la ligne de la table
+
+Ajouté le 2026-09-20, à l'écriture de `docs/plans/production-history-plan.md` :
+le carnet de production fixe cinq **typologies** — peuple, pays, patronyme,
+lieu, langue — qui nomment ce que le sujet *est*, l'entité du corpus que « D'où
+vient le nom {X} ? » interroge. Elles ne sont pas les lignes de la table
+ci-dessous, qui nomme plutôt le **mythe** que le lot défait, indépendamment de
+la typologie du sujet : une `langue` peut clore sur « cette langue n'a pas
+disparu » (la ligne « une langue, une famille ») ou sur « cette langue n'a pas
+été inventée » (la ligne d'invention coloniale), selon le mythe précis en jeu,
+jamais selon sa seule typologie.
+
+**Aucune ligne ne couvre encore un patronyme dont le mythe est simplement « d'où
+vient ce nom de famille », sans autre torsion.** Les deux lignes les plus
+proches — « un mot d'usage courant, qui reprend le nom d'une personne »
+(Rastafari) et « un nom partagé, repris par plusieurs peuples distincts » —
+supposent chacune un mythe plus spécifique qu'un simple patronyme n'a pas
+forcément. Le premier sujet patronyme de la nouvelle cadence pose donc la
+question à l'opérateur ou à `/ethniafrica-onomastique` avant d'écrire sa
+clôture : une ligne qui n'existe pas encore ne s'invente pas dans une carte,
+la règle ci-dessous vaut ici comme partout ailleurs dans cette table.
+
 ### La table par type de contenu
 
 **Une seule table, lue par l'ouverture comme par la clôture.** Les skills de la chaîne
