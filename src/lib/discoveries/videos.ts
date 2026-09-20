@@ -4,6 +4,7 @@ import type {
   DiscoveryVideoCredit,
 } from "@/lib/discoveries/catalog";
 import type { EmbedRef } from "@/lib/embeds/providers";
+import { DISCOVERY_SLUGS } from "@/lib/discoveries/slugs";
 import { discoveryVideosCopy } from "@/lib/i18n/copy/discoveryVideos";
 import {
   formatProductionNameQuestion,
@@ -54,12 +55,11 @@ export interface DiscoveryVideoRecord {
 // @req REQ-181
 export const DISCOVERY_VIDEOS: readonly DiscoveryVideoRecord[] = [
   {
-    id: "video-origine-du-nom-mande",
+    id: "video:origine-du-nom-mande",
     status: "published",
-    slug: {
-      fr: "origine-du-nom-mande",
-      en: "origin-of-the-name-mande",
-    },
+    // The slug table is the one source: routing translates an address from it
+    // and must not carry the record banks (see slugs.ts).
+    slug: DISCOVERY_SLUGS["video:origine-du-nom-mande"],
     name: {
       fr: discoveryVideosCopy.fr.mande.name,
       en: discoveryVideosCopy.en.mande.name,

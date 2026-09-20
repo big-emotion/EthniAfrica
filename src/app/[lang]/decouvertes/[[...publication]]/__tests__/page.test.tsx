@@ -17,6 +17,7 @@ import DiscoveriesPage, {
   generateMetadata,
   viewport,
 } from "@/app/[lang]/decouvertes/[[...publication]]/page";
+import { ConsentProvider } from "@/hooks/use-consent";
 import { eligiblePublications } from "@/lib/discoveries/catalog";
 import { getDiscoveryPublications } from "@/lib/discoveries/entries";
 
@@ -33,9 +34,11 @@ describe("Découvertes server entry", () => {
   // @req REQ-158
   it("renders the exact addressed publication on a cold request", async () => {
     render(
-      await DiscoveriesPage({
-        params: params(["guere-krahn-we"]),
-      })
+      <ConsentProvider>
+        {await DiscoveriesPage({
+          params: params(["guere-krahn-we"]),
+        })}
+      </ConsentProvider>
     );
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
       "Guéré"
@@ -45,7 +48,9 @@ describe("Découvertes server entry", () => {
   // @req REQ-158
   it("offers a real next permalink when JavaScript is unavailable", async () => {
     const html = renderToString(
-      await DiscoveriesPage({ params: params(["guere-krahn-we"]) })
+      <ConsentProvider>
+        {await DiscoveriesPage({ params: params(["guere-krahn-we"]) })}
+      </ConsentProvider>
     );
     const noscript = html.slice(html.indexOf("<noscript>"));
     expect(html).toContain("<noscript>");
@@ -110,7 +115,9 @@ describe("Découvertes immersive route", () => {
   // @req REQ-156
   it("renders the feed without the site masthead or footer", async () => {
     const { container } = render(
-      await DiscoveriesPage({ params: params(["guere-krahn-we"]) })
+      <ConsentProvider>
+        {await DiscoveriesPage({ params: params(["guere-krahn-we"]) })}
+      </ConsentProvider>
     );
     expect(screen.queryByTestId("site-header")).not.toBeInTheDocument();
     expect(container.querySelector("footer")).toBeNull();

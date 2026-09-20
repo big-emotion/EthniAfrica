@@ -38,6 +38,11 @@ export const DISCOVERY_SLUGS = {
     fr: "proverbe-shona-pouce",
     en: "shona-proverb-thumb",
   },
+  // Productions played in the deck, keyed `video:<slug>` for the same reason.
+  "video:origine-du-nom-mande": {
+    fr: "origine-du-nom-mande",
+    en: "origin-of-the-name-mande",
+  },
   // Generated images (DEC-053), keyed `image:<slug>` for the same reason.
   "image:basotho": { fr: "autonyme-basotho", en: "basotho-autonym" },
   "image:amazigh": { fr: "autonyme-imazighen", en: "imazighen-autonym" },

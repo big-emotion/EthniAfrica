@@ -4,6 +4,8 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 
 import { eligiblePublications } from "@/lib/discoveries/catalog";
+import { getDiscoveryPublications } from "@/lib/discoveries/entries";
+import { DISCOVERY_SLUGS } from "@/lib/discoveries/slugs";
 import {
   DISCOVERY_VIDEOS,
   videoPublications,
@@ -120,6 +122,28 @@ describe("the published video catalog", () => {
     expect(eligiblePublications(publications)).toHaveLength(
       publications.length
     );
+  });
+
+  // The reader plays what the deck lists, and the route resolves what the slug
+  // table holds. A record in neither is a facade no reader can reach, however
+  // green its own tests: the page answered 404 when this was missing.
+  // @req REQ-181
+  it("is in the Découvertes deck and addressed by the slug table", () => {
+    const deck = getDiscoveryPublications();
+    const slugs = DISCOVERY_SLUGS as Record<
+      string,
+      Record<"fr" | "en", string>
+    >;
+
+    for (const record of DISCOVERY_VIDEOS.filter(
+      (candidate) => candidate.status === "published"
+    )) {
+      expect(
+        deck.some((publication) => publication.id === record.id),
+        record.id
+      ).toBe(true);
+      expect(slugs[record.id], record.id).toEqual(record.slug);
+    }
   });
 
   // The first production shipped on the site: one record, to prove the
