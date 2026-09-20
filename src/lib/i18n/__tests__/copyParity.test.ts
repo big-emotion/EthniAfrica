@@ -40,6 +40,11 @@ const wordCount = (value: string): number =>
 const modules = Object.entries(COPY_MODULES);
 
 describe("the per-surface copy dictionaries (REQ-145)", () => {
+  // @req REQ-180
+  it("registers the search-feed presentation copy", () => {
+    expect(COPY_MODULES).toHaveProperty("searchFeed");
+  });
+
   // A key present in one locale and absent in the other is a label that
   // renders as `undefined` on one side of the site with a green build.
   // @req REQ-145

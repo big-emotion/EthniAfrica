@@ -7,10 +7,17 @@
 
 import type {
   SearchLead,
+  SearchNearName,
   SearchResult,
   SearchEntityType,
   ApiError,
 } from "@/types/afrik-frontend";
+import {
+  searchCompanionsDataSchema,
+  type SearchCompanionSubject,
+  type SearchCompanionsData,
+} from "@/api/v2/schemas/searchCompanions";
+import type { Language } from "@/types/shared";
 
 import {
   buildSearchParams,
@@ -18,9 +25,14 @@ import {
   mapSearchCounts,
   mapSearchEnvelope,
   mapSearchLeads,
+  mapSearchNearNames,
   type SearchLensCounts,
   type SearchQueryOptions,
 } from "@/lib/search/searchEnvelope";
+import {
+  mapSearchFeedPresentation,
+  type SearchFeedPresentation,
+} from "@/lib/search/searchFeedPresentation";
 import { logger } from "@/lib/api/logger";
 
 // ==========================================
@@ -79,6 +91,21 @@ export interface SearchOptions extends SearchQueryOptions {
    * therefore no longer re-applied here.
    */
   type?: SearchEntityType;
+  /** Cancels a committed search when a newer query supersedes it. */
+  signal?: AbortSignal;
+}
+
+function fetchWithSignal(url: string, signal?: AbortSignal): Promise<Response> {
+  return signal ? fetch(url, { signal }) : fetch(url);
+}
+
+function isAbortError(error: unknown): boolean {
+  return (
+    typeof error === "object" &&
+    error !== null &&
+    "name" in error &&
+    error.name === "AbortError"
+  );
 }
 
 // @req REQ-108
@@ -95,8 +122,9 @@ export async function search(
   options: SearchOptions = {}
 ): Promise<SearchResult[]> {
   try {
-    const response = await fetch(
-      `${API_BASE}/search?${buildSearchParams(query, options)}`
+    const response = await fetchWithSignal(
+      `${API_BASE}/search?${buildSearchParams(query, options)}`,
+      options.signal
     );
 
     if (!response.ok) {
@@ -111,6 +139,7 @@ export async function search(
       ? results.filter((result) => result.type === options.type)
       : results;
   } catch (error) {
+    if (isAbortError(error)) throw error;
     logger.error("[search] Exception", error);
     return [];
   }
@@ -120,8 +149,12 @@ export interface SearchWithLeads {
   results: SearchResult[];
   /** Near-miss leads (REQ-125) — non-empty only when the API's own total is 0. */
   leads: SearchLead[];
+  /** Similar names qualified by the API for a non-empty search (REQ-180). */
+  nearNames: SearchNearName[];
   /** Per-type match counts (REQ-124) for the named-lens chips. */
   counts: SearchLensCounts;
+  /** Reviewed, serializable feed copy when the response provides one. */
+  presentation?: SearchFeedPresentation;
   /**
    * Whether the API answered at all.
    *
@@ -137,19 +170,20 @@ export interface SearchWithLeads {
 // @req REQ-125
 /**
  * Same single browser path as `search` (ETNI-1415, AC2), additionally carrying
- * the near-miss leads a zero-result search returns. A distinct function rather
- * than an added parameter, so every existing `search()` caller keeps its
- * `SearchResult[]` return type untouched; it takes the same `SearchOptions`, so
- * a surface that needs both leads and the server-side scopes (the /recherche
- * page) reaches the corpus through here instead of fetching the endpoint itself.
+ * zero-result leads and the qualified similar names of a non-empty search. A
+ * distinct function rather than an added parameter keeps every existing
+ * `search()` caller's `SearchResult[]` return type untouched; it takes the same
+ * `SearchOptions`, so a surface that needs the projections and server-side
+ * scopes reaches the corpus here instead of fetching the endpoint itself.
  */
 export async function searchWithLeads(
   query: string,
   options: SearchOptions = {}
 ): Promise<SearchWithLeads> {
   try {
-    const response = await fetch(
-      `${API_BASE}/search?${buildSearchParams(query, options)}`
+    const response = await fetchWithSignal(
+      `${API_BASE}/search?${buildSearchParams(query, options)}`,
+      options.signal
     );
 
     if (!response.ok) {
@@ -158,6 +192,7 @@ export async function searchWithLeads(
       return {
         results: [],
         leads: [],
+        nearNames: [],
         counts: { ...EMPTY_SEARCH_LENS_COUNTS },
         answered: false,
       };
@@ -166,23 +201,58 @@ export async function searchWithLeads(
     const envelope = await response.json();
     const results = mapSearchEnvelope(envelope);
     const leads = mapSearchLeads(envelope);
+    const nearNames = mapSearchNearNames(envelope);
     const counts = mapSearchCounts(envelope);
+    const presentation = mapSearchFeedPresentation(envelope);
 
     return {
       results: options.type
         ? results.filter((result) => result.type === options.type)
         : results,
       leads,
+      nearNames,
       counts,
+      presentation,
       answered: true,
     };
   } catch (error) {
+    if (isAbortError(error)) throw error;
     logger.error("[searchWithLeads] Exception", error);
     return {
       results: [],
       leads: [],
+      nearNames: [],
       counts: { ...EMPTY_SEARCH_LENS_COUNTS },
       answered: false,
     };
   }
+}
+
+// @req REQ-180
+export async function loadSearchCompanions(
+  subjects: readonly SearchCompanionSubject[],
+  language: Language,
+  signal?: AbortSignal
+): Promise<SearchCompanionsData> {
+  const params = new URLSearchParams();
+  if (subjects.length > 0) {
+    params.set(
+      "subjects",
+      subjects
+        .map(({ entityType, entityId }) => `${entityType}:${entityId}`)
+        .join(",")
+    );
+  }
+  params.set("lang", language);
+
+  const response = await fetchWithSignal(
+    `${API_BASE}/search/companions?${params}`,
+    signal
+  );
+  if (!response.ok) {
+    throw await handleFetchError(response, "load search companions");
+  }
+
+  const envelope = (await response.json()) as { data?: unknown };
+  return searchCompanionsDataSchema.parse(envelope.data);
 }

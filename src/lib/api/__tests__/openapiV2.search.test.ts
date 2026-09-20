@@ -145,6 +145,18 @@ describe("OpenAPI v2 unified search contract", () => {
     expect(results?.description).toMatch(/ties broken/i);
   });
 
+  // @req REQ-180
+  it("documents qualified near names separately from zero-result leads", () => {
+    const data = schemas.SearchResponseData;
+    const nearNames = data.properties?.nearNames;
+
+    expect(nearNames?.type).toBe("array");
+    expect(schemaName(nearNames?.items?.$ref ?? "")).toBe("SearchNearNameV2");
+    expect(data.required).toContain("nearNames");
+    expect(nearNames?.description).toMatch(/non-empty search/i);
+    expect(nearNames?.description).toMatch(/similarity/i);
+  });
+
   // @req REQ-002
   it("enumerates every kind the merge can emit", () => {
     const kind = schemas.SearchHitV2?.properties?.kind;
@@ -172,6 +184,70 @@ describe("OpenAPI v2 unified search contract", () => {
         maximum: 1,
       });
       expect(schemas[name]?.required, name).toContain("normalizedScore");
+    }
+  });
+
+  // @req REQ-180
+  it("documents the structured naming projection and complete evidence", () => {
+    const projection = schemas.SearchNamingProjectionV2;
+    const presentation = schemas.SearchNamingPresentationV2;
+    const form = schemas.SearchNamingPresentationFormV2;
+    const evidence = schemas.SearchNamingEvidenceV2;
+    const assertion = schemas.SearchNamingEvidenceAssertionV2;
+
+    expect(projection?.required).toEqual(["forms", "eras", "presentation"]);
+    expect(projection?.properties?.presentation?.$ref).toBe(
+      "#/components/schemas/SearchNamingPresentationV2"
+    );
+    expect(presentation?.required).toEqual([
+      "forms",
+      "eras",
+      "disagreements",
+      "evidence",
+    ]);
+    expect(form?.required).toEqual([
+      "form",
+      "selfGiven",
+      "attestations",
+      "evidence",
+    ]);
+    expect(form?.properties?.selfGiven?.type).toEqual(["boolean", "null"]);
+    expect(form?.properties?.origin?.$ref).toBe(
+      "#/components/schemas/SearchNamingOriginFactV2"
+    );
+    expect(form?.properties?.evidence?.items?.$ref).toBe(
+      "#/components/schemas/SearchNamingEvidenceV2"
+    );
+
+    expect(evidence?.required).toEqual(["assertion", "sources", "standing"]);
+    expect(assertion?.required).toEqual([
+      "statement",
+      "sourceCount",
+      "lastHumanAuditAt",
+    ]);
+    expect(assertion?.properties?.confidenceScore).toMatchObject({
+      type: "number",
+      minimum: 0,
+      maximum: 1,
+    });
+    expect(assertion?.required).not.toContain("confidenceScore");
+  });
+
+  // @req REQ-180
+  it("attaches naming optionally to all five naming search classes", () => {
+    const carriers = [
+      "PeopleV2",
+      "CountryV2",
+      "LanguageFamilyV2",
+      "PatronymeSearchResultV2",
+      "LanguageSearchResultV2",
+    ];
+
+    for (const name of carriers) {
+      expect(schemas[name]?.properties?.naming, name).toEqual({
+        $ref: "#/components/schemas/SearchNamingProjectionV2",
+      });
+      expect(schemas[name]?.required ?? [], name).not.toContain("naming");
     }
   });
 

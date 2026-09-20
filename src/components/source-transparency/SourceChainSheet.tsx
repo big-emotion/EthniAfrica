@@ -19,52 +19,18 @@ import { sourceStandingLabel } from "@/lib/glossaire/vocabularies";
 import type { Language } from "@/types/shared";
 import { toSourceTier, type SourceTier } from "@/types/sources";
 import { sourceTransparencyCopy } from "@/lib/i18n/copy/sourceTransparency";
+import type {
+  SearchEvidenceAssertion,
+  SearchEvidenceSource,
+} from "@/lib/search/evidence";
 
 /* -------------------------------------------------------------------------- */
 /*  Types                                                                      */
 /* -------------------------------------------------------------------------- */
 
-export type Source = {
-  id: string;
-  title: string;
-  author?: string;
-  year?: number;
-  page?: string;
-  url?: string;
-  /**
-   * The source's standing.
-   *
-   * `needs_review` is not a fourth tier — it is a source nobody has classified
-   * yet, and the corpus keeps it apart from `unverified` because "not yet
-   * classified" is not a judgement anyone made. The sheet used to fold it in
-   * with everything it did not recognise.
-   */
-  tier: SourceTier | "needs_review";
-  /**
-   * Set only on an oral narrative: `true` once its review is approved. A
-   * reviewed narrative keeps its `unverified` tier yet is read with the
-   * confirmed sources (DEC-055); an unreviewed one stays with the others.
-   */
-  reviewedNarrative?: boolean;
-  /** Its place in the citing fiche's bibliography, when the fiche has one. */
-  bibliographyNumber?: number;
-  /** ISO date string YYYY-MM-DD when the nightly health-check flagged the link. */
-  brokenAt?: string | null;
-  /** Formatted citation string, used as the FlagTarget snapshotQuote (AC6). */
-  citation?: string;
-};
+export type Source = SearchEvidenceSource;
 
-export type Assertion = {
-  statement: string;
-  position?: string;
-  confidenceScore: number;
-  sourceCount: number;
-  lastHumanAuditAt: string | null;
-  /** Stable assertion id. Required to enable the FlagTarget wiring below. */
-  id?: string;
-  /** JSON path to the flagged field, e.g. "demographics.population". */
-  fieldPath?: string;
-};
+export type Assertion = SearchEvidenceAssertion;
 
 export type Revision = {
   url: string;
@@ -577,14 +543,16 @@ const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
           data-testid="section-confidence"
           className="rounded-md bg-[var(--afh-muted,var(--country-muted,#f9fafb))] p-3"
         >
-          <div className="flex items-baseline justify-between">
-            <span className="text-afh-eyebrow font-semibold uppercase tracking-wide text-[var(--afh-fg-muted,var(--country-fg-muted,#6b7280))]">
-              {copy.confidence}
-            </span>
-            <span className="text-afh-h3 font-semibold text-[var(--afh-fg,var(--country-fg,#111827))]">
-              {Math.round(assertion.confidenceScore * 100)}%
-            </span>
-          </div>
+          {assertion.confidenceScore !== undefined ? (
+            <div className="flex items-baseline justify-between">
+              <span className="text-afh-eyebrow font-semibold uppercase tracking-wide text-[var(--afh-fg-muted,var(--country-fg-muted,#6b7280))]">
+                {copy.confidence}
+              </span>
+              <span className="text-afh-h3 font-semibold text-[var(--afh-fg,var(--country-fg,#111827))]">
+                {Math.round(assertion.confidenceScore * 100)}%
+              </span>
+            </div>
+          ) : null}
           <p className="mt-1 text-afh-caption text-[var(--afh-fg-muted,var(--country-fg-muted,#6b7280))]">
             {copy.confidenceSummary(
               assertion.sourceCount,

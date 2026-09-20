@@ -166,6 +166,12 @@
   --afh-muted: var(--afh-color-bg);
   --afh-fg-muted: var(--afh-color-text-soft);
 
+  /* Media metadata stays readable over every poster without changing with the
+     page theme. The translucent ground preserves the image while the night
+     ink keeps the duration and play glyph at AA contrast. */
+  --afh-media-badge-bg: rgba(18, 14, 10, 0.72);
+  --afh-media-badge-ink: var(--afh-night-ink);
+
   /* Accents (kept from V1 country palette) */
   --afh-earth: var(--afh-color-earth);
   --afh-terracotta: var(--afh-color-terracotta);

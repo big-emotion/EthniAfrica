@@ -80,6 +80,13 @@ const liveRoutesFor = (locale: Language): string[] => [
   getLocalizedRoute(locale, "names"),
   getLocalizedRoute(locale, "peoples"),
   getLocalizedRoute(locale, "search"),
+  // The bare search route above audits the empty state only. These two cover
+  // the result feed's other two states this gate had never reached: an exact
+  // match against real corpus data (`Mandé`, FLG_MANDE) and a name the corpus
+  // holds nothing for, which draws the unknown-name confession rather than an
+  // empty results list (ETNI-1966, search-result-feed-completion.md §5.3).
+  `${getLocalizedRoute(locale, "search")}?q=mand%C3%A9`,
+  `${getLocalizedRoute(locale, "search")}?q=kossiwa`,
   getStaticPageRoute(locale, "legalNotice"),
   `${getStaticPageRoute(locale, "admin")}/connexion`,
   getFamilyRoute(locale, "FLG_BANTU"),

@@ -3,14 +3,28 @@
 Settled 2026-09-18, on the reorientation recorded in
 `docs/editorial/essais/dou-viennent-les-noms-2026-09-17.md`.
 
-**The reviewed rendering is the reference.** Fourteen artboards, approved by the
-operator, at both review widths and in both themes:
+Updated 2026-09-19 by REQ-180 and DEC-058 after the result was recomposed as a
+feed.
 
-<https://claude.ai/artifact/CVh7QHVzJUJ5PSUamn5rwu>
+**The reviewed rendering is local and executable.** The forty approved boards
+live in `docs/design/mockups/search-feed/`: ten cases, mobile and desktop, day
+and night. The external canvas is provenance for the review, not an
+implementation dependency.
 
-As with `docs/design/mockups/`, **the mockup — not the code — is the reference
-when the two disagree.** A result page that departs from it is the page that is
-wrong, until this file says otherwise.
+Three authorities govern different concerns and never substitute for one
+another:
+
+- **The forty boards govern visual rendering**: type, colour, spacing, density,
+  media, theme and reference-width geometry.
+- **The generated manifest and this charter govern structure and behaviour**:
+  block identity, conditions, state, zone and expected placement.
+- **Typed application projections and API schemas govern production data**:
+  illustrative board copy never becomes a runtime contract.
+
+When code and a board disagree visually at a reference width, the board wins.
+When a board's markup disagrees with the manifest, the manifest wins and the
+board is regenerated without an intentional pixel change. An intentional
+visual change requires operator review and new baselines.
 
 ---
 
@@ -23,15 +37,20 @@ links to fiches; it answers the one question the atlas now exists to answer:
 The detailed fiches of every entity class stay where they are. They stop being
 the default destination.
 
-## 2. The five states, and why each exists
+## 2. The ten reference cases, and why each exists
 
-| State                            | Reference artboard | What it settles                                                  |
-| -------------------------------- | ------------------ | ---------------------------------------------------------------- |
-| A name given from outside        | `Mande`            | The searched form is not the one the peoples use                 |
-| Many outside names, none its own | `Peul`             | Including one the corpus declares pejorative                     |
-| Almost nothing known             | `Ekpeye`           | One name, no origin, no date — declared, not hidden              |
-| Misspelt, then unknown           | `Introuvable`      | A typo reaches the right page; an unknown name gets an admission |
-| One name, several peoples        | `Bassa`            | Three peoples, three language families, no established link      |
+| State                            | Reference artboard | What it settles                                                   |
+| -------------------------------- | ------------------ | ----------------------------------------------------------------- |
+| A name given from outside        | `Mande`            | The searched form is not the one the peoples use                  |
+| Many outside names, none its own | `Peul`             | Including one the corpus declares pejorative                      |
+| Almost nothing known             | `Ekpeye`           | One name, no origin, no date — declared, not hidden               |
+| Misspelt, then unknown           | `Introuvable`      | A typo reaches the right page; an unknown name gets an admission  |
+| One name, several peoples        | `Bassa`            | Three peoples, three language families, no established link       |
+| An ordinary unqualified case     | `Fang`             | Bare forms stay bare; the page invents no qualifier               |
+| A country                        | `Nigeria`          | Historical names and dated eras come from the country shape       |
+| A language                       | `Lingala`          | Conflicting sources remain visible and are not resolved by the UI |
+| A family name                    | `Traore`           | Patronyme storage projects onto the same reader grammar           |
+| A genuinely unknown name         | `Inconnu`          | Admission, conviction, contribution and onward paths              |
 
 ## 3. The rules the page obeys
 
@@ -67,21 +86,22 @@ each is followed by what the atlas does hold and by an invitation to correct it.
 **The page admits when it does not know a name.** « Nous ne connaissons pas ce
 nom. Ce n'est pas une réponse : c'est un aveu. »
 
-## 3 bis. The block grammar — which block appears, and when
+## 3 bis. The rhetorical obligations
 
-Written 2026-09-18, on the finding that the fourteen artboards **do not yet share
-a grammar.** Each was drawn for its own case and none was compared with the
-others: `Mande` carries « À travers le temps » and `Bassa` does not; `Bassa`
-carries « Lequel cherchez-vous ? » and « Pourquoi le même nom ? », which no other
-board has; `Ekpeye` folds its silence about dates into its three declared
-silences while `Mande` spends a whole section on the same silence.
+Written 2026-09-18, after the initial fourteen artboards were found not to share
+a grammar. Each had been drawn for its own case and none compared with the
+others: `Mande` carried « À travers le temps » and `Bassa` did not; `Bassa`
+carried « Lequel cherchez-vous ? » and « Pourquoi le même nom ? », which no other
+board had; `Ekpeye` folded its silence about dates into its three declared
+silences while `Mande` spent a whole section on the same silence.
 
 The artboards stay the reference **for the rendering** — type, density, inks, the
 two-column desktop split. They never settled the sequence. This section does.
 
-The page reads in **three movements.** The first and the third always appear. The
-second is the only one that varies, and each of its blocks has a condition
-readable in the corpus.
+The page still reads in three rhetorical movements: answer, what the atlas
+holds, and what it owes. They describe what the reader must understand; they no
+longer define one rigid first-screen composition or one flat DOM order. The
+executable block and zone contract is in §3 ter.
 
 ### I. The answer — always, in this order
 
@@ -122,7 +142,7 @@ appears only when almost nothing else does, and it then hands the reader the few
 verified facts — family, region, country, source count — so a sparse page stays a
 page. On `Mande` it would duplicate "Aller plus loin".
 
-### III. What the atlas owes — always, in this order
+### III. What the atlas owes — as one closing, in this order
 
 | Block                       | What it carries                                                       |
 | --------------------------- | --------------------------------------------------------------------- |
@@ -133,11 +153,12 @@ page. On `Mande` it would duplicate "Aller plus loin".
 
 Three things the artboards did not do, and which become obligatory.
 
-**The silences are gathered in one place, and there is always at least one.**
+**The silences are gathered in one place when there is a concrete silence.**
 `Ekpeye` declares three; `Mande` and `Peul` have one — the dates — loose in a
 section of its own; `Bassa` has one — why the name is shared — buried inside
 « Pourquoi le même nom ? ». Scattered, they read as holes; gathered, they read as
-what they are, a declared state of knowledge.
+what they are, a declared state of knowledge. An unknown query does not invent
+a dated-attestation silence about an entity the atlas does not hold.
 
 **The conviction closes every page, not only `Bassa`.** « Un nom partagé n'est pas
 une parenté » is the model: one sentence saying what the reader should keep
@@ -173,10 +194,57 @@ by substitution rather than rewritten.
 hold 720 px at 1280; their bands are centred on the same column rather than run
 to the 900 px the rich boards use.
 
-### What the artboards became, 2026-09-18
+## 3 ter. The executable feed grammar
 
-**All twenty conform**: five cases by four variants — mobile and desktop, day and
-night. What changed, and what the pass cost:
+The top-level block vocabulary, in canonical mobile order, is:
+
+```text
+lenses · verdict · appellations · shorts · origins · peoples · shared-name ·
+tiles · atlas-holds · plates · quiz · images · problem · near-name · fiches ·
+owed · further
+```
+
+`owed` is one top-level block because it is one visual and rhetorical closing.
+Its independently testable parts are, in order:
+
+```text
+silences · conviction · invitation
+```
+
+The page and the boards expose these identities through `data-feed-block` and
+`data-feed-part`. Bassa uses `shared-name`; `problem` is reserved for a recorded
+naming problem or disagreement.
+
+The exceptional states are explicit:
+
+- an exact or widened subject closes with `owed`, including `silences` only
+  when a concrete silence can be derived;
+- a typo with useful leads closes with `further` only;
+- a genuinely unknown query closes with `owed` containing `conviction` and
+  `invitation`, then `further`;
+- `lenses` appears after an answered query when at least one filterable content
+  group exists;
+- `shorts` appears for every answered query, and an empty source slot is
+  content rather than an empty block.
+
+Below 1200 px, intermediate blocks occupy the `primary` zone in canonical
+order. At 1200 px and above, rich boards may split them between `primary` and
+`secondary`; order is asserted within each zone, never by flattening the two
+columns. Desktop-thin boards remain one centred `primary` column. `verdict` and
+the opening blocks occupy `first`; `owed` and `further` occupy `closing` after
+all intermediate zones.
+
+The checked-in generated manifest records the case, variant, query, result
+state, ordered block identities and zones, `owed` parts, board dimensions and
+the first-poster rectangle. The case source and generator author it; the JSON
+is generated output and is never edited by hand.
+
+### What the first correction established, 2026-09-18
+
+**All twenty v1 boards conformed**: five cases by four variants — mobile and
+desktop, day and night. They are now superseded visually by the forty v2 feed
+boards, while the rhetorical corrections below remain binding. What changed,
+and what the first pass cost:
 
 | Board         | What changes                                                              |
 | ------------- | ------------------------------------------------------------------------- |

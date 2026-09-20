@@ -1,0 +1,2425 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "case": "mande",
+      "variant": "mobile-day",
+      "file": "Mande.dc.html",
+      "query": "mandé",
+      "resultState": "exact",
+      "width": 430,
+      "theme": "day",
+      "height": 3730,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "tiles",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "images",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 24,
+        "y": 539,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "peul",
+      "variant": "mobile-day",
+      "file": "Peul.dc.html",
+      "query": "peul",
+      "resultState": "exact",
+      "width": 430,
+      "theme": "day",
+      "height": 3040,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "problem",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 24,
+        "y": 502,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "fang",
+      "variant": "mobile-day",
+      "file": "Fang.dc.html",
+      "query": "pahouin",
+      "resultState": "exact",
+      "width": 430,
+      "theme": "day",
+      "height": 3340,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "problem",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 24,
+        "y": 539,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "bassa",
+      "variant": "mobile-day",
+      "file": "Bassa.dc.html",
+      "query": "bassa",
+      "resultState": "exact",
+      "width": 430,
+      "theme": "day",
+      "height": 3550,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "peoples",
+          "zone": "primary"
+        },
+        {
+          "id": "shared-name",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "near-name",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 166,
+        "y": 521,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "ekpeye",
+      "variant": "mobile-day",
+      "file": "Ekpeye.dc.html",
+      "query": "ekpeye",
+      "resultState": "widened",
+      "width": 430,
+      "theme": "day",
+      "height": 2750,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "atlas-holds",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 166,
+        "y": 567,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "nigeria",
+      "variant": "mobile-day",
+      "file": "Nigeria.dc.html",
+      "query": "nigeria",
+      "resultState": "exact",
+      "width": 430,
+      "theme": "day",
+      "height": 3480,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "tiles",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "problem",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 24,
+        "y": 539,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "lingala",
+      "variant": "mobile-day",
+      "file": "Lingala.dc.html",
+      "query": "lingala",
+      "resultState": "exact",
+      "width": 430,
+      "theme": "day",
+      "height": 3230,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "problem",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 24,
+        "y": 551,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "traore",
+      "variant": "mobile-day",
+      "file": "Traore.dc.html",
+      "query": "traoré",
+      "resultState": "exact",
+      "width": 430,
+      "theme": "day",
+      "height": 3460,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "tiles",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "problem",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 24,
+        "y": 563,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "introuvable",
+      "variant": "mobile-day",
+      "file": "Introuvable.dc.html",
+      "query": "mandinké",
+      "resultState": "typo",
+      "width": 430,
+      "theme": "day",
+      "height": 1690,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "further",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [],
+      "firstPoster": {
+        "x": 24,
+        "y": 551,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "inconnu",
+      "variant": "mobile-day",
+      "file": "Inconnu.dc.html",
+      "query": "kossiwa",
+      "resultState": "unknown",
+      "width": 430,
+      "theme": "day",
+      "height": 1250,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        },
+        {
+          "id": "further",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 166,
+        "y": 436,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "mande",
+      "variant": "mobile-night",
+      "file": "MandeNuit.dc.html",
+      "query": "mandé",
+      "resultState": "exact",
+      "width": 430,
+      "theme": "night",
+      "height": 3730,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "tiles",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "images",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 24,
+        "y": 539,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "peul",
+      "variant": "mobile-night",
+      "file": "PeulNuit.dc.html",
+      "query": "peul",
+      "resultState": "exact",
+      "width": 430,
+      "theme": "night",
+      "height": 3040,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "problem",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 24,
+        "y": 502,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "fang",
+      "variant": "mobile-night",
+      "file": "FangNuit.dc.html",
+      "query": "pahouin",
+      "resultState": "exact",
+      "width": 430,
+      "theme": "night",
+      "height": 3340,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "problem",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 24,
+        "y": 539,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "bassa",
+      "variant": "mobile-night",
+      "file": "BassaNuit.dc.html",
+      "query": "bassa",
+      "resultState": "exact",
+      "width": 430,
+      "theme": "night",
+      "height": 3550,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "peoples",
+          "zone": "primary"
+        },
+        {
+          "id": "shared-name",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "near-name",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 166,
+        "y": 521,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "ekpeye",
+      "variant": "mobile-night",
+      "file": "EkpeyeNuit.dc.html",
+      "query": "ekpeye",
+      "resultState": "widened",
+      "width": 430,
+      "theme": "night",
+      "height": 2750,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "atlas-holds",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 166,
+        "y": 567,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "nigeria",
+      "variant": "mobile-night",
+      "file": "NigeriaNuit.dc.html",
+      "query": "nigeria",
+      "resultState": "exact",
+      "width": 430,
+      "theme": "night",
+      "height": 3480,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "tiles",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "problem",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 24,
+        "y": 539,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "lingala",
+      "variant": "mobile-night",
+      "file": "LingalaNuit.dc.html",
+      "query": "lingala",
+      "resultState": "exact",
+      "width": 430,
+      "theme": "night",
+      "height": 3230,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "problem",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 24,
+        "y": 551,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "traore",
+      "variant": "mobile-night",
+      "file": "TraoreNuit.dc.html",
+      "query": "traoré",
+      "resultState": "exact",
+      "width": 430,
+      "theme": "night",
+      "height": 3460,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "tiles",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "problem",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 24,
+        "y": 563,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "introuvable",
+      "variant": "mobile-night",
+      "file": "IntrouvableNuit.dc.html",
+      "query": "mandinké",
+      "resultState": "typo",
+      "width": 430,
+      "theme": "night",
+      "height": 1690,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "further",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [],
+      "firstPoster": {
+        "x": 24,
+        "y": 551,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "inconnu",
+      "variant": "mobile-night",
+      "file": "InconnuNuit.dc.html",
+      "query": "kossiwa",
+      "resultState": "unknown",
+      "width": 430,
+      "theme": "night",
+      "height": 1250,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        },
+        {
+          "id": "further",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 166,
+        "y": 436,
+        "width": 130,
+        "height": 231
+      }
+    },
+    {
+      "case": "mande",
+      "variant": "desktop-day",
+      "file": "MandeDesktop.dc.html",
+      "query": "mandé",
+      "resultState": "exact",
+      "width": 1280,
+      "theme": "day",
+      "height": 2720,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "tiles",
+          "zone": "secondary"
+        },
+        {
+          "id": "quiz",
+          "zone": "secondary"
+        },
+        {
+          "id": "images",
+          "zone": "secondary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 84,
+        "y": 509,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "peul",
+      "variant": "desktop-day",
+      "file": "PeulDesktop.dc.html",
+      "query": "peul",
+      "resultState": "exact",
+      "width": 1280,
+      "theme": "day",
+      "height": 2690,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "secondary"
+        },
+        {
+          "id": "problem",
+          "zone": "secondary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 84,
+        "y": 485,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "fang",
+      "variant": "desktop-day",
+      "file": "FangDesktop.dc.html",
+      "query": "pahouin",
+      "resultState": "exact",
+      "width": 1280,
+      "theme": "day",
+      "height": 2810,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "secondary"
+        },
+        {
+          "id": "problem",
+          "zone": "secondary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 84,
+        "y": 509,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "bassa",
+      "variant": "desktop-day",
+      "file": "BassaDesktop.dc.html",
+      "query": "bassa",
+      "resultState": "exact",
+      "width": 1280,
+      "theme": "day",
+      "height": 2240,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "peoples",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "shared-name",
+          "zone": "secondary"
+        },
+        {
+          "id": "quiz",
+          "zone": "secondary"
+        },
+        {
+          "id": "near-name",
+          "zone": "secondary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 260,
+        "y": 509,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "ekpeye",
+      "variant": "desktop-day",
+      "file": "EkpeyeDesktop.dc.html",
+      "query": "ekpeye",
+      "resultState": "widened",
+      "width": 1280,
+      "theme": "day",
+      "height": 2810,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "atlas-holds",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 376,
+        "y": 513,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "nigeria",
+      "variant": "desktop-day",
+      "file": "NigeriaDesktop.dc.html",
+      "query": "nigeria",
+      "resultState": "exact",
+      "width": 1280,
+      "theme": "day",
+      "height": 2550,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "tiles",
+          "zone": "secondary"
+        },
+        {
+          "id": "quiz",
+          "zone": "secondary"
+        },
+        {
+          "id": "problem",
+          "zone": "secondary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 84,
+        "y": 509,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "lingala",
+      "variant": "desktop-day",
+      "file": "LingalaDesktop.dc.html",
+      "query": "lingala",
+      "resultState": "exact",
+      "width": 1280,
+      "theme": "day",
+      "height": 2460,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "secondary"
+        },
+        {
+          "id": "problem",
+          "zone": "secondary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 84,
+        "y": 511,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "traore",
+      "variant": "desktop-day",
+      "file": "TraoreDesktop.dc.html",
+      "query": "traoré",
+      "resultState": "exact",
+      "width": 1280,
+      "theme": "day",
+      "height": 2480,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "tiles",
+          "zone": "secondary"
+        },
+        {
+          "id": "quiz",
+          "zone": "secondary"
+        },
+        {
+          "id": "problem",
+          "zone": "secondary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 84,
+        "y": 509,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "introuvable",
+      "variant": "desktop-day",
+      "file": "IntrouvableDesktop.dc.html",
+      "query": "mandinké",
+      "resultState": "typo",
+      "width": 1280,
+      "theme": "day",
+      "height": 1730,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "further",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [],
+      "firstPoster": {
+        "x": 200,
+        "y": 493,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "inconnu",
+      "variant": "desktop-day",
+      "file": "InconnuDesktop.dc.html",
+      "query": "kossiwa",
+      "resultState": "unknown",
+      "width": 1280,
+      "theme": "day",
+      "height": 1290,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        },
+        {
+          "id": "further",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 376,
+        "y": 467,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "mande",
+      "variant": "desktop-night",
+      "file": "MandeDesktopNuit.dc.html",
+      "query": "mandé",
+      "resultState": "exact",
+      "width": 1280,
+      "theme": "night",
+      "height": 2720,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "tiles",
+          "zone": "secondary"
+        },
+        {
+          "id": "quiz",
+          "zone": "secondary"
+        },
+        {
+          "id": "images",
+          "zone": "secondary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 84,
+        "y": 509,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "peul",
+      "variant": "desktop-night",
+      "file": "PeulDesktopNuit.dc.html",
+      "query": "peul",
+      "resultState": "exact",
+      "width": 1280,
+      "theme": "night",
+      "height": 2690,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "secondary"
+        },
+        {
+          "id": "problem",
+          "zone": "secondary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 84,
+        "y": 485,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "fang",
+      "variant": "desktop-night",
+      "file": "FangDesktopNuit.dc.html",
+      "query": "pahouin",
+      "resultState": "exact",
+      "width": 1280,
+      "theme": "night",
+      "height": 2810,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "secondary"
+        },
+        {
+          "id": "problem",
+          "zone": "secondary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 84,
+        "y": 509,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "bassa",
+      "variant": "desktop-night",
+      "file": "BassaDesktopNuit.dc.html",
+      "query": "bassa",
+      "resultState": "exact",
+      "width": 1280,
+      "theme": "night",
+      "height": 2240,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "peoples",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "shared-name",
+          "zone": "secondary"
+        },
+        {
+          "id": "quiz",
+          "zone": "secondary"
+        },
+        {
+          "id": "near-name",
+          "zone": "secondary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 260,
+        "y": 509,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "ekpeye",
+      "variant": "desktop-night",
+      "file": "EkpeyeDesktopNuit.dc.html",
+      "query": "ekpeye",
+      "resultState": "widened",
+      "width": 1280,
+      "theme": "night",
+      "height": 2810,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "atlas-holds",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 376,
+        "y": 513,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "nigeria",
+      "variant": "desktop-night",
+      "file": "NigeriaDesktopNuit.dc.html",
+      "query": "nigeria",
+      "resultState": "exact",
+      "width": 1280,
+      "theme": "night",
+      "height": 2550,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "tiles",
+          "zone": "secondary"
+        },
+        {
+          "id": "quiz",
+          "zone": "secondary"
+        },
+        {
+          "id": "problem",
+          "zone": "secondary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 84,
+        "y": 509,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "lingala",
+      "variant": "desktop-night",
+      "file": "LingalaDesktopNuit.dc.html",
+      "query": "lingala",
+      "resultState": "exact",
+      "width": 1280,
+      "theme": "night",
+      "height": 2460,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "quiz",
+          "zone": "secondary"
+        },
+        {
+          "id": "problem",
+          "zone": "secondary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 84,
+        "y": 511,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "traore",
+      "variant": "desktop-night",
+      "file": "TraoreDesktopNuit.dc.html",
+      "query": "traoré",
+      "resultState": "exact",
+      "width": 1280,
+      "theme": "night",
+      "height": 2480,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "origins",
+          "zone": "primary"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "tiles",
+          "zone": "secondary"
+        },
+        {
+          "id": "quiz",
+          "zone": "secondary"
+        },
+        {
+          "id": "problem",
+          "zone": "secondary"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "silences",
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 84,
+        "y": 509,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "introuvable",
+      "variant": "desktop-night",
+      "file": "IntrouvableDesktopNuit.dc.html",
+      "query": "mandinké",
+      "resultState": "typo",
+      "width": 1280,
+      "theme": "night",
+      "height": 1730,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "appellations",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "plates",
+          "zone": "primary"
+        },
+        {
+          "id": "fiches",
+          "zone": "primary"
+        },
+        {
+          "id": "further",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [],
+      "firstPoster": {
+        "x": 200,
+        "y": 493,
+        "width": 160,
+        "height": 284
+      }
+    },
+    {
+      "case": "inconnu",
+      "variant": "desktop-night",
+      "file": "InconnuDesktopNuit.dc.html",
+      "query": "kossiwa",
+      "resultState": "unknown",
+      "width": 1280,
+      "theme": "night",
+      "height": 1290,
+      "blocks": [
+        {
+          "id": "lenses",
+          "zone": "first"
+        },
+        {
+          "id": "verdict",
+          "zone": "first"
+        },
+        {
+          "id": "shorts",
+          "zone": "first"
+        },
+        {
+          "id": "owed",
+          "zone": "closing"
+        },
+        {
+          "id": "further",
+          "zone": "closing"
+        }
+      ],
+      "owedParts": [
+        "conviction",
+        "invitation"
+      ],
+      "firstPoster": {
+        "x": 376,
+        "y": 467,
+        "width": 160,
+        "height": 284
+      }
+    }
+  ]
+}

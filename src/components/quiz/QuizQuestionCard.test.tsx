@@ -239,4 +239,83 @@ describe("QuizQuestionCard (Epic 10, Story 10.9, ETNI-1133, FR67)", () => {
       screen.getByRole("radiogroup").closest("fieldset")
     ).not.toHaveAttribute("aria-describedby");
   });
+
+  // @req REQ-180
+  it("keeps the default two-column breakpoint and validate action", () => {
+    render(
+      <QuizQuestionCard
+        language="fr"
+        question={QUESTION}
+        selectedOption={null}
+        onSelectOption={vi.fn()}
+        onValidate={vi.fn()}
+        presentation="default"
+      />
+    );
+
+    expect(screen.getByRole("radiogroup")).toHaveClass(
+      "grid-cols-1",
+      "min-[430px]:grid-cols-2"
+    );
+    expect(screen.getByRole("button", { name: "Valider" })).toBeInTheDocument();
+  });
+
+  // @req REQ-180
+  it("submits an embedded answer on selection in one column", async () => {
+    const calls: string[] = [];
+    const onSelectOption = vi.fn(() => calls.push("select"));
+    const onValidate = vi.fn(() => calls.push("validate"));
+    const user = userEvent.setup();
+
+    render(
+      <QuizQuestionCard
+        language="fr"
+        question={QUESTION}
+        selectedOption={null}
+        onSelectOption={onSelectOption}
+        onValidate={onValidate}
+        presentation="embedded"
+      />
+    );
+
+    const group = screen.getByRole("radiogroup");
+    expect(group).toHaveClass("grid-cols-1");
+    expect(group).not.toHaveClass("min-[430px]:grid-cols-2");
+    expect(screen.queryByRole("button", { name: "Valider" })).toBeNull();
+
+    await user.click(screen.getAllByRole("radio")[2]);
+
+    expect(onSelectOption).toHaveBeenCalledWith(2);
+    expect(onValidate).toHaveBeenCalledWith(2);
+    expect(calls).toEqual(["select", "validate"]);
+  });
+
+  // @req REQ-180
+  it("lets keyboard users move across embedded options before submitting with Enter", async () => {
+    const onSelectOption = vi.fn();
+    const onValidate = vi.fn();
+    const user = userEvent.setup();
+
+    render(
+      <QuizQuestionCard
+        language="fr"
+        question={QUESTION}
+        selectedOption={null}
+        onSelectOption={onSelectOption}
+        onValidate={onValidate}
+        presentation="embedded"
+      />
+    );
+
+    const radios = screen.getAllByRole("radio");
+    radios[0].focus();
+    await user.keyboard("{ArrowDown}{ArrowDown} ");
+
+    expect(onSelectOption).toHaveBeenLastCalledWith(2);
+    expect(onValidate).not.toHaveBeenCalled();
+
+    await user.keyboard("{Enter}");
+    expect(onValidate).toHaveBeenCalledOnce();
+    expect(onValidate).toHaveBeenCalledWith(2);
+  });
 });

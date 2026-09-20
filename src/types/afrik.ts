@@ -10,6 +10,7 @@
 import type { SourceTierState } from "@/types/sources";
 import type { PersonId, PersonPeopleLink } from "@/types/persons";
 import type { TranslationLocale } from "@/lib/i18n/translationLocale";
+import type { NamingProjection } from "@/lib/search/naming";
 
 // ==========================================
 // STABLE IDENTIFIERS (IMMUTABLE)
@@ -685,6 +686,7 @@ export interface FtsSearchParams {
  * be merged, while the quiz kind uses the same score in its dedicated lens.
  */
 export interface RankedPeople extends People {
+  naming?: NamingProjection;
   languageFamilyName: string | null;
   /**
    * The family's English name (migration 084), so a card served in English
@@ -701,6 +703,7 @@ export interface RankedPeople extends People {
 }
 
 export interface RankedCountry extends Country {
+  naming?: NamingProjection;
   relevance: number;
   exactMatch: boolean;
   normalizedScore: number;
@@ -708,6 +711,7 @@ export interface RankedCountry extends Country {
 }
 
 export interface RankedLanguageFamily extends LanguageFamily {
+  naming?: NamingProjection;
   relevance: number;
   exactMatch: boolean;
   normalizedScore: number;
@@ -743,6 +747,7 @@ export interface RankedPatronyme {
   nameSystem: string;
   casteOrSocialFunction: string | null;
   content: Record<string, unknown>;
+  naming?: NamingProjection;
   /**
    * The peoples of `content.peoples[]` whose fiche exists, resolved to their
    * main name in one batched lookup after ranking (ETNI-1859). Absent when
@@ -814,6 +819,7 @@ export interface RankedLanguage {
   familyName: string | null;
   familyNameEn: string | null;
   content: LanguageContent;
+  naming?: NamingProjection;
   relevance: number;
   exactMatch: boolean;
   snippet: string | null;
@@ -830,6 +836,18 @@ export interface RankedLanguage {
  */
 export interface SearchLead {
   kind: "people" | "country" | "family";
+  id: string;
+  name: string;
+  similarity: number;
+}
+
+/**
+ * A qualified similar name for an answered, non-empty search (REQ-180).
+ * Unlike `SearchLead`, this never stands in for a missing result: its entity
+ * is distinct from every returned people, country and family subject.
+ */
+export interface SearchNearName {
+  kind: SearchLead["kind"];
   id: string;
   name: string;
   similarity: number;
@@ -856,6 +874,8 @@ export interface FtsSearchResponse {
   total: number;
   /** Populated only when `total` is 0 (REQ-125); empty otherwise. */
   leads: SearchLead[];
+  /** Qualified similar names for a non-empty search; empty otherwise. */
+  nearNames: SearchNearName[];
 }
 
 // ==========================================

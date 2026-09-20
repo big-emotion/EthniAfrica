@@ -43,6 +43,8 @@
     "e2e:headed": "playwright test --headed",
     "e2e:install": "playwright install --with-deps chromium",
     "e2e:report": "playwright show-report playwright-report",
+    "e2e:search-feed-parity": "playwright test --config playwright.search-feed.config.ts",
+    "e2e:search-feed-responsive": "playwright test --config playwright.search-feed-responsive.config.ts",
     "e2e:smoke": "playwright test --project=mobile-430 --grep @smoke",
     "e2e:ui": "playwright test --ui",
     "format": "prettier --write .",

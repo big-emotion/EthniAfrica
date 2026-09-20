@@ -3,240 +3,297 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 
 import {
-  RESULT_BLOCKS,
-  UNCONDITIONAL_BLOCK_IDS,
+  FEED_BLOCKS,
+  FEED_ZONES,
+  OWED_PARTS,
+  type FeedBlockId,
+  type FeedZone,
+  type OwedPartId,
+  type SearchResultState,
 } from "@/lib/search/resultGrammar";
 
-/**
- * How each block is recognised inside a board, keyed by the id the contract
- * declares. The French lives here rather than in `resultGrammar.ts`: a heading
- * a reader sees is copy and belongs in a locale dictionary, while these are
- * needles for matching a mockup — a different job, and one `check:copy-literals`
- * exempts `__tests__/` from precisely because of it.
- */
-const BLOCK_PROBES: Record<string, string> = {
-  verdict: "D'où vient ce nom",
-  disambiguation: "Lequel cherchez-vous",
-  appellations: "Les appellations",
-  origins: "D'où elles viennent",
-  "self-given": "Ce que les peuples se donnent",
-  problem: "posent problème",
-  "usage-today": "Qui dit quoi",
-  "shared-name": "Pourquoi le même nom",
-  "through-time": "À travers le temps",
-  "atlas-holds": "Ce que l'atlas tient",
-  silences: "Ce que l'atlas ne dit pas",
-  further: "Aller plus loin",
-};
+const MOCKUP_DIR = "docs/design/mockups/search-feed";
+const MANIFEST_PATH = path.join(MOCKUP_DIR, "manifest.json");
 
-/**
- * The conviction and the invitation carry no fixed heading — their sentence is
- * chosen by the case — so a board is matched against the phrases the charter
- * fixes. Any one of them counts.
- */
-const CONVICTION_PHRASES = [
-  "Aucun de ces noms n'est faux",
-  "Le nom qui compte le plus",
-  "ne retire rien à personne",
-  "Un nom partagé n'est pas une parenté",
-  "mieux placé que vous",
-];
+const CASES = [
+  { id: "mande", stem: "Mande" },
+  { id: "peul", stem: "Peul" },
+  { id: "fang", stem: "Fang" },
+  { id: "bassa", stem: "Bassa" },
+  { id: "ekpeye", stem: "Ekpeye" },
+  { id: "nigeria", stem: "Nigeria" },
+  { id: "lingala", stem: "Lingala" },
+  { id: "traore", stem: "Traore" },
+  { id: "introuvable", stem: "Introuvable" },
+  { id: "inconnu", stem: "Inconnu" },
+] as const;
 
-const INVITATION_PHRASES = [
-  "Nous nous sommes trompés",
-  "Vous connaissez ce nom mieux que nous",
-  "Nous parler de ce nom",
-];
+const VARIANTS = [
+  { id: "mobile-day", suffix: "", width: 430, theme: "day" },
+  { id: "mobile-night", suffix: "Nuit", width: 430, theme: "night" },
+  { id: "desktop-day", suffix: "Desktop", width: 1280, theme: "day" },
+  {
+    id: "desktop-night",
+    suffix: "DesktopNuit",
+    width: 1280,
+    theme: "night",
+  },
+] as const;
 
-/**
- * The reviewed mockups, measured against the grammar they are supposed to obey.
- *
- * Parity with a mockup is not pixel equality and never could be: the boards
- * carry fixed text while the page renders a corpus whose strings are any
- * length. What has to match is which blocks are drawn, in what order — so that
- * is what is asserted, on the boards today and on the page when it exists.
- *
- * It would have caught the defect that produced it. Three of the five mobile
- * boards ended up drawing their invitation to correct *before* their
- * conviction, because the insertion anchored on « Aller plus loin » without
- * seeing what already sat there, and no diff showed it.
- */
+interface ManifestBlock {
+  id: FeedBlockId;
+  zone: FeedZone;
+}
 
-const MOCKUP_DIR = "docs/design/mockups/search";
+interface ManifestEntry {
+  case: (typeof CASES)[number]["id"];
+  variant: (typeof VARIANTS)[number]["id"];
+  file: string;
+  query: string;
+  resultState: SearchResultState;
+  width: number;
+  theme: "day" | "night";
+  height: number;
+  blocks: ManifestBlock[];
+  owedParts: OwedPartId[];
+}
 
-function boards(): string[] {
+interface FeedManifest {
+  schemaVersion: number;
+  entries: ManifestEntry[];
+}
+
+function loadManifest(): FeedManifest {
+  return JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), MANIFEST_PATH), "utf8")
+  ) as FeedManifest;
+}
+
+function boardNames(): string[] {
   return fs
     .readdirSync(path.join(process.cwd(), MOCKUP_DIR))
     .filter((name) => name.endsWith(".dc.html"))
     .sort();
 }
 
-/**
- * Every named entity the boards use. Written out rather than approximated: a
- * first version dropped the ones it had not listed, so « D&ugrave; » collapsed
- * to « D » and the gate reported the mockups as broken when the decoder was.
- * An unknown entity now throws instead of silently becoming a space.
- */
-const ENTITIES: Record<string, string> = {
-  "&#39;": "'",
-  "&aacute;": "á",
-  "&agrave;": "à",
-  "&Agrave;": "À",
-  "&ccedil;": "ç",
-  "&eacute;": "é",
-  "&ecirc;": "ê",
-  "&egrave;": "è",
-  "&icirc;": "î",
-  "&iuml;": "ï",
-  "&laquo;": "«",
-  "&mdash;": "—",
-  "&middot;": "·",
-  "&nbsp;": " ",
-  "&ocirc;": "ô",
-  "&raquo;": "»",
-  "&rarr;": "→",
-  "&ucirc;": "û",
-  "&ugrave;": "ù",
-};
-
-/** The board's visible text, entities resolved, markup gone. */
-function readableText(board: string): string {
-  const raw = fs.readFileSync(
-    path.join(process.cwd(), MOCKUP_DIR, board),
-    "utf8"
+function attributeValues(html: string, attribute: string): string[] {
+  return Array.from(
+    html.matchAll(new RegExp(`${attribute}="([^"]+)"`, "g")),
+    (match) => match[1]
   );
-  const body = raw.split("</helmet>")[1]?.split("</x-dc>")[0] ?? raw;
-  return body
-    .replace(/<[^>]+>/g, "\n")
-    .replace(/&#(\d+);|&([a-zA-Z]+);/g, (_entity, numeric, named) => {
-      // A numeric reference decodes itself. The boards use one for the eng of
-      // « fàŋ », and a table would have to grow for every phonetic character
-      // the corpus happens to spell that way.
-      if (numeric) return String.fromCodePoint(Number(numeric));
-      const plain = ENTITIES[`&${named};`];
-      if (plain === undefined) {
-        throw new Error(
-          `${board} uses &${named};, which this gate cannot decode — add it to ENTITIES`
-        );
-      }
-      return plain;
-    });
 }
 
-/** Where each block first appears, in reading order; -1 when it is absent. */
-function blockPositions(text: string): Map<string, number> {
-  const found = new Map<string, number>();
-
-  for (const block of RESULT_BLOCKS) {
-    if (block.id === "conviction") {
-      found.set(
-        block.id,
-        Math.min(
-          ...CONVICTION_PHRASES.map((phrase) => text.indexOf(phrase)).filter(
-            (at) => at >= 0
-          ),
-          Infinity
-        )
-      );
-      continue;
-    }
-    if (block.id === "invitation") {
-      found.set(
-        block.id,
-        Math.min(
-          ...INVITATION_PHRASES.map((phrase) => text.indexOf(phrase)).filter(
-            (at) => at >= 0
-          ),
-          Infinity
-        )
-      );
-      continue;
-    }
-    const probe = BLOCK_PROBES[block.id];
-    if (probe === undefined) {
-      throw new Error(
-        `${block.id} is declared in RESULT_BLOCKS with no probe in this test`
-      );
-    }
-    found.set(block.id, text.indexOf(probe));
-  }
-
-  return found;
+function boardMarkup(source: string): string {
+  return source.split("</helmet>")[1]?.split("</x-dc>")[0] ?? source;
 }
 
-describe("the result page's block grammar, on the reviewed mockups", () => {
-  // The case list is derived from the day boards rather than written down, so
-  // adding a case adds its three obligations instead of failing a hard count.
-  // @req REQ-044
-  it("has a board for every case at every width and theme", () => {
-    const names = boards();
-    const cases = names
-      .filter((name) => !/(Nuit|Desktop)/.test(name))
-      .map((name) => name.replace(".dc.html", ""));
+function structuralShape(board: ManifestEntry) {
+  return {
+    query: board.query,
+    resultState: board.resultState,
+    blocks: board.blocks,
+    owedParts: board.owedParts,
+  };
+}
 
-    expect(
-      cases.length,
-      "at least the five cases the charter names"
-    ).toBeGreaterThanOrEqual(5);
+function entry(
+  manifest: FeedManifest,
+  caseName: ManifestEntry["case"],
+  variant: ManifestEntry["variant"]
+): ManifestEntry {
+  const found = manifest.entries.find(
+    (board) => board.case === caseName && board.variant === variant
+  );
+  expect(
+    found,
+    `${caseName}/${variant} is missing from the manifest`
+  ).toBeDefined();
+  return found!;
+}
 
-    for (const entity of cases) {
-      for (const variant of ["Nuit", "Desktop", "DesktopNuit"]) {
-        expect(names, `${entity}${variant} is missing`).toContain(
-          `${entity}${variant}.dc.html`
-        );
-      }
-    }
+describe("the generated search-result feed charter", () => {
+  // The manifest is the structural authority, so its matrix must be exact: a
+  // new or missing board is a contract change rather than an incidental file.
+  // @req REQ-180
+  it("contains exactly ten cases and four variants per case", () => {
+    const manifest = loadManifest();
+    const expectedFiles = CASES.flatMap(({ stem }) =>
+      VARIANTS.map(({ suffix }) => `${stem}${suffix}.dc.html`)
+    ).sort();
 
-    expect(names.length, "every case carries four variants").toBe(
-      cases.length * 4
+    expect(manifest.schemaVersion).toBe(1);
+    expect(manifest.entries).toHaveLength(40);
+    expect(boardNames()).toEqual(expectedFiles);
+    expect(manifest.entries.map((board) => board.file).sort()).toEqual(
+      expectedFiles
     );
-  });
 
-  // The order is the contract. Pixels are not: the boards carry fixed text and
-  // the page will carry a corpus, so equality of appearance is unattainable and
-  // equality of sequence is the thing that means something.
-  // @req REQ-044
-  it("draws the blocks it draws in the charter's order", () => {
-    for (const board of boards()) {
-      const positions = blockPositions(readableText(board));
-      const drawn = RESULT_BLOCKS.map((block) => ({
-        id: block.id,
-        at: positions.get(block.id) ?? -1,
-      })).filter((entry) => entry.at >= 0 && entry.at !== Infinity);
-
-      const outOfOrder = drawn.filter(
-        (entry, index) => index > 0 && entry.at < drawn[index - 1].at
-      );
-
-      expect(
-        outOfOrder.map((entry) => entry.id),
-        `${board} draws ${outOfOrder.map((e) => e.id).join(", ")} before the ` +
-          `block the charter puts ahead of it`
-      ).toEqual([]);
+    for (const { id: caseName, stem } of CASES) {
+      for (const variant of VARIANTS) {
+        const board = entry(manifest, caseName, variant.id);
+        expect(board.file).toBe(`${stem}${variant.suffix}.dc.html`);
+        expect(board.width).toBe(variant.width);
+        expect(board.theme).toBe(variant.theme);
+      }
     }
   });
 
-  // A board that declares no silence, offers no way to correct it or closes on
-  // a link list has dropped what the atlas owes its reader, which is the half
-  // of the grammar that does not depend on the corpus.
-  // @req REQ-044
-  it("never drops what the atlas owes the reader", () => {
-    for (const board of boards()) {
-      const positions = blockPositions(readableText(board));
+  // Desktop may split the mobile sequence across two columns. Order therefore
+  // belongs to each real zone, not to one flattened desktop list.
+  // @req REQ-180
+  it("uses only canonical blocks and keeps their order inside each zone", () => {
+    const manifest = loadManifest();
+    const canonicalIndex = new Map(
+      FEED_BLOCKS.map((block, index) => [block, index])
+    );
 
-      for (const id of UNCONDITIONAL_BLOCK_IDS) {
-        // The verdict's eyebrow is absent from the two-state « introuvable »
-        // board, whose answer is that it does not know the name.
-        if (id === "verdict" && board.startsWith("Introuvable")) continue;
-        // A board with a single appellation declares its silences in place of
-        // the block; `Introuvable` has no entity to be silent about.
-        if (id === "silences" && board.startsWith("Introuvable")) continue;
+    for (const board of manifest.entries) {
+      expect(new Set(board.blocks.map(({ id }) => id)).size, board.file).toBe(
+        board.blocks.length
+      );
 
-        const at = positions.get(id) ?? -1;
-        expect(at >= 0 && at !== Infinity, `${board} draws no ${id}`).toBe(
-          true
+      for (const zone of FEED_ZONES) {
+        const blocks = board.blocks
+          .filter((block) => block.zone === zone)
+          .map(({ id }) => id);
+        const sorted = [...blocks].sort(
+          (left, right) =>
+            canonicalIndex.get(left)! - canonicalIndex.get(right)!
+        );
+        expect(blocks, `${board.file}/${zone} is out of order`).toEqual(sorted);
+      }
+
+      for (const block of board.blocks) {
+        expect(FEED_BLOCKS, `${board.file} declares ${block.id}`).toContain(
+          block.id
+        );
+        expect(FEED_ZONES, `${board.file} declares ${block.zone}`).toContain(
+          block.zone
+        );
+
+        if (
+          ["lenses", "verdict", "appellations", "shorts"].includes(block.id)
+        ) {
+          expect(block.zone, `${board.file}/${block.id}`).toBe("first");
+        } else if (["owed", "further"].includes(block.id)) {
+          expect(block.zone, `${board.file}/${block.id}`).toBe("closing");
+        } else {
+          expect(
+            ["primary", "secondary"],
+            `${board.file}/${block.id}`
+          ).toContain(block.zone);
+        }
+      }
+    }
+  });
+
+  // Night is a token substitution over the same page, never a second
+  // composition. Comparing structure catches a hand-edited night board.
+  // @req REQ-180
+  it("keeps day and night structurally identical at each width", () => {
+    const manifest = loadManifest();
+
+    for (const { id: caseName } of CASES) {
+      expect(
+        structuralShape(entry(manifest, caseName, "mobile-night"))
+      ).toEqual(structuralShape(entry(manifest, caseName, "mobile-day")));
+      expect(
+        structuralShape(entry(manifest, caseName, "desktop-night"))
+      ).toEqual(structuralShape(entry(manifest, caseName, "desktop-day")));
+    }
+  });
+
+  // `owed` is one top-level closing with independently testable children. Its
+  // children must not leak back into the top-level feed vocabulary.
+  // @req REQ-180
+  it("keeps owed composite and its parts in their canonical order", () => {
+    const manifest = loadManifest();
+    const owedIndex = new Map(OWED_PARTS.map((part, index) => [part, index]));
+
+    for (const board of manifest.entries) {
+      const ids = board.blocks.map(({ id }) => id);
+      expect(ids).not.toContain("silences");
+      expect(ids).not.toContain("conviction");
+      expect(ids).not.toContain("invitation");
+
+      if (["exact", "widened"].includes(board.resultState)) {
+        expect(ids, `${board.file} must close with owed`).toContain("owed");
+      }
+      if (board.resultState === "typo") {
+        expect(
+          ids,
+          `${board.file} must not invent an owed subject`
+        ).not.toContain("owed");
+      }
+      if (board.resultState === "unknown") {
+        expect(ids, `${board.file} must carry the unknown closing`).toContain(
+          "owed"
         );
       }
+
+      if (!ids.includes("owed")) {
+        expect(board.owedParts, board.file).toEqual([]);
+        continue;
+      }
+
+      expect(board.owedParts, `${board.file} omits conviction`).toContain(
+        "conviction"
+      );
+      expect(board.owedParts, `${board.file} omits invitation`).toContain(
+        "invitation"
+      );
+      expect(board.owedParts).toEqual(
+        [...board.owedParts].sort(
+          (left, right) => owedIndex.get(left)! - owedIndex.get(right)!
+        )
+      );
+    }
+  });
+
+  // These three cases distinguish a shared name, a useful typo and a genuinely
+  // unknown query. Conflating them was the grammar defect this contract fixes.
+  // @req REQ-180
+  it("preserves the Bassa, typo, and unknown exceptional contracts", () => {
+    const manifest = loadManifest();
+
+    for (const variant of VARIANTS) {
+      const bassa = entry(manifest, "bassa", variant.id).blocks.map(
+        ({ id }) => id
+      );
+      expect(bassa).toContain("shared-name");
+      expect(bassa).not.toContain("problem");
+
+      const typo = entry(manifest, "introuvable", variant.id).blocks.map(
+        ({ id }) => id
+      );
+      expect(typo).not.toContain("owed");
+      expect(typo.at(-1)).toBe("further");
+
+      const unknown = entry(manifest, "inconnu", variant.id);
+      const unknownIds = unknown.blocks.map(({ id }) => id);
+      expect(unknownIds.slice(-2)).toEqual(["owed", "further"]);
+      expect(unknown.owedParts).toEqual(["conviction", "invitation"]);
+    }
+  });
+
+  // The generated markup is an executable view of the manifest. Visible copy
+  // remains illustrative, but semantic markers may never drift from it.
+  // @req REQ-180
+  it("keeps every board's semantic markup aligned with the manifest", () => {
+    const manifest = loadManifest();
+
+    for (const board of manifest.entries) {
+      const html = fs.readFileSync(
+        path.join(process.cwd(), MOCKUP_DIR, board.file),
+        "utf8"
+      );
+      const markup = boardMarkup(html);
+      expect(attributeValues(markup, "data-feed-block"), board.file).toEqual(
+        board.blocks.map(({ id }) => id)
+      );
+      expect(attributeValues(markup, "data-feed-part"), board.file).toEqual(
+        board.owedParts
+      );
     }
   });
 });
