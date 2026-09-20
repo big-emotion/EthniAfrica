@@ -30,11 +30,10 @@ permissions:
 
 jobs:
   gate:
-    # The name says four though the gate visits five routes. Branch protection on
-    # `recette` requires this check by name, so renaming it leaves the required
-    # status never reported and blocks every pull request. Rename it in the same
-    # change as the protection rule, and in ephemeralSupabaseWiring.test.ts.
-    name: Lighthouse gate (4 routes)
+    # No route count in the name: the count moved (four, then five), and branch
+    # protection on `recette` matches a required check by name, so every change
+    # of it is a coordinated rename. See `gate-legacy-name` below.
+    name: Lighthouse gate
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -141,6 +140,28 @@ jobs:
       - name: Run the Lighthouse gate
         if: steps.scope.outputs.render == 'true'
         run: lhci autorun --config=./.lighthouserc.gate.js
+
+  # TEMPORARY. Branch protection on `recette` still requires this check under
+  # its old name, "Lighthouse gate (4 routes)". This job reports the gate's own
+  # result under that name, so the rename above blocks nobody while protection
+  # is switched to "Lighthouse gate". Delete this job once it is.
+  #
+  # It runs whatever the gate did (`always()`) and fails unless the gate
+  # succeeded. A skipped required check counts as passing, so an alias skipped
+  # after a failed gate would switch the gate off under the old name.
+  gate-legacy-name:
+    name: Lighthouse gate (4 routes)
+    needs: gate
+    if: always() && github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Fail unless the Lighthouse gate succeeded
+        env:
+          GATE_RESULT: ${{ needs.gate.result }}
+        run: |
+          echo "Lighthouse gate: $GATE_RESULT"
+          [ "$GATE_RESULT" = "success" ]
 
   lighthouse:
     name: Lighthouse Mobile Audit
