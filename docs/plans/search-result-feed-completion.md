@@ -283,6 +283,97 @@ of an existing one, its own text-parity pass), not a deletion, and it belongs
 in its own ticket rather than folded silently into "phase 12 cleanup" — the
 name undersells what's actually left.
 
+## 1e. Update — 2026-09-20, sixth session (relation search shipped; a second, distinct gap found)
+
+**§1d's relation-search finding is fixed and shipped.** Not a new
+`SearchFeedAnswerState` case in the end — `classifySearchFeed` already reports
+a relation browse correctly (`subjects.length === 0 && results.length > 0` →
+`"widened"`, which is exactly what "results exist, no name was searched"
+already means). The actual bug was two-fold and both parts were structural,
+not additive:
+
+- `RecherchePageContent.tsx`'s top-level branch was
+  `if (committedQuery && !relation)`, so any relation search — including one
+  a `SearchFeed` result card's own family/country chip started — fell through
+  to the retired `NameAnswer` branch regardless of `companions`/`feedState`.
+  Widened to `if (committedQuery || relation)`.
+- The search effect's `if (rel) { setStatus("loaded"); return; }` skipped the
+  companions/subjects/feedState computation entirely for a relation search,
+  leaving `SearchFeed`'s own mount guard (`companions && feedState`) always
+  false for it. Removed; `selectNameSubject` on an empty query already
+  resolves no subjects on its own, so the same computation that runs for a
+  name search runs correctly for a relation search unmodified.
+
+`SearchFeed` gained a `relation` prop (`{kind, id}`) purely to word the
+verdict correctly — "the peoples of the Krou family" / "the peoples present
+au Sénégal" (via the existing `inCountry`/`countryPreposition` helper,
+correct French preposition per country) rather than reusing the generic
+"found related entries" copy a genuine widened name search shows. Gated on
+`subjects.length === 0` specifically (`isRelationBrowse`), not on `relation`
+being merely present — a query that also matches a subject (a country filter
+alongside a name search that succeeds) still answers that name as usual, the
+country staying a filter rather than becoming the subject. The dismissible
+relation-filter chip (`filter-chip-row`), previously only on the retired
+page, is now on the reviewed branch too, or clearing an active filter would
+have had no visible control once relation searches render there.
+
+Verified live: the request now carries the right params
+(`q=""&countryId=CIV`) and reaches `SearchFeed`'s render path; the response
+500s only because recette's Supabase egress quota is currently exceeded
+(pre-existing, unrelated — `docs/...` other sessions have hit the same
+outage). Two rewritten page tests, two new `SearchFeed` unit tests, full
+suite 10007/10010 (the three pre-existing failures, unchanged).
+
+**Deleting `NameAnswer` is still not safe, for a second and different
+reason**, found while scoping the e2e rewrite phase 12 item 1 already asked
+for (`e2e/search-results-consolidation.spec.ts` asserts
+`name-answer-disambiguation` and `name-answer-unknown` directly against a
+live corpus). That spec's disambiguation case is `q=Yoruba`, which the AFRIK
+corpus files as both a people **and** a language — a cross-_type_ name
+clash, not the same-type one (`Bassa`, three peoples) `SearchFeed` already
+handles.
+
+Traced precisely: `selectNameSubject` (`nameSubject.ts`) puts no type
+restriction on its `exact` match, so it already returns both the people and
+the language row for a query like "Yoruba" — `subjects.length === 2` with
+`kinds.size === 2`. But `SearchFeed`'s own disambiguation gate,
+`hasPeopleDisambiguation`, requires `subjects.every((s) => s.type ===
+"people")`. For a cross-type clash this is false, so `classifySearchFeed`
+falls through to `"exact"`, and the verdict/`displayName` computation then
+uses `subjects[0]` alone — silently answering whichever type happened to
+sort first and dropping the other entirely. That is precisely the "no form
+promoted" violation DEC-057 exists to prevent (`docs/design/
+search-result-charter.md`), and `NameAnswer`'s own disambiguation view (the
+one `search-results-consolidation.spec.ts` currently asserts) is what
+currently prevents a reader hitting it. Not verifiable against live data this
+session — recette's egress quota was already exhausted when this was found
+— so it is recorded rather than patched blind, which is the same discipline
+every other fix in this document followed.
+
+**What's actually left before `NameAnswer` can go, now precisely two items**:
+
+1. Extend `hasPeopleDisambiguation` (or add a parallel gate) to cover a
+   cross-type exact clash, decide what the disambiguation view should say
+   when the tied entities are not all peoples (the current copy,
+   `copy.answer.shared(count)` → "N peuples portent ce nom.", is itself
+   people-specific wording), and give it its own test against a
+   people+language and a people+country clash, not just people+people.
+2. Rewrite `e2e/search-results-consolidation.spec.ts` onto `SearchFeed`'s own
+   `data-feed-block`/`data-testid` contract, verified against live data —
+   which needs recette's egress quota resolved first, since this spec (unlike
+   the forty-board harness) is deliberately corpus-backed, not fixture-mocked.
+
+Only once both land does `NameAnswer.tsx`'s removal become the safe,
+single-file deletion phase 12 describes. The blast radius of that deletion
+itself is now fully mapped and low-risk: its two `RecherchePageContent.tsx`
+call sites are provably unreachable already (§1e's branch-guard fix makes
+`status === "loaded"` or `"failed"` unreachable on the branch `NameAnswer`
+lives in), its only non-test, non-page importer is
+`searchCharter.test.tsx`'s file list (a one-line removal), and
+`nameAnswerCopy`/`NameAnswerCopy` — despite the name — is a shared copy
+dictionary `SearchFeed.tsx` and `AppellationsBlock.tsx` also read, not
+exclusive to the component and not to be deleted with it.
+
 ## 2. The rule that decides every remaining fix
 
 `docs/design/search-result-charter.md`, as PR #1188 rewrote it, gives three
