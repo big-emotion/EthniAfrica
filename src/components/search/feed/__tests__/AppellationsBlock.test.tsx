@@ -99,6 +99,47 @@ describe("AppellationsBlock", () => {
   });
 
   // @req REQ-180
+  it("uses a marked form's own qualifier as its tag, on every width, when the corpus provides one", () => {
+    render(
+      <AppellationsBlock
+        language="fr"
+        forms={[
+          {
+            form: "Ekpeye",
+            selfGiven: true,
+            qualifier: "leur nom, et celui de tous",
+          },
+          {
+            form: "Tarawele",
+            selfGiven: true,
+            qualifier: "la forme mandingue",
+          },
+          {
+            form: "Nigeria",
+            searched: true,
+            qualifier: "votre recherche · 1914",
+          },
+        ]}
+      />
+    );
+
+    const mobile = screen.getByTestId("appellations-mobile");
+    expect(
+      within(mobile).getByText("leur nom, et celui de tous")
+    ).not.toHaveClass("hidden");
+    expect(within(mobile).getByText("la forme mandingue")).not.toHaveClass(
+      "hidden"
+    );
+    expect(within(mobile).getByText("votre recherche · 1914")).not.toHaveClass(
+      "hidden"
+    );
+    expect(
+      screen.queryByText("le nom qu’ils se donnent")
+    ).not.toBeInTheDocument();
+    expect(screen.queryByText("votre recherche")).not.toBeInTheDocument();
+  });
+
+  // @req REQ-180
   it("adds only the explicit 1200 px desktop composition", () => {
     render(<AppellationsBlock language="fr" forms={forms} />);
 

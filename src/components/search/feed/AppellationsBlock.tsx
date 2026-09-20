@@ -4,7 +4,10 @@ import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { InlineMarkup } from "@/components/search/feed/InlineMarkup";
 import { SearchFeedSectionHeading } from "@/components/search/feed/SearchFeedSectionHeading";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
-import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
+import {
+  nameAnswerCopy,
+  type NameAnswerCopy,
+} from "@/lib/i18n/copy/nameAnswer";
 import { cn } from "@/lib/utils";
 import type { NamingPresentationForm } from "@/lib/search/naming";
 import type { Language } from "@/types/shared";
@@ -48,6 +51,34 @@ function moreLabel(language: Language, count: number): string {
   return `+${count} ${count === 1 ? "autre" : "autres"}`;
 }
 
+interface MarkedTag {
+  key: "searched" | "selfGiven" | "problematic";
+  text: string;
+}
+
+/**
+ * The form's own qualifier is the tag when the corpus carries one (e.g. "leur
+ * nom, et celui de tous", "votre recherche · 1914") — the generic mark applies
+ * only when the corpus gives none. A form can carry more than one mark at
+ * once, so this returns every mark that applies rather than the first.
+ */
+function markedTags(item: AppellationItem, copy: NameAnswerCopy): MarkedTag[] {
+  const tags: MarkedTag[] = [];
+  if (item.searched)
+    tags.push({ key: "searched", text: item.qualifier ?? copy.yourSearch });
+  if (item.selfGiven === true)
+    tags.push({
+      key: "selfGiven",
+      text: item.qualifier ?? copy.selfGivenMark,
+    });
+  if (item.problematic === "recorded")
+    tags.push({
+      key: "problematic",
+      text: item.qualifier ?? copy.problematicMark,
+    });
+  return tags;
+}
+
 function FormsList({
   forms,
   allForms,
@@ -73,64 +104,50 @@ function FormsList({
       data-testid={testId}
       className={cn("mt-afh-lg flex flex-wrap gap-afh-md", className)}
     >
-      {forms.map((item) => (
-        <li
-          key={`${item.subjectId ?? "lead"}-${item.form}-${item.qualifier ?? "form"}`}
-          data-appellation=""
-          data-subject-id={item.subjectId}
-          data-searched={item.searched || undefined}
-          data-self-given={item.selfGiven === true || undefined}
-          data-problematic={item.problematic === "recorded" || undefined}
-          className={cn(
-            "inline-flex items-center gap-afh-md rounded-afh-full border px-afh-lg py-afh-xs",
-            item.problematic === "recorded"
-              ? "border-[color:var(--afh-colonial-ink)]"
-              : item.searched
-                ? "border-[var(--accent)]"
-                : "border-afh-border",
-            item.selfGiven === true ? "bg-afh-bg-warm" : "bg-afh-surface"
-          )}
-        >
-          <span className="font-afh-display text-afh-small font-bold text-afh-text">
-            <InlineMarkup text={item.form} />
-          </span>
-          {item.searched ? (
-            <span
-              className={cn(
-                "text-afh-eyebrow font-bold leading-[var(--afh-leading-eyebrow)] text-[color:var(--accent-ink)]",
-                item.qualifier && "min-[1200px]:hidden"
-              )}
-            >
-              {copy.yourSearch}
+      {forms.map((item) => {
+        const tags = markedTags(item, copy);
+        return (
+          <li
+            key={`${item.subjectId ?? "lead"}-${item.form}-${item.qualifier ?? "form"}`}
+            data-appellation=""
+            data-subject-id={item.subjectId}
+            data-searched={item.searched || undefined}
+            data-self-given={item.selfGiven === true || undefined}
+            data-problematic={item.problematic === "recorded" || undefined}
+            className={cn(
+              "inline-flex items-center gap-afh-md rounded-afh-full border px-afh-lg py-afh-xs",
+              item.problematic === "recorded"
+                ? "border-[color:var(--afh-colonial-ink)]"
+                : item.searched
+                  ? "border-[var(--accent)]"
+                  : "border-afh-border",
+              item.selfGiven === true ? "bg-afh-bg-warm" : "bg-afh-surface"
+            )}
+          >
+            <span className="font-afh-display text-afh-small font-bold text-afh-text">
+              <InlineMarkup text={item.form} />
             </span>
-          ) : null}
-          {item.selfGiven === true ? (
-            <span
-              className={cn(
-                "text-afh-eyebrow font-bold leading-[var(--afh-leading-eyebrow)] text-[color:var(--accent-ink)]",
-                item.qualifier && "min-[1200px]:hidden"
-              )}
-            >
-              {copy.selfGivenMark}
-            </span>
-          ) : null}
-          {item.problematic === "recorded" ? (
-            <span
-              className={cn(
-                "text-afh-eyebrow font-bold leading-[var(--afh-leading-eyebrow)] text-[color:var(--afh-colonial-ink)]",
-                item.qualifier && "min-[1200px]:hidden"
-              )}
-            >
-              {copy.problematicMark}
-            </span>
-          ) : null}
-          {item.qualifier ? (
-            <span className="hidden text-afh-eyebrow font-semibold text-afh-text-soft min-[1200px]:inline">
-              <InlineMarkup text={item.qualifier} />
-            </span>
-          ) : null}
-        </li>
-      ))}
+            {tags.map(({ key, text }) => (
+              <span
+                key={key}
+                className={cn(
+                  "text-afh-eyebrow font-bold leading-[var(--afh-leading-eyebrow)]",
+                  key === "problematic"
+                    ? "text-[color:var(--afh-colonial-ink)]"
+                    : "text-[color:var(--accent-ink)]"
+                )}
+              >
+                <InlineMarkup text={text} />
+              </span>
+            ))}
+            {tags.length === 0 && item.qualifier ? (
+              <span className="hidden text-afh-eyebrow font-semibold text-afh-text-soft min-[1200px]:inline">
+                <InlineMarkup text={item.qualifier} />
+              </span>
+            ) : null}
+          </li>
+        );
+      })}
       {remainder > 0 ? (
         <li className={cn("flex items-center", !reviewed && "min-h-11")}>
           <Link

@@ -127,6 +127,57 @@ one against the live harness both hung on environment/port contention rather
 than producing a measurement. Left as a named residual for the pixel-
 convergence pass (§3) rather than guessed at further.
 
+## 1c. Update — 2026-09-20, fourth session (causes 6-10, resolved as one fix)
+
+**The plan's own diagnosis for causes 6-10 was wrong in a specific, checkable
+way, and the correction collapses all five into a single component fix with no
+new corpus plumbing.**
+
+Tracing `presentationFor()` in `feedCases.ts` (the function that turns
+`feedBoardCases.json` — itself a direct, unedited export of `cases.py`'s
+`CASES`, via `export_fixture_cases.py` — into the `SearchFeedPresentation`
+every board-driven page actually renders) shows `authoring.forms` is mapped
+straight into `presentation.appellations.forms[].qualifier`. Checking every
+`forms=[...]` tuple in `cases.py` confirms **every "own"/"you"/"bad"-marked
+chip in every one of the ten cases already carries a real qualifier string**:
+Fang → `"leur nom"`, Ekpeye → `"leur nom, et celui de tous"`, Traoré's Tarawele
+→ `"la forme mandingue"`, Nigeria → `"votre recherche · 1914"`, the Mandinka
+typo lead → `"le nom que se donnent les Mandé de Gambie"`. This is real,
+already-flowing production data — not illustrative board-only flourish, which
+was the wrong turn §1a took investigating cause #7 in isolation.
+
+The bug was in `AppellationsBlock`'s `FormsList`: each marker
+(`searched`/`selfGiven`/`problematic`) rendered a **fixed** copy string on
+every width, and a _separate_, desktop-only span showed `item.qualifier` —
+so on mobile the qualifier was always thrown away, and on desktop it was
+shown as a redundant second line next to the fixed string rather than
+replacing it. Fixed by a `markedTags()` helper: each marker now resolves to
+`item.qualifier ?? <its generic default>`, rendered identically at every
+width; the old desktop-only qualifier span survives only for the unmarked
+case (an ordinary qualifier with no marker at all, e.g. "Mandingue · français
+colonial" — that one is still deliberately desktop-only, matching every board
+that has one). A card can legitimately carry more than one marker at once
+(the pre-existing test for a `searched` + `selfGiven` + `problematic` form in
+the same chip governs this), so `markedTags` returns a list rather than the
+first match — collapsing to one was tried first and broke that test for a
+reason worth keeping: real board data never combines markers, but the
+component's contract shouldn't quietly assume that.
+
+No copy string needed changing — `copy.selfGivenMark` ("le nom qu'ils se
+donnent") is never reached by any of the ten fixture cases any more, since
+every self-given chip now has a qualifier. It stays as the true fallback for
+whenever the corpus genuinely gives none.
+
+**Verified against real board diffs, not reasoning.** Re-running `fang`,
+`ekpeye`, `traore`, `nigeria` and `introuvable` at `mobile-day` after the fix:
+all five now pass the **text** assertion completely — zero diff in the block
+text array. Every one of them now fails only at the pixel-geometry stage
+(1.3 px to 5.3 px root-height mismatches), which is exactly the state the
+plan's §3 describes as "then the pixels." Full 40-board run: still 2/40 pass
+outright (a board only passes when _both_ stages clear), but **all forty now
+reach the pixel stage** — the phase-11 text-cause work (§3's ten-item table)
+is complete. Unit suite: 348/348, typecheck clean.
+
 ## 2. The rule that decides every remaining fix
 
 `docs/design/search-result-charter.md`, as PR #1188 rewrote it, gives three
