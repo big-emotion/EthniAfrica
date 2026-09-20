@@ -5,6 +5,7 @@ import {
   PlatesBlock,
   type FeedPlateItem,
 } from "@/components/search/feed/PlatesBlock";
+import { getLocalizedRoute } from "@/lib/routing";
 
 const anecdote: FeedPlateItem = {
   type: "anecdote",
@@ -232,7 +233,7 @@ describe("PlatesBlock", () => {
     const link = screen.getByRole("link", { name: "Voir plus" });
     expect(link).toHaveAttribute(
       "href",
-      "/fr/dossiers/anecdotes?a=fact-frontiere"
+      `${getLocalizedRoute("fr", "anecdotes")}?a=fact-frontiere`
     );
     expect(link).toHaveClass("hidden", "min-[1200px]:inline-flex");
   });
@@ -245,7 +246,7 @@ describe("PlatesBlock", () => {
 
     expect(screen.getByRole("link", { name: "Voir plus" })).toHaveAttribute(
       "href",
-      "/fr/dossiers/proverbes?pays=SEN#proverb-langue"
+      `${getLocalizedRoute("fr", "proverbs")}?pays=SEN#proverb-langue`
     );
   });
 
