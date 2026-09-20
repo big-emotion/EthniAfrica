@@ -126,7 +126,10 @@ describe("ConsentBanner", () => {
     // After clicking, the customization panel should be visible
     expect(screen.getByText("Cookies essentiels")).toBeInTheDocument();
     expect(screen.getByText("Cookies analytiques")).toBeInTheDocument();
-    expect(screen.getByText("Cookies fonctionnels")).toBeInTheDocument();
+    // The functional switch only ever cleared a Sentry user context, and no
+    // Sentry runs: a switch that controls nothing is not offered.
+    expect(screen.queryByText("Cookies fonctionnels")).not.toBeInTheDocument();
+    expect(screen.queryByText(/Sentry/)).not.toBeInTheDocument();
   });
 
   it("essential toggle is disabled", async () => {
@@ -269,7 +272,7 @@ describe("ConsentBanner", () => {
     await user.click(screen.getByRole("button", { name: "Customise" }));
     expect(screen.getByText("Essential cookies")).toBeVisible();
     expect(screen.getByText("Analytics cookies")).toBeVisible();
-    expect(screen.getByText("Functional cookies")).toBeVisible();
+    expect(screen.queryByText("Functional cookies")).not.toBeInTheDocument();
     expect(
       screen.getByRole("button", { name: "Save preferences" })
     ).toBeVisible();

@@ -27,20 +27,20 @@ export function ConsentBanner() {
   const [showCustomize, setShowCustomize] = useState(false);
   // Track local overrides for preferences - null means use consentState
   const [localAnalytics, setLocalAnalytics] = useState<boolean | null>(null);
-  const [localFunctional, setLocalFunctional] = useState<boolean | null>(null);
   const bannerRef = useRef<HTMLDivElement>(null);
   const firstFocusableRef = useRef<HTMLButtonElement>(null);
 
-  // Derive preferences from consent state with local overrides
+  // Derive preferences from consent state with local overrides. `functional`
+  // is carried through untouched: the banner no longer offers it, because the
+  // only thing it ever controlled was a Sentry user context and no Sentry runs.
   const preferences: ConsentPreferences = useMemo(
     () => ({
       essential: true,
       analytics: localAnalytics ?? consentState.preferences.analytics,
-      functional: localFunctional ?? consentState.preferences.functional,
+      functional: consentState.preferences.functional,
     }),
     [
       localAnalytics,
-      localFunctional,
       consentState.preferences.analytics,
       consentState.preferences.functional,
     ]
@@ -106,10 +106,6 @@ export function ConsentBanner() {
 
   const handleToggleAnalytics = useCallback((checked: boolean) => {
     setLocalAnalytics(checked);
-  }, []);
-
-  const handleToggleFunctional = useCallback((checked: boolean) => {
-    setLocalFunctional(checked);
   }, []);
 
   if (!showBanner) {
@@ -195,27 +191,6 @@ export function ConsentBanner() {
                   aria-label={copy.analytics}
                   checked={preferences.analytics}
                   onCheckedChange={handleToggleAnalytics}
-                />
-              </div>
-
-              {/* Functional cookies */}
-              <div className="flex items-center justify-between gap-4">
-                <div className="flex flex-col gap-0.5">
-                  <label
-                    htmlFor="functional-switch"
-                    className="text-afh-small font-medium text-foreground"
-                  >
-                    {copy.functional}
-                  </label>
-                  <span className="text-afh-caption text-muted-foreground">
-                    {copy.functionalDescription}
-                  </span>
-                </div>
-                <Switch
-                  id="functional-switch"
-                  aria-label={copy.functional}
-                  checked={preferences.functional}
-                  onCheckedChange={handleToggleFunctional}
                 />
               </div>
 

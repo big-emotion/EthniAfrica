@@ -16,10 +16,15 @@ describe("consent copy", () => {
   });
 
   // @req REQ-145
-  it("says audience measurement and error reporting set no cookie", () => {
+  it("says audience measurement sets no cookie", () => {
     expect(consentCopy.fr.analyticsDescription).toMatch(/sans cookie/);
-    expect(consentCopy.fr.functionalDescription).toMatch(/sans cookie/);
     expect(consentCopy.en.analyticsDescription).toMatch(/no cookie/);
-    expect(consentCopy.en.functionalDescription).toMatch(/no cookie/);
+  });
+
+  // @req REQ-145
+  it("offers no choice about a service that is not running", () => {
+    for (const copy of [consentCopy.fr, consentCopy.en]) {
+      expect(JSON.stringify(copy)).not.toMatch(/Sentry/);
+    }
   });
 });
