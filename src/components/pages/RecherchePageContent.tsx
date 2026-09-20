@@ -558,7 +558,7 @@ export function RecherchePageContent() {
             className="relative mx-auto w-full max-w-[640px]"
           >
             <Search
-              className="pointer-events-none absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-afh-text-muted"
+              className="pointer-events-none absolute left-[17px] top-1/2 h-[14.16px] w-[14.16px] -translate-y-1/2 text-afh-text-muted"
               aria-hidden="true"
             />
             <Input
@@ -571,7 +571,7 @@ export function RecherchePageContent() {
               onChange={(event) => suggest.setQuery(event.target.value)}
               onKeyDown={suggest.handleKeyDown}
               onBlur={() => setTimeout(() => suggest.dismiss(), 150)}
-              className="h-12 pl-10 pr-12 text-afh-small"
+              className="h-12 pl-[40.16px] pr-12 text-afh-small"
               autoComplete="off"
             />
             <button

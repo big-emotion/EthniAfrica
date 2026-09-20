@@ -85,7 +85,7 @@ export function ShortsBlock({
             reviewed ? (
               <Link
                 href={allHref}
-                className={`relative inline-block text-afh-small font-semibold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] after:absolute after:-inset-y-[10px] after:inset-x-0 ${CHARTER_FOCUS_RING}`}
+                className={`relative inline-block text-afh-small font-semibold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] underline after:absolute after:-inset-y-[10px] after:inset-x-0 ${CHARTER_FOCUS_RING}`}
               >
                 {copy.seeAll} →
               </Link>
@@ -103,7 +103,7 @@ export function ShortsBlock({
       <ul
         className={cn(
           "flex snap-x snap-mandatory scroll-px-afh-lg list-none gap-afh-lg overflow-x-auto min-[1200px]:mt-afh-lg min-[1200px]:gap-afh-2xl",
-          reviewed ? "mt-[9px]" : "mt-afh-md",
+          "mt-afh-md",
           !reviewed && "pb-afh-md"
         )}
         aria-label={resolvedTitle}

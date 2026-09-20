@@ -31,7 +31,7 @@ export function SearchFeedSectionHeading({
         >
           <InlineMarkup text={title} />
         </h2>
-        {action ? <div className="-my-[9px] shrink-0">{action}</div> : null}
+        {action ? <div className="shrink-0">{action}</div> : null}
       </div>
       {subtitle ? (
         <p

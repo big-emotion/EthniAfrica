@@ -4,6 +4,7 @@ import { describe, expect, it, vi } from "vitest";
 
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { SearchFeed } from "@/components/search/SearchFeed";
+import { getFamilyRoute } from "@/lib/routing";
 import { FEED_CASES } from "@/lib/search/__fixtures__/feedCases";
 import type { SearchResult } from "@/types/afrik-frontend";
 
@@ -137,7 +138,7 @@ describe("SearchFeed", () => {
                 kind: "Famille",
                 name: "Mandé",
                 meta: "31 peuples",
-                href: "/fr/familles/mande",
+                href: getFamilyRoute("fr", "mande"),
               },
             ],
           },

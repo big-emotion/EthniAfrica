@@ -329,8 +329,10 @@ test.describe("search-feed forty-board visual parity", () => {
           entry.theme === "night" ? /\bdark\b/ : /^(?!.*\bdark\b)/
         );
         await page.addStyleTag({
+          // The dev-server indicator floats over the feed's bottom-left corner and
+          // lands in the screenshot, which is not part of the page under test.
           content:
-            '[data-testid="site-header"] { visibility: hidden !important; }',
+            '[data-testid="site-header"], nextjs-portal { visibility: hidden !important; }',
         });
         await expect(expectedPage.locator(BOARD_ROOT)).toHaveCSS(
           "width",

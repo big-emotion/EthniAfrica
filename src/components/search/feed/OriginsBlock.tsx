@@ -116,7 +116,7 @@ export function OriginsBlock({
                 {reviewed ? (
                   <a
                     href="#sources"
-                    className={`text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)] ${CHARTER_FOCUS_RING}`}
+                    className={`text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)] underline ${CHARTER_FOCUS_RING}`}
                   >
                     Voir la source
                   </a>
@@ -134,7 +134,7 @@ export function OriginsBlock({
           <div className="mt-afh-lg">
             <a
               href="#contribution"
-              className={`text-afh-small font-bold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] ${CHARTER_FOCUS_RING}`}
+              className={`text-afh-small font-bold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] underline ${CHARTER_FOCUS_RING}`}
             >
               Il en manque une ? Proposer une source →
             </a>

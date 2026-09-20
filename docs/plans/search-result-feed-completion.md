@@ -459,86 +459,80 @@ build-storybook` bundles it without error, and a full local run of
   term (`/\badmissions?\b/i`) — an accidental English-word match, not an
   actual reference, fixed by rewording. Left as a note for whoever adds the
   next story: the scan runs on every line in `src`, not just source code.
-- The dead-code ceiling — **partially fixed, and precisely scoped.**
-  `feedCases.ts` is now a declared knip entry (moved `files` from 4/3 to
-  3/3, matching the existing pattern for `resultGrammar.ts` — knip's
-  `--production` mode discounts anything only reachable from a test/spec
-  entry regardless of the general `e2e/**/*.ts` pattern already in scope),
-  and two genuinely dead types in `feedBlockTypes.ts` (`FeedImage`,
-  `FeedCompanionSource`, confirmed unread anywhere via grep) are deleted,
-  moving `types` from 13 to 11. The ceiling itself stays at 10 rather than
-  being bumped to 11: `checkDeadCode.ts`'s own comment trail shows every
-  prior ceiling raise was justified item by item (the last one names
-  exactly which three `sources.ts` types and why they're held for a
-  parallel workstream), and the remaining 11 unused types include those
-  three plus eight more across subsystems this session has no context on
-  (games, consent, module-zero, revalidate schema, search companions, an
-  authorized-source catalog). Bumping the ceiling to paper over unaccounted
-  debt is exactly what the ratchet exists to prevent, so `check:dead` stays
-  red — honestly, for a reason now precisely named, rather than silently
-  widened.
+- The dead-code ceiling — **fixed.** `feedCases.ts` is a declared knip
+  entry (`files` 4/3 to 3/3, matching the existing pattern for
+  `resultGrammar.ts`; knip's `--production` mode discounts anything only
+  reachable from a test or spec entry), and three genuinely unread types
+  ETNI-1966 itself introduced are deleted (`FeedImage`,
+  `FeedCompanionSource`, `SearchCompanionSelections`), taking `types` from
+  13 to 10. The ceiling was not raised: the ten that remain are the three
+  `sources.ts` types held for a parallel workstream plus seven in subsystems
+  outside this work, and they were already inside the recorded ceiling.
+  `npm run check:dead` passes.
 - The live confirming run of the rewritten consolidation spec, once
   recette's egress quota clears (an infrastructure question, not a code
   one — confirmed via the live dev-server check in §1e:
   `exceed_egress_quota`, "the project owner must upgrade their plan or
   remove spend caps to restore service").
-- Phase 11's pixel-convergence pass (§3) — all forty boards reach the pixel
-  stage (§1c), none pass it yet, and this session isolated where the
-  remaining gap actually concentrates rather than continuing to chase it
-  page-wide. First confirmed the diff is **deterministic**: `mande
-mobile-day` measured at the exact same value (27617/1459976 px, 1.8916%)
-  on two consecutive runs with zero code changes between them, ruling out
-  render-timing noise as the explanation before reading anything into the
-  number.
+- Phase 11's pixel-convergence pass (§3) — **not finished**. `mande
+mobile-day` now passes the text and block-geometry stages exactly (every
+  block `dy`/`dh` is 0.000) and stands at about 19.7k of 1.46M differing
+  pixels (1.35%) against the 1% ceiling; no board passes the pixel stage.
+  This session fixed the systematic geometry causes and measured what is
+  left, and the measurement changes what the remaining work is.
 
-  Then read the harness's own `diff.png` attachment (playwright-report's
-  `data/` dir; not surfaced by default in the CLI failure message, only in
-  the trace) rather than guessing from the percentage alone — the first
-  time this session actually looked at a pixel diff visualization instead
-  of two side-by-side screenshots. It shows two visually distinct kinds of
-  difference, not one: thin, sparse red outlines on button and chip
-  borders throughout the page (consistent with §4's sub-pixel font/border
-  rounding, already documented as an accepted, tiny residual), and a
-  single block of dense, saturated red noise covering almost the entire
-  Mansa Musa illustration in the Images shelf — visually the dominant
-  contributor by area, on a page with otherwise sparse, thin differences.
-  `ImageBlock.tsx`'s `<Image>` already sets `unoptimized={reviewed}` and
-  matches the board's own `width: 300px; height: 375px; object-fit: cover`
-  exactly, so it is not the known "Next.js re-encodes the asset" failure
-  mode. Incomplete decode at screenshot time was the second candidate and
-  is **ruled out**, not just assumed away: `waitForFeedAssets`
-  (`e2e/search-feed-visual-proof.spec.ts`) already `await`s
-  `image.decode()` on every `<img>` under `Promise.allSettled` and throws
-  if any decode rejects or a `naturalWidth` stays zero, before the
-  function returns and before either screenshot is taken.
+  Geometry causes found and fixed, each by comparing the board's and the
+  app's element rectangles rather than by reading percentages:
+  - the section heading's action wrapper carried `-my-[9px]`, which removed
+    the link from the row's height; the board's row is 26px (a 16px/1.5
+    link baseline-aligned against a 19.2px heading). Removing the negative
+    margin restored the 26px row, so the shorts list's `mt-[9px]` and the
+    plates list's `top-px` — both compensating for it — were removed too;
+  - the anecdote badge wrapper (`leading-[normal]`) and the prose block's
+    badge (`leading-[var(--afh-leading-eyebrow)]`) inherited the 24px body
+    line height where the board's do not, +1.203px per card;
+  - the appellation chip aligned its tag with `items-center` where the board
+    uses `items-baseline`, which put the "votre recherche" tag 2.4px high;
+  - a lens count's spacing is now `ml-[3.515625px]`, the measured advance of
+    the NBSP the board uses, so the accessible name stays clean and the
+    pills land on the board's x positions to the third decimal;
+  - the search field's icon is 14.16px, not 20px (the board's 16px SVG is
+    flex-shrunk by the input's 100% width), and its text starts at 53.16px;
+  - the board underlines its standalone text links (`Tout voir`, `Voir la
+source`, `+N autres`, the peoples and quiz links); the app did not;
+  - the harness screenshot included Next's dev indicator in the feed's
+    bottom-left corner, which made the diff vary between runs; it is now
+    hidden (`nextjs-portal`).
 
-  The `srcset` hypothesis was checked against the real elements, not
-  guessed: a temporary log in the harness (reverted) printed both
-  `<img>` elements' attributes after readiness. Neither carries `srcset`
-  or `sizes`; both report `natural` 1080×1350, `rendered` 300×375, DPR 1,
-  and the same file path on their respective origins. So the geometry and
-  source are identical from every angle this session could read. The one
-  attribute that differed was `decoding`: the app's `next/image` sets
-  `"async"` by default, the board's plain `<img>` carries none. Setting
-  `decoding="auto"` on the reviewed `ImageBlock` image (`ImageBlock.tsx`,
-  kept) moved the same case from **1.8916% to 1.7660%** — a real but
-  small effect (~1,250 px of ~27,600), so decode mode is a contributor,
-  not the dominant cause.
+  What the remaining 1.35% is made of. A histogram of per-pixel channel
+  differences on `mande mobile-day` gives **15.6k pixels off by exactly one
+  level** (of 19.7k), about 1.1% of the page on their own, and only about
+  4k pixels (0.28%) with a visible difference. The harness counts any
+  unequal channel (`e2e/support/search-feed-visual.ts`), so the one-level
+  noise alone exceeds the ceiling. It sits on anti-aliased glyph and border
+  edges; it is absent from the filled "Tout" pill and present on the "Jeux"
+  pill's text, so it is not simply about fractional y. Computed text
+  properties, colours, font files (byte-identical), and text-node rectangles
+  (to three decimals) are identical between board and app.
+  Compositing matters: forcing a composited layer on the app's feed root
+  raised the one-level count to 17.5k, and forcing it on both roots lowered
+  it to 12.7k, so the two pages are being rasterised down different paths.
+  Tried and **ruled out**, each with no change to the count: `-webkit-font-smoothing`,
+  `color-scheme`, an opaque `html`/`body` background, the board's own
+  `@font-face` declarations, an `overflow: hidden` ancestor. The cause is not
+  yet found; it is a property of how the two pages are painted, not of a
+  block's markup, and it must be resolved (or the comparison made
+  tolerant of one-level differences, a decision the plan reserves) before
+  the per-board pass can finish.
 
-  What that leaves, honestly: the dense noise over the illustration is
-  still mostly unexplained. Remaining candidates this session did not
-  test are the compositing path (the image sits inside an
-  `overflow-hidden rounded-afh-lg` article, and a rounded clip can move a
-  large raster onto a different resampling route than an unclipped one)
-  and Chromium's scaled-JPEG decode (1080→300 is a 3.6× reduction). Both
-  are checkable the same way — one temporary probe, one re-run, compare
-  the percentage — and neither was attempted here.
-
-  This reframes the remaining phase-11 gap for whoever continues it: not
-  "forty boards each need diffuse, page-wide pixel debugging," but "the
-  illustration blocks are the concentrated, measurable target, with the
-  border-edge noise elsewhere an accepted, documented residual, and
-  `srcset` and decode timing already eliminated."
+  A correction to the previous version of this section, which is kept here
+  because the error is instructive: it reported that `decoding="auto"` on the
+  reviewed `ImageBlock` image moved `mande mobile-day` from 1.8916% to
+  1.7660%. That was wrong. The comparison was made across other changes; a
+  clean A/B afterwards showed **no effect at all**, and the line was
+  removed. Decode mode is not a contributor. The dense red noise over the
+  illustration that section described was not reproduced in the regions of the
+  diff inspected this session (the page top and the owed block).
 
 ## 2. The rule that decides every remaining fix
 

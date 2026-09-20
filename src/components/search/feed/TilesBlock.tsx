@@ -80,7 +80,7 @@ export function TilesBlock({
         <div className="mt-afh-lg">
           <Link
             href={actionHref}
-            className={`text-afh-small font-bold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] ${CHARTER_FOCUS_RING}`}
+            className={`text-afh-small font-bold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] underline ${CHARTER_FOCUS_RING}`}
           >
             {actionLabel}
           </Link>

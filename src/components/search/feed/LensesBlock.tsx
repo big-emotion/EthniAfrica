@@ -61,7 +61,7 @@ export function LensesBlock({
               <span
                 className={cn(
                   "font-semibold",
-                  reviewed && "ml-1",
+                  reviewed && "ml-[3.515625px]",
                   selected ? "text-afh-bg" : "text-afh-text-soft"
                 )}
               >

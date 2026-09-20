@@ -70,7 +70,6 @@ export function ImageBlock({
             src={item.image.src}
             alt={item.image.alt}
             unoptimized={reviewed}
-            decoding={reviewed ? "auto" : undefined}
             width={300}
             height={375}
             sizes="300px"

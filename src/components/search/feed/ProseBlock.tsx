@@ -49,10 +49,14 @@ export function ProseBlock({
           />
         ) : standing ? (
           <div className="mt-afh-lg flex flex-wrap items-center gap-afh-md">
-            <SourceStandingBadge standing={standing} language={language} />
+            <SourceStandingBadge
+              standing={standing}
+              language={language}
+              className="leading-[var(--afh-leading-eyebrow)]"
+            />
             <a
               href="#sources"
-              className={`text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)] ${CHARTER_FOCUS_RING}`}
+              className={`text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)] underline ${CHARTER_FOCUS_RING}`}
             >
               Voir la source
             </a>

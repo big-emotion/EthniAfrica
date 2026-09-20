@@ -115,7 +115,7 @@ function FormsList({
             data-self-given={item.selfGiven === true || undefined}
             data-problematic={item.problematic === "recorded" || undefined}
             className={cn(
-              "inline-flex items-center gap-afh-md rounded-afh-full border px-afh-lg py-afh-xs",
+              "inline-flex items-baseline gap-afh-md rounded-afh-full border px-afh-lg py-afh-xs",
               item.problematic === "recorded"
                 ? "border-[color:var(--afh-colonial-ink)]"
                 : item.searched
@@ -154,6 +154,7 @@ function FormsList({
             href={originsHref}
             className={cn(
               "relative inline-flex items-center px-afh-xs text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)]",
+              reviewed && "underline",
               reviewed
                 ? "after:absolute after:-inset-y-[5px] after:inset-x-0"
                 : "min-h-11",

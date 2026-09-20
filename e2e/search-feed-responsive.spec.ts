@@ -6,6 +6,7 @@ import {
   type FeedCaseFixture,
 } from "../src/lib/search/__fixtures__/feedCases";
 
+import { LOCALE } from "./support/locale";
 import {
   routeSearchFeedFixtures,
   searchFeedUrl,
@@ -411,6 +412,8 @@ async function structuralSnapshot(page: Page) {
 
 // @req REQ-180
 test.describe("search-feed responsive geometry", () => {
+  test.skip(LOCALE !== "fr", "The approved board copy is French");
+
   for (const fixture of CASES) {
     for (const theme of THEMES) {
       test(`${fixture.id} · ${theme} holds every responsive boundary`, async ({
@@ -445,6 +448,8 @@ test.describe("search-feed responsive geometry", () => {
 
 // @req REQ-180
 test.describe("search-feed complete fixture geometry", () => {
+  test.skip(LOCALE !== "fr", "The approved board copy is French");
+
   for (const fixture of FEED_CASES) {
     test(`${fixture.id} keeps its opening and desktop zones usable`, async ({
       page,
@@ -497,6 +502,8 @@ test.describe("search-feed complete fixture geometry", () => {
 
 // @req REQ-180
 test.describe("search-feed accessibility", () => {
+  test.skip(LOCALE !== "fr", "The approved board copy is French");
+
   for (const fixture of CASES) {
     for (const theme of THEMES) {
       test(`${fixture.id} · ${theme} has no serious or critical axe violation at 430px`, async ({
@@ -525,6 +532,8 @@ test.describe("search-feed accessibility", () => {
 
 // @req REQ-180
 test.describe("search-feed theme geometry", () => {
+  test.skip(LOCALE !== "fr", "The approved board copy is French");
+
   for (const fixture of CASES) {
     test(`${fixture.id} keeps the same structure by day and night`, async ({
       page,

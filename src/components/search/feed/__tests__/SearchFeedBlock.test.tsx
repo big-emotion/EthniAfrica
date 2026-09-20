@@ -57,6 +57,6 @@ describe("SearchFeedSectionHeading", () => {
     expect(screen.getByText("Chaque origine reste attribuée.")).toBeVisible();
     const action = screen.getByRole("link", { name: "Tout voir" });
     expect(action).toBeVisible();
-    expect(action.parentElement).toHaveClass("-my-[9px]");
+    expect(action.parentElement).toHaveClass("shrink-0");
   });
 });

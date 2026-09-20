@@ -90,7 +90,7 @@ export function QuizBlock({
             <span>{questionCountLabel}</span>
             <a
               href={allHref}
-              className="font-bold text-[color:var(--accent-ink)]"
+              className="font-bold text-[color:var(--accent-ink)] underline"
             >
               {copy.labels.allQuestions} →
             </a>
@@ -138,7 +138,7 @@ export function QuizBlock({
         {reviewed ? (
           <a
             href={allHref}
-            className="font-bold text-[color:var(--accent-ink)]"
+            className="font-bold text-[color:var(--accent-ink)] underline"
           >
             {copy.labels.allQuestions} →
           </a>

@@ -13,10 +13,6 @@ import {
   searchCompanionSubjectKey,
 } from "@/lib/supabase/queries/afrik/searchCompanionRelations";
 
-export type SearchCompanionSelections = Awaited<
-  ReturnType<typeof getSearchCompanionSelections>
->;
-
 /** Resolve exact/ring-1 targets, then select every companion catalog once. */
 // @req REQ-180
 export async function getSearchCompanionSelections(

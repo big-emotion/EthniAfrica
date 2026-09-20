@@ -4,6 +4,8 @@ import {
   FEED_CASES,
   type FeedCaseFixture,
 } from "../../src/lib/search/__fixtures__/feedCases";
+import { LOCALE } from "./locale";
+import { getLocalizedRoute } from "../../src/lib/routing";
 import type {
   SearchLead,
   SearchNearName,
@@ -216,5 +218,5 @@ export async function routeSearchFeedFixtures(page: Page): Promise<void> {
 }
 
 export function searchFeedUrl(fixture: FeedCaseFixture): string {
-  return `/fr/atlas/recherche?q=${encodeURIComponent(fixture.query)}`;
+  return `${getLocalizedRoute(LOCALE, "search")}?q=${encodeURIComponent(fixture.query)}`;
 }
