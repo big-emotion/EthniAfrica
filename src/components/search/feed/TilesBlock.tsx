@@ -1,3 +1,4 @@
+import { FEED_TEXT_LINK_HIT_AREA } from "@/components/search/feed/feedHitArea";
 import Link from "next/link";
 
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
@@ -64,7 +65,7 @@ export function TilesBlock({
             {item.href ? (
               <Link
                 href={item.href}
-                className={`flex min-h-11 h-full flex-col justify-center rounded-afh-lg bg-afh-bg-warm p-afh-lg no-underline ${CHARTER_FOCUS_RING}`}
+                className={`flex min-h-11 h-full flex-col justify-center rounded-afh-lg bg-afh-bg-warm p-afh-lg no-underline ${FEED_TEXT_LINK_HIT_AREA} ${CHARTER_FOCUS_RING}`}
               >
                 <TileContent item={item} />
               </Link>
@@ -80,7 +81,7 @@ export function TilesBlock({
         <div className="mt-afh-lg">
           <Link
             href={actionHref}
-            className={`text-afh-small font-bold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] underline ${CHARTER_FOCUS_RING}`}
+            className={`text-afh-small font-bold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] underline ${FEED_TEXT_LINK_HIT_AREA} ${CHARTER_FOCUS_RING}`}
           >
             {actionLabel}
           </Link>

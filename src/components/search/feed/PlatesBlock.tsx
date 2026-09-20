@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { CompanionRelationLabel } from "@/components/search/feed/CompanionRelationLabel";
+import { FEED_TEXT_LINK_HIT_AREA } from "@/components/search/feed/feedHitArea";
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { SearchFeedSectionHeading } from "@/components/search/feed/SearchFeedSectionHeading";
 import { SourceStandingBadge } from "@/components/sources/SourceStandingBadge";
@@ -163,7 +164,7 @@ export function PlatesBlock({
             reviewed ? (
               <a
                 href={allHref}
-                className={`relative inline-block text-afh-small font-semibold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] underline after:absolute after:-inset-y-[10px] after:inset-x-0 ${CHARTER_FOCUS_RING}`}
+                className={`inline-block text-afh-small font-semibold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] underline ${FEED_TEXT_LINK_HIT_AREA} ${CHARTER_FOCUS_RING}`}
               >
                 {copy.seeAll} →
               </a>
@@ -177,7 +178,7 @@ export function PlatesBlock({
         aria-label={resolvedTitle}
         className={
           reviewed
-            ? "mt-afh-lg flex list-none items-stretch gap-afh-lg overflow-hidden min-[1200px]:gap-afh-2xl"
+            ? "mt-afh-lg flex list-none items-stretch gap-afh-lg overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden min-[1200px]:gap-afh-2xl"
             : "mt-afh-lg flex snap-x snap-mandatory scroll-px-afh-lg list-none items-stretch gap-afh-lg overflow-x-auto pb-afh-md min-[1200px]:gap-afh-2xl"
         }
       >

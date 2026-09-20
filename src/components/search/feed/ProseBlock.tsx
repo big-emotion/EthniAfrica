@@ -1,3 +1,4 @@
+import { FEED_TEXT_LINK_HIT_AREA } from "@/components/search/feed/feedHitArea";
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { InlineMarkup } from "@/components/search/feed/InlineMarkup";
 import { SearchFeedEvidenceAction } from "@/components/search/feed/SearchFeedEvidenceAction";
@@ -56,7 +57,7 @@ export function ProseBlock({
             />
             <a
               href="#sources"
-              className={`text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)] underline ${CHARTER_FOCUS_RING}`}
+              className={`text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)] underline ${FEED_TEXT_LINK_HIT_AREA} ${CHARTER_FOCUS_RING}`}
             >
               Voir la source
             </a>

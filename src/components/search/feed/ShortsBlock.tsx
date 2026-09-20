@@ -7,6 +7,7 @@ import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import type { FlagFormTarget } from "@/components/flags/FlagForm";
 import { ActionLink } from "@/components/ui/ActionLink";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
+import { FEED_TEXT_LINK_HIT_AREA } from "@/components/search/feed/feedHitArea";
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { CompanionRelationLabel } from "@/components/search/feed/CompanionRelationLabel";
 import { SearchFeedContributionAction } from "@/components/search/feed/SearchFeedContributionAction";
@@ -85,7 +86,7 @@ export function ShortsBlock({
             reviewed ? (
               <Link
                 href={allHref}
-                className={`relative inline-block text-afh-small font-semibold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] underline after:absolute after:-inset-y-[10px] after:inset-x-0 ${CHARTER_FOCUS_RING}`}
+                className={`inline-block text-afh-small font-semibold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] underline ${FEED_TEXT_LINK_HIT_AREA} ${CHARTER_FOCUS_RING}`}
               >
                 {copy.seeAll} →
               </Link>
@@ -124,7 +125,7 @@ export function ShortsBlock({
                 variant="ghost"
                 className={
                   reviewed
-                    ? "relative h-auto min-h-0 justify-start whitespace-normal p-0 text-left text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)] underline after:absolute after:-inset-y-[3px] after:inset-x-0"
+                    ? `h-auto min-h-0 justify-start whitespace-normal p-0 text-left text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)] underline ${FEED_TEXT_LINK_HIT_AREA}`
                     : "h-auto min-h-11 whitespace-normal px-0 text-left text-afh-caption text-[color:var(--accent-ink)]"
                 }
               />

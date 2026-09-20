@@ -94,7 +94,10 @@ async function expectEveryRailEndReachable(page: Page): Promise<void> {
       }
 
       rail.scrollLeft = rail.scrollWidth;
-      const last = rail.lastElementChild as HTMLElement;
+      // A child hidden at this width (display: none) has no box to reach.
+      const last = Array.from(rail.children)
+        .reverse()
+        .find((child) => child.getClientRects().length > 0) as HTMLElement;
       const railRect = rail.getBoundingClientRect();
       const lastRect = last.getBoundingClientRect();
       return [
@@ -288,6 +291,16 @@ async function expectVisibleControlsUsable(page: Page): Promise<void> {
           labelledControl.labels?.item(0) ??
           element;
         const rect = hitTarget.getBoundingClientRect();
+        // A link may grow its tappable area with an absolutely positioned
+        // ::after; getBoundingClientRect() does not see it.
+        const pseudo = getComputedStyle(hitTarget, "::after");
+        const pseudoReach =
+          pseudo.position === "absolute" && pseudo.content !== "none"
+            ? {
+                width: parseFloat(pseudo.width),
+                height: parseFloat(pseudo.height),
+              }
+            : { width: 0, height: 0 };
         const label =
           element.getAttribute("aria-label") ??
           element.textContent?.trim().replace(/\s+/g, " ").slice(0, 80) ??
@@ -321,8 +334,8 @@ async function expectVisibleControlsUsable(page: Page): Promise<void> {
         return {
           label,
           tag: element.tagName.toLowerCase(),
-          width: rect.width,
-          height: rect.height,
+          width: Math.max(rect.width, pseudoReach.width || 0),
+          height: Math.max(rect.height, pseudoReach.height || 0),
           left: rect.left,
           right: rect.right,
           clippedBy,

@@ -1,3 +1,4 @@
+import { FEED_TEXT_LINK_HIT_AREA } from "@/components/search/feed/feedHitArea";
 import { SourceStandingBadge } from "@/components/sources/SourceStandingBadge";
 import { InlineMarkup } from "@/components/search/feed/InlineMarkup";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
@@ -50,7 +51,7 @@ export function OriginsBlock({
       <ul
         className={
           reviewed
-            ? "mt-afh-lg flex list-none gap-afh-lg overflow-hidden min-[1200px]:mt-afh-2xl min-[1200px]:grid min-[1200px]:grid-cols-2 min-[1200px]:gap-afh-2xl min-[1200px]:overflow-visible"
+            ? "mt-afh-lg flex list-none gap-afh-lg overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden min-[1200px]:mt-afh-2xl min-[1200px]:grid min-[1200px]:grid-cols-2 min-[1200px]:gap-afh-2xl min-[1200px]:overflow-visible"
             : "mt-afh-lg flex snap-x snap-mandatory scroll-px-afh-lg list-none gap-afh-lg overflow-x-auto pb-afh-md min-[1200px]:grid min-[1200px]:grid-cols-2 min-[1200px]:gap-afh-2xl min-[1200px]:overflow-visible min-[1200px]:snap-none"
         }
       >
@@ -116,7 +117,7 @@ export function OriginsBlock({
                 {reviewed ? (
                   <a
                     href="#sources"
-                    className={`text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)] underline ${CHARTER_FOCUS_RING}`}
+                    className={`text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)] underline ${FEED_TEXT_LINK_HIT_AREA} ${CHARTER_FOCUS_RING}`}
                   >
                     Voir la source
                   </a>
@@ -134,7 +135,7 @@ export function OriginsBlock({
           <div className="mt-afh-lg">
             <a
               href="#contribution"
-              className={`text-afh-small font-bold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] underline ${CHARTER_FOCUS_RING}`}
+              className={`text-afh-small font-bold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] underline ${FEED_TEXT_LINK_HIT_AREA} ${CHARTER_FOCUS_RING}`}
             >
               Il en manque une ? Proposer une source →
             </a>

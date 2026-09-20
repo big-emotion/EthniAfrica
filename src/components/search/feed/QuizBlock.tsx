@@ -1,5 +1,6 @@
 "use client";
 
+import { FEED_TEXT_LINK_HIT_AREA } from "@/components/search/feed/feedHitArea";
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { QuizAnswerReveal } from "@/components/quiz/QuizAnswerReveal";
 import { QuizQuestionCard } from "@/components/quiz/QuizQuestionCard";
@@ -90,7 +91,7 @@ export function QuizBlock({
             <span>{questionCountLabel}</span>
             <a
               href={allHref}
-              className="font-bold text-[color:var(--accent-ink)] underline"
+              className={`font-bold text-[color:var(--accent-ink)] underline ${FEED_TEXT_LINK_HIT_AREA}`}
             >
               {copy.labels.allQuestions} →
             </a>
@@ -138,7 +139,7 @@ export function QuizBlock({
         {reviewed ? (
           <a
             href={allHref}
-            className="font-bold text-[color:var(--accent-ink)] underline"
+            className={`font-bold text-[color:var(--accent-ink)] underline ${FEED_TEXT_LINK_HIT_AREA}`}
           >
             {copy.labels.allQuestions} →
           </a>

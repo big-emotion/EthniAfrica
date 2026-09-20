@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
+import { FEED_TEXT_LINK_HIT_AREA } from "@/components/search/feed/feedHitArea";
 import { InlineMarkup } from "@/components/search/feed/InlineMarkup";
 import { SearchFeedSectionHeading } from "@/components/search/feed/SearchFeedSectionHeading";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
@@ -155,9 +156,7 @@ function FormsList({
             className={cn(
               "relative inline-flex items-center px-afh-xs text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)]",
               reviewed && "underline",
-              reviewed
-                ? "after:absolute after:-inset-y-[5px] after:inset-x-0"
-                : "min-h-11",
+              reviewed ? FEED_TEXT_LINK_HIT_AREA : "min-h-11",
               CHARTER_FOCUS_RING
             )}
           >

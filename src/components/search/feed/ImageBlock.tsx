@@ -64,7 +64,7 @@ export function ImageBlock({
         </p>
         <Link
           href={item.href}
-          className={`relative block h-[375px] ${reviewed ? "w-[300px]" : "w-full"} bg-afh-bg-warm ${CHARTER_FOCUS_RING}`}
+          className={`relative block h-[375px] w-[300px] max-w-full bg-afh-bg-warm ${CHARTER_FOCUS_RING}`}
         >
           <Image
             src={item.image.src}
