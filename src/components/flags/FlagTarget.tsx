@@ -17,6 +17,7 @@ import { FALLBACK_LOCALE } from "@/lib/locale";
 import type { Language } from "@/types/shared";
 import {
   FlagForm,
+  type FlagKind,
   type FlagFormTarget,
   type FlagSubmissionPayload,
 } from "@/components/flags/FlagForm";
@@ -26,6 +27,8 @@ import { trackEvent } from "@/lib/analytics/trackEvent";
 export interface FlagTargetProps {
   language?: Language;
   target: FlagFormTarget;
+  /** Passed through when the mounting surface already knows the report kind. */
+  preferredKind?: FlagKind;
   triggerLabel?: string;
   className?: string;
   /**
@@ -44,9 +47,11 @@ export interface FlagTargetProps {
 }
 
 // @req REQ-012
+// @req REQ-180
 export function FlagTarget({
   language = FALLBACK_LOCALE,
   target,
+  preferredKind,
   triggerLabel,
   className,
   renderTrigger,
@@ -111,6 +116,7 @@ export function FlagTarget({
 
           <FlagForm
             target={target}
+            preferredKind={preferredKind}
             onSubmit={handleSubmit}
             onCancel={() => setOpen(false)}
             renderVerification={({ onSolved, onFailed }) => (

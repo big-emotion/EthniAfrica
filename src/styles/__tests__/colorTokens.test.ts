@@ -64,6 +64,40 @@ function contrastRatio(foreground: string, background: string): number {
   return (values[0] + 0.05) / (values[1] + 0.05);
 }
 
+function ruleBody(selectorStart: string): string {
+  const start = colorCss.indexOf(selectorStart);
+  if (start === -1) throw new Error(`Missing rule ${selectorStart}`);
+  const openingBrace = colorCss.indexOf("{", start);
+  const remaining = colorCss.slice(openingBrace + 1);
+  const closingOffset = remaining.search(/^}/m);
+  if (closingOffset === -1) throw new Error(`Unclosed rule ${selectorStart}`);
+  const closingBrace = openingBrace + 1 + closingOffset;
+  return colorCss.slice(openingBrace + 1, closingBrace);
+}
+
+function declaration(scope: string, name: string): string | undefined {
+  return scope.match(new RegExp(`^\\s*${name}:\\s*([^;]+);`, "im"))?.[1].trim();
+}
+
+function resolveValue(value: string): string {
+  const token = value.match(/^var\((--[a-z0-9-]+)\)$/i)?.[1];
+  return token ? resolvedHex(token) : expandHex(value);
+}
+
+function compositeRgbaOverWhite(value: string): string {
+  const match = value.match(
+    /^rgba\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*,\s*(0?\.\d+|1(?:\.0+)?)\s*\)$/i
+  );
+  if (!match) throw new Error(`Expected rgba() colour, received ${value}`);
+  const alpha = Number(match[4]);
+  const channels = match
+    .slice(1, 4)
+    .map((channel) => Math.round(Number(channel) * alpha + 255 * (1 - alpha)));
+  return `#${channels
+    .map((channel) => channel.toString(16).padStart(2, "0"))
+    .join("")}`;
+}
+
 describe("AFH color tokens", () => {
   // @req REQ-090
   it("keeps small gold text AA-readable on its lightest surfaces", () => {
@@ -98,6 +132,75 @@ describe("AFH color tokens", () => {
           tokenHex(`--afh-cat-${accent}-tint`)
         )
       ).toBeGreaterThanOrEqual(4.5);
+    }
+  );
+});
+
+describe("search-feed semantic colour tokens", () => {
+  const root = ruleBody(":root");
+  const nightTheme = ruleBody(".dark,\n.afh-on-night");
+
+  function themedValue(name: string, theme: "day" | "night"): string {
+    return (
+      (theme === "night" ? declaration(nightTheme, name) : undefined) ??
+      declaration(root, name) ??
+      (() => {
+        throw new Error(`Missing token ${name}`);
+      })()
+    );
+  }
+
+  function accentPair(
+    accent: "ocre" | "terre",
+    theme: "day" | "night"
+  ): { foreground: string; tint: string } {
+    const scope = ruleBody(`.afh-accent-${accent} {`);
+    const nightScope =
+      theme === "night" ? ruleBody(`.dark .afh-accent-${accent},`) : undefined;
+    const value = (name: string) =>
+      declaration(nightScope ?? "", name) ??
+      declaration(scope, name) ??
+      themedValue(name, theme);
+
+    return {
+      foreground: resolveValue(value("--accent-foreground")),
+      tint: resolveValue(value("--accent-tint")),
+    };
+  }
+
+  // The badge overlays photographs, so the lightest possible backdrop is the
+  // lowest-contrast case after the declared translucent dark layer is applied.
+  // @req REQ-180
+  it("keeps the media badge pair identical and AA-readable in both themes", () => {
+    const dayBackground = themedValue("--afh-media-badge-bg", "day");
+    const nightBackground = themedValue("--afh-media-badge-bg", "night");
+    const dayInk = resolveValue(themedValue("--afh-media-badge-ink", "day"));
+    const nightInk = resolveValue(
+      themedValue("--afh-media-badge-ink", "night")
+    );
+
+    expect(dayBackground).toBe("rgba(18, 14, 10, 0.72)");
+    expect(nightBackground).toBe(dayBackground);
+    expect(dayInk).toBe("#f1e7d8");
+    expect(nightInk).toBe(dayInk);
+    expect(
+      contrastRatio(dayInk, compositeRgbaOverWhite(dayBackground))
+    ).toBeGreaterThanOrEqual(4.5);
+  });
+
+  // Search uses ocre for invitations and terre for the verdict. Their light
+  // tints deliberately stay light at night, so their foreground stays dark.
+  // @req REQ-180
+  it.each(["ocre", "terre"] as const)(
+    "keeps the %s foreground AA-readable on its tint by day and night",
+    (accent) => {
+      const day = accentPair(accent, "day");
+      const night = accentPair(accent, "night");
+
+      expect(night).toEqual(day);
+      expect(contrastRatio(day.foreground, day.tint)).toBeGreaterThanOrEqual(
+        4.5
+      );
     }
   );
 });

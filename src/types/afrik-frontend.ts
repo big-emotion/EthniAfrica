@@ -279,6 +279,18 @@ export interface SearchLead {
   similarity: number;
 }
 
+/**
+ * A similar name explicitly qualified by the API for a non-empty search.
+ * Kept separate from `SearchLead`, whose suggestions exist only when the
+ * corpus found no result at all.
+ */
+export interface SearchNearName {
+  type: SearchLead["type"];
+  id: string;
+  name: string;
+  similarity: number;
+}
+
 // ==========================================
 // API ERROR TYPES
 // ==========================================

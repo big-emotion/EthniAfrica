@@ -499,6 +499,259 @@ const options: swaggerJsdoc.Options = {
             },
           },
         },
+        SearchNamingFormV2: {
+          type: "object",
+          description:
+            "One legacy-compatible name form. A qualifier is only returned when the corpus records one; it is never parsed from the form.",
+          properties: {
+            form: { type: "string", example: "Peul" },
+            qualifier: { type: "string" },
+            attestedIn: {
+              type: "array",
+              items: { type: "string" },
+              description:
+                "Country identifiers where this form is attested, when the name record carries them.",
+            },
+          },
+          required: ["form"],
+        },
+        SearchNamingEraV2: {
+          type: "object",
+          properties: {
+            era: {
+              type: "string",
+              enum: [
+                "formerNames",
+                "antiquity",
+                "middleAges",
+                "precolonial",
+                "colonization",
+                "contemporary",
+              ],
+            },
+            text: { type: "string" },
+          },
+          required: ["era", "text"],
+        },
+        SearchNamingOriginFactV2: {
+          type: "object",
+          description:
+            "Structured origin facts retained only when safe for the reader-facing search surface.",
+          properties: {
+            languageCode: { type: "string" },
+            meaning: { type: "string" },
+            imposedBy: { type: "string" },
+            period: { type: "string" },
+          },
+        },
+        SearchNamingEvidenceSourceV2: {
+          type: "object",
+          description:
+            "A hydrated source for a naming assertion. Source identifiers without these details are not exposed as evidence.",
+          properties: {
+            id: { type: "string" },
+            title: { type: "string" },
+            author: { type: "string" },
+            year: { type: "integer" },
+            page: { type: "string" },
+            url: { type: "string", format: "uri" },
+            tier: {
+              type: "string",
+              enum: ["official", "referenced", "unverified", "needs_review"],
+            },
+            reviewedNarrative: { type: "boolean" },
+            bibliographyNumber: { type: "integer" },
+            brokenAt: { type: ["string", "null"], format: "date-time" },
+            citation: { type: "string" },
+          },
+          required: ["id", "title", "tier"],
+        },
+        SearchNamingEvidenceAssertionV2: {
+          type: "object",
+          properties: {
+            id: { type: "string" },
+            statement: { type: "string" },
+            position: { type: "string" },
+            fieldPath: { type: "string" },
+            confidenceScore: {
+              type: "number",
+              minimum: 0,
+              maximum: 1,
+              description:
+                "Computed confidence when the entity class has a confidence record. Its absence means unmeasured, never zero.",
+            },
+            sourceCount: { type: "integer", minimum: 1 },
+            lastHumanAuditAt: {
+              type: ["string", "null"],
+              format: "date-time",
+            },
+          },
+          required: ["statement", "sourceCount", "lastHumanAuditAt"],
+        },
+        SearchNamingEvidenceV2: {
+          type: "object",
+          description:
+            "Complete evidence for one naming assertion: the assertion and every resolved cited source travel together.",
+          properties: {
+            assertion: {
+              $ref: "#/components/schemas/SearchNamingEvidenceAssertionV2",
+            },
+            sources: {
+              type: "array",
+              minItems: 1,
+              items: {
+                $ref: "#/components/schemas/SearchNamingEvidenceSourceV2",
+              },
+            },
+            standing: {
+              type: "string",
+              enum: ["official", "referenced", "unverified", "needs_review"],
+            },
+          },
+          required: ["assertion", "sources", "standing"],
+        },
+        SearchNamingPresentationFormV2: {
+          type: "object",
+          description:
+            "One name form as the search feed can present it, without deriving facts the corpus did not record.",
+          properties: {
+            form: { type: "string" },
+            selfGiven: {
+              type: ["boolean", "null"],
+              description:
+                "True or false only when the corpus classifies the form on this axis; null means it does not.",
+            },
+            qualifier: { type: "string" },
+            origin: {
+              $ref: "#/components/schemas/SearchNamingOriginFactV2",
+            },
+            attestationPeriod: { type: "string" },
+            attestations: {
+              type: "array",
+              items: { type: "string" },
+            },
+            problematic: { type: "string", enum: ["recorded"] },
+            currentUsage: { type: "string", enum: ["recorded"] },
+            claimStatus: {
+              type: "string",
+              enum: ["established", "claimed", "contested"],
+            },
+            evidence: {
+              type: "array",
+              items: {
+                $ref: "#/components/schemas/SearchNamingEvidenceV2",
+              },
+            },
+          },
+          required: ["form", "selfGiven", "attestations", "evidence"],
+        },
+        SearchNamingPositionV2: {
+          type: "object",
+          properties: {
+            statement: { type: "string" },
+            claimStatus: {
+              type: "string",
+              enum: ["established", "claimed", "contested"],
+            },
+            evidence: {
+              type: "array",
+              items: {
+                $ref: "#/components/schemas/SearchNamingEvidenceV2",
+              },
+            },
+          },
+          required: ["claimStatus", "evidence"],
+        },
+        SearchNamingDisagreementV2: {
+          type: "object",
+          properties: {
+            positions: {
+              type: "array",
+              minItems: 1,
+              items: {
+                $ref: "#/components/schemas/SearchNamingPositionV2",
+              },
+            },
+          },
+          required: ["positions"],
+        },
+        SearchNamingPresentationEraV2: {
+          type: "object",
+          description:
+            "A recorded era marker. The feed receives no historical prose through this reader-facing projection.",
+          properties: {
+            era: {
+              type: "string",
+              enum: [
+                "formerNames",
+                "antiquity",
+                "middleAges",
+                "precolonial",
+                "colonization",
+                "contemporary",
+              ],
+            },
+          },
+          required: ["era"],
+        },
+        SearchNamingPresentationV2: {
+          type: "object",
+          description:
+            "Reader-facing structured naming facts. Missing facts are omitted rather than inferred or rendered as empty prose.",
+          properties: {
+            forms: {
+              type: "array",
+              items: {
+                $ref: "#/components/schemas/SearchNamingPresentationFormV2",
+              },
+            },
+            eras: {
+              type: "array",
+              items: {
+                $ref: "#/components/schemas/SearchNamingPresentationEraV2",
+              },
+            },
+            disagreements: {
+              type: "array",
+              items: {
+                $ref: "#/components/schemas/SearchNamingDisagreementV2",
+              },
+            },
+            origin: { type: "string", enum: ["recorded"] },
+            problematic: { type: "string", enum: ["recorded"] },
+            currentUsage: { type: "string", enum: ["recorded"] },
+            evidence: {
+              type: "array",
+              items: {
+                $ref: "#/components/schemas/SearchNamingEvidenceV2",
+              },
+            },
+          },
+          required: ["forms", "eras", "disagreements", "evidence"],
+        },
+        SearchNamingProjectionV2: {
+          type: "object",
+          description:
+            "The server-built naming projection shared by peoples, countries, language families, names and languages in search results.",
+          properties: {
+            selfGiven: { type: "string" },
+            forms: {
+              type: "array",
+              items: { $ref: "#/components/schemas/SearchNamingFormV2" },
+            },
+            origin: { type: "string" },
+            problem: { type: "string" },
+            usageToday: { type: "string" },
+            eras: {
+              type: "array",
+              items: { $ref: "#/components/schemas/SearchNamingEraV2" },
+            },
+            presentation: {
+              $ref: "#/components/schemas/SearchNamingPresentationV2",
+            },
+          },
+          required: ["forms", "eras", "presentation"],
+        },
         SearchResponseData: {
           type: "object",
           description:
@@ -601,6 +854,12 @@ const options: swaggerJsdoc.Options = {
               description:
                 "Near-miss leads (REQ-125), populated only when total is 0: up to 3 suggestions across peoples, countries and language families, ranked by pg_trgm similarity alone (migration 069) below the main search's own fuzzy floor. Always an empty array when total is greater than 0.",
             },
+            nearNames: {
+              type: "array",
+              items: { $ref: "#/components/schemas/SearchNearNameV2" },
+              description:
+                "Qualified similar names (REQ-180) for a non-empty search: up to 3 distinct peoples, countries or language families, ranked by pg_trgm similarity and excluding entities already returned by the search. Always empty for zero-result and quiz-lens searches.",
+            },
           },
           required: [
             "peoples",
@@ -620,6 +879,7 @@ const options: swaggerJsdoc.Options = {
             "languagesTotal",
             "total",
             "leads",
+            "nearNames",
           ],
         },
         SearchLeadV2: {
@@ -640,6 +900,25 @@ const options: swaggerJsdoc.Options = {
               description:
                 "pg_trgm similarity of the folded query against this name, in [0.2, 1].",
               example: 0.27,
+            },
+          },
+          required: ["kind", "id", "name", "similarity"],
+        },
+        SearchNearNameV2: {
+          type: "object",
+          description:
+            "A name qualified by the API as similar to a non-empty search, with its pg_trgm similarity. It is a distinct entity from every returned people, country and language-family result.",
+          properties: {
+            kind: {
+              type: "string",
+              enum: ["people", "country", "family"],
+            },
+            id: { type: "string" },
+            name: { type: "string" },
+            similarity: {
+              type: "number",
+              minimum: 0.2,
+              maximum: 1,
             },
           },
           required: ["kind", "id", "name", "similarity"],
@@ -749,6 +1028,475 @@ const options: swaggerJsdoc.Options = {
             errors: {
               type: "array",
               items: { $ref: "#/components/schemas/ApiErrorEntry" },
+            },
+          },
+          required: ["data", "meta", "errors"],
+        },
+        SearchCompanionSubject: {
+          type: "object",
+          description:
+            "One typed subject used to resolve companion content. The identifier must match its type: PPL_* for people, ISO 3166-1 alpha-3 for countries, FLG_* for language families, ISO 639-3 lowercase for languages, and PAT_* for patronymes.",
+          properties: {
+            entityType: {
+              type: "string",
+              enum: [
+                "people",
+                "country",
+                "languageFamily",
+                "language",
+                "patronyme",
+              ],
+            },
+            entityId: {
+              type: "string",
+              minLength: 1,
+              example: "PPL_BASSA",
+            },
+          },
+          required: ["entityType", "entityId"],
+        },
+        SearchCompanionMatch: {
+          type: "object",
+          description:
+            "Why this individual item is related to the requested subjects. Provenance is item-level because different shelves and items may come from different widening rings.",
+          properties: {
+            relation: {
+              type: "string",
+              enum: [
+                "exact",
+                "linked-family",
+                "linked-people",
+                "linked-country",
+                "recent",
+              ],
+            },
+            entityType: {
+              type: "string",
+              enum: [
+                "people",
+                "country",
+                "languageFamily",
+                "language",
+                "patronyme",
+              ],
+            },
+            entityId: {
+              type: "string",
+              minLength: 1,
+              example: "PPL_BASSA",
+            },
+          },
+          required: ["relation", "entityType", "entityId"],
+        },
+        SearchCompanionSource: {
+          type: "object",
+          properties: {
+            title: { type: "string", minLength: 1 },
+            url: { type: ["string", "null"], format: "uri" },
+            tier: {
+              type: "string",
+              enum: ["official", "referenced", "unverified"],
+            },
+            notes: { type: "string", minLength: 1 },
+          },
+          required: ["title", "url", "tier"],
+        },
+        SearchCompanionPoster: {
+          type: "object",
+          properties: {
+            src: { type: "string", minLength: 1 },
+            alt: { type: "string", minLength: 1 },
+            width: { type: "integer", minimum: 1 },
+            height: { type: "integer", minimum: 1 },
+          },
+          required: ["src", "alt", "width", "height"],
+        },
+        SearchCompanionIllustration: {
+          type: "object",
+          properties: {
+            src: { type: "string", minLength: 1 },
+            alt: { type: "string", minLength: 1 },
+            credit: { type: "string", minLength: 1 },
+            licenceUrl: { type: "string", format: "uri" },
+            filePage: { type: "string", format: "uri" },
+          },
+          required: ["src", "alt", "credit"],
+        },
+        SearchCompanionShort: {
+          type: "object",
+          properties: {
+            id: { type: "string", minLength: 1 },
+            href: { type: "string", minLength: 1 },
+            name: { type: "string", minLength: 1 },
+            description: { type: "string", minLength: 1 },
+            publishedAt: {
+              oneOf: [
+                { type: "string", format: "date" },
+                { type: "string", format: "date-time" },
+              ],
+            },
+            durationSeconds: { type: "integer", minimum: 1 },
+            watchUrl: { type: "string", format: "uri" },
+            poster: { $ref: "#/components/schemas/SearchCompanionPoster" },
+            source: { $ref: "#/components/schemas/SearchCompanionSource" },
+            match: { $ref: "#/components/schemas/SearchCompanionMatch" },
+          },
+          required: [
+            "id",
+            "href",
+            "name",
+            "description",
+            "publishedAt",
+            "durationSeconds",
+            "watchUrl",
+            "poster",
+            "source",
+            "match",
+          ],
+        },
+        SearchCompanionAnecdote: {
+          type: "object",
+          properties: {
+            id: { type: "string", minLength: 1 },
+            contentLanguage: { type: "string", enum: ["en", "fr"] },
+            headline: { type: "string", minLength: 1 },
+            body: {
+              type: "array",
+              minItems: 1,
+              maxItems: 2,
+              items: { type: "string", minLength: 1 },
+            },
+            tier: {
+              type: "string",
+              enum: ["official", "referenced", "unverified"],
+            },
+            sources: {
+              type: "array",
+              minItems: 1,
+              items: { $ref: "#/components/schemas/SearchCompanionSource" },
+            },
+            illustration: {
+              $ref: "#/components/schemas/SearchCompanionIllustration",
+            },
+            match: { $ref: "#/components/schemas/SearchCompanionMatch" },
+          },
+          required: [
+            "id",
+            "contentLanguage",
+            "headline",
+            "body",
+            "tier",
+            "sources",
+            "illustration",
+            "match",
+          ],
+        },
+        SearchCompanionProverbOriginal: {
+          type: "object",
+          properties: {
+            text: { type: "string", minLength: 1 },
+            lang: { type: "string", minLength: 2 },
+            language: { type: "string", minLength: 1 },
+          },
+          required: ["text", "lang", "language"],
+        },
+        SearchCompanionProverb: {
+          type: "object",
+          properties: {
+            id: { type: "string", minLength: 1 },
+            contentLanguage: { type: "string", enum: ["en", "fr"] },
+            text: { type: "string", minLength: 1 },
+            meaning: { type: "string", minLength: 1 },
+            original: {
+              oneOf: [
+                {
+                  $ref: "#/components/schemas/SearchCompanionProverbOriginal",
+                },
+                { type: "null" },
+              ],
+            },
+            origin: {
+              type: "object",
+              properties: {
+                status: { type: "string", enum: ["attested"] },
+                note: { type: "string" },
+              },
+              required: ["status", "note"],
+            },
+            sources: {
+              type: "array",
+              minItems: 1,
+              items: { $ref: "#/components/schemas/SearchCompanionSource" },
+            },
+            match: { $ref: "#/components/schemas/SearchCompanionMatch" },
+          },
+          required: [
+            "id",
+            "contentLanguage",
+            "text",
+            "meaning",
+            "original",
+            "origin",
+            "sources",
+            "match",
+          ],
+        },
+        SearchCompanionImage: {
+          type: "object",
+          properties: {
+            id: { type: "string", minLength: 1 },
+            href: { type: "string", minLength: 1 },
+            slug: { type: "string", minLength: 1 },
+            title: { type: "string", minLength: 1 },
+            description: { type: "string", minLength: 1 },
+            caption: { type: "string", minLength: 1 },
+            image: {
+              type: "object",
+              properties: {
+                src: { type: "string", minLength: 1 },
+                alt: { type: "string", minLength: 1 },
+                credit: { type: "string", minLength: 1 },
+                licence: {
+                  type: "string",
+                  enum: ["public-domain", "cc0", "cc-by", "cc-by-sa"],
+                },
+                licenceUrl: { type: "string", format: "uri" },
+                filePage: { type: "string", format: "uri" },
+              },
+              required: ["src", "alt", "credit", "licence"],
+            },
+            generation: {
+              type: "object",
+              properties: {
+                tool: { type: "string", minLength: 1 },
+                model: { type: "string", minLength: 1 },
+                generatedOn: { type: "string", minLength: 1 },
+                sourceKind: { type: "string", enum: ["ai_generated"] },
+              },
+              required: ["tool", "model", "generatedOn", "sourceKind"],
+            },
+            source: { $ref: "#/components/schemas/SearchCompanionSource" },
+            match: { $ref: "#/components/schemas/SearchCompanionMatch" },
+          },
+          required: [
+            "id",
+            "href",
+            "slug",
+            "title",
+            "description",
+            "caption",
+            "image",
+            "generation",
+            "source",
+            "match",
+          ],
+        },
+        SearchCompanionQuizOption: {
+          oneOf: [
+            { type: "string" },
+            {
+              type: "object",
+              properties: {
+                autonym: { type: "string" },
+                exonym: { type: "string" },
+              },
+              required: ["autonym"],
+            },
+          ],
+        },
+        SearchCompanionQuiz: {
+          type: "object",
+          properties: {
+            id: { type: "string", minLength: 1 },
+            templateId: {
+              type: "string",
+              enum: [
+                "T1",
+                "T2",
+                "T3",
+                "T4",
+                "T6",
+                "T7",
+                "T8",
+                "T9",
+                "T10",
+                "T11",
+                "T12",
+                "T13",
+                "T14",
+                "T15",
+                "T16",
+                "T17",
+                "T18",
+              ],
+            },
+            contentLanguage: { type: "string", enum: ["en", "fr"] },
+            prompt: { type: "string", minLength: 1 },
+            stimulus: { type: ["string", "null"] },
+            options: {
+              type: "array",
+              minItems: 2,
+              items: { $ref: "#/components/schemas/SearchCompanionQuizOption" },
+            },
+            correctOption: { type: "integer", minimum: 0, maximum: 3 },
+            explanation: { type: "string", minLength: 1 },
+            assertionId: { type: "string", minLength: 1 },
+            source: { $ref: "#/components/schemas/SearchCompanionSource" },
+            entity: {
+              type: "object",
+              properties: {
+                type: { type: "string", enum: ["people", "country"] },
+                id: { type: "string", minLength: 1 },
+              },
+              required: ["type", "id"],
+            },
+            match: { $ref: "#/components/schemas/SearchCompanionMatch" },
+          },
+          required: [
+            "id",
+            "templateId",
+            "contentLanguage",
+            "prompt",
+            "stimulus",
+            "options",
+            "correctOption",
+            "explanation",
+            "assertionId",
+            "source",
+            "entity",
+            "match",
+          ],
+        },
+        SearchCompanionShortSelection: {
+          type: "object",
+          properties: {
+            count: {
+              type: "integer",
+              minimum: 0,
+              description:
+                "Total matching items before the response limit is applied.",
+            },
+            items: {
+              type: "array",
+              maxItems: 6,
+              items: { $ref: "#/components/schemas/SearchCompanionShort" },
+            },
+          },
+          required: ["count", "items"],
+        },
+        SearchCompanionAnecdoteSelection: {
+          type: "object",
+          properties: {
+            count: {
+              type: "integer",
+              minimum: 0,
+              description:
+                "Total matching items before the response limit is applied.",
+            },
+            items: {
+              type: "array",
+              maxItems: 3,
+              items: {
+                $ref: "#/components/schemas/SearchCompanionAnecdote",
+              },
+            },
+          },
+          required: ["count", "items"],
+        },
+        SearchCompanionProverbSelection: {
+          type: "object",
+          properties: {
+            count: {
+              type: "integer",
+              minimum: 0,
+              description:
+                "Total matching items before the response limit is applied.",
+            },
+            items: {
+              type: "array",
+              maxItems: 2,
+              items: { $ref: "#/components/schemas/SearchCompanionProverb" },
+            },
+          },
+          required: ["count", "items"],
+        },
+        SearchCompanionImageSelection: {
+          type: "object",
+          properties: {
+            count: {
+              type: "integer",
+              minimum: 0,
+              description:
+                "Total matching items before the response limit is applied.",
+            },
+            items: {
+              type: "array",
+              maxItems: 1,
+              items: { $ref: "#/components/schemas/SearchCompanionImage" },
+            },
+          },
+          required: ["count", "items"],
+        },
+        SearchCompanionQuizSelection: {
+          type: "object",
+          properties: {
+            count: {
+              type: "integer",
+              minimum: 0,
+              description:
+                "Total matching quiz items before the single-item response limit is applied.",
+            },
+            item: {
+              oneOf: [
+                { $ref: "#/components/schemas/SearchCompanionQuiz" },
+                { type: "null" },
+              ],
+            },
+          },
+          required: ["count", "item"],
+        },
+        SearchCompanionsData: {
+          type: "object",
+          properties: {
+            subjects: {
+              type: "array",
+              maxItems: 20,
+              items: { $ref: "#/components/schemas/SearchCompanionSubject" },
+            },
+            shorts: {
+              $ref: "#/components/schemas/SearchCompanionShortSelection",
+            },
+            anecdotes: {
+              $ref: "#/components/schemas/SearchCompanionAnecdoteSelection",
+            },
+            proverbs: {
+              $ref: "#/components/schemas/SearchCompanionProverbSelection",
+            },
+            images: {
+              $ref: "#/components/schemas/SearchCompanionImageSelection",
+            },
+            quiz: {
+              $ref: "#/components/schemas/SearchCompanionQuizSelection",
+            },
+          },
+          required: [
+            "subjects",
+            "shorts",
+            "anecdotes",
+            "proverbs",
+            "images",
+            "quiz",
+          ],
+        },
+        SearchCompanionsResponse: {
+          type: "object",
+          properties: {
+            data: { $ref: "#/components/schemas/SearchCompanionsData" },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+              maxItems: 0,
             },
           },
           required: ["data", "meta", "errors"],
@@ -924,6 +1672,9 @@ const options: swaggerJsdoc.Options = {
               type: "object",
               description: "Contenu évolutif en JSONB",
             },
+            naming: {
+              $ref: "#/components/schemas/SearchNamingProjectionV2",
+            },
           },
         },
         PeopleV2: {
@@ -953,6 +1704,9 @@ const options: swaggerJsdoc.Options = {
             content: {
               type: "object",
               description: "Contenu évolutif en JSONB",
+            },
+            naming: {
+              $ref: "#/components/schemas/SearchNamingProjectionV2",
             },
           },
         },
@@ -1057,6 +1811,9 @@ const options: swaggerJsdoc.Options = {
               type: "object",
               description: "Evolutionary JSONB content, forwarded opaquely.",
             },
+            naming: {
+              $ref: "#/components/schemas/SearchNamingProjectionV2",
+            },
             associatedPeoples: {
               type: "array",
               description:
@@ -1141,6 +1898,9 @@ const options: swaggerJsdoc.Options = {
               type: "object",
               description: "Evolutionary JSONB content, forwarded opaquely.",
             },
+            naming: {
+              $ref: "#/components/schemas/SearchNamingProjectionV2",
+            },
             relevance: {
               type: "number",
               example: 0.82,
@@ -1215,6 +1975,9 @@ const options: swaggerJsdoc.Options = {
               type: "object",
               description:
                 "Evolutionary JSONB content. Its associatedPeoples property is a legacy compatibility copy derived from the canonical top-level array.",
+            },
+            naming: {
+              $ref: "#/components/schemas/SearchNamingProjectionV2",
             },
           },
         },

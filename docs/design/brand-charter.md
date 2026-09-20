@@ -262,6 +262,17 @@ match, and the reading carries its own way out — a rail of destinations from
 opened from it: its sheets stay on parchment, because a source list is a
 document. Gated by `discoveriesImmersiveCharter.test.ts`.
 
+**DEC-058 licenses the search-result feed's night variant as a third scoped
+surface.** It is a theme variant of the same feed, never the route's default and
+never a licence for a global dark theme. It substitutes the documented
+`--afh-night-*` ground, surface, warm and ink roles while preserving the same
+manifest, copy, media and block geometry as day. The light verdict surface and
+light contribution action remain light with dark text because their role is a
+quoted answer and an open door, not an extension of the stage ground. Source
+apparatus opened from the feed remains a parchment document, as it does from
+Découvertes. REQ-180's day/night structural comparison holds this scope: a
+night board that changes content or order is a different page, not a theme.
+
 ### 5.2 Four categorical accents, and a surface takes one
 
 `--afh-cat-ocre` `#c9821f` · `--afh-cat-teal` `#33a390` ·

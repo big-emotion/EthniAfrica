@@ -165,6 +165,21 @@ describe("SourceChainSheet", () => {
     ]);
   });
 
+  // @req REQ-180
+  it("keeps source context but omits a numeric confidence that was never recorded", () => {
+    renderSheet({
+      assertion: {
+        statement: "A sourced statement without an entity confidence row.",
+        sourceCount: 1,
+        lastHumanAuditAt: null,
+      },
+    });
+
+    const confidence = screen.getByTestId("section-confidence");
+    expect(confidence.textContent).not.toContain("%");
+    expect(confidence).toHaveTextContent(/1 source/i);
+  });
+
   it("does not render the flag banner when no open flags", () => {
     renderSheet({ openFlagCount: 0 });
     expect(screen.queryByTestId("section-flags")).toBeNull();

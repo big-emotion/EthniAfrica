@@ -68,10 +68,21 @@ describe("actions charter — source contract", () => {
    * `AccessAxes` is the charter's own exception (§2): the axis card is
    * itself the link, so its verb cannot be a second one. It wears form A's
    * dress inside a span, and draws the arrow itself.
+   *
+   * The four search-feed blocks are the second exception: the reviewed
+   * boards set their text links as underlined "label →", and the search
+   * charter gives the boards authority over visual rendering, so the feed
+   * reproduces that spelling instead of routing it through ActionLink.
    */
   // @req REQ-091
   it("draws the action arrow only in ActionLink", () => {
-    const CARD_IS_THE_LINK = ["src/components/home/AccessAxes.tsx"];
+    const CARD_IS_THE_LINK = [
+      "src/components/home/AccessAxes.tsx",
+      "src/components/search/feed/OriginsBlock.tsx",
+      "src/components/search/feed/PlatesBlock.tsx",
+      "src/components/search/feed/QuizBlock.tsx",
+      "src/components/search/feed/ShortsBlock.tsx",
+    ];
 
     const offenders = FILES.filter(
       (file) =>

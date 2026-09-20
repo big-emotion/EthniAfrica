@@ -8,12 +8,12 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { PageLayout } from "@/components/layout/PageLayout";
+import { SearchFeedFrame } from "@/components/search/SearchFeedFrame";
+import { SearchFeed } from "@/components/search/SearchFeed";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import { trackEvent } from "@/lib/analytics/trackEvent";
-import { AutonymExonymHeading } from "@/components/ui/AutonymExonymHeading";
 import { SearchResultCard } from "@/components/search/SearchResultCard";
 import { SearchPeopleGroupCard } from "@/components/search/SearchPeopleGroupCard";
-import { NameAnswer } from "@/components/search/NameAnswer";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { SourcedHighlightBlock } from "@/components/search/SourcedHighlightBlock";
 import { SearchLensBar } from "@/components/search/SearchLensBar";
@@ -28,7 +28,11 @@ import {
   EMPTY_SEARCH_LENS_COUNTS,
   type SearchLensCounts,
 } from "@/lib/search/searchEnvelope";
-import { search as searchCorpus, searchWithLeads } from "@/lib/afrikLoader";
+import {
+  loadSearchCompanions,
+  search as searchCorpus,
+  searchWithLeads,
+} from "@/lib/afrikLoader";
 import {
   readRelation,
   relationSearchParams,
@@ -43,12 +47,22 @@ import { groupPeopleResults } from "@/lib/search/groupPeopleResults";
 import { getCountryCommonName } from "@/lib/countryNames";
 import { formatNumber } from "@/lib/languageTag";
 import {
+  classifySearchFeed,
+  companionSubjectsForSearch,
+  isSearchFeedSubject,
+  type SearchFeedAnswerState,
+} from "@/lib/search/searchFeedPlan";
+import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
+import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
+import type { SearchFeedPresentation } from "@/lib/search/searchFeedPresentation";
+import {
   getLocalizedSearchResultFamilyName,
   getLocalizedSearchResultName,
 } from "@/lib/search/localizedResult";
 import type {
   SearchEntityType,
   SearchLead,
+  SearchNearName,
   SearchResult,
 } from "@/types/afrik-frontend";
 
@@ -86,6 +100,15 @@ type SearchHit = SearchResult;
  */
 type SearchStatus = "idle" | "loading" | "loaded" | "failed";
 
+function isAbortError(error: unknown): boolean {
+  return (
+    typeof error === "object" &&
+    error !== null &&
+    "name" in error &&
+    error.name === "AbortError"
+  );
+}
+
 // ── component ─────────────────────────────────────────────────────────────────
 
 // @req REQ-002
@@ -105,6 +128,7 @@ export function RecherchePageContent() {
 
   const [results, setResults] = useState<SearchHit[]>([]);
   const [leads, setLeads] = useState<SearchLead[]>([]);
+  const [nearNames, setNearNames] = useState<SearchNearName[]>([]);
   const [counts, setCounts] = useState<SearchLensCounts>(
     EMPTY_SEARCH_LENS_COUNTS
   );
@@ -112,6 +136,18 @@ export function RecherchePageContent() {
   const [status, setStatus] = useState<SearchStatus>(
     initialQuery || initialRelation ? "loading" : "idle"
   );
+  const [companions, setCompanions] = useState<SearchCompanionsData | null>(
+    null
+  );
+  const [feedState, setFeedState] = useState<SearchFeedAnswerState | null>(
+    null
+  );
+  const [feedPresentation, setFeedPresentation] =
+    useState<SearchFeedPresentation>();
+  const [feedSubjects, setFeedSubjects] = useState<SearchHit[]>([]);
+  const requestController = useRef<AbortController | null>(null);
+  const requestTicket = useRef(0);
+  const restoreFocusAfterClear = useRef(false);
 
   const fetchSuggestionsFromCorpus = useCallback(
     (query: string): Promise<SearchHit[]> =>
@@ -140,31 +176,50 @@ export function RecherchePageContent() {
 
   const performSearch = useCallback(
     async (q: string, rel: SearchRelation | null) => {
+      requestController.current?.abort();
+      const controller = new AbortController();
+      requestController.current = controller;
+      const ticket = ++requestTicket.current;
       setActiveLens("all");
       // A relation on its own is a complete search: "the peoples of the Krou
       // family" asks something whole without any free text.
       if (!q.trim() && !rel) {
         setResults([]);
         setLeads([]);
+        setNearNames([]);
         setCounts(EMPTY_SEARCH_LENS_COUNTS);
+        setCompanions(null);
+        setFeedState(null);
+        setFeedPresentation(undefined);
+        setFeedSubjects([]);
         setStatus("idle");
         return;
       }
       setStatus("loading");
+      setCompanions(null);
+      setFeedState(null);
+      setFeedPresentation(undefined);
+      setFeedSubjects([]);
       try {
         const {
           results: hits,
           leads: nearMisses,
+          nearNames: qualifiedNearNames = [],
           counts: lensCounts,
+          presentation,
           answered,
         } = await searchWithLeads(q, {
           limit: RESULTS_PER_SEARCH,
           lang: language,
           ...relationSearchParams(rel),
+          signal: controller.signal,
         });
+        if (ticket !== requestTicket.current) return;
         setResults(hits);
         setLeads(nearMisses);
+        setNearNames(qualifiedNearNames);
         setCounts(lensCounts);
+        setFeedPresentation(presentation);
         // Reported here rather than from the submit handler, so a query that
         // arrives by URL — a shared link, a bookmark — counts as the search it
         // is. Only the modal used to report, which left every such arrival out.
@@ -182,11 +237,58 @@ export function RecherchePageContent() {
             results: hits.length,
           });
         }
-        setStatus(answered ? "loaded" : "failed");
-      } catch {
+        if (!answered) {
+          setStatus("failed");
+          return;
+        }
+
+        // A relation-scoped search ("the peoples of the Krou family") carries
+        // no name to match: `q` is empty, so `selectNameSubject` resolves no
+        // subjects below, and `classifySearchFeed` reports the same "widened"
+        // state a name search reports when it finds only related entries.
+        // `SearchFeed`'s `relation` prop is what tells the two apart at
+        // render time (ETNI-1966) — the reviewed feed's own family/country
+        // chips (`SearchResultCard` → `buildRelationSearchHref`) land here,
+        // so this path has to produce a real feed, not the "loaded" no-op
+        // this used to leave companions/feedState null for.
+        const ranked = [...hits].sort(compareByRelevance);
+        const selected = selectNameSubject(ranked, q, language).filter(
+          isSearchFeedSubject
+        );
+        const resolvedSubjects = selected;
+        const companionSubjects = companionSubjectsForSearch(
+          resolvedSubjects,
+          nearMisses
+        );
+        const nextCompanions = await loadSearchCompanions(
+          companionSubjects,
+          language,
+          controller.signal
+        );
+        if (ticket !== requestTicket.current) return;
+
+        setCompanions(nextCompanions);
+        setFeedSubjects(resolvedSubjects);
+        setFeedState(
+          classifySearchFeed({
+            search: { results: hits, leads: nearMisses },
+            companions: nextCompanions,
+            subjects: resolvedSubjects,
+          })
+        );
+        setStatus("loaded");
+      } catch (error) {
+        if (isAbortError(error) || ticket !== requestTicket.current) {
+          return;
+        }
         setResults([]);
         setLeads([]);
+        setNearNames([]);
         setCounts(EMPTY_SEARCH_LENS_COUNTS);
+        setCompanions(null);
+        setFeedState(null);
+        setFeedPresentation(undefined);
+        setFeedSubjects([]);
         setStatus("failed");
       }
     },
@@ -211,6 +313,13 @@ export function RecherchePageContent() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [language, relation]);
 
+  useEffect(
+    () => () => {
+      requestController.current?.abort();
+    },
+    []
+  );
+
   // ── auto-suggest ────────────────────────────────────────────────────────────
 
   /**
@@ -227,6 +336,17 @@ export function RecherchePageContent() {
     limit: SUGGESTIONS_PER_KEYSTROKE,
   });
   const inputValue = suggest.query;
+
+  useEffect(() => {
+    if (
+      restoreFocusAfterClear.current &&
+      committedQuery === "" &&
+      status === "idle"
+    ) {
+      restoreFocusAfterClear.current = false;
+      inputRef.current?.focus();
+    }
+  }, [committedQuery, status]);
 
   // ── keyboard shortcut: "/" → focus input (progressive enhancement) ──────────
 
@@ -251,6 +371,24 @@ export function RecherchePageContent() {
     suggest.dismiss();
     syncURL(q, relation);
     performSearch(q, relation);
+  };
+
+  const handleClear = () => {
+    requestController.current?.abort();
+    requestTicket.current += 1;
+    restoreFocusAfterClear.current = true;
+    suggest.clear();
+    setCommittedQuery("");
+    setResults([]);
+    setLeads([]);
+    setNearNames([]);
+    setCounts(EMPTY_SEARCH_LENS_COUNTS);
+    setCompanions(null);
+    setFeedState(null);
+    setFeedPresentation(undefined);
+    setFeedSubjects([]);
+    setStatus("idle");
+    syncURL("", relation);
   };
 
   function handleSuggestionClick(hit: SearchHit) {
@@ -287,6 +425,7 @@ export function RecherchePageContent() {
   // alone is not comparable across kinds, so cross-kind ordering always goes
   // through `compareByRelevance`, which decides on `exactMatch` first.
   const sortedResults = [...lensFilteredResults].sort(compareByRelevance);
+  const rankedResults = [...results].sort(compareByRelevance);
 
   // Every entity that answers to the name, which may be none, one, or —
   // « Bassa » — three unrelated peoples. A relation-scoped list ("the peoples
@@ -340,8 +479,9 @@ export function RecherchePageContent() {
 
   // The head is the count, always. It used to be the crowned answer's own
   // name when a pivot existed; DEC-057 retires that, and the name the reader
-  // typed is now answered by `NameAnswer` below, where every form it is known
-  // by is drawn at the same weight.
+  // typed is answered by the reviewed feed (SearchFeed) whenever there is one
+  // to search — this branch only draws once committedQuery and relation are
+  // both empty.
   //
   // The brand gradient stays scoped to the literal word "Recherche" (brand
   // charter §5.3): a result count is corpus content, not the brand lockup.
@@ -403,6 +543,186 @@ export function RecherchePageContent() {
   );
 
   // ── render ──────────────────────────────────────────────────────────────────
+
+  if (committedQuery || relation) {
+    const feedCopy = searchFeedCopy[language];
+    return (
+      <SearchFeedFrame language={language}>
+        <div>
+          <form
+            onSubmit={handleSubmit}
+            role="search"
+            aria-label={
+              language === "en" ? "Search form" : "Formulaire de recherche"
+            }
+            className="relative mx-auto w-full max-w-[640px]"
+          >
+            <Search
+              className="pointer-events-none absolute left-[17px] top-1/2 h-[14.16px] w-[14.16px] -translate-y-1/2 text-afh-text-muted"
+              aria-hidden="true"
+            />
+            <Input
+              ref={inputRef}
+              type="search"
+              {...suggest.comboboxProps}
+              aria-label={getSearchLabel(language)}
+              placeholder={getSearchPlaceholder(language)}
+              value={inputValue}
+              onChange={(event) => suggest.setQuery(event.target.value)}
+              onKeyDown={suggest.handleKeyDown}
+              onBlur={() => setTimeout(() => suggest.dismiss(), 150)}
+              className="h-12 pl-[40.16px] pr-12 text-afh-small"
+              autoComplete="off"
+            />
+            <button
+              type="button"
+              onClick={handleClear}
+              aria-label={language === "en" ? "Clear" : "Effacer"}
+              className={cn(
+                "absolute right-1 top-1/2 inline-flex min-h-11 min-w-11 -translate-y-1/2 items-center justify-center rounded-afh-full text-afh-text-soft",
+                CHARTER_FOCUS_RING
+              )}
+            >
+              <X className="h-4 w-4" aria-hidden="true" />
+            </button>
+            <button type="submit" className="sr-only">
+              {language === "en" ? "Search" : "Rechercher"}
+            </button>
+            {suggest.isOpen && (
+              <ul
+                id={suggest.listboxId}
+                role="listbox"
+                aria-label={
+                  language === "en"
+                    ? "Search suggestions"
+                    : "Suggestions de recherche"
+                }
+                className="absolute left-0 top-full z-50 mt-afh-xs w-full overflow-hidden rounded-afh-lg border border-afh-border bg-afh-surface shadow-afh-2"
+              >
+                {suggest.options.map((hit, index) => (
+                  <li
+                    key={hit.id}
+                    {...suggest.getOptionProps(index)}
+                    className={cn(
+                      "cursor-pointer px-afh-2xl py-afh-md text-afh-small hover:bg-afh-bg-warm",
+                      index === suggest.activeIndex && "bg-afh-bg-warm"
+                    )}
+                    onMouseDown={() => handleSuggestionClick(hit)}
+                  >
+                    {getLocalizedSearchResultName(hit, language)}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </form>
+
+          {relation && (
+            <div
+              data-testid="filter-chip-row"
+              role="group"
+              className="mt-afh-md flex flex-wrap items-center gap-afh-md"
+              aria-label={
+                language === "en" ? "Active filters" : "Filtres actifs"
+              }
+            >
+              <Badge
+                variant="secondary"
+                className="flex items-center gap-afh-xs px-afh-lg py-afh-xs text-afh-small"
+              >
+                {relationLabel}
+                <button
+                  type="button"
+                  aria-label={`${language === "en" ? "Remove filter" : "Supprimer le filtre"} ${relationLabel}`}
+                  onClick={() => setRelation(null)}
+                  className={cn("ml-afh-xs rounded-full", CHARTER_FOCUS_RING)}
+                >
+                  <X className="h-3 w-3" aria-hidden="true" />
+                </button>
+              </Badge>
+              {hasActiveFilters && (
+                <button
+                  type="button"
+                  onClick={() => setRelation(null)}
+                  className="ml-auto text-afh-small text-afh-fg-muted underline underline-offset-2 hover:text-afh-text"
+                >
+                  {language === "en" ? "Clear all" : "Tout effacer"}
+                </button>
+              )}
+            </div>
+          )}
+
+          {status === "loading" ? (
+            <div
+              data-testid="search-feed-loading"
+              aria-live="polite"
+              aria-busy="true"
+              className="mt-afh-5xl space-y-afh-2xl"
+            >
+              <span className="sr-only">{feedCopy.status.loading}</span>
+              <div className="h-3 w-32 rounded-afh-lg bg-afh-bg-warm motion-safe:animate-pulse" />
+              <div className="h-10 w-56 rounded-afh-lg bg-afh-bg-warm motion-safe:animate-pulse" />
+              <div className="h-24 rounded-afh-lg bg-afh-bg-warm motion-safe:animate-pulse" />
+              <div className="flex gap-afh-md overflow-hidden">
+                {[0, 1, 2, 3].map((item) => (
+                  <div
+                    key={item}
+                    className="h-11 w-24 shrink-0 rounded-afh-full bg-afh-bg-warm motion-safe:animate-pulse"
+                  />
+                ))}
+              </div>
+              <div className="flex gap-afh-lg overflow-hidden">
+                {[0, 1, 2].map((item) => (
+                  <div
+                    key={item}
+                    className="aspect-[9/16] w-[130px] shrink-0 rounded-afh-lg bg-afh-bg-warm motion-safe:animate-pulse"
+                  />
+                ))}
+              </div>
+            </div>
+          ) : null}
+
+          {status === "failed" ? (
+            <div
+              data-testid="search-feed-failed"
+              className="mt-afh-5xl rounded-afh-lg bg-afh-bg-warm px-afh-5xl py-afh-7xl text-center"
+            >
+              <p
+                className="mx-auto max-w-sm text-afh-small text-afh-text-soft"
+                role="status"
+              >
+                {nameAnswerCopy[language].searchUnavailable}
+              </p>
+              <Button
+                type="button"
+                className="mt-afh-lg min-h-11"
+                onClick={() => performSearch(committedQuery, relation)}
+              >
+                {feedCopy.status.retry}
+              </Button>
+            </div>
+          ) : null}
+
+          {status === "loaded" && companions && feedState ? (
+            <SearchFeed
+              key={`${language}:${committedQuery}:${relation ? `${relation.kind}:${relation.id}` : ""}`}
+              query={committedQuery}
+              language={language}
+              state={feedState}
+              results={rankedResults}
+              subjects={feedSubjects}
+              leads={leads}
+              nearNames={nearNames}
+              companions={companions}
+              resultCount={counts.all}
+              presentation={feedPresentation}
+              relation={relation ?? undefined}
+              onResultNavigate={trackResultClick}
+            />
+          ) : null}
+        </div>
+      </SearchFeedFrame>
+    );
+  }
 
   return (
     <PageLayout
@@ -542,25 +862,18 @@ export function RecherchePageContent() {
             negative form silently admitted every status nobody had thought of:
             `failed` fell through it and drew the unknown-name answer — a
             confession about the corpus — on a request that never reached it. */}
+        {/* Reached only when both committedQuery and relation are empty — the
+            branch above this one (`if (committedQuery || relation)`) sends
+            every other case to the reviewed feed. `status === "loaded"` here
+            is therefore always a stale render from a relation filter cleared
+            without a fresh search (setRelation resets nothing else), never a
+            live answer; nameSubjects is always empty in it, since it depends
+            on the same committedQuery. The name-answering block this used to
+            hold (NameAnswer) was removed once that made it unreachable
+            (ETNI-1966) — restoring it here would answer a name nobody
+            searched. */}
         {(status === "idle" || (status === "loaded" && results.length > 0)) && (
           <div data-testid="search-results-layout" className="space-y-afh-5xl">
-            {/* The answer to the name, then the complete typed result set the
-                surviving clauses of REQ-124 still require. One column at every
-                width: the side rail asserted a hierarchy the corpus does not
-                support, and moving it below would have kept the assertion. */}
-            {/* Only where a subject was found. No subject alongside results
-                means the query matched no name exactly — « peul » against
-                `Fula (Fulbe / Peul)` — which is a question this block cannot
-                answer, not a name the corpus lacks. Passing the empty set
-                through drew the confession over 40 million people the page was
-                listing directly underneath. */}
-            {nameSubjects.length > 0 && !relation ? (
-              <NameAnswer
-                subjects={nameSubjects}
-                query={committedQuery}
-                language={language}
-              />
-            ) : null}
             {nameSubjects.length === 1 ? (
               <SourcedHighlightBlock
                 result={nameSubjects[0]}
@@ -601,13 +914,7 @@ export function RecherchePageContent() {
                 </p>
                 <NoResultsLeads leads={leads} language={language} />
               </div>
-            ) : (
-              <NameAnswer
-                subjects={[]}
-                query={committedQuery}
-                language={language}
-              />
-            )}
+            ) : null}
             <div className="flex flex-col items-center gap-afh-md text-afh-small">
               <Link
                 href={getLocalizedRoute(language, "peoples")}

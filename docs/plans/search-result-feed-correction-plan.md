@@ -1,6 +1,6 @@
 # Search-result feed — correction and implementation sequencing plan
 
-Status: proposed course correction, awaiting operator approval  
+Status: approved course correction — REQ-180, DEC-058, ETNI-1966  
 Scope: correction of `docs/plans/search-result-feed.md`; no reduction of the
 approved product scope  
 Rendering reference: `docs/design/mockups/search-feed/`  
@@ -254,6 +254,12 @@ interface CompanionMatch {
 Every short, anecdote, proverb, image and quiz question carries
 `CompanionMatch`. Localised relation labels are produced by `searchFeedCopy`,
 not returned by the API.
+
+Every production format that names a subject uses the same editorial question:
+`D’où vient le nom « X » ?` in French and its reviewed locale counterpart.
+The question is derived from the subject name rather than stored as free copy.
+The shorter `D’où vient X ?` form is not accepted in catalog records, fixtures,
+poster accessibility text or generated poster briefs.
 
 The endpoint contract must additionally settle before implementation:
 

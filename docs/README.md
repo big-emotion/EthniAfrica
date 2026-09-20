@@ -113,6 +113,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Production history and publishing-cadence plan](plans/production-history-plan.md)
 - [Search-result feed — correction and implementation sequencing plan](plans/search-result-feed-correction-plan.md)
 - [Search-result feed: implementation plan](plans/search-result-feed.md)
+- [Search-result feed — finishing phases 11 and 12](plans/search-result-feed-completion.md)
 
 ## Elsewhere
 

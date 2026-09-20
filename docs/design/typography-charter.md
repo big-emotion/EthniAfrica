@@ -66,6 +66,23 @@ is in pixels ignores the reader's browser font-size setting outright — the `vw
 term cannot restore it — and fails WCAG 1.4.4. This is the one line of §2 the
 charter test asserts character by character.
 
+**One narrow, scoped exception: `.search-feed-reviewed` in
+`src/styles/search-feed.css`.** It re-declares `--afh-text-hero`,
+`--afh-text-h3` and `--afh-text-body` inside that one class, to values that
+round to the same pixel the forty approved boards
+(`docs/design/mockups/search-feed/`) carry at their 430 px reference width —
+the scale's own `clamp()` and the boards' generator (`generator/gen.py`)
+compute the same fluid curve, but round its intercept to a different number
+of decimal places, so the two disagree by about three thousandths of a pixel
+at that one width. That is not a second scale: the values are the _same_
+three roles, re-rounded to agree with the approved rendering they are
+compared against pixel for pixel, and the override applies only inside the
+one component tree (`SearchFeedLayout`) the boards govern. The alternative —
+regenerating the boards at the clamp's full, unrounded precision instead —
+was the preferred fix and was not done, so this line documents the decision
+actually shipped (`docs/plans/search-result-feed-completion.md` §4)
+rather than leave a second, silently competing definition undocumented.
+
 ## 3. Semantic and visual are allowed to disagree — up to a point
 
 A `<h2>` may be painted with `--afh-text-body`. The document outline is what a

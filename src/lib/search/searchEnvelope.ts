@@ -12,10 +12,11 @@
  * impossible rather than merely fixed.
  */
 
-import { readNaming } from "@/lib/search/naming";
+import type { NamingProjection } from "@/lib/search/naming";
 import type {
   SearchEntityType,
   SearchLead,
+  SearchNearName,
   SearchResult,
 } from "@/types/afrik-frontend";
 import type { PersonPeopleLink } from "@/types/persons";
@@ -76,6 +77,24 @@ function englishNameOf(value: unknown): string | undefined {
 
 function asRows(value: unknown): Record<string, unknown>[] {
   return Array.isArray(value) ? (value as Record<string, unknown>[]) : [];
+}
+
+function isNamingProjection(value: unknown): value is NamingProjection {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const naming = value as Partial<NamingProjection>;
+  return (
+    Array.isArray(naming.forms) &&
+    Array.isArray(naming.eras) &&
+    Boolean(naming.presentation) &&
+    Array.isArray(naming.presentation?.forms) &&
+    Array.isArray(naming.presentation?.eras) &&
+    Array.isArray(naming.presentation?.disagreements) &&
+    Array.isArray(naming.presentation?.evidence)
+  );
+}
+
+function namingOf(row: Record<string, unknown>): NamingProjection | undefined {
+  return isNamingProjection(row.naming) ? row.naming : undefined;
 }
 
 /**
@@ -205,6 +224,26 @@ function resolvedPeoplesOf(value: unknown): SearchResult["associatedPeoples"] {
   });
 }
 
+function declaredPeoplesOf(
+  content: unknown,
+  field: "associatedPeoples" | "majorPeoples"
+): SearchResult["associatedPeoples"] {
+  if (!content || typeof content !== "object" || Array.isArray(content)) {
+    return undefined;
+  }
+  const entries = (content as Record<string, unknown>)[field];
+  if (!Array.isArray(entries)) return undefined;
+
+  const peoples = entries.flatMap((entry) => {
+    if (!entry || typeof entry !== "object" || Array.isArray(entry)) return [];
+    const { peopleId, name } = entry as Record<string, unknown>;
+    return typeof peopleId === "string" && typeof name === "string"
+      ? [{ id: peopleId, name }]
+      : [];
+  });
+  return peoples.length > 0 ? peoples : undefined;
+}
+
 /**
  * The speaker peoples a language fiche declares (ETNI-1804), read off
  * `content.peoples` (`persistedContent` in `languageProvenanceLoader.ts`).
@@ -279,7 +318,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
   return [
     ...asRows(peoples).map((row): SearchResult => ({
       type: "people",
-      naming: readNaming("people", row.content, row),
+      naming: namingOf(row),
       id: String(row.id),
       name: String(row.nameMain ?? ""),
       languageFamilyId:
@@ -299,10 +338,11 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     })),
     ...asRows(countries).map((row): SearchResult => ({
       type: "country",
-      naming: readNaming("country", row.content, row),
+      naming: namingOf(row),
       id: String(row.id),
       name: String(row.nameFr ?? ""),
       nameEn: englishNameOf(row.nameEn),
+      associatedPeoples: declaredPeoplesOf(row.content, "majorPeoples"),
       // The match excerpt says why this row surfaced; the etymology only
       // says what the country is. Prefer the former when the API sends it.
       snippet:
@@ -312,10 +352,11 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     })),
     ...asRows(families).map((row): SearchResult => ({
       type: "languageFamily",
-      naming: readNaming("languageFamily", row.content, row),
+      naming: namingOf(row),
       id: String(row.id),
       name: String(row.nameFr ?? ""),
       nameEn: englishNameOf(row.nameEn),
+      associatedPeoples: declaredPeoplesOf(row.content, "associatedPeoples"),
       relevance: numberOrUndefined(row.relevance),
       exactMatch: row.exactMatch === true,
     })),
@@ -338,7 +379,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     // country or family must still return something.
     ...asRows(patronymes).map((row): SearchResult => ({
       type: "patronyme",
-      naming: readNaming("patronyme", row.content, row),
+      naming: namingOf(row),
       id: String(row.id),
       name: String(row.nameMain ?? ""),
       nameSystem: row.nameSystem as SearchResult["nameSystem"],
@@ -355,7 +396,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     // only through the peoples that mention it.
     ...asRows(languages).map((row): SearchResult => ({
       type: "language",
-      naming: readNaming("language", row.content, row),
+      naming: namingOf(row),
       id: String(row.id),
       name: String(row.name ?? ""),
       nameEn: englishNameOf(row.nameEn),
@@ -395,6 +436,32 @@ export function mapSearchLeads(envelope: unknown): SearchLead[] {
   const { leads } = data as Record<string, unknown>;
 
   return asRows(leads).flatMap((row): SearchLead[] => {
+    const type = LEAD_KIND_TO_TYPE[row.kind as string];
+    if (!type) return [];
+    return [
+      {
+        type,
+        id: String(row.id),
+        name: String(row.name ?? ""),
+        similarity: numberOrUndefined(row.similarity) ?? 0,
+      },
+    ];
+  });
+}
+
+/**
+ * Similar-name candidates qualified by the API for a non-empty search.
+ * This reads only the dedicated projection: ordinary ranked results do not
+ * carry trigram similarity and must never be guessed into this role.
+ */
+// @req REQ-180
+export function mapSearchNearNames(envelope: unknown): SearchNearName[] {
+  const data = (envelope as { data?: unknown })?.data;
+  if (!data || Array.isArray(data)) return [];
+
+  const { nearNames } = data as Record<string, unknown>;
+
+  return asRows(nearNames).flatMap((row): SearchNearName[] => {
     const type = LEAD_KIND_TO_TYPE[row.kind as string];
     if (!type) return [];
     return [

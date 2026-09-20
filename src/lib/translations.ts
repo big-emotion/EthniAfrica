@@ -7,6 +7,7 @@ import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import { chromeCopy } from "@/lib/i18n/copy/chrome";
 import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
+import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { commonCopy } from "@/lib/i18n/copy/common";
 import { consentCopy } from "@/lib/i18n/copy/consent";
 import { compareCopy } from "@/lib/i18n/copy/compare";
@@ -66,6 +67,7 @@ const en = {
   chrome: chromeCopy.en,
   homeHero: homeHeroCopy.en,
   nameAnswer: nameAnswerCopy.en,
+  searchFeed: searchFeedCopy.en,
   consent: consentCopy.en,
   compare: compareCopy.en,
   contact: contactCopy.en,
@@ -116,6 +118,7 @@ const fr: UiDictionary = {
   chrome: chromeCopy.fr,
   homeHero: homeHeroCopy.fr,
   nameAnswer: nameAnswerCopy.fr,
+  searchFeed: searchFeedCopy.fr,
   consent: consentCopy.fr,
   compare: compareCopy.fr,
   contact: contactCopy.fr,

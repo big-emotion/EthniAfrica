@@ -11,11 +11,69 @@
  */
 
 import { ftsSearchEntities } from "@/lib/supabase/queries/afrik/search";
+import {
+  loadSearchNamingData,
+  searchNamingKey,
+  type SearchNamingSubjectRef,
+  type SearchNamingSubjectType,
+} from "@/lib/supabase/queries/afrik/searchNaming";
+import { readNaming } from "@/lib/search/naming";
 import type { FtsSearchParams, FtsSearchResponse } from "@/types/afrik";
+
+type NamingRow = {
+  id: string;
+  content?: unknown;
+};
+
+function namingRoot(type: SearchNamingSubjectType, row: NamingRow): unknown {
+  return type === "patronyme"
+    ? { ...(row.content as Record<string, unknown>), ...(row as object) }
+    : row;
+}
+
+function projectRows<T extends NamingRow>(
+  type: SearchNamingSubjectType,
+  rows: T[],
+  namingData: Awaited<ReturnType<typeof loadSearchNamingData>>
+): T[] {
+  return rows.map((row) => {
+    const data = namingData.get(searchNamingKey(type, row.id));
+    return {
+      ...row,
+      naming: readNaming(
+        type,
+        row.content,
+        namingRoot(type, row),
+        data?.records ?? [],
+        data?.evidence ?? []
+      ),
+    };
+  });
+}
 
 // @req REQ-002
 export async function ftsSearch(
   params: FtsSearchParams
 ): Promise<FtsSearchResponse> {
-  return ftsSearchEntities(params);
+  const result = await ftsSearchEntities(params);
+  const subjects: SearchNamingSubjectRef[] = [
+    ...result.peoples.map(({ id }) => ({ type: "people" as const, id })),
+    ...result.countries.map(({ id }) => ({ type: "country" as const, id })),
+    ...result.families.map(({ id }) => ({
+      type: "languageFamily" as const,
+      id,
+    })),
+    ...result.patronymes.map(({ id }) => ({ type: "patronyme" as const, id })),
+    ...result.languages.map(({ id }) => ({ type: "language" as const, id })),
+  ];
+  const namingData = await loadSearchNamingData(subjects);
+
+  return {
+    ...result,
+    peoples: projectRows("people", result.peoples, namingData),
+    countries: projectRows("country", result.countries, namingData),
+    families: projectRows("languageFamily", result.families, namingData),
+    patronymes: projectRows("patronyme", result.patronymes, namingData),
+    languages: projectRows("language", result.languages, namingData),
+  };
 }

@@ -20,6 +20,7 @@ export type FlagKind =
   | "broken-url"
   | "offensive"
   | "correction-proposal"
+  | "contribution"
   | "other";
 
 export interface FlagFormTarget {
@@ -48,6 +49,7 @@ export interface FlagSubmissionPayload {
   target_id: string;
   target_field_path?: string;
   flag_kind: FlagKind;
+  contribution_payload?: Record<string, unknown>;
   reason_text: string;
   counter_source_url?: string;
   counter_source_citation?: string;
@@ -63,6 +65,8 @@ export interface FlagSubmissionPayload {
 
 export interface FlagFormProps {
   target: FlagFormTarget;
+  /** Keeps a feed action's editorial intent instead of inferring it from fields. */
+  preferredKind?: FlagKind;
   onSubmit: (
     payload: FlagSubmissionPayload
   ) => Promise<{ public_slug: string }>;
@@ -179,8 +183,10 @@ function validateForm({
 }
 
 // @req REQ-012
+// @req REQ-180
 export function FlagForm({
   target,
+  preferredKind,
   onSubmit,
   onCancel,
   renderVerification,
@@ -244,11 +250,13 @@ export function FlagForm({
       return;
     }
 
-    const derivedKind = deriveFlagKind({
-      counterSourceUrl,
-      counterSourceCitation,
-      proposedRewrite,
-    });
+    const flagKind =
+      preferredKind ??
+      deriveFlagKind({
+        counterSourceUrl,
+        counterSourceCitation,
+        proposedRewrite,
+      });
 
     setIsSubmitting(true);
     setSubmissionError("");
@@ -259,7 +267,14 @@ export function FlagForm({
         target_type: target.type,
         target_id: target.id,
         ...(target.fieldPath ? { target_field_path: target.fieldPath } : {}),
-        flag_kind: derivedKind,
+        flag_kind: flagKind,
+        ...(flagKind === "contribution"
+          ? {
+              contribution_payload: {
+                contribution_type: "search-feed",
+              },
+            }
+          : {}),
         reason_text: reason.trim(),
         ...(counterSourceUrl.trim()
           ? { counter_source_url: counterSourceUrl.trim() }

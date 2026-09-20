@@ -9,7 +9,7 @@ sys.path.insert(0, HERE)
 from cases import CASES
 
 FONT = sys.argv[1]
-OUT = os.path.join(HERE, "posters")
+OUT = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "..", "posters")
 os.makedirs(OUT, exist_ok=True)
 W, H = 320, 568
 GROUNDS = [(91, 58, 28), (45, 59, 52), (74, 36, 24), (59, 53, 82), (58, 42, 20), (36, 64, 70)]
@@ -47,10 +47,11 @@ for i, name in enumerate(names):
         for x in range(W):
             px[x, y] = row
     d = ImageDraw.Draw(img)
-    f1 = ImageFont.truetype(FONT, 44)
-    f2 = fit(d, name.upper() + " ?", W - 40, 64)
-    d.text((20, H - 196), "D'OÙ VIENT", font=f1, fill=INK)
-    d.text((20, H - 140), name.upper() + " ?", font=f2, fill=ACCENT)
+    f1 = fit(d, "D’OÙ VIENT LE NOM", W - 40, 44)
+    subject_line = f"« {name.upper()} » ?"
+    f2 = fit(d, subject_line, W - 40, 64)
+    d.text((20, H - 196), "D’OÙ VIENT LE NOM", font=f1, fill=INK)
+    d.text((20, H - 140), subject_line, font=f2, fill=ACCENT)
     fs = ImageFont.truetype(FONT, 16)
     d.text((20, H - 44), "ETHNIAFRICA.COM", font=fs, fill=INK)
     img.save(os.path.join(OUT, f"{slug(name)}.jpg"), "JPEG", quality=80, optimize=True)
