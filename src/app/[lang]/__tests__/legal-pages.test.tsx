@@ -137,6 +137,27 @@ describe("footer destination pages", () => {
     }
   });
 
+  // The player was measured attempting two cookies on play, which a browser may
+  // exclude or keep (docs/plans/embedded-media-decision.md §6.1). A policy that
+  // says only "trackers" leaves a reader unable to check what was written, so
+  // it names them, and says that keeping them depends on the browser.
+  // @req REQ-182
+  it("names the two cookies the YouTube player tries to write, and that their fate is the browser's", async () => {
+    for (const [lang, processorsHeading, browserDecides] of [
+      ["fr", "Services et sous-traitants", /refusés d’office ou enregistrés/],
+      ["en", "Services and processors", /refused outright or stored/],
+    ] as const) {
+      const { unmount } = render(
+        await DataPolicyPage({ params: routeParams(lang) })
+      );
+      const processors = sectionText(processorsHeading);
+      expect(processors, lang).toMatch(/TESTCOOKIESENABLED/);
+      expect(processors, lang).toMatch(/LAST_RESULT_ENTRY_KEY/);
+      expect(processors, lang).toMatch(browserDecides);
+      unmount();
+    }
+  });
+
   // @req REQ-088
   it("describes Plausible as self-hosted and shared with the publisher's other site", async () => {
     render(await DataPolicyPage({ params: routeParams("fr") }));
