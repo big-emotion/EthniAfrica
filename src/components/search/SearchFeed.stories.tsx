@@ -86,6 +86,6 @@ export const Traore: Story = { args: feedPropsFor("traore") };
 // @req REQ-180
 export const Introuvable: Story = { args: feedPropsFor("introuvable") };
 
-/** Inconnu — an unknown name gets an admission, not a zero-result count. */
+/** Inconnu — an unknown name gets a confession, not a zero-result count. */
 // @req REQ-180
 export const Inconnu: Story = { args: feedPropsFor("inconnu") };
