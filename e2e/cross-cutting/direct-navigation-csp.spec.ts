@@ -236,11 +236,11 @@ test.describe("@direct-navigation @cross-viewport nonce CSP", () => {
         await expect(searchbox).toHaveValue("Yoruba");
       },
       async () => {
-        const searchButton = page
-          .getByRole("search", { name: "Formulaire de recherche" })
-          .getByRole("button", { name: "Rechercher" });
+        // The submit button is `sr-only`: a 1px box the sticky header sits on
+        // top of, so a pointer click never lands. Enter is how a reader submits
+        // it, and it fires the same form submission.
         await searchbox.fill("Yoruba test");
-        await searchButton.click();
+        await searchbox.press("Enter");
         await expect
           .poll(() => new URL(page.url()).searchParams.get("q"))
           .toBe("Yoruba test");
