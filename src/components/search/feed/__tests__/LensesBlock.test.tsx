@@ -48,4 +48,25 @@ describe("LensesBlock", () => {
     expect(onChange).toHaveBeenCalledWith("shorts");
     expect(container.innerHTML).not.toMatch(/(?:md:|lg:|xl:)/);
   });
+
+  // The reviewed board wants 4px between a label and its count that the
+  // non-reviewed `gap-afh-xs` class does not apply here; a no-break space
+  // once bought that spacing by entering the button's accessible name
+  // instead (docs/plans/search-result-feed-completion.md §4).
+  // @req REQ-180
+  it("spaces a reviewed lens's label from its count without a no-break space in the name", () => {
+    render(
+      <LensesBlock
+        language="fr"
+        reviewed
+        active="shorts"
+        onChange={() => {}}
+        lenses={[{ id: "shorts", label: "Shorts", count: 4 }]}
+      />
+    );
+
+    const button = screen.getByRole("button", { name: "Shorts 4" });
+    expect(button).toHaveAccessibleName("Shorts 4");
+    expect(button.textContent).not.toContain(" ");
+  });
 });

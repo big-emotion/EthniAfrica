@@ -56,14 +56,12 @@ export function LensesBlock({
                 : "border border-afh-border bg-afh-surface text-afh-text"
             )}
           >
-            <span>
-              {lens.label}
-              {reviewed && lens.count !== undefined ? "\u00a0" : null}
-            </span>
+            <span>{lens.label}</span>
             {lens.count !== undefined ? (
               <span
                 className={cn(
                   "font-semibold",
+                  reviewed && "ml-1",
                   selected ? "text-afh-bg" : "text-afh-text-soft"
                 )}
               >
