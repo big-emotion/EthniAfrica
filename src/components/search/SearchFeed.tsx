@@ -481,6 +481,7 @@ export function SearchFeed({
         return (
           <LensesBlock
             language={language}
+            reviewed={Boolean(presentation)}
             lenses={lenses}
             active={activeLens}
             onChange={setActiveLens}
@@ -704,6 +705,7 @@ export function SearchFeed({
         return (
           <FichesBlock
             items={ficheRows}
+            reviewed={Boolean(presentation)}
             title={presentation?.fiches?.title}
             subtitle={presentation?.fiches?.subtitle ?? undefined}
             language={language}

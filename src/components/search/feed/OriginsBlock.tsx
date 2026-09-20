@@ -116,7 +116,7 @@ export function OriginsBlock({
                 {reviewed ? (
                   <a
                     href="#sources"
-                    className={`text-afh-caption font-semibold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)] ${CHARTER_FOCUS_RING}`}
+                    className={`text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)] ${CHARTER_FOCUS_RING}`}
                   >
                     Voir la source
                   </a>

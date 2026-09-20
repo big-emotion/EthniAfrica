@@ -111,6 +111,7 @@ export function SearchFeedLayout({
       data-feed-layout={composition.mode}
       className={cn(
         "min-w-0 text-left",
+        reviewed && "search-feed-reviewed",
         thin &&
           "min-[1200px]:mx-auto min-[1200px]:w-[880px] min-[1200px]:max-w-full",
         className

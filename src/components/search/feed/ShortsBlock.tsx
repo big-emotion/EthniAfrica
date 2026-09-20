@@ -85,7 +85,7 @@ export function ShortsBlock({
             reviewed ? (
               <Link
                 href={allHref}
-                className={`relative text-afh-small font-semibold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] after:absolute after:-inset-y-[10px] after:inset-x-0 ${CHARTER_FOCUS_RING}`}
+                className={`relative inline-block text-afh-small font-semibold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] after:absolute after:-inset-y-[10px] after:inset-x-0 ${CHARTER_FOCUS_RING}`}
               >
                 {copy.seeAll} →
               </Link>
@@ -157,12 +157,22 @@ export function ShortsBlock({
                     sizes="(min-width: 1200px) 160px, 130px"
                     className="size-full object-cover"
                   />
-                  <span className="absolute right-afh-md top-afh-md rounded-full bg-[color:var(--afh-media-badge-bg)] px-afh-md py-afh-xs text-afh-eyebrow font-bold text-[color:var(--afh-media-badge-ink)]">
+                  <span
+                    className={cn(
+                      "absolute right-afh-md top-afh-md rounded-full bg-[color:var(--afh-media-badge-bg)] px-afh-md text-afh-eyebrow font-bold text-[color:var(--afh-media-badge-ink)]",
+                      reviewed
+                        ? "py-0.5 leading-[var(--afh-leading-eyebrow)]"
+                        : "py-afh-xs"
+                    )}
+                  >
                     {duration}
                   </span>
                   <span
                     aria-hidden="true"
-                    className="absolute left-1/2 top-1/2 size-8 -translate-x-1/2 -translate-y-1/2 min-[1200px]:size-9"
+                    className={cn(
+                      "absolute left-1/2 size-8 -translate-x-1/2 min-[1200px]:size-9",
+                      reviewed ? "top-[44%]" : "top-1/2 -translate-y-1/2"
+                    )}
                   >
                     <svg viewBox="0 0 36 36" role="presentation">
                       <circle

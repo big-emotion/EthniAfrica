@@ -65,7 +65,7 @@ export function QuizBlock({
     return (
       <SearchFeedBlock id="quiz" zone={zone}>
         <div className="flex flex-col gap-afh-lg rounded-afh-lg border border-[color:var(--accent)] bg-afh-surface p-afh-2xl">
-          <p className="text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[var(--afh-eyebrow-tracking)] text-[color:var(--accent-ink)]">
+          <p className="text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[0.14em] text-[color:var(--accent-ink)]">
             {copy.labels.playWithName}
           </p>
           <p className="font-afh-display text-afh-h3 font-bold leading-[var(--afh-leading-h3)] text-afh-text">

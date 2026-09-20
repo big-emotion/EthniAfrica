@@ -161,7 +161,7 @@ export function PlatesBlock({
             reviewed ? (
               <a
                 href={allHref}
-                className={`relative text-afh-small font-semibold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] after:absolute after:-inset-y-[10px] after:inset-x-0 ${CHARTER_FOCUS_RING}`}
+                className={`relative inline-block text-afh-small font-semibold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)] after:absolute after:-inset-y-[10px] after:inset-x-0 ${CHARTER_FOCUS_RING}`}
               >
                 {copy.seeAll} →
               </a>

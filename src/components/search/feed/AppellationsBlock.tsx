@@ -97,7 +97,7 @@ function FormsList({
           {item.searched ? (
             <span
               className={cn(
-                "text-afh-eyebrow font-bold text-[color:var(--accent-ink)]",
+                "text-afh-eyebrow font-bold leading-[var(--afh-leading-eyebrow)] text-[color:var(--accent-ink)]",
                 item.qualifier && "min-[1200px]:hidden"
               )}
             >
@@ -107,7 +107,7 @@ function FormsList({
           {item.selfGiven === true ? (
             <span
               className={cn(
-                "text-afh-eyebrow font-bold text-[color:var(--accent-ink)]",
+                "text-afh-eyebrow font-bold leading-[var(--afh-leading-eyebrow)] text-[color:var(--accent-ink)]",
                 item.qualifier && "min-[1200px]:hidden"
               )}
             >
@@ -117,7 +117,7 @@ function FormsList({
           {item.problematic === "recorded" ? (
             <span
               className={cn(
-                "text-afh-eyebrow font-bold text-[color:var(--afh-colonial-ink)]",
+                "text-afh-eyebrow font-bold leading-[var(--afh-leading-eyebrow)] text-[color:var(--afh-colonial-ink)]",
                 item.qualifier && "min-[1200px]:hidden"
               )}
             >

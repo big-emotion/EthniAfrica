@@ -107,7 +107,7 @@ export function OwedBlock({
                   : "correction-proposal"
               }
               variant="outline"
-              className="mt-afh-lg min-h-11 border-[color:var(--accent)] bg-[color:var(--accent-tint)] text-[color:var(--accent-foreground)] hover:bg-[color:var(--accent-tint)] hover:text-[color:var(--accent-foreground)] hover:brightness-95"
+              className="mt-afh-lg min-h-11 border-[color:var(--accent)] bg-[color:var(--accent-tint)] py-0 font-semibold text-[color:var(--accent-foreground)] hover:bg-[color:var(--accent-tint)] hover:text-[color:var(--accent-foreground)] hover:brightness-95"
             />
           </div>
         </div>

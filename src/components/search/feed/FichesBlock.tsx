@@ -29,6 +29,7 @@ export type FeedFicheItem = FeedFicheItemBase &
 
 export interface FichesBlockProps {
   items: FeedFicheItem[];
+  reviewed?: boolean;
   title?: string;
   subtitle?: string;
   zone?: FeedMovementZone;
@@ -38,6 +39,7 @@ export interface FichesBlockProps {
 // @req REQ-180
 export function FichesBlock({
   items,
+  reviewed = false,
   title,
   subtitle,
   zone = "primary",
@@ -63,7 +65,9 @@ export function FichesBlock({
         {items.map((item) => {
           const content = (
             <>
-              <span className="text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[var(--afh-eyebrow-tracking)] text-afh-text-soft">
+              <span
+                className={`text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] text-afh-text-soft ${reviewed ? "tracking-[0.14em]" : "tracking-[var(--afh-eyebrow-tracking)]"}`}
+              >
                 {item.kind}
               </span>
               <span className="font-afh-display text-afh-body font-bold leading-[1.3]">

@@ -16,6 +16,7 @@ export interface FeedLens {
 
 export interface LensesBlockProps {
   language?: Language;
+  reviewed?: boolean;
   lenses: readonly FeedLens[];
   active: FeedLensId;
   onChange: (id: FeedLensId) => void;
@@ -25,6 +26,7 @@ export interface LensesBlockProps {
 // @req REQ-180
 export function LensesBlock({
   language = "fr",
+  reviewed = false,
   lenses,
   active,
   onChange,
@@ -46,14 +48,18 @@ export function LensesBlock({
             aria-pressed={selected}
             onClick={() => onChange(lens.id)}
             className={cn(
-              "inline-flex min-h-11 shrink-0 snap-start items-center gap-afh-xs rounded-afh-full px-afh-2xl text-afh-caption font-bold leading-[var(--afh-leading-caption)]",
+              "inline-flex min-h-11 shrink-0 snap-start items-center rounded-afh-full px-afh-2xl text-afh-caption font-bold leading-[var(--afh-leading-caption)]",
+              !reviewed && "gap-afh-xs",
               CHARTER_FOCUS_RING,
               selected
                 ? "border-0 bg-afh-text text-afh-bg"
                 : "border border-afh-border bg-afh-surface text-afh-text"
             )}
           >
-            <span>{lens.label}</span>
+            <span>
+              {lens.label}
+              {reviewed && lens.count !== undefined ? "\u00a0" : null}
+            </span>
             {lens.count !== undefined ? (
               <span
                 className={cn(

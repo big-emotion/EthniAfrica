@@ -46,7 +46,7 @@ export function VerdictBlock({
       {tone === "answer" ? (
         <div
           data-verdict-panel=""
-          className="afh-accent-terre mt-afh-md rounded-r-afh-lg border-l-[length:calc(var(--afh-space-xs)-var(--afh-space-px))] border-l-[var(--accent)] bg-[var(--accent-tint)] px-afh-2xl py-afh-lg text-[color:var(--accent-foreground)] min-[1200px]:mt-afh-lg min-[1200px]:border-l-[length:var(--afh-space-xs)] min-[1200px]:px-afh-5xl min-[1200px]:py-afh-2xl"
+          className="afh-accent-terre mt-afh-md rounded-r-afh-lg border-l-[length:calc(var(--afh-space-xs)-var(--afh-space-px))] border-l-[var(--accent-ink)] bg-[var(--accent-tint)] px-afh-2xl py-afh-lg text-[color:var(--accent-foreground)] min-[1200px]:mt-afh-lg min-[1200px]:border-l-[length:var(--afh-space-xs)] min-[1200px]:px-afh-5xl min-[1200px]:py-afh-2xl"
         >
           <p className="text-afh-small font-bold leading-[var(--afh-leading-small)]">
             <InlineMarkup text={verdict} />
