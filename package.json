@@ -15,6 +15,7 @@
     "bundle-size:axis-graph": "tsx scripts/axis-graph-bundle-size.ts",
     "bundle-size:home-globe": "tsx scripts/home-globe-bundle-size.ts",
     "bundle-size:quiz": "tsx scripts/quiz-bundle-size.ts",
+    "bundle-size:embed-facade": "tsx scripts/embed-facade-bundle-size.ts",
     "check:action-pins": "tsx scripts/checkGithubActionPins.ts",
     "check:afrik-loader": "tsx scripts/ci/checkAfrikLoaderPreflight.ts",
     "check:asset-weight": "tsx scripts/ci/checkPublicAssetWeight.ts",

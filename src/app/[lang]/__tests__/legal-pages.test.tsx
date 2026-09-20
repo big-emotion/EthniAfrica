@@ -99,6 +99,44 @@ describe("footer destination pages", () => {
     }
   });
 
+  // The site contacts Google only after the reader asks for a video, and says
+  // so where it names its processors and where it names its legal bases. This
+  // stops being true the day ENABLED_EMBED_PROVIDERS is emptied, and the two
+  // paragraphs must leave in the same commit.
+  // @req REQ-182
+  it("declares the YouTube player, and the consent it rests on, in both languages", async () => {
+    for (const [lang, processorsHeading, basesHeading, google, consent] of [
+      [
+        "fr",
+        "Services et sous-traitants",
+        "Finalités et bases légales",
+        /Google Ireland Limited/,
+        /repose sur votre consentement/,
+      ],
+      [
+        "en",
+        "Services and processors",
+        "Purposes and legal bases",
+        /Google Ireland Limited/,
+        /rests on your consent/,
+      ],
+    ] as const) {
+      const { unmount } = render(
+        await DataPolicyPage({ params: routeParams(lang) })
+      );
+      const processors = sectionText(processorsHeading);
+      expect(processors, lang).toMatch(google);
+      expect(processors, lang).toMatch(/youtube-nocookie\.com/);
+      expect(processors, lang).toMatch(
+        lang === "fr"
+          ? /aucune requête n’est adressée à Google/
+          : /no request is made to Google/
+      );
+      expect(sectionText(basesHeading), lang).toMatch(consent);
+      unmount();
+    }
+  });
+
   // @req REQ-088
   it("describes Plausible as self-hosted and shared with the publisher's other site", async () => {
     render(await DataPolicyPage({ params: routeParams("fr") }));

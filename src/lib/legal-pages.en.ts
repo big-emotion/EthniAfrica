@@ -124,7 +124,7 @@ export const legalPagesEn: Readonly<
         title: "Purposes and legal bases",
         paragraphs: [
           "Account data serves to provide access to the contribution features. Reports and editorial logs answer the project’s legitimate interest in reliability, security and transparency.",
-          "Plausible audience measurement is activated only after consent. Technical diagnostics strictly necessary for security and stability may be processed on the basis of legitimate interest.",
+          "Plausible audience measurement is activated only after consent. Playing a third-party production on the site rests on your consent, collected at the moment you ask for it. Technical diagnostics strictly necessary for security and stability may be processed on the basis of legitimate interest.",
           "Rate limiting protects the API and the contact form against abuse; it rests on the legitimate interest in the security of the service and does not depend on consent. Sending emails — sign-in link, moderation notifications, contact message — is necessary for the service requested.",
           "Consent choices can be changed at any time from “Cookie settings” in the footer.",
         ],
@@ -137,6 +137,7 @@ export const legalPagesEn: Readonly<
           "Upstash, Inc. hosts the rate-limiting counter in Frankfurt (Germany). For any request to the public API — including those the browser makes to display the site — or to the contact form, the sender’s IP address, or the fingerprint of their API key, serves as a key name in that counter for the length of the counting window: one minute for the API, one hour for the contact form.",
           "Microsoft Corporation, through its Microsoft Graph service, sends the site’s emails: sign-in link, moderation notifications sent to contributors, and contact-form messages passed to the publisher. These emails pass through its servers together with the address of their recipient.",
           "Upstash, Inc. and Microsoft Corporation are companies under United States law: access from the United States, or a transfer of this data to that country, cannot be ruled out, even though Upstash’s counter is located in the European Union. The publisher’s own servers are also located there.",
+          "When you ask for a production to play on the site, the YouTube player is loaded from youtube-nocookie.com, provided by Google Ireland Limited. Playback happens only after an explicit action on your part: no request is made to Google until you ask for one. Google then receives your IP address, your browser’s characteristics and the playback context, and writes trackers to your device under its own policy. That processing is Google’s, as a separate controller; its retention periods are Google’s and are not set by EthniAfrica. It involves a transfer outside the European Union, framed by the standard contractual clauses and the EU–US Data Privacy Framework. Your choice is kept for twelve months and can be withdrawn at any time from “Cookie settings”. Every production remains reachable directly on the platform that publishes it, without going through the player.",
           "No personal data is sold, rented or used for advertising profiling.",
         ],
       },

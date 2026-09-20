@@ -5,6 +5,12 @@ export default defineConfig({
   test: {
     globals: true,
     environment: "happy-dom",
+    // A mounted <iframe> would otherwise be fetched for real. The third-party
+    // player facade is tested by what it mounts, and a test that reached
+    // YouTube would contradict the thing under test.
+    environmentOptions: {
+      happyDOM: { settings: { disableIframePageLoading: true } },
+    },
     setupFiles: ["./src/test/setup.ts"],
     include: [
       "**/__tests__/**/*.test.{ts,tsx}",
