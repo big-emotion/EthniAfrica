@@ -240,9 +240,10 @@ async function readFeedGeometry(page: Page): Promise<FeedGeometry> {
 function expectBoxWithinOnePixel(
   actual: ElementBox,
   expected: ElementBox,
-  label: string
+  label: string,
+  keys: readonly (keyof ElementBox)[] = ["x", "y", "width", "height"]
 ): void {
-  for (const key of ["x", "y", "width", "height"] as const) {
+  for (const key of keys) {
     expect(
       Math.abs(actual[key] - expected[key]),
       `${label}.${key}: expected ${expected[key]}, received ${actual[key]}`
@@ -426,15 +427,23 @@ test.describe("search-feed forty-board visual parity", () => {
         } else {
           expect(expectedGeometry.firstPoster).not.toBeNull();
           expect(actualGeometry.firstPoster).not.toBeNull();
+          // The manifest was measured on macOS, where a row of chips above the
+          // poster wraps one line differently than on Linux (the boards moved
+          // 15 to 27px in CI while the app moved with them). Its y is therefore
+          // not a portable expectation; the poster's size is, and its y is
+          // held against the board rendered in the same run just below.
+          const posterSize = ["width", "height"] as const;
           expectBoxWithinOnePixel(
             expectedGeometry.firstPoster!,
             entry.firstPoster,
-            "board-first-poster"
+            "board-first-poster",
+            posterSize
           );
           expectBoxWithinOnePixel(
             actualGeometry.firstPoster!,
             entry.firstPoster,
-            "actual-first-poster"
+            "actual-first-poster",
+            posterSize
           );
           expectBoxWithinOnePixel(
             actualGeometry.firstPoster!,
