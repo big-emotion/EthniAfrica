@@ -98,3 +98,73 @@ chacune avec son domicile :
    appuie.
 
 Aucune n'est écrite ici.
+
+## Prolongement — les mots, et « ethnie » en Afrique
+
+Ajouté le 2026-09-21, dans la foulée, après deux réponses supplémentaires sur
+l'histoire du mot. Elles ne sont pas reproduites ici : ce sont des réponses de
+modèles, en partie non sourcées, et l'une de leurs affirmations centrale contredit
+la source de repérage (voir plus bas).
+
+### L'échange, verbatim
+
+_Version nettoyée par l'opérateur. Sa dernière phrase est volontairement adoucie :
+la version d'origine (« il n'est pas utilisé ailleurs autant qu'en Afrique ») est
+contredite par la source de repérage ouverte._
+
+> Ces deux réponses apportent un peu plus de détails sur la position que nous
+> prenons par rapport aux mots et aux noms. On peut faire comprendre que même le
+> terme « ethnie » a été repris, c'est attesté, dans le contexte de l'Afrique, pour
+> classer les populations. Il est resté très présent en Afrique.
+
+### Synthèse
+
+**Même un mot que l'on croit neutre a servi à classer.** « Ethnie » n'a pas
+seulement été introduit en 1896 pour classer des populations : selon l'opérateur,
+il a ensuite été repris dans le contexte africain pour les classer aussi, et il y
+est resté très présent dans l'usage courant. Cela renforce le « pourquoi nous
+partons du nom » : chercher d'où vient un mot, c'est voir ce qu'il a servi à faire.
+La reprise en contexte africain est **attestée selon l'opérateur, à sourcer**.
+
+**Le sujet de la phrase reste le mot ou la catégorie.** On écrit « ces catégories
+se sont figées dans l'usage, y compris après les indépendances », non « c'est un
+héritage colonial » : aucun colonisateur n'est sujet moral d'une phrase. La
+direction du projet ne change pas : continuer à employer le mot en le sachant, et
+rendre à chacun le nom qu'il se donne.
+
+### Ce que la vérification du 2026-09-21 donne, et ne donne pas
+
+Source de repérage : la page « Ethnie » de Wikipédia (résumé automatique, non
+citée comme preuve). Les deux réponses de modèles ne sont pas des sources.
+
+- **Confirmé (repérage).** Le motif de Vacher de Lapouge est de **classer selon la
+  race biologique** : il est présenté comme théoricien de l'eugénisme et du
+  racisme biologique.
+- **Non retenu : « pour distinguer le culturel du biologique ».** Deux réponses de
+  modèles avancent ce motif ; la page dit le contraire. Il adoucirait précisément
+  ce que l'essai affirme, et n'est pas soutenu.
+- **Non retenu : « le mot n'est pas utilisé ailleurs autant qu'en Afrique ».** La
+  page décrit un usage mondial (Asie, Amérique du Nord). Les deux réponses disent
+  qu'il est courant en Afrique, non qu'il y serait propre. D'où la formule adoucie
+  du verbatim.
+- **À sourcer.** La fixation des catégories par les administrations coloniales : la
+  page cite l'exemple des Hutus et des Tutsis, catégories fixées par
+  l'administration belge ; piste non ouverte : Amselle et M'Bokolo, _Au cœur de
+  l'ethnie_ (1985). Et « Quelle est ton ethnie ? » comme question courante en
+  Afrique : observation non sourcée.
+- **Non vérifiés, donc non enregistrés.** Le rôle de l'UNESCO après 1945 ;
+  l'adjectif « ethnique » au sens de « païen » (XVe siècle) ; la liste de mots
+  grecs, latins et médiévaux donnée par les deux réponses, qui pourra servir à un
+  contenu « D'où vient le nom "ethnie" ? » une fois sourcée.
+- **L'ouvrage de 1896 reste non ouvert.** Un recoupement par un extrait de livre a
+  échoué (fichier illisible).
+
+### Ce que le prolongement ajoute aux décisions ci-dessus
+
+- La décision 3 (sujets de la série) gagne une matière : la chronologie des mots
+  qui ont désigné les groupes avant « ethnie ».
+- La décision 4 (sourçage préalable) s'allonge : la fixation coloniale des
+  catégories et l'usage courant du mot en Afrique demandent une source avant toute
+  phrase publique.
+
+Aucune n'est écrite ici.
