@@ -539,6 +539,18 @@ variants through the semantic tokens. `scripts/a11y-test.ts` over the built
 Storybook reports zero violations on all 334 stories. It is a story-only audit;
 it does not replace the live-route a11y run.
 
+**The live consolidation spec.** With `.env.local` loaded
+(`node --env-file=.env.local node_modules/playwright/cli.js test
+e2e/search-results-consolidation.spec.ts ...`) it runs, but the database behind
+it answers `exceed_egress_quota`, so search returns HTTP 500 and the page
+correctly shows its "search unavailable" state: two pass, five fail for that
+one reason. The same six assertions were run against the fixture-mocked search
+responses of the parity harness (temporary spec, removed) and pass — three
+layout checks unchanged, and a real defect fixed in the spec: for an unknown
+name the reviewed feed's `h1` is the searched form, not "Recherche". What stays
+unverified is only the live-corpus claim (« Yoruba » answering as a people and
+a language); it needs the database to answer.
+
 **A correction that stays here because the error is instructive.** An earlier
 version of this document reported that `decoding="auto"` on the reviewed image
 moved `mande mobile-day` from 1.8916% to 1.7660%. That was wrong; a clean A/B

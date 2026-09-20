@@ -96,12 +96,15 @@ test.describe("SERP title and answer rule (REQ-178, DEC-057)", () => {
   });
 
   // @req REQ-124
-  test("keeps the default title and admits when the atlas does not know the name", async ({
+  test("names the searched form in h1 and admits when the atlas does not know it", async ({
     page,
   }) => {
     await page.goto(`${SERP_URL}?q=${encodeURIComponent(NO_MATCH_QUERY)}`);
+    // The reviewed feed's h1 is the searched form itself, unknown or not; the
+    // retired page kept the generic "Recherche" title instead.
     const heading = page.getByRole("heading", { level: 1 });
-    await expect(heading).toHaveText("Recherche");
+    await expect(heading).toHaveCount(1);
+    await expect(heading).toHaveText(NO_MATCH_QUERY);
     // SearchFeed's "unknown" state — no result, no lead — draws the
     // confession in its verdict panel rather than a dedicated testid; the
     // retired page's `name-answer-unknown` had no reviewed-feed counterpart
