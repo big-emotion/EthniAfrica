@@ -33,6 +33,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Generated imagery — the three launch collections](design/imagery-collections.md)
 - [Atlas mockups — the visual oracle](design/mockups/README.md)
 - [The result-page feed mockups — forty boards](design/mockups/search-feed/README.md)
+- [Search-feed font bundle](design/mockups/search-feed/fonts/README.md)
 - [The result-page mockups — twenty boards, and what parity means](design/mockups/search/README.md)
 - [Moderation charter](design/moderation-charter.md)
 - [How a name reaches a country](design/name-to-country-linking.md)
@@ -83,6 +84,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Anthroponym fiche research protocol](runbooks/anthroponym-fiche-research.md)
 - [Bilingual copy survey](runbooks/bilingual-copy-survey.md)
 - [Corpus translation runbook](runbooks/corpus-translation.md)
+- [Runbook — reading Facebook and Instagram audience data (read-only)](runbooks/meta-graph-readonly.md)
 - [Runbook — Supabase migration state](runbooks/migration-state.md)
 - [Moderation access](runbooks/moderation-access.md)
 - [Runbook — named-person candidate extraction](runbooks/person-extraction.md)
@@ -111,9 +113,9 @@ were referenced by nothing at all, two of them written that same week.
 - [Playing the productions on the site — decision](plans/embedded-media-decision.md)
 - [The publishing format, and a production history the site can read — brief](plans/production-history-brief.md)
 - [Production history and publishing-cadence plan](plans/production-history-plan.md)
+- [Search-result feed — finishing phases 11 and 12](plans/search-result-feed-completion.md)
 - [Search-result feed — correction and implementation sequencing plan](plans/search-result-feed-correction-plan.md)
 - [Search-result feed: implementation plan](plans/search-result-feed.md)
-- [Search-result feed — finishing phases 11 and 12](plans/search-result-feed-completion.md)
 
 ## Elsewhere
 
