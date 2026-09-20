@@ -1052,9 +1052,11 @@ Reading the code and measuring moved four things away from the text above:
   The index answers a 307 to the deck's first entry
   (`burkina-faso-trois-langues`), so auditing it would have audited an unrelated
   entry and moved with the catalogue's order. The axe route list is
-  `scripts/a11yRoutes.ts`, composed from the slug table, not `a11y.yml`; the
-  required check is renamed _Lighthouse gate (5 routes)_ in the workflow and in
-  the test that pins its name.
+  `scripts/a11yRoutes.ts`, composed from the slug table, not `a11y.yml`. The
+  required check keeps the name _Lighthouse gate (4 routes)_ though it now visits
+  five: branch protection on `recette` matches required checks by name, so a
+  rename without the protection rule leaves the check unreported and blocks
+  every pull request.
 - **axe found a real violation the plan did not expect.** `valid-lang` failed on
   the Amharic and Shona proverbs (`lang="amh"`, `lang="sna"`), which the gate's
   ISO 639-3 allowance in `scripts/a11y-test.ts` did not name. Adding the route

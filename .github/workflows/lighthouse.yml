@@ -30,7 +30,11 @@ permissions:
 
 jobs:
   gate:
-    name: Lighthouse gate (5 routes)
+    # The name says four though the gate visits five routes. Branch protection on
+    # `recette` requires this check by name, so renaming it leaves the required
+    # status never reported and blocks every pull request. Rename it in the same
+    # change as the protection rule, and in ephemeralSupabaseWiring.test.ts.
+    name: Lighthouse gate (4 routes)
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 15
