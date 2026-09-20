@@ -74,7 +74,12 @@ describe("Sentry runtime configurations", () => {
 
     saveConsent({
       hasConsented: true,
-      preferences: { essential: true, analytics: true, functional: false },
+      preferences: {
+        essential: true,
+        analytics: true,
+        functional: false,
+        embeds: false,
+      },
       consentDate: new Date().toISOString(),
     });
     expect(sample()).toBeGreaterThan(0);

@@ -9,6 +9,9 @@ const en = {
   essentialDescription: "Required — necessary for the site to work",
   analytics: "Analytics cookies",
   analyticsDescription: "Plausible — anonymous visit statistics, no cookie",
+  embeds: "Third-party video playback",
+  embedsDescription:
+    "YouTube — the player loads, and YouTube receives your IP address, only when you start a video",
   save: "Save preferences",
   acceptAll: "Accept all",
   reject: "Reject",
@@ -27,6 +30,9 @@ const fr: ConsentCopy = {
   analytics: "Cookies analytiques",
   analyticsDescription:
     "Plausible — statistiques anonymes de visite, sans cookie",
+  embeds: "Lecture de vidéos tierces",
+  embedsDescription:
+    "YouTube — le lecteur n’est chargé, et YouTube ne reçoit votre adresse IP, que si vous lancez une vidéo",
   save: "Enregistrer mes préférences",
   acceptAll: "Accepter tout",
   reject: "Refuser",

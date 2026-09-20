@@ -27,6 +27,7 @@ export function ConsentBanner() {
   const [showCustomize, setShowCustomize] = useState(false);
   // Track local overrides for preferences - null means use consentState
   const [localAnalytics, setLocalAnalytics] = useState<boolean | null>(null);
+  const [localEmbeds, setLocalEmbeds] = useState<boolean | null>(null);
   const bannerRef = useRef<HTMLDivElement>(null);
   const firstFocusableRef = useRef<HTMLButtonElement>(null);
 
@@ -38,9 +39,12 @@ export function ConsentBanner() {
       essential: true,
       analytics: localAnalytics ?? consentState.preferences.analytics,
       functional: consentState.preferences.functional,
+      embeds: localEmbeds ?? consentState.preferences.embeds,
     }),
     [
       localAnalytics,
+      localEmbeds,
+      consentState.preferences.embeds,
       consentState.preferences.analytics,
       consentState.preferences.functional,
     ]
@@ -99,6 +103,10 @@ export function ConsentBanner() {
     banner.addEventListener("keydown", handleKeyDown);
     return () => banner.removeEventListener("keydown", handleKeyDown);
   }, [showBanner, rejectAll]);
+
+  const handleToggleEmbeds = useCallback((checked: boolean) => {
+    setLocalEmbeds(checked);
+  }, []);
 
   const handleSavePreferences = useCallback(() => {
     updatePreferences(preferences);
@@ -191,6 +199,29 @@ export function ConsentBanner() {
                   aria-label={copy.analytics}
                   checked={preferences.analytics}
                   onCheckedChange={handleToggleAnalytics}
+                />
+              </div>
+
+              {/* Third-party players. Only the panel lists this, so it can be
+                  withdrawn; the play click writes it on. The arrival banner
+                  offers no such switch about content the reader has not reached. */}
+              <div className="flex items-center justify-between gap-4">
+                <div className="flex flex-col gap-0.5">
+                  <label
+                    htmlFor="embeds-switch"
+                    className="text-afh-small font-medium text-foreground"
+                  >
+                    {copy.embeds}
+                  </label>
+                  <span className="text-afh-caption text-muted-foreground">
+                    {copy.embedsDescription}
+                  </span>
+                </div>
+                <Switch
+                  id="embeds-switch"
+                  aria-label={copy.embeds}
+                  checked={preferences.embeds}
+                  onCheckedChange={handleToggleEmbeds}
                 />
               </div>
 

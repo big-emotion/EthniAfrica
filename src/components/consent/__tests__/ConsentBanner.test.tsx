@@ -39,12 +39,18 @@ describe("ConsentBanner", () => {
   const defaultMockContext = {
     consentState: {
       hasConsented: false,
-      preferences: { essential: true, analytics: false, functional: false },
+      preferences: {
+        essential: true,
+        analytics: false,
+        functional: false,
+        embeds: false,
+      },
       consentDate: null,
     },
     acceptAll: mockAcceptAll,
     rejectAll: mockRejectAll,
     updatePreferences: mockUpdatePreferences,
+    setEmbedsConsent: vi.fn(),
     showBanner: true,
     setShowBanner: mockSetShowBanner,
   };
@@ -252,6 +258,47 @@ describe("ConsentBanner", () => {
       essential: true,
       analytics: true,
       functional: false,
+      embeds: false,
+    });
+  });
+
+  // The panel is where the play click's choice is listed and withdrawn. The
+  // arrival banner offers no fourth switch: only the panel carries the row.
+  // @req REQ-181
+  it("lists the third-party player choice in the panel so it can be withdrawn", async () => {
+    const user = userEvent.setup();
+    vi.mocked(useConsentModule.useConsent).mockReturnValue({
+      ...defaultMockContext,
+      consentState: {
+        ...defaultMockContext.consentState,
+        preferences: {
+          ...defaultMockContext.consentState.preferences,
+          embeds: true,
+        },
+      },
+    });
+    render(<ConsentBanner />);
+
+    expect(
+      screen.queryByRole("switch", { name: /vidéos tierces/i })
+    ).not.toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /personnaliser/i }));
+    const embedsSwitch = screen.getByRole("switch", {
+      name: /vidéos tierces/i,
+    });
+    expect(embedsSwitch).toBeChecked();
+
+    await user.click(embedsSwitch);
+    await user.click(
+      screen.getByRole("button", { name: /enregistrer mes préférences/i })
+    );
+
+    expect(mockUpdatePreferences).toHaveBeenCalledWith({
+      essential: true,
+      analytics: false,
+      functional: false,
+      embeds: false,
     });
   });
 
@@ -273,6 +320,7 @@ describe("ConsentBanner", () => {
     expect(screen.getByText("Essential cookies")).toBeVisible();
     expect(screen.getByText("Analytics cookies")).toBeVisible();
     expect(screen.queryByText("Functional cookies")).not.toBeInTheDocument();
+    expect(screen.getByText("Third-party video playback")).toBeVisible();
     expect(
       screen.getByRole("button", { name: "Save preferences" })
     ).toBeVisible();

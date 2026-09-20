@@ -69,12 +69,18 @@ describe("SiteFooter link hover contrast", () => {
     vi.mocked(consentModule.useConsent).mockReturnValue({
       consentState: {
         hasConsented: true,
-        preferences: { essential: true, analytics: false, functional: false },
+        preferences: {
+          essential: true,
+          analytics: false,
+          functional: false,
+          embeds: false,
+        },
         consentDate: "2026-07-25T00:00:00.000Z",
       },
       acceptAll: vi.fn(),
       rejectAll: vi.fn(),
       updatePreferences: vi.fn(),
+      setEmbedsConsent: vi.fn(),
       showBanner: false,
       setShowBanner: vi.fn(),
     });

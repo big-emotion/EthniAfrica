@@ -9,7 +9,12 @@ const MONTH_MS = 30 * 24 * 60 * 60 * 1000;
 function storeChoice(analytics: boolean, consentDate = new Date()) {
   saveConsent({
     hasConsented: true,
-    preferences: { essential: true, analytics, functional: false },
+    preferences: {
+      essential: true,
+      analytics,
+      functional: false,
+      embeds: false,
+    },
     consentDate: consentDate.toISOString(),
   });
 }

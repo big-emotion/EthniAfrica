@@ -10,6 +10,7 @@ export const DEFAULT_PREFERENCES: ConsentPreferences = {
   essential: true,
   analytics: false,
   functional: false,
+  embeds: false,
 };
 
 // @req REQ-046
@@ -23,7 +24,13 @@ export function getStoredConsent(): ConsentState | null {
     if (!stored) {
       return null;
     }
-    return JSON.parse(stored) as ConsentState;
+    const parsed = JSON.parse(stored) as ConsentState;
+    // A record written before a category existed lacks its key; that reads as
+    // refused, which is what the default says, rather than as undefined.
+    return {
+      ...parsed,
+      preferences: { ...DEFAULT_PREFERENCES, ...parsed.preferences },
+    };
   } catch {
     return null;
   }

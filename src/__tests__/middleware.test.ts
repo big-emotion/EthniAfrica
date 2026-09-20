@@ -15,6 +15,20 @@ vi.mock("@supabase/ssr", () => ({
   createServerClient: vi.fn(),
 }));
 
+// The shipped switch is a source constant, so the closed default can only be
+// held by substituting it here. Everything else in the module stays real.
+const embedSwitch = vi.hoisted(() => ({ enabled: ["youtube"] as string[] }));
+vi.mock("@/lib/embeds/providers", async (importOriginal) => {
+  const actual =
+    await importOriginal<typeof import("@/lib/embeds/providers")>();
+  return {
+    ...actual,
+    get ENABLED_EMBED_PROVIDERS() {
+      return embedSwitch.enabled;
+    },
+  };
+});
+
 describe("middleware", () => {
   const mockGetUser = vi.fn();
   const mockFrom = vi.fn();
@@ -23,6 +37,7 @@ describe("middleware", () => {
 
   beforeEach(() => {
     vi.clearAllMocks();
+    embedSwitch.enabled = ["youtube"];
     vi.stubEnv("SITE_LOCALE_MODE", "bilingual-en-default");
 
     mockEq.mockResolvedValue({ data: [], error: null });
@@ -751,11 +766,11 @@ describe("middleware", () => {
       expect(mediaSrc).not.toContain("*");
     });
 
-    // frame-src is declared explicitly (no longer an implicit default-src
-    // fallback) but carries no external host yet: REQ-128 owns which embed
-    // provider(s) are trusted, and none is confirmed at this stage.
-    // @req REQ-052
-    it("declares frame-src restricted to 'self' with no external host yet", async () => {
+    // frame-src is declared explicitly, never an implicit default-src fallback,
+    // and closed until a provider is switched on in `providers.ts`.
+    // @req REQ-181
+    it("declares frame-src restricted to 'self' when no provider is enabled", async () => {
+      embedSwitch.enabled = [];
       const request = new NextRequest("http://localhost:3000/some-page");
       const response = await middleware(request);
 
@@ -763,9 +778,24 @@ describe("middleware", () => {
       const directives = csp.split(";").map((d) => d.trim());
       const frameSrc = directives.find((d) => d.startsWith("frame-src"));
 
-      expect(frameSrc).toBeDefined();
       expect(frameSrc).toBe("frame-src 'self'");
-      expect(frameSrc).not.toContain("*");
+    });
+
+    // An enabled provider opens exactly its own hosts. Strict equality in both
+    // directions: a `toContain` here would let a wildcard or a third host pass.
+    // @req REQ-181
+    it("declares exactly the enabled provider's frame hosts", async () => {
+      embedSwitch.enabled = ["youtube"];
+      const request = new NextRequest("http://localhost:3000/some-page");
+      const response = await middleware(request);
+
+      const csp = response.headers.get("Content-Security-Policy")!;
+      const directives = csp.split(";").map((d) => d.trim());
+      const frameSrc = directives.find((d) => d.startsWith("frame-src"));
+
+      expect(frameSrc).toBe(
+        "frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com"
+      );
     });
 
     // A host that was never declared must stay blocked — the CSP is a
