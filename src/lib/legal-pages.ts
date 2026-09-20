@@ -16,7 +16,7 @@ export const legalPages = {
   legalNotice: {
     eyebrow: "Informations essentielles",
     title: "Mentions légales",
-    lastUpdated: "Dernière mise à jour : 25 juillet 2026",
+    lastUpdated: "Dernière mise à jour : 20 septembre 2026",
     introduction:
       "Cette page présente l’éditeur, le responsable de publication et l’hébergeur d’EthniAfrica.",
     sections: [
@@ -43,7 +43,7 @@ export const legalPages = {
       {
         title: "Hébergement",
         paragraphs: [
-          "Le site est hébergé et distribué par Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, États-Unis. Les services applicatifs et les données du projet sont configurés selon les régions documentées dans l’infrastructure d’EthniAfrica.",
+          "Le site est hébergé {host}. Les serveurs de l’application et de la base de données sont situés dans l’Union européenne.",
         ],
       },
       {
@@ -73,7 +73,7 @@ export const legalPages = {
   dataPolicy: {
     eyebrow: "Vie privée et transparence",
     title: "Politique de données",
-    lastUpdated: "Dernière mise à jour : 13 septembre 2026",
+    lastUpdated: "Dernière mise à jour : 20 septembre 2026",
     introduction:
       "EthniAfrica limite la collecte de données personnelles au strict nécessaire et distingue clairement les données du compte, les contributions éditoriales et les mesures techniques.",
     sections: [
@@ -88,7 +88,8 @@ export const legalPages = {
         paragraphs: [
           "Lors de la création d’un compte, EthniAfrica peut traiter une adresse e-mail, un nom d’affichage, les informations nécessaires à l’authentification et la confirmation d’âge.",
           "Les contributions, corrections et signalements sont conservés avec les informations nécessaires à leur instruction et à la transparence éditoriale. Les journaux techniques peuvent contenir des informations limitées liées au fonctionnement et à la sécurité du service.",
-          "Les préférences de consentement sont enregistrées dans le navigateur pour mémoriser les choix effectués.",
+          "Les préférences de consentement sont enregistrées dans le stockage local du navigateur pour mémoriser les choix effectués (voir « Cookies et stockage local »).",
+          "L’adresse IP d’une requête adressée à l’API publique ou au formulaire de contact sert à limiter le nombre de requêtes (voir « Services et sous-traitants »).",
           "Dans Découvertes, les publications conservées sont enregistrées dans le navigateur de cet appareil sous forme d’identifiants de publication. Elles ne sont liées à aucun compte et ne se synchronisent pas. Vous pouvez les retirer dans Découvertes ou effacer les données du site dans votre navigateur.",
         ],
       },
@@ -96,23 +97,36 @@ export const legalPages = {
         title: "Finalités et bases légales",
         paragraphs: [
           "Les données de compte servent à fournir l’accès aux fonctionnalités de contribution. Les signalements et journaux éditoriaux répondent à l’intérêt légitime de fiabilité, de sécurité et de transparence du projet.",
-          "La mesure d’audience Plausible n’est activée qu’après consentement. La préférence fonctionnelle contrôle l’association d’un contexte utilisateur à Sentry ; sans elle, ce contexte est effacé. Les diagnostics techniques strictement nécessaires à la sécurité et à la stabilité peuvent être traités au titre de l’intérêt légitime.",
+          "La mesure d’audience Plausible n’est activée qu’après consentement. La préférence fonctionnelle contrôle l’association d’un contexte utilisateur au suivi d’erreurs Sentry, lorsque celui-ci est activé ; sans elle, ce contexte est effacé. Les diagnostics techniques strictement nécessaires à la sécurité et à la stabilité peuvent être traités au titre de l’intérêt légitime.",
+          "La limitation du débit des requêtes protège l’API et le formulaire de contact contre les abus ; elle repose sur l’intérêt légitime de sécurité du service et ne dépend pas du consentement. L’envoi de courriels — lien de connexion, notifications de modération, message de contact — est nécessaire au service demandé.",
           "Les choix de consentement peuvent être modifiés à tout moment depuis « Gestion des cookies » dans le pied de page.",
         ],
       },
       {
         title: "Services et sous-traitants",
         paragraphs: [
-          "Supabase fournit l’authentification et l’hébergement de la base de données. Vercel assure l’hébergement et la distribution de l’application.",
-          "Plausible Analytics fournit, après consentement, des statistiques de fréquentation sans cookie publicitaire. Sentry peut recevoir un contexte technique limité et expurgé des données personnelles identifiables afin de diagnostiquer les erreurs.",
+          "Supabase assure l’authentification et la base de données ; ce logiciel est auto-hébergé sur des serveurs exploités pour le compte de l’éditeur, dans l’Union européenne, et non confié à un prestataire tiers.",
+          "Plausible Analytics, auto-hébergé sur le serveur de l’application, fournit après consentement des statistiques de fréquentation sans cookie publicitaire. Cette instance est partagée avec le site big-emotion.com de l’éditeur ; chaque site y est mesuré séparément.",
+          "Upstash, Inc. héberge le compteur de la limitation de débit. Pour toute requête adressée à l’API publique — y compris celles que le navigateur émet pour afficher le site — ou au formulaire de contact, l’adresse IP de l’émetteur, ou l’empreinte de sa clé d’API, sert de nom de clé dans ce compteur le temps de la fenêtre de comptage : une minute pour l’API, une heure pour le formulaire de contact.",
+          "Microsoft Corporation, par son service Microsoft Graph, envoie les courriels du site : lien de connexion, notifications de modération adressées aux contributeurs, et messages du formulaire de contact transmis à l’éditeur. Ces courriels transitent par ses serveurs avec l’adresse de leur destinataire.",
+          "Upstash, Inc. et Microsoft Corporation sont des sociétés de droit américain : un transfert de ces données vers les États-Unis n’est pas exclu. Les serveurs de l’éditeur, eux, sont situés dans l’Union européenne.",
+          "Lorsque le suivi d’erreurs Sentry est activé, il peut recevoir un contexte technique limité et expurgé des données personnelles identifiables afin de diagnostiquer les erreurs.",
           "Aucune donnée personnelle n’est vendue, louée ou utilisée à des fins de profilage publicitaire.",
+        ],
+      },
+      {
+        title: "Cookies et stockage local",
+        paragraphs: [
+          "Le site ne dépose aucun cookie publicitaire ni de suivi. Deux cookies peuvent être écrits, chacun nécessaire à une fonction que vous demandez et donc exempté de consentement : « ethni-locale », qui retient pendant un an la langue choisie avec le sélecteur de langue et n’est écrit que lorsque vous l’utilisez, et un cookie de session d’authentification, propre aux contributeurs connectés.",
+          "Vos choix de consentement sont enregistrés dans le stockage local de votre navigateur sous le nom « ethni-consent », et non dans un cookie, pendant douze mois au plus. Le site y conserve aussi, sur votre appareil seulement, les publications gardées dans Découvertes et l’état de quelques repères de lecture, comme un bandeau refermé. Rien de cela n’est envoyé à l’éditeur.",
+          "La mesure d’audience et le suivi d’erreurs ne déposent aucun cookie. Vous pouvez effacer ces données à tout moment dans les réglages de votre navigateur, ou modifier vos choix depuis « Gestion des cookies » dans le pied de page.",
         ],
       },
       {
         title: "Durées de conservation",
         paragraphs: [
           "Le profil contributeur est conservé tant que le compte reste actif, puis supprimé dans les trente jours suivant une demande de clôture.",
-          "Les contributions et signalements peuvent être conservés dans le journal éditorial ; ils sont anonymisés lorsqu’un compte est effacé. Les journaux d’erreurs Sentry sont conservés au maximum trente jours. Les préférences de consentement expirent après douze mois.",
+          "Les contributions et signalements peuvent être conservés dans le journal éditorial ; ils sont anonymisés lorsqu’un compte est effacé. Lorsque le suivi d’erreurs Sentry est activé, ses journaux sont conservés au maximum trente jours. Les préférences de consentement expirent après douze mois.",
         ],
       },
       {

@@ -3,14 +3,15 @@ import type { Language } from "@/types/shared";
 const en = {
   title: "Cookie settings",
   description:
-    "We use cookies to improve your experience on our site. Essential cookies are required for the site to work. Analytics and functional cookies help us improve our services.",
+    "Your choices are kept in your browser’s local storage, not in a cookie. Essential functions are always on; audience measurement and error reporting start only if you agree.",
   dataPolicy: "Data policy",
   essential: "Essential cookies",
   essentialDescription: "Required — necessary for the site to work",
   analytics: "Analytics cookies",
-  analyticsDescription: "Plausible — anonymous visit statistics",
+  analyticsDescription: "Plausible — anonymous visit statistics, no cookie",
   functional: "Functional cookies",
-  functionalDescription: "Sentry — error reporting that helps improve the site",
+  functionalDescription:
+    "Sentry — error reporting that helps improve the site, no cookie",
   save: "Save preferences",
   acceptAll: "Accept all",
   reject: "Reject",
@@ -22,14 +23,16 @@ type ConsentCopy = typeof en;
 const fr: ConsentCopy = {
   title: "Gestion des cookies",
   description:
-    "Nous utilisons des cookies pour améliorer votre expérience sur notre site. Les cookies essentiels sont nécessaires au fonctionnement du site. Les cookies analytiques et fonctionnels nous aident à améliorer nos services.",
+    "Vos choix sont conservés dans le stockage local de votre navigateur, et non dans un cookie. Les fonctions essentielles sont toujours actives ; la mesure d’audience et le suivi d’erreurs ne démarrent que si vous les acceptez.",
   dataPolicy: "Politique de données",
   essential: "Cookies essentiels",
   essentialDescription: "Requis — nécessaires au fonctionnement du site",
   analytics: "Cookies analytiques",
-  analyticsDescription: "Plausible — statistiques anonymes de visite",
+  analyticsDescription:
+    "Plausible — statistiques anonymes de visite, sans cookie",
   functional: "Cookies fonctionnels",
-  functionalDescription: "Sentry — rapport d'erreurs pour améliorer le site",
+  functionalDescription:
+    "Sentry — rapport d'erreurs pour améliorer le site, sans cookie",
   save: "Enregistrer mes préférences",
   acceptAll: "Accepter tout",
   reject: "Refuser",

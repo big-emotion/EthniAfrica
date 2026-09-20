@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { describe, expect, it, vi } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import AccessibilityPage from "@/app/[lang]/accessibilite/page";
 import LegalNoticePage from "@/app/[lang]/mentions-legales/page";
 import DataPolicyPage from "@/app/[lang]/politique-de-donnees/page";
@@ -14,7 +14,19 @@ vi.mock("@/components/layout/PageLayout", () => ({
   }) => <div data-language={language}>{children}</div>,
 }));
 
+vi.mock("@/lib/api/logger", () => ({ logger: { error: vi.fn() } }));
+
 const routeParams = (lang: string) => Promise.resolve({ lang });
+
+afterEach(() => {
+  vi.unstubAllEnvs();
+});
+
+/** The text of one `<section>` as a reader meets it, found from its heading. */
+function sectionText(heading: string): string {
+  const title = screen.getByRole("heading", { level: 2, name: heading });
+  return title.closest("section")?.textContent ?? "";
+}
 
 describe("footer destination pages", () => {
   // @req REQ-088
@@ -25,7 +37,6 @@ describe("footer destination pages", () => {
       screen.getByRole("heading", { level: 1, name: "Mentions légales" })
     ).toBeInTheDocument();
     expect(screen.getByText(/BIG EMOTION, SASU/i)).toBeInTheDocument();
-    expect(screen.getByText(/Vercel Inc\./i)).toBeInTheDocument();
     expect(screen.getAllByText(/hello@big-emotion\.com/i)).not.toHaveLength(0);
     expect(
       screen.getByRole("heading", {
@@ -41,6 +52,78 @@ describe("footer destination pages", () => {
     expect(
       screen.getByText(/Site web : big-emotion\.com\./i)
     ).toBeInTheDocument();
+  });
+
+  // The host is production's own machine, and its name is configuration: the
+  // repository is public and does not carry it.
+  // @req REQ-088
+  it("names the host the environment provides, and no platform the site does not run on", async () => {
+    vi.stubEnv("LEGAL_HOST_NAME", "Exemple Hébergement SAS");
+    vi.stubEnv("LEGAL_HOST_ADDRESS", "1 rue de l’Exemple, 00000 Ville, Pays");
+    const { container } = render(
+      await LegalNoticePage({ params: routeParams("fr") })
+    );
+
+    const hosting = sectionText("Hébergement");
+    expect(hosting).toContain("Exemple Hébergement SAS");
+    expect(hosting).toContain("Union européenne");
+    expect(container.textContent).not.toMatch(/Vercel/i);
+  });
+
+  // @req REQ-088
+  it("states the role of the host, without a name, when none is configured", async () => {
+    vi.stubEnv("LEGAL_HOST_NAME", "");
+    vi.stubEnv("LEGAL_HOST_ADDRESS", "");
+    render(await LegalNoticePage({ params: routeParams("fr") }));
+
+    expect(sectionText("Hébergement")).toContain(
+      "serveur dédié exploité pour le compte de l’éditeur"
+    );
+  });
+
+  // @req REQ-088
+  it("declares every processor the site contacts about a reader, in both languages", async () => {
+    for (const [lang, heading] of [
+      ["fr", "Services et sous-traitants"],
+      ["en", "Services and processors"],
+    ] as const) {
+      const { unmount } = render(
+        await DataPolicyPage({ params: routeParams(lang) })
+      );
+      const processors = sectionText(heading);
+      expect(processors, lang).toMatch(/Upstash/);
+      expect(processors, lang).toMatch(/Microsoft/);
+      expect(processors, lang).not.toMatch(/Vercel/i);
+      unmount();
+    }
+  });
+
+  // @req REQ-088
+  it("describes Plausible as self-hosted and shared with the publisher's other site", async () => {
+    render(await DataPolicyPage({ params: routeParams("fr") }));
+
+    const processors = sectionText("Services et sous-traitants");
+    expect(processors).toMatch(/Plausible[^.]*auto-hébergé/);
+    expect(processors).toMatch(/big-emotion\.com/);
+  });
+
+  // The consent choice lives in localStorage, and calling it a cookie is what
+  // the banner, the footer and this page each did differently.
+  // @req REQ-088
+  it("has a cookies section that says where the choice is kept", async () => {
+    for (const [lang, heading, storage] of [
+      ["fr", "Cookies et stockage local", /stockage local/],
+      ["en", "Cookies and local storage", /local storage/],
+    ] as const) {
+      const { unmount } = render(
+        await DataPolicyPage({ params: routeParams(lang) })
+      );
+      const cookies = sectionText(heading);
+      expect(cookies, lang).toMatch(storage);
+      expect(cookies, lang).toMatch(/ethni-consent/);
+      expect(cookies, lang).toMatch(/ethni-locale/);
+      unmount();
+    }
   });
 
   // @req REQ-088
