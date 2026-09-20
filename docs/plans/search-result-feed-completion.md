@@ -539,19 +539,26 @@ variants through the semantic tokens. `scripts/a11y-test.ts` over the built
 Storybook reports zero violations on all 334 stories. It is a story-only audit;
 it does not replace the live-route a11y run.
 
-**The live consolidation spec.** With `.env.local` loaded
-(`node --env-file=.env.local node_modules/playwright/cli.js test
-e2e/search-results-consolidation.spec.ts ...`) it runs, but the database behind
-it answers `exceed_egress_quota`, so search returns HTTP 500 and the page
-correctly shows its "search unavailable" state: two pass, five fail for that
-one reason. The same six assertions were run against the fixture-mocked search
-responses of the parity harness (temporary spec, removed) and pass — three
-layout checks unchanged, and a real defect fixed in the spec: for an unknown
-name the reviewed feed's `h1` is the searched form, not "Recherche". The corpus premise
-of the live claim holds in the source files: `dataset/source/afrik/langues/yor.json`
-(`nameFr` "Yoruba") and `PPL_YORUBA` are both filed, so the name answers as a
-language and as a people. What stays unverified is only that the running API
-returns both for `q=Yoruba`, which needs the database to answer.
+**The live consolidation spec — passes 6 of 6.** Against the hosted project
+behind `.env.local` it could not run: that database answers
+`exceed_egress_quota`, so search returned HTTP 500 and the page correctly
+showed its "search unavailable" state (two passed, five failed for that one
+reason). It was run instead against a local stack built from the repository
+alone, following `docs/runbooks/afrik-data-sync.md` § Local bootstrap:
+`supabase start` (all 93 migrations), then
+`migrateAfrikToDatabase.ts --target=local --apply` (25 families, 762
+languages, 774 peoples, 54 countries, 793 patronymes, no structural failure)
+and `verifyCorpusInDatabase.ts --target=local` (every table matches the
+corpus). With that stack's three variables passed through a separate env file,
+all six assertions pass, « Yoruba » included: the live search returns it as
+both a people and a language, and the page lists every subject without
+promoting one. Running the assertions first against fixture-mocked responses
+had found a real spec defect, fixed: for an unknown name the reviewed feed's
+`h1` is the searched form, not "Recherche".
+
+To reproduce on a machine where another Postgres holds port 5432, move
+`[db] port` in `supabase/config.toml` for the run and put it back; the loader
+and the app only use the API port (54321).
 
 **A correction that stays here because the error is instructive.** An earlier
 version of this document reported that `decoding="auto"` on the reviewed image
