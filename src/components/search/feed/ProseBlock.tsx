@@ -3,6 +3,7 @@ import { InlineMarkup } from "@/components/search/feed/InlineMarkup";
 import { SearchFeedEvidenceAction } from "@/components/search/feed/SearchFeedEvidenceAction";
 import { SearchFeedSectionHeading } from "@/components/search/feed/SearchFeedSectionHeading";
 import { SourceStandingBadge } from "@/components/sources/SourceStandingBadge";
+import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import type {
   FeedEvidenceProps,
   FeedMovementZone,
@@ -47,11 +48,15 @@ export function ProseBlock({
             language={language}
           />
         ) : standing ? (
-          <SourceStandingBadge
-            standing={standing}
-            language={language}
-            className="mt-afh-lg"
-          />
+          <div className="mt-afh-lg flex flex-wrap items-center gap-afh-md">
+            <SourceStandingBadge standing={standing} language={language} />
+            <a
+              href="#sources"
+              className={`text-afh-caption font-bold leading-[var(--afh-leading-caption)] text-[color:var(--accent-ink)] ${CHARTER_FOCUS_RING}`}
+            >
+              Voir la source
+            </a>
+          </div>
         ) : null}
       </div>
     </SearchFeedBlock>

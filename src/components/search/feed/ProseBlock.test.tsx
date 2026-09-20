@@ -41,6 +41,25 @@ describe.each(["shared-name", "problem", "near-name"] as const)(
   }
 );
 
+describe("ProseBlock standing without evidence", () => {
+  // @req REQ-180
+  it("keeps the source link beside the standing badge, matching the origins card", () => {
+    render(
+      <ProseBlock
+        blockId="problem"
+        title="Ce que ces noms posent problème"
+        paragraphs={["Une affirmation documentée."]}
+        standing="referenced"
+      />
+    );
+
+    expect(screen.getByText("Référencée")).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: "Voir la source" })
+    ).toHaveAttribute("href", "#sources");
+  });
+});
+
 describe("ProseBlock locale", () => {
   // @req REQ-180
   it("passes English to its evidence action", () => {

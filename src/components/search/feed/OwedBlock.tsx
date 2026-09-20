@@ -1,6 +1,7 @@
 "use client";
 
 import type { FlagFormTarget } from "@/components/flags/FlagForm";
+import { InlineMarkup } from "@/components/search/feed/InlineMarkup";
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { SearchFeedContributionAction } from "@/components/search/feed/SearchFeedContributionAction";
 import { SearchFeedSectionHeading } from "@/components/search/feed/SearchFeedSectionHeading";
@@ -62,7 +63,7 @@ export function OwedBlock({
                     {silence.title}
                   </p>
                   <p className="mt-afh-xs text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
-                    {silence.detail}
+                    <InlineMarkup text={silence.detail} />
                   </p>
                 </li>
               ))}

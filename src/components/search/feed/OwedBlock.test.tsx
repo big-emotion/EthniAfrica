@@ -88,6 +88,37 @@ describe("OwedBlock", () => {
   });
 
   // @req REQ-180
+  it("renders the inline markup a silence detail carries", () => {
+    render(
+      <OwedBlock
+        silences={[
+          {
+            title: "Aucune attestation datée",
+            detail:
+              "L’atlas situe l’emprunt européen au milieu du XIX<sup>e</sup> siècle.",
+          },
+        ]}
+        conviction={{
+          title: "Un nom ne résume pas un peuple.",
+          body: "Il ouvre une enquête.",
+        }}
+        invitation={{
+          title: "Une source manque ?",
+          body: "Elle sera lue.",
+          action: "Proposer une source",
+        }}
+        contributionTarget={contributionTarget}
+      />
+    );
+
+    const detail = screen.getByText((_content, element) =>
+      Boolean(element?.textContent?.startsWith("L’atlas situe"))
+    );
+    expect(detail.querySelector("sup")).toHaveTextContent("e");
+    expect(detail).not.toHaveTextContent("<sup>");
+  });
+
+  // @req REQ-180
   it("keeps a sparse unknown-name closing in one column", () => {
     render(
       <OwedBlock

@@ -34,6 +34,53 @@ roles, plus a dozen micro-corrections. It typechecks, lints and keeps the 138
 feed unit tests green; its three Prettier failures were fixed on preservation.
 Two of its decisions are deliberately left open — §4.
 
+## 1a. Update — 2026-09-20, second session
+
+Measured on `codex/search-feed-parity` after commit `12057a811` (the preserved
+WIP) plus two new fixes, both TDD'd and unit-tested:
+
+- **`ProseBlock`** (not `OriginsBlock` — that one already mounted
+  `SearchFeedEvidenceAction` correctly) was missing the "Voir la source" link
+  entirely on its `standing`-without-`evidence` branch. This is what cause #1
+  actually is for the `problem` prose block (`Ce que ces noms posent
+problème`): `OriginsBlock`'s origin cards already had the link since the
+  preserved commit; `ProseBlock`'s never did. Fixed to match `OriginsBlock`'s
+  pattern exactly (`href="#sources"`, same classes).
+- **`OwedBlock`** rendered `silence.detail` as a raw string instead of through
+  `InlineMarkup`, so a fixture detail carrying `<sup>e</sup>` (e.g. "XIX
+  siècle") printed the literal tag text instead of a superscript. Not
+  previously catalogued as one of the ten causes — found by running the actual
+  `fang mobile-day` case and reading the real diff rather than trusting the
+  table below, which the board fixture text had already drifted past by the
+  time this was written.
+
+Full 40-board run after both fixes: **2/40 passing** (up from 0/40), one
+`console_error`-free full pass, 1.2 minutes. Confirmed via
+`npm run e2e:search-feed-parity` with no `--grep` filter.
+
+**Cause #6-10 (the chip tag) is architecturally deeper than this table says.**
+Tracing "Fang · leur nom" vs the rendered "le nom qu'ils se donnent" through
+`AppellationsBlock` → `resultForms()` (`SearchFeed.tsx`) → `subject.naming`
+shows the filed-name self-given chip is synthesized in `resultForms()` with
+`qualifier: undefined` hardcoded, and the generic fallback text
+(`copy.selfGivenMark`) is what renders. Shortening that copy string to "leur
+nom" would fix cause #6 alone (confirmed against both `Fang.dc.html` and
+`FangDesktop.dc.html` — same short text on both widths, not a mobile/desktop
+split). **But cause #7 (Ekpeye: "leur nom, et celui de tous") is a
+case-specific string, not the shortened default** — confirmed in
+`Ekpeye.dc.html`. Since the case fixtures (`feedCases.ts`) reference real
+corpus entity IDs (`PPL_EKPEYE`, `PAT_TRAORE`, …) rather than carrying literal
+board copy, this text has to come from the corpus itself through
+`readNaming`/`naming.ts` — the same projection the people fiches read — not
+from a fixture literal or a `SearchFeed.tsx` tweak. That makes causes 6-10 a
+single, corpus-facing plumbing change (a `tag` on `NamingPresentationForm`,
+sourced from the appellation's own qualifier when the corpus has one,
+falling back to the shortened default only when it doesn't), not four small
+component patches. It needs its own investigation pass per case
+(`ekpeye`, `traore`, `nigeria`, `introuvable`) against the real recette data
+before touching `naming.ts`, because that module also feeds the people fiche
+naming tiles — a change here is not scoped to search.
+
 ## 2. The rule that decides every remaining fix
 
 `docs/design/search-result-charter.md`, as PR #1188 rewrote it, gives three
