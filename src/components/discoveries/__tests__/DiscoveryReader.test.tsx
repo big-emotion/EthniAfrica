@@ -753,3 +753,168 @@ describe("Découvertes generated image", () => {
     ).not.toBeInTheDocument();
   });
 });
+
+const carouselPublication: DiscoveryPublication = {
+  id: "carousel:guinee",
+  kind: "carousel",
+  status: "published",
+  slug: { fr: "guinee-trois-recits", en: "guinea-three-accounts" },
+  title: { fr: "Guinée, trois récits", en: "Guinea, three accounts" },
+  description: {
+    fr: "Ce que le nom raconte.",
+    en: "What the name tells.",
+  },
+  source: {
+    title: "Fiche Guinée",
+    url: "https://example.org/guinee",
+    tier: "referenced",
+  },
+  image: {
+    src: "/images/discoveries/carousel/guinee/1.jpg",
+    credit: "EthniAfrica, CC BY-SA 4.0",
+    licence: "cc-by-sa",
+  },
+  carousel: {
+    frames: [
+      {
+        src: "/images/discoveries/carousel/guinee/1.jpg",
+        width: 1080,
+        height: 1350,
+        alt: { fr: "Première carte", en: "First card" },
+      },
+      {
+        src: "/images/discoveries/carousel/guinee/2.jpg",
+        width: 1080,
+        height: 1350,
+        alt: { fr: "Deuxième carte", en: "Second card" },
+      },
+      {
+        src: "/images/discoveries/carousel/guinee/3.jpg",
+        width: 1080,
+        height: 1350,
+        alt: { fr: "Troisième carte", en: "Third card" },
+      },
+    ],
+  },
+};
+
+describe("Découvertes carousel frame", () => {
+  // @req REQ-156
+  it("puts every frame of the series in one track, each described in the reader's language", () => {
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[carouselPublication]}
+        initialId={carouselPublication.id}
+      />
+    );
+
+    const track = screen.getByRole("group", {
+      name: "Images de cette découverte",
+    });
+    expect(
+      within(track)
+        .getAllByRole("img")
+        .map((frame) => frame.getAttribute("alt"))
+    ).toEqual(["Première carte", "Deuxième carte", "Troisième carte"]);
+  });
+
+  // The dots say "there is more sideways" to a reader who can see them. A
+  // reader who cannot gets the same fact as a sentence, or gets nothing.
+  // @req REQ-156
+  it("announces which frame is showing, and how many there are", () => {
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[carouselPublication]}
+        initialId={carouselPublication.id}
+      />
+    );
+
+    expect(screen.getByText("Image 1 sur 3")).toBeTruthy();
+  });
+
+  // @req REQ-156
+  it("moves through the frames with the horizontal arrows, and stops at both ends", () => {
+    HTMLElement.prototype.scrollIntoView = vi.fn();
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[carouselPublication]}
+        initialId={carouselPublication.id}
+      />
+    );
+    const feed = screen.getByLabelText("Découvertes", { selector: "div" });
+
+    fireEvent.keyDown(feed, { key: "ArrowLeft" });
+    expect(screen.getByText("Image 1 sur 3")).toBeTruthy();
+
+    fireEvent.keyDown(feed, { key: "ArrowRight" });
+    expect(screen.getByText("Image 2 sur 3")).toBeTruthy();
+
+    fireEvent.keyDown(feed, { key: "ArrowRight" });
+    fireEvent.keyDown(feed, { key: "ArrowRight" });
+    expect(screen.getByText("Image 3 sur 3")).toBeTruthy();
+  });
+
+  // The vertical deck and the horizontal series share one key handler, and a
+  // frame move must not also move the publication.
+  // @req REQ-156
+  it("leaves the deck's own vertical keys to the deck", () => {
+    HTMLElement.prototype.scrollIntoView = vi.fn();
+    window.history.replaceState({}, "", "/fr/decouvertes/guinee-trois-recits");
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[carouselPublication, ...publications]}
+        initialId={carouselPublication.id}
+      />
+    );
+    const feed = screen.getByLabelText("Découvertes", { selector: "div" });
+
+    fireEvent.keyDown(feed, { key: "ArrowRight" });
+    expect(window.location.pathname).toBe(
+      "/fr/decouvertes/guinee-trois-recits"
+    );
+
+    fireEvent.keyDown(feed, { key: "ArrowDown" });
+    expect(window.location.pathname).toBe(
+      "/fr/decouvertes/burkina-faso-trois-langues"
+    );
+  });
+
+  // @req REQ-157
+  it("files a series as a series, and credits it without a file page it does not have", () => {
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[carouselPublication]}
+        initialId={carouselPublication.id}
+      />
+    );
+
+    expect(screen.getByText("Série")).toBeTruthy();
+    const credit = screen.getByText(/EthniAfrica, CC BY-SA 4\.0/);
+    expect(credit.querySelector("a")).toBeNull();
+  });
+
+  // A carousel has no photograph elsewhere, so its share card is its own
+  // first frame rather than the site's default image.
+  // @req REQ-158
+  it("shares the series on its first frame", () => {
+    document.head.innerHTML = '<meta property="og:image" content="" />';
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[carouselPublication]}
+        initialId={carouselPublication.id}
+      />
+    );
+
+    expect(
+      document.head
+        .querySelector('meta[property="og:image"]')
+        ?.getAttribute("content")
+    ).toContain("/images/discoveries/carousel/guinee/1.jpg");
+  });
+});

@@ -107,11 +107,13 @@ were referenced by nothing at all, two of them written that same week.
 ## Plans
 
 - [Congo history dossiers: implementation plan](plans/congo-history-dossiers.md)
+- [Playing the productions on the site — analysis brief](plans/embedded-media-brief.md)
+- [Playing the productions on the site — decision](plans/embedded-media-decision.md)
+- [The publishing format, and a production history the site can read — brief](plans/production-history-brief.md)
+- [Production history and publishing-cadence plan](plans/production-history-plan.md)
+- [Search-result feed — correction and implementation sequencing plan](plans/search-result-feed-correction-plan.md)
 - [Search-result feed: implementation plan](plans/search-result-feed.md)
-- [Search-result feed: correction and implementation sequencing plan](plans/search-result-feed-correction-plan.md)
-- [Search-result feed: finishing phases 11 and 12](plans/search-result-feed-completion.md)
-- [Playing the productions on the site: analysis brief](plans/embedded-media-brief.md)
-- [The publishing format and a production history the site can read: brief](plans/production-history-brief.md)
+- [Search-result feed — finishing phases 11 and 12](plans/search-result-feed-completion.md)
 
 ## Elsewhere
 
@@ -119,6 +121,7 @@ were referenced by nothing at all, two of them written that same week.
 - [EthniAfrica — Production Readiness Audit](PRODUCTION-READINESS-AUDIT.md)
 - [Language alternate names — the pass of 18 September 2026](data-audits/language-alternate-names-2026-09-18.md)
 - [Language-tier catalog audit against Glottolog 5.3](data-audits/language-tier-audit-glottolog-5.3.md)
+- [The production history and its cadence](productions/README.md)
 - [Reset inventory — every configuration, documentation and rule file](reset-inventory-2026-09-17.md)
 - [Découvertes source-bank inventory](tasks/discoveries-content-inventory.md)
 - [Découvertes implementation tracker](tasks/discoveries-implementation.md)

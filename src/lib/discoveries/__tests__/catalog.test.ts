@@ -367,3 +367,83 @@ describe("Découvertes publication contracts", () => {
     ]);
   });
 });
+
+const frames = [
+  {
+    src: "/images/discoveries/carousel/exemple/1.jpg",
+    width: 1080,
+    height: 1350,
+    alt: { fr: "Première carte", en: "First card" },
+  },
+  {
+    src: "/images/discoveries/carousel/exemple/2.jpg",
+    width: 1080,
+    height: 1350,
+    alt: { fr: "Deuxième carte", en: "Second card" },
+  },
+];
+
+// The cover carries the credit and the licence, as it does for an anecdote;
+// what a carousel does not have is a file page, because the frames are the
+// project's own render and their original is this publication.
+const cover = {
+  src: "/images/discoveries/carousel/exemple/1.jpg",
+  credit: "EthniAfrica, CC BY-SA 4.0",
+  licence: "cc-by-sa" as const,
+};
+
+describe("Découvertes carousels", () => {
+  // @req REQ-157
+  it("publishes a carousel on its own frames, without the file page an outside photo owes", () => {
+    const entry = item("carousel:exemple", {
+      kind: "carousel",
+      slug: { fr: "serie-exemple-fr", en: "serie-exemple-en" },
+      image: cover,
+      carousel: { frames },
+    });
+
+    expect(eligiblePublications([entry]).map((one) => one.id)).toEqual([
+      "carousel:exemple",
+    ]);
+  });
+
+  // A single frame renders a track with nowhere to go. It is an `image`
+  // publication that filed itself under the wrong kind, and publishing it
+  // would promise the reader a series the publication does not have.
+  // @req REQ-157
+  it("withholds a carousel of one frame", () => {
+    const entry = item("carousel:seule", {
+      kind: "carousel",
+      slug: { fr: "serie-seule-fr", en: "serie-seule-en" },
+      image: cover,
+      carousel: { frames: [frames[0]] },
+    });
+
+    expect(eligiblePublications([entry])).toEqual([]);
+  });
+
+  // @req REQ-157
+  it("withholds a carousel whose frames are not described in both languages", () => {
+    const entry = item("carousel:muet", {
+      kind: "carousel",
+      slug: { fr: "serie-muet-fr", en: "serie-muet-en" },
+      image: cover,
+      carousel: {
+        frames: [frames[0], { ...frames[1], alt: { fr: "Deuxième", en: "" } }],
+      },
+    });
+
+    expect(eligiblePublications([entry])).toEqual([]);
+  });
+
+  // @req REQ-157
+  it("withholds a carousel that declares the kind and carries no frames at all", () => {
+    const entry = item("carousel:vide", {
+      kind: "carousel",
+      slug: { fr: "serie-vide-fr", en: "serie-vide-en" },
+      image: cover,
+    });
+
+    expect(eligiblePublications([entry])).toEqual([]);
+  });
+});

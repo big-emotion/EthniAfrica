@@ -8,12 +8,12 @@ Two things are asked for, and they are one piece of work because the second is
 what makes the first legible a year later:
 
 1. a **fixed publishing format** — five subjects per production day, Monday,
-   Wednesday and Friday, one question (« D'où vient le nom X »), five
-   typologies, a video and a carousel per subject, numbered by episode;
+   Wednesday and Friday, one question (« D'où vient le nom X »), five typologies,
+   a video and a carousel per subject, numbered by episode;
 2. a **versioned production history inside the repository**, holding for every
    subject its links per network and per format, simple enough to fill by hand,
-   and readable by the site — the Découvertes scroll and the search feed's
-   shorts shelf.
+   and readable by the site — the Découvertes scroll and the search feed's shorts
+   shelf.
 
 ## 1. What exists today — measured 2026-09-20, do not re-measure
 
@@ -33,9 +33,9 @@ what makes the first legible a year later:
 
 Every path above except the audits is **outside the repository**, under
 `ETHNIAFRICA_SOCIAL_PROJECTS` (the workshop) and `ETHNIAFRICA_SOCIAL_POSTS` (the
-library). `CLAUDE.md` and `social/harness/README.md` state the rule: _"The code
-is versioned; the productions are not"_, _"productions are large, and git is not
-a media store."_ **That rule is about media, and this brief does not touch it.**
+library). `CLAUDE.md` and `social/harness/README.md` state the rule: "The code is
+versioned; the productions are not", "productions are large, and git is not a
+media store." **That rule is about media, and this brief does not touch it.**
 What it does touch is the two hundred bytes of metadata per post that today live
 only in a hand-edited file on one machine.
 
@@ -43,8 +43,8 @@ only in a hand-edited file on one machine.
 
 `social/tools/library/register-post.mjs` reads and writes
 `<library>/00-Index/publications.json` — **83 posts**, outside git, and the tool
-says so itself: _"The ledger is edited by hand with targeted replacements and has
-no version history."_ A new entry:
+says so itself: "The ledger is edited by hand with targeted replacements and has
+no version history." A new entry:
 
 ```js
 { id, dir, title, subject, pillar, status,
@@ -68,7 +68,7 @@ is answerable today only by knowing which of two post entries to open.
 ### 1.3 What the repository already versions about productions
 
 - `docs/tasks/discoveries-social-inventory.md` — a dated audit in prose, no
-  reusable identifier, explicitly _"not a publication manifest"_.
+  reusable identifier, explicitly "not a publication manifest".
 - `docs/audience/audit-2026-09-{07,12,14,17}.md` — per-post metrics keyed by
   **human titles** (`| Keïta et Coulibaly | YouTube | 09-12 | 1 433 | 55.7 % |`),
   with no `post.id` and no campaign slug. Joining an audit to a production is
@@ -76,9 +76,9 @@ is answerable today only by knowing which of two post entries to open.
 - `social/tools/link-builder/productions.mjs` — **the only in-repo table binding
   a production to a page of the site**, twenty entries:
   `{ id, kind: "video"|"carrousel", title, subject, pillar, path: "/fr/atlas/noms/PAT_TRAORE" }`.
-  No network URL, no date, no status. Its README: _"reduced to the two things a
-  tagged link needs: where it points, and under what campaign name."_
-- The UTM scheme, which is the one identifier already shared end to end:
+  No network URL, no date, no status. Its README: "reduced to the two things a
+  tagged link needs: where it points, and under what campaign name."
+- The UTM scheme, the one identifier already shared end to end:
   `utm_source=<youtube|tiktok|instagram|facebook|linkedin|x>`,
   `utm_medium=social`, `utm_campaign=<subject slug, identical on all six>`,
   `utm_content=<video|carrousel|image|story|commentaire-epingle|bio>`.
@@ -91,14 +91,14 @@ is answerable today only by knowing which of two post entries to open.
   y = 1620), 1080×1080 retired.
 - **§1 bis, one format per network**, operator's decision of 2026-09-16:
   TikTok → carousel; Instagram → reel **and** carousel; Facebook → reel;
-  YouTube → reel; LinkedIn → text + link; X → reel + text. _"The table is
-  revised, it is not broken."_ **A batch that passes goes into one folder per
-  format, named after the networks that receive it.**
+  YouTube → reel; LinkedIn → text + link; X → reel + text. "The table is revised,
+  it is not broken." **A batch that passes goes into one folder per format, named
+  after the networks that receive it.**
 - **§1 ter** — the cover title is the thumbnail: ≤ 8 words, never compressed.
 - **§7 ter** — fifteen content types, each with its opening pattern, its accent
-  word and its closing title and body. _"The closing line is constant within a
+  word and its closing title and body. "The closing line is constant within a
   type and varies between types […] it is by finding the same sentence episode
-  after episode that a reader comes to associate it with the project."_
+  after episode that a reader comes to associate it with the project."
 - **§10** — the `cards.json` schema: `campagne`, `pilier`, `accent`, `fond`,
   `licence_sortie`, `cartes[]`. The engine also reads `serie` (defaulting to
   `pilier`) and `outDir`.
@@ -108,22 +108,22 @@ is answerable today only by knowing which of two post entries to open.
 1. **No cadence is written in the repository.** The only one is in the
    strategist's `reference/launch-plan.md` — _three videos a week, Monday /
    Wednesday / Friday, fixed slots, Sunday batch_ — and `published-state.md`
-   records that it was abandoned for _"two concentrated waves"_.
-2. **No episode number exists anywhere.** `rang` is the card's ordinal inside
-   its batch (`01/07`); `serie` is a display string. The ledger has no counter,
-   no season, no per-typology index.
+   records that it was abandoned for "two concentrated waves".
+2. **No episode number exists anywhere.** `rang` is the card's ordinal inside its
+   batch (`01/07`); `serie` is a display string. The ledger has no counter, no
+   season, no per-typology index.
 3. **No identity bridge.** `cards.json` and the ledger carry no `PPL_*`, ISO
    3166-1, ISO 639-3 or `PAT_*` identifier — only a `path` that happens to be a
    site URL. But the site's own filter,
    `publicationsForSubjects(records, subjects)`, matches on
-   `detail.entities[{kind, id}]`. **That missing pair is why no production can
-   be attached to a fiche automatically**, and it is the single most valuable
-   field this work adds.
+   `detail.entities[{kind, id}]`. **That missing pair is why no production can be
+   attached to a fiche automatically**, and it is the single most valuable field
+   this work adds.
 
 And on the site: `DISCOVERY_VIDEOS` is empty, so the shorts shelf renders its
 empty slot in production; `kind: "carousel"` exists in the type union and in no
-record, no renderer and no test; `DiscoveryReader` draws a photo or a
-typographic proverb card and has neither a player nor a gallery.
+record, no renderer and no test; `DiscoveryReader` draws a photo or a typographic
+proverb card and has neither a player nor a gallery.
 
 ## 2. What the operator decided
 
@@ -134,12 +134,12 @@ which case the contradiction is reported, not silently resolved.
   publication day.**
 - **One formula, five typologies**: « D'où vient le nom X », where X is a
   **peuple, a pays, a patronyme, a lieu or a langue**.
-- **Per subject: one video and one carousel.** The video walks the appellations
-  — exonyms and endonyms — back up their history. The carousel starts from a
-  **myth to take apart**, ten images maximum.
+- **Per subject: one video and one carousel.** The video walks the appellations —
+  exonyms and endonyms — back up their history. The carousel starts from a **myth
+  to take apart**, ten images maximum.
 - **Numbering by typology and by episode**, so a reader can follow a series.
-- **Every piece presents the project** and invites contribution, and explains
-  why appellations are hard and why the word « ethnie » does not fit.
+- **Every piece presents the project** and invites contribution, and explains why
+  appellations are hard and why the word « ethnie » does not fit.
 - **Length**: under three minutes, and the platforms' format constraints
   respected.
 - **Current events are a reason to schedule a subject** (his example: Goma).
@@ -258,8 +258,8 @@ only what is large.
   search feed's shorts shelf stops rendering its empty slot in production.
 - A production with `format: "carrousel"` gives the `carousel` kind its first
   record; **whether it renders as self-hosted images or as an embed is decided by
-  [`embedded-media-brief.md`](embedded-media-brief.md), not here.** This brief
-  supplies the data; that one supplies the player.
+  `embedded-media-brief.md`, not here.** This brief supplies the data; that one
+  supplies the player.
 - `links.path` and `productions.mjs`'s twenty entries are superseded by
   `sitePath` — say so, and retire the duplicate rather than keeping two.
 
@@ -339,5 +339,5 @@ the gate, the projection's unit tests before the projection.
 ## 6. What this brief leaves out
 
 How a piece already published is watched on the site — that is
-[`embedded-media-brief.md`](embedded-media-brief.md). And the editorial substance
-of any single subject, which is the chain's own work.
+`embedded-media-brief.md`. And the editorial substance of any single subject,
+which is the chain's own work.

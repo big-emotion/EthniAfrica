@@ -3,18 +3,16 @@
 Date: 2026-09-20. Status: **analysis not started**. This file is the brief; it
 decides nothing.
 
+> Answered on 2026-09-20 by `embedded-media-decision.md`, which carries the
+> platform table, the recommendation and the staged rollout. This file is kept
+> as written, as the record of what was asked.
+
 The atlas publishes videos and carousels on YouTube, TikTok, Instagram and
 Facebook. The site shows none of them. The search-result feed draws a shelf of
 shorts whose production catalog is empty, and the Découvertes reader scrolls
 images and proverbs full-screen with no player at all. The operator wants the
-published pieces to be watchable on the site — embedded where that is possible,
-and reachable where it is not — in **both** surfaces.
-
-This brief exists because the answer is not a component: it is a chain of
-decisions across security policy, consent, privacy law, performance budgets and
-platform terms, each of which can veto the others. What follows is what is
-already measured, then the questions an analysis must answer, then the shape of
-the deliverable.
+published pieces watchable on the site — embedded where that is possible, and
+reachable where it is not — in **both** surfaces.
 
 ## 1. What is already established — do not re-measure
 
@@ -25,14 +23,15 @@ Measured 2026-09-20 on `codex/search-feed-implementation` and `recette`.
 - `src/middleware.ts` builds one enforcing CSP, no report-only mode. It declares
   `frame-src 'self'` with `const FRAME_SRC_HOSTS: string[] = []`, `img-src 'self'
 data:` with no remote host, and `media-src 'self' https://images.prismic.io`.
-  The file says why: _"No embed provider is confirmed yet — REQ-128 ('Media and
+  The file says why: "No embed provider is confirmed yet — REQ-128 ('Media and
   external links on the fiche') owns that decision. Left empty rather than
-  guessed."_
-- `src/__tests__/middleware.test.ts:758` asserts `expect(frameSrc).toBe("frame-src
-'self'")` — strict equality. Adding a host fails that test by design.
+  guessed."
+- `src/__tests__/middleware.test.ts:758` asserts
+  `expect(frameSrc).toBe("frame-src 'self'")` — strict equality. Adding a host
+  fails that test by design.
 - A third-party embed has already died here: `ReportErrorPageClient.tsx` records
-  a Typeform embed whose _"script was never executed: no iframe, no form, no
-  console message the reader would ever see — a promise over blank paper."_
+  a Typeform embed whose "script was never executed: no iframe, no form, no
+  console message the reader would ever see — a promise over blank paper."
 
 **Consent has three categories and no notion of third-party content.**
 
@@ -73,21 +72,17 @@ no Git LFS and no CI size gate — nothing would stop a video file entering git,
 which is the argument against doing it. `next.config.ts` declares no `images`
 block at all, so any remote thumbnail host needs one.
 
-**Media licence discipline applies to anything played.** Brand charter §9: _"a
-licence is published, not named"_ — author, licence URI, link to the file. In the
+**Media licence discipline applies to anything played.** Brand charter §9: "a
+licence is published, not named" — author, licence URI, link to the file. In the
 database, `afrik_media.licence_uri` is `NOT NULL` with a non-empty check.
 
 ## 2. What the operator wants
-
-In his words, reformulated and to be confirmed with him if an answer here would
-change the recommendation:
 
 - The pieces published on the networks should be **watchable on the site**, in
   the result page's shorts shelf and inside the Découvertes scroll.
 - **YouTube looks simplest** because watching does not require an account.
 - **TikTok and Instagram embeds may require the viewer to be logged in** to see
-  anything — this is the operator's suspicion and it must be verified, not
-  assumed.
+  anything — the operator's suspicion, to be verified, not assumed.
 - Carousels cannot live on YouTube, so a carousel's embed, if any, comes from
   Instagram, Facebook or TikTok.
 - He expects a **click-to-load** shape rather than an autoplaying iframe.
@@ -96,27 +91,24 @@ change the recommendation:
 
 ### 3.1 Per platform — YouTube, TikTok, Instagram, Facebook
 
-For each, in a table:
-
 1. The **official embed mechanism**: pure `<iframe>` URL, or a blockquote plus a
    third-party script? Name the exact domains the browser contacts, for the
    frame, the images, the fonts and any XHR.
 2. **Does watching require the viewer to be signed in?** Test it, do not reason
-   about it: a private browsing window, no account, one public post per platform.
-   Record what renders: the piece, a login wall, or a blank frame.
+   about it: a private window, no account, one public post per platform. Record
+   what renders: the piece, a login wall, or a blank frame.
 3. **What is written to the viewer's device before any interaction**, with a
    facade in place and without one: cookies, `localStorage`, fingerprinting
-   requests. YouTube's `youtube-nocookie.com` is the documented variant; verify
-   what it actually sets on load and on play.
+   requests. Verify what `youtube-nocookie.com` actually sets, on load and on
+   play.
 4. **Terms of service**: is a self-hosted poster with a click-to-load frame
-   permitted? Is an oEmbed call required to display a piece (Instagram's oEmbed
-   needs an app token — say whether that is a blocker)?
+   permitted? Is an oEmbed call required (Instagram's oEmbed needs an app token
+   — say whether that is a blocker)?
 5. **Stability of the identifier**: what breaks when a piece is deleted, made
    private or geoblocked, and how the site detects it.
 6. **Aspect and chrome**: what the frame imposes (9:16 support, branding,
-   suggested-videos overlay), and whether it can be made to sit inside the
-   reviewed poster geometry (130 × 231 and 160 × 284 in the feed, full-screen in
-   Découvertes).
+   suggested-video overlays), and whether it can sit inside the reviewed poster
+   geometry (130 × 231 and 160 × 284 in the feed, full-screen in Découvertes).
 
 ### 3.2 Law and consent
 
@@ -129,9 +121,9 @@ For each, in a table:
 9. Does a **fourth consent category** belong in `src/types/consent.ts`
    (`embeds`), or is per-click consent enough? Whichever, the banner copy in
    `src/lib/i18n/copy/consent.ts` must follow.
-10. Minors, and the DSA/Digital Fairness angle already noted in the project's
-    own doctrine: an embedded feed that autoplays is exactly what the Commission
-    faulted TikTok for. State the rule the site adopts.
+10. Minors, and the DSA angle already in the project's doctrine: an embedded
+    feed that autoplays is exactly what the Commission faulted TikTok for. State
+    the rule the site adopts.
 
 ### 3.3 Technical
 
@@ -141,7 +133,7 @@ For each, in a table:
 12. The **facade component**: where it lives, what it renders before the click
     (the poster the site already hosts), what it mounts after, how it behaves
     under `prefers-reduced-motion`, and its keyboard and screen-reader contract.
-13. **Performance**: measure the best-practices and performance scores of
+13. **Performance**: measure best-practices and performance on
     `/fr/atlas/recherche` with a facade present and after a click, against the
     0.95 error threshold. Propose the JS budget the facade should carry, in the
     shape of the existing island budgets (quiz 15 KB, globe 170 KB).
@@ -179,24 +171,24 @@ One document, `docs/plans/embedded-media-decision.md`, holding:
 - the **gates** each stage must pass, and which existing tests it breaks on
   purpose.
 
-Write it in English, as every document here. Quote sources with their URL and
-the date consulted. Where a claim cannot be tested, say so rather than assert it.
+Write it in English. Quote sources with their URL and the date consulted. Where
+a claim cannot be tested, say so rather than assert it.
 
 ## 5. The prompt to run this analysis
 
 > You are analysing whether and how EthniAfrica can play its published
 > productions — YouTube, TikTok, Instagram and Facebook videos and carousels —
 > inside two surfaces of the site: the search-result feed's shorts shelf and the
-> full-screen Découvertes scroll. Read
-> `docs/plans/embedded-media-brief.md` first: §1 lists what is already measured
-> and must not be re-measured, §2 what the operator asked for, §3 the questions
-> to answer, §4 the document to produce.
+> full-screen Découvertes scroll. Read `docs/plans/embedded-media-brief.md`
+> first: §1 lists what is already measured and must not be re-measured, §2 what
+> the operator asked for, §3 the questions to answer, §4 the document to
+> produce.
 >
 > Work from the repository for anything internal (CSP, consent, legal pages,
 > data model, budgets), and from the platforms' own documentation and a real
 > browser test for anything external — in particular whether watching a TikTok
-> or an Instagram embed requires the viewer to be signed in, and what each
-> embed writes to the device before and after a click. Never infer a platform's
+> or an Instagram embed requires the viewer to be signed in, and what each embed
+> writes to the device before and after a click. Never infer a platform's
 > behaviour from its documentation alone when a two-minute test in a private
 > window can settle it.
 >
@@ -204,9 +196,3 @@ the date consulted. Where a claim cannot be tested, say so rather than assert it
 > Recommend one route and name the second. Change no code, and do not touch the
 > CSP, the consent categories or the legal pages in this pass: this is the
 > analysis that authorises that work, not the work.
-
-## 6. What this brief deliberately leaves out
-
-Which pieces get published, when, and in what format — that is
-[`production-history-brief.md`](production-history-brief.md). This brief only
-asks how a piece that exists can be watched on the site.
