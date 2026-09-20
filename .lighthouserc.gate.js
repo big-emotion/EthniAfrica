@@ -4,8 +4,13 @@
 // ~16 minutes, and its performance numbers move with the runner. A required
 // check has to be short and has to fail only on something the pull request
 // did, so this one asserts the one category a GPU-less, throttled runner
-// cannot distort — best practices — as an error, on four routes that cover
-// the home, both globe fiches and the search page. Accessibility is asserted
+// cannot distort — best practices — as an error, on five routes that cover
+// the home, both globe fiches, the search page and the Découvertes entry where
+// a production is played (`/fr/decouvertes` itself only redirects to the deck's
+// first entry, so it would audit an unrelated one). This gate never clicks, so
+// it sees the facade and not
+// the third-party frame a click mounts; that state is measured by hand
+// (docs/plans/embedded-media-decision.md §4.3). Accessibility is asserted
 // by axe-core (a11y.yml) on the same routes instead, since ETNI-1948/DEC-054
 // — see lighthouseAxeCoverage.test.ts. The performance metrics are still
 // collected and printed as warnings, so a regression is visible on the pull
@@ -26,6 +31,7 @@ module.exports = {
         "http://localhost:3000/fr/atlas/pays/SEN",
         "http://localhost:3000/fr/atlas/peuples/PPL_WOLOF",
         "http://localhost:3000/fr/atlas/recherche",
+        "http://localhost:3000/fr/decouvertes/origine-du-nom-mande",
       ],
       numberOfRuns: 1,
     },

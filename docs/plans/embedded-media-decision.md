@@ -1041,6 +1041,41 @@ starts running nightly. The hand-measured post-click Lighthouse figures from
 **Reverses by** reverting the `href`; the rest is measurement and removing it
 only removes information.
 
+**Status, 2026-09-20 (ETNI-1970): done, except the post-click measurement.**
+Reading the code and measuring moved four things away from the text above:
+
+- **The shelf's `href` was already the piece's Découvertes entry**
+  (`discoveryPath` in the companions handler), so nothing moved. A handler test
+  now holds it, in both languages, against the section head and against
+  `watchUrl`.
+- **The gate visits the entry that carries the facade, not `/fr/decouvertes`.**
+  The index answers a 307 to the deck's first entry
+  (`burkina-faso-trois-langues`), so auditing it would have audited an unrelated
+  entry and moved with the catalogue's order. The axe route list is
+  `scripts/a11yRoutes.ts`, composed from the slug table, not `a11y.yml`; the
+  required check is renamed _Lighthouse gate (5 routes)_ in the workflow and in
+  the test that pins its name.
+- **axe found a real violation the plan did not expect.** `valid-lang` failed on
+  the Amharic and Shona proverbs (`lang="amh"`, `lang="sna"`), which the gate's
+  ISO 639-3 allowance in `scripts/a11y-test.ts` did not name. Adding the route
+  as planned would have turned axe red on every pull request; both codes are
+  added and the route audits clean in `fr` and `en`.
+- **Measured on the production build, facade state, on a developer machine**,
+  with the repository's own gate configuration (`@lhci/cli` 0.15.1): best
+  practices **1.00** on the entry, against **0.96** on the control route
+  `/fr/atlas/recherche`. Performance is a warning by design and read 0.77 on the
+  entry. This is the state CI can see, which is the one the gate covers.
+
+The nightly check is `scripts/checkEmbedAvailability.ts`
+(`npm run check:embed-availability`), scheduled in its own workflow. Measured
+against YouTube's oEmbed endpoint: the real record answers 200 and an unknown
+identifier 404. A 401 for a private piece is reported behaviour, not measured.
+
+**Still open: the post-click figures.** The gate never clicks, so no number for
+the mounted third-party frame exists yet, and none is written here. It needs a
+person with a browser to load the entry, press the facade button and run
+Lighthouse on that state (ETNI-1980).
+
 ## 10. Gates, and the tests each stage breaks on purpose
 
 Run `make check` at every stage; the lines below are what is specific to each,
