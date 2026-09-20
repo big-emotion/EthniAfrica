@@ -99,6 +99,35 @@ describe("footer destination pages", () => {
     }
   });
 
+  // Where Microsoft keeps the mail the site sends, read by the operator from
+  // the tenant's Data location card in the Microsoft 365 admin center
+  // (2026-09-20): Exchange Online, current and committed geography France. The
+  // card also says storage is moving from in-country to regional within the EU
+  // Data Boundary, so the policy commits to the Union and names France only as
+  // where it is today.
+  // @req REQ-182
+  it("says where Microsoft keeps the mail the site sends, as the Union and, today, France", async () => {
+    for (const [lang, held] of [
+      [
+        "fr",
+        /conservés au repos par Microsoft[^.]*Union européenne[^.]*à ce jour, en France/,
+      ],
+      [
+        "en",
+        /held at rest by Microsoft[^.]*European Union[^.]*today, in France/,
+      ],
+    ] as const) {
+      const { unmount } = render(
+        await DataPolicyPage({ params: routeParams(lang) })
+      );
+      const processors = sectionText(
+        lang === "fr" ? "Services et sous-traitants" : "Services and processors"
+      );
+      expect(processors, lang).toMatch(held);
+      unmount();
+    }
+  });
+
   // The site contacts Google only after the reader asks for a video, and says
   // so where it names its processors and where it names its legal bases. This
   // stops being true the day ENABLED_EMBED_PROVIDERS is emptied, and the two
