@@ -517,8 +517,10 @@ Two consequences for the rollout:
 
 - **`/fr/decouvertes` was not among the four routes** the required gate visited
   (`/fr`, `/fr/atlas/pays/SEN`, `/fr/atlas/peuples/PPL_WOLOF`,
-  `/fr/atlas/recherche`); it is the fifth since ETNI-1970, in the gate and in
-  axe's `LIVE_ROUTES` together. If Découvertes is to own playback it should be added
+  `/fr/atlas/recherche`); the fifth, since ETNI-1970, is the entry that carries the
+  facade rather than the index, which only redirects (see the status block in
+  §9), in the gate and in axe's `LIVE_ROUTES` together. If Découvertes is to own
+  playback it should be added
   to `.lighthouserc.gate.js` — which measures the facade state, the one CI can
   see, and is worth having for the full-screen scroll regardless of embeds.
   Note `lighthouseAxeCoverage.test.ts` holds the precondition that axe-core
@@ -1083,6 +1085,44 @@ starts running nightly. The hand-measured post-click Lighthouse figures from
 
 **Reverses by** reverting the `href`; the rest is measurement and removing it
 only removes information.
+
+**Status, 2026-09-20 (ETNI-1970): done.**
+Reading the code and measuring moved four things away from the text above:
+
+- **The shelf's `href` was already the piece's Découvertes entry**
+  (`discoveryPath` in the companions handler), so nothing moved. A handler test
+  now holds it, in both languages, against the section head and against
+  `watchUrl`.
+- **The gate visits the entry that carries the facade, not `/fr/decouvertes`.**
+  The index answers a 307 to the deck's first entry
+  (`burkina-faso-trois-langues`), so auditing it would have audited an unrelated
+  entry and moved with the catalogue's order. The axe route list is
+  `scripts/a11yRoutes.ts`, composed from the slug table, not `a11y.yml`. The
+  required check keeps the name _Lighthouse gate (4 routes)_ though it now visits
+  five: branch protection on `recette` matches required checks by name, so a
+  rename without the protection rule leaves the check unreported and blocks
+  every pull request.
+- **axe found a real violation the plan did not expect.** `valid-lang` failed on
+  the Amharic and Shona proverbs (`lang="amh"`, `lang="sna"`), which the gate's
+  ISO 639-3 allowance in `scripts/a11y-test.ts` did not name. Adding the route
+  as planned would have turned axe red on every pull request; both codes are
+  added and the route audits clean in `fr` and `en`.
+- **Measured on the production build, facade state, on a developer machine**,
+  with the repository's own gate configuration (`@lhci/cli` 0.15.1): best
+  practices **1.00** on the entry, against **0.96** on the control route
+  `/fr/atlas/recherche`. Performance is a warning by design and read 0.77 on the
+  entry. This is the state CI can see, which is the one the gate covers.
+
+The nightly check is `scripts/checkEmbedAvailability.ts`
+(`npm run check:embed-availability`), scheduled in its own workflow. Measured
+against YouTube's oEmbed endpoint: the real record answers 200 and an unknown
+identifier 404. A 401 for a private piece is reported behaviour, not measured.
+
+**The post-click figures are in §4.3.** The gate never clicks, so they were taken
+by hand: a browser loads the entry, presses the facade button and Lighthouse
+audits the timespan around the click. They agree with the facade-state figure
+above (1.00 before the click) and add what the gate cannot see: 0.95 after it,
+on the threshold.
 
 ## 10. Gates, and the tests each stage breaks on purpose
 

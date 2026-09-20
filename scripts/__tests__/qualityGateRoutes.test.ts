@@ -428,8 +428,9 @@ describe("browser quality-gate routes", () => {
     // Nineteen per locale while the dossiers are withdrawn; twenty-three when
     // they return. Sixteen plus the two search-feed states added in ETNI-1966
     // (an exact match and an unknown name — the bare search route audited
-    // only the empty state), plus the Découvertes reader that mounts the
-    // third-party player facade (REQ-181). The number is the wall clock of the one required
+    // only the empty state) plus Découvertes, where a production is played
+    // and which the Lighthouse gate now visits (ETNI-1970, REQ-181). The
+    // number is the wall clock of the one required
     // check, and it is written out rather than derived so that adding a route
     // is a decision taken here — a count computed from the list under test
     // would agree with whatever that list happened to say.

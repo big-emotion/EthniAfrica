@@ -11,6 +11,7 @@ import { generatedImagePublications } from "@/lib/discoveries/generatedImages";
 import { DID_YOU_KNOW_FACTS } from "@/lib/home/didYouKnowFacts";
 import { illustrationFor } from "@/lib/home/didYouKnowIllustrations";
 import { PROVERBS } from "@/lib/proverbs/proverbs";
+import { getLocalizedRoute } from "@/lib/routing";
 
 const match = {
   relation: "linked-country" as const,
@@ -167,6 +168,69 @@ describe("search companions handler", () => {
     expect(payload).not.toContain('"subjects":[{"kind"');
     expect(payload).not.toContain("jobId");
   });
+
+  // The shelf navigates and Découvertes plays: the poster must lead to the
+  // piece's own entry, never to the section head, or a reader on the result
+  // page would have to find the piece again (REQ-181, DEC-059).
+  // @req REQ-181
+  it.each(["fr", "en"] as const)(
+    "sends a shelf short to its own Découvertes entry in %s, not to the section head",
+    async (lang) => {
+      const slug = { fr: "nigeria-le-nom", en: "nigeria-the-name" };
+      vi.mocked(getSearchCompanionSelections).mockResolvedValue({
+        subjects: [],
+        targets: [match],
+        shorts: {
+          count: 1,
+          items: [
+            {
+              item: {
+                id: "short-nigeria",
+                publishedAt: "2026-09-01",
+                subjects: [{ entityType: "country", entityId: "NGA" }],
+                video: {
+                  id: "short-nigeria",
+                  status: "published",
+                  slug,
+                  name: { fr: "Nigeria", en: "Nigeria" },
+                  description: { fr: "Une production.", en: "A production." },
+                  publishedAt: "2026-09-01",
+                  durationSeconds: 47,
+                  poster: { src: "/posters/n.jpg", width: 270, height: 480 },
+                  watchUrl: "https://www.youtube.com/watch?v=test",
+                  source: {
+                    title: "Source",
+                    url: "https://example.org/source",
+                    tier: "referenced",
+                  },
+                  subjects: [],
+                },
+              },
+              match,
+            },
+          ],
+        },
+        anecdotes: { count: 0, items: [] },
+        proverbs: { count: 0, items: [] },
+        images: { count: 0, items: [] },
+        quiz: { count: 0, items: [] },
+      } as never);
+
+      const envelope = await getSearchCompanionsHandler({
+        lang,
+        subjects: [],
+      });
+
+      const section = getLocalizedRoute(lang, "discoveries");
+      const { href, watchUrl } = envelope.data.shorts.items[0];
+      expect(href).toBe(`${section}/${slug[lang]}`);
+      expect(href).not.toBe(section);
+      // The platform link travels in the payload but is never the shelf's
+      // destination: sending a reader off-site from a result page is what the
+      // shelf exists not to do.
+      expect(href).not.toBe(watchUrl);
+    }
+  );
 
   // @req REQ-180
   it("preserves a successful empty response", async () => {

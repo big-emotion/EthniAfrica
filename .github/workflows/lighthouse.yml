@@ -4,8 +4,8 @@ on:
   # Two jobs on two paths, the same split as e2e.yml.
   #
   # `gate` runs on every pull request, into `recette` included, and is meant to
-  # be a required check: five routes, one run each, asserting best practices as
-  # an error (axe-core owns accessibility, see DEC-054) and printing performance as warnings (see
+  # be a required check: five routes, one run each, asserting accessibility and
+  # best practices as errors and printing performance as warnings (see
   # `.lighthouserc.gate.js` for why the performance half cannot block here).
   #
   # `lighthouse` is the full matrix: 29 URLs × 3 runs, ~16 minutes. It used to
@@ -30,11 +30,10 @@ permissions:
 
 jobs:
   gate:
-    # The number in this name is stale (the gate visits five routes since the
-    # Découvertes reader joined it, REQ-181), and it is left alone on purpose:
-    # the string is a required status check on recette, so renaming the job
-    # without updating branch protection first leaves every pull request
-    # waiting on a check that never reports.
+    # The name says four though the gate visits five routes. Branch protection on
+    # `recette` requires this check by name, so renaming it leaves the required
+    # status never reported and blocks every pull request. Rename it in the same
+    # change as the protection rule, and in ephemeralSupabaseWiring.test.ts.
     name: Lighthouse gate (4 routes)
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest

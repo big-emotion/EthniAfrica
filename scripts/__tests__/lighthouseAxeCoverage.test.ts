@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
 
+import { DISCOVERY_SLUGS } from "@/lib/discoveries/slugs";
+
 import { LIVE_ROUTES } from "../a11yRoutes";
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports -- the lhci CLI itself loads this file as CommonJS
@@ -27,8 +29,13 @@ describe("the Lighthouse gate visits no route outside axe's own coverage", () =>
   // The Lighthouse gate never clicks, so it cannot see the mounted player; what
   // it can hold is the page that carries the facade, at the same 0.95.
   // @req REQ-181
-  it("visits the Découvertes reader that carries the player facade", () => {
-    expect(gateRoutes).toContain("/fr/decouvertes");
+  it("visits the Découvertes entry that carries the player facade, not the index that redirects", () => {
+    const entry = `/fr/decouvertes/${DISCOVERY_SLUGS["video:origine-du-nom-mande"].fr}`;
+    expect(gateRoutes).toContain(entry);
+    // The index answers a 307 to the deck's first entry, an unrelated piece
+    // whose identity moves with the catalogue's order: auditing it would audit
+    // whatever happens to be first.
+    expect(gateRoutes).not.toContain("/fr/decouvertes");
     expect(gateRoutes).toHaveLength(5);
   });
 

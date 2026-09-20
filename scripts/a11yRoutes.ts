@@ -1,4 +1,5 @@
 import type { Language } from "@/types/shared";
+import { DISCOVERY_SLUGS } from "@/lib/discoveries/slugs";
 import {
   COMPARE_ENTITY_SEGMENTS,
   getCountryRoute,
@@ -117,10 +118,15 @@ const liveRoutesFor = (locale: Language): string[] => [
   // not here: `qualityGateRoutes.test.ts` keeps every axis landing page out of
   // both browser gates, and that rule does not bend for a freeze.
   getLocalizedRoute(locale, "anecdotes"),
-  // The reader that mounts the third-party player facade (REQ-181). The bare
-  // route redirects to one publication's permalink, which is the page a reader
-  // lands on; the facade's post-click state is not reachable by a page audit.
-  getLocalizedRoute(locale, "discoveries"),
+  // Where a production is played (REQ-181, DEC-059): the entry that carries
+  // the consent facade and, once a reader clicks, a third-party frame. The
+  // result page's shelf navigates here and owns no player. Not the section
+  // route: it only redirects to the deck's first entry, so auditing it would
+  // audit whichever entry the catalogue happens to lead with. Composed from the
+  // slug table, so withdrawing the record fails here instead of turning into a
+  // 404 the gate reports as a clean run. The Lighthouse gate visits it too,
+  // which is why it must be audited here first (lighthouseAxeCoverage.test.ts).
+  `${getLocalizedRoute(locale, "discoveries")}/${DISCOVERY_SLUGS["video:origine-du-nom-mande"][locale]}`,
   getLocalizedRoute(locale, "doctrine"),
   `${getLocalizedRoute(locale, "doctrine")}/classifications-contestees`,
 ];
