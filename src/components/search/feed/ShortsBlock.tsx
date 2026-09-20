@@ -166,10 +166,7 @@ export function ShortsBlock({
                   </span>
                   <span
                     aria-hidden="true"
-                    className={cn(
-                      "absolute left-1/2 size-8 -translate-x-1/2 min-[1200px]:size-9",
-                      reviewed ? "top-[44%]" : "top-1/2 -translate-y-1/2"
-                    )}
+                    className="absolute left-1/2 top-1/2 size-8 -translate-x-1/2 -translate-y-1/2 min-[1200px]:size-9"
                   >
                     <svg viewBox="0 0 36 36" role="presentation">
                       <circle

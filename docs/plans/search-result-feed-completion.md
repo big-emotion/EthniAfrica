@@ -526,23 +526,38 @@ green:
 Exit gate, unchanged: **40/40 under the 1 % ceiling**, with structure and
 geometry green before the diff, and the failure diffs attached to the PR.
 
-## 4. Two open decisions inside the preserved work
+## 4. Two open decisions inside the preserved work — all four resolved
 
-Neither is a bug; both are choices that must be made explicitly before the PR
-leaves draft.
+Update, 2026-09-20: every item below is now decided or moot. None was a bug
+in the sense of breaking anything live; each was a choice or a stale
+assumption that needed settling rather than staying implicit.
 
-- **The type-role override** (`src/styles/search-feed.css`). Keep only if
-  regenerating the boards at full precision is refused; then it needs a charter
-  line, because it puts a second definition of three roles in the codebase.
-- **The non-breaking space injected into a lens label** to buy 4 px of spacing.
-  It enters that button's accessible name. Replace it with spacing on the count
-  element, or with a board regeneration if the board is what is wrong.
-
-Two smaller ones to settle in passing: the play glyph's `top-[44%]` magic number
-(name it as a token or restore true centring and move the board), and
-`VerdictBlock`'s switch from `--accent` to `--accent-ink` on the verdict rule,
-which is currently unconditional and therefore also changes the non-reviewed
-rendering.
+- **The type-role override** (`src/styles/search-feed.css`) — **kept.**
+  `docs/design/typography-charter.md` §2 now documents it explicitly: the
+  same three roles, re-rounded to agree with the boards' reference-width
+  rendering, scoped to the one component tree the boards govern — not a
+  second competing scale, which is what the charter's own rule against a
+  second scale actually forbids.
+- **The non-breaking space in a lens label** — **replaced.** A 4 px margin
+  on the count element (`ml-1`) now buys the same spacing without entering
+  the button's accessible name. `LensesBlock.test.tsx` covers the
+  `reviewed` case directly; the pre-existing test never exercised it.
+- **The play glyph's `top-[44%]` magic number** — **restored to true
+  centring.** `top-1/2 -translate-y-1/2` for every case, matching what the
+  non-reviewed variant already did; the `reviewed`-only special case had no
+  design rationale behind it, just a number that had once been made to fit.
+  If a future pixel-convergence pass finds this moved a board's own
+  play-glyph position, that is the board's own value to correct, not a
+  reason to reintroduce the special case.
+- **`VerdictBlock`'s unconditional `--accent-ink`** — **moot.** Traced
+  against the deleted `NameAnswer.tsx` (`git show
+12057a811^:src/components/search/NameAnswer.tsx`): it never imported
+  `VerdictBlock` at all, and had its own, entirely separate markup using a
+  different token-naming convention (`border-afh-accent-ink` Tailwind
+  utilities, not `var(--accent-ink)`). `VerdictBlock` has never had a
+  `reviewed` prop and has exactly one caller, `SearchFeed`. The "also
+  changes the non-reviewed rendering" concern this section raised never
+  applied to begin with.
 
 ## 5. Phase 12 — cleanup, documentation, release gates
 
