@@ -305,6 +305,16 @@ node <00-Index>/build-index.mjs
 node <00-Index>/sync-deliverables.mjs --write  # après le déplacement : il compare au bac du statut
 ```
 
+**Stampe le carnet de production** — `docs/productions/<typologie>/<NNN>-
+<slug>.json` (`docs/plans/production-history-plan.md` §6, `campaign` égal au
+`--id` ci-dessus). Pour chaque réseau que le dossier-réseau tout juste peuplé
+dessert (le nom du dossier le dit, §1 bis), ajoute une ligne à `publications[]` :
+`{ "network": "<réseau>", "format": "<video ou carrousel selon le dossier>" }`,
+`url` et `publishedAt` absents. Tu ne les connais pas encore — c'est l'acte de
+publier, celui de l'opérateur, qui les remplit après coup. Une épreuve
+(`_epreuves/`) ne stampe rien : elle n'a franchi aucune porte. Revalide ensuite
+avec `npm run check:production-ledger`.
+
 `migrate-library.mjs --write` peut afficher une pile d'appels et sortir en
 erreur **après** avoir déplacé le dossier et régénéré les vues. Ne relance rien :
 vérifie le bac et le `post.md`, pas le code de sortie. Plusieurs montages sans
