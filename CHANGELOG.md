@@ -10,6 +10,51 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [4.14.0] - 2026-09-20
+
+### Added
+
+- **The search result page is rebuilt as the reviewed feed.** Frame tokens,
+  presentation blocks, server-side naming evidence, companion catalogs and a
+  `search companions` endpoint feed one page that shows every form a name is
+  known by. A name shared by several kinds of entry is disambiguated without
+  promoting either, relation-scoped searches use the same feed, and each
+  appellation chip carries its own qualifier. Forty reference boards pass pixel
+  parity and the responsive geometry keeps 44px hit areas.
+- **A production can be played on the site.** A click-to-load YouTube facade
+  (nothing is fetched before the click), an `embeds` consent category, a
+  `frame-src` derived from the enabled providers, self-hosted carousels in
+  Découvertes, and a nightly watch that reports embedded pieces that stopped
+  playing.
+- **The brand line asks the question of every kind of name**, not of peoples
+  alone.
+- A versioned production-history ledger with its own gate, and the publishing
+  skills wired to it. `ethniafrica-idee` now produces an external research
+  prompt while the name stays the centre.
+- A read-only Meta Graph reader for Facebook and Instagram audience metrics.
+
+### Changed
+
+- **The legal pages state the real host, every processor and a cookies
+  section.** They name where Microsoft keeps the mail the site sends and where
+  the rate-limit counter is hosted, stop declaring Sentry (no environment runs
+  it), and name the two cookies the YouTube player tries to write.
+- The consent banner drops the functional switch, which only ever controlled
+  Sentry.
+- `NameAnswer`, superseded by the reviewed feed, is deleted.
+
+### Fixed
+
+- Search feed: the missing source link is mounted, raw `sup` markup is
+  rendered, and invented shorts labels, lead sentences and a repeated proverb
+  are dropped.
+- The consent settings are reachable from the embed facade's notice.
+- A production's myth is posed as a question, never asserted.
+- The Lighthouse gate keeps its required check name.
+- End-to-end specs: the fixture harness stays out of the app run, search is
+  submitted with Enter, and the unknown-name spec expects the searched form as
+  the heading.
+
 ## [4.13.0] - 2026-09-19
 
 ### Added
@@ -1178,7 +1223,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.13.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.14.0...HEAD
+[4.14.0]: https://github.com/big-emotion/ethniafrica/compare/v4.13.0...v4.14.0
 [4.13.0]: https://github.com/big-emotion/ethniafrica/compare/v4.12.0...v4.13.0
 [4.12.0]: https://github.com/big-emotion/ethniafrica/compare/v4.11.0...v4.12.0
 [4.11.0]: https://github.com/big-emotion/ethniafrica/compare/v4.10.0...v4.11.0
