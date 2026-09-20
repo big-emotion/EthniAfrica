@@ -374,6 +374,88 @@ lives in), its only non-test, non-page importer is
 dictionary `SearchFeed.tsx` and `AppellationsBlock.tsx` also read, not
 exclusive to the component and not to be deleted with it.
 
+## 1f. Update — 2026-09-20, seventh session — both gaps closed, `NameAnswer` deleted
+
+Both items from §1e landed, and phase 12 item 1 is done.
+
+**Cross-type disambiguation.** `hasPeopleDisambiguation` stayed exactly as it
+was (same-type, unchanged copy); a new `hasCrossTypeDisambiguation` flag
+covers a clash across types, and `hasNameDisambiguation` (either) now gates
+block availability. Kept as two flags rather than one broadened condition
+because the two shapes read differently in French — same-type asks whether
+the entries are related, cross-type only has to say they are different kinds
+of things that happen to share a spelling — and collapsing them would have
+picked one wording for both. New copy: `sharedGeneric` verdict,
+`sharedEntries` heading, `sharedNameBodyGeneric` body (both locales), plus a
+type-aware per-item `meta` label reusing the existing `getSearchEntityLabel`
+helper instead of the hardcoded "Peuple documenté" — that helper already
+existed and was already imported in `SearchFeed.tsx` for other purposes, so
+no new label vocabulary was invented. Verified with a new `SearchFeed` unit
+test (a people and a language both named "Yoruba") against synthetic
+fixtures — no live corpus needed for the gate logic itself, only for the exact
+wording a real cross-type clash produces, which the e2e rewrite below still
+owes a live run.
+
+**`e2e/search-results-consolidation.spec.ts` rewritten** onto `SearchFeed`'s
+contract (`feed-block-peoples`, `feed-block-verdict`, `feed-layout`),
+replacing the retired `name-answer-*` testids. One assertion from the
+original — the answer's left edge matching a single-column layout's own edge
+— is dropped rather than translated: it claimed something about a
+single-column list the reviewed feed's movement-zone grid does not claim (its
+desktop "first" zone can legitimately place the verdict beside another block,
+e.g. appellations, as a real column rather than a rail), and the geometry
+DEC-057 actually cares about (never sticky, no horizontal scroll) is asserted
+instead, with a pointer to `search-feed-responsive.spec.ts` for this grid's
+own geometry contract. Structurally verified only — typecheck, lint, a
+Playwright `--list` dry-run confirming the same six tests parse and enumerate
+as the version it replaced — because recette's egress quota was still
+exhausted when this was written. **This spec has not been run against live
+data and needs one confirming run once the quota clears**; if the exact
+corpus-dependent wording it now asserts (subject count, verdict text) turns
+out wrong, that is a test fixture correction, not an architecture question —
+the contract it asserts against is settled.
+
+**`NameAnswer.tsx` deleted.** Both `RecherchePageContent.tsx` call sites
+removed (one was already unconditionally false — `nameSubjects.length > 0 &&
+!relation` can never be true on the branch it lives on, since that branch is
+only reached when `relation` is null and `committedQuery` is empty, and
+`selectNameSubject` on an empty query always returns no subjects; the other,
+the zero-results fallback, now renders nothing rather than a confession about
+a name nobody searched, which is a correctness improvement in that edge case,
+not a new gap). The component, its test file, and its entry in
+`searchCharter.test.tsx`'s scan list are gone.
+`docs/design/mockups/search/README.md` now says plainly that it is
+superseded reference, not a live contract — `resultGrammarCharter.test.ts`
+still reads it, as a record of what the retired page's own grammar was, which
+is why the directory itself stays.
+
+`knip`'s dead-code tallies did not move (still 4 files > 3, still 13 types > 10) — confirming, not contradicting, §1d: that overage was already measured
+as unrelated pre-existing debt (`corpus.en.ts`, `landmarks.en.ts`,
+`entries.en.ts` in the games/glossaire subsystem, plus a knip
+`--production`-mode quirk on `feedCases.ts`, a fixture that is very much
+alive), and `NameAnswer.tsx` was never counted in it because it was, until
+this session, genuinely referenced.
+
+Full repo suite after this session's complete set of changes: 9994/9997
+(the three failures traced in §1d, unrelated to any commit in any of this
+plan's seven update sessions). Typecheck and lint clean throughout.
+
+**What phase 12 actually has left, now that item 1 is done:**
+
+- Storybook stories (item 4 of §5) — not started. Real scaffolding work
+  (one story per block × ten fixtures × day/night), not a blocker for
+  anything else, and not attempted this session for that reason.
+- The live confirming run of the rewritten consolidation spec, once
+  recette's egress quota clears (an infrastructure question, not a code one).
+- The dead-code ceiling overage this section just confirmed is unrelated to
+  search — a separate cleanup in the games/glossaire subsystem, out of this
+  plan's scope entirely.
+- Phase 11's pixel-convergence pass (§3) — all forty boards reach the pixel
+  stage (§1c), none pass it yet; the residual diffs range from ~1px to
+  bassa's unexplained 13.5px (§1b), and closing them needs the kind of
+  fine-grained, iterative browser measurement this session's tooling proved
+  unreliable at (§1b's bassa investigation).
+
 ## 2. The rule that decides every remaining fix
 
 `docs/design/search-result-charter.md`, as PR #1188 rewrote it, gives three
