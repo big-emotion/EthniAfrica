@@ -33,6 +33,11 @@ une entrée par post dans le registre de la bibliothèque, et son dossier
 `$ETHNIAFRICA_SOCIAL_POSTS/Brouillon/<Prefixe-Sujet>/<id>/`, dont le `post.md`
 est généré. Aucun dossier ne se crée ni ne se déplace à la main.
 
+Et dans le dépôt, **au même moment** que l'entrée de la bibliothèque ci-dessus,
+jamais dans un appel séparé qu'une session interrompue pourrait laisser à
+moitié fait : `docs/productions/<typologie>/<NNN>-<slug>.json` — voir « Le
+carnet de production » ci-dessous.
+
 ## La règle qui prime
 
 **Chaque affirmation porte son ancrage. Une licence non lue bloque la carte.**
@@ -94,6 +99,44 @@ personne"}, {"terme": "Basotho", "glose": "le peuple"}, …]`. Le parallèle
 - `licence_sortie` n'est pas recopiée d'une carte : c'est la licence la plus
   contraignante du lot, et `produire` la recalcule. Écris ce que tu crois, elle
   sera vérifiée.
+
+## Le carnet de production
+
+`docs/plans/production-history-plan.md` en porte le schéma complet et sa
+justification ; cette section dit seulement ce que `structure` en fait.
+
+Écris `docs/productions/<typologie>/<NNN>-<slug>.json`, `<typologie>` et
+`<NNN>` recopiés tels que le rapport de sujet les a proposés (idée les lit
+dans `docs/productions/<typologie>/` avant de proposer) :
+
+```json
+{
+  "campaign": "<le même id que --id sur register-post.mjs>",
+  "typologie": "<celle du rapport de sujet>",
+  "episode": <celui du rapport de sujet>,
+  "question": { "fr": "D'où vient le nom <X> ?" },
+  "myth": { "fr": "<le mythe attesté, reformulé en question, jamais affirmé>" },
+  "narrativePattern": "<la ligne de §7 ter que la clôture a prise>",
+  "subjects": [
+    { "kind": "people|country|family|language|patronyme", "id": "<PPL_…|ISO 3166-1|FLG_…|ISO 639-3|PAT_…>", "label": { "fr": "<nom affiché>" } }
+  ],
+  "sitePath": "<la route française de la fiche>",
+  "publications": []
+}
+```
+
+- **`subjects[]` et `sitePath` viennent de la même résolution corpus** que
+  celle qui a choisi la fiche et les images du lot — ne les redérive pas
+  séparément, c'est la même identité, écrite une seule fois.
+- **`question.fr` et `myth.fr` doivent se terminer par « ? »** — jamais une
+  affirmation, même hedgée par « aurait ». Le gate le refuse sinon.
+- **`publications` part vide.** Ce carnet ne connaît un lien qu'une fois publié ;
+  c'est `produire`, puis l'opérateur, qui les ajoutent au fur et à mesure —
+  jamais `structure`, qui écrit avant tout rendu.
+- **Valide avant de continuer** : `npm run check:production-ledger`. Une
+  erreur ici (id de corpus inconnu, épisode déjà pris, `sitePath` qui ne
+  correspond à aucun sujet, réseau/format que §1 bis n'autorise pas) se
+  corrige avant d'aller plus loin — ne la reporte pas à `produire`.
 
 ## Un lot sur un pays : ce que l'audience doit repartir avec
 
@@ -360,12 +403,16 @@ Affiche le texte et obtiens la validation (voir ci-dessus). Une fois validé :
      bibliothèque — dont `build-etat.mjs` lit le premier marqueur et où il
      cherche les mentions internes.
 
-3. **Régénère les vues** : `node <00-Index>/build-index.mjs`, au chemin que
+3. **Écris le carnet de production** (voir « Le carnet de production »
+   ci-dessus), `campaign` égal au `--id` juste posé, puis valide :
+   `npm run check:production-ledger`. Une erreur bloque — corrige le fichier,
+   ne la reporte pas à `produire`.
+4. **Régénère les vues** : `node <00-Index>/build-index.mjs`, au chemin que
    l'outil a imprimé. C'est lui qui écrit le `post.md` du nouveau dossier ;
    `migrate-library.mjs --write` ne régénère rien quand il n'a rien déplacé. Un
    « Copie introuvable » dans ce `post.md` veut dire que `_legendes/<id>.md`
    n'est pas écrit.
-4. **Recalcule l'état** (`node social/tools/etat-pipeline/build-etat.mjs`) et
+5. **Recalcule l'état** (`node social/tools/etat-pipeline/build-etat.mjs`) et
    vérifie que le post y figure en 🟡.
 
 Puis dis en une ligne que l'étape suivante est `produire`, qui lance d'abord

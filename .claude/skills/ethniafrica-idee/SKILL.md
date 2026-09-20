@@ -24,6 +24,12 @@ dans le format visé ne se repropose pas sans un angle nouveau, dit dans le
 rapport. Un sujet publié dans un seul format est une bonne idée à bas coût :
 propose l'autre format, les sources sont déjà vérifiées.
 
+**Une actualité fait passer un sujet devant la file.** Un événement qui remet un
+nom au centre de l'attention (l'exemple de l'opérateur : Goma) est une raison
+suffisante de le proposer maintenant plutôt qu'au tour du prochain sujet du
+même pilier — dis-le dans le rapport, à la ligne « Réserves », plutôt que de le
+glisser sans le nommer.
+
 Deux types de contenu arrivent, **les anecdotes et les proverbes**. Ils ne sont
 pas encore sur le site et la chaîne n'a pas leur gabarit : un sujet de ce type se
 note comme idée, avec cette réserve écrite.
@@ -37,11 +43,18 @@ Un fichier unique : `$ETHNIAFRICA_SOCIAL_PROJECTS/_idees/{slug}.md`.
 
 Écrit le {AAAA-MM-JJ}.
 
-|               |                                                          |
-| ------------- | -------------------------------------------------------- |
-| Pilier        | {un seul}                                                |
-| Formats visés | {carrousel · reel · les deux}                            |
-| Réseaux       | {ceux que GABARITS-SOCIAL.md §1 bis donne à ces formats} |
+|               |                                                                |
+| ------------- | -------------------------------------------------------------- |
+| Typologie     | {peuple · pays · patronyme · lieu · langue}                    |
+| Épisode       | {le prochain numéro libre de cette typologie, voir ci-dessous} |
+| Pilier        | {un seul}                                                      |
+| Formats visés | {carrousel · reel · les deux}                                  |
+| Réseaux       | {ceux que GABARITS-SOCIAL.md §1 bis donne à ces formats}       |
+
+## La question
+
+« D'où vient le nom {X} ? » — la seule formule, jamais une variante. {X} est le
+nom de travail du sujet dans sa Typologie ci-dessus.
 
 ## L'angle
 
@@ -55,6 +68,10 @@ Une phrase, au futur du lecteur : ce qu'il saura après.
 
 Les trois lignes et le verdict d'`ethniafrica-mythe` : le mythe attesté, la
 correction sourcée, et « défait un mythe », « explique » ou « ne passe pas ».
+**Le mythe attesté se pose comme une question, jamais comme une affirmation**
+(même hedgée par « aurait ») — c'est ce que `structure` reformulera dans
+`docs/productions/`, et le gate le refuse sinon (`docs/productions/README.md`,
+« Never an assertion »).
 
 ## Ce que le sujet ne dira pas
 
@@ -74,6 +91,19 @@ Ce qui pourrait faire échouer le sujet.
 
 ## Les règles
 
+- **Une seule typologie, parmi cinq : peuple, pays, patronyme, lieu, langue.**
+  Un sujet répond toujours à « D'où vient le nom {X} ? » pour l'une de ces
+  cinq — jamais une sixième. `lieu` ne nomme aucune table du corpus à part :
+  un lieu se rattache toujours à un pays ou à un peuple existant.
+- **L'épisode se lit dans `docs/productions/<typologie>/`, jamais deviné.**
+  Le numéro le plus haut déjà présent dans ce dossier plus un — un sujet dont
+  la typologie est neuve dans ce dossier commence à 1. `structure` écrira ce
+  numéro dans le carnet ; le rapport ne fait que le proposer.
+- **Chaque sujet présente le projet et invite à la contribution**, et explique
+  pourquoi les appellations sont difficiles et pourquoi le mot « ethnie » ne
+  convient pas. Dis dans le rapport où cet élément prend place (une carte, la
+  légende, le commentaire épinglé) — « dans chaque pièce » sans emplacement
+  précis est comment il disparaît.
 - **Un sujet, un pilier, un angle.** Deux angles sont deux sujets.
 - **Les formats visés décident des réseaux, par la table de
   `docs/design/gabarits-social/GABARITS-SOCIAL.md` §1 bis.** Un sujet qui vise
