@@ -515,12 +515,9 @@ claiming a measurement nobody took.
 
 Two consequences for the rollout:
 
-- **`/fr/decouvertes` was not among the four routes** the required gate visited
+- **`/fr/decouvertes` is not among the four routes** the required gate visits
   (`/fr`, `/fr/atlas/pays/SEN`, `/fr/atlas/peuples/PPL_WOLOF`,
-  `/fr/atlas/recherche`); the fifth, since ETNI-1970, is the entry that carries the
-  facade rather than the index, which only redirects (see the status block in
-  §9), in the gate and in axe's `LIVE_ROUTES` together. If Découvertes is to own
-  playback it should be added
+  `/fr/atlas/recherche`). If Découvertes is to own playback it should be added
   to `.lighthouserc.gate.js` — which measures the facade state, the one CI can
   see, and is worth having for the full-screen scroll regardless of embeds.
   Note `lighthouseAxeCoverage.test.ts` holds the precondition that axe-core
@@ -530,47 +527,19 @@ Two consequences for the rollout:
   are written into this file** as part of stage 3's gate. A number in a document
   somebody took is worth more than a threshold nobody's tooling evaluates.
 
-**Measured, 2026-09-20, YouTube, the post-click state.** The sharp edge above was
-a prediction; this is the measurement, and it landed on the threshold rather than
-under it.
-
-_How._ A production build served locally, the first record's own page
-(`/fr/decouvertes/origine-du-nom-mande`) at 430 x 932 and a device pixel ratio
-of 2, Chrome for Testing 152, Lighthouse 12.8.2 driven through its user-flow API
-with `best-practices` only. The banner was already answered, so it did not
-cover the card. One run, on one machine: a point measurement, not a budget.
-
-| Step                                           | `best-practices` | Third-party requests |
-| ---------------------------------------------- | ---------------- | -------------------- |
-| Navigation, nothing touched                    | **1.00**         | **0**                |
-| Timespan around the click, six seconds playing | **0.95**         | 38, to 8 hosts       |
-| Snapshot after the click                       | 1.00             | —                    |
-
-- **Before the click the page asks nothing of any platform**, measured in a
-  browser rather than inferred from the code: zero requests to any host outside
-  our own, no frame, and the consent choice still `false`.
-- **After the click the score is exactly the error threshold.** The gate asserts
-  `minScore: 0.95` and 0.95 passes, so this is green with no margin: one more
-  finding in the Issues panel puts it under. The only audit that fails is
-  `inspector-issues` ("Issues were logged in the Issues panel in Chrome
-  DevTools"). It is not the third-party-cookie audit this section predicted; the
-  prediction named the right category and the wrong culprit.
-- **A snapshot is blind to it.** The snapshot after the click reads 1.00, because
-  a snapshot audits the DOM and has no console or Issues log to read. A future
-  reader who runs only that mode would conclude the post-click state is clean.
-  The timespan is the mode that sees it.
-- **The frame's own requests go to eight hosts, not the two `frame-src` names**:
-  `www.youtube-nocookie.com`, `www.google.com`, `m.youtube.com`,
-  `i.ytimg.com`, `yt3.ggpht.com`, `fonts.gstatic.com`, `jnn-pa.googleapis.com`
-  and a `googlevideo.com` media node (the node's name varies). This is §4.1 seen
-  from the other side: `frame-src` governs the frame's navigation, not what the
-  framed document loads, and nothing in our policy could or should restrict it.
-  It is also what the legal paragraph says Google receives.
-- **Nothing here is enforced.** No CI job clicks, so this number can move with
-  no change on our side, because it depends on what YouTube ships that day. The
-  availability watch (`checkEmbedAvailability.ts`) asks whether a piece still
-  plays, not what the player logs. Re-measure by hand when the provider list
-  changes, and whenever the figure would matter.
+  **Measured 2026-09-20 (ETNI-1980), YouTube, on the production build.** A
+  Lighthouse 12.6.1 user flow on `/fr/decouvertes/origine-du-nom-mande`, mobile
+  emulation, Chrome for Testing on a developer machine, consent seeded the way
+  the gate seeds it. Best practices: **1.00** on a navigation with the facade
+  only (the gate's own measurement); **0.95** on a timespan covering the click,
+  the frame mounting and eight seconds of playback; **1.00** on a snapshot with
+  the player mounted. Three runs, the same figures. The frame mounted, so
+  `frame-src` admits it in a real browser; no console error or warning; no
+  cookie kept for the YouTube hosts. The one failing audit is `inspector-issues`,
+  a single _Cookie_ issue, which is the finding amended at §6.1. **The click
+  state sits exactly on the 0.95 threshold**, so a second issue would put it
+  under. A timespan is scored over fewer audits than a navigation, so its figure
+  is not comparable one to one with the gate's.
 
 ### 4.4 Which surface owns playback (brief §3.3 q14)
 
@@ -783,6 +752,23 @@ media CDN — and **still sets no cookie**. The secondary reporting in §11 says
 play sets `VISITOR_INFO1_LIVE`, `YSC` and `GPS`; on this measurement, on this
 host, it does not. That reporting predates the behaviour and is now corrected
 here rather than carried forward.
+
+**Amended 2026-09-20 (ETNI-1980): no cookie _kept_ is not no cookie
+_attempted_.** The measurement above reads the browser's cookie jar, which shows
+what was kept. A Lighthouse flow through the click also reads DevTools' own
+issue log for the frame, and it records four `SetCookie` operations from
+`www.youtube-nocookie.com` on play: `TESTCOOKIESENABLED` (a probe for cookie
+support, repeated) and `LAST_RESULT_ENTRY_KEY` on `.www.youtube-nocookie.com`,
+the same name as the `ytidb::LAST_RESULT_ENTRY_KEY` storage key above, so a
+cookie fallback for it. None carries a `SameSite` attribute, and Chrome excludes
+such a cookie in a cross-site frame (`ExcludeSameSiteUnspecifiedTreatedAsLax`),
+which is why the jar stayed empty. **The host tries to write cookies on play;
+whether they are kept is the browser's decision**, and a browser that does not
+apply that default would keep them. Read every "sets no cookie on play" in this
+document as "kept no cookie in Chrome". The decision does not move: the facade
+and the click are what stand between the reader and this, the drafted legal
+paragraph (§3.4) already says Google writes trackers to the device on play, and
+neither sentence claimed otherwise.
 
 ### 6.2 What a signed-out reader actually sees
 
@@ -1081,12 +1067,12 @@ The shelf's `href` moves from the section head to the piece's Découvertes entry
 same change, `a11y.yml` — `lighthouseAxeCoverage.test.ts` holds the precondition
 that axe-core covers every route the gate visits. `checkEmbedAvailability.ts`
 starts running nightly. The hand-measured post-click Lighthouse figures from
-§4.3 are written back into this file (done 2026-09-20, in §4.3).
+§4.3 are written back into this file.
 
 **Reverses by** reverting the `href`; the rest is measurement and removing it
 only removes information.
 
-**Status, 2026-09-20 (ETNI-1970): done.**
+**Status, 2026-09-20 (ETNI-1970, ETNI-1980): done.**
 Reading the code and measuring moved four things away from the text above:
 
 - **The shelf's `href` was already the piece's Découvertes entry**
@@ -1118,11 +1104,10 @@ The nightly check is `scripts/checkEmbedAvailability.ts`
 against YouTube's oEmbed endpoint: the real record answers 200 and an unknown
 identifier 404. A 401 for a private piece is reported behaviour, not measured.
 
-**The post-click figures are in §4.3.** The gate never clicks, so they were taken
-by hand: a browser loads the entry, presses the facade button and Lighthouse
-audits the timespan around the click. They agree with the facade-state figure
-above (1.00 before the click) and add what the gate cannot see: 0.95 after it,
-on the threshold.
+**The post-click figures (ETNI-1980) were measured on 2026-09-20 and are at
+§4.3:** 1.00 with the facade, 0.95 across the click and eight seconds of
+playback, 1.00 with the player mounted. Taking them surfaced the cookie attempt
+amended at §6.1.
 
 ## 10. Gates, and the tests each stage breaks on purpose
 
