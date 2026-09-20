@@ -257,6 +257,32 @@ It is next, and it is now the _only_ item left before phase 12's exit gate is
 reachable — items 2 through 6 either follow from it directly (§5) or are
 already done (this section).
 
+**And it turned out not to be simple cleanup once traced.** The two mount
+guards above aren't two renderings of the same thing with one stale — they're
+two different search _modes_. `rel` (a `SearchRelation`, read from the
+`?family=`/`?country=` URL params `relationSearch.ts` defines) short-circuits
+the fetch in `RecherchePageContent.tsx`'s search effect
+(`if (rel) { setStatus("loaded"); return; }`, _before_ `companions`/
+`feedState` are ever set), so a relation-scoped search — "the peoples of the
+Krou family," reached by clicking a family or country chip on a result card —
+can only ever satisfy `NameAnswer`'s mount guard, never `SearchFeed`'s.
+`classifySearchFeed` has no relation-search case at all.
+
+The chip that starts that search is `buildRelationSearchHref`
+(`relationSearch.ts`), called from `SearchResultCard.tsx` — which `SearchFeed`
+itself renders (`PeopleBlock`/`TilesBlock` results are `SearchResultCard`s).
+So **the reviewed feed already produces links into the mode only the old page
+can serve**: click a family or country chip inside a board-matching
+`SearchFeed` render today, and the destination is `NameAnswer`, not another
+`SearchFeed` render. Deleting `NameAnswer` without first giving
+`classifySearchFeed`/`SearchFeed` a relation-search state doesn't retire a
+duplicate — it breaks relation search outright, taking a chip `SearchFeed`
+itself draws down with it. That's a scoped implementation task (a new
+`SearchFeedAnswerState` case, presumably its own board or an agreed variant
+of an existing one, its own text-parity pass), not a deletion, and it belongs
+in its own ticket rather than folded silently into "phase 12 cleanup" — the
+name undersells what's actually left.
+
 ## 2. The rule that decides every remaining fix
 
 `docs/design/search-result-charter.md`, as PR #1188 rewrote it, gives three
