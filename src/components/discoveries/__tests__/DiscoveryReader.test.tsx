@@ -4,6 +4,8 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { DiscoveryReader } from "@/components/discoveries/DiscoveryReader";
 import type { DiscoveryPublication } from "@/lib/discoveries/catalog";
 import { getDiscoveryPublications } from "@/lib/discoveries/entries";
+import { ConsentProvider } from "@/hooks/use-consent";
+import { DISCOVERY_VIDEOS, videoPublications } from "@/lib/discoveries/videos";
 import { getCountryRoute, getPeopleRoute } from "@/lib/routing";
 
 // The photo, browsing and sharing suites below walk the two photographed
@@ -916,5 +918,78 @@ describe("Découvertes carousel frame", () => {
         .querySelector('meta[property="og:image"]')
         ?.getAttribute("content")
     ).toContain("/images/discoveries/carousel/guinee/1.jpg");
+  });
+});
+
+describe("Découvertes video", () => {
+  const [video] = videoPublications(DISCOVERY_VIDEOS);
+  const withoutEmbed: DiscoveryPublication = {
+    ...video,
+    id: "video:no-embed",
+    slug: { fr: "sans-lecteur", en: "no-player" },
+    video: { ...video.video!, embed: undefined },
+  };
+
+  const renderVideo = (publication: DiscoveryPublication, language = "fr") =>
+    render(
+      <ConsentProvider>
+        <DiscoveryReader
+          language={language as "fr" | "en"}
+          publications={[publication]}
+          initialId={publication.id}
+        />
+      </ConsentProvider>
+    );
+
+  // The reader shows a production without asking anything of a platform: the
+  // facade is a button and a link, and no frame exists until the click.
+  // @req REQ-181
+  it("shows a production behind a facade, with no frame and the link out", () => {
+    const { container } = renderVideo(video);
+
+    expect(container.querySelector("iframe")).toBeNull();
+    expect(
+      screen.getByRole("button", { name: /charge le lecteur de YouTube/i })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: /regarder sur youtube/i })
+    ).toHaveAttribute("href", video.video!.watchUrl);
+    expect(screen.getByText("Vidéo")).toBeInTheDocument();
+  });
+
+  // A record without an embed is the link out it was before this change.
+  // @req REQ-181
+  it("shows only the link out when the record has no embed", () => {
+    const { container } = renderVideo(withoutEmbed);
+
+    expect(container.querySelector("iframe")).toBeNull();
+    expect(
+      screen.queryByRole("button", { name: /charge le lecteur/i })
+    ).not.toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: /regarder sur youtube/i })
+    ).toBeInTheDocument();
+  });
+
+  // REQ-128: author, licence and the page the piece is published on.
+  // @req REQ-181
+  it("credits the author and links the licence", () => {
+    renderVideo(video);
+
+    expect(screen.getByText(/EthniAfrica/, { selector: "p" })).toBeTruthy();
+    expect(screen.getByRole("link", { name: "CC BY-SA 4.0" })).toHaveAttribute(
+      "href",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    );
+  });
+
+  // @req REQ-181
+  it("speaks English on an English route", () => {
+    renderVideo(video, "en");
+
+    expect(screen.getByText("Video")).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /loads YouTube's player/i })
+    ).toBeInTheDocument();
   });
 });

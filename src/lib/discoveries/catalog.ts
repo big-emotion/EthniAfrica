@@ -1,3 +1,4 @@
+import type { EmbedRef } from "@/lib/embeds/providers";
 import type { Language } from "@/types/shared";
 import {
   formatProductionNameQuestion,
@@ -97,6 +98,13 @@ export interface DiscoveryPublication {
     publishedAt: string;
     durationSeconds: number;
     watchUrl: string;
+    /**
+     * Provider and identifier only, never a URL: a stored string that becomes an
+     * iframe `src` is an unvalidated address. Optional, so a record without one
+     * is the link out it was before.
+     */
+    embed?: EmbedRef;
+    credit?: DiscoveryVideoCredit;
     poster: {
       src: string;
       alt: Record<Language, string>;
@@ -111,6 +119,17 @@ export interface DiscoveryPublication {
    * holds each declared file to its dimensions and its IPTC disclosure.
    */
   downloads?: Partial<Record<DownloadFormat, string>>;
+}
+
+/**
+ * Who made a production and under what licence it is shown (REQ-128). It sits
+ * beside the watch link rather than being derived from it: the platform's page
+ * says who uploaded a piece, not who authored it or what it may be reused for.
+ */
+export interface DiscoveryVideoCredit {
+  author: string;
+  licence: "public-domain" | "cc0" | "cc-by" | "cc-by-sa";
+  licenceUrl: string;
 }
 
 export type DownloadFormat = "9:16" | "4:5" | "1:1";

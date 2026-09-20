@@ -3,14 +3,15 @@ import type { Language } from "@/types/shared";
 const en = {
   title: "Cookie settings",
   description:
-    "We use cookies to improve your experience on our site. Essential cookies are required for the site to work. Analytics and functional cookies help us improve our services.",
+    "Your choices are kept in your browser’s local storage, not in a cookie. Essential functions are always on; audience measurement starts only if you agree.",
   dataPolicy: "Data policy",
   essential: "Essential cookies",
   essentialDescription: "Required — necessary for the site to work",
   analytics: "Analytics cookies",
-  analyticsDescription: "Plausible — anonymous visit statistics",
-  functional: "Functional cookies",
-  functionalDescription: "Sentry — error reporting that helps improve the site",
+  analyticsDescription: "Plausible — anonymous visit statistics, no cookie",
+  embeds: "Third-party video playback",
+  embedsDescription:
+    "YouTube — the player loads, and YouTube receives your IP address, only when you start a video",
   save: "Save preferences",
   acceptAll: "Accept all",
   reject: "Reject",
@@ -22,14 +23,16 @@ type ConsentCopy = typeof en;
 const fr: ConsentCopy = {
   title: "Gestion des cookies",
   description:
-    "Nous utilisons des cookies pour améliorer votre expérience sur notre site. Les cookies essentiels sont nécessaires au fonctionnement du site. Les cookies analytiques et fonctionnels nous aident à améliorer nos services.",
+    "Vos choix sont conservés dans le stockage local de votre navigateur, et non dans un cookie. Les fonctions essentielles sont toujours actives ; la mesure d’audience ne démarre que si vous l’acceptez.",
   dataPolicy: "Politique de données",
   essential: "Cookies essentiels",
   essentialDescription: "Requis — nécessaires au fonctionnement du site",
   analytics: "Cookies analytiques",
-  analyticsDescription: "Plausible — statistiques anonymes de visite",
-  functional: "Cookies fonctionnels",
-  functionalDescription: "Sentry — rapport d'erreurs pour améliorer le site",
+  analyticsDescription:
+    "Plausible — statistiques anonymes de visite, sans cookie",
+  embeds: "Lecture de vidéos tierces",
+  embedsDescription:
+    "YouTube — le lecteur n’est chargé, et YouTube ne reçoit votre adresse IP, que si vous lancez une vidéo",
   save: "Enregistrer mes préférences",
   acceptAll: "Accepter tout",
   reject: "Refuser",

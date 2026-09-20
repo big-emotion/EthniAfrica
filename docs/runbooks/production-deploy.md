@@ -115,6 +115,16 @@ One controls which language is public:
   rebuild the image rather than restarting an image built under another mode. The deploy smoke
   gate checks the root, both locale roots, and a remembered English choice before succeeding.
 
+One is a legal obligation, and the only place the host's identity is written down:
+
+- `LEGAL_HOST_NAME` and `LEGAL_HOST_ADDRESS` — who hosts the site, as the legal notice names
+  it. They are read at request time, so a change of host is an edit to this file and a
+  restart, not a release. They are plain configuration rather than secrets, kept here because
+  the repository is public and does not carry the provider's identity. Unset, the notice
+  describes the host by its role, `LEGAL_HOST_NAME is not set` appears in the container log,
+  and every page still answers 200 — so a green deploy proves nothing about them: read the
+  notice at `/fr/mentions-legales` after provisioning.
+
 ### The host rule, in three stages
 
 Setting this to a hostname whose DNS does not point here yet makes Traefik retry a

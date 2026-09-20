@@ -236,6 +236,11 @@ Optional subsystems, each genuinely inert when unset: `SENTRY_DSN` / `NEXT_PUBLI
 `REVALIDATE_SECRET`, `SUPABASE_WEBHOOK_SECRET`, `NEXT_PUBLIC_FEATURE_QUIZ`,
 `CORS_ALLOWED_ORIGIN`.
 
+`LEGAL_HOST_NAME` and `LEGAL_HOST_ADDRESS` name the host in the legal notice
+(`src/lib/legalHost.ts`). They are plain configuration read at request time, and they are
+provisioned rather than committed because the repository is public. Unset, the notice states
+the host's role instead of its name and logs an error — the page never fails.
+
 `AFRIK_PRODUCTION_SUPABASE_URL` is loader-only: set it only when syncing the AFRIK corpus with
 `--target=production`. Its CI counterparts, `PRODUCTION_SUPABASE_URL` and
 `PRODUCTION_SUPABASE_SERVICE_ROLE_KEY`, are GitHub Actions repository secrets read only by

@@ -21,6 +21,7 @@ interface ConsentContextValue {
   acceptAll: () => void;
   rejectAll: () => void;
   updatePreferences: (preferences: ConsentPreferences) => void;
+  setEmbedsConsent: (granted: boolean) => void;
   showBanner: boolean;
   setShowBanner: (show: boolean) => void;
 }
@@ -58,6 +59,11 @@ function getInitialShowBanner(): boolean {
 
   const stored = getStoredConsent();
   if (!stored) {
+    return true;
+  }
+
+  // A record that holds only a play click has not answered the banner.
+  if (!stored.hasConsented) {
     return true;
   }
 
@@ -100,11 +106,14 @@ export function ConsentProvider({ children }: ConsentProviderProps) {
         essential: true,
         analytics: true,
         functional: true,
+        // Not part of "accept all": a third-party player is agreed to at the
+        // click that loads it. A choice already made there is kept.
+        embeds: consentState.preferences.embeds,
       },
       consentDate: new Date().toISOString(),
     };
     persistConsent(newState);
-  }, [persistConsent]);
+  }, [persistConsent, consentState.preferences.embeds]);
 
   const rejectAll = useCallback(() => {
     const newState: ConsentState = {
@@ -113,6 +122,7 @@ export function ConsentProvider({ children }: ConsentProviderProps) {
         essential: true, // Essential is always true
         analytics: false,
         functional: false,
+        embeds: false,
       },
       consentDate: new Date().toISOString(),
     };
@@ -134,11 +144,30 @@ export function ConsentProvider({ children }: ConsentProviderProps) {
     [persistConsent]
   );
 
+  // Written by the facade's click, and by nothing else. It records the embeds
+  // answer without answering the banner: playing a video says nothing about
+  // audience measurement, so `hasConsented` and the banner are left as they
+  // were. The date is refreshed because the choice was made now, at the price
+  // of also extending the clock on answers the reader gave earlier.
+  const setEmbedsConsent = useCallback(
+    (granted: boolean) => {
+      const newState: ConsentState = {
+        ...consentState,
+        preferences: { ...consentState.preferences, embeds: granted },
+        consentDate: new Date().toISOString(),
+      };
+      setConsentState(newState);
+      saveConsent(newState);
+    },
+    [consentState]
+  );
+
   const value: ConsentContextValue = {
     consentState,
     acceptAll,
     rejectAll,
     updatePreferences,
+    setEmbedsConsent,
     showBanner,
     setShowBanner,
   };

@@ -41,6 +41,7 @@ import {
 } from "@/lib/discoveries/sharing";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
+import { EmbedFacade } from "@/components/media/EmbedFacade";
 import { GeneratedImageBadge } from "@/components/discoveries/GeneratedImageBadge";
 import { GeneratedImageDetail } from "@/components/discoveries/GeneratedImageDetail";
 import {
@@ -516,6 +517,8 @@ export function DiscoveryReader({
                     words.proverb
                   ) : entry.kind === "carousel" ? (
                     words.carousel
+                  ) : entry.kind === "video" ? (
+                    words.video
                   ) : (
                     words.fact
                   )}
@@ -547,6 +550,37 @@ export function DiscoveryReader({
                   {" · "}
                   {entry.source?.shortTitle ?? entry.source?.title}
                 </p>
+                {/* The production is played, or linked to, from here. The facade
+                    sits after the words and before the credit, and only the
+                    card on screen keeps its controls in the tab order. */}
+                {entry.video ? (
+                  <>
+                    <EmbedFacade
+                      language={language}
+                      name={entry.title[language]}
+                      embed={entry.video.embed}
+                      poster={entry.video.poster}
+                      watchUrl={entry.video.watchUrl}
+                      active={index === activeIndex}
+                    />
+                    {entry.video.credit ? (
+                      <p className={styles.credit}>
+                        {words.video}
+                        {" : "}
+                        {entry.video.credit.author}
+                        {" · "}
+                        <a
+                          href={entry.video.credit.licenceUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          tabIndex={index === activeIndex ? 0 : -1}
+                        >
+                          {words.videoLicences[entry.video.credit.licence]}
+                        </a>
+                      </p>
+                    ) : null}
+                  </>
+                ) : null}
                 {/* A generated image is not a photo and has no original file
                     to credit; its provenance lives in the detail sheet. */}
                 {!entry.image ||

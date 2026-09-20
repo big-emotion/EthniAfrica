@@ -10,6 +10,7 @@ import type { Language } from "@/types/shared";
 import type { DiscoveryPublication } from "./catalog";
 import { generatedImagePublications } from "./generatedImages";
 import { DISCOVERY_SLUGS } from "./slugs";
+import { videoPublications } from "./videos";
 
 const selections = [
   {
@@ -187,5 +188,8 @@ export function getDiscoveryPublications(): DiscoveryPublication[] {
     ...anecdotePublications(),
     ...proverbPublications(),
     ...generatedImagePublications(),
+    ...videoPublications().filter(
+      (publication) => publication.status === "published"
+    ),
   ];
 }

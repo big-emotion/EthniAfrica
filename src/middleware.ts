@@ -7,6 +7,10 @@ import {
   evaluateRateLimit,
   type RateLimitDecision,
 } from "@/lib/api/rate-limit";
+import {
+  ENABLED_EMBED_PROVIDERS,
+  embedFrameSrcHosts,
+} from "@/lib/embeds/providers";
 import { applyVersioningHeaders } from "@/lib/api/versioning";
 import {
   DEEP_LINK_QUERY_KEYS,
@@ -71,11 +75,6 @@ const NEXT_RUNTIME_STYLE_HASHES = [
 // Prismic-as-editorial-source architecture already confirms.
 const MEDIA_SRC_HOSTS = ["https://images.prismic.io"].join(" ");
 
-// No embed provider is confirmed yet — REQ-128 ("Media and external links on
-// the fiche") owns that decision. Left empty rather than guessed so the
-// directive still exists explicitly (not an implicit default-src fallback)
-// and stays a deliberate host-by-host allowlist once REQ-128 names a host.
-const FRAME_SRC_HOSTS: string[] = [];
 /**
  * The Supabase origin the browser is allowed to reach: the one the app is
  * configured against, and no other.
@@ -190,7 +189,12 @@ function applySecurityHeaders(
     ...(publicLocalizedPage ? ["style-src-attr 'unsafe-inline'"] : []),
     "img-src 'self' data:",
     `media-src 'self' ${MEDIA_SRC_HOSTS}`,
-    ["frame-src 'self'", ...FRAME_SRC_HOSTS].join(" "),
+    // Derived per request from `ENABLED_EMBED_PROVIDERS`, like the Supabase and
+    // Sentry origins: empty closes it to 'self', and the directive stays
+    // explicit rather than an implicit default-src fallback.
+    ["frame-src 'self'", ...embedFrameSrcHosts(ENABLED_EMBED_PROVIDERS)].join(
+      " "
+    ),
     "frame-ancestors 'self'",
     // Neither of these falls back to default-src, so omitting them leaves them
     // wide open rather than inheriting 'self'. base-uri stops an injected
