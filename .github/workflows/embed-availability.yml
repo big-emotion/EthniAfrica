@@ -1,0 +1,48 @@
+name: Embedded pieces — availability
+
+# The player is a cross-origin frame, so a piece the platform removed, made
+# private or blocked shows the reader YouTube's own error inside the site's
+# card and the page cannot hear it (REQ-181, DEC-059). This asks the platform
+# from outside once a night and annotates what needs a hand edit.
+#
+# It is deliberately not a pull-request check: a round trip to a third party
+# must not be able to block a merge. It reports; the script exits 0 on
+# findings and non-zero only if the script itself crashes.
+on:
+  schedule:
+    - cron: "30 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: embed-availability
+  cancel-in-progress: false
+
+jobs:
+  availability:
+    name: Embedded pieces still playable
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # A scheduled event always fires against the default branch, which is
+          # `main`. The catalogue to check is the integration branch's, so the
+          # nightly run has to name it (same reason as lighthouse.yml).
+          ref: ${{ github.event_name == 'schedule' && 'recette' || '' }}
+
+      - name: Setup Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Ask the platform whether each embedded piece still plays
+        run: npm run check:embed-availability

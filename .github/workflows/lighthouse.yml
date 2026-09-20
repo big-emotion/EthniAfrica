@@ -4,7 +4,7 @@ on:
   # Two jobs on two paths, the same split as e2e.yml.
   #
   # `gate` runs on every pull request, into `recette` included, and is meant to
-  # be a required check: four routes, one run each, asserting accessibility and
+  # be a required check: five routes, one run each, asserting accessibility and
   # best practices as errors and printing performance as warnings (see
   # `.lighthouserc.gate.js` for why the performance half cannot block here).
   #
@@ -30,6 +30,10 @@ permissions:
 
 jobs:
   gate:
+    # The name says four though the gate visits five routes. Branch protection on
+    # `recette` requires this check by name, so renaming it leaves the required
+    # status never reported and blocks every pull request. Rename it in the same
+    # change as the protection rule, and in ephemeralSupabaseWiring.test.ts.
     name: Lighthouse gate (4 routes)
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
