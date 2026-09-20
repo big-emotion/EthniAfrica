@@ -178,6 +178,85 @@ outright (a board only passes when _both_ stages clear), but **all forty now
 reach the pixel stage** — the phase-11 text-cause work (§3's ten-item table)
 is complete. Unit suite: 348/348, typecheck clean.
 
+## 1d. Update — 2026-09-20, fifth session (phase 12 recon, and what it changed)
+
+With phase 11's text causes closed, this pass measured phase 12 directly
+rather than working from the original plan's checklist, and two of its six
+items turned out to already be done or safe to finish now; the rest turned
+out to gate on a single decision the plan hadn't flagged.
+
+**Done in this pass:**
+
+- **Item 6 (harness artifact retention)** was already satisfied —
+  `.github/workflows/e2e.yml`'s `search-feed-visual-proof` upload is already
+  `if: failure()` with `retention-days: 7`. No change needed; the plan's
+  concern predates whichever commit added those two lines.
+- **Item 3 (a11y route coverage)** is done: `scripts/a11yRoutes.ts` now audits
+  `?q=mandé` (exact match, real corpus data) and `?q=kossiwa` (unknown name)
+  in both locales, alongside the bare search route's empty state.
+  `qualityGateRoutes.test.ts`'s hand-written per-locale count moved 16 → 18
+  in the same change, per its own documented convention. Full repo suite
+  re-run clean at 1329 → confirmed again at 10005 passing after this addition
+  (two pre-existing failures found in the same run are unrelated — next
+  bullet).
+
+**Found, not fixed — out of this plan's scope:**
+
+- **`check:dead` is red for reasons mostly unrelated to search.** Of the four
+  files over the three-file ceiling, three (`src/lib/games/corpus.en.ts`,
+  `landmarks.en.ts`, `src/lib/glossaire/entries.en.ts`) are orphaned
+  English-locale content in an unrelated subsystem, pre-dating this plan
+  entirely. The fourth, `src/lib/search/__fixtures__/feedCases.ts`, is not
+  actually dead — it's the fixture every test this session has run against —
+  it only shows up because knip's `--production` mode doesn't treat
+  `e2e/**/*.ts` as live entry points the way the non-production check does,
+  so a file reachable only from e2e specs reads as unreferenced. Fixing this
+  cleanly is a `knip.json` entry-pattern change, not a deletion; the
+  types-ceiling overage (13 > 10) is a separate question that depends on
+  which of `NameAnswer`'s now-orphaned exports get deleted alongside it (next
+  bullet) — so both ceiling numbers should be re-measured together, once,
+  after that deletion, rather than chased separately now.
+- **`src/lib/__tests__/routeLiteralCharter.test.ts` has two pre-existing
+  failures** (`e2e/support/search-feed-fixture.ts:219`'s hardcoded
+  `` `/fr/atlas/recherche?q=...` ``, and a literal href in
+  `SearchFeed.test.tsx:140`), confirmed via `git log` to predate this plan's
+  work entirely (last touched in `54d790b00` and its ancestor, both from the
+  original phase 0-10 implementation). Not introduced by anything in this
+  document's four update sessions. Left alone rather than patched blind: the
+  fixture harness is exactly the thing every measurement in §1a-§1c depended
+  on being correct, and this plan's remit is search-feed parity, not a
+  general route-literal sweep.
+- **Item 5 (mockups doc cleanup) cannot be done independently of item 1.**
+  `docs/design/mockups/search/README.md` — the _old_, six-case mockup grid —
+  still describes itself as backing an actively-enforced gate
+  (`resultGrammarCharter.test.ts`), and that's still true: `NameAnswer` is
+  still the page real users hit whenever the reviewed feed isn't shown, so
+  its own charter and mockups are still load-bearing, not legacy. Annotating
+  that README with "why it stays" before `NameAnswer` is actually deleted
+  would be writing a false reason.
+
+**Item 1 (deleting `NameAnswer`) is the one this plan most wants done and the
+one this session declined to attempt**, for a reason worth stating plainly
+rather than leaving implicit: `RecherchePageContent.tsx` mounts both
+`NameAnswer` (guarded by `status === "idle" || (status === "loaded" &&
+results.length > 0)`) and `SearchFeed` (guarded by `status === "loaded" &&
+companions && feedState`) in the same render, on overlapping conditions —
+both can be true at once, and untangling exactly when only reveals itself by
+loading the real page. This is the one piece of phase 12 that changes what a
+real visitor sees on the production search page, as opposed to a mockup or a
+test fixture, and CLAUDE.md's own instruction for UI changes is to render the
+page and look before calling it done. Every other fix in this document's four
+sessions was verified against a real Playwright render; this one specifically
+needs that same discipline, and this session's browser tooling proved
+unreliable within its own smaller, sandboxed harness (§1b's bassa
+investigation — two scripted debug runs hung on port/process contention
+before either produced a measurement). Attempting the live-page version of
+that same class of problem, with no fallback if a hang obscures a real
+regression on the production route, was judged the wrong trade this session.
+It is next, and it is now the _only_ item left before phase 12's exit gate is
+reachable — items 2 through 6 either follow from it directly (§5) or are
+already done (this section).
+
 ## 2. The rule that decides every remaining fix
 
 `docs/design/search-result-charter.md`, as PR #1188 rewrote it, gives three
