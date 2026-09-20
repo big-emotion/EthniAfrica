@@ -9,6 +9,12 @@ export interface SearchFeedCopy {
     shared: (count: number) => string;
     exactSummary: string;
     widenedSummary: string;
+    /** A relation-scoped browse (a family or country chip), never a name search. */
+    relationEyebrow: string;
+    relationFamilyVerdict: (familyName: string) => string;
+    /** `locatedPhrase` is already composed with its preposition, e.g. "au Sénégal". */
+    relationCountryVerdict: (locatedPhrase: string) => string;
+    relationSummary: string;
   };
   shelves: {
     shorts: string;
@@ -87,6 +93,13 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
         "The forms and sources below state what the atlas can establish.",
       widenedSummary:
         "Every widened item says how it is related to the searched name.",
+      relationEyebrow: "Related results",
+      relationFamilyVerdict: (familyName) =>
+        `The peoples of the ${familyName} family.`,
+      relationCountryVerdict: (locatedPhrase) =>
+        `The peoples present ${locatedPhrase}.`,
+      relationSummary:
+        "No name was searched: these entries only share this filter.",
     },
     shelves: {
       shorts: "In under one minute",
@@ -166,6 +179,13 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
         "Les formes et les sources ci-dessous disent ce que l’atlas peut établir.",
       widenedSummary:
         "Chaque contenu élargi indique ce qui le relie au nom cherché.",
+      relationEyebrow: "Résultats liés",
+      relationFamilyVerdict: (familyName) =>
+        `Les peuples de la famille ${familyName}.`,
+      relationCountryVerdict: (locatedPhrase) =>
+        `Les peuples présents ${locatedPhrase}.`,
+      relationSummary:
+        "Aucun nom n’a été cherché : ces fiches partagent seulement ce filtre.",
     },
     shelves: {
       shorts: "En moins d’une minute",

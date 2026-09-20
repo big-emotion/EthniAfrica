@@ -275,6 +275,69 @@ describe("SearchFeed", () => {
     ).toBeNull();
   });
 
+  // @req REQ-178
+  it("names the family being browsed, rather than confessing an unmatched name search", () => {
+    const result = namedResult({
+      type: "people",
+      id: "PPL_KROU",
+      name: "Peuple Krou",
+      languageFamilyName: "Krou",
+      languageFamilyNameEn: "Kru",
+    });
+    const recentCompanions = fixture("inconnu").production.companions;
+    render(
+      <SearchFeed
+        query=""
+        language="fr"
+        state="widened"
+        results={[result]}
+        subjects={[]}
+        leads={[]}
+        companions={recentCompanions}
+        relation={{ kind: "family", id: "FLG_KROU" }}
+      />
+    );
+
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Krou");
+    expect(
+      screen.getByText("Les peuples de la famille Krou.")
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByText(
+        "L’atlas a trouvé des fiches liées sans établir qu’elles répondent à ce nom."
+      )
+    ).toBeNull();
+  });
+
+  // @req REQ-178
+  it("names the country being browsed, with the right preposition", () => {
+    const result = namedResult({
+      type: "people",
+      id: "PPL_WOLOF",
+      name: "Wolof",
+    });
+    const recentCompanions = fixture("inconnu").production.companions;
+    render(
+      <SearchFeed
+        query=""
+        language="fr"
+        state="widened"
+        results={[result]}
+        subjects={[]}
+        leads={[]}
+        companions={recentCompanions}
+        relation={{ kind: "country", id: "SEN" }}
+      />
+    );
+
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "Sénégal"
+    );
+    expect(
+      screen.getByText("Les peuples présents au Sénégal.")
+    ).toBeInTheDocument();
+  });
+
   // @req REQ-180
   it("describes a recorded naming problem without reusing shared-name copy", () => {
     const result = namedResult({

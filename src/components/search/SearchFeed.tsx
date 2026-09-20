@@ -9,6 +9,8 @@ import {
 
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { getSearchEntityLabel } from "@/components/search/searchEntityAccent";
+import { inCountry } from "@/lib/atlas/countryPreposition";
+import { getCountryCommonName } from "@/lib/countryNames";
 import { ficheHrefFor } from "@/components/search/SearchResultCard";
 import { AppellationsBlock } from "@/components/search/feed/AppellationsBlock";
 import { FactsBlock } from "@/components/search/feed/FactsBlock";
@@ -78,6 +80,20 @@ function useDesktopFeed(): boolean {
   return useSyncExternalStore(subscribeDesktop, desktopSnapshot, () => false);
 }
 
+/**
+ * A family or country chip's browse — "the peoples of the Krou family" —
+ * reached through a link built by `buildRelationSearchHref`, never a name
+ * search. `classifySearchFeed` reports this the same way it reports a name
+ * search that widened (`state: "widened"`, no subjects): both mean "results
+ * exist, but none answers to a searched name." This is what tells the two
+ * apart, so the verdict reads "the peoples of X" rather than misreporting a
+ * name search that found nothing exact.
+ */
+export interface SearchFeedRelation {
+  kind: "family" | "country";
+  id: string;
+}
+
 export interface SearchFeedProps {
   query: string;
   language: Language;
@@ -89,6 +105,7 @@ export interface SearchFeedProps {
   companions: SearchCompanionsData;
   resultCount?: number;
   presentation?: SearchFeedPresentation;
+  relation?: SearchFeedRelation;
   onResultNavigate?: (type: string, rank: number) => void;
 }
 
@@ -209,6 +226,7 @@ export function SearchFeed({
   companions: loadedCompanions,
   resultCount,
   presentation,
+  relation,
   onResultNavigate,
 }: SearchFeedProps) {
   const [activeLens, setActiveLens] = useState<FeedLensId>("all");
@@ -373,8 +391,23 @@ export function SearchFeed({
         }
   );
   const ficheRows = presentation?.fiches?.items ?? derivedFicheRows;
+  // A relation browse ("the peoples of the Krou family") only replaces the
+  // name-search movement when there is no subject to answer — a query that
+  // also matches a subject (a country filter alongside a name search that
+  // succeeds) answers that name as usual, the relation staying a filter
+  // rather than becoming the page's subject.
+  const isRelationBrowse = Boolean(relation) && subjects.length === 0;
+  const relationLabel =
+    isRelationBrowse && relation?.kind === "family"
+      ? ((language === "en"
+          ? results[0]?.languageFamilyNameEn
+          : results[0]?.languageFamilyName) ?? results[0]?.languageFamilyName)
+      : isRelationBrowse && relation?.kind === "country"
+        ? getCountryCommonName(language, relation.id, relation.id)
+        : undefined;
   const displayName =
     presentation?.answer?.name ??
+    relationLabel ??
     (state === "typo" && leads[0]
       ? leads[0].name
       : subjects[0]
@@ -391,15 +424,26 @@ export function SearchFeed({
           : state === "widened"
             ? subjects.length > 0
               ? copy.answer.widened
-              : copy.answer.relatedOnly
+              : relation?.kind === "family" && relationLabel
+                ? copy.answer.relationFamilyVerdict(relationLabel)
+                : relation?.kind === "country"
+                  ? copy.answer.relationCountryVerdict(
+                      inCountry(relation.id, displayName, language)
+                    )
+                  : copy.answer.relatedOnly
             : copy.answer.exact);
   const summary =
     presentation?.answer?.summary ??
     (state === "unknown"
       ? answerCopy.unknownNameBody
       : state === "widened"
-        ? copy.answer.widenedSummary
+        ? isRelationBrowse
+          ? copy.answer.relationSummary
+          : copy.answer.widenedSummary
         : copy.answer.exactSummary);
+  const relationEyebrow = isRelationBrowse
+    ? copy.answer.relationEyebrow
+    : undefined;
   const contributionTarget = subjects[0]
     ? {
         type: subjects[0].type,
@@ -494,7 +538,7 @@ export function SearchFeed({
             verdict={verdict}
             summary={summary}
             kind={presentation?.answer?.kind}
-            eyebrow={presentation?.answer?.eyebrow}
+            eyebrow={presentation?.answer?.eyebrow ?? relationEyebrow}
             language={language}
             tone={
               presentation?.answer?.tone ??

@@ -242,11 +242,16 @@ export function RecherchePageContent() {
           setStatus("failed");
           return;
         }
-        if (rel) {
-          setStatus("loaded");
-          return;
-        }
 
+        // A relation-scoped search ("the peoples of the Krou family") carries
+        // no name to match: `q` is empty, so `selectNameSubject` resolves no
+        // subjects below, and `classifySearchFeed` reports the same "widened"
+        // state a name search reports when it finds only related entries.
+        // `SearchFeed`'s `relation` prop is what tells the two apart at
+        // render time (ETNI-1966) — the reviewed feed's own family/country
+        // chips (`SearchResultCard` → `buildRelationSearchHref`) land here,
+        // so this path has to produce a real feed, not the "loaded" no-op
+        // this used to leave companions/feedState null for.
         const ranked = [...hits].sort(compareByRelevance);
         const selected = selectNameSubject(ranked, q, language).filter(
           isSearchFeedSubject
@@ -539,7 +544,7 @@ export function RecherchePageContent() {
 
   // ── render ──────────────────────────────────────────────────────────────────
 
-  if (committedQuery && !relation) {
+  if (committedQuery || relation) {
     const feedCopy = searchFeedCopy[language];
     return (
       <SearchFeedFrame language={language}>
@@ -611,6 +616,41 @@ export function RecherchePageContent() {
             )}
           </form>
 
+          {relation && (
+            <div
+              data-testid="filter-chip-row"
+              role="group"
+              className="mt-afh-md flex flex-wrap items-center gap-afh-md"
+              aria-label={
+                language === "en" ? "Active filters" : "Filtres actifs"
+              }
+            >
+              <Badge
+                variant="secondary"
+                className="flex items-center gap-afh-xs px-afh-lg py-afh-xs text-afh-small"
+              >
+                {relationLabel}
+                <button
+                  type="button"
+                  aria-label={`${language === "en" ? "Remove filter" : "Supprimer le filtre"} ${relationLabel}`}
+                  onClick={() => setRelation(null)}
+                  className={cn("ml-afh-xs rounded-full", CHARTER_FOCUS_RING)}
+                >
+                  <X className="h-3 w-3" aria-hidden="true" />
+                </button>
+              </Badge>
+              {hasActiveFilters && (
+                <button
+                  type="button"
+                  onClick={() => setRelation(null)}
+                  className="ml-auto text-afh-small text-afh-fg-muted underline underline-offset-2 hover:text-afh-text"
+                >
+                  {language === "en" ? "Clear all" : "Tout effacer"}
+                </button>
+              )}
+            </div>
+          )}
+
           {status === "loading" ? (
             <div
               data-testid="search-feed-loading"
@@ -655,7 +695,7 @@ export function RecherchePageContent() {
               <Button
                 type="button"
                 className="mt-afh-lg min-h-11"
-                onClick={() => performSearch(committedQuery, null)}
+                onClick={() => performSearch(committedQuery, relation)}
               >
                 {feedCopy.status.retry}
               </Button>
@@ -664,7 +704,7 @@ export function RecherchePageContent() {
 
           {status === "loaded" && companions && feedState ? (
             <SearchFeed
-              key={`${language}:${committedQuery}`}
+              key={`${language}:${committedQuery}:${relation ? `${relation.kind}:${relation.id}` : ""}`}
               query={committedQuery}
               language={language}
               state={feedState}
@@ -675,6 +715,7 @@ export function RecherchePageContent() {
               companions={companions}
               resultCount={counts.all}
               presentation={feedPresentation}
+              relation={relation ?? undefined}
               onResultNavigate={trackResultClick}
             />
           ) : null}

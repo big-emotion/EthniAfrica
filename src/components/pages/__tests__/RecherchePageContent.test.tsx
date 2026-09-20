@@ -1565,25 +1565,55 @@ describe("RecherchePageContent feed orchestration", () => {
     expect(mockCompanionFetch).toHaveBeenCalledTimes(1);
   });
 
+  // A family or country chip inside the reviewed feed itself
+  // (SearchResultCard → buildRelationSearchHref) links here, so a relation
+  // search has to render through SearchFeed like any other — the page used
+  // to leave it on the retired NameAnswer path, where a chip drawn by the
+  // reviewed feed would land on a page the reviewed feed does not draw
+  // (ETNI-1966).
   // @req REQ-180
-  it.each(["country=CIV", "q=Zulu&country=CIV"])(
-    "keeps relation search %s on the legacy path without companions",
-    async (params) => {
-      vi.mocked(nextNavigation.useSearchParams).mockReturnValue(
-        new URLSearchParams(params) as ReturnType<
-          typeof nextNavigation.useSearchParams
-        >
-      );
-      mockFetch.mockResolvedValue(okJson(searchApiResponse));
+  it("runs a pure relation browse (no query) through the reviewed feed, naming the country", async () => {
+    vi.mocked(nextNavigation.useSearchParams).mockReturnValue(
+      new URLSearchParams("country=CIV") as ReturnType<
+        typeof nextNavigation.useSearchParams
+      >
+    );
+    mockFetch.mockResolvedValue(okJson(searchApiResponse));
+    mockCompanionFetch.mockResolvedValue(okJson(emptyCompanionsApiResponse));
 
-      render(<RecherchePageContent />);
-      await screen.findByTestId("search-results-list");
+    render(<RecherchePageContent />);
+    await screen.findByRole("heading", { level: 1, name: "Côte d’Ivoire" });
 
-      expect(mockFetch).toHaveBeenCalledTimes(1);
-      expect(mockCompanionFetch).not.toHaveBeenCalled();
-      expect(document.querySelector("[data-feed-root]")).toBeNull();
-    }
-  );
+    expect(mockFetch).toHaveBeenCalledTimes(1);
+    expect(document.querySelector("[data-feed-root]")).not.toBeNull();
+    expect(
+      screen.getByText("Les peuples présents en Côte d’Ivoire.")
+    ).toBeInTheDocument();
+  });
+
+  // A query that also matches a subject (here "Zulu") answers that name as
+  // usual — the country stays a filter on an exact answer, not a browse, and
+  // still reaches the reviewed feed rather than the retired page.
+  // @req REQ-180
+  it("keeps a name search that also matches on its exact answer, country filter aside", async () => {
+    vi.mocked(nextNavigation.useSearchParams).mockReturnValue(
+      new URLSearchParams("q=Zulu&country=CIV") as ReturnType<
+        typeof nextNavigation.useSearchParams
+      >
+    );
+    mockFetch.mockResolvedValue(okJson(searchApiResponse));
+    mockCompanionFetch.mockResolvedValue(okJson(emptyCompanionsApiResponse));
+
+    render(<RecherchePageContent />);
+    await screen.findByRole("heading", { level: 1, name: "Zulu" });
+
+    expect(mockFetch).toHaveBeenCalledTimes(1);
+    expect(mockCompanionFetch).toHaveBeenCalledTimes(1);
+    expect(document.querySelector("[data-feed-root]")).not.toBeNull();
+    expect(screen.getByTestId("filter-chip-row")).toHaveTextContent(
+      "Côte d’Ivoire"
+    );
+  });
 });
 
 /**
