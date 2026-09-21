@@ -20,11 +20,6 @@
   ],
   "sitePath": "/fr/atlas/langues/swh",
   "publications": [
-    { "network": "tiktok", "format": "carrousel" },
-    { "network": "instagram", "format": "carrousel" },
-    { "network": "facebook", "format": "carrousel" },
-    { "network": "youtube", "format": "carrousel" },
-    { "network": "linkedin", "format": "carrousel" },
     { "network": "tiktok", "format": "video" },
     { "network": "instagram", "format": "video" },
     { "network": "facebook", "format": "video" },
