@@ -1,0 +1,29 @@
+{
+  "campaign": "swahili-le-nom-de-la-cote",
+  "typologie": "langue",
+  "episode": 2,
+  "question": {
+    "fr": "D'où vient le nom swahili ?",
+    "en": "Where does the name Swahili come from?"
+  },
+  "myth": {
+    "fr": "Le swahili, une langue arabe ?",
+    "en": "Swahili — an Arabic language?"
+  },
+  "narrativePattern": "une langue prise pour une autre à cause de son nom",
+  "subjects": [
+    {
+      "kind": "language",
+      "id": "swh",
+      "label": { "fr": "Swahili", "en": "Swahili" }
+    }
+  ],
+  "sitePath": "/fr/atlas/langues/swh",
+  "publications": [
+    { "network": "tiktok", "format": "carrousel" },
+    { "network": "instagram", "format": "carrousel" },
+    { "network": "facebook", "format": "carrousel" },
+    { "network": "youtube", "format": "carrousel" },
+    { "network": "linkedin", "format": "carrousel" }
+  ]
+}
