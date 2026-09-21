@@ -10,6 +10,49 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [4.15.0] - 2026-09-21
+
+### Added
+
+- **The results page uses the full width of the screen.** The 1240px cap is
+  lifted, the short that used to fill a missing answer is gone, and previews
+  are drawn as tiles (#1214).
+- **Three more names have their origin told, reading by reading**: the
+  `PAT_MBAPPE` patronyme fiche (#1215), the origin of the name Swahili sourced
+  on `swh` and `PPL_SWAHILI` (#1218), and where the names of `PPL_FULA` come
+  from (#1222). The domains cited by the Ghana name-origin fiche are ranked by
+  tier (#1238).
+- **The brand line asks « L'histoire des noms, avec leurs sources »** in place of
+  the previous qualifier (#1217).
+- **Reel and carousel production is held to one grammar**: a title law and a
+  single closing for every reel (#1223), a silent closing card after the
+  sign-off card (#1235), one narration template per kind of subject (#1240),
+  the plain-language rule enforced on narrations (#1221), and a `mot`
+  typologie for a word no fiche carries (#1219). Both formats now go to every
+  network, X excepted for the carousel.
+- The production-history ledger gains the Swahili, Fulbe, Mbappé, Goma and
+  Ghana entries, each stamped with the networks that received it. The
+  2026-09-20 audience audit and the essays on why the project starts from the
+  name are filed.
+
+### Changed
+
+- **`PPL_FULANI` and `PPL_FULA_SAHEL` are merged into `PPL_FULA`** (#1220).
+- The Sosso/Soussou link is attributed and the Mali chronology is dated from
+  UNESCO's General History of Africa, volume IV (#1216).
+- The choice of the name Ghana is attributed to its three accounts instead of
+  being asserted (#1237).
+- The carousel has one template, closing on the reel's closing, and no doctrine
+  phrase is required of a production (#1241). The closing line for a language
+  mistaken for another is softened (#1236).
+- Dependency updates: the production and development minor-and-patch groups
+  and `anthropics/claude-code-action` (#1230, #1231, #1232).
+
+### Fixed
+
+- Glyphs the caption face lacks are drawn with a fallback face (#1242).
+- UTM tags are joined with `&` when the path already carries a query (#1228).
+
 ## [4.14.0] - 2026-09-20
 
 ### Added
@@ -1223,7 +1266,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.14.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.15.0...HEAD
+[4.15.0]: https://github.com/big-emotion/ethniafrica/compare/v4.14.0...v4.15.0
 [4.14.0]: https://github.com/big-emotion/ethniafrica/compare/v4.13.0...v4.14.0
 [4.13.0]: https://github.com/big-emotion/ethniafrica/compare/v4.12.0...v4.13.0
 [4.12.0]: https://github.com/big-emotion/ethniafrica/compare/v4.11.0...v4.12.0
