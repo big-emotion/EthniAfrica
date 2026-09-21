@@ -1,0 +1,22 @@
+{
+  "campaign": "mbappe-d-ou-vient-le-nom",
+  "typologie": "patronyme",
+  "episode": 1,
+  "question": {
+    "fr": "D'où vient le nom « Mbappé » ?"
+  },
+  "myth": {
+    "fr": "Mbappé voudrait-il dire « bravoure » ?"
+  },
+  "subjects": [
+    {
+      "kind": "patronyme",
+      "id": "PAT_MBAPPE",
+      "label": {
+        "fr": "Mbappé"
+      }
+    }
+  ],
+  "sitePath": "/fr/atlas/noms/PAT_MBAPPE",
+  "publications": []
+}
