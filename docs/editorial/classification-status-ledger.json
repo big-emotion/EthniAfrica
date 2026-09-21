@@ -700,11 +700,6 @@
     "rationale": "« Peul vient du wolof Pel, adopte par les colonisateurs francais » : la fiche impute au colonisateur le nom dominant en francais, au-dela du grief de pejoration porte par Fellata."
   },
   {
-    "id": "PPL_FULANI",
-    "status": "colonial-legacy",
-    "rationale": "« Peul derive du wolof Pel, utilise par les colonisateurs francais » ; le reproche fait a Fulani (restreint aux pasteurs) vient ensuite, la mention coloniale etant la plus specifique."
-  },
-  {
     "id": "PPL_FULANI_MASSINA",
     "status": "colonial-legacy",
     "rationale": "La fiche qualifie elle-meme le nom : « Peul (terme francais, exonyme colonial derive du wolof Pel) », « utilise par les colonisateurs francais »."
@@ -713,11 +708,6 @@
     "id": "PPL_FULA_NOMADES",
     "status": "contested",
     "rationale": "Mbororo, d'origine haoussa et fulfulde, est dit parfois pejoratif et vise des pasteurs marginalises dans les Etats contemporains, la distinction nomades/sedentaires etant elle-meme sensible."
-  },
-  {
-    "id": "PPL_FULA_SAHEL",
-    "status": "colonial-legacy",
-    "rationale": "La fiche parle d'appellations imposees par les colonisateurs : Peul adopte par les Francais au Senegal puis etendu a l'Afrique de l'Ouest francophone, Fulani adopte par les colonisateurs britanniques."
   },
   {
     "id": "PPL_GABRA",

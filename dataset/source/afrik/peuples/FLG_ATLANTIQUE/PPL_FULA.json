@@ -28,7 +28,8 @@
         "Fulani",
         "Fulah",
         "Fellata",
-        "Fallatah"
+        "Fallatah",
+        "Toucouleur / Haalpulaar (pour les Fula sedentarises de la vallee du Senegal)"
       ],
       "originOfExonyms": "Peul vient du wolof Pel, adopte par les colonisateurs français. Fula vient du mandingue. Fulani est la forme haoussa, courante au Nigeria et en anglais. Fellata est un terme arabe (Tchad, Soudan) parfois associe aux Peuls en pelerinage vers La Mecque.",
       "whyProblematic": "Fellata est considere comme pejoratif dans certains contextes (Sudan, Tchad), associe a des stereotypes de migrants indesirables. Les exonymes ne reflètent pas l'auto-identification Fulbe. Fulani est parfois employe abusivement pour designer uniquement les pasteurs nomades.",
@@ -62,7 +63,9 @@
       "Fulbe Adamawa (NGA, CMR) — sedentaires de l'Adamaoua",
       "Fulbe Sokoto (Nigeria) — heritiers du Califat de Sokoto",
       "Fulbe Massina (MLI) — habitants du delta interieur du Niger",
-      "Fulbe Fuladu (SEN, GNB, GMB) — groupe de transition occidental"
+      "Fulbe Fuladu (SEN, GNB, GMB) — groupe de transition occidental",
+      "Fulbe Jelgooji — pasteurs semi-nomades (Mali, Burkina Faso, Niger)",
+      "Fulbe Futa Toro / Haalpulaar'en (vallee du Senegal; createurs de l'Almamat de Futa Toro, 1769-1776)"
     ],
     "origins": {
       "ancientOrigins": "Les origines des Fula demeurent debattues. Les traditions orales evoquent une ascendance egyptienne ou proche-orientale; les preuves linguistiques pointent vers le Fouta Toro (vallee du fleuve Senegal). Leurs ancetres auraient migre du Sahara occidental (plus humide vers le VIIe siecle av. J.-C.) vers la vallee du Senegal, pousses par les raids berberes et la desertification progressive.",
@@ -86,7 +89,8 @@
         "Kordofan et Darfour (Soudan) — Fellata, XIXe-XXe siecle"
       ],
       "unificationsOrDivisions": "Formation d'Etats theocratiques islamiques successifs : Bundu (1690), Fouta Djallon (XVIIIe siecle), Fouta Toro (1776), Califat de Sokoto (1804), Empire de Macina (1818), Empire toucouleur (El Hadj Oumar Tall). Diversification entre groupes sedentaires (Fulbe Wuro) et nomades (Mbororo). Maintien d'une identite culturelle et linguistique commune malgre la dispersion.",
-      "externalInfluences": "Influence profonde de l'islam depuis le XIe siecle, avec role majeur dans les reseaux islamiques saheliens. Contacts intensifs avec les peuples mandé, haoussa, wolof, touareg. Presence de composantes genetiques ouest-africaines et nord-africaines/iberiques (admixture eurasienne de ~21%)."
+      "externalInfluences": "Influence profonde de l'islam depuis le XIe siecle, avec role majeur dans les reseaux islamiques saheliens. Contacts intensifs avec les peuples mandé, haoussa, wolof, touareg. Presence de composantes genetiques ouest-africaines et nord-africaines/iberiques (admixture eurasienne de ~21%).",
+      "majorHistoricalEvents": "1690 : fondation du Bundu par Malick Sy, premier etat fula islamique. 1725 : jihad de Futa Jallon (Guinee); creation de l'Imamat de Futa Jallon. 1769-1776 : jihad de Futa Toro (Senegal); creation de l'Almamat sous Sulayman Bal et Abd al-Qadir. 1804 : jihad d'Usman dan Fodio au Hausaland; fondation du Califat de Sokoto (le plus grand Etat ouest-africain de l'epoque). 1818 : jihad de Seku Amadu; fondation de l'Empire de Massina (capitale Hamdullahi). 1862 : chute de Massina devant El Hadj Umar Tall. 1903 : destruction du Califat de Sokoto par les Britanniques."
     },
     "organization": {
       "traditionalPoliticalSystem": "Organisation en chefferies dirigees par des Ardo (chefs pastoraux) ou des Almami (chefs religieux-politiques). Les Etats theocratiques historiques (emirats, imamates, califats) sont structures selon la loi islamique malekite. Le code Pulaaku regle les comportements : Munyal (patience), Gacce (pudeur), Hakkille (sagesse et hospitalite), Sagata (courage).",
@@ -205,6 +209,26 @@
         "title": "Fieloux, Michele - compte rendu de Thierno Diallo, Les institutions politiques du Fouta Dyalon au XIXe siecle (Dakar, IFAN, 1972) - Cahiers d'Etudes africaines, 14 (54), 1974, p. 402-403",
         "url": "https://www.persee.fr/doc/cea_0008-0055_1974_num_14_54_2655_t1_0402_0000_2",
         "tier": "referenced"
+      },
+      {
+        "title": "Joshua Project — Fulani, Maasina in Mali",
+        "url": "https://joshuaproject.net/people_groups/11773/ml",
+        "tier": "unverified"
+      },
+      {
+        "title": "ScienceDirect — Population history and admixture of the Fulani people from the Sahel (2025)",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0002929724004579",
+        "tier": "referenced"
+      },
+      {
+        "title": "Britannica - Fulani empire",
+        "url": "https://www.britannica.com/place/Fulani-Empire",
+        "tier": "unverified"
+      },
+      {
+        "title": "Britannica - Western Africa, jihad of Usman dan Fodio",
+        "url": "https://www.britannica.com/place/western-Africa/The-jihad-of-Usman-dan-Fodio",
+        "tier": "unverified"
       }
     ]
   },

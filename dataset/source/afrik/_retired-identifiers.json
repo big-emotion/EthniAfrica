@@ -1,6 +1,20 @@
 [
   {
     "decision": "merged",
+    "retiredId": "PPL_FULANI",
+    "successorId": "PPL_FULA",
+    "reason": "Same people (Fulbe, Pullo in the singular, French Peul): same autonym, same exonyms, same origin narrative, and its seven countries all sit inside the keeper's twelve. Only the country list and the population figure (35,000,000 against 40,000,000) differed, both estimates of the same whole. The keeper is the fiche that GIN, SEN, MLI, BFA, BEN, GMB, GNB and CMR already point at. The retiree's Joshua Project and ScienceDirect sources and its Jelgooji sub-group are folded in. Its prose was a parallel rendering of the keeper's fields and is not carried over; it stays readable in the git history.",
+    "decidedOn": "2026-09-21"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_FULA_SAHEL",
+    "successorId": "PPL_FULA",
+    "reason": "Same people, not a sub-group: it declared 30,000,000 Fulbe across eight countries, which is the keeper's own scope, and its population summed with the keeper's and PPL_FULANI's put the Fulbe at 105,000,000 against the 25 to 40 million every source gives. No country fiche pointed at it and no other fiche named it. Its Britannica sources, its Futa Toro and Haalpulaar'en sub-group, its Toucouleur exonym and its dated chronology of the jihads are folded into the keeper. The Massina, nomad and forest fiches stay distinct: each is a region or a way of life with its own population, not a second count of the whole.",
+    "decidedOn": "2026-09-21"
+  },
+  {
+    "decision": "merged",
     "retiredId": "PPL_KONGO_MAYOMBE",
     "successorId": "PPL_YOMBE",
     "reason": "Same people (Bayombe of the Mayombe forest, Kongo H16c, COD/COG/AGO): same nine Mbaangala clans, same nkisi nkondi and phemba art, same origin narrative, and no relation record ever linked the two. The keeper is what PAT_TCHICAYA and PAT_MAVOUNGOU already point at. The retiree's official-tier Ethnologue citation, Guthrie H16c classification, Manyanga/Bwende sub-groups, Palo Mayombe diaspora and Ibinda dialect note are folded in. The two demographic estimates (1,000,000 vs 600,000, disagreeing on which country holds the largest population) could not be reconciled from the available sources and are both recorded in the keeper's demography.source rather than one being silently discarded.",

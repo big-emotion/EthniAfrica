@@ -51,7 +51,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
         },
         {
           id: "trois-declarations",
-          text: "Sur la classification de leur propre nom, les fiches disent trois choses. 446 déclarent leur appellation contestée ou héritée de la colonisation. 19 déclarent autre chose. Et 309 ne déclarent rien du tout.",
+          text: "Sur la classification de leur propre nom, les fiches disent trois choses. 444 déclarent leur appellation contestée ou héritée de la colonisation. 19 déclarent autre chose. Et 309 ne déclarent rien du tout.",
           sourceRefs: [],
           figureRefs: [
             "status-contested-or-colonial",
@@ -110,7 +110,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "voisin",
-              "113",
+              "112",
               "Un exonyme africain, donné par un peuple voisin — souvent le plus ancien de tous",
             ],
             sourceRefs: [],
@@ -137,7 +137,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "arab-",
-              "75",
+              "74",
               "Antérieur à l'Europe sur le Sahel et la côte orientale",
             ],
             sourceRefs: [],

@@ -6,7 +6,7 @@
   },
   "id": "REL_MIGRATORY_FULANI_HAUSA",
   "relationType": "migratory",
-  "peopleIdA": "PPL_FULANI",
+  "peopleIdA": "PPL_FULA",
   "peopleIdB": "PPL_HAUSA",
   "direction": "a_to_b",
   "period": {
