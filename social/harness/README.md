@@ -90,6 +90,13 @@ and shared infrastructure is not stored inside one of the things that uses it.
 start if the two counts disagree. Scene boundaries are derived from the final
 paced audio, never estimated.
 
+**A card marked `"muette": true` is the one exception.** It has no paragraph: it
+carries its own `"duree"` (seconds, at most 12), must come last in `cartes.json`,
+and `ethni_montage.py` draws it after the sign-off card, with no caption band.
+Use it for a message the operator wants on screen and not read aloud — a
+dedication, a condolence. Its licence and credit are still checked, and the
+narration must not mention it (`ethni_muettes.py`).
+
 ## Send the script to the voice as one continuous block
 
 `ethni_audio.py` computes the pacing itself: it measures the silences the take
