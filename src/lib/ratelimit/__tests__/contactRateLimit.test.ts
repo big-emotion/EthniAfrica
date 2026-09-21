@@ -92,3 +92,45 @@ describe("checkContactRateLimit", () => {
     expect(logger.warn).toHaveBeenCalled();
   });
 });
+
+// The limiter is built once per process, so each case evaluates the module
+// afresh to see the configuration it was started with.
+describe("the contact limiter's configuration", () => {
+  beforeEach(() => {
+    vi.resetModules();
+    vi.stubEnv("UPSTASH_REDIS_REST_URL", "https://redis.example");
+    vi.stubEnv("UPSTASH_REDIS_REST_TOKEN", "token");
+    mockLimit.mockResolvedValue({ success: true, reset: Date.now() });
+  });
+
+  afterEach(() => {
+    vi.unstubAllEnvs();
+  });
+
+  async function windowRequested(): Promise<unknown[]> {
+    const { Ratelimit } = await import("@upstash/ratelimit");
+    const { checkContactRateLimit: check } =
+      await import("@/lib/ratelimit/contactRateLimit");
+    await check("203.0.113.9");
+    return vi.mocked(Ratelimit.slidingWindow).mock.calls.at(-1) ?? [];
+  }
+
+  // @req REQ-045
+  it("allows five messages an hour when nothing is configured", async () => {
+    expect(await windowRequested()).toEqual([5, "1 h"]);
+  });
+
+  // @req REQ-045
+  it("takes the count and the window from the environment", async () => {
+    vi.stubEnv("CONTACT_RATE_LIMIT_MESSAGES", "12");
+    vi.stubEnv("CONTACT_RATE_LIMIT_WINDOW", "30 m");
+    expect(await windowRequested()).toEqual([12, "30 m"]);
+  });
+
+  // @req REQ-045
+  it("keeps the defaults when the configured values are malformed", async () => {
+    vi.stubEnv("CONTACT_RATE_LIMIT_MESSAGES", "lots");
+    vi.stubEnv("CONTACT_RATE_LIMIT_WINDOW", "0 h");
+    expect(await windowRequested()).toEqual([5, "1 h"]);
+  });
+});

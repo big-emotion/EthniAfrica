@@ -1,4 +1,5 @@
 import { Ratelimit } from "@upstash/ratelimit";
+import { positiveIntFromEnv, rateLimitWindowFromEnv } from "@/lib/env";
 import { Redis } from "@upstash/redis";
 import { logger } from "@/lib/api/logger";
 
@@ -9,9 +10,12 @@ export type ContactRateLimitResult =
  * A reader with a correction to send writes once or twice; five in an hour
  * from one address is already a flood for a form that lands in a human
  * mailbox, and the honeypot alone does nothing against a script that leaves
- * the hidden field empty.
+ * the hidden field empty. The count and the window are tunable for the same
+ * reason the report limiter's are: a flood wants a tighter ceiling without a
+ * redeploy.
  */
-const MESSAGES_PER_HOUR = 5;
+const DEFAULT_MESSAGES = 5;
+const DEFAULT_WINDOW = "1 h";
 
 let limiter: Ratelimit | null = null;
 
@@ -19,7 +23,16 @@ function getLimiter(url: string, token: string): Ratelimit {
   if (limiter) return limiter;
   limiter = new Ratelimit({
     redis: new Redis({ url, token }),
-    limiter: Ratelimit.slidingWindow(MESSAGES_PER_HOUR, "1 h"),
+    limiter: Ratelimit.slidingWindow(
+      positiveIntFromEnv(
+        process.env.CONTACT_RATE_LIMIT_MESSAGES,
+        DEFAULT_MESSAGES
+      ),
+      rateLimitWindowFromEnv(
+        process.env.CONTACT_RATE_LIMIT_WINDOW,
+        DEFAULT_WINDOW
+      )
+    ),
     prefix: "contact:rate-limit",
   });
   return limiter;

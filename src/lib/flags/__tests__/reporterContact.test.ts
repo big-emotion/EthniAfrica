@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 const mocks = vi.hoisted(() => ({
   createAdminClient: vi.fn(),
@@ -61,6 +61,7 @@ function database(tables: Record<string, unknown>) {
 
 describe("createReporterContact", () => {
   beforeEach(() => vi.clearAllMocks());
+  afterEach(() => vi.unstubAllEnvs());
 
   // @req REQ-012
   it("stores the token only as a hash, never in the clear", async () => {
@@ -84,6 +85,35 @@ describe("createReporterContact", () => {
     const hoursAway = (expiresAt - Date.now()) / 3_600_000;
     expect(hoursAway).toBeGreaterThan(23);
     expect(hoursAway).toBeLessThanOrEqual(24);
+  });
+
+  // @req REQ-012
+  it("takes the link's lifetime from FLAG_VERIFICATION_TTL_HOURS", async () => {
+    vi.stubEnv("FLAG_VERIFICATION_TTL_HOURS", "72");
+    const { inserted } = database({});
+
+    await createReporterContact(FLAG_ID, "lectrice@example.org");
+
+    const expiresAt = new Date(inserted[0].expires_at as string).getTime();
+    const hoursAway = (expiresAt - Date.now()) / 3_600_000;
+    expect(hoursAway).toBeGreaterThan(71);
+    expect(hoursAway).toBeLessThanOrEqual(72);
+  });
+
+  // A typo must not mint links that never expire or expire at once.
+  // @req REQ-012
+  it("keeps the 24-hour default when the configured lifetime is malformed", async () => {
+    for (const bad of ["0", "-3", "a day"]) {
+      vi.stubEnv("FLAG_VERIFICATION_TTL_HOURS", bad);
+      const { inserted } = database({});
+
+      await createReporterContact(FLAG_ID, "lectrice@example.org");
+
+      const expiresAt = new Date(inserted[0].expires_at as string).getTime();
+      const hoursAway = (expiresAt - Date.now()) / 3_600_000;
+      expect(hoursAway, bad).toBeGreaterThan(23);
+      expect(hoursAway, bad).toBeLessThanOrEqual(24);
+    }
   });
 
   // @req REQ-012

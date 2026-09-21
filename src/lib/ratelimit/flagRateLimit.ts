@@ -1,5 +1,5 @@
 import { Ratelimit } from "@upstash/ratelimit";
-import { positiveIntFromEnv } from "@/lib/env";
+import { positiveIntFromEnv, rateLimitWindowFromEnv } from "@/lib/env";
 import { Redis } from "@upstash/redis";
 import { logger } from "@/lib/api/logger";
 
@@ -22,9 +22,13 @@ interface FlagLimiters {
  * How many reports one reporter may file. Deployment-tunable for the same
  * reason the /api/v2 quotas are: a launch, a moderation campaign or an abuse
  * wave each want a different ceiling, and none of them should need a redeploy.
+ * The windows they are counted over are tunable too, since a ceiling means
+ * nothing without its window.
  */
 const DEFAULT_HOURLY = 10;
 const DEFAULT_DAILY = 30;
+const DEFAULT_HOURLY_WINDOW = "1 h";
+const DEFAULT_DAILY_WINDOW = "24 h";
 
 let limiters: FlagLimiters | null = null;
 
@@ -38,7 +42,10 @@ function getLimiters(url: string, token: string): FlagLimiters {
       redis,
       limiter: Ratelimit.slidingWindow(
         positiveIntFromEnv(process.env.FLAG_RATE_LIMIT_HOURLY, DEFAULT_HOURLY),
-        "1 h"
+        rateLimitWindowFromEnv(
+          process.env.FLAG_RATE_LIMIT_HOURLY_WINDOW,
+          DEFAULT_HOURLY_WINDOW
+        )
       ),
       prefix: "flags:rate-limit:hourly",
     }),
@@ -46,7 +53,10 @@ function getLimiters(url: string, token: string): FlagLimiters {
       redis,
       limiter: Ratelimit.slidingWindow(
         positiveIntFromEnv(process.env.FLAG_RATE_LIMIT_DAILY, DEFAULT_DAILY),
-        "24 h"
+        rateLimitWindowFromEnv(
+          process.env.FLAG_RATE_LIMIT_DAILY_WINDOW,
+          DEFAULT_DAILY_WINDOW
+        )
       ),
       prefix: "flags:rate-limit:daily",
     }),
