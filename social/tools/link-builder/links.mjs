@@ -76,7 +76,9 @@ export function tag(path, network, campaign, content) {
     `utm_campaign=${campaign}`,
     `utm_content=${content}`,
   ].join("&");
-  return `${SITE}${path}?${query}`;
+  // The search page takes its term as a query (`/fr/atlas/recherche?q=Goma`).
+  const joiner = path.includes("?") ? "&" : "?";
+  return `${SITE}${path}${joiner}${query}`;
 }
 
 /**
