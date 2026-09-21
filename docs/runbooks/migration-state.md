@@ -22,8 +22,11 @@ Supabase project has exactly one environment, and Supabase itself calls that env
 dashboard names the project's only environment — never the application environment that
 project serves.
 
-The mapping is settled. **`shmrjtnfbqzceovroqjj` backs the recette application; it is not the
-production database.** A second project backs production; this repository cannot see it (see
+The mapping is settled. **Since ETNI-1958 (2026-09-18) recette is self-hosted at
+`https://supabase-recette.ethniafrica.com`, and so is production, at
+`https://supabase.ethniafrica.com`.** `shmrjtnfbqzceovroqjj`, the hosted project that backed
+recette until then, is kept only as a rollback path until ETNI-1962; it is not the production
+database and no longer the recette one. This repository cannot see either self-hosted stack (see
 below). "We pushed it to production" still does not identify a database here — always name the
 application environment the project _backs_, never the label the dashboard shows.
 
@@ -48,14 +51,14 @@ reaches real users.
 
 ## Project identity
 
-|                       | Backs **recette**                                                    | Backs **production**                                                                                                                          |
-| --------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Supabase project ref  | `shmrjtnfbqzceovroqjj`                                               | none — a self-hosted stack at `supabase.ethniafrica.com` on a VPS; `jajggbeimfudpzcxytbb`, described below, is the **retired** hosted project |
-| Dashboard name        | `ethniafrica` — its environment is labelled _production_ by Supabase | _unknown_                                                                                                                                     |
-| Region                | `eu-west-1`                                                          | _unknown_                                                                                                                                     |
-| Created               | 2026-07-24                                                           | _unknown_                                                                                                                                     |
-| Named in this repo as | `AFRIK_RECETTE_SUPABASE_URL` (`scripts/lib/afrikSyncTarget.ts`)      | the `AFRIK_PRODUCTION_SUPABASE_URL` environment variable                                                                                      |
-| Reached by the flag   | `--target=recette`                                                   | `--target=production`                                                                                                                         |
+|                       | Backed **recette** until ETNI-1958 (hosted, now a rollback path)                                                                       | Backs **production**                                                                                                                          |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Supabase project ref  | `shmrjtnfbqzceovroqjj`                                                                                                                 | none — a self-hosted stack at `supabase.ethniafrica.com` on a VPS; `jajggbeimfudpzcxytbb`, described below, is the **retired** hosted project |
+| Dashboard name        | `ethniafrica` — its environment is labelled _production_ by Supabase                                                                   | _unknown_                                                                                                                                     |
+| Region                | `eu-west-1`                                                                                                                            | _unknown_                                                                                                                                     |
+| Created               | 2026-07-24                                                                                                                             | _unknown_                                                                                                                                     |
+| Named in this repo as | nothing now — `AFRIK_RECETTE_SUPABASE_URL` (`scripts/lib/afrikSyncTarget.ts`) names the self-hosted `supabase-recette.ethniafrica.com` | the `AFRIK_PRODUCTION_SUPABASE_URL` environment variable                                                                                      |
+| Reached by the flag   | none (`--target=recette` reaches the self-hosted stack)                                                                                | `--target=production`                                                                                                                         |
 
 The corpus sync now names the **application** environment in both rows, so the flag and the
 project agree. Only the recette ref is checked in; production is configuration with no default,
@@ -65,12 +68,13 @@ because a default is how the corpus reached the wrong database in the first plac
 
 ### What this resolves
 
-The identity is no longer in doubt: `shmrjtnfbqzceovroqjj` backs **recette**. Migration `039`'s
-own header comment agrees — it records the corpora "loaded 0 rows against **recette**" against
-that project.
+The identity is no longer in doubt: `shmrjtnfbqzceovroqjj` backed **recette** until ETNI-1958
+moved recette onto a self-hosted stack (`https://supabase-recette.ethniafrica.com`, the
+`--target=recette` URL). Migration `039`'s own header comment, written before the move, records
+the corpora "loaded 0 rows against **recette**" against that project.
 
 The AFRIK sync that used to contradict that is fixed. It previously fired on a successful
-Vercel **Production** deployment of `main`, wrote the corpus into `shmrjtnfbqzceovroqjj` — the
+Vercel **Production** deployment of `main`, wrote the corpus into `shmrjtnfbqzceovroqjj` — then the
 recette database — and POSTed a cache revalidation to `https://ethniafrica.com`, a site it had
 not written to. `.github/workflows/production-data-sync.yml` now takes the production project
 from two repository secrets, `PRODUCTION_SUPABASE_URL` and
