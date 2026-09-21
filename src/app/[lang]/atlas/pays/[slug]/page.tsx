@@ -48,6 +48,9 @@ import { getActiveSourceFlags } from "@/lib/supabase/queries/afrik/flags";
 import { countryCopy } from "@/lib/i18n/copy/country";
 import { FicheAtlasGlobeIsland } from "@/components/atlas/FicheAtlasGlobeIsland";
 
+// A literal on purpose: Next reads segment config statically. Held to
+// `CORPUS_AGGREGATE_REVALIDATE_SECONDS` (`PUBLIC_FLAGS_REVALIDATE_SECONDS` for
+// the 60 s pages) by `src/app/__tests__/cacheFreshnessContract.test.ts`.
 // @req REQ-019
 export const revalidate = 3600;
 

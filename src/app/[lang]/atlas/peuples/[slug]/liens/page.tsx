@@ -16,6 +16,9 @@ import { logger } from "@/lib/api/logger";
 import { relationsCopy } from "@/lib/i18n/copy/relations";
 import { CORPUS_AGGREGATE_REVALIDATE_SECONDS } from "@/api/v2/services/corpusCache";
 
+// A literal on purpose: Next reads segment config statically. Held to
+// `CORPUS_AGGREGATE_REVALIDATE_SECONDS` (`PUBLIC_FLAGS_REVALIDATE_SECONDS` for
+// the 60 s pages) by `src/app/__tests__/cacheFreshnessContract.test.ts`.
 // @req REQ-097 FR72
 export const revalidate = 3600;
 
