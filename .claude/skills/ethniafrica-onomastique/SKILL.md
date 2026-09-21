@@ -112,8 +112,9 @@ Policy ; elle n'est pas recopiée ici.
 ## Le ton de clôture : pas seulement le renversement
 
 `GABARITS-SOCIAL.md` §7 ter fixe le renversement d'agent comme clôture de
-série (« Ce peuple n'a pas été divisé. C'est la carte qui a été dessinée
-par-dessus. ») — et prévoit, à part, une **deuxième position**, distincte de
+série d'un carrousel (« Ce peuple n'a pas été divisé. C'est la carte qui a été
+dessinée par-dessus. » ; un reel prend, depuis le 2026-09-21, la clôture unique
+de la même section) — et prévoit, à part, une **deuxième position**, distincte de
 ce renversement : la conviction d'unité du projet
 (`src/lib/i18n/copy/about.ts`, `purposeChapter.unityClaim` :
 « Ce qui relie les peuples d'Afrique a survécu à leurs propres ruptures

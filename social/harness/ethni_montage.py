@@ -173,6 +173,18 @@ _OUTILS = {"le", "la", "les", "un", "une", "des", "de", "du", "et", "en", "a",
            "sa", "ses", "plus", "aussi", "sont", "est", "ont", "on", "vous"}
 
 
+def carte_de_cloture(deck):
+    """The closing card, or None: a reel whose last card is not a `bascule`.
+
+    §7 ter gives every reel the single closing, but a deck can still end on a
+    development card. Every check below is judged against the closing's own words;
+    handed that card instead, they would call the narration « an address » and cue
+    the sign-off card on words that were never a closing.
+    """
+    derniere = deck["cartes"][-1]
+    return derniere if derniere.get("role") == "bascule" else None
+
+
 def doctrine_en_dernier_paragraphe(narration, cloture):
     """Whether the closing paragraph says the doctrine, or only an address.
 
@@ -181,7 +193,9 @@ def doctrine_en_dernier_paragraphe(narration, cloture):
     an address is everything above it.
 
     Matched on the closing card's own words rather than on a fixed phrase, so a
-    lot that writes its own reversal is judged against the reversal it wrote.
+    lot that writes its own reversal is judged against the reversal it wrote. The
+    reel closing carries no vision line (§7 ter): its voice is the card's own two
+    sentences, which the title alone already matches.
     """
     blocs = [b.strip() for b in narration.split("\n\n") if b.strip()]
     if not blocs or not cloture:
@@ -202,14 +216,21 @@ def fin_debut(sous_titres, cloture=None):
     Cueing on the last caption instead put it on « Et bientôt, celle des lieux »,
     a breath group and not a sentence: the card came up *after* the sign-off it
     was supposed to carry. `sous_titres[-1]` is the fallback all the same, for a
-    lot whose vision the voice never speaks.
+    lot whose vision the voice never speaks. A closing with **no** vision line has
+    nothing to find, and the card waits for the last caption to end.
     """
     if not sous_titres:
         return None
 
     debut = float(sous_titres[-1].get("debut", 0.0))
     vision = gab._mots((cloture or {}).get("source", "") or "")
-    if vision:
+    if not vision:
+        # No vision line to find, as on the reel closing (§7 ter) or on a reel with
+        # no closing at all: the whole narration is the closing, so the card waits
+        # for it to end. Falling back on the *start* of the last caption put the
+        # card over the last spoken sentence — for the reel closing, the invitation.
+        debut = float(sous_titres[-1].get("fin", debut))
+    else:
         for st_ in sous_titres:
             dits = gab._mots(st_.get("texte", ""))
             # The vision is one caption or the tail of one; three shared words in
@@ -378,7 +399,8 @@ def main():
 
     # §9 bis — the sign-off card, cued on the last spoken sentence and held for
     # the length its animation needs.
-    debut_fin = fin_debut(sous_titres, deck["cartes"][-1])
+    cloture = carte_de_cloture(deck)
+    debut_fin = fin_debut(sous_titres, cloture)
     fin_totale = max(total, (debut_fin or 0) + FIN_SECONDES)
 
     verdict = gab.portes(deck["cartes"], deck)
@@ -407,13 +429,13 @@ def main():
     if ecart:
         verdict.remarques.append(ecart)
 
-    if not doctrine_en_dernier_paragraphe(narration, deck["cartes"][-1]):
+    if not doctrine_en_dernier_paragraphe(narration, cloture):
         verdict.remarques.append(
             "le dernier paragraphe de narration est une adresse, pas la doctrine — "
-            "§9 bis : la voix finit où l'image finit, sur le renversement et la "
-            "vision. Correctif structure, pas moteur.")
+            "§9 bis : la voix finit où l'image finit, sur ce que dit la clôture. "
+            "Correctif structure, pas moteur.")
 
-    if deck["cartes"][-1].get("role") == "bascule":
+    if cloture:
         # The closing sets its vision and reserves no caption band, so what is said
         # over it is heard and not read. Its **own** paragraph belongs there and
         # says the same thing as the card. What does not belong is an earlier

@@ -134,6 +134,12 @@ dans `docs/productions/<typologie>/` avant de proposer) :
   corpus ni une fiche pour remplir `subjects[]`.
 - **`question.fr` et `myth.fr` doivent se terminer par « ? »** — jamais une
   affirmation, même hedgée par « aurait ». Le gate le refuse sinon.
+- **`narrativePattern` — règle proposée, à confirmer par l'opérateur.** Un reel qui
+  prend la clôture unique de §7 ter ne remplit pas `narrativePattern` : cette clôture
+  ne prend aucune ligne de la table. On ne le remplit que pour un carrousel, dont la
+  table par type est conservée. Le gate ne l'exige pas (clé facultative, valeur non
+  contrôlée), donc cette règle ne change aucun contrôle ; laisse la clé absente plutôt
+  que d'en inventer une valeur.
 - **`publications` part vide.** Ce carnet ne connaît un lien qu'une fois publié ;
   c'est `produire`, puis l'opérateur, qui les ajoutent au fur et à mesure —
   jamais `structure`, qui écrit avant tout rendu.
@@ -207,25 +213,48 @@ phrase — c'est **amazigh**, pluriel **imazighen**. De même **Fulɓe** plutôt
 Relis le lot en cherchant les exonymes que tu as employés sans t'en apercevoir,
 comme s'ils étaient des mots neutres : ce sont ceux-là qui passent.
 
+## Le titre d'un reel
+
+**Un reel s'intitule « D'où vient le nom « X » ? », jamais autrement**
+(`docs/design/gabarits-social/GABARITS-SOCIAL.md` §1 ter, « Le titre d'un reel est
+une loi »). C'est le titre de la carte d'ouverture, donc la miniature, et celui du
+post sur chaque réseau : les légendes ne le reformulent pas, et aucun titre-chute
+ne le remplace. Le **carrousel** a son accroche propre — le mythe posé au lecteur,
+en question. Le plafond de huit mots de §1 ter est une décision ouverte pour cette
+accroche : signale-la à l'opérateur, ne la tranche pas.
+
 ## La clôture, et la fin parlée
 
-Le titre et le corps de la clôture **varient avec le type de contenu** : ils
-sont fixes dans un type — c'est la signature — et changent d'un type à l'autre.
-Seule la ligne de vision est la même partout. Ils se prennent **dans la table
-par type de contenu de §7 ter** (`docs/design/gabarits-social/GABARITS-SOCIAL.md`),
-mot pour mot et en texte brut, au moment d'écrire : `cards.json` ne porte jamais
-`**`, le moteur passe lui-même le dernier mot du titre de clôture en accent. Ce skill n'en garde aucune copie : une
-deuxième copie de la doctrine est celle qui dérive.
+**Un reel a une clôture unique**, quel que soit le type du sujet, patronyme compris
+(`GABARITS-SOCIAL.md` §7 ter, « Le reel a un couple unique »). Elle dit l'objectif du
+projet et invite l'auditeur à partager ce qu'il sait. Son texte — carte et voix — est
+décidé par l'opérateur ; il se prend **dans cette section, mot pour mot et en texte
+brut**, au moment d'écrire. Ce skill n'en garde aucune copie : une deuxième copie de la
+doctrine est celle qui dérive. « Partagez-la » est un impératif que le contrôle de
+lecture de la narration relèvera : c'est une exception voulue, pas une faute à réécrire.
 
-Un lot dont le type n'a pas de ligne dans la table, ou dont la case est encore
-marquée « à fixer » ou « à valider », s'arrête et le dit. Une clôture ne
+Le titre et le corps de la clôture d'un **carrousel** **varient avec le type de
+contenu** : ils sont fixes dans un type — c'est la signature — et changent d'un type
+à l'autre. Seule la ligne de vision est la même partout. Ils se prennent **dans la
+table par type de contenu de §7 ter**, mot pour mot et en texte brut, au moment
+d'écrire : `cards.json` ne porte jamais `**`, le moteur passe lui-même le dernier
+mot du titre de clôture en accent.
+
+Un lot de carrousel dont le type n'a pas de ligne dans la table, ou dont la case est
+encore marquée « à fixer » ou « à valider », s'arrête et le dit. Une clôture ne
 s'invente pas dans une carte.
 
-La carte de clôture porte :
+La carte de clôture d'un **reel** porte `titre` (la première phrase de la clôture
+unique) et `corps` (la seconde), et **rien d'autre** : ni `source`, ni `pivot`, ni
+`appel`. Sans `source` le moteur ne pose pas de plaque de vision ; sans `appel` la
+pastille est l'adresse par défaut. Un compte chiffré recopié dans `appel` serait un
+nombre en dur que la production ne relit pas.
 
-- `titre` — le titre de clôture du type ;
-- `corps` — le corps de clôture du type, c'est-à-dire la seconde moitié du
-  renversement. Ce n'est plus une datation ;
+La carte de clôture d'un **carrousel** porte :
+
+- `titre` — celui du type ;
+- `corps` — celui du type, c'est-à-dire la seconde moitié du renversement. Ce n'est
+  plus une datation ;
 - `source` — la ligne de vision de §7 ter ;
 - `pivot` — le membre de phrase que la plaque de vision passe en accent ;
 - `appel` — `{n} peuples · ethniafrica.com`.
@@ -237,18 +266,15 @@ vidéo précédente ni d'un exemple du gabarit.
 « mille ans » comme un fait**, tant que la session de doctrine n'a pas tranché
 (§7 ter, audit du message du 2026-09-13, constat 9).
 
-**Le dernier paragraphe de `narration.fr.txt` dit la doctrine, pas une adresse**,
-et il est court : le renversement du type, son titre puis son corps, et ensuite
-la sortie. Rien d'autre. Pour un lot sur un peuple réparti sur plusieurs pays :
-
-> Ce peuple n'a pas été divisé. C'est la carte qui a été dessinée par-dessus.
-> Retrouvez l'histoire du nom des peuples sur EthniAfrica. Et bientôt, celle des lieux.
-
-La vision est **écrite sur la carte**, mot pour mot : la dire aussi à la voix
-publie la même phrase deux fois et immobilise l'image le temps de le faire.
-Mesuré sur l'ancienne clôture : quatre temps parlés tenaient la carte 21,4 s,
-deux temps la tenaient 7,2 s. Le montage contrôle ce paragraphe contre les mots
-de la carte et le remarque quand il dérive.
+**Le dernier paragraphe de `narration.fr.txt` est la voix de la clôture**, et il est
+court. Pour un reel, c'est la clôture unique **mot pour mot** : le titre puis le corps
+de la carte, que la voix dit tous les deux — l'image dit déjà ce que la voix dit, c'est
+pourquoi la clôture ne porte pas de légende. Avant le 2026-09-21, un reel disait le
+renversement du type puis la sortie, et la ligne de vision restait **écrite sur la
+carte** sans être dite : la dire aussi à la voix publiait la même phrase deux fois et
+immobilisait l'image. Mesuré sur cette ancienne clôture : quatre temps parlés
+tenaient la carte 21,4 s, deux temps la tenaient 7,2 s. Le montage contrôle ce
+paragraphe contre les mots de la carte et le remarque quand il dérive.
 
 **Un paragraphe de narration est une scène.** Le nombre de blocs séparés d'une
 ligne vide doit égaler le nombre de cartes, sinon le montage ne peut pas caler
