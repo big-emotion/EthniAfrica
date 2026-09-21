@@ -128,6 +128,10 @@ dans `docs/productions/<typologie>/` avant de proposer) :
 - **`subjects[]` et `sitePath` viennent de la même résolution corpus** que
   celle qui a choisi la fiche et les images du lot — ne les redérive pas
   séparément, c'est la même identité, écrite une seule fois.
+- **Exception : la typologie `mot`** (« ethnie »). Aucune fiche ne porte un
+  mot : `"subjects": []`, et `sitePath` est la route française où la pièce
+  envoie le lecteur (par exemple la page « À propos »). N'invente ni un id de
+  corpus ni une fiche pour remplir `subjects[]`.
 - **`question.fr` et `myth.fr` doivent se terminer par « ? »** — jamais une
   affirmation, même hedgée par « aurait ». Le gate le refuse sinon.
 - **`publications` part vide.** Ce carnet ne connaît un lien qu'une fois publié ;

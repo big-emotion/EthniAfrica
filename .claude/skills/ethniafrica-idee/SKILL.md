@@ -45,7 +45,7 @@ Un fichier unique : `$ETHNIAFRICA_SOCIAL_PROJECTS/_idees/{slug}.md`.
 
 |               |                                                                |
 | ------------- | -------------------------------------------------------------- |
-| Typologie     | {peuple · pays · patronyme · lieu · langue}                    |
+| Typologie     | {peuple · pays · patronyme · lieu · langue · mot}              |
 | Épisode       | {le prochain numéro libre de cette typologie, voir ci-dessous} |
 | Pilier        | {un seul}                                                      |
 | Formats visés | {carrousel · reel · les deux}                                  |
@@ -150,6 +150,11 @@ pressenties » reste ce qu'elle est — des pressentiments, pas des vérificatio
   Un sujet répond toujours à « D'où vient le nom {X} ? » pour l'une de ces
   cinq — jamais une sixième. `lieu` ne nomme aucune table du corpus à part :
   un lieu se rattache toujours à un pays ou à un peuple existant.
+  **Une seule exception, `mot`**, accordée par l'opérateur le 2026-09-21 pour
+  « ethnie » : un mot du vocabulaire que le projet ne peut éviter et
+  qu'aucune fiche ne porte. Elle ne s'étend pas d'elle-même — un nouveau `mot`
+  demande l'accord de l'opérateur — et elle n'a pas de fiche à résoudre
+  (`subjects[]` vide dans le carnet).
 - **L'épisode se lit dans `docs/productions/<typologie>/`, jamais deviné.**
   Le numéro le plus haut déjà présent dans ce dossier plus un — un sujet dont
   la typologie est neuve dans ce dossier commence à 1. `structure` écrira ce

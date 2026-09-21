@@ -49,7 +49,7 @@ rule applies there once that skill is updated to write to this ledger.
   from day one.
 - **One question, five typologies**: every subject answers « D'où vient le nom
   X ? », where X is a **peuple**, a **pays**, un **patronyme**, un **lieu**, or
-  une **langue**.
+  une **langue** — plus one exception, **mot** (see "The mot exception").
 - **Per subject: one video and one carousel.** The video walks the
   appellations — exonyms and endonyms — back up their history. The carousel
   opens on a myth to take apart, ten images maximum.
@@ -84,6 +84,29 @@ always filed under whichever entity actually names it, almost always
 `country` and sometimes `people`. `subjects[].kind` is therefore never derived
 from `typologie`; the gate checks the id against the real corpus, not against
 the typologie.
+
+## The mot exception
+
+**`mot` is a sixth typologie, granted once, for a word.** The operator added it
+on 2026-09-21 for « ethnie »: a word of the vocabulary that the project cannot
+avoid using — it is in the project's own name — and that no corpus fiche
+carries, so none of the five typologies could hold it. It exists for a word
+whose origin the project has to pose, not as a place to put subjects that fit
+no other row; a new `mot` still needs the operator's word.
+
+What differs from the five, and nothing else does:
+
+- **`subjects[]` may be empty.** A word names no fiche, so there is no corpus
+  id to resolve and none is invented. The gate still refuses a subject the
+  corpus does not hold, should one be listed.
+- **`sitePath` has no fiche route to match**, so it only has to be a French
+  route (`/fr/…`): the page the piece sends the reader to, for example the
+  about page.
+- **Its episodes are counted on their own**, from 001, in
+  `docs/productions/mot/` — the first `mot` is « ethnie ».
+
+`question` and `myth` still end in `?` and every other rule of this file
+applies unchanged.
 
 ## The cadence ramp
 
