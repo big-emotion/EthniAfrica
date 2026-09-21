@@ -20,15 +20,21 @@
   "publications": [
     {
       "network": "tiktok",
-      "format": "video"
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7687891884458446103",
+      "publishedAt": "2026-09-21"
     },
     {
       "network": "instagram",
-      "format": "video"
+      "format": "video",
+      "url": "https://www.instagram.com/reel/DdiqXAWKY3F/",
+      "publishedAt": "2026-09-21"
     },
     {
       "network": "facebook",
-      "format": "video"
+      "format": "video",
+      "url": "https://www.facebook.com/share/v/1MDxsdLPNo/",
+      "publishedAt": "2026-09-21"
     },
     {
       "network": "youtube",
@@ -44,15 +50,21 @@
     },
     {
       "network": "tiktok",
-      "format": "carrousel"
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7688022047796071702",
+      "publishedAt": "2026-09-21"
     },
     {
       "network": "instagram",
-      "format": "carrousel"
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/Ddjj-qyCJZP/",
+      "publishedAt": "2026-09-21"
     },
     {
       "network": "facebook",
-      "format": "carrousel"
+      "format": "carrousel",
+      "url": "https://www.facebook.com/photo?fbid=122113839261465536&set=pcb.122113839537465536",
+      "publishedAt": "2026-09-21"
     },
     {
       "network": "youtube",
