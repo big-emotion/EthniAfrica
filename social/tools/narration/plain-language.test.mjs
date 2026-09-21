@@ -5,14 +5,17 @@ import { verifierNarration } from "./plain-language.mjs";
 
 const regles = (texte) => verifierNarration(texte).map((f) => f.regle);
 
+// @req REQ-032
 test("a sentence that opens on its subject passes", () => {
   assert.deepEqual(regles("Lapouge écrit un livre. Il propose un mot."), []);
 });
 
+// @req REQ-032
 test("a question may open on a complement", () => {
   assert.deepEqual(regles("D'où vient le nom « ethnie » ?"), []);
 });
 
+// @req REQ-032
 test("a statement may not open on a complement, an adverb or a conjunction", () => {
   for (const phrase of [
     "En 1994, elle écrit un article.",
@@ -28,6 +31,7 @@ test("a statement may not open on a complement, an adverb or a conjunction", () 
   }
 });
 
+// @req REQ-032
 test("an imperative has no subject and is refused", () => {
   assert.deepEqual(regles("Aidez-nous à le vérifier."), ["sujet-en-premier"]);
   assert.deepEqual(regles("Partagez-la sur EthniAfrica."), [
@@ -35,12 +39,14 @@ test("an imperative has no subject and is refused", () => {
   ]);
 });
 
+// @req REQ-032
 test("a speech verb placed after its quotation is refused", () => {
   assert.deepEqual(regles("Le mot est péjoratif, écrit-elle."), [
     "verbe-inverse",
   ]);
 });
 
+// @req REQ-032
 test("a sentence longer than twenty words is refused", () => {
   const vingtEtUn = Array.from({ length: 21 }, () => "mot").join(" ");
   assert.deepEqual(regles(`Il écrit ${vingtEtUn}.`), ["phrase-trop-longue"]);
@@ -48,12 +54,14 @@ test("a sentence longer than twenty words is refused", () => {
   assert.deepEqual(regles(`Il écrit ${vingt}.`), []);
 });
 
+// @req REQ-032
 test("quoted words are not counted, they cannot be rewritten", () => {
   const citation =
     "« Peuple, nation, nationalité sont des termes également impropres, ils ont un sens exact, préexistant »";
   assert.deepEqual(regles(`Lapouge écrit ${citation}.`), []);
 });
 
+// @req REQ-032
 test("a full stop inside a quotation does not cut the sentence", () => {
   assert.deepEqual(
     regles("Il écrit : « J'ai proposé ethne ou ethnie. » Le mot est né."),
@@ -61,6 +69,7 @@ test("a full stop inside a quotation does not cut the sentence", () => {
   );
 });
 
+// @req REQ-032
 test("each finding names the sentence and the paragraph it comes from", () => {
   const [trouvaille] = verifierNarration(
     "Il écrit un livre.\n\nEn 1994, elle écrit un article."
@@ -69,6 +78,7 @@ test("each finding names the sentence and the paragraph it comes from", () => {
   assert.equal(trouvaille.phrase, "En 1994, elle écrit un article.");
 });
 
+// @req REQ-032
 test("the narration refused on 2026-09-21 is caught sentence by sentence", () => {
   const refusee = [
     "Du grec ethnos, dit le Trésor de la langue française.",
