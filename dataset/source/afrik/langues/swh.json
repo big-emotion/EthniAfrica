@@ -17,7 +17,7 @@
     "Kiswahili",
     "Suahili"
   ],
-  "whyProblematic": null,
+  "whyProblematic": "Le nom prête à un contresens : Swahili vient de l'arabe sawāḥil, « côtes », mais le swahili est une langue bantoue. Selon Robinson (2024), ses nombreux emprunts, à l'arabe, au persan, au gujarati puis au portugais, à l'allemand et à l'anglais, ont conduit certains observateurs à la ranger parmi les langues non africaines. Kisuaheli et Suahili sont les graphies employées par Krapf en 1850.",
   "spellingAliases": [],
   "familyId": "FLG_NIGERCONGO",
   "peoples": [],
@@ -45,6 +45,18 @@
         "url": "https://glottolog.org/resource/languoid/id/swah1253",
         "tier": "official",
         "notes": "Glottolog direct official languoid record; source of the name and glottocode. Les dialectes listés sont les sous-languoids que Glottolog rattache à swah1253, hors languoids portant leur propre code ISO 639-3."
+      },
+      {
+        "title": "Robinson, Morgan J., « History of the Standard Swahili Language », Oxford Research Encyclopedia of African History, 2024",
+        "url": "https://doi.org/10.1093/acrefore/9780190277734.013.1012",
+        "tier": "referenced",
+        "notes": "Article publié en ligne le 30 janvier 2024, lu en texte intégral. Source du passage sur l'origine arabe du nom, l'appartenance du swahili au groupe bantou de la côte nord-est et le classement par certains observateurs comme langue non africaine."
+      },
+      {
+        "title": "Krapf, J. L., Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect, Tübingen, L. F. Fues, 1850",
+        "url": "https://archive.org/details/krapf-outline-of-the-elements-of-the-kisuaheli-language",
+        "tier": "referenced",
+        "notes": "Lu sur la numérisation d'archive.org (texte reconnu automatiquement). Source des graphies Kisuaheli et Suahili."
       }
     ]
   }

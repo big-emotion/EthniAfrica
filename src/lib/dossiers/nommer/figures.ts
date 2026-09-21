@@ -138,7 +138,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-european",
     label: "fiches employant le radical « europ- »",
-    value: 119,
+    value: 118,
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },

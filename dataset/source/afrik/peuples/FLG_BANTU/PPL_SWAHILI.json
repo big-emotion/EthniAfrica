@@ -9,11 +9,11 @@
       "mainName": "Swahili",
       "selfAppellation": "Waswahili (pluriel), Mswahili (singulier) ; Waungwana (les gens civilises, terme d'auto-identification classe a Lamu)",
       "exonyms": [
-        "Swahili (terme europeen derive de l'arabe Sawahil, cotes)",
+        "Swahili (d'origine arabe, de sawāḥil « côtes » ; les Swahili l'emploient aussi d'eux-mêmes en 1850, selon Krapf)",
         "Arabes de la cote (terme inexact et problematique utilise par les Europeens)",
         "Wangozi (nom originel, parlaient le Kingozi, ancetre du swahili)"
       ],
-      "originOfExonyms": "Swahili derive de l'arabe sawahil (pluriel de sahel, rivage, cote). Le terme fut adopte par les Europeens pour designer les habitants de la cote est-africaine. L'auto-identification Waswahili s'est imposee comme denominateur commun d'une identite complexe bantoue, arabe, persane et indienne.",
+      "originOfExonyms": "Swahili vient de l'arabe sawāḥil, pluriel de sāḥil, « rivage, côte » : les Swahili sont « ceux de la côte » (Krapf, 1850 ; Robinson, 2024). Au XIVe siècle, Ibn Battuta emploie déjà sawāḥil, mais pour un pays : dans la traduction de Gibb (1962), il embarque à Mogadiscio « pour le pays des Sawahil [Coastlands] » et nomme Zinj les habitants de Kilwa. Le mot désigne alors une côte, non un peuple. En 1850, Krapf entend les Swahili l'employer d'eux-mêmes et rapporte trois explications du nom : une expression swahili saua hila, tirée de l'arabe hila, « ruse », que lui donnent ses interlocuteurs et qu'il récuse ; un rapprochement avec sühel, « sud-est, sud-ouest », que Krapf rattache à l'arabe suhailon, l'étoile Canopus ; et sāḥil, « côte », qu'il juge la plus juste. La date de la première attestation du mot pour des gens ou une langue n'est pas établie. L'auto-identification Waswahili s'est imposée comme dénominateur commun d'une identité complexe bantoue, arabe, persane et indienne.",
       "whyProblematic": "L'appellation Arabes pour les Waswahili efface leur fondement bantou dominant. Certains chercheurs distinguent les Waswahili ethniques (population de la cote) des locuteurs du swahili comme langue vehiculaire (plusieurs dizaines de millions de personnes).",
       "contemporaryUsage": "Waswahili designe aujourd'hui les communautes historiques de la cote est-africaine (Kenya, Tanzanie, nord du Mozambique, Comores) partageant une culture islamique, une architecture specifique et un patrimoine commercial maritime.",
       "linguisticFamily": "FLG_BANTU",
@@ -138,6 +138,24 @@
         "title": "CIA World Factbook — Kenya",
         "url": "https://www.cia.gov/the-world-factbook/countries/kenya/",
         "tier": "official"
+      },
+      {
+        "title": "Krapf, J. L., Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect, Tübingen, L. F. Fues, 1850",
+        "url": "https://archive.org/details/krapf-outline-of-the-elements-of-the-kisuaheli-language",
+        "tier": "referenced",
+        "notes": "Section III, « General remarks on the term Suaheli », p. 9-10. Lu sur la numérisation d'archive.org : texte reconnu automatiquement, puis pages 9 et 10 relues sur l'image. Source des trois explications du nom et de l'emploi du nom par les Swahili eux-mêmes."
+      },
+      {
+        "title": "Ibn Battuta, The Travels of Ibn Battuta, A.D. 1325-1354, traduit par H. A. R. Gibb, vol. II, Cambridge, Hakluyt Society, 1962",
+        "url": "https://archive.org/details/travelsofibnbatt02harg",
+        "tier": "referenced",
+        "notes": "Chapitre sur Mambasa et Kulwa, p. 378 et note 56. Lu sur la numérisation d'archive.org (texte reconnu automatiquement). Source de l'emploi de sawāḥil pour un pays côtier et de zinj pour les habitants de Kilwa ; le texte arabe n'a pas été consulté."
+      },
+      {
+        "title": "Robinson, Morgan J., « History of the Standard Swahili Language », Oxford Research Encyclopedia of African History, 2024",
+        "url": "https://doi.org/10.1093/acrefore/9780190277734.013.1012",
+        "tier": "referenced",
+        "notes": "Article publié en ligne le 30 janvier 2024, lu en texte intégral. Source du passage sur l'origine arabe du nom."
       }
     ]
   },
