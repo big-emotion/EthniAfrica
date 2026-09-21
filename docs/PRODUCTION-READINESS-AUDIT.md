@@ -2,7 +2,7 @@
 
 **Audit date:** 2026-09-21<br>
 **Audited checkout:** `origin/recette` at `decac0e76` (Release `v4.15.0` is the latest deploy; its version bump lives on `main` only, so `package.json` on recette still reads `4.14.0`)<br>
-**Overall score:** **6.4 / 10** (was 8.2 on 2026-09-19)<br>
+**Overall score:** **6.4 / 10** measured on `origin/recette` (was 8.2 on 2026-09-19); **7.2 / 10** measured on an integration branch carrying the five draft remediation PRs #1247–#1251, which are not merged (§1a)<br>
 **Release verdict:** **CONDITIONAL GO.** The release path, the migration ledgers, RLS and the required PR gates are sound and a Release ships daily. Three things stand between this and a defensible GO: both corpus syncs are red (production holds peoples git no longer declares), the production database has no rehearsed restore, and `/api/v2/keys/issue` is an unauthenticated mutating endpoint outside the three-layer rule.
 
 ## 1. Scope and method
@@ -42,6 +42,29 @@ This audit covers the Next.js application, the AFRIK corpus, the recette and pro
 - Full-history secret scan: the checkout is shallow and gitleaks runs `--no-git`. Two old revisions were sampled clean.
 - The proxy's `X-Forwarded-For` handling, Ferry router health, and the security-invoker setting of three views: not measurable from the repository.
 - Real-browser rendering of the result page at 320–430 px was not exercised (the audit runs no browser); it is covered by the Playwright smoke gate only.
+
+## 1a. Remediation applied after the audit (five draft PRs, not merged)
+
+Each finding that could be fixed from the repository was fixed on its own branch, test-first, and opened as a draft PR into `recette`. All five were merged into a throwaway integration branch (no conflicts; #1249 and #1250 both touch `CLAUDE.md` and combine cleanly) and the gates were re-run there. **Nothing below is measured on `recette` or in CI until the PRs merge and their workflows run.**
+
+| PR    | Fixes                 | What changed                                                                                                                                                                                                                                      |
+| ----- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| #1247 | D3-1                  | `confidence-recompute.yml` runs both scripts under `--conditions=react-server`; a regression test spawns each command as written and failed 2 of 2 before the fix                                                                                 |
+| #1248 | D8-3                  | `INTERNAL_REGISTER_PATTERNS` (FR and EN) refuse « cette passe » and the workshop's « protocole » sentences; 64 `gaps[].reason` fields rewritten; the gate went from 0 to 64 errors on the old corpus to 0                                         |
+| #1249 | D10-3, D10-4, D5, D10 | Recette described as self-hosted in `CLAUDE.md`, README, `DEPLOYMENT.md`, both runbooks and two more; audit skill scores FR28 as warnings; `ethniafrica-ticket` R4 follows the three-tier policy; CI lists regenerated                            |
+| #1250 | D1-1, D1-2, D7-1      | `keys/issue` is POST-only and moved behind a handler and service; `clientIp` is the only reader of `X-Forwarded-For` (right-most minus `TRUSTED_PROXY_HOPS`, default 1); a fail-closed 5-per-hour issuance limiter; dead `applyRateLimit` deleted |
+| #1251 | D4, D7, D5            | Production-mode knip findings 24 → 8; 6 flag/contact/dwell/TTL limits env-tunable; the discovery video URL follows the configured domain; three duplicated blocks reduced to one type-signature clone                                             |
+
+**Measured on the integration branch:** lint 0 errors (35 warnings), typecheck and prettier clean, 1,003 test files and 10,228 tests passed (21 skipped), coverage 87.24% statements / 81.11% branches / 90.32% functions / 88.36% lines, build generated 47 pages, `check:dead` at its ceilings (production: 3 dormant English files, 0 dependencies), validator and editorial rules 0 errors (95 warnings, unchanged), skill-parity, orphan-docs, local-paths, `lint:req`, RLS coverage, glossary and charter contracts green.
+
+**One gate is red on that branch: `check:env-example`.** #1250 and #1251 add seven variables the code reads (`TRUSTED_PROXY_HOPS`, `FLAG_RATE_LIMIT_HOURLY_WINDOW`, `FLAG_RATE_LIMIT_DAILY_WINDOW`, `FLAG_MIN_DWELL_MS`, `FLAG_VERIFICATION_TTL_HOURS`, `CONTACT_RATE_LIMIT_MESSAGES`, `CONTACT_RATE_LIMIT_WINDOW`) and neither could edit `.env.example`. Both PRs stay unmergeable until that file gains the seven names. An integration run also caught a real defect in #1247 (its test imported `js-yaml`, an unlisted dependency, which failed `check:dead`); it is fixed on that branch.
+
+**What no code change can move, and why:**
+
+- **Database parity (Domain 8, check 5).** The orphan rows in production and recette need `--prune --apply` with real credentials (`docs/runbooks/afrik-data-sync.md`, "Retiring a people identifier"). The relation rows need deleting by hand, recette first.
+- **Restore drill (Domain 10).** The procedure for the self-hosted stack has to be written by whoever runs the stack, and a drill recorded.
+- **The proxy claim (Domain 1).** `TRUSTED_PROXY_HOPS` is correct only if Traefik on the VPS does not trust client-supplied forwarding headers. That is a production check.
+- **Scheduled-workflow proof (Domain 3).** #1247 is proven by a scheduled or dispatched run after merge, not by tests.
 
 ## 2. The five canonical questions
 
@@ -83,6 +106,8 @@ Failed: strict-model drift (held by ratchets), database parity (indirect, red on
 ## 3. Overall score
 
 Ten domains, equal weight: **64 / 100 = 6.4 / 10**. There is no P0 (no table without RLS, no untiered source, no browser data client), but Domain 8 is capped at 4 by the rubric's three-failed-check rule. The defects that touch several domains were counted once, in the most causal domain and cross-referenced elsewhere: the two red corpus syncs count in Domain 8 only; the restore gap counts in Domain 10 only.
+
+**With #1247–#1251 applied: 72 / 100 = 7.2 / 10** (integration branch, §1a). Domain movements, each anchored to a measurement above: Domain 1 8→9 (key issuance behind the three layers, one trusted client-IP reader; the proxy claim stays a production check); Domain 4 7→9 and Domain 7 6→8 (production-mode P1 findings 17→5, hardcoded-value P1 groups 8→2, both inside the rubric's no-penalty band); Domain 5 7→8 (hardcoded band gone, recette identity corrected); Domain 8 4→5 (register check now passes with the wider gate and the 64 rewrites, leaving two failed checks: strict-model drift and database parity); Domain 10 5→6 (identity and skill contradictions fixed, both restore findings still open). Domains 2, 3, 6 and 9 are unchanged because their findings need runs, credentials or decisions that a code change cannot supply.
 
 ## 4. Score per domain
 
@@ -335,6 +360,14 @@ The Source Tier P0 census is zero: no untiered source, empty `sources` block, un
 
 Tickets are not filed by this audit (it is read-only); each row names the finding to attach one to.
 
+**Status after the remediation PRs (§1a), each row's "done when" still being the test:**
+
+- **Fixed in a draft PR, pending merge:** 3 and 13 (#1250, #1251); 5 (#1247, proven only by a run after merge); 6 and 7 (#1249); 9 (#1248). Row 13's three blocks: two extracted, one skipped because only a type signature is shared.
+- **Partly fixed:** 4 (#1250 makes the address a right-most-minus-hops read; the proxy still has to be checked on the VPS).
+- **Open, needs a human or credentials:** 1 (prune with real credentials), 2 (restore procedure and drill), 14 (exercise the router).
+- **Open, needs a decision or editorial work:** 8 (performance target), 10 (strict-model drift), 11 (nightly URL check), 12 (required E2E set), 15 (`needs_review` batches).
+- **Blocking the merges themselves:** add the seven variables to `.env.example` (§1a), or `check:env-example` keeps #1250 and #1251 red.
+
 | Priority | Finding | Action                                                                                                                                                | Done when                                                            |
 | -------: | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 |        1 | D8-1    | Run `--prune --apply` on recette and production, then make the sync prune retired identifiers (or fail the merge that retires one)                    | Both sync verify steps green on a Release                            |
@@ -356,5 +389,7 @@ Tickets are not filed by this audit (it is read-only); each row names the findin
 ## 12. Conclusion
 
 EthniAfrica ships daily through a release path that works, its data plane is well protected, and its editorial doctrine survives a census of 7,224 sources with zero Source Tier P0. The 6.4/10 is not a collapse of the code; it is three things the project had not looked at squarely: the corpus syncs after a merge of peoples are red on both databases, the production database has no rehearsed restore, and several documents (and the audit skill itself) describe a recette database that no longer exists.
+
+After the five remediation PRs the measured score on an integration branch is **7.2/10**; it becomes 7.2 on `recette` only once they merge and the scheduled workflow has run. Reaching the previous 8.2 needs the items no code change supplies: the prune (Domain 8, one failed check fewer, roughly +2), a recorded restore drill with a written self-hosted procedure (Domain 10, roughly +2), a decision on the performance target and the required E2E set (Domain 9, roughly +1 to +2), a Ferry router run and a green scheduled recompute (Domains 6 and 3, roughly +1 each). Those are the path from 7.2 to about 8.2; going above it means lowering the strict-model ceilings and clearing `needs_review`.
 
 Every one of the top four actions is bounded. Pruning the two databases and teaching the sync to prune moves Domain 8 out of its cap. A recorded restore drill removes the largest operational risk. Rerouting `keys/issue` closes the only open P1 in the security domain. Together they return the project to the 8–9 band without any architectural rewrite; the remaining work is ratchet reduction and documentation reconciliation.
