@@ -1,0 +1,22 @@
+{
+  "campaign": "goma-un-nom-sans-source",
+  "typologie": "lieu",
+  "episode": 1,
+  "question": {
+    "fr": "D'où vient le nom « Goma » ?"
+  },
+  "myth": {
+    "fr": "Goma, la ville qui porterait le nom du tambour ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "COD",
+      "label": {
+        "fr": "Goma (République démocratique du Congo)"
+      }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/COD",
+  "publications": []
+}
