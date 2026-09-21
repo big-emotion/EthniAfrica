@@ -9,14 +9,16 @@ if the restore itself turns out to be wrong.
 
 Before you start, know which database you are recovering. A hosted Supabase project labels its
 only environment "production", so the label describes the project, not the application it serves.
-`shmrjtnfbqzceovroqjj` backs recette. Identity table:
-[`migration-state.md`](./migration-state.md).
+Since ETNI-1958 recette and production are both self-hosted stacks; `shmrjtnfbqzceovroqjj` is the
+hosted project that backed recette before the move and is kept only as a rollback path until
+ETNI-1962. Identity table: [`migration-state.md`](./migration-state.md).
 
-> **Production is not covered by the two paths below.** Both assume a hosted Supabase project —
-> a dashboard, PITR, scheduled backups, `supabase projects create`. Production is a self-hosted
-> stack on a VPS, which has none of those, and this runbook does not yet say how its
-> database is backed up or restored. Treat a production restore as unrehearsed until a drill
-> against that stack is recorded here.
+> **Neither current database is covered by the two paths below.** Both assume a hosted Supabase
+> project — a dashboard, PITR, scheduled backups, `supabase projects create`. Production and
+> recette are self-hosted stacks on a VPS, which have none of those, and this runbook does not yet
+> say how their databases are backed up or restored. Treat a restore of either as unrehearsed until
+> a drill against that stack is recorded here. The paths below describe the hosted project, which
+> survives as recette's rollback until ETNI-1962.
 
 ---
 
@@ -45,8 +47,8 @@ supabase projects list        # confirm you can see the affected project
 ```
 
 Create the throwaway project in the **same region as the project being restored**. Check it
-first — the recette-backing project (`shmrjtnfbqzceovroqjj`) is in `eu-west-1`; do not assume
-the other one matches.
+first — the hosted project (`shmrjtnfbqzceovroqjj`, recette's rollback) is in `eu-west-1`; do not
+assume another one matches.
 
 ```bash
 supabase projects list        # read the region from this output

@@ -42,8 +42,9 @@ still carries it.
 
 **Node ≥ 22.** `@supabase/supabase-js` needs a native `WebSocket`; on Node 20 the run dies with
 `Node.js detected but native WebSocket not found` before any write — and before the target
-guard runs, so a wrong `--target` will not even be caught. Note that `package.json` pins the
-_application_ to Node `20.x`; the loaders are the exception.
+guard runs, so a wrong `--target` will not even be caught. `package.json` and `.nvmrc` pin the
+application to Node `22.x`, so a checkout on its pinned version already satisfies this; only an
+older global Node trips it.
 
 **Migration `037_colonization_event_types.sql` must be applied**, or the `migration_event_type`
 enum rejects `imposed_name` and `resistance` with `22P02` and the corpus loads 4 of its 6

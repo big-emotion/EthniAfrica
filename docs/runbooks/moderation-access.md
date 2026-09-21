@@ -32,33 +32,26 @@ the code asked for exactly the right URL.
 match `http://localhost:3000/api/auth/callback`; it is a non-match like any
 other, and it fails the same silent way.
 
-The two databases are configured by completely different means, because only one
-of them is a hosted Supabase project.
+Both databases are self-hosted Supabase stacks (ETNI-1958), so neither has a dashboard, and
+`supabase config push` reaches neither: it drives the Management API of a hosted project. The
+hosted project `shmrjtnfbqzceovroqjj`, which backed recette before the move, was configured that
+way and is now only a rollback path until ETNI-1962 — an allow-list pushed there changes nothing
+a reader of recette sees.
 
-### Recette — hosted project `shmrjtnfbqzceovroqjj`
+### Recette — self-hosted at `https://supabase-recette.ethniafrica.com`
 
-Either push the repository's own declaration, which is the version-controlled
-path and the reason `supabase/config.toml` carries these values:
-
-```bash
-supabase link --project-ref shmrjtnfbqzceovroqjj
-supabase config push
-```
-
-**Expect this command to exit non-zero, and check the auth line rather than the
-exit code.** It pushes each service in turn and the storage step fails on the
-free tier — `402: Please upgrade the project to a paid tier to enable vector
-buckets`, provoked by `[storage] enabled = true` and unrelated to auth. Auth is
-pushed first. Run it a second time and read the third line: `Remote Auth config
-is up to date.` is the confirmation.
-
-Applied to recette on 2026-09-01; the remote now matches this repository.
-
-or type the same values into the dashboard → **Authentication → URL
-Configuration**: Site URL `http://localhost:3000` is fine for a recette used from
-a developer machine; Redirect URLs must list
+Recette's stack sits on the same Supabase host as production's, in its own compose project
+(`/home/ubuntu/supabase-recette/docker/`, see
+[`migration-state.md`](./migration-state.md)). GoTrue there reads `GOTRUE_SITE_URL` and
+`GOTRUE_URI_ALLOW_LIST` from `SITE_URL` and `ADDITIONAL_REDIRECT_URLS` in that directory's
+`.env`, exactly as production's does, so the procedure below applies unchanged with recette's
+directory and recette's callback. The values it must hold: Site URL `http://localhost:3000` is
+fine for a recette used from a developer machine; the redirect list must carry
 `http://localhost:3000/api/auth/callback` and
-`https://recette.africatlas.com/api/auth/callback`.
+`https://recette.africatlas.com/api/auth/callback`. Nothing in this repository records what the
+running recette container holds — read `GOTRUE_URI_ALLOW_LIST` from it, as for production,
+rather than trusting the file. `supabase/config.toml` declares the same values for the local
+`supabase start` stack only.
 
 ### Production — self-hosted, not a dashboard
 

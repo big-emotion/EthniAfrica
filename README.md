@@ -28,6 +28,11 @@ cp .env.example .env.local     # then fill in the three required values below
 npm run dev                    # http://localhost:3000
 ```
 
+No credentials for a shared Supabase project? You do not need any. `supabase start` builds the
+whole schema on your machine and `--target=local` loads the corpus into it — see
+[Local bootstrap](docs/runbooks/afrik-data-sync.md#local-bootstrap). That is the contributor-safe
+path; recette and production are self-hosted stacks you cannot, and should not, write to.
+
 The app fails closed to French-only publication. `SITE_LOCALE_MODE` can explicitly publish both
 languages with either French or English as the default; a remembered `ethni-locale` choice is
 honoured only when that locale is published. Without Supabase credentials the pages render but
@@ -43,8 +48,9 @@ Three variables are required to run:
 | `SUPABASE_SERVICE_ROLE_KEY`     | **server-only** — never let this reach the client bundle |
 
 `ANTIBOT_HMAC_SECRET` is required for reporting to work at all: unset, the anti-robot challenge
-answers 503 and every report dialog fails while the build stays green. Sentry, Plausible and the
-quiz feature flag are optional. Upstash (rate limiting) is optional locally but mandatory in
+answers 503 and every report dialog fails while the build stays green. `NEXT_PUBLIC_SITE_URL` is
+required in production: `src/lib/siteUrl.ts` throws on a production server without it, so every
+page answers 500 while `next build` stays green. Sentry and Plausible are optional. Upstash (rate limiting) is optional locally but mandatory in
 production, where rate limiting fails closed. `.env.example` is annotated and authoritative;
 `npm run check:env-example` keeps it honest against what the code actually reads.
 
@@ -217,11 +223,12 @@ tablet `md` 720px · desktop `xl` 800px.
 | [`CHANGELOG.md`](CHANGELOG.md)                                         | release history                                                                           |
 
 **Operators, read this first:** a hosted Supabase project labels its only environment
-"production" — the label describes the project, not the application it serves.
-`shmrjtnfbqzceovroqjj` backs **recette**. Production is not a hosted project at all: it is a
-self-hosted Supabase stack on a VPS, which the Supabase dashboard and MCP cannot see.
-`jajggbeimfudpzcxytbb` is a retired hosted project that still answers — never point a secret at
-it. Every migration is a two-step rollout, recette first. Applying
+"production" — the label describes the project, not the application it serves. Since ETNI-1958
+both recette (`https://supabase-recette.ethniafrica.com`) and production
+(`https://supabase.ethniafrica.com`) are **self-hosted** Supabase stacks on a VPS, which the
+Supabase dashboard and MCP cannot see. `shmrjtnfbqzceovroqjj` is the hosted project that backed
+recette before the move; it is kept only as a rollback path until ETNI-1962. `jajggbeimfudpzcxytbb`
+is a retired hosted project that still answers — never point a secret at either. Every migration is a two-step rollout, recette first. Applying
 one and calling it done has already left a corpus loaded on one database and missing on the
 other.
 

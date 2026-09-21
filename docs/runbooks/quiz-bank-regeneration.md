@@ -116,10 +116,11 @@ null`; a duplicate already in the bank makes it fail to build, and the
 ## Before you start
 
 - The script talks to **one** database, the one its environment points at.
-  Both Supabase projects call their environment "production"; that word
-  describes the project, not the application. `shmrjtnfbqzceovroqjj` serves
-  **recette**. A second project, whose credentials are not in this repo,
-  serves production. See `docs/runbooks/afrik-data-sync.md`.
+  A hosted Supabase project calls its environment "production"; that word
+  describes the project, not the application. Since ETNI-1958 recette
+  (`supabase-recette.ethniafrica.com`) and production (`supabase.ethniafrica.com`)
+  are both self-hosted stacks, and `shmrjtnfbqzceovroqjj` is only recette's
+  rollback until ETNI-1962. See `docs/runbooks/afrik-data-sync.md`.
 - **Recette first, production second.** Always. The two banks are independent
   and there is no promotion step — the same command is run twice, against two
   environments.
