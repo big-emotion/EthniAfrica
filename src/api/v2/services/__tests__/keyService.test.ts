@@ -271,13 +271,13 @@ describe("insertPublicKey", () => {
 
     await insertPublicKey({
       keyHash: "pbkdf2v1:600000:salt:hash",
-      keyPrefix: "pub_abcdef012345678901",
+      keyPrefix: "pub_aaaaaaaaaaaaaaaaaa",
       ipAddress: "203.0.113.9",
     });
 
     expect(query.insert).toHaveBeenCalledWith({
       key_hash: "pbkdf2v1:600000:salt:hash",
-      key_prefix: "pub_abcdef012345678901",
+      key_prefix: "pub_aaaaaaaaaaaaaaaaaa",
       name: "public-key",
       label: "Public read-only key",
       tier: "public",
