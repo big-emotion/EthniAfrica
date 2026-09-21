@@ -1,0 +1,66 @@
+{
+  "campaign": "ghana-qui-a-choisi-le-nom",
+  "typologie": "pays",
+  "episode": 1,
+  "question": {
+    "fr": "D'où vient le nom « Ghana » ?"
+  },
+  "myth": {
+    "fr": "Le nom du Ghana actuel vient-il de l'ancien empire du Ghana ?"
+  },
+  "narrativePattern": "un pays et les peuples qui y vivent",
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "GHA",
+      "label": { "fr": "Ghana" }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/GHA",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video"
+    },
+    {
+      "network": "instagram",
+      "format": "video"
+    },
+    {
+      "network": "facebook",
+      "format": "video"
+    },
+    {
+      "network": "youtube",
+      "format": "video"
+    },
+    {
+      "network": "linkedin",
+      "format": "video"
+    },
+    {
+      "network": "x",
+      "format": "video"
+    },
+    {
+      "network": "tiktok",
+      "format": "carrousel"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel"
+    },
+    {
+      "network": "facebook",
+      "format": "carrousel"
+    },
+    {
+      "network": "youtube",
+      "format": "carrousel"
+    },
+    {
+      "network": "linkedin",
+      "format": "carrousel"
+    }
+  ]
+}
