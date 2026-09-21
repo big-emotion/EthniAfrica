@@ -22,6 +22,7 @@ test("a statement may not open on a complement, an adverb or a conjunction", () 
     "Mais le livre parle de races.",
     "Page 10, il écrit une phrase.",
     "Voici ce que disent les sources.",
+    "Parce que nommer un peuple demande de la précision.",
   ]) {
     assert.deepEqual(regles(phrase), ["sujet-en-premier"], phrase);
   }

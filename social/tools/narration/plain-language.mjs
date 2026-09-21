@@ -62,6 +62,7 @@ const OUVERTURES_REFUSEES = new Set([
   "ou",
   "page",
   "par",
+  "parce",
   "parmi",
   "pendant",
   "pour",
