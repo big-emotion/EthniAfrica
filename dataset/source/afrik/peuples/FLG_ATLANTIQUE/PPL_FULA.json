@@ -29,11 +29,12 @@
         "Fulah",
         "Fellata",
         "Fallatah",
+        "Mbororo",
         "Toucouleur / Haalpulaar (pour les Fula sedentarises de la vallee du Senegal)"
       ],
-      "originOfExonyms": "Peul vient du wolof Pel, adopte par les colonisateurs français. Fula vient du mandingue. Fulani est la forme haoussa, courante au Nigeria et en anglais. Fellata est un terme arabe (Tchad, Soudan) parfois associe aux Peuls en pelerinage vers La Mecque.",
+      "originOfExonyms": "Le nom que les Fula se donnent, Fulbe au pluriel et Pullo au singulier, n'a pas de sens établi. Les linguistes du fulfulde consultés admettent une racine ful- ou pul- sans en donner la signification : pour Breedveld (1995), le sens de Pullo et de Fulbe est à peine étudié et les définitions qu'on en donne sont circulaires. Les lectures qui existent viennent d'auteurs non linguistes ou de rapporteurs de l'époque coloniale, et elles se concurrencent. Amadou Hampâté Bâ (1966) tire le nom du verbe fullude, « couvrir de poussière », ou, comme l'a supposé Maurice Delafosse, du nom Ful, connu de la Bible ; il ne cite aucune source pour le verbe. Selon le commandant Gaden, cité par Delafosse et rapporté par Tauxier (1937), Fulbe signifierait « les dispersés, les éparpillés ». Barth, résumé par Crozals et rapporté par Tauxier, donne à la forme Pul le sens de « brun-clair, rouge » ; les lexiques pulaar consultés donnent pour « rouge » les racines boɗ- et woɗ-, distinctes de ful- et pul-, et aucun auteur lu n'en tire de réfutation de Barth. Oumar Niang (2018) y voit la base fur- du mot Ba-fur, terme par lequel, écrit-il, les Berbères désignaient les peuples du Tekrur. Une dernière lecture, le verbe fullade, « éparpiller, disperser au souffle », est attribuée à Jean-Marie Mathieu (1998) : l'atlas ne la connaît que par Wikipédia, qui note qu'il n'existe aucun consensus sur l'étymologie du nom, et n'a pas lu l'ouvrage. Aucune de ces lectures n'est établie et l'atlas n'en retient aucune. Peul est la forme française : elle vient du wolof, où le peuple se dit pal selon Nussbaum (1970), cité par Breedveld, et où le radical de Foulbé se prononce Peul selon Tauxier ; la graphie peul est lue pour la première fois en 1847, dans une lettre de Raffenel, d'après le TLFi. Fulani est la forme anglaise, empruntée au haoussa (filaanii) selon Newman (1990), cité par Breedveld ; Barth (1857) écrit que les Haoussa appellent les Fulbe Féllani, et l'atlas n'a pas établi la première mention de la forme Fulani. Fellata est la forme employée au Bornou selon Barth (1857) ; Breedveld, d'après Abu-Manga (1986), en fait un mot kanouri désignant à l'origine les Fulbe du Borno, alors qu'Hampâté Bâ (1966) le range parmi les noms donnés par les Arabes : les sources lues ne tranchent pas sa langue d'origine. Fula est la forme que les Mandinka et les Susu de Gambie emploient selon Arnott (1970), cité par Breedveld, qui l'a proposée comme nom de la langue ; la Britannica de 1911 l'appelle le nom mandingue. Des formes proches sont écrites Fulos par Almada (1594, cité par Horta, 2013) et Foulahs ou Pholeys par Park (1799). Mbororo est un nom appliqué par des étrangers à tous les Fulbe nomades, qui ne l'emploient pas eux-mêmes et disent Fulɓe na'i ou Fulɓe ladde (Blench, 1990) ; aucune étymologie de Mbororo n'a été trouvée dans une source lue. Toucouleur est rattaché à Takrur ou Tekrur, nom du pays de la vallée du fleuve Sénégal : selon Delafosse, rapporté par Wane (1969), les Wolof en ont fait Tokolor et Tokoror pour le pays comme pour ses habitants, tandis que les Maures disent Takruur pour le pays et Etkaarir pour ses habitants. La Britannica de 1911 rapporte aussi l'idée, portée par certains, d'un tout-couleur français, et l'identification à Tacurol, ancien nom du pays, écrit Tacurores par les Portugais du XVIe siècle. Hampâté Bâ (1966) note que les Djolof et les Sérères les appellent Tukulor.",
       "whyProblematic": "Fellata est considere comme pejoratif dans certains contextes (Sudan, Tchad), associe a des stereotypes de migrants indesirables. Les exonymes ne reflètent pas l'auto-identification Fulbe. Fulani est parfois employe abusivement pour designer uniquement les pasteurs nomades.",
-      "contemporaryUsage": "Fulbe est prefere dans les contextes academiques et communautaires. Peul reste l'usage dominant en français. Fula et Fulani sont courants en anglais selon la region.",
+      "contemporaryUsage": "Fulbe est prefere dans les contextes academiques et communautaires. Peul reste l'usage dominant en français. Fula et Fulani sont courants en anglais selon la region. Haalpulaar'en, « ceux qui parlent le pulaar », est le nom que se donnent ceux que les autres appellent Toucouleur (Humery, 2013) ; l'atlas n'a pas trouvé depuis quand ce nom est employé.",
       "peopleGroupId": "PGRP_FULANI",
       "peopleGroupLabel": "Fulbe (Peul / Fulani)",
       "linguisticFamily": "FLG_ATLANTIQUE",
@@ -229,6 +230,102 @@
         "title": "Britannica - Western Africa, jihad of Usman dan Fodio",
         "url": "https://www.britannica.com/place/western-Africa/The-jihad-of-Usman-dan-Fodio",
         "tier": "unverified"
+      },
+      {
+        "title": "Britannica 1911 — Fula (Encyclopaedia Britannica, 11e édition)",
+        "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Fula",
+        "tier": "unverified",
+        "notes": "Texte lu directement : « Fulbe or Fula (sing. Pullo, Peul) is the Mandingan name, Follani the Hausa, Fellatah the Kanuri, Fullan the Arab, and Fulde on the Benue »."
+      },
+      {
+        "title": "Breedveld, J.O. — Form and meaning in Fulfulde: a morphophonological study of Maasinankoore. Thèse, Université de Leyde, 1995",
+        "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2938820/view",
+        "tier": "referenced",
+        "notes": "Chapitre 1, sections 1.1.1 et 1.1.2 : le sens de Pullo et de Fulbe, et l'origine des noms peul, Fulani, fellata et fula, rapportée d'après Nussbaum (1970), Newman (1990), Abu-Manga (1986) et Arnott (1970). Texte lu directement ; ces quatre travaux n'ont pas été lus."
+      },
+      {
+        "title": "Hampâté Bâ, Amadou — Des Foulbé du Mali et de leur culture. Abbia, 14-15, 1966, p. 23",
+        "url": "https://www.vestiges-journal.info/Abbia/Abbia_14-15_1966/Abbiav14-15n3.pdf",
+        "tier": "referenced",
+        "notes": "Texte lu directement. L'auteur donne deux lectures du nom sans trancher et ne cite aucune source pour le verbe fullude."
+      },
+      {
+        "title": "Tauxier, Louis — Moeurs et histoire des Peuls. Payot, 1937",
+        "url": "https://webpulaaku.site/defte/tauxier/livre1ch1.html",
+        "tier": "referenced",
+        "notes": "Chapitre 1. Rapporte l'explication de Gaden par Delafosse (Haut-Sénégal-Niger, t. I, pp. 118-119) et celle de Crozals (Les Peuhls, p. 256) résumant Barth ; ces deux ouvrages n'ont pas été lus directement. L'auteur ne tranche pas entre les deux."
+      },
+      {
+        "title": "TLFi — entrée PEUL, CNRS / ATILF",
+        "url": "https://www.cnrtl.fr/etymologie/peul",
+        "tier": "referenced",
+        "notes": "Donne 1847 pour la graphie peul (lettre de A. Raffenel, Annales maritimes et coloniales, t. 103, p. 233) et qualifie le mot de « mot africain »."
+      },
+      {
+        "title": "Barth, Heinrich — Travels and Discoveries in North and Central Africa, vol. 2. 1857",
+        "url": "https://www.gutenberg.org/ebooks/76317",
+        "tier": "referenced",
+        "notes": "Texte lu directement : les Fulbe y sont dits Féllani par les Haoussa et Felláta par les gens du Bornou."
+      },
+      {
+        "title": "Blench, Roger — Fulɓe, Fulani and Fulfulde in Nigeria: distribution and identity. Nigerian National Livestock Resource Survey, Working Paper 23, 1990 (révisé en 1994)",
+        "url": "https://fudeco-ngo.org/wp-content/uploads/2024/07/FulBe-identity-1990.pdf",
+        "tier": "referenced",
+        "notes": "Texte lu directement : l'entrée Mbororo."
+      },
+      {
+        "title": "Wane, Yaya — Les Toucouleur du Fouta Tooro : stratification sociale et structure familiale. IFAN, Dakar, 1969",
+        "url": "https://webpulaaku.site/defte/yWane/intro.html",
+        "tier": "referenced",
+        "notes": "Introduction. Rapporte l'explication de Delafosse sur Tokolor, Tokoror, Takruur et Etkaarir ; l'ouvrage de Delafosse n'a pas été lu directement."
+      },
+      {
+        "title": "Humery, Marie-Ève — La littératie pulaar : nationalisme culturel, mouvement social ou instrument du développement ? Cahiers de la recherche sur l'éducation et les savoirs, n° 12, 2013",
+        "url": "https://journals.openedition.org/cres/2348?lang=fr",
+        "tier": "referenced",
+        "notes": "Note 1 : Toucouleur est un terme exogène, la dénomination indigène étant Haalpulaar'en, littéralement « ceux qui parlent le pulaar ». L'article ne date pas l'apparition de ce nom."
+      },
+      {
+        "title": "Horta, José da Silva — Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII). Varia Historia, 29 (51), 2013, pp. 649-675",
+        "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+        "tier": "referenced",
+        "notes": "Cite le passage de Almada (Tratado breve dos Rios de Guiné, manuscrit daté de 1594) où les Fula sont écrits Fulos."
+      },
+      {
+        "title": "Park, Mungo — Travels in the Interior Districts of Africa, 1799",
+        "url": "https://www.gutenberg.org/ebooks/74976",
+        "tier": "referenced",
+        "notes": "Texte lu directement : « The Foulahs (or Pholeys) »."
+      },
+      {
+        "title": "Britannica 1911 — Tukulor (Encyclopaedia Britannica, 11e édition)",
+        "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Tukulor",
+        "tier": "unverified",
+        "notes": "Texte lu directement. Rapporte deux explications du nom Tukulor sans en retenir une."
+      },
+      {
+        "title": "Niang, Oumar — Réflexion sur l'origine des termes Fulɓe, pullo (et aussi Wolof, Bambara, Soninke). ndarinfo.com, 18 juillet 2018",
+        "url": "https://www.ndarinfo.com/Reflexion-sur-l-origine-des-termes-%C2%A0Ful%C9%93e%C2%A0--%C2%A0pullo%C2%A0-et-aussi-%C2%A0Wolof%C2%A0--%C2%A0Bambara%C2%A0-%C2%A0-%C2%A0Soninke%C2%A0-Par-Niang_a22308.html",
+        "tier": "unverified",
+        "notes": "Texte lu directement. Article publié sur un site d'actualité ; la lecture Ba-fur n'est reprise dans aucun autre texte consulté."
+      },
+      {
+        "title": "Wikipédia — Peuls",
+        "url": "https://fr.wikipedia.org/wiki/Peuls",
+        "tier": "unverified",
+        "notes": "Seul endroit où a été rencontrée la lecture fullade, attribuée à Jean-Marie Mathieu, Les Bergers du soleil, l'Or Peul, Desiris, 1998, ouvrage non lu. L'article renvoie à Thomas M. Shaw (1994), non lu non plus."
+      },
+      {
+        "title": "Lexique pulaar-français — document sans auteur identifié",
+        "url": "https://www.au-senegal.com/IMG/pdf/lexique-pulaar-francais.pdf",
+        "tier": "unverified",
+        "notes": "Texte lu directement : BoDeejo (pluriel woDeeBe), « rouge » ; la transcription y écrit D et B pour ɗ et ɓ."
+      },
+      {
+        "title": "Bah, Oumar — Peul : le spectre des couleurs. Blog Manenomatamu, 3 décembre 2011",
+        "url": "https://manenomatamu.wordpress.com/2011/12/03/peul-le-spectre-des-couleurs-en-francais/",
+        "tier": "unverified",
+        "notes": "Texte lu directement : la racine du rouge y est woɗe-."
       }
     ]
   },
