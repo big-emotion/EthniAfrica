@@ -828,7 +828,10 @@ ci-dessous, qui nomme plutôt le **mythe** que le lot défait, indépendamment d
 la typologie du sujet : une `langue` peut clore sur « cette langue n'a pas
 disparu » (la ligne « une langue, une famille ») ou sur « cette langue n'a pas
 été inventée » (la ligne d'invention coloniale), selon le mythe précis en jeu,
-jamais selon sa seule typologie.
+jamais selon sa seule typologie. Une sixième, **`mot`**, a été accordée par
+l'opérateur le 2026-09-21 pour « ethnie » — un mot du vocabulaire qu'aucune
+fiche du corpus ne porte : elle n'a pas de `subjects[]` à résoudre
+(`docs/productions/README.md`, « The mot exception »).
 
 **Aucune ligne ne couvre encore un patronyme dont le mythe est simplement « d'où
 vient ce nom de famille », sans autre torsion.** Les deux lignes les plus

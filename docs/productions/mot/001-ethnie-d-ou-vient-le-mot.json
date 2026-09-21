@@ -1,0 +1,14 @@
+{
+  "campaign": "ethnie-d-ou-vient-le-mot",
+  "typologie": "mot",
+  "episode": 1,
+  "question": {
+    "fr": "D'où vient le mot « ethnie » ?"
+  },
+  "myth": {
+    "fr": "« Ethnie » serait-il un mot inventé par la colonisation ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "publications": []
+}
