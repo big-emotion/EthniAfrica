@@ -104,6 +104,10 @@ What differs from the five, and nothing else does:
   about page.
 - **Its episodes are counted on their own**, from 001, in
   `docs/productions/mot/` — the first `mot` is « ethnie ».
+- **« Ethnie » is one video and no carousel**, by the
+  operator's exception of the same day: it has no attested myth to take apart,
+  and §1 bis already sends a mythless subject out as a video alone. Its
+  `publications[]` therefore never holds a carousel row.
 
 `question` and `myth` still end in `?` and every other rule of this file
 applies unchanged.
