@@ -8,9 +8,12 @@ It sits in the **bottom-right corner, absolutely positioned**, independent of th
 centred stack the rest of the frame is built on.
 
 Reproduced from `01-Brand/Source/ethniafrica_lockup.png` rather than invented. The
-frozen rule is that **« Atlas des Peuples d'Afrique » sits directly beneath
-« EthniAfrica »**, in the warm orange-to-gold treatment. It is not a strapline that
-can be swapped for a handle — a first pass here did exactly that and was wrong.
+frozen rule is that **the site's qualifier sits directly beneath « EthniAfrica »**,
+in the warm orange-to-gold treatment. It is not a strapline that can be swapped for a
+handle — a first pass here did exactly that and was wrong. The qualifier is
+`PRODUCT_TAGLINE` in `src/lib/brand.ts`, copied here because Python cannot import it;
+the operator replaced it on 2026-09-21 (« Atlas des Peuples d'Afrique » before that),
+and `src/lib/__tests__/brandQualifierCharter.test.ts` holds the two to each other.
 
 The wordmark is drawn in white rather than the brand's dark brown because the
 ground is a darkened photograph, not parchment. The tagline keeps its gradient: it
@@ -22,7 +25,7 @@ import numpy as np
 
 HARNESS = pathlib.Path(__file__).resolve().parent
 
-TAGLINE = "Atlas des Peuples d'Afrique"
+TAGLINE = "L’histoire des noms, avec leurs sources"
 WHITE = "#FFFFFF"
 FLAME = (218, 98, 47)      # #DA622F
 GOLD_INK = (242, 186, 54)  # #F2BA36

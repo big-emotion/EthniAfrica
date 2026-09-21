@@ -14,8 +14,8 @@
  * | NEXT_PUBLIC_PRODUCT_NAME          | PRODUCT_NAME       | "EthniAfrica"                                                           |
  * | NEXT_PUBLIC_CANONICAL_DOMAIN      | CANONICAL_DOMAIN   | "ethniafrica.com"                                                     |
  * | NEXT_PUBLIC_ATTRIBUTION_STRING    | ATTRIBUTION_STRING | "Fait avec émotion pour l'Afrique"                                    |
- * | NEXT_PUBLIC_OG_TITLE              | OG_TITLE           | see the constant — the qualifier is the site's one question           |
- * | NEXT_PUBLIC_OG_DESCRIPTION        | OG_DESCRIPTION     | see the constant — that question, then the six corpus classes         |
+ * | NEXT_PUBLIC_OG_TITLE              | OG_TITLE           | see the constant — the name, then what the site holds                 |
+ * | NEXT_PUBLIC_OG_DESCRIPTION        | OG_DESCRIPTION     | see the constant — a question, then the six corpus classes            |
  *
  * The last two rows named a value rather than pointing at one, and both had
  * gone stale: the table still read "Atlas des Peuples d'Afrique" and an
@@ -61,7 +61,7 @@ export const PRODUCT_NAME =
  * is edited in the same commit — not before, or the gate goes red for everyone.
  */
 // @req REQ-019
-export const PRODUCT_TAGLINE = "D’où viennent les noms d’Afrique";
+export const PRODUCT_TAGLINE = "L’histoire des noms, avec leurs sources";
 
 /**
  * The handle the product answers to on social networks.
@@ -115,8 +115,7 @@ export const ATTRIBUTION_STRING =
  */
 // @req REQ-019
 export const OG_TITLE =
-  process.env.NEXT_PUBLIC_OG_TITLE ||
-  "EthniAfrica — D’où viennent les noms d’Afrique";
+  process.env.NEXT_PUBLIC_OG_TITLE || `${PRODUCT_NAME} — ${PRODUCT_TAGLINE}`;
 
 /**
  * Open Graph description for social media previews.
@@ -128,11 +127,12 @@ export const OG_TITLE =
  *
  * **The enumeration comes second, and that order is the point.** This sentence
  * used to open on it — a table of contents, handed to a reader scrolling a feed
- * who has no reason yet to want a table of contents. It now opens on the
- * question the site answers and keeps the six classes behind it, so the gate
- * above still holds while the promise leads.
+ * who has no reason yet to want a table of contents. It now opens on what a
+ * name holds — the same promise as {@link PRODUCT_TAGLINE}, said as a sentence
+ * — and keeps the six classes behind it, so the gate above still holds while
+ * the promise leads.
  */
 // @req REQ-019
 export const OG_DESCRIPTION =
   process.env.NEXT_PUBLIC_OG_DESCRIPTION ||
-  "D’où vient le nom ? Peuples, pays, langues, familles linguistiques, noms et appellations : chacun avec l’origine de son nom et ses sources, sans trancher.";
+  "Chaque nom raconte une histoire. Peuples, pays, langues, familles linguistiques, noms et appellations : chacun avec l’histoire de son nom et ses sources, sans trancher.";

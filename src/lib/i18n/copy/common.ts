@@ -23,7 +23,7 @@ const en = {
   // wine label), which collides with the names axis right beside it — so the
   // English says what the two axes are instead of listing both as "names".
   subtitle:
-    "Peoples, languages, language families, countries, and the names they are known by — each with where its name comes from, and the sources that attest it.",
+    "Peoples, languages, language families, countries, and the names they are known by — each with the history of its name, and the sources that attest it.",
   byCountry: "By country",
   byPeople: "By people",
   byFamily: "By language family",
@@ -64,7 +64,7 @@ const fr: CommonCopy = {
   // it answers "what is in there" for a reader the question has already
   // stopped — which is the only moment an enumeration earns its room.
   subtitle:
-    "Peuples, langues, familles linguistiques, pays, appellations et noms — chacun avec l’origine de son nom et les sources qui l’attestent.",
+    "Peuples, langues, familles linguistiques, pays, appellations et noms — chacun avec l’histoire de son nom et les sources qui l’attestent.",
   byCountry: "Par Pays",
   byPeople: "Par Peuple",
   byFamily: "Par Famille Linguistique",

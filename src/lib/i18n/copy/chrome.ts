@@ -1,7 +1,7 @@
 import type { Language } from "@/types/shared";
 
 const en = {
-  headerTagline: "Where the names come from",
+  headerTagline: "The history of names",
   mainNavigation: "Main navigation",
   entryPoints: "Entry points",
   search: "Search",
@@ -29,7 +29,7 @@ const en = {
 type ChromeCopy = typeof en;
 
 const fr: ChromeCopy = {
-  headerTagline: "D’où viennent les noms",
+  headerTagline: "L’histoire des noms",
   mainNavigation: "Navigation principale",
   entryPoints: "Points d'entrée",
   search: "Rechercher",
