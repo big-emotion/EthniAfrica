@@ -998,7 +998,7 @@ describe("SiteHeader — the controls that stay in the bar", () => {
       "aria-label",
       "Open menu"
     );
-    expect(screen.getByText("Where the names come from")).toBeVisible();
+    expect(screen.getByText("The history of names")).toBeVisible();
     for (const label of ["The atlas", "The dossiers", "Play"]) {
       expect(screen.getByRole("button", { name: label })).toBeVisible();
     }
@@ -1065,7 +1065,7 @@ describe("SiteHeader — the controls that stay in the bar", () => {
  * 406px of content after the page padding, 16px of gap, 53px for the mark
  * and its gap, and 44px per control at 2px apart. Three controls leave the
  * lockup 201px. The header therefore carries the short form of the tagline,
- * « D'où viennent les noms » — the full site slogan runs to 44 characters and
+ * « L’histoire des noms » — the full site slogan runs to 39 characters and
  * overflows that measure on every phone, which is why the footer and the
  * Open Graph title carry it instead. A fourth control would leave 155px and cut the
  * tagline on every phone page. So the bar carries the switch only above the
