@@ -127,11 +127,12 @@ export const OG_TITLE =
  *
  * **The enumeration comes second, and that order is the point.** This sentence
  * used to open on it — a table of contents, handed to a reader scrolling a feed
- * who has no reason yet to want a table of contents. It now opens on the
- * question the site answers and keeps the six classes behind it, so the gate
- * above still holds while the promise leads.
+ * who has no reason yet to want a table of contents. It now opens on what a
+ * name holds — the same promise as {@link PRODUCT_TAGLINE}, said as a sentence
+ * — and keeps the six classes behind it, so the gate above still holds while
+ * the promise leads.
  */
 // @req REQ-019
 export const OG_DESCRIPTION =
   process.env.NEXT_PUBLIC_OG_DESCRIPTION ||
-  "D’où vient le nom ? Peuples, pays, langues, familles linguistiques, noms et appellations : chacun avec l’origine de son nom et ses sources, sans trancher.";
+  "Chaque nom raconte une histoire. Peuples, pays, langues, familles linguistiques, noms et appellations : chacun avec l’histoire de son nom et ses sources, sans trancher.";

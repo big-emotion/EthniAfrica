@@ -115,10 +115,19 @@ Three consequences, each already paid for once:
   55 % of the frame) still holds. Productions already rendered keep the old
   qualifier and are not re-rendered for this alone.
 
-**Left as it was, on purpose.** `OG_DESCRIPTION` still opens on « D'où vient
-le nom ? » (the test above requires it) and the About page's lead still says the
-site tells where names come from. Neither is the title; whether they follow is
-its own ruling.
+**Aligned the same day.** `OG_DESCRIPTION` opens on « Chaque nom raconte une
+histoire. » and keeps the six classes behind it, and the About page's lead reads
+« EthniAfrica raconte l'histoire des noms, avec leurs sources » (« tells the
+history of names, with their sources » in English). The test that required the
+description to open on a question now requires it to open on what a name holds,
+and still refuses `peuples` there. Every sentence that says what the site is now
+says the qualifier's promise.
+
+**Left as it was, on purpose: the question at the level of one name.** « D'où
+vient ce nom ? » remains the label of a fiche section, the eyebrow of the result
+page, the home hero's question and the title of a video about one name. Those
+are the reader's question about a name, asked where the answer sits — not the
+site's promise about itself, which is what this section governs.
 
 `Africa History` is retired, and with it `africahistory.org`. It was an English
 name on a product that then existed only in French, and it survives today only in

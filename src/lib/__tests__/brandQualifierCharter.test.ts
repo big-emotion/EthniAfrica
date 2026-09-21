@@ -71,18 +71,28 @@ const QUALIFIERS = [
 ];
 
 describe("the product's qualifier, spelled in one place", () => {
-  // The site asks « d'où vient ce nom ? » of a people, a country, a language, a
-  // place and a family name. A title that says "peoples" tells a reader who
+  // The site holds the history of a people's name, a country's, a language's, a
+  // place's and a family name's. A title that says "peoples" tells a reader who
   // arrives for a country or a surname that this is not their site.
-  // @req REQ-019
-  it("does not narrow the question to peoples alone", () => {
-    expect(PRODUCT_TAGLINE.toLowerCase()).not.toContain("peuples");
-    expect(OG_DESCRIPTION.split("?")[0].toLowerCase()).not.toContain("peuples");
-  });
+  const firstSentence = (text: string) => text.split(/[.?]/)[0];
 
   // @req REQ-019
-  it("opens the description on the question", () => {
-    expect(OG_DESCRIPTION.startsWith("D’où vient")).toBe(true);
+  it("does not narrow the promise to peoples alone", () => {
+    expect(PRODUCT_TAGLINE.toLowerCase()).not.toContain("peuples");
+    expect(firstSentence(OG_DESCRIPTION).toLowerCase()).not.toContain(
+      "peuples"
+    );
+  });
+
+  // The enumeration of the six classes comes second: a reader scrolling a feed
+  // has no reason yet to want a table of contents. What a name holds comes first.
+  // @req REQ-019
+  it("opens the description on what a name holds, not on the inventory", () => {
+    const opening = firstSentence(OG_DESCRIPTION).toLowerCase();
+
+    expect(opening).toContain("nom");
+    expect(opening).toContain("histoire");
+    expect(OG_DESCRIPTION).not.toMatch(/^D’où vient/);
   });
 
   // @req REQ-019
