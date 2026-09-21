@@ -31,7 +31,12 @@
     "e2e/**/*.ts"
   ],
   "tailwind": { "entry": ["tailwind.config.ts!"] },
-  "ignoreDependencies": ["sharp", "puppeteer", "@storybook/blocks"],
+  "ignoreDependencies": [
+    "sharp",
+    "puppeteer",
+    "@storybook/blocks",
+    "tailwindcss-animate"
+  ],
   "ignoreBinaries": ["python3"],
   "ignoreExportsUsedInFile": true
 }

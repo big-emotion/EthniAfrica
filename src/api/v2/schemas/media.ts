@@ -8,21 +8,6 @@ const mediaEntityTypeSchema = z.enum([
   "country",
 ]);
 
-const mediaDepictionTimingSchema = z.enum(["contemporary", "reconstitution"]);
-
-// @req REQ-128
-export const mediaSchema = z
-  .object({
-    entityType: mediaEntityTypeSchema,
-    entityId: z.string().trim().min(1),
-    author: z.string().trim().min(1).nullable(),
-    licenceUri: z.string().trim().pipe(z.url()),
-    sourcePageUrl: z.string().trim().pipe(z.url()),
-    period: z.string().trim().min(1).nullable(),
-    depictionTiming: mediaDepictionTimingSchema,
-  })
-  .strict();
-
 // @req REQ-128
 export const listMediaQuerySchema = z.object({
   entityType: mediaEntityTypeSchema,

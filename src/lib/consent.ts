@@ -53,12 +53,3 @@ export function isConsentExpired(consentDate: string): boolean {
 
   return now - consentTime > expiryMs;
 }
-
-// @req REQ-046
-export function clearConsent(): void {
-  if (typeof window === "undefined") {
-    return;
-  }
-
-  localStorage.removeItem(CONSENT_STORAGE_KEY);
-}

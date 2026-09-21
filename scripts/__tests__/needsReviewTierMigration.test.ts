@@ -9,11 +9,7 @@ import { join } from "node:path";
 
 import { describe, expect, it } from "vitest";
 
-import {
-  AI_PROVENANCE_WEIGHT,
-  SOURCE_TIERS,
-  SOURCE_TIER_WEIGHTS,
-} from "@/types/sources";
+import { SOURCE_TIERS } from "@/types/sources";
 
 const MIGRATIONS = join(process.cwd(), "supabase", "migrations");
 
@@ -69,19 +65,11 @@ describe("088 — needs_review is a standing the database admits", () => {
     expect(ddl).toContain("CREATE OR REPLACE FUNCTION recompute_confidence(");
     expect(ddl).toMatch(
       new RegExp(
-        `WHEN s\\.tier IS NULL OR s\\.tier IN \\('unverified', 'needs_review'\\)\\s+THEN ${SOURCE_TIER_WEIGHTS.unverified}`
+        `WHEN s\\.tier IS NULL OR s\\.tier IN \\('unverified', 'needs_review'\\)\\s+THEN 0.4`
       )
     );
-    expect(ddl).toMatch(
-      new RegExp(
-        `WHEN s\\.tier = 'official'\\s+THEN ${SOURCE_TIER_WEIGHTS.official.toFixed(1)}`
-      )
-    );
-    expect(ddl).toMatch(
-      new RegExp(
-        `WHEN s\\.tier = 'referenced'\\s+THEN ${SOURCE_TIER_WEIGHTS.referenced}`
-      )
-    );
+    expect(ddl).toMatch(new RegExp(`WHEN s\\.tier = 'official'\\s+THEN 1.0`));
+    expect(ddl).toMatch(new RegExp(`WHEN s\\.tier = 'referenced'\\s+THEN 0.7`));
   });
 
   // The LEFT JOIN yields one all-NULL row for an assertion citing nothing.
@@ -97,7 +85,7 @@ describe("088 — needs_review is a standing the database admits", () => {
   // @req REQ-092
   it("keeps the AI provenance multiplier", () => {
     expect(ddl).toContain(
-      `CASE WHEN s.source_kind = 'ai_generated' THEN ${AI_PROVENANCE_WEIGHT} ELSE 1.0 END`
+      `CASE WHEN s.source_kind = 'ai_generated' THEN 0.5 ELSE 1.0 END`
     );
   });
 

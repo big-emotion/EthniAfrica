@@ -55,6 +55,10 @@ function getLimiters(url: string, token: string): FlagLimiters {
   return limiters;
 }
 
+/**
+ * Test seam: the limiters are built once per process.
+ * @public Read by tests only, which knip's production tally cannot see.
+ */
 // @req REQ-012
 export function _resetFlagRateLimitForTest(): void {
   limiters = null;

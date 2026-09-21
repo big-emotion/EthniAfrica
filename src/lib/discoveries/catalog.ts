@@ -260,6 +260,10 @@ export function eligiblePublications(
 /**
  * Narrows the publishable Discovery catalog to exact typed subjects.
  * An absent scope keeps the existing unscoped catalog unchanged.
+ *
+ * @public Awaiting its caller: the production-history brief
+ * (docs/plans/production-history-brief.md) attaches productions to fiches
+ * through this filter, so it is kept, with its tests, until that work lands.
  */
 // @req REQ-180
 export function publicationsForSubjects(
