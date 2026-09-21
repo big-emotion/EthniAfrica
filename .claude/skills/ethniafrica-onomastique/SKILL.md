@@ -1,6 +1,6 @@
 ---
 name: ethniafrica-onomastique
-description: Challenger une production EthniAfrica (idée, cards.json, narration, page) contre la doctrine qui fonde le projet — raconter les noms. Quatre questions systématiques (qui a nommé, depuis quand, pourquoi se retrouve-t-il ici, quel héritage laissent les nommeurs) et une vérification de ton (clore sur l'amour et l'unité, pas seulement sur le renversement). Se lance à tout moment de la chaîne idee → structure → produire, ou seul sur un sujet déjà écrit. Utiliser pour « est-ce qu'on parle bien des noms », « recentre sur le propos du projet », « check onomastique », « pourquoi on ne nomme personne dans cette pièce », ou /ethniafrica-onomastique.
+description: Challenger une production EthniAfrica (idée, cards.json, narration, page) contre la doctrine qui fonde le projet — raconter les noms. Quatre questions systématiques (qui a nommé, depuis quand, pourquoi se retrouve-t-il ici, quel héritage laissent les nommeurs). Se lance à tout moment de la chaîne idee → structure → produire, ou seul sur un sujet déjà écrit. Utiliser pour « est-ce qu'on parle bien des noms », « recentre sur le propos du projet », « check onomastique », « pourquoi on ne nomme personne dans cette pièce », ou /ethniafrica-onomastique.
 ---
 
 # onomastique — cette pièce raconte-t-elle un nom, ou seulement un événement ?
@@ -109,31 +109,14 @@ source qu'elle a citée. La règle de langue qui en découle — l'assertivité 
 certitude, avec ses trois registres — est dans `CLAUDE.md`, section Source Tier
 Policy ; elle n'est pas recopiée ici.
 
-## Le ton de clôture : pas seulement le renversement
+## La clôture n'est plus un ton à vérifier
 
-`GABARITS-SOCIAL.md` §7 ter fixe le renversement d'agent comme clôture de
-série d'un carrousel (« Ce peuple n'a pas été divisé. C'est la carte qui a été
-dessinée par-dessus. » ; un reel prend, depuis le 2026-09-21, la clôture unique
-de la même section) — et prévoit, à part, une **deuxième position**, distincte de
-ce renversement : la conviction d'unité du projet
-(`src/lib/i18n/copy/about.ts`, `purposeChapter.unityClaim` :
-« Ce qui relie les peuples d'Afrique a survécu à leurs propres ruptures
-autant qu'aux frontières qu'on leur a imposées. C'est là que commence une
-unité plus forte. »).
-
-Le renversement d'agent corrige un mythe ; il reste un constat, parfois sec.
-**Ce skill vérifie qu'une pièce qui le mérite — un sujet qui parle
-explicitement de ce qui relie plusieurs peuples ou plusieurs pays — porte
-aussi cette seconde voix**, celle qui clôt sur l'amour et l'unité plutôt que
-sur le seul constat de la carte redessinée. Elle n'est obligatoire dans aucun
-gabarit ; elle est ici rappelée parce qu'elle se laisse oublier. Deux façons
-de la porter, toutes deux valides (§7 ter) :
-
-- comme sa propre carte, reprenant `unityClaim` mot pour mot ou presque, et
-  **sans `source`** — une conviction du projet ne se cite pas comme une
-  preuve du corpus, `unityClaimStatus` l'étiquette déjà comme telle sur la
-  page À propos ;
-- en laissant simplement le ton de la clôture s'en inspirer, sans l'imprimer.
+Depuis le 2026-09-21, un carrousel et un reel se ferment sur la même clôture
+unique (`GABARITS-SOCIAL.md` §7 ter), et la morale qui la précède répond à la
+question de l'accroche, sans plus. Ce skill ne vérifie donc plus qu'une pièce
+« clôt sur l'amour et l'unité » : la conviction d'unité (`purposeChapter.unityClaim`,
+`src/lib/i18n/copy/about.ts`) reste celle de la page À propos, et aucune
+production n'a à la porter.
 
 ## Comment challenger une session
 
@@ -146,11 +129,8 @@ existante :
    rang, quelle carte — chacune des quatre questions trouve sa réponse, et où
    elle reste sans réponse.
 3. Vérifier que chaque réponse porte son ancrage (fiche, tier).
-4. Vérifier la présence d'une voix de clôture en amour/unité si le sujet s'y
-   prête, et sa conformité à §7 ter (reprise ou inspiration, jamais présentée
-   comme un fait).
-5. Rendre un verdict court : **engage le propos** (les quatre questions sont
-   posées, au moins une avec une réponse sourcée, la clôture porte l'unité) |
+4. Rendre un verdict court : **engage le propos** (les quatre questions sont
+   posées, au moins une avec une réponse sourcée) |
    **raconte sans nommer** (l'histoire tient, mais aucune des quatre
    questions n'est posée) | **nomme sans sourcer** (les questions sont posées
    mais la réponse invente une certitude que rien n'appuie).

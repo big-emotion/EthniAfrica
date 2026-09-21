@@ -223,22 +223,17 @@ clôture (dont la dernière carte n'est pas une `bascule`) n'est contrôlé cont
 
 **La clôture parlée est courte.** Pour un reel, c'est la clôture unique de §7 ter
 (« Le reel a un couple unique »), mot pour mot : le titre puis le corps de la carte,
-que la voix dit tous les deux. Elle n'a ni ligne de vision ni compte chiffré. Avant le
-2026-09-21, c'était le renversement du type puis la sortie, et rien d'autre : pour un
-lot sur un peuple, « Ce peuple n'a pas été divisé. C'est la carte qui a été dessinée
-par-dessus. Retrouvez l'histoire du nom des peuples sur EthniAfrica. Et bientôt,
-celle des lieux. » La ligne de vision de cette ancienne clôture était **écrite sur la
-carte**, mot pour mot — la redire à la voix immobilisait l'image le temps de le faire.
-Mesuré sur l'ancienne clôture : 58 mots dictés donnaient 21,4 s de carte fixe, 23 mots
-en donnaient 7 ; la clôture unique (24 mots) est estimée à 7 s, à mesurer sur le
-premier reel rendu.
+que la voix dit tous les deux. Elle n'a ni ligne de vision ni compte chiffré, et
+n'est plus un renversement du type du sujet. Mesuré sur l'ancienne clôture : 58 mots
+dictés donnaient 21,4 s de carte fixe, 23 mots en donnaient 7 ; la clôture unique
+(24 mots) est estimée à 7 s, à mesurer sur le premier reel rendu.
 
 **La carte de fin entre sur la phrase de sortie**, jamais avant, et joue une fois
 avant de tenir sa dernière image. Le montage l'annonce dans son journal avec la
 phrase sur laquelle elle entre : lis cette ligne, c'est elle qui dit si le repère
-est juste. Une clôture sans ligne de vision — la clôture unique d'un reel, ou un reel
-sans clôture — n'a rien à retrouver dans la narration : la carte attend alors la fin
-de la dernière légende, et ne joue jamais par-dessus la dernière phrase parlée.
+est juste. Il n'y a plus de ligne de vision à retrouver dans la narration — ni sur la
+clôture unique, ni sur un reel sans clôture : la carte attend la fin de la dernière
+légende, et ne joue jamais par-dessus la dernière phrase parlée.
 
 ### La voix
 

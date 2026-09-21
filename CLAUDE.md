@@ -339,11 +339,13 @@ reseaux-help — à tout moment : où j'en suis, doublons, prochain geste
   no skill schedules — do not invent a fourth step.
 - **The message gate — `/ethniafrica-message`.** Not a fourth step: `produire`
   launches it before rendering, and a production whose message does not pass
-  renders as a proof only. It scores videos, carousels and site pages against
-  the doctrine in `docs/editorial/purpose-doctrine.md`, the About page's
-  `purposeChapter` and GABARITS-SOCIAL §7 ter, because the 2026-09-13 message
-  audit (`docs/audience/message/`) found that doctrine in two productions out of
-  twenty-seven while all of them had passed the four render gates.
+  renders as a proof only. It scores videos, carousels and site pages on a grid
+  (the hook's question answered, the self-name first, exact dates, no group made
+  more at home than another) and, since 2026-09-21, **requires no doctrine
+  phrase**: a production that does not write « Ce peuple n'a pas été divisé » is
+  not sent to proof for that. The gate exists because the 2026-09-13 message
+  audit (`docs/audience/message/`) found the project's message in two productions
+  out of twenty-seven while all of them had passed the four render gates.
 - **The myth check — `/ethniafrica-mythe`.** Not a step either: `idee`,
   `structure` and `produire` each call it. It asks whether the subject undoes a
   belief its audience actually holds, and whether the correction is sourced in
@@ -358,9 +360,7 @@ reseaux-help — à tout moment : où j'en suis, doublons, prochain geste
   namers' heritage left behind, on the people's name and on the land's,
   separately. Born 2026-09-16 on `cabinda-yombe-trois-lignes`, whose first
   draft documented three border conventions with precision and never asked
-  who named anything. Also checks that a piece about what several peoples or
-  countries share closes with the unity conviction (`unityClaim` in
-  `about.ts`), not only the agent-reversal clôture.
+  who named anything.
 - **Where am I — `/ethniafrica-reseaux-help`.** Reads the pipeline state and
   `social/tools/etat-pipeline/bilan-sujets.mjs`, flags a validated post whose
   subject is already published in the same format, and names one next move.
