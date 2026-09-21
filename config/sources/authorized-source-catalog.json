@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "entries": [
     {
       "key": "un-desa-wpp",
@@ -274,6 +274,41 @@
       "tier": "official",
       "sourceKind": "government",
       "matchDomains": ["msa.maryland.gov"]
+    },
+    {
+      "key": "uk-parliament-hansard",
+      "name": "UK Parliament, historic Hansard",
+      "tier": "official",
+      "sourceKind": "government",
+      "matchDomains": ["api.parliament.uk"]
+    },
+    {
+      "key": "uk-legislation",
+      "name": "legislation.gov.uk",
+      "tier": "official",
+      "sourceKind": "government",
+      "matchDomains": ["legislation.gov.uk"]
+    },
+    {
+      "key": "encyclopaedia-africana",
+      "name": "Encyclopaedia Africana",
+      "tier": "referenced",
+      "sourceKind": "academic",
+      "matchDomains": ["encyclopaediaafricana.com"]
+    },
+    {
+      "key": "citi-newsroom",
+      "name": "Citi Newsroom",
+      "tier": "referenced",
+      "sourceKind": "academic",
+      "matchDomains": ["citinewsroom.com"]
+    },
+    {
+      "key": "myjoyonline",
+      "name": "MyJoyOnline",
+      "tier": "referenced",
+      "sourceKind": "academic",
+      "matchDomains": ["myjoyonline.com"]
     }
   ]
 }
