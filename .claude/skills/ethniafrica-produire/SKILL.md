@@ -26,6 +26,17 @@ toujours » ci-dessous : elle protège un coût réel (la voix se paie en crédi
 et une lecture réelle (personne ne devrait découvrir un script en le voyant
 monté).
 
+## Le gabarit d'un reel, avant tout rendu de reel
+
+Décidé le 2026-09-21 : la narration d'un reel suit le gabarit de sa catégorie
+(`.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md`). Avant de
+rendre un reel, lance
+`node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <typologie>`,
+la `typologie` étant celle du carnet de production. Un écart n'empêche pas l'épreuve
+— tu rends toujours — mais le reel ne passe pas en 🟢, et tu dis l'écart en clair.
+`structure` a déjà lancé ce contrôle : le relancer ici rattrape une narration
+réécrite après la validation.
+
 ## Tu rends toujours
 
 Une épreuve se regarde, même imparfaite : c'est en la voyant qu'on décide. Ce qui
@@ -216,23 +227,29 @@ Le contrôle en mouvement réduit est la version dont on juge une composition.
 
 ### La fin d'un montage
 
-**La voix finit où l'image finit.** Le dernier paragraphe de narration dit le
-renversement puis la sortie — jamais une adresse seule. Le montage le contrôle
-contre les mots de la carte de clôture elle-même et le remarque sans bloquer.
+**La voix finit où l'image finit.** Le dernier paragraphe de narration dit ce que
+dit la clôture — jamais une adresse seule. Le montage le contrôle contre les mots de
+la carte de clôture elle-même et le remarque sans bloquer. Un reel sans carte de
+clôture (dont la dernière carte n'est pas une `bascule`) n'est contrôlé contre rien.
 
-**La clôture parlée est courte.** Le renversement du type du lot, pris dans la
-table par type de contenu de §7 ter, puis la sortie, et rien d'autre. Pour un
-lot sur un peuple : « Ce peuple n'a pas été divisé. C'est la carte qui a été
-dessinée par-dessus. Retrouvez l'histoire du nom des peuples sur EthniAfrica. Et
-bientôt, celle des lieux. » La ligne de vision est **écrite sur la carte**, mot
-pour mot — la redire à la voix immobilise l'image le temps de le faire. Mesuré
-sur l'ancienne clôture : 58 mots dictés donnaient 21,4 s de carte fixe, 23 mots
-en donnaient 7.
+**La clôture parlée est courte.** Pour un reel, c'est la clôture unique de §7 ter
+(« Le reel a un couple unique »), mot pour mot : le titre puis le corps de la carte,
+que la voix dit tous les deux. Elle n'a ni ligne de vision ni compte chiffré. Avant le
+2026-09-21, c'était le renversement du type puis la sortie, et rien d'autre : pour un
+lot sur un peuple, « Ce peuple n'a pas été divisé. C'est la carte qui a été dessinée
+par-dessus. Retrouvez l'histoire du nom des peuples sur EthniAfrica. Et bientôt,
+celle des lieux. » La ligne de vision de cette ancienne clôture était **écrite sur la
+carte**, mot pour mot — la redire à la voix immobilisait l'image le temps de le faire.
+Mesuré sur l'ancienne clôture : 58 mots dictés donnaient 21,4 s de carte fixe, 23 mots
+en donnaient 7 ; la clôture unique (24 mots) est estimée à 7 s, à mesurer sur le
+premier reel rendu.
 
 **La carte de fin entre sur la phrase de sortie**, jamais avant, et joue une fois
 avant de tenir sa dernière image. Le montage l'annonce dans son journal avec la
 phrase sur laquelle elle entre : lis cette ligne, c'est elle qui dit si le repère
-est juste.
+est juste. Une clôture sans ligne de vision — la clôture unique d'un reel, ou un reel
+sans clôture — n'a rien à retrouver dans la narration : la carte attend alors la fin
+de la dernière légende, et ne joue jamais par-dessus la dernière phrase parlée.
 
 ### La voix
 

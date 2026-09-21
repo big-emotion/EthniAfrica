@@ -75,7 +75,7 @@ Chaque critère se note **0, 1 ou 2**, avec la phrase citée qui justifie la not
 | 5   | **Les dates sont exactes, et aucune ne nomme Berlin.** « Moins de cent quarante ans » pour les frontières ; la date d'attestation propre au nom quand un nom est daté. Une clôture qui cite « Berlin » ou « 1884 », qui en fait l'auteur des lignes, ou qui pose « mille ans » comme un fait daté : 0.                                                                                                                                                                                                                                               | oui      | les deux        |
 | 6   | **La fin va vers ce qui est resté** — l'origine, les liens, les pays où le peuple vit aujourd'hui — pas vers la blessure.                                                                                                                                                                                                                                                                                                                                                                                                                            | non      | les deux        |
 | 7   | **Une idée, une boucle fermée.** Une pièce qui ouvre trois sujets n'en fait passer aucun ; une question ouverte à l'accroche trouve sa réponse dans la pièce ou derrière son lien.                                                                                                                                                                                                                                                                                                                                                                   | non      | le nouveau venu |
-| 8   | **La clôture de son type.** La ligne de vision mot pour mot — « Nommer un peuple aussi facilement qu'un pays. » — et le titre et le corps de clôture du type du lot, pris mot pour mot dans la table par type de contenu de §7 ter : un lot sur un pays ne se clôt pas sur « Ce peuple n'a pas été divisé ». Un type absent de la table : 0. Sur une page du site : le propos est atteignable (« Notre propos », la page About).                                                                                                                     | oui      | l'abonné        |
+| 8   | **La clôture de son type.** Carrousel : la ligne de vision mot pour mot — « Nommer un peuple aussi facilement qu'un pays. » — et titre et corps de clôture pris mot pour mot dans la table par type de §7 ter ; un type absent de la table : 0. Reel : la clôture unique de §7 ter, mot pour mot, sans ligne de vision (note sous la grille). Sur une page du site : le propos est atteignable (« Notre propos », la page About).                                                                                                                    | oui      | l'abonné        |
 
 | 9 | **Aucun groupe n'est rendu plus chez lui qu'un autre.** Ni en le disant, ni en le laissant entendre. Nommer les peuples qui sont « entiers », « chez eux », « là depuis toujours », « les premiers » fabrique un dehors pour tous ceux qu'on ne nomme pas. La mesure se publie ; le classement, jamais. Un lot qui hiérarchise l'appartenance, même par omission : 0. | oui | les deux |
 
@@ -83,6 +83,55 @@ Les critères 1 et 7 servent le nouveau venu : il n'a que cette pièce. Le 2 et
 le 8 servent l'abonné : c'est la répétition du même bloc, à la même place, dans
 les mêmes mots, qui fait reconnaître la marque. Le 9 sert tout le monde, et il
 sert d'abord le compte.
+
+### Les critères 3 et 8, lus par format
+
+Depuis le 2026-09-21, un **reel** ne se clôt plus sur le renversement de son type mais
+sur la clôture unique de §7 ter (« Le reel a un couple unique ») : l'objectif du projet
+et l'invitation à partager, sans ligne de vision ni compte chiffré. Lue à l'ancienne,
+la grille noterait 0 chaque reel qui la porte, et `produire` ne rendrait plus que des
+épreuves.
+
+- **Critère 8, reel :** la clôture unique de §7 ter, mot pour mot. La ligne de vision
+  n'y figure plus ; l'absence de « Nommer un peuple aussi facilement qu'un pays. » à la
+  clôture d'un reel ne vaut pas 0. Un lot sur un pays ne se clôt toujours pas sur « Ce
+  peuple n'a pas été divisé » : c'est le carrousel qui garde la table par type.
+- **Critère 8, reel sans carte de clôture :** rare, mais possible (§7 ter). Le critère
+  ne juge alors que l'ouverture ; l'absence de clôture ne vaut pas 0.
+- **Critère 3, reel :** la clôture unique n'est pas un renversement d'agent, donc le
+  critère juge les phrases du corps de la pièce, où le peuple reste le sujet de la
+  phrase et le colonisateur n'est jamais celui des phrases qui concluent.
+
+### Un reel au gabarit : les critères 1, 2, 3 et le vocabulaire
+
+Depuis le 2026-09-21, la narration d'un reel suit le gabarit de sa catégorie
+(`.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md`). Lue avec
+la grille ci-dessus seule, elle noterait 0 au critère 1 un patronyme (absent de la
+table de §7 ter) ou un pays, un lieu ou une langue sans lien vers ses peuples : le
+reel resterait une épreuve, alors qu'il suit exactement ce que l'opérateur a décidé.
+
+- **Préalable, avant toute note.** Lance
+  `node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <typologie>`,
+  la `typologie` étant celle du carnet de production. Un écart : ne note pas, renvoie
+  à `structure`. Le gabarit est une porte de structure, pas un critère de la grille.
+- **Critère 1.** _Décidé par l'opérateur le 2026-09-21._ Le mécanisme du type est
+  celui du gabarit : le nom de l'intérieur contre les noms d'ailleurs, dit par
+  l'ouverture fixe et refermé par le classement. Un reel au gabarit note 2 sans
+  autre lien vers les peuples : le gabarit n'a pas de scène pour cela, et en ajouter
+  une casserait « ni plus ni moins ». Un patronyme n'est pas « absent de §7 ter ».
+- **Critère 2.** _Lecture proposée, à confirmer par l'opérateur._ L'ordre nom qu'il
+  se donne → noms qu'on lui donne est tenu par construction : l'inventaire nomme le
+  nom de l'intérieur en premier, et son bloc passe avant les autres. La forme
+  visuelle de §3 bis n'est pas exigée d'un reel au gabarit.
+- **Critère 3.** _Lecture proposée, à confirmer par l'opérateur._ Il juge le
+  classement, la synthèse et la clôture, où le groupe reste le sujet. Dans les
+  blocs, le sujet de la phrase est celui qui a nommé (« L'administration française
+  crée ce nom… ») : c'est le contenu du gabarit, pas un défaut.
+- **Critère 9, vigilance.** « Les autres viennent d'ailleurs » qualifie des **noms**.
+  Une phrase qui l'appliquerait à des gens serait un 0.
+- **Vocabulaire.** « Endonyme » et « exonyme » sont permis dans un reel au gabarit,
+  définis dans la phrase d'ouverture (décidé par l'opérateur le 2026-09-21). Hors
+  gabarit, ils restent des mots à signaler dans un texte au lecteur.
 
 ### Le critère 9, et pourquoi il a fallu une production ratée pour l'écrire
 
@@ -139,7 +188,9 @@ plutôt que d'en manquer un ; le critère se lit donc **par le mécanisme que le
 type du lot porte réellement**, jamais par un mécanisme par défaut.
 
 Un type absent de §7 ter n'a pas de mécanisme défini : le critère 1 reste à 0
-jusqu'à ce que §7 ter en porte un, exactement comme le critère 8.
+jusqu'à ce que §7 ter en porte un, exactement comme le critère 8. **Un reel au
+gabarit fait exception** : son mécanisme est celui du gabarit (voir « Un reel au
+gabarit »).
 
 ### Le critère 2, lu par sujet déclaré
 
@@ -196,6 +247,7 @@ lecteur qui rencontre la marque cinq fois ne doit pas apprendre cinq mots.
 | « le nom qu'on lui donne », « le nom que les autres lui donnent » | « étiquette » sans dire qui l'a posée                                               | un exonyme a un auteur ; le taire efface le mécanisme   |
 | « Le vrai nom », comme nom de pilier                              | « le vrai nom » dans la glose d'une paire                                           | l'autre nom n'est pas faux, il vient d'ailleurs         |
 | l'orthographe du nom de la fiche                                  | trois graphies du même peuple dans une pièce                                        | Duala, Duàlá et Douala se sont croisés dans un seul lot |
+| « endonyme » / « exonyme », dans un reel au gabarit               | les mêmes mots hors gabarit, ou sans la définition de l'ouverture                   | décidé par l'opérateur le 2026-09-21, pour la vidéo     |
 
 ### Une affirmation plate sur un nom contesté
 

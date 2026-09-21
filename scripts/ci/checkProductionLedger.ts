@@ -42,7 +42,19 @@ import {
 
 const LEDGER_ROOT = path.join(__dirname, "../../docs/productions");
 
-const TYPOLOGIES = ["peuple", "pays", "patronyme", "lieu", "langue"] as const;
+/** The five typologies name a corpus entity. `mot` is the one exception, added
+ * by the operator on 2026-09-21 for « ethnie »: a word of the vocabulary that
+ * the project cannot avoid using and that no corpus fiche carries. It is the
+ * only typologie allowed an empty `subjects[]` — see
+ * `docs/productions/README.md`, "The mot exception". */
+const TYPOLOGIES = [
+  "peuple",
+  "pays",
+  "patronyme",
+  "lieu",
+  "langue",
+  "mot",
+] as const;
 type Typologie = (typeof TYPOLOGIES)[number];
 
 const NETWORKS: readonly Network[] = [
@@ -184,7 +196,11 @@ export function validateEntry(
   }
 
   const subjects = record.subjects;
-  if (!Array.isArray(subjects) || subjects.length === 0) {
+  const mayHaveNoSubject = record.typologie === "mot";
+  if (
+    !Array.isArray(subjects) ||
+    (subjects.length === 0 && !mayHaveNoSubject)
+  ) {
     errors.push("subjects must be a non-empty array");
   } else {
     subjects.forEach((subject, index) => {
@@ -389,6 +405,19 @@ function validLingalaEntry(): LedgerEntry {
   };
 }
 
+function validMotEntry(): LedgerEntry {
+  return {
+    campaign: "ethnie-d-ou-vient-le-mot",
+    typologie: "mot",
+    episode: 1,
+    question: { fr: "D'où vient le nom ethnie ?" },
+    myth: { fr: "Ethnie, un mot inventé par la colonisation ?" },
+    subjects: [],
+    sitePath: "/fr/about",
+    publications: [],
+  };
+}
+
 type Fixture = [string, unknown, boolean];
 
 const FIXTURES: Fixture[] = [
@@ -448,8 +477,31 @@ const FIXTURES: Fixture[] = [
     true,
   ],
   [
-    "typologie outside the five",
+    "typologie outside the five and the mot exception",
     { ...validLingalaEntry(), typologie: "ville" },
+    true,
+  ],
+  // `mot` is the operator's exception of 2026-09-21: a word names no corpus
+  // fiche, so it is the only typologie allowed an empty `subjects[]`.
+  ["a mot entry with no subject", validMotEntry(), false],
+  [
+    "a langue entry with no subject",
+    { ...validLingalaEntry(), subjects: [] },
+    true,
+  ],
+  [
+    "a mot entry still refuses a subject the corpus does not hold",
+    {
+      ...validMotEntry(),
+      subjects: [
+        { kind: "language", id: "not-a-real-language", label: { fr: "Faux" } },
+      ],
+    },
+    true,
+  ],
+  [
+    "a mot entry still refuses a non-French sitePath",
+    { ...validMotEntry(), sitePath: "/en/about" },
     true,
   ],
   ["episode zero", { ...validLingalaEntry(), episode: 0 }, true],

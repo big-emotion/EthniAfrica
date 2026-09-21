@@ -238,6 +238,72 @@ def fonte(face, taille, graisse=400):
 _mesureur = ImageDraw.Draw(Image.new("RGB", (8, 8)))
 
 
+# Anton and Nunito Sans carry no IPA letter. « ɛ » (U+025B), the open e of Duala
+# spelling, drew the empty .notdef box in the Mbappé reel's caption because this
+# path measured text and never asked whether the face could draw it. Noto Sans
+# carries it; a character the face lacks is drawn by Noto, the rest stays put.
+_FACE_DE_REPLI = "NotoSans-Bold.ttf"
+_fontes_de_repli = {}
+_trous = {}
+
+
+def _porte(f, ch):
+    """Whether the face draws `ch`. A missing glyph maps to .notdef, so the test
+    is whether it leaves the same bitmap as a private-use codepoint no face maps
+    (the test `ethni_type.assert_covered` applies on the other rendering path).
+    The hole's bitmap depends on the size and, in a variable font, on the weight:
+    keyed by the face alone, the first size seen fixed it and every other size read
+    « covered ». `fonte` hands back one object per (face, size, weight), so the
+    object is the key."""
+    cle = id(f)
+    if cle not in _trous:
+        m = f.getmask("", mode="L")
+        _trous[cle] = (m.size, bytes(m))
+    m = f.getmask(ch, mode="L")
+    return (m.size, bytes(m)) != _trous[cle]
+
+
+def _fonte_de_repli(f):
+    if f.size not in _fontes_de_repli:
+        _fontes_de_repli[f.size] = ImageFont.truetype(
+            str(tk.font_file(_FACE_DE_REPLI)), f.size)
+    return _fontes_de_repli[f.size]
+
+
+def _suites(texte, f):
+    """`texte` cut into runs, each with the font that can draw it."""
+    suites = []
+    for ch in texte:
+        g = f if ch.isspace() or _porte(f, ch) else _fonte_de_repli(f)
+        if suites and suites[-1][1] is g:
+            suites[-1][0] += ch
+        else:
+            suites.append([ch, g])
+    return suites
+
+
+def largeur_texte(texte, f):
+    return sum(_mesureur.textlength(suite, font=g) for suite, g in _suites(texte, f))
+
+
+def peindre_texte(d, xy, texte, f, fill):
+    """`d.text`, with a fallback face for what `f` cannot draw.
+
+    A line the face covers keeps its one `d.text` call, so no existing render
+    moves by a pixel. Runs of mixed faces sit on the primary face's baseline:
+    the default anchor is each face's own ascender, and Noto's is not Nunito's.
+    """
+    suites = _suites(texte, f)
+    if len(suites) == 1 and suites[0][1] is f:
+        d.text(xy, texte, font=f, fill=fill)
+        return
+    x, y = xy
+    base = y + f.getmetrics()[0]
+    for suite, g in suites:
+        d.text((x, base), suite, font=g, fill=fill, anchor="ls")
+        x += _mesureur.textlength(suite, font=g)
+
+
 # French sets a space before « ? ! : ; » and closes « » » after one, so a wrap
 # counting words by `str.split` can strand the mark on a line of its own, and an
 # accent on « the last word » lands on the mark alone. The mark is glued to its
@@ -1552,8 +1618,8 @@ def peindre_video(carte, deck, *, image, sous_titre=False, plan_donne=None,
         for teintes in _teintes_du_bloc(bloc, encre, vise):
             x = bloc.x
             for part, couleur in teintes:
-                d.text((x, y), part, font=f, fill=couleur)
-                x += _mesureur.textlength(part, font=f)
+                peindre_texte(d, (x, y), part, f, couleur)
+                x += largeur_texte(part, f)
             y += bloc.corps * bloc.interligne
 
     _peindre_sous_titre(im, p, deck, sous_titre, ferre_a_gauche=True)
@@ -1904,17 +1970,17 @@ def _peindre(carte, deck, fmt_key, *, image, sous_titre, texte, epreuve=None,
             # ragged column drifting off its own axis.
             x = bloc.x
             if bloc.aligne == "centre":
-                x += (bloc.w - _mesureur.textlength(ligne, font=f)) / 2
+                x += (bloc.w - largeur_texte(ligne, f)) / 2
             morceaux = _decouper_mot(ligne, bloc.mot_accent) if vise else None
             if morceaux:
                 # Drawn in three runs so the word keeps the line's own metrics: a
                 # separate block would re-measure and drift off the baseline.
                 for part, couleur in zip(morceaux, (encre, vise, encre)):
                     if part:
-                        d.text((x, y), part, font=f, fill=couleur)
-                        x += _mesureur.textlength(part, font=f)
+                        peindre_texte(d, (x, y), part, f, couleur)
+                        x += largeur_texte(part, f)
             else:
-                d.text((x, y), ligne, font=f, fill=encre)
+                peindre_texte(d, (x, y), ligne, f, encre)
             y += bloc.corps * bloc.interligne
 
     _peindre_sous_titre(im, p, deck, sous_titre)
@@ -2056,7 +2122,7 @@ def _peindre_sous_titre(im, p, deck, sous_titre, *, ferre_a_gauche=False):
     y = y0
     for ligne in lignes:
         x = (x0 if ferre_a_gauche
-             else bande.x + (bande.w - _mesureur.textlength(ligne, font=f)) / 2)
+             else bande.x + (bande.w - largeur_texte(ligne, f)) / 2)
         # One pivot word per scene takes the accent. Drawn piece by piece so a
         # second occurrence cannot quietly take it too.
         if pivot and pivot in ligne:
@@ -2065,10 +2131,10 @@ def _peindre_sous_titre(im, p, deck, sous_titre, *, ferre_a_gauche=False):
                                      (pivot, _accent(deck)),
                                      (apres, _encre(deck, 1))):
                 if morceau:
-                    d.text((x, y), morceau, font=f, fill=couleur)
-                    x += _mesureur.textlength(morceau, font=f)
+                    peindre_texte(d, (x, y), morceau, f, couleur)
+                    x += largeur_texte(morceau, f)
         else:
-            d.text((x, y), ligne, font=f, fill=_encre(deck, 1))
+            peindre_texte(d, (x, y), ligne, f, _encre(deck, 1))
         y += t["corps"] * t["interligne"]
 
 

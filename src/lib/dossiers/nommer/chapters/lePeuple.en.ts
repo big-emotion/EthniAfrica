@@ -32,7 +32,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
         "une-asymetrie-darchive":
           "The gap is spectacular, and it is easy to make it say what it does not. It does not measure how many peoples were forcibly renamed. It measures first of all an asymmetry of the archive: far more has been written about these peoples than they have written about themselves, and an atlas that compiles sources compiles that imbalance along with them.",
         "trois-declarations":
-          "On the classification of their own name, the fiches say three things. 446 declare their name contested or inherited from colonisation. 19 declare something else. And 309 declare nothing at all.",
+          "On the classification of their own name, the fiches say three things. 444 declare their name contested or inherited from colonisation. 19 declare something else. And 309 declare nothing at all.",
         "le-troisieme-nombre":
           "That third number is the subject of the sentence, not its footnote. Writing ‘57% of the atlas's peoples contest their name’ would suggest that the others had been examined and found unproblematic. They have not been examined. The work is open, and a percentage would book it as a result.",
       },
@@ -59,10 +59,10 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
             "180",
             "The name is an act of census-taking before it is a fact of language",
           ],
-          ["europ-", "119", "Navigators, explorers, cartographers"],
+          ["europ-", "118", "Navigators, explorers, cartographers"],
           [
             "voisin (‘neighbour’)",
-            "113",
+            "112",
             "An African exonym, given by a neighbouring people — often the oldest of all",
           ],
           [
@@ -72,12 +72,12 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
           ],
           [
             "portugais (‘Portuguese’)",
-            "82",
+            "83",
             "The deepest layer of the Atlantic coast, from the fifteenth century onwards",
           ],
           [
             "arab-",
-            "75",
+            "74",
             "Earlier than Europe across the Sahel and the eastern coast",
           ],
           [

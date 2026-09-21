@@ -30,6 +30,23 @@ test("tags a fiche path with the four parameters, in the scheme's order", () => 
   );
 });
 
+// A path that already carries a query is the search page with a term
+// (`/fr/atlas/recherche?q=Goma`). A second `?` turns "Goma?utm_source=…" into
+// the searched word and corrupts the traffic source, so the tags join with `&`.
+// @req REQ-032
+test("appends the tags to a path that already carries a query", () => {
+  const url = tag("/fr/atlas/recherche?q=Goma", "tiktok", "goma", "video");
+  assert.equal(
+    url,
+    "https://ethniafrica.com/fr/atlas/recherche?q=Goma" +
+      "&utm_source=tiktok&utm_medium=social" +
+      "&utm_campaign=goma&utm_content=video"
+  );
+  const params = new URL(url).searchParams;
+  assert.equal(params.get("q"), "Goma");
+  assert.equal(params.get("utm_source"), "tiktok");
+});
+
 // @req REQ-032
 test("carries one campaign slug across every network", () => {
   const links = buildLinks({

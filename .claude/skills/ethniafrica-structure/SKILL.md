@@ -128,8 +128,18 @@ dans `docs/productions/<typologie>/` avant de proposer) :
 - **`subjects[]` et `sitePath` viennent de la même résolution corpus** que
   celle qui a choisi la fiche et les images du lot — ne les redérive pas
   séparément, c'est la même identité, écrite une seule fois.
+- **Exception : la typologie `mot`** (« ethnie »). Aucune fiche ne porte un
+  mot : `"subjects": []`, et `sitePath` est la route française où la pièce
+  envoie le lecteur (par exemple la page « À propos »). N'invente ni un id de
+  corpus ni une fiche pour remplir `subjects[]`.
 - **`question.fr` et `myth.fr` doivent se terminer par « ? »** — jamais une
   affirmation, même hedgée par « aurait ». Le gate le refuse sinon.
+- **`narrativePattern` — règle proposée, à confirmer par l'opérateur.** Un reel qui
+  prend la clôture unique de §7 ter ne remplit pas `narrativePattern` : cette clôture
+  ne prend aucune ligne de la table. On ne le remplit que pour un carrousel, dont la
+  table par type est conservée. Le gate ne l'exige pas (clé facultative, valeur non
+  contrôlée), donc cette règle ne change aucun contrôle ; laisse la clé absente plutôt
+  que d'en inventer une valeur.
 - **`publications` part vide.** Ce carnet ne connaît un lien qu'une fois publié ;
   c'est `produire`, puis l'opérateur, qui les ajoutent au fur et à mesure —
   jamais `structure`, qui écrit avant tout rendu.
@@ -138,7 +148,36 @@ dans `docs/productions/<typologie>/` avant de proposer) :
   correspond à aucun sujet, réseau/format que §1 bis n'autorise pas) se
   corrige avant d'aller plus loin — ne la reporte pas à `produire`.
 
-## Un lot sur un pays : ce que l'audience doit repartir avec
+## La narration d'un reel : un gabarit par catégorie, et rien d'autre
+
+Décidé par l'opérateur le 2026-09-21. **La narration d'un reel « D'où vient le nom
+X ? » suit le gabarit de sa catégorie — peuple, pays, patronyme, lieu ou langue —
+sans une scène de plus ni de moins.** Le gabarit complet, ses phrases fixes, ce
+qui change d'une catégorie à l'autre et les cas qu'il ne couvre pas sont dans
+`.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md` : ouvre-le
+avant d'écrire une seule phrase. Ce
+skill n'en garde aucune copie, parce qu'une deuxième copie de la doctrine est celle
+qui dérive.
+
+- **La catégorie est la `typologie` du rapport de sujet et du carnet.** Elle
+  détermine le gabarit ; ne la déduis pas du contenu.
+- **`node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <catégorie>`
+  la vérifie**, et se lance avant `check-narration.mjs` : un texte hors gabarit se
+  réécrit avant d'être affiché à l'opérateur.
+- **Un cas hors gabarit — typologie `mot`, groupe sans nom pour lui-même, plus de
+  quatre noms de l'intérieur, un seul nom — s'arrête et se dit à l'opérateur.** Ne
+  fabrique pas une variante.
+- **Corriger une narration déjà écrite, non publiée** : lance le contrôleur, réécris
+  dans le gabarit, relance jusqu'à ✔, puis repasse par la validation du texte. Ne
+  touche ni aux faits, ni aux sources, ni aux licences.
+- **Les anciennes trames de reel n'existent plus** : le renversement du type, la
+  clôture par type, la trame « le nom remonte, puis les peuples remontent ». Le
+  carrousel garde la sienne (section suivante) et son gabarit propre, traité à part.
+
+## Un carrousel sur un pays : ce que l'audience doit repartir avec
+
+**Cette section vaut pour un carrousel.** Un reel n'y est pas soumis : sa narration
+suit le gabarit ci-dessus, et l'origine de chaque peuple n'y a pas de scène.
 
 Décidé par l'opérateur le 2026-09-16, sur un premier jet Guinée dont le flux
 était juste et dont on ne retenait que trois choses : le nom vient de la mer, il
@@ -203,25 +242,48 @@ phrase — c'est **amazigh**, pluriel **imazighen**. De même **Fulɓe** plutôt
 Relis le lot en cherchant les exonymes que tu as employés sans t'en apercevoir,
 comme s'ils étaient des mots neutres : ce sont ceux-là qui passent.
 
+## Le titre d'un reel
+
+**Un reel s'intitule « D'où vient le nom « X » ? », jamais autrement**
+(`docs/design/gabarits-social/GABARITS-SOCIAL.md` §1 ter, « Le titre d'un reel est
+une loi »). C'est le titre de la carte d'ouverture, donc la miniature, et celui du
+post sur chaque réseau : les légendes ne le reformulent pas, et aucun titre-chute
+ne le remplace. Le **carrousel** a son accroche propre — le mythe posé au lecteur,
+en question. Le plafond de huit mots de §1 ter est une décision ouverte pour cette
+accroche : signale-la à l'opérateur, ne la tranche pas.
+
 ## La clôture, et la fin parlée
 
-Le titre et le corps de la clôture **varient avec le type de contenu** : ils
-sont fixes dans un type — c'est la signature — et changent d'un type à l'autre.
-Seule la ligne de vision est la même partout. Ils se prennent **dans la table
-par type de contenu de §7 ter** (`docs/design/gabarits-social/GABARITS-SOCIAL.md`),
-mot pour mot et en texte brut, au moment d'écrire : `cards.json` ne porte jamais
-`**`, le moteur passe lui-même le dernier mot du titre de clôture en accent. Ce skill n'en garde aucune copie : une
-deuxième copie de la doctrine est celle qui dérive.
+**Un reel a une clôture unique**, quel que soit le type du sujet, patronyme compris
+(`GABARITS-SOCIAL.md` §7 ter, « Le reel a un couple unique »). Elle dit l'objectif du
+projet et invite l'auditeur à partager ce qu'il sait. Son texte — carte et voix — est
+décidé par l'opérateur ; il se prend **dans cette section, mot pour mot et en texte
+brut**, au moment d'écrire. Ce skill n'en garde aucune copie : une deuxième copie de la
+doctrine est celle qui dérive. « Partagez-la » est un impératif que le contrôle de
+lecture de la narration relèvera : c'est une exception voulue, pas une faute à réécrire.
 
-Un lot dont le type n'a pas de ligne dans la table, ou dont la case est encore
-marquée « à fixer » ou « à valider », s'arrête et le dit. Une clôture ne
+Le titre et le corps de la clôture d'un **carrousel** **varient avec le type de
+contenu** : ils sont fixes dans un type — c'est la signature — et changent d'un type
+à l'autre. Seule la ligne de vision est la même partout. Ils se prennent **dans la
+table par type de contenu de §7 ter**, mot pour mot et en texte brut, au moment
+d'écrire : `cards.json` ne porte jamais `**`, le moteur passe lui-même le dernier
+mot du titre de clôture en accent.
+
+Un lot de carrousel dont le type n'a pas de ligne dans la table, ou dont la case est
+encore marquée « à fixer » ou « à valider », s'arrête et le dit. Une clôture ne
 s'invente pas dans une carte.
 
-La carte de clôture porte :
+La carte de clôture d'un **reel** porte `titre` (la première phrase de la clôture
+unique) et `corps` (la seconde), et **rien d'autre** : ni `source`, ni `pivot`, ni
+`appel`. Sans `source` le moteur ne pose pas de plaque de vision ; sans `appel` la
+pastille est l'adresse par défaut. Un compte chiffré recopié dans `appel` serait un
+nombre en dur que la production ne relit pas.
 
-- `titre` — le titre de clôture du type ;
-- `corps` — le corps de clôture du type, c'est-à-dire la seconde moitié du
-  renversement. Ce n'est plus une datation ;
+La carte de clôture d'un **carrousel** porte :
+
+- `titre` — celui du type ;
+- `corps` — celui du type, c'est-à-dire la seconde moitié du renversement. Ce n'est
+  plus une datation ;
 - `source` — la ligne de vision de §7 ter ;
 - `pivot` — le membre de phrase que la plaque de vision passe en accent ;
 - `appel` — `{n} peuples · ethniafrica.com`.
@@ -233,18 +295,15 @@ vidéo précédente ni d'un exemple du gabarit.
 « mille ans » comme un fait**, tant que la session de doctrine n'a pas tranché
 (§7 ter, audit du message du 2026-09-13, constat 9).
 
-**Le dernier paragraphe de `narration.fr.txt` dit la doctrine, pas une adresse**,
-et il est court : le renversement du type, son titre puis son corps, et ensuite
-la sortie. Rien d'autre. Pour un lot sur un peuple réparti sur plusieurs pays :
-
-> Ce peuple n'a pas été divisé. C'est la carte qui a été dessinée par-dessus.
-> Retrouvez l'histoire du nom des peuples sur EthniAfrica. Et bientôt, celle des lieux.
-
-La vision est **écrite sur la carte**, mot pour mot : la dire aussi à la voix
-publie la même phrase deux fois et immobilise l'image le temps de le faire.
-Mesuré sur l'ancienne clôture : quatre temps parlés tenaient la carte 21,4 s,
-deux temps la tenaient 7,2 s. Le montage contrôle ce paragraphe contre les mots
-de la carte et le remarque quand il dérive.
+**Le dernier paragraphe de `narration.fr.txt` est la voix de la clôture**, et il est
+court. Pour un reel, c'est la clôture unique **mot pour mot** : le titre puis le corps
+de la carte, que la voix dit tous les deux — l'image dit déjà ce que la voix dit, c'est
+pourquoi la clôture ne porte pas de légende. Avant le 2026-09-21, un reel disait le
+renversement du type puis la sortie, et la ligne de vision restait **écrite sur la
+carte** sans être dite : la dire aussi à la voix publiait la même phrase deux fois et
+immobilisait l'image. Mesuré sur cette ancienne clôture : quatre temps parlés
+tenaient la carte 21,4 s, deux temps la tenaient 7,2 s. Le montage contrôle ce
+paragraphe contre les mots de la carte et le remarque quand il dérive.
 
 **Un paragraphe de narration est une scène.** Le nombre de blocs séparés d'une
 ligne vide doit égaler le nombre de cartes, sinon le montage ne peut pas caler
@@ -252,12 +311,32 @@ les scènes et le dit.
 
 ## Le registre
 
+- **Le texte parlé suit la règle de lecture simple, et un outil la vérifie.** Chaque
+  phrase de `narration.fr.txt` commence par le sujet, puis le verbe, puis le
+  complément — **sauf une question**. Phrases courtes (vingt mots au plus), voix
+  active, aucune inversion (« écrit-elle », « dit le Trésor »), pas d'ordre de la
+  forme « Aidez-nous » sans sujet. Un mot difficile (eugénisme, péjoratif) se
+  explique dans la phrase qui suit. Le public est large et beaucoup ne parlent pas
+  le français comme première langue : un texte simple se comprend mieux et se
+  comprend moins de travers. Règle de l'opérateur du 2026-09-09
+  (`plain-language-doctrine-2026-09-09.md`), rappelée le 2026-09-21 après une
+  narration qui ne l'appliquait pas. **`node social/tools/narration/check-narration.mjs
+<narration.fr.txt>` la vérifie** (ouvertures refusées, verbes de parole inversés,
+  plus de vingt mots) ; il ne voit pas si une phrase est simple, cela reste à
+  l'auteur et à la validation de l'opérateur.
 - Les trois champs publiés verbatim au lecteur ne portent **aucune mention
   interne** : ni « à nommer », ni « à confirmer », ni « à compléter ». Ce sont
   des messages à l'opérateur, et ils bloquent la publication au lieu de
   s'imprimer.
 - Le crédit nomme **le document réellement affiché sur la carte**, pas la série
   dont il provient ni la campagne qui l'héberge.
+- **Toute vidéo a une synthèse juste avant la clôture.** Une scène de plus, entre le
+  dernier fait et la clôture : ce que l'auditeur doit retenir, en trois phrases simples
+  au plus — ce que les scènes ont montré, puis la morale. Elle ne dit rien que les
+  scènes n'aient pas déjà dit. Règle de l'opérateur du 2026-09-21 (« il faut toujours la
+  synthèse, la morale, avant la conclusion »). **Elle se propose à l'opérateur dans la
+  conversation, en deux ou trois options, avant d'être écrite** dans `narration.fr.txt`
+  et `cartes.json` : il choisit, puis le texte complet repasse par la validation.
 
 Trois guides restent dans la bibliothèque de production, avec les sujets qu'ils
 servent. Ils portent de la doctrine éditoriale datée, pas du code :
@@ -331,18 +410,23 @@ précède les cinq portes de `produire`, elle ne s'y ajoute pas.
 
 Avant de dire que `structure` est fini :
 
-0. **Lance `ethniafrica-mythe` sur les cartes écrites**, et affiche son verdict
+0. **Lance les deux contrôleurs sur `narration.fr.txt`.** D'abord
+   `node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <catégorie>`
+   pour un reel (le gabarit), puis `node social/tools/narration/check-narration.mjs`
+   (la lecture simple). Un texte qui échoue se réécrit avant d'être affiché :
+   l'opérateur n'a pas à valider une phrase que l'outil sait déjà refuser.
+1. **Lance `ethniafrica-mythe` sur les cartes écrites**, et affiche son verdict
    avec le texte : la correction que le rapport de sujet avait vérifiée a pu
    glisser en devenant une carte.
-1. **Affiche le texte complet dans la conversation**, pas un lien vers le
+2. **Affiche le texte complet dans la conversation**, pas un lien vers le
    fichier : le `narration.fr.txt` scène par scène (chaque paragraphe
    identifié à sa carte), puis chaque `titre`/`corps`/`source` de
    `cards.json` (et de `cartes.json` s'il existe), dans l'ordre du rang.
    Un opérateur qui doit ouvrir un fichier pour vérifier n'a pas reçu la
    validation qu'on lui doit.
-2. **Demande la validation explicitement** — pas « dis-moi si ça te va »
+3. **Demande la validation explicitement** — pas « dis-moi si ça te va »
    noyé dans un paragraphe, une question qui appelle une réponse claire.
-3. **N'écris pas la ligne Texte validé, n'inscris pas le post dans la
+4. **N'écris pas la ligne Texte validé, n'inscris pas le post dans la
    bibliothèque, et ne dis pas que l'étape suivante est `produire`, avant
    d'avoir reçu cette validation.** Si l'opérateur corrige, réécris et
    raffiche — la porte ne s'ouvre qu'une fois, sur le texte qu'il a réellement

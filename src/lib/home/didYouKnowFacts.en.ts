@@ -297,7 +297,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
         "None of these names is wrong, and only one is theirs. The scattering of the vocabulary follows that of the people: present from Senegal to Sudan, the Fulɓe have been named by each of their neighbours, then by each colonial administration that met them, in whatever language it had to hand.",
       ],
       entities: [
-        { kind: "people", id: "PPL_FULANI", label: "Fulɓe (Peul)" },
+        { kind: "people", id: "PPL_FULA", label: "Fulɓe (Peul)" },
         { kind: "country", id: "SEN", label: "Senegal" },
         { kind: "country", id: "MLI", label: "Mali" },
         { kind: "country", id: "NER", label: "Niger" },
