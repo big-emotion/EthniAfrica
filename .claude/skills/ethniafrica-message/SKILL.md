@@ -102,6 +102,37 @@ la grille noterait 0 chaque reel qui la porte, et `produire` ne rendrait plus qu
   critère juge les phrases du corps de la pièce, où le peuple reste le sujet de la
   phrase et le colonisateur n'est jamais celui des phrases qui concluent.
 
+### Un reel au gabarit : les critères 1, 2, 3 et le vocabulaire
+
+Depuis le 2026-09-21, la narration d'un reel suit le gabarit de sa catégorie
+(`.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md`). Lue avec
+la grille ci-dessus seule, elle noterait 0 au critère 1 un patronyme (absent de la
+table de §7 ter) ou un pays, un lieu ou une langue sans lien vers ses peuples : le
+reel resterait une épreuve, alors qu'il suit exactement ce que l'opérateur a décidé.
+
+- **Préalable, avant toute note.** Lance
+  `node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <typologie>`,
+  la `typologie` étant celle du carnet de production. Un écart : ne note pas, renvoie
+  à `structure`. Le gabarit est une porte de structure, pas un critère de la grille.
+- **Critère 1.** _Décidé par l'opérateur le 2026-09-21._ Le mécanisme du type est
+  celui du gabarit : le nom de l'intérieur contre les noms d'ailleurs, dit par
+  l'ouverture fixe et refermé par le classement. Un reel au gabarit note 2 sans
+  autre lien vers les peuples : le gabarit n'a pas de scène pour cela, et en ajouter
+  une casserait « ni plus ni moins ». Un patronyme n'est pas « absent de §7 ter ».
+- **Critère 2.** _Lecture proposée, à confirmer par l'opérateur._ L'ordre nom qu'il
+  se donne → noms qu'on lui donne est tenu par construction : l'inventaire nomme le
+  nom de l'intérieur en premier, et son bloc passe avant les autres. La forme
+  visuelle de §3 bis n'est pas exigée d'un reel au gabarit.
+- **Critère 3.** _Lecture proposée, à confirmer par l'opérateur._ Il juge le
+  classement, la synthèse et la clôture, où le groupe reste le sujet. Dans les
+  blocs, le sujet de la phrase est celui qui a nommé (« L'administration française
+  crée ce nom… ») : c'est le contenu du gabarit, pas un défaut.
+- **Critère 9, vigilance.** « Les autres viennent d'ailleurs » qualifie des **noms**.
+  Une phrase qui l'appliquerait à des gens serait un 0.
+- **Vocabulaire.** « Endonyme » et « exonyme » sont permis dans un reel au gabarit,
+  définis dans la phrase d'ouverture (décidé par l'opérateur le 2026-09-21). Hors
+  gabarit, ils restent des mots à signaler dans un texte au lecteur.
+
 ### Le critère 9, et pourquoi il a fallu une production ratée pour l'écrire
 
 Ajouté le 2026-09-16, sur le carrousel `cote-divoire-le-renversement`, rendu et
@@ -157,7 +188,9 @@ plutôt que d'en manquer un ; le critère se lit donc **par le mécanisme que le
 type du lot porte réellement**, jamais par un mécanisme par défaut.
 
 Un type absent de §7 ter n'a pas de mécanisme défini : le critère 1 reste à 0
-jusqu'à ce que §7 ter en porte un, exactement comme le critère 8.
+jusqu'à ce que §7 ter en porte un, exactement comme le critère 8. **Un reel au
+gabarit fait exception** : son mécanisme est celui du gabarit (voir « Un reel au
+gabarit »).
 
 ### Le critère 2, lu par sujet déclaré
 
@@ -214,6 +247,7 @@ lecteur qui rencontre la marque cinq fois ne doit pas apprendre cinq mots.
 | « le nom qu'on lui donne », « le nom que les autres lui donnent » | « étiquette » sans dire qui l'a posée                                               | un exonyme a un auteur ; le taire efface le mécanisme   |
 | « Le vrai nom », comme nom de pilier                              | « le vrai nom » dans la glose d'une paire                                           | l'autre nom n'est pas faux, il vient d'ailleurs         |
 | l'orthographe du nom de la fiche                                  | trois graphies du même peuple dans une pièce                                        | Duala, Duàlá et Douala se sont croisés dans un seul lot |
+| « endonyme » / « exonyme », dans un reel au gabarit               | les mêmes mots hors gabarit, ou sans la définition de l'ouverture                   | décidé par l'opérateur le 2026-09-21, pour la vidéo     |
 
 ### Une affirmation plate sur un nom contesté
 

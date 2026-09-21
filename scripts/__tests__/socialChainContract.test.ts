@@ -102,7 +102,23 @@ describe("social chain contract", () => {
     expect(REEL_TEMPLATE_CALLERS).toEqual([
       "ethniafrica-structure",
       "ethniafrica-produire",
+      "ethniafrica-message",
     ]);
+  });
+
+  // @req REQ-032
+  it("flags a message audit that no longer requires the reel template", () => {
+    // The message gate decides whether `produire` may turn a reel green. Read
+    // with the old grid, a reel that follows the template scores 0 on criterion 1
+    // (a patronyme has no line in the table) and only ever renders as a proof.
+    const issues = checkSocialChainContract(projectRoot, {
+      [MESSAGE_SKILL]: messageSkill(DOCTRINE_SOURCES.join(" ")),
+    });
+
+    expect(issues).toContainEqual({
+      skill: MESSAGE_SKILL,
+      detail: `does not run ${REEL_TEMPLATE_CHECKER}`,
+    });
   });
 
   // @req REQ-032

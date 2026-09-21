@@ -76,9 +76,11 @@ export const TITLE_RULE_CALLERS = [
 /**
  * The narration template of a reel, decided by the operator on 2026-09-21: one
  * skeleton per subject kind, nothing added and nothing dropped. The template
- * lives in the structure skill's reference and in its checker; the two steps
- * that touch a reel's narration must run the checker, or the template is only a
- * suggestion.
+ * lives in the structure skill's reference and in its checker; the steps that
+ * touch a reel's narration must run the checker, or the template is only a
+ * suggestion. The message audit is one of them: it decides whether `produire`
+ * may turn a reel green, and its grid, read without the template, scores a
+ * template reel 0 on criterion 1.
  */
 export const REEL_TEMPLATE_REFERENCE =
   ".claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md";
@@ -86,6 +88,7 @@ export const REEL_TEMPLATE_CHECKER = "social/tools/narration/check-gabarit.mjs";
 export const REEL_TEMPLATE_CALLERS = [
   "ethniafrica-structure",
   RENDER_SKILL,
+  MESSAGE_SKILL,
 ] as const;
 
 /**
@@ -281,7 +284,9 @@ export function checkSocialChainContract(
     }
   }
   for (const caller of REEL_TEMPLATE_CALLERS) {
-    const markdown = chainSteps.get(caller);
+    // The message skill is not a myth caller, so it is not in `chainSteps`.
+    const markdown =
+      caller === MESSAGE_SKILL ? message : chainSteps.get(caller);
     if (markdown && !markdown.includes(REEL_TEMPLATE_CHECKER)) {
       issues.push({
         skill: caller,
