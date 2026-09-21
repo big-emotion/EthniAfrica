@@ -1116,9 +1116,14 @@ def test_a_glyph_the_face_lacks_is_drawn_by_a_fallback_not_as_a_hole():
     empty .notdef box in the caption and in the precision line. Nothing failed:
     the composition path measured text and never asked whether the face could draw
     it. U+E000 is a private-use codepoint no face maps, so it stands for the hole.
+
+    Several sizes, smallest first: the hole's bitmap depends on the size, and a
+    reference cached from the first size seen called every other size « covered ».
+    The first version of this fix drew the hole on every line but one.
     """
-    f = gab.fonte("nunito", 60, 800)
-    assert _encre_de("m'bapɛ", f) != _encre_de("m'bap", f)
+    for taille in (30, 46, 60):
+        f = gab.fonte("nunito", taille, 700)
+        assert _encre_de("m'bapɛ", f) != _encre_de("m'bap", f), taille
 
 
 def test_a_line_the_face_covers_is_drawn_exactly_as_before():

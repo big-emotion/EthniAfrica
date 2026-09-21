@@ -250,12 +250,17 @@ _trous = {}
 def _porte(f, ch):
     """Whether the face draws `ch`. A missing glyph maps to .notdef, so the test
     is whether it leaves the same bitmap as a private-use codepoint no face maps
-    (the test `ethni_type.assert_covered` applies on the other rendering path)."""
-    if f.path not in _trous:
+    (the test `ethni_type.assert_covered` applies on the other rendering path).
+    The hole's bitmap depends on the size and, in a variable font, on the weight:
+    keyed by the face alone, the first size seen fixed it and every other size read
+    « covered ». `fonte` hands back one object per (face, size, weight), so the
+    object is the key."""
+    cle = id(f)
+    if cle not in _trous:
         m = f.getmask("", mode="L")
-        _trous[f.path] = (m.size, bytes(m))
+        _trous[cle] = (m.size, bytes(m))
     m = f.getmask(ch, mode="L")
-    return (m.size, bytes(m)) != _trous[f.path]
+    return (m.size, bytes(m)) != _trous[cle]
 
 
 def _fonte_de_repli(f):
