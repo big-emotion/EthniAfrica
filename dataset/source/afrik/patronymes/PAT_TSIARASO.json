@@ -75,7 +75,7 @@
     },
     {
       "fieldPath": "bearers",
-      "reason": "La notice nomme Tsiaraso I, Tsiaraso Victor III et Tsiaraso Rachidy IV, mais ne donne ni dates ni constat de décès. Le protocole interdisant d'inférer le statut vital, aucun n'est enregistré comme porteur décédé."
+      "reason": "La notice nomme Tsiaraso I, Tsiaraso Victor III et Tsiaraso Rachidy IV, mais ne donne ni dates ni constat de décès. Leur statut vital n'étant pas établi, aucun n'est enregistré comme porteur décédé."
     },
     {
       "fieldPath": "homonyms",

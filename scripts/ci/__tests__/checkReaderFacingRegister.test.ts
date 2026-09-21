@@ -123,6 +123,78 @@ describe("editorial rules — reader-facing register", () => {
     expect(findings).toHaveLength(1);
   });
 
+  // 52 name fiches told the reader which research pass had come up empty, and
+  // 12 which protocol forbade listing a living bearer. The list only knew
+  // "passe de recherche", so neither read as workshop vocabulary.
+  // @req REQ-133
+  it("refuses a gap reason that names the research pass or protocol", () => {
+    for (const reason of [
+      "Les résultats exacts « Barros » n'ont pas fourni, dans cette passe, un porteur décédé.",
+      "Aucun porteur décédé directement sourcé n'a été identifié lors de la passe.",
+      "Les sources de la passe n'ont rattaché aucun porteur.",
+      "Les sources de cette passe n'ont rattaché aucun porteur.",
+      "Ils ne sont pas ajoutés comme porteurs historiques, conformément au protocole.",
+      "Personne vivante, donc exclue par le protocole.",
+      "Le protocole exclut ces personnes.",
+      "Le protocole interdit de les ajouter.",
+      "Le protocole l'exclut et aucun porteur n'a été trouvé.",
+      "Le protocole interdisant d'inférer le statut vital, aucun n'est enregistré.",
+      "Aucun porteur historique répondant au protocole n'a été trouvé.",
+    ]) {
+      const findings = checkReaderFacingRegister(
+        { id: "PAT_X", gaps: [{ fieldPath: "bearers", reason }] },
+        FICHE
+      );
+
+      expect(findings, reason).toHaveLength(1);
+      expect(findings[0].message).toContain("curation vocabulary");
+    }
+  });
+
+  // The same workshop sentence in English must not pass on a translated record.
+  // @req REQ-146
+  it("refuses the English rendering of the pass and protocol phrasing", () => {
+    for (const reason of [
+      "The exact-match searches did not return a deceased bearer in this pass.",
+      "The protocol excludes living persons, so none is listed.",
+      "The person is excluded in accordance with the protocol.",
+    ]) {
+      const findings = checkReaderFacingRegister(
+        { id: "PAT_X", gaps: [{ fieldPath: "bearers", reason }] },
+        "dataset/translations/en/patronymes/PAT_X.json",
+        INTERNAL_REGISTER_PATTERNS_EN
+      );
+
+      expect(findings, reason).toHaveLength(1);
+    }
+  });
+
+  // "passe" and "protocole" are ordinary words. Only the workshop's own
+  // sentences are refused; a strait, a treaty, a book title or a verb stay.
+  // @req REQ-133
+  it("keeps ordinary uses of passe and protocole readable", () => {
+    for (const text of [
+      "Le nom passe en français par l'intermédiaire de l'arabe.",
+      "Ce que la fiche en rapporte passe par l'article de Lesedi FM qui le cite.",
+      "Le navire franchit la passe de Bonny en 1830.",
+      "Le fleuve se traverse à la passe du Sud, étroite et dangereuse.",
+      "Protocole de Kyoto et peuples autochtones",
+      "Protocole d'enquête ethnographique chez les Dogon",
+      "Le protocole signé à Berlin en 1885 fixe les règles de l'occupation.",
+    ]) {
+      const findings = checkReaderFacingRegister(
+        {
+          id: "PAT_X",
+          gaps: [{ fieldPath: "origin", reason: text }],
+          sources: [{ sourceKey: "k", title: text, notes: text }],
+        },
+        FICHE
+      );
+
+      expect(findings, text).toEqual([]);
+    }
+  });
+
   // @req REQ-133
   it("accepts a gap reason written for the reader", () => {
     expect(

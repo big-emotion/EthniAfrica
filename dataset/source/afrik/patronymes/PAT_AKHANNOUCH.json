@@ -77,7 +77,7 @@
     },
     {
       "fieldPath": "bearers",
-      "reason": "Les recherches biographiques et catalogues d’autorité ont confirmé surtout des personnes vivantes, notamment Aziz Akhannouch ; le protocole exclut ces personnes et aucun porteur décédé suffisamment documenté n’a été trouvé."
+      "reason": "Les recherches biographiques et catalogues d’autorité ont confirmé surtout des personnes vivantes, notamment Aziz Akhannouch ; la fiche ne les liste pas comme porteurs et aucun porteur décédé suffisamment documenté n’a été trouvé."
     },
     {
       "fieldPath": "homonyms",
