@@ -10,5 +10,36 @@
   },
   "subjects": [],
   "sitePath": "/fr/about",
-  "publications": []
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7687888641334578454",
+      "publishedAt": "2026-09-21"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/reel/Ddio8K6q1WF/",
+      "publishedAt": "2026-09-21"
+    },
+    {
+      "network": "facebook",
+      "format": "video",
+      "url": "https://www.facebook.com/reel/1091358410515555",
+      "publishedAt": "2026-09-21"
+    },
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7688013767250038038",
+      "publishedAt": "2026-09-21"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/Ddjg1LcCKsc/",
+      "publishedAt": "2026-09-21"
+    }
+  ]
 }
