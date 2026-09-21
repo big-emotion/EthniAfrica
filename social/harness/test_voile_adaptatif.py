@@ -151,6 +151,28 @@ def test_the_scrim_follows_the_image_monotonically():
                 f"{[round(a, 3) for a in suite]}")
 
 
+def test_a_printed_page_gets_the_heaviest_scrim():
+    """The solved alpha protects the brightest pixels, and a page is not only that.
+
+    Measured on the « ethnie » carousel, 2026-09-21: over a scanned page the
+    scrim solved to the lightest alpha that carries the cream ink over white
+    paper, and the printed lines of the page showed through it — black on dark
+    grey, drawn straight through the title. Contrast against the paper was met;
+    legibility was not. A near-white ground (the engine already treats it as a
+    cutout and refuses it the full frame) takes the ceiling instead.
+    """
+    for fmt in FORMATS:
+        page = alpha_du_plat(carte(), fmt, ton=250, disposition="C")
+        assert page >= PLAFOND - 0.01, f"{fmt} : voile à {page:.2f} sur une page imprimée"
+
+
+def test_the_heaviest_scrim_is_not_given_to_every_image():
+    """A photograph keeps the solved alpha: the ceiling is for pages only."""
+    for fmt in FORMATS:
+        photo = alpha_du_plat(carte(), fmt, ton=150, disposition="C")
+        assert photo < PLAFOND - 0.05, f"{fmt} : voile à {photo:.2f} sur une photographie"
+
+
 def test_the_alpha_never_leaves_its_bounds():
     for fmt in FORMATS:
         # Tones stay above the ground's own luminance: below it the recovered
