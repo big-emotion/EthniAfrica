@@ -12,7 +12,7 @@ import pathlib
 import sys
 import tempfile
 
-from PIL import Image
+from PIL import Image, ImageDraw
 
 import ethni_compose as gab
 import ethni_tokens as tk
@@ -577,11 +577,11 @@ def test_a_passing_lot_lands_in_a_folder_named_for_its_networks():
         _, chemin = gab.rendre(carte(), DECK, "carrousel", image=image_test(3000, 4000),
                                racine=racine, verdict=gab.portes([carte()], DECK))
         assert chemin.parent.name == "-".join(tk.reseaux("carrousel"))
-        assert chemin.parent == racine / "TikTok-Instagram"
+        assert chemin.parent == racine / "TikTok-Instagram-Facebook-YouTube-LinkedIn"
 
         _, chemin_reel = gab.rendre(carte(), DECK, "reel", image=image_test(3000, 4000),
                                     racine=racine, verdict=gab.portes([carte()], DECK))
-        assert chemin_reel.parent == racine / "Instagram-Facebook-YouTube-X"
+        assert chemin_reel.parent == racine / "TikTok-Instagram-Facebook-YouTube-LinkedIn-X"
 
 
 def test_layout_A_packs_its_column_onto_the_foot():
@@ -1100,6 +1100,39 @@ def test_the_gates_read_the_parallel_like_any_printed_field():
     verdict = gab.portes([carte(images=images)], DECK)
     assert any(m.startswith("carte 2 : image 2") and "surtitre" in m
                for m in verdict.manquantes), verdict.manquantes
+
+
+def _encre_de(texte, f):
+    """The pixels a line leaves on a blank plate, whatever drew them."""
+    plaque = Image.new("L", (500, 130), 0)
+    gab.peindre_texte(ImageDraw.Draw(plaque), (10, 10), texte, f, 255)
+    return plaque.tobytes()
+
+
+def test_a_glyph_the_face_lacks_is_drawn_by_a_fallback_not_as_a_hole():
+    """« ɛ » is the open e of Helmlinger's Duala spelling, « m'bapɛ ».
+
+    Nunito Sans has no such letter, so the 1972 scene of the Mbappé reel drew the
+    empty .notdef box in the caption and in the precision line. Nothing failed:
+    the composition path measured text and never asked whether the face could draw
+    it. U+E000 is a private-use codepoint no face maps, so it stands for the hole.
+
+    Several sizes, smallest first: the hole's bitmap depends on the size, and a
+    reference cached from the first size seen called every other size « covered ».
+    The first version of this fix drew the hole on every line but one.
+    """
+    for taille in (30, 46, 60):
+        f = gab.fonte("nunito", taille, 700)
+        assert _encre_de("m'bapɛ", f) != _encre_de("m'bap", f), taille
+
+
+def test_a_line_the_face_covers_is_drawn_exactly_as_before():
+    """The fallback must not re-render the back catalogue: a covered line keeps
+    the one `d.text` call it always had, so its pixels do not move."""
+    f = gab.fonte("nunito", 60, 800)
+    plaque = Image.new("L", (500, 130), 0)
+    ImageDraw.Draw(plaque).text((10, 10), "Bonabéri, un quartier", font=f, fill=255)
+    assert _encre_de("Bonabéri, un quartier", f) == plaque.tobytes()
 
 
 def main():

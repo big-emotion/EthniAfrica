@@ -25,7 +25,7 @@
 import type { CorpusFigure, FigureKey } from "./types";
 
 /** Every count below was taken against `recette` on this date. */
-const COUNTED_ON = "2026-09-18";
+const COUNTED_ON = "2026-09-21";
 
 const PEOPLE_GLOB = "dataset/source/afrik/peuples/*/*.json";
 
@@ -52,7 +52,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "corpus-peoples",
     label: "fiches de peuple",
-    value: 774,
+    value: 772,
     method: `nombre de fichiers ${PEOPLE_GLOB}`,
     countedOn: COUNTED_ON,
   },
@@ -60,7 +60,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "corpus-exonyms",
     label: "exonymes recensés",
-    value: 3127,
+    value: 3119,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -74,7 +74,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // Maninka, Bambara, Dioula… » — which the count took for an autonym. A
     // grouping of peoples has no name for itself, so those fiches now declare
     // the absence with `null`, and the figure counts only what it says it does.
-    value: 764,
+    value: 762,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
     countedOn: COUNTED_ON,
@@ -90,9 +90,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     figureKey: "status-contested-or-colonial",
     label:
       "fiches déclarant leur appellation contestée ou héritée de la colonisation",
-    value: 446,
+    value: 444,
     method:
-      "fiches dont classificationStatus vaut contested (254) ou colonial-legacy (192)",
+      "fiches dont classificationStatus vaut contested (254) ou colonial-legacy (190)",
     countedOn: COUNTED_ON,
   },
   "status-other": {
@@ -118,7 +118,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-colonial",
     label: "fiches employant le radical « colonial »",
-    value: 243,
+    value: 244,
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -138,7 +138,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-european",
     label: "fiches employant le radical « europ- »",
-    value: 119,
+    value: 118,
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -146,7 +146,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-neighbours",
     label: "fiches attribuant un exonyme à des voisins",
-    value: 113,
+    value: 112,
     method: "radical voisin dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -154,7 +154,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-portuguese",
     label: "fiches employant « portugais »",
-    value: 82,
+    value: 83,
     method: "radical portugais dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -170,7 +170,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-arabic",
     label: "fiches employant le radical « arab- »",
-    value: 75,
+    value: 74,
     method: "radical arab dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -260,13 +260,13 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "patronyme-fiches",
     label: "fiches de nom",
-    value: 590,
+    value: 591,
     method:
       "fiches dataset/source/afrik/patronymes/PAT_*.json portant un nameSystem et " +
       "au moins une source autre que la file d'attente des candidats — les fiches " +
       "générées depuis cette file couvrent un nom sans rien en documenter, et le " +
       "dossier dit « documente »",
-    countedOn: "2026-09-05",
+    countedOn: "2026-09-21",
   },
   "patronyme-non-hereditary": {
     kind: "counted",

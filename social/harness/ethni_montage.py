@@ -25,6 +25,7 @@ import sys
 from PIL import Image
 
 import ethni_compose as gab
+import ethni_muettes as mu
 import ethni_soustitre as st
 from ethni_paths import productions_root
 
@@ -173,6 +174,18 @@ _OUTILS = {"le", "la", "les", "un", "une", "des", "de", "du", "et", "en", "a",
            "sa", "ses", "plus", "aussi", "sont", "est", "ont", "on", "vous"}
 
 
+def carte_de_cloture(deck):
+    """The closing card, or None: a reel whose last card is not a `bascule`.
+
+    §7 ter gives every reel the single closing, but a deck can still end on a
+    development card. Every check below is judged against the closing's own words;
+    handed that card instead, they would call the narration « an address » and cue
+    the sign-off card on words that were never a closing.
+    """
+    derniere = deck["cartes"][-1]
+    return derniere if derniere.get("role") == "bascule" else None
+
+
 def doctrine_en_dernier_paragraphe(narration, cloture):
     """Whether the closing paragraph says the doctrine, or only an address.
 
@@ -181,7 +194,9 @@ def doctrine_en_dernier_paragraphe(narration, cloture):
     an address is everything above it.
 
     Matched on the closing card's own words rather than on a fixed phrase, so a
-    lot that writes its own reversal is judged against the reversal it wrote.
+    lot that writes its own reversal is judged against the reversal it wrote. The
+    reel closing carries no vision line (§7 ter): its voice is the card's own two
+    sentences, which the title alone already matches.
     """
     blocs = [b.strip() for b in narration.split("\n\n") if b.strip()]
     if not blocs or not cloture:
@@ -202,14 +217,21 @@ def fin_debut(sous_titres, cloture=None):
     Cueing on the last caption instead put it on « Et bientôt, celle des lieux »,
     a breath group and not a sentence: the card came up *after* the sign-off it
     was supposed to carry. `sous_titres[-1]` is the fallback all the same, for a
-    lot whose vision the voice never speaks.
+    lot whose vision the voice never speaks. A closing with **no** vision line has
+    nothing to find, and the card waits for the last caption to end.
     """
     if not sous_titres:
         return None
 
     debut = float(sous_titres[-1].get("debut", 0.0))
     vision = gab._mots((cloture or {}).get("source", "") or "")
-    if vision:
+    if not vision:
+        # No vision line to find, as on the reel closing (§7 ter) or on a reel with
+        # no closing at all: the whole narration is the closing, so the card waits
+        # for it to end. Falling back on the *start* of the last caption put the
+        # card over the last spoken sentence — for the reel closing, the invitation.
+        debut = float(sous_titres[-1].get("fin", debut))
+    else:
         for st_ in sous_titres:
             dits = gab._mots(st_.get("texte", ""))
             # The vision is one caption or the tail of one; three shared words in
@@ -331,6 +353,31 @@ def rendre_images(projet, deck, sous_titres, duree_par_scene, dossier, controle,
     return n
 
 
+def rendre_muettes(projet, deck, muettes, dossier, premier, controle, manquantes=None):
+    """The silent cards' keyframes, numbered on from the last one already written.
+
+    Same composition path as a scene, with no caption: nothing is being said, so
+    no band is reserved for the narration to land on.
+    """
+    n = premier
+    for carte in muettes:
+        duree = float(carte["duree"])
+        fichiers = {im["fichier"]: Image.open(projet / "assets" / im["fichier"]).convert("RGB")
+                    for im in gab.images_de(carte)}
+        for i in range(round(duree * FPS)):
+            instant = i / FPS
+            vue = gab.carte_a(carte, instant, duree)
+            im = gab.peindre_video(
+                vue, deck, image=fichiers[vue["image"]["fichier"]], sous_titre=None,
+                instant=None if controle else instant,
+                duree=None if controle else duree,
+                epreuve=(None if manquantes is None
+                         else gab.portes_de_la_carte(manquantes, carte)))
+            im.save(dossier / f"{n:06d}.png")
+            n += 1
+    return n - premier
+
+
 def assembler(dossier, audio, sortie, images):
     """ffmpeg, from a numbered image sequence and the narration."""
     cmd = [
@@ -372,17 +419,30 @@ def main():
     if desaccord:
         raise SystemExit(f"{projet.name} : {desaccord}")
 
-    reperes, ecart = reperes_de_scene(projet, deck["cartes"])
-    duree_par_scene = durees(deck["cartes"], mots, sous_titres, reperes)
+    # A silent card is outside everything the narration measures: its scene
+    # timing, the closing it is read against, the cue of the sign-off card.
+    try:
+        parlees, muettes = mu.separer(deck["cartes"])
+    except ValueError as erreur:
+        raise SystemExit(f"{projet.name} : {erreur}")
+
+    reperes, ecart = reperes_de_scene(projet, parlees)
+    duree_par_scene = durees(parlees, mots, sous_titres, reperes)
     total = sum(duree_par_scene)
 
     # §9 bis — the sign-off card, cued on the last spoken sentence and held for
     # the length its animation needs.
-    debut_fin = fin_debut(sous_titres, deck["cartes"][-1])
+    # Read against the spoken cards only: a trailing silent card is drawn after
+    # the sign-off card and is never the closing the narration is judged against.
+    cloture = carte_de_cloture(dict(deck, cartes=parlees))
+    debut_fin = fin_debut(sous_titres, cloture)
     fin_totale = max(total, (debut_fin or 0) + FIN_SECONDES)
 
+    # The gates read every card, the silent ones included: a card nobody speaks
+    # still shows an image whose licence and credit are owed.
     verdict = gab.portes(deck["cartes"], deck)
     deck["licence_sortie"] = verdict.licence_sortie
+    deck_parle = dict(deck, cartes=parlees)
 
     suffixe = "-controle" if controle else ""
     # A lot that fails a gate is still rendered — it just never lands where a
@@ -391,8 +451,11 @@ def main():
     racine.mkdir(parents=True, exist_ok=True)
     sortie = racine / f"{deck['campagne']}{suffixe}{'-epreuve' if not verdict.passe else ''}.mp4"
 
-    print(f"{len(deck['cartes'])} scènes · {total:.1f}s de scènes · "
+    print(f"{len(parlees)} scènes · {total:.1f}s de scènes · "
           f"{fin_totale:.1f}s au total · {len(sous_titres)} sous-titres", flush=True)
+    if muettes:
+        print(f"  + {len(muettes)} carte(s) muette(s), {sum(c['duree'] for c in muettes):.1f}s "
+              f"après la carte de fin", flush=True)
     if debut_fin:
         # La tolérance est une image, pas un centième : le repère est arrondi à la
         # grille, donc la phrase qui commence pile dessus commence « avant » lui.
@@ -407,13 +470,13 @@ def main():
     if ecart:
         verdict.remarques.append(ecart)
 
-    if not doctrine_en_dernier_paragraphe(narration, deck["cartes"][-1]):
+    if not doctrine_en_dernier_paragraphe(narration, cloture):
         verdict.remarques.append(
             "le dernier paragraphe de narration est une adresse, pas la doctrine — "
-            "§9 bis : la voix finit où l'image finit, sur le renversement et la "
-            "vision. Correctif structure, pas moteur.")
+            "§9 bis : la voix finit où l'image finit, sur ce que dit la clôture. "
+            "Correctif structure, pas moteur.")
 
-    if deck["cartes"][-1].get("role") == "bascule":
+    if cloture:
         # The closing sets its vision and reserves no caption band, so what is said
         # over it is heard and not read. Its **own** paragraph belongs there and
         # says the same thing as the card. What does not belong is an earlier
@@ -429,12 +492,16 @@ def main():
                 f"« {deborde[0].get('texte', '')[:44]}… ». Correctif structure.")
 
     dossier = projet / "work" / f"images{suffixe}"
-    images = rendre_images(projet, deck, sous_titres, duree_par_scene,
+    images = rendre_images(projet, deck_parle, sous_titres, duree_par_scene,
                            dossier, controle, plafond_secondes=debut_fin,
                            manquantes=None if verdict.passe else verdict.manquantes)
     if debut_fin:
         _images_fin(dossier, images, round(fin_totale * FPS) - images)
         images = round(fin_totale * FPS)
+    # After the sign-off card, never under it: the film ends on what the operator
+    # asked it to end on.
+    images += rendre_muettes(projet, deck, muettes, dossier, images, controle,
+                             manquantes=None if verdict.passe else verdict.manquantes)
     print(f"\n{images} images clés rendues", flush=True)
 
     couverture = exporter_couverture(

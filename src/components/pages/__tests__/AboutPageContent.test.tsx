@@ -36,7 +36,7 @@ describe("AboutPageContent (REQ-132)", () => {
       screen.getByRole("heading", { level: 1, name: "About" })
     ).toBeInTheDocument();
     expect(screen.getByTestId("about-overview")).toHaveTextContent(
-      /EthniAfrica tells where names come from/i
+      /EthniAfrica tells the history of names, with their sources/i
     );
     expect(screen.getByRole("link", { name: "how we write" })).toHaveAttribute(
       "href",
@@ -48,9 +48,10 @@ describe("AboutPageContent (REQ-132)", () => {
   // The opening sentence is where a reader decides what this is. It used to
   // list what the project holds — peoples, then languages, then names third —
   // which is an inventory, and reads as an encyclopaedia without ever using
-  // the word. The subject is the question; the rest is what it is asked about.
+  // the word. The subject is what a name carries, with its sources; the rest is
+  // what those names are.
   // @req REQ-132
-  it("opens on the question the project answers, not on what it holds", () => {
+  it("opens on what a name carries, not on what the project holds", () => {
     renderAbout();
 
     expect(
@@ -59,7 +60,9 @@ describe("AboutPageContent (REQ-132)", () => {
 
     const overview = screen.getByTestId("about-overview");
     expect(overview).toHaveTextContent(/EthniAfrica/);
-    expect(overview).toHaveTextContent(/d’où viennent les noms/i);
+    expect(overview).toHaveTextContent(
+      /l’histoire des noms, avec leurs sources/i
+    );
   });
 
   /**

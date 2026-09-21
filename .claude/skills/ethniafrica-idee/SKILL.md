@@ -45,7 +45,7 @@ Un fichier unique : `$ETHNIAFRICA_SOCIAL_PROJECTS/_idees/{slug}.md`.
 
 |               |                                                                |
 | ------------- | -------------------------------------------------------------- |
-| Typologie     | {peuple · pays · patronyme · lieu · langue}                    |
+| Typologie     | {peuple · pays · patronyme · lieu · langue · mot}              |
 | Épisode       | {le prochain numéro libre de cette typologie, voir ci-dessous} |
 | Pilier        | {un seul}                                                      |
 | Formats visés | {carrousel · reel · les deux}                                  |
@@ -54,7 +54,10 @@ Un fichier unique : `$ETHNIAFRICA_SOCIAL_PROJECTS/_idees/{slug}.md`.
 ## La question
 
 « D'où vient le nom {X} ? » — la seule formule, jamais une variante. {X} est le
-nom de travail du sujet dans sa Typologie ci-dessus.
+nom de travail du sujet dans sa Typologie ci-dessus. C'est aussi le titre de tout
+reel, écrit dans `GABARITS-SOCIAL.md` §1 ter (« Le titre d'un reel est une loi ») :
+le rapport le propose tel quel, et le carrousel a son accroche propre, le mythe posé
+en question.
 
 ## L'angle
 
@@ -150,6 +153,11 @@ pressenties » reste ce qu'elle est — des pressentiments, pas des vérificatio
   Un sujet répond toujours à « D'où vient le nom {X} ? » pour l'une de ces
   cinq — jamais une sixième. `lieu` ne nomme aucune table du corpus à part :
   un lieu se rattache toujours à un pays ou à un peuple existant.
+  **Une seule exception, `mot`**, accordée par l'opérateur le 2026-09-21 pour
+  « ethnie » : un mot du vocabulaire que le projet ne peut éviter et
+  qu'aucune fiche ne porte. Elle ne s'étend pas d'elle-même — un nouveau `mot`
+  demande l'accord de l'opérateur — et elle n'a pas de fiche à résoudre
+  (`subjects[]` vide dans le carnet).
 - **L'épisode se lit dans `docs/productions/<typologie>/`, jamais deviné.**
   Le numéro le plus haut déjà présent dans ce dossier plus un — un sujet dont
   la typologie est neuve dans ce dossier commence à 1. `structure` écrira ce
@@ -177,16 +185,15 @@ pressenties » reste ce qu'elle est — des pressentiments, pas des vérificatio
   ne devient jamais un constat historique en descendant la chaîne.
 - **N'invente ni une source, ni une licence, ni un chiffre.** Un chiffre non
   vérifié se note comme non vérifié.
-- **Un sujet centré sur qui a nommé un pays suit le sous-cas de
-  `GABARITS-SOCIAL.md` §7 ter** (ligne « un pays et les peuples qui y vivent »),
-  pas le patron par défaut de ce type : 80 % du rapport porte sur les acteurs
-  nommés de l'histoire du nom (explorateurs, négociants, traités, ce qui en
-  reste en toponymie), les peuples n'arrivent qu'en clôture, comme le
-  renversement. Décidé le 2026-09-14 après un premier passage sur
-  « qui-a-nomme-la-cote-divoire » qui avait ouvert sur le compte de peuples et
-  laissé les acteurs de côté — l'opérateur a jugé la pièce vide de sens. Ne
-  recopie pas cette règle ici épisode après épisode : le rapport de sujet la
-  cite et renvoie à la source.
+- **Un sujet centré sur qui a nommé un pays nomme ses acteurs.** Explorateurs,
+  négociants, traités, ce qui en reste en toponymie : ils vivent dans le champ
+  « qui l'a donnée » de chaque fiche du gabarit du carrousel
+  (`ethniafrica-structure`, `references/gabarit-carrousel-nom.md`). Décidé le
+  2026-09-14 après un premier passage sur « qui-a-nomme-la-cote-divoire » qui
+  avait ouvert sur le compte de peuples et laissé les acteurs de côté : l'opérateur
+  a jugé la pièce vide de sens. La table par type de contenu de §7 ter et son
+  sous-cas « qui a nommé le pays » sont supprimés (2026-09-21) ; le rapport de
+  sujet renvoie au gabarit, il ne recopie rien.
 
 ## Ce que tu ne fais pas
 

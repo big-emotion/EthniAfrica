@@ -87,6 +87,48 @@ from `PRODUCT_NAME` and `PRODUCT_TAGLINE` rather than restated. A literal
 duplicating a constant went stale twice in two days, and each failure reported
 only that two strings differed — never which of them was wrong.
 
+**The qualifier was replaced on 21 September 2026: `L'histoire des noms, avec
+leurs sources`.** The operator's reason: a name tells the history of the people
+who carry it, and the project gathers that history, with the sources it rests
+on, so that the people who decide about the continent later can do so knowing
+it. `D'où viennent les noms d'Afrique` announced a question; the new qualifier
+says what the site holds and how it holds it, and it puts the method — the
+sources — in the title where a reader scrolling a feed can see it. The same
+string is the bio of every social account, so a card and the profile it comes
+from introduce the product in one wording.
+
+Three consequences, each already paid for once:
+
+- **The masthead carries the head of the slogan, not the slogan.** The bar
+  leaves the lockup about 200 px on a phone (see `SiteHeader.test.tsx`), so the
+  header reads `L'histoire des noms` (`The history of names`). The 39-character
+  form stays on the footer, the share card and the tab.
+  `brandQualifierCharter.test.ts` holds the French masthead to the opening of
+  `PRODUCT_TAGLINE`, and both locales to 24 characters.
+- **`OG_TITLE` is composed** from `PRODUCT_NAME` and `PRODUCT_TAGLINE` in
+  `brand.ts` itself. It was a second literal of the qualifier, which is how the
+  test above had to compose it to catch a stale one.
+- **The render engine keeps a copy**, `TAGLINE` in `social/harness/ethni_brand.py`,
+  because Python cannot import `brand.ts`. The same test now reads it and
+  refuses any difference. The slogan is 491 px wide at the video lockup's
+  1080 px measure, against 366 px before, and the lockup's own guard (under
+  55 % of the frame) still holds. Productions already rendered keep the old
+  qualifier and are not re-rendered for this alone.
+
+**Aligned the same day.** `OG_DESCRIPTION` opens on « Chaque nom raconte une
+histoire. » and keeps the six classes behind it, and the About page's lead reads
+« EthniAfrica raconte l'histoire des noms, avec leurs sources » (« tells the
+history of names, with their sources » in English). The test that required the
+description to open on a question now requires it to open on what a name holds,
+and still refuses `peuples` there. Every sentence that says what the site is now
+says the qualifier's promise.
+
+**Left as it was, on purpose: the question at the level of one name.** « D'où
+vient ce nom ? » remains the label of a fiche section, the eyebrow of the result
+page, the home hero's question and the title of a video about one name. Those
+are the reader's question about a name, asked where the answer sits — not the
+site's promise about itself, which is what this section governs.
+
 `Africa History` is retired, and with it `africahistory.org`. It was an English
 name on a product that then existed only in French, and it survives today only in
 places a reader reaches by accident: an API payload, a citation, a stylesheet

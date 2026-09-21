@@ -1,0 +1,29 @@
+{
+  "campaign": "fulbe-sept-noms-un-sens-ouvert",
+  "typologie": "peuple",
+  "episode": 1,
+  "question": {
+    "fr": "D'où vient le nom Fulbe ?",
+    "en": "Where does the name Fulbe come from?"
+  },
+  "myth": {
+    "fr": "Le nom Peul voudrait-il dire « rouge » ?",
+    "en": "Would the name Peul mean “red”?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_FULA",
+      "label": { "fr": "Fulbe", "en": "Fulbe" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_FULA",
+  "publications": [
+    { "network": "tiktok", "format": "video" },
+    { "network": "instagram", "format": "video" },
+    { "network": "facebook", "format": "video" },
+    { "network": "youtube", "format": "video" },
+    { "network": "linkedin", "format": "video" },
+    { "network": "x", "format": "video" }
+  ]
+}

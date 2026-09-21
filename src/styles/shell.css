@@ -15,6 +15,12 @@
    the *content* inside the full-bleed band, not on the band.
    ============================================================ */
 
+/* A page that must run the width of the screen lifts the cap for everything
+   below it, so the bar, the body and the footer keep one vertical. */
+.afh-shell-wide {
+  --afh-shell-max: none;
+}
+
 .afh-shell {
   width: 100%;
   max-width: var(--afh-shell-max);

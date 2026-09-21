@@ -54,6 +54,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Essais — la base idéologique, série par série](editorial/essais/README.md)
 - [Essai — d'où viennent les noms](editorial/essais/dou-viennent-les-noms-2026-09-17.md)
 - [Essai — mutualiser la souveraineté](editorial/essais/mutualiser-la-souverainete-2026-09-17.md)
+- [Essai — partir du nom](editorial/essais/partir-du-nom-2026-09-21.md)
 - [Essai — les peuples avant la ligne](editorial/essais/peuples-carrefours-2026-09-16.md)
 - [Essai — le pouvoir de nommer](editorial/essais/pouvoir-de-nommer-2026-09-14.md)
 - [Essai — saluer l'autre comme il se nomme](editorial/essais/saluer-l-autre-comme-il-se-nomme-2026-09-17.md)
@@ -75,6 +76,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Audience audit — 2026-09-12](audience/audit-2026-09-12.md)
 - [Audience audit — 2026-09-14](audience/audit-2026-09-14.md)
 - [Audience audit — 2026-09-17](audience/audit-2026-09-17.md)
+- [Audience audit — 2026-09-20](audience/audit-2026-09-20.md)
 - [Message audit — 2026-09-13](audience/message/message-audit-2026-09-13.md)
 
 ## Runbooks — procedures, and records of ones already run

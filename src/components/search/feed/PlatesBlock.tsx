@@ -9,8 +9,10 @@ import { SourceStandingBadge } from "@/components/sources/SourceStandingBadge";
 import { ActionLink } from "@/components/ui/ActionLink";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
+import { getLocalizedRoute } from "@/lib/routing";
 import type { Language } from "@/types/shared";
 import type { FeedMovementZone } from "@/components/search/feed/feedBlockTypes";
+import { cn } from "@/lib/utils";
 
 type CompanionAnecdote = SearchCompanionsData["anecdotes"]["items"][number];
 type CompanionProverb = SearchCompanionsData["proverbs"]["items"][number];
@@ -29,6 +31,30 @@ export interface PlatesBlockProps {
   zone?: FeedMovementZone;
 }
 
+/**
+ * The facet parameters the proverb dossier answers to. The bank is paginated
+ * by ten, so a fragment alone only finds a proverb on the first page; narrowing
+ * to the entity the proverb matched keeps it there. Other entity kinds have no
+ * facet and link to the list.
+ */
+const PROVERB_FACET_PARAM: Partial<Record<string, string>> = {
+  country: "pays",
+  people: "peuple",
+  languageFamily: "famille",
+};
+
+function pieceHref(item: FeedPlateItem, language: Language): string {
+  if (item.type === "anecdote") {
+    return `${getLocalizedRoute(language, "anecdotes")}?a=${encodeURIComponent(item.id)}`;
+  }
+  const route = getLocalizedRoute(language, "proverbs");
+  const facet = PROVERB_FACET_PARAM[item.match.entityType];
+  const filter = facet
+    ? `?${facet}=${encodeURIComponent(item.match.entityId)}`
+    : "";
+  return `${route}${filter}#${item.id}`;
+}
+
 function PlateSources({
   sources,
   language,
@@ -37,7 +63,7 @@ function PlateSources({
   language: Language;
 }) {
   return (
-    <ul className="list-none space-y-afh-xs border-t border-afh-border pt-afh-md">
+    <ul className="list-none space-y-afh-xs border-t border-afh-border pt-afh-md min-[1200px]:hidden">
       {sources.map((source) => (
         <li
           key={`${source.title}-${source.url ?? "unlinked"}`}
@@ -59,6 +85,15 @@ function PlateSources({
         </li>
       ))}
     </ul>
+  );
+}
+
+/** A preview tile on a wide screen; a phone keeps the whole text and no link. */
+function SeeMore({ href, label }: { href: string; label: string }) {
+  return (
+    <ActionLink href={href} className="hidden min-[1200px]:inline-flex">
+      {label}
+    </ActionLink>
   );
 }
 
@@ -188,7 +223,7 @@ export function PlatesBlock({
             className={
               reviewed
                 ? "flex w-[250px] shrink-0 min-[1200px]:w-[232px]"
-                : "w-[250px] shrink-0 snap-start min-[1200px]:w-[232px]"
+                : "w-[250px] shrink-0 snap-start min-[1200px]:w-[calc((100%-var(--afh-space-2xl))/2)]"
             }
           >
             {reviewed ? (
@@ -197,13 +232,13 @@ export function PlatesBlock({
               <article className="flex h-full flex-col overflow-hidden rounded-afh-lg border border-afh-border bg-afh-surface text-afh-text">
                 {item.type === "anecdote" ? (
                   <>
-                    <div className="relative aspect-[8/5] bg-afh-bg-warm">
+                    <div className="relative aspect-[8/5] bg-afh-bg-warm min-[1200px]:aspect-auto min-[1200px]:h-[193px]">
                       <Image
                         src={item.illustration.src}
                         alt={item.illustration.alt}
                         width={250}
                         height={156}
-                        sizes="250px"
+                        sizes="(min-width: 1200px) 50vw, 250px"
                         className="size-full object-cover"
                       />
                     </div>
@@ -223,17 +258,24 @@ export function PlatesBlock({
                       </h3>
                       {reviewed
                         ? null
-                        : item.body.map((paragraph) => (
-                            <p key={paragraph} className="text-afh-small">
+                        : item.body.map((paragraph, index) => (
+                            <p
+                              key={paragraph}
+                              className={cn(
+                                "text-afh-small",
+                                index === 0
+                                  ? "min-[1200px]:line-clamp-5"
+                                  : "min-[1200px]:hidden"
+                              )}
+                            >
                               {paragraph}
                             </p>
                           ))}
-                      {reviewed ? (
-                        <SourceStandingBadge
-                          standing={item.tier}
-                          language={language}
-                        />
-                      ) : null}
+                      <SourceStandingBadge
+                        standing={item.tier}
+                        language={language}
+                        className="hidden self-start min-[1200px]:inline-block"
+                      />
                       <p className="text-afh-caption text-afh-text-soft">
                         {reviewed ? "Photo" : copy.labels.photoCredit} :{" "}
                         {item.illustration.credit}
@@ -244,6 +286,10 @@ export function PlatesBlock({
                           language={language}
                         />
                       )}
+                      <SeeMore
+                        href={pieceHref(item, language)}
+                        label={copy.labels.seeMore}
+                      />
                     </div>
                   </>
                 ) : (
@@ -271,11 +317,20 @@ export function PlatesBlock({
                         {item.original.text}
                       </p>
                     ) : null}
-                    <p className="text-afh-small">{item.meaning}</p>
+                    <p className="text-afh-small min-[1200px]:line-clamp-5">
+                      {item.meaning}
+                    </p>
                     {item.origin.note ? (
-                      <p className="text-afh-caption text-afh-text-soft">
+                      <p className="text-afh-caption text-afh-text-soft min-[1200px]:line-clamp-2">
                         {item.origin.note}
                       </p>
+                    ) : null}
+                    {item.sources[0] ? (
+                      <SourceStandingBadge
+                        standing={item.sources[0].tier}
+                        language={language}
+                        className="hidden self-start min-[1200px]:inline-block"
+                      />
                     ) : null}
                     {reviewed ? null : (
                       <PlateSources
@@ -283,6 +338,10 @@ export function PlatesBlock({
                         language={language}
                       />
                     )}
+                    <SeeMore
+                      href={pieceHref(item, language)}
+                      label={copy.labels.seeMore}
+                    />
                   </div>
                 )}
               </article>

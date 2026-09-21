@@ -8,6 +8,7 @@ import {
   PRODUCT_NAME,
   PRODUCT_TAGLINE,
 } from "@/lib/brand";
+import { chromeCopy } from "@/lib/i18n/copy/chrome";
 
 /**
  * Brand charter §1: the product name and its qualifier are read from
@@ -63,26 +64,69 @@ const QUALIFIERS = [
   // Retired 2026-09-20: it named peoples alone, once the site asked the
   // question of five kinds of name.
   "D’où viennent les noms des peuples d’Afrique",
+  // Retired 2026-09-21: it announced a question, and the site now says what it
+  // holds — the history a name carries, with the sources it rests on.
+  "D’où viennent les noms d’Afrique",
+  "D’où viennent les noms",
 ];
 
 describe("the product's qualifier, spelled in one place", () => {
-  // The site asks « d'où vient ce nom ? » of a people, a country, a language, a
-  // place and a family name. A title that says "peoples" tells a reader who
+  // The site holds the history of a people's name, a country's, a language's, a
+  // place's and a family name's. A title that says "peoples" tells a reader who
   // arrives for a country or a surname that this is not their site.
-  // @req REQ-019
-  it("does not narrow the question to peoples alone", () => {
-    expect(PRODUCT_TAGLINE.toLowerCase()).not.toContain("peuples");
-    expect(OG_DESCRIPTION.split("?")[0].toLowerCase()).not.toContain("peuples");
-  });
+  const firstSentence = (text: string) => text.split(/[.?]/)[0];
 
   // @req REQ-019
-  it("opens the description on the question", () => {
-    expect(OG_DESCRIPTION.startsWith("D’où vient")).toBe(true);
+  it("does not narrow the promise to peoples alone", () => {
+    expect(PRODUCT_TAGLINE.toLowerCase()).not.toContain("peuples");
+    expect(firstSentence(OG_DESCRIPTION).toLowerCase()).not.toContain(
+      "peuples"
+    );
+  });
+
+  // The enumeration of the six classes comes second: a reader scrolling a feed
+  // has no reason yet to want a table of contents. What a name holds comes first.
+  // @req REQ-019
+  it("opens the description on what a name holds, not on the inventory", () => {
+    const opening = firstSentence(OG_DESCRIPTION).toLowerCase();
+
+    expect(opening).toContain("nom");
+    expect(opening).toContain("histoire");
+    expect(OG_DESCRIPTION).not.toMatch(/^D’où vient/);
   });
 
   // @req REQ-019
   it("composes OG_TITLE from the name and the qualifier", () => {
     expect(OG_TITLE).toBe(`${PRODUCT_NAME} — ${PRODUCT_TAGLINE}`);
+  });
+
+  // The bar leaves the lockup about 200 px on a phone, so the masthead carries a
+  // short form. It must be the head of the slogan: two wordings would be the
+  // product introducing itself two ways in the same viewport.
+  // @req REQ-019
+  it("carries the slogan's own opening in the masthead, in French", () => {
+    expect(PRODUCT_TAGLINE.startsWith(chromeCopy.fr.headerTagline)).toBe(true);
+  });
+
+  // @req REQ-019
+  it("keeps the masthead short enough for a phone bar", () => {
+    expect(chromeCopy.fr.headerTagline.length).toBeLessThanOrEqual(24);
+    expect(chromeCopy.en.headerTagline.length).toBeLessThanOrEqual(24);
+  });
+
+  // Python cannot import brand.ts, so the render engine's lockup keeps a copy of
+  // the qualifier. A card and the page it points to must not introduce the
+  // product in two wordings.
+  // @req REQ-019
+  it("is the qualifier the render engine draws under the wordmark", () => {
+    const engine = fs.readFileSync(
+      path.join(process.cwd(), "social/harness/ethni_brand.py"),
+      "utf8"
+    );
+    const drawn = engine.match(/^TAGLINE = "(.+)"$/m);
+
+    expect(drawn, "ethni_brand.py no longer declares TAGLINE").not.toBeNull();
+    expect(drawn?.[1]).toBe(PRODUCT_TAGLINE);
   });
 
   // @req REQ-019

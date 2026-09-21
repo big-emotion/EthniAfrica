@@ -297,47 +297,20 @@ describe("search companion catalogs", () => {
     }
   );
 
+  // Until shorts are mapped to results, a query that matches no short shows
+  // none: offering "the most recent one" put the same unrelated video under
+  // every name.
   // @req REQ-180
-  it("uses deterministic recent shorts only when explicitly requested", () => {
+  it("offers no short to a target nothing is mapped to", () => {
     const selection = shortsForTargets(
       [],
       [
         short("older", { publishedAt: "2026-08-01T00:00:00.000Z" }),
-        short("newer-b", { publishedAt: "2026-09-02T00:00:00.000Z" }),
-        short("newer-a", { publishedAt: "2026-09-02T00:00:00.000Z" }),
-      ],
-      { includeRecent: true, limit: 2 }
+        short("newer", { publishedAt: "2026-09-02T00:00:00.000Z" }),
+      ]
     );
 
-    expect(selection.count).toBe(3);
-    expect(selection.items.map(({ item }) => item.id)).toEqual([
-      "newer-a",
-      "newer-b",
-    ]);
-    expect(
-      selection.items.every(({ match }) => match.relation === "recent")
-    ).toBe(true);
-  });
-
-  // @req REQ-180
-  it("orders recent shorts by their instant rather than timestamp spelling", () => {
-    const selection = shortsForTargets(
-      [],
-      [
-        short("later-date-earlier-instant", {
-          publishedAt: "2026-09-02T00:30:00+02:00",
-        }),
-        short("earlier-date-later-instant", {
-          publishedAt: "2026-09-01T23:00:00.000Z",
-        }),
-      ],
-      { includeRecent: true }
-    );
-
-    expect(selection.items.map(({ item }) => item.id)).toEqual([
-      "earlier-date-later-instant",
-      "later-date-earlier-instant",
-    ]);
+    expect(selection).toEqual({ count: 0, items: [] });
   });
 
   // @req REQ-180

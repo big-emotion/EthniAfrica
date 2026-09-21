@@ -26,6 +26,17 @@ toujours » ci-dessous : elle protège un coût réel (la voix se paie en crédi
 et une lecture réelle (personne ne devrait découvrir un script en le voyant
 monté).
 
+## Le gabarit d'un reel, avant tout rendu de reel
+
+Décidé le 2026-09-21 : la narration d'un reel suit le gabarit de sa catégorie
+(`.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md`). Avant de
+rendre un reel, lance
+`node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <typologie>`,
+la `typologie` étant celle du carnet de production. Un écart n'empêche pas l'épreuve
+— tu rends toujours — mais le reel ne passe pas en 🟢, et tu dis l'écart en clair.
+`structure` a déjà lancé ce contrôle : le relancer ici rattrape une narration
+réécrite après la validation.
+
 ## Tu rends toujours
 
 Une épreuve se regarde, même imparfaite : c'est en la voyant qu'on décide. Ce qui
@@ -36,10 +47,10 @@ dis pourquoi.
 
 ## Les deux sorties
 
-| Sortie            | Dossier, dans le dossier du post                         | Condition               | État atteint          |
-| ----------------- | -------------------------------------------------------- | ----------------------- | --------------------- |
-| **Épreuve**       | `_epreuves/`                                             | toujours                | 🟡 En traitement      |
-| **Bon à publier** | un dossier par réseau (`TikTok-Instagram/`, …), `video/` | les cinq portes passées | 🟢 Validé, en attente |
+| Sortie            | Dossier, dans le dossier du post                                    | Condition               | État atteint          |
+| ----------------- | ------------------------------------------------------------------- | ----------------------- | --------------------- |
+| **Épreuve**       | `_epreuves/`                                                        | toujours                | 🟡 En traitement      |
+| **Bon à publier** | un dossier par format, nommé d'après ses réseaux (§1 bis), `video/` | les cinq portes passées | 🟢 Validé, en attente |
 
 Le dossier du post est celui de la bibliothèque, pas celui de l'atelier — voir
 « Où ça s'écrit ».
@@ -170,9 +181,8 @@ cd social/harness
 ./venv/bin/python test_gabarit_video.py         # le contrat de §9 bis
 ```
 
-**`ethni_carrousel2.py` refuse d'écrire dans un dossier-réseau
-(`TikTok-Instagram/`, `Instagram-Facebook-YouTube-X/`) qui porte déjà des
-rendus** et bascule le lot en épreuve. Deux jeux de rendus côte à côte sont
+**`ethni_carrousel2.py` refuse d'écrire dans un dossier-réseau (nommé d'après
+la colonne « Reçoit » de §1 bis) qui porte déjà des rendus** et bascule le lot en épreuve. Deux jeux de rendus côte à côte sont
 indiscernables dans un sélecteur de fichiers. `--remplacer` lève le refus.
 
 **La vidéo se rend par `ethni_montage.py`**, pas par `ethni_render.py` :
@@ -217,23 +227,24 @@ Le contrôle en mouvement réduit est la version dont on juge une composition.
 
 ### La fin d'un montage
 
-**La voix finit où l'image finit.** Le dernier paragraphe de narration dit le
-renversement puis la sortie — jamais une adresse seule. Le montage le contrôle
-contre les mots de la carte de clôture elle-même et le remarque sans bloquer.
+**La voix finit où l'image finit.** Le dernier paragraphe de narration dit ce que
+dit la clôture — jamais une adresse seule. Le montage le contrôle contre les mots de
+la carte de clôture elle-même et le remarque sans bloquer. Un reel sans carte de
+clôture (dont la dernière carte n'est pas une `bascule`) n'est contrôlé contre rien.
 
-**La clôture parlée est courte.** Le renversement du type du lot, pris dans la
-table par type de contenu de §7 ter, puis la sortie, et rien d'autre. Pour un
-lot sur un peuple : « Ce peuple n'a pas été divisé. C'est la carte qui a été
-dessinée par-dessus. Retrouvez l'histoire du nom des peuples sur EthniAfrica. Et
-bientôt, celle des lieux. » La ligne de vision est **écrite sur la carte**, mot
-pour mot — la redire à la voix immobilise l'image le temps de le faire. Mesuré
-sur l'ancienne clôture : 58 mots dictés donnaient 21,4 s de carte fixe, 23 mots
-en donnaient 7.
+**La clôture parlée est courte.** Pour un reel, c'est la clôture unique de §7 ter
+(« Le reel a un couple unique »), mot pour mot : le titre puis le corps de la carte,
+que la voix dit tous les deux. Elle n'a ni ligne de vision ni compte chiffré, et
+n'est plus un renversement du type du sujet. Mesuré sur l'ancienne clôture : 58 mots
+dictés donnaient 21,4 s de carte fixe, 23 mots en donnaient 7 ; la clôture unique
+(24 mots) est estimée à 7 s, à mesurer sur le premier reel rendu.
 
 **La carte de fin entre sur la phrase de sortie**, jamais avant, et joue une fois
 avant de tenir sa dernière image. Le montage l'annonce dans son journal avec la
 phrase sur laquelle elle entre : lis cette ligne, c'est elle qui dit si le repère
-est juste.
+est juste. Il n'y a plus de ligne de vision à retrouver dans la narration — ni sur la
+clôture unique, ni sur un reel sans clôture : la carte attend la fin de la dernière
+légende, et ne joue jamais par-dessus la dernière phrase parlée.
 
 ### La voix
 
