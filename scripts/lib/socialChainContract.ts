@@ -74,6 +74,24 @@ export const TITLE_RULE_CALLERS = [
 ] as const;
 
 /**
+ * The narration template of a reel, decided by the operator on 2026-09-21: one
+ * skeleton per subject kind, nothing added and nothing dropped. The template
+ * lives in the structure skill's reference and in its checker; the steps that
+ * touch a reel's narration must run the checker, or the template is only a
+ * suggestion. The message audit is one of them: it decides whether `produire`
+ * may turn a reel green, and its grid, read without the template, scores a
+ * template reel 0 on criterion 1.
+ */
+export const REEL_TEMPLATE_REFERENCE =
+  ".claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md";
+export const REEL_TEMPLATE_CHECKER = "social/tools/narration/check-gabarit.mjs";
+export const REEL_TEMPLATE_CALLERS = [
+  "ethniafrica-structure",
+  RENDER_SKILL,
+  MESSAGE_SKILL,
+] as const;
+
+/**
  * The three places the doctrine is written. The message skill must open all
  * three on every run: the verbatim exchange and its corrections, the reader
  * facing declaration, and the templates that turn it into cards. A grid written
@@ -258,6 +276,30 @@ export function checkSocialChainContract(
         detail: `does not follow ${TITLE_RULE_REFERENCE} of GABARITS-SOCIAL.md`,
       });
     }
+  }
+
+  for (const path of [REEL_TEMPLATE_REFERENCE, REEL_TEMPLATE_CHECKER]) {
+    if (!existsSync(join(projectRoot, path))) {
+      issues.push({ skill: path, detail: "is missing" });
+    }
+  }
+  for (const caller of REEL_TEMPLATE_CALLERS) {
+    // The message skill is not a myth caller, so it is not in `chainSteps`.
+    const markdown =
+      caller === MESSAGE_SKILL ? message : chainSteps.get(caller);
+    if (markdown && !markdown.includes(REEL_TEMPLATE_CHECKER)) {
+      issues.push({
+        skill: caller,
+        detail: `does not run ${REEL_TEMPLATE_CHECKER}`,
+      });
+    }
+  }
+  const structure = chainSteps.get(REEL_TEMPLATE_CALLERS[0]);
+  if (structure && !structure.includes(REEL_TEMPLATE_REFERENCE)) {
+    issues.push({
+      skill: REEL_TEMPLATE_CALLERS[0],
+      detail: `does not point at ${REEL_TEMPLATE_REFERENCE}`,
+    });
   }
 
   const helper = namedSkill(projectRoot, HELPER_SKILL, overrides, issues);

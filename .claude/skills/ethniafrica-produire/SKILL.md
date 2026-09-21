@@ -26,6 +26,17 @@ toujours » ci-dessous : elle protège un coût réel (la voix se paie en crédi
 et une lecture réelle (personne ne devrait découvrir un script en le voyant
 monté).
 
+## Le gabarit d'un reel, avant tout rendu de reel
+
+Décidé le 2026-09-21 : la narration d'un reel suit le gabarit de sa catégorie
+(`.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md`). Avant de
+rendre un reel, lance
+`node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <typologie>`,
+la `typologie` étant celle du carnet de production. Un écart n'empêche pas l'épreuve
+— tu rends toujours — mais le reel ne passe pas en 🟢, et tu dis l'écart en clair.
+`structure` a déjà lancé ce contrôle : le relancer ici rattrape une narration
+réécrite après la validation.
+
 ## Tu rends toujours
 
 Une épreuve se regarde, même imparfaite : c'est en la voyant qu'on décide. Ce qui

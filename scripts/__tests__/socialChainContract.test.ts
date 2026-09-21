@@ -15,6 +15,9 @@ import {
   MYTH_CALLERS,
   MYTH_SKILL,
   PIPELINE_STATE_TOOL,
+  REEL_TEMPLATE_CALLERS,
+  REEL_TEMPLATE_CHECKER,
+  REEL_TEMPLATE_REFERENCE,
   RENDER_SKILL,
   TITLE_RULE_CALLERS,
   TITLE_RULE_HEADING,
@@ -85,6 +88,79 @@ describe("social chain contract", () => {
     expect(issues).toContainEqual({
       skill: HELPER_SKILL,
       detail: `does not read the pipeline state from ${PIPELINE_STATE_TOOL}`,
+    });
+  });
+
+  // @req REQ-032
+  it("names the reel narration template, its checker and the steps that run it", () => {
+    expect(REEL_TEMPLATE_CHECKER).toBe(
+      "social/tools/narration/check-gabarit.mjs"
+    );
+    expect(REEL_TEMPLATE_REFERENCE).toBe(
+      ".claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md"
+    );
+    expect(REEL_TEMPLATE_CALLERS).toEqual([
+      "ethniafrica-structure",
+      "ethniafrica-produire",
+      "ethniafrica-message",
+    ]);
+  });
+
+  // @req REQ-032
+  it("flags a message audit that no longer requires the reel template", () => {
+    // The message gate decides whether `produire` may turn a reel green. Read
+    // with the old grid, a reel that follows the template scores 0 on criterion 1
+    // (a patronyme has no line in the table) and only ever renders as a proof.
+    const issues = checkSocialChainContract(projectRoot, {
+      [MESSAGE_SKILL]: messageSkill(DOCTRINE_SOURCES.join(" ")),
+    });
+
+    expect(issues).toContainEqual({
+      skill: MESSAGE_SKILL,
+      detail: `does not run ${REEL_TEMPLATE_CHECKER}`,
+    });
+  });
+
+  // @req REQ-032
+  it("flags a step that stops running the reel template checker", () => {
+    // A template nobody checks is a suggestion: the operator asked for reels
+    // that carry the same structure every time, so both the step that writes
+    // the narration and the step that renders it have to run the checker.
+    const [structure] = REEL_TEMPLATE_CALLERS;
+    const issues = checkSocialChainContract(projectRoot, {
+      [structure]: `---\nname: ${structure}\n---\nWrites a narration. Calls ${MYTH_SKILL}. Follows ${FORMAT_RULE_REFERENCE} and ${TITLE_RULE_REFERENCE}.`,
+    });
+
+    expect(issues).toContainEqual({
+      skill: structure,
+      detail: `does not run ${REEL_TEMPLATE_CHECKER}`,
+    });
+  });
+
+  // @req REQ-032
+  it("flags a structure step that no longer points at the template it writes from", () => {
+    const [structure] = REEL_TEMPLATE_CALLERS;
+    const issues = checkSocialChainContract(projectRoot, {
+      [structure]: `---\nname: ${structure}\n---\nRuns ${REEL_TEMPLATE_CHECKER}. Calls ${MYTH_SKILL}. Follows ${FORMAT_RULE_REFERENCE} and ${TITLE_RULE_REFERENCE}.`,
+    });
+
+    expect(issues).toContainEqual({
+      skill: structure,
+      detail: `does not point at ${REEL_TEMPLATE_REFERENCE}`,
+    });
+  });
+
+  // @req REQ-032
+  it("flags a project where the template reference or its checker is missing", () => {
+    const issues = checkSocialChainContract(resolve(projectRoot, "docs"));
+
+    expect(issues).toContainEqual({
+      skill: REEL_TEMPLATE_REFERENCE,
+      detail: "is missing",
+    });
+    expect(issues).toContainEqual({
+      skill: REEL_TEMPLATE_CHECKER,
+      detail: "is missing",
     });
   });
 
