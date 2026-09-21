@@ -6,7 +6,7 @@ vi.mock("@sentry/nextjs", () => ({
 }));
 
 import * as Sentry from "@sentry/nextjs";
-import { clearConsent, saveConsent } from "@/lib/consent";
+import { CONSENT_STORAGE_KEY, saveConsent } from "@/lib/consent";
 import { getLocalizedRoute } from "@/lib/routing";
 
 describe("Sentry runtime configurations", () => {
@@ -69,7 +69,7 @@ describe("Sentry runtime configurations", () => {
     expect(options?.tracesSampleRate).toBeUndefined();
     expect(options?.beforeSendTransaction).toBeTypeOf("function");
 
-    clearConsent();
+    localStorage.removeItem(CONSENT_STORAGE_KEY);
     expect(sample()).toBe(0);
 
     saveConsent({
@@ -85,6 +85,6 @@ describe("Sentry runtime configurations", () => {
     expect(sample()).toBeGreaterThan(0);
     expect(sample()).toBeLessThanOrEqual(0.1);
 
-    clearConsent();
+    localStorage.removeItem(CONSENT_STORAGE_KEY);
   });
 });

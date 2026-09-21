@@ -31,13 +31,7 @@ import {
   SOURCE_TIER_LABELS,
   sourceStandingLabel,
 } from "@/lib/glossaire/vocabularies";
-import {
-  AI_PROVENANCE_WEIGHT,
-  ORAL_NARRATIVE_KINDS,
-  SOURCE_KINDS,
-  SOURCE_TIERS,
-  SOURCE_TIER_WEIGHTS,
-} from "@/types/sources";
+import { SOURCE_KINDS, SOURCE_TIERS } from "@/types/sources";
 
 const ROOT = join(__dirname, "..", "..", "..", "..");
 const CODE_ROOTS = ["src", "scripts", "config"];
@@ -163,7 +157,7 @@ describe("source tier vocabulary contract", () => {
   });
 
   // @req REQ-092
-  it("gives every tier a label in both locales and a confidence weight", () => {
+  it("gives every tier a label in both locales", () => {
     for (const locale of ["fr", "en"] as const) {
       expect(Object.keys(SOURCE_TIER_LABELS[locale]).sort(), locale).toEqual(
         [...SOURCE_TIERS].sort()
@@ -179,19 +173,6 @@ describe("source tier vocabulary contract", () => {
       referenced: "Referenced",
       unverified: "Unverified",
     });
-    expect(SOURCE_TIER_WEIGHTS).toEqual({
-      official: 1.0,
-      referenced: 0.7,
-      unverified: 0.4,
-    });
-  });
-
-  // @req REQ-092
-  it("reproduces the retired ai-enriched weight as unverified × AI provenance", () => {
-    expect(SOURCE_TIER_WEIGHTS.unverified * AI_PROVENANCE_WEIGHT).toBeCloseTo(
-      0.2,
-      10
-    );
   });
 
   // @req REQ-092
@@ -334,17 +315,18 @@ describe("source tier vocabulary contract — Supabase schema", () => {
       readMigration("089_"),
       "oral_narratives_narrative_kind_check"
     );
-    expect([...allowed].sort()).toEqual([...ORAL_NARRATIVE_KINDS].sort());
-    expect(ORAL_NARRATIVE_KINDS).toEqual([
-      "tradition",
-      "testimony",
-      "memory",
-      "story",
-      "song",
-      "genealogy",
-      "motto",
-      "proverb",
-    ]);
+    expect([...allowed].sort()).toEqual(
+      [
+        "tradition",
+        "testimony",
+        "memory",
+        "story",
+        "song",
+        "genealogy",
+        "motto",
+        "proverb",
+      ].sort()
+    );
   });
 
   // @req REQ-092

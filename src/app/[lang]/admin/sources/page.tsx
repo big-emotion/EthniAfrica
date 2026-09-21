@@ -5,8 +5,15 @@ import { SourceReviewQueue } from "@/components/admin/SourceReviewQueue";
 import { FacetFilterBar } from "@/components/hubs/facets/FacetFilterBar";
 import { FacetPagination } from "@/components/hubs/facets/FacetPagination";
 import { PageLayout } from "@/components/layout/PageLayout";
+import {
+  QUEUE_PAGE_SIZES,
+  firstParam,
+  pageSizeParam,
+  type QueueSearchParams,
+} from "@/lib/admin/queueSearchParams";
 import { adminCopy } from "@/lib/i18n/copy/admin";
 import { getStaticPageRoute } from "@/lib/routing";
+import { noIndexMetadata } from "@/lib/seo/noIndexMetadata";
 import {
   SOURCE_REVIEW_KINDS,
   citationKey,
@@ -39,25 +46,14 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  return {
-    title: adminCopy[lang as Language].sourceReview.metadataTitle,
-    robots: { index: false, follow: false },
-  };
+  return noIndexMetadata(
+    adminCopy[lang as Language].sourceReview.metadataTitle
+  );
 }
 
 // Drafts are written from this very page; a cached render would hide them.
 // @req REQ-042
 export const dynamic = "force-dynamic";
-
-const PAGE_SIZES = [25, 50, 100] as const;
-
-type SearchParams = Record<string, string | string[] | undefined>;
-
-function one(params: SearchParams, key: string): string | null {
-  const value = params[key];
-  const first = Array.isArray(value) ? value[0] : value;
-  return first?.trim() || null;
-}
 
 // @req REQ-042
 export default async function SourceReviewPage({
@@ -65,7 +61,7 @@ export default async function SourceReviewPage({
   searchParams,
 }: {
   params: Promise<{ lang: string }>;
-  searchParams: Promise<SearchParams>;
+  searchParams: Promise<QueueSearchParams>;
 }) {
   await getModeratorSession();
 
@@ -80,13 +76,13 @@ export default async function SourceReviewPage({
   );
 
   const params = await searchParams;
-  const rawKind = one(params, "type");
+  const rawKind = firstParam(params, "type");
   const kind = SOURCE_REVIEW_KINDS.includes(rawKind as SourceReviewKind)
     ? (rawKind as SourceReviewKind)
     : undefined;
-  const rawUrl = one(params, "url");
-  const rawState = one(params, "etat");
-  const fiche = one(params, "fiche");
+  const rawUrl = firstParam(params, "url");
+  const rawState = firstParam(params, "etat");
+  const fiche = firstParam(params, "fiche");
   const filters: SourceReviewFilters = {
     kind,
     hasUrl: rawUrl === "avec" ? true : rawUrl === "sans" ? false : undefined,
@@ -105,16 +101,11 @@ export default async function SourceReviewPage({
     decidedKeys
   );
 
-  const requestedSize = Number(one(params, "taille"));
-  const pageSize = PAGE_SIZES.includes(
-    requestedSize as (typeof PAGE_SIZES)[number]
-  )
-    ? requestedSize
-    : PAGE_SIZES[0];
+  const pageSize = pageSizeParam(params);
   const pageCount = Math.max(1, Math.ceil(items.length / pageSize));
   const page = Math.min(
     pageCount,
-    Math.max(1, Number(one(params, "page")) || 1)
+    Math.max(1, Number(firstParam(params, "page")) || 1)
   );
   const cards = items
     .slice((page - 1) * pageSize, page * pageSize)
@@ -126,7 +117,7 @@ export default async function SourceReviewPage({
     if (rawUrl === "avec" || rawUrl === "sans") query.set("url", rawUrl);
     if (filters.state) query.set("etat", rawState);
     if (fiche) query.set("fiche", fiche);
-    if (nextSize !== PAGE_SIZES[0]) query.set("taille", String(nextSize));
+    if (nextSize !== QUEUE_PAGE_SIZES[0]) query.set("taille", String(nextSize));
     if (nextPage > 1) query.set("page", String(nextPage));
     const suffix = query.toString();
     return suffix ? `${route}?${suffix}` : route;
@@ -180,7 +171,7 @@ export default async function SourceReviewPage({
             },
           ]}
           preservedParams={{
-            taille: pageSize === PAGE_SIZES[0] ? null : String(pageSize),
+            taille: pageSize === QUEUE_PAGE_SIZES[0] ? null : String(pageSize),
           }}
         />
 
@@ -194,7 +185,7 @@ export default async function SourceReviewPage({
               page={page}
               pageCount={pageCount}
               pageSize={pageSize}
-              pageSizes={PAGE_SIZES}
+              pageSizes={QUEUE_PAGE_SIZES}
               position="top"
               total={items.length}
               unitLabel={copy.unit}
@@ -208,7 +199,7 @@ export default async function SourceReviewPage({
               page={page}
               pageCount={pageCount}
               pageSize={pageSize}
-              pageSizes={PAGE_SIZES}
+              pageSizes={QUEUE_PAGE_SIZES}
               position="bottom"
               total={items.length}
               unitLabel={copy.unit}

@@ -46,6 +46,7 @@ import {
   type VerifiedReporterContact,
 } from "@/lib/flags/reporterContact";
 import { logger } from "@/lib/api/logger";
+import { positiveIntFromEnv } from "@/lib/env";
 import * as Sentry from "@sentry/nextjs";
 import { serverCopy } from "@/lib/i18n/copy/server";
 import type { Language } from "@/types/shared";
@@ -85,7 +86,19 @@ const trimmedRequiredString = z.string().trim().min(1);
  * higher than the cost of letting one fast bot through to the proof of work,
  * which will charge it anyway.
  */
-const MIN_DWELL_MS = 3_000;
+const DEFAULT_MIN_DWELL_MS = 3_000;
+
+/**
+ * Read per request rather than at import, so a deployment can retune the
+ * filter without a rebuild. A malformed or non-positive value keeps the
+ * default: a typo must not switch the free filter off.
+ */
+function minDwellMs(): number {
+  return positiveIntFromEnv(
+    process.env.FLAG_MIN_DWELL_MS,
+    DEFAULT_MIN_DWELL_MS
+  );
+}
 
 const submissionShape = {
   target_field_path: trimmedRequiredString.optional(),
@@ -315,7 +328,7 @@ export async function handleFlagCreate(
    */
   if (
     parsed.data.website ||
-    (parsed.data.elapsedMs ?? Infinity) < MIN_DWELL_MS
+    (parsed.data.elapsedMs ?? Infinity) < minDwellMs()
   ) {
     return {
       status: 403,

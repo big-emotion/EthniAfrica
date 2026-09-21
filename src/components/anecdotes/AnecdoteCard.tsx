@@ -3,15 +3,14 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 import { TranslationProvenanceMarker } from "@/components/fiche/TranslationProvenanceMarker";
-import type { DidYouKnowEntity } from "@/lib/home/didYouKnowFacts";
 import type { DidYouKnowIllustration } from "@/lib/home/didYouKnowIllustrations";
 import type { LocalizedDidYouKnowFact } from "@/lib/home/didYouKnowLocalization";
 import {
   DID_YOU_KNOW_ENTITY_ACCENT,
+  didYouKnowEntityHref,
   type AnecdoteImageSide,
 } from "@/lib/home/didYouKnowPresentation";
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
-import { getCountryRoute, getFamilyRoute, getPeopleRoute } from "@/lib/routing";
 import type { Language } from "@/types/shared";
 
 export interface AnecdoteCardProps {
@@ -71,12 +70,6 @@ export interface AnecdoteCardProps {
  * The card keeps its id so a reader can link to one anecdote rather than to
  * the page that happens to hold it today.
  */
-
-function entityHref(language: Language, entity: DidYouKnowEntity): string {
-  if (entity.kind === "country") return getCountryRoute(language, entity.id);
-  if (entity.kind === "family") return getFamilyRoute(language, entity.id);
-  return getPeopleRoute(language, entity.id);
-}
 
 // @req REQ-113
 export function AnecdoteCard({
@@ -161,7 +154,7 @@ export function AnecdoteCard({
               <li key={`${entity.kind}-${entity.id}`}>
                 <Link
                   className={`anecdote-chip ${DID_YOU_KNOW_ENTITY_ACCENT[entity.kind]}`}
-                  href={entityHref(language, entity)}
+                  href={didYouKnowEntityHref(language, entity)}
                 >
                   <span aria-hidden="true" className="anecdote-dot" />
                   <span className="anecdote-chip-kind">

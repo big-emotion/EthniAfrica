@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import {
   handleFlagCreate,
   handleFlagDetail,
@@ -368,6 +368,50 @@ describe("flag handlers", () => {
       );
       expect(dependencies.checkFlagRateLimit).not.toHaveBeenCalled();
       expect(dependencies.createFlag).not.toHaveBeenCalled();
+    });
+
+    describe("the minimum dwell time", () => {
+      afterEach(() => {
+        vi.unstubAllEnvs();
+      });
+
+      async function submitAfter(elapsedMs: number) {
+        const dependencies = makeDependencies();
+        const result = await handleFlagCreate(
+          { ...validInput(), elapsedMs },
+          { accessToken: "valid-token" },
+          dependencies
+        );
+        return { result, dependencies };
+      }
+
+      // Nobody reads a fiche and describes its error in under three seconds.
+      // @req REQ-012
+      it("refuses a submission faster than three seconds by default", async () => {
+        const { result, dependencies } = await submitAfter(2_999);
+
+        expect(result.status).toBe(403);
+        expect(dependencies.verifyAntibotProof).not.toHaveBeenCalled();
+        expect((await submitAfter(3_000)).result.status).toBe(201);
+      });
+
+      // @req REQ-012
+      it("takes the threshold from FLAG_MIN_DWELL_MS", async () => {
+        vi.stubEnv("FLAG_MIN_DWELL_MS", "8000");
+
+        expect((await submitAfter(7_999)).result.status).toBe(403);
+        expect((await submitAfter(8_000)).result.status).toBe(201);
+      });
+
+      // A typo must not switch the free filter off: zero or garbage keeps the
+      // three-second default rather than admitting an instant submission.
+      // @req REQ-012
+      it("keeps the default when the configured value is not a positive integer", async () => {
+        for (const bad of ["0", "-1", "soon"]) {
+          vi.stubEnv("FLAG_MIN_DWELL_MS", bad);
+          expect((await submitAfter(1_000)).result.status, bad).toBe(403);
+        }
+      });
     });
 
     // @req REQ-140

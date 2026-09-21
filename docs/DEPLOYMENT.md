@@ -309,6 +309,22 @@ so the frontend embeds no key and its readers share the anonymous per-IP quota. 
 components read the services directly and never call `/api/v2` over HTTP, so the container's own
 address never pools every reader into one bucket.
 
+### Report and contact form tunables
+
+Each is optional; a malformed or non-positive value keeps the default rather than failing. The
+limiters need the same Upstash pair as above and fail open without it.
+
+| Variable                        | Meaning                                                     | Default  |
+| ------------------------------- | ----------------------------------------------------------- | -------- |
+| `FLAG_RATE_LIMIT_HOURLY`        | reports one reporter may file per hourly window             | `10`     |
+| `FLAG_RATE_LIMIT_HOURLY_WINDOW` | length of the hourly window (`@upstash/ratelimit` spelling) | `"1 h"`  |
+| `FLAG_RATE_LIMIT_DAILY`         | reports one reporter may file per daily window              | `30`     |
+| `FLAG_RATE_LIMIT_DAILY_WINDOW`  | length of the daily window                                  | `"24 h"` |
+| `FLAG_MIN_DWELL_MS`             | fastest a report form may be submitted (bot filter)         | `3000`   |
+| `FLAG_VERIFICATION_TTL_HOURS`   | lifetime of a reporter's e-mail verification link           | `24`     |
+| `CONTACT_RATE_LIMIT_MESSAGES`   | contact messages per address per window                     | `5`      |
+| `CONTACT_RATE_LIMIT_WINDOW`     | length of the contact window                                | `"1 h"`  |
+
 ---
 
 ## Database changes

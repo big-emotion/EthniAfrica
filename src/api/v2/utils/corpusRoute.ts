@@ -9,6 +9,7 @@
  */
 import { NextRequest } from "next/server";
 
+import { CORPUS_AGGREGATE_REVALIDATE_SECONDS } from "@/api/v2/services/corpusCache";
 import { createApiError } from "@/api/v2/utils/response";
 import { validateLang } from "@/api/v2/utils/validation";
 import { jsonWithCors } from "@/lib/api/cors";
@@ -18,9 +19,14 @@ import { logger } from "@/lib/api/logger";
  * The shared-cache lifetime of corpus data (the people-data class, AR18).
  * An hour, not `immutable`: every sync can rewrite any record, and an
  * immutable response is one a shared cache never asks about again.
+ *
+ * Derived from the window the aggregates are recomputed on, so the CDN and the
+ * server cache cannot promise two different hours. Fixed at build rather than
+ * read from the environment: the page-level `revalidate` literals that share
+ * this window cannot follow an environment variable.
  */
 // @req REQ-084
-export const CORPUS_CACHE_CONTROL = "s-maxage=3600";
+export const CORPUS_CACHE_CONTROL = `s-maxage=${CORPUS_AGGREGATE_REVALIDATE_SECONDS}`;
 
 type Locale = NonNullable<ReturnType<typeof validateLang>>;
 type ErrorCode = Exclude<

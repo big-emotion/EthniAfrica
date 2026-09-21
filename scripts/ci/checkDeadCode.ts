@@ -97,13 +97,13 @@ export const DEAD_CODE_CEILINGS: Readonly<Record<DeadCodeCategory, number>> = {
   // src/api/v2/schemas were removed by the next consolidation pass.
   // 8 -> 7 after the fiche parity cleanup removed another unused type.
   //
-  // 7 -> 10, upward and on purpose. Deleting the source model and its parser
-  // (2026-09-14 audit, D4-2) left `StructuredSourceRecord`,
-  // `AssertionSourceReference` and `LegacySourceCandidate` in
-  // src/types/sources.ts with no reader. That file is being reworked by the
-  // source-tier workstream in parallel, so the three are held here instead
-  // of deleted in a conflicting diff; removing them brings this back to 7.
-  types: 10,
+  // 10 -> 0 when the unused types were deleted with their modules:
+  // `StructuredSourceRecord`, `AssertionSourceReference` and
+  // `LegacySourceCandidate` (the source model the 2026-09-14 audit removed),
+  // the `fiche_revisions` / `assertions` row types, and four single-use
+  // aliases. What replaced them is a ceiling of zero, so one cannot come back
+  // unnoticed.
+  types: 0,
   duplicates: 0,
 };
 
@@ -181,9 +181,10 @@ export const PRODUCTION_DEAD_CODE_CEILINGS: Readonly<
   files: 3,
   // `tailwindcss-animate` is imported by tailwind.config.ts, which knip's
   // production mode does not follow even when the config is marked as a
-  // production entry. It is a real build dependency; the ceiling holds it at
-  // one so a second unused dependency cannot hide behind it.
-  dependencies: 1,
+  // production entry. It is a real build dependency, so `knip.json` lists it
+  // under `ignoreDependencies` and the ceiling is zero: a second unused
+  // dependency now fails outright instead of hiding behind the first.
+  dependencies: 0,
 };
 
 export function evaluateDeadCode(
