@@ -9,7 +9,7 @@
       "mainName": "Dyula",
       "selfAppellation": "Jula / Dyula",
       "exonyms": ["Dioula", "Juula", "Wangara", "Julakan"],
-      "originOfExonyms": "Le terme Dyula est un mot mandingue signifiant litteralement marchand ou commercant itinerant. Il designait initialement une categorie socioprofessionnelle (les marchands musulmans de longue distance) plutot qu'un groupe ethnique. Le terme est devenu progressivement un ethnyme pour les communautes manding etablies parmi les populations Gur comme les Senufo et les Kulango. Wangara est une autre denomination utilisee par les sources arabes medievales pour les memes marchands.",
+      "originOfExonyms": "Le terme Dyula est un mot mandingue signifiant litteralement marchand ou commercant itinerant. Il designait initialement une categorie socioprofessionnelle (les marchands musulmans de longue distance) plutot qu'un groupe ethnique. Le terme est devenu progressivement un ethnyme pour les communautes manding etablies parmi les populations Gur comme les Senufo et les Kulango. Wangara est une autre denomination utilisee par les sources arabes medievales pour les memes marchands. Selon Niane, Jula et Wangara sont synonymes et designent plus specialement les Manden qui s'adonnent au negoce.",
       "whyProblematic": "L'identite dyula est complexe car le terme a ete a la fois un nom de metier, une denomination religieuse (musulman commerçant) et un ethnyme. Des communautes Bambara et Mandinka se sont parfois vu attribuer ce terme de l'exterieur. Il existe aussi une forme vehiculaire simplifiee du dyula (dioula commercial) distincte du dyula identitaire parle par les communautes originaires.",
       "contemporaryUsage": "Le terme Dyula ou Dioula est couramment utilise en Cote d'Ivoire, au Burkina Faso et au Mali. La langue dioula sert de lingua franca dans une grande partie de la Cote d'Ivoire (61% de la population l'utilise) et du Burkina Faso (35%). Des villes comme Bobo-Dioulasso, Odienné et Kong sont historiquement associees aux communautes dyula.",
       "linguisticFamily": "FLG_MANDE",
@@ -27,8 +27,8 @@
       "Clan Taraweré (premiers dirigeants de Kong)"
     ],
     "origins": {
-      "ancientOrigins": "Les Dyula sont les descendants des marchands mandingues de l'empire du Mali (13e-17e siecles), eux-memes issus du foyer cultural du Mande dans la haute vallee du Niger. Le mot dyula (jula) designait les marchands musulmans de longue distance envoyes par les empereurs du Mali pour etablir des comptoirs commerciaux pres des gisements auriferes d'Afrique occidentale. Leurs ancetres ont embrasse l'islam au 13e siecle au contact des negociants nord-africains.",
-      "formationPeriod": "L'identite dyula distincte s'est consolidee entre le 14e et le 17e siecle, lors de l'etablissement de reseaux commerciaux dans la zone forestiere et de savane d'Afrique occidentale. La fondation de villes comme Kong (12e-17e siecles) et Bondoukou a marque la cristallisation de communautes dyula stables et autogouvernees.",
+      "ancientOrigins": "Les Dyula sont les descendants des marchands mandingues de l'empire du Mali (13e-17e siecles), eux-memes issus du foyer cultural du Mande dans la haute vallee du Niger. Le mot dyula (jula) designait les marchands musulmans de longue distance qui etablissaient des comptoirs commerciaux pres des gisements auriferes d'Afrique occidentale. Selon Niane, Soninke et Maninka etaient les specialistes du commerce de la cola et de l'or et fondaient des etapes vers Kong et Begho. L'islam est ancien chez les Manden : Niane date de 1050 l'islamisation des ancetres de Soundiata Keita.",
+      "formationPeriod": "L'identite dyula distincte s'est consolidee entre le 14e et le 17e siecle, lors de l'etablissement de reseaux commerciaux dans la zone forestiere et de savane d'Afrique occidentale. La fondation d'etapes commerciales comme Kong, deja citee par Niane a l'epoque du Mali, et de villes comme Bondoukou a marque la cristallisation de communautes dyula stables et autogouvernees.",
       "migrationRoutes": [
         "Empire du Mali vers les gisements auriferes du Ghana et de la Cote d'Ivoire (14e-15e siecle)",
         "Axe Djenne-Begho-Bono Manso vers le sud forestier",
@@ -129,6 +129,12 @@
         "title": "Globalization Partners International — Burkina Faso language and culture (2024)",
         "url": "https://www.globalizationpartners.com/2024/07/29/burkina-faso-language-and-culture/",
         "tier": "needs_review"
+      },
+      {
+        "title": "Niane, Djibril Tamsir (dir.) (1985) – Histoire générale de l'Afrique, tome IV : L'Afrique du XIIe au XVIe siècle. UNESCO, Paris",
+        "url": null,
+        "tier": "official",
+        "notes": "Publication de l'UNESCO. Le chapitre 6, signé Niane, suit les traditions orales des écoles de griots du Manden et les croise avec les auteurs arabes ; sa chronologie est relative. Antérieure aux relectures archéologiques de Niani."
       },
       {
         "title": "101 Last Tribes — Dyula people",
