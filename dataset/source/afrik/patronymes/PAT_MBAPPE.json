@@ -1,0 +1,232 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "patronyme",
+    "directives": "Fiche établie à partir de sources citées. Chaque affirmation est limitée à ce que dit sa source ; les champs non établis restent des lacunes explicites. La signification du nom n'est pas établie et n'est jamais affirmée."
+  },
+  "id": "PAT_MBAPPE",
+  "nameMain": "Mbappé",
+  "nameSystem": "clan_name",
+  "spellings": [
+    {
+      "spelling": "Mbape",
+      "attestations": [
+        {
+          "countryId": "CMR",
+          "sourceRefs": ["livre-blanc-bele-bele-2003", "forebears-mbape"]
+        }
+      ]
+    },
+    {
+      "spelling": "Mbappe",
+      "attestations": [
+        {
+          "countryId": "CMR",
+          "sourceRefs": [
+            "livre-blanc-bele-bele-2003",
+            "osidimbea-canton-bele-bele",
+            "forebears-mbappe"
+          ]
+        }
+      ]
+    },
+    {
+      "spelling": "Mbappé",
+      "attestations": [
+        {
+          "countryId": "CMR",
+          "sourceRefs": ["camer-be-meyomesse-2019", "forebears-mbappe-accent"]
+        }
+      ]
+    }
+  ],
+  "transmissionMode": "patrilineal",
+  "designatedSocialUnit": "lineage",
+  "origin": {
+    "oralTraditions": [
+      {
+        "claim": "Selon le prince Kum'a Ndumbe III, Mbape est d'abord le nom d'un ancêtre, fils du roi Béri ba Doo, fondateur de Bonabéri, puis le nom de ses descendants : ses fils Bwanga Mbape et Koum Mbape, dit Lock Priso, puis les lignées de Bonabéri qui se disent « Bona Mbap'a Bele » ou « Bona Kum'a Mbape ». Cette généalogie est portée par l'une des branches qui se disputent la chefferie des Bele Bele.",
+        "claimStatus": "claimed",
+        "griot": "Kum'a Ndumbe III, auteur du Livre Blanc de Bele Bele",
+        "transcription": "Livre Blanc de Bele Bele, mars 2003, page 2, citant une lettre de chefs du 17 février 1945 : « Mbape, fils du Roi Douala Béri-ba Doo, fondateur de Bonabéri, eut de son premier foyer plusieurs fils ; l'aîné, Bwanga Mbape (Bona Mujonge), […] fut écarté de la Chefferie par son père lui-même, qui désigna pour lui succéder son deuxième fils, Koum Mbape (Lock Priso) ». La page 6 du recueil et la page de l'association Osidimbea donnent la même suite de noms, Mbape puis Kum'a Mbape.",
+        "sourceRefs": [
+          "livre-blanc-bele-bele-2003",
+          "osidimbea-canton-bele-bele"
+        ]
+      }
+    ],
+    "writtenChronicles": [
+      {
+        "claim": "Le 28 août 1884, le roi d'Hickory Town (aujourd'hui Bonabéri) adresse au consul allemand Max Buchner une lettre en anglais demandant que le drapeau allemand soit retiré. Dans ces textes, la lettre est signée Lock Priso Bell ; le prince Kum'a Ndumbe III et la presse camerounaise en identifient l'auteur à Kum'a Mbape. La forme Mbape ne figure pas dans la signature.",
+        "claimStatus": "claimed",
+        "sourceRefs": [
+          "ndumbe-declaration-africavenir-2013",
+          "cameroon-tribune-lock-priso-2022"
+        ]
+      },
+      {
+        "claim": "Le 24 octobre 1912, une assemblée de chefs duala réunie sous la présidence de Rudolf Duala Manga Bell tranche un litige de succession au trône des Bele Bele entre Kum'a Mbape et Mbape a Bwanga. Le verdict, tel que le reproduit le recueil de 2003, attribue le trône à Kum'a Mbape. C'est la plus ancienne pièce datée, parmi celles consultées, où la forme Mbape est écrite.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["livre-blanc-bele-bele-2003"]
+      },
+      {
+        "claim": "Une lettre des chefs et notables du canton Bele Bele, datée du 17 février 1945 et adressée à l'administrateur des colonies, chef de la Région du Wouri, présente Mbape comme fils du roi Béri ba Doo et Koum Mbape, dit Lock Priso, comme l'un de ses fils.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["livre-blanc-bele-bele-2003"]
+      }
+    ],
+    "linguisticReconstructions": []
+  },
+  "peoples": [
+    {
+      "peopleId": "PPL_DUALA",
+      "status": "attested",
+      "sourceRefs": ["livre-blanc-bele-bele-2003"]
+    }
+  ],
+  "countries": [
+    {
+      "countryId": "CMR",
+      "status": "attested",
+      "sourceRefs": ["livre-blanc-bele-bele-2003", "forebears-mbappe"]
+    }
+  ],
+  "alliances": [],
+  "casteOrSocialFunction": null,
+  "bearers": [],
+  "homonyms": [
+    {
+      "label": "m'bapɛ",
+      "entityType": "other",
+      "entityId": null,
+      "distinction": "Nom commun duala, entrée du dictionnaire de Paul Helmlinger (1972, page 271) : « un aide, le second ; surtout : celui qui chante les refrains des chants des piroguiers ». Le dictionnaire ne relie pas ce mot au nom de famille et aucune source consultée ne le fait. L'atlas signale la ressemblance des formes ; ce n'est pas une étymologie.",
+      "sourceRefs": ["helmlinger-dictionnaire-duala-1972"]
+    },
+    {
+      "label": "Mbape, nom personnel",
+      "entityType": "other",
+      "entityId": null,
+      "distinction": "Dans les généalogies de Bonabéri, Mbape est un nom personnel porté par des ancêtres (Mbape, Bwanga Mbape, Koum Mbape, Mbape a Bwanga). Le nom de famille Mbappé est celui que des personnes portent aujourd'hui. Aucune source ne documente le passage de l'un à l'autre, ni ne dit si tous les porteurs actuels relèvent de ces généalogies.",
+      "sourceRefs": ["livre-blanc-bele-bele-2003"]
+    }
+  ],
+  "sources": [
+    {
+      "sourceKey": "helmlinger-dictionnaire-duala-1972",
+      "title": "Dictionnaire duala-français, suivi d'un lexique français-duala",
+      "url": "http://www.ddl.cnrs.fr/Projets/Clhass/PageWeb/ressources/duala.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Paul Helmlinger, Klincksieck, Paris, 1972, exemplaire numérisé. Page 271, entrée « m'bapɛ » : « un aide, le second ; surtout : celui qui chante les refrains des chants des piroguiers ». L'entrée ne mentionne pas le nom de famille."
+    },
+    {
+      "sourceKey": "livre-blanc-bele-bele-2003",
+      "title": "Le Livre Blanc de Bele Bele, traduction française, format tabloïd, mars 2003",
+      "url": "https://sad94e72f77868383.jimcontent.com/download/version/1721423345/module/7545904459/name/Le%20Livre%20Blanc%20des%20Bele%20Bele%20par%20le%20Prince%20Kum'a%20Ndumbe%20III.pdf",
+      "tier": "referenced",
+      "source_kind": "community",
+      "notes": "Recueil publié par le prince Kum'a Ndumbe III, qui y revendique la chefferie supérieure des Bele Bele dans un différend de succession avec une autre branche de la famille. Les pièces reproduites (lettres de 1945, verdict du 24 octobre 1912, actes de 1994) sont présentées par l'auteur. Le recueil désigne le père de Kum'a Mbape tantôt comme Mbape, tantôt comme Bele ba Doo."
+    },
+    {
+      "sourceKey": "osidimbea-canton-bele-bele",
+      "title": "Chefferie Supérieure du Canton Belè-Belè, association Osidimbea",
+      "url": "https://osidimbea-villages.jimdofree.com/chefferies/littoral/canton-bele-bele/",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Page sans auteur ni sources indiqués, hébergée par le site qui publie aussi le recueil de 2003 : elle n'en est donc pas indépendante. Elle liste « MBAPPE BELLÈ » (1804-1846), puis « KUM'A MBAPPE, Lock Priso » (1846-1916)."
+    },
+    {
+      "sourceKey": "ndumbe-declaration-africavenir-2013",
+      "title": "Déclaration solennelle du Prince Kum'a Ndumbe III, 28 août 1884 - 28 août 2013, au mausolée de Lock Priso (Kum'a Mbape)",
+      "url": "https://www.africavenir.org/en/declaration-solennelle-du-prince-kumandumbe-iii-sur-les-debuts-de-la-resistance-des-peuples-camerounais-a-loccupation-coloniale-28-aout-1884-28-aout-2013-au-mausolee-de-l/",
+      "tier": "referenced",
+      "source_kind": "community",
+      "notes": "Texte publié le 1er septembre 2013 par l'association AfricAvenir, de la plume du même auteur que le recueil de 2003, qui s'y dit descendant de Lock Priso. Il reproduit la lettre du 28 août 1884, signée « LOCK PRISO BELL », et écrit « Lock Priso Bell, ou Kum'a Mbap'a Bele ba Dooh »."
+    },
+    {
+      "sourceKey": "cameroon-tribune-lock-priso-2022",
+      "title": "Patrimoine : les héritages de Lock Priso, Cameroon Tribune",
+      "url": "https://www.cameroon-tribune.cm/article.html/50744/fr.html/patrimoine-les-heritages-de-lock",
+      "tier": "referenced",
+      "notes": "Article de Rita Diba, 30 août 2022 : « le 28 août 1884, Kum'a Mbape Bell, chef du canton Bèlè Bèlè, roi d'Hickory Town (aujourd'hui Bonabéri), nom de règne Lock Priso Bell, adresse une lettre en pidgin-english au consul allemand Max Buchner »."
+    },
+    {
+      "sourceKey": "camer-be-meyomesse-2019",
+      "title": "Livre de Enoh Meyomesse : Kum'a Mbappé Bonabéri 1884 Liberté, Camer.be",
+      "url": "https://www.camer.be/amp/75046/2:6/cameroun-livre-de-enoh-meyomesse-kuma-mbappe-bonaberi-1884-liberte-cameroon.html",
+      "tier": "referenced",
+      "notes": "Article de 2019 relayant un livre d'Enoh Meyomesse ; on y lit « Kum'a Mbappé, autrement appelé Lock Priso ». L'article n'explique pas le nom Mbappé."
+    },
+    {
+      "sourceKey": "forebears-mbappe",
+      "title": "Forebears, nom Mbappe",
+      "url": "https://forebears.io/surnames/mbappe",
+      "tier": "unverified",
+      "source_kind": "repository",
+      "notes": "Agrégateur généalogique dont la méthode de comptage n'est pas publiée. Environ 1 877 porteurs de la graphie Mbappe, dont 1 787 au Cameroun (73 % dans la région du Littoral) et 54 en France. Rattache le nom à un peuple appelé « Baasare »."
+    },
+    {
+      "sourceKey": "forebears-mbape",
+      "title": "Forebears, nom Mbape",
+      "url": "https://forebears.io/surnames/mbape",
+      "tier": "unverified",
+      "source_kind": "repository",
+      "notes": "Agrégateur généalogique dont la méthode de comptage n'est pas publiée. Environ 334 porteurs de la graphie Mbape, dont 227 au Cameroun, 34 en République démocratique du Congo, 29 en France et 27 au Zimbabwe."
+    },
+    {
+      "sourceKey": "forebears-mbappe-accent",
+      "title": "Forebears, nom Mbappé",
+      "url": "https://forebears.io/surnames/mbapp%C3%A9",
+      "tier": "unverified",
+      "source_kind": "repository",
+      "notes": "Agrégateur généalogique dont la méthode de comptage n'est pas publiée. Environ 4 porteurs de la graphie Mbappé, dont 3 en France et 1 au Cameroun."
+    }
+  ],
+  "gaps": [
+    {
+      "fieldPath": "origin.linguisticReconstructions",
+      "reason": "L'origine du nom n'est pas établie ; il est porté depuis au moins le XIXe siècle par des lignées de Bonabéri, selon les généalogies que celles-ci publient. Aucun linguiste ni ethnologue consulté ne propose de sens pour Mbappé ou pour ses éléments. Des pages de noms de famille en ligne avancent des significations ; aucune ne cite de spécialiste ni de source vérifiable."
+    },
+    {
+      "fieldPath": "origin.writtenChronicles",
+      "reason": "Aucune attestation du nom dans un registre ou un courrier de l'administration allemande du Kamerun (1884-1916) n'a été trouvée. La lettre de 1884 est signée Lock Priso Bell ; la plus ancienne pièce datée trouvée où figure la forme Mbape est le verdict de 1912, reproduit dans un recueil de 2003."
+    },
+    {
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Le recueil de 2003 n'est pas constant sur la filiation : il présente tantôt Mbape comme le père de Kum'a Mbape, tantôt Bele ba Doo comme son père. L'atlas ne tranche pas ; il rapporte la suite de noms citée dans la lettre de 1945. Le recueil est publié par l'un des prétendants à la chefferie, dans un différend de succession."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Les sources décrivent Mbape comme le nom d'un ancêtre transmis à des lignées de Bonabéri, de père en fils. Elles ne disent pas si le nom porté aujourd'hui est un nom de lignée, un nom personnel devenu nom de famille ou autre chose : le classement en nom de lignée reprend ce que décrivent ces généalogies, et la transmission de père en fils n'est documentée que pour elles."
+    },
+    {
+      "fieldPath": "spellings",
+      "reason": "Aucune source consultée ne dit laquelle des graphies Mbape, Mbappe et Mbappé est la première, ni pourquoi elles diffèrent. Le passage d'un nom personnel duala à un nom de famille inscrit à l'état civil (allemand, français ou britannique) n'est documenté par aucune source consultée, et l'atlas ne cite aucune étude sur les noms personnels duala devenus noms de famille."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Un agrégateur de noms de famille rattache le nom à un peuple appelé « Baasare » ; les sources sur les lignées de Bonabéri décrivent des familles duala. L'atlas ne reprend que le rattachement duala, le seul que des généalogies étayent."
+    },
+    {
+      "fieldPath": "homonyms",
+      "reason": "Les sources consultées ne permettent pas de dire si tous les porteurs actuels descendent des lignées de Bonabéri, ni de relier celles-ci à d'autres porteurs du Littoral. La graphie Mbape est aussi relevée par un agrégateur en République démocratique du Congo, au Zimbabwe et en Indonésie, sans que rien n'indique un lien avec le nom camerounais."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "Les sources consultées ne mentionnent aucune alliance ni parenté à plaisanterie attachée au nom."
+    },
+    {
+      "fieldPath": "casteOrSocialFunction",
+      "reason": "Les sources consultées ne rattachent le nom à aucune fonction sociale héréditaire."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "Aucun porteur décédé n'est cité faute de source suffisante, et l'atlas ne liste pas de personnes vivantes : le sujet est le nom, pas une famille."
+    }
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
+    }
+  }
+}
