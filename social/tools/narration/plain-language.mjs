@@ -116,7 +116,7 @@ function plier(texte) {
  * Cuts one paragraph into sentences. A full stop inside « … » ends nothing; a
  * quotation that closes on a full stop ends the sentence it sits in.
  */
-function decouperEnPhrases(paragraphe) {
+export function decouperEnPhrases(paragraphe) {
   const phrases = [];
   let debut = 0;
   let profondeur = 0;

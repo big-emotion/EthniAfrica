@@ -148,7 +148,36 @@ dans `docs/productions/<typologie>/` avant de proposer) :
   correspond à aucun sujet, réseau/format que §1 bis n'autorise pas) se
   corrige avant d'aller plus loin — ne la reporte pas à `produire`.
 
-## Un lot sur un pays : ce que l'audience doit repartir avec
+## La narration d'un reel : un gabarit par catégorie, et rien d'autre
+
+Décidé par l'opérateur le 2026-09-21. **La narration d'un reel « D'où vient le nom
+X ? » suit le gabarit de sa catégorie — peuple, pays, patronyme, lieu ou langue —
+sans une scène de plus ni de moins.** Le gabarit complet, ses phrases fixes, ce
+qui change d'une catégorie à l'autre et les cas qu'il ne couvre pas sont dans
+`.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md` : ouvre-le
+avant d'écrire une seule phrase. Ce
+skill n'en garde aucune copie, parce qu'une deuxième copie de la doctrine est celle
+qui dérive.
+
+- **La catégorie est la `typologie` du rapport de sujet et du carnet.** Elle
+  détermine le gabarit ; ne la déduis pas du contenu.
+- **`node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <catégorie>`
+  la vérifie**, et se lance avant `check-narration.mjs` : un texte hors gabarit se
+  réécrit avant d'être affiché à l'opérateur.
+- **Un cas hors gabarit — typologie `mot`, groupe sans nom pour lui-même, plus de
+  quatre noms de l'intérieur, un seul nom — s'arrête et se dit à l'opérateur.** Ne
+  fabrique pas une variante.
+- **Corriger une narration déjà écrite, non publiée** : lance le contrôleur, réécris
+  dans le gabarit, relance jusqu'à ✔, puis repasse par la validation du texte. Ne
+  touche ni aux faits, ni aux sources, ni aux licences.
+- **Les anciennes trames de reel n'existent plus** : le renversement du type, la
+  clôture par type, la trame « le nom remonte, puis les peuples remontent ». Le
+  carrousel garde la sienne (section suivante) et son gabarit propre, traité à part.
+
+## Un carrousel sur un pays : ce que l'audience doit repartir avec
+
+**Cette section vaut pour un carrousel.** Un reel n'y est pas soumis : sa narration
+suit le gabarit ci-dessus, et l'origine de chaque peuple n'y a pas de scène.
 
 Décidé par l'opérateur le 2026-09-16, sur un premier jet Guinée dont le flux
 était juste et dont on ne retenait que trois choses : le nom vient de la mer, il
@@ -381,9 +410,11 @@ précède les cinq portes de `produire`, elle ne s'y ajoute pas.
 
 Avant de dire que `structure` est fini :
 
-0. **Lance `node social/tools/narration/check-narration.mjs` sur `narration.fr.txt`.**
-   Un texte qui échoue se réécrit avant d'être affiché : l'opérateur n'a pas à
-   valider une phrase que l'outil sait déjà refuser.
+0. **Lance les deux contrôleurs sur `narration.fr.txt`.** D'abord
+   `node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <catégorie>`
+   pour un reel (le gabarit), puis `node social/tools/narration/check-narration.mjs`
+   (la lecture simple). Un texte qui échoue se réécrit avant d'être affiché :
+   l'opérateur n'a pas à valider une phrase que l'outil sait déjà refuser.
 1. **Lance `ethniafrica-mythe` sur les cartes écrites**, et affiche son verdict
    avec le texte : la correction que le rapport de sujet avait vérifiée a pu
    glisser en devenant une carte.
