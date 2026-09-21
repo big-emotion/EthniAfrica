@@ -3,17 +3,21 @@
   "nameFr": "Ghana",
   "nameEn": "Ghana",
   "nameOfficial": "République du Ghana (Republic of Ghana)",
-  "summary": "Le Ghana a choisi en 1957 le nom d'un empire qui ne se trouvait pas sur son territoire : le Wagadu, situé plus au nord-ouest. Premier État d'Afrique subsaharienne à accéder à l'indépendance, il succède à la colonie britannique de la Côte-de-l'Or sur un sol qui fut celui des royaumes akan — Ashanti, Denkyira, Akwamu — et des peuples mole-dagbani, ewe et ga-dangme. Le kente et l'adinkra en sont les signatures visuelles.",
-  "etymology": "Le nom \"Ghana\" a été choisi lors de l'indépendance en 1957 en référence à l'empire du Ghana (Wagadu), un ancien empire ouest-africain (IIIe-XIIIe siècles). Cependant, l'empire historique du Ghana était situé en Mauritanie et au Mali actuels, pas dans le territoire du Ghana moderne. Le nom est donc symbolique et ne correspond pas à l'ancienne localisation de l'empire.",
-  "nameOriginActor": "Le nom \"Ghana\" a été choisi par Kwame Nkrumah et les nationalistes ghanéens lors de l'indépendance en 1957 pour honorer l'héritage historique de l'empire du Ghana, bien que l'empire historique ne se trouvait pas sur le territoire actuel.",
+  "summary": "Le Ghana a pris en 1957 le nom d'un ancien royaume, le Wagadu selon la tradition soninké, qui se trouvait bien plus au nord-ouest, hors de son territoire ; les sources ne s'accordent pas sur qui a choisi ce nom. Premier État d'Afrique subsaharienne à accéder à l'indépendance, il succède à la colonie britannique de la Côte-de-l'Or sur un sol qui fut celui des royaumes akan — Ashanti, Denkyira, Akwamu — et des peuples mole-dagbani, ewe et ga-dangme. Le kente et l'adinkra en sont les signatures visuelles.",
+  "etymology": "Le nom \"Ghana\" est celui d'un ancien royaume ouest-africain que les sources arabes médiévales appellent Ghana, et que la tradition orale soninké situe à Wagadu (Hunwick). Selon l'Encyclopaedia Africana, ce royaume se trouvait bien plus au nord-ouest, entre le Sahara et les hauts cours du Sénégal et du Niger, et non sur le territoire du Ghana actuel. Chez al-Bakri (1067-1068), \"Ghana\" est le titre que portent les rois de ce peuple, et le nom du pays est Awkar. Le sens du mot est rapporté de plusieurs façons : \"chef de guerre\", selon une traduction courante (Citi Newsroom, 2026), ou nom de la dynastie Kaya Maghan, glosé \"roi de l'or\" en soninké dans une chronique de Tombouctou, une glose que Delafosse et Hunwick discutent en proposant chacun un autre sens du mot kaya (Hunwick, 2003). Le 11 décembre 1956, un ministre britannique déclare aux Communes que ce nom a été conféré au nouveau pays \"conformément aux vœux locaux\" et qu'il était celui d'un ancien royaume \"dans ce qui est aujourd'hui un territoire français au sud du Sahara\". Le Ghana Independence Act de 1957 place les territoires de la Côte-de-l'Or \"sous le nom de Ghana\", et l'Encyclopaedia Africana date du 6 mars 1957 le moment où le nom a été pris. J. B. Danquah voyait dans les Akan des descendants de ce royaume ; l'Encyclopaedia Africana juge la preuve douteuse et Citi Newsroom relève que la recherche n'a pas établi de lien migratoire direct.",
+  "nameOriginActor": "Le choix du nom n'est attribué de la même façon par aucune source. L'Encyclopaedia Africana écrit que la suggestion de donner le nom Ghana à la Côte-de-l'Or est due à J. B. Danquah. MyJoyOnline (2019) et Citi Newsroom (2026) rapportent qu'il avait d'abord proposé \"Akanland\". Citi Newsroom lui attribue ensuite \"Akan-Ga\", puis l'idée de \"New Ghana\", que MyJoyOnline tire d'une chronique du Times of West Africa du 26 mars 1934. Citi Newsroom écrit que Kwame Nkrumah a joué un rôle décisif pour en faire le nom officiel de l'État. Devant les Communes, en décembre 1956, le gouvernement britannique dit seulement que le nom a été conféré conformément aux vœux locaux, sans nommer personne. En septembre 2023, un dirigeant politique ghanéen a contesté publiquement que Danquah ait proposé ce nom, selon la presse (Onua Online). Aucun texte d'époque cité ici ne désigne l'auteur du choix.",
   "content": {
     "historicalNames": {
-      "formerNames": ["Côte-de-l'Or / Gold Coast (XVe-XIXe siècles)"],
-      "antiquity": "Le territoire était peuplé de royaumes Akan (Bono, Akwamu, Denkyira, Asante, Fante, Akuapem), peuples Ga-Dangme, Guan, Gur et Mandé sans nom unifié. L'empire du Ghana (Wagadu) était situé en Mauritanie/Mali, pas dans le Ghana actuel.",
+      "formerNames": [
+        "Mina (portugais, 1471)",
+        "Gout-Custe de Mina (néerlandais, 1602)",
+        "Gold Coast (anglais, forme employée dans la traduction de Bosman de 1705), colonie de la Côte-de-l'Or (1874-1957)"
+      ],
+      "antiquity": "Le territoire était peuplé de royaumes Akan (Bono, Akwamu, Denkyira, Asante, Fante, Akuapem), peuples Ga-Dangme, Guan, Gur et Mandé. Le royaume dont le nom a été repris en 1957 (Wagadu pour la tradition soninké) se trouvait beaucoup plus au nord-ouest : un traité arabe médiéval cité par Hunwick le place à Awkar, région marquée Aouker sur les cartes actuelles, dans le nord du Hawd. Il n'était pas sur le territoire du Ghana actuel.",
       "middleAges": "Développement des royaumes Akan (XIIIe-XIXe siècles). Royaume Ashanti (Asante) devient le plus puissant. Commerce avec les Européens (or, esclaves).",
-      "precolonial": "Royaumes Akan puissants (Ashanti, Denkyira, Akwamu), peuples Ga-Dangme sur la côte, royaumes gur au nord (Dagomba, Mamprusi). Commerce côtier avec les Européens. Pas de nom unifié pour l'ensemble du territoire.",
-      "colonization": "XVe-XIXe siècles : présence portugaise, néerlandaise puis britannique. Nom colonial : \"Côte-de-l'Or\" (Gold Coast), qui désigne le territoire par la ressource que les Européens y extraient plutôt que par les royaumes et les peuples qui l'habitent — une logique de nomination partagée avec les autres \"côtes\" du golfe de Guinée (Côte-des-Esclaves, Côte-d'Ivoire, Côte du Poivre), qui efface les entités politiques locales derrière le commerce colonial.",
-      "contemporary": "Indépendance en 1957 sous le nom de \"Ghana\" (choisi en référence à l'empire historique). Le nom officiel en anglais est \"Republic of Ghana\"."
+      "precolonial": "Royaumes Akan puissants (Ashanti, Denkyira, Akwamu), peuples Ga-Dangme sur la côte, royaumes gur au nord (Dagomba, Mamprusi). Commerce côtier avec les Européens. Aucune des sources citées ici ne donne de nom pour l'ensemble du territoire avant la colonisation.",
+      "colonization": "XVe-XIXe siècles : présence portugaise, néerlandaise, danoise puis britannique. Selon Duarte Pacheco Pereira (vers 1505-1508), le lieu de traite d'or de Shama, où les Portugais obtiennent de l'or en janvier 1471, était alors appelé Mina ; il date de 1482 le château de São Jorge da Mina et parle de la côte de Malagueta ou de Mina. Un ouvrage néerlandais de 1602 intitule la côte \"Gout-Custe de Mina\". La traduction anglaise de Bosman, publiée en 1705, décrit déjà la \"Gold-Coast\" comme une partie de la Guinée. Une charte du 24 juillet 1874 constitue la colonie sous le nom de \"Gold Coast Colony\". Les sources citées ici n'attestent ni une forme portugaise \"Costa do Ouro\" ni un emploi anglais de \"Gold Coast\" avant 1705. Nom colonial : \"Côte-de-l'Or\" (Gold Coast), qui désigne le territoire par la ressource que les Européens y extraient plutôt que par les royaumes et les peuples qui l'habitent — une logique de nomination partagée avec les autres \"côtes\" du golfe de Guinée (Côte-des-Esclaves, Côte-d'Ivoire, Côte du Poivre), qui efface les entités politiques locales derrière le commerce colonial.",
+      "contemporary": "Le 6 mars 1957, la colonie de la Côte-de-l'Or prend le nom de Ghana à l'indépendance (Encyclopaedia Africana) ; le Ghana Independence Act de 1957 place ses territoires \"sous le nom de Ghana\". Le nom officiel en anglais est \"Republic of Ghana\"."
     },
     "kingdoms": [
       {
@@ -251,6 +255,78 @@
         "url": "https://archive.org/details/politicalhistory0000kimb",
         "tier": "referenced",
         "notes": "Étude historique de référence sur la politique coloniale de la Côte-de-l'Or entre 1850 et 1928, publiée par Oxford University Press en 1963."
+      },
+      {
+        "title": "Chambre des communes du Royaume-Uni — Ghana Independence Bill, 11 décembre 1956 (Hansard)",
+        "url": "https://api.parliament.uk/historic-hansard/commons/1956/dec/11/ghana-independence-bill",
+        "tier": "official",
+        "notes": "Compte rendu parlementaire de l'intervention de lord John Hope, sous-secrétaire d'État aux Relations avec le Commonwealth : le nom \"Ghana\" a été conféré au nouveau pays \"in accordance with local wishes\". Le texte rapporte aussi la motion adoptée le 3 août 1956 par 72 voix contre zéro, l'opposition étant absente."
+      },
+      {
+        "title": "Ghana Independence Act 1957 (Royaume-Uni)",
+        "url": "https://www.legislation.gov.uk/ukpga/Eliz2/5-6/6/enacted",
+        "tier": "official",
+        "notes": "Texte de la loi britannique publié par le service des archives nationales du Royaume-Uni ; l'article 1 fait des territoires de la Côte-de-l'Or une partie des dominions de la Couronne \"under the name of Ghana\"."
+      },
+      {
+        "title": "Encyclopaedia Africana — Ghana",
+        "url": "https://encyclopaediaafricana.com/ghana/",
+        "tier": "referenced",
+        "notes": "Article de l'encyclopédie en ligne : il attribue à J. B. Danquah la suggestion du nom, situe l'ancien royaume entre le Sahara et les hauts cours du Sénégal et du Niger, juge douteuse la preuve d'une filiation akan et donne le 6 mars 1957 pour la date à laquelle le nom a été pris."
+      },
+      {
+        "title": "MyJoyOnline — J. B. Danquah and the naming of our Republic (5 juin 2019)",
+        "url": "https://www.myjoyonline.com/j-b-danquah-and-the-naming-of-our-republic/",
+        "tier": "referenced",
+        "notes": "Article de presse ghanéenne, sans note ni bibliographie : il cite l'Akim Abuakwa Handbook (1928) et une chronique du Times of West Africa du 26 mars 1934, et rapporte les propositions \"Akanland\", \"Akan-Ga\" et \"New Ghana\"."
+      },
+      {
+        "title": "Citi Newsroom — From Gold Coast to Ghana: History, Memory and the Naming of a Nation (mars 2026)",
+        "url": "https://www.citinewsroom.com/2026/03/from-gold-coast-to-ghana-history-memory-and-the-naming-of-a-nation/",
+        "tier": "referenced",
+        "notes": "Tribune de Jimmy Kutin, historien et éducateur : elle rapporte les propositions de J. B. Danquah, le rôle de Kwame Nkrumah dans l'adoption du nom, la traduction courante de ghana par \"chef de guerre\" et l'absence de lien migratoire établi entre l'empire médiéval et les Akan."
+      },
+      {
+        "title": "Onua Online — J.B Danquah did not propose the name Ghana (25 septembre 2023)",
+        "url": "https://onuaonline.com/j-b-danquah-did-not-propose-the-name-ghana-asiedu-nketia/",
+        "tier": "unverified",
+        "notes": "Article de presse ghanéenne rapportant la déclaration d'un dirigeant politique, qui affirme que J. B. Danquah proposait \"Akanland\" et non \"Ghana\" ; aucun document n'est cité."
+      },
+      {
+        "title": "Al-Bakri — Notice sur le Soudan (vers 1070), extrait du Kitab al-masalik",
+        "url": "https://www.culture-islam.fr/contrees/sahel/al-bakri-notice-sur-le-soudan-v-1070-n-e",
+        "tier": "unverified",
+        "notes": "Extrait en français mis en ligne sur un site de vulgarisation, sans nom de traducteur : \"Ghana est le titre que portent les rois de ce peuple ; le nom de leur pays est Awkar\", écrit en l'an 460 de l'Hégire (1067-1068)."
+      },
+      {
+        "title": "Hunwick, John O. — Timbuktu and the Songhay Empire: Al-Sa'di's Ta'rikh al-Sudan down to 1613 and other contemporary documents",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Traduction annotée publiée par Brill en 2003 : le chapitre 4 (notes 1 et 3) rapporte la glose \"roi de l'or\" en soninké du nom Kayamagha, l'explication proposée par Delafosse, la localisation de Ghana à Awkar, dans le nord du Hawd, et le nom soninké Wagadu."
+      },
+      {
+        "title": "Pacheco Pereira, Duarte — Esmeraldo de situ orbis (vers 1505-1508), traduction de G. H. T. Kimble",
+        "url": "https://archive.org/details/in.ernet.dli.2015.280017",
+        "tier": "referenced",
+        "notes": "Traduction anglaise publiée par la Hakluyt Society en 1937 ; livre II, chapitres 4 et 5 : le lieu de traite d'or de Samaa, \"at that time called Mina\", en janvier 1471, et le château de São Jorge da Mina, 1482."
+      },
+      {
+        "title": "De Marees, Pieter — Beschryvinghe ende historische verhael van het Gout koninckrijck van Gunea, anders de Gout-Custe de Mina genaemt (1602)",
+        "url": "https://archive.org/details/beschryvingheend00mare",
+        "tier": "referenced",
+        "notes": "Édition de la Linschoten-Vereeniging d'un ouvrage néerlandais de 1602 ; le titre appelle la côte \"Gout-Custe de Mina\"."
+      },
+      {
+        "title": "Bosman, William — A New and Accurate Description of the Coast of Guinea (1705)",
+        "url": "https://archive.org/details/newaccuratedescr00bosm",
+        "tier": "referenced",
+        "notes": "Traduction anglaise, publiée en 1705, d'un ouvrage écrit en néerlandais ; l'exemplaire consulté est une réédition en fac-similé de 1907. La lettre I décrit la \"Gold-Coast\" comme une partie de la Guinée."
+      },
+      {
+        "title": "Colonial Reports — Annual Report on the Social and Economic Progress of the People of the Gold Coast, 1935-36 (n° 1785)",
+        "url": "https://libsysdigi.library.illinois.edu/ilharvest/africana/books2011-05/5530214/5530214_1935_1936/5530214_1935_1936_opt.pdf",
+        "tier": "official",
+        "notes": "Rapport annuel officiel du gouvernement colonial britannique : il rappelle la charte du 24 juillet 1874 qui constitue la \"Gold Coast Colony\"."
       }
     ],
     "demographics": {
