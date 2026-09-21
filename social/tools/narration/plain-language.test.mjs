@@ -30,6 +30,9 @@ test("a statement may not open on a complement, an adverb or a conjunction", () 
 
 test("an imperative has no subject and is refused", () => {
   assert.deepEqual(regles("Aidez-nous à le vérifier."), ["sujet-en-premier"]);
+  assert.deepEqual(regles("Partagez-la sur EthniAfrica."), [
+    "sujet-en-premier",
+  ]);
 });
 
 test("a speech verb placed after its quotation is refused", () => {
