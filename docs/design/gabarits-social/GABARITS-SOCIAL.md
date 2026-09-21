@@ -951,6 +951,19 @@ vision que la voix ne dit pas garde l'ancien repli : c'est un lot à reprendre d
 > 4. La durée de la carte fixe sous la clôture unique n'est pas mesurée : 24 mots
 >    dictés, environ 7 s d'après la mesure de l'ancienne clôture.
 
+### La narration du reel : un gabarit par catégorie
+
+Décidé par l'opérateur le 2026-09-21. Entre la question d'ouverture et la clôture
+unique ci-dessus, **la narration d'un reel suit le gabarit de sa catégorie** —
+peuple, pays, patronyme, lieu ou langue — sans une scène de plus ni de moins :
+ouverture, inventaire de deux à quatre noms, un bloc par nom (le nom de
+l'intérieur d'abord), classement, synthèse, clôture. Le gabarit, ses phrases fixes
+et ce qui change d'une catégorie à l'autre sont écrits une seule fois, dans
+`.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md` ; le
+contrôleur est `social/tools/narration/check-gabarit.mjs`, et le carrousel n'est
+pas concerné. Cette spécification ne recopie pas le gabarit : une deuxième copie
+est celle qui dérive.
+
 ### La table par type de contenu
 
 **Depuis le 2026-09-21, les colonnes « Patron de titre d'ouverture », « Titre de
