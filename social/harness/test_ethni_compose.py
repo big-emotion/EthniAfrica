@@ -12,7 +12,7 @@ import pathlib
 import sys
 import tempfile
 
-from PIL import Image
+from PIL import Image, ImageDraw
 
 import ethni_compose as gab
 import ethni_tokens as tk
@@ -1100,6 +1100,34 @@ def test_the_gates_read_the_parallel_like_any_printed_field():
     verdict = gab.portes([carte(images=images)], DECK)
     assert any(m.startswith("carte 2 : image 2") and "surtitre" in m
                for m in verdict.manquantes), verdict.manquantes
+
+
+def _encre_de(texte, f):
+    """The pixels a line leaves on a blank plate, whatever drew them."""
+    plaque = Image.new("L", (500, 130), 0)
+    gab.peindre_texte(ImageDraw.Draw(plaque), (10, 10), texte, f, 255)
+    return plaque.tobytes()
+
+
+def test_a_glyph_the_face_lacks_is_drawn_by_a_fallback_not_as_a_hole():
+    """« ɛ » is the open e of Helmlinger's Duala spelling, « m'bapɛ ».
+
+    Nunito Sans has no such letter, so the 1972 scene of the Mbappé reel drew the
+    empty .notdef box in the caption and in the precision line. Nothing failed:
+    the composition path measured text and never asked whether the face could draw
+    it. U+E000 is a private-use codepoint no face maps, so it stands for the hole.
+    """
+    f = gab.fonte("nunito", 60, 800)
+    assert _encre_de("m'bapɛ", f) != _encre_de("m'bap", f)
+
+
+def test_a_line_the_face_covers_is_drawn_exactly_as_before():
+    """The fallback must not re-render the back catalogue: a covered line keeps
+    the one `d.text` call it always had, so its pixels do not move."""
+    f = gab.fonte("nunito", 60, 800)
+    plaque = Image.new("L", (500, 130), 0)
+    ImageDraw.Draw(plaque).text((10, 10), "Bonabéri, un quartier", font=f, fill=255)
+    assert _encre_de("Bonabéri, un quartier", f) == plaque.tobytes()
 
 
 def main():
