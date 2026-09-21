@@ -116,7 +116,6 @@ dans `docs/productions/<typologie>/` avant de proposer) :
   "episode": <celui du rapport de sujet>,
   "question": { "fr": "D'où vient le nom <X> ?" },
   "myth": { "fr": "<le mythe attesté, reformulé en question, jamais affirmé>" },
-  "narrativePattern": "<la ligne de §7 ter que la clôture a prise>",
   "subjects": [
     { "kind": "people|country|family|language|patronyme", "id": "<PPL_…|ISO 3166-1|FLG_…|ISO 639-3|PAT_…>", "label": { "fr": "<nom affiché>" } }
   ],
@@ -134,12 +133,10 @@ dans `docs/productions/<typologie>/` avant de proposer) :
   corpus ni une fiche pour remplir `subjects[]`.
 - **`question.fr` et `myth.fr` doivent se terminer par « ? »** — jamais une
   affirmation, même hedgée par « aurait ». Le gate le refuse sinon.
-- **`narrativePattern` — règle proposée, à confirmer par l'opérateur.** Un reel qui
-  prend la clôture unique de §7 ter ne remplit pas `narrativePattern` : cette clôture
-  ne prend aucune ligne de la table. On ne le remplit que pour un carrousel, dont la
-  table par type est conservée. Le gate ne l'exige pas (clé facultative, valeur non
-  contrôlée), donc cette règle ne change aucun contrôle ; laisse la clé absente plutôt
-  que d'en inventer une valeur.
+- **`narrativePattern` n'existe plus pour un nouveau lot** (2026-09-21) : la table par
+  type de contenu de §7 ter qu'il nommait est retirée, pour le carrousel comme pour le
+  reel. Laisse la clé absente. Les entrées déjà écrites la gardent, et le gate ne la
+  contrôle pas (clé facultative, valeur non contrôlée).
 - **`publications` part vide.** Ce carnet ne connaît un lien qu'une fois publié ;
   c'est `produire`, puis l'opérateur, qui les ajoutent au fur et à mesure —
   jamais `structure`, qui écrit avant tout rendu.
@@ -252,6 +249,16 @@ ne le remplace. Le **carrousel** a son accroche propre — le mythe posé au lec
 en question. Le plafond de huit mots de §1 ter est une décision ouverte pour cette
 accroche : signale-la à l'opérateur, ne la tranche pas.
 
+## Le carrousel : un seul gabarit
+
+Un carrousel « nom de X » suit `references/gabarit-carrousel-nom.md`, dans cet ordre et
+pour les cinq typologies : accroche (la question du mythe) → réponse au mythe →
+cadrage → inventaire → une fiche par appellation → classement → morale → clôture
+unique. Le fichier porte la fiche d'une appellation, les trois statuts, ce qui change
+d'une typologie à l'autre, les règles de rédaction et cinq exemples fictifs, qui sont le
+modèle à reproduire. Un sujet sans mythe sourcé n'a pas de carrousel : arrête-toi et
+dis-le, n'invente pas de mythe pour remplir l'accroche.
+
 ## La clôture, et la fin parlée
 
 **Un reel a une clôture unique**, quel que soit le type du sujet, patronyme compris
@@ -262,34 +269,17 @@ brut**, au moment d'écrire. Ce skill n'en garde aucune copie : une deuxième co
 doctrine est celle qui dérive. « Partagez-la » est un impératif que le contrôle de
 lecture de la narration relèvera : c'est une exception voulue, pas une faute à réécrire.
 
-Le titre et le corps de la clôture d'un **carrousel** **varient avec le type de
-contenu** : ils sont fixes dans un type — c'est la signature — et changent d'un type
-à l'autre. Seule la ligne de vision est la même partout. Ils se prennent **dans la
-table par type de contenu de §7 ter**, mot pour mot et en texte brut, au moment
-d'écrire : `cards.json` ne porte jamais `**`, le moteur passe lui-même le dernier
-mot du titre de clôture en accent.
+Un **carrousel** se ferme sur **la même clôture unique**, mot pour mot, en dernière
+carte, après la morale (décidé par l'opérateur le 2026-09-21). La table par type de
+contenu de §7 ter n'existe plus : il n'y a plus ni titre de clôture propre au type, ni
+ligne de vision, ni renversement d'agent, ni compte chiffré. `cards.json` ne porte
+jamais `**` ; le moteur passe lui-même le dernier mot du titre en accent.
 
-Un lot de carrousel dont le type n'a pas de ligne dans la table, ou dont la case est
-encore marquée « à fixer » ou « à valider », s'arrête et le dit. Une clôture ne
-s'invente pas dans une carte.
-
-La carte de clôture d'un **reel** porte `titre` (la première phrase de la clôture
-unique) et `corps` (la seconde), et **rien d'autre** : ni `source`, ni `pivot`, ni
-`appel`. Sans `source` le moteur ne pose pas de plaque de vision ; sans `appel` la
-pastille est l'adresse par défaut. Un compte chiffré recopié dans `appel` serait un
-nombre en dur que la production ne relit pas.
-
-La carte de clôture d'un **carrousel** porte :
-
-- `titre` — celui du type ;
-- `corps` — celui du type, c'est-à-dire la seconde moitié du renversement. Ce n'est
-  plus une datation ;
-- `source` — la ligne de vision de §7 ter ;
-- `pivot` — le membre de phrase que la plaque de vision passe en accent ;
-- `appel` — `{n} peuples · ethniafrica.com`.
-
-Le compte de `appel` se **mesure sur le corpus**, il ne se recopie ni d'une
-vidéo précédente ni d'un exemple du gabarit.
+La carte de clôture, pour un reel comme pour un carrousel, porte `titre` (la première
+phrase de la clôture unique) et `corps` (la seconde), et **rien d'autre** : ni
+`source`, ni `pivot`, ni `appel`. Sans `source` le moteur ne pose pas de plaque de
+vision ; sans `appel` la pastille est l'adresse par défaut. Un compte chiffré recopié
+dans `appel` serait un nombre en dur que la production ne relit pas.
 
 **Aucune clôture n'écrit « Berlin » comme celui qui a tracé les lignes, ni
 « mille ans » comme un fait**, tant que la session de doctrine n'a pas tranché
@@ -337,6 +327,9 @@ les scènes et le dit.
   synthèse, la morale, avant la conclusion »). **Elle se propose à l'opérateur dans la
   conversation, en deux ou trois options, avant d'être écrite** dans `narration.fr.txt`
   et `cartes.json` : il choisit, puis le texte complet repasse par la validation.
+- **Un carrousel a la sienne : la morale.** Elle répond à la question de l'accroche
+  et à rien d'autre, sans jugement (`references/gabarit-carrousel-nom.md`). Elle se
+  propose à l'opérateur de la même façon avant d'être écrite.
 
 Trois guides restent dans la bibliothèque de production, avec les sujets qu'ils
 servent. Ils portent de la doctrine éditoriale datée, pas du code :

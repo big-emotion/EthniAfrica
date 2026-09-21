@@ -137,16 +137,10 @@ report, and is a one-line edit to this table — never a code change.
    path they resolve to (`sitePath`).
 2. Pick the next free `episode` number for the subject's `typologie` — read
    the highest-numbered file already in that typologie's subdirectory.
-3. Pick the `narrativePattern` from GABARITS §7 ter's table. If no row
-   matches (a genuine gap exists today for a plain patronyme episode — see
-   the plan's §5), raise it with the operator or `/ethniafrica-onomastique`
-   before filing; a subject with no matching row has no closing, per §7 ter's
-   own rule. Proposed rule, **to be
-   confirmed by the operator**: a reel that takes §7 ter's single reel closing
-   (2026-09-21) fills no `narrativePattern`, because that closing takes no row of
-   the table; it is filled only for a carousel, whose per-type table is kept.
-   `checkProductionLedger.ts` does not require the key, so nothing in the gate
-   changes.
+3. Leave `narrativePattern` out. It named a row of GABARITS §7 ter's per-type
+   table, which was deleted on 2026-09-21: a reel and a carousel now share one
+   closing, so no row is left to pick. Entries filed earlier keep the key, and
+   `checkProductionLedger.ts` never required it, so nothing in the gate changes.
 4. Leave `publications[]` empty until something is actually posted; add one
    row per network × format as it goes out, `url` included once known —
    never omitted for being unknown yet.
