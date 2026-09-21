@@ -346,7 +346,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
       "Aucun de ces noms n'est faux, et un seul est le leur. La dispersion du vocabulaire suit celle du peuple : présents du Sénégal au Soudan, les Fulɓe ont été nommés par chacun de leurs voisins, puis par chaque administration coloniale qui les a rencontrés, dans la langue qu'elle avait sous la main.",
     ],
     entities: [
-      { kind: "people", id: "PPL_FULANI", label: "Fulɓe (Peul)" },
+      { kind: "people", id: "PPL_FULA", label: "Fulɓe (Peul)" },
       { kind: "country", id: "SEN", label: "Sénégal" },
       { kind: "country", id: "MLI", label: "Mali" },
       { kind: "country", id: "NER", label: "Niger" },
