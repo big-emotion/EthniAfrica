@@ -97,11 +97,12 @@ describe("PPL_FULA — where the names come from", () => {
   });
 
   // @req REQ-178
-  it("does not state that Fula comes from Mandinka: no source read says so", () => {
+  it("attributes Fula to the Mandinka and the Susu through the sources that say so, and tells nothing of the fiche's own past", () => {
     const origin = readerNaming().origin ?? "";
 
-    expect(origin).toMatch(/Fula[^.]*mandingue[^.]*sans source/);
-    expect(origin).toMatch(/Arnott/);
+    expect(origin).toMatch(/Fula[^.]*Mandinka[^.]*Susu[^.]*Arnott/);
+    expect(origin).toMatch(/Britannica[^.]*1911[^.]*nom mandingue/);
+    expect(origin).not.toMatch(/version antérieure|cette fiche/);
   });
 
   // @req REQ-178
@@ -165,6 +166,19 @@ describe("PPL_FULA — the sources behind the names", () => {
 
     const tauxier = sources.find((source) => source.title.includes("Tauxier"));
     expect(tauxier?.notes).toMatch(/pas été lus directement/);
+  });
+
+  // @req REQ-178
+  it("cites the Britannica entry on Fula that the Mandinka attribution rests on, as unverified", () => {
+    const sources: FulaSource[] = readFula().content.sources;
+    const fula = sources.find(
+      (source) =>
+        source.url ===
+        "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Fula"
+    );
+
+    expect(fula?.tier).toBe("unverified");
+    expect(fula?.notes).toMatch(/nom mandingue|Mandingan/);
   });
 
   // @req REQ-178
