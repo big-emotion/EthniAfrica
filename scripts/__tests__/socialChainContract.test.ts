@@ -16,6 +16,10 @@ import {
   MYTH_SKILL,
   PIPELINE_STATE_TOOL,
   RENDER_SKILL,
+  TITLE_RULE_CALLERS,
+  TITLE_RULE_HEADING,
+  TITLE_RULE_PHRASE,
+  TITLE_RULE_REFERENCE,
   checkSocialChainContract,
 } from "../lib/socialChainContract";
 
@@ -203,6 +207,63 @@ describe("social chain contract", () => {
     expect(issues).toContainEqual({
       skill: firstCaller,
       detail: `does not follow ${FORMAT_RULE_REFERENCE} of GABARITS-SOCIAL.md`,
+    });
+  });
+
+  // @req REQ-032
+  it("names the thumbnail section, the title law and the steps that follow it", () => {
+    expect(TITLE_RULE_HEADING).toBe("## 1 ter. La miniature");
+    expect(TITLE_RULE_PHRASE).toBe("D'où vient le nom");
+    expect(TITLE_RULE_REFERENCE).toBe("§1 ter");
+    expect(TITLE_RULE_CALLERS).toEqual([
+      "ethniafrica-idee",
+      "ethniafrica-structure",
+    ]);
+  });
+
+  // @req REQ-032
+  it("flags a thumbnail section that no longer carries the reel title law", () => {
+    // The law was written in an essay and in `idee` only. `structure` reads the
+    // spec, so a title such as « Trois versions disent… » passed every step:
+    // nothing the step reads said otherwise.
+    const spec = [
+      FORMAT_RULE_HEADING,
+      FORMAT_RULE_NETWORKS.join(" · "),
+      `${TITLE_RULE_HEADING}\n\nHuit mots au plus, et le dernier porte l'accent.`,
+      "## 2. Couleurs\n\nD'où vient le nom, hors de la section.",
+    ].join("\n\n");
+    const issues = checkSocialChainContract(projectRoot, {
+      [FORMAT_RULE_SOURCE]: spec,
+    });
+
+    expect(issues).toContainEqual({
+      skill: FORMAT_RULE_SOURCE,
+      detail: `the section ${TITLE_RULE_HEADING} does not carry the reel title law « ${TITLE_RULE_PHRASE} »`,
+    });
+  });
+
+  // @req REQ-032
+  it("flags a template spec that loses the thumbnail section", () => {
+    const issues = checkSocialChainContract(projectRoot, {
+      [FORMAT_RULE_SOURCE]: `${FORMAT_RULE_HEADING}\n\n${FORMAT_RULE_NETWORKS.join(" · ")}\n`,
+    });
+
+    expect(issues).toContainEqual({
+      skill: FORMAT_RULE_SOURCE,
+      detail: `does not carry the section ${TITLE_RULE_HEADING}`,
+    });
+  });
+
+  // @req REQ-032
+  it("flags a production step that no longer follows the thumbnail section", () => {
+    const [firstCaller] = TITLE_RULE_CALLERS;
+    const issues = checkSocialChainContract(projectRoot, {
+      [firstCaller]: `---\nname: ${firstCaller}\n---\nCalls ethniafrica-mythe, follows ${FORMAT_RULE_REFERENCE}, titles a reel as it likes.`,
+    });
+
+    expect(issues).toContainEqual({
+      skill: firstCaller,
+      detail: `does not follow ${TITLE_RULE_REFERENCE} of GABARITS-SOCIAL.md`,
     });
   });
 });

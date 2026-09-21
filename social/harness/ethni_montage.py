@@ -173,6 +173,17 @@ _OUTILS = {"le", "la", "les", "un", "une", "des", "de", "du", "et", "en", "a",
            "sa", "ses", "plus", "aussi", "sont", "est", "ont", "on", "vous"}
 
 
+def carte_de_cloture(deck):
+    """The closing card, or None: a patronym reel has no closing (§7 ter, 2026-09-21).
+
+    Every check below is judged against the closing's own words. Handed the last
+    development card instead, they would call a closing-less reel's narration « an
+    address » and cue the sign-off card on words that were never a closing.
+    """
+    derniere = deck["cartes"][-1]
+    return derniere if derniere.get("role") == "bascule" else None
+
+
 def doctrine_en_dernier_paragraphe(narration, cloture):
     """Whether the closing paragraph says the doctrine, or only an address.
 
@@ -181,13 +192,17 @@ def doctrine_en_dernier_paragraphe(narration, cloture):
     an address is everything above it.
 
     Matched on the closing card's own words rather than on a fixed phrase, so a
-    lot that writes its own reversal is judged against the reversal it wrote.
+    lot that writes its own closing is judged against the closing it wrote. The
+    card's body counts with its title: the reel closing (§7 ter) sets its
+    doctrine on the card and has the voice explain and invite, so the voice
+    shares words with the body — « source », « sourcer » — not with the title.
     """
     blocs = [b.strip() for b in narration.split("\n\n") if b.strip()]
     if not blocs or not cloture:
         return True
     dite = {m for m in gab._mots(blocs[-1]) if m not in _OUTILS and len(m) > 2}
-    ecrite = {m for m in gab._mots(f"{cloture.get('titre', '')} {cloture.get('source', '')}")
+    ecrite = {m for m in gab._mots(" ".join(
+        cloture.get(champ, "") or "" for champ in ("titre", "corps", "source")))
               if m not in _OUTILS and len(m) > 2}
     return len(dite & ecrite) >= 2
 
@@ -378,7 +393,8 @@ def main():
 
     # §9 bis — the sign-off card, cued on the last spoken sentence and held for
     # the length its animation needs.
-    debut_fin = fin_debut(sous_titres, deck["cartes"][-1])
+    cloture = carte_de_cloture(deck)
+    debut_fin = fin_debut(sous_titres, cloture)
     fin_totale = max(total, (debut_fin or 0) + FIN_SECONDES)
 
     verdict = gab.portes(deck["cartes"], deck)
@@ -407,13 +423,13 @@ def main():
     if ecart:
         verdict.remarques.append(ecart)
 
-    if not doctrine_en_dernier_paragraphe(narration, deck["cartes"][-1]):
+    if not doctrine_en_dernier_paragraphe(narration, cloture):
         verdict.remarques.append(
             "le dernier paragraphe de narration est une adresse, pas la doctrine — "
-            "§9 bis : la voix finit où l'image finit, sur le renversement et la "
-            "vision. Correctif structure, pas moteur.")
+            "§9 bis : la voix finit où l'image finit, sur ce que dit la clôture. "
+            "Correctif structure, pas moteur.")
 
-    if deck["cartes"][-1].get("role") == "bascule":
+    if cloture:
         # The closing sets its vision and reserves no caption band, so what is said
         # over it is heard and not read. Its **own** paragraph belongs there and
         # says the same thing as the card. What does not belong is an earlier

@@ -480,6 +480,76 @@ def test_the_closing_slots_are_its_own():
     assert p.bloc("bande-cloture").h == gab.V_BAS_CLOTURE
 
 
+# The reel closing of §7 ter (2026-09-21, card wording provisional) is one closing for
+# every subject but the patronym, whose reel has none. It is a self-contained card
+# on purpose: the tests above read a deck out of the private workshop, which a
+# fresh checkout does not have.
+CLOTURE_REEL = {
+    "rang": 11, "role": "bascule",
+    "titre": "Nous ne jugeons personne. Nous racontons les noms.",
+    "corps": "Une source à nous confier ? Aidez-nous à les sourcer.",
+    "source": "Nommer un peuple aussi facilement qu'un pays.",
+    "pivot": "peuple", "appel": "774 peuples · ethniafrica.com",
+}
+
+
+def test_the_reel_closing_wording_fits_the_closing_slots():
+    """The new title is fifty characters where the retired reversals were thirty.
+
+    So it is measured composed, not counted: it has to stay inside the closing's
+    title slot, keep its punch on the last word, and leave the body on the slot
+    below it — otherwise the engine would have to shrink it, which §1 ter forbids
+    for titles.
+    """
+    deck = {"fond": "nuit", "accent": "ocre", "serie": "D'où vient le nom ?",
+            "montage": True, "cartes": [CLOTURE_REEL]}
+    plan = gab.plan_video(CLOTURE_REEL, deck,
+                          image=Image.new("RGB", (1080, 1920), (60, 50, 40)))
+    haut, h = gab.V_TITRE_CLOTURE
+    titre, corps = plan.bloc("v-titre"), plan.bloc("v-datation")
+    assert titre.y >= haut - 1, "le titre de clôture sort de son emplacement"
+    assert titre.y + titre.h <= corps.y, "le titre recouvre le corps"
+    assert corps.y + corps.h <= haut + h + 1, "le corps sort de l'emplacement"
+    assert titre.accent_depuis == len(titre.texte.split()) - 1, (
+        "la chute n'est pas le dernier mot")
+
+
+VOIX_CLOTURE_REEL = (
+    "Notre projet raconte d'où viennent les noms d'Afrique, sources à l'appui. Vous "
+    "avez une source, une histoire, un nom qu'on vous a transmis ? Aidez-nous à le "
+    "sourcer, sur ethniafrica.com."
+)
+
+
+def test_the_reel_closing_voice_counts_as_saying_the_doctrine():
+    """The voice explains the project and invites; it never repeats the card title.
+
+    §9 bis forbids saying aloud what the card sets, so the montage cannot judge the
+    last paragraph by the card's title alone — that answered « une adresse » for the
+    one closing the spec now asks for, and would have said so on every reel.
+    """
+    import ethni_montage as mt
+    assert mt.doctrine_en_dernier_paragraphe(
+        "Un récit.\n\n" + VOIX_CLOTURE_REEL, CLOTURE_REEL)
+
+
+def test_a_reel_without_a_closing_has_no_closing_card():
+    """A patronym reel ends on its last development card (rule 8 of the lot decisions).
+
+    Passing that card on as « the closing » made the montage judge the narration
+    against a title that was never a closing, and cue the sign-off card on its words.
+    """
+    import ethni_montage as mt
+    developpement = {"rang": 5, "role": "developpement", "titre": "Un nom de famille"}
+    assert mt.carte_de_cloture({"cartes": [developpement]}) is None
+    assert mt.carte_de_cloture({"cartes": [developpement, CLOTURE_REEL]}) is CLOTURE_REEL
+
+
+def test_a_reel_without_a_closing_is_never_told_its_last_paragraph_is_an_address():
+    import ethni_montage as mt
+    assert mt.doctrine_en_dernier_paragraphe("Un récit.\n\nUne dernière phrase.", None)
+
+
 def test_the_sign_off_card_follows_the_closing_and_never_eats_it():
     """§9 bis — la carte de fin suit la clôture ; elle ne la remplace jamais.
 

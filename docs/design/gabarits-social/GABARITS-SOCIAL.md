@@ -135,8 +135,36 @@ et toutes les six portaient un de ces blocs en trop.
 **Ce qu'une miniature ne fait pas** : promettre ce que la production ne paie pas.
 Une accroche dont la pièce ne referme pas la question n'est pas une accroche,
 c'est un appât — et sur un atlas sourcé, c'est aussi un mensonge sur le corpus.
-La chute du §7 ter reste la règle : la miniature dit la chute du sujet, elle ne
-l'annonce pas.
+La chute du §7 ter reste la règle pour un carrousel : la miniature dit la chute du
+sujet, elle ne l'annonce pas. Un reel, lui, a sa propre loi, juste ci-dessous.
+
+### Le titre d'un reel est une loi
+
+**Un reel s'intitule « D'où vient le nom « X » ? », et rien d'autre** — `{X}` est le
+nom de travail du sujet : « D'où vient le nom « Ghana » ? ». C'est le titre de la
+carte d'ouverture, donc la miniature, **et** le titre du post sur chaque réseau. Pas
+de variante, pas de chute inventée : « Trois versions disent qui a nommé le Ghana »
+n'est pas un titre de reel.
+
+La loi vient de l'essai du 2026-09-17
+(`docs/editorial/essais/dou-viennent-les-noms-2026-09-17.md`, « le format social se
+réduit à un seul »), elle est écrite dans `ethniafrica-idee`, et l'opérateur l'a
+rappelée le 2026-09-21. Elle n'était pas écrite ici, et `structure` lit cette
+section : c'est pour cela qu'un lot a été titré autrement. Elle satisfait les quatre
+règles ci-dessus — cinq mots, le dernier, le nom, porte l'accent — et **remplace, pour
+un reel, le patron de titre d'ouverture de la table de §7 ter**. La miniature ne
+promet que ce que la pièce paie : elle pose la question du sujet, et la pièce y
+répond.
+
+**Le carrousel n'a pas cette loi.** Son accroche est le mythe posé au lecteur, en
+question — pour le Ghana : « Le nom du Ghana actuel vient-il de l'ancien empire du
+Ghana ? ».
+
+> **Décision ouverte — à trancher par l'opérateur.** Cette accroche fait onze mots,
+> et la règle 3 en plafonne huit : le moteur la refuserait comme titre d'ouverture.
+> Trois issues, aucune n'est choisie ici : raccourcir l'accroche ; faire porter la
+> loi du reel à la carte 1 du carrousel et la question du mythe à la carte 2 ; ou
+> écrire ici une exception à la règle 3 pour cette carte.
 
 ---
 
@@ -840,7 +868,75 @@ question à l'opérateur ou à `/ethniafrica-onomastique` avant d'écrire sa
 clôture : une ligne qui n'existe pas encore ne s'invente pas dans une carte,
 la règle ci-dessous vaut ici comme partout ailleurs dans cette table.
 
+### Le reel a un couple unique : sa question et sa clôture
+
+Décidé par l'opérateur le 2026-09-21, en donnant suite à l'essai du 2026-09-17 : « une
+question unique remplace les clôtures » de la table ci-dessous. **Pour un reel**, quel
+que soit le type du sujet — **sauf le patronyme**, voir l'exception plus bas :
+
+- **L'ouverture** est la question de §1 ter, « D'où vient le nom « X » ? ». Le patron
+  de titre d'ouverture de la table ne vaut plus pour un reel.
+- **La clôture est unique.** Elle fait trois choses, dans cet ordre : porter la doctrine
+  de la page « À propos » (`purposeChapter.claim`, dans `src/lib/i18n/copy/about.ts`),
+  expliquer le projet en une phrase, inviter l'auditeur à nous aider à sourcer.
+
+> **La carte est provisoire, la voix est décidée.** Le titre et le corps de la carte
+> ont été rédigés le 2026-09-21 à partir de ces trois consignes ; l'opérateur ne les a
+> pas encore validés. La phrase de voix, elle, est celle qu'il a arrêtée le même jour.
+>
+> | Élément | Texte |
+> | --- | --- |
+> | Carte, titre — mot en accent : « noms. » | « Nous ne jugeons personne. Nous racontons les noms. » |
+> | Carte, corps | « Une source à nous confier ? Aidez-nous à les sourcer. » |
+> | Carte, ligne de vision et pastille | inchangées : la ligne de vision (plus bas, « L'ouverture », point 3) ; « {n} peuples · ethniafrica.com » |
+> | Voix (29 mots, décidée) | « Notre projet raconte d'où viennent les noms d'Afrique, sources à l'appui. Vous avez une source, une histoire, un nom qu'on vous a transmis ? Aidez-nous à le sourcer, sur ethniafrica.com. » |
+
+La phrase de la carte n'est pas redite à la voix (§9 bis) : la voix explique le projet
+et invite, la carte pose la doctrine. **L'invitation renvoie à un endroit qui reçoit
+la source** — le signalement de la fiche du sujet. Un sujet dont la fiche n'est pas
+en production n'invite pas : une boucle ouverte se referme, et une invitation sans
+adresse ne le fait pas.
+
+**La ligne de vision reste.** Le moteur la compose sur la plaque de clôture depuis le
+champ `source`, et l'ouverture la porte aussi (§10) : le schéma en a besoin, et elle
+reste constante, mot pour mot. Elle n'est pas le titre : le titre dit l'engagement du
+site, la vision dit ce que le projet fait de chaque nom.
+
+**Ce qui est retiré, pour un reel seulement** : les colonnes « Titre de clôture »,
+« Mot en accent à la clôture » et « Corps de clôture » de la table, et son patron de
+titre d'ouverture. Les lignes restent, datées : le carrousel les garde, et l'historique
+de leurs décisions se lit encore. **La clôture du carrousel n'est pas changée.** Les
+interdits ne bougent pas : aucune datation, ni « Berlin » comme auteur des lignes, ni
+« mille ans » comme un fait — la clôture ci-dessus n'en porte aucun.
+
+**Exception : le reel d'un patronyme n'a pas de clôture.** La clôture unique ne lui en
+donne pas une. Réponse de l'opérateur du 2026-09-21, qui recoupe ce que la section
+« La typologie du sujet n'est pas la ligne de la table » écrit déjà : aucune ligne ne
+couvre un patronyme simple, et sans ligne une pièce n'a pas de clôture. Son
+`narrativePattern` reste absent du carnet. **La loi du titre (§1 ter) s'applique au
+patronyme sans exception** : sa miniature est « D'où vient le nom « X » ? » comme celle
+de tous les reels. Le montage traite ce cas : sans carte de clôture, il ne juge pas la
+narration contre une clôture qui n'existe pas (`carte_de_cloture`,
+`ethni_montage.py`).
+
+> **Décisions ouvertes — à trancher par l'opérateur.**
+> 1. Le titre et le corps de la carte de clôture ci-dessus (la voix est décidée).
+> 2. Deux phrases sur le projet cohabitent sur la même carte, le titre et la ligne de
+>    vision : la plaque de vision reste-t-elle, ou porte-t-elle l'invitation ?
+> 3. La clôture du carrousel : garde-t-elle sa table, ou s'aligne-t-elle sur celle du
+>    reel ?
+> 4. La lecture de « le message de la doctrine » : la phrase de la page « À propos »
+>    (retenue ici) ou « ce peuple n'a pas été divisé, la carte a été dessinée
+>    par-dessus ».
+> 5. La carte de fin d'un reel de patronyme, qui n'a pas de clôture : le montage la
+>    cale, par son repli existant, sur le début de la dernière légende. Elle est à
+>    garder ou à retirer.
+
 ### La table par type de contenu
+
+**Depuis le 2026-09-21, les colonnes « Patron de titre d'ouverture », « Titre de
+clôture » et « Corps de clôture » ne valent que pour le carrousel** : un reel prend le
+couple de la section précédente. La table est gardée telle quelle, avec ses dates.
 
 **Une seule table, lue par l'ouverture comme par la clôture.** Les skills de la chaîne
 y renvoient et n'en gardent aucune copie. Un lot dont le type n'a pas de ligne ici, ou
@@ -1042,6 +1138,9 @@ Pas de chiffre, pas de paire, pas de source : une ouverture n'a rien à prouver 
 
 ### La carte de clôture
 
+**Ce qui suit vaut pour un carrousel.** Un reel prend, depuis le 2026-09-21, la
+clôture unique de « Le reel a un couple unique » ci-dessus.
+
 Disposition **A** ou **B**. Le renversement d'agent, puis la vision, puis la sortie :
 
 1. **Le renversement**, au titre, le dernier mot en accent. Il se prend **mot pour mot
@@ -1225,17 +1324,21 @@ sinon c'est le fond sous lui qui manque de voile, et aucun z-index n'y change ri
 ### La clôture porte la doctrine, jamais un lien seul
 
 « Vous pouvez trouver les peuples sur EthniAfrica » n'est pas une clôture, c'est une
-adresse. La clôture dit, dans cet ordre : le titre de clôture de son type, le corps de
-clôture de son type, la ligne de vision, puis le lien. Titre et corps se prennent dans
-la table par type de contenu de §7 ter ; pour un lot sur un peuple réparti sur plusieurs
-pays :
+adresse. La clôture dit, dans cet ordre : son titre, son corps, la ligne de vision,
+puis le lien. **Pour un reel, titre et corps sont ceux de la clôture unique de §7 ter**
+(2026-09-21, carte provisoire) :
 
-> **Ce peuple n'a pas été divisé.**
-> C'est la carte qui a été dessinée par-dessus.
+> **Nous ne jugeons personne. Nous racontons les noms.**
+> Une source à nous confier ? Aidez-nous à les sourcer.
 > Nommer un peuple aussi facilement qu'un pays.
 > {n} peuples · ethniafrica.com
 
 `{n}` se mesure sur le corpus le jour du rendu.
+
+L'ancienne clôture vidéo prenait titre et corps dans la table par type de contenu
+(pour un peuple réparti sur plusieurs pays : « Ce peuple n'a pas été divisé. » puis
+« C'est la carte qui a été dessinée par-dessus. »). Elle est retirée pour le reel ; le
+carrousel la garde.
 
 **Le dernier mot du titre passe en accent, et lui seul** — c'est la chute, comme sur
 toutes les lignes de la table. L'ancienne clôture vidéo mettait les deux phrases d'un
@@ -1246,7 +1349,9 @@ tranché.
 
 **Budget de la clôture :** titre Anton 80 px sur trois lignes (259 px) + corps deux
 lignes (96 px) = 375 px, emplacement à `top: 890` sur 380. La rampe du voile se recale
-d'autant — `top: 590`.
+d'autant — `top: 590`. La clôture unique du reel, mesurée le 2026-09-21, y tient avec
+de la marge : deux lignes de titre pour cinquante caractères, une ligne de corps
+(`test_the_reel_closing_wording_fits_the_closing_slots`).
 
 ### La carte de fin suit la clôture, et n'arrive que sur la phrase qui l'appelle
 
@@ -1284,10 +1389,17 @@ EthniAfrica on documente d'où viennent les noms » est une adresse ; un montage
 l'image dit la doctrine et dont la voix dit l'adresse se contredit sur sa dernière
 seconde.
 
-La fin parlée dit **le renversement du type — son titre puis son corps de clôture —,
-puis la sortie**. Rien d'autre. Le renversement n'est pas universel : il est celui de la
-ligne du lot dans la table par type de contenu de §7 ter. Pour un lot sur un peuple
-réparti sur plusieurs pays :
+**Pour un reel, la fin parlée explique le projet puis invite à sourcer** — depuis le
+2026-09-21, phrase décidée par l'opérateur (§7 ter). Elle ne redit pas le titre de la carte :
+
+> Notre projet raconte d'où viennent les noms d'Afrique, sources à l'appui. Vous avez
+> une source, une histoire, un nom qu'on vous a transmis ? Aidez-nous à le sourcer,
+> sur ethniafrica.com.
+
+Avant cette date, la fin parlée disait **le renversement du type — son titre puis son
+corps de clôture —, puis la sortie**, et rien d'autre : celui de la ligne du lot dans
+la table par type de contenu de §7 ter. Pour un lot sur un peuple réparti sur
+plusieurs pays, elle disait :
 
 > Ce peuple n'a pas été divisé. C'est la carte qui a été dessinée par-dessus.
 > Retrouvez l'histoire du nom des peuples sur EthniAfrica. Et bientôt, celle des lieux.
@@ -1300,10 +1412,13 @@ fois la même phrase et immobiliser l'image le temps de le faire.
 | --- | --- | --- |
 | renversement · datation · vision · sortie | 58 | **21,4 s** |
 | renversement · sortie | 23 | **7 s** |
+| projet · invitation (clôture unique du reel) | 29 | **≈ 9 s — estimé** au débit de la ligne précédente, pas encore mesuré |
 
-Mesuré sur l'ancienne clôture, dont le renversement faisait dix mots. La fin parlée
-d'un lot sur un peuple en fait vingt-sept, du même ordre que la seconde ligne : la
-durée se mesure sur le lot, elle ne se recopie pas de ce tableau.
+Les deux premières lignes sont mesurées sur l'ancienne clôture, dont le renversement
+faisait dix mots. La fin parlée d'un lot sur un peuple en fait vingt-sept, du même
+ordre que la seconde ligne : la durée se mesure sur le lot, elle ne se recopie pas de
+ce tableau. La troisième reste à mesurer sur le premier reel rendu avec la clôture
+unique.
 
 Vingt secondes sur une image fixe, c'est une image qu'on quitte. La clôture doit
 être aussi brève que l'ouverture.
@@ -1506,13 +1621,19 @@ avant son premier rendu.
 - [ ] La licence de sortie est celle du lot, calculée et non recopiée.
 - [ ] Aucune note interne visible sur l'image.
 - [ ] Le crédit nomme le document réellement affiché.
-- [ ] **Titre et image d'ouverture propres au sujet ; titre et corps de clôture fixés
-      par le type de contenu** (table de §7 ter) ; image de clôture propre au sujet ;
-      ligne de vision constante, mot pour mot.
-- [ ] **Le titre de clôture renverse le bon sujet** — pas « ce peuple » sur un lot de
-      villes ou de projection.
+- [ ] **Reel : le titre d'ouverture est « D'où vient le nom « X » ? »** (§1 ter) et la
+      clôture est la clôture unique de §7 ter — sauf un reel de patronyme, qui n'en
+      a pas ; image de clôture propre au sujet ; ligne de vision constante, mot pour
+      mot.
+- [ ] **Carrousel : titre et image d'ouverture propres au sujet ; titre et corps de
+      clôture fixés par le type de contenu** (table de §7 ter) ; image de clôture
+      propre au sujet ; ligne de vision constante, mot pour mot.
+- [ ] **Carrousel : le titre de clôture renverse le bon sujet** — pas « ce peuple » sur
+      un lot de villes ou de projection.
 - [ ] **B n'est jamais une ouverture.**
-- [ ] **La clôture porte le renversement d'agent et la ligne de vision**, pas un appel
-      à l'action seul.
-- [ ] **Vidéo : la dernière image EST la clôture.** Aucune carte d'outro, aucun mur
+- [ ] **Carrousel : la clôture porte le renversement d'agent et la ligne de vision**,
+      pas un appel à l'action seul. **Reel : elle porte la doctrine, le projet expliqué
+      et l'invitation à sourcer, et la ligne de vision** — pas un appel à l'action seul.
+- [ ] **Vidéo : la dernière image EST la clôture** (un reel de patronyme, sans
+      clôture, finit sur sa dernière carte). Aucune carte d'outro, aucun mur
       d'icônes, aucun fond parchemin après elle.

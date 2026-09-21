@@ -59,6 +59,21 @@ export const FORMAT_RULE_CALLERS = [
 ] as const;
 
 /**
+ * The reel title law: a reel is titled « D'où vient le nom « X » ? » and nothing
+ * else. Decided in the 2026-09-17 essay and restated by the operator on
+ * 2026-09-21, after it had lived in the essay and in `idee` alone. `structure`
+ * reads the spec, and the spec said nothing, so a reel could be titled
+ * « Trois versions disent… » and pass every step it went through.
+ */
+export const TITLE_RULE_HEADING = "## 1 ter. La miniature";
+export const TITLE_RULE_PHRASE = "D'où vient le nom";
+export const TITLE_RULE_REFERENCE = "§1 ter";
+export const TITLE_RULE_CALLERS = [
+  "ethniafrica-idee",
+  "ethniafrica-structure",
+] as const;
+
+/**
  * The three places the doctrine is written. The message skill must open all
  * three on every run: the verbatim exchange and its corrections, the reader
  * facing declaration, and the templates that turn it into cards. A grid written
@@ -106,6 +121,18 @@ function specMarkdown(
 
   const path = join(projectRoot, FORMAT_RULE_SOURCE);
   return existsSync(path) ? readFileSync(path, "utf8") : null;
+}
+
+/**
+ * Only the section itself counts: a network or a phrase named elsewhere in the
+ * spec has not been given a rule.
+ */
+function specSection(spec: string, heading: string): string | null {
+  const start = spec.indexOf(heading);
+  if (start === -1) return null;
+
+  const end = spec.indexOf("\n## ", start + heading.length);
+  return spec.slice(start, end === -1 ? undefined : end);
 }
 
 function namedSkill(
@@ -182,25 +209,34 @@ export function checkSocialChainContract(
   if (spec === null) {
     issues.push({ skill: FORMAT_RULE_SOURCE, detail: "is missing" });
   } else {
-    const start = spec.indexOf(FORMAT_RULE_HEADING);
-    if (start === -1) {
+    const formats = specSection(spec, FORMAT_RULE_HEADING);
+    if (formats === null) {
       issues.push({
         skill: FORMAT_RULE_SOURCE,
         detail: `does not carry the section ${FORMAT_RULE_HEADING}`,
       });
     } else {
-      // Only the section itself counts: a network named elsewhere in the spec
-      // has not been given a format.
-      const end = spec.indexOf("\n## ", start + FORMAT_RULE_HEADING.length);
-      const section = spec.slice(start, end === -1 ? undefined : end);
       for (const network of FORMAT_RULE_NETWORKS) {
-        if (!section.includes(network)) {
+        if (!formats.includes(network)) {
           issues.push({
             skill: FORMAT_RULE_SOURCE,
             detail: `does not assign a format to ${network}`,
           });
         }
       }
+    }
+
+    const thumbnail = specSection(spec, TITLE_RULE_HEADING);
+    if (thumbnail === null) {
+      issues.push({
+        skill: FORMAT_RULE_SOURCE,
+        detail: `does not carry the section ${TITLE_RULE_HEADING}`,
+      });
+    } else if (!thumbnail.includes(TITLE_RULE_PHRASE)) {
+      issues.push({
+        skill: FORMAT_RULE_SOURCE,
+        detail: `the section ${TITLE_RULE_HEADING} does not carry the reel title law « ${TITLE_RULE_PHRASE} »`,
+      });
     }
   }
 
@@ -210,6 +246,16 @@ export function checkSocialChainContract(
       issues.push({
         skill: caller,
         detail: `does not follow ${FORMAT_RULE_REFERENCE} of GABARITS-SOCIAL.md`,
+      });
+    }
+  }
+
+  for (const caller of TITLE_RULE_CALLERS) {
+    const markdown = chainSteps.get(caller);
+    if (markdown && !markdown.includes(TITLE_RULE_REFERENCE)) {
+      issues.push({
+        skill: caller,
+        detail: `does not follow ${TITLE_RULE_REFERENCE} of GABARITS-SOCIAL.md`,
       });
     }
   }

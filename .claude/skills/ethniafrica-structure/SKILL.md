@@ -130,6 +130,9 @@ dans `docs/productions/<typologie>/` avant de proposer) :
   séparément, c'est la même identité, écrite une seule fois.
 - **`question.fr` et `myth.fr` doivent se terminer par « ? »** — jamais une
   affirmation, même hedgée par « aurait ». Le gate le refuse sinon.
+- **`narrativePattern` est facultatif** (le gate ne l'exige pas). Un reel qui prend
+  la clôture unique de §7 ter n'a plus de ligne de table à citer : laisse-le absent
+  plutôt que d'en inventer une. Un carrousel le garde.
 - **`publications` part vide.** Ce carnet ne connaît un lien qu'une fois publié ;
   c'est `produire`, puis l'opérateur, qui les ajoutent au fur et à mesure —
   jamais `structure`, qui écrit avant tout rendu.
@@ -203,25 +206,46 @@ phrase — c'est **amazigh**, pluriel **imazighen**. De même **Fulɓe** plutôt
 Relis le lot en cherchant les exonymes que tu as employés sans t'en apercevoir,
 comme s'ils étaient des mots neutres : ce sont ceux-là qui passent.
 
+## Le titre d'un reel
+
+**Un reel s'intitule « D'où vient le nom « X » ? », jamais autrement**
+(`docs/design/gabarits-social/GABARITS-SOCIAL.md` §1 ter, « Le titre d'un reel est
+une loi »). C'est le titre de la carte d'ouverture, donc la miniature, et celui du
+post sur chaque réseau : les légendes ne le reformulent pas, et aucun titre-chute
+ne le remplace. Le **carrousel** a son accroche propre — le mythe posé au lecteur,
+en question. Le plafond de huit mots de §1 ter est une décision ouverte pour cette
+accroche : signale-la à l'opérateur, ne la tranche pas.
+
 ## La clôture, et la fin parlée
 
-Le titre et le corps de la clôture **varient avec le type de contenu** : ils
-sont fixes dans un type — c'est la signature — et changent d'un type à l'autre.
-Seule la ligne de vision est la même partout. Ils se prennent **dans la table
-par type de contenu de §7 ter** (`docs/design/gabarits-social/GABARITS-SOCIAL.md`),
-mot pour mot et en texte brut, au moment d'écrire : `cards.json` ne porte jamais
-`**`, le moteur passe lui-même le dernier mot du titre de clôture en accent. Ce skill n'en garde aucune copie : une
-deuxième copie de la doctrine est celle qui dérive.
+**Un reel a une clôture unique**, quel que soit le type du sujet — **sauf le
+patronyme, dont le reel n'a pas de clôture** (`GABARITS-SOCIAL.md` §7 ter, « Le reel
+a un couple unique »). Pour un patronyme, n'écris aucune carte de clôture, aucun
+paragraphe de voix de clôture et aucun `narrativePattern` : la loi du titre, elle,
+s'applique sans exception. La clôture unique porte la doctrine
+de la page « À propos », explique le projet et invite l'auditeur à sourcer. Ses mots
+— carte et voix — se prennent **dans cette section, mot pour mot et en texte brut**,
+au moment d'écrire. La phrase de voix est décidée ; le titre et le corps de la carte
+restent provisoires tant que l'opérateur ne les a pas confirmés. Ce skill n'en garde
+aucune copie : une deuxième copie de la doctrine est celle qui dérive. Signale dans
+ton rapport que la carte est provisoire.
 
-Un lot dont le type n'a pas de ligne dans la table, ou dont la case est encore
-marquée « à fixer » ou « à valider », s'arrête et le dit. Une clôture ne
+Le titre et le corps de la clôture d'un **carrousel** **varient avec le type de
+contenu** : ils sont fixes dans un type — c'est la signature — et changent d'un type
+à l'autre. Seule la ligne de vision est la même partout. Ils se prennent **dans la
+table par type de contenu de §7 ter**, mot pour mot et en texte brut, au moment
+d'écrire : `cards.json` ne porte jamais `**`, le moteur passe lui-même le dernier
+mot du titre de clôture en accent.
+
+Un lot de carrousel dont le type n'a pas de ligne dans la table, ou dont la case est
+encore marquée « à fixer » ou « à valider », s'arrête et le dit. Une clôture ne
 s'invente pas dans une carte.
 
 La carte de clôture porte :
 
-- `titre` — le titre de clôture du type ;
-- `corps` — le corps de clôture du type, c'est-à-dire la seconde moitié du
-  renversement. Ce n'est plus une datation ;
+- `titre` — celui de la clôture unique (reel) ou du type (carrousel) ;
+- `corps` — celui de la clôture unique (reel) ou du type (carrousel : la seconde
+  moitié du renversement). Ce n'est plus une datation ;
 - `source` — la ligne de vision de §7 ter ;
 - `pivot` — le membre de phrase que la plaque de vision passe en accent ;
 - `appel` — `{n} peuples · ethniafrica.com`.
@@ -233,15 +257,14 @@ vidéo précédente ni d'un exemple du gabarit.
 « mille ans » comme un fait**, tant que la session de doctrine n'a pas tranché
 (§7 ter, audit du message du 2026-09-13, constat 9).
 
-**Le dernier paragraphe de `narration.fr.txt` dit la doctrine, pas une adresse**,
-et il est court : le renversement du type, son titre puis son corps, et ensuite
-la sortie. Rien d'autre. Pour un lot sur un peuple réparti sur plusieurs pays :
+**Le dernier paragraphe de `narration.fr.txt` est la voix de la clôture**, et il est
+court. Pour un reel, c'est la fin parlée que §7 ter donne à la clôture unique — le
+projet expliqué, puis l'invitation à sourcer — recopiée mot pour mot, sans redire le
+titre de la carte. Avant le 2026-09-21 il disait le renversement du type puis la
+sortie ; cette forme ne vaut plus pour un reel.
 
-> Ce peuple n'a pas été divisé. C'est la carte qui a été dessinée par-dessus.
-> Retrouvez l'histoire du nom des peuples sur EthniAfrica. Et bientôt, celle des lieux.
-
-La vision est **écrite sur la carte**, mot pour mot : la dire aussi à la voix
-publie la même phrase deux fois et immobilise l'image le temps de le faire.
+La phrase de la carte est **écrite sur la carte**, mot pour mot : la dire aussi à la
+voix publie la même phrase deux fois et immobilise l'image le temps de le faire.
 Mesuré sur l'ancienne clôture : quatre temps parlés tenaient la carte 21,4 s,
 deux temps la tenaient 7,2 s. Le montage contrôle ce paragraphe contre les mots
 de la carte et le remarque quand il dérive.

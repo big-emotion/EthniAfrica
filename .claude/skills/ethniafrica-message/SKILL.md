@@ -75,7 +75,7 @@ Chaque critère se note **0, 1 ou 2**, avec la phrase citée qui justifie la not
 | 5   | **Les dates sont exactes, et aucune ne nomme Berlin.** « Moins de cent quarante ans » pour les frontières ; la date d'attestation propre au nom quand un nom est daté. Une clôture qui cite « Berlin » ou « 1884 », qui en fait l'auteur des lignes, ou qui pose « mille ans » comme un fait daté : 0.                                                                                                                                                                                                                                               | oui      | les deux        |
 | 6   | **La fin va vers ce qui est resté** — l'origine, les liens, les pays où le peuple vit aujourd'hui — pas vers la blessure.                                                                                                                                                                                                                                                                                                                                                                                                                            | non      | les deux        |
 | 7   | **Une idée, une boucle fermée.** Une pièce qui ouvre trois sujets n'en fait passer aucun ; une question ouverte à l'accroche trouve sa réponse dans la pièce ou derrière son lien.                                                                                                                                                                                                                                                                                                                                                                   | non      | le nouveau venu |
-| 8   | **La clôture de son type.** La ligne de vision mot pour mot — « Nommer un peuple aussi facilement qu'un pays. » — et le titre et le corps de clôture du type du lot, pris mot pour mot dans la table par type de contenu de §7 ter : un lot sur un pays ne se clôt pas sur « Ce peuple n'a pas été divisé ». Un type absent de la table : 0. Sur une page du site : le propos est atteignable (« Notre propos », la page About).                                                                                                                     | oui      | l'abonné        |
+| 8   | **La clôture de son type.** La ligne de vision mot pour mot — « Nommer un peuple aussi facilement qu'un pays. » — et la clôture de son type, mot pour mot dans §7 ter : la table par type pour un carrousel, la clôture unique pour un reel (note sous la grille). Un type absent de la table : 0. Sur une page du site : le propos est atteignable (« Notre propos », la page About).                                                                                                                                                               | oui      | l'abonné        |
 
 | 9 | **Aucun groupe n'est rendu plus chez lui qu'un autre.** Ni en le disant, ni en le laissant entendre. Nommer les peuples qui sont « entiers », « chez eux », « là depuis toujours », « les premiers » fabrique un dehors pour tous ceux qu'on ne nomme pas. La mesure se publie ; le classement, jamais. Un lot qui hiérarchise l'appartenance, même par omission : 0. | oui | les deux |
 
@@ -83,6 +83,24 @@ Les critères 1 et 7 servent le nouveau venu : il n'a que cette pièce. Le 2 et
 le 8 servent l'abonné : c'est la répétition du même bloc, à la même place, dans
 les mêmes mots, qui fait reconnaître la marque. Le 9 sert tout le monde, et il
 sert d'abord le compte.
+
+### Les critères 3 et 8, lus par format
+
+Depuis le 2026-09-21, un **reel** ne se clôt plus sur le renversement de son type
+mais sur la clôture unique de §7 ter (« Le reel a un couple unique », carte
+provisoire) : la doctrine de la page About, le projet expliqué, l'invitation à
+sourcer. Lue à l'ancienne, la grille noterait 0 chaque reel qui la porte, et
+`produire` ne rendrait plus que des épreuves.
+
+- **Critère 8, reel :** la clôture unique de §7 ter, mot pour mot, plus la ligne de
+  vision. Un lot sur un pays ne se clôt toujours pas sur « Ce peuple n'a pas été
+  divisé » — c'est le carrousel qui garde la table par type.
+- **Critère 8, reel de patronyme :** il n'a pas de clôture (§7 ter, exception). Le
+  critère ne juge que la ligne de vision de son ouverture ; l'absence de clôture ne
+  vaut pas 0.
+- **Critère 3, reel :** la clôture unique n'est pas un renversement d'agent, donc
+  le critère juge les phrases du corps de la pièce, où le peuple reste le sujet de
+  la phrase et le colonisateur n'est jamais celui des phrases qui concluent.
 
 ### Le critère 9, et pourquoi il a fallu une production ratée pour l'écrire
 
