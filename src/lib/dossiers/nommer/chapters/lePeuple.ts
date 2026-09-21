@@ -128,7 +128,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "portugais",
-              "82",
+              "83",
               "La strate la plus profonde de la côte atlantique, dès le XVe siècle",
             ],
             sourceRefs: [],

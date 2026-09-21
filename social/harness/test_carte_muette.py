@@ -13,6 +13,7 @@ A card marked `muette` therefore sits outside the timing. It carries its own
 """
 import sys
 
+import ethni_montage as montage
 import ethni_muettes as mu
 
 
@@ -74,6 +75,15 @@ def test_the_frames_of_the_silent_cards_are_counted_from_their_durations():
     muettes = [carte(3, muette=True, duree=6), carte(4, muette=True, duree=2.5)]
     assert mu.images_muettes(muettes, 30) == 180 + 75
     assert mu.images_muettes([], 30) == 0
+
+
+def test_a_trailing_silent_card_is_never_taken_for_the_closing():
+    # The closing is read against the spoken cards: on the whole deck the last
+    # card is the dedication, and the reel would be judged as having no closing.
+    cartes = [carte(1), carte(2, role="bascule"), carte(3, muette=True, duree=6)]
+    parlees, _ = mu.separer(cartes)
+    assert montage.carte_de_cloture({"cartes": cartes}) is None
+    assert montage.carte_de_cloture({"cartes": parlees})["rang"] == 2
 
 
 def main():

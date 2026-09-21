@@ -72,7 +72,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
           ],
           [
             "portugais (‘Portuguese’)",
-            "82",
+            "83",
             "The deepest layer of the Atlantic coast, from the fifteenth century onwards",
           ],
           [
