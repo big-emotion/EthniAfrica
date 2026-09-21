@@ -229,7 +229,7 @@ describe("POST /api/contact — per-sender quota", () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "X-Forwarded-For": `${address}, 10.0.0.1`,
+        "X-Forwarded-For": `10.0.0.1, ${address}`,
       },
       body: JSON.stringify(body),
     });

@@ -105,6 +105,14 @@ Three of them decide whether the site works at all:
   reader's report dialog dies on _"la vérification n'a pas abouti"_, while every other
   check stays green.
 - `ETHNIAFRICA_TRAEFIK_RULE` — the Traefik host rule, below.
+- `TRUSTED_PROXY_HOPS` — how many reverse proxies sit in front of the app and append to
+  `X-Forwarded-For` (default `1`, right for Traefik alone). The app takes the client address
+  from the right of that header, skipping this many hops, because everything to the left of
+  the proxy's own entry is written by the client. Verify it after any change to the proxy
+  chain: from outside, `curl -H 'X-Forwarded-For: 1.2.3.4' https://<host>/api/v2/keys/issue -X POST`
+  must record the caller's real address, not `1.2.3.4` (check `api_keys.ip_address` of the new
+  row, then revoke it). Too low and visitors are attributed to a proxy and share one quota;
+  too high and a client can choose its own address.
 
 One controls which language is public:
 

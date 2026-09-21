@@ -21,11 +21,13 @@ vi.mock("@/lib/api/cors", () => ({
 }));
 
 vi.mock("@/lib/api/rate-limit", () => ({
-  applyRateLimit: vi.fn().mockResolvedValue(null),
+  evaluateRateLimit: vi
+    .fn()
+    .mockResolvedValue({ rejection: null, headers: {} }),
 }));
 
 import { listNamesHandler } from "@/api/v2/handlers/names";
-import { applyRateLimit } from "@/lib/api/rate-limit";
+import { evaluateRateLimit } from "@/lib/api/rate-limit";
 
 const mockEnvelope = {
   data: {
@@ -63,7 +65,10 @@ const mockEnvelope = {
 describe("GET /api/v2/names (route)", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    (applyRateLimit as ReturnType<typeof vi.fn>).mockResolvedValue(null);
+    (evaluateRateLimit as ReturnType<typeof vi.fn>).mockResolvedValue({
+      rejection: null,
+      headers: {},
+    });
   });
 
   // ── happy path ──────────────────────────────────────────────────────────
@@ -204,7 +209,7 @@ describe("GET /api/v2/names (route)", () => {
     const res = await GET(new NextRequest("http://localhost/api/v2/names"));
 
     expect(res.status).toBe(200);
-    expect(applyRateLimit).not.toHaveBeenCalled();
+    expect(evaluateRateLimit).not.toHaveBeenCalled();
   });
 
   // ── error handling ──────────────────────────────────────────────────────

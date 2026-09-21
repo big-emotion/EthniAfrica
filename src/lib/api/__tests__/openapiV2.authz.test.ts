@@ -51,12 +51,12 @@ describe("OpenAPI v2 — who may call what", () => {
   });
 
   // @req REQ-034
-  it("issues public keys on POST and keeps the GET only as a deprecated alias", () => {
+  it("issues public keys on POST only, with no state-changing GET alias", () => {
     const issue = spec.paths["/api/v2/keys/issue"];
 
     expect(issue.post).toBeDefined();
     expect(issue.post.deprecated).not.toBe(true);
     expect(issue.post.security).toEqual([]);
-    expect(issue.get.deprecated).toBe(true);
+    expect(issue.get).toBeUndefined();
   });
 });

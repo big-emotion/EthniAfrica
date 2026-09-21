@@ -28,14 +28,16 @@ vi.mock("@/lib/api/cors", () => ({
 }));
 
 vi.mock("@/lib/api/rate-limit", () => ({
-  applyRateLimit: vi.fn().mockResolvedValue(null),
+  evaluateRateLimit: vi
+    .fn()
+    .mockResolvedValue({ rejection: null, headers: {} }),
 }));
 
 import {
   getQuizScopesHandler,
   composeQuizSessionHandler,
 } from "@/api/v2/handlers/quiz";
-import { applyRateLimit } from "@/lib/api/rate-limit";
+import { evaluateRateLimit } from "@/lib/api/rate-limit";
 
 const scopesEnvelope = {
   data: {
@@ -68,7 +70,10 @@ const scopesEnvelope = {
 describe("GET /api/v2/quiz/scopes (route)", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    (applyRateLimit as ReturnType<typeof vi.fn>).mockResolvedValue(null);
+    (evaluateRateLimit as ReturnType<typeof vi.fn>).mockResolvedValue({
+      rejection: null,
+      headers: {},
+    });
   });
 
   const scopesRequest = () =>
@@ -127,7 +132,7 @@ describe("GET /api/v2/quiz/scopes (route)", () => {
     const res = await scopesGET(scopesRequest());
 
     expect(res.status).toBe(200);
-    expect(applyRateLimit).not.toHaveBeenCalled();
+    expect(evaluateRateLimit).not.toHaveBeenCalled();
   });
 
   // @req REQ-103
@@ -180,7 +185,10 @@ const sessionEnvelope = {
 describe("GET /api/v2/quiz/session (route)", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    (applyRateLimit as ReturnType<typeof vi.fn>).mockResolvedValue(null);
+    (evaluateRateLimit as ReturnType<typeof vi.fn>).mockResolvedValue({
+      rejection: null,
+      headers: {},
+    });
   });
 
   // @req REQ-103
@@ -315,7 +323,7 @@ describe("GET /api/v2/quiz/session (route)", () => {
     );
 
     expect(composeQuizSessionHandler).toHaveBeenCalled();
-    expect(applyRateLimit).not.toHaveBeenCalled();
+    expect(evaluateRateLimit).not.toHaveBeenCalled();
   });
 
   // @req REQ-103

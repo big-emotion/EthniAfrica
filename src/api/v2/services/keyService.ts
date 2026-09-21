@@ -138,3 +138,54 @@ export async function revokeUserApiKey(
 
   return data ? "revoked" : "not_found";
 }
+
+/**
+ * Whether the address already holds a live public key — the one-key-per-IP
+ * rule of the anonymous issuance endpoint. A failed lookup throws instead of
+ * answering "no": reading an unreachable table as an empty one would issue a
+ * second key to an address that already has one.
+ */
+// @req REQ-034
+export async function hasActivePublicKeyForIp(ip: string): Promise<boolean> {
+  const supabase = createAdminClient();
+  const { data, error } = await supabase
+    .from("api_keys")
+    .select("id")
+    .eq("tier", "public")
+    .eq("ip_address", ip)
+    .eq("active", true)
+    .is("revoked_at", null)
+    .maybeSingle();
+
+  if (error) {
+    logger.error("Failed to look up the public key of an address", error);
+    throw new Error(`Failed to look up the public API key: ${error.message}`);
+  }
+
+  return Boolean(data);
+}
+
+export interface PublicKeyRecord {
+  keyHash: string;
+  keyPrefix: string;
+  ipAddress: string;
+}
+
+// @req REQ-034
+export async function insertPublicKey(record: PublicKeyRecord): Promise<void> {
+  const supabase = createAdminClient();
+  const { error } = await supabase.from("api_keys").insert({
+    key_hash: record.keyHash,
+    key_prefix: record.keyPrefix,
+    name: "public-key",
+    label: "Public read-only key",
+    tier: "public",
+    active: true,
+    ip_address: record.ipAddress,
+  });
+
+  if (error) {
+    logger.error("Failed to issue a public API key", error);
+    throw new Error(`Failed to issue the public API key: ${error.message}`);
+  }
+}

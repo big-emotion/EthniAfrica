@@ -63,6 +63,7 @@ import { NextRequest } from "next/server";
 
 import { handleSourceTierRulingDraftCreate } from "@/api/v2/handlers/sourceTierRulings";
 import { createApiError } from "@/api/v2/utils/response";
+import { clientIp } from "@/lib/api/clientIp";
 import { corsOptionsResponse, jsonWithCors } from "@/lib/api/cors";
 import { logger } from "@/lib/api/logger";
 
@@ -79,9 +80,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json().catch(() => null);
     const result = await handleSourceTierRulingDraftCreate(body, {
       accessToken: getAccessToken(request),
-      clientIp:
-        request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-        undefined,
+      clientIp: clientIp(request) ?? undefined,
     });
     return jsonWithCors(result.body, {
       status: result.status,

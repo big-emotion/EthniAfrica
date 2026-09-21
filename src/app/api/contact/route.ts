@@ -6,6 +6,7 @@ import { CONTACT_EMAIL } from "@/lib/brand";
 import { sendContactMessage } from "@/lib/email/contactMessage";
 import { checkContactRateLimit } from "@/lib/ratelimit/contactRateLimit";
 import { contactMessageSchema } from "@/lib/validations/contact";
+import { clientIp } from "@/lib/api/clientIp";
 import { contactCopy } from "@/lib/i18n/copy/contact";
 import { isTranslationLocale } from "@/lib/i18n/translationLocale";
 import type { Language } from "@/types/shared";
@@ -19,11 +20,7 @@ function requestLanguage(body: unknown): Language {
 }
 
 function senderAddress(request: NextRequest): string {
-  return (
-    request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-    request.headers.get("x-real-ip") ||
-    "unknown"
-  );
+  return clientIp(request) ?? "unknown";
 }
 
 /**
