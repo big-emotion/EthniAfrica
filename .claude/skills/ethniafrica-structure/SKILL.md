@@ -252,6 +252,19 @@ les scènes et le dit.
 
 ## Le registre
 
+- **Le texte parlé suit la règle de lecture simple, et un outil la vérifie.** Chaque
+  phrase de `narration.fr.txt` commence par le sujet, puis le verbe, puis le
+  complément — **sauf une question**. Phrases courtes (vingt mots au plus), voix
+  active, aucune inversion (« écrit-elle », « dit le Trésor »), pas d'ordre de la
+  forme « Aidez-nous » sans sujet. Un mot difficile (eugénisme, péjoratif) se
+  explique dans la phrase qui suit. Le public est large et beaucoup ne parlent pas
+  le français comme première langue : un texte simple se comprend mieux et se
+  comprend moins de travers. Règle de l'opérateur du 2026-09-09
+  (`plain-language-doctrine-2026-09-09.md`), rappelée le 2026-09-21 après une
+  narration qui ne l'appliquait pas. **`node social/tools/narration/check-narration.mjs
+<narration.fr.txt>` la vérifie** (ouvertures refusées, verbes de parole inversés,
+  plus de vingt mots) ; il ne voit pas si une phrase est simple, cela reste à
+  l'auteur et à la validation de l'opérateur.
 - Les trois champs publiés verbatim au lecteur ne portent **aucune mention
   interne** : ni « à nommer », ni « à confirmer », ni « à compléter ». Ce sont
   des messages à l'opérateur, et ils bloquent la publication au lieu de
@@ -331,18 +344,21 @@ précède les cinq portes de `produire`, elle ne s'y ajoute pas.
 
 Avant de dire que `structure` est fini :
 
-0. **Lance `ethniafrica-mythe` sur les cartes écrites**, et affiche son verdict
+0. **Lance `node social/tools/narration/check-narration.mjs` sur `narration.fr.txt`.**
+   Un texte qui échoue se réécrit avant d'être affiché : l'opérateur n'a pas à
+   valider une phrase que l'outil sait déjà refuser.
+1. **Lance `ethniafrica-mythe` sur les cartes écrites**, et affiche son verdict
    avec le texte : la correction que le rapport de sujet avait vérifiée a pu
    glisser en devenant une carte.
-1. **Affiche le texte complet dans la conversation**, pas un lien vers le
+2. **Affiche le texte complet dans la conversation**, pas un lien vers le
    fichier : le `narration.fr.txt` scène par scène (chaque paragraphe
    identifié à sa carte), puis chaque `titre`/`corps`/`source` de
    `cards.json` (et de `cartes.json` s'il existe), dans l'ordre du rang.
    Un opérateur qui doit ouvrir un fichier pour vérifier n'a pas reçu la
    validation qu'on lui doit.
-2. **Demande la validation explicitement** — pas « dis-moi si ça te va »
+3. **Demande la validation explicitement** — pas « dis-moi si ça te va »
    noyé dans un paragraphe, une question qui appelle une réponse claire.
-3. **N'écris pas la ligne Texte validé, n'inscris pas le post dans la
+4. **N'écris pas la ligne Texte validé, n'inscris pas le post dans la
    bibliothèque, et ne dis pas que l'étape suivante est `produire`, avant
    d'avoir reçu cette validation.** Si l'opérateur corrige, réécris et
    raffiche — la porte ne s'ouvre qu'une fois, sur le texte qu'il a réellement
