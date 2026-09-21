@@ -18,14 +18,19 @@ jobs:
 
       - run: npm ci
 
+      # `--conditions=react-server` is load-bearing: both scripts reach
+      # src/lib/supabase/admin.ts, whose `server-only` import throws under any
+      # other condition. Without it this job failed every night before touching
+      # the database. scripts/__tests__/confidenceRecomputeModuleGraph.test.ts
+      # runs each command exactly as written here.
       - name: Check source URLs
-        run: npx tsx scripts/checkSourceUrls.ts
+        run: npx tsx --conditions=react-server scripts/checkSourceUrls.ts
         env:
           NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
 
       - name: Recompute confidence scores
-        run: npx tsx scripts/recomputeConfidence.ts
+        run: npx tsx --conditions=react-server scripts/recomputeConfidence.ts
         env:
           NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
