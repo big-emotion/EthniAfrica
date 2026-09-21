@@ -271,6 +271,13 @@ les scènes et le dit.
   s'imprimer.
 - Le crédit nomme **le document réellement affiché sur la carte**, pas la série
   dont il provient ni la campagne qui l'héberge.
+- **Toute vidéo a une synthèse juste avant la clôture.** Une scène de plus, entre le
+  dernier fait et la clôture : ce que l'auditeur doit retenir, en trois phrases simples
+  au plus — ce que les scènes ont montré, puis la morale. Elle ne dit rien que les
+  scènes n'aient pas déjà dit. Règle de l'opérateur du 2026-09-21 (« il faut toujours la
+  synthèse, la morale, avant la conclusion »). **Elle se propose à l'opérateur dans la
+  conversation, en deux ou trois options, avant d'être écrite** dans `narration.fr.txt`
+  et `cartes.json` : il choisit, puis le texte complet repasse par la validation.
 
 Trois guides restent dans la bibliothèque de production, avec les sujets qu'ils
 servent. Ils portent de la doctrine éditoriale datée, pas du code :
