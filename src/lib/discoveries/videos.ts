@@ -1,3 +1,4 @@
+import { CANONICAL_DOMAIN } from "@/lib/brand";
 import type {
   DiscoveryPublication,
   DiscoverySubjectReference,
@@ -10,6 +11,7 @@ import {
   formatProductionNameQuestion,
   formatProductionPosterAlt,
 } from "@/lib/editorial/productionNameQuestion";
+import { getFamilyRoute } from "@/lib/routing";
 import type { SourceTier } from "@/types/sources";
 import type { Language } from "@/types/shared";
 
@@ -84,7 +86,7 @@ export const DISCOVERY_VIDEOS: readonly DiscoveryVideoRecord[] = [
     },
     source: {
       title: discoveryVideosCopy.fr.mande.sourceTitle,
-      url: "https://ethniafrica.com/fr/atlas/familles/FLG_MANDE",
+      url: `https://${CANONICAL_DOMAIN}${getFamilyRoute("fr", "FLG_MANDE")}`,
       tier: "referenced",
     },
     subjects: [
