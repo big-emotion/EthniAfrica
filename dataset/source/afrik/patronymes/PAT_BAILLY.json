@@ -40,7 +40,7 @@
     "oralTraditions": [],
     "writtenChronicles": [
       {
-        "claim": "Le nom est présenté comme signifiant « le beau ». La fiche du peuple bété de ce même atlas documente par ailleurs, indépendamment de cette liste, le bagnon comme une distinction villageoise décernée selon des critères physiques et moraux, et non un titre hérité : les deux descriptions se recoupent sur la nature personnelle et non héréditaire de cette qualité.",
+        "claim": "Le nom est présenté comme signifiant « le beau ». Notre fiche du peuple bété documente par ailleurs, indépendamment de cette liste, le bagnon comme une distinction villageoise décernée selon des critères physiques et moraux, et non un titre hérité : les deux descriptions se recoupent sur la nature personnelle et non héréditaire de cette qualité.",
         "claimStatus": "claimed",
         "sourceRefs": [
           "civ-tourisme-fb-2021-bailly",
@@ -108,7 +108,7 @@
       "url": null,
       "tier": "unverified",
       "source_kind": "repository",
-      "notes": "Reprise du chapitre consacré à l'organisation traditionnelle de la fiche du peuple bété de ce même atlas, qui décrit le bagnon comme une personne désignée dans chaque village selon des critères physiques et moraux, consultée et respectée, sans qu'il s'agisse d'une charge héréditaire."
+      "notes": "Reprise du chapitre consacré à l'organisation traditionnelle de notre fiche du peuple bété, qui décrit le bagnon comme une personne désignée dans chaque village selon des critères physiques et moraux, consultée et respectée, sans qu'il s'agisse d'une charge héréditaire."
     },
     {
       "sourceKey": "forebears-bailly",

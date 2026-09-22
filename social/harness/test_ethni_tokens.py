@@ -65,13 +65,21 @@ def test_no_value_is_drawn_without_a_token():
 
 
 def test_accent_maps_to_pillar_and_theme():
-    # §2 — L'atlas → ocre · Les dossiers → teal · Jouer → pervenche.
-    assert tk.accent_for_pillar("L'atlas") == "ocre"
+    # §2 — EthniAfrica → ocre · Les dossiers → teal · Jouer → pervenche.
+    assert tk.accent_for_pillar("EthniAfrica") == "ocre"
     assert tk.accent_for_pillar("Les dossiers") == "teal"
     assert tk.accent_for_pillar("Jouer") == "perv"
     # The same accent resolves to a different ink per ground.
     assert tk.accent("teal", "nuit") == "#33a390"
     assert tk.accent("teal", "parchemin") == "#226d60"
+
+
+def test_a_deck_filed_under_the_retired_atlas_pillar_reads_as_ethniafrica():
+    # 2026-09-22: no card prints « L'ATLAS » any more, including the decks the
+    # workshop wrote before the rename, which still say « L'atlas ».
+    assert tk.pilier_courant("L'atlas") == "EthniAfrica"
+    assert tk.pilier_courant("Les dossiers") == "Les dossiers"
+    assert tk.accent_for_pillar("L'atlas") == "ocre"
 
 
 def test_muted_ink_is_refused_for_credits():

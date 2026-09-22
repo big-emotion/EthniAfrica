@@ -99,7 +99,7 @@
       "label": "m'bapɛ",
       "entityType": "other",
       "entityId": null,
-      "distinction": "Nom commun duala, entrée du dictionnaire de Paul Helmlinger (1972, page 271) : « un aide, le second ; surtout : celui qui chante les refrains des chants des piroguiers ». Le dictionnaire ne relie pas ce mot au nom de famille et aucune source consultée ne le fait. L'atlas signale la ressemblance des formes ; ce n'est pas une étymologie.",
+      "distinction": "Nom commun duala, entrée du dictionnaire de Paul Helmlinger (1972, page 271) : « un aide, le second ; surtout : celui qui chante les refrains des chants des piroguiers ». Le dictionnaire ne relie pas ce mot au nom de famille et aucune source consultée ne le fait. Nous signalons la ressemblance des formes ; ce n'est pas une étymologie.",
       "sourceRefs": ["helmlinger-dictionnaire-duala-1972"]
     },
     {
@@ -193,7 +193,7 @@
     },
     {
       "fieldPath": "origin.oralTraditions",
-      "reason": "Le recueil de 2003 n'est pas constant sur la filiation : il présente tantôt Mbape comme le père de Kum'a Mbape, tantôt Bele ba Doo comme son père. L'atlas ne tranche pas ; il rapporte la suite de noms citée dans la lettre de 1945. Le recueil est publié par l'un des prétendants à la chefferie, dans un différend de succession."
+      "reason": "Le recueil de 2003 n'est pas constant sur la filiation : il présente tantôt Mbape comme le père de Kum'a Mbape, tantôt Bele ba Doo comme son père. Nous ne tranchons pas ; nous rapportons la suite de noms citée dans la lettre de 1945. Le recueil est publié par l'un des prétendants à la chefferie, dans un différend de succession."
     },
     {
       "fieldPath": "nameSystem",
@@ -201,11 +201,11 @@
     },
     {
       "fieldPath": "spellings",
-      "reason": "Aucune source consultée ne dit laquelle des graphies Mbape, Mbappe et Mbappé est la première, ni pourquoi elles diffèrent. Le passage d'un nom personnel duala à un nom de famille inscrit à l'état civil (allemand, français ou britannique) n'est documenté par aucune source consultée, et l'atlas ne cite aucune étude sur les noms personnels duala devenus noms de famille."
+      "reason": "Aucune source consultée ne dit laquelle des graphies Mbape, Mbappe et Mbappé est la première, ni pourquoi elles diffèrent. Le passage d'un nom personnel duala à un nom de famille inscrit à l'état civil (allemand, français ou britannique) n'est documenté par aucune source consultée, et nous ne citons aucune étude sur les noms personnels duala devenus noms de famille."
     },
     {
       "fieldPath": "peoples",
-      "reason": "Un agrégateur de noms de famille rattache le nom à un peuple appelé « Baasare » ; les sources sur les lignées de Bonabéri décrivent des familles duala. L'atlas ne reprend que le rattachement duala, le seul que des généalogies étayent."
+      "reason": "Un agrégateur de noms de famille rattache le nom à un peuple appelé « Baasare » ; les sources sur les lignées de Bonabéri décrivent des familles duala. Nous ne reprenons que le rattachement duala, le seul que des généalogies étayent."
     },
     {
       "fieldPath": "homonyms",
@@ -221,7 +221,7 @@
     },
     {
       "fieldPath": "bearers",
-      "reason": "Aucun porteur décédé n'est cité faute de source suffisante, et l'atlas ne liste pas de personnes vivantes : le sujet est le nom, pas une famille."
+      "reason": "Aucun porteur décédé n'est cité faute de source suffisante, et nous ne listons pas de personnes vivantes : le sujet est le nom, pas une famille."
     }
   ],
   "_translation": {

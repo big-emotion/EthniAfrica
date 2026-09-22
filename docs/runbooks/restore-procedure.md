@@ -13,12 +13,15 @@ Since ETNI-1958 recette and production are both self-hosted stacks; `shmrjtnfbqz
 hosted project that backed recette before the move and is kept only as a rollback path until
 ETNI-1962. Identity table: [`migration-state.md`](./migration-state.md).
 
-> **Neither current database is covered by the two paths below.** Both assume a hosted Supabase
+> **Paths A and B below do not apply to either current database.** Both assume a hosted Supabase
 > project — a dashboard, PITR, scheduled backups, `supabase projects create`. Production and
-> recette are self-hosted stacks on a VPS, which have none of those, and this runbook does not yet
-> say how their databases are backed up or restored. Treat a restore of either as unrehearsed until
-> a drill against that stack is recorded here. The paths below describe the hosted project, which
-> survives as recette's rollback until ETNI-1962.
+> recette are self-hosted stacks, which have none of those. **Path C**, added after the
+> [2026-09-22 drill](./restore-drill-2026-09-22.md), is the one that applies to them. That drill
+> proved the mechanism against production; recette runs the same image and schema but has not
+> itself been separately drilled. Neither drill establishes an RPO — there is still no scheduled
+> backup against either database, only a mechanism proven to work once a backup exists to restore.
+> Paths A and B remain below because they still describe the hosted project, which survives as
+> recette's rollback until ETNI-1962.
 
 ---
 
@@ -112,6 +115,66 @@ psql "${THROWAWAY_DB_URL}" < ./backup-<date>.sql
 
 ---
 
+## Path C — self-hosted stack (production and recette)
+
+Use this one. Both databases are self-hosted, so there is no dashboard, no PITR, and no
+`supabase projects create` — the restore target is a disposable Docker container on the same host,
+never the running `supabase-db`/`recette-db` container itself. Validated once, against production,
+in the [2026-09-22 drill](./restore-drill-2026-09-22.md); read that record for what six attempts
+found before this sequence was correct.
+
+```bash
+# 1. Which image the real container runs — never restore into a stock `postgres` image. A stock
+#    image has neither the `auth` schema nor the extensions below, and pg_restore's error-tolerant
+#    default silently drops every policy and generated column that needs them rather than failing
+#    loudly.
+docker inspect supabase-db --format '{{.Config.Image}}'   # supabase-db, or recette-db for recette
+
+# 2. Which schemas this project owns beyond Supabase's own set — `\dn` in the source database,
+#    looking for anything not owned by supabase_admin/pgbouncer. Currently: public and private.
+#    A dump scoped to `public` alone silently drops every RLS policy the `private` schema's helper
+#    functions (is_admin(), etc.) back.
+docker exec supabase-db psql -U postgres -d postgres -c "\dn"
+
+# 3. Dump every schema found in step 2.
+docker exec supabase-db pg_dump -U postgres -d postgres -n public -n private -Fc -f /tmp/drill.dump
+docker cp supabase-db:/tmp/drill.dump ./restore.dump
+
+# 4. Scratch container, the same image as step 1.
+docker run -d --name restore-scratch -e POSTGRES_PASSWORD=<local-only, never reused> \
+  -p 127.0.0.1:55432:5432 <image-from-step-1>
+sleep 15   # let its own init scripts finish before restoring into it
+
+# 5. Four extensions the image does not install by default. Three into `extensions`; `citext`
+#    into `public` specifically — the dumped DDL says `public.citext`, matching where the source
+#    actually has it, not where the other three happen to live.
+docker exec restore-scratch psql -U postgres -d postgres -c "
+  CREATE EXTENSION IF NOT EXISTS unaccent WITH SCHEMA extensions;
+  CREATE EXTENSION IF NOT EXISTS fuzzystrmatch WITH SCHEMA extensions;
+  CREATE EXTENSION IF NOT EXISTS pg_trgm WITH SCHEMA extensions;
+  CREATE EXTENSION IF NOT EXISTS citext WITH SCHEMA public;
+"
+
+# 6. Restore.
+docker cp ./restore.dump restore-scratch:/tmp/restore.dump
+docker exec restore-scratch pg_restore -U postgres -d postgres --no-owner --no-privileges \
+  /tmp/restore.dump 2>&1 | tee restore-log.txt
+
+# 7. Validate — see "Validate the restored database" below. A single
+#    `errors ignored on restore: 1` on `CREATE SCHEMA public already exists` is expected on any
+#    target and is not evidence of data loss; any other ignored error is not.
+docker exec restore-scratch psql -U postgres -d postgres -c "select count(*) from public.afrik_peoples"
+
+# 8. Cleanup — never skip. A forgotten scratch container holds a full copy of the corpus.
+docker rm -f restore-scratch && rm ./restore.dump && docker exec supabase-db rm /tmp/drill.dump
+```
+
+If any table restores with 0 rows or a "does not exist" cascade after step 6, find the _first_
+occurrence of that table's name in `restore-log.txt` (not the downstream errors referencing it) —
+that line carries the real cause, almost always a missing extension step 5 didn't anticipate.
+
+---
+
 ## Validate the restored database
 
 `scripts/validateAfrikData.ts` validates the **JSON corpus on disk**, not the database. It is a
@@ -198,11 +261,15 @@ Drills should run quarterly, each one recorded as `docs/runbooks/restore-drill-<
 does not exist in the repository. Until someone adds it, the schedule is a manual commitment —
 treat an absent drill record as an absent drill.
 
-The only drill on record is [2025-07-14](./restore-drill-2025-07-14.md). Nothing since.
+Two drills on record: [2025-07-14](./restore-drill-2025-07-14.md) (hosted project, no longer the
+live path) and [2026-09-22](./restore-drill-2026-09-22.md) (self-hosted, Path C, production only —
+recette has not itself been separately drilled).
 
-**Next drill due: 2025-10-14 — overdue.** Derived, not scheduled: the last recorded drill plus one
-quarter. It stays overdue until a `restore-drill-<YYYY-MM-DD>.md` record lands, and the date above
-moves to that record plus one quarter in the same change.
+**Next drill due: 2026-12-22.** Derived, not scheduled: the last recorded drill plus one quarter.
+It stays current until that date passes with no new `restore-drill-<YYYY-MM-DD>.md` record, and
+the date above moves to that record plus one quarter in the same change. The next drill should
+also cover recette, and should time each phase explicitly — the 2026-09-22 drill did not, since
+most of its duration went to finding the four missing extensions Path C now documents up front.
 
 **Drill owner: project operator.** The project operator owns scheduling, execution, evidence, and
 the next due date. A drill is a human action — it creates a throwaway project and restores real

@@ -40,7 +40,7 @@ test("decomposerCredit reports no licence rather than guessing one", () => {
 
 // @req REQ-032
 test("the default pillar carries the ochre accent", () => {
-  assert.equal(PILIER_DEFAUT, "L'atlas");
+  assert.equal(PILIER_DEFAUT, "EthniAfrica");
   assert.equal(ACCENT_PAR_PILIER[PILIER_DEFAUT], "ocre");
 });
 

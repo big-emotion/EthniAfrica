@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/charter-motion";
 import { getPeopleRoute } from "@/lib/routing";
 import { formatNumber } from "@/lib/languageTag";
-import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
+import { searchResultDisplayLabel } from "@/lib/search/peopleDisplayNames";
 import { cn } from "@/lib/utils";
 import type { PeopleGroup } from "@/lib/search/groupPeopleResults";
 import type { Language } from "@/types/shared";
@@ -87,7 +87,7 @@ export function SearchPeopleGroupCard({
               className={cn("rounded-full", CHARTER_FOCUS_RING)}
             >
               <Badge variant="outline" className="text-afh-caption">
-                {getLocalizedSearchResultName(member, language)}
+                {searchResultDisplayLabel(member, language)}
               </Badge>
             </Link>
           </li>

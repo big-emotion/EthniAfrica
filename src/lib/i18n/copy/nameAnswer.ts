@@ -69,7 +69,8 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     eyebrow: "Where this name comes from",
     disambiguation: "Which one are you looking for?",
     appellations: "The names",
-    appellationsLead: "The most common first. None of them is “the right one”.",
+    appellationsLead:
+      "The name each people gives itself first, then the others. None of them is “the right one”.",
     origins: "Where they come from",
     selfGiven: "What the peoples call themselves",
     problem: "What these names raise",
@@ -105,7 +106,8 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     eyebrow: "D'où vient ce nom",
     disambiguation: "Lequel cherchez-vous ?",
     appellations: "Les appellations",
-    appellationsLead: "Les plus communes d'abord. Aucune n'est « la bonne ».",
+    appellationsLead:
+      "Le nom que chaque peuple se donne d'abord, puis les autres. Aucune n'est « la bonne ».",
     origins: "D’où elles viennent",
     selfGiven: "Ce que les peuples se donnent",
     problem: "Ce que ces noms posent",

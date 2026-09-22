@@ -40,6 +40,29 @@ describe("fiche metadata charter", () => {
     }
   });
 
+  // @req REQ-178
+  it("opens a people fiche's head on the name the people gives itself", () => {
+    const fula: FicheSubject = {
+      name: "Fula (Fulbe / Peul)",
+      selfName: "Fulbe",
+      countryNames: ["Guinée"],
+    };
+    for (const kind of ["people", "peopleLinks"] as const) {
+      const { title, description } = buildFicheHead(kind, "fr", fula);
+      expect(title, kind).toMatch(/^Fulbe — Fula \(Fulbe \/ Peul\)/);
+      expect(description, kind).toMatch(/^Fulbe — Fula \(Fulbe \/ Peul\)/);
+      expect(title.length, kind).toBeLessThanOrEqual(FICHE_TITLE_MAX_LENGTH);
+    }
+    // No self-name recorded: the filed name alone, as before.
+    expect(buildFicheHead("people", "fr", SUBJECTS.people).title).toMatch(
+      /^Fon — /
+    );
+    // Only a people carries a self-name.
+    expect(
+      buildFicheHead("country", "fr", { name: "Bénin", selfName: "X" }).title
+    ).not.toContain("X");
+  });
+
   // @req REQ-091
   it("gives each kind of fiche a distinct title for the same name", () => {
     const shared: FicheSubject = { name: "Bamana" };

@@ -437,7 +437,9 @@ def test_the_closing_label_is_the_brand_line():
     cloture, ouverture = deck["cartes"][-1], deck["cartes"][0]
     ferme = gab.plan_video(cloture, deck, image=image_de(cloture)).bloc("v-serie")
     ouvre = gab.plan_video(ouverture, deck, image=image_de(ouverture)).bloc("v-serie")
-    assert "ETHNIAFRICA" in ferme.texte and "ATLAS" in ferme.texte
+    from ethni_brand import TAGLINE
+    assert ferme.texte == f"EthniAfrica · {TAGLINE}".upper()
+    assert "ATLAS" not in ferme.texte
     assert ouvre.texte != ferme.texte, "l'ouverture perd le nom de sa série"
 
 

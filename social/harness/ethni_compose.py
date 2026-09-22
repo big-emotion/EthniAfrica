@@ -1064,7 +1064,7 @@ def _entete(carte, deck, fmt_key, largeur):
     """
     blocs = []
     t = _role_type("Bandeau", fmt_key)
-    serie = (deck.get("serie") or deck.get("pilier") or "").upper()
+    serie = (deck.get("serie") or tk.pilier_courant(deck.get("pilier") or "")).upper()
 
     tr = _role_type("Rang", fmt_key)
     # §8 — « 01/05 » : the card and the total. The total is read off the deck and
@@ -1387,7 +1387,7 @@ def plan_video(carte, deck, *, image, sous_titre=False):
         # than typed here, because two spellings of one name are two that drift.
         from ethni_brand import TAGLINE
         libelle = (f"EthniAfrica · {TAGLINE}" if cloture
-                   else (deck.get("serie") or deck.get("pilier") or "")).upper()
+                   else (deck.get("serie") or tk.pilier_courant(deck.get("pilier") or ""))).upper()
         t = _role_type("Bandeau", "reel")
         bloc = _v_poser(p.blocs, "v-serie", libelle, t["corps"], t["face"],
                         t["graisse"], encre1, V_MARGE_X, largeur)

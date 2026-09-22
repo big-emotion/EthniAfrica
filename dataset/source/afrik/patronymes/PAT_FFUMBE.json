@@ -111,7 +111,7 @@
   "gaps": [
     {
       "fieldPath": "alliances",
-      "reason": "Roscoe documente bien des rattachements nommés entre ebika — le clan du Chien au clan de la Civette, ceux du Chacal et du Corbeau à celui de la Loutre — et une seconde institution d'alliance : les clans écartés du trône donnaient leurs filles à d'autres clans pour que leurs petits-fils redeviennent éligibles. L'alliance ganda existe donc et est attestée par paires nommées. Aucune de ces paires ne relie deux des quatre ebika dotés d'une fiche, et le champ exige un nom déjà présent dans l'atlas : c'est la couverture du corpus qui bloque, non la documentation."
+      "reason": "Roscoe documente bien des rattachements nommés entre ebika — le clan du Chien au clan de la Civette, ceux du Chacal et du Corbeau à celui de la Loutre — et une seconde institution d'alliance : les clans écartés du trône donnaient leurs filles à d'autres clans pour que leurs petits-fils redeviennent éligibles. L'alliance ganda existe donc et est attestée par paires nommées. Aucune de ces paires ne relie deux des quatre ebika dotés d'une fiche, et le champ exige un nom qui a déjà sa fiche ici : c'est la couverture du corpus qui bloque, non la documentation."
     },
     {
       "fieldPath": "bearers",

@@ -56,7 +56,7 @@
       "url": null,
       "tier": "unverified",
       "source_kind": "ai_generated",
-      "notes": "Ce nom figure au relevé de couverture de l'atlas : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+      "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
     },
     {
       "sourceKey": "tanzania-pmo-sokoine",
@@ -98,7 +98,7 @@
     },
     {
       "fieldPath": "alliances",
-      "reason": "Les recherches « Sokoine joking kinship », « Sokoine name alliance » et « Sokoine clan pact », ainsi que les notices gouvernementales tanzaniennes sur Edward Moringe Sokoine, l’article de Sane sur l’onomastique maasaï et les recherches exactes Sokoine en Maa, n’ont identifié aucun pacte nommé avec un autre nom de l'atlas."
+      "reason": "Les recherches « Sokoine joking kinship », « Sokoine name alliance » et « Sokoine clan pact », ainsi que les notices gouvernementales tanzaniennes sur Edward Moringe Sokoine, l’article de Sane sur l’onomastique maasaï et les recherches exactes Sokoine en Maa, n’ont identifié aucun pacte nommé avec un autre nom documenté ici."
     },
     {
       "fieldPath": "casteOrSocialFunction",

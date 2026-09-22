@@ -269,6 +269,47 @@ describe("relations query layer", () => {
       expect(forB[0].neighbor.id).toBe("PPL_A");
     });
 
+    // @req REQ-178
+    it("carries each neighbor's self-given name, read off content.appellations", async () => {
+      const { peoples } = buildSupabaseMock({
+        relationsInQueue: [
+          { data: [relationRow({ id: "REL_A_B" })], error: null },
+          { data: [], error: null },
+        ],
+        peoplesInResult: {
+          data: [
+            {
+              id: "PPL_B",
+              name_main: "Fula (Fulbe / Peul)",
+              language_family_id: "FLG_X",
+              self_appellation: "Fulbe (pluriel), Pullo (singulier)",
+            },
+            {
+              id: "PPL_A",
+              name_main: "A",
+              language_family_id: "FLG_X",
+              self_appellation: null,
+            },
+          ],
+          error: null,
+        },
+      });
+      vi.mocked(getSourcesMap).mockResolvedValue(new Map());
+      vi.mocked(getConfidenceMap).mockResolvedValue(new Map());
+
+      const result = await getRelationsMap(["PPL_A", "PPL_B"]);
+
+      expect(peoples.selectSpy).toHaveBeenCalledWith(
+        expect.stringContaining(
+          "self_appellation:content->appellations->>selfAppellation"
+        )
+      );
+      expect(result.get("PPL_A")?.[0].neighbor.selfAppellation).toBe(
+        "Fulbe (pluriel), Pullo (singulier)"
+      );
+      expect(result.get("PPL_B")?.[0].neighbor.selfAppellation).toBeUndefined();
+    });
+
     // @req REQ-093
     it("returns an empty Map on a Supabase error, never throws", async () => {
       buildSupabaseMock({

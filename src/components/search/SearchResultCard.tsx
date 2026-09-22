@@ -26,14 +26,12 @@ import {
   getPersonRoute,
 } from "@/lib/routing";
 import { buildRelationSearchHref } from "@/lib/search/relationSearch";
+import { searchResultDisplayLabel } from "@/lib/search/peopleDisplayNames";
 import {
   getPersonRelationLabel,
   getPersonRoleLabel,
 } from "@/lib/search/personResultLabels";
-import {
-  getLocalizedSearchResultFamilyName,
-  getLocalizedSearchResultName,
-} from "@/lib/search/localizedResult";
+import { getLocalizedSearchResultFamilyName } from "@/lib/search/localizedResult";
 import { cn } from "@/lib/utils";
 import type { SearchEntityType, SearchResult } from "@/types/afrik-frontend";
 import type { Language } from "@/types/shared";
@@ -84,7 +82,7 @@ export function SearchResultCard({
 }: SearchResultCardProps) {
   const type = result.type as SearchEntityType;
   const countries = result.countryIds ?? [];
-  const name = getLocalizedSearchResultName(result, language);
+  const name = searchResultDisplayLabel(result, language);
   const familyName = getLocalizedSearchResultFamilyName(result, language);
   const copy =
     language === "en"
