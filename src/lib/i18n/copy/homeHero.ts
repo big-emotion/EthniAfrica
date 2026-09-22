@@ -2,6 +2,15 @@ import type { Language } from "@/types/shared";
 
 export interface HomeHeroCopy {
   question: string;
+  /**
+   * Three stable seeds (editorial-and-experience-plan.md §4.2, H4), checked
+   * against the corpus rather than assumed: `PAT_KEITA.json`, `langues/lin.json`
+   * and the widely-used exonym for `PPL_FULA.json` all resolve. Kept off the
+   * shared `searchVocabulary.ts` constant on purpose — that one also feeds the
+   * header search modal and the /atlas/recherche page, neither of which this
+   * change touches.
+   */
+  searchPlaceholder: string;
 }
 
 /**
@@ -26,8 +35,10 @@ export interface HomeHeroCopy {
 export const homeHeroCopy: Record<Language, HomeHeroCopy> = {
   en: {
     question: "Where does this name come from?",
+    searchPlaceholder: "E.g. Keïta, Lingala, Fula",
   },
   fr: {
+    searchPlaceholder: "Ex. : Keïta, Lingala, Peul",
     question: "D’où vient ce nom ?",
   },
 };
