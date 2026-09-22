@@ -102,6 +102,19 @@ personne"}, {"terme": "Basotho", "glose": "le peuple"}, …]`. Le parallèle
 
 ## Le carnet de production
 
+### Approved project introduction
+
+For an explicitly approved project-intention introduction, use the dedicated
+record in `docs/productions/README.md`, “The introduction record”: save
+`docs/productions/introduction/<campaign>.json` with `typologie: introduction`,
+`episode: null`, `myth: null`, `subjects: []` and `sitePath: /fr/about`.
+Keep a genuine bilingual opening question in `question`. Register the private
+library and this public record together after complete text approval.
+Do not classify the introduction as `mot`, invent a numbered episode, or
+manufacture a myth. The numbered-episode instructions below apply to historical
+subjects. This registration exception does not create a narration template or
+turn a failed template check into a pass; disclose that limitation at handoff.
+
 `docs/plans/production-history-plan.md` en porte le schéma complet et sa
 justification ; cette section dit seulement ce que `structure` en fait.
 

@@ -45,8 +45,9 @@ const LEDGER_ROOT = path.join(__dirname, "../../docs/productions");
 /** The five typologies name a corpus entity. `mot` is the one exception, added
  * by the operator on 2026-09-21 for « ethnie »: a word of the vocabulary that
  * the project cannot avoid using and that no corpus fiche carries. It is the
- * only typologie allowed an empty `subjects[]` — see
- * `docs/productions/README.md`, "The mot exception". */
+ * vocabulary exception allowing an empty `subjects[]` — see
+ * `docs/productions/README.md`, "The mot exception". The project introduction
+ * is separately recorded without an episode or a myth. */
 const TYPOLOGIES = [
   "peuple",
   "pays",
@@ -54,6 +55,7 @@ const TYPOLOGIES = [
   "lieu",
   "langue",
   "mot",
+  "introduction",
 ] as const;
 type Typologie = (typeof TYPOLOGIES)[number];
 
@@ -97,9 +99,9 @@ const ROUTE_FN_BY_KIND: Record<
 export interface LedgerEntry {
   campaign: string;
   typologie: string;
-  episode: number;
+  episode: number | null;
   question: { fr: string; en?: string };
-  myth: { fr: string; en?: string };
+  myth: { fr: string; en?: string } | null;
   narrativePattern?: string;
   subjects: Array<{
     kind: string;
@@ -166,7 +168,21 @@ export function validateEntry(
     errors.push(`typologie must be one of ${TYPOLOGIES.join(", ")}`);
   }
 
-  if (!Number.isInteger(record.episode) || (record.episode as number) < 1) {
+  const isIntroduction = record.typologie === "introduction";
+  if (isIntroduction) {
+    if (record.episode !== null)
+      errors.push("introduction episode must be null");
+    if (record.myth !== null) errors.push("introduction myth must be null");
+    if (!Array.isArray(record.subjects) || record.subjects.length !== 0) {
+      errors.push("introduction subjects must be empty");
+    }
+    if (record.sitePath !== "/fr/about") {
+      errors.push("introduction sitePath must be /fr/about");
+    }
+  } else if (
+    !Number.isInteger(record.episode) ||
+    (record.episode as number) < 1
+  ) {
     errors.push("episode must be a positive integer");
   }
 
@@ -178,6 +194,7 @@ export function validateEntry(
     ["question", "question"],
     ["myth", "myth"],
   ] as const) {
+    if (isIntroduction && field === "myth") continue;
     const value = record[field] as { fr?: unknown; en?: unknown } | undefined;
     if (!value || typeof value.fr !== "string" || !value.fr.trim()) {
       errors.push(`${label}.fr must be a non-empty string`);
@@ -196,7 +213,7 @@ export function validateEntry(
   }
 
   const subjects = record.subjects;
-  const mayHaveNoSubject = record.typologie === "mot";
+  const mayHaveNoSubject = record.typologie === "mot" || isIntroduction;
   if (
     !Array.isArray(subjects) ||
     (subjects.length === 0 && !mayHaveNoSubject)
@@ -250,6 +267,11 @@ export function validateEntry(
     publications.forEach((publication, index) => {
       const network = publication?.network;
       const format = publication?.format;
+      if (isIntroduction && format === "carrousel") {
+        errors.push(
+          `publications[${index}] — an introduction has no myth for a carousel`
+        );
+      }
       if (!NETWORKS.includes(network)) {
         errors.push(
           `publications[${index}].network must be one of ${NETWORKS.join(", ")}`
@@ -326,7 +348,11 @@ export function validateLedger(
 
     const typologie = record.typologie as Typologie;
     const episode = record.episode;
-    if (TYPOLOGIES.includes(typologie) && Number.isInteger(episode)) {
+    if (
+      typologie !== "introduction" &&
+      TYPOLOGIES.includes(typologie) &&
+      Number.isInteger(episode)
+    ) {
       const perTypologie = episodesByTypologie.get(typologie) ?? new Map();
       const existing = perTypologie.get(episode as number);
       if (existing) {
@@ -420,7 +446,84 @@ function validMotEntry(): LedgerEntry {
 
 type Fixture = [string, unknown, boolean];
 
+const introductionFixture = {
+  campaign: "comprendre-afrique-noms",
+  typologie: "introduction",
+  episode: null,
+  question: { fr: "Quelles histoires les noms ouvrent-ils ?" },
+  myth: null,
+  subjects: [],
+  sitePath: "/fr/about",
+  publications: [],
+};
+
 const FIXTURES: Fixture[] = [
+  [
+    "an unnumbered introduction without an invented myth",
+    introductionFixture,
+    false,
+  ],
+  [
+    "an introduction cannot take an episode number",
+    { ...introductionFixture, episode: 1 },
+    true,
+  ],
+  [
+    "an introduction explicitly records no episode",
+    { ...introductionFixture, episode: undefined },
+    true,
+  ],
+  [
+    "an introduction cannot claim a myth",
+    { ...introductionFixture, myth: { fr: "Un mythe ?" } },
+    true,
+  ],
+  [
+    "an introduction explicitly records no myth",
+    { ...introductionFixture, myth: undefined },
+    true,
+  ],
+  [
+    "an introduction cannot become a corpus episode",
+    { ...introductionFixture, subjects: validLingalaEntry().subjects },
+    true,
+  ],
+  [
+    "an introduction points to the project",
+    { ...introductionFixture, sitePath: "/fr/unknown" },
+    true,
+  ],
+  [
+    "an introduction still needs a question",
+    { ...introductionFixture, question: { fr: "A statement." } },
+    true,
+  ],
+  [
+    "an introduction still checks media distribution",
+    {
+      ...introductionFixture,
+      publications: [{ network: "x", format: "carrousel" }],
+    },
+    true,
+  ],
+  [
+    "historical episodes cannot omit their number",
+    { ...validLingalaEntry(), episode: null },
+    true,
+  ],
+  [
+    "historical episodes cannot omit their myth",
+    { ...validLingalaEntry(), myth: null },
+    true,
+  ],
+  [
+    "an introduction without a myth cannot register a carousel",
+    {
+      ...introductionFixture,
+      publications: [{ network: "instagram", format: "carrousel" }],
+    },
+    true,
+  ],
   ["a well-formed entry", validLingalaEntry(), false],
   [
     "a publication with no url yet",
@@ -482,7 +585,7 @@ const FIXTURES: Fixture[] = [
     true,
   ],
   // `mot` is the operator's exception of 2026-09-21: a word names no corpus
-  // fiche, so it is the only typologie allowed an empty `subjects[]`.
+  // fiche, so its numbered episodes allow an empty `subjects[]`.
   ["a mot entry with no subject", validMotEntry(), false],
   [
     "a langue entry with no subject",
@@ -576,6 +679,33 @@ function selftestEntries(): number {
     );
   }
 
+  const withIntroduction = validateLedger(
+    [
+      { filePath: "intro.json", entry: introductionFixture },
+      { filePath: "ep1.json", entry: validLingalaEntry() },
+    ],
+    STUB_DEPS
+  );
+  if (
+    [...withIntroduction.errorsByFile.values()].some((errors) => errors.length)
+  ) {
+    failures.push("  an introduction must not affect episode numbering");
+  }
+  const repeatedIntroduction = validateLedger(
+    [
+      { filePath: "intro.json", entry: introductionFixture },
+      { filePath: "duplicate.json", entry: introductionFixture },
+    ],
+    STUB_DEPS
+  );
+  if (
+    !(repeatedIntroduction.errorsByFile.get("duplicate.json") ?? []).some(
+      (error) => error.includes("campaign")
+    )
+  ) {
+    failures.push("  duplicate introduction campaigns must still fail");
+  }
+
   const episodeHole = validateLedger(
     [
       {
@@ -601,11 +731,11 @@ function selftestEntries(): number {
 
   if (failures.length) {
     console.error(
-      `✖ ${failures.length} cas sur ${FIXTURES.length + 2} :\n${failures.join("\n")}`
+      `✖ ${failures.length} cas sur ${FIXTURES.length + 4} :\n${failures.join("\n")}`
     );
     return 1;
   }
-  console.log(`✔ ${FIXTURES.length + 2} cas de contrôle passent`);
+  console.log(`✔ ${FIXTURES.length + 4} cas de contrôle passent`);
   return 0;
 }
 
