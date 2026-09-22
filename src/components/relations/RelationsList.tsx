@@ -15,6 +15,7 @@ import type {
   RelationListItem,
 } from "@/lib/relationsDataTransformer";
 import { relationsCopy } from "@/lib/i18n/copy/relations";
+import { peopleDisplayNames } from "@/lib/search/peopleDisplayNames";
 import type { Language } from "@/types/shared";
 
 const FILTERABLE_TYPES: RelationBadgeType[] = [
@@ -58,12 +59,18 @@ function syncUrl(activeTypes: RelationBadgeType[]) {
   window.history.replaceState(window.history.state, "", url);
 }
 
+function neighborNames(item: RelationListItem) {
+  return peopleDisplayNames(
+    item.neighbor.selfAppellation,
+    item.neighbor.nameMain
+  );
+}
+
 function rowAriaLabel(item: RelationListItem, language: Language): string {
   const copy = relationsCopy[language];
-  const parts = [
-    RELATION_TYPE_LABELS[language][item.type],
-    item.neighbor.nameMain,
-  ];
+  const names = neighborNames(item);
+  const parts = [RELATION_TYPE_LABELS[language][item.type], names.primary];
+  if (names.secondary) parts.push(names.secondary);
   if (item.period?.label) parts.push(item.period.label);
   if (item.derived) {
     parts.push(copy.graph.derived);
@@ -202,7 +209,8 @@ export function RelationsList({
                     language={language}
                   />
                   <AutonymExonymHeading
-                    autonym={item.neighbor.nameMain}
+                    autonym={neighborNames(item).primary}
+                    exonym={neighborNames(item).secondary}
                     variant="inline"
                   />
                 </div>

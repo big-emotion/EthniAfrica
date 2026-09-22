@@ -194,7 +194,8 @@ Ghana ? ».
 > `--afh-color-text-muted` `#9b8b7d` échoue AA en corps 19 px. Ne jamais l'utiliser
 > pour un crédit.
 
-**Mapping accent ↔ pilier :** L'atlas → ocre · Les dossiers → teal · Jouer → pervenche.
+**Mapping accent ↔ pilier :** EthniAfrica → ocre · Les dossiers → teal · Jouer → pervenche.
+L'ancien pilier « L'atlas » se lit « EthniAfrica » (2026-09-22) : aucune carte n'imprime plus « L'ATLAS ».
 Une carte a un seul accent.
 
 ---

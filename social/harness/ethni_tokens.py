@@ -55,7 +55,7 @@ SAFE_FLOOR_9_16 = 1620
 
 # §2 — one accent per surface, and the pillar decides which.
 PILIER_ACCENT = {
-    "L'atlas": "ocre",
+    "EthniAfrica": "ocre",
     "Les dossiers": "teal",
     "Jouer": "perv",
 }
@@ -125,8 +125,18 @@ def accent(name, fond):
     return color(ACCENT_TOKEN[(name, fond)])
 
 
+# 2026-09-22 — the project is never printed as « L'atlas ». Decks the workshop
+# filed before the rename still carry the old name, so it is read as the new one
+# rather than refused: a refusal would block every old deck's re-render.
+PILIER_RETIRE = {"L'atlas": "EthniAfrica"}
+
+
+def pilier_courant(pilier):
+    return PILIER_RETIRE.get(pilier, pilier)
+
+
 def accent_for_pillar(pilier):
-    return PILIER_ACCENT[pilier]
+    return PILIER_ACCENT[pilier_courant(pilier)]
 
 
 def credit_ink(fond, token=None):

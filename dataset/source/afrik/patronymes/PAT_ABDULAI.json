@@ -93,7 +93,7 @@
       "url": null,
       "tier": "unverified",
       "source_kind": "ai_generated",
-      "notes": "Ce nom figure au relevé de couverture de l'atlas : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+      "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
     }
   ],
   "gaps": [
@@ -107,7 +107,7 @@
     },
     {
       "fieldPath": "alliances",
-      "reason": "Les recherches exactes sur Abdulai et Abudulai dans la littérature dagomba consultée n'ont pas identifié de parenté à plaisanterie entre deux patronymes disposant chacun d'une nom de l'atlas vérifiable."
+      "reason": "Les recherches exactes sur Abdulai et Abudulai dans la littérature dagomba consultée n'ont pas identifié de parenté à plaisanterie entre deux patronymes disposant chacun d'une nom documenté ici vérifiable."
     },
     {
       "fieldPath": "casteOrSocialFunction",

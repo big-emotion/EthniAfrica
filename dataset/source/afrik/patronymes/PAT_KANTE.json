@@ -184,13 +184,13 @@
       "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs, et la lecture retenue est celle que le fichier impose : la ligne des termes de statut porte les mots mandingues eux-mêmes (nùmu, jèli, hɔ́rɔn, tontigi), et la ligne des liens claniques se lit senankuya parce que l'entrée Kúyate annote la sienne d'une réserve disant que cette relation-là est une entente amicale et non un senankuya. Ces liens ne sont pas réciproques d'une entrée à l'autre : les paires citées ici sont celles que porte l'entrée Kántɛ, qui renvoie à Kulibali, Keyita, Kamara, Samakɛ, Jabo, Jakitɛ et aux Peuls. Seules les quatre dont l'atlas tient déjà le nom sont reprises ici."
+      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs, et la lecture retenue est celle que le fichier impose : la ligne des termes de statut porte les mots mandingues eux-mêmes (nùmu, jèli, hɔ́rɔn, tontigi), et la ligne des liens claniques se lit senankuya parce que l'entrée Kúyate annote la sienne d'une réserve disant que cette relation-là est une entente amicale et non un senankuya. Ces liens ne sont pas réciproques d'une entrée à l'autre : les paires citées ici sont celles que porte l'entrée Kántɛ, qui renvoie à Kulibali, Keyita, Kamara, Samakɛ, Jabo, Jakitɛ et aux Peuls. Seules les quatre dont nous documentons déjà le nom sont reprises ici."
     }
   ],
   "gaps": [
     {
       "fieldPath": "alliances",
-      "reason": "Deux des sept relations enregistrées par le dictionnaire de noms claniques ne sont pas reprises : l'atlas n'a pas encore de nom correspondant pour l'une, et la correspondance orthographique de l'autre reste incertaine. Le fichier n'enregistre par ailleurs pas ses liens dans les deux sens, si bien que d'autres paires peuvent exister sans y figurer."
+      "reason": "Deux des sept relations enregistrées par le dictionnaire de noms claniques ne sont pas reprises : nous n'avons pas encore de nom correspondant pour l'une, et la correspondance orthographique de l'autre reste incertaine. Le fichier n'enregistre par ailleurs pas ses liens dans les deux sens, si bien que d'autres paires peuvent exister sans y figurer."
     },
     {
       "fieldPath": "homonyms",

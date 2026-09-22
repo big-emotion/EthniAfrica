@@ -267,6 +267,37 @@ describe("SearchModalV2", () => {
       );
     });
 
+    // @req REQ-178
+    it("names a people suggestion by its self-given name first", async () => {
+      mockSearch([
+        {
+          type: "people",
+          id: "PPL_FULA",
+          name: "Fula (Fulbe / Peul)",
+          autonym: "Fulbe (pluriel), Pullo (singulier)",
+        },
+      ]);
+      render(<SearchModalV2 open={true} onClose={mockOnClose} language="fr" />);
+
+      await act(async () => {
+        fireEvent.change(
+          screen.getByPlaceholderText(/Rechercher une famille/i),
+          {
+            target: { value: "peul" },
+          }
+        );
+        await new Promise((r) => setTimeout(r, 350));
+      });
+
+      await waitFor(() => {
+        expect(
+          screen.getByRole("link", {
+            name: "Fulbe (pluriel), Pullo (singulier) — Fula (Fulbe / Peul)",
+          })
+        ).toHaveAttribute("href", getPeopleRoute("fr", "PPL_FULA"));
+      });
+    });
+
     /**
      * The overlay is reachable from the masthead of every page and by a
      * keyboard shortcut, and it was the one search bar that answered no

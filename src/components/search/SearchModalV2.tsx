@@ -22,7 +22,7 @@ import {
 } from "@/components/search/searchEntityAccent";
 import { getLocalizedRoute } from "@/lib/routing";
 import { getSearchLabel } from "@/lib/search/searchVocabulary";
-import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
+import { searchResultDisplayLabel } from "@/lib/search/peopleDisplayNames";
 import { useAutocomplete } from "@/hooks/use-autocomplete";
 import { cn } from "@/lib/utils";
 import type { SearchResult } from "@/types/afrik-frontend";
@@ -184,7 +184,7 @@ export const SearchModalV2 = ({
                     className="flex-1 truncate text-afh-text"
                     tabIndex={-1}
                   >
-                    {getLocalizedSearchResultName(result, language)}
+                    {searchResultDisplayLabel(result, language)}
                   </Link>
                   <span
                     aria-hidden="true"

@@ -1,6 +1,7 @@
 import { PRODUCT_NAME } from "@/lib/brand";
 import { violatesReaderRegister } from "@/lib/editorial/readerRegister";
 import { ficheMetadataCopy } from "@/lib/i18n/copy/ficheMetadata";
+import { peopleDisplayLabel } from "@/lib/search/peopleDisplayNames";
 import type { FicheKind } from "@/lib/seo/ficheCanonical";
 import type { Language } from "@/types/shared";
 
@@ -49,6 +50,12 @@ const MAX_DESCRIPTION_LIST_ITEMS = 4;
 // @req REQ-091
 export interface FicheSubject {
   name: string;
+  /**
+   * A people's self-given name (`content.appellations.selfAppellation`).
+   * The head opens on it and follows with `name` (operator ruling,
+   * 2026-09-22); every other kind ignores it.
+   */
+  selfName?: string | null;
   /** The fiche's own chapeau, when the corpus wrote one. */
   summary?: string | null;
   familyName?: string | null;
@@ -187,7 +194,11 @@ export function buildFicheHead(
   subject: FicheSubject
 ): FicheHead {
   const copy = ficheMetadataCopy[lang];
-  const name = readable(subject.name);
+  const filedName = readable(subject.name);
+  const name =
+    filedName && (kind === "people" || kind === "peopleLinks")
+      ? peopleDisplayLabel(readable(subject.selfName), filedName)
+      : filedName;
 
   // A fiche whose display name is itself a corpus identifier has no reader-
   // facing name to print. The kind still distinguishes it from the site head.
