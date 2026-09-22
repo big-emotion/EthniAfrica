@@ -294,15 +294,21 @@ describe("AboutPageContent (REQ-132)", () => {
     );
 
     expect(declaration).toHaveTextContent(/Un nom n’est jamais figé/);
-    expect(declaration).toHaveTextContent(/Aucun n’est faux/);
-    expect(declaration).toHaveTextContent(/La source qui compte le plus/);
+    expect(declaration).toHaveTextContent(/Plusieurs noms peuvent coexister/);
     expect(declaration).toHaveTextContent(
-      /personne n’est mieux placé que lui pour raconter son histoire/
+      /peut ensuite devenir une appartenance réellement vécue/
+    );
+    expect(declaration).toHaveTextContent(/La pertinence d’une source/);
+    expect(declaration).toHaveTextContent(
+      /La pertinence d’une source dépend de la question posée/
     );
     expect(declaration).toHaveTextContent(/Ces écarts pèsent encore/);
+    expect(declaration).toHaveTextContent(
+      /Comprendre l’histoire d’un nom peut éclairer un désaccord/
+    );
     expect(declaration).toHaveTextContent(/Personne n’est visé/);
     expect(declaration).toHaveTextContent(
-      /nous ne désignons aucun responsable/
+      /Nous nommons les acteurs lorsque les sources établissent leur rôle/
     );
     expect(declaration).toHaveTextContent(/Ce que nous cherchons/);
     expect(declaration).toHaveTextContent(
@@ -349,9 +355,12 @@ describe("AboutPageContent (REQ-132)", () => {
     const declaration = screen.getByTestId("about-declaration");
 
     expect(declaration).toHaveTextContent(/A name is never fixed/);
-    expect(declaration).toHaveTextContent(/None of them is false\./);
+    expect(declaration).toHaveTextContent(/Several names can coexist/);
     expect(declaration).toHaveTextContent(
-      /nobody is better placed than they are to tell their own history/
+      /can later become a real, lived belonging/
+    );
+    expect(declaration).toHaveTextContent(
+      /A source's relevance depends on the question being asked/
     );
     expect(
       within(screen.getByTestId("about-declaration-refusals")).getAllByRole(
