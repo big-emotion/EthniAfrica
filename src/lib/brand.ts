@@ -61,7 +61,7 @@ export const PRODUCT_NAME =
  * is edited in the same commit — not before, or the gate goes red for everyone.
  */
 // @req REQ-019
-export const PRODUCT_TAGLINE = "L’histoire des noms, avec leurs sources";
+export const PRODUCT_TAGLINE = "L’Afrique à travers ses noms";
 
 /**
  * The handle the product answers to on social networks.

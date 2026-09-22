@@ -37,6 +37,11 @@ import {
   PENALTY_DELTA,
   type HealthRecord,
 } from "./lib/urlHealth";
+import {
+  chunkForUrl,
+  fetchAllPages,
+  type PageResult,
+} from "./lib/supabasePaging";
 
 const LOG_PATH = path.resolve(
   __dirname,
@@ -96,6 +101,33 @@ function clampScore(n: number): number {
   return Math.max(0, Math.min(1, Math.round(n * 100) / 100));
 }
 
+/**
+ * Reads every row matching an id filter, splitting the filter so the URL
+ * stays within PostgREST's limit and paging each split so no tail is
+ * dropped. Both limits are silent — see `scripts/lib/supabasePaging.ts`.
+ *
+ * A single `.in("source_id", sourceIds)` here is what took the nightly job
+ * down the day the `server-only` import fix let it actually reach this line:
+ * production's checked-source count is well past the ~200 ids a UUID list
+ * can carry before the request comes back 400 Bad Request.
+ */
+export async function fetchByIds<T>(
+  ids: string[],
+  page: (
+    idChunk: string[],
+    from: number,
+    to: number
+  ) => PromiseLike<PageResult<T>>
+): Promise<T[]> {
+  if (ids.length === 0) return [];
+  const pages = await Promise.all(
+    chunkForUrl(ids).map((idChunk) =>
+      fetchAllPages<T>((from, to) => page(idChunk, from, to))
+    )
+  );
+  return pages.flat();
+}
+
 async function main(): Promise<void> {
   const startedAt = Date.now();
 
@@ -123,11 +155,18 @@ async function main(): Promise<void> {
 
   // Pre-fetch the assertions tied to every source we have data for.
   const sourceIds = [...runs.keys()];
-  const { data: assertions, error: aErr } = await supabase
-    .from("assertions")
-    .select("id, entity_type, entity_id, source_id")
-    .in("source_id", sourceIds);
-  if (aErr) {
+  let assertions: AssertionRow[];
+  try {
+    assertions = await fetchByIds<AssertionRow>(
+      sourceIds,
+      (idChunk, from, to) =>
+        supabase
+          .from("assertions")
+          .select("id, entity_type, entity_id, source_id")
+          .in("source_id", idChunk)
+          .range(from, to)
+    );
+  } catch (aErr) {
     logger.error("Failed to fetch assertions", aErr, {
       script: "recomputeConfidence",
     });
@@ -140,7 +179,7 @@ async function main(): Promise<void> {
     string,
     Array<{ entity_type: string; entity_id: string; assertion_id: string }>
   >();
-  for (const a of (assertions || []) as AssertionRow[]) {
+  for (const a of assertions) {
     const list = entitiesBySource.get(a.source_id) || [];
     list.push({
       entity_type: a.entity_type,

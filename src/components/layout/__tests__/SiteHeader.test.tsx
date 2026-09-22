@@ -998,7 +998,7 @@ describe("SiteHeader — the controls that stay in the bar", () => {
       "aria-label",
       "Open menu"
     );
-    expect(screen.getByText("The history of names")).toBeVisible();
+    expect(screen.getByText("Africa through its names")).toBeVisible();
     for (const label of ["The atlas", "The dossiers", "Play"]) {
       expect(screen.getByRole("button", { name: label })).toBeVisible();
     }
@@ -1064,13 +1064,12 @@ describe("SiteHeader — the controls that stay in the bar", () => {
  * The fourth control. Measured at 430px against the bar's own stylesheet:
  * 406px of content after the page padding, 16px of gap, 53px for the mark
  * and its gap, and 44px per control at 2px apart. Three controls leave the
- * lockup 201px. The header therefore carries the short form of the tagline,
- * « L’histoire des noms » — the full site slogan runs to 39 characters and
- * overflows that measure on every phone, which is why the footer and the
- * Open Graph title carry it instead. A fourth control would leave 155px and cut the
- * tagline on every phone page. So the bar carries the switch only above the
- * breakpoint, and below it the tray does — as its first row, above the
- * three axes, where the phone's navigation already is.
+ * lockup 201px. The header carries the site's own tagline, « L’Afrique à
+ * travers ses noms » (28 characters, editorial-and-experience-plan.md C1) — a
+ * fourth control would leave 155px and cut it on every phone page. So the bar
+ * carries the switch only above the breakpoint, and below it the tray does —
+ * as its first row, above the three axes, where the phone's navigation
+ * already is.
  */
 describe("SiteHeader — the language switch (REQ-140)", () => {
   // Mobile is the first containment boundary: the row must not survive in the

@@ -21,7 +21,7 @@ export async function generateMetadata({
   params,
 }: DoctrinePageProps): Promise<Metadata> {
   const { lang } = await params;
-  const title = lang === "en" ? "Editorial doctrine" : "Doctrine éditoriale";
+  const title = lang === "en" ? "How we work" : "Comment nous travaillons";
   return {
     title,
     ...surfaceHead(

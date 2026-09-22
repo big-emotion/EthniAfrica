@@ -9,13 +9,15 @@
  *     double-penalize or double-recover.
  */
 
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
 import {
   computeConsecutiveRuns,
   decideAction,
   type HealthRecord,
   type Action,
 } from "../lib/urlHealth";
+import { fetchByIds } from "../recomputeConfidence";
+import type { PageResult } from "../lib/supabasePaging";
 
 /** Build a synthetic NDJSON-equivalent record. */
 function rec(
@@ -193,6 +195,79 @@ describe("decideAction", () => {
         hasOpenFlag: false,
       })
     ).toBe("noop");
+  });
+});
+
+describe("fetchByIds", () => {
+  // The nightly job broke fetching production's ~1000 checked sources in one
+  // `.in(...)` call: a request that long comes back 400 Bad Request with no
+  // hint that length was the cause (scripts/lib/supabasePaging.ts). This
+  // reproduces that scale against a fake `page` callback, without a network.
+
+  // @req REQ-092
+  it("returns an empty list without calling page when there are no ids", async () => {
+    const page = vi.fn();
+    const rows = await fetchByIds<{ id: string }>([], page);
+    expect(rows).toEqual([]);
+    expect(page).not.toHaveBeenCalled();
+  });
+
+  // @req REQ-092
+  it("splits an id list too long for one URL into multiple chunked calls", async () => {
+    // 60-char ids give a budget of floor(8000 / 63) = 126 per chunk; 300 ids
+    // forces three, the way production's checked-source count forces many
+    // more than one over real ~36-char UUIDs.
+    const ids = Array.from({ length: 300 }, (_, i) =>
+      `source-id-${i}`.padEnd(60, "x")
+    );
+    const calledWithChunks: string[][] = [];
+    const page = vi.fn(
+      async (idChunk: string[]): Promise<PageResult<{ id: string }>> => {
+        calledWithChunks.push(idChunk);
+        return { data: idChunk.map((id) => ({ id })), error: null };
+      }
+    );
+
+    const rows = await fetchByIds<{ id: string }>(ids, page);
+
+    expect(calledWithChunks.length).toBeGreaterThan(1);
+    expect(calledWithChunks.flat().sort()).toEqual([...ids].sort());
+    expect(rows.map((r) => r.id).sort()).toEqual([...ids].sort());
+  });
+
+  // @req REQ-092
+  it("pages past a single chunk's row cap instead of dropping the tail", async () => {
+    const ids = ["s1"];
+    const totalRows = 2500; // more than one 1000-row page
+    const page = vi.fn(
+      async (
+        idChunk: string[],
+        from: number,
+        to: number
+      ): Promise<PageResult<{ id: string }>> => {
+        const rows = [];
+        for (let i = from; i <= to && i < totalRows; i++) {
+          rows.push({ id: `${idChunk[0]}-${i}` });
+        }
+        return { data: rows, error: null };
+      }
+    );
+
+    const rows = await fetchByIds<{ id: string }>(ids, page);
+
+    expect(rows).toHaveLength(totalRows);
+  });
+
+  // @req REQ-092
+  it("propagates a page error instead of silently returning partial rows", async () => {
+    const page = vi.fn(async (): Promise<PageResult<{ id: string }>> => ({
+      data: null,
+      error: new Error("Bad Request"),
+    }));
+
+    await expect(fetchByIds<{ id: string }>(["s1"], page)).rejects.toThrow(
+      "Bad Request"
+    );
   });
 });
 

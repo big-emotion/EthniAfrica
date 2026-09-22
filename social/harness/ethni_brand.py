@@ -12,8 +12,9 @@ frozen rule is that **the site's qualifier sits directly beneath « EthniAfrica 
 in the warm orange-to-gold treatment. It is not a strapline that can be swapped for a
 handle — a first pass here did exactly that and was wrong. The qualifier is
 `PRODUCT_TAGLINE` in `src/lib/brand.ts`, copied here because Python cannot import it;
-the operator replaced it on 2026-09-21 (« Atlas des Peuples d'Afrique » before that),
-and `src/lib/__tests__/brandQualifierCharter.test.ts` holds the two to each other.
+the operator replaced it on 2026-09-22 (« L'histoire des noms, avec leurs sources »
+before that, « Atlas des Peuples d'Afrique » before that), and
+`src/lib/__tests__/brandQualifierCharter.test.ts` holds the two to each other.
 
 The wordmark is drawn in white rather than the brand's dark brown because the
 ground is a darkened photograph, not parchment. The tagline keeps its gradient: it
@@ -25,7 +26,7 @@ import numpy as np
 
 HARNESS = pathlib.Path(__file__).resolve().parent
 
-TAGLINE = "L’histoire des noms, avec leurs sources"
+TAGLINE = "L’Afrique à travers ses noms"
 WHITE = "#FFFFFF"
 FLAME = (218, 98, 47)      # #DA622F
 GOLD_INK = (242, 186, 54)  # #F2BA36

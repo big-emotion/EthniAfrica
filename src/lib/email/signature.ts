@@ -22,7 +22,7 @@ import type { Language } from "@/types/shared";
  * sentence — it translates. `PRODUCT_NAME` still comes from there, so the name
  * itself is never spelled twice.
  */
-const ENGLISH_QUALIFIER = "Where the names of Africa's peoples come from";
+const ENGLISH_QUALIFIER = "Africa through its names";
 
 // @req REQ-019
 export function emailSignature(language: Language): string {

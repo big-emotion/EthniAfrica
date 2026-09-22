@@ -123,6 +123,38 @@ description to open on a question now requires it to open on what a name holds,
 and still refuses `peuples` there. Every sentence that says what the site is now
 says the qualifier's promise.
 
+**The qualifier was replaced again on 22 September 2026: `L'Afrique à travers
+ses noms`.** `editorial-and-experience-plan.md` (C1) moved the site's opening
+promise from the method — `L'histoire des noms, avec leurs sources`, ruled the
+day before — to the discovery itself: a reader meets the continent through its
+names before meeting how the project handles them. The operator chose it
+explicitly over keeping the method-first wording, and ruled that this slogan is
+now the one string the product introduces itself with everywhere, including its
+social bios — not only the site.
+
+That collided with a rule this file had not anticipated: the masthead carries
+only the _opening_ of the qualifier, held to 24 characters
+(`brandQualifierCharter.test.ts`), and no true prefix of the new 28-character
+slogan both fits that budget and reads as a complete phrase — `L'Afrique à
+travers ses` cuts the sentence off mid-possessive. Two ways out existed without
+touching the ceiling: truncate anyway, or drop back to the name alone in the
+masthead, undoing the 21 September fix for exactly the defect it existed to
+close (REQ-114: "with nothing saying what EthniAfrica is"). The operator ruled
+neither — **the ceiling itself was raised to 28, and the masthead now carries
+the slogan in full.** `chromeCopy.fr.headerTagline` reads `PRODUCT_TAGLINE`
+directly rather than repeating it, since the "short form" and the full slogan
+are now the same string and a second literal would be exactly the duplication
+§1 of this file forbids.
+
+**Aligned in the same pass**, the same way the 21 September change was: the
+About page's lead — `EthniAfrica raconte l'Afrique à travers ses noms` (`tells
+Africa through its names` in English) — and the render engine's `TAGLINE` in
+`social/harness/ethni_brand.py`. `OG_DESCRIPTION` was left untouched: it still
+opens on the six-class enumeration `siteDescription.test.ts` gates, which the
+plan's own proposed description would break, and revising that gate is its own
+pass, not a consequence of the slogan change. Productions already rendered
+keep the retired qualifier and are not re-rendered for this alone.
+
 **Left as it was, on purpose: the question at the level of one name.** « D'où
 vient ce nom ? » remains the label of a fiche section, the eyebrow of the result
 page, the home hero's question and the title of a video about one name. Those
