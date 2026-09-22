@@ -15,7 +15,7 @@
  * | NEXT_PUBLIC_CANONICAL_DOMAIN      | CANONICAL_DOMAIN   | "ethniafrica.com"                                                     |
  * | NEXT_PUBLIC_ATTRIBUTION_STRING    | ATTRIBUTION_STRING | "Fait avec émotion pour l'Afrique"                                    |
  * | NEXT_PUBLIC_OG_TITLE              | OG_TITLE           | see the constant — the name, then what the site holds                 |
- * | NEXT_PUBLIC_OG_DESCRIPTION        | OG_DESCRIPTION     | see the constant — a question, then the six corpus classes            |
+ * | NEXT_PUBLIC_OG_DESCRIPTION        | OG_DESCRIPTION     | see the constant — the promise, then the four kinds of name           |
  *
  * The last two rows named a value rather than pointing at one, and both had
  * gone stale: the table still read "Atlas des Peuples d'Afrique" and an
@@ -120,19 +120,18 @@ export const OG_TITLE =
 /**
  * Open Graph description for social media previews.
  *
- * It names all six corpus classes, and `siteDescription.test.ts` holds it to
- * the registry so a seventh cannot ship without this sentence saying so. The
- * three sentences that describe the product to someone who has not arrived
- * yet named four for as long as the atlas kept growing.
+ * It opens on the promise — the history of Africa's names, with its sources —
+ * then names the four kinds of name a reader arrives with: a family name, a
+ * people, a language, a place (editorial plan of 2026-09-22, B3).
+ * `siteDescription.test.ts` holds those four and the sources.
  *
- * **The enumeration comes second, and that order is the point.** This sentence
- * used to open on it — a table of contents, handed to a reader scrolling a feed
- * who has no reason yet to want a table of contents. It now opens on what a
- * name holds — the same promise as {@link PRODUCT_TAGLINE}, said as a sentence
- * — and keeps the six classes behind it, so the gate above still holds while
- * the promise leads.
+ * It used to enumerate the six corpus classes. An inventory handed to a reader
+ * scrolling a feed is a table of contents they have no reason yet to want, and
+ * it is the encyclopaedia register the reorientation retired; the reader does
+ * not arrive with a "linguistic family" or an "appellation", they arrive with
+ * a name.
  */
 // @req REQ-019
 export const OG_DESCRIPTION =
   process.env.NEXT_PUBLIC_OG_DESCRIPTION ||
-  "Chaque nom raconte une histoire. Peuples, pays, langues, familles linguistiques, noms et appellations : chacun avec l’histoire de son nom et ses sources, sans trancher.";
+  "Explorez l’histoire des noms d’Afrique et les sources qui les accompagnent. Noms de famille, peuples, langues et lieux : retrouvez aussi les questions encore ouvertes.";

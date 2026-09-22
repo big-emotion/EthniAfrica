@@ -18,12 +18,8 @@ const en = {
   title: PRODUCT_NAME,
   // Drawn into the social-card images, so it is read far more often than it
   // is seen on the site.
-  // Not a word-for-word of the French. « Appellations » is glossed to "name"
-  // (domain.appellation: the plain word does the work, "appellation" reads as a
-  // wine label), which collides with the names axis right beside it — so the
-  // English says what the two axes are instead of listing both as "names".
   subtitle:
-    "Peoples, languages, language families, countries, and the names they are known by — each with the history of its name, and the sources that attest it.",
+    "Family names, peoples, languages and places — the history of each name, with its sources.",
   byCountry: "By country",
   byPeople: "By people",
   byFamily: "By language family",
@@ -59,12 +55,12 @@ type CommonCopy = typeof en;
 const fr: CommonCopy = {
   title: PRODUCT_NAME,
   // Drawn into the social-card images (siteShareCard.tsx), so it is read far
-  // more often than it is seen on the site. Held to the six atlas classes by
-  // siteDescription.test.ts. It sits *under* the question on the card, where
-  // it answers "what is in there" for a reader the question has already
-  // stopped — which is the only moment an enumeration earns its room.
+  // more often than it is seen on the site. Held by siteDescription.test.ts to
+  // the four kinds of name a reader arrives with, and the sources. It sits
+  // *under* the question on the card, where it answers "what can I look up" for
+  // a reader the question has already stopped.
   subtitle:
-    "Peuples, langues, familles linguistiques, pays, appellations et noms — chacun avec l’histoire de son nom et les sources qui l’attestent.",
+    "Noms de famille, peuples, langues et lieux — l’histoire de chaque nom, avec ses sources.",
   byCountry: "Par Pays",
   byPeople: "Par Peuple",
   byFamily: "Par Famille Linguistique",
