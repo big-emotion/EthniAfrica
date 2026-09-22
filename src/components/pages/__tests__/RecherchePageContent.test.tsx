@@ -627,6 +627,44 @@ describe("RecherchePageContent", () => {
     expect(screen.getByText("Yoruba")).toBeInTheDocument();
   });
 
+  // @req REQ-178
+  it("names a people suggestion by its self-given name first", async () => {
+    mockFetch.mockResolvedValue(
+      okJson({
+        data: {
+          peoples: [
+            {
+              id: "PPL_FULA",
+              nameMain: "Fula (Fulbe / Peul)",
+              content: {
+                appellations: {
+                  selfAppellation: "Fulbe (pluriel), Pullo (singulier)",
+                },
+              },
+            },
+          ],
+          countries: [],
+          families: [],
+          total: 1,
+        },
+      })
+    );
+    render(<RecherchePageContent />);
+
+    await act(async () => {
+      fireEvent.change(screen.getByRole("combobox"), {
+        target: { value: "peul" },
+      });
+      await new Promise((r) => setTimeout(r, 350));
+    });
+
+    await waitFor(() => {
+      expect(screen.getByRole("option")).toHaveTextContent(
+        "Fulbe (pluriel), Pullo (singulier) — Fula (Fulbe / Peul)"
+      );
+    });
+  });
+
   // ── 6. empty state (post-search, no results) ───────────────────────────────
 
   // @req REQ-178

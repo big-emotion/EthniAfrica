@@ -67,6 +67,38 @@ describe("RelationsList", () => {
     ).toBeInTheDocument();
   });
 
+  // @req REQ-178
+  it("names a neighbor by its self-given name first, then its filed name", () => {
+    render(
+      <RelationsList
+        items={[
+          {
+            ...FON_ITEM,
+            neighbor: {
+              ...FON_ITEM.neighbor,
+              nameMain: "Fula (Fulbe / Peul)",
+              selfAppellation: "Fulbe (pluriel), Pullo (singulier)",
+            },
+          },
+          {
+            ...ASHANTI_ITEM,
+            neighbor: { ...ASHANTI_ITEM.neighbor, selfAppellation: "Ashanti" },
+          },
+        ]}
+        onOpenRelation={vi.fn()}
+      />
+    );
+
+    const [fula, ashanti] = screen.getAllByRole("heading");
+    expect(fula).toHaveTextContent(
+      /^Fulbe \(pluriel\), Pullo \(singulier\) Fula \(Fulbe \/ Peul\)$/
+    );
+    expect(ashanti).toHaveTextContent(/^Ashanti$/);
+    expect(screen.getAllByRole("listitem")[0]).toHaveAccessibleName(
+      /Fulbe \(pluriel\), Pullo \(singulier\), Fula \(Fulbe \/ Peul\)/
+    );
+  });
+
   // @req REQ-097
   it("shows a derived caption instead of a ConfidenceChip on derived rows", () => {
     render(<RelationsList items={[BAMILEKE_ITEM]} onOpenRelation={vi.fn()} />);

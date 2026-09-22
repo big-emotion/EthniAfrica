@@ -66,6 +66,27 @@ describe("SearchPeopleGroupCard", () => {
     ).toHaveAttribute("href", getPeopleRoute("fr", "PPL_FULANI_MASSINA"));
   });
 
+  // @req REQ-178
+  it("names each member by its self-given name before its filed name", () => {
+    renderCard({
+      ...fulaniGroup,
+      members: [
+        {
+          type: "people",
+          id: "PPL_FULANI",
+          name: "Peul",
+          autonym: "Fulbe (pluriel), Pullo (singulier)",
+        },
+      ],
+    });
+
+    expect(
+      screen.getByRole("link", {
+        name: "Fulbe (pluriel), Pullo (singulier) — Peul",
+      })
+    ).toHaveAttribute("href", getPeopleRoute("fr", "PPL_FULANI"));
+  });
+
   // @req REQ-002
   it("names how many fiches the group holds", () => {
     renderCard(fulaniGroup);
