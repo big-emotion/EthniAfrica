@@ -36,7 +36,7 @@ describe("AboutPageContent (REQ-132)", () => {
       screen.getByRole("heading", { level: 1, name: "About" })
     ).toBeInTheDocument();
     expect(screen.getByTestId("about-overview")).toHaveTextContent(
-      /EthniAfrica tells the history of names, with their sources/i
+      /EthniAfrica tells Africa through its names/i
     );
     expect(screen.getByRole("link", { name: "how we write" })).toHaveAttribute(
       "href",
@@ -60,9 +60,7 @@ describe("AboutPageContent (REQ-132)", () => {
 
     const overview = screen.getByTestId("about-overview");
     expect(overview).toHaveTextContent(/EthniAfrica/);
-    expect(overview).toHaveTextContent(
-      /l’histoire des noms, avec leurs sources/i
-    );
+    expect(overview).toHaveTextContent(/l’Afrique à travers ses noms/i);
   });
 
   /**

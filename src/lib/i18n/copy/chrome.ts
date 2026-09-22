@@ -1,7 +1,8 @@
+import { PRODUCT_TAGLINE } from "@/lib/brand";
 import type { Language } from "@/types/shared";
 
 const en = {
-  headerTagline: "The history of names",
+  headerTagline: "Africa through its names",
   mainNavigation: "Main navigation",
   entryPoints: "Entry points",
   search: "Search",
@@ -29,7 +30,11 @@ const en = {
 type ChromeCopy = typeof en;
 
 const fr: ChromeCopy = {
-  headerTagline: "L’histoire des noms",
+  // Reads from PRODUCT_TAGLINE rather than repeating it: since C1 the
+  // masthead carries the slogan in full (brandQualifierCharter.test.ts), so a
+  // second literal here would be the exact duplication brand charter §1
+  // forbids.
+  headerTagline: PRODUCT_TAGLINE,
   mainNavigation: "Navigation principale",
   entryPoints: "Points d'entrée",
   search: "Rechercher",
