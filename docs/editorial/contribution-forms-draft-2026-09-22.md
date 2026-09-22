@@ -20,9 +20,16 @@ that reproduces §3–§7 field for field — edit that script and re-run
 | Patronyme | [Form](https://docs.google.com/forms/d/e/1FAIpQLScUxRKIw0nG2Rw256f3vtyBmKn89jbTvD83vkzqKPGXOy4d2g/viewform) | [Edit](https://docs.google.com/forms/d/1fhQtoEAGp0MhqVziYQkGhwncZRnsaid3RToMXGGDX64/edit) |
 | Languages | [Form](https://docs.google.com/forms/d/e/1FAIpQLSdOsEOIc__JNbPUqe8y7DzmEY5cIyvJdhSoqM-zHhsYNp733Q/viewform) | [Edit](https://docs.google.com/forms/d/1jD1Wl9ESHMfwyd2PYbloj4z1QFuQy1VZyaJiWfhzwQw/edit) |
 
-Not yet done: linking these from `/contribute` (§8), and settling the two
-open points in §9 — in particular `lieu`'s scope, before anyone is pointed at
-that form as more than a pilot.
+**Linked 2026-09-22.** `/{lang}/contribute` now carries a "Documenter une
+entrée en détail" section (`ContributePageClient.tsx`,
+`src/lib/i18n/copy/contribute.ts`) with one card per category, each opening
+its form in a new tab; the place card alone carries a "En construction" /
+"Work in progress" badge, per §5. Tested in
+`src/app/[lang]/contribute/__tests__/page.test.tsx`.
+
+Still open: the two points in §9 — in particular `lieu`'s scope — before this
+pilot is treated as more than that; the on-site card links to it now, and its
+badge is the only thing telling a reader so.
 
 ## 0. What already exists, and why this is not a duplicate
 

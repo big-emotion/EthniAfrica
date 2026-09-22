@@ -31,6 +31,38 @@ const en = {
     githubText:
       "The project is open source and hosted on GitHub. You can contribute by submitting issues or pull requests, or by improving the source code.",
     githubButton: "Take part on GitHub",
+    formsTitle: "Document an entry in depth",
+    formsText:
+      "The form above corrects a page quickly. These five forms document an entry in depth, one per category, through a dedicated set of questions — read by a curator before anything is published.",
+    formsCta: "Open the form",
+    formsInProgress: "Work in progress",
+    formsCategories: {
+      people: {
+        title: "A people",
+        description:
+          "What it calls itself, the forms others gave it, and what those raise.",
+      },
+      country: {
+        title: "A country",
+        description:
+          "Where its present designation comes from, and its past forms.",
+      },
+      place: {
+        title: "A place",
+        description:
+          "City, region, historical site — a category still being scoped; your answers feed the future model.",
+      },
+      patronyme: {
+        title: "A surname",
+        description:
+          "Attested spellings, how it is passed on, a told or written origin.",
+      },
+      language: {
+        title: "A language",
+        description:
+          "Attested forms, what they raise, the family it belongs to.",
+      },
+    },
   },
   title: "Submit a contribution",
   type: "Contribution type",
@@ -184,6 +216,38 @@ const fr: ContributeCopy = {
     githubText:
       "Le projet est open source et hébergé sur GitHub. Vous pouvez contribuer en soumettant des issues, des pull requests, ou en améliorant le code source.",
     githubButton: "Participer sur GitHub",
+    formsTitle: "Documenter une entrée en détail",
+    formsText:
+      "Le formulaire ci-dessus corrige une fiche rapidement. Ces cinq formulaires documentent une entrée en détail, un par catégorie, à travers un jeu de questions dédié — relu par un curateur avant toute publication.",
+    formsCta: "Ouvrir le formulaire",
+    formsInProgress: "En construction",
+    formsCategories: {
+      people: {
+        title: "Un peuple",
+        description:
+          "Comment il s'appelle lui-même, les formes qu'on lui a données, ce qu'elles soulèvent.",
+      },
+      country: {
+        title: "Une nation",
+        description:
+          "D'où vient l'appellation qu'elle porte aujourd'hui, et ses formes passées.",
+      },
+      place: {
+        title: "Un lieu",
+        description:
+          "Ville, région, site historique — une catégorie encore à l'étude ; vos réponses nourrissent le futur modèle.",
+      },
+      patronyme: {
+        title: "Un patronyme",
+        description:
+          "Orthographes attestées, mode de transmission, une origine racontée ou écrite.",
+      },
+      language: {
+        title: "Une langue",
+        description:
+          "Formes attestées, ce qu'elles posent, la famille linguistique quand elle est connue.",
+      },
+    },
   },
   title: "Soumettre une contribution",
   type: "Type de contribution",
