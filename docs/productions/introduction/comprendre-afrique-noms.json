@@ -9,5 +9,12 @@
   "myth": null,
   "subjects": [],
   "sitePath": "/fr/about",
-  "publications": []
+  "publications": [
+    { "network": "tiktok", "format": "video" },
+    { "network": "instagram", "format": "video" },
+    { "network": "facebook", "format": "video" },
+    { "network": "youtube", "format": "video" },
+    { "network": "linkedin", "format": "video" },
+    { "network": "x", "format": "video" }
+  ]
 }
