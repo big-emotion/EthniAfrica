@@ -1,5 +1,14 @@
 # Platform doctrine — what goes where, how often, for whom
 
+**Current-policy precedence, 2026-09-22.** The measurements below are historical
+baselines, not current observations. Use a fresh six-network collection for each
+strategy run. Cadence comes from `docs/productions/README.md` and the dated
+strategy roadmap; network/format distribution comes from GABARITS §1 bis, whose
+September 21 revision supersedes the older LinkedIn video refusal below.
+The operator's ordered thematic sequence supersedes rigid pillar rotation and
+fixed new-subject quotas. Historical algorithm and audience generalisations here
+must not substitute for measured evidence.
+
 Five channels, five different jobs. The mistake this file exists to prevent is
 treating them as one audience receiving one video in five aspect ratios.
 

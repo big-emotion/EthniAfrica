@@ -122,14 +122,16 @@ video view and an Instagram Reels view count different things.
 ## Step 3 — Decide the social plan
 
 **The cadence is `docs/productions/README.md`'s, not `reference/platforms.md`'s.**
-That reference file's "three videos a week, fixed days, Sunday batch" was the
-plan before `published-state.md` records it was abandoned for two concentrated
-waves; the operator has since fixed a different one — Monday/Wednesday/Friday,
-five subjects a day at the target stage, ramping up from one. **Read the
-ledger's current stage before proposing a day's slate, and never propose more
-subjects for one publication day than that stage allows.** Advancing a stage is
-this skill's own call, recorded in this session's dated report, and is a
-one-line edit to that table.
+Read its current operator revision before proposing slots. On 2026-09-22 the
+operator replaced the numbered volume ramp with Monday/Wednesday/Friday
+appointments and a connected subject sequence: a complex subject may span
+several appointments, and there is no fixed quota of two or three new subjects
+per week. Four to six distinct pieces is a working envelope, subject to source
+readiness; cross-posts do not count as additional produced pieces. Never revive
+the retired five-subjects-per-day target or force a carousel without an attested
+myth. Preserve the selected order and explain the connection between episodes.
+The dated plan lives under `docs/editorial/strategy/`; update it with the evidence
+behind any change in direction. Later operator decisions take precedence.
 
 What varies per channel is the **cut, the caption, and whether video is the
 right format there at all**, per `reference/platforms.md` and GABARITS §1 bis.

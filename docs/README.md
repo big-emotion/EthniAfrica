@@ -44,6 +44,8 @@ were referenced by nothing at all, two of them written that same week.
 
 ## Editorial — doctrine, audits and essays
 
+- [Editorial strategy — report, evidence, roadmap and alignment plan](editorial/strategy/README.md)
+
 - [Audit — where the publication rules live](editorial/audit-doctrine-publication-2026-09-17.md)
 - [Editorial classification status](editorial/classification-status.md)
 - [Congo dossier publication notes](editorial/congo-dossier-publication-notes.md)

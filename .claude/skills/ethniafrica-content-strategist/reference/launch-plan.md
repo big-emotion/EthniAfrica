@@ -9,7 +9,10 @@ never re-propose something it already decided.
 
 ## The four pillars, in fixed rotation
 
-Every publication slot receives one pillar. Never the same pillar twice in a row.
+Originally, every publication slot received one pillar, never the same twice in
+a row. **Superseded by the operator on 2026-09-22:** the pillars remain angle
+labels, but the connected subject sequence governs their order. Do not interrupt
+a coherent chapter merely to rotate labels.
 
 1. **Le vrai nom** — a people, the exonym everyone knows against the autonym, and why the gap exists.
 2. **Ce que ce nom veut dire** — etymology: what the name reveals about how a people thinks of itself.
@@ -27,14 +30,13 @@ saying which one it replaces.
 - **15 minutes a day** answering comments.
 - **15 minutes a week** reviewing native retention curves, best and worst performer.
 
-**Superseded 2026-09-20, days kept, count changed.** The operator fixed a new,
-versioned cadence — `docs/productions/README.md` — that keeps Monday/
-Wednesday/Friday but replaces "3 videos a week" with five subjects a day at
-its target stage (one video and one carousel each), ramped up from one
-subject at a time rather than started at that rate. Read that file's current
-stage before proposing a day's slate; this section stays for the ritual
-(Sunday batch, daily comment time) that the new cadence does not itself
-restate.
+**Current cadence: the operator's 2026-09-22 revision in
+`docs/productions/README.md`.** Monday/Wednesday/Friday remain the appointments;
+the subject sequence and research depth decide how many new subjects fit. Four
+to six distinct pieces is a working envelope, not a quota to fill. This replaces
+the September 20 numbered ramp toward five subjects per day. The dates and
+rituals above are historical planning context, not proof of current capacity.
+Read `docs/editorial/strategy/roadmap-2026-q4.md` for the ordered current plan.
 
 ## The channel sequence
 
