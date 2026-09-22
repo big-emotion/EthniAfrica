@@ -87,6 +87,7 @@ build
 !.claude/skills/ethniafrica-release/
 !.claude/skills/ethniafrica-spec/
 !.claude/skills/ethniafrica-ticket/
+!.claude/skills/ethniafrica-featured-campaigns/
 .entire/
 
 # Editor directories and files
