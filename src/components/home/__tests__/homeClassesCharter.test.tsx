@@ -5,6 +5,9 @@ import { HomeCorpusCounts } from "@/components/home/HomeCorpusCounts";
 import { SEARCH_RESULT_GROUPS } from "@/lib/search/searchVocabulary";
 import { SEARCH_ENTITY_ACCENT } from "@/components/search/searchEntityAccent";
 import { CORPUS_CLASSES } from "@/lib/home/corpusClasses";
+import { homeCorpusCountsCopy } from "@/lib/i18n/copy/homeCorpusCounts";
+
+const TILE_LABELS = homeCorpusCountsCopy.fr.tileLabels;
 
 vi.mock("next/navigation", () => ({
   useRouter: () => ({ push: vi.fn(), replace: vi.fn() }),
@@ -65,8 +68,8 @@ describe("home charter — what the band claims the corpus is", () => {
     render(<HomeCorpusCounts language="fr" counts={FULL_CORPUS} />);
 
     const band = screen.getByTestId("home-corpus-counts");
-    for (const { tileLabel } of CORPUS_CLASSES) {
-      expect(band.textContent).toContain(tileLabel);
+    for (const { key } of CORPUS_CLASSES) {
+      expect(band.textContent).toContain(TILE_LABELS[key]);
     }
   });
 
@@ -82,8 +85,12 @@ describe("home charter — what the band claims the corpus is", () => {
     expect(screen.getByTestId("home-corpus-counts")).toHaveAccessibleName(
       /ce que nous documentons/i
     );
-    for (const { tileLabel } of CORPUS_CLASSES) {
-      expect(tileLabel).toMatch(/document/i);
+    for (const language of ["fr", "en"] as const) {
+      for (const { key } of CORPUS_CLASSES) {
+        expect(homeCorpusCountsCopy[language].tileLabels[key]).toMatch(
+          /document/i
+        );
+      }
     }
   });
 
@@ -130,8 +137,6 @@ describe("home charter — what the band claims the corpus is", () => {
     const countedKeys = CORPUS_CLASSES.map((entity) => entity.key);
 
     expect(countedKeys).toContain("patronymes");
-    expect(
-      CORPUS_CLASSES.find((entity) => entity.key === "patronymes")?.tileLabel
-    ).toBe("noms documentés");
+    expect(TILE_LABELS.patronymes).toBe("noms documentés");
   });
 });

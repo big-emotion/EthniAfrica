@@ -213,11 +213,6 @@ export function HomeHeroAnecdote({ language, fact }: HomeHeroAnecdoteProps) {
         .home-hero-anecdote-more {
           margin: var(--afh-space-2xl) 0 0;
         }
-        @media (min-width: 1200px) {
-          .home-hero-anecdote {
-            margin-inline: 0;
-          }
-        }
       `}</style>
     </article>
   );

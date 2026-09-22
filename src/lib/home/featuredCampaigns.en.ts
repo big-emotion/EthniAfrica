@@ -28,9 +28,9 @@ export const FEATURED_CAMPAIGNS_EN: Record<
   "peul-fulbe-noms": {
     kind: "naming",
     eyebrow: "One name, many histories",
-    heading: "Fula, Fulbe: why so many names?",
+    heading: "Fulbe, Peul: why several names?",
     support:
-      "Fula, Fulani, Peul, Fellata… Discover what each form tells, and what the sources actually know.",
+      "Fulbe, Pullo, then Peul, Fulani, Fula, Fellata… Discover what each form tells and what the sources know of it.",
     forms: [
       { label: "Fulɓe · Pullo", isSelfDesignation: true },
       { label: "Fula" },
@@ -39,12 +39,12 @@ export const FEATURED_CAMPAIGNS_EN: Record<
       { label: "Fellata" },
       { label: "Toucouleur" },
     ],
-    quote:
-      "None of the readings proposed for Fulɓe and Pullo is established, and we endorse none of them.",
+    // A translation of the fiche's sentence, which has no English sidecar yet.
+    quote: "None of these readings is established and we retain none of them.",
     sources: [
       { title: "Breedveld (1995)" },
       { title: "Hampâté Bâ (1966)" },
-      { title: "Delafosse" },
+      { title: "Tauxier (1937)" },
       { title: "Barth (1857)" },
       {
         title: "SIL Ethnologue — Fulfulde (ful)",

@@ -2,6 +2,8 @@ import { describe, it, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import React from "react";
 
+import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
+
 const fixtureCounts = {
   peoples: 4213,
   countries: 91,
@@ -25,17 +27,9 @@ vi.mock("@/api/v2/services/continentPeopleCounts", () => ({
   getContinentPeopleCounts: vi.fn(async () => ({})),
 }));
 
-// Only the draw is stubbed; the curated fallback is what the chips then hold.
-vi.mock("@/lib/home/seedWords", async (importOriginal) => {
-  const actual = await importOriginal<typeof import("@/lib/home/seedWords")>();
-  return {
-    ...actual,
-    loadSeedWords: vi.fn(async () => actual.FALLBACK_SEED_WORDS),
-  };
-});
-
 // The document plan is asserted on the globe draw, the one that adds no
-// heading of its own; the anecdote draw's h2 is HomeHero.test.tsx's concern.
+// heading of its own; the anecdote draw's h2 is HomeDrawnVisual.test.tsx's
+// concern.
 vi.mock("@/lib/home/homeHeroVisuals", async (importOriginal) => {
   const actual =
     await importOriginal<typeof import("@/lib/home/homeHeroVisuals")>();
@@ -43,6 +37,14 @@ vi.mock("@/lib/home/homeHeroVisuals", async (importOriginal) => {
     ...actual,
     drawHomeHeroVisual: () => ({ kind: "globe" }),
   };
+});
+
+// The campaign window depends on the date the suite runs; the plan is
+// asserted without the tile, whose heading home.test.tsx covers.
+vi.mock("@/lib/home/featuredCampaigns", async (importOriginal) => {
+  const actual =
+    await importOriginal<typeof import("@/lib/home/featuredCampaigns")>();
+  return { ...actual, getActiveFeaturedCampaign: () => null };
 });
 
 vi.mock("@/components/layout/PageLayout", () => ({
@@ -67,39 +69,30 @@ const precedes = (first: Element, second: Element) =>
   );
 
 describe("home — what the reader meets, and in what order (REQ-113)", () => {
-  // The DOM is the phone composition: copy/search/seeds, then the visual.
-  // Desktop reuses those nodes through grid areas rather than maintaining a
-  // second reading order — whichever side the visual is drawn to.
+  // The DOM is the phone composition, and every wider layout reuses those
+  // nodes rather than maintaining a second reading order.
   // @req REQ-113
-  it("orders the search-first hero for mobile before enhancing it for desktop", async () => {
+  it("reads the search first and the drawn visual after the stories", async () => {
     const { container } = await renderHome();
 
-    const copy = container.querySelector(".home-hero-copy");
-    // `.home-hero-visual`, not `.home-hero-globe`: the band's visual is drawn
-    // at random from the eligible hero kinds, and only the globe draw carries
-    // the second class. Reading order is the same whichever kind is drawn, so
-    // the assertion belongs on the slot rather than on one of its outcomes.
-    const visual = container.querySelector(".home-hero-visual");
+    const search = screen.getByRole("search");
+    const stories = screen.getByTestId("home-stories");
+    const visual = container.querySelector(".home-hero-visual")!;
+    const counts = screen.getByTestId("home-counts");
 
-    expect(copy).not.toBeNull();
-    expect(visual).not.toBeNull();
-    expect(precedes(copy!, visual!)).toBe(true);
+    expect(precedes(search, stories)).toBe(true);
+    expect(precedes(stories, visual)).toBe(true);
+    expect(precedes(visual, counts)).toBe(true);
   });
 
-  // The hero is the whole home now: the « Saviez-vous » band that followed it
-  // was retired on 2026-09-13 and its anecdote became one of the hero's draws.
   // @req REQ-113
-  it("ends on the hero, with no band after it and no retired section", async () => {
-    const { container } = await renderHome();
+  it("carries no retired section", async () => {
+    await renderHome();
 
-    const layout = screen.getByTestId("page-layout");
-    expect(layout.children).toHaveLength(1);
-    expect(layout.firstElementChild).toBe(
-      container.querySelector(".home-hero")
-    );
     for (const testId of [
       "home-did-you-know",
       "home-purpose-blocks",
+      "home-hero-purpose",
       "access-axes",
       "home-synthesis-rail",
       "home-featured-module",
@@ -109,45 +102,41 @@ describe("home — what the reader meets, and in what order (REQ-113)", () => {
     }
   });
 
+  // One page title; each lower section files itself with an h2, and only the
+  // story cards sit a rung below. The figures are values, not headings.
   // @req REQ-113
-  it("answers the headline in one sentence, and says the answers are sourced", async () => {
-    await renderHome();
-
-    const answer = screen.getByTestId("home-hero-answer");
-    const sentences = answer
-      .textContent!.split(/(?<=\.)\s+/)
-      .filter((part) => part.trim().length > 0);
-
-    expect(sentences).toHaveLength(1);
-    expect(answer).toHaveTextContent(/sourc/i);
-  });
-
-  // One page title. The corpus figures are values, not headings competing
-  // with the page question, and the purpose disclosure is one statement, not
-  // a section.
-  // @req REQ-113
-  it("keeps one h1 and no section heading under the globe draw", async () => {
+  it("keeps one h1, one h2 per section, and h3 only on the story cards", async () => {
     await renderHome();
 
     expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
-    expect(screen.queryAllByRole("heading", { level: 2 })).toHaveLength(0);
-    expect(screen.queryAllByRole("heading", { level: 3 })).toHaveLength(0);
+    expect(
+      screen
+        .getAllByRole("heading", { level: 2 })
+        .map((heading) => heading.textContent)
+    ).toEqual([
+      "Des histoires à découvrir",
+      "Pourquoi EthniAfrica ?",
+      "Des sources pour comprendre",
+      "EthniAfrica en quelques repères",
+    ]);
+    const cards = screen.getByTestId("home-stories");
+    for (const heading of screen.getAllByRole("heading", { level: 3 })) {
+      expect(cards).toContainElement(heading);
+    }
   });
 
-  // The one action names the five entity types the corpus can resolve — the
-  // same five the headline reel turns through. No retired axis copy survives
+  // The one action is named by the home's question and described by the
+  // sentence that says what can be typed. No retired axis copy survives
   // around it to compete for the first decision.
   // @req REQ-113
-  it("names the searchable entity kinds without legacy entry-point rhetoric", async () => {
+  it("names the search by its question and describes what it accepts", async () => {
     const { container } = await renderHome();
 
     expect(container.textContent).not.toMatch(/il arrive avec/i);
     expect(container.textContent).not.toMatch(/il repart avec/i);
-    expect(container.textContent).not.toMatch(/il arrive sans rien/i);
-    expect(
-      screen.getByRole("combobox", {
-        name: /peuple, une langue, un pays, une famille linguistique ou un nom/i,
-      })
-    ).toBeInTheDocument();
+    const field = screen.getByRole("combobox", {
+      name: homeHeroCopy.fr.searchLabel,
+    });
+    expect(field).toHaveAccessibleDescription(homeHeroCopy.fr.description);
   });
 });

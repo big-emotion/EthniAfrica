@@ -34,31 +34,30 @@ import type { CorpusCounts } from "@/lib/home/corpusCounts";
  * every other label on this band relies on.
  *
  * What the three-of-six choice costs, and what pays for it: three totals read
- * as the corpus entire unless something says otherwise, so every `tileLabel`
- * carries the scope word and the band's accessible name is « Ce que l'atlas
- * documente », not « Le corpus en chiffres ». That is the whole mitigation,
+ * as the corpus entire unless something says otherwise, so every tile label
+ * carries the scope word and the band's accessible name is « Ce que nous
+ * documentons », not « Le corpus en chiffres ». That is the whole mitigation,
  * and `homeClassesCharter.test.tsx` holds it — a label edited back to a bare
  * noun reinstates the claim this band gave up making. The classes that lost
  * their figure keep every other surface they had: a menu entry, a faceted
  * index, a search group, and the prose that names all six (`corpusNoun`).
  */
+/** The three totals the band prints; their labels live in `homeCorpusCountsCopy`. */
+export type CountedClassKey = Extract<
+  keyof CorpusCounts,
+  "peoples" | "languages" | "patronymes"
+>;
+
 export interface CorpusClass {
-  key: keyof CorpusCounts;
-  /**
-   * The label under the figure. Lowercase and scoped — « peuples documentés »,
-   * not « Peuples » — because the tile is read as one phrase from the number
-   * down, and the scope word is the band's only defence against being read as
-   * a claim of exhaustiveness.
-   */
-  tileLabel: string;
+  key: CountedClassKey;
 }
 
 // @req REQ-113
 export const CORPUS_CLASSES: readonly CorpusClass[] = [
-  { key: "peoples", tileLabel: "peuples documentés" },
-  { key: "languages", tileLabel: "langues documentées" },
+  { key: "peoples" },
+  { key: "languages" },
   // `patronymes`, never `nameForms`: DEC-038 keeps the two objects the corpus
   // calls "name" apart, and they are an order of magnitude apart in size, so
   // reading the wrong one puts a wrong figure under a right label.
-  { key: "patronymes", tileLabel: "noms documentés" },
+  { key: "patronymes" },
 ];

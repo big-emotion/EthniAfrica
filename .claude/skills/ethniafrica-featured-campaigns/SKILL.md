@@ -14,8 +14,10 @@ consacré à un seul sujet, ce qu'il n'est pas.
 
 **Ce skill ne fait tourner aucune campagne.** Il en propose une, sourcée,
 sans fenêtre de dates. `getActiveFeaturedCampaign` ne choisit une entrée que
-si elle porte `activeFrom`/`activeTo` — ajouter ces deux dates et merger
-reste un geste de l'opérateur, jamais de ce skill.
+si elle porte `activeFrom` ; `activeTo` est facultatif, et son absence laisse
+la campagne ouverte jusqu'à ce qu'une autre la remplace (la campagne Fulbe,
+ouverte le 2026-09-23 sans date de fin). Ajouter ces dates et merger reste un
+geste de l'opérateur, jamais de ce skill.
 
 Distinct d'`afrik-curator` : celui-ci enrichit les fiches du corpus ; ce
 skill ne touche à aucune fiche — il lit `dataset/source/afrik/` en lecture

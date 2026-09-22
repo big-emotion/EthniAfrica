@@ -28,6 +28,8 @@ const ANECDOTE = source("src/components/home/HomeHeroAnecdote.tsx");
 const SEARCH = source("src/components/home/HomeHeroSearch.tsx");
 const FOOTER = source("src/components/layout/SiteFooter.tsx");
 const HEADER = source("src/components/layout/SiteHeader.tsx");
+const STORIES = source("src/components/home/HomeStories.tsx");
+const FEATURED = source("src/components/home/HomeFeaturedCampaign.tsx");
 
 describe("home typography (typography charter §8)", () => {
   // The title is the page's one hero, so it takes the scale's hero step and
@@ -74,6 +76,40 @@ describe("home typography (typography charter §8)", () => {
     expect(kicker).toMatch(/font-weight:\s*var\(--afh-eyebrow-weight\)/);
     expect(kicker).toMatch(/letter-spacing:\s*var\(--afh-eyebrow-tracking\)/);
     expect(kicker).toMatch(/text-transform:\s*var\(--afh-eyebrow-transform\)/);
+  });
+
+  // A card title is the display face at the body step (charter §4): three
+  // story cards may not shout over the section title that governs them.
+  // @req REQ-115
+  it("sets a story card title as a card title, never at a heading step", () => {
+    const title = declarations(
+      STORIES,
+      ".home-stories .home-story .home-story-title"
+    );
+
+    expect(title).toMatch(/font-family:\s*var\(--afh-font-display\)/);
+    expect(title).toMatch(/font-size:\s*var\(--afh-text-body\)/);
+    expect(title).toMatch(/font-weight:\s*700/);
+  });
+
+  // It introduces the chips and is not one of them: their step, soft ink.
+  // @req REQ-115
+  it("sets the seed intro at the chips' step in the soft ink", () => {
+    const intro = declarations(SEARCH, ".home-hero-seeds-intro");
+
+    expect(intro).toMatch(/font-size:\s*var\(--afh-text-small\)/);
+    expect(intro).toMatch(/color:\s*var\(--afh-text-soft\)/);
+  });
+
+  // The display face speaks at two weights: 900 for the page's own title and
+  // key figures, 700 for a heading role (charter §8.1). The featured heading
+  // shares the band with the h1 from 1200px.
+  // @req REQ-115
+  it("gives the featured answer's heading a heading role's weight", () => {
+    const heading = declarations(FEATURED, ".home-featured-heading");
+
+    expect(heading).toMatch(/font-weight:\s*700/);
+    expect(heading).not.toMatch(/font-weight:\s*900/);
   });
 
   // One lockup, one treatment (brand charter §5.3). The footer's name set no

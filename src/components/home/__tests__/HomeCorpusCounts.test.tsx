@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
 import { HomeCorpusCounts } from "@/components/home/HomeCorpusCounts";
+import { homeCorpusCountsCopy } from "@/lib/i18n/copy/homeCorpusCounts";
 
 const FULL_CORPUS = {
   peoples: 4213,
@@ -13,7 +14,7 @@ const FULL_CORPUS = {
   migrations: 5,
 };
 
-describe("HomeCorpusCounts — what the atlas documents, in three figures", () => {
+describe("HomeCorpusCounts — what we document, in three figures", () => {
   // @req REQ-113
   it("renders the three totals supplied by the server", () => {
     render(<HomeCorpusCounts language="fr" counts={FULL_CORPUS} />);
@@ -67,12 +68,13 @@ describe("HomeCorpusCounts — what the atlas documents, in three figures", () =
   });
 
   // A database failure is not an empty corpus. Printing zero would turn an
-  // operational failure into a false claim on the site's most visible page.
+  // operational failure into a false claim on the site's most visible page,
+  // and « pour le moment » keeps the absence from reading as a finding.
   // @req REQ-113
-  it("states that totals are unavailable instead of replacing them with zero", () => {
+  it("states that totals are unavailable for now instead of replacing them with zero", () => {
     render(<HomeCorpusCounts language="fr" counts={null} />);
 
-    expect(screen.getAllByText("Indisponible")).toHaveLength(3);
+    expect(screen.getAllByText("Indisponible pour le moment")).toHaveLength(3);
     expect(screen.queryByText("0")).not.toBeInTheDocument();
     for (const item of screen.getAllByTestId(/^home-count-/)) {
       expect(item).toHaveAttribute("data-state", "unavailable");
@@ -99,7 +101,51 @@ describe("HomeCorpusCounts — what the atlas documents, in three figures", () =
       "data-state",
       "available"
     );
-    expect(screen.getAllByText("Indisponible")).toHaveLength(1);
+    expect(
+      screen.getAllByText(homeCorpusCountsCopy.fr.unavailable)
+    ).toHaveLength(1);
+  });
+
+  // The band closes the home as its own section now, below the project, so it
+  // carries a title rather than borrowing the search's context.
+  // @req REQ-113
+  it("titles the section and keeps the figures' scoped name", () => {
+    render(<HomeCorpusCounts language="fr" counts={FULL_CORPUS} />);
+
+    expect(
+      screen.getByRole("heading", {
+        level: 2,
+        name: "EthniAfrica en quelques repères",
+      })
+    ).toBeInTheDocument();
+    expect(screen.getByTestId("home-corpus-counts").tagName).toBe("DL");
+  });
+
+  // @req REQ-145
+  it("speaks English on the English home, down to the unavailable state", () => {
+    render(
+      <HomeCorpusCounts
+        language="en"
+        counts={{ ...FULL_CORPUS, patronymes: null }}
+      />
+    );
+
+    expect(
+      screen.getByRole("heading", { level: 2, name: "EthniAfrica at a glance" })
+    ).toBeInTheDocument();
+    expect(screen.getByTestId("home-corpus-counts")).toHaveAccessibleName(
+      "What we document"
+    );
+    expect(
+      screen.getAllByRole("term").map((term) => term.textContent?.trim())
+    ).toEqual([
+      "peoples documented",
+      "languages documented",
+      "names documented",
+    ]);
+    expect(screen.getByTestId("home-count-patronymes")).toHaveTextContent(
+      "Unavailable for now"
+    );
   });
 
   // A tile is one block and gets one alignment (brand charter §8.1), and it

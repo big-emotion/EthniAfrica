@@ -2,27 +2,20 @@ import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { describe, it, expect } from "vitest";
 
-import {
-  FALLBACK_SEED_WORDS,
-  SEED_WORD_MAX_LENGTH,
-} from "@/lib/home/seedWords";
+import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
 
 /**
- * The chips now draw their words from the corpus per request, so the words a
- * reader sees are true by construction. These are the *fallback* dozen, kept
- * for the request where the database answers with nothing — and they are the
- * ones nothing else checks: no type ties them to the corpus, and a first pass
- * of this pool shipped four words the corpus does not hold under those
- * spellings ("Peul", "Massaï",
- * "Nilo-saharien", "Khoïsan"; the fiches read "Nilo-saharienne" and
- * "Khoïsan (macro-groupe non génétique)"). Each would have been a chip that
- * runs a query returning nothing, on the one screen that has to say the
- * corpus is not thin.
+ * The three seed chips are fixed copy now, so nothing ties them to the corpus
+ * but this test. A chip that runs a query returning nothing, on the one screen
+ * that has to say the corpus is not thin, is the failure it exists to catch —
+ * a first pass of the old fallback pool shipped four such words.
  *
- * The check reads `dataset/source/afrik/`, not Supabase: the atlas charter §4
- * is explicit that an interface may only call a field missing when it has
- * consulted the source of truth rather than a projection of it, and the same
- * holds for calling a name present.
+ * It reads `dataset/source/afrik/`, not Supabase: the atlas charter §4 is
+ * explicit that an interface may only call a name present when it has
+ * consulted the source of truth rather than a projection of it. A chip may
+ * name a patronyme, a language or a people under any form the fiche files it
+ * under — « Peul » is an exonym of the Fulbe entry, which is exactly the form
+ * a French reader types.
  */
 
 const CORPUS = join(process.cwd(), "dataset/source/afrik");
@@ -35,46 +28,58 @@ function jsonFilesUnder(dir: string): string[] {
   });
 }
 
-function namesUnder(folder: string): Set<string> {
+function strings(values: unknown): string[] {
+  return Array.isArray(values)
+    ? values.filter((value): value is string => typeof value === "string")
+    : [];
+}
+
+function corpusNames(): Set<string> {
   const names = new Set<string>();
-  for (const file of jsonFilesUnder(join(CORPUS, folder))) {
+  const add = (value: unknown) => {
+    if (typeof value === "string" && value) names.add(value);
+  };
+
+  for (const file of jsonFilesUnder(join(CORPUS, "patronymes"))) {
     const fiche = JSON.parse(readFileSync(file, "utf8"));
-    for (const name of [fiche.nameMain, fiche.nameFr]) {
-      if (typeof name === "string" && name) names.add(name);
-    }
+    add(fiche.nameMain);
+    for (const spelling of fiche.spellings ?? []) add(spelling?.spelling);
+  }
+  for (const file of jsonFilesUnder(join(CORPUS, "langues"))) {
+    const fiche = JSON.parse(readFileSync(file, "utf8"));
+    add(fiche.nameFr);
+    add(fiche.nameEn);
+    strings(fiche.alternateNames).forEach(add);
+  }
+  for (const file of jsonFilesUnder(join(CORPUS, "peuples"))) {
+    const fiche = JSON.parse(readFileSync(file, "utf8"));
+    add(fiche.nameMain);
+    strings(fiche.content?.appellations?.exonyms).forEach(add);
   }
   return names;
 }
 
-const NAMES_BY_KIND = {
-  people: () => namesUnder("peuples"),
-  country: () => namesUnder("pays"),
-  languageFamily: () => namesUnder("famille_linguistique"),
-} as const;
-
-describe("home hero fallback seed words", () => {
+describe("home hero seed chips", () => {
   // @req REQ-002
-  it("names only entities the corpus actually holds", () => {
-    const missing: string[] = [];
-
-    for (const [kind, words] of Object.entries(FALLBACK_SEED_WORDS)) {
-      const names = NAMES_BY_KIND[kind as keyof typeof NAMES_BY_KIND]();
-      for (const word of words) {
-        if (!names.has(word)) missing.push(`${kind}: ${word}`);
-      }
-    }
+  it("names only entries the corpus actually holds, in both languages", () => {
+    const names = corpusNames();
+    const missing = (["fr", "en"] as const).flatMap((language) =>
+      homeHeroCopy[language].seeds
+        .filter((word) => !names.has(word))
+        .map((word) => `${language}: ${word}`)
+    );
 
     expect(missing).toEqual([]);
   });
 
-  // The fallback is served straight to a chip, so it lives under the same
-  // measure as a drawn word: one name too long and the row that is supposed
-  // to rescue the band is the row that breaks it at 430px.
+  // The placeholder and the chips give the same examples, so the reader who
+  // reads one and taps the other meets one set.
   // @req REQ-002
-  it("keeps every fallback word within a chip's measure", () => {
-    for (const words of Object.values(FALLBACK_SEED_WORDS)) {
-      for (const word of words) {
-        expect(word.length).toBeLessThanOrEqual(SEED_WORD_MAX_LENGTH);
+  it("offers the placeholder's own examples", () => {
+    for (const language of ["fr", "en"] as const) {
+      const copy = homeHeroCopy[language];
+      for (const word of copy.seeds) {
+        expect(copy.searchPlaceholder).toContain(word);
       }
     }
   });

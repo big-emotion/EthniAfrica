@@ -10,111 +10,84 @@ vi.mock("next/navigation", () => ({
   useRouter: () => ({ push: vi.fn(), replace: vi.fn() }),
 }));
 
-vi.mock("@/components/atlas/ContinentGlobeStage", () => ({
-  ContinentGlobeStage: ({
-    peopleCountsByCountry,
-    presentation,
-  }: {
-    peopleCountsByCountry?: Record<string, number>;
-    presentation?: string;
-  }) => (
-    <div
-      data-testid="search-first-globe"
-      data-people-count={peopleCountsByCountry?.NGA}
-      data-presentation={presentation}
-    />
-  ),
-}));
-
 function follows(first: Element, second: Element): boolean {
   return Boolean(
     first.compareDocumentPosition(second) & Node.DOCUMENT_POSITION_FOLLOWING
   );
 }
 
+const HERO_SOURCE = readFileSync(
+  join(process.cwd(), "src/components/home/HomeHero.tsx"),
+  "utf8"
+);
+
+/**
+ * The opening band's charter since 2026-09-22 (operator ruling): the search
+ * and the featured answer share it, and the drawn globe left it for a section
+ * after the stories — HomeDrawnVisual.test.tsx holds what the globe still
+ * owes. This charter used to hold the globe *beside* the search at 1200px;
+ * that premise is what the ruling changed, so the two-column contract below
+ * names the tile rather than the globe. Brand charter §8.3 (« the atlas
+ * leads ») is contradicted by that ruling and is flagged for amendment rather
+ * than silently kept.
+ */
 // @req REQ-115
 describe("search-first home charter (ETNI-1404 / ETNI-1509)", () => {
   // @req REQ-115
-  it("opens on one band ordered copy and search, then the real globe", () => {
+  it("opens on one band ordered copy and search, then the featured answer", () => {
     const { container } = render(
       <HomeHero
         language="fr"
-        seedWords={undefined}
-        peopleCountsByCountry={{ NGA: 40 }}
+        featured={<section data-testid="featured-answer" />}
       />
     );
 
     const band = container.querySelector(".home-hero-inner");
     const copy = container.querySelector(".home-hero-copy");
     const search = screen.getByRole("search");
-    const globe = screen.getByTestId("search-first-globe");
+    const featured = screen.getByTestId("featured-answer");
 
     if (!(band instanceof HTMLElement) || !(copy instanceof HTMLElement)) {
       throw new TypeError("The hero band and copy must be HTML elements");
     }
 
     expect(band).toContainElement(copy);
-    expect(band).toContainElement(search);
-    expect(band).toContainElement(globe);
-    expect(follows(copy, globe)).toBe(true);
-    expect(globe).toHaveAttribute("data-people-count", "40");
-    expect(globe).toHaveAttribute("data-presentation", "hero");
+    expect(copy).toContainElement(search);
+    expect(band).toContainElement(featured);
+    expect(follows(copy, featured)).toBe(true);
   });
 
-  // The globe component owns the capability probe, committed SVG fallback,
-  // keyboard surface and reduced-motion path. The hero only places it.
+  // The globe is not in the opening band any more, and the band does not
+  // import it: the section after the stories owns it.
   // @req REQ-115
-  it("mounts the existing ContinentGlobeStage and retires the historical map", () => {
-    render(<HomeHero language="fr" />);
+  it("keeps the drawn visual out of the opening band", () => {
+    const { container } = render(<HomeHero language="fr" />);
 
-    expect(screen.getByTestId("search-first-globe")).toBeInTheDocument();
+    expect(container.querySelector(".home-hero-visual")).toBeNull();
     expect(screen.queryByRole("img")).not.toBeInTheDocument();
-    expect(screen.queryByText(/al-Idrisi/i)).not.toBeInTheDocument();
-
-    const source = readFileSync(
-      join(process.cwd(), "src/components/home/HomeHero.tsx"),
-      "utf8"
-    );
-    expect(source).toContain(
-      'import { ContinentGlobeStage } from "@/components/atlas/ContinentGlobeStage"'
-    );
-    expect(source).not.toContain("al-idrisi-1154.jpg");
+    expect(HERO_SOURCE).not.toContain("ContinentGlobeStage");
   });
 
-  // A compact content-sized stack is the mobile contract. At 1240px the
-  // exact same document becomes two columns.
-  //
-  // The *ratio* of those columns is not part of the contract and is no longer
-  // asserted — that is layout arithmetic, not a charter breach. What the rule
-  // protects is the two-column shape.
+  // A compact content-sized stack is the mobile contract. At 1200px the same
+  // document becomes two columns when there is a tile to set beside the
+  // search. The column ratio is layout arithmetic and is not asserted.
   // @req REQ-115
   it("is mobile-first and becomes the prescribed two-column grid at 1200px", () => {
-    const source = readFileSync(
-      join(process.cwd(), "src/components/home/HomeHero.tsx"),
-      "utf8"
+    expect(HERO_SOURCE).toMatch(
+      /\.home-hero-inner\s*\{[^}]*display:\s*grid[^}]*grid-template-areas:\s*"copy"\s*"featured"/
     );
-
-    expect(source).toMatch(
-      /\.home-hero-inner\s*\{[^}]*display:\s*grid[^}]*grid-template-areas:\s*"copy"\s*"globe"/
-    );
-    expect(source).toMatch(
-      /@media\s*\(min-width:\s*1200px\)[\s\S]*?grid-template-columns:\s*minmax\(0,\s*[\d.]+fr\)\s*minmax\(0,\s*[\d.]+fr\)[\s\S]*?grid-template-areas:\s*"copy globe"/
-    );
-    expect(source).toMatch(
-      /\.home-hero-globe\s+\.home-globe-stage\s*\{[^}]*min-height:\s*300px[^}]*--afh-globe-stage-height:\s*300px/
+    expect(HERO_SOURCE).toMatch(
+      /@media\s*\(min-width:\s*1200px\)[\s\S]*?grid-template-columns:\s*minmax\(0,\s*[\d.]+fr\)\s*minmax\(0,\s*[\d.]+fr\)[\s\S]*?grid-template-areas:\s*"copy featured"/
     );
   });
 
-  // Viewport-height floors made the globe miss the first screen on a phone.
-  // This band grows from its contents and contains no hard-coded palette.
+  // Viewport-height floors made the band claim a screen its content could
+  // not fill. This band grows from its contents and paints only tokens.
   // @req REQ-115
   it("uses neither viewport-sized bands nor colour literals", () => {
-    const source = readFileSync(
-      join(process.cwd(), "src/components/home/HomeHero.tsx"),
-      "utf8"
+    expect(HERO_SOURCE).not.toMatch(/\b(?:dvh|svh|vh)\b|min-h-screen/);
+    expect(HERO_SOURCE).not.toMatch(
+      /#[0-9a-f]{3,8}\b|\brgba?\s*\(|\bhsla?\s*\(/i
     );
-
-    expect(source).not.toMatch(/\b(?:dvh|svh|vh)\b|min-h-screen/);
-    expect(source).not.toMatch(/#[0-9a-f]{3,8}\b|\brgba?\s*\(|\bhsla?\s*\(/i);
   });
 });
