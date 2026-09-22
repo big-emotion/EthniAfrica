@@ -100,7 +100,9 @@ export const REEL_TEMPLATE_CALLERS = [
  */
 export const DOCTRINE_SOURCES = [
   "docs/editorial/purpose-doctrine.md",
-  "src/lib/i18n/copy/about.ts",
+  // The four refused sentences moved from About to the public method page on
+  // 2026-09-22; that is where the reader now meets them.
+  "src/lib/i18n/copy/doctrine.ts",
   FORMAT_RULE_SOURCE,
 ] as const;
 

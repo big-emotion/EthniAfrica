@@ -1,3 +1,4 @@
+import { aboutCopy } from "@/lib/i18n/copy/about";
 import { adminCopy } from "@/lib/i18n/copy/admin";
 import { classificationCopy } from "@/lib/i18n/copy/classification";
 import { atlasCopy } from "@/lib/i18n/copy/atlas";
@@ -72,6 +73,7 @@ export const COPY_MODULES = {
   countryFiche: countryCopy,
   facets: facetsCopy,
   footer: footerCopy,
+  about: aboutCopy,
   games: gamesCopy,
   sitemapPage: sitemapPageCopy,
   publicFlags: publicFlagsCopy,

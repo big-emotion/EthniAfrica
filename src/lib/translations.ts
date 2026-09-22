@@ -12,6 +12,7 @@ import { commonCopy } from "@/lib/i18n/copy/common";
 import { consentCopy } from "@/lib/i18n/copy/consent";
 import { compareCopy } from "@/lib/i18n/copy/compare";
 import { contactCopy } from "@/lib/i18n/copy/contact";
+import { aboutCopy } from "@/lib/i18n/copy/about";
 import { contributeCopy } from "@/lib/i18n/copy/contribute";
 import { countryCopy } from "@/lib/i18n/copy/country";
 import { facetsCopy } from "@/lib/i18n/copy/facets";
@@ -75,6 +76,7 @@ const en = {
   countryFiche: countryCopy.en,
   facets: facetsCopy.en,
   footer: footerCopy.en,
+  about: aboutCopy.en,
   games: gamesCopy.en,
   sitemapPage: sitemapPageCopy.en,
   publicFlags: publicFlagsCopy.en,
@@ -126,6 +128,7 @@ const fr: UiDictionary = {
   countryFiche: countryCopy.fr,
   facets: facetsCopy.fr,
   footer: footerCopy.fr,
+  about: aboutCopy.fr,
   games: gamesCopy.fr,
   sitemapPage: sitemapPageCopy.fr,
   publicFlags: publicFlagsCopy.fr,

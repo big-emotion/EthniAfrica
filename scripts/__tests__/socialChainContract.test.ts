@@ -44,7 +44,7 @@ describe("social chain contract", () => {
     expect(HELPER_SKILL).toBe("ethniafrica-reseaux-help");
     expect(DOCTRINE_SOURCES).toEqual([
       "docs/editorial/purpose-doctrine.md",
-      "src/lib/i18n/copy/about.ts",
+      "src/lib/i18n/copy/doctrine.ts",
       "docs/design/gabarits-social/GABARITS-SOCIAL.md",
     ]);
   });

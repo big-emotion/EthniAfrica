@@ -544,3 +544,99 @@ raised, and a short reading list (Mudimbe, Park, Rodney, Dumont) worth
 confronting against sources — are production doctrine, not reader-facing
 copy, and are not carried into `about.ts`. Only the one nuance a reader can
 use (item 1, above) crossed over.
+
+## 7. Superseded on the About page, 2026-09-22
+
+On 22 September 2026 the About page was rewritten to the editorial plan's
+A1–A7 (operator ruling): mission, why names, what a reader can explore, the
+audience (French-speaking diasporas named), sources and oral transmission, a
+labelled conviction, and an invitation to correct. The purpose chapter below —
+§4's published doctrine as it last stood, with §5's unity claim and §6's
+revisions — left the page. It is quoted here verbatim, in French, exactly as
+`src/lib/i18n/copy/about.ts` (`purposeChapter.fr`) held it before the
+rewrite, so the wording can be recovered rather than reconstructed from
+memory.
+
+Why it left rather than being edited: the border-age comparison and the dated
+counts (« 191 peuples », « La Tanzanie en compte 95 », « Compté le 11
+septembre 2026 ») are figures a page describing the project printed as
+constants while the corpus moved under them, and nothing re-measured them;
+the three scales read as an inventory of what the project holds, the register
+the 17 September reorientation retired. The refusals are the one part that
+did not retire: they are method, so they now sit on the method page. The
+conviction survives in a plainer form (A6, « Notre conviction ») that says
+what it does not replace; the unity claim below is the text it superseded.
+
+The English counterpart (`purposeChapter.en`) is in the same file's history.
+
+**Title.** Pourquoi nous racontons les noms
+
+**Claim, and the status line under it.**
+
+> Nous ne jugeons personne. Nous racontons les noms.
+>
+> C’est un engagement, pas un résultat de nos recherches. Voici ce qu’il nous impose.
+
+**Declaration.**
+
+- _Un nom n’est jamais figé_
+
+  > Un nom change avec le temps et selon qui le raconte : un peuple, une langue ou un lieu peuvent porter plusieurs noms à la fois, celui qu’ils se donnent, ceux que leurs voisins leur donnent, celui qu’une administration a écrit un jour. Plusieurs noms peuvent coexister ; nous précisons leurs usages et leurs éventuelles contestations. Un nom d’abord imposé depuis l’extérieur peut ensuite devenir une appartenance réellement vécue : son origine ne suffit pas à juger de sa réalité aujourd’hui.
+
+- _La pertinence d’une source_
+
+  > Plusieurs sources existent donc sur un même nom, et elles ne se recoupent pas toujours. La pertinence d’une source dépend de la question posée : la chercher demande du travail, et ce travail produit des erreurs.
+
+- _Ces écarts pèsent encore_
+
+  > Aujourd’hui encore, un même peuple peut porter plusieurs noms selon qui parle, et ces écarts entretiennent des tensions. Comprendre l’histoire d’un nom peut éclairer un désaccord, sans suffire à le résoudre.
+
+- _Personne n’est visé_
+
+  > Ces sujets sont sensibles. Nous ne cherchons à retirer sa légitimité à personne. Nous nommons les acteurs lorsque les sources établissent leur rôle, sans attribuer une responsabilité collective aux populations d’aujourd’hui. Si vous vous sentez visé, ce n’est pas l’intention — dites-le-nous : toute correction est lue.
+
+- _Ce que nous cherchons_
+
+  > Comprendre quelqu’un tel qu’il se comprend lui-même : l’appeler comme il s’appelle ne retire rien à personne. Et se comprendre est ce qui permet d’agir ensemble — on ne met pas ses forces en commun avec quelqu’un qu’on ne comprend pas.
+
+**Refusals — « Quatre phrases que nous n’écrivons pas ».** Not retired: they moved to the method page (`src/lib/i18n/copy/doctrine.ts`, right after « Expliquer sans classer les populations »), wording unchanged.
+
+- « Avant, on vivait en accord avec le continent. »
+
+  > Un âge d’or n’a pas besoin d’être vrai pour être attaquable : l’Afrique d’avant Berlin avait aussi des empires, des conquêtes, des traites internes. La force de l’argument vient de sa durée et de son échelle, pas de la douceur du passé.
+
+- « Les frontières sont arbitraires. »
+
+  > À demi faux : certaines suivent des fleuves. Elles ont surtout été tracées sans référence à qui habitait là, et nous le montrons peuple par peuple.
+
+- « Renouer avec le passé. »
+
+  > Renouer suppose la rupture consommée — or ces peuples sont comptés en 2025 et présents en France. Il ne s’agit pas de renouer, mais de reconnaître ce qui n’a jamais cessé : c’est plus vrai, et moins triste.
+
+- « Avant les frontières, les peuples étaient unis. »
+
+  > Des parentés de langue et de culture ont parfois traversé des ruptures plus anciennes que la carte coloniale — une scission, une migration, une querelle de succession. La frontière n’a pas toujours créé la séparation : elle l’a souvent verrouillée.
+
+**Scales.**
+
+- _Pour un peuple_
+
+  > Il porte d’abord le nom qu’il se donne, celui des autres vient après. Si on se trompe, n’importe qui peut nous le dire.
+
+- _Pour un pays_
+
+  > Un pays, ce n’est pas un drapeau. C’est la liste de ceux qui y vivent. La Tanzanie en compte 95, l’Éthiopie 82, le Ghana 80.
+
+- _Pour une diaspora_
+
+  > Pour les Soninké, les Kabyles et les Comoriens, la France est déjà dans la liste de leurs pays. On ne parle pas d’un ailleurs.
+
+**Closing.**
+
+> La plupart des frontières de l’Afrique ont moins de cent quarante ans. Ce qu’elles coupent est bien plus vieux : 191 peuples vivent aujourd’hui dans trois pays ou plus. Les Peul dans douze. Les Soninké dans onze. Compté le 11 septembre 2026.
+
+**Unity claim, and its status line.**
+
+> Ce qui relie les peuples d’Afrique a survécu à leurs propres ruptures autant qu’aux frontières qu’on leur a imposées. C’est là que commence une unité plus forte.
+>
+> C’est notre conviction, distincte de ce que montrent nos pages — pas une mesure qu’il produit.
