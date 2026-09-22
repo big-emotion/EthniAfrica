@@ -2,6 +2,8 @@ import { render, screen } from "@testing-library/react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 import ContributePage, { generateMetadata } from "../page";
+import { legalPages } from "@/lib/legal-pages";
+import { legalPagesEn } from "@/lib/legal-pages.en";
 import { getNavModules } from "@/lib/hubs/moduleRegistry";
 import { modulesNamedIn } from "@/test/axisModuleVocabulary";
 
@@ -123,6 +125,25 @@ describe("the contribute page", () => {
         /^https:\/\/docs\.google\.com\/forms\//
       );
     });
+  });
+
+  // A form hosted by a third party sends what the reader types to that third
+  // party. The data policy lists every processor the site hands data to, so a
+  // processor linked from here and missing there is a notice that under-states.
+  // @req REQ-045
+  it("links to no form host the data policy does not name", () => {
+    render(<ContributePage />);
+    const hosts = screen
+      .getAllByRole("link", { name: /ouvrir le formulaire/i })
+      .map((link) => new URL(link.getAttribute("href") ?? "").host);
+    expect(new Set(hosts)).toEqual(new Set(["docs.google.com"]));
+
+    for (const policy of [legalPages.dataPolicy, legalPagesEn.dataPolicy]) {
+      const text = policy.sections
+        .flatMap((section) => section.paragraphs)
+        .join(" ");
+      expect(text).toContain("Google Forms");
+    }
   });
 
   // `place` has no strict model, loader or SearchEntityType entry yet (§5 of

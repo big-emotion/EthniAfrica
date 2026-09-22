@@ -93,7 +93,7 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     unknownName: "We do not know this name.",
     unknownNameBody:
       "That is not an answer: it is a confession. If this name is yours, or one of a people, a language or a place you know, tell us. That is how our project grows.",
-    noExactMatch: "No entry carries exactly",
+    noExactMatch: "No exact result for",
     searchUnavailable:
       "Search is temporarily unavailable. Try again in a moment.",
     browsePeoples: "Browse the peoples",
@@ -130,7 +130,7 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     unknownName: "Nous ne connaissons pas ce nom.",
     unknownNameBody:
       "Ce n’est pas une réponse : c’est un aveu. Si ce nom est le vôtre, ou celui d’un peuple, d’une langue ou d’un lieu que vous connaissez, dites-le-nous. C’est comme ça que notre projet grandit.",
-    noExactMatch: "Aucune fiche ne porte exactement",
+    noExactMatch: "Aucun résultat exact pour",
     searchUnavailable:
       "La recherche est momentanément indisponible. Réessayez dans un instant.",
     browsePeoples: "Parcourir les peuples",
