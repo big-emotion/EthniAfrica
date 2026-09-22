@@ -281,12 +281,56 @@ def _suites(texte, f):
     """`texte` cut into runs, each with the font that can draw it."""
     suites = []
     for ch in texte:
-        g = f if ch.isspace() or _porte(f, ch) else _fonte_de_repli(f, ch)
+        precedente = suites[-1][1] if suites else None
+        if precedente is not None and unicodedata.category(ch).startswith("M"):
+            # A combining mark tested alone reads « covered » wherever the face has
+            # a dotted circle; it belongs to its base, or Khmer shapes into holes.
+            g = precedente
+        elif (precedente is not None and precedente is not f and not ch.isalpha()
+              and not ch.isspace() and _porte(precedente, ch)):
+            # An apostrophe inside a Hebrew name kept to the primary face split the
+            # name in two runs, laid out in the wrong order.
+            g = precedente
+        else:
+            g = f if ch.isspace() or _porte(f, ch) else _fonte_de_repli(f, ch)
         if suites and suites[-1][1] is g:
             suites[-1][0] += ch
         else:
             suites.append([ch, g])
-    return suites
+    return _ordre_visuel(suites)
+
+
+def _droite_a_gauche(texte):
+    return any(unicodedata.bidirectional(ch) in ("R", "AL") for ch in texte)
+
+
+def _neutre(texte):
+    return not any(unicodedata.bidirectional(ch) in ("L", "R", "AL", "EN", "AN")
+                   for ch in texte)
+
+
+def _ordre_visuel(suites):
+    """Runs in the order they are drawn, left to right.
+
+    libraqm orders the letters *inside* a run, not the runs themselves: a Hebrew
+    name split by a sign its face lacks came out with its halves swapped. A span
+    of right-to-left runs, with only neutral signs between them, is reversed.
+    """
+    ordre, i = [], 0
+    while i < len(suites):
+        if not _droite_a_gauche(suites[i][0]):
+            ordre.append(suites[i])
+            i += 1
+            continue
+        fin = i
+        j = i + 1
+        while j < len(suites) and (_droite_a_gauche(suites[j][0]) or _neutre(suites[j][0])):
+            if _droite_a_gauche(suites[j][0]):
+                fin = j
+            j += 1
+        ordre.extend(reversed(suites[i:fin + 1]))
+        i = fin + 1
+    return ordre
 
 
 def largeur_texte(texte, f):

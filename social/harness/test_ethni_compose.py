@@ -1131,14 +1131,22 @@ def test_a_credit_in_khmer_or_hebrew_names_its_author_not_a_row_of_boxes():
 
     Noto Sans, the only fallback, carries neither script, so both credits drew
     .notdef boxes: an attribution nobody can read, on a CC BY image that owes one.
-    Every run must now be drawn by a face that carries each of its characters.
+    Each name must also stay **one run**, drawn by one face that carries its
+    letters: a Khmer vowel sign tested alone went to Noto Sans and drew as a
+    dotted circle, and the apostrophe inside the Hebrew name split it into two
+    runs laid out in the wrong order. Shaping only works on the whole word.
     """
-    for auteur in ("ព្រះមហាក្សត្ររាជ", "ויקיג'אנקי"):
-        for taille in (24, 30):
-            f = gab.fonte("nunito", taille, 700)
-            for suite, g in gab._suites(f"{auteur} · CC0", f):
-                trous = [ch for ch in suite if not ch.isspace() and not gab._porte(g, ch)]
-                assert not trous, f"{auteur} : {trous} sans glyphe à {taille}"
+    for taille in (24, 30):
+        f = gab.fonte("nunito", taille, 700)
+        khmer = gab._suites("ព្រះមហាក្សត្ររាជ", f)
+        assert len(khmer) == 1, f"nom khmer coupé en {[s for s, _ in khmer]} à {taille}"
+        # No Hebrew face carries the ASCII apostrophe, so the name stays in three
+        # runs; read right to left, the part after the apostrophe comes first.
+        hebreu = gab._suites("par ויקיג'אנקי · CC BY 3.0", f)
+        assert [s for s, _ in hebreu][1:4] == ["אנקי", "'", "ויקיג"], hebreu
+        for texte, g in khmer + hebreu:
+            trous = [ch for ch in texte if ch.isalpha() and not gab._porte(g, ch)]
+            assert not trous, f"{trous} sans glyphe à {taille}"
 
 
 def test_a_line_the_face_covers_is_drawn_exactly_as_before():
