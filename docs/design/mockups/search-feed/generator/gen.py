@@ -206,7 +206,7 @@ def poster(s, i, d, w):
     title, dur, label = s
     h = round(w * 16 / 9)
     chip_style = f"position: absolute; top: 8px; {t('eyebrow', d, 700)} color: {MEDIA_INK}; background: {MEDIA_BG}; {PILL} padding: 2px 8px;"
-    size = 36 if d else 32
+    size = 58 if d else 44
     return (f'<a href="#short-{i}" style="flex: none; width: {w}px; text-decoration: none; color: {TEXT};">'
             f'<div style="position: relative; width: {w}px; height: {h}px; {R} overflow: hidden;">'
             f'<img src="{POSTERS[slug(title)]}" alt="Couverture : D’où vient le nom «&nbsp;{title}&nbsp;» ?" style="width: {w}px; height: {h}px; object-fit: cover; display: block;">'
@@ -230,7 +230,7 @@ def empty_poster(p, d, w):
 
 def shorts(c, d):
     sh = c["shorts"]
-    w = 160 if d else 130
+    w = 256 if d else 180
     out = h2(sh.get("title", "Les shorts"), d, sh.get("sub") if d else None, "Tout voir →")
     items, i = "", 0
     if sh.get("empty"):

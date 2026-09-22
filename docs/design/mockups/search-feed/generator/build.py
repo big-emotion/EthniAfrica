@@ -66,7 +66,7 @@ def build_draft(output):
 
 
 def first_poster(case, desktop, height_record):
-    width = 160 if desktop else 130
+    width = 256 if desktop else 180
     x = 200 if desktop and case.get("thin") else 64 if desktop else 24
     if case.get("shorts", {}).get("empty"):
         x += width + (16 if desktop else 12)

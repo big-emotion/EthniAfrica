@@ -14,7 +14,7 @@
       "x": 0,
       "y": 0,
       "w": 430,
-      "h": 3730,
+      "h": 3819,
       "title": "Mandé — le nom cherché vient du dehors",
       "guides": [
         {
@@ -32,7 +32,7 @@
       "x": 510,
       "y": 0,
       "w": 430,
-      "h": 3040,
+      "h": 3129,
       "title": "Peul — sept noms extérieurs, dont un péjoratif",
       "guides": [
         {
@@ -50,7 +50,7 @@
       "x": 1020,
       "y": 0,
       "w": 430,
-      "h": 3340,
+      "h": 3429,
       "title": "Fang — le cas ordinaire, aucune forme qualifiée",
       "guides": [
         {
@@ -68,7 +68,7 @@
       "x": 1530,
       "y": 0,
       "w": 430,
-      "h": 3550,
+      "h": 3639,
       "title": "Bassa — un nom, trois peuples sans parenté",
       "guides": [
         {
@@ -86,7 +86,7 @@
       "x": 2040,
       "y": 0,
       "w": 430,
-      "h": 2750,
+      "h": 2839,
       "title": "Ekpeye — le cas pauvre, silences déclarés",
       "guides": [
         {
@@ -104,7 +104,7 @@
       "x": 2550,
       "y": 0,
       "w": 430,
-      "h": 3480,
+      "h": 3569,
       "title": "Nigeria — un pays nommé dans un journal",
       "guides": [
         {
@@ -122,7 +122,7 @@
       "x": 3060,
       "y": 0,
       "w": 430,
-      "h": 3230,
+      "h": 3319,
       "title": "Lingala — un nom de missionnaires, une langue plus ancienne",
       "guides": [
         {
@@ -140,7 +140,7 @@
       "x": 3570,
       "y": 0,
       "w": 430,
-      "h": 3460,
+      "h": 3549,
       "title": "Traoré — un nom de clan, une transcription coloniale",
       "guides": [
         {
@@ -158,7 +158,7 @@
       "x": 4080,
       "y": 0,
       "w": 430,
-      "h": 1690,
+      "h": 1779,
       "title": "Introuvable — une faute de frappe mène au bon article",
       "guides": [
         {
@@ -176,7 +176,7 @@
       "x": 4590,
       "y": 0,
       "w": 430,
-      "h": 1250,
+      "h": 1339,
       "title": "Inconnu — un nom que nous ne connaissons pas",
       "guides": [
         {
@@ -192,9 +192,9 @@
     },
     "MandeNuit.dc.html": {
       "x": 0,
-      "y": 4150,
+      "y": 4239,
       "w": 430,
-      "h": 3730,
+      "h": 3819,
       "title": "Mandé — mobile, nuit",
       "guides": [
         {
@@ -210,9 +210,9 @@
     },
     "PeulNuit.dc.html": {
       "x": 510,
-      "y": 4150,
+      "y": 4239,
       "w": 430,
-      "h": 3040,
+      "h": 3129,
       "title": "Peul — mobile, nuit",
       "guides": [
         {
@@ -228,9 +228,9 @@
     },
     "FangNuit.dc.html": {
       "x": 1020,
-      "y": 4150,
+      "y": 4239,
       "w": 430,
-      "h": 3340,
+      "h": 3429,
       "title": "Fang — mobile, nuit",
       "guides": [
         {
@@ -246,9 +246,9 @@
     },
     "BassaNuit.dc.html": {
       "x": 1530,
-      "y": 4150,
+      "y": 4239,
       "w": 430,
-      "h": 3550,
+      "h": 3639,
       "title": "Bassa — mobile, nuit",
       "guides": [
         {
@@ -264,9 +264,9 @@
     },
     "EkpeyeNuit.dc.html": {
       "x": 2040,
-      "y": 4150,
+      "y": 4239,
       "w": 430,
-      "h": 2750,
+      "h": 2839,
       "title": "Ekpeye — mobile, nuit",
       "guides": [
         {
@@ -282,9 +282,9 @@
     },
     "NigeriaNuit.dc.html": {
       "x": 2550,
-      "y": 4150,
+      "y": 4239,
       "w": 430,
-      "h": 3480,
+      "h": 3569,
       "title": "Nigeria — mobile, nuit",
       "guides": [
         {
@@ -300,9 +300,9 @@
     },
     "LingalaNuit.dc.html": {
       "x": 3060,
-      "y": 4150,
+      "y": 4239,
       "w": 430,
-      "h": 3230,
+      "h": 3319,
       "title": "Lingala — mobile, nuit",
       "guides": [
         {
@@ -318,9 +318,9 @@
     },
     "TraoreNuit.dc.html": {
       "x": 3570,
-      "y": 4150,
+      "y": 4239,
       "w": 430,
-      "h": 3460,
+      "h": 3549,
       "title": "Traoré — mobile, nuit",
       "guides": [
         {
@@ -336,9 +336,9 @@
     },
     "IntrouvableNuit.dc.html": {
       "x": 4080,
-      "y": 4150,
+      "y": 4239,
       "w": 430,
-      "h": 1690,
+      "h": 1779,
       "title": "Introuvable — mobile, nuit",
       "guides": [
         {
@@ -354,9 +354,9 @@
     },
     "InconnuNuit.dc.html": {
       "x": 4590,
-      "y": 4150,
+      "y": 4239,
       "w": 430,
-      "h": 1250,
+      "h": 1339,
       "title": "Inconnu — mobile, nuit",
       "guides": [
         {
@@ -372,9 +372,9 @@
     },
     "MandeDesktop.dc.html": {
       "x": 0,
-      "y": 8300,
+      "y": 8478,
       "w": 1280,
-      "h": 2700,
+      "h": 2871,
       "title": "Mandé — desktop 1280",
       "guides": [
         {
@@ -390,9 +390,9 @@
     },
     "PeulDesktop.dc.html": {
       "x": 1360,
-      "y": 8300,
+      "y": 8478,
       "w": 1280,
-      "h": 2690,
+      "h": 2861,
       "title": "Peul — desktop 1280",
       "guides": [
         {
@@ -408,9 +408,9 @@
     },
     "FangDesktop.dc.html": {
       "x": 2720,
-      "y": 8300,
+      "y": 8478,
       "w": 1280,
-      "h": 2760,
+      "h": 2931,
       "title": "Fang — desktop 1280",
       "guides": [
         {
@@ -426,9 +426,9 @@
     },
     "BassaDesktop.dc.html": {
       "x": 4080,
-      "y": 8300,
+      "y": 8478,
       "w": 1280,
-      "h": 2240,
+      "h": 2411,
       "title": "Bassa — desktop 1280",
       "guides": [
         {
@@ -444,9 +444,9 @@
     },
     "EkpeyeDesktop.dc.html": {
       "x": 5440,
-      "y": 8300,
+      "y": 8478,
       "w": 1280,
-      "h": 2810,
+      "h": 2981,
       "title": "Ekpeye — desktop 1280",
       "guides": [
         {
@@ -462,9 +462,9 @@
     },
     "NigeriaDesktop.dc.html": {
       "x": 6800,
-      "y": 8300,
+      "y": 8478,
       "w": 1280,
-      "h": 2520,
+      "h": 2691,
       "title": "Nigeria — desktop 1280",
       "guides": [
         {
@@ -480,9 +480,9 @@
     },
     "LingalaDesktop.dc.html": {
       "x": 8160,
-      "y": 8300,
+      "y": 8478,
       "w": 1280,
-      "h": 2460,
+      "h": 2631,
       "title": "Lingala — desktop 1280",
       "guides": [
         {
@@ -498,9 +498,9 @@
     },
     "TraoreDesktop.dc.html": {
       "x": 9520,
-      "y": 8300,
+      "y": 8478,
       "w": 1280,
-      "h": 2460,
+      "h": 2631,
       "title": "Traoré — desktop 1280",
       "guides": [
         {
@@ -516,9 +516,9 @@
     },
     "IntrouvableDesktop.dc.html": {
       "x": 10880,
-      "y": 8300,
+      "y": 8478,
       "w": 1280,
-      "h": 1730,
+      "h": 1901,
       "title": "Introuvable — desktop 1280",
       "guides": [
         {
@@ -534,9 +534,9 @@
     },
     "InconnuDesktop.dc.html": {
       "x": 12240,
-      "y": 8300,
+      "y": 8478,
       "w": 1280,
-      "h": 1290,
+      "h": 1461,
       "title": "Inconnu — desktop 1280",
       "guides": [
         {
@@ -552,9 +552,9 @@
     },
     "MandeDesktopNuit.dc.html": {
       "x": 0,
-      "y": 11530,
+      "y": 11879,
       "w": 1280,
-      "h": 2700,
+      "h": 2871,
       "title": "Mandé — desktop 1280, nuit",
       "guides": [
         {
@@ -570,9 +570,9 @@
     },
     "PeulDesktopNuit.dc.html": {
       "x": 1360,
-      "y": 11530,
+      "y": 11879,
       "w": 1280,
-      "h": 2690,
+      "h": 2861,
       "title": "Peul — desktop 1280, nuit",
       "guides": [
         {
@@ -588,9 +588,9 @@
     },
     "FangDesktopNuit.dc.html": {
       "x": 2720,
-      "y": 11530,
+      "y": 11879,
       "w": 1280,
-      "h": 2760,
+      "h": 2931,
       "title": "Fang — desktop 1280, nuit",
       "guides": [
         {
@@ -606,9 +606,9 @@
     },
     "BassaDesktopNuit.dc.html": {
       "x": 4080,
-      "y": 11530,
+      "y": 11879,
       "w": 1280,
-      "h": 2240,
+      "h": 2411,
       "title": "Bassa — desktop 1280, nuit",
       "guides": [
         {
@@ -624,9 +624,9 @@
     },
     "EkpeyeDesktopNuit.dc.html": {
       "x": 5440,
-      "y": 11530,
+      "y": 11879,
       "w": 1280,
-      "h": 2810,
+      "h": 2981,
       "title": "Ekpeye — desktop 1280, nuit",
       "guides": [
         {
@@ -642,9 +642,9 @@
     },
     "NigeriaDesktopNuit.dc.html": {
       "x": 6800,
-      "y": 11530,
+      "y": 11879,
       "w": 1280,
-      "h": 2520,
+      "h": 2691,
       "title": "Nigeria — desktop 1280, nuit",
       "guides": [
         {
@@ -660,9 +660,9 @@
     },
     "LingalaDesktopNuit.dc.html": {
       "x": 8160,
-      "y": 11530,
+      "y": 11879,
       "w": 1280,
-      "h": 2460,
+      "h": 2631,
       "title": "Lingala — desktop 1280, nuit",
       "guides": [
         {
@@ -678,9 +678,9 @@
     },
     "TraoreDesktopNuit.dc.html": {
       "x": 9520,
-      "y": 11530,
+      "y": 11879,
       "w": 1280,
-      "h": 2460,
+      "h": 2631,
       "title": "Traoré — desktop 1280, nuit",
       "guides": [
         {
@@ -696,9 +696,9 @@
     },
     "IntrouvableDesktopNuit.dc.html": {
       "x": 10880,
-      "y": 11530,
+      "y": 11879,
       "w": 1280,
-      "h": 1730,
+      "h": 1901,
       "title": "Introuvable — desktop 1280, nuit",
       "guides": [
         {
@@ -714,9 +714,9 @@
     },
     "InconnuDesktopNuit.dc.html": {
       "x": 12240,
-      "y": 11530,
+      "y": 11879,
       "w": 1280,
-      "h": 1290,
+      "h": 1461,
       "title": "Inconnu — desktop 1280, nuit",
       "guides": [
         {
@@ -783,21 +783,21 @@
     },
     "t-mobn": {
       "x": 0,
-      "y": 3850,
+      "y": 3939,
       "text": "Le fil — mobile 430, nuit",
       "kind": "title1",
       "maxW": 5020
     },
     "t-desk": {
       "x": 0,
-      "y": 8000,
+      "y": 8178,
       "text": "Le fil — desktop 1280, jour",
       "kind": "title1",
       "maxW": 13520
     },
     "t-deskn": {
       "x": 0,
-      "y": 11230,
+      "y": 11579,
       "text": "Le fil — desktop 1280, nuit",
       "kind": "title1",
       "maxW": 13520
