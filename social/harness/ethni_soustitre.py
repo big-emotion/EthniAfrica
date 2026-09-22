@@ -35,6 +35,9 @@ TOKEN_PATTERN = re.compile(r"[^\W_]+(?:[-'’][^\W_]+)*[.,!?;:]?", re.UNICODE)
 # with « parce que » or « et », never end on them.
 PONCTUATION = re.compile(r"(?<=[.!?…:;,])\s+")
 
+# Marks that open what follows; every other wordless mark closes what precedes.
+OUVRANTS = frozenset("«“‘([")
+
 # A group opens on these; cutting *before* them is safe, cutting after is not.
 OUVREURS = frozenset("""
 et ou mais donc or ni car parce puisque comme quand lorsque si que qui
@@ -103,7 +106,7 @@ def segmenter(texte, signes_max=SIGNES_PAR_LIGNE * LIGNES_MAX):
             captions.append(phrase)
             continue
 
-        mots = phrase.split()
+        mots = _souder_la_ponctuation(phrase.split())
         courante = []
         for mot in mots:
             essai = courante + [mot]
@@ -123,6 +126,34 @@ def segmenter(texte, signes_max=SIGNES_PAR_LIGNE * LIGNES_MAX):
         if courante:
             captions.append(" ".join(courante))
     return _refondre(captions, signes_max)
+
+
+def _souder_la_ponctuation(mots):
+    """Weld French spaced punctuation to the word it belongs to.
+
+    French typesets « ? », « : » and guillemets apart, so `split()` hands them over
+    as words. A cut landing before one left a caption holding no word at all, and
+    `minuter` stops at the first caption it cannot time — measured on
+    Comprendre-Afrique-Noms, where a lone « ? » dropped the last 24 captions.
+    """
+    soudes = []
+    attente = ""
+    for mot in mots:
+        if TOKEN_PATTERN.search(mot):
+            soudes.append(f"{attente} {mot}" if attente else mot)
+            attente = ""
+        elif mot in OUVRANTS:
+            attente = f"{attente} {mot}".strip()
+        elif soudes:
+            soudes[-1] = f"{soudes[-1]} {mot}"
+        else:
+            attente = f"{attente} {mot}".strip()
+    if attente:
+        if soudes:
+            soudes[-1] = f"{soudes[-1]} {attente}"
+        else:
+            soudes.append(attente)
+    return soudes
 
 
 def _refondre(captions, signes_max):
