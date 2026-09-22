@@ -13,7 +13,7 @@ describe("FurtherBlock", () => {
         links={[
           {
             href: getLocalizedRoute("fr", "atlasHub"),
-            label: "Parcourir l’atlas",
+            label: "Parcourir",
           },
         ]}
       />
@@ -23,7 +23,7 @@ describe("FurtherBlock", () => {
       "data-feed-zone",
       "closing"
     );
-    expect(screen.getByRole("link", { name: "Parcourir l’atlas" })).toHaveClass(
+    expect(screen.getByRole("link", { name: "Parcourir" })).toHaveClass(
       "min-h-11"
     );
     expect(screen.getByText("Going further")).toBeInTheDocument();

@@ -35,7 +35,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Emic / etic",
     family: "origine",
     definition:
-      "Émique : décrire avec les catégories des intéressés. Étique : décrire avec celles de l'observateur. L'atlas fait porter l'émique et signale l'étique quand il ne peut pas faire autrement.",
+      "Émique : décrire avec les catégories des intéressés. Étique : décrire avec celles de l'observateur. Nous faisons porter l'émique et signalons l'étique quand nous ne pouvons pas faire autrement.",
     corpusExample:
       "Un peuple rangé sous une famille linguistique forgée en 1862 est décrit étiquement, et la fiche le dit.",
     corpusPresence: "instantiated",
@@ -113,7 +113,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Onomastics",
     family: "origine",
     definition:
-      "La science des noms propres — qui nomme, quand, et sous quelle autorité. C'est l'axe de lecture de cet atlas plus qu'une discipline qu'il pratiquerait.",
+      "La science des noms propres — qui nomme, quand, et sous quelle autorité. C'est l'axe de lecture de notre projet plus qu'une discipline que nous pratiquerions.",
     corpusExample:
       "Les cinq chapitres de ce dossier sont cinq régimes onomastiques.",
     corpusPresence: "instantiated",
@@ -168,7 +168,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Name of a people",
     family: "objet",
     definition:
-      "Le nom d'un peuple. C'est l'objet central de l'atlas, et le plus disputé : 460 fiches déclarent le leur contesté ou hérité de la colonisation.",
+      "Le nom d'un peuple. C'est l'objet central de notre projet, et le plus disputé : 460 fiches déclarent le leur contesté ou hérité de la colonisation.",
     corpusExample:
       "Dinka et Jieng désignent le même peuple, depuis deux côtés.",
     corpusPresence: "instantiated",
@@ -220,7 +220,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Nisba",
     family: "objet",
     definition:
-      "Nom d'attribution arabo-berbère, formé sur un lieu, un groupe d'origine ou un métier. La littérature dit « tribu » là où l'atlas écrit « groupe » — la règle vaut pour le monde arabe comme pour le reste.",
+      "Nom d'attribution arabo-berbère, formé sur un lieu, un groupe d'origine ou un métier. La littérature dit « tribu » là où nous écrivons « groupe » — la règle vaut pour le monde arabe comme pour le reste.",
     corpusExample: "Deux fiches du corpus déclarent ce système.",
     corpusPresence: "instantiated",
     seeAlso: ["anthroponyme"],
@@ -288,7 +288,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
       "Nom porté après le prénom, institué en République du Zaïre le 12 janvier 1972 en remplacement des prénoms chrétiens, et conservé après la chute du régime qui l'avait décrété.",
     corpusPresence: "defined_only",
     absenceReason:
-      "Aucune fiche de nom du corpus ne déclare le postnom comme système. Le terme est défini parce que le chapitre l'emploie, pas parce que l'atlas l'instancie.",
+      "Aucune fiche de nom du corpus ne déclare le postnom comme système. Le terme est défini parce que le chapitre l'emploie, pas parce que nous l'instancions.",
     seeAlso: ["anthroponyme", "tradition-inventee"],
     chapterRef: "la-personne",
     sourceRefs: ["zaire-authenticite-1972"],
@@ -303,7 +303,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
       "Mami Wata : un nom collectif tardif, posé sur des divinités des eaux anciennes et multiples.",
     corpusPresence: "defined_only",
     absenceReason:
-      "L'atlas ne tient pas de fiches de divinités. Le terme est défini parce que le chapitre « La chose » en a besoin.",
+      "Nous ne tenons pas de fiches de divinités. Le terme est défini parce que le chapitre « La chose » en a besoin.",
     seeAlso: ["transculturation"],
     chapterRef: "la-chose",
     sourceRefs: ["mami-wata-pidgin"],
@@ -443,7 +443,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Tribe",
     family: "effet",
     definition:
-      "Terme d'administration coloniale, qui hiérarchise là où il prétend décrire. L'atlas écrit « peuple » partout, sans exception, et ne conserve celui-ci que pour en parler.",
+      "Terme d'administration coloniale, qui hiérarchise là où il prétend décrire. Nous écrivons « peuple » partout, sans exception, et ne conservons celui-ci que pour en parler.",
     corpusExample:
       "Aucune des 800 fiches n'emploie le mot pour désigner ce qu'elle décrit.",
     corpusPresence: "defined_only",

@@ -145,7 +145,7 @@ export const legalPages = {
     ],
   },
   accessibility: {
-    eyebrow: "Un atlas ouvert à toutes et tous",
+    eyebrow: "Un projet ouvert à toutes et à tous",
     title: "Accessibilité",
     lastUpdated: "Dernière mise à jour : 25 juillet 2026",
     introduction:

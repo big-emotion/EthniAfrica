@@ -20,7 +20,7 @@
  */
 
 /** Mercator measures its own areas, so its provenance is the asset, not a fiche. */
-const ATLAS_OUTLINES = "les tracés de frontières publiés par l'atlas";
+const ATLAS_OUTLINES = "les tracés de frontières publiés par EthniAfrica";
 
 /**
  * Keyed by the same strings `TEMPLATE_FIELD_PATHS` and the round builders
@@ -31,7 +31,7 @@ const WORDING_BY_FIELD_PATH: Record<string, string> = {
   "lib/atlas/assets/africaAdmin0": ATLAS_OUTLINES,
   "lib/atlas/assets/worldCompare": ATLAS_OUTLINES,
   "lib/games/landmarks":
-    "les coordonnées de villes et de caps publiées par l'atlas",
+    "les coordonnées de villes et de caps publiées par EthniAfrica",
 
   languageFamilyId: "la famille linguistique déclarée par la fiche",
   "content.appellations.selfAppellation":

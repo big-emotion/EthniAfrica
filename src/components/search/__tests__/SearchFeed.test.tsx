@@ -265,7 +265,7 @@ describe("SearchFeed", () => {
     );
     expect(
       screen.getByText(
-        "L’atlas a trouvé des fiches liées sans établir qu’elles répondent à ce nom."
+        "Nous avons trouvé des fiches liées sans établir qu’elles répondent à ce nom."
       )
     ).toBeInTheDocument();
     expect(screen.queryByText("Nous ne connaissons pas ce nom.")).toBeNull();
@@ -305,7 +305,7 @@ describe("SearchFeed", () => {
     ).toBeInTheDocument();
     expect(
       screen.queryByText(
-        "L’atlas a trouvé des fiches liées sans établir qu’elles répondent à ce nom."
+        "Nous avons trouvé des fiches liées sans établir qu’elles répondent à ce nom."
       )
     ).toBeNull();
   });
@@ -413,7 +413,7 @@ describe("SearchFeed", () => {
 
     const nearName = container.querySelector('[data-feed-block="near-name"]');
     expect(nearName).toHaveTextContent(
-      "Bassari a une graphie proche et correspond à une autre fiche de l’atlas."
+      "Bassari a une graphie proche et correspond à une autre fiche."
     );
     expect(nearName).not.toHaveTextContent("aucun lien");
     expect(nearName).not.toHaveTextContent("Unrelated text match");
@@ -571,9 +571,7 @@ describe("SearchFeed", () => {
     expect(
       screen.getByRole("heading", { level: 1, name: "Yoruba" })
     ).toBeInTheDocument();
-    expect(
-      screen.getByText("2 entrées de l’atlas portent ce nom.")
-    ).toBeInTheDocument();
+    expect(screen.getByText("2 entrées portent ce nom.")).toBeInTheDocument();
     expect(
       screen.getByRole("heading", {
         level: 2,

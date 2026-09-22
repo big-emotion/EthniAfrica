@@ -146,7 +146,8 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
     expect(sentences).toHaveLength(1);
     expect(answer).toHaveTextContent(/explorez/i);
     expect(answer).toHaveTextContent(/dossiers/i);
-    expect(answer).toHaveTextContent(/atlas/i);
+    expect(answer).toHaveTextContent(/histoire des noms/i);
+    expect(answer.textContent).not.toMatch(/\batlas\b/i);
     expect(answer).toHaveTextContent(/sources/i);
   });
 

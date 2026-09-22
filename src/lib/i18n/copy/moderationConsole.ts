@@ -81,7 +81,7 @@ const en: ModerationConsoleCopy = {
     entityId: "Identifier",
     fieldPath: "Field",
     noTarget:
-      "This report names no entity — it proposes one the atlas does not hold yet.",
+      "This report names no entity — it proposes one we do not hold yet.",
     openFiche: "Open the contested fiche",
     counterSourceHeading: "Counter-source supplied by the reader",
     noCounterSource: "The reader supplied no counter-source.",
@@ -143,7 +143,7 @@ const fr: ModerationConsoleCopy = {
     entityId: "Identifiant",
     fieldPath: "Champ",
     noTarget:
-      "Ce signalement ne nomme aucune entité — il en propose une que l'atlas ne porte pas encore.",
+      "Ce signalement ne nomme aucune entité — il en propose une que nous ne portons pas encore.",
     openFiche: "Ouvrir la fiche contestée",
     counterSourceHeading: "Contre-source fournie par le lecteur",
     noCounterSource: "Le lecteur n'a fourni aucune contre-source.",

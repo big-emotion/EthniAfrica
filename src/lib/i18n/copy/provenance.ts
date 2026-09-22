@@ -22,7 +22,7 @@ const en = {
    * tier policy exists to refuse.
    */
   unverifiedNotice:
-    "Unverified assertions are published and labelled as such. The atlas does not withdraw them.",
+    "Unverified assertions are published and labelled as such. We do not withdraw them.",
   viewSources: "See the sources",
 };
 
@@ -35,7 +35,7 @@ const fr: ProvenanceCopy = {
   lastHumanAudit: (date) => `Dernière relecture humaine : ${date}`,
   neverAudited: "Aucune relecture humaine enregistrée à ce jour",
   unverifiedNotice:
-    "Les assertions non vérifiées sont publiées et signalées comme telles. L'atlas ne les retire pas.",
+    "Les assertions non vérifiées sont publiées et signalées comme telles. Nous ne les retirons pas.",
   viewSources: "Voir les sources",
 };
 

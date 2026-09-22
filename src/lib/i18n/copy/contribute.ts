@@ -8,7 +8,7 @@ const en = {
     introStrong: "structured database",
     introBeforeAbout: ", organised according to the AFRIK methodology. The ",
     aboutLink: "About page",
-    introAfterAbout: "describes what the atlas contains.",
+    introAfterAbout: "describes what our project contains.",
     invitationBeforeStrong: "I welcome ",
     invitationStrong: "all suggestions and contributions",
     invitationBeforeGithub:
@@ -193,7 +193,7 @@ const fr: ContributeCopy = {
     introStrong: "base de données structurée",
     introBeforeAbout: ", organisée selon la méthodologie AFRIK. La page ",
     aboutLink: "À propos",
-    introAfterAbout: "détaille ce que contient l’atlas.",
+    introAfterAbout: "détaille ce que contient notre projet.",
     invitationBeforeStrong: "Je suis ",
     invitationStrong: "ouvert à toutes les propositions ou contributions",
     invitationBeforeGithub:

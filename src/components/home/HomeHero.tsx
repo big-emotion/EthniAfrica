@@ -108,8 +108,7 @@ export function HomeHero({
               is the French rule, written as an escape because the character is
               invisible in a diff. */}
           <p className="home-hero-answer" data-testid="home-hero-answer">
-            {"Explorez la carte, lisez les dossiers, jouez\u00a0: " +
-              "l'atlas libre des peuples d'Afrique, sources à l'appui."}
+            {homeHeroCopy[language].answer}
           </p>
 
           {/* What the atlas is for, in the statement the social series opens

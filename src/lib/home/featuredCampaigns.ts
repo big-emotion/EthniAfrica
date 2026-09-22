@@ -76,7 +76,7 @@ export const FEATURED_CAMPAIGNS: FeaturedCampaign[] = [
       { label: "Toucouleur" },
     ],
     quote:
-      "Aucune des lectures proposées pour Fulɓe et Pullo n’est établie, et l’atlas n’en retient aucune.",
+      "Aucune des lectures proposées pour Fulɓe et Pullo n’est établie, et nous n’en retenons aucune.",
     sources: [
       { title: "Breedveld (1995)" },
       { title: "Hampâté Bâ (1966)" },

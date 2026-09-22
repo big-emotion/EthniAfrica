@@ -167,8 +167,7 @@ export async function GET(request: NextRequest) {
           status: 200,
           headers: {
             "Content-Type": "application/zip",
-            "Content-Disposition":
-              'attachment; filename="ethniafrique-atlas-v2.zip"',
+            "Content-Disposition": 'attachment; filename="ethniafrica-v2.zip"',
           },
         })
       );
@@ -180,8 +179,7 @@ export async function GET(request: NextRequest) {
           headers: {
             "Content-Type":
               "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-            "Content-Disposition":
-              'attachment; filename="ethniafrique-atlas-v2.xlsx"',
+            "Content-Disposition": 'attachment; filename="ethniafrica-v2.xlsx"',
           },
         })
       );
