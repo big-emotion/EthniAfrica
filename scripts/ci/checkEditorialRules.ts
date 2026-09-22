@@ -660,7 +660,7 @@ export function checkReaderFacingRegister(
         severity: "error",
         file,
         slug,
-        message: `${field.path} is published verbatim to the reader but carries a ${label} ("${hit[0]}"). Say what the atlas does not know; never how the workshop knows it does not.`,
+        message: `${field.path} is published verbatim to the reader but carries a ${label} ("${hit[0]}"). Say what we do not know; never how the workshop knows it does not.`,
       });
       break;
     }

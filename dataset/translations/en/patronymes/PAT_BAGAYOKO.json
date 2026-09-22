@@ -57,7 +57,7 @@
       "url": null,
       "tier": "unverified",
       "source_kind": "ai_generated",
-      "notes": "This name appears on the atlas's list of names to document: it has been identified as a name requiring documentation, but no dedicated source has yet been consulted. The entry exists to record the name, not to make a claim about it. Future verification will draw on electoral registers, national statistical institutes and the onomastic scholarship of the country concerned."
+      "notes": "This name appears on our list of names to document: it has been identified as a name requiring documentation, but no dedicated source has yet been consulted. The entry exists to record the name, not to make a claim about it. Future verification will draw on electoral registers, national statistical institutes and the onomastic scholarship of the country concerned."
     },
     {
       "sourceKey": "bamadaba-jamuw",
@@ -87,23 +87,23 @@
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "The atlas does not yet document this point for this name: no dedicated source has been consulted to date."
+      "reason": "We do not yet document this point for this name: no dedicated source has been consulted to date."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "The atlas does not yet document this point for this name: no dedicated source has been consulted to date."
+      "reason": "We do not yet document this point for this name: no dedicated source has been consulted to date."
     },
     {
       "fieldPath": "bearers",
-      "reason": "The atlas does not yet document this point for this name: no dedicated source has been consulted to date."
+      "reason": "We do not yet document this point for this name: no dedicated source has been consulted to date."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "The atlas does not yet document this point for this name: no dedicated source has been consulted to date."
+      "reason": "We do not yet document this point for this name: no dedicated source has been consulted to date."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "The clan name alone does not determine the mode of transmission: the atlas does not yet document this for this name."
+      "reason": "The clan name alone does not determine the mode of transmission: we do not yet document this for this name."
     }
   ],
   "_translation": {
