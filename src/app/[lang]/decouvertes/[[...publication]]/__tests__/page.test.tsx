@@ -31,6 +31,31 @@ describe("Découvertes server entry", () => {
       "NEXT_REDIRECT:/fr/decouvertes/"
     );
   });
+  // Every link into the feed targets the bare route; opening on the catalog's
+  // first entry showed every reader the same publication on every visit.
+  // @req REQ-156
+  it("opens the bare route on a publication drawn per request", async () => {
+    const [first, ...rest] = eligiblePublications(getDiscoveryPublications());
+    const landing = async (draw: number) => {
+      const random = vi.spyOn(Math, "random").mockReturnValue(draw);
+      try {
+        await DiscoveriesPage({ params: params() });
+      } catch (error) {
+        return (error as Error).message.replace("NEXT_REDIRECT:", "");
+      } finally {
+        random.mockRestore();
+      }
+    };
+
+    const landings = new Set([await landing(0), await landing(0.999)]);
+
+    expect(rest.length).toBeGreaterThan(0);
+    expect(landings.size).toBe(2);
+    expect([...landings].some((path) => !path.endsWith(first.slug.fr))).toBe(
+      true
+    );
+  });
+
   // @req REQ-158
   it("renders the exact addressed publication on a cold request", async () => {
     render(
