@@ -233,7 +233,7 @@
       "silences": [
         [
           "Aucune attestation datée",
-          "L'atlas ne date aucune de ces attestations : on ne sait pas depuis quand chaque forme est écrite."
+          "Nous ne datons aucune de ces attestations : on ne sait pas depuis quand chaque forme est écrite."
         ]
       ],
       "conv": [
@@ -440,7 +440,7 @@
       "silences": [
         [
           "Aucune attestation datée",
-          "L'atlas ne date aucune de ces attestations : on ne sait pas depuis quand chaque forme est écrite."
+          "Nous ne datons aucune de ces attestations : on ne sait pas depuis quand chaque forme est écrite."
         ]
       ],
       "conv": [
@@ -636,11 +636,11 @@
       "silences": [
         [
           "Aucune attestation datée",
-          "L'atlas situe l'emprunt européen au milieu du XIX<sup>e</sup> siècle, mais ne date aucune de ces formes une par une."
+          "Nous situons l'emprunt européen au milieu du XIX<sup>e</sup> siècle, mais ne datons aucune de ces formes une par une."
         ],
         [
           "Ce que chaque nom veut dire",
-          "L'atlas dit d'où vient chaque forme, pas ce qu'elle signifiait dans la langue de ceux qui l'ont écrite."
+          "Nous disons d'où vient chaque forme, pas ce qu'elle signifiait dans la langue de ceux qui l'ont écrite."
         ]
       ],
       "conv": [
@@ -665,7 +665,7 @@
     "result_state": "exact",
     "title": "Bassa — un nom, trois peuples sans parenté",
     "verdict": "Trois peuples portent ce nom. Ils ne sont pas parents.",
-    "sub": "L'atlas les range dans trois familles de langues différentes, à des milliers de kilomètres les uns des autres.",
+    "sub": "Nous les rangeons dans trois familles de langues différentes, à des milliers de kilomètres les uns des autres.",
     "lens": [
       [
         "Shorts",
@@ -748,14 +748,14 @@
       "title": "Pourquoi le même nom ?",
       "tier": "referenced",
       "paras": [
-        "L'atlas ne l'explique pas, et aucune source qu'il tient ne le fait.",
+        "Nous ne l'expliquons pas, et aucune source que nous citons ne le fait.",
         "Ce qu'on peut dire : dans <strong>deux cas sur trois</strong>, l'orthographe « Bassa » ne vient pas du peuple. C'est la façon dont une administration extérieure a écrit son nom. Une partie de la confusion a été fabriquée en chemin."
       ]
     },
     "prose2": {
       "title": "Vous cherchiez peut-être <em>Bassari</em> ?",
       "paras": [
-        "Un autre peuple encore, au Sénégal et en Guinée. Le nom se ressemble ; l'atlas ne lui connaît aucun lien avec les trois ci-dessus."
+        "Un autre peuple encore, au Sénégal et en Guinée. Le nom se ressemble ; nous ne lui connaissons aucun lien avec les trois ci-dessus."
       ]
     },
     "plates": [
@@ -772,7 +772,7 @@
     "quiz": {
       "q": "Les trois peuples Bassa sont-ils parents ?",
       "options": [
-        "Non : aucune source de l'atlas ne les relie",
+        "Non : aucune source que nous citons ne les relie",
         "Oui, ils parlent la même langue",
         "Oui, ils viennent tous du Cameroun"
       ],
@@ -804,11 +804,11 @@
       "silences": [
         [
           "Aucune attestation datée",
-          "L'atlas ne date aucune de ces graphies : on ne sait pas depuis quand chacune est écrite."
+          "Nous ne datons aucune de ces graphies : on ne sait pas depuis quand chacune est écrite."
         ],
         [
           "Pourquoi le même nom",
-          "Aucune source que l'atlas tient ne l'explique."
+          "Aucune source que nous citons ne l'explique."
         ]
       ],
       "conv": [
@@ -883,7 +883,7 @@
       ]
     },
     "facts": {
-      "title": "Ce que l'atlas tient",
+      "title": "Ce que nous savons",
       "items": [
         [
           "Famille",
@@ -916,7 +916,7 @@
       }
     ],
     "quiz": {
-      "q": "Dans quelle famille de langues l'atlas range-t-il l'ekpeye ?",
+      "q": "Dans quelle famille de langues rangeons-nous l'ekpeye ?",
       "options": [
         "Bénoué-Congo",
         "Atlantique",
@@ -940,7 +940,7 @@
       "silences": [
         [
           "Aucune autre appellation",
-          "L'atlas n'a trouvé aucun autre nom donné de l'extérieur."
+          "Nous n'avons trouvé aucun autre nom donné de l'extérieur."
         ],
         [
           "Origine du nom non documentée",
@@ -1296,7 +1296,7 @@
         [
           "Ngala · Losengo",
           "autres noms",
-          "Deux autres noms que l'atlas enregistre pour la même langue.",
+          "Deux autres noms que nous enregistrons pour la même langue.",
           null,
           "official",
           ""
@@ -1328,7 +1328,7 @@
       "tier": "referenced",
       "paras": [
         "Les fiches ne s'accordent pas : 10 à 25 millions de personnes en RDC et en République du Congo selon l'une ; environ 40 millions, dont 20 millions de locuteurs maternels, selon une autre.",
-        "L'atlas ne tranche pas."
+        "Nous ne tranchons pas."
       ]
     },
     "fiches": [
@@ -1357,7 +1357,7 @@
       "silences": [
         [
           "La date exacte du nom",
-          "1901-1902 selon une fiche, 1903 selon une autre : l'atlas ne tranche pas."
+          "1901-1902 selon une fiche, 1903 selon une autre : nous ne tranchons pas."
         ],
         [
           "Le nombre de locuteurs",
@@ -1495,7 +1495,7 @@
         ],
         [
           "Bambara",
-          "le peuple auquel l'atlas le rattache"
+          "le peuple auquel nous le rattachons"
         ],
         [
           "Mali · Burkina · Côte d'Ivoire",
@@ -1503,7 +1503,7 @@
         ]
       ]
     },
-    "plates_sub": "Rien encore sur Traoré lui-même. Autour : les Bambara, le peuple auquel l'atlas le rattache.",
+    "plates_sub": "Rien encore sur Traoré lui-même. Autour : les Bambara, le peuple auquel nous le rattachons.",
     "plates": [
       {
         "type": "anecdote",
@@ -1566,11 +1566,11 @@
       "silences": [
         [
           "Aucune étymologie retenue",
-          "Aucune ne fait consensus ; l'atlas n'en retient aucune."
+          "Aucune ne fait consensus ; nous n'en retenons aucune."
         ],
         [
           "Aucun totem connu",
-          "L'atlas ne connaît pas de totem attaché à ce nom."
+          "Nous ne connaissons pas de totem attaché à ce nom."
         ]
       ],
       "conv": [
@@ -1698,10 +1698,10 @@
     "q": "kossiwa",
     "result_state": "unknown",
     "thin": true,
-    "title": "Inconnu — un nom que l'atlas ne connaît pas",
+    "title": "Inconnu — un nom que nous ne connaissons pas",
     "verdict": "Nous ne connaissons pas ce nom.",
     "verdict_plain": true,
-    "sub": "Ce n'est pas une réponse : c'est un aveu. L'atlas tient 774 peuples, et il en manque.",
+    "sub": "Ce n'est pas une réponse : c'est un aveu. Nous documentons 774 peuples, et il en manque.",
     "lens": [
       [
         "Shorts",
@@ -1715,7 +1715,7 @@
         "Personne ne nous l'a encore raconté.",
         "Nous parler de ce nom →"
       ],
-      "note": "Les plus récents de l'atlas — sans rapport avec « kossiwa »",
+      "note": "Les plus récents — sans rapport avec « kossiwa »",
       "items": [
         [
           "Nigeria",
@@ -1740,7 +1740,7 @@
         "C'est pour cela que ce champ existe, et que toute correction est lue."
       ],
       "invite": "Ce nom est le vôtre ?",
-      "invite_sub": "Si ce nom est le vôtre, ou celui d'un peuple, d'une langue ou d'un lieu que vous connaissez, dites-le-nous. C'est comme ça que l'atlas grandit.",
+      "invite_sub": "Si ce nom est le vôtre, ou celui d'un peuple, d'une langue ou d'un lieu que vous connaissez, dites-le-nous. C'est comme ça que notre projet grandit.",
       "button": "Nous parler de ce nom"
     },
     "further": [

@@ -112,7 +112,7 @@ def h2(text, d, sub=None, action=None, anchor=None):
 
 def header(d):
     pad = "0 32px" if d else "0 12px"
-    nav = ('<div style="display: flex; gap: 24px; font-size: 14px; color: #746557;"><span>L&#39;atlas</span>'
+    nav = ('<div style="display: flex; gap: 24px; font-size: 14px; color: #746557;"><span>Parcourir</span>'
            '<span>Les dossiers</span><span>Jouer</span><span>À propos</span></div>') if d else ""
     return (f'<div style="height: 61px; box-sizing: border-box; padding: {pad}; border-bottom: 1px solid {LINE}; '
             f'display: flex; align-items: center; justify-content: space-between;">'
@@ -382,7 +382,7 @@ def band(c, d, stacked=False):
     sil = "".join(
         f'<div style="border: 1px dashed {LINE}; {R} padding: 16px;"><div style="{t("small", d, 700)} color: {SOFT};">{a}</div>'
         f'<div style="margin-top: 4px; {t("caption", d)} color: {SOFT};">{x}</div></div>' for a, x in b.get("silences", []))
-    s = (f'<div data-feed-part="silences">{h2("Ce que l&#39;atlas ne dit pas", d, "Un silence déclaré, pas un oubli.")}'
+    s = (f'<div data-feed-part="silences">{h2("Ce que nous ne savons pas encore", d, "Un silence déclaré, pas un oubli.")}'
          + f'<div style="margin-top: 12px; display: flex; flex-direction: column; gap: 12px;">{sil}</div></div>') if b.get("silences") else ""
     conv = (f'<div data-feed-part="conviction" style="background: {WARM}; {R} padding: 16px;"><div style="{t("small", d, 700)} color: {TEXT};">{b["conv"][0]}</div>'
             f'<p style="margin: 4px 0 0 0; {t("small" if d else "caption", d)} color: {TEXT};">{b["conv"][1]}</p></div>')
