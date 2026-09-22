@@ -4,6 +4,15 @@ export interface HomePurposeCopy {
   toggle: string;
   sentences: [string];
   linkLabel: string;
+  /**
+   * A second link, to the public method page (editorial-and-experience-plan.md
+   * H19), added once that page actually said what this label promises (M6:
+   * "we distinguish well-supported facts... and unresolved questions"). Kept
+   * beside `linkLabel` rather than replacing the border/names statement above
+   * it — that statement is dated, negotiated doctrine (purpose-doctrine.md),
+   * not prose to swap for a generic mission line.
+   */
+  methodLinkLabel: string;
 }
 
 /**
@@ -33,6 +42,7 @@ export const homePurposeCopy: Record<Language, HomePurposeCopy> = {
       "Most of Africa’s borders are less than a hundred and forty years old. The names are more than a thousand years old.",
     ],
     linkLabel: "Read the full statement",
+    methodLinkLabel: "How we work",
   },
   fr: {
     toggle: "Notre propos",
@@ -40,5 +50,6 @@ export const homePurposeCopy: Record<Language, HomePurposeCopy> = {
       "La plupart des frontières de l’Afrique ont moins de cent quarante ans. Les noms en ont plus de mille.",
     ],
     linkLabel: "Lire la déclaration",
+    methodLinkLabel: "Comment nous travaillons",
   },
 };
