@@ -153,8 +153,10 @@ screen is measured from the right place), the footer, and nothing outside
 - `main.afh-shell py-8` (32 px top) contains the page's own
   `div.afh-shell.afh-accent-ocre`, which receives **`data-feed-root`**. Keep both
   shells: they give a **24 px gutter at 430** (12 + 12; content x = 24, 382 wide)
-  and **1112 px of content at 1280** (x = 84). `[data-feed-root]` itself measures
-  x = 12, 406 wide at 430 and x = 52, 1176 wide at 1280 — the boards match.
+  and **1152 px of content at 1280** (x = 64): `PageLayout wide` lifts the
+  shell's max-width on this page (#1214), so the shells run the full width.
+  `[data-feed-root]` itself measures x = 12, 406 wide at 430 and x = 32, 1216
+  wide at 1280 — the boards match.
 - 768–1199 px: the shells give 24 + 24; render the mobile layout inside.
 
 ### 3.3 Colour

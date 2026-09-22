@@ -13,7 +13,8 @@ Where a value comes from:
   space     src/styles/tokens/space.css, brand charter §7 ramp
   radius    src/styles/tokens/radius.css, actions charter §6
   shell     measured on /fr/atlas/recherche: header 61, main py-8, two nested
-            .afh-shell (12+12 px at 430; 1112 px content at 1280)
+            .afh-shell (12+12 px at 430; 1152 px content at 1280,
+            the result page lifting the shell cap with PageLayout wide)
 """
 import re, sys
 SERIF = "font-family: 'Fraunces', Georgia, serif;"
@@ -532,8 +533,8 @@ def body(c, d):
     inner = first_screen(c, d) + feed(c, d, thin) + owed(c, d, thin)
     if d:
         inner_box = f'<div style="width: 880px; margin: 0 auto;">{inner}</div>' if thin else inner
-        # main.afh-shell (margin 20, padding 32) > div.afh-shell (padding 32): content 1112 px at x = 84.
-        return (header(d) + f'<div style="width: 1240px; box-sizing: border-box; margin: 0 auto; padding: 32px 32px;">'
+        # PageLayout wide lifts the shell cap: main.afh-shell (padding 32) > div.afh-shell (padding 32): content 1152 px at x = 64.
+        return (header(d) + f'<div style="box-sizing: border-box; padding: 32px 32px;">'
                 f'<div data-feed-root="1" style="box-sizing: border-box; padding: 0 32px;">{inner_box}</div></div>')
     # main.afh-shell (padding 12) > div.afh-shell (padding 12): 24 px gutter at 430.
     return (header(d) + f'<div style="box-sizing: border-box; padding: 32px 12px;">'

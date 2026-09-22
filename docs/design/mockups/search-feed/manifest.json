@@ -1219,7 +1219,7 @@
       "resultState": "exact",
       "width": 1280,
       "theme": "day",
-      "height": 2720,
+      "height": 2700,
       "blocks": [
         {
           "id": "lenses",
@@ -1272,7 +1272,7 @@
         "invitation"
       ],
       "firstPoster": {
-        "x": 84,
+        "x": 64,
         "y": 509,
         "width": 160,
         "height": 284
@@ -1335,7 +1335,7 @@
         "invitation"
       ],
       "firstPoster": {
-        "x": 84,
+        "x": 64,
         "y": 485,
         "width": 160,
         "height": 284
@@ -1349,7 +1349,7 @@
       "resultState": "exact",
       "width": 1280,
       "theme": "day",
-      "height": 2810,
+      "height": 2760,
       "blocks": [
         {
           "id": "lenses",
@@ -1398,7 +1398,7 @@
         "invitation"
       ],
       "firstPoster": {
-        "x": 84,
+        "x": 64,
         "y": 509,
         "width": 160,
         "height": 284
@@ -1465,7 +1465,7 @@
         "invitation"
       ],
       "firstPoster": {
-        "x": 260,
+        "x": 240,
         "y": 509,
         "width": 160,
         "height": 284
@@ -1538,7 +1538,7 @@
       "resultState": "exact",
       "width": 1280,
       "theme": "day",
-      "height": 2550,
+      "height": 2520,
       "blocks": [
         {
           "id": "lenses",
@@ -1591,7 +1591,7 @@
         "invitation"
       ],
       "firstPoster": {
-        "x": 84,
+        "x": 64,
         "y": 509,
         "width": 160,
         "height": 284
@@ -1654,7 +1654,7 @@
         "invitation"
       ],
       "firstPoster": {
-        "x": 84,
+        "x": 64,
         "y": 511,
         "width": 160,
         "height": 284
@@ -1668,7 +1668,7 @@
       "resultState": "exact",
       "width": 1280,
       "theme": "day",
-      "height": 2480,
+      "height": 2460,
       "blocks": [
         {
           "id": "lenses",
@@ -1721,7 +1721,7 @@
         "invitation"
       ],
       "firstPoster": {
-        "x": 84,
+        "x": 64,
         "y": 509,
         "width": 160,
         "height": 284
@@ -1824,7 +1824,7 @@
       "resultState": "exact",
       "width": 1280,
       "theme": "night",
-      "height": 2720,
+      "height": 2700,
       "blocks": [
         {
           "id": "lenses",
@@ -1877,7 +1877,7 @@
         "invitation"
       ],
       "firstPoster": {
-        "x": 84,
+        "x": 64,
         "y": 509,
         "width": 160,
         "height": 284
@@ -1940,7 +1940,7 @@
         "invitation"
       ],
       "firstPoster": {
-        "x": 84,
+        "x": 64,
         "y": 485,
         "width": 160,
         "height": 284
@@ -1954,7 +1954,7 @@
       "resultState": "exact",
       "width": 1280,
       "theme": "night",
-      "height": 2810,
+      "height": 2760,
       "blocks": [
         {
           "id": "lenses",
@@ -2003,7 +2003,7 @@
         "invitation"
       ],
       "firstPoster": {
-        "x": 84,
+        "x": 64,
         "y": 509,
         "width": 160,
         "height": 284
@@ -2070,7 +2070,7 @@
         "invitation"
       ],
       "firstPoster": {
-        "x": 260,
+        "x": 240,
         "y": 509,
         "width": 160,
         "height": 284
@@ -2143,7 +2143,7 @@
       "resultState": "exact",
       "width": 1280,
       "theme": "night",
-      "height": 2550,
+      "height": 2520,
       "blocks": [
         {
           "id": "lenses",
@@ -2196,7 +2196,7 @@
         "invitation"
       ],
       "firstPoster": {
-        "x": 84,
+        "x": 64,
         "y": 509,
         "width": 160,
         "height": 284
@@ -2259,7 +2259,7 @@
         "invitation"
       ],
       "firstPoster": {
-        "x": 84,
+        "x": 64,
         "y": 511,
         "width": 160,
         "height": 284
@@ -2273,7 +2273,7 @@
       "resultState": "exact",
       "width": 1280,
       "theme": "night",
-      "height": 2480,
+      "height": 2460,
       "blocks": [
         {
           "id": "lenses",
@@ -2326,7 +2326,7 @@
         "invitation"
       ],
       "firstPoster": {
-        "x": 84,
+        "x": 64,
         "y": 509,
         "width": 160,
         "height": 284
