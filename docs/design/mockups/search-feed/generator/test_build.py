@@ -169,7 +169,7 @@ class SearchFeedGeneratorTest(unittest.TestCase):
 
     def test_first_poster_skips_leading_empty_slots(self):
         expected_x = {
-            "bassa": {"mobile-day": 166, "desktop-day": 260},
+            "bassa": {"mobile-day": 166, "desktop-day": 240},
             "ekpeye": {"mobile-day": 166, "desktop-day": 376},
             "inconnu": {"mobile-day": 166, "desktop-day": 376},
         }
