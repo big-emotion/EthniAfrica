@@ -16,7 +16,12 @@ import {
   type HealthRecord,
   type Action,
 } from "../lib/urlHealth";
-import { fetchByIds } from "../recomputeConfidence";
+import {
+  fetchByIds,
+  groupEntitiesBySource,
+  dedupeById,
+  type AssertionRow,
+} from "../recomputeConfidence";
 import type { PageResult } from "../lib/supabasePaging";
 
 /** Build a synthetic NDJSON-equivalent record. */
@@ -195,6 +200,91 @@ describe("decideAction", () => {
         hasOpenFlag: false,
       })
     ).toBe("noop");
+  });
+});
+
+describe("dedupeById", () => {
+  // scripts/lib/supabasePaging.ts.overlaps() can return the same assertion
+  // more than once when its source_ids array spans two id chunks: an
+  // assertion citing sources A and B is matched by both the chunk holding A
+  // and the chunk holding B.
+
+  // @req REQ-092
+  it("keeps one copy of a row that reached two chunks", () => {
+    const rows = [
+      { id: "a1", value: 1 },
+      { id: "a2", value: 1 },
+      { id: "a1", value: 1 },
+    ];
+    expect(dedupeById(rows)).toEqual([
+      { id: "a1", value: 1 },
+      { id: "a2", value: 1 },
+    ]);
+  });
+
+  // @req REQ-092
+  it("passes through a list with no duplicates unchanged", () => {
+    const rows = [
+      { id: "a1", value: 1 },
+      { id: "a2", value: 2 },
+    ];
+    expect(dedupeById(rows)).toEqual(rows);
+  });
+});
+
+describe("groupEntitiesBySource", () => {
+  // Migration 015 replaced the scalar assertions.source_id with
+  // assertions.source_ids UUID[] — one assertion can back several sources,
+  // and each of an assertion's known sources independently earns a look at
+  // whether its own run state should act on this entity.
+
+  function assertion(
+    id: string,
+    entityId: string,
+    sourceIds: string[]
+  ): AssertionRow {
+    return {
+      id,
+      entity_type: "people",
+      entity_id: entityId,
+      source_ids: sourceIds,
+    };
+  }
+
+  // @req REQ-092
+  it("files an assertion under every one of its sources we have health data for", () => {
+    const grouped = groupEntitiesBySource(
+      [assertion("as1", "PPL_X", ["s1", "s2"])],
+      new Set(["s1", "s2"])
+    );
+    expect(grouped.get("s1")).toEqual([
+      { entity_type: "people", entity_id: "PPL_X", assertion_id: "as1" },
+    ]);
+    expect(grouped.get("s2")).toEqual([
+      { entity_type: "people", entity_id: "PPL_X", assertion_id: "as1" },
+    ]);
+  });
+
+  // @req REQ-092
+  it("ignores a source in the array we have no health data for", () => {
+    const grouped = groupEntitiesBySource(
+      [assertion("as1", "PPL_X", ["s1", "unchecked"])],
+      new Set(["s1"])
+    );
+    expect(grouped.has("unchecked")).toBe(false);
+    expect(grouped.get("s1")).toHaveLength(1);
+  });
+
+  // @req REQ-092
+  it("groups two assertions on the same source together", () => {
+    const grouped = groupEntitiesBySource(
+      [assertion("as1", "PPL_X", ["s1"]), assertion("as2", "PPL_Y", ["s1"])],
+      new Set(["s1"])
+    );
+    expect(grouped.get("s1")?.map((e) => e.entity_id)).toEqual([
+      "PPL_X",
+      "PPL_Y",
+    ]);
   });
 });
 

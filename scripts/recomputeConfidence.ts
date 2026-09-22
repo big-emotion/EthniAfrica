@@ -50,11 +50,16 @@ const LOG_PATH = path.resolve(
   "source-url-health.log"
 );
 
-interface AssertionRow {
+/**
+ * `source_ids` is `UUID[]` since migration 015 replaced the earlier scalar
+ * `source_id` — an assertion can cite more than one source. There is no FK,
+ * so `assertions.select("... source_ids")` is the only shape PostgREST has.
+ */
+export interface AssertionRow {
   id: string;
   entity_type: string;
   entity_id: string;
-  source_id: string;
+  source_ids: string[];
 }
 
 interface ConfidenceRow {
@@ -106,10 +111,10 @@ function clampScore(n: number): number {
  * stays within PostgREST's limit and paging each split so no tail is
  * dropped. Both limits are silent — see `scripts/lib/supabasePaging.ts`.
  *
- * A single `.in("source_id", sourceIds)` here is what took the nightly job
- * down the day the `server-only` import fix let it actually reach this line:
- * production's checked-source count is well past the ~200 ids a UUID list
- * can carry before the request comes back 400 Bad Request.
+ * A single unsplit `.overlaps("source_ids", sourceIds)` here is what took the
+ * nightly job down the day the `server-only` import fix let it actually
+ * reach this line: production's checked-source count is well past the ~200
+ * ids a UUID list can carry before the request comes back 400 Bad Request.
  */
 export async function fetchByIds<T>(
   ids: string[],
@@ -126,6 +131,55 @@ export async function fetchByIds<T>(
     )
   );
   return pages.flat();
+}
+
+/**
+ * Drops repeats of the same row by `id`, keeping the first.
+ *
+ * `assertions.overlaps("source_ids", idChunk)` matches a row once per chunk
+ * whose ids it shares — an assertion citing sources A and B is returned by
+ * both the chunk holding A and the chunk holding B once `fetchByIds` splits
+ * a large source list across several chunks.
+ */
+export function dedupeById<T extends { id: string }>(rows: T[]): T[] {
+  const seen = new Map<string, T>();
+  for (const row of rows) {
+    if (!seen.has(row.id)) seen.set(row.id, row);
+  }
+  return [...seen.values()];
+}
+
+/**
+ * Files each assertion under every one of its `source_ids` that we have
+ * health data for, so an assertion citing several sources is judged once per
+ * source rather than once overall — the source whose run actually crossed
+ * the threshold is the one that should act on the entity, and a citation of
+ * a source we never checked contributes nothing.
+ */
+export function groupEntitiesBySource(
+  assertions: AssertionRow[],
+  knownSourceIds: ReadonlySet<string>
+): Map<
+  string,
+  Array<{ entity_type: string; entity_id: string; assertion_id: string }>
+> {
+  const bySource = new Map<
+    string,
+    Array<{ entity_type: string; entity_id: string; assertion_id: string }>
+  >();
+  for (const a of assertions) {
+    for (const sourceId of a.source_ids) {
+      if (!knownSourceIds.has(sourceId)) continue;
+      const list = bySource.get(sourceId) || [];
+      list.push({
+        entity_type: a.entity_type,
+        entity_id: a.entity_id,
+        assertion_id: a.id,
+      });
+      bySource.set(sourceId, list);
+    }
+  }
+  return bySource;
 }
 
 async function main(): Promise<void> {
@@ -154,18 +208,22 @@ async function main(): Promise<void> {
   const supabase = createAdminClient();
 
   // Pre-fetch the assertions tied to every source we have data for.
+  // assertions.source_ids is UUID[] (migration 015), so this is an array
+  // overlap, not an equality filter, and one assertion can surface once per
+  // chunk its sources span — dedupeById collapses that before grouping.
   const sourceIds = [...runs.keys()];
   let assertions: AssertionRow[];
   try {
-    assertions = await fetchByIds<AssertionRow>(
+    const rows = await fetchByIds<AssertionRow>(
       sourceIds,
       (idChunk, from, to) =>
         supabase
           .from("assertions")
-          .select("id, entity_type, entity_id, source_id")
-          .in("source_id", idChunk)
+          .select("id, entity_type, entity_id, source_ids")
+          .overlaps("source_ids", idChunk)
           .range(from, to)
     );
+    assertions = dedupeById(rows);
   } catch (aErr) {
     logger.error("Failed to fetch assertions", aErr, {
       script: "recomputeConfidence",
@@ -173,21 +231,10 @@ async function main(): Promise<void> {
     process.exit(1);
   }
 
-  // Group entities (entity_type, entity_id) by source_id and remember the
-  // assertion ids so we can target the right confidence rows.
-  const entitiesBySource = new Map<
-    string,
-    Array<{ entity_type: string; entity_id: string; assertion_id: string }>
-  >();
-  for (const a of assertions) {
-    const list = entitiesBySource.get(a.source_id) || [];
-    list.push({
-      entity_type: a.entity_type,
-      entity_id: a.entity_id,
-      assertion_id: a.id,
-    });
-    entitiesBySource.set(a.source_id, list);
-  }
+  const entitiesBySource = groupEntitiesBySource(
+    assertions,
+    new Set(sourceIds)
+  );
 
   let fiches_penalized = 0;
   let fiches_recovered = 0;
