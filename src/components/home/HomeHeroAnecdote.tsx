@@ -3,27 +3,18 @@ import Link from "next/link";
 import { TranslationProvenanceMarker } from "@/components/fiche/TranslationProvenanceMarker";
 import { SectionHeading } from "@/components/home/SectionHeading";
 import { ActionLink } from "@/components/ui/ActionLink";
-import type { DidYouKnowEntity } from "@/lib/home/didYouKnowFacts";
 import type { LocalizedDidYouKnowFact } from "@/lib/home/didYouKnowLocalization";
-import { DID_YOU_KNOW_ENTITY_ACCENT } from "@/lib/home/didYouKnowPresentation";
-import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
 import {
-  getCountryRoute,
-  getFamilyRoute,
-  getLocalizedRoute,
-  getPeopleRoute,
-} from "@/lib/routing";
+  DID_YOU_KNOW_ENTITY_ACCENT,
+  didYouKnowEntityHref,
+} from "@/lib/home/didYouKnowPresentation";
+import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
+import { getLocalizedRoute } from "@/lib/routing";
 import type { Language } from "@/types/shared";
 
 export interface HomeHeroAnecdoteProps {
   language: Language;
   fact: LocalizedDidYouKnowFact;
-}
-
-function entityHref(language: Language, entity: DidYouKnowEntity): string {
-  if (entity.kind === "country") return getCountryRoute(language, entity.id);
-  if (entity.kind === "family") return getFamilyRoute(language, entity.id);
-  return getPeopleRoute(language, entity.id);
 }
 
 /**
@@ -78,7 +69,7 @@ export function HomeHeroAnecdote({ language, fact }: HomeHeroAnecdoteProps) {
           <li key={`${entity.kind}-${entity.id}`}>
             <Link
               className={`home-hero-anecdote-chip ${DID_YOU_KNOW_ENTITY_ACCENT[entity.kind]}`}
-              href={entityHref(language, entity)}
+              href={didYouKnowEntityHref(language, entity)}
             >
               <span aria-hidden="true" className="home-hero-anecdote-dot" />
               <span className="home-hero-anecdote-chip-kind">

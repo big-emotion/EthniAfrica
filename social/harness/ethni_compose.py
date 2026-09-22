@@ -1846,11 +1846,16 @@ def _seuil(bloc):
     return SEUIL_AFFICHAGE if bloc.nom in AFFICHAGE else SEUIL_COURANT
 
 
-def _voile_resolu(im, p, deck):
+def _voile_resolu(im, p, deck, page=False):
     """§4 — the column scrim and its ramp, solved against the image drawn.
 
     Returns the old constants untouched when there is no column, so a layout that
     never had one cannot be changed by accident.
+
+    `page` is a near-white ground, a scan or a cutout. The solve protects the
+    brightest pixels, which on a page is the paper: it met the contrast and let the
+    printed lines through, dark on dark, across the title. A page takes the
+    ceiling — the solve has nothing to say about what is drawn on it.
 
     The ramp is scaled by the same factor rather than resolved on its own. §4
     requires it to end exactly where the flat begins; solved separately the two
@@ -1865,7 +1870,7 @@ def _voile_resolu(im, p, deck):
                  if b.texte and getattr(b, "couleur", None)
                  and not b.nom.startswith("entete-")
                  and b.y + b.h > colonne.y]
-    plat = _besoin(im, concernes, base, _seuil)
+    plat = VOILE_PLAFOND if page else _besoin(im, concernes, base, _seuil)
 
     monte = lambda d: min(VOILE_PLAFOND, round(plat + d, 4))  # noqa: E731
     colonne_arrets = ((0.00, plat), (0.40, monte(0.02)), (1.00, monte(0.03)))
@@ -1918,7 +1923,8 @@ def _peindre(carte, deck, fmt_key, *, image, sous_titre, texte, epreuve=None,
     # where the rule asks 4,5:1, the picture gone behind its own caption. The
     # scrim is now solved against the image actually drawn, per card and per
     # format, and the table becomes the ceiling rather than the setting.
-    arrets_colonne, arrets_rampe = _voile_resolu(im, p, deck)
+    arrets_colonne, arrets_rampe = _voile_resolu(im, p, deck,
+                                                page=tk.est_detoure(image))
     if p.bloc("voile-colonne") is not None:
         poser(p.bloc("voile-rampe"), arrets_rampe)
         poser(p.bloc("voile-colonne"), arrets_colonne)

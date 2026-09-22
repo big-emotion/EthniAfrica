@@ -1,4 +1,9 @@
-import type { DidYouKnowEntityKind } from "@/lib/home/didYouKnowFacts";
+import type {
+  DidYouKnowEntity,
+  DidYouKnowEntityKind,
+} from "@/lib/home/didYouKnowFacts";
+import { getCountryRoute, getFamilyRoute, getPeopleRoute } from "@/lib/routing";
+import type { Language } from "@/types/shared";
 
 /**
  * How a "Saviez-vous" fact is dressed, kept apart from the two surfaces that
@@ -19,6 +24,16 @@ export const DID_YOU_KNOW_ENTITY_ACCENT: Record<DidYouKnowEntityKind, string> =
     country: "afh-accent-teal",
     family: "afh-accent-terre",
   };
+
+// @req REQ-113
+export function didYouKnowEntityHref(
+  language: Language,
+  entity: DidYouKnowEntity
+): string {
+  if (entity.kind === "country") return getCountryRoute(language, entity.id);
+  if (entity.kind === "family") return getFamilyRoute(language, entity.id);
+  return getPeopleRoute(language, entity.id);
+}
 
 /** Which half of the anecdote band the picture takes, once it has halves. */
 export type AnecdoteImageSide = "start" | "end";

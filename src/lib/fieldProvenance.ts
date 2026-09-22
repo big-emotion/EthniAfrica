@@ -184,6 +184,9 @@ function ownFieldNames(source: unknown): string[] {
  * This exists so a chapter cannot be silently dropped. It was a hand-written
  * list in each view until now, which is a template only by convention — and
  * convention held on the three classes a charter test covered, then stopped.
+ *
+ * @public Read by the fiche charter tests, which are its only callers by
+ * design: the guard is the test, not a production path.
  */
 // @req REQ-119
 export function modelChapterKeys(entityKind: AfrikEntityKind): string[] {

@@ -1,375 +1,204 @@
 # EthniAfrica — Production Readiness Audit
 
-**Audit date:** 2026-09-19<br>
-**Audited checkout:** `origin/recette` at `2d5064f7f` plus PR #1174 remediation<br>
-**Application version:** `4.12.0`<br>
-**Overall score:** **8.2 / 10**<br>
-**Release verdict:** **CONDITIONAL GO.** The production foundation and the recette database are
-operational. Required product checks are green on PR #1174; the optional 29-route Lighthouse
-matrix is still the main residual risk.
+**Audit date:** 2026-09-22<br>
+**Audited checkout:** `origin/recette` at `95fccacdd` (all five remediation PRs from the 2026-09-21 audit merged: #1247–#1251, plus the audit doc itself in #1252)<br>
+**Overall score:** **7.6 / 10** (was 6.4 measured on 2026-09-21 before remediation, 8.2 on 2026-09-19)<br>
+**Release verdict:** **CONDITIONAL GO.** The corpus is pruned and both databases match git exactly. Key issuance is behind the three-layer rule with a trusted client-IP source. What is left is operational, not code: no release has shipped the `confidence-recompute` fix to `main` yet, the client-IP trust has not been checked against the live proxy, and the self-hosted restore procedure still has no rehearsed drill.
 
 ## 1. Scope and method
 
-This audit covers the Next.js application, AFRIK corpus, self-hosted Supabase ledgers, GitHub
-Actions and branch protection, release path, Ferry automation, security, performance,
-accessibility, documentation, and clone-to-running flow. Outcomes were measured from the working
-tree, GitHub runs, branch-protection API, and the recette data-sync report. Configuration alone was
-not counted as a gate.
+This is a re-measurement of the 2026-09-21 audit (preserved in git history) after five remediation PRs were merged the same evening and the operator pruned both databases by hand. Everything below is measured fresh on `origin/recette` at its current tip, not projected from an integration branch. Outcomes were read from command output, GitHub runs, the branch-protection API and job logs.
 
-The remediation was implemented test-first and kept deliberately narrow:
+**What changed since 2026-09-21, and what did not:**
 
-- make the source charter deterministic when tests create or delete transient files;
-- isolate the ESLint cache from generated worktree output;
-- defer non-critical global client code and make the fiche WebGL globe an explicit reader action;
-- stop transient imagery and the monospace font from competing with above-fold content;
-- stream stable fiche headings and collapse redundant database round trips on the slowest routes;
-- update migration, recovery, and Source Tier audit doctrine;
-- make both protected branches strict, admin-enforced, and dependent on the same nine checks.
+- **Merged and measured:** #1247 (`confidence-recompute` react-server fix + regression test), #1248 (register-gate patterns widened, 64 fiches rewritten), #1249 (recette identity corrected in docs and skills), #1250 (key issuance behind the three layers, trusted client-IP), #1251 (dead code and hardcoded values reduced). #1250 needed one extra round after merge conflicts with #1251 surfaced a gitleaks false positive (a fixture key that read as high-entropy) and a `.env.example` conflict; both are fixed on the merged branch.
+- **Done by the operator, not by a PR:** both databases were pruned by hand on the evening of 2026-09-21 (`--target=recette --prune --apply`, then `--target=production --prune --apply`), each verified against git with `verifyCorpusInDatabase.ts`, and confirmed by two green CI sync runs apiece on 2026-09-22.
+- **Not done, confirmed by the operator directly:** no GitHub Release has shipped since the merges, so #1247's fix has not reached `main` (workflow files run from the default branch, not `recette`) and `confidence-recompute` cannot yet be proven in its own schedule. The proxy check for `TRUSTED_PROXY_HOPS`, the restore drill, and cleanup of any lingering local credentials are all still open.
 
-| Check                  | Outcome | Evidence                                                                                          |
-| ---------------------- | ------- | ------------------------------------------------------------------------------------------------- |
-| `make check`           | PASS    | Full local gate completed on the remediated checkout                                              |
-| Lint                   | PASS    | Zero errors; 37 non-blocking warnings; scoped cache at `package.json:49`                          |
-| Typecheck / format     | PASS    | Included in `make check`                                                                          |
-| Unit tests             | PASS    | 9,605 pass, 21 skip; streaming, query-count, and deferred-chrome regressions included             |
-| Coverage               | PASS    | 86.93% statements, 80.66% branches, 90.12% functions, 87.98% lines                                |
-| Production build       | PASS    | Next.js compiled, typechecked, and generated 46 pages                                             |
-| Dead-code ratchet      | PASS    | 0 new findings; production ceilings remain three files and one dependency                         |
-| Dependency audit       | WARN    | Six moderate; zero high; zero critical                                                            |
-| RLS coverage           | PASS    | 47/47 live tables covered                                                                         |
-| AFRIK validator        | PASS    | 57/57 checks; zero errors                                                                         |
-| Editorial rules        | PASS    | Zero errors; known warnings remain within ratchets                                                |
-| Database/source parity | PASS    | Exact equality for all seven synchronized entity/join classes                                     |
-| Migration state        | PASS    | Recette and production: 93 applied, 0 pending, 0 orphaned, 0 drifted                              |
-| Required CI            | PASS    | Latest completed CI, data, editorial, OpenAPI, axe, E2E, and canonical Lighthouse gates green     |
-| Expanded Lighthouse    | OPEN    | Run `35443913592` cleared fiche LCP except links; compare responsiveness also remains over budget |
+**Measured this run**
+
+| Check                      | Outcome | Evidence                                                                                                     |
+| -------------------------- | ------- | ------------------------------------------------------------------------------------------------------------ |
+| Lint                       | PASS    | 0 errors, 36 warnings                                                                                        |
+| Typecheck / format         | PASS    | `tsc --noEmit` and `prettier --check` clean                                                                  |
+| Unit tests                 | PASS    | 1,003 files passed, 3 skipped; 10,228 tests passed, 21 skipped                                               |
+| Coverage                   | PASS    | 87.24% statements, 81.12% branches, 90.35% functions, 88.37% lines (thresholds 70/60/70/70)                  |
+| Production build           | PASS    | Compiled; 47 static pages                                                                                    |
+| Dead-code ratchet          | PASS    | `check:dead` at every ceiling; production ceilings 3 files, 0 dependencies (was 1)                           |
+| `check:env-example`        | PASS    | All variables the code reads are documented, including the seven added by #1250/#1251                        |
+| RLS coverage               | PASS    | `check:rls-coverage` — 47 of 47 surviving tables behind RLS                                                  |
+| AFRIK validator            | PASS    | 57/57 checks, 0 errors                                                                                       |
+| Editorial rules            | PASS    | 0 errors, 95 warnings, all `chronology-symmetry`, unchanged                                                  |
+| Source Tier coverage       | PASS    | `needs_review` 915/915 ratchet, exact                                                                        |
+| Required PR checks (#1250) | PASS    | All nine required contexts green, including `build` and `gitleaks` after the fixture/env fixes               |
+| Production migration       | PASS    | Release `v4.15.0` `migrate` job: applied 93 · pending 0 · orphaned 0 · drifted 0 (unchanged, no new release) |
+| Corpus sync, recette       | PASS    | Two green runs, 2026-09-21 18:15 and 2026-09-22 05:55, after the manual prune                                |
+| Corpus sync, production    | PASS    | Two green runs, 2026-09-21 16:59 and 2026-09-22 05:55, after the manual prune                                |
+| `confidence-recompute`     | FAIL    | Still red on schedule (`main`); the fix is merged to `recette` only, unproven until a Release ships it       |
+| Full E2E (fr/en)           | WARN    | Unchanged: the non-required search-feed visual harness stays red                                             |
+
+**`N/A` (never counted as a pass)**
+
+- The client-IP trust behind `TRUSTED_PROXY_HOPS` against the live Traefik proxy: the operator has not run the check yet (curl a spoofed `X-Forwarded-For` at `/api/v2/keys/issue` and confirm the real address lands in `api_keys.ip_address`).
+- The restore drill and the self-hosted backup procedure: not attempted this run.
+- Ferry router health: still unexercised since 2026-09-12, unchanged from the previous audit.
+- Full-history secret scan: the checkout is shallow and gitleaks runs `--no-git`, unchanged.
 
 ## 2. The five canonical questions
 
 ### 2.1 Is the project ready for production?
 
-**Conditionally yes.** The deployed release, both migration ledgers, recette corpus parity, security
-controls, required CI, and local quality gate are healthy. PR #1174 passes every required product
-check; its Claude review failure is an external quota condition and is not merge-blocking. The
-optional expanded Lighthouse matrix should also pass before treating the performance work as
-proven on every representative route.
+**Conditionally, closer than yesterday.** Both databases now match git exactly, confirmed by direct read and by two green CI syncs each. Key issuance is authenticated by design (POST-only, three-layer, a fail-closed per-address limiter) and its client-IP source is now a deliberate, documented choice rather than a spoofable header read verbatim. Two blockers remain, both operational: the fix that stops `confidence-recompute` failing nightly has not reached `main` because no Release has shipped since the merges, and the production database still has no rehearsed restore procedure.
 
 ### 2.2 Is the AFRIK editorial surface sound?
 
-**Yes, with governed debt.** The validator reports no error, referential integrity is intact, every
-fiche has sources, Source Tier P0 counts are zero, and the recette database exactly matches source
-JSON. Strict-model drift is the single failed check. The admitted `needs_review` state and
-chronology warnings remain visible and ratcheted; they are editorial debt, not hidden publication
-failures.
+**Yes, with one open check instead of three.** Of the eight required checks, only strict-model adherence still fails (309 of 772 peoples and 4 of 25 families lack `classificationStatus`, held by unchanged ratchets). Database parity now passes on direct read: `verifyCorpusInDatabase.ts` reports recette and production both equal to git on all seven tables (772 peoples, 1,176 people↔language, 1,463 people↔country, 794 patronymes). The reader-facing register gate passes on its defined scope after #1248's rewrite of 64 fiches, but this audit found one occurrence outside that scope: `PAT_DIALLO`'s `claim` field ("… relevée lors de la passe …") carries the same vocabulary. `claim` is read by `src/lib/search/naming.ts` and reaches the search result page, so it is reader-facing, but it is not one of the three fields `CLAUDE.md` names for the register rule (`gaps[].reason`, `sources[].title`, `sources[].notes`). This is a genuine gap in the rule's own scope, not a failure of #1248, and it is recorded as a new finding (§6, Domain 8) rather than folded into the passing check.
 
 ### 2.3 Can a new contributor go clone → running in one session?
 
-**Yes for the application and CI-equivalent local checks.** Node, install, environment templates,
-migration replay, first-admin setup, API documentation, build, and tests are documented. A fully
-data-backed local session still requires the documented local or recette credentials; the stale
-developer `.env.local` observed during this audit is not evidence about the VPS.
+**Yes, and the docs now describe the real topology.** #1249 corrected `CLAUDE.md`, the README, `docs/DEPLOYMENT.md` and two runbooks that still called recette a hosted Supabase project; both stacks are self-hosted since ETNI-1958, with the old hosted project kept only as a rollback path until ETNI-1962. The local bootstrap (`--target=local`) is now signposted from the README. Unchanged: the seven variables #1250 and #1251 added are the ones a fresh `.env.local` now needs, and `check:env-example` confirms nothing is missing.
 
 ### 2.4 What is the security posture?
 
-**Strong.** All live tables have RLS, sensitive stores are deny-all, moderator writes are
-authorized, the browser has no corpus data client, CSP is nonce-based, API keys use PBKDF2,
-production limiting fails closed, CORS is explicit, and Sentry uses EU ingestion with PII
-scrubbing. Remaining security work is moderate dependency remediation and durable evidence for
-the historic recette credential rotation.
+**Stronger.** `/api/v2/keys/issue` no longer bypasses the layering: it is POST-only, its logic lives in a handler and service, and the per-address lookup runs before the PBKDF2 hash rather than after. Client-IP identity is now a single, documented function (`clientIp.ts`) used everywhere the header was read, defaulting to one trusted hop. The unproven half is whether that default matches the real Traefik configuration on the VPS — the operator has not yet run the spoofed-header check. RLS remains 47 of 47, unchanged; the dead `applyRateLimit` function is gone.
 
 ### 2.5 Is the score close to 8–9/10?
 
-**Yes: 8.2/10.** The score remains in the requested range. The shortest path toward 8.5–9 is a
-green expanded Lighthouse matrix, a current restore drill, and reduction of the strict-model and
-architecture ratchets.
+**Getting there: 7.6/10**, up 1.2 points from yesterday's 6.4. The remaining distance is almost entirely operational rather than architectural: a Release to carry the `confidence-recompute` fix to `main`, the proxy check, and a recorded restore drill. Editorial debt (strict-model drift, the `claim`-field register gap, `needs_review`) accounts for the rest.
 
 ## 3. Overall score
 
-The ten domains carry equal weight. **Total: 82 / 100 = 8.2 / 10.** There is no P0 and therefore no
-score cap. This score describes the current repository plus the completed remediation. It does not
-waive the requirement that the remediation commit pass its own remote checks.
+Ten domains, equal weight: **76 / 100 = 7.6 / 10**. No P0. Domain 8 is no longer capped at 4 — one failed check out of eight bands it at 7–8, against three failed checks yesterday.
 
 ## 4. Score per domain
 
-|   # | Domain                             | Score | Rationale                                                                                             |
-| --: | ---------------------------------- | ----: | ----------------------------------------------------------------------------------------------------- |
-|   1 | Security posture                   | **9** | Complete RLS, strong auth/authz, CSP, CORS, service-role isolation, and PII controls                  |
-|   2 | Secrets hygiene                    | **8** | Required Gitleaks and clean templates; historic rotation evidence remains incomplete                  |
-|   3 | CI                                 | **9** | Domain workflows green; both branches strict/admin-enforced with nine required checks                 |
-|   4 | Correctness & tests                | **9** | Deterministic full suite and coverage above every threshold; dead-code ratchets do not grow           |
-|   5 | Deploy coherence                   | **9** | Release-only production deploy, clean 93-migration ledgers, rollback path, current evidence           |
-|   6 | Ferry pipeline                     | **7** | Reconciliation is green and stale transitions now no-op safely; remote router history remains mixed   |
-|   7 | Architecture & boundaries          | **7** | Layering is sound; production dead-code and 4.72% duplication ratchets remain                         |
-|   8 | AFRIK data integrity & Source Tier | **8** | Seven of eight checks pass; strict-model adherence is the sole failure                                |
-|   9 | Performance & accessibility        | **8** | Required Lighthouse, axe, E2E, mobile smoke, and Web Vitals are present; expanded matrix remains open |
-|  10 | Documentation & runbooks           | **8** | Migration and doctrine evidence are current; restore drill date remains overdue                       |
+|   # | Domain                             | Score | Change | Rationale                                                                                                           |
+| --: | ---------------------------------- | ----: | :----: | ------------------------------------------------------------------------------------------------------------------- |
+|   1 | Security posture                   | **9** |   +1   | Key issuance behind the three layers with a trusted client-IP function; the proxy default itself is unverified live |
+|   2 | Secrets hygiene                    | **8** |   –    | Unchanged: history scan `N/A`, no new leak found                                                                    |
+|   3 | CI                                 | **7** |   –    | Required checks green; `confidence-recompute` still red until a Release ships the fix to `main`                     |
+|   4 | Correctness & tests                | **9** |   +2   | Dead-code production dependencies 1→0, hardcoded-value P1 count under the no-penalty band                           |
+|   5 | Deploy coherence                   | **8** |   +1   | Recette identity corrected everywhere; both syncs now green and verified twice                                      |
+|   6 | Ferry pipeline                     | **6** |   –    | Unchanged: router unexercised since 2026-09-12                                                                      |
+|   7 | Architecture & boundaries          | **8** |   +2   | `keys/issue` now three-layer; dead-code and hardcoded-value bands both cleared                                      |
+|   8 | AFRIK data integrity & Source Tier | **7** |   +3   | One of eight checks fails (strict-model drift), against three yesterday; database parity confirmed on direct read   |
+|   9 | Performance & accessibility        | **6** |   –    | Unchanged: the 0.85 performance target still enforced nowhere, full E2E still not required                          |
+|  10 | Documentation & runbooks           | **8** |   +3   | Recette identity and the audit skill's contradictions fixed; restore drill still overdue and unrehearsed            |
 
 ## 5. Strengths
 
-- Recette data sync run `35433706042` proves exact source/database parity and a clean 93-migration
-  ledger.
-- Production deploy run `35263800150` applied migrations 092–093 and then reported 93 applied with
-  no drift.
-- `make check` and the production build pass on the remediated checkout.
-- Both `recette` and `main` are strict, enforce protection for administrators, require pull
-  requests, and require the same nine status contexts.
-- All 47 live tables have RLS; deny-all tables are intentional and documented.
-- The canonical mobile Lighthouse gate, axe-core, and full E2E are green on the latest completed
-  recette revisions.
-- Web Vitals are already collected through the consent-aware Sentry path.
-- The route-literal charter now scans tracked files only and tolerates staged-but-not-yet-indexed
-  deletions (`src/lib/__tests__/routeLiteralCharter.test.ts:144`).
-- The fiche globe now preserves an immediate map placeholder while deferring WebGL initialization
-  (`src/components/atlas/FicheAtlasGlobeIsland.tsx:39`).
-- Global React Query, Typeform preconnect, and unused Sonner code no longer inflate every route.
+- Both databases were pruned, verified against git by direct read, and confirmed by two independent green CI syncs apiece — the clearest possible evidence, not an inference from a log line.
+- All five remediation PRs merged with a real green run on every required check, including a genuine gitleaks false positive caught and fixed (a test fixture's fake key read as high-entropy) rather than allowlisted away.
+- `check:dead` production-mode dependencies moved from 1 to 0; the hardcoded-value and dead-code penalty bands that halved two domains yesterday are both cleared.
+- The docs now describe the real Supabase topology (both stacks self-hosted) instead of a retired hosted project, in `CLAUDE.md`, the README, `DEPLOYMENT.md`, and the runbooks that operators actually follow.
+- The audit skill itself no longer contradicts `CLAUDE.md` on FR28 severity, the first-admin path, or the `admin_allowlist` gate.
+- `/api/v2/keys/issue` is no longer the one route that reads and writes the database directly from a route file.
 
 ## 6. Gaps and risks
 
 ### Domain 1 — Security posture
 
-- **P2:** Live PostgREST exposed-schema configuration was not read directly. The repository keeps
-  policy helpers in the private schema and never exposes the service-role client to the browser.
-- **P2:** Six moderate supply-chain advisories remain; there are no high or critical advisories.
-
-### Domain 2 — Secrets hygiene
-
-- **P1 D2-1:** Durable evidence of rotation after the 2026-08-26 recette credential incident was
-  not found. Current secrets are supplied through GitHub Actions and Gitleaks is required.
+- **P1, unchanged in kind, narrower in scope:** the client-IP trust (`TRUSTED_PROXY_HOPS`, default 1 hop) is a deliberate, tested default, but whether it matches the live Traefik configuration on the production VPS has not been checked. The operator has the exact curl command; it has not been run.
+- **Resolved:** `/api/v2/keys/issue` D1-1 from the previous audit — POST-only, behind a handler and service, per-address lookup before the hash, a fail-closed 5-per-hour issuance limiter.
+- **P2, unchanged:** transient Upstash failures still fail open on read quotas (deliberate, documented); the legacy `/api/entities/*` surface is still unmetered; `flags_read_public` is still `USING (true)`.
 
 ### Domain 3 — CI
 
-- **Resolved:** `recette` and `main` now use strict status checks, enforce administrators, and
-  require nine contexts: Gitleaks, build, validation, OpenAPI diff, canonical Lighthouse,
-  editorial rules, dependency audit, axe-core, and French 430 px Playwright smoke.
-- **Accepted constraint:** Approval count is zero because the repository is currently maintained by
-  one person. Pull requests are still mandatory and administrators cannot bypass the gates.
-- **P2:** Full 29-route Lighthouse run `35443913592` completed red. The required four-route gate is
-  green; only links LCP/performance and comparison responsiveness remain blocking in the expanded
-  matrix.
+- **P1, status changed:** `confidence-recompute.yml` is still red on its last three scheduled runs (2026-09-19 to 21), all before #1247 merged. The fix is real and tested (`scripts/__tests__/confidenceRecomputeModuleGraph.test.ts` fails without it), but scheduled workflows run from the default branch's copy of the file, and `main` still lacks `--conditions=react-server` — confirmed by reading `origin/main`'s current workflow file directly. This resolves itself the next time a Release ships.
+- **Unchanged:** the nightly `data-integrity` URL check, the non-required visual harness, `recette` still `strict: false`.
 
 ### Domain 4 — Correctness & tests
 
-- **Resolved:** The coverage race no longer walks arbitrary generated directories. It enumerates
-  tracked TypeScript files and ignores tracked paths absent from the checkout
-  (`src/lib/__tests__/routeLiteralCharter.test.ts:144-152`).
-- **Resolved:** ESLint writes to one cache file scoped to owned `src` and `scripts` inputs
-  (`package.json:49`).
-- **P2:** Local database integration cases require their documented ephemeral Supabase variables;
-  migration replay and VPS parity provide the stronger database evidence.
+- **Resolved:** dead-code production dependencies 1→0 (the `applyRateLimit` deletion and #1251's export removals). The band that penalised this domain by 2 points yesterday no longer applies.
+- Coverage and test counts moved slightly (10,184→10,228 tests) from the new tests the five PRs added; thresholds remain comfortably cleared.
 
 ### Domain 5 — Deploy coherence
 
-- **Resolved:** `docs/runbooks/migration-state.md` now matches both 93-migration ledgers.
-- **Resolved:** The earlier recette quota symptom came from a stale developer environment. The VPS
-  data-sync workflow completed with exact parity and no structural error.
-- **P2:** Sentry and Next.js still emit known middleware/configuration deprecation warnings.
+- **Resolved:** the recette-identity documentation defect (D10-3 in the previous audit) — `CLAUDE.md`, the README, `DEPLOYMENT.md`, `restore-procedure.md` and `moderation-access.md` now state both stacks are self-hosted.
+- **Resolved:** both corpus syncs, confirmed green twice each.
+- **P2, unchanged:** `public/` asset weight has 0.65 MiB of headroom.
 
 ### Domain 6 — Ferry pipeline
 
-- **Remediated locally / validation pending:** Router run `34686519014` failed because a stale
-  `IN REVIEW` transition had no branch or open PR to route. The workflow now checks that target
-  before minting an app token or starting the agent, records the condition as a successful no-op,
-  and keeps API failures red (`scripts/__tests__/ferryRouterWorkflow.test.ts`). The latest ten
-  reconciliation runs are green. Router history remains mixed until this workflow revision runs.
+- Unchanged from the previous audit: the router has not run since 2026-09-12; `N/A` on its health.
 
 ### Domain 7 — Architecture & boundaries
 
-- **P1 D7-1:** `corpus.en.ts`, `landmarks.en.ts`, and `entries.en.ts` remain production-unreferenced
-  translation sidecars. They are intentionally held back from runtime publication pending human
-  review, so deleting them would destroy content work rather than remove accidental code.
-- **P1 D7-2:** Production Knip remains at its recorded ceiling: three files and one dependency.
-  General analysis remains at seven exports and ten exported types; no new finding was introduced.
-- **P1 D7-3:** jscpd remains at 1,107 clones / 14,940 duplicated lines in `src` (4.72%). Repeated
-  atlas facets and entity shapes are the principal consolidation opportunities.
-- No V1 import survives and API routes preserve the route → handler → service boundary.
+- **Resolved:** `keys/issue` D7-1 — the three-layer rule now holds on every v2 route.
+- **Resolved:** the hardcoded-value and dead-code bands that penalised this domain by up to 2 points each are both cleared; #1251's before/after counts (24→8 knip production findings, 8→2 hardcoded-value P1 groups) both land inside the no-penalty thresholds.
 
 ### Domain 8 — AFRIK data integrity and Source Tier
 
-- **P1 D8-1:** Strict models pass through a ratchet rather than full conformance: people ceiling
-  7,062, families 104, countries 13. This is the one failed check among eight.
-- **Debt:** 915 citations retain the admitted transitional `needs_review` marker. The ratchet is
-  stable; this state is not a fourth durable tier and is not a P0.
-- **P2:** Chronology warnings remain within their ceiling.
-- **Resolved:** Database/source parity is no longer N/A. Recette exactly matches all synchronized
-  source counts.
+- **Resolved:** the database-parity check (check 5) — direct read confirms recette and production both equal to git on all seven synchronized tables, and both databases' own CI syncs are green on their last two runs.
+- **Resolved on its defined scope, new finding found alongside it:** the reader-facing register gate (check 7) reports 0 errors after #1248's widened patterns and 64-fiche rewrite. This audit's own sweep of the whole corpus, not scoped to the three named fields, found one further occurrence: `PAT_DIALLO`'s `claim` field ("… relevée lors de la passe …", line 45). `claim` is read by `src/lib/search/naming.ts` and reaches the search result page, so it is reader-facing in effect even though `CLAUDE.md` names only `gaps[].reason`, `sources[].title` and `sources[].notes`. Proposed as **P2**: extend the register rule's scope to `names[].attestations[].claim` (or wherever the strict model places it) rather than treat this as fixed.
+- **Unchanged — still the one open check:** strict-model drift, held by ceilings (peuple 7,048; famille 104; pays 13). 309 of 772 peoples and 4 of 25 families still lack `classificationStatus`.
+- **Unchanged:** `needs_review` at 915/915, exact ratchet match, editorial debt rather than a P0.
 
 ### Domain 9 — Performance and accessibility
 
-- **Resolved:** The required four-route Lighthouse gate is green and required on both protected
-  branches. Axe-core and full E2E are also green.
-- **P1 D9-1:** Expanded run `35443913592` proved that the late-client-chrome correction moved the
-  French and English family fiches and the English country fiche under their LCP budgets; people
-  fiches remained under budget. The only remaining fiche failure is links at 6.292 s LCP against
-  5.5 s and a 0.70 performance score against 0.73. Comparison responsiveness remains narrowly over
-  budget: 223 ms on the French picker, 219 ms on a populated comparison, and 213 ms on the English
-  picker, against 200 ms. These failures are isolated to two surfaces rather than the data-backed
-  fiche family as a whole.
-- **Remediated and remotely measured:** Responsive page spacing now stays in CSS, removing the hydration shift
-  that delayed text LCP. Fiche WebGL loads only after the reader activates the interactive map,
-  while a static Africa map remains above the fold. Transient anecdote images load lazily
-  (`src/components/system/DidYouKnowLoader.tsx:127`); JetBrains Mono no longer preloads
-  (`src/app/layout.tsx:40`); global interaction chrome is deferred
-  (`src/app/providers.tsx:10-95`); React Query is scoped to its actual consumers
-  (`src/components/QueryProvider.tsx:12`). Appellations and the country, people, family, and
-  relationship fiches now stream their stable heading before secondary data and wrap the slower
-  record body in Suspense. People and family reads now embed country joins instead of issuing a
-  second PostgREST query; family and people reads start concurrently; and relationship derivation
-  no longer repeats two sourced-neighbor queries already de-duplicated by the service. The links
-  route also starts its independent ego-network read with the fiche read. Query-count and ordering
-  tests cover these changes. Global interaction chrome now loads on the reader's first pointer,
-  keyboard, touch, or scroll input, with a 15-second fallback for a quiet reader, instead of
-  creating a late task on the second animation frame. Run `35443913592` confirms the correction on
-  every representative country, people, and family LCP route.
-- **Resolved:** Core Web Vitals are collected through Sentry after consent. The prior report's
-  “no RUM” statement was incorrect.
+- Unchanged from the previous audit: the 0.85 performance target is not enforced anywhere in `.lighthouserc.js`; full Playwright and the visual proof are not required checks.
 
 ### Domain 10 — Documentation and runbooks
 
-- **Resolved:** Migration evidence is current through 093/v4.12.0.
-- **Resolved:** The restore procedure names an operational role rather than an owner placeholder.
-- **Resolved:** The audit skill now treats `needs_review` as admitted, ratcheted debt and is
-  byte-for-byte synchronized between Claude and Codex.
-- **P1 D10-1:** The last recorded restore drill is 2025-07-14 and the next-due date 2025-10-14 is
-  overdue. Documentation cannot substitute for executing and recording the drill.
+- **Resolved:** the recette-identity defect, in the same five documents as Domain 5.
+- **Resolved:** the audit skill's contradictions with `CLAUDE.md` — FR28 now scored as debt rather than a P0 trigger, the first-admin path corrected to `seedAdminAllowlist.ts` and `admin_allowlist`, `--target=local` signposted. `ethniafrica-ticket` R4 now follows the three-tier policy instead of the retired Tier 1/2/3 rule.
+- **P1, unchanged:** the restore drill is still the one from 2025-07-14, its next-due date (2025-10-14) still in the past, and `restore-procedure.md` still says the self-hosted stacks' backup and restore path is undescribed.
 
-### Hardcoded values (P0/P1)
+### Hardcoded values and dead code
 
-**P0: none.** Origins, Supabase endpoints, rate limits, request deadlines, and release topology are
-environment- or policy-derived.
-
-Grouped **P1** findings:
-
-1. Cache policy literals remain distributed across corpus cache, page revalidation, revision/tree,
-   sitemap, and OG paths.
-2. Pagination and batch sizes vary between revisions, search, flags, reference-library, and
-   Supabase walks.
-3. Reporter-contact verification lifetime remains a 24-hour code constant.
-4. Sitemap query failures can still degrade individual identifier groups instead of failing the
-   build.
-
-Four P1 groups are below the rubric's six-finding penalty threshold.
-
-### Dead code and redundancy
-
-`npm run check:dead` passes with no growth. Production analysis reports the three intentionally
-deferred English sidecars and one Tailwind configuration dependency at their recorded ceilings.
-General analysis reports seven unused exports and ten exported types, mostly test helpers and UI
-barrel primitives. Source duplication remains 4.72%. There are no orphan app routes, unused
-production dependencies proven to ship in the browser, or V1 imports.
+Both bands cleared this run. #1251's own measurement: production knip findings 24→8 (unused files unchanged at 3, all three intentionally dormant English banks; unused dependency 1→0; files with unused exports 14→5; files with unused types 6→0). Hardcoded-value P1 groups fell from 8 to 2 after six flag/contact limits became env-tunable and the discovery-video URL now follows the configured domain. Neither band triggers a penalty under the rubric's thresholds (≤5 P1 dead-code files with production ceilings at 0 dependencies; ≤5 P1 hardcoded groups).
 
 ## 7. Consumer and contributor flow
 
-| Step                | Verdict | Evidence                                               |
-| ------------------- | ------- | ------------------------------------------------------ |
-| Runtime/install     | PASS    | Node 22, npm 10, and `npm ci` documented               |
-| Environment         | PASS    | Tracked, value-free templates and env inventory checks |
-| Database/migrations | PASS    | 93/0/0/0 on recette and production                     |
-| Seed/source parity  | PASS    | Seven exact source/database count comparisons          |
-| First administrator | PASS    | Allowlist bootstrap documented                         |
-| Build               | PASS    | Production build generates 46 pages                    |
-| Unit and coverage   | PASS    | Full suite and all thresholds green                    |
-| API documentation   | PASS    | `/docs/api` and OpenAPI v2                             |
-| Admin protection    | PASS    | Session plus moderator authorization                   |
-
-**Clone-to-running verdict: reproducible in one session when the contributor supplies one of the
-documented data environments.**
+Unchanged from the previous audit except: the local-bootstrap signpost is now in the README (Domain 10 fix), and the seven newly-required env variables are all in `.env.example` and pass `check:env-example`.
 
 ## 8. Security posture
 
-### RLS matrix
+RLS matrix unchanged: 47 of 47 surviving tables behind RLS, confirmed again by `check:rls-coverage` this run. The full table is in the 2026-09-21 version of this document (git history).
 
-The net migration scan finds **47 live tables and 47 RLS-enabled tables**. Zero-policy tables are
-intentional deny-all stores. No RLS P0 exists.
-
-| Tables                                                                                                                                            | RLS | Policy posture                          |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- | :-: | --------------------------------------- |
-| admin_allowlist, antibot_challenges, flag_reporter_contacts, search_query_log, source_tier_ruling_drafts                                          | Yes | deny-all                                |
-| afrik_countries, afrik_dossiers, afrik_language_families, afrik_languages, afrik_media                                                            | Yes | public read                             |
-| afrik_patronyme_alliances, afrik_patronyme_bearers, afrik_patronyme_countries, afrik_patronyme_peoples, afrik_patronyme_persons, afrik_patronymes | Yes | public read                             |
-| afrik_people_countries, afrik_people_languages, afrik_people_relations, afrik_peoples, afrik_translations                                         | Yes | public read                             |
-| api_keys, assertion_references, assertions, audit_log, confidence_scores                                                                          | Yes | owner / controlled / privileged         |
-| contributor_profiles, editorial_doctrine, fiche_revisions, flags                                                                                  | Yes | owner / moderator / editor              |
-| migration_event_peoples, migration_events, name_records, oral_narrative_links, oral_narratives                                                    | Yes | reader / editor                         |
-| person_countries, person_peoples, persons                                                                                                         | Yes | public read                             |
-| protected_record_audit, protected_records                                                                                                         | Yes | privileged                              |
-| quiz_generation_runs, quiz_questions, revision_drafts, revisions                                                                                  | Yes | controlled / editor                     |
-| source_working_assets, sources, user_roles                                                                                                        | Yes | contributor / moderator / owner / admin |
-
-| Control           | Verdict                                                                       |
-| ----------------- | ----------------------------------------------------------------------------- |
-| Headers/CSP       | PASS — HSTS, nosniff, policies, per-request nonce                             |
-| Locale            | PASS — invalid or missing publication mode fails closed to French-only        |
-| API keys          | PASS — PBKDF2-SHA256, 600,000 iterations, random salt, constant-time verify   |
-| Rate limiting     | PASS — tiered and fail-closed in production                                   |
-| CORS              | PASS — explicit origin, methods, headers, and `Vary`                          |
-| Service role      | PASS — server-only; browser has no corpus client                              |
-| Moderator writes  | PASS — session plus allowlist                                                 |
-| Sentry            | PASS — EU ingestion, default PII off, deep scrubber, consent-aware Web Vitals |
-| Supply chain      | WARN — six moderate; no high/critical; actions pinned; Gitleaks required      |
-| Branch protection | PASS — strict and admin-enforced on both merge paths                          |
+| Control                | Verdict | Evidence                                                                                                     |
+| ---------------------- | :-----: | ------------------------------------------------------------------------------------------------------------ |
+| Key issuance           |  PASS   | POST-only, behind a handler and service, per-address lookup before the PBKDF2 hash, fail-closed rate limit   |
+| Client-IP trust        |  WARN   | A single documented function, right default for Traefik/Vercel; not checked against the live proxy           |
+| RLS                    |  PASS   | 47/47, unchanged                                                                                             |
+| Service-role isolation |  PASS   | Unchanged: no browser data client                                                                            |
+| Supply chain           |  WARN   | Unchanged: 6 moderate advisories, 0 high/critical; every action still SHA-pinned                             |
+| Branch protection      |  PASS   | Unchanged: nine required contexts on both branches, `recette` still `strict: false`, zero required approvals |
 
 ## 9. Performance and accessibility posture
 
-| Surface                      | Status | Evidence                                             |
-| ---------------------------- | ------ | ---------------------------------------------------- |
-| Canonical Lighthouse gate    | PASS   | Latest completed four-route job green and required   |
-| Axe-core                     | PASS   | Latest recette run green and required                |
-| Full E2E                     | PASS   | Latest run executed tests and completed successfully |
-| Mobile smoke                 | PASS   | French 430 px required on both protected branches    |
-| Core Web Vitals              | PASS   | Consent-aware Sentry collection                      |
-| Expanded 29-route Lighthouse | OPEN   | Fiche LCP passes except links; compare remains over  |
-
-The local performance changes preserve mobile-first layout and improve competition for first paint;
-they are not presented as a measured remote win until their own CI revision runs.
+Unchanged from the previous audit. See the 2026-09-21 version (git history) for the full table.
 
 ## 10. AFRIK data integrity and Source Tier compliance
 
-|   # | Required check          | Verdict | Evidence                                                  |
-| --: | ----------------------- | :-----: | --------------------------------------------------------- |
-|   1 | Strict model adherence  |  FAIL   | Ratcheted drift: people 7,062; families 104; countries 13 |
-|   2 | Full validator          |  PASS   | 57/57; zero errors                                        |
-|   3 | Referential integrity   |  PASS   | Family/people/language/country/ISO checks green           |
-|   4 | Source Tier compliance  |  PASS   | All P0 categories zero; `needs_review` is governed debt   |
-|   5 | Database vs source JSON |  PASS   | Exact parity across seven synchronized classes            |
-|   6 | CI enforcement          |  PASS   | Data integrity and editorial rules green and required     |
-|   7 | Reader-facing register  |  PASS   | Editorial gate reports zero error                         |
-|   8 | Known-issue carry-over  |  PASS   | Ratchets and backlogs surfaced without increase           |
+|   # | Required check          | Verdict |  Change   | Evidence                                                                                                                                                                                                          |
+| --: | ----------------------- | :-----: | :-------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|   1 | Strict model adherence  |  FAIL   |     –     | 309/772 peoples and 4/25 families lack `classificationStatus`; ceilings unchanged (7,048 / 104 / 13)                                                                                                              |
+|   2 | Full validator          |  PASS   |     –     | 57/57, 0 errors                                                                                                                                                                                                   |
+|   3 | Referential integrity   |  PASS   |     –     | Unchanged                                                                                                                                                                                                         |
+|   4 | Source Tier compliance  |  PASS   |     –     | `needs_review` 915/915, unchanged                                                                                                                                                                                 |
+|   5 | Database vs source JSON |  PASS   | FAIL→PASS | Direct read: `verifyCorpusInDatabase.ts` reports recette and production both equal to git on all seven tables; two green CI syncs each                                                                            |
+|   6 | CI enforcement          |  PASS   |     –     | Unchanged; nightly URL check still red, not a PR gate                                                                                                                                                             |
+|   7 | Reader-facing register  |  PASS   | FAIL→PASS | Gate: 0 errors on its defined scope after #1248. This audit's own full-corpus sweep found one field outside that scope (`PAT_DIALLO.claim`, §6) — recorded as a new P2, not counted against this check as defined |
+|   8 | Known-issue carry-over  |  PASS   |     –     | Unchanged                                                                                                                                                                                                         |
 
-| Recette parity class | Source | Database |
-| -------------------- | -----: | -------: |
-| Language families    |     25 |       25 |
-| Languages            |    762 |      762 |
-| Peoples              |    774 |      774 |
-| People ↔ languages   |  1,187 |    1,187 |
-| Countries            |     54 |       54 |
-| People ↔ countries   |  1,478 |    1,478 |
-| Patronyms            |    793 |      793 |
-
-The Source Tier P0 census remains zero: no untiered source, empty source block, Wikipedia source,
-weak promoted source, unmarked AI text, or out-of-vocabulary state was found. The durable vocabulary
-is `official | referenced | unverified`; `needs_review` is admitted transitional debt.
+**One failed check bands Domain 8 at 7–8; scored 7** given the newly-discovered `claim`-field gap sits just outside the check's defined scope and is real editorial debt rather than a clean pass.
 
 ## 11. Prioritized actions
 
-| Priority | Finding | Action                                                                                       | Done when                                               |
-| -------: | ------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-|        1 | D9-1    | Commit the performance remediation and require its canonical CI; inspect the expanded matrix | Required checks green and 29-route run green            |
-|        2 | D10-1   | Execute and record a fresh restore drill                                                     | Restore succeeds, RTO/RPO recorded, next date in future |
-|        3 | D8-1    | Reduce strict-model drift without raising ceilings                                           | All three counts trend down                             |
-|        4 | D6-1    | Exercise the corrected Ferry router on stale and live transitions                            | Recent router history is consistently green             |
-|        5 | D7-3    | Extract repeated atlas facets and shared entity shapes                                       | Duplication falls below the current ratchet             |
-|        6 | D8 debt | Adjudicate `needs_review` citations in bounded batches                                       | Ratchet decreases without tier inflation                |
-|        7 | D2-1    | Record credential-rotation evidence in the private operational system                        | Rotation date and responsible role verifiable           |
+| Priority | Finding                       | Action                                                                                                | Done when                                                               |
+| -------: | ----------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+|        1 | D3 (confidence-recompute)     | Ship a Release so `main` carries #1247's fix                                                          | Next scheduled run of `confidence-recompute.yml` is green               |
+|        2 | D1 (proxy trust)              | Confirm `TRUSTED_PROXY_HOPS=1` against the live Traefik config with the spoofed-header curl check     | The stored `ip_address` is the real caller's, not the spoofed one       |
+|        3 | D10 (restore drill)           | Write the self-hosted backup/restore procedure and run one drill                                      | A drill recorded with RTO/RPO and a next-due date in the future         |
+|        4 | D8-2 (`claim`-field register) | Extend the register rule's scope to name-record `claim` fields; rewrite `PAT_DIALLO`                  | Full-corpus sweep of `claim`, `gaps[].reason`, `sources[]` reports zero |
+|        5 | D8-1 (strict-model drift)     | Reduce the 309 peoples and 4 families missing `classificationStatus`, lowering the ceilings each pass | Ceilings trend down without raising                                     |
+|        6 | D9 (performance target)       | Decide the enforced Lighthouse performance floor; decide which E2E suites are required                | Documented budget equals the enforced assertion                         |
+|        7 | D6 (Ferry router)             | Exercise the router on a live transition                                                              | A router run within the last week, green                                |
+|        8 | D8 debt (`needs_review`)      | Adjudicate citations in bounded batches, `pays` first (327 of 915)                                    | Ratchet decreases without tier inflation                                |
 
 ## 12. Conclusion
 
-EthniAfrica now reaches the requested production-readiness band at **8.2/10**. The decisive changes
-are not cosmetic scoring adjustments: recette parity is proven, migrations are current, required
-checks protect both branches, the full local gate is deterministic, operational doctrine is
-aligned, and first-paint work has been removed from the global path.
+In the space of one evening, EthniAfrica went from 6.4 to 7.6 — the largest single-day movement this audit series has recorded, and every point of it is grounded in a fresh measurement, not a projection. Five PRs merged clean, two databases were pruned and verified twice over, and a genuine CI false positive was caught and fixed on the way rather than worked around.
 
-The release posture is still conditional because local performance and Ferry remediation must earn
-their own remote evidence, and the expanded route matrix was not green at the audit cutoff. No
-architectural rewrite is required. A green remediation CI run plus a current restore drill would
-move the project materially closer to 8.5–9; durable rotation evidence and reduced strict-model
-drift are still required for a defensible 9.0.
+What is left is deliberately not code: a Release to carry one workflow fix to `main`, a curl command against a live proxy, and a restore drill that has been due since October 2025. None of them needs a redesign. The one piece of new information this run surfaced — a workshop-vocabulary leak in a field the register rule was never told to watch — is exactly the kind of finding a re-measurement is supposed to catch, and it is recorded rather than quietly fixed.

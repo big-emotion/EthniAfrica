@@ -1,6 +1,7 @@
 import { createHash, randomBytes } from "node:crypto";
 
 import { logger } from "@/lib/api/logger";
+import { positiveIntFromEnv } from "@/lib/env";
 import { createAdminClient } from "@/lib/supabase/admin";
 import type { Language } from "@/types/shared";
 
@@ -12,7 +13,24 @@ import type { Language } from "@/types/shared";
  * finding. The report itself is already public either way — the link only ever
  * decides whether an address may be written to.
  */
-const VERIFICATION_TTL_MS = 24 * 60 * 60 * 1000;
+const DEFAULT_VERIFICATION_TTL_HOURS = 24;
+
+/**
+ * In whole hours, read per call: a deployment that wants links to outlive a
+ * weekend can say so without a rebuild. A malformed value keeps the default,
+ * because a typo must not mint links that never expire or expire at once.
+ */
+function verificationTtlMs(): number {
+  return (
+    positiveIntFromEnv(
+      process.env.FLAG_VERIFICATION_TTL_HOURS,
+      DEFAULT_VERIFICATION_TTL_HOURS
+    ) *
+    60 *
+    60 *
+    1000
+  );
+}
 
 /**
  * What happened when a reader followed their verification link.
@@ -67,7 +85,7 @@ export async function createReporterContact(
     email: address,
     token_hash: hashToken(token),
     locale: language,
-    expires_at: new Date(Date.now() + VERIFICATION_TTL_MS).toISOString(),
+    expires_at: new Date(Date.now() + verificationTtlMs()).toISOString(),
   });
 
   if (error) {

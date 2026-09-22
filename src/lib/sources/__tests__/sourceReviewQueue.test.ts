@@ -2,15 +2,25 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 
-import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 import {
-  buildSourceReviewQueue,
   citationKey,
   filterSourceReviewQueue,
+  type SourceReviewItem,
 } from "@/lib/sources/sourceReviewQueue";
 
+let workdir: string;
 let datasetRoot: string;
+
+// The queue is memoised per process and reads the corpus under
+// `process.cwd()`, so each test gets a fresh module pointed at a temp tree.
+async function readQueue(): Promise<SourceReviewItem[]> {
+  vi.resetModules();
+  const { readSourceReviewQueue } =
+    await import("@/lib/sources/sourceReviewQueue");
+  return readSourceReviewQueue();
+}
 
 function writeFiche(relativePath: string, sources: unknown[]) {
   const file = path.join(datasetRoot, relativePath);
@@ -21,7 +31,9 @@ function writeFiche(relativePath: string, sources: unknown[]) {
 const WPP = "ONU – World Population Prospects 2025";
 
 beforeEach(() => {
-  datasetRoot = fs.mkdtempSync(path.join(os.tmpdir(), "review-queue-"));
+  workdir = fs.mkdtempSync(path.join(os.tmpdir(), "review-queue-"));
+  datasetRoot = path.join(workdir, "dataset", "source", "afrik");
+  vi.spyOn(process, "cwd").mockReturnValue(workdir);
   writeFiche("pays/BEN.json", [
     { title: WPP, url: null, tier: "needs_review" },
     { title: "Déjà tranché", url: null, tier: "official" },
@@ -38,15 +50,16 @@ beforeEach(() => {
 });
 
 afterEach(() => {
-  fs.rmSync(datasetRoot, { recursive: true, force: true });
+  vi.restoreAllMocks();
+  fs.rmSync(workdir, { recursive: true, force: true });
 });
 
-describe("buildSourceReviewQueue", () => {
+describe("readSourceReviewQueue", () => {
   // A ruling names one exact title + url, so the queue has one card per pair,
   // listing every fiche it would apply to.
   // @req REQ-092
-  it("groups the citations awaiting review by exact title and url", () => {
-    const queue = buildSourceReviewQueue(datasetRoot);
+  it("groups the citations awaiting review by exact title and url", async () => {
+    const queue = await readQueue();
 
     expect(queue.map((item) => [item.title, item.url])).toEqual([
       [WPP, null],
@@ -62,8 +75,8 @@ describe("buildSourceReviewQueue", () => {
 
 describe("filterSourceReviewQueue", () => {
   // @req REQ-092
-  it("narrows by fiche kind, address, fiche and decision state", () => {
-    const queue = buildSourceReviewQueue(datasetRoot);
+  it("narrows by fiche kind, address, fiche and decision state", async () => {
+    const queue = await readQueue();
     const decided = new Set([citationKey(WPP, null)]);
 
     expect(

@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it } from "vitest";
 
-import { clearConsent, saveConsent } from "@/lib/consent";
+import { CONSENT_STORAGE_KEY, saveConsent } from "@/lib/consent";
 import { traceSampleRateUnderConsent } from "@/lib/sentry/consentedTracing";
 
 const RATE = 0.1;
@@ -21,7 +21,7 @@ function storeChoice(analytics: boolean, consentDate = new Date()) {
 
 describe("traceSampleRateUnderConsent", () => {
   afterEach(() => {
-    clearConsent();
+    localStorage.removeItem(CONSENT_STORAGE_KEY);
   });
 
   // @req REQ-046

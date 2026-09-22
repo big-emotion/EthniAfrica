@@ -47,8 +47,8 @@ vi.mock("@sentry/nextjs", () => ({
 import {
   getRateLimitIdentifier,
   getRateLimiter,
-  applyRateLimit,
   applyIpRateLimit,
+  applyKeyIssuanceRateLimit,
   evaluateRateLimit,
   _resetLimitersForTest,
 } from "@/lib/api/rate-limit";
@@ -101,9 +101,14 @@ describe("getRateLimitIdentifier", () => {
   });
 
   // @req REQ-059
-  it("uses first IP from x-forwarded-for chain", async () => {
-    const req = makeRequest({ ip: "1.2.3.4, 5.6.7.8" });
-    expect((await getRateLimitIdentifier(req)).identifier).toBe("ip:1.2.3.4");
+  // A caller who prepends addresses must not get a fresh quota per address.
+  it("buckets by the hop the proxy appended, not by what the client prepended", async () => {
+    const first = makeRequest({ ip: "1.2.3.4, 5.6.7.8" });
+    const second = makeRequest({ ip: "9.9.9.9, 5.6.7.8" });
+    expect((await getRateLimitIdentifier(first)).identifier).toBe("ip:5.6.7.8");
+    expect((await getRateLimitIdentifier(second)).identifier).toBe(
+      "ip:5.6.7.8"
+    );
   });
 
   // @req REQ-059
@@ -159,12 +164,14 @@ describe("getRateLimiter", () => {
     expect(limiter).not.toBeNull();
   });
 
-  it("initialises all three limiters with correct slidingWindow arguments", () => {
-    getRateLimiter(null); // triggers getLimiters() which calls slidingWindow for all tiers
+  // @req REQ-059
+  it("initialises every limiter with correct slidingWindow arguments", () => {
+    getRateLimiter(null); // triggers getLimiters() which calls slidingWindow for all limiters
     expect(Ratelimit.slidingWindow).toHaveBeenCalledWith(60, "1 m");
     expect(Ratelimit.slidingWindow).toHaveBeenCalledWith(600, "1 m");
     expect(Ratelimit.slidingWindow).toHaveBeenCalledWith(6000, "1 m");
-    expect(Ratelimit.slidingWindow).toHaveBeenCalledTimes(3);
+    expect(Ratelimit.slidingWindow).toHaveBeenCalledWith(5, "1 h");
+    expect(Ratelimit.slidingWindow).toHaveBeenCalledTimes(4);
   });
 
   it("reads tier RPMs and window from env vars when set", () => {
@@ -192,7 +199,7 @@ describe("getRateLimiter", () => {
   });
 });
 
-describe("applyRateLimit", () => {
+describe("evaluateRateLimit: the rejection it hands back", () => {
   beforeEach(() => {
     vi.clearAllMocks();
     _resetLimitersForTest();
@@ -210,7 +217,7 @@ describe("applyRateLimit", () => {
       reset: Date.now() + 60000,
     });
     const req = makeRequest({ ip: "1.2.3.4" });
-    const result = await applyRateLimit(req);
+    const result = (await evaluateRateLimit(req)).rejection;
     expect(result).toBeNull();
   });
 
@@ -223,7 +230,7 @@ describe("applyRateLimit", () => {
       reset: resetTime,
     });
     const req = makeRequest({ ip: "5.6.7.8" });
-    const result = await applyRateLimit(req);
+    const result = (await evaluateRateLimit(req)).rejection;
     expect(result).not.toBeNull();
     expect(result!.status).toBe(429);
     expect(result!.headers.get("Retry-After")).toBeDefined();
@@ -238,7 +245,7 @@ describe("applyRateLimit", () => {
   it("returns null (fail open) when Upstash throws, logs error, captures with Sentry", async () => {
     mockLimit.mockRejectedValue(new Error("Redis connection failed"));
     const req = makeRequest({ ip: "9.9.9.9" });
-    const result = await applyRateLimit(req);
+    const result = (await evaluateRateLimit(req)).rejection;
     expect(result).toBeNull();
     expect(mockLoggerError).toHaveBeenCalledWith(
       "Rate limit check failed",
@@ -250,7 +257,7 @@ describe("applyRateLimit", () => {
 
   it("returns null for admin tier API keys (unrestricted)", async () => {
     const req = makeRequest({ authHeader: "Bearer admin-key" });
-    const result = await applyRateLimit(req, "admin");
+    const result = (await evaluateRateLimit(req, "admin")).rejection;
     expect(result).toBeNull();
     expect(mockLimit).not.toHaveBeenCalled();
   });
@@ -264,7 +271,7 @@ describe("applyRateLimit", () => {
       reset: Date.now() + 60000,
     });
     const req = makeRequest({ authHeader: "Bearer public-key" });
-    await applyRateLimit(req);
+    await evaluateRateLimit(req);
     expect(mockLimit).toHaveBeenCalledWith(`key:${sha256Hex("public-key")}`);
   });
 
@@ -277,7 +284,7 @@ describe("applyRateLimit", () => {
       reset: Date.now() + 60000,
     });
     const req = makeRequest({ authHeader: "Bearer some-key" });
-    await applyRateLimit(req);
+    await evaluateRateLimit(req);
     expect(Ratelimit.slidingWindow).toHaveBeenCalledWith(600, "1 m");
   });
 
@@ -290,7 +297,7 @@ describe("applyRateLimit", () => {
       reset: Date.now() + 60000,
     });
     const req = makeRequest({ authHeader: "Bearer partner-key" });
-    await applyRateLimit(req, "partner");
+    await evaluateRateLimit(req, "partner");
     expect(mockLimit).toHaveBeenCalledWith(`key:${sha256Hex("partner-key")}`);
     expect(Ratelimit.slidingWindow).toHaveBeenCalledWith(6000, "1 m");
   });
@@ -303,7 +310,7 @@ describe("applyRateLimit", () => {
       reset: Date.now() + 60000,
     });
     const req = makeRequest({ ip: "10.0.0.1" });
-    await applyRateLimit(req);
+    await evaluateRateLimit(req);
     expect(mockLimit).toHaveBeenCalledWith("ip:10.0.0.1");
   });
 
@@ -314,7 +321,7 @@ describe("applyRateLimit", () => {
     vi.stubEnv("UPSTASH_REDIS_REST_URL", "");
     vi.stubEnv("UPSTASH_REDIS_REST_TOKEN", "");
     const req = makeRequest({ ip: "1.2.3.4" });
-    const result = await applyRateLimit(req);
+    const result = (await evaluateRateLimit(req)).rejection;
     expect(result).not.toBeNull();
     expect(result!.status).toBe(500);
   });
@@ -326,7 +333,7 @@ describe("applyRateLimit", () => {
     vi.stubEnv("UPSTASH_REDIS_REST_URL", "");
     vi.stubEnv("UPSTASH_REDIS_REST_TOKEN", "");
     const req = makeRequest({ ip: "1.2.3.4" });
-    const result = await applyRateLimit(req);
+    const result = (await evaluateRateLimit(req)).rejection;
     expect(result).toBeNull();
   });
 
@@ -342,7 +349,7 @@ describe("applyRateLimit", () => {
     vi.stubEnv("UPSTASH_REDIS_REST_URL", "");
     vi.stubEnv("UPSTASH_REDIS_REST_TOKEN", "");
     const req = makeRequest({ ip: "1.2.3.4" });
-    const result = await applyRateLimit(req);
+    const result = (await evaluateRateLimit(req)).rejection;
     expect(result).toBeNull();
   });
 
@@ -354,7 +361,7 @@ describe("applyRateLimit", () => {
     vi.stubEnv("UPSTASH_REDIS_REST_URL", "");
     vi.stubEnv("UPSTASH_REDIS_REST_TOKEN", "");
     const req = makeRequest({ ip: "1.2.3.4" });
-    const result = await applyRateLimit(req);
+    const result = (await evaluateRateLimit(req)).rejection;
     expect(result).not.toBeNull();
     expect(result!.status).toBe(500);
   });
@@ -367,7 +374,7 @@ describe("applyRateLimit", () => {
     vi.stubEnv("UPSTASH_REDIS_REST_URL", "");
     vi.stubEnv("UPSTASH_REDIS_REST_TOKEN", "");
     const req = makeRequest({ ip: "1.2.3.4" });
-    const result = await applyRateLimit(req);
+    const result = (await evaluateRateLimit(req)).rejection;
     expect(result).toBeNull();
   });
 });
@@ -493,5 +500,83 @@ describe("applyIpRateLimit", () => {
     const req = makeRequest({ ip: "9.9.9.9" });
     const result = await applyIpRateLimit(req);
     expect(result).toBeNull();
+  });
+});
+
+describe("applyKeyIssuanceRateLimit", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+    _resetLimitersForTest();
+    restoreConstructorMocks();
+    vi.stubEnv("UPSTASH_REDIS_REST_URL", "https://example.upstash.io");
+    vi.stubEnv("UPSTASH_REDIS_REST_TOKEN", "test-token");
+  });
+
+  // Issuing a key costs a 600,000-iteration PBKDF2 hash, so it is metered on
+  // its own bucket rather than in the anonymous per-minute one.
+  // @req REQ-034
+  it("counts the caller's address in the key-issuance bucket", async () => {
+    mockLimit.mockResolvedValue({
+      success: true,
+      limit: 5,
+      remaining: 4,
+      reset: Date.now() + 3_600_000,
+    });
+
+    const rejection = await applyKeyIssuanceRateLimit(
+      makeRequest({ ip: "1.1.1.1, 5.6.7.8" })
+    );
+
+    expect(rejection).toBeNull();
+    expect(MockRatelimit).toHaveBeenCalledWith(
+      expect.objectContaining({ prefix: "rl:keyissue" })
+    );
+    expect(mockLimit).toHaveBeenCalledWith("ip:5.6.7.8");
+  });
+
+  // @req REQ-034
+  it("answers 429 once the address has used up its issuance attempts", async () => {
+    mockLimit.mockResolvedValue({
+      success: false,
+      limit: 5,
+      remaining: 0,
+      reset: Date.now() + 60_000,
+    });
+
+    const rejection = await applyKeyIssuanceRateLimit(
+      makeRequest({ ip: "5.6.7.8" })
+    );
+
+    expect(rejection?.status).toBe(429);
+    expect(rejection?.headers.get("Retry-After")).toBeDefined();
+  });
+
+  // Reads fail open (see runLimiter) because a Redis blip should not take the
+  // read API down. Issuance is a write that burns CPU, so with no counter to
+  // consult it refuses instead.
+  // @req REQ-034
+  it("refuses with 503 when Upstash is unreachable, unlike the read quotas", async () => {
+    mockLimit.mockRejectedValue(new Error("Redis connection failed"));
+
+    const rejection = await applyKeyIssuanceRateLimit(
+      makeRequest({ ip: "9.9.9.9" })
+    );
+
+    expect(rejection?.status).toBe(503);
+    expect(mockCaptureException).toHaveBeenCalledWith(expect.any(Error));
+  });
+
+  // @req REQ-034
+  it("returns 500 when Upstash is not configured in production", async () => {
+    vi.stubEnv("NODE_ENV", "production");
+    vi.stubEnv("VERCEL_ENV", "");
+    vi.stubEnv("UPSTASH_REDIS_REST_URL", "");
+    vi.stubEnv("UPSTASH_REDIS_REST_TOKEN", "");
+
+    const rejection = await applyKeyIssuanceRateLimit(
+      makeRequest({ ip: "1.2.3.4" })
+    );
+
+    expect(rejection?.status).toBe(500);
   });
 });

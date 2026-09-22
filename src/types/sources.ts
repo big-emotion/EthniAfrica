@@ -35,30 +35,6 @@ export const SOURCE_KINDS = [
 
 export type SourceKind = (typeof SOURCE_KINDS)[number];
 
-/** Oral account genres accepted by the latest database CHECK (migration 089). */
-// @req REQ-162
-type OralNarrativeKind =
-  | "tradition"
-  | "testimony"
-  | "memory"
-  | "story"
-  | "song"
-  | "genealogy"
-  | "motto"
-  | "proverb";
-
-// @req REQ-162
-export const ORAL_NARRATIVE_KINDS = [
-  "tradition",
-  "testimony",
-  "memory",
-  "story",
-  "song",
-  "genealogy",
-  "motto",
-  "proverb",
-] as const satisfies readonly OralNarrativeKind[];
-
 /**
  * Kinds that describe a bibliographic work. `discovery` (a lookup surface),
  * `ai_generated` (machine-written text), `unknown`, `oral_tradition` (a linked
@@ -131,23 +107,8 @@ export function isAuthoritativeSourceTier(tier: unknown): boolean {
 // are locale-keyed in `src/lib/glossaire/vocabularies.ts` — the bilingual
 // glossary's one owner file — and read through `sourceStandingLabel()`.
 
-/**
- * Confidence weight per tier, mirrored by `recompute_confidence()` in
- * migration 041. Kept in sync by the source-tier vocabulary contract test.
- */
-// @req REQ-092
-export const SOURCE_TIER_WEIGHTS: Record<SourceTier, number> = {
-  official: 1.0,
-  referenced: 0.7,
-  unverified: 0.4,
-};
-
-/**
- * Applied on top of the tier weight when `sourceKind` is `ai_generated`.
- * 0.4 × 0.5 = 0.2 reproduces the weight the retired fused AI tier carried.
- */
-// @req REQ-092
-export const AI_PROVENANCE_WEIGHT = 0.5;
+// Confidence weights live in `recompute_confidence()` (SQL) alone: a TS copy
+// was read by no production code and only had to be kept in sync by hand.
 
 // @req REQ-092
 export function isSourceTier(value: unknown): value is SourceTier {
@@ -176,29 +137,4 @@ export function sourceTierFromLegacyNumber(value: unknown): SourceTier {
   if (value === 1 || value === "1") return "official";
   if (value === 2 || value === "2") return "referenced";
   return "unverified";
-}
-
-export type AssertionLocatorType = "page" | "folio" | "section" | "timestamp";
-
-export interface StructuredSourceRecord {
-  sourceKey: string;
-  title: string;
-  authors: string[];
-  publicationYear: number;
-  sourceKind: StructuredSourceKind;
-  tier: SourceTier;
-  identifiers: Record<string, string>;
-  publisher: string | null;
-  url: string | null;
-}
-
-export interface AssertionSourceReference {
-  sourceKey: string;
-  locatorType: AssertionLocatorType;
-  locatorValue: string;
-}
-
-export interface LegacySourceCandidate {
-  legacyRawCitation: string;
-  reviewStatus: "review_required";
 }

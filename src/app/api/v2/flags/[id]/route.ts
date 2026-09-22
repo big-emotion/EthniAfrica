@@ -103,6 +103,7 @@ import {
 } from "@/api/v2/handlers/flags";
 import { createApiError } from "@/api/v2/utils/response";
 import { corsOptionsResponse, jsonWithCors } from "@/lib/api/cors";
+import { clientIp } from "@/lib/api/clientIp";
 import { logger } from "@/lib/api/logger";
 import { isTranslationLocale } from "@/lib/i18n/translationLocale";
 import type { Language } from "@/types/shared";
@@ -115,9 +116,7 @@ function getAccessToken(request: NextRequest): string | null {
 }
 
 function getClientIp(request: NextRequest): string | undefined {
-  return (
-    request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || undefined
-  );
+  return clientIp(request) ?? undefined;
 }
 
 function bodyLanguage(body: unknown): Language {

@@ -47,6 +47,9 @@ const BASE_URL = `https://${CANONICAL_DOMAIN}`;
 // The emitted name set follows source tiers stored in the corpus projection.
 // Revalidate between releases so a corpus reload can add or remove a name
 // without waiting for the next production build.
+// A literal on purpose: Next reads segment config statically. Held to
+// `CORPUS_AGGREGATE_REVALIDATE_SECONDS` (`PUBLIC_FLAGS_REVALIDATE_SECONDS` for
+// the 60 s pages) by `src/app/__tests__/cacheFreshnessContract.test.ts`.
 // @req REQ-147
 export const revalidate = 3600;
 

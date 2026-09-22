@@ -268,6 +268,7 @@ import {
 } from "@/api/v2/handlers/flags";
 import { createApiError } from "@/api/v2/utils/response";
 import { corsOptionsResponse, jsonWithCors } from "@/lib/api/cors";
+import { clientIp } from "@/lib/api/clientIp";
 import { logger } from "@/lib/api/logger";
 import { isTranslationLocale } from "@/lib/i18n/translationLocale";
 import type { Language } from "@/types/shared";
@@ -300,13 +301,7 @@ function getAccessToken(request: NextRequest): string | null {
 }
 
 function getClientIp(request: NextRequest): string | undefined {
-  const forwardedIp = request.headers
-    .get("x-forwarded-for")
-    ?.split(",")
-    .map((value) => value.trim())
-    .find(Boolean);
-
-  return forwardedIp || request.headers.get("x-real-ip")?.trim() || undefined;
+  return clientIp(request) ?? undefined;
 }
 
 function bodyLanguage(body: unknown): Language {

@@ -35,9 +35,10 @@ the work.
   `fieldPath`.
 - **Raw corpus identifiers.** `PPL_DIOULA`, `FLG_MANDE`, `PAT_KEITA`. Name the
   people, not the row.
-- **Curation vocabulary.** _file d'attente_, _la passe_, _protocole de recherche_,
-  _revue claim-level_, _tier hérité_, _hors corpus_, _plan de couverture_,
-  _vague N_. This is the subtle one: it carries no path and no identifier, so it
+- **Curation vocabulary.** _file d'attente_, _la passe_ / _cette passe_ / _lors
+  de la passe_, _protocole de recherche_, _le protocole exclut_ / _interdit_ /
+  _conformément au protocole_, _revue claim-level_, _tier hérité_, _hors
+  corpus_, _plan de couverture_, _vague N_. This is the subtle one: it carries no path and no identifier, so it
   reads as ordinary French and survives review — while telling a visitor about a
   work queue and a research backlog that describe the workshop, not the subject.
 - **Internal corpus labels.** `Corpus AFRIK — …` as a source title.
@@ -71,6 +72,8 @@ the workshop has not filled it yet.**
 | Corpus AFRIK — PPL_DIOULA, organisation clanique                                                                                                                                    | EthniAfrica — fiche du peuple Dioula, organisation clanique                                                          |
 | Passage source : dataset/…/PPL_DIOULA.json#content.organization.clanOrganization. Le tier hérité n'est pas résolu ; la revue claim-level reste requise.                             | Reprise du chapitre « Organisation clanique » de la fiche du peuple Dioula.                                          |
 | Aucun porteur décédé n'a été rattaché au jamu par les sources de cette passe.                                                                                                       | Aucun porteur n'a été rattaché au jamu par les sources consultées.                                                   |
+| Les recherches exactes n'ont pas fourni, dans cette passe, un porteur décédé rattaché au patronyme.                                                                                 | Les recherches exactes n'ont pas fourni de porteur décédé rattaché au patronyme.                                     |
+| Personne vivante, donc exclue par le protocole.                                                                                                                                     | Aucun porteur décédé n'est documenté dans les sources consultées.                                                    |
 | Tier resolved from the domain ruling for jstor.org.                                                                                                                                 | _(no note — the tier badge says it)_                                                                                 |
 | No URL and no recognisable citation shape; the tier awaits editorial review.                                                                                                        | _(no note — the Non vérifiée badge says it)_                                                                         |
 | Tier resolved from the domain ruling for unesco.org (sous-domaine ich.unesco.org). Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité. | Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité.                     |

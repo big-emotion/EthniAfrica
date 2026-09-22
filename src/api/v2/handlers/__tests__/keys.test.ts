@@ -1,8 +1,10 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
+import { getKeyPrefix } from "@/lib/api/auth";
 import {
   handleKeyCreate,
   handleKeyList,
   handleKeyRevoke,
+  handlePublicKeyIssue,
 } from "@/api/v2/handlers/keys";
 
 const user = { id: "user-1" };
@@ -161,6 +163,95 @@ describe("key handlers", () => {
         user.id,
         "key-1"
       );
+    });
+  });
+
+  describe("handlePublicKeyIssue", () => {
+    const storedHash = "pbkdf2v1:600000:c2FsdA==:0123abcd";
+
+    function makeIssuanceDependencies() {
+      return {
+        hasActivePublicKeyForIp: vi.fn().mockResolvedValue(false),
+        insertPublicKey: vi.fn().mockResolvedValue(undefined),
+        hashApiKey: vi.fn().mockResolvedValue(storedHash),
+      };
+    }
+
+    // @req REQ-034
+    it("issues a public key bound to the address and returns it once", async () => {
+      const dependencies = makeIssuanceDependencies();
+
+      const result = await handlePublicKeyIssue(
+        { clientIp: "203.0.113.9" },
+        dependencies
+      );
+
+      expect(result.status).toBe(201);
+      expect(result.body.data).toMatchObject({ tier: "public" });
+      const issued = result.body.data as { key: string };
+      expect(issued.key.startsWith("pub_")).toBe(true);
+      expect(dependencies.insertPublicKey).toHaveBeenCalledWith({
+        keyHash: storedHash,
+        keyPrefix: getKeyPrefix(issued.key),
+        ipAddress: "203.0.113.9",
+      });
+    });
+
+    // @req REQ-034
+    it("never puts the stored hash or the address in the response", async () => {
+      const result = await handlePublicKeyIssue(
+        { clientIp: "203.0.113.9" },
+        makeIssuanceDependencies()
+      );
+
+      const serialized = JSON.stringify(result.body);
+      expect(serialized).not.toContain(storedHash);
+      expect(serialized).not.toContain("203.0.113.9");
+    });
+
+    // The lookup is a cheap indexed read; the hash is 600,000 PBKDF2 rounds.
+    // An address that already has a key must never reach the hash.
+    // @req REQ-034
+    it("refuses with 409 before hashing when the address already holds a key", async () => {
+      const dependencies = makeIssuanceDependencies();
+      dependencies.hasActivePublicKeyForIp.mockResolvedValue(true);
+
+      const result = await handlePublicKeyIssue(
+        { clientIp: "203.0.113.9" },
+        dependencies
+      );
+
+      expect(result.status).toBe(409);
+      expect(result.body.errors[0].code).toBe("RATE_LIMITED");
+      expect(dependencies.hashApiKey).not.toHaveBeenCalled();
+      expect(dependencies.insertPublicKey).not.toHaveBeenCalled();
+    });
+
+    // Without an address the one-key-per-IP rule cannot be applied, and
+    // issuing anyway would make the endpoint unlimited.
+    // @req REQ-034
+    it("refuses with 400 when the client address is unknown", async () => {
+      const dependencies = makeIssuanceDependencies();
+
+      const result = await handlePublicKeyIssue(
+        { clientIp: null },
+        dependencies
+      );
+
+      expect(result.status).toBe(400);
+      expect(dependencies.hasActivePublicKeyForIp).not.toHaveBeenCalled();
+      expect(dependencies.hashApiKey).not.toHaveBeenCalled();
+      expect(dependencies.insertPublicKey).not.toHaveBeenCalled();
+    });
+
+    // @req REQ-034
+    it("lets a storage failure reach the route, which answers 500", async () => {
+      const dependencies = makeIssuanceDependencies();
+      dependencies.insertPublicKey.mockRejectedValue(new Error("db down"));
+
+      await expect(
+        handlePublicKeyIssue({ clientIp: "203.0.113.9" }, dependencies)
+      ).rejects.toThrow("db down");
     });
   });
 });

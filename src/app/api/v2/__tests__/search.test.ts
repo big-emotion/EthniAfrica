@@ -21,7 +21,9 @@ vi.mock("@/lib/api/cors", () => ({
 }));
 
 vi.mock("@/lib/api/rate-limit", () => ({
-  applyRateLimit: vi.fn().mockResolvedValue(null),
+  evaluateRateLimit: vi
+    .fn()
+    .mockResolvedValue({ rejection: null, headers: {} }),
 }));
 
 vi.mock("@/lib/search/searchQueryLog", () => ({
@@ -29,7 +31,7 @@ vi.mock("@/lib/search/searchQueryLog", () => ({
 }));
 
 import { ftsSearchHandler } from "@/api/v2/handlers/search";
-import { applyRateLimit } from "@/lib/api/rate-limit";
+import { evaluateRateLimit } from "@/lib/api/rate-limit";
 import { searchQueryLog } from "@/lib/search/searchQueryLog";
 import {
   buildSearchParams,
@@ -60,7 +62,10 @@ const mockEnvelope = {
 describe("GET /api/v2/search (route)", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    (applyRateLimit as ReturnType<typeof vi.fn>).mockResolvedValue(null);
+    (evaluateRateLimit as ReturnType<typeof vi.fn>).mockResolvedValue({
+      rejection: null,
+      headers: {},
+    });
   });
 
   // ── happy path ──────────────────────────────────────────────────────────
@@ -362,7 +367,7 @@ describe("GET /api/v2/search (route)", () => {
     );
 
     expect(res.status).toBe(200);
-    expect(applyRateLimit).not.toHaveBeenCalled();
+    expect(evaluateRateLimit).not.toHaveBeenCalled();
   });
 
   // ── error handling ──────────────────────────────────────────────────────

@@ -86,7 +86,7 @@
     },
     {
       "fieldPath": "bearers",
-      "reason": "Les recherches biographiques ont principalement livré Laurent Gbagbo, personne vivante donc exclue par le protocole. Aucun porteur historique défunt, documenté et rattachable à cette fiche sans inférence, n'a été trouvé."
+      "reason": "Les recherches biographiques ont principalement livré Laurent Gbagbo, personne vivante que la fiche ne liste donc pas comme porteur. Aucun porteur historique défunt, documenté et rattachable à cette fiche sans inférence, n'a été trouvé."
     },
     {
       "fieldPath": "homonyms",

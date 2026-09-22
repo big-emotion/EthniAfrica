@@ -8,7 +8,7 @@
       "alternatives": "Keep repository documents as the only source of truth, or duplicate mutable intent across Confluence and Git.",
       "tradeoffs": "Confluence availability and disciplined identifier propagation become workflow dependencies, while repository snapshots remain auditable implementation evidence.",
       "requirementsSatisfied": ["REQ-085", "REQ-086"],
-      "source": "docs/adr/0002-confluence-source-of-truth.md",
+      "source": "git:0e753c07^:docs/adr/0002-confluence-source-of-truth.md",
       "status": "Approved"
     },
     {
@@ -128,7 +128,7 @@
       "alternatives": "Block all legacy data immediately at 99–101% or keep the wider tolerance indefinitely.",
       "tradeoffs": "The transition avoids freezing all data work while temporarily accepting a known gap against the final doctrine.",
       "requirementsSatisfied": ["REQ-028", "REQ-032"],
-      "source": "docs/adr/0001-fr28-demographic-tolerance.md",
+      "source": "git:0e753c07^:docs/adr/0001-fr28-demographic-tolerance.md",
       "status": "Approved"
     },
     {
@@ -692,7 +692,7 @@
         "scripts/__tests__/checkJiraTemplate.test.ts",
         "scripts/__tests__/buildConfluenceBootstrap.test.ts"
       ],
-      "source": "docs/adr/0002-confluence-source-of-truth.md",
+      "source": "git:0e753c07^:docs/adr/0002-confluence-source-of-truth.md",
       "status": "Approved"
     },
     {

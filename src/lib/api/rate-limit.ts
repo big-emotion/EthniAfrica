@@ -5,14 +5,17 @@ import * as Sentry from "@sentry/nextjs";
 import { logger } from "@/lib/api/logger";
 import type { ApiKeyTier } from "@/lib/api/auth";
 import { isProductionDeployment } from "@/lib/deployment";
+import { clientIp } from "@/lib/api/clientIp";
 
 /** Re-exported for callers that only need the tier type, not auth internals. */
 export type { ApiKeyTier };
 
+/**
+ * Requests whose address cannot be established share one bucket rather than
+ * going unmetered, so stripping the headers is never cheaper than sending them.
+ */
 function getClientIp(request: NextRequest): string {
-  return (
-    request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown"
-  );
+  return clientIp(request) ?? "unknown";
 }
 
 async function sha256Hex(value: string): Promise<string> {
@@ -55,6 +58,7 @@ interface Limiters {
   ip: Ratelimit;
   public: Ratelimit;
   partner: Ratelimit;
+  keyIssuance: Ratelimit;
 }
 
 let limiters: Limiters | null = null;
@@ -63,6 +67,9 @@ const DEFAULT_IP_RPM = 60;
 const DEFAULT_PUBLIC_RPM = 600;
 const DEFAULT_PARTNER_RPM = 6000;
 const DEFAULT_WINDOW = "1 m";
+// Fixed rather than env-driven: a public key is bound to one address, so a
+// legitimate caller needs one attempt and this only bounds retries and abuse.
+const KEY_ISSUANCE_ATTEMPTS_PER_HOUR = 5;
 
 /**
  * Window strings accepted by @upstash/ratelimit (e.g. `"1 m"`, `"30 s"`).
@@ -106,7 +113,7 @@ export function _resetLimitersForTest(): void {
  * and both proceed to construct new instances.
  *
  * Throws immediately with a clear message when required env vars are absent,
- * so the catch block in applyRateLimit can correctly distinguish a
+ * so the catch block in runLimiter can correctly distinguish a
  * configuration error from a transient Upstash failure.
  */
 function getLimiters(): Limiters {
@@ -150,6 +157,11 @@ function getLimiters(): Limiters {
       redis,
       limiter: Ratelimit.slidingWindow(partnerRpm, window),
       prefix: "rl:partner",
+    }),
+    keyIssuance: new Ratelimit({
+      redis,
+      limiter: Ratelimit.slidingWindow(KEY_ISSUANCE_ATTEMPTS_PER_HOUR, "1 h"),
+      prefix: "rl:keyissue",
     }),
   };
 
@@ -230,11 +242,21 @@ function checkUpstashConfigured(): RateLimitDecision | "ok" {
 
 /**
  * Run a resolved limiter against an identifier, converting the Upstash result
- * into a decision and failing open on transient errors.
+ * into a decision.
+ *
+ * When Upstash cannot be reached the read quotas fail OPEN, on purpose: the
+ * API serves public, cacheable corpus reads, and an Upstash blip should cost
+ * us a quota, not the whole API. A missing configuration is different and is
+ * refused earlier (`checkUpstashConfigured`), because that is permanent and
+ * would otherwise switch limiting off without anyone noticing. The outage is
+ * never silent: it is logged and sent to Sentry.
+ *
+ * A caller whose work is expensive or writes (`"refuse"`) gets a 503 instead.
  */
 async function runLimiter(
   identifier: string,
-  limiter: Ratelimit | null
+  limiter: Ratelimit | null,
+  whenUnavailable: "allow" | "refuse" = "allow"
 ): Promise<RateLimitDecision> {
   // Admin keys are unrestricted
   if (limiter === null) return unmetered();
@@ -267,7 +289,15 @@ async function runLimiter(
       tag: "rate_limit_unavailable",
     });
     Sentry.captureException(error);
-    // Fail open
+    if (whenUnavailable === "refuse") {
+      return {
+        rejection: NextResponse.json(
+          { error: "rate_limit_unavailable" },
+          { status: 503, headers: { "Retry-After": "30" } }
+        ),
+        headers: {},
+      };
+    }
     return unmetered();
   }
 }
@@ -297,20 +327,6 @@ export async function evaluateRateLimit(
 }
 
 /**
- * Apply rate limiting to a request.
- * Returns null if the request is allowed (pass-through), or the NextResponse
- * to return (429, or 500 on a misconfigured production). The quota headers of
- * an allowed request are only available through `evaluateRateLimit`.
- */
-// @req REQ-034 REQ-059
-export async function applyRateLimit(
-  request: NextRequest,
-  tier?: ApiKeyTier
-): Promise<NextResponse | null> {
-  return (await evaluateRateLimit(request, tier)).rejection;
-}
-
-/**
  * IP-only pre-limit, independent of any Bearer token or tier. Bounds the
  * expensive DB lookup + PBKDF2 comparison inside validateApiKey (see
  * middleware.ts) so a flood of requests with distinct or invalid keys from a
@@ -326,4 +342,28 @@ export async function applyIpRateLimit(
 
   return (await runLimiter(`ip:${getClientIp(request)}`, getRateLimiter(null)))
     .rejection;
+}
+
+/**
+ * Attempts at `/api/v2/keys/issue`, per address, on top of the anonymous
+ * per-minute quota the middleware already charges. Issuing hashes with
+ * hundreds of thousands of PBKDF2 iterations, so this is the cheapest request
+ * on the API for an attacker to make expensive for us; a refusal here costs a
+ * Redis round trip instead. Unlike the read quotas it fails closed when Upstash
+ * is unreachable.
+ */
+// @req REQ-034
+export async function applyKeyIssuanceRateLimit(
+  request: NextRequest
+): Promise<NextResponse | null> {
+  const configCheck = checkUpstashConfigured();
+  if (configCheck !== "ok") return configCheck.rejection;
+
+  return (
+    await runLimiter(
+      `ip:${getClientIp(request)}`,
+      getLimiters().keyIssuance,
+      "refuse"
+    )
+  ).rejection;
 }

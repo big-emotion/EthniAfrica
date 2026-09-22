@@ -1,7 +1,7 @@
 import { existsSync } from "node:fs";
 import path from "node:path";
 
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { discoveryPath, eligiblePublications } from "@/lib/discoveries/catalog";
 import { getDiscoveryPublications } from "@/lib/discoveries/entries";
@@ -184,4 +184,28 @@ describe("the shorts shelf destinations", () => {
       }
     }
   );
+});
+
+// The catalogue is built at import time, so the origin it prints is fixed by
+// the environment the module is first evaluated in. A recette build that
+// printed the production origin would send readers off the site they are on.
+describe("the published video catalog's source addresses", () => {
+  afterEach(() => {
+    vi.unstubAllEnvs();
+    vi.resetModules();
+  });
+
+  // @req REQ-181
+  it("points at the configured canonical domain, not a hard-coded one", async () => {
+    vi.stubEnv("NEXT_PUBLIC_CANONICAL_DOMAIN", "recette.example.test");
+    vi.resetModules();
+    const { DISCOVERY_VIDEOS: records } =
+      await import("@/lib/discoveries/videos");
+
+    const addresses = records.map((record) => record.source?.url);
+    expect(addresses.length).toBeGreaterThan(0);
+    for (const address of addresses) {
+      expect(address).toMatch(/^https:\/\/recette\.example\.test\/fr\//);
+    }
+  });
 });
