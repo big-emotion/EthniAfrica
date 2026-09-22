@@ -114,8 +114,8 @@ Policy ; elle n'est pas recopiée ici.
 Depuis le 2026-09-21, un carrousel et un reel se ferment sur la même clôture
 unique (`GABARITS-SOCIAL.md` §7 ter), et la morale qui la précède répond à la
 question de l'accroche, sans plus. Ce skill ne vérifie donc plus qu'une pièce
-« clôt sur l'amour et l'unité » : la conviction d'unité (`purposeChapter.unityClaim`,
-`src/lib/i18n/copy/about.ts`) reste celle de la page À propos, et aucune
+« clôt sur l'amour et l'unité » : la conviction d'unité reste celle de la page
+À propos (« Notre conviction », `src/lib/i18n/copy/about.ts`), et aucune
 production n'a à la porter.
 
 ## Comment challenger une session

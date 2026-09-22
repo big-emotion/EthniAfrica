@@ -20,6 +20,9 @@ import type { Language } from "@/types/shared";
  * translation pipeline — only `CLASSIFICATION_DEFINITIONS_EN` still comes
  * from that pipeline, so the "machine, not yet reviewed" marker now sits next
  * to the classification block it actually describes, not at the page header.
+ * The four refused sentences sit after M8 as their own numbered section
+ * (moved from the About page, 22 September 2026), so M9-M11 render one step
+ * later than the plan's numbering.
  *
  * Each classification section keeps its `id="<status>"` anchor:
  * ClassificationBadge links to it (story ETNI-178 / 0.21, AR21, AR44). Gains
@@ -67,6 +70,27 @@ export default function DoctrinePageContent({
               {paragraph}
             </p>
           ))}
+          {section.refusals && (
+            <ul
+              data-testid="doctrine-refusals"
+              className="grid grid-cols-1 gap-afh-lg min-[720px]:grid-cols-2"
+              role="list"
+            >
+              {section.refusals.map((item) => (
+                <li key={item.sentence} className="space-y-afh-xs">
+                  <p className="font-afh-display text-afh-lead font-bold">
+                    {item.sentence}
+                  </p>
+                  <p
+                    data-role="reason"
+                    className="text-afh-small leading-relaxed text-muted-foreground"
+                  >
+                    {item.reason}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          )}
         </section>
       ))}
 

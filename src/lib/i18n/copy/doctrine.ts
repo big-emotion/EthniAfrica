@@ -1,9 +1,21 @@
 import type { ClassificationStatus } from "@/types/afrik";
 import type { Language } from "@/types/shared";
 
+interface RefusedSentenceCopy {
+  sentence: string;
+  reason: string;
+}
+
 interface MethodSectionCopy {
   heading: string;
   paragraphs: string[];
+  /**
+   * Sentences we refuse to write, each published with its reason: a refusal
+   * printed without why reads as a taboo, and a reason without the sentence
+   * it answers reads as a lecture. Moved here from the About page on
+   * 22 September 2026 — what we do not write is method, not a presentation.
+   */
+  refusals?: RefusedSentenceCopy[];
 }
 
 interface ClosingActionsCopy {
@@ -72,6 +84,32 @@ const en = {
       paragraphs: [
         "We do not infer from a name's history that one population would be more authentic, more legitimate or superior to another. We avoid conflating people, language, occupation, territory and administrative category.",
         "We name historical actors when their role is documented. We do not attribute that role to an entire population today.",
+      ],
+    },
+    {
+      heading: "Four sentences we do not write",
+      paragraphs: [],
+      refusals: [
+        {
+          sentence: "“Before, people lived in harmony with the continent.”",
+          reason:
+            "A golden age does not need to be true to be attacked: Africa before Berlin also had empires, conquests and internal slave trades. The argument’s strength comes from duration and scale, not from how gentle the past was.",
+        },
+        {
+          sentence: "“The borders are arbitrary.”",
+          reason:
+            "Half false: some follow rivers. They were mostly drawn without reference to who lived there, and we show it people by people.",
+        },
+        {
+          sentence: "“Reconnecting with the past.”",
+          reason:
+            "Reconnecting assumes the break is complete — yet these peoples are counted in 2025 and live in France. This is not about reconnecting, but recognising what never stopped.",
+        },
+        {
+          sentence: "“Before the borders, peoples were united.”",
+          reason:
+            "Kinship of language and culture sometimes crossed ruptures older than the colonial map — a split, a migration, a disputed succession. The border did not always create the separation: it often locked one in.",
+        },
       ],
     },
     {
@@ -186,6 +224,32 @@ const fr: DoctrineCopy = {
       paragraphs: [
         "Nous ne déduisons pas de l’histoire d’un nom qu’une population serait plus authentique, plus légitime ou supérieure à une autre. Nous évitons de confondre peuple, langue, métier, territoire et catégorie administrative.",
         "Nous nommons les acteurs historiques lorsque leur rôle est documenté. Nous n’attribuons pas ce rôle à l’ensemble d’une population actuelle.",
+      ],
+    },
+    {
+      heading: "Quatre phrases que nous n’écrivons pas",
+      paragraphs: [],
+      refusals: [
+        {
+          sentence: "« Avant, on vivait en accord avec le continent. »",
+          reason:
+            "Un âge d’or n’a pas besoin d’être vrai pour être attaquable : l’Afrique d’avant Berlin avait aussi des empires, des conquêtes, des traites internes. La force de l’argument vient de sa durée et de son échelle, pas de la douceur du passé.",
+        },
+        {
+          sentence: "« Les frontières sont arbitraires. »",
+          reason:
+            "À demi faux : certaines suivent des fleuves. Elles ont surtout été tracées sans référence à qui habitait là, et nous le montrons peuple par peuple.",
+        },
+        {
+          sentence: "« Renouer avec le passé. »",
+          reason:
+            "Renouer suppose la rupture consommée — or ces peuples sont comptés en 2025 et présents en France. Il ne s’agit pas de renouer, mais de reconnaître ce qui n’a jamais cessé : c’est plus vrai, et moins triste.",
+        },
+        {
+          sentence: "« Avant les frontières, les peuples étaient unis. »",
+          reason:
+            "Des parentés de langue et de culture ont parfois traversé des ruptures plus anciennes que la carte coloniale — une scission, une migration, une querelle de succession. La frontière n’a pas toujours créé la séparation : elle l’a souvent verrouillée.",
+        },
       ],
     },
     {
