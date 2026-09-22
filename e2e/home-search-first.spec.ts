@@ -93,7 +93,7 @@ test.describe("Search-first home — mobile source of truth (ETNI-1513)", () => 
     expect(pageFlow).toEqual([
       "copy",
       "home-stories",
-      "visual",
+      "home-hero-globe",
       "home-project",
       "home-counts",
     ]);
