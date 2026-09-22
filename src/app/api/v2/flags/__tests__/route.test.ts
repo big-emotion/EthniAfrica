@@ -73,7 +73,7 @@ describe("flags API routes", () => {
   });
 
   // @req REQ-012
-  it("passes a case-insensitive Bearer token and first forwarded IP to the create handler", async () => {
+  it("passes a case-insensitive Bearer token and the proxy-appended IP (not a client-prepended one) to the create handler", async () => {
     const body = {
       target_type: "people",
       target_id: "PPL_YORUBA",
@@ -100,7 +100,7 @@ describe("flags API routes", () => {
         headers: {
           authorization: "bEaReR access-token",
           "content-type": "application/json",
-          "x-forwarded-for": "203.0.113.10, 10.0.0.2",
+          "x-forwarded-for": "198.51.100.1, 203.0.113.10",
         },
       })
     );

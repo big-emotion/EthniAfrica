@@ -28,7 +28,9 @@ vi.mock("@/lib/api/cors", () => ({
 }));
 
 vi.mock("@/lib/api/rate-limit", () => ({
-  applyRateLimit: vi.fn().mockResolvedValue(null),
+  evaluateRateLimit: vi
+    .fn()
+    .mockResolvedValue({ rejection: null, headers: {} }),
 }));
 
 import {

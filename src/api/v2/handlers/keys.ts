@@ -1,8 +1,11 @@
 import { z } from "zod";
 import { createApiKeySchema } from "@/api/v2/schemas/apiKeys";
+import { getKeyPrefix, hashApiKey } from "@/lib/api/auth";
 import {
   createUserApiKey,
   getAuthenticatedUser,
+  hasActivePublicKeyForIp,
+  insertPublicKey,
   listUserApiKeys,
   revokeUserApiKey,
   type ApiKeySummary,
@@ -129,4 +132,83 @@ export async function handleKeyRevoke(
   }
 
   return { status: 200, body: createApiResponse(null) };
+}
+
+export interface PublicKeyIssueContext {
+  /** From `clientIp`; null when no trusted header names the caller. */
+  clientIp: string | null;
+}
+
+export interface PublicKeyIssueDependencies {
+  hasActivePublicKeyForIp: typeof hasActivePublicKeyForIp;
+  insertPublicKey: typeof insertPublicKey;
+  hashApiKey: typeof hashApiKey;
+}
+
+export interface IssuedPublicKey {
+  key: string;
+  tier: "public";
+  note: string;
+}
+
+/**
+ * Anonymous issuance of the shared read-only key: one live key per address.
+ *
+ * The address is looked up BEFORE anything is hashed — the hash is 600,000
+ * PBKDF2 iterations, and an address that already holds a key is the
+ * commonest repeat request. The lookup and the insert are not atomic, so two
+ * simultaneous first requests from one address can both succeed; the
+ * per-address issuance limiter in front of the route bounds that to a handful
+ * of extra public-tier keys. A unique partial index on `ip_address` would
+ * close it, at the price of a migration and its two-step rollout.
+ */
+// @req REQ-034
+export async function handlePublicKeyIssue(
+  context: PublicKeyIssueContext,
+  injectedDependencies: Partial<PublicKeyIssueDependencies> = {}
+): Promise<KeyHandlerResult<ApiEnvelope<IssuedPublicKey> | ApiEnvelope<null>>> {
+  const dependencies = {
+    hasActivePublicKeyForIp,
+    insertPublicKey,
+    hashApiKey,
+    ...injectedDependencies,
+  };
+
+  if (!context.clientIp) {
+    return {
+      status: 400,
+      body: createApiError({
+        code: "VALIDATION_ERROR",
+        message:
+          "The client address could not be determined; a public key is bound to one.",
+      }),
+    };
+  }
+
+  if (await dependencies.hasActivePublicKeyForIp(context.clientIp)) {
+    return {
+      status: 409,
+      body: createApiError({
+        code: "RATE_LIMITED",
+        message:
+          "An active public API key has already been issued for this IP address.",
+      }),
+    };
+  }
+
+  const rawKey = `pub_${crypto.randomUUID().replace(/-/g, "")}_${crypto.randomUUID().replace(/-/g, "")}`;
+  await dependencies.insertPublicKey({
+    keyHash: await dependencies.hashApiKey(rawKey),
+    keyPrefix: getKeyPrefix(rawKey),
+    ipAddress: context.clientIp,
+  });
+
+  return {
+    status: 201,
+    body: createApiResponse({
+      key: rawKey,
+      tier: "public" as const,
+      note: "Store this key safely. It will not be shown again.",
+    }),
+  };
 }

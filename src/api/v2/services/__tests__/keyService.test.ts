@@ -23,6 +23,8 @@ vi.mock("@/lib/api/auth", () => ({
 import {
   createUserApiKey,
   getAuthenticatedUser,
+  hasActivePublicKeyForIp,
+  insertPublicKey,
   listUserApiKeys,
   revokeUserApiKey,
 } from "../keyService";
@@ -212,5 +214,92 @@ describe("revokeUserApiKey", () => {
     await expect(revokeUserApiKey("user-1", "key-1")).rejects.toThrow(
       "db down"
     );
+  });
+});
+
+describe("hasActivePublicKeyForIp", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+  });
+
+  // @req REQ-034
+  it("looks only at live public keys bound to that address", async () => {
+    const query = chainableQuery({ data: { id: "key-1" }, error: null });
+    const from = vi.fn(() => query);
+    mocks.createAdminClient.mockReturnValue({ from });
+
+    await expect(hasActivePublicKeyForIp("203.0.113.9")).resolves.toBe(true);
+
+    expect(from).toHaveBeenCalledWith("api_keys");
+    expect(query.eq).toHaveBeenCalledWith("tier", "public");
+    expect(query.eq).toHaveBeenCalledWith("ip_address", "203.0.113.9");
+    expect(query.eq).toHaveBeenCalledWith("active", true);
+    expect(query.is).toHaveBeenCalledWith("revoked_at", null);
+  });
+
+  // @req REQ-034
+  it("is false when the address holds no live key", async () => {
+    const query = chainableQuery({ data: null, error: null });
+    mocks.createAdminClient.mockReturnValue({ from: vi.fn(() => query) });
+
+    await expect(hasActivePublicKeyForIp("203.0.113.9")).resolves.toBe(false);
+  });
+
+  // An unreadable table must not read as "no key yet": that would issue a
+  // second key to an address that already has one.
+  // @req REQ-034
+  it("throws when the lookup fails", async () => {
+    const query = chainableQuery({ data: null, error: { message: "db down" } });
+    mocks.createAdminClient.mockReturnValue({ from: vi.fn(() => query) });
+
+    await expect(hasActivePublicKeyForIp("203.0.113.9")).rejects.toThrow(
+      "db down"
+    );
+  });
+});
+
+describe("insertPublicKey", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+  });
+
+  // @req REQ-034
+  it("stores the hash and prefix bound to the address, never a raw key", async () => {
+    const query = chainableQuery({ data: null, error: null });
+    query.insert = vi.fn().mockResolvedValue({ error: null });
+    mocks.createAdminClient.mockReturnValue({ from: vi.fn(() => query) });
+
+    await insertPublicKey({
+      keyHash: "pbkdf2v1:600000:salt:hash",
+      keyPrefix: "pub_aaaaaaaaaaaaaaaaaa",
+      ipAddress: "203.0.113.9",
+    });
+
+    expect(query.insert).toHaveBeenCalledWith({
+      key_hash: "pbkdf2v1:600000:salt:hash",
+      key_prefix: "pub_aaaaaaaaaaaaaaaaaa",
+      name: "public-key",
+      label: "Public read-only key",
+      tier: "public",
+      active: true,
+      ip_address: "203.0.113.9",
+    });
+  });
+
+  // @req REQ-034
+  it("throws when the insert fails", async () => {
+    const query = chainableQuery({ data: null, error: null });
+    query.insert = vi
+      .fn()
+      .mockResolvedValue({ error: { message: "duplicate" } });
+    mocks.createAdminClient.mockReturnValue({ from: vi.fn(() => query) });
+
+    await expect(
+      insertPublicKey({
+        keyHash: "h",
+        keyPrefix: "p",
+        ipAddress: "203.0.113.9",
+      })
+    ).rejects.toThrow("duplicate");
   });
 });
