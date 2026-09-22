@@ -68,6 +68,11 @@ const QUALIFIERS = [
   // holds — the history a name carries, with the sources it rests on.
   "D’où viennent les noms d’Afrique",
   "D’où viennent les noms",
+  // Retired 2026-09-22: the reorientation's signature moved from the method
+  // ("the history of names, with their sources") to the discovery itself
+  // ("Africa, through its names") — editorial-and-experience-plan.md C1.
+  "L’histoire des noms, avec leurs sources",
+  "The history of names",
 ];
 
 describe("the product's qualifier, spelled in one place", () => {
@@ -102,16 +107,23 @@ describe("the product's qualifier, spelled in one place", () => {
 
   // The bar leaves the lockup about 200 px on a phone, so the masthead carries a
   // short form. It must be the head of the slogan: two wordings would be the
-  // product introducing itself two ways in the same viewport.
+  // product introducing itself two ways in the same viewport. Since C1
+  // (editorial-and-experience-plan.md, 2026-09-22) the slogan itself is short
+  // enough that the "short form" is the full string — startsWith still holds,
+  // now as an exact match.
   // @req REQ-019
   it("carries the slogan's own opening in the masthead, in French", () => {
     expect(PRODUCT_TAGLINE.startsWith(chromeCopy.fr.headerTagline)).toBe(true);
   });
 
+  // Raised from 24 to 28 with C1: the operator chose "L'Afrique à travers ses
+  // noms" as the slogan and ruled that the masthead carries it in full rather
+  // than a truncated prefix (2026-09-22) — a conscious revision of this ceiling,
+  // not a drift.
   // @req REQ-019
   it("keeps the masthead short enough for a phone bar", () => {
-    expect(chromeCopy.fr.headerTagline.length).toBeLessThanOrEqual(24);
-    expect(chromeCopy.en.headerTagline.length).toBeLessThanOrEqual(24);
+    expect(chromeCopy.fr.headerTagline.length).toBeLessThanOrEqual(28);
+    expect(chromeCopy.en.headerTagline.length).toBeLessThanOrEqual(28);
   });
 
   // Python cannot import brand.ts, so the render engine's lockup keeps a copy of

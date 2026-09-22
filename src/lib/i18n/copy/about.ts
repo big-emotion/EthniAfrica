@@ -389,7 +389,7 @@ export const aboutPage: Record<Language, AboutPageCopy> = {
     title: "About",
     overview: {
       eyebrow: "The project",
-      lead: "EthniAfrica tells the history of names, with their sources: the names of Africa’s peoples, of the languages they speak, and of the countries where they live.",
+      lead: "EthniAfrica tells Africa through its names: those of Africa’s peoples, of the languages they speak, and of the countries where they live.",
       asideLead:
         "Everything written here comes from a source, and the source is shown.",
       asideNote:
@@ -441,7 +441,7 @@ export const aboutPage: Record<Language, AboutPageCopy> = {
     title: "À propos",
     overview: {
       eyebrow: "Le projet",
-      lead: "EthniAfrica raconte l’histoire des noms, avec leurs sources : ceux des peuples d’Afrique, des langues qu’ils parlent et des pays où ils vivent.",
+      lead: "EthniAfrica raconte l’Afrique à travers ses noms : ceux des peuples d’Afrique, des langues qu’ils parlent et des pays où ils vivent.",
       asideLead:
         "Tout ce qui est écrit ici vient d’une source, et la source est affichée.",
       asideNote:
