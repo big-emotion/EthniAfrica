@@ -68,7 +68,7 @@
       "url": null,
       "tier": "unverified",
       "source_kind": "ai_generated",
-      "notes": "Ce nom figure au relevé de couverture de l'atlas : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+      "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
     },
     {
       "sourceKey": "guelleh-presidence-djibouti-2017",
@@ -90,7 +90,7 @@
     },
     {
       "fieldPath": "alliances",
-      "reason": "La notice militaire et les requêtes « Guelleh/Geelle alliance » n'ont livré aucune parenté à plaisanterie entre deux noms dotés de noms de l'atlas."
+      "reason": "La notice militaire et les requêtes « Guelleh/Geelle alliance » n'ont livré aucune parenté à plaisanterie entre deux noms dotés de noms documentés ici."
     },
     {
       "fieldPath": "casteOrSocialFunction",

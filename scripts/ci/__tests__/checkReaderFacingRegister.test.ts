@@ -205,7 +205,7 @@ describe("editorial rules — reader-facing register", () => {
             {
               fieldPath: "origin",
               reason:
-                "L'atlas ne documente pas encore l'origine de ce nom : aucune source dédiée n'a été consultée.",
+                "Nous ne documentons pas encore l'origine de ce nom : aucune source dédiée n'a été consultée.",
             },
           ],
           sources: [
@@ -347,7 +347,7 @@ describe("editorial rules — reader-facing register", () => {
             {
               fieldPath: "origin",
               reason:
-                "The atlas does not yet document the origin of this name: no dedicated source has been consulted.",
+                "We do not yet document the origin of this name: no dedicated source has been consulted.",
             },
           ],
         },

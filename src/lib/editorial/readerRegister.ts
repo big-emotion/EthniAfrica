@@ -7,9 +7,9 @@
  * recherche par fiche", "la revue claim-level reste requise" all read as
  * ordinary French, so they survived every review — while telling the visitor
  * about a work queue, a research backlog and an unresolved tier that describe
- * how the atlas is made, not what it knows.
+ * how the corpus is made, not what it knows.
  *
- * The reader is owed the silence itself ("l'atlas ne documente pas encore ce
+ * The reader is owed the silence itself ("nous ne documentons pas encore ce
  * point"), never the reason the workshop has not filled it yet.
  *
  * This lives under `src/` rather than beside the gate that enforces it because
@@ -48,6 +48,15 @@ export const LANGUAGE_NEUTRAL_REGISTER_PATTERNS: ReadonlyArray<RegisterPattern> 
     { label: "internal corpus label", pattern: /Corpus AFRIK\s*—/i },
     // A ticket number tells the reader which work queue produced a sentence.
     { label: "ticket identifier", pattern: /\bETNI-\d+\b/ },
+    // Operator ruling, 2026-09-22: the project speaks as « nous », never as
+    // "the atlas". Case-sensitive on purpose: the titles of real works
+    // ("Atlas des langues…", "Atlas of the World's Languages…") and the Atlas
+    // mountains are capitalised, the project's self-reference never was.
+    // "un atlas linguistique" names a kind of work, not the project.
+    {
+      label: "project called an atlas",
+      pattern: /\batlas\b(?! linguistique)/,
+    },
   ];
 
 // @req REQ-143

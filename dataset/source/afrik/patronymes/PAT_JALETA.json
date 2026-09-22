@@ -50,7 +50,7 @@
       "url": null,
       "tier": "unverified",
       "source_kind": "ai_generated",
-      "notes": "Ce nom figure au relevé de couverture de l'atlas : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+      "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
     },
     {
       "sourceKey": "jaleta-jirata-2019",
@@ -68,7 +68,7 @@
     },
     {
       "fieldPath": "alliances",
-      "reason": "Les matériaux de parenté et de relations sociales guji-oromo de l'article ont été recherchés ; aucune alliance à plaisanterie entre Jaleta et un autre nom de l'atlas n'y est nommée."
+      "reason": "Les matériaux de parenté et de relations sociales guji-oromo de l'article ont été recherchés ; aucune alliance à plaisanterie entre Jaleta et un autre nom documenté ici n'y est nommée."
     },
     {
       "fieldPath": "casteOrSocialFunction",

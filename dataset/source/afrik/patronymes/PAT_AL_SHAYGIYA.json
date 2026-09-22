@@ -53,41 +53,41 @@
       "url": null,
       "tier": "unverified",
       "source_kind": "ai_generated",
-      "notes": "Ce nom figure au relevé de couverture de l'atlas : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+      "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "L'atlas ne documente pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
       "fieldPath": "alliances",
-      "reason": "L'atlas ne documente pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "L'atlas ne documente pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
       "fieldPath": "bearers",
-      "reason": "L'atlas ne documente pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "L'atlas ne documente pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "La nisba ne détermine pas à elle seule le mode de transmission : l'atlas ne le documente pas encore pour ce nom."
+      "reason": "La nisba ne détermine pas à elle seule le mode de transmission : nous ne le documentons pas encore pour ce nom."
     },
     {
       "fieldPath": "designatedSocialUnit",
-      "reason": "La nisba ne détermine pas à elle seule l'unité sociale désignée : l'atlas ne la documente pas encore pour ce nom."
+      "reason": "La nisba ne détermine pas à elle seule l'unité sociale désignée : nous ne la documentons pas encore pour ce nom."
     },
     {
       "fieldPath": "peoples",
-      "reason": "« al-Shaygiya », « Shaigiya » ont été cherchées dans les fiches peuple de l'atlas — appellations, ethnicités, organisation clanique, prose historique et sources — sans y trouver aucune occurrence. Aucun des 23 peuples du corpus présents dans le pays de la fiche (Soudan) ne rattache ce nom à un groupe, et aucune source dédiée n'a encore été consultée pour ce nom. Le corpus ne porte de fiche ni pour les Ja'aliyyin ni pour les Shaigiya ; la seule entrée arabe soudanaise, Arabes d'Afrique, est un macro-groupe qui ne les nomme pas."
+      "reason": "« al-Shaygiya », « Shaigiya » ont été cherchées dans nos fiches peuple — appellations, ethnicités, organisation clanique, prose historique et sources — sans y trouver aucune occurrence. Aucun des 23 peuples du corpus présents dans le pays de la fiche (Soudan) ne rattache ce nom à un groupe, et aucune source dédiée n'a encore été consultée pour ce nom. Le corpus ne porte de fiche ni pour les Ja'aliyyin ni pour les Shaigiya ; la seule entrée arabe soudanaise, Arabes d'Afrique, est un macro-groupe qui ne les nomme pas."
     }
   ]
 }
