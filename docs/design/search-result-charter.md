@@ -66,8 +66,14 @@ retired word is legitimately discussed (`whyProblematic`, `originOfExonyms`,
 `contemporaryUsage`) are curator prose, and quoting them verbatim is how the
 jargon gets in.
 
-**No appellation is crowned.** Every form the corpus holds is shown, **the most
-common first**, each with its origin attributed to its source. The component
+**No appellation is crowned.** Every form the corpus holds is shown, **the name
+the people gives itself first** (operator ruling, 2026-09-22), then the filed
+name and the others in the fiche's order, each with its origin attributed to its
+source. Ordering is not crowning: every chip keeps the same weight, and the
+self-given one is marked, not enlarged. This replaced "the most common first",
+which nothing implemented — the corpus holds no measure of commonness — and which
+put « Peul » before « Fulbe » on the page that exists to show where the names
+come from. The component
 named `DominantAnswerPanel` is contrary to this rule by its premise and does not
 survive the reorientation.
 

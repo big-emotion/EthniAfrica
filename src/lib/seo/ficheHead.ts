@@ -74,6 +74,7 @@ export async function ficheSubjectFor(
       if (!people) return null;
       return {
         name: people.nameMain,
+        selfName: people.content?.appellations?.selfAppellation,
         countryNames: countryDisplayNames(lang, people.currentCountries),
       };
     }

@@ -44,6 +44,7 @@ import { getEgoNetwork } from "@/api/v2/services/relations";
 import { mapPeopleDetail } from "@/lib/afrikDetailMapper";
 import { getActiveSourceFlags } from "@/lib/supabase/queries/afrik/flags";
 import { peopleCopy } from "@/lib/i18n/copy/people";
+import { peopleDisplayLabel } from "@/lib/search/peopleDisplayNames";
 import { FicheAtlasGlobeIsland } from "@/components/atlas/FicheAtlasGlobeIsland";
 
 // A literal on purpose: Next reads segment config statically. Held to
@@ -116,6 +117,8 @@ async function PeopleLiveContent({
     peopleDetail.demography?.distributionByCountry
   );
   const copy = peopleCopy[language];
+  const selfName = peopleDetail.appellations?.selfAppellation;
+  const displayName = peopleDisplayLabel(selfName, peopleDetail.nameMain);
 
   return (
     <>
@@ -132,17 +135,16 @@ async function PeopleLiveContent({
             <FicheAtlasGlobeIsland
               language={language}
               overlay={peopleFieldOverlay}
-              missingMessage={copy.atlas.missingDistribution(
-                peopleDetail.nameMain
-              )}
+              missingMessage={copy.atlas.missingDistribution(displayName)}
               facts={buildPeoplePresenceFacts({
                 language,
                 peopleName: peopleDetail.nameMain,
+                selfName,
                 peopleId: peopleDetail.id,
                 demography: peopleDetail.demography,
               })}
               fallbackNote={peopleFallbackNote(
-                peopleDetail.nameMain,
+                displayName,
                 peopleFieldOverlay,
                 language
               )}
@@ -322,7 +324,10 @@ export default async function PeoplesSlugPage({
       language={lang as Language}
       sectionName="Peuples"
       flushTop
-      trailLabel={peopleDetail.nameMain}
+      trailLabel={peopleDisplayLabel(
+        peopleDetail.appellations?.selfAppellation,
+        peopleDetail.nameMain
+      )}
       heroHead={
         <FicheHeroHead entityType="people" translation={people.translation}>
           <PeopleFicheTitle language={lang as Language} people={peopleDetail} />

@@ -59,6 +59,7 @@ import {
   getLocalizedSearchResultFamilyName,
   getLocalizedSearchResultName,
 } from "@/lib/search/localizedResult";
+import { searchResultDisplayLabel } from "@/lib/search/peopleDisplayNames";
 import type {
   SearchEntityType,
   SearchLead,
@@ -609,7 +610,7 @@ export function RecherchePageContent() {
                     )}
                     onMouseDown={() => handleSuggestionClick(hit)}
                   >
-                    {getLocalizedSearchResultName(hit, language)}
+                    {searchResultDisplayLabel(hit, language)}
                   </li>
                 ))}
               </ul>
@@ -798,7 +799,7 @@ export function RecherchePageContent() {
                   )}
                   onMouseDown={() => handleSuggestionClick(hit)}
                 >
-                  {getLocalizedSearchResultName(hit, language)}
+                  {searchResultDisplayLabel(hit, language)}
                 </li>
               ))}
             </ul>

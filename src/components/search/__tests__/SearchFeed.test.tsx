@@ -419,6 +419,62 @@ describe("SearchFeed", () => {
     expect(nearName).not.toHaveTextContent("Unrelated text match");
   });
 
+  // @req REQ-178
+  it("lists the name a people gives itself first, then the filed name and the others", () => {
+    const selfName = "Fulbe (pluriel), Pullo (singulier)";
+    const result = namedResult({
+      type: "people",
+      id: "PPL_FULA",
+      name: "Fula (Fulbe / Peul)",
+      nameEn: "Fula (Fulbe / Peul)",
+      autonym: selfName,
+      naming: {
+        forms: [],
+        eras: [],
+        presentation: {
+          forms: [
+            {
+              form: selfName,
+              selfGiven: true,
+              attestations: [],
+              evidence: [],
+            },
+            {
+              form: "Peul",
+              selfGiven: false,
+              attestations: [],
+              evidence: [],
+            },
+          ],
+          eras: [],
+          disagreements: [],
+          evidence: [],
+        },
+      },
+    });
+    const { container } = render(
+      <SearchFeed
+        query="peul"
+        language="fr"
+        state="exact"
+        results={[result]}
+        subjects={[result]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    const block = container.querySelector('[data-feed-block="appellations"]');
+    const forms = Array.from(
+      block?.querySelectorAll<HTMLElement>("[data-appellation]") ?? [],
+      (chip) => chip.textContent ?? ""
+    );
+    expect(forms[0]).toContain(selfName);
+    expect(
+      forms.findIndex((form) => form.includes("Fula (Fulbe / Peul)"))
+    ).toBeGreaterThan(0);
+  });
+
   // @req REQ-180
   it("omits the dated-attestation silence when the corpus dates a form", () => {
     const result = namedResult({

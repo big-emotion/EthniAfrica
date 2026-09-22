@@ -187,7 +187,7 @@ def chip(form, d):
 
 def appellations(c, d):
     title = c.get("forms_title", "Les appellations")
-    sub = c.get("forms_sub", "Les plus communes d&#39;abord. Aucune n&#39;est « la bonne ».") if d else None
+    sub = c.get("forms_sub", "Le nom que chaque peuple se donne d&#39;abord, puis les autres. Aucune n&#39;est « la bonne ».") if d else None
     out = h2(title, d, sub)
     cap = 4 if d else 3
     forms = list(c["forms"])

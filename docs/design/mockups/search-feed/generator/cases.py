@@ -65,7 +65,7 @@ CASES = [
         verdict="Sept noms venus du dehors. Aucun n'est le sien.",
         sub="Ils se disent <strong>Fulbe</strong> au pluriel, <strong>Pullo</strong> au singulier.",
         lens=[("Shorts", 4), ("Images", 3), ("Jeux", True), ("Fiches", 11)],
-        forms=[("Peul", "votre recherche", "you"), ("Fulani", "haoussa", ""), ("Fula", "mandingue", ""), ("Fellata", "péjoratif", "bad")],
+        forms=[("Fulbe", "leur nom", "own"), ("Peul", "votre recherche", "you"), ("Fulani", "haoussa", ""), ("Fula", "mandingue", ""), ("Fellata", "péjoratif", "bad")],
         shorts=dict(sub="Chacun répond à « D'où vient le nom… ? » en moins d'une minute.",
                     items=[("Peul", "0:43", None), ("Fulbe", "0:40", None), ("Fulani", "0:39", None), ("Pulaar", "0:42", "La langue")]),
         origins=dict(sub="Chaque forme, sa langue d'origine, et qui l'emploie aujourd'hui.", cards=[
