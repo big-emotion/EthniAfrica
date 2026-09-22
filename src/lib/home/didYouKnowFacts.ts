@@ -343,7 +343,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
     headline: "Le même peuple change de nom à chaque frontière qu'il traverse.",
     body: [
       "Ils se nomment Fulɓe au pluriel, Pullo au singulier. Le français dit Peul, emprunté au wolof ; l'anglais dit Fulani, emprunté au haoussa ; on lit aussi Fula, et Fellata au Tchad et au Soudan. Leur langue s'appelle pulaar à l'ouest et fulfulde à l'est.",
-      "Aucun de ces noms n'est faux, et un seul est le leur. La dispersion du vocabulaire suit celle du peuple : présents du Sénégal au Soudan, les Fulɓe ont été nommés par chacun de leurs voisins, puis par chaque administration coloniale qui les a rencontrés, dans la langue qu'elle avait sous la main.",
+      "Plusieurs noms coexistent, et un seul est celui qu'ils se donnent eux-mêmes. La dispersion du vocabulaire suit celle du peuple : présents du Sénégal au Soudan, les Fulɓe ont été nommés par chacun de leurs voisins, puis par chaque administration coloniale qui les a rencontrés, dans la langue qu'elle avait sous la main.",
     ],
     entities: [
       { kind: "people", id: "PPL_FULA", label: "Fulɓe (Peul)" },
