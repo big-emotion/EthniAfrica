@@ -173,7 +173,7 @@ export const legalPagesEn: Readonly<
   },
   accessibility: {
     provenance: "machine",
-    eyebrow: "An atlas open to everyone",
+    eyebrow: "A project open to everyone",
     title: "Accessibility",
     lastUpdated: "Last updated: 25 July 2026",
     introduction:

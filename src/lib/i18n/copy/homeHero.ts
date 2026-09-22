@@ -11,6 +11,8 @@ export interface HomeHeroCopy {
    * change touches.
    */
   searchPlaceholder: string;
+  /** The sentence under the question. One string, so SWC cannot drop a space. */
+  answer: string;
 }
 
 /**
@@ -36,9 +38,13 @@ export const homeHeroCopy: Record<Language, HomeHeroCopy> = {
   en: {
     question: "Where does this name come from?",
     searchPlaceholder: "E.g. Keïta, Lingala, Fula",
+    answer:
+      "Explore the map, read the dossiers, play: the history of the names of Africa’s peoples, with the sources to hand.",
   },
   fr: {
     searchPlaceholder: "Ex. : Keïta, Lingala, Peul",
+    answer:
+      "Explorez la carte, lisez les dossiers, jouez : l'histoire des noms des peuples d'Afrique, sources à l'appui.",
     question: "D’où vient ce nom ?",
   },
 };

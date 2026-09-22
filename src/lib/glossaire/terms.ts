@@ -66,7 +66,7 @@ const DOMAIN_TERMS: GlossaryTerm[] = [
     fr: "peuple",
     en: "people",
     forbiddenEn: ["tribe", "tribes", "ethnic group", "ethnic groups"],
-    note: "Both alternatives carry the colonial framing the atlas exists to refuse: one hierarchises, the other essentialises. A people is a people.",
+    note: "Both alternatives carry the colonial framing our project exists to refuse: one hierarchises, the other essentialises. A people is a people.",
   },
   {
     key: "domain.famille-linguistique",

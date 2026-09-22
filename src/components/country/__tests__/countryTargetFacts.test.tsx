@@ -84,7 +84,7 @@ describe("country target facts", () => {
 
     render(<>{facts.NGA?.body}</>);
     expect(
-      screen.getByText("Aucun peuple rattaché à ce pays dans l’atlas.")
+      screen.getByText("Aucun peuple rattaché à ce pays pour l’instant.")
     ).toBeInTheDocument();
     expect(screen.queryByText("Premières entrées")).toBeNull();
   });
@@ -178,7 +178,7 @@ describe("buildCountryAtlasFacts (REQ-117)", () => {
     render(<>{kenya?.body}</>);
 
     expect(
-      screen.getByText(/Aucun peuple rattaché à ce pays dans l’atlas/)
+      screen.getByText(/Aucun peuple rattaché à ce pays pour l’instant/)
     ).toBeInTheDocument();
     expect(kenya?.description).not.toContain("0 peuple");
     expect(kenya?.description).toMatch(/^KEN ·/);

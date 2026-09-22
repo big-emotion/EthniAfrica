@@ -5,7 +5,7 @@ const en = {
     metadataTitle: "Reports",
     title: "Reports",
     guidance:
-      "Deciding on a report does not change the fiche: the decision records what the atlas thinks of the report, while correcting the corpus is a separate editorial act. A decision that closes a report requires a note, which is published with it.",
+      "Deciding on a report does not change the fiche: the decision records what we think of the report, while correcting the corpus is a separate editorial act. A decision that closes a report requires a note, which is published with it.",
     statusFilter: "Status",
     allStatuses: "All statuses",
     kindFilter: "Report type",
@@ -155,7 +155,7 @@ const fr: AdminCopy = {
     metadataTitle: "Signalements",
     title: "Signalements",
     guidance:
-      "Statuer sur un signalement ne modifie pas la fiche : la décision dit ce que l'atlas pense de la remarque, tandis que la correction du corpus est un acte éditorial distinct. Une décision qui clôt un signalement demande une note, qui est publiée avec lui.",
+      "Statuer sur un signalement ne modifie pas la fiche : la décision dit ce que nous pensons de la remarque, tandis que la correction du corpus est un acte éditorial distinct. Une décision qui clôt un signalement demande une note, qui est publiée avec lui.",
     statusFilter: "Statut",
     allStatuses: "Tous les statuts",
     kindFilter: "Type de signalement",

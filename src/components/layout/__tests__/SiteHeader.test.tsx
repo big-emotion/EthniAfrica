@@ -999,7 +999,7 @@ describe("SiteHeader — the controls that stay in the bar", () => {
       "Open menu"
     );
     expect(screen.getByText("Africa through its names")).toBeVisible();
-    for (const label of ["The atlas", "The dossiers", "Play"]) {
+    for (const label of ["Browse", "The dossiers", "Play"]) {
       expect(screen.getByRole("button", { name: label })).toBeVisible();
     }
   });

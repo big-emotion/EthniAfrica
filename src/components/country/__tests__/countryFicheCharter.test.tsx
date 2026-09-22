@@ -407,7 +407,7 @@ describe("country fiche charter", () => {
     const chapter = container.querySelector('[data-fiche-section="Langues"]');
     expect(chapter).toHaveTextContent("Yoruba");
     expect(chapter?.querySelector(".afh-parchment-note")).toHaveTextContent(
-      "Déduit des pages peuple documentées dans l’atlas."
+      "Déduit des pages peuple documentées ici."
     );
   });
 

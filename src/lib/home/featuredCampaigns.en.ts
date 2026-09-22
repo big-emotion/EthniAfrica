@@ -40,7 +40,7 @@ export const FEATURED_CAMPAIGNS_EN: Record<
       { label: "Toucouleur" },
     ],
     quote:
-      "None of the readings proposed for Fulɓe and Pullo is established, and the atlas endorses none of them.",
+      "None of the readings proposed for Fulɓe and Pullo is established, and we endorse none of them.",
     sources: [
       { title: "Breedveld (1995)" },
       { title: "Hampâté Bâ (1966)" },

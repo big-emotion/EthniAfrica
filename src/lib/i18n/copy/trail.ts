@@ -51,7 +51,7 @@ export const TRAIL_PAGE_LABELS: Record<Language, Record<PageType, string>> = {
     // `ACCESS_MODE_LABELS`, which is French and read by ninety-odd callers
     // that take one shape from it; changing its shape would move all of
     // them for three words.
-    atlasHub: "The atlas",
+    atlasHub: "Browse",
     dossiersHub: "The dossiers",
     jeuxHub: "Play",
   },

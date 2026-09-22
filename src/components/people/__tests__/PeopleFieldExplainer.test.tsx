@@ -14,7 +14,7 @@ describe("PeopleFieldExplainer (REQ-116)", () => {
     render(<PeopleFieldExplainer distribution={distribution} language="en" />);
     expect(
       screen.getByText(
-        /no atlas source states where this people's presence ends/i
+        /no source we cite states where this people's presence ends/i
       )
     ).toBeVisible();
     expect(screen.getByText(/2 populations by country/i)).toBeVisible();

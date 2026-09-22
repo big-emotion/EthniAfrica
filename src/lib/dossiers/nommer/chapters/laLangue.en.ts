@@ -17,7 +17,7 @@ export const CHAPITRE_LA_LANGUE_EN: DossierChapterTranslation = {
   question:
     "The word ‘Bantu’ files hundreds of peoples. Who coined it, and to what end?",
   standfirst:
-    "A label born in a colonial office today classifies the largest language family on the continent. It is scientifically useful and politically toxic, and the atlas goes on using it.",
+    "A label born in a colonial office today classifies the largest language family on the continent. It is scientifically useful and politically toxic, and we go on using it.",
   measure: {
     value: "‘Bantu’, 1862",
     unit: "first attestation",
@@ -28,7 +28,7 @@ export const CHAPITRE_LA_LANGUE_EN: DossierChapterTranslation = {
       heading: "A word coined in an office, in 1862",
       blocks: {
         "un-nom-sans-locuteurs":
-          "The atlas files its 776 peoples under twenty-four language families. The largest bears a name that has no speakers: nobody ever called themselves ‘Bantu’ before a linguist wrote it down.",
+          "We file our 776 peoples under twenty-four language families. The largest bears a name that has no speakers: nobody ever called themselves ‘Bantu’ before a linguist wrote it down.",
         "bleek-et-abantu":
           "The word is coined in 1862 by Wilhelm Bleek, in his Comparative Grammar of South African Languages. He takes the Zulu abantu, ‘the people’ — ba-, the human plural prefix, and -ntu, the person — and makes it a label of classification. The gesture is ordinary in nineteenth-century comparative philology; what is less so is the place.",
         "bleek-dans-ladministration":
@@ -73,7 +73,7 @@ export const CHAPITRE_LA_LANGUE_EN: DossierChapterTranslation = {
         "le-tswana-en-quatre-mots":
           "Tswana shows it in four words on a single root: Botswana the country, Batswana the people, Motswana a person, Setswana the language. Where French and English say ‘Tswana’ for all four, the language distinguished them.",
         "le-prefixe-coupe":
-          "European usage cut off the prefix. What remains is a bare stem that serves indifferently as a language name, a people name and an adjective — and the ambiguity the atlas spends its time undoing was partly born there.",
+          "European usage cut off the prefix. What remains is a bare stem that serves indifferently as a language name, a people name and an adjective — and the ambiguity we spend our time undoing was partly born there.",
       },
       pairs: [
         {
@@ -106,7 +106,7 @@ export const CHAPITRE_LA_LANGUE_EN: DossierChapterTranslation = {
         "aucun-substitut":
           "Everywhere else, it remains the standard technical term, and no substitute covers the same family. ‘Niger-Congo’ designates a far larger set; the regional periphrases leave out half the languages concerned. To give up the word would be to give up stating a real kinship.",
         "garder-et-expliquer":
-          "The atlas therefore settles it in one direction only: it keeps the word and it explains it. That is the clearest application of its own doctrine — nothing is forbidden, everything is labelled — and it is also the least comfortable position, because it offers nobody the relief of a new word.",
+          "We therefore settle it in one direction only: we keep the word and we explain it. That is the clearest application of our own doctrine — nothing is forbidden, everything is labelled — and it is also the least comfortable position, because it offers nobody the relief of a new word.",
       },
     },
     "la-regle-qui-en-sort": {
@@ -116,7 +116,7 @@ export const CHAPITRE_LA_LANGUE_EN: DossierChapterTranslation = {
         "glossonyme-nest-pas-ethnonyme":
           "A glossonym is not an ethnonym, and a language family does not describe a population — still less an ancestry. That two peoples speak related languages says that a word travelled, not that people carried it.",
         "le-classement-est-un-outil":
-          "The corpus nonetheless files every people under a family, and this page is the best critique of it available: the classification is a reading tool, never an origin. Where the atlas uses a label coined elsewhere, it says so on the fiche rather than here.",
+          "The corpus nonetheless files every people under a family, and this page is the best critique of it available: the classification is a reading tool, never an origin. Where we use a label coined elsewhere, we say so on the fiche rather than here.",
       },
     },
   },

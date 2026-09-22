@@ -9,7 +9,7 @@ const en = {
     mainLanguage: "Main language",
     linguisticFamily: "Language family",
     namesReferencedHere: "Linked names",
-    missingData: "Not recorded in the atlas",
+    missingData: "Not recorded",
     factTier: "Source tier",
     populationDisagreement: (declared: string, summed: string) =>
       `The declared total is ${declared} people, while the populations listed by country add up to ${summed}. These figures do not agree.`,
@@ -62,12 +62,12 @@ const en = {
   },
   field: {
     explanation: (count: number) =>
-      `On a country page, the line closes because an administrative boundary is published and dated. Nothing comparable exists here: no atlas source states where this people's presence ends. What the atlas declares is ${count} populations by country. The map follows exactly that — one halo per country, whose area follows the population and whose border is zero. A closed outline would assert an inside and an outside that nobody can source.`,
+      `On a country page, the line closes because an administrative boundary is published and dated. Nothing comparable exists here: no source we cite states where this people's presence ends. What we declare is ${count} populations by country. The map follows exactly that — one halo per country, whose area follows the population and whose border is zero. A closed outline would assert an inside and an outside that nobody can source.`,
     legend: "Decreasing density, no border",
     offMapOne:
-      "One declared presence is outside the map, as the atlas covers only Africa:",
+      "One declared presence is outside the map, as our project covers only Africa:",
     offMapMany: (count: number) =>
-      `${count} declared presences are outside the map, as the atlas covers only Africa:`,
+      `${count} declared presences are outside the map, as our project covers only Africa:`,
   },
   originFields: {
     ancientOrigins: "Ancient origins",
@@ -177,7 +177,7 @@ const fr: PeopleCopy = {
     mainLanguage: "Langue principale",
     linguisticFamily: "Famille linguistique",
     namesReferencedHere: "Noms rattachés",
-    missingData: "Non renseigné dans l’atlas",
+    missingData: "Non renseigné",
     factTier: "Niveau de source",
     populationDisagreement: (declared, summed) =>
       `Le total déclaré est de ${declared} personnes, tandis que les populations indiquées par pays totalisent ${summed}. Ces chiffres ne concordent pas.`,
@@ -226,12 +226,12 @@ const fr: PeopleCopy = {
   },
   field: {
     explanation: (count) =>
-      `Sur la page d'un pays, le trait se referme parce qu'une frontière administrative est publiée et datée. Ici, rien de tel n'existe : aucune source de l’atlas ne dit où la présence de ce peuple s'arrête. Ce que l’atlas déclare, ce sont ${count} populations par pays. La carte s'en tient exactement à cela — un halo par pays, dont l'aire suit la population et dont le bord vaut zéro. Un tracé fermé aurait affirmé un dedans et un dehors que personne ne peut sourcer.`,
+      `Sur la page d'un pays, le trait se referme parce qu'une frontière administrative est publiée et datée. Ici, rien de tel n'existe : aucune source que nous citons ne dit où la présence de ce peuple s'arrête. Ce que nous déclarons, ce sont ${count} populations par pays. La carte s'en tient exactement à cela — un halo par pays, dont l'aire suit la population et dont le bord vaut zéro. Un tracé fermé aurait affirmé un dedans et un dehors que personne ne peut sourcer.`,
     legend: "Densité décroissante, bord nul",
     offMapOne:
-      "Une présence déclarée est hors carte, l'atlas ne couvrant que l'Afrique :",
+      "Une présence déclarée est hors carte, notre projet ne couvrant que l'Afrique :",
     offMapMany: (count) =>
-      `${count} présences déclarées sont hors carte, l'atlas ne couvrant que l'Afrique :`,
+      `${count} présences déclarées sont hors carte, notre projet ne couvrant que l'Afrique :`,
   },
   originFields: {
     ancientOrigins: "Origines anciennes",

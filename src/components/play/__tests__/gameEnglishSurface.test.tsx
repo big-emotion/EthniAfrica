@@ -72,7 +72,7 @@ describe("the English game surface", () => {
       "Algeria covers the larger area."
     );
     expect(screen.getByTestId("game-reveal-provenance")).toHaveTextContent(
-      "According to the boundary outlines published by the atlas."
+      "According to the boundary outlines published by EthniAfrica."
     );
     expect(screen.getByTestId("game-reveal-fiche-link")).toHaveAttribute(
       "href",
