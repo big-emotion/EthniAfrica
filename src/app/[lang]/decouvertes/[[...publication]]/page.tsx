@@ -32,9 +32,13 @@ export const viewport: Viewport = {
 function requestedEntry(lang: string, parts?: string[]) {
   if (!isLocale(lang) || (parts && parts.length !== 1)) notFound();
   const entries = eligiblePublications(getDiscoveryPublications());
+  // The bare route is what every link into the feed targets, so it opens on
+  // the shuffled deck's head: the catalog's first entry would greet every
+  // reader with the same publication on every visit.
+  const opening = parts ? null : orderedDeck(entries)[0];
   const selected = parts
     ? resolvePublication(entries, lang, parts[0])
-    : (entries[0] ?? null);
+    : (entries.find((entry) => entry.id === opening) ?? null);
   if (!selected) notFound();
   return { language: lang, entries, selected };
 }
