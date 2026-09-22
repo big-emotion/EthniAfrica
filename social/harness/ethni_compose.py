@@ -242,7 +242,11 @@ _mesureur = ImageDraw.Draw(Image.new("RGB", (8, 8)))
 # spelling, drew the empty .notdef box in the Mbappé reel's caption because this
 # path measured text and never asked whether the face could draw it. Noto Sans
 # carries it; a character the face lacks is drawn by Noto, the rest stays put.
-_FACE_DE_REPLI = "NotoSans-Bold.ttf"
+#
+# Noto Sans carries neither Khmer nor Hebrew, and two Commons authors credited on
+# the introductory reel sign in those scripts: their names drew as boxes. The
+# script faces follow Noto Sans in order; a character goes to the first that has it.
+_FACES_DE_REPLI = ("NotoSans-Bold.ttf", "NotoSansKhmer-Bold.ttf", "NotoSansHebrew-Bold.ttf")
 _fontes_de_repli = {}
 _trous = {}
 
@@ -263,18 +267,21 @@ def _porte(f, ch):
     return (m.size, bytes(m)) != _trous[cle]
 
 
-def _fonte_de_repli(f):
+def _fonte_de_repli(f, ch):
+    """The first fallback face that draws `ch` — Noto Sans when none does, which
+    keeps the hole visible rather than hiding it behind a face that lacks it too."""
     if f.size not in _fontes_de_repli:
-        _fontes_de_repli[f.size] = ImageFont.truetype(
-            str(tk.font_file(_FACE_DE_REPLI)), f.size)
-    return _fontes_de_repli[f.size]
+        _fontes_de_repli[f.size] = [ImageFont.truetype(str(tk.font_file(nom)), f.size)
+                                    for nom in _FACES_DE_REPLI]
+    faces = _fontes_de_repli[f.size]
+    return next((g for g in faces if _porte(g, ch)), faces[0])
 
 
 def _suites(texte, f):
     """`texte` cut into runs, each with the font that can draw it."""
     suites = []
     for ch in texte:
-        g = f if ch.isspace() or _porte(f, ch) else _fonte_de_repli(f)
+        g = f if ch.isspace() or _porte(f, ch) else _fonte_de_repli(f, ch)
         if suites and suites[-1][1] is g:
             suites[-1][0] += ch
         else:

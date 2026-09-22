@@ -1126,6 +1126,21 @@ def test_a_glyph_the_face_lacks_is_drawn_by_a_fallback_not_as_a_hole():
         assert _encre_de("m'bapɛ", f) != _encre_de("m'bap", f), taille
 
 
+def test_a_credit_in_khmer_or_hebrew_names_its_author_not_a_row_of_boxes():
+    """Two Commons authors of the introductory reel sign in Khmer and in Hebrew.
+
+    Noto Sans, the only fallback, carries neither script, so both credits drew
+    .notdef boxes: an attribution nobody can read, on a CC BY image that owes one.
+    Every run must now be drawn by a face that carries each of its characters.
+    """
+    for auteur in ("ព្រះមហាក្សត្ររាជ", "ויקיג'אנקי"):
+        for taille in (24, 30):
+            f = gab.fonte("nunito", taille, 700)
+            for suite, g in gab._suites(f"{auteur} · CC0", f):
+                trous = [ch for ch in suite if not ch.isspace() and not gab._porte(g, ch)]
+                assert not trous, f"{auteur} : {trous} sans glyphe à {taille}"
+
+
 def test_a_line_the_face_covers_is_drawn_exactly_as_before():
     """The fallback must not re-render the back catalogue: a covered line keeps
     the one `d.text` call it always had, so its pixels do not move."""
