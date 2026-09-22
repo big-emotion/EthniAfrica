@@ -72,6 +72,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Alignment plan — editorial promise and connected series](editorial/strategy/alignment-plan-2026-09-22.md)
 - [Strategy evidence — refreshed 2026-09-22](editorial/strategy/evidence-2026-09-22.md)
 - [Editorial orientation report — 2026-09-22](editorial/strategy/report-2026-09-22.md)
+- [External research — Mali, Dioula/Jula, Traoré (2026-09-22)](editorial/strategy/research-mali-dioula-traore-2026-09-22.md)
 - [Publication roadmap — 25 September to 25 December 2026](editorial/strategy/roadmap-2026-q4.md)
 - [Translation classes](editorial/translation-classes.md)
 - [Interface copy](editorial/ui-copy.md)

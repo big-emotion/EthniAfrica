@@ -69,7 +69,8 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     eyebrow: "Where this name comes from",
     disambiguation: "Which one are you looking for?",
     appellations: "The names",
-    appellationsLead: "The most common first. None of them is “the right one”.",
+    appellationsLead:
+      "The name each people gives itself first, then the others. None of them is “the right one”.",
     origins: "Where they come from",
     selfGiven: "What the peoples call themselves",
     problem: "What these names raise",
@@ -92,7 +93,7 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     unknownName: "We do not know this name.",
     unknownNameBody:
       "That is not an answer: it is a confession. If this name is yours, or one of a people, a language or a place you know, tell us. That is how our project grows.",
-    noExactMatch: "No entry carries exactly",
+    noExactMatch: "No exact result for",
     searchUnavailable:
       "Search is temporarily unavailable. Try again in a moment.",
     browsePeoples: "Browse the peoples",
@@ -105,7 +106,8 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     eyebrow: "D'où vient ce nom",
     disambiguation: "Lequel cherchez-vous ?",
     appellations: "Les appellations",
-    appellationsLead: "Les plus communes d'abord. Aucune n'est « la bonne ».",
+    appellationsLead:
+      "Le nom que chaque peuple se donne d'abord, puis les autres. Aucune n'est « la bonne ».",
     origins: "D’où elles viennent",
     selfGiven: "Ce que les peuples se donnent",
     problem: "Ce que ces noms posent",
@@ -128,7 +130,7 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     unknownName: "Nous ne connaissons pas ce nom.",
     unknownNameBody:
       "Ce n’est pas une réponse : c’est un aveu. Si ce nom est le vôtre, ou celui d’un peuple, d’une langue ou d’un lieu que vous connaissez, dites-le-nous. C’est comme ça que notre projet grandit.",
-    noExactMatch: "Aucune fiche ne porte exactement",
+    noExactMatch: "Aucun résultat exact pour",
     searchUnavailable:
       "La recherche est momentanément indisponible. Réessayez dans un instant.",
     browsePeoples: "Parcourir les peuples",

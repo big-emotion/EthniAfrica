@@ -357,6 +357,20 @@ describe("HomeHeroSearch", () => {
     );
   });
 
+  // @req REQ-178
+  it("names a people suggestion by its self-given name first", async () => {
+    renderSearch(async () => [
+      { ...YORUBA, name: "Fula (Fulbe / Peul)", autonym: "Fulbe" },
+    ]);
+
+    await type("peul");
+    await screen.findByRole("listbox");
+
+    expect(screen.getByRole("option")).toHaveTextContent(
+      "Fulbe — Fula (Fulbe / Peul)"
+    );
+  });
+
   /**
    * The answer is settled inside `act`, on fake timers. The render that
    * delivers the options also resets the highlight in an effect; waiting for

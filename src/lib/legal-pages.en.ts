@@ -99,7 +99,7 @@ export const legalPagesEn: Readonly<
     provenance: "machine",
     eyebrow: "Privacy and transparency",
     title: "Data policy",
-    lastUpdated: "Last updated: 20 September 2026",
+    lastUpdated: "Last updated: 22 September 2026",
     introduction:
       "EthniAfrica limits the collection of personal data to what is strictly necessary and clearly distinguishes account data, editorial contributions and technical measurements.",
     sections: [
@@ -138,6 +138,7 @@ export const legalPagesEn: Readonly<
           "Microsoft Corporation, through its Microsoft Graph service, sends the site’s emails: sign-in link, moderation notifications sent to contributors, and contact-form messages passed to the publisher. These emails pass through its servers together with the address of their recipient, and are held at rest by Microsoft, in the publisher’s Microsoft 365 tenant, in the European Union (today, in France).",
           "Upstash, Inc. and Microsoft Corporation are companies under United States law: access from the United States, or a transfer of this data to that country, cannot be ruled out, even though Upstash’s counter and the emails Microsoft holds are located in the European Union. The publisher’s own servers are also located there.",
           "When you ask for a production to play on the site, the YouTube player is loaded from youtube-nocookie.com, provided by Google Ireland Limited. Playback happens only after an explicit action on your part: no request is made to Google until you ask for one. Google then receives your IP address, your browser’s characteristics and the playback context, and writes to your device, under its own policy, local storage and cookies. At our last check, the player tried to write two cookies: “TESTCOOKIESENABLED”, which by its name checks that the browser accepts cookies, and “LAST_RESULT_ENTRY_KEY”, whose name repeats that of one of the player’s local-storage keys. Depending on your browser, these cookies are refused outright or stored. That processing is Google’s, as a separate controller; its retention periods are Google’s and are not set by EthniAfrica. It involves a transfer outside the European Union, framed by the standard contractual clauses and the EU–US Data Privacy Framework. Your choice is kept for twelve months and can be withdrawn at any time from “Cookie settings”. Every production remains reachable directly on the platform that publishes it, without going through the player.",
+          "The five “Document an entry in detail” forms offered on the Contribute page are hosted by Google Forms, a service of Google Ireland Limited. They open only if you follow their link. What you type there, including your email address if the form asks for it, is sent to Google and kept with the form’s responses in the publisher’s Google account, which reviews them before anything is published. This processing may involve a transfer outside the European Union, governed by the standard contractual clauses and the EU–US Data Privacy Framework.",
           "No personal data is sold, rented or used for advertising profiling.",
         ],
       },

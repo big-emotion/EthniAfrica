@@ -7,6 +7,7 @@ import { ActionLink } from "@/components/ui/ActionLink";
 import { formatNumber } from "@/lib/languageTag";
 import type { Language } from "@/types/shared";
 import { peopleCopy } from "@/lib/i18n/copy/people";
+import { peopleDisplayLabel } from "@/lib/search/peopleDisplayNames";
 
 const ONE_DECIMAL: Intl.NumberFormatOptions = {
   minimumFractionDigits: 1,
@@ -29,14 +30,18 @@ const ONE_DECIMAL: Intl.NumberFormatOptions = {
 export function buildPeoplePresenceFacts({
   language,
   peopleName,
+  selfName,
   demography,
 }: {
   language: Language;
   peopleName: string;
+  /** `content.appellations.selfAppellation`; the title opens on it when set. */
+  selfName?: string | null;
   peopleId: string;
   demography: GlobalDemographySection | undefined;
 }): Partial<Record<CountryId, AtlasTargetFacts>> {
   const copy = peopleCopy[language].presenceFacts;
+  const displayName = peopleDisplayLabel(selfName, peopleName);
   const distribution = demography?.distributionByCountry ?? [];
   if (distribution.length === 0) return {};
 
@@ -54,7 +59,7 @@ export function buildPeoplePresenceFacts({
     const share = total > 0 ? (population / total) * 100 : 0;
 
     facts[entry.country] = {
-      title: `${peopleName} ${inCountry(entry.country, countryName, language)}`,
+      title: `${displayName} ${inCountry(entry.country, countryName, language)}`,
       description: copy.description(entry.country),
       // The declared population, as the mockup's own list carries it. A
       // country the fiche declares without a figure gets no line rather than

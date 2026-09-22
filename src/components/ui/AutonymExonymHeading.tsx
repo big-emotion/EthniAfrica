@@ -218,13 +218,19 @@ export function AutonymExonymHeading({
             PPL_YORUBA beside the name it identifies. A reader who can see the
             name has no use for the key, and the three callers that passed one
             were listing peoples, where the name is the whole point. */}
+        {/* The name the people gives itself heads the row, the filed name
+            follows (operator ruling, 2026-09-22) — the same order the fiche's
+            own heading and the result page use. */}
         <div className="flex items-center gap-2 flex-wrap">
-          <h2 className="font-semibold text-afh-small">{exonym}</h2>
+          <h2
+            className="font-semibold text-afh-small"
+            lang={showAutonym ? autonymLang : undefined}
+          >
+            {showAutonym ? autonym : exonym}
+          </h2>
         </div>
         {showAutonym && (
-          <p className="text-afh-small text-muted-foreground italic">
-            {autonym}
-          </p>
+          <p className="text-afh-small text-muted-foreground">{exonym}</p>
         )}
       </div>
     );
