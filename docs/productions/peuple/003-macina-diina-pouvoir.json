@@ -1,0 +1,22 @@
+{
+  "campaign": "macina-diina-pouvoir",
+  "typologie": "peuple",
+  "episode": 3,
+  "question": {
+    "fr": "D'où vient le nom Macina ?",
+    "en": "Where does the name Macina come from?"
+  },
+  "myth": {
+    "fr": "Le nom Macina date-t-il l'apparition des Fulbe ?",
+    "en": "Does the name Macina date the first appearance of the Fulbe?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_FULANI_MASSINA",
+      "label": { "fr": "Fulbe du Massina", "en": "Fulbe of the Massina" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_FULANI_MASSINA",
+  "publications": []
+}
