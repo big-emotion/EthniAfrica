@@ -1,13 +1,8 @@
 import Link from "next/link";
 
-import {
-  ChapterPlate,
-  type PlateSource,
-} from "@/components/pages/ChapterPlate";
 import { MODULE_DEFINITIONS } from "@/lib/hubs/moduleRegistry";
 import {
   aboutPage,
-  aboutPlates,
   accessModeCards,
   chapterSteps,
   purposeChapter,
@@ -25,8 +20,8 @@ interface AboutPageContentProps {
  * anatomy across its top-level sections; the prose carries no reading measure
  * and fills the page box it shares with its title.
  *
- * Trimmed twice, for the same reason each time: the page asked for more
- * reading than a visitor gives it.
+ * Trimmed three times now, for the same reason each time: the page asked for
+ * more reading — and more looking — than a visitor gives it.
  *
  * The first pass (2026-09-01) cut three blocks that duplicated content sitting
  * right next to them — the example-country cards, the interactive access cards
@@ -34,10 +29,20 @@ interface AboutPageContentProps {
  * `/[lang]/sources`, because a reading list is not part of the project pitch.
  *
  * The second (2026-09-11) cut the three-block naming argument that sat between
- * chapters 01 and 02. It was the longest stretch of prose on the surface, and
- * nothing else imported it, so the component went with it. Three of its four
- * cleared images came back the same day as chapter plates: the argument they
- * carried was worth keeping, the three screens of prose around them were not.
+ * chapters 01 and 02. Three of its four cleared images came back the same day
+ * as chapter plates.
+ *
+ * The third (2026-09-22, operator ruling) retired those plates, and every
+ * tinted card and coloured accent bar in the three chapters below, in favour
+ * of a sober, minimalist reading of the doctrine — text and rhythm only. This
+ * is a deliberate exception to the brand charter's §9 imagery doctrine (a
+ * surface with more than one image carries more than one register) and §5.2
+ * (a page has one accent): the operator chose plain typography for this
+ * specific page over both. The three images (Ogilby's `Guinea`, the Tifinagh
+ * photograph, al-Idrisi's map) are not retired from the product — they still
+ * open the home hero and the "Did you know" band
+ * (`src/lib/home/homeHeroVisuals.ts`, `src/lib/home/didYouKnowIllustrations.ts`)
+ * and stay credited in `public/images/home/CREDITS.md`.
  *
  * Every word now lives in `lib/i18n/copy/about.ts`, which is the slice that
  * file's own comment left for a later change.
@@ -57,53 +62,15 @@ const corpusNoun = (page: PageType): string =>
     (module) => module.accessMode === "atlas" && module.page === page
   )?.corpusNoun ?? "";
 
-/**
- * The plate that opens each chapter, and where its original lives. Three
- * registers on one surface, which is what the brand charter asks of any page
- * carrying more than one image: the colonial document, a people's own record,
- * and a map drawn from inside Africa.
- *
- * Provenance and the licence, read from the Commons API rather than assumed,
- * are kept for a maintainer in `public/images/home/CREDITS.md`.
- */
-const PLATES: Record<string, PlateSource> = {
-  ogilby: {
-    id: "ogilby",
-    src: "/images/home/guinea-ogilby-1670.jpg",
-    width: 900,
-    height: 595,
-    sourceHref:
-      "https://commons.wikimedia.org/wiki/File:1670_Ogilby_Map_of_West_Africa_(_Gold_Coast,_Slave_Coast,_Ivory_Coast_)_-_Geographicus_-_Guinea-ogilby-1670.jpg",
-  },
-  tifinagh: {
-    id: "tifinagh",
-    src: "/images/home/tifinagh-algeria.jpg",
-    width: 900,
-    height: 529,
-    sourceHref: "https://commons.wikimedia.org/wiki/File:Tifinagh_Algeria.jpg",
-    licenceHref: "https://creativecommons.org/licenses/by-sa/2.0/",
-  },
-  idrisi: {
-    id: "idrisi",
-    src: "/images/home/al-idrisi-1154.jpg",
-    width: 960,
-    height: 1046,
-    sourceHref:
-      "https://commons.wikimedia.org/wiki/File:Al-Idrisi%27s_world_map.JPG",
-  },
-};
-
-/**
- * Which subject wears which accent, and where its link goes. Structure only —
- * every word is in the dictionary, so a copy change never reaches this file.
- */
-const SUBJECTS: { key: string; page: PageType; accentClass: string }[] = [
-  { key: "peoples", page: "peoples", accentClass: "afh-accent-ocre" },
-  { key: "languages", page: "languages", accentClass: "afh-accent-language" },
-  { key: "families", page: "families", accentClass: "afh-accent-terre" },
-  { key: "countries", page: "countries", accentClass: "afh-accent-teal" },
-  { key: "names", page: "names", accentClass: "afh-accent-neutral" },
-  { key: "patronymes", page: "patronymes", accentClass: "afh-accent-name" },
+/** Structure only — every word is in the dictionary, so a copy change never
+ *  reaches this file. */
+const SUBJECTS: { key: string; page: PageType }[] = [
+  { key: "peoples", page: "peoples" },
+  { key: "languages", page: "languages" },
+  { key: "families", page: "families" },
+  { key: "countries", page: "countries" },
+  { key: "names", page: "names" },
+  { key: "patronymes", page: "patronymes" },
 ];
 
 // @req REQ-091 @req REQ-132
@@ -111,7 +78,6 @@ export default function AboutPageContent({ language }: AboutPageContentProps) {
   const t = aboutPage[language];
   const purpose = purposeChapter[language];
   const steps = chapterSteps[language];
-  const plates = aboutPlates[language];
 
   return (
     <div className="mx-auto space-y-afh-6xl text-afh-text">
@@ -147,7 +113,6 @@ export default function AboutPageContent({ language }: AboutPageContentProps) {
         className="space-y-afh-xl"
         aria-labelledby="about-purpose-title"
       >
-        <ChapterPlate plate={PLATES.ogilby} copy={plates.ogilby} />
         <ChapterHeading
           id="about-purpose-title"
           stepLabel={purpose.stepLabel}
@@ -164,11 +129,12 @@ export default function AboutPageContent({ language }: AboutPageContentProps) {
             {purpose.claimStatus}
           </p>
         </div>
-        {/* The declaration the claim rests on, then the three sentences the
+        {/* The declaration the claim rests on, then the four sentences the
             atlas refuses with their reasons — the corrections are the doctrine
-            (docs/editorial/purpose-doctrine.md). */}
-        <div data-testid="about-declaration" className="space-y-afh-2xl">
-          <div className="grid grid-cols-1 gap-afh-xl min-[720px]:grid-cols-3">
+            (docs/editorial/purpose-doctrine.md). Read top to bottom, one
+            column: a sober page reads as prose, not as a wall of cards. */}
+        <div data-testid="about-declaration" className="space-y-afh-xl">
+          <div className="flex flex-col gap-afh-lg">
             {purpose.declaration.map((part) => (
               <div key={part.title} className="space-y-afh-sm">
                 <h3 className="font-afh-display text-afh-h3 font-black">
@@ -193,14 +159,11 @@ export default function AboutPageContent({ language }: AboutPageContentProps) {
               {purpose.refusals.title}
             </h3>
             <ul
-              className="grid grid-cols-1 gap-afh-md min-[720px]:grid-cols-3"
+              className="grid grid-cols-1 gap-afh-lg min-[720px]:grid-cols-2"
               role="list"
             >
               {purpose.refusals.items.map((item) => (
-                <li
-                  key={item.sentence}
-                  className="space-y-afh-xs border-l-2 border-afh-border pl-afh-md"
-                >
+                <li key={item.sentence} className="space-y-afh-xs">
                   <p className="font-afh-display text-afh-lead font-bold">
                     {item.sentence}
                   </p>
@@ -220,14 +183,11 @@ export default function AboutPageContent({ language }: AboutPageContentProps) {
           role="list"
         >
           {purpose.scales.map((scale) => (
-            <li
-              key={scale.title}
-              className="flex min-h-full flex-col border-t-2 border-[var(--accent)] bg-afh-bg-warm px-afh-md py-afh-lg"
-            >
+            <li key={scale.title} className="space-y-afh-xs">
               <h3 className="font-afh-display text-afh-h3 font-black">
                 {scale.title}
               </h3>
-              <p className="mt-afh-sm flex-1 text-afh-small leading-relaxed text-afh-text-soft">
+              <p className="text-afh-small leading-relaxed text-afh-text-soft">
                 {scale.body}
               </p>
             </li>
@@ -256,7 +216,6 @@ export default function AboutPageContent({ language }: AboutPageContentProps) {
       </section>
 
       <section className="space-y-afh-xl" aria-labelledby="about-content-title">
-        <ChapterPlate plate={PLATES.tifinagh} copy={plates.tifinagh} />
         <div className="space-y-afh-md">
           <ChapterHeading
             id="about-content-title"
@@ -275,7 +234,7 @@ export default function AboutPageContent({ language }: AboutPageContentProps) {
             return (
               <li
                 key={subject.key}
-                className={`${subject.accentClass} flex min-h-full flex-col border-t-2 border-[var(--accent)] bg-afh-bg-warm px-afh-md py-afh-lg`}
+                className="flex min-h-full flex-col border-t border-afh-border pt-afh-md"
               >
                 <h3 className="font-afh-display text-afh-h3 font-black">
                   {corpusNoun(subject.page)}
@@ -285,7 +244,7 @@ export default function AboutPageContent({ language }: AboutPageContentProps) {
                 </p>
                 <Link
                   href={getLocalizedRoute(language, subject.page)}
-                  className="mt-afh-md inline-flex min-h-[44px] items-center border-t border-afh-border pt-afh-sm text-afh-small font-bold text-[var(--accent-ink)] underline decoration-[var(--accent)] underline-offset-4"
+                  className="mt-afh-md inline-flex min-h-[44px] items-center text-afh-small font-bold text-[var(--accent-ink)] underline decoration-[var(--accent)] underline-offset-4"
                 >
                   {copy.linkLabel}
                 </Link>
@@ -295,54 +254,36 @@ export default function AboutPageContent({ language }: AboutPageContentProps) {
         </ul>
       </section>
 
-      <section
-        className="about-axes-section space-y-afh-2xl"
-        aria-labelledby="about-access-title"
-      >
-        <div className="mx-auto max-w-[1140px] space-y-afh-xl">
-          <ChapterPlate plate={PLATES.idrisi} copy={plates.idrisi} />
-          <div className="space-y-afh-md">
-            <ChapterHeading
-              id="about-access-title"
-              stepLabel={steps.accessModes}
-              heading={t.accessModes.title}
-            />
-            <p className="text-afh-text-soft">{t.accessModes.intro}</p>
-          </div>
-          <ul
-            data-testid="about-access-mode-list"
-            className="grid grid-cols-1 gap-afh-md min-[720px]:grid-cols-3"
-            role="list"
-          >
-            {accessModeCards[language].map((mode) => (
-              <li
-                key={mode.id}
-                data-testid={`about-access-mode-${mode.id}`}
-                className={`${mode.accentClass} border-l-2 border-[var(--accent)] pl-afh-md text-afh-small leading-relaxed text-afh-text-soft`}
-              >
-                <p className="font-bold text-afh-text">{mode.label}</p>
-                <p
-                  data-testid={`about-access-mode-description-${mode.id}`}
-                  className="mt-afh-xs"
-                >
-                  {mode.description}
-                </p>
-              </li>
-            ))}
-          </ul>
+      <section className="space-y-afh-xl" aria-labelledby="about-access-title">
+        <div className="space-y-afh-md">
+          <ChapterHeading
+            id="about-access-title"
+            stepLabel={steps.accessModes}
+            heading={t.accessModes.title}
+          />
+          <p className="text-afh-text-soft">{t.accessModes.intro}</p>
         </div>
-        <style>{`
-          .about-axes-section {
-            background: var(--afh-bg);
-            padding: 30px 20px 44px;
-            width: 100vw;
-            margin-left: calc(50% - 50vw);
-            margin-right: calc(50% - 50vw);
-          }
-          @media (min-width: 720px) {
-            .about-axes-section { padding: 40px 24px 60px; }
-          }
-        `}</style>
+        <ul
+          data-testid="about-access-mode-list"
+          className="grid grid-cols-1 gap-afh-md min-[720px]:grid-cols-3"
+          role="list"
+        >
+          {accessModeCards[language].map((mode) => (
+            <li
+              key={mode.id}
+              data-testid={`about-access-mode-${mode.id}`}
+              className="text-afh-small leading-relaxed text-afh-text-soft"
+            >
+              <p className="font-bold text-afh-text">{mode.label}</p>
+              <p
+                data-testid={`about-access-mode-description-${mode.id}`}
+                className="mt-afh-xs"
+              >
+                {mode.description}
+              </p>
+            </li>
+          ))}
+        </ul>
       </section>
     </div>
   );

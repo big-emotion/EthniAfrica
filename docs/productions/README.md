@@ -49,7 +49,8 @@ rule applies there once that skill is updated to write to this ledger.
   below. There is no fixed quota of new subjects per day or per week.
 - **One question, five typologies**: every subject answers « D'où vient le nom
   X ? », where X is a **peuple**, a **pays**, un **patronyme**, un **lieu**, or
-  une **langue** — plus one exception, **mot** (see "The mot exception").
+  une **langue** — plus the **mot** exception. Project introductions are recorded separately
+  without an episode (see "The introduction record").
 - **Per subject: a video, plus a carousel only when an attested myth supports
   it**, per GABARITS §1 bis. The video walks the appellations back through their
   history. The carousel opens on a sourced myth, ten images maximum. A subject
@@ -113,6 +114,25 @@ What differs from the five, and nothing else does:
 
 `question` and `myth` still end in `?` and every other rule of this file
 applies unchanged.
+
+## The introduction record
+
+The operator approved the project-intention essay adaptation on 2026-09-22.
+It introduces the connected series; it is not a name-origin episode or a
+vocabulary word. Its record is
+[introduction/comprendre-afrique-noms.json](introduction/comprendre-afrique-noms.json).
+
+- `typologie` is `introduction`; `episode` and `myth` must be explicitly `null`.
+  No episode zero or invented audience belief is required.
+- `subjects` is empty and `sitePath` is `/fr/about`: the piece explains the
+  project rather than documenting one corpus entity.
+- `question` still carries a question, in both languages when available.
+- The filename is `<campaign>.json`, without a numeric prefix. Introductions
+  do not enter episode sequences. Campaign uniqueness and media validation
+  still apply. With no attested myth, an introduction cannot register a carousel.
+- Registration is not approval of a rendering template. The standard
+  name-origin narration checker remains unchanged; its exception must be
+  reported during production and cannot be silently counted as a passing check.
 
 ## Current cadence — operator revision, 2026-09-22
 

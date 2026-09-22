@@ -158,34 +158,31 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
       {
         title: "A name is never fixed",
         paragraphs: [
-          "A name changes with time, and with whoever tells it. A people, a language or a place can carry several names at once: the one they give themselves, the ones their neighbours give them, the one an administration wrote down one day. Several names can coexist; we state their usages, their contexts and any disputes. They simply do not come from the same place. A name first imposed from outside can later become a real, lived belonging: its origin is not enough to judge its reality today.",
+          "A name changes with time and with whoever tells it: the one a people gives itself, the one its neighbours give it, the one an administration wrote down one day. Several names can coexist; we state their usages and any disputes. A name first imposed from outside can later become a real, lived belonging: its origin is not enough to judge its reality today.",
         ],
       },
       {
         title: "A source's relevance",
         paragraphs: [
-          "That is why several sources exist on the same name, and why they do not agree.",
-          "A source's relevance depends on the question being asked. Finding it takes work, and that work produces mistakes.",
+          "Several sources therefore exist on the same name, and they do not always agree. A source's relevance depends on the question being asked: finding it takes work, and that work produces mistakes.",
         ],
       },
       {
         title: "Those gaps still weigh",
         paragraphs: [
-          "Today still, the same people, the same language or the same place can carry several names depending on who is speaking. Those gaps sustain tensions. Understanding a name's history can shed light on a disagreement, without being enough to resolve it.",
+          "Today still, the same people can carry several names depending on who is speaking, and those gaps sustain tensions. Understanding a name's history can shed light on a disagreement, without being enough to resolve it.",
         ],
       },
       {
         title: "Nobody is being singled out",
         paragraphs: [
-          "These subjects are sensitive, and we know it. We are not trying to take legitimacy away from any people, any language or any person. We name the actors where the sources establish their role, without attributing a collective responsibility to today's populations.",
-          "If you feel singled out reading us, that is not the intent — and if we got it wrong, tell us: every correction is read.",
+          "These subjects are sensitive. We are not trying to take legitimacy away from anyone; we name the actors where the sources establish their role, without attributing a collective responsibility to today's populations. If you feel singled out reading us, that is not the intent — tell us: every correction is read.",
         ],
       },
       {
         title: "What we are after",
         paragraphs: [
-          "Understanding someone as they understand themselves. It is the cheapest gesture there is: calling someone what they call themselves takes nothing away from anyone.",
-          "And understanding each other is what makes acting together possible. Africa’s peoples, and individuals too, have every interest in pooling their strength. Nobody pools their strength with someone they do not understand.",
+          "Understanding someone as they understand themselves: calling someone what they call themselves takes nothing away from anyone. And understanding each other is what makes acting together possible — nobody pools their strength with someone they do not understand.",
         ],
       },
     ],
@@ -195,29 +192,29 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
         {
           sentence: "“Before, people lived in harmony with the continent.”",
           reason:
-            "That is a golden age, and a golden age does not need to be true to be attacked. Africa before Berlin had empires, conquests and internal slave trades. The argument’s strength does not come from how gentle the past was; it comes from its duration and its scale. It is enough that it is older, larger, and alive.",
+            "A golden age does not need to be true to be attacked: Africa before Berlin also had empires, conquests and internal slave trades. The argument’s strength comes from duration and scale, not from how gentle the past was.",
         },
         {
           sentence: "“The borders are arbitrary.”",
           reason:
-            "Half false: some follow rivers. They were drawn without reference to who lived there, and the atlas can show it people by people.",
+            "Half false: some follow rivers. They were mostly drawn without reference to who lived there, and the atlas shows it people by people.",
         },
         {
           sentence: "“Reconnecting with the past.”",
           reason:
-            "Reconnecting puts the subject in the past and assumes the break is complete. Yet these peoples are counted in 2025 and live in France. Not reconnecting with: recognising what never stopped. It is truer, and it is less sad.",
+            "Reconnecting assumes the break is complete — yet these peoples are counted in 2025 and live in France. This is not about reconnecting, but recognising what never stopped.",
         },
         {
           sentence: "“Before the borders, peoples were united.”",
           reason:
-            "Kinship of language and culture sometimes crossed ruptures older than the colonial map itself — a split, a migration, a disputed succession, long before any colonial line passed between two territories. The border did not always create the separation: it often locked one in.",
+            "Kinship of language and culture sometimes crossed ruptures older than the colonial map — a split, a migration, a disputed succession. The border did not always create the separation: it often locked one in.",
         },
       ],
     },
     scales: [
       {
         title: "For a people",
-        body: "It leads with the name it gives itself. The name others give it comes after. And if we get it wrong, anyone can tell us.",
+        body: "It leads with the name it gives itself, the one others give it comes after. If we get it wrong, anyone can tell us.",
       },
       {
         title: "For a country",
@@ -245,34 +242,31 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
       {
         title: "Un nom n’est jamais figé",
         paragraphs: [
-          "Un nom change avec le temps, et selon qui le raconte. Un peuple, une langue ou un lieu peuvent porter plusieurs noms à la fois : celui qu’ils se donnent, ceux que leurs voisins leur donnent, celui qu’une administration a écrit un jour. Plusieurs noms peuvent coexister ; nous précisons leurs usages, leurs contextes et les éventuelles contestations. Ils ne viennent simplement pas du même endroit. Un nom d’abord imposé depuis l’extérieur peut ensuite devenir une appartenance réellement vécue : son origine ne suffit pas à juger de sa réalité aujourd’hui.",
+          "Un nom change avec le temps et selon qui le raconte : un peuple, une langue ou un lieu peuvent porter plusieurs noms à la fois, celui qu’ils se donnent, ceux que leurs voisins leur donnent, celui qu’une administration a écrit un jour. Plusieurs noms peuvent coexister ; nous précisons leurs usages et leurs éventuelles contestations. Un nom d’abord imposé depuis l’extérieur peut ensuite devenir une appartenance réellement vécue : son origine ne suffit pas à juger de sa réalité aujourd’hui.",
         ],
       },
       {
         title: "La pertinence d’une source",
         paragraphs: [
-          "C’est pour cette raison qu’il existe plusieurs sources sur un même nom, et qu’elles ne se recoupent pas.",
-          "La pertinence d’une source dépend de la question posée. La chercher demande du travail, et ce travail produit des erreurs.",
+          "Plusieurs sources existent donc sur un même nom, et elles ne se recoupent pas toujours. La pertinence d’une source dépend de la question posée : la chercher demande du travail, et ce travail produit des erreurs.",
         ],
       },
       {
         title: "Ces écarts pèsent encore",
         paragraphs: [
-          "Aujourd’hui encore, un même peuple, une même langue ou un même lieu peut porter plusieurs noms selon qui parle. Ces écarts entretiennent des tensions. Comprendre l’histoire d’un nom peut éclairer un désaccord, sans suffire à le résoudre.",
+          "Aujourd’hui encore, un même peuple peut porter plusieurs noms selon qui parle, et ces écarts entretiennent des tensions. Comprendre l’histoire d’un nom peut éclairer un désaccord, sans suffire à le résoudre.",
         ],
       },
       {
         title: "Personne n’est visé",
         paragraphs: [
-          "Ces sujets sont sensibles, et nous le savons. Nous ne cherchons à retirer sa légitimité à aucun peuple, à aucune langue, à aucune personne. Nous nommons les acteurs lorsque les sources établissent leur rôle, sans attribuer une responsabilité collective aux populations d’aujourd’hui.",
-          "Si vous vous sentez visé en nous lisant, ce n’est pas l’intention — et si nous nous sommes trompés, dites-le-nous : toute correction est lue.",
+          "Ces sujets sont sensibles. Nous ne cherchons à retirer sa légitimité à personne. Nous nommons les acteurs lorsque les sources établissent leur rôle, sans attribuer une responsabilité collective aux populations d’aujourd’hui. Si vous vous sentez visé, ce n’est pas l’intention — dites-le-nous : toute correction est lue.",
         ],
       },
       {
         title: "Ce que nous cherchons",
         paragraphs: [
-          "Comprendre quelqu’un tel qu’il se comprend lui-même. C’est le geste le moins coûteux qui soit : l’appeler comme il s’appelle ne retire rien à personne.",
-          "Et se comprendre est ce qui permet d’agir ensemble. Les peuples d’Afrique, et les personnes aussi, ont tout intérêt à mutualiser leurs forces. On ne met pas ses forces en commun avec quelqu’un qu’on ne comprend pas.",
+          "Comprendre quelqu’un tel qu’il se comprend lui-même : l’appeler comme il s’appelle ne retire rien à personne. Et se comprendre est ce qui permet d’agir ensemble — on ne met pas ses forces en commun avec quelqu’un qu’on ne comprend pas.",
         ],
       },
     ],
@@ -282,29 +276,29 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
         {
           sentence: "« Avant, on vivait en accord avec le continent. »",
           reason:
-            "C’est un âge d’or, et un âge d’or n’a pas besoin d’être vrai pour être attaquable. L’Afrique d’avant Berlin avait des empires, des conquêtes, des traites internes. La force de l’argument ne vient pas de la douceur du passé, elle vient de sa durée et de son échelle : il suffit que ce soit plus vieux, plus large, et vivant.",
+            "Un âge d’or n’a pas besoin d’être vrai pour être attaquable : l’Afrique d’avant Berlin avait aussi des empires, des conquêtes, des traites internes. La force de l’argument vient de sa durée et de son échelle, pas de la douceur du passé.",
         },
         {
           sentence: "« Les frontières sont arbitraires. »",
           reason:
-            "À demi faux : certaines suivent des fleuves. Elles ont été tracées sans référence à qui habitait là, et l’atlas peut le montrer peuple par peuple.",
+            "À demi faux : certaines suivent des fleuves. Elles ont surtout été tracées sans référence à qui habitait là, et l’atlas le montre peuple par peuple.",
         },
         {
           sentence: "« Renouer avec le passé. »",
           reason:
-            "Renouer met le sujet au passé et suppose la rupture consommée. Or ces peuples sont comptés en 2025 et présents en France. Pas renouer avec : reconnaître ce qui n’a jamais cessé. C’est plus vrai, et c’est moins triste.",
+            "Renouer suppose la rupture consommée — or ces peuples sont comptés en 2025 et présents en France. Il ne s’agit pas de renouer, mais de reconnaître ce qui n’a jamais cessé : c’est plus vrai, et moins triste.",
         },
         {
           sentence: "« Avant les frontières, les peuples étaient unis. »",
           reason:
-            "Des parentés de langue et de culture ont parfois traversé des ruptures plus anciennes que la carte coloniale elle-même — une scission, une migration, une querelle de succession, bien avant qu’un tracé colonial ne passe entre deux territoires. La frontière n’a pas toujours créé la séparation : elle l’a souvent verrouillée.",
+            "Des parentés de langue et de culture ont parfois traversé des ruptures plus anciennes que la carte coloniale — une scission, une migration, une querelle de succession. La frontière n’a pas toujours créé la séparation : elle l’a souvent verrouillée.",
         },
       ],
     },
     scales: [
       {
         title: "Pour un peuple",
-        body: "Il porte d’abord le nom qu’il se donne. Celui que les autres lui donnent vient après. Et si on se trompe, n’importe qui peut nous le dire.",
+        body: "Il porte d’abord le nom qu’il se donne, celui des autres vient après. Si on se trompe, n’importe qui peut nous le dire.",
       },
       {
         title: "Pour un pays",
@@ -491,76 +485,15 @@ export const aboutPage: Record<Language, AboutPageCopy> = {
   },
 };
 
-export interface PlateCopy {
-  alt: string;
-  /** One short sentence saying what the picture argues. Never decoration. */
-  caption: string;
-  /** Author, work and date, as the reader should see them. */
-  credit: string;
-  sourceLabel: string;
-  /** Only where the licence requires a visible notice. */
-  licenceLabel?: string;
-}
-
 /**
- * The three plates that open the chapters.
- *
- * Each one is a document the chapter is *about*, not an illustration of it —
- * a generic photograph of the continent would substitute for none of them.
- * Together they carry three registers, which is what the brand charter asks
- * of any surface holding more than one image: the colonial document, a
- * people's own record, and a map drawn from inside Africa.
- *
- * The captions argue in one sentence and then get out of the way. The credit
- * line is not editorial discretion: where a licence requires attribution, the
- * rendered page carries the author and the licence's own address, because a
- * notice a reader cannot reach is not a notice.
+ * The three chapter plates were retired on 22 September 2026 (operator
+ * ruling): the page read as visually heavy, and the operator asked for a
+ * sober, minimalist reading of the doctrine over the brand charter's §9
+ * imagery doctrine and §5.2 card-accent convention. The images themselves
+ * (Ogilby's `Guinea`, the Tifinagh photograph, al-Idrisi's map) are not
+ * retired from the product — they still open the home hero and the "Did you
+ * know" band (`src/lib/home/homeHeroVisuals.ts`,
+ * `src/lib/home/didYouKnowIllustrations.ts`) and stay credited in
+ * `public/images/home/CREDITS.md`. Only this page's use of them, and the
+ * `PlateCopy`/`aboutPlates` copy that captioned them here, is gone.
  */
-// @req REQ-132
-// @req REQ-145
-export const aboutPlates: Record<Language, Record<string, PlateCopy>> = {
-  en: {
-    ogilby: {
-      alt: "A 1670 engraved map of the West African coast, its shoreline labelled by the goods taken from it.",
-      caption:
-        "The West African coast in 1670, named after what was taken from it.",
-      credit: "John Ogilby, Guinea, 1670. Public domain.",
-      sourceLabel: "Wikimedia Commons",
-    },
-    tifinagh: {
-      alt: "Tifinagh letters carved into rock in Algeria, photographed in 2006.",
-      caption: "Their own writing, cut into the rock.",
-      credit: "Tifinagh inscriptions, Algeria, 2006. Patrick Gruban.",
-      sourceLabel: "Wikimedia Commons",
-      licenceLabel: "CC BY-SA 2.0",
-    },
-    idrisi: {
-      alt: "Al-Idrisi's world map of 1154, drawn with south at the top, Africa filling the upper half.",
-      caption: "Africa seen from the inside, in 1154. South is at the top.",
-      credit: "Al-Idrisi, Tabula Rogeriana, 1154. Public domain.",
-      sourceLabel: "Wikimedia Commons",
-    },
-  },
-  fr: {
-    ogilby: {
-      alt: "Une carte gravée de 1670 de la côte ouest-africaine, dont le littoral est nommé d’après les marchandises qu’on y prenait.",
-      caption:
-        "La côte ouest-africaine en 1670, nommée d’après ce qu’on y prenait.",
-      credit: "John Ogilby, Guinea, 1670. Domaine public.",
-      sourceLabel: "Wikimedia Commons",
-    },
-    tifinagh: {
-      alt: "Des lettres tifinagh gravées dans la roche en Algérie, photographiées en 2006.",
-      caption: "Leur propre écriture, gravée dans la roche.",
-      credit: "Inscriptions tifinagh, Algérie, 2006. Patrick Gruban.",
-      sourceLabel: "Wikimedia Commons",
-      licenceLabel: "CC BY-SA 2.0",
-    },
-    idrisi: {
-      alt: "La carte du monde d’al-Idrisi de 1154, dessinée le sud en haut, l’Afrique occupant la moitié supérieure.",
-      caption: "L’Afrique vue de l’intérieur, en 1154. Le sud est en haut.",
-      credit: "Al-Idrisi, Tabula Rogeriana, 1154. Domaine public.",
-      sourceLabel: "Wikimedia Commons",
-    },
-  },
-};

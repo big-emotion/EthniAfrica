@@ -294,7 +294,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
       headline: "The same people changes name at every border it crosses.",
       body: [
         "They call themselves Fulɓe in the plural, Pullo in the singular. French says Peul, borrowed from Wolof; English says Fulani, borrowed from Hausa; one also reads Fula, and Fellata in Chad and Sudan. Their language is called Pulaar in the west and Fulfulde in the east.",
-        "None of these names is wrong, and only one is theirs. The scattering of the vocabulary follows that of the people: present from Senegal to Sudan, the Fulɓe have been named by each of their neighbours, then by each colonial administration that met them, in whatever language it had to hand.",
+        "Several names coexist, and only one is the one they call themselves. The scattering of the vocabulary follows that of the people: present from Senegal to Sudan, the Fulɓe have been named by each of their neighbours, then by each colonial administration that met them, in whatever language it had to hand.",
       ],
       entities: [
         { kind: "people", id: "PPL_FULA", label: "Fulɓe (Peul)" },

@@ -99,4 +99,39 @@ describe("the contribute page", () => {
 
     expect(metadata.title).toBe("Contribute");
   });
+
+  // The five Google Forms drafted in
+  // docs/editorial/contribution-forms-draft-2026-09-22.md — each opens in a
+  // new tab without handing the target page a reference to this one.
+  // @req REQ-045
+  it("links each of the five contribution forms, safely and externally", () => {
+    render(<ContributePage />);
+
+    const links = screen.getAllByRole("link", {
+      name: /ouvrir le formulaire/i,
+    });
+    expect(links).toHaveLength(5);
+    links.forEach((link) => {
+      expect(link).toHaveAttribute("target", "_blank");
+      expect(link.getAttribute("rel")).toEqual(
+        expect.stringContaining("noopener")
+      );
+      expect(link.getAttribute("rel")).toEqual(
+        expect.stringContaining("noreferrer")
+      );
+      expect(link.getAttribute("href")).toMatch(
+        /^https:\/\/docs\.google\.com\/forms\//
+      );
+    });
+  });
+
+  // `place` has no strict model, loader or SearchEntityType entry yet (§5 of
+  // the draft) — its card alone says so, not the other four.
+  // @req REQ-045
+  it("marks only the place form as still in progress", () => {
+    render(<ContributePage />);
+
+    expect(screen.getByText("Un lieu")).toBeInTheDocument();
+    expect(screen.getAllByText("En construction")).toHaveLength(1);
+  });
 });
