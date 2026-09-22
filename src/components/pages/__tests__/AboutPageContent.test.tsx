@@ -111,54 +111,19 @@ describe("AboutPageContent (REQ-132)", () => {
   });
 
   /**
-   * The page carried no picture at all once the naming argument was cut, and
-   * a page of nothing but prose is what the operator asked to stop. Each
-   * chapter now opens on a document it is about — never a stock photograph of
-   * the continent, which would substitute for none of them.
+   * The three chapter plates (and the two tests above that guarded their alt
+   * text and licence credit) were retired on 22 September 2026, operator
+   * ruling: the page read as visually heavy, and the operator asked for a
+   * sober, minimalist reading of the doctrine over the brand charter's §9
+   * imagery doctrine. The images are not retired from the product — see
+   * `AboutPageContent.tsx`'s own comment.
    */
   // @req REQ-132
-  it("opens each chapter with a plate, and describes it for a reader who cannot see it", () => {
+  it("opens each chapter on a rule and a heading, with no image", () => {
     const { container } = renderAbout();
 
-    const plates = Array.from(container.querySelectorAll("figure"));
-
-    expect(plates).toHaveLength(3);
-    for (const plate of plates) {
-      const image = within(plate as HTMLElement).getByRole("img");
-      expect(image.getAttribute("alt")?.length ?? 0).toBeGreaterThan(30);
-    }
-    expect(
-      new Set(
-        plates.map((plate) => plate.querySelector("img")?.getAttribute("src"))
-      ).size
-    ).toBe(3);
-  });
-
-  /**
-   * "A licence is published, not named" (brand charter §9). The tifinagh
-   * photograph is CC BY-SA 2.0, whose §4(a) asks for the licence's own URI —
-   * and a notice a reader cannot reach is not a notice. This is the one line
-   * on the page that is not editorial discretion.
-   */
-  // @req REQ-132
-  it("publishes the licence of the one plate that requires attribution", () => {
-    renderAbout();
-
-    const credit = screen.getByTestId("plate-credit-tifinagh");
-
-    expect(credit).toHaveTextContent("Patrick Gruban");
-    expect(
-      within(credit).getByRole("link", { name: "CC BY-SA 2.0" })
-    ).toHaveAttribute(
-      "href",
-      "https://creativecommons.org/licenses/by-sa/2.0/"
-    );
-    expect(
-      within(credit).getByRole("link", { name: "Wikimedia Commons" })
-    ).toHaveAttribute(
-      "href",
-      "https://commons.wikimedia.org/wiki/File:Tifinagh_Algeria.jpg"
-    );
+    expect(container.querySelectorAll("figure")).toHaveLength(0);
+    expect(container.querySelectorAll("img")).toHaveLength(0);
   });
 
   /**
