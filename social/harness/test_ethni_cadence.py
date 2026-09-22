@@ -38,7 +38,7 @@ def carte(**kw):
     return base
 
 
-DECK = {"campagne": "essai", "pilier": "L'atlas", "accent": "ocre", "fond": "nuit",
+DECK = {"campagne": "essai", "pilier": "EthniAfrica", "accent": "ocre", "fond": "nuit",
         "serie": "La carte cachée", "cartes": []}
 
 
