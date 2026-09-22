@@ -138,6 +138,13 @@ export function HomeHero({
               >
                 {purpose.linkLabel}
               </Link>
+              {" · "}
+              <Link
+                className="home-hero-purpose-link"
+                href={getLocalizedRoute(language, "doctrine")}
+              >
+                {purpose.methodLinkLabel}
+              </Link>
             </div>
           </details>
 
