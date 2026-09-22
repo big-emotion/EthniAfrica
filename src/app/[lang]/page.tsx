@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
 import { PageLayout } from "@/components/layout/PageLayout";
+import { HomeFeaturedCampaign } from "@/components/home/HomeFeaturedCampaign";
 import { HomeHero } from "@/components/home/HomeHero";
 import { pickDidYouKnowFacts } from "@/lib/home/didYouKnowFacts";
 import { localizeDidYouKnowFact } from "@/lib/home/didYouKnowLocalization";
+import { localizeFeaturedCampaign } from "@/lib/home/featuredCampaignLocalization";
+import {
+  FEATURED_CAMPAIGNS,
+  getActiveFeaturedCampaign,
+} from "@/lib/home/featuredCampaigns";
 import { getCorpusCounts } from "@/lib/home/corpusCounts";
 import { loadSeedWords } from "@/lib/home/seedWords";
 import {
@@ -91,6 +97,13 @@ export default async function Home({ params, searchParams }: HomePageProps) {
     loadSeedWords(),
   ]);
 
+  // Resolved at request time (this route is force-dynamic), so a campaign
+  // whose window has been merged ahead of schedule opens and closes itself
+  // with no further deploy at either edge. Disabled by default: with no
+  // window open on any campaign, this is null and the section below is not
+  // rendered at all.
+  const activeCampaign = getActiveFeaturedCampaign(FEATURED_CAMPAIGNS);
+
   return (
     <PageLayout language={language} hideHeader flushTop flushBottom>
       <HomeHero
@@ -100,6 +113,12 @@ export default async function Home({ params, searchParams }: HomePageProps) {
         counts={counts}
         visual={heroVisual}
       />
+      {activeCampaign && (
+        <HomeFeaturedCampaign
+          language={language}
+          campaign={localizeFeaturedCampaign(activeCampaign, language)}
+        />
+      )}
     </PageLayout>
   );
 }

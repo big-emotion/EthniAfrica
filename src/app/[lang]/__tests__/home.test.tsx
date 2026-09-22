@@ -14,6 +14,7 @@ const {
   loadHeroPreviewMock,
   loadSynthesisRailMock,
   drawHomeHeroVisualMock,
+  getActiveFeaturedCampaignMock,
 } = vi.hoisted(() => ({
   getCorpusCountsMock: vi.fn(),
   getContinentPeopleCountsMock: vi.fn(),
@@ -21,6 +22,7 @@ const {
   loadHeroPreviewMock: vi.fn(),
   loadSynthesisRailMock: vi.fn(),
   drawHomeHeroVisualMock: vi.fn(),
+  getActiveFeaturedCampaignMock: vi.fn(() => null),
 }));
 
 const fixtureCounts = {
@@ -74,6 +76,15 @@ vi.mock("@/lib/home/homeHeroVisuals", async (importOriginal) => {
   };
 });
 
+vi.mock("@/lib/home/featuredCampaigns", async (importOriginal) => {
+  const actual =
+    await importOriginal<typeof import("@/lib/home/featuredCampaigns")>();
+  return {
+    ...actual,
+    getActiveFeaturedCampaign: getActiveFeaturedCampaignMock,
+  };
+});
+
 vi.mock("@/components/layout/PageLayout", () => ({
   PageLayout: ({
     children,
@@ -117,6 +128,7 @@ describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", ()
     getHubModulesMock.mockResolvedValue([]);
     loadSynthesisRailMock.mockResolvedValue([]);
     drawHomeHeroVisualMock.mockReturnValue({ kind: "globe" });
+    getActiveFeaturedCampaignMock.mockReturnValue(null);
   });
 
   // @req REQ-044
@@ -358,5 +370,39 @@ describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", ()
       "data-language",
       "en"
     );
+  });
+
+  // Disabled by default (editorial-and-experience-plan.md H7-H10, operator
+  // ruling 2026-09-22): with no campaign window open, the section does not
+  // exist on the page at all.
+  // @req REQ-115
+  it("renders no featured campaign when none is active", async () => {
+    await renderHome();
+
+    expect(screen.queryByTestId("home-featured")).not.toBeInTheDocument();
+  });
+
+  // @req REQ-115
+  it("renders the featured campaign once one is active", async () => {
+    getActiveFeaturedCampaignMock.mockReturnValue({
+      id: "peul-fulbe-noms",
+      kind: "naming",
+      eyebrow: "Un nom, plusieurs histoires",
+      heading: "Peul, Fulbe : pourquoi plusieurs noms ?",
+      support: "Découvrez ce que chaque forme raconte.",
+      entity: { kind: "people", id: "PPL_FULA" },
+      sources: [{ title: "Breedveld (1995)" }],
+      sourceCount: 26,
+      linkLabel: "Explorer ces noms",
+    });
+
+    await renderHome();
+
+    expect(screen.getByTestId("home-featured")).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        name: "Peul, Fulbe : pourquoi plusieurs noms ?",
+      })
+    ).toBeInTheDocument();
   });
 });
