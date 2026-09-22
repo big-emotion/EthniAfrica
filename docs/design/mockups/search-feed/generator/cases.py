@@ -262,7 +262,7 @@ CASES = [
     dict(
         id="introuvable", file="Introuvable", name="Mandinka", name_plain="Introuvable", q="mandinké", result_state="typo", thin=True,
         title="Introuvable — une faute de frappe mène au bon article",
-        eyebrow="Aucune fiche ne porte exactement « mandinké »",
+        eyebrow="Aucun résultat exact pour « mandinké »",
         verdict="Vouliez-vous dire Mandinka ?", verdict_plain=True,
         sub="C'est l'un des noms que les peuples mandé se donnent, en Gambie et au Sénégal.",
         lens=[("Shorts", 3), ("Images", 1), ("Fiches", 3)],
