@@ -7,6 +7,7 @@ import { LegalDocument } from "@/components/layout/LegalDocument";
 import { legalPages } from "@/lib/legal-pages";
 import AboutPageContent from "../AboutPageContent";
 import DoctrinePageContent from "../DoctrinePageContent";
+import { getLocalizedRoute, getStaticPageRoute } from "@/lib/routing";
 import type { HubModule } from "@/lib/hubs/moduleAvailability";
 import type { AccessMode } from "@/lib/hubs/moduleRegistry";
 
@@ -214,6 +215,43 @@ describe("DoctrinePageContent", () => {
   });
 
   // @req REQ-091
+  it("opens on the public method, ahead of the classification reference", () => {
+    render(<DoctrinePageContent />);
+    expect(
+      screen.getByRole("heading", {
+        level: 1,
+        name: "Comment nous travaillons",
+      })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        level: 2,
+        name: "Trois questions à distinguer",
+      })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        level: 2,
+        name: "Comprendre les indications de l’atlas",
+      })
+    ).toBeInTheDocument();
+  });
+
+  // @req REQ-091
+  it("links to sources, the report form and search after the reference", () => {
+    render(<DoctrinePageContent />);
+    expect(
+      screen.getByRole("link", { name: "Consulter les sources" })
+    ).toHaveAttribute("href", getLocalizedRoute("fr", "sources"));
+    expect(
+      screen.getByRole("link", { name: "Signaler une erreur" })
+    ).toHaveAttribute("href", getStaticPageRoute("fr", "reportError"));
+    expect(
+      screen.getByRole("link", { name: "Chercher un nom" })
+    ).toHaveAttribute("href", getLocalizedRoute("fr", "search"));
+  });
+
+  // @req REQ-091
   it("lets its prose content fill the page", () => {
     const { container } = render(<DoctrinePageContent />);
     assertProseCarriesNoMeasure(container);
@@ -233,7 +271,7 @@ describe("DoctrinePageContent", () => {
     render(<DoctrinePageContent language="en" />);
 
     expect(
-      screen.getByRole("heading", { level: 1, name: "Editorial doctrine" })
+      screen.getByRole("heading", { level: 1, name: "How we work" })
     ).toBeInTheDocument();
     expect(screen.getAllByText(/Editorial status$/)).toHaveLength(4);
     expect(
@@ -244,7 +282,9 @@ describe("DoctrinePageContent", () => {
         name: "Machine translation, not yet reviewed",
       })
     ).toBeInTheDocument();
-    expect(screen.queryByText("Doctrine éditoriale")).not.toBeInTheDocument();
+    expect(
+      screen.queryByText("Comment nous travaillons")
+    ).not.toBeInTheDocument();
   });
 });
 

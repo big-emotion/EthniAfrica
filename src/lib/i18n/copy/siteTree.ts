@@ -55,8 +55,8 @@ const en = {
     ],
     colonization: "Perspectives: colonisation and resistance",
     doctrine: [
-      "Editorial doctrine",
-      "How a source is weighed and a page published.",
+      "How we work",
+      "The three questions we ask of a name, and how we handle sources, disagreement and correction.",
     ],
   },
   play: {
@@ -143,8 +143,8 @@ const fr: SiteTreeCopy = {
     ],
     colonization: "Regards : colonisation et résistances",
     doctrine: [
-      "La doctrine éditoriale",
-      "Comment une source est pesée et une page publiée.",
+      "Comment nous travaillons",
+      "Les trois questions posées à un nom, et comment nous traitons les sources, les désaccords et les corrections.",
     ],
   },
   play: {
