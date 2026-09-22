@@ -3438,6 +3438,12 @@ const options: swaggerJsdoc.Options = {
             id: { type: "string", example: "PPL_EWE" },
             nameMain: { type: "string" },
             languageFamilyId: { type: "string", example: "FLG_KWA" },
+            selfAppellation: {
+              type: "string",
+              description:
+                "The name the people gives itself (content.appellations.selfAppellation), verbatim. Omitted when the fiche records none.",
+              example: "Eʋeawó (les gens Ewe), Eʋe",
+            },
           },
           required: ["id", "nameMain", "languageFamilyId"],
         },
