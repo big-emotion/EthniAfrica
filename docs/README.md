@@ -44,16 +44,16 @@ were referenced by nothing at all, two of them written that same week.
 
 ## Editorial — doctrine, audits and essays
 
-- [Editorial strategy — report, evidence, roadmap and alignment plan](editorial/strategy/README.md)
-
 - [Audit — where the publication rules live](editorial/audit-doctrine-publication-2026-09-17.md)
 - [Editorial classification status](editorial/classification-status.md)
 - [Congo dossier publication notes](editorial/congo-dossier-publication-notes.md)
 - [Congo dossier translation classification](editorial/congo-dossier-translation-classification.md)
+- [Contribution forms — a draft per fiche category](editorial/contribution-forms-draft-2026-09-22.md)
 - [Country enrichment tracking](editorial/country-enrichment/README.md)
 - [Demographic cleanup — arbitration note](editorial/demography-cleanup/README.md)
 - [Réalités — research record](editorial/dossiers-realites/README.md)
 - [Essais — la base idéologique, série par série](editorial/essais/README.md)
+- [Essai — comprendre les sociétés africaines à travers leurs noms](editorial/essais/comprendre-les-societes-par-les-noms-2026-09-22.md)
 - [Essai — d'où viennent les noms](editorial/essais/dou-viennent-les-noms-2026-09-17.md)
 - [Essai — mutualiser la souveraineté](editorial/essais/mutualiser-la-souverainete-2026-09-17.md)
 - [Essai — partir du nom](editorial/essais/partir-du-nom-2026-09-21.md)
@@ -68,6 +68,11 @@ were referenced by nothing at all, two of them written that same week.
 - [The editorial reorientation — what changes, in what order, what blocks what](editorial/refonte-plan-2026-09-18.md)
 - [The pinned comment reply](editorial/reponse-commentaires.md)
 - [Source tier rulings](editorial/source-review/README.md)
+- [Editorial strategy — names, relationships and connected series](editorial/strategy/README.md)
+- [Alignment plan — editorial promise and connected series](editorial/strategy/alignment-plan-2026-09-22.md)
+- [Strategy evidence — refreshed 2026-09-22](editorial/strategy/evidence-2026-09-22.md)
+- [Editorial orientation report — 2026-09-22](editorial/strategy/report-2026-09-22.md)
+- [Publication roadmap — 25 September to 25 December 2026](editorial/strategy/roadmap-2026-q4.md)
 - [Translation classes](editorial/translation-classes.md)
 - [Interface copy](editorial/ui-copy.md)
 - [Vocabulary census — what the reader is actually told](editorial/vocabulary-census-2026-09-17.md)
