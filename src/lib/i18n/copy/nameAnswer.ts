@@ -97,9 +97,9 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
       "The search is unavailable at the moment. Nothing is missing from the atlas — it is the search that did not answer. Please try again shortly.",
     browsePeoples: "Browse the peoples",
     browseFamilies: "The language families",
-    conviction: "None of these names is false.",
+    conviction: "Several names can coexist.",
     convictionBody:
-      "They simply do not come from the same place: the one a people gives itself, the ones its neighbours give it, the one an administration wrote down one day.",
+      "We state their usages, their contexts and any disputes: the one a people gives itself, the ones its neighbours give it, the one an administration wrote down one day.",
   },
   fr: {
     eyebrow: "D'où vient ce nom",
@@ -133,8 +133,8 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
       "La recherche est indisponible pour le moment. Rien ne manque à l’atlas : c’est la recherche qui n’a pas répondu. Réessayez dans un instant.",
     browsePeoples: "Parcourir les peuples",
     browseFamilies: "Les familles de langues",
-    conviction: "Aucun de ces noms n’est faux.",
+    conviction: "Plusieurs noms peuvent coexister.",
     convictionBody:
-      "Ils ne viennent simplement pas du même endroit : celui qu’un peuple se donne, ceux que ses voisins lui donnent, celui qu’une administration a écrit un jour.",
+      "Nous précisons leurs usages, leurs contextes et les éventuelles contestations : celui qu’un peuple se donne, ceux que ses voisins lui donnent, celui qu’une administration a écrit un jour.",
   },
 };
