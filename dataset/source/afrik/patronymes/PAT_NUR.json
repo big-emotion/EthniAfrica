@@ -137,7 +137,7 @@
     },
     {
       "fieldPath": "bearers",
-      "reason": "Les porteurs nommés par les sources dédiées sont vivants ou leur décès n'est pas établi ; le protocole interdit de les ajouter."
+      "reason": "Les porteurs nommés par les sources dédiées sont vivants ou leur décès n'est pas établi ; la fiche ne les ajoute pas."
     },
     {
       "fieldPath": "homonyms",

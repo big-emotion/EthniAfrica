@@ -112,6 +112,34 @@ describe("checkFlagRateLimit", () => {
     expect(Ratelimit).toHaveBeenCalledTimes(2);
   });
 
+  // The counts were already tunable; the windows they are counted over were
+  // not, so "10 an hour" could be raised but never re-shaped.
+  // @req REQ-012
+  it("takes both window lengths from the environment", async () => {
+    vi.stubEnv("FLAG_RATE_LIMIT_HOURLY_WINDOW", "30 m");
+    vi.stubEnv("FLAG_RATE_LIMIT_DAILY_WINDOW", "2 d");
+    mockHourlyLimit.mockResolvedValue({ success: true });
+    mockDailyLimit.mockResolvedValue({ success: true });
+
+    await checkFlagRateLimit("user-123");
+
+    expect(Ratelimit.slidingWindow).toHaveBeenCalledWith(10, "30 m");
+    expect(Ratelimit.slidingWindow).toHaveBeenCalledWith(30, "2 d");
+  });
+
+  // @req REQ-012
+  it("keeps the default windows when a configured one is malformed", async () => {
+    vi.stubEnv("FLAG_RATE_LIMIT_HOURLY_WINDOW", "an hour");
+    vi.stubEnv("FLAG_RATE_LIMIT_DAILY_WINDOW", "0 h");
+    mockHourlyLimit.mockResolvedValue({ success: true });
+    mockDailyLimit.mockResolvedValue({ success: true });
+
+    await checkFlagRateLimit("user-123");
+
+    expect(Ratelimit.slidingWindow).toHaveBeenCalledWith(10, "1 h");
+    expect(Ratelimit.slidingWindow).toHaveBeenCalledWith(30, "24 h");
+  });
+
   // @req REQ-012
   it("returns the denied window metadata and retry delay", async () => {
     const now = Date.now();

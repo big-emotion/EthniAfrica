@@ -15,9 +15,12 @@ corpus is a third, separate step — see [AFRIK corpus](#afrik-corpus).
 
 | Environment | Ships when                                  | Hosted on                              | Supabase                                                         |
 | ----------- | ------------------------------------------- | -------------------------------------- | ---------------------------------------------------------------- |
-| Local       | —                                           | your machine                           | your own project, or a shared one                                |
-| Recette     | `deploy-preview-recette.yml` is run by hand | Vercel preview                         | hosted project `shmrjtnfbqzceovroqjj`                            |
+| Local       | —                                           | your machine                           | your own `supabase start` stack (`--target=local`)               |
+| Recette     | `deploy-preview-recette.yml` is run by hand | Vercel preview                         | self-hosted stack at `https://supabase-recette.ethniafrica.com`  |
 | Production  | a GitHub Release is published               | self-hosted VPS (the application host) | self-hosted stack at `https://supabase.ethniafrica.com` (no ref) |
+
+A contributor without access to either shared stack builds a local one: see
+[Local bootstrap](./runbooks/afrik-data-sync.md#local-bootstrap).
 
 Neither environment deploys on a push any more. `recette` is still the integration branch and
 `main` is still what a release is tagged from — but the branch no longer triggers anything.
@@ -25,12 +28,14 @@ Neither environment deploys on a push any more. `recette` is still the integrati
 **A hosted Supabase project calls its environment "production", and the label does not mean
 what it looks like.** A Supabase project has exactly one environment, and Supabase names it
 "production" — there is no staging branch inside a project. The label therefore describes the
-project's own environment, not the application environment it serves. `shmrjtnfbqzceovroqjj`
-serves **recette**. The production application is not served by a hosted project at all: it
-reads a **self-hosted** Supabase stack at `https://supabase.ethniafrica.com` on a second VPS (the
-Supabase host),
-which is why neither the Supabase dashboard nor the MCP can see it. `jajggbeimfudpzcxytbb` is the
-**retired** hosted project; it still answers, so never point a secret at it. Before touching a
+project's own environment, not the application environment it serves. Since ETNI-1958
+(DEC-056) neither application environment reads a hosted project: **recette** reads the
+self-hosted stack at `https://supabase-recette.ethniafrica.com` and **production** the one at
+`https://supabase.ethniafrica.com`, both on the Supabase host (a second VPS), which is why
+neither the Supabase dashboard nor the MCP can see them. `shmrjtnfbqzceovroqjj` is the hosted
+project that backed recette before the move; it survives only as a rollback path until ETNI-1962
+decommissions it. `jajggbeimfudpzcxytbb` is the **retired** hosted project that once held
+production; it still answers, so never point a secret at either. Before touching a
 database, read
 [`runbooks/migration-state.md`](./runbooks/migration-state.md) — it carries the project
 identity table, the applied-migration state, and the two-step rollout rule.
@@ -38,7 +43,7 @@ identity table, the applied-migration state, and the two-step rollout rule.
 The AFRIK corpus sync used to hard-code `shmrjtnfbqzceovroqjj` as its "production" target, so
 every production deploy loaded the corpus into recette and then revalidated `ethniafrica.com`,
 a site it had not written to. That is fixed. `scripts/lib/afrikSyncTarget.ts` now resolves
-`--target=recette` against a checked-in recette ref and `--target=production` against the
+`--target=recette` against a checked-in recette URL and `--target=production` against the
 `AFRIK_PRODUCTION_SUPABASE_URL` environment variable, with no default and an outright refusal
 if it is configured as the recette project. `.github/workflows/production-data-sync.yml`
 supplies it from two repository secrets belonging to the production project —
@@ -95,21 +100,52 @@ tag bumps a version and ships nothing.
 
 ## What CI gates before a merge
 
-`.github/workflows/ci.yml` runs on every pull request targeting `recette` or `main`, as two
+`.github/workflows/ci.yml` runs on every pull request targeting `recette` or `main`, as three
 jobs:
 
 - **gitleaks** — scans the PR's working tree (`--no-git`) against `.gitleaks.toml`.
-- **build** — `npm run lint`, `lint:req`, `check:jira-template`, `check:action-pins`,
-  `check:env-example`, `typecheck`, `format:check`, `test:coverage`, `test:charter-contracts`,
-  then `npm run build`.
+- **dependency-audit** — GitHub's dependency review; a high-severity advisory in a changed
+  dependency fails the PR that introduces it.
+- **build** — the rest, in this order: `npm run lint`; then diff-scoped against the PR base,
+  `lint:req` and `check:copy-literals`; then `check:jira-template`,
+  `check:action-pins -- --resolve`, `check:workflow-shell`, `check:env-example`, `check:local-paths`,
+  `check:infra-disclosure`, `check:orphan-docs`, `check:asset-weight`, `check:skill-parity`,
+  `check:pagination-contract`, `test:social-tools`, `check:dead`; then
+  `check:translation-parity` (a report — `continue-on-error`, it cannot fail the job) and
+  `check:glossary` (which does fail it); then `check:migration-files`, `check:rls-coverage`,
+  `check:production-ledger`; then `typecheck`, `format:check`, `test:coverage`,
+  `test:charter-contracts`, `npm run build`, and a last step that fails if any gate left the
+  tree dirty.
 
 The build step passes placeholder Supabase values so that fork and Dependabot PRs, which have
 no access to secrets, still gate. The Supabase modules validate their configuration at module
 scope and throw when it is missing; the placeholders only need to parse, nothing queries the
-database during a build.
+database during a build. `ci.yml` is the authority: if this list and the file disagree, the file
+is right.
 
-Separate workflows carry the heavier domain gates: `a11y.yml`, `lighthouse.yml`, `e2e.yml`,
-`data-integrity.yml`, `editorial-rules.yml`, `openapi-diff.yml`, `storybook-deploy.yml`.
+Other workflows carry the heavier domain gates, most of them also on every pull request:
+`a11y.yml`, `lighthouse.yml`, `e2e.yml`, `data-integrity.yml` (also nightly, and the reader of
+`check:afrik-loader` and the nightly `check:migration-state`), `editorial-rules.yml`,
+`openapi-diff.yml`, and `migrations-replay.yml` (only when `supabase/migrations/**` or
+`supabase/config.toml` changes: it replays every migration on an empty local stack).
+`approve-agent-ci.yml` releases CI runs held back by GitHub's bot-PR approval gate.
+
+Workflows that run after a merge, on a schedule or on demand, and so can never block a PR:
+
+- `migrate-recette.yml` — a push to `recette` touching `supabase/migrations/**` applies the
+  pending migrations to recette over the SSH tunnel and re-reads the ledger.
+- `recette-data-sync.yml` — a push to `recette` touching the corpus, its translations or the
+  loaders loads it into recette.
+- `production-data-sync.yml` — chains off `deploy-production.yml` with `workflow_run`.
+- `confidence-recompute.yml` — nightly, source URL checks and the confidence recompute.
+- `embed-availability.yml` — nightly, asks each video platform whether an embedded piece is
+  still playable (REQ-181); it annotates and never fails on findings.
+- `storybook-deploy.yml` — a push to `main`.
+- `seed-moderation-allowlist.yml` and `deploy-preview-recette.yml` — run by hand.
+- The Ferry automation: `ferry-router.yml` (repository dispatch from Jira transitions, one
+  workflow for every agent), `ferry-reconcile.yml` (every 30 minutes) and `ferry-cost-daily.yml`.
+- `claude.yml` (Claude on issues and review comments) and `claude-code-review.yml` (an automated
+  review on each pull request — advisory, not a gate).
 
 > Which of these are _required_ contexts on `recette` and `main` is a branch-protection
 > setting, not a repository file — check it on GitHub rather than inferring it from this list.
@@ -233,8 +269,9 @@ Required in production, whatever their reputation as an optional extra:
 Optional subsystems, each genuinely inert when unset: `SENTRY_DSN` / `NEXT_PUBLIC_SENTRY_DSN`,
 `NEXT_PUBLIC_PLAUSIBLE_DOMAIN`, `ANTIBOT_DIFFICULTY_BITS` (defaults to 20),
 `ANTIBOT_TTL_MS` (challenge lifetime, defaults to 300000),
-`REVALIDATE_SECRET`, `SUPABASE_WEBHOOK_SECRET`, `NEXT_PUBLIC_FEATURE_QUIZ`,
-`CORS_ALLOWED_ORIGIN`.
+`REVALIDATE_SECRET`, `SUPABASE_WEBHOOK_SECRET`,
+`CORS_ALLOWED_ORIGIN`. (`NEXT_PUBLIC_FEATURE_QUIZ` is not on this list on purpose: nothing
+reads it any more, and `.env.example` does not carry it.)
 
 `LEGAL_HOST_NAME` and `LEGAL_HOST_ADDRESS` name the host in the legal notice
 (`src/lib/legalHost.ts`). They are plain configuration read at request time, and they are
@@ -271,6 +308,22 @@ integration fails loudly. `Origin` and `Referer` authorise nothing — any clien
 so the frontend embeds no key and its readers share the anonymous per-IP quota. Server
 components read the services directly and never call `/api/v2` over HTTP, so the container's own
 address never pools every reader into one bucket.
+
+### Report and contact form tunables
+
+Each is optional; a malformed or non-positive value keeps the default rather than failing. The
+limiters need the same Upstash pair as above and fail open without it.
+
+| Variable                        | Meaning                                                     | Default  |
+| ------------------------------- | ----------------------------------------------------------- | -------- |
+| `FLAG_RATE_LIMIT_HOURLY`        | reports one reporter may file per hourly window             | `10`     |
+| `FLAG_RATE_LIMIT_HOURLY_WINDOW` | length of the hourly window (`@upstash/ratelimit` spelling) | `"1 h"`  |
+| `FLAG_RATE_LIMIT_DAILY`         | reports one reporter may file per daily window              | `30`     |
+| `FLAG_RATE_LIMIT_DAILY_WINDOW`  | length of the daily window                                  | `"24 h"` |
+| `FLAG_MIN_DWELL_MS`             | fastest a report form may be submitted (bot filter)         | `3000`   |
+| `FLAG_VERIFICATION_TTL_HOURS`   | lifetime of a reporter's e-mail verification link           | `24`     |
+| `CONTACT_RATE_LIMIT_MESSAGES`   | contact messages per address per window                     | `5`      |
+| `CONTACT_RATE_LIMIT_WINDOW`     | length of the contact window                                | `"1 h"`  |
 
 ---
 
@@ -329,8 +382,10 @@ npx tsx --conditions=react-server scripts/migrateAfrikToDatabase.ts --target=pro
 npx tsx --conditions=react-server scripts/migrateAfrikToDatabase.ts --target=production --apply
 ```
 
-`--target` names the application environment: `recette` or `production`. `--target=recette`
-resolves to `shmrjtnfbqzceovroqjj`; `--target=production` resolves to whatever
+`--target` names the application environment: `recette`, `production`, or `local` (a
+contributor's own `supabase start` stack, loopback only). `--target=recette` resolves to the
+self-hosted `https://supabase-recette.ethniafrica.com` (`AFRIK_RECETTE_SUPABASE_URL`);
+`--target=production` resolves to whatever
 `AFRIK_PRODUCTION_SUPABASE_URL` names, and refuses to run if that is unset or is the recette
 project. `NEXT_PUBLIC_SUPABASE_URL` must match the resolved target, so loading production by
 hand means pointing both variables at the production project. `--target=staging` is retired and

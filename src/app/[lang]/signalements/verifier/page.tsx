@@ -5,6 +5,7 @@ import { PageLayout } from "@/components/layout/PageLayout";
 import { verifyReporterContact } from "@/lib/flags/reporterContact";
 import { getStaticPageRoute } from "@/lib/routing";
 import { reportsCopy } from "@/lib/i18n/copy/reports";
+import { noIndexMetadata } from "@/lib/seo/noIndexMetadata";
 import type { Language } from "@/types/shared";
 
 // @req REQ-012
@@ -14,10 +15,9 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  return {
-    title: reportsCopy[lang as Language].verification.metadataTitle,
-    robots: { index: false, follow: false },
-  };
+  return noIndexMetadata(
+    reportsCopy[lang as Language].verification.metadataTitle
+  );
 }
 
 // The token is spent on arrival, so this page can never be served from a cache.

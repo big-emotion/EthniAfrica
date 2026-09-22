@@ -126,17 +126,6 @@ function collectQueue(directories: KindDirectories): SourceReviewItem[] {
 }
 
 // @req REQ-092
-export function buildSourceReviewQueue(
-  datasetRoot: string
-): SourceReviewItem[] {
-  return collectQueue({
-    peuples: join(datasetRoot, "peuples"),
-    pays: join(datasetRoot, "pays"),
-    famille_linguistique: join(datasetRoot, "famille_linguistique"),
-  });
-}
-
-// @req REQ-092
 export function filterSourceReviewQueue(
   items: readonly SourceReviewItem[],
   filters: SourceReviewFilters,

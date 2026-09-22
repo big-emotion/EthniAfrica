@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { adminCopy } from "@/lib/i18n/copy/admin";
+import { noIndexMetadata } from "@/lib/seo/noIndexMetadata";
 import type { Language } from "@/types/shared";
 import { AdminSignInForm } from "./AdminSignInForm";
 
@@ -13,10 +14,7 @@ export async function generateMetadata({
   params?: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = (await params) ?? { lang: "fr" };
-  return {
-    title: adminCopy[lang as Language].signIn.metadataTitle,
-    robots: { index: false, follow: false },
-  };
+  return noIndexMetadata(adminCopy[lang as Language].signIn.metadataTitle);
 }
 
 /**

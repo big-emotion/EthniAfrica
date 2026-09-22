@@ -81,7 +81,7 @@
     },
     {
       "fieldPath": "bearers",
-      "reason": "La notice BnF décrit Andry Rajoelina comme né en 1974 et ne constate aucun décès ; il est exclu conformément au protocole. Aucun porteur décédé sourcé n'a été trouvé."
+      "reason": "La notice BnF décrit Andry Rajoelina comme né en 1974 et ne constate aucun décès ; la fiche ne le liste donc pas comme porteur. Aucun porteur décédé sourcé n'a été trouvé."
     },
     {
       "fieldPath": "homonyms",

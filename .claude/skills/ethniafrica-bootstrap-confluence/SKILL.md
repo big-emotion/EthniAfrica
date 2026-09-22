@@ -9,8 +9,10 @@ Publish the validated brownfield documentation migration once. After publication
 canonical intent flows from Confluence through Jira to code and tests. Ongoing
 changes use `/ethniafrica-spec`.
 
-Read `AGENTS.md`, `_bmad-output/project-context.md`, and
-`docs/adr/0002-confluence-source-of-truth.md` before acting.
+Read `AGENTS.md`, `CLAUDE.md`, and the ADR that founded the Confluence tree before acting. That
+ADR was removed from the tree with the in-repo spec (commit `0e753c07`); recover it with
+`git show 0e753c07^:docs/adr/0002-confluence-source-of-truth.md`. Its decision is now DEC-001 on
+Confluence, and `docs/adr/README.md` says where decisions live.
 
 ## Fixed tree
 

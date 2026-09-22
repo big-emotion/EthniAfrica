@@ -132,7 +132,7 @@
     },
     {
       "fieldPath": "bearers",
-      "reason": "Les sources dédiées consultées attestent des porteurs vivants ; conformément au protocole, ils ne sont pas ajoutés comme porteurs historiques."
+      "reason": "Les sources dédiées consultées attestent des porteurs vivants ; ils ne sont pas ajoutés comme porteurs historiques."
     },
     {
       "fieldPath": "homonyms",

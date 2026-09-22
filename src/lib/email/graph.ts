@@ -83,7 +83,10 @@ interface CachedToken {
  */
 let cachedToken: CachedToken | null = null;
 
-/** Test seam: the cache outlives a single test otherwise. */
+/**
+ * Test seam: the cache outlives a single test otherwise.
+ * @public Read by tests only, which knip's production tally cannot see.
+ */
 // @req REQ-015
 // @req REQ-045
 export function __resetGraphToken(): void {

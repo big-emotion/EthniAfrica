@@ -68,7 +68,6 @@ export const authorizedSourceCatalogSchema = z
     }
   });
 
-export type AuthorizedSourceEntry = z.infer<typeof authorizedSourceEntrySchema>;
 export type { SourceKind };
 
 export interface SourcePolicyOutcome {

@@ -20,6 +20,9 @@ import type { Language } from "@/types/shared";
  * invalidation when a flag transitions state (Story 3.3 / ETNI-364).
  * The 60 s fallback ensures stale data is never served for more than 1 min.
  */
+// A literal on purpose: Next reads segment config statically. Held to
+// `CORPUS_AGGREGATE_REVALIDATE_SECONDS` (`PUBLIC_FLAGS_REVALIDATE_SECONDS` for
+// the 60 s pages) by `src/app/__tests__/cacheFreshnessContract.test.ts`.
 // @req REQ-042
 export const revalidate = 60;
 
