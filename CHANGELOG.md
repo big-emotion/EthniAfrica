@@ -10,6 +10,48 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [4.16.0] - 2026-09-22
+
+### Added
+
+- Report and contact rate limits, the report form's minimum dwell time, and the
+  verification-link lifetime are now environment-tunable
+  (`FLAG_RATE_LIMIT_HOURLY_WINDOW`, `FLAG_RATE_LIMIT_DAILY_WINDOW`,
+  `CONTACT_RATE_LIMIT_MESSAGES`, `CONTACT_RATE_LIMIT_WINDOW`,
+  `FLAG_MIN_DWELL_MS`, `FLAG_VERIFICATION_TTL_HOURS`), each defaulting to its
+  previous hard-coded value (#1251).
+
+### Changed
+
+- 64 `PAT_*` patronyme fiches no longer name the internal research pass or
+  protocol in their gap reasons — they state only what the consulted sources
+  do not document (#1248).
+- The corpus CDN cache lifetime is now derived from
+  `CORPUS_AGGREGATE_REVALIDATE_SECONDS` instead of restating it as a separate
+  literal (#1251).
+
+### Fixed
+
+- **Security:** `clientIp()` now counts `X-Forwarded-For` from the right,
+  skipping `TRUSTED_PROXY_HOPS` proxies (default 1), instead of trusting the
+  client-writable left-most entry — closing a bypass of the per-IP quota and
+  the one-key-per-IP rule. `POST /api/v2/keys/issue` is now route → handler →
+  service with a per-address attempt limiter that fails closed; a missing
+  address is refused instead of issuing an unbound key (#1250).
+- A printed page's scrim is solved to the lightest alpha that still carries
+  caption ink over the brightest pixels, fixing captions that showed
+  print-through on scanned-page social cards (#1255).
+- The discoveries video catalogue's source link now follows
+  `NEXT_PUBLIC_CANONICAL_DOMAIN` instead of leaking the build's own origin on
+  a recette build (#1251).
+- The reader-facing register gate now catches the workshop's own "research
+  pass" and "protocol" phrasing in name fiches (#1248).
+
+### Removed
+
+- **Breaking:** `GET /api/v2/keys/issue`. Key issuance is now POST-only; the
+  GET alias could be triggered by a prefetch or a cross-site request (#1250).
+
 ## [4.15.0] - 2026-09-21
 
 ### Added
@@ -1266,7 +1308,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.15.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.16.0...HEAD
+[4.16.0]: https://github.com/big-emotion/ethniafrica/compare/v4.15.0...v4.16.0
 [4.15.0]: https://github.com/big-emotion/ethniafrica/compare/v4.14.0...v4.15.0
 [4.14.0]: https://github.com/big-emotion/ethniafrica/compare/v4.13.0...v4.14.0
 [4.13.0]: https://github.com/big-emotion/ethniafrica/compare/v4.12.0...v4.13.0
