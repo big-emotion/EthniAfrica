@@ -488,3 +488,59 @@ published: the fourth refusal and the `unityClaim`/`unityClaimStatus` pair sit
 in `about.ts`, rendered as a block in `AboutPageContent.tsx` separate from the
 constant ligne de vision, and GABARITS-SOCIAL §7 ter carries the corresponding
 table row and subsection.
+
+---
+
+## 6. Four sentences in the declaration itself revised (22 September 2026)
+
+**Where this session differs from §1 and §5.** Those record an exchange the
+operator initiated and the agent corrected. This one runs the other way: the
+agent proposed four replacements against `editorial-and-experience-plan.md`
+(A8), the operator asked to confront a fifth, unrelated text (an essay
+comparing the project's doctrine to Mudimbe, Park, Rodney and Dumont) against
+what the site already published, and approved what came out of that
+confrontation. Kept here for the same reason as §1 and §5: a correction to the
+declaration is the doctrine, wherever it originates.
+
+**What changed, in `purposeChapter.declaration` (`about.ts`), FR and EN
+together:**
+
+1. **"Un nom n'est jamais figé."** « Aucun n'est faux » — a true/false framing
+   over something that was never a factual dispute — becomes « Plusieurs noms
+   peuvent coexister ; nous précisons leurs usages, leurs contextes et les
+   éventuelles contestations. » A sentence is also added, from the Mudimbe
+   reading the operator flagged as worth keeping: « Un nom d'abord imposé
+   depuis l'extérieur peut ensuite devenir une appartenance réellement vécue :
+   son origine ne suffit pas à juger de sa réalité aujourd'hui. » A name's
+   constructed origin does not get to overrule the identity built on it since.
+2. **"La source qui compte le plus" → "La pertinence d'une source."** The
+   retired framing ranked sources by closeness to a people's self-designation
+   — « personne n'est mieux placé que lui pour raconter son histoire ». That
+   is itself a form of the ranking the Source Tier Policy refuses elsewhere
+   (CLAUDE.md, "Whose account gets told"): tier measures who is speaking, not
+   which account deserves to be heard. The title changes with the sentence it
+   headlines, since keeping the old title over the new sentence would leave a
+   title contradicting its own paragraph.
+3. **"Ces écarts pèsent encore."** « Savoir d'où vient chaque nom suffit à
+   faire tomber le malentendu » overclaimed what an origin can do. Replaced
+   with « Comprendre l'histoire d'un nom peut éclairer un désaccord, sans
+   suffire à le résoudre » — understanding helps; it does not settle.
+4. **"Personne n'est visé."** « Nous ne désignons aucun responsable » is
+   replaced, not merely softened: « Nous nommons les acteurs lorsque les
+   sources établissent leur rôle, sans attribuer une responsabilité
+   collective aux populations d'aujourd'hui. » The refusal was to name nobody;
+   the doctrine now is to name a documented actor without extending their
+   role onto an entire population today — closer to what M8 of the doctrine
+   page (`doctrine.ts`) already asks of every production.
+
+**What did not move.** The four "phrases we do not write" (§1's refusals
+block) and the `closing`/`unityClaim` pair (§5) are untouched — this session's
+confrontation covered only the declaration, and nothing in it argued for
+revisiting the border/names doctrine or the unity vision.
+
+**Where the fifth text stays.** The essay's own two genuinely new ideas —
+production should chain publications so each deepens a question the last one
+raised, and a short reading list (Mudimbe, Park, Rodney, Dumont) worth
+confronting against sources — are production doctrine, not reader-facing
+copy, and are not carried into `about.ts`. Only the one nuance a reader can
+use (item 1, above) crossed over.

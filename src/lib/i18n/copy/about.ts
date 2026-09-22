@@ -158,26 +158,26 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
       {
         title: "A name is never fixed",
         paragraphs: [
-          "A name changes with time, and with whoever tells it. A people, a language or a place can carry several names at once: the one they give themselves, the ones their neighbours give them, the one an administration wrote down one day. None of them is false. They simply do not come from the same place.",
+          "A name changes with time, and with whoever tells it. A people, a language or a place can carry several names at once: the one they give themselves, the ones their neighbours give them, the one an administration wrote down one day. Several names can coexist; we state their usages, their contexts and any disputes. They simply do not come from the same place. A name first imposed from outside can later become a real, lived belonging: its origin is not enough to judge its reality today.",
         ],
       },
       {
-        title: "The source that counts most",
+        title: "A source's relevance",
         paragraphs: [
           "That is why several sources exist on the same name, and why they do not agree.",
-          "The one that counts most is the one closest to the name a people gives itself: nobody is better placed than they are to tell their own history. Finding it takes work, and that work produces mistakes.",
+          "A source's relevance depends on the question being asked. Finding it takes work, and that work produces mistakes.",
         ],
       },
       {
         title: "Those gaps still weigh",
         paragraphs: [
-          "Today still, the same people, the same language or the same place can carry several names depending on who is speaking. Those gaps sustain tensions — and very often, knowing where each name comes from is enough to dissolve the misunderstanding feeding them.",
+          "Today still, the same people, the same language or the same place can carry several names depending on who is speaking. Those gaps sustain tensions. Understanding a name's history can shed light on a disagreement, without being enough to resolve it.",
         ],
       },
       {
         title: "Nobody is being singled out",
         paragraphs: [
-          "These subjects are sensitive, and we know it. We are not trying to take legitimacy away from any people, any language or any person, and we name no culprit.",
+          "These subjects are sensitive, and we know it. We are not trying to take legitimacy away from any people, any language or any person. We name the actors where the sources establish their role, without attributing a collective responsibility to today's populations.",
           "If you feel singled out reading us, that is not the intent — and if we got it wrong, tell us: every correction is read.",
         ],
       },
@@ -245,26 +245,26 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
       {
         title: "Un nom n’est jamais figé",
         paragraphs: [
-          "Un nom change avec le temps, et selon qui le raconte. Un peuple, une langue ou un lieu peuvent porter plusieurs noms à la fois : celui qu’ils se donnent, ceux que leurs voisins leur donnent, celui qu’une administration a écrit un jour. Aucun n’est faux. Ils ne viennent simplement pas du même endroit.",
+          "Un nom change avec le temps, et selon qui le raconte. Un peuple, une langue ou un lieu peuvent porter plusieurs noms à la fois : celui qu’ils se donnent, ceux que leurs voisins leur donnent, celui qu’une administration a écrit un jour. Plusieurs noms peuvent coexister ; nous précisons leurs usages, leurs contextes et les éventuelles contestations. Ils ne viennent simplement pas du même endroit. Un nom d’abord imposé depuis l’extérieur peut ensuite devenir une appartenance réellement vécue : son origine ne suffit pas à juger de sa réalité aujourd’hui.",
         ],
       },
       {
-        title: "La source qui compte le plus",
+        title: "La pertinence d’une source",
         paragraphs: [
           "C’est pour cette raison qu’il existe plusieurs sources sur un même nom, et qu’elles ne se recoupent pas.",
-          "Celle qui compte le plus est celle qui s’approche le plus du nom qu’un peuple se donne : personne n’est mieux placé que lui pour raconter son histoire. La chercher demande du travail, et ce travail produit des erreurs.",
+          "La pertinence d’une source dépend de la question posée. La chercher demande du travail, et ce travail produit des erreurs.",
         ],
       },
       {
         title: "Ces écarts pèsent encore",
         paragraphs: [
-          "Aujourd’hui encore, un même peuple, une même langue ou un même lieu peut porter plusieurs noms selon qui parle. Ces écarts entretiennent des tensions — et bien souvent, savoir d’où vient chaque nom suffit à faire tomber le malentendu qui les nourrit.",
+          "Aujourd’hui encore, un même peuple, une même langue ou un même lieu peut porter plusieurs noms selon qui parle. Ces écarts entretiennent des tensions. Comprendre l’histoire d’un nom peut éclairer un désaccord, sans suffire à le résoudre.",
         ],
       },
       {
         title: "Personne n’est visé",
         paragraphs: [
-          "Ces sujets sont sensibles, et nous le savons. Nous ne cherchons à retirer sa légitimité à aucun peuple, à aucune langue, à aucune personne, et nous ne désignons aucun responsable.",
+          "Ces sujets sont sensibles, et nous le savons. Nous ne cherchons à retirer sa légitimité à aucun peuple, à aucune langue, à aucune personne. Nous nommons les acteurs lorsque les sources établissent leur rôle, sans attribuer une responsabilité collective aux populations d’aujourd’hui.",
           "Si vous vous sentez visé en nous lisant, ce n’est pas l’intention — et si nous nous sommes trompés, dites-le-nous : toute correction est lue.",
         ],
       },
