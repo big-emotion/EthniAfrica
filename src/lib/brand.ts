@@ -15,7 +15,7 @@
  * | NEXT_PUBLIC_CANONICAL_DOMAIN      | CANONICAL_DOMAIN   | "ethniafrica.com"                                                     |
  * | NEXT_PUBLIC_ATTRIBUTION_STRING    | ATTRIBUTION_STRING | "Fait avec émotion pour l'Afrique"                                    |
  * | NEXT_PUBLIC_OG_TITLE              | OG_TITLE           | see the constant — the name, then what the site holds                 |
- * | NEXT_PUBLIC_OG_DESCRIPTION        | OG_DESCRIPTION     | see the constant — a question, then the six corpus classes            |
+ * | NEXT_PUBLIC_OG_DESCRIPTION        | OG_DESCRIPTION     | see the constant — what a name holds, then the six corpus classes     |
  *
  * The last two rows named a value rather than pointing at one, and both had
  * gone stale: the table still read "Atlas des Peuples d'Afrique" and an
@@ -135,4 +135,4 @@ export const OG_TITLE =
 // @req REQ-019
 export const OG_DESCRIPTION =
   process.env.NEXT_PUBLIC_OG_DESCRIPTION ||
-  "Chaque nom raconte une histoire. Peuples, pays, langues, familles linguistiques, noms et appellations : chacun avec l’histoire de son nom et ses sources, sans trancher.";
+  "L’Afrique à travers ses noms : chaque nom raconte une histoire. Peuples, pays, langues, familles linguistiques, noms et appellations, chacun avec ses sources, sans trancher.";
