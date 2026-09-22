@@ -6,7 +6,7 @@
     "fr": "D'où vient le nom « Mbappé » ?"
   },
   "myth": {
-    "fr": "Mbappé voudrait-il dire « bravoure » ?"
+    "fr": "D'où vient le nom « Mbappé » ?"
   },
   "subjects": [
     {
@@ -19,11 +19,6 @@
   ],
   "sitePath": "/fr/atlas/noms/PAT_MBAPPE",
   "publications": [
-    { "network": "tiktok", "format": "carrousel" },
-    { "network": "instagram", "format": "carrousel" },
-    { "network": "facebook", "format": "carrousel" },
-    { "network": "youtube", "format": "carrousel" },
-    { "network": "linkedin", "format": "carrousel" },
     { "network": "tiktok", "format": "video" },
     { "network": "instagram", "format": "video" },
     { "network": "facebook", "format": "video" },
