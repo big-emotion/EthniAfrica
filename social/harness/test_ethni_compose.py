@@ -52,7 +52,7 @@ def carte(**kw):
 
 DECK = {
     "campagne": "essai",
-    "pilier": "L'atlas",
+    "pilier": "EthniAfrica",
     "accent": "ocre",
     "fond": "nuit",
     "serie": "Le vrai nom",
@@ -65,6 +65,15 @@ def image_test(w, h, ton=128):
 
 
 # ---------------------------------------------------------------- §5 layouts
+
+
+def test_a_deck_under_the_retired_atlas_pillar_prints_ethniafrica():
+    # 2026-09-22: the project is never printed as « L'ATLAS ». A deck the
+    # workshop filed under the old pillar, with no series, prints the brand.
+    deck = dict(DECK, pilier="L'atlas", serie=None, cartes=[carte()])
+    bandeau = [b for b in gab._entete(carte(), deck, "carrousel", 900)
+               if b.nom == "entete-bandeau"]
+    assert bandeau[0].texte == "ETHNIAFRICA"
 
 
 def test_the_three_layouts_render_every_format():
