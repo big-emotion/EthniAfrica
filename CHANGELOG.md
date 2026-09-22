@@ -10,6 +10,40 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [4.17.0] - 2026-09-22
+
+### Added
+
+- The product's tagline becomes « L'Afrique à travers ses noms », replacing
+  « L'histoire des noms, avec leurs sources ». Every consumer of the single
+  source of truth follows automatically: footer, share cards, the render
+  engine's watermark and the email signature (#1266).
+- `/[lang]/doctrine` now opens on eleven method sections (self-designation,
+  provenance, oral transmission, archive imbalance, disagreement, first
+  attestation, sensitive naming, titles/images, corrections, scope) ahead of
+  the existing classification reference (#1260).
+- The home hero's search placeholder cycles three corpus-checked seed
+  examples — Keïta, Lingala, Peul/Fula — instead of a generic prompt (#1261).
+- The home hero's purpose disclosure links through to the public method page
+  (#1271).
+
+### Changed
+
+- Four sentences in the About page's purpose declaration that overclaimed
+  what the atlas can establish were rewritten: dropped the true/false framing
+  over coexisting names, the "closest to the self-designation" source
+  ranking the Source Tier Policy refuses elsewhere, the claim that knowing a
+  name's origin is enough to dissolve a misunderstanding, and clarified "we
+  name no culprit" to name actors the sources establish without collective
+  attribution (#1269).
+
+### Fixed
+
+- `scripts/recomputeConfidence.ts` now chunks and paginates its assertions
+  fetch instead of sending a single `.in(...)` filter past PostgREST's URL
+  and row-cap limits, fixing the nightly confidence-recompute job's failure
+  on production's roughly 1,000 checked sources (#1263).
+
 ## [4.16.0] - 2026-09-22
 
 ### Added
@@ -1308,7 +1342,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.16.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.17.0...HEAD
+[4.17.0]: https://github.com/big-emotion/ethniafrica/compare/v4.16.0...v4.17.0
 [4.16.0]: https://github.com/big-emotion/ethniafrica/compare/v4.15.0...v4.16.0
 [4.15.0]: https://github.com/big-emotion/ethniafrica/compare/v4.14.0...v4.15.0
 [4.14.0]: https://github.com/big-emotion/ethniafrica/compare/v4.13.0...v4.14.0
