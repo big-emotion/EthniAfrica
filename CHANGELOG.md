@@ -10,6 +10,40 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [4.18.0] - 2026-09-22
+
+### Added
+
+- The Contribute page gains a « Documenter une entrée en détail » section:
+  one card per category (peoples, countries, place, patronymes, languages),
+  each opening its Google Forms pilot in a new tab. The place card carries a
+  work-in-progress badge, since that category has no strict model yet
+  (#1282, #1273).
+- The home can carry a schedulable featured-campaign tile — a naming story
+  or a dated historical event — activated only by merging an
+  `activeFrom`/`activeTo` window, with no flag and no admin toggle. The first
+  entry, the Peul/Fulbe naming story, ships inactive (#1278).
+- The social render engine accepts a project introduction registered
+  without an episode number (#1280).
+
+### Changed
+
+- The search result page's closing conviction and the home's
+  « peul-dix-noms » fact drop the true/false framing (« Aucun de ces noms
+  n'est faux »), as the About page already did in #1269: several names can
+  coexist, and the page states their usages, contexts and disputes (#1272).
+- The About page's purpose chapter is redesigned sober and minimal: the
+  three chapter plates, tinted cards and coloured accent bars are retired and
+  the surrounding prose condensed; every doctrine sentence is kept verbatim
+  (#1277).
+
+### Fixed
+
+- The nightly confidence-recompute job queries `assertions.source_ids` as
+  the array it has been since migration 015, instead of a `source_id` column
+  that no longer exists, and files an assertion under every source it cites
+  (#1276).
+
 ## [4.17.0] - 2026-09-22
 
 ### Added
@@ -1342,7 +1376,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.17.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.18.0...HEAD
+[4.18.0]: https://github.com/big-emotion/ethniafrica/compare/v4.17.0...v4.18.0
 [4.17.0]: https://github.com/big-emotion/ethniafrica/compare/v4.16.0...v4.17.0
 [4.16.0]: https://github.com/big-emotion/ethniafrica/compare/v4.15.0...v4.16.0
 [4.15.0]: https://github.com/big-emotion/ethniafrica/compare/v4.14.0...v4.15.0
