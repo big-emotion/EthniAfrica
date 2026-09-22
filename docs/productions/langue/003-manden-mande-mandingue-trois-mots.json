@@ -1,0 +1,22 @@
+{
+  "campaign": "manden-mande-mandingue-trois-mots",
+  "typologie": "langue",
+  "episode": 3,
+  "question": {
+    "fr": "D'où vient le nom Mandé ?",
+    "en": "Where does the name Mandé come from?"
+  },
+  "myth": {
+    "fr": "Manden, Mandé et mandingue désignent-ils la même chose ?",
+    "en": "Do Manden, Mandé and mandingue name the same thing?"
+  },
+  "subjects": [
+    {
+      "kind": "family",
+      "id": "FLG_MANDE",
+      "label": { "fr": "Mandé", "en": "Mande" }
+    }
+  ],
+  "sitePath": "/fr/atlas/familles/FLG_MANDE",
+  "publications": []
+}

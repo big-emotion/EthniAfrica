@@ -1,0 +1,22 @@
+{
+  "campaign": "dioula-un-metier-une-langue-une-identite",
+  "typologie": "peuple",
+  "episode": 2,
+  "question": {
+    "fr": "D'où vient le nom Dioula ?",
+    "en": "Where does the name Dioula come from?"
+  },
+  "myth": {
+    "fr": "Dioula n'est-il pas un nom de peuple ?",
+    "en": "Is Dioula not the name of a people?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_DIOULA",
+      "label": { "fr": "Dioula", "en": "Dioula" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_DIOULA",
+  "publications": []
+}
