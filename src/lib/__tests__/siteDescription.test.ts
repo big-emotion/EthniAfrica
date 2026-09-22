@@ -15,26 +15,9 @@ vi.mock("next/font/google", () => {
   };
 });
 
-import { MODULE_DEFINITIONS } from "@/lib/hubs/moduleRegistry";
 import { OG_DESCRIPTION } from "@/lib/brand";
 import { translations } from "@/lib/translations";
 import { metadata } from "@/app/layout";
-
-/**
- * The noun each corpus class wears in a sentence, from the registry rather
- * than restated here — the point of the whole exercise. A class is an atlas
- * module with a `dataSource`; `recherche` has none, being a way in rather
- * than a thing the corpus holds.
- */
-const corpusNouns = MODULE_DEFINITIONS.filter(
-  (module) => module.accessMode === "atlas" && module.dataSource
-).map((module) => {
-  expect(
-    module.corpusNoun,
-    `module ${module.id} is a corpus class and declares no corpusNoun`
-  ).toBeTruthy();
-  return module.corpusNoun as string;
-});
 
 /**
  * Every sentence whose job is to say what the atlas contains, to a reader who
@@ -51,18 +34,19 @@ const descriptions = () => [
 describe("what the site says it contains, before anyone arrives", () => {
   // These three strings are the meta description, the social-card blurb and
   // their translation entry: what a search engine prints and what a shared
-  // link previews. They named four of the six classes — the atlas grew a
-  // language axis and a name axis and none of the three noticed — which made
-  // the most-read sentence about the product the most out of date.
+  // link previews. They used to enumerate the six corpus classes; the
+  // 2026-09-22 editorial plan (B3) replaced the inventory with the promise —
+  // the four kinds of name a reader arrives with, and the sources behind each
+  // history. An enumeration of classes is the retired encyclopaedia register.
   // @req REQ-019
-  it("names every class the corpus holds", () => {
-    expect(corpusNouns.length).toBeGreaterThanOrEqual(6);
-
+  it("names the four kinds of name a reader arrives with, and the sources", () => {
     for (const [label, description] of descriptions()) {
       const folded = description.toLowerCase();
-      for (const noun of corpusNouns) {
-        expect(folded, `${label} omits ${noun}`).toContain(noun.toLowerCase());
+      for (const kind of ["noms de famille", "peuples", "langues", "lieux"]) {
+        expect(folded, `${label} omits ${kind}`).toContain(kind);
       }
+      expect(folded, `${label} omits the sources`).toMatch(/\bsources?\b/);
+      expect(folded, `${label} omits the history`).toContain("histoire");
     }
   });
 
