@@ -41,7 +41,7 @@ const en = {
     notStarted: {
       state: "Correction not yet published",
       body: (decidedOn: string) =>
-        `The atlas agreed with this report on ${decidedOn}. The page it concerns has not changed to date.`,
+        `We agreed with this report on ${decidedOn}. The page it concerns has not changed to date.`,
     },
     inProgress: {
       state: "Correction under way",
@@ -131,7 +131,7 @@ const fr: PublicFlagsCopy = {
     notStarted: {
       state: "Correction non encore publiée",
       body: (decidedOn: string) =>
-        `L'atlas a donné raison à cette remarque le ${decidedOn}. La page concernée n'a pas changé à ce jour.`,
+        `Nous avons donné raison à cette remarque le ${decidedOn}. La page concernée n'a pas changé à ce jour.`,
     },
     inProgress: {
       state: "Correction en cours",

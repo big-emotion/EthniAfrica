@@ -4,17 +4,17 @@ const en = {
   home: {
     title: "Home",
     blurb:
-      "The atlas opens with intent, not a table of contents: search, understand or play unfolds its modules on the home page itself, and the next click opens the module.",
+      "EthniAfrica opens with intent, not a table of contents: search, understand or play unfolds its modules on the home page itself, and the next click opens the module.",
     label: "Home",
     note: "The globe and the three paths.",
   },
   corpus: {
-    title: "The atlas, in AFRIK order",
+    title: "Browse, in AFRIK order",
     // The rubric's own hub. Named for the axis rather than described, because
     // the rubric's blurb above already says what the axis holds.
-    hub: ["The atlas", "The axis and its six ways in."],
+    hub: ["Browse", "The axis and its six ways in."],
     blurb:
-      "Language family → language → people → country. This is the hierarchy of the atlas itself, and each page can be read from the level above. Designations and personal names cross it: they name, they do not locate.",
+      "Language family → language → people → country. This is our project's own hierarchy, and each page can be read from the level above. Designations and personal names cross it: they name, they do not locate.",
     families: [
       "Language families",
       "The first level: 25 families, each with its languages.",
@@ -63,13 +63,13 @@ const en = {
     title: "Play",
     hub: ["Play", "The axis and its rounds."],
     blurb:
-      "Every round is drawn from the atlas: winning means having learnt something, never having guessed.",
+      "Every round is drawn from our entries: winning means having learnt something, never having guessed.",
     quiz: "The quiz",
   },
   contribute: {
     title: "Contribute",
     blurb:
-      "The atlas is open and incomplete, and says so. These are the two ways to correct it.",
+      "Our project is open and incomplete, and says so. These are the two ways to correct it.",
     contribution: ["Contribute", "Propose a page, a source or a correction."],
     reports: ["Reports", "Reported errors and their public resolution."],
   },
@@ -77,10 +77,10 @@ const en = {
     title: "The site",
     blurb: "Who publishes it, under which rules, and how to read the data.",
     about: "About",
-    glossary: ["Glossary", "The words the atlas uses to name, defined once."],
-    sources: ["Sources", "The bibliography documenting the atlas."],
-    api: ["Public API v2", "The atlas as JSON, under an open licence."],
-    contact: ["Contact", "Write to the team publishing the atlas."],
+    glossary: ["Glossary", "The words we use to name, defined once."],
+    sources: ["Sources", "The bibliography documenting our project."],
+    api: ["Public API v2", "Our content as JSON, under an open licence."],
+    contact: ["Contact", "Write to the team publishing EthniAfrica."],
     accessibility: "Accessibility",
     legal: "Legal notice",
     data: "Data policy",
@@ -94,15 +94,15 @@ const fr: SiteTreeCopy = {
   home: {
     title: "L'accueil",
     blurb:
-      "L'atlas s'ouvre par l'intention, pas par le sommaire : chercher, comprendre ou jouer déplie ses modules sur l'accueil même, et le clic suivant est le module.",
+      "EthniAfrica s'ouvre par l'intention, pas par le sommaire : chercher, comprendre ou jouer déplie ses modules sur l'accueil même, et le clic suivant est le module.",
     label: "Accueil",
     note: "Le globe et les trois axes.",
   },
   corpus: {
-    title: "L’atlas, dans l'ordre AFRIK",
-    hub: ["L'atlas", "L'axe et ses six entrées."],
+    title: "Parcourir, dans l'ordre AFRIK",
+    hub: ["Parcourir", "L'axe et ses six entrées."],
     blurb:
-      "Famille linguistique → langue → peuple → pays. C'est la hiérarchie de l’atlas lui-même, et chaque page se lit depuis celle du dessus. Les appellations et les noms la traversent : ils nomment, ils ne situent pas.",
+      "Famille linguistique → langue → peuple → pays. C'est la hiérarchie même de notre projet, et chaque page se lit depuis celle du dessus. Les appellations et les noms la traversent : ils nomment, ils ne situent pas.",
     families: [
       "Familles linguistiques",
       "Le premier niveau : 25 familles, chacune avec ses langues.",
@@ -151,13 +151,13 @@ const fr: SiteTreeCopy = {
     title: "Jouer",
     hub: ["Jouer", "L'axe et ses parties."],
     blurb:
-      "Chaque partie est tirée de l’atlas : gagner suppose d'avoir lu quelque chose, jamais d'avoir deviné.",
+      "Chaque partie est tirée de nos fiches : gagner suppose d'avoir lu quelque chose, jamais d'avoir deviné.",
     quiz: "Le quiz",
   },
   contribute: {
     title: "Participer",
     blurb:
-      "L’atlas est ouvert et incomplet, et il le dit. Les deux portes par lesquelles on le corrige.",
+      "Notre projet est ouvert et incomplet, et il le dit. Les deux portes par lesquelles on le corrige.",
     contribution: [
       "Contribuer",
       "Proposer une page, une source, une correction.",
@@ -173,11 +173,11 @@ const fr: SiteTreeCopy = {
     about: "À propos",
     glossary: [
       "Glossaire",
-      "Les mots avec lesquels l'atlas nomme, définis une fois.",
+      "Les mots avec lesquels nous nommons, définis une fois.",
     ],
-    sources: ["Sources", "La bibliographie qui documente l’atlas."],
-    api: ["API publique v2", "L’atlas en JSON, sous licence ouverte."],
-    contact: ["Contact", "Écrire à l'équipe qui publie l'atlas."],
+    sources: ["Sources", "La bibliographie qui documente notre projet."],
+    api: ["API publique v2", "Nos contenus en JSON, sous licence ouverte."],
+    contact: ["Contact", "Écrire à l'équipe qui publie EthniAfrica."],
     accessibility: "Accessibilité",
     legal: "Mentions légales",
     data: "Politique de données",

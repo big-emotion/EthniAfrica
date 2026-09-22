@@ -21,5 +21,5 @@ import { PageLoadingScreen } from "@/components/system/PageLoadingScreen";
  */
 // @req REQ-104
 export default function ExplorerLoading() {
-  return <PageLoadingScreen label="Chargement de l'atlas" />;
+  return <PageLoadingScreen label="Chargement" />;
 }

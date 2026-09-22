@@ -51,6 +51,19 @@ describe("buildPeoplePresenceFacts (REQ-117)", () => {
     expect(facts.NGA?.description).toMatch(/sans tracé de limite/);
   });
 
+  // @req REQ-178
+  it("titles the panel with the self-given name before the filed name", () => {
+    const facts = buildPeoplePresenceFacts({
+      language: "fr",
+      peopleName: "Yoruba",
+      selfName: "Ọmọ Oòduà",
+      peopleId: "PPL_YORUBA",
+      demography: yoruba,
+    });
+
+    expect(facts.NGA?.title).toBe("Ọmọ Oòduà — Yoruba au Nigeria");
+  });
+
   /**
    * "au" was hard-coded, so every feminine or vowel-initial country read as
    * broken French on the fiche of every people present there — "Aari au

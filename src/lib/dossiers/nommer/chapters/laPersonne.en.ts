@@ -30,7 +30,7 @@ export const CHAPITRE_LA_PERSONNE_EN: DossierChapterTranslation = {
       heading: "What the corpus holds",
       blocks: {
         "trente-six-systemes":
-          "The atlas documents thirty-six naming systems. They do not resemble one another: a clan name, a recited praise name, a name of geographical attribution, a totemic name paired with a food prohibition. What the word ‘patronyme’ covers in French is, here, half a dozen different things.",
+          "We document thirty-six naming systems. They do not resemble one another: a clan name, a recited praise name, a name of geographical attribution, a totemic name paired with a food prohibition. What the word ‘patronyme’ covers in French is, here, half a dozen different things.",
         "quatre-systemes-non-hereditaires":
           "The figure that counts is the last in the column: four documented systems in which the name is not handed down. That is not a marginal curiosity, it is the demonstration. Heredity of the name is not the rule to which these systems would be the exception; it is one way of doing things among others.",
       },
@@ -96,7 +96,7 @@ export const CHAPITRE_LA_PERSONNE_EN: DossierChapterTranslation = {
         "un-nom-ne-dit-pas-lorigine":
           "A family name does not indicate a person's origin. That is not a legal precaution, it is a historical fact: clan systems absorbed lineages with no blood tie, through political alliance, through clientship and through captivity in war. A fiche may say that a name is attested among a people; it never says that a bearer belongs to it.",
         "aucune-fonctionnalite":
-          "The atlas holds to this in its code as much as in its prose: no feature of this site takes a family name and returns an ethnic origin. Building the opposite would amount to reproducing in software the register of indirect rule, with the same pretension to know who is what.",
+          "We hold to this in our code as much as in our prose: no feature of this site takes a family name and returns an ethnic origin. Building the opposite would amount to reproducing in software the register of indirect rule, with the same pretension to know who is what.",
       },
       pairs: [
         {

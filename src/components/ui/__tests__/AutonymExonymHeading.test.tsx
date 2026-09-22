@@ -233,7 +233,23 @@ describe("AutonymExonymHeading — compact variant (exonym/autonym)", () => {
     expect(italics).toHaveLength(0);
   });
 
-  it("renders exonym as the accessible heading text", () => {
+  // @req REQ-178
+  it("heads the entry with the name the people gives itself, the filed name after", () => {
+    render(
+      <AutonymExonymHeading variant="compact" exonym="Zulu" autonym="amaZulu" />
+    );
+    expect(
+      screen.getByRole("heading", { name: "amaZulu" })
+    ).toBeInTheDocument();
+    const [heading, filed] = Array.from(
+      document.querySelectorAll("h2, p"),
+      (el) => el.textContent
+    );
+    expect([heading, filed]).toEqual(["amaZulu", "Zulu"]);
+  });
+
+  // @req REQ-178
+  it("renders exonym as the accessible heading text when no self-name is known", () => {
     render(<AutonymExonymHeading variant="compact" exonym="Yoruba" />);
     expect(screen.getByRole("heading", { name: "Yoruba" })).toBeInTheDocument();
   });

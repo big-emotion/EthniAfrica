@@ -8,7 +8,7 @@ describe("FactsBlock", () => {
   it("identifies the atlas-holds block and keeps facts atomic", () => {
     render(
       <FactsBlock
-        title="Ce que l’atlas tient"
+        title="Ce que nous savons"
         items={[{ label: "Pays", value: "Nigeria" }]}
       />
     );

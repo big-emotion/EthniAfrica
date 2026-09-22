@@ -309,7 +309,7 @@ describe("ContinentGlobeStage — a caller that owns the projection (REQ-120)", 
 
     await waitFor(() =>
       expect(
-        screen.getByText(/ne renseigne encore aucun peuple par pays/i)
+        screen.getByText(/ne renseignons encore aucun peuple par pays/i)
       ).toBeTruthy()
     );
   });

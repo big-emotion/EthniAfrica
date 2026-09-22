@@ -69,18 +69,19 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     eyebrow: "Where this name comes from",
     disambiguation: "Which one are you looking for?",
     appellations: "The names",
-    appellationsLead: "The most common first. None of them is “the right one”.",
+    appellationsLead:
+      "The name each people gives itself first, then the others. None of them is “the right one”.",
     origins: "Where they come from",
     selfGiven: "What the peoples call themselves",
     problem: "What these names raise",
     usageToday: "Who says what today",
     throughTime: "Through time",
-    atlasHolds: "What the atlas does hold",
-    silences: "What the atlas does not say",
+    atlasHolds: "What we know",
+    silences: "What we do not know yet",
     silencesLead: "A declared silence, not an oversight.",
     noDatedAttestation: "No dated attestation",
     noDatedAttestationBody:
-      "The atlas does not date any of these forms: we do not know since when each one has been written.",
+      "The sources shown here do not yet date these forms.",
     invitation: "Have we got it wrong?",
     invitationBody:
       "If you know a source on any of these names, it will be read.",
@@ -91,10 +92,10 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     problematicMark: "contested form",
     unknownName: "We do not know this name.",
     unknownNameBody:
-      "That is not an answer: it is a confession. If this name is yours, or one of a people, a language or a place you know, tell us. That is how the atlas grows.",
+      "That is not an answer: it is a confession. If this name is yours, or one of a people, a language or a place you know, tell us. That is how our project grows.",
     noExactMatch: "No entry carries exactly",
     searchUnavailable:
-      "The search is unavailable at the moment. Nothing is missing from the atlas — it is the search that did not answer. Please try again shortly.",
+      "Search is temporarily unavailable. Try again in a moment.",
     browsePeoples: "Browse the peoples",
     browseFamilies: "The language families",
     conviction: "Several names can coexist.",
@@ -105,18 +106,19 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     eyebrow: "D'où vient ce nom",
     disambiguation: "Lequel cherchez-vous ?",
     appellations: "Les appellations",
-    appellationsLead: "Les plus communes d'abord. Aucune n'est « la bonne ».",
+    appellationsLead:
+      "Le nom que chaque peuple se donne d'abord, puis les autres. Aucune n'est « la bonne ».",
     origins: "D’où elles viennent",
     selfGiven: "Ce que les peuples se donnent",
     problem: "Ce que ces noms posent",
     usageToday: "Qui dit quoi, aujourd’hui",
     throughTime: "À travers le temps",
-    atlasHolds: "Ce que l’atlas tient",
-    silences: "Ce que l'atlas ne dit pas",
+    atlasHolds: "Ce que nous savons",
+    silences: "Ce que nous ne savons pas encore",
     silencesLead: "Un silence déclaré, pas un oubli.",
     noDatedAttestation: "Aucune attestation datée",
     noDatedAttestationBody:
-      "L’atlas ne date aucune de ces formes : on ne sait pas depuis quand chacune est écrite.",
+      "Les sources présentées ici ne permettent pas encore de dater ces formes.",
     invitation: "Nous nous sommes trompés ?",
     invitationBody:
       "Si vous connaissez une source sur l’un de ces noms, elle sera lue.",
@@ -127,10 +129,10 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     problematicMark: "forme contestée",
     unknownName: "Nous ne connaissons pas ce nom.",
     unknownNameBody:
-      "Ce n’est pas une réponse : c’est un aveu. Si ce nom est le vôtre, ou celui d’un peuple, d’une langue ou d’un lieu que vous connaissez, dites-le-nous. C’est comme ça que l’atlas grandit.",
+      "Ce n’est pas une réponse : c’est un aveu. Si ce nom est le vôtre, ou celui d’un peuple, d’une langue ou d’un lieu que vous connaissez, dites-le-nous. C’est comme ça que notre projet grandit.",
     noExactMatch: "Aucune fiche ne porte exactement",
     searchUnavailable:
-      "La recherche est indisponible pour le moment. Rien ne manque à l’atlas : c’est la recherche qui n’a pas répondu. Réessayez dans un instant.",
+      "La recherche est momentanément indisponible. Réessayez dans un instant.",
     browsePeoples: "Parcourir les peuples",
     browseFamilies: "Les familles de langues",
     conviction: "Plusieurs noms peuvent coexister.",

@@ -11,11 +11,11 @@ import type { Language } from "@/types/shared";
 const en = {
   metadataTitle: "Contact us",
   metadataDescription:
-    "Write to the atlas: report an error, suggest a source or discuss reusing the data.",
-  eyebrow: "Write to the atlas",
+    "Write to us: report an error, suggest a source or discuss reusing the data.",
+  eyebrow: "Write to us",
   title: "Contact us",
   introduction:
-    "An error in a page, a source to add to the atlas, or a use of the data to discuss: write to us. Every message reaches the same inbox, and your chosen subject sorts it.",
+    "An error in a page, a source to add to our project, or a use of the data to discuss: write to us. Every message reaches the same inbox, and your chosen subject sorts it.",
   formTitle: "Send a message",
   requiredFields: "Fields marked with an asterisk are required.",
   civility: "Title",
@@ -86,11 +86,11 @@ type ContactCopy = typeof en;
 const fr: ContactCopy = {
   metadataTitle: "Contactez-nous",
   metadataDescription:
-    "Écrire à l'atlas : signaler une erreur, proposer une source, demander une réutilisation des données.",
-  eyebrow: "Écrire à l'atlas",
+    "Nous écrire : signaler une erreur, proposer une source, demander une réutilisation des données.",
+  eyebrow: "Nous écrire",
   title: "Contactez-nous",
   introduction:
-    "Une erreur sur une page, une source à verser à l’atlas, une réutilisation des données à discuter : écrivez-nous. Chaque message arrive dans la même boîte, et l'objet que vous choisissez est ce qui la trie.",
+    "Une erreur sur une page, une source à verser à notre projet, une réutilisation des données à discuter : écrivez-nous. Chaque message arrive dans la même boîte, et l'objet que vous choisissez est ce qui la trie.",
   formTitle: "Envoyer un message",
   requiredFields: "Les champs marqués d'un astérisque sont obligatoires.",
   civility: "Civilité",

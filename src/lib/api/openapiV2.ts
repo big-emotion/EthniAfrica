@@ -3438,6 +3438,12 @@ const options: swaggerJsdoc.Options = {
             id: { type: "string", example: "PPL_EWE" },
             nameMain: { type: "string" },
             languageFamilyId: { type: "string", example: "FLG_KWA" },
+            selfAppellation: {
+              type: "string",
+              description:
+                "The name the people gives itself (content.appellations.selfAppellation), verbatim. Omitted when the fiche records none.",
+              example: "Eʋeawó (les gens Ewe), Eʋe",
+            },
           },
           required: ["id", "nameMain", "languageFamilyId"],
         },
@@ -4506,7 +4512,7 @@ const options: swaggerJsdoc.Options = {
                 null,
               ],
               description:
-                "What changed in the corpus, separately from what the atlas thought of the report. Written by the publication of a correction, never by a moderator decision. NULL while the report is open or under review.",
+                "What changed in the corpus, separately from what the moderators thought of the report. Written by the publication of a correction, never by a moderator decision. NULL while the report is open or under review.",
               example: null,
             },
             remediation_published_at: {

@@ -51,7 +51,7 @@ const en = {
       heading: "Unevenly accessible sources",
       paragraphs: [
         "The sources easiest to find do not necessarily represent every voice. We state when our documentation rests mainly on outside perspectives, and we look for the local accounts available.",
-        "What the atlas does not yet document describes a limit of our work, not an absence of history.",
+        "What we do not yet document describes a limit of our work, not an absence of history.",
       ],
     },
     {
@@ -88,15 +88,15 @@ const en = {
       ],
     },
     {
-      heading: "An atlas under construction",
+      heading: "A project under construction",
       paragraphs: [
-        "The atlas does not cover every population, every name or every source. The subjects we feature answer readers' questions and reflect the documentation available.",
+        "Our project does not cover every population, every name or every source. The subjects we feature answer readers' questions and reflect the documentation available.",
         "Our wish to help populations understand each other better is a conviction. We keep it distinct from the conclusions the sources actually allow us to draw.",
       ],
     },
   ] satisfies MethodSectionCopy[],
   classificationSection: {
-    heading: "Understanding the atlas's indications",
+    heading: "Understanding our indications",
     intro:
       "Some pages indicate whether a classification commands broad agreement, remains debated, carries the trace of a colonial history, or rests on a reconstruction. These indications describe the classification presented, not the worth or legitimacy of the people concerned.",
   },
@@ -165,7 +165,7 @@ const fr: DoctrineCopy = {
       heading: "Des sources inégalement accessibles",
       paragraphs: [
         "Les sources les plus faciles à retrouver ne représentent pas nécessairement toutes les voix. Nous précisons lorsque notre documentation repose surtout sur des regards extérieurs et recherchons les récits locaux disponibles.",
-        "Ce que l’atlas ne documente pas encore décrit une limite de notre travail, pas une absence d’histoire.",
+        "Ce que nous ne documentons pas encore décrit une limite de notre travail, pas une absence d’histoire.",
       ],
     },
     {
@@ -202,15 +202,15 @@ const fr: DoctrineCopy = {
       ],
     },
     {
-      heading: "Un atlas en construction",
+      heading: "Un projet en construction",
       paragraphs: [
-        "L’atlas ne couvre pas toutes les populations, tous les noms ni toutes les sources. Les sujets mis en avant répondent à des questions de lecteurs et à la documentation disponible.",
+        "Notre projet ne couvre pas toutes les populations, tous les noms ni toutes les sources. Les sujets mis en avant répondent à des questions de lecteurs et à la documentation disponible.",
         "Notre souhait de contribuer à la compréhension entre les populations est une conviction. Nous le distinguons des conclusions que les sources permettent d’établir.",
       ],
     },
   ],
   classificationSection: {
-    heading: "Comprendre les indications de l’atlas",
+    heading: "Comprendre nos indications",
     intro:
       "Certaines pages indiquent si une classification fait l’objet d’un large accord, reste discutée, porte la trace d’une histoire coloniale ou repose sur une reconstruction. Ces indications décrivent la classification présentée, pas la valeur ni la légitimité des personnes concernées.",
   },

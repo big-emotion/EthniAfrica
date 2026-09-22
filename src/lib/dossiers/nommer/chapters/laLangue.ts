@@ -22,7 +22,7 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
     "Le mot « bantou » range des centaines de peuples. Qui l'a forgé, et pour quoi faire ?",
   standfirst: {
     id: "standfirst",
-    text: "Une étiquette née dans un bureau colonial classe aujourd'hui la plus grande famille linguistique du continent. Elle est scientifiquement utile et politiquement toxique, et l'atlas continue de l'employer.",
+    text: "Une étiquette née dans un bureau colonial classe aujourd'hui la plus grande famille linguistique du continent. Elle est scientifiquement utile et politiquement toxique, et nous continuons de l'employer.",
     sourceRefs: ["bleek-1862", "britannica-bleek"],
     figureRefs: ["corpus-language-families"],
   },
@@ -40,7 +40,7 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
       blocks: [
         {
           id: "un-nom-sans-locuteurs",
-          text: "L'atlas range ses 776 peuples sous vingt-quatre familles linguistiques. La plus vaste porte un nom qui n'a pas de locuteurs : personne ne s'est jamais dit « bantou » avant qu'un linguiste ne l'écrive.",
+          text: "Nous rangeons nos 776 peuples sous vingt-quatre familles linguistiques. La plus vaste porte un nom qui n'a pas de locuteurs : personne ne s'est jamais dit « bantou » avant qu'un linguiste ne l'écrive.",
           sourceRefs: [],
           figureRefs: ["corpus-language-families", "corpus-peoples"],
         },
@@ -124,7 +124,7 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
         },
         {
           id: "le-prefixe-coupe",
-          text: "L'usage européen a coupé le préfixe. Ce qui reste est un radical nu qui sert indifféremment de nom de langue, de nom de peuple et d'adjectif — et l'ambiguïté que l'atlas passe son temps à défaire est en partie née là.",
+          text: "L'usage européen a coupé le préfixe. Ce qui reste est un radical nu qui sert indifféremment de nom de langue, de nom de peuple et d'adjectif — et l'ambiguïté que nous passons notre temps à défaire est en partie née là.",
           sourceRefs: ["bantu-class-prefixes"],
           figureRefs: [],
         },
@@ -185,7 +185,7 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
         },
         {
           id: "garder-et-expliquer",
-          text: "L'atlas tranche donc dans un seul sens : il garde le mot et il l'explique. C'est l'application la plus nette de sa propre doctrine — rien n'est interdit, tout est étiqueté — et c'est aussi la position la moins confortable, parce qu'elle n'offre à personne le soulagement d'un mot neuf.",
+          text: "Nous tranchons donc dans un seul sens : nous gardons le mot et nous l'expliquons. C'est l'application la plus nette de notre propre doctrine — rien n'est interdit, tout est étiqueté — et c'est aussi la position la moins confortable, parce qu'elle n'offre à personne le soulagement d'un mot neuf.",
           sourceRefs: [],
           figureRefs: [],
         },
@@ -204,7 +204,7 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
         },
         {
           id: "le-classement-est-un-outil",
-          text: "Le corpus range pourtant chaque peuple sous une famille, et cette page en est la meilleure critique disponible : le classement est un outil de lecture, jamais une origine. Là où l'atlas emploie une étiquette forgée ailleurs, il le dit sur la fiche plutôt qu'ici.",
+          text: "Le corpus range pourtant chaque peuple sous une famille, et cette page en est la meilleure critique disponible : le classement est un outil de lecture, jamais une origine. Là où nous employons une étiquette forgée ailleurs, nous le disons sur la fiche plutôt qu'ici.",
           sourceRefs: [],
           figureRefs: [],
         },

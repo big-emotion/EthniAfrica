@@ -54,7 +54,7 @@ describe("getSiteTree — English reader copy", () => {
       "Home"
     );
     expect(tree.find((section) => section.id === "corpus")?.title).toBe(
-      "The atlas, in AFRIK order"
+      "Browse, in AFRIK order"
     );
     // Only while the dossier is published: the freeze takes the chapters out
     // of the plan entirely, in both locales.

@@ -24,7 +24,7 @@ import {
   getSearchLabel,
   getSearchResultGroups,
 } from "@/lib/search/searchVocabulary";
-import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
+import { searchResultDisplayLabel } from "@/lib/search/peopleDisplayNames";
 import { formatNumber } from "@/lib/languageTag";
 import {
   getCountryRoute,
@@ -403,7 +403,7 @@ export function HomeHeroSearch({
                     onMouseEnter={() => suggest.highlight(index)}
                     onClick={dismissPanel}
                   >
-                    {getLocalizedSearchResultName(result, language)}
+                    {searchResultDisplayLabel(result, language)}
                   </Link>
                 ))}
               </div>

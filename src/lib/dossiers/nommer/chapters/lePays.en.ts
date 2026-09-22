@@ -29,7 +29,7 @@ export const CHAPITRE_LE_PAYS_EN: DossierChapterTranslation = {
       heading: "A warning, before the first figure",
       blocks: {
         "une-seule-etymologie-sourcee":
-          "The atlas's fifty-four country fiches all record the etymology of their name and the actor who gave it. Only one attaches that etymology to a source — Nigeria's, corrected while this chapter was being written. For the fifty-three others, the sources chapter documents the demography and never the name.",
+          "Our fifty-four country fiches all record the etymology of their name and the actor who gave it. Only one attaches that etymology to a source — Nigeria's, corrected while this chapter was being written. For the fifty-three others, the sources chapter documents the demography and never the name.",
         "une-lecture-a-une-date":
           "The classification that follows is therefore a reading, made by hand, on a given date. It is not a measure of the corpus, and the corpus carries no field that would allow one to be taken: the question ‘was this country named by Africans?’ cannot be queried today.",
         "des-listes-en-entier":
@@ -102,7 +102,7 @@ export const CHAPITRE_LE_PAYS_EN: DossierChapterTranslation = {
       heading: "The name of the country is not the name of the people",
       blocks: {
         "quatre-objets-nommes":
-          "Under one and the same administrative box, the atlas finds four named objects of different kinds. A river gave its name to Niger and to Nigeria. A mountain, the Kirinyaga of the Kikuyu, gave Kenya. An expression of Arab geographers, bilād as-sūdān, ‘the land of the Blacks’, gave Sudan. A kingdom gave Congo.",
+          "Under one and the same administrative box, we find four named objects of different kinds. A river gave its name to Niger and to Nigeria. A mountain, the Kirinyaga of the Kikuyu, gave Kenya. An expression of Arab geographers, bilād as-sūdān, ‘the land of the Blacks’, gave Sudan. A kingdom gave Congo.",
         "hydronyme-oronyme-choronyme":
           "Hydronym, oronym, choronym, royal ethnonym: the map flattens them all into ‘country name’, and it is that flattening that makes one believe a country and a people coincide. The glossary gives each its word, because telling them apart is the first thing to do in order to read a border.",
       },

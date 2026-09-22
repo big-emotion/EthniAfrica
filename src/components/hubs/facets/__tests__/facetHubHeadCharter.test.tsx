@@ -119,7 +119,7 @@ describe("the facet head — the page names itself before the globe fills it", (
     expect(new Set(titles).size).toBe(FACETS.length);
     expect(new Set(eyebrows).size).toBe(FACETS.length);
     for (const eyebrow of eyebrows) {
-      expect(eyebrow).toMatch(/^atlas · /);
+      expect(eyebrow).toMatch(/^Parcourir · /);
     }
   });
 });

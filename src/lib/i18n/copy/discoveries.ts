@@ -30,7 +30,7 @@ const en = {
   frame: "Image",
   close: "Close",
   sources: "Sources",
-  atlas: "In the atlas",
+  atlas: "Our entries",
   original: "Original photo",
   licence: "Photo licence",
   keep: "Keep",
@@ -60,7 +60,7 @@ const en = {
   generated: {
     label: "Generated image",
     interpretation:
-      "This image is an interpretation made with an image generator, not a document. What the publication states rests on its sources and its atlas entries.",
+      "This image is an interpretation made with an image generator, not a document. What the publication states rests on its sources and our entries.",
     tool: "Tool",
     model: "Model",
     date: "Generated on",
@@ -113,7 +113,7 @@ const fr: DiscoveriesCopy = {
   frame: "Image",
   close: "Fermer",
   sources: "Sources",
-  atlas: "Dans l’atlas",
+  atlas: "Nos fiches",
   original: "Photo originale",
   licence: "Licence de la photo",
   keep: "Garder",
@@ -144,7 +144,7 @@ const fr: DiscoveriesCopy = {
   generated: {
     label: "Image générée",
     interpretation:
-      "Cette image est une interprétation produite avec un générateur d’images, pas un document. Ce que la publication affirme repose sur ses sources et ses fiches de l’atlas.",
+      "Cette image est une interprétation produite avec un générateur d’images, pas un document. Ce que la publication affirme repose sur ses sources et nos fiches.",
     tool: "Outil",
     model: "Modèle",
     date: "Générée le",

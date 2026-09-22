@@ -89,16 +89,15 @@ export interface SearchFeedCopy {
 export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
   en: {
     answer: {
-      exact: "The atlas documents this name.",
+      exact: "We document this name.",
       widened:
-        "The atlas documents this name, but the context below is related rather than identical.",
+        "We document this name, but the context below is related rather than identical.",
       relatedOnly:
-        "The atlas found related entries without establishing that they answer to this name.",
+        "We found related entries without establishing that they answer to this name.",
       typo: (name) => `Did you mean ${name}?`,
       shared: (count) => `${count} peoples carry this name.`,
-      sharedGeneric: (count) => `${count} atlas entries carry this name.`,
-      exactSummary:
-        "The forms and sources below state what the atlas can establish.",
+      sharedGeneric: (count) => `${count} entries carry this name.`,
+      exactSummary: "The forms and sources below state what we can establish.",
       widenedSummary:
         "Every widened item says how it is related to the searched name.",
       relationEyebrow: "Related results",
@@ -125,10 +124,10 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       linkedFamily: "Same language family",
       linkedPeople: "Related people",
       linkedCountry: "Same country",
-      recent: "Recent in the atlas",
+      recent: "Recently added",
     },
     emptyShort: {
-      body: "No source read by the atlas answers this question yet.",
+      body: "No source we have read answers this question yet.",
       action: "Suggest a source",
     },
     wideningNote: "Around this name — related context, not the same name",
@@ -161,13 +160,13 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       sharedNameBodyGeneric:
         "A name shared across different kinds of entries does not link them.",
       nearNameBody: (name) =>
-        `${name} has a similar spelling and belongs to a different atlas entry.`,
+        `${name} has a similar spelling and belongs to a different entry.`,
       problematicBody:
         "The corpus records a problem or disagreement about at least one form of this name.",
       relatedPeoplesTitle: "Peoples linked to this name",
       atlasHoldsSummary:
-        "The atlas states the facts it holds and leaves the missing origin undeclared.",
-      ficheMeta: "Atlas entry",
+        "We state the facts we hold and leave the missing origin undeclared.",
+      ficheMeta: "EthniAfrica entry",
       groupMeta: (count) => `${count} records`,
       peopleMeta: "Documented people",
       peopleDescription: "Open the entry to read its complete sourced account.",
@@ -180,16 +179,16 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
   },
   fr: {
     answer: {
-      exact: "L’atlas documente ce nom.",
+      exact: "Nous documentons ce nom.",
       widened:
-        "L’atlas documente ce nom, mais le contexte ci-dessous est lié plutôt qu’identique.",
+        "Nous documentons ce nom, mais le contexte ci-dessous est lié plutôt qu’identique.",
       relatedOnly:
-        "L’atlas a trouvé des fiches liées sans établir qu’elles répondent à ce nom.",
+        "Nous avons trouvé des fiches liées sans établir qu’elles répondent à ce nom.",
       typo: (name) => `Vouliez-vous dire ${name} ?`,
       shared: (count) => `${count} peuples portent ce nom.`,
-      sharedGeneric: (count) => `${count} entrées de l’atlas portent ce nom.`,
+      sharedGeneric: (count) => `${count} entrées portent ce nom.`,
       exactSummary:
-        "Les formes et les sources ci-dessous disent ce que l’atlas peut établir.",
+        "Les formes et les sources ci-dessous disent ce que nous pouvons établir.",
       widenedSummary:
         "Chaque contenu élargi indique ce qui le relie au nom cherché.",
       relationEyebrow: "Résultats liés",
@@ -216,10 +215,10 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       linkedFamily: "Même famille de langues",
       linkedPeople: "Peuple lié",
       linkedCountry: "Même pays",
-      recent: "Récent dans l’atlas",
+      recent: "Récemment ajouté",
     },
     emptyShort: {
-      body: "Aucune source lue par l’atlas ne répond encore à cette question.",
+      body: "Aucune source que nous avons lue ne répond encore à cette question.",
       action: "Proposer une source",
     },
     wideningNote: "Autour de ce nom — un contexte lié, pas le même nom",
@@ -253,13 +252,13 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       sharedNameBodyGeneric:
         "Un même nom porté par des entrées de nature différente ne les relie pas entre elles.",
       nearNameBody: (name) =>
-        `${name} a une graphie proche et correspond à une autre fiche de l’atlas.`,
+        `${name} a une graphie proche et correspond à une autre fiche.`,
       problematicBody:
         "Le corpus signale un problème ou un désaccord autour d’au moins une forme de ce nom.",
       relatedPeoplesTitle: "Les peuples liés à ce nom",
       atlasHoldsSummary:
-        "L’atlas énonce les faits qu’il tient et laisse l’origine manquante déclarée.",
-      ficheMeta: "Fiche de l’atlas",
+        "Nous énonçons les faits que nous tenons et laissons l’origine manquante déclarée.",
+      ficheMeta: "Fiche EthniAfrica",
       groupMeta: (count) => `${count} fiches`,
       peopleMeta: "Peuple documenté",
       peopleDescription:

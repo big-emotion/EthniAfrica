@@ -23,7 +23,7 @@ describe("revealProvenanceFr", () => {
   // @req REQ-120
   it("words the atlas outlines Mercator measures itself against", () => {
     expect(revealProvenanceFr(MERCATOR_PROVENANCE_PATH)).toBe(
-      "les tracés de frontières publiés par l'atlas"
+      "les tracés de frontières publiés par EthniAfrica"
     );
   });
 

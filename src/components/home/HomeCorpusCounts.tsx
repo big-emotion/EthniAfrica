@@ -40,7 +40,7 @@ export function HomeCorpusCounts({ language, counts }: HomeCorpusCountsProps) {
     <dl
       className="home-corpus-counts"
       data-testid="home-corpus-counts"
-      aria-label="Ce que l'atlas documente"
+      aria-label="Ce que nous documentons"
     >
       {CORPUS_CLASSES.map(({ key, tileLabel }) => {
         const value = counts?.[key];

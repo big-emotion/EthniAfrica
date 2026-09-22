@@ -82,7 +82,7 @@ describe("the provenance banner", () => {
     );
 
     expect(
-      screen.getByText(/ne les retire pas/, { exact: false })
+      screen.getByText(/Nous ne les retirons pas/, { exact: false })
     ).toBeInTheDocument();
   });
 

@@ -28,7 +28,7 @@ const BREAKPOINTS = [430, 720, 1200] as const;
 // The surface renames itself with what a drag will do: a sphere turns, a flat
 // map pans, and there is no third state. Matching either keeps the locator
 // honest on a runner whose WebGL is unusable, where the map is all there is.
-const GLOBE_SURFACE_NAME = /(Globe|Carte) de l'atlas\./;
+const GLOBE_SURFACE_NAME = /(Globe|Carte) EthniAfrica\./;
 const MORPH_NAME = "Morphing de la carte plate vers le globe";
 const ACTIVATE_GLOBE_NAME = "Activer la carte interactive";
 

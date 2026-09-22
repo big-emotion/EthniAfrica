@@ -326,7 +326,7 @@ export const COLONIAL_EVENT_TYPE_LABELS: Labels<ColonialEventType> = {
 export const ACCESS_MODE_LABELS_BY_LOCALE: Labels<AccessMode> = {
   fr: ACCESS_MODE_LABELS,
   en: {
-    atlas: "The atlas",
+    atlas: "Browse",
     dossiers: "The dossiers",
     jeux: "Play",
   },
