@@ -6,6 +6,21 @@ import { CANONICAL_DOMAIN, OG_DESCRIPTION, OG_TITLE } from "@/lib/brand";
 import { CORPUS_CLASSES } from "@/lib/home/corpusClasses";
 import { DID_YOU_KNOW_FACTS } from "@/lib/home/didYouKnowFacts";
 import { DID_YOU_KNOW_FACTS_EN } from "@/lib/home/didYouKnowFacts.en";
+import { homeCorpusCountsCopy } from "@/lib/i18n/copy/homeCorpusCounts";
+
+const COUNTS_COPY = homeCorpusCountsCopy.fr;
+
+const FULBE_CAMPAIGN = {
+  id: "peul-fulbe-noms",
+  kind: "naming",
+  eyebrow: "Un nom, plusieurs histoires",
+  heading: "Fulbe, Peul : pourquoi plusieurs noms ?",
+  support: "Découvrez ce que chaque forme raconte.",
+  entity: { kind: "people", id: "PPL_FULA" },
+  sources: [{ title: "Breedveld (1995)" }],
+  sourceCount: 26,
+  linkLabel: "Explorer ces noms",
+} as const;
 
 const {
   getCorpusCountsMock,
@@ -46,14 +61,6 @@ vi.mock("@/lib/home/corpusCounts", () => ({
 vi.mock("@/api/v2/services/continentPeopleCounts", () => ({
   getContinentPeopleCounts: getContinentPeopleCountsMock,
 }));
-
-vi.mock("@/lib/home/seedWords", async (importOriginal) => {
-  const actual = await importOriginal<typeof import("@/lib/home/seedWords")>();
-  return {
-    ...actual,
-    loadSeedWords: vi.fn(async () => actual.FALLBACK_SEED_WORDS),
-  };
-});
 
 vi.mock("@/lib/hubs/moduleAvailability", () => ({
   getHubModules: getHubModulesMock,
@@ -149,7 +156,7 @@ describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", ()
     // classes in the declared order, whichever three those are.
     expect(screen.getByTestId("home-corpus-counts").textContent).toMatch(
       new RegExp(
-        CORPUS_CLASSES.map(({ tileLabel }) => tileLabel).join(".*"),
+        CORPUS_CLASSES.map(({ key }) => COUNTS_COPY.tileLabels[key]).join(".*"),
         "i"
       )
     );
@@ -169,7 +176,7 @@ describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", ()
   });
 
   // @req REQ-115
-  it("renders a drawn anecdote whole in the hero, from an officially sourced fact", async () => {
+  it("renders a drawn anecdote whole, from an officially sourced fact", async () => {
     drawHomeHeroVisualMock.mockReturnValue({ kind: "anecdote" });
 
     await renderHome();
@@ -210,8 +217,8 @@ describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", ()
     expect(screen.getByText("Did you know")).toBeInTheDocument();
   });
 
-  // The hero is full bleed and is the final child of main, so it owns the
-  // seam with the footer rather than leaving main's padding as a strip of
+  // The figures close the page and meet the footer directly, so the last
+  // band owns that seam rather than leaving main's padding as a strip of
   // unrelated ground.
   // @req REQ-044
   it("lets the final section meet the footer without a bottom gap", async () => {
@@ -235,9 +242,9 @@ describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", ()
 
     expect(screen.getByRole("search")).toBeInTheDocument();
 
-    for (const { tileLabel } of CORPUS_CLASSES) {
+    for (const { key } of CORPUS_CLASSES) {
       expect(screen.getByTestId("home-corpus-counts").textContent).toContain(
-        tileLabel
+        COUNTS_COPY.tileLabels[key]
       );
     }
 
@@ -248,7 +255,9 @@ describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", ()
     expect(tiles).toHaveLength(3);
     for (const tile of tiles) {
       expect(tile).toHaveAttribute("data-state", "unavailable");
-      expect(tile.querySelector("dd")?.textContent).toBe("Indisponible");
+      expect(tile.querySelector("dd")?.textContent).toBe(
+        "Indisponible pour le moment"
+      );
     }
   });
 
@@ -281,7 +290,7 @@ describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", ()
   });
 
   // @req REQ-115
-  it("draws a fresh right-hand visual for each page request", async () => {
+  it("draws a fresh visual for each page request", async () => {
     const image = {
       id: "test-map",
       src: "/images/home/al-idrisi-1154.jpg",
@@ -309,7 +318,7 @@ describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", ()
   });
 
   // @req REQ-115
-  it("allows browser checks to pin the globe, on the right, without changing random visitors", async () => {
+  it("allows browser checks to pin the globe without changing random visitors", async () => {
     drawHomeHeroVisualMock.mockReturnValue({
       kind: "image",
       image: {
@@ -329,9 +338,6 @@ describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", ()
     );
 
     expect(screen.getByTestId("home-globe-stage")).toBeInTheDocument();
-    expect(document.querySelector(".home-hero-inner")).not.toHaveClass(
-      "home-hero-inner--visual-start"
-    );
     expect(getContinentPeopleCountsMock).toHaveBeenCalledOnce();
     expect(drawHomeHeroVisualMock).not.toHaveBeenCalled();
   });
@@ -382,27 +388,42 @@ describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", ()
     expect(screen.queryByTestId("home-featured")).not.toBeInTheDocument();
   });
 
+  // The ruled reading order (2026-09-22): question and search with the
+  // featured answer, then stories, the drawn visual, the project, and the
+  // figures last. One DOM order, so every width and every screen reader meets
+  // the same sequence.
+  // @req REQ-115
+  it("orders the home: opening, stories, visual, project, figures", async () => {
+    getActiveFeaturedCampaignMock.mockReturnValue(FULBE_CAMPAIGN);
+
+    await renderHome();
+
+    const layout = screen.getByTestId("page-layout");
+    expect(
+      Array.from(layout.children).map(
+        (child) => child.getAttribute("data-testid") ?? child.className
+      )
+    ).toEqual([
+      "home-hero",
+      "home-stories",
+      "home-visual",
+      "home-project",
+      "home-counts",
+    ]);
+    expect(layout.firstElementChild).toContainElement(
+      screen.getByTestId("home-featured")
+    );
+  });
+
   // @req REQ-115
   it("renders the featured campaign once one is active", async () => {
-    getActiveFeaturedCampaignMock.mockReturnValue({
-      id: "peul-fulbe-noms",
-      kind: "naming",
-      eyebrow: "Un nom, plusieurs histoires",
-      heading: "Peul, Fulbe : pourquoi plusieurs noms ?",
-      support: "Découvrez ce que chaque forme raconte.",
-      entity: { kind: "people", id: "PPL_FULA" },
-      sources: [{ title: "Breedveld (1995)" }],
-      sourceCount: 26,
-      linkLabel: "Explorer ces noms",
-    });
+    getActiveFeaturedCampaignMock.mockReturnValue(FULBE_CAMPAIGN);
 
     await renderHome();
 
     expect(screen.getByTestId("home-featured")).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", {
-        name: "Peul, Fulbe : pourquoi plusieurs noms ?",
-      })
+      screen.getByRole("heading", { name: FULBE_CAMPAIGN.heading })
     ).toBeInTheDocument();
   });
 });

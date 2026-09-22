@@ -14,7 +14,7 @@ test.skip(
 const HOME_URL = `/${LOCALE}?hero=mercator`;
 const MOBILE_VIEWPORT = { width: 430, height: 812 } as const;
 const DESKTOP_VIEWPORT = { width: 1240, height: 900 } as const;
-const FIRST_FOLD_GLOBE_PX = 120;
+const SEEDS_LIST_NAME = "Essayez avec";
 
 type ElementBox = NonNullable<Awaited<ReturnType<Locator["boundingBox"]>>>;
 
@@ -49,65 +49,54 @@ test.beforeEach(async ({ page }) => {
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
 });
 
-// The corpus counts moved from a grid row of their own into the copy column,
-// under the search: they qualify the promise the sentence makes, so a reader
-// who came to search reaches the field first (HomeHero.tsx). Three figures,
-// not five — HomeCorpusCounts.test.tsx holds the class list.
+// The composition ruled on 2026-09-22: the question and its search open the
+// page, three still example chips under the field, then the featured answer
+// (when a campaign is open), the stories, the drawn visual, the project and
+// the figures last. One DOM order at every width.
 // @req REQ-112
 test.describe("Search-first home — mobile source of truth (ETNI-1513)", () => {
   test.use({ viewport: MOBILE_VIEWPORT });
 
   // @req REQ-112
-  test("@smoke puts search and a material part of the globe in the first 430px fold", async ({
+  test("@smoke puts the search and its three examples in the first 430px fold", async ({
     page,
   }) => {
     const hero = page.locator(".home-hero");
     const inner = hero.locator(".home-hero-inner");
     const copy = inner.locator(".home-hero-copy");
     const search = copy.getByRole("search");
-    const seeds = copy.getByRole("list", { name: "Exemples de recherche" });
-    const globe = inner.locator(".home-hero-globe .home-globe-stage");
-    const counts = copy.getByTestId("home-corpus-counts");
+    const seeds = copy.getByRole("list", { name: SEEDS_LIST_NAME });
 
     await expect(seeds.getByRole("button")).toHaveCount(3);
     await expect(page.getByTestId(/^home-count-/)).toHaveCount(3);
-    // The « Saviez-vous » band is retired: its anecdote is one of the hero's
-    // drawn visuals now, and nothing follows the band.
     await expect(page.getByTestId("home-did-you-know")).toHaveCount(0);
 
     const searchBox = await elementBox(search);
     const seedsBox = await elementBox(seeds);
-    const countsBox = await elementBox(counts);
-    const globeBox = await elementBox(globe);
 
     expect(searchBox.y).toBeGreaterThanOrEqual(0);
     expect(bottom(searchBox)).toBeLessThanOrEqual(MOBILE_VIEWPORT.height);
-    expect(globeBox.y).toBeLessThan(MOBILE_VIEWPORT.height);
-    expect(
-      Math.min(bottom(globeBox), MOBILE_VIEWPORT.height) -
-        Math.max(globeBox.y, 0)
-    ).toBeGreaterThanOrEqual(FIRST_FOLD_GLOBE_PX);
+    expect(seedsBox.y).toBeGreaterThanOrEqual(bottom(searchBox) - 1);
 
-    // Reading order and the one-column visual order must agree on mobile.
-    const copyFlow = await copy
-      .locator(
-        'form[role="search"], ul[aria-label="Exemples de recherche"], [data-testid="home-corpus-counts"]'
-      )
-      .evaluateAll((nodes) => nodes.map((node) => node.tagName));
-    expect(copyFlow).toEqual(["FORM", "UL", "DL"]);
-
+    // Reading order and the one-column visual order agree on a phone.
     const pageFlow = await page
-      .locator(".home-hero-copy, .home-hero-globe")
+      .locator(
+        '.home-hero-copy, [data-testid="home-stories"], .home-hero-visual, [data-testid="home-project"], [data-testid="home-counts"]'
+      )
       .evaluateAll((nodes) =>
-        nodes.map((node) =>
-          node.classList.contains("home-hero-copy") ? "copy" : "globe"
+        nodes.map(
+          (node) =>
+            node.getAttribute("data-testid") ??
+            (node.classList.contains("home-hero-copy") ? "copy" : "visual")
         )
       );
-    expect(pageFlow).toEqual(["copy", "globe"]);
-
-    expect(seedsBox.y).toBeGreaterThanOrEqual(bottom(searchBox) - 1);
-    expect(countsBox.y).toBeGreaterThanOrEqual(bottom(seedsBox) - 1);
-    expect(globeBox.y).toBeGreaterThanOrEqual(bottom(countsBox) - 1);
+    expect(pageFlow).toEqual([
+      "copy",
+      "home-stories",
+      "home-hero-globe",
+      "home-project",
+      "home-counts",
+    ]);
 
     // A content-driven band keeps the same used height when only the viewport
     // height changes. The computed floors also rule out vh/svh/dvh min-size
@@ -154,38 +143,33 @@ test.describe("Search-first home — desktop widening pass (ETNI-1513)", () => {
     hasTouch: false,
   });
 
+  // The featured answer shares the band with the search from 1200px when a
+  // campaign window is open; with none open the band is one column, and the
+  // spec says which case it measured rather than passing on either silently.
   // @req REQ-112
-  // `?hero=` pins the side as well as the kind, so a browser check always
-  // meets the copy on the left; visitors get the side drawn per request.
-  // @req REQ-112
-  test("widens to two columns with the pinned globe on the right", async ({
+  test("sets the featured answer beside the search when a campaign is open", async ({
     page,
   }) => {
-    const hero = page.locator(".home-hero");
-    const inner = hero.locator(".home-hero-inner");
+    const inner = page.locator(".home-hero .home-hero-inner");
     const copy = inner.locator(".home-hero-copy");
-    const seeds = copy.getByRole("list", { name: "Exemples de recherche" });
-    const globe = inner.locator(".home-hero-globe");
-    const counts = copy.getByTestId("home-corpus-counts");
+    const seeds = copy.getByRole("list", { name: SEEDS_LIST_NAME });
+    const featured = inner.getByTestId("home-featured");
 
-    await expect(seeds.getByRole("button")).toHaveCount(4);
+    await expect(seeds.getByRole("button")).toHaveCount(3);
     await expect(page.getByTestId(/^home-count-/)).toHaveCount(3);
-    await expect(page.getByTestId("home-did-you-know")).toHaveCount(0);
+
+    test.skip(
+      (await featured.count()) === 0,
+      "No featured campaign is open on this date; the band is one column."
+    );
 
     const copyBox = await elementBox(copy);
-    const seedsBox = await elementBox(seeds);
-    const globeBox = await elementBox(globe);
-    const countsBox = await elementBox(counts);
+    const featuredBox = await elementBox(featured);
 
-    // Copy and counts form the left column; the globe is the right column.
-    expect(right(copyBox)).toBeLessThan(globeBox.x);
-    expect(globeBox.x).toBeGreaterThan(copyBox.x);
+    expect(right(copyBox)).toBeLessThanOrEqual(featuredBox.x);
     expect(
-      Math.min(bottom(copyBox), bottom(globeBox)) -
-        Math.max(copyBox.y, globeBox.y)
+      Math.min(bottom(copyBox), bottom(featuredBox)) -
+        Math.max(copyBox.y, featuredBox.y)
     ).toBeGreaterThan(100);
-    expect(countsBox.y).toBeGreaterThanOrEqual(bottom(seedsBox) - 1);
-    expect(countsBox.x).toBeLessThan(globeBox.x);
-    expect(right(countsBox)).toBeLessThanOrEqual(globeBox.x);
   });
 });

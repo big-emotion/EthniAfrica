@@ -77,6 +77,14 @@ export interface UseAutocompleteResult<T> {
    * express since it is false exactly then.
    */
   isAnswered: boolean;
+  /**
+   * The request for the current query failed and has not been dismissed. It
+   * is not an answer: a surface that showed its empty state here would tell
+   * the reader the corpus lacks a name it never got to ask about.
+   */
+  isFailed: boolean;
+  /** Asks again for the current query, after a failure. */
+  retry: () => void;
   activeIndex: number;
   activeOption: T | undefined;
   listboxId: string;
@@ -114,6 +122,10 @@ export function useAutocomplete<T>({
   const [query, setQueryState] = useState(initialQuery);
   const [options, setOptions] = useState<T[]>([]);
   const [answered, setAnswered] = useState(false);
+  const [failed, setFailed] = useState(false);
+  // Bumped by retry(): the fetch effect keys on it, so the same query can be
+  // asked twice without the reader retyping it.
+  const [attempt, setAttempt] = useState(0);
   const [dismissed, setDismissed] = useState(false);
   const [pending, setPending] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -145,6 +157,7 @@ export function useAutocomplete<T>({
       latestTicket.current++;
       setOptions((current) => (current.length === 0 ? current : []));
       setAnswered(false);
+      setFailed(false);
       setPending(false);
       return;
     }
@@ -162,18 +175,20 @@ export function useAutocomplete<T>({
           limit === undefined ? arranged : arranged.slice(0, limit);
         setOptions(capped);
         setAnswered(true);
+        setFailed(false);
         callbacks.current.onResolved?.(capped, trimmed);
       } catch {
         if (ticket !== latestTicket.current) return;
         setOptions([]);
         setAnswered(false);
+        setFailed(true);
       } finally {
         if (ticket === latestTicket.current) setPending(false);
       }
     }, debounceMs);
 
     return () => clearTimeout(timer);
-  }, [trimmed, longEnough, debounceMs, limit]);
+  }, [trimmed, longEnough, debounceMs, limit, attempt]);
 
   // The highlight belongs to the list it was pointing into; a new list makes
   // it meaningless rather than merely out of date.
@@ -184,7 +199,14 @@ export function useAutocomplete<T>({
   const setQuery = useCallback((next: string) => {
     typed.current = true;
     setQueryState(next);
+    setFailed(false);
     setDismissed(false);
+  }, []);
+
+  const retry = useCallback(() => {
+    setFailed(false);
+    setDismissed(false);
+    setAttempt((count) => count + 1);
   }, []);
 
   const highlight = useCallback((index: number) => {
@@ -206,6 +228,7 @@ export function useAutocomplete<T>({
     setQueryState(value);
     setOptions([]);
     setAnswered(false);
+    setFailed(false);
     setPending(false);
     setActiveIndex(-1);
   }, []);
@@ -215,12 +238,14 @@ export function useAutocomplete<T>({
     setQueryState("");
     setOptions([]);
     setAnswered(false);
+    setFailed(false);
     setDismissed(false);
     setPending(false);
     setActiveIndex(-1);
   }, []);
 
   const isAnswered = answered && !dismissed;
+  const isFailed = failed && !dismissed;
   const isOpen = isAnswered && options.length > 0;
   const activeOption = activeIndex >= 0 ? options[activeIndex] : undefined;
 
@@ -278,6 +303,8 @@ export function useAutocomplete<T>({
     pending,
     isOpen,
     isAnswered,
+    isFailed,
+    retry,
     activeIndex,
     activeOption,
     listboxId,

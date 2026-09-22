@@ -8,8 +8,11 @@
  */
 import { CORPUS_CLASSES } from "@/lib/home/corpusClasses";
 import type { CorpusCounts } from "@/lib/home/corpusCounts";
+import { homeCorpusCountsCopy } from "@/lib/i18n/copy/homeCorpusCounts";
 import { formatNumber } from "@/lib/languageTag";
 import type { Language } from "@/types/shared";
+
+import { SectionHeading } from "./SectionHeading";
 
 export interface HomeCorpusCountsProps {
   language: Language;
@@ -20,7 +23,11 @@ export interface HomeCorpusCountsProps {
 const WHOLE_NUMBER: Intl.NumberFormatOptions = { maximumFractionDigits: 0 };
 
 /**
- * What the atlas documents, in three figures, under the home search.
+ * What we document, in three figures — the home's closing section.
+ *
+ * It sat under the search until 2026-09-22 and moved last (operator ruling):
+ * a reader who came with a name meets the answer, the stories and the method
+ * before the corpus's size, which qualifies the promise rather than making it.
  *
  * This component receives data from the server page and never opens a second
  * data path in the browser. A failed read is explicitly unavailable: zero is
@@ -36,34 +43,46 @@ const WHOLE_NUMBER: Intl.NumberFormatOptions = { maximumFractionDigits: 0 };
  */
 // @req REQ-113
 export function HomeCorpusCounts({ language, counts }: HomeCorpusCountsProps) {
-  return (
-    <dl
-      className="home-corpus-counts"
-      data-testid="home-corpus-counts"
-      aria-label="Ce que nous documentons"
-    >
-      {CORPUS_CLASSES.map(({ key, tileLabel }) => {
-        const value = counts?.[key];
-        const available = typeof value === "number" && Number.isFinite(value);
+  const copy = homeCorpusCountsCopy[language];
 
-        return (
-          <div
-            key={key}
-            className="home-corpus-count"
-            data-state={available ? "available" : "unavailable"}
-            data-testid={`home-count-${key}`}
-          >
-            <dt>{tileLabel}</dt>
-            <dd className={available ? undefined : "is-unavailable"}>
-              {available
-                ? formatNumber(language, value, WHOLE_NUMBER)
-                : "Indisponible"}
-            </dd>
-          </div>
-        );
-      })}
+  return (
+    <section className="home-counts afh-shell" data-testid="home-counts">
+      <SectionHeading title={copy.title} />
+      <dl
+        className="home-corpus-counts"
+        data-testid="home-corpus-counts"
+        aria-label={copy.ariaLabel}
+      >
+        {CORPUS_CLASSES.map(({ key }) => {
+          const value = counts?.[key];
+          const available = typeof value === "number" && Number.isFinite(value);
+
+          return (
+            <div
+              key={key}
+              className="home-corpus-count"
+              data-state={available ? "available" : "unavailable"}
+              data-testid={`home-count-${key}`}
+            >
+              <dt>{copy.tileLabels[key]}</dt>
+              <dd className={available ? undefined : "is-unavailable"}>
+                {available
+                  ? formatNumber(language, value, WHOLE_NUMBER)
+                  : copy.unavailable}
+              </dd>
+            </div>
+          );
+        })}
+      </dl>
 
       <style>{`
+        /* The home's closing band. 48 then 64, the ramp's two section steps
+           (brand charter §7), shared with the stories and project bands so
+           the lower home reads as one cadence. */
+        .home-counts {
+          padding-block: var(--afh-space-8xl);
+        }
+
         /* Three columns, at every width. Five tiles needed a six-column grid
            to fold into two full rows on a phone; three fit one row at 430px
            with 130px each, which is room for « 3 134 » at --afh-text-h2 and
@@ -91,16 +110,15 @@ export function HomeCorpusCounts({ language, counts }: HomeCorpusCountsProps) {
           text-align: center;
         }
         /* Two label lines, reserved at every width, so the three figures
-           share a line. A tile is 116px of text at 430px: « peuples
-           documentés » and « langues documentées » wrap there and a
-           15-character label does not, and a centred column then dropped the
+           share a line. A tile is 116px of text at 430px: the French peoples
+           and languages labels wrap there and a 15-character label does not, and a centred column then dropped the
            odd figure below the two beside it — measured 538 · 538 · 547. A row
            of three totals that do not sit on one line reads as a rendering
            fault rather than as the comparison the band exists to offer.
 
-           It is the band's own defect and not the newest label's: « pays
-           documentés », the label this tile carried before, fits that same one
-           line at that same width.
+           It is the band's own defect and not the newest label's: the
+           countries label this tile carried before fits that same one line
+           at that same width.
 
            Reserved unconditionally rather than under a breakpoint, because the
            width at which a label stops wrapping is a property of the label and
@@ -123,7 +141,7 @@ export function HomeCorpusCounts({ language, counts }: HomeCorpusCountsProps) {
            768px, and the .afh-phone-centred opt-in list this band sits inside
            does not carry the pair — so the figure, a shrink-to-fit flex item,
            centred itself while its two-line label went ragged-left. Measured
-           at 430px: « 790 » on the tile's centre line, « peuples / documentés »
+           at 430px: « 790 » on the tile's centre line, its two-line label
            starting 36px to its left, three times across the band. Nothing
            declared two alignments; one declaration produced them. */
         .home-corpus-count dt,
@@ -154,6 +172,9 @@ export function HomeCorpusCounts({ language, counts }: HomeCorpusCountsProps) {
         }
 
         @media (min-width: 768px) {
+          .home-counts {
+            padding-block: var(--afh-space-9xl);
+          }
           .home-corpus-counts {
             gap: 12px;
           }
@@ -163,10 +184,11 @@ export function HomeCorpusCounts({ language, counts }: HomeCorpusCountsProps) {
           }
         }
 
-        /* Flush left from the width at which the copy column goes flush left.
-           Alignment is a property of the block it sits in, not of the tile
-           (brand charter §8.1): tiles that stayed centred inside a ragged-right
-           column would put a second left edge in one block. */
+        /* Flush left at the width where the lower home's sections read as
+           ragged-right documents. Alignment is a property of the block it
+           sits in, not of the tile (brand charter §8.1): tiles that stayed
+           centred under a flush-left section title would put a second edge
+           in one block. */
         @media (min-width: 1200px) {
           .home-corpus-count {
             align-items: flex-start;
@@ -182,6 +204,6 @@ export function HomeCorpusCounts({ language, counts }: HomeCorpusCountsProps) {
           }
         }
       `}</style>
-    </dl>
+    </section>
   );
 }

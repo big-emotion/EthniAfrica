@@ -7,6 +7,9 @@ import { colonizationCopy } from "@/lib/i18n/copy/colonization";
 import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import { chromeCopy } from "@/lib/i18n/copy/chrome";
 import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
+import { homeCorpusCountsCopy } from "@/lib/i18n/copy/homeCorpusCounts";
+import { homePurposeCopy } from "@/lib/i18n/copy/homePurpose";
+import { homeStoriesCopy } from "@/lib/i18n/copy/homeStories";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { commonCopy } from "@/lib/i18n/copy/common";
@@ -64,6 +67,9 @@ export const COPY_MODULES = {
   common: commonCopy,
   chrome: chromeCopy,
   homeHero: homeHeroCopy,
+  homeStories: homeStoriesCopy,
+  homePurpose: homePurposeCopy,
+  homeCorpusCounts: homeCorpusCountsCopy,
   nameAnswer: nameAnswerCopy,
   searchFeed: searchFeedCopy,
   consent: consentCopy,

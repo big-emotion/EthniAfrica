@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { PageLayout } from "@/components/layout/PageLayout";
+import { HomeCorpusCounts } from "@/components/home/HomeCorpusCounts";
+import { HomeDrawnVisual } from "@/components/home/HomeDrawnVisual";
 import { HomeFeaturedCampaign } from "@/components/home/HomeFeaturedCampaign";
 import { HomeHero } from "@/components/home/HomeHero";
+import { HomeProject } from "@/components/home/HomeProject";
+import { HomeStories } from "@/components/home/HomeStories";
 import { pickDidYouKnowFacts } from "@/lib/home/didYouKnowFacts";
 import { localizeDidYouKnowFact } from "@/lib/home/didYouKnowLocalization";
 import { localizeFeaturedCampaign } from "@/lib/home/featuredCampaignLocalization";
@@ -10,7 +14,7 @@ import {
   getActiveFeaturedCampaign,
 } from "@/lib/home/featuredCampaigns";
 import { getCorpusCounts } from "@/lib/home/corpusCounts";
-import { loadSeedWords } from "@/lib/home/seedWords";
+import { resolveHomeStories } from "@/lib/home/homeStories";
 import {
   drawHomeHeroVisual,
   type HomeHeroVisual,
@@ -68,8 +72,8 @@ export default async function Home({ params, searchParams }: HomePageProps) {
   // swap after the first paint. The force-dynamic contract above prevents the
   // result from being frozen into a prerendered page.
   //
-  // `?hero=` pins the kind: a browser check measuring the two columns must
-  // meet the same composition on every run.
+  // `?hero=` pins the kind: a browser check measuring the visual must meet
+  // the same composition on every run.
   const query = await searchParams;
   const heroParam = query?.hero;
   const pinned = heroParam === "globe" || heroParam === "mercator";
@@ -85,40 +89,47 @@ export default async function Home({ params, searchParams }: HomePageProps) {
         ? { kind: "anecdote", fact: localizeDidYouKnowFact(anecdote, language) }
         : { kind: "globe" };
 
-  const [counts, peopleCountsByCountry, seedWords] = await Promise.all([
+  const [counts, peopleCountsByCountry] = await Promise.all([
     // A failed total read is not an empty corpus. The counter component says
     // it is unavailable instead of turning an operational failure into zero.
     getCorpusCounts().catch(() => null),
     // The shared globe owns its own unavailable state: losing its country
-    // signal must not take the search or the rest of the hero with it.
+    // signal must not take the search or the rest of the page with it.
     heroVisual.kind === "globe"
       ? getContinentPeopleCounts().catch(() => undefined)
       : Promise.resolve(undefined),
-    loadSeedWords(),
   ]);
 
   // Resolved at request time (this route is force-dynamic), so a campaign
   // whose window has been merged ahead of schedule opens and closes itself
-  // with no further deploy at either edge. Disabled by default: with no
-  // window open on any campaign, this is null and the section below is not
-  // rendered at all.
+  // with no further deploy at either edge. With no window open this is null
+  // and the band has no second column.
   const activeCampaign = getActiveFeaturedCampaign(FEATURED_CAMPAIGNS);
 
+  // Reading order, the same at every width (operator ruling, 2026-09-22):
+  // the question and its search with the featured answer, then stories, the
+  // drawn visual, the project and its method, and the figures last.
   return (
     <PageLayout language={language} hideHeader flushTop flushBottom>
       <HomeHero
         language={language}
-        seedWords={seedWords}
+        featured={
+          activeCampaign ? (
+            <HomeFeaturedCampaign
+              language={language}
+              campaign={localizeFeaturedCampaign(activeCampaign, language)}
+            />
+          ) : undefined
+        }
+      />
+      <HomeStories language={language} stories={resolveHomeStories(language)} />
+      <HomeDrawnVisual
+        language={language}
         peopleCountsByCountry={peopleCountsByCountry}
-        counts={counts}
         visual={heroVisual}
       />
-      {activeCampaign && (
-        <HomeFeaturedCampaign
-          language={language}
-          campaign={localizeFeaturedCampaign(activeCampaign, language)}
-        />
-      )}
+      <HomeProject language={language} />
+      <HomeCorpusCounts language={language} counts={counts} />
     </PageLayout>
   );
 }

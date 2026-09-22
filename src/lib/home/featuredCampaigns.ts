@@ -2,12 +2,12 @@
  * The home's featured-campaign slot (editorial-and-experience-plan.md,
  * H7-H10) — one reviewed subject given the weight of a dedicated tile.
  *
- * **Disabled by default, on purpose.** A campaign with no `activeFrom` /
- * `activeTo` carries no window and is never picked by
- * `getActiveFeaturedCampaign` — it exists as a reviewed, ready entry, not a
- * live one. The operator opens it by adding the two dates and merging; no
- * admin console or environment flag exists for this, the same as every
- * other editorial decision in this repository.
+ * **Disabled by default, on purpose.** A campaign with no `activeFrom`
+ * carries no window and is never picked by `getActiveFeaturedCampaign` — it
+ * exists as a reviewed, ready entry, not a live one. The operator opens it by
+ * adding a start date (and, optionally, an end) and merging; no admin console
+ * or environment flag exists for this, the same as every other editorial
+ * decision in this repository.
  *
  * **The shape stays constant, the subject does not.** The site is not
  * about one people: a naming story today, a dated historical event
@@ -50,8 +50,9 @@ export interface FeaturedCampaign {
   sourceCount: number;
   linkLabel: string;
   /**
-   * The activation window, both ISO dates (YYYY-MM-DD). Omitted entirely —
-   * the default for every new campaign — means it is never picked.
+   * The activation window, ISO dates (YYYY-MM-DD). No `activeFrom` — the
+   * default for every new campaign — means it is never picked; no `activeTo`
+   * means it stays open once started.
    */
   activeFrom?: string;
   activeTo?: string;
@@ -63,9 +64,9 @@ export const FEATURED_CAMPAIGNS: FeaturedCampaign[] = [
     id: "peul-fulbe-noms",
     kind: "naming",
     eyebrow: "Un nom, plusieurs histoires",
-    heading: "Peul, Fulbe : pourquoi plusieurs noms ?",
+    heading: "Fulbe, Peul\u00a0: pourquoi plusieurs noms\u00a0?",
     support:
-      "Peul, Fulani, Fula, Fellata… Découvrez ce que chaque forme raconte et ce que les sources en savent.",
+      "Fulbe, Pullo, puis Peul, Fulani, Fula, Fellata… Découvrez ce que chaque forme raconte et ce que les sources en savent.",
     entity: { kind: "people", id: "PPL_FULA" },
     forms: [
       { label: "Fulɓe · Pullo", isSelfDesignation: true },
@@ -75,12 +76,14 @@ export const FEATURED_CAMPAIGNS: FeaturedCampaign[] = [
       { label: "Fellata" },
       { label: "Toucouleur" },
     ],
-    quote:
-      "Aucune des lectures proposées pour Fulɓe et Pullo n’est établie, et nous n’en retenons aucune.",
+    // Verbatim from the fiche's origin-of-names paragraph, apostrophe included.
+    quote: "Aucune de ces lectures n'est établie et nous n'en retenons aucune.",
+    // Delafosse is named in the fiche's prose but only as reported by Tauxier
+    // and Wane; he is not one of its sources, so Tauxier takes his place.
     sources: [
       { title: "Breedveld (1995)" },
       { title: "Hampâté Bâ (1966)" },
-      { title: "Delafosse" },
+      { title: "Tauxier (1937)" },
       { title: "Barth (1857)" },
       {
         title: "SIL Ethnologue — Fulfulde (ful)",
@@ -89,11 +92,16 @@ export const FEATURED_CAMPAIGNS: FeaturedCampaign[] = [
     ],
     sourceCount: 26,
     linkLabel: "Explorer ces noms",
-    // activeFrom / activeTo intentionally absent: ready, not active.
+    // Opened by the operator on 2026-09-22, with no end: it stays until a
+    // later campaign replaces it.
+    activeFrom: "2026-09-23",
   },
 ];
 
-/** Picks the campaign whose window contains `now`, or null when none is open. */
+/**
+ * Picks the campaign whose window contains `now`, or null when none is open.
+ * A window needs a start; a missing end leaves it open.
+ */
 // @req REQ-115
 export function getActiveFeaturedCampaign(
   campaigns: FeaturedCampaign[],
@@ -101,10 +109,9 @@ export function getActiveFeaturedCampaign(
 ): FeaturedCampaign | null {
   return (
     campaigns.find((campaign) => {
-      if (!campaign.activeFrom || !campaign.activeTo) return false;
-      const from = new Date(campaign.activeFrom);
-      const to = new Date(campaign.activeTo);
-      return now >= from && now <= to;
+      if (!campaign.activeFrom) return false;
+      if (now < new Date(campaign.activeFrom)) return false;
+      return !campaign.activeTo || now <= new Date(campaign.activeTo);
     }) ?? null
   );
 }

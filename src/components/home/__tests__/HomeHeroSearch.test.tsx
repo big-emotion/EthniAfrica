@@ -25,12 +25,7 @@ import {
   SEARCH_LABEL,
   SEARCH_RESULT_GROUPS,
 } from "@/lib/search/searchVocabulary";
-import { seedPools } from "../HomeHeroSeeds";
-import { SEARCH_ENTITY_ACCENT } from "@/components/search/searchEntityAccent";
-import { FALLBACK_SEED_WORDS } from "@/lib/home/seedWords";
-
-/** The pools the row renders when no words are injected. */
-const SEED_POOLS = seedPools(FALLBACK_SEED_WORDS);
+import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
 import {
   getCountryRoute,
   getFamilyRoute,
@@ -153,12 +148,31 @@ describe("HomeHeroSearch", () => {
 
   // The accessible name has to survive a placeholder that the design may
   // animate later: a rotating placeholder would otherwise rename the control
-  // under a screen-reader user mid-sentence.
+  // under a screen-reader user mid-sentence. The home asks its own question;
+  // the shared SEARCH_LABEL stays with the modal and the search page.
   // @req REQ-002
   it("names the field from a label rather than from its placeholder", () => {
     renderSearch();
 
-    expect(field()).toHaveAccessibleName(SEARCH_LABEL);
+    expect(field()).toHaveAccessibleName("Quel nom cherchez-vous ?");
+  });
+
+  // The sentence under the title says what the field accepts, so it is the
+  // field's description rather than a second label.
+  // @req REQ-002
+  it("takes the description it is handed as its accessible description", () => {
+    render(
+      <>
+        <p id="home-description">{homeHeroCopy.fr.description}</p>
+        <HomeHeroSearch
+          language="fr"
+          describedBy="home-description"
+          fetchResults={async () => []}
+        />
+      </>
+    );
+
+    expect(field()).toHaveAccessibleDescription(homeHeroCopy.fr.description);
   });
 
   // @req REQ-140
@@ -178,9 +192,7 @@ describe("HomeHeroSearch", () => {
       />
     );
 
-    expect(field()).toHaveAccessibleName(
-      "Search for a people, language, country, language family or surname"
-    );
+    expect(field()).toHaveAccessibleName("Which name are you looking for?");
     expect(field()).toHaveAttribute("placeholder", "E.g. Keïta, Lingala, Fula");
 
     await type("chad");
@@ -200,20 +212,40 @@ describe("HomeHeroSearch", () => {
     const { container } = renderSearch();
 
     const label = container.querySelector("label");
-    expect(label).toHaveTextContent(SEARCH_LABEL);
+    expect(label?.textContent).toBe(homeHeroCopy.fr.searchLabel);
     expect(label?.className ?? "").not.toContain("sr-only");
   });
 
-  // The label may name a kind only if the panel below can group it. It once
-  // named three because the panel showed three; both now carry five, and the
-  // invariant is what is asserted rather than the number.
+  // The contract the shared label held on the home now rests on the home's
+  // description: it may name a kind only if the panel below can group it.
+  // It speaks in the reader's words — « nom de famille », « lieu » — so each
+  // is mapped to the group it promises. It names four of the five groups;
+  // language families are left to the panel, which is allowed (naming fewer
+  // promises less). Naming a sixth would promise an empty answer.
   // @req REQ-002
-  it("names every kind the panel groups, and no other", () => {
-    for (const { type } of SEARCH_RESULT_GROUPS) {
-      // The singular of the same kind, from the one table that assigns a
-      // kind's label and accent product-wide.
-      const kind = SEARCH_ENTITY_ACCENT[type].label.toLowerCase();
-      expect(SEARCH_LABEL.toLowerCase()).toContain(kind);
+  it("names in its description only kinds the panel groups", () => {
+    const promised = {
+      fr: {
+        "nom de famille": "patronyme",
+        peuple: "people",
+        langue: "language",
+        lieu: "country",
+      },
+      en: {
+        "family name": "patronyme",
+        people: "people",
+        language: "language",
+        place: "country",
+      },
+    } as const;
+    const grouped = SEARCH_RESULT_GROUPS.map((group) => group.type) as string[];
+
+    for (const language of ["fr", "en"] as const) {
+      const description = homeHeroCopy[language].description.toLowerCase();
+      for (const [words, type] of Object.entries(promised[language])) {
+        expect(description, `${language}: ${words}`).toContain(words);
+        expect(grouped).toContain(type);
+      }
     }
   });
 
@@ -223,6 +255,7 @@ describe("HomeHeroSearch", () => {
   // @req REQ-002
   it("names no kind the corpus cannot answer with", () => {
     expect(SEARCH_LABEL).not.toMatch(/personne/i);
+    expect(homeHeroCopy.fr.description).not.toMatch(/personne/i);
     expect(SEARCH_RESULT_GROUPS.map((group) => group.type)).not.toContain(
       "person"
     );
@@ -236,7 +269,7 @@ describe("HomeHeroSearch", () => {
     renderSearch();
 
     const placeholder = field().getAttribute("placeholder") ?? "";
-    expect(placeholder).not.toBe(SEARCH_LABEL);
+    expect(placeholder).not.toBe(homeHeroCopy.fr.searchLabel);
     expect(placeholder).not.toMatch(/peuple|pays|famille|langue|\bnom\b/i);
     expect(placeholder).toBe("Ex. : Keïta, Lingala, Peul");
   });
@@ -422,6 +455,87 @@ describe("HomeHeroSearch", () => {
     ).toHaveAttribute("href", getLocalizedRoute("fr", "families"));
   });
 
+  /**
+   * A request that failed never reached the corpus, so it may not be told as
+   * the corpus's answer. This used to fall through to an empty panel — the
+   * same silence as a name the corpus lacks — on a surface whose job is to
+   * say the corpus is not thin.
+   */
+  describe("when the search itself fails", () => {
+    // @req REQ-002
+    it("says the search is unavailable, never that the name is absent", async () => {
+      const fetchResults = vi.fn(async () => {
+        throw new Error("network down");
+      });
+      renderSearch(fetchResults);
+
+      await type("peul");
+
+      expect(
+        await screen.findByText(
+          "La recherche est momentanément indisponible.",
+          {
+            selector: "p",
+          }
+        )
+      ).toBeInTheDocument();
+      expect(screen.queryByTestId("state-copy")).not.toBeInTheDocument();
+      expect(screen.queryByText(/Aucune fiche/)).not.toBeInTheDocument();
+      expect(screen.getByRole("status")).toHaveTextContent(
+        "La recherche est momentanément indisponible."
+      );
+    });
+
+    // @req REQ-002
+    it("asks the corpus again when the reader retries", async () => {
+      const fetchResults = vi
+        .fn<(query: string) => Promise<SearchResult[]>>()
+        .mockRejectedValueOnce(new Error("network down"))
+        .mockResolvedValueOnce(ALL_KINDS);
+      renderSearch(fetchResults);
+
+      await type("yoruba");
+      fireEvent.click(await screen.findByRole("button", { name: "Réessayer" }));
+
+      expect(
+        await screen.findByRole("option", { name: /Yoruba/ })
+      ).toBeInTheDocument();
+      expect(fetchResults).toHaveBeenCalledTimes(2);
+      expect(fetchResults).toHaveBeenLastCalledWith("yoruba");
+      expect(
+        screen.queryByText("La recherche est momentanément indisponible.", {
+          selector: "p",
+        })
+      ).not.toBeInTheDocument();
+    });
+
+    // The retry sits inside the GET form's anchor; a button with no type
+    // there would submit the query to the search page instead.
+    // @req REQ-002
+    it("retries without submitting the form, in the reader's language", async () => {
+      render(
+        <HomeHeroSearch
+          language="en"
+          fetchResults={async () => {
+            throw new Error("network down");
+          }}
+        />
+      );
+
+      await type("fula");
+
+      expect(
+        await screen.findByText("Search is temporarily unavailable.", {
+          selector: "p",
+        })
+      ).toBeInTheDocument();
+      expect(screen.getByRole("button", { name: "Try again" })).toHaveAttribute(
+        "type",
+        "button"
+      );
+    });
+  });
+
   // @req REQ-125
   it("shows near-miss leads once the corpus itself came back empty", async () => {
     const fetchLeads = vi.fn(async () => [
@@ -463,7 +577,7 @@ describe("HomeHeroSearch", () => {
     const fetchResults = vi.fn(async () => ALL_KINDS);
     renderSearch(fetchResults);
 
-    const first = SEED_POOLS[0].words[0];
+    const first = homeHeroCopy.fr.seeds[0];
     fireEvent.click(screen.getByRole("button", { name: first }));
 
     expect(push).toHaveBeenCalledWith(
@@ -670,30 +784,6 @@ describe("HomeHeroSearch", () => {
         await vi.advanceTimersByTimeAsync(ms);
       });
     }
-
-    // The row hears its own hover and focus, but reaching for the field is a
-    // sign of the reader that only this component can see — and a word that
-    // moves while someone is aiming at it is a target that moves. Caught in a
-    // browser, not here: the unit test below is the one that was missing.
-    // @req REQ-002
-    it("stops the seed reels when the field takes focus", async () => {
-      renderSearch();
-
-      const reel = () =>
-        document.querySelector("[data-reel-current]")?.textContent;
-
-      // Witness first: left alone, this reel does turn. Without it the
-      // assertion below would hold just as well on a reel that never moved.
-      const opening = reel();
-      await tick(SEED_POOLS[0].startDelayMs + 50);
-      const turned = reel();
-      expect(turned).not.toBe(opening);
-
-      fireEvent.focus(field());
-      await tick(SEED_POOLS[0].dwellMs * 3);
-
-      expect(reel()).toBe(turned);
-    });
 
     // @req REQ-002
     it("marks the field busy for as long as the request is in flight", async () => {
