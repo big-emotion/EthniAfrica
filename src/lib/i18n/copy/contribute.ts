@@ -77,8 +77,9 @@ const en = {
   notes: "Notes (optional)",
   submit: "Submit contribution",
   submitting: "Sending…",
-  success: "Your contribution has been submitted.",
-  error: "The contribution could not be submitted.",
+  success:
+    "Thank you. Your contribution has been received. It will be reviewed before any change to the page.",
+  error: "Your contribution could not be sent. Try again in a moment.",
   invalidJson: "Invalid JSON format",
   verification: "Anti-bot verification",
   notVerified:
@@ -262,8 +263,10 @@ const fr: ContributeCopy = {
   notes: "Notes (optionnel)",
   submit: "Soumettre la contribution",
   submitting: "Envoi en cours...",
-  success: "Contribution soumise avec succès !",
-  error: "Erreur lors de la soumission",
+  success:
+    "Merci. Votre contribution a bien été reçue. Elle sera examinée avant toute modification de la page.",
+  error:
+    "Votre contribution n’a pas pu être envoyée. Réessayez dans un instant.",
   invalidJson: "Format JSON invalide",
   verification: "Vérification anti-robot",
   notVerified:

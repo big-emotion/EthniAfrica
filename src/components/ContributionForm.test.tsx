@@ -169,6 +169,29 @@ describe("ContributionForm", () => {
   });
 
   /**
+   * The acknowledgement promises what the moderation queue actually does — a
+   * review before anything changes — and nothing it does not: no delay, no
+   * publication of every contribution.
+   */
+  // @req REQ-092
+  it("acknowledges a sent contribution with the review it will receive", async () => {
+    const { container, solve } = renderVerifiedForm();
+
+    selectType(container, "new_people");
+    fillJsonPayload({ name_main: "Bassari" });
+    solve();
+    fireEvent.click(
+      screen.getByRole("button", { name: "Soumettre la contribution" })
+    );
+
+    expect(
+      await screen.findByText(
+        "Merci. Votre contribution a bien été reçue. Elle sera examinée avant toute modification de la page."
+      )
+    ).toBeInTheDocument();
+  });
+
+  /**
    * A proposal for something the corpus does not hold yet has nothing to
    * anchor to; a correction to an existing fiche does, and saying so is what
    * lets a moderator filter the queue by entity.
