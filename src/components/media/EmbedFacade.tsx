@@ -22,6 +22,12 @@ interface EmbedFacadeProps {
   watchUrl: string;
   /** False while the card is off screen, so its controls leave the tab order. */
   active?: boolean;
+  /**
+   * True when the host is already the 9:16 frame (the Découvertes reader's
+   * card): the stage takes the whole box instead of keeping its own capped
+   * ratio, which would letterbox a card that is already vertical.
+   */
+  fill?: boolean;
 }
 
 /**
@@ -42,6 +48,7 @@ export function EmbedFacade({
   poster,
   watchUrl,
   active = true,
+  fill = false,
 }: EmbedFacadeProps) {
   const copy = embedFacadeCopy[language];
   const { consentState, setEmbedsConsent, setShowBanner } = useConsent();
@@ -55,10 +62,13 @@ export function EmbedFacade({
 
   const playerUrl = embed ? embedPlayerUrl(embed) : null;
 
-  // Withdrawing the choice ends playback. `playing` is reset rather than merely
-  // ignored: otherwise granting it again in the panel would restart a video
-  // nobody asked to play.
-  if (playing && !consentState.preferences.embeds) setPlaying(false);
+  // Withdrawing the choice ends playback, and so does the card scrolling out
+  // of view: the deck that hosts this facade mounts every card at once, so
+  // nothing else would stop the sound of a video nobody is looking at.
+  // `playing` is reset rather than merely ignored: otherwise granting consent
+  // again in the panel, or scrolling back, would restart it unasked.
+  if (playing && (!consentState.preferences.embeds || !active))
+    setPlaying(false);
 
   useEffect(() => {
     if (playing) frame.current?.focus();
@@ -80,10 +90,17 @@ export function EmbedFacade({
     </a>
   );
 
-  if (!playerUrl) return <div className={styles.facade}>{linkOut}</div>;
+  const layout = fill ? "fill" : "inline";
+
+  if (!playerUrl)
+    return (
+      <div className={styles.facade} data-layout={layout}>
+        {linkOut}
+      </div>
+    );
 
   return (
-    <div className={styles.facade}>
+    <div className={styles.facade} data-layout={layout}>
       {linkOut}
       <div className={styles.stage}>
         {playing ? (
