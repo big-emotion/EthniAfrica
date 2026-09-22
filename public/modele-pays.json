@@ -90,7 +90,7 @@
           "name": "<Nom du peuple>",
           "peopleId": "PPL_XXXXX",
           "population": 0,
-          "referenceYear": "<Année du recensement d'où vient l'effectif, si ce n'est pas l'année de référence de l'atlas (2025) — ou null>",
+          "referenceYear": "<Année du recensement d'où vient l'effectif, si ce n'est pas l'année de référence d'EthniAfrica (2025) — ou null>",
           "percentageInCountry": 0,
           "percentageInAfrica": null,
           "region": null,

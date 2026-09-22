@@ -207,8 +207,8 @@ export const wallpaperLibrary: Record<Language, WallpaperLibraryCopy> = {
   en: {
     eyebrow: "The project",
     pageTitle: "Wallpapers",
-    outsideAtlas: "Outside the atlas",
-    inAtlas: "In the atlas",
+    outsideAtlas: "Outside our scope",
+    inAtlas: "Within our scope",
     download: "Download",
     downloadLabel: (subject) => `Download the wallpaper for ${subject}`,
     imageAlt: (subject) =>
@@ -217,8 +217,8 @@ export const wallpaperLibrary: Record<Language, WallpaperLibraryCopy> = {
   fr: {
     eyebrow: "Le projet",
     pageTitle: "Fonds d’écran",
-    outsideAtlas: "Hors de l’atlas",
-    inAtlas: "Dans l’atlas",
+    outsideAtlas: "Hors de notre champ",
+    inAtlas: "Dans notre champ",
     download: "Télécharger",
     downloadLabel: (subject) => `Télécharger le fond d’écran de ${subject}`,
     imageAlt: (subject) =>

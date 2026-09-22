@@ -70,7 +70,7 @@ describe("revealProvenanceEn", () => {
       "the autonym the fiche declares"
     );
     expect(revealProvenanceEn(MERCATOR_PROVENANCE_PATH)).toBe(
-      "the boundary outlines published by the atlas"
+      "the boundary outlines published by EthniAfrica"
     );
   });
 });

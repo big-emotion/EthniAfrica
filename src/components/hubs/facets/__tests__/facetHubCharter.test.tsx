@@ -143,9 +143,7 @@ describe("facet switcher — plain anchors, not a widget", () => {
   it("names every facet and its landmark in English", () => {
     render(<FacetSwitcher language="en" active="peoples" />);
 
-    expect(
-      screen.getByRole("navigation", { name: "Atlas facets" })
-    ).toBeVisible();
+    expect(screen.getByRole("navigation", { name: "Facets" })).toBeVisible();
     expect(
       screen.getAllByRole("link").map((link) => link.textContent?.trim())
     ).toEqual(["Families", "Languages", "Peoples", "Countries", "Names"]);

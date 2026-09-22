@@ -19,7 +19,7 @@ const en = {
     title: TRAIL_PAGE_LABELS.en.dossiersHub,
     pageTitle: "Understand the peoples of Africa",
     blurb:
-      "Where a name comes from, where the peoples passed, and which sources the atlas rests on.",
+      "Where a name comes from, where the peoples passed, and which sources we rest on.",
     menuBlurb: "Read by theme, across peoples, territories and eras.",
     hubEntryName: "The reading hub",
     // The hub shows one page of readings at a time; these are its controls.
@@ -159,7 +159,7 @@ const fr: HubsCopy = {
     title: ACCESS_MODE_LABELS.dossiers,
     pageTitle: "Comprendre les peuples d'Afrique",
     blurb:
-      "D'où vient un nom, par où sont passés les peuples, et sur quelles sources l'atlas s'appuie.",
+      "D'où vient un nom, par où sont passés les peuples, et sur quelles sources nous nous appuyons.",
     menuBlurb:
       "Des lectures par thème, à travers les peuples, les territoires et les époques.",
     hubEntryName: "Le hub de lecture",

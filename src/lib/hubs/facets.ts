@@ -80,7 +80,7 @@ export const FACETS: readonly FacetDefinition[] = [
     entityType: "language-family",
     label: "Familles",
     sectionName: "Familles linguistiques",
-    eyebrow: "atlas · les familles linguistiques",
+    eyebrow: "Parcourir · les familles linguistiques",
     title: "Familles linguistiques",
     filterHint:
       "La liste est faite de familles linguistiques. Les filtres la restreignent sans changer sa nature : filtrer par pays montre les familles présentes dans ce pays, pas le pays lui-même.",
@@ -91,7 +91,7 @@ export const FACETS: readonly FacetDefinition[] = [
     entityType: "language",
     label: "Langues",
     sectionName: "Langues",
-    eyebrow: "atlas · les langues d'Afrique",
+    eyebrow: "Parcourir · les langues d'Afrique",
     title: "Les langues d'Afrique",
     filterHint:
       "La liste est faite de langues. Les filtres la restreignent sans changer sa nature : filtrer par pays montre les langues qu'on y parle, pas le pays lui-même.",
@@ -102,7 +102,7 @@ export const FACETS: readonly FacetDefinition[] = [
     entityType: "people",
     label: "Peuples",
     sectionName: "Peuples",
-    eyebrow: "atlas · les peuples d'Afrique",
+    eyebrow: "Parcourir · les peuples d'Afrique",
     title: "Les peuples d'Afrique",
     filterHint:
       "La liste est faite de peuples. Les filtres la restreignent sans changer sa nature : filtrer par pays montre les peuples que ce pays documente, pas le pays lui-même.",
@@ -113,7 +113,7 @@ export const FACETS: readonly FacetDefinition[] = [
     entityType: "country",
     label: "Pays",
     sectionName: "Pays",
-    eyebrow: "atlas · les pays d'Afrique",
+    eyebrow: "Parcourir · les pays d'Afrique",
     title: "Les pays d'Afrique",
     filterHint:
       "La liste est faite de pays. Les filtres la restreignent sans changer sa nature : filtrer par famille linguistique montre les pays où cette famille est présente, pas la famille elle-même.",
@@ -130,7 +130,7 @@ export const FACETS: readonly FacetDefinition[] = [
     // reads as a filter field rather than as the fifth facet.
     label: "Noms",
     sectionName: "Noms",
-    eyebrow: "atlas · les noms d'Afrique",
+    eyebrow: "Parcourir · les noms d'Afrique",
     title: "Les noms d'Afrique",
     filterHint:
       "La liste est faite de noms. Les filtres la restreignent sans changer sa nature : filtrer par peuple montre les noms que ce peuple porte, pas le peuple lui-même.",

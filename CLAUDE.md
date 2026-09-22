@@ -698,6 +698,8 @@ So those three may carry no repository path, no JSON field path, no raw `PPL_`/`
 
 `checkEditorialRules.ts` enforces this as `reader-facing-register` at error severity; the banned vocabulary is one exported constant, `INTERNAL_REGISTER_PATTERNS`. Doctrine, rewrite table and a paste-able prompt block for curation sessions: `docs/editorial/reader-facing-register.md`.
 
+**No reader-facing text calls the project an "atlas"** (operator ruling, 2026-09-22). An object that "documents", "holds" or "does not say" is replaced by a project that speaks: « nous », « notre projet », EthniAfrica; the section a reader browses is « Parcourir ». URLs (`/atlas/…`), identifiers, comments, the titles of real works (UNESCO's _Atlas des langues africaines_…) and the Atlas mountains are not self-references and stay. `src/lib/__tests__/noAtlasInReaderCopy.test.ts` scans the site's string literals and JSX text for it.
+
 ### Bilingual content (`npm run check:translation-parity`, reported — never blocking)
 
 Content added or changed in either language should carry its counterpart in the other, or an explicit deferral with a reason — a fiche field, a home fact, a UI string, a quiz template. The report is symmetric: French without English is listed exactly as English without French is, and a source field edited after its translation was produced is reported as drifted (REQ-145).

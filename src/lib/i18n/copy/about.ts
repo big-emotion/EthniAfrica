@@ -39,7 +39,7 @@ export const accessModeCards: Record<Language, AccessModeCardCopy[]> = {
   en: [
     {
       id: "atlas",
-      label: "The atlas",
+      label: "Browse",
       description:
         "Search a name and see where it comes from, then the peoples, languages, families of languages, countries and names that carry it.",
       accentClass: ACCENT_CLASS.atlas,
@@ -55,14 +55,14 @@ export const accessModeCards: Record<Language, AccessModeCardCopy[]> = {
       id: "jeux",
       label: "Play",
       description:
-        "A quiz drawn from the atlas, and the Mercator projection cut down to size.",
+        "A quiz drawn from our pages, and the Mercator projection cut down to size.",
       accentClass: ACCENT_CLASS.jeux,
     },
   ],
   fr: [
     {
       id: "atlas",
-      label: "L'atlas",
+      label: "Parcourir",
       description:
         "Chercher un nom et voir d’où il vient, puis les peuples, les langues, les familles de langues, les pays et les noms qui le portent.",
       accentClass: ACCENT_CLASS.atlas,
@@ -78,7 +78,7 @@ export const accessModeCards: Record<Language, AccessModeCardCopy[]> = {
       id: "jeux",
       label: "Jouer",
       description:
-        "Un quiz tiré de l’atlas, et la projection de Mercator remise à sa juste taille.",
+        "Un quiz tiré de nos pages, et la projection de Mercator remise à sa juste taille.",
       accentClass: ACCENT_CLASS.jeux,
     },
   ],
@@ -197,7 +197,7 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
         {
           sentence: "“The borders are arbitrary.”",
           reason:
-            "Half false: some follow rivers. They were mostly drawn without reference to who lived there, and the atlas shows it people by people.",
+            "Half false: some follow rivers. They were mostly drawn without reference to who lived there, and we show it people by people.",
         },
         {
           sentence: "“Reconnecting with the past.”",
@@ -230,7 +230,7 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
     unityClaim:
       "What connects Africa’s peoples has survived their own ruptures as much as the borders imposed on them. That is where a stronger unity begins.",
     unityClaimStatus:
-      "That is our conviction, distinct from what the atlas shows — not a measurement it produces.",
+      "That is our conviction, distinct from what our pages show — not a measurement it produces.",
   },
   fr: {
     stepLabel: "01 · Le propos",
@@ -281,7 +281,7 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
         {
           sentence: "« Les frontières sont arbitraires. »",
           reason:
-            "À demi faux : certaines suivent des fleuves. Elles ont surtout été tracées sans référence à qui habitait là, et l’atlas le montre peuple par peuple.",
+            "À demi faux : certaines suivent des fleuves. Elles ont surtout été tracées sans référence à qui habitait là, et nous le montrons peuple par peuple.",
         },
         {
           sentence: "« Renouer avec le passé. »",
@@ -314,7 +314,7 @@ export const purposeChapter: Record<Language, PurposeChapterCopy> = {
     unityClaim:
       "Ce qui relie les peuples d’Afrique a survécu à leurs propres ruptures autant qu’aux frontières qu’on leur a imposées. C’est là que commence une unité plus forte.",
     unityClaimStatus:
-      "C’est notre conviction, distincte de ce que montre l’atlas — pas une mesure qu’il produit.",
+      "C’est notre conviction, distincte de ce que montrent nos pages — pas une mesure qu’il produit.",
   },
 };
 
