@@ -17,7 +17,7 @@ export interface RevealProvenanceEn {
   wordingByFieldPath: Record<string, string>;
 }
 
-const ATLAS_OUTLINES = "the boundary outlines published by the atlas";
+const ATLAS_OUTLINES = "the boundary outlines published by EthniAfrica";
 
 // @req REQ-145
 export const REVEAL_PROVENANCE_EN: RevealProvenanceEn = {
@@ -26,7 +26,7 @@ export const REVEAL_PROVENANCE_EN: RevealProvenanceEn = {
     "lib/atlas/assets/africaAdmin0": ATLAS_OUTLINES,
     "lib/atlas/assets/worldCompare": ATLAS_OUTLINES,
     "lib/games/landmarks":
-      "the city and cape coordinates published by the atlas",
+      "the city and cape coordinates published by EthniAfrica",
 
     languageFamilyId: "the language family the fiche declares",
     "content.appellations.selfAppellation": "the autonym the fiche declares",

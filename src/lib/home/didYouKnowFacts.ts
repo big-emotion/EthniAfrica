@@ -627,7 +627,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/teo/",
         tier: "official",
         notes:
-          "Atteste les appellations Teso, Bakedi et Wamia et la répartition Ouganda-Kenya. Le sens de Bakedi et son caractère péjoratif sont rapportés par la notice de ce peuple dans l'atlas.",
+          "Atteste les appellations Teso, Bakedi et Wamia et la répartition Ouganda-Kenya. Le sens de Bakedi et son caractère péjoratif sont rapportés par notre fiche sur ce peuple.",
       },
     ],
   },
@@ -710,7 +710,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/god/",
         tier: "official",
         notes:
-          "Atteste l'appellation Godié et ses variantes. L'étymologie néyo Gwèdji est rapportée par la notice de ce peuple dans l'atlas.",
+          "Atteste l'appellation Godié et ses variantes. L'étymologie néyo Gwèdji est rapportée par notre fiche sur ce peuple.",
       },
     ],
   },
@@ -739,7 +739,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://glottolog.org/resource/languoid/id/murl1244",
         tier: "official",
         notes:
-          "Atteste l'ethnonyme et les exonymes voisins. Le sens de moden est rapporté par la notice de ce peuple dans l'atlas.",
+          "Atteste l'ethnonyme et les exonymes voisins. Le sens de moden est rapporté par notre fiche sur ce peuple.",
       },
     ],
   },
@@ -764,7 +764,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/maf/",
         tier: "official",
         notes:
-          "Atteste l'une des langues rassemblées sous l'étiquette. L'étymologie et la mention de Denham en 1826 sont rapportées par la notice de ce peuple dans l'atlas.",
+          "Atteste l'une des langues rassemblées sous l'étiquette. L'étymologie et la mention de Denham en 1826 sont rapportées par notre fiche sur ce peuple.",
       },
     ],
   },
@@ -786,7 +786,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/bam/",
         tier: "official",
         notes:
-          "Atteste les formes Bambara et Bamana et le statut véhiculaire de la langue. L'étymologie dépréciative est rapportée par la notice de ce peuple dans l'atlas, qui la donne pour débattue.",
+          "Atteste les formes Bambara et Bamana et le statut véhiculaire de la langue. L'étymologie dépréciative est rapportée par notre fiche sur ce peuple, qui la donne pour débattue.",
       },
     ],
   },
@@ -810,7 +810,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://whc.unesco.org/fr/list/516/",
         tier: "official",
         notes:
-          "Atteste le territoire et la désignation Dogon. L'exonyme peul Habe et son sens sont rapportés par la notice de ce peuple dans l'atlas.",
+          "Atteste le territoire et la désignation Dogon. L'exonyme peul Habe et son sens sont rapportés par notre fiche sur ce peuple.",
       },
     ],
   },
@@ -907,7 +907,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/subgroup/589/",
         tier: "official",
         notes:
-          "Atteste la pluralité des langues rassemblées sous l'étiquette. L'origine administrative allemande et l'étymologie débattue sont rapportées par la notice de ce peuple dans l'atlas.",
+          "Atteste la pluralité des langues rassemblées sous l'étiquette. L'origine administrative allemande et l'étymologie débattue sont rapportées par notre fiche sur ce peuple.",
       },
     ],
   },
@@ -1058,7 +1058,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/run",
         tier: "official",
         notes:
-          "Atteste la langue commune aux trois catégories. Les deux étymologies concurrentes sont rapportées par la notice de ce peuple dans l'atlas, qui les donne pour débattues.",
+          "Atteste la langue commune aux trois catégories. Les deux étymologies concurrentes sont rapportées par notre fiche sur ce peuple, qui les donne pour débattues.",
       },
     ],
   },
@@ -1137,7 +1137,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/teg/",
         tier: "official",
         notes:
-          "Atteste l'ethnonyme et ses formes préfixées. Le sens du radical est rapporté par la notice de ce peuple dans l'atlas.",
+          "Atteste l'ethnonyme et ses formes préfixées. Le sens du radical est rapporté par notre fiche sur ce peuple.",
       },
     ],
   },
@@ -1160,7 +1160,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://afriprov.tangaza.ac.ke/wp-content/uploads/2008/11/ebooks_tetela.pdf",
         tier: "referenced",
         notes:
-          "Recueil de proverbes en tetela. Il documente la langue, non l'étymologie de l'ethnonyme : les deux origines rapportées ici viennent de la notice de ce peuple dans l'atlas et n'ont pas de source dédiée, d'où la fiabilité basse du fait.",
+          "Recueil de proverbes en tetela. Il documente la langue, non l'étymologie de l'ethnonyme : les deux origines rapportées ici viennent de notre fiche sur ce peuple et n'ont pas de source dédiée, d'où la fiabilité basse du fait.",
       },
     ],
   },
@@ -1184,7 +1184,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
           "Roberts, Allen F. — The Rising of a New Moon: A Century of Tabwa Art. University of Michigan Museum of Art, 1985",
         tier: "referenced",
         notes:
-          "L'étude de référence sur les Tabwa et sur la formation coloniale de leur identité. L'étymologie « être attaché » est rapportée par la notice de ce peuple dans l'atlas au conditionnel, d'où la fiabilité basse du fait.",
+          "L'étude de référence sur les Tabwa et sur la formation coloniale de leur identité. L'étymologie « être attaché » est rapportée par notre fiche sur ce peuple au conditionnel, d'où la fiabilité basse du fait.",
       },
       {
         title: "SIL Ethnologue — Taabwa (tap)",
@@ -1274,7 +1274,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/kwn/",
         tier: "official",
         notes:
-          "Atteste la langue et la localisation riveraine. Le rapport de nom entre la rivière, le peuple et la région est rapporté par la notice de ce peuple dans l'atlas.",
+          "Atteste la langue et la localisation riveraine. Le rapport de nom entre la rivière, le peuple et la région est rapporté par notre fiche sur ce peuple.",
       },
     ],
   },
@@ -1298,7 +1298,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://dice.missouri.edu/assets/docs/niger-congo/Kaonde.pdf",
         tier: "referenced",
         notes:
-          "Fiche linguistique sur le kaonde. Les deux récits d'origine sont traditionnels et rapportés par la notice de ce peuple dans l'atlas, sans source qui les arbitre : d'où la fiabilité basse du fait.",
+          "Fiche linguistique sur le kaonde. Les deux récits d'origine sont traditionnels et rapportés par notre fiche sur ce peuple, sans source qui les arbitre : d'où la fiabilité basse du fait.",
       },
     ],
   },
@@ -1322,7 +1322,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/kon",
         tier: "official",
         notes:
-          "Atteste la langue et le rattachement kongo. Les deux hypothèses sur l'origine du nom sont rapportées par la notice de ce peuple dans l'atlas d'après Van Bulck d'une part, Monnier et Wiliame d'autre part, sans arbitrage.",
+          "Atteste la langue et le rattachement kongo. Les deux hypothèses sur l'origine du nom sont rapportées par notre fiche sur ce peuple d'après Van Bulck d'une part, Monnier et Wiliame d'autre part, sans arbitrage.",
       },
     ],
   },
@@ -1573,7 +1573,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://smarthistory.org/fang-reliquary-figure/",
         tier: "referenced",
         notes:
-          "Contexte sur les Fang et leur art. La culture délibérée de la réputation est rapportée par la notice de ce peuple dans l'atlas sans source dédiée, d'où la fiabilité basse du fait.",
+          "Contexte sur les Fang et leur art. La culture délibérée de la réputation est rapportée par notre fiche sur ce peuple sans source dédiée, d'où la fiabilité basse du fait.",
       },
     ],
   },
@@ -1604,7 +1604,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/fan/",
         tier: "official",
         notes:
-          "Atteste l'autre. L'épisode Du Chaillu et la nature des crânes sont rapportés par la notice de ce peuple dans l'atlas.",
+          "Atteste l'autre. L'épisode Du Chaillu et la nature des crânes sont rapportés par notre fiche sur ce peuple.",
       },
     ],
   },
@@ -1688,7 +1688,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/mlg/",
         tier: "official",
         notes:
-          "Atteste la macrolangue et ses variétés. L'étymologie du nom est une tradition rapportée par la notice de ce peuple dans l'atlas, sans source qui l'atteste : d'où la fiabilité basse du fait.",
+          "Atteste la macrolangue et ses variétés. L'étymologie du nom est une tradition rapportée par notre fiche sur ce peuple, sans source qui l'atteste : d'où la fiabilité basse du fait.",
       },
     ],
   },
@@ -1767,7 +1767,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://glottolog.org/resource/languoid/id/kafa1242",
         tier: "official",
         notes:
-          "Atteste la langue et l'autonyme. Le caractère peu probable de l'étymologie du mot café est rapporté par la notice de ce peuple dans l'atlas d'après la littérature linguistique.",
+          "Atteste la langue et l'autonyme. Le caractère peu probable de l'étymologie du mot café est rapporté par notre fiche sur ce peuple d'après la littérature linguistique.",
       },
       {
         title: "Pankhurst, Richard — The Ethiopian Borderlands, 1997",

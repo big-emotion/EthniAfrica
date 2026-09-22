@@ -80,7 +80,7 @@ describe("home charter — what the band claims the corpus is", () => {
     render(<HomeCorpusCounts language="fr" counts={FULL_CORPUS} />);
 
     expect(screen.getByTestId("home-corpus-counts")).toHaveAccessibleName(
-      /ce que l'atlas documente/i
+      /ce que nous documentons/i
     );
     for (const { tileLabel } of CORPUS_CLASSES) {
       expect(tileLabel).toMatch(/document/i);

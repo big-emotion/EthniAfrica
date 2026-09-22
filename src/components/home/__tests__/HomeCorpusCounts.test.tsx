@@ -56,8 +56,11 @@ describe("HomeCorpusCounts — what the atlas documents, in three figures", () =
     render(<HomeCorpusCounts language="fr" counts={FULL_CORPUS} />);
 
     expect(screen.getByTestId("home-corpus-counts")).toHaveAccessibleName(
-      /ce que l'atlas documente/i
+      /ce que nous documentons/i
     );
+    expect(
+      screen.getByTestId("home-corpus-counts").getAttribute("aria-label")
+    ).not.toMatch(/\batlas\b/i);
     for (const term of screen.getAllByRole("term")) {
       expect(term.textContent).toMatch(/document/i);
     }

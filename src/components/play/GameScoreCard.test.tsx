@@ -64,7 +64,7 @@ describe("GameScoreCard (Jouer hub engine, REQ-120)", () => {
     );
 
     expect(screen.getByTestId("game-score-empty")).toHaveTextContent(
-      "L’atlas ne contient pas encore assez de pages pour composer un tour de ce jeu."
+      "Nous n’avons pas encore assez de pages pour composer un tour de ce jeu."
     );
     expect(screen.queryByTestId("game-score-value")).not.toBeInTheDocument();
   });

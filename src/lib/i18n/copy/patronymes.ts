@@ -93,24 +93,24 @@ const en = {
     nameCount: (count: number) => `${count} ${count === 1 ? "name" : "names"}`,
 
     peopleEmpty:
-      "The atlas does not yet attach any name to this people. The names dimension has just opened and covers only a small part of the atlas.",
+      "We do not yet attach any name to this people. The names dimension has just opened and covers only a small part of our project.",
     peopleUnavailable:
-      "The names borne could not be loaded. The problem is on our side, not an empty atlas.",
+      "The names borne could not be loaded. The problem is on our side, not an absence of names.",
     countryAlphabeticalIndexLabel: "Alphabetical index",
     attestedLabel: "Attested in the country",
     reachLabel: "Borne by the country's peoples, with no attestation here",
     reachViaPrefix: "via",
     countryEmpty:
-      "The atlas does not yet attest any name in this country, and none of the peoples who live there bears a documented one.",
+      "We do not yet attest any name in this country, and none of the peoples who live there bears a documented one.",
     countryUnavailable:
-      "The names could not be loaded. The problem is on our side, not an empty atlas.",
+      "The names could not be loaded. The problem is on our side, not an absence of names.",
   },
   index: {
     pageTitle: "Names",
     pageSubtitle:
-      "The naming systems of persons documented in the atlas — clan names, non-hereditary patronymics, nisba and praise names.",
+      "The naming systems of persons documented here — clan names, non-hereditary patronymics, nisba and praise names.",
     unavailable:
-      "The names could not be loaded. The problem is on our side, not an empty atlas.",
+      "The names could not be loaded. The problem is on our side, not an absence of names.",
     countSingular: "name",
     countPlural: "names",
     emptyState: "No name is documented yet.",
@@ -217,9 +217,9 @@ const fr: PatronymesCopy = {
     nameCount: (count) => `${count} ${count === 1 ? "nom" : "noms"}`,
 
     peopleEmpty:
-      "L’atlas ne rattache encore aucun nom à ce peuple. La dimension des noms vient d'ouvrir et ne couvre qu'une petite part de l'atlas.",
+      "Nous ne rattachons encore aucun nom à ce peuple. La dimension des noms vient d'ouvrir et ne couvre qu'une petite part de notre projet.",
     peopleUnavailable:
-      "Les noms portés n'ont pas pu être chargés. Le problème vient de notre côté, pas d'un atlas vide.",
+      "Les noms portés n'ont pas pu être chargés. Le problème vient de notre côté, pas d'une absence de noms.",
     countryAlphabeticalIndexLabel: "Index alphabétique",
     attestedLabel: "Attestés dans le pays",
     // Says both halves of the inference in the label itself — whose
@@ -230,9 +230,9 @@ const fr: PatronymesCopy = {
     reachLabel: "Portés par les peuples du pays, sans attestation ici",
     reachViaPrefix: "par",
     countryEmpty:
-      "L’atlas n'atteste encore aucun nom dans ce pays, et aucun des peuples qui y vivent n'en porte de documenté.",
+      "Nous n'attestons encore aucun nom dans ce pays, et aucun des peuples qui y vivent n'en porte de documenté.",
     countryUnavailable:
-      "Les noms n'ont pas pu être chargés. Le problème vient de notre côté, pas d'un atlas vide.",
+      "Les noms n'ont pas pu être chargés. Le problème vient de notre côté, pas d'une absence de noms.",
   },
   // The /fr/atlas/noms index (ETNI-1803, REQ-139) — the corpus-class
   // listing that leads to the fiches above. Kept nested here rather than
@@ -241,9 +241,9 @@ const fr: PatronymesCopy = {
   index: {
     pageTitle: "Noms",
     pageSubtitle:
-      "Les systèmes de nommage des personnes documentés dans l’atlas — noms de clan, patronymes non héréditaires, nisba et noms d'éloge.",
+      "Les systèmes de nommage des personnes documentés ici — noms de clan, patronymes non héréditaires, nisba et noms d'éloge.",
     unavailable:
-      "Les noms n'ont pas pu être chargés. Le problème vient de notre côté, pas d'un atlas vide.",
+      "Les noms n'ont pas pu être chargés. Le problème vient de notre côté, pas d'une absence de noms.",
     countSingular: "nom",
     countPlural: "noms",
     emptyState: "Aucun nom n'est encore documenté.",

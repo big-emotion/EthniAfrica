@@ -186,7 +186,7 @@ describe("the countries facet", () => {
     render(await renderRoute({}));
 
     expect(screen.queryAllByRole("heading", { level: 1 })).toHaveLength(0);
-    expect(screen.getByText(/54 pays à l’atlas/)).toBeInTheDocument();
+    expect(screen.getByText(/54 pays documentés/)).toBeInTheDocument();
   });
 
   /**
@@ -211,7 +211,7 @@ describe("the countries facet", () => {
   it("renders its reading and controls in English", async () => {
     render(await renderRoute({}, "en"));
 
-    expect(screen.getByText(/54 countries in the atlas/)).toBeInTheDocument();
+    expect(screen.getByText(/54 documented countries/)).toBeInTheDocument();
     expect(
       screen.getByRole("searchbox", { name: "Search countries" })
     ).toHaveAttribute("placeholder", "Country name or identifier");

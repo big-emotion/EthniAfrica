@@ -15,7 +15,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
   provenance: "machine",
   title: "The people",
   question:
-    "Almost every people in the atlas bears a name that came from outside. Who gave it to them?",
+    "Almost every people documented here bears a name that came from outside. Who gave it to them?",
   standfirst:
     "The corpus holds more names given from outside than names claimed from within. The gap does not first measure colonisation: it measures who did the writing.",
   measure: {
@@ -28,13 +28,13 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
       heading: "The measure, and what it does not measure",
       blocks: {
         "quatre-pour-un":
-          "The atlas's 776 people fiches record 3,137 names given from outside, against 774 names the people concerned claim for themselves. Four to one.",
+          "Our 776 people fiches record 3,137 names given from outside, against 774 names the people concerned claim for themselves. Four to one.",
         "une-asymetrie-darchive":
-          "The gap is spectacular, and it is easy to make it say what it does not. It does not measure how many peoples were forcibly renamed. It measures first of all an asymmetry of the archive: far more has been written about these peoples than they have written about themselves, and an atlas that compiles sources compiles that imbalance along with them.",
+          "The gap is spectacular, and it is easy to make it say what it does not. It does not measure how many peoples were forcibly renamed. It measures first of all an asymmetry of the archive: far more has been written about these peoples than they have written about themselves, and a project that compiles sources compiles that imbalance along with them.",
         "trois-declarations":
           "On the classification of their own name, the fiches say three things. 444 declare their name contested or inherited from colonisation. 19 declare something else. And 309 declare nothing at all.",
         "le-troisieme-nombre":
-          "That third number is the subject of the sentence, not its footnote. Writing ‘57% of the atlas's peoples contest their name’ would suggest that the others had been examined and found unproblematic. They have not been examined. The work is open, and a percentage would book it as a result.",
+          "That third number is the subject of the sentence, not its footnote. Writing ‘57% of the peoples documented here contest their name’ would suggest that the others had been examined and found unproblematic. They have not been examined. The work is open, and a percentage would book it as a result.",
       },
     },
     "le-sondage-lexical": {
