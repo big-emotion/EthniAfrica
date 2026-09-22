@@ -181,10 +181,7 @@ describe("HomeHeroSearch", () => {
     expect(field()).toHaveAccessibleName(
       "Search for a people, language, country, language family or surname"
     );
-    expect(field()).toHaveAttribute(
-      "placeholder",
-      "E.g. Bafut, Fulfulde, Namibia, Keita"
-    );
+    expect(field()).toHaveAttribute("placeholder", "E.g. Keïta, Lingala, Fula");
 
     await type("chad");
 
@@ -241,7 +238,7 @@ describe("HomeHeroSearch", () => {
     const placeholder = field().getAttribute("placeholder") ?? "";
     expect(placeholder).not.toBe(SEARCH_LABEL);
     expect(placeholder).not.toMatch(/peuple|pays|famille|langue|\bnom\b/i);
-    expect(placeholder).toBe("Ex. Bafut, Fulfulde, Namibie, Keïta");
+    expect(placeholder).toBe("Ex. : Keïta, Lingala, Peul");
   });
 
   // Opening the phone keyboard on load buries the page under it and steals

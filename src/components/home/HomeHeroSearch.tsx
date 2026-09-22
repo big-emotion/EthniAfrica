@@ -18,10 +18,10 @@ import { SEARCH_ENTITY_ACCENT } from "@/components/search/searchEntityAccent";
 import { NoResultsLeads } from "@/components/search/NoResultsLeads";
 import { HomeHeroSeeds } from "./HomeHeroSeeds";
 import type { SeedWordsByKind } from "@/lib/home/seedWords";
+import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
 import { search as searchCorpus, searchWithLeads } from "@/lib/afrikLoader";
 import {
   getSearchLabel,
-  getSearchPlaceholder,
   getSearchResultGroups,
 } from "@/lib/search/searchVocabulary";
 import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
@@ -331,7 +331,7 @@ export function HomeHeroSearch({
               name="q"
               aria-busy={pending}
               {...suggest.comboboxProps}
-              placeholder={getSearchPlaceholder(language)}
+              placeholder={homeHeroCopy[language].searchPlaceholder}
               type="search"
               inputMode="search"
               enterKeyHint="search"
