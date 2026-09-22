@@ -2,9 +2,10 @@ import type { Language } from "@/types/shared";
 
 const en = {
   surface: {
-    autoRotating: "Atlas globe. Interact with the globe to stop the rotation.",
-    globe: "Atlas globe. Drag or use the arrow keys to rotate.",
-    flatMap: "Atlas map. Drag or use the arrow keys to move.",
+    autoRotating:
+      "EthniAfrica globe. Interact with the globe to stop the rotation.",
+    globe: "EthniAfrica globe. Drag or use the arrow keys to rotate.",
+    flatMap: "EthniAfrica map. Drag or use the arrow keys to move.",
   },
   projectionNames: {
     globe: "Globe",
@@ -51,9 +52,10 @@ type AtlasCopy = typeof en;
 const fr: AtlasCopy = {
   surface: {
     autoRotating:
-      "Globe de l'atlas. Interagissez avec le globe pour arrêter la rotation.",
-    globe: "Globe de l'atlas. Glissez ou utilisez les flèches pour tourner.",
-    flatMap: "Carte de l'atlas. Glissez ou utilisez les flèches pour déplacer.",
+      "Globe EthniAfrica. Interagissez avec le globe pour arrêter la rotation.",
+    globe: "Globe EthniAfrica. Glissez ou utilisez les flèches pour tourner.",
+    flatMap:
+      "Carte EthniAfrica. Glissez ou utilisez les flèches pour déplacer.",
   },
   projectionNames: {
     globe: "Globe",

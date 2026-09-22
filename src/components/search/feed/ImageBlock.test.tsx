@@ -50,7 +50,7 @@ describe("ImageBlock", () => {
     );
     expect(screen.getByText(/Test tool · Test model/)).toBeInTheDocument();
     expect(screen.getByText("Source documentée")).toBeInTheDocument();
-    expect(screen.getByText("Récent dans l’atlas")).toHaveAttribute(
+    expect(screen.getByText("Récemment ajouté")).toHaveAttribute(
       "data-companion-relation",
       "recent"
     );
@@ -60,7 +60,7 @@ describe("ImageBlock", () => {
   it("uses the reviewed board metadata density", () => {
     render(<ImageBlock item={imageItem} reviewed />);
 
-    expect(screen.queryByText("Récent dans l’atlas")).toBeNull();
+    expect(screen.queryByText("Récemment ajouté")).toBeNull();
     expect(screen.queryByText("Une interprétation documentée.")).toBeNull();
     expect(screen.queryByText(/Test tool · Test model/)).toBeNull();
     expect(screen.getByText("Source documentée")).toBeInTheDocument();

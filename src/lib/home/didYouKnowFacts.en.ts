@@ -571,7 +571,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://www.ethnologue.com/language/teo/",
           tier: "official",
           notes:
-            "Attests the names Teso, Bakedi and Wamia and the Uganda–Kenya distribution. The meaning of Bakedi and its pejorative character are reported by this people's entry in the atlas.",
+            "Attests the names Teso, Bakedi and Wamia and the Uganda–Kenya distribution. The meaning of Bakedi and its pejorative character are reported by our entry on this people.",
         },
       ],
       provenance: "machine",
@@ -658,7 +658,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://www.ethnologue.com/language/god/",
           tier: "official",
           notes:
-            "Attests the name Godié and its variants. The Neyo etymology Gwèdji is reported by this people's entry in the atlas.",
+            "Attests the name Godié and its variants. The Neyo etymology Gwèdji is reported by our entry on this people.",
         },
       ],
       provenance: "machine",
@@ -687,7 +687,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://glottolog.org/resource/languoid/id/murl1244",
           tier: "official",
           notes:
-            "Attests the ethnonym and the neighbouring exonyms. The meaning of moden is reported by this people's entry in the atlas.",
+            "Attests the ethnonym and the neighbouring exonyms. The meaning of moden is reported by our entry on this people.",
         },
       ],
       provenance: "machine",
@@ -712,7 +712,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://www.ethnologue.com/language/maf/",
           tier: "official",
           notes:
-            "Attests one of the languages gathered under the label. The etymology and Denham's 1826 mention are reported by this people's entry in the atlas.",
+            "Attests one of the languages gathered under the label. The etymology and Denham's 1826 mention are reported by our entry on this people.",
         },
       ],
       provenance: "machine",
@@ -734,7 +734,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://www.ethnologue.com/language/bam/",
           tier: "official",
           notes:
-            "Attests the forms Bambara and Bamana and the vehicular status of the language. The derogatory etymology is reported by this people's entry in the atlas, which gives it as debated.",
+            "Attests the forms Bambara and Bamana and the vehicular status of the language. The derogatory etymology is reported by our entry on this people, which gives it as debated.",
         },
       ],
       provenance: "machine",
@@ -758,7 +758,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://whc.unesco.org/fr/list/516/",
           tier: "official",
           notes:
-            "Attests the territory and the designation Dogon. The Fula exonym Habe and its meaning are reported by this people's entry in the atlas.",
+            "Attests the territory and the designation Dogon. The Fula exonym Habe and its meaning are reported by our entry on this people.",
         },
       ],
       provenance: "machine",
@@ -855,7 +855,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://www.ethnologue.com/subgroup/589/",
           tier: "official",
           notes:
-            "Attests the plurality of languages gathered under the label. The German administrative origin and the debated etymology are reported by this people's entry in the atlas.",
+            "Attests the plurality of languages gathered under the label. The German administrative origin and the debated etymology are reported by our entry on this people.",
         },
       ],
       provenance: "machine",
@@ -1006,7 +1006,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://www.ethnologue.com/language/run",
           tier: "official",
           notes:
-            "Attests the language common to the three categories. The two competing etymologies are reported by this people's entry in the atlas, which gives them as debated.",
+            "Attests the language common to the three categories. The two competing etymologies are reported by our entry on this people, which gives them as debated.",
         },
       ],
       provenance: "machine",
@@ -1085,7 +1085,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://www.ethnologue.com/language/teg/",
           tier: "official",
           notes:
-            "Attests the ethnonym and its prefixed forms. The meaning of the root is reported by this people's entry in the atlas.",
+            "Attests the ethnonym and its prefixed forms. The meaning of the root is reported by our entry on this people.",
         },
       ],
       provenance: "machine",
@@ -1112,7 +1112,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://afriprov.tangaza.ac.ke/wp-content/uploads/2008/11/ebooks_tetela.pdf",
           tier: "referenced",
           notes:
-            "A collection of proverbs in Tetela. It documents the language, not the etymology of the ethnonym: the two origins reported here come from this people's entry in the atlas and have no dedicated source, hence the low reliability of the fact.",
+            "A collection of proverbs in Tetela. It documents the language, not the etymology of the ethnonym: the two origins reported here come from our entry on this people and have no dedicated source, hence the low reliability of the fact.",
         },
       ],
       provenance: "machine",
@@ -1140,7 +1140,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
             "Roberts, Allen F. — The Rising of a New Moon: A Century of Tabwa Art. University of Michigan Museum of Art, 1985",
           tier: "referenced",
           notes:
-            "The reference study on the Tabwa and on the colonial formation of their identity. The etymology “to be tied” is reported by this people's entry in the atlas as a conjecture, hence the low reliability of the fact.",
+            "The reference study on the Tabwa and on the colonial formation of their identity. The etymology “to be tied” is reported by our entry on this people as a conjecture, hence the low reliability of the fact.",
         },
         {
           title: "SIL Ethnologue — Taabwa (tap)",
@@ -1230,7 +1230,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://www.ethnologue.com/language/kwn/",
           tier: "official",
           notes:
-            "Attests the language and the riverside location. The naming link between the river, the people and the region is reported by this people's entry in the atlas.",
+            "Attests the language and the riverside location. The naming link between the river, the people and the region is reported by our entry on this people.",
         },
       ],
       provenance: "machine",
@@ -1258,7 +1258,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://dice.missouri.edu/assets/docs/niger-congo/Kaonde.pdf",
           tier: "referenced",
           notes:
-            "Linguistic profile of Kaonde. The two origin accounts are traditional and reported by this people's entry in the atlas, with no source to arbitrate between them: hence the low reliability of the fact.",
+            "Linguistic profile of Kaonde. The two origin accounts are traditional and reported by our entry on this people, with no source to arbitrate between them: hence the low reliability of the fact.",
         },
       ],
       provenance: "machine",
@@ -1286,7 +1286,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://www.ethnologue.com/language/kon",
           tier: "official",
           notes:
-            "Attests the language and the Kongo affiliation. The two hypotheses on the origin of the name are reported by this people's entry in the atlas after Van Bulck on one side and Monnier and Wiliame on the other, without arbitration.",
+            "Attests the language and the Kongo affiliation. The two hypotheses on the origin of the name are reported by our entry on this people after Van Bulck on one side and Monnier and Wiliame on the other, without arbitration.",
         },
       ],
       provenance: "machine",
@@ -1538,7 +1538,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://smarthistory.org/fang-reliquary-figure/",
           tier: "referenced",
           notes:
-            "Context on the Fang and their art. The deliberate cultivation of the reputation is reported by this people's entry in the atlas with no dedicated source, hence the low reliability of the fact.",
+            "Context on the Fang and their art. The deliberate cultivation of the reputation is reported by our entry on this people with no dedicated source, hence the low reliability of the fact.",
         },
       ],
       provenance: "machine",
@@ -1569,7 +1569,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://www.ethnologue.com/language/fan/",
           tier: "official",
           notes:
-            "Attests the other. The Du Chaillu episode and the nature of the skulls are reported by this people's entry in the atlas.",
+            "Attests the other. The Du Chaillu episode and the nature of the skulls are reported by our entry on this people.",
         },
       ],
       provenance: "machine",
@@ -1654,7 +1654,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://www.ethnologue.com/language/mlg/",
           tier: "official",
           notes:
-            "Attests the macrolanguage and its varieties. The etymology of the name is a tradition reported by this people's entry in the atlas, with no source attesting it: hence the low reliability of the fact.",
+            "Attests the macrolanguage and its varieties. The etymology of the name is a tradition reported by our entry on this people, with no source attesting it: hence the low reliability of the fact.",
         },
       ],
       provenance: "machine",
@@ -1733,7 +1733,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
           url: "https://glottolog.org/resource/languoid/id/kafa1242",
           tier: "official",
           notes:
-            "Attests the language and the autonym. The unlikelihood of the etymology of the word coffee is reported by this people's entry in the atlas after the linguistic literature.",
+            "Attests the language and the autonym. The unlikelihood of the etymology of the word coffee is reported by our entry on this people after the linguistic literature.",
         },
         {
           title: "Pankhurst, Richard — The Ethiopian Borderlands, 1997",

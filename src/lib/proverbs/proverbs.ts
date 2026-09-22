@@ -672,7 +672,7 @@ export const PROVERBS: Proverb[] = [
       "Chez les Igbo, un propos sans proverbe est comme un plat sans assaisonnement : le proverbe rend la parole acceptable et savoureuse.",
     origin: {
       status: "attested",
-      note: "La phrase vient du roman de Chinua Achebe Things Fall Apart (1958). Le narrateur la présente comme la conception igbo de l'art de la conversation. On la cite depuis comme proverbe igbo, mais l'atlas ne s'appuie sur aucun recueil de tradition orale, et le texte igbo n'est pas donné.",
+      note: "La phrase vient du roman de Chinua Achebe Things Fall Apart (1958). Le narrateur la présente comme la conception igbo de l'art de la conversation. On la cite depuis comme proverbe igbo, mais nous ne nous appuyons sur aucun recueil de tradition orale, et le texte igbo n'est pas donné.",
     },
     entities: [
       {
@@ -979,7 +979,7 @@ export const PROVERBS: Proverb[] = [
       "Ce que l'éducation familiale n'a pas transmis, la vie l'enseignera, souvent plus durement.",
     origin: {
       status: "attested",
-      note: "Proverbe swahili cité par la radio publique américaine NPR comme équivalent africain approché de « Il faut tout un village pour élever un enfant ». La traduction française est celle de l'atlas, faite à partir du texte swahili cité.",
+      note: "Proverbe swahili cité par la radio publique américaine NPR comme équivalent africain approché de « Il faut tout un village pour élever un enfant ». La traduction française est la nôtre, faite à partir du texte swahili cité.",
     },
     entities: [
       {
@@ -2365,7 +2365,7 @@ export const PROVERBS: Proverb[] = [
       "Avec le temps, ce qui semble immobile se transforme : l'œuf devient poussin.",
     origin: {
       status: "attested",
-      note: "Proverbe amharique publié en 2018 avec son texte original dans une revue de l'université d'Addis-Abeba. L'auteur le rapproche de « Rome ne s'est pas faite en un jour ». La traduction littérale est celle de l'atlas.",
+      note: "Proverbe amharique publié en 2018 avec son texte original dans une revue de l'université d'Addis-Abeba. L'auteur le rapproche de « Rome ne s'est pas faite en un jour ». La traduction littérale est la nôtre.",
     },
     entities: [
       {
@@ -2656,7 +2656,7 @@ export const PROVERBS: Proverb[] = [
       "Les êtres humains sont liés les uns aux autres comme les brins d'une même natte.",
     origin: {
       status: "estimated",
-      note: "Proverbe malgache publié avec son texte original sur le site d'une association de bibliothécaires. L'article ne cite aucun recueil. L'atlas ne s'appuie sur aucun des grands recueils publiés, comme celui de J. A. Houlder (1915-1916).",
+      note: "Proverbe malgache publié avec son texte original sur le site d'une association de bibliothécaires. L'article ne cite aucun recueil. Nous ne nous appuyons sur aucun des grands recueils publiés, comme celui de J. A. Houlder (1915-1916).",
     },
     entities: [
       {
@@ -2691,7 +2691,7 @@ export const PROVERBS: Proverb[] = [
     meaning: "Un mensonge ne mène pas loin : il finit par être découvert.",
     origin: {
       status: "estimated",
-      note: "L'atlas ne connaît ce proverbe en somali que par un blog personnel. Ce blog le rend par l'équivalent anglais « Lies have short legs », pas mot à mot, et ne cite aucun recueil. L'atlas ne s'appuie pas sur le grand dictionnaire des proverbes somalis de Georgi Kapchits (1998).",
+      note: "Nous ne connaissons ce proverbe en somali que par un blog personnel. Ce blog le rend par l'équivalent anglais « Lies have short legs », pas mot à mot, et ne cite aucun recueil. Nous ne nous appuyons pas sur le grand dictionnaire des proverbes somalis de Georgi Kapchits (1998).",
     },
     entities: [
       {
@@ -2821,7 +2821,7 @@ export const PROVERBS: Proverb[] = [
       "Un jeune tenu à l'écart de sa communauté risque de chercher sa place par la destruction.",
     origin: {
       status: "unestablished",
-      note: "La phrase circule en anglais comme « proverbe africain », sans peuple, sans langue et sans texte original. L'atlas ne connaît aucune source publiée qui en atteste l'usage dans une langue africaine.",
+      note: "La phrase circule en anglais comme « proverbe africain », sans peuple, sans langue et sans texte original. Nous ne connaissons aucune source publiée qui en atteste l'usage dans une langue africaine.",
     },
     entities: [],
     sources: [

@@ -187,11 +187,11 @@ describe("the families facet", () => {
   it("renders its reading and controls in English", async () => {
     render(await renderRoute({}, "en"));
 
-    expect(screen.getByText(/16 families in the atlas/)).toBeInTheDocument();
+    expect(screen.getByText(/16 families documented/)).toBeInTheDocument();
     expect(
       screen.getByRole("searchbox", { name: "Search language families" })
     ).toHaveAttribute("placeholder", "Family name or identifier");
-    expect(screen.getByText(/320 peoples in the atlas/)).toBeInTheDocument();
+    expect(screen.getByText(/320 documented peoples/)).toBeInTheDocument();
   });
 
   // @req REQ-117

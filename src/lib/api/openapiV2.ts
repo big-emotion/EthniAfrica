@@ -4506,7 +4506,7 @@ const options: swaggerJsdoc.Options = {
                 null,
               ],
               description:
-                "What changed in the corpus, separately from what the atlas thought of the report. Written by the publication of a correction, never by a moderator decision. NULL while the report is open or under review.",
+                "What changed in the corpus, separately from what the moderators thought of the report. Written by the publication of a correction, never by a moderator decision. NULL while the report is open or under review.",
               example: null,
             },
             remediation_published_at: {

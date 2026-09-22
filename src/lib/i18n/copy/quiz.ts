@@ -20,7 +20,7 @@ const en = {
   scopeThemePanelHint: "Choose a topic, or play the whole country.",
   scopeThemePanelNoTheme: "Play without a theme",
   scopeMixedHint:
-    "Eight questions drawn from the whole atlas, from the best-known peoples to the least documented.",
+    "Eight questions drawn from all our entries, from the best-known peoples to the least documented.",
   scopeRandomHint: "Eight questions at random, in no order of difficulty.",
   leaveSession: "Leave the quiz",
   seeScoreCard: "See the score card",

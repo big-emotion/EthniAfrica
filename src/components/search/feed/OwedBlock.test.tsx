@@ -77,7 +77,7 @@ describe("OwedBlock", () => {
     const layout = screen.getByTestId("feed-block-owed").firstElementChild;
     expect(layout).not.toHaveClass("min-[1200px]:grid-cols-2");
     expect(
-      screen.getByRole("heading", { name: "What the atlas does not say" })
+      screen.getByRole("heading", { name: "What we do not know yet" })
     ).toBeVisible();
     expect(
       screen.getByText("A declared silence, not an oversight.")
@@ -138,7 +138,7 @@ describe("OwedBlock", () => {
     const layout = screen.getByTestId("feed-block-owed").firstElementChild;
     expect(layout).not.toHaveClass("min-[1200px]:grid-cols-2");
     expect(
-      screen.queryByText("Ce que l’atlas ne dit pas")
+      screen.queryByText("Ce que nous ne savons pas encore")
     ).not.toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Contribute" })).toHaveAttribute(
       "data-flag-kind",

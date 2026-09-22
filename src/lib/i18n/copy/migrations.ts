@@ -4,7 +4,7 @@ const en = {
   navLabel: "Migrations",
   pageTitle: "Timeline of migrations",
   pageSubtitle:
-    "The chronological account of every migration, settlement and trade route documented in the atlas.",
+    "The chronological account of every migration, settlement and trade route documented here.",
   tabs: {
     map: "Map",
     narrative: "Narrative",
@@ -34,7 +34,7 @@ const fr: MigrationsCopy = {
   navLabel: "Migrations",
   pageTitle: "Frise des migrations",
   pageSubtitle:
-    "Le récit chronologique de chaque migration, peuplement et route commerciale documenté dans l'atlas.",
+    "Le récit chronologique de chaque migration, peuplement et route commerciale documenté ici.",
   tabs: {
     map: "Carte",
     narrative: "Récit",

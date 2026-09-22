@@ -27,9 +27,7 @@ const styleSheetOf = (container: HTMLElement) =>
 describe("DidYouKnowLoader (REQ-104 — the wait is spent reading)", () => {
   // @req REQ-145
   it("localizes the loading chrome in English", () => {
-    render(
-      <DidYouKnowLoader language="en" fact={FACT} label="Loading the atlas" />
-    );
+    render(<DidYouKnowLoader language="en" fact={FACT} label="Loading" />);
 
     expect(screen.getByText("Did you know?")).toBeVisible();
     expect(screen.getByText("Country")).toBeVisible();
@@ -38,11 +36,9 @@ describe("DidYouKnowLoader (REQ-104 — the wait is spent reading)", () => {
 
   // @req REQ-104
   it("announces the wait to assistive technology with the label it was given", () => {
-    render(<DidYouKnowLoader fact={FACT} label="Chargement de l'atlas" />);
+    render(<DidYouKnowLoader fact={FACT} label="Chargement" />);
 
-    expect(screen.getByRole("status")).toHaveTextContent(
-      "Chargement de l'atlas"
-    );
+    expect(screen.getByRole("status")).toHaveTextContent("Chargement");
   });
 
   // @req REQ-104
@@ -130,11 +126,9 @@ describe("DidYouKnowLoader (REQ-104 — the wait is spent reading)", () => {
   it("still reports the wait when the bank has no fact to give", () => {
     // An empty bank must not turn a wait into a blank screen: the reader is
     // waiting whether or not there is something to read.
-    render(<DidYouKnowLoader fact={null} label="Chargement de l'atlas" />);
+    render(<DidYouKnowLoader fact={null} label="Chargement" />);
 
-    expect(screen.getByRole("status")).toHaveTextContent(
-      "Chargement de l'atlas"
-    );
+    expect(screen.getByRole("status")).toHaveTextContent("Chargement");
     expect(screen.queryByText("Saviez-vous que")).not.toBeInTheDocument();
   });
 
