@@ -45,14 +45,16 @@ rule applies there once that skill is updated to write to this ledger.
 ## The fixed format
 
 - **Three publication days**: Monday, Wednesday, Friday.
-- **Five subjects per publication day**, at the cadence stated below — not
-  from day one.
+- **A connected subject sequence with flexible depth**, at the cadence stated
+  below. There is no fixed quota of new subjects per day or per week.
 - **One question, five typologies**: every subject answers « D'où vient le nom
   X ? », where X is a **peuple**, a **pays**, un **patronyme**, un **lieu**, or
   une **langue** — plus one exception, **mot** (see "The mot exception").
-- **Per subject: one video and one carousel.** The video walks the
-  appellations — exonyms and endonyms — back up their history. The carousel
-  opens on a myth to take apart, ten images maximum.
+- **Per subject: a video, plus a carousel only when an attested myth supports
+  it**, per GABARITS §1 bis. The video walks the appellations back through their
+  history. The carousel opens on a sourced myth, ten images maximum. A subject
+  may need several distinct episodes; do not manufacture a myth or repeat an
+  answer to fill a weekly count.
 - **Numbered by episode, per typologie** — the 7th `langue` episode, the 3rd
   `pays` episode — never a single counter shared across typologies, so a
   reader can follow one series without the others' numbers interrupting it.
@@ -112,24 +114,32 @@ What differs from the five, and nothing else does:
 `question` and `myth` still end in `?` and every other rule of this file
 applies unchanged.
 
-## The cadence ramp
+## Current cadence — operator revision, 2026-09-22
 
-Ten renders a publication day (five subjects × two formats), thirty a week, is
-the target — not the starting point. The private production library holds 83
-posts in total as of this ledger's creation; jumping straight to the target
-cadence would outrun both editorial research and rendering capacity before
-either has been measured at that rate.
+**Monday, Wednesday and Friday remain the publication appointments. The ordered
+subject sequence governs their contents, not a fixed number of new subjects.**
+The operator explicitly left the choice of two or three weekly subjects open:
+a complex subject may occupy several appointments or return in a later chapter.
 
-| Stage         | Cadence                                 | Advance to the next stage when                                                                     |
-| ------------- | --------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| 0 — bootstrap | 1 subject, filed by hand, no fixed day  | The schema, the gate and the site projection have proven themselves end to end on one real subject |
-| 1             | Monday only, 2 subjects/day             | Three publication days run with zero gate failures                                                 |
-| 2             | Monday + Wednesday, 3 subjects/day      | Stage 1's rate is sustained for two consecutive weeks with no backlog of unfiled publication URLs  |
-| 3             | Monday/Wednesday/Friday, 5 subjects/day | This is the target cadence — stays here                                                            |
+Aim for **four to six distinct editorial pieces per week**, where research and
+capacity support them, including useful companion formats. A cross-post of the
+same video on six networks counts as one produced piece. Do not fabricate a myth,
+split a thin answer, or introduce an unrelated subject to fill the envelope.
+Publish fewer pieces if the evidence is not ready; no catch-up burst is required.
 
-The **current stage is 0.** Advancing a stage is an
-`/ethniafrica-content-strategist` decision, recorded in that skill's own dated
-report, and is a one-line edit to this table — never a code change.
+The active sequence starts with the project-intention essay, then **Mali →
+Manden/Mandé/mandingue → Dioula → Traoré → Keïta/Coulibaly → Macina/Diina**.
+The [dated strategy roadmap](../editorial/strategy/roadmap-2026-q4.md) supplies
+planning slots and reviews; the [evidence note](../editorial/strategy/evidence-2026-09-22.md)
+records the measurements and limitations behind them.
+
+This decision **supersedes the September 20 ramp**, whose target was five
+subjects per publication day and whose recorded stage remained bootstrap 0.
+It is a replacement of the volume policy, not an assertion that any old stage's
+validation criteria passed. Source readiness, actual publication URLs and the
+production-ledger gate remain required; a planned date is never a published row.
+The previous ramp is preserved in Git history rather than maintained as a second
+active cadence table.
 
 ## Filing an entry
 
