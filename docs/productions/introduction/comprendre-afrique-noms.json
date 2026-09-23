@@ -10,11 +10,38 @@
   "subjects": [],
   "sitePath": "/fr/about",
   "publications": [
-    { "network": "tiktok", "format": "video" },
-    { "network": "instagram", "format": "video" },
-    { "network": "facebook", "format": "video" },
-    { "network": "youtube", "format": "video" },
-    { "network": "linkedin", "format": "video" },
-    { "network": "x", "format": "video" }
+    {
+      "network": "tiktok",
+      "format": "video",
+      "publishedAt": "2026-09-23",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7688501597739011350"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "publishedAt": "2026-09-23",
+      "url": "https://www.instagram.com/reel/Ddm53XToG7y/"
+    },
+    {
+      "network": "facebook",
+      "format": "video",
+      "publishedAt": "2026-09-23",
+      "url": "https://www.facebook.com/share/v/1FUjcEzAw7/"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "publishedAt": "2026-09-23",
+      "url": "https://youtube.com/shorts/tcmstnubVjE"
+    },
+    {
+      "network": "linkedin",
+      "format": "video",
+      "publishedAt": "2026-09-23"
+    },
+    {
+      "network": "x",
+      "format": "video"
+    }
   ]
 }
