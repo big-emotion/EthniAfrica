@@ -69,6 +69,32 @@ describe("EmbedFacade", () => {
     expect(playButton()).toBeInTheDocument();
   });
 
+  // The immersive reader's card is already the 9:16 frame; the facade marks
+  // itself so the stage can take the whole box instead of its own small one.
+  // @req REQ-156
+  it("defaults to its own boxed stage and switches to filling the frame", () => {
+    const { container, rerender } = renderFacade();
+    expect(container.firstElementChild).toHaveAttribute(
+      "data-layout",
+      "inline"
+    );
+
+    rerender(
+      <ConsentProvider>
+        <EmbedFacade
+          language="fr"
+          name={NAME}
+          poster={poster}
+          watchUrl={WATCH_URL}
+          embed={{ provider: "youtube", id: "vESK91smqxQ" }}
+          fill
+        />
+        <ConsentPanel />
+      </ConsentProvider>
+    );
+    expect(container.firstElementChild).toHaveAttribute("data-layout", "fill");
+  });
+
   // The reader must hear what the click does before making it, and must be
   // able to decline and still watch: a consent that closes the piece to
   // whoever refuses is a toll gate.
@@ -143,6 +169,35 @@ describe("EmbedFacade", () => {
 
     expect(container.querySelector("iframe")).toBeNull();
     expect(document.activeElement).toBe(playButton());
+  });
+
+  // A reader who swipes to the next publication must not keep hearing this
+  // one: the deck renders every card at once, so nothing else stops it.
+  // @req REQ-181
+  it("stops playback when the card becomes inactive, without stealing focus", async () => {
+    const user = userEvent.setup();
+    const { container, rerender } = renderFacade({ active: true });
+    await user.click(playButton());
+    expect(container.querySelector("iframe")).not.toBeNull();
+
+    rerender(
+      <ConsentProvider>
+        <EmbedFacade
+          language="fr"
+          name={NAME}
+          poster={poster}
+          watchUrl={WATCH_URL}
+          embed={{ provider: "youtube", id: "vESK91smqxQ" }}
+          active={false}
+        />
+        <ConsentPanel />
+      </ConsentProvider>
+    );
+
+    expect(container.querySelector("iframe")).toBeNull();
+    // The reader never asked to close it, so focus stays where it was
+    // (off screen, on the inactive card) rather than jumping to this button.
+    expect(document.activeElement).not.toBe(playButton());
   });
 
   // Withdrawal must take effect, and must not leave a switch that re-arms

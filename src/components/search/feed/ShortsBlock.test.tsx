@@ -64,18 +64,23 @@ describe("ShortsBlock", () => {
       "min-[1200px]:mt-afh-lg"
     );
     const shortLink = screen.getByRole("link", { name: /Mande/ });
-    expect(shortLink).toHaveClass("w-[130px]", "min-[1200px]:w-[160px]");
+    expect(shortLink).toHaveClass("w-[180px]", "min-[1200px]:w-[256px]");
     expect(shortLink.closest("li")).toHaveClass("snap-start");
-    expect(shortLink.firstElementChild).toHaveClass(
-      "h-[231px]",
-      "min-[1200px]:h-[284px]"
-    );
+    // Height follows the 9:16 ratio rather than a hand-picked pixel value, so
+    // the poster stays proportional at every width in between.
+    expect(shortLink.firstElementChild).toHaveClass("aspect-[9/16]");
     expect(
       shortLink.firstElementChild?.querySelector('[aria-hidden="true"]')
-    ).toHaveClass("size-8", "min-[1200px]:size-9");
+    ).toHaveClass("size-[44px]", "min-[1200px]:size-[58px]");
     expect(
       screen.getByRole("button", { name: "Proposer une source" })
     ).toHaveClass("min-h-11");
+    // The dashed empty slot is a card of the same shelf: it never reads
+    // smaller than the shorts sitting beside it.
+    const emptySlotBox = screen
+      .getByRole("button", { name: "Proposer une source" })
+      .closest("li");
+    expect(emptySlotBox).toHaveClass("w-[180px]", "min-[1200px]:w-[256px]");
     expect(screen.getByText("Même famille de langues")).toHaveAttribute(
       "data-companion-relation",
       "linked-family"
@@ -104,7 +109,7 @@ describe("ShortsBlock", () => {
 
     const card = screen
       .getAllByRole("link")
-      .find((link) => link.className.includes("w-[130px]"));
+      .find((link) => link.className.includes("w-[180px]"));
     expect(card).toHaveAttribute(
       "href",
       "/fr/decouvertes/origine-du-nom-mande"
