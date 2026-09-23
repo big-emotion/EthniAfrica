@@ -971,6 +971,47 @@ describe("Découvertes video", () => {
     ).toBeInTheDocument();
   });
 
+  // The card is the picture, the way a photograph or a carousel already is
+  // on every other kind of card: the player is not a box sitting inside the
+  // caption column.
+  // @req REQ-156
+  it("plays the production as the card's own picture, not inside the caption", () => {
+    const { container } = renderVideo(video);
+
+    const stage = container.querySelector('[data-layout="fill"]');
+    expect(stage).not.toBeNull();
+    const credit = screen.getByRole("link", { name: "CC BY-SA 4.0" });
+    // The caption (title, description, credit) stays where every other kind
+    // of card keeps it; the player never wraps it.
+    expect(stage?.contains(credit)).toBe(false);
+  });
+
+  // The deck mounts every card at once, so nothing else stops a video that
+  // has scrolled out of view.
+  // @req REQ-156
+  it("stops the video when the reader moves to the next publication", () => {
+    HTMLElement.prototype.scrollIntoView = vi.fn();
+    render(
+      <ConsentProvider>
+        <DiscoveryReader
+          language="fr"
+          publications={[video, proverbPublication]}
+          initialId={video.id}
+        />
+      </ConsentProvider>
+    );
+    fireEvent.click(
+      screen.getByRole("button", { name: /charge le lecteur de YouTube/i })
+    );
+    expect(document.querySelector("iframe")).not.toBeNull();
+
+    fireEvent.click(
+      screen.getByRole("button", { name: "Découverte suivante" })
+    );
+
+    expect(document.querySelector("iframe")).toBeNull();
+  });
+
   // REQ-128: author, licence and the page the piece is published on.
   // @req REQ-181
   it("credits the author and links the licence", () => {
