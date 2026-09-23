@@ -33,7 +33,12 @@
     { "network": "facebook", "format": "carrousel" },
     { "network": "youtube", "format": "carrousel" },
     { "network": "linkedin", "format": "carrousel" },
-    { "network": "tiktok", "format": "video" },
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7687892994271366422",
+      "publishedAt": "2026-09-21"
+    },
     { "network": "instagram", "format": "video" },
     { "network": "facebook", "format": "video" },
     {
