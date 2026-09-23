@@ -34,6 +34,36 @@ export const PLAFOND_SCENES = 10;
 export const PLAFOND_PHRASES_BLOC = 8;
 export const PLAFOND_EXPLICATIONS = 2;
 export const PLAFOND_PHRASES_SYNTHESE = 3;
+
+/**
+ * A patronyme has a second, distinct story: not which form is original, but
+ * what a jamu-like institution transmits — affiliation, founding narratives,
+ * the manner of transmission, as opposed to a documented individual descent.
+ * Decided by the operator 2026-09-23, on the Traoré (PAT_TRAORE) research: the
+ * comparison skeleton above cannot carry that argument without inventing an
+ * etymology or a form the sources do not give. A second, sibling skeleton,
+ * not a rewrite of the first — `TYPES` and the comparison path are unchanged.
+ *
+ * The dispatch is structural, not a flag: a `patronyme` narration that
+ * contains this exact paragraph is read against this skeleton instead
+ * (`gabarit-reel-nom.md`, « Le patronyme a deux cas »). The paragraph is
+ * fixed because it is exactly the guardrail this sub-case exists to keep —
+ * étymologie, récit fondateur, transmission, généalogie stay four distinct
+ * questions on every subject that uses it, not only this one.
+ */
+export const SYNTHESE_METHODE_QUATRE_QUESTIONS =
+  "Nous devons donc distinguer quatre questions. L'étymologie cherche l'origine du mot. Le récit fondateur raconte une origine et des liens reconnus par ceux qui le transmettent. La transmission du nom concerne la manière de le recevoir, de le porter et de le transmettre. La généalogie cherche à établir les filiations entre des personnes précises. Un patronyme seul ne démontre ni leur ascendance ni leur appartenance à un peuple.";
+export const PLAFOND_SCENES_TRANSMISSION = 12;
+export const PLANCHER_CAS_TRANSMISSION = 2;
+const RESERVE_EPISTEMIQUE =
+  /\bnous ne\b|\bn'établi\w*|\bne (?:fournit|permet(?:tent)?|suffit|rend|pouvons|peut)\b|\baucune source\b|\bne confirme\b|\bne d[ée]montr\w*/i;
+/**
+ * Dispatch reads the anchor sentence, not the whole fixed paragraph: a typo
+ * in the synthesis must still land on this skeleton, with its own named
+ * finding, rather than silently fall through to the comparison one and
+ * report unrelated errors about forms and endonyms.
+ */
+const ANCRE_SYNTHESE_METHODE = "Nous devons donc distinguer quatre questions.";
 const NOMBRES = { deux: 2, trois: 3, quatre: 4 };
 const MOTS_DU_NOMBRE = { 2: "deux", 3: "trois", 4: "quatre" };
 
@@ -383,6 +413,96 @@ function verifierClassement(paragraphe, numero, type, interieurs, tousLesNoms) {
 }
 
 /**
+ * The second patronyme skeleton: ouverture · cadrage · deux cas documentés au
+ * moins · [discussion optionnelle] · synthèse des quatre questions (fixe) ·
+ * synthèse libre · [transition vers le chapitre suivant] · clôture.
+ *
+ * What the comparison skeleton checks and this one does not, on purpose:
+ * whether a case is properly attributed, whether its hedge is the right one
+ * for its claim. A jamu-transmission subject varies too much in its number
+ * and shape of documented cases for a fixed sentence per case; the fixed
+ * points are the ones the doctrine actually requires — the methodological
+ * synthesis, word for word, and at least one epistemic reserve somewhere
+ * among the cases, so a case-only telling can't silently drop every caveat.
+ */
+function verifierPatronymeTransmission(paragraphes) {
+  const trouvailles = [];
+
+  if (paragraphes.length > PLAFOND_SCENES_TRANSMISSION) {
+    trouvailles.push(
+      trouvaille(
+        paragraphes.length,
+        "gabarit-plafond",
+        `${paragraphes.length} scènes, ${PLAFOND_SCENES_TRANSMISSION} au plus`
+      )
+    );
+  }
+
+  const dernier = paragraphes.length;
+  if (paragraphes[dernier - 1] !== CLOTURE_UNIQUE) {
+    trouvailles.push(
+      trouvaille(
+        dernier,
+        "gabarit-cloture",
+        `la dernière scène est la clôture unique, mot pour mot : « ${CLOTURE_UNIQUE} »`
+      )
+    );
+  }
+
+  const ouverture = phrasesDe(paragraphes[0] ?? "");
+  if (!ouverture.some((p) => p.endsWith("?"))) {
+    trouvailles.push(
+      trouvaille(1, "gabarit-ouverture", "l'ouverture pose une question")
+    );
+  }
+
+  const indexSynthese = paragraphes.findIndex(
+    (p) => phrasesDe(p)[0] === ANCRE_SYNTHESE_METHODE
+  );
+  if (indexSynthese === -1) {
+    trouvailles.push(
+      trouvaille(
+        dernier,
+        "gabarit-synthese-methode",
+        `une scène reprend, mot pour mot, la synthèse des quatre questions : « ${SYNTHESE_METHODE_QUATRE_QUESTIONS} »`
+      )
+    );
+    return ordonner(trouvailles, paragraphes, dernier);
+  }
+  if (paragraphes[indexSynthese] !== SYNTHESE_METHODE_QUATRE_QUESTIONS) {
+    trouvailles.push(
+      trouvaille(
+        indexSynthese + 1,
+        "gabarit-synthese-methode",
+        `la synthèse des quatre questions doit être mot pour mot : « ${SYNTHESE_METHODE_QUATRE_QUESTIONS} »`
+      )
+    );
+  }
+
+  const cas = paragraphes.slice(2, indexSynthese);
+  if (cas.length < PLANCHER_CAS_TRANSMISSION) {
+    trouvailles.push(
+      trouvaille(
+        3,
+        "gabarit-cas",
+        `au moins ${PLANCHER_CAS_TRANSMISSION} scènes de cas documentés entre le cadrage et la synthèse des quatre questions : ${cas.length} trouvée(s)`
+      )
+    );
+  }
+  if (cas.length && !cas.some((p) => RESERVE_EPISTEMIQUE.test(p))) {
+    trouvailles.push(
+      trouvaille(
+        3,
+        "gabarit-cas",
+        "au moins une scène de cas documenté porte une réserve épistémique (ce que la source ne permet pas d'établir)"
+      )
+    );
+  }
+
+  return ordonner(trouvailles, paragraphes, dernier);
+}
+
+/**
  * @param {string} narration the text of a `narration.fr.txt`, one scene per paragraph
  * @param {string} type one of TYPES
  * @returns {{paragraphe: number, regle: string, detail: string}[]}
@@ -401,6 +521,14 @@ export function verifierGabarit(narration, type) {
     .split(/\n\s*\n/)
     .map((p) => p.replace(/\s+/g, " ").trim())
     .filter(Boolean);
+
+  if (
+    type === "patronyme" &&
+    paragraphes.some((p) => phrasesDe(p)[0] === ANCRE_SYNTHESE_METHODE)
+  ) {
+    return verifierPatronymeTransmission(paragraphes);
+  }
+
   const trouvailles = [];
 
   if (paragraphes.length > PLAFOND_SCENES) {
