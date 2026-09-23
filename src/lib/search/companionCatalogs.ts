@@ -20,6 +20,8 @@ import {
   illustrationFor as defaultIllustrationFor,
   type DidYouKnowIllustration,
 } from "@/lib/home/didYouKnowIllustrations";
+import { loadProductionLedger } from "@/lib/productions/ledger";
+import { searchShortsFrom } from "@/lib/productions/toSearchShort";
 import { PROVERBS, type Proverb } from "@/lib/proverbs/proverbs";
 import type { Language } from "@/types/shared";
 import type { QuizTemplateId } from "@/types/quiz";
@@ -65,7 +67,10 @@ export interface CompanionQuizCandidate extends CompanionCatalogItem {
 }
 
 // @req REQ-180
-export const SEARCH_SHORTS: readonly SearchShort[] = DISCOVERY_VIDEOS;
+export const SEARCH_SHORTS: readonly SearchShort[] = searchShortsFrom(
+  loadProductionLedger(),
+  DISCOVERY_VIDEOS
+);
 
 function hasText(value: string | undefined): boolean {
   return Boolean(value?.trim());
