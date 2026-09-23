@@ -291,24 +291,35 @@ test("no more than ten scenes", () => {
 
 // @req REQ-032
 test("a patronyme without the four-questions synthesis reads as the comparison sub-case, and is refused there", () => {
-  // The dispatch is structural: the fixed synthesis paragraph, not a flag,
+  // The dispatch is structural: the fixed synthesis anchor, not a flag,
   // decides which patronyme sub-case governs a text (see gabarit-reel-nom.md).
-  const sansSynthese = remplacer(
-    exemple("patronyme-transmission"),
-    `${SYNTHESE_METHODE_QUATRE_QUESTIONS}\n\n`,
-    ""
-  );
-  assert.ok(regles(sansSynthese, "patronyme").length > 0);
+  const blocsSansSynthese = exemple("patronyme-transmission")
+    .split("\n\n")
+    .filter((p) => !p.startsWith(SYNTHESE_METHODE_QUATRE_QUESTIONS));
+  assert.ok(regles(blocsSansSynthese.join("\n\n"), "patronyme").length > 0);
 });
 
 // @req REQ-032
-test("the four-questions synthesis must be word for word", () => {
+test("the four-questions synthesis must start with the fixed sentence, word for word", () => {
   const alteree = remplacer(
     exemple("patronyme-transmission"),
-    "La généalogie cherche à établir les filiations entre des personnes précises.",
-    "La généalogie cherche les liens de sang entre des personnes précises."
+    "Un seul nom ne prouve pas un seul ancêtre, ni une seule origine.",
+    "Un seul nom ne prouve rien de solide sur les ancêtres."
   );
   assert.ok(regles(alteree, "patronyme").includes("gabarit-synthese-methode"));
+});
+
+// @req REQ-032
+test("a subject-specific closing sentence may follow the fixed synthesis in the same scene", () => {
+  assert.ok(
+    exemple("patronyme-transmission").includes(
+      `${SYNTHESE_METHODE_QUATRE_QUESTIONS} Le nom Kondobô n'a pas de sens connu`
+    )
+  );
+  assert.deepEqual(
+    verifierGabarit(exemple("patronyme-transmission"), "patronyme"),
+    []
+  );
 });
 
 // @req REQ-032
@@ -316,7 +327,7 @@ test("at least two documented-case scenes stand between the framing and the four
   const blocs = exemple("patronyme-transmission").split("\n\n");
   const [ouverture, cadrage, cas1, ...reste] = blocs;
   const indexSynthese = reste.findIndex((p) =>
-    p.startsWith("Nous devons donc distinguer quatre questions.")
+    p.startsWith(SYNTHESE_METHODE_QUATRE_QUESTIONS)
   );
   assert.ok(indexSynthese !== -1);
   const uneSeule = [

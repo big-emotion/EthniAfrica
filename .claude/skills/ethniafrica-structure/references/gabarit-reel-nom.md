@@ -157,40 +157,63 @@ qu'une réécriture de l'argument approuvé.
 
 **Le squelette de ce second cas, un paragraphe par scène, dans cet ordre :**
 
-| #       | Temps                             | Ce qu'il fait                                                                                                                                                                                                                        |
-| ------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1       | **Ouverture**                     | Une transition et une question ; rien de plus n'est fixé, parce que le pont vers le chapitre précédent varie d'un sujet à l'autre.                                                                                                   |
-| 2       | **Cadrage**                       | Nomme l'institution (jamu, nisba…), son mode de transmission et ce qu'elle peut porter (récits, relations).                                                                                                                          |
-| 3…n     | **Cas documentés**                | Deux au moins. Chacun nomme sa source ; **au moins un**, dans le lot, porte une réserve épistémique explicite (ce que la source ne permet pas d'établir). Une scène de discussion méthodologique peut s'y glisser, sans phrase fixe. |
-| n+1     | **Synthèse des quatre questions** | **Fixe, mot pour mot** — voir ci-dessous. C'est le garde-fou que ce cas existe pour tenir : il vaut pour tout sujet qui l'emploie, pas seulement celui qui l'a motivé.                                                               |
-| n+2     | **Synthèse**                      | Libre, trois phrases au plus — la même règle que pour tout reel (voir « Le registre » dans `SKILL.md`).                                                                                                                              |
-| n+3     | _(optionnelle)_ **Transition**    | Vers le chapitre suivant de la série, si le sujet en ouvre un.                                                                                                                                                                       |
-| dernier | **Clôture**                       | Le texte unique décidé, mot pour mot — inchangé, commun à tout reel.                                                                                                                                                                 |
+| #       | Temps                          | Ce qu'il fait                                                                                                                                                                                                                        |
+| ------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1       | **Ouverture**                  | Une transition et une question ; rien de plus n'est fixé, parce que le pont vers le chapitre précédent varie d'un sujet à l'autre.                                                                                                   |
+| 2       | **Cadrage**                    | Nomme l'institution (jamu, nisba…), son mode de transmission et ce qu'elle peut porter (récits, relations).                                                                                                                          |
+| 3…n     | **Cas documentés**             | Deux au moins. Chacun nomme sa source ; **au moins un**, dans le lot, porte une réserve épistémique explicite (ce que la source ne permet pas d'établir). Une scène de discussion méthodologique peut s'y glisser, sans phrase fixe. |
+| n+1     | **Synthèse**                   | Commence, **mot pour mot**, par la phrase fixe ci-dessous — voir plus bas pour ce qui peut la suivre, dans la même scène.                                                                                                            |
+| n+2     | _(optionnelle)_ **Transition** | Vers le chapitre suivant de la série, si le sujet en ouvre un.                                                                                                                                                                       |
+| dernier | **Clôture**                    | Le texte unique décidé, mot pour mot — inchangé, commun à tout reel.                                                                                                                                                                 |
 
 **Douze scènes au plus** (contre dix pour la comparaison de formes) : le nombre
-de cas documentés varie plus que le nombre de formes d'un nom, et le sujet qui
-a motivé ce cas en emploie douze.
+de cas documentés varie plus que le nombre de formes d'un nom. Le sujet qui a
+motivé ce cas en a d'abord employé douze puis, une fois resserré (voir plus
+bas), neuf.
 
-**La phrase fixe, à recopier mot pour mot :**
+**La phrase fixe, à recopier mot pour mot au début de la scène de synthèse :**
 
-> « Nous devons donc distinguer quatre questions. L'étymologie cherche l'origine
-> du mot. Le récit fondateur raconte une origine et des liens reconnus par ceux
-> qui le transmettent. La transmission du nom concerne la manière de le
-> recevoir, de le porter et de le transmettre. La généalogie cherche à établir
-> les filiations entre des personnes précises. Un patronyme seul ne démontre ni
-> leur ascendance ni leur appartenance à un peuple. »
+> « Un nom de famille peut donc venir de plusieurs choses. Il peut venir du sens
+> d'un mot, d'une histoire racontée, ou d'un lien créé entre deux familles. Un
+> seul nom ne prouve pas un seul ancêtre, ni une seule origine. »
 
 Elle est fixe parce qu'elle porte exactement la mise en garde qui justifie ce
-second cas — aucune date, aucun surnom, aucun mot du sujet précis ne s'y glisse,
+second cas — un nom ne prouve pas un seul ancêtre — et rien du sujet précis,
 donc rien n'empêche de la reprendre telle quelle sur un futur sujet de la même
 famille (le prochain est Keïta/Coulibaly, S5).
 
-**Le contrôleur choisit ce cas automatiquement**, à la présence de cette phrase
-(son ancre, la première phrase seule, suffit à déclencher la lecture — le reste
-du paragraphe est ensuite vérifié mot pour mot séparément, pour qu'une coquille
-tombe sur son propre écart plutôt que sur les erreurs, sans rapport, de l'autre
-gabarit). Rien ne se déclare en ligne de commande : `--type patronyme` reste le
-même argument pour les deux cas, et c'est le texte qui dit lequel il suit.
+**Une phrase de conclusion propre au sujet peut suivre, dans la même scène.**
+Décidé par l'opérateur le 2026-09-23, en retouchant le sujet qui a motivé ce
+cas : sa première rédaction — « Nous devons donc distinguer quatre
+questions… », avec le vocabulaire propre à chacune (étymologie, récit
+fondateur, transmission, généalogie) — passait les deux contrôleurs mais
+restait, de l'aveu de l'opérateur, une phrase de cours pour un public qui
+« lit le contenu pour le plaisir, pas en professionnel ». Aucun outil ne voit
+le registre d'une phrase (`ordonner()` ne vérifie que sa forme), donc rien ne
+l'aurait signalée. La phrase fixe actuelle garde le seul garde-fou qui compte
+structurellement — pas un seul ancêtre — et abandonne la taxonomie à quatre
+branches plutôt que de l'expliquer. Une scène qui s'arrêterait là resterait
+générique ; le sujet a demandé qu'elle reparte de ce qui vient d'être montré.
+Exemple : « Le nom Kondobô n'a pas de sens connu, mais plusieurs récits et
+plusieurs liens ont traversé son histoire. » Cette phrase est libre — sujet
+précis, pas de vocabulaire imposé — mais reste soumise à la lecture simple
+(sujet, verbe, complément ; vingt mots au plus), comme tout le reste de la
+scène.
+
+**Le contrôleur choisit ce cas automatiquement**, à la présence de l'ancre —
+la première phrase de la phrase fixe suffit à déclencher la lecture ; le reste
+de la phrase fixe est ensuite vérifié mot pour mot, en tête de la scène,
+tolérant tout ce qui la suit dans le même paragraphe. Une coquille dans la
+phrase fixe tombe donc sur son propre écart, plutôt que sur les erreurs, sans
+rapport, de l'autre gabarit. Rien ne se déclare en ligne de commande :
+`--type patronyme` reste le même argument pour les deux cas, et c'est le texte
+qui dit lequel il suit.
+
+**Le pont vers le chapitre suivant reste optionnel, et son absence est un choix
+éditorial, pas un défaut.** Le sujet qui a motivé ce cas le portait dans sa
+première rédaction (douze scènes) et l'a retiré dans la seconde (neuf scènes),
+sur instruction de l'opérateur : resserrer la pièce sur ce qu'elle montre,
+plutôt que sur ce que la série montrera ensuite.
 
 **Ce que ce cas ne vérifie pas**, volontairement : si un cas documenté est bien
 attribué, si sa réserve épistémique est la bonne pour ce qu'il affirme. Le

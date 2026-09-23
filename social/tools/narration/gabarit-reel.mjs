@@ -44,15 +44,21 @@ export const PLAFOND_PHRASES_SYNTHESE = 3;
  * etymology or a form the sources do not give. A second, sibling skeleton,
  * not a rewrite of the first — `TYPES` and the comparison path are unchanged.
  *
- * The dispatch is structural, not a flag: a `patronyme` narration that
- * contains this exact paragraph is read against this skeleton instead
- * (`gabarit-reel-nom.md`, « Le patronyme a deux cas »). The paragraph is
- * fixed because it is exactly the guardrail this sub-case exists to keep —
- * étymologie, récit fondateur, transmission, généalogie stay four distinct
- * questions on every subject that uses it, not only this one.
+ * The dispatch is structural, not a flag: a `patronyme` narration whose
+ * synthesis scene starts with this fixed sentence is read against this
+ * skeleton instead (`gabarit-reel-nom.md`, « Le patronyme a deux cas »).
+ *
+ * Revised the same day, on the same subject: the first wording (« Nous
+ * devons donc distinguer quatre questions… ») tested clean on the checkers
+ * but read as a lecture to an audience the operator described as reading for
+ * pleasure, not as specialists — a plain-language problem the tooling here
+ * cannot see (`ordonner()` only checks sentence shape, never register). This
+ * wording keeps the one guardrail that actually matters structurally — a
+ * name does not prove a single ancestor — and drops the four-way taxonomy's
+ * own vocabulary (étymologie, généalogie, filiations) rather than explain it.
  */
 export const SYNTHESE_METHODE_QUATRE_QUESTIONS =
-  "Nous devons donc distinguer quatre questions. L'étymologie cherche l'origine du mot. Le récit fondateur raconte une origine et des liens reconnus par ceux qui le transmettent. La transmission du nom concerne la manière de le recevoir, de le porter et de le transmettre. La généalogie cherche à établir les filiations entre des personnes précises. Un patronyme seul ne démontre ni leur ascendance ni leur appartenance à un peuple.";
+  "Un nom de famille peut donc venir de plusieurs choses. Il peut venir du sens d'un mot, d'une histoire racontée, ou d'un lien créé entre deux familles. Un seul nom ne prouve pas un seul ancêtre, ni une seule origine.";
 export const PLAFOND_SCENES_TRANSMISSION = 12;
 export const PLANCHER_CAS_TRANSMISSION = 2;
 const RESERVE_EPISTEMIQUE =
@@ -63,7 +69,8 @@ const RESERVE_EPISTEMIQUE =
  * finding, rather than silently fall through to the comparison one and
  * report unrelated errors about forms and endonyms.
  */
-const ANCRE_SYNTHESE_METHODE = "Nous devons donc distinguer quatre questions.";
+const ANCRE_SYNTHESE_METHODE =
+  "Un nom de famille peut donc venir de plusieurs choses.";
 const NOMBRES = { deux: 2, trois: 3, quatre: 4 };
 const MOTS_DU_NOMBRE = { 2: "deux", 3: "trois", 4: "quatre" };
 
@@ -469,12 +476,14 @@ function verifierPatronymeTransmission(paragraphes) {
     );
     return ordonner(trouvailles, paragraphes, dernier);
   }
-  if (paragraphes[indexSynthese] !== SYNTHESE_METHODE_QUATRE_QUESTIONS) {
+  if (
+    !paragraphes[indexSynthese].startsWith(SYNTHESE_METHODE_QUATRE_QUESTIONS)
+  ) {
     trouvailles.push(
       trouvaille(
         indexSynthese + 1,
         "gabarit-synthese-methode",
-        `la synthèse des quatre questions doit être mot pour mot : « ${SYNTHESE_METHODE_QUATRE_QUESTIONS} »`
+        `la synthèse commence, mot pour mot, par : « ${SYNTHESE_METHODE_QUATRE_QUESTIONS} » — une phrase de conclusion propre au sujet peut suivre dans la même scène`
       )
     );
   }
