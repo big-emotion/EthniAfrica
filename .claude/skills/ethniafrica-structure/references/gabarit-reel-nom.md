@@ -127,16 +127,80 @@ contrôle de lecture ne s'applique pas à cette scène.
 | **Lieu** (ville, région) | le nom d'usage des habitants                                 | les noms administratifs, coloniaux ou des voisins                 | les cartes et leurs graphies                   | les renommages, racontés dans les blocs d'ailleurs         |
 | **Langue**               | le nom que ses locuteurs lui donnent                         | les noms donnés par les voisins, les linguistes, l'administration | les préfixes et suffixes ajoutés ou retirés    | la première mention écrite                                 |
 
-Le **patronyme** a son vocabulaire : ouverture « Un même nom de famille prend
-toujours plusieurs formes. Nous cherchons la forme de la langue d'origine. L'état
-civil en a créé d'autres, et certaines sont devenues plus courantes. » ; blocs
-« X est la forme d'origine. » puis « Y est une forme transformée. » ; classement
-« La forme d'origine est X. Les formes Y et Z s'en éloignent. » Une seule forme
-d'origine.
+Le **patronyme**, dans ce premier cas — la comparaison de formes — a son
+vocabulaire : ouverture « Un même nom de famille prend toujours plusieurs
+formes. Nous cherchons la forme de la langue d'origine. L'état civil en a créé
+d'autres, et certaines sont devenues plus courantes. » ; blocs « X est la forme
+d'origine. » puis « Y est une forme transformée. » ; classement « La forme
+d'origine est X. Les formes Y et Z s'en éloignent. » Une seule forme d'origine.
+**Un patronyme qui ne compare aucune forme suit le second cas, plus bas** («
+Le patronyme a deux cas »).
 
 Le **piège propre à la langue** est de confondre la langue et son peuple ; le
 piège propre au **lieu** est de croire que le nom officiel est le nom des
 habitants.
+
+## Le patronyme a deux cas
+
+Décidé par l'opérateur le 2026-09-23, sur le sujet Traoré (S4, `PAT_TRAORE`).
+Le squelette ci-dessus ne raconte qu'**une** histoire de patronyme : laquelle,
+entre plusieurs formes d'un même nom, est l'origine et laquelle en est issue.
+Un patronyme ouest-africain en raconte souvent une seconde, qu'aucune
+comparaison de graphies ne couvre : ce qu'un nom de clan — un jamu ou une
+institution comparable — transmet socialement, à travers des récits fondateurs,
+un mode de transmission et des relations reconnues entre groupes, **sans jamais
+en déduire une généalogie individuelle**. Le sujet Traoré ne comparait aucune
+forme ; le forcer dans le squelette « forme d'origine / forme transformée »
+aurait exigé d'inventer une étymologie ou une forme que les sources ne
+donnaient pas — refusé par l'opérateur, qui a demandé un second cas plutôt
+qu'une réécriture de l'argument approuvé.
+
+**Le squelette de ce second cas, un paragraphe par scène, dans cet ordre :**
+
+| #       | Temps                             | Ce qu'il fait                                                                                                                                                                                                                        |
+| ------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1       | **Ouverture**                     | Une transition et une question ; rien de plus n'est fixé, parce que le pont vers le chapitre précédent varie d'un sujet à l'autre.                                                                                                   |
+| 2       | **Cadrage**                       | Nomme l'institution (jamu, nisba…), son mode de transmission et ce qu'elle peut porter (récits, relations).                                                                                                                          |
+| 3…n     | **Cas documentés**                | Deux au moins. Chacun nomme sa source ; **au moins un**, dans le lot, porte une réserve épistémique explicite (ce que la source ne permet pas d'établir). Une scène de discussion méthodologique peut s'y glisser, sans phrase fixe. |
+| n+1     | **Synthèse des quatre questions** | **Fixe, mot pour mot** — voir ci-dessous. C'est le garde-fou que ce cas existe pour tenir : il vaut pour tout sujet qui l'emploie, pas seulement celui qui l'a motivé.                                                               |
+| n+2     | **Synthèse**                      | Libre, trois phrases au plus — la même règle que pour tout reel (voir « Le registre » dans `SKILL.md`).                                                                                                                              |
+| n+3     | _(optionnelle)_ **Transition**    | Vers le chapitre suivant de la série, si le sujet en ouvre un.                                                                                                                                                                       |
+| dernier | **Clôture**                       | Le texte unique décidé, mot pour mot — inchangé, commun à tout reel.                                                                                                                                                                 |
+
+**Douze scènes au plus** (contre dix pour la comparaison de formes) : le nombre
+de cas documentés varie plus que le nombre de formes d'un nom, et le sujet qui
+a motivé ce cas en emploie douze.
+
+**La phrase fixe, à recopier mot pour mot :**
+
+> « Nous devons donc distinguer quatre questions. L'étymologie cherche l'origine
+> du mot. Le récit fondateur raconte une origine et des liens reconnus par ceux
+> qui le transmettent. La transmission du nom concerne la manière de le
+> recevoir, de le porter et de le transmettre. La généalogie cherche à établir
+> les filiations entre des personnes précises. Un patronyme seul ne démontre ni
+> leur ascendance ni leur appartenance à un peuple. »
+
+Elle est fixe parce qu'elle porte exactement la mise en garde qui justifie ce
+second cas — aucune date, aucun surnom, aucun mot du sujet précis ne s'y glisse,
+donc rien n'empêche de la reprendre telle quelle sur un futur sujet de la même
+famille (le prochain est Keïta/Coulibaly, S5).
+
+**Le contrôleur choisit ce cas automatiquement**, à la présence de cette phrase
+(son ancre, la première phrase seule, suffit à déclencher la lecture — le reste
+du paragraphe est ensuite vérifié mot pour mot séparément, pour qu'une coquille
+tombe sur son propre écart plutôt que sur les erreurs, sans rapport, de l'autre
+gabarit). Rien ne se déclare en ligne de commande : `--type patronyme` reste le
+même argument pour les deux cas, et c'est le texte qui dit lequel il suit.
+
+**Ce que ce cas ne vérifie pas**, volontairement : si un cas documenté est bien
+attribué, si sa réserve épistémique est la bonne pour ce qu'il affirme. Le
+nombre et la forme des cas varient trop d'un sujet à l'autre pour une phrase
+fixe par cas, à la différence des formes d'un nom (deux à quatre, toujours).
+Cela reste à l'auteur et à la validation de l'opérateur, comme le reste du
+gabarit.
+
+Exemple fictif, modèle à reproduire :
+`social/tools/narration/exemples/patronyme-transmission.fr.txt`.
 
 ## Ce que le gabarit ne couvre pas
 
@@ -186,6 +250,7 @@ et à la validation de l'opérateur.
 
 Fictifs — noms, dates et sens inventés, à ne jamais publier :
 `social/tools/narration/exemples/peuple.fr.txt`, `peuple-dialectes.fr.txt`
-(plusieurs endonymes), `pays.fr.txt`, `patronyme.fr.txt`, `lieu.fr.txt`,
-`langue.fr.txt`. Ils servent aussi de cas de test au contrôleur : une phrase fixe
-modifiée ici fait échouer la suite.
+(plusieurs endonymes), `pays.fr.txt`, `patronyme.fr.txt` (comparaison de
+formes), `patronyme-transmission.fr.txt` (second cas patronyme, ci-dessus),
+`lieu.fr.txt`, `langue.fr.txt`. Ils servent aussi de cas de test au contrôleur :
+une phrase fixe modifiée ici fait échouer la suite.
