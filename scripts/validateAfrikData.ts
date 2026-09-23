@@ -4778,7 +4778,10 @@ const STRICT_MODEL_KINDS: Record<
 export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   Record<StrictModelKind, number>
 > = {
-  peuple: 7048,
+  // 7048 -> 7039 on 2026-09-23: PPL_DYULA.json deleted (accidental duplicate
+  // of PPL_DIOULA, merged into it — see docs/editorial for the classification
+  // and demography ledger entries removed in the same change).
+  peuple: 7039,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next

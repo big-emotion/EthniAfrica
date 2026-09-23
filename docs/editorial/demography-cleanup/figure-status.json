@@ -1638,15 +1638,6 @@
     "derivable": false
   },
   {
-    "id": "PPL_DYULA",
-    "totalPopulation": 5000000,
-    "signals": [],
-    "speakerCountOnly": true,
-    "citesJoshuaProject": true,
-    "citesWikipedia": false,
-    "derivable": false
-  },
-  {
     "id": "PPL_EBIRA",
     "totalPopulation": 2700000,
     "signals": ["census", "projection"],
