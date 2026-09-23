@@ -71,6 +71,18 @@ export interface DiscoveryPublication {
       height: number;
       alt: Record<Language, string>;
     }>;
+    /**
+     * The carousel's original soundtrack, self-hosted (DEC-064: the site
+     * embeds no platform player for carousels — TikTok's own measured no
+     * cleaner than the video embed DEC-059 already rejected). Absent when no
+     * licence covers reusing the track here; REQ-185 requires that absence to
+     * degrade to no control, never a broken one.
+     */
+    audio?: {
+      src: string;
+      credit: string;
+      licenceUrl?: string;
+    };
   };
   // The fields below belong to `image` publications only (DEC-053).
   collection?: "autonymes" | "traversees" | "figures-et-moments";

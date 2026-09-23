@@ -1,0 +1,27 @@
+{
+  "campaign": "cote-divoire-bouet-willaumez",
+  "typologie": "pays",
+  "episode": 3,
+  "question": {
+    "fr": "D'où vient le nom Côte d'Ivoire ?"
+  },
+  "myth": {
+    "fr": "Le commandant Bouët-Willaumez a-t-il inventé la Côte d'Ivoire ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "CIV",
+      "label": { "fr": "Côte d'Ivoire" }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/CIV",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7685531757302549782",
+      "publishedAt": "2026-09-15"
+    }
+  ]
+}

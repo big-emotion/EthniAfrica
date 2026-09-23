@@ -109,7 +109,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
         "No name was searched: these entries only share this filter.",
     },
     shelves: {
-      shorts: "In under one minute",
+      shorts: "Videos",
       plates: "Stories and proverbs",
       quiz: "Test what you have read",
       images: "In pictures",
@@ -200,7 +200,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
         "Aucun nom n’a été cherché : ces fiches partagent seulement ce filtre.",
     },
     shelves: {
-      shorts: "En moins d’une minute",
+      shorts: "Les vidéos",
       plates: "Récits et proverbes",
       quiz: "Vérifier ce que vous avez lu",
       images: "En images",

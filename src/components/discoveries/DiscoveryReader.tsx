@@ -54,6 +54,7 @@ import {
 } from "@/components/layout/SocialGlyphs";
 import type { Language } from "@/types/shared";
 
+import { CarouselAudioControl } from "@/components/discoveries/CarouselAudioControl";
 import { DiscoveryDestinations } from "@/components/discoveries/DiscoveryDestinations";
 import { DiscoveryDownloads } from "./DiscoveryDownloads";
 import styles from "./DiscoveryReader.module.css";
@@ -445,33 +446,42 @@ export function DiscoveryReader({
               aria-label={entry.title[language]}
             >
               {entry.carousel && !failedImageIds.has(entry.id) ? (
-                <div
-                  className={styles.carousel}
-                  role="group"
-                  aria-label={words.carouselLabel}
-                  ref={(node) => {
-                    trackRefs.current[entry.id] = node;
-                  }}
-                  onScroll={() => settleFrame(entry)}
-                >
-                  {entry.carousel.frames.map((frame) => (
-                    <Image
-                      className={styles.carouselFrame}
-                      key={frame.src}
-                      src={frame.src}
-                      alt={frame.alt[language]}
-                      width={frame.width}
-                      height={frame.height}
-                      unoptimized
-                      priority={index === 0}
-                      onError={() =>
-                        setFailedImageIds((current) =>
-                          new Set(current).add(entry.id)
-                        )
-                      }
+                <>
+                  <div
+                    className={styles.carousel}
+                    role="group"
+                    aria-label={words.carouselLabel}
+                    ref={(node) => {
+                      trackRefs.current[entry.id] = node;
+                    }}
+                    onScroll={() => settleFrame(entry)}
+                  >
+                    {entry.carousel.frames.map((frame) => (
+                      <Image
+                        className={styles.carouselFrame}
+                        key={frame.src}
+                        src={frame.src}
+                        alt={frame.alt[language]}
+                        width={frame.width}
+                        height={frame.height}
+                        unoptimized
+                        priority={index === 0}
+                        onError={() =>
+                          setFailedImageIds((current) =>
+                            new Set(current).add(entry.id)
+                          )
+                        }
+                      />
+                    ))}
+                  </div>
+                  <div className={styles.audioControl}>
+                    <CarouselAudioControl
+                      language={language}
+                      src={entry.carousel.audio?.src}
+                      active={index === activeIndex}
                     />
-                  ))}
-                </div>
+                  </div>
+                </>
               ) : entry.video ? (
                 // The production is the card's own picture, exactly as a
                 // photograph or a carousel is on every other kind of card —
