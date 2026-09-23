@@ -64,3 +64,16 @@ inferences, generalized cultural practices and polity chronologies still require
 their own source review. They must not be treated as newly verified by this change.
 The original etymology, first naming event and a universal collective self-name
 remain unestablished. The N'ko case cannot stand for all Manding or Mande speakers.
+
+## Approved S2 structure handoff
+
+The operator subsequently approved the complete nine-scene narration and screen
+titles. The workshop now uses that exact text, with the acknowledgement in scene 1
+and the shared/distinct identity principle in scene 7; the previous version is
+archived. The existing private-library post remains at `a-produire`.
+
+The existing language episode 3 is retained. Its `myth` question now addresses
+our own documented exclusive linguistic assertion rather than implying an
+unestablished audience belief that all three names are interchangeable. The
+editorial verdict remains explanatory, and no carousel or publication is added.
+Assets, licences, measured duration and a fresh message audit remain pending.
