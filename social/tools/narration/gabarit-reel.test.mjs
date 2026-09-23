@@ -2,17 +2,12 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 
-import {
-  CLOTURE_UNIQUE,
-  SYNTHESE_METHODE_QUATRE_QUESTIONS,
-  TYPES,
-  verifierGabarit,
-} from "./gabarit-reel.mjs";
+import { CLOTURE_UNIQUE, TYPES, verifierGabarit } from "./gabarit-reel.mjs";
 
 const exemple = (nom) =>
   readFileSync(new URL(`./exemples/${nom}.fr.txt`, import.meta.url), "utf-8");
-const regles = (texte, type) =>
-  verifierGabarit(texte, type).map((t) => t.regle);
+const regles = (texte, type, cas) =>
+  verifierGabarit(texte, type, cas).map((t) => t.regle);
 
 /** Fails loudly when the fragment is absent, so a mutation never silently no-ops. */
 function remplacer(texte, avant, apres) {
@@ -25,7 +20,7 @@ test("every canonical example passes its own type", () => {
   const parType = {
     peuple: ["peuple", "peuple-dialectes"],
     pays: ["pays"],
-    patronyme: ["patronyme", "patronyme-transmission"],
+    patronyme: ["patronyme"],
     lieu: ["lieu"],
     langue: ["langue"],
   };
@@ -38,6 +33,14 @@ test("every canonical example passes its own type", () => {
       );
     }
   }
+  assert.deepEqual(
+    verifierGabarit(
+      exemple("patronyme-transmission"),
+      "patronyme",
+      "transmission"
+    ),
+    []
+  );
 });
 
 // @req REQ-032
@@ -290,53 +293,54 @@ test("no more than ten scenes", () => {
 });
 
 // @req REQ-032
-test("a patronyme without the four-questions synthesis reads as the comparison sub-case, and is refused there", () => {
-  // The dispatch is structural: the fixed synthesis anchor, not a flag,
-  // decides which patronyme sub-case governs a text (see gabarit-reel-nom.md).
-  const blocsSansSynthese = exemple("patronyme-transmission")
-    .split("\n\n")
-    .filter((p) => !p.startsWith(SYNTHESE_METHODE_QUATRE_QUESTIONS));
-  assert.ok(regles(blocsSansSynthese.join("\n\n"), "patronyme").length > 0);
+test("a patronyme read without --cas transmission is checked as the comparison sub-case, and is refused there", () => {
+  // Dispatch is an explicit argument, not content sniffed from the text: the
+  // synthesis scene has no fixed sentence left to detect it by (see
+  // gabarit-reel-nom.md, « Le patronyme a deux cas »).
+  assert.ok(regles(exemple("patronyme-transmission"), "patronyme").length > 0);
 });
 
 // @req REQ-032
-test("the four-questions synthesis must start with the fixed sentence, word for word", () => {
-  const alteree = remplacer(
-    exemple("patronyme-transmission"),
-    "Un seul nom ne prouve pas un seul ancêtre, ni une seule origine.",
-    "Un seul nom ne prouve rien de solide sur les ancêtres."
+test("--cas is ignored for every type but patronyme", () => {
+  assert.deepEqual(
+    regles(exemple("peuple"), "peuple", "transmission"),
+    regles(exemple("peuple"), "peuple")
   );
-  assert.ok(regles(alteree, "patronyme").includes("gabarit-synthese-methode"));
 });
 
 // @req REQ-032
-test("a subject-specific closing sentence may follow the fixed synthesis in the same scene", () => {
+test("too few scenes for a synthesis before the closing is refused", () => {
+  const troisScenes = [
+    "Une ouverture.\n\nUn cadrage.\n\nUn cas.",
+    "Notre objectif : raconter l'origine des noms, avec des sources. Vous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica.",
+  ].join("\n\n");
   assert.ok(
-    exemple("patronyme-transmission").includes(
-      `${SYNTHESE_METHODE_QUATRE_QUESTIONS} Le nom Kondobô n'a pas de sens connu`
+    regles(troisScenes, "patronyme", "transmission").includes(
+      "gabarit-synthese"
     )
   );
-  assert.deepEqual(
-    verifierGabarit(exemple("patronyme-transmission"), "patronyme"),
-    []
+});
+
+// @req REQ-032
+test("the synthesis scene must open on the subject's bare name, nothing else in that sentence", () => {
+  const alteree = remplacer(
+    exemple("patronyme-transmission"),
+    "Kondobô. Son origine reste inconnue.",
+    "Le nom Kondobô. Son origine reste inconnue."
+  );
+  assert.ok(
+    regles(alteree, "patronyme", "transmission").includes("gabarit-synthese")
   );
 });
 
 // @req REQ-032
-test("at least two documented-case scenes stand between the framing and the four-questions synthesis", () => {
+test("at least two documented-case scenes stand between the framing and the synthesis", () => {
   const blocs = exemple("patronyme-transmission").split("\n\n");
-  const [ouverture, cadrage, cas1, ...reste] = blocs;
-  const indexSynthese = reste.findIndex((p) =>
-    p.startsWith(SYNTHESE_METHODE_QUATRE_QUESTIONS)
+  const [ouverture, cadrage, cas1] = blocs;
+  const uneSeule = [ouverture, cadrage, cas1, ...blocs.slice(-2)].join("\n\n");
+  assert.ok(
+    regles(uneSeule, "patronyme", "transmission").includes("gabarit-cas")
   );
-  assert.ok(indexSynthese !== -1);
-  const uneSeule = [
-    ouverture,
-    cadrage,
-    cas1,
-    ...reste.slice(indexSynthese),
-  ].join("\n\n");
-  assert.ok(regles(uneSeule, "patronyme").includes("gabarit-cas"));
 });
 
 // @req REQ-032
@@ -360,13 +364,19 @@ test("the documented-case scenes carry at least one epistemic reserve, somewhere
       "Il vaut pour toute personne portant ce nom aujourd'hui."
     );
   assert.notEqual(sansReserves, texte);
-  assert.ok(regles(sansReserves, "patronyme").includes("gabarit-cas"));
+  assert.ok(
+    regles(sansReserves, "patronyme", "transmission").includes("gabarit-cas")
+  );
 });
 
 // @req REQ-032
 test("a patronyme-transmission narration may run to twelve scenes, one more than the comparison ceiling", () => {
   assert.deepEqual(
-    verifierGabarit(exemple("patronyme-transmission"), "patronyme"),
+    verifierGabarit(
+      exemple("patronyme-transmission"),
+      "patronyme",
+      "transmission"
+    ),
     []
   );
   const remplissage = [
@@ -374,13 +384,16 @@ test("a patronyme-transmission narration may run to twelve scenes, one more than
     "Un deuxième cas de plus s'ajoute ici, à part.",
     "Un troisième cas de plus s'ajoute ici, à part.",
     "Un quatrième cas de plus s'ajoute ici, à part.",
+    "Un cinquième cas de plus s'ajoute ici, à part.",
   ].join("\n\n");
   const treize = remplacer(
     exemple("patronyme-transmission"),
-    "Le nom transmis peut porter une appartenance, des récits et des relations.",
-    `${remplissage}\n\nLe nom transmis peut porter une appartenance, des récits et des relations.`
+    "Le nom peut également ouvrir une relation au-delà de la famille.",
+    `${remplissage}\n\nLe nom peut également ouvrir une relation au-delà de la famille.`
   );
-  assert.ok(regles(treize, "patronyme").includes("gabarit-plafond"));
+  assert.ok(
+    regles(treize, "patronyme", "transmission").includes("gabarit-plafond")
+  );
 });
 
 // @req REQ-032

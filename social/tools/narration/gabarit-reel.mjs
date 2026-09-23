@@ -44,33 +44,29 @@ export const PLAFOND_PHRASES_SYNTHESE = 3;
  * etymology or a form the sources do not give. A second, sibling skeleton,
  * not a rewrite of the first — `TYPES` and the comparison path are unchanged.
  *
- * The dispatch is structural, not a flag: a `patronyme` narration whose
- * synthesis scene starts with this fixed sentence is read against this
- * skeleton instead (`gabarit-reel-nom.md`, « Le patronyme a deux cas »).
+ * Revised twice more the same day, on the same subject:
  *
- * Revised the same day, on the same subject: the first wording (« Nous
- * devons donc distinguer quatre questions… ») tested clean on the checkers
- * but read as a lecture to an audience the operator described as reading for
- * pleasure, not as specialists — a plain-language problem the tooling here
- * cannot see (`ordonner()` only checks sentence shape, never register). This
- * wording keeps the one guardrail that actually matters structurally — a
- * name does not prove a single ancestor — and drops the four-way taxonomy's
- * own vocabulary (étymologie, généalogie, filiations) rather than explain it.
+ * 1. A fixed methodological sentence (« Nous devons donc distinguer quatre
+ *    questions… ») tested clean but read as a lecture to an audience the
+ *    operator described as reading for pleasure, not as specialists —
+ *    simplified once, kept as a fixed prefix.
+ * 2. The operator then gave the synthesis its real shape: name, origin,
+ *    what kind of name it is, where it comes from, its other forms, a date —
+ *    always in that order, always short. That checklist is per-subject
+ *    content (a future Keïta piece cannot reuse a Traoré sentence), so a
+ *    fixed shared sentence stopped making sense here at all — the recipe
+ *    now lives in `gabarit-reel-nom.md` as guidance for the author and the
+ *    operator's validation, the same way the codebase already leaves
+ *    whether a source holds or a sense is right to them, not to a regex.
+ *
+ * Dispatch therefore moved from content-sniffing to an explicit argument
+ * (`--cas transmission`) rather than a fixed sentence to detect, because
+ * there is no longer a stable string to anchor on.
  */
-export const SYNTHESE_METHODE_QUATRE_QUESTIONS =
-  "Un nom de famille peut donc venir de plusieurs choses. Il peut venir du sens d'un mot, d'une histoire racontée, ou d'un lien créé entre deux familles. Un seul nom ne prouve pas un seul ancêtre, ni une seule origine.";
 export const PLAFOND_SCENES_TRANSMISSION = 12;
 export const PLANCHER_CAS_TRANSMISSION = 2;
 const RESERVE_EPISTEMIQUE =
   /\bnous ne\b|\bn'établi\w*|\bne (?:fournit|permet(?:tent)?|suffit|rend|pouvons|peut)\b|\baucune source\b|\bne confirme\b|\bne d[ée]montr\w*/i;
-/**
- * Dispatch reads the anchor sentence, not the whole fixed paragraph: a typo
- * in the synthesis must still land on this skeleton, with its own named
- * finding, rather than silently fall through to the comparison one and
- * report unrelated errors about forms and endonyms.
- */
-const ANCRE_SYNTHESE_METHODE =
-  "Un nom de famille peut donc venir de plusieurs choses.";
 const NOMBRES = { deux: 2, trois: 3, quatre: 4 };
 const MOTS_DU_NOMBRE = { 2: "deux", 3: "trois", 4: "quatre" };
 
@@ -421,16 +417,17 @@ function verifierClassement(paragraphe, numero, type, interieurs, tousLesNoms) {
 
 /**
  * The second patronyme skeleton: ouverture · cadrage · deux cas documentés au
- * moins · [discussion optionnelle] · synthèse des quatre questions (fixe) ·
- * synthèse libre · [transition vers le chapitre suivant] · clôture.
+ * moins · [discussion optionnelle] · synthèse (recette libre, voir
+ * `gabarit-reel-nom.md`) · [transition vers le chapitre suivant] · clôture.
  *
  * What the comparison skeleton checks and this one does not, on purpose:
- * whether a case is properly attributed, whether its hedge is the right one
- * for its claim. A jamu-transmission subject varies too much in its number
- * and shape of documented cases for a fixed sentence per case; the fixed
- * points are the ones the doctrine actually requires — the methodological
- * synthesis, word for word, and at least one epistemic reserve somewhere
- * among the cases, so a case-only telling can't silently drop every caveat.
+ * whether a case is properly attributed, whether its hedge is the right one,
+ * whether the synthesis actually names the origin, the kind of name, where
+ * it comes from, its other forms and a date, in that order. A
+ * jamu-transmission subject varies too much, case to case and subject to
+ * subject, for any of that to be a fixed string. The one thing still checked
+ * here is structural: at least one epistemic reserve somewhere among the
+ * cases, so a case-only telling can't silently drop every caveat.
  */
 function verifierPatronymeTransmission(paragraphes) {
   const trouvailles = [];
@@ -463,27 +460,29 @@ function verifierPatronymeTransmission(paragraphes) {
     );
   }
 
-  const indexSynthese = paragraphes.findIndex(
-    (p) => phrasesDe(p)[0] === ANCRE_SYNTHESE_METHODE
-  );
-  if (indexSynthese === -1) {
+  // The synthesis is the scene right before the closing: no fixed sentence
+  // anchors it any more (see the block comment above). Its position is
+  // checked, and so is the one rule of its recipe that is actually a
+  // structural pattern rather than content — it opens by naming the
+  // subject alone, nothing else in the same sentence.
+  const indexSynthese = dernier - 2;
+  if (indexSynthese < 2) {
     trouvailles.push(
       trouvaille(
         dernier,
-        "gabarit-synthese-methode",
-        `une scène reprend, mot pour mot, la synthèse des quatre questions : « ${SYNTHESE_METHODE_QUATRE_QUESTIONS} »`
+        "gabarit-synthese",
+        "une scène de synthèse précède la clôture, après le cadrage et les cas documentés"
       )
     );
     return ordonner(trouvailles, paragraphes, dernier);
   }
-  if (
-    !paragraphes[indexSynthese].startsWith(SYNTHESE_METHODE_QUATRE_QUESTIONS)
-  ) {
+  const ouvreurSynthese = phrasesDe(paragraphes[indexSynthese])[0] ?? "";
+  if (!/^[A-ZÀ-ÜŒ][\wÀ-ÿ'-]*\.$/.test(ouvreurSynthese)) {
     trouvailles.push(
       trouvaille(
         indexSynthese + 1,
-        "gabarit-synthese-methode",
-        `la synthèse commence, mot pour mot, par : « ${SYNTHESE_METHODE_QUATRE_QUESTIONS} » — une phrase de conclusion propre au sujet peut suivre dans la même scène`
+        "gabarit-synthese",
+        "la synthèse commence par le nom du sujet seul, sans rien d'autre dans la même phrase (« Traoré. »)"
       )
     );
   }
@@ -494,7 +493,7 @@ function verifierPatronymeTransmission(paragraphes) {
       trouvaille(
         3,
         "gabarit-cas",
-        `au moins ${PLANCHER_CAS_TRANSMISSION} scènes de cas documentés entre le cadrage et la synthèse des quatre questions : ${cas.length} trouvée(s)`
+        `au moins ${PLANCHER_CAS_TRANSMISSION} scènes de cas documentés entre le cadrage et la synthèse : ${cas.length} trouvée(s)`
       )
     );
   }
@@ -514,9 +513,13 @@ function verifierPatronymeTransmission(paragraphes) {
 /**
  * @param {string} narration the text of a `narration.fr.txt`, one scene per paragraph
  * @param {string} type one of TYPES
+ * @param {string} [cas] "transmission" selects the patronyme sub-case
+ *   (`gabarit-reel-nom.md`, « Le patronyme a deux cas »); ignored for every
+ *   other type. Explicit rather than sniffed from the text: the sub-case's
+ *   synthesis has no fixed sentence left to detect it by.
  * @returns {{paragraphe: number, regle: string, detail: string}[]}
  */
-export function verifierGabarit(narration, type) {
+export function verifierGabarit(narration, type, cas) {
   if (!TYPES.includes(type)) {
     return [
       trouvaille(
@@ -531,10 +534,7 @@ export function verifierGabarit(narration, type) {
     .map((p) => p.replace(/\s+/g, " ").trim())
     .filter(Boolean);
 
-  if (
-    type === "patronyme" &&
-    paragraphes.some((p) => phrasesDe(p)[0] === ANCRE_SYNTHESE_METHODE)
-  ) {
+  if (type === "patronyme" && cas === "transmission") {
     return verifierPatronymeTransmission(paragraphes);
   }
 
