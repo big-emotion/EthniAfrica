@@ -1,0 +1,27 @@
+{
+  "campaign": "ghana-empire-jamais-sur-son-territoire",
+  "typologie": "pays",
+  "episode": 9,
+  "question": {
+    "fr": "D'où vient le nom Ghana ?"
+  },
+  "myth": {
+    "fr": "Le Ghana actuel se trouve-t-il sur le territoire de l'empire dont il porte le nom ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "GHA",
+      "label": { "fr": "Ghana" }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/GHA",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7683294371663465750",
+      "publishedAt": "2026-09-09"
+    }
+  ]
+}

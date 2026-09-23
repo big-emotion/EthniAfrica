@@ -18,6 +18,12 @@
   "sitePath": "/fr/atlas/pays/CMR",
   "publications": [
     {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7682865174155496726",
+      "publishedAt": "2026-09-07"
+    },
+    {
       "network": "instagram",
       "format": "carrousel",
       "url": "https://www.instagram.com/p/Dc_xtCCjgH8/",

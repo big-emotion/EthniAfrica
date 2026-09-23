@@ -1,0 +1,21 @@
+{
+  "campaign": "bantou-ntu-ba-prefixe",
+  "typologie": "mot",
+  "episode": 3,
+  "question": {
+    "fr": "Que veut dire le mot « bantou » lui-même ?"
+  },
+  "myth": {
+    "fr": "Le « ba- » de « bantou » change-t-il le sens du mot ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7684292259612773654",
+      "publishedAt": "2026-09-11"
+    }
+  ]
+}

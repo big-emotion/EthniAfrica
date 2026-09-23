@@ -1,0 +1,27 @@
+{
+  "campaign": "nzebi-muyambili-memoire",
+  "typologie": "peuple",
+  "episode": 11,
+  "question": {
+    "fr": "Qui gardait la mémoire des clans nzebi ?"
+  },
+  "myth": {
+    "fr": "Chez les Nzebi, la transmission du muyambili s'est-elle poursuivie jusqu'à aujourd'hui ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_NZEBI",
+      "label": { "fr": "Nzebi" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_NZEBI",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7684702208629198083",
+      "publishedAt": "2026-09-12"
+    }
+  ]
+}

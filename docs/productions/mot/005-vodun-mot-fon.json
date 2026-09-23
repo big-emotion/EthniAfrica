@@ -1,0 +1,21 @@
+{
+  "campaign": "vodun-mot-fon-esprit",
+  "typologie": "mot",
+  "episode": 5,
+  "question": {
+    "fr": "D'où vient le mot « vodun » ?"
+  },
+  "myth": {
+    "fr": "Le vodou haïtien est-il resté identique au vodun du Bénin ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7684706882673528086",
+      "publishedAt": "2026-09-12"
+    }
+  ]
+}

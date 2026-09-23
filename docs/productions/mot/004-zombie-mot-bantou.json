@@ -1,0 +1,21 @@
+{
+  "campaign": "zombie-mot-bantou",
+  "typologie": "mot",
+  "episode": 4,
+  "question": {
+    "fr": "D'où vient le mot « zombie » ?"
+  },
+  "myth": {
+    "fr": "Le zombie est-il un monstre africain ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7684713962822176022",
+      "publishedAt": "2026-09-12"
+    }
+  ]
+}
