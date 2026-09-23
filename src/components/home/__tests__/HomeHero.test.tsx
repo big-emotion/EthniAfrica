@@ -14,8 +14,6 @@ vi.mock("next/navigation", () => ({
   useRouter: () => ({ push: vi.fn(), replace: vi.fn() }),
 }));
 
-const FEATURED = <section data-testid="featured-answer">Fulbe, Peul</section>;
-
 function shippedStyles(container: HTMLElement): string {
   return Array.from(container.querySelectorAll("style"))
     .map((style) => style.textContent)
@@ -207,54 +205,5 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
   // @req REQ-115 @req ETNI-1404
   it("lets content size the band rather than claiming a viewport height", () => {
     expect(SOURCE).not.toMatch(/\b(?:dvh|svh|vh)\b|min-h-screen/);
-  });
-
-  /**
-   * The featured answer follows the search in the document at every width:
-   * a reader — or a screen reader walking the band — meets the question and
-   * the way to ask it first. CSS may set the tile beside the search from
-   * 1200px; the source may not reorder them.
-   */
-  // @req REQ-115
-  it("places the featured answer after the copy and search", () => {
-    const { container } = render(
-      <HomeHero language="fr" featured={FEATURED} />
-    );
-
-    const copy = container.querySelector(".home-hero-copy")!;
-    const featured = screen.getByTestId("featured-answer");
-    expect(container.querySelector(".home-hero-inner")).toContainElement(
-      featured
-    );
-    expect(
-      copy.compareDocumentPosition(featured) & Node.DOCUMENT_POSITION_FOLLOWING
-    ).toBeTruthy();
-  });
-
-  // Two columns at 1200px only when there is a tile to set beside the
-  // search; without one the band stays a single centred column.
-  // @req REQ-115
-  it("opens two columns at 1200px only when a featured answer is present", () => {
-    const withTile = render(<HomeHero language="fr" featured={FEATURED} />);
-    expect(
-      withTile.container.querySelector(".home-hero-inner")?.className
-    ).toMatch(/home-hero-inner--with-featured/);
-    withTile.unmount();
-
-    const { container } = render(<HomeHero language="fr" />);
-    expect(container.querySelector(".home-hero-inner")?.className).not.toMatch(
-      /with-featured/
-    );
-    expect(container.querySelector(".home-hero-featured")).toBeNull();
-
-    const styles = shippedStyles(container);
-    expect(styles).toMatch(
-      /@media\s*\(min-width:\s*1200px\)[\s\S]*?\.home-hero-inner--with-featured\s*\{[^}]*grid-template-areas:\s*"copy featured"[^}]*align-items:\s*start/
-    );
-    expect(styles).not.toMatch(/"featured copy"/);
-    for (const rule of styles.match(/\.home-hero-inner[\w-]*\s*\{[^}]*\}/g) ??
-      []) {
-      expect(rule).not.toMatch(/align-items:\s*center/);
-    }
   });
 });

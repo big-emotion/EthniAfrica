@@ -4,48 +4,13 @@ import React from "react";
 
 import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
 
-const fixtureCounts = {
-  peoples: 4213,
-  countries: 91,
-  families: 37,
-  languages: 748,
-  nameForms: 3134,
-  migrations: 5,
-};
+vi.mock("@/lib/home/loadSeedWords", () => ({
+  loadSeedWords: async () => undefined,
+}));
 
-// The hero carries an interactive island since the search field landed in it,
-// and useRouter throws outside an app-router tree rather than degrading.
 vi.mock("next/navigation", () => ({
   useRouter: () => ({ push: vi.fn(), replace: vi.fn() }),
 }));
-
-vi.mock("@/lib/home/corpusCounts", () => ({
-  getCorpusCounts: vi.fn(async () => fixtureCounts),
-}));
-
-vi.mock("@/api/v2/services/continentPeopleCounts", () => ({
-  getContinentPeopleCounts: vi.fn(async () => ({})),
-}));
-
-// The document plan is asserted on the globe draw, the one that adds no
-// heading of its own; the anecdote draw's h2 is HomeDrawnVisual.test.tsx's
-// concern.
-vi.mock("@/lib/home/homeHeroVisuals", async (importOriginal) => {
-  const actual =
-    await importOriginal<typeof import("@/lib/home/homeHeroVisuals")>();
-  return {
-    ...actual,
-    drawHomeHeroVisual: () => ({ kind: "globe" }),
-  };
-});
-
-// The campaign window depends on the date the suite runs; the plan is
-// asserted without the tile, whose heading home.test.tsx covers.
-vi.mock("@/lib/home/featuredCampaigns", async (importOriginal) => {
-  const actual =
-    await importOriginal<typeof import("@/lib/home/featuredCampaigns")>();
-  return { ...actual, getActiveFeaturedCampaign: () => null };
-});
 
 vi.mock("@/components/layout/PageLayout", () => ({
   PageLayout: ({ children }: { children: React.ReactNode }) => (
@@ -72,17 +37,15 @@ describe("home — what the reader meets, and in what order (REQ-113)", () => {
   // The DOM is the phone composition, and every wider layout reuses those
   // nodes rather than maintaining a second reading order.
   // @req REQ-113
-  it("reads the search first and the drawn visual after the stories", async () => {
+  it("reads search, contribution and project in that order", async () => {
     const { container } = await renderHome();
 
     const search = screen.getByRole("search");
-    const stories = screen.getByTestId("home-stories");
-    const visual = container.querySelector(".home-hero-visual")!;
-    const counts = screen.getByTestId("home-counts");
-
-    expect(precedes(search, stories)).toBe(true);
-    expect(precedes(stories, visual)).toBe(true);
-    expect(precedes(visual, counts)).toBe(true);
+    const contribution = screen.getByTestId("home-contribute");
+    const project = screen.getByTestId("home-project");
+    expect(precedes(search, contribution)).toBe(true);
+    expect(precedes(contribution, project)).toBe(true);
+    expect(container.querySelector(".home-hero-visual")).toBeNull();
   });
 
   // @req REQ-113
@@ -91,6 +54,9 @@ describe("home — what the reader meets, and in what order (REQ-113)", () => {
 
     for (const testId of [
       "home-did-you-know",
+      "home-stories",
+      "home-counts",
+      "home-featured",
       "home-purpose-blocks",
       "home-hero-purpose",
       "access-axes",
@@ -105,7 +71,7 @@ describe("home — what the reader meets, and in what order (REQ-113)", () => {
   // One page title; each lower section files itself with an h2, and only the
   // story cards sit a rung below. The figures are values, not headings.
   // @req REQ-113
-  it("keeps one h1, one h2 per section, and h3 only on the story cards", async () => {
+  it("keeps one h1 and three purposeful section headings", async () => {
     await renderHome();
 
     expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
@@ -114,15 +80,11 @@ describe("home — what the reader meets, and in what order (REQ-113)", () => {
         .getAllByRole("heading", { level: 2 })
         .map((heading) => heading.textContent)
     ).toEqual([
-      "Des histoires à découvrir",
+      "Faisons grandir EthniAfrica ensemble",
       "Pourquoi EthniAfrica ?",
       "Des sources pour comprendre",
-      "EthniAfrica en quelques repères",
     ]);
-    const cards = screen.getByTestId("home-stories");
-    for (const heading of screen.getAllByRole("heading", { level: 3 })) {
-      expect(cards).toContainElement(heading);
-    }
+    expect(screen.queryAllByRole("heading", { level: 3 })).toHaveLength(0);
   });
 
   // The one action is named by the home's question and described by the

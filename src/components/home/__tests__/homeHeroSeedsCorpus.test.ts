@@ -2,21 +2,10 @@ import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { describe, it, expect } from "vitest";
 
+import { FALLBACK_SEED_WORDS } from "@/lib/home/seedWords";
 import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
 
-/**
- * The three seed chips are fixed copy now, so nothing ties them to the corpus
- * but this test. A chip that runs a query returning nothing, on the one screen
- * that has to say the corpus is not thin, is the failure it exists to catch —
- * a first pass of the old fallback pool shipped four such words.
- *
- * It reads `dataset/source/afrik/`, not Supabase: the atlas charter §4 is
- * explicit that an interface may only call a name present when it has
- * consulted the source of truth rather than a projection of it. A chip may
- * name a patronyme, a language or a people under any form the fiche files it
- * under — « Peul » is an exonym of the Fulbe entry, which is exactly the form
- * a French reader types.
- */
+/** Fallbacks must resolve in the corpus; people must be self-given forms. */
 
 const CORPUS = join(process.cwd(), "dataset/source/afrik");
 
@@ -53,8 +42,19 @@ function corpusNames(): Set<string> {
   }
   for (const file of jsonFilesUnder(join(CORPUS, "peuples"))) {
     const fiche = JSON.parse(readFileSync(file, "utf8"));
-    add(fiche.nameMain);
-    strings(fiche.content?.appellations?.exonyms).forEach(add);
+    add(fiche.content?.appellations?.selfAppellation);
+    // Fulbe is the explicitly attested plural form, curated in the fallback;
+    // production never derives short names by stripping parenthetical prose.
+    if (
+      fiche.content?.appellations?.selfAppellation ===
+      "Fulbe (pluriel), Pullo (singulier)"
+    )
+      add("Fulbe");
+  }
+  for (const file of jsonFilesUnder(join(CORPUS, "pays"))) {
+    const fiche = JSON.parse(readFileSync(file, "utf8"));
+    add(fiche.nameFr);
+    add(fiche.nameEn);
   }
   return names;
 }
@@ -64,7 +64,8 @@ describe("home hero seed chips", () => {
   it("names only entries the corpus actually holds, in both languages", () => {
     const names = corpusNames();
     const missing = (["fr", "en"] as const).flatMap((language) =>
-      homeHeroCopy[language].seeds
+      Object.values(FALLBACK_SEED_WORDS[language])
+        .flat()
         .filter((word) => !names.has(word))
         .map((word) => `${language}: ${word}`)
     );

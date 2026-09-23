@@ -1,5 +1,3 @@
-import type { LocalizedDidYouKnowFact } from "@/lib/home/didYouKnowLocalization";
-
 /** A project illustration suitable for a hero or an axis hub's plate. */
 export interface HomeHeroImage {
   id: string;
@@ -66,12 +64,6 @@ export const HOME_HERO_IMAGES: readonly HomeHeroImage[] = [
     licenceUri: "https://creativecommons.org/licenses/by-sa/2.0/",
   },
 ];
-
-/** What the hero renders in its visual slot. */
-export type HomeHeroVisual =
-  | { kind: "globe" }
-  | { kind: "image"; image: HomeHeroImage }
-  | { kind: "anecdote"; fact: LocalizedDidYouKnowFact };
 
 /**
  * What the draw decides. The anecdote itself is picked by the page, which

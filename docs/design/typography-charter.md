@@ -282,6 +282,17 @@ meaning, not legibility:
 | Footer rubric                             | display 700                          | `body`                                                 | `--afh-text`                                       | A card title (§4): display face at the body step.                                                                                                                                                                               |
 | Footer links                              | body 400                             | `small`                                                | `--afh-text-soft`                                  | Control labels.                                                                                                                                                                                                                 |
 
+The compact home (operator ruling, 2026-09-23) retains the search and project
+sections, and introduces a contribution invitation between them. The featured
+answer, stories, drawn visual and figures are no longer on this surface.
+
+| Element              | Face · weight | Step    | Ink            | Purpose                                                                                           |
+| -------------------- | ------------- | ------- | -------------- | ------------------------------------------------------------------------------------------------- |
+| Contribution heading | display 700   | `h3`    | `--afh-text`   | A secondary invitation below the search, without competing with the page title.                   |
+| Contribution summary | body 400      | `body`  | `--afh-text`   | Two short sentences, wrapping naturally on phones rather than clipping to two visual lines.       |
+| Contribution link    | body 600      | `small` | `--accent-ink` | The shared ActionLink leads to the contribution page.                                             |
+| Renew examples       | body 500      | `small` | `--accent-ink` | Reader-controlled renewal keeps each random suggestion stable while it is being read or selected. |
+
 ### 8.3 Holding it
 
 A new element on the home takes a row of this table. One that fits no row is a
