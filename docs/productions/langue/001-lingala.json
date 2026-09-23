@@ -25,6 +25,12 @@
       "format": "carrousel",
       "url": "https://www.tiktok.com/@ethniafrica/photo/7685962182923767062",
       "publishedAt": "2026-09-17"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/kzzDsZQlprI",
+      "publishedAt": "2026-09-05"
     }
   ]
 }

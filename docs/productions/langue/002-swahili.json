@@ -36,7 +36,11 @@
     { "network": "tiktok", "format": "video" },
     { "network": "instagram", "format": "video" },
     { "network": "facebook", "format": "video" },
-    { "network": "youtube", "format": "video" },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/_m_lmj2dgAI"
+    },
     { "network": "linkedin", "format": "video" },
     { "network": "x", "format": "video" }
   ]
