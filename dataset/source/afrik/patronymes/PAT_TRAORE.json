@@ -61,7 +61,12 @@
       {
         "claim": "Le nom entre dans un système de correspondances entre patronymes de peuples différents, établi après Soundiata : en pays wolof, un Traoré est reçu comme frère par les Diop et peut prendre leur nom, et réciproquement. Le jamu n'est donc pas seulement héréditaire, il est convertible d'une aire à l'autre.",
         "claimStatus": "established",
-        "sourceRefs": ["gha-iv-mali"]
+        "sourceRefs": ["gha-iv-mali", "niane-1985-fr-mali-chapitre"]
+      },
+      {
+        "claim": "Avant Soundiata, les Traoré occupent une partie du pays de Kiri, mais la majorité d'entre eux s'installe dans la province qui prendra plus tard le nom de Gangaran, au nord-ouest du Bouré. Ce territoire est distinct du berceau des Keita, situé autour de Dakadiala, Naréna et Kiri.",
+        "claimStatus": "established",
+        "sourceRefs": ["gha-iv-mali", "niane-1985-fr-mali-chapitre"]
       }
     ]
   },
@@ -105,6 +110,16 @@
       "allianceType": "sanankuya",
       "sourceRefs": [
         "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_DIOP",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "gha-iv-mali",
+        "niane-1985-fr-mali-chapitre",
         "canut-2002-senankuya",
         "canut-smith-2006-pactes"
       ]
@@ -178,6 +193,14 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Canut, Cécile, Cahiers de praxématique, numéro 38, 2002, p. 175-197. Enquête de terrain au Mali. Elle énonce ce que le pacte oblige : la relation vaut à perpétuité pour toute la descendance des deux lignées, le mariage entre elles est prohibé — diversement appliqué aujourd'hui, précise-t-elle — et l'entraide y est due sans réserve. Citée pour l'obligation elle-même ; elle ne nomme pas la paire de cette fiche, que portent les entrées citées à côté d'elle."
+    },
+    {
+      "sourceKey": "niane-1985-fr-mali-chapitre",
+      "title": "Le Mali et la deuxième expansion manden",
+      "url": "https://bokundoli.org/wp-content/uploads/2021/12/T4-10.pdf",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "Niane, Djibril Tamsir, Histoire générale de l'Afrique, tome IV, chapitre 6, UNESCO/NEA, 1985 ; reproduction consultée le 23 septembre 2026, qui ne couvre le texte qu'à partir de la p. 141. Confirme, dans l'édition française, ce que l'édition anglaise de ce même chapitre (gha-iv-mali) donne déjà : les Traoré au Gangaran (p. 151-152), Tiramaghan Traoré fondateur du Gabu (p. 151, note 27), et la correspondance de clan entre Traoré et Diop établie après la victoire de Kirina (p. 157-158, note 44). Le berceau des Keita — Dakadiala, Naréna et Kiri (p. 152, note 28) — est celui du clan Keita, distinct du Gangaran des Traoré."
     },
     {
       "sourceKey": "canut-smith-2006-pactes",
