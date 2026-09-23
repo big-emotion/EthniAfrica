@@ -1,0 +1,33 @@
+{
+  "campaign": "senegal-notre-pirogue",
+  "typologie": "pays",
+  "episode": 10,
+  "question": {
+    "fr": "D'où vient le nom Sénégal ?"
+  },
+  "myth": {
+    "fr": "Le Sénégal signifie-t-il vraiment « notre pirogue » ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "SEN",
+      "label": { "fr": "Sénégal" }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/SEN",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7683299322309496086",
+      "publishedAt": "2026-09-09"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/x__i8o-IOvM",
+      "publishedAt": "2026-09-09"
+    }
+  ]
+}

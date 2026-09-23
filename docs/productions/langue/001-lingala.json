@@ -22,9 +22,27 @@
   "publications": [
     {
       "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7681920917378829590",
+      "publishedAt": "2026-09-05"
+    },
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7682860953662262550",
+      "publishedAt": "2026-09-07"
+    },
+    {
+      "network": "tiktok",
       "format": "carrousel",
       "url": "https://www.tiktok.com/@ethniafrica/photo/7685962182923767062",
       "publishedAt": "2026-09-17"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/kzzDsZQlprI",
+      "publishedAt": "2026-09-05"
     }
   ]
 }

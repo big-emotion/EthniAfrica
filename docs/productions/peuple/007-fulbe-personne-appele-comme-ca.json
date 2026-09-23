@@ -40,6 +40,12 @@
       "format": "carrousel",
       "url": "https://www.instagram.com/p/DdJiDFiCp5H/",
       "publishedAt": "2026-09-11"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/_znLd1YO_iU",
+      "publishedAt": "2026-09-14"
     }
   ]
 }

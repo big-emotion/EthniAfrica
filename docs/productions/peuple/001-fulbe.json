@@ -30,7 +30,11 @@
       "url": "https://www.instagram.com/reel/Ddi4DCdqKqC/"
     },
     { "network": "facebook", "format": "video" },
-    { "network": "youtube", "format": "video" },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/7nfhkaR1eUw"
+    },
     { "network": "linkedin", "format": "video" },
     { "network": "x", "format": "video" }
   ]

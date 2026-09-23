@@ -1,0 +1,21 @@
+{
+  "campaign": "mungo-park-fleuve-joliba",
+  "typologie": "mot",
+  "episode": 10,
+  "question": {
+    "fr": "Qui a nommé le fleuve Niger ?"
+  },
+  "myth": {
+    "fr": "Mungo Park a-t-il découvert le fleuve Niger ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "publications": [
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/jsHu0bzx0DQ",
+      "publishedAt": "2026-09-16"
+    }
+  ]
+}

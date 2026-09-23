@@ -1,0 +1,27 @@
+{
+  "campaign": "mercator-afrique-petite",
+  "typologie": "mot",
+  "episode": 7,
+  "question": {
+    "fr": "Pourquoi l'Afrique paraît-elle si petite sur les cartes qu'on nous a montrées ?"
+  },
+  "myth": {
+    "fr": "La projection cartographique qu'on utilise partout est-elle neutre ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7682862732017716502",
+      "publishedAt": "2026-09-07"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/TqwCu6Rf3QY",
+      "publishedAt": "2026-09-07"
+    }
+  ]
+}
