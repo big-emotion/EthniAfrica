@@ -146,7 +146,27 @@ variante :
 - la typologie **`mot`** (« ethnie ») ;
 - un sujet dont le groupe n'a **aucun** nom pour lui-même dans les sources ;
 - un sujet avec **plus de quatre** noms de l'intérieur ;
-- un sujet à **un seul nom** (rien à comparer).
+- un sujet à **un seul nom** (rien à comparer) — y compris quand ce nom
+  unique n'a que des variantes d'orthographe (une variante n'est pas un nom
+  de plus, voir « Variantes » ci-dessus) ;
+- **un sujet dont le nom est d'abord une catégorie — un métier, un statut,
+  une fonction — devenue une identité, sans auto-désignation univoque établie
+  par les sources.** Décidé par l'opérateur le 2026-09-23, sur Dioula : « jula »
+  désigne d'abord un commerçant, et la plupart des personnes appelées Dioula
+  appartiennent en réalité, d'abord, à un autre clan, une autre famille ou un
+  autre peuple — chercher « le » nom que « le » peuple se donne inventerait
+  une auto-désignation que les sources ne fournissent pas. Ce cas ne s'arrête
+  pas au constat : la pièce suit à la place une **ouverture explicative**, qui
+  pose la question du sens du mot plutôt que l'inventaire endonyme/exonyme —
+  `dioula-un-metier-une-langue-une-identite/narration.fr.txt` en est le
+  précédent écrit. `ethniafrica-message` note ce cas selon le degré de
+  certitude de l'endonyme (voir sa propre section du même nom), pas comme un
+  échec des critères 1 et 2.
+
+Le premier et le dernier cas se distinguent par la source du doute : un nom
+unique sans variante notable est un fait de langue (rien à comparer) ; une
+catégorie devenue identité est un fait social (rien à qui l'attribuer en
+premier). Les deux évitent d'inventer une paire, pour des raisons différentes.
 
 ## Corriger une narration existante, non publiée
 
