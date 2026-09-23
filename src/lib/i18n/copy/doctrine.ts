@@ -1,9 +1,21 @@
 import type { ClassificationStatus } from "@/types/afrik";
 import type { Language } from "@/types/shared";
 
+interface RefusedSentenceCopy {
+  sentence: string;
+  reason: string;
+}
+
 interface MethodSectionCopy {
   heading: string;
   paragraphs: string[];
+  /**
+   * Sentences we refuse to write, each published with its reason: a refusal
+   * printed without why reads as a taboo, and a reason without the sentence
+   * it answers reads as a lecture. Moved here from the About page on
+   * 22 September 2026 — what we do not write is method, not a presentation.
+   */
+  refusals?: RefusedSentenceCopy[];
 }
 
 interface ClosingActionsCopy {
@@ -51,7 +63,7 @@ const en = {
       heading: "Unevenly accessible sources",
       paragraphs: [
         "The sources easiest to find do not necessarily represent every voice. We state when our documentation rests mainly on outside perspectives, and we look for the local accounts available.",
-        "What the atlas does not yet document describes a limit of our work, not an absence of history.",
+        "What we do not yet document describes a limit of our work, not an absence of history.",
       ],
     },
     {
@@ -75,6 +87,32 @@ const en = {
       ],
     },
     {
+      heading: "Four sentences we do not write",
+      paragraphs: [],
+      refusals: [
+        {
+          sentence: "“Before, people lived in harmony with the continent.”",
+          reason:
+            "A golden age does not need to be true to be attacked: Africa before Berlin also had empires, conquests and internal slave trades. The argument’s strength comes from duration and scale, not from how gentle the past was.",
+        },
+        {
+          sentence: "“The borders are arbitrary.”",
+          reason:
+            "Half false: some follow rivers. They were mostly drawn without reference to who lived there, and we show it people by people.",
+        },
+        {
+          sentence: "“Reconnecting with the past.”",
+          reason:
+            "Reconnecting assumes the break is complete — yet these peoples are counted in 2025 and live in France. This is not about reconnecting, but recognising what never stopped.",
+        },
+        {
+          sentence: "“Before the borders, peoples were united.”",
+          reason:
+            "Kinship of language and culture sometimes crossed ruptures older than the colonial map — a split, a migration, a disputed succession. The border did not always create the separation: it often locked one in.",
+        },
+      ],
+    },
+    {
       heading: "A presentation proportionate to the sources",
       paragraphs: [
         "A title asks a question the content actually examines. A question mark does not turn a fragile claim into an established fact.",
@@ -88,15 +126,15 @@ const en = {
       ],
     },
     {
-      heading: "An atlas under construction",
+      heading: "A project under construction",
       paragraphs: [
-        "The atlas does not cover every population, every name or every source. The subjects we feature answer readers' questions and reflect the documentation available.",
+        "Our project does not cover every population, every name or every source. The subjects we feature answer readers' questions and reflect the documentation available.",
         "Our wish to help populations understand each other better is a conviction. We keep it distinct from the conclusions the sources actually allow us to draw.",
       ],
     },
   ] satisfies MethodSectionCopy[],
   classificationSection: {
-    heading: "Understanding the atlas's indications",
+    heading: "Understanding our indications",
     intro:
       "Some pages indicate whether a classification commands broad agreement, remains debated, carries the trace of a colonial history, or rests on a reconstruction. These indications describe the classification presented, not the worth or legitimacy of the people concerned.",
   },
@@ -165,7 +203,7 @@ const fr: DoctrineCopy = {
       heading: "Des sources inégalement accessibles",
       paragraphs: [
         "Les sources les plus faciles à retrouver ne représentent pas nécessairement toutes les voix. Nous précisons lorsque notre documentation repose surtout sur des regards extérieurs et recherchons les récits locaux disponibles.",
-        "Ce que l’atlas ne documente pas encore décrit une limite de notre travail, pas une absence d’histoire.",
+        "Ce que nous ne documentons pas encore décrit une limite de notre travail, pas une absence d’histoire.",
       ],
     },
     {
@@ -189,6 +227,32 @@ const fr: DoctrineCopy = {
       ],
     },
     {
+      heading: "Quatre phrases que nous n’écrivons pas",
+      paragraphs: [],
+      refusals: [
+        {
+          sentence: "« Avant, on vivait en accord avec le continent. »",
+          reason:
+            "Un âge d’or n’a pas besoin d’être vrai pour être attaquable : l’Afrique d’avant Berlin avait aussi des empires, des conquêtes, des traites internes. La force de l’argument vient de sa durée et de son échelle, pas de la douceur du passé.",
+        },
+        {
+          sentence: "« Les frontières sont arbitraires. »",
+          reason:
+            "À demi faux : certaines suivent des fleuves. Elles ont surtout été tracées sans référence à qui habitait là, et nous le montrons peuple par peuple.",
+        },
+        {
+          sentence: "« Renouer avec le passé. »",
+          reason:
+            "Renouer suppose la rupture consommée — or ces peuples sont comptés en 2025 et présents en France. Il ne s’agit pas de renouer, mais de reconnaître ce qui n’a jamais cessé : c’est plus vrai, et moins triste.",
+        },
+        {
+          sentence: "« Avant les frontières, les peuples étaient unis. »",
+          reason:
+            "Des parentés de langue et de culture ont parfois traversé des ruptures plus anciennes que la carte coloniale — une scission, une migration, une querelle de succession. La frontière n’a pas toujours créé la séparation : elle l’a souvent verrouillée.",
+        },
+      ],
+    },
+    {
       heading: "Une présentation à la mesure des sources",
       paragraphs: [
         "Un titre pose une question que le contenu examine réellement. Une formule interrogative ne transforme pas une affirmation fragile en fait établi.",
@@ -202,15 +266,15 @@ const fr: DoctrineCopy = {
       ],
     },
     {
-      heading: "Un atlas en construction",
+      heading: "Un projet en construction",
       paragraphs: [
-        "L’atlas ne couvre pas toutes les populations, tous les noms ni toutes les sources. Les sujets mis en avant répondent à des questions de lecteurs et à la documentation disponible.",
+        "Notre projet ne couvre pas toutes les populations, tous les noms ni toutes les sources. Les sujets mis en avant répondent à des questions de lecteurs et à la documentation disponible.",
         "Notre souhait de contribuer à la compréhension entre les populations est une conviction. Nous le distinguons des conclusions que les sources permettent d’établir.",
       ],
     },
   ],
   classificationSection: {
-    heading: "Comprendre les indications de l’atlas",
+    heading: "Comprendre nos indications",
     intro:
       "Certaines pages indiquent si une classification fait l’objet d’un large accord, reste discutée, porte la trace d’une histoire coloniale ou repose sur une reconstruction. Ces indications décrivent la classification présentée, pas la valeur ni la légitimité des personnes concernées.",
   },

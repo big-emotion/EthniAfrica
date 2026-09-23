@@ -4,7 +4,7 @@ import type { Language } from "@/types/shared";
 const en = {
   attribution: ATTRIBUTION_STRING,
   partnerLogoAlt: "BIG EMOTION",
-  copyright: `${PRODUCT_NAME} — atlas published under the CC BY-SA 4.0 licence.`,
+  copyright: `${PRODUCT_NAME} — content published under the CC BY-SA 4.0 licence.`,
   about: "About",
   api: "API",
   legalNavigationLabel: "Legal information",
@@ -16,7 +16,7 @@ const en = {
   directory: {
     explorerHeading: "Explore",
     axes: {
-      atlas: "The atlas",
+      atlas: "Browse",
       dossiers: "The dossiers",
       jeux: "Play",
     },
@@ -42,7 +42,7 @@ const fr: FooterCopy = {
   // emits declare CC BY-SA 4.0, so the footer was contradicting the corpus
   // four hundred pixels below the citation block that licenses it.
   // Brand charter §2.
-  copyright: `${PRODUCT_NAME} — atlas sous licence CC BY-SA 4.0.`,
+  copyright: `${PRODUCT_NAME} — contenus sous licence CC BY-SA 4.0.`,
   about: "À propos",
   // Left the header when it became three intentions rather than ten
   // destinations: the public API is a developer's entry, not a reading
@@ -70,7 +70,7 @@ const fr: FooterCopy = {
   directory: {
     explorerHeading: "Explorer",
     axes: {
-      atlas: "L'atlas",
+      atlas: "Parcourir",
       dossiers: "Les dossiers",
       jeux: "Jouer",
     },

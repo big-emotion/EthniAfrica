@@ -1,341 +1,89 @@
 import React from "react";
-import { render, screen, within } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
-
 import { CANONICAL_DOMAIN, OG_DESCRIPTION, OG_TITLE } from "@/lib/brand";
-import { CORPUS_CLASSES } from "@/lib/home/corpusClasses";
-import { DID_YOU_KNOW_FACTS } from "@/lib/home/didYouKnowFacts";
-import { DID_YOU_KNOW_FACTS_EN } from "@/lib/home/didYouKnowFacts.en";
-
-const {
-  getCorpusCountsMock,
-  getContinentPeopleCountsMock,
-  getHubModulesMock,
-  loadHeroPreviewMock,
-  loadSynthesisRailMock,
-  drawHomeHeroVisualMock,
-  getActiveFeaturedCampaignMock,
-} = vi.hoisted(() => ({
-  getCorpusCountsMock: vi.fn(),
-  getContinentPeopleCountsMock: vi.fn(),
-  getHubModulesMock: vi.fn(),
-  loadHeroPreviewMock: vi.fn(),
-  loadSynthesisRailMock: vi.fn(),
-  drawHomeHeroVisualMock: vi.fn(),
-  getActiveFeaturedCampaignMock: vi.fn(() => null),
+import { FALLBACK_SEED_WORDS } from "@/lib/home/seedWords";
+import { homePurposeCopy } from "@/lib/i18n/copy/homePurpose";
+const { loadSeeds, counts, globe } = vi.hoisted(() => ({
+  loadSeeds: vi.fn(),
+  counts: vi.fn(),
+  globe: vi.fn(),
 }));
-
-const fixtureCounts = {
-  peoples: 4213,
-  countries: 91,
-  families: 37,
-  languages: 748,
-  nameForms: 3134,
-  patronymes: 33,
-  migrations: 5,
-};
-
 vi.mock("next/navigation", () => ({
   useRouter: () => ({ push: vi.fn(), replace: vi.fn() }),
 }));
-
-vi.mock("@/lib/home/corpusCounts", () => ({
-  getCorpusCounts: getCorpusCountsMock,
-}));
-
+vi.mock("@/lib/home/loadSeedWords", () => ({ loadSeedWords: loadSeeds }));
+vi.mock("@/lib/home/corpusCounts", () => ({ getCorpusCounts: counts }));
 vi.mock("@/api/v2/services/continentPeopleCounts", () => ({
-  getContinentPeopleCounts: getContinentPeopleCountsMock,
+  getContinentPeopleCounts: globe,
 }));
-
-vi.mock("@/lib/home/seedWords", async (importOriginal) => {
-  const actual = await importOriginal<typeof import("@/lib/home/seedWords")>();
-  return {
-    ...actual,
-    loadSeedWords: vi.fn(async () => actual.FALLBACK_SEED_WORDS),
-  };
-});
-
-vi.mock("@/lib/hubs/moduleAvailability", () => ({
-  getHubModules: getHubModulesMock,
-}));
-
-vi.mock("@/lib/home/heroPreviewData", () => ({
-  loadHeroPreview: loadHeroPreviewMock,
-}));
-
-vi.mock("@/lib/home/synthesisRailData", () => ({
-  loadSynthesisRail: loadSynthesisRailMock,
-}));
-
-vi.mock("@/lib/home/homeHeroVisuals", async (importOriginal) => {
-  const actual =
-    await importOriginal<typeof import("@/lib/home/homeHeroVisuals")>();
-  return {
-    ...actual,
-    drawHomeHeroVisual: drawHomeHeroVisualMock,
-  };
-});
-
-vi.mock("@/lib/home/featuredCampaigns", async (importOriginal) => {
-  const actual =
-    await importOriginal<typeof import("@/lib/home/featuredCampaigns")>();
-  return {
-    ...actual,
-    getActiveFeaturedCampaign: getActiveFeaturedCampaignMock,
-  };
-});
-
 vi.mock("@/components/layout/PageLayout", () => ({
   PageLayout: ({
     children,
-    flushBottom,
     language,
   }: {
     children: React.ReactNode;
-    flushBottom?: boolean;
     language: string;
   }) => (
-    <div
-      data-testid="page-layout"
-      data-flush-bottom={String(Boolean(flushBottom))}
-      data-language={language}
-    >
+    <div data-testid="page-layout" data-language={language}>
       {children}
     </div>
   ),
 }));
-
-vi.mock("@/components/atlas/ContinentGlobeStage", () => ({
-  ContinentGlobeStage: () => <div data-testid="home-globe-stage" />,
-}));
-
 import Home, { generateMetadata } from "../page";
-
 const routeParams = (lang: string) => Promise.resolve({ lang });
-
-const renderHome = async () =>
-  render(await Home({ params: routeParams("fr") }));
-
-const renderEnglishHome = async () =>
-  render(await Home({ params: routeParams("en") }));
-
-describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", () => {
+describe("minimal home", () => {
   beforeEach(() => {
-    vi.restoreAllMocks();
     vi.clearAllMocks();
-    getCorpusCountsMock.mockResolvedValue(fixtureCounts);
-    getContinentPeopleCountsMock.mockResolvedValue({});
-    getHubModulesMock.mockResolvedValue([]);
-    loadSynthesisRailMock.mockResolvedValue([]);
-    drawHomeHeroVisualMock.mockReturnValue({ kind: "globe" });
-    getActiveFeaturedCampaignMock.mockReturnValue(null);
-  });
-
-  // @req REQ-044
-  it("keeps one page title and the search-first hero", async () => {
-    await renderHome();
-
-    expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
-    expect(screen.getByRole("search")).toBeInTheDocument();
-  });
-
-  // @req REQ-113
-  it("states the three documented totals", async () => {
-    await renderHome();
-
-    // Built from the registry, not spelled out: the labels were written into
-    // this pattern once, and the day pays gave its tile to noms the assertion
-    // failed on a band that was right. What the page owes is the declared
-    // classes in the declared order, whichever three those are.
-    expect(screen.getByTestId("home-corpus-counts").textContent).toMatch(
-      new RegExp(
-        CORPUS_CLASSES.map(({ tileLabel }) => tileLabel).join(".*"),
-        "i"
-      )
+    loadSeeds.mockImplementation(
+      async (language) => FALLBACK_SEED_WORDS[language]
     );
   });
-
-  /**
-   * Retired on 2026-09-13 (operator ruling): the band gave the home a second
-   * section of two random facts. One fact now takes its turn in the hero's
-   * visual slot instead, beside the question.
-   */
-  // @req REQ-113
-  it("no longer renders the « Saviez-vous » band after the hero", async () => {
-    await renderHome();
-
-    expect(screen.queryByTestId("home-did-you-know")).not.toBeInTheDocument();
-    expect(screen.queryByTestId("home-dyk-fact")).not.toBeInTheDocument();
-  });
-
   // @req REQ-115
-  it("renders a drawn anecdote whole in the hero, from an officially sourced fact", async () => {
-    drawHomeHeroVisualMock.mockReturnValue({ kind: "anecdote" });
-
-    await renderHome();
-
-    const slot = screen.getByTestId("home-hero-anecdote");
-    const headline = within(slot).getByRole("heading", {
-      level: 2,
-    }).textContent;
-    const fact = DID_YOU_KNOW_FACTS.find(
-      (entry) => entry.headline === headline
-    );
-    expect(fact).toBeDefined();
-    expect(fact!.sources?.some((source) => source.tier === "official")).toBe(
-      true
-    );
-    expect(screen.queryByTestId("home-globe-stage")).not.toBeInTheDocument();
-    expect(getContinentPeopleCountsMock).not.toHaveBeenCalled();
-  });
-
-  // @req REQ-145
-  it("reads the drawn anecdote from the English sidecar on the English home", async () => {
-    drawHomeHeroVisualMock.mockReturnValue({ kind: "anecdote" });
-
-    await renderEnglishHome();
-
-    const heading = within(screen.getByTestId("home-hero-anecdote")).getByRole(
-      "heading",
-      { level: 2 }
-    ).textContent;
-    expect(
-      Object.values(DID_YOU_KNOW_FACTS_EN).some(
-        (translation) => translation.headline === heading
-      )
-    ).toBe(true);
-    expect(DID_YOU_KNOW_FACTS.some((fact) => fact.headline === heading)).toBe(
-      false
-    );
-    expect(screen.getByText("Did you know")).toBeInTheDocument();
-  });
-
-  // The hero is full bleed and is the final child of main, so it owns the
-  // seam with the footer rather than leaving main's padding as a strip of
-  // unrelated ground.
-  // @req REQ-044
-  it("lets the final section meet the footer without a bottom gap", async () => {
-    await renderHome();
-
-    expect(screen.getByTestId("page-layout")).toHaveAttribute(
-      "data-flush-bottom",
-      "true"
-    );
-  });
-
-  // A rejected count query means “unknown”, never “empty”. The other hero
-  // data still renders because each server read owns its own fallback, and
-  // every tile keeps its label while withholding its figure — see
-  // HomeCorpusCounts' own doctrine for a class whose total could not be read.
-  // @req REQ-113
-  it("keeps the home usable and withholds every tile figure on read failure", async () => {
-    getCorpusCountsMock.mockRejectedValueOnce(new Error("database offline"));
-
-    await renderHome();
-
-    expect(screen.getByRole("search")).toBeInTheDocument();
-
-    for (const { tileLabel } of CORPUS_CLASSES) {
-      expect(screen.getByTestId("home-corpus-counts").textContent).toContain(
-        tileLabel
+  it.each(["fr", "en"] as const)(
+    "offers search, contribution and project in %s without loading retired sections",
+    async (language) => {
+      render(await Home({ params: routeParams(language) }));
+      const layout = screen.getByTestId("page-layout");
+      expect(
+        Array.from(layout.children).map(
+          (node) => node.getAttribute("data-testid") ?? node.className
+        )
+      ).toEqual(["home-hero", "home-contribute", "home-project"]);
+      expect(screen.getByRole("search")).toBeInTheDocument();
+      expect(
+        screen.getByRole("link", {
+          name: homePurposeCopy[language].contribute.linkLabel,
+        })
+      ).toHaveAttribute("href", `/${language}/contribute`);
+      expect(screen.getByTestId("home-contribute")).toHaveTextContent(
+        homePurposeCopy[language].contribute.corrections
       );
+      expect(screen.getByTestId("home-contribute")).toHaveTextContent(
+        homePurposeCopy[language].contribute.code
+      );
+      expect(counts).not.toHaveBeenCalled();
+      expect(globe).not.toHaveBeenCalled();
+      expect(loadSeeds).toHaveBeenCalledWith(language);
     }
-
-    // Every class marked unreadable, and not one of them printed as a zero.
-    // Read off each `dd` rather than the list's textContent: the band carries
-    // its own <style> child, whose declarations are full of zeroes.
-    const tiles = screen.getAllByTestId(/^home-count-/);
-    expect(tiles).toHaveLength(3);
-    for (const tile of tiles) {
-      expect(tile).toHaveAttribute("data-state", "unavailable");
-      expect(tile.querySelector("dd")?.textContent).toBe("Indisponible");
-    }
-  });
-
-  // @req REQ-113
-  // @req REQ-132
-  it("does not render or load the presentation blocks moved to About or retired modules", async () => {
-    await renderHome();
-
-    for (const testId of [
-      "home-purpose-blocks",
-      "access-axes",
-      "home-synthesis-rail",
-      "home-featured-module",
-      "home-trust-strip",
-    ]) {
-      expect(screen.queryByTestId(testId)).not.toBeInTheDocument();
-    }
-    expect(getHubModulesMock).not.toHaveBeenCalled();
-    expect(loadHeroPreviewMock).not.toHaveBeenCalled();
-    expect(loadSynthesisRailMock).not.toHaveBeenCalled();
-  });
-
-  // The globe's country signal remains a server-side dependency even though
-  // the old FeaturedModule wrapper is gone.
-  // @req REQ-115
-  it("still resolves the continent people counts for the hero", async () => {
-    await renderHome();
-
-    expect(getContinentPeopleCountsMock).toHaveBeenCalledOnce();
-  });
-
-  // @req REQ-115
-  it("draws a fresh right-hand visual for each page request", async () => {
-    const image = {
-      id: "test-map",
-      src: "/images/home/al-idrisi-1154.jpg",
-      alt: "Une carte historique de l'Afrique.",
-      credit: "Carte de test — domaine public",
-      position: "center",
-    } as const;
-    drawHomeHeroVisualMock
-      .mockReturnValueOnce({ kind: "image", image })
-      .mockReturnValueOnce({ kind: "globe" });
-
-    const firstLoad = await renderHome();
-    expect(screen.getByRole("img", { name: image.alt })).toBeInTheDocument();
-    expect(screen.queryByTestId("home-globe-stage")).not.toBeInTheDocument();
-    expect(getContinentPeopleCountsMock).not.toHaveBeenCalled();
-    firstLoad.unmount();
-
-    await renderHome();
-    expect(screen.getByTestId("home-globe-stage")).toBeInTheDocument();
-    expect(
-      screen.queryByRole("img", { name: image.alt })
-    ).not.toBeInTheDocument();
-    expect(getContinentPeopleCountsMock).toHaveBeenCalledOnce();
-    expect(drawHomeHeroVisualMock).toHaveBeenCalledTimes(2);
-  });
-
-  // @req REQ-115
-  it("allows browser checks to pin the globe, on the right, without changing random visitors", async () => {
-    drawHomeHeroVisualMock.mockReturnValue({
-      kind: "image",
-      image: {
-        id: "test-map",
-        src: "/images/home/al-idrisi-1154.jpg",
-        alt: "Une carte historique de l'Afrique.",
-        credit: "Carte de test — domaine public",
-        position: "center",
-      },
+  );
+  // @req REQ-002
+  it("loads new examples on every request and passes them to the search", async () => {
+    loadSeeds.mockResolvedValue({
+      ...FALLBACK_SEED_WORDS.fr,
+      country: ["Rwanda", "Togo"],
     });
-
-    await render(
-      await Home({
-        params: routeParams("fr"),
-        searchParams: Promise.resolve({ hero: "globe" }),
-      })
-    );
-
-    expect(screen.getByTestId("home-globe-stage")).toBeInTheDocument();
-    expect(document.querySelector(".home-hero-inner")).not.toHaveClass(
-      "home-hero-inner--visual-start"
-    );
-    expect(getContinentPeopleCountsMock).toHaveBeenCalledOnce();
-    expect(drawHomeHeroVisualMock).not.toHaveBeenCalled();
+    const first = render(await Home({ params: routeParams("fr") }));
+    expect(screen.getByRole("button", { name: "Rwanda" })).toBeInTheDocument();
+    first.unmount();
+    loadSeeds.mockResolvedValue({
+      ...FALLBACK_SEED_WORDS.fr,
+      country: ["Togo", "Rwanda"],
+    });
+    render(await Home({ params: routeParams("fr") }));
+    expect(screen.getByRole("button", { name: "Togo" })).toBeInTheDocument();
+    expect(loadSeeds).toHaveBeenCalledTimes(2);
   });
-
   // @req REQ-044
   it("declares the canonical and OpenGraph metadata", async () => {
     const metadata = await generateMetadata({ params: routeParams("fr") });
@@ -370,39 +118,5 @@ describe("home page — search, corpus scale and a drawn visual (ETNI-1404)", ()
       "data-language",
       "en"
     );
-  });
-
-  // Disabled by default (editorial-and-experience-plan.md H7-H10, operator
-  // ruling 2026-09-22): with no campaign window open, the section does not
-  // exist on the page at all.
-  // @req REQ-115
-  it("renders no featured campaign when none is active", async () => {
-    await renderHome();
-
-    expect(screen.queryByTestId("home-featured")).not.toBeInTheDocument();
-  });
-
-  // @req REQ-115
-  it("renders the featured campaign once one is active", async () => {
-    getActiveFeaturedCampaignMock.mockReturnValue({
-      id: "peul-fulbe-noms",
-      kind: "naming",
-      eyebrow: "Un nom, plusieurs histoires",
-      heading: "Peul, Fulbe : pourquoi plusieurs noms ?",
-      support: "Découvrez ce que chaque forme raconte.",
-      entity: { kind: "people", id: "PPL_FULA" },
-      sources: [{ title: "Breedveld (1995)" }],
-      sourceCount: 26,
-      linkLabel: "Explorer ces noms",
-    });
-
-    await renderHome();
-
-    expect(screen.getByTestId("home-featured")).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", {
-        name: "Peul, Fulbe : pourquoi plusieurs noms ?",
-      })
-    ).toBeInTheDocument();
   });
 });

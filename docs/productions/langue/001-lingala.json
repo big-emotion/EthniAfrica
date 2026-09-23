@@ -19,5 +19,12 @@
     }
   ],
   "sitePath": "/fr/atlas/langues/lin",
-  "publications": []
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7685962182923767062",
+      "publishedAt": "2026-09-17"
+    }
+  ]
 }

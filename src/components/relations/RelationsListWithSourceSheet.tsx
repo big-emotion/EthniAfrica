@@ -1,5 +1,6 @@
 "use client";
 
+import { peopleDisplayLabel } from "@/lib/search/peopleDisplayNames";
 import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
@@ -151,7 +152,12 @@ export function RelationsListWithSourceSheet({
           assertion={{
             statement:
               activeItem.description ??
-              copy.list.linkWith(activeItem.neighbor.nameMain),
+              copy.list.linkWith(
+                peopleDisplayLabel(
+                  activeItem.neighbor.selfAppellation,
+                  activeItem.neighbor.nameMain
+                )
+              ),
             confidenceScore: activeItem.confidence?.score ?? 0,
             sourceCount: activeItem.confidence?.sourceCount ?? 0,
             lastHumanAuditAt: null,

@@ -132,7 +132,7 @@ describe("GET /api/download?format=csv", () => {
     expect(response.status).toBe(200);
     expect(response.headers.get("Content-Type")).toBe("application/zip");
     expect(response.headers.get("Content-Disposition")).toContain(
-      "ethniafrique-atlas-v2.zip"
+      "ethniafrica-v2.zip"
     );
     expect(zip.subarray(0, 4)).toEqual(LOCAL_FILE_HEADER_SIGNATURE);
   });

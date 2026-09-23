@@ -1,0 +1,27 @@
+{
+  "campaign": "keita-coulibaly-obligations-alliance",
+  "typologie": "patronyme",
+  "episode": 3,
+  "question": {
+    "fr": "D'où vient le nom Keïta ?",
+    "en": "Where does the name Keïta come from?"
+  },
+  "myth": {
+    "fr": "L'alliance entre les Keïta et les Coulibaly règle-t-elle encore tous les conflits aujourd'hui ?",
+    "en": "Does the Keïta–Coulibaly alliance still settle every conflict today?"
+  },
+  "subjects": [
+    {
+      "kind": "patronyme",
+      "id": "PAT_KEITA",
+      "label": { "fr": "Keïta", "en": "Keïta" }
+    },
+    {
+      "kind": "patronyme",
+      "id": "PAT_COULIBALY",
+      "label": { "fr": "Coulibaly", "en": "Coulibaly" }
+    }
+  ],
+  "sitePath": "/fr/atlas/noms/PAT_KEITA",
+  "publications": []
+}

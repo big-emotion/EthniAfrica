@@ -4,8 +4,8 @@
   "nameEn": "Mali",
   "nameOfficial": "République du Mali",
   "summary": "Le Mali porte le nom de l'empire qui domina l'Afrique de l'Ouest du XIIIe au XVIe siècle. Ghana, Mali, Songhaï : trois empires s'y sont succédé, et Djenné comme Tombouctou en gardent l'architecture. Bambara, Peuls, Dogons, Touaregs, Soninké et Songhaï y perpétuent l'épopée de Soundiata et l'art des griots.",
-  "etymology": "Le nom \"Mali\" vient de l'empire du Mali (XIIIe-XVIe siècles), l'un des plus grands empires d'Afrique de l'Ouest. \"Mali\" signifie \"hippopotame\" en mandingue, ou \"lieu où vit le roi\" selon certaines interprétations. Le nom a été choisi lors de l'indépendance en référence à l'empire historique.",
-  "nameOriginActor": "Le nom vient de l'empire du Mali historique, fondé par Soundiata Keïta au XIIIe siècle. Le nom a été choisi lors de l'indépendance en 1960 pour honorer cet héritage historique.",
+  "etymology": "Mali est attesté dans des récits arabes du XIVe siècle. Le nom de l’État actuel renvoie à l’empire médiéval, mais son sens premier n’est pas établi par les sources citées. Djibril Tamsir Niane (1985, p. 153, note 28) propose que Mali provienne d’une transformation de Manden chez les Fulɓe, aussi appelés Peuls en français. Le dictionnaire bambara Bamadaba donne au mot màli le sens d’hippopotame ; ce sens lexical ne démontre pas que le nom du pays en dérive. L’interprétation « lieu où vit le roi » figure notamment dans un document pédagogique de Core Knowledge, sans démonstration linguistique dans le passage concerné. Ces rapprochements doivent être distingués d’une traduction certaine du nom.",
+  "nameOriginActor": "L’Assemblée de la République soudanaise adopte le nom de République du Mali le 22 septembre 1960. Cette décision moderne ne permet pas d’identifier qui a créé le nom médiéval.",
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -16,7 +16,7 @@
       "middleAges": "IIIe-XIIIe siècles : Empire du Ghana (Wagadu), dominé par les Soninké. XIIIe-XVIe siècles : Empire du Mali, fondé par Soundiata Keïta ; la localisation de sa capitale n'est pas établie, l'identification ancienne avec Niani étant réfutée par l'archéologie. XVe-XVIe siècles : Empire Songhai (Gao, Tombouctou, Djenné).",
       "precolonial": "Empires du Ghana, du Mali et Songhai. Royaumes touaregs (Kel Adagh, Ifoghas, Tagelmoust). Royaumes bambara. Commerce transsaharien majeur.",
       "colonization": "1892-1958 : Soudan français (AOF). Le territoire est appelé \"Soudan français\" par les colonisateurs français. 1959-1960 : Fédération du Mali (avec le Sénégal).",
-      "contemporary": "Indépendance en 1960 sous le nom de \"République du Mali\". Le nom \"Mali\" a été choisi en référence à l'empire historique du Mali."
+      "contemporary": "La Fédération du Mali, qui réunit le Sénégal et la République soudanaise, devient indépendante le 20 juin 1960. Le Sénégal s’en retire le 20 août. L’Assemblée de la République soudanaise adopte le nom de République du Mali le 22 septembre 1960. Le nom évoque l’empire médiéval ; il ne désigne pas un État resté inchangé depuis cette époque."
     },
     "kingdoms": [
       {
@@ -292,6 +292,42 @@
         "url": "https://journals.openedition.org/afriques/1098",
         "tier": "referenced",
         "notes": "Retrace comment la lecture Niani a été substituée à un tracé consonantique arabe que les manuscrits ne vocalisent pas. Accès libre."
+      },
+      {
+        "title": "Office of the Historian — A Guide to the United States’ History of Recognition, Diplomatic, and Consular Relations: Mali",
+        "url": "https://history.state.gov/countries/mali",
+        "tier": "official",
+        "notes": "Notice historique du Département d’État des États-Unis. Distingue l’indépendance de la Fédération le 20 juin 1960, le retrait du Sénégal le 20 août et l’adoption du nom de République du Mali le 22 septembre. Consultée le 23 septembre 2026."
+      },
+      {
+        "title": "Office of the Historian — Memorandum From Acting Secretary of State Dillon to President Eisenhower, 23 September 1960, FRUS 1958–1960, volume XIV, document 75",
+        "url": "https://history.state.gov/historicaldocuments/frus1958-60v14/d75",
+        "tier": "official",
+        "notes": "Document diplomatique contemporain rapportant la décision de l’Assemblée de la République soudanaise du 22 septembre 1960. Consulté le 23 septembre 2026."
+      },
+      {
+        "title": "Niane, Djibril Tamsir (1985) — Le Mali et la deuxième expansion manden, Histoire générale de l’Afrique, volume IV, UNESCO/NEA, p. 141–196",
+        "url": "https://bokundoli.org/wp-content/uploads/2021/12/T4-10.pdf",
+        "tier": "official",
+        "notes": "Chapitre de l’Histoire générale de l’Afrique publiée par l’UNESCO, consulté dans une reproduction le 23 septembre 2026. La note 28, p. 153, attribue le passage de Manden à Mali aux Fulɓe. Il s’agit de l’explication proposée par l’auteur, non d’une démonstration du sens premier du nom."
+      },
+      {
+        "title": "Bamadaba — Dictionnaire bambara, entrées Màli et màli",
+        "url": "https://bamadaba.coastsystems.net/lexicon/m/",
+        "tier": "referenced",
+        "notes": "Dictionnaire du Corpus bambara de référence, consulté le 23 septembre 2026. Distingue le nom du pays et le nom de l’hippopotame ; ces entrées ne démontrent pas une dérivation historique du premier à partir du second."
+      },
+      {
+        "title": "Core Knowledge — Mali, document pédagogique, première page du PDF",
+        "url": "https://www.coreknowledge.org/wp-content/uploads/2017/03/CKHG-G4-U5-about-Mali.pdf",
+        "tier": "referenced",
+        "notes": "Document pédagogique consulté le 23 septembre 2026. Il reprend l’explication « lieu où vit le roi », qu’il attribue à l’arabe, sans en fournir de démonstration linguistique dans ce passage. Il atteste la circulation de cette interprétation, pas sa validité étymologique."
+      },
+      {
+        "title": "Fauvelle, François-Xavier (2024) — The imperial capital of Mâli (14th century): A new hypothesis, Medievalista 35",
+        "url": "https://scielo.pt/scielo.php?pid=S1646-740X2024000100055&script=sci_arttext",
+        "tier": "referenced",
+        "notes": "Article de recherche, DOI 10.4000/medievalista.7706, consulté le 23 septembre 2026. Analyse les usages médiévaux du nom Mali dans les récits arabes et l’Atlas catalan de 1375, en les distinguant de la République actuelle. Les attestations du nom n’en établissent pas le sens premier."
       }
     ],
     "demographics": {

@@ -638,7 +638,7 @@ export const PROVERBS_EN: Record<string, ProverbTranslation> = {
       "Among the Igbo, speech without proverbs is like food without seasoning: the proverb makes words palatable.",
     origin: {
       status: "attested",
-      note: "The sentence comes from Chinua Achebe's novel Things Fall Apart (1958). The narrator presents it as the Igbo view of the art of conversation. It has since been quoted as an Igbo proverb, but the atlas rests on no collection of oral tradition, and the Igbo text is not given.",
+      note: "The sentence comes from Chinua Achebe's novel Things Fall Apart (1958). The narrator presents it as the Igbo view of the art of conversation. It has since been quoted as an Igbo proverb, but we rest on no collection of oral tradition, and the Igbo text is not given.",
     },
     entities: [
       {
@@ -944,7 +944,7 @@ export const PROVERBS_EN: Record<string, ProverbTranslation> = {
       "What upbringing failed to pass on, life will teach, often more harshly.",
     origin: {
       status: "attested",
-      note: 'Swahili proverb quoted by the US public broadcaster NPR as an approximate African equivalent of "It takes a village to raise a child". The translation is the atlas\'s own, made from the quoted Swahili text.',
+      note: 'Swahili proverb quoted by the US public broadcaster NPR as an approximate African equivalent of "It takes a village to raise a child". The translation is our own, made from the quoted Swahili text.',
     },
     entities: [
       {
@@ -2324,7 +2324,7 @@ export const PROVERBS_EN: Record<string, ProverbTranslation> = {
       "Given time, what seems inert is transformed: the egg becomes a chick.",
     origin: {
       status: "attested",
-      note: 'Amharic proverb published in 2018 with its original text in an Addis Ababa University journal. The author compares it with "Rome was not built in a day". The literal translation is the atlas\'s own.',
+      note: 'Amharic proverb published in 2018 with its original text in an Addis Ababa University journal. The author compares it with "Rome was not built in a day". The literal translation is our own.',
     },
     entities: [
       {
@@ -2614,7 +2614,7 @@ export const PROVERBS_EN: Record<string, ProverbTranslation> = {
       "Human beings are bound to one another like the strands of a single mat.",
     origin: {
       status: "estimated",
-      note: "Malagasy proverb published with its original text on the website of a librarians' association. The article cites no collection. The atlas rests on none of the major published collections, such as J. A. Houlder's (1915-1916).",
+      note: "Malagasy proverb published with its original text on the website of a librarians' association. The article cites no collection. We rest on none of the major published collections, such as J. A. Houlder's (1915-1916).",
     },
     entities: [
       {
@@ -2649,7 +2649,7 @@ export const PROVERBS_EN: Record<string, ProverbTranslation> = {
     meaning: "A lie does not get far: it is eventually found out.",
     origin: {
       status: "estimated",
-      note: 'The atlas knows this proverb in Somali only through a personal blog. The blog renders it with the English equivalent "Lies have short legs", not word for word, and cites no collection. The atlas does not draw on Georgi Kapchits\'s major dictionary of Somali proverbs (1998).',
+      note: 'We know this proverb in Somali only through a personal blog. The blog renders it with the English equivalent "Lies have short legs", not word for word, and cites no collection. We do not draw on Georgi Kapchits\'s major dictionary of Somali proverbs (1998).',
     },
     entities: [
       {
@@ -2778,7 +2778,7 @@ export const PROVERBS_EN: Record<string, ProverbTranslation> = {
       "A young person left out of the community may seek belonging through destruction.",
     origin: {
       status: "unestablished",
-      note: 'The sentence circulates in English as an "African proverb", with no people, no language and no original text. The atlas knows of no published source attesting its use in an African language.',
+      note: 'The sentence circulates in English as an "African proverb", with no people, no language and no original text. We know of no published source attesting its use in an African language.',
     },
     entities: [],
     sources: [

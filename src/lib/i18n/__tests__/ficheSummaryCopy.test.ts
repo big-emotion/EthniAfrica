@@ -129,10 +129,8 @@ describe("counted fiche summary copy (REQ-151)", () => {
     // The people record still states its silence as one sentence for all five
     // slots. The country record now says it once per count, in words that fit
     // the count, which is why only one of the two keeps this key.
-    expect(peopleCopy.fr.summary.missingData).toBe(
-      "Non renseigné dans l’atlas"
-    );
-    expect(peopleCopy.en.summary.missingData).toBe("Not recorded in the atlas");
+    expect(peopleCopy.fr.summary.missingData).toBe("Non renseigné");
+    expect(peopleCopy.en.summary.missingData).toBe("Not recorded");
 
     for (const summary of [peopleCopy.fr.summary, peopleCopy.en.summary]) {
       expect(summary.missingData).toBeTruthy();

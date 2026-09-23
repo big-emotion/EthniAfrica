@@ -8,7 +8,7 @@ const en = {
     introStrong: "structured database",
     introBeforeAbout: ", organised according to the AFRIK methodology. The ",
     aboutLink: "About page",
-    introAfterAbout: "describes what the atlas contains.",
+    introAfterAbout: "describes what our project contains.",
     invitationBeforeStrong: "I welcome ",
     invitationStrong: "all suggestions and contributions",
     invitationBeforeGithub:
@@ -77,8 +77,9 @@ const en = {
   notes: "Notes (optional)",
   submit: "Submit contribution",
   submitting: "Sending…",
-  success: "Your contribution has been submitted.",
-  error: "The contribution could not be submitted.",
+  success:
+    "Thank you. Your contribution has been received. It will be reviewed before any change to the page.",
+  error: "Your contribution could not be sent. Try again in a moment.",
   invalidJson: "Invalid JSON format",
   verification: "Anti-bot verification",
   notVerified:
@@ -193,7 +194,7 @@ const fr: ContributeCopy = {
     introStrong: "base de données structurée",
     introBeforeAbout: ", organisée selon la méthodologie AFRIK. La page ",
     aboutLink: "À propos",
-    introAfterAbout: "détaille ce que contient l’atlas.",
+    introAfterAbout: "détaille ce que contient notre projet.",
     invitationBeforeStrong: "Je suis ",
     invitationStrong: "ouvert à toutes les propositions ou contributions",
     invitationBeforeGithub:
@@ -262,8 +263,10 @@ const fr: ContributeCopy = {
   notes: "Notes (optionnel)",
   submit: "Soumettre la contribution",
   submitting: "Envoi en cours...",
-  success: "Contribution soumise avec succès !",
-  error: "Erreur lors de la soumission",
+  success:
+    "Merci. Votre contribution a bien été reçue. Elle sera examinée avant toute modification de la page.",
+  error:
+    "Votre contribution n’a pas pu être envoyée. Réessayez dans un instant.",
   invalidJson: "Format JSON invalide",
   verification: "Vérification anti-robot",
   notVerified:

@@ -54,6 +54,7 @@ import {
 } from "@/components/layout/SocialGlyphs";
 import type { Language } from "@/types/shared";
 
+import { CarouselAudioControl } from "@/components/discoveries/CarouselAudioControl";
 import { DiscoveryDestinations } from "@/components/discoveries/DiscoveryDestinations";
 import { DiscoveryDownloads } from "./DiscoveryDownloads";
 import styles from "./DiscoveryReader.module.css";
@@ -436,40 +437,64 @@ export function DiscoveryReader({
           {ordered.map((entry, index) => (
             <article
               className={
-                entry.image ? styles.card : `${styles.card} ${styles.textCard}`
+                entry.image || entry.video
+                  ? styles.card
+                  : `${styles.card} ${styles.textCard}`
               }
               key={entry.id}
               data-publication-id={entry.id}
               aria-label={entry.title[language]}
             >
               {entry.carousel && !failedImageIds.has(entry.id) ? (
-                <div
-                  className={styles.carousel}
-                  role="group"
-                  aria-label={words.carouselLabel}
-                  ref={(node) => {
-                    trackRefs.current[entry.id] = node;
-                  }}
-                  onScroll={() => settleFrame(entry)}
-                >
-                  {entry.carousel.frames.map((frame) => (
-                    <Image
-                      className={styles.carouselFrame}
-                      key={frame.src}
-                      src={frame.src}
-                      alt={frame.alt[language]}
-                      width={frame.width}
-                      height={frame.height}
-                      unoptimized
-                      priority={index === 0}
-                      onError={() =>
-                        setFailedImageIds((current) =>
-                          new Set(current).add(entry.id)
-                        )
-                      }
+                <>
+                  <div
+                    className={styles.carousel}
+                    role="group"
+                    aria-label={words.carouselLabel}
+                    ref={(node) => {
+                      trackRefs.current[entry.id] = node;
+                    }}
+                    onScroll={() => settleFrame(entry)}
+                  >
+                    {entry.carousel.frames.map((frame) => (
+                      <Image
+                        className={styles.carouselFrame}
+                        key={frame.src}
+                        src={frame.src}
+                        alt={frame.alt[language]}
+                        width={frame.width}
+                        height={frame.height}
+                        unoptimized
+                        priority={index === 0}
+                        onError={() =>
+                          setFailedImageIds((current) =>
+                            new Set(current).add(entry.id)
+                          )
+                        }
+                      />
+                    ))}
+                  </div>
+                  <div className={styles.audioControl}>
+                    <CarouselAudioControl
+                      language={language}
+                      src={entry.carousel.audio?.src}
+                      active={index === activeIndex}
                     />
-                  ))}
-                </div>
+                  </div>
+                </>
+              ) : entry.video ? (
+                // The production is the card's own picture, exactly as a
+                // photograph or a carousel is on every other kind of card —
+                // not a boxed player sitting inside the caption column.
+                <EmbedFacade
+                  language={language}
+                  name={entry.title[language]}
+                  embed={entry.video.embed}
+                  poster={entry.video.poster}
+                  watchUrl={entry.video.watchUrl}
+                  active={index === activeIndex}
+                  fill
+                />
               ) : !entry.image || failedImageIds.has(entry.id) ? (
                 <div className={styles.photoFallback} />
               ) : (
@@ -550,36 +575,24 @@ export function DiscoveryReader({
                   {" · "}
                   {entry.source?.shortTitle ?? entry.source?.title}
                 </p>
-                {/* The production is played, or linked to, from here. The facade
-                    sits after the words and before the credit, and only the
-                    card on screen keeps its controls in the tab order. */}
-                {entry.video ? (
-                  <>
-                    <EmbedFacade
-                      language={language}
-                      name={entry.title[language]}
-                      embed={entry.video.embed}
-                      poster={entry.video.poster}
-                      watchUrl={entry.video.watchUrl}
-                      active={index === activeIndex}
-                    />
-                    {entry.video.credit ? (
-                      <p className={styles.credit}>
-                        {words.video}
-                        {" : "}
-                        {entry.video.credit.author}
-                        {" · "}
-                        <a
-                          href={entry.video.credit.licenceUrl}
-                          target="_blank"
-                          rel="noreferrer"
-                          tabIndex={index === activeIndex ? 0 : -1}
-                        >
-                          {words.videoLicences[entry.video.credit.licence]}
-                        </a>
-                      </p>
-                    ) : null}
-                  </>
+                {/* The player itself is the card's picture, drawn in the
+                    background layer above; only its credit stays in the
+                    caption, exactly as an image's credit does. */}
+                {entry.video?.credit ? (
+                  <p className={styles.credit}>
+                    {words.video}
+                    {" : "}
+                    {entry.video.credit.author}
+                    {" · "}
+                    <a
+                      href={entry.video.credit.licenceUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      tabIndex={index === activeIndex ? 0 : -1}
+                    >
+                      {words.videoLicences[entry.video.credit.licence]}
+                    </a>
+                  </p>
                 ) : null}
                 {/* A generated image is not a photo and has no original file
                     to credit; its provenance lives in the detail sheet. */}

@@ -6,12 +6,16 @@ import { colonizationCopy } from "@/lib/i18n/copy/colonization";
 import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import { chromeCopy } from "@/lib/i18n/copy/chrome";
 import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
+import { homeCorpusCountsCopy } from "@/lib/i18n/copy/homeCorpusCounts";
+import { homePurposeCopy } from "@/lib/i18n/copy/homePurpose";
+import { homeStoriesCopy } from "@/lib/i18n/copy/homeStories";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { commonCopy } from "@/lib/i18n/copy/common";
 import { consentCopy } from "@/lib/i18n/copy/consent";
 import { compareCopy } from "@/lib/i18n/copy/compare";
 import { contactCopy } from "@/lib/i18n/copy/contact";
+import { aboutCopy } from "@/lib/i18n/copy/about";
 import { contributeCopy } from "@/lib/i18n/copy/contribute";
 import { countryCopy } from "@/lib/i18n/copy/country";
 import { facetsCopy } from "@/lib/i18n/copy/facets";
@@ -66,6 +70,9 @@ const en = {
   ...commonCopy.en,
   chrome: chromeCopy.en,
   homeHero: homeHeroCopy.en,
+  homeStories: homeStoriesCopy.en,
+  homePurpose: homePurposeCopy.en,
+  homeCorpusCounts: homeCorpusCountsCopy.en,
   nameAnswer: nameAnswerCopy.en,
   searchFeed: searchFeedCopy.en,
   consent: consentCopy.en,
@@ -75,6 +82,7 @@ const en = {
   countryFiche: countryCopy.en,
   facets: facetsCopy.en,
   footer: footerCopy.en,
+  about: aboutCopy.en,
   games: gamesCopy.en,
   sitemapPage: sitemapPageCopy.en,
   publicFlags: publicFlagsCopy.en,
@@ -117,6 +125,9 @@ const fr: UiDictionary = {
   ...commonCopy.fr,
   chrome: chromeCopy.fr,
   homeHero: homeHeroCopy.fr,
+  homeStories: homeStoriesCopy.fr,
+  homePurpose: homePurposeCopy.fr,
+  homeCorpusCounts: homeCorpusCountsCopy.fr,
   nameAnswer: nameAnswerCopy.fr,
   searchFeed: searchFeedCopy.fr,
   consent: consentCopy.fr,
@@ -126,6 +137,7 @@ const fr: UiDictionary = {
   countryFiche: countryCopy.fr,
   facets: facetsCopy.fr,
   footer: footerCopy.fr,
+  about: aboutCopy.fr,
   games: gamesCopy.fr,
   sitemapPage: sitemapPageCopy.fr,
   publicFlags: publicFlagsCopy.fr,

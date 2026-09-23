@@ -11,6 +11,7 @@ with the [confirmed essay](../essais/comprendre-les-societes-par-les-noms-2026-0
 | [Thirteen-week roadmap](roadmap-2026-q4.md)                              | Sequence, dated slots, research briefs, audience reviews and continental horizon                                                    |
 | [Alignment plan](alignment-plan-2026-09-22.md)                           | Ordered work, owners, acceptance checks, dependencies and completion status                                                         |
 | [Mali/Dioula/Traoré research](research-mali-dioula-traore-2026-09-22.md) | S1/S3/S4 research readiness: sourced findings, what can be said now, what still needs an episode, and a fiche-by-fiche corpus check |
+| [Social profiles](profiles-2026-09-22.md)                                | Proposed bios for the six accounts, with character counts; nothing applied                                                          |
 
 The [production ledger](../../productions/README.md) owns cadence and actual
 publication records. [GABARITS-SOCIAL](../../design/gabarits-social/GABARITS-SOCIAL.md)

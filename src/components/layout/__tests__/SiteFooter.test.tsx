@@ -184,7 +184,7 @@ describe("SiteFooter", () => {
 
     expect(
       screen.getByText(
-        `© ${new Date().getFullYear()} EthniAfrica — atlas sous licence CC BY-SA 4.0.`
+        `© ${new Date().getFullYear()} EthniAfrica — contenus sous licence CC BY-SA 4.0.`
       )
     ).toBeInTheDocument();
     expect(screen.queryByText(/Data sources/i)).not.toBeInTheDocument();

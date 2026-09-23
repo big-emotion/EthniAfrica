@@ -41,7 +41,7 @@ export const CHAPITRE_LE_PAYS: DossierChapter = {
       blocks: [
         {
           id: "une-seule-etymologie-sourcee",
-          text: "Les cinquante-quatre fiches de pays de l'atlas renseignent toutes l'étymologie de leur nom et l'acteur qui l'a donné. Une seule rattache cette étymologie à une source — celle du Nigeria, corrigée en écrivant ce chapitre. Pour les cinquante-trois autres, le chapitre des sources documente la démographie et jamais le nom.",
+          text: "Nos cinquante-quatre fiches de pays renseignent toutes l'étymologie de leur nom et l'acteur qui l'a donné. Une seule rattache cette étymologie à une source — celle du Nigeria, corrigée en écrivant ce chapitre. Pour les cinquante-trois autres, le chapitre des sources documente la démographie et jamais le nom.",
           sourceRefs: ["shaw-times-nigeria"],
           figureRefs: ["corpus-countries"],
         },
@@ -178,7 +178,7 @@ export const CHAPITRE_LE_PAYS: DossierChapter = {
       blocks: [
         {
           id: "quatre-objets-nommes",
-          text: "Sous une même case administrative, l'atlas trouve quatre objets nommés de nature différente. Un fleuve a donné son nom au Niger et au Nigeria. Une montagne, le Kirinyaga des Kikuyu, a donné le Kenya. Une expression de géographes arabes, bilād as-sūdān, « le pays des Noirs », a donné le Soudan. Un royaume a donné le Congo.",
+          text: "Sous une même case administrative, nous trouvons quatre objets nommés de nature différente. Un fleuve a donné son nom au Niger et au Nigeria. Une montagne, le Kirinyaga des Kikuyu, a donné le Kenya. Une expression de géographes arabes, bilād as-sūdān, « le pays des Noirs », a donné le Soudan. Un royaume a donné le Congo.",
           sourceRefs: [],
           figureRefs: ["countries-local-kept", "countries-ancient-exonym"],
         },

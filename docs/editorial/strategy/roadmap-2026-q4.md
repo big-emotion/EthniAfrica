@@ -7,6 +7,11 @@ the [evidence note](evidence-2026-09-22.md) supplies dated comparables.
 The operator selected that sequence and explicitly declined a rigid choice
 between two and three new subjects per week.
 
+**23 September update:** the introduction video is published; its carousel is
+next. [The S1 Mali handoff](handoff-s1-mali-2026-09-23.md) preserves the approved
+long script, the request to shorten it, the Facebook findings and the corpus
+correction status. No publication has been scheduled by this work.
+
 ## What is fixed, and what can move
 
 - **Next publication:** the essay's intention, presented through concrete names.

@@ -119,8 +119,8 @@ export function ShortsBlock({
           aria-label={resolvedTitle}
         >
           {emptySlot ? (
-            <li className="w-[130px] shrink-0 snap-start min-[1200px]:w-[160px]">
-              <div className="flex h-[231px] flex-col justify-between rounded-afh-lg border border-dashed border-afh-border p-afh-lg min-[1200px]:h-[284px]">
+            <li className="w-[180px] shrink-0 snap-start min-[1200px]:w-[256px]">
+              <div className="flex aspect-[9/16] flex-col justify-between rounded-afh-lg border border-dashed border-afh-border p-afh-lg">
                 <p className="font-afh-display text-afh-small font-bold uppercase leading-[var(--afh-leading-small)] text-afh-text-soft">
                   {emptySlot.question}
                 </p>
@@ -156,16 +156,16 @@ export function ShortsBlock({
               >
                 <Link
                   href={item.href}
-                  className={`block w-[130px] text-afh-text no-underline ${CHARTER_FOCUS_RING} min-[1200px]:w-[160px]`}
+                  className={`block w-[180px] text-afh-text no-underline ${CHARTER_FOCUS_RING} min-[1200px]:w-[256px]`}
                 >
-                  <div className="relative h-[231px] overflow-hidden rounded-afh-lg bg-afh-bg-warm min-[1200px]:h-[284px]">
+                  <div className="relative aspect-[9/16] overflow-hidden rounded-afh-lg bg-afh-bg-warm">
                     <Image
                       src={item.poster.src}
                       alt={item.poster.alt}
                       unoptimized={reviewed}
                       width={item.poster.width}
                       height={item.poster.height}
-                      sizes="(min-width: 1200px) 160px, 130px"
+                      sizes="(min-width: 1200px) 256px, 180px"
                       className="size-full object-cover"
                     />
                     <span
@@ -180,7 +180,7 @@ export function ShortsBlock({
                     </span>
                     <span
                       aria-hidden="true"
-                      className="absolute left-1/2 top-1/2 size-8 -translate-x-1/2 -translate-y-1/2 min-[1200px]:size-9"
+                      className="absolute left-1/2 top-1/2 size-[44px] -translate-x-1/2 -translate-y-1/2 min-[1200px]:size-[58px]"
                     >
                       <svg viewBox="0 0 36 36" role="presentation">
                         <circle

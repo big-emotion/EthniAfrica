@@ -627,14 +627,23 @@ the height, and takes no floor. `axisHubSpreadCharter.test.ts` holds both
 halves — the floor is inside a `min-width` query, and every axis clears the
 count.
 
-### 8.3 The atlas leads
+### 8.3 Search leads the home; maps earn their place elsewhere
 
-The site's strongest visual asset is the globe, and on the home it is the ninth
-screen of ten. The first is empty.
+The home is a compact entry into a question, not a tour of the corpus
+(operator ruling, 2026-09-23). Its reading order is search, a short invitation
+to contribute, then the project's purpose and source policy. Featured answers,
+stories, maps and counters no longer occupy this page.
 
-**The rule.** On any surface that has a map, the map is above the fold or it is
-not on the page. An atlas whose first screen on a phone contains no Africa
-larger than its 40 px logo is not yet an atlas.
+Four examples introduce surnames, languages, peoples and countries. They are
+drawn per visit and renewed on request. People examples use attested self-given
+forms, never a filed exonym as an implicit recommendation. The selection stays
+still while the reader chooses it.
+
+On surfaces that do carry a map, it is above the fold or absent: a ninth-screen
+map was the failure behind this rule. The home no longer carries a map.
+
+Gated by `homeOrientation.test.tsx`, `homeHeroSeedsCorpus.test.ts` and
+`e2e/home-search-first.spec.ts`.
 
 ### 8.4 One wait, one shape
 
@@ -716,8 +725,7 @@ absence of a `title`; no caller opts in, so no caller can get it wrong.
 
 The band itself was retired on 2026-09-13: its anecdote now takes a third of
 the hero's visual draw, one card, still filed by the kicker and still titled
-only by its own headline. Gated by `homeHeroAnecdoteCharter.test.tsx` (the
-drawn anecdote files itself with a kicker and titles nothing),
+only by its own headline. The home visual was retired on 2026-09-23; the generic rule remains gated by
 `SectionHeading.test.tsx` (a title-less unit renders no
 heading, is marked `is-untitled`, is sized at `small`, and is asserted never
 to reach a heading role) and `homeOrientation.test.tsx` (the home's document

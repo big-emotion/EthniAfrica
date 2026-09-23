@@ -42,7 +42,7 @@ export const CHAPITRE_LA_PERSONNE: DossierChapter = {
       blocks: [
         {
           id: "trente-six-systemes",
-          text: "L'atlas documente trente-six systèmes de nomination. Ils ne se ressemblent pas : un nom de clan, un nom de louange récité, un nom d'attribution géographique, un nom totémique assorti d'un interdit alimentaire. Ce que le mot « patronyme » recouvre en français est, ici, une demi-douzaine de choses différentes.",
+          text: "Nous documentons trente-six systèmes de nomination. Ils ne se ressemblent pas : un nom de clan, un nom de louange récité, un nom d'attribution géographique, un nom totémique assorti d'un interdit alimentaire. Ce que le mot « patronyme » recouvre en français est, ici, une demi-douzaine de choses différentes.",
           sourceRefs: ["afrik-naming-taxonomy"],
           figureRefs: ["patronyme-fiches"],
         },
@@ -175,7 +175,7 @@ export const CHAPITRE_LA_PERSONNE: DossierChapter = {
         },
         {
           id: "aucune-fonctionnalite",
-          text: "L'atlas s'y tient dans son code autant que dans sa prose : aucune fonctionnalité de ce site ne prend un nom de famille et ne rend une origine ethnique. Construire l'inverse reviendrait à reproduire en logiciel le registre de l'administration indirecte, avec la même prétention à savoir qui est quoi.",
+          text: "Nous nous y tenons dans notre code autant que dans notre prose : aucune fonctionnalité de ce site ne prend un nom de famille et ne rend une origine ethnique. Construire l'inverse reviendrait à reproduire en logiciel le registre de l'administration indirecte, avec la même prétention à savoir qui est quoi.",
           sourceRefs: ["dec-040"],
           figureRefs: [],
         },

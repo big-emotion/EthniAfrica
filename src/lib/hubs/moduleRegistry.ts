@@ -36,7 +36,7 @@ export const ACCESS_MODES: AccessMode[] = ["atlas", "dossiers", "jeux"];
 
 // @req REQ-114
 export const ACCESS_MODE_LABELS = {
-  atlas: "L'atlas",
+  atlas: "Parcourir",
   dossiers: "Les dossiers",
   jeux: "Jouer",
 } satisfies Record<AccessMode, string>;

@@ -144,7 +144,10 @@ function resultForms(
     const subjectId = `${subject.type}:${subject.id}`;
     const presentation = subject.naming?.presentation.forms ?? [];
     const filedName = getLocalizedSearchResultName(subject, language);
-    return [
+    // Operator ruling, 2026-09-22: the name a people gives itself comes first,
+    // then the filed name and the others in the fiche's order. Ordering is not
+    // crowning — every chip keeps the same weight; the self-given one is marked.
+    return selfGivenFirst([
       {
         form: filedName,
         subjectId,
@@ -157,7 +160,7 @@ function resultForms(
         subjectId,
         searched: normalizeString(form.form) === wanted,
       })),
-    ];
+    ]);
   });
   const unique = new Map(
     forms.map((form) => [
@@ -166,6 +169,16 @@ function resultForms(
     ])
   );
   return [...unique.values()];
+}
+
+/** A stable partition: self-given forms first, every other form in its order. */
+function selfGivenFirst<T extends { selfGiven?: boolean | null }>(
+  forms: readonly T[]
+): T[] {
+  return [
+    ...forms.filter((form) => form.selfGiven === true),
+    ...forms.filter((form) => form.selfGiven !== true),
+  ];
 }
 
 function feedAvailability(

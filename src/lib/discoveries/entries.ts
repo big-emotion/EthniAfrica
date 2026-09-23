@@ -11,6 +11,8 @@ import type { DiscoveryPublication } from "./catalog";
 import { generatedImagePublications } from "./generatedImages";
 import { DISCOVERY_SLUGS } from "./slugs";
 import { videoPublications } from "./videos";
+import { loadProductionLedger } from "@/lib/productions/ledger";
+import { toDiscoveryPublication } from "@/lib/productions/toDiscoveryPublication";
 
 const selections = [
   {
@@ -182,6 +184,24 @@ function proverbPublications(): DiscoveryPublication[] {
   });
 }
 
+/**
+ * Productions filed under `docs/productions/**\/*.json` (the versioned
+ * ledger, `docs/plans/production-history-plan.md`), projected alongside the
+ * hand-authored `DISCOVERY_VIDEOS`. Most are not yet eligible — the ledger
+ * does not carry a poster or a measured duration for any subject yet — so
+ * this concat is safe today and starts working the moment a ledger entry
+ * gains those fields, with no further code change.
+ *
+ * Known follow-up, not solved here: once a ledger entry becomes eligible for
+ * a subject `DISCOVERY_VIDEOS` already hand-authors (Mandé), the hand-authored
+ * twin must be retired in the same change, or the deck shows the same
+ * production twice.
+ */
+// @req REQ-184
+function ledgerVideoPublications(): DiscoveryPublication[] {
+  return loadProductionLedger().flatMap(toDiscoveryPublication);
+}
+
 // @req REQ-157
 export function getDiscoveryPublications(): DiscoveryPublication[] {
   return [
@@ -191,5 +211,6 @@ export function getDiscoveryPublications(): DiscoveryPublication[] {
     ...videoPublications().filter(
       (publication) => publication.status === "published"
     ),
+    ...ledgerVideoPublications(),
   ];
 }

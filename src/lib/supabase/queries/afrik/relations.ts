@@ -41,6 +41,23 @@ interface NeighborRow {
   id: string;
   name_main: string;
   language_family_id: string;
+  self_appellation?: string | null;
+}
+
+/**
+ * The self-name is one string inside the fiche's `content` blob; `->>` reads
+ * just that string rather than hauling the whole editorial record per neighbor.
+ */
+const NEIGHBOR_SELECT =
+  "id, name_main, language_family_id, self_appellation:content->appellations->>selfAppellation";
+
+function neighborOf(row: NeighborRow): RelationNeighbor {
+  return {
+    id: row.id,
+    nameMain: row.name_main,
+    languageFamilyId: row.language_family_id,
+    selfAppellation: row.self_appellation || undefined,
+  };
 }
 
 function otherSideId(row: RelationRow, pplId: string): string {
@@ -97,7 +114,7 @@ async function getNeighborsMap(
 
   const { data, error } = await supabase
     .from("afrik_peoples")
-    .select("id, name_main, language_family_id")
+    .select(NEIGHBOR_SELECT)
     .in("id", peopleIds);
 
   if (error) {
@@ -107,11 +124,7 @@ async function getNeighborsMap(
 
   const map = new Map<string, RelationNeighbor>();
   for (const row of (data || []) as NeighborRow[]) {
-    map.set(row.id, {
-      id: row.id,
-      nameMain: row.name_main,
-      languageFamilyId: row.language_family_id,
-    });
+    map.set(row.id, neighborOf(row));
   }
   return map;
 }
@@ -240,7 +253,7 @@ export async function getDerivedLinguisticLinks(
 
   const query = supabase
     .from("afrik_peoples")
-    .select("id, name_main, language_family_id")
+    .select(NEIGHBOR_SELECT)
     .eq("language_family_id", familyId)
     .neq("id", pplId);
 
@@ -257,11 +270,7 @@ export async function getDerivedLinguisticLinks(
   return ((data || []) as NeighborRow[]).map((row) => ({
     derived: true,
     basis: "sharedLanguageFamily",
-    neighbor: {
-      id: row.id,
-      nameMain: row.name_main,
-      languageFamilyId: row.language_family_id,
-    },
+    neighbor: neighborOf(row),
   }));
 }
 

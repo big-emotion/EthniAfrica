@@ -265,7 +265,7 @@ describe("SearchFeed", () => {
     );
     expect(
       screen.getByText(
-        "L’atlas a trouvé des fiches liées sans établir qu’elles répondent à ce nom."
+        "Nous avons trouvé des fiches liées sans établir qu’elles répondent à ce nom."
       )
     ).toBeInTheDocument();
     expect(screen.queryByText("Nous ne connaissons pas ce nom.")).toBeNull();
@@ -305,7 +305,7 @@ describe("SearchFeed", () => {
     ).toBeInTheDocument();
     expect(
       screen.queryByText(
-        "L’atlas a trouvé des fiches liées sans établir qu’elles répondent à ce nom."
+        "Nous avons trouvé des fiches liées sans établir qu’elles répondent à ce nom."
       )
     ).toBeNull();
   });
@@ -413,10 +413,66 @@ describe("SearchFeed", () => {
 
     const nearName = container.querySelector('[data-feed-block="near-name"]');
     expect(nearName).toHaveTextContent(
-      "Bassari a une graphie proche et correspond à une autre fiche de l’atlas."
+      "Bassari a une graphie proche et correspond à une autre fiche."
     );
     expect(nearName).not.toHaveTextContent("aucun lien");
     expect(nearName).not.toHaveTextContent("Unrelated text match");
+  });
+
+  // @req REQ-178
+  it("lists the name a people gives itself first, then the filed name and the others", () => {
+    const selfName = "Fulbe (pluriel), Pullo (singulier)";
+    const result = namedResult({
+      type: "people",
+      id: "PPL_FULA",
+      name: "Fula (Fulbe / Peul)",
+      nameEn: "Fula (Fulbe / Peul)",
+      autonym: selfName,
+      naming: {
+        forms: [],
+        eras: [],
+        presentation: {
+          forms: [
+            {
+              form: selfName,
+              selfGiven: true,
+              attestations: [],
+              evidence: [],
+            },
+            {
+              form: "Peul",
+              selfGiven: false,
+              attestations: [],
+              evidence: [],
+            },
+          ],
+          eras: [],
+          disagreements: [],
+          evidence: [],
+        },
+      },
+    });
+    const { container } = render(
+      <SearchFeed
+        query="peul"
+        language="fr"
+        state="exact"
+        results={[result]}
+        subjects={[result]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    const block = container.querySelector('[data-feed-block="appellations"]');
+    const forms = Array.from(
+      block?.querySelectorAll<HTMLElement>("[data-appellation]") ?? [],
+      (chip) => chip.textContent ?? ""
+    );
+    expect(forms[0]).toContain(selfName);
+    expect(
+      forms.findIndex((form) => form.includes("Fula (Fulbe / Peul)"))
+    ).toBeGreaterThan(0);
   });
 
   // @req REQ-180
@@ -571,9 +627,7 @@ describe("SearchFeed", () => {
     expect(
       screen.getByRole("heading", { level: 1, name: "Yoruba" })
     ).toBeInTheDocument();
-    expect(
-      screen.getByText("2 entrées de l’atlas portent ce nom.")
-    ).toBeInTheDocument();
+    expect(screen.getByText("2 entrées portent ce nom.")).toBeInTheDocument();
     expect(
       screen.getByRole("heading", {
         level: 2,

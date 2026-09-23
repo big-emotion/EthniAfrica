@@ -1,7 +1,7 @@
 import type { Language } from "@/types/shared";
 
 const en = {
-  navigation: "Atlas facets",
+  navigation: "Facets",
   filters: "Filters",
   filter: "Filter",
   removeFilter: "Remove filter",
@@ -20,15 +20,15 @@ const en = {
   selectionEmptyCountry: "This selection documents nothing in this country.",
   alreadyNarrowed: "The list is already narrowed to this country.",
   narrowToCountry: "Narrow the list to this country",
-  missingCountryData: "The atlas does not yet document any people by country.",
+  missingCountryData: "We do not yet document any people by country.",
   showMap: "Show map",
   hideMap: "Hide map",
-  areaNoun: "the atlas",
+  areaNoun: "our entries",
   definitions: {
     families: {
       label: "Families",
       sectionName: "Language families",
-      eyebrow: "atlas · language families",
+      eyebrow: "Browse · language families",
       title: "Language families",
       filterHint:
         "This list contains language families. Filters narrow it without changing its nature: filtering by country shows the families found in that country, not the country itself.",
@@ -36,7 +36,7 @@ const en = {
     languages: {
       label: "Languages",
       sectionName: "Languages",
-      eyebrow: "atlas · languages of Africa",
+      eyebrow: "Browse · languages of Africa",
       title: "The languages of Africa",
       filterHint:
         "This list contains languages. Filters narrow it without changing its nature: filtering by country shows the languages spoken there, not the country itself.",
@@ -44,7 +44,7 @@ const en = {
     peoples: {
       label: "Peoples",
       sectionName: "Peoples",
-      eyebrow: "atlas · peoples of Africa",
+      eyebrow: "Browse · peoples of Africa",
       title: "The peoples of Africa",
       filterHint:
         "This list contains peoples. Filters narrow it without changing its nature: filtering by country shows the peoples documented for that country, not the country itself.",
@@ -52,7 +52,7 @@ const en = {
     countries: {
       label: "Countries",
       sectionName: "Countries",
-      eyebrow: "atlas · countries of Africa",
+      eyebrow: "Browse · countries of Africa",
       title: "The countries of Africa",
       filterHint:
         "This list contains countries. Filters narrow it without changing its nature: filtering by language family shows the countries where that family is found, not the family itself.",
@@ -60,7 +60,7 @@ const en = {
     patronymes: {
       label: "Names",
       sectionName: "Names",
-      eyebrow: "atlas · names of Africa",
+      eyebrow: "Browse · names of Africa",
       title: "The names of Africa",
       filterHint:
         "This list contains names. Filters narrow it without changing its nature: filtering by people shows the names carried by that people, not the people itself.",
@@ -71,7 +71,7 @@ const en = {
 type FacetsCopy = typeof en;
 
 const fr: FacetsCopy = {
-  navigation: "Facettes de l'atlas",
+  navigation: "Facettes",
   filters: "Filtres",
   filter: "Filtrer",
   removeFilter: "Retirer le filtre",
@@ -90,15 +90,15 @@ const fr: FacetsCopy = {
   selectionEmptyCountry: "Cette sélection ne documente rien dans ce pays.",
   alreadyNarrowed: "La liste est déjà réduite à ce pays.",
   narrowToCountry: "Réduire la liste à ce pays",
-  missingCountryData: "L’atlas ne renseigne encore aucun peuple par pays.",
+  missingCountryData: "Nous ne renseignons encore aucun peuple par pays.",
   showMap: "Afficher la carte",
   hideMap: "Masquer la carte",
-  areaNoun: "l'atlas",
+  areaNoun: "nos fiches",
   definitions: {
     families: {
       label: "Familles",
       sectionName: "Familles linguistiques",
-      eyebrow: "atlas · les familles linguistiques",
+      eyebrow: "Parcourir · les familles linguistiques",
       title: "Familles linguistiques",
       filterHint:
         "La liste est faite de familles linguistiques. Les filtres la restreignent sans changer sa nature : filtrer par pays montre les familles présentes dans ce pays, pas le pays lui-même.",
@@ -106,7 +106,7 @@ const fr: FacetsCopy = {
     languages: {
       label: "Langues",
       sectionName: "Langues",
-      eyebrow: "atlas · les langues d'Afrique",
+      eyebrow: "Parcourir · les langues d'Afrique",
       title: "Les langues d'Afrique",
       filterHint:
         "La liste est faite de langues. Les filtres la restreignent sans changer sa nature : filtrer par pays montre les langues qu'on y parle, pas le pays lui-même.",
@@ -114,7 +114,7 @@ const fr: FacetsCopy = {
     peoples: {
       label: "Peuples",
       sectionName: "Peuples",
-      eyebrow: "atlas · les peuples d'Afrique",
+      eyebrow: "Parcourir · les peuples d'Afrique",
       title: "Les peuples d'Afrique",
       filterHint:
         "La liste est faite de peuples. Les filtres la restreignent sans changer sa nature : filtrer par pays montre les peuples que ce pays documente, pas le pays lui-même.",
@@ -122,7 +122,7 @@ const fr: FacetsCopy = {
     countries: {
       label: "Pays",
       sectionName: "Pays",
-      eyebrow: "atlas · les pays d'Afrique",
+      eyebrow: "Parcourir · les pays d'Afrique",
       title: "Les pays d'Afrique",
       filterHint:
         "La liste est faite de pays. Les filtres la restreignent sans changer sa nature : filtrer par famille linguistique montre les pays où cette famille est présente, pas la famille elle-même.",
@@ -130,7 +130,7 @@ const fr: FacetsCopy = {
     patronymes: {
       label: "Noms",
       sectionName: "Noms",
-      eyebrow: "atlas · les noms d'Afrique",
+      eyebrow: "Parcourir · les noms d'Afrique",
       title: "Les noms d'Afrique",
       filterHint:
         "La liste est faite de noms. Les filtres la restreignent sans changer sa nature : filtrer par peuple montre les noms que ce peuple porte, pas le peuple lui-même.",

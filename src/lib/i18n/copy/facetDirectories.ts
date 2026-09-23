@@ -3,7 +3,7 @@ import type { Language } from "@/types/shared";
 const en = {
   countries: {
     lede: (total: string, selected: string, filtered: boolean) =>
-      `${total} countries in the atlas${filtered ? ` · ${selected} in this selection` : ""}. Choose one on the globe or in the list to open its page.`,
+      `${total} documented countries${filtered ? ` · ${selected} in this selection` : ""}. Choose one on the globe or in the list to open its page.`,
     documentedPeoples: "documented peoples",
     submit: "Apply",
     searchLabel: "Search countries",
@@ -14,7 +14,7 @@ const en = {
     alphabetical: "Name (A → Z)",
     documentedPeoplesDescending: "Documented peoples (descending)",
     documentedPeoplesSort: "Sort: documented peoples",
-    empty: "No atlas country matches this selection.",
+    empty: "No documented country matches this selection.",
     listLabel: "Countries",
   },
   peoples: {
@@ -30,23 +30,23 @@ const en = {
     allCountries: "All countries",
     family: "Language family",
     allFamilies: "All families",
-    empty: "No atlas people matches this selection.",
+    empty: "No documented people matches this selection.",
     reset: "Return to all peoples",
     listLabel: "Peoples",
     unavailable:
-      "The atlas's peoples are temporarily unavailable. Try again in a moment.",
+      "The documented peoples are temporarily unavailable. Try again in a moment.",
   },
   families: {
     plural: "families",
     lede: (total: string, countryName?: string) =>
-      `${total} families ${countryName ? `documented in ${countryName}` : "in the atlas"}. Choose a country on the globe to see which are spoken there.`,
+      `${total} families ${countryName ? `documented in ${countryName}` : "documented"}. Choose a country on the globe to see which are spoken there.`,
     searchLabel: "Search language families",
     searchPlaceholder: "Family name or identifier",
     country: "Country",
     allCountries: "All countries",
     empty: "No language family matches this selection.",
     peopleCount: (total: string, singular: boolean) =>
-      `${total} ${singular ? "people" : "peoples"} in the atlas`,
+      `${total} documented ${singular ? "people" : "peoples"}`,
     unclassified: (total: string) =>
       `${total} peoples not classified under a published language family.`,
     listLabel: "Language families",
@@ -62,7 +62,7 @@ const en = {
     allCountries: "All countries",
     family: "Language family",
     allFamilies: "All families",
-    empty: "No atlas language matches this selection.",
+    empty: "No documented language matches this selection.",
     reset: "Return to all languages",
     listLabel: "Languages",
   },
@@ -82,7 +82,7 @@ const en = {
     allCountries: "All countries",
     system: "Naming system",
     allSystems: "All systems",
-    empty: "No atlas name matches this selection.",
+    empty: "No documented name matches this selection.",
     reset: "Return to all names",
     listLabel: "Names",
   },
@@ -93,7 +93,7 @@ type FacetDirectoriesCopy = typeof en;
 const fr: FacetDirectoriesCopy = {
   countries: {
     lede: (total, selected, filtered) =>
-      `${total} pays à l’atlas${filtered ? ` · ${selected} dans cette sélection` : ""}. Choisissez-en un sur le globe ou dans la liste pour ouvrir sa page.`,
+      `${total} pays documentés${filtered ? ` · ${selected} dans cette sélection` : ""}. Choisissez-en un sur le globe ou dans la liste pour ouvrir sa page.`,
     documentedPeoples: "peuples documentés",
     submit: "Appliquer",
     searchLabel: "Rechercher un pays",
@@ -104,7 +104,7 @@ const fr: FacetDirectoriesCopy = {
     alphabetical: "Nom (A → Z)",
     documentedPeoplesDescending: "Peuples documentés (décroissant)",
     documentedPeoplesSort: "Tri : peuples documentés",
-    empty: "Aucun pays de l’atlas ne répond à cette sélection.",
+    empty: "Aucun pays documenté ne répond à cette sélection.",
     listLabel: "Pays",
   },
   peoples: {
@@ -120,22 +120,22 @@ const fr: FacetDirectoriesCopy = {
     allCountries: "Tous les pays",
     family: "Famille linguistique",
     allFamilies: "Toutes les familles",
-    empty: "Aucun peuple de l’atlas ne répond à cette sélection.",
+    empty: "Aucun peuple documenté ne répond à cette sélection.",
     reset: "Revenir à tous les peuples",
     listLabel: "Peuples",
     unavailable:
-      "Les peuples de l’atlas sont momentanément indisponibles. Réessayez dans un instant.",
+      "Les peuples documentés sont momentanément indisponibles. Réessayez dans un instant.",
   },
   families: {
     plural: "familles",
     lede: (total, countryName) =>
-      `${total} familles ${countryName ? `documentées en ${countryName}` : "à l’atlas"}. Choisissez un pays sur le globe pour voir lesquelles s'y parlent.`,
+      `${total} familles ${countryName ? `documentées en ${countryName}` : "documentées"}. Choisissez un pays sur le globe pour voir lesquelles s'y parlent.`,
     searchLabel: "Rechercher une famille linguistique",
     searchPlaceholder: "Nom ou identifiant de la famille",
     country: "Pays",
     allCountries: "Tous les pays",
     empty: "Aucune famille linguistique ne répond à cette sélection.",
-    peopleCount: (total) => `${total} peuples à l’atlas`,
+    peopleCount: (total) => `${total} peuples documentés`,
     unclassified: (total) =>
       `${total} peuples non classés dans une famille linguistique publiée.`,
     listLabel: "Familles linguistiques",
@@ -151,7 +151,7 @@ const fr: FacetDirectoriesCopy = {
     allCountries: "Tous les pays",
     family: "Famille linguistique",
     allFamilies: "Toutes les familles",
-    empty: "Aucune langue de l’atlas ne répond à cette sélection.",
+    empty: "Aucune langue documentée ne répond à cette sélection.",
     reset: "Revenir à toutes les langues",
     listLabel: "Langues",
   },
@@ -171,7 +171,7 @@ const fr: FacetDirectoriesCopy = {
     allCountries: "Tous les pays",
     system: "Système de nommage",
     allSystems: "Tous les systèmes",
-    empty: "Aucun nom de l’atlas ne répond à cette sélection.",
+    empty: "Aucun nom documenté ne répond à cette sélection.",
     reset: "Revenir à tous les noms",
     listLabel: "Noms",
   },

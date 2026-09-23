@@ -41,7 +41,7 @@ export const GLOSSARY_DEFINITIONS_EN: Readonly<
   },
   "emique-etique": {
     definition:
-      "Emic: describing with the categories of those concerned. Etic: describing with those of the observer. The atlas carries the emic and flags the etic when it cannot do otherwise.",
+      "Emic: describing with the categories of those concerned. Etic: describing with those of the observer. We carry the emic and flag the etic when we cannot do otherwise.",
     corpusExample:
       "A people filed under a language family devised in 1862 is described etically, and the record says so.",
     provenance: "machine",
@@ -81,7 +81,7 @@ export const GLOSSARY_DEFINITIONS_EN: Readonly<
   },
   onomastique: {
     definition:
-      "The science of proper names — who names, when, and under what authority. It is the reading axis of this atlas more than a discipline the atlas practises.",
+      "The science of proper names — who names, when, and under what authority. It is the reading axis of our project more than a discipline we practise.",
     corpusExample:
       "The five chapters of this dossier are five onomastic regimes.",
     provenance: "machine",
@@ -110,7 +110,7 @@ export const GLOSSARY_DEFINITIONS_EN: Readonly<
   },
   ethnonyme: {
     definition:
-      "The name of a people. It is the central object of the atlas, and the most disputed: 460 records declare theirs contested or inherited from colonisation.",
+      "The name of a people. It is the central object of our project, and the most disputed: 460 records declare theirs contested or inherited from colonisation.",
     corpusExample: "Dinka and Jieng designate the same people, from two sides.",
     provenance: "machine",
   },
@@ -135,7 +135,7 @@ export const GLOSSARY_DEFINITIONS_EN: Readonly<
   },
   nisba: {
     definition:
-      "Arab-Berber name of attribution, formed on a place, a group of origin or a trade. The literature says “tribe” where the atlas writes “group” — the rule holds for the Arab world as for the rest.",
+      "Arab-Berber name of attribution, formed on a place, a group of origin or a trade. The literature says “tribe” where we write “group” — the rule holds for the Arab world as for the rest.",
     corpusExample: "Two records of the corpus declare this system.",
     provenance: "machine",
   },
@@ -168,7 +168,7 @@ export const GLOSSARY_DEFINITIONS_EN: Readonly<
     definition:
       "A name borne after the given name, instituted in the Republic of Zaire on 12 January 1972 in place of Christian given names, and kept after the fall of the regime that decreed it.",
     absenceReason:
-      "No name record in the corpus declares the postname as a system. The term is defined because the chapter uses it, not because the atlas instantiates it.",
+      "No name record in the corpus declares the postname as a system. The term is defined because the chapter uses it, not because we instantiate it.",
     provenance: "machine",
   },
   theonyme: {
@@ -176,7 +176,7 @@ export const GLOSSARY_DEFINITIONS_EN: Readonly<
     corpusExample:
       "Mami Wata: a late collective name, laid over ancient and multiple water deities.",
     absenceReason:
-      "The atlas keeps no records on deities. The term is defined because the chapter “The thing” needs it.",
+      "We keep no records on deities. The term is defined because the chapter “The thing” needs it.",
     provenance: "machine",
   },
   toponyme: {
@@ -245,7 +245,7 @@ export const GLOSSARY_DEFINITIONS_EN: Readonly<
   },
   tribu: {
     definition:
-      "A term of colonial administration, which ranks where it claims to describe. The atlas writes “people” everywhere, without exception, and keeps this one only in order to speak of it.",
+      "A term of colonial administration, which ranks where it claims to describe. We write “people” everywhere, without exception, and keep this one only in order to speak of it.",
     corpusExample:
       "None of the 800 records uses the word to designate what it describes.",
     absenceReason:

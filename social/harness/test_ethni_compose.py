@@ -52,7 +52,7 @@ def carte(**kw):
 
 DECK = {
     "campagne": "essai",
-    "pilier": "L'atlas",
+    "pilier": "EthniAfrica",
     "accent": "ocre",
     "fond": "nuit",
     "serie": "Le vrai nom",
@@ -65,6 +65,15 @@ def image_test(w, h, ton=128):
 
 
 # ---------------------------------------------------------------- §5 layouts
+
+
+def test_a_deck_under_the_retired_atlas_pillar_prints_ethniafrica():
+    # 2026-09-22: the project is never printed as « L'ATLAS ». A deck the
+    # workshop filed under the old pillar, with no series, prints the brand.
+    deck = dict(DECK, pilier="L'atlas", serie=None, cartes=[carte()])
+    bandeau = [b for b in gab._entete(carte(), deck, "carrousel", 900)
+               if b.nom == "entete-bandeau"]
+    assert bandeau[0].texte == "ETHNIAFRICA"
 
 
 def test_the_three_layouts_render_every_format():
@@ -1124,6 +1133,21 @@ def test_a_glyph_the_face_lacks_is_drawn_by_a_fallback_not_as_a_hole():
     for taille in (30, 46, 60):
         f = gab.fonte("nunito", taille, 700)
         assert _encre_de("m'bapɛ", f) != _encre_de("m'bap", f), taille
+
+
+def test_a_credit_in_khmer_or_hebrew_names_its_author_not_a_row_of_boxes():
+    """Two Commons authors of the introductory reel sign in Khmer and in Hebrew.
+
+    Noto Sans, the only fallback, carries neither script, so both credits drew
+    .notdef boxes: an attribution nobody can read, on a CC BY image that owes one.
+    Every run must now be drawn by a face that carries each of its characters.
+    """
+    for auteur in ("ព្រះមហាក្សត្ររាជ", "ויקיג'אנקי"):
+        for taille in (24, 30):
+            f = gab.fonte("nunito", taille, 700)
+            for suite, g in gab._suites(f"{auteur} · CC0", f):
+                trous = [ch for ch in suite if not ch.isspace() and not gab._porte(g, ch)]
+                assert not trous, f"{auteur} : {trous} sans glyphe à {taille}"
 
 
 def test_a_line_the_face_covers_is_drawn_exactly_as_before():

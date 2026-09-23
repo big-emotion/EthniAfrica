@@ -1,0 +1,22 @@
+{
+  "campaign": "traore-jamu-transmission",
+  "typologie": "patronyme",
+  "episode": 2,
+  "question": {
+    "fr": "D'où vient le nom Traoré ?",
+    "en": "Where does the name Traoré come from?"
+  },
+  "myth": {
+    "fr": "Un même nom de famille signale-t-il un seul ancêtre commun ?",
+    "en": "Does sharing a surname point to a single common ancestor?"
+  },
+  "subjects": [
+    {
+      "kind": "patronyme",
+      "id": "PAT_TRAORE",
+      "label": { "fr": "Traoré", "en": "Traoré" }
+    }
+  ],
+  "sitePath": "/fr/atlas/noms/PAT_TRAORE",
+  "publications": []
+}

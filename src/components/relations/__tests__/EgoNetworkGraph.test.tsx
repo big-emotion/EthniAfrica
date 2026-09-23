@@ -103,6 +103,31 @@ describe("EgoNetworkGraph", () => {
     );
   });
 
+  // @req REQ-178
+  it("names a neighbour by the name it gives itself first", () => {
+    const ewe: RelationListItem = {
+      ...FON_ITEM,
+      id: "REL_YORUBA_EWE",
+      neighbor: {
+        id: "PPL_EWE",
+        nameMain: "Ewe",
+        selfAppellation: "Eʋe",
+        languageFamilyId: "FLG_KWA",
+      },
+    };
+    render(
+      <EgoNetworkGraph
+        center={CENTER}
+        edges={[ewe]}
+        onEdgeActivate={vi.fn()}
+        onNodeActivate={vi.fn()}
+      />
+    );
+    const node = screen.getByTestId("node-0");
+    expect(node).toHaveTextContent("Eʋe");
+    expect(node.getAttribute("aria-label")).toMatch(/Eʋe — Ewe/);
+  });
+
   // @req REQ-097
   it("renders one edge stop and one node stop per relation, positioned by array order", () => {
     render(

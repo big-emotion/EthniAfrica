@@ -59,24 +59,29 @@ the work.
   catalogue de la BnF_.
 - **Ticket identifiers.** `ETNI-1388`. A ticket number tells the reader which
   work queue produced a sentence.
+- **The project called "atlas".** « L'atlas ne documente pas encore… », « une
+  source de l'atlas ». Since 2026-09-22 the project speaks in the first person:
+  « nous », « notre projet », EthniAfrica. The titles of real works (UNESCO's
+  _Atlas des langues africaines_, WorldAtlas) and the Atlas mountains are not a
+  self-reference and stay.
 
 The governing sentence: **the reader is owed the silence itself, never the reason
 the workshop has not filled it yet.**
 
 ## How to say it instead
 
-| Curator register                                                                                                                                                                    | Reader register                                                                                                      |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Fiche générée depuis la file d'attente des candidats : le champ n'a pas été renseigné faute de recherche, et attend le protocole de recherche par fiche.                            | L'atlas ne documente pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour.             |
-| Le système « clan_name » ne détermine pas à lui seul le mode de transmission : …                                                                                                    | Le nom de clan ne détermine pas à lui seul le mode de transmission : l'atlas ne le documente pas encore pour ce nom. |
-| Corpus AFRIK — PPL_DIOULA, organisation clanique                                                                                                                                    | EthniAfrica — fiche du peuple Dioula, organisation clanique                                                          |
-| Passage source : dataset/…/PPL_DIOULA.json#content.organization.clanOrganization. Le tier hérité n'est pas résolu ; la revue claim-level reste requise.                             | Reprise du chapitre « Organisation clanique » de la fiche du peuple Dioula.                                          |
-| Aucun porteur décédé n'a été rattaché au jamu par les sources de cette passe.                                                                                                       | Aucun porteur n'a été rattaché au jamu par les sources consultées.                                                   |
-| Les recherches exactes n'ont pas fourni, dans cette passe, un porteur décédé rattaché au patronyme.                                                                                 | Les recherches exactes n'ont pas fourni de porteur décédé rattaché au patronyme.                                     |
-| Personne vivante, donc exclue par le protocole.                                                                                                                                     | Aucun porteur décédé n'est documenté dans les sources consultées.                                                    |
-| Tier resolved from the domain ruling for jstor.org.                                                                                                                                 | _(no note — the tier badge says it)_                                                                                 |
-| No URL and no recognisable citation shape; the tier awaits editorial review.                                                                                                        | _(no note — the Non vérifiée badge says it)_                                                                         |
-| Tier resolved from the domain ruling for unesco.org (sous-domaine ich.unesco.org). Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité. | Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité.                     |
+| Curator register                                                                                                                                                                    | Reader register                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Fiche générée depuis la file d'attente des candidats : le champ n'a pas été renseigné faute de recherche, et attend le protocole de recherche par fiche.                            | Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour.             |
+| Le système « clan_name » ne détermine pas à lui seul le mode de transmission : …                                                                                                    | Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom. |
+| Corpus AFRIK — PPL_DIOULA, organisation clanique                                                                                                                                    | EthniAfrica — fiche du peuple Dioula, organisation clanique                                                         |
+| Passage source : dataset/…/PPL_DIOULA.json#content.organization.clanOrganization. Le tier hérité n'est pas résolu ; la revue claim-level reste requise.                             | Reprise du chapitre « Organisation clanique » de la fiche du peuple Dioula.                                         |
+| Aucun porteur décédé n'a été rattaché au jamu par les sources de cette passe.                                                                                                       | Aucun porteur n'a été rattaché au jamu par les sources consultées.                                                  |
+| Les recherches exactes n'ont pas fourni, dans cette passe, un porteur décédé rattaché au patronyme.                                                                                 | Les recherches exactes n'ont pas fourni de porteur décédé rattaché au patronyme.                                    |
+| Personne vivante, donc exclue par le protocole.                                                                                                                                     | Aucun porteur décédé n'est documenté dans les sources consultées.                                                   |
+| Tier resolved from the domain ruling for jstor.org.                                                                                                                                 | _(no note — the tier badge says it)_                                                                                |
+| No URL and no recognisable citation shape; the tier awaits editorial review.                                                                                                        | _(no note — the Non vérifiée badge says it)_                                                                        |
+| Tier resolved from the domain ruling for unesco.org (sous-domaine ich.unesco.org). Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité. | Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité.                    |
 
 A note that only explained the tier is removed, not replaced: an empty or
 absent `notes` renders nothing, which is the silence the reader is owed.

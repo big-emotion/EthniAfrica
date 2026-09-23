@@ -1,120 +1,63 @@
 import { createServerClient } from "../../server";
 import { logger } from "@/lib/api/logger";
 import { walkRanges } from "@/lib/supabase/queries/walkRanges";
-
-/**
- * Every name the home's seed chips may draw from, as nothing but a string.
- *
- * The chips used to hold twelve words written into the component. Drawing
- * them from the corpus at render time is what makes the row say how much the
- * corpus holds rather than assert it — but it means reading ~870 names on
- * every home request, so this selects the one column it needs and no more.
- * `getAllAfrikCountries` and its siblings select `*`, which drags the
- * editorial `content` JSONB along; a surface that only needs to *name* things
- * has no business paying that (the same argument as getLanguageFamilyLabels).
- *
- * Degrades to an empty list per table rather than throwing: the caller has
- * curated words to fall back on, and a hero is not worth a 500.
- */
-// @req REQ-002
-export const SEED_NAME_PAGE_SIZE = 500;
-
-/**
- * A corpus of ~890 fiches cannot fill this many pages. Reaching the bound
- * means the server is ignoring `.range()`, and looping against a server that
- * ignores it would never terminate.
- */
-const SEED_NAME_MAX_PAGES = 40;
-
-/**
- * The name column differs by table and there is no convention to lean on:
- * `afrik_peoples` names itself `name_main` (the autonym-first field the
- * fiches are built around), the other two `name_fr`. Selecting `name_fr`
- * everywhere costs a 42703 that this module logs and swallows — the caller
- * then serves its fallback words and the band looks perfectly fine, which is
- * how the peoples chip spent a whole review showing the curated four.
- */
-const TABLES = {
-  people: { table: "afrik_peoples", nameColumn: "name_main" },
-  country: { table: "afrik_countries", nameColumn: "name_fr" },
-  languageFamily: {
-    table: "afrik_language_families",
-    nameColumn: "name_fr",
-  },
-} as const;
-
-export interface SeedNameCandidates {
-  people: string[];
-  country: string[];
-  languageFamily: string[];
-}
-
-const EMPTY: SeedNameCandidates = {
-  people: [],
-  country: [],
-  languageFamily: [],
-};
-
-type SupabaseClient = ReturnType<typeof createServerClient>;
-
-/**
- * Paged, not a bare select: PostgREST caps an unbounded read at 1000 rows and
- * says nothing about it, so the peoples table would quietly stop offering its
- * tail the day the corpus passes that mark.
- */
-async function namesInTable(
-  supabase: SupabaseClient,
-  { table, nameColumn }: { table: string; nameColumn: string }
-): Promise<string[]> {
-  let walk: Awaited<ReturnType<typeof walkRanges<unknown>>>;
-  try {
-    walk = await walkRanges<unknown>(
-      async (from, to) => {
-        const { data, error } = await supabase
-          .from(table)
-          .select(nameColumn)
-          .range(from, to);
-        if (error) throw error;
-        return data || [];
-      },
-      { pageSize: SEED_NAME_PAGE_SIZE, maxPages: SEED_NAME_MAX_PAGES }
-    );
-  } catch (error) {
-    logger.error(`Seed chips: could not read names from ${table}`, error);
-    return [];
-  }
-
-  if (walk.truncated) {
-    logger.error(
-      `Seed chips: ${table} exceeded ${SEED_NAME_MAX_PAGES} pages — names are truncated`
-    );
-  }
-
-  const found: string[] = [];
-  for (const row of walk.rows) {
-    // Through `unknown`: the column is chosen at runtime, so the client
-    // cannot type the row and infers its error shape instead.
-    const name = (row as Record<string, unknown>)[nameColumn];
-    if (typeof name === "string" && name) found.push(name);
-  }
-  return found;
-}
+import type { SeedWords } from "@/lib/home/seedWords";
+import type { Language } from "@/types/shared";
 
 // @req REQ-002
-export async function getSeedNameCandidates(): Promise<SeedNameCandidates> {
-  let supabase: SupabaseClient;
+export async function getSeedNameCandidates(
+  language: Language
+): Promise<SeedWords> {
+  const empty: SeedWords = {
+    patronyme: [],
+    language: [],
+    people: [],
+    country: [],
+  };
   try {
-    supabase = createServerClient();
+    const client = createServerClient();
+    const tables = [
+      ["patronyme", "afrik_patronymes", "name_main"],
+      [
+        "language",
+        "afrik_languages",
+        language === "en" ? "content->>nameEn" : "name",
+      ],
+      ["people", "afrik_peoples", "content->appellations->>selfAppellation"],
+      ["country", "afrik_countries", language === "en" ? "name_en" : "name_fr"],
+    ] as const;
+    const entries = await Promise.all(
+      tables.map(async ([kind, table, column]) => {
+        try {
+          const walk = await walkRanges<{ name?: string }>(
+            async (from, to) => {
+              const { data, error } = await client
+                .from(table)
+                .select(`name:${column}`)
+                .order("id")
+                .range(from, to);
+              if (error) throw error;
+              return (data ?? []) as unknown as { name?: string }[];
+            },
+            { pageSize: 500, maxPages: 40 }
+          );
+          if (walk.truncated)
+            logger.error(`Search examples: truncated ${table}`);
+          return [
+            kind,
+            walk.rows.flatMap((row) =>
+              typeof row.name === "string" ? [row.name] : []
+            ),
+          ] as const;
+        } catch (error) {
+          logger.error(`Search examples: could not read ${table}`, error);
+          return [kind, []] as const;
+        }
+      })
+    );
+    return Object.fromEntries(entries) as SeedWords;
   } catch (error) {
-    logger.error("Seed chips: no Supabase client available", error);
-    return EMPTY;
+    logger.error("Search examples: no data client available", error);
+    return empty;
   }
-
-  const [people, country, languageFamily] = await Promise.all([
-    namesInTable(supabase, TABLES.people),
-    namesInTable(supabase, TABLES.country),
-    namesInTable(supabase, TABLES.languageFamily),
-  ]);
-
-  return { people, country, languageFamily };
 }

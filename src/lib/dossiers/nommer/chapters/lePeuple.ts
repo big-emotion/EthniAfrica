@@ -18,7 +18,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
   ordinal: "01",
   title: "Le peuple",
   question:
-    "Presque tous les peuples de l'atlas portent un nom venu du dehors. Qui le leur a donné ?",
+    "Presque tous les peuples documentés ici portent un nom venu du dehors. Qui le leur a donné ?",
   standfirst: {
     id: "standfirst",
     text: "Le corpus tient plus de noms donnés de l'extérieur que de noms revendiqués de l'intérieur. L'écart ne mesure pas d'abord la colonisation : il mesure qui a écrit.",
@@ -39,13 +39,13 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
       blocks: [
         {
           id: "quatre-pour-un",
-          text: "Les 776 fiches de peuple de l'atlas recensent 3 137 noms donnés de l'extérieur, contre 774 noms que les intéressés revendiquent. Quatre pour un.",
+          text: "Nos 776 fiches de peuple recensent 3 137 noms donnés de l'extérieur, contre 774 noms que les intéressés revendiquent. Quatre pour un.",
           sourceRefs: [],
           figureRefs: ["corpus-peoples", "corpus-exonyms", "corpus-autonyms"],
         },
         {
           id: "une-asymetrie-darchive",
-          text: "L'écart est spectaculaire et il est facile de lui faire dire ce qu'il ne dit pas. Il ne mesure pas combien de peuples ont été renommés de force. Il mesure d'abord une asymétrie d'archive : on a beaucoup plus écrit sur ces peuples qu'ils n'ont écrit d'eux-mêmes, et un atlas qui compile des sources compile ce déséquilibre avec elles.",
+          text: "L'écart est spectaculaire et il est facile de lui faire dire ce qu'il ne dit pas. Il ne mesure pas combien de peuples ont été renommés de force. Il mesure d'abord une asymétrie d'archive : on a beaucoup plus écrit sur ces peuples qu'ils n'ont écrit d'eux-mêmes, et un projet qui compile des sources compile ce déséquilibre avec elles.",
           sourceRefs: [],
           figureRefs: [],
         },
@@ -61,7 +61,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
         },
         {
           id: "le-troisieme-nombre",
-          text: "Ce troisième nombre est le sujet de la phrase, pas sa note de bas de page. Écrire « 57 % des peuples de l'atlas contestent leur nom » laisserait entendre que les autres ont été examinés et jugés sans problème. Ils n'ont pas été examinés. Le chantier est ouvert, et un pourcentage le comptabiliserait comme un résultat.",
+          text: "Ce troisième nombre est le sujet de la phrase, pas sa note de bas de page. Écrire « 57 % des peuples documentés ici contestent leur nom » laisserait entendre que les autres ont été examinés et jugés sans problème. Ils n'ont pas été examinés. Le chantier est ouvert, et un pourcentage le comptabiliserait comme un résultat.",
           sourceRefs: [],
           figureRefs: ["status-undeclared"],
         },

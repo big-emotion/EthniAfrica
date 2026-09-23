@@ -232,7 +232,7 @@ describe("DoctrinePageContent", () => {
     expect(
       screen.getByRole("heading", {
         level: 2,
-        name: "Comprendre les indications de l’atlas",
+        name: "Comprendre nos indications",
       })
     ).toBeInTheDocument();
   });

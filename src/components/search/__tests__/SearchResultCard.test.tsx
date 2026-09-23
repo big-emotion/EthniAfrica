@@ -68,6 +68,21 @@ describe("SearchResultCard", () => {
     );
   });
 
+  // @req REQ-178
+  it("opens a people card on its self-given name, then the filed name", () => {
+    renderCard({
+      ...bete,
+      name: "Fula (Fulbe / Peul)",
+      autonym: "Fulbe (pluriel), Pullo (singulier)",
+    });
+
+    expect(
+      screen.getByRole("link", {
+        name: "Fulbe (pluriel), Pullo (singulier) — Fula (Fulbe / Peul)",
+      })
+    ).toHaveAttribute("href", getPeopleRoute("fr", "PPL_BETE"));
+  });
+
   // @req REQ-002
   it("links a country result to its fiche", () => {
     renderCard({ type: "country", id: "CIV", name: "Côte d'Ivoire" });

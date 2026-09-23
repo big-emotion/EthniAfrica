@@ -23,7 +23,7 @@ Ne note jamais de mémoire. Ouvre les sources avant chaque audit :
 | `docs/design/gabarits-social/GABARITS-SOCIAL.md`                           | §3 bis le bloc de paire, §7 ter le gabarit du carrousel et la clôture unique, §9 bis la clôture vidéo |
 | `.claude/skills/ethniafrica-structure/references/gabarit-carrousel-nom.md` | le gabarit de narration du carrousel : l'ordre des cartes, la fiche d'une appellation, la morale      |
 | `docs/editorial/purpose-doctrine.md`                                       | les corrections qui fondent les phrases refusées (critère 4) et les dates (critère 5)                 |
-| `src/lib/i18n/copy/about.ts`                                               | la déclaration publiée au lecteur (`purposeChapter`), référence des mêmes refus et des mêmes dates    |
+| `src/lib/i18n/copy/doctrine.ts`                                            | la méthode publiée au lecteur, dont les quatre phrases refusées (retirées d'À propos le 2026-09-22)   |
 
 **Aucune phrase de doctrine n'est exigée.** Une production qui n'écrit pas « Ce
 peuple n'a pas été divisé » n'a pas 0 pour autant, et ne sort pas en épreuve pour

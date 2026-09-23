@@ -51,6 +51,11 @@ export interface RelationNeighbor {
   id: PeopleId;
   nameMain: string;
   languageFamilyId: string;
+  /**
+   * `content.appellations.selfAppellation`, verbatim. Absent for the fiches
+   * that record no self-name; a surface then names the neighbor by `nameMain`.
+   */
+  selfAppellation?: string;
 }
 
 export interface RelationConfidence {

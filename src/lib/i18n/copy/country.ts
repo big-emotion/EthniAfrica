@@ -57,8 +57,7 @@ const en = {
     sources: "Sources",
   },
   historyDateMissing: "Date not recorded",
-  languagesDerivedNote:
-    "Derived from the people pages documented in the atlas.",
+  languagesDerivedNote: "Derived from the people pages documented here.",
   languagesUnavailable: "Language relations are temporarily unavailable.",
   peoples: {
     inhabitants: "inhabitants",
@@ -66,7 +65,7 @@ const en = {
     count: (count: number) => `${count} ${count === 1 ? "people" : "peoples"}`,
     groupedCount: (count: number) => `${count} peoples`,
     coverage: (share: number) =>
-      `The peoples documented here represent ${share}% of the country's population. The remainder is not yet distributed in the atlas.`,
+      `The peoples documented here represent ${share}% of the country's population. The remainder is not yet distributed here.`,
     estimatedBreakdown: "Estimated or incomplete breakdown",
     diversity: "Ethnolinguistic diversity",
     notDetailed: "not individually detailed",
@@ -92,13 +91,13 @@ const en = {
     boundary: (id: string) => `${id} · published boundary, drawn on appearance`,
     declaredPeoples: "Peoples declared by the page",
     firstEntries: "First entries",
-    none: "No people is attached to this country in the atlas.",
+    none: "No people is attached to this country yet.",
     readFull: "Read the full page",
     documentedOne: "1 documented people",
     documentedMany: (count: string) => `${count} documented peoples`,
   },
   atlas: {
-    areaNoun: "the atlas",
+    areaNoun: "the continent",
     returnTo: (name: string) => `Return to ${name}`,
     missingOutline: (name: string) => `Outline unavailable for ${name}`,
     /**
@@ -115,7 +114,7 @@ const en = {
       label: "Contested status",
       body: "This territory's extent is dated and citable: the 1912 Franco-Spanish convention sets its northern limit at the 27°40′N parallel. Its sovereignty is not. The United Nations has listed it among the non-self-governing territories since 1963 and records no administering power there since Spain withdrew in 1976; the African Union seats a member state for it, the Sahrawi Arab Democratic Republic.",
       encoding:
-        "So the atlas traces what it can cite and leaves unfilled what it cannot: the outline closes, the inside stays empty.",
+        "So we trace what we can cite and leave unfilled what we cannot: the outline closes, the inside stays empty.",
     },
   },
   generated: {
@@ -196,7 +195,7 @@ const fr: CountryCopy = {
     sources: "Sources",
   },
   historyDateMissing: "Date non renseignée",
-  languagesDerivedNote: "Déduit des pages peuple documentées dans l’atlas.",
+  languagesDerivedNote: "Déduit des pages peuple documentées ici.",
   languagesUnavailable:
     "Les liens entre langues et peuples sont temporairement indisponibles.",
   peoples: {
@@ -205,7 +204,7 @@ const fr: CountryCopy = {
     count: (count) => `${count} peuple${count > 1 ? "s" : ""}`,
     groupedCount: (count) => `${count} peuples`,
     coverage: (share) =>
-      `Les peuples documentés ici représentent ${share}\u00a0% de la population du pays. Le reste n'est pas encore réparti dans l’atlas.`,
+      `Les peuples documentés ici représentent ${share}\u00a0% de la population du pays. Le reste n'est pas encore réparti ici.`,
     estimatedBreakdown: "Répartition estimée ou incomplète",
     diversity: "Diversité ethnolinguistique",
     notDetailed: "non détaillée individuellement",
@@ -225,20 +224,20 @@ const fr: CountryCopy = {
     boundary: (id) => `${id} · frontière publiée, tracée à l'apparition`,
     declaredPeoples: "Peuples déclarés par la page",
     firstEntries: "Premières entrées",
-    none: "Aucun peuple rattaché à ce pays dans l’atlas.",
+    none: "Aucun peuple rattaché à ce pays pour l’instant.",
     readFull: "Lire la page complète",
     documentedOne: "1 peuple documenté",
     documentedMany: (count) => `${count} peuples documentés`,
   },
   atlas: {
-    areaNoun: "l'atlas",
+    areaNoun: "le continent",
     returnTo: (name) => `Revenir à ${name}`,
     missingOutline: (name) => `Contour non disponible pour ${name}`,
     disputedStatus: {
       label: "Statut contesté",
       body: "L'étendue de ce territoire est datée et citable : la convention franco-espagnole de 1912 en fixe la limite nord au parallèle 27°40′N. Sa souveraineté ne l'est pas. L'ONU l'inscrit depuis 1963 parmi les territoires non autonomes et n'y enregistre aucune puissance administrante depuis le retrait espagnol de 1976 ; l'Union africaine y siège un État membre, la République arabe sahraouie démocratique.",
       encoding:
-        "L'atlas trace donc ce qu'il peut citer et laisse vide ce qu'il ne peut pas : le trait se referme, l'intérieur reste vide.",
+        "Nous traçons donc ce que nous pouvons citer et laissons vide ce que nous ne pouvons pas : le trait se referme, l'intérieur reste vide.",
     },
   },
   generated: {

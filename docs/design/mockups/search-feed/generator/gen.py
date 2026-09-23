@@ -13,7 +13,8 @@ Where a value comes from:
   space     src/styles/tokens/space.css, brand charter §7 ramp
   radius    src/styles/tokens/radius.css, actions charter §6
   shell     measured on /fr/atlas/recherche: header 61, main py-8, two nested
-            .afh-shell (12+12 px at 430; 1112 px content at 1280)
+            .afh-shell (12+12 px at 430; 1152 px content at 1280,
+            the result page lifting the shell cap with PageLayout wide)
 """
 import re, sys
 SERIF = "font-family: 'Fraunces', Georgia, serif;"
@@ -111,7 +112,7 @@ def h2(text, d, sub=None, action=None, anchor=None):
 
 def header(d):
     pad = "0 32px" if d else "0 12px"
-    nav = ('<div style="display: flex; gap: 24px; font-size: 14px; color: #746557;"><span>L&#39;atlas</span>'
+    nav = ('<div style="display: flex; gap: 24px; font-size: 14px; color: #746557;"><span>Parcourir</span>'
            '<span>Les dossiers</span><span>Jouer</span><span>À propos</span></div>') if d else ""
     return (f'<div style="height: 61px; box-sizing: border-box; padding: {pad}; border-bottom: 1px solid {LINE}; '
             f'display: flex; align-items: center; justify-content: space-between;">'
@@ -186,7 +187,7 @@ def chip(form, d):
 
 def appellations(c, d):
     title = c.get("forms_title", "Les appellations")
-    sub = c.get("forms_sub", "Les plus communes d&#39;abord. Aucune n&#39;est « la bonne ».") if d else None
+    sub = c.get("forms_sub", "Le nom que chaque peuple se donne d&#39;abord, puis les autres. Aucune n&#39;est « la bonne ».") if d else None
     out = h2(title, d, sub)
     cap = 4 if d else 3
     forms = list(c["forms"])
@@ -205,7 +206,7 @@ def poster(s, i, d, w):
     title, dur, label = s
     h = round(w * 16 / 9)
     chip_style = f"position: absolute; top: 8px; {t('eyebrow', d, 700)} color: {MEDIA_INK}; background: {MEDIA_BG}; {PILL} padding: 2px 8px;"
-    size = 36 if d else 32
+    size = 58 if d else 44
     return (f'<a href="#short-{i}" style="flex: none; width: {w}px; text-decoration: none; color: {TEXT};">'
             f'<div style="position: relative; width: {w}px; height: {h}px; {R} overflow: hidden;">'
             f'<img src="{POSTERS[slug(title)]}" alt="Couverture : D’où vient le nom «&nbsp;{title}&nbsp;» ?" style="width: {w}px; height: {h}px; object-fit: cover; display: block;">'
@@ -229,7 +230,7 @@ def empty_poster(p, d, w):
 
 def shorts(c, d):
     sh = c["shorts"]
-    w = 160 if d else 130
+    w = 256 if d else 180
     out = h2(sh.get("title", "Les shorts"), d, sh.get("sub") if d else None, "Tout voir →")
     items, i = "", 0
     if sh.get("empty"):
@@ -381,7 +382,7 @@ def band(c, d, stacked=False):
     sil = "".join(
         f'<div style="border: 1px dashed {LINE}; {R} padding: 16px;"><div style="{t("small", d, 700)} color: {SOFT};">{a}</div>'
         f'<div style="margin-top: 4px; {t("caption", d)} color: {SOFT};">{x}</div></div>' for a, x in b.get("silences", []))
-    s = (f'<div data-feed-part="silences">{h2("Ce que l&#39;atlas ne dit pas", d, "Un silence déclaré, pas un oubli.")}'
+    s = (f'<div data-feed-part="silences">{h2("Ce que nous ne savons pas encore", d, "Un silence déclaré, pas un oubli.")}'
          + f'<div style="margin-top: 12px; display: flex; flex-direction: column; gap: 12px;">{sil}</div></div>') if b.get("silences") else ""
     conv = (f'<div data-feed-part="conviction" style="background: {WARM}; {R} padding: 16px;"><div style="{t("small", d, 700)} color: {TEXT};">{b["conv"][0]}</div>'
             f'<p style="margin: 4px 0 0 0; {t("small" if d else "caption", d)} color: {TEXT};">{b["conv"][1]}</p></div>')
@@ -532,8 +533,8 @@ def body(c, d):
     inner = first_screen(c, d) + feed(c, d, thin) + owed(c, d, thin)
     if d:
         inner_box = f'<div style="width: 880px; margin: 0 auto;">{inner}</div>' if thin else inner
-        # main.afh-shell (margin 20, padding 32) > div.afh-shell (padding 32): content 1112 px at x = 84.
-        return (header(d) + f'<div style="width: 1240px; box-sizing: border-box; margin: 0 auto; padding: 32px 32px;">'
+        # PageLayout wide lifts the shell cap: main.afh-shell (padding 32) > div.afh-shell (padding 32): content 1152 px at x = 64.
+        return (header(d) + f'<div style="box-sizing: border-box; padding: 32px 32px;">'
                 f'<div data-feed-root="1" style="box-sizing: border-box; padding: 0 32px;">{inner_box}</div></div>')
     # main.afh-shell (padding 12) > div.afh-shell (padding 12): 24 px gutter at 430.
     return (header(d) + f'<div style="box-sizing: border-box; padding: 32px 12px;">'

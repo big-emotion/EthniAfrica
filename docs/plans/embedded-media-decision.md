@@ -858,7 +858,70 @@ headline result — "the privacy host sets no cookie" — is indistinguishable f
 "this browser refuses third-party cookies", and the analysis would have
 published a property of the test bench as a property of Google.
 
-## 7. Recommendation
+### 6.5 Carousels re-tested, against TikTok's specific photo/carousel player (2026-09-23)
+
+**Run for ETNI-1985 / DEC-064**, after the operator asked whether §4.5's
+self-hosted-only decision for carousels should be reopened specifically for
+TikTok's carousel (photo) embed — a materially different mechanism from the
+video player §6.1 measured, since a photo post carries no video stream. The
+operator's own conditional ruling, recorded on `DEC-064` before this test ran:
+enable TikTok for carousels only if it measures **comparable to
+`youtube-nocookie.com`**, not merely "better than TikTok's own video embed".
+
+**Method.** `docs/productions/langue/001-lingala.json`'s real published
+carousel (`https://www.tiktok.com/@ethniafrica/photo/7685962182923767062`),
+framed untouched on a local scratch page via TikTok's documented
+`https://www.tiktok.com/player/v1/{post_id}` syntax, one clean browser context,
+no prior TikTok visit. Requests and cookies were captured through Chrome's
+DevTools Protocol (Playwright), which — unlike a page-level network listener —
+does see cross-origin iframe subresources; a same-harness YouTube control
+(§6.1's own embed) reproduced 15 requests across 6 hosts, confirming the
+method sees what §6.1 saw. **Not reproduced**: §6.1's `localStorage`/
+`sessionStorage` read "from inside the frame" — that requires access this
+session's tooling could not obtain across the cross-origin boundary. Every
+figure below is cookies-and-requests only; the storage-key comparison is left
+to whoever next runs this with real DevTools Application-panel access.
+
+| Embed, untouched (carousel-specific)                            |  Requests / hosts |                                   Cookies |
+| --------------------------------------------------------------- | ----------------: | ----------------------------------------: |
+| `tiktok.com/player/v1/{photo_id}` (this run)                    | **73 / 12 hosts** | **5** (4 `.tiktok.com` + 1 `.tiktokw.eu`) |
+| `tiktok.com/player/v1/{video_id}` (§6.1, video, for comparison) |     86 / 12 hosts |                                         4 |
+| `youtube-nocookie.com/embed/{id}` (§6.1, the bar to clear)      |      14 / 6 hosts |                                         0 |
+
+**The hypothesis this test was run to check — that a photo/carousel embed,
+carrying no video stream, might be materially lighter than TikTok's video
+embed — does not hold.** 73 requests to 12 hosts is the same order of
+magnitude as the video embed's 86/12, not a fraction of it: the same
+telemetry, consent and playback-framework bundle loads for a still-image
+carousel as for a video. It initialized the same cookie-banner SDK
+(`cookie_banner_tea_sdk`), generated the same kind of persistent
+`user_unique_id`/`web_id` before any interaction, called a personalised
+`api/related/item_list` recommendation endpoint, and attempted a device
+`getInstalledRelatedApps()` / `accelerometer` read (blocked by permissions
+policy in this frame, but attempted) — none of which a still-image carousel
+has any functional need for.
+
+**The screenshot answers §6.2's question the same way for the carousel as for
+the video.** TikTok's own English-language cookie banner — "Allow cookies from
+TikTok on this browser?", _Decline optional cookies_ / _Allow all_ — draws
+directly over the carousel's first frame, untouched, exactly as §6.2 recorded
+for the video embed. The disqualifying finding of §6.2 is not video-specific.
+
+**Against the operator's own threshold, this does not clear it.** 73/12/5 is
+not "comparable to `youtube-nocookie.com`"'s 14/6/0 by any reading; it is
+closer to — arguably worse in cookie count than — the video embed §6.1 already
+measured and §7 already rejected. Per the conditional ruling recorded on
+`DEC-064`: **`DEC-059`'s self-hosted-only default stands for carousels.** This
+also confirms, empirically, the architectural case §4.5 already made on
+licensing and reuse grounds alone: self-hosting was already the better choice
+before any privacy number existed, and this test finds no privacy number that
+would change that.
+
+**What was not re-tested.** Instagram's carousel embed: no equivalent public
+`/p/{code}/embed/` render could be confirmed reachable for a private-workspace
+post within this session's scope, and inventing a number for it would be worse
+than reporting none. If Instagram's carousel embed is measured later, it
+belongs in this same table, not a new one.
 
 **First choice — self-host the carousels, and play the videos through a
 click-to-load facade over `youtube-nocookie.com`, YouTube alone.** TikTok,

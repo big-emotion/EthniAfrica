@@ -10,111 +10,47 @@ vi.mock("next/navigation", () => ({
   useRouter: () => ({ push: vi.fn(), replace: vi.fn() }),
 }));
 
-vi.mock("@/components/atlas/ContinentGlobeStage", () => ({
-  ContinentGlobeStage: ({
-    peopleCountsByCountry,
-    presentation,
-  }: {
-    peopleCountsByCountry?: Record<string, number>;
-    presentation?: string;
-  }) => (
-    <div
-      data-testid="search-first-globe"
-      data-people-count={peopleCountsByCountry?.NGA}
-      data-presentation={presentation}
-    />
-  ),
-}));
+const HERO_SOURCE = readFileSync(
+  join(process.cwd(), "src/components/home/HomeHero.tsx"),
+  "utf8"
+);
 
-function follows(first: Element, second: Element): boolean {
-  return Boolean(
-    first.compareDocumentPosition(second) & Node.DOCUMENT_POSITION_FOLLOWING
-  );
-}
-
+/** The compact home keeps the search as its only opening action. */
 // @req REQ-115
 describe("search-first home charter (ETNI-1404 / ETNI-1509)", () => {
   // @req REQ-115
-  it("opens on one band ordered copy and search, then the real globe", () => {
-    const { container } = render(
-      <HomeHero
-        language="fr"
-        seedWords={undefined}
-        peopleCountsByCountry={{ NGA: 40 }}
-      />
+  it("opens on the question and search without a competing feature", () => {
+    const { container } = render(<HomeHero language="fr" />);
+    expect(container.querySelector(".home-hero-copy")).toContainElement(
+      screen.getByRole("search")
     );
-
-    const band = container.querySelector(".home-hero-inner");
-    const copy = container.querySelector(".home-hero-copy");
-    const search = screen.getByRole("search");
-    const globe = screen.getByTestId("search-first-globe");
-
-    if (!(band instanceof HTMLElement) || !(copy instanceof HTMLElement)) {
-      throw new TypeError("The hero band and copy must be HTML elements");
-    }
-
-    expect(band).toContainElement(copy);
-    expect(band).toContainElement(search);
-    expect(band).toContainElement(globe);
-    expect(follows(copy, globe)).toBe(true);
-    expect(globe).toHaveAttribute("data-people-count", "40");
-    expect(globe).toHaveAttribute("data-presentation", "hero");
+    expect(container.querySelector(".home-hero-featured")).toBeNull();
   });
 
-  // The globe component owns the capability probe, committed SVG fallback,
-  // keyboard surface and reduced-motion path. The hero only places it.
+  // The globe is not in the opening band any more, and the band does not
+  // import it: the section after the stories owns it.
   // @req REQ-115
-  it("mounts the existing ContinentGlobeStage and retires the historical map", () => {
-    render(<HomeHero language="fr" />);
+  it("keeps the drawn visual out of the opening band", () => {
+    const { container } = render(<HomeHero language="fr" />);
 
-    expect(screen.getByTestId("search-first-globe")).toBeInTheDocument();
+    expect(container.querySelector(".home-hero-visual")).toBeNull();
     expect(screen.queryByRole("img")).not.toBeInTheDocument();
-    expect(screen.queryByText(/al-Idrisi/i)).not.toBeInTheDocument();
-
-    const source = readFileSync(
-      join(process.cwd(), "src/components/home/HomeHero.tsx"),
-      "utf8"
-    );
-    expect(source).toContain(
-      'import { ContinentGlobeStage } from "@/components/atlas/ContinentGlobeStage"'
-    );
-    expect(source).not.toContain("al-idrisi-1154.jpg");
+    expect(HERO_SOURCE).not.toContain("ContinentGlobeStage");
   });
 
-  // A compact content-sized stack is the mobile contract. At 1240px the
-  // exact same document becomes two columns.
-  //
-  // The *ratio* of those columns is not part of the contract and is no longer
-  // asserted — that is layout arithmetic, not a charter breach. What the rule
-  // protects is the two-column shape.
   // @req REQ-115
-  it("is mobile-first and becomes the prescribed two-column grid at 1200px", () => {
-    const source = readFileSync(
-      join(process.cwd(), "src/components/home/HomeHero.tsx"),
-      "utf8"
-    );
-
-    expect(source).toMatch(
-      /\.home-hero-inner\s*\{[^}]*display:\s*grid[^}]*grid-template-areas:\s*"copy"\s*"globe"/
-    );
-    expect(source).toMatch(
-      /@media\s*\(min-width:\s*1200px\)[\s\S]*?grid-template-columns:\s*minmax\(0,\s*[\d.]+fr\)\s*minmax\(0,\s*[\d.]+fr\)[\s\S]*?grid-template-areas:\s*"copy globe"/
-    );
-    expect(source).toMatch(
-      /\.home-hero-globe\s+\.home-globe-stage\s*\{[^}]*min-height:\s*300px[^}]*--afh-globe-stage-height:\s*300px/
-    );
+  it("keeps a single content-sized column at every width", () => {
+    expect(HERO_SOURCE).toContain("grid-template-columns: minmax(0, 1fr)");
+    expect(HERO_SOURCE).not.toContain('"copy featured"');
   });
 
-  // Viewport-height floors made the globe miss the first screen on a phone.
-  // This band grows from its contents and contains no hard-coded palette.
+  // Viewport-height floors made the band claim a screen its content could
+  // not fill. This band grows from its contents and paints only tokens.
   // @req REQ-115
   it("uses neither viewport-sized bands nor colour literals", () => {
-    const source = readFileSync(
-      join(process.cwd(), "src/components/home/HomeHero.tsx"),
-      "utf8"
+    expect(HERO_SOURCE).not.toMatch(/\b(?:dvh|svh|vh)\b|min-h-screen/);
+    expect(HERO_SOURCE).not.toMatch(
+      /#[0-9a-f]{3,8}\b|\brgba?\s*\(|\bhsla?\s*\(/i
     );
-
-    expect(source).not.toMatch(/\b(?:dvh|svh|vh)\b|min-h-screen/);
-    expect(source).not.toMatch(/#[0-9a-f]{3,8}\b|\brgba?\s*\(|\bhsla?\s*\(/i);
   });
 });

@@ -1,61 +1,23 @@
-import Image from "next/image";
-import Link from "next/link";
-
-import { ContinentGlobeStage } from "@/components/atlas/ContinentGlobeStage";
 import { PRODUCT_NAME } from "@/lib/brand";
-import type { CorpusCounts } from "@/lib/home/corpusCounts";
-import type { HomeHeroVisual } from "@/lib/home/homeHeroVisuals";
-import type { SeedWordsByKind } from "@/lib/home/seedWords";
 import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
-import { homePurposeCopy } from "@/lib/i18n/copy/homePurpose";
-import { getLocalizedRoute } from "@/lib/routing";
+import type { SeedWords } from "@/lib/home/seedWords";
 import type { Language } from "@/types/shared";
 
-import { HomeCorpusCounts } from "./HomeCorpusCounts";
-import { HomeHeroAnecdote } from "./HomeHeroAnecdote";
 import { HomeHeroSearch } from "./HomeHeroSearch";
 
-/**
- * The search-first opening band (REQ-115, ETNI-1404), and since 2026-09-13 the
- * whole of the home: the « Saviez-vous » band that followed it is retired, and
- * its anecdote is one of the three visuals the band draws.
- *
- * Reading order stays stable across widths: question, purpose and primary
- * search, then the drawn visual. At desktop the grid places the copy on the
- * left and the visual on the right, on every request (operator ruling,
- * 2026-09-14: the side used to be tossed, which moved the search from one
- * visit to the next); CSS never changes the accessible order.
- */
+/** One per page, so a fixed id is safe and needs no client-side `useId`. */
+const DESCRIPTION_ID = "home-hero-description";
+
+/** The compact opening: one question, search and four renewable examples. */
 export interface HomeHeroProps {
   language: Language;
-  /**
-   * The seed chips' words, drawn from the corpus per request by the page.
-   * Optional so Storybook can render the band with no database behind it —
-   * the chips then fall back to the curated dozen.
-   */
-  seedWords?: SeedWordsByKind;
-  /** Documented peoples per country, forwarded to the globe's honest field. */
-  peopleCountsByCountry?: Record<string, number>;
-  /**
-   * The corpus totals, read per request by the server page. Defaults to
-   * `null` — the tiles then say *Indisponible* rather than zero — so Storybook
-   * and a test can render the band with no database behind it.
-   */
-  counts?: CorpusCounts | null;
-  /** The visual drawn once by the server for this page request. */
-  visual?: HomeHeroVisual;
+  seedWords?: SeedWords;
 }
 
 // @req REQ-044
 // @req REQ-115
-export function HomeHero({
-  language,
-  seedWords,
-  peopleCountsByCountry,
-  counts = null,
-  visual = { kind: "globe" },
-}: HomeHeroProps) {
-  const purpose = homePurposeCopy[language];
+export function HomeHero({ language, seedWords }: HomeHeroProps) {
+  const copy = homeHeroCopy[language];
 
   return (
     <section
@@ -74,126 +36,28 @@ export function HomeHero({
               which no test in this repo reproduces. Inside a string literal no
               whitespace rule applies.
 
-              The no-break space before « ? » is the French rule, and it is
-              load-bearing rather than typographic politeness: the headline
-              wraps on a phone, and a plain space lets « ? » start a line of
-              its own. Written as an escape because the character is invisible
-              in a diff, and a plain space typed here would survive review.
-
               And no aria-label. The heading used to show one class that turned
               every few seconds while its accessible name listed all five — a
-              landmark whose name was a different sentence from its text. The
-              tiles below carry the corpus's size now, so the heading says the
-              one thing it means and is called by it. */}
-          <h1>{homeHeroCopy[language].question}</h1>
-          {/* Three imperatives, then what the site is, then what it owes.
-
-              The band answers « what can I do here », and it used to answer
-              « how does this site work » instead: « y répond fiche par fiche,
-              en accès libre » describes a mechanism to a reader who has not
-              yet been told there is a map to turn, a dossier to read or a game
-              to play. Search stays the primary action below it — this sentence
-              is what stops the surface reading as a search engine with nothing
-              behind the field.
-
-              « atlas » does deliberate work. It borrows a category the reader
-              already holds instead of asking them to learn one, which is the
-              same move as letting the product read as a Wikipedia or a Google
-              presented differently.
-
-              One string inside one expression, never bare JSX text: SWC drops
-              the space between an expression and the text following it on the
-              same line — the bug that shipped « EthniAfricapublie » and which
-              no test in this repo reproduces. The no-break space before « : »
-              is the French rule, written as an escape because the character is
-              invisible in a diff. */}
-          <p className="home-hero-answer" data-testid="home-hero-answer">
-            {"Explorez la carte, lisez les dossiers, jouez\u00a0: " +
-              "l'atlas libre des peuples d'Afrique, sources à l'appui."}
+              landmark whose name was a different sentence from its text. */}
+          <h1>{copy.question}</h1>
+          {/* What the field accepts, in the reader's words, and the field's
+              accessible description. A paragraph and not an h2: it is the
+              title's standfirst, which typography charter §3 keeps out of the
+              outline. The same string-in-one-expression rule as the title. */}
+          <p
+            id={DESCRIPTION_ID}
+            className="home-hero-description"
+            data-testid="home-hero-description"
+          >
+            {copy.description}
           </p>
 
-          {/* What the atlas is for, in the statement the social series opens
-              on (docs/editorial/purpose-doctrine.md). Closed: the band's job
-              is still the search. A native <details>, so the answer opens
-              with no script, and a link to the About chapter that labels the
-              statement as the project's position. */}
-          <details
-            className="home-hero-purpose"
-            data-testid="home-hero-purpose"
-          >
-            <summary>{purpose.toggle}</summary>
-            <div className="home-hero-purpose-panel">
-              {purpose.sentences.map((sentence) => (
-                <p
-                  key={sentence}
-                  className="home-hero-purpose-sentence"
-                  data-testid="home-hero-purpose-sentence"
-                >
-                  {sentence}
-                </p>
-              ))}
-              <Link
-                className="home-hero-purpose-link"
-                href={`${getLocalizedRoute(language, "about")}#about-purpose-title`}
-              >
-                {purpose.linkLabel}
-              </Link>
-              {" · "}
-              <Link
-                className="home-hero-purpose-link"
-                href={getLocalizedRoute(language, "doctrine")}
-              >
-                {purpose.methodLinkLabel}
-              </Link>
-            </div>
-          </details>
-
-          {/* Search is the band's primary action; seed words keep its three
-              corpus entry types visible before the reader starts typing. */}
-          <HomeHeroSearch language={language} seedWords={seedWords} />
-
-          {/* What the atlas documents, counted per request by the server page,
-              and placed under the field rather than over it: the figures
-              qualify the promise the sentence just made, and a reader who came
-              to search reaches the field before the corpus's size. */}
-          <HomeCorpusCounts language={language} counts={counts} />
+          <HomeHeroSearch
+            language={language}
+            describedBy={DESCRIPTION_ID}
+            seedWords={seedWords}
+          />
         </header>
-
-        <div
-          className={`home-hero-visual home-hero-${visual.kind}`}
-          data-testid={`home-hero-${visual.kind}`}
-        >
-          {visual.kind === "globe" ? (
-            /* Placement only: the shared stage keeps ownership of WebGL
-               probing, its SVG fallback, keyboard controls and reduced-motion
-               behaviour. */
-            <ContinentGlobeStage
-              language={language}
-              peopleCountsByCountry={peopleCountsByCountry}
-              presentation="hero"
-              activation="explicit"
-              autoRotate
-            />
-          ) : null}
-          {visual.kind === "image" ? (
-            <figure className="home-hero-figure" data-testid="home-hero-figure">
-              <div className="home-hero-image-frame">
-                <Image
-                  src={visual.image.src}
-                  alt={visual.image.alt}
-                  fill
-                  sizes="(min-width: 1200px) 620px, (min-width: 768px) 560px, calc(100vw - 32px)"
-                  priority
-                  style={{ objectPosition: visual.image.position }}
-                />
-              </div>
-              <figcaption>{visual.image.credit}</figcaption>
-            </figure>
-          ) : null}
-          {visual.kind === "anecdote" ? (
-            <HomeHeroAnecdote language={language} fact={visual.fact} />
-          ) : null}
-        </div>
       </div>
 
       <div className="home-hero-seam" aria-hidden="true" />
@@ -218,10 +82,8 @@ export function HomeHero({
         .home-hero-inner {
           display: grid;
           grid-template-columns: minmax(0, 1fr);
-          grid-template-areas:
-            "copy"
-            "globe";
-          gap: 16px;
+          grid-template-areas: "copy";
+          gap: 32px;
           padding-block: 24px 28px;
         }
 
@@ -232,14 +94,7 @@ export function HomeHero({
           margin: 0 auto;
           text-align: center;
         }
-        /* \`balance\` is back, and now it has something to balance.
-
-           It was dropped when the headline carried the reel: an inline-block
-           sized to its longest segment — 512px of the copy column's 648 at
-           1440 — cannot share a line with anything, so balancing spent its
-           freedom on the three words left over and broke the band as
-           « Une question / sur les / 790 peuples / d'Afrique ? ». The
-           headline is six short words of plain text again, which is exactly
+        /* The headline is six short words of plain text, which is exactly
            the case balance is for. */
         .home-hero-copy h1 {
           font-family: var(--afh-font-display);
@@ -247,13 +102,9 @@ export function HomeHero({
           /* The scale's hero step, not the home's own clamp: that one was
              written in px, which ignores the reader's font-size setting
              (typography charter §2), and topped out at 56px, above the
-             scale's ceiling. It is 34px rather than 30px at 430. */
+             scale's ceiling. */
           font-size: var(--afh-text-hero);
           line-height: var(--afh-leading-hero);
-          /* 12px, not 16: the hero step added four pixels to the title at
-             430, and the globe's share of the first fold (brand charter §8.3,
-             home-search-first.spec) fell to 119px of its 120. The gap under
-             the title gives them back rather than the title's step. */
           margin: 0 0 var(--afh-space-lg);
           color: var(--afh-text);
           text-wrap: balance;
@@ -261,14 +112,12 @@ export function HomeHero({
 
         /* A class, not \`.home-hero-copy p\`: a descendant selector outranks
            a single class, so an element rule would silently override
-           whatever the answer sets for itself.
+           whatever the description sets for itself.
 
            Reading size and full ink, because this is the band's prose. At
            the retired lede's smaller, softer grey it would read as a caption
-           under the headline rather than as its answer. No rule above it
-           either — the hairline separated a standfirst from a lede, and
-           neither is here now. */
-        .home-hero-answer {
+           under the headline rather than as its answer. */
+        .home-hero-description {
           margin: 0 auto;
           max-width: 52ch;
           font-size: var(--afh-text-body);
@@ -276,156 +125,10 @@ export function HomeHero({
           color: var(--afh-text);
         }
 
-        /* A quiet control rather than a second argument: small, soft ink,
-           an ocre underline that says it opens something. The disclosure
-           marker is redrawn as a chevron so it turns with the state instead
-           of the browser's triangle, which sits on the baseline at a
-           different size in every engine.
-
-           No 52ch measure, unlike the answer above it: the statement runs the
-           copy column's full width (operator ruling, 2026-09-14). */
-        .home-hero-purpose {
-          margin-top: var(--afh-space-sm);
-        }
-        .home-hero-purpose summary {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          min-height: 44px;
-          cursor: pointer;
-          list-style: none;
-          font-size: var(--afh-text-small);
-          font-weight: 600;
-          color: var(--afh-text-soft);
-          text-decoration: underline;
-          text-decoration-color: var(--afh-cat-ocre);
-          text-underline-offset: 4px;
-        }
-        .home-hero-purpose summary::-webkit-details-marker {
-          display: none;
-        }
-        .home-hero-purpose summary::after {
-          content: "";
-          width: 7px;
-          height: 7px;
-          border-right: 1.5px solid currentColor;
-          border-bottom: 1.5px solid currentColor;
-          transform: translateY(-2px) rotate(45deg);
-          transition: transform 160ms ease-out;
-        }
-        .home-hero-purpose[open] summary::after {
-          transform: translateY(2px) rotate(-135deg);
-        }
-        .home-hero-purpose summary:hover,
-        .home-hero-purpose summary:focus-visible {
-          color: var(--afh-text);
-        }
-        .home-hero-purpose-panel {
-          padding-block: var(--afh-space-xs) var(--afh-space-sm);
-        }
-        /* Prose, so the answer's own dress: body face, body step, full ink.
-           Set in the display face at lead it was a third headline voice on a
-           band whose display face already speaks twice (the title at 900, the
-           anecdote at 700), and at a weight Fraunces is not even loaded in.
-           One voice for what the atlas says, the display face for what it
-           names (operator ruling, 2026-09-14). */
-        .home-hero-purpose-sentence {
-          margin: 0 0 var(--afh-space-xs);
-          font-family: var(--afh-font-body);
-          font-size: var(--afh-text-body);
-          line-height: var(--afh-leading-body);
-          color: var(--afh-text);
-          /* pretty, not balance: balance evens the lines out and so never
-             lets them reach the column's edge, which is the width asked for.
-             pretty still refuses a one-word last line. */
-          text-wrap: pretty;
-        }
-        .home-hero-purpose-link {
-          display: inline-flex;
-          align-items: center;
-          min-height: 44px;
-          font-size: var(--afh-text-small);
-          font-weight: 600;
-          color: var(--afh-text-soft);
-          text-underline-offset: 4px;
-        }
-        .home-hero-purpose-link:hover,
-        .home-hero-purpose-link:focus-visible {
-          color: var(--afh-text);
-        }
-        @media (prefers-reduced-motion: reduce) {
-          .home-hero-purpose summary::after {
-            transition: none;
-          }
-        }
-
-        /* The tile band, under the search rather than under the prose.
-
-           A rank below both — small labels, soft ink, figures in display type
-           — because these are the corpus's own measurements and not the band's
-           argument.
-
-           32px, and the ramp's reason for it (brand charter §7). The search
-           is a block of three parts — label, field, chips — held together at
-           8 and 16; at 24 the tiles sat one ramp step from the chips above
-           them, close enough that the band's rows read as one stack of
-           controls and the figures as a fourth row of suggestions. 32 puts
-           the tiles a rank away without reaching the 36/48 that separates
-           the search from the prose: they close the copy column as its
-           footer rather than becoming a fourth thing the reader is handed.
-
-           No max-width of its own. The prose keeps its 52ch measure through
-           .home-hero-answer; the tiles are a grid, and holding them to a text
-           measure would leave the third one hanging off the column's edge at
-           1440. */
-        .home-hero-copy .home-corpus-counts {
-          margin-top: 32px;
-        }
-
-        .home-hero-visual {
-          grid-area: globe;
-          min-width: 0;
-          width: 100%;
-        }
-
-        /* The shared globe is intentionally compact only on this opening
-           surface. Its engine and interaction model remain untouched. */
-        .home-hero-globe .home-globe-stage {
-          min-height: 300px;
-          --afh-globe-stage-height: 300px;
-          max-width: 430px;
-        }
-
-        .home-hero-figure {
-          width: 100%;
-          max-width: 430px;
-          margin: 0 auto;
-        }
-        .home-hero-image-frame {
-          position: relative;
-          overflow: hidden;
-          width: 100%;
-          aspect-ratio: 1;
-          border: 1px solid var(--afh-border);
-          border-radius: var(--afh-radius-lg);
-          background: var(--afh-surface);
-          box-shadow: var(--afh-elev-warm);
-        }
-        .home-hero-image-frame img {
-          object-fit: cover;
-        }
-        .home-hero-figure figcaption {
-          margin-top: 10px;
-          font-size: var(--afh-text-caption);
-          line-height: var(--afh-leading-caption);
-          color: var(--afh-text-soft);
-        }
-
         /* Taller on the phone than the desktop's original 26px: it is the
            one thing that tells a reader the hero has ended and the next
            section has begun, and at 430px the two used to abut close enough
-           to read as one band. The @media below restores the desktop value,
-           which was never the complaint. */
+           to read as one band. */
         .home-hero-seam {
           height: 44px;
           background: var(--afh-bg);
@@ -434,74 +137,13 @@ export function HomeHero({
 
         @media (min-width: 768px) {
           .home-hero-inner {
-            gap: 24px;
             padding-block: 32px 36px;
           }
           .home-hero-seam {
             height: 26px;
           }
-          .home-hero-globe .home-globe-stage {
-            min-height: 380px;
-            --afh-globe-stage-height: 380px;
-            max-width: 560px;
-          }
-          .home-hero-figure {
-            max-width: 560px;
-          }
         }
 
-        @media (min-width: 1200px) {
-          .home-hero-inner {
-            /* 1.15/0.85, not an even split. It was set for the rotating
-               headline's widest segment, then kept for the census line's
-               499px; both are gone, and the split stays for the tile band —
-               three tiles across an even 0.5fr column measure 176px each,
-               which is narrower than they are tall and reads as a row of
-               buttons rather than a row of figures. The visual gives up ~18%
-               of its width and nothing else: its 620px is a max-width, a
-               ceiling and not a floor. */
-            grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-            grid-template-areas: "copy globe";
-            /* Topped, never centred (operator ruling, 2026-09-14). Centred,
-               the visual recentred whenever the copy column changed height:
-               opening « Notre propos » slid it down under the reader's click,
-               and a whole anecdote left a screen of parchment above the
-               question. */
-            align-items: start;
-            column-gap: 48px;
-            row-gap: 20px;
-            padding-block: 40px;
-          }
-          .home-hero-copy {
-            margin: 0;
-            /* The column, not 36rem. That cap was set when the two columns
-               split evenly at 564px; the left one is 648px now, and holding
-               the copy at 576 was breaking the headline across a line more
-               than it needed inside a column with room for it. The prose keeps
-               its own measure through .home-hero-answer's 52ch, which is what
-               actually governs reading comfort here. */
-            max-width: 100%;
-            text-align: left;
-          }
-          /* The prose block loses its auto margins here. It is a centred box
-             on a phone and flush-left in this column, and a block that kept
-             \`margin: auto\` would stay centred inside a left-aligned column —
-             a second left edge inside one block, which §8.1 of the brand
-             charter counts as a defect. The tile band makes the same switch
-             for itself, in its own file, at this same width. */
-          .home-hero-answer {
-            margin-inline: 0;
-          }
-          .home-hero-globe .home-globe-stage {
-            min-height: 460px;
-            --afh-globe-stage-height: 460px;
-            max-width: 620px;
-          }
-          .home-hero-figure {
-            max-width: 620px;
-            margin-inline: 0;
-          }
-        }
       `}</style>
     </section>
   );

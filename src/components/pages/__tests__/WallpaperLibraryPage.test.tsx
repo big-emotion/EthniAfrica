@@ -79,13 +79,13 @@ describe("WallpaperLibraryPage", () => {
     render(<WallpaperLibraryPage language="fr" />);
 
     expect(screen.getByTestId("ladder-provenance-border")).toHaveTextContent(
-      "Hors de l’atlas"
+      "Hors de notre champ"
     );
     expect(screen.getByTestId("ladder-provenance-sapiens")).toHaveTextContent(
-      "Hors de l’atlas"
+      "Hors de notre champ"
     );
     expect(screen.getByTestId("ladder-provenance-kongo")).toHaveTextContent(
-      "Dans l’atlas"
+      "Dans notre champ"
     );
   });
 
@@ -158,7 +158,7 @@ describe("WallpaperLibraryPage", () => {
       "Ancient Egypt"
     );
     expect(screen.getByTestId("ladder-provenance-sapiens")).toHaveTextContent(
-      "Outside the atlas"
+      "Outside our scope"
     );
   });
 });

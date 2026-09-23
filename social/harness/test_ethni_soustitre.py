@@ -113,6 +113,29 @@ def test_a_mismatched_word_does_not_drop_a_caption():
     assert len(minutees) == 2, minutees
 
 
+COMORES = ("Et aux Comores, comment les appartenances à une île s’articulent-elles "
+           "avec une identité comorienne ? Des noms que portent des personnes. "
+           "Quand vous dites « Mali », de quelle histoire parlez-vous ?")
+
+
+def test_french_spaced_punctuation_never_becomes_a_caption_of_its_own():
+    """A long sentence cut just before « ? » left the mark alone as a caption.
+
+    It carries no word, so `minuter` found nothing to time and stopped there:
+    every caption after it was dropped, and the sign-off card cued on the last
+    one that survived — at 54,72 s of a 109 s reel (Comprendre-Afrique-Noms).
+    """
+    captions = st.segmenter(COMORES)
+    for c in captions:
+        assert st.TOKEN_PATTERN.findall(c), f"sous-titre sans mot : {c!r} dans {captions}"
+    assert " ".join(captions).split() == COMORES.split()
+
+    mots = [m for m in COMORES.replace("« ", "").replace(" »", "").split()
+            if st.TOKEN_PATTERN.findall(m)]
+    alignes = [{"word": w, "start": i * 0.3, "end": i * 0.3 + 0.2} for i, w in enumerate(mots)]
+    assert len(st.minuter(captions, alignes)) == len(captions)
+
+
 # ---------------------------------------------------------------- the pivot
 
 

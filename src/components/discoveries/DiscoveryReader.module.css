@@ -141,6 +141,16 @@
   background: var(--afh-night-ink);
 }
 
+/* Above the shade (z-index: -1) without naming a stacking value that would
+   compete with it: .card's isolation makes z-index: 1 here mean "above the
+   media and shade layers", nothing more specific is needed. */
+.audioControl {
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  right: 1rem;
+}
+
 /* Dark at both ends: the top bar and the caption each need a ground the
    photograph cannot be trusted to give them. */
 .shade {

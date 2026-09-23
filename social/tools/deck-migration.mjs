@@ -12,10 +12,10 @@ import path from "node:path";
 const LICENCE =
   /(CC0|CC BY-SA \d(?:\.\d)?|CC BY-ND[\w.\- ]*|CC BY-NC[\w.\- ]*|CC BY \d(?:\.\d)?|domaine public|public domain|licence ouverte|open licence)/i;
 
-export const PILIER_DEFAUT = "L'atlas";
+export const PILIER_DEFAUT = "EthniAfrica";
 
 export const ACCENT_PAR_PILIER = {
-  "L'atlas": "ocre",
+  EthniAfrica: "ocre",
   "Les dossiers": "teal",
   Jouer: "perv",
 };

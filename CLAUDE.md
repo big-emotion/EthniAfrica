@@ -10,7 +10,7 @@ Since the reorientation of 17 September 2026 it answers **one question — where
 
 Four consequences, before anything below makes sense:
 
-- **No form is promoted, anywhere.** DEC-057 retired the "pivot" — a head result promoted because its relevance doubled the runner-up's. A page that crowns a name contradicts the doctrine it exists to publish. `selectNameSubject` returns _every_ entity answering to the name, and several means a disambiguation rather than a choice made for the reader.
+- **No form is promoted, anywhere.** DEC-057 retired the "pivot" — a head result promoted because its relevance doubled the runner-up's. A page that crowns a name contradicts the doctrine it exists to publish. `selectNameSubject` returns _every_ entity answering to the name, and several means a disambiguation rather than a choice made for the reader. **The name a people gives itself is listed first** (operator ruling, 2026-09-22), then the filed name and the others, on every surface that shows a people's names — an order, not a promotion: every form keeps the same weight.
 - **A reader arrives with an exonym, not with the filed name.** The Fula entry is filed `Fula (Fulbe / Peul)`; « peul » is what gets typed. Matching the filed name alone made the most-searched African ethnonym in French reach no subject at all.
 - **Five classes answer this question in five storage shapes**, and exactly one module reads all five. See below.
 - **Listing what the corpus contains is the retired register.** Sentences that enumerate the six classes read as an encyclopaedia without using the word, which is what the reorientation moved away from. The copy modules were passed for this on 18 September 2026; `docs/editorial/refonte-plan-2026-09-18.md` records what was found and what was deliberately left.
@@ -697,6 +697,8 @@ Three fiche fields are published to the reader **verbatim**, with no sanitising 
 So those three may carry no repository path, no JSON field path, no raw `PPL_`/`FLG_`/`PAT_` identifier, and none of the pipeline's own vocabulary — _file d'attente_, _la passe_, _protocole de recherche_, _revue claim-level_, _tier hérité_. That last class is the one that got through: it carries no path and no identifier, so it reads as ordinary French, and 774 name fiches told their visitors which queue they came from and which research protocol they awaited. **The reader is owed the silence itself, never the reason the workshop has not filled it yet.**
 
 `checkEditorialRules.ts` enforces this as `reader-facing-register` at error severity; the banned vocabulary is one exported constant, `INTERNAL_REGISTER_PATTERNS`. Doctrine, rewrite table and a paste-able prompt block for curation sessions: `docs/editorial/reader-facing-register.md`.
+
+**No reader-facing text calls the project an "atlas"** (operator ruling, 2026-09-22). An object that "documents", "holds" or "does not say" is replaced by a project that speaks: « nous », « notre projet », EthniAfrica; the section a reader browses is « Parcourir ». URLs (`/atlas/…`), identifiers, comments, the titles of real works (UNESCO's _Atlas des langues africaines_…) and the Atlas mountains are not self-references and stay. `src/lib/__tests__/noAtlasInReaderCopy.test.ts` scans the site's string literals and JSX text for it.
 
 ### Bilingual content (`npm run check:translation-parity`, reported — never blocking)
 

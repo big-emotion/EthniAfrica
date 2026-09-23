@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "dossier",
-    "directives": "A dossier is shared across relevant atlas fiches and discovered through editorial themes. Cite every prose block, reading and figure. Numerical thesis figures are optional (zero to three). A chapter may omit paired readings; if a comparison is included, publish both sourced perspectives. Illustrations may be null; otherwise retain attribution, licence and original file links. Distinguish political formations, peoples and present-day countries. Record uncertainty in gaps. Keep stable identifiers and URLs.",
+    "directives": "A dossier is shared across relevant EthniAfrica fiches and discovered through editorial themes. Cite every prose block, reading and figure. Numerical thesis figures are optional (zero to three). A chapter may omit paired readings; if a comparison is included, publish both sourced perspectives. Illustrations may be null; otherwise retain attribution, licence and original file links. Distinguish political formations, peoples and present-day countries. Record uncertainty in gaps. Keep stable identifiers and URLs.",
     "readerFacing": ["gaps[].reason", "sources[].title", "sources[].notes"]
   },
   "id": "DOS_EXEMPLE",

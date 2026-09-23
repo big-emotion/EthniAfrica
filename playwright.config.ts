@@ -78,17 +78,11 @@ const moderatorDesktop = {
   viewport: { width: 1280, height: 900 },
 };
 
-// These two specs measure a fixture harness, not the app this config boots:
-// the visual proof reads reviewed boards served on :4173 and the responsive
-// geometry runs against `search-feed-dev-server.mjs`. Each has its own config
-// (`e2e:search-feed-parity`, `e2e:search-feed-responsive`). Picked up here they
-// fail on the missing board server and on the real app's aborted RSC prefetches,
-// which is 51 red tests that say nothing about the search page.
-const NOT_RUN_HERE = [
-  /\.setup\.ts$/,
-  /search-feed-visual-proof\.spec\.ts$/,
-  /search-feed-responsive\.spec\.ts$/,
-];
+// This spec measures a fixture harness, not the app this config boots: the
+// responsive geometry runs against `search-feed-dev-server.mjs` and has its
+// own config (`e2e:search-feed-responsive`). Picked up here it fails on the
+// real app's aborted RSC prefetches, which says nothing about the search page.
+const NOT_RUN_HERE = [/\.setup\.ts$/, /search-feed-responsive\.spec\.ts$/];
 
 export default defineConfig({
   testDir: "./e2e",

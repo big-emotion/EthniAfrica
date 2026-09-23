@@ -16,15 +16,12 @@ import { Button } from "@/components/ui/button";
 import { SEARCH_EMPTY_LINK_LABEL } from "@/components/ui/EmptyState";
 import { SEARCH_ENTITY_ACCENT } from "@/components/search/searchEntityAccent";
 import { NoResultsLeads } from "@/components/search/NoResultsLeads";
+import type { SeedWords } from "@/lib/home/seedWords";
 import { HomeHeroSeeds } from "./HomeHeroSeeds";
-import type { SeedWordsByKind } from "@/lib/home/seedWords";
 import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
 import { search as searchCorpus, searchWithLeads } from "@/lib/afrikLoader";
-import {
-  getSearchLabel,
-  getSearchResultGroups,
-} from "@/lib/search/searchVocabulary";
-import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
+import { getSearchResultGroups } from "@/lib/search/searchVocabulary";
+import { searchResultDisplayLabel } from "@/lib/search/peopleDisplayNames";
 import { formatNumber } from "@/lib/languageTag";
 import {
   getCountryRoute,
@@ -60,24 +57,14 @@ import type { Language } from "@/types/shared";
  * flat list). The taxonomy is taught in the result, where it costs the reader
  * nothing, instead of demanded as a precondition.
  *
- * The seed chips carry the same teaching in the corpus' own words — literally,
- * since the words are drawn from the fiches on every request (seedWords.ts):
- * three chips on a phone, and a fourth people example uses the extra desktop
- * room. They cover three of the five kinds the panel now groups rather than
- * all of them; a chip per kind would wrap the row, and the classes the chips
- * leave out are named by the headline above. Each reels through corpus examples, drawn
- * again on every visit. That motion is deliberately on the
- * chips and not on the placeholder — a placeholder is a control's name, it
- * would be renamed under a screen reader six times a minute, and it vanishes
- * at the exact moment the reader focuses the field. A chip is neither a name
- * nor transient, and it stops as soon as the reader arrives.
+ * The seed chips carry the same teaching by example: four renewable examples, one for each kind the description names.
  */
 
 /**
- * The label carries no second line of help under it. What the reader gets — a
- * documented record, with its sources — is what the hero's own answer states
- * forty pixels above, and saying it twice is the failure that cost this band
- * its previous standfirst (see the docblock in HomeHero).
+ * The label asks the reader's question and carries no second line of help.
+ * What the field accepts — a family name, a people, a language, a place — is
+ * the description the hero states above it, wired as the field's
+ * `aria-describedby`, so it is heard once and seen once.
  */
 
 const MIN_QUERY_LENGTH = 2;
@@ -129,8 +116,9 @@ export interface HomeHeroSearchProps {
   fetchResults?: (query: string) => Promise<SearchResult[]>;
   /** Injected by tests; defaults to the corpus's near-miss leads (REQ-125). */
   fetchLeads?: (query: string) => Promise<SearchLead[]>;
-  /** Drawn from the corpus by the server on every request; see seedWords.ts. */
-  seedWords?: SeedWordsByKind;
+  /** The id of the sentence that describes what the field accepts. */
+  describedBy?: string;
+  seedWords?: SeedWords;
 }
 
 // @req REQ-002
@@ -138,6 +126,7 @@ export function HomeHeroSearch({
   language,
   fetchResults,
   fetchLeads,
+  describedBy,
   seedWords,
 }: HomeHeroSearchProps) {
   const router = useRouter();
@@ -156,10 +145,6 @@ export function HomeHeroSearch({
   const resolvedFetchLeads = fetchLeads ?? fetchLeadsFromCorpus;
   const [leads, setLeads] = useState<SearchLead[]>([]);
   const [showPending, setShowPending] = useState(false);
-  // The seed reels stop at the first sign of the reader. Hovering or tabbing
-  // into the row is one such sign and the row hears it itself; reaching for
-  // the field is the other, and only this component is in a position to know.
-  const [fieldTouched, setFieldTouched] = useState(false);
   const inputId = useId();
   const inputRef = useRef<HTMLInputElement>(null);
   const pendingShownAt = useRef(0);
@@ -243,7 +228,9 @@ export function HomeHeroSearch({
   }, [flat, language]);
 
   const open = suggest.isAnswered;
+  const failed = suggest.isFailed;
   const showListbox = suggest.isOpen;
+  const copy = homeHeroCopy[language];
 
   const clearQuery = () => {
     suggest.clear();
@@ -307,7 +294,7 @@ export function HomeHeroSearch({
           onSubmit={dismissPanel}
         >
           <label htmlFor={inputId} className="home-hero-search-label">
-            {getSearchLabel(language)}
+            {copy.searchLabel}
           </label>
 
           <div className="home-hero-search-field">
@@ -330,8 +317,9 @@ export function HomeHeroSearch({
               id={inputId}
               name="q"
               aria-busy={pending}
+              aria-describedby={describedBy}
               {...suggest.comboboxProps}
-              placeholder={homeHeroCopy[language].searchPlaceholder}
+              placeholder={copy.searchPlaceholder}
               type="search"
               inputMode="search"
               enterKeyHint="search"
@@ -341,7 +329,6 @@ export function HomeHeroSearch({
               spellCheck={false}
               value={query}
               onChange={(event) => suggest.setQuery(event.target.value)}
-              onFocus={() => setFieldTouched(true)}
               onKeyDown={handleKeyDown}
             />
 
@@ -403,7 +390,7 @@ export function HomeHeroSearch({
                     onMouseEnter={() => suggest.highlight(index)}
                     onClick={dismissPanel}
                   >
-                    {getLocalizedSearchResultName(result, language)}
+                    {searchResultDisplayLabel(result, language)}
                   </Link>
                 ))}
               </div>
@@ -428,33 +415,47 @@ export function HomeHeroSearch({
             </Link>
           </div>
         )}
+
+        {/* Its own panel rather than the empty state's: an outage is not an
+            answer, and the empty state's « Aucune fiche » would claim one.
+            type="button" because this sits in the GET form's anchor. */}
+        {failed && (
+          <div className="home-hero-search-panel home-hero-search-empty">
+            <p>{copy.searchUnavailable}</p>
+            <button
+              type="button"
+              className="home-hero-search-retry"
+              onClick={suggest.retry}
+            >
+              {copy.searchRetry}
+            </button>
+          </div>
+        )}
       </div>
 
-      <HomeHeroSeeds
-        onPick={runSeed}
-        engaged={fieldTouched || query !== ""}
-        words={seedWords}
-      />
+      <HomeHeroSeeds language={language} onPick={runSeed} words={seedWords} />
 
       {/* The spinner is the sighted half of the same message; this is the
-          other half, and it reports the same two moments — the wait starting,
-          and what came back. */}
+          other half, and it reports the same moments — the wait starting,
+          what came back, or that nothing could come back. */}
       <div role="status" aria-live="polite" className="sr-only">
         {showPending
           ? language === "en"
             ? "Searching…"
             : "Recherche en cours…"
-          : open
-            ? flat.length > 0
-              ? `${formatNumber(language, flat.length)} ${
-                  language === "en"
-                    ? `suggestion${flat.length > 1 ? "s" : ""}`
-                    : `suggestion${flat.length > 1 ? "s" : ""}`
-                }`
-              : language === "en"
-                ? "No suggestions"
-                : "Aucune suggestion"
-            : ""}
+          : failed
+            ? copy.searchUnavailable
+            : open
+              ? flat.length > 0
+                ? `${formatNumber(language, flat.length)} ${
+                    language === "en"
+                      ? `suggestion${flat.length > 1 ? "s" : ""}`
+                      : `suggestion${flat.length > 1 ? "s" : ""}`
+                  }`
+                : language === "en"
+                  ? "No suggestions"
+                  : "Aucune suggestion"
+              : ""}
       </div>
 
       <style>{`
@@ -596,12 +597,26 @@ export function HomeHeroSearch({
            §7). At 12 the row sat closer to the field than the chips sat to
            each other, so the four of them read as a fifth row of the control
            rather than as suggestions offered under it. */
+        .home-hero-seeds {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          margin: 16px 0 0;
+        }
+        /* Soft ink: it introduces the chips, it is not one of them
+           (typography charter §8.2). */
+        .home-hero-seeds-intro {
+          font-size: var(--afh-text-small);
+          color: var(--afh-text-soft);
+        }
         .home-hero-search-seeds {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
           gap: 8px;
-          margin: 16px 0 0;
+          margin: 0;
           padding: 0;
           list-style: none;
         }
@@ -617,6 +632,10 @@ export function HomeHeroSearch({
           font-size: var(--afh-text-small);
           color: var(--accent-ink);
           cursor: pointer;
+        }
+        .home-hero-seeds-refresh {
+          color: var(--accent-ink);
+          min-height: 44px;
         }
         .home-hero-search-seeds button:hover {
           background: var(--accent-tint);
@@ -702,6 +721,20 @@ export function HomeHeroSearch({
           text-decoration: underline;
           text-underline-offset: 2px;
         }
+        .home-hero-search-retry {
+          min-height: 44px;
+          padding: 0 14px;
+          border: 1px solid var(--accent-tint);
+          border-radius: var(--afh-radius-full);
+          background: transparent;
+          font-size: var(--afh-text-small);
+          font-weight: 600;
+          color: var(--accent-ink);
+          cursor: pointer;
+        }
+        .home-hero-search-retry:hover {
+          background: var(--accent-tint);
+        }
 
         @media (min-width: 768px) {
           .home-hero-search {
@@ -710,6 +743,7 @@ export function HomeHeroSearch({
           .home-hero-search-label {
             text-align: left;
           }
+          .home-hero-seeds,
           .home-hero-search-seeds {
             justify-content: flex-start;
           }

@@ -1,55 +1,75 @@
 import type { Language } from "@/types/shared";
 
-export interface HomePurposeCopy {
-  toggle: string;
-  sentences: [string];
+export interface HomePurposeBlock {
+  title: string;
+  body: string;
   linkLabel: string;
-  /**
-   * A second link, to the public method page (editorial-and-experience-plan.md
-   * H19), added once that page actually said what this label promises (M6:
-   * "we distinguish well-supported facts... and unresolved questions"). Kept
-   * beside `linkLabel` rather than replacing the border/names statement above
-   * it — that statement is dated, negotiated doctrine (purpose-doctrine.md),
-   * not prose to swap for a generic mission line.
-   */
-  methodLinkLabel: string;
+}
+
+export interface HomePurposeCopy {
+  contribute: {
+    title: string;
+    corrections: string;
+    code: string;
+    linkLabel: string;
+  };
+  /** Why the project exists; links to the About page. */
+  why: HomePurposeBlock;
+  /** How it treats a claim; links to the public method page. */
+  sources: HomePurposeBlock;
 }
 
 /**
- * What the atlas is for, in the statement the social series opens on, behind
- * the home's « Notre propos » disclosure. Its closing counterpart, « Ce peuple
- * n'a pas été divisé », was cut from the home (operator ruling, 2026-09-14)
- * and stays on the About page's purpose chapter.
+ * The home's project-and-method section, below the stories.
  *
- * It is the project's position rather than a finding the atlas proves, and
- * the link goes to that chapter, which says so in as many words. « Plus de mille » is a position, never a dated attestation: the
- * atlas dates no name (docs/editorial/purpose-doctrine.md). « La plupart » and
- * « moins de » are not a softening. Berlin drew almost no line itself, one
- * border is older than it (Morocco–Algeria, 1845) and many are younger (Togo
- * after 1914, Eritrea 1993, South Sudan 2011), so the unqualified figure was
- * false in both directions.
- *
- * Closed by default because the band's job is still the search; offered at
- * all because a reader who asks what the atlas is for is owed the answer in
- * two sentences rather than a scroll.
+ * It replaces the « Notre propos » disclosure that sat above the search, and
+ * with it the borders-versus-names sentence that disclosure carried. That
+ * sentence stays the project's position on the About page's purpose chapter;
+ * on the home it asked a first-time reader to weigh a thesis before they had
+ * searched anything (operator ruling, 2026-09-22). What the home owes instead
+ * is what the project is for and how it handles what it does not know — the
+ * second block is the one promise the result page also keeps (declared
+ * silences, the invitation to correct).
  */
 // @req REQ-115
 // @req REQ-145
 export const homePurposeCopy: Record<Language, HomePurposeCopy> = {
   en: {
-    toggle: "What we stand for",
-    sentences: [
-      "Most of Africa’s borders are less than a hundred and forty years old. The names are more than a thousand years old.",
-    ],
-    linkLabel: "Read the full statement",
-    methodLinkLabel: "How we work",
+    contribute: {
+      title: "Let us grow EthniAfrica together",
+      corrections:
+        "Suggest a correction or share a source to improve the information.",
+      code: "You can also contribute to the open source project on GitHub.",
+      linkLabel: "Contribute",
+    },
+    why: {
+      title: "Why EthniAfrica?",
+      body: "We want knowledge about Africa’s peoples to be easier to find and to share. We start from names to connect the stories, the uses and the sources.",
+      linkLabel: "Discover the project",
+    },
+    sources: {
+      title: "Sources to understand",
+      body: "We show the sources, the disagreements and what we do not know yet.",
+      linkLabel: "How we work",
+    },
   },
   fr: {
-    toggle: "Notre propos",
-    sentences: [
-      "La plupart des frontières de l’Afrique ont moins de cent quarante ans. Les noms en ont plus de mille.",
-    ],
-    linkLabel: "Lire la déclaration",
-    methodLinkLabel: "Comment nous travaillons",
+    contribute: {
+      title: "Faisons grandir EthniAfrica ensemble",
+      corrections:
+        "Proposez une correction ou partagez une source pour améliorer les informations.",
+      code: "Vous pouvez aussi participer au projet open source sur GitHub.",
+      linkLabel: "Contribuer",
+    },
+    why: {
+      title: "Pourquoi EthniAfrica ?",
+      body: "Nous voulons rendre les connaissances sur les populations d’Afrique plus faciles à trouver et à partager. Nous partons des noms pour relier les histoires, les usages et les sources.",
+      linkLabel: "Découvrir le projet",
+    },
+    sources: {
+      title: "Des sources pour comprendre",
+      body: "Nous indiquons les sources, les désaccords et ce que nous ne savons pas encore.",
+      linkLabel: "Comment nous travaillons",
+    },
   },
 };

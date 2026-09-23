@@ -1,191 +1,65 @@
 import { expect, test } from "@playwright/test";
-import type { Locator } from "@playwright/test";
 import { LOCALE } from "./support/locale";
 
-// English UI copy lands per translation wave (REQ-142 to REQ-146). Until it
-// does, the labels this spec reads are French, so the English matrix leg
-// skips it rather than fail on copy it was never asked to check — and the
-// leg's report says so, instead of counting the journey as covered.
-test.skip(
-  LOCALE !== "fr",
-  "English copy lands per wave — this spec reads French UI copy"
-);
+const french = LOCALE === "fr";
+const intro = french ? "Essayez avec" : "Try";
+const renew = french ? "Autres exemples" : "More examples";
 
-const HOME_URL = `/${LOCALE}?hero=mercator`;
-const MOBILE_VIEWPORT = { width: 430, height: 812 } as const;
-const DESKTOP_VIEWPORT = { width: 1240, height: 900 } as const;
-const FIRST_FOLD_GLOBE_PX = 120;
-
-type ElementBox = NonNullable<Awaited<ReturnType<Locator["boundingBox"]>>>;
-
-async function elementBox(locator: Locator): Promise<ElementBox> {
-  await expect(locator).toBeVisible();
-  const box = await locator.boundingBox();
-  expect(box).not.toBeNull();
-  return box!;
-}
-
-function bottom(box: ElementBox): number {
-  return box.y + box.height;
-}
-
-function right(box: ElementBox): number {
-  return box.x + box.width;
-}
-
-test.beforeEach(async ({ page }) => {
-  await page.emulateMedia({ reducedMotion: "reduce" });
-  await page.addInitScript(() => {
-    window.localStorage.setItem(
-      "ethni-consent",
-      JSON.stringify({
-        hasConsented: true,
-        preferences: { essential: true, analytics: true, functional: true },
-        consentDate: "2026-01-01T00:00:00.000Z",
-      })
+for (const width of [320, 390, 430, 768, 1199, 1440]) {
+  // @req REQ-112
+  test(`@smoke compact home fits and renews examples at ${width}px`, async ({
+    page,
+  }) => {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto(`/${LOCALE}`);
+    const search = page.getByRole("search");
+    await expect(search).toBeVisible();
+    const examples = page.getByRole("list", { name: intro });
+    const chips = examples.getByRole("button");
+    await expect(chips).toHaveCount(4);
+    const before = await chips.allTextContents();
+    await page.getByRole("button", { name: renew, exact: true }).click();
+    await expect.poll(() => chips.allTextContents()).not.toEqual(before);
+    const flow = page.locator(
+      '.home-hero, [data-testid="home-contribute"], [data-testid="home-project"]'
     );
-  });
-  await page.goto(HOME_URL);
-  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-});
-
-// The corpus counts moved from a grid row of their own into the copy column,
-// under the search: they qualify the promise the sentence makes, so a reader
-// who came to search reaches the field first (HomeHero.tsx). Three figures,
-// not five — HomeCorpusCounts.test.tsx holds the class list.
-// @req REQ-112
-test.describe("Search-first home — mobile source of truth (ETNI-1513)", () => {
-  test.use({ viewport: MOBILE_VIEWPORT });
-
-  // @req REQ-112
-  test("@smoke puts search and a material part of the globe in the first 430px fold", async ({
-    page,
-  }) => {
-    const hero = page.locator(".home-hero");
-    const inner = hero.locator(".home-hero-inner");
-    const copy = inner.locator(".home-hero-copy");
-    const search = copy.getByRole("search");
-    const seeds = copy.getByRole("list", { name: "Exemples de recherche" });
-    const globe = inner.locator(".home-hero-globe .home-globe-stage");
-    const counts = copy.getByTestId("home-corpus-counts");
-
-    await expect(seeds.getByRole("button")).toHaveCount(3);
-    await expect(page.getByTestId(/^home-count-/)).toHaveCount(3);
-    // The « Saviez-vous » band is retired: its anecdote is one of the hero's
-    // drawn visuals now, and nothing follows the band.
-    await expect(page.getByTestId("home-did-you-know")).toHaveCount(0);
-
-    const searchBox = await elementBox(search);
-    const seedsBox = await elementBox(seeds);
-    const countsBox = await elementBox(counts);
-    const globeBox = await elementBox(globe);
-
-    expect(searchBox.y).toBeGreaterThanOrEqual(0);
-    expect(bottom(searchBox)).toBeLessThanOrEqual(MOBILE_VIEWPORT.height);
-    expect(globeBox.y).toBeLessThan(MOBILE_VIEWPORT.height);
     expect(
-      Math.min(bottom(globeBox), MOBILE_VIEWPORT.height) -
-        Math.max(globeBox.y, 0)
-    ).toBeGreaterThanOrEqual(FIRST_FOLD_GLOBE_PX);
-
-    // Reading order and the one-column visual order must agree on mobile.
-    const copyFlow = await copy
-      .locator(
-        'form[role="search"], ul[aria-label="Exemples de recherche"], [data-testid="home-corpus-counts"]'
+      await flow.evaluateAll((nodes) =>
+        nodes.map((node) => node.getAttribute("data-testid") ?? node.className)
       )
-      .evaluateAll((nodes) => nodes.map((node) => node.tagName));
-    expect(copyFlow).toEqual(["FORM", "UL", "DL"]);
-
-    const pageFlow = await page
-      .locator(".home-hero-copy, .home-hero-globe")
-      .evaluateAll((nodes) =>
-        nodes.map((node) =>
-          node.classList.contains("home-hero-copy") ? "copy" : "globe"
-        )
-      );
-    expect(pageFlow).toEqual(["copy", "globe"]);
-
-    expect(seedsBox.y).toBeGreaterThanOrEqual(bottom(searchBox) - 1);
-    expect(countsBox.y).toBeGreaterThanOrEqual(bottom(seedsBox) - 1);
-    expect(globeBox.y).toBeGreaterThanOrEqual(bottom(countsBox) - 1);
-
-    // A content-driven band keeps the same used height when only the viewport
-    // height changes. The computed floors also rule out vh/svh/dvh min-size
-    // constraints without inspecting implementation source text.
-    const readSizing = (locator: Locator) =>
-      locator.evaluate((element) => {
-        const style = window.getComputedStyle(element);
-        return {
-          height: element.getBoundingClientRect().height,
-          minHeight: style.minHeight,
-          maxHeight: style.maxHeight,
-          minBlockSize: style.minBlockSize,
-          maxBlockSize: style.maxBlockSize,
-        };
-      });
-
-    const heroSizing = await readSizing(hero);
-    const innerSizing = await readSizing(inner);
-    for (const sizing of [heroSizing, innerSizing]) {
-      expect(sizing.minHeight).toBe("0px");
-      expect(sizing.maxHeight).toBe("none");
-      expect(sizing.minBlockSize).toBe("0px");
-      expect(sizing.maxBlockSize).toBe("none");
+    ).toEqual(["home-hero", "home-contribute", "home-project"]);
+    await expect(page.getByRole("heading", { level: 1 })).toHaveCount(1);
+    await expect(page.locator("main h2")).toHaveCount(3);
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= window.innerWidth
+      )
+    ).toBe(true);
+    for (const chip of await chips.all()) {
+      const box = await chip.boundingBox();
+      expect(box!.height).toBeGreaterThanOrEqual(44);
+      expect(box!.x).toBeGreaterThanOrEqual(0);
+      expect(box!.x + box!.width).toBeLessThanOrEqual(width);
     }
-
-    await page.setViewportSize({ width: MOBILE_VIEWPORT.width, height: 932 });
-    await expect
-      .poll(async () =>
-        Math.abs((await readSizing(hero)).height - heroSizing.height)
-      )
-      .toBeLessThanOrEqual(1);
-    expect(
-      Math.abs((await readSizing(inner)).height - innerSizing.height)
-    ).toBeLessThanOrEqual(1);
+    const word = await chips.first().innerText();
+    await chips.first().click();
+    await expect(page).toHaveURL(new RegExp(`/${LOCALE}/atlas/`));
+    expect(new URL(page.url()).searchParams.get("q")).toBe(word);
   });
-});
+}
 
-// @req REQ-112
-test.describe("Search-first home — desktop widening pass (ETNI-1513)", () => {
-  test.use({
-    viewport: DESKTOP_VIEWPORT,
-    deviceScaleFactor: 1,
-    isMobile: false,
-    hasTouch: false,
-  });
-
-  // @req REQ-112
-  // `?hero=` pins the side as well as the kind, so a browser check always
-  // meets the copy on the left; visitors get the side drawn per request.
-  // @req REQ-112
-  test("widens to two columns with the pinned globe on the right", async ({
-    page,
-  }) => {
-    const hero = page.locator(".home-hero");
-    const inner = hero.locator(".home-hero-inner");
-    const copy = inner.locator(".home-hero-copy");
-    const seeds = copy.getByRole("list", { name: "Exemples de recherche" });
-    const globe = inner.locator(".home-hero-globe");
-    const counts = copy.getByTestId("home-corpus-counts");
-
-    await expect(seeds.getByRole("button")).toHaveCount(4);
-    await expect(page.getByTestId(/^home-count-/)).toHaveCount(3);
-    await expect(page.getByTestId("home-did-you-know")).toHaveCount(0);
-
-    const copyBox = await elementBox(copy);
-    const seedsBox = await elementBox(seeds);
-    const globeBox = await elementBox(globe);
-    const countsBox = await elementBox(counts);
-
-    // Copy and counts form the left column; the globe is the right column.
-    expect(right(copyBox)).toBeLessThan(globeBox.x);
-    expect(globeBox.x).toBeGreaterThan(copyBox.x);
-    expect(
-      Math.min(bottom(copyBox), bottom(globeBox)) -
-        Math.max(copyBox.y, globeBox.y)
-    ).toBeGreaterThan(100);
-    expect(countsBox.y).toBeGreaterThanOrEqual(bottom(seedsBox) - 1);
-    expect(countsBox.x).toBeLessThan(globeBox.x);
-    expect(right(countsBox)).toBeLessThanOrEqual(globeBox.x);
-  });
+// @req REQ-115
+test("contribution invitation opens the contribution page", async ({
+  page,
+}) => {
+  await page.goto(`/${LOCALE}`);
+  const contribution = page.getByTestId("home-contribute");
+  await contribution
+    .getByRole("link", {
+      name: french ? "Contribuer" : "Contribute",
+      exact: true,
+    })
+    .click();
+  await expect(page).toHaveURL(new RegExp(`/${LOCALE}/contribute$`));
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
 });

@@ -12,6 +12,10 @@ import type {
 import type { PeopleId } from "@/types/afrik";
 import type { Language } from "@/types/shared";
 import { relationsCopy } from "@/lib/i18n/copy/relations";
+import {
+  peopleDisplayLabel,
+  peopleDisplayNames,
+} from "@/lib/search/peopleDisplayNames";
 
 export interface EgoNetworkGraphCenter {
   id: PeopleId;
@@ -59,10 +63,7 @@ function neighborPosition(index: number, total: number) {
 function edgeAnnouncement(item: RelationListItem, language: Language): string {
   const copy = relationsCopy[language].graph;
   const parts = [
-    copy.edge(
-      RELATION_TYPE_LABELS[language][item.type],
-      item.neighbor.nameMain
-    ),
+    copy.edge(RELATION_TYPE_LABELS[language][item.type], neighbourLabel(item)),
   ];
   if (item.period?.label) parts.push(item.period.label);
   if (item.derived) {
@@ -75,7 +76,15 @@ function edgeAnnouncement(item: RelationListItem, language: Language): string {
 }
 
 function nodeAnnouncement(item: RelationListItem, language: Language): string {
-  return relationsCopy[language].graph.node(item.neighbor.nameMain);
+  return relationsCopy[language].graph.node(neighbourLabel(item));
+}
+
+/** The name the neighbour gives itself first, then its filed name. */
+function neighbourLabel(item: RelationListItem): string {
+  return peopleDisplayLabel(
+    item.neighbor.selfAppellation,
+    item.neighbor.nameMain
+  );
 }
 
 type FocusStop =
@@ -360,7 +369,14 @@ export function EgoNetworkGraph({
                   lang={lang}
                   className="fill-afh-text text-afh-eyebrow font-semibold"
                 >
-                  {item.neighbor.nameMain}
+                  {/* A node holds one name: the one the people gives itself.
+                      Both names are in the node's accessible label. */}
+                  {
+                    peopleDisplayNames(
+                      item.neighbor.selfAppellation,
+                      item.neighbor.nameMain
+                    ).primary
+                  }
                 </text>
               </g>
             </React.Fragment>
