@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import { eligiblePublications } from "@/lib/discoveries/catalog";
 import { formatProductionNameQuestion } from "@/lib/editorial/productionNameQuestion";
+import { getLanguageRoute } from "@/lib/routing";
 
 import type { LedgerEntry } from "../ledger";
 import { toDiscoveryPublication } from "../toDiscoveryPublication";
@@ -19,7 +20,7 @@ function entry(overrides: Partial<LedgerEntry> = {}): LedgerEntry {
     subjects: [
       { kind: "language", id: "tst", label: { fr: "Test", en: "Test" } },
     ],
-    sitePath: "/fr/atlas/langues/tst",
+    sitePath: getLanguageRoute("fr", "tst"),
     publications: [],
     ...overrides,
   };
