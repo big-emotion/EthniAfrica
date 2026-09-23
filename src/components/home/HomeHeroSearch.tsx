@@ -16,6 +16,7 @@ import { Button } from "@/components/ui/button";
 import { SEARCH_EMPTY_LINK_LABEL } from "@/components/ui/EmptyState";
 import { SEARCH_ENTITY_ACCENT } from "@/components/search/searchEntityAccent";
 import { NoResultsLeads } from "@/components/search/NoResultsLeads";
+import type { SeedWords } from "@/lib/home/seedWords";
 import { HomeHeroSeeds } from "./HomeHeroSeeds";
 import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
 import { search as searchCorpus, searchWithLeads } from "@/lib/afrikLoader";
@@ -56,8 +57,7 @@ import type { Language } from "@/types/shared";
  * flat list). The taxonomy is taught in the result, where it costs the reader
  * nothing, instead of demanded as a precondition.
  *
- * The seed chips carry the same teaching by example: three still words, the
- * placeholder's own, one per kind the description above names first.
+ * The seed chips carry the same teaching by example: four renewable examples, one for each kind the description names.
  */
 
 /**
@@ -118,6 +118,7 @@ export interface HomeHeroSearchProps {
   fetchLeads?: (query: string) => Promise<SearchLead[]>;
   /** The id of the sentence that describes what the field accepts. */
   describedBy?: string;
+  seedWords?: SeedWords;
 }
 
 // @req REQ-002
@@ -126,6 +127,7 @@ export function HomeHeroSearch({
   fetchResults,
   fetchLeads,
   describedBy,
+  seedWords,
 }: HomeHeroSearchProps) {
   const router = useRouter();
   const fetchResultsFromCorpus = useCallback(
@@ -431,7 +433,7 @@ export function HomeHeroSearch({
         )}
       </div>
 
-      <HomeHeroSeeds language={language} onPick={runSeed} />
+      <HomeHeroSeeds language={language} onPick={runSeed} words={seedWords} />
 
       {/* The spinner is the sighted half of the same message; this is the
           other half, and it reports the same moments — the wait starting,
@@ -630,6 +632,10 @@ export function HomeHeroSearch({
           font-size: var(--afh-text-small);
           color: var(--accent-ink);
           cursor: pointer;
+        }
+        .home-hero-seeds-refresh {
+          color: var(--accent-ink);
+          min-height: 44px;
         }
         .home-hero-search-seeds button:hover {
           background: var(--accent-tint);

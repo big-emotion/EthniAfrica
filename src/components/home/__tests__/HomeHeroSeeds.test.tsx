@@ -4,11 +4,11 @@ import { describe, expect, it, vi } from "vitest";
 import { HomeHeroSeeds } from "../HomeHeroSeeds";
 import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
 
-describe("HomeHeroSeeds — three still example queries", () => {
+describe("HomeHeroSeeds — four renewable example queries", () => {
   // The same three words as the placeholder, introduced rather than floating:
   // « Essayez avec » names the list, so it is announced as what it is.
   // @req REQ-002
-  it("introduces three chips from copy, in order", () => {
+  it("introduces four chips from copy, in order", () => {
     render(<HomeHeroSeeds language="fr" onPick={vi.fn()} />);
 
     const list = screen.getByRole("list", { name: "Essayez avec" });
@@ -16,7 +16,7 @@ describe("HomeHeroSeeds — three still example queries", () => {
       within(list)
         .getAllByRole("button")
         .map((chip) => chip.textContent)
-    ).toEqual(["Keïta", "Lingala", "Peul"]);
+    ).toEqual(["Keïta", "Lingala", "Fulbe", "Bénin"]);
   });
 
   // @req REQ-002
@@ -34,8 +34,8 @@ describe("HomeHeroSeeds — three still example queries", () => {
     render(<HomeHeroSeeds language="en" onPick={vi.fn()} />);
 
     const list = screen.getByRole("list", { name: "Try" });
-    expect(within(list).getAllByRole("button")).toHaveLength(3);
-    expect(homeHeroCopy.en.seeds).toHaveLength(3);
+    expect(within(list).getAllByRole("button")).toHaveLength(4);
+    expect(homeHeroCopy.en.seeds).toHaveLength(4);
   });
 
   // The reels are gone: no hidden track, no second word waiting to roll in,
@@ -48,8 +48,35 @@ describe("HomeHeroSeeds — three still example queries", () => {
 
     expect(container.querySelector("[aria-hidden]")).toBeNull();
     expect(container.querySelector("style")).toBeNull();
-    for (const chip of screen.getAllByRole("button")) {
+    for (const chip of screen
+      .getAllByRole("listitem")
+      .map((item) => within(item).getByRole("button"))) {
       expect(chip).toHaveAccessibleName(chip.textContent ?? "");
     }
+  });
+  // @req REQ-002
+  it("renews every example on request and submits the displayed word", () => {
+    const onPick = vi.fn();
+    render(
+      <HomeHeroSeeds
+        language="fr"
+        onPick={onPick}
+        words={{
+          patronyme: ["Keïta", "Konaté"],
+          language: ["Lingala", "Swahili"],
+          people: ["Fulbe", "Iteso"],
+          country: ["Bénin", "Togo"],
+        }}
+      />
+    );
+    fireEvent.click(screen.getByRole("button", { name: "Autres exemples" }));
+    const list = screen.getByRole("list", { name: "Essayez avec" });
+    expect(
+      within(list)
+        .getAllByRole("button")
+        .map((chip) => chip.textContent)
+    ).toEqual(["Konaté", "Swahili", "Iteso", "Togo"]);
+    fireEvent.click(screen.getByRole("button", { name: "Iteso" }));
+    expect(onPick).toHaveBeenCalledWith("Iteso");
   });
 });

@@ -500,44 +500,6 @@ describe("people fiche accent text on the warm parchment", () => {
 });
 
 /**
- * Text is softened with an ink, never with `opacity`.
- *
- * `opacity` composites the whole glyph toward whatever is behind it, so it
- * scales contrast down by roughly the same factor: the home's "Saviez-vous"
- * entity chip set --accent-ink at 0.72, which turns the ocre ink (#835514,
- * 6.41:1 on a card) into #a68556 — 3.45:1, and axe-core reported it on the
- * live /fr route. The band is retired; the chip moved into the hero's drawn
- * anecdote and the guard moved with it.
- *
- * The tier line directly beneath it in the same component already records the
- * rule this encodes: a label a reader is meant to read is content, and content
- * takes an ink that clears AA. Size, weight, letter-spacing and case are what
- * carry the hierarchy.
- */
-describe("home hero anecdote chip softens with ink, not opacity", () => {
-  const didYouKnow = readFileSync(
-    resolve(process.cwd(), "src/components/home/HomeHeroAnecdote.tsx"),
-    "utf8"
-  );
-
-  /** The declarations inside one styled-jsx rule, by selector. */
-  function ruleBody(selector: string): string {
-    const match = didYouKnow.match(
-      new RegExp(`\\${selector}\\s*\\{([^}]*)\\}`, "i")
-    );
-    if (!match) throw new Error(`Missing rule ${selector}`);
-    return match[1];
-  }
-
-  // @req REQ-090
-  it("does not fade the entity-kind label below its ink", () => {
-    expect(ruleBody(".home-hero-anecdote-chip-kind")).not.toMatch(
-      /opacity:\s*0?\.\d+/
-    );
-  });
-});
-
-/**
  * The brand lockup — the mark, the product name and its qualifier, both read
  * from `src/lib/brand.ts` — appears twice on every page, in the masthead and in
  * the footer, and it gets **one** colour treatment.

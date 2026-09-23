@@ -10,51 +10,21 @@ vi.mock("next/navigation", () => ({
   useRouter: () => ({ push: vi.fn(), replace: vi.fn() }),
 }));
 
-function follows(first: Element, second: Element): boolean {
-  return Boolean(
-    first.compareDocumentPosition(second) & Node.DOCUMENT_POSITION_FOLLOWING
-  );
-}
-
 const HERO_SOURCE = readFileSync(
   join(process.cwd(), "src/components/home/HomeHero.tsx"),
   "utf8"
 );
 
-/**
- * The opening band's charter since 2026-09-22 (operator ruling): the search
- * and the featured answer share it, and the drawn globe left it for a section
- * after the stories — HomeDrawnVisual.test.tsx holds what the globe still
- * owes. This charter used to hold the globe *beside* the search at 1200px;
- * that premise is what the ruling changed, so the two-column contract below
- * names the tile rather than the globe. Brand charter §8.3 (« the atlas
- * leads ») is contradicted by that ruling and is flagged for amendment rather
- * than silently kept.
- */
+/** The compact home keeps the search as its only opening action. */
 // @req REQ-115
 describe("search-first home charter (ETNI-1404 / ETNI-1509)", () => {
   // @req REQ-115
-  it("opens on one band ordered copy and search, then the featured answer", () => {
-    const { container } = render(
-      <HomeHero
-        language="fr"
-        featured={<section data-testid="featured-answer" />}
-      />
+  it("opens on the question and search without a competing feature", () => {
+    const { container } = render(<HomeHero language="fr" />);
+    expect(container.querySelector(".home-hero-copy")).toContainElement(
+      screen.getByRole("search")
     );
-
-    const band = container.querySelector(".home-hero-inner");
-    const copy = container.querySelector(".home-hero-copy");
-    const search = screen.getByRole("search");
-    const featured = screen.getByTestId("featured-answer");
-
-    if (!(band instanceof HTMLElement) || !(copy instanceof HTMLElement)) {
-      throw new TypeError("The hero band and copy must be HTML elements");
-    }
-
-    expect(band).toContainElement(copy);
-    expect(copy).toContainElement(search);
-    expect(band).toContainElement(featured);
-    expect(follows(copy, featured)).toBe(true);
+    expect(container.querySelector(".home-hero-featured")).toBeNull();
   });
 
   // The globe is not in the opening band any more, and the band does not
@@ -68,17 +38,10 @@ describe("search-first home charter (ETNI-1404 / ETNI-1509)", () => {
     expect(HERO_SOURCE).not.toContain("ContinentGlobeStage");
   });
 
-  // A compact content-sized stack is the mobile contract. At 1200px the same
-  // document becomes two columns when there is a tile to set beside the
-  // search. The column ratio is layout arithmetic and is not asserted.
   // @req REQ-115
-  it("is mobile-first and becomes the prescribed two-column grid at 1200px", () => {
-    expect(HERO_SOURCE).toMatch(
-      /\.home-hero-inner\s*\{[^}]*display:\s*grid[^}]*grid-template-areas:\s*"copy"\s*"featured"/
-    );
-    expect(HERO_SOURCE).toMatch(
-      /@media\s*\(min-width:\s*1200px\)[\s\S]*?grid-template-columns:\s*minmax\(0,\s*[\d.]+fr\)\s*minmax\(0,\s*[\d.]+fr\)[\s\S]*?grid-template-areas:\s*"copy featured"/
-    );
+  it("keeps a single content-sized column at every width", () => {
+    expect(HERO_SOURCE).toContain("grid-template-columns: minmax(0, 1fr)");
+    expect(HERO_SOURCE).not.toContain('"copy featured"');
   });
 
   // Viewport-height floors made the band claim a screen its content could

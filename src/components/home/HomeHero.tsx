@@ -1,8 +1,6 @@
-import type { ReactNode } from "react";
-
 import { PRODUCT_NAME } from "@/lib/brand";
 import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
-import { cn } from "@/lib/utils";
+import type { SeedWords } from "@/lib/home/seedWords";
 import type { Language } from "@/types/shared";
 
 import { HomeHeroSearch } from "./HomeHeroSearch";
@@ -10,31 +8,15 @@ import { HomeHeroSearch } from "./HomeHeroSearch";
 /** One per page, so a fixed id is safe and needs no client-side `useId`. */
 const DESCRIPTION_ID = "home-hero-description";
 
-/**
- * The search-first opening band (REQ-115, ETNI-1404).
- *
- * Since 2026-09-22 it holds the question, the sentence that says what the
- * field accepts, the search and its three examples — and, when a campaign is
- * open, the featured answer. The drawn visual, the purpose statement and the
- * corpus figures moved below it, each into a section of its own (operator
- * ruling): the first screen is the one question and the one way to ask it.
- *
- * Reading order is the same at every width: copy and search, then the
- * featured answer. From 1200px the two share the band as columns; CSS never
- * changes the accessible order.
- */
+/** The compact opening: one question, search and four renewable examples. */
 export interface HomeHeroProps {
   language: Language;
-  /**
-   * The featured answer, resolved by the server page. Absent when no
-   * campaign window is open, and the band is then one centred column.
-   */
-  featured?: ReactNode;
+  seedWords?: SeedWords;
 }
 
 // @req REQ-044
 // @req REQ-115
-export function HomeHero({ language, featured }: HomeHeroProps) {
+export function HomeHero({ language, seedWords }: HomeHeroProps) {
   const copy = homeHeroCopy[language];
 
   return (
@@ -46,12 +28,7 @@ export function HomeHero({ language, featured }: HomeHeroProps) {
       className="home-hero"
     >
       {/* The shell keeps every hero item on the page's shared content edge. */}
-      <div
-        className={cn(
-          "afh-shell home-hero-inner",
-          featured && "home-hero-inner--with-featured"
-        )}
-      >
+      <div className="afh-shell home-hero-inner">
         <header className="home-hero-copy afh-phone-centred">
           {/* One string inside an expression, never bare JSX text: SWC drops
               the space between an expression and the text that follows it on
@@ -75,10 +52,12 @@ export function HomeHero({ language, featured }: HomeHeroProps) {
             {copy.description}
           </p>
 
-          <HomeHeroSearch language={language} describedBy={DESCRIPTION_ID} />
+          <HomeHeroSearch
+            language={language}
+            describedBy={DESCRIPTION_ID}
+            seedWords={seedWords}
+          />
         </header>
-
-        {featured ? <div className="home-hero-featured">{featured}</div> : null}
       </div>
 
       <div className="home-hero-seam" aria-hidden="true" />
@@ -103,9 +82,7 @@ export function HomeHero({ language, featured }: HomeHeroProps) {
         .home-hero-inner {
           display: grid;
           grid-template-columns: minmax(0, 1fr);
-          grid-template-areas:
-            "copy"
-            "featured";
+          grid-template-areas: "copy";
           gap: 32px;
           padding-block: 24px 28px;
         }
@@ -148,11 +125,6 @@ export function HomeHero({ language, featured }: HomeHeroProps) {
           color: var(--afh-text);
         }
 
-        .home-hero-featured {
-          grid-area: featured;
-          min-width: 0;
-        }
-
         /* Taller on the phone than the desktop's original 26px: it is the
            one thing that tells a reader the hero has ended and the next
            section has begun, and at 430px the two used to abut close enough
@@ -172,37 +144,6 @@ export function HomeHero({ language, featured }: HomeHeroProps) {
           }
         }
 
-        /* Two columns only when there is a second thing to put beside the
-           search. Without a campaign the band stays one centred column: a
-           flush-left copy block with nothing to its right would leave half
-           the band empty. */
-        @media (min-width: 1200px) {
-          .home-hero-inner--with-featured {
-            /* 1.15/0.85, the split the band already used beside its visual:
-               the copy column keeps room for the headline on two lines, and
-               the tile's 620px ceiling is a max-width, not a floor. */
-            grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-            grid-template-areas: "copy featured";
-            /* Topped, never centred (operator ruling, 2026-09-14). Centred,
-               the tile recentred whenever the copy column changed height —
-               the search panel opening, a failure message appearing. */
-            align-items: start;
-            column-gap: 48px;
-            padding-block: 40px;
-          }
-          .home-hero-inner--with-featured .home-hero-copy {
-            margin: 0;
-            max-width: 100%;
-            text-align: left;
-          }
-          /* The prose block loses its auto margins with the column. A block
-             that kept \`margin: auto\` would stay centred inside a left-aligned
-             column — a second left edge inside one block, which §8.1 of the
-             brand charter counts as a defect. */
-          .home-hero-inner--with-featured .home-hero-description {
-            margin-inline: 0;
-          }
-        }
       `}</style>
     </section>
   );

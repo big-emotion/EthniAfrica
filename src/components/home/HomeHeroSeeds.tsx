@@ -1,46 +1,53 @@
-import { useId } from "react";
+"use client";
 
+import { useId, useState } from "react";
+import { Button } from "@/components/ui/button";
+import { FALLBACK_SEED_WORDS, type SeedWords } from "@/lib/home/seedWords";
 import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
 import type { Language } from "@/types/shared";
 
 export interface HomeHeroSeedsProps {
   language: Language;
   onPick: (word: string) => void;
+  words?: SeedWords;
 }
 
-/**
- * Three example queries under the home's search field, and they hold still.
- *
- * They used to be slot reels turning through words drawn from the corpus per
- * request. That taught breadth, and it cost a target that moved under the
- * reader's pointer, a stop gesture owed under WCAG 2.2.2, and an accessible
- * name that changed while a screen reader read it. The operator retired the
- * motion on 2026-09-22: the same three words as the placeholder, from copy,
- * so what the field suggests and what the chips run are one example set.
- *
- * Buttons that push the search page rather than links: a chip runs the query
- * the way typing the word and submitting would, which is the router push the
- * field's own form already falls back to.
- */
+// The server shuffles each pool on every visit. Renewal is reader-controlled:
+// a chip remains a stable target while pointing, typing or using a screen reader.
 // @req REQ-002
-export function HomeHeroSeeds({ language, onPick }: HomeHeroSeedsProps) {
+export function HomeHeroSeeds({
+  language,
+  onPick,
+  words = FALLBACK_SEED_WORDS[language],
+}: HomeHeroSeedsProps) {
   const copy = homeHeroCopy[language];
   const introId = useId();
-
+  const [turn, setTurn] = useState(0);
+  const examples = Object.values(words).flatMap((pool) =>
+    pool.length ? [pool[turn % pool.length]] : []
+  );
   return (
     <div className="home-hero-seeds">
       <span id={introId} className="home-hero-seeds-intro">
         {copy.seedsIntro}
       </span>
       <ul className="home-hero-search-seeds" aria-labelledby={introId}>
-        {copy.seeds.map((word) => (
-          <li key={word}>
+        {examples.map((word, index) => (
+          <li key={index}>
             <button type="button" onClick={() => onPick(word)}>
               {word}
             </button>
           </li>
         ))}
       </ul>
+      <Button
+        variant="ghost"
+        size="sm"
+        className="home-hero-seeds-refresh"
+        onClick={() => setTurn((current) => current + 1)}
+      >
+        {copy.refreshSeeds}
+      </Button>
     </div>
   );
 }
