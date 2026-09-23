@@ -10,6 +10,49 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [4.19.0] - 2026-09-23
+
+### Added
+
+- The home opens on the name the reader brings, then the stories and the
+  project; the landing is simplified with varied name examples, and the
+  contribution invitation now closes the page instead of sitting between the
+  search and the project blocks (#1299, #1305, #1322).
+- The About page is rewritten as seven short chapters, and the refusals move
+  to the method page (#1300).
+- The name a people gives itself is listed first on every surface that shows a
+  people's names, ahead of the filed name and the others.
+- The Contribute page says what a contribution receives and names the form
+  host (#1297).
+- Discoveries: Shorts thumbnails are larger, video plays full-bleed, and the
+  feed opens on a publication drawn per request (#1303, #1301).
+- The social render engine gains a patronyme-transmission reel narration
+  sub-case, a production catalog projection, TikTok carousel measurement and a
+  carousel audio contract (#1307).
+
+### Changed
+
+- Reader-facing text no longer calls the project an "atlas": the site is
+  described by its promise rather than by its six classes, and the search feed
+  boards are rebuilt on that copy (#1298).
+
+### Fixed
+
+- Mande corpus: the pre-Soundiata chieftaincy data is corrected and
+  re-sourced, Mali's etymologies are qualified and its modern name dated, Mande
+  names are told apart from lived identities, and the Nommer dossier's
+  counts follow (#1319, #1306).
+- `PPL_DYULA` is merged into `PPL_DIOULA` and the duplicate fiche retired,
+  after resolving the Wangara/Jula contradiction in the surviving one
+  (#1317).
+- The Chara fiche no longer prints a raw linguistic-family identifier to the
+  reader (#1325).
+- The search result feed's desktop boards are regenerated at full width.
+- Social renders weld French spaced punctuation so no caption goes wordless and
+  draw Khmer and Hebrew credits with Noto fallbacks.
+- The ephemeral Supabase used by the three PR gates falls back to the ECR image
+  mirror when `ghcr.io` throttles the runners (#1325).
+
 ## [4.18.0] - 2026-09-22
 
 ### Added
@@ -1376,7 +1419,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.18.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.19.0...HEAD
+[4.19.0]: https://github.com/big-emotion/ethniafrica/compare/v4.18.0...v4.19.0
 [4.18.0]: https://github.com/big-emotion/ethniafrica/compare/v4.17.0...v4.18.0
 [4.17.0]: https://github.com/big-emotion/ethniafrica/compare/v4.16.0...v4.17.0
 [4.16.0]: https://github.com/big-emotion/ethniafrica/compare/v4.15.0...v4.16.0
