@@ -20,8 +20,16 @@
   ],
   "sitePath": "/fr/atlas/langues/swh",
   "publications": [
-    { "network": "tiktok", "format": "carrousel" },
-    { "network": "instagram", "format": "carrousel" },
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7688018683603471638"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/Ddjig2QCNOf/"
+    },
     { "network": "facebook", "format": "carrousel" },
     { "network": "youtube", "format": "carrousel" },
     { "network": "linkedin", "format": "carrousel" },
