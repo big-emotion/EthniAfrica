@@ -72,6 +72,16 @@
         "claim": "The jamu is a patrilineal clan name: it designates membership in a descent group, not individual filiation to the father.",
         "claimStatus": "established",
         "sourceRefs": ["jansen-sunjata-paradigm"]
+      },
+      {
+        "claim": "The cradle of the Keita clan lies in the land of the Manden hills, around the villages of Dakadiala, Naréna and Kiri.",
+        "claimStatus": "established",
+        "sourceRefs": ["niane-1985-fr-mali-chapitre"]
+      },
+      {
+        "claim": "A genealogy of the kings of Manden prior to Soundiata traces the Keita clan back to Lawalo, son of the muezzin Bilal ben Rabah, then Latal Kalabi, Damal Kalabi and Lahilatul Kalabi, the first king of Manden to make the pilgrimage to Mecca. His great-grandson Mamadi Kani, a \"master hunter\" whose reign is placed around the beginning of the twelfth century, extends the kingdom; his great-great-grandson Maghan Kön Fatta, also called Frako Maghan Keñi or Naré Fa Maghan, father of Soundiata, reigns at the beginning of the thirteenth century. Tradition counts sixteen kings before Soundiata, with variants in the list from one school of griots to another.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["niane-1985-fr-mali-chapitre"]
       }
     ]
   },
@@ -161,6 +171,11 @@
       "status": "deceased",
       "displayName": "Soundiata Keïta",
       "sourceRefs": ["niane-1960"]
+    },
+    {
+      "status": "deceased",
+      "displayName": "Naré Fa Maghan",
+      "sourceRefs": ["niane-1985-fr-mali-chapitre"]
     }
   ],
   "homonyms": [],
@@ -206,12 +221,20 @@
       "notes": "Onomastic appendix of the Bamadaba, the Bambara-French electronic dictionary supplement to the Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA); the clan-name appendix is identified as such by Vydrin, \"Vers une lexicographie mandingue sur la base de grands corpus annotés\", Mandenkan 63, 2020, p. 89-110. 375 entries in MDF format, consulted on the complete file. The file provides no legend for its markers, and the reading adopted is the one the file imposes: \\ca carries the Mandingo status terms themselves (nùmu, jèli, hɔ́rɔn, garanke, finɛ, tontigi, wage, gesere); \\sn reads senankun because the Kúyate entry annotates its own line \"\\sn Keyita\" with a caveat stating that this particular relation is a friendly agreement and not a senankuya. The \\sn links are not systematically reciprocal from one entry to another: each pair is therefore cited according to the entry that carries it, named in the claim or the gap."
     },
     {
+      "sourceKey": "niane-1985-fr-mali-chapitre",
+      "title": "Le Mali et la deuxième expansion manden",
+      "url": "https://bokundoli.org/wp-content/uploads/2021/12/T4-10.pdf",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "Niane, Djibril Tamsir, Histoire générale de l'Afrique, volume IV, chapter 6, UNESCO/NEA, 1985; reproduction consulted on 23 September 2026, which covers the text only from p. 141. Gives the cradle of the Keita (Dakadiala, Naréna, Kiri, p. 152, note 28) and the genealogy of the kings prior to Soundiata (pp. 152-153), reported from several schools of griots whose lists vary on minor points. The work is a scholarly synthesis of collected oral traditions, not a written chronicle nor a single transcription of a griot's narrative."
+    },
+    {
       "sourceKey": "canut-2002-senankuya",
       "title": "Pouvoir, places et filiation : les senankuya au Mali",
       "url": "https://journals.openedition.org/praxematique/2307",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Canut, Cécile, Cahiers de praxématique, issue 38, 2002, p. 175-197. Fieldwork in Mali. She states what the pact requires: the relationship holds in perpetuity for the entire descent of both lineages, marriage between them is prohibited — variably applied today, she specifies — and mutual aid is owed without reservation. Cited for the obligation itself; it does not name the pair in this fiche, which is carried by the entries cited alongside it."
+      "notes": "Canut, Cécile, Cahiers de praxématique, number 38, 2002, pp. 175-197. Fieldwork survey in Mali. She sets out what the pact obliges: the relationship holds in perpetuity for the entire descent of the two lineages, marriage between them is prohibited — variably applied today, she notes — and mutual aid is owed without reservation. Cited for the obligation itself; it does not name the pair in this record, which is carried by the entries cited alongside it."
     },
     {
       "sourceKey": "canut-smith-2006-pactes",
@@ -219,7 +242,7 @@
       "url": "https://doi.org/10.4000/etudesafricaines.6198",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Canut, Cécile, and Smith, Étienne, Cahiers d'études africaines, issue 184, 2006, p. 687 ff. Cited for the caution it raises: the idea that joking kinship would ease conflicts is treated there as a hypothesis inherited from Radcliffe-Brown and taken up by conflict-resolution studies, and so as a discourse to be analysed rather than a measured effect. The starting page is verified, the ending page is not."
+      "notes": "Canut, Cécile, and Smith, Étienne, Cahiers d'études africaines, number 184, 2006, p. 687 and following. Cited for the caution it raises: the idea that joking kinship eases conflict is treated here as a hypothesis inherited from Radcliffe-Brown and taken up by conflict-resolution studies, hence as a discourse to be analysed rather than as a measured effect. The start page is verified, the end page is not."
     }
   ],
   "gaps": [
@@ -234,26 +257,31 @@
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-09-09T09:27:10.820Z",
+    "translatedAt": "2026-09-23T10:45:19.687Z",
     "model": "claude-sonnet-5",
-    "sourceHash": "2c06fae66222c9d0a16da2299dafdb0aa1604f7eab60cdd5f81f56ea206f9537",
+    "sourceHash": "6ba66d6b9e3538575cb522ef9a986186626f29ba20464035579653c314fe0194",
     "fieldHashes": {
       "origin.oralTraditions[0].claim": "e96b0dc94c6a80c3",
       "origin.oralTraditions[0].transcription": "d753a01648ff3240",
       "origin.linguisticReconstructions[0].claim": "14f92c91d5d99f18",
+      "origin.linguisticReconstructions[1].claim": "6840b4f8aae5975f",
+      "origin.linguisticReconstructions[2].claim": "c490a575eaafcde2",
       "sources[0].notes": "29012643eb034ff2",
       "sources[1].notes": "fc0dbc4dd8f99c38",
       "sources[2].notes": "4e75f41a563c53c3",
       "sources[3].notes": "3a5b80d26c30b0b6",
       "sources[4].notes": "b80adb343411bfb9",
-      "sources[5].notes": "2c14e48c42d56e18",
-      "sources[6].notes": "79986afda62f44db",
+      "sources[5].notes": "9cabc8ca7d3b4fb6",
+      "sources[6].notes": "2c14e48c42d56e18",
+      "sources[7].notes": "79986afda62f44db",
       "gaps[0].reason": "6f0e3c41d59bf256",
       "gaps[1].reason": "d39d08d11a9f5b36"
     },
     "reviewRequired": [
       "origin.oralTraditions[0].transcription",
-      "origin.linguisticReconstructions[0].claim"
+      "origin.linguisticReconstructions[0].claim",
+      "origin.linguisticReconstructions[1].claim",
+      "origin.linguisticReconstructions[2].claim"
     ]
   }
 }
