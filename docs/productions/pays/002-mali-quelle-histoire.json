@@ -16,5 +16,12 @@
     }
   ],
   "sitePath": "/fr/atlas/pays/MLI",
-  "publications": []
+  "publications": [
+    { "network": "youtube", "format": "video" },
+    { "network": "tiktok", "format": "video" },
+    { "network": "instagram", "format": "video" },
+    { "network": "facebook", "format": "video" },
+    { "network": "linkedin", "format": "video" },
+    { "network": "x", "format": "video" }
+  ]
 }
