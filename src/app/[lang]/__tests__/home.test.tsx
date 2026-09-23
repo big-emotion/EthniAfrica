@@ -41,7 +41,7 @@ describe("minimal home", () => {
   });
   // @req REQ-115
   it.each(["fr", "en"] as const)(
-    "offers search, contribution and project in %s without loading retired sections",
+    "offers search, project and contribution in %s without loading retired sections",
     async (language) => {
       render(await Home({ params: routeParams(language) }));
       const layout = screen.getByTestId("page-layout");
@@ -49,7 +49,7 @@ describe("minimal home", () => {
         Array.from(layout.children).map(
           (node) => node.getAttribute("data-testid") ?? node.className
         )
-      ).toEqual(["home-hero", "home-contribute", "home-project"]);
+      ).toEqual(["home-hero", "home-project", "home-contribute"]);
       expect(screen.getByRole("search")).toBeInTheDocument();
       expect(
         screen.getByRole("link", {

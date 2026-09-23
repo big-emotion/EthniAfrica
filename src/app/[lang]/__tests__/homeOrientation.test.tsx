@@ -37,14 +37,14 @@ describe("home — what the reader meets, and in what order (REQ-113)", () => {
   // The DOM is the phone composition, and every wider layout reuses those
   // nodes rather than maintaining a second reading order.
   // @req REQ-113
-  it("reads search, contribution and project in that order", async () => {
+  it("reads search, project and contribution in that order", async () => {
     const { container } = await renderHome();
 
     const search = screen.getByRole("search");
     const contribution = screen.getByTestId("home-contribute");
     const project = screen.getByTestId("home-project");
-    expect(precedes(search, contribution)).toBe(true);
-    expect(precedes(contribution, project)).toBe(true);
+    expect(precedes(search, project)).toBe(true);
+    expect(precedes(project, contribution)).toBe(true);
     expect(container.querySelector(".home-hero-visual")).toBeNull();
   });
 
@@ -80,9 +80,9 @@ describe("home — what the reader meets, and in what order (REQ-113)", () => {
         .getAllByRole("heading", { level: 2 })
         .map((heading) => heading.textContent)
     ).toEqual([
-      "Faisons grandir EthniAfrica ensemble",
       "Pourquoi EthniAfrica ?",
       "Des sources pour comprendre",
+      "Faisons grandir EthniAfrica ensemble",
     ]);
     expect(screen.queryAllByRole("heading", { level: 3 })).toHaveLength(0);
   });

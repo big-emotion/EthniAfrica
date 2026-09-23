@@ -27,7 +27,7 @@ for (const width of [320, 390, 430, 768, 1199, 1440]) {
       await flow.evaluateAll((nodes) =>
         nodes.map((node) => node.getAttribute("data-testid") ?? node.className)
       )
-    ).toEqual(["home-hero", "home-contribute", "home-project"]);
+    ).toEqual(["home-hero", "home-project", "home-contribute"]);
     await expect(page.getByRole("heading", { level: 1 })).toHaveCount(1);
     await expect(page.locator("main h2")).toHaveCount(3);
     expect(
