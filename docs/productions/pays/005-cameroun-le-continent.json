@@ -1,0 +1,26 @@
+{
+  "campaign": "cameroun-le-continent",
+  "typologie": "pays",
+  "episode": 5,
+  "question": {
+    "fr": "Pourquoi appelle-t-on le Cameroun « le Continent » ?"
+  },
+  "myth": {
+    "fr": "Le surnom « le Continent » dit-il vraiment ce que sont les peuples qui vivent au Cameroun ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "CMR",
+      "label": { "fr": "Cameroun" }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/CMR",
+  "publications": [
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/DdVToP3CI2u/"
+    }
+  ]
+}
