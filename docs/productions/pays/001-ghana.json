@@ -38,7 +38,8 @@
     },
     {
       "network": "youtube",
-      "format": "video"
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/T73Pg93_6_E"
     },
     {
       "network": "linkedin",
