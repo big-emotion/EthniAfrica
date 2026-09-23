@@ -18,5 +18,12 @@
     }
   ],
   "sitePath": "/fr/atlas/familles/FLG_MANDE",
-  "publications": []
+  "publications": [
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/vESK91smqxQ",
+      "publishedAt": "2026-09-16"
+    }
+  ]
 }

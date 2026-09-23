@@ -1,0 +1,27 @@
+{
+  "campaign": "igbo-enwe-eze-sans-roi",
+  "typologie": "peuple",
+  "episode": 9,
+  "question": {
+    "fr": "Les villages igbo avaient-ils un roi ?"
+  },
+  "myth": {
+    "fr": "La plupart des villages igbo se gouvernaient-ils vraiment sans roi ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_IGBO",
+      "label": { "fr": "Igbo" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_IGBO",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7685972245491027222",
+      "publishedAt": "2026-09-16"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "campaign": "agni-anyi-meme-peuple",
+  "typologie": "peuple",
+  "episode": 6,
+  "question": {
+    "fr": "D'où viennent les noms Agni et Anyi ?"
+  },
+  "myth": {
+    "fr": "Agni en Côte d'Ivoire, Anyi au Ghana : est-ce vraiment le même peuple ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_AGNI",
+      "label": { "fr": "Agni" }
+    },
+    {
+      "kind": "people",
+      "id": "PPL_ANYI",
+      "label": { "fr": "Anyi" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_AGNI",
+  "publications": [
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/DdMaTlIiAUR/",
+      "publishedAt": "2026-09-12"
+    },
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7684685493895793942",
+      "publishedAt": "2026-09-12"
+    }
+  ]
+}

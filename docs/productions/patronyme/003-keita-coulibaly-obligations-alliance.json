@@ -23,5 +23,17 @@
     }
   ],
   "sitePath": "/fr/atlas/noms/PAT_KEITA",
-  "publications": []
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7684710053743430934",
+      "publishedAt": "2026-09-12"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/-odrM5cp9jc"
+    }
+  ]
 }

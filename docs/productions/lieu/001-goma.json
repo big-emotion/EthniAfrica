@@ -18,5 +18,21 @@
     }
   ],
   "sitePath": "/fr/atlas/pays/COD",
-  "publications": []
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7687890569099578646"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/reel/Ddipp7NK1v7/"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/gjLIHxREip0"
+    }
+  ]
 }

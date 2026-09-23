@@ -18,5 +18,12 @@
     }
   ],
   "sitePath": "/fr/atlas/peuples/PPL_DIOULA",
-  "publications": []
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7684693876015418627",
+      "publishedAt": "2026-09-12"
+    }
+  ]
 }

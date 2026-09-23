@@ -1,0 +1,32 @@
+{
+  "campaign": "krou-pas-lequipage",
+  "typologie": "langue",
+  "episode": 4,
+  "question": {
+    "fr": "D'où vient le nom Krou ?"
+  },
+  "myth": {
+    "fr": "« Krou » vient-il de l'anglais crew, l'équipage ?"
+  },
+  "subjects": [
+    {
+      "kind": "family",
+      "id": "FLG_KROU",
+      "label": { "fr": "Krou" }
+    }
+  ],
+  "sitePath": "/fr/atlas/familles/FLG_KROU",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7684676051934383382",
+      "publishedAt": "2026-09-12"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/AMorrZSdH18"
+    }
+  ]
+}
