@@ -251,4 +251,49 @@ describe("ShortsBlock", () => {
       );
     }
   );
+
+  // A production over a minute (Mandé: 2:01) still shows under this heading;
+  // the shelf title must never claim a duration bound a real video can
+  // violate. Each item's own caption already states its real duration.
+  // @req REQ-180
+  it.each(["fr", "en"] as const)(
+    "never claims a duration bound in the default shelf heading (%s)",
+    (language) => {
+      render(
+        <ShortsBlock
+          language={language}
+          items={[
+            {
+              id: "long-short",
+              href: "/fr/decouvertes/mande",
+              name: "Mandé",
+              description: "…",
+              publishedAt: "2026-09-16",
+              durationSeconds: 121,
+              watchUrl: "https://example.org/watch/mande",
+              source: {
+                title: "Archive",
+                url: "https://example.org/archive",
+                tier: "referenced",
+              },
+              match: {
+                relation: "linked-family",
+                entityType: "languageFamily",
+                entityId: "FLG_MANDE",
+              },
+              poster: {
+                src: "/images/mande.jpg",
+                alt: "Couverture",
+                width: 450,
+                height: 800,
+              },
+            },
+          ]}
+        />
+      );
+
+      const heading = screen.getByRole("heading", { level: 2 });
+      expect(heading.textContent).not.toMatch(/minute|second/i);
+    }
+  );
 });
