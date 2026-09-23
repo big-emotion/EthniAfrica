@@ -1,0 +1,51 @@
+{
+  "campaign": "fulbe-personne-appele-comme-ca",
+  "typologie": "peuple",
+  "episode": 7,
+  "question": {
+    "fr": "Peul, Fulbe, Foulani, Fellata : d'où viennent ces noms ?"
+  },
+  "myth": {
+    "fr": "Quatre noms pour un peuple : l'un d'eux vient-il vraiment de lui ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_FULA",
+      "label": { "fr": "Fulbe" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_FULA",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7685444060886093078",
+      "publishedAt": "2026-09-14"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/reel/DdRrMKRKR49/",
+      "publishedAt": "2026-09-14"
+    },
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7684269804156423446",
+      "publishedAt": "2026-09-11"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/DdJiDFiCp5H/",
+      "publishedAt": "2026-09-11"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/_znLd1YO_iU",
+      "publishedAt": "2026-09-14"
+    }
+  ]
+}

@@ -65,16 +65,16 @@ décisions vont à `/afrik-art-director` et `/ethniafrica-experience-optimizer`.
 
 Chaque critère se note **0, 1 ou 2**, avec la phrase citée qui justifie la note.
 
-| #   | Critère                                                                                                                                                                                                                                                                                                                                                                                                                               | Bloquant | Pour qui        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | --------------- |
-| 1   | **Le cadre est dit dans la pièce elle-même.** La question de l'accroche reçoit sa réponse dans la pièce, et la pièce dit qu'un nom porte plusieurs appellations et laquelle est celle que le sujet se donne. Si l'un des deux manque : 0.                                                                                                                                                                                             | oui      | le nouveau venu |
-| 2   | **Le nom qu'il se donne, d'abord.** Dès qu'un peuple est le sujet déclaré du lot, son nom propre ouvre l'inventaire et sa fiche vient la première — en carrousel ; première scène après l'accroche en vidéo ; premier écran sur une page — puis les noms qu'on lui donne, chacun avec son auteur. Ne s'applique pas à un peuple cité en passant dans un lot d'un autre sujet, voir « Le critère 2, lu par sujet déclaré » ci-dessous. | oui      | les deux        |
-| 3   | **Le peuple est sujet de la phrase.** Ni le colonisateur ni l'administration ne sont le sujet des phrases qui concluent.                                                                                                                                                                                                                                                                                                              | oui      | les deux        |
-| 4   | **Aucune phrase refusée.** Ni les trois de la doctrine, ni « les frontières sont arbitraires ».                                                                                                                                                                                                                                                                                                                                       | oui      | les deux        |
-| 5   | **Les dates sont exactes, et aucune ne nomme Berlin.** « Moins de cent quarante ans » pour les frontières ; la date d'attestation propre au nom quand un nom est daté. Une clôture qui cite « Berlin » ou « 1884 », qui en fait l'auteur des lignes, ou qui pose « mille ans » comme un fait daté : 0.                                                                                                                                | oui      | les deux        |
-| 6   | **La fin va vers ce qui est resté** — l'origine, les liens, les pays où le peuple vit aujourd'hui — pas vers la blessure.                                                                                                                                                                                                                                                                                                             | non      | les deux        |
-| 7   | **Une idée, une boucle fermée.** Une pièce qui ouvre trois sujets n'en fait passer aucun ; une question ouverte à l'accroche trouve sa réponse dans la pièce ou derrière son lien.                                                                                                                                                                                                                                                    | non      | le nouveau venu |
-| 8   | **La clôture.** Carrousel et reel : la clôture unique de §7 ter, mot pour mot — « Notre objectif : raconter l'origine des noms, avec des sources. Vous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica. » Sur une page du site : le propos est atteignable (« Notre propos », la page About).                                                                                                          | oui      | l'abonné        |
+| #   | Critère                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Bloquant | Pour qui        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | --------------- |
+| 1   | **Le cadre est dit dans la pièce elle-même.** La question de l'accroche reçoit sa réponse dans la pièce, et la pièce dit qu'un nom porte plusieurs appellations et laquelle est celle que le sujet se donne — ou, quand les sources ne l'établissent pas avec certitude, le dit honnêtement. Voir « Les critères 1 et 2, lus selon la certitude de l'endonyme » ci-dessous.                                                                                                                                                                                                                                                                 | oui      | le nouveau venu |
+| 2   | **Le nom qu'il se donne, d'abord — ou l'absence de certitude, dite d'abord.** Dès qu'un peuple est le sujet déclaré du lot, son nom propre ouvre l'inventaire et sa fiche vient la première — en carrousel ; première scène après l'accroche en vidéo ; premier écran sur une page — puis les noms qu'on lui donne, chacun avec son auteur. Ne s'applique pas à un peuple cité en passant dans un lot d'un autre sujet, voir « Le critère 2, lu par sujet déclaré » ci-dessous ; ne se force pas non plus sur un sujet dont le degré de certitude est autre, voir « Les critères 1 et 2, lus selon la certitude de l'endonyme » ci-dessous. | oui      | les deux        |
+| 3   | **Le peuple est sujet de la phrase.** Ni le colonisateur ni l'administration ne sont le sujet des phrases qui concluent.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | oui      | les deux        |
+| 4   | **Aucune phrase refusée.** Ni les trois de la doctrine, ni « les frontières sont arbitraires ».                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | oui      | les deux        |
+| 5   | **Les dates sont exactes, et aucune ne nomme Berlin.** « Moins de cent quarante ans » pour les frontières ; la date d'attestation propre au nom quand un nom est daté. Une clôture qui cite « Berlin » ou « 1884 », qui en fait l'auteur des lignes, ou qui pose « mille ans » comme un fait daté : 0.                                                                                                                                                                                                                                                                                                                                      | oui      | les deux        |
+| 6   | **La fin va vers ce qui est resté** — l'origine, les liens, les pays où le peuple vit aujourd'hui — pas vers la blessure.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | non      | les deux        |
+| 7   | **Une idée, une boucle fermée.** Une pièce qui ouvre trois sujets n'en fait passer aucun ; une question ouverte à l'accroche trouve sa réponse dans la pièce ou derrière son lien.                                                                                                                                                                                                                                                                                                                                                                                                                                                          | non      | le nouveau venu |
+| 8   | **La clôture.** Carrousel et reel : la clôture unique de §7 ter, mot pour mot — « Notre objectif : raconter l'origine des noms, avec des sources. Vous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica. » Sur une page du site : le propos est atteignable (« Notre propos », la page About).                                                                                                                                                                                                                                                                                                                | oui      | l'abonné        |
 
 | 9 | **Aucun groupe n'est rendu plus chez lui qu'un autre.** Ni en le disant, ni en le laissant entendre. Nommer les peuples qui sont « entiers », « chez eux », « là depuis toujours », « les premiers » fabrique un dehors pour tous ceux qu'on ne nomme pas. La mesure se publie ; le classement, jamais. Un lot qui hiérarchise l'appartenance, même par omission : 0. | oui | les deux |
 
@@ -199,6 +199,59 @@ Un critère qui mesure le nom d'un peuple ne s'applique qu'aux lots dont le
 peuple est le sujet réel, jamais à un lot qui se contente d'en nommer un. Un lot
 sur un personnage historique, une carte ou tout autre sujet sans peuple déclaré
 passe donc le critère 2 par défaut (2, sans paire à produire).
+
+### Les critères 1 et 2, lus selon la certitude de l'endonyme
+
+Décidé par l'opérateur le 2026-09-23, sur l'audit `dioula-un-metier-une-langue-une-identite` :
+**on ne pourra pas toujours affirmer l'endonyme et l'exonyme d'un peuple,
+comme pour Fulbe et Peul — et certains peuples n'en sont un que dans l'œil
+des étrangers.** Les critères 1 et 2 lisent depuis toujours « le nom qu'il
+se donne, d'abord » comme s'il existait toujours un nom que le sujet se
+donne, univoque, à mettre en tête. Ce n'est pas toujours le cas, et l'exiger
+quand même revient à faire dire aux sources une certitude qu'elles n'ont
+pas — exactement ce que la Source Tier Policy de `CLAUDE.md` interdit déjà
+pour toute affirmation (« Assertion tracks certainty »), maintenant étendu à
+cette grille plutôt que réservé au texte des fiches.
+
+Trois degrés de certitude, pas un seul cas binaire :
+
+1. **Établi.** Les sources s'accordent sur un nom que le sujet se donne, et
+   les noms donnés par d'autres sont documentés avec leur auteur. Les
+   critères se lisent comme écrit : le nom propre ouvre l'inventaire, les
+   autres suivent, chacun attribué.
+2. **Contesté mais existant** — le cas Fulbe/Peul. Une forme d'auto-désignation
+   est documentée (Fulɓe, Pulaar) et une forme externe aussi (Peul, du
+   wolof), mais leur rapport exact, leur ancienneté relative ou leur
+   étendue réelle restent débattus. La pièce ouvre alors sur la forme
+   dominante tout en disant l'incertitude qui reste — comme une source
+   tiendrait une hypothèse pour probable sans la clore. Un critère qui
+   noterait 0 pour ce doute assumé confondrait l'honnêteté sur l'incertitude
+   avec son absence.
+3. **Catégorie devenue identité** — le cas Dioula. Le nom ne vient pas
+   d'abord d'un peuple qui se serait nommé lui-même : c'est un mot
+   désignant d'abord un métier, un statut ou une fonction (« jula » =
+   commerçant), devenu au fil du temps une identité pour certains de ceux
+   qui l'exerçaient ou s'y reconnaissaient. La plupart des personnes ainsi
+   nommées appartiennent en réalité, d'abord, à un autre clan, une autre
+   famille ou un autre peuple — l'étiquette collective est en partie, ou en
+   grande partie, un regard porté de l'extérieur ou une fonction devenue
+   nom. Chercher ici « le » nom que « le » peuple se donne invente une
+   auto-désignation univoque que les sources ne fournissent pas : voir
+   `.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md`,
+   « Ce que le gabarit ne couvre pas », qui nomme maintenant ce cas.
+
+**Comment noter 1 et 2 dans les degrés 2 et 3 :** ils passent (2) quand la
+pièce dit explicitement, dans son propre registre, ce que les sources
+établissent réellement sur la nature du nom — une forme dominante avec son
+incertitude assumée (degré 2), ou une catégorie devenue identité dont la
+plupart des personnes nommées s'identifient d'abord ailleurs (degré 3) — sans
+jamais le taire ni inventer une certitude plus grande que celle des sources.
+Un 0 reste mérité si la pièce invente une paire endonyme/exonyme non
+établie, ou si elle passe la question sous silence alors que le sujet déclaré
+est un peuple. **Le degré se lit dans les sources vérifiées du sujet
+(`SOURCES.md` ou équivalent), jamais deviné par la grille elle-même** — un
+audit qui hésite entre deux degrés le dit et propose, il ne tranche pas à la
+place de `afrik-curator` ou de l'opérateur.
 
 ### Ce qui a été retiré, le 2026-09-21
 

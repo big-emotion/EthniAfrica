@@ -19,10 +19,22 @@
   ],
   "sitePath": "/fr/atlas/noms/PAT_MBAPPE",
   "publications": [
-    { "network": "tiktok", "format": "video" },
-    { "network": "instagram", "format": "video" },
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7687924789834534166"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/reel/Ddi43-6KvKU/"
+    },
     { "network": "facebook", "format": "video" },
-    { "network": "youtube", "format": "video" },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/qezquq7jUqE"
+    },
     { "network": "linkedin", "format": "video" },
     { "network": "x", "format": "video" }
   ]

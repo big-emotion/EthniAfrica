@@ -1,0 +1,21 @@
+{
+  "campaign": "exonymes-hottentot-kirdi-dogon",
+  "typologie": "mot",
+  "episode": 13,
+  "question": {
+    "fr": "Qui s'est appelé Hottentot, ou Kirdi ?"
+  },
+  "myth": {
+    "fr": "Un peuple s'est-il jamais appelé lui-même Hottentot ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7684276118811086102",
+      "publishedAt": "2026-09-11"
+    }
+  ]
+}

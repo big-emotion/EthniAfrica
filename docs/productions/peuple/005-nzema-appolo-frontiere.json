@@ -1,0 +1,38 @@
+{
+  "campaign": "nzema-appolo-frontiere",
+  "typologie": "peuple",
+  "episode": 5,
+  "question": {
+    "fr": "D'où vient le nom Nzema ?"
+  },
+  "myth": {
+    "fr": "Du Ghana à la Côte d'Ivoire, la frontière traverse-t-elle vraiment le peuple qu'on appelle Appolo ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_NZEMA",
+      "label": { "fr": "Nzema" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_NZEMA",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7685334903814180118",
+      "publishedAt": "2026-09-14"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/reel/DdQ64__Krjy/",
+      "publishedAt": "2026-09-14"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/L7EXNupLWds"
+    }
+  ]
+}

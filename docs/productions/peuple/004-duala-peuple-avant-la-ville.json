@@ -1,0 +1,38 @@
+{
+  "campaign": "duala-peuple-avant-la-ville",
+  "typologie": "peuple",
+  "episode": 4,
+  "question": {
+    "fr": "D'où vient le nom Duala ?"
+  },
+  "myth": {
+    "fr": "Douala est-il d'abord le nom d'une ville ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_DUALA",
+      "label": { "fr": "Duala" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_DUALA",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7684695856146042134",
+      "publishedAt": "2026-09-12"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/reel/DdMe4BKK1Qc/",
+      "publishedAt": "2026-09-12"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/HUBAIkOPKTE"
+    }
+  ]
+}

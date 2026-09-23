@@ -1,0 +1,38 @@
+{
+  "campaign": "cameroun-crevette",
+  "typologie": "pays",
+  "episode": 4,
+  "question": {
+    "fr": "D'où vient le nom Cameroun ?"
+  },
+  "myth": {
+    "fr": "Le Cameroun porte-t-il le nom d'une crevette ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "CMR",
+      "label": { "fr": "Cameroun" }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/CMR",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7682865174155496726",
+      "publishedAt": "2026-09-07"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/Dc_xtCCjgH8/",
+      "publishedAt": "2026-09-07"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/_Q1E23vO78A"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "campaign": "afrique-province-romaine",
+  "typologie": "mot",
+  "episode": 8,
+  "question": {
+    "fr": "D'où vient le nom « Afrique » ?"
+  },
+  "myth": {
+    "fr": "Le nom « Afrique » a-t-il toujours désigné tout le continent ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7681920927034100995",
+      "publishedAt": "2026-09-05"
+    },
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7682859579872529686",
+      "publishedAt": "2026-09-07"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/NcXOFuGbFvQ",
+      "publishedAt": "2026-09-05"
+    }
+  ]
+}

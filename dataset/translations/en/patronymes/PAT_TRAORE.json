@@ -61,7 +61,12 @@
       {
         "claim": "The name enters into a system of correspondences between family names of different peoples, established after Soundiata: in Wolof country, a Traoré is received as a brother by the Diop and may take their name, and reciprocally. The jamu is therefore not only hereditary, it is convertible from one area to another.",
         "claimStatus": "established",
-        "sourceRefs": ["gha-iv-mali"]
+        "sourceRefs": ["gha-iv-mali", "niane-1985-fr-mali-chapitre"]
+      },
+      {
+        "claim": "Before Soundiata, the Traoré occupy part of the country of Kiri, but the majority of them settle in the province that will later take the name Gangaran, north-west of Bouré. This territory is distinct from the cradle of the Keita, located around Dakadiala, Naréna and Kiri.",
+        "claimStatus": "established",
+        "sourceRefs": ["gha-iv-mali", "niane-1985-fr-mali-chapitre"]
       }
     ]
   },
@@ -105,6 +110,16 @@
       "allianceType": "sanankuya",
       "sourceRefs": [
         "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_DIOP",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "gha-iv-mali",
+        "niane-1985-fr-mali-chapitre",
         "canut-2002-senankuya",
         "canut-smith-2006-pactes"
       ]
@@ -180,12 +195,20 @@
       "notes": "Canut, Cécile, Cahiers de praxématique, number 38, 2002, pp. 175-197. Field survey in Mali. She sets out what the pact requires: the relationship holds in perpetuity for the whole descent of both lineages, marriage between them is prohibited — variously applied today, she notes — and mutual aid is owed without reservation. Cited for the obligation itself; it does not name the pair in this fiche, which is carried by the entries cited alongside it."
     },
     {
+      "sourceKey": "niane-1985-fr-mali-chapitre",
+      "title": "Le Mali et la deuxième expansion manden",
+      "url": "https://bokundoli.org/wp-content/uploads/2021/12/T4-10.pdf",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "Niane, Djibril Tamsir, Histoire générale de l'Afrique, tome IV, chapitre 6, UNESCO/NEA, 1985; reproduction consulted on 23 September 2026, which covers the text only from p. 141. Confirms, in the French edition, what the English edition of this same chapter (gha-iv-mali) already gives: the Traoré in Gangaran (pp. 151-152), Tiramaghan Traoré founder of Gabu (p. 151, note 27), and the clan correspondence between Traoré and Diop established after the victory of Kirina (pp. 157-158, note 44). The cradle of the Keita — Dakadiala, Naréna and Kiri (p. 152, note 28) — is that of the Keita clan, distinct from the Gangaran of the Traoré."
+    },
+    {
       "sourceKey": "canut-smith-2006-pactes",
       "title": "Pactes, alliances et plaisanteries. Pratiques locales, discours global",
       "url": "https://doi.org/10.4000/etudesafricaines.6198",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Canut, Cécile, and Smith, Étienne, Cahiers d'études africaines, number 184, 2006, p. 687 and following. Cited for the caution it carries: the idea that joking kinship would ease conflicts is treated there as a hypothesis inherited from Radcliffe-Brown and taken up by conflict-resolution studies, hence as a discourse to be analysed, not as a measured effect. The starting page is verified, the end page is not."
+      "notes": "Canut, Cécile, and Smith, Étienne, Cahiers d'études africaines, number 184, 2006, p. 687 and following. Cited for the warning it carries: the idea that joking kinship would ease conflicts is treated there as a hypothesis inherited from Radcliffe-Brown and taken up by conflict-resolution studies, thus as a discourse to be analysed and not as a measured effect. The starting page is verified, the ending page is not."
     }
   ],
   "gaps": [
@@ -196,15 +219,16 @@
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-09-09T09:32:05.896Z",
+    "translatedAt": "2026-09-23T10:45:47.273Z",
     "model": "claude-sonnet-5",
-    "sourceHash": "a4d1e560e8b379566d9cd8f370507cede05e2f67fb342e10b81340169428ae25",
+    "sourceHash": "6f9c06ecce3f430331c29ffe54d2fd3b96eb41a85ceccc033cdc480e98394742",
     "fieldHashes": {
       "origin.oralTraditions[0].claim": "3f165a38a142cf98",
       "origin.oralTraditions[0].transcription": "d753a01648ff3240",
       "origin.linguisticReconstructions[0].claim": "14f92c91d5d99f18",
       "origin.linguisticReconstructions[1].claim": "6bad8b943e3018a1",
       "origin.linguisticReconstructions[2].claim": "0ed69539bc505847",
+      "origin.linguisticReconstructions[3].claim": "2cb44ecf90d098e1",
       "casteOrSocialFunction.value": "04e8a4f11e274a30",
       "sources[0].notes": "ae5f56f3682b91ff",
       "sources[1].notes": "fc0dbc4dd8f99c38",
@@ -213,14 +237,16 @@
       "sources[4].notes": "3cb50137a59120fd",
       "sources[5].notes": "16bdc28ca53255a6",
       "sources[6].notes": "2c14e48c42d56e18",
-      "sources[7].notes": "79986afda62f44db",
+      "sources[7].notes": "2c85cf8fefdabdfc",
+      "sources[8].notes": "79986afda62f44db",
       "gaps[0].reason": "5a6a6446b9d688f5"
     },
     "reviewRequired": [
       "origin.oralTraditions[0].transcription",
       "origin.linguisticReconstructions[0].claim",
       "origin.linguisticReconstructions[1].claim",
-      "origin.linguisticReconstructions[2].claim"
+      "origin.linguisticReconstructions[2].claim",
+      "origin.linguisticReconstructions[3].claim"
     ]
   }
 }

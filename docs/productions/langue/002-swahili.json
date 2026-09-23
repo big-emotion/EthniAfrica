@@ -20,15 +20,32 @@
   ],
   "sitePath": "/fr/atlas/langues/swh",
   "publications": [
-    { "network": "tiktok", "format": "carrousel" },
-    { "network": "instagram", "format": "carrousel" },
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7688018683603471638"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/Ddjig2QCNOf/"
+    },
     { "network": "facebook", "format": "carrousel" },
     { "network": "youtube", "format": "carrousel" },
     { "network": "linkedin", "format": "carrousel" },
-    { "network": "tiktok", "format": "video" },
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7687892994271366422",
+      "publishedAt": "2026-09-21"
+    },
     { "network": "instagram", "format": "video" },
     { "network": "facebook", "format": "video" },
-    { "network": "youtube", "format": "video" },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/_m_lmj2dgAI"
+    },
     { "network": "linkedin", "format": "video" },
     { "network": "x", "format": "video" }
   ]

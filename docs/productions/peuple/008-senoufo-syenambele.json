@@ -1,0 +1,27 @@
+{
+  "campaign": "senoufo-syenambele",
+  "typologie": "peuple",
+  "episode": 8,
+  "question": {
+    "fr": "D'où vient le nom Sénoufo ?"
+  },
+  "myth": {
+    "fr": "Se disent-ils seulement Sénoufo, ou Syénambélé ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_SENUFO",
+      "label": { "fr": "Sénoufo" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_SENUFO",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7685437746491542806",
+      "publishedAt": "2026-09-14"
+    }
+  ]
+}
