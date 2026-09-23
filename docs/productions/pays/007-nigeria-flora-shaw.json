@@ -1,0 +1,39 @@
+{
+  "campaign": "nigeria-flora-shaw",
+  "typologie": "pays",
+  "episode": 7,
+  "question": {
+    "fr": "D'où vient le nom Nigeria ?"
+  },
+  "myth": {
+    "fr": "Flora Shaw a-t-elle imposé le nom \"Nigeria\" ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "NGA",
+      "label": { "fr": "Nigeria" }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/NGA",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7681920972634459414",
+      "publishedAt": "2026-09-05"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/TtmKqJ5Ly3Q",
+      "publishedAt": "2026-09-09"
+    },
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7686271307071130902",
+      "publishedAt": "2026-09-17"
+    }
+  ]
+}
