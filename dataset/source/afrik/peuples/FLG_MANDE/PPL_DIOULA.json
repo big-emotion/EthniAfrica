@@ -12,10 +12,10 @@
         "Dyula (graphie anglophone internationale)",
         "Jula (graphie phonologique adoptee par les linguistes)",
         "Juula",
-        "Wangara ou Wankara (terme utilise en Afrique de l'Ouest anglophone, notamment au Ghana)",
+        "Wangara ou Wankara (terme utilisé en Afrique de l'Ouest anglophone, notamment au Ghana ; son rapport à Jula est débattu, voir originOfExonyms)",
         "Diula, Djula, Doula, Dualas, Dyoula, Dyulanke (variantes orthographiques regionales)"
       ],
-      "originOfExonyms": "Le terme Dioula est lui-meme un nom commun mandingue signifiant commerçant ou marchand itinerant. Il a ete applique comme ethnonyme a la communaute des Mande islamises specialises dans le commerce longue distance. Wangara designe les Manden chez les Fulbe et les Hawsa ; Jula et Wangara sont synonymes et designent plus specialement les Manden qui s'adonnent au negoce (Niane). Les Wangara, riches negociants de l'or, sont decrits comme les precurseurs des Jula. A ne pas confondre avec les Diola (ou Joola) du Senegal et de Gambie, peuple distinct de famille linguistique bak.",
+      "originOfExonyms": "Le terme Dioula est lui-même un nom commun mandingue signifiant commerçant ou marchand itinérant. Il a été appliqué comme ethnonyme à la communauté des Mande islamisés spécialisés dans le commerce longue distance. Le rapport entre Wangara et Jula reste débattu selon les sources. Fauvelle et Bazin, cités par Cissé (2025), décrivent Wangara comme le nom d'un groupe du bord du Sahel qui, dans les siècles suivants, en est venu à désigner une classe professionnelle de négociants répandue en Afrique de l'Ouest — un glissement sémantique dont le terme jula hérite aujourd'hui. Lovejoy (1978), à partir du Soudan central, conteste au contraire l'équivalence Wangara/Jula pour cette région : il y décrit les Wangara comme une diaspora commerciale distincte, liée à l'empire Songhaï plutôt qu'aux réseaux mandé. À ne pas confondre avec les Diola (ou Joola) du Sénégal et de Gambie, peuple distinct de famille linguistique atlantique.",
       "whyProblematic": "La confusion avec les Diola (Joola) du Senegal est frequente en raison de la proximite orthographique des noms. Les Diola sont un peuple distinct parlant une langue atlantique, sans lien avec les Dioula mande.",
       "contemporaryUsage": "Dioula est l'appellation officielle en Cote d'Ivoire et au Burkina Faso. Dyula est courante dans la litterature academique anglophone. Jula est la forme phonologique standard adoptee par les linguistes. Le terme est utilise a la fois comme nom de peuple et comme nom de langue vehiculaire en Cote d'Ivoire.",
       "linguisticFamily": "FLG_MANDE",
@@ -30,7 +30,7 @@
       "Jula de Bobo-Dioulasso (Burkina Faso)"
     ],
     "origins": {
-      "ancientOrigins": "Les Dioula sont des Mande islamises, formes au carrefour des reseaux commerciaux arabo-berberes trans-sahariens et de la noblesse mandee convertie a l'islam. Ils descendent des marchands mandingues qui controlaient deja les routes de l'or et du sel entre le Sahel et les forets d'Afrique de l'Ouest a partir du XIe siecle. L'empire du Mali (XIIIe-XIVe siecles) et l'empire Songhai (XVe-XVIe siecles) ont favorise l'expansion de ces reseaux. Selon Niane, Soninke et Maninka etaient les specialistes du commerce de la cola et de l'or et fondaient des etapes vers Kong et Begho ; la foret les nommait jula ou wangara, deux mots synonymes de commercant.",
+      "ancientOrigins": "Les Dioula sont des Mande islamises, formes au carrefour des reseaux commerciaux arabo-berberes trans-sahariens et de la noblesse mandee convertie a l'islam. Ils descendent des marchands mandingues qui controlaient deja les routes de l'or et du sel entre le Sahel et les forets d'Afrique de l'Ouest a partir du XIe siecle. L'empire du Mali (XIIIe-XIVe siecles) et l'empire Songhai (XVe-XVIe siecles) ont favorise l'expansion de ces reseaux. Selon Niane, Soninke et Maninka etaient les specialistes du commerce de la cola et de l'or et fondaient des etapes vers Kong et Begho ; la foret les nommait jula ou wangara, deux mots que Niane tient pour synonymes de commercant — un rapport que d'autres auteurs contestent pour d'autres regions.",
       "formationPeriod": "Formation progressive entre le XIe et le XIVe siecle, avec une acceleration de l'identite commerciale distincte a partir du XIVe-XVe siecle. Le royaume de Kong, fonde en 1710 par Sekou Ouattara, constitue le point culminant de la puissance politique dioula.",
       "migrationRoutes": [
         "Routes commerciales trans-sahariennes depuis le Maghreb vers Djenne et Tombouctou (depuis le XIe siecle)",
@@ -154,6 +154,18 @@
         "url": "https://dictionary.ankataa.com/lexicon.php?letter=11",
         "tier": "unverified",
         "notes": "Compilation en ligne dérivée des dictionnaires de Bailleul, Dumestre et Vydrin. Donne jula pour le commerçant, jago pour le commerce, et julakan pour la langue."
+      },
+      {
+        "title": "Chikouna Cissé, Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe–XIXe siècles), À propos 1, 2025",
+        "url": "https://www.ouvroir.fr/apropos/index.php?id=100",
+        "tier": "referenced",
+        "notes": "Cite François-Xavier Fauvelle et Jean Bazin sur le glissement sémantique de Wangara vers Jula, du nom d'un groupe vers celui d'une spécialisation professionnelle."
+      },
+      {
+        "title": "Paul E. Lovejoy, The Role of the Wangara in the Economic Transformation of the Central Sudan in the Fifteenth and Sixteenth Centuries, The Journal of African History 19(2), 1978, pp. 173-193",
+        "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/role-of-the-wangara-in-the-economic-transformation-of-the-central-sudan-in-the-fifteenth-and-sixteenth-centuries/1DB11290A76E4158CE5E60EB0CB0E4B9",
+        "tier": "referenced",
+        "notes": "Conteste, pour le Soudan central et le pays haoussa, l'équivalence courante entre Wangara et Jula : y décrit les Wangara comme une diaspora commerciale distincte, liée à l'empire Songhaï. Résumé consulté, texte intégral non lu."
       }
     ]
   },
