@@ -122,6 +122,15 @@ It introduces the connected series; it is not a name-origin episode or a
 vocabulary word. Its record is
 [introduction/comprendre-afrique-noms.json](introduction/comprendre-afrique-noms.json).
 
+A second unnumbered record,
+[introduction/pourquoi-la-meconnaissance-freine-l-afrique.json](introduction/pourquoi-la-meconnaissance-freine-l-afrique.json),
+files the operator's message video of 2026-09-23 (« Pourquoi ignorer nos noms
+freine l'Afrique ? »). It is an exceptional piece decided by the operator, outside
+the five typologies and the `mot` exception, with no episode and no myth. It uses
+this record type only because it is the one that holds a piece with neither. Its
+carousel, to be published later, cannot be registered here for the reason given
+below.
+
 - `typologie` is `introduction`; `episode` and `myth` must be explicitly `null`.
   No episode zero or invented audience belief is required.
 - `subjects` is empty and `sitePath` is `/fr/about`: the piece explains the
