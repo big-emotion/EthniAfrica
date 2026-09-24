@@ -1012,6 +1012,26 @@ describe("Découvertes video", () => {
     expect(document.querySelector("iframe")).toBeNull();
   });
 
+  // The caption sits in front of the picture, so a playing player would be
+  // drawn under the site's own words. The words step aside while it plays and
+  // come back with the facade.
+  // @req REQ-181
+  it("takes the caption out of the way while the video plays and restores it on close", () => {
+    renderVideo(video);
+    const credit = screen.getByRole("link", { name: "CC BY-SA 4.0" });
+    expect(credit.closest("[inert]")).toBeNull();
+
+    fireEvent.click(
+      screen.getByRole("button", { name: /charge le lecteur de YouTube/i })
+    );
+    expect(credit.closest("[inert]")).not.toBeNull();
+    expect(credit.closest("article")).toHaveAttribute("data-playing", "true");
+
+    fireEvent.click(screen.getByRole("button", { name: /fermer le lecteur/i }));
+    expect(credit.closest("[inert]")).toBeNull();
+    expect(credit.closest("article")).not.toHaveAttribute("data-playing");
+  });
+
   // REQ-128: author, licence and the page the piece is published on.
   // @req REQ-181
   it("credits the author and links the licence", () => {
