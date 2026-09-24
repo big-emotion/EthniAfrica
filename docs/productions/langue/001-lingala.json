@@ -44,5 +44,18 @@
       "url": "https://www.youtube.com/shorts/kzzDsZQlprI",
       "publishedAt": "2026-09-05"
     }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/lingala-invente-par-les-belges.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 35,
+  "sources": [
+    {
+      "title": "Lingala — EthniAfrica",
+      "url": "https://ethniafrica.com/fr/atlas/langues/lin",
+      "tier": "referenced"
+    }
   ]
 }

@@ -29,5 +29,18 @@
       "url": "https://www.youtube.com/shorts/1NUTL_-6t2w",
       "publishedAt": "2026-09-12"
     }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/nzebi-muyambili-memoire.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 52,
+  "sources": [
+    {
+      "title": "Nzebi — EthniAfrica",
+      "url": "https://ethniafrica.com/fr/atlas/peuples/PPL_NZEBI",
+      "tier": "referenced"
+    }
   ]
 }

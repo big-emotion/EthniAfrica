@@ -47,5 +47,18 @@
       "url": "https://www.youtube.com/shorts/_znLd1YO_iU",
       "publishedAt": "2026-09-14"
     }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/fulbe-personne-appele-comme-ca.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 98,
+  "sources": [
+    {
+      "title": "Fulbe — EthniAfrica",
+      "url": "https://ethniafrica.com/fr/atlas/peuples/PPL_FULA",
+      "tier": "referenced"
+    }
   ]
 }
