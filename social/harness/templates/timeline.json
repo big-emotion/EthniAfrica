@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "profile": "free",
+  "coverage": "complete",
+  "title": "REPLACE: approved subject title",
+  "source": {
+    "source_script_sha256": "REPLACE_FROM_FILE",
+    "source_audio_sha256": "REPLACE_FROM_FILE",
+    "cuts": [],
+    "paragraphs": []
+  },
+  "output_dir": "REPLACE_WITH_PRIVATE_PROOF_DESTINATION/_epreuves",
+  "sources": {
+    "reference": {
+      "citation": "REPLACE: full source citation",
+      "label": "REPLACE: short citation",
+      "url": "REPLACE: source URL",
+      "tier": "unverified"
+    }
+  },
+  "assets": {},
+  "scenes": [
+    {
+      "id": "01-chronology",
+      "type": "timeline",
+      "start": null,
+      "end": null,
+      "title": "REPLACE: visible title",
+      "purpose": "Place sourced events in time, with independently sourced contemporary context if useful.",
+      "evidence": {
+        "sources": ["reference"],
+        "status": "illustration",
+        "period": "REPLACE: source period"
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      },
+      "timeline": {
+        "scale": "ordinal",
+        "events": [
+          {
+            "year": null,
+            "label": "REPLACE: concise event",
+            "at": null,
+            "evidence": {
+              "sources": ["reference"],
+              "status": "illustration",
+              "period": "REPLACE: source period"
+            }
+          },
+          {
+            "year": null,
+            "label": "REPLACE: concise event",
+            "at": null,
+            "evidence": {
+              "sources": ["reference"],
+              "status": "illustration",
+              "period": "REPLACE: source period"
+            }
+          }
+        ],
+        "context": []
+      }
+    }
+  ]
+}

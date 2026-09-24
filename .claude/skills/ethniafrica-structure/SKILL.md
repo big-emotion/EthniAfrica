@@ -7,6 +7,28 @@ description: Écrire le contenu d'une publication EthniAfrica à partir d'un rap
 
 Deuxième étape. `idee` vient avant, `produire` vient après.
 
+## Scene-based video route (2026-09-24)
+
+For a video explicitly using the scene engine, read
+`social/harness/SCENES.md` and `references/gabarit-reel-scenes.md` first.
+This route separates the approved editorial narration from its visual scenes.
+It supports name-origin, history/geography, thematic analysis and an authored
+free sequence. It does not change carousel templates or publication approval.
+
+The existing name-origin rules below still govern name-origin narration.
+For the other scene profiles, use the scene reference instead of forcing the
+name-origin checker to accept a thematic argument. Do not invent a corpus entity,
+episode, myth or ledger category to make a dossier look like a name-origin post.
+The source report and explicit text approval remain prerequisites.
+
+Prepare `scene-plan.json`, its source/asset register and relative asset bundle
+alongside the narration. Existing decks may be reused as source context; a new
+video-only subject does not need a fabricated carousel deck. Hash approved
+inputs and bind scene boundaries to the measured voice. A visual scene can
+span or subdivide a paragraph without changing its speech. Supply a handoff
+that a smaller model can execute without rewriting the renderer. V1 produces
+proofs; it does not register the subject or change publication status.
+
 Si aucun rapport de sujet n'existe dans `$ETHNIAFRICA_SOCIAL_PROJECTS/_idees/`, dis-le et
 propose de lancer `idee`. Ne saute pas l'étape.
 

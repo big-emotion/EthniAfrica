@@ -3,6 +3,37 @@
 The engine, the brand ending and every measured constraint live here. A project
 supplies only its narration, its scene sheet and its assets.
 
+The opt-in [scene video engine](SCENES.md) combines maps, photographs, text and
+comparisons from a validated storyboard. It includes the existing-system audit,
+the input contract, editorial profiles and the handoff between planning model,
+execution model, renderer and operator. Use `--scene-plan` through
+`ethni_montage.py`; `--validate-only` and `--previews-only` check a plan before
+encoding. V1 exports remain watermarked proofs; carousels are unchanged.
+
+## Experimental animated-map proofs
+
+`python3 ethni_montage.py <subject> --map-proof <storyboard.json>` renders a
+vertical, watermarked map proof from local GeoJSON and excerpts of existing
+approved audio. It makes no Hugging Face, MCP or paid API calls. The normal
+production renderer remains the default; this experimental composition is not
+a publication-ready gabarit.
+
+Keep the storyboard, geographic assets and output in the private workshop and
+library. The storyboard specifies `source_script_sha256`, `source_audio_sha256`,
+`cuts` (audio start/end seconds), `paragraphs` (zero-based narration paragraphs),
+`geometry` (relative GeoJSON path) and `output_dir` (under `_epreuves`). Camera
+keyframes use `at` and `bounds` in west/south/east/north order; point coordinates
+use longitude/latitude. `sections`, `markers`, `country_labels` and `events`
+supply the visible copy and timing. Country properties need `ADM0_A3` codes.
+Source and license every geographic asset and visual claim in the workshop.
+
+The renderer rejects stale approval, changed source hashes, stale alignment and
+cuts through words. Selected paragraphs must match the retained words exactly.
+It exports H.264/AAC at 1080 × 1920 and 25 fps, preview frames, retimed captions
+and a provenance report. `--controle` holds each section's camera for review.
+Modern borders provide orientation only; no historical territory or migration
+is inferred. Existing narration approval does not approve the new visuals.
+
 ```
 python3 ethni_audio.py      <Name>  # TTS take → paced narration → captions
 python3 ethni_montage.py    <Name>  # deck + alignment → video, composed by ethni_compose

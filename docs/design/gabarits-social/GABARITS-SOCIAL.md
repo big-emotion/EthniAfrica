@@ -1269,6 +1269,22 @@ posées sur un récit qui n'avait pas fini.
 
 ### Aucune image ne tient plus de quatre secondes
 
+**Scene-plan extension (2026-09-24).** The operator requested a second video
+path after feedback that automatic image changes were too fast to follow.
+For `--scene-plan` videos, an explicitly timed scene may hold a photograph or
+an evolving map for the whole relevant passage. Its `purpose` explains the
+choice, and its timing follows approved, aligned narration. There is no
+automatic four-second replacement or image loop on this path. The rule below
+continues to describe the legacy montage; it does not govern scene plans or
+change any carousel rule. See [the scene engine contract](../../../social/harness/SCENES.md).
+
+Scene-plan proofs retain the reel's palette, type roles, interface exclusion
+zones, source credits and narration captions. Visual transitions do not change
+audio duration. National borders are optional; political extents and population
+presences require distinct, dated, sourced representations. Estimates and
+hypotheses remain visibly labelled. This extension authorizes composition work,
+not automatic publication approval.
+
 **Une image change au moins toutes les quatre secondes.** Passé ce seuil, l'œil a
 fini de lire le cadre et attend la suite ; au-delà, la vidéo se voit à l'arrêt même
 quand la voix continue. La Côte d'Ivoire et le Mandé ont été renvoyés en production

@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "profile": "free",
+  "coverage": "complete",
+  "title": "REPLACE: approved subject title",
+  "source": {
+    "source_script_sha256": "REPLACE_FROM_FILE",
+    "source_audio_sha256": "REPLACE_FROM_FILE",
+    "cuts": [],
+    "paragraphs": []
+  },
+  "output_dir": "REPLACE_WITH_PRIVATE_PROOF_DESTINATION/_epreuves",
+  "sources": {
+    "reference": {
+      "citation": "REPLACE: full source citation",
+      "label": "REPLACE: short citation",
+      "url": "REPLACE: source URL",
+      "tier": "unverified"
+    }
+  },
+  "assets": {},
+  "scenes": [
+    {
+      "id": "01-opening",
+      "type": "text",
+      "start": null,
+      "end": null,
+      "title": "REPLACE: visible title",
+      "text": "REPLACE: approved visible copy",
+      "purpose": "Explain the role of the opening beat in this particular argument.",
+      "beat": "opening",
+      "evidence": {
+        "sources": ["reference"],
+        "status": "illustration",
+        "period": "REPLACE: source period"
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    },
+    {
+      "id": "02-development",
+      "type": "text",
+      "start": null,
+      "end": null,
+      "title": "REPLACE: visible title",
+      "text": "REPLACE: approved visible copy",
+      "purpose": "Explain the role of the development beat in this particular argument.",
+      "beat": "development",
+      "evidence": {
+        "sources": ["reference"],
+        "status": "illustration",
+        "period": "REPLACE: source period"
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    },
+    {
+      "id": "03-closing",
+      "type": "text",
+      "start": null,
+      "end": null,
+      "title": "REPLACE: visible title",
+      "text": "REPLACE: approved visible copy",
+      "purpose": "Explain the role of the closing beat in this particular argument.",
+      "beat": "closing",
+      "evidence": {
+        "sources": ["reference"],
+        "status": "illustration",
+        "period": "REPLACE: source period"
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    }
+  ]
+}
