@@ -79,10 +79,11 @@ def validate_geometry(geo):
 
 
 def validate_map(value, duration, assets, sources):
-    keys(value, "asset layer borders highlights camera features graticule", "map")
+    keys(value, "asset layer borders border_style highlights camera features graticule", "map")
     require(value.get("asset") in assets and assets[value["asset"]]["kind"] == "geojson", "map: geographic asset required")
     require(value.get("layer") in ("national", "political", "people", "physical"), "map: unknown layer")
     require(type(value.get("borders")) is bool, "map.borders must be explicit")
+    require(value.get("border_style", "solid") in ("solid", "dashed"), "Unknown border_style")
     if "graticule" in value:
         require(type(value["graticule"]) is bool, "map.graticule must be boolean")
     require(isinstance(value.get("highlights", []), list), "map.highlights must be a list")
@@ -102,9 +103,9 @@ def validate_map(value, duration, assets, sources):
     features = value.get("features", [])
     require(isinstance(features, list) and len(features) <= 12, "map supports at most twelve authored features")
     for feature in features:
-        keys(feature, "kind point points label at until colour evidence meaning offset flag_stripes", "map feature")
+        keys(feature, "kind point points label at until colour evidence meaning offset flag_stripes geometry_note", "map feature")
         kind = feature.get("kind")
-        require(kind in ("point", "presence", "territory", "route"), "Unknown map feature kind")
+        require(kind in ("point", "presence", "presence-zone", "territory", "route"), "Unknown map feature kind")
         text(feature.get("label"), "feature.label")
         evidence(feature.get("evidence"), sources, "feature.evidence")
         start = number(feature.get("at"), "feature.at", 0, duration)
@@ -121,9 +122,13 @@ def validate_map(value, duration, assets, sources):
             points = feature.get("points")
             require(isinstance(points, list) and len(points) >= 2, "feature.points needs a path")
             for p in points: point(p, "feature.points")
-            if kind == "territory":
+            if kind in ("territory", "presence-zone"):
                 require(len(points) >= 4 and points[0] == points[-1], "territory needs a closed ring")
                 require(value["layer"] in ("political", "people"), "territory requires political or people layer")
+                if kind == "presence-zone":
+                    require(value["layer"] == "people", "presence-zone requires the people layer")
+                    require(feature["evidence"]["status"] in ("estimate", "hypothesis"), "presence-zone must be an estimate or hypothesis")
+                    text(feature.get("geometry_note"), "presence-zone.geometry_note")
             else:
                 require(feature.get("meaning") in ("migration", "language-diffusion", "name-circulation"),
                         "route.meaning must distinguish migration, language diffusion or name circulation")
@@ -133,6 +138,28 @@ def validate_map(value, duration, assets, sources):
             require(isinstance(feature["flag_stripes"], list) and len(feature["flag_stripes"]) == 3 and
                     all(isinstance(c, str) and re.fullmatch(r"#[0-9a-fA-F]{6}", c) for c in feature["flag_stripes"]),
                     "flag_stripes requires three hex colours")
+
+
+def validate_timeline(value, duration, sources):
+    keys(value, "scale events context", "timeline")
+    require(value.get("scale") == "ordinal", "timeline.scale must be ordinal; spacing is explicitly not proportional")
+    events, context = value.get("events"), value.get("context", [])
+    require(isinstance(events, list) and 2 <= len(events) <= 3, "timeline needs two or three primary events")
+    require(isinstance(context, list) and len(context) <= 2, "timeline supports at most two context events")
+    years = []
+    for lane in (events, context):
+        for event in lane:
+            keys(event, "year label detail at evidence" if lane is context else "year label at evidence", "timeline event")
+            require(type(event.get("year")) is int and event["year"] != 0, "event.year must be a nonzero integer")
+            text(event.get("label"), "event.label")
+            if lane is context: text(event.get("detail"), "event.detail")
+            number(event.get("at"), "event.at", 0, duration-.04)
+            evidence(event.get("evidence"), sources, "event.evidence")
+        if lane is events:
+            years = [event["year"] for event in events]
+            require(all(a < b for a, b in zip(years, years[1:])), "Primary events must be in chronological order")
+    require(all(event["year"] in years for event in context), "Context must share the same year as a primary event")
+    require(len({event["year"] for event in context}) == len(context), "Group same-year context into one event")
 
 
 def validate_plan(plan, root, duration):
@@ -168,7 +195,7 @@ def validate_plan(plan, root, duration):
     ids, previous = set(), 0.0
     for index, scene in enumerate(scenes):
         where = f"scene {index+1}"
-        keys(scene, "id type start end title purpose evidence beat map image text comparison transition", where)
+        keys(scene, "id type start end title purpose evidence beat map image text comparison timeline document transition", where)
         text(scene.get("id"), f"{where}.id")
         require(scene["id"] not in ids, "Scene ids must be unique")
         ids.add(scene["id"])
@@ -180,8 +207,8 @@ def validate_plan(plan, root, duration):
         for field in ("title", "purpose"): text(scene.get(field), f"{where}.{field}")
         evidence(scene.get("evidence"), sources, f"{where}.evidence")
         kind = scene.get("type")
-        require(kind in ("map", "image", "text", "comparison"), "Unknown scene type")
-        require(all(field == kind or field not in scene for field in ("map", "image", "text", "comparison")),
+        require(kind in ("map", "image", "text", "comparison", "timeline", "document"), "Unknown scene type")
+        require(all(field == kind or field not in scene for field in ("map", "image", "text", "comparison", "timeline", "document")),
                 f"{where}: content for another scene type")
         if kind == "map":
             validate_map(scene.get("map"), end-start, assets, sources)
@@ -203,6 +230,13 @@ def validate_plan(plan, root, duration):
                     number(k[2], "focusY", 0, 1)
                 require(value["fit"] == "cover" or all(k[0] == 1 for k in value["motion"].values()),
                         "contain preserves the full document; use zoom 1 or explicitly choose cover")
+        elif kind == "timeline":
+            validate_timeline(scene.get("timeline"), end-start, sources)
+        elif kind == "document":
+            value = scene.get("document")
+            keys(value, "asset label body", "document")
+            require(value.get("asset") in assets and assets[value["asset"]]["kind"] == "image", "document image asset required")
+            for field in ("label", "body"): text(value.get(field), f"document.{field}")
         elif kind == "text":
             text(scene.get("text"), "scene.text")
         else:

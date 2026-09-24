@@ -108,12 +108,30 @@ Evidence always has `sources` (IDs), `period` (visible) and `status`:
 Those are author assertions to review, not findings automatically verified by
 the renderer. Full citations remain in `REVIEW.md`; short labels fit the frame.
 
-| Scene type   | Content                                                                                                          |
-| ------------ | ---------------------------------------------------------------------------------------------------------------- |
-| `map`        | `asset`, `layer`, explicit `borders`, optional `highlights`, `graticule`, camera keyframes and authored features |
-| `image`      | `asset`, `fit` (`contain` or `cover`), optional `motion` with `from`/`to` values `[zoom,focusX,focusY]`          |
-| `text`       | One wrapped string in `text`; useful for an argument or quotation, with evidence and attribution                 |
-| `comparison` | Two or three `{label,body,at?}` items, vertically stacked for mobile; `at` is local seconds                      |
+| Scene type   | Content                                                                                                             |
+| ------------ | ------------------------------------------------------------------------------------------------------------------- |
+| `map`        | `asset`, `layer`, explicit `borders`, optional `highlights`, `graticule`, camera keyframes and authored features    |
+| `image`      | `asset`, `fit` (`contain` or `cover`), optional `motion` with `from`/`to` values `[zoom,focusX,focusY]`             |
+| `text`       | One wrapped string in `text`; useful for an argument or quotation, with evidence and attribution                    |
+| `comparison` | Two or three `{label,body,at?}` items, vertically stacked for mobile; `at` is local seconds                         |
+| `timeline`   | `{scale: "ordinal", events, context?}`; two or three chronological events and up to two same-year contextual events |
+| `document`   | `{asset,label,body}`; a complete archival image beside concise copy, with source and asset credits                  |
+
+Use `timeline` for multiple historical dates. Each primary event contains
+`year` (a nonzero integer), `label`, `at` (local seconds) and its own `evidence`.
+Events must be strictly chronological. Context events additionally require
+`detail` and share a primary event's exact year; they appear on a separate
+labelled lane, not as an implied cause. Combine multiple events in one year
+into one concise label, or use another scene. The visible spacing notice is
+mandatory: equal layout spacing does **not** represent equal elapsed time.
+All event sources enter the credit register even if the parent scene lists
+different sources. Long labels fail preflight rather than shrinking to fit.
+`templates/timeline.json` is a placeholder starter, not a historical example.
+
+The `document` layout keeps the complete source image (no crop), checks the
+same enlargement ceiling, and pairs it with a short label and explanation.
+A portrait illustrates its subject; it is not evidence that a depicted meeting
+or scene occurred. Identify the actual edition/date, not an assumed book cover.
 
 Image zoom is bounded from 1 to 1.25 and enlargement by the existing ×2 ceiling.
 `contain` preserves a whole document and does not zoom; `cover` explicitly
@@ -144,6 +162,8 @@ Map layers: `national`, `political`, `people`, `physical`. Country highlighting
 is permitted only in `national`. Borders are an independent visible option.
 Turning them off uses uniform land fills without country strokes. That does
 not turn a set of national statistics into a historical territory.
+With borders enabled, optional `border_style: "dashed"` draws quiet dashed
+outlines behind population/territory overlays; omission preserves solid lines.
 
 Features have `kind`, `label`, local `at`/`until`, their own `evidence`, optional
 `colour` (`gold`, `white`, `night-ink-2`, `teal`, `perv`) and label `offset`.
@@ -155,6 +175,12 @@ Features have `kind`, `label`, local `at`/`until`, their own `evidence`, optiona
   measured density, exclusive membership, exact settlement or population size.
 - `territory`: closed `points` ring, on a political or people layer. Estimates
   and hypotheses have dashed outlines and visible epistemic labels.
+- `presence-zone`: closed `points` ring, people layer only, with a feathered
+  coloured fill and no hard perimeter. Requires `estimate` or `hypothesis`
+  evidence and a visible `geometry_note`. The feathered edge is a schematic
+  uncertainty convention, not a measured density surface. An authored ring
+  based on qualitative place references must explicitly state that its extent
+  is not measured; it must never be represented as a surveyed settlement area.
 - `route`: ordered `points`, revealed progressively with an arrow. `meaning`
   must be `migration`, `language-diffusion` or `name-circulation`. The reveal is
   an explanatory animation, not a measured travel speed or literal track.

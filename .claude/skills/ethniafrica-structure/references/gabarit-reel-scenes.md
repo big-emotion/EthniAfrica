@@ -51,6 +51,25 @@ freedom to omit uncertainty or to turn unsupported geography into a picture.
 
 ## Preparation and delivery
 
+### Reusable visual choices
+
+Use a `timeline` scene when two or more dates form the argument. The mobile
+template places two or three dated events horizontally and reveals them at
+voice cues. Its spacing is explicitly ordinal, not a proportional time scale.
+Split longer sequences into several scenes. An optional context lane aligns a
+separately sourced event from elsewhere with the same year; contemporaneity
+must not imply a causal link. Never invent a parallel just to fill the lane.
+
+A sustained historical explanation should carry a relevant document or image.
+Use `document` for an attributed portrait, title page or other archival object
+beside concise copy. Keep `text` for a brief intentional pause or statement,
+not as the automatic replacement for a missing source image.
+
+For schematic geographic presence, `presence-zone` gives a feathered coloured
+area and requires an explicit uncertainty status and visible `geometry_note`.
+Modern borders can remain behind it with `border_style: dashed`. The soft edge
+does not measure population density, exclusivity or a political boundary.
+
 1. Complete the subject/source work and obtain the existing explicit approval
    for the full narration. Do not use rendering to introduce unseen speech.
 2. Prepare the audio and measured alignment through the existing workflow.

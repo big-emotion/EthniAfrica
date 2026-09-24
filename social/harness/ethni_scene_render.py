@@ -2,12 +2,28 @@
 import json
 import math
 
-from PIL import Image, ImageColor, ImageDraw, ImageOps
+from PIL import Image, ImageColor, ImageDraw, ImageOps, ImageFilter
 
 import ethni_tokens as tokens
 from ethni_type import font
 from ethni_map import Camera, camera_at, mix, partial_path, smooth
 from ethni_scene_plan import STATUS, asset_path, scene_at, transition_at, require
+from ethni_scene_timeline import draw_timeline
+
+
+def dashed_line(draw, points, colour, width=2):
+    """Keep dash phase across short geographic segments, including tiny rings."""
+    phase = 0.0
+    for a, b in zip(points, points[1:]):
+        length = math.dist(a, b)
+        position = 0.0
+        while position < length:
+            step = min(length-position, 10-phase if phase < 10 else 18-phase)
+            if phase < 10:
+                draw.line([tuple(v+(u-v)*t/length for v, u in zip(a, b))
+                           for t in (position, position+step)], fill=colour, width=width)
+            position += step
+            phase = (phase+step) % 18
 
 
 class SceneRenderer:
@@ -93,6 +109,7 @@ class SceneRenderer:
                 draw.line([camera.project((-180, lat)), camera.project((180, lat))], fill=colour)
         # Uniform country fills with no strokes form the physical land surface.
         # Borders are an independent optional overlay, never the people layer.
+        boundaries = []
         for feature in self.assets[cfg["asset"]]["features"]:
             geometry = feature["geometry"]
             polygons = [geometry["coordinates"]] if geometry["type"] == "Polygon" else geometry["coordinates"]
@@ -102,8 +119,15 @@ class SceneRenderer:
                 draw.polygon(points, fill=mix(p["ground"], p["gold"] if highlighted else p["night-ink-2"], .22))
                 for hole in rings[1:]:
                     draw.polygon([camera.project(point) for point in hole], fill=p["ground"])
-                if cfg["borders"]:
-                    draw.line(points, fill=mix(p["ground"], p["night-ink-2"], .6), width=2)
+                boundaries.append(points)
+        # Draw all boundaries after all land fills so adjacent countries cannot erase them.
+        if cfg["borders"]:
+            boundary_ink = mix(p["ground"], p["night-ink-2"], .6)
+            for points in boundaries:
+                if cfg.get("border_style", "solid") == "dashed":
+                    dashed_line(draw, points, boundary_ink)
+                else:
+                    draw.line(points, fill=boundary_ink, width=2)
         label_boxes = []
         for feature in cfg.get("features", []):
             if not feature["at"] <= local < feature["until"]:
@@ -121,6 +145,14 @@ class SceneRenderer:
                 stripes = feature.get("flag_stripes", [])
                 for i, stripe in enumerate(stripes):
                     draw.rectangle((x+i*12-18, y-40, x+(i+1)*12-18, y-18), fill=stripe)
+            elif kind == "presence-zone":
+                points = [camera.project(point) for point in feature["points"]]
+                mask = Image.new("L", canvas.size)
+                ImageDraw.Draw(mask).polygon(points, fill=125)
+                mask = mask.filter(ImageFilter.GaussianBlur(18))
+                # The feathered edge represents uncertainty, not population density.
+                canvas.paste(Image.new("RGB", canvas.size, colour), (0, 0), mask)
+                x, y = points[0]
             elif kind == "territory":
                 points = [camera.project(point) for point in feature["points"]]
                 overlay = Image.new("RGBA", canvas.size)
@@ -159,6 +191,18 @@ class SceneRenderer:
                 self.paragraph(draw, feature["label"], (x+dx, y+dy, label_width+1, 40), "Bandeau", colour)
         return canvas
 
+    def _document(self, image, draw, scene):
+        value, p = scene["document"], self.palette
+        source = self.assets[value["asset"]]
+        draw.rounded_rectangle((65, 490, 957, 1230), radius=20, fill=mix(p["ground"], p["gold"], .075))
+        scale = min(470/source.width, 690/source.height)
+        require(scale <= tokens.SUR_ECH_MAX, "Document enlargement exceeds the charter ceiling")
+        document = source.resize((round(source.width*scale), round(source.height*scale)), Image.Resampling.LANCZOS)
+        image.paste(document, (91+(470-document.width)//2, 510+(690-document.height)//2))
+        draw.line((597, 552, 597, 1140), fill=mix(p["ground"], p["gold"], .35), width=2)
+        self.paragraph(draw, value["label"], (625, 570, 275, 180), "Paire — terme", p["gold"])
+        self.paragraph(draw, value["body"], (625, 795, 275, 365), "Corps")
+
     def visual(self, scene, instant):
         image = Image.new("RGB", (self.width, self.height), self.palette["ground"])
         draw = ImageDraw.Draw(image)
@@ -167,6 +211,10 @@ class SceneRenderer:
         if kind in ("map", "image"):
             content = self._map(scene, local) if kind == "map" else self._image(scene, local)
             image.paste(content, self.content[:2])
+        elif kind == "timeline":
+            draw_timeline(self, draw, scene, local)
+        elif kind == "document":
+            self._document(image, draw, scene)
         elif kind == "text":
             self.paragraph(draw, scene["text"], (self.left, 640, self.right-self.left, 470), "Corps")
         else:
@@ -178,13 +226,15 @@ class SceneRenderer:
                 self.paragraph(draw, item["body"], (self.left, top+94, self.right-self.left, 100), "Corps")
         legend = []
         if kind == "map":
-            legend.append("Frontières actuelles · Mercator" if scene["map"]["borders"] else "Sans frontières actuelles · Mercator")
+            legend.append(("Frontières actuelles en pointillé · Mercator" if scene["map"].get("border_style") == "dashed"
+                           else "Frontières actuelles · Mercator") if scene["map"]["borders"] else "Sans frontières actuelles · Mercator")
             for feature in scene["map"].get("features", []):
                 if feature["at"] <= local < feature["until"]:
                     e = feature["evidence"]
                     meaning = {"migration": "Migration", "language-diffusion": "Diffusion linguistique",
                                "name-circulation": "Circulation du nom"}.get(feature.get("meaning"))
                     legend.append(f"{feature['label']} · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else ""))
+                    if feature.get("geometry_note"): legend.append(feature["geometry_note"])
         self.paragraph(draw, "\n".join(legend), (self.left, 1190, self.right-self.left, 142), "Crédit", self.palette["night-ink-2"])
         return image
 
@@ -192,11 +242,15 @@ class SceneRenderer:
         kind = scene["type"]
         credits = []
         asset_source = None
-        if kind in ("map", "image"):
+        if kind in ("map", "image", "document"):
             asset = self.plan["assets"][scene[kind]["asset"]]
             credits.append(f"{asset['credit']} · {asset['license']}")
             asset_source = asset["source"]
-        refs = [self.plan["sources"][key] for key in scene["evidence"]["sources"] if key != asset_source]
+        source_keys = list(scene["evidence"]["sources"])
+        if kind == "timeline":
+            for event in scene["timeline"]["events"] + scene["timeline"].get("context", []):
+                source_keys.extend(event["evidence"]["sources"])
+        refs = [self.plan["sources"][key] for key in dict.fromkeys(source_keys) if key != asset_source]
         if refs:
             credits.append(" · ".join(source.get("label", source["citation"]) for source in refs))
         return credits
@@ -252,6 +306,8 @@ class SceneRenderer:
                     instants.update((start+f["at"], start+f["until"]-1e-6))
             if scene["type"] == "comparison":
                 instants.update(start+i.get("at", 0) for i in scene["comparison"] if start+i.get("at", 0) < end)
+            if scene["type"] == "timeline":
+                instants.update(start+i["at"] for i in scene["timeline"]["events"]+scene["timeline"].get("context", []))
         for instant in sorted(instants):
             self.render(instant)
         return sorted(instants)
