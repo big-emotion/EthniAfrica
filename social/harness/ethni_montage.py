@@ -402,6 +402,21 @@ def main():
     controle = "--controle" in sys.argv
     projet = PROJETS / sys.argv[1]
 
+    if {"--validate-only", "--previews-only"}.intersection(sys.argv) and "--scene-plan" not in sys.argv:
+        raise SystemExit("--validate-only and --previews-only require --scene-plan")
+
+    if "--scene-plan" in sys.argv:
+        from ethni_scenes import run
+        index = sys.argv.index("--scene-plan")
+        if index + 1 >= len(sys.argv) or sys.argv[index + 1].startswith("--"):
+            raise SystemExit("--scene-plan requires a storyboard JSON file")
+        try:
+            run(projet, sys.argv[index + 1], reduced_motion=controle,
+                validate_only="--validate-only" in sys.argv, previews_only="--previews-only" in sys.argv)
+        except (ValueError, KeyError, OSError) as error:
+            raise SystemExit(f"Scene plan rejected: {error}") from error
+        return
+
     if "--map-proof" in sys.argv:
         from ethni_map_proof import render_proof
         index = sys.argv.index("--map-proof")

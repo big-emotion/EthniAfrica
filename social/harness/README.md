@@ -3,6 +3,13 @@
 The engine, the brand ending and every measured constraint live here. A project
 supplies only its narration, its scene sheet and its assets.
 
+The opt-in [scene video engine](SCENES.md) combines maps, photographs, text and
+comparisons from a validated storyboard. It includes the existing-system audit,
+the input contract, editorial profiles and the handoff between planning model,
+execution model, renderer and operator. Use `--scene-plan` through
+`ethni_montage.py`; `--validate-only` and `--previews-only` check a plan before
+encoding. V1 exports remain watermarked proofs; carousels are unchanged.
+
 ## Experimental animated-map proofs
 
 `python3 ethni_montage.py <subject> --map-proof <storyboard.json>` renders a
