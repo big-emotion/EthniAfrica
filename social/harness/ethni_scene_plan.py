@@ -103,7 +103,7 @@ def validate_map(value, duration, assets, sources):
     features = value.get("features", [])
     require(isinstance(features, list) and len(features) <= 12, "map supports at most twelve authored features")
     for feature in features:
-        keys(feature, "kind point points label at until colour evidence meaning offset flag_stripes geometry_note", "map feature")
+        keys(feature, "kind point points label at until colour label_colour evidence meaning offset flag_stripes geometry_note fill_opacity draw_seconds line_style line_width", "map feature")
         kind = feature.get("kind")
         require(kind in ("point", "presence", "presence-zone", "territory", "route"), "Unknown map feature kind")
         text(feature.get("label"), "feature.label")
@@ -112,6 +112,23 @@ def validate_map(value, duration, assets, sources):
         end = number(feature.get("until"), "feature.until", 0, duration)
         require(end > start, "feature.until must follow at")
         require(feature.get("colour", "gold") in COLOURS, "Unknown feature colour token")
+        if "label_colour" in feature:
+            require(feature["label_colour"] in COLOURS, "Unknown label colour token")
+        if "geometry_note" in feature:
+            text(feature["geometry_note"], "feature.geometry_note")
+        if "fill_opacity" in feature:
+            require(kind == "territory", "fill_opacity requires a territory")
+            number(feature["fill_opacity"], "feature.fill_opacity", 0, 1)
+        for field in ("draw_seconds", "line_style", "line_width"):
+            if field in feature:
+                require(kind == "route", f"{field} requires a route")
+        if "draw_seconds" in feature:
+            number(feature["draw_seconds"], "route.draw_seconds", .04, end-start)
+        if "line_style" in feature:
+            require(feature["line_style"] in ("solid", "dashed"), "Unknown route.line_style")
+        if "line_width" in feature:
+            require(type(feature["line_width"]) is int, "route.line_width must be an integer")
+            number(feature["line_width"], "route.line_width", 1, 12)
         if "offset" in feature:
             require(isinstance(feature["offset"], list) and len(feature["offset"]) == 2, "offset requires x/y")
             for v in feature["offset"]: number(v, "offset", -400, 400)
@@ -130,8 +147,8 @@ def validate_map(value, duration, assets, sources):
                     require(feature["evidence"]["status"] in ("estimate", "hypothesis"), "presence-zone must be an estimate or hypothesis")
                     text(feature.get("geometry_note"), "presence-zone.geometry_note")
             else:
-                require(feature.get("meaning") in ("migration", "language-diffusion", "name-circulation"),
-                        "route.meaning must distinguish migration, language diffusion or name circulation")
+                require(feature.get("meaning") in ("journey", "migration", "language-diffusion", "name-circulation"),
+                        "route.meaning must distinguish a journey, migration, language diffusion or name circulation")
         if "flag_stripes" in feature:
             import re
             require(kind == "point" and value["layer"] == "national", "Flags require a point in the national layer")

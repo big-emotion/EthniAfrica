@@ -137,6 +137,79 @@ class VisualExtensionTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "overflow"):
             SceneRenderer(self.plan, self.root, []).preflight()
 
+    def test_crisp_territory_opacity_changes_fill_without_changing_its_footprint(self):
+        zone = self.zone()
+        zone.update(kind="territory", fill_opacity=.8)
+        validate_plan(self.plan, self.root, 10)
+        scene = self.plan["scenes"][0]
+        bright = SceneRenderer(self.plan, self.root, [])._map(scene, 2)
+        zone["fill_opacity"] = .2
+        faint = SceneRenderer(self.plan, self.root, [])._map(scene, 2)
+        self.assertNotEqual(bright.getpixel((495, 345)), faint.getpixel((495, 345)))
+        self.assertEqual(bright.getpixel((10, 10)), faint.getpixel((10, 10)))
+        zone["fill_opacity"] = 1.01
+        with self.assertRaisesRegex(ValueError, "fill_opacity"):
+            validate_plan(self.plan, self.root, 10)
+
+    def route(self):
+        scene = self.plan["scenes"][0]
+        route = {"kind": "route", "points": [[-8, 5], [0, 15], [6, 5]],
+                 "label": "Journey", "at": 0, "until": 5, "meaning": "journey",
+                 "draw_seconds": 2, "line_style": "dashed", "line_width": 8,
+                 "geometry_note": "Schematic links, not a literal itinerary",
+                 "evidence": dict(scene["evidence"], status="hypothesis")}
+        scene["map"]["features"] = [route]
+        return route
+
+    def test_label_can_contrast_with_its_fill_without_changing_the_territory(self):
+        zone = self.zone()
+        zone.update(kind="territory", fill_opacity=.8, label_colour="white")
+        validate_plan(self.plan, self.root, 10)
+        scene = self.plan["scenes"][0]
+        white = SceneRenderer(self.plan, self.root, [])._map(scene, 2)
+        zone["label_colour"] = "gold"
+        gold = SceneRenderer(self.plan, self.root, [])._map(scene, 2)
+        self.assertEqual(white.getpixel((495, 345)), gold.getpixel((495, 345)))
+        self.assertIsNotNone(ImageChops.difference(white, gold).getbbox())
+        zone["label_colour"] = "invented"
+        with self.assertRaisesRegex(ValueError, "label colour"):
+            validate_plan(self.plan, self.root, 10)
+
+    def test_journey_draws_then_holds_and_can_render_out_of_order(self):
+        self.route()
+        validate_plan(self.plan, self.root, 10)
+        renderer = SceneRenderer(self.plan, self.root, [])
+        end = renderer.render(4)
+        start = renderer.render(.5)
+        self.assertNotEqual(end.tobytes(), start.tobytes())
+        self.assertEqual(end.tobytes(), renderer.render(2).tobytes())
+        self.assertEqual(start.tobytes(), renderer.render(.5).tobytes())
+        renderer.preflight()
+
+    def test_schematic_journey_dashes_have_gaps(self):
+        route = self.route()
+        scene = self.plan["scenes"][0]
+        dashed = SceneRenderer(self.plan, self.root, [])._map(scene, 3)
+        route["line_style"] = "solid"
+        solid = SceneRenderer(self.plan, self.root, [])._map(scene, 3)
+        self.assertIsNotNone(ImageChops.difference(dashed, solid).getbbox())
+
+    def test_new_feature_controls_reject_wrong_types_ranges_and_kinds(self):
+        for field, bad_values in {"draw_seconds": [0, 6, True],
+                                  "line_style": ["dotted", None],
+                                  "line_width": [0, 13, 2.5, True]}.items():
+            for value in bad_values:
+                route = self.route()
+                route[field] = value
+                with self.subTest(field=field, value=value), self.assertRaises(ValueError):
+                    validate_plan(self.plan, self.root, 10)
+        for field, value in {"draw_seconds": 2, "line_style": "dashed", "line_width": 8,
+                             "fill_opacity": .8}.items():
+            zone = self.zone()
+            zone[field] = value
+            with self.subTest(wrong_kind=field), self.assertRaises(ValueError):
+                validate_plan(self.plan, self.root, 10)
+
 
 if __name__ == "__main__":
     unittest.main()

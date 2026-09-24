@@ -157,7 +157,7 @@ class SceneRenderer:
                 points = [camera.project(point) for point in feature["points"]]
                 overlay = Image.new("RGBA", canvas.size)
                 od = ImageDraw.Draw(overlay)
-                od.polygon(points, fill=ImageColor.getrgb(colour)+(65,))
+                od.polygon(points, fill=ImageColor.getrgb(colour)+(round(feature.get("fill_opacity", 65/255)*255),))
                 # Dashed outlines make estimated/hypothetical extents distinguishable without colour.
                 if feature["evidence"]["status"] in ("estimate", "hypothesis"):
                     for a, b in zip(points, points[1:]):
@@ -171,10 +171,15 @@ class SceneRenderer:
                 canvas.paste(overlay, (0, 0), overlay)
                 x, y = points[0]
             else:
-                progress = 1 if self.reduced_motion else (local-feature["at"])/(feature["until"]-feature["at"])
+                draw_seconds = feature.get("draw_seconds", feature["until"]-feature["at"])
+                progress = 1 if self.reduced_motion else min(1, (local-feature["at"])/draw_seconds)
                 points = partial_path([camera.project(point) for point in feature["points"]], progress)
                 if len(points) > 1:
-                    draw.line(points, fill=colour, width=5, joint="curve")
+                    width = feature.get("line_width", 5)
+                    if feature.get("line_style", "solid") == "dashed":
+                        dashed_line(draw, points, colour, width)
+                    else:
+                        draw.line(points, fill=colour, width=width, joint="curve")
                     a, b = points[-2:]
                     angle = math.atan2(b[1]-a[1], b[0]-a[0])
                     draw.polygon([b, (b[0]-18*math.cos(angle-.45), b[1]-18*math.sin(angle-.45)),
@@ -188,7 +193,8 @@ class SceneRenderer:
                 require(not any(box[0] < b[2]+8 and box[2]+8 > b[0] and box[1] < b[3]+8 and box[3]+8 > b[1]
                                 for b in label_boxes), f"Map label overlap: {feature['label']}")
                 label_boxes.append(box)
-                self.paragraph(draw, feature["label"], (x+dx, y+dy, label_width+1, 40), "Bandeau", colour)
+                self.paragraph(draw, feature["label"], (x+dx, y+dy, label_width+1, 40), "Bandeau",
+                               p[feature.get("label_colour", feature.get("colour", "gold"))])
         return canvas
 
     def _document(self, image, draw, scene):
@@ -231,7 +237,7 @@ class SceneRenderer:
             for feature in scene["map"].get("features", []):
                 if feature["at"] <= local < feature["until"]:
                     e = feature["evidence"]
-                    meaning = {"migration": "Migration", "language-diffusion": "Diffusion linguistique",
+                    meaning = {"journey": "Trajet", "migration": "Migration", "language-diffusion": "Diffusion linguistique",
                                "name-circulation": "Circulation du nom"}.get(feature.get("meaning"))
                     legend.append(f"{feature['label']} · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else ""))
                     if feature.get("geometry_note"): legend.append(feature["geometry_note"])
@@ -304,6 +310,8 @@ class SceneRenderer:
                 instants.update(start+k["at"] for k in scene["map"]["camera"] if start+k["at"] < end)
                 for f in scene["map"].get("features", []):
                     instants.update((start+f["at"], start+f["until"]-1e-6))
+                    if "draw_seconds" in f:
+                        instants.add(min(end-1e-6, start+f["at"]+f["draw_seconds"]))
             if scene["type"] == "comparison":
                 instants.update(start+i.get("at", 0) for i in scene["comparison"] if start+i.get("at", 0) < end)
             if scene["type"] == "timeline":

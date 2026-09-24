@@ -167,6 +167,9 @@ outlines behind population/territory overlays; omission preserves solid lines.
 
 Features have `kind`, `label`, local `at`/`until`, their own `evidence`, optional
 `colour` (`gold`, `white`, `night-ink-2`, `teal`, `perv`) and label `offset`.
+Optional `label_colour` takes the same palette tokens independently of the fill;
+use it to keep labels readable over saturated regions. Optional `geometry_note`
+is visible in the legend and must be nonempty when supplied.
 
 - `point`: `point: [lon,lat]`; a national-layer point may have three explicit
   `flag_stripes` hex colours. These are only vertical tricolours, not a general
@@ -174,7 +177,12 @@ Features have `kind`, `label`, local `at`/`until`, their own `evidence`, optiona
 - `presence`: a point with an equal-size halo. It indicates a locator, not
   measured density, exclusive membership, exact settlement or population size.
 - `territory`: closed `points` ring, on a political or people layer. Estimates
-  and hypotheses have dashed outlines and visible epistemic labels.
+  and hypotheses have dashed outlines and visible epistemic labels. Optional
+  `fill_opacity` is a finite number from 0 to 1; the original default is 65/255.
+  Values around 0.8 give a clearly visible, crisp region without using a halo.
+  Colour strength is a design choice, never a measure of historical certainty,
+  population density or administrative control. Country fills remain forbidden
+  on these layers. A crisp edge can still be an explicitly estimated boundary.
 - `presence-zone`: closed `points` ring, people layer only, with a feathered
   coloured fill and no hard perimeter. Requires `estimate` or `hypothesis`
   evidence and a visible `geometry_note`. The feathered edge is a schematic
@@ -182,8 +190,21 @@ Features have `kind`, `label`, local `at`/`until`, their own `evidence`, optiona
   based on qualitative place references must explicitly state that its extent
   is not measured; it must never be represented as a surveyed settlement area.
 - `route`: ordered `points`, revealed progressively with an arrow. `meaning`
-  must be `migration`, `language-diffusion` or `name-circulation`. The reveal is
+  must be `journey`, `migration`, `language-diffusion` or `name-circulation`.
+  Use `journey` for an individual's travel, not collective population migration.
+  Optional `draw_seconds` (0.04 to `until-at`) finishes the reveal early and holds
+  the completed arrow until `until`; omission preserves the original reveal
+  throughout the feature's lifetime. Optional `line_style` is `solid` (default)
+  or `dashed`; optional `line_width` is an integer from 1 to 12 pixels at 1080px
+  (default 5). A dashed line can distinguish schematic links from an attested
+  track, but still needs evidence and a clear explanatory note. The reveal is
   an explanatory animation, not a measured travel speed or literal track.
+
+Prefer points and clearly coloured regions for new geographic examples, per
+operator feedback. Halos remain supported for existing plans, not a default
+choice. For changing kingdoms, distinguish the ruler's personal travel from
+campaigns by their generals and from later rulers' territorial expansion.
+Do not imply that political extent is an exclusive population distribution.
 
 Use separate dated features/scenes for changing extents. The engine never
 morphs two boundaries into an invented intermediate historical border.
