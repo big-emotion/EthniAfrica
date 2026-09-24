@@ -402,6 +402,14 @@ def main():
     controle = "--controle" in sys.argv
     projet = PROJETS / sys.argv[1]
 
+    if "--map-proof" in sys.argv:
+        from ethni_map_proof import render_proof
+        index = sys.argv.index("--map-proof")
+        if index + 1 >= len(sys.argv):
+            raise SystemExit("--map-proof requires a storyboard JSON file")
+        render_proof(projet, sys.argv[index + 1], reduced_motion=controle)
+        return
+
     cartes = projet / "cartes.json"
     if not cartes.exists():
         raise SystemExit(
