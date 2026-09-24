@@ -210,6 +210,64 @@ class VisualExtensionTests(unittest.TestCase):
             with self.subTest(wrong_kind=field), self.assertRaises(ValueError):
                 validate_plan(self.plan, self.root, 10)
 
+    def test_progress_is_opt_in_and_stays_inside_the_safe_area(self):
+        self.plan["progress"] = True
+        validate_plan(self.plan, self.root, 10)
+        renderer = SceneRenderer(self.plan, self.root, [])
+        box = (renderer.left, 1605, renderer.right+1, 1620)
+        early = renderer.render(1).crop(box)
+        self.assertNotEqual(early.tobytes(), renderer.render(4).crop(box).tobytes())
+        self.assertEqual(early.tobytes(), renderer.render(1).crop(box).tobytes())
+        enabled = renderer.render(1)
+        self.plan["progress"] = False
+        disabled = SceneRenderer(self.plan, self.root, []).render(1)
+        del self.plan["progress"]
+        self.assertEqual(disabled.tobytes(), SceneRenderer(self.plan, self.root, []).render(1).tobytes())
+        changed = ImageChops.difference(enabled, disabled).getbbox()
+        self.assertIsNotNone(changed)
+        self.assertGreaterEqual(changed[1], 1605)
+        self.assertLessEqual(changed[3], 1620)
+        self.plan["progress"] = "yes"
+        with self.assertRaisesRegex(ValueError, "progress"):
+            validate_plan(self.plan, self.root, 10)
+
+    def test_context_is_dimmed_and_always_drawn_below_the_subject(self):
+        subject = self.zone()
+        subject.update(kind="territory", fill_opacity=.8)
+        context = dict(subject, label="Neighbour", role="context", colour="perv", offset=[18, 40])
+        scene = self.plan["scenes"][0]
+        scene["map"]["features"] = [subject, context]
+        validate_plan(self.plan, self.root, 10)
+        first = SceneRenderer(self.plan, self.root, [])._map(scene, 2)
+        scene["map"]["features"].reverse()
+        self.assertEqual(first.tobytes(), SceneRenderer(self.plan, self.root, [])._map(scene, 2).tobytes())
+        scene["map"]["features"] = [context]
+        dim = SceneRenderer(self.plan, self.root, [])._map(scene, 2)
+        context["role"] = "subject"
+        bright = SceneRenderer(self.plan, self.root, [])._map(scene, 2)
+        self.assertNotEqual(dim.getpixel((495, 345)), bright.getpixel((495, 345)))
+
+    def test_reveal_fades_in_then_holds_and_rejects_invalid_duration(self):
+        zone = self.zone()
+        zone.update(kind="territory", fade_seconds=1)
+        validate_plan(self.plan, self.root, 10)
+        scene = self.plan["scenes"][0]
+        renderer = SceneRenderer(self.plan, self.root, [])
+        before = renderer._map(scene, 0)
+        during = renderer._map(scene, .5)
+        after = renderer._map(scene, 1)
+        self.assertNotEqual(before.tobytes(), during.tobytes())
+        self.assertNotEqual(during.tobytes(), after.tobytes())
+        self.assertEqual(after.tobytes(), renderer._map(scene, 4).tobytes())
+        for value in [True, 0, 6]:
+            zone["fade_seconds"] = value
+            with self.assertRaisesRegex(ValueError, "fade_seconds"):
+                validate_plan(self.plan, self.root, 10)
+        del zone["fade_seconds"]
+        zone["role"] = "backgroundish"
+        with self.assertRaisesRegex(ValueError, "role"):
+            validate_plan(self.plan, self.root, 10)
+
 
 if __name__ == "__main__":
     unittest.main()

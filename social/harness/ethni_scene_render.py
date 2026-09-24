@@ -129,10 +129,15 @@ class SceneRenderer:
                 else:
                     draw.line(points, fill=boundary_ink, width=2)
         label_boxes = []
-        for feature in cfg.get("features", []):
+        features = sorted(cfg.get("features", []), key=lambda f: f.get("role") != "context")
+        for feature in features:
             if not feature["at"] <= local < feature["until"]:
                 continue
+            reveal = 1 if self.reduced_motion or "fade_seconds" not in feature else smooth((local-feature["at"])/feature["fade_seconds"])
+            below = canvas.copy() if reveal < 1 else None
             colour = p[feature.get("colour", "gold")]
+            if feature.get("role") == "context":
+                colour = "#%02x%02x%02x" % mix(p["ground"], colour, .55)
             kind = feature["kind"]
             if kind in ("point", "presence"):
                 x, y = camera.project(feature["point"])
@@ -193,8 +198,12 @@ class SceneRenderer:
                 require(not any(box[0] < b[2]+8 and box[2]+8 > b[0] and box[1] < b[3]+8 and box[3]+8 > b[1]
                                 for b in label_boxes), f"Map label overlap: {feature['label']}")
                 label_boxes.append(box)
-                self.paragraph(draw, feature["label"], (x+dx, y+dy, label_width+1, 40), "Bandeau",
-                               p[feature.get("label_colour", feature.get("colour", "gold"))])
+                ink = p[feature.get("label_colour", feature.get("colour", "gold"))]
+                if feature.get("role") == "context": ink = mix(p["ground"], ink, .65)
+                self.paragraph(draw, feature["label"], (x+dx, y+dy, label_width+1, 40), "Bandeau", ink)
+            if below is not None:
+                canvas = Image.blend(below, canvas, reveal)
+                draw = ImageDraw.Draw(canvas)
         return canvas
 
     def _document(self, image, draw, scene):
@@ -239,7 +248,8 @@ class SceneRenderer:
                     e = feature["evidence"]
                     meaning = {"journey": "Trajet", "migration": "Migration", "language-diffusion": "Diffusion linguistique",
                                "name-circulation": "Circulation du nom"}.get(feature.get("meaning"))
-                    legend.append(f"{feature['label']} · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else ""))
+                    role = "Voisinage : " if feature.get("role") == "context" else ""
+                    legend.append(f"{role}{feature['label']} · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else ""))
                     if feature.get("geometry_note"): legend.append(feature["geometry_note"])
         self.paragraph(draw, "\n".join(legend), (self.left, 1190, self.right-self.left, 142), "Crédit", self.palette["night-ink-2"])
         return image
@@ -289,6 +299,12 @@ class SceneRenderer:
         if caption:
             self.paragraph(draw, caption["texte"], (self.left, 1380, self.right-self.left, 140), "Corps")
         self.paragraph(draw, "\n".join(credits), (self.left, 1530, self.right-self.left, 88), "Crédit", self.palette["night-ink-2"])
+        if self.plan.get("progress", False):
+            fraction = max(0, min(1, instant/self.duration))
+            draw.line((self.left, 1615, self.right, 1615), fill=self.palette["night-ink-3"], width=3)
+            if fraction:
+                draw.line((self.left, 1615, self.left+(self.right-self.left)*fraction, 1615),
+                          fill=self.palette["gold"], width=5)
         badge = Image.new("RGBA", (620, 68), ImageColor.getrgb(self.palette["ground"])+(240,))
         self.paragraph(ImageDraw.Draw(badge), "ÉPREUVE — NE PAS PUBLIER", (16, 12, 590, 50), "Bandeau", self.palette["night-ink-2"])
         badge = badge.rotate(-15, expand=True, resample=Image.Resampling.BICUBIC)
@@ -312,6 +328,9 @@ class SceneRenderer:
                     instants.update((start+f["at"], start+f["until"]-1e-6))
                     if "draw_seconds" in f:
                         instants.add(min(end-1e-6, start+f["at"]+f["draw_seconds"]))
+                    if "fade_seconds" in f:
+                        instants.update((start+f["at"]+f["fade_seconds"]/2,
+                                         min(end-1e-6, start+f["at"]+f["fade_seconds"])))
             if scene["type"] == "comparison":
                 instants.update(start+i.get("at", 0) for i in scene["comparison"] if start+i.get("at", 0) < end)
             if scene["type"] == "timeline":

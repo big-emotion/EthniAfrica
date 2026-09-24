@@ -103,7 +103,7 @@ def validate_map(value, duration, assets, sources):
     features = value.get("features", [])
     require(isinstance(features, list) and len(features) <= 12, "map supports at most twelve authored features")
     for feature in features:
-        keys(feature, "kind point points label at until colour label_colour evidence meaning offset flag_stripes geometry_note fill_opacity draw_seconds line_style line_width", "map feature")
+        keys(feature, "kind point points label at until colour label_colour evidence meaning offset flag_stripes geometry_note fill_opacity draw_seconds line_style line_width role fade_seconds", "map feature")
         kind = feature.get("kind")
         require(kind in ("point", "presence", "presence-zone", "territory", "route"), "Unknown map feature kind")
         text(feature.get("label"), "feature.label")
@@ -111,6 +111,10 @@ def validate_map(value, duration, assets, sources):
         start = number(feature.get("at"), "feature.at", 0, duration)
         end = number(feature.get("until"), "feature.until", 0, duration)
         require(end > start, "feature.until must follow at")
+        require(feature.get("role", "subject") in ("subject", "context"), "Unknown feature role")
+        require(feature.get("role") != "context" or kind == "territory", "Context role requires a territory")
+        if "fade_seconds" in feature:
+            number(feature["fade_seconds"], "feature.fade_seconds", .04, end-start)
         require(feature.get("colour", "gold") in COLOURS, "Unknown feature colour token")
         if "label_colour" in feature:
             require(feature["label_colour"] in COLOURS, "Unknown label colour token")
@@ -182,7 +186,9 @@ def validate_timeline(value, duration, sources):
 def validate_plan(plan, root, duration):
     """Validate shape, local assets, provenance and complete audio coverage."""
     import json
-    keys(plan, "version profile coverage title source output_dir sources assets scenes", "plan")
+    keys(plan, "version profile coverage title source output_dir sources assets scenes progress", "plan")
+    if "progress" in plan:
+        require(type(plan["progress"]) is bool, "progress must be boolean")
     require(type(plan.get("version")) is int and plan["version"] == 1, "Unsupported scene plan version")
     require(plan.get("profile") in PROFILES, "Unknown editorial profile")
     require(plan.get("coverage", "excerpt") in ("excerpt", "complete"), "Unknown coverage")

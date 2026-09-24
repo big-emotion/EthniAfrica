@@ -76,17 +76,18 @@ available in the legacy engine but is not automatically appended to v1 excerpts.
 The executable contract is `ethni_scene_plan.validate_plan`, rather than an
 independently maintained schema with different rules. Unknown fields fail.
 
-| Root field   | Meaning                                                                       |
-| ------------ | ----------------------------------------------------------------------------- |
-| `version`    | Integer `1`                                                                   |
-| `profile`    | `name-origin`, `history-geography`, `thematic-analysis` or `free`             |
-| `coverage`   | `excerpt` or `complete`; complete plans require the profile's editorial beats |
-| `title`      | Internal production title                                                     |
-| `source`     | Script/audio SHA-256 hashes, ordered audio `cuts`, selected paragraph indexes |
-| `sources`    | ID → full `citation`, `url`, `tier`, optional short on-screen `label`         |
-| `assets`     | ID → relative `path`, `kind`, SHA-256, `credit`, `license`, source ID         |
-| `scenes`     | Ordered, continuous scene descriptions spanning the selected audio            |
-| `output_dir` | Private proof destination                                                     |
+| Root field   | Meaning                                                                             |
+| ------------ | ----------------------------------------------------------------------------------- |
+| `version`    | Integer `1`                                                                         |
+| `profile`    | `name-origin`, `history-geography`, `thematic-analysis` or `free`                   |
+| `coverage`   | `excerpt` or `complete`; complete plans require the profile's editorial beats       |
+| `title`      | Internal production title                                                           |
+| `source`     | Script/audio SHA-256 hashes, ordered audio `cuts`, selected paragraph indexes       |
+| `sources`    | ID → full `citation`, `url`, `tier`, optional short on-screen `label`               |
+| `assets`     | ID → relative `path`, `kind`, SHA-256, `credit`, `license`, source ID               |
+| `scenes`     | Ordered, continuous scene descriptions spanning the selected audio                  |
+| `progress`   | Optional boolean; draws continuous elapsed-video progress inside the 9:16 safe area |
+| `output_dir` | Private proof destination                                                           |
 
 `source` uses `source_script_sha256`, `source_audio_sha256`, `cuts` as
 `[[startSeconds,endSeconds], ...]`, and zero-based `paragraphs`. Hash the actual
@@ -98,6 +99,14 @@ approval check. A thematic video need not fabricate a carousel deck.
 Cuts preserve whole approved paragraphs and never split a word or exceed the
 recording. Scene times refer to the resulting excerpt, not the original audio.
 Bind them to measured words/paragraphs and record the intention in `purpose`.
+An external narration provider may supply character timestamps; retain the
+original response, map exact approved-text tokens to its original-text alignment,
+and preserve the audio without post-generation retiming. The renderer itself
+does not call a speech service: any voice API cost belongs in the production
+record, separately from `render-report.json`'s rendering-only API count.
+For a continuous map across scenes, match the outgoing camera bounds to the
+incoming first bounds and use a cut; a dissolve holds the old visual while
+blending and therefore has different movement semantics.
 No rule divides a scene into four-second image slots. A one-second mechanical
 floor is only a guard; it is not a recommended reading duration.
 
@@ -167,6 +176,13 @@ outlines behind population/territory overlays; omission preserves solid lines.
 
 Features have `kind`, `label`, local `at`/`until`, their own `evidence`, optional
 `colour` (`gold`, `white`, `night-ink-2`, `teal`, `perv`) and label `offset`.
+Optional `role: "context"` marks a territory as geographic background. Context
+territories render below subject features regardless of array order, with dimmed
+fill and labels, and a visible `Voisinage` legend prefix. Use dated evidence;
+proximity alone does not establish contemporaneity. Omission means `subject`.
+Optional `fade_seconds` (0.04 to `until-at`) reveals a feature once, then holds
+it. Reduced-motion output shows it immediately. Neither option infers geometry.
+
 Optional `label_colour` takes the same palette tokens independently of the fill;
 use it to keep labels readable over saturated regions. Optional `geometry_note`
 is visible in the legend and must be nonempty when supplied.
