@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { DISCOVERY_VIDEOS } from "@/lib/discoveries/videos";
+import { getFamilyRoute } from "@/lib/routing";
 import { eligibleSearchShorts } from "@/lib/search/companionCatalogs";
 
 import type { LedgerEntry } from "../ledger";
@@ -18,7 +19,7 @@ const complete: LedgerEntry = {
   subjects: [
     { kind: "family", id: "FLG_TEST", label: { fr: "Test", en: "Test" } },
   ],
-  sitePath: "/fr/atlas/familles/FLG_TEST",
+  sitePath: getFamilyRoute("fr", "FLG_TEST"),
   publications: [
     {
       network: "youtube",
