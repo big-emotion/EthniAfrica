@@ -33,9 +33,23 @@
     {
       "network": "youtube",
       "format": "video",
-      "url": "https://www.youtube.com/shorts/7nfhkaR1eUw"
+      "url": "https://www.youtube.com/shorts/7nfhkaR1eUw",
+      "publishedAt": "2026-09-21"
     },
     { "network": "linkedin", "format": "video" },
     { "network": "x", "format": "video" }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/fulbe-sept-noms-un-sens-ouvert.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 155,
+  "sources": [
+    {
+      "title": "Fulbe — EthniAfrica",
+      "url": "https://ethniafrica.com/fr/atlas/peuples/PPL_FULA",
+      "tier": "referenced"
+    }
   ]
 }

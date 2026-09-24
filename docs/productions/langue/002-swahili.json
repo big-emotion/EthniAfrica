@@ -44,9 +44,23 @@
     {
       "network": "youtube",
       "format": "video",
-      "url": "https://www.youtube.com/shorts/_m_lmj2dgAI"
+      "url": "https://www.youtube.com/shorts/_m_lmj2dgAI",
+      "publishedAt": "2026-09-21"
     },
     { "network": "linkedin", "format": "video" },
     { "network": "x", "format": "video" }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/swahili-le-nom-de-la-cote.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 84,
+  "sources": [
+    {
+      "title": "Swahili — EthniAfrica",
+      "url": "https://ethniafrica.com/fr/atlas/langues/swh",
+      "tier": "referenced"
+    }
   ]
 }

@@ -1,10 +1,13 @@
+import { existsSync } from "node:fs";
+import path from "node:path";
+
 import { describe, expect, it } from "vitest";
 
 import { DISCOVERY_VIDEOS } from "@/lib/discoveries/videos";
 import { getFamilyRoute } from "@/lib/routing";
 import { eligibleSearchShorts } from "@/lib/search/companionCatalogs";
 
-import type { LedgerEntry } from "../ledger";
+import { loadProductionLedger, type LedgerEntry } from "../ledger";
 import { searchShortsFrom } from "../toSearchShort";
 
 const complete: LedgerEntry = {
@@ -90,5 +93,32 @@ describe("searchShortsFrom", () => {
       handAuthored.id,
       "video:test-subject",
     ]);
+  });
+});
+
+describe("the filed production ledger", () => {
+  const filed = loadProductionLedger().filter(
+    (entry) => entry.poster && entry.durationSeconds && entry.sources?.length
+  );
+
+  // A poster path with a typo, or a source with no tier, would otherwise drop a
+  // filed production from the results without a word.
+  // @req REQ-180
+  it("shows every production that files a poster, a duration and a source", () => {
+    expect(filed.length).toBeGreaterThan(0);
+
+    const shown = eligibleSearchShorts(searchShortsFrom(filed, []));
+
+    expect(shown.map((short) => short.id).sort()).toEqual(
+      filed.map((entry) => `video:${entry.campaign}`).sort()
+    );
+  });
+
+  // @req REQ-180
+  it("points every filed poster at a file that exists", () => {
+    for (const entry of filed) {
+      const file = path.join(process.cwd(), "public", entry.poster!.src);
+      expect(existsSync(file), entry.campaign).toBe(true);
+    }
   });
 });

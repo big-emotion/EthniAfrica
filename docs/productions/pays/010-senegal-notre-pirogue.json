@@ -29,5 +29,18 @@
       "url": "https://www.youtube.com/shorts/x__i8o-IOvM",
       "publishedAt": "2026-09-09"
     }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/senegal-notre-pirogue.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 35,
+  "sources": [
+    {
+      "title": "Sénégal — EthniAfrica",
+      "url": "https://ethniafrica.com/fr/atlas/pays/SEN",
+      "tier": "referenced"
+    }
   ]
 }

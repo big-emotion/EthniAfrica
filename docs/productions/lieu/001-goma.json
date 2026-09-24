@@ -32,7 +32,21 @@
     {
       "network": "youtube",
       "format": "video",
-      "url": "https://www.youtube.com/shorts/gjLIHxREip0"
+      "url": "https://www.youtube.com/shorts/gjLIHxREip0",
+      "publishedAt": "2026-09-21"
+    }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/goma-un-nom-sans-source.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 138,
+  "sources": [
+    {
+      "title": "Goma (République démocratique du Congo) — EthniAfrica",
+      "url": "https://ethniafrica.com/fr/atlas/pays/COD",
+      "tier": "referenced"
     }
   ]
 }

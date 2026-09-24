@@ -33,13 +33,27 @@
     {
       "network": "youtube",
       "format": "video",
-      "url": "https://www.youtube.com/shorts/-odrM5cp9jc"
+      "url": "https://www.youtube.com/shorts/-odrM5cp9jc",
+      "publishedAt": "2026-09-12"
     },
     {
       "network": "tiktok",
       "format": "carrousel",
       "url": "https://www.tiktok.com/@ethniafrica/photo/7684291051401661718",
       "publishedAt": "2026-09-11"
+    }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/keita-coulibaly-obligations-alliance.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 47,
+  "sources": [
+    {
+      "title": "Keïta — EthniAfrica",
+      "url": "https://ethniafrica.com/fr/atlas/noms/PAT_KEITA",
+      "tier": "referenced"
     }
   ]
 }

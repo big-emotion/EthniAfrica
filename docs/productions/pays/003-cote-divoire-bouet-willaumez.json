@@ -29,5 +29,18 @@
       "url": "https://www.youtube.com/shorts/9cUREZbgI5k",
       "publishedAt": "2026-09-15"
     }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/cote-divoire-bouet-willaumez.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 114,
+  "sources": [
+    {
+      "title": "Côte d'Ivoire — EthniAfrica",
+      "url": "https://ethniafrica.com/fr/atlas/pays/CIV",
+      "tier": "referenced"
+    }
   ]
 }

@@ -35,5 +35,18 @@
       "url": "https://www.tiktok.com/@ethniafrica/photo/7686271307071130902",
       "publishedAt": "2026-09-17"
     }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/nigeria-flora-shaw.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 38,
+  "sources": [
+    {
+      "title": "Nigeria — EthniAfrica",
+      "url": "https://ethniafrica.com/fr/atlas/pays/NGA",
+      "tier": "referenced"
+    }
   ]
 }
