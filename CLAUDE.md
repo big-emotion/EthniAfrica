@@ -316,7 +316,7 @@ one tool that files folders onto the library's own shelves.
 **Mémoires sonores (operator direction, 2026-09-25)** is a recurring musical
 feature within EthniAfrica, for TikTok and Instagram only. Its approved
 six-card editorial reference is `docs/design/gabarits-social/MEMOIRES-SONORES.md`:
-three distinct subjects every Sunday, without a mandatory myth, name-origin
+three distinct subjects every other Sunday, without a mandatory myth, name-origin
 angle, companion reel or site article. For this feature, read that reference
 before applying the general production-chain rules below. The carousel engine
 reads `profil: memoires-sonores`; `ethni_carrousel2.py --brief memoires-sonores`

@@ -57,6 +57,9 @@ class CarouselProfilesTest(unittest.TestCase):
              "--brief", "memoires-sonores"], capture_output=True, text=True)
         self.assertEqual(run.returncode, 0, run.stderr)
         brief = json.loads(run.stdout)
+        self.assertEqual(brief["profile"]["cadence"], {
+            "day": "sunday", "intervalWeeks": 2, "subjects": 3,
+        })
         guide = HARNESS.parents[1] / brief["guide"]
         self.assertEqual(brief["instructions"], guide.read_text(encoding="utf-8"))
         deck = brief["deck"]
