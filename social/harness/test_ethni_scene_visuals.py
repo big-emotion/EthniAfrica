@@ -324,6 +324,73 @@ class VisualExtensionTests(unittest.TestCase):
         ]
         return timeline
 
+    def composed_timeline(self):
+        timeline = self.focused_timeline()
+        timeline["context_layout"] = "corner"
+        for event in timeline["events"]:
+            event["evidence"]["period"] = str(event["year"])
+        ev = dict(self.plan["scenes"][0]["evidence"], sources=["geo"])
+        self.plan["sources"]["geo"] = dict(self.plan["sources"]["test"], citation="Geographic evidence")
+        timeline["background"]["layer"] = "political"
+        timeline["background"]["features"] = [
+            {"kind": "territory", "label": "Region", "points": [[-9, 4], [-3, 4], [-3, 8], [-9, 4]],
+             "at": .6, "until": 4.8, "evidence": ev, "offset": [-120, 20]},
+            {"kind": "point", "label": "Town", "point": [6, 18], "at": .7, "until": 4.6,
+             "evidence": ev, "offset": [15, -40]},
+            {"kind": "route", "label": "Journey", "points": [[-6, 6], [6, 18]],
+             "meaning": "journey", "at": .9, "until": 4.7, "draw_seconds": 1.7,
+             "evidence": ev, "offset": [30, 35]}]
+        return timeline
+
+    def test_timeline_composes_map_features_with_evidence_and_random_access(self):
+        self.composed_timeline()
+        validate_plan(self.plan, self.root, 10)
+        renderer = SceneRenderer(self.plan, self.root, [])
+        with patch.object(renderer, "paragraph", wraps=renderer.paragraph) as paint:
+            frame = renderer.render(1.8)
+        strings = " ".join(call.args[1] for call in paint.call_args_list)
+        self.assertIn("Journey · Simulation", strings)
+        self.assertIn("Geographic evidence", " ".join(renderer.credits(self.plan["scenes"][0])))
+        early = renderer.render(1.1)
+        self.assertNotEqual(early.crop((45, 820, 1035, 1210)).tobytes(), frame.crop((45, 820, 1035, 1210)).tobytes())
+        self.assertEqual(frame.tobytes(), renderer.render(1.8).tobytes())
+        self.assertIn("Town", strings)
+        for call in paint.call_args_list:
+            if call.args[1] in ("Almada", "Park", "Caillié"):
+                self.assertLessEqual(call.args[2][1]+call.args[2][3], 820)
+        with patch.object(renderer, "paragraph", wraps=renderer.paragraph) as paint:
+            renderer.render(4.99)
+        self.assertNotIn("Journey", " ".join(call.args[1] for call in paint.call_args_list))
+
+    def test_timeline_map_preflight_covers_reveal_and_expiry(self):
+        timeline = self.composed_timeline()
+        renderer = SceneRenderer(self.plan, self.root, [])
+        instants = renderer.preflight()
+        self.assertIn(.7, instants)
+        self.assertIn(2.6, instants)
+        self.assertIn(4.6, instants)
+        feature = timeline["background"]["features"][1]
+        del feature["evidence"]
+        with self.assertRaises(ValueError): validate_plan(self.plan, self.root, 10)
+
+    def test_timeline_map_reduced_motion_and_country_validation(self):
+        timeline = self.composed_timeline()
+        renderer = SceneRenderer(self.plan, self.root, [], reduced_motion=True)
+        box = (45, 820, 1035, 1210)
+        self.assertEqual(renderer.render(1.1).crop(box).tobytes(), renderer.render(1.8).crop(box).tobytes())
+        timeline["background"].update(layer="national", features=[], highlights=["missing"])
+        with self.assertRaisesRegex(ValueError, "Unknown highlighted country"):
+            validate_plan(self.plan, self.root, 10)
+        timeline["background"]["highlights"] = ["AAA"]
+        validate_plan(self.plan, self.root, 10)
+        SceneRenderer(self.plan, self.root, []).preflight()
+
+    def test_timeline_map_rejects_cards_that_would_cover_the_geography(self):
+        timeline = self.composed_timeline()
+        timeline["context_layout"] = "cards"
+        with self.assertRaisesRegex(ValueError, "corner"):
+            validate_plan(self.plan, self.root, 10)
+
     def test_focused_context_has_its_own_period_and_an_explicit_anchor(self):
         timeline = self.focused_timeline()
         validate_plan(self.plan, self.root, 10)

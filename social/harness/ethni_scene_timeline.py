@@ -63,6 +63,7 @@ def draw_focused_timeline(renderer, draw, scene, local):
     """Travel along an ordinal rail; only the active event owns context cards."""
     value, p = scene["timeline"], renderer.palette
     events = value["events"]
+    composed = bool(value.get("background", {}).get("features") or value.get("background", {}).get("highlights"))
     active = [i for i, event in enumerate(events) if local >= event["at"]]
     index = max(active) if active else 0
     overview_at = value.get("overview_at", scene["end"]-scene["start"])
@@ -74,24 +75,25 @@ def draw_focused_timeline(renderer, draw, scene, local):
     centre += ((len(events)-1)/2-centre)*pullback
     spacing = 660+(554/(len(events)-1)-660)*pullback
     muted = mix(p["ground"], p["night-ink-2"], .55)
+    rail_y = 780-130*pullback if composed else 810
     # The continuous rail moves; its spacing deliberately does not encode years.
-    draw.line((renderer.left, 810, renderer.right, 810), fill=muted, width=3)
+    draw.line((renderer.left, rail_y, renderer.right, rail_y), fill=muted, width=3)
     for i, event in enumerate(events):
         x = 495+(i-centre)*spacing
         if renderer.left+12 <= x <= renderer.right-12:
             ink = p["gold"] if i <= index and active else muted
-            draw.ellipse((x-10, 800, x+10, 820), fill=p["ground"], outline=ink, width=4)
+            draw.ellipse((x-10, rail_y-10, x+10, rail_y+10), fill=p["ground"], outline=ink, width=4)
             if overview and pullback > .8:
-                renderer.paragraph(draw, str(event["year"]), (x-105, 675, 225, 100), "Paire — terme", p["gold"])
-                renderer.paragraph(draw, event["label"], (x-115, 851, 235, 130), "Corps")
-                renderer.paragraph(draw, event["evidence"]["period"], (x-115, 994, 235, 55), "Crédit", p["night-ink-2"])
+                renderer.paragraph(draw, str(event["year"]), (x-105, 535 if composed else 675, 225, 100), "Paire — terme", p["gold"])
+                renderer.paragraph(draw, event["label"], (x-115, 690 if composed else 851, 235, 85 if composed else 130), "Corps")
+                renderer.paragraph(draw, event["evidence"]["period"], (x-115, 785 if composed else 994, 235, 30 if composed else 55), "Crédit", p["night-ink-2"])
     if not active:
         renderer.paragraph(draw, "UNE HISTOIRE EN MOUVEMENT", (renderer.left, 630, 809, 110), "Corps", p["gold"])
     elif not overview:
         event = events[index]
         corner = value.get("context_layout") == "corner"
         renderer.paragraph(draw, event["evidence"]["period"], (renderer.left, 535, 440 if corner else 809, 140), "Titre de série", p["gold"])
-        renderer.paragraph(draw, event["label"], (renderer.left, 705, 809, 85), "Corps")
+        renderer.paragraph(draw, event["label"], (renderer.left, 690 if composed else 705, 809, 85), "Corps")
         visible = [item for item in value.get("context", [])
                    if item["event_year"] == event["year"] and local >= item["at"]]
         if corner and visible:

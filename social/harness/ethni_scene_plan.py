@@ -227,8 +227,9 @@ def validate_focused_timeline(value, duration, sources, assets):
     if "background" in value:
         background = value["background"]
         validate_map(background, duration, assets, sources)
-        require(background["layer"] == "physical" and not background.get("features") and
-                not background.get("highlights"), "Timeline background is a basemap only; no hidden geographic claims")
+        if background.get("features") or background.get("highlights"):
+            require(not context or value.get("context_layout") == "corner",
+                    "Composed timeline maps require corner context to keep geography visible")
 
 
 def validate_plan(plan, root, duration):
@@ -303,6 +304,11 @@ def validate_plan(plan, root, duration):
                         "contain preserves the full document; use zoom 1 or explicitly choose cover")
         elif kind == "timeline":
             validate_timeline(scene.get("timeline"), end-start, sources, assets)
+            background = scene["timeline"].get("background")
+            if background:
+                data = json.loads(asset_path(root, assets[background["asset"]]).read_text())
+                codes = {f["properties"]["ADM0_A3"] for f in data["features"]}
+                require(all(c in codes for c in background.get("highlights", [])), "Unknown highlighted country")
         elif kind == "document":
             value = scene.get("document")
             keys(value, "asset label body", "document")
