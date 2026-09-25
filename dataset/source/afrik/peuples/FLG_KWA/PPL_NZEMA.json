@@ -29,7 +29,7 @@
         "Sud-est de la Côte d'Ivoire (région d'Aboisso)"
       ],
       "unificationsOrDivisions": "Le royaume d'Apolonia (Apollonia), fondé à la fin du XVIIe siècle, constitua une puissance culturelle dominant la côte sud-ouest de la Gold Coast tout au long du XVIIIe siècle. Une guerre civile de trois ans conduisit à son effondrement en 1871. Les descendants de l'Apollonia constituent l'actuel Etat Nzema. Les Evaloes (à l'est de la rivière Ankobra) se considèrent membres de la communauté nzema bien que leur dialecte diffère légèrement.",
-      "externalInfluences": "Les Portugais arrivent en Gold Coast au XVe siècle et nomment la région Apollonia. Les Suédois établissent un comptoir commercial à Apollona entre 1655 et 1657. En 1691, les Britanniques y construisent un avant-poste, puis un fort entre 1768 et 1770 (Fort Apollonia). Le fort passa aux Néerlandais en 1868 (renommé Fort Willem III), avant d'être transféré aux Britanniques en 1872. Les Britanniques bombardèrent le fort en 1873 suite à l'alliance nzema avec les Ashanti.",
+      "externalInfluences": "Les Portugais arrivent en Gold Coast au XVe siècle et nomment la région Apollonia. Les Suédois établissent un comptoir commercial à Apollona entre 1655 et 1657. En 1691, les Britanniques y construisent un avant-poste, puis un fort entre 1768 et 1770 (Fort Apollonia). Selon le Ghana Museums and Monuments Board, le chef nzema Amenihyia accorda au Comité des marchands anglais la permission de le bâtir à Beyin, et ce fut le dernier fort construit par les Anglais en Gold Coast ; les travaux commencèrent en 1768, deux ans après le début de l'approvisionnement en matériaux. Le fort passa aux Néerlandais en 1868 (renommé Fort Willem III), avant d'être transféré aux Britanniques en 1872. Les Britanniques bombardèrent le fort en 1873 suite à l'alliance nzema avec les Ashanti.",
       "majorHistoricalEvents": "Fondation du royaume d'Apolonia (fin XVIIe siècle) ; apogée au XVIIIe siècle ; guerre civile et effondrement en 1871. Fort Apollonia de Beyin (1691-1870) : inscrit au patrimoine mondial UNESCO en 1979 avec les autres forts coloniaux du Ghana. Rôle de résistance à la traite des esclaves (Cape Coast Castle). Kwame Nkrumah (1909-1972), père de l'indépendance du Ghana et figure panafricaine majeure, est nzema."
     },
     "organization": {
@@ -106,6 +106,18 @@
         "url": "https://glottolog.org/resource/languoid/id/nzim1238",
         "tier": "official",
         "notes": "Confirms glottocode nzim1238 and ISO 639-3 nzi, consistent with the fiche's existing isoCodes."
+      },
+      {
+        "title": "Ghana Museums and Monuments Board — Fort Apollonia, Beyin (1768)",
+        "url": "https://gmmb.gov.gh/fort-apollonia-beyin-1768",
+        "tier": "official",
+        "notes": "Texte lu directement : le nom du fort a d'abord été donné à la région par un explorateur portugais qui aperçut le lieu le jour de la Sainte-Apollonie (la page ne donne pas le quantième) ; le chef nzema Amenihyia autorise les marchands anglais à bâtir le fort ; dernier fort construit par les Anglais en Gold Coast ; travaux commencés en 1768."
+      },
+      {
+        "title": "Ghana Museums and Monuments Board — Museum of Nzema Culture and History, Fort Apollonia (2010)",
+        "url": "https://gmmb.gov.gh/museum-of-nzema-culture-and-history-fort-apollonia-2010",
+        "tier": "official",
+        "notes": "Texte lu directement : le musée ouvre en 2010 et est dédié à Kwame Nkrumah, présenté comme la figure la plus importante issue de la région nzema."
       }
     ]
   },
