@@ -17,6 +17,40 @@ SPEAKERS_RADIUS, SPEAKERS_REFERENCE = 80, 16_000_000
 RIVER_FLOW_SPEED = 70  # px per second, downstream
 
 
+def river_path(points, amplitude=5.0, wavelength=110.0):
+    """A bending course through the given points: a Catmull-Rom curve, then a gentle deterministic meander.
+
+    A river drawn as a polyline through towns has right-angled corners that no river has. The curve passes
+    through every point; the meander fades to nothing at both ends, so a tributary still meets its river
+    exactly where the author put the junction."""
+    pts = [(float(x), float(y)) for x, y in points]
+    if len(pts) < 2:
+        return pts
+    padded = [pts[0]]+pts+[pts[-1]]
+    curve = [pts[0]]
+    for i in range(1, len(padded)-2):
+        p0, p1, p2, p3 = padded[i-1:i+3]
+        steps = max(6, int(math.dist(p1, p2)/8))
+        for k in range(1, steps+1):
+            t = k/steps
+            curve.append(tuple(0.5*(2*b+(-a+c)*t+(2*a-5*b+4*c-d)*t*t+(-a+3*b-3*c+d)*t**3)
+                               for a, b, c, d in zip(p0, p1, p2, p3)))
+    lengths = [0.0]
+    for a, b in zip(curve, curve[1:]):
+        lengths.append(lengths[-1]+math.dist(a, b))
+    total = lengths[-1]
+    phase = (pts[0][0]*.37+pts[0][1]*.21) % (2*math.pi)  # a river's own, so neighbours do not wave in step
+    out = []
+    for j, (x, y) in enumerate(curve):
+        (px, py), (nx, ny) = curve[max(0, j-1)], curve[min(len(curve)-1, j+1)]
+        norm = math.hypot(nx-px, ny-py) or 1.0
+        fade = min(1.0, lengths[j]/60, (total-lengths[j])/60)
+        offset = amplitude*fade*math.sin(2*math.pi*lengths[j]/wavelength+phase)
+        out.append((x-(ny-py)/norm*offset, y+(nx-px)/norm*offset))
+    out[0], out[-1] = pts[0], pts[-1]
+    return out
+
+
 def flowing_line(draw, points, colour, width, phase, dash=26, gap=64):
     """Short lighter strokes travelling along a course; a pure function of `phase`, so any frame renders alone."""
     period = dash+gap
@@ -272,7 +306,10 @@ class SceneRenderer:
             else:
                 draw_seconds = feature.get("draw_seconds", feature["until"]-feature["at"])
                 progress = 1 if self.reduced_motion else min(1, (local-feature["at"])/draw_seconds)
-                points = partial_path([camera.project(point) for point in feature["points"]], progress)
+                course = [camera.project(point) for point in feature["points"]]
+                if feature["meaning"] == "river":
+                    course = river_path(course)
+                points = partial_path(course, progress)
                 if len(points) > 1:
                     width = feature.get("line_width", 5)
                     if feature["meaning"] == "river":
@@ -390,7 +427,7 @@ class SceneRenderer:
                 for status, items in grouped.items():
                     periods = {period for _, period, _ in items}
                     if len(periods) == 1:
-                        text = ", ".join(label for label, _, _ in items)+f" · {periods.pop()} · {status}"
+                        text = ", ".join(dict.fromkeys(label for label, _, _ in items))+f" · {periods.pop()} · {status}"
                     else:
                         text = " ; ".join(f"{label} · {period}" for label, period, _ in items)+f" · {status}"
                     entries.append((text, "", None))
