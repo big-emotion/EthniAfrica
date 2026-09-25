@@ -130,7 +130,10 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // lived inside the exonym string, which this probe does not read. Writing it
     // into the field the probe does read brought the fiche into the count — the
     // figure moved because the corpus got more legible, not because it grew.
-    value: 181,
+    // 181 -> 182 on 2026-09-25. Dogon's origin-of-exonyms prose now cites the
+    // colonial administrators who borrowed « Habe » from the Fula; a sourced
+    // sentence, not a rewording made for the count.
+    value: 182,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -138,7 +141,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-european",
     label: "fiches employant le radical « europ- »",
-    value: 119,
+    // 119 -> 120 on 2026-09-25: the same Dogon sentence (« Europeens »).
+    value: 120,
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
