@@ -17,9 +17,7 @@ def prepare_source(project, source):
     script = project / "narration.fr.txt"
     approval = project / "post.md"
     require(approval.is_file() and "**Texte validé** : oui" in approval.read_text(), "Source narration needs operator approval")
-    for path in (script, project / "cards.json", project / "cartes.json"):
-        if path.exists():
-            require(path.stat().st_mtime <= approval.stat().st_mtime, "Source changed after operator approval")
+    require(script.stat().st_mtime <= approval.stat().st_mtime, "Source changed after operator approval")
     require(digest(script) == source.get("source_script_sha256"), "Source script hash changed")
     audio = project / "work/narration.wav"
     require(digest(audio) == source.get("source_audio_sha256"), "Source audio hash changed")

@@ -36,7 +36,11 @@ paragraphs can share one sustained map. Do not retime the audio to fit an arbitr
 - Handoff lock filename:
 - Exact renderer revision and environment:
 - Desired proof destination:
-- Final human review still required:
+- Intended final release: complete episode / explicitly approved excerpt:
+- Existing operator approval and review evidence:
+- Voice publication rights and asset licence compatibility:
+- Clean delivery destination and library post ID, if registered:
+- Outstanding substantive decisions:
 
 ## Acceptance
 

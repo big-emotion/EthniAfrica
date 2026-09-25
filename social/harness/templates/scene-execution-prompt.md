@@ -5,7 +5,7 @@ executes an already prepared package; it does not ask that model to invent the v
 See [workflow and prerequisites](../SCENE-PRODUCTION.md).
 
 ```text
-Produce the EthniAfrica scene-video proof from the prepared package at [PROJECT].
+Produce the EthniAfrica scene video and its reviewed final delivery from the prepared package at [PROJECT].
 Use repository [REPOSITORY] at revision [REVISION], with interpreter [PYTHON].
 
 Read production-brief.md and social/harness/SCENE-PRODUCTION.md. Apply the
@@ -27,8 +27,19 @@ needed; do not restart the whole creative process.
 Inspect cue previews at phone size, transitions and the final MP4. State what
 was visually checked and whether you could actually listen to the audio.
 Report the execution checks and their limits without claiming human approval.
-Return the video, the execution report and any unresolved issue. Do not publish,
-schedule or promote a library/ledger status. This remains a watermarked proof.
+Complete the generated release-review.json from actual checks and existing approval.
+Follow social/harness/SCENE-RELEASE.md. Record missing checks together; never invent
+voice rights, editorial verdicts or human listening. When all checks pass, continue:
+[PYTHON] social/harness/ethni_scene_pipeline.py finalize "[PROJECT]" \
+  --plan "[PROJECT]/[PLAN]" --lock "[PROJECT]/work/[LOCK]" \
+  --review "[PROJECT]/_epreuves/[OUTPUT-VERSION]/release-review.json" \
+  --output "[PROJECT]/video/[OUTPUT-VERSION]"
+
+Return video.mp4, captions.srt, CREDITS.md and delivery.json. For a registered post,
+complete the documented library handoff and verify the copied video's hash.
+Keep an unregistered subject's delivery private and report registration separately.
+Do not publish or schedule. If review is incomplete, deliver the proof and the
+specific outstanding decisions without claiming a publishable master.
 ```
 
 For a new subject whose package is incomplete, use `ethniafrica-structure` and the

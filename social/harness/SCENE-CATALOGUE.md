@@ -130,3 +130,10 @@ mixing, automatic image search/licensing, general flag assets, automatic migrati
 geometry morphing, automatic historical fact checking and a clean publication master are not
 implemented by the current scene renderer. Brand fonts and the core layout are governed by the
 charter, not free per-video style parameters. See [production readiness](SCENE-PRODUCTION.md#readiness-audit-and-remaining-work).
+
+## Reviewed final output
+
+The [release workflow](SCENE-RELEASE.md) adds a clean MP4, SRT subtitles, credits,
+a phone preview and a hashed delivery manifest. The proof badge alone is removed;
+all source credits, uncertainty, captions, geography and timing remain. The
+version-bound review must be complete; the engine never generates passing reviews.
