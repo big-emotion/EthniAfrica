@@ -5,6 +5,14 @@ Cible : `ethni_carrousel2.py` → `ethni_compose.py` (images) et `ethni_audio.py
 `ethni_montage.py` (vidéo), sous `social/harness/`.
 Ce document suffit à reproduire les gabarits au pixel près sans lire le HTML.
 
+**Scoped editorial extension, 2026-09-25:**
+[Mémoires sonores](MEMOIRES-SONORES.md) defines the approved six-card musical
+series for TikTok and Instagram only. For this series, its narrative, closing
+and platform scope take precedence over the name-origin, mandatory-myth and
+all-network rules below. Shared visual and source-quality rules still apply.
+The extension records an editorial structure, not implemented renderer or ledger
+support; the general machine-readable format matrix is unchanged.
+
 ---
 
 ## 0. Principes non négociables

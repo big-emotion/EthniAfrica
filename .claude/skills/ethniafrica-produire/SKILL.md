@@ -5,6 +5,16 @@ description: Render EthniAfrica scene videos from an approved scene plan, or ren
 
 # produire — rendre carrousels et reels
 
+## Mémoires sonores delivery scope (2026-09-25)
+
+Read `docs/design/gabarits-social/MEMOIRES-SONORES.md` first for this feature.
+Its sequence and TikTok/Instagram-only delivery replace the generic
+name-carousel and all-network requirements for this series. Full-text approval,
+source/asset checks, message review and proof review still apply. This reference
+adds no renderer or registration support: verify those capabilities before
+rendering, report any gap, and do not fabricate metadata or bypass a gate.
+Music and archive clips require their own platform-specific review.
+
 ## Scene-video dispatch and execution
 
 For every new video, use `scene-plan.json`, this section and
