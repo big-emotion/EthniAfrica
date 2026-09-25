@@ -15,7 +15,7 @@ PROFILES = {
 }
 STATUS = {"documented": "Documenté", "estimate": "Estimation", "hypothesis": "Hypothèse",
           "illustration": "Illustration", "editorial": "Position éditoriale"}
-COLOURS = ("gold", "white", "night-ink-2", "teal", "perv")
+COLOURS = ("gold", "white", "night-ink-2", "teal", "perv", "sea")
 
 
 def require(condition, message):

@@ -18,7 +18,7 @@ W, H = 1080, 1920
 # Names match the engine palette so the map code is shared; values are light and warm.
 LIGHT = {"ground": "#c9dde3", "land": "#f2ead8", "land-highlight": "#e3b658", "border": "#a08d68",
          "gold": "#d4922a", "white": "#2b2118", "night-ink-2": "#4a3d2a", "night-ink-3": "#8b7b5c",
-         "teal": "#0f6f73", "perv": "#6a3fa0"}
+         "teal": "#0f6f73", "perv": "#6a3fa0", "sea": "#79aabf"}
 
 INSERT_WIDTH, INSERT_HEIGHT, INSERT_TOP, FADE = 380, 430, 480, .35
 

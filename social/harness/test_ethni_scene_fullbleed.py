@@ -172,6 +172,40 @@ class FullbleedExtensionTests(unittest.TestCase):
         renderer = SceneRenderer(plan, self.root, [], proof=False)
         self.assertTrue(any("Cours d'eau" in line for line in renderer.legend(plan["scenes"][0], 1)))
 
+    def river_plan(self, **extra):
+        river = {"kind": "route", "meaning": "river", "label": "Niger", "colour": "sea", "unlabelled": True,
+                 "points": [[-10, 5], [0, 12], [5, 15]], "draw_seconds": .04}
+        river.update(extra)
+        plan = self.plan_with(river)
+        plan["scenes"][0]["map"]["layer"] = "physical"
+        return plan
+
+    def test_a_river_is_a_solid_line_in_the_sea_colour_with_a_current_that_flows(self):
+        plan = self.river_plan()
+        validate_plan(plan, self.root, 10)
+        renderer = SceneRenderer(plan, self.root, [], proof=False)
+        early, later = renderer.render(1.0), renderer.render(1.5)
+        self.assertNotEqual(early.tobytes(), later.tobytes(), "the current moves along the course")
+        still = SceneRenderer(plan, self.root, [], reduced_motion=True, proof=False)
+        self.assertEqual(still.render(1.0).tobytes(), still.render(1.5).tobytes())
+        # A dashed line would leave gaps of bare map along the course; a river is continuous.
+        from ethni_map import Camera
+        from ethni_scene_fullbleed import LIGHT
+        with_river = renderer._map(plan["scenes"][0], 1.0, (0, 0, 1080, 1920), LIGHT)
+        without = copy.deepcopy(plan)
+        without["scenes"][0]["map"]["features"] = []
+        bare = SceneRenderer(without, self.root, [], proof=False)._map(without["scenes"][0], 1.0, (0, 0, 1080, 1920), LIGHT)
+        camera = Camera(tuple(plan["scenes"][0]["map"]["camera"][0]["bounds"]), (0, 0, 1080, 1920))
+        a, b = camera.project((-10, 5)), camera.project((0, 12))
+        samples = [(a[0]+(b[0]-a[0])*i/60, a[1]+(b[1]-a[1])*i/60) for i in range(1, 60)]
+        painted = sum(with_river.getpixel((round(x), round(y))) != bare.getpixel((round(x), round(y))) for x, y in samples)
+        self.assertGreaterEqual(painted, 57)
+
+    def test_the_sea_colour_is_a_feature_colour(self):
+        validate_plan(self.river_plan(colour="sea"), self.root, 10)
+        with self.assertRaisesRegex(ValueError, "colour"):
+            validate_plan(self.river_plan(colour="neon"), self.root, 10)
+
     def test_a_busy_map_may_carry_sixteen_features_but_not_seventeen(self):
         marks = [{"kind": "point", "label": f"P{i}", "point": [-9+i, 5], "colour": "gold", "at": 0, "until": 5,
                   "evidence": self.plan["scenes"][0]["evidence"]} for i in range(17)]

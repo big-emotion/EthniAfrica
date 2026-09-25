@@ -14,6 +14,23 @@ import ethni_scene_fullbleed as fullbleed
 
 
 SPEAKERS_RADIUS, SPEAKERS_REFERENCE = 80, 16_000_000
+RIVER_FLOW_SPEED = 70  # px per second, downstream
+
+
+def flowing_line(draw, points, colour, width, phase, dash=26, gap=64):
+    """Short lighter strokes travelling along a course; a pure function of `phase`, so any frame renders alone."""
+    period = dash+gap
+    travelled = 0.0
+    for a, b in zip(points, points[1:]):
+        length = math.dist(a, b)
+        step = 0.0
+        while step < length:
+            end = min(length, step+4)
+            if ((travelled+step-phase) % period) < dash:
+                draw.line([tuple(v+(u-v)*step/length for v, u in zip(a, b)),
+                           tuple(v+(u-v)*end/length for v, u in zip(a, b))], fill=colour, width=width)
+            step = end
+        travelled += length
 
 
 def scene_map(scene):
@@ -191,7 +208,7 @@ class SceneRenderer:
                 continue
             reveal = 1 if self.reduced_motion or "fade_seconds" not in feature else smooth((local-feature["at"])/feature["fade_seconds"])
             below = canvas.copy() if reveal < 1 else None
-            colour = p[feature.get("colour", "gold")]
+            colour = p.get(feature.get("colour", "gold")) or p["teal"]  # "sea" only exists on the light map palette
             if feature.get("role") == "context":
                 colour = "#%02x%02x%02x" % mix(p["ground"], colour, .55)
             kind = feature["kind"]
@@ -258,7 +275,12 @@ class SceneRenderer:
                 points = partial_path([camera.project(point) for point in feature["points"]], progress)
                 if len(points) > 1:
                     width = feature.get("line_width", 5)
-                    if feature.get("line_style", "solid") == "dashed":
+                    if feature["meaning"] == "river":
+                        # A watercourse, not a border: a continuous line with a lighter current moving downstream.
+                        draw.line(points, fill=colour, width=max(3, width-1), joint="curve")
+                        phase = 0 if self.reduced_motion else local*RIVER_FLOW_SPEED
+                        flowing_line(draw, points, mix(colour, "#ffffff", .62), max(2, width-3), phase)
+                    elif feature.get("line_style", "solid") == "dashed":
                         dashed_line(draw, points, colour, width)
                     else:
                         draw.line(points, fill=colour, width=width, joint="curve")
@@ -279,7 +301,7 @@ class SceneRenderer:
                 require(not any(box[0] < b[2]+8 and box[2]+8 > b[0] and box[1] < b[3]+8 and box[3]+8 > b[1]
                                 for b in label_boxes), f"Map label overlap: {feature['label']}")
                 label_boxes.append(box)
-                ink = p[feature.get("label_colour", feature.get("colour", "gold"))]
+                ink = p.get(feature.get("label_colour", feature.get("colour", "gold"))) or p["teal"]
                 if feature.get("role") == "context": ink = mix(p["ground"], ink, .65)
                 if annotated:
                     edge = (max(box[0], min(x, box[2])), max(box[1], min(y, box[3])))
