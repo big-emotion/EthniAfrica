@@ -9,6 +9,7 @@ import subprocess
 
 from ethni_paths import assert_writable, resolve_project
 from ethni_scene_audio import digest, prepare_source
+from ethni_scene_outro import total_seconds
 from ethni_scene_plan import asset_path, require, validate_plan
 from ethni_scene_render import SceneRenderer
 from ethni_scenes import run
@@ -24,7 +25,8 @@ def identity(project, plan):
     harness = Path(__file__).resolve().parent
     repo = harness.parents[1]
     files = sorted(set(harness.glob('ethni_*.py')) | set((harness/'fonts').glob('*.ttf')) |
-                   set((tokens.GABARITS/'tokens').glob('*.css')) | {tokens.SPEC, harness/'requirements.txt'})
+                   set((tokens.GABARITS/'tokens').glob('*.css')) | {tokens.SPEC, harness/'requirements.txt'} |
+                   ({harness/'outro-reseaux-sociaux.mp4'} if plan.get('outro') else set()))
     inputs = ['narration.fr.txt', 'post.md', 'work/narration.wav', 'work/aligned-words.json',
               'production-brief.md', 'SOURCES.md', 'message.md', 'mythe.md']
     return {
@@ -100,7 +102,7 @@ def execute(action, project, plan_path, lock_path, output, review_path=None):
                        lambda: identity(project, json.loads(plan_path.read_text())) == current)
     elif action == 'render':
         folder = run(project, plan_path, output_dir=output)
-        result['video'] = check_video(folder, source['duration'])
+        result['video'] = check_video(folder, total_seconds(plan, source['captions'], source['duration']))
         latest_plan = json.loads(plan_path.read_text())
         require(identity(project, latest_plan) == current, 'Inputs changed during export; review the proof before reuse')
         result['lock_sha256'] = digest(lock_path)

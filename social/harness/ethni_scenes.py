@@ -11,6 +11,7 @@ import PIL
 
 from ethni_paths import assert_writable
 from ethni_scene_audio import prepare_source, digest
+from ethni_scene_outro import cue, frames as outro_frames, total_seconds
 from ethni_scene_plan import validate_plan, require
 from ethni_scene_render import SceneRenderer
 
@@ -18,7 +19,10 @@ from ethni_scene_render import SceneRenderer
 def encode(renderer, audio, cuts, target):
     """Atomically deliver a constant-frame-rate video; clean all scratch on failure."""
     fps = 25
-    count = math.ceil(renderer.duration*fps-1e-7)
+    total = total_seconds(renderer.plan, renderer.captions, renderer.duration)
+    count = math.ceil(total*fps-1e-7)
+    outro_start = round(cue(renderer.captions)*fps) if renderer.plan.get("outro") else count
+    outro = outro_frames(count-outro_start) if outro_start < count else iter(())
     with tempfile.TemporaryDirectory(prefix=".scenes-", dir=target.parent) as scratch:
         scratch = Path(scratch)
         excerpt = scratch / "voice.wav"
@@ -36,9 +40,10 @@ def encode(renderer, audio, cuts, target):
             process = subprocess.Popen(cmd, stdin=subprocess.PIPE, stderr=errors)
             try:
                 for frame in range(count):
-                    process.stdin.write(renderer.render(frame/fps).tobytes())
+                    image = renderer.render(frame/fps) if frame < outro_start else next(outro)
+                    process.stdin.write(image.tobytes())
                     if frame % (fps*5) == 0:
-                        print(f"Scene render: {frame/fps:.0f}/{renderer.duration:.1f}s", flush=True)
+                        print(f"Scene render: {frame/fps:.0f}/{total:.1f}s", flush=True)
                 process.stdin.close()
                 if process.wait() != 0:
                     errors.seek(0)
@@ -79,6 +84,9 @@ def run(project, plan_path, reduced_motion=False, validate_only=False, previews_
         phone = frame.resize((360, 640))
         phone.save(output/f"mobile-{index+1:02d}{suffix}.png")
         preview_rows.append(f"| {index+1} | {scene['type']} | {scene['start']:.2f}–{scene['end']:.2f} | {scene['purpose']} | {name} |")
+    if plan.get("cover"):
+        # The video opens on this frame, so it is also the cover to upload.
+        renderer.render(0).save(output/f"cover{suffix}.png")
     frames = None
     target = output/f"video-scenes{suffix}-epreuve.mp4"
     if not previews_only:

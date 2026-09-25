@@ -5,6 +5,7 @@ import math
 from PIL import Image, ImageColor, ImageDraw, ImageOps, ImageFilter
 
 import ethni_tokens as tokens
+from ethni_montage import MINIATURE_S
 from ethni_type import font
 from ethni_map import Camera, camera_at, mix, partial_path, smooth
 from ethni_scene_plan import STATUS, asset_path, scene_at, transition_at, require
@@ -345,7 +346,8 @@ class SceneRenderer:
         self.paragraph(draw, "ETHNIAFRICA", (self.left, 65, 380, 45), "Bandeau", self.palette["night-ink-2"])
         self.paragraph(draw, "L’AFRIQUE À TRAVERS SES NOMS", (self.left, 132, self.right-self.left, 45), "Bandeau", self.palette["night-ink-2"])
         caption = next((c for c in self.captions if c["debut"] <= instant < c["fin"]), None)
-        if caption:
+        # §1 ter: the opening is the thumbnail, so for its first seconds it carries its title alone.
+        if caption and not (self.plan.get("cover") and instant < MINIATURE_S):
             self.paragraph(draw, caption["texte"], (self.left, 1380, self.right-self.left, 140), "Corps")
         self.paragraph(draw, "\n".join(credits), (self.left, 1530, self.right-self.left, 88), "Crédit", self.palette["night-ink-2"])
         if self.plan.get("progress", False):

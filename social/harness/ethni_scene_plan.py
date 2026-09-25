@@ -235,9 +235,10 @@ def validate_focused_timeline(value, duration, sources, assets):
 def validate_plan(plan, root, duration):
     """Validate shape, local assets, provenance and complete audio coverage."""
     import json
-    keys(plan, "version profile coverage title source output_dir sources assets scenes progress", "plan")
-    if "progress" in plan:
-        require(type(plan["progress"]) is bool, "progress must be boolean")
+    keys(plan, "version profile coverage title source output_dir sources assets scenes progress cover outro", "plan")
+    for flag in ("progress", "cover", "outro"):
+        if flag in plan:
+            require(type(plan[flag]) is bool, f"{flag} must be boolean")
     require(type(plan.get("version")) is int and plan["version"] == 1, "Unsupported scene plan version")
     require(plan.get("profile") in PROFILES, "Unknown editorial profile")
     require(plan.get("coverage", "excerpt") in ("excerpt", "complete"), "Unknown coverage")
