@@ -10,10 +10,14 @@ description: Render EthniAfrica scene videos from an approved scene plan, or ren
 Read `docs/design/gabarits-social/MEMOIRES-SONORES.md` first for this feature.
 Its sequence and TikTok/Instagram-only delivery replace the generic
 name-carousel and all-network requirements for this series. Full-text approval,
-source/asset checks, message review and proof review still apply. This reference
-adds no renderer or registration support: verify those capabilities before
-rendering, report any gap, and do not fabricate metadata or bypass a gate.
-Music and archive clips require their own platform-specific review.
+source/asset checks, message review and proof review still apply. The normal
+`ethni_carrousel2.py <Sujet>` command reads `profil: memoires-sonores` and exports
+only six 4:5 cards for TikTok/Instagram; it refuses incomplete profile data.
+Use the private-library registration with `--profile memoires-sonores` and its
+`--where` output, following the reference. No public name-origin ledger entry
+is required. Deliver `RENDU.md` with its sound-selection notes: the operator adds
+the documented music natively on each platform; PNGs contain no audio.
+Archive clips require their own platform-specific review.
 
 ## Scene-video dispatch and execution
 

@@ -10,9 +10,14 @@ description: Prepare EthniAfrica narration, visual storyboards, sourced assets a
 Read `docs/design/gabarits-social/MEMOIRES-SONORES.md` first for this feature.
 Its approved six-card sequence replaces the name-origin sequence and closing.
 Prepare TikTok/Instagram copy only; no mandatory myth, reel or site article.
-Research and full-text approval still apply. Follow the reference's technical
-handoff: it adds no renderer field or ledger category, and neither may be
-invented to register a musical subject as a name-origin production.
+Read the guide and scaffold through
+`social/harness/venv/bin/python social/harness/ethni_carrousel2.py --brief memoires-sonores`.
+Populate its `deck`, preserving `profil` and the six `etape` values; add the
+`musique` recording and per-platform usage notes. Research and full-text approval
+still apply. Follow the reference's registration command with `--profile
+memoires-sonores`: register in the private library only. The public name-origin
+ledger step below does not apply to this social-only feature; no site route or
+name typology is invented.
 
 Deuxième étape. `idee` vient avant, `produire` vient après.
 

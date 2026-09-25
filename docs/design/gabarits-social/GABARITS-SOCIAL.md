@@ -10,8 +10,9 @@ Ce document suffit à reproduire les gabarits au pixel près sans lire le HTML.
 series for TikTok and Instagram only. For this series, its narrative, closing
 and platform scope take precedence over the name-origin, mandatory-myth and
 all-network rules below. Shared visual and source-quality rules still apply.
-The extension records an editorial structure, not implemented renderer or ledger
-support; the general machine-readable format matrix is unchanged.
+The opt-in `profil: memoires-sonores` is implemented in the carousel renderer
+and private-library registration. Its shared JSON profile overrides delivery
+only for this series; the general machine-readable format matrix is unchanged.
 
 ---
 
@@ -1324,6 +1325,14 @@ sous-titre, transitions entre séquences. §9 et le brief vidéo portent la cade
 ---
 
 ## 10. Schéma `cards.json` attendu
+
+**Optional musical profile:** `profil: "memoires-sonores"` adds the six ordered
+`etape` values and `musique` production notes described in
+[MEMOIRES-SONORES](MEMOIRES-SONORES.md#production-handoff). The renderer reads
+that profile for validation, series identity and TikTok/Instagram-only delivery.
+Use `ethni_carrousel2.py --brief memoires-sonores` to read the current guide and
+obtain the empty six-card scaffold. Decks without `profil` keep this schema's
+existing behaviour.
 
 ```json
 {
