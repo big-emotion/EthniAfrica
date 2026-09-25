@@ -17,10 +17,30 @@
   ],
   "sitePath": "/fr/atlas/pays/MLI",
   "publications": [
-    { "network": "youtube", "format": "video" },
-    { "network": "tiktok", "format": "video" },
-    { "network": "instagram", "format": "video" },
-    { "network": "facebook", "format": "video" },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=A99ETtxdxiU&feature=youtu.be",
+      "publishedAt": "2026-09-25"
+    },
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7689476088501767446",
+      "publishedAt": "2026-09-25"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/p/Ddtpv6yKDaf/",
+      "publishedAt": "2026-09-25"
+    },
+    {
+      "network": "facebook",
+      "format": "video",
+      "url": "https://www.facebook.com/reel/4460192550908000",
+      "publishedAt": "2026-09-25"
+    },
     { "network": "linkedin", "format": "video" },
     { "network": "x", "format": "video" }
   ]
