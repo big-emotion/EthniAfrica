@@ -20,11 +20,33 @@ not been demonstrated by this technical test.
 
 ## Session setup and older proofs
 
+For one coordinator across the whole video workflow, use
+[ethniafrica-production](../../.claude/skills/ethniafrica-production/SKILL.md).
+It resumes existing work, presents the visual plan for approval before rendering
+or paid audio, then coordinates `structure` and `produire` through clean delivery.
+Its [state template](../../.claude/skills/ethniafrica-production/templates/production-state.md)
+keeps decisions and approval evidence in the private subject directory across sessions.
+This is separate from carousel production and does not publish or schedule.
+
+In a session already holding the narrative, invoke `$ethniafrica-production` in
+Codex or `/ethniafrica-production` in Claude and ask it to continue that subject.
+Using the skill in the current session preserves access to the conversation.
+Native agent definitions also exist for
+[Codex](../../.codex/agents/ethniafrica-production.toml) and
+[Claude](../../.claude/agents/ethniafrica-production.md); both load the same canonical
+skill and inherit the selected model. Claude can start a dedicated main session with
+`claude --agent ethniafrica-production` from this checkout. If invoking a native
+subagent, supply the subject directory and real approval evidence explicitly;
+do not assume it inherits the parent conversation. No background job is created.
+
 Claude reads the versioned `.claude/skills/` entry points. For Codex, run
 `npm run skills:link` in the checkout, then `npm run check:skill-parity -- --require-mirror`.
-Both scene skills are provisioned and checked alongside the curator skill. A session that
+The coordinator and both scene skills are provisioned and checked alongside the curator skill. A session that
 already loaded an older skill should reload it before continuing. Work on the new PR branch
 until it is merged; a push does not update another checkout automatically.
+Restart a session if new agent definitions or skill names do not appear. As an immediate
+fallback, ask the current session to read the canonical skill file explicitly. A model
+without filesystem/tool access can discuss a plan but cannot run the local renderer.
 
 The replay check in this change covers the latest composed chronology. Earlier proofs need
 their own plan, recording, assets and original engine version. The original map POC uses the
@@ -49,6 +71,7 @@ asking the execution model to infer missing decisions.
 
 ```text
 <subject>/
+  production-state.md      resumable tasks, artifact versions and actual approval evidence
   production-brief.md       audience, format, approved intentions, allowed adjustments
   narration.fr.txt          full approved speech, unchanged by rendering
   post.md                  genuine existing text-approval record

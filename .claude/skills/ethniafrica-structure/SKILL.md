@@ -53,8 +53,11 @@ next step. Missing inputs are reported together, not one prompt at a time. Do no
 claim a placeholder JSON starter is ready. Registration remains a separate,
 appropriately typed editorial operation; scene proofs never promote publication status.
 
-Si aucun rapport de sujet n'existe dans `$ETHNIAFRICA_SOCIAL_PROJECTS/_idees/`, dis-le et
-propose de lancer `idee`. Ne saute pas l'étape.
+If no subject report exists in `$ETHNIAFRICA_SOCIAL_PROJECTS/_idees/` or the supplied
+private package, report the gap and use `idee` to recover the missing evidence.
+Preserve an existing approved narration; missing report storage is not a reason
+to restart audience research or rewrite that narration. For coordinated video
+resumption, use `.claude/skills/ethniafrica-production/SKILL.md`.
 
 ## Entrée
 
@@ -285,9 +288,9 @@ phrase — c'est **amazigh**, pluriel **imazighen**. De même **Fulɓe** plutôt
 Relis le lot en cherchant les exonymes que tu as employés sans t'en apercevoir,
 comme s'ils étaient des mots neutres : ce sont ceux-là qui passent.
 
-## Le titre d'un reel
+## Name-origin reel title only
 
-**Un reel s'intitule « D'où vient le nom « X » ? », jamais autrement**
+**A name-origin reel uses the title « D'où vient le nom « X » ? »**
 (`docs/design/gabarits-social/GABARITS-SOCIAL.md` §1 ter, « Le titre d'un reel est
 une loi »). C'est le titre de la carte d'ouverture, donc la miniature, et celui du
 post sur chaque réseau : les légendes ne le reformulent pas, et aucun titre-chute
