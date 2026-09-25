@@ -44,6 +44,13 @@
         "griot": "Djeli Mamadou Kouyaté (Djeliba Koro, Siguiri)",
         "transcription": "Niane, Djibril Tamsir, Soundjata ou l'épopée mandingue, 1960",
         "sourceRefs": ["niane-1960"]
+      },
+      {
+        "claim": "In the epic, two brothers who are both Traoré, Oulamba the elder and Oulani the younger, bring King Naré Maghan Kon Fatta the buffalo-woman of the country of Do, before Soundiata's birth. When the younger brother has killed the buffalo, the elder composes a song in his honour and the younger cries out: \"Brother, if you were a griot, no one could resist you.\" According to the tradition, this is where Traoré and Diabaté (Dioubaté) part ways: the same family divides between hunters and griots.",
+        "claimStatus": "claimed",
+        "griot": "Djeli Mamadou Kouyaté (Djeliba Koro, Siguiri)",
+        "transcription": "Niane, Djibril Tamsir, Soundjata ou l'épopée mandingue, 1960",
+        "sourceRefs": ["niane-1960"]
       }
     ],
     "writtenChronicles": [],
@@ -67,6 +74,16 @@
         "claim": "Before Soundiata, the Traoré occupy part of the country of Kiri, but the majority of them settle in the province that will later take the name Gangaran, north-west of Bouré. This territory is distinct from the cradle of the Keita, located around Dakadiala, Naréna and Kiri.",
         "claimStatus": "established",
         "sourceRefs": ["gha-iv-mali", "niane-1985-fr-mali-chapitre"]
+      },
+      {
+        "claim": "According to Jan Jansen, the ancestor Tiramagan, celebrated as Soundiata's general and founder of Kaabu, is a case where it is doubtful that an epic hero refers to a historical person: in Kaabu, where the account almost ignores his link with Soundiata, his name Tiramagan or Siramagan might mean \"chief of ordeals\", a cult object, the lance of the ordeal, that became a character. This reading is a hypothesis and commands no consensus; the General History of Africa, for its part, treats the figure as a general sent by Soundiata.",
+        "claimStatus": "contested",
+        "sourceRefs": ["jansen-sunjata-paradigm", "gha-iv-mali"]
+      },
+      {
+        "claim": "For a stranger, the jamu is the way into the social fabric: in Bamako, a stranger is given a Mande jamu to give them a place in the group. Cécile Canut notes that today the historical references of the pacts between names are often forgotten and people struggle to explain their origin.",
+        "claimStatus": "established",
+        "sourceRefs": ["canut-2002-senankuya"]
       }
     ]
   },
@@ -215,6 +232,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "Traoré and Tarawele are two spellings of the same jamu, the first stemming from the colonial transcription; the dictionary of jamuw adds a third, Taraore, under the same entry. It further groups Sane, Mane, Ouédraogo, Dembélé, Diouf and — at Ségou — Touré among its equivalences, clan names of other peoples held to be the same, an institution that the General History of Africa describes for its part by noting that a Traoré settled in Wolof country may take the name Diop. Neither the spellings nor the equivalences make separate lineages: none is treated as a homonym."
+    },
+    {
+      "fieldPath": "origin.oralTraditions",
+      "reason": "No source consulted dates Tiramaghan himself: the epic places him in Soundiata's service, and Soundiata's victory at Kirina is set around 1235, but that date is no dating of his departure nor of a descent shared by all bearers of the name. The episode of Oulani and Oulamba precedes Soundiata's birth in the epic and is not dated either. We present neither as an established historical fact."
     }
   ],
   "_translation": {
