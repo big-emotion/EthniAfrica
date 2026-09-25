@@ -336,3 +336,13 @@ ever run on posts that were already published.
 Nunito Sans (the brand card). Fraunces and Nunito Sans are **variable** fonts
 whose default instance is far too light; the engine pins the weight axis. A
 production that assumed otherwise fell back to Montserrat and shipped thin.
+
+## Approved musical presentation
+
+`memoires-sonores-v1` renders the operator-approved six-card layout from the
+shared profile: a contained cover portrait, four text cards and a listening
+photo. The guide includes the field-to-slot table; preparation requests images
+only where they are drawn. Overflow never shrinks text; the normal command
+files the entire deck as proofs if any card fails. The approved visual
+references are retained in `docs/design/gabarits-social/memoires-sonores-approved/`.
+Approval of the template does not approve any episode’s script or audio.

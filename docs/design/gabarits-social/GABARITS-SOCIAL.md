@@ -9,7 +9,9 @@ Ce document suffit à reproduire les gabarits au pixel près sans lire le HTML.
 [Mémoires sonores](MEMOIRES-SONORES.md) defines the approved six-card musical
 series for TikTok and Instagram only. For this series, its narrative, closing
 and platform scope take precedence over the name-origin, mandatory-myth and
-all-network rules below. Shared visual and source-quality rules still apply.
+all-network rules below. Source-quality rules still apply. The six visual mockups were approved on
+2026-09-25: the linked reference now specifies the musical layout exception
+(two photographs, four text cards, fixed larger type and a dedicated footer).
 The opt-in `profil: memoires-sonores` is implemented in the carousel renderer
 and private-library registration. Its shared JSON profile overrides delivery
 only for this series; the general machine-readable format matrix is unchanged.

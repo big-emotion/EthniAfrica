@@ -8,6 +8,10 @@ description: Render EthniAfrica scene videos from an approved scene plan, or ren
 ## Mémoires sonores delivery scope (2026-09-25)
 
 Read `docs/design/gabarits-social/MEMOIRES-SONORES.md` first for this feature.
+The approved `memoires-sonores-v1` presentation is now automatic: photographs
+on cards 1 and 5, text on cards 2–4 and 6, night ground and soft ocre. Follow
+the guide’s field-to-slot table; visual approval does not approve episode copy
+or audio. Do not force the generic full-photo quota onto this profile.
 Its sequence and TikTok/Instagram-only delivery replace the generic
 name-carousel and all-network requirements for this series. Full-text approval,
 source/asset checks, message review and proof review still apply. The normal

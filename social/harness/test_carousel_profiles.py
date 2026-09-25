@@ -35,7 +35,7 @@ def musical_deck():
         })
     return {
         "campagne": "music-fixture", "profil": "memoires-sonores",
-        "pilier": "EthniAfrica", "accent": "terre", "fond": "nuit",
+        "pilier": "EthniAfrica", "accent": "ocre", "fond": "nuit",
         "musique": {
             "titre": "Recording fixture", "artiste": "Test artist",
             "version": "Studio", "extrait": "Opening guitar phrase",
@@ -57,6 +57,9 @@ class CarouselProfilesTest(unittest.TestCase):
              "--brief", "memoires-sonores"], capture_output=True, text=True)
         self.assertEqual(run.returncode, 0, run.stderr)
         brief = json.loads(run.stdout)
+        self.assertEqual(brief["profile"]["cadence"], {
+            "day": "sunday", "intervalWeeks": 2, "subjects": 3,
+        })
         guide = HARNESS.parents[1] / brief["guide"]
         self.assertEqual(brief["instructions"], guide.read_text(encoding="utf-8"))
         deck = brief["deck"]
@@ -134,7 +137,7 @@ class CarouselProfilesTest(unittest.TestCase):
             with self.subTest(field=field):
                 deck = musical_deck()
                 if field == "image":
-                    deck["cartes"][2]["image"] = None
+                    deck["cartes"][0]["image"] = None
                 else:
                     deck["campagne"] = " "
                 self.assertFalse(gab.portes(deck["cartes"], deck).passe)

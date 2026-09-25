@@ -47,6 +47,16 @@ def label(deck):
     return selected["label"] if selected else None
 
 
+def visual(deck):
+    selected = profile(deck)
+    return selected.get("visual") if selected else None
+
+
+def uses_image(deck, card):
+    selected = visual(deck)
+    return not selected or card.get("etape") in selected["imageStages"]
+
+
 def _text(value):
     return isinstance(value, str) and bool(value.strip())
 
@@ -69,6 +79,11 @@ def errors(deck, cards=None):
         problems.append(f"{prefix} : `serie` doit reprendre le nom de la rubrique")
     if not _text(deck.get("campagne")):
         problems.append(f"{prefix} : `campagne` doit identifier le sujet")
+    if "sujet" in deck and not isinstance(deck["sujet"], str):
+        problems.append(f"{prefix} : `sujet` doit être du texte")
+    for field, expected in (("fond", "nuit"), ("accent", "ocre")):
+        if deck.get(field, expected) != expected:
+            problems.append(f"{prefix} : la présentation approuvée impose `{field}={expected}`")
     for rank, (card, stage) in enumerate(zip(cards, stages), 1):
         if not isinstance(card, dict):
             problems.append(f"{prefix} : carte {rank} invalide")
@@ -81,9 +96,33 @@ def errors(deck, cards=None):
         for field in required:
             if not _text(card.get(field)):
                 problems.append(f"{prefix} : carte {rank}, `{field}` doit être renseigné")
+        for field in ("corps", "source", "precision", "punchline"):
+            if card.get(field) is not None and not isinstance(card[field], str):
+                problems.append(f"{prefix} : carte {rank}, `{field}` doit être du texte")
+        if card.get("disposition", "auto") not in ("auto", "memoires-sonores-v1"):
+            problems.append(f"{prefix} : carte {rank}, conserver la disposition musicale")
+        unused = ["images", "paires", "table", "chiffre"]
+        if stage["id"] not in ("contexte", "ecoute"):
+            unused.append("precision")
+        if stage["id"] == "ecoute":
+            unused.append("punchline")
+        for field in unused:
+            if card.get(field):
+                problems.append(f"{prefix} : carte {rank}, `{field}` n'a pas de zone dans cette présentation")
+        cut = card.get("coupe")
+        if cut is not None and (not isinstance(cut, list) or not all(_text(line) for line in cut)):
+            problems.append(f"{prefix} : carte {rank}, `coupe` doit être une liste de lignes")
         image = card.get("image")
-        if not isinstance(image, dict) or not _text(image.get("fichier")):
+        if uses_image(deck, card) and (not isinstance(image, dict) or not _text(image.get("fichier"))):
             problems.append(f"{prefix} : carte {rank}, `image.fichier` doit être renseigné")
+        if uses_image(deck, card) and isinstance(image, dict):
+            for field in ("credit", "licence", "depot", "identite"):
+                if field in image and not isinstance(image[field], str):
+                    problems.append(f"{prefix} : carte {rank}, `image.{field}` doit être du texte")
+            focal = image.get("cadrage", "50% 50%")
+            if (not isinstance(focal, str) or not re.fullmatch(r"\d+(?:\.\d+)?% \d+(?:\.\d+)?%", focal)
+                    or any(float(value[:-1]) > 100 for value in focal.split())):
+                problems.append(f"{prefix} : carte {rank}, `image.cadrage` attend deux pourcentages de 0 à 100")
 
     music = deck.get("musique")
     if not isinstance(music, dict):
@@ -108,19 +147,22 @@ def brief(name):
     selected = load(name)
     cards = []
     for rank, stage in enumerate(selected["stages"], 1):
-        cards.append({
+        card = {
             "rang": rank, "etape": stage["id"], "role": stage["role"],
             "titre": "", "corps": "", "source": "", "disposition": "auto",
-            "image": {"fichier": "", "w": None, "h": None,
+            "precision": "", "punchline": "",
+        }
+        if stage["id"] in selected["visual"]["imageStages"]:
+            card["image"] = {"fichier": "", "w": None, "h": None,
                       "cadrage": "50% 50%", "identite": "", "credit": "",
-                      "depot": "", "licence": ""},
-        })
+                      "depot": "", "licence": ""}
+        cards.append(card)
     return {
         "profile": copy.deepcopy(selected), "guide": selected["guide"],
         "instructions": (REPO / selected["guide"]).read_text(encoding="utf-8"),
         "deck": {
             "profil": name, "campagne": "", "serie": selected["label"],
-            "pilier": "EthniAfrica", "accent": "ocre", "fond": "nuit",
+            "pilier": "EthniAfrica", "accent": "ocre", "fond": "nuit", "sujet": "",
             "musique": {"titre": "", "artiste": "", "version": "", "extrait": "",
                         "plateformes": {network.lower(): {"reference": "", "usage": "", "verifie": False}
                                         for network in selected["formats"]["carrousel"]}},
@@ -136,6 +178,7 @@ def report(deck):
     music = deck["musique"]
     lines = [f"## {selected['label']}", "",
              f"Consignes : `{selected['guide']}`.",
+             f"Présentation approuvée : `{selected['visual']['id']}`.",
              "Carrousel à faire défiler ; aucun reel généré par ce profil.", "",
              f"Musique : {music['artiste']} — {music['titre']} ({music['version']}).",
              f"Extrait : {music['extrait']}", "",
