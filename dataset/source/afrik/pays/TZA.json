@@ -195,7 +195,7 @@
       "precolonial": "Sultanat de Zanzibar (XIXe siècle) : commerce d'esclaves et d'épices. Royaumes bantous de l'intérieur. Pas d'unification politique.",
       "colonization": "1885 : Afrique orientale allemande. Résistance tanzanienne (guerre Maji Maji, 1905-1907). 1919 : Mandat britannique (Tanganyika). 1890 : Protectorat britannique de Zanzibar.",
       "independenceStruggle": "Mouvements nationalistes dans les années 1950. Indépendance du Tanganyika en 1961. Indépendance de Zanzibar en 1963. Julius Nyerere devient premier président.",
-      "postIndependence": "1964 : Unification du Tanganyika et de Zanzibar. Première République (1964-1992) : parti unique, socialisme africain (Ujamaa). Deuxième République depuis 1992 : multipartisme, développement économique, stabilité politique, hub est-africain."
+      "postIndependence": "1964 : Unification du Tanganyika et de Zanzibar. Première République (1964-1992) : parti unique, socialisme africain (Ujamaa). Deuxième République depuis 1992 : multipartisme, développement économique, stabilité politique, hub est-africain. Selon Miguel (2004), le swahili remplace l'anglais comme langue officielle au milieu des années 1960 et le programme scolaire met en avant une histoire, une culture et des valeurs tanzaniennes communes ; les langues locales, comme le sukuma, continuent d'être parlées hors des cadres officiels. Dans la région de Shinyanga, le gouvernement régional déplace de force plus de 340 000 ruraux vers des villages, d'août 1974 à 1977, parfois en brûlant les maisons de ceux qui résistent ; ce chiffre concerne cette région, non le pays entier, et Miguel juge probable que ces déplacements ont plutôt aggravé les tensions entre groupes, sans pouvoir exclure un effet inverse à long terme. En juillet 1964, les chefs d'État et de gouvernement de l'Organisation de l'unité africaine, réunis au Caire, s'engagent à respecter les frontières existant à l'accession de chaque État à l'indépendance ; le texte ne mentionne pas le consentement des populations concernées."
     },
     "sources": [
       {
@@ -242,6 +242,18 @@
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official"
+      },
+      {
+        "title": "Tribe or Nation? Nation Building and Public Goods in Kenya versus Tanzania (Edward Miguel, World Politics, 2004)",
+        "url": "https://emiguel.econ.berkeley.edu/assets/assets/miguel_research/47/_Paper__Tribe_or_Nation_-_Nation_Building_and_Public_Goods_in_Kenya_versus_Tanzania.pdf",
+        "tier": "referenced",
+        "notes": "Comparaison de deux districts ruraux, Meatu (Tanzanie) et Busia (Kenya) ; le passage sur les déplacements forcés de Shinyanga figure à la page 347. Étude locale, sans classement des deux pays."
+      },
+      {
+        "title": "Border Disputes among African States, AHG/Res.16(I) (Organisation de l'unité africaine, Le Caire, 17-21 juillet 1964)",
+        "url": "https://www.peaceau.org/uploads/ahg-res-16-i-en.pdf",
+        "tier": "official",
+        "notes": "Texte de la résolution lu en entier. Il engage les États membres à respecter les frontières existant à leur indépendance ; il ne contient aucun relevé de vote ni mention du consentement des populations."
       }
     ],
     "demographics": {
