@@ -35,6 +35,7 @@ const en = {
   allOrigins: "All origins",
   empty: "No published proverb matches these filters.",
   sources: "Sources",
+  photo: "Photo",
   // The way in from the dossiers hub.
   readAll: "Read the proverbs",
 };
@@ -72,6 +73,7 @@ const fr: ProverbsCopy = {
   allOrigins: "Toutes les origines",
   empty: "Aucun proverbe publié ne correspond à ces filtres.",
   sources: "Sources",
+  photo: "Photo",
   readAll: "Lire les proverbes",
 };
 

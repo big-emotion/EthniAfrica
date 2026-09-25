@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { TranslationProvenanceMarker } from "@/components/fiche/TranslationProvenanceMarker";
@@ -7,12 +8,15 @@ import {
 } from "@/lib/home/didYouKnowPresentation";
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
 import { proverbsCopy } from "@/lib/i18n/copy/proverbs";
+import type { ProverbPicture } from "@/lib/proverbs/proverbImages";
 import type { LocalizedProverb } from "@/lib/proverbs/proverbs.en";
 import type { Language } from "@/types/shared";
 
 export interface ProverbCardProps {
   language: Language;
   proverb: LocalizedProverb;
+  /** Absent while no photograph is sourced: the card stays typographic. */
+  picture?: ProverbPicture;
 }
 
 /**
@@ -35,13 +39,29 @@ export interface ProverbCardProps {
  * give the heading one edge and the prose another.
  */
 // @req REQ-113
-export function ProverbCard({ language, proverb }: ProverbCardProps) {
+export function ProverbCard({ language, proverb, picture }: ProverbCardProps) {
   const copy = proverbsCopy[language];
   const shared = anecdotesCopy[language];
   const { status, note } = proverb.origin;
 
   return (
-    <article className="proverb-card" id={proverb.id} data-proverb="">
+    <article
+      className={`proverb-card${picture ? " proverb-card--pictured" : ""}`}
+      id={proverb.id}
+      data-proverb=""
+    >
+      {picture ? (
+        <div className="proverb-picture">
+          <Image
+            src={picture.src}
+            alt={picture.alt[language]}
+            fill
+            unoptimized
+            sizes="(min-width: 768px) 20rem, 100vw"
+            style={{ objectFit: "cover", objectPosition: picture.focus }}
+          />
+        </div>
+      ) : null}
       <p className="proverb-kicker">{copy.kicker}</p>
 
       {proverb.original ? (
@@ -122,6 +142,19 @@ export function ProverbCard({ language, proverb }: ProverbCardProps) {
             </li>
           ))}
         </ul>
+        {picture ? (
+          <p className="proverb-photo-credit">
+            <span className="proverb-sources-label">{copy.photo}</span>{" "}
+            <a
+              href={picture.filePage}
+              rel="noreferrer noopener"
+              target="_blank"
+              className="proverb-source-link"
+            >
+              {picture.shortCredit[language]}
+            </a>
+          </p>
+        ) : null}
       </footer>
 
       <style>{`
@@ -286,9 +319,40 @@ export function ProverbCard({ language, proverb }: ProverbCardProps) {
           line-height: 1.5;
           color: var(--afh-fg-muted);
         }
+        .proverb-card--pictured {
+          position: relative;
+          overflow: hidden;
+          isolation: isolate;
+          padding-top: calc(var(--afh-space-5xl) + 7rem);
+        }
+        /* Mobile: a band across the top that fades into the card, so the
+           words below always sit on the plain surface and never on the photo. */
+        .proverb-picture {
+          position: absolute;
+          inset: 0 0 auto 0;
+          height: 9rem;
+          z-index: -1;
+          mask-image: linear-gradient(to bottom, black 45%, transparent);
+        }
+        .proverb-card .proverb-photo-credit {
+          margin-top: var(--afh-space-md);
+          font-size: var(--afh-text-caption);
+        }
         @media (min-width: 768px) {
           .proverb-card {
             padding: var(--afh-space-6xl);
+          }
+          /* Tablet and desktop: the photo hangs off the right edge, like a
+             garment laid over the side, and fades toward the text. */
+          .proverb-card--pictured {
+            padding-top: var(--afh-space-6xl);
+            padding-right: calc(min(34%, 20rem) + var(--afh-space-2xl));
+          }
+          .proverb-picture {
+            inset: 0 0 0 auto;
+            width: min(34%, 20rem);
+            height: auto;
+            mask-image: linear-gradient(to left, black 50%, transparent);
           }
         }
       `}</style>

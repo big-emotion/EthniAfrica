@@ -3,6 +3,7 @@ import { DID_YOU_KNOW_ILLUSTRATIONS } from "@/lib/home/didYouKnowIllustrations";
 import { DID_YOU_KNOW_ILLUSTRATIONS_EN } from "@/lib/home/didYouKnowIllustrations.en";
 import { localizeDidYouKnowFact } from "@/lib/home/didYouKnowLocalization";
 import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
+import { PROVERB_IMAGES } from "@/lib/proverbs/proverbImages";
 import { findProverb, type Proverb } from "@/lib/proverbs/proverbs";
 import { localizeProverb } from "@/lib/proverbs/proverbs.en";
 import type { Language } from "@/types/shared";
@@ -165,6 +166,7 @@ function proverbPublications(): DiscoveryPublication[] {
           url: authority.url,
           tier: authority.tier,
         },
+        image: PROVERB_IMAGES[proverb.id],
         detail: {
           body: { fr: proverbBody(proverb), en: proverbBody(english) },
           entities: proverb.entities.map((entity, index) => ({
