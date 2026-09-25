@@ -109,6 +109,12 @@ export interface LedgerEntry {
     label: { fr: string; en?: string };
   }>;
   sitePath: string;
+  /**
+   * A piece about a word that is not a corpus entity (« zombie »): what the
+   * search matches instead of a subject. `queries` are what a reader types,
+   * already folded the way the search folds them.
+   */
+  word?: { label: { fr: string; en?: string }; queries: string[] };
   publications: Array<{
     network: string;
     format: string;
@@ -136,6 +142,7 @@ const ALLOWED_TOP_LEVEL_KEYS = new Set([
   "narrativePattern",
   "subjects",
   "sitePath",
+  "word",
   "publications",
   "poster",
   "durationSeconds",
@@ -258,6 +265,8 @@ export function validateEntry(
     }
   }
 
+  if (record.word !== undefined) errors.push(...validateWord(record.word));
+
   const publications = record.publications;
   if (!Array.isArray(publications)) {
     errors.push(
@@ -309,6 +318,41 @@ export function validateEntry(
   return errors;
 }
 
+// The search folds a query to lowercase, accent-free words before it compares
+// (`normalizeString`); a stored query that is not already in that form could
+// never be equal to anything a reader types.
+const FOLDED_QUERY = /^[a-z0-9]+(?: [a-z0-9]+)*$/;
+
+function validateWord(word: unknown): string[] {
+  const record = word as {
+    label?: { fr?: unknown };
+    queries?: unknown;
+  } | null;
+  if (typeof record !== "object" || record === null) {
+    return ["word must be an object with a label and queries"];
+  }
+  const errors: string[] = [];
+  if (typeof record.label?.fr !== "string" || !record.label.fr.trim()) {
+    errors.push("word.label.fr must be a non-empty string");
+  }
+  if (!Array.isArray(record.queries) || record.queries.length === 0) {
+    errors.push("word.queries must be a non-empty array");
+    return errors;
+  }
+  const seen = new Set<string>();
+  for (const query of record.queries) {
+    if (typeof query !== "string" || !FOLDED_QUERY.test(query)) {
+      errors.push(
+        `word query ${JSON.stringify(query)} must be lowercase, accent-free words`
+      );
+    } else if (seen.has(query)) {
+      errors.push(`word query "${query}" is listed twice`);
+    }
+    seen.add(query as string);
+  }
+  return errors;
+}
+
 export interface LedgerFile {
   filePath: string;
   entry: unknown;
@@ -327,6 +371,7 @@ export function validateLedger(
 ): LedgerValidationResult {
   const errorsByFile = new Map<string, string[]>();
   const campaignSeenAt = new Map<string, string>();
+  const queryFoundBy = new Map<string, string>();
   const episodesByTypologie = new Map<Typologie, Map<number, string>>();
 
   for (const { filePath, entry } of files) {
@@ -343,6 +388,19 @@ export function validateLedger(
         errors.push(`campaign "${campaign}" is also used by ${seenAt}`);
       } else {
         campaignSeenAt.set(campaign, filePath);
+      }
+    }
+
+    const queries = (record.word as { queries?: unknown } | undefined)?.queries;
+    if (Array.isArray(queries)) {
+      for (const query of queries) {
+        if (typeof query !== "string") continue;
+        const foundBy = queryFoundBy.get(query);
+        if (foundBy && foundBy !== filePath) {
+          errors.push(`query "${query}" already finds ${foundBy}`);
+        } else {
+          queryFoundBy.set(query, filePath);
+        }
       }
     }
 
@@ -446,6 +504,11 @@ function validMotEntry(): LedgerEntry {
 
 type Fixture = [string, unknown, boolean];
 
+const zombieWord = {
+  label: { fr: "zombie", en: "zombie" },
+  queries: ["zombie", "zombi", "nzumbi"],
+};
+
 const introductionFixture = {
   campaign: "comprendre-afrique-noms",
   typologie: "introduction",
@@ -458,6 +521,42 @@ const introductionFixture = {
 };
 
 const FIXTURES: Fixture[] = [
+  [
+    "a word piece names the word it answers to and the queries that find it",
+    { ...validMotEntry(), word: zombieWord },
+    false,
+  ],
+  [
+    "a word without its label",
+    { ...validMotEntry(), word: { queries: ["zombie"] } },
+    true,
+  ],
+  [
+    "a word with no query",
+    { ...validMotEntry(), word: { ...zombieWord, queries: [] } },
+    true,
+  ],
+  [
+    "a query that is not already lowercase and accent-free",
+    { ...validMotEntry(), word: { ...zombieWord, queries: ["Zombie"] } },
+    true,
+  ],
+  [
+    "a query with an accent, which the search folds away before it compares",
+    {
+      ...validMotEntry(),
+      word: { ...zombieWord, queries: ["afrique", "mandé"] },
+    },
+    true,
+  ],
+  [
+    "the same query twice in one word",
+    {
+      ...validMotEntry(),
+      word: { ...zombieWord, queries: ["zombie", "zombie"] },
+    },
+    true,
+  ],
   [
     "an unnumbered introduction without an invented myth",
     introductionFixture,
@@ -704,6 +803,34 @@ function selftestEntries(): number {
     )
   ) {
     failures.push("  duplicate introduction campaigns must still fail");
+  }
+
+  const sharedQuery = validateLedger(
+    [
+      {
+        filePath: "a.json",
+        entry: { ...validMotEntry(), campaign: "a", word: zombieWord },
+      },
+      {
+        filePath: "b.json",
+        entry: {
+          ...validMotEntry(),
+          campaign: "b",
+          episode: 2,
+          word: { label: { fr: "zombi" }, queries: ["zombi"] },
+        },
+      },
+    ],
+    STUB_DEPS
+  );
+  if (
+    !(sharedQuery.errorsByFile.get("b.json") ?? []).some((e) =>
+      e.includes("query")
+    )
+  ) {
+    failures.push(
+      "  a query that already finds another production should have failed the later file"
+    );
   }
 
   const episodeHole = validateLedger(

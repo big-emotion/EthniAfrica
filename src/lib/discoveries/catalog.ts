@@ -35,6 +35,11 @@ export interface DiscoveryPublication {
       label: Record<Language, string>;
     }>;
     sources: Array<{ title: string; url: string }>;
+    /**
+     * A production about a word that is not a corpus entity (« zombie »): it
+     * has no subject, and what finds it is the queries filed for it.
+     */
+    word?: { queries: readonly string[] };
   };
   /** A proverb's words in the language that says them, as its source prints them. */
   original?: { text: string; lang: string };
@@ -205,7 +210,7 @@ function hasPublishableVisual(entry: DiscoveryPublication): boolean {
     const { video } = entry;
     return Boolean(
       video &&
-      entry.detail?.entities.length &&
+      (entry.detail?.entities.length || entry.detail?.word?.queries.length) &&
       hasText(video.name.fr) &&
       hasText(video.name.en) &&
       entry.title.fr === formatProductionNameQuestion(video.name.fr, "fr") &&

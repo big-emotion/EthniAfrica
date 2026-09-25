@@ -170,12 +170,25 @@ describe("OpenAPI v2 search companions contract", () => {
       ],
     };
 
+    // Only a short can be found by a word, so it alone may carry the word match.
+    const entityMatch = { $ref: "#/components/schemas/SearchCompanionMatch" };
+    const wordMatch = { $ref: "#/components/schemas/SearchCompanionWordMatch" };
     for (const [name, required] of Object.entries(requiredFields)) {
       expect(schemas[name]?.required, `${name}.required`).toEqual(required);
-      expect(schemas[name]?.properties?.match, `${name}.match`).toEqual({
-        $ref: "#/components/schemas/SearchCompanionMatch",
-      });
+      expect(schemas[name]?.properties?.match, `${name}.match`).toEqual(
+        name === "SearchCompanionShort"
+          ? { oneOf: [entityMatch, wordMatch] }
+          : entityMatch
+      );
     }
+  });
+
+  // @req REQ-180
+  it("documents the word match by the word itself, with no entity", () => {
+    expect(schemas.SearchCompanionWordMatch).toMatchObject({
+      required: ["relation", "word"],
+      properties: { relation: { enum: ["word"] } },
+    });
   });
 
   // @req REQ-180

@@ -49,7 +49,8 @@ export function toDiscoveryPublication(
   entry: LedgerEntry
 ): DiscoveryPublication[] {
   const subject = entry.subjects[0];
-  if (!subject || !isKnownKind(subject.kind)) return [];
+  const word = entry.word;
+  if (subject ? !isKnownKind(subject.kind) : !word) return [];
 
   const entities = entry.subjects.flatMap((candidate) =>
     isKnownKind(candidate.kind)
@@ -75,9 +76,10 @@ export function toDiscoveryPublication(
     videoRows.find((row) => row.network === "youtube") ?? videoRows[0];
   const youtubeId = videoRow?.url?.match(YOUTUBE_VIDEO_ID)?.[1];
 
+  const titled = subject ? subject.label : word!.label;
   const name: Record<Language, string> = {
-    fr: subject.label.fr,
-    en: subject.label.en ?? subject.label.fr,
+    fr: titled.fr,
+    en: titled.en ?? titled.fr,
   };
 
   return [
@@ -113,6 +115,7 @@ export function toDiscoveryPublication(
           title,
           url,
         })),
+        ...(word ? { word: { queries: word.queries } } : {}),
       },
       video: {
         name,

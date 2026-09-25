@@ -1423,6 +1423,7 @@ describe("RecherchePageContent feed orchestration", () => {
     expect(Object.fromEntries(requested.searchParams)).toEqual({
       subjects: "people:PPL_ZULU",
       lang: "fr",
+      word: "Zulu",
     });
     expect(document.querySelector("[data-feed-root]")).not.toBeNull();
   });
@@ -1436,7 +1437,10 @@ describe("RecherchePageContent feed orchestration", () => {
       String(mockCompanionFetch.mock.calls[0][0]),
       "http://localhost"
     );
-    expect(Object.fromEntries(requested.searchParams)).toEqual({ lang: "fr" });
+    expect(Object.fromEntries(requested.searchParams)).toEqual({
+      lang: "fr",
+      word: "xyzzy",
+    });
     expect(screen.getByTestId("feed-block-verdict")).toBeInTheDocument();
     expect(screen.getByTestId("feed-block-owed")).toBeInTheDocument();
     expect(screen.getByTestId("feed-block-further")).toBeInTheDocument();
@@ -1470,7 +1474,10 @@ describe("RecherchePageContent feed orchestration", () => {
       String(mockCompanionFetch.mock.calls[0][0]),
       "http://localhost"
     );
-    expect(Object.fromEntries(requested.searchParams)).toEqual({ lang: "fr" });
+    expect(Object.fromEntries(requested.searchParams)).toEqual({
+      lang: "fr",
+      word: "Maurice Delafosse",
+    });
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
       "Maurice Delafosse"
     );

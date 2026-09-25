@@ -41,6 +41,7 @@ function toSearchShort(entry: LedgerEntry): DiscoveryVideoRecord[] {
           ...subject,
           label: subject.label ?? video.name,
         })),
+        ...(detail.word ? { word: detail.word } : {}),
       },
     ];
   });

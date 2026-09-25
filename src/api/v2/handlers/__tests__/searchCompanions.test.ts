@@ -232,6 +232,66 @@ describe("search companions handler", () => {
     }
   );
 
+  // A word has no entity to point at: the match carries the word itself, and
+  // the piece still leads to its own Découvertes entry.
+  // @req REQ-180
+  it("projects a production found by a word, with the word as its match", async () => {
+    const wordMatch = { relation: "word" as const, word: "zombie" };
+    vi.mocked(getSearchCompanionSelections).mockResolvedValue({
+      subjects: [],
+      targets: [],
+      shorts: {
+        count: 1,
+        items: [
+          {
+            item: {
+              id: "video:zombie",
+              publishedAt: "2026-09-12",
+              subjects: [],
+              video: {
+                id: "video:zombie",
+                status: "published",
+                slug: { fr: "zombie", en: "zombie" },
+                name: { fr: "zombie", en: "zombie" },
+                description: { fr: "Une question.", en: "A question." },
+                publishedAt: "2026-09-12",
+                durationSeconds: 65,
+                poster: { src: "/posters/z.jpg", width: 540, height: 960 },
+                watchUrl: "https://www.youtube.com/shorts/abcdefghijk",
+                source: {
+                  title: "Source",
+                  url: "https://example.org/source",
+                  tier: "referenced",
+                },
+                subjects: [],
+                word: { queries: ["zombie"] },
+              },
+            },
+            match: wordMatch,
+          },
+        ],
+      },
+      anecdotes: { count: 0, items: [] },
+      proverbs: { count: 0, items: [] },
+      images: { count: 0, items: [] },
+      quiz: { count: 0, items: [] },
+    } as never);
+
+    const envelope = await getSearchCompanionsHandler({
+      lang: "fr",
+      subjects: [],
+      word: "zombie",
+    });
+
+    expect(envelope.data.shorts.items[0]).toMatchObject({
+      id: "video:zombie",
+      match: wordMatch,
+    });
+    expect(envelope.data.shorts.items[0].href).toBe(
+      `${getLocalizedRoute("fr", "discoveries")}/zombie`
+    );
+  });
+
   // @req REQ-180
   it("preserves a successful empty response", async () => {
     vi.mocked(getSearchCompanionSelections).mockResolvedValue({

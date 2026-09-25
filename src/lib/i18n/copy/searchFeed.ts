@@ -36,6 +36,7 @@ export interface SearchFeedCopy {
     linkedPeople: string;
     linkedCountry: string;
     recent: string;
+    word: string;
   };
   emptyShort: {
     body: string;
@@ -125,6 +126,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       linkedPeople: "Related people",
       linkedCountry: "Same country",
       recent: "Recently added",
+      word: "About this word",
     },
     emptyShort: {
       body: "No source we have read answers this question yet.",
@@ -216,6 +218,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       linkedPeople: "Peuple lié",
       linkedCountry: "Même pays",
       recent: "Récemment ajouté",
+      word: "Sur ce mot",
     },
     emptyShort: {
       body: "Aucune source que nous avons lue ne répond encore à cette question.",

@@ -25,6 +25,7 @@ vi.mock("@/lib/search/companionCatalogs", async (importOriginal) => {
     proverbsForTargets: vi.fn(),
     quizForTargets: vi.fn(),
     shortsForTargets: vi.fn(),
+    shortsForWord: vi.fn(),
   };
 });
 
@@ -34,6 +35,7 @@ import {
   proverbsForTargets,
   quizForTargets,
   shortsForTargets,
+  shortsForWord,
 } from "@/lib/search/companionCatalogs";
 import { loadSearchCompanionQuizCandidates } from "@/lib/supabase/queries/afrik/searchCompanionQuiz";
 import { loadSearchCompanionRelations } from "@/lib/supabase/queries/afrik/searchCompanionRelations";
@@ -45,6 +47,7 @@ describe("search companions service", () => {
   beforeEach(() => {
     vi.clearAllMocks();
     vi.mocked(shortsForTargets).mockReturnValue(emptySelection);
+    vi.mocked(shortsForWord).mockReturnValue(emptySelection);
     vi.mocked(anecdotesForTargets).mockReturnValue(emptySelection);
     vi.mocked(proverbsForTargets).mockReturnValue(emptySelection);
     vi.mocked(imagesForTargets).mockReturnValue(emptySelection);
@@ -113,6 +116,56 @@ describe("search companions service", () => {
       images: emptySelection,
       quiz: emptySelection,
     });
+  });
+
+  // A word piece answers the reader's own word, so it leads; an entity piece
+  // that is also found by the word is shown once, as the word's.
+  // @req REQ-180
+  it("puts the pieces found by the word first and shows each piece once", async () => {
+    vi.mocked(loadSearchCompanionRelations).mockResolvedValue(new Map());
+    const wordItem = (id: string) => ({
+      item: { id, subjects: [] },
+      match: { relation: "word" as const, word: "bantou" },
+    });
+    const entityItem = (id: string) => ({
+      item: { id, subjects: [] },
+      match: {
+        relation: "exact" as const,
+        entityType: "languageFamily" as const,
+        entityId: "FLG_BANTU",
+      },
+    });
+    vi.mocked(shortsForWord).mockReturnValue({
+      count: 1,
+      items: [wordItem("shared")],
+    } as never);
+    vi.mocked(shortsForTargets).mockReturnValue({
+      count: 2,
+      items: [entityItem("shared"), entityItem("entity-only")],
+    } as never);
+
+    const result = await getSearchCompanionSelections({
+      lang: "fr",
+      subjects: [],
+      word: "bantou",
+    });
+
+    expect(shortsForWord).toHaveBeenCalledWith("bantou");
+    expect(result.shorts.items.map(({ item }) => item.id)).toEqual([
+      "shared",
+      "entity-only",
+    ]);
+    expect(result.shorts.items[0].match.relation).toBe("word");
+    expect(result.shorts.count).toBe(2);
+  });
+
+  // @req REQ-180
+  it("does not look for a word the reader did not type", async () => {
+    vi.mocked(loadSearchCompanionRelations).mockResolvedValue(new Map());
+
+    await getSearchCompanionSelections({ lang: "fr", subjects: [] });
+
+    expect(shortsForWord).not.toHaveBeenCalled();
   });
 
   // @req REQ-180

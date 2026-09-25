@@ -41,6 +41,8 @@ export interface DiscoveryVideoRecord {
     tier: SourceTier;
   };
   subjects: readonly DiscoveryVideoSubject[];
+  /** Set for a production about a word that is not an entity; see `DiscoveryPublication`. */
+  word?: { queries: readonly string[] };
   transcript?: Partial<Record<Language, string>>;
 }
 
@@ -124,6 +126,7 @@ export function videoPublications(
       },
       entities: record.subjects.map((subject) => ({ ...subject })),
       sources: [{ title: record.source.title, url: record.source.url }],
+      ...(record.word ? { word: record.word } : {}),
     },
     video: {
       name: record.name,

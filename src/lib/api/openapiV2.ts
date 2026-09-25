@@ -1055,6 +1055,16 @@ const options: swaggerJsdoc.Options = {
           },
           required: ["entityType", "entityId"],
         },
+        SearchCompanionWordMatch: {
+          type: "object",
+          description:
+            "A short found by the word the reader typed, not by an entity: there is no subject to name, so the match carries the word itself, lowercased and without accents.",
+          properties: {
+            relation: { type: "string", enum: ["word"] },
+            word: { type: "string", minLength: 1, example: "zombie" },
+          },
+          required: ["relation", "word"],
+        },
         SearchCompanionMatch: {
           type: "object",
           description:
@@ -1139,7 +1149,12 @@ const options: swaggerJsdoc.Options = {
             watchUrl: { type: "string", format: "uri" },
             poster: { $ref: "#/components/schemas/SearchCompanionPoster" },
             source: { $ref: "#/components/schemas/SearchCompanionSource" },
-            match: { $ref: "#/components/schemas/SearchCompanionMatch" },
+            match: {
+              oneOf: [
+                { $ref: "#/components/schemas/SearchCompanionMatch" },
+                { $ref: "#/components/schemas/SearchCompanionWordMatch" },
+              ],
+            },
           },
           required: [
             "id",

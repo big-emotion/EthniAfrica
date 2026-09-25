@@ -46,6 +46,13 @@ export interface NameAnswerCopy {
   unknownName: string;
   unknownNameBody: string;
   /**
+   * Said instead of the confession when no entity answers to the word but we
+   * made a piece on it: the confession would be a claim about what we hold that
+   * the piece next to it contradicts.
+   */
+  wordName: string;
+  wordNameBody: string;
+  /**
    * The near-miss case, which the boards keep separate from the confession: a
    * search whose spelling missed is not a name the atlas lacks, and saying so
    * spares the reader a confession that is not owed to them.
@@ -93,6 +100,10 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     unknownName: "We do not know this name.",
     unknownNameBody:
       "That is not an answer: it is a confession. If this name is yours, or one of a people, a language or a place you know, tell us. That is how our project grows.",
+    wordName:
+      "We have no page for this name, but we have a video on where it comes from.",
+    wordNameBody:
+      "It is below. If you know a source on this word, tell us. That is how our project grows.",
     noExactMatch: "No exact result for",
     searchUnavailable:
       "Search is temporarily unavailable. Try again in a moment.",
@@ -130,6 +141,10 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     unknownName: "Nous ne connaissons pas ce nom.",
     unknownNameBody:
       "Ce n’est pas une réponse : c’est un aveu. Si ce nom est le vôtre, ou celui d’un peuple, d’une langue ou d’un lieu que vous connaissez, dites-le-nous. C’est comme ça que notre projet grandit.",
+    wordName:
+      "Nous n’avons pas de fiche pour ce nom, mais nous avons une vidéo sur son origine.",
+    wordNameBody:
+      "Elle est ci-dessous. Si vous connaissez une source sur ce mot, dites-le-nous. C’est comme ça que notre projet grandit.",
     noExactMatch: "Aucun résultat exact pour",
     searchUnavailable:
       "La recherche est momentanément indisponible. Réessayez dans un instant.",

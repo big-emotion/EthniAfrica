@@ -162,6 +162,54 @@ describe("toDiscoveryPublication", () => {
     expect(publication.video?.credit).toBeUndefined();
   });
 
+  // A piece on a word that is not a corpus entity is titled by the word it
+  // answers to and is found by the queries the ledger files for it.
+  // @req REQ-184
+  it("projects a word piece with no subject, titled by its word", () => {
+    const word = {
+      label: { fr: "zombie", en: "zombie" },
+      queries: ["zombie", "zombi"],
+    };
+    const [publication] = toDiscoveryPublication(
+      entry({
+        typologie: "mot",
+        subjects: [],
+        word,
+        durationSeconds: 65,
+        poster: {
+          src: "/images/discoveries/videos/z.jpg",
+          width: 540,
+          height: 960,
+        },
+        publications: [
+          {
+            network: "youtube",
+            format: "video",
+            url: "https://www.youtube.com/shorts/abcdefghijk",
+            publishedAt: "2026-09-12",
+          },
+        ],
+        sources: [
+          { title: "Source", url: "https://example.org/s", tier: "referenced" },
+        ],
+      })
+    );
+
+    expect(publication.title.fr).toBe(
+      formatProductionNameQuestion("zombie", "fr")
+    );
+    expect(publication.detail?.entities).toEqual([]);
+    expect(publication.detail?.word?.queries).toEqual(["zombie", "zombi"]);
+    expect(eligiblePublications([publication])).toHaveLength(1);
+  });
+
+  // @req REQ-184
+  it("still projects nothing when there is neither a subject nor a word", () => {
+    expect(
+      toDiscoveryPublication(entry({ typologie: "mot", subjects: [] }))
+    ).toEqual([]);
+  });
+
   // @req REQ-184
   it("never invents a source: an entry with none carries none", () => {
     const [publication] = toDiscoveryPublication(entry({ sources: undefined }));

@@ -10,6 +10,10 @@
   },
   "subjects": [],
   "sitePath": "/fr/about",
+  "word": {
+    "label": { "fr": "Mami Wata", "en": "Mami Wata" },
+    "queries": ["mami wata", "mamiwata"]
+  },
   "publications": [
     {
       "network": "tiktok",
@@ -22,6 +26,19 @@
       "format": "video",
       "url": "https://www.youtube.com/shorts/-M7cqgteHj0",
       "publishedAt": "2026-09-12"
+    }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/mami-wata-nom-anglais.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 63,
+  "sources": [
+    {
+      "title": "Alex van Stipriaan, « Watramama/Mami Wata: Three Centuries of Creolization of a Water Spirit in West Africa, Suriname and Europe », Matatu 27–28, 2003",
+      "url": "https://brill.com/abstract/journals/mata/27/1/article-p321_321.xml",
+      "tier": "referenced"
     }
   ]
 }

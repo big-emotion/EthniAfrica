@@ -19,6 +19,7 @@ import {
   searchShortPosterAlt,
   searchShortDiscoveryPublication,
   shortsForTargets,
+  shortsForWord,
   type SearchShort,
 } from "../companionCatalogs";
 import type { CompanionMatch, CompanionSubject } from "../companionRelations";
@@ -341,5 +342,57 @@ describe("search companion catalogs", () => {
 
     expect(selection.count).toBe(2);
     expect(selection.items.map(({ item }) => item.id)).toEqual(["easy-b"]);
+  });
+});
+
+describe("shortsForWord", () => {
+  const zombie = short("zombie", {
+    subjects: [],
+    word: { queries: ["zombie", "mami wata"] },
+  });
+
+  // A word is not an entity: the query itself, folded the way the search folds
+  // every name, is what finds the piece.
+  // @req REQ-180
+  it.each(["zombie", "  Zombie ", "ZOMBIE?", "mami-wata", "Mami  Wata"])(
+    "finds the piece for %j",
+    (query) => {
+      const selection = shortsForWord(query, [zombie]);
+
+      expect(selection.count).toBe(1);
+      expect(selection.items[0].item.id).toBe("zombie");
+      expect(selection.items[0].match.relation).toBe("word");
+    }
+  );
+
+  // @req REQ-180
+  it("returns the query as the reader's word folded, so the page can name it", () => {
+    const [{ match }] = shortsForWord("Mami-Wata", [zombie]).items;
+
+    expect(match).toEqual({ relation: "word", word: "mami wata" });
+  });
+
+  // @req REQ-180
+  it.each(["", "   ", "zomb", "zombies", "kongo"])(
+    "finds nothing for %j: a word matches whole, never by prefix",
+    (query) => {
+      expect(shortsForWord(query, [zombie]).items).toEqual([]);
+    }
+  );
+
+  // @req REQ-180
+  it("drops a piece that is not eligible, like every other short", () => {
+    const incomplete = short("zombie", {
+      subjects: [],
+      word: { queries: ["zombie"] },
+      poster: { src: "", width: 0, height: 0 },
+    });
+
+    expect(shortsForWord("zombie", [incomplete]).items).toEqual([]);
+  });
+
+  // @req REQ-180
+  it("does not find an entity piece by its word", () => {
+    expect(shortsForWord("test", [short("entity-only")]).items).toEqual([]);
   });
 });

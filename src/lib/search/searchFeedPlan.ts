@@ -150,7 +150,10 @@ export function classifySearchFeed({
     return "widened";
   }
   if (search.results.length === 0) {
-    return search.leads.length > 0 ? "typo" : "unknown";
+    const foundByWord = companions.shorts.items.some(
+      ({ match }) => match.relation === "word"
+    );
+    return search.leads.length > 0 && !foundByWord ? "typo" : "unknown";
   }
 
   const relations = companionRelations(companions);

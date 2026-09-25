@@ -83,6 +83,86 @@ describe("SearchFeed", () => {
     ).toBeInTheDocument();
   });
 
+  // No entity answers to « zombie », but we made a piece on the word. The page
+  // cannot admit it does not know the name while showing that piece: it says
+  // what it has, keeps the closing it always owes, and leaves out the empty
+  // slot that exists for names nobody has told yet.
+  // @req REQ-180
+  it("answers a word we have a piece on with what we hold, not with the confession", () => {
+    const inconnu = fixture("inconnu");
+    const [recent] = inconnu.production.companions.shorts.items;
+    const companions: SearchCompanionsData = {
+      ...inconnu.production.companions,
+      shorts: {
+        count: 1,
+        items: [
+          {
+            ...recent,
+            name: "zombie",
+            match: { relation: "word", word: "zombie" },
+          },
+        ],
+      },
+    };
+    const { container } = render(
+      <SearchFeed
+        query="zombie"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={companions}
+      />
+    );
+
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "zombie"
+    );
+    expect(screen.queryByText("Nous ne connaissons pas ce nom.")).toBeNull();
+    expect(
+      screen.getByText(
+        "Nous n’avons pas de fiche pour ce nom, mais nous avons une vidéo sur son origine."
+      )
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText("D’où vient le nom « zombie » ?")
+    ).toBeInTheDocument();
+    expect(screen.queryByText("Pas encore de short")).toBeNull();
+    expect(
+      container.querySelector('[data-companion-relation="word"]')
+    ).toBeNull();
+    expect(
+      container.querySelector("[data-feed-part='conviction']")
+    ).not.toBeNull();
+    expect(
+      container.querySelector("[data-feed-part='invitation']")
+    ).not.toBeNull();
+  });
+
+  // @req REQ-180
+  it("keeps the confession for a name no piece answers", () => {
+    const inconnu = fixture("inconnu");
+    render(
+      <SearchFeed
+        query="kossiwa"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={inconnu.production.companions}
+      />
+    );
+
+    expect(
+      screen.getByText("Nous ne connaissons pas ce nom.")
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByText(/nous avons une vidéo sur son origine/)
+    ).toBeNull();
+  });
+
   // @req REQ-180
   it("filters shelves in place without mutating the naming answer", async () => {
     const value = fixture("mande");
