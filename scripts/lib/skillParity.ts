@@ -33,6 +33,25 @@ const RESOURCE_PREFIXES = [
   "assets/",
 ];
 
+/**
+ * The skills are enumerated from disk rather than named in each script: two
+ * hard-coded lists of four covered 4 of 23 skills, so nineteen of them reached
+ * Codex through no link and were checked by no gate.
+ */
+export function listCanonicalSkills(projectRoot: string): string[] {
+  const skillsRoot = join(projectRoot, CANONICAL_SKILLS_DIR);
+  if (!existsSync(skillsRoot)) return [];
+
+  return readdirSync(skillsRoot, { withFileTypes: true })
+    .filter(
+      (entry) =>
+        entry.isDirectory() &&
+        existsSync(join(skillsRoot, entry.name, "SKILL.md"))
+    )
+    .map((entry) => entry.name)
+    .sort();
+}
+
 export interface SkillManifest {
   label: string;
   exists: boolean;

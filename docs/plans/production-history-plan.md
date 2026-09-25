@@ -292,11 +292,11 @@ wiring, and whether it renders as self-hosted images or an embed, is
 line. Until that brief lands, projected carousel records simply exist and are
 unused, which is a safe, inert state — nothing reads them, nothing breaks.
 
-`social/tools/link-builder/productions.mjs`'s twenty entries and
-`docs/tasks/discoveries-social-inventory.md`'s prose audit are both superseded
+`social/tools/link-builder/productions.mjs`'s twenty entries are superseded
 for any subject that has a `docs/productions/**/*.json` file: `sitePath`
-replaces `path`, and the ledger replaces the inventory as the up-to-date list.
-Do not delete either file in this pass — `productions.mjs` is still read by
+replaces `path`, and the ledger replaces the former prose inventory of
+published videos (since deleted) as the up-to-date list.
+Do not delete `productions.mjs` in this pass — it is still read by
 `check-anchors.mjs` and `seed-productions.mjs`, and retiring it is a separate,
 mechanical change once every one of its twenty subjects has a ledger file
 (track this as a rollout follow-up, not blocking).

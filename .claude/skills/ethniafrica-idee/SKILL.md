@@ -200,7 +200,7 @@ pressenties » reste ce qu'elle est — des pressentiments, pas des vérificatio
 - **Un sujet centré sur qui a nommé un pays nomme ses acteurs.** Explorateurs,
   négociants, traités, ce qui en reste en toponymie : ils vivent dans le champ
   « qui l'a donnée » de chaque fiche du gabarit du carrousel
-  (`ethniafrica-structure`, `references/gabarit-carrousel-nom.md`). Décidé le
+  (`ethniafrica-structure`, `.claude/skills/ethniafrica-structure/references/gabarit-carrousel-nom.md`). Décidé le
   2026-09-14 après un premier passage sur « qui-a-nomme-la-cote-divoire » qui
   avait ouvert sur le compte de peuples et laissé les acteurs de côté : l'opérateur
   a jugé la pièce vide de sens. La table par type de contenu de §7 ter et son

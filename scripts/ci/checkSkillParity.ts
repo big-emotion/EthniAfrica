@@ -16,22 +16,16 @@ import {
   CANONICAL_SKILLS_DIR,
   MIRROR_SKILLS_DIR,
   compareSkillManifests,
+  listCanonicalSkills,
   readSkillManifest,
 } from "../lib/skillParity";
-
-const CHECKED_SKILLS = [
-  "afrik-curator",
-  "ethniafrica-structure",
-  "ethniafrica-produire",
-  "ethniafrica-production",
-];
 
 function main(): void {
   const projectRoot = resolve(import.meta.dirname, "../..");
   const requireMirror = process.argv.includes("--require-mirror");
   let failures = 0;
 
-  for (const skill of CHECKED_SKILLS) {
+  for (const skill of listCanonicalSkills(projectRoot)) {
     const canonical = readSkillManifest(
       projectRoot,
       CANONICAL_SKILLS_DIR,

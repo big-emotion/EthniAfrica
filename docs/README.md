@@ -122,7 +122,6 @@ were referenced by nothing at all, two of them written that same week.
 
 ## Plans
 
-- [Congo history dossiers: implementation plan](plans/congo-history-dossiers.md)
 - [Playing the productions on the site — analysis brief](plans/embedded-media-brief.md)
 - [Playing the productions on the site — decision](plans/embedded-media-decision.md)
 - [The publishing format, and a production history the site can read — brief](plans/production-history-brief.md)
@@ -138,7 +137,4 @@ were referenced by nothing at all, two of them written that same week.
 - [Language alternate names — the pass of 18 September 2026](data-audits/language-alternate-names-2026-09-18.md)
 - [Language-tier catalog audit against Glottolog 5.3](data-audits/language-tier-audit-glottolog-5.3.md)
 - [The production history and its cadence](productions/README.md)
-- [Reset inventory — every configuration, documentation and rule file](reset-inventory-2026-09-17.md)
-- [Découvertes source-bank inventory](tasks/discoveries-content-inventory.md)
 - [Découvertes implementation tracker](tasks/discoveries-implementation.md)
-- [Découvertes social-library inventory](tasks/discoveries-social-inventory.md)
