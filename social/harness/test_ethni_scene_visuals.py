@@ -3,9 +3,11 @@ import copy
 import unittest
 from unittest.mock import patch
 
-from PIL import ImageChops
+import numpy
+from PIL import Image, ImageChops, ImageDraw
 
 import test_ethni_scenes as fixtures
+from ethni_map import smooth
 from ethni_scene_plan import validate_plan
 from ethni_scene_render import SceneRenderer
 
@@ -488,6 +490,50 @@ class VisualExtensionTests(unittest.TestCase):
             else: self.plan["scenes"][0]["title"] = "A heading that cannot fit beside a note"
             with self.subTest(target=target), self.assertRaisesRegex(ValueError, "overflow"):
                 SceneRenderer(self.plan, self.root, []).preflight()
+
+
+class ImageMotionSmoothnessTests(unittest.TestCase):
+    """A slow push-in or pan must not stair-step: sub-pixel motion, not integer rounding."""
+    setUp = fixtures.ScenePlanTests.setUp
+
+    def blob_renderer(self, motion, size=(1600, 1600)):
+        blob = Image.new("L", size, 0)
+        cx, cy = size[0] // 2, size[1] // 2
+        ImageDraw.Draw(blob).ellipse((cx - 40, cy - 40, cx + 40, cy + 40), fill=255)
+        renderer = SceneRenderer(self.plan, self.root, [])
+        renderer.assets["photo"] = blob.filter(__import__("PIL.ImageFilter", fromlist=["x"]).GaussianBlur(18)).convert("RGB")
+        scene = copy.deepcopy(self.plan["scenes"][1])
+        scene["image"]["motion"] = motion
+        return renderer, scene
+
+    @staticmethod
+    def centroid(frame):
+        grey = numpy.asarray(frame.convert("L"), dtype=float)
+        total = grey.sum()
+        ys, xs = numpy.indices(grey.shape)
+        return (xs * grey).sum() / total, (ys * grey).sum() / total
+
+    def track(self, motion):
+        renderer, scene = self.blob_renderer(motion)
+        duration = scene["end"] - scene["start"]
+        return [self.centroid(renderer._image(scene, i / 25)) for i in range(int(duration * 25))]
+
+    def test_a_feature_at_the_zoom_centre_does_not_wobble(self):
+        points = self.track({"from": [1, .5, .5], "to": [1.05, .5, .5]})
+        xs = numpy.array([p[0] for p in points])
+        ys = numpy.array([p[1] for p in points])
+        self.assertLess(numpy.ptp(xs), .2)
+        self.assertLess(numpy.ptp(ys), .2)
+
+    def test_a_slow_pan_advances_without_stair_steps(self):
+        # The square photo fits the window's width, so the pan runs vertically (window 690 px,
+        # photo scaled to 990 px). Rounding to whole pixels strayed by up to half a pixel from
+        # the eased path; the fractional window stays within a tenth.
+        points = self.track({"from": [1, .5, .45], "to": [1, .5, .55]})
+        measured = numpy.array([p[1] for p in points])
+        ideal = numpy.array([-(990 - 690) * (.45 + .1 * smooth(i / 25 / 5)) for i in range(len(points))])
+        deviation = (measured - measured[0]) - (ideal - ideal[0])
+        self.assertLess(numpy.abs(deviation).max(), .1)
 
 
 if __name__ == "__main__":

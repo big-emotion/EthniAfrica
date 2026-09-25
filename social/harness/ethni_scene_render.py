@@ -5,10 +5,12 @@ import math
 from PIL import Image, ImageColor, ImageDraw, ImageOps, ImageFilter
 
 import ethni_tokens as tokens
+from ethni_montage import MINIATURE_S
 from ethni_type import font
 from ethni_map import Camera, camera_at, mix, partial_path, smooth
 from ethni_scene_plan import STATUS, asset_path, scene_at, transition_at, require
 from ethni_scene_timeline import draw_timeline
+import ethni_scene_fullbleed as fullbleed
 
 
 def scene_map(scene):
@@ -40,6 +42,7 @@ class SceneRenderer:
         self.plan, self.root, self.captions = plan, root, captions
         self.reduced_motion = reduced_motion
         self.proof = proof
+        self._base_cache = {}
         self.palette = tokens.palette()
         self.duration = plan["scenes"][-1]["end"]
         self.assets = {}
@@ -77,35 +80,65 @@ class SceneRenderer:
             draw.text((x, y+index*step), line, font=face, fill=colour or self.palette["white"], anchor="lt")
         return len(lines)*step
 
-    def _image(self, scene, local):
+    def _backdrop(self, asset, w, h):
+        """A dimmed, blurred cover of the photo itself, so a photo that cannot fill the frame
+        without exceeding the enlargement ceiling never leaves empty bands around it."""
+        key = ("backdrop", asset, w, h)
+        if key not in self._base_cache:
+            source = self.assets[asset]
+            scale = max(w/source.width, h/source.height)
+            cover = source.resize((max(w, round(source.width*scale)), max(h, round(source.height*scale))),
+                                  Image.Resampling.BILINEAR)
+            left, top = (cover.width-w)//2, (cover.height-h)//2
+            blurred = cover.crop((left, top, left+w, top+h)).filter(ImageFilter.GaussianBlur(32))
+            dark = Image.new("RGB", (w, h), self.palette["ground"])
+            self._base_cache[key] = Image.blend(blurred, dark, .45)
+        return self._base_cache[key]
+
+    def _image(self, scene, local, size=None):
         value = scene["image"]
         source = self.assets[value["asset"]]
         x0, y0, x1, y1 = self.content
-        w, h = x1-x0, y1-y0
+        w, h = size or (x1-x0, y1-y0)
         motion = value.get("motion", {"from": [1, .5, .5], "to": [1, .5, .5]})
         progress = 0 if self.reduced_motion else smooth(local/(scene["end"]-scene["start"]))
         zoom, fx, fy = [a+(b-a)*progress for a, b in zip(motion["from"], motion["to"])]
-        scale = (min if value["fit"] == "contain" else max)(w/source.width, h/source.height)*zoom
+        fit_scale = (min if value["fit"] == "contain" else max)(w/source.width, h/source.height)
+        scale = fit_scale*zoom
         require(scale <= tokens.SUR_ECH_MAX, "Image enlargement exceeds the charter ceiling")
-        resized = source.resize((round(source.width*scale), round(source.height*scale)), Image.Resampling.LANCZOS)
-        out = Image.new("RGB", (w, h), self.palette["ground"])
         if value["fit"] == "contain":
+            resized = source.resize((round(source.width*scale), round(source.height*scale)), Image.Resampling.LANCZOS)
+            out = self._backdrop(value["asset"], w, h).copy() if size else Image.new("RGB", (w, h), self.palette["ground"])
             out.paste(resized, ((w-resized.width)//2, (h-resized.height)//2))
-        else:
-            left = round((resized.width-w)*fx)
-            top = round((resized.height-h)*fy)
-            out = resized.crop((left, top, left+w, top+h))
-        return out
+            return out
+        # Rounding the resized size and the crop offset to whole pixels on every frame made a
+        # slow push-in stair-step by up to a pixel, and Image.transform's bicubic still advanced
+        # unevenly. Resize once per scene at its largest zoom, then resample the frame window
+        # from a fractional source box, which is what gives a true sub-pixel filter.
+        largest = fit_scale*max(motion["from"][0], motion["to"][0])
+        base = self._base_resize(value["asset"], largest)
+        bx, by = base.width/(source.width*scale), base.height/(source.height*scale)
+        left, top = (source.width*scale-w)*fx, (source.height*scale-h)*fy
+        return base.resize((w, h), Image.Resampling.LANCZOS,
+                           box=(left*bx, top*by, (left+w)*bx, (top+h)*by))
 
-    def _map(self, scene, local, viewport=None):
+    def _base_resize(self, asset, scale):
+        key = (asset, round(scale, 6))
+        if key not in self._base_cache:
+            source = self.assets[asset]
+            self._base_cache[key] = source.resize(
+                (round(source.width*scale), round(source.height*scale)), Image.Resampling.LANCZOS)
+        return self._base_cache[key]
+
+    def _map(self, scene, local, viewport=None, palette=None):
         cfg = scene["map"]
         x0, y0, x1, y1 = viewport or self.content
         w, h = x1-x0, y1-y0
-        canvas = Image.new("RGB", (w, h), self.palette["ground"])
+        p = palette or self.palette
+        canvas = Image.new("RGB", (w, h), p["ground"])
         draw = ImageDraw.Draw(canvas)
         when = 0 if self.reduced_motion else local
         camera = Camera(camera_at(cfg["camera"], when), (0, 0, w, h))
-        p = self.palette
         if cfg.get("graticule", True):
             colour = mix(p["ground"], p["night-ink-3"], .15)
             for lon in range(-180, 181, 5):
@@ -121,13 +154,17 @@ class SceneRenderer:
             highlighted = feature["properties"]["ADM0_A3"] in cfg.get("highlights", [])
             for rings in polygons:
                 points = [camera.project(point) for point in rings[0]]
-                draw.polygon(points, fill=mix(p["ground"], p["gold"] if highlighted else p["night-ink-2"], .22))
+                if highlighted:
+                    land = p.get("land-highlight") or mix(p["ground"], p["gold"], .22)
+                else:
+                    land = p.get("land") or mix(p["ground"], p["night-ink-2"], .22)
+                draw.polygon(points, fill=land)
                 for hole in rings[1:]:
                     draw.polygon([camera.project(point) for point in hole], fill=p["ground"])
                 boundaries.append(points)
         # Draw all boundaries after all land fills so adjacent countries cannot erase them.
         if cfg["borders"]:
-            boundary_ink = mix(p["ground"], p["night-ink-2"], .6)
+            boundary_ink = p.get("border") or mix(p["ground"], p["night-ink-2"], .6)
             for points in boundaries:
                 if cfg.get("border_style", "solid") == "dashed":
                     dashed_line(draw, points, boundary_ink)
@@ -154,6 +191,23 @@ class SceneRenderer:
                 draw.ellipse((x-7, y-7, x+7, y+7), fill=colour)
                 stripes = feature.get("flag_stripes", [])
                 for i, stripe in enumerate(stripes):
+                    draw.rectangle((x+i*12-18, y-40, x+(i+1)*12-18, y-18), fill=stripe)
+            elif kind == "country":
+                overlay = Image.new("RGBA", canvas.size)
+                od = ImageDraw.Draw(overlay)
+                outline = []
+                for shape in self.assets[cfg["asset"]]["features"]:
+                    if shape["properties"]["ADM0_A3"] != feature["code"]:
+                        continue
+                    geometry = shape["geometry"]
+                    for rings in [geometry["coordinates"]] if geometry["type"] == "Polygon" else geometry["coordinates"]:
+                        ring = [camera.project(point) for point in rings[0]]
+                        od.polygon(ring, fill=ImageColor.getrgb(colour)+(165,))
+                        outline.extend(ring)
+                canvas.paste(overlay, (0, 0), overlay)
+                x = sum(a for a, _ in outline)/len(outline)
+                y = sum(b for _, b in outline)/len(outline)
+                for i, stripe in enumerate(feature.get("flag_stripes", [])):
                     draw.rectangle((x+i*12-18, y-40, x+(i+1)*12-18, y-18), fill=stripe)
             elif kind == "presence-zone":
                 points = [camera.project(point) for point in feature["points"]]
@@ -192,8 +246,9 @@ class SceneRenderer:
                         draw.line(points, fill=colour, width=width, joint="curve")
                     a, b = points[-2:]
                     angle = math.atan2(b[1]-a[1], b[0]-a[0])
-                    draw.polygon([b, (b[0]-18*math.cos(angle-.45), b[1]-18*math.sin(angle-.45)),
-                                  (b[0]-18*math.cos(angle+.45), b[1]-18*math.sin(angle+.45))], fill=colour)
+                    if feature["meaning"] != "river":  # a watercourse has no direction of travel
+                        draw.polygon([b, (b[0]-18*math.cos(angle-.45), b[1]-18*math.sin(angle-.45)),
+                                      (b[0]-18*math.cos(angle+.45), b[1]-18*math.sin(angle+.45))], fill=colour)
                 x, y = camera.project(feature["points"][0])
             # Off-screen features remain available as legend entries, not false clamped locations.
             dx, dy = feature.get("offset", [18, -30])
@@ -201,7 +256,7 @@ class SceneRenderer:
             annotated = "annotation" in feature
             if annotated: label_width = max(label_width, 300)
             label_height = 146 if annotated else 36
-            if 0 <= x+dx and x+dx+label_width <= self.right-x0 and 0 <= y+dy <= h-label_height:
+            if not feature.get("unlabelled") and 0 <= x+dx and x+dx+label_width <= self.right-x0 and 0 <= y+dy <= h-label_height:
                 box = (x+dx, y+dy, x+dx+label_width, y+dy+label_height)
                 require(not any(box[0] < b[2]+8 and box[2]+8 > b[0] and box[1] < b[3]+8 and box[3]+8 > b[1]
                                 for b in label_boxes), f"Map label overlap: {feature['label']}")
@@ -261,23 +316,39 @@ class SceneRenderer:
                 top = 540+index*210
                 self.paragraph(draw, item["label"], (self.left, top, self.right-self.left, 100), "Paire — terme", self.palette["gold"])
                 self.paragraph(draw, item["body"], (self.left, top+94, self.right-self.left, 100), "Corps")
+        legend = self.legend(scene, local)
+        self.paragraph(draw, "\n".join(legend), (self.left, 1215 if kind == "timeline" else 1190, self.right-self.left, 115 if kind == "timeline" else 142), "Crédit", self.palette["night-ink-2"])
+        return image
+
+    def legend(self, scene, local):
+        """What the map shows and how sure the author is: period and status of every active feature."""
         legend = []
         geographic = scene_map(scene)
-        if geographic and (kind == "map" or geographic.get("features") or geographic.get("highlights")):
+        if geographic and (scene["type"] == "map" or geographic.get("features") or geographic.get("highlights")):
             legend.append(("Frontières actuelles en pointillé · Mercator" if geographic.get("border_style") == "dashed"
                            else "Frontières actuelles · Mercator") if geographic["borders"] else "Sans frontières actuelles · Mercator")
+            entries = []
             for feature in geographic.get("features", []):
                 if feature["at"] <= local < feature["until"]:
                     e = feature["evidence"]
                     meaning = {"journey": "Trajet", "migration": "Migration", "language-diffusion": "Diffusion linguistique",
-                               "name-circulation": "Circulation du nom"}.get(feature.get("meaning"))
+                               "name-circulation": "Circulation du nom",
+                               "river": "Cours d'eau (tracé schématique)"}.get(feature.get("meaning"))
                     role = "Voisinage : " if feature.get("role") == "context" else ""
-                    legend.append(f"{role}{feature['label']} · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else ""))
-                    if feature.get("geometry_note"): legend.append(feature["geometry_note"])
-        self.paragraph(draw, "\n".join(legend), (self.left, 1215 if kind == "timeline" else 1190, self.right-self.left, 115 if kind == "timeline" else 142), "Crédit", self.palette["night-ink-2"])
-        return image
+                    tail = f" · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else "")
+                    entries.append((role+feature["label"], tail, feature.get("geometry_note")))
+            if self.plan.get("layout") == "fullbleed":
+                # Features that share period and status share one line, so a dozen countries fit the foot of the frame.
+                grouped = {}
+                for label, tail, note in entries:
+                    grouped.setdefault((tail, note), []).append(label)
+                entries = [(", ".join(labels), tail, note) for (tail, note), labels in grouped.items()]
+            for label, tail, note in entries:
+                legend.append(label+tail)
+                if note: legend.append(note)
+        return legend
 
-    def credits(self, scene):
+    def credits(self, scene, local=None):
         kind = scene["type"]
         credits = []
         asset_source = None
@@ -288,6 +359,10 @@ class SceneRenderer:
             asset = self.plan["assets"][asset_id]
             credits.append(f"{asset['credit']} · {asset['license']}")
             asset_source = asset["source"]
+        for card in (scene_map(scene) or {}).get("inserts", []):
+            if local is None or card["at"] <= local < card["until"]:
+                asset = self.plan["assets"][card["asset"]]
+                credits.append(f"{asset['credit']} · {asset['license']}")
         source_keys = list(scene["evidence"]["sources"])
         if kind == "timeline":
             for event in scene["timeline"]["events"] + scene["timeline"].get("context", []):
@@ -302,6 +377,8 @@ class SceneRenderer:
         return credits
 
     def render(self, instant):
+        if self.plan.get("layout") == "fullbleed":
+            return fullbleed.render(self, instant)
         scene = scene_at(self.plan["scenes"], instant)
         transition = None if self.reduced_motion else transition_at(self.plan["scenes"], instant)
         image = self.visual(scene, instant)
@@ -329,7 +406,8 @@ class SceneRenderer:
         self.paragraph(draw, "ETHNIAFRICA", (self.left, 65, 380, 45), "Bandeau", self.palette["night-ink-2"])
         self.paragraph(draw, "L’AFRIQUE À TRAVERS SES NOMS", (self.left, 132, self.right-self.left, 45), "Bandeau", self.palette["night-ink-2"])
         caption = next((c for c in self.captions if c["debut"] <= instant < c["fin"]), None)
-        if caption:
+        # §1 ter: the opening is the thumbnail, so for its first seconds it carries its title alone.
+        if caption and not (self.plan.get("cover") and instant < MINIATURE_S):
             self.paragraph(draw, caption["texte"], (self.left, 1380, self.right-self.left, 140), "Corps")
         self.paragraph(draw, "\n".join(credits), (self.left, 1530, self.right-self.left, 88), "Crédit", self.palette["night-ink-2"])
         if self.plan.get("progress", False):
@@ -359,6 +437,8 @@ class SceneRenderer:
             geographic = scene_map(scene)
             if geographic:
                 instants.update(start+k["at"] for k in geographic["camera"] if start+k["at"] < end)
+                for card in geographic.get("inserts", []):
+                    instants.update((start+card["at"]+.17, start+card["at"]+.5, min(end-1e-6, start+card["until"]-.17)))
                 for f in geographic.get("features", []):
                     instants.update((start+f["at"], start+f["until"]-1e-6, min(end-1e-6, start+f["until"])))
                     if "draw_seconds" in f:
