@@ -17,7 +17,7 @@
         "Crew",
         "Krew"
       ],
-      "originOfHistoricalTerm": " Le terme apparaît pour la première fois en 1588 sous la forme « Crua » dans le récit de voyage de James Welsh, publié par Richard Hakluyt dans ses *Principal Navigations, Voyages, Traffiques and Discoveries of the English Nation* (1589). Ce terme faisait référence au point géographique côtier correspondant à l'actuel Settra-Kru au Liberia. La graphie « Krou » est une corruption de l'une des nombreuses appellations données à travers les âges aux ressortissants du peuple krao. Le terme a été systématisé par des chercheurs comme Pieter Jan-L. Vandenhoute (1948) dans son étude sur les masques krou, puis par Bohumil Holas après ses enquêtes au Liberia en 1948. Les linguistes ont ensuite étendu le terme pour désigner un ensemble beaucoup plus large de langues parlées en Côte d'Ivoire et au Liberia."
+      "originOfHistoricalTerm": " Le terme apparaît pour la première fois en 1588 sous la forme « Crua » dans le récit de voyage de James Welsh, publié par Richard Hakluyt dans ses *Principal Navigations, Voyages, Traffiques and Discoveries of the English Nation* (1589). Ce terme faisait référence au point géographique côtier correspondant à l'actuel Settra-Kru au Liberia. La graphie « Krou » est une corruption de l'une des nombreuses appellations données à travers les âges aux ressortissants du peuple krao. Le terme a été systématisé par des chercheurs comme Pieter Jan-L. Vandenhoute (1948) dans son étude sur les masques krou, puis par Bohumil Holas après ses enquêtes au Liberia en 1948. Les linguistes ont ensuite étendu le terme pour désigner un ensemble beaucoup plus large de langues parlées en Côte d'Ivoire et au Liberia.\n\nL'explication la plus répandue rattache Krou à l'anglais crew, « équipage », parce que des hommes de cette côte servaient sur les navires européens. Gunn (2021) la conteste. Selon les traditions orales krou qu'il rapporte, Krao, aussi prononcé Klao ou Claho, était le nom d'origine du peuple avant de devenir Kru ou Kroo. Le marchand anglais James Welsh relève Crua en 1588, avant que ces hommes travaillent sur des navires britanniques, et des capitaines portugais, espagnols, néerlandais et français écrivent Crou au début du XVIIe siècle, avant les embauches en masse : pour Gunn, cela confirme que le nom n'a pas de lien avec le mot anglais crew. Le métier vient donc après le nom : Kroumen désigne plus tard les marins krou employés sur les navires européens."
     },
     "generalInfo": {
       "branches": ["Eastern Kru", "Greater Western Kru"],
@@ -162,6 +162,12 @@
         "title": "Agence Nationale de la Statistique (ANStat), Côte d'Ivoire (2021) – Recensement Général de la Population et de l'Habitat (RGPH 2021), jeu de données \"Répartition des Ivoiriens par grand groupe ethnique selon le sexe\" (groupe ethnolinguistique Krou, classification Bouquet)",
         "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
         "tier": "official"
+      },
+      {
+        "title": "Gunn, Jeffrey (2021) – Outsourcing African Labor: Kru Migratory Workers in Global Ports, Estates and Battlefields until the End of the 19th Century. De Gruyter Oldenbourg, Berlin et Boston",
+        "url": "https://www.degruyterbrill.com/document/doi/10.1515/9783110680331/html",
+        "tier": "referenced",
+        "notes": "Ouvrage universitaire, passages relus dans le texte numérisé. Son introduction (p. 3 et p. 22) porte le nom d'origine Krao, Klao ou Claho selon les traditions orales krou, la mention de Crua en 1588 chez James Welsh, et celle de Crou par des capitaines de quatre nations européennes au début du XVIIe siècle."
       }
     ]
   },

@@ -32,7 +32,10 @@
     {
       "spelling": "Jallo",
       "attestations": [
-        { "countryId": "SEN", "sourceRefs": ["bluett-1734-job-jallo"] }
+        {
+          "countryId": "SEN",
+          "sourceRefs": ["bluett-1734-job-jallo"]
+        }
       ]
     }
   ],
@@ -95,7 +98,7 @@
     },
     {
       "countryId": "MRT",
-      "status": "attested",
+      "status": "supposed",
       "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
