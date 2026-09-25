@@ -92,7 +92,7 @@ def draw_band(renderer, frame, scene, local):
                                             fill=ImageColor.getrgb(palette["ground"])+(190,))
     frame = Image.alpha_composite(frame.convert("RGBA"), panel).convert("RGB")
     draw = ImageDraw.Draw(frame)
-    year = str(event["year"]) if event["year"] > 0 else f"{abs(event['year'])} av."
+    year = event.get("display") or (str(event["year"]) if event["year"] > 0 else f"{abs(event['year'])} av.")
     renderer.paragraph(draw, year, (renderer.left, 195, 809, 125), "Titre de série", palette["gold"])
     renderer.paragraph(draw, event["label"], (renderer.left, 325, 809, 50), "Corps")
     renderer.paragraph(draw, event["evidence"]["period"], (renderer.left, 388, 809, 34), "Crédit", palette["night-ink-2"])

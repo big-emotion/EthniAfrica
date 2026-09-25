@@ -207,6 +207,8 @@ class SceneRenderer:
                 canvas.paste(overlay, (0, 0), overlay)
                 x = sum(a for a, _ in outline)/len(outline)
                 y = sum(b for _, b in outline)/len(outline)
+                for i, stripe in enumerate(feature.get("flag_stripes", [])):
+                    draw.rectangle((x+i*12-18, y-40, x+(i+1)*12-18, y-18), fill=stripe)
             elif kind == "presence-zone":
                 points = [camera.project(point) for point in feature["points"]]
                 mask = Image.new("L", canvas.size)
@@ -244,8 +246,9 @@ class SceneRenderer:
                         draw.line(points, fill=colour, width=width, joint="curve")
                     a, b = points[-2:]
                     angle = math.atan2(b[1]-a[1], b[0]-a[0])
-                    draw.polygon([b, (b[0]-18*math.cos(angle-.45), b[1]-18*math.sin(angle-.45)),
-                                  (b[0]-18*math.cos(angle+.45), b[1]-18*math.sin(angle+.45))], fill=colour)
+                    if feature["meaning"] != "river":  # a watercourse has no direction of travel
+                        draw.polygon([b, (b[0]-18*math.cos(angle-.45), b[1]-18*math.sin(angle-.45)),
+                                      (b[0]-18*math.cos(angle+.45), b[1]-18*math.sin(angle+.45))], fill=colour)
                 x, y = camera.project(feature["points"][0])
             # Off-screen features remain available as legend entries, not false clamped locations.
             dx, dy = feature.get("offset", [18, -30])
@@ -253,7 +256,7 @@ class SceneRenderer:
             annotated = "annotation" in feature
             if annotated: label_width = max(label_width, 300)
             label_height = 146 if annotated else 36
-            if 0 <= x+dx and x+dx+label_width <= self.right-x0 and 0 <= y+dy <= h-label_height:
+            if not feature.get("unlabelled") and 0 <= x+dx and x+dx+label_width <= self.right-x0 and 0 <= y+dy <= h-label_height:
                 box = (x+dx, y+dy, x+dx+label_width, y+dy+label_height)
                 require(not any(box[0] < b[2]+8 and box[2]+8 > b[0] and box[1] < b[3]+8 and box[3]+8 > b[1]
                                 for b in label_boxes), f"Map label overlap: {feature['label']}")
@@ -328,7 +331,8 @@ class SceneRenderer:
                 if feature["at"] <= local < feature["until"]:
                     e = feature["evidence"]
                     meaning = {"journey": "Trajet", "migration": "Migration", "language-diffusion": "Diffusion linguistique",
-                               "name-circulation": "Circulation du nom"}.get(feature.get("meaning"))
+                               "name-circulation": "Circulation du nom",
+                               "river": "Cours d'eau (tracé schématique)"}.get(feature.get("meaning"))
                     role = "Voisinage : " if feature.get("role") == "context" else ""
                     legend.append(f"{role}{feature['label']} · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else ""))
                     if feature.get("geometry_note"): legend.append(feature["geometry_note"])

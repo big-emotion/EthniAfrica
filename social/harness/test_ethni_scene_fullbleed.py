@@ -141,5 +141,71 @@ def ImageChopsDiff(a, b):
     return ImageChops.difference(a.convert("L"), b.convert("L"))
 
 
+class FullbleedExtensionTests(unittest.TestCase):
+    setUp = fixtures.ScenePlanTests.setUp
+
+    def plan_with(self, feature):
+        plan = copy.deepcopy(self.plan)
+        plan["layout"] = "fullbleed"
+        plan["scenes"][1]["image"]["motion"]["to"] = [1.03, .6, .5]
+        scene = plan["scenes"][0]
+        scene["map"]["layer"] = "national"
+        scene["map"]["camera"] = [{"at": 0, "bounds": [-20, -5, 20, 25]}]
+        scene["map"]["features"] = [dict(feature, at=0, until=5, evidence=copy.deepcopy(scene["evidence"]))]
+        return plan
+
+    def test_a_country_can_carry_the_vertical_stripes_of_its_flag(self):
+        base = {"kind": "country", "code": "AAA", "label": "Land", "colour": "gold"}
+        plain = self.plan_with(base)
+        flagged = self.plan_with(dict(base, flag_stripes=["#00ff00", "#ffff00", "#ff0000"]))
+        validate_plan(flagged, self.root, 10)
+        a = SceneRenderer(plain, self.root, [], proof=False).render(1)
+        b = SceneRenderer(flagged, self.root, [], proof=False).render(1)
+        self.assertNotEqual(a.tobytes(), b.tobytes())
+
+    def test_a_river_is_a_dashed_watercourse_and_says_so_in_the_legend(self):
+        river = {"kind": "route", "meaning": "river", "label": "Niger", "points": [[-10, 5], [0, 12], [5, 15]],
+                 "line_style": "dashed"}
+        plan = self.plan_with(river)
+        plan["scenes"][0]["map"]["layer"] = "physical"
+        validate_plan(plan, self.root, 10)
+        renderer = SceneRenderer(plan, self.root, [], proof=False)
+        self.assertTrue(any("Cours d'eau" in line for line in renderer.legend(plan["scenes"][0], 1)))
+
+    def test_an_unlabelled_country_keeps_its_legend_line_but_draws_no_text(self):
+        base = {"kind": "country", "code": "AAA", "label": "Land", "colour": "gold"}
+        labelled, quiet = self.plan_with(base), self.plan_with(dict(base, unlabelled=True))
+        validate_plan(quiet, self.root, 10)
+        a = SceneRenderer(labelled, self.root, [], proof=False)
+        b = SceneRenderer(quiet, self.root, [], proof=False)
+        self.assertNotEqual(a.render(1).tobytes(), b.render(1).tobytes())
+        self.assertTrue(any("Land" in line for line in b.legend(quiet["scenes"][0], 1)))
+        quiet["scenes"][0]["map"]["features"][0]["unlabelled"] = "yes"
+        with self.assertRaisesRegex(ValueError, "unlabelled"):
+            validate_plan(quiet, self.root, 10)
+
+    def test_a_chronology_can_show_a_century_where_only_the_order_is_known(self):
+        plan = self.fullbleed_timeline(display="XIIe siècle")
+        validate_plan(plan, self.root, 10)
+        shown = SceneRenderer(plan, self.root, [], proof=False).render(6.2)
+        plain = SceneRenderer(self.fullbleed_timeline(display=None), self.root, [], proof=False).render(6.2)
+        self.assertNotEqual(shown.crop((0, 150, 1080, 620)).tobytes(), plain.crop((0, 150, 1080, 620)).tobytes())
+        with self.assertRaisesRegex(ValueError, "display"):
+            validate_plan(self.fullbleed_timeline(display=""), self.root, 10)
+
+    def fullbleed_timeline(self, display):
+        plan = copy.deepcopy(self.plan)
+        plan["layout"] = "fullbleed"
+        evidence = copy.deepcopy(plan["scenes"][0]["evidence"])
+        first = {"year": 1100, "label": "Do et Kiri", "at": 1, "evidence": evidence}
+        if display is not None:
+            first["display"] = display
+        plan["scenes"][1] = {"id": "t", "type": "timeline", "start": 5, "end": 10, "title": "Time", "purpose": "x",
+                             "evidence": evidence,
+                             "timeline": {"layout": "focus", "scale": "ordinal",
+                                          "events": [first, {"year": 1220, "label": "War", "at": 3, "evidence": evidence}]}}
+        return plan
+
+
 if __name__ == "__main__":
     unittest.main()

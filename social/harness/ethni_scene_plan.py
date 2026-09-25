@@ -112,7 +112,9 @@ def validate_map(value, duration, assets, sources):
     features = value.get("features", [])
     require(isinstance(features, list) and len(features) <= 12, "map supports at most twelve authored features")
     for feature in features:
-        keys(feature, "kind point points label at until colour label_colour evidence meaning offset flag_stripes geometry_note fill_opacity draw_seconds line_style line_width role fade_seconds annotation code", "map feature")
+        keys(feature, "kind point points label at until colour label_colour evidence meaning offset flag_stripes geometry_note fill_opacity draw_seconds line_style line_width role fade_seconds annotation code unlabelled", "map feature")
+        if "unlabelled" in feature:
+            require(type(feature["unlabelled"]) is bool, "feature.unlabelled must be boolean")
         kind = feature.get("kind")
         require(kind in ("point", "presence", "presence-zone", "territory", "route", "country"), "Unknown map feature kind")
         text(feature.get("label"), "feature.label")
@@ -155,7 +157,7 @@ def validate_map(value, duration, assets, sources):
             # A whole present-day country switched on at a cue, on the national layer only.
             require(value["layer"] == "national", "A country feature needs the national layer")
             text(feature.get("code"), "feature.code")
-            require(not {"point", "points", "meaning", "flag_stripes"} & set(feature), "Country feature has point or route fields")
+            require(not {"point", "points", "meaning"} & set(feature), "Country feature has point or route fields")
         else:
             points = feature.get("points")
             require(isinstance(points, list) and len(points) >= 2, "feature.points needs a path")
@@ -168,11 +170,12 @@ def validate_map(value, duration, assets, sources):
                     require(feature["evidence"]["status"] in ("estimate", "hypothesis"), "presence-zone must be an estimate or hypothesis")
                     text(feature.get("geometry_note"), "presence-zone.geometry_note")
             else:
-                require(feature.get("meaning") in ("journey", "migration", "language-diffusion", "name-circulation"),
-                        "route.meaning must distinguish a journey, migration, language diffusion or name circulation")
+                require(feature.get("meaning") in ("journey", "migration", "language-diffusion", "name-circulation", "river"),
+                        "route.meaning must distinguish a journey, migration, language diffusion, name circulation or river")
         if "flag_stripes" in feature:
             import re
-            require(kind == "point" and value["layer"] == "national", "Flags require a point in the national layer")
+            require(kind in ("point", "country") and value["layer"] == "national",
+                    "Flags require a point or a country in the national layer")
             require(isinstance(feature["flag_stripes"], list) and len(feature["flag_stripes"]) == 3 and
                     all(isinstance(c, str) and re.fullmatch(r"#[0-9a-fA-F]{6}", c) for c in feature["flag_stripes"]),
                     "flag_stripes requires three hex colours")
@@ -193,8 +196,11 @@ def validate_timeline(value, duration, sources, assets=None):
     years = []
     for lane in (events, context):
         for event in lane:
-            keys(event, "year label detail at evidence" if lane is context else "year label at evidence", "timeline event")
+            keys(event, "year label detail at evidence" if lane is context else "year label at evidence display", "timeline event")
             require(type(event.get("year")) is int and event["year"] != 0, "event.year must be a nonzero integer")
+            # `display` replaces the printed year when sources give only a century: the year then
+            # only orders the events and is never shown.
+            if "display" in event: text(event["display"], "event.display")
             text(event.get("label"), "event.label")
             if lane is context: text(event.get("detail"), "event.detail")
             number(event.get("at"), "event.at", 0, duration-.04)
