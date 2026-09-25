@@ -36,9 +36,10 @@ class SceneRenderer:
     left, right = 91, 900
     content = (45, 480, 1035, 1170)
 
-    def __init__(self, plan, root, captions, reduced_motion=False):
+    def __init__(self, plan, root, captions, reduced_motion=False, proof=True):
         self.plan, self.root, self.captions = plan, root, captions
         self.reduced_motion = reduced_motion
+        self.proof = proof
         self.palette = tokens.palette()
         self.duration = plan["scenes"][-1]["end"]
         self.assets = {}
@@ -337,10 +338,11 @@ class SceneRenderer:
             if fraction:
                 draw.line((self.left, 1615, self.left+(self.right-self.left)*fraction, 1615),
                           fill=self.palette["gold"], width=5)
-        badge = Image.new("RGBA", (620, 68), ImageColor.getrgb(self.palette["ground"])+(240,))
-        self.paragraph(ImageDraw.Draw(badge), "ÉPREUVE — NE PAS PUBLIER", (16, 12, 590, 50), "Bandeau", self.palette["night-ink-2"])
-        badge = badge.rotate(-15, expand=True, resample=Image.Resampling.BICUBIC)
-        image.paste(badge, (460, 25), badge)
+        if self.proof:
+            badge = Image.new("RGBA", (620, 68), ImageColor.getrgb(self.palette["ground"])+(240,))
+            self.paragraph(ImageDraw.Draw(badge), "ÉPREUVE — NE PAS PUBLIER", (16, 12, 590, 50), "Bandeau", self.palette["night-ink-2"])
+            badge = badge.rotate(-15, expand=True, resample=Image.Resampling.BICUBIC)
+            image.paste(badge, (460, 25), badge)
         return image
 
     def preflight(self):
