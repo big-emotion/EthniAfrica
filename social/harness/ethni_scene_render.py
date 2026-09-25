@@ -434,7 +434,11 @@ class SceneRenderer:
                     if len(periods) == 1:
                         text = ", ".join(dict.fromkeys(label for label, _, _ in items))+f" · {periods.pop()} · {status}"
                     else:
-                        text = " ; ".join(f"{label} · {period}" for label, period, _ in items)+f" · {status}"
+                        by_period = {}
+                        for label, period, _ in items:
+                            by_period.setdefault(period, []).append(label)
+                        text = " ; ".join(f"{', '.join(dict.fromkeys(labels))} · {period}"
+                                          for period, labels in by_period.items())+f" · {status}"
                     entries.append((text, "", None))
                     notes += [note for _, _, note in items if note and note not in notes]
                 if notes:
