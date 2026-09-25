@@ -172,6 +172,16 @@ class FullbleedExtensionTests(unittest.TestCase):
         renderer = SceneRenderer(plan, self.root, [], proof=False)
         self.assertTrue(any("Cours d'eau" in line for line in renderer.legend(plan["scenes"][0], 1)))
 
+    def test_a_busy_map_may_carry_sixteen_features_but_not_seventeen(self):
+        marks = [{"kind": "point", "label": f"P{i}", "point": [-9+i, 5], "colour": "gold", "at": 0, "until": 5,
+                  "evidence": self.plan["scenes"][0]["evidence"]} for i in range(17)]
+        plan = self.plan_with({"kind": "point", "label": "x", "point": [0, 0], "colour": "gold"})
+        plan["scenes"][0]["map"]["features"] = marks[:16]
+        validate_plan(plan, self.root, 10)
+        plan["scenes"][0]["map"]["features"] = marks
+        with self.assertRaisesRegex(ValueError, "sixteen"):
+            validate_plan(plan, self.root, 10)
+
     def test_an_unlabelled_country_keeps_its_legend_line_but_draws_no_text(self):
         base = {"kind": "country", "code": "AAA", "label": "Land", "colour": "gold"}
         labelled, quiet = self.plan_with(base), self.plan_with(dict(base, unlabelled=True))

@@ -354,16 +354,34 @@ class SceneRenderer:
                                "river": "Cours d'eau (tracé schématique)"}.get(feature.get("meaning"))
                     role = "Voisinage : " if feature.get("role") == "context" else ""
                     tail = f" · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else "")
-                    entries.append((role+feature["label"], tail, feature.get("geometry_note")))
+                    entries.append((role+feature["label"], tail, feature.get("geometry_note"), e["period"],
+                                    STATUS[e["status"]] + (f" · {meaning}" if meaning else "")))
+            noted = set()
             if self.plan.get("layout") == "fullbleed":
-                # Features that share period and status share one line, so a dozen countries fit the foot of the frame.
+                # Features that share a status share one line, each keeping its own period when the periods differ,
+                # and a geometry note is printed once: a dozen features must fit the foot of the frame.
                 grouped = {}
-                for label, tail, note in entries:
-                    grouped.setdefault((tail, note), []).append(label)
-                entries = [(", ".join(labels), tail, note) for (tail, note), labels in grouped.items()]
+                for label, tail, note, period, status in entries:
+                    grouped.setdefault(status, []).append((label, period, note))
+                entries = []
+                notes = []
+                for status, items in grouped.items():
+                    periods = {period for _, period, _ in items}
+                    if len(periods) == 1:
+                        text = ", ".join(label for label, _, _ in items)+f" · {periods.pop()} · {status}"
+                    else:
+                        text = " ; ".join(f"{label} · {period}" for label, period, _ in items)+f" · {status}"
+                    entries.append((text, "", None))
+                    notes += [note for _, _, note in items if note and note not in notes]
+                if notes:
+                    entries.append((" · ".join(notes), "", None))
+            else:
+                entries = [(label, tail, note) for label, tail, note, _, _ in entries]
             for label, tail, note in entries:
                 legend.append(label+tail)
-                if note: legend.append(note)
+                if note and note not in noted:
+                    noted.add(note)
+                    legend.append(note)
             if any(f["kind"] == "speakers" and f["at"] <= local < f["until"] for f in geographic.get("features", [])):
                 legend.append("Surface des cercles proportionnelle à l'effectif indiqué")
         return legend
