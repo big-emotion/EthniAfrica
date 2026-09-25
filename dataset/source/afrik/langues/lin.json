@@ -10,10 +10,15 @@
   "nameFr": "Lingala",
   "nameEn": "Lingala",
   "alternateNames": ["Bangala", "Kinshasa Lingala", "Losengo", "Ngala"],
-  "whyProblematic": "Le nom actuel de la langue est une création de missionnaires. Selon Meeuwis, les Européens arrivés sur le fleuve Congo en 1881-1882 ont appris de façon imparfaite le bobangi, langue de commerce des riverains, et l'ont fortement simplifié. Ce parler a été porté en 1884-1885 à Bangala Station, poste de l'État, et a reçu le nom de « Bangala ». En 1901-1902, les missionnaires de Scheut à Nouvelle-Anvers l'ont rebaptisé « Lingala », nom qu'aucune source antérieure à 1902 ne mentionne : dans plusieurs langues bantoues de la région, le préfixe ba- désigne des peuples et non des langues. Le nom Bangala reste en usage dans le nord-est du pays pour une variété locale.",
+  "whyProblematic": "Le nom « lingala » est débattu entre linguistes. Selon Meeuwis, les Européens arrivés sur le fleuve Congo en 1881-1882 ont appris de façon imparfaite le bobangi, langue de commerce des riverains, et l'ont fortement simplifié. Ce parler a été porté en 1884-1885 à Bangala Station, poste de l'État, et a reçu le nom de « Bangala ». En 1901-1902, les missionnaires de Scheut à Nouvelle-Anvers l'ont rebaptisé « Lingala », nom qu'aucune source antérieure à 1902 ne mentionne : dans plusieurs langues bantoues de la région, le préfixe ba- désigne des peuples et non des langues. Mimpongo (2024) conteste que le nom soit une création missionnaire : selon lui, Lingála et Mangála sont des formes abrégées d'expressions bobangi signifiant « la langue des marchés », donc un nom d'origine bobangi. Les deux lectures s'appuient sur des sources différentes et ne sont pas départagées ici. Le nom Bangala reste en usage dans le nord-est du pays pour une variété locale. Selon Castillo, la Force publique a adopté le lingala comme langue de commandement après la mutinerie de 1893-1894, et le régime de Mobutu l'a imposé par l'usage, sans loi ni décret.",
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
-  "peoples": [{ "name": "Lingala (locuteurs)", "peopleId": "PPL_LINGALA" }],
+  "peoples": [
+    {
+      "name": "Lingala (locuteurs)",
+      "peopleId": "PPL_LINGALA"
+    }
+  ],
   "content": {
     "vehicularRole": "regional_lingua_franca",
     "dialects": [
@@ -41,6 +46,18 @@
         "url": "https://mjp.univ-perp.fr/constit/cd2006.htm",
         "tier": "official",
         "notes": "Texte consulté sur la Digithèque de la Faculté de droit de Perpignan. L'article 1 fixe le français comme langue officielle et le kikongo, le lingala, le swahili et le tshiluba comme langues nationales."
+      },
+      {
+        "title": "Mimpongo, Mpoke, « L'origine et la signification du glossonyme lingala », lingbuzz, 2024",
+        "url": "https://ling.auf.net/lingbuzz/008154",
+        "tier": "referenced",
+        "notes": "Prépublication de mai 2024, dont nous avons lu le résumé. Elle avance que Lingála et Mangála sont des formes abrégées de mangála má libɔkɔ, ou parfois de lingála lí mabɔkɔ, « la langue des marchés » en bobangi, et écarte les hypothèses d'un ethnonyme, d'un bras de rivière ou d'un préfixe introduit par les missionnaires."
+      },
+      {
+        "title": "Castillo, Joshua, « Navigating Lingala: Linguistic Change, Political Power, and Everyday Authoritarianism in Congo-Zaire, 1965-97 », The Journal of African History, 65, 2024, p. 327-343",
+        "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/navigating-lingala-linguistic-change-political-power-and-everyday-authoritarianism-in-congozaire-196597/118FE97D3CC34974331138A906D07B2A",
+        "tier": "referenced",
+        "notes": "Article revue par les pairs. Il rapporte qu'après la mutinerie des auxiliaires batetela de 1893-1894, les autorités ont adopté le lingala comme langue de commandement de la force coloniale pour réduire le risque de mutinerie, et que l'imposition du lingala sous Mobutu fut « une politique par les effets, et non par la loi ou le décret »."
       }
     ]
   },

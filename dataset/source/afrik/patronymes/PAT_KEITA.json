@@ -243,6 +243,30 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Canut, Cécile, et Smith, Étienne, Cahiers d'études africaines, numéro 184, 2006, p. 687 et suivantes. Citée pour la mise en garde qu'elle porte : l'idée que la parenté à plaisanterie apaiserait les conflits y est traitée comme une hypothèse héritée de Radcliffe-Brown et reprise par les études sur la résolution des conflits, donc comme un discours à analyser et non comme un effet mesuré. La page de début est vérifiée, la page de fin ne l'est pas."
+    },
+    {
+      "sourceKey": "unesco-manden-charter-2009",
+      "title": "Manden Charter, proclaimed in Kurukan Fuga, Representative List of the Intangible Cultural Heritage of Humanity, UNESCO",
+      "url": "https://ich.unesco.org/en/RL/manden-charter-proclaimed-in-kurukan-fuga-00290",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "Inscription de 2009. La notice décrit une charte proclamée au début du XIIIe siècle par le fondateur de l'empire du Mali et une assemblée de sages, dont les paroles se transmettent oralement de père en fils au sein des clans malinké. Elle ne mentionne pas le sanankuya."
+    },
+    {
+      "sourceKey": "saibou-2023-kurukan-fuga",
+      "title": "Charte de Kurukan Fuga : mémoire et communauté, Amadou Saïbou Adamou, Magana, 2023",
+      "url": "https://www.revues.scienceafrique.org/magana/texte/saibou2023/",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Cite l'article 7 de la charte : « il est institué entre les Mandenkas le Sanankunya (cousinage à plaisanterie) et le Tanamanyöya (forme de totémisme) ». Situe l'assemblée orale vers 1236 et précise que le texte a été restitué par des griots lors d'un séminaire à Kankan, en Guinée, en 1998, puis traduit en français et publié en 2008."
+    },
+    {
+      "sourceKey": "mann-2022-hunters-oath",
+      "title": "The World Won't Listen: The Mande Hunters' Oath and Human Rights in Translation, Gregory Mann, Humanity, 2022",
+      "url": "https://humanityjournal.org/issue13-2/the-world-wont-listen-the-mande-hunters-oath-and-human-rights-in-translation/",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Note que la célébration de ces chartes a suscité du scepticisme chez ceux qui s'interrogent sur leur origine, donc sur leur âge, et renvoie aux travaux de Jan Jansen qui les lit comme des interventions dans une politique culturelle disputée."
     }
   ],
   "gaps": [
@@ -253,6 +277,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "Aucune lignée homonyme d'origine distincte n'a été trouvée. Le jamu est porté bien au-delà de la descendance dynastique, par affiliation et par adoption, mais c'est là une extension du même nom et non une seconde origine. Le dictionnaire des jamuw réunit de même Kéyità, Kétà et Kɛ́yità sous une entrée unique et range Souma, Koné et Beawɔgi parmi ses équivalences."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "L'ancienneté de l'alliance n'est pas établie. Une lecture la rattache à Soundiata par l'assemblée de Kurukan Fuga, dont l'article 7 institue « entre les Mandenkas le Sanankunya », et le clan Keïta est bien celui de Soundiata selon la geste. Mais le texte de la charte a été restitué oralement et mis par écrit en 1998, à Kankan, et des chercheurs discutent l'âge qu'on peut lui prêter. Les sources consultées ne datent pas le pacte entre Keïta et Coulibaly ; nous ne l'attribuons donc pas à Soundiata."
     }
   ]
 }

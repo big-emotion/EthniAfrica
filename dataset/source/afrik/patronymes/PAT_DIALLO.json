@@ -32,7 +32,10 @@
     {
       "spelling": "Jallo",
       "attestations": [
-        { "countryId": "SEN", "sourceRefs": ["bluett-1734-job-jallo"] }
+        {
+          "countryId": "SEN",
+          "sourceRefs": ["bluett-1734-job-jallo"]
+        }
       ]
     }
   ],
@@ -95,7 +98,7 @@
     },
     {
       "countryId": "MRT",
-      "status": "attested",
+      "status": "supposed",
       "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
@@ -155,6 +158,14 @@
     {
       "fieldPath": "homonyms",
       "reason": "Les répertoires onomastiques consultés laissent l'étymologie de Diallo inexpliquée : aucune racine pulaar établie ne la porte, et Bluett, qui donne pourtant la forme de 1734, n'en propose aucune. Les rattachements proposés — à un jallo qui vaudrait « commandement », ou au mandingue diala pour la noblesse — ne sont corroborés par aucune source linguistique primaire et ressemblent à des étymologies populaires nées du contact peul-mandingue. L'absence d'étymologie établie est ici le résultat de la recherche, non son défaut. Les transcriptions Jallo, Jalloh, Jallow et Djaló désignent le même nom et ne sont donc pas des homonymes."
+    },
+    {
+      "fieldPath": "spellings",
+      "reason": "Les sources consultées relèvent les graphies Diallo, Jallo, Djaló, Jallow et Jalloh selon les pays, et les tiennent pour un même nom, mais aucune n'explique pourquoi elles diffèrent. Que la graphie suive la langue de l'administration du territoire (française, portugaise ou britannique) est un constat de répartition, non une explication établie : aucune source consultée ne décrit le passage d'une forme à l'autre."
+    },
+    {
+      "fieldPath": "countries",
+      "reason": "Aucune source consultée ne documente le nom en Mauritanie ; la mention de ce pays est un signalement à confirmer, non un fait attesté."
     }
   ]
 }
