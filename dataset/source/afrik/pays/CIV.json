@@ -3,20 +3,22 @@
   "nameFr": "Côte d'Ivoire",
   "nameEn": "Côte d'Ivoire",
   "nameOfficial": "République de Côte d'Ivoire (République de Côte d'Ivoire)",
-  "summary": "La Côte d'Ivoire porte le nom d'une marchandise : les navigateurs portugais désignaient ce littoral par ce qu'on y achetait, et le français a fixé l'appellation au XIXe siècle. Le pays réunit royaumes akan, peuples krou, mandé et voltaïques, soit une soixantaine de groupes. Le baoulé, l'agni et le dioula structurent le quotidien à côté du français.",
-  "etymology": "Le nom Côte d'Ivoire renvoie au commerce de l'ivoire pratiqué le long du littoral. Des navigateurs portugais passent le cap des Palmes en 1471, mais l'appellation qui a donné le nom actuel est néerlandaise : au début du XVIIe siècle, des marchands hollandais trouvent l'ivoire en abondance entre le cap des Palmes et Fresco et nomment ce littoral Tand Kust, la côte des dents. Alfred Schwartz, qui a étudié cette période, attribue à cette appellation l'origine du nom actuel. Les Français le fixent ensuite : le décret du 17 décembre 1891 crée la colonie de Côte d'Ivoire, celui du 10 mars 1893 l'organise comme colonie distincte, aux côtés de la Guinée française et du Bénin.",
+  "summary": "La Côte d'Ivoire porte le nom d'une marchandise : des navigateurs et des marchands européens ont désigné ce littoral par ce qu'on y achetait, et l'administration française a fixé l'appellation à la fin du XIXe siècle. Le pays réunit royaumes akan, peuples krou, mandé et voltaïques, soit une soixantaine de groupes. Le baoulé, l'agni et le dioula structurent le quotidien à côté du français.",
+  "etymology": "Le nom Côte d'Ivoire renvoie au commerce de l'ivoire pratiqué le long du littoral. Des navigateurs portugais passent le cap des Palmes en 1471, mais l'appellation qui a donné le nom actuel est néerlandaise : au début du XVIIe siècle, des marchands hollandais trouvent l'ivoire en abondance entre le cap des Palmes et Fresco et nomment ce littoral Tand Kust, la côte des dents. Alfred Schwartz, qui a étudié cette période, attribue à cette appellation l'origine du nom actuel. Les Français le fixent ensuite. Le décret du 17 décembre 1891 range l'ensemble des possessions françaises de la côte sous le nom de Guinée française et dépendances ; ce n'est pas lui qui crée la colonie de Côte d'Ivoire. C'est le décret du 10 mars 1893 qui la constitue en colonie distincte, aux côtés de la Guinée française et du Bénin. Avant cela, les établissements français de cette côte avaient été organisés en 1889 sous le nom d'Établissements français de la Côte d'Or, nom pris à la côte voisine (l'actuel Ghana). Les traités signés à partir de 1842 par Bouët-Willaumez ouvrent des comptoirs à Grand-Bassam et à Assinie ; ils ne nomment pas le pays. Selon un inventaire des Archives nationales d'outre-mer, les établissements de la Côte d'Or auraient reçu le nom de Côte d'Ivoire dès 1891, pour éviter la confusion avec la colonie britannique voisine ; les textes que nous avons pu lire ne permettent pas de trancher entre 1891 et 1893 pour la première désignation administrative.",
   "nameOriginActor": "Le nom a été donné depuis la mer, par des marchands et des navigateurs européens, en référence à ce qu'on achetait sur ce littoral. L'appellation néerlandaise Tand Kust, la côte des dents, employée au début du XVIIe siècle, est celle dont procède le nom actuel. L'administration française l'a ensuite fixé par décret, à la fin du XIXe siècle. Depuis 1985, la Côte d'Ivoire demande que son nom ne soit plus traduit dans les autres langues.",
   "content": {
     "historicalNames": {
       "formerNames": [
         "Tand Kust, la côte des dents (néerlandais, XVIIe siècle)",
+        "Établissements français de la Côte d'Or (décret du 1er août 1889)",
+        "Guinée française et dépendances (décret du 17 décembre 1891, ensemble des possessions françaises de la côte)",
         "Colonie de Côte d'Ivoire (1893-1960)"
       ],
       "antiquity": "Le territoire actuel de la Côte d'Ivoire était peuplé de diverses sociétés sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs royaumes et territoires (royaumes Akan, chefferies Krou, etc.).",
       "middleAges": "Développement de royaumes Akan (Baoulé, Agni, Abron) migrés depuis le Ghana, peuples Krou forestiers (Bété, Wé, Dida), populations Mandé du Nord (héritage de l'empire du Mali), peuples voltaiques (Sénoufo, Lobi, Koulango). Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Mosaïque de royaumes et chefferies autonomes : royaumes Akan (Baoulé, Agni, Abron), peuples Krou (Bété, Wé, Dida), Mandé du Nord (Malinké, Dioula), Mandé du Sud (Dan, Gouro, Wan), peuples voltaiques (Sénoufo, Lobi, Koulango). Les Européens utilisaient le terme \"Côte d'Ivoire\" ou \"Costa do Marfim\" pour désigner la région côtière riche en commerce d'ivoire.",
-      "colonization": "1893-1960 : Colonie de Côte d'Ivoire (partie de l'Afrique-Occidentale française, AOF). Les Français ont créé la colonie de Côte d'Ivoire en 1893. Le territoire était administré comme une colonie française jusqu'à l'indépendance en 1960.",
-      "contemporary": "1960 : Indépendance de la Côte d'Ivoire (7 août 1960), proclamation de la République de Côte d'Ivoire. Le nom \"Côte d'Ivoire\" est officiel et n'est pas traduit dans les langues étrangères pour préserver l'identité nationale."
+      "precolonial": "Mosaïque de royaumes et chefferies autonomes : royaumes Akan (Baoulé, Agni, Abron), peuples Krou (Bété, Wé, Dida), Mandé du Nord (Malinké, Dioula), Mandé du Sud (Dan, Gouro, Wan), peuples voltaiques (Sénoufo, Lobi, Koulango). Les Européens utilisaient le terme \"Côte d'Ivoire\" ou \"Costa do Marfim\" pour désigner la région côtière riche en commerce d'ivoire. En 1842, les traités de Bouët-Willaumez avec des chefs de Grand-Bassam et d'Assinie ouvrent des comptoirs français sur la côte ; ils ne nomment pas un pays. À l'intérieur, il n'existe pas d'entité unique portant ce nom : des royaumes et des chefferies (Kong, Gyaman, Sanwi, pays baoulé) organisent le territoire.",
+      "colonization": "1893-1960 : Colonie de Côte d'Ivoire (partie de l'Afrique-Occidentale française, AOF). Les Français ont créé la colonie de Côte d'Ivoire par le décret du 10 mars 1893, Louis-Gustave Binger en est le premier gouverneur ; un décret du 17 décembre 1891 avait auparavant rangé les possessions de la côte sous le nom de Guinée française et dépendances. Le territoire était administré comme une colonie française jusqu'à l'indépendance en 1960.",
+      "contemporary": "1960 : Indépendance de la Côte d'Ivoire (7 août 1960), proclamation de la République de Côte d'Ivoire. Le nom \"Côte d'Ivoire\" est officiel et n'est pas traduit dans les langues étrangères pour préserver l'identité nationale. Des lieux de la côte portent encore le nom de ceux qui l'ont explorée ou administrée : Port-Bouët, commune d'Abidjan, porte le nom du commandant Bouët-Willaumez."
     },
     "kingdoms": [
       {
@@ -313,6 +315,24 @@
         "url": null,
         "tier": "referenced",
         "notes": "Étude du peuplement du sud-ouest ivoirien. Elle attribue aux marchands hollandais l'appellation Tand Kust, la côte des dents, dont procède le nom du pays."
+      },
+      {
+        "title": "Archives nationales d'outre-mer — Décrets du 17 décembre 1891 et du 10 mars 1893",
+        "url": "https://recherche-anom.culture.gouv.fr/ark:/61561/qo207ssuw",
+        "tier": "official",
+        "notes": "Le décret de 1891 réunit les possessions françaises de la côte sous le nom de Guinée française et dépendances ; celui du 10 mars 1893 les répartit en trois colonies distinctes : Guinée française, Côte d'Ivoire, Bénin."
+      },
+      {
+        "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Côte d'Ivoire, colonie française",
+        "url": "https://mjp.univ-perp.fr/constit/ci1842.htm",
+        "tier": "referenced",
+        "notes": "Chronologie juridique de la colonie : traités de 1842, établissements de la Côte d'Or organisés par le décret du 1er août 1889, décret du 10 mars 1893 et Binger premier gouverneur."
+      },
+      {
+        "title": "Rezo-Ivoire — Port-Bouët, présentation de la commune",
+        "url": "https://rezoivoire.net/ivoire/villes-villages/4340/la-presentation-de-port-bouet.html",
+        "tier": "unverified",
+        "notes": "Site d'information ivoirien ; il rattache le nom de la commune d'Abidjan à Bouët-Willaumez."
       }
     ],
     "demographics": {
