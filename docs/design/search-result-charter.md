@@ -248,10 +248,12 @@ is generated output and is never edited by hand.
 ### A word we hold a piece on, 2026-09-25
 
 A reader can type a word that no entity answers to — « zombie », « vodun »,
-« ethnie » — because we made a piece on it. That query has no fiche, so it
-ends in the `unknown` state, and the state stays: its closing is still owed
-(`conviction`, `invitation`, then `further`). What changes is one sentence and
-one shelf.
+« ethnie » — because we made a piece on it. That query has no fiche. Measured
+against the live search on 2026-09-25, it ends in the `widened` state far more
+often than in the `unknown` one: the search returns related fiches for almost
+any word (« mami wata » finds ten), and `unknown` is only a query that finds
+nothing. The state does not change in either case, and the closing it owes is
+unchanged. What changes is one sentence and one shelf, in both states.
 
 - **The verdict does not confess.** « Nous ne connaissons pas ce nom » is a
   claim about what we hold, and the piece drawn directly under it would
@@ -260,7 +262,11 @@ one shelf.
   vidéo sur son origine. » What we lack is said; what we have is said.
 - **The piece takes the shelf, not the empty slot.** The slot that says « Pas
   encore de short » exists for a name nobody has told yet; beside a piece on
-  that very word it would say the opposite of what the shelf shows.
+  that very word it would say the opposite of what the shelf shows. A `widened`
+  page with no entity blanks every shelf so nothing unrelated sits under it;
+  the piece found by the reader's word is kept, because it is the one shelf
+  item that is not unrelated. Found on the live page, where the unit tests had
+  passed: the piece was in the API response and absent from the page.
 - **It is not a widening.** A production found by the reader's word answers it,
   as an exact match does, so it carries no « autour de ce nom » note and no
   relation label.
