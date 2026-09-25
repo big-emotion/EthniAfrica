@@ -8,23 +8,45 @@
   "isoCode639_3": "lin",
   "glottocode": "ling1263",
   "nameFr": "Lingala",
-  "nameEn": "Kinshasa Lingala",
-  "alternateNames": ["Losengo", "Ngala"],
-  "whyProblematic": null,
+  "nameEn": "Lingala",
+  "alternateNames": ["Bangala", "Kinshasa Lingala", "Losengo", "Ngala"],
+  "whyProblematic": "Le nom actuel de la langue est une création de missionnaires. Selon Meeuwis, les Européens arrivés sur le fleuve Congo en 1881-1882 ont appris de façon imparfaite le bobangi, langue de commerce des riverains, et l'ont fortement simplifié. Ce parler a été porté en 1884-1885 à Bangala Station, poste de l'État, et a reçu le nom de « Bangala ». En 1901-1902, les missionnaires de Scheut à Nouvelle-Anvers l'ont rebaptisé « Lingala », nom qu'aucune source antérieure à 1902 ne mentionne : dans plusieurs langues bantoues de la région, le préfixe ba- désigne des peuples et non des langues. Le nom Bangala reste en usage dans le nord-est du pays pour une variété locale.",
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
-  "peoples": [],
+  "peoples": [{ "name": "Lingala (locuteurs)", "peopleId": "PPL_LINGALA" }],
   "content": {
-    "vehicularRole": null,
-    "dialects": [],
+    "vehicularRole": "regional_lingua_franca",
+    "dialects": [
+      "Bangala",
+      "Lingala de Brazzaville",
+      "Lingala de Kinshasa",
+      "Lingala du nord-ouest du Congo"
+    ],
     "vitalityStatus": null,
     "sources": [
       {
         "title": "Glottolog 5.3 — Lingala (ling1263)",
         "url": "https://glottolog.org/resource/languoid/id/ling1263",
         "tier": "official",
-        "notes": "Glottolog name: Kinshasa Lingala; classification includes Narrow Bantu."
+        "notes": "Notice directe pour le code ISO 639-3 lin et le glottocode ling1263. Glottolog nomme la notice Kinshasa Lingala, la classe dans le bantou central (zone C, groupes C30-40) et la situe en République démocratique du Congo, en République du Congo et en République centrafricaine. Elle relève les noms Lingala, Ngala (Multitree) et Losengo (Moseley et Asher, 1994). Aucune variété n'y est listée séparément."
+      },
+      {
+        "title": "Meeuwis, Michael, « Lingala », APiCS Online (Atlas of Pidgin and Creole Language Structures Online), chapitre de synthèse",
+        "url": "https://apics-online.info/surveys/60",
+        "tier": "referenced",
+        "notes": "Chapitre lu en texte intégral. Source de l'histoire du bobangi restructuré à partir de 1881-1882, du nom Bangala donné après 1884-1885, du nom Lingala attesté à partir de 1902, des quatre variétés (Kinshasa, Brazzaville, nord-ouest du Congo, Bangala) et de l'estimation de quinze millions de locuteurs natifs et dix millions de locuteurs de seconde langue, sans année donnée."
+      },
+      {
+        "title": "Constitution de la République démocratique du Congo, 18 février 2006, article 1",
+        "url": "https://mjp.univ-perp.fr/constit/cd2006.htm",
+        "tier": "official",
+        "notes": "Texte consulté sur la Digithèque de la Faculté de droit de Perpignan. L'article 1 fixe le français comme langue officielle et le kikongo, le lingala, le swahili et le tshiluba comme langues nationales."
       }
     ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the French DRC country enrichment pass is stable."
+    }
   }
 }
