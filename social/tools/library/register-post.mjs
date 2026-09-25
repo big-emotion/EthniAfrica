@@ -6,6 +6,7 @@
  *       --title "…" --subject "Peuple · X" --pillar "…" --status a-produire \
  *       [--copy _legendes/<slug>.md] [--link-path /fr/atlas/… [--content carrousel]] \
  *       [--video <name>.mp4=<Sujet>/video/<name>.mp4] [--notes "…"] [--write]
+ *       [--profile memoires-sonores]
  *     node social/tools/library/register-post.mjs --where <slug>
  *
  * The library's `publications.json` is its single source of truth: every
@@ -61,6 +62,7 @@ try {
       "link-path": { type: "string" },
       campaign: { type: "string" },
       content: { type: "string" },
+      profile: { type: "string" },
       video: { type: "string", multiple: true },
       where: { type: "string" },
       write: { type: "boolean", default: false },
@@ -68,6 +70,20 @@ try {
   }));
 } catch (error) {
   fail(error.message);
+}
+
+let profile;
+// Intended distribution is distinct from the operator's publication record.
+// Read the renderer's profile rather than keeping another network list here.
+if (values.profile !== undefined) {
+  const profileFile = new URL(
+    `../../harness/carousel-profiles/${encodeURIComponent(values.profile)}.json`,
+    import.meta.url
+  );
+  if (!/^[a-z][a-z0-9-]*$/.test(values.profile) || !existsSync(profileFile)) {
+    fail(`profil de carrousel inconnu : ${values.profile}`);
+  }
+  profile = JSON.parse(readFileSync(profileFile, "utf8"));
 }
 
 const postsRoot = publicationsRoot();
@@ -199,6 +215,12 @@ if (values["link-path"] || values.campaign || values.content) {
   };
 }
 if (values.copy !== undefined) post.copy = values.copy;
+if (profile) {
+  post.profile = profile.id;
+  post.intendedChannels = profile.formats.carrousel.map((network) =>
+    network.toLowerCase()
+  );
+}
 if (renders.length) {
   // The delivered set replaces the previous one: `sync-deliverables.mjs` copies
   // exactly what `renderedFrom` names, and a stale name would be reported as a

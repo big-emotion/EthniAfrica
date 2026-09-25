@@ -318,9 +318,11 @@ feature within EthniAfrica, for TikTok and Instagram only. Its approved
 six-card editorial reference is `docs/design/gabarits-social/MEMOIRES-SONORES.md`:
 three distinct subjects every Sunday, without a mandatory myth, name-origin
 angle, companion reel or site article. For this feature, read that reference
-before applying the general production-chain rules below. It records the
-editorial structure and its technical handoff limits, not renderer or ledger
-support. The website's remit is unchanged; broader display names and bios for
+before applying the general production-chain rules below. The carousel engine
+reads `profil: memoires-sonores`; `ethni_carrousel2.py --brief memoires-sonores`
+returns the current guide and six-card scaffold. Register with `--profile
+memoires-sonores` in the private library only, without a fabricated site record.
+The website's remit is unchanged; broader display names and bios for
 these two accounts are approved in principle, with exact copy still pending.
 
 The publishing chain runs in one order, and **all ten of its skills live here**,

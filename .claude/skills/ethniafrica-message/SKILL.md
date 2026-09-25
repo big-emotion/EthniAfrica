@@ -12,8 +12,8 @@ Review the musical promise, sourced account, listening detail and reference
 card against its approved six-card sequence. Name inventories and the fixed
 name-origin closing are not required. Mark inapplicable name-specific criteria
 explicitly with a reason; retain truthfulness, source attribution and
-non-hierarchical treatment of communities. Do not claim an automated gate
-supports this route without checking it.
+non-hierarchical treatment of communities. The renderer checks the ordered
+stages and recorded audio review; it does not replace this semantic audit.
 
 Une seule question : **quelqu'un qui voit cette production pour la première
 fois repart-il avec le message, et un abonné le reconnaît-il ?**
