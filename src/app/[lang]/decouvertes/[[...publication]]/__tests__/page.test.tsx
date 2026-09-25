@@ -115,10 +115,10 @@ describe("Découvertes server entry", () => {
     expect(first.twitter?.images).not.toEqual(second.twitter?.images);
   });
 
-  // A proverb carries no photo, so its share card falls back to the site's
-  // own image rather than to an address that serves nothing.
+  // A proverb shares the photograph behind it, so a card pasted into a chat
+  // shows the picture the reader saw rather than the site's generic one.
   // @req REQ-158
-  it("leaves a proverb's share image to the site default", async () => {
+  it("shares a proverb with its own photograph", async () => {
     const proverb = eligiblePublications(getDiscoveryPublications()).find(
       (entry) => entry.kind === "proverb"
     )!;
@@ -127,10 +127,14 @@ describe("Découvertes server entry", () => {
     });
 
     expect(metadata.title).toBe(proverb.title.fr);
-    // The locale head already carries the site's share image; the proverb
-    // adds none of its own on top of it.
-    expect(metadata.openGraph?.images).toEqual(["/opengraph-image"]);
-    expect(metadata.twitter?.images).toBeUndefined();
+    expect(metadata.openGraph?.images).toEqual([
+      expect.objectContaining({
+        url: expect.stringContaining(proverb.image!.src),
+      }),
+    ]);
+    expect(metadata.twitter?.images).toEqual([
+      expect.stringContaining(proverb.image!.src),
+    ]);
   });
 });
 
