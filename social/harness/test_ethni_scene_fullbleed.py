@@ -184,6 +184,58 @@ class FullbleedExtensionTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unlabelled"):
             validate_plan(quiet, self.root, 10)
 
+    def speakers(self, value, **extra):
+        feature = {"kind": "speakers", "label": "Pop.", "point": [0, 10], "value": value, "colour": "gold"}
+        feature.update(extra)
+        return self.plan_with(feature)
+
+    def test_a_proportional_point_grows_with_the_number_it_stands_for(self):
+        small, large = self.speakers(1_000_000), self.speakers(9_000_000)
+        validate_plan(large, self.root, 10)
+        bare = self.plan_with({"kind": "point", "label": "Pop.", "point": [0, 10], "colour": "gold"})
+        for plan in (small, large, bare):
+            plan["scenes"][0]["map"]["features"][0].pop("value", None)
+        blank = SceneRenderer(self.speakers(1), self.root, [], proof=False)
+
+        def footprint(plan):
+            frame = SceneRenderer(plan, self.root, [], proof=False).render(1)
+            reference = SceneRenderer(self.plan_with({"kind": "point", "label": "x", "point": [0, -80], "colour": "gold"}),
+                                      self.root, [], proof=False).render(1)
+            return numpy.count_nonzero(numpy.asarray(ImageChopsDiff(frame.crop((0, 100, 1080, 1000)), reference.crop((0, 100, 1080, 1000)))) > 8)
+
+        small_plan, large_plan = self.speakers(1_000_000), self.speakers(9_000_000)
+        self.assertGreater(footprint(large_plan), footprint(small_plan) * 2)
+        with self.assertRaisesRegex(ValueError, "value"):
+            validate_plan(self.speakers(0), self.root, 10)
+        with self.assertRaisesRegex(ValueError, "value"):
+            validate_plan(self.speakers(True), self.root, 10)
+        self.assertTrue(any("proportionnelle" in line for line in blank.legend(large["scenes"][0], 1)))
+
+    def test_a_flag_can_have_horizontal_stripes_and_only_two_orientations_exist(self):
+        base = {"kind": "country", "code": "AAA", "label": "Land", "colour": "gold", "unlabelled": True,
+                "flag_stripes": ["#00ff00", "#ffffff", "#0000ff"]}
+        vertical = self.plan_with(dict(base))
+        horizontal = self.plan_with(dict(base, flag_orientation="horizontal"))
+        validate_plan(horizontal, self.root, 10)
+        a = SceneRenderer(vertical, self.root, [], proof=False).render(1)
+        b = SceneRenderer(horizontal, self.root, [], proof=False).render(1)
+        self.assertNotEqual(a.tobytes(), b.tobytes())
+        with self.assertRaisesRegex(ValueError, "flag_orientation"):
+            validate_plan(self.plan_with(dict(base, flag_orientation="diagonal")), self.root, 10)
+
+    def test_the_caption_is_plain_text_on_the_shading_and_the_middle_of_the_map_is_untouched(self):
+        plan = self.fullbleed_timeline(display=None)
+        plan["scenes"][1] = plan["scenes"][0]
+        renderer = SceneRenderer(self.plan_with({"kind": "point", "label": "x", "point": [0, -80], "colour": "gold"}),
+                                 self.root, SPOKEN, proof=False)
+        bare = SceneRenderer(renderer.plan, self.root, [], proof=False)
+        with_text, without = renderer.render(1), bare.render(1)
+        # No caption plate: away from the words the two frames are identical, even inside the old box.
+        self.assertEqual(with_text.getpixel((500, 1362)), without.getpixel((500, 1362)))
+        # The shading only starts low on the frame: the map is untouched down to 900 px.
+        map_only = renderer._map(renderer.plan["scenes"][0], 1, (0, 0, 1080, 1920), __import__("ethni_scene_fullbleed").LIGHT)
+        self.assertEqual(with_text.getpixel((300, 890)), map_only.getpixel((300, 890)))
+
     def test_a_chronology_can_show_a_century_where_only_the_order_is_known(self):
         plan = self.fullbleed_timeline(display="XIIe siècle")
         validate_plan(plan, self.root, 10)

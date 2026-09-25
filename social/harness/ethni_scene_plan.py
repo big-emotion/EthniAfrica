@@ -112,11 +112,12 @@ def validate_map(value, duration, assets, sources):
     features = value.get("features", [])
     require(isinstance(features, list) and len(features) <= 12, "map supports at most twelve authored features")
     for feature in features:
-        keys(feature, "kind point points label at until colour label_colour evidence meaning offset flag_stripes geometry_note fill_opacity draw_seconds line_style line_width role fade_seconds annotation code unlabelled", "map feature")
+        keys(feature, "kind point points label at until colour label_colour evidence meaning offset flag_stripes geometry_note fill_opacity draw_seconds line_style line_width role fade_seconds annotation code unlabelled value flag_orientation", "map feature")
         if "unlabelled" in feature:
             require(type(feature["unlabelled"]) is bool, "feature.unlabelled must be boolean")
         kind = feature.get("kind")
-        require(kind in ("point", "presence", "presence-zone", "territory", "route", "country"), "Unknown map feature kind")
+        require(kind in ("point", "presence", "presence-zone", "territory", "route", "country", "speakers"), "Unknown map feature kind")
+        require("value" not in feature or kind == "speakers", "Only a speakers feature carries a value")
         text(feature.get("label"), "feature.label")
         evidence(feature.get("evidence"), sources, "feature.evidence")
         start = number(feature.get("at"), "feature.at", 0, duration)
@@ -150,9 +151,13 @@ def validate_map(value, duration, assets, sources):
         if "offset" in feature:
             require(isinstance(feature["offset"], list) and len(feature["offset"]) == 2, "offset requires x/y")
             for v in feature["offset"]: number(v, "offset", -400, 400)
-        if kind in ("point", "presence"):
+        if kind in ("point", "presence", "speakers"):
             point(feature.get("point"), "feature.point")
             require("points" not in feature and "meaning" not in feature, "Point feature has route fields")
+            if kind == "speakers":
+                # A circle whose area follows a figure: the figure must exist and its source be in the evidence.
+                require(type(feature.get("value")) is int and feature["value"] > 0,
+                        "A speakers feature needs a positive integer value")
         elif kind == "country":
             # A whole present-day country switched on at a cue, on the national layer only.
             require(value["layer"] == "national", "A country feature needs the national layer")
@@ -172,6 +177,9 @@ def validate_map(value, duration, assets, sources):
             else:
                 require(feature.get("meaning") in ("journey", "migration", "language-diffusion", "name-circulation", "river"),
                         "route.meaning must distinguish a journey, migration, language diffusion, name circulation or river")
+        if "flag_orientation" in feature:
+            require("flag_stripes" in feature and feature["flag_orientation"] in ("vertical", "horizontal"),
+                    "flag_orientation must be vertical or horizontal and needs flag_stripes")
         if "flag_stripes" in feature:
             import re
             require(kind in ("point", "country") and value["layer"] == "national",

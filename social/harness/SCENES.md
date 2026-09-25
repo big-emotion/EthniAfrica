@@ -332,6 +332,14 @@ Map additions, all validated and all requiring evidence like every other feature
 - `map.inserts`: up to three `{asset, at, until, side: "left"|"right", label}` framed picture
   cards laid on the map while the narration cites them; their credits join the foot of the frame
   only while shown. The map keeps moving underneath.
+- `{"kind": "speakers", "point": [lon, lat], "value": 8143000, ...}` draws a glowing circle whose
+  **area** follows `value` (60 px radius at 16 million); the legend adds « Surface des cercles
+  proportionnelle à l'effectif indiqué ». The figure must be sourced in the feature's evidence and
+  labelled for what it counts (a people's estimated population is not a speaker count).
+- `flag_orientation: "horizontal"` (with `flag_stripes`, on a point or a country) draws three
+  horizontal stripes instead of vertical ones. Flags are simplified stripes: no star, no emblem.
+- In the full-frame layout the caption is plain text with a drop shadow on the shading, not on a
+  plate, and the shading starts at 900 px so the map stays clear above it.
 - A timeline event may carry `display` (for example « XIIe siècle ») when the sources give only a
   century: the `year` then only orders the events and is never printed.
 
