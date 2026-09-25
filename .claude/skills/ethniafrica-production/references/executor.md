@@ -23,11 +23,14 @@ gate without changing the underlying scene engine or its release validator.
   reports. Leave substantive release review to the planning worker. Do not finalize.
 - `delivery`: require the exact proof's completed genuine release review. Run
   documented `finalize`, verify the delivery manifest and complete the library
-  handoff for an actually registered post. Preserve approved publication copy and
-  identify missing copy separately. Do not mark an unregistered subject registered.
+  handoff for an actually registered post. Follow `references/publication-delivery.md`
+  to extract the approved cover and copy the approved Markdown verbatim into the
+  publication kit. Inspect the clean cover at phone size; do not invent a new title,
+  select another scene or claim approval. Verify library copies of video, cover and
+  Markdown. Do not mark an unregistered subject registered.
   Prepare private `delivery-handoff.json` from actual results using the Delivery
   evidence section of `references/automatic-routing.md` in this skill. Missing
-  copy approval or registration evidence remains pending; never invent it for 100%.
+  cover/copy approval or registration evidence remains pending; never invent it for 100%.
 
 Use `social/harness/SCENE-PRODUCTION.md` and `social/harness/SCENE-RELEASE.md`.
 Do not rewrite narration, generate speech, change geometry/images, replace a lock,

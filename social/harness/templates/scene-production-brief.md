@@ -25,6 +25,19 @@ This document is a human handoff, not a second executable schema. The engine rea
 Record measured local seconds in the final plan. A paragraph can span several shots and several
 paragraphs can share one sustained map. Do not retime the audio to fit an arbitrary scene slot.
 
+## Cover and publication copy
+
+- Cover scene, intended still moment and existing short title:
+- Measured timestamp relative to the final export (account for excerpt offsets):
+- Cover composition approval and phone/crop readability review:
+- Approved network-copy Markdown frozen inside the private project:
+- Intended network sections, actual links and copy approval reference:
+- Publication kit destination (new directory beside the clean release):
+
+Follow the [publication kit contract](../../../.claude/skills/ethniafrica-production/references/publication-delivery.md).
+The 360px inspection preview is not a full-resolution cover. Missing cover or copy
+keeps delivery incomplete; neither requires carousel assets.
+
 ## Execution boundary
 
 - Allowed technical adjustments (for example output folder only):

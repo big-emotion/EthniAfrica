@@ -51,6 +51,11 @@ fonts, inks or safe areas.
 Prepare the private `production-brief.md` using the versioned brief template. Show
 the complete narration and a concise visual storyboard together: asset choices,
 camera intentions, dates, locators, schematic paths, uncertainty and silent context.
+Include the cover scene/title and network-specific publication Markdown in that
+combined review. Use `.claude/skills/ethniafrica-production/references/publication-delivery.md`
+for the video kit contract. Reuse approved network copy; otherwise prepare it for
+the intended networks. Record a measured cover timestamp relative to the exported
+video after alignment, not an arbitrary first frame.
 Do not require the operator to approve every technical coordinate or repeat approval
 of unchanged speech. Resolve material editorial choices before execution.
 

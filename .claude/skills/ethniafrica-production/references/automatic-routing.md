@@ -22,15 +22,15 @@ The coordinator's own conversation model stays selected by the operator. Delegat
 to Luna or Sonnet does not convert the parent session to that model or eliminate its
 token usage. Do not label the entire session as running on the worker's model.
 
-| Milestone  | Completion | Owner              | Evidence needed before completion                                                                                                      |
-| ---------- | ---------- | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| context    | 10%        | planner            | Recovered audience/subject/source report and private project identity; missing evidence resolved                                       |
-| narration  | 30%        | planner + operator | Exact full narration and actual approval record                                                                                        |
-| storyboard | 50%        | planner + operator | Complete sequence table and approval of that visual version                                                                            |
-| package    | 70%        | planner            | Actual assets and sources, approved voice, exact alignment, filled plan, inspected preparation previews and valid lock                 |
-| proof      | 85%        | executor           | Rendered proof, verification and execution reports; complete decode                                                                    |
-| review     | 95%        | planner + operator | Exact proof's genuine release review, actual listening/rights/editorial evidence and required approvals                                |
-| delivery   | 100%       | executor           | Clean finalize manifest and verified files; actual library handoff if registered, approved publication copy or explicit scope decision |
+| Milestone  | Completion | Owner              | Evidence needed before completion                                                                                                  |
+| ---------- | ---------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| context    | 10%        | planner            | Recovered audience/subject/source report and private project identity; missing evidence resolved                                   |
+| narration  | 30%        | planner + operator | Exact full narration and actual approval record                                                                                    |
+| storyboard | 50%        | planner + operator | Complete sequence table and approval of that visual version                                                                        |
+| package    | 70%        | planner            | Actual assets and sources, approved voice, exact alignment, filled plan, inspected preparation previews and valid lock             |
+| proof      | 85%        | executor           | Rendered proof, verification and execution reports; complete decode                                                                |
+| review     | 95%        | planner + operator | Exact proof's genuine release review, actual listening/rights/editorial evidence and required approvals                            |
+| delivery   | 100%       | executor           | Clean finalize manifest and verified files; actual library handoff if registered, reviewed cover and approved publication Markdown |
 
 Percentages are weighted completed milestones, not elapsed time, estimated cost or
 visual-quality scores. Do not increment during a render, tool wait or approval wait.
@@ -150,8 +150,8 @@ node social/tools/production/progress.mjs complete "$PROJECT" --stage delivery \
   --evidence video/release-01/delivery.json --evidence delivery-handoff.json
 ```
 
-Include the approved social copy or record an explicit scope
-decision before completing delivery. A missing file, changed hash or absent approval
+Include the approved social copy and reviewed full-resolution cover before
+completing delivery. Follow [publication delivery](publication-delivery.md). A missing file, changed hash or absent approval
 reference refuses completion; changed evidence rolls the dashboard back to the first
 affected milestone. Never edit percentages by hand.
 
@@ -160,15 +160,25 @@ affected milestone. Never edit percentages by hand.
 Write private `delivery-handoff.json` alongside the final package. This is an
 evidence record, not another library registry. Fill from actual review and registry
 results. The progress tool requires it before displaying 100%, verifies the finalized
-files and social-copy hash, and compares a registered library video with the final
-MP4's recorded hash. Approval references remain attestations, not authenticated signatures.
+files, publication-kit identity, cover dimensions and both kit file hashes, and
+compares all three registered library files with their delivered hashes. Approval references remain attestations, not authenticated signatures.
 
 ```json
 {
   "version": 1,
+  "publication_kit": {
+    "path": "video/release-01/publication/publication-kit.json",
+    "sha256": "actual kit manifest digest"
+  },
+  "thumbnail": {
+    "status": "approved",
+    "path": "video/release-01/publication/thumbnail.png",
+    "sha256": "actual cover digest",
+    "approval_reference": "actual selected-composition approval and clean-cover review"
+  },
   "social_copy": {
     "status": "approved",
-    "path": "publication-copy.md",
+    "path": "video/release-01/publication/publication-copy.md",
     "sha256": "actual file digest",
     "approval_reference": "actual approval reference"
   },
@@ -176,18 +186,19 @@ MP4's recorded hash. Approval references remain attestations, not authenticated 
     "status": "complete",
     "post_id": "actual registered post ID",
     "operation_reference": "actual registration report or command result",
-    "copied_video_path": "absolute path returned by the private registry lookup"
+    "copied_video_path": "actual absolute library video path",
+    "copied_thumbnail_path": "actual absolute library thumbnail path",
+    "copied_social_copy_path": "actual absolute library Markdown path"
   }
 }
 ```
 
 For an actually unregistered subject, replace `library` with
 `{"status":"unregistered","evidence":"actual lookup result or established unregistered scope"}`.
-If the operator explicitly excludes social copy from this delivery, replace
-`social_copy` with `{"status":"excluded","reason":"actual agreed scope","approval_reference":"actual operator decision"}`.
-Do not silently assume that exclusion or registration status. Keep an incomplete
-delivery at 95% and list the remaining decision. Media files remain available even
-while publication-copy or library handoff is pending.
+The cover and approved Markdown are mandatory; the former `social_copy: excluded`
+record no longer completes delivery. Do not assume registration status. Keep an
+incomplete delivery at 95% and list the remaining decision. The clean video remains
+available while the publication kit or library handoff is pending.
 
 Official native interfaces: [Codex custom agents](https://developers.openai.com/codex/subagents/)
 and [Claude subagents](https://code.claude.com/docs/en/sub-agents).

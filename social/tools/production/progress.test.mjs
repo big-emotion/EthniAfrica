@@ -10,6 +10,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
 import { createHash } from "node:crypto";
+import { deflateSync } from "node:zlib";
 import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
 import {
@@ -167,8 +168,37 @@ test("waiting never increases progress and a support escalation is announced", (
   assert.match(dashboard(root, state), /Scene input mismatch/);
 });
 
-// @req REQ-032
-test("100 percent requires a clean delivery manifest and its matching files", (t) => {
+const sha = (value) => createHash("sha256").update(value).digest("hex");
+
+function png(width, height) {
+  const chunk = (type, data) => {
+    const bytes = Buffer.concat([Buffer.from(type), data]);
+    let crc = 0xffffffff;
+    for (const byte of bytes) {
+      crc ^= byte;
+      for (let bit = 0; bit < 8; bit++)
+        crc = (crc >>> 1) ^ (crc & 1 ? 0xedb88320 : 0);
+    }
+    const out = Buffer.alloc(data.length + 12);
+    out.writeUInt32BE(data.length);
+    bytes.copy(out, 4);
+    out.writeUInt32BE((crc ^ 0xffffffff) >>> 0, out.length - 4);
+    return out;
+  };
+  const header = Buffer.alloc(13);
+  header.writeUInt32BE(width);
+  header.writeUInt32BE(height, 4);
+  header[8] = 8;
+  header[9] = 2;
+  return Buffer.concat([
+    Buffer.from("89504e470d0a1a0a", "hex"),
+    chunk("IHDR", header),
+    chunk("IDAT", deflateSync(Buffer.alloc((width * 3 + 1) * height))),
+    chunk("IEND", Buffer.alloc(0)),
+  ]);
+}
+
+function deliveryFixture(t) {
   const { root, state } = fixture(t);
   for (const stage of [
     "context",
@@ -179,19 +209,9 @@ test("100 percent requires a clean delivery manifest and its matching files", (t
     "review",
   ])
     finish(root, state, stage);
-  assert.throws(() => finish(root, state, "delivery"), /delivery.json/);
-  assert.equal(getProgress(root, state).percent, 95);
-  mkdirSync(join(root, "video"));
-  writeFileSync(
-    join(root, "video/delivery.json"),
-    JSON.stringify({ ready_to_publish: false })
-  );
-  assert.throws(
-    () => completeStage(root, state, "delivery", ["video/delivery.json"], ""),
-    /finalize/
-  );
+  mkdirSync(join(root, "video/publication"), { recursive: true });
   const files = {};
-  for (const file of [
+  for (const name of [
     "video.mp4",
     "captions.srt",
     "narration.fr.txt",
@@ -199,8 +219,9 @@ test("100 percent requires a clean delivery manifest and its matching files", (t
     "mobile-preview.png",
     "release-review.json",
   ]) {
-    writeFileSync(join(root, "video", file), `Fixture ${file}`);
-    files[file] = createHash("sha256").update(`Fixture ${file}`).digest("hex");
+    const bytes = `Fixture ${name}`;
+    writeFileSync(join(root, "video", name), bytes);
+    files[name] = sha(bytes);
   }
   writeFileSync(
     join(root, "video/delivery.json"),
@@ -211,74 +232,161 @@ test("100 percent requires a clean delivery manifest and its matching files", (t
       files,
     })
   );
-  assert.throws(
-    () => completeStage(root, state, "delivery", ["video/delivery.json"]),
-    /library handoff/
+  writeFileSync(join(root, "video/publication/thumbnail.png"), png(1080, 1920));
+  writeFileSync(
+    join(root, "video/publication/publication-copy.md"),
+    "## Instagram (reel)\nTexte français approuvé.\n"
   );
-  assert.throws(
-    () => completeStage(root, state, "delivery", ["video/delivery.json"]),
-    /handoff/
-  );
+  const kit = {
+    version: 1,
+    source_delivery: {
+      path: "video/delivery.json",
+      sha256: sha(readFileSync(join(root, "video/delivery.json"))),
+    },
+    source_video_sha256: files["video.mp4"],
+    at_seconds: 1,
+    files: Object.fromEntries(
+      ["thumbnail.png", "publication-copy.md"].map((name) => [
+        name,
+        sha(readFileSync(join(root, "video/publication", name))),
+      ])
+    ),
+  };
   const handoff = {
     version: 1,
+    publication_kit: {
+      path: "video/publication/publication-kit.json",
+      sha256: "",
+    },
     social_copy: {
-      status: "excluded",
-      reason: "Test fixture excludes publication copy",
-      approval_reference: "Simulated test approval only",
+      status: "approved",
+      path: "video/publication/publication-copy.md",
+      sha256: kit.files["publication-copy.md"],
+      approval_reference: "Synthetic copy approval",
+    },
+    thumbnail: {
+      status: "approved",
+      path: "video/publication/thumbnail.png",
+      sha256: kit.files["thumbnail.png"],
+      approval_reference: "Synthetic cover review at phone size",
     },
     library: {
       status: "unregistered",
-      evidence: "Synthetic test project is not registered",
+      evidence: "Synthetic unregistered project",
     },
   };
-  writeFileSync(join(root, "delivery-handoff.json"), JSON.stringify(handoff));
-  completeStage(root, state, "delivery", [
-    "video/delivery.json",
-    "delivery-handoff.json",
-  ]);
-  assert.equal(getProgress(root, state).percent, 100);
-  const copied = join(root, "library-copy.mp4");
-  handoff.library = {
-    status: "complete",
-    post_id: "fixture-post",
-    operation_reference: "Synthetic fixture registry operation",
-    copied_video_path: copied,
+  const save = () => {
+    writeFileSync(
+      join(root, "video/publication/publication-kit.json"),
+      JSON.stringify(kit)
+    );
+    handoff.publication_kit.sha256 = sha(
+      readFileSync(join(root, "video/publication/publication-kit.json"))
+    );
+    writeFileSync(join(root, "delivery-handoff.json"), JSON.stringify(handoff));
   };
-  writeFileSync(copied, "Wrong library export");
-  writeFileSync(join(root, "delivery-handoff.json"), JSON.stringify(handoff));
+  const complete = () =>
+    completeStage(root, state, "delivery", [
+      "video/delivery.json",
+      "delivery-handoff.json",
+    ]);
+  save();
+  return { root, state, kit, handoff, save, complete };
+}
+
+// @req REQ-032
+test("delivery requires both an approved thumbnail and Markdown copy, with no silent exclusion", (t) => {
+  const f = deliveryFixture(t);
+  const thumbnail = f.handoff.thumbnail;
+  delete f.handoff.thumbnail;
+  f.save();
+  assert.throws(f.complete, /thumbnail/i);
+  assert.equal(getProgress(f.root, f.state).percent, 95);
+  f.handoff.thumbnail = { ...thumbnail, approval_reference: "" };
+  f.save();
+  assert.throws(f.complete, /thumbnail/i);
+  f.handoff.thumbnail = thumbnail;
+  f.handoff.social_copy = {
+    status: "excluded",
+    reason: "Old scope",
+    approval_reference: "Old approval",
+  };
+  f.save();
+  assert.throws(f.complete, /social copy/i);
+});
+
+// @req REQ-032
+test("delivery still requires a successful clean manifest and all release artifacts", (t) => {
+  const f = deliveryFixture(t);
   assert.throws(
-    () =>
-      completeStage(root, state, "delivery", [
-        "video/delivery.json",
-        "delivery-handoff.json",
-      ]),
-    /Library video/
+    () => completeStage(f.root, f.state, "delivery", ["review.md"]),
+    /delivery.json/
   );
-  writeFileSync(copied, readFileSync(join(root, "video/video.mp4")));
-  completeStage(root, state, "delivery", [
-    "video/delivery.json",
-    "delivery-handoff.json",
-  ]);
-  assert.equal(getProgress(root, state).percent, 100);
-  writeFileSync(join(root, "publication-copy.md"), "Approved fixture copy");
-  handoff.social_copy = {
-    status: "approved",
-    path: "publication-copy.md",
-    sha256: createHash("sha256").update("Approved fixture copy").digest("hex"),
-    approval_reference: "Synthetic approval for test only",
+  const path = join(f.root, "video/delivery.json");
+  const report = JSON.parse(readFileSync(path, "utf8"));
+  writeFileSync(path, JSON.stringify({ ...report, ready_to_publish: false }));
+  assert.throws(f.complete, /finalize/);
+  delete report.files["CREDITS.md"];
+  writeFileSync(path, JSON.stringify(report));
+  assert.throws(f.complete, /CREDITS/);
+});
+
+// @req REQ-032
+test("100 percent tracks the real kit files and the finalized source video", (t) => {
+  const f = deliveryFixture(t);
+  f.complete();
+  assert.equal(getProgress(f.root, f.state).percent, 100);
+  const cover = join(f.root, f.handoff.thumbnail.path);
+  const original = readFileSync(cover);
+  writeFileSync(cover, png(360, 640));
+  assert.equal(getProgress(f.root, f.state).percent, 95);
+  f.kit.files["thumbnail.png"] = sha(readFileSync(cover));
+  f.handoff.thumbnail.sha256 = f.kit.files["thumbnail.png"];
+  f.save();
+  assert.throws(f.complete, /1080.*1920/);
+  writeFileSync(cover, original);
+  f.kit.files["thumbnail.png"] = sha(original);
+  f.handoff.thumbnail.sha256 = sha(original);
+  f.save();
+  f.kit.source_video_sha256 = "stale-video";
+  f.save();
+  assert.throws(f.complete, /source video/i);
+  f.kit.source_video_sha256 = sha(
+    readFileSync(join(f.root, "video/video.mp4"))
+  );
+  f.save();
+  assert.equal(getProgress(f.root, f.state).percent, 100);
+  writeFileSync(join(f.root, f.handoff.social_copy.path), "Changed post");
+  assert.equal(getProgress(f.root, f.state).percent, 95);
+});
+
+// @req REQ-032
+test("registered delivery verifies library copies of video, thumbnail and Markdown", (t) => {
+  const f = deliveryFixture(t);
+  const lib = join(f.root, "library");
+  mkdirSync(lib);
+  const entries = [
+    ["video", "video/video.mp4"],
+    ["thumbnail", f.handoff.thumbnail.path],
+    ["social_copy", f.handoff.social_copy.path],
+  ];
+  f.handoff.library = {
+    status: "complete",
+    post_id: "fixture",
+    operation_reference: "Test registration",
   };
-  writeFileSync(join(root, "delivery-handoff.json"), JSON.stringify(handoff));
-  completeStage(root, state, "delivery", [
-    "video/delivery.json",
-    "delivery-handoff.json",
-  ]);
-  assert.equal(getProgress(root, state).percent, 100);
-  writeFileSync(join(root, "publication-copy.md"), "Changed copy");
-  assert.equal(getProgress(root, state).percent, 95);
-  writeFileSync(join(root, "publication-copy.md"), "Approved fixture copy");
-  assert.equal(getProgress(root, state).percent, 100);
-  writeFileSync(join(root, "video/video.mp4"), "Changed export");
-  assert.equal(getProgress(root, state).percent, 95);
+  for (const [key, path] of entries) {
+    const dest = join(lib, key);
+    writeFileSync(dest, readFileSync(join(f.root, path)));
+    f.handoff.library[`copied_${key}_path`] = dest;
+  }
+  f.save();
+  f.complete();
+  assert.equal(getProgress(f.root, f.state).percent, 100);
+  writeFileSync(f.handoff.library.copied_thumbnail_path, "Wrong cover");
+  assert.equal(getProgress(f.root, f.state).percent, 95);
+  f.save();
+  assert.throws(f.complete, /Library thumbnail/);
 });
 
 // @req REQ-032

@@ -35,20 +35,22 @@ Paths are relative to this private project when possible. Calculate hashes from
 actual bytes; do not fill sample hashes or label drafts as final. The engine lock
 and delivery manifest remain the authorities for technical reproducibility.
 
-| Artifact                                   | Path                    | Current SHA-256 / version | Evidence / unresolved work |
-| ------------------------------------------ | ----------------------- | ------------------------- | -------------------------- |
-| French narration                           |                         |                           |                            |
-| Visual proposal / production brief         |                         |                           |                            |
-| Source and licence register / asset bundle |                         |                           |                            |
-| Approved voice and matching alignment      |                         |                           |                            |
-| Executable scene plan                      |                         |                           |                            |
-| Message / myth / applicable naming reviews |                         |                           |                            |
-| Handoff lock                               |                         |                           |                            |
-| Proof and execution report                 |                         |                           |                            |
-| Release review                             |                         |                           |                            |
-| Clean delivery manifest                    |                         |                           |                            |
-| Delivery copy / library evidence           | `delivery-handoff.json` |                           |                            |
-| Approved social copy and links             |                         |                           |                            |
+| Artifact                                         | Path                    | Current SHA-256 / version | Evidence / unresolved work |
+| ------------------------------------------------ | ----------------------- | ------------------------- | -------------------------- |
+| French narration                                 |                         |                           |                            |
+| Visual proposal / production brief               |                         |                           |                            |
+| Source and licence register / asset bundle       |                         |                           |                            |
+| Approved voice and matching alignment            |                         |                           |                            |
+| Executable scene plan                            |                         |                           |                            |
+| Message / myth / applicable naming reviews       |                         |                           |                            |
+| Handoff lock                                     |                         |                           |                            |
+| Proof and execution report                       |                         |                           |                            |
+| Release review                                   |                         |                           |                            |
+| Clean delivery manifest                          |                         |                           |                            |
+| Delivery copy / library evidence                 | `delivery-handoff.json` |                           |                            |
+| Reviewed full-resolution cover and selected time |                         |                           |                            |
+| Publication-kit manifest                         |                         |                           |                            |
+| Approved social copy and links                   |                         |                           |                            |
 
 ## Approval evidence
 
@@ -63,6 +65,7 @@ If the evidence cannot be recovered, mark it pending rather than asserting appro
 | Visual plan                                             | pending |                                       |                                                |
 | Voice choice / paid generation authorization, if needed | pending |                                       |                                                |
 | Recording / pronunciation                               | pending |                                       |                                                |
+| Cover choice and network publication copy               | pending |                                       |                                                |
 | Exact proof / intended release                          | pending |                                       |                                                |
 
 On resume, compare the current bytes with the approved versions. Do not treat a
@@ -75,6 +78,9 @@ rights and voice rights in the source/release records, never infer them from thi
 - Registered post ID and verified location, or unregistered:
 - Clean delivery directory and verified manifest:
 - Library copy hash verification, if applicable:
-- Publication copy ready / missing:
+- Cover inspected at phone size and actual thumbnail path/hash:
+- Publication Markdown path/hash and approved target networks:
+- Library thumbnail and Markdown copy hash verification, if applicable:
+- Publication kit ready / missing:
 - Remaining release or registration decisions:
 - Published or scheduled by this workflow: no

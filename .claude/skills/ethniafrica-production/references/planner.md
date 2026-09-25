@@ -14,7 +14,10 @@ Use `.claude/skills/ethniafrica-structure/SKILL.md` for context, narrative, stor
 and package preparation. Read the scene production guide, catalogue and relevant
 storyboard/brief templates. Reuse upstream work; choose source-supported geometry
 and assets. Preserve the full visual sequence table as the operator's review surface.
-Drafts are not approvals. Return proposed narration/storyboard for operator approval;
+Use `references/publication-delivery.md` in this skill to include the cover choice
+and network-specific Markdown copy in the combined proposal. Freeze the approved
+copy inside the private project and record the measured cover time relative to the
+export, including excerpt offsets. Drafts are not approvals. Return proposed narration/storyboard for operator approval;
 do not generate previews, render or purchase audio before visual-plan approval.
 
 At the `package` milestone, require the existing narration and visual-plan approvals.
@@ -29,7 +32,8 @@ complete execution handoff. Do not render the proof in this milestone.
 At the `review` milestone, use `.claude/skills/ethniafrica-produire/SKILL.md` and
 `social/harness/SCENE-RELEASE.md`. Review the exact proof and complete only checks
 you can substantiate, including actual listening and applicable historical/editorial
-reviews. Preserve real prior approvals; identify all outstanding decisions together.
+reviews. Check the selected cover frame and approved network copy as part of this
+review, recording any unresolved readability/crop issue. Preserve real prior approvals; identify all outstanding decisions together.
 Never certify rights or human approval from a file's existence. Do not finalize.
 
 For a support task after execution failure, diagnose the reported problem within
