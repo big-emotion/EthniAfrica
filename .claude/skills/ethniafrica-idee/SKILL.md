@@ -5,6 +5,15 @@ description: Brainstormer un sujet de publication EthniAfrica et en sortir un ra
 
 # idee — brainstormer un sujet
 
+## Mémoires sonores scope (2026-09-25)
+
+Read `docs/design/gabarits-social/MEMOIRES-SONORES.md` first for this feature.
+Use its musical question, six-card format, TikTok/Instagram scope and selected
+opening subjects. A name-origin question, attested myth or corpus fiche is not
+required. Research and source attribution remain required. Do not assign a
+name typology, episode number or site route merely to fit the existing ledger;
+the reference describes that unresolved technical handoff explicitly.
+
 Première étape. Rien ne vient avant. `structure` vient après.
 
 Tu produis **un rapport de sujet**, pas un contenu. Un rapport de sujet est le

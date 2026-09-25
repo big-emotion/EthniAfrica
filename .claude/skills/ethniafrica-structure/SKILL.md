@@ -5,6 +5,15 @@ description: Prepare EthniAfrica narration, visual storyboards, sourced assets a
 
 # structure — écrire le contenu
 
+## Mémoires sonores carousel route (2026-09-25)
+
+Read `docs/design/gabarits-social/MEMOIRES-SONORES.md` first for this feature.
+Its approved six-card sequence replaces the name-origin sequence and closing.
+Prepare TikTok/Instagram copy only; no mandatory myth, reel or site article.
+Research and full-text approval still apply. Follow the reference's technical
+handoff: it adds no renderer field or ledger category, and neither may be
+invented to register a musical subject as a name-origin production.
+
 Deuxième étape. `idee` vient avant, `produire` vient après.
 
 ## Scene-video dispatch and handoff

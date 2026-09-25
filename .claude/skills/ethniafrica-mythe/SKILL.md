@@ -5,6 +5,14 @@ description: Vérifier si un sujet EthniAfrica défait une idée reçue que son 
 
 # mythe — ce sujet défait-il une idée reçue ?
 
+## Mémoires sonores scope (2026-09-25)
+
+Read `docs/design/gabarits-social/MEMOIRES-SONORES.md` first for this feature.
+A documented musical story may receive `explique` and remain a carousel;
+an attested myth is optional. Evaluate any actual correction against its
+identified sources, without requiring a nonexistent site fiche. Do not invent
+a myth to admit the subject. Attribution and uncertainty remain mandatory.
+
 Une question, trois lignes, un verdict. C'est tout le skill.
 
 Il est appelé par `ethniafrica-idee` (le sujet), `ethniafrica-structure` (les

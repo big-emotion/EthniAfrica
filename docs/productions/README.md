@@ -44,6 +44,15 @@ rule applies there once that skill is updated to write to this ledger.
 
 ## The fixed format
 
+**Scope exception, 2026-09-25:**
+[Mémoires sonores](../design/gabarits-social/MEMOIRES-SONORES.md) is a separate
+recurring feature within EthniAfrica: three musical carousel subjects every
+Sunday, each for TikTok and Instagram only. The Monday/Wednesday/Friday,
+name-origin and mandatory-myth rules below describe the existing name series,
+not this feature. No musical ledger typology or registration support is added
+by this note; selected launch subjects are not publication records. Do not
+file them under a fabricated name category or invent a site route.
+
 - **Three publication days**: Monday, Wednesday, Friday.
 - **A connected subject sequence with flexible depth**, at the cadence stated
   below. There is no fixed quota of new subjects per day or per week.
