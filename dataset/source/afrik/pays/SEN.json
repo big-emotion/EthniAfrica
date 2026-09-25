@@ -168,7 +168,7 @@
       "precolonial": "Apogée des royaumes wolof et sérères. Commerce avec les Européens (or, ivoire, esclaves). Résistance à l'islamisation pour certains groupes (Sérère).",
       "colonization": "XVe siècle : premiers contacts portugais. 1659 : Fondation de Saint-Louis par les Français. 1895 : Intégration à l'AOF. Développement de Dakar comme capitale administrative. Résistance sénégalaise.",
       "independenceStruggle": "Mouvements nationalistes dans les années 1950. Indépendance obtenue en 1960. Léopold Sédar Senghor devient premier président.",
-      "postIndependence": "Première République (1960-1980) : présidence de Senghor, stabilité politique. Deuxième République (1981-2000) : présidence d'Abdou Diouf. Troisième République depuis 2000 : alternance démocratique, stabilité politique, développement économique."
+      "postIndependence": "Première République (1960-1980) : présidence de Senghor, stabilité politique. Deuxième République (1981-2000) : présidence d'Abdou Diouf. Troisième République depuis 2000 : alternance démocratique, stabilité politique, développement économique. En juillet 1964, les chefs d'État et de gouvernement de l'Organisation de l'unité africaine, réunis au Caire, s'engagent à respecter les frontières existant à l'accession de chaque État à l'indépendance ; le texte ne mentionne pas le consentement des populations concernées. Dans une enquête Afrobarometer de 2005 menée dans seize pays africains et analysée par Amanda Robinson, 51 % des Sénégalais interrogés se disent plus attachés à leur pays qu'à leur groupe. Cette enquête mesure des déclarations recueillies en 2005 et n'explique pas les écarts entre pays."
     },
     "sources": [
       {
@@ -257,6 +257,18 @@
         "url": "https://bvpb.mcu.es/es/consulta/registro.cmd?id=406911",
         "tier": "referenced",
         "notes": "Donne deux noms du fleuve chez les peuples de ses rives : Mayo chez les Toucouleurs, Colle chez les Soninkés de Ngalam. L'imprimé est numérisé par la Biblioteca Virtual del Patrimonio Bibliográfico. Le passage est situé au livre VIII, chapitre 3 ; il n'a pas été lu dans l'original, et la référence a été trouvée par la version anglaise de Wikipédia, consultée le 9 septembre 2026."
+      },
+      {
+        "title": "National versus Ethnic Identification in Africa: Modernization, Colonial Legacy, and the Origins of Territorial Nationalism (Amanda Lea Robinson, World Politics, 2014)",
+        "url": "https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/e/1659/files/2014/01/Robinson_NationalismVsEthnicity-13xk2vn.pdf",
+        "tier": "referenced",
+        "notes": "Manuscrit d'auteur du 31 octobre 2013 : la figure 1 classe seize pays selon la part des personnes interrogées qui se disent plus attachées à leur nation qu'à leur groupe (Sénégal : 51 %). Enquête Afrobarometer de 2005, fondée sur des déclarations. La version publiée (World Politics 66, n° 4, p. 709-746) n'a pas été consultée."
+      },
+      {
+        "title": "Border Disputes among African States, AHG/Res.16(I) (Organisation de l'unité africaine, Le Caire, 17-21 juillet 1964)",
+        "url": "https://www.peaceau.org/uploads/ahg-res-16-i-en.pdf",
+        "tier": "official",
+        "notes": "Texte de la résolution lu en entier. Il engage les États membres à respecter les frontières existant à leur indépendance ; il ne contient aucun relevé de vote ni mention du consentement des populations."
       }
     ],
     "demographics": {

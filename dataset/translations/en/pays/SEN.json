@@ -168,7 +168,7 @@
       "precolonial": "Height of the Wolof and Serer kingdoms. Trade with Europeans (gold, ivory, slaves). Resistance to Islamisation among some groups (Serer).",
       "colonization": "Fifteenth century: first Portuguese contacts. 1659: founding of Saint-Louis by the French. 1895: integration into French West Africa (AOF). Development of Dakar as the administrative capital. Senegalese resistance.",
       "independenceStruggle": "Nationalist movements in the 1950s. Independence achieved in 1960. Léopold Sédar Senghor becomes the first president.",
-      "postIndependence": "First Republic (1960-1980): Senghor's presidency, political stability. Second Republic (1981-2000): presidency of Abdou Diouf. Third Republic since 2000: democratic alternation, political stability, economic development."
+      "postIndependence": "First Republic (1960–1980): presidency of Senghor, political stability. Second Republic (1981–2000): presidency of Abdou Diouf. Third Republic since 2000: democratic alternation of power, political stability, economic development. In July 1964, the heads of state and government of the Organisation of African Unity, meeting in Cairo, pledged to respect the borders existing at each state's accession to independence; the text does not mention the consent of the populations concerned. In a 2005 Afrobarometer survey conducted in sixteen African countries and analysed by Amanda Robinson, 51% of the Senegalese respondents say they are more attached to their country than to their group. This survey measures statements collected in 2005 and does not explain the differences between countries."
     },
     "sources": [
       {
@@ -257,6 +257,18 @@
         "url": "https://bvpb.mcu.es/es/consulta/registro.cmd?id=406911",
         "tier": "referenced",
         "notes": "Gives two names of the river among the peoples of its banks: Mayo among the Toucouleurs, Colle among the Soninke of Ngalam. The printed work is digitised by the Biblioteca Virtual del Patrimonio Bibliográfico. The passage is located in book VIII, chapter 3; it has not been read in the original, and the reference was found via the English version of Wikipedia, consulted on 9 September 2026."
+      },
+      {
+        "title": "National versus Ethnic Identification in Africa: Modernization, Colonial Legacy, and the Origins of Territorial Nationalism (Amanda Lea Robinson, World Politics, 2014)",
+        "url": "https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/e/1659/files/2014/01/Robinson_NationalismVsEthnicity-13xk2vn.pdf",
+        "tier": "referenced",
+        "notes": "Author's manuscript of 31 October 2013: Figure 1 ranks sixteen countries by the share of respondents who say they are more attached to their nation than to their group (Senegal: 51%). 2005 Afrobarometer survey, based on statements by respondents. The published version (World Politics 66, no. 4, pp. 709–746) has not been consulted."
+      },
+      {
+        "title": "Border Disputes among African States, AHG/Res.16(I) (Organisation de l'unité africaine, Le Caire, 17-21 juillet 1964)",
+        "url": "https://www.peaceau.org/uploads/ahg-res-16-i-en.pdf",
+        "tier": "official",
+        "notes": "Text of the resolution read in full. It commits member states to respect the borders existing at their independence; it contains no record of votes and no mention of the consent of the populations."
       }
     ],
     "demographics": {
@@ -307,9 +319,9 @@
   },
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-09-09T15:13:40.691Z",
+    "translatedAt": "2026-09-25T04:33:42.670Z",
     "model": "claude-sonnet-5",
-    "sourceHash": "02bedfb71d8a6e8eb5dddfcb8e308da011a7bcb36c8092d31560957df8b7ed19",
+    "sourceHash": "9cfeca498553474a88ef8adc8bf004d1f9f48e5d802eb16a68a7cd8d19c4a285",
     "fieldHashes": {
       "nameOfficial": "68f0ecbae22f84cc",
       "summary": "7398d32fa37abc5a",
@@ -371,7 +383,7 @@
       "content.historicalFacts.precolonial": "5d6a37012926fb70",
       "content.historicalFacts.colonization": "874aba5da1143671",
       "content.historicalFacts.independenceStruggle": "6c68b674193c994e",
-      "content.historicalFacts.postIndependence": "6a9b10fbc9d9fff3",
+      "content.historicalFacts.postIndependence": "bd563413b519d43e",
       "content.sources[9].notes": "099ed1b87e148324",
       "content.sources[10].notes": "9507d9ea8b4b206d",
       "content.sources[11].notes": "1e4769163ba66b9a",
@@ -379,6 +391,8 @@
       "content.sources[13].notes": "3246ef166f5b4b55",
       "content.sources[14].notes": "e98adfe8697f4fe0",
       "content.sources[15].notes": "fb8051930c6fb791",
+      "content.sources[16].notes": "895c6d98cb52469d",
+      "content.sources[17].notes": "1b32804ff6174247",
       "content.demographics.peoples[0].region": "c0d8b3648fd18fad",
       "content.demographics.peoples[1].region": "26a99218b3fb427d",
       "content.demographics.peoples[2].region": "2cc40b7c73e006e6",
