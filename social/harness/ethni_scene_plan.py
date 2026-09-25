@@ -79,7 +79,16 @@ def validate_geometry(geo):
 
 
 def validate_map(value, duration, assets, sources):
-    keys(value, "asset layer borders border_style highlights camera features graticule", "map")
+    keys(value, "asset layer borders border_style highlights camera features graticule inserts", "map")
+    inserts = value.get("inserts", [])
+    require(isinstance(inserts, list) and len(inserts) <= 3, "map supports at most three inserts")
+    for card in inserts:
+        keys(card, "asset at until side label", "map insert")
+        require(card.get("asset") in assets and assets[card["asset"]]["kind"] == "image", "insert image asset required")
+        shown = number(card.get("at"), "insert.at", 0, duration)
+        require(number(card.get("until"), "insert.until", 0, duration) > shown, "insert.until must follow at")
+        require(card.get("side") in ("left", "right"), "insert side must be left or right")
+        text(card.get("label"), "insert.label")
     require(value.get("asset") in assets and assets[value["asset"]]["kind"] == "geojson", "map: geographic asset required")
     require(value.get("layer") in ("national", "political", "people", "physical"), "map: unknown layer")
     require(type(value.get("borders")) is bool, "map.borders must be explicit")
@@ -103,9 +112,9 @@ def validate_map(value, duration, assets, sources):
     features = value.get("features", [])
     require(isinstance(features, list) and len(features) <= 12, "map supports at most twelve authored features")
     for feature in features:
-        keys(feature, "kind point points label at until colour label_colour evidence meaning offset flag_stripes geometry_note fill_opacity draw_seconds line_style line_width role fade_seconds annotation", "map feature")
+        keys(feature, "kind point points label at until colour label_colour evidence meaning offset flag_stripes geometry_note fill_opacity draw_seconds line_style line_width role fade_seconds annotation code", "map feature")
         kind = feature.get("kind")
-        require(kind in ("point", "presence", "presence-zone", "territory", "route"), "Unknown map feature kind")
+        require(kind in ("point", "presence", "presence-zone", "territory", "route", "country"), "Unknown map feature kind")
         text(feature.get("label"), "feature.label")
         evidence(feature.get("evidence"), sources, "feature.evidence")
         start = number(feature.get("at"), "feature.at", 0, duration)
@@ -142,6 +151,11 @@ def validate_map(value, duration, assets, sources):
         if kind in ("point", "presence"):
             point(feature.get("point"), "feature.point")
             require("points" not in feature and "meaning" not in feature, "Point feature has route fields")
+        elif kind == "country":
+            # A whole present-day country switched on at a cue, on the national layer only.
+            require(value["layer"] == "national", "A country feature needs the national layer")
+            text(feature.get("code"), "feature.code")
+            require(not {"point", "points", "meaning", "flag_stripes"} & set(feature), "Country feature has point or route fields")
         else:
             points = feature.get("points")
             require(isinstance(points, list) and len(points) >= 2, "feature.points needs a path")
@@ -235,7 +249,9 @@ def validate_focused_timeline(value, duration, sources, assets):
 def validate_plan(plan, root, duration):
     """Validate shape, local assets, provenance and complete audio coverage."""
     import json
-    keys(plan, "version profile coverage title source output_dir sources assets scenes progress cover outro", "plan")
+    keys(plan, "version profile coverage title source output_dir sources assets scenes progress cover outro layout", "plan")
+    layout = plan.get("layout", "panel")
+    require(layout in ("panel", "fullbleed"), "Unknown layout")
     for flag in ("progress", "cover", "outro"):
         if flag in plan:
             require(type(plan[flag]) is bool, f"{flag} must be boolean")
@@ -283,11 +299,15 @@ def validate_plan(plan, root, duration):
         require(kind in ("map", "image", "text", "comparison", "timeline", "document"), "Unknown scene type")
         require(all(field == kind or field not in scene for field in ("map", "image", "text", "comparison", "timeline", "document")),
                 f"{where}: content for another scene type")
+        require(layout != "fullbleed" or kind in ("map", "image", "timeline"),
+                f"{where}: the fullbleed layout cannot draw a {kind} scene")
         if kind == "map":
             validate_map(scene.get("map"), end-start, assets, sources)
             map_data = json.loads(asset_path(root, assets[scene["map"]["asset"]]).read_text())
             codes = {f["properties"]["ADM0_A3"] for f in map_data["features"]}
             require(all(c in codes for c in scene["map"].get("highlights", [])), "Unknown highlighted country")
+            require(all(f["code"] in codes for f in scene["map"].get("features", []) if f["kind"] == "country"),
+                    "Unknown country in a country feature")
         elif kind == "image":
             value = scene.get("image")
             keys(value, "asset fit motion", "image")
@@ -303,13 +323,20 @@ def validate_plan(plan, root, duration):
                     number(k[2], "focusY", 0, 1)
                 require(value["fit"] == "cover" or all(k[0] == 1 for k in value["motion"].values()),
                         "contain preserves the full document; use zoom 1 or explicitly choose cover")
+                # The legacy film zooms 3.5 percent over a scene; a bigger push-in reads as a jolt.
+                require(layout != "fullbleed" or all(k[0] <= 1.05 for k in value["motion"].values()),
+                        "fullbleed images zoom at most five percent")
         elif kind == "timeline":
             validate_timeline(scene.get("timeline"), end-start, sources, assets)
+            require(layout != "fullbleed" or (scene["timeline"].get("layout") == "focus" and not scene["timeline"].get("context")),
+                    f"{where}: the fullbleed layout draws a focused chronology without context cards")
             background = scene["timeline"].get("background")
             if background:
                 data = json.loads(asset_path(root, assets[background["asset"]]).read_text())
                 codes = {f["properties"]["ADM0_A3"] for f in data["features"]}
                 require(all(c in codes for c in background.get("highlights", [])), "Unknown highlighted country")
+                require(all(f["code"] in codes for f in background.get("features", []) if f["kind"] == "country"),
+                        "Unknown country in a country feature")
         elif kind == "document":
             value = scene.get("document")
             keys(value, "asset label body", "document")
