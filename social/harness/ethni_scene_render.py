@@ -13,6 +13,9 @@ from ethni_scene_timeline import draw_timeline
 import ethni_scene_fullbleed as fullbleed
 
 
+SPEAKERS_RADIUS, SPEAKERS_REFERENCE = 60, 16_000_000
+
+
 def scene_map(scene):
     return scene.get("map") if scene["type"] == "map" else scene.get("timeline", {}).get("background")
 
@@ -130,6 +133,17 @@ class SceneRenderer:
                 (round(source.width*scale), round(source.height*scale)), Image.Resampling.LANCZOS)
         return self._base_cache[key]
 
+    def _flag(self, draw, feature, x, y):
+        """Three equal stripes above the mark, vertical by default. Simplified: an emblem or a star is not drawn."""
+        stripes = feature.get("flag_stripes", [])
+        scale = 1.5 if self.plan.get("layout") == "fullbleed" else 1
+        width, height, top = 36*scale, 22*scale, y-40*scale
+        for i, stripe in enumerate(stripes):
+            if feature.get("flag_orientation", "vertical") == "horizontal":
+                draw.rectangle((x-width/2, top+i*height/3, x+width/2, top+(i+1)*height/3), fill=stripe)
+            else:
+                draw.rectangle((x-width/2+i*width/3, top, x-width/2+(i+1)*width/3, top+height), fill=stripe)
+
     def _map(self, scene, local, viewport=None, palette=None):
         cfg = scene["map"]
         x0, y0, x1, y1 = viewport or self.content
@@ -181,17 +195,21 @@ class SceneRenderer:
             if feature.get("role") == "context":
                 colour = "#%02x%02x%02x" % mix(p["ground"], colour, .55)
             kind = feature["kind"]
-            if kind in ("point", "presence"):
+            if kind in ("point", "presence", "speakers"):
                 x, y = camera.project(feature["point"])
                 if kind == "presence":
                     # Equal-size locators deliberately encode no unmeasured density.
                     for radius in range(38, 7, -3):
                         draw.ellipse((x-radius, y-radius, x+radius, y+radius),
                                      fill=mix(p["ground"], colour, .15 + .4*(1-radius/38)))
+                if kind == "speakers":
+                    # Area follows the figure (60 px at 16 million); the glow only makes it legible on a map.
+                    size = max(10, round(SPEAKERS_RADIUS*math.sqrt(feature["value"]/SPEAKERS_REFERENCE)))
+                    for radius in range(size, 7, -3):
+                        draw.ellipse((x-radius, y-radius, x+radius, y+radius),
+                                     fill=mix(p["ground"], colour, .18 + .5*(1-radius/size)))
                 draw.ellipse((x-7, y-7, x+7, y+7), fill=colour)
-                stripes = feature.get("flag_stripes", [])
-                for i, stripe in enumerate(stripes):
-                    draw.rectangle((x+i*12-18, y-40, x+(i+1)*12-18, y-18), fill=stripe)
+                self._flag(draw, feature, x, y)
             elif kind == "country":
                 overlay = Image.new("RGBA", canvas.size)
                 od = ImageDraw.Draw(overlay)
@@ -207,8 +225,7 @@ class SceneRenderer:
                 canvas.paste(overlay, (0, 0), overlay)
                 x = sum(a for a, _ in outline)/len(outline)
                 y = sum(b for _, b in outline)/len(outline)
-                for i, stripe in enumerate(feature.get("flag_stripes", [])):
-                    draw.rectangle((x+i*12-18, y-40, x+(i+1)*12-18, y-18), fill=stripe)
+                self._flag(draw, feature, x, y)
             elif kind == "presence-zone":
                 points = [camera.project(point) for point in feature["points"]]
                 mask = Image.new("L", canvas.size)
@@ -346,6 +363,8 @@ class SceneRenderer:
             for label, tail, note in entries:
                 legend.append(label+tail)
                 if note: legend.append(note)
+            if any(f["kind"] == "speakers" and f["at"] <= local < f["until"] for f in geographic.get("features", [])):
+                legend.append("Surface des cercles proportionnelle à l'effectif indiqué")
         return legend
 
     def credits(self, scene, local=None):

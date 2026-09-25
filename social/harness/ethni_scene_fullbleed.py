@@ -29,13 +29,22 @@ def shade(renderer):
         alpha = Image.new("L", (W, H), 0)
         draw = ImageDraw.Draw(alpha)
         for y in range(H):
-            top = 205*(1-y/480) if y < 480 else 0
-            bottom = min(238, 238*(y-780)/470) if y > 780 else 0
+            top = 190*(1-y/460) if y < 460 else 0
+            # Nothing above 900 px: the map is the subject. Text sits on the shading and a drop shadow.
+            bottom = 0 if y < 900 else 165*(y-900)/400 if y < 1300 else 165+50*min(1, (y-1300)/260)
             draw.line((0, y, W, y), fill=round(max(top, bottom)))
         shading = Image.new("RGBA", (W, H), ImageColor.getrgb(renderer.palette["ground"])+(0,))
         shading.putalpha(alpha)
         renderer._shade = shading
     return renderer._shade
+
+
+def shadowed(renderer, draw, value, box, role):
+    """White text with a soft dark drop shadow, so it holds over the light map without a plate."""
+    x, y, width, height = box
+    for dx, dy in ((3, 4), (-1, 3), (2, 2)):
+        renderer.paragraph(draw, value, (x+dx, y+dy, width, height), role, renderer.palette["ground"])
+    return renderer.paragraph(draw, value, box, role, renderer.palette["white"])
 
 
 def background(renderer, scene, local):
@@ -129,11 +138,6 @@ def render(renderer, instant):
             heading, credit_scene, credit_local = previous, previous, previous["end"]-previous["start"]-1e-6
     frame = Image.alpha_composite(picture.convert("RGBA"), shade(renderer))
     caption = next((c for c in renderer.captions if c["debut"] <= instant < c["fin"]), None)
-    if caption and not (renderer.plan.get("cover") and instant < MINIATURE_S):
-        box = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-        ImageDraw.Draw(box).rounded_rectangle((65, 1352, 957, 1548), radius=22,
-                                              fill=ImageColor.getrgb(renderer.palette["ground"])+(175,))
-        frame = Image.alpha_composite(frame, box)
     frame = frame.convert("RGB")
     if heading["type"] == "timeline":
         frame = draw_band(renderer, frame, heading, credit_local)
@@ -144,9 +148,9 @@ def render(renderer, instant):
                        (renderer.left, 118, 809, 45), "Bandeau", palette["white"])
     height = renderer.paragraph(ImageDraw.Draw(Image.new("RGB", (W, H))), heading["title"],
                                 (renderer.left, 0, 809, 260), "Titre de série", palette["white"])
-    renderer.paragraph(draw, heading["title"], (renderer.left, 1290-height, 809, 260), "Titre de série", palette["white"])
+    shadowed(renderer, draw, heading["title"], (renderer.left, 1290-height, 809, 260), "Titre de série")
     if caption and not (renderer.plan.get("cover") and instant < MINIATURE_S):
-        renderer.paragraph(draw, caption["texte"], (renderer.left, 1380, 809, 140), "Corps")
+        shadowed(renderer, draw, caption["texte"], (renderer.left, 1380, 809, 140), "Corps")
     lines = renderer.legend(credit_scene, credit_local) + renderer.credits(credit_scene, credit_local)
     renderer.paragraph(draw, "\n".join(lines), (renderer.left, 1580, 809, 262), "Crédit", palette["night-ink-2"])
     renderer.paragraph(draw, "ETHNIAFRICA", (renderer.left, 1850, 380, 40), "Bandeau", palette["gold"])
