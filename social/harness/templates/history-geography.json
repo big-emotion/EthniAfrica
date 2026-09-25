@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "profile": "history-geography",
+  "coverage": "complete",
+  "title": "REPLACE: approved subject title",
+  "source": {
+    "source_script_sha256": "REPLACE_FROM_FILE",
+    "source_audio_sha256": "REPLACE_FROM_FILE",
+    "cuts": [],
+    "paragraphs": []
+  },
+  "output_dir": "REPLACE_WITH_PRIVATE_PROOF_DESTINATION/_epreuves",
+  "sources": {
+    "reference": {
+      "citation": "REPLACE: full source citation",
+      "label": "REPLACE: short citation",
+      "url": "REPLACE: source URL",
+      "tier": "unverified"
+    }
+  },
+  "assets": {},
+  "scenes": [
+    {
+      "id": "01-question",
+      "type": "text",
+      "start": null,
+      "end": null,
+      "title": "REPLACE: visible title",
+      "text": "REPLACE: approved visible copy",
+      "purpose": "Explain the role of the question beat in this particular argument.",
+      "beat": "question",
+      "evidence": {
+        "sources": ["reference"],
+        "status": "illustration",
+        "period": "REPLACE: source period"
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    },
+    {
+      "id": "02-context",
+      "type": "text",
+      "start": null,
+      "end": null,
+      "title": "REPLACE: visible title",
+      "text": "REPLACE: approved visible copy",
+      "purpose": "Explain the role of the context beat in this particular argument.",
+      "beat": "context",
+      "evidence": {
+        "sources": ["reference"],
+        "status": "illustration",
+        "period": "REPLACE: source period"
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    },
+    {
+      "id": "03-evidence",
+      "type": "text",
+      "start": null,
+      "end": null,
+      "title": "REPLACE: visible title",
+      "text": "REPLACE: approved visible copy",
+      "purpose": "Explain the role of the evidence beat in this particular argument.",
+      "beat": "evidence",
+      "evidence": {
+        "sources": ["reference"],
+        "status": "illustration",
+        "period": "REPLACE: source period"
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    },
+    {
+      "id": "04-evolution",
+      "type": "text",
+      "start": null,
+      "end": null,
+      "title": "REPLACE: visible title",
+      "text": "REPLACE: approved visible copy",
+      "purpose": "Explain the role of the evolution beat in this particular argument.",
+      "beat": "evolution",
+      "evidence": {
+        "sources": ["reference"],
+        "status": "illustration",
+        "period": "REPLACE: source period"
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    },
+    {
+      "id": "05-limits",
+      "type": "text",
+      "start": null,
+      "end": null,
+      "title": "REPLACE: visible title",
+      "text": "REPLACE: approved visible copy",
+      "purpose": "Explain the role of the limits beat in this particular argument.",
+      "beat": "limits",
+      "evidence": {
+        "sources": ["reference"],
+        "status": "illustration",
+        "period": "REPLACE: source period"
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    },
+    {
+      "id": "06-closing",
+      "type": "text",
+      "start": null,
+      "end": null,
+      "title": "REPLACE: visible title",
+      "text": "REPLACE: approved visible copy",
+      "purpose": "Explain the role of the closing beat in this particular argument.",
+      "beat": "closing",
+      "evidence": {
+        "sources": ["reference"],
+        "status": "illustration",
+        "period": "REPLACE: source period"
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    }
+  ]
+}

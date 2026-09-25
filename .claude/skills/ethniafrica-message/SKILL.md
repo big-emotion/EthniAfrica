@@ -5,6 +5,16 @@ description: Auditer si une production EthniAfrica — carrousel, vidéo, ou pag
 
 # message — le message passe-t-il ?
 
+## Mémoires sonores review scope (2026-09-25)
+
+Read `docs/design/gabarits-social/MEMOIRES-SONORES.md` first for this feature.
+Review the musical promise, sourced account, listening detail and reference
+card against its approved six-card sequence. Name inventories and the fixed
+name-origin closing are not required. Mark inapplicable name-specific criteria
+explicitly with a reason; retain truthfulness, source attribution and
+non-hierarchical treatment of communities. The renderer checks the ordered
+stages and recorded audio review; it does not replace this semantic audit.
+
 Une seule question : **quelqu'un qui voit cette production pour la première
 fois repart-il avec le message, et un abonné le reconnaît-il ?**
 
@@ -175,7 +185,7 @@ silence de l'atlas se lit comme un jugement.
 
 Depuis le 2026-09-21, il n'y a plus de mécanisme propre à chaque type de contenu
 : la pièce se lit contre le gabarit de son format. Pour un carrousel, c'est
-`references/gabarit-carrousel-nom.md` du skill `structure` : la question de
+`.claude/skills/ethniafrica-structure/references/gabarit-carrousel-nom.md` du skill `structure` : la question de
 l'accroche reçoit sa réponse à la deuxième carte, et la troisième dit qu'un nom
 porte plusieurs appellations et cherche celle que le sujet se donne. Une pièce
 qui force une phrase sur les frontières dans un sujet qui n'en parle pas invente

@@ -10,6 +10,10 @@
   },
   "subjects": [],
   "sitePath": "/fr/about",
+  "word": {
+    "label": { "fr": "Afrique", "en": "Africa" },
+    "queries": ["afrique", "africa"]
+  },
   "publications": [
     {
       "network": "tiktok",
@@ -28,6 +32,19 @@
       "format": "video",
       "url": "https://www.youtube.com/shorts/NcXOFuGbFvQ",
       "publishedAt": "2026-09-05"
+    }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/afrique-province-romaine.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 42,
+  "sources": [
+    {
+      "title": "South African History Online, « Africa: What's in a name? », 2015 (mis à jour en 2025)",
+      "url": "https://sahistory.org.za/article/africa-whats-name",
+      "tier": "referenced"
     }
   ]
 }

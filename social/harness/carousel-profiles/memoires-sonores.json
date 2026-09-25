@@ -1,0 +1,28 @@
+{
+  "id": "memoires-sonores",
+  "label": "Mémoires sonores",
+  "guide": "docs/design/gabarits-social/MEMOIRES-SONORES.md",
+  "visual": {
+    "id": "memoires-sonores-v1",
+    "status": "approved",
+    "approvedOn": "2026-09-25",
+    "references": "docs/design/gabarits-social/memoires-sonores-approved",
+    "imageStages": ["accroche", "ecoute"]
+  },
+  "formats": {
+    "carrousel": ["TikTok", "Instagram"]
+  },
+  "cadence": {
+    "day": "sunday",
+    "intervalWeeks": 2,
+    "subjects": 3
+  },
+  "stages": [
+    { "id": "accroche", "role": "ouverture" },
+    { "id": "contexte", "role": "serie" },
+    { "id": "histoire", "role": "serie" },
+    { "id": "detail-musical", "role": "serie" },
+    { "id": "ecoute", "role": "serie" },
+    { "id": "references", "role": "serie" }
+  ]
+}

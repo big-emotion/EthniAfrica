@@ -5,6 +5,17 @@ Cible : `ethni_carrousel2.py` → `ethni_compose.py` (images) et `ethni_audio.py
 `ethni_montage.py` (vidéo), sous `social/harness/`.
 Ce document suffit à reproduire les gabarits au pixel près sans lire le HTML.
 
+**Scoped editorial extension, 2026-09-25:**
+[Mémoires sonores](MEMOIRES-SONORES.md) defines the approved six-card musical
+series for TikTok and Instagram only. For this series, its narrative, closing
+and platform scope take precedence over the name-origin, mandatory-myth and
+all-network rules below. Source-quality rules still apply. The six visual mockups were approved on
+2026-09-25: the linked reference now specifies the musical layout exception
+(two photographs, four text cards, fixed larger type and a dedicated footer).
+The opt-in `profil: memoires-sonores` is implemented in the carousel renderer
+and private-library registration. Its shared JSON profile overrides delivery
+only for this series; the general machine-readable format matrix is unchanged.
+
 ---
 
 ## 0. Principes non négociables
@@ -1056,6 +1067,11 @@ dit que « ethniafrica.com » a laissé le lecteur sans la raison d'y aller. Et
 
 ## 9 bis. Le gabarit vidéo — une seule disposition
 
+The fixed layout below documents the legacy image-deck renderer. New videos use
+[scene composition](../../../social/harness/SCENES.md); its scene-specific layouts
+share the typography, palette and safety constraints without inheriting the old
+montage's image slots or paragraph cuts.
+
 **La vidéo n'est pas un carrousel qui bouge.** Un carrousel est du contenu à lire, une
 vidéo est du contenu visuel avec une narration parlée. Le gabarit carrousel, porté tel
 quel en 9:16, produit neuf défauts recensés sur un montage réel : pagination inutile,
@@ -1261,32 +1277,21 @@ mot pour mot ce que la voix dit : une légende par-dessus serait la troisième c
 la même phrase. Partout ailleurs la légende est due, parce que l'image ne dit pas ce
 qui se dit.
 
-**Une scène commence où son paragraphe se dit.** `scene-starts.json` porte la mesure,
-un point par bloc séparé par une ligne vide ; le moteur la lit et ne la devine pas.
-Répartis à parts égales sur les légendes, les huit plans de Libreville affichaient la
-clôture à 44,10 s quand sa première phrase se dit à 50,88 s — six secondes de doctrine
-posées sur un récit qui n'avait pas fini.
+### Scene timing follows meaning and reading comfort
 
-### Aucune image ne tient plus de quatre secondes
+For every new video, use the [scene workflow](../../../social/harness/SCENE-PRODUCTION.md).
+Narration organizes ideas; paragraphs do not command cuts. A scene lasts as long as
+its explanation and reading comfort require. One map can span several sentences
+while camera, regions, points, routes and dates evolve. A new scene clarifies a
+change of place, period, evidence or idea. There is no fixed four-second turnover,
+image count derived from duration, or mandatory paragraph-to-scene mapping.
+Carousel rules remain independent.
 
-**Une image change au moins toutes les quatre secondes.** Passé ce seuil, l'œil a
-fini de lire le cadre et attend la suite ; au-delà, la vidéo se voit à l'arrêt même
-quand la voix continue. La Côte d'Ivoire et le Mandé ont été renvoyés en production
-pour cette raison précise : trop peu de changements d'image sur toute la durée.
-
-Seul un **passage important** — un moment que le montage doit laisser respirer, décidé
-au cas par cas et non par défaut — peut dépasser les quatre secondes. Ce n'est pas une
-dérogation tacite : le motif se justifie au même titre qu'une exception à toute autre
-règle de ce gabarit, jamais par une image qu'on n'a pas eu le temps de découper.
-
-**Le moteur l'applique (2026-09-14).** Une scène peut porter plusieurs images, dans
-`images` (§10). La durée de la scène se découpe en créneaux égaux d'au plus quatre
-secondes, au moins un par image ; le premier créneau est la première image, **qui
-présente le sujet de la scène** — un personnage, un lieu, un document. Une scène plus
-longue que ses images ne peut couvrir **reprend la liste depuis la première** plutôt que
-de figer une image : une reprise se lit comme un rythme, un cadre figé comme un arrêt.
-Le crédit affiché est toujours **celui de l'image à l'écran**, et les portes 1 à 3
-lisent chaque image de la scène, pas seulement la première.
+The older image-deck renderer retains its historical timing implementation only
+for replaying archived work. Its slots and paragraph markers are not authoring
+instructions for new videos. Scene plans preserve the palette, type roles, safe
+areas, credits, captions and visible uncertainty; publication uses the reviewed
+[clean-delivery workflow](../../../social/harness/SCENE-RELEASE.md).
 
 **Un parallèle se montre, il ne se dit pas.** Une image peut porter un `surtitre` —
 « Pendant ce temps, en France : 1889, la tour Eiffel est inaugurée » — affiché tant que
@@ -1322,6 +1327,14 @@ sous-titre, transitions entre séquences. §9 et le brief vidéo portent la cade
 ---
 
 ## 10. Schéma `cards.json` attendu
+
+**Optional musical profile:** `profil: "memoires-sonores"` adds the six ordered
+`etape` values and `musique` production notes described in
+[MEMOIRES-SONORES](MEMOIRES-SONORES.md#production-handoff). The renderer reads
+that profile for validation, series identity and TikTok/Instagram-only delivery.
+Use `ethni_carrousel2.py --brief memoires-sonores` to read the current guide and
+obtain the empty six-card scaffold. Decks without `profil` keep this schema's
+existing behaviour.
 
 ```json
 {
@@ -1362,7 +1375,7 @@ sous-titre, transitions entre séquences. §9 et le brief vidéo portent la cade
 `disposition` accepte `auto`, `A`, `B`, `C`. `auto` applique §6.
 
 `images` — **vidéo seulement, facultatif** — liste, dans l'ordre, les images d'une scène
-qui en porte plusieurs (§9 bis, « Aucune image ne tient plus de quatre secondes »).
+qui en porte plusieurs (§9 bis, legacy image-deck replay).
 Chaque entrée a exactement la forme de `image` : `fichier`, `w`, `h`, `cadrage`,
 `identite`, `verifie`, `credit`, `depot`, `licence`, plus un `surtitre` facultatif,
 affiché avec cette image et jamais dit. **La première présente le sujet de la scène.** Sans `images`, la scène garde son `image` unique : tous les decks écrits

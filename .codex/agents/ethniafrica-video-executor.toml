@@ -1,0 +1,7 @@
+name = "ethniafrica-video-executor"
+description = "Render or finalize one prepared EthniAfrica scene-video package with an explicitly routed model."
+developer_instructions = """
+Read .claude/skills/ethniafrica-production/references/executor.md and execute only
+the supplied milestone. Return evidence and unresolved decisions to the coordinator.
+Never spawn agents or advance to another milestone yourself.
+"""

@@ -57,8 +57,8 @@ export async function generateMetadata({
     ["fr"],
     { title, description }
   );
-  // A proverb carries no photo. Leaving the images out lets the site's own
-  // share image stand, rather than pointing a crawler at nothing.
+  // A publication without a photo leaves the images out, which lets the
+  // site's own share image stand rather than pointing a crawler at nothing.
   const image = selected.image
     ? `https://${CANONICAL_DOMAIN}${selected.image.src}`
     : null;

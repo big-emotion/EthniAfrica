@@ -29,5 +29,18 @@
       "url": "https://www.youtube.com/shorts/T73Pg93_6_E",
       "publishedAt": "2026-09-09"
     }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/ghana-empire-jamais-sur-son-territoire.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 35,
+  "sources": [
+    {
+      "title": "Ghana — EthniAfrica",
+      "url": "https://ethniafrica.com/fr/atlas/pays/GHA",
+      "tier": "referenced"
+    }
   ]
 }

@@ -32,7 +32,21 @@
     {
       "network": "youtube",
       "format": "video",
-      "url": "https://www.youtube.com/shorts/HUBAIkOPKTE"
+      "url": "https://www.youtube.com/shorts/HUBAIkOPKTE",
+      "publishedAt": "2026-09-12"
+    }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/duala-peuple-avant-la-ville.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 47,
+  "sources": [
+    {
+      "title": "Duala — EthniAfrica",
+      "url": "https://ethniafrica.com/fr/atlas/peuples/PPL_DUALA",
+      "tier": "referenced"
     }
   ]
 }

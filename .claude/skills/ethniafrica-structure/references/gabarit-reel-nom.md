@@ -1,9 +1,9 @@
 # Le gabarit de narration d'un reel « D'où vient le nom X ? »
 
-Décidé par l'opérateur le 2026-09-21. **Un reel suit ce gabarit et rien d'autre :
-pas une scène de plus, pas une de moins, pas une phrase fixe reformulée.** Le
-même parcours, le même niveau d'information, pour chaque sujet d'une des cinq
-catégories : **peuple, pays, patronyme, lieu, langue**.
+Operator-approved name-origin narration template (2026-09-21). **This template
+prescribes editorial blocks and fixed speech, not visual scene counts or cuts.**
+Use the same narrative progression for the five categories: **people, country,
+patronymic, place and language**.
 
 `node social/tools/narration/check-gabarit.mjs <narration.fr.txt> --type <catégorie>`
 le vérifie. Un écart se corrige dans le texte, pas dans le contrôleur. La
@@ -14,14 +14,15 @@ Le **carrousel n'est pas concerné** : il a son propre gabarit, traité à part.
 
 ## Le squelette : sept temps, un paragraphe chacun, dans cet ordre
 
-Un paragraphe de `narration.fr.txt` est une scène, donc une carte. Dix scènes au
-plus.
+Each paragraph is an editorial block. Keep at most ten blocks for this narrative
+template; `scene-plan.json` independently defines visual scenes. A map can continue
+across blocks, or a block can use several shots. No carousel deck is required.
 
 | #   | Temps                                             | Ce qu'il fait                                                                                                               | Pourquoi ici                                                                                                                                                                    |
 | --- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | **Ouverture**                                     | Une question, puis trois phrases fixes : plusieurs noms, celui de l'intérieur (l'endonyme), ceux d'ailleurs (les exonymes). | La question ouvre la boucle. Le mot « endonyme » est défini une fois, dans la phrase où il apparaît, parce que beaucoup d'auditeurs n'ont pas le français pour première langue. |
 | 2   | **Inventaire**                                    | Les noms retenus, dits une fois chacun, **le nom de l'intérieur en premier**. Deux à quatre.                                | Chaque nom d'ailleurs se mesure ensuite au nom de l'intérieur : l'auditeur doit le connaître avant de comparer.                                                                 |
-| 3   | **Variantes** (facultatif)                        | Seulement les écritures qui posent un vrai problème. Un paragraphe, quatre phrases au plus.                                 | Une variante d'orthographe n'est pas un nom de plus. Elle ne prend une scène que si elle crée une confusion ou une offense. Sans problème, la scène n'existe pas.               |
+| 3   | **Variantes** (facultatif)                        | Seulement les écritures qui posent un vrai problème. Un paragraphe, quatre phrases au plus.                                 | A spelling variant is not an additional name. Include this narrative block only when the variant creates confusion or offence.                                                  |
 | 4   | **Un bloc par nom**, dans l'ordre de l'inventaire | Le nom de l'intérieur d'abord, les noms d'ailleurs ensuite.                                                                 | Même parcours pour chaque nom : l'auditeur compare sans réapprendre la forme.                                                                                                   |
 | 5   | **Classement**                                    | Qui a donné quel nom, et lequel est évité.                                                                                  | La boucle de l'ouverture se referme ici.                                                                                                                                        |
 | 6   | **Synthèse**                                      | Trois phrases au plus : ce que les blocs ont montré, puis la morale.                                                        | Une suite de faits ne dit pas ce qu'il faut retenir. Elle se propose à l'opérateur avant d'être écrite (voir `SKILL.md`, « Le registre »).                                      |
@@ -115,7 +116,7 @@ Un constat, jamais un jugement (« a longtemps remplacé le sien » est un jugem
 Le texte de `GABARITS-SOCIAL.md` §7 ter, « Le reel a un couple unique », mot pour
 mot : la voix dit les deux phrases, la carte porte la première en titre et la
 seconde en corps. « Partagez-la » est un impératif voulu par l'opérateur : le
-contrôle de lecture ne s'applique pas à cette scène.
+contrôle de lecture ne s'applique pas à ce bloc narratif.
 
 ## Ce qui change selon la catégorie
 
@@ -155,19 +156,19 @@ aurait exigé d'inventer une étymologie ou une forme que les sources ne
 donnaient pas — refusé par l'opérateur, qui a demandé un second cas plutôt
 qu'une réécriture de l'argument approuvé.
 
-**Le squelette de ce second cas, un paragraphe par scène, dans cet ordre :**
+**This second case uses the following editorial blocks, in order; visual cuts remain independent:**
 
-| #       | Temps                             | Ce qu'il fait                                                                                                                                                                                                                        |
-| ------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1       | **Ouverture**                     | Une transition et une question ; rien de plus n'est fixé, parce que le pont vers le chapitre précédent varie d'un sujet à l'autre.                                                                                                   |
-| 2       | **Cadrage**                       | Nomme l'institution (jamu, nisba…), son mode de transmission et ce qu'elle peut porter (récits, relations).                                                                                                                          |
-| 3…n     | **Cas documentés**                | Deux au moins. Chacun nomme sa source ; **au moins un**, dans le lot, porte une réserve épistémique explicite (ce que la source ne permet pas d'établir). Une scène de discussion méthodologique peut s'y glisser, sans phrase fixe. |
-| n+1     | **Synthèse des quatre questions** | **Fixe, mot pour mot** — voir ci-dessous. C'est le garde-fou que ce cas existe pour tenir : il vaut pour tout sujet qui l'emploie, pas seulement celui qui l'a motivé.                                                               |
-| n+2     | **Synthèse**                      | Libre, trois phrases au plus — la même règle que pour tout reel (voir « Le registre » dans `SKILL.md`).                                                                                                                              |
-| n+3     | _(optionnelle)_ **Transition**    | Vers le chapitre suivant de la série, si le sujet en ouvre un.                                                                                                                                                                       |
-| dernier | **Clôture**                       | Le texte unique décidé, mot pour mot — inchangé, commun à tout reel.                                                                                                                                                                 |
+| #       | Temps                             | Ce qu'il fait                                                                                                                                                          |
+| ------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1       | **Ouverture**                     | Une transition et une question ; rien de plus n'est fixé, parce que le pont vers le chapitre précédent varie d'un sujet à l'autre.                                     |
+| 2       | **Cadrage**                       | Nomme l'institution (jamu, nisba…), son mode de transmission et ce qu'elle peut porter (récits, relations).                                                            |
+| 3…n     | **Cas documentés**                | At least two sourced cases. At least one must state what the evidence cannot establish. An optional methodological narrative block has no fixed wording.               |
+| n+1     | **Synthèse des quatre questions** | **Fixe, mot pour mot** — voir ci-dessous. C'est le garde-fou que ce cas existe pour tenir : il vaut pour tout sujet qui l'emploie, pas seulement celui qui l'a motivé. |
+| n+2     | **Synthèse**                      | Libre, trois phrases au plus — la même règle que pour tout reel (voir « Le registre » dans `SKILL.md`).                                                                |
+| n+3     | _(optionnelle)_ **Transition**    | Vers le chapitre suivant de la série, si le sujet en ouvre un.                                                                                                         |
+| dernier | **Clôture**                       | Le texte unique décidé, mot pour mot — inchangé, commun à tout reel.                                                                                                   |
 
-**Douze scènes au plus** (contre dix pour la comparaison de formes) : le nombre
+**Douze blocs narratifs au plus** (contre dix pour la comparaison de formes) : le nombre
 de cas documentés varie plus que le nombre de formes d'un nom, et le sujet qui
 a motivé ce cas en emploie douze.
 
@@ -243,7 +244,7 @@ l'opérateur, mot pour mot (`SKILL.md`, « La validation du texte »).
 
 Si un sens est juste, si une source tient, si une phrase est simple, si un
 « endonyme » en est bien un. Cela reste à l'auteur, au contrôle de lecture
-(`check-narration.mjs`, que le contrôleur rejoue sur chaque scène sauf la clôture)
+(`check-narration.mjs`, que le contrôleur rejoue sur chaque bloc narratif sauf la clôture)
 et à la validation de l'opérateur.
 
 ## Un exemple par catégorie

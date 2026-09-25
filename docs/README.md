@@ -56,6 +56,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Essai — comprendre les sociétés africaines à travers leurs noms](editorial/essais/comprendre-les-societes-par-les-noms-2026-09-22.md)
 - [Essai — d'où viennent les noms](editorial/essais/dou-viennent-les-noms-2026-09-17.md)
 - [Essai — mutualiser la souveraineté](editorial/essais/mutualiser-la-souverainete-2026-09-17.md)
+- [Essai — la frontière est économique, pas le peuple](editorial/essais/ne-pas-accuser-le-voisin-2026-09-23.md)
 - [Essai — partir du nom](editorial/essais/partir-du-nom-2026-09-21.md)
 - [Essai — les peuples avant la ligne](editorial/essais/peuples-carrefours-2026-09-16.md)
 - [Essai — le pouvoir de nommer](editorial/essais/pouvoir-de-nommer-2026-09-14.md)
@@ -72,6 +73,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Editorial strategy — names, relationships and connected series](editorial/strategy/README.md)
 - [Alignment plan — editorial promise and connected series](editorial/strategy/alignment-plan-2026-09-22.md)
 - [Strategy evidence — refreshed 2026-09-22](editorial/strategy/evidence-2026-09-22.md)
+- [S1 Mali — continuation handoff, 23 September 2026](editorial/strategy/handoff-s1-mali-2026-09-23.md)
 - [Social profiles — proposed copy, 2026-09-22](editorial/strategy/profiles-2026-09-22.md)
 - [Editorial orientation report — 2026-09-22](editorial/strategy/report-2026-09-22.md)
 - [External research — Mali, Dioula/Jula, Traoré (2026-09-22)](editorial/strategy/research-mali-dioula-traore-2026-09-22.md)
@@ -88,6 +90,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Audience audit — 2026-09-17](audience/audit-2026-09-17.md)
 - [Audience audit — 2026-09-20](audience/audit-2026-09-20.md)
 - [Audience audit — 2026-09-22](audience/audit-2026-09-22.md)
+- [Audience audit — 2026-09-23](audience/audit-2026-09-23.md)
 - [Message audit — 2026-09-13](audience/message/message-audit-2026-09-13.md)
 
 ## Runbooks — procedures, and records of ones already run
@@ -122,7 +125,6 @@ were referenced by nothing at all, two of them written that same week.
 
 ## Plans
 
-- [Congo history dossiers: implementation plan](plans/congo-history-dossiers.md)
 - [Playing the productions on the site — analysis brief](plans/embedded-media-brief.md)
 - [Playing the productions on the site — decision](plans/embedded-media-decision.md)
 - [The publishing format, and a production history the site can read — brief](plans/production-history-brief.md)
@@ -138,7 +140,4 @@ were referenced by nothing at all, two of them written that same week.
 - [Language alternate names — the pass of 18 September 2026](data-audits/language-alternate-names-2026-09-18.md)
 - [Language-tier catalog audit against Glottolog 5.3](data-audits/language-tier-audit-glottolog-5.3.md)
 - [The production history and its cadence](productions/README.md)
-- [Reset inventory — every configuration, documentation and rule file](reset-inventory-2026-09-17.md)
-- [Découvertes source-bank inventory](tasks/discoveries-content-inventory.md)
 - [Découvertes implementation tracker](tasks/discoveries-implementation.md)
-- [Découvertes social-library inventory](tasks/discoveries-social-inventory.md)

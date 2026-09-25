@@ -32,7 +32,7 @@ its four children are created in this run.
 
 - `docs/confluence-spec/config.json`
 - `docs/confluence-spec/bootstrap-catalog.json`
-- `_bmad-output/planning-artifacts/prd.md`
+- the PRD (`prd.md`) — a retired planning artifact no longer versioned here; the bootstrap has already run, so `npm run confluence:bootstrap:build` cannot regenerate from it
 - Generated bodies under `bootstrap/output/`
 
 Run `npm run confluence:bootstrap:build` before previewing or publishing.

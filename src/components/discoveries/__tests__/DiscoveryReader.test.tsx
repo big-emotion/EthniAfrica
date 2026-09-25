@@ -538,7 +538,7 @@ describe("Découvertes proverb frame", () => {
   // Filed under its own kicker — « Saviez-vous que ? » over a proverb would
   // call a people's saying a fact — and declared in its own language.
   // @req REQ-157
-  it("files a proverb as a proverb, in its own language, with no photo to credit", () => {
+  it("files a proverb as a proverb, in its own language, and stands without a photo", () => {
     render(
       <DiscoveryReader
         language="fr"
@@ -553,8 +553,50 @@ describe("Découvertes proverb frame", () => {
     expect(within(card).getByRole("heading", { level: 1 })).toHaveTextContent(
       "Texte du proverbe."
     );
+    expect(within(card).queryByRole("img")).not.toBeInTheDocument();
     expect(within(card).queryByText(/Photo/)).not.toBeInTheDocument();
     expect(within(card).queryAllByRole("link")).toEqual([]);
+  });
+
+  // @req REQ-157
+  it("draws a proverb's photo behind its words and credits it", () => {
+    render(
+      <DiscoveryReader
+        language="fr"
+        publications={[
+          {
+            ...proverbPublication,
+            image: {
+              src: "/images/proverbs/test.jpg",
+              filePage: "https://commons.wikimedia.org/wiki/File:Test.jpg",
+              credit: "Auteur Test, CC BY-SA 4.0",
+              shortCredit: {
+                fr: "Auteur Test, CC BY-SA",
+                en: "Author Test, CC BY-SA",
+              },
+              alt: { fr: "Un marché au crépuscule.", en: "A market at dusk." },
+              licence: "cc-by-sa",
+            },
+          },
+        ]}
+        initialId="proverb:test"
+      />
+    );
+
+    const card = screen.getByRole("article");
+    expect(within(card).getByRole("img")).toHaveAttribute(
+      "alt",
+      "Un marché au crépuscule."
+    );
+    expect(within(card).getByRole("heading", { level: 1 })).toHaveTextContent(
+      "Texte du proverbe."
+    );
+    expect(
+      within(card).getByRole("link", { name: /Auteur Test, CC BY-SA/ })
+    ).toHaveAttribute(
+      "href",
+      "https://commons.wikimedia.org/wiki/File:Test.jpg"
+    );
   });
 
   // @req REQ-157
@@ -1010,6 +1052,26 @@ describe("Découvertes video", () => {
     );
 
     expect(document.querySelector("iframe")).toBeNull();
+  });
+
+  // The caption sits in front of the picture, so a playing player would be
+  // drawn under the site's own words. The words step aside while it plays and
+  // come back with the facade.
+  // @req REQ-181
+  it("takes the caption out of the way while the video plays and restores it on close", () => {
+    renderVideo(video);
+    const credit = screen.getByRole("link", { name: "CC BY-SA 4.0" });
+    expect(credit.closest("[inert]")).toBeNull();
+
+    fireEvent.click(
+      screen.getByRole("button", { name: /charge le lecteur de YouTube/i })
+    );
+    expect(credit.closest("[inert]")).not.toBeNull();
+    expect(credit.closest("article")).toHaveAttribute("data-playing", "true");
+
+    fireEvent.click(screen.getByRole("button", { name: /fermer le lecteur/i }));
+    expect(credit.closest("[inert]")).toBeNull();
+    expect(credit.closest("article")).not.toHaveAttribute("data-playing");
   });
 
   // REQ-128: author, licence and the page the piece is published on.

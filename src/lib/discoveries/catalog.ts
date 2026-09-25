@@ -35,13 +35,18 @@ export interface DiscoveryPublication {
       label: Record<Language, string>;
     }>;
     sources: Array<{ title: string; url: string }>;
+    /**
+     * A production about a word that is not a corpus entity (« zombie »): it
+     * has no subject, and what finds it is the queries filed for it.
+     */
+    word?: { queries: readonly string[] };
   };
   /** A proverb's words in the language that says them, as its source prints them. */
   original?: { text: string; lang: string };
   /**
-   * Required for every kind but `proverb`. A proverb is words rather than a
-   * scene, and a photo placed beside it would be decoration we chose, not a
-   * document the publication is about.
+   * Required for every kind but `proverb`, which may wait for its photo. A
+   * proverb's photo is a free-licence picture from the people's own world
+   * (brand charter §9), never a generated one, and is cleared like any other.
    */
   image?: {
     src: string;
@@ -199,13 +204,19 @@ function hasBrowsableSeries(entry: DiscoveryPublication): boolean {
 }
 
 function hasPublishableVisual(entry: DiscoveryPublication): boolean {
-  if (entry.kind === "proverb") return true;
+  // A proverb may wait for its photo, but one it carries is cleared like any.
+  if (entry.kind === "proverb") {
+    return (
+      !entry.image ||
+      (hasClearedPicture(entry) && hasText(entry.image.filePage))
+    );
+  }
   if (entry.kind === "image") return isDeclaredFiction(entry);
   if (entry.kind === "video") {
     const { video } = entry;
     return Boolean(
       video &&
-      entry.detail?.entities.length &&
+      (entry.detail?.entities.length || entry.detail?.word?.queries.length) &&
       hasText(video.name.fr) &&
       hasText(video.name.en) &&
       entry.title.fr === formatProductionNameQuestion(video.name.fr, "fr") &&

@@ -313,6 +313,22 @@ one tool that files folders onto the library's own shelves.
 
 ### Publishing — the audience, the plan, the video
 
+**Mémoires sonores (operator direction, 2026-09-25)** is a recurring musical
+feature within EthniAfrica, for TikTok and Instagram only. Its approved
+six-card editorial reference is `docs/design/gabarits-social/MEMOIRES-SONORES.md`:
+three distinct subjects every other Sunday, without a mandatory myth, name-origin
+angle, companion reel or site article. For this feature, read that reference
+before applying the general production-chain rules below. The carousel engine
+reads `profil: memoires-sonores`; `ethni_carrousel2.py --brief memoires-sonores`
+returns the current guide and six-card scaffold. The operator approved the six
+visual mockups: `memoires-sonores-v1` uses a portrait cover, four readable text
+cards and a listening photo card; its visual reference and source credits are
+stored beside the guide. Visual approval does not approve an episode’s copy or
+audio. Register with `--profile
+memoires-sonores` in the private library only, without a fabricated site record.
+The website's remit is unchanged; broader display names and bios for
+these two accounts are approved in principle, with exact copy still pending.
+
 The publishing chain runs in one order, and **all ten of its skills live here**,
 under their `ethniafrica-` names. They left for the private workspace on
 2026-09-10, on the rule that a public repository carries no production skills, and
@@ -758,6 +774,10 @@ Two couplings that fail silently: `production-data-sync.yml` chains off the depl
 Project skills wrap the loop: `/ethniafrica-spec` (investigate → draft Pending REQ/DEC/ARCH + Jira tickets), `/ethniafrica-ticket` (take a Jira ticket end-to-end in an isolated worktree), `/ethniafrica-audit`, `/ethniafrica-release`.
 
 Ferry (`ferry.config.yaml`) drives agent automation off Jira status transitions on ETNI — Refinement → READY FOR DEV → In Review → Changes Requested → TO MERGE — branching `ferry/*` off `recette`. One workflow, `ferry-router.yml`, handles every transition: a single Jira rule dispatches `ferry-transition` with the new status, and the router picks the agent from `trigger_column`. **It reviews and merges any PR whose ticket enters IN REVIEW or TO MERGE, not only `ferry/*` branches** — a `feat/*` or `fix/*` PR opened by `/ethniafrica-ticket` is reviewed and merged the same way once its ticket moves. The five per-agent workflows (`ferry-dev`, `-refine`, `-review`, `-iterate`, `-merge`) were superseded by the router and removed; the Jira setup and the legacy rules to keep disabled are in `ferry-jira-automation-setup.md`.
+
+### Skills and agents — one source, two runtimes
+
+Every skill lives once, under `.claude/skills/<name>/`. Codex reads the gitignored mirror `.agents/skills/`, which `npm run skills:link` fills with one symlink per skill — enumerated from the directory, so a new skill is linked and checked without editing a list. `check:skill-parity` holds each skill's resources to what its `SKILL.md` references; a resource of _another_ skill is written as its full `.claude/skills/...` path, or the checker looks for it in the wrong place. A sub-agent is declared twice because the two runtimes read different formats: `.claude/agents/<name>.md` and `.codex/agents/<name>.toml` carry the same instruction text.
 
 ### Test placement
 

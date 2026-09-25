@@ -33,9 +33,23 @@
     {
       "network": "youtube",
       "format": "video",
-      "url": "https://www.youtube.com/shorts/qezquq7jUqE"
+      "url": "https://www.youtube.com/shorts/qezquq7jUqE",
+      "publishedAt": "2026-09-21"
     },
     { "network": "linkedin", "format": "video" },
     { "network": "x", "format": "video" }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/mbappe-d-ou-vient-le-nom.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 59,
+  "sources": [
+    {
+      "title": "Mbappé — EthniAfrica",
+      "url": "https://ethniafrica.com/fr/atlas/noms/PAT_MBAPPE",
+      "tier": "referenced"
+    }
   ]
 }

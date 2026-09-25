@@ -177,7 +177,10 @@ describe("search-feed plan", () => {
       expect(loader.loadSearchCompanions).toHaveBeenCalledWith(
         fixture.production.companions.subjects,
         "fr",
-        expect.any(AbortSignal)
+        expect.any(AbortSignal),
+        // The word rides along so a production about it can answer even when
+        // no entity does.
+        fixture.query
       );
     }
   );
@@ -200,6 +203,28 @@ describe("search-feed plan", () => {
     expect(classifySearchFeed(widened.production)).toBe("widened");
     expect(classifySearchFeed(typo.production)).toBe("typo");
     expect(classifySearchFeed(unknown.production)).toBe("unknown");
+  });
+
+  // A near name is offered to a reader whose spelling missed. A reader who typed
+  // a word we made a piece on did not miss: the piece answers it.
+  // @req REQ-180
+  it("does not treat a word we have a piece on as a misspelling", () => {
+    const typo = FEED_CASES.find(({ id }) => id === "introuvable")!;
+    const [short] = FEED_CASES.find(({ id }) => id === "inconnu")!.production
+      .companions.shorts.items;
+
+    expect(
+      classifySearchFeed({
+        ...typo.production,
+        companions: {
+          ...typo.production.companions,
+          shorts: {
+            count: 1,
+            items: [{ ...short, match: { relation: "word", word: "zombie" } }],
+          },
+        },
+      })
+    ).toBe("unknown");
   });
 
   // @req REQ-180

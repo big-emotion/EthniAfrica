@@ -77,7 +77,11 @@ Dans cet ordre, parce que c'est l'ordre dans lequel on agit :
 6. **L'âge du rapport d'audience.**
 
 Puis **le prochain geste** : un seul, le skill qui le fait, et propose de le
-lancer. Recommande de lancer chaque skill dans une conversation neuve.
+lancer. For a video, recommend `/ethniafrica-production` in Claude or
+`$ethniafrica-production` in Codex to coordinate the remaining stages in the
+current session. A fresh session can resume from its private `production-state.md`;
+it does not need to restart the upstream skills. See
+`.claude/skills/ethniafrica-production/SKILL.md`. This help skill remains read-only.
 
 ## Avec un sujet : le bilan
 

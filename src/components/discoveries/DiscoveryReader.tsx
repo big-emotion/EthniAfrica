@@ -165,6 +165,7 @@ export function DiscoveryReader({
     [publications, initialId]
   );
   const [activeIndex, setActiveIndex] = useState(0);
+  const [playingId, setPlayingId] = useState<string | null>(null);
   const [savedIds, setSavedIds] = useState<string[]>([]);
   const [failedImageIds, setFailedImageIds] = useState<Set<string>>(
     () => new Set()
@@ -443,6 +444,7 @@ export function DiscoveryReader({
               }
               key={entry.id}
               data-publication-id={entry.id}
+              data-playing={playingId === entry.id ? "true" : undefined}
               aria-label={entry.title[language]}
             >
               {entry.carousel && !failedImageIds.has(entry.id) ? (
@@ -494,6 +496,11 @@ export function DiscoveryReader({
                   watchUrl={entry.video.watchUrl}
                   active={index === activeIndex}
                   fill
+                  onPlayingChange={(playing) =>
+                    setPlayingId((current) =>
+                      playing ? entry.id : current === entry.id ? null : current
+                    )
+                  }
                 />
               ) : !entry.image || failedImageIds.has(entry.id) ? (
                 <div className={styles.photoFallback} />
@@ -515,7 +522,7 @@ export function DiscoveryReader({
                 />
               )}
               <div className={styles.shade} aria-hidden="true" />
-              <div className={styles.copy}>
+              <div className={styles.copy} inert={playingId === entry.id}>
                 {entry.carousel && !failedImageIds.has(entry.id) ? (
                   <>
                     <div className={styles.dots} aria-hidden="true">

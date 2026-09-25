@@ -8,8 +8,19 @@
   "myth": {
     "fr": "« Bantou » est-il le nom d'un peuple ?"
   },
-  "subjects": [],
-  "sitePath": "/fr/about",
+  "subjects": [
+    {
+      "kind": "family",
+      "id": "FLG_BANTU",
+      "label": { "fr": "Bantou", "en": "Bantu" }
+    },
+    {
+      "kind": "people",
+      "id": "PPL_BANTU",
+      "label": { "fr": "Bantou", "en": "Bantu" }
+    }
+  ],
+  "sitePath": "/fr/atlas/familles/FLG_BANTU",
   "publications": [
     {
       "network": "tiktok",
@@ -28,6 +39,19 @@
       "format": "video",
       "url": "https://www.youtube.com/shorts/rUF0su2g918",
       "publishedAt": "2026-09-07"
+    }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/bantou-mot-de-linguiste-allemand.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 35,
+  "sources": [
+    {
+      "title": "Bantou — EthniAfrica",
+      "url": "https://ethniafrica.com/fr/atlas/familles/FLG_BANTU",
+      "tier": "referenced"
     }
   ]
 }

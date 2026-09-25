@@ -5,6 +5,18 @@ description: Brainstormer un sujet de publication EthniAfrica et en sortir un ra
 
 # idee — brainstormer un sujet
 
+## Mémoires sonores scope (2026-09-25)
+
+Read `docs/design/gabarits-social/MEMOIRES-SONORES.md` first for this feature.
+Use its musical question, six-card format, TikTok/Instagram scope and selected
+opening subjects. A name-origin question, attested myth or corpus fiche is not
+required. Research and source attribution remain required. Do not assign a
+name typology, episode number or site route merely to fit the existing ledger;
+the reference supplies its private-library registration and renderer profile.
+Hand off `profil: memoires-sonores`, the subject research and the selected
+recording to `structure`; the engine's `--brief memoires-sonores` command reads
+the current instructions and supplies the empty six-card scaffold.
+
 Première étape. Rien ne vient avant. `structure` vient après.
 
 Tu produis **un rapport de sujet**, pas un contenu. Un rapport de sujet est le
@@ -188,7 +200,7 @@ pressenties » reste ce qu'elle est — des pressentiments, pas des vérificatio
 - **Un sujet centré sur qui a nommé un pays nomme ses acteurs.** Explorateurs,
   négociants, traités, ce qui en reste en toponymie : ils vivent dans le champ
   « qui l'a donnée » de chaque fiche du gabarit du carrousel
-  (`ethniafrica-structure`, `references/gabarit-carrousel-nom.md`). Décidé le
+  (`ethniafrica-structure`, `.claude/skills/ethniafrica-structure/references/gabarit-carrousel-nom.md`). Décidé le
   2026-09-14 après un premier passage sur « qui-a-nomme-la-cote-divoire » qui
   avait ouvert sur le compte de peuples et laissé les acteurs de côté : l'opérateur
   a jugé la pièce vide de sens. La table par type de contenu de §7 ter et son

@@ -4,6 +4,12 @@ The operator's direction, confirmed on 2026-09-22, is to understand Africa
 through its names, with human relationships as the underlying subject. Start
 with the [confirmed essay](../essais/comprendre-les-societes-par-les-noms-2026-09-22.md).
 
+On 2026-09-25, the operator approved
+[Mémoires sonores](../../design/gabarits-social/MEMOIRES-SONORES.md), a musical
+series within EthniAfrica, limited to TikTok and Instagram. Its six-card
+reference records the Sunday cadence and opening subjects. These two social
+accounts may cover more than the website; the site's remit remains unchanged.
+
 | Document                                                                 | Role                                                                                                                                |
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
 | [Original report](report-2026-09-22.md)                                  | Preserve the report the operator endorsed, with its original limits                                                                 |

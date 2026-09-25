@@ -90,7 +90,7 @@ export default defineConfig({
   expect: {
     timeout: 10_000,
     // Committed references live beside the specs. The template used to point
-    // into `_bmad-output/planning-artifacts/`, which #401 deleted: every
+    // at a planning directory that #401 deleted: every
     // visual spec then failed on "snapshot doesn't exist" and wrote its own
     // render as the missing reference, a parity check with no oracle.
     toHaveScreenshot: {
@@ -129,7 +129,7 @@ export default defineConfig({
       name: "setup",
       testMatch: /\.setup\.ts$/,
     },
-    // Mobile-first non-negotiable per project-context.md.
+    // Mobile-first non-negotiable per CLAUDE.md.
     // Most persona E2E run here; this is the source-of-truth viewport.
     {
       name: "mobile-430",

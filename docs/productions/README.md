@@ -44,6 +44,16 @@ rule applies there once that skill is updated to write to this ledger.
 
 ## The fixed format
 
+**Scope exception, 2026-09-25:**
+[Mémoires sonores](../design/gabarits-social/MEMOIRES-SONORES.md) is a separate
+recurring feature within EthniAfrica: three musical carousel subjects every other
+Sunday, each for TikTok and Instagram only. The Monday/Wednesday/Friday,
+name-origin and mandatory-myth rules below describe the existing name series,
+not this feature. Musical posts are registered in the private library with
+`register-post.mjs --profile memoires-sonores`, not in this site's name-origin
+ledger. Selected launch subjects are not publication records. Do not file them
+under a fabricated name category or invent a site route.
+
 - **Three publication days**: Monday, Wednesday, Friday.
 - **A connected subject sequence with flexible depth**, at the cadence stated
   below. There is no fixed quota of new subjects per day or per week.
@@ -121,6 +131,15 @@ The operator approved the project-intention essay adaptation on 2026-09-22.
 It introduces the connected series; it is not a name-origin episode or a
 vocabulary word. Its record is
 [introduction/comprendre-afrique-noms.json](introduction/comprendre-afrique-noms.json).
+
+A second unnumbered record,
+[introduction/pourquoi-la-meconnaissance-freine-l-afrique.json](introduction/pourquoi-la-meconnaissance-freine-l-afrique.json),
+files the operator's message video of 2026-09-23 (« Pourquoi ignorer nos noms
+freine l'Afrique ? »). It is an exceptional piece decided by the operator, outside
+the five typologies and the `mot` exception, with no episode and no myth. It uses
+this record type only because it is the one that holds a piece with neither. Its
+carousel, to be published later, cannot be registered here for the reason given
+below.
 
 - `typologie` is `introduction`; `episode` and `myth` must be explicitly `null`.
   No episode zero or invented audience belief is required.

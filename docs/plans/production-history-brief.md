@@ -67,7 +67,7 @@ is answerable today only by knowing which of two post entries to open.
 
 ### 1.3 What the repository already versions about productions
 
-- `docs/tasks/discoveries-social-inventory.md` — a dated audit in prose, no
+- A dated prose audit of the published videos (since deleted), with no
   reusable identifier, explicitly "not a publication manifest".
 - `docs/audience/audit-2026-09-{07,12,14,17}.md` — per-post metrics keyed by
   **human titles** (`| Keïta et Coulibaly | YouTube | 09-12 | 1 433 | 55.7 % |`),

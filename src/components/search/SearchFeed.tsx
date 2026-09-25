@@ -251,10 +251,16 @@ export function SearchFeed({
   const answerCopy = nameAnswerCopy[language];
   const relatedOnly =
     state === "widened" && subjects.length === 0 && results.length > 0;
+  // A related-only answer shows no shelf, so that nothing unrelated sits under
+  // it. A piece found by the reader's own word is the exception: it answers the
+  // very word that was typed.
+  const wordShorts = loadedCompanions.shorts.items.filter(
+    ({ match }) => match.relation === "word"
+  );
   const companions: SearchCompanionsData = relatedOnly
     ? {
         subjects: [],
-        shorts: { count: 0, items: [] },
+        shorts: { count: wordShorts.length, items: wordShorts },
         anecdotes: { count: 0, items: [] },
         proverbs: { count: 0, items: [] },
         images: { count: 0, items: [] },
@@ -441,31 +447,46 @@ export function SearchFeed({
       : subjects[0]
         ? getLocalizedSearchResultName(subjects[0], language)
         : query);
+  // A piece found by the reader's word answers it: the confession would deny
+  // what the shelf below is showing.
+  const hasWordPiece = companions.shorts.items.some(
+    ({ match }) => match.relation === "word"
+  );
+  // No entity answers to the word, whether the search found nothing or only
+  // related fiches: what we hold is the piece.
+  const answeredByWord =
+    hasWordPiece &&
+    subjects.length === 0 &&
+    (state === "unknown" || state === "widened");
   const verdict =
     presentation?.answer?.verdict ??
-    (state === "unknown"
-      ? answerCopy.unknownName
-      : state === "typo"
-        ? copy.answer.typo(displayName)
-        : hasPeopleDisambiguation
-          ? copy.answer.shared(subjects.length)
-          : hasCrossTypeDisambiguation
-            ? copy.answer.sharedGeneric(subjects.length)
-            : state === "widened"
-              ? subjects.length > 0
-                ? copy.answer.widened
-                : relation?.kind === "family" && relationLabel
-                  ? copy.answer.relationFamilyVerdict(relationLabel)
-                  : relation?.kind === "country"
-                    ? copy.answer.relationCountryVerdict(
-                        inCountry(relation.id, displayName, language)
-                      )
-                    : copy.answer.relatedOnly
-              : copy.answer.exact);
+    (answeredByWord
+      ? answerCopy.wordName
+      : state === "unknown"
+        ? answerCopy.unknownName
+        : state === "typo"
+          ? copy.answer.typo(displayName)
+          : hasPeopleDisambiguation
+            ? copy.answer.shared(subjects.length)
+            : hasCrossTypeDisambiguation
+              ? copy.answer.sharedGeneric(subjects.length)
+              : state === "widened"
+                ? subjects.length > 0
+                  ? copy.answer.widened
+                  : relation?.kind === "family" && relationLabel
+                    ? copy.answer.relationFamilyVerdict(relationLabel)
+                    : relation?.kind === "country"
+                      ? copy.answer.relationCountryVerdict(
+                          inCountry(relation.id, displayName, language)
+                        )
+                      : copy.answer.relatedOnly
+                : copy.answer.exact);
   const summary =
     presentation?.answer?.summary ??
     (state === "unknown"
-      ? answerCopy.unknownNameBody
+      ? hasWordPiece
+        ? answerCopy.wordNameBody
+        : answerCopy.unknownNameBody
       : state === "widened"
         ? isRelationBrowse
           ? copy.answer.relationSummary
@@ -490,18 +511,21 @@ export function SearchFeed({
         fieldLabel: answerCopy.invitation,
       };
   const exactSubjectIds = new Set(
-    companions.shorts.items
-      .filter(({ match }) => match.relation === "exact")
-      .map(({ match }) => `${match.entityType}:${match.entityId}`)
+    companions.shorts.items.flatMap(({ match }) =>
+      match.relation === "exact"
+        ? [`${match.entityType}:${match.entityId}`]
+        : []
+    )
   );
   const needsEmptyShort =
-    state === "unknown" ||
-    state === "widened" ||
-    companions.shorts.items.length === 0 ||
-    companions.subjects.some(
-      ({ entityType, entityId }) =>
-        !exactSubjectIds.has(`${entityType}:${entityId}`)
-    );
+    !hasWordPiece &&
+    (state === "unknown" ||
+      state === "widened" ||
+      companions.shorts.items.length === 0 ||
+      companions.subjects.some(
+        ({ entityType, entityId }) =>
+          !exactSubjectIds.has(`${entityType}:${entityId}`)
+      ));
   const lenses = [
     { id: "all" as const, label: copy.filters.all },
     {
@@ -541,7 +565,9 @@ export function SearchFeed({
     : undefined;
   const reviewedWideningNote = presentation
     ? presentation.shorts?.wideningNote
-    : companions.shorts.items.some(({ match }) => match.relation !== "exact")
+    : companions.shorts.items.some(
+          ({ match }) => match.relation !== "exact" && match.relation !== "word"
+        )
       ? copy.wideningNote
       : undefined;
 

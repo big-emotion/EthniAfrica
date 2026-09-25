@@ -10,6 +10,10 @@
   },
   "subjects": [],
   "sitePath": "/fr/about",
+  "word": {
+    "label": { "fr": "ethnie", "en": "ethnie" },
+    "queries": ["ethnie", "ethnies"]
+  },
   "publications": [
     {
       "network": "tiktok",
@@ -44,7 +48,26 @@
     {
       "network": "youtube",
       "format": "video",
-      "url": "https://www.youtube.com/shorts/-6qrkZ2jMQU"
+      "url": "https://www.youtube.com/shorts/-6qrkZ2jMQU",
+      "publishedAt": "2026-09-21"
+    }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/ethnie-d-ou-vient-le-mot.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 109,
+  "sources": [
+    {
+      "title": "Georges Vacher de Lapouge, Les Sélections sociales, Paris, Fontemoing, 1896 (texte numérisé)",
+      "url": "https://archive.org/details/lesselectionssoc00vach",
+      "tier": "referenced"
+    },
+    {
+      "title": "Jean-Loup Amselle, « L'ethnicité comme volonté et comme représentation : à propos des Peul du Wasolon », Annales ESC, 42-2, 1987",
+      "url": "https://www.persee.fr/doc/ahess_0395-2649_1987_num_42_2_283395",
+      "tier": "referenced"
     }
   ]
 }

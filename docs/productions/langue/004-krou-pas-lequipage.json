@@ -26,7 +26,21 @@
     {
       "network": "youtube",
       "format": "video",
-      "url": "https://www.youtube.com/shorts/AMorrZSdH18"
+      "url": "https://www.youtube.com/shorts/AMorrZSdH18",
+      "publishedAt": "2026-09-12"
+    }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/krou-pas-lequipage.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 90,
+  "sources": [
+    {
+      "title": "Krou — EthniAfrica",
+      "url": "https://ethniafrica.com/fr/atlas/familles/FLG_KROU",
+      "tier": "referenced"
     }
   ]
 }

@@ -29,6 +29,19 @@
  *           subjects are accepted; duplicates are removed in first-seen order.
  *         example: "people:PPL_BASSA,country:CMR"
  *       - in: query
+ *         name: word
+ *         required: false
+ *         schema:
+ *           type: string
+ *           maxLength: 80
+ *         description: >
+ *           The word the reader typed, as typed. It finds the shorts filed
+ *           against that word, for a word that is not a corpus entity (such
+ *           as "zombie"); those items carry the relation "word" and lead the
+ *           shelf. It is compared whole, lowercased and without accents, never
+ *           by prefix.
+ *         example: zombie
+ *       - in: query
  *         name: lang
  *         required: false
  *         schema:
@@ -161,6 +174,7 @@ export async function GET(request: NextRequest) {
   const parsed = searchCompanionsQuerySchema.safeParse({
     subjects: request.nextUrl.searchParams.get("subjects") ?? undefined,
     lang: request.nextUrl.searchParams.get("lang") ?? undefined,
+    word: request.nextUrl.searchParams.get("word") ?? undefined,
   });
 
   if (!parsed.success) {

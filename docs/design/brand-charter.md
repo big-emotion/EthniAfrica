@@ -192,6 +192,14 @@ canonical link is pointing somewhere the site is not.
 
 ## 2. The promise, and the one place it is currently broken
 
+**Scoped social extension, 2026-09-25:** the operator approved
+[Mémoires sonores](gabarits-social/MEMOIRES-SONORES.md) within EthniAfrica,
+exclusively on TikTok and Instagram. Those accounts may have a broader musical
+and cultural remit than the website. The requirement above to repeat the site's
+name-focused slogan in every social bio no longer governs these two profiles;
+their exact replacement display names and bios remain pending. The EthniAfrica
+brand, website positioning and other accounts are unchanged.
+
 The atlas asserts three things, in this order, and every surface either serves
 them or is decoration:
 

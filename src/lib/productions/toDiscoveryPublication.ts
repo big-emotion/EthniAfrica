@@ -18,6 +18,8 @@ const KNOWN_KINDS: readonly DiscoverySubjectKind[] = [
   "patronyme",
 ];
 
+const YOUTUBE_VIDEO_ID = /(?:shorts\/|[?&]v=|youtu\.be\/)([\w-]{11})/;
+
 function isKnownKind(kind: string): kind is DiscoverySubjectKind {
   return (KNOWN_KINDS as readonly string[]).includes(kind);
 }
@@ -47,7 +49,8 @@ export function toDiscoveryPublication(
   entry: LedgerEntry
 ): DiscoveryPublication[] {
   const subject = entry.subjects[0];
-  if (!subject || !isKnownKind(subject.kind)) return [];
+  const word = entry.word;
+  if (subject ? !isKnownKind(subject.kind) : !word) return [];
 
   const entities = entry.subjects.flatMap((candidate) =>
     isKnownKind(candidate.kind)
@@ -64,13 +67,19 @@ export function toDiscoveryPublication(
       : []
   );
 
-  const videoRow = entry.publications.find(
+  const videoRows = entry.publications.filter(
     (row) => row.format === "video" && row.url
   );
+  // YouTube is the one player the site may frame, so its row wins when a
+  // production is filed on several networks.
+  const videoRow =
+    videoRows.find((row) => row.network === "youtube") ?? videoRows[0];
+  const youtubeId = videoRow?.url?.match(YOUTUBE_VIDEO_ID)?.[1];
 
+  const titled = subject ? subject.label : word!.label;
   const name: Record<Language, string> = {
-    fr: subject.label.fr,
-    en: subject.label.en ?? subject.label.fr,
+    fr: titled.fr,
+    en: titled.en ?? titled.fr,
   };
 
   return [
@@ -106,12 +115,16 @@ export function toDiscoveryPublication(
           title,
           url,
         })),
+        ...(word ? { word: { queries: word.queries } } : {}),
       },
       video: {
         name,
         publishedAt: videoRow?.publishedAt ?? "",
         durationSeconds: entry.durationSeconds ?? 0,
         watchUrl: videoRow?.url ?? "",
+        embed: youtubeId
+          ? { provider: "youtube" as const, id: youtubeId }
+          : undefined,
         poster: {
           src: entry.poster?.src ?? "",
           width: entry.poster?.width ?? 0,

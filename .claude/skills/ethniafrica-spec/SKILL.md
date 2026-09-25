@@ -14,7 +14,7 @@ This skill is **append-only on Confluence** and only writes new sections at stat
 
 ## Codex Compatibility
 
-This `.agents/skills` copy is the Codex-active port of the local Claude skill. Before acting, read `AGENTS.md` and `_bmad-output/project-context.md`; those are the active project rules for Codex runs.
+This `.agents/skills` copy is the Codex-active port of the local Claude skill. Before acting, read `AGENTS.md` and `CLAUDE.md`; those are the active project rules for Codex runs.
 
 For Atlassian operations, use the available Atlassian Rovo MCP tools. If a legacy tool name appears below, resolve it by semantic name through `tool_search` before the first Atlassian call: `getAccessibleAtlassianResources`, `atlassianUserInfo`, `getConfluencePage`, `getConfluencePageDescendants`, `searchConfluenceUsingCql`, `searchJiraIssuesUsingJql`, `getJiraIssue`, `getVisibleJiraProjects`, `updateConfluencePage`, and `createJiraIssue`.
 

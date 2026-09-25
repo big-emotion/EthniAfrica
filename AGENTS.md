@@ -32,6 +32,10 @@ Read `docs/design/brand-charter.md`, then `docs/design/typography-charter.md`. I
 
 Architecture, commands, every CI gate, the `@req` traceability rule, the Source Tier policy, the reader-facing register, the worktree and branch discipline. The section `### Bilingual content` is the doctrine this file summarises.
 
+## Skills and agents
+
+Skills live once, under `.claude/skills/<name>/`; Codex reads them through `.agents/skills/`, filled by `npm run skills:link` (run once per checkout). Sub-agents exist in both formats, `.claude/agents/<name>.md` and `.codex/agents/<name>.toml`, with the same instruction text. `CLAUDE.md` (`### Skills and agents`) is the rule.
+
 ## Local gate
 
 ```bash

@@ -32,7 +32,21 @@
     {
       "network": "youtube",
       "format": "video",
-      "url": "https://www.youtube.com/shorts/_Q1E23vO78A"
+      "url": "https://www.youtube.com/shorts/_Q1E23vO78A",
+      "publishedAt": "2026-09-07"
+    }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/cameroun-crevette.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 35,
+  "sources": [
+    {
+      "title": "Cameroun — EthniAfrica",
+      "url": "https://ethniafrica.com/fr/atlas/pays/CMR",
+      "tier": "referenced"
     }
   ]
 }

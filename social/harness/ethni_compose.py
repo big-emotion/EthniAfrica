@@ -34,6 +34,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 import ethni_tokens as tk
+import ethni_carousel_profiles as carousel_profiles
 
 HARNESS = pathlib.Path(__file__).resolve().parent
 
@@ -542,6 +543,9 @@ def plan(carte, deck, fmt_key, *, image, sous_titre=False, disposition=None):
     `disposition` forces a layout without consulting §6 at all. The fit trial §6
     runs is itself a plan, so without this the rule would call itself.
     """
+    if carousel_profiles.visual(deck):
+        from ethni_memoires import plan as musical_plan
+        return musical_plan(carte, deck, fmt_key, image)
     cadre = tk.fmt(fmt_key)
     W, H, k = cadre["w"], cadre["h"], cadre["k"]
 
@@ -1064,7 +1068,8 @@ def _entete(carte, deck, fmt_key, largeur):
     """
     blocs = []
     t = _role_type("Bandeau", fmt_key)
-    serie = (deck.get("serie") or tk.pilier_courant(deck.get("pilier") or "")).upper()
+    serie = (carousel_profiles.label(deck) or deck.get("serie")
+             or tk.pilier_courant(deck.get("pilier") or "")).upper()
 
     tr = _role_type("Rang", fmt_key)
     # §8 — « 01/05 » : the card and the total. The total is read off the deck and
@@ -1899,6 +1904,9 @@ def _peindre(carte, deck, fmt_key, *, image, sous_titre, texte, epreuve=None,
              instant=None, duree=None, plan_donne=None):
     p = plan_donne if plan_donne is not None else plan(
         carte, deck, fmt_key, image=image, sous_titre=sous_titre)
+    if carousel_profiles.visual(deck):
+        from ethni_memoires import render
+        return render(carte, deck, fmt_key, image, p, text=texte, proof=epreuve)
     if duree:
         cadencer(p, duree)
     cadre = tk.fmt(fmt_key)
@@ -2354,12 +2362,14 @@ _PORTE_D_UNE_CARTE = re.compile(r"^carte \d+ : ")
 IMAGE_PLAFOND_S = 4.0
 
 
-def images_de(carte):
+def images_de(carte, deck=None):
     """A scene's images in order: `images` when the deck lists several, else `image`.
 
     `image` stays the single-image form every deck written before 2026-09-14 uses,
     so those render unchanged.
     """
+    if deck is not None and not carousel_profiles.uses_image(deck, carte):
+        return []
     return carte.get("images") or [carte.get("image", {})]
 
 
@@ -2459,24 +2469,26 @@ def porte_message(racine):
 
 def portes(cartes, deck, identites=None):
     """§7 and §11 — the four gates, as one verdict in the operator's language."""
-    manquantes = []
+    manquantes = carousel_profiles.errors(deck, cartes)
+    if manquantes:
+        return Verdict(passe=False, manquantes=manquantes, licence_sortie="")
     remarques = []
     identites = identites or {}
 
     # 1 — every licence named, and the output licence computed from the lot.
     # Every image of a scene counts, not only its first: a scene of several images
     # ships under the most constraining licence among all of them.
-    licences = [im.get("licence", "") for c in cartes for im in images_de(c)]
+    licences = [im.get("licence", "") for c in cartes for im in images_de(c, deck)]
     sortie = tk.licence_sortie(licences)
     if sortie is None:
-        sans = sorted({c["rang"] for c in cartes for im in images_de(c)
+        sans = sorted({c["rang"] for c in cartes for im in images_de(c, deck)
                        if not im.get("licence")})
         manquantes.append(
             f"la licence n'est pas nommée sur les cartes {sans or '?'} — ouvre la page "
             f"du dépôt, lis la mention, et reporte-la, ou change d'image")
 
     for c in cartes:
-        images = images_de(c)
+        images = images_de(c, deck)
         for k, im in enumerate(images, 1):
             # « carte N : » keeps `portes_de_la_carte` scoping the gate to its card;
             # « image k : » says which image, once a scene carries several.
@@ -2597,7 +2609,7 @@ def portes(cartes, deck, identites=None):
                    licence_sortie=sortie or "", remarques=remarques)
 
 
-def quota(dispositions, fmt_key=""):
+def quota(dispositions, fmt_key="", deck=None):
     """§6 — the per-card layout rule, verified once more across the whole lot.
 
     `dispositions` is a list of (rang, disposition) in deck order.
@@ -2611,6 +2623,8 @@ def quota(dispositions, fmt_key=""):
     too long to sit on one. Both are settled in `structure`; nothing in this file
     can fix either, and a threshold bent here would only hide them.
     """
+    if deck is not None and carousel_profiles.visual(deck):
+        return []  # Approved text cards are not subject to the full-photo quota.
     total = len(dispositions)
     if not total:
         return []
@@ -2667,7 +2681,7 @@ def rendre(carte, deck, fmt_key, *, image, racine, verdict, sous_titre=False):
     if epreuve:
         dossier = racine / "_epreuves"
     else:
-        cibles = tk.reseaux(fmt_key)
+        cibles = tk.reseaux(fmt_key, deck)
         if not cibles:
             raise ValueError(
                 f"aucun réseau ne reçoit le format {fmt_key!r} — voir "

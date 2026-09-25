@@ -573,8 +573,36 @@
   }
 }
 
+/* A playing embed is the card's picture, and the shade and caption are drawn
+   in front of it: left in place they cover the very frame the reader pressed
+   play to see. They fade out and stay out of the paint and the tab order
+   (visibility waits for the fade) until the player closes. */
+.shade,
+.copy {
+  transition:
+    opacity var(--afh-duration-slow) var(--afh-ease-out),
+    visibility 0s linear 0s;
+}
+
+.card[data-playing="true"] .shade,
+.card[data-playing="true"] .copy {
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity var(--afh-duration-slow) var(--afh-ease-out),
+    visibility 0s linear var(--afh-duration-slow);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .feed {
     scroll-behavior: auto;
+  }
+
+  .shade,
+  .copy,
+  .card[data-playing="true"] .shade,
+  .card[data-playing="true"] .copy {
+    transition-duration: var(--afh-duration-instant);
+    transition-delay: 0s;
   }
 }

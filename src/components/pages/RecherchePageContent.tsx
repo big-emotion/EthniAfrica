@@ -264,7 +264,8 @@ export function RecherchePageContent() {
         const nextCompanions = await loadSearchCompanions(
           companionSubjects,
           language,
-          controller.signal
+          controller.signal,
+          q
         );
         if (ticket !== requestTicket.current) return;
 

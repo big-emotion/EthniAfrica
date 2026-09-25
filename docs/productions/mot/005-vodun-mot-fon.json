@@ -10,6 +10,10 @@
   },
   "subjects": [],
   "sitePath": "/fr/about",
+  "word": {
+    "label": { "fr": "vodun", "en": "vodun" },
+    "queries": ["vodun", "vodou", "vaudou"]
+  },
   "publications": [
     {
       "network": "tiktok",
@@ -22,6 +26,19 @@
       "format": "video",
       "url": "https://www.youtube.com/shorts/9tqCwDKE4fw",
       "publishedAt": "2026-09-12"
+    }
+  ],
+  "poster": {
+    "src": "/images/discoveries/videos/vodun-mot-fon-esprit.jpg",
+    "width": 540,
+    "height": 960
+  },
+  "durationSeconds": 57,
+  "sources": [
+    {
+      "title": "Laënnec Hurbon, « Haitian Vodou », The Open Encyclopedia of Anthropology, 2022",
+      "url": "https://www.anthroencyclopedia.com/entry/haitian-vodou",
+      "tier": "referenced"
     }
   ]
 }

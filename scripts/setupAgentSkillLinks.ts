@@ -15,14 +15,14 @@ import {
   CANONICAL_SKILLS_DIR,
   MIRROR_SKILLS_DIR,
   linkMirrorSkill,
+  listCanonicalSkills,
 } from "./lib/skillParity";
-
-const DEFAULT_SKILLS = ["afrik-curator"];
 
 function main(): void {
   const projectRoot = resolve(import.meta.dirname, "..");
   const requested = process.argv.slice(2).filter((arg) => !arg.startsWith("-"));
-  const skills = requested.length > 0 ? requested : DEFAULT_SKILLS;
+  const skills =
+    requested.length > 0 ? requested : listCanonicalSkills(projectRoot);
 
   let blocked = 0;
   for (const skill of skills) {

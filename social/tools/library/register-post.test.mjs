@@ -127,6 +127,52 @@ const MANDE = [
 ];
 
 // @req REQ-032
+test("musical registration records intended channels without inventing a site link or publication", () => {
+  const library = scratchLibrary();
+  const run = register(
+    [
+      "--id",
+      "kassav-fixture",
+      "--dir",
+      "Musique-Kassav/kassav-fixture",
+      "--title",
+      "A musical story",
+      "--subject",
+      "Musique · Kassav",
+      "--pillar",
+      "EthniAfrica",
+      "--status",
+      "a-produire",
+      "--profile",
+      "memoires-sonores",
+      "--write",
+    ],
+    library.posts
+  );
+  assert.equal(run.status, 0, run.stderr);
+  const post = JSON.parse(fs.readFileSync(library.ledger, "utf8")).posts.at(-1);
+  assert.equal(post.profile, "memoires-sonores");
+  assert.deepEqual(post.intendedChannels, ["tiktok", "instagram"]);
+  assert.deepEqual(post.channels, {});
+  assert.equal(post.date, "");
+  assert.equal(post.links, undefined);
+  assert.equal(post.status, "a-produire");
+});
+
+// @req REQ-032
+test("unknown carousel profiles cannot mutate the library", () => {
+  const library = scratchLibrary();
+  const before = fs.readFileSync(library.ledger, "utf8");
+  const run = register(
+    [...MANDE, "--profile", "memoires-sonore", "--write"],
+    library.posts
+  );
+  assert.notEqual(run.status, 0);
+  assert.match(run.stderr, /profil.*inconnu/i);
+  assert.equal(fs.readFileSync(library.ledger, "utf8"), before);
+});
+
+// @req REQ-032
 test("a registration is a dry run unless --write is given", () => {
   const library = scratchLibrary();
   const before = fs.readFileSync(library.ledger, "utf8");
