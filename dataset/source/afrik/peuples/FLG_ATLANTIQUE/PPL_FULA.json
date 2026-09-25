@@ -95,7 +95,7 @@
     },
     "organization": {
       "traditionalPoliticalSystem": "Organisation en chefferies dirigees par des Ardo (chefs pastoraux) ou des Almami (chefs religieux-politiques). Les Etats theocratiques historiques (emirats, imamates, califats) sont structures selon la loi islamique malekite. Le code Pulaaku regle les comportements : Munyal (patience), Gacce (pudeur), Hakkille (sagesse et hospitalite), Sagata (courage).",
-      "clanOrganization": "Structure clanique patrilineaire. Hierarchie sociale en quatre categories : noblesse (Rimbe/Dimo, Fulbe de souche libre), artisans et griots (caste libre mais endogame), serviteurs et anciens captifs (Maccudo/Rimmayybe). Environ 50% des habitants de l'Adamaoua etaient de statut servile au XIXe siecle.",
+      "clanOrganization": "Structure clanique patrilineaire. Hierarchie sociale en quatre categories : noblesse (Rimbe/Dimo, Fulbe de souche libre), artisans et griots (caste libre mais endogame), serviteurs et anciens captifs (Maccudo/Rimmayybe). Environ 50% des habitants de l'Adamaoua etaient de statut servile au XIXe siecle. Salamatou Sow (2001) décrit des noms sociaux, par lesquels les Fulbe se distinguent les uns des autres au sein d'une même communauté : des noms de clan, comme Jallo, Ba, Bari ou Soh, des noms de lignage et des noms de territoire, comme Maasinankooɓe, « gens du Maasina ». Ces noms peuvent s'emboîter dans l'identification d'une même personne. Selon elle, dans l'ouest du monde peul, le nom de clan (yettoode) est ce qu'on demande d'abord à une personne rencontrée pour la première fois, avant son prénom, parce qu'il la situe dans un ensemble ; elle note qu'il n'est plus employé à partir de l'est du Niger, et que tous les Fulbe ne se reconnaissent pas dans les grands clans. Cette description porte sur des usages sociaux des noms. Elle n'établit ni l'origine des noms Fulbe et Peul, ni l'appartenance d'une personne à partir de son nom.",
       "ageClassSystems": "Classes d'age structurant les activites pastorales et militaires. Rites de passage masculins incluant l'epreuve du Sharo (fouet) chez certains groupes (Wodaabe), testant l'endurance et la dignite du jeune homme.",
       "roleOfLineages": "Lignages patrilineaires determinant l'identite, le statut social et les alliances matrimoniales. Endogamie privilegiee (cousins croises ou paralleles). La genealogie et les origines nobles (Torobe) sont centrales pour l'acces aux charges politiques et religieuses.",
       "religiousAuthority": "Autorite des oulemas (savants religieux) et des chefs religieux (Almami, imam). L'islam sunnite (majorita irement malekite) structure l'ensemble de la vie sociale. Grande tradition islamique savante, particulierement chez les Torobe (fondateurs de plusieurs jihads réformateurs)."
@@ -326,6 +326,12 @@
         "url": "https://manenomatamu.wordpress.com/2011/12/03/peul-le-spectre-des-couleurs-en-francais/",
         "tier": "unverified",
         "notes": "Texte lu directement : la racine du rouge y est woɗe-."
+      },
+      {
+        "title": "Sow, Salamatou — Les noms sociaux en fulfulde. Cahiers d'études africaines, 41, 2001, p. 557-564",
+        "url": "https://doi.org/10.4000/etudesafricaines.109",
+        "tier": "referenced",
+        "notes": "Texte lu directement : paragraphes 1 à 3, 9 à 10, 19 et 31 à 34 pour les noms sociaux et leur usage. L'article rapporte aussi, d'après Diop (1979) et Mathieu (1988), une origine égyptienne des noms de clan et s'interroge sur celle des Toroɓɓe ; ces hypothèses ne sont pas retenues ici."
       }
     ]
   },
