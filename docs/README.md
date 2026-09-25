@@ -122,7 +122,6 @@ were referenced by nothing at all, two of them written that same week.
 
 ## Plans
 
-- [Congo history dossiers: implementation plan](plans/congo-history-dossiers.md)
 - [Playing the productions on the site — analysis brief](plans/embedded-media-brief.md)
 - [Playing the productions on the site — decision](plans/embedded-media-decision.md)
 - [The publishing format, and a production history the site can read — brief](plans/production-history-brief.md)

@@ -771,6 +771,10 @@ Project skills wrap the loop: `/ethniafrica-spec` (investigate → draft Pending
 
 Ferry (`ferry.config.yaml`) drives agent automation off Jira status transitions on ETNI — Refinement → READY FOR DEV → In Review → Changes Requested → TO MERGE — branching `ferry/*` off `recette`. One workflow, `ferry-router.yml`, handles every transition: a single Jira rule dispatches `ferry-transition` with the new status, and the router picks the agent from `trigger_column`. **It reviews and merges any PR whose ticket enters IN REVIEW or TO MERGE, not only `ferry/*` branches** — a `feat/*` or `fix/*` PR opened by `/ethniafrica-ticket` is reviewed and merged the same way once its ticket moves. The five per-agent workflows (`ferry-dev`, `-refine`, `-review`, `-iterate`, `-merge`) were superseded by the router and removed; the Jira setup and the legacy rules to keep disabled are in `ferry-jira-automation-setup.md`.
 
+### Skills and agents — one source, two runtimes
+
+Every skill lives once, under `.claude/skills/<name>/`. Codex reads the gitignored mirror `.agents/skills/`, which `npm run skills:link` fills with one symlink per skill — enumerated from the directory, so a new skill is linked and checked without editing a list. `check:skill-parity` holds each skill's resources to what its `SKILL.md` references; a resource of _another_ skill is written as its full `.claude/skills/...` path, or the checker looks for it in the wrong place. A sub-agent is declared twice because the two runtimes read different formats: `.claude/agents/<name>.md` and `.codex/agents/<name>.toml` carry the same instruction text.
+
 ### Test placement
 
 Colocated `__tests__/` next to the code: `src/lib/**`, `src/api/v2/**`, `src/app/api/v2/__tests__/`, `src/components/**`, `eslint/__tests__/`. Known-failing tests are quarantined under any `__tests__/known-failing/` directory (excluded in `vitest.config.ts`) rather than deleted, so the gate cannot mask new regressions.
