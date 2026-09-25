@@ -10,7 +10,7 @@
   "nameFr": "Lingala",
   "nameEn": "Kinshasa Lingala",
   "alternateNames": ["Losengo", "Ngala"],
-  "whyProblematic": null,
+  "whyProblematic": "Selon Meeuwis (2013), le nom Lingala ne figure dans aucune source historique antérieure à 1902. Dans son récit, la langue naît après 1881-1882 de la simplification du bobangi, langue de commerce du fleuve Congo, par des officiers européens et leurs troupes recrutées sur plusieurs côtes africaines. Elle s'étend ensuite depuis un poste de l'État, nommé Bangala d'après des populations que l'on croyait à tort appelées ainsi, et reçoit d'abord le nom de Bangala. En 1901-1902, des missionnaires scheutistes réforment sa grammaire et son vocabulaire et la rebaptisent Lingala, parce que le préfixe ba- désigne des peuples et non des langues dans plusieurs langues bantoues de la région. Ce nom a été largement adopté, mais Bangala se dit encore dans le nord-est du Congo. Cette histoire est une reconstitution d'un auteur, datée de 2013 ; sa bibliographie cite d'autres travaux sur ces origines, dont Hulstaert (1989) et Samarin (1990).",
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
   "peoples": [],
@@ -24,7 +24,18 @@
         "url": "https://glottolog.org/resource/languoid/id/ling1263",
         "tier": "official",
         "notes": "Glottolog name: Kinshasa Lingala; classification includes Narrow Bantu."
+      },
+      {
+        "title": "Meeuwis, Michael, « Survey chapter: Lingala », Atlas of Pidgin and Creole Language Structures Online, 2013",
+        "url": "https://apics-online.info/surveys/60",
+        "tier": "referenced",
+        "notes": "Chapitre de synthèse publié en ligne en 2013, licence CC BY 4.0, lu en texte intégral pour les sections 1 à 3. Source du récit sur le bobangi, le nom Bangala, la réforme des missionnaires scheutistes et le nom Lingala. Les effectifs de locuteurs et le statut juridique de la langue donnés par ce chapitre datent de 2013 et ne sont pas repris ici."
       }
     ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred while publication stays French-only; the name-history passage was added on 2026-09-25."
+    }
   }
 }
