@@ -15,7 +15,7 @@
         "Wangara ou Wankara (terme utilisé en Afrique de l'Ouest anglophone, notamment au Ghana ; son rapport à Jula est débattu, voir originOfExonyms)",
         "Diula, Djula, Doula, Dualas, Dyoula, Dyulanke (variantes orthographiques regionales)"
       ],
-      "originOfExonyms": "Le terme Dioula est lui-même un nom commun mandingue signifiant commerçant ou marchand itinérant. Il a été appliqué comme ethnonyme à la communauté des Mande islamisés spécialisés dans le commerce longue distance. Le rapport entre Wangara et Jula reste débattu selon les sources. Fauvelle et Bazin, cités par Cissé (2025), décrivent Wangara comme le nom d'un groupe du bord du Sahel qui, dans les siècles suivants, en est venu à désigner une classe professionnelle de négociants répandue en Afrique de l'Ouest — un glissement sémantique dont le terme jula hérite aujourd'hui. Lovejoy (1978), à partir du Soudan central, conteste au contraire l'équivalence Wangara/Jula pour cette région : il y décrit les Wangara comme une diaspora commerciale distincte, liée à l'empire Songhaï plutôt qu'aux réseaux mandé. À ne pas confondre avec les Diola (ou Joola) du Sénégal et de Gambie, peuple distinct de famille linguistique atlantique.",
+      "originOfExonyms": "Le terme Dioula est lui-même un nom commun mandingue signifiant commerçant ou marchand itinérant : Yaya Konaté (2016) rapporte que ses interlocuteurs, locuteurs de plusieurs parlers mandingues de Côte d'Ivoire, traduisent jula par « commerçant ». Il a été appliqué comme ethnonyme à la communauté des Mande islamisés spécialisés dans le commerce longue distance. Le rapport entre Wangara et Jula reste débattu selon les sources. Fauvelle et Bazin, cités par Cissé (2025), décrivent Wangara comme le nom d'un groupe du bord du Sahel qui, dans les siècles suivants, en est venu à désigner une classe professionnelle de négociants répandue en Afrique de l'Ouest — un glissement sémantique dont le terme jula hérite aujourd'hui. Lovejoy (1978), à partir du Soudan central, conteste au contraire l'équivalence Wangara/Jula pour cette région : il y décrit les Wangara comme une diaspora commerciale distincte, liée à l'empire Songhaï plutôt qu'aux réseaux mandé. À ne pas confondre avec les Diola (ou Joola) du Sénégal et de Gambie, peuple distinct de famille linguistique atlantique.",
       "whyProblematic": "La confusion avec les Diola (Joola) du Senegal est frequente en raison de la proximite orthographique des noms. Les Diola sont un peuple distinct parlant une langue atlantique, sans lien avec les Dioula mande. L'identité dioula est elle-même complexe : le terme a été à la fois un nom de métier, une désignation religieuse (commerçant musulman) et un ethnonyme, et des communautés bambara ou mandingues se sont parfois vu attribuer ce terme de l'extérieur. Une forme véhiculaire simplifiée du dioula, parlée bien au-delà des communautés dioula elles-mêmes, se distingue ainsi du dioula identitaire parlé par les communautés d'origine.",
       "contemporaryUsage": "Dioula est l'appellation officielle en Cote d'Ivoire et au Burkina Faso. Dyula est courante dans la litterature academique anglophone. Jula est la forme phonologique standard adoptee par les linguistes. Le terme est utilise a la fois comme nom de peuple et comme nom de langue vehiculaire en Cote d'Ivoire.",
       "linguisticFamily": "FLG_MANDE",
@@ -163,6 +163,12 @@
         "url": "https://www.ouvroir.fr/apropos/index.php?id=100",
         "tier": "referenced",
         "notes": "Cite François-Xavier Fauvelle et Jean Bazin sur le glissement sémantique de Wangara vers Jula, du nom d'un groupe vers celui d'une spécialisation professionnelle."
+      },
+      {
+        "title": "Yaya Konaté, Le dioula véhiculaire : situation sociolinguistique en Côte d'Ivoire, Corela 14-1, 2016",
+        "url": "https://doi.org/10.4000/corela.4586",
+        "tier": "referenced",
+        "notes": "Article fondé sur des enquêtes de terrain : les interlocuteurs de l'auteur traduisent jula par « commerçant »."
       },
       {
         "title": "Paul E. Lovejoy, The Role of the Wangara in the Economic Transformation of the Central Sudan in the Fifteenth and Sixteenth Centuries, The Journal of African History 19(2), 1978, pp. 173-193",
