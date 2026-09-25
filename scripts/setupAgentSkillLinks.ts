@@ -17,7 +17,11 @@ import {
   linkMirrorSkill,
 } from "./lib/skillParity";
 
-const DEFAULT_SKILLS = ["afrik-curator"];
+const DEFAULT_SKILLS = [
+  "afrik-curator",
+  "ethniafrica-structure",
+  "ethniafrica-produire",
+];
 
 function main(): void {
   const projectRoot = resolve(import.meta.dirname, "..");

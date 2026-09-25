@@ -1,5 +1,9 @@
 # Production harness — EthniAfrica shorts
 
+For scene-based video production, start with [the reusable workflow](SCENE-PRODUCTION.md),
+[feature catalogue](SCENE-CATALOGUE.md) and [three production storyboards](templates/scene-storyboards.md).
+The older deck-driven path below remains supported.
+
 The engine, the brand ending and every measured constraint live here. A project
 supplies only its narration, its scene sheet and its assets.
 

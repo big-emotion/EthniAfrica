@@ -11,6 +11,10 @@ from ethni_scene_plan import STATUS, asset_path, scene_at, transition_at, requir
 from ethni_scene_timeline import draw_timeline
 
 
+def scene_map(scene):
+    return scene.get("map") if scene["type"] == "map" else scene.get("timeline", {}).get("background")
+
+
 def dashed_line(draw, points, colour, width=2):
     """Keep dash phase across short geographic segments, including tiny rings."""
     phase = 0.0
@@ -92,9 +96,9 @@ class SceneRenderer:
             out = resized.crop((left, top, left+w, top+h))
         return out
 
-    def _map(self, scene, local):
+    def _map(self, scene, local, viewport=None):
         cfg = scene["map"]
-        x0, y0, x1, y1 = self.content
+        x0, y0, x1, y1 = viewport or self.content
         w, h = x1-x0, y1-y0
         canvas = Image.new("RGB", (w, h), self.palette["ground"])
         draw = ImageDraw.Draw(canvas)
@@ -238,9 +242,12 @@ class SceneRenderer:
         elif kind == "timeline":
             background = scene["timeline"].get("background")
             if background:
-                content = self._map({"map": background}, local)
-                content = Image.blend(Image.new("RGB", content.size, self.palette["ground"]), content, .6)
-                image.paste(content, self.content[:2])
+                composed = bool(background.get("features") or background.get("highlights"))
+                viewport = (45, 820, 1035, 1210) if composed else self.content
+                content = self._map({"map": background}, local, viewport)
+                if not composed:
+                    content = Image.blend(Image.new("RGB", content.size, self.palette["ground"]), content, .6)
+                image.paste(content, viewport[:2])
             draw_timeline(self, draw, scene, local)
         elif kind == "document":
             self._document(image, draw, scene)
@@ -254,10 +261,11 @@ class SceneRenderer:
                 self.paragraph(draw, item["label"], (self.left, top, self.right-self.left, 100), "Paire — terme", self.palette["gold"])
                 self.paragraph(draw, item["body"], (self.left, top+94, self.right-self.left, 100), "Corps")
         legend = []
-        if kind == "map":
-            legend.append(("Frontières actuelles en pointillé · Mercator" if scene["map"].get("border_style") == "dashed"
-                           else "Frontières actuelles · Mercator") if scene["map"]["borders"] else "Sans frontières actuelles · Mercator")
-            for feature in scene["map"].get("features", []):
+        geographic = scene_map(scene)
+        if geographic and (kind == "map" or geographic.get("features") or geographic.get("highlights")):
+            legend.append(("Frontières actuelles en pointillé · Mercator" if geographic.get("border_style") == "dashed"
+                           else "Frontières actuelles · Mercator") if geographic["borders"] else "Sans frontières actuelles · Mercator")
+            for feature in geographic.get("features", []):
                 if feature["at"] <= local < feature["until"]:
                     e = feature["evidence"]
                     meaning = {"journey": "Trajet", "migration": "Migration", "language-diffusion": "Diffusion linguistique",
@@ -265,7 +273,7 @@ class SceneRenderer:
                     role = "Voisinage : " if feature.get("role") == "context" else ""
                     legend.append(f"{role}{feature['label']} · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else ""))
                     if feature.get("geometry_note"): legend.append(feature["geometry_note"])
-        self.paragraph(draw, "\n".join(legend), (self.left, 1190, self.right-self.left, 142), "Crédit", self.palette["night-ink-2"])
+        self.paragraph(draw, "\n".join(legend), (self.left, 1215 if kind == "timeline" else 1190, self.right-self.left, 115 if kind == "timeline" else 142), "Crédit", self.palette["night-ink-2"])
         return image
 
     def credits(self, scene):
@@ -283,8 +291,9 @@ class SceneRenderer:
         if kind == "timeline":
             for event in scene["timeline"]["events"] + scene["timeline"].get("context", []):
                 source_keys.extend(event["evidence"]["sources"])
-        if kind == "map":
-            for feature in scene["map"].get("features", []):
+        geographic = scene_map(scene)
+        if geographic:
+            for feature in geographic.get("features", []):
                 source_keys.extend(feature["evidence"]["sources"])
         refs = [self.plan["sources"][key] for key in dict.fromkeys(source_keys) if key != asset_source]
         if refs:
@@ -345,11 +354,13 @@ class SceneRenderer:
             instants.update((start, (start+end)/2, end-1e-6))
             length = scene.get("transition", {}).get("duration", 0)
             if length: instants.add(start+length/2)
-            if scene["type"] == "map":
-                instants.update(start+k["at"] for k in scene["map"]["camera"] if start+k["at"] < end)
-                for f in scene["map"].get("features", []):
-                    instants.update((start+f["at"], start+f["until"]-1e-6))
+            geographic = scene_map(scene)
+            if geographic:
+                instants.update(start+k["at"] for k in geographic["camera"] if start+k["at"] < end)
+                for f in geographic.get("features", []):
+                    instants.update((start+f["at"], start+f["until"]-1e-6, min(end-1e-6, start+f["until"])))
                     if "draw_seconds" in f:
+                        instants.add(start+f["at"]+f["draw_seconds"]/2)
                         instants.add(min(end-1e-6, start+f["at"]+f["draw_seconds"]))
                     if "fade_seconds" in f:
                         instants.update((start+f["at"]+f["fade_seconds"]/2,
@@ -364,7 +375,6 @@ class SceneRenderer:
                     instants.update(min(end-1e-6, start+cue+delta) for cue in cues for delta in (.25, .85))
                     if "overview_at" in timeline:
                         instants.update(min(end-1e-6, start+timeline["overview_at"]+delta) for delta in (0, .55, 1.1))
-                    instants.update(start+k["at"] for k in timeline.get("background", {}).get("camera", []) if start+k["at"] < end)
         for instant in sorted(instants):
             self.render(instant)
         return sorted(instants)

@@ -1,33 +1,53 @@
 ---
 name: ethniafrica-structure
-description: Écrire le contenu d'une publication EthniAfrica à partir d'un rapport de sujet — cards.json au schéma de GABARITS-SOCIAL.md §10, script de narration, titre, descriptions par réseau, SOURCES.md avec licences vérifiées image par image, et liens UTM. Deuxième étape de la chaîne idee → structure → produire. Utiliser pour « écris les cartes », « rédige », « écris la narration », « prépare les sources », ou /ethniafrica-structure. Ne rend aucune image et ne choisit aucune disposition.
+description: Écrire le contenu d'une publication EthniAfrica à partir d'un rapport de sujet — cards.json au schéma de GABARITS-SOCIAL.md §10, script de narration, titre, descriptions par réseau, SOURCES.md avec licences vérifiées image par image, et liens UTM. Deuxième étape de la chaîne idee → structure → produire. Utiliser pour « écris les cartes », « rédige », « écris la narration », « prépare les sources », ou /ethniafrica-structure. For scene videos, prepares the narrative and visual handoff without rendering; carousel layouts remain engine-owned.
 ---
 
 # structure — écrire le contenu
 
 Deuxième étape. `idee` vient avant, `produire` vient après.
 
-## Scene-based video route (2026-09-24)
+## Scene-video dispatch and handoff
 
-For a video explicitly using the scene engine, read
-`social/harness/SCENES.md` and `references/gabarit-reel-scenes.md` first.
-This route separates the approved editorial narration from its visual scenes.
-It supports name-origin, history/geography, thematic analysis and an authored
-free sequence. It does not change carousel templates or publication approval.
+For an explicitly requested scene-based video, apply this section before the
+legacy deck instructions below. Read `social/harness/SCENE-PRODUCTION.md`,
+`social/harness/SCENE-CATALOGUE.md`, `social/harness/templates/scene-storyboards.md`
+and `references/gabarit-reel-scenes.md`. Choose name-origin, history-geography,
+thematic-analysis or an explained free structure. Keep carousels on their own route.
 
-The existing name-origin rules below still govern name-origin narration.
-For the other scene profiles, use the scene reference instead of forcing the
-name-origin checker to accept a thematic argument. Do not invent a corpus entity,
-episode, myth or ledger category to make a dossier look like a name-origin post.
-The source report and explicit text approval remain prerequisites.
+The source report, explicit full-text approval, source-tier rules, plain-language
+review, message/myth review, synthesis and approved project closing still apply.
+Reuse approvals already given for unchanged inputs. For **name-origin only**, retain
+the category narration template, fixed title and `check-gabarit.mjs`. Thematic and
+historical subjects do not inherit that title or need an invented myth, corpus
+entity, numbered episode or publication category. Missing registration classification
+is recorded separately; it does not prevent a private technical proof.
 
-Prepare `scene-plan.json`, its source/asset register and relative asset bundle
-alongside the narration. Existing decks may be reused as source context; a new
-video-only subject does not need a fabricated carousel deck. Hash approved
-inputs and bind scene boundaries to the measured voice. A visual scene can
-span or subdivide a paragraph without changing its speech. Supply a handoff
-that a smaller model can execute without rewriting the renderer. V1 produces
-proofs; it does not register the subject or change publication status.
+For scene-only work, `cards.json` and `cartes.json` are optional. The legacy
+four-second image turnover, `pivot`, deck layout selection and one-paragraph/one-card
+mapping do not apply to the scene plan. A shot can span or subdivide narration
+paragraphs without changing speech. The name-origin editorial paragraph order still
+applies; it does not dictate visual cut points. A scene plan does not override brand
+fonts, inks or safe areas.
+
+Prepare the private `production-brief.md` using the versioned brief template. Show
+the complete narration and a concise visual storyboard together: asset choices,
+camera intentions, dates, locators, schematic paths, uncertainty and silent context.
+Do not require the operator to approve every technical coordinate or repeat approval
+of unchanged speech. Resolve material editorial choices before execution.
+
+Before voice approval, the storyboard is a proposal, not an executable timed plan.
+After the approved recording and exact alignment exist, bind the storyboard to
+measured words, fill `scene-plan.json`, calculate actual hashes and complete the
+source/licence register. The preparation owner must supply geometry and images;
+a smaller execution model must not infer them from the narration.
+
+Deliver the filled plan, source bundle and explicit execution instructions from
+`social/harness/templates/scene-execution-prompt.md`. When production is already
+authorized, continue into the scene route of `produire`; otherwise identify that
+next step. Missing inputs are reported together, not one prompt at a time. Do not
+claim a placeholder JSON starter is ready. Registration remains a separate,
+appropriately typed editorial operation; scene proofs never promote publication status.
 
 Si aucun rapport de sujet n'existe dans `$ETHNIAFRICA_SOCIAL_PROJECTS/_idees/`, dis-le et
 propose de lancer `idee`. Ne saute pas l'étape.
