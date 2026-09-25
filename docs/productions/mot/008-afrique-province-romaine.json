@@ -10,6 +10,10 @@
   },
   "subjects": [],
   "sitePath": "/fr/about",
+  "word": {
+    "label": { "fr": "Afrique", "en": "Africa" },
+    "queries": ["afrique", "africa"]
+  },
   "publications": [
     {
       "network": "tiktok",

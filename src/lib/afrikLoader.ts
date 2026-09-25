@@ -232,9 +232,11 @@ export async function searchWithLeads(
 export async function loadSearchCompanions(
   subjects: readonly SearchCompanionSubject[],
   language: Language,
-  signal?: AbortSignal
+  signal?: AbortSignal,
+  word?: string
 ): Promise<SearchCompanionsData> {
   const params = new URLSearchParams();
+  if (word?.trim()) params.set("word", word.trim());
   if (subjects.length > 0) {
     params.set(
       "subjects",

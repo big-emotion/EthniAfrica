@@ -8,6 +8,7 @@ const RELATION_COPY_KEY = {
   "linked-people": "linkedPeople",
   "linked-country": "linkedCountry",
   recent: "recent",
+  word: "word",
 } as const satisfies Record<
   FeedCompanionMatch["relation"],
   keyof (typeof searchFeedCopy)["fr"]["relation"]
@@ -25,7 +26,8 @@ export function CompanionRelationLabel({
   language = "fr",
   showExact = false,
 }: CompanionRelationLabelProps) {
-  if (match.relation === "exact" && !showExact) return null;
+  if ((match.relation === "exact" || match.relation === "word") && !showExact)
+    return null;
 
   return (
     <span

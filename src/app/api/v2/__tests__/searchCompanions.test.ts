@@ -60,6 +60,32 @@ describe("GET /api/v2/search/companions", () => {
   });
 
   // @req REQ-180
+  it("passes the reader's word to the handler", async () => {
+    const response = await GET(
+      new NextRequest("http://localhost/api/v2/search/companions?word=zombie")
+    );
+
+    expect(response.status).toBe(200);
+    expect(getSearchCompanionsHandler).toHaveBeenCalledWith({
+      lang: "fr",
+      subjects: [],
+      word: "zombie",
+    });
+  });
+
+  // @req REQ-180
+  it("refuses a word too long to be a name", async () => {
+    const response = await GET(
+      new NextRequest(
+        `http://localhost/api/v2/search/companions?word=${"a".repeat(81)}`
+      )
+    );
+
+    expect(response.status).toBe(400);
+    expect(getSearchCompanionsHandler).not.toHaveBeenCalled();
+  });
+
+  // @req REQ-180
   it("allows no subjects for a recent-content fallback", async () => {
     const response = await GET(
       new NextRequest("http://localhost/api/v2/search/companions")

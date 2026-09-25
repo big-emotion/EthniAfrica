@@ -441,10 +441,17 @@ export function SearchFeed({
       : subjects[0]
         ? getLocalizedSearchResultName(subjects[0], language)
         : query);
+  // A piece found by the reader's word answers it: the confession would deny
+  // what the shelf below is showing.
+  const hasWordPiece = companions.shorts.items.some(
+    ({ match }) => match.relation === "word"
+  );
   const verdict =
     presentation?.answer?.verdict ??
     (state === "unknown"
-      ? answerCopy.unknownName
+      ? hasWordPiece
+        ? answerCopy.wordName
+        : answerCopy.unknownName
       : state === "typo"
         ? copy.answer.typo(displayName)
         : hasPeopleDisambiguation
@@ -465,7 +472,9 @@ export function SearchFeed({
   const summary =
     presentation?.answer?.summary ??
     (state === "unknown"
-      ? answerCopy.unknownNameBody
+      ? hasWordPiece
+        ? answerCopy.wordNameBody
+        : answerCopy.unknownNameBody
       : state === "widened"
         ? isRelationBrowse
           ? copy.answer.relationSummary
@@ -490,12 +499,14 @@ export function SearchFeed({
         fieldLabel: answerCopy.invitation,
       };
   const exactSubjectIds = new Set(
-    companions.shorts.items
-      .filter(({ match }) => match.relation === "exact")
-      .map(({ match }) => `${match.entityType}:${match.entityId}`)
+    companions.shorts.items.flatMap(({ match }) =>
+      match.relation === "exact"
+        ? [`${match.entityType}:${match.entityId}`]
+        : []
+    )
   );
   const needsEmptyShort =
-    state === "unknown" ||
+    (state === "unknown" && !hasWordPiece) ||
     state === "widened" ||
     companions.shorts.items.length === 0 ||
     companions.subjects.some(
@@ -541,7 +552,9 @@ export function SearchFeed({
     : undefined;
   const reviewedWideningNote = presentation
     ? presentation.shorts?.wideningNote
-    : companions.shorts.items.some(({ match }) => match.relation !== "exact")
+    : companions.shorts.items.some(
+          ({ match }) => match.relation !== "exact" && match.relation !== "word"
+        )
       ? copy.wideningNote
       : undefined;
 

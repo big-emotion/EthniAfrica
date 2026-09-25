@@ -5,7 +5,10 @@ import { describe, expect, it } from "vitest";
 
 import { DISCOVERY_VIDEOS } from "@/lib/discoveries/videos";
 import { getFamilyRoute } from "@/lib/routing";
-import { eligibleSearchShorts } from "@/lib/search/companionCatalogs";
+import {
+  eligibleSearchShorts,
+  shortsForWord,
+} from "@/lib/search/companionCatalogs";
 
 import { loadProductionLedger, type LedgerEntry } from "../ledger";
 import { searchShortsFrom } from "../toSearchShort";
@@ -70,10 +73,26 @@ describe("searchShortsFrom", () => {
   });
 
   // @req REQ-180
-  it("ignores a production with no subject the search can match", () => {
-    const wordOnly = { ...complete, subjects: [] };
+  it("ignores a production with neither a subject nor a word the search can match", () => {
+    const unmatched = { ...complete, subjects: [] };
 
-    expect(searchShortsFrom([wordOnly], [])).toEqual([]);
+    expect(searchShortsFrom([unmatched], [])).toEqual([]);
+  });
+
+  // @req REQ-180
+  it("keeps a word piece, which the search finds by the queries filed for it", () => {
+    const zombie: LedgerEntry = {
+      ...complete,
+      campaign: "zombie",
+      subjects: [],
+      word: { label: { fr: "zombie", en: "zombie" }, queries: ["zombie"] },
+    };
+
+    const [short] = searchShortsFrom([zombie], []);
+
+    expect(short.word?.queries).toEqual(["zombie"]);
+    expect(short.subjects).toEqual([]);
+    expect(eligibleSearchShorts([short])).toHaveLength(1);
   });
 
   // @req REQ-180
@@ -112,6 +131,25 @@ describe("the filed production ledger", () => {
     expect(shown.map((short) => short.id).sort()).toEqual(
       filed.map((entry) => `video:${entry.campaign}`).sort()
     );
+  });
+
+  // The word is what a reader types; a filed query that no longer reaches its
+  // piece would silently send that reader to the confession.
+  // @req REQ-180
+  it("finds every filed word piece by each of its own queries", () => {
+    const pieces = filed.filter((entry) => entry.word);
+    expect(pieces.length).toBeGreaterThan(0);
+
+    const shorts = searchShortsFrom(pieces, []);
+    for (const entry of pieces) {
+      for (const query of entry.word!.queries) {
+        const found = shortsForWord(query, shorts).items;
+        expect(
+          found.map(({ item }) => item.id),
+          `${entry.campaign} by "${query}"`
+        ).toContain(`video:${entry.campaign}`);
+      }
+    }
   });
 
   // @req REQ-180
