@@ -170,12 +170,22 @@ could replace the first note before it can be read. Changing this visual
 timing never edits or regenerates the approved narration. The note disappears
 when the next main event or final overview begins.
 
-An optional `background` accepts the map contract below, restricted to a
-`physical` basemap without features or country highlights. Camera keys can
-follow the narration; current borders can be dashed. This background locates
-the chronology and does not establish historic boundaries. Its asset license
-and source join the credits. Use a separate map scene for historical polygons
-or travel routes that need their own geographic evidence.
+An optional `background` accepts the full map contract below: points, routes,
+territories, country highlights and camera keys retain their own evidence and
+local reveal/expiry cues. Features or country highlights activate a dedicated
+map viewport below a compact chronological rail; the geography is not dimmed or painted underneath
+dates. Context must use `context_layout: "corner"` when geographic overlays are present,
+so cards cannot cover the map. Basemap-only plans retain the original layout.
+
+Active features keep their period, status and schematic qualifiers in a visible
+legend. Their sources join the credits. The same geometry, licensing, overflow
+and overlap rules apply as in map scenes. A route remains an authored path,
+never an inferred historic journey. Features expire only at their explicit
+`until` cue; date changes and the final overview do not silently hide them.
+A recap may deliberately show earlier dated features together. Preflight also
+samples feature reveal, fade, route completion and expiry. Label offsets are
+pixels within the shorter map viewport and may need adjustment when reusing a
+map scene. Review the result at phone size, including the overview.
 
 The focus layout keeps two or three main events, a non-proportional spacing
 notice, fixed mobile type sizes and optional video progress. Reduced-motion
