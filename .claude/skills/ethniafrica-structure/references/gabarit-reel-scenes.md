@@ -53,12 +53,25 @@ freedom to omit uncertainty or to turn unsupported geography into a picture.
 
 ### Reusable visual choices
 
-Use a `timeline` scene when two or more dates form the argument. The mobile
-template places two or three dated events horizontally and reveals them at
-voice cues. Its spacing is explicitly ordinal, not a proportional time scale.
-Split longer sequences into several scenes. An optional context lane aligns a
-separately sourced event from elsewhere with the same year; contemporaneity
-must not imply a causal link. Never invent a parallel just to fill the lane.
+The maintained recipes are in `social/harness/templates/scene-storyboards.md`;
+use `social/harness/SCENE-PRODUCTION.md` for the preparation/execution boundary.
+
+Use `timeline.layout: focus` with `context_layout: corner` for the operator's
+preferred chronology: one dominant date, a quiet upper-right note and an optional
+final overview before closing. Use two or three primary dates per scene. Each
+context item has its own period, which need not equal the main event's exact year.
+Regional neighbours and familiar world events should fit the subject and audience;
+never manufacture a causal connection or force the same country into every sequence.
+
+`timeline.background` now accepts sourced points, routes and regions, with explicit
+reveal/expiry cues. Keep the visible uncertainty and schematic qualifiers. The map
+sits below the rail; contextual cards must not cover it. Geographic scenes can also
+use a small point annotation with leader line, or a separate wider contextual shot.
+
+Prefer visible region fills and simple location points. Halos remain supported for
+older plans but are not the preferred default. Current dashed borders orient the
+viewer without becoming historical or exclusive population boundaries. Reuse a
+camera/scene pattern, never another subject's geometry without evidence.
 
 A sustained historical explanation should carry a relevant document or image.
 Use `document` for an attributed portrait, title page or other archival object

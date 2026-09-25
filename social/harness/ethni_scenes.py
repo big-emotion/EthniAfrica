@@ -56,10 +56,10 @@ def encode(renderer, audio, cuts, target):
     return count
 
 
-def run(project, plan_path, reduced_motion=False, validate_only=False, previews_only=False):
+def run(project, plan_path, reduced_motion=False, validate_only=False, previews_only=False, output_dir=None):
     plan_path = Path(plan_path).resolve()
     plan = json.loads(plan_path.read_text())
-    output = assert_writable(Path(plan["output_dir"]).expanduser().resolve())
+    output = assert_writable(Path(output_dir if output_dir is not None else plan["output_dir"]).expanduser().resolve())
     require("_epreuves" in output.parts, "Scene exports currently require an _epreuves directory")
     source = prepare_source(project, plan["source"])
     validate_plan(plan, plan_path.parent, source["duration"])

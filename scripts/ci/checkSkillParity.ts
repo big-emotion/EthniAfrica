@@ -19,7 +19,11 @@ import {
   readSkillManifest,
 } from "../lib/skillParity";
 
-const CHECKED_SKILLS = ["afrik-curator"];
+const CHECKED_SKILLS = [
+  "afrik-curator",
+  "ethniafrica-structure",
+  "ethniafrica-produire",
+];
 
 function main(): void {
   const projectRoot = resolve(import.meta.dirname, "../..");

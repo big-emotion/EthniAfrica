@@ -1,5 +1,9 @@
 # Scene video engine v1
 
+For preparation, reusable storyboards and execution by another session, see the
+[production guide](SCENE-PRODUCTION.md) and [feature catalogue](SCENE-CATALOGUE.md).
+This document remains the detailed field contract.
+
 An opt-in extension of `ethni_montage.py`, for narrated videos assembled from
 maps, moving photographs, text and comparisons. Carousels and the default video
 path keep their existing behaviour. The original `--map-proof` POC also remains
