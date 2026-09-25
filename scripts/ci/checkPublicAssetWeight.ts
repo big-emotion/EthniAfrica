@@ -27,11 +27,13 @@ import { execFileSync } from "node:child_process";
 import { statSync } from "node:fs";
 
 /**
- * Measured 2026-09-20 on `recette`: 146 tracked files, 37 008 580 bytes.
- * Rounded up to the next whole mebibyte, which leaves roughly 0.7 MiB — a
+ * Measured 2026-09-25 with the 54 proverb photographs
+ * (`public/images/proverbs/`, about 4 MiB): 220 tracked files, 40.12 MiB.
+ * Rounded up to the next whole mebibyte, which leaves roughly 0.9 MiB — a
  * carousel pass has to raise this line in its own commit, which is the point.
+ * Before that pass it stood at 36 MiB (146 tracked files on 2026-09-20).
  */
-export const PUBLIC_ASSET_WEIGHT_CEILING_BYTES = 36 * 1024 * 1024;
+export const PUBLIC_ASSET_WEIGHT_CEILING_BYTES = 41 * 1024 * 1024;
 
 /**
  * The largest tracked asset is `public/images/dossiers/kongo-crucifix.jpg` at

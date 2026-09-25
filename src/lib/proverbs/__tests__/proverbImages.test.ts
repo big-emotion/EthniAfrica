@@ -5,7 +5,7 @@ import { describe, expect, it } from "vitest";
 
 import { DISCOVERY_PROVERB_IDS } from "@/lib/discoveries/entries";
 
-import { findProverb } from "../proverbs";
+import { findProverb, PROVERBS } from "../proverbs";
 import { PROVERB_IMAGES } from "../proverbImages";
 
 const entries = Object.entries(PROVERB_IMAGES);
@@ -32,6 +32,15 @@ describe("proverb photographs", () => {
         expect(picture.licenceUrl, id).toMatch(/^https:\/\//);
       }
     }
+  });
+
+  // A proverb added to the bank without a photograph would silently fall back
+  // to a typographic card on a dossier where every other one is dressed.
+  // @req REQ-157
+  it("gives every proverb in the bank a photograph", () => {
+    expect(
+      PROVERBS.filter(({ id }) => !PROVERB_IMAGES[id]).map(({ id }) => id)
+    ).toEqual([]);
   });
 
   // @req REQ-157
