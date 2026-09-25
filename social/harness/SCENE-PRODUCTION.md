@@ -34,7 +34,12 @@ Using the skill in the current session preserves access to the conversation.
 Native agent definitions also exist for
 [Codex](../../.codex/agents/ethniafrica-production.toml) and
 [Claude](../../.claude/agents/ethniafrica-production.md); both load the same canonical
-skill and inherit the selected model. Claude can start a dedicated main session with
+skill. The coordinator inherits the selected session model and automatically delegates
+bounded milestones using the [shared routing policy](../../.claude/skills/ethniafrica-production/references/automatic-routing.md):
+Sol/Opus for preparation and review, Luna/Sonnet for execution. Each handoff announces
+the stage, weighted completion percentage, requested model and host-confirmed model
+when available. This does not change the parent conversation's model.
+Claude can start a dedicated main session with
 `claude --agent ethniafrica-production` from this checkout. If invoking a native
 subagent, supply the subject directory and real approval evidence explicitly;
 do not assume it inherits the parent conversation. No background job is created.

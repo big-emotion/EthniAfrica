@@ -15,6 +15,8 @@ It is a navigation record, not approval, a release review or a library status.
 - Repository checkout and commit (minimum release pipeline from PR #1340):
 - Original renderer/lock revision if resuming a sealed package:
 - Last updated:
+- Progress record: `production-progress.json` (use the progress tool; never invent percentages)
+- Model routing policy/version and any explicitly authorized override:
 
 ## Work and next action
 
@@ -24,6 +26,8 @@ It is a navigation record, not approval, a release review or a library status.
 - Decisions needed from the operator (group together):
 - Technical limitations or missing files:
 - Last successful command, exit status and report path:
+- Last worker task ID, requested model, host-observed model and evidence (or unknown):
+- Last support escalation / repeated failure:
 
 ## Artifact inventory
 
@@ -31,19 +35,20 @@ Paths are relative to this private project when possible. Calculate hashes from
 actual bytes; do not fill sample hashes or label drafts as final. The engine lock
 and delivery manifest remain the authorities for technical reproducibility.
 
-| Artifact                                   | Path | Current SHA-256 / version | Evidence / unresolved work |
-| ------------------------------------------ | ---- | ------------------------- | -------------------------- |
-| French narration                           |      |                           |                            |
-| Visual proposal / production brief         |      |                           |                            |
-| Source and licence register / asset bundle |      |                           |                            |
-| Approved voice and matching alignment      |      |                           |                            |
-| Executable scene plan                      |      |                           |                            |
-| Message / myth / applicable naming reviews |      |                           |                            |
-| Handoff lock                               |      |                           |                            |
-| Proof and execution report                 |      |                           |                            |
-| Release review                             |      |                           |                            |
-| Clean delivery manifest                    |      |                           |                            |
-| Approved social copy and links             |      |                           |                            |
+| Artifact                                   | Path                    | Current SHA-256 / version | Evidence / unresolved work |
+| ------------------------------------------ | ----------------------- | ------------------------- | -------------------------- |
+| French narration                           |                         |                           |                            |
+| Visual proposal / production brief         |                         |                           |                            |
+| Source and licence register / asset bundle |                         |                           |                            |
+| Approved voice and matching alignment      |                         |                           |                            |
+| Executable scene plan                      |                         |                           |                            |
+| Message / myth / applicable naming reviews |                         |                           |                            |
+| Handoff lock                               |                         |                           |                            |
+| Proof and execution report                 |                         |                           |                            |
+| Release review                             |                         |                           |                            |
+| Clean delivery manifest                    |                         |                           |                            |
+| Delivery copy / library evidence           | `delivery-handoff.json` |                           |                            |
+| Approved social copy and links             |                         |                           |                            |
 
 ## Approval evidence
 
