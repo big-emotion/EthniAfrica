@@ -140,6 +140,69 @@ describe("SearchFeed", () => {
     ).not.toBeNull();
   });
 
+  // The live search returns related fiches for most words (« mami wata » finds
+  // ten), so a word piece usually meets the widened state, not the unknown one.
+  // The widened state blanks every shelf so no unrelated content sits under a
+  // related-only answer; a piece found by the reader's word is not unrelated.
+  // @req REQ-180
+  it("keeps a word piece on a related-only page and says what we hold", () => {
+    const inconnu = fixture("inconnu");
+    const [recent] = inconnu.production.companions.shorts.items;
+    const companions: SearchCompanionsData = {
+      ...inconnu.production.companions,
+      shorts: {
+        count: 1,
+        items: [
+          {
+            ...recent,
+            name: "Mami Wata",
+            match: { relation: "word", word: "mami wata" },
+          },
+        ],
+      },
+    };
+    render(
+      <SearchFeed
+        query="mami wata"
+        language="fr"
+        state="widened"
+        results={[namedResult()]}
+        subjects={[]}
+        leads={[]}
+        companions={companions}
+      />
+    );
+
+    expect(
+      screen.getByText("D’où vient le nom « Mami Wata » ?")
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        "Nous n’avons pas de fiche pour ce nom, mais nous avons une vidéo sur son origine."
+      )
+    ).toBeInTheDocument();
+    expect(screen.queryByText("Pas encore de short")).toBeNull();
+    expect(screen.queryByText(/fiches liées sans établir/)).toBeNull();
+  });
+
+  // @req REQ-180
+  it("still blanks the shelves of a related-only page when no piece answers the word", () => {
+    const recent = fixture("inconnu").production.companions;
+    render(
+      <SearchFeed
+        query="sahel"
+        language="fr"
+        state="widened"
+        results={[namedResult()]}
+        subjects={[]}
+        leads={[]}
+        companions={recent}
+      />
+    );
+
+    expect(screen.queryByText(recent.shorts.items[0].name)).toBeNull();
+  });
+
   // @req REQ-180
   it("keeps the confession for a name no piece answers", () => {
     const inconnu = fixture("inconnu");
