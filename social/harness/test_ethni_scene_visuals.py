@@ -268,6 +268,66 @@ class VisualExtensionTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "role"):
             validate_plan(self.plan, self.root, 10)
 
+    def focused_timeline(self):
+        timeline = self.timeline()
+        timeline.update(layout="focus", overview_at=4.2,
+                        background={"asset": "map", "layer": "physical", "borders": True,
+                                    "camera": [{"at": 0, "bounds": [-20, -5, 20, 25]}]})
+        timeline["context"] = [
+            {"event_year": 1594, "lane": "regional", "label": "Region", "detail": "A regional event",
+             "at": 1.2, "evidence": dict(self.plan["scenes"][0]["evidence"], period="Sixteenth century")},
+            {"event_year": 1594, "lane": "world", "label": "France", "detail": "A familiar contemporary",
+             "at": 1.5, "evidence": dict(self.plan["scenes"][0]["evidence"], period="1589–1610")},
+        ]
+        return timeline
+
+    def test_focused_context_has_its_own_period_and_an_explicit_anchor(self):
+        timeline = self.focused_timeline()
+        validate_plan(self.plan, self.root, 10)
+        for field, value in [("event_year", 1600), ("lane", "invented"), ("at", 2), ("at", .5)]:
+            item = timeline["context"][0]
+            original = item[field]
+            item[field] = value
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                validate_plan(self.plan, self.root, 10)
+            item[field] = original
+        timeline["context"].append(copy.deepcopy(timeline["context"][0]))
+        with self.assertRaisesRegex(ValueError, "lane"):
+            validate_plan(self.plan, self.root, 10)
+
+    def test_focused_timeline_switches_context_and_preserves_random_access(self):
+        self.focused_timeline()
+        validate_plan(self.plan, self.root, 10)
+        renderer = SceneRenderer(self.plan, self.root, [])
+        before = renderer.render(.5)
+        regional = renderer.render(1.4)
+        both = renderer.render(1.9)
+        next_event = renderer.render(2.8)
+        overview = renderer.render(4.9)
+        self.assertNotEqual(before.tobytes(), regional.tobytes())
+        self.assertNotEqual(regional.tobytes(), both.tobytes())
+        self.assertNotEqual(both.crop((91, 880, 900, 1310)).tobytes(), next_event.crop((91, 880, 900, 1310)).tobytes())
+        self.assertNotEqual(next_event.tobytes(), overview.tobytes())
+        self.assertEqual(both.tobytes(), renderer.render(1.9).tobytes())
+        self.assertIn("Test fixture", " ".join(renderer.credits(self.plan["scenes"][0])))
+        renderer.preflight()
+
+    def test_focus_rejects_hidden_background_overlays_and_bad_cue_order(self):
+        for change in ("overlay", "order", "overview", "asset"):
+            self.plan = fixtures.fixture(self.root)
+            timeline = self.focused_timeline()
+            if change == "overlay": timeline["background"]["highlights"] = ["AAA"]
+            if change == "order": timeline["events"][1]["at"] = .9
+            if change == "overview": timeline["overview_at"] = 2
+            if change == "asset": timeline["background"]["asset"] = "missing"
+            with self.subTest(change=change), self.assertRaises(ValueError):
+                validate_plan(self.plan, self.root, 10)
+
+    def test_focus_checks_context_overflow_before_encoding(self):
+        self.focused_timeline()["context"][0]["detail"] = "Too much text " * 100
+        with self.assertRaisesRegex(ValueError, "overflow"):
+            SceneRenderer(self.plan, self.root, []).preflight()
+
 
 if __name__ == "__main__":
     unittest.main()

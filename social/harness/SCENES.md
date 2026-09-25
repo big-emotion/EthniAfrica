@@ -137,6 +137,39 @@ All event sources enter the credit register even if the parent scene lists
 different sources. Long labels fail preflight rather than shrinking to fit.
 `templates/timeline.json` is a placeholder starter, not a historical example.
 
+### Focused chronology
+
+Set `timeline.layout` to `"focus"` to travel along the axis with one active
+event at a time. The default `"overview"` layout above is unchanged. Primary
+event years and their speech cues must both increase strictly. An optional
+`overview_at` cue, after the final event, pulls back to all dated names while
+hiding the contextual cards. Without that cue, focus lasts to the scene's end.
+
+Each focused context item contains `event_year`, `lane`, `label`, `detail`,
+`at` and `evidence`. `lane` is `"regional"` or `"world"`, with at most one of
+each per primary event. `event_year` anchors the card to the main event;
+**it is not the context event's date**. Its own visible `evidence.period`
+can be a date, reign, century or explicitly uncertain interval. This allows
+contemporary context without claiming every event happened in the same year.
+The context cue must fall within its primary event's focused window. Cards
+disappear when the next main event or final overview starts. Their text is
+silent: the audio still comes exclusively from the approved narration file.
+
+An optional `background` accepts the map contract below, restricted to a
+`physical` basemap without features or country highlights. Camera keys can
+follow the narration; current borders can be dashed. This background locates
+the chronology and does not establish historic boundaries. Its asset license
+and source join the credits. Use a separate map scene for historical polygons
+or travel routes that need their own geographic evidence.
+
+The focus layout keeps two or three main events, a non-proportional spacing
+notice, fixed mobile type sizes and optional video progress. Reduced-motion
+mode preserves the same cues but removes the rail, card and camera movement.
+Preflight samples reveal cues, transitions, the final overview and camera
+keys; long copy fails instead of shrinking. Review additional 360px frames
+for each date: the automatic scene midpoint alone cannot show every state
+of a single continuous chronology.
+
 The `document` layout keeps the complete source image (no crop), checks the
 same enlargement ceiling, and pairs it with a short label and explanation.
 A portrait illustrates its subject; it is not evidence that a depicted meeting

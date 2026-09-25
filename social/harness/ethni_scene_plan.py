@@ -161,8 +161,14 @@ def validate_map(value, duration, assets, sources):
                     "flag_stripes requires three hex colours")
 
 
-def validate_timeline(value, duration, sources):
-    keys(value, "scale events context", "timeline")
+def validate_timeline(value, duration, sources, assets=None):
+    keys(value, "scale events context layout background overview_at", "timeline")
+    layout = value.get("layout", "overview")
+    require(layout in ("overview", "focus"), "Unknown timeline layout")
+    if layout == "focus":
+        validate_focused_timeline(value, duration, sources, assets or {})
+        return
+    require(not any(key in value for key in ("background", "overview_at")), "Focus options require the focus layout")
     require(value.get("scale") == "ordinal", "timeline.scale must be ordinal; spacing is explicitly not proportional")
     events, context = value.get("events"), value.get("context", [])
     require(isinstance(events, list) and 2 <= len(events) <= 3, "timeline needs two or three primary events")
@@ -181,6 +187,41 @@ def validate_timeline(value, duration, sources):
             require(all(a < b for a, b in zip(years, years[1:])), "Primary events must be in chronological order")
     require(all(event["year"] in years for event in context), "Context must share the same year as a primary event")
     require(len({event["year"] for event in context}) == len(context), "Group same-year context into one event")
+
+
+def validate_focused_timeline(value, duration, sources, assets):
+    """Anchor context to a scene cue without pretending its period is that year."""
+    primary = {key: value[key] for key in ("scale", "events") if key in value}
+    validate_timeline(primary, duration, sources)
+    events = value["events"]
+    require(all(a["at"] < b["at"] for a, b in zip(events, events[1:])),
+            "Focus event cues must be chronological")
+    overview = value.get("overview_at", duration)
+    number(overview, "overview_at", events[-1]["at"], duration)
+    require(overview > events[-1]["at"], "Overview must follow the final event")
+    windows = {event["year"]: (event["at"], events[i+1]["at"] if i+1 < len(events) else overview)
+               for i, event in enumerate(events)}
+    context = value.get("context", [])
+    require(isinstance(context, list) and len(context) <= 2*len(events), "Focus supports two lanes per event")
+    used = set()
+    for item in context:
+        keys(item, "event_year lane label detail at evidence", "focus context")
+        anchor = item.get("event_year")
+        require(type(anchor) is int and anchor in windows, "Context event_year must reference a primary event")
+        require(item.get("lane") in ("regional", "world"), "Unknown context lane")
+        pair = (anchor, item["lane"])
+        require(pair not in used, "Only one context per lane and primary event")
+        used.add(pair)
+        for field in ("label", "detail"): text(item.get(field), "context."+field)
+        evidence(item.get("evidence"), sources, "context.evidence")
+        start, end = windows[anchor]
+        cue = number(item.get("at"), "context.at", start)
+        require(cue < end, "Context must appear within its event window")
+    if "background" in value:
+        background = value["background"]
+        validate_map(background, duration, assets, sources)
+        require(background["layer"] == "physical" and not background.get("features") and
+                not background.get("highlights"), "Timeline background is a basemap only; no hidden geographic claims")
 
 
 def validate_plan(plan, root, duration):
@@ -254,7 +295,7 @@ def validate_plan(plan, root, duration):
                 require(value["fit"] == "cover" or all(k[0] == 1 for k in value["motion"].values()),
                         "contain preserves the full document; use zoom 1 or explicitly choose cover")
         elif kind == "timeline":
-            validate_timeline(scene.get("timeline"), end-start, sources)
+            validate_timeline(scene.get("timeline"), end-start, sources, assets)
         elif kind == "document":
             value = scene.get("document")
             keys(value, "asset label body", "document")

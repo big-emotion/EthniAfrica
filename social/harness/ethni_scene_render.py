@@ -227,6 +227,11 @@ class SceneRenderer:
             content = self._map(scene, local) if kind == "map" else self._image(scene, local)
             image.paste(content, self.content[:2])
         elif kind == "timeline":
+            background = scene["timeline"].get("background")
+            if background:
+                content = self._map({"map": background}, local)
+                content = Image.blend(Image.new("RGB", content.size, self.palette["ground"]), content, .6)
+                image.paste(content, self.content[:2])
             draw_timeline(self, draw, scene, local)
         elif kind == "document":
             self._document(image, draw, scene)
@@ -258,8 +263,11 @@ class SceneRenderer:
         kind = scene["type"]
         credits = []
         asset_source = None
-        if kind in ("map", "image", "document"):
-            asset = self.plan["assets"][scene[kind]["asset"]]
+        asset_id = scene[kind]["asset"] if kind in ("map", "image", "document") else None
+        if kind == "timeline" and "background" in scene["timeline"]:
+            asset_id = scene["timeline"]["background"]["asset"]
+        if asset_id:
+            asset = self.plan["assets"][asset_id]
             credits.append(f"{asset['credit']} · {asset['license']}")
             asset_source = asset["source"]
         source_keys = list(scene["evidence"]["sources"])
@@ -334,7 +342,14 @@ class SceneRenderer:
             if scene["type"] == "comparison":
                 instants.update(start+i.get("at", 0) for i in scene["comparison"] if start+i.get("at", 0) < end)
             if scene["type"] == "timeline":
-                instants.update(start+i["at"] for i in scene["timeline"]["events"]+scene["timeline"].get("context", []))
+                timeline = scene["timeline"]
+                cues = [i["at"] for i in timeline["events"]+timeline.get("context", [])]
+                instants.update(start+cue for cue in cues)
+                if timeline.get("layout") == "focus":
+                    instants.update(min(end-1e-6, start+cue+delta) for cue in cues for delta in (.25, .85))
+                    if "overview_at" in timeline:
+                        instants.update(min(end-1e-6, start+timeline["overview_at"]+delta) for delta in (0, .55, 1.1))
+                    instants.update(start+k["at"] for k in timeline.get("background", {}).get("camera", []) if start+k["at"] < end)
         for instant in sorted(instants):
             self.render(instant)
         return sorted(instants)
