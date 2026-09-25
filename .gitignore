@@ -81,6 +81,10 @@ build
 !.claude/skills/ethniafrica-mythe/
 !.claude/skills/ethniafrica-onomastique/
 !.claude/skills/ethniafrica-produire/
+!.claude/skills/ethniafrica-production/
+!.claude/agents/
+.claude/agents/*
+!.claude/agents/ethniafrica-production.md
 !.claude/skills/ethniafrica-reseaux-help/
 !.claude/skills/ethniafrica-structure/
 !.claude/skills/ethniafrica-experience-optimizer/
@@ -138,7 +142,10 @@ dataset/source/archive/
 dataset/source/afrik/logs/
 # Agent runtime mirrors (local skill caches, not project source)
 .agents/
-.codex/
+.codex/*
+!.codex/agents/
+.codex/agents/*
+!.codex/agents/ethniafrica-production.toml
 # Media renders and agent scratch produced in the checkout, never project
 # source. The approved media library lives outside the repository.
 output/

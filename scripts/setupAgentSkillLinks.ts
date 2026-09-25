@@ -21,6 +21,7 @@ const DEFAULT_SKILLS = [
   "afrik-curator",
   "ethniafrica-structure",
   "ethniafrica-produire",
+  "ethniafrica-production",
 ];
 
 function main(): void {

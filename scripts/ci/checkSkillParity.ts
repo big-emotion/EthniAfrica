@@ -23,6 +23,7 @@ const CHECKED_SKILLS = [
   "afrik-curator",
   "ethniafrica-structure",
   "ethniafrica-produire",
+  "ethniafrica-production",
 ];
 
 function main(): void {
