@@ -225,7 +225,7 @@
       "precolonial": "Mosaïque de peuples bantous, nilotiques et couchitiques. Commerce côtier swahili. Pas d'unification politique.",
       "colonization": "1895 : Protectorat britannique de l'Afrique de l'Est. 1920 : Colonie du Kenya. Développement de Nairobi comme centre administratif. Résistance kenyane (Mau Mau, 1952-1960).",
       "independenceStruggle": "Mouvements nationalistes dans les années 1950. Révolte des Mau Mau (1952-1960). Indépendance obtenue en 1963. Jomo Kenyatta devient premier président.",
-      "postIndependence": "Première République (1963-1978) : présidence de Jomo Kenyatta, stabilité politique. Deuxième République (1978-2002) : présidence de Daniel arap Moi. Troisième République depuis 2002 : alternance démocratique, développement économique, hub est-africain. En juillet 1964, les chefs d'État et de gouvernement de l'Organisation de l'unité africaine, réunis au Caire, s'engagent à respecter les frontières existant à l'accession de chaque État à l'indépendance ; le texte ne mentionne pas le consentement des populations concernées. À l'époque de l'étude de Miguel (2004), une langue locale sert en général de langue d'enseignement à l'école primaire jusqu'à la quatrième année, puis l'anglais prend le relais, le swahili restant très parlé. Comparant Busia, au Kenya, et Meatu, en Tanzanie, deux districts ruraux voisins, Miguel associe à Busia le passage d'une population homogène à une diversité moyenne à une baisse d'environ 25 % du financement scolaire local par élève ; à Meatu, l'écart est positif et non significatif. Alexander Lee (2018), qui ne reprend que les données kényanes, obtient des résultats très proches en remplaçant la diversité par la part des Luhya, groupe localement dominant, et juge l'explication par une discrimination de l'État central envers les zones peuplées de groupes moins puissants au moins aussi compatible avec ces données. Ces travaux portent sur deux districts, non sur les deux pays."
+      "postIndependence": "Première République (1963-1978) : présidence de Jomo Kenyatta, stabilité politique. Deuxième République (1978-2002) : présidence de Daniel arap Moi. Troisième République depuis 2002 : alternance démocratique, développement économique, hub est-africain."
     },
     "sources": [
       {
@@ -272,24 +272,6 @@
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official"
-      },
-      {
-        "title": "Tribe or Nation? Nation Building and Public Goods in Kenya versus Tanzania (Edward Miguel, World Politics, 2004)",
-        "url": "https://emiguel.econ.berkeley.edu/assets/assets/miguel_research/47/_Paper__Tribe_or_Nation_-_Nation_Building_and_Public_Goods_in_Kenya_versus_Tanzania.pdf",
-        "tier": "referenced",
-        "notes": "Comparaison de deux districts ruraux, Busia (Kenya) et Meatu (Tanzanie), fondée sur le financement local des écoles. Étude locale, sans classement des deux pays."
-      },
-      {
-        "title": "Ethnic Diversity and Ethnic Discrimination: Explaining Local Public Goods Provision (Alexander Lee, Comparative Political Studies, 2018)",
-        "url": "https://www.rochester.edu/college/faculty/alexander_lee/wp-content/uploads/2017/11/ethnicity-CPS.pdf",
-        "tier": "referenced",
-        "notes": "Manuscrit d'auteur du 31 octobre 2017 (section 6.2 et tableau 5) ; version publiée : doi 10.1177/0010414017740604. Reprend uniquement les données kényanes de Miguel (2004), sans conclure sur la Tanzanie."
-      },
-      {
-        "title": "Border Disputes among African States, AHG/Res.16(I) (Organisation de l'unité africaine, Le Caire, 17-21 juillet 1964)",
-        "url": "https://www.peaceau.org/uploads/ahg-res-16-i-en.pdf",
-        "tier": "official",
-        "notes": "Texte de la résolution lu en entier. Il engage les États membres à respecter les frontières existant à leur indépendance ; il ne contient aucun relevé de vote ni mention du consentement des populations."
       }
     ],
     "demographics": {
