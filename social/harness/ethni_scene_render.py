@@ -13,7 +13,7 @@ from ethni_scene_timeline import draw_timeline
 import ethni_scene_fullbleed as fullbleed
 
 
-SPEAKERS_RADIUS, SPEAKERS_REFERENCE = 60, 16_000_000
+SPEAKERS_RADIUS, SPEAKERS_REFERENCE = 80, 16_000_000
 
 
 def scene_map(scene):
@@ -204,10 +204,11 @@ class SceneRenderer:
                                      fill=mix(p["ground"], colour, .15 + .4*(1-radius/38)))
                 if kind == "speakers":
                     # Area follows the figure (60 px at 16 million); the glow only makes it legible on a map.
-                    size = max(10, round(SPEAKERS_RADIUS*math.sqrt(feature["value"]/SPEAKERS_REFERENCE)))
+                    size = max(12, round(SPEAKERS_RADIUS*math.sqrt(feature["value"]/SPEAKERS_REFERENCE)))
                     for radius in range(size, 7, -3):
                         draw.ellipse((x-radius, y-radius, x+radius, y+radius),
-                                     fill=mix(p["ground"], colour, .18 + .5*(1-radius/size)))
+                                     fill=mix(p["ground"], colour, .3 + .6*(1-radius/size)))
+                    draw.ellipse((x-size, y-size, x+size, y+size), outline=colour, width=3)
                 draw.ellipse((x-7, y-7, x+7, y+7), fill=colour)
                 self._flag(draw, feature, x, y)
             elif kind == "country":
