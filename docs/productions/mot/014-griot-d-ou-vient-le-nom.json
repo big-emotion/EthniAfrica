@@ -14,7 +14,20 @@
     "label": { "fr": "griot", "en": "griot" },
     "queries": ["griot", "griots"]
   },
-  "publications": [],
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7689496831113399574",
+      "publishedAt": "2026-09-25"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/Ddty8BbiOyM/",
+      "publishedAt": "2026-09-25"
+    }
+  ],
   "sources": [
     {
       "title": "Thomas A. Hale, « A New Look at the Origins of a Controversial African Term for Bards: from the Griot of Roots to the Roots of Griot », Oral Tradition 12(2)",
