@@ -94,7 +94,10 @@
         "gha-v-16-18",
         "bamadaba-jamuw",
         "canut-2002-senankuya",
-        "canut-smith-2006-pactes"
+        "canut-smith-2006-pactes",
+        "unesco-manden-charter-2009",
+        "saibou-2023-kurukan-fuga",
+        "mann-2022-hunters-oath"
       ]
     },
     {
@@ -197,10 +200,6 @@
     {
       "fieldPath": "homonyms",
       "reason": "Coulibaly transcrit le mandingue Kulibali, que le dictionnaire des jamuw écrit aussi Kùlubàli et que l'Histoire générale de l'Afrique donne sous la forme Kurubari. Aucune de ces graphies ne recouvre une lignée d'origine distincte dans les sources consultées."
-    },
-    {
-      "fieldPath": "alliances",
-      "reason": "L'ancienneté de l'alliance n'est pas établie. Une lecture la rattache à Soundiata par l'assemblée de Kurukan Fuga, dont l'article 7 institue « entre les Mandenkas le Sanankunya », et le clan Keïta est bien celui de Soundiata selon la geste. Mais le texte de la charte a été restitué oralement et mis par écrit en 1998, à Kankan, et des chercheurs discutent l'âge qu'on peut lui prêter. Les sources consultées ne datent pas le pacte entre Coulibaly et Keïta ; nous ne l'attribuons donc pas à Soundiata."
     }
   ]
 }
