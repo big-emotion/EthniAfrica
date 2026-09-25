@@ -67,6 +67,17 @@ and review at the end, and fully decodes the H.264/AAC 1080×1920, 25 fps output
 `ready_to_publish` means the recorded review and technical checks passed. It is not a legal
 certification or a claim that the platform has accepted or published the file.
 
+## Complete publication kit
+
+The table above lists the sealed engine export. A complete production also requires
+`publication/thumbnail.png` (1080 × 1920), `publication/publication-copy.md` and their
+`publication-kit.json`. The copy contains approved posts for the selected networks;
+the thumbnail uses the approved clean frame, not `mobile-preview.png`.
+Follow the [mandatory publication kit procedure](../../.claude/skills/ethniafrica-production/references/publication-delivery.md)
+for extraction, mobile inspection and version-bound review. Do not edit the engine
+manifest to add these companion files. The coordinator cannot report 100% without
+the kit and required library copies, even when engine finalization has passed.
+
 ## Library handoff
 
 For a registered post, the production skill continues with the existing registry, after a
@@ -75,14 +86,18 @@ successful finalization. Resolve the real post ID and library paths; never inven
 ```sh
 node social/tools/library/register-post.mjs --where <id>
 node social/tools/library/register-post.mjs --id <id> \
-  --video video.mp4=<project>/video/<version>/video.mp4 --write
+  --video video.mp4=<project>/video/<version>/video.mp4 \
+  --video thumbnail.png=<project>/video/<version>/publication/thumbnail.png \
+  --video publication-copy.md=<project>/video/<version>/publication/publication-copy.md --write
 node social/tools/library/register-post.mjs --id <id> --status pret --write
 node <00-Index>/migrate-library.mjs --write
 node <00-Index>/build-index.mjs
 node <00-Index>/sync-deliverables.mjs --write
 ```
 
-Verify the library's `video/` contains the delivered file with the same hash. Keep the complete
+Verify the library's `video/` contains all three delivered files with matching hashes.
+Retain any other required outputs when registering this replacement set, and ensure
+the registry's `copy` references the approved network copy. Keep the complete
 workshop delivery package as provenance. Update an existing production ledger's supported
 network/format entries with neither URL nor publication date, then run
 `npm run check:production-ledger` and rebuild the pipeline state as described in `produire`.

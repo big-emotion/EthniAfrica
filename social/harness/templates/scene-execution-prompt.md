@@ -35,8 +35,12 @@ voice rights, editorial verdicts or human listening. When all checks pass, conti
   --review "[PROJECT]/_epreuves/[OUTPUT-VERSION]/release-review.json" \
   --output "[PROJECT]/video/[OUTPUT-VERSION]"
 
-Return video.mp4, captions.srt, CREDITS.md and delivery.json. For a registered post,
-complete the documented library handoff and verify the copied video's hash.
+Follow .claude/skills/ethniafrica-production/references/publication-delivery.md to
+create the full-resolution thumbnail and copy the approved network Markdown.
+Use the cover time approved in the brief; inspect the clean cover at phone size.
+Return video.mp4, thumbnail.png, publication-copy.md, captions.srt, CREDITS.md,
+delivery.json and publication-kit.json. For a registered post, complete the
+documented library handoff and verify video, cover and Markdown copy hashes.
 Keep an unregistered subject's delivery private and report registration separately.
 Do not publish or schedule. If review is incomplete, deliver the proof and the
 specific outstanding decisions without claiming a publishable master.

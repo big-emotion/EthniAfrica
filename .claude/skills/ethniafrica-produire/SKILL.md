@@ -73,6 +73,11 @@ inputs and proof, removes only the proof badge, checks the full encode, and deli
 `video.mp4`, `captions.srt`, `CREDITS.md`, a mobile preview and `delivery.json`.
 Use `social/harness/SCENE-RELEASE.md` for the command and library handoff. Reuse
 already granted approvals; do not ask again for unchanged speech or visuals.
+Then assemble the mandatory full-resolution cover and approved publication Markdown
+using `.claude/skills/ethniafrica-production/references/publication-delivery.md`.
+The mobile preview does not satisfy the cover requirement. Inspect the cover, record
+real approval evidence and deliver explicit links to both files. A registered post
+receives verified library copies of all three: video, cover and Markdown.
 Missing rights or editorial decisions are reported together; retain the proof
 while they are unresolved. Do not publish or schedule automatically.
 

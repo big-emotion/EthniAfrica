@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 /** Evidence-bound milestones and model routing; native agent tools perform delegation. */
-import { createHash } from "node:crypto";
 import {
   readFileSync,
   writeFileSync,
@@ -9,9 +8,15 @@ import {
   renameSync,
   rmSync,
 } from "node:fs";
-import { resolve, relative, dirname, isAbsolute, join } from "node:path";
+import { resolve, isAbsolute, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
+
+import { artifact, digest, requireValue } from "./artifacts.mjs";
+import {
+  readFinalDelivery,
+  validatePublicationKit,
+} from "./publication-kit.mjs";
 
 export const policy = JSON.parse(
   readFileSync(
@@ -23,33 +28,6 @@ export const policy = JSON.parse(
   )
 );
 const STATE = "production-progress.json";
-const digest = (bytes) => createHash("sha256").update(bytes).digest("hex");
-const requireValue = (condition, message) => {
-  if (!condition) throw new Error(message);
-};
-
-function artifact(root, path) {
-  requireValue(
-    typeof path === "string" && path.length && !isAbsolute(path),
-    "Evidence must be relative and inside the private package"
-  );
-  const base = realpathSync(root);
-  const candidate = resolve(base, path);
-  const inside = (value) => {
-    const p = relative(base, value);
-    return p && !p.startsWith("..") && !isAbsolute(p);
-  };
-  requireValue(
-    inside(candidate),
-    "Evidence must stay inside the private package"
-  );
-  requireValue(
-    inside(realpathSync(candidate)),
-    "Evidence symlink must stay inside the private package"
-  );
-  return { path, sha256: digest(readFileSync(candidate)) };
-}
-
 export function createState(platform, subject) {
   requireValue(
     Object.hasOwn(policy.platforms, platform),
@@ -112,33 +90,8 @@ function validateDelivery(root, record) {
     (e) => e.path.endsWith("/delivery.json") || e.path === "delivery.json"
   );
   requireValue(manifest, "Delivery milestone requires delivery.json");
-  const report = JSON.parse(readFileSync(resolve(root, manifest.path), "utf8"));
-  requireValue(
-    report.action === "finalize" &&
-      report.ready_to_publish === true &&
-      report.proof_only === false,
-    "A successful clean finalize report is required"
-  );
+  const { report } = readFinalDelivery(root, manifest.path);
   const files = report.files;
-  for (const name of [
-    "video.mp4",
-    "captions.srt",
-    "narration.fr.txt",
-    "CREDITS.md",
-    "mobile-preview.png",
-    "release-review.json",
-  ]) {
-    requireValue(
-      typeof files?.[name] === "string",
-      `Delivery is missing ${name}`
-    );
-  }
-  for (const [path, hash] of Object.entries(files)) {
-    requireValue(
-      artifact(root, join(dirname(manifest.path), path)).sha256 === hash,
-      `Delivery file changed: ${path}`
-    );
-  }
   const handoffFile = record.evidence.find(
     (e) => e.path === "delivery-handoff.json"
   );
@@ -151,21 +104,36 @@ function validateDelivery(root, record) {
   );
   const nonempty = (value) => typeof value === "string" && value.trim();
   requireValue(handoff.version === 1, "Unknown delivery handoff version");
+  const thumbnail = handoff.thumbnail;
+  requireValue(
+    thumbnail?.status === "approved" && nonempty(thumbnail.approval_reference),
+    "A reviewed thumbnail and its actual approval reference are required"
+  );
   const copy = handoff.social_copy;
   requireValue(
-    copy && nonempty(copy.approval_reference),
-    "Social copy or its exclusion needs an actual approval reference"
+    copy?.status === "approved" && nonempty(copy.approval_reference),
+    "Approved social copy in Markdown is required; exclusion cannot complete delivery"
   );
-  if (copy.status === "approved")
+  requireValue(
+    handoff.publication_kit &&
+      artifact(root, handoff.publication_kit.path).sha256 ===
+        handoff.publication_kit.sha256,
+    "The publication kit manifest is missing or changed"
+  );
+  const kit = validatePublicationKit(
+    root,
+    handoff.publication_kit.path,
+    manifest.path
+  );
+  for (const [name, item] of [
+    ["thumbnail.png", thumbnail],
+    ["publication-copy.md", copy],
+  ]) {
     requireValue(
-      artifact(root, copy.path).sha256 === copy.sha256,
-      "Approved social copy changed"
+      item.path === kit.paths[name] && item.sha256 === kit.kit.files[name],
+      `Approved ${name} differs from the publication kit`
     );
-  else
-    requireValue(
-      copy.status === "excluded" && nonempty(copy.reason),
-      "Social copy is missing without an approved scope decision"
-    );
+  }
   const library = handoff.library;
   if (library?.status === "unregistered")
     requireValue(
@@ -179,15 +147,21 @@ function validateDelivery(root, record) {
         nonempty(library.operation_reference),
       "Registered delivery needs an actual library operation reference and post ID"
     );
-    requireValue(
-      nonempty(library.copied_video_path) &&
-        isAbsolute(library.copied_video_path),
-      "Library video path must come from the actual registry lookup"
-    );
-    requireValue(
-      digest(readFileSync(library.copied_video_path)) === files["video.mp4"],
-      "Library video differs from the finalized export"
-    );
+    for (const [name, hash] of [
+      ["video", files["video.mp4"]],
+      ["thumbnail", thumbnail.sha256],
+      ["social_copy", copy.sha256],
+    ]) {
+      const path = library[`copied_${name}_path`];
+      requireValue(
+        nonempty(path) && isAbsolute(path),
+        `Library ${name} path must come from the actual registry lookup`
+      );
+      requireValue(
+        digest(readFileSync(path)) === hash,
+        `Library ${name} differs from the finalized export`
+      );
+    }
   }
 }
 

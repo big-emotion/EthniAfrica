@@ -115,6 +115,8 @@ French table with these columns:
 | -------------------------------- | --------------------------- | --------------------- | ----------------------------------------- | ------------------------ | ------------------------------------- |
 | Exact passage or clear reference | Visual purpose and elements | Supported composition | Existing assets vs missing evidence       | Quiet, optional, dated   | Explicitly estimated before alignment |
 
+Include the proposed cover moment/title and network publication copy in the same
+review; follow `references/publication-delivery.md`. Preserve the sequence table.
 List all missing decisions together. If narration is unapproved, show its full text
 alongside the plan for one combined review. If the narrative itself is unavailable,
 report that gap instead of fabricating the table. **Wait for approval of the visual
@@ -146,10 +148,12 @@ decisions remain, report all outstanding items together and retain the proof. An
 unavailable listening tool or missing voice-rights evidence remains pending.
 
 When release checks pass for the exact proof, run `finalize` and deliver the clean
-MP4, subtitles, credits and delivery report. Complete the documented library handoff
-if the post is registered, verifying the delivered hash. Do not fabricate a publication
-category for an unregistered thematic project. Include existing approved social copy
-and links in the handoff when available; flag missing publication copy separately.
+MP4, subtitles, credits and delivery report. Complete the mandatory cover and
+publication Markdown kit in `references/publication-delivery.md`, using the approved
+cover moment and network copy. Link the actual cover and Markdown at delivery.
+Complete the documented library handoff if registered, verifying the video, cover
+and Markdown hashes. Do not fabricate a category for an unregistered subject.
+Missing cover or approved publication copy keeps delivery incomplete.
 **Do not publish or schedule anything.**
 
 Do not modify the renderer to make a subject fit. Identify an essential missing
