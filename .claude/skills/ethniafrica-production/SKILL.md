@@ -8,8 +8,11 @@ description: Coordinate an EthniAfrica scene video from an existing idea, narrat
 Coordinate the existing skills and engine in the current session. Communicate in
 French; write technical documentation in English and preserve French narration.
 The operator owns editorial approvals, the planning model prepares the composition,
-the execution model follows it, and the engine renders it. Do not hardcode a model
-or delegate work automatically. This skill is shared by Codex and Claude.
+the execution model follows it, and the engine renders it. Automatically route
+bounded milestones using `references/automatic-routing.md` and the shared policy
+`references/routing.json`. Announce each stage, percentage and requested/observed
+worker model. The coordinator's own session model stays unchanged. This skill is
+shared by Codex and Claude.
 
 ## 1. Load the project and recover the work
 
@@ -22,6 +25,10 @@ changes, never reset or switch their checkout, and provision a new worktree as
 documented. If remote access is unavailable, report the version uncertainty; do not
 claim a stale checkout is current. Keep an existing reproducibility lock tied to
 its recorded engine; an update must not silently replace that baseline.
+When this coordinator itself is being used from a newer unmerged PR branch,
+retain that branch containing the worker definitions and routing tool, based on
+the required engine version. Do not downgrade to a branch missing the coordinator.
+After its merge, prefer updated `origin/recette` for a new unsealed production.
 
 Read these repository files before preparing the plan:
 
@@ -42,7 +49,10 @@ approval evidence; it must not pretend to have the parent's conversation.
 
 Read an existing `production-state.md`; otherwise use `templates/production-state.md`
 in this skill to record the minimum resumable state in the private subject directory.
-Respect an explicit request not to save until validation. Keep a short task list.
+Maintain `production-progress.json` with the documented progress tool alongside
+the human handoff. Show its dashboard at each milestone and model handoff. Respect
+an explicit request not to save until validation; keep the pending state in the
+conversation until saving is authorized. Keep a short task list.
 Preserve approved narration verbatim. A draft, an old proof, a generic “yes”, or a
 technical success is not approval of an unidentified new version.
 
@@ -155,6 +165,12 @@ Record repository revision, chosen profile, current artifact hashes, unresolved
 decisions and the exact last successful command/report. Preserve earlier approvals
 as history; changed inputs invalidate only the affected decisions. Never modify
 approval markers or replace locks just to make checks pass.
+
+Use native worker tools and explicit model parameters from the shared routing
+policy; no worker chooses the next worker. Read the routing reference for the
+automatic loop, support escalation and capability limits. Do not claim a worker
+model was confirmed merely because it was requested. Keep the sequence-plan table
+as the operator's visual review surface alongside the progress dashboard.
 
 At delivery, link the actual media and report what was verified, what still needs
 operator input, and whether library handoff is complete. A lighter model can replay

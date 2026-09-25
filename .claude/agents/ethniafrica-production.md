@@ -16,4 +16,8 @@ If this is a delegated run, recover the supplied subject directory and actual ap
 evidence first. Do not assume access to the parent conversation or infer approval.
 Return the proposed visual plan to the operator (through the parent when delegated)
 before rendering or generating paid audio unless that exact plan is already approved.
-Do not publish or schedule. Do not choose a different model or spawn other agents.
+Read `.claude/skills/ethniafrica-production/references/automatic-routing.md`.
+Route bounded milestones through native agent tools with the explicitly configured
+model. Announce the milestone, progress and requested/observed worker models to the
+operator at every handoff. The parent session model does not change.
+Do not publish or schedule. Do not bypass approval gates.
