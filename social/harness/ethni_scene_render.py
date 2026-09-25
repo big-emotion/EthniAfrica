@@ -193,14 +193,23 @@ class SceneRenderer:
             # Off-screen features remain available as legend entries, not false clamped locations.
             dx, dy = feature.get("offset", [18, -30])
             label_width = draw.textlength(feature["label"], font=self.face("Bandeau"))
-            if 0 <= x+dx and x+dx+label_width <= self.right-x0 and 0 <= y+dy <= h-36:
-                box = (x+dx, y+dy, x+dx+label_width, y+dy+36)
+            annotated = "annotation" in feature
+            if annotated: label_width = max(label_width, 300)
+            label_height = 146 if annotated else 36
+            if 0 <= x+dx and x+dx+label_width <= self.right-x0 and 0 <= y+dy <= h-label_height:
+                box = (x+dx, y+dy, x+dx+label_width, y+dy+label_height)
                 require(not any(box[0] < b[2]+8 and box[2]+8 > b[0] and box[1] < b[3]+8 and box[3]+8 > b[1]
                                 for b in label_boxes), f"Map label overlap: {feature['label']}")
                 label_boxes.append(box)
                 ink = p[feature.get("label_colour", feature.get("colour", "gold"))]
                 if feature.get("role") == "context": ink = mix(p["ground"], ink, .65)
+                if annotated:
+                    edge = (max(box[0], min(x, box[2])), max(box[1], min(y, box[3])))
+                    draw.line(((x, y), edge), fill=ink, width=2)
                 self.paragraph(draw, feature["label"], (x+dx, y+dy, label_width+1, 40), "Bandeau", ink)
+                if annotated:
+                    self.paragraph(draw, feature["annotation"], (x+dx, y+dy+42, label_width, 104),
+                                   "Bandeau", ink, weight=400)
             if below is not None:
                 canvas = Image.blend(below, canvas, reveal)
                 draw = ImageDraw.Draw(canvas)
@@ -274,6 +283,9 @@ class SceneRenderer:
         if kind == "timeline":
             for event in scene["timeline"]["events"] + scene["timeline"].get("context", []):
                 source_keys.extend(event["evidence"]["sources"])
+        if kind == "map":
+            for feature in scene["map"].get("features", []):
+                source_keys.extend(feature["evidence"]["sources"])
         refs = [self.plan["sources"][key] for key in dict.fromkeys(source_keys) if key != asset_source]
         if refs:
             credits.append(" · ".join(source.get("label", source["citation"]) for source in refs))

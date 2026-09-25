@@ -103,7 +103,7 @@ def validate_map(value, duration, assets, sources):
     features = value.get("features", [])
     require(isinstance(features, list) and len(features) <= 12, "map supports at most twelve authored features")
     for feature in features:
-        keys(feature, "kind point points label at until colour label_colour evidence meaning offset flag_stripes geometry_note fill_opacity draw_seconds line_style line_width role fade_seconds", "map feature")
+        keys(feature, "kind point points label at until colour label_colour evidence meaning offset flag_stripes geometry_note fill_opacity draw_seconds line_style line_width role fade_seconds annotation", "map feature")
         kind = feature.get("kind")
         require(kind in ("point", "presence", "presence-zone", "territory", "route"), "Unknown map feature kind")
         text(feature.get("label"), "feature.label")
@@ -112,7 +112,10 @@ def validate_map(value, duration, assets, sources):
         end = number(feature.get("until"), "feature.until", 0, duration)
         require(end > start, "feature.until must follow at")
         require(feature.get("role", "subject") in ("subject", "context"), "Unknown feature role")
-        require(feature.get("role") != "context" or kind == "territory", "Context role requires a territory")
+        require(feature.get("role") != "context" or kind in ("territory", "point"), "Context role requires a territory or point")
+        if "annotation" in feature:
+            require(kind == "point", "annotation requires a point")
+            text(feature["annotation"], "feature.annotation")
         if "fade_seconds" in feature:
             number(feature["fade_seconds"], "feature.fade_seconds", .04, end-start)
         require(feature.get("colour", "gold") in COLOURS, "Unknown feature colour token")

@@ -215,6 +215,17 @@ Camera keys are `{at,bounds}` with local times and bounds ordered
 west/south/east/north. Start at zero and increase strictly. The camera fits the
 whole requested bounds; it interpolates smoothly between keys.
 
+Point features can carry an optional plain-text `annotation`: a compact,
+regular-weight geographic note below their label, connected to the location
+by a leader line. The existing `offset` positions the whole annotation. Text
+overflow and collisions with other visible labels fail preflight; off-screen
+labels remain unclamped. `role: "context"` accepts points as well as territories
+and gives the optional location a secondary visual weight. The note's dates
+and sources belong in the feature's evidence, and map feature sources are
+included in frame credits even when the parent scene does not repeat them.
+Check the rendered camera states: a note that does not fit inside the safe
+map viewport is omitted rather than moved to a false geographic location.
+
 Map layers: `national`, `political`, `people`, `physical`. Country highlighting
 is permitted only in `national`. Borders are an independent visible option.
 Turning them off uses uniform land fills without country strokes. That does

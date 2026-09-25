@@ -13,6 +13,48 @@ from ethni_scene_render import SceneRenderer
 class VisualExtensionTests(unittest.TestCase):
     setUp = fixtures.ScenePlanTests.setUp
 
+    def annotated_point(self):
+        feature = {"kind": "point", "point": [0, 10], "label": "Town", "at": 0, "until": 5,
+                   "offset": [40, -120], "role": "context", "annotation": "A dated context",
+                   "evidence": copy.deepcopy(self.plan["scenes"][0]["evidence"])}
+        self.plan["scenes"][0]["map"]["features"] = [feature]
+        return feature
+
+    def test_map_annotation_has_a_locator_and_credits_its_own_source(self):
+        feature = self.annotated_point()
+        self.plan["sources"]["context"] = dict(self.plan["sources"]["test"], citation="Context source")
+        feature["evidence"]["sources"] = ["context"]
+        validate_plan(self.plan, self.root, 10)
+        renderer = SceneRenderer(self.plan, self.root, [])
+        with patch.object(renderer, "paragraph", wraps=renderer.paragraph) as paint:
+            frame = renderer.render(1)
+        self.assertIn("A dated context", [call.args[1] for call in paint.call_args_list])
+        self.assertIn("Context source", " ".join(renderer.credits(self.plan["scenes"][0])))
+        self.assertEqual(frame.tobytes(), renderer.render(1).tobytes())
+        renderer.preflight()
+
+    def test_map_annotation_rejects_empty_text_and_nonpoint_marks(self):
+        feature = self.annotated_point()
+        feature["annotation"] = ""
+        with self.assertRaisesRegex(ValueError, "annotation"):
+            validate_plan(self.plan, self.root, 10)
+        feature["annotation"] = "Context"
+        feature["kind"] = "territory"
+        with self.assertRaisesRegex(ValueError, "annotation"):
+            validate_plan(self.plan, self.root, 10)
+
+    def test_map_annotation_overflow_and_collision_fail_before_export(self):
+        feature = self.annotated_point()
+        feature["annotation"] = "Too much context " * 30
+        with self.assertRaisesRegex(ValueError, "overflow"):
+            SceneRenderer(self.plan, self.root, []).preflight()
+        feature["annotation"] = "Short context"
+        second = copy.deepcopy(feature)
+        second["point"] = [-1, 10]
+        self.plan["scenes"][0]["map"]["features"].append(second)
+        with self.assertRaisesRegex(ValueError, "overlap"):
+            SceneRenderer(self.plan, self.root, []).preflight()
+
     def timeline(self):
         scene = self.plan["scenes"][0]
         scene.pop("map")
