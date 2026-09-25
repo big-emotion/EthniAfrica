@@ -35,7 +35,7 @@
         "Bantu (anglais)",
         "Bantu (sud-africain, contexte de l apartheid)"
       ],
-      "originOfExonyms": "Le terme Bantou (Bantu en anglais) est un terme linguistique academique forge au 19e siecle par le missionnaire et linguiste Wilhelm Bleek (1858) a partir de la racine *-ntu signifiant personne et du prefixe pluriel ba-. Il s applique initialement aux langues, puis par extension aux peuples qui les parlent. Ce terme n est pas un nom ethnique autochtone : aucun groupe ne se designe spontanement comme Bantou.",
+      "originOfExonyms": "Le terme Bantou (Bantu en anglais) est un terme linguistique academique forge au 19e siecle par le missionnaire et linguiste Wilhelm Bleek (emploi attesté en 1857 ou 1858, popularisé par sa Comparative Grammar de 1862) a partir de la racine *-ntu signifiant personne et du prefixe pluriel ba-. Il s applique initialement aux langues, puis par extension aux peuples qui les parlent. Ce terme n est pas un nom ethnique autochtone : aucun groupe ne se designe spontanement comme Bantou.",
       "whyProblematic": "En Afrique du Sud, le terme Bantu a ete instrumentalise par le regime d apartheid (annees 1940-1990) pour designer les populations noires (Bantu Education Act, bantoustans). Cette utilisation politique pejorative a rendu le terme sensible. Les termes Bantu peoples et langues bantoues restent cependant utilises dans les milieux academiques, linguistiques et anthropologiques sans connotation negative.",
       "contemporaryUsage": "Dans le contexte scientifique (linguistique, anthropologie, genetique), Bantou designe un groupe de 440 a 680 langues apparentees et les quelque 400 groupes ethniques qui les parlent. Le terme est aujourd hui repris positivement par certains mouvements panafricains. Dans la vie courante africaine, les individus se designent par leur appartenance ethnique specifique (Swahili, Zoulou, Shona, Kikuyu, Luba, etc.).",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -305,6 +305,12 @@
         "title": "SIL Ethnologue — Niger-Congo subgroup (Bantu)",
         "url": "https://www.ethnologue.com/subgroup/47/",
         "tier": "official"
+      },
+      {
+        "title": "« The Bantu languages: sociohistorical perspectives », in Rajend Mesthrie (dir.), Language in South Africa, Cambridge University Press, 2002",
+        "url": "https://www.cambridge.org/core/books/abs/language-in-south-africa/the-bantu-languages-sociohistorical-perspectives/02CCE08E10611E69474FC93EDCC574B9",
+        "tier": "referenced",
+        "notes": "Chapitre d'un ouvrage universitaire publié. Date le premier emploi du terme par Bleek de 1857 ou 1858 et sa popularisation de la Comparative Grammar de 1862. Consulté le 25 septembre 2026."
       }
     ]
   },
