@@ -16,6 +16,7 @@ import {
   collectReferencedResources,
   compareSkillManifests,
   linkMirrorSkill,
+  listCanonicalSkills,
   parseSkillName,
   readSkillManifest,
 } from "../lib/skillParity";
@@ -242,6 +243,40 @@ describe("compareSkillManifests", () => {
         detail: "canonical entry point does not exist",
       },
     ]);
+  });
+});
+
+describe("listCanonicalSkills", () => {
+  // @req REQ-032
+  it("lists every directory holding a SKILL.md, sorted, and ignores the rest", () => {
+    const root = makeTemporaryProject();
+    writeSkill(root, CANONICAL_SKILLS_DIR, "zeta", {
+      "SKILL.md": "---\nname: zeta\n---\n",
+    });
+    writeSkill(root, CANONICAL_SKILLS_DIR, "alpha", {
+      "SKILL.md": "---\nname: alpha\n---\n",
+    });
+    writeSkill(root, CANONICAL_SKILLS_DIR, "notes", {
+      "README.md": "not a skill",
+    });
+
+    expect(listCanonicalSkills(root)).toEqual(["alpha", "zeta"]);
+  });
+
+  // @req REQ-032
+  it("returns nothing when the project has no skills directory", () => {
+    expect(listCanonicalSkills(makeTemporaryProject())).toEqual([]);
+  });
+
+  // @req REQ-032
+  it("covers every skill the repository actually ships", () => {
+    expect(listCanonicalSkills(projectRoot)).toEqual(
+      expect.arrayContaining([
+        "afrik-curator",
+        "ethniafrica-idee",
+        "ethniafrica-production",
+      ])
+    );
   });
 });
 

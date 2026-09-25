@@ -185,7 +185,7 @@ silence de l'atlas se lit comme un jugement.
 
 Depuis le 2026-09-21, il n'y a plus de mécanisme propre à chaque type de contenu
 : la pièce se lit contre le gabarit de son format. Pour un carrousel, c'est
-`references/gabarit-carrousel-nom.md` du skill `structure` : la question de
+`.claude/skills/ethniafrica-structure/references/gabarit-carrousel-nom.md` du skill `structure` : la question de
 l'accroche reçoit sa réponse à la deuxième carte, et la troisième dit qu'un nom
 porte plusieurs appellations et cherche celle que le sujet se donne. Une pièce
 qui force une phrase sur les frontières dans un sujet qui n'en parle pas invente
