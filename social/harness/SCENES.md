@@ -301,6 +301,40 @@ Presence overlap is allowed; drawing one group does not exclude another.
 All active feature periods/statuses remain in a legend even when a point is
 outside the camera. A crowded legend fails instead of hiding uncertainty.
 
+## Full-frame layout, thumbnail and outro
+
+Three optional root fields. A plan without them renders exactly as before.
+
+- `"cover": true` — the video opens on its thumbnail: the first 1.5 s carry the scene title
+  and no caption (legacy §1 ter), and `cover.png` (frame 0) is filed beside the proof.
+- `"outro": true` — the approved social-networks outro (`outro-reseaux-sociaux.mp4`, 5 s, hash
+  checked) is appended where the narration ends, on the frame grid of the last caption (legacy
+  §9 bis). The export, its checks and the replay fingerprint account for the longer video.
+- `"layout": "fullbleed"` — the legacy film's grammar instead of the dark panel: the picture or
+  the map fills the 1080×1920 frame; shading carries a top label, the title low on the left, the
+  narration in a translucent box, and the credits. Only `map`, `image` and `timeline` scenes are
+  allowed; a timeline must be a `focus` chronology with no context cards and is drawn as a band
+  over its map. Maps use a light warm palette. Images zoom at most 5 % (the legacy film uses
+  3.5 %); a photo that cannot fill the frame under the enlargement ceiling (`fit: "contain"`)
+  sits over a dimmed, blurred cover of itself. Legend lines that share period and status are
+  merged into one, so a dozen countries fit.
+
+Image motion is resampled from a fractional source window (Lanczos), so slow zooms and pans do
+not stair-step; a feature at the zoom centre stays within 0.2 px.
+
+Map additions, all validated and all requiring evidence like every other feature:
+
+- `{"kind": "country", "code": "MLI", ...}` on the `national` layer switches a present-day
+  country on at `at` (optional `fade_seconds`). It may carry `flag_stripes` (three vertical
+  stripes) and `"unlabelled": true` (no on-map text; the legend line with period and status stays).
+- `"meaning": "river"` on a `route` draws a dashed watercourse without an arrowhead; legend
+  « Cours d'eau (tracé schématique) ».
+- `map.inserts`: up to three `{asset, at, until, side: "left"|"right", label}` framed picture
+  cards laid on the map while the narration cites them; their credits join the foot of the frame
+  only while shown. The map keeps moving underneath.
+- A timeline event may carry `display` (for example « XIIe siècle ») when the sources give only a
+  century: the `year` then only orders the events and is never printed.
+
 ## Editorial profiles and handoff
 
 Profiles concern the argument, not the rendering technology. Map/image/text

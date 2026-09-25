@@ -20,7 +20,7 @@ LIGHT = {"ground": "#c9dde3", "land": "#f2ead8", "land-highlight": "#e3b658", "b
          "gold": "#d4922a", "white": "#2b2118", "night-ink-2": "#4a3d2a", "night-ink-3": "#8b7b5c",
          "teal": "#0f6f73", "perv": "#6a3fa0"}
 
-INSERT_WIDTH, INSERT_HEIGHT, INSERT_TOP, FADE = 380, 520, 600, .35
+INSERT_WIDTH, INSERT_HEIGHT, INSERT_TOP, FADE = 380, 430, 480, .35
 
 
 def shade(renderer):
@@ -29,8 +29,8 @@ def shade(renderer):
         alpha = Image.new("L", (W, H), 0)
         draw = ImageDraw.Draw(alpha)
         for y in range(H):
-            top = 150*(1-y/430) if y < 430 else 0
-            bottom = min(225, 225*(y-1000)/430) if y > 1000 else 0
+            top = 205*(1-y/480) if y < 480 else 0
+            bottom = min(238, 238*(y-780)/470) if y > 780 else 0
             draw.line((0, y, W, y), fill=round(max(top, bottom)))
         shading = Image.new("RGBA", (W, H), ImageColor.getrgb(renderer.palette["ground"])+(0,))
         shading.putalpha(alpha)
@@ -72,8 +72,12 @@ def draw_insert(renderer, frame, card, local):
     draw.rectangle((x, INSERT_TOP, x+picture.width+2*border, INSERT_TOP+picture.height+2*border), fill="#ffffff")
     layer.paste(picture, (x+border, INSERT_TOP+border))
     bottom = INSERT_TOP+picture.height+2*border
-    draw.rounded_rectangle((x, bottom+14, x+picture.width+2*border, bottom+64), radius=12, fill=renderer.palette["ground"])
-    renderer.paragraph(draw, card["label"], (x+14, bottom+22, picture.width+2*border-28, 40), "Bandeau")
+    # A narrow portrait still gets a label plate wide enough to read, flush with the card's outer edge.
+    outer = picture.width+2*border
+    plate = max(outer, 310)
+    plate_x = x+outer-plate if card["side"] == "right" else x
+    draw.rounded_rectangle((plate_x, bottom+14, plate_x+plate, bottom+64), radius=12, fill=renderer.palette["ground"])
+    renderer.paragraph(draw, card["label"], (plate_x+14, bottom+22, plate-28, 40), "Bandeau")
     fade = min(1, (local-card["at"])/FADE, (card["until"]-local)/FADE)
     return Image.blend(frame, layer, smooth(max(0, fade)))
 
@@ -144,7 +148,7 @@ def render(renderer, instant):
     if caption and not (renderer.plan.get("cover") and instant < MINIATURE_S):
         renderer.paragraph(draw, caption["texte"], (renderer.left, 1380, 809, 140), "Corps")
     lines = renderer.legend(credit_scene, credit_local) + renderer.credits(credit_scene, credit_local)
-    renderer.paragraph(draw, "\n".join(lines), (renderer.left, 1690, 809, 150), "Crédit", palette["night-ink-2"])
+    renderer.paragraph(draw, "\n".join(lines), (renderer.left, 1580, 809, 262), "Crédit", palette["night-ink-2"])
     renderer.paragraph(draw, "ETHNIAFRICA", (renderer.left, 1850, 380, 40), "Bandeau", palette["gold"])
     if renderer.proof:
         badge = Image.new("RGBA", (620, 68), ImageColor.getrgb(palette["ground"])+(240,))

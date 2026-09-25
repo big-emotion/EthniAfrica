@@ -327,6 +327,7 @@ class SceneRenderer:
         if geographic and (scene["type"] == "map" or geographic.get("features") or geographic.get("highlights")):
             legend.append(("Frontières actuelles en pointillé · Mercator" if geographic.get("border_style") == "dashed"
                            else "Frontières actuelles · Mercator") if geographic["borders"] else "Sans frontières actuelles · Mercator")
+            entries = []
             for feature in geographic.get("features", []):
                 if feature["at"] <= local < feature["until"]:
                     e = feature["evidence"]
@@ -334,8 +335,17 @@ class SceneRenderer:
                                "name-circulation": "Circulation du nom",
                                "river": "Cours d'eau (tracé schématique)"}.get(feature.get("meaning"))
                     role = "Voisinage : " if feature.get("role") == "context" else ""
-                    legend.append(f"{role}{feature['label']} · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else ""))
-                    if feature.get("geometry_note"): legend.append(feature["geometry_note"])
+                    tail = f" · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else "")
+                    entries.append((role+feature["label"], tail, feature.get("geometry_note")))
+            if self.plan.get("layout") == "fullbleed":
+                # Features that share period and status share one line, so a dozen countries fit the foot of the frame.
+                grouped = {}
+                for label, tail, note in entries:
+                    grouped.setdefault((tail, note), []).append(label)
+                entries = [(", ".join(labels), tail, note) for (tail, note), labels in grouped.items()]
+            for label, tail, note in entries:
+                legend.append(label+tail)
+                if note: legend.append(note)
         return legend
 
     def credits(self, scene, local=None):
