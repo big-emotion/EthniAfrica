@@ -46,7 +46,7 @@ rule applies there once that skill is updated to write to this ledger.
 
 **Scope exception, 2026-09-25:**
 [Mémoires sonores](../design/gabarits-social/MEMOIRES-SONORES.md) is a separate
-recurring feature within EthniAfrica: three musical carousel subjects every
+recurring feature within EthniAfrica: three musical carousel subjects every other
 Sunday, each for TikTok and Instagram only. The Monday/Wednesday/Friday,
 name-origin and mandatory-myth rules below describe the existing name series,
 not this feature. Musical posts are registered in the private library with

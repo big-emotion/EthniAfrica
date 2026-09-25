@@ -22,10 +22,13 @@ its six-card structure; it does not approve individual scripts or renderings.
 
 ## Cadence and opening selection
 
-**Three distinct publications every Sunday**, each intended for both TikTok
+**Three distinct publications every other Sunday**, each intended for both TikTok
 and Instagram. This means three editorial subjects, not six different subjects
 because there are two platforms. This recurring Sunday feature sits alongside
-the existing name-focused programme.
+the existing name-focused programme. The operator revised the initial weekly
+cadence on 2026-09-25: allow two weeks between batches. The production profile
+records `day: sunday`, `intervalWeeks: 2` and `subjects: 3`; preparation tools
+must read this cadence rather than assuming a weekly schedule.
 
 The operator selected the following opening subjects:
 
