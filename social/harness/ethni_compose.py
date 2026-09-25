@@ -34,6 +34,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 import ethni_tokens as tk
+import ethni_carousel_profiles as carousel_profiles
 
 HARNESS = pathlib.Path(__file__).resolve().parent
 
@@ -1064,7 +1065,8 @@ def _entete(carte, deck, fmt_key, largeur):
     """
     blocs = []
     t = _role_type("Bandeau", fmt_key)
-    serie = (deck.get("serie") or tk.pilier_courant(deck.get("pilier") or "")).upper()
+    serie = (carousel_profiles.label(deck) or deck.get("serie")
+             or tk.pilier_courant(deck.get("pilier") or "")).upper()
 
     tr = _role_type("Rang", fmt_key)
     # §8 — « 01/05 » : the card and the total. The total is read off the deck and
@@ -2459,7 +2461,9 @@ def porte_message(racine):
 
 def portes(cartes, deck, identites=None):
     """§7 and §11 — the four gates, as one verdict in the operator's language."""
-    manquantes = []
+    manquantes = carousel_profiles.errors(deck, cartes)
+    if manquantes:
+        return Verdict(passe=False, manquantes=manquantes, licence_sortie="")
     remarques = []
     identites = identites or {}
 
@@ -2667,7 +2671,7 @@ def rendre(carte, deck, fmt_key, *, image, racine, verdict, sous_titre=False):
     if epreuve:
         dossier = racine / "_epreuves"
     else:
-        cibles = tk.reseaux(fmt_key)
+        cibles = tk.reseaux(fmt_key, deck)
         if not cibles:
             raise ValueError(
                 f"aucun réseau ne reçoit le format {fmt_key!r} — voir "

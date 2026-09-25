@@ -12,7 +12,10 @@ Use its musical question, six-card format, TikTok/Instagram scope and selected
 opening subjects. A name-origin question, attested myth or corpus fiche is not
 required. Research and source attribution remain required. Do not assign a
 name typology, episode number or site route merely to fit the existing ledger;
-the reference describes that unresolved technical handoff explicitly.
+the reference supplies its private-library registration and renderer profile.
+Hand off `profil: memoires-sonores`, the subject research and the selected
+recording to `structure`; the engine's `--brief memoires-sonores` command reads
+the current instructions and supplies the empty six-card scaffold.
 
 Première étape. Rien ne vient avant. `structure` vient après.
 

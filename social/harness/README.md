@@ -1,5 +1,21 @@
 # Production harness — EthniAfrica shorts
 
+## Musical carousels
+
+`ethni_carrousel2.py --brief memoires-sonores` reads the
+[approved guide](../../docs/design/gabarits-social/MEMOIRES-SONORES.md) and emits
+its instructions plus an empty six-card deck. Populate the deck in the workshop
+and keep `profil: memoires-sonores`. The normal rendering command validates its
+stages and audio notes, prints the series identity and delivers six 4:5 cards
+for TikTok/Instagram only. Music is selected natively when uploading, as recorded
+in `RENDU.md`. Register with `register-post.mjs --profile memoires-sonores` in
+the private library; this feature requires no site record.
+
+The shared profile in `carousel-profiles/` is read by preparation, rendering and
+registration. Decks without a profile retain the existing routes below.
+
+## Video production
+
 For scene-based video production, start with [the reusable workflow](SCENE-PRODUCTION.md),
 [feature catalogue](SCENE-CATALOGUE.md) and [three production storyboards](templates/scene-storyboards.md).
 The older deck-driven path below remains supported.

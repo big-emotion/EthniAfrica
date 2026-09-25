@@ -301,13 +301,18 @@ _FORMAT_KEYS = {
 }
 
 
-def reseaux(fmt_key):
+def reseaux(fmt_key, deck=None):
     """Which networks receive a format, in §1 bis's own row order.
 
     Read straight from the "Reçoit" column rather than a second, hand-kept list:
     §1 bis is revised, not broken (« la table se révise, elle ne s'enfreint pas »),
     and a revised line must not need a matching edit here to take effect.
     """
+    if deck is not None:
+        from ethni_carousel_profiles import networks
+        selected = networks(deck, fmt_key)
+        if selected is not None:
+            return selected
     cibles = []
     for row in _tables()["1 bis. Un format par réseau"]:
         reseau, recoit = row[0], row[1]

@@ -40,8 +40,9 @@ publication hour, automation or scheduled upload has been set.
 
 ## The six-card structure
 
-The default is six cards, with one main idea per card. Adjust depth when the
-subject requires it, preserving the progression and the evidence.
+The implemented profile uses six cards, with one main idea per card. Adapt the
+depth of the copy to the subject while preserving these six steps. A different
+card count requires an explicit profile revision rather than dropping a step.
 
 | Card | Editorial role | What the reader receives |
 | --- | --- | --- |
@@ -78,8 +79,9 @@ readability.
 - Preserve readable text and credits: shorten copy rather than shrink it to
   fit. Validate the actual swipeable post and profile thumbnail separately.
 
-The editorial structure is approved. A pixel-level template, renderer support
-and the first visual proof are not certified by this document.
+The renderer reuses the existing card layouts and prints the series label on
+every card. The exact accent and the first episode's visual proof remain to be
+reviewed; technical support is not visual approval of an actual publication.
 
 ## Research, audio and review
 
@@ -106,17 +108,78 @@ review to the actual musical promise and this six-card sequence; mark
 name-specific criteria inapplicable with a reason rather than inventing an
 endonym, myth, corpus entry or name-focused conclusion.
 
-## Production handoff and remaining choices
+## Production handoff
 
 `idee`, `structure` and `produire` should read this reference before applying
 their general name-origin instructions to a Mémoires sonores subject.
 
-This documentation adds no JSON fields, ledger typology, renderer feature or
-machine-readable platform exception. Before producing the first episode,
-verify how the existing tools represent a social-only musical subject and its
-TikTok/Instagram delivery. If a tool still requires a name category, a site
-route or broader distribution, report the unsupported step and implement a
-scoped change with test-first checks; do not mislabel the post or disable a gate.
+The machine-readable profile is
+[`social/harness/carousel-profiles/memoires-sonores.json`](../../../social/harness/carousel-profiles/memoires-sonores.json).
+Preparation, rendering and private-library registration read that same profile.
+
+Before writing an episode, retrieve the current instructions and an empty deck:
+
+```bash
+social/harness/venv/bin/python social/harness/ethni_carrousel2.py --brief memoires-sonores
+```
+
+This read-only command returns JSON with `instructions` read from this file,
+`profile` (including cadence and networks), and `deck`, a six-card scaffold.
+Write the populated `deck` to the subject's workshop `cards.json`; do not save
+the entire brief as a deck. The scaffold deliberately has no invented title,
+claim, source, image verification or audio authorization and cannot pass gates.
+
+The deck declares `"profil": "memoires-sonores"`. Each card keeps the existing
+§10 fields and adds `etape`: `accroche`, `contexte`, `histoire`,
+`detail-musical`, `ecoute`, `references`, in that order. Its ranks are 1–6;
+its rendering roles are `ouverture`, then five `serie` cards. The last card is
+not `bascule`: it must not trigger the name-focused exit treatment. Cards 2–6
+require body text and a source, and every card requires a title.
+
+`musique` identifies `titre`, `artiste`, `version` and `extrait`. Under
+`musique.plateformes`, both `tiktok` and `instagram` require a `reference`
+(the exact sound identifier or source), `usage` (the recorded usage review),
+and `verifie: true` only after that review. The scaffold starts with
+`verifie: false`; an unresolved review blocks delivery. These are an author's
+attestation and notes, not automatic evidence that a licence exists.
+
+After complete text approval, register only in the private library:
+
+```bash
+node social/tools/library/register-post.mjs \
+  --id <slug> --dir Musique-<Sujet>/<slug> \
+  --title "<approved title>" --subject "Musique · <Sujet>" \
+  --pillar EthniAfrica --profile memoires-sonores --status a-produire \
+  --copy _legendes/<slug>.md --write
+node social/tools/library/register-post.mjs --where <slug>
+```
+
+Set `cards.json.outDir` to the library location returned by `--where` and use
+the existing library index tools to generate its `post.md`. The registration
+stores `profile` and `intendedChannels`, separately from actual `channels` and
+publication dates. It does not schedule or publish anything. Do not pass a
+fictional `--link-path`, and do not create a name-origin JSON record under
+`docs/productions/` for this social-only series.
+
+After source, asset and message reviews, render with the normal command:
+
+```bash
+social/harness/venv/bin/python social/harness/ethni_carrousel2.py <Sujet>
+```
+
+The engine validates the profile, stages and music notes before reading assets.
+It renders **six 1080 × 1350 PNGs**, with `Mémoires sonores` as their series
+label, into `TikTok-Instagram/` when the ordinary review and visual gates pass.
+Failed ordinary gates still produce marked proofs in `_epreuves/`; an unknown
+or malformed profile is refused rather than silently routed to every network.
+It generates no reel or other-network package for this profile. `RENDU.md`
+records the guide, featured recording, excerpt and per-platform audio notes.
+
+PNG files do not contain audio: select the documented sound in each platform
+when uploading the swipeable carousel. No audio is downloaded or embedded by
+this renderer. Existing decks without `profil` retain their existing behaviour.
+
+## Remaining choices
 
 The remaining editorial choices are the third opening subject (rap or jazz),
 the exact visual accent, and the new TikTok/Instagram display names and bios.
