@@ -46,14 +46,14 @@ class SceneRenderer:
                 with Image.open(path) as image:
                     self.assets[key] = ImageOps.exif_transpose(image).convert("RGB")
 
-    def face(self, role):
+    def face(self, role, weight=700):
         return font(tokens.type_size(role, "reel"),
-                    "anton" if role in ("Titre de série", "Paire — terme") else "nunito", 700)
+                    "anton" if role in ("Titre de série", "Paire — terme") else "nunito", weight)
 
-    def paragraph(self, draw, value, box, role="Corps", colour=None):
+    def paragraph(self, draw, value, box, role="Corps", colour=None, weight=700):
         """Wrap by measured glyph width; never silently truncate or shrink text."""
         x, y, width, height = box
-        face = self.face(role)
+        face = self.face(role, weight)
         lines = []
         for paragraph in value.split("\n"):
             line = ""
@@ -298,9 +298,12 @@ class SceneRenderer:
             credits = list(dict.fromkeys(self.credits(previous)+credits))
         draw = ImageDraw.Draw(image)
         # Switch the heading once; crossfading words makes both titles unreadable.
-        self.paragraph(draw, heading["title"], (self.left, 198, self.right-self.left, 215), "Titre de série", self.palette["gold"])
+        corner = heading.get("timeline", {}).get("context_layout") == "corner"
+        heading_width = 440 if corner else self.right-self.left
+        self.paragraph(draw, heading["title"], (self.left, 198, heading_width, 215), "Titre de série", self.palette["gold"])
         ev = heading["evidence"]
-        self.paragraph(draw, f"{ev['period']} · {STATUS[ev['status']]}", (self.left, 426, self.right-self.left, 45), "Bandeau", self.palette["night-ink-2"])
+        self.paragraph(draw, f"{ev['period']} · {STATUS[ev['status']]}",
+                       (self.left, 426, heading_width, 85 if corner else 45), "Bandeau", self.palette["night-ink-2"])
         self.paragraph(draw, "ETHNIAFRICA", (self.left, 65, 380, 45), "Bandeau", self.palette["night-ink-2"])
         self.paragraph(draw, "L’AFRIQUE À TRAVERS SES NOMS", (self.left, 132, self.right-self.left, 45), "Bandeau", self.palette["night-ink-2"])
         caption = next((c for c in self.captions if c["debut"] <= instant < c["fin"]), None)

@@ -1,6 +1,7 @@
 """Reusable chronology, documentary imagery and indicative geographic presence."""
 import copy
 import unittest
+from unittest.mock import patch
 
 from PIL import ImageChops
 
@@ -327,6 +328,57 @@ class VisualExtensionTests(unittest.TestCase):
         self.focused_timeline()["context"][0]["detail"] = "Too much text " * 100
         with self.assertRaisesRegex(ValueError, "overflow"):
             SceneRenderer(self.plan, self.root, []).preflight()
+
+    def test_corner_note_replaces_context_without_painting_cards(self):
+        timeline = self.focused_timeline()
+        timeline["context_layout"] = "corner"
+        for event in timeline["events"]:
+            event["evidence"]["period"] = str(event["year"])
+        validate_plan(self.plan, self.root, 10)
+        renderer = SceneRenderer(self.plan, self.root, [], reduced_motion=True)
+        for instant, included, excluded in [(1.4, "A regional event", "A familiar contemporary"),
+                                            (1.9, "A familiar contemporary", "A regional event")]:
+            with patch.object(renderer, "paragraph", wraps=renderer.paragraph) as paint:
+                frame = renderer.render(instant)
+            strings = " ".join(call.args[1] for call in paint.call_args_list)
+            self.assertIn(included, strings)
+            self.assertNotIn(excluded, strings)
+            periods = {item["evidence"]["period"] for item in timeline["context"]}
+            period_boxes = [call.args[2] for call in paint.call_args_list if call.args[1] in periods]
+            self.assertEqual(len(period_boxes), 1)
+            self.assertLess(period_boxes[0][1], 470, "A short note must not detach its date into the map")
+            no_context = copy.deepcopy(self.plan)
+            no_context["scenes"][0]["timeline"]["context"] = []
+            empty = SceneRenderer(no_context, self.root, [], reduced_motion=True).render(instant)
+            self.assertEqual(frame.crop((91, 820, 900, 1300)).tobytes(),
+                             empty.crop((91, 820, 900, 1300)).tobytes())
+            self.assertEqual(frame.tobytes(), renderer.render(instant).tobytes())
+        with patch.object(renderer, "paragraph", wraps=renderer.paragraph) as paint:
+            renderer.render(4.9)
+        self.assertFalse(any("A familiar contemporary" in call.args[1] for call in paint.call_args_list))
+
+    def test_corner_note_rejects_ambiguous_cues_and_unknown_layout(self):
+        timeline = self.focused_timeline()
+        timeline["context_layout"] = "corner"
+        timeline["context"][1]["at"] = timeline["context"][0]["at"]
+        with self.assertRaisesRegex(ValueError, "distinct"):
+            validate_plan(self.plan, self.root, 10)
+        timeline["context_layout"] = "unknown"
+        with self.assertRaisesRegex(ValueError, "context layout"):
+            validate_plan(self.plan, self.root, 10)
+
+    def test_corner_note_and_reserved_heading_are_checked_for_overflow(self):
+        for target in ("detail", "title"):
+            self.plan = fixtures.fixture(self.root)
+            timeline = self.focused_timeline()
+            timeline["context_layout"] = "corner"
+            for event in timeline["events"]:
+                event["evidence"]["period"] = str(event["year"])
+            SceneRenderer(self.plan, self.root, []).preflight()
+            if target == "detail": timeline["context"][0]["detail"] = "Too much context " * 30
+            else: self.plan["scenes"][0]["title"] = "A heading that cannot fit beside a note"
+            with self.subTest(target=target), self.assertRaisesRegex(ValueError, "overflow"):
+                SceneRenderer(self.plan, self.root, []).preflight()
 
 
 if __name__ == "__main__":

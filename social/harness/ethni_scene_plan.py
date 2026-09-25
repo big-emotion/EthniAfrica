@@ -162,13 +162,13 @@ def validate_map(value, duration, assets, sources):
 
 
 def validate_timeline(value, duration, sources, assets=None):
-    keys(value, "scale events context layout background overview_at", "timeline")
+    keys(value, "scale events context layout background overview_at context_layout", "timeline")
     layout = value.get("layout", "overview")
     require(layout in ("overview", "focus"), "Unknown timeline layout")
     if layout == "focus":
         validate_focused_timeline(value, duration, sources, assets or {})
         return
-    require(not any(key in value for key in ("background", "overview_at")), "Focus options require the focus layout")
+    require(not any(key in value for key in ("background", "overview_at", "context_layout")), "Focus options require the focus layout")
     require(value.get("scale") == "ordinal", "timeline.scale must be ordinal; spacing is explicitly not proportional")
     events, context = value.get("events"), value.get("context", [])
     require(isinstance(events, list) and 2 <= len(events) <= 3, "timeline needs two or three primary events")
@@ -193,6 +193,7 @@ def validate_focused_timeline(value, duration, sources, assets):
     """Anchor context to a scene cue without pretending its period is that year."""
     primary = {key: value[key] for key in ("scale", "events") if key in value}
     validate_timeline(primary, duration, sources)
+    require(value.get("context_layout", "cards") in ("cards", "corner"), "Unknown context layout")
     events = value["events"]
     require(all(a["at"] < b["at"] for a, b in zip(events, events[1:])),
             "Focus event cues must be chronological")
@@ -217,6 +218,9 @@ def validate_focused_timeline(value, duration, sources, assets):
         start, end = windows[anchor]
         cue = number(item.get("at"), "context.at", start)
         require(cue < end, "Context must appear within its event window")
+    if value.get("context_layout") == "corner":
+        require(len({item["at"] for item in context}) == len(context),
+                "Corner context cues must be distinct; one note is visible at a time")
     if "background" in value:
         background = value["background"]
         validate_map(background, duration, assets, sources)

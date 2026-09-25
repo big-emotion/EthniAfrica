@@ -155,6 +155,21 @@ The context cue must fall within its primary event's focused window. Cards
 disappear when the next main event or final overview starts. Their text is
 silent: the audio still comes exclusively from the approved narration file.
 
+Set `context_layout: "corner"` for an optional upper-right marginal note,
+without colored cards. The default is `"cards"`. The latest context cue for
+the active event replaces the previous note; cues must be distinct. Its place
+label, detail and independent period remain visible together, in regular-weight
+secondary ink. A short fade introduces the note without moving it. The note's
+date sits immediately below its text; a short note does not leave a tall empty
+panel. The main title, evidence and focused date reserve the left column even
+when no note is shown, so their positions stay stable. Their narrower widths
+and the note itself are checked for overflow.
+
+Author note cues for reading time: simultaneous-card cues copied unchanged
+could replace the first note before it can be read. Changing this visual
+timing never edits or regenerates the approved narration. The note disappears
+when the next main event or final overview begins.
+
 An optional `background` accepts the map contract below, restricted to a
 `physical` basemap without features or country highlights. Camera keys can
 follow the narration; current borders can be dashed. This background locates

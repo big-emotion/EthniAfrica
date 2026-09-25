@@ -89,11 +89,14 @@ def draw_focused_timeline(renderer, draw, scene, local):
         renderer.paragraph(draw, "UNE HISTOIRE EN MOUVEMENT", (renderer.left, 630, 809, 110), "Corps", p["gold"])
     elif not overview:
         event = events[index]
-        renderer.paragraph(draw, event["evidence"]["period"], (renderer.left, 535, 809, 140), "Titre de série", p["gold"])
+        corner = value.get("context_layout") == "corner"
+        renderer.paragraph(draw, event["evidence"]["period"], (renderer.left, 535, 440 if corner else 809, 140), "Titre de série", p["gold"])
         renderer.paragraph(draw, event["label"], (renderer.left, 705, 809, 85), "Corps")
-        for item in value.get("context", []):
-            if item["event_year"] != event["year"] or local < item["at"]:
-                continue
+        visible = [item for item in value.get("context", [])
+                   if item["event_year"] == event["year"] and local >= item["at"]]
+        if corner and visible:
+            draw_corner_note(renderer, draw, max(visible, key=lambda item: item["at"]), local)
+        for item in ([] if corner else visible):
             amount = 1 if renderer.reduced_motion else smooth(min(1, (local-item["at"])/.5))
             top = (875 if item["lane"] == "regional" else 1100)+round(22*(1-amount))
             colour = p["teal"] if item["lane"] == "regional" else p["perv"]
@@ -111,3 +114,18 @@ def draw_focused_timeline(renderer, draw, scene, local):
     if "background" in value:
         notice += " · Mercator"
     renderer.paragraph(draw, notice, (renderer.left, 1331, 809, 30), "Crédit", p["night-ink-2"])
+
+
+def draw_corner_note(renderer, draw, item, local):
+    """A fixed marginal note replaces its predecessor without displacing the story."""
+    p = renderer.palette
+    amount = 1 if renderer.reduced_motion else smooth(min(1, (local-item["at"])/.25))
+    ink = mix(p["ground"], p["night-ink-2"], amount)
+    renderer.paragraph(draw, "À cette époque", (570, 205, 330, 40), "Bandeau", ink, weight=400)
+    body_height = renderer.paragraph(draw, item["label"]+"\n"+item["detail"],
+                                      (570, 258, 330, 210), "Corps", ink, weight=400)
+    period_top = 258+body_height+14
+    period_height = renderer.paragraph(draw, item["evidence"]["period"],
+                                        (570, period_top, 330, 100), "Bandeau", ink, weight=400)
+    draw.line((548, 208, 548, period_top+period_height+8),
+              fill=mix(p["ground"], p["night-ink-2"], .5*amount), width=2)
