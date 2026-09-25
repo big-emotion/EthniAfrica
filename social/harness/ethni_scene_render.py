@@ -40,6 +40,7 @@ class SceneRenderer:
         self.plan, self.root, self.captions = plan, root, captions
         self.reduced_motion = reduced_motion
         self.proof = proof
+        self._base_cache = {}
         self.palette = tokens.palette()
         self.duration = plan["scenes"][-1]["end"]
         self.assets = {}
@@ -85,17 +86,32 @@ class SceneRenderer:
         motion = value.get("motion", {"from": [1, .5, .5], "to": [1, .5, .5]})
         progress = 0 if self.reduced_motion else smooth(local/(scene["end"]-scene["start"]))
         zoom, fx, fy = [a+(b-a)*progress for a, b in zip(motion["from"], motion["to"])]
-        scale = (min if value["fit"] == "contain" else max)(w/source.width, h/source.height)*zoom
+        fit_scale = (min if value["fit"] == "contain" else max)(w/source.width, h/source.height)
+        scale = fit_scale*zoom
         require(scale <= tokens.SUR_ECH_MAX, "Image enlargement exceeds the charter ceiling")
-        resized = source.resize((round(source.width*scale), round(source.height*scale)), Image.Resampling.LANCZOS)
-        out = Image.new("RGB", (w, h), self.palette["ground"])
         if value["fit"] == "contain":
+            resized = source.resize((round(source.width*scale), round(source.height*scale)), Image.Resampling.LANCZOS)
+            out = Image.new("RGB", (w, h), self.palette["ground"])
             out.paste(resized, ((w-resized.width)//2, (h-resized.height)//2))
-        else:
-            left = round((resized.width-w)*fx)
-            top = round((resized.height-h)*fy)
-            out = resized.crop((left, top, left+w, top+h))
-        return out
+            return out
+        # Rounding the resized size and the crop offset to whole pixels on every frame made a
+        # slow push-in stair-step by up to a pixel, and Image.transform's bicubic still advanced
+        # unevenly. Resize once per scene at its largest zoom, then resample the frame window
+        # from a fractional source box, which is what gives a true sub-pixel filter.
+        largest = fit_scale*max(motion["from"][0], motion["to"][0])
+        base = self._base_resize(value["asset"], largest)
+        bx, by = base.width/(source.width*scale), base.height/(source.height*scale)
+        left, top = (source.width*scale-w)*fx, (source.height*scale-h)*fy
+        return base.resize((w, h), Image.Resampling.LANCZOS,
+                           box=(left*bx, top*by, (left+w)*bx, (top+h)*by))
+
+    def _base_resize(self, asset, scale):
+        key = (asset, round(scale, 6))
+        if key not in self._base_cache:
+            source = self.assets[asset]
+            self._base_cache[key] = source.resize(
+                (round(source.width*scale), round(source.height*scale)), Image.Resampling.LANCZOS)
+        return self._base_cache[key]
 
     def _map(self, scene, local, viewport=None):
         cfg = scene["map"]
