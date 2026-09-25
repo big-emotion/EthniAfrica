@@ -8,6 +8,10 @@ description: Prepare EthniAfrica narration, visual storyboards, sourced assets a
 ## Mémoires sonores carousel route (2026-09-25)
 
 Read `docs/design/gabarits-social/MEMOIRES-SONORES.md` first for this feature.
+The approved `memoires-sonores-v1` presentation is now automatic: photographs
+on cards 1 and 5, text on cards 2–4 and 6, night ground and soft ocre. Follow
+the guide’s field-to-slot table; visual approval does not approve episode copy
+or audio. Do not force the generic full-photo quota onto this profile.
 Its approved six-card sequence replaces the name-origin sequence and closing.
 Prepare TikTok/Instagram copy only; no mandatory myth, reel or site article.
 Read the guide and scaffold through

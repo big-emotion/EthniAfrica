@@ -35,7 +35,7 @@ def musical_deck():
         })
     return {
         "campagne": "music-fixture", "profil": "memoires-sonores",
-        "pilier": "EthniAfrica", "accent": "terre", "fond": "nuit",
+        "pilier": "EthniAfrica", "accent": "ocre", "fond": "nuit",
         "musique": {
             "titre": "Recording fixture", "artiste": "Test artist",
             "version": "Studio", "extrait": "Opening guitar phrase",
@@ -137,7 +137,7 @@ class CarouselProfilesTest(unittest.TestCase):
             with self.subTest(field=field):
                 deck = musical_deck()
                 if field == "image":
-                    deck["cartes"][2]["image"] = None
+                    deck["cartes"][0]["image"] = None
                 else:
                     deck["campagne"] = " "
                 self.assertFalse(gab.portes(deck["cartes"], deck).passe)
