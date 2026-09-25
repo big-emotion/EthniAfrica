@@ -85,6 +85,12 @@ class ScenePipelineTests(unittest.TestCase):
             self.lock.write_text(json.dumps(value))
             with self.assertRaises(ValueError): self.run_action('verify')
 
+    def test_carousel_edits_do_not_invalidate_a_scene_video(self):
+        self.run_action('prepare')
+        (self.root / 'cards.json').write_text('{"carousel": "independent"}')
+        (self.root / 'cartes.json').write_text('{"carousel": "also independent"}')
+        self.assertTrue(self.run_action('verify')['sample_frames_match'])
+
     def test_missing_text_approval_stops_preparation(self):
         (self.root / 'post.md').write_text('Draft')
         with self.assertRaisesRegex(ValueError, 'approval'): self.run_action('prepare')

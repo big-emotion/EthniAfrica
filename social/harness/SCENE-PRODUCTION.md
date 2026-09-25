@@ -34,12 +34,12 @@ an engine upgrade. Archive its renderer report/commit and use its original entry
 
 ## Four responsibilities
 
-| Owner           | Supplies                                                                                                        | Must not substitute                                                       |
-| --------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| Planning model  | Audience, question, evidence, complete script, visual storyboard, source/asset choices, timings and filled plan | An invented kingdom outline or unsupported migration                      |
-| Execution model | Resolves supplied paths, checks the package, runs preparation/export, inspects results, reports failures        | Rewrites to the script, new sources, new composition, edits to the engine |
-| Engine          | Input validation, time-based composition, captions, proof export, fingerprints and media checks                 | Editorial judgment or publication approval                                |
-| Operator        | Text and voice approval, meaningful visual choices, final review and publication                                | Repeated technical confirmations already covered by the request           |
+| Owner           | Supplies                                                                                                           | Must not substitute                                                       |
+| --------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| Planning model  | Audience, question, evidence, complete script, visual storyboard, source/asset choices, timings and filled plan    | An invented kingdom outline or unsupported migration                      |
+| Execution model | Resolves supplied paths, checks the package, runs preparation/export, inspects results, reports failures           | Rewrites to the script, new sources, new composition, edits to the engine |
+| Engine          | Input validation, time-based composition, captions, proof and reviewed clean export, fingerprints and media checks | Editorial judgment or publication approval                                |
+| Operator        | Text and voice approval, meaningful visual choices, final review and publication                                   | Repeated technical confirmations already covered by the request           |
 
 ## One production package
 
@@ -61,26 +61,27 @@ asking the execution model to infer missing decisions.
     narration.wav          completed approved recording
     aligned-words.json     words and timings for that exact recording
     scene-handoff.json     technical baseline generated after preparation
-  _epreuves/<version>/      previews, H.264/AAC proof and reports
+  _epreuves/<version>/      proof, reports and release-review.json
+  video/<version>/         reviewed clean MP4, subtitles, credits and delivery manifest
 ```
 
 The source record stores hashes and ordered whole-paragraph audio cuts. `cards.json` and
-`cartes.json` are optional for scene-only videos. If present, the existing approval freshness
-check includes them. Preserve file timestamps when transferring a package; never touch the
+`cartes.json` are optional for scene-only videos. Editing a carousel does not invalidate a scene-video handoff. Preserve file timestamps when transferring a package; never touch the
 approval marker merely to bypass a stale-approval error. Keep the plan at the package root.
 
 ## From idea to export
 
-| Stage                | Input and work                                                                                                    | Concrete output / exit condition                                                     |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| 1. Audience and idea | Read the existing audience/idea work; choose one question and the intended audience                               | A sourced subject report, not a manufactured corpus entry                            |
-| 2. Structure         | Choose one storyboard. Write the full narrative and the on-screen optional context. Explain each proposed shot    | Completed brief and script; distinguish spoken text from silent context              |
-| 3. Text approval     | Show the entire script and relevant visible copy to the operator; apply existing approval                         | Genuine `post.md` approval. Reuse authorization already given for unchanged text     |
-| 4. Voice             | Reuse an approved recording or prepare it through the existing voice workflow; finish alignment before proceeding | Recording, measured words and pronunciation check. The scene command never calls TTS |
-| 5. Visual assembly   | Bind cues to measured words; choose assets/camera, source historical overlays, assign scene types and transitions | A filled plan, matching source hashes, source register, complete assets              |
-| 6. Preparation       | Validate and produce cue previews; review mobile reading, paths and uncertainty; finish message/myth review       | Named handoff lock and visual package ready for execution                            |
-| 7. Execution         | One command verifies the package, compares sampled frames, exports and fully decodes the MP4                      | Proof, cue previews, `render-report.json`, `execution-report.json`                   |
-| 8. Operator review   | Watch/listen, confirm visual meaning and final delivery suitability                                               | Human decision. No automatic publishing, scheduling or ledger promotion              |
+| Stage                | Input and work                                                                                                    | Concrete output / exit condition                                                         |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| 1. Audience and idea | Read the existing audience/idea work; choose one question and the intended audience                               | A sourced subject report, not a manufactured corpus entry                                |
+| 2. Structure         | Choose one storyboard. Write the full narrative and the on-screen optional context. Explain each proposed shot    | Completed brief and script; distinguish spoken text from silent context                  |
+| 3. Text approval     | Show the entire script and relevant visible copy to the operator; apply existing approval                         | Genuine `post.md` approval. Reuse authorization already given for unchanged text         |
+| 4. Voice             | Reuse an approved recording or prepare it through the existing voice workflow; finish alignment before proceeding | Recording, measured words and pronunciation check. The scene command never calls TTS     |
+| 5. Visual assembly   | Bind cues to measured words; choose assets/camera, source historical overlays, assign scene types and transitions | A filled plan, matching source hashes, source register, complete assets                  |
+| 6. Preparation       | Validate and produce cue previews; review mobile reading, paths and uncertainty; finish message/myth review       | Named handoff lock and visual package ready for execution                                |
+| 7. Execution         | One command verifies the package, compares sampled frames, exports and fully decodes the MP4                      | Proof, cue previews, `render-report.json`, `execution-report.json`                       |
+| 8. Release review    | Watch/listen, confirm visual meaning and final delivery suitability                                               | Complete the version-bound review from real evidence and existing operator decisions     |
+| 9. Final delivery    | Run `finalize`, then deliver through the registry for an existing registered post                                 | Clean video, subtitle file, credits and hashed delivery report; no automatic publication |
 
 Text and voice approval do not approve unseen historical polygons. Bundle the visual proposal
 with the text review where possible, so later execution does not require a new design conversation.
@@ -141,12 +142,21 @@ smallest intended viewing size (320–430px wide).
 | One scene midpoint could miss all but one timeline state                    | Cue preview index and fingerprint comparison cover preflight event/camera/feature samples                                         |
 | Rendering required remembering several separate checks                      | One execution command verifies inputs, renders and checks the media                                                               |
 | A narration alone could be mistaken for a reproducible montage              | The brief and execution prompt require a filled plan and assets                                                                   |
-| Scene v1 always creates watermarked proofs                                  | Still true. A reviewed clean-master/publication-delivery path is not implemented here                                             |
+| Scene render originally created only watermarked proofs                     | `finalize` now delivers a clean package after version-bound review; see [release workflow](SCENE-RELEASE.md)                      |
 | Voice synthesis and external alignment                                      | Still upstream; reuse the recording. Provider cost and pronunciation remain outside the render command                            |
 | Audio mixing and video clips                                                | No music/SFX mixing or clip scene yet; only the supplied narration track                                                          |
 | Historical maps and migration geometry                                      | Still authored and sourced; never reconstructed automatically from a script                                                       |
 | Smaller-model quality                                                       | Command execution is deterministic; a second subject authored by a smaller model remains a separate practical trial               |
 
 For immediate operation, fill the brief and plan once per subject, then use the
-[execution prompt](templates/scene-execution-prompt.md). The scene engine currently streamlines
-**proof production**, not the entire public-release lifecycle.
+[execution prompt](templates/scene-execution-prompt.md). Continue through the [release workflow](SCENE-RELEASE.md) for a clean deliverable.
+Preparation supplies editorial and rights decisions once; execution prepares the
+publication package and the skill handles an existing library registration. Actual posting remains manual.
+
+## Current video timing doctrine
+
+Narration organizes ideas; paragraphs do not prescribe cuts. A scene lasts as long as explanation
+and reading comfort require. A map can span several sentences while camera, regions, points,
+routes and dates evolve. A new scene should clarify a change of place, period, evidence or idea.
+Carousel layouts and cadence are independent. The old image-deck montage is retained only to
+reproduce archived work, not as the default for a new video.

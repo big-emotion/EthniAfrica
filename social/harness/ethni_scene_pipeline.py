@@ -25,7 +25,7 @@ def identity(project, plan):
     repo = harness.parents[1]
     files = sorted(set(harness.glob('ethni_*.py')) | set((harness/'fonts').glob('*.ttf')) |
                    set((tokens.GABARITS/'tokens').glob('*.css')) | {tokens.SPEC, harness/'requirements.txt'})
-    inputs = ['narration.fr.txt', 'post.md', 'work/narration.wav', 'work/aligned-words.json', 'cards.json', 'cartes.json',
+    inputs = ['narration.fr.txt', 'post.md', 'work/narration.wav', 'work/aligned-words.json',
               'production-brief.md', 'SOURCES.md', 'message.md', 'mythe.md']
     return {
         'plan': hashed_json({key: value for key, value in plan.items() if key != 'output_dir'}),
@@ -52,12 +52,14 @@ def check_video(path, duration):
             'duration': float(video['duration']), 'full_decode': True, 'sha256': digest(path)}
 
 
-def execute(action, project, plan_path, lock_path, output):
-    require(action in ('prepare', 'verify', 'render'), 'Unknown pipeline action')
+def execute(action, project, plan_path, lock_path, output, review_path=None):
+    require(action in ('prepare', 'verify', 'render', 'finalize'), 'Unknown pipeline action')
     project, plan_path = Path(project).resolve(), Path(plan_path).resolve()
     lock_path, output = assert_writable(Path(lock_path).resolve()), assert_writable(Path(output).resolve())
     require(plan_path.parent == project, 'Keep the plan at the project root with its relative assets')
-    require('_epreuves' in output.parts, 'Output must be a private _epreuves destination')
+    if action != 'finalize':
+        require('_epreuves' in output.parts and output.is_relative_to(project),
+                'Output must be a private _epreuves destination inside the project')
     plan = json.loads(plan_path.read_text())
     source = prepare_source(project, plan['source'])
     validate_plan(plan, project, source['duration'])
@@ -92,25 +94,35 @@ def execute(action, project, plan_path, lock_path, output):
             with lock_path.open('x') as target:
                 json.dump({'version': 1, 'identity': current, 'frames': frames}, target, ensure_ascii=False, indent=2)
                 target.write('\n')
+    elif action == 'finalize':
+        from ethni_scene_release import deliver
+        return deliver(project, plan, lock_path, review_path, output, source, check_video,
+                       lambda: identity(project, json.loads(plan_path.read_text())) == current)
     elif action == 'render':
         folder = run(project, plan_path, output_dir=output)
         result['video'] = check_video(folder, source['duration'])
         latest_plan = json.loads(plan_path.read_text())
         require(identity(project, latest_plan) == current, 'Inputs changed during export; review the proof before reuse')
+        result['lock_sha256'] = digest(lock_path)
+        from ethni_scene_release import review_template
+        review = output/'release-review.json'
+        if not review.exists():
+            review.write_text(json.dumps(review_template(project, plan, lock_path, folder), indent=2)+'\n')
         (output/'execution-report.json').write_text(json.dumps(result, indent=2)+'\n')
     return result
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('action', choices=['prepare', 'verify', 'render'])
+    parser.add_argument('action', choices=['prepare', 'verify', 'render', 'finalize'])
     parser.add_argument('project')
     parser.add_argument('--plan', required=True, type=Path)
     parser.add_argument('--lock', required=True, type=Path)
     parser.add_argument('--output', required=True, type=Path)
+    parser.add_argument('--review', type=Path)
     args = parser.parse_args()
     try:
-        result = execute(args.action, resolve_project(args.project), args.plan, args.lock, args.output)
+        result = execute(args.action, resolve_project(args.project), args.plan, args.lock, args.output, args.review)
     except (ValueError, OSError, KeyError, subprocess.CalledProcessError) as error:
         parser.exit(1, f'Scene pipeline stopped: {error}\n')
     print(json.dumps(result, indent=2))

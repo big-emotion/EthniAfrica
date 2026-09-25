@@ -1,26 +1,32 @@
 ---
 name: ethniafrica-produire
-description: Rendre les carrousels et les reels EthniAfrica depuis un cards.json et un SOURCES.md validés, conformément à GABARITS-SOCIAL.md — dispositions A/B/C, résolution ≤ ×2, zone d'interface 9:16, licence de sortie calculée. Dernière étape de la chaîne idee → structure → produire ; rien ne vient après, la publication est un acte humain. Lance d'abord l'audit du message (ethniafrica-message). Utiliser pour « rends », « génère les images », « fais la vidéo », « sors le carrousel », ou /ethniafrica-produire. Rend toujours, en épreuve si les portes ne passent pas.
+description: Render EthniAfrica scene videos from an approved scene plan, or render independent carousel decks. Verify narration, assets, timing and reviews; deliver proofs or reviewed clean publication packages. Final stage of idee → structure → produire. Does not publish or schedule.
 ---
 
 # produire — rendre carrousels et reels
 
 ## Scene-video dispatch and execution
 
-If the requested output uses `scene-plan.json`, use this section and
+For every new video, use `scene-plan.json`, this section and
 `social/harness/SCENE-PRODUCTION.md` before the deck-only workflow below.
 `social/harness/SCENE-CATALOGUE.md` lists working controls; the three recipes and
 execution prompt live under `social/harness/templates/`. This is not a carousel
-migration. Do not demand `cards.json`, `cartes.json`, a `pivot`, four-second image
-slots, one paragraph per visual scene or a name-origin title for this route.
-Name-origin narration alone retains its category template/checker.
+migration. Narration organizes ideas; visual cuts follow meaning and reading comfort.
+A map can span several paragraphs with evolving camera, dates, regions and routes.
+Use a new shot for a useful change of place, period, evidence or idea. Do not
+require a carousel deck or impose image timers on video production.
+For name-origin narration only, read
+`.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md` and run
+`node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <category>`.
+Other profiles do not run this category checker.
 
 Require the genuine text-approval record, approved recording, matching alignment,
 filled plan, relative asset bundle and source/licence register. Review the brief,
 message and myth judgments including the new visual meaning. An explanatory
 subject may have no myth. Do not fabricate passing verdicts, sources or registration.
 The scene renderer checks the text marker/hashes; it does not itself certify these
-editorial audits or compute a publication-ready licence decision.
+editorial audits or infer licensing compatibility. Final delivery checks explicit,
+version-bound review records rather than fabricating those judgments.
 
 For a new prepared package, run `ethni_scene_pipeline.py prepare` with its plan,
 new named lock and private proof output. Inspect the cue preview index at phone
@@ -36,18 +42,28 @@ Do not regenerate voice, rewrite the plan or replace a mismatching lock to force
 success. Report the exact changed input or missing decision. Routine authorized
 technical fixes do not require reopening the whole narrative discussion.
 
-Return the MP4 and execution report, inspect transitions/captions/credits and listen
-when audio playback is available. Distinguish actual listening from detecting an
-audio stream. V1 always writes watermarked `_epreuves`; do not run the legacy
-ready-status, clean-master delivery or ledger-publication steps for a scene proof.
-An unregistered thematic proof may stay in the workshop. Nothing is published or
-scheduled by this skill. A clean publication-master path remains a separate gap.
+Return the proof and execution report. Complete its generated `release-review.json`
+from real evidence and existing operator decisions. Review the composition at
+320–430px, transitions, captions, credits, actual listening, historical meaning,
+message/myth, voice rights, each asset and output licensing compatibility. An
+excerpt must be explicitly approved as an excerpt, including its closing.
+Never mark a check passed simply because the file exists or a render succeeded.
 
-### Legacy deck route below
+When the exact proof is accepted and the checks pass, run `finalize` with that
+review and a fresh private `video/<version>` destination. It verifies the sealed
+inputs and proof, removes only the proof badge, checks the full encode, and delivers
+`video.mp4`, `captions.srt`, `CREDITS.md`, a mobile preview and `delivery.json`.
+Use `social/harness/SCENE-RELEASE.md` for the command and library handoff. Reuse
+already granted approvals; do not ask again for unchanged speech or visuals.
+Missing rights or editorial decisions are reported together; retain the proof
+while they are unresolved. Do not publish or schedule automatically.
 
-The remaining deck-specific commands apply to carousels and the legacy montage.
-Shared text approval, source identity/licensing and editorial review remain relevant
-to both routes, but the legacy export/status mechanics do not promote scene proofs.
+## Independent carousel route
+
+Everything below governs carousel production. Video production uses the scene
+workflow above, including its review and delivery gates. Do not run the legacy
+image-deck montage for a new video. Existing old exports remain reproducible with
+their archived renderer version; they do not define current production rules.
 
 Dernière étape de la chaîne. **Rien ne vient après.** La publication est un acte
 humain : l'opérateur poste, puis renseigne la date et les réseaux dans la section
@@ -69,17 +85,6 @@ validation avant de continuer. Cette porte est la seule exception à « tu rends
 toujours » ci-dessous : elle protège un coût réel (la voix se paie en crédits)
 et une lecture réelle (personne ne devrait découvrir un script en le voyant
 monté).
-
-## Le gabarit d'un reel, avant tout rendu de reel
-
-Décidé le 2026-09-21 : la narration d'un reel suit le gabarit de sa catégorie
-(`.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md`). Avant de
-rendre un reel, lance
-`node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <typologie>`,
-la `typologie` étant celle du carnet de production. Un écart n'empêche pas l'épreuve
-— tu rends toujours — mais le reel ne passe pas en 🟢, et tu dis l'écart en clair.
-`structure` a déjà lancé ce contrôle : le relancer ici rattrape une narration
-réécrite après la validation.
 
 ## Tu rends toujours
 
@@ -190,19 +195,6 @@ le moteur recrée en silence un dossier sans `post.md` — mesuré le 2026-09-12
 lancer le moteur. Si `--where` ne connaît pas le post, il n'a pas été inscrit :
 arrête-toi et renvoie à la fin de `structure`.
 
-**La vidéo** reste rendue dans l'atelier (`<Sujet>/video/`, par
-`ethni_montage.py`), puis se livre par le registre, jamais par une copie à la
-main. Pour un montage qui franchit les portes :
-
-```
-node social/tools/library/register-post.mjs --id <id> \
-  --video <fichier>.mp4=<Sujet>/video/<fichier>.mp4 --write
-node <00-Index>/sync-deliverables.mjs --write
-```
-
-`sync-deliverables.mjs` copie ce que `renderedFrom` nomme dans le `video/` du
-post, et le recopie à chaque nouveau rendu. Une épreuve ne s'inscrit pas.
-
 Le bac d'un post se déduit de son `status` dans le registre, jamais de son
 dossier. Ne déplace jamais un dossier à la main pour changer son bac.
 
@@ -222,117 +214,11 @@ cd social/harness
 ./venv/bin/python test_ethni_tokens.py          # la porte anti-littéral
 ./venv/bin/python test_ethni_compose.py         # le contrat de composition
 ./venv/bin/python test_corpus_compose.py        # les mêmes règles sur tout le corpus
-./venv/bin/python test_gabarit_video.py         # le contrat de §9 bis
 ```
 
 **`ethni_carrousel2.py` refuse d'écrire dans un dossier-réseau (nommé d'après
 la colonne « Reçoit » de §1 bis) qui porte déjà des rendus** et bascule le lot en épreuve. Deux jeux de rendus côte à côte sont
 indiscernables dans un sélecteur de fichiers. `--remplacer` lève le refus.
-
-**La vidéo se rend par `ethni_montage.py`**, pas par `ethni_render.py` :
-
-```
-node social/tools/migrate-scenes/migrate-scenes.mjs <Sujet>
-cd social/harness
-./venv/bin/python ethni_montage.py <Sujet>              # le montage
-./venv/bin/python ethni_montage.py <Sujet> --controle   # mouvement réduit
-```
-
-**La passe audio d'abord, et elle doit rendre la main.**
-
-```
-./venv/bin/python ethni_audio.py <Sujet>     # pauses, légendes, repères de scène
-./venv/bin/python ethni_montage.py <Sujet>   # seulement après
-```
-
-Tout ce qui suit est calé sur `work/aligned-words.json`. Lancé pendant que la
-passe écrit, le montage lit l'alignement de la version précédente et rend des
-durées de scène d'une version avec les légendes d'une autre — mesuré une fois :
-19 s de carte de clôture sur 8,6 s de voix, sans que rien ne se plaigne. **Le
-montage refuse désormais de partir** si les lettres de l'alignement ne
-reconstituent pas le script, et il nomme le signe où ça diverge. Ce refus est
-bloquant, pas une remarque : un alignement périmé ne dégrade pas le montage, il
-l'invente.
-
-Les deux variantes d'un même sujet se ressemblent trop pour qu'on les distingue à
-l'œil dans `work/` : seul le dernier bloc change, donc les débuts de scène sont
-presque identiques et c'est la **fin** de la narration qui diffère.
-
-**Une scène est un paragraphe de narration, et sa durée est mesurée.**
-`ethni_audio.py` écrit `work/scene-starts.json`, un point par bloc séparé d'une
-ligne vide ; `ethni_montage.py` le lit. Il ne répartit plus les légendes à parts
-égales — sur Libreville ce partage affichait la carte de clôture à 44,10 s quand
-sa première phrase se dit à 50,88 s. Si le nombre de paragraphes ne correspond
-pas au deck, le montage le **dit** et retombe sur l'ancien calcul, plutôt que de
-décaler toutes les scènes en silence. Relance la passe audio après toute édition
-du deck ou du script.
-
-Le contrôle en mouvement réduit est la version dont on juge une composition.
-
-### La fin d'un montage
-
-**La voix finit où l'image finit.** Le dernier paragraphe de narration dit ce que
-dit la clôture — jamais une adresse seule. Le montage le contrôle contre les mots de
-la carte de clôture elle-même et le remarque sans bloquer. Un reel sans carte de
-clôture (dont la dernière carte n'est pas une `bascule`) n'est contrôlé contre rien.
-
-**La clôture parlée est courte.** Pour un reel, c'est la clôture unique de §7 ter
-(« Le reel a un couple unique »), mot pour mot : le titre puis le corps de la carte,
-que la voix dit tous les deux. Elle n'a ni ligne de vision ni compte chiffré, et
-n'est plus un renversement du type du sujet. Mesuré sur l'ancienne clôture : 58 mots
-dictés donnaient 21,4 s de carte fixe, 23 mots en donnaient 7 ; la clôture unique
-(24 mots) est estimée à 7 s, à mesurer sur le premier reel rendu.
-
-**La carte de fin entre sur la phrase de sortie**, jamais avant, et joue une fois
-avant de tenir sa dernière image. Le montage l'annonce dans son journal avec la
-phrase sur laquelle elle entre : lis cette ligne, c'est elle qui dit si le repère
-est juste. Il n'y a plus de ligne de vision à retrouver dans la narration — ni sur la
-clôture unique, ni sur un reel sans clôture : la carte attend la fin de la dernière
-légende, et ne joue jamais par-dessus la dernière phrase parlée.
-
-### La voix
-
-La paire voix/réglages d'un sujet est dans son `SOURCES.md` et **se copie, ne
-s'invente pas**. Deux choses s'apprennent à la prise :
-
-- **Un bloc court isolé se lit environ 40 % plus lentement qu'un long bloc
-  continu.** Même voix, mêmes réglages : le corps de Libreville sort à 3,96 mots
-  par seconde et une clôture de 23 mots à 2,25. Une clôture regénérée seule
-  demande donc `speech_rate` autour de **35** pour rejoindre le rythme du corps.
-- **`pauses` dans `production.json` fixe les silences minimaux** que la passe audio
-  complète (virgule, phrase, paragraphe, question, accroche — §9 bis). Un sujet choisi à
-  l'écoute sur un rythme resserré les baisse ici, sinon la passe les rallonge.
-- **`tempo` dans `production.json` étire la prise** : plus il est bas, plus le
-  film est lent _et_ plus la voix souffre. **0,85 est le plancher** — en dessous,
-  un humain doit écouter avant publication. Libreville était à 0,79 et y est
-  remontée.
-
-**Refaire une prise ne se fait que sur le bloc qui change.** Le crochet est
-`work/tts-corrected.wav`, que la passe audio préfère à `tts-original.wav` : on y
-raccorde le corps approuvé, coupé au milieu du silence qui précède le bloc refait,
-et la nouvelle queue. Le texte et la voix changent **ensemble**, sinon les
-légendes se calent sur des mots que la voix ne dit pas.
-
-La transcription est mise en cache dans `work/raw-whisper.json` et **porte
-l'empreinte de la prise** qu'elle décrit. Sans clé, elle a déjà rendu les mots de
-l'ancienne prise à la nouvelle.
-
-**Un montage rendu par `ethni_montage.py` est conforme à §9 bis**, et se
-présente comme tel. `ethni_render.py` survit pour les montages de l'ancien
-gabarit, passe par `ethni_compose_v1.py` et lit `scenes.json`, un schéma distinct
-de §10 — une vidéo qu'il produit n'est **pas** conforme, et ne se présente pas
-comme telle. Ne le lance pas pour un deck migré.
-
-Ce qui reste au gabarit vidéo : **les animations**. Le mock ne fixe que les
-positions, et la cadence n'a aucun entrant, donc le montage et son contrôle
-sortent identiques. C'est cohérent et ce n'est pas un défaut à signaler comme
-tel. Détail : `docs/design/gabarits-social/notes/_gabarit-video-2026-09-11.md` et
-`docs/design/gabarits-social/notes/_video-fin-2026-09-11.md`.
-
-**Les sous-titres se coupent sur le souffle, jamais tous les N mots.**
-`ethni_soustitre.segmenter()` travaille sur le texte de narration **avant**
-l'alignement ; l'aligneur n'est interrogé que sur le _quand_. Couper les mots
-alignés produit « Congo portaient le ».
 
 **La porte 2 bloque sur l'absence de contrôle, pas sur le vocabulaire.** Elle
 refuse une carte sans `image.identite`, et une carte dont personne n'a consigné
@@ -350,8 +236,8 @@ en épreuve.
 
 ## Pour finir
 
-Si les cinq portes sont franchies, le post passe en 🟢 par le registre, pas par
-son en-tête :
+For a carousel, when all five gates pass, set its ready status through the
+registry rather than editing the generated header:
 
 ```
 node social/tools/library/register-post.mjs --id <id> --status pret --write

@@ -4,7 +4,7 @@ For preparation, reusable storyboards and execution by another session, see the
 [production guide](SCENE-PRODUCTION.md) and [feature catalogue](SCENE-CATALOGUE.md).
 This document remains the detailed field contract.
 
-An opt-in extension of `ethni_montage.py`, for narrated videos assembled from
+The default workflow for new videos, also accessible through `ethni_montage.py`, for narrated videos assembled from
 maps, moving photographs, text and comparisons. Carousels and the default video
 path keep their existing behaviour. The original `--map-proof` POC also remains
 available. This engine uses Pillow, the existing typography/caption modules and
@@ -68,11 +68,11 @@ relative to that folder and cannot escape it, including through symlinks.
 folder. Resolve the library's registered location before setting it; do not
 move a post or change its status to aim a render.
 
-All v1 scene exports are visibly **proofs**. An approved narration does not
+Direct scene exports are visibly **proofs**. The pipeline also provides reviewed
+clean delivery through [finalize](SCENE-RELEASE.md). An approved narration does not
 approve newly drawn historical polygons, a new scene sequence or an image's
-interpretation. Rendering does not set any publication status. A complete final
-workflow still needs editorial review, compatible output licensing, listening,
-visual approval and the existing publication controls. The approved outro is
+interpretation. Rendering does not set any publication status. Finalization requires editorial review, compatible output licensing, listening
+and visual approval bound to the exact proof; library delivery uses the existing registry. The approved outro is
 available in the legacy engine but is not automatically appended to v1 excerpts.
 
 ## Input contract
@@ -97,8 +97,8 @@ independently maintained schema with different rules. Unknown fields fail.
 `[[startSeconds,endSeconds], ...]`, and zero-based `paragraphs`. Hash the actual
 files, never copy a digest from prose. The source directory must contain
 `narration.fr.txt`, `post.md`, `work/narration.wav` and `work/aligned-words.json`.
-Existing `cards.json` and `cartes.json`, if present, are included in the stale
-approval check. A thematic video need not fabricate a carousel deck.
+Existing `cards.json` and `cartes.json` are independent carousel inputs and do not
+invalidate approval of unchanged video narration. A thematic video need not fabricate a carousel deck.
 
 Cuts preserve whole approved paragraphs and never split a word or exceed the
 recording. Scene times refer to the resulting excerpt, not the original audio.

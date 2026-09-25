@@ -102,3 +102,5 @@ judge whether the argument is fair, whether a study supports a causal claim,
 or whether the closing actually answers the question. Those remain editorial
 review tasks. The registered publication workflow and website routes remain
 separate; this video extension does not create a generic dossier entity type.
+
+For reviewed clean delivery, follow `social/harness/SCENE-RELEASE.md`. Proof-only restrictions do not prevent finalization after the recorded checks pass.
