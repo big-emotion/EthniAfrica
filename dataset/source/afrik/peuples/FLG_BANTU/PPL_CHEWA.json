@@ -14,7 +14,7 @@
         "Mang'anja (sous-groupe du sud du Malawi)"
       ],
       "originOfExonyms": "Nyanja signifie langue/peuple du lac (lac Malawi). Ce terme est utilisé en Zambie où Chewa est parlé par d'autres groupes (Ngoni, Kunda), rendant un nom plus neutre préférable. Mang'anja désigne un sous-groupe Chewa du bas Shire, au Malawi.",
-      "whyProblematic": "En 1968, le président Hastings Kamuzu Banda a renommé officiellement la langue Chinyanja en Chichewa pour l'associer au peuple Chewa et promouvoir l'unité nationale. Cette décision politisée a effacé la diversité linguistique et provoqué des tensions avec les locuteurs Tumbuka.",
+      "whyProblematic": "En 1968, le congrès du Malawi Congress Party, le parti du président Hastings Kamuzu Banda, a recommandé de nommer la langue Chichewa plutôt que Chinyanja, d'en faire la langue nationale et de réserver les autres langues du Malawi à la vie privée. Le Parlement a adopté cette recommandation. Selon Posner (2004), qui s'appuie sur Vail et White et sur Kishindo, le régime de Banda a discriminé des communautés non chewa, les Tumbuka en particulier, et l'a fait par des mesures visant à imposer la langue chewa.",
       "contemporaryUsage": "Chewa et Achewa sont les termes courants. Nyanja reste utilisé en Zambie et dans les contextes linguistiques. Chichewa désigne la langue au Malawi.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantous du Centre-Est africain (groupe Maravi)",
@@ -48,7 +48,7 @@
       "majorHistoricalEvents": "Fondation du premier royaume Chewa (vers 1480). Unification de l'état Maravi (XVIIe siècle). Invasions Ngoni (XIXe siècle). Colonisation britannique du Nyassaland (1891). Indépendance du Malawi (1964). Rebaptisation de la langue par Banda (1968)."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Société matrilinéaire. Le village est dirigé par un chef (Mfumu), poste accessible à tout villageois de bonne réputation. Les chefs de village sont subordonnés à des chefs régionaux (Mwini Dziko), eux-mêmes subordonnés aux Chefs Suprêmes (Paramount Chiefs). Le Chef Suprême des Chewa réside à Chipata (Zambie).",
+      "traditionalPoliticalSystem": "Société matrilinéaire. Le village est dirigé par un chef (Mfumu), poste accessible à tout villageois de bonne réputation. Les chefs de village sont subordonnés à des chefs régionaux (Mwini Dziko), eux-mêmes subordonnés aux Chefs Suprêmes (Paramount Chiefs). Le chef suprême des Chewa, le Kalonga Gawa Undi, est établi en province orientale de Zambie.",
       "clanOrganization": "Deux grands clans: Phiri (aristocratie et royauté) et Banda (guérisseurs et mystiques). La descendance et l'héritage foncier passent par la lignée maternelle (bele, groupe de descendance du même sein).",
       "ageClassSystems": "Les hommes initiés dans la société Nyau forment des groupes rituels structurés. L'initiation des jeunes hommes et des jeunes femmes à l'âge adulte est encadrée par la société Nyau.",
       "roleOfLineages": "La Mbumba (famille de dépendants, enfants de la même mère) constitue l'unité familiale élargie. Le Nkhoswe (frère aîné de la mère) est le gardien de la lignée et le mentor des neveux. Les terres et revenus agricoles appartiennent à la femme.",
@@ -73,7 +73,7 @@
     },
     "historicalRole": {
       "kingdomsOrChiefdoms": "Empire Maravi (XVe-XIXe siècle), fondé par le clan Phiri, avec le Chef Suprême Kalonga comme souverain suprême. Autres chefs suprêmes: Undi (dans l'actuel Mozambique-Zambie), Lundu (bas Shire). L'empire contrôlait le commerce de l'ivoire et des esclaves entre l'intérieur et la côte mozambicaine.",
-      "relationsWithNeighbors": "Relations commerciales avec les Swahilis de la côte mozambicaine. Tensions et alliances avec les Yao (qui pratiquaient aussi le commerce d'esclaves). Coexistence pacifique traditionnelle avec Tumbuka et Nsenga.",
+      "relationsWithNeighbors": "Relations commerciales avec les Swahilis de la côte mozambicaine. Tensions et alliances avec les Yao (qui pratiquaient aussi le commerce d'esclaves). Les relations avec les Tumbuka varient selon le pays et l'époque. Selon Posner (2004), Chewa et Tumbuka de Zambie se voient comme des alliés politiques et votent en majorité pour les mêmes partis depuis l'indépendance, alors qu'au Malawi le scrutin de 1994 s'est partagé presque exactement selon cette ligne : le Centre chewa a voté pour le parti de Banda, le Nord tumbuka pour l'AFORD.",
       "conflictsOrAlliances": "Invasions Ngoni au XIXe siècle (origine Natal/Zulu) qui ont fragmenté l'espace Chewa au nord du Malawi. Commerce d'esclaves historique avec les Arabes, Swahilis et Yao. Résistance à la colonisation britannique.",
       "diaspora": "Présence Chewa en Tanzanie et Zimbabwe. La diaspora se concentre principalement dans les pays voisins. La langue Nyanja/Chichewa fonctionne comme vehiculaire dépassant le groupe ethnique Chewa strict."
     },
@@ -84,7 +84,8 @@
       "distributionByCountry": [
         {
           "country": "MWI",
-          "population": 7000000
+          "population": 7000000,
+          "notes": "Le recensement malawite de 2018 dénombre 6 020 945 personnes déclarées Chewa, soit 34,4 % de la population."
         },
         {
           "country": "ZMB",
@@ -120,6 +121,21 @@
         "title": "Deutsche Welle, The Nyau cult",
         "url": "https://www.dw.com/en/the-nyau-cult-unmasking-one-of-africas-secret-societies/a-38463791",
         "tier": "referenced"
+      },
+      {
+        "title": "Posner (2004), The Political Salience of Cultural Difference: Why Chewas and Tumbukas Are Allies in Zambia and Adversaries in Malawi",
+        "url": "https://web.mit.edu/posner/www/papers/political_salience.pdf",
+        "tier": "referenced"
+      },
+      {
+        "title": "UNICEF (2016), Country Review Malawi: The impact of language policy",
+        "url": "https://www.unicef.org/esa/sites/unicef.org.esa/files/2018-09/UNICEF-2016-Language-and-Learning-Malawi.pdf",
+        "tier": "referenced"
+      },
+      {
+        "title": "Malawi National Statistical Office (2018), Population and Housing Census, Main Report",
+        "url": "https://malawi.unfpa.org/sites/default/files/resource-pdf/2018%20Malawi%20Population%20and%20Housing%20Census%20Main%20Report%20(1).pdf",
+        "tier": "official"
       }
     ]
   },
