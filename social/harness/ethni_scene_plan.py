@@ -15,7 +15,7 @@ PROFILES = {
 }
 STATUS = {"documented": "Documenté", "estimate": "Estimation", "hypothesis": "Hypothèse",
           "illustration": "Illustration", "editorial": "Position éditoriale"}
-COLOURS = ("gold", "white", "night-ink-2", "teal", "perv")
+COLOURS = ("gold", "white", "night-ink-2", "teal", "perv", "sea")
 
 
 def require(condition, message):
@@ -110,7 +110,7 @@ def validate_map(value, duration, assets, sources):
         for v in bounds: number(v, "camera.bounds")
         Camera(tuple(bounds), (0, 0, 800, 800))
     features = value.get("features", [])
-    require(isinstance(features, list) and len(features) <= 12, "map supports at most twelve authored features")
+    require(isinstance(features, list) and len(features) <= 24, "map supports at most twenty-four authored features")
     for feature in features:
         keys(feature, "kind point points label at until colour label_colour evidence meaning offset flag_stripes geometry_note fill_opacity draw_seconds line_style line_width role fade_seconds annotation code unlabelled value flag_orientation", "map feature")
         if "unlabelled" in feature:

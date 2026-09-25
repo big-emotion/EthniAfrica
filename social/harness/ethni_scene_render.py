@@ -14,6 +14,57 @@ import ethni_scene_fullbleed as fullbleed
 
 
 SPEAKERS_RADIUS, SPEAKERS_REFERENCE = 80, 16_000_000
+RIVER_FLOW_SPEED = 70  # px per second, downstream
+
+
+def river_path(points, amplitude=5.0, wavelength=110.0):
+    """A bending course through the given points: a Catmull-Rom curve, then a gentle deterministic meander.
+
+    A river drawn as a polyline through towns has right-angled corners that no river has. The curve passes
+    through every point; the meander fades to nothing at both ends, so a tributary still meets its river
+    exactly where the author put the junction."""
+    pts = [(float(x), float(y)) for x, y in points]
+    if len(pts) < 2:
+        return pts
+    padded = [pts[0]]+pts+[pts[-1]]
+    curve = [pts[0]]
+    for i in range(1, len(padded)-2):
+        p0, p1, p2, p3 = padded[i-1:i+3]
+        steps = max(6, int(math.dist(p1, p2)/8))
+        for k in range(1, steps+1):
+            t = k/steps
+            curve.append(tuple(0.5*(2*b+(-a+c)*t+(2*a-5*b+4*c-d)*t*t+(-a+3*b-3*c+d)*t**3)
+                               for a, b, c, d in zip(p0, p1, p2, p3)))
+    lengths = [0.0]
+    for a, b in zip(curve, curve[1:]):
+        lengths.append(lengths[-1]+math.dist(a, b))
+    total = lengths[-1]
+    phase = (pts[0][0]*.37+pts[0][1]*.21) % (2*math.pi)  # a river's own, so neighbours do not wave in step
+    out = []
+    for j, (x, y) in enumerate(curve):
+        (px, py), (nx, ny) = curve[max(0, j-1)], curve[min(len(curve)-1, j+1)]
+        norm = math.hypot(nx-px, ny-py) or 1.0
+        fade = min(1.0, lengths[j]/60, (total-lengths[j])/60)
+        offset = amplitude*fade*math.sin(2*math.pi*lengths[j]/wavelength+phase)
+        out.append((x-(ny-py)/norm*offset, y+(nx-px)/norm*offset))
+    out[0], out[-1] = pts[0], pts[-1]
+    return out
+
+
+def flowing_line(draw, points, colour, width, phase, dash=26, gap=64):
+    """Short lighter strokes travelling along a course; a pure function of `phase`, so any frame renders alone."""
+    period = dash+gap
+    travelled = 0.0
+    for a, b in zip(points, points[1:]):
+        length = math.dist(a, b)
+        step = 0.0
+        while step < length:
+            end = min(length, step+4)
+            if ((travelled+step-phase) % period) < dash:
+                draw.line([tuple(v+(u-v)*step/length for v, u in zip(a, b)),
+                           tuple(v+(u-v)*end/length for v, u in zip(a, b))], fill=colour, width=width)
+            step = end
+        travelled += length
 
 
 def scene_map(scene):
@@ -191,7 +242,7 @@ class SceneRenderer:
                 continue
             reveal = 1 if self.reduced_motion or "fade_seconds" not in feature else smooth((local-feature["at"])/feature["fade_seconds"])
             below = canvas.copy() if reveal < 1 else None
-            colour = p[feature.get("colour", "gold")]
+            colour = p.get(feature.get("colour", "gold")) or p["teal"]  # "sea" only exists on the light map palette
             if feature.get("role") == "context":
                 colour = "#%02x%02x%02x" % mix(p["ground"], colour, .55)
             kind = feature["kind"]
@@ -255,10 +306,18 @@ class SceneRenderer:
             else:
                 draw_seconds = feature.get("draw_seconds", feature["until"]-feature["at"])
                 progress = 1 if self.reduced_motion else min(1, (local-feature["at"])/draw_seconds)
-                points = partial_path([camera.project(point) for point in feature["points"]], progress)
+                course = [camera.project(point) for point in feature["points"]]
+                if feature["meaning"] == "river":
+                    course = river_path(course)
+                points = partial_path(course, progress)
                 if len(points) > 1:
                     width = feature.get("line_width", 5)
-                    if feature.get("line_style", "solid") == "dashed":
+                    if feature["meaning"] == "river":
+                        # A watercourse, not a border: a continuous line with a lighter current moving downstream.
+                        draw.line(points, fill=colour, width=max(3, width-1), joint="curve")
+                        phase = 0 if self.reduced_motion else local*RIVER_FLOW_SPEED
+                        flowing_line(draw, points, mix(colour, "#ffffff", .62), max(2, width-3), phase)
+                    elif feature.get("line_style", "solid") == "dashed":
                         dashed_line(draw, points, colour, width)
                     else:
                         draw.line(points, fill=colour, width=width, joint="curve")
@@ -279,7 +338,7 @@ class SceneRenderer:
                 require(not any(box[0] < b[2]+8 and box[2]+8 > b[0] and box[1] < b[3]+8 and box[3]+8 > b[1]
                                 for b in label_boxes), f"Map label overlap: {feature['label']}")
                 label_boxes.append(box)
-                ink = p[feature.get("label_colour", feature.get("colour", "gold"))]
+                ink = p.get(feature.get("label_colour", feature.get("colour", "gold"))) or p["teal"]
                 if feature.get("role") == "context": ink = mix(p["ground"], ink, .65)
                 if annotated:
                     edge = (max(box[0], min(x, box[2])), max(box[1], min(y, box[3])))
@@ -354,16 +413,34 @@ class SceneRenderer:
                                "river": "Cours d'eau (tracé schématique)"}.get(feature.get("meaning"))
                     role = "Voisinage : " if feature.get("role") == "context" else ""
                     tail = f" · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else "")
-                    entries.append((role+feature["label"], tail, feature.get("geometry_note")))
+                    entries.append((role+feature["label"], tail, feature.get("geometry_note"), e["period"],
+                                    STATUS[e["status"]] + (f" · {meaning}" if meaning else "")))
+            noted = set()
             if self.plan.get("layout") == "fullbleed":
-                # Features that share period and status share one line, so a dozen countries fit the foot of the frame.
+                # Features that share a status share one line, each keeping its own period when the periods differ,
+                # and a geometry note is printed once: a dozen features must fit the foot of the frame.
                 grouped = {}
-                for label, tail, note in entries:
-                    grouped.setdefault((tail, note), []).append(label)
-                entries = [(", ".join(labels), tail, note) for (tail, note), labels in grouped.items()]
+                for label, tail, note, period, status in entries:
+                    grouped.setdefault(status, []).append((label, period, note))
+                entries = []
+                notes = []
+                for status, items in grouped.items():
+                    periods = {period for _, period, _ in items}
+                    if len(periods) == 1:
+                        text = ", ".join(dict.fromkeys(label for label, _, _ in items))+f" · {periods.pop()} · {status}"
+                    else:
+                        text = " ; ".join(f"{label} · {period}" for label, period, _ in items)+f" · {status}"
+                    entries.append((text, "", None))
+                    notes += [note for _, _, note in items if note and note not in notes]
+                if notes:
+                    entries.append((" · ".join(notes), "", None))
+            else:
+                entries = [(label, tail, note) for label, tail, note, _, _ in entries]
             for label, tail, note in entries:
                 legend.append(label+tail)
-                if note: legend.append(note)
+                if note and note not in noted:
+                    noted.add(note)
+                    legend.append(note)
             if any(f["kind"] == "speakers" and f["at"] <= local < f["until"] for f in geographic.get("features", [])):
                 legend.append("Surface des cercles proportionnelle à l'effectif indiqué")
         return legend

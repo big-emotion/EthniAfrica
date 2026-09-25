@@ -172,6 +172,71 @@ class FullbleedExtensionTests(unittest.TestCase):
         renderer = SceneRenderer(plan, self.root, [], proof=False)
         self.assertTrue(any("Cours d'eau" in line for line in renderer.legend(plan["scenes"][0], 1)))
 
+    def river_plan(self, **extra):
+        river = {"kind": "route", "meaning": "river", "label": "Niger", "colour": "sea", "unlabelled": True,
+                 "points": [[-10, 5], [0, 12], [5, 15]], "draw_seconds": .04}
+        river.update(extra)
+        plan = self.plan_with(river)
+        plan["scenes"][0]["map"]["layer"] = "physical"
+        return plan
+
+    def test_a_river_is_a_solid_line_in_the_sea_colour_with_a_current_that_flows(self):
+        plan = self.river_plan()
+        validate_plan(plan, self.root, 10)
+        renderer = SceneRenderer(plan, self.root, [], proof=False)
+        early, later = renderer.render(1.0), renderer.render(1.5)
+        self.assertNotEqual(early.tobytes(), later.tobytes(), "the current moves along the course")
+        still = SceneRenderer(plan, self.root, [], reduced_motion=True, proof=False)
+        self.assertEqual(still.render(1.0).tobytes(), still.render(1.5).tobytes())
+        # A dashed line would leave gaps of bare map along the course; a river is continuous.
+        from ethni_map import Camera
+        from ethni_scene_fullbleed import LIGHT
+        with_river = renderer._map(plan["scenes"][0], 1.0, (0, 0, 1080, 1920), LIGHT)
+        without = copy.deepcopy(plan)
+        without["scenes"][0]["map"]["features"] = []
+        bare = SceneRenderer(without, self.root, [], proof=False)._map(without["scenes"][0], 1.0, (0, 0, 1080, 1920), LIGHT)
+        camera = Camera(tuple(plan["scenes"][0]["map"]["camera"][0]["bounds"]), (0, 0, 1080, 1920))
+        from ethni_scene_render import river_path
+        course = river_path([camera.project(point) for point in plan["scenes"][0]["map"]["features"][0]["points"]])
+        samples = course[3:-3:3]
+        painted = sum(with_river.getpixel((round(x), round(y))) != bare.getpixel((round(x), round(y))) for x, y in samples)
+        self.assertGreaterEqual(painted, len(samples)*.97)
+
+    def test_a_river_bends_and_meanders_instead_of_turning_at_right_angles(self):
+        import math
+        from ethni_scene_render import river_path
+        corner = [(0.0, 0.0), (300.0, 0.0), (300.0, 300.0), (600.0, 300.0)]
+        path = river_path(corner)
+        self.assertEqual(path[0], corner[0])
+        self.assertEqual(path[-1], corner[-1])
+
+        def turn(a, b, c):
+            first = math.atan2(b[1]-a[1], b[0]-a[0])
+            second = math.atan2(c[1]-b[1], c[0]-b[0])
+            return abs((second-first+math.pi) % (2*math.pi)-math.pi)
+
+        sharpest = max(turn(a, b, c) for a, b, c in zip(path, path[1:], path[2:]))
+        self.assertLess(math.degrees(sharpest), 40, "no right-angled corner remains")
+        # A meander: the middle of a straight stretch wanders a few pixels off the straight line.
+        straight = river_path([(0.0, 0.0), (800.0, 0.0)])
+        self.assertGreater(max(abs(y) for _, y in straight), 2)
+        self.assertEqual(straight[-1], (800.0, 0.0))
+
+    def test_the_sea_colour_is_a_feature_colour(self):
+        validate_plan(self.river_plan(colour="sea"), self.root, 10)
+        with self.assertRaisesRegex(ValueError, "colour"):
+            validate_plan(self.river_plan(colour="neon"), self.root, 10)
+
+    def test_a_busy_map_may_carry_twenty_four_features_but_not_twenty_five(self):
+        marks = [{"kind": "point", "label": f"P{i}", "point": [-9+i, 5], "colour": "gold", "at": 0, "until": 5,
+                  "evidence": self.plan["scenes"][0]["evidence"]} for i in range(25)]
+        plan = self.plan_with({"kind": "point", "label": "x", "point": [0, 0], "colour": "gold"})
+        plan["scenes"][0]["map"]["features"] = marks[:24]
+        validate_plan(plan, self.root, 10)
+        plan["scenes"][0]["map"]["features"] = marks
+        with self.assertRaisesRegex(ValueError, "twenty-four"):
+            validate_plan(plan, self.root, 10)
+
     def test_an_unlabelled_country_keeps_its_legend_line_but_draws_no_text(self):
         base = {"kind": "country", "code": "AAA", "label": "Land", "colour": "gold"}
         labelled, quiet = self.plan_with(base), self.plan_with(dict(base, unlabelled=True))
