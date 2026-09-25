@@ -112,7 +112,9 @@ def validate_map(value, duration, assets, sources):
     features = value.get("features", [])
     require(isinstance(features, list) and len(features) <= 24, "map supports at most twenty-four authored features")
     for feature in features:
-        keys(feature, "kind point points label at until colour label_colour evidence meaning offset flag_stripes geometry_note fill_opacity draw_seconds line_style line_width role fade_seconds annotation code unlabelled value flag_orientation", "map feature")
+        keys(feature, "kind point points label at until colour label_colour evidence meaning offset flag_stripes geometry_note fill_opacity draw_seconds line_style line_width role fade_seconds annotation code unlabelled value flag_orientation flow", "map feature")
+        if "flow" in feature:
+            require(type(feature["flow"]) is bool, "feature.flow must be boolean")
         if "unlabelled" in feature:
             require(type(feature["unlabelled"]) is bool, "feature.unlabelled must be boolean")
         kind = feature.get("kind")

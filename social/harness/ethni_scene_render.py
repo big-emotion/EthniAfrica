@@ -17,7 +17,7 @@ SPEAKERS_RADIUS, SPEAKERS_REFERENCE = 80, 16_000_000
 RIVER_FLOW_SPEED = 70  # px per second, downstream
 
 
-def river_path(points, amplitude=5.0, wavelength=110.0):
+def river_path(points, amplitude=5.0, wavelength=110.0, spacing=8.0, fade=60.0):
     """A bending course through the given points: a Catmull-Rom curve, then a gentle deterministic meander.
 
     A river drawn as a polyline through towns has right-angled corners that no river has. The curve passes
@@ -30,7 +30,7 @@ def river_path(points, amplitude=5.0, wavelength=110.0):
     curve = [pts[0]]
     for i in range(1, len(padded)-2):
         p0, p1, p2, p3 = padded[i-1:i+3]
-        steps = max(6, int(math.dist(p1, p2)/8))
+        steps = max(6, int(math.dist(p1, p2)/spacing))
         for k in range(1, steps+1):
             t = k/steps
             curve.append(tuple(0.5*(2*b+(-a+c)*t+(2*a-5*b+4*c-d)*t*t+(-a+3*b-3*c+d)*t**3)
@@ -44,8 +44,8 @@ def river_path(points, amplitude=5.0, wavelength=110.0):
     for j, (x, y) in enumerate(curve):
         (px, py), (nx, ny) = curve[max(0, j-1)], curve[min(len(curve)-1, j+1)]
         norm = math.hypot(nx-px, ny-py) or 1.0
-        fade = min(1.0, lengths[j]/60, (total-lengths[j])/60)
-        offset = amplitude*fade*math.sin(2*math.pi*lengths[j]/wavelength+phase)
+        ends = min(1.0, lengths[j]/fade, (total-lengths[j])/fade)
+        offset = amplitude*ends*math.sin(2*math.pi*lengths[j]/wavelength+phase)
         out.append((x-(ny-py)/norm*offset, y+(nx-px)/norm*offset))
     out[0], out[-1] = pts[0], pts[-1]
     return out
@@ -306,17 +306,22 @@ class SceneRenderer:
             else:
                 draw_seconds = feature.get("draw_seconds", feature["until"]-feature["at"])
                 progress = 1 if self.reduced_motion else min(1, (local-feature["at"])/draw_seconds)
-                course = [camera.project(point) for point in feature["points"]]
                 if feature["meaning"] == "river":
-                    course = river_path(course)
+                    # Bent in longitude and latitude, not in pixels: the meander belongs to the map and cannot
+                    # slide along the river when the camera zooms.
+                    course = [camera.project(point) for point in
+                              river_path(feature["points"], amplitude=.05, wavelength=1.2, spacing=.08, fade=.6)]
+                else:
+                    course = [camera.project(point) for point in feature["points"]]
                 points = partial_path(course, progress)
                 if len(points) > 1:
                     width = feature.get("line_width", 5)
                     if feature["meaning"] == "river":
                         # A watercourse, not a border: a continuous line with a lighter current moving downstream.
                         draw.line(points, fill=colour, width=max(3, width-1), joint="curve")
-                        phase = 0 if self.reduced_motion else local*RIVER_FLOW_SPEED
-                        flowing_line(draw, points, mix(colour, "#ffffff", .62), max(2, width-3), phase)
+                        if feature.get("flow", True):
+                            phase = 0 if self.reduced_motion else local*RIVER_FLOW_SPEED
+                            flowing_line(draw, points, mix(colour, "#ffffff", .62), max(2, width-3), phase)
                     elif feature.get("line_style", "solid") == "dashed":
                         dashed_line(draw, points, colour, width)
                     else:
