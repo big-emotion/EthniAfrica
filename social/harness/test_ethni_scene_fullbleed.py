@@ -197,7 +197,8 @@ class FullbleedExtensionTests(unittest.TestCase):
         bare = SceneRenderer(without, self.root, [], proof=False)._map(without["scenes"][0], 1.0, (0, 0, 1080, 1920), LIGHT)
         camera = Camera(tuple(plan["scenes"][0]["map"]["camera"][0]["bounds"]), (0, 0, 1080, 1920))
         from ethni_scene_render import river_path
-        course = river_path([camera.project(point) for point in plan["scenes"][0]["map"]["features"][0]["points"]])
+        course = [camera.project(point) for point in river_path(
+            plan["scenes"][0]["map"]["features"][0]["points"], amplitude=.05, wavelength=1.2, spacing=.08, fade=.6)]
         samples = course[3:-3:3]
         painted = sum(with_river.getpixel((round(x), round(y))) != bare.getpixel((round(x), round(y))) for x, y in samples)
         self.assertGreaterEqual(painted, len(samples)*.97)
@@ -221,6 +222,22 @@ class FullbleedExtensionTests(unittest.TestCase):
         straight = river_path([(0.0, 0.0), (800.0, 0.0)])
         self.assertGreater(max(abs(y) for _, y in straight), 2)
         self.assertEqual(straight[-1], (800.0, 0.0))
+
+    def test_a_river_with_no_current_is_still_and_its_meander_belongs_to_the_map_not_the_screen(self):
+        plan = self.river_plan(flow=False, line_width=3)
+        validate_plan(plan, self.root, 10)
+        renderer = SceneRenderer(plan, self.root, [], proof=False)
+        self.assertEqual(renderer.render(1.0).tobytes(), renderer.render(1.5).tobytes(), "no current, no motion")
+        # The meander is drawn in longitude and latitude, so a camera that zooms cannot make it slide.
+        from ethni_scene_render import river_path
+        geo = [[-10, 5], [0, 12], [5, 15]]
+        first, second = river_path(geo, amplitude=.05, wavelength=1.2, spacing=.08, fade=.6), \
+            river_path(geo, amplitude=.05, wavelength=1.2, spacing=.08, fade=.6)
+        self.assertEqual(first, second)
+        self.assertEqual(first[0], (-10.0, 5.0))
+        self.assertLess(max(abs(a[0]-b[0])+abs(a[1]-b[1]) for a, b in zip(first, first[1:])), .3, "fine steps in degrees")
+        with self.assertRaisesRegex(ValueError, "flow"):
+            validate_plan(self.river_plan(flow="yes"), self.root, 10)
 
     def test_the_sea_colour_is_a_feature_colour(self):
         validate_plan(self.river_plan(colour="sea"), self.root, 10)

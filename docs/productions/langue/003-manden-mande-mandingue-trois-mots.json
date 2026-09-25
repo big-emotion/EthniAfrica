@@ -27,6 +27,30 @@
       "format": "video",
       "url": "https://www.youtube.com/shorts/vESK91smqxQ",
       "publishedAt": "2026-09-16"
+    },
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7689493406640377110",
+      "publishedAt": "2026-09-25"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/bqpj5UiwGJ8",
+      "publishedAt": "2026-09-25"
+    },
+    {
+      "network": "facebook",
+      "format": "video",
+      "url": "https://www.facebook.com/reel/1380903870695826",
+      "publishedAt": "2026-09-25"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/p/DdtxN3eKEUR/",
+      "publishedAt": "2026-09-25"
     }
   ]
 }
