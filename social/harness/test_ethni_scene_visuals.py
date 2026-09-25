@@ -1,6 +1,7 @@
 """Reusable chronology, documentary imagery and indicative geographic presence."""
 import copy
 import unittest
+from unittest.mock import patch
 
 from PIL import ImageChops
 
@@ -11,6 +12,48 @@ from ethni_scene_render import SceneRenderer
 
 class VisualExtensionTests(unittest.TestCase):
     setUp = fixtures.ScenePlanTests.setUp
+
+    def annotated_point(self):
+        feature = {"kind": "point", "point": [0, 10], "label": "Town", "at": 0, "until": 5,
+                   "offset": [40, -120], "role": "context", "annotation": "A dated context",
+                   "evidence": copy.deepcopy(self.plan["scenes"][0]["evidence"])}
+        self.plan["scenes"][0]["map"]["features"] = [feature]
+        return feature
+
+    def test_map_annotation_has_a_locator_and_credits_its_own_source(self):
+        feature = self.annotated_point()
+        self.plan["sources"]["context"] = dict(self.plan["sources"]["test"], citation="Context source")
+        feature["evidence"]["sources"] = ["context"]
+        validate_plan(self.plan, self.root, 10)
+        renderer = SceneRenderer(self.plan, self.root, [])
+        with patch.object(renderer, "paragraph", wraps=renderer.paragraph) as paint:
+            frame = renderer.render(1)
+        self.assertIn("A dated context", [call.args[1] for call in paint.call_args_list])
+        self.assertIn("Context source", " ".join(renderer.credits(self.plan["scenes"][0])))
+        self.assertEqual(frame.tobytes(), renderer.render(1).tobytes())
+        renderer.preflight()
+
+    def test_map_annotation_rejects_empty_text_and_nonpoint_marks(self):
+        feature = self.annotated_point()
+        feature["annotation"] = ""
+        with self.assertRaisesRegex(ValueError, "annotation"):
+            validate_plan(self.plan, self.root, 10)
+        feature["annotation"] = "Context"
+        feature["kind"] = "territory"
+        with self.assertRaisesRegex(ValueError, "annotation"):
+            validate_plan(self.plan, self.root, 10)
+
+    def test_map_annotation_overflow_and_collision_fail_before_export(self):
+        feature = self.annotated_point()
+        feature["annotation"] = "Too much context " * 30
+        with self.assertRaisesRegex(ValueError, "overflow"):
+            SceneRenderer(self.plan, self.root, []).preflight()
+        feature["annotation"] = "Short context"
+        second = copy.deepcopy(feature)
+        second["point"] = [-1, 10]
+        self.plan["scenes"][0]["map"]["features"].append(second)
+        with self.assertRaisesRegex(ValueError, "overlap"):
+            SceneRenderer(self.plan, self.root, []).preflight()
 
     def timeline(self):
         scene = self.plan["scenes"][0]
@@ -209,6 +252,175 @@ class VisualExtensionTests(unittest.TestCase):
             zone[field] = value
             with self.subTest(wrong_kind=field), self.assertRaises(ValueError):
                 validate_plan(self.plan, self.root, 10)
+
+    def test_progress_is_opt_in_and_stays_inside_the_safe_area(self):
+        self.plan["progress"] = True
+        validate_plan(self.plan, self.root, 10)
+        renderer = SceneRenderer(self.plan, self.root, [])
+        box = (renderer.left, 1605, renderer.right+1, 1620)
+        early = renderer.render(1).crop(box)
+        self.assertNotEqual(early.tobytes(), renderer.render(4).crop(box).tobytes())
+        self.assertEqual(early.tobytes(), renderer.render(1).crop(box).tobytes())
+        enabled = renderer.render(1)
+        self.plan["progress"] = False
+        disabled = SceneRenderer(self.plan, self.root, []).render(1)
+        del self.plan["progress"]
+        self.assertEqual(disabled.tobytes(), SceneRenderer(self.plan, self.root, []).render(1).tobytes())
+        changed = ImageChops.difference(enabled, disabled).getbbox()
+        self.assertIsNotNone(changed)
+        self.assertGreaterEqual(changed[1], 1605)
+        self.assertLessEqual(changed[3], 1620)
+        self.plan["progress"] = "yes"
+        with self.assertRaisesRegex(ValueError, "progress"):
+            validate_plan(self.plan, self.root, 10)
+
+    def test_context_is_dimmed_and_always_drawn_below_the_subject(self):
+        subject = self.zone()
+        subject.update(kind="territory", fill_opacity=.8)
+        context = dict(subject, label="Neighbour", role="context", colour="perv", offset=[18, 40])
+        scene = self.plan["scenes"][0]
+        scene["map"]["features"] = [subject, context]
+        validate_plan(self.plan, self.root, 10)
+        first = SceneRenderer(self.plan, self.root, [])._map(scene, 2)
+        scene["map"]["features"].reverse()
+        self.assertEqual(first.tobytes(), SceneRenderer(self.plan, self.root, [])._map(scene, 2).tobytes())
+        scene["map"]["features"] = [context]
+        dim = SceneRenderer(self.plan, self.root, [])._map(scene, 2)
+        context["role"] = "subject"
+        bright = SceneRenderer(self.plan, self.root, [])._map(scene, 2)
+        self.assertNotEqual(dim.getpixel((495, 345)), bright.getpixel((495, 345)))
+
+    def test_reveal_fades_in_then_holds_and_rejects_invalid_duration(self):
+        zone = self.zone()
+        zone.update(kind="territory", fade_seconds=1)
+        validate_plan(self.plan, self.root, 10)
+        scene = self.plan["scenes"][0]
+        renderer = SceneRenderer(self.plan, self.root, [])
+        before = renderer._map(scene, 0)
+        during = renderer._map(scene, .5)
+        after = renderer._map(scene, 1)
+        self.assertNotEqual(before.tobytes(), during.tobytes())
+        self.assertNotEqual(during.tobytes(), after.tobytes())
+        self.assertEqual(after.tobytes(), renderer._map(scene, 4).tobytes())
+        for value in [True, 0, 6]:
+            zone["fade_seconds"] = value
+            with self.assertRaisesRegex(ValueError, "fade_seconds"):
+                validate_plan(self.plan, self.root, 10)
+        del zone["fade_seconds"]
+        zone["role"] = "backgroundish"
+        with self.assertRaisesRegex(ValueError, "role"):
+            validate_plan(self.plan, self.root, 10)
+
+    def focused_timeline(self):
+        timeline = self.timeline()
+        timeline.update(layout="focus", overview_at=4.2,
+                        background={"asset": "map", "layer": "physical", "borders": True,
+                                    "camera": [{"at": 0, "bounds": [-20, -5, 20, 25]}]})
+        timeline["context"] = [
+            {"event_year": 1594, "lane": "regional", "label": "Region", "detail": "A regional event",
+             "at": 1.2, "evidence": dict(self.plan["scenes"][0]["evidence"], period="Sixteenth century")},
+            {"event_year": 1594, "lane": "world", "label": "France", "detail": "A familiar contemporary",
+             "at": 1.5, "evidence": dict(self.plan["scenes"][0]["evidence"], period="1589–1610")},
+        ]
+        return timeline
+
+    def test_focused_context_has_its_own_period_and_an_explicit_anchor(self):
+        timeline = self.focused_timeline()
+        validate_plan(self.plan, self.root, 10)
+        for field, value in [("event_year", 1600), ("lane", "invented"), ("at", 2), ("at", .5)]:
+            item = timeline["context"][0]
+            original = item[field]
+            item[field] = value
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                validate_plan(self.plan, self.root, 10)
+            item[field] = original
+        timeline["context"].append(copy.deepcopy(timeline["context"][0]))
+        with self.assertRaisesRegex(ValueError, "lane"):
+            validate_plan(self.plan, self.root, 10)
+
+    def test_focused_timeline_switches_context_and_preserves_random_access(self):
+        self.focused_timeline()
+        validate_plan(self.plan, self.root, 10)
+        renderer = SceneRenderer(self.plan, self.root, [])
+        before = renderer.render(.5)
+        regional = renderer.render(1.4)
+        both = renderer.render(1.9)
+        next_event = renderer.render(2.8)
+        overview = renderer.render(4.9)
+        self.assertNotEqual(before.tobytes(), regional.tobytes())
+        self.assertNotEqual(regional.tobytes(), both.tobytes())
+        self.assertNotEqual(both.crop((91, 880, 900, 1310)).tobytes(), next_event.crop((91, 880, 900, 1310)).tobytes())
+        self.assertNotEqual(next_event.tobytes(), overview.tobytes())
+        self.assertEqual(both.tobytes(), renderer.render(1.9).tobytes())
+        self.assertIn("Test fixture", " ".join(renderer.credits(self.plan["scenes"][0])))
+        renderer.preflight()
+
+    def test_focus_rejects_hidden_background_overlays_and_bad_cue_order(self):
+        for change in ("overlay", "order", "overview", "asset"):
+            self.plan = fixtures.fixture(self.root)
+            timeline = self.focused_timeline()
+            if change == "overlay": timeline["background"]["highlights"] = ["AAA"]
+            if change == "order": timeline["events"][1]["at"] = .9
+            if change == "overview": timeline["overview_at"] = 2
+            if change == "asset": timeline["background"]["asset"] = "missing"
+            with self.subTest(change=change), self.assertRaises(ValueError):
+                validate_plan(self.plan, self.root, 10)
+
+    def test_focus_checks_context_overflow_before_encoding(self):
+        self.focused_timeline()["context"][0]["detail"] = "Too much text " * 100
+        with self.assertRaisesRegex(ValueError, "overflow"):
+            SceneRenderer(self.plan, self.root, []).preflight()
+
+    def test_corner_note_replaces_context_without_painting_cards(self):
+        timeline = self.focused_timeline()
+        timeline["context_layout"] = "corner"
+        for event in timeline["events"]:
+            event["evidence"]["period"] = str(event["year"])
+        validate_plan(self.plan, self.root, 10)
+        renderer = SceneRenderer(self.plan, self.root, [], reduced_motion=True)
+        for instant, included, excluded in [(1.4, "A regional event", "A familiar contemporary"),
+                                            (1.9, "A familiar contemporary", "A regional event")]:
+            with patch.object(renderer, "paragraph", wraps=renderer.paragraph) as paint:
+                frame = renderer.render(instant)
+            strings = " ".join(call.args[1] for call in paint.call_args_list)
+            self.assertIn(included, strings)
+            self.assertNotIn(excluded, strings)
+            periods = {item["evidence"]["period"] for item in timeline["context"]}
+            period_boxes = [call.args[2] for call in paint.call_args_list if call.args[1] in periods]
+            self.assertEqual(len(period_boxes), 1)
+            self.assertLess(period_boxes[0][1], 470, "A short note must not detach its date into the map")
+            no_context = copy.deepcopy(self.plan)
+            no_context["scenes"][0]["timeline"]["context"] = []
+            empty = SceneRenderer(no_context, self.root, [], reduced_motion=True).render(instant)
+            self.assertEqual(frame.crop((91, 820, 900, 1300)).tobytes(),
+                             empty.crop((91, 820, 900, 1300)).tobytes())
+            self.assertEqual(frame.tobytes(), renderer.render(instant).tobytes())
+        with patch.object(renderer, "paragraph", wraps=renderer.paragraph) as paint:
+            renderer.render(4.9)
+        self.assertFalse(any("A familiar contemporary" in call.args[1] for call in paint.call_args_list))
+
+    def test_corner_note_rejects_ambiguous_cues_and_unknown_layout(self):
+        timeline = self.focused_timeline()
+        timeline["context_layout"] = "corner"
+        timeline["context"][1]["at"] = timeline["context"][0]["at"]
+        with self.assertRaisesRegex(ValueError, "distinct"):
+            validate_plan(self.plan, self.root, 10)
+        timeline["context_layout"] = "unknown"
+        with self.assertRaisesRegex(ValueError, "context layout"):
+            validate_plan(self.plan, self.root, 10)
+
+    def test_corner_note_and_reserved_heading_are_checked_for_overflow(self):
+        for target in ("detail", "title"):
+            self.plan = fixtures.fixture(self.root)
+            timeline = self.focused_timeline()
+            timeline["context_layout"] = "corner"
+            for event in timeline["events"]:
+                event["evidence"]["period"] = str(event["year"])
+            SceneRenderer(self.plan, self.root, []).preflight()
+            if target == "detail": timeline["context"][0]["detail"] = "Too much context " * 30
+            else: self.plan["scenes"][0]["title"] = "A heading that cannot fit beside a note"
+            with self.subTest(target=target), self.assertRaisesRegex(ValueError, "overflow"):
+                SceneRenderer(self.plan, self.root, []).preflight()
 
 
 if __name__ == "__main__":

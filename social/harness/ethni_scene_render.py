@@ -46,14 +46,14 @@ class SceneRenderer:
                 with Image.open(path) as image:
                     self.assets[key] = ImageOps.exif_transpose(image).convert("RGB")
 
-    def face(self, role):
+    def face(self, role, weight=700):
         return font(tokens.type_size(role, "reel"),
-                    "anton" if role in ("Titre de série", "Paire — terme") else "nunito", 700)
+                    "anton" if role in ("Titre de série", "Paire — terme") else "nunito", weight)
 
-    def paragraph(self, draw, value, box, role="Corps", colour=None):
+    def paragraph(self, draw, value, box, role="Corps", colour=None, weight=700):
         """Wrap by measured glyph width; never silently truncate or shrink text."""
         x, y, width, height = box
-        face = self.face(role)
+        face = self.face(role, weight)
         lines = []
         for paragraph in value.split("\n"):
             line = ""
@@ -129,10 +129,15 @@ class SceneRenderer:
                 else:
                     draw.line(points, fill=boundary_ink, width=2)
         label_boxes = []
-        for feature in cfg.get("features", []):
+        features = sorted(cfg.get("features", []), key=lambda f: f.get("role") != "context")
+        for feature in features:
             if not feature["at"] <= local < feature["until"]:
                 continue
+            reveal = 1 if self.reduced_motion or "fade_seconds" not in feature else smooth((local-feature["at"])/feature["fade_seconds"])
+            below = canvas.copy() if reveal < 1 else None
             colour = p[feature.get("colour", "gold")]
+            if feature.get("role") == "context":
+                colour = "#%02x%02x%02x" % mix(p["ground"], colour, .55)
             kind = feature["kind"]
             if kind in ("point", "presence"):
                 x, y = camera.project(feature["point"])
@@ -188,13 +193,26 @@ class SceneRenderer:
             # Off-screen features remain available as legend entries, not false clamped locations.
             dx, dy = feature.get("offset", [18, -30])
             label_width = draw.textlength(feature["label"], font=self.face("Bandeau"))
-            if 0 <= x+dx and x+dx+label_width <= self.right-x0 and 0 <= y+dy <= h-36:
-                box = (x+dx, y+dy, x+dx+label_width, y+dy+36)
+            annotated = "annotation" in feature
+            if annotated: label_width = max(label_width, 300)
+            label_height = 146 if annotated else 36
+            if 0 <= x+dx and x+dx+label_width <= self.right-x0 and 0 <= y+dy <= h-label_height:
+                box = (x+dx, y+dy, x+dx+label_width, y+dy+label_height)
                 require(not any(box[0] < b[2]+8 and box[2]+8 > b[0] and box[1] < b[3]+8 and box[3]+8 > b[1]
                                 for b in label_boxes), f"Map label overlap: {feature['label']}")
                 label_boxes.append(box)
-                self.paragraph(draw, feature["label"], (x+dx, y+dy, label_width+1, 40), "Bandeau",
-                               p[feature.get("label_colour", feature.get("colour", "gold"))])
+                ink = p[feature.get("label_colour", feature.get("colour", "gold"))]
+                if feature.get("role") == "context": ink = mix(p["ground"], ink, .65)
+                if annotated:
+                    edge = (max(box[0], min(x, box[2])), max(box[1], min(y, box[3])))
+                    draw.line(((x, y), edge), fill=ink, width=2)
+                self.paragraph(draw, feature["label"], (x+dx, y+dy, label_width+1, 40), "Bandeau", ink)
+                if annotated:
+                    self.paragraph(draw, feature["annotation"], (x+dx, y+dy+42, label_width, 104),
+                                   "Bandeau", ink, weight=400)
+            if below is not None:
+                canvas = Image.blend(below, canvas, reveal)
+                draw = ImageDraw.Draw(canvas)
         return canvas
 
     def _document(self, image, draw, scene):
@@ -218,6 +236,11 @@ class SceneRenderer:
             content = self._map(scene, local) if kind == "map" else self._image(scene, local)
             image.paste(content, self.content[:2])
         elif kind == "timeline":
+            background = scene["timeline"].get("background")
+            if background:
+                content = self._map({"map": background}, local)
+                content = Image.blend(Image.new("RGB", content.size, self.palette["ground"]), content, .6)
+                image.paste(content, self.content[:2])
             draw_timeline(self, draw, scene, local)
         elif kind == "document":
             self._document(image, draw, scene)
@@ -239,7 +262,8 @@ class SceneRenderer:
                     e = feature["evidence"]
                     meaning = {"journey": "Trajet", "migration": "Migration", "language-diffusion": "Diffusion linguistique",
                                "name-circulation": "Circulation du nom"}.get(feature.get("meaning"))
-                    legend.append(f"{feature['label']} · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else ""))
+                    role = "Voisinage : " if feature.get("role") == "context" else ""
+                    legend.append(f"{role}{feature['label']} · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else ""))
                     if feature.get("geometry_note"): legend.append(feature["geometry_note"])
         self.paragraph(draw, "\n".join(legend), (self.left, 1190, self.right-self.left, 142), "Crédit", self.palette["night-ink-2"])
         return image
@@ -248,14 +272,20 @@ class SceneRenderer:
         kind = scene["type"]
         credits = []
         asset_source = None
-        if kind in ("map", "image", "document"):
-            asset = self.plan["assets"][scene[kind]["asset"]]
+        asset_id = scene[kind]["asset"] if kind in ("map", "image", "document") else None
+        if kind == "timeline" and "background" in scene["timeline"]:
+            asset_id = scene["timeline"]["background"]["asset"]
+        if asset_id:
+            asset = self.plan["assets"][asset_id]
             credits.append(f"{asset['credit']} · {asset['license']}")
             asset_source = asset["source"]
         source_keys = list(scene["evidence"]["sources"])
         if kind == "timeline":
             for event in scene["timeline"]["events"] + scene["timeline"].get("context", []):
                 source_keys.extend(event["evidence"]["sources"])
+        if kind == "map":
+            for feature in scene["map"].get("features", []):
+                source_keys.extend(feature["evidence"]["sources"])
         refs = [self.plan["sources"][key] for key in dict.fromkeys(source_keys) if key != asset_source]
         if refs:
             credits.append(" · ".join(source.get("label", source["citation"]) for source in refs))
@@ -280,15 +310,24 @@ class SceneRenderer:
             credits = list(dict.fromkeys(self.credits(previous)+credits))
         draw = ImageDraw.Draw(image)
         # Switch the heading once; crossfading words makes both titles unreadable.
-        self.paragraph(draw, heading["title"], (self.left, 198, self.right-self.left, 215), "Titre de série", self.palette["gold"])
+        corner = heading.get("timeline", {}).get("context_layout") == "corner"
+        heading_width = 440 if corner else self.right-self.left
+        self.paragraph(draw, heading["title"], (self.left, 198, heading_width, 215), "Titre de série", self.palette["gold"])
         ev = heading["evidence"]
-        self.paragraph(draw, f"{ev['period']} · {STATUS[ev['status']]}", (self.left, 426, self.right-self.left, 45), "Bandeau", self.palette["night-ink-2"])
+        self.paragraph(draw, f"{ev['period']} · {STATUS[ev['status']]}",
+                       (self.left, 426, heading_width, 85 if corner else 45), "Bandeau", self.palette["night-ink-2"])
         self.paragraph(draw, "ETHNIAFRICA", (self.left, 65, 380, 45), "Bandeau", self.palette["night-ink-2"])
         self.paragraph(draw, "L’AFRIQUE À TRAVERS SES NOMS", (self.left, 132, self.right-self.left, 45), "Bandeau", self.palette["night-ink-2"])
         caption = next((c for c in self.captions if c["debut"] <= instant < c["fin"]), None)
         if caption:
             self.paragraph(draw, caption["texte"], (self.left, 1380, self.right-self.left, 140), "Corps")
         self.paragraph(draw, "\n".join(credits), (self.left, 1530, self.right-self.left, 88), "Crédit", self.palette["night-ink-2"])
+        if self.plan.get("progress", False):
+            fraction = max(0, min(1, instant/self.duration))
+            draw.line((self.left, 1615, self.right, 1615), fill=self.palette["night-ink-3"], width=3)
+            if fraction:
+                draw.line((self.left, 1615, self.left+(self.right-self.left)*fraction, 1615),
+                          fill=self.palette["gold"], width=5)
         badge = Image.new("RGBA", (620, 68), ImageColor.getrgb(self.palette["ground"])+(240,))
         self.paragraph(ImageDraw.Draw(badge), "ÉPREUVE — NE PAS PUBLIER", (16, 12, 590, 50), "Bandeau", self.palette["night-ink-2"])
         badge = badge.rotate(-15, expand=True, resample=Image.Resampling.BICUBIC)
@@ -312,10 +351,20 @@ class SceneRenderer:
                     instants.update((start+f["at"], start+f["until"]-1e-6))
                     if "draw_seconds" in f:
                         instants.add(min(end-1e-6, start+f["at"]+f["draw_seconds"]))
+                    if "fade_seconds" in f:
+                        instants.update((start+f["at"]+f["fade_seconds"]/2,
+                                         min(end-1e-6, start+f["at"]+f["fade_seconds"])))
             if scene["type"] == "comparison":
                 instants.update(start+i.get("at", 0) for i in scene["comparison"] if start+i.get("at", 0) < end)
             if scene["type"] == "timeline":
-                instants.update(start+i["at"] for i in scene["timeline"]["events"]+scene["timeline"].get("context", []))
+                timeline = scene["timeline"]
+                cues = [i["at"] for i in timeline["events"]+timeline.get("context", [])]
+                instants.update(start+cue for cue in cues)
+                if timeline.get("layout") == "focus":
+                    instants.update(min(end-1e-6, start+cue+delta) for cue in cues for delta in (.25, .85))
+                    if "overview_at" in timeline:
+                        instants.update(min(end-1e-6, start+timeline["overview_at"]+delta) for delta in (0, .55, 1.1))
+                    instants.update(start+k["at"] for k in timeline.get("background", {}).get("camera", []) if start+k["at"] < end)
         for instant in sorted(instants):
             self.render(instant)
         return sorted(instants)

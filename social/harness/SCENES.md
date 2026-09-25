@@ -76,17 +76,18 @@ available in the legacy engine but is not automatically appended to v1 excerpts.
 The executable contract is `ethni_scene_plan.validate_plan`, rather than an
 independently maintained schema with different rules. Unknown fields fail.
 
-| Root field   | Meaning                                                                       |
-| ------------ | ----------------------------------------------------------------------------- |
-| `version`    | Integer `1`                                                                   |
-| `profile`    | `name-origin`, `history-geography`, `thematic-analysis` or `free`             |
-| `coverage`   | `excerpt` or `complete`; complete plans require the profile's editorial beats |
-| `title`      | Internal production title                                                     |
-| `source`     | Script/audio SHA-256 hashes, ordered audio `cuts`, selected paragraph indexes |
-| `sources`    | ID → full `citation`, `url`, `tier`, optional short on-screen `label`         |
-| `assets`     | ID → relative `path`, `kind`, SHA-256, `credit`, `license`, source ID         |
-| `scenes`     | Ordered, continuous scene descriptions spanning the selected audio            |
-| `output_dir` | Private proof destination                                                     |
+| Root field   | Meaning                                                                             |
+| ------------ | ----------------------------------------------------------------------------------- |
+| `version`    | Integer `1`                                                                         |
+| `profile`    | `name-origin`, `history-geography`, `thematic-analysis` or `free`                   |
+| `coverage`   | `excerpt` or `complete`; complete plans require the profile's editorial beats       |
+| `title`      | Internal production title                                                           |
+| `source`     | Script/audio SHA-256 hashes, ordered audio `cuts`, selected paragraph indexes       |
+| `sources`    | ID → full `citation`, `url`, `tier`, optional short on-screen `label`               |
+| `assets`     | ID → relative `path`, `kind`, SHA-256, `credit`, `license`, source ID               |
+| `scenes`     | Ordered, continuous scene descriptions spanning the selected audio                  |
+| `progress`   | Optional boolean; draws continuous elapsed-video progress inside the 9:16 safe area |
+| `output_dir` | Private proof destination                                                           |
 
 `source` uses `source_script_sha256`, `source_audio_sha256`, `cuts` as
 `[[startSeconds,endSeconds], ...]`, and zero-based `paragraphs`. Hash the actual
@@ -98,6 +99,14 @@ approval check. A thematic video need not fabricate a carousel deck.
 Cuts preserve whole approved paragraphs and never split a word or exceed the
 recording. Scene times refer to the resulting excerpt, not the original audio.
 Bind them to measured words/paragraphs and record the intention in `purpose`.
+An external narration provider may supply character timestamps; retain the
+original response, map exact approved-text tokens to its original-text alignment,
+and preserve the audio without post-generation retiming. The renderer itself
+does not call a speech service: any voice API cost belongs in the production
+record, separately from `render-report.json`'s rendering-only API count.
+For a continuous map across scenes, match the outgoing camera bounds to the
+incoming first bounds and use a cut; a dissolve holds the old visual while
+blending and therefore has different movement semantics.
 No rule divides a scene into four-second image slots. A one-second mechanical
 floor is only a guard; it is not a recommended reading duration.
 
@@ -127,6 +136,54 @@ mandatory: equal layout spacing does **not** represent equal elapsed time.
 All event sources enter the credit register even if the parent scene lists
 different sources. Long labels fail preflight rather than shrinking to fit.
 `templates/timeline.json` is a placeholder starter, not a historical example.
+
+### Focused chronology
+
+Set `timeline.layout` to `"focus"` to travel along the axis with one active
+event at a time. The default `"overview"` layout above is unchanged. Primary
+event years and their speech cues must both increase strictly. An optional
+`overview_at` cue, after the final event, pulls back to all dated names while
+hiding the contextual cards. Without that cue, focus lasts to the scene's end.
+
+Each focused context item contains `event_year`, `lane`, `label`, `detail`,
+`at` and `evidence`. `lane` is `"regional"` or `"world"`, with at most one of
+each per primary event. `event_year` anchors the card to the main event;
+**it is not the context event's date**. Its own visible `evidence.period`
+can be a date, reign, century or explicitly uncertain interval. This allows
+contemporary context without claiming every event happened in the same year.
+The context cue must fall within its primary event's focused window. Cards
+disappear when the next main event or final overview starts. Their text is
+silent: the audio still comes exclusively from the approved narration file.
+
+Set `context_layout: "corner"` for an optional upper-right marginal note,
+without colored cards. The default is `"cards"`. The latest context cue for
+the active event replaces the previous note; cues must be distinct. Its place
+label, detail and independent period remain visible together, in regular-weight
+secondary ink. A short fade introduces the note without moving it. The note's
+date sits immediately below its text; a short note does not leave a tall empty
+panel. The main title, evidence and focused date reserve the left column even
+when no note is shown, so their positions stay stable. Their narrower widths
+and the note itself are checked for overflow.
+
+Author note cues for reading time: simultaneous-card cues copied unchanged
+could replace the first note before it can be read. Changing this visual
+timing never edits or regenerates the approved narration. The note disappears
+when the next main event or final overview begins.
+
+An optional `background` accepts the map contract below, restricted to a
+`physical` basemap without features or country highlights. Camera keys can
+follow the narration; current borders can be dashed. This background locates
+the chronology and does not establish historic boundaries. Its asset license
+and source join the credits. Use a separate map scene for historical polygons
+or travel routes that need their own geographic evidence.
+
+The focus layout keeps two or three main events, a non-proportional spacing
+notice, fixed mobile type sizes and optional video progress. Reduced-motion
+mode preserves the same cues but removes the rail, card and camera movement.
+Preflight samples reveal cues, transitions, the final overview and camera
+keys; long copy fails instead of shrinking. Review additional 360px frames
+for each date: the automatic scene midpoint alone cannot show every state
+of a single continuous chronology.
 
 The `document` layout keeps the complete source image (no crop), checks the
 same enlargement ceiling, and pairs it with a short label and explanation.
@@ -158,6 +215,17 @@ Camera keys are `{at,bounds}` with local times and bounds ordered
 west/south/east/north. Start at zero and increase strictly. The camera fits the
 whole requested bounds; it interpolates smoothly between keys.
 
+Point features can carry an optional plain-text `annotation`: a compact,
+regular-weight geographic note below their label, connected to the location
+by a leader line. The existing `offset` positions the whole annotation. Text
+overflow and collisions with other visible labels fail preflight; off-screen
+labels remain unclamped. `role: "context"` accepts points as well as territories
+and gives the optional location a secondary visual weight. The note's dates
+and sources belong in the feature's evidence, and map feature sources are
+included in frame credits even when the parent scene does not repeat them.
+Check the rendered camera states: a note that does not fit inside the safe
+map viewport is omitted rather than moved to a false geographic location.
+
 Map layers: `national`, `political`, `people`, `physical`. Country highlighting
 is permitted only in `national`. Borders are an independent visible option.
 Turning them off uses uniform land fills without country strokes. That does
@@ -167,6 +235,13 @@ outlines behind population/territory overlays; omission preserves solid lines.
 
 Features have `kind`, `label`, local `at`/`until`, their own `evidence`, optional
 `colour` (`gold`, `white`, `night-ink-2`, `teal`, `perv`) and label `offset`.
+Optional `role: "context"` marks a territory as geographic background. Context
+territories render below subject features regardless of array order, with dimmed
+fill and labels, and a visible `Voisinage` legend prefix. Use dated evidence;
+proximity alone does not establish contemporaneity. Omission means `subject`.
+Optional `fade_seconds` (0.04 to `until-at`) reveals a feature once, then holds
+it. Reduced-motion output shows it immediately. Neither option infers geometry.
+
 Optional `label_colour` takes the same palette tokens independently of the fill;
 use it to keep labels readable over saturated regions. Optional `geometry_note`
 is visible in the legend and must be nonempty when supplied.
