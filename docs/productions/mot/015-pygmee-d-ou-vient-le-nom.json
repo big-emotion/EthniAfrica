@@ -1,0 +1,14 @@
+{
+  "campaign": "pygmee-d-ou-vient-le-nom",
+  "typologie": "mot",
+  "episode": 15,
+  "question": {
+    "fr": "D'où vient le nom « pygmée » ?"
+  },
+  "myth": {
+    "fr": "« Pygmée » serait-il le nom d'un peuple d'Afrique ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "publications": []
+}
