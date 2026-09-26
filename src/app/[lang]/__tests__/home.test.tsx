@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { CANONICAL_DOMAIN, OG_DESCRIPTION, OG_TITLE } from "@/lib/brand";
 import { FALLBACK_SEED_WORDS } from "@/lib/home/seedWords";
@@ -56,11 +56,17 @@ describe("minimal home", () => {
           name: homePurposeCopy[language].contribute.linkLabel,
         })
       ).toHaveAttribute("href", `/${language}/contribute`);
-      expect(screen.getByTestId("home-contribute")).toHaveTextContent(
-        homePurposeCopy[language].contribute.corrections
+      // A bare button: the invitation's sentences are gone, its name stays.
+      const contribution = screen.getByTestId("home-contribute");
+      expect(contribution).toHaveAttribute(
+        "aria-label",
+        homePurposeCopy[language].contribute.title
       );
-      expect(screen.getByTestId("home-contribute")).toHaveTextContent(
-        homePurposeCopy[language].contribute.code
+      expect(
+        within(contribution).queryByRole("heading")
+      ).not.toBeInTheDocument();
+      expect(contribution).toHaveTextContent(
+        homePurposeCopy[language].contribute.linkLabel
       );
       expect(counts).not.toHaveBeenCalled();
       expect(globe).not.toHaveBeenCalled();

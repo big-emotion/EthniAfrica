@@ -483,6 +483,13 @@ from where the chapters start, so the globe keeps the screen to itself while it
 is the subject. It takes the parchment's measure, not the viewport's, and the
 ground on either side of it is the ground the document is printed on.
 
+**The map is opt-in, closed on arrival (2026-09-26).** A night band sitting
+between the hero and the first chapter read as an empty page: readers did not
+scroll past a dark field with nothing labelled in it. The country, people and
+family fiches now land on the hero and the content; a button in the hero head
+opens the band and closes it again. The band is not in the DOM until opened, so
+the globe stays lazy, and the rail simply follows the hero while it is closed.
+
 **A fiche ends with a way out.** Measured on production 2026-09-07: the fiches
 hold a reader for 251 to 276 seconds — `PPL_BASSA_CAM` 274, `pays/COD` 276 —
 against 21 seconds on the listings that point at them. Ten of them nonetheless

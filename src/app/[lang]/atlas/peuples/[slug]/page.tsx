@@ -329,7 +329,11 @@ export default async function PeoplesSlugPage({
         peopleDetail.nameMain
       )}
       heroHead={
-        <FicheHeroHead entityType="people" translation={people.translation}>
+        <FicheHeroHead
+          entityType="people"
+          translation={people.translation}
+          mapToggleLanguage={lang as Language}
+        >
           <PeopleFicheTitle language={lang as Language} people={peopleDetail} />
         </FicheHeroHead>
       }

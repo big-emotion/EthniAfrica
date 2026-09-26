@@ -16,6 +16,8 @@ import { FicheChronologyChapter } from "@/components/fiche/FicheChronologyChapte
 import { countryChronology } from "@/lib/fiche/chronology";
 import { FicheAmendBand } from "@/components/fiche/FicheAmendBand";
 import { FicheTile } from "@/components/fiche/FicheTile";
+import { FicheNameStory } from "@/components/fiche/FicheNameStory";
+import { readNaming } from "@/lib/search/naming";
 import { splitLeadSentence } from "@/lib/fiche/prose";
 import { chapterAnchorId } from "@/lib/ficheChapters";
 import type { ProvenanceState } from "@/lib/fieldProvenance";
@@ -113,6 +115,17 @@ export function CountryParchment({
             <ProvenanceBanner language={language} census={provenance} />
           </div>
         ) : null}
+        <FicheNameStory
+          naming={readNaming(
+            "country",
+            { historicalNames: country.historicalNames },
+            {
+              etymology: country.etymology,
+              nameOriginActor: country.nameOriginActor,
+            }
+          )}
+          language={language}
+        />
         <FicheSummaryBrief
           kind="country"
           entityId={country.id}

@@ -20,6 +20,7 @@
 import type { ReactNode } from "react";
 
 import { ReadingDepthProbe } from "@/components/analytics/ReadingDepthProbe";
+import { FicheMapBand } from "@/components/fiche/FicheMapBand";
 import { FicheChapterBar } from "@/components/fiche/FicheChapterBar";
 import { ACCENT_CLASS_BY_ENTITY } from "@/components/fiche/ficheAccent";
 import { FICHE_RECORD_ANCHOR } from "@/lib/ficheChapters";
@@ -70,7 +71,7 @@ export function FicheSequence({
           sequence: it was raised at this position to get above the globe, and
           the plate is above the globe too — with the trail beside it and the
           same card every other route opens on. */}
-      {globe}
+      {globe ? <FicheMapBand>{globe}</FicheMapBand> : null}
       {/* The rail opens the reading, not the map: pinned here it starts
           following the reader exactly where the parchment starts, and the globe
           keeps the screen to itself while it is the subject. */}
