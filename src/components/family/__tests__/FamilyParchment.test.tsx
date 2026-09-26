@@ -558,4 +558,24 @@ describe("FamilyParchment — provenance addressed to the reader", () => {
       "L’histoire des noms"
     );
   });
+
+  // @req REQ-151
+  it("carries the family's caution into the name story only when the fiche fills it", () => {
+    const data = undeclaredFamily();
+    renderParchment(data);
+    expect(screen.queryByTestId("name-story-caution")).toBeNull();
+  });
+
+  // @req REQ-151
+  it("shows the family's caution inside the name story when filled", () => {
+    const data = undeclaredFamily();
+    data.decolonialHeader.whyProblematic =
+      "Sous l'apartheid, ce terme servait de catégorie raciale légale. Des intellectuels africains l'ont critiqué.";
+    renderParchment(data);
+
+    const story = screen.getByTestId("fiche-name-story");
+    expect(within(story).getByTestId("name-story-caution")).toHaveTextContent(
+      "catégorie raciale légale."
+    );
+  });
 });

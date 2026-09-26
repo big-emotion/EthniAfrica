@@ -178,4 +178,35 @@ describe("FicheNameStory", () => {
       screen.getByRole("heading", { name: "Where do these names come from?" })
     ).toBeVisible();
   });
+
+  // @req REQ-151
+  it("draws a caution note only when one is given, lead first, rest behind a disclosure", () => {
+    const caution =
+      "Sous l'apartheid, ce terme servait de catégorie raciale légale. Des intellectuels africains ont critiqué ce vocabulaire.";
+    const { rerender } = render(
+      <FicheNameStory naming={fula()} language="fr" />
+    );
+    expect(screen.queryByTestId("name-story-caution")).toBeNull();
+
+    rerender(
+      <FicheNameStory naming={fula()} language="fr" caution={caution} />
+    );
+    const note = screen.getByTestId("name-story-caution");
+    expect(note).toHaveTextContent("catégorie raciale légale.");
+    expect(note.querySelector("details")).toHaveTextContent(
+      "Des intellectuels africains"
+    );
+  });
+
+  // @req REQ-151
+  it("cuts a very long caution lead at a word and keeps the whole text one tap away", () => {
+    const long = `${"mot ".repeat(90)}fin sans terminaison`;
+    render(<FicheNameStory naming={fula()} language="fr" caution={long} />);
+
+    const note = screen.getByTestId("name-story-caution");
+    expect(note.querySelector("p")!.textContent!.length).toBeLessThan(260);
+    expect(note.querySelector("details")).toHaveTextContent(
+      "fin sans terminaison"
+    );
+  });
 });

@@ -1516,6 +1516,20 @@
   line-height: 1.5;
 }
 
+.fiche-name-story__caution {
+  margin: 12px 0 0;
+  padding: 10px 12px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--afh-radius-md) var(--afh-radius-md) 0;
+  background: var(--afh-surface);
+  font-size: var(--afh-text-small);
+  line-height: 1.5;
+}
+
+.fiche-name-story__caution > p {
+  margin: 0;
+}
+
 @container (min-width: 640px) {
   .fiche-name-story__forms {
     grid-template-columns: repeat(2, minmax(0, 1fr));

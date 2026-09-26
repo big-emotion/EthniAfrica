@@ -171,6 +171,9 @@ export function FamilyParchment({
 }: FamilyParchmentProps) {
   const copy = familyCopy[language].parchment;
   const { hero, decolonialHeader, generalInfo, distribution } = data;
+  const familyNaming = readNaming("languageFamily", {
+    decolonialHeader: data.decolonialHeader,
+  });
   const wording = footprintWording(footprintProvenance, language);
   // Two states, like the cards above. Normally the family declares no
   // distribution and this section shows the footprint reconstructed from its
@@ -231,9 +234,8 @@ export function FamilyParchment({
 
       <FicheNameStory
         chapter
-        naming={readNaming("languageFamily", {
-          decolonialHeader: data.decolonialHeader,
-        })}
+        naming={familyNaming}
+        caution={familyNaming.problem}
         language={language}
       />
 

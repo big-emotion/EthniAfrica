@@ -27,6 +27,11 @@ export interface FicheNameStoryProps {
    * already carries a heading.
    */
   chapter?: boolean;
+  /**
+   * What the names carry that a reader should know before going on — set by
+   * the classes whose fiche states it up front (families). Absent, no note.
+   */
+  caution?: string;
 }
 
 function cutAtWord(sentence: string): string {
@@ -108,6 +113,7 @@ export function FicheNameStory({
   naming,
   language,
   chapter = false,
+  caution,
 }: FicheNameStoryProps) {
   const words = ficheNameStoryCopy[language];
   const origin = naming.origin?.trim();
@@ -121,6 +127,12 @@ export function FicheNameStory({
     : { lead: "", rest: null };
   const shownLead = cutAtWord(lead);
   const remainder = shownLead !== lead ? origin : rest;
+  const cautionText = caution?.trim();
+  const { lead: cautionLead, rest: cautionRest } = cautionText
+    ? splitLeadSentence(cautionText)
+    : { lead: "", rest: null };
+  const shownCaution = cutAtWord(cautionLead);
+  const cautionMore = shownCaution !== cautionLead ? cautionText : cautionRest;
   const visible = forms.slice(0, FORMS_SHOWN);
   const hidden = forms.slice(FORMS_SHOWN);
 
@@ -164,6 +176,20 @@ export function FicheNameStory({
             ))}
           </ul>
         </details>
+      ) : null}
+      {cautionText ? (
+        <div
+          className="fiche-name-story__caution"
+          data-testid="name-story-caution"
+        >
+          <p>{shownCaution}</p>
+          {cautionMore ? (
+            <details className="fiche-name-story__disclosure">
+              <summary>{words.readMore}</summary>
+              <p>{cautionMore}</p>
+            </details>
+          ) : null}
+        </div>
       ) : null}
     </div>
   );

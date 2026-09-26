@@ -33,7 +33,12 @@ const fullData: LanguagePageData = {
 describe("LanguageDetailViewV2", () => {
   // @req REQ-145
   it("renders the fiche chrome in English without translating corpus values", () => {
-    render(<LanguageDetailViewV2 language="en" data={fullData} />);
+    render(
+      <LanguageDetailViewV2
+        language="en"
+        data={{ ...fullData, nameEn: "Yoruba (English)" }}
+      />
+    );
 
     expect(
       screen.getByRole("heading", { name: "Other attested names" })
@@ -143,5 +148,41 @@ describe("LanguageDetailViewV2", () => {
     );
 
     expect(screen.queryByTestId("fiche-name-story")).toBeNull();
+  });
+
+  // @req REQ-151
+  it("lists in the later chapter only the names the story does not show", () => {
+    render(
+      <LanguageDetailViewV2
+        language="fr"
+        data={{
+          ...fullData,
+          name: "Yoruba",
+          nameEn: "Yoruba (English)",
+          alternateNames: ["Yariba"],
+          spellingAliases: ["YARIBA "],
+        }}
+      />
+    );
+
+    const chapter = screen
+      .getByRole("heading", { name: "Autres noms attestés" })
+      .closest("[data-fiche-section]") as HTMLElement;
+    expect(chapter).toHaveTextContent("Yoruba (English)");
+    expect(chapter).not.toHaveTextContent("Yariba");
+  });
+
+  // @req REQ-151
+  it("draws no later names chapter when the story already shows every name", () => {
+    const { container } = render(
+      <LanguageDetailViewV2 language="fr" data={fullData} />
+    );
+
+    expect(
+      screen.queryByRole("heading", { name: "Autres noms attestés" })
+    ).toBeNull();
+    expect(
+      container.querySelector('[data-fiche-section="Autres noms attestés"]')
+    ).toBeNull();
   });
 });
