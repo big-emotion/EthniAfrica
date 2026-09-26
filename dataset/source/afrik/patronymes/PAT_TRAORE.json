@@ -44,6 +44,13 @@
         "griot": "Djeli Mamadou Kouyaté (Djeliba Koro, Siguiri)",
         "transcription": "Niane, Djibril Tamsir, Soundjata ou l'épopée mandingue, 1960",
         "sourceRefs": ["niane-1960"]
+      },
+      {
+        "claim": "Dans l'épopée, deux frères tous deux Traoré, Oulamba l'aîné et Oulani le cadet, rapportent au roi Naré Maghan Kon Fatta la femme-buffle du pays de Do, avant la naissance de Soundiata. Quand le cadet a tué le buffle, l'aîné compose un chant à sa gloire et le cadet s'écrie : « Frère, si tu étais griot, personne ne te résisterait. » Selon la tradition, c'est de là que Traoré et Diabaté (Dioubaté) se différencient : la même famille se divise entre chasseurs et griots.",
+        "claimStatus": "claimed",
+        "griot": "Djeli Mamadou Kouyaté (Djeliba Koro, Siguiri)",
+        "transcription": "Niane, Djibril Tamsir, Soundjata ou l'épopée mandingue, 1960",
+        "sourceRefs": ["niane-1960"]
       }
     ],
     "writtenChronicles": [],
@@ -67,6 +74,16 @@
         "claim": "Avant Soundiata, les Traoré occupent une partie du pays de Kiri, mais la majorité d'entre eux s'installe dans la province qui prendra plus tard le nom de Gangaran, au nord-ouest du Bouré. Ce territoire est distinct du berceau des Keita, situé autour de Dakadiala, Naréna et Kiri.",
         "claimStatus": "established",
         "sourceRefs": ["gha-iv-mali", "niane-1985-fr-mali-chapitre"]
+      },
+      {
+        "claim": "Selon Jan Jansen, l'ancêtre Tiramagan, célébré comme général de Soundiata et fondateur du Kaabu, est un cas où l'on doute qu'un héros de l'épopée renvoie à une personne historique : au Kaabu, où le récit ignore presque son lien avec Soundiata, son nom Tiramagan ou Siramagan pourrait désigner le « chef des ordalies », un objet de culte, la lance de l'épreuve, devenu personnage. Cette lecture est une hypothèse et ne fait pas consensus ; l'Histoire générale de l'Afrique tient de son côté le personnage pour un général envoyé par Soundiata.",
+        "claimStatus": "contested",
+        "sourceRefs": ["jansen-sunjata-paradigm", "gha-iv-mali"]
+      },
+      {
+        "claim": "Pour un étranger, le jamu est la porte d'entrée dans le tissu social : à Bamako, on lui attribue un jamu mandingue pour lui donner une place dans le groupe. Cécile Canut note qu'aujourd'hui les références historiques des pactes entre noms sont souvent oubliées et que les personnes peinent à en expliquer l'origine.",
+        "claimStatus": "established",
+        "sourceRefs": ["canut-2002-senankuya"]
       }
     ]
   },

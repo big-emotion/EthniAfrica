@@ -4,6 +4,7 @@ from pathlib import Path
 import tempfile
 
 from ethni_scene_audio import digest
+from ethni_scene_outro import total_seconds
 from ethni_scene_plan import require, text
 from ethni_scene_render import SceneRenderer
 from ethni_scenes import encode
@@ -85,7 +86,7 @@ def deliver(project, plan, lock, review_path, output, source, check_video, uncha
         result = {'version': 1, 'action': 'finalize', 'proof_only': False, 'ready_to_publish': True,
                   'published': False, 'paid_api_calls': 0, 'coverage': plan.get('coverage', 'excerpt'),
                   'lock_sha256': digest(lock), 'review_sha256': digest(review_path),
-                  'video': check_video(video, source['duration'])}
+                  'video': check_video(video, total_seconds(plan, source['captions'], source['duration']))}
         require(review_path.read_bytes() == review_bytes, 'Review changed during export')
         validate_review(project, plan, lock, review)
         require(unchanged(), 'Inputs changed during final export')

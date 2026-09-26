@@ -13,7 +13,7 @@
         "Jalla (ancienne graphie étrangère)",
         "Sawa (terme générique désignant l'ensemble des peuples côtiers bantous du Cameroun)"
       ],
-      "originOfExonyms": "Douala est la francisation du nom Duàlá, adoptée comme nom de la principale ville camerounaise fondée sur leur territoire. Sawa signifie les gens de l'eau ou du littoral en duala, et désigne l'ensemble des peuples côtiers apparentés.",
+      "originOfExonyms": "Douala est la francisation du nom Duàlá, adoptée comme nom de la principale ville camerounaise fondée sur leur territoire. Plusieurs quartiers de la ville portent un nom de clan formé sur bona, mot duala qui signifie clan, famille, descendant : Bonapriso, Bonatéki et Bonandoumbe désignent les clans de Priso, de Téki et de Ndoumbe (Bot, 2010) ; Bonabéri viendrait du clan des Bèllè, ou de Bédi selon certains patriarches, et Akwa, Deido et Bell n'ont gardé que le nom de l'ancêtre. Sawa signifie les gens de l'eau ou du littoral en duala, et désigne l'ensemble des peuples côtiers apparentés.",
       "whyProblematic": "La confusion entre le nom du peuple Duala et la ville de Douala est courante. Le terme Sawa englobe des groupes distincts qui ne sont pas tous Duala stricto sensu.",
       "contemporaryUsage": "Duala désigne le peuple. Sawa est utilisé dans les contextes culturels (festival Ngondo) pour désigner l'ensemble des peuples côtiers camerounais. Douala reste le nom de la métropole.",
       "linguisticFamily": "FLG_BANTU",
@@ -109,6 +109,12 @@
         "title": "Xinhua, Ngondo Festival UNESCO",
         "url": "https://english.news.cn/africa/20251210/e09a83c714fc46fcb8f44d7a6e1c8235/c.html",
         "tier": "needs_review"
+      },
+      {
+        "title": "Bot, Dieudonné Martin Luther — Langue, origine et signification des toponymes de Douala. abá, n° 001, avril 2010, p. 23-29",
+        "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Bot_2010_Toponyme_douala.pdf",
+        "tier": "referenced",
+        "notes": "Texte lu directement : bona, en duala, clan, famille, descendant ; noms de quartiers formés sur des noms de clans ou d'ancêtres."
       },
       {
         "title": "Qiraat Africa, The Duala people",

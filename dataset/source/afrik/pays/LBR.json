@@ -12,7 +12,7 @@
       "antiquity": "Le territoire actuel du Libéria était peuplé de diverses sociétés sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs territoires.",
       "middleAges": "Migrations de peuples mandé, krou et atlantiques vers la région. Développement de chefferies et royaumes locaux. Pas de nom unifié pour l'ensemble du territoire.",
       "precolonial": "Mosaïque de chefferies et de royaumes autonomes : chefferies kpelle, bassa, grebo, gio, mano, krahn, gola, kru, mandingue, et autres peuples autochtones. Le cap où s'élève aujourd'hui Monrovia portait le nom de Ducor. Les Européens désignaient la région par sa marchandise, la maniguette ou poivre de Guinée : la Côte des Graines.",
-      "colonization": "1822-1847 : colonie de l'American Colonization Society, organisation privée américaine qui y installe des Afro-Américains affranchis et administre le territoire jusqu'à l'indépendance. Le nom du pays apparaît dans cette période, sans qu'on sache qui l'a formé.",
+      "colonization": "1822-1847 : colonie de l'American Colonization Society, organisation privée américaine qui y installe des Afro-Américains affranchis et administre le territoire jusqu'à l'indépendance. En 1821, selon le service historique du Département d'État américain, un lieutenant de la marine, Robert Stockton, contraint un dirigeant local à céder à la société la bande de terre où sera bâtie Monrovia, après l'échec des négociations pacifiques. Le nom du pays apparaît dans cette période, sans qu'on sache qui l'a formé.",
       "contemporary": "26 juillet 1847 : déclaration d'indépendance et proclamation de la République du Libéria, première république indépendante d'Afrique. Joseph Jenkins Roberts en est le premier président. Le nom « Libéria » devient celui d'un État souverain."
     },
     "kingdoms": [
@@ -388,6 +388,12 @@
         "url": "https://msa.maryland.gov/megafile/msa/speccol/sc3500/sc3520/002000/002031/html/02031bio.html",
         "tier": "official",
         "notes": "Archives d'État du Maryland. Carrière de Robert Goodloe Harper (1765-1825) ; la notice rattache à son nom la ville de Harper, et non le nom du pays."
+      },
+      {
+        "title": "U.S. Department of State, Office of the Historian — Founding of Liberia, 1847",
+        "url": "https://history.state.gov/milestones/1830-1860/liberia",
+        "tier": "official",
+        "notes": "Société fondée en 1816 par un groupe d'Américains blancs ; en 1821, un officier de marine contraint un dirigeant local à céder du territoire ; l'établissement est nommé Liberia et sa capitale Monrovia en l'honneur du président James Monroe, qui avait obtenu des fonds publics pour le projet ; indépendance déclarée en 1847."
       },
       {
         "title": "Transcription en ligne du contrat de Ducor, 15 décembre 1821",

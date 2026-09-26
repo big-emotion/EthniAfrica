@@ -9,7 +9,7 @@
       "selfAppellation": null,
       "contemporaryUsage": " Regroupe plus de 500 langues parlées par environ 350 millions de personnes en Afrique centrale, orientale et australe. Classification strictement linguistique au sein de la famille Niger-Congo (branche Bénoué-Congo), sans aucune connotation raciale ou ethnique.",
       "historicalAppellations": ["Langues bantoues"],
-      "originOfHistoricalTerm": " Le terme « bantou » a été créé par le philologue allemand Wilhelm Heinrich Immanuel Bleek (1827-1875) en 1862 dans son ouvrage A Comparative Grammar of South African Languages. Bleek a observé que de nombreuses langues africaines partageaient des éléments syntaxiques suggérant une origine commune. Il a choisi le terme « Bantu » car ce mot signifie « gens » ou « personnes » dans plusieurs de ces langues, dérivé de la racine proto-Bantu ba-ntu où ba- est le préfixe de classe nominale pour le pluriel et -ntu signifie « personne » ou « être humain ». Le terme a été popularisé par Carl Meinhof dans Grundzüge einer vergleichenden Grammatik der Bantusprachen (1906) et par Harry Hamilton Johnston dans A Comparative Study of the Bantu and Semi-Bantu Languages (1919)."
+      "originOfHistoricalTerm": " Le terme « bantou » a été introduit par le philologue allemand Wilhelm Heinrich Immanuel Bleek (1827-1875), qui l'emploie selon les historiens de la linguistique dès 1857 ou 1858 et le popularise en 1862 dans son ouvrage A Comparative Grammar of South African Languages. Bleek a observé que de nombreuses langues africaines partageaient des éléments syntaxiques suggérant une origine commune. Il a choisi le terme « Bantu » car ce mot signifie « gens » ou « personnes » dans plusieurs de ces langues, dérivé de la racine proto-Bantu ba-ntu où ba- est le préfixe de classe nominale pour le pluriel et -ntu signifie « personne » ou « être humain ». Le terme a été popularisé par Carl Meinhof dans Grundzüge einer vergleichenden Grammatik der Bantusprachen (1906) et par Harry Hamilton Johnston dans A Comparative Study of the Bantu and Semi-Bantu Languages (1919)."
     },
     "generalInfo": {
       "branches": [
@@ -157,6 +157,12 @@
         "title": "Statistics South Africa (2025) – Census 2022 Statistical Release P0301.4, Table 2.8 (isiZulu home language)",
         "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
         "tier": "official"
+      },
+      {
+        "title": "« The Bantu languages: sociohistorical perspectives », in Rajend Mesthrie (dir.), Language in South Africa, Cambridge University Press, 2002",
+        "url": "https://www.cambridge.org/core/books/abs/language-in-south-africa/the-bantu-languages-sociohistorical-perspectives/02CCE08E10611E69474FC93EDCC574B9",
+        "tier": "referenced",
+        "notes": "Chapitre d'un ouvrage universitaire publié. Date le premier emploi du terme par Bleek de 1857 ou 1858 et sa popularisation de la Comparative Grammar de 1862, et glose Bantu par « personnes ». Consulté le 25 septembre 2026."
       }
     ]
   },

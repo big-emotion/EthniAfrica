@@ -152,7 +152,10 @@
         "gha-v-16-18",
         "bamadaba-jamuw",
         "canut-2002-senankuya",
-        "canut-smith-2006-pactes"
+        "canut-smith-2006-pactes",
+        "unesco-manden-charter-2009",
+        "saibou-2023-kurukan-fuga",
+        "mann-2022-hunters-oath"
       ]
     },
     {
@@ -243,6 +246,30 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Canut, Cécile, and Smith, Étienne, Cahiers d'études africaines, number 184, 2006, p. 687 and following. Cited for the caution it raises: the idea that joking kinship eases conflict is treated here as a hypothesis inherited from Radcliffe-Brown and taken up by conflict-resolution studies, hence as a discourse to be analysed rather than as a measured effect. The start page is verified, the end page is not."
+    },
+    {
+      "sourceKey": "unesco-manden-charter-2009",
+      "title": "Manden Charter, proclaimed in Kurukan Fuga, Representative List of the Intangible Cultural Heritage of Humanity, UNESCO",
+      "url": "https://ich.unesco.org/en/RL/manden-charter-proclaimed-in-kurukan-fuga-00290",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "Inscribed in 2009. The entry describes a charter proclaimed in the early thirteenth century by the founder of the Mali empire and an assembly of wise men, whose words are passed on orally from father to son within Malinké clans. It does not mention the sanankuya."
+    },
+    {
+      "sourceKey": "saibou-2023-kurukan-fuga",
+      "title": "Charte de Kurukan Fuga : mémoire et communauté, Amadou Saïbou Adamou, Magana, 2023",
+      "url": "https://www.revues.scienceafrique.org/magana/texte/saibou2023/",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Quotes article 7 of the charter: « il est institué entre les Mandenkas le Sanankunya (cousinage à plaisanterie) et le Tanamanyöya (forme de totémisme) » (the sanankunya, a joking relationship, and the tanamanyöya, a form of totemism, are instituted among the Mandenka). Places the oral assembly around 1236 and states that the text was restituted by griots at a seminar in Kankan, Guinea, in 1998, then translated into French and published in 2008."
+    },
+    {
+      "sourceKey": "mann-2022-hunters-oath",
+      "title": "The World Won't Listen: The Mande Hunters' Oath and Human Rights in Translation, Gregory Mann, Humanity, 2022",
+      "url": "https://humanityjournal.org/issue13-2/the-world-wont-listen-the-mande-hunters-oath-and-human-rights-in-translation/",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Notes that the celebration of these charters has provoked skepticism among those who question their origins, and therefore their age, and refers to Jan Jansen's work reading them as interventions in a contested cultural politics."
     }
   ],
   "gaps": [

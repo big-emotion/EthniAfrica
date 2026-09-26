@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Dioula",
-      "selfAppellation": "Jula ou Dyula. Le mot jula désigne le marchand ; au pluriel, julaw. Julakan est le nom de la langue, le suffixe kan désignant en mandingue la langue et non les gens.",
+      "selfAppellation": "Jula ou Dyula. Le mot jula désigne le marchand ; au pluriel, julaw. Julakan est le nom de la langue, le suffixe kan désignant en mandingue la langue et non les gens. Chikouna Cissé (2025), suivant Abdoulaye Bathily, attribue à Richard Jobson (1623, récit d'un voyage en Gambie) la première mention écrite du terme jula ; elle note aussi que les écrits d'Ibn Battuta, au XIVe siècle, servaient déjà à désigner la classe marchande mandingue, les Dioula, sans que nous ayons pu vérifier la forme du mot dans le texte arabe.",
       "exonyms": [
         "Dyula (graphie anglophone internationale)",
         "Jula (graphie phonologique adoptee par les linguistes)",
@@ -15,7 +15,7 @@
         "Wangara ou Wankara (terme utilisé en Afrique de l'Ouest anglophone, notamment au Ghana ; son rapport à Jula est débattu, voir originOfExonyms)",
         "Diula, Djula, Doula, Dualas, Dyoula, Dyulanke (variantes orthographiques regionales)"
       ],
-      "originOfExonyms": "Le terme Dioula est lui-même un nom commun mandingue signifiant commerçant ou marchand itinérant. Il a été appliqué comme ethnonyme à la communauté des Mande islamisés spécialisés dans le commerce longue distance. Le rapport entre Wangara et Jula reste débattu selon les sources. Fauvelle et Bazin, cités par Cissé (2025), décrivent Wangara comme le nom d'un groupe du bord du Sahel qui, dans les siècles suivants, en est venu à désigner une classe professionnelle de négociants répandue en Afrique de l'Ouest — un glissement sémantique dont le terme jula hérite aujourd'hui. Lovejoy (1978), à partir du Soudan central, conteste au contraire l'équivalence Wangara/Jula pour cette région : il y décrit les Wangara comme une diaspora commerciale distincte, liée à l'empire Songhaï plutôt qu'aux réseaux mandé. À ne pas confondre avec les Diola (ou Joola) du Sénégal et de Gambie, peuple distinct de famille linguistique atlantique.",
+      "originOfExonyms": "Le terme Dioula est lui-même un nom commun mandingue signifiant commerçant ou marchand itinérant : Yaya Konaté (2016) rapporte que ses interlocuteurs, locuteurs de plusieurs parlers mandingues de Côte d'Ivoire, traduisent jula par « commerçant ». Il a été appliqué comme ethnonyme à la communauté des Mande islamisés spécialisés dans le commerce longue distance. Le rapport entre Wangara et Jula reste débattu selon les sources. Fauvelle et Bazin, cités par Cissé (2025), décrivent Wangara comme le nom d'un groupe du bord du Sahel qui, dans les siècles suivants, en est venu à désigner une classe professionnelle de négociants répandue en Afrique de l'Ouest — un glissement sémantique dont le terme jula hérite aujourd'hui. Lovejoy (1978), à partir du Soudan central, conteste au contraire l'équivalence Wangara/Jula pour cette région : il y décrit les Wangara comme une diaspora commerciale distincte, liée à l'empire Songhaï plutôt qu'aux réseaux mandé. À ne pas confondre avec les Diola (ou Joola) du Sénégal et de Gambie, peuple distinct de famille linguistique atlantique.",
       "whyProblematic": "La confusion avec les Diola (Joola) du Senegal est frequente en raison de la proximite orthographique des noms. Les Diola sont un peuple distinct parlant une langue atlantique, sans lien avec les Dioula mande. L'identité dioula est elle-même complexe : le terme a été à la fois un nom de métier, une désignation religieuse (commerçant musulman) et un ethnonyme, et des communautés bambara ou mandingues se sont parfois vu attribuer ce terme de l'extérieur. Une forme véhiculaire simplifiée du dioula, parlée bien au-delà des communautés dioula elles-mêmes, se distingue ainsi du dioula identitaire parlé par les communautés d'origine.",
       "contemporaryUsage": "Dioula est l'appellation officielle en Cote d'Ivoire et au Burkina Faso. Dyula est courante dans la litterature academique anglophone. Jula est la forme phonologique standard adoptee par les linguistes. Le terme est utilise a la fois comme nom de peuple et comme nom de langue vehiculaire en Cote d'Ivoire.",
       "linguisticFamily": "FLG_MANDE",
@@ -33,7 +33,7 @@
     ],
     "origins": {
       "ancientOrigins": "Les Dioula sont des Mande islamises, formes au carrefour des reseaux commerciaux arabo-berberes trans-sahariens et de la noblesse mandee convertie a l'islam. Ils descendent des marchands mandingues qui controlaient deja les routes de l'or et du sel entre le Sahel et les forets d'Afrique de l'Ouest a partir du XIe siecle. L'empire du Mali (XIIIe-XIVe siecles) et l'empire Songhai (XVe-XVIe siecles) ont favorise l'expansion de ces reseaux. Selon Niane, Soninke et Maninka etaient les specialistes du commerce de la cola et de l'or et fondaient des etapes vers Kong et Begho ; la foret les nommait jula ou wangara, deux mots que Niane tient pour synonymes de commercant — un rapport que d'autres auteurs contestent pour d'autres regions. Niane date de 1050 l'islamisation des ancetres de Soundiata Keita.",
-      "formationPeriod": "Formation progressive entre le XIe et le XIVe siecle, avec une acceleration de l'identite commerciale distincte a partir du XIVe-XVe siecle. Le royaume de Kong, fonde en 1710 par Sekou Ouattara, constitue le point culminant de la puissance politique dioula.",
+      "formationPeriod": "Formation progressive entre le XIe et le XIVe siecle, avec une acceleration de l'identite commerciale distincte a partir du XIVe-XVe siecle. Le royaume de Kong, dont Sekou Ouattara prend la tête au début du XVIIIe siecle (vers 1710 selon les synthèses courantes ; les dates varient selon les travaux), constitue le point culminant de la puissance politique dioula.",
       "migrationRoutes": [
         "Routes commerciales trans-sahariennes depuis le Maghreb vers Djenne et Tombouctou (depuis le XIe siecle)",
         "Expansion vers le sud depuis Djenne et le delta interieur du Niger vers les forets de Cote d'Ivoire",
@@ -48,9 +48,9 @@
         "Djenné et Tombouctou (Mali) : origines des reseaux",
         "Buna (frontiere Ghana-Cote d'Ivoire) : comptoir commercial"
       ],
-      "unificationsOrDivisions": "La cohesion dioula est fondee sur l'islam et le commerce plutot que sur une unite politique. Le royaume de Kong (1710-1897) a represente la plus grande concentration de pouvoir politique dioula. Sa destruction par Samory Toure en 1897 a disperse la population de Kong. Les dynasties Ouattara (pouvoir coutumier), Baro et Saganogo (pouvoir religieux) structurent les families dominantes.",
+      "unificationsOrDivisions": "La cohesion dioula est fondee sur l'islam et le commerce plutot que sur une unite politique. Le royaume de Kong (du début du XVIIIe siecle à 1897) a represente la plus grande concentration de pouvoir politique dioula. Sa destruction par Samory Toure en 1897 a disperse la population de Kong. Les dynasties Ouattara (pouvoir coutumier), Baro et Saganogo (pouvoir religieux) structurent les families dominantes.",
       "externalInfluences": "L'islam est indissociable de l'identite dioula depuis le debut : ils furent parmi les premiers Africains subsahariens a se convertir. Influence des confréries Qadiriyya (famille Saganogo) et Tijaniyya (famille Diane). La colonisation francaise (decret du 17 octobre 1899) a fragmente les territoires dioula et affaibli les dynasties Ouattara vers 1915. Au XXe siecle, la crise de l'ivoirité (1995) a vise notamment Alassane Ouattara, d'origine dioula. Des contacts commerciaux avec les Europeens (Portugais, Anglais, Français) existent des le XVe siecle sur la cote ; au XXe siecle, l'afflux de travailleurs migrants saheliens en Cote d'Ivoire a renforce l'usage du dioula comme langue vehiculaire.",
-      "majorHistoricalEvents": "Commerce dioula dans la region de Kong avec le Maghreb (depuis le XIe siecle) ; fondation du royaume de Kong par Sekou Ouattara (1710) ; extension du royaume a Bobo-Dioulasso par Famagan Ouattara (1737-1738) ; fondation du royaume de Gonja (nord de l'actuel Ghana) au XVIe siecle par Naba'a ; developpement du systeme educatif islamique par le clan Saganogo a Bobo-Dioulasso (XVIIIe siecle) ; destruction de Kong par Samory Toure (1897) ; fragmentation coloniale (1899) ; crise de l'ivoirité et tensions politiques liees a l'identite dioula (1995-2011) ; Alassane Ouattara, d'origine dioula, devient president de la Cote d'Ivoire en 2011."
+      "majorHistoricalEvents": "Commerce dioula dans la region de Kong avec le Maghreb (depuis le XIe siecle) ; prise de pouvoir de Sekou Ouattara à Kong, localité qui existait avant lui (vers 1710 selon les synthèses courantes ; Massing, 2012, place l'imam Baro auprès de lui dès 1697) ; attaques asante contre Kong, datées de 1701 ou de 1722-1723 selon les auteurs que rapporte Massing (2012) ; extension du royaume a Bobo-Dioulasso par Famagan Ouattara (1737-1738) ; fondation du royaume de Gonja (nord de l'actuel Ghana) au XVIe siecle par Naba'a ; developpement du systeme educatif islamique par le clan Saganogo a Bobo-Dioulasso (XVIIIe siecle) ; destruction de Kong par Samory Toure (1897) ; fragmentation coloniale (1899) ; crise de l'ivoirité et tensions politiques liees a l'identite dioula (1995-2011) ; Alassane Ouattara, d'origine dioula, devient president de la Cote d'Ivoire en 2011."
     },
     "organization": {
       "traditionalPoliticalSystem": "Societe hierarchique et de castes. A Kong, deux groupes sociaux principaux : les horon (citoyens libres) et les woloso (anciens captifs domestiques). La hierarchie est fondee sur l'âge (aine sur cadet), le sexe et la caste familiale. Les aînes ont le pouvoir de parole dominant. Les captifs de guerre (jonw) et une classe de guerriers hereditaires charges de la defense des caravanes et des cites (tuntigi) completent cette hierarchie.",
@@ -77,7 +77,7 @@
       "spiritualities": "Islam sunnite de rite malekite, pratique depuis le XIe siecle. Les Dioula sont parmi les principaux propagateurs de l'islam en Afrique occidentale (avec les Toucouleurs). La tradition de Salim Souari preconise le pluralisme religieux et la coexistence avec les societes animistes. Confréries Qadiriyya et Tijaniyya tres implantees. Un axe central de la spiritualite dioula : l'usage des amulettes et gris-gris islamiques combinent les savoirs coraniques aux pratiques ancestrales."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Royaume de Kong (1710-1897) : fonde par Sekou Ouattara, devenu un des plus importants centres commerciaux et islamiques d'Afrique de l'Ouest. Extension a Bobo-Dioulasso (1737-1738) par Famagan Ouattara. Declin du royaume apres les epidémies, la pression française, et sa destruction finale par Samory Toure en 1897. Le royaume de Gonja (XVIe-XVIIe siecle, nord de l'actuel Ghana), fonde par Naba'a, releve de la meme sphere commerciale et religieuse.",
+      "kingdomsOrChiefdoms": "Royaume de Kong (début du XVIIIe siecle-1897) : Sekou Ouattara en prend la tête dans une localité déjà habitée — Massing (2012) rapporte, d'après Delafosse, une fondation attribuée aux Nafana, et un dirigeant animiste, Lasiri Gombele, avant lui — et en fait un des plus importants centres commerciaux et islamiques d'Afrique de l'Ouest. Extension a Bobo-Dioulasso (1737-1738) par Famagan Ouattara. Declin du royaume apres les epidémies, la pression française, et sa destruction finale par Samory Toure en 1897. Le royaume de Gonja (XVIe-XVIIe siecle, nord de l'actuel Ghana), fonde par Naba'a, releve de la meme sphere commerciale et religieuse.",
       "relationsWithNeighbors": "Relations commerciales avec l'ensemble de l'Afrique de l'Ouest : empire de Bégho, royaumes du Gondja et Gwirikô (Ghana), Manden (Mali), reseaux maghrebins. Intermediaires entre les societies animistes du Sud et les reseaux islamiques du Nord. Tolerance religieuse strategique pour maintenir le monopole commercial.",
       "conflictsOrAlliances": "Alliance avec les reseaux commerciaux arabo-berberes du Sahara. Confrontation avec Samory Toure (destruction de Kong en 1897). Resistance passive a la colonisation francaise. Tensions politiques en Cote d'Ivoire autour de la crise de l'ivoirité (1995-2011) visant la communaute dioula.",
       "diaspora": "La nature meme des Dioula est diasporique : commerçants itinerants, ils ont fonde des comptoirs et des colonies marchandes dans toute l'Afrique de l'Ouest depuis le XIVe siecle. Communautes importantes en Cote d'Ivoire (2,2 millions), Burkina Faso (2,5 millions), Mali (143 000), Ghana (93 000) et Guinea-Bissau. Des communautes existent aussi aux Etats-Unis, au Canada et en Europe, notamment en France."
@@ -139,7 +139,7 @@
         "title": "Niane, Djibril Tamsir (dir.) (1985) – Histoire générale de l'Afrique, tome IV : L'Afrique du XIIe au XVIe siècle. UNESCO, Paris",
         "url": null,
         "tier": "official",
-        "notes": "Publication de l'UNESCO. Le chapitre 6, signé Niane, suit les traditions orales des écoles de griots du Manden et les croise avec les auteurs arabes ; sa chronologie est relative. Antérieure aux relectures archéologiques de Niani."
+        "notes": "Publication de l'UNESCO. Le chapitre 6, signé Niane, suit les traditions orales des écoles de griots du Manden et les croise avec les auteurs arabes ; sa chronologie est relative. Antérieure aux relectures archéologiques de Niani. Dans la section sur le commerce, les Soninké et les Malinké spécialisés dans la cola et l'or sont appelés dioula ou wangara, « commerçants », par les peuples de la forêt (Akan, Gur), et le mot dioula remplace ensuite wangara."
       },
       {
         "title": "Minority Rights Group – Cote d'Ivoire",
@@ -165,10 +165,22 @@
         "notes": "Cite François-Xavier Fauvelle et Jean Bazin sur le glissement sémantique de Wangara vers Jula, du nom d'un groupe vers celui d'une spécialisation professionnelle."
       },
       {
+        "title": "Yaya Konaté, Le dioula véhiculaire : situation sociolinguistique en Côte d'Ivoire, Corela 14-1, 2016",
+        "url": "https://doi.org/10.4000/corela.4586",
+        "tier": "referenced",
+        "notes": "Article fondé sur des enquêtes de terrain : les interlocuteurs de l'auteur traduisent jula par « commerçant »."
+      },
+      {
         "title": "Paul E. Lovejoy, The Role of the Wangara in the Economic Transformation of the Central Sudan in the Fifteenth and Sixteenth Centuries, The Journal of African History 19(2), 1978, pp. 173-193",
         "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/role-of-the-wangara-in-the-economic-transformation-of-the-central-sudan-in-the-fifteenth-and-sixteenth-centuries/1DB11290A76E4158CE5E60EB0CB0E4B9",
         "tier": "referenced",
         "notes": "Conteste, pour le Soudan central et le pays haoussa, l'équivalence courante entre Wangara et Jula : y décrit les Wangara comme une diaspora commerciale distincte, liée à l'empire Songhaï. Résumé consulté, texte intégral non lu."
+      },
+      {
+        "title": "Andreas Walter Massing, Imams of Gonja: The Kamaghate and the Transmission of Islam to the Volta Basin, Cahiers d'études africaines 205, 2012",
+        "url": "https://journals.openedition.org/etudesafricaines/16965",
+        "tier": "referenced",
+        "notes": "Article en accès ouvert. Place à Kong un dirigeant animiste, Lasiri Gombele (1660-1710), avant Seku Watara, auprès duquel l'imam Baro est daté d'environ 1697 à 1745 ; rapporte, d'après Delafosse, une fondation de Kong attribuée aux Nafana, et des dates d'attaques asante que les auteurs fixent différemment (1701 ; 1722-1723)."
       }
     ]
   },

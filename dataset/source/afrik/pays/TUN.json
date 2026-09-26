@@ -13,7 +13,7 @@
         "Africa (romain, origine du nom du continent)",
         "Régence de Tunis (1574-1881)"
       ],
-      "antiquity": "Ifriqiya (nom berbère), Africa (nom romain, origine du nom du continent), Carthage (ancienne capitale punique). Le territoire était peuplé de Berbères et de Phéniciens.",
+      "antiquity": "Ifriqiya (nom berbère), Africa (nom romain, origine du nom du continent), Carthage (ancienne capitale punique). Le territoire était peuplé de Berbères et de Phéniciens. Les Romains emploient Africa vers le IIe siècle avant notre ère pour la région de la Tunisie et de l'Algérie actuelles ; d'où le mot lui-même vient, les historiens en débattent : on l'a rapproché des Afri, un peuple berbère que les Romains connaissaient, mais aucune source ancienne ne le prouve directement.",
       "middleAges": "Ifriqiya (nom arabe), Tunis (capitale). Dynasties arabes et berbères (Aghlabides, Fatimides, Zirides, Hafsides).",
       "precolonial": "Régence de Tunis (1574-1881), État ottoman semi-autonome dirigé par des beys. Le territoire était appelé \"Ifriqiya\" ou \"Tunis\".",
       "colonization": "1881-1956 : Protectorat français de Tunisie. Le nom \"Tunisie\" est officialisé par l'administration coloniale française.",
@@ -231,6 +231,12 @@
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official"
+      },
+      {
+        "title": "South African History Online, « Africa: What's in a name? »",
+        "url": "https://sahistory.org.za/article/africa-whats-name",
+        "tier": "referenced",
+        "notes": "Article d'un portail d'histoire public. Dit que tous les historiens s'accordent sur l'emploi romain du nom en Tunisie et en Algérie vers le IIe siècle avant notre ère, mais que son origine reste discutée : l'idée d'une « terre des Afri » n'est appuyée par aucune preuve directe dans les sources primaires. Mentionne aussi l'explication grecque de Léon l'Africain. Consulté le 25 septembre 2026."
       },
       {
         "title": "UNFPA – World Population Dashboard — Tunisie",

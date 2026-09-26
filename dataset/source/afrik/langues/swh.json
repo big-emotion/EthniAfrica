@@ -17,7 +17,7 @@
     "Kiswahili",
     "Suahili"
   ],
-  "whyProblematic": "Le nom prête à un contresens : Swahili vient de l'arabe sawāḥil, « côtes », mais le swahili est une langue bantoue. Selon Robinson (2024), ses nombreux emprunts, à l'arabe, au persan, au gujarati puis au portugais, à l'allemand et à l'anglais, ont conduit certains observateurs à la ranger parmi les langues non africaines. Kisuaheli et Suahili sont les graphies employées par Krapf en 1850.",
+  "whyProblematic": "Le nom prête à un contresens : Swahili vient de l'arabe sawāḥil, « côtes », mais le swahili est une langue bantoue. Selon Robinson (2024), ses nombreux emprunts, à l'arabe, au persan, au gujarati puis au portugais, à l'allemand et à l'anglais, ont conduit certains observateurs à la ranger parmi les langues non africaines. Kisuaheli et Suahili sont les graphies employées par Krapf en 1850. Depuis quand le mot nomme des gens n'est pas établi. Dans la traduction de Gibb, Ibn Battuta, au XIVe siècle, se rend au « pays des Sawahil », glosé « Coastlands » : le mot y désigne une côte, non un peuple, alors que Robinson (2024) y lit déjà la désignation « Swahili ». En 1850, Krapf recueille trois explications du nom : saua hila, « la ruse », avancée par ses interlocuteurs et qu'il rejette ; Süḥel, le sud-est ; et l'arabe sahel, « la côte », qu'il juge la plus juste. Il rapporte aussi que les intéressés s'en réclament eux-mêmes, en disant « are not we Suaheli », c'est-à-dire des gens qui se tirent d'embarras par l'astuce.",
   "spellingAliases": [],
   "familyId": "FLG_NIGERCONGO",
   "peoples": [],
@@ -56,7 +56,13 @@
         "title": "Krapf, J. L., Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect, Tübingen, L. F. Fues, 1850",
         "url": "https://archive.org/details/krapf-outline-of-the-elements-of-the-kisuaheli-language",
         "tier": "referenced",
-        "notes": "Lu sur la numérisation d'archive.org (texte reconnu automatiquement). Source des graphies Kisuaheli et Suahili."
+        "notes": "Lu sur la numérisation d'archive.org (texte reconnu automatiquement). Source des graphies Kisuaheli et Suahili, et des trois explications du nom données page 10 : saua hila, Süḥel et Sahel, cette dernière jugée « the most correct » par l'auteur."
+      },
+      {
+        "title": "The Travels of Ibn Battuta, A.D. 1325-1354, traduit par H. A. R. Gibb, vol. II, Cambridge, Hakluyt Society, 1962",
+        "url": "https://archive.org/details/travelsofibnbatt02harg",
+        "tier": "referenced",
+        "notes": "Lu sur la numérisation d'archive.org (texte reconnu automatiquement) ; le texte arabe n'a pas été consulté. Page 378 : « the country of the Sawahil [Coastlands] », où se trouve Kilwa. Le traducteur donne au mot le sens de côte."
       }
     ]
   }
