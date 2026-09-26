@@ -82,13 +82,9 @@ describe("home typography (typography charter §8)", () => {
     );
   });
   // @req REQ-091
-  it("keeps the contribution invitation subordinate to the search title", () => {
+  it("keeps the contribution a bare button with no heading of its own", () => {
     const contribution = source("src/components/home/HomeContribute.tsx");
-    expect(declarations(contribution, ".home-contribute h2")).toMatch(
-      /font-size:\s*var\(--afh-text-h3\)/
-    );
-    expect(declarations(contribution, ".home-contribute p")).toMatch(
-      /font-size:\s*var\(--afh-text-body\)/
-    );
+    expect(contribution).not.toMatch(/<h2\b/);
+    expect(contribution).not.toMatch(/<p\b/);
   });
 });
