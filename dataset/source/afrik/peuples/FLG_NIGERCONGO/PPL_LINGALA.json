@@ -13,7 +13,7 @@
         "Ngala",
         "Wangala"
       ],
-      "originOfExonyms": "Le terme Bangala est adopté par les Européens à partir de 1877 comme désignation pratique des Congolais de la région du fleuve. Le nom Lingala est débattu : selon Meeuwis, il apparaît par écrit en 1901-1902 sous l'influence des missionnaires catholiques de Scheut, qui l'adoptent à la place de Bangala pour la langue standardisée issue du bobangi ; selon Mimpongo, le nom existait déjà en bobangi, sous la forme d'une expression qui signifie le langage des marchés. Les deux lectures s'appuient sur des sources différentes et ne sont pas départagées ici.",
+      "originOfExonyms": "Le terme Bangala est adopté par les Européens à partir de 1877 comme désignation pratique des Congolais de la région du fleuve. Le nom Lingala est débattu : selon Meeuwis, il apparaît par écrit en 1901-1902 sous l'influence des missionnaires catholiques de Scheut, qui l'adoptent à la place de Bangala pour la langue standardisée issue du bobangi ; selon Mimpongo, le nom existait déjà en bobangi, sous la forme d'une expression qui signifie le langage des marchés ; selon Mbulamoko (1991), il dérive de Bangala et serait entré dans l'usage vers 1895. Ces lectures s'appuient sur des sources différentes et ne sont pas départagées ici.",
       "whyProblematic": "Le lingala désigne avant tout une langue véhiculaire plutôt qu'un groupe ethnique homogène. Les peuples qui la parlent comme langue maternelle constituent une constellation de groupes riverains distincts (Bangala, Budja, Ngombe, Poto, Boloki, Libinza, Ngbandi) regroupés sous une identité linguistique commune, dont l'étendue actuelle doit beaucoup à l'usage qu'en ont fait l'armée et les missions coloniales (Castillo, 2024).",
       "contemporaryUsage": "Lingala est l'une des quatre langues nationales de la RDC et langue officielle de facto de l'armee nationale. Elle est egalement reconnue comme vehiculaire au Congo-Brazzaville. Elle est associee a la musique soukous/ndombolo et a la culture populaire congolaise a travers le monde. Environ 59% de la population de la RDC l'utilise selon une enquete de 2021.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -125,6 +125,12 @@
         "url": "https://ling.auf.net/lingbuzz/008154",
         "tier": "referenced",
         "notes": "Propose que Lingála et Mangála viennent d'une expression bobangi signifiant « le langage des grands marchés », et discute les lectures de Coquilhat, de Mumbanza et de Tshimpaka."
+      },
+      {
+        "title": "Mbulamoko Nzenge Movoambe, « État des recherches sur le lingala comme groupe linguistique autonome », Annales Aequatoria, 12, 1991, p. 377-406",
+        "url": "https://www.aequatoria.be/04common/020publications_pdf/Annales%20Aequatoria%201991.pdf",
+        "tier": "referenced",
+        "notes": "Fait dériver lingala de Bangala, nom employé pour la première fois par Stanley en 1877, et situe l'entrée du nom lingala dans l'usage autour de 1895."
       },
       {
         "title": "Castillo, Joshua, « Navigating Lingala: Linguistic Change, Political Power, and Everyday Authoritarianism in Congo-Zaire, 1965-97 », The Journal of African History, 65, 2024, p. 327-343",

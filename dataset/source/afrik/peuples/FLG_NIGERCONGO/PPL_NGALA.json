@@ -17,8 +17,8 @@
         "Wangala",
         "Ngalla"
       ],
-      "originOfExonyms": "Le nom apparaît par écrit en février 1877 chez Stanley, qui note Mangala à la fois comme localité et comme nation, d'après des habitants de Rubunga, dans la région d'Upoto. Les Européens en font ensuite Bangala : ils nomment ainsi, à partir de 1884, le poste de Bangala-Station, puis les Congolais de toute la région. Le sens du nom est discuté. Coquilhat (1888) et Hulstaert (1974) y voient les gens de la petite rivière ; Mumbanza (1973) y voit les gens de Mankanza ; Mimpongo (2025) rattache le nom de la langue à une expression bobangi qui signifie le langage des grands marchés, plus ancienne que le nom du peuple. Ces lectures ne sont pas départagées ici.",
-      "whyProblematic": "Le terme Bangala/Ngala a d'abord été posé de l'extérieur, par des Européens, sur un ensemble de groupes distincts le long du Moyen-Congo et du Haut-Congo (Budja, Ngombe, Poto, Doko, Mondunga, Ngbandi, Ngbaka, Mbanza, etc.). Certains de ces groupes sont de souche soudanaise (Ngbandi, Ngbaka) et non strictement bantoue. Le parler qui porte le même nom, le bangala, est issu du bobangi et devenu langue de contact au poste de Bangala-Station (Meeuwis, 2020).",
+      "originOfExonyms": "Le nom apparaît par écrit en février 1877 chez Stanley, qui note Mangala à la fois comme localité et comme nation, d'après des habitants de Rubunga, dans la région d'Upoto. Les Européens en font ensuite Bangala : ils nomment ainsi, à partir de 1884, le poste de Bangala-Station, puis les Congolais de toute la région. Le sens du nom est discuté. Coquilhat (1888) et Hulstaert (1940, 1974) y voient les gens de la petite rivière ; Mumbanza (1973) y voit les gens de Mankanza ; Mimpongo (2025) rattache le nom de la langue à une expression bobangi qui signifie le langage des grands marchés, plus ancienne que le nom du peuple. Ces lectures ne sont pas départagées ici.",
+      "whyProblematic": "Le terme Bangala/Ngala a d'abord été posé de l'extérieur, par des Européens, sur un ensemble de groupes distincts le long du Moyen-Congo et du Haut-Congo (Budja, Ngombe, Poto, Doko, Mondunga, Ngbandi, Ngbaka, Mbanza, etc.). Certains de ces groupes sont de souche soudanaise (Ngbandi, Ngbaka) et non strictement bantoue. Le parler qui porte le même nom, le bangala, est issu du bobangi et devenu langue de contact au poste de Bangala-Station (Meeuwis, 2020). Hulstaert tenait déjà en 1940 pour presque certain qu'aucune tribu Bangala n'avait existé.",
       "contemporaryUsage": "Le terme Bangala est surtout utilisé dans un sens linguistique (langue bangala, soeur du lingala) et historique. Le nom est aussi repris par des groupes de la région : selon Mumbanza (1995), les Iboko, les Mabale et les habitants de Mankanza se disent Mangala ma Liboko ; selon Lothaire (cité en 1907), des travailleurs de groupes différents se disaient « nous Bangala » loin de chez eux. Le lingala, héritier direct du bangala colonial, est aujourd'hui la langue véhiculaire de 10 à 25 millions de personnes en RDC et en République du Congo.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou (Zone C) et partiellement Oubanguien (groupes Ngbandi, Ngbaka)",
@@ -125,6 +125,18 @@
         "url": "https://ling.auf.net/lingbuzz/008154",
         "tier": "referenced",
         "notes": "Propose que Lingála et Mangála viennent d'une expression bobangi signifiant « le langage des grands marchés », et discute les lectures de Coquilhat, de Mumbanza (dont la formule Mangala ma Liboko) et de Tshimpaka."
+      },
+      {
+        "title": "Hulstaert, Gustaaf, « Lingala », Æquatoria, 3, 1940, p. 33-43",
+        "url": "https://www.aequatoria.be/04common/020publications_pdf/Aequatoria%201940.pdf",
+        "tier": "referenced",
+        "notes": "Écrit, p. 36, qu'il est presque certain qu'aucune tribu Bangala n'a existé et que le nom dérive probablement de mongala, bras de rivière ; énumère les tribus riveraines auxquelles le nom est appliqué (Boloki, Iboko, Mabale, Bapoto, etc.)."
+      },
+      {
+        "title": "Mbulamoko Nzenge Movoambe, « État des recherches sur le lingala comme groupe linguistique autonome », Annales Aequatoria, 12, 1991, p. 377-406",
+        "url": "https://www.aequatoria.be/04common/020publications_pdf/Annales%20Aequatoria%201991.pdf",
+        "tier": "referenced",
+        "notes": "Fait dériver lingala de Bangala, nom employé pour la première fois par Stanley en 1877, et situe l'entrée du nom lingala dans l'usage autour de 1895."
       },
       {
         "title": "Omasombo Tshonda, Jean (dir.), Mongala, Musée royal de l'Afrique centrale, 2015, p. 15-17",
