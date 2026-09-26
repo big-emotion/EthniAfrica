@@ -7,8 +7,8 @@
   "content": {
     "appellations": {
       "mainName": "Ngala (Bangala)",
-      "selfAppellation": "Bangala / Mongala (singulier)",
-      "exonyms": ["Bangala", "Bamangala", "Mangala", "Boloki (Baloki, Boluki)"],
+      "selfAppellation": "Mangala ma Liboko (nom que se donnent, selon Mumbanza, 1995, les Iboko, les Mabale et les habitants de Mankanza)",
+      "exonyms": ["Bangala", "Bamangala", "Mangala"],
       "spellingAliases": [
         "Bangalla",
         "Mangali",
@@ -17,9 +17,9 @@
         "Wangala",
         "Ngalla"
       ],
-      "originOfExonyms": "En lingala, Bangala se traduit par Peuple de la Mongala, désignant les populations vivant le long de la rivière Mongala (affluent du Congo). Les Européens nommèrent les habitants de la zone autour du poste de Bangala-Station (actuel Nouvelle-Anvers) Bangala dès 1877. Ce terme fut étendu abusivement à plusieurs groupes ethniques distincts du Haut et Moyen-Congo. Le terme Boloki désigne le même groupe sous un autre nom local.",
-      "whyProblematic": "Le terme Bangala/Ngala est une désignation collective et souvent imprécise regroupant une constellation de groupes ethniques distincts le long du Moyen-Congo et du Haut-Congo (Budja, Ngombe, Poto, Doko, Mondunga, Ngbandi, Ngbaka, Mbanza, etc.). Certains de ces groupes sont de souche soudanaise (Ngbandi, Ngbaka) et non strictement bantoue. La langue bangala (Mɔnɔkɔ na bangála) servit de base au pidgin colonial qui devint le lingala.",
-      "contemporaryUsage": "Le terme Bangala est surtout utilisé dans un sens linguistique (langue bangala, soeur du lingala) et historique. L'identité ethnique Bangala/Ngala comme telle est peu revendiquée aujourd'hui ; les groupes se désignent par leur affiliation villageoise ou clanique. Le lingala, héritier direct du bangala colonial, est aujourd'hui la langue véhiculaire de 10 à 25 millions de personnes en RDC et en République du Congo.",
+      "originOfExonyms": "Le nom apparaît par écrit en février 1877 chez Stanley, qui note Mangala à la fois comme localité et comme nation, d'après des habitants de Rubunga, dans la région d'Upoto. Les Européens en font ensuite Bangala : ils nomment ainsi, à partir de 1884, le poste de Bangala-Station, puis les Congolais de toute la région. Le sens du nom est discuté. Coquilhat (1888) et Hulstaert (1974) y voient les gens de la petite rivière ; Mumbanza (1973) y voit les gens de Mankanza ; Mimpongo (2025) rattache le nom de la langue à une expression bobangi qui signifie le langage des grands marchés, plus ancienne que le nom du peuple. Ces lectures ne sont pas départagées ici.",
+      "whyProblematic": "Le terme Bangala/Ngala a d'abord été posé de l'extérieur, par des Européens, sur un ensemble de groupes distincts le long du Moyen-Congo et du Haut-Congo (Budja, Ngombe, Poto, Doko, Mondunga, Ngbandi, Ngbaka, Mbanza, etc.). Certains de ces groupes sont de souche soudanaise (Ngbandi, Ngbaka) et non strictement bantoue. Le parler qui porte le même nom, le bangala, est issu du bobangi et devenu langue de contact au poste de Bangala-Station (Meeuwis, 2020).",
+      "contemporaryUsage": "Le terme Bangala est surtout utilisé dans un sens linguistique (langue bangala, soeur du lingala) et historique. Le nom est aussi repris par des groupes de la région : selon Mumbanza (1995), les Iboko, les Mabale et les habitants de Mankanza se disent Mangala ma Liboko ; selon Lothaire (cité en 1907), des travailleurs de groupes différents se disaient « nous Bangala » loin de chez eux. Le lingala, héritier direct du bangala colonial, est aujourd'hui la langue véhiculaire de 10 à 25 millions de personnes en RDC et en République du Congo.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou (Zone C) et partiellement Oubanguien (groupes Ngbandi, Ngbaka)",
       "historicalRegion": "Confluent des rivières Ubangi et Congo (Haute-Équateur, RDC) ; Poste de Bangala-Station (actuel Nouvelle-Anvers) ; rivière Mongala ; Moyen et Haut-Congo",
@@ -27,7 +27,7 @@
     },
     "ethnicities": [
       "Bangala proprement dit (populations riveraines autour de la Bangala-Station / Nouvelle-Anvers, nord-ouest RDC)",
-      "Boloki (Baloki / Boluki : dénomination alternative du même groupe riverain)",
+      "Boloki (Baloki / Boluki : groupe riverain que les Européens rangeaient parmi les Bangala ; son parler local reste distinct du bangala, selon Meeuwis, 2020)",
       "Ngombe (voisins nord des Bangala, regroupés parfois avec eux)",
       "Poto (groupe riverain voisin, Équateur)",
       "Lobala (Lubala, à l'ouest des Bangala, données limitées)",
@@ -78,7 +78,7 @@
       "spiritualities": "Animisme traditionnel avec croyance aux esprits de la nature (forêt, eau) et aux ancêtres. Pratiques de divination et de guérison par les nganga (devins-guérisseurs). Croyance à des esprits maléfiques des eaux (ndoki). Christianisme dominant depuis le XXe siècle : catholique (missions Scheutistes et Prémontrés) et protestantisme baptiste (Baptist Missionary Society). Syncrétisme entre ancestralité bantoue et pratiques chrétiennes (Kimbanguisme, Église du Réveil)."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaume ou de chefferie centralisée. Organisation en districts de villages sous des chefs locaux. Le poste de Bangala-Station (Nouvelle-Anvers, fondé vers 1883) fut le principal centre colonial et missionnaire dans la région. L'absence de structure politique centralisée facilita la pénétration coloniale mais rendit les Bangala moins vulnérables à une domination directe.",
+      "kingdomsOrChiefdoms": "Pas de royaume ou de chefferie centralisée. Organisation en districts de villages sous des chefs locaux. Le poste de Bangala-Station (Nouvelle-Anvers, fondé en 1884) fut le principal centre colonial et missionnaire dans la région. L'absence de structure politique centralisée facilita la pénétration coloniale mais rendit les Bangala moins vulnérables à une domination directe.",
       "relationsWithNeighbors": "Commerce fluvial intensif avec les Bobangi (commerçants du fleuve Congo), les Mongo, les Ngombe et les autres groupes riverains. Échanges de poisson contre produits agricoles avec les populations de l'intérieur. Relations mixtes (commerciales et parfois belliqueuses) avec les groupes soudanais du nord (Ngbandi, Ngbaka). Contacts avec les marchands arabo-swahili de l'est (XIXe siècle).",
       "conflictsOrAlliances": "Résistance sporadique à l'occupation coloniale de l'État Indépendant du Congo (1880s-1900s). Les pratiques de caoutchouc forcé (caoutchouc rouge) imposées par l'État de Léopold II causèrent des souffrances importantes dans toute la région du Haut-Congo. Conflits internes entre villages et districts pour le contrôle des droits de pêche et des routes commerciales.",
       "diaspora": "Les locuteurs lingala/bangala sont présents dans toutes les grandes villes de la RDC (Kinshasa, Kisangani, Mbandaka) et de la République du Congo (Brazzaville, Pointe-Noire). Le lingala, langue de l'armée et de la musique populaire, a diffusé la culture des peuples du fleuve bien au-delà de leur territoire d'origine. Des communautés congolaises lingalophones sont présentes en Europe (Belgique, France), en Amérique du Nord et en Afrique de l'Est."
@@ -117,7 +117,32 @@
       {
         "title": "Ugent Biblio — The linguistic features of Bangala before Lingala",
         "url": "https://backoffice.biblio.ugent.be/download/8644523/8645617",
-        "tier": "referenced"
+        "tier": "referenced",
+        "notes": "Article de Michael Meeuwis (Afrikanistik-Aegyptologie Online, 2019, publié en 2020). Décrit la fondation de Bangala-Station en 1884, le passage du nom Bangala du peuple supposé au poste puis au parler issu du bobangi, et les langues locales distinctes de la région (liboko, mabale, libinza, boloki)."
+      },
+      {
+        "title": "Mimpongo, Mpoke, « L'origine et la signification du glossonyme lingala », lingbuzz, 2024",
+        "url": "https://ling.auf.net/lingbuzz/008154",
+        "tier": "referenced",
+        "notes": "Propose que Lingála et Mangála viennent d'une expression bobangi signifiant « le langage des grands marchés », et discute les lectures de Coquilhat, de Mumbanza (dont la formule Mangala ma Liboko) et de Tshimpaka."
+      },
+      {
+        "title": "Omasombo Tshonda, Jean (dir.), Mongala, Musée royal de l'Afrique centrale, 2015, p. 15-17",
+        "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/monographies-provinces/mongala.pdf",
+        "tier": "referenced",
+        "notes": "Rapporte la lecture de Coquilhat (1888), pour qui Ba-Ngala signifie les gens de la petite rivière, et les notations de Stanley en 1877 pour la contrée Manngala et la rivière Banngala."
+      },
+      {
+        "title": "Stanley, Henry M., Through the Dark Continent, vol. II, 1878 (transcription de l'édition de 1899)",
+        "url": "https://www.gutenberg.org/files/76825/76825-0.txt",
+        "tier": "referenced",
+        "notes": "Récit de la descente du Congo en 1877 : première trace écrite de Mangala, note à la fois comme localité et comme nation, puis emploi de Bangala pour désigner les habitants."
+      },
+      {
+        "title": "Van Overbergh, Cyrille, et de Jonghe, Édouard, Les Bangala (État indépendant du Congo), Bruxelles, 1907, p. 55-56",
+        "url": "https://archive.org/stream/lesbangalatatin00jonggoog/lesbangalatatin00jonggoog_djvu.txt",
+        "tier": "referenced",
+        "notes": "Rapporte la réponse de Lothaire : des travailleurs de groupes différents se disent Bangala loin de chez eux."
       },
       {
         "title": "EBSCO Research Starters — Lingala Language",
