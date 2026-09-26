@@ -10,6 +10,36 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [4.20.0] - 2026-09-25
+
+### Added
+
+- Search finds a production by the word the reader typed, and the shorts block
+  on the result page reads the production ledger (#1328, #1334).
+- Every proverb sits on a free-licence photograph (#1341).
+- The ethnie, zombie, vodun and Afrique reels are filed with their sources,
+  and sixteen published videos carry their poster, duration and source
+  (#1332, #1338, #1339).
+- Social production: a source-timed scene-video engine with geographic
+  presence, animated chronology, bold regions and held journey paths; a shared
+  video production coordinator that routes stages across models with
+  evidence-bound progress; the Mémoires sonores carousel profile with its
+  approved layouts; and delivery that requires cover and publication copy
+  (#1335, #1337, #1340, #1342, #1344, #1345, #1347, #1348).
+
+### Changed
+
+- Corpus: `SEN` gains the national-identification survey and the OAU border
+  pledge as sourced entries (#1353); the Lingala language fiche (`lin`) gains
+  sourced names, varieties and status (#1350).
+
+### Fixed
+
+- A word piece is kept on a result page that shows only related entries
+  (#1336).
+- The site's words fade out while an embedded video plays in Discoveries
+  (#1331).
+
 ## [4.19.0] - 2026-09-23
 
 ### Added
@@ -1419,7 +1449,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.19.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.20.0...HEAD
+[4.20.0]: https://github.com/big-emotion/ethniafrica/compare/v4.19.0...v4.20.0
 [4.19.0]: https://github.com/big-emotion/ethniafrica/compare/v4.18.0...v4.19.0
 [4.18.0]: https://github.com/big-emotion/ethniafrica/compare/v4.17.0...v4.18.0
 [4.17.0]: https://github.com/big-emotion/ethniafrica/compare/v4.16.0...v4.17.0
