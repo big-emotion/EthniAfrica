@@ -22,6 +22,7 @@ import { facetsCopy } from "@/lib/i18n/copy/facets";
 import { fieldProvenanceCopy } from "@/lib/i18n/copy/fieldProvenance";
 import { familyCopy } from "@/lib/i18n/copy/family";
 import { ficheCopy } from "@/lib/i18n/copy/fiche";
+import { ficheNameStoryCopy } from "@/lib/i18n/copy/ficheNameStory";
 import { footerCopy } from "@/lib/i18n/copy/footer";
 import { galleryCopy } from "@/lib/i18n/copy/gallery";
 import { gamesCopy } from "@/lib/i18n/copy/games";
@@ -98,6 +99,7 @@ export const COPY_MODULES = {
   fieldProvenance: fieldProvenanceCopy,
   family: familyCopy,
   fiche: ficheCopy,
+  ficheNameStory: ficheNameStoryCopy,
   languageFiche: languageFicheCopy,
   peopleFiche: peopleCopy,
   hubs: hubsCopy,

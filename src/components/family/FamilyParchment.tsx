@@ -9,7 +9,9 @@ import { getCountryRoute, getPeopleRoute } from "@/lib/routing";
 import { classifyFieldProvenance } from "@/lib/fieldProvenance";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
 import { FicheSection as Section } from "@/components/fiche/FicheSection";
+import { FicheNameStory } from "@/components/fiche/FicheNameStory";
 import { FicheStatCard } from "@/components/fiche/FicheStatCard";
+import { readNaming } from "@/lib/search/naming";
 import {
   MEMBER_PEOPLES_SHOWN,
   rankFootprint,
@@ -226,6 +228,14 @@ export function FamilyParchment({
           </div>
         </div>
       )}
+
+      <FicheNameStory
+        chapter
+        naming={readNaming("languageFamily", {
+          decolonialHeader: data.decolonialHeader,
+        })}
+        language={language}
+      />
 
       <Section title={copy.figures}>
         {/* Inside the first chapter, on the people record's precedent: the

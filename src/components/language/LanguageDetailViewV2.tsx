@@ -5,7 +5,9 @@ import Link from "next/link";
 
 import type { LanguagePageData } from "@/lib/languageDataTransformer";
 import { getFamilyRoute, getPeopleRoute } from "@/lib/routing";
+import { FicheNameStory } from "@/components/fiche/FicheNameStory";
 import { FicheSection } from "@/components/fiche/FicheSection";
+import { readNaming } from "@/lib/search/naming";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
 import { FicheSources } from "@/components/fiche/FicheSources";
 import { ProvenanceBanner } from "@/components/source-transparency/ProvenanceBanner";
@@ -70,6 +72,15 @@ export function LanguageDetailViewV2({
 
   return (
     <div className="afh-parchment" id="fiche">
+      <FicheNameStory
+        chapter
+        naming={readNaming("language", {
+          alternateNames: data.alternateNames,
+          spellingAliases: data.spellingAliases,
+        })}
+        language={language}
+      />
+
       <FicheSection title={copy.identifiers}>
         {/* Inside the first chapter, on the people record's precedent: the
             parchment keeps no child off the chapter ground, and the banner's

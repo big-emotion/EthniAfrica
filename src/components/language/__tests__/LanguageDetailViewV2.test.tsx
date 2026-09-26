@@ -117,4 +117,31 @@ describe("LanguageDetailViewV2", () => {
     ).toBeInTheDocument();
     expect(screen.getByText("Donnée manquante")).toBeInTheDocument();
   });
+
+  // @req REQ-151
+  it("opens on the history of the names, before the identifiers", () => {
+    const { container } = render(
+      <LanguageDetailViewV2 language="fr" data={fullData} />
+    );
+
+    const chapters = [...container.querySelectorAll("[data-fiche-section]")];
+    expect(chapters[0]).toHaveAttribute(
+      "data-fiche-section",
+      "L’histoire des noms"
+    );
+    expect(chapters[0]).toHaveTextContent("Yariba");
+    expect(chapters[1]).toHaveAttribute("data-fiche-section", "Identifiants");
+  });
+
+  // @req REQ-151
+  it("draws no name chapter for a language with no other name", () => {
+    render(
+      <LanguageDetailViewV2
+        language="fr"
+        data={{ ...fullData, alternateNames: [], spellingAliases: [] }}
+      />
+    );
+
+    expect(screen.queryByTestId("fiche-name-story")).toBeNull();
+  });
 });

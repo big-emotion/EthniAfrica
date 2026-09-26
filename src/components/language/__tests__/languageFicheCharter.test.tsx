@@ -127,7 +127,8 @@ describe("language fiche charter — what the service used to withhold", () => {
     render(<LanguageDetailViewV2 language="fr" data={filled} />);
 
     for (const form of ["Yariba", "Yooba", "Yorouba"]) {
-      expect(screen.getByText(form)).toBeInTheDocument();
+      // The opening name story lists the same forms as this chapter.
+      expect(screen.getAllByText(form).length).toBeGreaterThan(0);
     }
   });
 
