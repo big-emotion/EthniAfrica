@@ -1,0 +1,14 @@
+{
+  "id": "lectures-afrique",
+  "label": "Lectures d'Afrique",
+  "guide": "docs/design/gabarits-social/LECTURES-AFRIQUE.md",
+  "visual": {
+    "id": "lectures-afrique-v1",
+    "status": "proposed",
+    "imageRoles": ["serie"]
+  },
+  "formats": {
+    "carrousel": ["TikTok", "Instagram", "Facebook", "YouTube", "LinkedIn"]
+  },
+  "sequence": ["ouverture", "serie", "cloture"]
+}

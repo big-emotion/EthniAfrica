@@ -43,7 +43,8 @@ FORMATS = ("carrousel", "reel")
 def _pourquoi(plan, carte, image, fmt_key, deck):
     """The sentence that lets somebody contest a layout without reading code."""
     if carousel_profiles.visual(deck):
-        return f"{plan.disposition} — {carte['etape']} approuvé"
+        status = "approuvé" if carousel_profiles.visual(deck)["status"] == "approved" else "proposé"
+        return f"{plan.disposition} — {carte.get('etape') or carte['role']} {status}"
     cadre = tk.fmt(fmt_key)
     sur_ech = max(cadre["w"] / image.width, cadre["h"] / image.height)
     signes = len(carte.get("corps") or "")
@@ -265,9 +266,8 @@ def main():
     # §6 — the quota, stated whether or not it held. A deck that scrapes past it is
     # as much a signal to `structure` as one that fails.
     if carousel_profiles.visual(deck):
-        lignes += ["## Présentation musicale", "",
-                   "Deux cartes photographiques et quatre cartes de texte, selon la référence approuvée.",
-                   "Le quota A/B/C des carrousels de noms ne s’applique pas à ce profil.", ""]
+        layout = carousel_profiles.layout(deck)
+        lignes += [f"## {layout.REPORT_TITLE}", "", *layout.REPORT_NOTE, ""]
     else:
         lignes += ["## Répartition des dispositions", "",
                    f"§6 — au moins {tk.QUOTA_A_MIN:.0%} en A, au plus "
