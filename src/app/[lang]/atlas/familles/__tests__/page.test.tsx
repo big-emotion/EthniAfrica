@@ -1,5 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { fireEvent, render, within } from "@testing-library/react";
+import { act, fireEvent, render, within } from "@testing-library/react";
+import { setFicheMapOpen } from "@/components/fiche/FicheMapBand";
 import React from "react";
 
 import type { LanguageFamily } from "@/types/afrik";
@@ -185,7 +186,13 @@ async function renderFamillesPage(slug: string, lang = "fr") {
   const ui = await FamillesSlugPage({
     params: Promise.resolve({ lang, slug }),
   });
-  return render((await resolveAsyncServerComponents(ui)) as React.ReactElement);
+  const view = render(
+    (await resolveAsyncServerComponents(ui)) as React.ReactElement
+  );
+  // The map band is closed until the reader opens it; these suites are about
+  // what the map does once it is open.
+  act(() => setFicheMapOpen(true));
+  return view;
 }
 
 /** For the paths that never reach a render: notFound() and redirect() throw. */

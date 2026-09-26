@@ -2,9 +2,10 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
 import { describe, expect, it } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 
 import { ACCENT_CLASS_BY_ENTITY, FicheSequence } from "../FicheSequence";
+import { setFicheMapOpen } from "@/components/fiche/FicheMapBand";
 import { FICHE_RECORD_ANCHOR } from "@/lib/ficheChapters";
 import type { FicheEntityType } from "@/types/fiche";
 
@@ -157,11 +158,16 @@ describe("FicheSequence — measures and order", () => {
       />
     );
 
+    act(() => setFicheMapOpen(true));
     const root = container.firstElementChild;
     const globe = screen.getByTestId("globe-stage");
     const record = container.querySelector(`#${FICHE_RECORD_ANCHOR}`);
 
-    expect(globe.parentElement).toBe(root);
+    // The globe sits in the map band, which is itself a direct child.
+    expect(globe.parentElement).toBe(
+      root!.querySelector("[data-fiche-map-band]")
+    );
+    expect(globe.parentElement!.parentElement).toBe(root);
     expect(record?.parentElement).toBe(root);
   });
 
@@ -192,9 +198,14 @@ describe("FicheSequence — measures and order", () => {
       />
     );
 
+    act(() => setFicheMapOpen(true));
     const children = Array.from(container.firstElementChild!.children);
 
-    expect(children.indexOf(screen.getByTestId("globe-stage"))).toBe(0);
+    expect(
+      children.indexOf(
+        screen.getByTestId("globe-stage").closest("[data-fiche-map-band]")!
+      )
+    ).toBe(0);
     expect(children.indexOf(container.querySelector("section")!)).toBe(
       children.length - 1
     );

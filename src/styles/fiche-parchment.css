@@ -104,6 +104,33 @@
   box-shadow: var(--afh-ring-focus);
 }
 
+/* Opens the night map, which a fiche keeps closed until asked. Under the head
+   rather than beside the title: on a phone a second control next to the name
+   and the contribute link would wrap the title before it wrapped the buttons. */
+.afh-parchment-map-toggle {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: var(--afh-space-lg);
+  padding-inline: var(--afh-space-4xl);
+  border: 1px solid var(--accent-ink);
+  border-radius: var(--afh-radius-base);
+  background: transparent;
+  font-size: var(--afh-text-small);
+  font-weight: 600;
+  color: var(--accent-ink);
+  cursor: pointer;
+}
+
+.afh-parchment-map-toggle:hover {
+  text-decoration: underline;
+}
+
+.afh-parchment-map-toggle:focus-visible {
+  outline: none;
+  box-shadow: var(--afh-ring-focus);
+}
+
 .afh-parchment-head h1 {
   margin: 0;
   font-family: var(--afh-font-display);
