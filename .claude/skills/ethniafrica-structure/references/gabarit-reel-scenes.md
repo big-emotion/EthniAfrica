@@ -63,6 +63,15 @@ context item has its own period, which need not equal the main event's exact yea
 Regional neighbours and familiar world events should fit the subject and audience;
 never manufacture a causal connection or force the same country into every sequence.
 
+**Maps and openings (operator ruling, 2026-09-27).** A new video draws its maps on the relief
+globe (`projection: "globe"`, contract in `social/harness/SCENES.md`), never on the flat vector
+Africa alone: the reader must see the seas, the Mediterranean and the neighbouring continents.
+A video never opens on a bare map: the first scene is a photograph of the place or the people,
+read for licence and identity like any image, and a map scene follows it. Use `country` features
+(`draw_seconds`, `extrude`) for a present-day state and a raised feathered `presence-zone` for the
+area where a name is used, labelled approximate. A timeline with no explanation on screen is not
+used; a date the narration does not say is not drawn.
+
 `timeline.background` now accepts sourced points, routes and regions, with explicit
 reveal/expiry cues. Keep the visible uncertainty and schematic qualifiers. The map
 sits below the rail; contextual cards must not cover it. Geographic scenes can also

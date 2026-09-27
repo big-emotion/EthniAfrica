@@ -43,7 +43,7 @@ a Mercator raster (the current look, with the same missing context).
 
 - `projection`: `"mercator"` (default) or `"globe"`.
 - `relief`: id of an asset of kind `relief`. Required for `globe`.
-- `rivers`, `lakes`: ids of `geojson` assets of the river-centreline and lake layers. Optional.
+- `rivers`, `lakes`: ids of `vector` assets (a GeoJSON of lines or polygons, no country code required). Optional.
 - `atmosphere`: boolean, the halo and limb darkening of the globe. Default true for `globe`.
 - `border_style`: `solid`, `dashed`, `soft`, `glow`, `none`. `border_width`: number of pixels.
 - Camera keyframes: `{at, bounds}` for Mercator; `{at, center:[lon,lat], span, tilt?, heading?, ease?}` for the globe.
@@ -59,7 +59,7 @@ Feature kinds added: `label` (text at a point, styles `sea` and `place`). Featur
 
 Natural Earth, public domain: `HYP_HR_SR_OB_DR` (1/60 degree, shaded relief, sea floor,
 drainages), the 10 m rivers and lakes, the countries. The 700 MB source stays in the private
-workshop; `social/tools/relief/build_relief_pack.py` cuts a region pack (JPEG plus its bounds)
+workshop; `social/harness/ethni_relief_pack.py` cuts a region pack (JPEG plus its bounds)
 that travels with the project's assets.
 
 ## Test plan (tests first)
