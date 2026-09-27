@@ -11,9 +11,24 @@
   "subjects": [],
   "sitePath": "/fr/about",
   "publications": [
-    { "network": "tiktok", "format": "carrousel" },
-    { "network": "instagram", "format": "carrousel" },
-    { "network": "facebook", "format": "carrousel" },
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7690133056920767766",
+      "publishedAt": "2026-09-27"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/DdyNc-XCGwz/",
+      "publishedAt": "2026-09-27"
+    },
+    {
+      "network": "facebook",
+      "format": "carrousel",
+      "url": "https://www.facebook.com/photo/?fbid=122117062311465536&set=pcb.122117062437465536",
+      "publishedAt": "2026-09-27"
+    },
     { "network": "youtube", "format": "carrousel" },
     { "network": "linkedin", "format": "carrousel" }
   ]
