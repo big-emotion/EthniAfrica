@@ -17,6 +17,7 @@ from PIL import Image
 
 Image.MAX_IMAGE_PIXELS = None  # the world raster is a trusted local file, far above Pillow's default guard
 EPSILON = 1e-6
+MAX_LATITUDE = 85  # the scene plan's coordinate contract; see crop_layer
 
 
 def pixel_window(bounds, size):
@@ -49,8 +50,12 @@ def _extent(geometry):
     return (min(xs), min(ys), max(xs), max(ys)) if xs else None
 
 
-def crop_layer(layer, bounds):
-    """The features of a GeoJSON layer whose extent reaches `bounds`."""
+def crop_layer(layer, bounds, max_latitude=None):
+    """The features of a GeoJSON layer whose extent reaches `bounds`.
+
+    `max_latitude` drops any feature that goes past it (Antarctica): the scene plan's basemap
+    contract refuses coordinates beyond 85 degrees, and dropping the whole feature is honest where
+    clipping it would invent a coastline."""
     west, south, east, north = bounds
     kept = []
     for feature in layer["features"]:
@@ -58,6 +63,8 @@ def crop_layer(layer, bounds):
         if extent is None:
             continue  # the source layers carry a few empty geometries
         x0, y0, x1, y1 = extent
+        if max_latitude is not None and max(abs(y0), abs(y1)) > max_latitude:
+            continue
         if x1 >= west and x0 <= east and y1 >= south and y0 <= north:
             kept.append(feature)
     if not kept:
@@ -76,7 +83,7 @@ def build_pack(source, bounds, out_dir, width, layers=None, quality=88):
     region.save(relief, quality=quality, optimize=True)
     written = {}
     for name, path in (layers or {}).items():
-        cropped = crop_layer(json.loads(pathlib.Path(path).read_text()), actual)
+        cropped = crop_layer(json.loads(pathlib.Path(path).read_text()), actual, max_latitude=MAX_LATITUDE)
         target = out_dir / f"{name}.geojson"
         target.write_text(json.dumps(cropped, separators=(",", ":")))
         written[name] = str(target)

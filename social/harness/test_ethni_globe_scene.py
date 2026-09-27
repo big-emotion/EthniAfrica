@@ -232,6 +232,19 @@ class GlobeRenderTests(GlobeSceneCase):
 
         self.assertGreaterEqual(strength(40), .8*strength(0))
 
+    def test_the_legend_names_the_globe_and_its_borders_not_a_mercator_map(self):
+        cfg = self.globe()
+        scene = self.plan["scenes"][0]
+        renderer = SceneRenderer(self.plan, self.root, [])
+        for style, expected in (("solid", "Frontières actuelles"), ("dashed", "pointillé"), ("glow", "Frontières actuelles")):
+            cfg["border_style"] = style
+            first = renderer.legend(scene, 2)[0]
+            self.assertIn("Globe", first)
+            self.assertNotIn("Mercator", first)
+            self.assertIn(expected, first)
+        cfg["borders"] = False
+        self.assertIn("Sans frontières actuelles", renderer.legend(scene, 2)[0])
+
     def test_a_feature_on_the_far_side_of_the_earth_is_not_drawn(self):
         cfg = self.globe()
         cfg["features"] = [{"kind": "point", "point": [-170, 10], "label": "Far", "at": 0, "until": 5,
