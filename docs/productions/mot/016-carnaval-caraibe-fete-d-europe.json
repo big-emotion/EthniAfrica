@@ -10,5 +10,11 @@
   },
   "subjects": [],
   "sitePath": "/fr/about",
-  "publications": []
+  "publications": [
+    { "network": "tiktok", "format": "carrousel" },
+    { "network": "instagram", "format": "carrousel" },
+    { "network": "facebook", "format": "carrousel" },
+    { "network": "youtube", "format": "carrousel" },
+    { "network": "linkedin", "format": "carrousel" }
+  ]
 }
