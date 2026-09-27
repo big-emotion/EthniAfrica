@@ -337,12 +337,15 @@ Nunito Sans (the brand card). Fraunces and Nunito Sans are **variable** fonts
 whose default instance is far too light; the engine pins the weight axis. A
 production that assumed otherwise fell back to Montserrat and shipped thin.
 
-## Approved musical presentation
+## Musical carousel presentation
 
-`memoires-sonores-v1` renders the operator-approved six-card layout from the
-shared profile: a contained cover portrait, four text cards and a listening
-photo. The guide includes the field-to-slot table; preparation requests images
-only where they are drawn. Overflow never shrinks text; the normal command
-files the entire deck as proofs if any card fails. The approved visual
-references are retained in `docs/design/gabarits-social/memoires-sonores-approved/`.
-Approval of the template does not approve any episode’s script or audio.
+`profil: "memoires-sonores"` adds rules, not a layout: six ordered stages,
+TikTok and Instagram only, and the per-platform sound review. Its cards are drawn
+by the standard carousel gabarit — a full-frame photograph on every card, the
+same look as the Lingala carousel (operator ruling, 2026-09-27) — so the profile
+has no renderer of its own and `test_memoires_layout.py` asserts that a card of the
+profile is composed identically to the same card of an ordinary deck. Overflow
+never shrinks text; the normal command files the entire deck as proofs if any
+card fails. The retired 2026-09-25 presentation is kept as history in
+`docs/design/gabarits-social/memoires-sonores-approved/`. Approval of the
+template does not approve any episode’s script or audio.

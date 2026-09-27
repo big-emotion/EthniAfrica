@@ -1,9 +1,14 @@
-# Approved Mémoires sonores visual references
+# Retired Mémoires sonores visual references (`memoires-sonores-v1`)
+
+> **Retired on 2026-09-27.** The operator ruled that every carousel keeps the
+> standard gabarit (the Lingala format), so the profile no longer has a layout of
+> its own and `test_memoires_layout.py` no longer compares against these images.
+> They are kept as history of the 2026-09-25 decision, nothing more. Current
+> rules: [MEMOIRES-SONORES.md](../MEMOIRES-SONORES.md).
 
 The operator approved these six mockups on **2026-09-25**, with the instruction
-“japprouve les maquettes”. These are the exact reviewed PNGs, retained as visual
-references rather than regenerated from the new implementation. The production
-profile records this decision under `visual.id: memoires-sonores-v1`.
+“japprouve les maquettes”. These are the exact reviewed PNGs. The production
+profile recorded this decision under `visual.id: memoires-sonores-v1`.
 
 | Reference | Reusable layout |
 | --- | --- |
@@ -19,12 +24,7 @@ the selected recording and per-platform audio permissions remain separate
 editorial work. No post was approved, registered, scheduled or published by
 this decision. Three subjects every other Sunday remains the agreed cadence.
 
-The production implementation reads card data, not these example stories.
-It omits the top `MAQUETTE` banner on passing exports and retains the ordinary
-proof stamp on failed exports. `test_memoires_layout.py` compares all six text
-compositions pixel-for-pixel with these references, excluding the review banner
-and variable photographs. It also checks photograph geometry, text overflow
-and actual command delivery.
+The retired implementation read card data, not these example stories.
 
 ## Sources and image credits
 
