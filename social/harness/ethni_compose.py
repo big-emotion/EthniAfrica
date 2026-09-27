@@ -2479,7 +2479,15 @@ def portes(cartes, deck, identites=None):
     # Every image of a scene counts, not only its first: a scene of several images
     # ships under the most constraining licence among all of them.
     licences = [im.get("licence", "") for c in cartes for im in images_de(c, deck)]
-    sortie = tk.licence_sortie(licences)
+    # A profile may carry the one wording the operator has taken responsibility for
+    # (protected covers). It counts for that profile's decks only, it is the most
+    # constraining licence of the lot, and any other unnamed licence still refuses.
+    assumee = carousel_profiles.assumed_licence(deck) if deck is not None else None
+    declarees = [l for l in licences if assumee and l.strip() == assumee]
+    autres = [l for l in licences if l not in declarees]
+    sortie = tk.licence_sortie(autres) if autres or not declarees else assumee
+    if declarees and sortie is not None:
+        sortie = assumee
     if sortie is None:
         sans = sorted({c["rang"] for c in cartes for im in images_de(c, deck)
                        if not im.get("licence")})
