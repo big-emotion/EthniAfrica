@@ -53,6 +53,17 @@ def visual(deck):
     return selected.get("visual") if selected else None
 
 
+def assumed_licence(deck):
+    """The one licence wording the operator has taken responsibility for, or None.
+
+    It is declared by the profile and read by the licence gate for that profile's
+    decks only, so a protected work never clears the gate on the strength of a
+    sentence typed into an ordinary deck.
+    """
+    selected = profile(deck)
+    return selected.get("assumedLicence") if selected else None
+
+
 # Each approved presentation is drawn by its own module; the id in the profile
 # picks it, so a typo in a profile can never fall through to another layout.
 LAYOUTS = {"memoires-sonores-v1": "ethni_memoires", "lectures-afrique-v1": "ethni_lectures"}

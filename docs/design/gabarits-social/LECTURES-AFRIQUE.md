@@ -43,11 +43,20 @@ layout quota of name carousels does not apply.
 
 ## Rights and gates
 
-Nothing here loosens a gate. Covers are protected works: the licence gate accepts
-only the licences it knows, so a lot of covers is a **proof** until the operator
-decides how a reproduced cover is to be declared, and the message gate needs its
-own verdict file like any other lot. Both are decisions for the operator, not
-things the layout may work around.
+Covers are protected works, and the licence gate accepts only licences it knows.
+On 2026-09-27 the operator approved the look and took responsibility for
+reproducing the covers, so the profile declares one wording, `assumedLicence`
+(« couverture protégée, reproduction assumée par l'opérateur »). It is a
+declaration by the operator, not a licence that was read, and it is scoped:
+
+- it clears the licence gate for decks of this profile only; the same words on an
+  ordinary deck are refused;
+- any other unnamed licence in the same deck is still refused;
+- it counts as the most constraining licence of the lot, so the computed output
+  licence says so.
+
+The other gates are untouched. In particular the message gate still needs its own
+verdict file (`message.md`) like any other lot.
 
 ## Networks
 

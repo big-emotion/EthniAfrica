@@ -107,6 +107,36 @@ class ReadingListProfileTest(unittest.TestCase):
         self.assertFalse(verdict.passe)
         self.assertTrue(any("licence" in m for m in verdict.manquantes), verdict.manquantes)
 
+    def test_the_operator_declared_licence_clears_the_gate_only_inside_this_profile(self):
+        assumed = profiles.assumed_licence(reading_deck())
+        self.assertIn("assumée par l'opérateur", assumed)
+
+        deck = reading_deck()
+        for card in deck["cartes"]:
+            if card.get("image"):
+                card["image"]["licence"] = assumed
+        verdict = gab.portes(deck["cartes"], deck)
+        self.assertTrue(verdict.passe, verdict.manquantes)
+        self.assertEqual(verdict.licence_sortie, assumed)
+
+        # Any other unnamed licence in the same deck is still refused.
+        deck["cartes"][1]["image"]["licence"] = "tous droits réservés"
+        self.assertFalse(gab.portes(deck["cartes"], deck).passe)
+
+        # The same words on a deck without the profile prove nothing.
+        plain = reading_deck(1)
+        del plain["profil"]
+        plain["cartes"][1]["image"]["licence"] = assumed
+        verdict = gab.portes(plain["cartes"], plain)
+        self.assertFalse(verdict.passe)
+        self.assertTrue(any("licence" in m for m in verdict.manquantes), verdict.manquantes)
+        self.assertIsNone(profiles.assumed_licence(plain))
+
+    def test_the_operator_approved_the_look_on_the_date_of_the_decision(self):
+        visual = profiles.visual(reading_deck())
+        self.assertEqual(visual["status"], "approved")
+        self.assertEqual(visual["approvedOn"], "2026-09-27")
+
     def test_the_brief_supplies_its_guide_without_inventing_a_music_block(self):
         run = subprocess.run([sys.executable, str(HARNESS / "ethni_carrousel2.py"),
                               "--brief", "lectures-afrique"], capture_output=True, text=True)
