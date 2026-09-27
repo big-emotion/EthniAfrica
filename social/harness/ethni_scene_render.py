@@ -2,9 +2,12 @@
 import json
 import math
 
+import numpy as np
 from PIL import Image, ImageColor, ImageDraw, ImageOps, ImageFilter
 
+import ethni_globe_layers as globe_layers
 import ethni_tokens as tokens
+from ethni_globe import GlobeCamera, globe_camera_at
 from ethni_montage import MINIATURE_S
 from ethni_type import font
 from ethni_map import Camera, camera_at, mix, partial_path, smooth
@@ -15,6 +18,7 @@ import ethni_scene_fullbleed as fullbleed
 
 SPEAKERS_RADIUS, SPEAKERS_REFERENCE = 80, 16_000_000
 RIVER_FLOW_SPEED = 70  # px per second, downstream
+LIFT_SECONDS = .8      # a solid country rises over this long, once its outline is drawn
 
 
 def river_path(points, amplitude=5.0, wavelength=110.0, spacing=8.0, fade=60.0):
@@ -97,13 +101,17 @@ class SceneRenderer:
         self.reduced_motion = reduced_motion
         self.proof = proof
         self._base_cache = {}
+        self._globe_base_cache = None  # the last globe base only: a moving camera never revisits one
         self.palette = tokens.palette()
         self.duration = plan["scenes"][-1]["end"]
         self.assets = {}
         for key, asset in plan["assets"].items():
             path = asset_path(root, asset)
-            if asset["kind"] == "geojson":
+            if asset["kind"] in ("geojson", "vector"):
                 self.assets[key] = json.loads(path.read_text())
+            elif asset["kind"] == "relief":
+                with Image.open(path) as image:
+                    self.assets[key] = np.asarray(image.convert("RGB"))
             else:
                 with Image.open(path) as image:
                     self.assets[key] = ImageOps.exif_transpose(image).convert("RGB")
@@ -195,15 +203,7 @@ class SceneRenderer:
             else:
                 draw.rectangle((x-width/2+i*width/3, top, x-width/2+(i+1)*width/3, top+height), fill=stripe)
 
-    def _map(self, scene, local, viewport=None, palette=None):
-        cfg = scene["map"]
-        x0, y0, x1, y1 = viewport or self.content
-        w, h = x1-x0, y1-y0
-        p = palette or self.palette
-        canvas = Image.new("RGB", (w, h), p["ground"])
-        draw = ImageDraw.Draw(canvas)
-        when = 0 if self.reduced_motion else local
-        camera = Camera(camera_at(cfg["camera"], when), (0, 0, w, h))
+    def _flat_base(self, cfg, camera, draw, p):
         if cfg.get("graticule", True):
             colour = mix(p["ground"], p["night-ink-3"], .15)
             for lon in range(-180, 181, 5):
@@ -235,6 +235,45 @@ class SceneRenderer:
                     dashed_line(draw, points, boundary_ink)
                 else:
                     draw.line(points, fill=boundary_ink, width=2)
+
+    def _globe_base(self, cfg, camera, size, p):
+        """Relief, hydrography, borders and atmosphere: everything that depends on the camera alone."""
+        key = (json.dumps({k: cfg.get(k) for k in ("asset", "relief", "rivers", "lakes", "borders", "border_style",
+                                                     "border_width", "atmosphere")}, sort_keys=True),
+               size, camera.center, camera.span, camera.tilt, camera.heading, camera.disc())
+        if self._globe_base_cache and self._globe_base_cache[0] == key:
+            return self._globe_base_cache[1]
+        relief = self.plan["assets"][cfg["relief"]]
+        canvas = globe_layers.relief_base(self.assets[cfg["relief"]], relief["bounds"], camera, size, p["ground"])
+        water = mix(p["perv"], p["white"], .3)
+        if "lakes" in cfg:
+            globe_layers.draw_lakes(canvas, camera, self.assets[cfg["lakes"]], mix(p["perv"], p["ground"], .35), water)
+        if "rivers" in cfg:
+            globe_layers.draw_lines(canvas, camera, self.assets[cfg["rivers"]], water, 2)
+        if cfg["borders"]:
+            globe_layers.draw_borders(canvas, camera, self.assets[cfg["asset"]], cfg.get("border_style", "solid"),
+                                      cfg.get("border_width", 2), p, dashed_line)
+        if cfg.get("atmosphere", True):
+            canvas = globe_layers.atmosphere(canvas, camera, p["ground"], p["perv"])
+        self._globe_base_cache = (key, canvas)
+        return canvas
+
+    def _map(self, scene, local, viewport=None, palette=None):
+        cfg = scene["map"]
+        x0, y0, x1, y1 = viewport or self.content
+        w, h = x1-x0, y1-y0
+        p = palette or self.palette
+        when = 0 if self.reduced_motion else local
+        globe = cfg.get("projection") == "globe"
+        if globe:
+            camera = GlobeCamera(viewport=(0, 0, w, h), **globe_camera_at(cfg["camera"], when))
+            canvas = self._globe_base(cfg, camera, (w, h), p).copy()
+            draw = ImageDraw.Draw(canvas)
+        else:
+            canvas = Image.new("RGB", (w, h), p["ground"])
+            draw = ImageDraw.Draw(canvas)
+            camera = Camera(camera_at(cfg["camera"], when), (0, 0, w, h))
+            self._flat_base(cfg, camera, draw, p)
         label_boxes = []
         features = sorted(cfg.get("features", []), key=lambda f: f.get("role") != "context")
         for feature in features:
@@ -242,11 +281,18 @@ class SceneRenderer:
                 continue
             reveal = 1 if self.reduced_motion or "fade_seconds" not in feature else smooth((local-feature["at"])/feature["fade_seconds"])
             below = canvas.copy() if reveal < 1 else None
-            colour = p.get(feature.get("colour", "gold")) or p["teal"]  # "sea" only exists on the light map palette
+            default_colour = "white" if feature.get("style") == "sea" else "gold"
+            colour = p.get(feature.get("colour", default_colour)) or p["teal"]  # "sea" only exists on the light map palette
             if feature.get("role") == "context":
                 colour = "#%02x%02x%02x" % mix(p["ground"], colour, .55)
             kind = feature["kind"]
-            if kind in ("point", "presence", "speakers"):
+            if globe and "point" in feature and not camera.visible(feature["point"]):
+                continue  # the far side of the Earth is not on screen, and a clamped mark would lie about where it is
+            if kind == "label":
+                x, y = camera.project(feature["point"])
+                if feature.get("style", "place") == "place":
+                    draw.ellipse((x-5, y-5, x+5, y+5), fill=colour)
+            elif kind in ("point", "presence", "speakers"):
                 x, y = camera.project(feature["point"])
                 if kind == "presence":
                     # Equal-size locators deliberately encode no unmeasured density.
@@ -261,6 +307,21 @@ class SceneRenderer:
                                      fill=mix(p["ground"], colour, .3 + .6*(1-radius/size)))
                     draw.ellipse((x-size, y-size, x+size, y+size), outline=colour, width=3)
                 draw.ellipse((x-7, y-7, x+7, y+7), fill=colour)
+                self._flag(draw, feature, x, y)
+            elif kind == "country" and globe:
+                rings = [ring for shape in self.assets[cfg["asset"]]["features"]
+                         if shape["properties"]["ADM0_A3"] == feature["code"]
+                         for ring in globe_layers.outer_rings(shape["geometry"])]
+                since, drawing = local-feature["at"], feature.get("draw_seconds", 0)
+                extrude = feature.get("extrude", 0)
+                progress = 1 if self.reduced_motion or not drawing else min(1, since/drawing)
+                if extrude:
+                    rise = 1 if self.reduced_motion else smooth(min(1, max(0, (since-drawing)/LIFT_SECONDS)))
+                else:
+                    rise = 1 if self.reduced_motion or since >= drawing else 0
+                globe_layers.solid_country(canvas, camera, rings, colour, p["ground"], progress, rise, extrude)
+                pixels = np.concatenate([camera.project_many(np.asarray(r, dtype=float)[:, :2])[0] for r in rings])
+                x, y = pixels.mean(axis=0).tolist()
                 self._flag(draw, feature, x, y)
             elif kind == "country":
                 overlay = Image.new("RGBA", canvas.size)
@@ -280,11 +341,15 @@ class SceneRenderer:
                 self._flag(draw, feature, x, y)
             elif kind == "presence-zone":
                 points = [camera.project(point) for point in feature["points"]]
-                mask = Image.new("L", canvas.size)
-                ImageDraw.Draw(mask).polygon(points, fill=125)
-                mask = mask.filter(ImageFilter.GaussianBlur(18))
-                # The feathered edge represents uncertainty, not population density.
-                canvas.paste(Image.new("RGB", canvas.size, colour), (0, 0), mask)
+                if globe and feature.get("extrude"):
+                    grow = 1 if self.reduced_motion else smooth(min(1, (local-feature["at"])/LIFT_SECONDS))
+                    globe_layers.raised_field(canvas, camera, feature["points"], colour, feature["extrude"]*grow)
+                else:
+                    mask = Image.new("L", canvas.size)
+                    ImageDraw.Draw(mask).polygon(points, fill=125)
+                    mask = mask.filter(ImageFilter.GaussianBlur(18))
+                    # The feathered edge represents uncertainty, not population density.
+                    canvas.paste(Image.new("RGB", canvas.size, colour), (0, 0), mask)
                 x, y = points[0]
             elif kind == "territory":
                 points = [camera.project(point) for point in feature["points"]]
@@ -333,7 +398,7 @@ class SceneRenderer:
                                       (b[0]-18*math.cos(angle+.45), b[1]-18*math.sin(angle+.45))], fill=colour)
                 x, y = camera.project(feature["points"][0])
             # Off-screen features remain available as legend entries, not false clamped locations.
-            dx, dy = feature.get("offset", [18, -30])
+            dx, dy = feature.get("offset", [0, 0] if kind == "label" else [18, -30])
             label_width = draw.textlength(feature["label"], font=self.face("Bandeau"))
             annotated = "annotation" in feature
             if annotated: label_width = max(label_width, 300)
@@ -343,7 +408,7 @@ class SceneRenderer:
                 require(not any(box[0] < b[2]+8 and box[2]+8 > b[0] and box[1] < b[3]+8 and box[3]+8 > b[1]
                                 for b in label_boxes), f"Map label overlap: {feature['label']}")
                 label_boxes.append(box)
-                ink = p.get(feature.get("label_colour", feature.get("colour", "gold"))) or p["teal"]
+                ink = p.get(feature.get("label_colour", feature.get("colour", default_colour))) or p["teal"]
                 if feature.get("role") == "context": ink = mix(p["ground"], ink, .65)
                 if annotated:
                     edge = (max(box[0], min(x, box[2])), max(box[1], min(y, box[3])))
