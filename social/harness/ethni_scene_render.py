@@ -472,8 +472,10 @@ class SceneRenderer:
         legend = []
         geographic = scene_map(scene)
         if geographic and (scene["type"] == "map" or geographic.get("features") or geographic.get("highlights")):
-            legend.append(("Frontières actuelles en pointillé · Mercator" if geographic.get("border_style") == "dashed"
-                           else "Frontières actuelles · Mercator") if geographic["borders"] else "Sans frontières actuelles · Mercator")
+            projection = "Globe" if geographic.get("projection") == "globe" else "Mercator"
+            legend.append((f"Frontières actuelles en pointillé · {projection}" if geographic.get("border_style") == "dashed"
+                           else f"Frontières actuelles · {projection}") if geographic["borders"] and geographic.get("border_style") != "none"
+                          else f"Sans frontières actuelles · {projection}")
             entries = []
             for feature in geographic.get("features", []):
                 if feature["at"] <= local < feature["until"]:

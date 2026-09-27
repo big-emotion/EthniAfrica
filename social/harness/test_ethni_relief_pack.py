@@ -49,6 +49,14 @@ class LayerTests(unittest.TestCase):
         kept = crop_layer(layer, (-30, -40, 60, 45))
         self.assertEqual([f["properties"]["name"] for f in kept["features"]], ["inside", "crossing"])
 
+    def test_a_feature_beyond_the_engines_latitude_limit_is_dropped(self):
+        layer = self.layer()
+        layer["features"].append({"type": "Feature", "properties": {"name": "polar"},
+                                  "geometry": {"type": "LineString", "coordinates": [[10, -84], [12, -90]]}})
+        kept = crop_layer(layer, (-30, -90, 60, 45), max_latitude=85)
+        self.assertNotIn("polar", [f["properties"]["name"] for f in kept["features"]])
+        self.assertIn("polar", [f["properties"]["name"] for f in crop_layer(layer, (-30, -90, 60, 45))["features"]])
+
     def test_a_layer_with_nothing_in_the_window_is_refused_rather_than_written_empty(self):
         with self.assertRaises(ValueError):
             crop_layer(self.layer(), (-170, -80, -160, -70))
