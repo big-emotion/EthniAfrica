@@ -1,0 +1,20 @@
+{
+  "campaign": "bangala-un-nom-plusieurs-referents",
+  "typologie": "peuple",
+  "episode": 14,
+  "question": {
+    "fr": "D'où vient le nom Bangala ?"
+  },
+  "myth": {
+    "fr": "Les Bangala sont-ils un peuple, et le lingala est-il leur langue ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_NGALA",
+      "label": { "fr": "Bangala" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_NGALA",
+  "publications": []
+}

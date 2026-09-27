@@ -147,7 +147,10 @@ describe("PeopleDetailViewV2", () => {
     // The hero carries the autonym too, so this asserts presence rather than
     // uniqueness; PeopleNamingTiles' own test pins where it sits.
     expect(screen.getAllByText("Eʋeawo").length).toBeGreaterThan(0);
-    expect(screen.getByText(/Ewhe \(graphie coloniale\)/)).toBeInTheDocument();
+    // The name story above the figures lists the exonym as well.
+    expect(
+      screen.getAllByText(/Ewhe \(graphie coloniale\)/).length
+    ).toBeGreaterThan(0);
     expect(
       screen.getByText(/La graphie « Ewhe » vient des rapports coloniaux/)
     ).toBeInTheDocument();
@@ -305,5 +308,23 @@ describe("PeopleDetailViewV2", () => {
     expect(
       screen.queryByText(/formé par la traite transatlantique/)
     ).not.toBeInTheDocument();
+  });
+
+  // @req REQ-151
+  it("opens on the history of the names, the self-given name first, before the figures", () => {
+    const { container } = render(
+      <PeopleDetailViewV2 language="fr" people={ewe} />
+    );
+
+    const story = screen.getByTestId("fiche-name-story");
+    const figures = container.querySelector(".fiche-summary-brief__counted")!;
+    expect(
+      story.compareDocumentPosition(figures) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    const forms = within(story).getAllByTestId("name-story-form");
+    expect(forms.map((form) => form.dataset.form)).toEqual([
+      "Eʋeawo",
+      "Ewhe (graphie coloniale)",
+    ]);
   });
 });

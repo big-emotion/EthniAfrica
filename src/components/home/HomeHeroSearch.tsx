@@ -21,24 +21,15 @@ import { HomeHeroSeeds } from "./HomeHeroSeeds";
 import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
 import { search as searchCorpus, searchWithLeads } from "@/lib/afrikLoader";
 import { getSearchResultGroups } from "@/lib/search/searchVocabulary";
-import { searchResultDisplayLabel } from "@/lib/search/peopleDisplayNames";
-import { formatNumber } from "@/lib/languageTag";
 import {
-  getCountryRoute,
-  getFamilyRoute,
-  getLanguageRoute,
-  getLocalizedRoute,
-  getPatronymeRoute,
-  getPeopleRoute,
-  getPersonRoute,
-} from "@/lib/routing";
+  searchResultDisplayLabel,
+  searchResultDisplayNames,
+} from "@/lib/search/peopleDisplayNames";
+import { formatNumber } from "@/lib/languageTag";
+import { getLocalizedRoute } from "@/lib/routing";
 import { useAutocomplete } from "@/hooks/use-autocomplete";
 import { cn } from "@/lib/utils";
-import type {
-  SearchEntityType,
-  SearchLead,
-  SearchResult,
-} from "@/types/afrik-frontend";
+import type { SearchLead, SearchResult } from "@/types/afrik-frontend";
 import type { Language } from "@/types/shared";
 
 /**
@@ -85,29 +76,15 @@ const PENDING_MIN_MS = 400;
 const MAX_PER_GROUP = 3;
 
 /**
- * A table rather than a chain of ifs, and typed `Record<SearchEntityType, …>`
- * so a seventh kind cannot be added to the union without a route for it.
- *
- * The chain this replaces ended in `return getPeopleRoute(...)`, which was
- * correct while the panel showed three kinds and silently wrong the moment it
- * showed five: a language would have been addressed as `/fr/atlas/peuples/bam`
- * and answered 404. `strictNullChecks` is off in this project, so no compiler
- * error was ever going to catch that — an exhaustive record is what does.
+ * A suggestion opens the results page for its name, not one entity's fiche:
+ * the page answers with every entity the name belongs to, so a name shared by
+ * a people and a country is not resolved on the reader's behalf. Only the
+ * primary form is searched — the alias suffix shown in the row would narrow
+ * the query to one spelling.
  */
-const FICHE_ROUTE: Record<
-  SearchEntityType,
-  (language: Language, id: string) => string
-> = {
-  people: getPeopleRoute,
-  country: getCountryRoute,
-  languageFamily: getFamilyRoute,
-  language: getLanguageRoute,
-  patronyme: getPatronymeRoute,
-  person: getPersonRoute,
-};
-
-function ficheHref(result: SearchResult, language: Language): string {
-  return FICHE_ROUTE[result.type](language, result.id);
+function suggestionHref(result: SearchResult, language: Language): string {
+  const q = searchResultDisplayNames(result, language).primary;
+  return `${getLocalizedRoute(language, "search")}?${new URLSearchParams({ q })}`;
 }
 
 export interface HomeHeroSearchProps {
@@ -180,7 +157,7 @@ export function HomeHeroSearch({
 
   const suggest = useAutocomplete<SearchResult>({
     fetchSuggestions: resolvedFetchResults,
-    onSelect: (result) => router.push(ficheHref(result, language)),
+    onSelect: (result) => router.push(suggestionHref(result, language)),
     onResolved: handleResolved,
     minLength: MIN_QUERY_LENGTH,
     debounceMs: DEBOUNCE_MS,
@@ -382,7 +359,7 @@ export function HomeHeroSearch({
                   <Link
                     key={result.id}
                     {...suggest.getOptionProps(index)}
-                    href={ficheHref(result, language)}
+                    href={suggestionHref(result, language)}
                     className={cn(
                       "home-hero-search-option",
                       index === activeIndex && "is-active"

@@ -104,6 +104,33 @@
   box-shadow: var(--afh-ring-focus);
 }
 
+/* Opens the night map, which a fiche keeps closed until asked. Under the head
+   rather than beside the title: on a phone a second control next to the name
+   and the contribute link would wrap the title before it wrapped the buttons. */
+.afh-parchment-map-toggle {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: var(--afh-space-lg);
+  padding-inline: var(--afh-space-4xl);
+  border: 1px solid var(--accent-ink);
+  border-radius: var(--afh-radius-base);
+  background: transparent;
+  font-size: var(--afh-text-small);
+  font-weight: 600;
+  color: var(--accent-ink);
+  cursor: pointer;
+}
+
+.afh-parchment-map-toggle:hover {
+  text-decoration: underline;
+}
+
+.afh-parchment-map-toggle:focus-visible {
+  outline: none;
+  box-shadow: var(--afh-ring-focus);
+}
+
 .afh-parchment-head h1 {
   margin: 0;
   font-family: var(--afh-font-display);
@@ -1388,6 +1415,126 @@
   margin: 8px 0 0;
   font-size: var(--afh-text-small);
   color: var(--afh-text-soft);
+}
+
+/* ── The story of the names ───────────────────────────────────────────
+   Opens the country and people summaries above their figures, and stands as
+   the first chapter of a family or language. Rows are prose, not atomic
+   cells, so a phone gets one column (brand charter §8.7 admits two only for
+   counts); the second column arrives with the container, never the viewport.
+   Every row carries the same face and size — the dot is the only mark. */
+
+.fiche-name-story {
+  min-width: 0;
+  margin: 0 0 24px;
+  overflow-wrap: anywhere;
+}
+
+.fiche-name-story__eyebrow {
+  margin: 0 0 6px;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-eyebrow);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--afh-text-soft);
+}
+
+.fiche-name-story__ask {
+  margin: 0 0 6px;
+  font-family: var(--afh-font-display);
+  font-weight: 700;
+  font-size: var(--afh-text-h3);
+  line-height: 1.25;
+  color: var(--afh-text);
+}
+
+.fiche-name-story__lead {
+  margin: 0 0 12px;
+  color: var(--afh-text-soft);
+  line-height: 1.5;
+}
+
+.fiche-name-story__forms {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fiche-name-story__form {
+  display: grid;
+  gap: 2px;
+  padding: 12px 0;
+  border-top: 1px solid var(--afh-border);
+}
+
+.fiche-name-story__name {
+  font-family: var(--afh-font-display);
+  font-weight: 700;
+  font-size: var(--afh-text-h3);
+  line-height: 1.2;
+  color: var(--afh-text);
+}
+
+.fiche-name-story__mark {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 8px;
+  border-radius: 50%;
+  background: var(--accent, var(--afh-gold));
+  vertical-align: middle;
+}
+
+.fiche-name-story__tag {
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-eyebrow);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--afh-text-soft);
+}
+
+.fiche-name-story__sense {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.fiche-name-story__disclosure {
+  margin: 8px 0 0;
+}
+
+.fiche-name-story__disclosure > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent-ink, var(--afh-text-soft));
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.fiche-name-story__disclosure > p {
+  margin: 8px 0 0;
+  line-height: 1.5;
+}
+
+.fiche-name-story__caution {
+  margin: 12px 0 0;
+  padding: 10px 12px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--afh-radius-md) var(--afh-radius-md) 0;
+  background: var(--afh-surface);
+  font-size: var(--afh-text-small);
+  line-height: 1.5;
+}
+
+.fiche-name-story__caution > p {
+  margin: 0;
+}
+
+@container (min-width: 640px) {
+  .fiche-name-story__forms {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 32px;
+  }
 }
 
 /* ── Callout ──────────────────────────────────────────────────────────

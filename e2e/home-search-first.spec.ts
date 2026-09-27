@@ -29,7 +29,8 @@ for (const width of [320, 390, 430, 768, 1199, 1440]) {
       )
     ).toEqual(["home-hero", "home-project", "home-contribute"]);
     await expect(page.getByRole("heading", { level: 1 })).toHaveCount(1);
-    await expect(page.locator("main h2")).toHaveCount(3);
+    // The contribute block is a lone button, so it carries no heading.
+    await expect(page.locator("main h2")).toHaveCount(2);
     expect(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= window.innerWidth

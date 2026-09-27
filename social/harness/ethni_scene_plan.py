@@ -5,6 +5,7 @@ from pathlib import Path
 
 from PIL import Image
 
+from ethni_globe import EASINGS, GlobeCamera
 from ethni_map import Camera
 
 PROFILES = {
@@ -16,6 +17,9 @@ PROFILES = {
 STATUS = {"documented": "Documenté", "estimate": "Estimation", "hypothesis": "Hypothèse",
           "illustration": "Illustration", "editorial": "Position éditoriale"}
 COLOURS = ("gold", "white", "night-ink-2", "teal", "perv", "sea")
+BORDER_STYLES = ("solid", "dashed", "soft", "glow", "none")
+LABEL_STYLES = ("sea", "place")
+GLOBE_ONLY = ("projection", "relief", "rivers", "lakes", "atmosphere")
 
 
 def require(condition, message):
@@ -79,7 +83,21 @@ def validate_geometry(geo):
 
 
 def validate_map(value, duration, assets, sources):
-    keys(value, "asset layer borders border_style highlights camera features graticule inserts", "map")
+    keys(value, "asset layer borders border_style border_width highlights camera features graticule inserts "
+                "projection relief rivers lakes atmosphere", "map")
+    globe = value.get("projection", "mercator")
+    require(globe in ("mercator", "globe"), "Unknown map.projection")
+    globe = globe == "globe"
+    require(globe or not set(GLOBE_ONLY) & set(value), "Options for the globe need projection: globe")
+    if globe:
+        require(value.get("relief") in assets and assets[value["relief"]]["kind"] == "relief", "A globe needs a relief asset")
+        for layer in ("rivers", "lakes"):
+            if layer in value:
+                require(value[layer] in assets and assets[value[layer]]["kind"] == "vector", f"map.{layer} needs a vector asset")
+        if "atmosphere" in value:
+            require(type(value["atmosphere"]) is bool, "map.atmosphere must be boolean")
+    if "border_width" in value:
+        number(value["border_width"], "map.border_width", 1, 12)
     inserts = value.get("inserts", [])
     require(isinstance(inserts, list) and len(inserts) <= 3, "map supports at most three inserts")
     for card in inserts:
@@ -92,7 +110,7 @@ def validate_map(value, duration, assets, sources):
     require(value.get("asset") in assets and assets[value["asset"]]["kind"] == "geojson", "map: geographic asset required")
     require(value.get("layer") in ("national", "political", "people", "physical"), "map: unknown layer")
     require(type(value.get("borders")) is bool, "map.borders must be explicit")
-    require(value.get("border_style", "solid") in ("solid", "dashed"), "Unknown border_style")
+    require(value.get("border_style", "solid") in BORDER_STYLES, "Unknown border_style")
     if "graticule" in value:
         require(type(value["graticule"]) is bool, "map.graticule must be boolean")
     require(isinstance(value.get("highlights", []), list), "map.highlights must be a list")
@@ -101,10 +119,15 @@ def validate_map(value, duration, assets, sources):
     require(isinstance(camera, list) and camera and camera[0].get("at") == 0, "camera must start at zero")
     previous = -1
     for frame in camera:
-        keys(frame, "at bounds", "camera keyframe")
+        require(isinstance(frame, dict) and (globe == ("bounds" not in frame)),
+                "A globe camera uses center and span, a Mercator camera uses bounds: the two cannot be mixed")
         at = number(frame.get("at"), "camera.at", 0, duration)
         require(at > previous, "camera times must be strictly increasing")
         previous = at
+        if globe:
+            validate_globe_camera(frame)
+            continue
+        keys(frame, "at bounds", "camera keyframe")
         bounds = frame.get("bounds")
         require(isinstance(bounds, list) and len(bounds) == 4, "camera.bounds needs four coordinates")
         for v in bounds: number(v, "camera.bounds")
@@ -112,13 +135,19 @@ def validate_map(value, duration, assets, sources):
     features = value.get("features", [])
     require(isinstance(features, list) and len(features) <= 24, "map supports at most twenty-four authored features")
     for feature in features:
-        keys(feature, "kind point points label at until colour label_colour evidence meaning offset flag_stripes geometry_note fill_opacity draw_seconds line_style line_width role fade_seconds annotation code unlabelled value flag_orientation flow", "map feature")
+        keys(feature, "kind point points label at until colour label_colour evidence meaning offset flag_stripes geometry_note fill_opacity draw_seconds line_style line_width role fade_seconds annotation code unlabelled value flag_orientation flow style extrude", "map feature")
         if "flow" in feature:
             require(type(feature["flow"]) is bool, "feature.flow must be boolean")
         if "unlabelled" in feature:
             require(type(feature["unlabelled"]) is bool, "feature.unlabelled must be boolean")
         kind = feature.get("kind")
-        require(kind in ("point", "presence", "presence-zone", "territory", "route", "country", "speakers"), "Unknown map feature kind")
+        require(kind in ("point", "presence", "presence-zone", "territory", "route", "country", "speakers", "label"), "Unknown map feature kind")
+        require(globe or kind != "label", "A label feature needs the globe projection")
+        require("style" not in feature or (kind == "label" and feature["style"] in LABEL_STYLES),
+                "Unknown label style: style belongs to a label")
+        if "extrude" in feature:
+            require(globe and kind in ("country", "presence-zone"), "extrude belongs to a country or a zone on the globe")
+            number(feature["extrude"], "feature.extrude", 0, 60)
         require("value" not in feature or kind == "speakers", "Only a speakers feature carries a value")
         text(feature.get("label"), "feature.label")
         evidence(feature.get("evidence"), sources, "feature.evidence")
@@ -142,7 +171,8 @@ def validate_map(value, duration, assets, sources):
             number(feature["fill_opacity"], "feature.fill_opacity", 0, 1)
         for field in ("draw_seconds", "line_style", "line_width"):
             if field in feature:
-                require(kind == "route", f"{field} requires a route")
+                require(kind == "route" or (field == "draw_seconds" and kind == "country" and globe),
+                        f"{field} requires a route")
         if "draw_seconds" in feature:
             number(feature["draw_seconds"], "route.draw_seconds", .04, end-start)
         if "line_style" in feature:
@@ -153,7 +183,7 @@ def validate_map(value, duration, assets, sources):
         if "offset" in feature:
             require(isinstance(feature["offset"], list) and len(feature["offset"]) == 2, "offset requires x/y")
             for v in feature["offset"]: number(v, "offset", -400, 400)
-        if kind in ("point", "presence", "speakers"):
+        if kind in ("point", "presence", "speakers", "label"):
             point(feature.get("point"), "feature.point")
             require("points" not in feature and "meaning" not in feature, "Point feature has route fields")
             if kind == "speakers":
@@ -189,6 +219,33 @@ def validate_map(value, duration, assets, sources):
             require(isinstance(feature["flag_stripes"], list) and len(feature["flag_stripes"]) == 3 and
                     all(isinstance(c, str) and re.fullmatch(r"#[0-9a-fA-F]{6}", c) for c in feature["flag_stripes"]),
                     "flag_stripes requires three hex colours")
+
+
+def validate_vector(geo):
+    """Rivers and lakes: any line or polygon layer, none of it a country, so no code is required."""
+    require(geo.get("type") == "FeatureCollection" and geo.get("features"), "Expected a nonempty GeoJSON FeatureCollection")
+    for feature in geo["features"]:
+        require(feature.get("geometry", {}).get("type") in ("LineString", "MultiLineString", "Polygon", "MultiPolygon"),
+                "A vector layer requires lines or polygons")
+
+
+def validate_relief_bounds(bounds):
+    require(isinstance(bounds, list) and len(bounds) == 4, "relief bounds need west, south, east and north")
+    west, south, east, north = (number(v, "relief bounds") for v in bounds)
+    require(-180 <= west < east <= 180 and -90 <= south < north <= 90, "relief bounds must be a real box in degrees")
+
+
+def validate_globe_camera(frame):
+    keys(frame, "at center span tilt heading ease offset", "globe camera keyframe")
+    center = frame.get("center")
+    require(isinstance(center, list) and len(center) == 2, "camera.center needs longitude and latitude")
+    for v in center: number(v, "camera.center")
+    require("ease" not in frame or frame["ease"] in EASINGS, "Unknown camera.ease")
+    if "offset" in frame:
+        require(isinstance(frame["offset"], list) and len(frame["offset"]) == 2, "camera.offset needs x/y fractions")
+        for v in frame["offset"]: number(v, "camera.offset", -1, 1)
+    GlobeCamera(tuple(center), number(frame.get("span"), "camera.span"), (0, 0, 800, 800),
+                tilt=number(frame.get("tilt", 0), "camera.tilt"), heading=number(frame.get("heading", 0), "camera.heading"))
 
 
 def validate_timeline(value, duration, sources, assets=None):
@@ -285,14 +342,18 @@ def validate_plan(plan, root, duration):
     assets = plan.get("assets")
     require(isinstance(assets, dict), "assets must be an object")
     for key, asset in assets.items():
-        keys(asset, "path kind sha256 credit license source", f"asset {key}")
-        require(asset.get("kind") in ("geojson", "image"), "Unknown asset kind")
+        keys(asset, "path kind sha256 credit license source bounds", f"asset {key}")
+        require(asset.get("kind") in ("geojson", "image", "relief", "vector"), "Unknown asset kind")
+        require(("bounds" in asset) == (asset["kind"] == "relief"), "Only a relief asset carries bounds, and it must")
+        if asset["kind"] == "relief": validate_relief_bounds(asset["bounds"])
         for field in ("path", "credit", "license", "sha256"): text(asset.get(field), f"asset.{field}")
         require(asset.get("source") in sources, "asset source is missing")
         path = asset_path(root, asset)
         require(hashlib.sha256(path.read_bytes()).hexdigest() == asset["sha256"], f"Asset hash changed: {key}")
         if asset["kind"] == "geojson":
             validate_geometry(json.loads(path.read_text()))
+        elif asset["kind"] == "vector":
+            validate_vector(json.loads(path.read_text()))
         else:
             with Image.open(path) as image: image.verify()
     scenes = plan.get("scenes")

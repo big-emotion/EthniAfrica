@@ -28,6 +28,7 @@ import { gamesCopy } from "@/lib/i18n/copy/games";
 import { generatedImagesCopy } from "@/lib/i18n/copy/generatedImages";
 import { hubsCopy } from "@/lib/i18n/copy/hubs";
 import { languagesCopy } from "@/lib/i18n/copy/languages";
+import { ficheNameStoryCopy } from "@/lib/i18n/copy/ficheNameStory";
 import { languageFicheCopy } from "@/lib/i18n/copy/languageFiche";
 import { migrationsCopy } from "@/lib/i18n/copy/migrations";
 import { moderationConsoleCopy } from "@/lib/i18n/copy/moderationConsole";
@@ -101,6 +102,7 @@ const en = {
   fieldProvenance: fieldProvenanceCopy.en,
   family: familyCopy.en,
   fiche: ficheCopy.en,
+  ficheNameStory: ficheNameStoryCopy.en,
   languageFiche: languageFicheCopy.en,
   peopleFiche: peopleCopy.en,
   hubs: hubsCopy.en,
@@ -156,6 +158,7 @@ const fr: UiDictionary = {
   fieldProvenance: fieldProvenanceCopy.fr,
   family: familyCopy.fr,
   fiche: ficheCopy.fr,
+  ficheNameStory: ficheNameStoryCopy.fr,
   languageFiche: languageFicheCopy.fr,
   peopleFiche: peopleCopy.fr,
   hubs: hubsCopy.fr,

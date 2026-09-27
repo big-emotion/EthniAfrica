@@ -71,7 +71,7 @@ describe("home — what the reader meets, and in what order (REQ-113)", () => {
   // One page title; each lower section files itself with an h2, and only the
   // story cards sit a rung below. The figures are values, not headings.
   // @req REQ-113
-  it("keeps one h1 and three purposeful section headings", async () => {
+  it("keeps one h1 and two purposeful section headings", async () => {
     await renderHome();
 
     expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
@@ -79,11 +79,7 @@ describe("home — what the reader meets, and in what order (REQ-113)", () => {
       screen
         .getAllByRole("heading", { level: 2 })
         .map((heading) => heading.textContent)
-    ).toEqual([
-      "Pourquoi EthniAfrica ?",
-      "Des sources pour comprendre",
-      "Faisons grandir EthniAfrica ensemble",
-    ]);
+    ).toEqual(["Pourquoi EthniAfrica ?", "Des sources pour comprendre"]);
     expect(screen.queryAllByRole("heading", { level: 3 })).toHaveLength(0);
   });
 

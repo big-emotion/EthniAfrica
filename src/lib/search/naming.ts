@@ -265,7 +265,8 @@ export function searchPresentationText(value: unknown): string | undefined {
     : undefined;
 }
 
-function formKey(value: string): string {
+// @req REQ-044
+export function formKey(value: string): string {
   return value.normalize("NFKC").trim().toLocaleLowerCase();
 }
 

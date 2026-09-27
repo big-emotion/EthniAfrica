@@ -186,5 +186,8 @@ publication package and the skill handles an existing library registration. Actu
 Narration organizes ideas; paragraphs do not prescribe cuts. A scene lasts as long as explanation
 and reading comfort require. A map can span several sentences while camera, regions, points,
 routes and dates evolve. A new scene should clarify a change of place, period, evidence or idea.
+A map is a relief globe by default (`SCENES.md`, "Relief globe"): cut the region pack once per
+video with `ethni_relief_pack.py`, register it as `relief` and `vector` assets with their licence, and
+open the video on a photograph, not on the map.
 Carousel layouts and cadence are independent. The old image-deck montage is retained only to
 reproduce archived work, not as the default for a new video.

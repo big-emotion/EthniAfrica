@@ -7,14 +7,14 @@
   "content": {
     "appellations": {
       "mainName": "Lingala (locuteurs)",
-      "selfAppellation": "Bangala / Lingala",
+      "selfAppellation": null,
       "exonyms": [
-        "Bangala (nom colonial errone applique aux peuples du fleuve Congo)",
+        "Bangala (nom donné par des Européens aux riverains de la région à partir de 1877 ; repris ensuite par certains)",
         "Ngala",
         "Wangala"
       ],
-      "originOfExonyms": "Le terme Bangala fut adopte par les Europeens des 1876 comme designation pratique mais inexacte pour tous les Congolais de la region du fleuve. Le nom Lingala fut cree vers 1901-1902 par les missionnaires catholiques CICM (Scheutistes) pour designer la langue standardisee issue du Bobangi, en remplacement du terme Bangala juge trop ambigu.",
-      "whyProblematic": "Lingala designe avant tout une langue vehiculaire plutot qu'un groupe ethnique homogene. Les peuples qui la parlent comme langue maternelle constituent une constellation de groupes rivulaires distincts (Bangala, Budja, Ngombe, Poto, Boloki, Libinza, Ngbandi) regroupes sous une identite linguistique commune construite en partie par la colonisation belge.",
+      "originOfExonyms": "Le terme Bangala est adopté par les Européens à partir de 1877 comme désignation pratique des Congolais de la région du fleuve. Le nom Lingala est débattu : selon Meeuwis, il apparaît par écrit en 1901-1902 sous l'influence des missionnaires catholiques de Scheut, qui l'adoptent à la place de Bangala pour la langue standardisée issue du bobangi ; selon Mimpongo, le nom existait déjà en bobangi, sous la forme d'une expression qui signifie le langage des marchés ; selon Mbulamoko (1991), il dérive de Bangala et serait entré dans l'usage vers 1895. Ces lectures s'appuient sur des sources différentes et ne sont pas départagées ici.",
+      "whyProblematic": "Le lingala désigne avant tout une langue véhiculaire plutôt qu'un groupe ethnique homogène. Les peuples qui la parlent comme langue maternelle constituent une constellation de groupes riverains distincts (Bangala, Budja, Ngombe, Poto, Boloki, Libinza, Ngbandi) regroupés sous une identité linguistique commune, dont l'étendue actuelle doit beaucoup à l'usage qu'en ont fait l'armée et les missions coloniales (Castillo, 2024).",
       "contemporaryUsage": "Lingala est l'une des quatre langues nationales de la RDC et langue officielle de facto de l'armee nationale. Elle est egalement reconnue comme vehiculaire au Congo-Brazzaville. Elle est associee a la musique soukous/ndombolo et a la culture populaire congolaise a travers le monde. Environ 59% de la population de la RDC l'utilise selon une enquete de 2021.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou (Zone C, sous-groupe Bobangi-Lingala)",
@@ -76,7 +76,7 @@
       "spiritualities": "Les croyances traditionnelles reposent sur le culte des ancetres (bakulu) qui veillent sur les vivants, le respect des esprits de la nature et la pratique de la sorcellerie (kindoki). La cosmologie inclut un dieu supreme createur (Nzambe) agissant par l'intermediaire des ancetres et des esprits. Le christianisme (catholicisme et protestantisme) domine depuis la colonisation belge et est profondement integre a la culture lingala. Les eglises de reveil d'inspiration africaine (Kimbanguisme, eglises de guerison) jouent un role social majeur. Un syncretisme vivant melange croyances traditionnelles et christianisme."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Les peuples Bangala/lingalaphones ne formaient pas de royaumes centralises avant la colonisation. Ils s'organisaient en federations de villages sous des chefs locaux. La Station Bangala (Nouvelle-Anvers, aujourd'hui Mankanza), etablie en 1884 sur les rives de la Mongala, devint le principal centre administratif colonial de la region et le berceau de la langue lingala. Les Bangala etaient reconnus comme guerriers et commercants efficaces le long du fleuve Congo.",
+      "kingdomsOrChiefdoms": "Les peuples Bangala/lingalaphones ne formaient pas de royaumes centralises avant la colonisation. Ils s'organisaient en federations de villages sous des chefs locaux. La Station Bangala (Nouvelle-Anvers, aujourd'hui Mankanza), établie en 1884 à Iboko, sur le fleuve Congo, devint le principal centre administratif colonial de la région et le poste où le parler issu du bobangi fut imposé comme langue de contact. Les Bangala etaient reconnus comme guerriers et commercants efficaces le long du fleuve Congo.",
       "relationsWithNeighbors": "Les peuples Bangala entretenaient des relations commerciales intenses avec les autres groupes riverains (Bobangi, Mongo, Ngombe) et avec les peuples de l'interieur, echangeant poisson et produits du fleuve contre produits agricoles. Des tensions existaient avec les groupes Ngbandi et Ngbaka du nord. Sous la colonisation, les Bangala furent parfois utilises comme auxiliaires militaires et commerciaux par les Belges, ce qui crea des tensions avec d'autres peuples congolais.",
       "conflictsOrAlliances": "Les peuples du fleuve Congo participerent aux guerres coloniales de resistance contre l'Etat Independant du Congo de Leopold II (1885-1908), marquees par des atrocites documentees (coupures de mains, travail force). Les guerres civiles congolaises post-independance (1960, 1996-2003) affecterent profondement les regions lingalaphones. Le regime Mobutu (1965-1997) s'appuya sur les Lingala-speakers, creant des tensions avec les autres groupes linguistiques (swahiliphones, kikongophones).",
       "diaspora": "La diaspora congolaise lingalophone est presente en Belgique (notamment Bruxelles, 150 000 a 200 000 Congolais), en France (Paris, Lyon), aux Etats-Unis (Washington DC), au Canada et en Afrique du Sud. La musique soukous chantee en lingala a cree une presence culturelle mondiale. Des communautes lingalaphones significatives se trouvent dans les grandes villes d'Afrique centrale : Lubumbashi, Kisangani, Goma (RDC), Brazzaville, Pointe-Noire (Congo), Bangui (CAF)."
@@ -113,6 +113,30 @@
         "title": "APiCS Online — Survey chapter: Lingala (Koen Bostoen et al.)",
         "url": "https://apics-online.info/surveys/60",
         "tier": "referenced"
+      },
+      {
+        "title": "Meeuwis, Michael, « The linguistic features of Bangala before Lingala: The pidginization of Bobangi in the 1880s and 1890s », Afrikanistik-Aegyptologie Online, 2019 (publié en 2020)",
+        "url": "https://backoffice.biblio.ugent.be/download/8644523/8645617",
+        "tier": "referenced",
+        "notes": "Décrit la fondation de Bangala-Station en 1884, le passage du nom Bangala du peuple supposé au poste puis au parler issu du bobangi, et l'apparition écrite du nom Lingala en 1901."
+      },
+      {
+        "title": "Mimpongo, Mpoke, « L'origine et la signification du glossonyme lingala », lingbuzz, 2024",
+        "url": "https://ling.auf.net/lingbuzz/008154",
+        "tier": "referenced",
+        "notes": "Propose que Lingála et Mangála viennent d'une expression bobangi signifiant « le langage des grands marchés », et discute les lectures de Coquilhat, de Mumbanza et de Tshimpaka."
+      },
+      {
+        "title": "Mbulamoko Nzenge Movoambe, « État des recherches sur le lingala comme groupe linguistique autonome », Annales Aequatoria, 12, 1991, p. 377-406",
+        "url": "https://www.aequatoria.be/04common/020publications_pdf/Annales%20Aequatoria%201991.pdf",
+        "tier": "referenced",
+        "notes": "Fait dériver lingala de Bangala, nom employé pour la première fois par Stanley en 1877, et situe l'entrée du nom lingala dans l'usage autour de 1895."
+      },
+      {
+        "title": "Castillo, Joshua, « Navigating Lingala: Linguistic Change, Political Power, and Everyday Authoritarianism in Congo-Zaire, 1965-97 », The Journal of African History, 65, 2024, p. 327-343",
+        "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/navigating-lingala-linguistic-change-political-power-and-everyday-authoritarianism-in-congozaire-196597/118FE97D3CC34974331138A906D07B2A",
+        "tier": "referenced",
+        "notes": "Situe l'expansion du lingala après la mutinerie de 1893-1894, quand la Force publique adopte le lingala comme langue de commandement, puis décrit son usage sous Mobutu."
       },
       {
         "title": "Britannica — Lingala language",

@@ -29,7 +29,9 @@ import { FicheNamesChapter } from "@/components/fiche/FicheNamesChapter";
 import { PeopleFieldExplainer } from "@/components/people/PeopleFieldExplainer";
 import { FicheAmendBand } from "@/components/fiche/FicheAmendBand";
 import { FicheSection } from "@/components/fiche/FicheSection";
+import { FicheNameStory } from "@/components/fiche/FicheNameStory";
 import { FicheSummaryBrief } from "@/components/fiche/FicheSummaryBrief";
+import { peopleNamingOf } from "@/lib/fiche/nameStory";
 import { FicheTile, FicheTiles } from "@/components/fiche/FicheTile";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
 import { FragmentationView } from "@/components/colonization/FragmentationView";
@@ -208,6 +210,10 @@ export function PeopleDetailViewV2({
             ariaSuffix={copy.ficheHead.sourceAria(data.hero.nameMain)}
           />
         </div>
+        <FicheNameStory
+          naming={peopleNamingOf(people.appellations, namesDossier)}
+          language={language}
+        />
         <FicheSummaryBrief
           kind="people"
           entityId={data.hero.peopleId}

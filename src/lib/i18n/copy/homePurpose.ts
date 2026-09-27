@@ -8,9 +8,8 @@ export interface HomePurposeBlock {
 
 export interface HomePurposeCopy {
   contribute: {
+    /** The section's accessible name; the button itself carries `linkLabel`. */
     title: string;
-    corrections: string;
-    code: string;
     linkLabel: string;
   };
   /** Why the project exists; links to the About page. */
@@ -37,9 +36,6 @@ export const homePurposeCopy: Record<Language, HomePurposeCopy> = {
   en: {
     contribute: {
       title: "Let us grow EthniAfrica together",
-      corrections:
-        "Suggest a correction or share a source to improve the information.",
-      code: "You can also contribute to the open source project on GitHub.",
       linkLabel: "Contribute",
     },
     why: {
@@ -56,9 +52,6 @@ export const homePurposeCopy: Record<Language, HomePurposeCopy> = {
   fr: {
     contribute: {
       title: "Faisons grandir EthniAfrica ensemble",
-      corrections:
-        "Proposez une correction ou partagez une source pour améliorer les informations.",
-      code: "Vous pouvez aussi participer au projet open source sur GitHub.",
       linkLabel: "Contribuer",
     },
     why: {

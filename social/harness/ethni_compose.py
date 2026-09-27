@@ -543,9 +543,6 @@ def plan(carte, deck, fmt_key, *, image, sous_titre=False, disposition=None):
     `disposition` forces a layout without consulting §6 at all. The fit trial §6
     runs is itself a plan, so without this the rule would call itself.
     """
-    if carousel_profiles.visual(deck):
-        from ethni_memoires import plan as musical_plan
-        return musical_plan(carte, deck, fmt_key, image)
     cadre = tk.fmt(fmt_key)
     W, H, k = cadre["w"], cadre["h"], cadre["k"]
 
@@ -1904,9 +1901,6 @@ def _peindre(carte, deck, fmt_key, *, image, sous_titre, texte, epreuve=None,
              instant=None, duree=None, plan_donne=None):
     p = plan_donne if plan_donne is not None else plan(
         carte, deck, fmt_key, image=image, sous_titre=sous_titre)
-    if carousel_profiles.visual(deck):
-        from ethni_memoires import render
-        return render(carte, deck, fmt_key, image, p, text=texte, proof=epreuve)
     if duree:
         cadencer(p, duree)
     cadre = tk.fmt(fmt_key)
@@ -2368,8 +2362,6 @@ def images_de(carte, deck=None):
     `image` stays the single-image form every deck written before 2026-09-14 uses,
     so those render unchanged.
     """
-    if deck is not None and not carousel_profiles.uses_image(deck, carte):
-        return []
     return carte.get("images") or [carte.get("image", {})]
 
 
@@ -2479,7 +2471,15 @@ def portes(cartes, deck, identites=None):
     # Every image of a scene counts, not only its first: a scene of several images
     # ships under the most constraining licence among all of them.
     licences = [im.get("licence", "") for c in cartes for im in images_de(c, deck)]
-    sortie = tk.licence_sortie(licences)
+    # A profile may carry the one wording the operator has taken responsibility for
+    # (protected covers). It counts for that profile's decks only, it is the most
+    # constraining licence of the lot, and any other unnamed licence still refuses.
+    assumee = carousel_profiles.assumed_licence(deck) if deck is not None else None
+    declarees = [l for l in licences if assumee and l.strip() == assumee]
+    autres = [l for l in licences if l not in declarees]
+    sortie = tk.licence_sortie(autres) if autres or not declarees else assumee
+    if declarees and sortie is not None:
+        sortie = assumee
     if sortie is None:
         sans = sorted({c["rang"] for c in cartes for im in images_de(c, deck)
                        if not im.get("licence")})
@@ -2623,8 +2623,6 @@ def quota(dispositions, fmt_key="", deck=None):
     too long to sit on one. Both are settled in `structure`; nothing in this file
     can fix either, and a threshold bent here would only hide them.
     """
-    if deck is not None and carousel_profiles.visual(deck):
-        return []  # Approved text cards are not subject to the full-photo quota.
     total = len(dispositions)
     if not total:
         return []

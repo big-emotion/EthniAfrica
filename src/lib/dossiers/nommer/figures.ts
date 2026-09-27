@@ -60,7 +60,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "corpus-exonyms",
     label: "exonymes recensés",
-    value: 3115,
+    value: 3119,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -74,7 +74,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // Maninka, Bambara, Dioula… » — which the count took for an autonym. A
     // grouping of peoples has no name for itself, so those fiches now declare
     // the absence with `null`, and the figure counts only what it says it does.
-    value: 761,
+    value: 760,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
     countedOn: COUNTED_ON,

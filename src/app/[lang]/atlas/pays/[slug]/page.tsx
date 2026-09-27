@@ -304,7 +304,11 @@ export default async function PaysSlugPage({
       flushTop
       trailLabel={countryDetail.nameFr}
       heroHead={
-        <FicheHeroHead entityType="country" translation={country.translation}>
+        <FicheHeroHead
+          entityType="country"
+          translation={country.translation}
+          mapToggleLanguage={lang as Language}
+        >
           <CountryFicheTitle
             country={countryDetail}
             language={lang as Language}
