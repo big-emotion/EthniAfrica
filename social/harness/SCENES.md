@@ -222,12 +222,43 @@ visible while both images are visible. Dense credits can require a cut.
 
 The basemap is GeoJSON Polygon/MultiPolygon, closed rings in longitude/latitude,
 with `ADM0_A3` country properties. Coordinates are limited to Mercator's supported
-latitude range. The projection is explicitly labelled; it is not an equal-area
-or globe renderer and must not be used to demonstrate true surface ratios.
+latitude range. The flat projection is explicitly labelled; it is not equal-area
+and must not be used to demonstrate true surface ratios.
 
 Camera keys are `{at,bounds}` with local times and bounds ordered
 west/south/east/north. Start at zero and increase strictly. The camera fits the
 whole requested bounds; it interpolates smoothly between keys.
+
+### Relief globe (the default map for a new video)
+
+A flat vector Africa alone on a dark ground was refused by the operator on 2026-09-27: a
+reader expects the Earth they know, with the seas, the Mediterranean and Europe beside
+the continent. A new video therefore sets `"projection": "globe"`; a plan without it
+still renders the flat map exactly as before. The design and its rejected alternatives are
+in [`docs/plans/scene-globe-relief.md`](../../docs/plans/scene-globe-relief.md).
+
+- `map.relief`: id of an asset of kind `relief`: an equirectangular image with
+  `bounds: [west, south, east, north]` in degrees. `ethni_relief_pack.py` cuts one from the
+  Natural Earth world relief (public domain), together with the river, lake and country layers.
+- `map.rivers`, `map.lakes`: ids of assets of kind `vector` (any GeoJSON lines or polygons).
+  `map.atmosphere` (default true) adds the halo and limb darkening.
+- `map.border_style`: `solid`, `soft`, `glow`, `dashed` or `none`; `map.border_width` in
+  pixels. `borders: false` and `none` both draw nothing.
+- Camera keys are `{at, center: [lon, lat], span, tilt?, heading?, ease?, offset?}`. `span` is
+  the degrees of longitude the frame width covers at the centre, `tilt` (0 to 75) pitches the
+  view so height reads as volume, `heading` turns the map, `ease` is `linear`, `smooth`,
+  `cubic` or `spring` and shapes the move that leaves that key. Bounds and centre cannot be
+  mixed in one map.
+- A `country` feature accepts `draw_seconds` (its outline draws itself, then fills) and
+  `extrude` (0 to 60 px: it then rises into a solid; visible under a tilt). A `presence-zone`
+  accepts `extrude` too and rises as a stack of soft layers. The charter still rules: a
+  people or a name-usage area is a feathered field and never receives a closed line.
+- A `label` feature (`style: "sea"` or `"place"`) writes a name on the map. A point on the far
+  side of the Earth is not drawn, never clamped onto the limb.
+- `highlights` belong to the flat map; on the globe use `country` features.
+
+Frames that do not move the camera share one cached base, so a still hold is cheap; a moving
+camera re-projects the relief on every frame, about a third of a second each.
 
 Point features can carry an optional plain-text `annotation`: a compact,
 regular-weight geographic note below their label, connected to the location
