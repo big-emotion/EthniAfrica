@@ -8,11 +8,6 @@ from PIL import Image, ImageDraw, ImageOps
 import ethni_tokens as tk
 
 STYLE = "memoires-sonores-v1"
-REPORT_TITLE = "Présentation musicale"
-REPORT_NOTE = [
-    "Deux cartes photographiques et quatre cartes de texte, selon la référence approuvée.",
-    "Le quota A/B/C des carrousels de noms ne s’applique pas à ce profil.",
-]
 SECTIONS = {
     "accroche": "", "contexte": "Le contexte", "histoire": "L’histoire",
     "detail-musical": "Le détail musical", "ecoute": "L’écoute",

@@ -5,7 +5,6 @@ A named profile must resolve: a typo must never distribute a musical post to
 all networks. The human instructions are read from their canonical file.
 """
 import copy
-import importlib
 import json
 import pathlib
 import re
@@ -64,23 +63,9 @@ def assumed_licence(deck):
     return selected.get("assumedLicence") if selected else None
 
 
-# Each approved presentation is drawn by its own module; the id in the profile
-# picks it, so a typo in a profile can never fall through to another layout.
-LAYOUTS = {"memoires-sonores-v1": "ethni_memoires", "lectures-afrique-v1": "ethni_lectures"}
-
-
-def layout(deck):
-    selected = visual(deck)
-    return importlib.import_module(LAYOUTS[selected["id"]]) if selected else None
-
-
 def uses_image(deck, card):
     selected = visual(deck)
-    if not selected:
-        return True
-    if "imageRoles" in selected:
-        return card.get("role") in selected["imageRoles"]
-    return card.get("etape") in selected["imageStages"]
+    return not selected or card.get("etape") in selected["imageStages"]
 
 
 def _text(value):
@@ -109,9 +94,6 @@ def _sequence_errors(selected, deck, cards):
         problems.append(f"{prefix} : `serie` doit reprendre le nom de la rubrique")
     if not _text(deck.get("campagne")):
         problems.append(f"{prefix} : `campagne` doit identifier le sujet")
-    for field, expected in (("fond", "nuit"), ("accent", "ocre")):
-        if deck.get(field, expected) != expected:
-            problems.append(f"{prefix} : la présentation impose `{field}={expected}`")
     opening, item, closing = selected["sequence"]
     required_by_role = {opening: ("titre",), item: ("titre", "precision"), closing: ("titre", "corps")}
     for rank, card in enumerate(cards, 1):
@@ -127,17 +109,13 @@ def _sequence_errors(selected, deck, cards):
         for field in ("corps", "source", "precision", "punchline"):
             if card.get(field) is not None and not isinstance(card[field], str):
                 problems.append(f"{prefix} : carte {rank}, `{field}` doit être du texte")
-        if card.get("disposition", "auto") != "auto":
-            problems.append(f"{prefix} : carte {rank}, la disposition est fixée par la présentation")
-        for field in ("images", "paires", "table", "chiffre"):
-            if card.get(field):
-                problems.append(f"{prefix} : carte {rank}, `{field}` n'a pas de zone dans cette présentation")
-        if uses_image(deck, card):
-            image = card.get("image")
-            if not isinstance(image, dict) or not _text(image.get("fichier")):
-                problems.append(f"{prefix} : carte {rank}, `image.fichier` doit être renseigné")
-            else:
-                problems += _image_problems(prefix, rank, image)
+        if card.get("disposition", "auto") not in ("auto", "A", "B", "C"):
+            problems.append(f"{prefix} : carte {rank}, `disposition` attend auto, A, B ou C")
+        image = card.get("image")
+        if not isinstance(image, dict) or not _text(image.get("fichier")):
+            problems.append(f"{prefix} : carte {rank}, `image.fichier` doit être renseigné")
+        else:
+            problems += _image_problems(prefix, rank, image)
     return problems
 
 
@@ -220,17 +198,17 @@ def errors(deck, cards=None):
 
 
 def _sequence_brief(name, selected):
-    image = {"fichier": "", "w": None, "h": None, "cadrage": "50% 50%", "identite": "",
-             "credit": "", "depot": "", "licence": ""}
+    image = {"fichier": "", "w": None, "h": None, "cadrage": "50% 50%", "couverture": "",
+             "identite": "", "credit": "", "depot": "", "licence": selected["assumedLicence"]}
     cards = [{"rang": rank, "role": role, "titre": "", "precision": "", "corps": "",
-              "punchline": "", "source": "", "disposition": "auto",
-              **({"image": dict(image)} if role in selected["visual"]["imageRoles"] else {})}
+              "punchline": "", "source": "", "disposition": "A" if role == "serie" else "auto",
+              "image": dict(image)}
              for rank, role in enumerate(selected["sequence"], 1)]
     return {
         "profile": copy.deepcopy(selected), "guide": selected["guide"],
         "instructions": (REPO / selected["guide"]).read_text(encoding="utf-8"),
         "deck": {"profil": name, "campagne": "", "serie": selected["label"],
-                 "pilier": selected["label"], "accent": "ocre", "fond": "nuit", "cartes": cards},
+                 "pilier": selected["label"], "accent": "ocre", "fond": "parchemin", "cartes": cards},
     }
 
 
@@ -272,7 +250,7 @@ def report(deck):
         items = sum(1 for c in deck["cartes"] if c["role"] == selected["sequence"][1])
         return [f"## {selected['label']}", "",
                 f"Consignes : `{selected['guide']}`.",
-                f"Présentation : `{selected['visual']['id']}` ({selected['visual']['status']}).",
+                "Gabarit standard des carrousels, sur des images de couverture préparées.",
                 f"Carrousel à faire défiler ; {items} livre(s), aucun reel généré par ce profil.", ""]
     music = deck["musique"]
     lines = [f"## {selected['label']}", "",

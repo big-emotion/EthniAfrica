@@ -544,7 +544,8 @@ def plan(carte, deck, fmt_key, *, image, sous_titre=False, disposition=None):
     runs is itself a plan, so without this the rule would call itself.
     """
     if carousel_profiles.visual(deck):
-        return carousel_profiles.layout(deck).plan(carte, deck, fmt_key, image)
+        from ethni_memoires import plan as musical_plan
+        return musical_plan(carte, deck, fmt_key, image)
     cadre = tk.fmt(fmt_key)
     W, H, k = cadre["w"], cadre["h"], cadre["k"]
 
@@ -1904,8 +1905,8 @@ def _peindre(carte, deck, fmt_key, *, image, sous_titre, texte, epreuve=None,
     p = plan_donne if plan_donne is not None else plan(
         carte, deck, fmt_key, image=image, sous_titre=sous_titre)
     if carousel_profiles.visual(deck):
-        return carousel_profiles.layout(deck).render(
-            carte, deck, fmt_key, image, p, text=texte, proof=epreuve)
+        from ethni_memoires import render
+        return render(carte, deck, fmt_key, image, p, text=texte, proof=epreuve)
     if duree:
         cadencer(p, duree)
     cadre = tk.fmt(fmt_key)

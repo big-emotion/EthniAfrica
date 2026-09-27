@@ -2,15 +2,9 @@
   "id": "lectures-afrique",
   "label": "Lectures d'Afrique",
   "guide": "docs/design/gabarits-social/LECTURES-AFRIQUE.md",
-  "visual": {
-    "id": "lectures-afrique-v1",
-    "status": "approved",
-    "approvedOn": "2026-09-27",
-    "imageRoles": ["serie"]
-  },
-  "assumedLicence": "couverture protégée, reproduction assumée par l'opérateur",
+  "assumedLicence": "couverture © éditeur",
   "formats": {
     "carrousel": ["TikTok", "Instagram", "Facebook", "YouTube", "LinkedIn"]
   },
-  "sequence": ["ouverture", "serie", "cloture"]
+  "sequence": ["ouverture", "serie", "bascule"]
 }
