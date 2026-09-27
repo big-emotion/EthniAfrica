@@ -216,6 +216,22 @@ class GlobeRenderTests(GlobeSceneCase):
 
         self.assertLess(top_row(50), top_row(0) - 10)
 
+    def test_a_raised_zone_is_at_least_as_visible_as_a_flat_one(self):
+        cfg = self.globe()
+        cfg["layer"], cfg["borders"] = "people", False
+        cfg["camera"] = [{"at": 0, "center": [0, 10], "span": 40, "tilt": 45}]
+        empty = numpy.asarray(self.frame(4.0)).astype(int)
+
+        def strength(extrude):
+            zone = {"kind": "presence-zone", "points": [[-6, 5], [6, 5], [6, 15], [-6, 15], [-6, 5]], "label": "Zone",
+                    "at": 0, "until": 5, "colour": "gold", "geometry_note": "Approximate", "unlabelled": True,
+                    "evidence": {**copy.deepcopy(self.plan["scenes"][0]["evidence"]), "status": "estimate"}}
+            if extrude: zone["extrude"] = extrude
+            cfg["features"] = [zone]
+            return int(numpy.abs(numpy.asarray(self.frame(4.0)).astype(int) - empty).sum())
+
+        self.assertGreaterEqual(strength(40), .8*strength(0))
+
     def test_a_feature_on_the_far_side_of_the_earth_is_not_drawn(self):
         cfg = self.globe()
         cfg["features"] = [{"kind": "point", "point": [-170, 10], "label": "Far", "at": 0, "until": 5,

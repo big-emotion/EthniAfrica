@@ -140,7 +140,7 @@ def draw_borders(canvas, camera, countries, style, width, palette, dashed_line):
                     core_draw.line(run, fill=255, width=width, joint="curve")
         canvas.paste(Image.new("RGB", canvas.size, palette["white"]), (0, 0), core)
         return
-    mask = mask.point(lambda v: round(v*.85))
+    mask = mask.point(lambda v: round(v*.7))  # the country outlines include the coasts: kept light so they do not scribble
     canvas.paste(Image.new("RGB", canvas.size, palette["ground"]), (0, 0), mask)
 
 
@@ -183,12 +183,14 @@ def solid_country(canvas, camera, rings, colour, ground, progress, rise, extrude
     canvas.paste(overlay, (0, 0), overlay)
 
 
-def raised_field(canvas, camera, ring, colour, extrude, layers=6, feather=18, strength=125):
+def raised_field(canvas, camera, ring, colour, extrude, layers=6, feather=18, strength=190):
     """A feathered field, lifted as a stack of soft layers. It gains volume, never an outline."""
     mask = Image.new("L", canvas.size)
     pts = np.asarray(ring, dtype=float)[:, :2]
     step = max(1, layers-1)
-    for k in range(layers):
+    # Highest and weakest first: each lower layer overwrites the ones above it, so the footprint keeps
+    # the full strength and only what sticks out above it fades.
+    for k in reversed(range(layers)):
         pixels = camera.project_many(pts, extrude*k/step)[0]
         ImageDraw.Draw(mask).polygon([tuple(p) for p in pixels.tolist()], fill=round(strength/ (1 + k*.35)))
     mask = mask.filter(ImageFilter.GaussianBlur(feather))
