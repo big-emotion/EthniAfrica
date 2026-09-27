@@ -201,14 +201,14 @@ def _sequence_brief(name, selected):
     image = {"fichier": "", "w": None, "h": None, "cadrage": "50% 50%", "couverture": "",
              "identite": "", "credit": "", "depot": "", "licence": selected["assumedLicence"]}
     cards = [{"rang": rank, "role": role, "titre": "", "precision": "", "corps": "",
-              "punchline": "", "source": "", "disposition": "A" if role == "serie" else "auto",
+              "punchline": "", "source": "", "disposition": "auto",
               "image": dict(image)}
              for rank, role in enumerate(selected["sequence"], 1)]
     return {
         "profile": copy.deepcopy(selected), "guide": selected["guide"],
         "instructions": (REPO / selected["guide"]).read_text(encoding="utf-8"),
         "deck": {"profil": name, "campagne": "", "serie": selected["label"],
-                 "pilier": selected["label"], "accent": "ocre", "fond": "parchemin", "cartes": cards},
+                 "pilier": selected["label"], "accent": "ocre", "fond": "nuit", "cartes": cards},
     }
 
 
@@ -250,7 +250,7 @@ def report(deck):
         items = sum(1 for c in deck["cartes"] if c["role"] == selected["sequence"][1])
         return [f"## {selected['label']}", "",
                 f"Consignes : `{selected['guide']}`.",
-                "Gabarit standard des carrousels, sur des images de couverture préparées.",
+                "Gabarit standard des carrousels : la couverture est la photographie de sa carte.",
                 f"Carrousel à faire défiler ; {items} livre(s), aucun reel généré par ce profil.", ""]
     music = deck["musique"]
     lines = [f"## {selected['label']}", "",

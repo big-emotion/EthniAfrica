@@ -7,9 +7,10 @@ registered in the private library only.
 
 **It uses the standard carousel gabarit and no other.** A first version drew its own
 layout (cover on a night ground, small type) and the operator rejected it the same day:
-every carousel keeps the look the account already has, the dark variant (Rastafari,
-Lingala) or the white variant (Griot). Reading lists use the white variant, `fond:
-"parchemin"`. There is no reading-list layout, and none is to be added.
+every carousel keeps the look the account already has. A second version used the white
+variant with the cover in the upper part; the operator preferred the dark ground with the
+cover as the photograph of the card, like the Rastafari and Lingala carousels. There is no
+reading-list layout, and none is to be added.
 
 The engine reads `profil: "lectures-afrique"` (`carousel-profiles/lectures-afrique.json`).
 `ethni_carrousel2.py --brief lectures-afrique` returns this guide and an empty scaffold.
@@ -21,15 +22,17 @@ Three things, none of them visual:
 1. **Networks.** TikTok, Instagram, Facebook, YouTube and LinkedIn, as §1 bis gives the
    carousel. X has no carousel.
 2. **Validation of a variable-length deck.** An opening (`ouverture`), one card per book
-   (`serie`, layout `A`), and the unique closing (`bascule`). Every card carries an image.
+   (`serie`), and the unique closing (`bascule`). Every card carries an image.
 3. **One licence declaration.** See below.
 
 ## Deck shape
 
+`fond: "nuit"`, `disposition: "auto"` on every card: the engine chooses.
+
 | Card | Role | Fields read |
 | --- | --- | --- |
 | Opening | `ouverture` | `titre` (the section title, eight words at most), `precision` (« N livres à lire ») |
-| Book | `serie`, `disposition: "A"` | `titre` (the book title), `precision` (the author) |
+| Book | `serie` | `titre` (the book title), `precision` (the author) |
 | Closing | `bascule` | `titre` and `corps`: the project's unique closing, word for word |
 
 Years and summaries live in the caption, not on the cards. The image carries the cover,
@@ -37,21 +40,24 @@ the caption carries the reading.
 
 ## The images
 
-A cover is an object with its own margins, so it must not sit under the text column of
-layout A. Like the light cards of the Griot deck, each card gets a prepared 4:5 image on
-the deck's ground: the cover, cut out and straightened, in the upper part, and the
-column of the standard layout written over the rest.
+**A book card's photograph is the cover itself**, cut out and straightened beforehand, kept
+with its own cropping (`cadrage: "50% 0%"` keeps the top of the cover). The standard layout
+puts its text column and veil over it. Two consequences follow from the standard rules
+rather than from anything in this profile:
 
-`ethni_couvertures.py <Sujet>` prepares them. It reads the covers from
-`<projet>/couvertures/<image.couverture>` and writes `<projet>/assets/<image.fichier>`.
-The free zone is read from the engine's own plan for that card, because a long title makes
-a taller column and therefore a shorter zone: a four-line title leaves a cover about 380
-px high, a two-line one about 590 px. The cover may enter the veil ramp a little (it melts
-into the ground like the photographs of other decks) but never the column itself. The
-opening and the closing show every cover of the selection side by side.
+- a cover under about 540 px wide would be enlarged past ×2, so the engine falls back to
+  the standard cartouche for that card (§6). The lot quota (60 % in A at least, 30 % in C
+  at most) then decides whether the post ships or stays a proof: a post whose covers are
+  mostly small does not ship. The fix is a new, larger photograph of the cover, never a
+  bent threshold;
+- the cover's own lettering shows under the column of a long title. That is inherent to
+  using the cover as background, and the veil keeps the title readable.
 
-Use one file name per card (`ouverture-clair.png`, `cloture-clair.png`): the two cards have
-different text, so different free zones.
+`ethni_couvertures.py <Sujet>` writes the images. It reads the covers from
+`<projet>/couvertures/<image.couverture>` and writes `<projet>/assets/<image.fichier>`:
+each cover unaltered, and, for the opening and the closing, every cover of the selection
+side by side on the ground, placed above the start of that card's own veil (read from the
+engine's plan, since a longer title means a shorter free zone).
 
 ## Rights
 

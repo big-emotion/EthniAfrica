@@ -1,9 +1,9 @@
 """Hold the reading-list profile (`lectures-afrique`) to its rules.
 
-Reading lists use the standard carousel layouts on the parchment ground, exactly like every
+Reading lists use the standard carousel layouts, the cover being the photograph, exactly like every
 other deck: the profile only names the networks, validates a variable-length deck, and carries
-the one licence wording the operator took responsibility for. Covers are prepared as light 4:5
-images (`ethni_couvertures`) that the standard layout A then writes over.
+the one licence wording the operator took responsibility for. Each cover is the full-frame
+background of its own card; the opening and closing show them all (`ethni_couvertures`).
 """
 import json
 import pathlib
@@ -24,11 +24,8 @@ NETWORKS = ["TikTok", "Instagram", "Facebook", "YouTube", "LinkedIn"]
 LICENCE = "couverture © éditeur"
 CLOSING_TITLE = "Notre objectif : raconter l'origine des noms, avec des sources."
 CLOSING_BODY = "Vous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica."
-GROUND = (251, 247, 242)
-
-
 def light_image(name):
-    return {"fichier": f"{name}-clair.png", "w": 1080, "h": 1350, "cadrage": "50% 50%",
+    return {"fichier": f"{name}-fond.png", "w": 1080, "h": 1350, "cadrage": "50% 0%",
             "couverture": f"{name}.png", "identite": f"la couverture du livre {name}",
             "credit": "Couverture : Points", "depot": "photographie de l'opérateur",
             "licence": LICENCE, "verifie": {"par": "test", "le": "2026-09-27"}}
@@ -37,7 +34,7 @@ def light_image(name):
 def card(rank, role, title, **extra):
     base = {"rang": rank, "role": role, "titre": title, "chiffre": False, "precision": "",
             "punchline": "", "corps": "", "source": "", "paires": None, "pivot": None,
-            "titre_camps": None, "coupe": None, "disposition": "A" if role == "serie" else "auto"}
+            "titre_camps": None, "coupe": None, "disposition": "auto"}
     base.update(extra)
     return base
 
@@ -50,7 +47,7 @@ def reading_deck(books=3):
         cards.append(card(i, "serie", name.capitalize(), precision="Un auteur", image=light_image(name)))
     cards.append(card(books + 2, "bascule", CLOSING_TITLE, corps=CLOSING_BODY, image=light_image("ouverture")))
     return {"profil": "lectures-afrique", "campagne": "lectures-test", "pilier": "Lectures",
-            "accent": "ocre", "fond": "parchemin", "cartes": cards}
+            "accent": "ocre", "fond": "nuit", "cartes": cards}
 
 
 class ReadingListProfileTest(unittest.TestCase):
@@ -127,7 +124,7 @@ class ReadingListProfileTest(unittest.TestCase):
         guide = HARNESS.parents[1] / brief["guide"]
         self.assertEqual(brief["instructions"], guide.read_text(encoding="utf-8"))
         self.assertNotIn("musique", brief["deck"])
-        self.assertEqual(brief["deck"]["fond"], "parchemin")
+        self.assertEqual(brief["deck"]["fond"], "nuit")
         self.assertEqual([c["role"] for c in brief["deck"]["cartes"]], ["ouverture", "serie", "bascule"])
 
 
@@ -137,25 +134,26 @@ class CoverPreparationTest(unittest.TestCase):
     def cover(self, size=(500, 800)):
         return Image.new("RGB", size, (200, 40, 40))
 
-    def test_the_prepared_image_is_a_light_4_by_5_frame_with_the_cover_on_it(self):
+    def test_a_book_card_uses_the_cover_itself_as_its_background(self):
         deck = reading_deck()
-        image = covers.prepare_cover(self.cover(), deck["cartes"][1], deck)
-        self.assertEqual(image.size, (1080, 1350))
-        self.assertEqual(image.getpixel((5, 5)), GROUND)
-        self.assertEqual(image.getpixel((5, 1345)), GROUND)
-        self.assertEqual(image.getpixel((540, 200)), (200, 40, 40))
+        source = self.cover((500, 800))
+        image = covers.prepare_cover(source, deck["cartes"][1], deck)
+        self.assertEqual(image.size, (500, 800))
+        self.assertEqual(image.getpixel((250, 400)), (200, 40, 40))
+        self.assertEqual(list(image.getdata()), list(source.getdata()), "the cover is never altered")
 
-    def test_the_cover_ends_above_the_start_of_the_veil_it_will_sit_under(self):
+    def test_the_standard_layout_takes_the_cover_as_a_full_frame_photograph(self):
         deck = reading_deck()
-        for title in ("Court", "Un titre nettement plus long pour occuper quatre lignes de gros caractères"):
-            with self.subTest(title=title):
-                deck["cartes"][1]["titre"] = title
-                zone = covers.free_zone(deck["cartes"][1], deck)
-                plan = gab.plan(deck["cartes"][1], deck, "carrousel",
-                                image=Image.new("RGB", (1080, 1350), GROUND))
-                ramp = plan.bloc("voile-rampe")
-                self.assertLessEqual(zone[1] + zone[3], ramp.y + covers.RAMP_KEEP)
-                self.assertGreater(zone[3], 150)
+        card = deck["cartes"][1]
+        plan = gab.plan(card, deck, "carrousel", image=self.cover((900, 1300)))
+        self.assertEqual(plan.disposition, "A")
+        self.assertEqual(plan.fautes, [])
+
+    def test_a_cover_too_small_for_full_frame_falls_back_to_the_standard_cartouche(self):
+        deck = reading_deck()
+        card = deck["cartes"][1]
+        plan = gab.plan(card, deck, "carrousel", image=self.cover((450, 700)))
+        self.assertEqual(plan.disposition, "C")
 
     def test_a_longer_title_leaves_a_smaller_zone(self):
         deck = reading_deck()
@@ -174,7 +172,7 @@ class CoverPreparationTest(unittest.TestCase):
                                           for y in range(64, 500, 12) for x in range(90, 990, 12))}
         self.assertEqual(seen, set(colours))
 
-    def test_preparing_a_project_writes_every_light_image_its_deck_names(self):
+    def test_preparing_a_project_writes_the_cover_as_is_and_a_mosaic_for_the_opening_and_closing(self):
         deck = reading_deck(2)
         with tempfile.TemporaryDirectory() as directory:
             root = pathlib.Path(directory)
@@ -185,7 +183,7 @@ class CoverPreparationTest(unittest.TestCase):
             covers.prepare_project(root)
             for c in deck["cartes"]:
                 with Image.open(root / "assets" / c["image"]["fichier"]) as written:
-                    self.assertEqual(written.size, (1080, 1350))
+                    self.assertEqual(written.size, (500, 800) if c["role"] == "serie" else (1080, 1350))
 
 
 class ReadingListRenderTest(unittest.TestCase):
@@ -197,7 +195,7 @@ class ReadingListRenderTest(unittest.TestCase):
         for c in deck["cartes"]:
             source = c["image"].get("couverture")
             if source and c["role"] == "serie":
-                Image.new("RGB", (500, 800), (150, 110, 70)).save(root / "couvertures" / source)
+                Image.new("RGB", (900, 1300), (150, 110, 70)).save(root / "couvertures" / source)
         deck["outDir"] = str(root / "delivery")
         (root / "cards.json").write_text(json.dumps(deck), encoding="utf-8")
         covers.prepare_project(root)
