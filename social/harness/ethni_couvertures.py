@@ -36,8 +36,14 @@ def _ground(deck):
 def free_zone(card, deck):
     """(x, y, w, h) above the veil the engine will draw under this card's own text."""
     blank = Image.new("RGB", (W, H), _ground(deck))
-    ramp = gab.plan(card, deck, "carrousel", image=blank).bloc("voile-rampe")
-    return (LEFT, TOP, WIDTH, max(MIN_ZONE, ramp.y + RAMP_KEEP - TOP))
+    plan = gab.plan(card, deck, "carrousel", image=blank)
+    banner = plan.bloc("entete-bandeau")
+    ramp = plan.bloc("voile-rampe")
+    if banner.y < H // 4:
+        # Layout B puts the banner at the top and the title lower: the zone is what lies between.
+        top = banner.y + banner.h + 24
+        return (LEFT, top, WIDTH, max(MIN_ZONE, plan.bloc("titre").y - 24 - top))
+    return (LEFT, TOP, WIDTH, max(MIN_ZONE, min(ramp.y + RAMP_KEEP, banner.y - 12) - TOP))
 
 
 def _shadow(canvas, x, y, w, h):

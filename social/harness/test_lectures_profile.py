@@ -155,6 +155,15 @@ class CoverPreparationTest(unittest.TestCase):
         plan = gab.plan(card, deck, "carrousel", image=self.cover((450, 700)))
         self.assertEqual(plan.disposition, "C")
 
+    def test_the_mosaic_never_overlaps_the_banner_line_of_its_card(self):
+        deck = reading_deck()
+        for card in (deck["cartes"][0], deck["cartes"][-1]):
+            x, y, w, h = covers.free_zone(card, deck)
+            banner = gab.plan(card, deck, "carrousel",
+                              image=Image.new("RGB", (1080, 1350))).bloc("entete-bandeau")
+            clear = y + h <= banner.y - 8 or y >= banner.y + banner.h + 8
+            self.assertTrue(clear, f"{card['role']}: zone {(y, y + h)} meets the banner {(banner.y, banner.y + banner.h)}")
+
     def test_a_longer_title_leaves_a_smaller_zone(self):
         deck = reading_deck()
         deck["cartes"][1]["titre"] = "Court"
