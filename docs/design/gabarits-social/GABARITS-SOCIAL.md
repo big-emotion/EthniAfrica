@@ -1336,6 +1336,13 @@ Use `ethni_carrousel2.py --brief memoires-sonores` to read the current guide and
 obtain the empty six-card scaffold. Decks without `profil` keep this schema's
 existing behaviour.
 
+**Optional reading-list profile:** `profil: "lectures-afrique"` describes an
+opening card, one card per book and the unique closing, with a variable number of
+books, in the standard layouts, the cover being the photograph of its card. How the images are
+prepared and its rights limits are in [LECTURES-AFRIQUE](LECTURES-AFRIQUE.md);
+`ethni_carrousel2.py --brief lectures-afrique` returns the guide and the empty
+scaffold.
+
 ```json
 {
   "campagne": "mercator-taille",
