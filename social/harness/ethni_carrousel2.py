@@ -42,8 +42,6 @@ FORMATS = ("carrousel", "reel")
 
 def _pourquoi(plan, carte, image, fmt_key, deck):
     """The sentence that lets somebody contest a layout without reading code."""
-    if carousel_profiles.visual(deck):
-        return f"{plan.disposition} — {carte['etape']} approuvé"
     cadre = tk.fmt(fmt_key)
     sur_ech = max(cadre["w"] / image.width, cadre["h"] / image.height)
     signes = len(carte.get("corps") or "")
@@ -96,9 +94,6 @@ def main():
     assets = racine / "assets"
     images = {}
     for carte in deck["cartes"]:
-        if not carousel_profiles.uses_image(deck, carte):
-            images[carte["rang"]] = None
-            continue
         fichier = carte["image"]["fichier"]
         chemin = assets / fichier
         if not chemin.exists():
@@ -160,11 +155,7 @@ def main():
         for fmt_key in formats:
             plan = gab.plan(carte, deck, fmt_key, image=image)
             cadre = tk.fmt(fmt_key)
-            photo = plan.bloc("bande-image")
-            if carousel_profiles.visual(deck):
-                sur_ech = max(photo.w / image.width, photo.h / image.height) if photo and image else 0
-            else:
-                sur_ech = max(cadre["w"] / image.width, cadre["h"] / image.height)
+            sur_ech = max(cadre["w"] / image.width, cadre["h"] / image.height)
 
             # The plan says what should be on the card; painting says what is.
             # Nothing compared them, and three blocks went missing that way — the
@@ -259,28 +250,23 @@ def main():
     lignes += ["", "## Qui a compar\u00e9 le cr\u00e9dit \u00e0 l'image", "",
                "| Carte | Image | Signature |", "| --- | --- | --- |"]
     lignes += [f"| {c['rang']:02d} | {c['image']['fichier']} | {gab.signature(c['image'])} |"
-               for c in deck["cartes"] if carousel_profiles.uses_image(deck, c)]
+               for c in deck["cartes"]]
     lignes += [""]
 
     # §6 — the quota, stated whether or not it held. A deck that scrapes past it is
     # as much a signal to `structure` as one that fails.
-    if carousel_profiles.visual(deck):
-        lignes += ["## Présentation musicale", "",
-                   "Deux cartes photographiques et quatre cartes de texte, selon la référence approuvée.",
-                   "Le quota A/B/C des carrousels de noms ne s’applique pas à ce profil.", ""]
-    else:
-        lignes += ["## Répartition des dispositions", "",
-                   f"§6 — au moins {tk.QUOTA_A_MIN:.0%} en A, au plus "
-                   f"{tk.QUOTA_C_MAX:.0%} en C, au plus {tk.QUOTA_B_MAX} en B.", "",
-                   "| Format | A | B | C | Quota |", "| --- | --- | --- | --- | --- |"]
-        for fmt_key in formats:
-            ds = [gab.plan(c, deck, fmt_key,
-                           image=images[c["rang"]]).disposition
-                  for c in deck["cartes"]]
-            tenu = "tenu" if not gab.quota(list(enumerate(ds)), fmt_key, deck) else "**hors quota**"
-            lignes.append(f"| {fmt_key} | {ds.count('A')} | {ds.count('B')} | "
-                          f"{ds.count('C')} | {tenu} |")
-        lignes += [""]
+    lignes += ["## Répartition des dispositions", "",
+               f"§6 — au moins {tk.QUOTA_A_MIN:.0%} en A, au plus "
+               f"{tk.QUOTA_C_MAX:.0%} en C, au plus {tk.QUOTA_B_MAX} en B.", "",
+               "| Format | A | B | C | Quota |", "| --- | --- | --- | --- | --- |"]
+    for fmt_key in formats:
+        ds = [gab.plan(c, deck, fmt_key,
+                       image=images[c["rang"]]).disposition
+              for c in deck["cartes"]]
+        tenu = "tenu" if not gab.quota(list(enumerate(ds)), fmt_key, deck) else "**hors quota**"
+        lignes.append(f"| {fmt_key} | {ds.count('A')} | {ds.count('B')} | "
+                      f"{ds.count('C')} | {tenu} |")
+    lignes += [""]
 
     lignes += ["| Carte | Format | Disposition | Pourquoi | Agrandissement |",
                "| --- | --- | --- | --- | --- |"]

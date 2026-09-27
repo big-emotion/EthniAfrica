@@ -1,9 +1,10 @@
 # Mémoires sonores — editorial carousel reference
 
 Approved by the operator on 2026-09-25. This reference records the series and
-its six-card structure. The operator subsequently approved the six visual
-mockups on the same date. This approves their reusable presentation, not the
-individual episode text, recordings or publication readiness.
+its six-card structure. Its presentation is the standard carousel gabarit
+(operator ruling of 2026-09-27, see below); the layout approved on 2026-09-25 is
+retired. Nothing here approves an individual episode's text, recording or
+publication readiness.
 
 ## Scope and identity
 
@@ -65,72 +66,47 @@ question or name-focused closing paragraph onto these six cards. The final card
 identifies EthniAfrica and the series; an invitation to contribute can concern
 musical memories or sources and must not imply a nonexistent page on the site.
 
-## Approved visual direction — 2026-09-25
+## Presentation — the standard carousel gabarit (operator ruling, 2026-09-27)
 
-The operator approved the [six visual references](memoires-sonores-approved/README.md)
-after reviewing the Kassav design study. The production engine selects
-`memoires-sonores-v1` from the profile automatically. Do not recreate the
-experimental preview script or fall back to the ordinary A/B/C templates.
+Mémoires sonores draws **nothing of its own**. On 2026-09-27 the operator ruled
+that every carousel keeps the look the account already has — the format of the
+Lingala carousel: a full-frame photograph on every card, the series label and rank
+at the top, the title at the bottom, credits at the foot, on the night ground (or
+the parchment variant). The presentation approved on 2026-09-25
+(`memoires-sonores-v1`: a contained portrait cover, four text-only cards and a
+framed listening photograph) is **retired**; its reference images are kept as
+history in [memoires-sonores-approved](memoires-sonores-approved/README.md).
+
+What the profile still owns is its rules, not its layout:
+
+- the six ordered stages and their `etape` values (see the table above);
+- TikTok and Instagram only, never a reel;
+- the `musique` notes and the per-platform sound review;
+- the series label, `Mémoires sonores`, in the top band.
 
 Review first at **320–430 px**, then tablet (768–1199 px), then desktop
-(1200 px and above). The exported cards remain **1080 × 1350** at every
-viewing width; this is a carousel, not a responsive image composition.
+(1200 px and above). The exported cards remain **1080 × 1350** at every viewing
+width.
 
-- **Identity:** the fixed EthniAfrica wordmark, `MÉMOIRES SONORES` label,
-  stage label, 01–06 pagination, horizontal rules and the approved footer
-  `MUSIQUES · HISTOIRES · TRANSMISSIONS` repeat across the series.
-- **Colour and type:** the existing night ground, warm inks and soft ocre;
-  Anton headings and Nunito Sans body. The approved profile uses `fond: nuit`
-  and `accent: ocre`. No other series or website theme changes.
-- **Cover:** a left-aligned title and a whole portrait in the right-hand box.
-  The subject's face must not be cropped away. `sujet` identifies the featured
-  artist or topic in the cover label; it defaults to the recording's artist.
-- **Interior:** four text-led cards with readable paragraphs on the night
-  ground. They do not require placeholder photographs.
-- **Listening:** a wide, dated and credited photograph above the track title,
-  performer and listening instruction. The asset's focal point is respected.
-- **References:** readable attribution and a provenance note. There is no
-  name-origin closing or automatic link to a nonexistent site article.
+### Consequences for an episode
 
-These approved layouts are a **scoped exception** to GABARITS-SOCIAL's
-full-frame photograph requirement, A/B/C quota, ordinary 32 px body,
-120 px cover heading, watermark placement and ordinary footer margins.
-All coordinates below are at 1080 × 1350. The font is never shrunk to fit;
-measured overflow, including a long unbreakable word or credit, blocks delivery
-and produces a marked proof. Image enlargement remains limited to ×2, measured
-against the actual photograph box rather than the whole card.
-
-### Preparation fields and measured slots
-
-The existing card fields are reused. Each `titre` may use `coupe` for explicit
-line breaks, provided it contains the same words. Body and supporting copy
-preserve paragraph breaks. Empty optional fields remain empty; they do not
-trigger invented text. The listening performer defaults to `musique.artiste`.
-
-| Stage | Title / `precision` | `corps` | `punchline` |
-| --- | --- | --- | --- |
-| `accroche` | Title at (68, 300), 490 px wide, Anton 103 / 128; ends above y=950 | Short attribution at (68, 970), Nunito 31, ocre | Continuation at (68, 1014), Nunito 31, secondary ink |
-| `contexte` | Title at (68, 286), Anton 110; optional date or setting in `precision` at (68, 433), Anton 146, ocre | At (68, 675), 915 px wide, Nunito 57 | Attribution at (68, 1028), Nunito 30 |
-| `histoire` | Title at (68, 279), Anton 96 / 120 | At (68, 602), 914 px wide, Nunito 59 | At (68, 850), Nunito 53, ocre |
-| `detail-musical` | Word or short detail at (68, 319), Anton 157, ocre | At (68, 612), 920 px wide, Nunito 60 | At (68, 869), Nunito 53, secondary ink |
-| `ecoute` | Track at (68, 738), Anton 83; performer in `precision` at (68, 855), Nunito 36, ocre | At (68, 931), 924 px wide, Nunito 42 | Unused; do not supply |
-| `references` | Title at (68, 282), Anton 105 / 128 | At (68, 629), 920 px wide, Nunito 52 | Provenance note at (68, 904), Nunito 43 |
-
-Only the context and listening stages accept `precision`. Pairs, tables,
-`chiffre` and multiple-image scenes are outside this presentation. Do not use
-them as a workaround for long text. An explicit A/B/C override is rejected.
-
-The cover portrait is contained within (577, 270, 435, 844). The listening photo
-fills (68, 270, 944, 432). Credits on those two cards sit at y=1123 in 23 px;
-`source` sits at y=1160 in 22 px. On the text cards, `source` sits at y=1138
-in 26 px. Credit text is `image.credit` followed by `image.licence`; keep the
-full source and licence URLs in the accompanying publication caption.
-
-The top brand/rank row is at y=74, the series at y=158, and the section at
-y=207. Rules sit at y=129 and y=1198; the footer brand is at y=1228 and its
-qualifier at y=1272. The arrow is drawn, avoiding a missing font glyph. The
-reference's `MAQUETTE` banner is review furniture, not part of a clean export.
-Failed production gates still receive the ordinary visible proof stamp.
+- **Every card carries a photograph** (`image.fichier`, `identite`, `credit`,
+  `depot`, `licence`, real `w` and `h`), because the standard layout puts its text
+  column over the photograph. A card without one is refused before drawing.
+- **The standard slots apply**: `titre`, `precision`, `punchline`, `corps` and
+  `source` are drawn in that reading order (`precision` and `punchline` sit above
+  `corps`), on any stage. Put the words in the order the reader should meet them.
+  `coupe` may force a title's line breaks where the break carries meaning.
+- **`disposition` is `auto`** (or `A`, `B`, `C`). The §6 rules choose, and the lot
+  quota of GABARITS-SOCIAL §6 applies (at least 60 % of the cards in A, at most
+  30 % in C). A lot that misses it ships as a proof; the fix is editorial — a
+  larger photograph or a shorter text — never a bent threshold.
+- **Photographs stay honest.** A photograph that shows the context and not the
+  featured artist says so in its credit. Do not rely on a licence that a
+  third-party uploader claimed without a permission trail.
+- **Share-alike propagates.** One CC BY-SA photograph makes the lot CC BY-SA, and
+  the captions say it.
+- Text is measured, never shrunk: an overflow is a proof.
 
 ## Research, audio and review
 
@@ -182,11 +158,10 @@ The deck declares `"profil": "memoires-sonores"`. Each card keeps the existing
 §10 fields and adds `etape`: `accroche`, `contexte`, `histoire`,
 `detail-musical`, `ecoute`, `references`, in that order. Its ranks are 1–6;
 its rendering roles are `ouverture`, then five `serie` cards. The last card is
-not `bascule`: it must not trigger the name-focused exit treatment. Cards 2–6
-require body text and a source, and every card requires a title. Only cards 1
-and 5 require an `image` object and asset review; the other four are text cards.
-The scaffold reflects that distinction. A legacy image field on a text card
-is not drawn or loaded and does not contribute a licence to the output.
+not `bascule`: it must not trigger the name-focused exit treatment. Every card
+requires a title and an `image` object with its asset review; cards 2–6 also
+require a source and text in at least one of `corps`, `precision` or `punchline`.
+The scaffold gives every card an empty `image` object.
 
 `musique` identifies `titre`, `artiste`, `version` and `extrait`. Under
 `musique.plateformes`, both `tiktok` and `instagram` require a `reference`
@@ -234,8 +209,8 @@ this renderer. Existing decks without `profil` retain their existing behaviour.
 ## Remaining choices
 
 The remaining editorial choices are the third opening subject (rap or jazz)
-and the new TikTok/Instagram display names and bios. The visual accent and
-six-card presentation are approved and implemented.
+and the new TikTok/Instagram display names and bios. The six-card sequence is
+implemented on the standard carousel gabarit.
 The operator approved broadening those profiles, but did not approve final
 replacement strings. Keep the existing account handles and EthniAfrica brand;
 do not apply the older name-only profile proposals as the new musical brief.
