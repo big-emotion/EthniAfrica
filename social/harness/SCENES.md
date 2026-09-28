@@ -243,6 +243,16 @@ in [`docs/plans/scene-globe-relief.md`](../../docs/plans/scene-globe-relief.md).
   Natural Earth world relief (public domain), together with the river, lake and country layers.
 - `map.rivers`, `map.lakes`: ids of assets of kind `vector` (any GeoJSON lines or polygons).
   `map.atmosphere` (default true) adds the halo and limb darkening.
+- `map.space` and `map.glow` (optional) colour what surrounds the sphere and its halo. Each value
+  is the **name** of an engine palette entry (`ethni_tokens.palette()`: `ground`, `teal`, `perv`,
+  `gold`, `night-ink-3`, …), which resolves through the charter tokens; a hex value or an unknown
+  name is refused. The names are read from the charter palette even in the full-frame layout, whose
+  own light map palette gives some of the same names other colours. For a dark, deep sky use
+  `"space": "ground"` (`--afh-night-ground`, the ground the site's own globe sits on); for a blue
+  halo `"glow": "perv"` (`--afh-cat-perv`, the periwinkle the site's globe draws its equator in).
+  Without the keys the frame is byte-identical to before: the full-frame globe keeps its light
+  ground and its violet halo. Where the relief pack does not reach, the sphere keeps its dimmed
+  ground fill, whatever the space.
 - `map.border_style`: `solid`, `soft`, `glow`, `dashed` or `none`; `map.border_width` in
   pixels. `borders: false` and `none` both draw nothing.
 - Camera keys are `{at, center: [lon, lat], span, tilt?, heading?, ease?, offset?}`. `span` is

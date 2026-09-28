@@ -7,7 +7,10 @@ import unittest
 import numpy
 from PIL import Image
 
+import ethni_scene_fullbleed as fullbleed
+import ethni_tokens as tokens
 import test_ethni_scenes as fixtures
+from ethni_globe import GlobeCamera
 from ethni_scene_plan import validate_plan
 from ethni_scene_render import SceneRenderer
 
@@ -261,6 +264,81 @@ class GlobeRenderTests(GlobeSceneCase):
                             "until": 5, "evidence": copy.deepcopy(self.plan["scenes"][0]["evidence"])}]
         after = numpy.asarray(self.frame()).astype(int)
         self.assertGreater(int((after != before).any(axis=2).sum()), 50)
+
+
+def rgb(colour):
+    return tuple(int(colour[i:i+2], 16) for i in (1, 3, 5))
+
+
+class GlobeSpaceAndGlowTests(GlobeSceneCase):
+    """`map.space` and `map.glow` name palette tokens; without them the full-frame globe keeps its light ground."""
+
+    def rejects(self, message):
+        with self.assertRaisesRegex(ValueError, message):
+            validate_plan(self.plan, self.root, 10)
+
+    def wide(self, **keys):
+        cfg = self.globe()
+        cfg["borders"] = False
+        cfg["camera"] = [{"at": 0, "center": [5, 10], "span": 300}]
+        cfg.update(keys)
+        return cfg
+
+    def fullbleed_frame(self, renderer=None):
+        renderer = renderer or SceneRenderer(self.plan, self.root, [])
+        return fullbleed.background(renderer, self.plan["scenes"][0], 2.0)
+
+    def test_space_and_glow_name_a_palette_token_never_a_colour_value(self):
+        cfg = self.wide(space="ground", glow="perv")
+        validate_plan(self.plan, self.root, 10)
+        for key in ("space", "glow"):
+            for wrong in ("#000000", "black", "", 3):
+                cfg[key] = wrong
+                self.rejects(f"map.{key}")
+            cfg[key] = "teal"
+            validate_plan(self.plan, self.root, 10)
+
+    def test_space_and_glow_belong_to_the_globe(self):
+        cfg = self.wide(space="ground")
+        cfg["projection"] = "mercator"
+        del cfg["relief"], cfg["rivers"], cfg["lakes"]
+        cfg["camera"] = [{"at": 0, "bounds": [-20, -5, 20, 25]}]
+        self.rejects("globe")
+
+    def test_without_the_keys_the_fullbleed_globe_keeps_its_light_ground(self):
+        self.wide()
+        self.assertEqual(self.fullbleed_frame().getpixel((2, 2)), rgb(fullbleed.LIGHT["ground"]))
+
+    def test_the_space_around_the_globe_takes_the_named_token(self):
+        self.wide(space="ground")
+        self.assertEqual(self.fullbleed_frame().getpixel((2, 2)), rgb(tokens.palette()["ground"]))
+
+    def test_the_halo_takes_the_named_glow_token(self):
+        def halo(glow):
+            cfg = self.wide(space="ground")
+            if glow: cfg["glow"] = glow
+            frame = self.fullbleed_frame()
+            camera = GlobeCamera((5, 10), 300, (0, 0, *frame.size))
+            (ox, oy), radius = camera.disc()
+            return frame.getpixel((round(ox + radius*1.01), round(oy)))
+
+        space = rgb(tokens.palette()["ground"])
+        for glow in ("perv", "teal"):
+            pixel, target = halo(glow), rgb(tokens.palette()[glow])
+            self.assertNotEqual(pixel, space)
+            # The halo is the named token laid over the space: every channel moves towards the token.
+            for channel in range(3):
+                self.assertLessEqual(abs(pixel[channel] - target[channel]), abs(space[channel] - target[channel]))
+        self.assertNotEqual(halo("perv"), halo("teal"))
+
+    def test_changing_the_space_is_never_served_from_the_cached_base(self):
+        cfg = self.wide()
+        renderer = SceneRenderer(self.plan, self.root, [])
+        light = self.fullbleed_frame(renderer).tobytes()
+        cfg["space"] = "ground"
+        dark = self.fullbleed_frame(renderer).tobytes()
+        self.assertTrue(light != dark, "the second frame reused the base cached for the first")
+        self.assertTrue(dark == self.fullbleed_frame().tobytes())
 
 
 if __name__ == "__main__":
