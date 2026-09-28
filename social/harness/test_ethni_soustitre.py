@@ -136,6 +136,27 @@ def test_french_spaced_punctuation_never_becomes_a_caption_of_its_own():
     assert len(st.minuter(captions, alignes)) == len(captions)
 
 
+CITATION_EN_FIN_DE_PARAGRAPHE = (
+    "Le philosophe Wittgenstein a écrit : « Les frontières de mon langage sont les frontières de mon monde. »\n\n"
+    "Un exemple vient du Sénégal, dans la région du Niokolo. Un peuple y a son propre mot pour se nommer.")
+
+
+def test_a_quotation_closing_a_paragraph_stays_with_its_own_sentence():
+    """« monde. » ends a paragraph: the closing mark belongs to it, not to the next caption.
+
+    The cut after « monde. » left « » » at the head of the following phrase, together
+    with the blank line between the two paragraphs. The caption then held two
+    lines of nothing before its first word, and the scene renderer stopped on
+    « Text overflow in Corps » (Malinké, 2026-09-28).
+    """
+    captions = st.segmenter(CITATION_EN_FIN_DE_PARAGRAPHE)
+    for c in captions:
+        assert "\n" not in c, f"un sous-titre traverse un saut de paragraphe : {c!r} dans {captions}"
+        assert not c.startswith("»"), f"un guillemet fermant ouvre un sous-titre : {c!r} dans {captions}"
+    assert any(c.endswith("monde. »") for c in captions), captions
+    assert " ".join(captions).split() == CITATION_EN_FIN_DE_PARAGRAPHE.split()
+
+
 # ---------------------------------------------------------------- the pivot
 
 
