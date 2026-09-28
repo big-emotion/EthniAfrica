@@ -293,7 +293,17 @@ Features have `kind`, `label`, local `at`/`until`, their own `evidence`, optiona
 `colour` (`gold`, `white`, `night-ink-2`, `teal`, `perv`) and label `offset`.
 Optional `role: "context"` marks a territory as geographic background. Context
 territories render below subject features regardless of array order, with dimmed
-fill and labels, and a visible `Voisinage` legend prefix. Use dated evidence;
+fill and labels, and a visible `Voisinage` legend prefix.
+
+A `country` feature belongs to the `national` layer, with one exception: on the
+`people` layer a country may stand **as context only** (`role: "context"`), so a
+present-day country can stay raised while a people's `presence-zone` rises inside
+it in the same scene. It is drawn first, dimmed, with its `draw_seconds` and
+`extrude`, and the zone and labels are laid over it. Its legend line carries no
+`Voisinage` prefix, since the country contains the zone rather than neighbouring
+it. A subject country on the people layer, or a context country on any other
+layer, is still refused. Pick a zone colour that stands off the dimmed country
+(a gold zone on a gold country reads faintly at wide spans). Use dated evidence;
 proximity alone does not establish contemporaneity. Omission means `subject`.
 Optional `fade_seconds` (0.04 to `until-at`) reveals a feature once, then holds
 it. Reduced-motion output shows it immediately. Neither option infers geometry.

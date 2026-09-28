@@ -491,7 +491,8 @@ class SceneRenderer:
                     meaning = {"journey": "Trajet", "migration": "Migration", "language-diffusion": "Diffusion linguistique",
                                "name-circulation": "Circulation du nom",
                                "river": "Cours d'eau (tracé schématique)"}.get(feature.get("meaning"))
-                    role = "Voisinage : " if feature.get("role") == "context" else ""
+                    # A context country contains the subject rather than neighbouring it.
+                    role = "Voisinage : " if feature.get("role") == "context" and feature["kind"] != "country" else ""
                     tail = f" · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else "")
                     entries.append((role+feature["label"], tail, feature.get("geometry_note"), e["period"],
                                     STATUS[e["status"]] + (f" · {meaning}" if meaning else "")))

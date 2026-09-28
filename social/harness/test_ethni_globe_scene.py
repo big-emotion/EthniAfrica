@@ -341,5 +341,80 @@ class GlobeSpaceAndGlowTests(GlobeSceneCase):
         self.assertTrue(dark == self.fullbleed_frame().tobytes())
 
 
+class GlobeContextCountryTests(GlobeSceneCase):
+    """A present-day country kept visible, as context, while a people's zone rises inside it."""
+
+    def rejects(self, message):
+        with self.assertRaisesRegex(ValueError, message):
+            validate_plan(self.plan, self.root, 10)
+
+    def people(self, tilt=0):
+        cfg = self.globe()
+        cfg["layer"], cfg["borders"] = "people", False
+        cfg["camera"] = [{"at": 0, "center": [0, 10], "span": 40, "tilt": tilt}]
+        return cfg
+
+    def zone(self):
+        return {"kind": "presence-zone", "points": [[-3, 8], [3, 8], [3, 12], [-3, 12], [-3, 8]], "label": "Zone",
+                "at": 0, "until": 5, "colour": "teal", "geometry_note": "Approximate", "unlabelled": True,
+                "extrude": 20, "evidence": {**copy.deepcopy(self.plan["scenes"][0]["evidence"]), "status": "estimate"}}
+
+    def country(self, **fields):
+        return self.feature(role="context", extrude=20, unlabelled=True, **fields)
+
+    def pixel(self, image, point):
+        x, y = GlobeCamera((0, 10), 40, (0, 0, image.shape[1], image.shape[0])).project(point)
+        return image[round(y), round(x)]
+
+    def test_a_context_country_and_a_zone_inside_it_share_the_people_layer(self):
+        self.people()["features"] = [self.country(), self.zone()]
+        validate_plan(self.plan, self.root, 10)
+
+    def test_a_subject_country_still_needs_the_national_layer(self):
+        cfg = self.people()
+        for role in ({}, {"role": "subject"}):
+            cfg["features"] = [self.feature(**role), self.zone()]
+            self.rejects("national layer")
+
+    def test_a_context_country_is_refused_off_the_people_layer(self):
+        cfg = self.people()
+        for layer in ("national", "political", "physical"):
+            cfg["layer"] = layer
+            cfg["features"] = [self.country()]
+            self.rejects("people layer")
+
+    def test_the_country_is_drawn_under_the_zone_whatever_the_array_order(self):
+        cfg = self.people()
+        cfg["features"] = [self.zone()]
+        zone_only = numpy.asarray(self.frame(4.0)).astype(int)
+        cfg["features"] = [self.country()]
+        country_only = numpy.asarray(self.frame(4.0)).astype(int)
+        cfg["features"] = [self.country(), self.zone()]
+        both = numpy.asarray(self.frame(4.0)).astype(int)
+        # Inside the country, away from the zone: the country is there.
+        self.assertTrue((self.pixel(both, (-8, 3)) != self.pixel(zone_only, (-8, 3))).any())
+        # At the zone's centre: the zone is laid over the country, not hidden under it.
+        self.assertTrue((self.pixel(both, (0, 10)) != self.pixel(country_only, (0, 10))).any())
+        cfg["features"] = [self.zone(), self.country()]
+        self.assertTrue((numpy.asarray(self.frame(4.0)).astype(int) == both).all())
+
+    def test_a_context_country_keeps_its_extrusion_under_a_tilt(self):
+        cfg = self.people(tilt=50)
+        empty = numpy.asarray(self.frame(4.0)).astype(int)
+
+        def top_row(extrude):
+            cfg["features"] = [self.feature(role="context", extrude=extrude, unlabelled=True)]
+            changed = (numpy.asarray(self.frame(4.0)).astype(int) != empty).any(axis=2)
+            return int(numpy.flatnonzero(changed.any(axis=1))[0])
+
+        self.assertLess(top_row(50), top_row(0) - 10)
+
+    def test_the_legend_does_not_call_a_containing_country_a_neighbour(self):
+        self.people()["features"] = [self.country(), self.zone()]
+        legend = "\n".join(SceneRenderer(self.plan, self.root, []).legend(self.plan["scenes"][0], 2))
+        self.assertIn("Land", legend)
+        self.assertNotIn("Voisinage : Land", legend)
+
+
 if __name__ == "__main__":
     unittest.main()

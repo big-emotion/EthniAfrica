@@ -168,7 +168,9 @@ def validate_map(value, duration, assets, sources):
         end = number(feature.get("until"), "feature.until", 0, duration)
         require(end > start, "feature.until must follow at")
         require(feature.get("role", "subject") in ("subject", "context"), "Unknown feature role")
-        require(feature.get("role") != "context" or kind in ("territory", "point"), "Context role requires a territory or point")
+        require(feature.get("role") != "context" or kind in ("territory", "point")
+                or (kind == "country" and value["layer"] == "people"),
+                "Context role requires a territory or point, or a country on the people layer")
         if "annotation" in feature:
             require(kind == "point", "annotation requires a point")
             text(feature["annotation"], "feature.annotation")
@@ -204,8 +206,10 @@ def validate_map(value, duration, assets, sources):
                 require(type(feature.get("value")) is int and feature["value"] > 0,
                         "A speakers feature needs a positive integer value")
         elif kind == "country":
-            # A whole present-day country switched on at a cue, on the national layer only.
-            require(value["layer"] == "national", "A country feature needs the national layer")
+            # A whole present-day country switched on at a cue. On the people layer it may only stand as
+            # context, drawn under the zones: the country orients, it never stands for a people.
+            require(value["layer"] == "national" or (value["layer"] == "people" and feature.get("role") == "context"),
+                    "A country feature needs the national layer, or role: context on the people layer")
             text(feature.get("code"), "feature.code")
             require(not {"point", "points", "meaning"} & set(feature), "Country feature has point or route fields")
         else:
