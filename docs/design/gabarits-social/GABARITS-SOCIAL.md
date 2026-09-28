@@ -170,6 +170,41 @@ répond.
 question — pour le Ghana : « Le nom du Ghana actuel vient-il de l'ancien empire du
 Ghana ? ».
 
+### L'exception de la question ouverte (2026-09-28)
+
+**Une couverture peut être une seule question longue, quand l'opérateur l'a approuvée
+telle quelle.** Décidé le 2026-09-28 sur le carrousel « retour ou découverte » : la
+question complète, 29 mots — « Quand on est né hors d'Afrique et qu'on visite pour la
+première fois le pays d'origine de ses parents, est-ce qu'on y **retourne** ou est-ce
+qu'on le **découvre** ? » — a été préférée par l'opérateur à une version courte
+(« Un premier voyage peut-il être un retour ? »), parce que la version courte
+présupposait la réponse, alors que la question longue place les deux mots au même rang.
+
+Ce que la règle 2 et la règle 3 ci-dessus disent ne change pas pour les autres
+ouvertures. L'exception est **déclarée sur la carte** (`titre_forme: "question"`, voir
+§10) et ne se déduit jamais de la longueur du titre : sans elle, le plafond de huit
+mots et le refus de réduire le titre s'appliquent comme avant.
+
+- **Un rang à elle : « Titre de couverture — question »**, Anton 64 px (§3), le corps
+  de la punchline. À 120 px la question demande dix lignes et 1 296 px pour 345 px
+  disponibles ; à 64 px elle tient en cinq lignes et 346 px. Lue à 430 px de large, la
+  ligne mesure 25 px de corps à l'écran.
+- **Le plafond se mesure en lignes, jamais en mots** : cinq lignes composées au plus en
+  4:5, six en 9:16, dont la colonne perd 180 px à droite pour l'interface de la plateforme
+  (même question : 6 lignes à 69 px sur 855 px de large). Au-delà, le moteur nomme la
+  faute et ne rapetisse pas le titre en silence.
+- **En 9:16 la carte se déclare en A** (`disposition: "A"`). La règle de §6 renvoie la
+  question au cartouche, qui ne la tient pas (447 px pour 369 disponibles) ; la mise en A
+  la tient sans faute. C'est un écart à la règle, écrit sur la carte et consigné par le
+  rapport de rendu (« A imposée par la carte »), jamais une correction silencieuse du moteur.
+- **Deux mots en accent, pas un** (`titre_accents`) : les deux pôles de la question,
+  « retourne » et « découvre », prennent la même couleur d'accent, de sorte qu'aucun
+  ne passe avant l'autre. L'accent reste une seule couleur par carte.
+- **La question ne vaut que si la pièce y répond.** Comme toute accroche (« Ce qu'une
+  miniature ne fait pas »), elle est refermée dans le carrousel — ici par l'absence
+  volontaire de verdict : la pièce dit que les deux mots existent et qu'aucun ne doit
+  être imposé.
+
 > **Décision ouverte — à trancher par l'opérateur.** Cette accroche fait onze mots,
 > et la règle 3 en plafonne huit : le moteur la refuserait comme titre d'ouverture.
 > Trois issues, aucune n'est choisie ici : raccourcir l'accroche ; faire porter la
@@ -254,6 +289,7 @@ taille et de sa place, jamais d'un contraste raté.**
 | Rang « 01/05 » | Nunito | 22 | — | 700 | interlettre .14em | accent |
 | Chiffre / mot d'accent | Anton | 216 | 0,84 | — | — | accent |
 | Titre de couverture | Anton | 120–126 | 1,08 | — | maj. | encre 1 |
+| Titre de couverture — question | Anton | 64 | 1,08 | — | maj. | encre 1, deux mots en accent |
 | Titre de série | Anton | 96–118 | 1,08 | — | maj. | encre 1 |
 | Paire — terme | Anton | 56 | 1,0 | — | — | encre 1 / accent |
 | Paire — glose | Nunito | 28 | 1,35 | 400 | — | encre 2 |
@@ -947,6 +983,17 @@ fichier.
 **Un sujet sans mythe sourcé n'a pas de carrousel.** N'en invente pas un pour remplir
 l'accroche : une question dont la pièce ne paie pas la réponse est un appât.
 
+**Exception nommée : le carrousel « retour ou découverte » (opérateur, 2026-09-28).**
+Ce carrousel de six cartes, approuvé mot pour mot, n'a ni mythe attesté ni clôture unique : sa
+dernière carte est « À vous la parole », une question posée à la personne qui a vécu le
+voyage. L'opérateur a tranché que **cette carte tient lieu de clôture pour ce carrousel** et
+qu'aucune septième carte ne s'ajoute. L'audit du message note donc le critère 8 sans objet
+pour lui, en citant cette décision.
+
+Elle vaut pour ce carrousel et pour lui seul. Elle n'ouvre pas de règle : un autre carrousel
+sans clôture unique attend sa propre décision. La question de la couverture reste refermée
+dans la pièce (carte 4), comme l'exige toute accroche.
+
 ### La carte d'ouverture
 
 Disposition **A**, image plein cadre. Trois blocs pour un carrousel, quatre pour un reel
@@ -1415,6 +1462,18 @@ toute scène vidéo.
 sont écrits dans `structure`. **Champ facultatif, jamais bloquant** : sans lui le titre
 reste en encre 1, ce qui est correct, seulement moins parlant. Il se remplit deck par
 deck au moment de rendre, comme `image.identite`.
+
+`titre_forme` — **facultatif, carte d'ouverture seulement** — vaut `"question"` quand le
+titre est une seule question longue approuvée telle quelle (§1 ter, « L'exception de la
+question ouverte »). Il change le rang du titre (§3, « Titre de couverture — question »)
+et remplace le plafond de huit mots par un plafond de lignes composées (cinq en 4:5, six en
+9:16). Absent, il
+laisse l'ouverture sous la règle ordinaire.
+
+`titre_accents` — **facultatif** — liste des mots ou membres de phrase du titre qui
+prennent l'accent, écrits en minuscules avec leurs accents comme `titre_camps` :
+`["retourne", "découvre"]`. Un mot absent du titre ne bloque rien. Le moteur ne les déduit
+jamais du titre.
 
 `coupe` force les retours à la ligne d'un titre. `null` laisse le moteur couper sur la
 mesure. Ne l'employer que là où la coupe **porte du sens** — une énumération dont les

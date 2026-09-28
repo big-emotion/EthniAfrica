@@ -147,6 +147,9 @@ SOUS_TITRE_PLANCHER = 30
 # the type has to come down to fit, and the first image stops reading in the feed
 # — which is the one job it has.
 MINIATURE_MOTS_MAX = 8
+# §1 ter, open-question exception: what the question rank buys is lines, not words.
+# 9:16 gets one more because its column gives up 180 px to the platform interface.
+QUESTION_LIGNES_MAX = {"carrousel": 5, "reel": 6}
 
 # §9 — the plate's horizontal padding around the caption. Named because the
 # flush-left video layout has to put the plate's own edge on the margin, which
@@ -192,6 +195,10 @@ class Bloc:
     # The title names the pair's two camps in the pair's order, so the colour tells
     # the reader which side a word belongs to.
     mot_accent: str = ""
+    # The same, for a title whose meaning rests on two words rather than one: the
+    # open-question cover paints both poles of its question in the accent, so
+    # neither is set above the other.
+    mots_accent: tuple = ()
     # §9 bis — the word index from which the accent takes over to the end of the
     # block. A closing's punch runs across a line break — « ELLE LE / TRAVERSE. » —
     # so it cannot be matched inside a line; what is matched is the position.
@@ -318,6 +325,8 @@ def peindre_texte(d, xy, texte, f, fill):
 # word with U+00A0 whatever space the copy used: Anton and Nunito ship no U+202F
 # glyph — it measures 40 px, the missing-glyph box — while U+00A0 is a space.
 _MARQUE_DETACHEE = frozenset("?!:;»")
+# The opening guillemet is the one mark that belongs to the word *after* it.
+_MARQUE_OUVRANTE = "«"
 _INSECABLE = "\u00a0"
 
 
@@ -326,6 +335,8 @@ def _jetons(texte):
     jetons = []
     for mot in (texte or "").split():
         if jetons and set(mot) <= _MARQUE_DETACHEE:
+            jetons[-1] += _INSECABLE + mot
+        elif jetons and jetons[-1] == _MARQUE_OUVRANTE:
             jetons[-1] += _INSECABLE + mot
         else:
             jetons.append(mot)
@@ -665,6 +676,18 @@ def plan(carte, deck, fmt_key, *, image, sous_titre=False, disposition=None):
 
     contenu = _colonne(carte, deck, fmt_key, colonne_w, disposition, k)
 
+    # §1 ter, open-question exception — the ceiling is measured in composed lines,
+    # because that is what a reader meets on a phone; a word count would refuse a
+    # short-worded question that wraps long and pass a long-worded one that does not.
+    if _est_question_ouverte(carte):
+        titre_question = next((b for b in contenu if b.nom == "titre"), None)
+        plafond_lignes = QUESTION_LIGNES_MAX.get(fmt_key, QUESTION_LIGNES_MAX["carrousel"])
+        if titre_question is not None and len(titre_question.lignes) > plafond_lignes:
+            p.fautes.append(
+                f"la miniature porte une question de {len(titre_question.lignes)} lignes "
+                f"en {disposition}/{fmt_key} — §1 ter en tient {plafond_lignes} au "
+                f"plus : raccourcis l'accroche")
+
     # The column is compressible and the foot is not. §9: when a subtitle band is
     # active in 9:16 the content gives up its height, never the foot — a foot
     # pushed down lands under the platform interface and takes the attribution
@@ -703,7 +726,9 @@ def plan(carte, deck, fmt_key, *, image, sous_titre=False, disposition=None):
             p.fautes.append(
                 f"la miniature demande {haut_total} px pour {dispo} px disponibles "
                 f"en {disposition}/{fmt_key} — §1 ter interdit de réduire le titre "
-                f"d'une ouverture : raccourcis l'accroche, huit mots au plus"
+                f"d'une ouverture : raccourcis l'accroche, "
+                + ("la question tient en cinq lignes au plus (six en 9:16)"
+                   if _est_question_ouverte(carte) else "huit mots au plus")
                 if carte.get("role") == "ouverture" else
                 f"la colonne demande {haut_total} px pour {dispo} px disponibles en "
                 f"{disposition}/{fmt_key} — raccourcis le corps, ou passe la carte "
@@ -835,6 +860,10 @@ def plan(carte, deck, fmt_key, *, image, sous_titre=False, disposition=None):
     return p
 
 
+def _est_question_ouverte(carte):
+    return carte.get("role") == "ouverture" and carte.get("titre_forme") == "question"
+
+
 def _colonne(carte, deck, fmt_key, largeur, disposition, k):
     """The content blocks, in reading order, sized but not yet placed."""
     blocs = []
@@ -894,13 +923,23 @@ def _colonne(carte, deck, fmt_key, largeur, disposition, k):
         # where a series title reads as a smudge; the eight-word ceiling is what
         # buys back the lines the larger type costs. A sentence-long opening title
         # is now a copy fault, reported by `portes`, not a reason to set it small.
-        ajouter("titre", carte.get("titre", ""),
-                "Titre de série" if disposition == "A" and carte.get("role") != "ouverture"
-                else "Titre de couverture",
+        # §1 ter — the one written exception: an opening that is a single open
+        # question, declared on the card, is set at its own rank and measured in
+        # lines instead of counted in words. It is opt-in so that an ordinary
+        # opening keeps the eight-word ceiling, and never shrinks silently.
+        if _est_question_ouverte(carte):
+            rang_titre = "Titre de couverture — question"
+        elif disposition == "A" and carte.get("role") != "ouverture":
+            rang_titre = "Titre de série"
+        else:
+            rang_titre = "Titre de couverture"
+        ajouter("titre", carte.get("titre", ""), rang_titre,
                 encre1, majuscule=True, coupe=carte.get("coupe"))
         titre = next((b for b in blocs if b.nom == "titre"), None)
         if titre is not None and camps.get("deux"):
             titre.mot_accent = camps["deux"]
+        if titre is not None and carte.get("titre_accents"):
+            titre.mots_accent = tuple(carte["titre_accents"])
         ajouter("precision", carte.get("precision", ""), "Précision",
                 encre2 if disposition == "B" else encre1, "precision")
 
@@ -1667,11 +1706,14 @@ def _teintes_de_ligne(ligne, bloc, vus, encre, vise):
         if avant and apres:
             avant += " "
         return [(t, c) for t, c in ((avant, encre), (apres, vise)) if t]
-    if bloc.mot_accent:
-        morceaux = _decouper_mot(ligne, bloc.mot_accent)
-        if morceaux:
-            return [(t, c) for t, c in zip(morceaux, (encre, vise, encre)) if t]
+    mots = _mots_accent_du_bloc(bloc)
+    if mots:
+        return [(t, vise if accentue else encre) for t, accentue in _decouper_mots(ligne, mots)]
     return [(ligne, encre)]
+
+
+def _mots_accent_du_bloc(bloc):
+    return bloc.mots_accent or ((bloc.mot_accent,) if bloc.mot_accent else ())
 
 
 def _v_arrets_cadres(bas):
@@ -1740,6 +1782,31 @@ def _decouper_mot(ligne, mot):
             return ligne[:debut], ligne[debut:fin], ligne[fin:]
         debut += len(morceau) + 1
     return None
+
+
+def _decouper_mots(ligne, mots):
+    """A line as (text, accented) runs, each phrase of `mots` found in it once.
+
+    A phrase the line does not contain is skipped, never an error: the title
+    wraps, so one of its accent words may sit on another line.
+    """
+    plages = []
+    for mot in mots:
+        trouve = _decouper_mot(ligne, mot)
+        if trouve:
+            debut = len(trouve[0])
+            plages.append((debut, debut + len(trouve[1])))
+    runs, curseur = [], 0
+    for debut, fin in sorted(plages):
+        if debut < curseur:
+            continue
+        if debut > curseur:
+            runs.append((ligne[curseur:debut], False))
+        runs.append((ligne[debut:fin], True))
+        curseur = fin
+    if curseur < len(ligne):
+        runs.append((ligne[curseur:], False))
+    return runs
 
 
 def _rampe(h, arrets, base):
@@ -1979,20 +2046,20 @@ def _peindre(carte, deck, fmt_key, *, image, sous_titre, texte, epreuve=None,
         decalage = round(ENTREE_TRANSLATION * (1 - arrive))
         encre = _teinter(bloc.couleur, _fond(deck), arrive * bloc.opacite)
         y = bloc.y + decalage
-        vise = _teinter(_accent(deck), _fond(deck), arrive) if bloc.mot_accent else None
+        vise = _teinter(_accent(deck), _fond(deck), arrive) if _mots_accent_du_bloc(bloc) else None
         for ligne in bloc.lignes:
             # A wrapped block set flush left inside a centred column reads as a
             # ragged column drifting off its own axis.
             x = bloc.x
             if bloc.aligne == "centre":
                 x += (bloc.w - largeur_texte(ligne, f)) / 2
-            morceaux = _decouper_mot(ligne, bloc.mot_accent) if vise else None
-            if morceaux:
-                # Drawn in three runs so the word keeps the line's own metrics: a
+            morceaux = _decouper_mots(ligne, _mots_accent_du_bloc(bloc)) if vise else None
+            if morceaux and any(accentue for _, accentue in morceaux):
+                # Drawn in runs so the word keeps the line's own metrics: a
                 # separate block would re-measure and drift off the baseline.
-                for part, couleur in zip(morceaux, (encre, vise, encre)):
+                for part, accentue in morceaux:
                     if part:
-                        peindre_texte(d, (x, y), part, f, couleur)
+                        peindre_texte(d, (x, y), part, f, vise if accentue else encre)
                         x += largeur_texte(part, f)
             else:
                 peindre_texte(d, (x, y), ligne, f, encre)
@@ -2589,7 +2656,7 @@ def portes(cartes, deck, identites=None):
         # §1 ter — the opening is the thumbnail, and it is read at a sixth of its
         # width. A remark, not a refusal: the lot still renders, and the copy is
         # shortened in `structure`, which is the only place that can.
-        if c.get("role") == "ouverture":
+        if c.get("role") == "ouverture" and not _est_question_ouverte(c):
             mots = _mots(c.get("titre", "") or "")
             if len(mots) > MINIATURE_MOTS_MAX:
                 remarques.append(
