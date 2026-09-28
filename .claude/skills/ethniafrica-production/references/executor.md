@@ -18,6 +18,12 @@ stale evidence, or pending decision blocks execution. Return the failed gate to 
 coordinator; do not bypass it by calling the renderer directly. This adds a workflow
 gate without changing the underlying scene engine or its release validator.
 
+Pending publication rights alone do not block the `proof` milestone. Keep their
+release checks pending and render the private proof under the rule in `produire`.
+If the coordinator gate is waiting only for publication clearance, return it to
+the coordinator to resume proof work; never bypass the gate or assert clearance.
+Rights clearance remains required for the `delivery` milestone.
+
 - `proof`: verify and run documented `render`, inspect cue previews, transitions,
   subtitles and audio when playback is available. Return the proof and execution
   reports. Leave substantive release review to the planning worker. Do not finalize.
