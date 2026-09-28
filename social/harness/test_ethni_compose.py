@@ -1159,6 +1159,87 @@ def test_a_line_the_face_covers_is_drawn_exactly_as_before():
     assert _encre_de("Bonabéri, un quartier", f) == plaque.tobytes()
 
 
+# ------------------------------------------- §1 ter — the open-question cover
+
+QUESTION_OUVERTE = ("Quand on est né hors d’Afrique et qu’on visite pour la première "
+                    "fois le pays d’origine de ses parents, est-ce qu’on y retourne "
+                    "ou est-ce qu’on le découvre ?")
+
+
+def _ouverture(**kw):
+    champs = dict(role="ouverture", rang=1, titre=QUESTION_OUVERTE, precision="",
+                  punchline="", corps="", source="")
+    champs.update(kw)
+    return carte(**champs)
+
+
+def test_an_ordinary_opening_still_refuses_a_sentence_long_title():
+    """The eight-word ceiling stays the rule; the question form is an opt-in."""
+    plan = gab.plan(_ouverture(), DECK, "carrousel", image=image_test(3000, 4000))
+    assert any("huit mots" in f for f in plan.fautes), plan.fautes
+    verdict = gab.portes([_ouverture()], DECK)
+    assert any("mots" in r for r in verdict.remarques), verdict.remarques
+
+
+def test_an_open_question_cover_is_composed_whole_at_its_own_rank():
+    """A cover that is one long question is set at the question rank of §3.
+
+    Measured on the approved « retour ou découverte » cover: 29 words run to ten
+    lines and 1 296 px at the cover rank, against 345 px available. At the
+    question rank it takes five lines and keeps its full sentence.
+    """
+    carte_question = _ouverture(titre_forme="question")
+    plan = gab.plan(carte_question, DECK, "carrousel", image=image_test(3000, 4000))
+    titre = plan.bloc("titre")
+    assert plan.fautes == [], plan.fautes
+    assert plan.disposition == "A"
+    assert titre.corps == tk.type_size("Titre de couverture — question", "carrousel")
+    assert titre.corps < tk.type_size("Titre de couverture", "carrousel")
+    assert len(titre.lignes) <= 5, titre.lignes
+    assert " ".join(titre.lignes).replace(" ", " ") == QUESTION_OUVERTE.upper()
+
+
+def test_an_open_question_cover_is_not_flagged_for_its_word_count():
+    verdict = gab.portes([_ouverture(titre_forme="question")], DECK)
+    assert not [r for r in verdict.remarques if "mots" in r], verdict.remarques
+
+
+def test_a_question_too_long_for_its_rank_is_still_refused():
+    """The question rank buys lines, not unlimited text: overflow names the fault."""
+    trop_long = QUESTION_OUVERTE + " " + QUESTION_OUVERTE
+    plan = gab.plan(_ouverture(titre_forme="question", titre=trop_long), DECK,
+                    "carrousel", image=image_test(3000, 4000))
+    assert any("miniature" in f for f in plan.fautes), plan.fautes
+
+
+def test_several_words_of_a_title_can_take_the_accent():
+    """« retourne » and « découvre » are the two poles of the question."""
+    runs = gab._decouper_mots("EST-CE QU’ON Y RETOURNE OU EST-CE QU’ON LE DÉCOUVRE ?",
+                              ["retourne", "découvre"])
+    accentues = [t for t, accent in runs if accent]
+    assert accentues == ["RETOURNE", "DÉCOUVRE ?"], runs
+    assert "".join(t for t, _ in runs) == (
+        "EST-CE QU’ON Y RETOURNE OU EST-CE QU’ON LE DÉCOUVRE ?")
+
+
+def test_a_word_absent_from_a_line_leaves_it_whole():
+    assert gab._decouper_mots("QUAND ON EST NÉ", ["retourne"]) == [("QUAND ON EST NÉ", False)]
+
+
+def test_the_question_cover_carries_both_accent_words_and_renders():
+    c = _ouverture(titre_forme="question", titre_accents=["retourne", "découvre"])
+    plan = gab.plan(c, DECK, "carrousel", image=image_test(3000, 4000))
+    assert plan.bloc("titre").mots_accent == ("retourne", "découvre")
+    im = gab.composer(c, DECK, "carrousel", image=image_test(3000, 4000))
+    assert im.size == (1080, 1350)
+
+
+def test_a_title_without_accent_words_carries_none():
+    plan = gab.plan(_ouverture(titre_forme="question"), DECK, "carrousel",
+                    image=image_test(3000, 4000))
+    assert plan.bloc("titre").mots_accent == ()
+
+
 def main():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     failed = 0
