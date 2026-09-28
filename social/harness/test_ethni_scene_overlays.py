@@ -177,6 +177,29 @@ class OverlayRenderTests(OverlayFixture):
         with self.assertRaisesRegex(ValueError, "overflow"):
             renderer.render(5 + 4)
 
+    def bright(self, plan, instant):
+        renderer = self.renderer(plan)
+        renderer.assets["photo"] = Image.new("RGB", (1200, 1200), (250, 250, 250))
+        return numpy.asarray(renderer.render(instant).convert("L"), dtype=float)
+
+    def test_the_concept_at_the_top_of_an_overlay_holds_over_a_pale_picture(self):
+        # The concept sits at y 190, where the map's sky is nearly white: the title needs its own scrim there.
+        frame = self.bright(self.overlay(), 5 + 4)
+        self.assertLess(frame[200:300, 800:1000].mean(), 110)
+
+    def test_the_lower_part_of_a_page_seen_by_a_camera_fades_out_under_the_title_and_the_caption(self):
+        # A printed page runs on under the title and the narration; it must not compete with them.
+        keys = [{"at": 0, "view": [1, .5, .5]}, {"at": 2, "view": [1.4, .5, .5]}]
+        frame = self.bright(self.keyed(keys), 5 + 1)
+        self.assertLess(frame[1050:1150, 800:1000].mean(), 60)
+        self.assertGreater(frame[300:400, 800:1000].mean(), 200, "the upper half stays the picture")
+
+    def test_five_one_line_items_fit_between_the_concept_and_the_caption(self):
+        # The plural list of the Bantu reel is five words with a one-line language under each; at a 24 px gap
+        # it overflowed by 16 px and the operator would have had to drop a word from a list of five.
+        five = [{"label": f"forme {i}", "body": "Swahili", "at": i * 0.5} for i in range(5)]
+        self.renderer(self.overlay(items=five)).render(5 + 4.9)
+
     def test_reduced_motion_shows_every_item_at_once(self):
         still = self.renderer(self.overlay(), reduced_motion=True)
         self.assertEqual(still.render(5 + .2).tobytes(), still.render(5 + 4.5).tobytes())

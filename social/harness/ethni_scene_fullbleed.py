@@ -25,25 +25,41 @@ INSERT_WIDTH, INSERT_HEIGHT, INSERT_TOP, FADE = 380, 430, 480, .35
 # An overlay: words that arrive on a cue over the picture or the globe, and then stay. The band below the concept
 # and above the caption belongs to the items; each item owns its place from the first frame, so nothing moves
 # when another one joins it.
-OVERLAY_TOP, OVERLAY_BOTTOM, PLATE_PAD, ITEM_GAP, RISE = 480, 1330, 20, 24, 26
+OVERLAY_TOP, OVERLAY_BOTTOM, PLATE_PAD, ITEM_GAP, RISE = 480, 1330, 20, 18, 26
 PLATE_ALPHA = 150
 REVEAL_S = tokens.duree("slow")
 
 
-def shade(renderer):
-    """Top and bottom gradients, built once: dark enough to carry white text over any picture."""
-    if not hasattr(renderer, "_shade"):
+def shade_variant(scene):
+    """Which shading a scene needs. An overlay carries its concept at y 190, where a globe's sky is nearly white,
+    so it gets a scrim of its own; a page seen by a camera runs on under the title and the narration, so it fades
+    out there instead of competing with them."""
+    if scene["type"] == "comparison":
+        return "overlay"
+    if scene["type"] == "image" and "keys" in scene["image"].get("motion", {}):
+        return "page"
+    return "default"
+
+
+def shade(renderer, variant="default"):
+    """Top and bottom gradients, built once per variant: dark enough to carry white text over any picture."""
+    cache = renderer.__dict__.setdefault("_shades", {})
+    if variant not in cache:
         alpha = Image.new("L", (W, H), 0)
         draw = ImageDraw.Draw(alpha)
         for y in range(H):
             top = 190*(1-y/460) if y < 460 else 0
+            if variant == "overlay":
+                top = 215 if y < 330 else 215*(1-(y-330)/300) if y < 630 else 0
             # Nothing above 900 px: the map is the subject. Text sits on the shading and a drop shadow.
             bottom = 0 if y < 900 else 165*(y-900)/400 if y < 1300 else 165+50*min(1, (y-1300)/260)
+            if variant == "page":
+                bottom = 0 if y < 880 else 245*(y-880)/130 if y < 1010 else 245
             draw.line((0, y, W, y), fill=round(max(top, bottom)))
         shading = Image.new("RGBA", (W, H), ImageColor.getrgb(renderer.palette["ground"])+(0,))
         shading.putalpha(alpha)
-        renderer._shade = shading
-    return renderer._shade
+        cache[variant] = shading
+    return cache[variant]
 
 
 def shadowed(renderer, draw, value, box, role):
@@ -183,7 +199,7 @@ def render(renderer, instant):
         picture = Image.blend(old, picture, smooth(progress))
         if progress < .5:
             heading, credit_scene, credit_local = previous, previous, previous["end"]-previous["start"]-1e-6
-    frame = Image.alpha_composite(picture.convert("RGBA"), shade(renderer))
+    frame = Image.alpha_composite(picture.convert("RGBA"), shade(renderer, shade_variant(heading)))
     caption = next((c for c in renderer.captions if c["debut"] <= instant < c["fin"]), None)
     frame = frame.convert("RGB")
     if heading["type"] == "timeline":

@@ -389,13 +389,26 @@ An item arrives at its `at` (local seconds) by rising a few pixels and fading in
 `slow` duration, then **stays**; the last one to arrive completes the whole list, which holds until the
 scene ends. The places are measured from all the items at once, so an arriving item never moves the ones
 already there. Text is never shrunk: items that do not fit between the concept and the caption are
-refused at preflight. Reduced motion (`--controle`) shows every item on the first frame.
+refused at preflight (five items with a one-line body fit; a two-line body takes the room of one more
+line). Reduced motion (`--controle`) shows every item on the first frame.
 
-An image, or the image of a `backdrop`, may carry `motion: {"keys": [{"at": 0, "view": [zoom, focusX,
-focusY]}, …]}` instead of `from`/`to`: at least two keys, the first at 0, strictly increasing, each
-inside the scene, zoom 1 to 3, `fit: "cover"` only. The camera eases from one view to the next and holds
-the last. The enlargement ceiling still applies to every view and is checked when the frame is rendered;
-the preflight renders every key. This is how a whole book page is shown, then brought close on a column.
+The concept at the top has a scrim of its own, because a globe's sky is nearly white at y 190; the plates
+and the picture are otherwise left alone.
+
+An image, or the image of a `backdrop`, may carry `motion: {"keys": [{"at": 0, "view": [zoom, x, y]}, …]}`
+instead of `from`/`to`: at least two keys, the first at 0, strictly increasing, each inside the scene, zoom
+1 to 3, `fit: "cover"` only. The camera eases from one view to the next and holds the last. The enlargement
+ceiling still applies to every view and is checked when the frame is rendered; the preflight renders every
+key. This is how a whole book page is shown, then brought close on a column.
+
+`x` and `y` are **not** the point at the middle of the frame: they place the window inside the overflow of
+the zoomed picture, `0` flush with the left (top) edge and `1` flush with the right (bottom) edge, so
+the camera can never leave the picture. To bring a point of a picture to a chosen place, solve for it:
+`y = (point_y * scale - frame_y) / (picture_height * scale - 1920)` with `scale = fit_scale * zoom`, and
+clamp to 0–1. A picture much taller than the frame (a page on a 2160 × 5120 canvas, ground above and below)
+is what lets any line of it be brought into the upper half. A picture seen by a camera fades out under the
+title and the narration (its bottom is shaded to near-opaque from y 880), because a printed page runs on
+below them and must not compete with them.
 
 ## Editorial profiles and handoff
 
