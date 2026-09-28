@@ -28,6 +28,10 @@ changes `SITE_LOCALE_MODE` and therefore never publishes unfinished English.
 
 Read `docs/design/brand-charter.md`, then `docs/design/typography-charter.md`. Its §8 tables the home's type element by element — the face, step and ink each element takes, and why that one and not another — and `homeTypographyCharter.test.ts` holds the table. `CLAUDE.md`'s `### Frontend` section carries the full doctrine.
 
+## Before writing narration, cards, captions or page copy
+
+The peoples speak first and the source comes after (`CLAUDE.md`, `### Reader-facing register`, operator ruling of 2026-09-28): say what peoples call themselves and each other, never open a sentence on a linguist, an author or a book, and put the source on a card or in the source line. The hedge for a contested claim stays; only the scholar's name leaves the sentence. `npm run test:social-tools` holds the check (`attribution-en-tete`).
+
 ## Read `CLAUDE.md` for everything else
 
 Architecture, commands, every CI gate, the `@req` traceability rule, the Source Tier policy, the reader-facing register, the worktree and branch discipline. The section `### Bilingual content` is the doctrine this file summarises.

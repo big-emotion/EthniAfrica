@@ -43,6 +43,9 @@ bref — la source l'emporte si elle a changé :
 - **La pièce répond à sa question d'accroche**, sans jugement.
 - **Pour un peuple : il porte d'abord le nom qu'il se donne. Celui que les autres
   lui donnent vient après.**
+- **Les peuples parlent d'abord, la source vient après** (critère 10) : la
+  narration dit ce que les peuples se disent, jamais « selon un linguiste » ; la
+  source est sur la carte de source.
 - **Ce qui est resté, pas ce qui a été pris.** Le registre de la réparation garde
   le colonisateur sujet du verbe.
 - **Trois phrases qu'on n'écrit pas** : « Avant, on vivait en accord avec le
@@ -87,6 +90,7 @@ Chaque critère se note **0, 1 ou 2**, avec la phrase citée qui justifie la not
 | 8   | **La clôture.** Carrousel et reel : la clôture unique de §7 ter, mot pour mot — « Notre objectif : raconter l'origine des noms, avec des sources. Vous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica. » Sur une page du site : le propos est atteignable (« Notre propos », la page About).                                                                                                                                                                                                                                                                                                                | oui      | l'abonné        |
 
 | 9 | **Aucun groupe n'est rendu plus chez lui qu'un autre.** Ni en le disant, ni en le laissant entendre. Nommer les peuples qui sont « entiers », « chez eux », « là depuis toujours », « les premiers » fabrique un dehors pour tous ceux qu'on ne nomme pas. La mesure se publie ; le classement, jamais. Un lot qui hiérarchise l'appartenance, même par omission : 0. | oui | les deux |
+| 10 | **Les peuples parlent d'abord, la source vient après.** Aucune phrase de la narration, d'une carte ou d'une légende n'ouvre sur un linguiste, un historien, un auteur ou un livre (« Selon Delafosse… », « Un livre de 1912 montre… »). Elle dit ce que les peuples se disent et se donnent ; la source est sur la carte de source ou à la ligne de source, toujours présente, mais après. La prudence d'une affirmation contestée reste (date, temps, « une explication dit que… »), sans le nom du savant. `check-narration.mjs` voit les formes lexicales (`attribution-en-tete`) ; ce critère lit ce qu'il ne voit pas : un nom propre seul, un document en sujet (« Un texte portugais écrit… »). Règle de l'opérateur du 2026-09-28, `CLAUDE.md` `### Reader-facing register`. | oui | les deux |
 
 Les critères 1 et 7 servent le nouveau venu : il n'a que cette pièce. Le 2 et
 le 8 servent l'abonné : c'est la répétition du même bloc, à la même place, dans
