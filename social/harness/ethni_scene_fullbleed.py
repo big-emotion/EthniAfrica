@@ -22,6 +22,13 @@ LIGHT = {"ground": "#c9dde3", "land": "#f2ead8", "land-highlight": "#e3b658", "b
 
 INSERT_WIDTH, INSERT_HEIGHT, INSERT_TOP, FADE = 380, 430, 480, .35
 
+# An overlay: words that arrive on a cue over the picture or the globe, and then stay. The band below the concept
+# and above the caption belongs to the items; each item owns its place from the first frame, so nothing moves
+# when another one joins it.
+OVERLAY_TOP, OVERLAY_BOTTOM, PLATE_PAD, ITEM_GAP, RISE = 480, 1330, 20, 24, 26
+PLATE_ALPHA = 150
+REVEAL_S = tokens.duree("slow")
+
 
 def shade(renderer):
     """Top and bottom gradients, built once: dark enough to carry white text over any picture."""
@@ -51,6 +58,11 @@ def background(renderer, scene, local):
     kind = scene["type"]
     if kind == "image":
         return renderer._image(scene, local, size=(W, H))
+    if kind == "comparison":
+        backdrop = scene["backdrop"]
+        if "image" in backdrop:
+            return renderer._image({"image": backdrop["image"], "start": scene["start"], "end": scene["end"]}, local, size=(W, H))
+        return renderer._map({"map": backdrop["map"]}, local, (0, 0, W, H), LIGHT)
     if kind == "map":
         frame = renderer._map(scene, local, (0, 0, W, H), LIGHT)
     else:
@@ -122,6 +134,41 @@ def draw_band(renderer, frame, scene, local):
     return frame
 
 
+def draw_overlay(renderer, frame, scene, local):
+    """The items of a comparison, each on a translucent plate, arriving on its cue and then staying.
+
+    The layout is measured from every item at once, and an item that has not arrived yet is only absent, never
+    missing from the measure: a word that lands must not push the words already there. Text is never shrunk to
+    fit; an overflow is refused, as everywhere in this engine.
+    """
+    palette, items = renderer.palette, scene["comparison"]
+    width = renderer.right-renderer.left-2*PLATE_PAD
+    measure = ImageDraw.Draw(Image.new("RGB", (W, H)))
+    blocks, top = [], OVERLAY_TOP
+    for item in items:
+        label = renderer.paragraph(measure, item["label"], (0, 0, width, 10_000), "Paire — terme")
+        body = renderer.paragraph(measure, item["body"], (0, 0, width, 10_000), "Corps")
+        height = 2*PLATE_PAD+label+body
+        blocks.append((top, label, body, height))
+        top += height+ITEM_GAP
+    require(top-ITEM_GAP <= OVERLAY_BOTTOM, "Text overflow in the overlay: the items do not fit between the concept and the caption")
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(layer)
+    ground, gold, white = (ImageColor.getrgb(palette[name]) for name in ("ground", "gold", "white"))
+    for item, (top, label, body, height) in zip(items, blocks):
+        if local < item.get("at", 0) and not renderer.reduced_motion:
+            continue  # reduced motion is the version to judge a composition from: every item on the first frame
+        arrival = 1 if renderer.reduced_motion else smooth(min(1, (local-item.get("at", 0))/REVEAL_S))
+        lift = round((1-arrival)*RISE)
+        draw.rounded_rectangle((renderer.left-PLATE_PAD, top+lift, renderer.right+PLATE_PAD, top+height+lift), radius=18,
+                               fill=ground+(round(PLATE_ALPHA*arrival),))
+        opaque = round(255*arrival)
+        x, y = renderer.left, top+PLATE_PAD+lift
+        renderer.paragraph(draw, item["label"], (x, y, width, label), "Paire — terme", gold+(opaque,))
+        renderer.paragraph(draw, item["body"], (x, y+label, width, body), "Corps", white+(opaque,))
+    return Image.alpha_composite(frame.convert("RGBA"), layer).convert("RGB")
+
+
 def render(renderer, instant):
     scenes = renderer.plan["scenes"]
     scene = scene_at(scenes, instant)
@@ -141,6 +188,8 @@ def render(renderer, instant):
     frame = frame.convert("RGB")
     if heading["type"] == "timeline":
         frame = draw_band(renderer, frame, heading, credit_local)
+    if heading["type"] == "comparison":
+        frame = draw_overlay(renderer, frame, heading, credit_local)
     draw = ImageDraw.Draw(frame)
     palette = renderer.palette
     evidence = heading["evidence"]
@@ -148,7 +197,9 @@ def render(renderer, instant):
                        (renderer.left, 118, 809, 45), "Bandeau", palette["white"])
     height = renderer.paragraph(ImageDraw.Draw(Image.new("RGB", (W, H))), heading["title"],
                                 (renderer.left, 0, 809, 260), "Titre de série", palette["white"])
-    shadowed(renderer, draw, heading["title"], (renderer.left, 1290-height, 809, 260), "Titre de série")
+    # The concept of an overlay heads it, at the top; every other scene keeps its title low on the left.
+    shadowed(renderer, draw, heading["title"], (renderer.left, 190 if heading["type"] == "comparison" else 1290-height, 809, 260),
+             "Titre de série")
     if caption and not (renderer.plan.get("cover") and instant < MINIATURE_S):
         shadowed(renderer, draw, caption["texte"], (renderer.left, 1380, 809, 140), "Corps")
     lines = renderer.legend(credit_scene, credit_local) + renderer.credits(credit_scene, credit_local)

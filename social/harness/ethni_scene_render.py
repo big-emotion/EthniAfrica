@@ -72,7 +72,35 @@ def flowing_line(draw, points, colour, width, phase, dash=26, gap=64):
 
 
 def scene_map(scene):
-    return scene.get("map") if scene["type"] == "map" else scene.get("timeline", {}).get("background")
+    if scene["type"] == "map":
+        return scene.get("map")
+    if scene["type"] == "comparison":
+        return scene.get("backdrop", {}).get("map")
+    return scene.get("timeline", {}).get("background")
+
+
+def image_view(motion, local, duration, reduced=False):
+    """(zoom, focusX, focusY) of a picture's camera at `local` seconds into its scene.
+
+    `from`/`to` drifts over the whole scene. `keys` is a deliberate move: the camera eases from one key's view
+    to the next, then holds the last one, so a page can be shown whole and then brought closer on a column.
+    """
+    if "keys" in motion:
+        steps = motion["keys"]
+        if reduced:
+            return tuple(steps[0]["view"])
+        for a, b in zip(steps, steps[1:]):
+            if local < b["at"]:
+                progress = smooth((local-a["at"])/(b["at"]-a["at"]))
+                return tuple(x+(y-x)*progress for x, y in zip(a["view"], b["view"]))
+        return tuple(steps[-1]["view"])
+    progress = 0 if reduced else smooth(local/duration)
+    return tuple(a+(b-a)*progress for a, b in zip(motion["from"], motion["to"]))
+
+
+def image_zooms(motion):
+    """Every zoom a camera passes through: the base picture is resized once at the largest."""
+    return [step["view"][0] for step in motion["keys"]] if "keys" in motion else [motion["from"][0], motion["to"][0]]
 
 
 def dashed_line(draw, points, colour, width=2):
@@ -163,8 +191,7 @@ class SceneRenderer:
         x0, y0, x1, y1 = self.content
         w, h = size or (x1-x0, y1-y0)
         motion = value.get("motion", {"from": [1, .5, .5], "to": [1, .5, .5]})
-        progress = 0 if self.reduced_motion else smooth(local/(scene["end"]-scene["start"]))
-        zoom, fx, fy = [a+(b-a)*progress for a, b in zip(motion["from"], motion["to"])]
+        zoom, fx, fy = image_view(motion, local, scene["end"]-scene["start"], self.reduced_motion)
         fit_scale = (min if value["fit"] == "contain" else max)(w/source.width, h/source.height)
         scale = fit_scale*zoom
         require(scale <= tokens.SUR_ECH_MAX, "Image enlargement exceeds the charter ceiling")
@@ -177,7 +204,7 @@ class SceneRenderer:
         # slow push-in stair-step by up to a pixel, and Image.transform's bicubic still advanced
         # unevenly. Resize once per scene at its largest zoom, then resample the frame window
         # from a fractional source box, which is what gives a true sub-pixel filter.
-        largest = fit_scale*max(motion["from"][0], motion["to"][0])
+        largest = fit_scale*max(image_zooms(motion))
         base = self._base_resize(value["asset"], largest)
         bx, by = base.width/(source.width*scale), base.height/(source.height*scale)
         left, top = (source.width*scale-w)*fx, (source.height*scale-h)*fy
@@ -471,7 +498,7 @@ class SceneRenderer:
         """What the map shows and how sure the author is: period and status of every active feature."""
         legend = []
         geographic = scene_map(scene)
-        if geographic and (scene["type"] == "map" or geographic.get("features") or geographic.get("highlights")):
+        if geographic and (scene["type"] in ("map", "comparison") or geographic.get("features") or geographic.get("highlights")):
             projection = "Globe" if geographic.get("projection") == "globe" else "Mercator"
             legend.append((f"Frontières actuelles en pointillé · {projection}" if geographic.get("border_style") == "dashed"
                            else f"Frontières actuelles · {projection}") if geographic["borders"] and geographic.get("border_style") != "none"
@@ -528,6 +555,8 @@ class SceneRenderer:
         asset_id = scene[kind]["asset"] if kind in ("map", "image", "document") else None
         if kind == "timeline" and "background" in scene["timeline"]:
             asset_id = scene["timeline"]["background"]["asset"]
+        if kind == "comparison" and "backdrop" in scene:
+            asset_id = next(iter(scene["backdrop"].values()))["asset"]
         if asset_id:
             asset = self.plan["assets"][asset_id]
             credits.append(f"{asset['credit']} · {asset['license']}")
@@ -622,6 +651,12 @@ class SceneRenderer:
                                          min(end-1e-6, start+f["at"]+f["fade_seconds"])))
             if scene["type"] == "comparison":
                 instants.update(start+i.get("at", 0) for i in scene["comparison"] if start+i.get("at", 0) < end)
+                if self.plan.get("layout") == "fullbleed":
+                    # An overlay's items rise and fade in: look at the moment each one has finished arriving.
+                    instants.update(min(end-1e-6, start+i.get("at", 0)+fullbleed.REVEAL_S) for i in scene["comparison"])
+            picture = scene.get("image") or next(iter(scene.get("backdrop", {}).values()), {})
+            motion = picture.get("motion", {}) if "fit" in picture else {}
+            instants.update(start+k["at"] for k in motion.get("keys", []) if start+k["at"] < end)
             if scene["type"] == "timeline":
                 timeline = scene["timeline"]
                 cues = [i["at"] for i in timeline["events"]+timeline.get("context", [])]

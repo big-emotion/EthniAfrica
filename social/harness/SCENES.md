@@ -121,14 +121,14 @@ Evidence always has `sources` (IDs), `period` (visible) and `status`:
 Those are author assertions to review, not findings automatically verified by
 the renderer. Full citations remain in `REVIEW.md`; short labels fit the frame.
 
-| Scene type   | Content                                                                                                             |
-| ------------ | ------------------------------------------------------------------------------------------------------------------- |
-| `map`        | `asset`, `layer`, explicit `borders`, optional `highlights`, `graticule`, camera keyframes and authored features    |
-| `image`      | `asset`, `fit` (`contain` or `cover`), optional `motion` with `from`/`to` values `[zoom,focusX,focusY]`             |
-| `text`       | One wrapped string in `text`; useful for an argument or quotation, with evidence and attribution                    |
-| `comparison` | Two or three `{label,body,at?}` items, vertically stacked for mobile; `at` is local seconds                         |
-| `timeline`   | `{scale: "ordinal", events, context?}`; two or three chronological events and up to two same-year contextual events |
-| `document`   | `{asset,label,body}`; a complete archival image beside concise copy, with source and asset credits                  |
+| Scene type   | Content                                                                                                                                                                         |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `map`        | `asset`, `layer`, explicit `borders`, optional `highlights`, `graticule`, camera keyframes and authored features                                                                |
+| `image`      | `asset`, `fit` (`contain` or `cover`), optional `motion` with `from`/`to` values `[zoom,focusX,focusY]`                                                                         |
+| `text`       | One wrapped string in `text`; useful for an argument or quotation, with evidence and attribution                                                                                |
+| `comparison` | Two or three `{label,body,at?}` items, vertically stacked for mobile; `at` is local seconds. In the full-frame layout: two to five items over a required `backdrop` (see below) |
+| `timeline`   | `{scale: "ordinal", events, context?}`; two or three chronological events and up to two same-year contextual events                                                             |
+| `document`   | `{asset,label,body}`; a complete archival image beside concise copy, with source and asset credits                                                                              |
 
 Use `timeline` for multiple historical dates. Each primary event contains
 `year` (a nonzero integer), `label`, `at` (local seconds) and its own `evidence`.
@@ -343,10 +343,11 @@ Three optional root fields. A plan without them renders exactly as before.
   §9 bis). The export, its checks and the replay fingerprint account for the longer video.
 - `"layout": "fullbleed"` — the legacy film's grammar instead of the dark panel: the picture or
   the map fills the 1080×1920 frame; shading carries a top label, the title low on the left, the
-  narration in a translucent box, and the credits. Only `map`, `image` and `timeline` scenes are
-  allowed; a timeline must be a `focus` chronology with no context cards and is drawn as a band
-  over its map. Maps use a light warm palette. Images zoom at most 5 % (the legacy film uses
-  3.5 %); a photo that cannot fill the frame under the enlargement ceiling (`fit: "contain"`)
+  narration in a translucent box, and the credits. Only `map`, `image`, `timeline` and `comparison`
+  scenes are allowed (a `comparison` is an overlay, below); a timeline must be a `focus`
+  chronology with no context cards and is drawn as a band over its map. Maps use a light warm
+  palette. Images drift at most 5 % (the legacy film uses 3.5 %) unless they carry a camera of
+  `keys` (below); a photo that cannot fill the frame under the enlargement ceiling (`fit: "contain"`)
   sits over a dimmed, blurred cover of itself. Legend lines that share period and status are
   merged into one, so a dozen countries fit.
 
@@ -373,6 +374,28 @@ Map additions, all validated and all requiring evidence like every other feature
   plate, and the shading starts at 900 px so the map stays clear above it.
 - A timeline event may carry `display` (for example « XIIe siècle ») when the sources give only a
   century: the `year` then only orders the events and is never printed.
+
+### Overlays and a camera of keys (full-frame layout)
+
+Words are drawn over the frame, never on a black screen, and they move with the narration.
+
+A `comparison` scene in the full-frame layout carries a **`backdrop`**: exactly one `{"image": …}` or
+`{"map": …}`, validated like an `image` or `map` scene (the map may be a relief globe, with its
+camera, features, legend and credits). The panel layout refuses a `backdrop`, and the full-frame layout
+refuses a `comparison` without one. The scene's `title` is the concept and heads the frame at the top
+(every other full-frame scene keeps its title low on the left). Two to five `{label, body, at}` items
+sit below it, each on a translucent plate: `label` in the pair-term role, `body` in the body role.
+An item arrives at its `at` (local seconds) by rising a few pixels and fading in over the charter's
+`slow` duration, then **stays**; the last one to arrive completes the whole list, which holds until the
+scene ends. The places are measured from all the items at once, so an arriving item never moves the ones
+already there. Text is never shrunk: items that do not fit between the concept and the caption are
+refused at preflight. Reduced motion (`--controle`) shows every item on the first frame.
+
+An image, or the image of a `backdrop`, may carry `motion: {"keys": [{"at": 0, "view": [zoom, focusX,
+focusY]}, …]}` instead of `from`/`to`: at least two keys, the first at 0, strictly increasing, each
+inside the scene, zoom 1 to 3, `fit: "cover"` only. The camera eases from one view to the next and holds
+the last. The enlargement ceiling still applies to every view and is checked when the frame is rendered;
+the preflight renders every key. This is how a whole book page is shown, then brought close on a column.
 
 ## Editorial profiles and handoff
 

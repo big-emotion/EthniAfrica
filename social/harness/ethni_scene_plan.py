@@ -1,5 +1,6 @@
 """Versioned, fail-closed input contract for the local scene renderer."""
 import hashlib
+import json
 import math
 from pathlib import Path
 
@@ -319,9 +320,73 @@ def validate_focused_timeline(value, duration, sources, assets):
                     "Composed timeline maps require corner context to keep geography visible")
 
 
+def validate_image(value, assets, layout, duration):
+    """An image scene's picture, or the picture behind an overlay: the same contract in both places."""
+    keys(value, "asset fit motion", "image")
+    require(value.get("asset") in assets and assets[value["asset"]]["kind"] == "image", "image asset required")
+    require(value.get("fit") in ("contain", "cover"), "image.fit must be contain or cover")
+    motion = value.get("motion")
+    if motion is None:
+        return
+    if "keys" in motion:
+        # A camera of keys is a deliberate move, eased between views, so it may go far beyond the five percent
+        # that a slow push-in is allowed in the full-frame layout. The charter's enlargement ceiling still applies
+        # at render time, and the preflight renders every key.
+        keys(motion, "keys", "image.motion with keys")
+        require(value["fit"] == "cover", "image.motion.keys needs fit cover: a document held whole does not move")
+        steps = motion["keys"]
+        require(isinstance(steps, list) and len(steps) >= 2, "image.motion.keys needs at least two keys")
+        previous = -1
+        for step in steps:
+            keys(step, "at view", "image.motion.keys")
+            at = number(step.get("at"), "key.at", 0, duration-.04)
+            require(at > previous, "image.motion.keys must increase in time")
+            previous = at
+            view = step.get("view")
+            require(isinstance(view, list) and len(view) == 3, "a key view is [zoom, focusX, focusY]")
+            number(view[0], "zoom", 1, 3)
+            number(view[1], "focusX", 0, 1)
+            number(view[2], "focusY", 0, 1)
+        require(steps[0]["at"] == 0, "image.motion.keys must start at 0")
+        return
+    keys(motion, "from to", "image.motion")
+    for field in ("from", "to"):
+        k = motion.get(field)
+        require(isinstance(k, list) and len(k) == 3, "motion needs [zoom, focusX, focusY]")
+        number(k[0], "zoom", 1, 1.25)
+        number(k[1], "focusX", 0, 1)
+        number(k[2], "focusY", 0, 1)
+    require(value["fit"] == "cover" or all(k[0] == 1 for k in motion.values()),
+            "contain preserves the full document; use zoom 1 or explicitly choose cover")
+    # The legacy film zooms 3.5 percent over a scene; a bigger push-in reads as a jolt.
+    require(layout != "fullbleed" or all(k[0] <= 1.05 for k in motion.values()),
+            "fullbleed images zoom at most five percent")
+
+
+def validate_map_scene(value, duration, root, assets, sources):
+    """A map with its countries checked against the basemap it names."""
+    validate_map(value, duration, assets, sources)
+    require(assets[value["asset"]]["kind"] == "geojson", "map asset must be geojson")
+    data = json.loads(asset_path(root, assets[value["asset"]]).read_text())
+    codes = {f["properties"]["ADM0_A3"] for f in data["features"]}
+    require(all(c in codes for c in value.get("highlights", [])), "Unknown highlighted country")
+    require(all(f["code"] in codes for f in value.get("features", []) if f["kind"] == "country"),
+            "Unknown country in a country feature")
+
+
+def validate_backdrop(value, duration, root, assets, sources):
+    """What an overlay is drawn over: exactly one picture or map, checked as it would be as a scene of its own."""
+    require(isinstance(value, dict) and len(value) == 1 and next(iter(value)) in ("image", "map"),
+            "backdrop is exactly one image or one map")
+    (kind, config), = value.items()
+    if kind == "image":
+        validate_image(config, assets, "fullbleed", duration)
+    else:
+        validate_map_scene(config, duration, root, assets, sources)
+
+
 def validate_plan(plan, root, duration):
     """Validate shape, local assets, provenance and complete audio coverage."""
-    import json
     keys(plan, "version profile coverage title source output_dir sources assets scenes progress cover outro layout", "plan")
     layout = plan.get("layout", "panel")
     require(layout in ("panel", "fullbleed"), "Unknown layout")
@@ -361,7 +426,7 @@ def validate_plan(plan, root, duration):
     ids, previous = set(), 0.0
     for index, scene in enumerate(scenes):
         where = f"scene {index+1}"
-        keys(scene, "id type start end title purpose evidence beat map image text comparison timeline document transition", where)
+        keys(scene, "id type start end title purpose evidence beat map image text comparison backdrop timeline document transition", where)
         text(scene.get("id"), f"{where}.id")
         require(scene["id"] not in ids, "Scene ids must be unique")
         ids.add(scene["id"])
@@ -376,33 +441,18 @@ def validate_plan(plan, root, duration):
         require(kind in ("map", "image", "text", "comparison", "timeline", "document"), "Unknown scene type")
         require(all(field == kind or field not in scene for field in ("map", "image", "text", "comparison", "timeline", "document")),
                 f"{where}: content for another scene type")
-        require(layout != "fullbleed" or kind in ("map", "image", "timeline"),
+        # The full-frame layout draws words only as an overlay: a comparison whose items arrive over a picture or a map.
+        require(layout != "fullbleed" or kind in ("map", "image", "timeline", "comparison"),
                 f"{where}: the fullbleed layout cannot draw a {kind} scene")
+        if kind == "comparison" and layout == "fullbleed":
+            require("backdrop" in scene, f"{where}: a full-frame comparison needs a backdrop, or it is words on a black screen")
+            validate_backdrop(scene["backdrop"], end-start, root, assets, sources)
+        else:
+            require("backdrop" not in scene, f"{where}: a backdrop belongs to a comparison in the full-frame layout")
         if kind == "map":
-            validate_map(scene.get("map"), end-start, assets, sources)
-            map_data = json.loads(asset_path(root, assets[scene["map"]["asset"]]).read_text())
-            codes = {f["properties"]["ADM0_A3"] for f in map_data["features"]}
-            require(all(c in codes for c in scene["map"].get("highlights", [])), "Unknown highlighted country")
-            require(all(f["code"] in codes for f in scene["map"].get("features", []) if f["kind"] == "country"),
-                    "Unknown country in a country feature")
+            validate_map_scene(scene.get("map"), end-start, root, assets, sources)
         elif kind == "image":
-            value = scene.get("image")
-            keys(value, "asset fit motion", "image")
-            require(value.get("asset") in assets and assets[value["asset"]]["kind"] == "image", "image asset required")
-            require(value.get("fit") in ("contain", "cover"), "image.fit must be contain or cover")
-            if "motion" in value:
-                keys(value["motion"], "from to", "image.motion")
-                for field in ("from", "to"):
-                    k = value["motion"].get(field)
-                    require(isinstance(k, list) and len(k) == 3, "motion needs [zoom, focusX, focusY]")
-                    number(k[0], "zoom", 1, 1.25)
-                    number(k[1], "focusX", 0, 1)
-                    number(k[2], "focusY", 0, 1)
-                require(value["fit"] == "cover" or all(k[0] == 1 for k in value["motion"].values()),
-                        "contain preserves the full document; use zoom 1 or explicitly choose cover")
-                # The legacy film zooms 3.5 percent over a scene; a bigger push-in reads as a jolt.
-                require(layout != "fullbleed" or all(k[0] <= 1.05 for k in value["motion"].values()),
-                        "fullbleed images zoom at most five percent")
+            validate_image(scene.get("image"), assets, layout, end-start)
         elif kind == "timeline":
             validate_timeline(scene.get("timeline"), end-start, sources, assets)
             require(layout != "fullbleed" or (scene["timeline"].get("layout") == "focus" and not scene["timeline"].get("context")),
@@ -423,7 +473,10 @@ def validate_plan(plan, root, duration):
             text(scene.get("text"), "scene.text")
         else:
             items = scene.get("comparison")
-            require(isinstance(items, list) and 2 <= len(items) <= 3, "comparison needs two or three items")
+            full = layout == "fullbleed"
+            require(isinstance(items, list) and 2 <= len(items) <= (5 if full else 3),
+                    "comparison needs two to five items in the full-frame layout" if full
+                    else "comparison needs two or three items")
             for item in items:
                 keys(item, "label body at", "comparison item")
                 text(item.get("label"), "comparison.label")
