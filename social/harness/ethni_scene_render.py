@@ -240,12 +240,17 @@ class SceneRenderer:
     def _globe_base(self, cfg, camera, size, p):
         """Relief, hydrography, borders and atmosphere: everything that depends on the camera alone."""
         key = (json.dumps({k: cfg.get(k) for k in ("asset", "relief", "rivers", "lakes", "borders", "border_style",
-                                                     "border_width", "atmosphere")}, sort_keys=True),
+                                                     "border_width", "atmosphere", "space", "glow")}, sort_keys=True),
                size, camera.center, camera.span, camera.tilt, camera.heading, camera.disc())
         if self._globe_base_cache and self._globe_base_cache[0] == key:
             return self._globe_base_cache[1]
+        # Read from the charter palette, not from `p`: the full-frame palette is a light map palette
+        # whose names mean other colours, and a plan names the charter's tokens.
+        space = self.palette[cfg["space"]] if "space" in cfg else p["ground"]
+        glow = self.palette[cfg["glow"]] if "glow" in cfg else p["perv"]
         relief = self.plan["assets"][cfg["relief"]]
-        canvas = globe_layers.relief_base(self.assets[cfg["relief"]], relief["bounds"], camera, size, p["ground"])
+        canvas = globe_layers.relief_base(self.assets[cfg["relief"]], relief["bounds"], camera, size, p["ground"],
+                                          space=space)
         water = mix(p["perv"], p["white"], .3)
         if "lakes" in cfg:
             globe_layers.draw_lakes(canvas, camera, self.assets[cfg["lakes"]], mix(p["perv"], p["ground"], .35), water)
@@ -255,7 +260,7 @@ class SceneRenderer:
             globe_layers.draw_borders(canvas, camera, self.assets[cfg["asset"]], cfg.get("border_style", "solid"),
                                       cfg.get("border_width", 2), p, dashed_line)
         if cfg.get("atmosphere", True):
-            canvas = globe_layers.atmosphere(canvas, camera, p["ground"], p["perv"])
+            canvas = globe_layers.atmosphere(canvas, camera, glow)
         self._globe_base_cache = (key, canvas)
         return canvas
 
@@ -486,7 +491,8 @@ class SceneRenderer:
                     meaning = {"journey": "Trajet", "migration": "Migration", "language-diffusion": "Diffusion linguistique",
                                "name-circulation": "Circulation du nom",
                                "river": "Cours d'eau (tracé schématique)"}.get(feature.get("meaning"))
-                    role = "Voisinage : " if feature.get("role") == "context" else ""
+                    # A context country contains the subject rather than neighbouring it.
+                    role = "Voisinage : " if feature.get("role") == "context" and feature["kind"] != "country" else ""
                     tail = f" · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else "")
                     entries.append((role+feature["label"], tail, feature.get("geometry_note"), e["period"],
                                     STATUS[e["status"]] + (f" · {meaning}" if meaning else "")))

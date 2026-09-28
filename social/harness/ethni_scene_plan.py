@@ -6,6 +6,7 @@ from pathlib import Path
 
 from PIL import Image
 
+import ethni_tokens as tokens
 from ethni_globe import EASINGS, GlobeCamera
 from ethni_map import Camera
 
@@ -20,7 +21,10 @@ STATUS = {"documented": "Documenté", "estimate": "Estimation", "hypothesis": "H
 COLOURS = ("gold", "white", "night-ink-2", "teal", "perv", "sea")
 BORDER_STYLES = ("solid", "dashed", "soft", "glow", "none")
 LABEL_STYLES = ("sea", "place")
-GLOBE_ONLY = ("projection", "relief", "rivers", "lakes", "atmosphere")
+GLOBE_ONLY = ("projection", "relief", "rivers", "lakes", "atmosphere", "space", "glow")
+# `space` (around the sphere) and `glow` (its halo) name an engine palette entry, never a value: the
+# palette resolves through the charter tokens, so a plan cannot smuggle in a colour nobody ruled on.
+GLOBE_TINTS = ("space", "glow")
 # Four lines fill the space between the header and the caption; a line that appears less than a second
 # before its scene ends is a flash, not a piece of reading.
 KINETIC_MAX_LINES, KINETIC_READING_SECONDS = 4, 1.0
@@ -88,7 +92,7 @@ def validate_geometry(geo):
 
 def validate_map(value, duration, assets, sources):
     keys(value, "asset layer borders border_style border_width highlights camera features graticule inserts "
-                "projection relief rivers lakes atmosphere", "map")
+                "projection relief rivers lakes atmosphere space glow", "map")
     globe = value.get("projection", "mercator")
     require(globe in ("mercator", "globe"), "Unknown map.projection")
     globe = globe == "globe"
@@ -100,6 +104,11 @@ def validate_map(value, duration, assets, sources):
                 require(value[layer] in assets and assets[value[layer]]["kind"] == "vector", f"map.{layer} needs a vector asset")
         if "atmosphere" in value:
             require(type(value["atmosphere"]) is bool, "map.atmosphere must be boolean")
+        names = tokens.palette()
+        for key in GLOBE_TINTS:
+            if key in value:
+                require(isinstance(value[key], str) and value[key] in names,
+                        f"map.{key} must name a palette token: {', '.join(sorted(names))}")
     if "border_width" in value:
         number(value["border_width"], "map.border_width", 1, 12)
     inserts = value.get("inserts", [])
@@ -159,7 +168,9 @@ def validate_map(value, duration, assets, sources):
         end = number(feature.get("until"), "feature.until", 0, duration)
         require(end > start, "feature.until must follow at")
         require(feature.get("role", "subject") in ("subject", "context"), "Unknown feature role")
-        require(feature.get("role") != "context" or kind in ("territory", "point"), "Context role requires a territory or point")
+        require(feature.get("role") != "context" or kind in ("territory", "point")
+                or (kind == "country" and value["layer"] == "people"),
+                "Context role requires a territory or point, or a country on the people layer")
         if "annotation" in feature:
             require(kind == "point", "annotation requires a point")
             text(feature["annotation"], "feature.annotation")
@@ -195,8 +206,10 @@ def validate_map(value, duration, assets, sources):
                 require(type(feature.get("value")) is int and feature["value"] > 0,
                         "A speakers feature needs a positive integer value")
         elif kind == "country":
-            # A whole present-day country switched on at a cue, on the national layer only.
-            require(value["layer"] == "national", "A country feature needs the national layer")
+            # A whole present-day country switched on at a cue. On the people layer it may only stand as
+            # context, drawn under the zones: the country orients, it never stands for a people.
+            require(value["layer"] == "national" or (value["layer"] == "people" and feature.get("role") == "context"),
+                    "A country feature needs the national layer, or role: context on the people layer")
             text(feature.get("code"), "feature.code")
             require(not {"point", "points", "meaning"} & set(feature), "Country feature has point or route fields")
         else:

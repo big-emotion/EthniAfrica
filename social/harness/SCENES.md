@@ -243,6 +243,16 @@ in [`docs/plans/scene-globe-relief.md`](../../docs/plans/scene-globe-relief.md).
   Natural Earth world relief (public domain), together with the river, lake and country layers.
 - `map.rivers`, `map.lakes`: ids of assets of kind `vector` (any GeoJSON lines or polygons).
   `map.atmosphere` (default true) adds the halo and limb darkening.
+- `map.space` and `map.glow` (optional) colour what surrounds the sphere and its halo. Each value
+  is the **name** of an engine palette entry (`ethni_tokens.palette()`: `ground`, `teal`, `perv`,
+  `gold`, `night-ink-3`, …), which resolves through the charter tokens; a hex value or an unknown
+  name is refused. The names are read from the charter palette even in the full-frame layout, whose
+  own light map palette gives some of the same names other colours. For a dark, deep sky use
+  `"space": "ground"` (`--afh-night-ground`, the ground the site's own globe sits on); for a blue
+  halo `"glow": "perv"` (`--afh-cat-perv`, the periwinkle the site's globe draws its equator in).
+  Without the keys the frame is byte-identical to before: the full-frame globe keeps its light
+  ground and its violet halo. Where the relief pack does not reach, the sphere keeps its dimmed
+  ground fill, whatever the space.
 - `map.border_style`: `solid`, `soft`, `glow`, `dashed` or `none`; `map.border_width` in
   pixels. `borders: false` and `none` both draw nothing.
 - Camera keys are `{at, center: [lon, lat], span, tilt?, heading?, ease?, offset?}`. `span` is
@@ -260,6 +270,23 @@ in [`docs/plans/scene-globe-relief.md`](../../docs/plans/scene-globe-relief.md).
 
 Frames that do not move the camera share one cached base, so a still hold is cheap; a moving
 camera re-projects the relief on every frame, about a third of a second each.
+
+The relief is sampled at half the frame's resolution and enlarged, except when the camera `span`
+is under `CLOSE_UP_SPAN` (20 degrees, `ethni_globe_layers.py`), where it is sampled at full
+resolution. The choice is made from the camera alone, and the cached base is keyed on the camera,
+so a half-resolution base is never reused at close range. Measured on 2026-09-28 on the
+west-Africa pack (60 px per degree), 1080 x 1920:
+
+| Span | Relief base, half → full | Edge sharpness gain |
+| ---- | ------------------------ | ------------------- |
+| 34°  | stays half (0.08 s)      | none, by design     |
+| 17°  | 0.07 s → 0.23 s          | about +55 %         |
+| 10°  | 0.07 s → 0.23 s          | about +30 %         |
+| 5°   | 0.06 s → 0.24 s          | about +14 %         |
+
+A whole close-up frame rose from about 0.37-0.5 s to 0.53-0.62 s when its base is not cached.
+Below about 9 degrees the frame is finer than the pack itself, so what remains soft there is the
+pack's resolution, not the engine's: a sharper extreme close-up needs a finer relief cut.
 
 Point features can carry an optional plain-text `annotation`: a compact,
 regular-weight geographic note below their label, connected to the location
@@ -283,7 +310,17 @@ Features have `kind`, `label`, local `at`/`until`, their own `evidence`, optiona
 `colour` (`gold`, `white`, `night-ink-2`, `teal`, `perv`) and label `offset`.
 Optional `role: "context"` marks a territory as geographic background. Context
 territories render below subject features regardless of array order, with dimmed
-fill and labels, and a visible `Voisinage` legend prefix. Use dated evidence;
+fill and labels, and a visible `Voisinage` legend prefix.
+
+A `country` feature belongs to the `national` layer, with one exception: on the
+`people` layer a country may stand **as context only** (`role: "context"`), so a
+present-day country can stay raised while a people's `presence-zone` rises inside
+it in the same scene. It is drawn first, dimmed, with its `draw_seconds` and
+`extrude`, and the zone and labels are laid over it. Its legend line carries no
+`Voisinage` prefix, since the country contains the zone rather than neighbouring
+it. A subject country on the people layer, or a context country on any other
+layer, is still refused. Pick a zone colour that stands off the dimmed country
+(a gold zone on a gold country reads faintly at wide spans). Use dated evidence;
 proximity alone does not establish contemporaneity. Omission means `subject`.
 Optional `fade_seconds` (0.04 to `until-at`) reveals a feature once, then holds
 it. Reduced-motion output shows it immediately. Neither option infers geometry.
