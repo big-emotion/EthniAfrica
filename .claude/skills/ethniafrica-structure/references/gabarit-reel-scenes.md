@@ -82,6 +82,8 @@ older plans but are not the preferred default. Current dashed borders orient the
 viewer without becoming historical or exclusive population boundaries. Reuse a
 camera/scene pattern, never another subject's geometry without evidence.
 
+A beat that is a short list of statements (definitions, a summary, a chain of dated facts) uses `kinetic` text: its lines arrive one after another on the words that say them, with at most one accent word (contract in `social/harness/SCENES.md`, « Kinetic text »). A `text` scene stays a static pause and a `comparison` scene shows its items at once ; neither draws a photograph or a map behind it.
+
 A sustained historical explanation should carry a relevant document or image.
 Use `document` for an attributed portrait, title page or other archival object
 beside concise copy. Keep `text` for a brief intentional pause or statement,
