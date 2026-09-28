@@ -31,9 +31,10 @@ def coverage(renderer, line, width):
         (text[:span[0]], "white"), (text[span[0]:span[1]], "gold"), (text[span[1]:], "white")]
     layers = {}
     x = 0
+    baseline = face.getmetrics()[0]  # the font's own, so every piece of the line stands on the same one
     for piece, ink in pieces:
         mask = layers.setdefault(ink, Image.new("L", (width, BLOCK_HEIGHT), 0))
-        ImageDraw.Draw(mask).text((x, 0), piece, font=face, fill=255, anchor="lt")
+        ImageDraw.Draw(mask).text((x, baseline), piece, font=face, fill=255, anchor="ls")
         x += ImageDraw.Draw(mask).textlength(piece, font=face)
     require(x <= width, f"Text overflow in kinetic line: {text[:80]}")
     if "detail" in line:
