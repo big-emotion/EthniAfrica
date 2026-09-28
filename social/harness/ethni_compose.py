@@ -148,7 +148,8 @@ SOUS_TITRE_PLANCHER = 30
 # — which is the one job it has.
 MINIATURE_MOTS_MAX = 8
 # §1 ter, open-question exception: what the question rank buys is lines, not words.
-QUESTION_LIGNES_MAX = 5
+# 9:16 gets one more because its column gives up 180 px to the platform interface.
+QUESTION_LIGNES_MAX = {"carrousel": 5, "reel": 6}
 
 # §9 — the plate's horizontal padding around the caption. Named because the
 # flush-left video layout has to put the plate's own edge on the margin, which
@@ -324,6 +325,8 @@ def peindre_texte(d, xy, texte, f, fill):
 # word with U+00A0 whatever space the copy used: Anton and Nunito ship no U+202F
 # glyph — it measures 40 px, the missing-glyph box — while U+00A0 is a space.
 _MARQUE_DETACHEE = frozenset("?!:;»")
+# The opening guillemet is the one mark that belongs to the word *after* it.
+_MARQUE_OUVRANTE = "«"
 _INSECABLE = "\u00a0"
 
 
@@ -332,6 +335,8 @@ def _jetons(texte):
     jetons = []
     for mot in (texte or "").split():
         if jetons and set(mot) <= _MARQUE_DETACHEE:
+            jetons[-1] += _INSECABLE + mot
+        elif jetons and jetons[-1] == _MARQUE_OUVRANTE:
             jetons[-1] += _INSECABLE + mot
         else:
             jetons.append(mot)
@@ -676,10 +681,11 @@ def plan(carte, deck, fmt_key, *, image, sous_titre=False, disposition=None):
     # short-worded question that wraps long and pass a long-worded one that does not.
     if _est_question_ouverte(carte):
         titre_question = next((b for b in contenu if b.nom == "titre"), None)
-        if titre_question is not None and len(titre_question.lignes) > QUESTION_LIGNES_MAX:
+        plafond_lignes = QUESTION_LIGNES_MAX.get(fmt_key, QUESTION_LIGNES_MAX["carrousel"])
+        if titre_question is not None and len(titre_question.lignes) > plafond_lignes:
             p.fautes.append(
                 f"la miniature porte une question de {len(titre_question.lignes)} lignes "
-                f"en {disposition}/{fmt_key} — §1 ter en tient {QUESTION_LIGNES_MAX} au "
+                f"en {disposition}/{fmt_key} — §1 ter en tient {plafond_lignes} au "
                 f"plus : raccourcis l'accroche")
 
     # The column is compressible and the foot is not. §9: when a subtitle band is
@@ -721,7 +727,7 @@ def plan(carte, deck, fmt_key, *, image, sous_titre=False, disposition=None):
                 f"la miniature demande {haut_total} px pour {dispo} px disponibles "
                 f"en {disposition}/{fmt_key} — §1 ter interdit de réduire le titre "
                 f"d'une ouverture : raccourcis l'accroche, "
-                + ("la question tient en cinq lignes au plus"
+                + ("la question tient en cinq lignes au plus (six en 9:16)"
                    if _est_question_ouverte(carte) else "huit mots au plus")
                 if carte.get("role") == "ouverture" else
                 f"la colonne demande {haut_total} px pour {dispo} px disponibles en "

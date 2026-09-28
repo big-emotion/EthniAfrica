@@ -189,8 +189,14 @@ mots et le refus de réduire le titre s'appliquent comme avant.
   de la punchline. À 120 px la question demande dix lignes et 1 296 px pour 345 px
   disponibles ; à 64 px elle tient en cinq lignes et 346 px. Lue à 430 px de large, la
   ligne mesure 25 px de corps à l'écran.
-- **Le plafond se mesure en lignes, jamais en mots** : cinq lignes composées au plus. Au-delà,
-  le moteur nomme la faute et ne rapetisse pas le titre en silence.
+- **Le plafond se mesure en lignes, jamais en mots** : cinq lignes composées au plus en
+  4:5, six en 9:16, dont la colonne perd 180 px à droite pour l'interface de la plateforme
+  (même question : 6 lignes à 69 px sur 855 px de large). Au-delà, le moteur nomme la
+  faute et ne rapetisse pas le titre en silence.
+- **En 9:16 la carte se déclare en A** (`disposition: "A"`). La règle de §6 renvoie la
+  question au cartouche, qui ne la tient pas (447 px pour 369 disponibles) ; la mise en A
+  la tient sans faute. C'est un écart à la règle, écrit sur la carte et consigné par le
+  rapport de rendu (« A imposée par la carte »), jamais une correction silencieuse du moteur.
 - **Deux mots en accent, pas un** (`titre_accents`) : les deux pôles de la question,
   « retourne » et « découvre », prennent la même couleur d'accent, de sorte qu'aucun
   ne passe avant l'autre. L'accent reste une seule couleur par carte.
@@ -1449,7 +1455,8 @@ deck au moment de rendre, comme `image.identite`.
 `titre_forme` — **facultatif, carte d'ouverture seulement** — vaut `"question"` quand le
 titre est une seule question longue approuvée telle quelle (§1 ter, « L'exception de la
 question ouverte »). Il change le rang du titre (§3, « Titre de couverture — question »)
-et remplace le plafond de huit mots par un plafond de cinq lignes composées. Absent, il
+et remplace le plafond de huit mots par un plafond de lignes composées (cinq en 4:5, six en
+9:16). Absent, il
 laisse l'ouverture sous la règle ordinaire.
 
 `titre_accents` — **facultatif** — liste des mots ou membres de phrase du titre qui

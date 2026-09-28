@@ -1199,6 +1199,38 @@ def test_an_open_question_cover_is_composed_whole_at_its_own_rank():
     assert " ".join(titre.lignes).replace(" ", " ") == QUESTION_OUVERTE.upper()
 
 
+def test_the_question_cover_holds_in_9_16_when_the_card_declares_layout_a():
+    """9:16 loses 180 px to the platform interface, so the same question wraps to six
+    lines. The cartouche cannot hold it (447 px for 369), layout A does; the card
+    says so, and the report records the departure from the rule."""
+    plan = gab.plan(_ouverture(titre_forme="question", disposition="A"), DECK, "reel",
+                    image=image_test(5184, 3456))
+    assert plan.disposition == "A"
+    assert plan.fautes == [], plan.fautes
+    assert len(plan.bloc("titre").lignes) <= gab.QUESTION_LIGNES_MAX["reel"]
+    assert plan.bloc("titre").corps == tk.type_size("Titre de couverture — question", "reel")
+
+
+def test_the_question_ceiling_is_measured_per_format():
+    assert gab.QUESTION_LIGNES_MAX["carrousel"] == 5
+    assert gab.QUESTION_LIGNES_MAX["reel"] == 6
+
+
+def test_an_opening_guillemet_never_ends_a_line_away_from_its_word():
+    """French sets « and » against the quoted word. The wrap already glued a
+    detached » to the word before it; the « has to travel with the word after it,
+    or a title breaks as « dire « / l'Afrique » ».
+    """
+    nbsp = " "
+    jetons = gab._jetons("Pourquoi dire « l’Afrique » quand on parle")
+    assert f"«{nbsp}l’Afrique{nbsp}»" in jetons, jetons
+    assert "«" not in jetons
+
+
+def test_a_lone_guillemet_at_the_end_of_the_text_is_kept():
+    assert gab._jetons("dire «") == ["dire", "«"]
+
+
 def test_an_open_question_cover_is_not_flagged_for_its_word_count():
     verdict = gab.portes([_ouverture(titre_forme="question")], DECK)
     assert not [r for r in verdict.remarques if "mots" in r], verdict.remarques
