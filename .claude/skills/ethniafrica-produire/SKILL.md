@@ -46,6 +46,27 @@ The scene renderer checks the text marker/hashes; it does not itself certify the
 editorial audits or infer licensing compatibility. Final delivery checks explicit,
 version-bound review records rather than fabricating those judgments.
 
+### Pending rights do not block a private render
+
+Publication clearance is not a prerequisite for `prepare`, `render` or private
+proof delivery. Once the text, recording and visual plan are approved and the
+technical inputs are ready, render the video even when voice publication rights
+or permission for an incorporated image, page or excerpt are still pending.
+Recording approval means approval of the performance; it does not assert rights
+clearance. Do not ask for clearance or a separate waiver before rendering.
+
+Record each unresolved permission in the source/licence register and leave the
+corresponding release-review checks pending. For example, pending publication
+rights for the Marie-Victoire voice or an unanswered request to Présence Africaine
+for page 46 must not stop the private proof. These examples do not establish the
+actual status of either request. Deliver the proof with its existing proof badge
+and a concise list of outstanding rights; never invent permission or mark it passed.
+
+Pending rights still prevent `finalize`, ready-to-publish status and publication.
+Ask any clearance question at the release-review stage, after delivering the proof,
+only when needed to proceed to the publication package. Existing text, visual-plan,
+recording and paid-generation approval requirements continue to apply.
+
 For a new prepared package, run `ethni_scene_pipeline.py prepare` with its plan,
 new named lock and private proof output. Inspect the cue preview index at phone
 size, including route reveals, each timeline date and the final overview. The lock

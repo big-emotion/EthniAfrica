@@ -62,6 +62,11 @@ historical claims. The scene engine and release review remain authoritative.
    decision is missing, use `wait --reason`, show all missing decisions together and
    stop dependent work. Silence or elapsed time never grants approval. Once the actual
    decision arrives, record the evidence, use `resume`, and continue automatically.
+   Pending publication rights concern release review, not preparation or proof:
+   record them in the source/release records without setting an earlier milestone
+   to waiting. Deliver the private proof first, then wait for clearance before
+   finalization. If an existing wait concerns only publication rights, preserve
+   that pending evidence and use `resume` to continue through the proof milestone.
 5. Run the progress tool's `gate PROJECT --stage STAGE` before dependent work.
    The planner repeats it before preparation previews; the executor repeats it
    before render/finalize. A failed gate returns to the coordinator, never to a

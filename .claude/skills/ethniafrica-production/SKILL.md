@@ -133,6 +133,13 @@ Otherwise resolve voice choice, pronunciation needs and paid-generation authoriz
 before generating audio through the existing workflow; plan approval alone is not
 permission to purchase audio. The scene engine does not generate speech.
 
+Apply the pending-rights rule in `.claude/skills/ethniafrica-produire/SKILL.md`:
+missing publication clearance for the voice or an incorporated asset does not
+block preparation, rendering or private proof delivery. Record it as pending and
+continue without a clearance question or waiver request. Resolve publication
+rights at release review before finalization; do not equate recording approval
+with rights clearance.
+
 Bind timings to the completed recording and exact alignment. Never call estimated
 timing measured timing, retime speech to an arbitrary slot, or give the execution
 model a placeholder plan. Preserve source credits and visible uncertainty.
