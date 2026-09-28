@@ -106,6 +106,10 @@ sujet. Une grille lue à l'ancienne noterait 0 chaque pièce qui la porte, et
   ligne de vision n'est exigée : leur absence ne vaut pas 0.
 - **Critère 8, reel sans carte de clôture :** rare, mais possible (§7 ter). Le critère
   ne juge alors que l'ouverture ; l'absence de clôture ne vaut pas 0.
+- **Critère 8, exception nommée — le carrousel `retour-ou-decouverte` seul** (opérateur,
+  2026-09-28, écrite dans `GABARITS-SOCIAL.md` §7 ter). Sa dernière carte, « À vous la parole »,
+  tient lieu de clôture. Le critère est **sans objet** pour ce carrousel, avec la décision citée dans
+  `message.md`. L'exception ne se généralise pas : tout autre carrousel sans clôture unique note 0.
 - **Critère 3 :** la clôture n'est pas un renversement d'agent, donc le critère
   juge les phrases du corps de la pièce et de la morale : le peuple y reste le
   sujet de la phrase, et le colonisateur n'est jamais celui des phrases qui

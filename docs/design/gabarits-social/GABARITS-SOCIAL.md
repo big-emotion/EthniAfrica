@@ -983,6 +983,17 @@ fichier.
 **Un sujet sans mythe sourcé n'a pas de carrousel.** N'en invente pas un pour remplir
 l'accroche : une question dont la pièce ne paie pas la réponse est un appât.
 
+**Exception nommée : le carrousel « retour ou découverte » (opérateur, 2026-09-28).**
+Ce carrousel de six cartes, approuvé mot pour mot, n'a ni mythe attesté ni clôture unique : sa
+dernière carte est « À vous la parole », une question posée à la personne qui a vécu le
+voyage. L'opérateur a tranché que **cette carte tient lieu de clôture pour ce carrousel** et
+qu'aucune septième carte ne s'ajoute. L'audit du message note donc le critère 8 sans objet
+pour lui, en citant cette décision.
+
+Elle vaut pour ce carrousel et pour lui seul. Elle n'ouvre pas de règle : un autre carrousel
+sans clôture unique attend sa propre décision. La question de la couverture reste refermée
+dans la pièce (carte 4), comme l'exige toute accroche.
+
 ### La carte d'ouverture
 
 Disposition **A**, image plein cadre. Trois blocs pour un carrousel, quatre pour un reel
