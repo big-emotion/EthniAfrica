@@ -127,6 +127,7 @@ the renderer. Full citations remain in `REVIEW.md`; short labels fit the frame.
 | `image`      | `asset`, `fit` (`contain` or `cover`), optional `motion` with `from`/`to` values `[zoom,focusX,focusY]`             |
 | `text`       | One wrapped string in `text`; useful for an argument or quotation, with evidence and attribution                    |
 | `comparison` | Two or three `{label,body,at?}` items, vertically stacked for mobile; `at` is local seconds                         |
+| `kinetic`    | `{lines}` : one to four lines that arrive one after another, each on a narrated word ; see « Kinetic text » below   |
 | `timeline`   | `{scale: "ordinal", events, context?}`; two or three chronological events and up to two same-year contextual events |
 | `document`   | `{asset,label,body}`; a complete archival image beside concise copy, with source and asset credits                  |
 
@@ -332,6 +333,55 @@ Presence overlap is allowed; drawing one group does not exclude another.
 All active feature periods/statuses remain in a legend even when a point is
 outside the camera. A crowded legend fails instead of hiding uncertainty.
 
+## Kinetic text
+
+A `kinetic` scene is text that follows the narration : the scene's `title` is the card's header and
+`kinetic.lines` (one to four) arrive one after another from top to bottom, each on the word that
+says it. It is the sober alternative to a `text` scene (static) or a `comparison` scene (its items
+appear at once).
+
+```json
+{
+  "type": "kinetic",
+  "title": "Pour retenir",
+  "kinetic": {
+    "lines": [
+      {
+        "text": "le pays : la carte",
+        "detail": "un lieu où l'on vit",
+        "at": 1.0
+      },
+      {
+        "text": "l'État-nation",
+        "detail": "les règles et le « nous » réunis",
+        "at": 8.5,
+        "accent": "l'État-nation"
+      }
+    ]
+  }
+}
+```
+
+- `at` is local seconds, the cue of the line ; cues follow the narration in reading order (never
+  decreasing), and a line needs at least one second on screen (`KINETIC_READING_SECONDS`).
+- `detail` is an optional smaller line under the text (at most two lines) and arrives with it.
+- `accent` names **one whole word** of its own line, which takes the accent ink ; a card carries at
+  most one accent word (legacy §0.3). Give the elided article too if it belongs to the word
+  (`"l'État-nation"`).
+- A line is drawn on a single line and is never shrunk : a line that is too long, or a detail longer
+  than two lines, fails the preflight.
+- A line fades in and rises 24 px over half a second, easing out with no overshoot. Reduced motion
+  (`--controle`) keeps the cue and drops the movement. Preflight looks at every cue, halfway through
+  its arrival, and settled.
+- The lines start at y = 540, 200 px apart, so four of them end above the caption band and the
+  interface zone (nothing is drawn below y = 1300).
+- In the panel layout the title is drawn by the frame, as for every other scene. In the full-frame
+  layout the scene stands on the plain night ground : the title is the header at the top (white,
+  not the low-left title slot) and the lines are laid on **after** the shading, so the gradients never
+  dim them ; a dissolve into or out of a kinetic scene fades its lines apart from the ground.
+- The renderer draws the card ; nothing here writes the words. Which lines, which cue and which word
+  is the accent stay the planner's editorial choices, with their evidence like any scene.
+
 ## Full-frame layout, thumbnail and outro
 
 Three optional root fields. A plan without them renders exactly as before.
@@ -343,7 +393,7 @@ Three optional root fields. A plan without them renders exactly as before.
   §9 bis). The export, its checks and the replay fingerprint account for the longer video.
 - `"layout": "fullbleed"` — the legacy film's grammar instead of the dark panel: the picture or
   the map fills the 1080×1920 frame; shading carries a top label, the title low on the left, the
-  narration in a translucent box, and the credits. Only `map`, `image` and `timeline` scenes are
+  narration in a translucent box, and the credits. Only `map`, `image`, `timeline` and `kinetic` scenes are
   allowed; a timeline must be a `focus` chronology with no context cards and is drawn as a band
   over its map. Maps use a light warm palette. Images zoom at most 5 % (the legacy film uses
   3.5 %); a photo that cannot fill the frame under the enlargement ceiling (`fit: "contain"`)

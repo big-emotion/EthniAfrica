@@ -11,6 +11,7 @@ from ethni_globe import GlobeCamera, globe_camera_at
 from ethni_montage import MINIATURE_S
 from ethni_type import font
 from ethni_map import Camera, camera_at, mix, partial_path, smooth
+from ethni_scene_kinetic import cues as kinetic_cues, draw_kinetic
 from ethni_scene_plan import STATUS, asset_path, scene_at, transition_at, require
 from ethni_scene_timeline import draw_timeline
 import ethni_scene_fullbleed as fullbleed
@@ -454,6 +455,8 @@ class SceneRenderer:
             draw_timeline(self, draw, scene, local)
         elif kind == "document":
             self._document(image, draw, scene)
+        elif kind == "kinetic":
+            draw_kinetic(self, image, scene, local)
         elif kind == "text":
             self.paragraph(draw, scene["text"], (self.left, 640, self.right-self.left, 470), "Corps")
         else:
@@ -622,6 +625,8 @@ class SceneRenderer:
                                          min(end-1e-6, start+f["at"]+f["fade_seconds"])))
             if scene["type"] == "comparison":
                 instants.update(start+i.get("at", 0) for i in scene["comparison"] if start+i.get("at", 0) < end)
+            if scene["type"] == "kinetic":
+                instants.update(min(end-1e-6, start+cue) for cue in kinetic_cues(scene))
             if scene["type"] == "timeline":
                 timeline = scene["timeline"]
                 cues = [i["at"] for i in timeline["events"]+timeline.get("context", [])]

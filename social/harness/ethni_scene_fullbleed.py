@@ -11,6 +11,7 @@ from PIL import Image, ImageColor, ImageDraw
 import ethni_tokens as tokens
 from ethni_map import smooth
 from ethni_montage import MINIATURE_S
+from ethni_scene_kinetic import draw_kinetic
 from ethni_scene_plan import STATUS, require, scene_at, transition_at
 
 W, H = 1080, 1920
@@ -47,8 +48,16 @@ def shadowed(renderer, draw, value, box, role):
     return renderer.paragraph(draw, value, box, role, renderer.palette["white"])
 
 
+def kinetic_ground(renderer):
+    """A kinetic card stands on the plain night ground. Its lines and header are laid on after the
+    shading (a gradient would dim the lower lines), so a dissolve fades them apart from the ground."""
+    return Image.new("RGB", (W, H), renderer.palette["ground"])
+
+
 def background(renderer, scene, local):
     kind = scene["type"]
+    if kind == "kinetic":
+        return kinetic_ground(renderer)
     if kind == "image":
         return renderer._image(scene, local, size=(W, H))
     if kind == "map":
@@ -122,6 +131,17 @@ def draw_band(renderer, frame, scene, local):
     return frame
 
 
+def kinetic_cards(scenes, scene, local, transition):
+    """The kinetic cards a frame is made of, with their opacity : one card, or two while they dissolve."""
+    cards = []
+    if scene["type"] == "kinetic":
+        cards.append((scene, local, smooth(transition[2]) if transition else 1.0))
+    if transition and scenes[transition[0]]["type"] == "kinetic":
+        previous = scenes[transition[0]]
+        cards.append((previous, previous["end"]-previous["start"]-1e-6, 1-smooth(transition[2])))
+    return cards
+
+
 def render(renderer, instant):
     scenes = renderer.plan["scenes"]
     scene = scene_at(scenes, instant)
@@ -139,6 +159,8 @@ def render(renderer, instant):
     frame = Image.alpha_composite(picture.convert("RGBA"), shade(renderer))
     caption = next((c for c in renderer.captions if c["debut"] <= instant < c["fin"]), None)
     frame = frame.convert("RGB")
+    for card, card_local, opacity in kinetic_cards(scenes, scene, local, transition):
+        draw_kinetic(renderer, frame, card, card_local, opacity)
     if heading["type"] == "timeline":
         frame = draw_band(renderer, frame, heading, credit_local)
     draw = ImageDraw.Draw(frame)
@@ -146,9 +168,12 @@ def render(renderer, instant):
     evidence = heading["evidence"]
     renderer.paragraph(draw, f"{evidence['period']} · {STATUS[evidence['status']]}",
                        (renderer.left, 118, 809, 45), "Bandeau", palette["white"])
-    height = renderer.paragraph(ImageDraw.Draw(Image.new("RGB", (W, H))), heading["title"],
-                                (renderer.left, 0, 809, 260), "Titre de série", palette["white"])
-    shadowed(renderer, draw, heading["title"], (renderer.left, 1290-height, 809, 260), "Titre de série")
+    if heading["type"] == "kinetic":  # its title is the card's header, above the lines rather than low left
+        shadowed(renderer, draw, heading["title"], (renderer.left, 200, 809, 250), "Titre de série")
+    else:
+        height = renderer.paragraph(ImageDraw.Draw(Image.new("RGB", (W, H))), heading["title"],
+                                    (renderer.left, 0, 809, 260), "Titre de série", palette["white"])
+        shadowed(renderer, draw, heading["title"], (renderer.left, 1290-height, 809, 260), "Titre de série")
     if caption and not (renderer.plan.get("cover") and instant < MINIATURE_S):
         shadowed(renderer, draw, caption["texte"], (renderer.left, 1380, 809, 140), "Corps")
     lines = renderer.legend(credit_scene, credit_local) + renderer.credits(credit_scene, credit_local)

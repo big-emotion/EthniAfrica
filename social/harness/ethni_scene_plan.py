@@ -1,6 +1,7 @@
 """Versioned, fail-closed input contract for the local scene renderer."""
 import hashlib
 import math
+import re
 from pathlib import Path
 
 from PIL import Image
@@ -20,6 +21,9 @@ COLOURS = ("gold", "white", "night-ink-2", "teal", "perv", "sea")
 BORDER_STYLES = ("solid", "dashed", "soft", "glow", "none")
 LABEL_STYLES = ("sea", "place")
 GLOBE_ONLY = ("projection", "relief", "rivers", "lakes", "atmosphere")
+# Four lines fill the space between the header and the caption; a line that appears less than a second
+# before its scene ends is a flash, not a piece of reading.
+KINETIC_MAX_LINES, KINETIC_READING_SECONDS = 4, 1.0
 
 
 def require(condition, message):
@@ -319,6 +323,37 @@ def validate_focused_timeline(value, duration, sources, assets):
                     "Composed timeline maps require corner context to keep geography visible")
 
 
+def accent_span(line):
+    """Where the accent word sits in its line as a whole word, or None: « nous » is not inside « nouveau »."""
+    accent = line.get("accent")
+    match = re.search(rf"(?<!\w){re.escape(accent)}(?!\w)", line["text"]) if isinstance(accent, str) and accent else None
+    return match.span() if match else None
+
+
+def validate_kinetic(value, duration):
+    """Lines arrive in the order they are spoken; the card carries one accent word at most."""
+    keys(value, "lines", "kinetic")
+    lines = value.get("lines")
+    require(isinstance(lines, list) and 1 <= len(lines) <= KINETIC_MAX_LINES,
+            f"kinetic needs one to {KINETIC_MAX_LINES} lines")
+    previous, accents = 0, 0
+    for line in lines:
+        keys(line, "text detail at accent", "kinetic line")
+        text(line.get("text"), "kinetic.text")
+        if "detail" in line:
+            text(line["detail"], "kinetic.detail")
+        cue = number(line.get("at"), "kinetic.at", 0)
+        require(cue <= duration-KINETIC_READING_SECONDS, "A kinetic line needs at least a second of reading time")
+        require(cue >= previous, "Kinetic lines must follow the narration in reading order")
+        previous = cue
+        if "accent" in line:
+            accents += 1
+            require(accents == 1, "A card carries at most one accent word")
+            accent = line["accent"]
+            require(isinstance(accent, str) and len(accent.split()) == 1 and accent_span(line),
+                    "The accent must be one word of its own line")
+
+
 def validate_plan(plan, root, duration):
     """Validate shape, local assets, provenance and complete audio coverage."""
     import json
@@ -361,7 +396,7 @@ def validate_plan(plan, root, duration):
     ids, previous = set(), 0.0
     for index, scene in enumerate(scenes):
         where = f"scene {index+1}"
-        keys(scene, "id type start end title purpose evidence beat map image text comparison timeline document transition", where)
+        keys(scene, "id type start end title purpose evidence beat map image text comparison kinetic timeline document transition", where)
         text(scene.get("id"), f"{where}.id")
         require(scene["id"] not in ids, "Scene ids must be unique")
         ids.add(scene["id"])
@@ -373,10 +408,10 @@ def validate_plan(plan, root, duration):
         for field in ("title", "purpose"): text(scene.get(field), f"{where}.{field}")
         evidence(scene.get("evidence"), sources, f"{where}.evidence")
         kind = scene.get("type")
-        require(kind in ("map", "image", "text", "comparison", "timeline", "document"), "Unknown scene type")
-        require(all(field == kind or field not in scene for field in ("map", "image", "text", "comparison", "timeline", "document")),
+        require(kind in ("map", "image", "text", "comparison", "kinetic", "timeline", "document"), "Unknown scene type")
+        require(all(field == kind or field not in scene for field in ("map", "image", "text", "comparison", "kinetic", "timeline", "document")),
                 f"{where}: content for another scene type")
-        require(layout != "fullbleed" or kind in ("map", "image", "timeline"),
+        require(layout != "fullbleed" or kind in ("map", "image", "timeline", "kinetic"),
                 f"{where}: the fullbleed layout cannot draw a {kind} scene")
         if kind == "map":
             validate_map(scene.get("map"), end-start, assets, sources)
@@ -421,6 +456,8 @@ def validate_plan(plan, root, duration):
             for field in ("label", "body"): text(value.get(field), f"document.{field}")
         elif kind == "text":
             text(scene.get("text"), "scene.text")
+        elif kind == "kinetic":
+            validate_kinetic(scene.get("kinetic"), end-start)
         else:
             items = scene.get("comparison")
             require(isinstance(items, list) and 2 <= len(items) <= 3, "comparison needs two or three items")
