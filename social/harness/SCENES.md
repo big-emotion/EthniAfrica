@@ -271,6 +271,23 @@ in [`docs/plans/scene-globe-relief.md`](../../docs/plans/scene-globe-relief.md).
 Frames that do not move the camera share one cached base, so a still hold is cheap; a moving
 camera re-projects the relief on every frame, about a third of a second each.
 
+The relief is sampled at half the frame's resolution and enlarged, except when the camera `span`
+is under `CLOSE_UP_SPAN` (20 degrees, `ethni_globe_layers.py`), where it is sampled at full
+resolution. The choice is made from the camera alone, and the cached base is keyed on the camera,
+so a half-resolution base is never reused at close range. Measured on 2026-09-28 on the
+west-Africa pack (60 px per degree), 1080 x 1920:
+
+| Span | Relief base, half → full | Edge sharpness gain |
+| ---- | ------------------------ | ------------------- |
+| 34°  | stays half (0.08 s)      | none, by design     |
+| 17°  | 0.07 s → 0.23 s          | about +55 %         |
+| 10°  | 0.07 s → 0.23 s          | about +30 %         |
+| 5°   | 0.06 s → 0.24 s          | about +14 %         |
+
+A whole close-up frame rose from about 0.37-0.5 s to 0.53-0.62 s when its base is not cached.
+Below about 9 degrees the frame is finer than the pack itself, so what remains soft there is the
+pack's resolution, not the engine's: a sharper extreme close-up needs a finer relief cut.
+
 Point features can carry an optional plain-text `annotation`: a compact,
 regular-weight geographic note below their label, connected to the location
 by a leader line. The existing `offset` positions the whole annotation. Text

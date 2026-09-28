@@ -7,6 +7,7 @@ import unittest
 import numpy
 from PIL import Image
 
+import ethni_globe_layers as globe_layers
 import ethni_scene_fullbleed as fullbleed
 import ethni_tokens as tokens
 import test_ethni_scenes as fixtures
@@ -414,6 +415,40 @@ class GlobeContextCountryTests(GlobeSceneCase):
         legend = "\n".join(SceneRenderer(self.plan, self.root, []).legend(self.plan["scenes"][0], 2))
         self.assertIn("Land", legend)
         self.assertNotIn("Voisinage : Land", legend)
+
+
+class ReliefResolutionTests(GlobeSceneCase):
+    """A close-up samples the relief at the frame's own resolution; a wide view keeps the cheaper half."""
+
+    size = (200, 200)
+
+    def edge_width(self, span):
+        """How many pixels a sharp west/east edge in the relief is smeared over, across the frame's middle row."""
+        relief = numpy.zeros((800, 800, 3), numpy.uint8)
+        relief[:, 400:] = 255
+        camera = GlobeCamera((0, 0), span, (0, 0, *self.size))
+        image = globe_layers.relief_base(relief, [-5, -5, 5, 5], camera, self.size,
+                                         tokens.palette()["ground"])
+        row = numpy.asarray(image.convert("L"), int)[self.size[1]//2, 60:140]
+        return int(((row > 25) & (row < 230)).sum())
+
+    def test_a_close_up_keeps_a_sharp_edge_sharp(self):
+        self.assertLessEqual(self.edge_width(globe_layers.CLOSE_UP_SPAN/4), 1)
+        self.assertLessEqual(self.edge_width(globe_layers.CLOSE_UP_SPAN*.95), 1)
+
+    def test_a_wide_view_keeps_the_half_resolution_base(self):
+        self.assertGreaterEqual(self.edge_width(globe_layers.CLOSE_UP_SPAN*1.5), 2)
+
+    def test_a_close_up_after_a_wide_view_is_not_served_the_wide_base(self):
+        cfg = self.globe()
+        cfg["borders"] = False
+        renderer = SceneRenderer(self.plan, self.root, [])
+        scene = self.plan["scenes"][0]
+        cfg["camera"] = [{"at": 0, "center": [5, 10], "span": globe_layers.CLOSE_UP_SPAN*2}]
+        renderer._map(scene, 2)
+        cfg["camera"] = [{"at": 0, "center": [5, 10], "span": globe_layers.CLOSE_UP_SPAN/2}]
+        reused = renderer._map(scene, 2).tobytes()
+        self.assertTrue(reused == SceneRenderer(self.plan, self.root, [])._map(scene, 2).tobytes())
 
 
 if __name__ == "__main__":
