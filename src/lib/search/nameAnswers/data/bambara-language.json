@@ -1,0 +1,28 @@
+{
+  "term": { "fr": "Bambara", "en": "Bambara" },
+  "aliases": [],
+  "subjects": [{ "type": "language", "id": "bam" }],
+  "paragraphs": {
+    "fr": [
+      "Bambara est le nom courant de cette langue mandé. On l'appelle aussi Bamana, Bamanakan ou Bamanankan. Au Mali, elle est officiellement désignée bamanankan, « la langue des Bamana », du nom du peuple qui se dit Bamana."
+    ],
+    "en": [
+      "Bambara is the usual name of this Mande language. It is also called Bamana, Bamanakan or Bamanankan. In Mali it is officially called bamanankan, \"the language of the Bamana\", after the people who call themselves Bamana."
+    ]
+  },
+  "evidence": [
+    {
+      "statement": {
+        "fr": "La langue est nommée Bambara et aussi Bamana, Bamanakan ou Bamanankan ; elle est classée parmi les langues mandé.",
+        "en": "The language is named Bambara and also Bamana, Bamanakan or Bamanankan; it is classed among the Mande languages."
+      },
+      "sources": [
+        {
+          "title": "Glottolog 5.3 — Bambara (bamb1269)",
+          "url": "https://glottolog.org/resource/languoid/id/bamb1269",
+          "tier": "official"
+        }
+      ]
+    }
+  ]
+}

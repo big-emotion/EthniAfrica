@@ -450,9 +450,10 @@ def block(bid, html, gap, zone):
 
 
 def manifest_blocks(c, d):
-    opening = [("lenses", "first"), ("verdict", "first")]
+    opening = [("verdict", "first")]
     if c.get("forms"):
         opening.append(("appellations", "first"))
+    opening.append(("lenses", "first"))
     if c.get("shorts"):
         opening.append(("shorts", "first"))
 
@@ -485,7 +486,7 @@ def owed_parts(c):
 
 def first_screen(c, d):
     fid = f'{"dq" if d else "q"}-{c["id"]}'
-    out = search(c, d, fid) + lenses(c, d)
+    out = search(c, d, fid)
     gap = 24 if d else 16
     if d and c.get("forms"):
         out += (f'<div style="padding-top: {gap}px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 32px; align-items: start;">'
@@ -495,6 +496,7 @@ def first_screen(c, d):
         out += block("verdict", answer(c, d), gap, "first")
         if c.get("forms"):
             out += block("appellations", appellations(c, d), 12, "first")
+    out += lenses(c, d)
     if c.get("shorts"):
         out += block("shorts", shorts(c, d), 24 if d else 12, "first")
     return out

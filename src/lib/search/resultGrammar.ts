@@ -9,9 +9,9 @@
 /** Canonical top-level order for the search-result feed. */
 // @req REQ-180
 export const FEED_BLOCKS = [
-  "lenses",
   "verdict",
   "appellations",
+  "lenses",
   "shorts",
   "origins",
   "peoples",

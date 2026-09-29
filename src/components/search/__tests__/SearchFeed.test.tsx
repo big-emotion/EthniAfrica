@@ -69,8 +69,8 @@ describe("SearchFeed", () => {
     );
 
     expect(blockIds(container)).toEqual([
-      "lenses",
       "verdict",
+      "lenses",
       "shorts",
       "owed",
       "further",
@@ -245,9 +245,9 @@ describe("SearchFeed", () => {
     await userEvent.click(screen.getByRole("button", { name: /Shorts 6/ }));
 
     expect(blockIds(container)).toEqual([
-      "lenses",
       "verdict",
       "appellations",
+      "lenses",
       "shorts",
     ]);
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
@@ -657,7 +657,7 @@ describe("SearchFeed", () => {
   });
 
   // @req REQ-180
-  it("declares dating silences per undated subject", () => {
+  it("declares no dating silence for a subject merely lacking structured dates", () => {
     const dated = namedResult({
       type: "people",
       id: "PPL_DATED",
@@ -700,9 +700,8 @@ describe("SearchFeed", () => {
       />
     );
 
-    const silences = container.querySelector('[data-feed-part="silences"]');
-    expect(silences).toHaveTextContent("Bassa Nge");
-    expect(silences).not.toHaveTextContent("Bassa —");
+    // An empty date field describes what was projected, not what is known.
+    expect(container.querySelector('[data-feed-part="silences"]')).toBeNull();
   });
 
   // @req REQ-180
@@ -729,7 +728,7 @@ describe("SearchFeed", () => {
 
     expect(
       container.querySelectorAll(
-        '[data-testid="appellations-mobile"] [data-appellation][data-subject-id]'
+        '[data-testid="appellations-list"] [data-appellation][data-subject-id]'
       )
     ).toHaveLength(2);
   });

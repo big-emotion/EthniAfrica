@@ -5,7 +5,11 @@ export interface SearchFeedCopy {
     exact: string;
     widened: string;
     relatedOnly: string;
-    typo: (name: string) => string;
+    /** Said when no name answers: the nearest names follow as explicit choices. */
+    typo: string;
+    typoSummary: (query: string) => string;
+    /** Heading of the suggestions: they are not forms of the searched name. */
+    typoChoices: string;
     shared: (count: number) => string;
     /** A cross-type clash (a people and a language filed under the same name) — `shared` reads as people-specific. */
     sharedGeneric: (count: number) => string;
@@ -95,7 +99,10 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
         "We document this name, but the context below is related rather than identical.",
       relatedOnly:
         "We found related entries without establishing that they answer to this name.",
-      typo: (name) => `Did you mean ${name}?`,
+      typo: "Were you looking for…?",
+      typoChoices: "The closest names",
+      typoSummary: (query) =>
+        `No name matches “${query}” exactly. These are the closest ones — choose one to search it.`,
       shared: (count) => `${count} peoples carry this name.`,
       sharedGeneric: (count) => `${count} entries carry this name.`,
       exactSummary: "The forms and sources below state what we can establish.",
@@ -129,7 +136,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       word: "About this word",
     },
     emptyShort: {
-      body: "No source we have read answers this question yet.",
+      body: "We have not made a video on this name yet.",
       action: "Suggest a source",
     },
     wideningNote: "Around this name — related context, not the same name",
@@ -186,7 +193,10 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
         "Nous documentons ce nom, mais le contexte ci-dessous est lié plutôt qu’identique.",
       relatedOnly:
         "Nous avons trouvé des fiches liées sans établir qu’elles répondent à ce nom.",
-      typo: (name) => `Vouliez-vous dire ${name} ?`,
+      typo: "Cherchiez-vous… ?",
+      typoChoices: "Les noms les plus proches",
+      typoSummary: (query) =>
+        `Aucun nom ne correspond exactement à « ${query} ». Voici les plus proches : choisissez-en un pour le chercher.`,
       shared: (count) => `${count} peuples portent ce nom.`,
       sharedGeneric: (count) => `${count} entrées portent ce nom.`,
       exactSummary:
@@ -221,7 +231,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       word: "Sur ce mot",
     },
     emptyShort: {
-      body: "Aucune source que nous avons lue ne répond encore à cette question.",
+      body: "Nous n’avons pas encore fait de vidéo sur ce nom.",
       action: "Proposer une source",
     },
     wideningNote: "Autour de ce nom — un contexte lié, pas le même nom",

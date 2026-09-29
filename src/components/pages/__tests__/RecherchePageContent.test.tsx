@@ -728,9 +728,10 @@ describe("RecherchePageContent", () => {
     await waitFor(() => {
       expect(screen.getByTestId("feed-block-verdict")).toBeInTheDocument();
     });
-    expect(
-      screen.getByText("Vouliez-vous dire Mandinka ?")
-    ).toBeInTheDocument();
+    expect(screen.getByText("Cherchiez-vous… ?")).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "mandink"
+    );
     expect(screen.queryByTestId("feed-block-owed")).not.toBeInTheDocument();
   });
 
@@ -873,10 +874,10 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByRole("link", { name: /Bambara/ })).toHaveAttribute(
-        "href",
-        getPeopleRoute("fr", "PPL_BAMBARA")
-      );
+      const hrefs = screen
+        .getAllByRole("link", { name: /Bambara/ })
+        .map((link) => link.getAttribute("href"));
+      expect(hrefs).toContain(getPeopleRoute("fr", "PPL_BAMBARA"));
     });
   });
 

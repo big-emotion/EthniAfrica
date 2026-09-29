@@ -1,0 +1,30 @@
+{
+  "term": { "fr": "Bambara", "en": "Bambara" },
+  "aliases": [],
+  "subjects": [{ "type": "people", "id": "PPL_BAMBARA" }],
+  "paragraphs": {
+    "fr": [
+      "Les Bamana se nomment eux-mêmes Bamana. « Bambara » est la forme courante en français et dans les médias internationaux, alors que Bamana est préféré au Mali. L'origine du mot « Bambara » n'est pas établie.",
+      "Au Mali, leur langue est officiellement appelée bamanankan, « la langue des Bamana »."
+    ],
+    "en": [
+      "The Bamana call themselves Bamana. \"Bambara\" is the usual form in French and in international media, while Bamana is preferred in Mali. The origin of the word \"Bambara\" is not settled.",
+      "In Mali, their language is officially called bamanankan, \"the language of the Bamana\"."
+    ]
+  },
+  "evidence": [
+    {
+      "statement": {
+        "fr": "Les Bamana se nomment Bamana ; Bambara est la forme courante en français et Bamana est préféré au Mali.",
+        "en": "The Bamana call themselves Bamana; Bambara is the usual form in French and Bamana is preferred in Mali."
+      },
+      "sources": [
+        {
+          "title": "SIL Ethnologue — Bambara (bam)",
+          "url": "https://www.ethnologue.com/language/bam/",
+          "tier": "official"
+        }
+      ]
+    }
+  ]
+}

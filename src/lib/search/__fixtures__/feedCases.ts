@@ -456,9 +456,9 @@ function block(id: FeedBlockId, zone: FeedZone) {
 }
 
 const opening = [
-  block("lenses", "first"),
   block("verdict", "first"),
   block("appellations", "first"),
+  block("lenses", "first"),
   block("shorts", "first"),
 ];
 
@@ -1313,15 +1313,15 @@ const FEED_CASE_VALUES: FeedCaseFixture[] = [
     board: {
       blocks: {
         mobile: [
-          block("lenses", "first"),
           block("verdict", "first"),
+          block("lenses", "first"),
           block("shorts", "first"),
           block("owed", "closing"),
           block("further", "closing"),
         ],
         desktop: [
-          block("lenses", "first"),
           block("verdict", "first"),
+          block("lenses", "first"),
           block("shorts", "first"),
           block("owed", "closing"),
           block("further", "closing"),
