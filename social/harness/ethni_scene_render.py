@@ -8,12 +8,12 @@ from PIL import Image, ImageColor, ImageDraw, ImageOps, ImageFilter
 import ethni_globe_layers as globe_layers
 import ethni_tokens as tokens
 from ethni_globe import GlobeCamera, globe_camera_at
-from ethni_montage import MINIATURE_S
 from ethni_type import font
 from ethni_map import Camera, camera_at, mix, partial_path, smooth
 from ethni_scene_kinetic import cues as kinetic_cues, draw_kinetic
 from ethni_scene_plan import STATUS, asset_path, scene_at, transition_at, require
 from ethni_scene_timeline import draw_timeline
+import ethni_scene_captions as captions
 import ethni_scene_fullbleed as fullbleed
 
 
@@ -291,6 +291,74 @@ class SceneRenderer:
         self._globe_base_cache = (key, canvas)
         return canvas
 
+    @staticmethod
+    def _camera(cfg, when, w, h):
+        if cfg.get("projection") == "globe":
+            return GlobeCamera(viewport=(0, 0, w, h), **globe_camera_at(cfg["camera"], when))
+        return Camera(camera_at(cfg["camera"], when), (0, 0, w, h))
+
+    def subject_boxes(self, scene, local):
+        """Where a full-frame map's subject stands on screen at `local`: each highlighted or active country, mark and
+        line, with the room its label takes. Only the full-frame layout puts a map behind the caption; the panel
+        layout keeps the map in its own rectangle."""
+        cfg = scene_map(scene)
+        if not cfg or self.plan.get("layout") != "fullbleed":
+            return []
+        globe = cfg.get("projection") == "globe"
+        camera = self._camera(cfg, 0 if self.reduced_motion else local, self.width, self.height)
+
+        def pixels(points):
+            points = np.asarray(points, dtype=float)[:, :2]
+            if globe:
+                shown, visible = camera.project_many(points)
+                return shown[visible]
+            return np.array([camera.project(point) for point in points])
+
+        def country(code):
+            rings = [ring for shape in self.assets[cfg["asset"]]["features"] if shape["properties"]["ADM0_A3"] == code
+                     for ring in globe_layers.outer_rings(shape["geometry"])]
+            return [pixels(ring) for ring in rings]
+
+        found = []
+        for code in cfg.get("highlights", []):
+            found.append((country(code), None))
+        for feature in cfg.get("features", []):
+            if not feature["at"] <= local < feature["until"]:
+                continue
+            kind = feature["kind"]
+            if kind == "country":
+                found.append((country(feature["code"]), feature))
+            elif kind in ("label", "point", "presence", "speakers"):
+                if globe and not camera.visible(feature["point"]):
+                    continue
+                x, y = camera.project(feature["point"])
+                radius = 60 if kind != "speakers" else max(60, round(SPEAKERS_RADIUS*math.sqrt(feature["value"]/SPEAKERS_REFERENCE)))
+                found.append(([np.array([[x-radius, y-radius], [x+radius, y+radius]])], feature))
+            else:
+                found.append(([pixels(feature["points"])], feature))
+
+        boxes = []
+        for shapes, feature in found:
+            shapes = [s for s in shapes if len(s)]
+            if not shapes:
+                continue
+            every = np.concatenate(shapes)
+            box = [every[:, 0].min(), every[:, 1].min(), every[:, 0].max(), every[:, 1].max()]
+            boxes.append(box)
+            if feature and not feature.get("unlabelled"):
+                # The same anchor and offset _map draws the label with.
+                if "point" in feature:
+                    x, y = camera.project(feature["point"])
+                elif feature["kind"] == "country":
+                    x, y = (box[0]+box[2])/2, (box[1]+box[3])/2
+                else:
+                    x, y = shapes[0][0]
+                dx, dy = feature.get("offset", [0, 0] if feature["kind"] == "label" else [18, -30])
+                width = max(self.face("Bandeau").getlength(feature["label"]), 300 if "annotation" in feature else 0)
+                boxes.append([x+dx, y+dy, x+dx+width, y+dy+(146 if "annotation" in feature else 36)])
+        clipped = [(max(0, b[0]), max(0, b[1]), min(self.width, b[2]), min(self.height, b[3])) for b in boxes]
+        return [tuple(round(v) for v in b) for b in clipped if b[0] < b[2] and b[1] < b[3]]
+
     def _map(self, scene, local, viewport=None, palette=None):
         cfg = scene["map"]
         x0, y0, x1, y1 = viewport or self.content
@@ -298,14 +366,13 @@ class SceneRenderer:
         p = palette or self.palette
         when = 0 if self.reduced_motion else local
         globe = cfg.get("projection") == "globe"
+        camera = self._camera(cfg, when, w, h)
         if globe:
-            camera = GlobeCamera(viewport=(0, 0, w, h), **globe_camera_at(cfg["camera"], when))
             canvas = self._globe_base(cfg, camera, (w, h), p).copy()
             draw = ImageDraw.Draw(canvas)
         else:
             canvas = Image.new("RGB", (w, h), p["ground"])
             draw = ImageDraw.Draw(canvas)
-            camera = Camera(camera_at(cfg["camera"], when), (0, 0, w, h))
             self._flat_base(cfg, camera, draw, p)
         label_boxes = []
         features = sorted(cfg.get("features", []), key=lambda f: f.get("role") != "context")
@@ -616,10 +683,8 @@ class SceneRenderer:
                        (self.left, 426, heading_width, 85 if corner else 45), "Bandeau", self.palette["night-ink-2"])
         self.paragraph(draw, "ETHNIAFRICA", (self.left, 65, 380, 45), "Bandeau", self.palette["night-ink-2"])
         self.paragraph(draw, "L’AFRIQUE À TRAVERS SES NOMS", (self.left, 132, self.right-self.left, 45), "Bandeau", self.palette["night-ink-2"])
-        caption = next((c for c in self.captions if c["debut"] <= instant < c["fin"]), None)
         # §1 ter: the opening is the thumbnail, so for its first seconds it carries its title alone.
-        if caption and not (self.plan.get("cover") and instant < MINIATURE_S):
-            self.paragraph(draw, caption["texte"], (self.left, 1380, self.right-self.left, 140), "Corps")
+        captions.draw(self, image, instant)
         self.paragraph(draw, "\n".join(credits), (self.left, 1530, self.right-self.left, 88), "Crédit", self.palette["night-ink-2"])
         if self.plan.get("progress", False):
             fraction = max(0, min(1, instant/self.duration))
@@ -636,10 +701,9 @@ class SceneRenderer:
 
     def preflight(self):
         """Inspect all caption content and scene/event/camera boundaries before encoding."""
-        draw = ImageDraw.Draw(Image.new("RGB", (self.width, self.height)))
-        for caption in self.captions:
-            self.paragraph(draw, caption["texte"], (self.left, 1380, self.right-self.left, 140), "Corps")
-        instants = set()
+        # Laying the captions out refuses a word wider than the column, an emphasis word nobody speaks and a scene
+        # with no clear place for its captions, before any frame is encoded.
+        instants = {min(self.duration-1e-6, group["fin"]) for group in captions.layout(self)}
         for scene in self.plan["scenes"]:
             start, end = scene["start"], scene["end"]
             instants.update((start, (start+end)/2, end-1e-6))

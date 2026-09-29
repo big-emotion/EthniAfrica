@@ -8,7 +8,17 @@ import unittest
 
 from PIL import Image
 
+import ethni_soustitre as st
 from ethni_scene_plan import validate_plan, scene_at, transition_at
+
+
+def spoken(text, start, end):
+    """A caption timed like `minuter` shapes it, its words spread evenly over [start, end]: synthetic, not a real voice."""
+    tokens = st.TOKEN_PATTERN.findall(text)
+    step = (end-start)/len(tokens)
+    words = [{"word": w, "start": start+i*step, "end": end if i == len(tokens)-1 else start+i*step+.8*step}
+             for i, w in enumerate(tokens)]
+    return st.minuter([text], words)
 
 
 def fixture(root):
@@ -163,7 +173,7 @@ class ScenePlanTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "overflow"):
             SceneRenderer(self.plan, self.root, []).preflight()
         self.plan = fixture(self.root)
-        captions = [{"debut": 0, "fin": 1, "texte": "A caption " * 100}]
+        captions = spoken("Anticonstitutionnellement parlant", 0, 1)  # a word wider than the column cannot be shrunk
         with self.assertRaisesRegex(ValueError, "overflow"):
             SceneRenderer(self.plan, self.root, captions).preflight()
 

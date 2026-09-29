@@ -9,7 +9,7 @@ import test_ethni_scenes as fixtures
 from ethni_scene_plan import validate_plan
 from ethni_scene_render import SceneRenderer
 
-SPOKEN = [{"debut": 0.0, "fin": 4.0, "texte": "A spoken sentence for the caption box."}]
+SPOKEN = fixtures.spoken("A spoken sentence for the caption box.", 0.0, 4.0)
 
 
 class FullbleedTests(unittest.TestCase):
