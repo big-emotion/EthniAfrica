@@ -316,6 +316,7 @@ légende avant, puis ne lui laissait que 5 px d'air après un premier
 correctif trop étroit — l'écart maintenant se compare à celui d'une
 production déjà publiée (« Sénoufo », pilier Mythe déconstruit).
 | Sous-titre narration | Nunito | 44–46 | 1,30 | 800 | — | encre 1 |
+| Sous-titre parlé (scènes, mot à mot) | Nunito | 72 | 1,20 | 800 | — | encre 1, un mot en accent |
 
 **Mesures maximales** (rag maîtrisé) : précision 800 px · punchline 880 px ·
 corps 740 px · crédit 760 px.
@@ -1109,6 +1110,23 @@ dit que « ethniafrica.com » a laissé le lecteur sans la raison d'y aller. Et
   pas de contour noir sur une police d'affichage.
 - Bande réservée entre la colonne de contenu et le pied. Le pied remonte d'autant.
 - Le mot pivot de la phrase peut passer en accent dans la plaque : un seul par carte.
+
+**Scene videos (2026-09-29, operator direction).** The rules above describe the legacy image-deck plate and stay in
+force for it. A scene video (`social/harness/SCENES.md`, *Captions: word by word*) supersedes the fixed plate:
+
+- **Words arrive with the voice.** Each word fades in at the start the aligner gave it; a group of at most two
+  lines keeps its shape while its words appear, and leaves a quarter of a second after its last word. Changing the
+  colour of a phrase that is already whole on screen is not a reveal.
+- **Type.** Role « Sous-titre parlé » of §3: Nunito 800 at 72 px × the reel factor, ink 1, soft drop shadow, no plate.
+  The plate's 44–52 px did not read on a phone held at arm's length; the reference the operator supplied sets
+  two short lines of three or four words that span about three quarters of the frame's width.
+- **Emphasis.** One word per group at most, authored on the scene (`emphasis`), in the accent colour. Nothing is
+  accented by default.
+- **Placement is no longer a fixed slot for scene videos.** The default is still the low band (baseline y 1520), but a
+  map's highlighted country, a projected feature and its label, a protected region or a scene's own text moves the
+  captions of that scene up to the lowest clear place, once for the whole scene. A scene with no clear place is
+  refused. The §9 bis rule that *no position changes because another block appears* is kept where it matters:
+  nothing changes inside a scene.
 
 ---
 

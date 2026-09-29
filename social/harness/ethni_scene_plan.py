@@ -402,6 +402,23 @@ def validate_backdrop(value, duration, root, assets, sources):
         validate_map_scene(config, duration, root, assets, sources)
 
 
+def caption_options(scene, where):
+    """The two authored hints a scene gives its captions: which words to accent, and what not to cover."""
+    if "emphasis" in scene:
+        words = scene["emphasis"]
+        require(isinstance(words, list) and 1 <= len(words) <= 3
+                and all(isinstance(w, str) and w.strip() and len(w.split()) == 1 for w in words),
+                f"{where}.emphasis: one to three single words")
+    if "protect" in scene:
+        regions = scene["protect"]
+        require(isinstance(regions, list) and 1 <= len(regions) <= 4 and all(isinstance(r, list) and len(r) == 4 for r in regions),
+                f"{where}.protect: one to four [x0, y0, x1, y1] rectangles")
+        for x0, y0, x1, y1 in regions:
+            for value, high in ((x0, 1080), (x1, 1080), (y0, 1920), (y1, 1920)):
+                number(value, f"{where}.protect", 0, high)
+            require(x0 < x1 and y0 < y1, f"{where}.protect: a rectangle needs x0 < x1 and y0 < y1")
+
+
 def accent_span(line):
     """Where the accent word sits in its line as a whole word, or None: « nous » is not inside « nouveau »."""
     accent = line.get("accent")
@@ -476,7 +493,7 @@ def validate_plan(plan, root, duration, timeline=None):
     ids, previous = set(), 0.0
     for index, scene in enumerate(scenes):
         where = f"scene {index+1}"
-        keys(scene, "id type start end title purpose evidence beat map image text comparison kinetic backdrop timeline document clip transition", where)
+        keys(scene, "id type start end title purpose evidence beat map image text comparison kinetic backdrop timeline document clip transition emphasis protect", where)
         text(scene.get("id"), f"{where}.id")
         require(scene["id"] not in ids, "Scene ids must be unique")
         ids.add(scene["id"])
@@ -486,6 +503,7 @@ def validate_plan(plan, root, duration, timeline=None):
         require(end-start >= 1, "A scene needs at least one second of reading time")
         previous = end
         for field in ("title", "purpose"): text(scene.get(field), f"{where}.{field}")
+        caption_options(scene, where)
         evidence(scene.get("evidence"), sources, f"{where}.evidence")
         kind = scene.get("type")
         require(kind in ("map", "image", "text", "comparison", "kinetic", "timeline", "document", "clip"), "Unknown scene type")

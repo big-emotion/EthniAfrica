@@ -458,7 +458,8 @@ Map additions, all validated and all requiring evidence like every other feature
 - `flag_orientation: "horizontal"` (with `flag_stripes`, on a point or a country) draws three
   horizontal stripes instead of vertical ones. Flags are simplified stripes: no star, no emblem.
 - In the full-frame layout the caption is plain text with a drop shadow on the shading, not on a
-  plate, and the shading starts at 900 px so the map stays clear above it.
+  plate, revealed word by word (see _Captions: word by word_). The shading starts at 900 px so the map
+  stays clear above it; a caption that has risen out of the low band relies on its shadow alone.
 - A timeline event may carry `display` (for example « XIIe siècle ») when the sources give only a
   century: the `year` then only orders the events and is never printed.
 
@@ -496,6 +497,55 @@ clamp to 0–1. A picture much taller than the frame (a page on a 2160 × 5120 c
 is what lets any line of it be brought into the upper half. A picture seen by a camera fades out under the
 title and the narration (its bottom is shaded to near-opaque from y 880), because a printed page runs on
 below them and must not compete with them.
+
+## Captions: word by word
+
+Narration captions of a scene video (`ethni_scene_captions.py`) are revealed **word by word, with the voice**.
+The image-deck montage keeps its own whole-phrase plate (§9 bis, legacy); nothing below applies to it.
+
+**Timing.** `ethni_soustitre.minuter` keeps the aligner's start and end of every word (`mots`) on its caption, and
+`grouper` cuts each caption into _groups_: at most two lines of the column, cut where the speaker breathes and never
+after a word that points forward (« et », « le », the « un » of « d'un »). A word fades in over the charter's `fast`
+duration from **its own start**; a group leaves `MAINTIEN_S` (0.25 s) after its last word, or when the next group
+arrives if the two are less than `PONT_S` (0.6 s) apart, so a breath never blanks the screen and a silence clears it.
+A spaced « ? » or a guillemet is not spoken: it appears with the word it closes or opens.
+
+Timing is never approximated. A caption whose spoken words and aligned words disagree in number, a word without a
+finite start and end, a word ending before it starts, or words out of order fail `preflight` with the caption in the
+message. Approved audio and `aligned-words.json` are read, never rewritten.
+
+**Type.** Role _Sous-titre parlé_ of the §3 table: Nunito 800, 72 px × the reel factor (78 px), line height 1.2,
+ink 1 with a soft drop shadow, left-aligned in the safe column (x 91–900). That is about 28 CSS px on a 390 px phone,
+against 13 for the retired body role. The lines of a group are decided once from all its words, so a word that
+arrives never moves one already on screen. Text is never shrunk: a word wider than the column is a `Text overflow`.
+
+**Emphasis.** A scene may carry `"emphasis": ["Congo"]`: one to three single words, matched whole and blind to case
+and accents (« Belge » does not light « Belges »). A group accents **at most one** word (the first match) in the gold
+of the palette. A word that is never spoken while its scene is on screen is refused at layout, so a typo cannot pass
+as « no emphasis ». A scene without `emphasis` accents nothing.
+
+**Placement.** The default is the low band, the last line resting on y 1520 (the credits start at 1530). Placement is
+decided **per scene, not per frame**: every group of a scene shares one baseline, so the caption does not jump while
+the camera moves. Where the low band is taken, the group rises to the lowest clear place. What is kept clear:
+
+- always: the header (y < 260) and, in the full-frame layout, the scene's own title (low left) — or, for `kinetic`,
+  `comparison` and `timeline` scenes, everything between the header and the overlay bottom (y 1330), which the scene
+  owns; in the panel layout, everything above the legend (y 1332);
+- a full-frame map's subject: each highlighted country and each active feature (country, point, route, territory,
+  presence zone) projected through the same camera as the map, with its label, sampled across the scene and padded
+  by 40 px; and the picture inserts a map scene may show;
+- authored regions: `"protect": [[x0, y0, x1, y1], ...]` on a scene (one to four rectangles in frame pixels), for a
+  face or a detail no map data describes.
+
+A group that crosses a scene boundary honours both scenes. If no place is clear, `preflight` raises
+`No caption placement in scene <id> at <t> s` instead of covering the subject: move the subject, shrink the region or
+shorten the narration there. There is no saliency detection; a photograph's important region is what the plan says it is.
+
+**Reduced motion** (`--controle`) shows the whole group from its first word, as it shows every overlay item at once.
+The opening thumbnail (`cover`) still carries its title alone. A caption is a pure function of the instant, so frames
+may be rendered in any order.
+
+A change of runtime changes the handoff identity: a lock prepared before this engine must be prepared again.
 
 ## Editorial profiles and handoff
 

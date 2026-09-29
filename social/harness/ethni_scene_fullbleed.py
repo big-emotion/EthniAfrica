@@ -10,7 +10,7 @@ from PIL import Image, ImageColor, ImageDraw
 
 import ethni_tokens as tokens
 from ethni_map import smooth
-from ethni_montage import MINIATURE_S
+import ethni_scene_captions as captions
 from ethni_scene_kinetic import draw_kinetic
 from ethni_scene_plan import STATUS, require, scene_at, transition_at
 
@@ -29,6 +29,7 @@ INSERT_WIDTH, INSERT_HEIGHT, INSERT_TOP, FADE = 380, 430, 480, .35
 OVERLAY_TOP, OVERLAY_BOTTOM, PLATE_PAD, ITEM_GAP, RISE = 480, 1330, 20, 18, 26
 PLATE_ALPHA = 150
 REVEAL_S = tokens.duree("slow")
+TITLE_BOTTOM = 1290
 
 
 def shade_variant(scene):
@@ -61,6 +62,21 @@ def shade(renderer, variant="default"):
         shading.putalpha(alpha)
         cache[variant] = shading
     return cache[variant]
+
+
+def title_top(renderer, scene):
+    """Where a scene's title starts: low on the left, ending on TITLE_BOTTOM, so its height decides its top."""
+    height = renderer.paragraph(ImageDraw.Draw(Image.new("RGB", (W, H))), scene["title"],
+                                (renderer.left, 0, 809, 260), "Titre de série", renderer.palette["white"])
+    return TITLE_BOTTOM-height
+
+
+def insert_boxes(scene):
+    """The picture cards a map scene may lay on the map, at their widest: the caption keeps clear of both sides."""
+    cards = (scene.get("map") or scene.get("timeline", {}).get("background") or {}).get("inserts", [])
+    wide = INSERT_WIDTH+16
+    return [(65, INSERT_TOP, 65+wide, INSERT_TOP+INSERT_HEIGHT+90) if card["side"] == "left"
+            else (W-65-wide, INSERT_TOP, W-65, INSERT_TOP+INSERT_HEIGHT+90) for card in cards]
 
 
 def shadowed(renderer, draw, value, box, role):
@@ -220,7 +236,6 @@ def render(renderer, instant):
         if progress < .5:
             heading, credit_scene, credit_local = previous, previous, previous["end"]-previous["start"]-1e-6
     frame = Image.alpha_composite(picture.convert("RGBA"), shade(renderer, shade_variant(heading)))
-    caption = next((c for c in renderer.captions if c["debut"] <= instant < c["fin"]), None)
     frame = frame.convert("RGB")
     for card, card_local, opacity in kinetic_cards(scenes, scene, local, transition):
         draw_kinetic(renderer, frame, card, card_local, opacity)
@@ -236,13 +251,11 @@ def render(renderer, instant):
     if heading["type"] == "kinetic":  # its title is the card's header, above the lines rather than low left
         shadowed(renderer, draw, heading["title"], (renderer.left, 200, 809, 250), "Titre de série")
     else:
-        height = renderer.paragraph(ImageDraw.Draw(Image.new("RGB", (W, H))), heading["title"],
-                                    (renderer.left, 0, 809, 260), "Titre de série", palette["white"])
         # The concept of an overlay heads it, at the top; every other scene keeps its title low on the left.
-        shadowed(renderer, draw, heading["title"], (renderer.left, 190 if heading["type"] == "comparison" else 1290-height, 809, 260),
+        shadowed(renderer, draw, heading["title"],
+                 (renderer.left, 190 if heading["type"] == "comparison" else title_top(renderer, heading), 809, 260),
                  "Titre de série")
-    if caption and not (renderer.plan.get("cover") and instant < MINIATURE_S):
-        shadowed(renderer, draw, caption["texte"], (renderer.left, 1380, 809, 140), "Corps")
+    captions.draw(renderer, frame, instant)
     lines = renderer.legend(credit_scene, credit_local) + renderer.credits(credit_scene, credit_local)
     renderer.paragraph(draw, "\n".join(lines), (renderer.left, 1540, 809, 300), "Crédit", palette["night-ink-2"])
     renderer.paragraph(draw, "ETHNIAFRICA", (renderer.left, 1850, 380, 40), "Bandeau", palette["gold"])
