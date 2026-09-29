@@ -5,6 +5,18 @@ description: Prepare EthniAfrica narration, visual storyboards, sourced assets a
 
 # structure — écrire le contenu
 
+## Editorial voice and reader needs (2026-09-30)
+
+Before writing or reviewing reader-facing copy, read
+`docs/editorial/reader-facing-register.md` and `docs/editorial/audience-personas.md`.
+EthniAfrica speaks as a popular educator using research methods, without claiming
+scientific, linguistic or historical qualifications for its operator. Explain the
+subject in ordinary language, keep uncertainty in the sentence, and put traceable
+sources after it. Oral and local accounts are sources in their own right; preserve
+their actual context and never invent interviews or community consensus.
+State the primary reader need in the existing working report; personas are
+provisional, and geography or platform demographics never establish diaspora identity.
+
 ## Narrative family routing (2026-09-29)
 
 Every piece belongs to one of six narrative families — `name-investigation`,
@@ -428,17 +440,15 @@ reading comfort. Paragraph boundaries carry editorial structure, not cut points.
   plus de vingt mots, **linguiste, auteur ou livre en tête de phrase**) ; il ne
   voit pas si une phrase est simple, cela reste à l'auteur et à la validation de
   l'opérateur.
-- **Les peuples parlent d'abord, la source vient après** (règle de l'opérateur du
-  2026-09-28, `CLAUDE.md`, `### Reader-facing register`). La narration, les
-  cartes et les légendes disent ce que les peuples se disent et se donnent
-  (« Les Peuls les appellent Malinké. »), jamais « Selon Delafosse… », « Le
-  linguiste X note… », « Un livre de 1912 montre… », « Un auteur pense… ». La
-  source reste due, à chaque fois, mais **après** : carte de source en fin de
-  scène, ligne de source de la légende. La prudence d'une affirmation contestée
-  reste, portée par une date, un temps ou « une explication dit que… », et non
-  par le nom du savant. Citer un livre, c'est avouer qu'on n'est pas allé vers les
-  gens : le projet leur pose la question sur les réseaux, et l'opérateur peut aller
-  les voir. `check-narration.mjs` refuse ces formes (`attribution-en-tete`).
+- **The subject comes first; its reference follows.** Narration, cards and captions
+  explain the subject without leading on a scholar or book as borrowed authority.
+  Keep contested explanations qualified. A publication year is not an event date,
+  and a past tense alone does not express uncertainty. A cited book does not imply
+  either the presence or absence of fieldwork; claim direct consultation only when
+  it happened. Oral provenance stays identifiable, with its actual carrier and
+  context. Follow `docs/editorial/reader-facing-register.md`, including its exception
+  for an author, book or quoted speaker that is the actual subject. The lexical
+  `attribution-en-tete` check cannot replace this semantic review.
 - Les trois champs publiés verbatim au lecteur ne portent **aucune mention
   interne** : ni « à nommer », ni « à confirmer », ni « à compléter ». Ce sont
   des messages à l'opérateur, et ils bloquent la publication au lieu de

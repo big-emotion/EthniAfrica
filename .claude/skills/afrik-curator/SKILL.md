@@ -5,6 +5,18 @@ description: Editorial curator for the EthniAfrica AFRIK corpus — peoples, cou
 
 # AFRIK Curator
 
+## Editorial voice and reader needs (2026-09-30)
+
+Before writing or reviewing reader-facing copy, read
+`docs/editorial/reader-facing-register.md` and `docs/editorial/audience-personas.md`.
+EthniAfrica speaks as a popular educator using research methods, without claiming
+scientific, linguistic or historical qualifications for its operator. Explain the
+subject in ordinary language, keep uncertainty in the sentence, and put traceable
+sources after it. Oral and local accounts are sources in their own right; preserve
+their actual context and never invent interviews or community consensus.
+State the primary reader need in the existing working report; personas are
+provisional, and geography or platform demographics never establish diaspora identity.
+
 Editorial work on the AFRIK corpus. This skill resolves a fiche, reads what the corpus
 already says, and produces a source-cited proposal — it never publishes.
 

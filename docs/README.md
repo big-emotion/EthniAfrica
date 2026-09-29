@@ -50,6 +50,11 @@ were referenced by nothing at all, two of them written that same week.
 
 ## Editorial — doctrine, audits and essays
 
+- [Editorial voice review — 2026-09-30](editorial/editorial-voice-review-2026-09-30.md)
+- [Editorial personas](editorial/audience-personas.md)
+- [Editorial measurement protocol](audience/editorial-measurement.md)
+- [Audience audit — 2026-09-30](audience/audit-2026-09-30.md)
+
 - [Audit — where the publication rules live](editorial/audit-doctrine-publication-2026-09-17.md)
 - [Editorial classification status](editorial/classification-status.md)
 - [Congo dossier publication notes](editorial/congo-dossier-publication-notes.md)
