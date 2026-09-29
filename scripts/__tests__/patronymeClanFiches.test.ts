@@ -63,8 +63,19 @@ describe("ETNI-1684 first clan-name dossiers", () => {
         nameSystem: "clan_name",
         transmissionMode,
         designatedSocialUnit: "clan",
-        peoples: [{ peopleId, status: "attested" }],
       });
+      // Same floor as the countries below: the people the coverage queue
+      // attested stays attested, and research may add others (a supposed link
+      // included) as long as each carries its own source.
+      expect(raw.peoples, `${id}: peoples`).toContainEqual(
+        expect.objectContaining({ peopleId, status: "attested" })
+      );
+      for (const people of raw.peoples) {
+        expect(
+          people.sourceRefs?.length,
+          `${id}: ${people.peopleId} needs a source`
+        ).toBeGreaterThan(0);
+      }
       expect(
         raw.spellings.map(({ spelling }: { spelling: string }) => spelling)
       ).toContain(name);

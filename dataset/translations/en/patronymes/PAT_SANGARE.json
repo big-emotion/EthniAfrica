@@ -15,7 +15,9 @@
           "countryId": "MLI",
           "sourceRefs": [
             "bensignor-1997-oumou-sangare",
-            "iffono-wassoulou-tradition"
+            "iffono-wassoulou-tradition",
+            "interpeace-autoportrait-mali-2015",
+            "sy-2015-ethnies-langues-mali"
           ]
         },
         {
@@ -46,7 +48,7 @@
     "oralTraditions": [],
     "writtenChronicles": [
       {
-        "claim": "In their study of Guinean government elites, Rainer and Trebbi describe bearers of Sangaré as originating from the Wassoulou: their consultant classifies them as Fulani linguistically and culturally integrated into the Malinke, while sources diverge between the two affiliations.",
+        "claim": "A study of Guinean government elites describes the bearers of Sangaré as originating from Wassoulou: its consultant classes them as Fulani integrated linguistically and culturally into the Malinke, while the sources differ between the two affiliations.",
         "claimStatus": "contested",
         "sourceRefs": ["rainer-trebbi-2012-political-power"]
       },
@@ -62,6 +64,19 @@
       },
       {
         "claim": "A study of the Fulani of western Burkina Faso ranks Sangaré among the four main Fulani clans, alongside Diallo, Diakité and Sidibé, and describes the Sidibé/Sangaré pair as one of the two founding pairs of Fulani identity, united by a joking relationship on account of this mythical kinship.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
+      },
+      {
+        "claim": "The name is among the Fulani family names of Mali, where the Foula of Wassoulou, in the regions of Koulikoro, Kita, Bafoulabé and Sikasso, claim membership of the greater Fulani family although they no longer speak the language.",
+        "claimStatus": "claimed",
+        "sourceRefs": [
+          "interpeace-autoportrait-mali-2015",
+          "sy-2015-ethnies-langues-mali"
+        ]
+      },
+      {
+        "claim": "Among the Fulani of western Burkina Faso, the Bingaabe are classed within the Sangaré and maintain a joking relationship with the Toroobe.",
         "claimStatus": "claimed",
         "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
       }
@@ -87,7 +102,9 @@
         "rainer-trebbi-2012-political-power",
         "bensignor-1997-oumou-sangare",
         "iffono-wassoulou-tradition",
-        "diallo-2006-plaisanterie-peuls"
+        "diallo-2006-plaisanterie-peuls",
+        "interpeace-autoportrait-mali-2015",
+        "sy-2015-ethnies-langues-mali"
       ]
     },
     {
@@ -106,7 +123,9 @@
       "status": "attested",
       "sourceRefs": [
         "bensignor-1997-oumou-sangare",
-        "iffono-wassoulou-tradition"
+        "iffono-wassoulou-tradition",
+        "interpeace-autoportrait-mali-2015",
+        "sy-2015-ethnies-langues-mali"
       ]
     },
     {
@@ -129,7 +148,7 @@
     },
     {
       "countryId": "SEN",
-      "status": "supposed",
+      "status": "attested",
       "sourceRefs": ["forebears-sangare"]
     }
   ],
@@ -165,7 +184,15 @@
   ],
   "casteOrSocialFunction": null,
   "bearers": [],
-  "homonyms": [],
+  "homonyms": [
+    {
+      "label": "Sangare (Inde)",
+      "entityType": "patronyme",
+      "entityId": null,
+      "distinction": "The same spelling is borne in India, where an aggregator counts about 5,400 bearers and transcribes it in Marathi. No source consulted links it to the West African family name; it is noted so that the two are not confused.",
+      "sourceRefs": ["forebears-sangare"]
+    }
+  ],
   "sources": [
     {
       "sourceKey": "rainer-trebbi-2012-political-power",
@@ -197,7 +224,7 @@
       "url": "https://forebears.io/fr/surnames/sangare",
       "tier": "unverified",
       "source_kind": "repository",
-      "notes": "Aggregator website of family-name statistics, with no verifiable independent editorial review. Cited only for the name's stated distribution by country (Mali, Côte d'Ivoire, Guinea, Senegal), for information only and not as evidence of ethnic origin."
+      "notes": "Aggregator site of surname statistics, with no verifiable independent editorial review; data from 2014, consulted in an archived copy from 2024. It counts about 464,000 bearers: Mali 265,431, Côte d'Ivoire 96,057, Guinea 51,571, Burkina Faso 36,913, Senegal 2,775, Togo 525, Ghana 416, and 5,416 in India, where the page transcribes the spelling in Marathi. Cited for the distribution and to flag the Indian homonym, not as evidence of ethnic origin."
     },
     {
       "sourceKey": "diallo-2006-plaisanterie-peuls",
@@ -238,6 +265,22 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Canut, Cécile, and Smith, Étienne, Cahiers d'études africaines, no. 184, 2006, p. 687 ff. Cited for the caution it raises: the idea that joking kinship soothes conflicts is treated there as a hypothesis inherited from Radcliffe-Brown and taken up by conflict-resolution studies, hence as a discourse to be analysed rather than a measured effect. The start page is verified, the end page is not."
+    },
+    {
+      "sourceKey": "interpeace-autoportrait-mali-2015",
+      "title": "Autoportrait du Mali — Les Obstacles à la Paix",
+      "url": "https://www.interpeace.org/wp-content/uploads/2015/03/2015_03_02_Mali_Autoportrait_FR.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Action-research report by the Institut malien de recherche action pour la paix with Interpeace, in partnership with the United Nations, March 2015. Its chapter on sociocultural diversity gives, for each major group in Mali, a few family names followed by \"etc.\": the list is illustrative, with no stated method of compilation or source. It attests that a name is borne within a group, not where it comes from."
+    },
+    {
+      "sourceKey": "sy-2015-ethnies-langues-mali",
+      "title": "Études synchroniques des ethnies et des langues au Mali",
+      "url": "https://arlap.hypotheses.org/3726",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Salif Sy, ARLAP research blog (Hypotheses.org), 18 February 2015. Post by a doctoral student in African languages, without peer review, which lists Diallo, Diakité, Sidibé and Sangaré among the names identified as Fulani in Mali. Cited to attest the name in this group and in this country, not for its origin."
     }
   ],
   "gaps": [
@@ -248,36 +291,36 @@
     {
       "fieldPath": "bearers",
       "reason": "A widely known contemporary bearer of this name is well documented by the press and by research, but no statement of her own on her lineage origin has been found; in the absence of such a statement in her own words, no living bearer is named here."
-    },
-    {
-      "fieldPath": "homonyms",
-      "reason": "No homonymous entity of distinct origin has been found for this name at the conclusion of the research conducted."
     }
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-09-09T09:28:22.334Z",
-    "model": "claude-sonnet-5",
-    "sourceHash": "035fa04b3a41b0cb554ad6b547861851f353c9f91aa0a70c0a7132d662ebc760",
+    "translatedAt": "2026-09-29T16:11:21.551Z",
+    "model": "claude-sonnet-5-5",
+    "sourceHash": "bdb66ef484bace5af120050bbb6734eaca9fb3e74f7cf7c4c55c69b2616ebe02",
     "fieldHashes": {
-      "origin.writtenChronicles[0].claim": "939f7ca056bfb9ef",
+      "origin.writtenChronicles[0].claim": "97f2af673e273259",
       "origin.writtenChronicles[1].claim": "25e300441ef39dd3",
       "origin.writtenChronicles[2].claim": "35ef37b8ed6e55c1",
       "origin.writtenChronicles[3].claim": "83f58e7387fd318a",
+      "origin.writtenChronicles[4].claim": "75cc1e360e3a7fc1",
+      "origin.writtenChronicles[5].claim": "570b590d453e1e02",
       "origin.linguisticReconstructions[0].claim": "14f92c91d5d99f18",
       "origin.linguisticReconstructions[1].claim": "02febb54f2c6cd83",
+      "homonyms[0].distinction": "7a6b8cc14a416b8d",
       "sources[0].notes": "2587e7528589510e",
       "sources[1].notes": "d688328801cd7bec",
       "sources[2].notes": "727c992adb261959",
-      "sources[3].notes": "762b148ae92a7e5f",
+      "sources[3].notes": "e618076b8381a445",
       "sources[4].notes": "19ea3962355fcc15",
       "sources[5].notes": "656711ff9f8f53a2",
       "sources[6].notes": "5c799852f4ca1e95",
       "sources[7].notes": "2c14e48c42d56e18",
       "sources[8].notes": "79986afda62f44db",
+      "sources[9].notes": "a95c461966922844",
+      "sources[10].notes": "f747f9232d8af679",
       "gaps[0].reason": "97fb56c2cfa7d8e4",
-      "gaps[1].reason": "e64a1c2b499e70ca",
-      "gaps[2].reason": "69b013b4c2e8f44d"
+      "gaps[1].reason": "e64a1c2b499e70ca"
     },
     "reviewRequired": [
       "origin.linguisticReconstructions[0].claim",

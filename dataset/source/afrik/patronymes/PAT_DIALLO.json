@@ -26,6 +26,34 @@
         {
           "countryId": "GAB",
           "sourceRefs": ["corpus-ppl-fula-foret-organisation"]
+        },
+        {
+          "countryId": "MLI",
+          "sourceRefs": [
+            "interpeace-autoportrait-mali-2015",
+            "sy-2015-ethnies-langues-mali",
+            "forebears-diallo"
+          ]
+        },
+        {
+          "countryId": "BFA",
+          "sourceRefs": ["diallo-2006-plaisanterie-peuls", "forebears-diallo"]
+        },
+        {
+          "countryId": "SEN",
+          "sourceRefs": ["forebears-diallo"]
+        },
+        {
+          "countryId": "MRT",
+          "sourceRefs": ["forebears-diallo"]
+        },
+        {
+          "countryId": "GNB",
+          "sourceRefs": ["forebears-diallo"]
+        },
+        {
+          "countryId": "GMB",
+          "sourceRefs": ["forebears-diallo"]
         }
       ]
     },
@@ -37,15 +65,57 @@
           "sourceRefs": ["bluett-1734-job-jallo"]
         }
       ]
+    },
+    {
+      "spelling": "Jalloh",
+      "attestations": [
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["slate-kelly-2011-diallo"]
+        },
+        {
+          "countryId": "SLE",
+          "sourceRefs": ["forebears-jalloh", "hanks-dafn2-diallo"]
+        },
+        {
+          "countryId": "LBR",
+          "sourceRefs": ["forebears-jalloh"]
+        },
+        {
+          "countryId": "GMB",
+          "sourceRefs": ["forebears-jalloh"]
+        }
+      ]
+    },
+    {
+      "spelling": "Jallow",
+      "attestations": [
+        {
+          "countryId": "GMB",
+          "sourceRefs": ["forebears-jallow", "hanks-dafn2-diallo"]
+        },
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["forebears-jallow"]
+        }
+      ]
     }
   ],
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
+    "oralTraditions": [
+      {
+        "claim": "Chez les Peuls de l'ouest du Burkina Faso, les Diallo et les Diakité forment l'un des deux couples qui composent le noyau mythique de l'identité peule. Un récit dit que, dans une fuite après une défaite, un Diallo ranime un Diakité défaillant en lui faisant manger une partie de sa propre chair, et que les deux clans ont noué alliance à cette occasion.",
+        "claimStatus": "claimed",
+        "griot": "Informateurs peuls de l'ouest du Burkina Faso, non nommés dans l'article",
+        "transcription": "Récit résumé par l'auteur, non transcrit mot à mot : Diallo, Youssouf, « Identités et relations de plaisanterie chez les Peuls de l'ouest du Burkina Faso », Cahiers d'études africaines, n° 184, 2006, p. 779-794.",
+        "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
+      }
+    ],
     "writtenChronicles": [
       {
-        "claim": "La plus ancienne attestation écrite du nom relevée lors de la passe date de 1734. Bluett y consigne que les compatriotes d'Ayuba Suleiman Diallo « se désignent par les noms de leurs ancêtres » et remontent plusieurs degrés, « bien qu'ils aient aussi des noms de famille pour distinguer leurs familles particulières » ; il donne pour le même homme la chaîne patronymique HYUBA, BOON SALUMENA, BOON HIBRAHEMA — Ayuba fils de Suleiman fils d'Ibrahim — puis, distinctement, « The Surname of his Family is Jallo ». Le nom est donc déjà, en 1734, un nom de famille héréditaire tenu pour distinct de la filiation énoncée degré par degré.",
+        "claim": "La plus ancienne attestation écrite du nom relevée dans les sources consultées date de 1734. Bluett y consigne que les compatriotes d'Ayuba Suleiman Diallo « se désignent par les noms de leurs ancêtres » et remontent plusieurs degrés, « bien qu'ils aient aussi des noms de famille pour distinguer leurs familles particulières » ; il donne pour le même homme la chaîne patronymique HYUBA, BOON SALUMENA, BOON HIBRAHEMA — Ayuba fils de Suleiman fils d'Ibrahim — puis, distinctement, « The Surname of his Family is Jallo ». Le nom est donc déjà, en 1734, un nom de famille héréditaire tenu pour distinct de la filiation énoncée degré par degré.",
         "claimStatus": "established",
         "sourceRefs": ["bluett-1734-job-jallo"]
       },
@@ -53,6 +123,16 @@
         "claim": "Bluett situe la famille à Boonda, dans le Bundu, sur le haut Sénégal, et rapporte que le grand-père d'Ayuba, Ibrahim, y avait fondé la ville une cinquantaine d'années plus tôt sous le règne de Bubaker, roi du Futa, cumulant la propriété éminente du lieu et la charge de grand prêtre (alpha) ; il y avait institué que nul s'y réfugiant ne pût être réduit en esclavage. La géographie de Bluett est celle des cartes de son temps et se contredit elle-même : la revendication clanique du Fouta-Djalon et cette lignée du Bundu ne sont pas rapportées l'une à l'autre par une source consultée.",
         "claimStatus": "claimed",
         "sourceRefs": ["bluett-1734-job-jallo"]
+      },
+      {
+        "claim": "L'ensemble peul de l'ouest du Burkina Faso se compose de quatre clans principaux, Diallo, Diakité, Sidibé et Sangaré. Les Diallo et les Diakité forment l'un des deux couples du noyau mythique de l'identité peule, en relation d'équivalence, et les Diallo sont aussi tenus pour homologues des Diko, avec qui ils entretiennent une relation de plaisanterie.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
+      },
+      {
+        "claim": "Presque tous les Fulbe de Guinée portent l'un de quatre noms de famille : Diallo, aussi écrit Jalloh, Barry, Balde, aussi écrit Bah, et Sow. Le nom Diallo couvre environ un dixième de la population guinéenne, sans être plus répandu que les trois autres.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["slate-kelly-2011-diallo"]
       }
     ],
     "linguisticReconstructions": [
@@ -60,6 +140,16 @@
         "claim": "Le nom relève des quatre clans par lesquels les Fulɓe se reconnaissent — Diallo, Bâ, Barry et Sow — dont la quadripartition structure l'identification clanique du Fouta.",
         "claimStatus": "claimed",
         "sourceRefs": ["bolaaro-clans-peuls"]
+      },
+      {
+        "claim": "Un dictionnaire de noms de famille range Diallo parmi les noms de clan des Peuls et déclare son étymologie inexpliquée. Il note que le nom se rencontre aussi chez d'autres peuples, les Bambara par exemple, et donne Jalloh, surtout en Sierra Leone, et Jallow, surtout en Gambie, pour des variantes du même nom.",
+        "claimStatus": "established",
+        "sourceRefs": ["hanks-dafn2-diallo"]
+      },
+      {
+        "claim": "Le dictionnaire des noms claniques bambara n'a pas d'entrée pour Jalo, mais il cite ce nom comme partenaire de plaisanterie des clans Bagayogo, Dansoko et Janka, et comme équivalent de Dikko, entrée peule, toucouleur et dogon dont l'équivalence est marquée d'un doute, et de Suntura, entrée peule.",
+        "claimStatus": "established",
+        "sourceRefs": ["bamadaba-jamuw"]
       }
     ]
   },
@@ -68,6 +158,21 @@
       "peopleId": "PPL_FULA_FORET",
       "status": "attested",
       "sourceRefs": ["corpus-ppl-fula-foret-organisation"]
+    },
+    {
+      "peopleId": "PPL_FULA",
+      "status": "attested",
+      "sourceRefs": [
+        "diallo-2006-plaisanterie-peuls",
+        "interpeace-autoportrait-mali-2015",
+        "sy-2015-ethnies-langues-mali",
+        "slate-kelly-2011-diallo"
+      ]
+    },
+    {
+      "peopleId": "PPL_BAMBARA",
+      "status": "attested",
+      "sourceRefs": ["hanks-dafn2-diallo"]
     }
   ],
   "countries": [
@@ -94,15 +199,68 @@
     {
       "countryId": "SEN",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue", "bluett-1734-job-jallo"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "bluett-1734-job-jallo",
+        "forebears-diallo"
+      ]
     },
     {
       "countryId": "MRT",
-      "status": "supposed",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue", "forebears-diallo"]
+    },
+    {
+      "countryId": "MLI",
+      "status": "attested",
+      "sourceRefs": [
+        "interpeace-autoportrait-mali-2015",
+        "sy-2015-ethnies-langues-mali",
+        "forebears-diallo"
+      ]
+    },
+    {
+      "countryId": "BFA",
+      "status": "attested",
+      "sourceRefs": ["diallo-2006-plaisanterie-peuls", "forebears-diallo"]
+    },
+    {
+      "countryId": "GNB",
+      "status": "attested",
+      "sourceRefs": ["forebears-diallo"]
+    },
+    {
+      "countryId": "GMB",
+      "status": "attested",
+      "sourceRefs": ["forebears-diallo", "forebears-jallow"]
+    },
+    {
+      "countryId": "SLE",
+      "status": "attested",
+      "sourceRefs": ["forebears-jalloh"]
+    },
+    {
+      "countryId": "LBR",
+      "status": "attested",
+      "sourceRefs": ["forebears-jalloh"]
     }
   ],
-  "alliances": [],
+  "alliances": [
+    {
+      "targetPatronymeId": "PAT_DIAKITE",
+      "allianceType": "équivalence",
+      "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
+    },
+    {
+      "targetPatronymeId": "PAT_BAGAYOKO",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    }
+  ],
   "casteOrSocialFunction": null,
   "bearers": [
     {
@@ -144,13 +302,97 @@
       "tier": "referenced",
       "source_kind": "archive",
       "notes": "Bluett, Thomas, Londres, 1734. Document primaire : le récit dicté par Ayuba Suleiman Diallo à Bluett pendant sa captivité, imprimé de son vivant. C'est la plus ancienne attestation écrite connue du nom, et elle est explicite sur le système : « The Surname of his Family is Jallo », posé en regard de la chaîne patronymique « HYUBA, BOON SALUMENA, BOON HIBRAHEMA ». L'URL est l'édition d'extraits du National Humanities Center (2009), seule version dont le texte a pu être lu intégralement ici ; le texte complet est à Documenting the American South (docsouth.unc.edu/neh/bluett/menu.html), dont le serveur a refusé la connexion lors de ce travail. Sections I et III vérifiées mot à mot. Source coloniale à lire comme telle : Bluett écrit en anglais, en abolitionniste anglican, à propos d'un homme qu'il a contribué à affranchir, et la graphie « Jallo » est la sienne."
+    },
+    {
+      "sourceKey": "interpeace-autoportrait-mali-2015",
+      "title": "Autoportrait du Mali — Les Obstacles à la Paix",
+      "url": "https://www.interpeace.org/wp-content/uploads/2015/03/2015_03_02_Mali_Autoportrait_FR.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Rapport de recherche-action de l'Institut malien de recherche action pour la paix avec Interpeace, en partenariat avec les Nations unies, mars 2015. Son chapitre sur les diversités socioculturelles donne, pour chaque grand groupe du Mali, quelques noms de famille suivis de « etc. » : la liste est illustrative, sans méthode d'établissement ni source indiquée. Elle atteste qu'un nom est porté dans un groupe, non d'où il vient."
+    },
+    {
+      "sourceKey": "sy-2015-ethnies-langues-mali",
+      "title": "Études synchroniques des ethnies et des langues au Mali",
+      "url": "https://arlap.hypotheses.org/3726",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Salif Sy, carnet de recherche ARLAP (Hypotheses.org), 18 février 2015. Billet d'un doctorant en langues africaines, sans relecture par des pairs, qui range Diallo, Diakité, Sidibé et Sangaré parmi les noms identifiés comme peuls au Mali. Cité pour attester le nom dans ce groupe et dans ce pays, non pour son origine."
+    },
+    {
+      "sourceKey": "diallo-2006-plaisanterie-peuls",
+      "title": "Identités et relations de plaisanterie chez les Peuls de l'ouest du Burkina Faso",
+      "url": "https://journals.openedition.org/etudesafricaines/15399",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Youssouf Diallo, Cahiers d'études africaines, vol. 46, n° 184, 2006, p. 779-794 (DOI 10.4000/etudesafricaines.15399). Revue à comité de lecture ; l'auteur était alors rattaché au Max-Planck-Institut für ethnologische Forschung. L'enquête de terrain porte sur les Peuls de l'ouest du Burkina Faso, ce qui atteste les noms dans ce pays. L'article dit que l'ensemble peul se compose de quatre clans principaux (Diallo, Diakité, Sidibé, Sangaré), que les couples Diallo/Diakité et Sidibé/Sangaré, noyau mythique de l'identité peule, sont en relation d'équivalence, et que Diallo/Diko, Diakité/Ba et Sidibé/Sangaré sont homologues et entretiennent à ce titre des relations de plaisanterie (dendiraagu). Il rapporte aussi un récit d'alliance entre un Diallo et un Diakité."
+    },
+    {
+      "sourceKey": "canut-2002-senankuya",
+      "title": "Pouvoir, places et filiation : les senankuya au Mali",
+      "url": "https://journals.openedition.org/praxematique/2307",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Canut, Cécile, Cahiers de praxématique, numéro 38, 2002, p. 175-197. Enquête de terrain au Mali. Elle énonce ce que le pacte oblige : la relation vaut à perpétuité pour toute la descendance des deux lignées, le mariage entre elles est prohibé — diversement appliqué aujourd'hui, précise-t-elle — et l'entraide y est due sans réserve. Citée pour l'obligation elle-même ; elle ne nomme pas la paire de cette fiche, que portent les entrées citées à côté d'elle."
+    },
+    {
+      "sourceKey": "canut-smith-2006-pactes",
+      "title": "Pactes, alliances et plaisanteries. Pratiques locales, discours global",
+      "url": "https://doi.org/10.4000/etudesafricaines.6198",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Canut, Cécile, et Smith, Étienne, Cahiers d'études africaines, numéro 184, 2006, p. 687 et suivantes. Citée pour la mise en garde qu'elle porte : l'idée que la parenté à plaisanterie apaiserait les conflits y est traitée comme une hypothèse héritée de Radcliffe-Brown et reprise par les études sur la résolution des conflits, donc comme un discours à analyser et non comme un effet mesuré. La page de début est vérifiée, la page de fin ne l'est pas."
+    },
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Jalo n'y a pas d'entrée propre : le nom est cité comme partenaire de plaisanterie (marqueur \\sn, lu senankun) par les entrées Bagayogo, Dansoko et Janka, et comme équivalent (marqueur \\eq) sous les entrées Dikko, avec un point d'interrogation et une diffusion marquée peule, toucouleur et dogon, et Suntura, marquée peule. Les liens \\sn ne sont pas systématiquement réciproques d'une entrée à l'autre : chaque paire est donc citée d'après l'entrée qui la porte."
+    },
+    {
+      "sourceKey": "hanks-dafn2-diallo",
+      "title": "Dictionary of American Family Names, 2e édition — entrées Diallo, Jalloh et Jallow",
+      "url": "https://en.geneanet.org/surnames/JALLOW",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Patrick Hanks (dir.), Dictionary of American Family Names, 2e éd., Oxford University Press, 2022 ; consulté par la page Geneanet qui reproduit les entrées avec leur mention de source. Ouvrage de référence : Diallo y est le nom du clan Diallo des Peuls, d'étymologie inexpliquée, aussi porté chez d'autres peuples comme les Bambara ; Jalloh et Jallow y sont des variantes ouest-africaines de Diallo."
+    },
+    {
+      "sourceKey": "slate-kelly-2011-diallo",
+      "title": "Does Dominique Strauss-Kahn's accuser, Nafissatou Diallo, have the most common surname in Guinea?",
+      "url": "https://slate.com/news-and-politics/2011/07/does-dominique-strauss-kahn-s-accuser-nafissatou-diallo-have-the-most-common-surname-in-guinea.html",
+      "tier": "referenced",
+      "source_kind": "unknown",
+      "notes": "Maura Kelly, Slate, 27 juillet 2011. Article de presse qui s'appuie sur plusieurs spécialistes cités (Bureau du recensement des États-Unis, Family Names Research Project, Yale, American Name Society). Il dit que presque tous les Fulbe portent l'un de quatre noms — Diallo (aussi écrit Jalloh), Barry, Balde (aussi écrit Bah) et Sow — que Diallo couvre environ 10 % de la population guinéenne, et que près de deux Guinéens sur cinq sont Fulbe."
+    },
+    {
+      "sourceKey": "forebears-diallo",
+      "title": "Diallo — origine, signification et répartition du nom",
+      "url": "https://forebears.io/fr/surnames/diallo",
+      "tier": "unverified",
+      "source_kind": "repository",
+      "notes": "Site agrégateur de statistiques patronymiques, sans revue éditoriale indépendante vérifiable ; données de 2014, consultées dans une copie archivée de 2023. Il compte environ 3,76 millions de porteurs : Guinée 1 964 007, Sénégal 668 185, Mali 536 347, Burkina Faso 359 891, Mauritanie 83 187, Côte d'Ivoire 42 431, Guinée-Bissau 14 260, Gambie 4 558, Liberia 1 187, et des effectifs hors d'Afrique, dont la France (19 312), qui ne sont pas repris dans les attestations. Cité pour la répartition seulement."
+    },
+    {
+      "sourceKey": "forebears-jalloh",
+      "title": "Jalloh — origine, signification et répartition du nom",
+      "url": "https://forebears.io/fr/surnames/jalloh",
+      "tier": "unverified",
+      "source_kind": "repository",
+      "notes": "Site agrégateur de statistiques patronymiques, sans revue éditoriale indépendante vérifiable ; données de 2014, consultées dans une copie archivée de 2024. Il compte environ 218 000 porteurs : Sierra Leone 210 176, Liberia 2 115, Gambie 1 470, Guinée 130. Cité pour la répartition de cette graphie seulement."
+    },
+    {
+      "sourceKey": "forebears-jallow",
+      "title": "Jallow — origine, signification et répartition du nom",
+      "url": "https://forebears.io/fr/surnames/jallow",
+      "tier": "unverified",
+      "source_kind": "repository",
+      "notes": "Site agrégateur de statistiques patronymiques, sans revue éditoriale indépendante vérifiable ; données de 2014, consultées dans une copie archivée de 2024. Il compte environ 101 000 porteurs : Gambie 89 958, Guinée 5 821, Sénégal 94. Cité pour la répartition de cette graphie seulement."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "alliances",
-      "reason": "Le dendiraagal (parenté à plaisanterie peule) est documenté comme institution mais aucune paire nommant ce clan n'a été trouvée."
-    },
     {
       "fieldPath": "casteOrSocialFunction",
       "reason": "Bluett donne à la lignée d'Ayuba une charge religieuse héréditaire — son grand-père puis son père sont alpha, grand prêtre de Boonda, et lui-même assistait son père — mais elle s'attache à une famille précise du Bundu, non au nom : la source ne dit rien d'une fonction que porteraient les Jallo comme tels. Les castes de spécialistes du Fouta portent par ailleurs d'autres noms."

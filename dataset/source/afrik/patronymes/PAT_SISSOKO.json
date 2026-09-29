@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Fiche générée depuis la file d'attente des candidats (vague 1 du plan de couverture anthroponymique). Elle ne porte aucune recherche : ne pas étendre ses affirmations sans appliquer le protocole docs/runbooks/anthroponym-fiche-research.md."
+    "directives": "Dossier fondé sur l'entrée du dictionnaire des noms claniques bambara et sur un fil de discussion communautaire soninké ; le relevé de couverture n'étaie plus que les deux graphies d'origine et l'attestation au Mali. Aucune étymologie n'est retenue, faute de source linguistique ; ne pas étendre les affirmations sans source dédiée."
   },
   "id": "PAT_SISSOKO",
   "nameMain": "Sissoko",
@@ -11,42 +11,110 @@
     {
       "spelling": "Sissoko",
       "attestations": [
-        { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["afrik-candidate-queue", "bamadaba-jamuw"]
+        }
       ]
     },
     {
       "spelling": "Cissoko",
       "attestations": [
-        { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
+      ]
+    },
+    {
+      "spelling": "Sisoko",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
       ]
     }
   ],
-  "transmissionMode": "other",
+  "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
+        "claimStatus": "established",
+        "sourceRefs": ["jansen-sunjata-paradigm"]
+      },
+      {
+        "claim": "Le dictionnaire des jamuw a une entrée Sisɔkɔ, avec la variante Sisoko. Il donne trois noms de clan comme équivalents de celui-ci : Dantɛ, Dunbiya (Doumbia) et Kuruma (Kouroma). Ce sont des noms que le dictionnaire tient pour un même jamu porté dans d'autres lignées ; il ne dit pas quelle forme est la plus ancienne.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
+      },
+      {
+        "claim": "Le nom a deux formes féminines. Le dictionnaire donne Danba pour les familles de griots (jèli) et Sakiliba pour les familles libres (hɔ́rɔn). L'entrée Sakiliba la glose comme le jamu féminin qui correspond à Dunbuya, l'un des équivalents que l'entrée Sisɔkɔ elle-même énumère. Un contributeur d'un forum communautaire soninké donne de son côté Sakiliba, Boula, Sora et Damba comme les formes féminines de Sissoko.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw", "soninkara-forum-nom-de-famille"]
+      }
+    ]
   },
   "peoples": [
     {
-      "peopleId": "PPL_SONINKE",
+      "peopleId": "PPL_MALINKE",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["bamadaba-jamuw"]
+    },
+    {
+      "peopleId": "PPL_BAMBARA",
+      "status": "attested",
+      "sourceRefs": ["bamadaba-jamuw"]
+    },
+    {
+      "peopleId": "PPL_SONINKE",
+      "status": "supposed",
+      "sourceRefs": ["soninkara-forum-nom-de-famille"]
     }
   ],
   "countries": [
     {
       "countryId": "MLI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "bamadaba-jamuw"]
     }
   ],
   "alliances": [],
-  "casteOrSocialFunction": null,
+  "casteOrSocialFunction": {
+    "value": "Le dictionnaire des jamuw donne à l'entrée trois statuts : jèli (griot), nùmu (forgeron) et tontigi, un terme qu'il glose à l'entrée d'un autre nom comme celui des cultivateurs. Des mentions d'aire suivent les deux derniers : chez les Maninka après nùmu, chez les Bamana après tontigi. Un même nom recouvre donc des conditions sociales différentes selon l'aire et la lignée, et aucun de ces statuts n'est attribué à toutes les familles qui le portent.",
+    "sourceRefs": ["bamadaba-jamuw"]
+  },
   "bearers": [],
   "homonyms": [],
   "sources": [
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. Le fichier ne livre aucune légende de ses marqueurs. L'entrée Sisɔkɔ (variante Sisoko) porte trois statuts (jèli, nùmu, tontigi) suivis de mentions d'aire explicites (chez les Maninka, chez les Bamana), trois équivalences (Dantɛ, Dunbiya, Kuruma) et deux formes féminines (Danba chez les griots, Sakiliba chez les familles libres). Trois marqueurs de groupe non légendés y figurent aussi ; seul celui qui désigne les Soninké est confirmé, par l'entrée du grand regroupement soninké dit Wago, et cette entrée n'énumère pas ce nom parmi les siens. Aucun marqueur d'alliance de senankuya ne figure à l'entrée."
+    },
+    {
+      "sourceKey": "jansen-sunjata-paradigm",
+      "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
+      "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
+    },
+    {
+      "sourceKey": "soninkara-forum-nom-de-famille",
+      "title": "Nom de famille ?",
+      "url": "https://www.soninkara.com/forums/de-l-origine-des-soninke/nom-de-famille-23.html",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Fil de discussion du forum du portail communautaire Soninkara.com, tenu du 21 juin au 5 juillet 2006 par des contributeurs sous pseudonyme, consulté directement. L'un d'eux range Sakiliba, Boula, Sora et Damba comme formes féminines de Sissoko sans en donner le sens. Le fil ne dit pas d'où vient le nom ; plusieurs intervenants y rappellent qu'un même nom peut se rencontrer dans des groupes et des statuts différents selon les régions et les histoires familiales."
+    },
     {
       "sourceKey": "afrik-candidate-queue",
       "title": "Relevé de couverture anthroponymique EthniAfrica",
@@ -59,27 +127,31 @@
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "L'origine et le sens de ce nom ne sont pas établis dans les sources consultées. Des contenus grand public en avancent, mais ils sont incompatibles entre eux (un animal, un peuple ou une région, un savoir) et aucun ne cite d'étude linguistique : nous n'en retenons aucun."
+    },
+    {
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Nous n'avons trouvé aucune tradition orale rapportée par un informateur nommé sur l'origine de ce nom."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Le dictionnaire des jamuw nomme les Maninka et les Bamana à l'entrée, mais pas les Soninké, et le regroupement soninké dit Wago n'y compte pas ce nom. Le rattachement aux Soninké ne repose que sur un fil de discussion communautaire : il est donné comme supposé."
+    },
+    {
+      "fieldPath": "countries",
+      "reason": "Seul le Mali est étayé. Le nom se rencontre aussi dans d'autres pays de la région, mais nous n'avons pas trouvé de source chiffrée ou documentée propre à ce nom pour les autres pays."
     },
     {
       "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Le dictionnaire des jamuw donne des équivalences (Dantɛ, Doumbia, Kouroma) mais aucune relation de plaisanterie (senankuya) pour ce nom : nous n'en attestons aucune."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Nous ne nommons aucun porteur : aucune source consultée ne rattache une personne décédée à cette lignée par ses propres mots."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Les graphies Sissako, Cissokho et Sissokho existent, mais aucune source consultée ne dit qu'elles désignent la même lignée : elles ne sont pas fusionnées ici."
     }
   ]
 }
