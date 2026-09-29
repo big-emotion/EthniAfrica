@@ -1,0 +1,588 @@
+{
+  "fixture": true,
+  "_note": "DEMONSTRATION built from the operator's Lingala synthesis (2026-09-28). It reports what that synthesis contains and its limits; it is not a verified source register, not an approved episode, and its selection is synthetic. Design draft: no edition, so the ordinary ready-brief checker refuses it.",
+  "narrativeDesign": {
+    "version": 1,
+    "subject": "Lingala",
+    "scope": "DÉMONSTRATION de l'outil, pas un épisode approuvé ni une vérification historique : un reel de suivi sur le nom lingala, trois minutes de cible, à partir de la synthèse de trois ouvrages que le dossier rapporte sans les remplacer.",
+    "research": {
+      "sources": [
+        {
+          "id": "s-synthese",
+          "locator": "Synthèse « trois livres » de l'opérateur, 2026-09-28",
+          "tier": "unverified",
+          "access": "read",
+          "missing": "Ce n'est pas un registre de sources vérifié : elle rapporte trois ouvrages sans les remplacer."
+        },
+        {
+          "id": "s-livre-a",
+          "locator": "Ouvrage A, tel que rapporté par la synthèse",
+          "tier": "needs_review",
+          "access": "indirect",
+          "missing": "Identité bibliographique exacte et auteur de la préface non fournis."
+        },
+        {
+          "id": "s-livre-b",
+          "locator": "Ouvrage d'Etsio, tel que rapporté par la synthèse",
+          "tier": "needs_review",
+          "access": "indirect",
+          "missing": "Édition et pages non fournies."
+        },
+        {
+          "id": "s-livre-c",
+          "locator": "Ouvrage C, tel que rapporté par la synthèse",
+          "tier": "needs_review",
+          "access": "indirect",
+          "missing": "Ouvrage non identifié."
+        },
+        {
+          "id": "s-moukoko",
+          "locator": "Moukoko, cité par Etsio",
+          "tier": "needs_review",
+          "access": "unavailable",
+          "missing": "La page citée n'a pas été lue."
+        },
+        {
+          "id": "s-refs",
+          "locator": "Références Mimpongo et Meeuwis citées dans la synthèse",
+          "tier": "needs_review",
+          "access": "indirect",
+          "missing": "Ce que chacune affirme exactement n'a pas été lu directement."
+        }
+      ],
+      "claims": [
+        {
+          "id": "k1",
+          "kind": "language",
+          "text": "Les communautés commerçantes du fleuve, dont les Bobangi, sont décrites comme le cadre où une langue de commerce s'est formée.",
+          "sources": ["s-synthese", "s-livre-a"],
+          "status": "qualified",
+          "uncertainty": "La formation d'une langue n'est pas l'histoire de son nom."
+        },
+        {
+          "id": "k2",
+          "kind": "name-origin",
+          "text": "Un ouvrage rapporte l'origine du nom à un petit groupe Bangala ; un autre nie l'existence historique d'un tel groupe.",
+          "sources": ["s-synthese", "s-livre-a", "s-livre-c"],
+          "status": "qualified",
+          "uncertainty": "Ce que chaque auteur entend par « Bangala » et pour quelle période reste à lire ; les identités vécues aujourd'hui ne sont pas en cause."
+        },
+        {
+          "id": "k3",
+          "kind": "name-origin",
+          "text": "Une autre lecture relie le nom aux marchés et au vocabulaire du fleuve.",
+          "sources": ["s-synthese", "s-livre-c", "s-refs"],
+          "status": "qualified",
+          "uncertainty": "On ne sait pas si elle explique le sens du mot, l'usage du nom ou la formation de la langue."
+        },
+        {
+          "id": "k4",
+          "kind": "name-origin",
+          "text": "Les formes mangala, bangala, lingala et des étiquettes locales apparaissent dans différents ouvrages.",
+          "sources": ["s-synthese"],
+          "status": "qualified",
+          "uncertainty": "La présence de plusieurs formes ne prouve pas qu'une forme ait succédé à l'autre."
+        },
+        {
+          "id": "k5",
+          "kind": "event",
+          "text": "L'activité de De Boeck à Makanza est racontée avec la date de 1901, à côté de manuels de linguistique.",
+          "sources": ["s-synthese", "s-livre-c"],
+          "status": "qualified",
+          "uncertainty": "La date appartient au récit ; elle ne date ni la publication d'un manuel, ni la naissance de la langue ou de son nom."
+        },
+        {
+          "id": "k6",
+          "kind": "language",
+          "text": "La mission, l'armée et l'administration ont employé la langue.",
+          "sources": ["s-synthese", "s-livre-b"],
+          "status": "qualified",
+          "uncertainty": "Une langue commune et une contrainte peuvent coexister ; l'adoption n'est pas un consentement général."
+        },
+        {
+          "id": "k7",
+          "kind": "event",
+          "text": "Un épisode institutionnel à Boundji en 1938 est cité.",
+          "sources": ["s-synthese", "s-livre-b", "s-moukoko"],
+          "status": "gap",
+          "uncertainty": "Etsio cite Moukoko ; la page sous-jacente n'a pas été lue."
+        },
+        {
+          "id": "k8",
+          "kind": "comparison",
+          "text": "Les ouvrages distinguent un lingala de Makanza, dit classique, et un lingala de Kinshasa, parlé au quotidien.",
+          "sources": ["s-synthese", "s-livre-c"],
+          "status": "qualified",
+          "uncertainty": "Le sens des étiquettes « pur » et « facile » dans la source n'est pas défini ; le chiffre de 60 % sans méthode n'est pas repris."
+        },
+        {
+          "id": "k9",
+          "kind": "music",
+          "text": "Une préface rapporte le souvenir de la rumba, de la radio, des disques et de « bolingo na ngai ».",
+          "sources": ["s-synthese", "s-livre-a"],
+          "status": "qualified",
+          "uncertainty": "C'est un souvenir individuel, pas une mesure d'audience."
+        }
+      ],
+      "unknowns": [
+        {
+          "id": "u1",
+          "text": "Aucun individu ayant nommé le lingala n'est identifié."
+        },
+        {
+          "id": "u2",
+          "text": "La date de la première attestation écrite du nom n'est pas fournie."
+        },
+        {
+          "id": "u3",
+          "text": "On ne sait pas quelles lectures répondent à la même question (sens du mot, usage du nom, formation de la langue)."
+        },
+        {
+          "id": "u4",
+          "text": "Les dates de publication des travaux de De Boeck ne sont pas établies par un document indépendant."
+        },
+        {
+          "id": "u5",
+          "text": "Ce que « pur » et « facile » désignent dans la source n'est pas défini."
+        }
+      ]
+    },
+    "patternAssessment": [
+      {
+        "patternId": "origin-explained",
+        "disposition": "conditional",
+        "reason": "Aucune étymologie exclusive ne découle des lectures fournies ; une explication attribuée et bornée reste possible."
+      },
+      {
+        "patternId": "competing-explanations",
+        "disposition": "offered",
+        "proposals": ["L1"]
+      },
+      {
+        "patternId": "chronological-trajectory",
+        "disposition": "conditional",
+        "reason": "Il faut d'abord établir dates et usages (u2) ; on ne suppose pas mangala, puis bangala, puis lingala (k4)."
+      },
+      {
+        "patternId": "naming-perspectives",
+        "disposition": "conditional",
+        "reason": "Il faut préciser qui employait « Bangala » pour qui, à quelle période (k2)."
+      },
+      {
+        "patternId": "name-circulation",
+        "disposition": "conditional",
+        "reason": "Fleuve, institutions, villes et musique portent l'histoire de la langue ; une histoire du nom exige des preuves sur l'appellation elle-même."
+      },
+      {
+        "patternId": "turning-point",
+        "disposition": "conditional",
+        "reason": "L'épisode de Boundji est indirect (k7 : page non lue) ; le qualifier ou l'identifier avant d'en faire le centre."
+      },
+      {
+        "patternId": "historical-actor",
+        "disposition": "offered",
+        "proposals": ["L2"]
+      },
+      {
+        "patternId": "clarifying-comparison",
+        "disposition": "offered",
+        "proposals": ["L3"]
+      },
+      {
+        "patternId": "anecdote-entry",
+        "disposition": "conditional",
+        "reason": "Le souvenir de la préface (k9) peut ouvrir une histoire de circulation, en gardant sa portée individuelle."
+      },
+      {
+        "patternId": "received-claim-examined",
+        "disposition": "conditional",
+        "reason": "Les commentaires reçus n'ont pas été fournis ; obtenir la croyance réellement tenue et définir ce que « inventé » veut dire."
+      }
+    ],
+    "proposals": [
+      {
+        "id": "L1",
+        "patternId": "competing-explanations",
+        "family": "name-investigation",
+        "question": "D'où vient le nom lingala, et pourquoi les lectures fournies diffèrent-elles ?",
+        "intention": "Faire comprendre que des lectures du même nom ne répondent pas forcément à la même question.",
+        "application": "La lecture liée aux Bangala (k2) et celle liée aux marchés et au vocabulaire du fleuve (k3) reçoivent les mêmes questions : quelle forme, quel sens, quels usagers, quelle période. On vérifie d'abord si elles sont des étymologies rivales, des usages successifs ou des explications d'objets différents (u3), sans fabriquer une controverse à trois.",
+        "claimRefs": ["k2", "k3", "k4", "u1", "u2", "u3"],
+        "takeaways": [
+          {
+            "id": "t1",
+            "text": "Un sens proposé n'est pas un usage documenté."
+          },
+          {
+            "id": "t2",
+            "text": "Une première trace écrite n'est pas la naissance d'un nom parlé."
+          }
+        ],
+        "successCriteria": [
+          {
+            "id": "sc1",
+            "prompt": "Résumer chaque lecture en une phrase, dire ce qui la soutient, puis compléter : « Les documents établissent … ; ils n'établissent pas … »",
+            "expected": "La lecture Bangala et la lecture des marchés sont chacune attribuées ; les documents établissent qu'elles existent dans les ouvrages, pas laquelle est juste ni même qu'elles se contredisent.",
+            "takeawayIds": ["t1"],
+            "claimRefs": ["k2", "k3", "u3"]
+          },
+          {
+            "id": "sc2",
+            "prompt": "Distinguer une trace datée d'une création : « La trace datée … montre que … ; elle ne prouve pas que … »",
+            "expected": "Une attestation écrite montre qu'un nom existait ; elle ne désigne aucun inventeur, et la date de la première attestation n'est pas fournie (u1, u2).",
+            "takeawayIds": ["t2"],
+            "claimRefs": ["k4", "u1", "u2"]
+          }
+        ],
+        "referenceExample": {
+          "status": "hypothetical",
+          "text": "Un nom de lieu avec une explication orale locale et une explication linguistique d'archives. Exemple pédagogique : ni épisode publié d'EthniAfrica, ni succès mesuré."
+        },
+        "arrangement": {
+          "steps": [
+            {
+              "move": "poser la question du nom",
+              "functions": ["B1"],
+              "purpose": "Séparer l'histoire du nom de la formation de la langue.",
+              "claimRefs": ["k1"]
+            },
+            {
+              "move": "première lecture : les Bangala",
+              "functions": ["B2", "B3"],
+              "purpose": "Forme, sens, usagers et période de cette lecture, avec sa source.",
+              "claimRefs": ["k2"]
+            },
+            {
+              "move": "seconde lecture : les marchés",
+              "functions": ["B2", "B3"],
+              "purpose": "Les mêmes questions posées à la lecture des marchés.",
+              "claimRefs": ["k3"]
+            },
+            {
+              "move": "ce que les traces datent",
+              "functions": ["B3"],
+              "purpose": "Séparer attestation, codification et commencement supposé.",
+              "claimRefs": ["k4", "u2"]
+            },
+            {
+              "move": "l'adoption soutenue",
+              "functions": ["B4"],
+              "purpose": "Ne suivre que la diffusion utile à la question du nom.",
+              "claimRefs": ["k6"]
+            },
+            {
+              "move": "la réponse bornée",
+              "functions": ["B5"],
+              "purpose": "Ce que les lectures soutiennent, ce qui reste ouvert.",
+              "claimRefs": ["u1", "u3"]
+            },
+            {
+              "move": "l'invitation",
+              "functions": ["B6"],
+              "purpose": "Clôture du projet.",
+              "claimRefs": []
+            }
+          ],
+          "omitted": [],
+          "adaptations": []
+        },
+        "durationSeconds": 180,
+        "rationale": "C'est le récit le plus proche de la promesse du projet, l'origine des noms, et il donne un sens aux contradictions des lectures sans couronner l'une d'elles."
+      },
+      {
+        "id": "L2",
+        "patternId": "historical-actor",
+        "family": "historical-portrait",
+        "question": "Qu'est-ce que De Boeck a changé dans les formes écrites et enseignées du lingala ?",
+        "intention": "Faire voir qu'une personne peut coder ou enseigner une langue existante sans l'avoir créée, ni son nom.",
+        "application": "Situer Makanza, raconter l'épisode d'apprentissage et de manuel si sa source est identifiée (k5), et séparer préparer ou publier des ouvrages de linguistique de créer la langue ou son nom (u4).",
+        "claimRefs": ["k5", "k6", "u1", "u4"],
+        "takeaways": [
+          {
+            "id": "t1",
+            "text": "Une personne peut coder ou enseigner une langue qui existe déjà."
+          },
+          {
+            "id": "t2",
+            "text": "Plusieurs acteurs et locuteurs contribuent à son développement ultérieur."
+          }
+        ],
+        "successCriteria": [
+          {
+            "id": "sc1",
+            "prompt": "Compléter : « Son action documentée est … ; la langue ou l'usage existait déjà … ; les preuves ne justifient pas de dire qu'il … »",
+            "expected": "Son action documentée est l'activité racontée à Makanza ; la langue était déjà employée ; rien ne justifie de dire qu'il l'a créée ou nommée, et les dates de ses ouvrages restent à établir (u4).",
+            "takeawayIds": ["t1"],
+            "claimRefs": ["k5", "u4"]
+          },
+          {
+            "id": "sc2",
+            "prompt": "Nommer au moins deux catégories d'acteurs de la diffusion et dire ce que la source ne dit pas de leur rôle.",
+            "expected": "Mission, armée et administration ont employé la langue (k6) ; l'adoption n'est pas un consentement général et personne n'est désigné comme inventeur (u1).",
+            "takeawayIds": ["t2"],
+            "claimRefs": ["k6", "u1"]
+          }
+        ],
+        "referenceExample": {
+          "status": "hypothetical",
+          "text": "Portrait d'un lexicographe dont le dictionnaire consigne une langue existante ; pas une source pour le lingala."
+        },
+        "arrangement": {
+          "steps": [
+            {
+              "move": "la question de sa contribution",
+              "functions": ["B1"],
+              "purpose": "Demander ce qu'il a changé, et non ce qu'il a inventé.",
+              "claimRefs": ["k5"]
+            },
+            {
+              "move": "la langue avant lui",
+              "functions": ["B2"],
+              "purpose": "Le contexte linguistique qui précède son intervention.",
+              "claimRefs": ["k1"]
+            },
+            {
+              "move": "Makanza et la date du récit",
+              "functions": ["B3"],
+              "purpose": "Acteur, action et attestation ; 1901 est la date d'un récit.",
+              "claimRefs": ["k5", "u4"]
+            },
+            {
+              "move": "les effets et les autres acteurs",
+              "functions": ["B4"],
+              "purpose": "Ce que l'enseignement et les institutions ont diffusé.",
+              "claimRefs": ["k6"]
+            },
+            {
+              "move": "son rôle borné",
+              "functions": ["B5"],
+              "purpose": "Ce qu'il a fait et ce que les sources ne lui attribuent pas.",
+              "claimRefs": ["u1", "u4"]
+            },
+            {
+              "move": "l'invitation",
+              "functions": ["B6"],
+              "purpose": "Clôture du projet.",
+              "claimRefs": []
+            }
+          ],
+          "omitted": [],
+          "adaptations": [
+            {
+              "function": "B2",
+              "note": "B2 devient la situation linguistique avant l'intervention d'un acteur : on n'invente pas une étymologie du nom de la personne."
+            }
+          ]
+        },
+        "durationSeconds": 165,
+        "rationale": "Une entrée concrète et humaine avec une distinction nette à enseigner ; à écarter si elle redevient l'histoire d'un inventeur unique."
+      },
+      {
+        "id": "L3",
+        "patternId": "clarifying-comparison",
+        "family": "comparison",
+        "question": "Que distinguent réellement les étiquettes de lingala de Makanza et de Kinshasa dans les sources fournies ?",
+        "intention": "Montrer que des usages ont chacun une histoire, sans classer les locuteurs.",
+        "application": "Opposer enseignement institutionnel et usage urbain (k8), y compris les contacts de langues décrits, sur les mêmes critères : lieu, transmission, usage documenté. « Pur » et « facile » ne deviennent pas un classement (u5) et le chiffre de 60 % n'est pas repris.",
+        "claimRefs": ["k8", "k6", "u5"],
+        "takeaways": [
+          {
+            "id": "t1",
+            "text": "Des usages ou variétés ont une histoire propre."
+          },
+          {
+            "id": "t2",
+            "text": "Une étiquette n'établit ni de meilleurs locuteurs ni une forme corrompue."
+          }
+        ],
+        "successCriteria": [
+          {
+            "id": "sc1",
+            "prompt": "Énoncer une différence sourcée, un lien entre les deux, et pourquoi la comparaison ne prouve pas qu'une variété soit plus légitime.",
+            "expected": "Une différence de lieu et de transmission (k8), le lien de la langue commune, et la raison : les étiquettes ne sont pas définies dans la source (u5).",
+            "takeawayIds": ["t1", "t2"],
+            "claimRefs": ["k8", "u5"]
+          }
+        ],
+        "referenceExample": {
+          "status": "hypothetical",
+          "text": "Comparaison d'un registre écrit enseigné et de la parole quotidienne, sans aucun fait réel impliqué."
+        },
+        "arrangement": {
+          "steps": [
+            {
+              "move": "la question de la comparaison",
+              "functions": ["B1"],
+              "purpose": "Ce que les deux étiquettes distinguent.",
+              "claimRefs": ["k8"]
+            },
+            {
+              "move": "définitions et contexte de A et B",
+              "functions": ["B2"],
+              "purpose": "Chaque étiquette définie dans sa source.",
+              "claimRefs": ["k8", "u5"]
+            },
+            {
+              "move": "sources, usagers, périodes appariés",
+              "functions": ["B3"],
+              "purpose": "Mêmes critères pour Makanza et pour Kinshasa.",
+              "claimRefs": ["k8"]
+            },
+            {
+              "move": "relations et changements",
+              "functions": ["B4"],
+              "purpose": "Comment l'une et l'autre se rapportent à l'usage commun.",
+              "claimRefs": ["k6"]
+            },
+            {
+              "move": "la réponse de la comparaison",
+              "functions": ["B5"],
+              "purpose": "Une différence, un lien, une limite.",
+              "claimRefs": ["u5"]
+            },
+            {
+              "move": "l'invitation",
+              "functions": ["B6"],
+              "purpose": "Clôture du projet.",
+              "claimRefs": []
+            }
+          ],
+          "omitted": [],
+          "adaptations": [
+            {
+              "function": "B2",
+              "note": "B2 devient la définition de chaque étiquette dans sa source : la comparaison ne cherche pas l'étymologie d'un nom."
+            }
+          ]
+        },
+        "durationSeconds": 165,
+        "rationale": "Répond à une distinction pratique avec des exemples concrets, si les preuves nécessaires peuvent être lues."
+      }
+    ],
+    "recommendation": {
+      "proposalId": "L1",
+      "reason": "Elle est la plus proche de la promesse du projet ; c'est une recommandation, pas un choix de l'opérateur."
+    },
+    "selection": {
+      "proposalId": "L1",
+      "kind": "synthetic",
+      "statement": "SYNTHÉTIQUE : sélection de démonstration, pas une décision de l'opérateur.",
+      "locator": "démonstration de l'outil",
+      "date": "2026-09-30"
+    },
+    "outline": {
+      "proposalId": "L1",
+      "blocks": [
+        {
+          "id": "o1",
+          "functions": ["B1"],
+          "seconds": 15,
+          "role": "Poser la question sur le NOM et borner la portée.",
+          "content": "Demander d'où vient le nom lingala, en séparant l'histoire du nom de la formation de la langue.",
+          "evidence": {
+            "claimRefs": ["k1"],
+            "limits": "La formation d'une langue n'est pas l'étymologie de son nom."
+          },
+          "transition": "Le nom reçoit plusieurs explications dans les lectures fournies.",
+          "supports": { "takeawayIds": ["t1"], "criterionIds": [] }
+        },
+        {
+          "id": "o2",
+          "functions": ["B2", "B3"],
+          "seconds": 25,
+          "role": "Première lecture, avec ses usagers et sa période si elles sont établies.",
+          "content": "Exposer la lecture liée aux Bangala et la contradiction rapportée sur l'existence historique du groupe.",
+          "evidence": {
+            "claimRefs": ["k2"],
+            "limits": "Ce que chaque auteur entend par Bangala reste à lire ; les identités vécues ne sont pas en cause."
+          },
+          "transition": "Poser les mêmes questions à l'autre lecture.",
+          "supports": { "takeawayIds": ["t1"], "criterionIds": ["sc1"] }
+        },
+        {
+          "id": "o3",
+          "functions": ["B2", "B3"],
+          "seconds": 25,
+          "role": "Seconde lecture, mêmes questions.",
+          "content": "Exposer la lecture liée aux marchés et au vocabulaire du fleuve, et dire ce que ses mots proposés signifient.",
+          "evidence": {
+            "claimRefs": ["k3", "u3"],
+            "limits": "Vérifier forme et glose ; une ressemblance n'est pas une preuve ; on ne sait pas si elle répond à la même question."
+          },
+          "transition": "Comparer ce que chacune explique réellement.",
+          "supports": { "takeawayIds": ["t1"], "criterionIds": ["sc1"] }
+        },
+        {
+          "id": "o4",
+          "functions": ["B3"],
+          "seconds": 25,
+          "role": "Séparer attestation, codification et commencement supposé.",
+          "content": "Montrer que la présence des formes mangala, bangala et lingala dans les ouvrages ne dit ni laquelle est venue avant, ni qui a nommé la langue.",
+          "evidence": {
+            "claimRefs": ["k4", "u1", "u2"],
+            "limits": "Aucun inventeur déduit d'une publication ; la date de la première attestation manque."
+          },
+          "transition": "Ces traces éclairent l'usage, pas la naissance du nom.",
+          "supports": { "takeawayIds": ["t2"], "criterionIds": ["sc2"] }
+        },
+        {
+          "id": "o5",
+          "functions": ["B4"],
+          "seconds": 35,
+          "role": "Suivre seulement la diffusion utile à la question du nom.",
+          "content": "Dire que la mission, l'armée et l'administration ont employé la langue, et que cela n'établit pas un parcours identique pour son appellation.",
+          "evidence": {
+            "claimRefs": ["k6"],
+            "limits": "Pas l'histoire de la rumba ni de chaque épisode institutionnel ; adoption n'est pas consentement."
+          },
+          "transition": "Revenir à ce que ce parcours dit de la question de départ.",
+          "supports": { "takeawayIds": ["t2"], "criterionIds": [] }
+        },
+        {
+          "id": "o6",
+          "functions": ["B5"],
+          "seconds": 35,
+          "role": "Répondre avant la clôture.",
+          "content": "Dire ce que les lectures soutiennent, si elles se contredisent vraiment, et ce qui reste ouvert, y compris que nul inventeur n'est identifié.",
+          "evidence": {
+            "claimRefs": ["k2", "k3", "u1", "u3"],
+            "limits": "Aucun classement sans preuve ; si la lecture des sources change la controverse supposée, le dire."
+          },
+          "transition": "Fermer la boucle explicative avant l'invitation du projet.",
+          "supports": {
+            "takeawayIds": ["t1", "t2"],
+            "criterionIds": ["sc1", "sc2"]
+          }
+        },
+        {
+          "id": "o7",
+          "functions": ["B6"],
+          "seconds": 20,
+          "role": "Clôture du projet, avec respiration finale.",
+          "content": "La clôture unique du projet, qui invite à partager une source ou un récit transmis.",
+          "evidence": {
+            "claimRefs": [],
+            "limits": "Aucune nouvelle affirmation historique."
+          },
+          "transition": "Fin.",
+          "supports": { "takeawayIds": [], "criterionIds": [] }
+        }
+      ],
+      "rationale": {
+        "patternFit": "Le nom reste la question centrale, et les lectures fournies s'opposent peut-être sans répondre à la même question : c'est exactement ce que la trame des explications concurrentes sait montrer.",
+        "orderLogic": "Chaque lecture est reliée à sa preuve dès qu'elle est exposée, au lieu d'être entendue comme un fait puis nuancée tard ; les traces datées séparent les sortes d'événements ; la diffusion est limitée à ce qui aide la question du nom ; la réponse précède la clôture."
+      },
+      "successStatements": [
+        {
+          "criterionId": "sc1",
+          "statement": "Le dossier rapporte une lecture liée aux Bangala et une lecture liée au langage des marchés. Il faut vérifier ce que chacune explique exactement avant de les présenter comme contradictoires."
+        },
+        {
+          "criterionId": "sc2",
+          "statement": "La date de 1901 apparaît dans le récit de l'activité de De Boeck à Makanza. Elle ne suffit pas à dater la naissance du nom ou de la langue, et la date de la première attestation du nom n'est pas fournie."
+        }
+      ]
+    },
+    "presentation": null
+  }
+}

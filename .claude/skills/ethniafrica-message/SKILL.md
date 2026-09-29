@@ -23,6 +23,12 @@ the universal checks it owns — **uncertainty, intelligibility, non-essentialis
 for every family, and none of them can be `sans objet`. The grid below was written on
 the name series; read by family:
 
+- **A brief with a `narrativeDesign`**: also read the chosen proposal's takeaways and
+  success criteria and the outline's viewer-success statements, and say for each whether
+  the written piece actually lets a viewer complete it — with the limit the statement
+  declares, not an invented certainty. A criterion the text cannot support is a rewrite
+  item, not a pass. This is an editorial judgement; `check-narrative-design.mjs` only
+  proved that the plan was recorded.
 - **Series `name-origin`** (and any legacy production whose subject the site ledger
   holds): the grid as written, including criteria 1, 2 and 8 in their name-series form
   and the « Un reel au gabarit » section.

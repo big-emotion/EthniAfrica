@@ -15,7 +15,8 @@ import {
   applicableChecks,
   validateEdition,
 } from "../contract/contract.mjs";
-import { TYPES } from "./gabarit-reel.mjs";
+import { CLOTURE_UNIQUE, TYPES } from "./gabarit-reel.mjs";
+import { validateDesign } from "./narrative-design.mjs";
 
 // The contract's default table (EDITORIAL-CONTRACT.md §2). `free` is a
 // rendering fact for guided listening; it is not a way out of any review.
@@ -72,7 +73,11 @@ const STALE_AFTER_DAYS = 30;
 // production ledger, so the series cannot run without one.
 const typologieOf = (edition) => edition.subject?.key?.split(":")[0];
 
-export function planReviews(edition) {
+// `narrativeDesign` is the explicit switch of the research-led route: the
+// series keeps its closing, but the fixed scene list, name count and
+// explanation ceiling of the legacy gabarit stop applying. Never inferred from
+// the family or the series, so neither can be relabelled to skip a check.
+export function planReviews(edition, { narrativeDesign } = {}) {
   // No default to fall back to: an unknown family stops here, and says which
   // ones exist, because the fix is always a rename.
   if (!FAMILIES.includes(edition?.family)) {
@@ -98,11 +103,16 @@ export function planReviews(edition) {
     skill: REVIEWER["name-origin-gabarit"],
     universal: false,
   });
-  return {
-    family: edition.family,
-    reviews,
-    narrationGabarit: inSeries ? { applies: true, type } : { applies: false },
-  };
+  const narrationGabarit = narrativeDesign
+    ? {
+        applies: false,
+        route: "narrative-design",
+        ...(inSeries ? { closing: CLOTURE_UNIQUE } : {}),
+      }
+    : inSeries
+      ? { applies: true, type }
+      : { applies: false };
+  return { family: edition.family, reviews, narrationGabarit };
 }
 
 const daysBetween = (from, to) =>
@@ -150,7 +160,23 @@ function sequenceErrors(brief) {
 export function validateBrief(brief, { today }) {
   const errors = [];
   const edition = brief?.edition;
-  if (!edition) return { ok: false, errors: ["brief has no edition"] };
+  // A brief that carries a design is held to the handoff: a draft or an
+  // unshown plan is not executable, and never falls back to the legacy path.
+  if (brief && "narrativeDesign" in brief) {
+    const design = validateDesign(brief.narrativeDesign, {
+      mode: "handoff",
+      brief,
+    });
+    if (!design.ok) {
+      errors.push(
+        "narrative design is not ready for structure (node social/tools/narration/check-narrative-design.mjs <brief> --mode handoff)",
+        ...design.errors
+      );
+    }
+  }
+  if (!edition) {
+    return { ok: false, errors: [...errors, "brief has no edition"] };
+  }
 
   errors.push(...validateEdition(edition).errors);
 

@@ -1,6 +1,6 @@
 ---
 name: ethniafrica-idee
-description: Brainstormer un sujet de publication EthniAfrica et en sortir un rapport de sujet — angle, pilier, promesse en une phrase, ce que le sujet ne dira pas, sources pressenties, formats visés, réserves. Première étape de la chaîne idee → structure → produire. Utiliser pour « j'ai une idée de… », « on pourrait parler de… », « trouve-moi un sujet », « qu'est-ce qu'on pourrait publier sur… », ou /ethniafrica-idee. N'écrit aucune carte, ne choisit aucune image, ne touche à aucun gabarit.
+description: Brainstormer un sujet de publication EthniAfrica et en sortir un rapport de sujet — angle, pilier, promesse en une phrase, ce que le sujet ne dira pas, sources pressenties, formats visés, réserves. Première étape de la chaîne idee → structure → produire. Porte aussi les cinq étapes de conception narrative d'un reel (cadrer, rechercher, proposer des trames avec critères de réussite, enregistrer le choix réel de l'opérateur, montrer le plan détaillé avant toute rédaction). Utiliser pour « j'ai une idée de… », « on pourrait parler de… », « trouve-moi un sujet », « qu'est-ce qu'on pourrait publier sur… », « quels récits possibles pour ce sujet », ou /ethniafrica-idee. N'écrit aucune carte, ne choisit aucune image, ne touche à aucun gabarit.
 ---
 
 # idee — brainstormer un sujet
@@ -31,6 +31,101 @@ visual profile, format and destination are four separate choices.
 - **No weekday, no date is required.** A subject can be ready with no planned date.
   A topical opportunity (an anniversary, a news event) is a reason to bring a subject
   forward, said in « Réserves ».
+
+## Conception narrative guidée par la recherche — cinq étapes (2026-09-30)
+
+**Quand elle s'applique.** Pour un reel dont le sujet a de la matière de recherche et
+plusieurs récits possibles (le cas fondateur : Lingala). Le brief porte alors une section
+`narrativeDesign` (version 1) ; **c'est ce qui aiguille**, jamais une phrase, une famille
+ou une série. Sans cette section, le brief suit son chemin habituel : un brief ou une
+narration déjà approuvés ne reçoivent ni recherche ni choix rétroactifs.
+
+Avant : recherche → un angle choisi par l'assistant → narration complète. Après :
+recherche → propositions fondées sur les preuves, chacune avec sa disposition des blocs
+et son critère de réussite → **choix réel de l'opérateur** → plan détaillé montré →
+narration. Les **cinq étapes appartiennent toutes à `idee`** ; `structure` n'en possède
+aucune et n'écrit qu'après l'étape 5.
+
+| Étape                   | Ce que tu fais                                                                                                   | Ce que l'opérateur voit                                                                                                     | Tu t'arrêtes quand                                                                                                      |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| 1. Cadrer               | Sujet, public, matière fournie, travaux antérieurs (`bilan-sujets.mjs`), durée voulue.                           | Le cadre et l'inventaire de la matière.                                                                                     | Le sujet et la tâche sont sans ambiguïté ; on ne relance pas une recherche déjà faite.                                  |
+| 2. Rechercher           | Réutilise la recherche valide, comble les vrais trous avec les outils disponibles, accepte la recherche externe. | Affirmations, sources (lue, indirecte, indisponible), lectures concurrentes, inconnues.                                     | Assez de preuves pour juger les récits, ou les manques nommés précisément. Pas de demande d'approbation par source.     |
+| 3. Proposer             | Examine **les dix trames** (`references/narrative-patterns.md`) contre les preuves.                              | Une carte complète par trame proposée ; pour chaque autre trame, sa disposition et sa raison ; une recommandation.          | L'opérateur peut comparer ce que chaque proposition promet, comment elle se déroule et ce qu'elle ne peut pas affirmer. |
+| 4. Enregistrer le choix | Reçois le choix de l'opérateur, dans ses mots.                                                                   | La proposition retenue.                                                                                                     | Une proposition précise est nommée. Une recommandation, un fichier ou un « oui » sans objet ne suffisent pas.           |
+| 5. Développer           | Étends la proposition choisie en plan détaillé.                                                                  | Tableau minuté, transitions, preuves, incertitudes, acquis, durée totale, pourquoi cet ordre, phrases de réussite remplies. | Le plan complet est **montré** avant toute rédaction complète.                                                          |
+
+**La carte d'une proposition** porte cinq champs nommés, chacun substantiel et propre à
+la proposition : **Question · Trame · Application au sujet · Acquis · Critère de
+réussite**, plus la recherche, les limites, un exemple de référence (réel avec son
+localisateur, ou **explicitement hypothétique** — jamais présenté comme un succès publié),
+la durée et la raison de la choisir. Le critère de réussite est un objectif
+d'apprentissage borné par les preuves (« Les documents établissent … ; ils n'établissent
+pas … »), pas une mesure d'audience : rien ici ne prétend qu'un public a été testé.
+
+- **Les dix trames sont examinées, pas dix vidéos proposées.** Une trame que les preuves
+  ne portent pas est signalée avec sa raison (`unsupported`, `inapplicable`,
+  `conditional`). Un seul récit viable est acceptable : ne fabrique pas de concurrent.
+  Le tier d'une source ne décide jamais seul de cette disposition.
+- **Chaque proposition montre sa propre disposition de B1–B6** : fusionnées, répétées ou
+  adaptées avec une phrase qui l'explique (« B2 devient la situation avant l'intervention
+  d'un acteur », pas une étymologie inventée). Jamais six plans obligatoires ; jamais la
+  même disposition collée sur toutes les trames.
+- **Une inconnue est un contenu valide.** Pas d'inventeur, de date ni de route inventés
+  pour remplir un bloc. Une affirmation `gap` ne peut pas porter le plan choisi.
+- **Une recommandation n'est pas un choix.** Après l'étape 3, attends. Si l'opérateur a
+  clairement délégué le choix, enregistre la délégation (`kind: "delegated"`) ; sinon le
+  choix est le sien. Plusieurs propositions retenues restent des éditions séparées :
+  demande laquelle développer d'abord.
+- **Durée.** Trois minutes est la cible ; une cible plus longue porte sa raison visible
+  (`durationReason`). N'accélère jamais la voix et ne retire jamais une incertitude pour
+  cacher un texte trop long : dis la décision de périmètre.
+- **Si seule l'idée était demandée, arrête-toi à l'étape 5 montrée.** Si l'écriture de
+  bout en bout est déjà autorisée, continue vers `structure` sans redemander une
+  approbation générique, sauf question de fond ouverte ou demande de relecture.
+
+Les commandes (`social/tools/narration/check-narrative-design.mjs`) :
+
+```bash
+node …/check-narrative-design.mjs <brief.json> --mode draft      # étapes 1–3
+node …/check-narrative-design.mjs <brief.json> --render proposals # ce que tu montres à l'étape 3
+node …/check-narrative-design.mjs <brief.json> --record-shown proposals --where "<où>"
+node …/check-narrative-design.mjs <brief.json> --mode selected   # après le choix, plan présent
+node …/check-narrative-design.mjs <brief.json> --render plan     # ce que tu montres à l'étape 5
+node …/check-narrative-design.mjs <brief.json> --record-shown outline --where "<où>"
+node …/check-narrative-design.mjs <brief.json> --mode handoff    # tout est prêt pour structure
+node …/check-narrative-design.mjs <brief.json> --resume          # où en est-on vraiment
+```
+
+**Enregistre la présentation seulement après avoir réellement montré** les propositions
+puis le plan dans la conversation : `--record-shown` en empreint le contenu, et une
+modification ultérieure rend la présentation périmée (à remontrer). Le programme
+vérifie des traces et une structure ; il ne prouve ni qu'une parole est authentique, ni
+qu'une affirmation historique est vraie, ni qu'un récit est bon — cela reste la revue
+éditoriale (liste dans `docs/design/gabarits-social/NARRATIVE-DESIGN.md`).
+
+**Au passage à `structure`**, le brief reprend la forme ordinaire (`edition`, `question`,
+`claims`, `beats`, `videoSequence`) **dérivée du choix** : la question et la famille de
+l'édition sont celles de la proposition retenue, les affirmations viennent de la
+recherche, et les étapes de `videoSequence` sont les blocs du plan. Aucune édition n'est
+créée pour une proposition non retenue. Le brouillon de conception (sans choix ni plan)
+n'est **pas** un brief prêt : `check-family-brief.mjs` le refuse.
+
+Le brouillon et le brief vivent dans la paire existante
+`_idees/{slug}.md` + `{slug}.brief.json`, sous un identifiant neuf : n'écrase ni la
+synthèse d'origine ni une édition approuvée. Le Markdown est la présentation, le JSON
+fait autorité pour les identifiants, le choix et le plan.
+
+**Reprise.** Sujet seul : étapes 1–2. Recherche existante : évalue-la et comble les
+trous, puis étape 3 sans audit d'audience automatique. Propositions montrées sans choix :
+attends l'étape 4, n'écris pas le script recommandé. Choix réel sans plan : étape 5.
+Plan montré : `structure` peut écrire. Preuves qui changent avant le choix : rafraîchis
+les propositions touchées. Preuves qui changent la question choisie : explique et
+tranche à nouveau, ne garde pas une approbation périmée. Un recadrage, un dossier de
+sortie ou un détail technique ne rouvrent pas un choix inchangé.
+
+**Un sujet déjà produit** (par exemple le paquet Lingala de 210,6 s) garde ses
+approbations, liées à sa version : ne les réécris pas et n'en transfère aucune à un
+nouveau script.
 
 ## Mémoires sonores scope (2026-09-25)
 

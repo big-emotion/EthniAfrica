@@ -58,15 +58,16 @@ technical success is not approval of an unidentified new version.
 
 ## 2. Resume at the first genuinely missing step
 
-| Available evidence                            | Next work                                                                                                                          |
-| --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Only an idea                                  | Read existing audience/strategy work; use `ethniafrica-idee` for the missing sourced subject report, then `ethniafrica-structure`. |
-| Narrative and sources, no visual plan         | Use `ethniafrica-structure` to prepare the visual proposal. Do not restart audience research or rewrite approved narration.        |
-| Proposed plan, approval absent                | Present it with the complete text if that text is unapproved; wait for the combined review.                                        |
-| Approved plan, missing voice/alignment/assets | Complete the approved package, resolving voice authorization before generation.                                                    |
-| Filled plan and valid handoff lock            | Use `ethniafrica-produire` to verify and render; do not redesign.                                                                  |
-| Exact proof and genuine release evidence      | Complete the version-bound review, finalize and perform the documented library handoff if registered.                              |
-| Clean delivery already exists                 | Verify its manifest/files and report them; do not rerender without a reason.                                                       |
+| Available evidence                                            | Next work                                                                                                                                                                                                                                                                      |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Only an idea                                                  | Read existing audience/strategy work; use `ethniafrica-idee` for the missing sourced subject report, then `ethniafrica-structure`.                                                                                                                                             |
+| Narrative design in progress (`narrativeDesign` in the brief) | Run `check-narrative-design.mjs <brief> --resume` and follow its stage: research, proposals not yet shown, **wait for the operator's choice** (never select or write the recommended script), outline not yet shown, or handoff. All five stages belong to `ethniafrica-idee`. |
+| Narrative and sources, no visual plan                         | Use `ethniafrica-structure` to prepare the visual proposal. Do not restart audience research or rewrite approved narration.                                                                                                                                                    |
+| Proposed plan, approval absent                                | Present it with the complete text if that text is unapproved; wait for the combined review.                                                                                                                                                                                    |
+| Approved plan, missing voice/alignment/assets                 | Complete the approved package, resolving voice authorization before generation.                                                                                                                                                                                                |
+| Filled plan and valid handoff lock                            | Use `ethniafrica-produire` to verify and render; do not redesign.                                                                                                                                                                                                              |
+| Exact proof and genuine release evidence                      | Complete the version-bound review, finalize and perform the documented library handoff if registered.                                                                                                                                                                          |
+| Clean delivery already exists                                 | Verify its manifest/files and report them; do not rerender without a reason.                                                                                                                                                                                                   |
 
 Load supporting skills from `.claude/skills/<name>/SKILL.md` when their work is
 needed. `ethniafrica-audience-audit` and `ethniafrica-content-strategist` handle
@@ -75,6 +76,12 @@ an existing narrative. Run `node social/tools/narration/check-family-brief.mjs <
 and perform the reviews it lists `required` (`ethniafrica-message`, `ethniafrica-mythe` and, for
 naming claims, `ethniafrica-onomastique`); record each `not-applicable` with its reason. Keep
 existing valid reviews; a thematic explanation need not invent a myth or a corpus entity.
+A brief carrying a `narrativeDesign` is not ready until its selection is a real operator
+(or delegated) choice and both the proposals and the detailed outline were actually shown:
+a file on disk proves neither, and a synthetic fixture selection never counts. Changed
+evidence that touches the chosen question reopens that choice; a changed crop, output
+folder or re-render does not. An older approved narration keeps its approvals and needs no
+five-stage intake.
 If the source report is missing, recover or complete the missing evidence through
 `idee` and report it; do not discard an existing approved narrative to restart it.
 
