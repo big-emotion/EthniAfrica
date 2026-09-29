@@ -3,16 +3,16 @@
 Format audit of every EthniAfrica publication on Instagram, Facebook, TikTok,
 YouTube, LinkedIn and X. Collected on **2026-09-26**, read-only.
 
-| Deliverable                                            | File                                                             |
-| ------------------------------------------------------ | ---------------------------------------------------------------- |
-| A. Executive report                                    | this file                                                        |
-| B. Publication-level dataset (252 inventory rows)      | [`publications.csv`](publications.csv)                           |
-| C. Carousel-versus-reel decision matrix                | [`decision-matrix.md`](decision-matrix.md)                       |
-| D. Adaptation shortlist (7 candidates)                 | [`adaptation-shortlist.md`](adaptation-shortlist.md)             |
-| E. Exploratory comparison plan (4 comparisons)         | [`validation-plan.md`](validation-plan.md)                       |
-| F. Measurement protocol for future observations        | [`measurement-protocol.md`](measurement-protocol.md)             |
-| G. Reconciliation candidates (evidence for the ledger) | [`reconciliation-candidates.md`](reconciliation-candidates.md)   |
-| H. Arithmetic check (`node --test <file>`)             | [`verify-audit-figures.test.mjs`](verify-audit-figures.test.mjs) |
+| Deliverable                                            | File                                                               |
+| ------------------------------------------------------ | ------------------------------------------------------------------ |
+| A. Executive report                                    | this file                                                          |
+| B. Publication-level dataset (252 inventory rows)      | [`publications.csv`](publications.csv)                             |
+| C. Carousel-versus-reel decision matrix                | [`decision-matrix.md`](decision-matrix.md)                         |
+| D. Adaptation shortlist (7 candidates)                 | [`adaptation-shortlist.md`](adaptation-shortlist.md)               |
+| E. Exploratory comparison plan (4 comparisons)         | [`validation-plan.md`](validation-plan.md)                         |
+| F. Measurement protocol for future observations        | [`measurement-protocol.md`](measurement-protocol.md)               |
+| G. Reconciliation candidates (evidence for the ledger) | [`reconciliation-candidates.md`](reconciliation-candidates.md)     |
+| H. Arithmetic check (`node --test <file>`)             | [`verify-audit-figures.check.mjs`](verify-audit-figures.check.mjs) |
 
 > **Revised 2026-09-29 (version 2).** The first version merged on 2026-09-26
 > (#1371). This revision reproduced every figure from `publications.csv`,
@@ -309,7 +309,7 @@ Comments read on the leaders (no handles kept):
 ## 4. What is observed, hypothesised and unknown
 
 "Observed" means the number follows from the file (see
-[`verify-audit-figures.test.mjs`](verify-audit-figures.test.mjs)) for our own
+[`verify-audit-figures.check.mjs`](verify-audit-figures.check.mjs)) for our own
 posts in these 21 days. It is a description of a sample, never a rule.
 
 | Status     | Statement                                                                                                                                                                                                                                                                                                                                                                |
@@ -381,7 +381,7 @@ Full detail per row is in `publications.csv` (`dq_notes`,
 
 Version 2 (2026-09-29) re-derived every figure from `publications.csv` and did
 not collect anything new. Each correction below is reproducible with
-`node --test docs/audience/format-audit-2026-09-26/verify-audit-figures.test.mjs`
+`node --test docs/audience/format-audit-2026-09-26/verify-audit-figures.check.mjs`
 unless it concerns interpretation.
 
 | Version 1 said                                                                  | Version 2 says                                                                                                                                                     |
