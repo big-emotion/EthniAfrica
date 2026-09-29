@@ -175,3 +175,5 @@ bumps `CONTRACT_VERSION`.
 branch (worktrees branch from it); until then, read this file and the module from the S0
 branch and write no code against them. The canonical REQ/DEC/ARCH behind this contract are
 _pending drafts_ until a person approves them; do not cite an ID as approved.
+
+Integration evidence for this contract, measured on one merged revision: [INTEGRATION-ACCEPTANCE.md](INTEGRATION-ACCEPTANCE.md).
