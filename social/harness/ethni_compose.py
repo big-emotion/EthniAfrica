@@ -947,7 +947,8 @@ def _colonne(carte, deck, fmt_key, largeur, disposition, k):
     # with the cadence like any other block of composition.
     if carte.get("paires"):
         _ajouter_couple(blocs, carte["paires"], fmt_key, largeur,
-                        accent, encre1, encre2, k)
+                        accent, encre1, encre2, k,
+                        relation=carte.get("relation"))
 
     ajouter("punchline", carte.get("punchline", ""), "Punchline", encre1, "punchline", majuscule=True)
     ajouter("corps", carte.get("corps", ""), "Corps", encre2, "corps")
@@ -967,7 +968,7 @@ def _colonne(carte, deck, fmt_key, largeur, disposition, k):
 CORPS_PLANCHER = 15
 
 
-def _ajouter_couple(blocs, paire, fmt_key, largeur, accent, encre1, encre2, k):
+def _ajouter_couple(blocs, paire, fmt_key, largeur, accent, encre1, encre2, k, relation=None):
     """§3 bis — two names for one thing, laid out so the equivalence is visible.
 
     The autonym against the exonym, the original word against the word that took
@@ -989,7 +990,16 @@ def _ajouter_couple(blocs, paire, fmt_key, largeur, accent, encre1, encre2, k):
     Horizontal costs 170 px against the vertical's 279, and on a flat where nothing
     can compress, those 109 px are the difference between a visible credit and a
     credit outside the frame.
+
+    **`relation` names the two other readings of the same block.** `comparaison`:
+    cases asked the same question, not one word becoming another — the arrow would
+    claim a derivation and the accent on the last term would crown it, so every term
+    is set in ink 1 and a neutral divider replaces the arrow. `chronologie`: dated
+    entries, where the arrow keeps its meaning (« then ») but the accent would crown
+    the last date, so every term is in ink 1 there too. Same geometry either way.
     """
+    egal = relation in ("comparaison", "chronologie")
+    neutre = relation == "comparaison"
     tt = _role_type("Paire — terme", fmt_key)
     tg = _role_type("Paire — glose", fmt_key)
 
@@ -999,7 +1009,7 @@ def _ajouter_couple(blocs, paire, fmt_key, largeur, accent, encre1, encre2, k):
     membres = [{"text": (m or {}).get("terme", ""), "gloss": (m or {}).get("glose") or ""}
                for m in paire]
     encres = [encre1] * len(membres)
-    if len(membres) > 1:
+    if len(membres) > 1 and not egal:
         encres[-1] = accent
 
     colonne = round(COUPLE_COLONNE * k)
@@ -1031,7 +1041,8 @@ def _ajouter_couple(blocs, paire, fmt_key, largeur, accent, encre1, encre2, k):
         for mot in (m.get("text", "") or "").split())
 
     fleche_t = dict(tt, face="anton")
-    signe = "↓" if deborde else "→"
+    signe = ("—" if deborde else "|") if neutre else ("↓" if deborde else "→")
+    prefixe_signe = "couple-separateur-" if neutre else "couple-fleche-"
     police_f = fonte("anton", fleche_t["corps"])
     fw = round(_mesureur.textlength(signe, font=police_f))
     fh = round(fleche_t["corps"] * 1.15)
@@ -1063,7 +1074,7 @@ def _ajouter_couple(blocs, paire, fmt_key, largeur, accent, encre1, encre2, k):
             # nothing about the derivation it exists to show.
             if i:
                 blocs.append(Bloc(
-                    f"couple-fleche-{i}",
+                    f"{prefixe_signe}{i}",
                     i * (colonne + gouttiere) - gouttiere + (gouttiere - fw) // 2,
                     max(0, (max(hauts) - fh) // 2), fw, fh, signe, accent,
                     fleche_t["corps"], "anton", fleche_t["graisse"], (signe,), 1.15))
@@ -1076,7 +1087,7 @@ def _ajouter_couple(blocs, paire, fmt_key, largeur, accent, encre1, encre2, k):
     y = 0
     for i, (termes, gloses) in enumerate(plie):
         if i:
-            blocs.append(Bloc(f"couple-fleche-{i}", (largeur - fw) // 2, y + interne,
+            blocs.append(Bloc(f"{prefixe_signe}{i}", (largeur - fw) // 2, y + interne,
                               fw, fh, signe, accent, fleche_t["corps"], "anton",
                               fleche_t["graisse"], (signe,), 1.15))
             y += fh + 2 * interne

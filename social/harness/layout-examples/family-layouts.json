@@ -1,0 +1,30 @@
+{
+  "note": "One example per narrative family (S3), expressed as compositions of the shared library. A family is never a renderer: only the card sequence differs. Card counts are examples inside each profile's own range.",
+  "families": {
+    "name-investigation": {
+      "profile": null,
+      "note": "Standard gabarit, unchanged: the eight-card name carousel with its fixed closing (GABARITS-SOCIAL section 7 ter)."
+    },
+    "historical-portrait": {
+      "profile": "reading-story",
+      "cards": ["cover", "portrait", "timeline", "document", "credits"]
+    },
+    "circulation-connections": {
+      "profile": "reading-story",
+      "cards": ["cover", "map", "timeline", "portrait", "credits"]
+    },
+    "material-biography": {
+      "profile": "reading-story",
+      "cards": ["cover", "document", "portrait", "timeline", "credits"]
+    },
+    "comparison": {
+      "profile": "reading-comparison",
+      "cards": ["cover", "portrait", "comparison", "comparison", "credits"]
+    },
+    "guided-listening": {
+      "profile": "reading-listening",
+      "cards": ["cover", "listening", "listening", "portrait", "credits"],
+      "note": "A series with a fixed six-card shape keeps its own profile (memoires-sonores); this one is for a listening piece that does not."
+    }
+  }
+}

@@ -1408,6 +1408,14 @@ prepared and its rights limits are in [LECTURES-AFRIQUE](LECTURES-AFRIQUE.md);
 `ethni_carrousel2.py --brief lectures-afrique` returns the guide and the empty
 scaffold.
 
+**Optional reading profiles:** `profil: "reading-story"`, `"reading-comparison"` or
+`"reading-listening"` describe a variable-length carousel whose cards each name a
+`composition` (cover, portrait, document, timeline, comparison, map, listening,
+credits), in the standard layouts. The compositions, the subject-zone and crop
+checks, the phone-readability criteria and the six family examples are in
+[CAROUSEL-COMPOSITIONS](CAROUSEL-COMPOSITIONS.md);
+`ethni_carrousel2.py --brief reading-story` returns the guide and the scaffold.
+
 ```json
 {
   "campagne": "mercator-taille",

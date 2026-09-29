@@ -1,0 +1,13 @@
+{
+  "id": "reading-story",
+  "guide": "docs/design/gabarits-social/CAROUSEL-COMPOSITIONS.md",
+  "formats": {
+    "carrousel": ["TikTok", "Instagram", "Facebook", "YouTube", "LinkedIn"]
+  },
+  "crops": ["carrousel"],
+  "reading": {
+    "min": 4,
+    "max": 9,
+    "compositions": ["portrait", "document", "timeline", "map", "credits"]
+  }
+}
