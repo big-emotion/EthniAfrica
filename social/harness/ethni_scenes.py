@@ -11,12 +11,13 @@ import PIL
 
 from ethni_paths import assert_writable
 from ethni_scene_audio import prepare_source, digest
+from ethni_scene_mix import render_master
 from ethni_scene_outro import cue, frames as outro_frames, total_seconds
 from ethni_scene_plan import validate_plan, require
 from ethni_scene_render import SceneRenderer
 
 
-def encode(renderer, audio, cuts, target):
+def encode(renderer, audio, cuts, target, prepared=None, project=None):
     """Atomically deliver a constant-frame-rate video; clean all scratch on failure."""
     fps = 25
     total = total_seconds(renderer.plan, renderer.captions, renderer.duration)
@@ -26,10 +27,14 @@ def encode(renderer, audio, cuts, target):
     with tempfile.TemporaryDirectory(prefix=".scenes-", dir=target.parent) as scratch:
         scratch = Path(scratch)
         excerpt = scratch / "voice.wav"
-        filters = [f"[0:a]atrim=start={a}:end={b},asetpts=PTS-STARTPTS[a{i}]" for i, (a, b) in enumerate(cuts)]
-        filters.append("".join(f"[a{i}]" for i in range(len(cuts))) + f"concat=n={len(cuts)}:v=0:a=1[out]")
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(audio), "-filter_complex", ";".join(filters),
-                        "-map", "[out]", str(excerpt)], check=True)
+        if prepared is not None and prepared.get("timeline"):
+            # Excerpts and a bed: the master is assembled and measured on decoded samples.
+            prepared["audio_report"] = render_master(project, renderer.plan, prepared, excerpt)
+        else:
+            filters = [f"[0:a]atrim=start={a}:end={b},asetpts=PTS-STARTPTS[a{i}]" for i, (a, b) in enumerate(cuts)]
+            filters.append("".join(f"[a{i}]" for i in range(len(cuts))) + f"concat=n={len(cuts)}:v=0:a=1[out]")
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(audio), "-filter_complex", ";".join(filters),
+                            "-map", "[out]", str(excerpt)], check=True)
         temporary_video = scratch / "video.mp4"
         cmd = ["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", "1080x1920",
                "-r", str(fps), "-i", "pipe:0", "-i", str(excerpt), "-map", "0:v", "-map", "1:a",
@@ -61,14 +66,30 @@ def encode(renderer, audio, cuts, target):
     return count
 
 
+def audio_timeline_report(plan, source):
+    """Everything needed to trace each excerpt back to its file, trim and film position."""
+    timeline = source["timeline"]
+    insertions = []
+    for window in timeline["windows"]:
+        asset = plan["assets"][window["asset"]]
+        insertions.append({"id": window["id"], "asset": window["asset"], "path": asset["path"],
+                           "sha256": asset["sha256"], "credit": asset["credit"], "license": asset["license"],
+                           "source": asset["source"], "in": window["in"], "out": window["out"],
+                           "at": window["at"], "film": [window["clip_start"], window["clip_end"]],
+                           "gain_db": window["gain_db"], "silence_before": window["silence_before"],
+                           "silence_after": window["silence_after"], "has_video": window["has_video"]})
+    return {"narration_duration": timeline["narration_duration"], "insertions": insertions,
+            "bed": timeline["bed"], "mix": source.get("audio_report")}
+
+
 def run(project, plan_path, reduced_motion=False, validate_only=False, previews_only=False, output_dir=None):
     plan_path = Path(plan_path).resolve()
     plan = json.loads(plan_path.read_text())
     output = assert_writable(Path(output_dir if output_dir is not None else plan["output_dir"]).expanduser().resolve())
     require("_epreuves" in output.parts, "Scene exports currently require an _epreuves directory")
-    source = prepare_source(project, plan["source"])
-    validate_plan(plan, plan_path.parent, source["duration"])
-    renderer = SceneRenderer(plan, plan_path.parent, source["captions"], reduced_motion)
+    source = prepare_source(project, plan["source"], plan)
+    validate_plan(plan, plan_path.parent, source["duration"], source.get("timeline"))
+    renderer = SceneRenderer(plan, plan_path.parent, source["captions"], reduced_motion, timeline=source.get("timeline"))
     instants = renderer.preflight()
     print(f"Validated {len(plan['scenes'])} scenes, {source['duration']:.2f}s, {len(instants)} visual checks", flush=True)
     if validate_only:
@@ -90,11 +111,16 @@ def run(project, plan_path, reduced_motion=False, validate_only=False, previews_
     frames = None
     target = output/f"video-scenes{suffix}-epreuve.mp4"
     if not previews_only:
-        frames = encode(renderer, source["audio"], plan["source"]["cuts"], target)
+        frames = encode(renderer, source["audio"], plan["source"]["cuts"], target, source, project)
     (output/"narration-excerpt.fr.txt").write_text(source["narration"]+"\n")
     (output/"captions.json").write_text(json.dumps(source["captions"], ensure_ascii=False, indent=2)+"\n")
     audit = "# Scene proof review\n\nNot approved for publication. New visuals require editorial and operator review.\n\n"
     audit += "| Scene | Type | Seconds | Purpose | Preview |\n| --- | --- | --- | --- | --- |\n" + "\n".join(preview_rows)
+    if source.get("timeline"):
+        audit += "\n\n## Archive excerpts\n\n" + "\n".join(
+            f"- {w['id']}: {plan['assets'][w['asset']]['credit']} ({plan['assets'][w['asset']]['license']}), "
+            f"source {w['in']:.2f}–{w['out']:.2f} s, film {w['clip_start']:.2f}–{w['clip_end']:.2f} s"
+            for w in source["timeline"]["windows"])
     audit += "\n\n## Sources\n\n" + "\n".join(f"- {key}: {v['citation']} — {v['url']} ({v['tier']})" for key,v in plan["sources"].items())
     audit += "\n\nFrame order is deterministic for pinned inputs and runtime. Human listening and visual approval remain necessary.\n"
     (output/"REVIEW.md").write_text(audit)
@@ -109,6 +135,8 @@ def run(project, plan_path, reduced_motion=False, validate_only=False, previews_
               "open_gates": ["Editorial review of the new composition", "Human listening and visual approval",
                              "Publication license compatibility", "Historical source interpretation"],
               "preview_frame_sha256": hashlib.sha256(renderer.render(instants[0]).tobytes()).hexdigest()}
+    if source.get("timeline"):
+        report["audio_timeline"] = audio_timeline_report(plan, source)
     harness = Path(__file__).resolve().parent
     tracked_inputs = list(harness.glob("ethni_scene*.py")) + [harness/"ethni_map.py", harness/"ethni_type.py",
                       harness/"ethni_tokens.py", harness/"ethni_soustitre.py"] + list((harness/"fonts").glob("*.ttf"))
