@@ -58,6 +58,10 @@ export interface FtsSearchData {
    * found nothing. Never applied to the query: the reader chooses.
    */
   nameSuggestions: string[];
+  /** The cleaned query that found the results, when it differs from `q`. */
+  matchedQuery?: string;
+  /** The names a multi-name query was split into: the results are a widening. */
+  widenedFrom?: string[];
 }
 
 // @req REQ-002
@@ -137,5 +141,7 @@ function shapeSearchData(
     nearNames: result.nearNames ?? [],
     nameAnswers: findNameAnswers(q, language),
     nameSuggestions: total === 0 ? suggestNameTerms(q, language) : [],
+    ...(result.matchedQuery && { matchedQuery: result.matchedQuery }),
+    ...(result.widenedFrom && { widenedFrom: result.widenedFrom }),
   };
 }

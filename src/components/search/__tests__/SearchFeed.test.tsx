@@ -83,6 +83,39 @@ describe("SearchFeed", () => {
     ).toBeInTheDocument();
   });
 
+  // « pigmée » reaches no fiche, yet the reviewed answer for « Pygmée » covers
+  // it. The confession is a claim about the corpus; it cannot stand above an
+  // answer the corpus holds.
+  // @req REQ-178
+  it("answers from a reviewed answer instead of confessing when no fiche matched", () => {
+    render(
+      <SearchFeed
+        query="pigmée"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+        nameAnswers={[
+          {
+            term: "Pygmée",
+            subjects: [{ type: "people", id: "PPL_TWA" }],
+            paragraphs: [
+              "« Pygmée » n'est pas un nom que ces peuples se donnent.",
+            ],
+            sources: [],
+          },
+        ]}
+      />
+    );
+
+    expect(screen.queryByText("Nous ne connaissons pas ce nom.")).toBeNull();
+    expect(
+      screen.getByText(/n'est pas un nom que ces peuples se donnent/)
+    ).toBeInTheDocument();
+  });
+
   // No entity answers to « zombie », but we made a piece on the word. The page
   // cannot admit it does not know the name while showing that piece: it says
   // what it has, keeps the closing it always owes, and leaves out the empty
