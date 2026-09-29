@@ -58,8 +58,8 @@ and the acquisition table.
 
 ## Step 2 — Collect every network, for a run that plans or audits
 
-**A run of this skill that decides what to publish, or commissions an audit,
-collects all six networks** — YouTube, LinkedIn, Instagram, TikTok, Facebook and X
+**This skill collects all six networks on every run that decides what to
+publish or commissions an audit** — YouTube, LinkedIn, Instagram, TikTok, Facebook and X
 (Twitter) — whatever the age of the audience report or of
 `reference/published-state.md`. Operator ruling, 2026-09-15: a run skipped three
 networks because the audit had read them the day before, and planned without a
