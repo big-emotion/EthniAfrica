@@ -4,6 +4,8 @@
  * ftsSearchHandler: ETNI-38 FTS handler returning the Module #0 envelope.
  */
 
+import type { NameAnswer } from "@/lib/search/nameAnswer";
+import { findNameAnswers } from "@/lib/search/nameAnswers";
 import { ftsSearch } from "../services/searchService";
 import { createApiResponse } from "../utils/response";
 import type {
@@ -45,6 +47,12 @@ export interface FtsSearchData {
   leads: object[];
   /** Qualified similar names (REQ-180), populated only for a non-empty search. */
   nearNames: SearchNearName[];
+  /**
+   * Reviewed answers to « where does this name come from? » for the searched
+   * term. Resolved from the term alone, so a search with no hit can still be
+   * answered; empty for a name nobody has reviewed.
+   */
+  nameAnswers: NameAnswer[];
 }
 
 // @req REQ-002
@@ -52,13 +60,13 @@ export async function ftsSearchHandler(
   params: FtsSearchParams
 ): Promise<ApiEnvelope<FtsSearchData>> {
   const result = await ftsSearch(params);
-  return createApiResponse<FtsSearchData>(shapeSearchData(result, params.lens));
+  return createApiResponse<FtsSearchData>(shapeSearchData(result, params));
 }
 
 /** Keep the public main and quiz streams isolated even if an upstream layer regresses. */
 function shapeSearchData(
   result: FtsSearchResponse,
-  lens: FtsSearchParams["lens"]
+  { lens, q, lang }: Pick<FtsSearchParams, "lens" | "q" | "lang">
 ): FtsSearchData {
   const quizzesTotal = result.quizzesTotal ?? 0;
 
@@ -82,6 +90,7 @@ function shapeSearchData(
       total: quizzesTotal,
       leads: [],
       nearNames: [],
+      nameAnswers: [],
     };
   }
 
@@ -118,5 +127,6 @@ function shapeSearchData(
       languagesTotal,
     leads: (result.leads ?? []) as object[],
     nearNames: result.nearNames ?? [],
+    nameAnswers: findNameAnswers(q, lang === "en" ? "en" : "fr"),
   };
 }

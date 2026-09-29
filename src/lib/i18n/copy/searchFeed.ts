@@ -129,7 +129,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       word: "About this word",
     },
     emptyShort: {
-      body: "No source we have read answers this question yet.",
+      body: "We have not made a video on this name yet.",
       action: "Suggest a source",
     },
     wideningNote: "Around this name — related context, not the same name",
@@ -221,7 +221,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       word: "Sur ce mot",
     },
     emptyShort: {
-      body: "Aucune source que nous avons lue ne répond encore à cette question.",
+      body: "Nous n’avons pas encore fait de vidéo sur ce nom.",
       action: "Proposer une source",
     },
     wideningNote: "Autour de ce nom — un contexte lié, pas le même nom",

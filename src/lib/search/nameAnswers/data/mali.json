@@ -1,0 +1,97 @@
+{
+  "term": { "fr": "Mali", "en": "Mali" },
+  "aliases": [],
+  "subjects": [{ "type": "country", "id": "MLI" }],
+  "paragraphs": {
+    "fr": [
+      "Le nom actuel est récent : l'Assemblée de la République soudanaise adopte le nom de République du Mali le 22 septembre 1960, après l'indépendance de la Fédération du Mali. Il évoque l'empire médiéval, sans désigner un État resté inchangé depuis. Le pays s'appelait auparavant Soudan français.",
+      "Le sens premier du nom Mali n'est pas établi. La plus ancienne mention connue date du XIe siècle, sous la forme Malel. Une explication y voit un mot passé par les Peuls, qui auraient transformé « Manden » en « Mali » ; une autre lit « lieu où vit le roi », sans démonstration linguistique. En bambara, mali désigne aussi l'hippopotame, mais ce sens ne prouve pas que le nom du pays en dérive."
+    ],
+    "en": [
+      "The current name is recent: the Assembly of the Sudanese Republic adopted the name Republic of Mali on 22 September 1960, after the independence of the Mali Federation. It recalls the medieval empire without designating a state unchanged since then. The country was previously called French Sudan.",
+      "The original meaning of the name Mali is not settled. The oldest known mention dates from the 11th century, in the form Malel. One explanation sees a word passed through the Fulbe, who would have turned \"Manden\" into \"Mali\"; another reads \"place where the king lives\", without linguistic demonstration. In Bambara, mali also means hippopotamus, but that meaning does not prove the country's name derives from it."
+    ]
+  },
+  "uncertainty": {
+    "fr": "Les attestations médiévales du nom n'en établissent pas le sens premier ; les rapprochements proposés doivent être distingués d'une traduction certaine.",
+    "en": "The medieval attestations of the name do not establish its original meaning; the proposed connections must be distinguished from a certain translation."
+  },
+  "evidence": [
+    {
+      "statement": {
+        "fr": "La Fédération du Mali devient indépendante le 20 juin 1960, le Sénégal s'en retire le 20 août, et l'Assemblée de la République soudanaise adopte le nom de République du Mali le 22 septembre 1960.",
+        "en": "The Mali Federation became independent on 20 June 1960, Senegal withdrew on 20 August, and the Assembly of the Sudanese Republic adopted the name Republic of Mali on 22 September 1960."
+      },
+      "sources": [
+        {
+          "title": "Office of the Historian — A Guide to the United States’ History of Recognition, Diplomatic, and Consular Relations: Mali",
+          "url": "https://history.state.gov/countries/mali",
+          "tier": "official"
+        },
+        {
+          "title": "Office of the Historian — Memorandum From Acting Secretary of State Dillon to President Eisenhower, 23 September 1960, FRUS 1958–1960, volume XIV, document 75",
+          "year": 1960,
+          "url": "https://history.state.gov/historicaldocuments/frus1958-60v14/d75",
+          "tier": "official"
+        }
+      ]
+    },
+    {
+      "statement": {
+        "fr": "La plus ancienne mention du nom est du XIe siècle, sous la forme Malel ; une explication le rattache à une transformation de Manden chez les Fulɓe, avec Mellit pour variante berbère.",
+        "en": "The oldest mention of the name is from the 11th century, in the form Malel; one explanation ties it to a transformation of Manden among the Fulɓe, with Mellit as a Berber variant."
+      },
+      "sources": [
+        {
+          "title": "Niane, Djibril Tamsir (1985) — Le Mali et la deuxième expansion manden, Histoire générale de l’Afrique, volume IV, UNESCO/NEA, p. 141–196",
+          "author": "Djibril Tamsir Niane",
+          "year": 1985,
+          "page": "153, note 28",
+          "url": "https://bokundoli.org/wp-content/uploads/2021/12/T4-10.pdf",
+          "tier": "official"
+        }
+      ]
+    },
+    {
+      "statement": {
+        "fr": "En bambara, mali désigne l'hippopotame ; ce sens lexical ne démontre pas que le nom du pays en dérive.",
+        "en": "In Bambara, mali means hippopotamus; this lexical meaning does not show that the country's name derives from it."
+      },
+      "sources": [
+        {
+          "title": "Bamadaba — Dictionnaire bambara, entrées Màli et màli",
+          "url": "https://bamadaba.coastsystems.net/lexicon/m/",
+          "tier": "referenced"
+        }
+      ]
+    },
+    {
+      "statement": {
+        "fr": "L'interprétation « lieu où vit le roi » circule, sans démonstration linguistique dans le passage concerné.",
+        "en": "The reading \"place where the king lives\" circulates, without linguistic demonstration in the passage concerned."
+      },
+      "sources": [
+        {
+          "title": "Core Knowledge — Mali, document pédagogique, première page du PDF",
+          "url": "https://www.coreknowledge.org/wp-content/uploads/2017/03/CKHG-G4-U5-about-Mali.pdf",
+          "tier": "referenced"
+        }
+      ]
+    },
+    {
+      "statement": {
+        "fr": "Les attestations médiévales du nom Mali n'en établissent pas le sens premier.",
+        "en": "The medieval attestations of the name Mali do not establish its original meaning."
+      },
+      "sources": [
+        {
+          "title": "Fauvelle, François-Xavier (2024) — The imperial capital of Mâli (14th century): A new hypothesis, Medievalista 35",
+          "author": "François-Xavier Fauvelle",
+          "year": 2024,
+          "url": "https://scielo.pt/scielo.php?pid=S1646-740X2024000100055&script=sci_arttext",
+          "tier": "referenced"
+        }
+      ]
+    }
+  ]
+}

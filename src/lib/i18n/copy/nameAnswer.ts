@@ -19,6 +19,11 @@ import type { Language } from "@/types/shared";
 
 export interface NameAnswerCopy {
   eyebrow: string;
+  /** The link after a subject's answer; the kind tells two same-named subjects apart. */
+  answerFiche: (kind: string) => string;
+  /** Expand and collapse a long list of names in place. */
+  showMoreNames: (count: number) => string;
+  showFewerNames: string;
   /** Movement II, in the grammar's order. */
   disambiguation: string;
   appellations: string;
@@ -74,6 +79,10 @@ export interface NameAnswerCopy {
 export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
   en: {
     eyebrow: "Where this name comes from",
+    answerFiche: (kind) => `Read the entry · ${kind}`,
+    showMoreNames: (count) =>
+      `Show ${count} more ${count === 1 ? "name" : "names"}`,
+    showFewerNames: "Show fewer",
     disambiguation: "Which one are you looking for?",
     appellations: "The names",
     appellationsLead:
@@ -115,6 +124,10 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
   },
   fr: {
     eyebrow: "D'où vient ce nom",
+    answerFiche: (kind) => `Voir la fiche · ${kind}`,
+    showMoreNames: (count) =>
+      `Afficher ${count === 1 ? "l’autre appellation" : `les ${count} autres appellations`}`,
+    showFewerNames: "Réduire",
     disambiguation: "Lequel cherchez-vous ?",
     appellations: "Les appellations",
     appellationsLead:

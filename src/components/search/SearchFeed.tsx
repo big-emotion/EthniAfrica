@@ -42,6 +42,10 @@ import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { formatProductionNameQuestion } from "@/lib/editorial/productionNameQuestion";
 import { normalizeString } from "@/lib/normalize";
+import type { SearchEvidence } from "@/lib/search/evidence";
+import type { NameAnswer } from "@/lib/search/nameAnswer";
+import type { NamingPresentationForm } from "@/lib/search/naming";
+import { resolveNameOpening } from "@/lib/search/resolveNameOpening";
 import { getLocalizedRoute } from "@/lib/routing";
 import { groupPeopleResults } from "@/lib/search/groupPeopleResults";
 import { parseHighlightedSnippet } from "@/lib/search/highlight";
@@ -103,6 +107,8 @@ export interface SearchFeedProps {
   subjects: readonly SearchResult[];
   leads: readonly SearchLead[];
   nearNames?: readonly SearchNearName[];
+  /** Reviewed answers for the searched term, from the search response. */
+  nameAnswers?: readonly NameAnswer[];
   companions: SearchCompanionsData;
   resultCount?: number;
   presentation?: SearchFeedPresentation;
@@ -159,6 +165,7 @@ function resultForms(
         ...form,
         subjectId,
         searched: normalizeString(form.form) === wanted,
+        detail: formDetail(form),
       })),
     ]);
   });
@@ -169,6 +176,26 @@ function resultForms(
     ])
   );
   return [...unique.values()];
+}
+
+/**
+ * What the corpus records about one form, as a single line — only when it
+ * records something. A form with no origin stays a plain label, never a button
+ * that opens onto nothing.
+ */
+function formDetail(
+  form: NamingPresentationForm
+): { text: string; evidence?: SearchEvidence } | undefined {
+  if (!form.origin) return undefined;
+  const text = [
+    form.origin.meaning,
+    form.origin.languageCode,
+    form.origin.imposedBy,
+    form.origin.period,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+  return text ? { text, evidence: form.evidence[0] } : undefined;
 }
 
 /** A stable partition: self-given forms first, every other form in its order. */
@@ -237,6 +264,7 @@ export function SearchFeed({
   subjects,
   leads,
   nearNames = [],
+  nameAnswers = [],
   companions: loadedCompanions,
   resultCount,
   presentation,
@@ -439,9 +467,11 @@ export function SearchFeed({
       : isRelationBrowse && relation?.kind === "country"
         ? getCountryCommonName(language, relation.id, relation.id)
         : undefined;
+  const opening = resolveNameOpening({ query, subjects, nameAnswers });
   const displayName =
     presentation?.answer?.name ??
     relationLabel ??
+    opening.title ??
     (state === "typo" && leads[0]
       ? leads[0].name
       : subjects[0]
@@ -593,6 +623,7 @@ export function SearchFeed({
             name={displayName}
             verdict={verdict}
             summary={summary}
+            entries={presentation?.answer ? [] : opening.entries}
             kind={presentation?.answer?.kind}
             eyebrow={presentation?.answer?.eyebrow ?? relationEyebrow}
             language={language}
@@ -610,8 +641,14 @@ export function SearchFeed({
       case "appellations":
         return (
           <AppellationsBlock
+            key={query}
             forms={forms}
-            reviewed={Boolean(presentation)}
+            groupLabels={Object.fromEntries(
+              subjects.map((subject) => [
+                `${subject.type}:${subject.id}`,
+                `${getLocalizedSearchResultName(subject, language)} · ${getSearchEntityLabel(subject.type, language)}`,
+              ])
+            )}
             title={presentation?.appellations?.title}
             subtitle={appellationsSubtitle}
             language={language}

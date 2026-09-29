@@ -729,7 +729,7 @@ describe("SearchFeed", () => {
 
     expect(
       container.querySelectorAll(
-        '[data-testid="appellations-mobile"] [data-appellation][data-subject-id]'
+        '[data-testid="appellations-list"] [data-appellation][data-subject-id]'
       )
     ).toHaveLength(2);
   });

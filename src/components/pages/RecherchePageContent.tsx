@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { SearchFeedFrame } from "@/components/search/SearchFeedFrame";
 import { SearchFeed } from "@/components/search/SearchFeed";
+import type { NameAnswer } from "@/lib/search/nameAnswer";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import { searchQueryProp } from "@/lib/analytics/searchQueryProp";
 import { trackEvent } from "@/lib/analytics/trackEvent";
@@ -131,6 +132,7 @@ export function RecherchePageContent() {
   const [results, setResults] = useState<SearchHit[]>([]);
   const [leads, setLeads] = useState<SearchLead[]>([]);
   const [nearNames, setNearNames] = useState<SearchNearName[]>([]);
+  const [nameAnswers, setNameAnswers] = useState<NameAnswer[]>([]);
   const [counts, setCounts] = useState<SearchLensCounts>(
     EMPTY_SEARCH_LENS_COUNTS
   );
@@ -189,6 +191,7 @@ export function RecherchePageContent() {
         setResults([]);
         setLeads([]);
         setNearNames([]);
+        setNameAnswers([]);
         setCounts(EMPTY_SEARCH_LENS_COUNTS);
         setCompanions(null);
         setFeedState(null);
@@ -207,6 +210,7 @@ export function RecherchePageContent() {
           results: hits,
           leads: nearMisses,
           nearNames: qualifiedNearNames = [],
+          nameAnswers: reviewedAnswers = [],
           counts: lensCounts,
           presentation,
           answered,
@@ -220,6 +224,7 @@ export function RecherchePageContent() {
         setResults(hits);
         setLeads(nearMisses);
         setNearNames(qualifiedNearNames);
+        setNameAnswers(reviewedAnswers);
         setCounts(lensCounts);
         setFeedPresentation(presentation);
         // Reported here rather than from the submit handler, so a query that
@@ -291,6 +296,7 @@ export function RecherchePageContent() {
         setResults([]);
         setLeads([]);
         setNearNames([]);
+        setNameAnswers([]);
         setCounts(EMPTY_SEARCH_LENS_COUNTS);
         setCompanions(null);
         setFeedState(null);
@@ -389,6 +395,7 @@ export function RecherchePageContent() {
     setResults([]);
     setLeads([]);
     setNearNames([]);
+    setNameAnswers([]);
     setCounts(EMPTY_SEARCH_LENS_COUNTS);
     setCompanions(null);
     setFeedState(null);
@@ -719,6 +726,7 @@ export function RecherchePageContent() {
               subjects={feedSubjects}
               leads={leads}
               nearNames={nearNames}
+              nameAnswers={nameAnswers}
               companions={companions}
               resultCount={counts.all}
               presentation={feedPresentation}
