@@ -22,7 +22,7 @@ study), and the list a reader-facing "not yet documented" answer can rest on.
 | samassa          | `PAT_SAMASSA`    | Bamadaba entry Samasa; Soninke community list                                                                 |
 | baradji / bardji | `PAT_BARADJI`    | Bamadaba entry Baraji; Soninke community list                                                                 |
 | dao              | `PAT_DAO`        | One Mali peace-research report (usage among the Minyanka, not origin)                                         |
-| kassambara       | `PAT_KASSAMBARA` | One Mali peace-research report (usage among the Dogon, not origin)                                            |
+| kassambara       | `PAT_KASSAMBARA` | Bamadaba entry Kásanbàra (folk etymology, joking partners); Mali peace-research report (Dogon usage)          |
 | marega           | `PAT_MAREGA`     | Soninke community lists only; people link held as supposed. Thin.                                             |
 | gakou            | `PAT_GAKOU`      | Soninke community list only; people link held as supposed. Thin.                                              |
 | adewusi          | `PAT_ADEWUSI`    | One community name database (meaning, royal house of Ijebu-Ode), hedged in the sentence; incidence aggregator |
