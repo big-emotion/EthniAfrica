@@ -93,6 +93,18 @@ export function publicationsRoot() {
   return declared ? path.resolve(declared) : null;
 }
 
+/**
+ * The registry, `publications.json`, which the library keeps in `00-Index`
+ * beside the posts shelf rather than inside it. `null` when the shelf is not
+ * configured, for the same reason `publicationsRoot` has no fallback.
+ */
+export function registryFile() {
+  const posts = publicationsRoot();
+  return posts
+    ? path.join(path.dirname(posts), "00-Index", "publications.json")
+    : null;
+}
+
 /** The gabarit spec and its tokens, versioned beside the engine. */
 export function gabarits() {
   return path.join(repoRoot(), "docs", "design", "gabarits-social");

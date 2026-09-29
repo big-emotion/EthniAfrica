@@ -74,7 +74,7 @@ def deliver(project, plan, lock, review_path, output, source, check_video, uncha
     proof = validate_review(project, plan, lock, review)
     require(not output.exists(), 'Delivery folder already exists; choose a new version')
     require('_epreuves' not in output.parts, 'A final delivery must be outside _epreuves')
-    renderer = SceneRenderer(plan, project, source['captions'], proof=False)
+    renderer = SceneRenderer(plan, project, source['captions'], proof=False, timeline=source.get('timeline'))
     renderer.preflight()
     output.parent.mkdir(parents=True, exist_ok=True)
     # Nothing is exposed as a final delivery until all checks pass.
@@ -82,7 +82,7 @@ def deliver(project, plan, lock, review_path, output, source, check_video, uncha
         stage = Path(temporary)/'delivery'
         stage.mkdir()
         video = stage/'video.mp4'
-        encode(renderer, source['audio'], plan['source']['cuts'], video)
+        encode(renderer, source['audio'], plan['source']['cuts'], video, source, project)
         result = {'version': 1, 'action': 'finalize', 'proof_only': False, 'ready_to_publish': True,
                   'published': False, 'paid_api_calls': 0, 'coverage': plan.get('coverage', 'excerpt'),
                   'lock_sha256': digest(lock), 'review_sha256': digest(review_path),
@@ -97,6 +97,10 @@ def deliver(project, plan, lock, review_path, output, source, check_video, uncha
                 '## Assets', '']
         for key, asset in plan['assets'].items():
             rows.append(f"- {key}: {asset['credit']} — {asset['license']} — {plan['sources'][asset['source']]['url']}")
+        if source.get('timeline', {}).get('windows'):
+            rows += ['', '## Archive excerpts', '']
+            rows += [f"- {w['id']}: {plan['assets'][w['asset']]['credit']}, source {w['in']:.2f}–{w['out']:.2f} s, "
+                     f"film {w['clip_start']:.2f}–{w['clip_end']:.2f} s" for w in source['timeline']['windows']]
         rows += ['', '## Sources', '']
         rows += [f"- {s['citation']} — {s['url']} ({s['tier']})" for s in plan['sources'].values()]
         rows += ['', '## Voice rights', '', review['checks']['voice_rights']['evidence'], '',

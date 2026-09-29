@@ -450,9 +450,9 @@ def validate_kinetic(value, duration):
                     "The accent must be one word of its own line")
 
 
-def validate_plan(plan, root, duration):
+def validate_plan(plan, root, duration, timeline=None):
     """Validate shape, local assets, provenance and complete audio coverage."""
-    keys(plan, "version profile coverage title source output_dir sources assets scenes progress cover outro layout", "plan")
+    keys(plan, "version profile coverage title source output_dir sources assets scenes progress cover outro layout insertions bed", "plan")
     layout = plan.get("layout", "panel")
     require(layout in ("panel", "fullbleed"), "Unknown layout")
     for flag in ("progress", "cover", "outro"):
@@ -473,7 +473,7 @@ def validate_plan(plan, root, duration):
     require(isinstance(assets, dict), "assets must be an object")
     for key, asset in assets.items():
         keys(asset, "path kind sha256 credit license source bounds", f"asset {key}")
-        require(asset.get("kind") in ("geojson", "image", "relief", "vector"), "Unknown asset kind")
+        require(asset.get("kind") in ("geojson", "image", "relief", "vector", "clip"), "Unknown asset kind")
         require(("bounds" in asset) == (asset["kind"] == "relief"), "Only a relief asset carries bounds, and it must")
         if asset["kind"] == "relief": validate_relief_bounds(asset["bounds"])
         for field in ("path", "credit", "license", "sha256"): text(asset.get(field), f"asset.{field}")
@@ -484,6 +484,8 @@ def validate_plan(plan, root, duration):
             validate_geometry(json.loads(path.read_text()))
         elif asset["kind"] == "vector":
             validate_vector(json.loads(path.read_text()))
+        elif asset["kind"] == "clip":
+            pass  # its trims are checked against the probed media where the insertions are arranged
         else:
             with Image.open(path) as image: image.verify()
     scenes = plan.get("scenes")
@@ -491,7 +493,7 @@ def validate_plan(plan, root, duration):
     ids, previous = set(), 0.0
     for index, scene in enumerate(scenes):
         where = f"scene {index+1}"
-        keys(scene, "id type start end title purpose evidence beat map image text comparison kinetic backdrop timeline document transition emphasis protect", where)
+        keys(scene, "id type start end title purpose evidence beat map image text comparison kinetic backdrop timeline document clip transition emphasis protect", where)
         text(scene.get("id"), f"{where}.id")
         require(scene["id"] not in ids, "Scene ids must be unique")
         ids.add(scene["id"])
@@ -504,8 +506,8 @@ def validate_plan(plan, root, duration):
         caption_options(scene, where)
         evidence(scene.get("evidence"), sources, f"{where}.evidence")
         kind = scene.get("type")
-        require(kind in ("map", "image", "text", "comparison", "kinetic", "timeline", "document"), "Unknown scene type")
-        require(all(field == kind or field not in scene for field in ("map", "image", "text", "comparison", "kinetic", "timeline", "document")),
+        require(kind in ("map", "image", "text", "comparison", "kinetic", "timeline", "document", "clip"), "Unknown scene type")
+        require(all(field == kind or field not in scene for field in ("map", "image", "text", "comparison", "kinetic", "timeline", "document", "clip")),
                 f"{where}: content for another scene type")
         # The full-frame layout draws words only as an overlay (a comparison whose items arrive over a picture or a map)
         # or as a kinetic card.
@@ -536,6 +538,8 @@ def validate_plan(plan, root, duration):
             keys(value, "asset label body", "document")
             require(value.get("asset") in assets and assets[value["asset"]]["kind"] == "image", "document image asset required")
             for field in ("label", "body"): text(value.get(field), f"document.{field}")
+        elif kind == "clip":
+            validate_clip_scene(scene, timeline)
         elif kind == "text":
             text(scene.get("text"), "scene.text")
         elif kind == "kinetic":
@@ -563,6 +567,23 @@ def validate_plan(plan, root, duration):
         beats = [s.get("beat") for s in scenes]
         require(all(beat in beats for beat in required), f"Complete {plan['profile']} requires beats {required}")
     return plan
+
+
+def validate_clip_scene(scene, timeline):
+    """A clip scene shows an inserted excerpt's picture and must frame the whole excerpt."""
+    from ethni_scene_clips import window_for
+    value = scene.get("clip")
+    keys(value, "insertion fit", "clip")
+    require(value.get("fit") in ("contain", "cover"), "clip.fit must be contain or cover")
+    require(timeline is not None, "A clip scene needs the prepared audio timeline")
+    window = window_for(timeline, value.get("insertion"))
+    require(window is not None, f"Unknown insertion: {value.get('insertion')!r}")
+    require(window["has_video"], "A clip scene needs a picture: the insertion's clip has no video track")
+    require(scene["start"] <= window["clip_start"]+1e-6 and scene["end"] >= window["clip_end"]-1e-6,
+            "The scene window must contain the whole excerpt")
+    length = scene.get("transition", {}).get("duration", 0)
+    require(scene["start"]+length <= window["clip_start"]+1e-6,
+            "The transition into a clip scene must finish before the excerpt's sound starts")
 
 
 def scene_at(scenes, instant):

@@ -1,102 +1,116 @@
-# Validation plan: four matched experiments
+# Exploratory comparison plan
 
-A proposal to settle the biggest uncertainties left by the
-[audit](README.md). It is not permission to produce or publish: each piece
-still goes through the usual chain (idea, structure, myth check, message gate,
-reader-facing register) and needs the operator's approval.
+A proposal for narrowing the biggest uncertainties left by the
+[audit](README.md), taken under the
+[measurement protocol](measurement-protocol.md). It is not permission to
+produce or publish: each piece still goes through the production chain and
+needs the operator's approval, and this session neither posts nor schedules
+anything.
+
+**Revised 2026-09-29 (version 2).** Corrections to version 1: the plan is
+**exploratory, not a set of A/B tests** (audience overlap, order and subject
+prevent a causal reading); the four "success readings" that declared a format
+leading or a rule dropped after three or four pairs are removed, because so few
+pairs cannot support them; the historical lifetime medians are no longer used
+as the "usual result" for 7-day counts; same-day pairs now have to be
+order-balanced; and the source check comes before any production, not after.
 
 ## What we cannot yet answer
 
 1. Whether a format effect exists once subject, day, hook and duration are
-   held equal. Our only clean same-day pairs on one network are four on TikTok
-   and one on Instagram, and they point in different directions.
+   held roughly equal. Our five same-day pairs on TikTok and one on Instagram
+   point in different directions and were not order-balanced.
 2. Whether Facebook's gap between reels (median 709) and multi-photo posts
-   (median 11) is the format or an artefact of eleven early posts.
-3. Whether a chronology reads better as a timed video or a dated carousel, and
-   a comparison better as slides than as a reel.
+   (median 11) is the format or a feature of eleven early posts.
+3. Whether a chronology reads better as a timed video or as a dated carousel
+   (Daloa already ran as a chronology carousel; no same-day video exists), and
+   whether a comparison reads better as slides than as a reel.
 4. Whether a text-on-image reel behaves like a carousel or like a video.
-5. Whether the Lingala carousel's reach comes from the subject or the format.
+5. What in the Lingala carousel's reach is subject, format or hook: the same
+   subject and format drew 403 and 25,544 views under different hooks.
 
-## Rules that stay fixed across all four
+These are questions to describe, not hypotheses to confirm. An answer can be
+"the pairs disagree".
 
-- **One pair = one subject, one angle, one source text.** Same opening line,
-  same claim, same sources. The carousel is not a shorter version and the
-  video is not a longer one.
-- **Same day, same network, published natively.** Never use Instagram's
-  cross-post to Facebook: a combined Business Suite row cannot be split and
-  would ruin the comparison. Alternate which format goes first, and leave 3–4
-  hours between the two.
-- **Video 35–60 seconds** (we found no length effect, but we removed the
-  variable rather than trust that).
-- **No boost, no collaboration, no repost** on either half of a pair.
-- **Record at publication:** time, order, followers of that network that day,
-  duration, slide count, hook wording, and the chosen subject's dispute risk.
-- **Baselines** for "relative to the usual result", from this audit and to be
-  recomputed on the first day: Instagram reels 1,274 views (n=27) and
-  carousels 141 (n=9); Facebook reels 709 (n=35); TikTok videos 302 (n=32) and
-  carousels 354 (n=33); YouTube Shorts 532 (n=30).
-- **Window:** a 7-day snapshot taken at the same hour as publication, and a
-  28-day snapshot for follow-up. Compare only within a pair and against these
-  baselines, never across networks.
+## Fixed for every comparison
 
-## Metrics, by objective
+- **One pair = one subject, one angle, one source text.** Same opening claim,
+  same sources, the two formats treated as editions of one another.
+- **One platform, published natively.** No cross-post, no boost, no
+  collaboration, no link between the halves. A combined Business Suite row
+  cannot be split and would spoil the pair.
+- **Order-balanced.** An even number of pairs, half reel-first and half
+  carousel-first, with a fixed interval and varied hour of day
+  ([interference and order](measurement-protocol.md#interference-and-order)).
+- **Predeclared in one line** before the first publication: the objective, the
+  single primary metric at 7 days, and how the pairs will be summarised. The
+  other metrics are exploratory.
+- **Video 35–60 seconds**, so length is held rather than trusted.
+- **Record at publication:** time, order, interval, followers on that day,
+  duration, slide count, hook wording, and the subject's dispute risk.
+- **7-day and 28-day readings** as the protocol defines them, both halves read
+  together. Lifetime medians from the audit are context, not the comparator.
+- **Comments** are sampled per the protocol, on both halves, including the
+  half that reached less.
 
-| Objective       | Primary metric                                                                             | Denominator to state                                                                           | Also record                                                     |
-| --------------- | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| Discovery       | Views at 7 days; reach where available                                                     | The platform's own definition; never mixed                                                     | Follower and non-follower split where exposed (Meta)            |
-| Attention       | Average watch time and percentage viewed for videos; completion for TikTok photo carousels | Within the same format only; TikTok's photo completion and video completion are not comparable | Retention drop-off point                                        |
-| Reference value | Saves per 1,000 views; shares per 1,000 views                                              | Views                                                                                          | Comments asking for sources or corrections                      |
-| Growth          | Follows per 1,000 views                                                                    | Views                                                                                          | Profile visits                                                  |
-| Traffic         | Link clicks and site visits by campaign tag                                                | Views                                                                                          | Only where the network exposes clicks; site data from Plausible |
+| Objective       | Candidate primary metric (choose one per comparison)                            | Also record, as exploratory                          |
+| --------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| Discovery       | Views at 7 days on the platform's own definition                                | Reach and non-follower share where the tool shows it |
+| Attention       | Average percentage viewed (video); completion (TikTok photo), within one format | Drop-off point                                       |
+| Reference value | Saves per 1,000 views at 7 days, for pairs above 100 views each                 | Shares per 1,000; comments asking for sources        |
+| Growth          | Follows per 1,000 views at 7 days, for pairs above 100 views each               | Profile visits                                       |
+| Traffic         | Consented site sessions by campaign tag at 7 days                               | Link clicks where exposed                            |
 
-Comments are coded as **appreciation**, **request**, **correction**,
-**dispute** or **misreading**, so that distribution driven by disagreement is
-visible and not counted as approval.
+Comments are coded `appreciation`, `request`, `correction`, `dispute`,
+`misreading` or `other`, so that reach driven by disagreement is visible and is
+not counted as approval.
 
-## Experiments
+## Comparisons
 
-**E1. Instagram and Facebook: reel against carousel, three subjects.**
-One comparison subject, one myth check, one dated timeline, each published
-on both networks, natively, in both formats. This resolves questions 1 and 2:
-the Instagram same-day gap (swahili, 30×) gets replicates, and Facebook
-multi-photo gets a fair test.
-Success reading: a format "leads" on a network when it wins the primary metric
-in at least two of three pairs by 2× or more. Otherwise report "no evidence of
-a gap".
+**C1. Instagram: reel against carousel.** Four subjects, one pair each, two
+reel-first and two carousel-first: a comparison of forms, a myth check, a dated
+timeline and one further. It replicates the Instagram same-day gap (swahili,
+31×) which rests on a single pair, and asks whether it survives order
+balancing. A second stage on Facebook multi-photo (four pairs, same design) is
+optional and follows only if the first stage is informative; the 11 early
+Facebook posts were too few and too early to read.
+Reading: report the four ratios and their direction. Four pairs cannot show
+significance even when unanimous (smallest two-sided p 0.125).
 
-**E2. TikTok: carousel against video, four subjects.**
-Two chronologies (Daloa and Bouët-Willaumez, the shortlist items 3 and 4) and
-two comparisons of forms (Mandé's three terms after its source check, and one
-new subject). This resolves question 3. Success reading: the pair direction is
-compared by task. If chronologies favour video and comparisons favour carousel
-in at least three of four pairs, keep the rule as a working hypothesis;
-otherwise drop it.
+**C2. TikTok: carousel against video.** Four subjects: two chronologies (Daloa
+and Bouët-Willaumez, shortlist candidates 3 and 4) and two comparisons of forms
+(Mandé's three terms, once its sources are reviewed, and one further subject).
+Reading: compare the direction by task **as a description**. "Chronologies went
+to the video in _k_ of 2 pairs" is a fact about four pairs; it does not confirm
+or retire the working hypothesis that chronologies suit video and comparisons
+suit carousels.
 
-**E3. The text-on-image reel: two subjects, carousel against reel.**
-A card set published as a carousel and as an 18–30 second text-on-image reel
-with music, for two subjects with low dispute risk, on Instagram and TikTok
-(Facebook already produced the 77,964-view Dioula reel). This resolves
-question 4. Choose subjects that do not invite identity disputes so that
-controversy cannot explain the result.
+**C3. Text-on-image reel: a feasibility look, not a test.** A card set
+published as a carousel and as an 18–30 second reel with music, for two subjects
+that do not hinge on a disputed claim, on Instagram and TikTok (Facebook already
+produced the 77,964-view Dioula reel). Two pairs per network cannot be
+balanced and cannot be summarised; record what happened and whether the
+production is worth repeating. Do not read the result as a format effect.
 
-**E4. Lingala: the same angle as a video on TikTok.**
-Publish the shortlist's item 1 as a 35–60 second narrated video on TikTok, hook
-kept as a question. One pair (the existing 25,544-view carousel is the other
-half). Descriptive only: it cannot separate subject from format, but it shows
-whether the audience that engaged with the carousel meets the same angle in
-another form. Do this after the source check on the counter-claims raised in
-the comments.
+**C4. Lingala on TikTok: a case description.** Publish the shortlist's
+candidate 1 as a 35–60 second video, hook kept as a question, **after** the
+source review of the accounts readers raised. The existing carousel is not the
+other half of a pair: it is far older, larger and under a different hook.
+Record the video's 7-day reading, its comments, and how readers who met the
+carousel respond, as a case study only.
 
 ## Size and order
 
-Fifteen publication pairs in total (E1 six: three subjects on two networks;
-E2 four; E3 four: two subjects on two networks; E4 one), spread over roughly
-four weeks at the existing
-publishing cadence. Suggested order: E4 and E3 first (they reuse proven
-subjects), then E1, then E2. Do not stack more than one experiment on the same
-subject.
+Twelve to fourteen publication pairs, spread over roughly four to six weeks at
+the existing publishing cadence: C1 four (eight with the Facebook stage), C2
+four, C3 four halves, C4 one video. Suggested order: C4 and C3 first, since they
+reuse subjects already read; then C1; then C2. Do not stack more than one
+comparison on one subject. The number of pairs is set by what the operator can
+publish well, not by a target: a smaller, cleaner set is better than a larger,
+crowded one.
 
 ## Not part of this plan
 
-Paid distribution, giveaways, and any change to the editorial doctrine. An
-experiment that requires asserting a contested claim to win reach is not run.
+Paid distribution, giveaways, and any change to the editorial doctrine. A
+comparison that requires asserting a contested claim to win reach is not run,
+and a subject is never chosen because a disputed claim would draw attention.

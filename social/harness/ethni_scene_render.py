@@ -125,8 +125,9 @@ class SceneRenderer:
     left, right = 91, 900
     content = (45, 480, 1035, 1170)
 
-    def __init__(self, plan, root, captions, reduced_motion=False, proof=True):
-        self.plan, self.root, self.captions = plan, root, captions
+    def __init__(self, plan, root, captions, reduced_motion=False, proof=True, timeline=None):
+        self.plan, self.root, self.captions, self.timeline = plan, root, captions, timeline
+        self._clip_frames = None
         self.reduced_motion = reduced_motion
         self.proof = proof
         self._base_cache = {}
@@ -138,6 +139,8 @@ class SceneRenderer:
             path = asset_path(root, asset)
             if asset["kind"] in ("geojson", "vector"):
                 self.assets[key] = json.loads(path.read_text())
+            elif asset["kind"] == "clip":
+                continue  # decoded on demand by ClipFrames, never held in memory
             elif asset["kind"] == "relief":
                 with Image.open(path) as image:
                     self.assets[key] = np.asarray(image.convert("RGB"))
@@ -534,6 +537,28 @@ class SceneRenderer:
         self.paragraph(draw, value["label"], (625, 570, 275, 180), "Paire — terme", p["gold"])
         self.paragraph(draw, value["body"], (625, 795, 275, 365), "Corps")
 
+    def _clip(self, scene, instant):
+        """The excerpt's picture inside the content box; `contain` never crops what an archive shows."""
+        from ethni_scene_clips import ClipFrames, window_for
+        if self._clip_frames is None:
+            self._clip_frames = ClipFrames(self.root, self.plan, self.timeline)
+        window = window_for(self.timeline, scene["clip"]["insertion"])
+        picture = self._clip_frames.frame(window, instant)
+        w, h = self.content[2]-self.content[0], self.content[3]-self.content[1]
+        fit = (min if scene["clip"]["fit"] == "contain" else max)(w/picture.width, h/picture.height)
+        picture = picture.resize((round(picture.width*fit), round(picture.height*fit)), Image.Resampling.LANCZOS)
+        box = Image.new("RGB", (w, h), self.palette["ground"])
+        box.paste(picture, ((w-picture.width)//2, (h-picture.height)//2))
+        return box
+
+    def excerpt_credit(self, instant):
+        """While an excerpt sounds, its credit is on screen whatever scene happens to be drawn."""
+        for window in (self.timeline or {}).get("windows", []):
+            if window["clip_start"] <= instant < window["clip_end"]:
+                asset = self.plan["assets"][window["asset"]]
+                return [f"Extrait : {asset['credit']} · {asset['license']}"]
+        return []
+
     def visual(self, scene, instant):
         image = Image.new("RGB", (self.width, self.height), self.palette["ground"])
         draw = ImageDraw.Draw(image)
@@ -554,6 +579,8 @@ class SceneRenderer:
             draw_timeline(self, draw, scene, local)
         elif kind == "document":
             self._document(image, draw, scene)
+        elif kind == "clip":
+            image.paste(self._clip(scene, instant), self.content[:2])
         elif kind == "kinetic":
             draw_kinetic(self, image, scene, local)
         elif kind == "text":
@@ -660,7 +687,7 @@ class SceneRenderer:
         scene = scene_at(self.plan["scenes"], instant)
         transition = None if self.reduced_motion else transition_at(self.plan["scenes"], instant)
         image = self.visual(scene, instant)
-        credits = self.credits(scene)
+        credits = list(dict.fromkeys(self.credits(scene)+self.excerpt_credit(instant)))
         heading = scene
         if transition:
             before, after, progress = transition
@@ -722,6 +749,9 @@ class SceneRenderer:
                     if "fade_seconds" in f:
                         instants.update((start+f["at"]+f["fade_seconds"]/2,
                                          min(end-1e-6, start+f["at"]+f["fade_seconds"])))
+            if scene["type"] == "clip":
+                window = next(w for w in self.timeline["windows"] if w["id"] == scene["clip"]["insertion"])
+                instants.update((window["clip_start"], (window["clip_start"]+window["clip_end"])/2, window["clip_end"]-1e-6))
             if scene["type"] == "comparison":
                 instants.update(start+i.get("at", 0) for i in scene["comparison"] if start+i.get("at", 0) < end)
                 if self.plan.get("layout") == "fullbleed":

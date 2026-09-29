@@ -15,6 +15,32 @@ explicitly with a reason; retain truthfulness, source attribution and
 non-hierarchical treatment of communities. The renderer checks the ordered
 stages and recorded audio review; it does not replace this semantic audit.
 
+## Family reading (2026-09-29)
+
+Read the production's brief first, or run
+`node social/tools/narration/check-family-brief.mjs <brief.json>`. This skill answers
+the universal checks it owns — **uncertainty, intelligibility, non-essentialising** —
+for every family, and none of them can be `sans objet`. The grid below was written on
+the name series; read by family:
+
+- **Series `name-origin`** (and any legacy production whose subject the site ledger
+  holds): the grid as written, including criteria 1, 2 and 8 in their name-series form
+  and the « Un reel au gabarit » section.
+- **Every other family**: criteria 3, 4, 5, 6, 7, 9 and 10 apply unchanged — they judge
+  who is the subject of a sentence, refused phrases, dates, what remains, one closed
+  loop, non-hierarchy and register. Criterion **1** reads « the hook's question receives
+  its answer in the piece, and the piece says what it is (a portrait, a route, a
+  comparison…) » ; the « plusieurs appellations » clause applies only if the piece
+  states a name claim or a people is its declared subject. Criterion **2** applies only
+  when a people is the declared subject, as before. Criterion **8**: the fixed closing
+  is the name series' wording (« raconter l'origine des noms »). Where the family's
+  approved profile carries a closing, judge that one; where none is approved, the
+  criterion is `sans objet` with the reason and the decision left to the operator — do
+  not write new closing copy and call it approved.
+- **`sans objet` is a recorded verdict, not a skipped line**: the note says why. A
+  blocking criterion that applies and scores 0 still blocks; `sans objet` never lifts
+  it, and never applies to criteria 3, 4, 5, 9 or 10.
+
 Une seule question : **quelqu'un qui voit cette production pour la première
 fois repart-il avec le message, et un abonné le reconnaît-il ?**
 
@@ -120,6 +146,9 @@ sujet. Une grille lue à l'ancienne noterait 0 chaque pièce qui la porte, et
   concluent.
 
 ### Un reel au gabarit : les critères 1, 2, 3 et le vocabulaire
+
+Cette section vaut pour la **série name-origin**. Un reel d'une autre famille n'a pas
+de gabarit de nom à respecter : voir « Family reading » plus haut.
 
 Depuis le 2026-09-21, la narration d'un reel suit le gabarit de sa catégorie
 (`.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md`). Lue avec
@@ -327,6 +356,13 @@ Lus : `cards.json`, `narration.fr.txt`, `post.md`
 
 | #   | Critère | Note | Bloquant | La phrase | Pourquoi |
 | --- | ------- | ---- | -------- | --------- | -------- |
+
+## Revues appliquées
+
+Une ligne par revue du plan de la famille (`check-family-brief.mjs`) : les cinq
+universelles (`required`), puis `name`, `myth`, `geography`, `music`,
+`name-origin-gabarit` avec `required` et le verdict de la revue, ou `not-applicable`
+et **la raison**. Une revue `not-applicable` n'en annule aucune autre.
 
 ## À réécrire
 

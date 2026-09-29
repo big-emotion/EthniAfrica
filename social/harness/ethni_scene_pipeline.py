@@ -63,8 +63,8 @@ def execute(action, project, plan_path, lock_path, output, review_path=None):
         require('_epreuves' in output.parts and output.is_relative_to(project),
                 'Output must be a private _epreuves destination inside the project')
     plan = json.loads(plan_path.read_text())
-    source = prepare_source(project, plan['source'])
-    validate_plan(plan, project, source['duration'])
+    source = prepare_source(project, plan['source'], plan)
+    validate_plan(plan, project, source['duration'], source.get('timeline'))
     current = identity(project, plan)
     expected = json.loads(lock_path.read_text()) if lock_path.exists() else None
     if expected is not None:
@@ -73,7 +73,7 @@ def execute(action, project, plan_path, lock_path, output, review_path=None):
                 'Handoff inputs or runtime changed; review the difference and prepare a new named lock')
     elif action != 'prepare':
         raise ValueError('Missing handoff lock; prepare the reviewed package first')
-    renderer = SceneRenderer(plan, project, source['captions'])
+    renderer = SceneRenderer(plan, project, source['captions'], timeline=source.get('timeline'))
     instants = renderer.preflight()
     frames = [{'at': instant, 'sha256': hashlib.sha256(renderer.render(instant).tobytes()).hexdigest()}
               for instant in instants]

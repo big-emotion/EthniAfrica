@@ -42,6 +42,21 @@ This is doctrine for the _data_ this directory versions. The actual on-screen
 card copy is authored in `cards.json` by `ethniafrica-structure`, and the same
 rule applies there once that skill is updated to write to this ledger.
 
+## Scope of this ledger — operator direction, 2026-09-27
+
+**This directory is the name series' ledger, not the whole workshop's.** The
+rules below (the `?`-ending question and myth, the five typologies, the
+network × format gate, the Monday/Wednesday/Friday appointments) describe the
+name-origin series. Social stories that are not about a name — a portrait, a
+circulation, a listening, a comparison, a material biography — are recorded in
+the private library, never here, and never with a fabricated site path or myth.
+Their shared vocabulary (subject, angle, edition, publication occurrence,
+narrative family, scoped reviews) is
+[EDITORIAL-CONTRACT.md](../design/gabarits-social/EDITORIAL-CONTRACT.md).
+A `publications[]` row below is exactly what that contract calls a publication
+occurrence: publishing one network's row never closes the subject, and a
+repeated angle or a same-angle adaptation is legitimate.
+
 ## The fixed format
 
 **Scope exception, 2026-09-25:**
@@ -155,8 +170,11 @@ below.
 
 ## Current cadence — operator revision, 2026-09-22
 
-**Monday, Wednesday and Friday remain the publication appointments. The ordered
-subject sequence governs their contents, not a fixed number of new subjects.**
+**Since 2026-09-27 this cadence is a planning aid for the name series, not an
+obligation: a ready edition may have no date, and no weekday is mandatory
+(see the scope section above).** When the name series is scheduled, Monday,
+Wednesday and Friday remain its appointments. The ordered
+subject sequence governs their contents, not a fixed number of new subjects.
 The operator explicitly left the choice of two or three weekly subjects open:
 a complex subject may occupy several appointments or return in a later chapter.
 

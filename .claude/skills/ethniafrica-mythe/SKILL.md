@@ -13,6 +13,16 @@ an attested myth is optional. Evaluate any actual correction against its
 identified sources, without requiring a nonexistent site fiche. Do not invent
 a myth to admit the subject. Attribution and uncertainty remain mandatory.
 
+## When this review applies (2026-09-29)
+
+It is `required` only when the edition declares an attested belief it corrects
+(`myth` in the brief; `check-family-brief.mjs` says so). A piece with no such belief —
+a portrait, a listening, a comparison, a material biography, or a name investigation
+that simply explains — is `not-applicable`, recorded with its reason, and needs no myth:
+inventing one to have something to defeat is the « homme de paille » failure this skill
+exists to stop. `explique` remains a complete and valid verdict. When it _does_ apply,
+in any family, every rule below holds, including the five slippages.
+
 Une question, trois lignes, un verdict. C'est tout le skill.
 
 Il est appelé par `ethniafrica-idee` (le sujet), `ethniafrica-structure` (les

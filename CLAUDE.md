@@ -328,6 +328,35 @@ memoires-sonores` in the private library only, without a fabricated site record.
 The website's remit is unchanged; broader display names and bios for
 these two accounts are approved in principle, with exact copy still pending.
 
+**Social scope and the editorial contract (operator direction, 2026-09-27).** The
+website's remit is unchanged and stays name-centred; the social workshop may also
+tell sourced stories about Africa, its diasporas and their relationships, without a
+site fiche, a site path or an attested myth existing for the piece. What that
+rests on is defined once, in
+[`docs/design/gabarits-social/EDITORIAL-CONTRACT.md`](docs/design/gabarits-social/EDITORIAL-CONTRACT.md),
+and enforced by `social/tools/contract/`. In short:
+
+- **Six narrative families** (name investigation, historical portrait, circulation and
+  connections, guided listening, comparison, material biography) are narrative
+  structures, chosen separately from the visual profile and the output format. An
+  unknown family fails; a missing one is never guessed.
+- **A subject has angles, an angle has editions, an edition has publication
+  occurrences.** "Published" is a property of one occurrence on one network, never a
+  state that closes a subject. Adapting, deepening and republishing are legitimate,
+  distinct acts; no companion format is owed.
+- **A production date is optional.** Ready is not scheduled; no weekday is mandatory
+  and no piece is cross-posted by obligation.
+- **Reviews follow the claims and media actually present.** Provenance, honest
+  uncertainty, real asset attribution, intelligibility and non-essentialising claims
+  apply to every piece; the name, myth, geographic and musical reviews apply when a
+  claim or a medium requires them, and report `not-applicable` with a reason
+  otherwise. An approval is bound to the inputs it read and goes stale only when one
+  of them changes.
+- The name-origin series keeps its fixed checks (`series: name-origin`), and the
+  approved Mémoires sonores presentation is untouched. The site's production ledger
+  under `docs/productions/` stays the name series' ledger; a social-only piece is
+  never filed there.
+
 The publishing chain runs in one order, and **all ten of its skills live here**,
 under their `ethniafrica-` names. They left for the private workspace on
 2026-09-10, on the rule that a public repository carries no production skills, and
