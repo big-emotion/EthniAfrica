@@ -221,4 +221,48 @@ describe("the subject of a name search", () => {
     expect(selectNameSubject([], "fang")).toEqual([]);
     expect(selectNameSubject([people("PPL_FANG", "Fang")], "  ")).toEqual([]);
   });
+
+  describe("typed the way readers type", () => {
+    const fula: SearchResult = {
+      type: "people",
+      id: "PPL_FULA",
+      name: "Fula (Fulbe / Peul)",
+      naming: {
+        selfGiven: "Fulbe (pluriel), Pullo (singulier)",
+        forms: [{ form: "Peul" }],
+        eras: [],
+        presentation: { forms: [], eras: [], disagreements: [], evidence: [] },
+      },
+    };
+
+    // @req REQ-178
+    it.each([
+      "d'où vient le nom peul ?",
+      "d’où vient le nom peul",
+      "les peuls",
+      "le Peul",
+      "Peul ?",
+    ])("finds the entry a reader means by « %s »", (typed) => {
+      expect(selectNameSubject([fula], typed).map((e) => e.id)).toEqual([
+        "PPL_FULA",
+      ]);
+    });
+
+    // @req REQ-178
+    it("does not take a plural as the name of a different entry", () => {
+      const bas = people("PPL_BAS", "Bas");
+      expect(selectNameSubject([bas], "basses")).toEqual([]);
+    });
+
+    // A two-name query has no single subject: the page widens, it never picks.
+    // @req REQ-178
+    it("has no subject for two names typed together", () => {
+      expect(
+        selectNameSubject(
+          [people("PPL_MANDJA", "Mandja"), people("EGY", "Égypte")],
+          "mandja egypte"
+        )
+      ).toEqual([]);
+    });
+  });
 });

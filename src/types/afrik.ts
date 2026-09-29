@@ -876,6 +876,17 @@ export interface FtsSearchResponse {
   leads: SearchLead[];
   /** Qualified similar names for a non-empty search; empty otherwise. */
   nearNames: SearchNearName[];
+  /**
+   * The cleaned query that found the results, when it differs from what was
+   * typed (article, question frame or plural removed). Absent when the typed
+   * text itself answered.
+   */
+  matchedQuery?: string;
+  /**
+   * The names a multi-name query was split into when no entry answered to all
+   * of them at once. Present means the results are a widening.
+   */
+  widenedFrom?: string[];
 }
 
 // ==========================================

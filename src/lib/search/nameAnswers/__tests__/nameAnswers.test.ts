@@ -63,11 +63,11 @@ describe("reviewed name answers", () => {
   });
 
   // A reviewed term is suggested for a near spelling, never substituted for it:
-  // the reader picks it, and the page never claims « pigmée » was « Pygmée ».
+  // the reader picks it, and the page never claims « pygmeee » was « Pygmée ».
   // @req REQ-125
   it.each([
-    ["pigmée", ["Pygmée"]],
-    ["Pigmee", ["Pygmée"]],
+    ["pygmeee", ["Pygmée"]],
+    ["Pygmeet", ["Pygmée"]],
     ["bambra", ["Bambara"]],
     ["lingla", ["Lingala"]],
   ])(
@@ -106,5 +106,35 @@ describe("reviewed name answers", () => {
         expect(violatesReaderRegister(text)).toBe(false);
       }
     }
+  });
+
+  // Spellings the September log shows readers typing for a word the corpus
+  // files as « Pygmée ». They are alternate names of the reviewed answer, so
+  // the data resolves them and no code carries a synonym list.
+  // @req REQ-178
+  it.each(["pigmée", "pigmee", "Pigmées", "pygme", "pigme"])(
+    "answers the spelling « %s » of Pygmée",
+    (typed) => {
+      expect(findNameAnswers(typed).map(({ term }) => term)).toEqual([
+        "Pygmée",
+      ]);
+      expect(suggestNameTerms(typed)).toEqual([]);
+    }
+  );
+
+  // @req REQ-178
+  it.each(["d’où vient le nom pygmée ?", "les pygmées", "Pygmée ?"])(
+    "answers « %s » once the frame and the article are set aside",
+    (typed) => {
+      expect(findNameAnswers(typed).map(({ term }) => term)).toEqual([
+        "Pygmée",
+      ]);
+    }
+  );
+
+  // @req REQ-125
+  it("still offers a near spelling as a suggestion, never as an answer", () => {
+    expect(findNameAnswers("pygmeee")).toEqual([]);
+    expect(suggestNameTerms("pygmeee")).toEqual(["Pygmée"]);
   });
 });

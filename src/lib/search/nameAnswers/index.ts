@@ -1,4 +1,5 @@
 import { normalizeString } from "@/lib/normalize";
+import { normaliseSearchQuery } from "@/lib/search/queryNormalisation";
 import {
   strongestSearchSourceStanding,
   type SearchEvidence,
@@ -82,7 +83,9 @@ export function suggestNameTerms(
   query: string | undefined,
   language: Language = "fr"
 ): string[] {
-  const wanted = normalizeString(query?.trim());
+  const wanted = normalizeString(
+    normaliseSearchQuery(query ?? "").candidates[0]
+  );
   if (wanted.length < 4) return [];
   const allowed = wanted.length >= 8 ? 2 : 1;
   const suggested = new Set<string>();
@@ -106,20 +109,22 @@ export function findNameAnswers(
   query: string | undefined,
   language: Language = "fr"
 ): NameAnswer[] {
-  const wanted = normalizeString(query?.trim());
-  if (!wanted) return [];
-  return REVIEWED.filter((answer) => termsOf(answer).includes(wanted)).map(
-    (answer): NameAnswer => {
-      const uncertainty = answer.uncertainty;
-      return {
-        term: answer.term[language] ?? answer.term.fr,
-        subjects: answer.subjects,
-        paragraphs: answer.paragraphs[language] ?? answer.paragraphs.fr,
-        ...(uncertainty
-          ? { uncertainty: uncertainty[language] ?? uncertainty.fr }
-          : {}),
-        sources: evidenceOf(answer, language),
-      };
-    }
+  const wanted = normaliseSearchQuery(query ?? "").candidates.map(
+    normalizeString
   );
+  if (wanted.length === 0) return [];
+  return REVIEWED.filter((answer) =>
+    termsOf(answer).some((term) => wanted.includes(term))
+  ).map((answer): NameAnswer => {
+    const uncertainty = answer.uncertainty;
+    return {
+      term: answer.term[language] ?? answer.term.fr,
+      subjects: answer.subjects,
+      paragraphs: answer.paragraphs[language] ?? answer.paragraphs.fr,
+      ...(uncertainty
+        ? { uncertainty: uncertainty[language] ?? uncertainty.fr }
+        : {}),
+      sources: evidenceOf(answer, language),
+    };
+  });
 }

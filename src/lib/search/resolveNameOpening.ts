@@ -44,7 +44,12 @@ export function resolveNameOpening({
         ({ type, id }) => type === subject.type && id === subject.id
       )
     );
-    return covered.length > 0 ? [{ answer, subjects: covered }] : [];
+    // With no subject at all the answer stands on the term alone: it was
+    // matched on the query, and the corpus holds it whether or not a fiche
+    // answered to the spelling typed.
+    return covered.length > 0 || subjects.length === 0
+      ? [{ answer, subjects: covered }]
+      : [];
   });
 
   const answered = new Set(

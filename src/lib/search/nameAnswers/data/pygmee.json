@@ -1,6 +1,6 @@
 {
   "term": { "fr": "Pygmée", "en": "Pygmy" },
-  "aliases": ["Pygmées"],
+  "aliases": ["Pygmées", "Pigmée", "Pigmées", "Pigme", "Pygme"],
   "subjects": [
     { "type": "people", "id": "PPL_PYGMEES_AUTOCHTONES" },
     { "type": "people", "id": "PPL_AKA" },
