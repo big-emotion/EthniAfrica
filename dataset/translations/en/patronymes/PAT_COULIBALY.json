@@ -32,6 +32,18 @@
           "sourceRefs": ["corpus-ppl-bambara-organisation"]
         }
       ]
+    },
+    {
+      "spelling": "Kulibali",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
+    },
+    {
+      "spelling": "Kùlubàli",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
+    },
+    {
+      "spelling": "Kurubari",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["gha-v-16-18"] }]
     }
   ],
   "transmissionMode": "patrilineal",
@@ -177,7 +189,7 @@
       "url": "https://ich.unesco.org/en/RL/manden-charter-proclaimed-in-kurukan-fuga-00290",
       "tier": "official",
       "source_kind": "intergovernmental",
-      "notes": "Inscribed in 2009. The entry describes a charter proclaimed in the early thirteenth century by the founder of the Mali empire and an assembly of wise men, whose words are passed on orally from father to son within Malinké clans. It does not mention the sanankuya."
+      "notes": "Inscription of 2009. The entry describes a charter proclaimed at the beginning of the thirteenth century by the founder of the Mali Empire and an assembly of sages, whose words are transmitted orally from father to son within the Malinké clans. It does not mention the sanankuya."
     },
     {
       "sourceKey": "saibou-2023-kurukan-fuga",
@@ -185,7 +197,7 @@
       "url": "https://www.revues.scienceafrique.org/magana/texte/saibou2023/",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Quotes article 7 of the charter: « il est institué entre les Mandenkas le Sanankunya (cousinage à plaisanterie) et le Tanamanyöya (forme de totémisme) » (the sanankunya, a joking relationship, and the tanamanyöya, a form of totemism, are instituted among the Mandenka). Places the oral assembly around 1236 and states that the text was restituted by griots at a seminar in Kankan, Guinea, in 1998, then translated into French and published in 2008."
+      "notes": "Cites article 7 of the charter: « il est institué entre les Mandenkas le Sanankunya (cousinage à plaisanterie) et le Tanamanyöya (forme de totémisme) ». Places the oral assembly around 1236 and states that the text was restored by griots during a seminar in Kankan, Guinea, in 1998, then translated into French and published in 2008."
     },
     {
       "sourceKey": "mann-2022-hunters-oath",
@@ -193,7 +205,7 @@
       "url": "https://humanityjournal.org/issue13-2/the-world-wont-listen-the-mande-hunters-oath-and-human-rights-in-translation/",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Notes that the celebration of these charters has provoked skepticism among those who question their origins, and therefore their age, and refers to Jan Jansen's work reading them as interventions in a contested cultural politics."
+      "notes": "Notes that the celebration of these charters has aroused scepticism among those who question their origin, and therefore their age, and refers to the work of Jan Jansen, who reads them as interventions in a disputed cultural politics."
     }
   ],
   "gaps": [
@@ -204,9 +216,9 @@
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-09-09T09:36:24.670Z",
-    "model": "claude-sonnet-5",
-    "sourceHash": "71300131451ad2ee9695378b063290d84b294f71dde20cfa7698df05e410af68",
+    "translatedAt": "2026-09-29T16:20:37.767Z",
+    "model": "claude-sonnet-5-5",
+    "sourceHash": "296fb0fbfb975d015f77a5c74dad519b8dd0af08f4cc8c99c1188b492feda63d",
     "fieldHashes": {
       "origin.linguisticReconstructions[0].claim": "14f92c91d5d99f18",
       "origin.linguisticReconstructions[1].claim": "8c9ec6f6697947da",
@@ -217,6 +229,9 @@
       "sources[3].notes": "b80adb343411bfb9",
       "sources[4].notes": "2c14e48c42d56e18",
       "sources[5].notes": "79986afda62f44db",
+      "sources[6].notes": "53ac45265e444fe6",
+      "sources[7].notes": "a4e54a5f67982b0c",
+      "sources[8].notes": "2c7aa22ef02dfaab",
       "gaps[0].reason": "e34bb27642ba5e03"
     },
     "reviewRequired": [

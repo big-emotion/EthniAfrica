@@ -60,13 +60,13 @@ export const READER_QUERIES: ReaderQuery[] = [
   {
     typed: "pigmée",
     problem: "variant spelling of Pygmée",
-    outcome: "neighbour",
+    outcome: "widened",
     answered: true,
   },
   {
     typed: "pigmee",
     problem: "variant spelling, unaccented",
-    outcome: "neighbour",
+    outcome: "widened",
     answered: true,
   },
   {
@@ -99,8 +99,8 @@ export const READER_QUERIES: ReaderQuery[] = [
   // Questions and punctuation
   {
     typed: "d’où vient les bakayoko",
-    problem: "question frame, curly apostrophe",
-    outcome: "widened",
+    problem: "question frame, curly apostrophe, spelling of Bagayoko",
+    outcome: "hit",
   },
   {
     typed: "qui a créé la côte d'ivoire",

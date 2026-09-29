@@ -32,6 +32,15 @@
           "sourceRefs": ["corpus-ppl-bambara-organisation"]
         }
       ]
+    },
+    {
+      "spelling": "Jara",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw", "bamadaba-lexique"]
+        }
+      ]
     }
   ],
   "transmissionMode": "patrilineal",
@@ -44,6 +53,16 @@
         "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
         "claimStatus": "established",
         "sourceRefs": ["jansen-sunjata-paradigm"]
+      },
+      {
+        "claim": "Le nom de clan Jàra, dont Diarra est la transcription française usuelle, est identique au mot bambara jàra, qui désigne le lion (wáraba en est le synonyme) et, dans un second sens que le dictionnaire donne à part, le fétiche. Aucune source consultée ne dit si le clan tient son nom du fauve, du fétiche ou d'autre chose : l'origine du nom n'est pas établie.",
+        "claimStatus": "contested",
+        "sourceRefs": ["bamadaba-lexique", "bamadaba-jamuw"]
+      },
+      {
+        "claim": "L'entrée Jàra du dictionnaire des jamuw rapporte un interdit propre au clan : un Jàra ne doit pas regarder un nourrisson pendant les huit premiers jours qui suivent sa naissance, faute de quoi l'enfant mourrait. Cette note n'est portée que par cette entrée et n'est recoupée par aucune autre source consultée.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
       }
     ]
   },
@@ -52,6 +71,11 @@
       "peopleId": "PPL_BAMBARA",
       "status": "attested",
       "sourceRefs": ["corpus-ppl-bambara-organisation"]
+    },
+    {
+      "peopleId": "PPL_MALINKE",
+      "status": "supposed",
+      "sourceRefs": ["bamadaba-jamuw"]
     }
   ],
   "countries": [
@@ -108,6 +132,42 @@
         "canut-2002-senankuya",
         "canut-smith-2006-pactes"
       ]
+    },
+    {
+      "targetPatronymeId": "PAT_DEMBELE",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_SANOGO",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_KONE",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_BAGAYOKO",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
     }
   ],
   "casteOrSocialFunction": null,
@@ -136,7 +196,7 @@
       "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs, et la lecture retenue est celle que le fichier impose : \\ca porte les termes de statut mandingues eux-mêmes (nùmu, jèli, hɔ́rɔn, garanke, finɛ, tontigi, wage, gesere) ; \\sn se lit senankun parce que l'entrée Kúyate annote sa propre ligne « \\sn Keyita » d'une réserve disant que cette relation-là est une entente amicale et non un senankuya. Les liens \\sn ne sont pas systématiquement réciproques d'une entrée à l'autre : chaque paire est donc citée d'après l'entrée qui la porte, nommée dans le claim ou le gap."
+      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs, et la lecture retenue est celle que le fichier impose : \\ca porte les termes de statut mandingues eux-mêmes (nùmu, jèli, hɔ́rɔn, garanke, finɛ, tontigi, wage, gesere) ; \\sn se lit senankun parce que l'entrée Kúyate annote sa propre ligne « \\sn Keyita » d'une réserve disant que cette relation-là est une entente amicale et non un senankuya. Les liens \\sn ne sont pas systématiquement réciproques d'une entrée à l'autre : chaque paire est donc citée d'après l'entrée qui la porte, nommée dans le claim ou le gap. L'entrée Jàra porte les marqueurs de groupe b (bambara) et m, lu comme indice malinké par recoupement avec l'entrée Kéyità, qu'une autre de nos fiches documente comme jamu malinké ; ses liens \\sn nomment Tarawele, Denbele, Sanogo, Kone, Kanute, Dunbuya et Bagayogo, et la note sur les nourrissons y est rédigée en russe, traduite ici."
     },
     {
       "sourceKey": "canut-2002-senankuya",
@@ -153,6 +213,14 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Canut, Cécile, et Smith, Étienne, Cahiers d'études africaines, numéro 184, 2006, p. 687 et suivantes. Citée pour la mise en garde qu'elle porte : l'idée que la parenté à plaisanterie apaiserait les conflits y est traitée comme une hypothèse héritée de Radcliffe-Brown et reprise par les études sur la résolution des conflits, donc comme un discours à analyser et non comme un effet mesuré. La page de début est vérifiée, la page de fin ne l'est pas."
+    },
+    {
+      "sourceKey": "bamadaba-lexique",
+      "title": "Bamadaba — dictionnaire bambara-français, lexique",
+      "url": "https://bamadaba.coastsystems.net/lexicon/j/",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Version en ligne du dictionnaire électronique bambara-français dont l'annexe des noms claniques est citée à part. L'article jàra y est glosé « lion, Panthera leo », avec wáraba pour synonyme, puis « fétiche » ; un second article Jàra le range parmi les noms de clan. Consulté en ligne le 29 septembre 2026."
     }
   ],
   "gaps": [

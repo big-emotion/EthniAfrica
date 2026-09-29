@@ -11,24 +11,50 @@
     {
       "spelling": "Touré",
       "attestations": [
-        { "countryId": "MLI", "sourceRefs": ["gha-iv-mali"] },
-        { "countryId": "GIN", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["gha-iv-mali"]
+        },
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["massing-2000-wangara"]
+        }
       ]
     },
     {
       "spelling": "Toure",
       "attestations": [
-        { "countryId": "MLI", "sourceRefs": ["gha-iv-mali"] },
-        { "countryId": "GIN", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["gha-iv-mali"]
+        },
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Ture",
-      "attestations": [{ "countryId": "MLI", "sourceRefs": ["gha-iv-mali"] }]
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["gha-iv-mali"]
+        }
+      ]
     },
     {
       "spelling": "Tùre",
-      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
     }
   ],
   "transmissionMode": "other",
@@ -57,6 +83,26 @@
         "claim": "Le père de Samory, Lakhafia Touré, est décrit par un officier français du XIXe siècle comme un Dyula pauvre marié à une femme Mara, et son fils comme né à Sanankoro. L'historien qui rassemble ces témoignages souligne aussitôt qu'ils se contredisent d'un auteur à l'autre, un autre récit plaçant la naissance ailleurs. Le rattachement du nom au monde marchand dyula repose donc sur un témoignage colonial isolé, non sur une filiation établie.",
         "claimStatus": "contested",
         "sourceRefs": ["person-1963-ancetres-samori"]
+      },
+      {
+        "claim": "Au temps de l'empire du Mali, les rois (maliks) du Zaghari, sur le Niger moyen, sont dits sunnites orthodoxes et du clan Touré, alors qu'une autre partie de la population relève de la secte ibadite et du clan Saganogo.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["massing-2000-wangara"]
+      },
+      {
+        "claim": "Les Touré sont cités comme « blancs » et comme rois, ce qui a fait penser à une origine berbère ou arabe ; l'auteur qui le relève l'avance comme une piste appelant plus de recherches, et non comme un fait établi. Elle s'oppose à la lecture qui les range parmi les plus anciens clans soninké : l'origine du nom reste discutée.",
+        "claimStatus": "contested",
+        "sourceRefs": ["massing-2000-wangara", "gha-iv-mali"]
+      },
+      {
+        "claim": "Parmi les noms de clan bambara qui seraient venus de la région de Ségou et de San, et qui fondent la ville de Kong, figurent Baro, Daou, Balo, Cissé et Touré. Le rattachement des Touré de Kong aux Bambara reste une indication prudente, non une filiation démontrée.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["massing-2000-wangara"]
+      },
+      {
+        "claim": "Le dictionnaire des jamuw donne pour l'entrée Tùre les équivalences Mànju, Bangura, Samake, Sogoba et Gonepogi, c'est-à-dire des noms qu'il tient pour le même clan sous d'autres appellations, et il lui attache un lien de parenté à plaisanterie avec Tarawele (Traoré).",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
       }
     ]
   },
@@ -70,6 +116,11 @@
       "peopleId": "PPL_MALINKE",
       "status": "attested",
       "sourceRefs": ["gha-iv-mali"]
+    },
+    {
+      "peopleId": "PPL_BAMBARA",
+      "status": "supposed",
+      "sourceRefs": ["massing-2000-wangara"]
     }
   ],
   "countries": [
@@ -82,6 +133,11 @@
       "countryId": "GIN",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "CIV",
+      "status": "attested",
+      "sourceRefs": ["massing-2000-wangara"]
     }
   ],
   "alliances": [
@@ -143,6 +199,13 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Relevé interne d'EthniAfrica. Il enregistre que le nom est porté en Guinée, sans qu'un travail publié ait été consulté pour cette attestation-là : les sources nommées à côté documentent le nom au Mali et dans le Manden, non sa répartition guinéenne. Les autres affirmations de cette fiche ne reposent pas sur ce relevé."
+    },
+    {
+      "sourceKey": "massing-2000-wangara",
+      "title": "The Wangara, an Old Soninke Diaspora in West Africa?",
+      "url": "https://journals.openedition.org/etudesafricaines/175",
+      "tier": "referenced",
+      "notes": "Massing, Andreas, Cahiers d'Études africaines, 158, XL-2, 2000, p. 281-308 ; texte intégral en accès libre, consulté le 29 septembre 2026. Le paragraphe 16 dit que les rois du Zaghari étaient du clan Touré ; la note 12 appelle à étudier ce clan, l'un des principaux du Niger moyen, cité comme « blanc » et royal, ce qui laisserait penser à une origine berbère ou arabe ; le paragraphe 38 range les Touré parmi les noms de clan bambara venus, apparemment, de la région de Ségou et de San, à l'origine de Kong. L'article traite de la diaspora soninké et non du seul clan Touré : ce sont des passages incidents, à lire comme des indications."
     }
   ],
   "gaps": [
@@ -161,6 +224,10 @@
     {
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission, et aucune des sources consultées ne dit comment ce nom-ci se transmet."
+    },
+    {
+      "fieldPath": "spellings",
+      "reason": "Les graphies anglophones Touray et Turay ne figurent dans aucune source que nous puissions citer : elles ne sont donc pas ajoutées aux graphies de ce nom."
     }
   ]
 }

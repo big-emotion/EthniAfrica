@@ -32,6 +32,33 @@
           "sourceRefs": ["corpus-ppl-bambara-organisation"]
         }
       ]
+    },
+    {
+      "spelling": "Kulibali",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
+    },
+    {
+      "spelling": "Kùlubàli",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
+    },
+    {
+      "spelling": "Kurubari",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["gha-v-16-18"]
+        }
+      ]
     }
   ],
   "transmissionMode": "patrilineal",
