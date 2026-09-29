@@ -1,0 +1,22 @@
+{
+  "formats": {
+    "tiktok": ["video", "carrousel"],
+    "instagram": ["video", "carrousel"],
+    "facebook": ["video", "carrousel"],
+    "youtube": ["video", "carrousel"],
+    "linkedin": ["video", "carrousel", "texte"],
+    "x": ["video", "texte"]
+  },
+  "constraints": {
+    "youtube": {
+      "video": {
+        "maxDurationSeconds": {
+          "value": 180,
+          "sourceUrl": "https://support.google.com/youtube/answer/10059070",
+          "verifiedOn": "2026-09-29",
+          "quote": "YouTube's Shorts creation tools makes it easy to create short-form videos that are up to 3 minutes long with our multi-segment camera."
+        }
+      }
+    }
+  }
+}

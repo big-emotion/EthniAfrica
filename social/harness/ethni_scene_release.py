@@ -10,6 +10,10 @@ from ethni_scene_render import SceneRenderer
 from ethni_scenes import encode
 
 CHECKS = ('visual', 'listening', 'history', 'message', 'myth', 'voice_rights', 'license_compatibility', 'closing')
+# Only these follow the claims actually present (EDITORIAL-CONTRACT.md §4): a piece that
+# corrects no belief has no myth to review, and a family with no approved closing has none
+# to check. Everything else is universal or a rights matter and can never be waived.
+CONDITIONAL_CHECKS = ('myth', 'closing')
 DOCUMENTS = ('production-brief.md', 'SOURCES.md', 'message.md', 'mythe.md')
 
 
@@ -43,7 +47,8 @@ def validate_review(project, plan, lock, review):
     checks = review.get('checks', {})
     require(set(checks) == set(CHECKS), 'Release review must include all checks')
     for name, check in checks.items():
-        require(check.get('status') == 'pass', f'Release review pending or failed: {name}')
+        waived = check.get('status') == 'not-applicable' and name in CONDITIONAL_CHECKS
+        require(check.get('status') == 'pass' or waived, f'Release review pending or failed: {name}')
         text(check.get('evidence'), f'Release review evidence: {name}')
     assets = review.get('assets', {})
     require(set(assets) == set(plan['assets']), 'Release review must cover every asset')
