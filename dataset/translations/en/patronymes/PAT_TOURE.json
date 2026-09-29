@@ -1,0 +1,270 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "patronyme",
+    "directives": "Dossier fondé sur les sources nommées ci-dessous, relues une à une. Ne pas étendre une affirmation au-delà de ce que la source citée en regard énonce."
+  },
+  "id": "PAT_TOURE",
+  "nameMain": "Touré",
+  "nameSystem": "clan_name",
+  "spellings": [
+    {
+      "spelling": "Touré",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["gha-iv-mali"]
+        },
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["massing-2000-wangara"]
+        }
+      ]
+    },
+    {
+      "spelling": "Toure",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["gha-iv-mali"]
+        },
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
+      ]
+    },
+    {
+      "spelling": "Ture",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["gha-iv-mali"]
+        }
+      ]
+    },
+    {
+      "spelling": "Tùre",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
+    }
+  ],
+  "transmissionMode": "other",
+  "designatedSocialUnit": "clan",
+  "origin": {
+    "oralTraditions": [],
+    "writtenChronicles": [
+      {
+        "claim": "The Sudanese chronicles give two names for the askiya who took power at Gao at the end of the fifteenth century: Muhammad Ture or Muhammad Sylla. The synthesis that reports them describes him as of Soninke origin, of the Ture or Sylla clan of Takrur, and specifies that Ture was then a religious title, like Cisse, and that it was later adopted by the Moroccan conquerors. The name is therefore read here as the mark of a Muslim scholar before it is read as a descent.",
+        "claimStatus": "contested",
+        "sourceRefs": ["gha-iv-mali"]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "The Ture are among the oldest clans of Soninke origin in the Songhay world, along with the Sylla, the Tunkara, the Cissé, the Jakhité, the Dramé and the Diawara. The family is the basic unit and the clan a grouping of families.",
+        "claimStatus": "established",
+        "sourceRefs": ["gha-iv-mali"]
+      },
+      {
+        "claim": "After Soundiata's victory, the assembly of the Manden ranked the Touré and the Bérété among the five maraboutic clans, Soundiata's first allies, who had sought him out during his exile and who were proclaimed the five guardians of the faith, Mori Kanda Lolu. The group also includes the Cissé of Wagadou, converted to Islam and political allies of Soundiata.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["gha-iv-mali"]
+      },
+      {
+        "claim": "Samory's father, Lakhafia Touré, is described by a nineteenth-century French officer as a poor Dyula married to a Mara woman, and his son as born at Sanankoro. The historian who gathers these testimonies points out at once that they contradict one another from one author to the next, another account placing the birth elsewhere. The link between the name and the Dyula merchant world therefore rests on an isolated colonial testimony, not on an established descent.",
+        "claimStatus": "contested",
+        "sourceRefs": ["person-1963-ancetres-samori"]
+      },
+      {
+        "claim": "In the time of the Mali empire, the kings (maliks) of Zaghari, on the middle Niger, are said to be orthodox Sunnis of the Touré clan, while another part of the population belongs to the Ibadi sect and the Saganogo clan.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["massing-2000-wangara"]
+      },
+      {
+        "claim": "The Touré are cited as \"white\" and as kings, which has suggested a Berber or Arab origin; the author who notes this puts it forward as a lead calling for more research, not as an established fact. It stands against the reading that ranks them among the oldest Soninke clans: the origin of the name remains disputed.",
+        "claimStatus": "contested",
+        "sourceRefs": ["massing-2000-wangara", "gha-iv-mali"]
+      },
+      {
+        "claim": "Among the Bambara clan names said to have come from the region of Ségou and San, and to have founded the town of Kong, are Baro, Daou, Balo, Cissé and Touré. The link between the Touré of Kong and the Bambara remains a cautious indication, not a demonstrated descent.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["massing-2000-wangara"]
+      },
+      {
+        "claim": "The dictionary of jamuw gives for the entry Tùre the equivalents Mànju, Bangura, Samake, Sogoba and Gonepogi, that is, names it holds to be the same clan under other names, and it attaches to it a joking kinship tie with Tarawele (Traoré).",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
+      }
+    ]
+  },
+  "peoples": [
+    {
+      "peopleId": "PPL_SONINKE",
+      "status": "attested",
+      "sourceRefs": ["gha-iv-mali"]
+    },
+    {
+      "peopleId": "PPL_MALINKE",
+      "status": "attested",
+      "sourceRefs": ["gha-iv-mali"]
+    },
+    {
+      "peopleId": "PPL_BAMBARA",
+      "status": "supposed",
+      "sourceRefs": ["massing-2000-wangara"]
+    }
+  ],
+  "countries": [
+    {
+      "countryId": "MLI",
+      "status": "attested",
+      "sourceRefs": ["gha-iv-mali"]
+    },
+    {
+      "countryId": "GIN",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "CIV",
+      "status": "attested",
+      "sourceRefs": ["massing-2000-wangara"]
+    }
+  ],
+  "alliances": [
+    {
+      "targetPatronymeId": "PAT_TRAORE",
+      "allianceType": "senankuya",
+      "sourceRefs": ["bamadaba-jamuw"]
+    }
+  ],
+  "casteOrSocialFunction": {
+    "value": "Maraboutic clan in the Manden tradition: the Touré are among the five clans proclaimed guardians of the faith after Soundiata's victory, and the name is borne by lineages of Muslim scholars and merchants. The dictionary of clan names attaches no Mandinka status term to its entry Tùre, whereas it attaches one to the entries Kònde and Kántɛ: the name therefore designates neither a group of artisans nor a group of musicians.",
+    "sourceRefs": ["gha-iv-mali", "bamadaba-jamuw"]
+  },
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Samory Touré (vers 1830-1900)",
+      "sourceRefs": ["gha-vii-colonial", "person-1963-ancetres-samori"]
+    }
+  ],
+  "homonyms": [],
+  "sources": [
+    {
+      "sourceKey": "gha-iv-mali",
+      "title": "Histoire générale de l'Afrique, volume IV : l'Afrique du XIIe au XVIe siècle",
+      "url": "https://archive.org/details/unesco_general_history_africa_iv",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, 1984, edited by D. T. Niane; consulted in the full text of the digitised copy. Chapter 6, \"Mali and the second Mandingo expansion\" (D. T. Niane), ranks the Touré and the Bérété among the five maraboutic clans proclaimed the \"five guardians of the faith\", Mori Kanda Lolu, alongside the Cissé of Wagadou (p. 134). The chapter on the Songhay names the Ture among the oldest Soninke clans, with the Sylla, Tunkara, Cissé, Jakhité, Dramé and Diawara (p. 205), and its note 13 (p. 191) reports that the chronicles give Muhammad Ture or Sylla for the askiya and that Ture was then a religious title, like Cisse. The work is a scholarly synthesis and not a chronicle; only the explicit mention of the chronicles is classed as such."
+    },
+    {
+      "sourceKey": "gha-vii-colonial",
+      "title": "Histoire générale de l'Afrique, volume VII : l'Afrique sous domination coloniale, 1880-1935",
+      "url": "https://www.unesco.org/en/articles/general-history-africa-vii-africa-under-colonial-domination-1880-1935",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, 1985, edited by A. Adu Boahen; consulted in the full text of the volume. Chapter 6 dates Samory Touré \"c. 1830-1900\", describes the army and the empire he built between the north of present-day Sierra Leone and the Sassandra, then reports his capture by surprise at Guélémou, on 29 September 1898, by Gouraud's column, and his deportation to Gabon, where he died in 1900. For detail the volume refers to the three volumes of Yves Person's thesis."
+    },
+    {
+      "sourceKey": "person-1963-ancetres-samori",
+      "title": "Les ancêtres de Samori",
+      "url": "https://www.persee.fr/doc/cea_0008-0055_1963_num_4_13_3008",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Person, Yves, Cahiers d'études africaines, volume 4, number 13, 1963, pp. 125-156; full text in open access. The author is the author of the thesis \"Samori : une révolution dyula\", published in three volumes by the Institut fondamental d'Afrique noire between 1968 and 1975. The article gathers the contradictory accounts that nineteenth-century French officers gave of Samory's ancestry: one says he was the son of a poor Dyula named Lakhafia Touré and has him born at Sanankoro, another has him born elsewhere, and an English report makes him an Arab plunderer. Cited for the contradiction itself as much as for the Dyula version."
+    },
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Onomastic appendix of the Bamadaba, an electronic Bambara-French dictionary supplementing the Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). 375 entries in MDF format, consulted in the complete file. The file provides no legend for its markers, and the reading adopted is the one the file imposes: the line of status terms carries the Mandinka words themselves (nùmu, jèli, hɔ́rɔn, tontigi), and the line of clan ties reads as senankuya because the entry Kúyate annotates its own with a reservation saying that this relation is a friendly understanding and not a senankuya. These ties are not reciprocal from one entry to another: the pair cited here is the one carried by the entry Tùre, which refers only to Tarawele and receives no status term."
+    },
+    {
+      "sourceKey": "afrik-candidate-queue",
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null,
+      "tier": "unverified",
+      "source_kind": "ai_generated",
+      "notes": "Internal survey by EthniAfrica. It records that the name is borne in Guinea, without any published work having been consulted for that attestation: the sources named alongside document the name in Mali and in the Manden, not its distribution in Guinea. The other claims of this fiche do not rest on this survey."
+    },
+    {
+      "sourceKey": "massing-2000-wangara",
+      "title": "The Wangara, an Old Soninke Diaspora in West Africa?",
+      "url": "https://journals.openedition.org/etudesafricaines/175",
+      "tier": "referenced",
+      "notes": "Massing, Andreas, Cahiers d'Études africaines, 158, XL-2, 2000, pp. 281-308; full text in open access, consulted on 29 September 2026. Paragraph 16 says that the kings of Zaghari were of the Touré clan; note 12 calls for a study of this clan, one of the principal ones of the middle Niger, cited as \"white\" and royal, which would suggest a Berber or Arab origin; paragraph 38 ranks the Touré among the Bambara clan names apparently coming from the region of Ségou and San, at the origin of Kong. The article deals with the Soninke diaspora and not with the Touré clan alone: these are incidental passages, to be read as indications."
+    }
+  ],
+  "gaps": [
+    {
+      "fieldPath": "origin.nisba",
+      "reason": "The sources consulted do not link the name to an Arabic nisba. They say only that Ture counted in the time of the Sudanese empires as a religious title, on a par with Cisse, which is not the same as an Arabic onomastic descent and is not enough to establish one."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "Only one joking-alliance pair is attested by the sources consulted. The dictionary of clan names that carries it does not record its ties in both directions, so other pairs may exist without appearing in it."
+    },
+    {
+      "fieldPath": "homonyms",
+      "reason": "The sources consulted distinguish no homonymous lineage of separate origin: they relate the same name to one and the same set of Soninke and Malinke clans."
+    },
+    {
+      "fieldPath": "transmissionMode",
+      "reason": "A clan name does not by itself determine the mode of transmission, and none of the sources consulted says how this name is transmitted."
+    },
+    {
+      "fieldPath": "spellings",
+      "reason": "The English-language spellings Touray and Turay appear in no source that we can cite: they are therefore not added to the spellings of this name."
+    }
+  ],
+  "_translation": {
+    "kind": "machine",
+    "translatedAt": "2026-09-29T16:06:12.076Z",
+    "model": "claude-sonnet-5-5",
+    "sourceHash": "7ccca61fa1cf93a788bd4c75bfbac03dcfe6a2bde20d5f444760991fc7f646fe",
+    "fieldHashes": {
+      "origin.writtenChronicles[0].claim": "9411fc435ccebbd9",
+      "origin.linguisticReconstructions[0].claim": "19e919c5c8012dad",
+      "origin.linguisticReconstructions[1].claim": "189092e19649c2f8",
+      "origin.linguisticReconstructions[2].claim": "36521674c647c295",
+      "origin.linguisticReconstructions[3].claim": "c7e1d068599a7a9e",
+      "origin.linguisticReconstructions[4].claim": "deae6b3fecbdc3d3",
+      "origin.linguisticReconstructions[5].claim": "cf1e8b66a9633012",
+      "origin.linguisticReconstructions[6].claim": "32a35db6e3ab9ada",
+      "casteOrSocialFunction.value": "55b4179ee0bec0af",
+      "sources[0].notes": "769436a32b25aeeb",
+      "sources[1].notes": "57e4e710711ece9f",
+      "sources[2].notes": "16e83d2350b3f217",
+      "sources[3].notes": "00136f55650c15c1",
+      "sources[4].notes": "45179bc5b48016a3",
+      "sources[5].notes": "7f420216cf1fbb46",
+      "gaps[0].reason": "94a1aa9cb0299ea3",
+      "gaps[1].reason": "45bbd659f6fd2ff8",
+      "gaps[2].reason": "854f0f09d8e3d331",
+      "gaps[3].reason": "1867531694bdaae5",
+      "gaps[4].reason": "c0b82f6d54281d6f"
+    },
+    "reviewRequired": [
+      "origin.linguisticReconstructions[0].claim",
+      "origin.linguisticReconstructions[1].claim",
+      "origin.linguisticReconstructions[2].claim",
+      "origin.linguisticReconstructions[3].claim",
+      "origin.linguisticReconstructions[4].claim",
+      "origin.linguisticReconstructions[5].claim",
+      "origin.linguisticReconstructions[6].claim"
+    ]
+  }
+}

@@ -1,12 +1,28 @@
 # Reader-facing register
 
-A fiche is written in two registers and only one of them is published.
+## Position and promise
 
-The curator's register records how the atlas is made: which file a passage was
-read in, which tier is still unresolved, what the next research pass owes, which
-queue the name came from. The reader's register records what the atlas knows and
-how sure it is. Most fields keep the two apart because nothing renders them.
-Three do not.
+Operator clarification, 2026-09-30; governing rule in `CLAUDE.md`.
+
+EthniAfrica is a project of popular education. The operator uses research methods
+and seeks sources, without claiming to be a scientist, linguist or historian.
+Specialists may help the project. The writing makes knowledge accessible and
+invites readers to investigate, compare and contribute.
+
+Write first for the African diaspora, without assuming that a reader shares one
+country, language, family history or wish to “return”. Readers living on the
+continent also encounter this work. The [editorial personas](audience-personas.md)
+describe needs rather than invented biographies; the [audience report](../audience/audit-2026-09-30.md)
+separates those intentions from observed behaviour.
+
+A reader should understand the point before meeting the bibliography. Use familiar
+words, concrete verbs and one idea at a time. Define necessary specialist terms
+where they occur. Prefer “the name they use for themselves” to “autonym” unless
+the term is itself useful. Simple language must not erase a disagreement, a place,
+a date or a distinction necessary to understand the subject.
+
+The research notes record how the project was made. Published prose explains the
+subject, what supports it and what remains unsettled. Keep those registers apart.
 
 ## The three fields published verbatim
 
@@ -22,9 +38,9 @@ Whatever the corpus holds in these three is what a visitor reads, word for word.
 There is no sanitising layer, and adding one would be the wrong fix: the corpus
 should hold prose fit to publish, not prose a renderer has to launder.
 
-Everything else in a fiche — `_meta.directives` included — is authoring metadata
-no surface renders. It stays the curator's to write, in whatever register suits
-the work.
+Authoring metadata such as `_meta.directives` stays internal. This list concerns
+three provenance fields; it does not exempt other published fiche prose from the
+reader-facing rules.
 
 ## What a published field may not contain
 
@@ -121,28 +137,89 @@ The banned vocabulary lives in two exported constants in
 and `INTERNAL_REGISTER_PATTERNS_EN` (English) — so this document and the gate
 cannot drift apart.
 
-## Narration, cards and captions: the peoples speak first
+## Narration, cards, captions and pages: the subject before the reference
 
-Operator ruling of 2026-09-28, written in `CLAUDE.md` (`### Reader-facing register`).
-A reel's narration, a carousel card and a caption say what peoples call
-themselves and each other. The linguist, the author or the book that documents
-it never opens the sentence: the source is owed every time, but it goes on a
-source card or in the source line, after. A fiche's own `sources[]` fields are
-where the authority belongs and are untouched by this section.
+Say what is being explained, then make its provenance accessible. Do not begin
+with an author, institution or study as a substitute for explaining the subject.
+This applies equally to local, African and external scholars: the issue is the
+sentence's function, not the author's origin.
 
-| Refused                                               | Instead                                                      |
-| ----------------------------------------------------- | ------------------------------------------------------------ |
-| « Selon Delafosse, les Peuls les appellent Malinké. » | « Les Peuls les appellent Malinké. » (card: Delafosse, 1912) |
-| « Un livre de 1912 montre que… »                      | « Les Peuls les appelaient Malinké en 1912. »                |
-| « Un auteur français pense que Malinké est peul. »    | « Une explication dit que Malinké est un mot peul. »         |
-| « Le linguiste X publie leur mot. »                   | « Ils ont un mot pour se nommer. » (card: X, 2013)           |
-| « Un texte portugais écrit Mandingas. »               | « On imprime Mandingas à Lisbonne en 1502. »                 |
+A book, historical actor or quoted speaker may be the actual subject. A reading
+list must name authors; a direct quotation must identify its speaker. Do not erase
+those names to satisfy a mechanical rule. The narration checker identifies lexical
+patterns (`attribution-en-tete`); it cannot determine truth, community provenance
+or whether an author is the subject. `ethniafrica-message` performs that review.
 
-The hedge of a contested claim stays: it is carried by a date, a tense or « une
-explication dit que… », never by the scholar's name. `check-narration.mjs`
-refuses the lexical shapes (`attribution-en-tete`); a surname alone passes it, and
-`ethniafrica-message` (criterion 10) reads what it cannot see. Published text is
-not rewritten by this section.
+### Preserve what the evidence actually supports
+
+- A documented usage is limited to the speakers, place and period documented.
+- An interpretation remains an interpretation, even after moving its reference.
+- A publication date identifies a document; it does not date the event described.
+- An outside author's explanation is not automatically an oral tradition or the
+  belief of the people described. Do not turn one speaker into an entire people.
+- A quotation, a summary and the project's synthesis remain distinguishable.
+- Never imply interviews, visits or collaboration that did not take place.
+
+### Oral and written sources
+
+An oral account can be the most relevant source for a practice, pronunciation or
+transmitted memory. Lack of academic validation does not exclude it. It can
+establish that this account is transmitted without independently proving every
+historical event within it. A written or institutional source has limits too.
+
+Record who carries the account (or an agreed public description), where and when
+it was collected, its language, whether it was heard directly or through a
+collector, and the permission to quote or share it. Unknown details stay unknown;
+respect anonymity and reuse restrictions. Do not invent a griot, interview or
+“local source” to make a reference list look balanced. Existing source tiers,
+rights checks and `oral_tradition` provenance remain applicable; oral form alone
+neither disqualifies nor proves an assertion.
+
+Present different accounts side by side when available. Explain what differs:
+a pronunciation, a meaning, a chronology or an interpretation. Several books
+repeating the same account are not several independent confirmations. If only
+external accounts were consulted, say that when it matters and invite local
+contributions without presenting their absence as a defect in local knowledge.
+
+### Where the references go
+
+| Surface            | Explanation                                                                               | Traceable reference                                                                         | Invitation to investigate                                                      |
+| ------------------ | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Site page or fiche | Answer in ordinary words; keep the necessary uncertainty nearby                           | Reference beside or after the claim, then a source section identifying each account         | Link to the relevant source, related account or contribution route             |
+| Carousel           | One intelligible point per card; no provocative certainty corrected only on the last card | Short reference on the relevant card and readable source details on the source card/caption | A concrete question or source to explore                                       |
+| Reel narration     | Explain the subject at listening pace; keep disputed claims qualified in the spoken text  | Corresponding source card and caption; identify any quoted voice                            | One relevant next step, when useful                                            |
+| Social caption     | Explain or extend the piece; avoid an academic abstract                                   | A source line after the explanation, with distinct claims mapped to their references        | Ask about an actual usage, account or question rather than demanding agreement |
+
+A source line is not a licence to hide uncertainty until the end. Internal claim
+maps keep precise locators; public references remain identifiable and usable.
+
+### Before / after examples
+
+These are **writing patterns, not factual claims about named peoples**. Replace
+placeholders only with information verified for the actual piece. References in
+brackets are required slots, not invented citations. French reader examples carry
+English counterparts; documentation itself remains in English.
+
+| Situation                                   | Before                                                              | After — French                                                                                                      | After — English                                                                                                            | Provenance to attach                                                                                            |
+| ------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| One disputed origin                         | “According to author X, this name comes from Y.”                    | « Une explication relie ce nom à [Y]. Son origine reste discutée. »                                                 | “One explanation links this name to [Y]. Its origin remains disputed.”                                                     | Author, work, date and locator; other documented explanations if available                                      |
+| Malinké example: an external interpretation | « Selon le livre de Delafosse, les Malinkés sont… »                 | « Une explication du nom « Malinké » propose [interprétation vérifiée]. Elle ne suffit pas à établir son origine. » | “One explanation of the name ‘Malinké’ proposes [verified interpretation]. It does not settle its origin.”                 | The exact consulted passage; do not attribute the theory to a people without evidence                           |
+| A book's year mistaken for an event date    | “A book from 1912 describes this usage, so people used it in 1912.” | « Cet usage est rapporté dans [lieu documenté]. Nous ne savons pas quand il a commencé. »                           | “This usage is reported in [documented place]. We do not know when it began.”                                              | Publication year stays in the reference; use only if the source supports that locality and report               |
+| A transmitted account                       | “This oral story has no scientific proof, so we cannot use it.”     | « Ce récit transmis à [lieu] relie le nom à [explication]. Nous n'avons pas établi la date de cet épisode. »        | “This account transmitted in [place] links the name to [explanation]. We have not established when that episode happened.” | Carrier or agreed description, collection context and permission; specify indirect transmission when applicable |
+| Two explanations                            | “The accepted origin is A.”                                         | « Deux explications sont documentées : [A] et [B]. Les sources consultées ne permettent pas de trancher. »          | “Two explanations are documented: [A] and [B]. The sources consulted do not settle the question.”                          | Separate references for A and B; do not invent equal support or consensus                                       |
+| Invitation to research                      | “Research is needed.”                                               | « Quel récit avez-vous entendu autour de ce nom ? Vous pouvez nous en indiquer la provenance. »                     | “What account have you heard about this name? You can tell us where it comes from.”                                        | Link to the project's contribution route when available; no demand to disclose private family details           |
+
+### Review before handing over copy
+
+1. Can a first-time reader explain the main point in ordinary words?
+2. Does each claim retain its status: documented usage, interpretation, account or unknown?
+3. Can the reader find which source supports which explanation?
+4. Have we invented any date, community consensus, fieldwork or qualification?
+5. Are oral voices represented in their actual context, with permission?
+6. Does the chosen next step help the reader explore or contribute?
+
+These are semantic checks, not a requirement to print six statements in every
+piece. Reach, saves and agreement in comments do not establish historical truth.
 
 ## Prompt block for curation sessions
 
@@ -177,10 +254,10 @@ In those three fields you must never write:
 - a ticket number (`ETNI-…`);
 - `Corpus AFRIK — …` as a source title.
 
-Write instead what the atlas knows or does not know, in French, addressed to a
+Write instead what the project knows or does not know, in French, addressed to a
 reader who has never seen the repository:
 
-- a gap: « L'atlas ne documente pas encore ce point pour ce nom : aucune source
+- a gap: « Nous ne documentons pas encore ce point pour ce nom : aucune source
   dédiée n'a été consultée à ce jour. »
 - a source drawn from another fiche: title « EthniAfrica — fiche du peuple
   Dioula, organisation clanique », notes « Reprise du chapitre « Organisation

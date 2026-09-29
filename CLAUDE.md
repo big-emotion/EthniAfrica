@@ -414,6 +414,11 @@ reseaux-help — à tout moment : où j'en suis, doublons, prochain geste
 - **Where am I — `/ethniafrica-reseaux-help`.** Reads the pipeline state and
   `social/tools/etat-pipeline/bilan-sujets.mjs`, flags a validated post whose
   subject is already published in the same format, and names one next move.
+- **A third-party video, cut into a reel — `/ethniafrica-clip-reel`.** Off the
+  chain: a video and a prompt in, a captioned 9:16 reel, its cover and one
+  description per network out, drawn by `social/harness/ethni_clip_reel.py` from a
+  plan file. It publishes nothing, registers nothing and never clears the source's
+  rights — it reminds.
 - **Anecdotes and proverbs are coming** as content types. Neither is on the site
   nor has a template yet; the chain notes such a subject as an idea until one
   exists.
@@ -657,11 +662,11 @@ not support.
 
 The register has three steps, and the right one is chosen by what the sources actually do:
 
-| What the sources do                             | How the sentence reads                                                                |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------- |
-| They agree, at `official` or `referenced`       | « X est Y. »                                                                          |
-| They diverge, or a single tier carries it alone | « Selon X, … », « une lecture y voit… », « la piste la plus citée est… »              |
-| They do not settle it                           | « L'origine de X n'est pas établie. » — then the paths, each attributed, none crowned |
+| What the sources do                                            | How the sentence reads                                                                |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Evidence establishes this specific claim within its scope      | « X est Y. » — with the relevant time, place and limits                               |
+| The claim is an interpretation, a reported account or disputed | « Une explication relie X à Y. » — then its provenance; never invent a consensus      |
+| They do not settle it                                          | « L'origine de X n'est pas établie. » — then the paths, each attributed, none crowned |
 
 Where several explanations compete, **the piece names more than one or names none**.
 Picking one and stating it flat is the failure this rule exists to stop: it was measured
@@ -736,7 +741,7 @@ A character ratio is a hint, not a measurement — the archive is markdown, the 
 
 ### Reader-facing register
 
-Three fiche fields are published to the reader **verbatim**, with no sanitising layer: `gaps[].reason`, `sources[].title` and `sources[].notes` (nested under `names[].sources[]` on name fiches). Everything else, `_meta.directives` included, is authoring metadata nothing renders.
+Three fiche fields are published to the reader **verbatim**, with no sanitising layer: `gaps[].reason`, `sources[].title` and `sources[].notes` (nested under `names[].sources[]` on name fiches). Authoring metadata such as `_meta.directives` stays internal; other reader-facing fiche prose also follows the register below.
 
 So those three may carry no repository path, no JSON field path, no raw `PPL_`/`FLG_`/`PAT_` identifier, and none of the pipeline's own vocabulary — _file d'attente_, _la passe_, _protocole de recherche_, _revue claim-level_, _tier hérité_. That last class is the one that got through: it carries no path and no identifier, so it reads as ordinary French, and 774 name fiches told their visitors which queue they came from and which research protocol they awaited. **The reader is owed the silence itself, never the reason the workshop has not filled it yet.**
 
@@ -744,13 +749,49 @@ So those three may carry no repository path, no JSON field path, no raw `PPL_`/`
 
 **No reader-facing text calls the project an "atlas"** (operator ruling, 2026-09-22). An object that "documents", "holds" or "does not say" is replaced by a project that speaks: « nous », « notre projet », EthniAfrica; the section a reader browses is « Parcourir ». URLs (`/atlas/…`), identifiers, comments, the titles of real works (UNESCO's _Atlas des langues africaines_…) and the Atlas mountains are not self-references and stay. `src/lib/__tests__/noAtlasInReaderCopy.test.ts` scans the site's string literals and JSX text for it.
 
-**Peoples speak first, and the source comes after** (operator ruling, 2026-09-28). In any text a reader meets — a reel's narration, a carousel card, a caption, a site page — the sentence says what peoples call themselves and each other. The linguist, the historian, the author or the book that documents it never opens the sentence and never fronts the piece: « Les Peuls les appellent Malinké. », not « Delafosse écrit dans son livre que les Peuls… ». Two reasons, both the operator's. Leading with a scholar reads as a scientific corpus — the encyclopaedia register the reorientation retired — and a project that wants to popularise cannot sound like its bibliography. And citing a book reads as admitting the project cannot go to the people: it has asked them directly on the social networks for a long time and can go and ask in person, and a spoken or shared account is a source in its own right (`oral_tradition`, above).
+**EthniAfrica's voice is that of a popular educator** (operator clarification,
+2026-09-30). The operator draws on scientific, linguistic and historical methods
+to research and explain; neither the operator nor an agent claims those professional
+qualifications on their behalf. Specialists may contribute. The primary intended
+public is the African diaspora, with readers on the continent and other interested
+readers welcome. Explain in ordinary language, without assuming academic training,
+a shared mother tongue or a single relationship to Africa. Use
+`docs/editorial/audience-personas.md` for reader needs and their evidence status.
 
-The source is still owed, every time; only its place moves — a source card at the end of the scene, the source line of a caption, the fiche's own `sources`. What never happens is a claim with none.
+**Peoples speak first, and the source comes after** (2026-09-28, clarified
+2026-09-30). Narration, cards, captions and site copy explain the subject directly.
+An author, study or book must not lead as a borrowed authority: avoid « Selon
+Delafosse… » and « Une étude montre que… ». Put the precise provenance after the
+claim, in an adjacent reference, a source card or the source line. Keep each
+account traceable; a bibliography alone must not blur which source supports which
+claim. A scholar who is a historical actor, a book being recommended, or a speaker
+whose words are quoted may be named when they are the actual subject.
 
-**This does not loosen « Assertion tracks certainty ».** Certainty is carried without naming the authority: by a date or a tense (« Les Peuls les appelaient Malinké en 1912 »), by « une explication dit que… », « on dit que… », « cela pourrait venir de… ». A contested claim resting on one source stays hedged; only the scholar's name leaves the sentence. Refused shapes: « Selon X, … », « Le linguiste X note… », « Un livre de 1912 montre… », « Un auteur pense… », « Ce livre écrit que… ». Where two accounts compete, name them by **who holds them** (« chez les Peuls, … ; chez les Bambara, … »), not by who wrote them down. A document as the subject of a sentence (« Un texte portugais écrit… ») is the same shape: say what happened, put the document on the card.
+**Moving the reference never increases certainty.** Keep a disputed origin an
+explanation, a testimony an account, and a local usage local. A publication year
+is not an event date; a past tense does not qualify a contested assertion.
+« Une explication relie ce nom à… » preserves uncertainty. « Ce nom vient de… »
+does not. Attribute an account to a community only when the source establishes
+that provenance; an outside author's theory must not become what a whole people
+supposedly believes. Never imply that we interviewed people or did fieldwork
+unless that actually happened.
 
-Scope: narration, cards, captions and site copy written or edited from now on. Published text is not rewritten by this ruling; a sweep of site copy and fiche prose that leads with authors is separate work, and a fiche's `sources` fields are exactly where the authority belongs. One standing ruling stays until the operator withdraws it: « endonyme » / « exonyme » remain permitted, defined in the opening sentence, in a name-origin reel (2026-09-21) — the terms of a discipline, not its authorities.
+**Oral knowledge is a source in its own right.** It may be the most relevant
+source for a lived practice, a pronunciation or a transmitted account. Academic
+validation is not an admission requirement. Identify its carrier or public role,
+place, language, collection context and date when known, and preserve permission
+and privacy. Distinguish the existence and meaning of an account from proof of
+every historical event it describes. Written and external sources receive the
+same attention to context and limits. Several sources are shown when they were
+actually consulted; neither plurality nor agreement is invented. The existing
+tiers and provenance fields remain; no badge settles an interpretation.
+
+Practical instructions and paired rewriting examples live in
+`docs/editorial/reader-facing-register.md`. They apply to content written or
+edited from now on; published material is not silently rewritten. Sources stay
+fully identifiable in the dedicated references. The operator's 2026-09-21 ruling
+still permits « endonyme » / « exonyme », explained in the opening sentence of a
+name-origin reel; it does not require these terms where ordinary words suffice.
 
 Enforcement: `social/tools/narration/check-narration.mjs` refuses the shapes above (`attribution-en-tete`, a lexical check: a surname alone passes), `ethniafrica-structure` runs it before any text is shown, and `ethniafrica-message` grades what it cannot see (criterion 10).
 

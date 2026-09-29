@@ -1,0 +1,33 @@
+{
+  "source": "path/to/the-video.mp4",
+  "clips": [
+    [98.85, 127.6],
+    [155.6, 170.1]
+  ],
+  "phrases": [
+    {
+      "start": 98.92,
+      "end": 100.2,
+      "speaker": 1,
+      "fr": "Les personnes noires peuvent-elles être racistes ?"
+    },
+    { "start": 100.2, "end": 101.04, "speaker": 0, "fr": "Oui." },
+    {
+      "start": 125.0,
+      "end": 127.6,
+      "speaker": 1,
+      "fr": "Question : qui a créé la race ?"
+    },
+    {
+      "start": 155.68,
+      "end": 157.6,
+      "speaker": 0,
+      "fr": "Bonne question. Je ne suis pas sûr."
+    }
+  ],
+  "thumbnail": {
+    "frame_at": 205.0,
+    "title_lines": ["D'OÙ VIENT LE MOT", "« RACE » ?"],
+    "accent": "« RACE » ?"
+  }
+}

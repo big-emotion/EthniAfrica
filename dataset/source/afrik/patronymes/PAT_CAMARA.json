@@ -20,6 +20,24 @@
           "sourceRefs": ["corpus-ppl-vai-organisation"]
         }
       ]
+    },
+    {
+      "spelling": "Kamara",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["gha-iv-mali"]
+        }
+      ]
+    },
+    {
+      "spelling": "Kámala",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
     }
   ],
   "transmissionMode": "patrilineal",
@@ -37,6 +55,11 @@
         "claim": "Les nyamakalaw — groupes endogames d'artisans et de musiciens — sont attestés chez les Malinké au plus tard vers 1300 et se retrouvent chez plus de quinze peuples ouest-africains. Le statut se transmet avec le jamu, ce qui fait du nom de clan le support de la position sociale autant que de la descendance.",
         "claimStatus": "established",
         "sourceRefs": ["tamari-1991-caste"]
+      },
+      {
+        "claim": "Dans la tradition qui accompagne la fondation de l'empire du Mali, les Kamara tiennent Sibi et Tabon et se partagent en deux branches, conduites l'une par Tabon-Wana, l'autre par Kamadian Camara de Sibi.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["gha-iv-mali"]
       }
     ]
   },
@@ -66,7 +89,7 @@
     {
       "countryId": "MLI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "gha-iv-mali"]
     },
     {
       "countryId": "GIN",
@@ -82,6 +105,15 @@
   "alliances": [
     {
       "targetPatronymeId": "PAT_FOFANA",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_KOUROUMA",
       "allianceType": "sanankuya",
       "sourceRefs": [
         "bamadaba-jamuw",

@@ -107,6 +107,13 @@ Reviews attach to the **claims and media actually present**, not to the family.
   verified evidence.
 - The approved Mémoires sonores presentation, its six-card layout and its cadence data are
   untouched: it is `family: guided-listening`, `series` and `profile: memoires-sonores`.
+- **Research-led narrative design (2026-09-30)** adds an optional `narrativeDesign` section
+  to the brief: ten narrative patterns examined per subject, the operator's recorded choice,
+  and a detailed outline shown before writing. It is additive and read only by
+  `social/tools/narration/`, so this contract module and `CONTRACT_VERSION` do not change; the
+  six families stay the classification and the patterns never replace them. Briefs without the
+  section, and approved older narrations, are untouched. See
+  [NARRATIVE-DESIGN.md](NARRATIVE-DESIGN.md).
 
 ## 6. Version-bound approvals
 

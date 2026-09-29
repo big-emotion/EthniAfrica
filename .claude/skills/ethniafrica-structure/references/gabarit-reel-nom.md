@@ -10,6 +10,15 @@ le vérifie. Un écart se corrige dans le texte, pas dans le contrôleur. La
 catégorie est la `typologie` du carnet de production. Ce gabarit ne couvre pas la
 typologie `mot` (« ethnie ») : voir « Ce que le gabarit ne couvre pas ».
 
+**Portée (2026-09-30).** Ce gabarit est la structure spécialisée de l'inventaire
+endonyme/exonyme et de la transmission du patronyme ; il n'est **pas** l'obligation
+universelle d'un reel de la série. Un reel dont le brief porte une section
+`narrativeDesign` suit le plan détaillé choisi à l'étape 5 d'`idee`, et se vérifie par
+`check-gabarit.mjs <narration> --brief <brief.json>` : le plafond de deux explications,
+le nombre de noms et la liste de scènes ci-dessous ne s'y appliquent pas, la clôture
+unique si. On ne contourne pas ce gabarit en déclarant la série « libre » ni en retirant
+`series` : la route est une section explicite du brief, jamais une déduction.
+
 Le **carrousel n'est pas concerné** : il a son propre gabarit, traité à part.
 
 ## Le squelette : sept temps, un paragraphe chacun, dans cet ordre

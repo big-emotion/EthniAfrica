@@ -9,6 +9,18 @@ metadata:
 
 # EthniAfrica Content Strategist
 
+## Editorial voice and reader needs (2026-09-30)
+
+Before writing or reviewing reader-facing copy, read
+`docs/editorial/reader-facing-register.md` and `docs/editorial/audience-personas.md`.
+EthniAfrica speaks as a popular educator using research methods, without claiming
+scientific, linguistic or historical qualifications for its operator. Explain the
+subject in ordinary language, keep uncertainty in the sentence, and put traceable
+sources after it. Oral and local accounts are sources in their own right; preserve
+their actual context and never invent interviews or community consensus.
+State the primary reader need in the existing working report; personas are
+provisional, and geography or platform demographics never establish diaspora identity.
+
 Decides **what to publish next, on which channel, how often, and for whom.**
 
 It is a **consumer** in the three-skill pipeline; its audience evidence comes
@@ -172,11 +184,12 @@ What varies per channel is the **cut, the caption, and whether video is the
 right format there at all**, per `reference/platforms.md` and GABARITS §1 bis.
 
 Per proposed piece, state: the pillar and the slot it fills; the single claim it
-makes and where the corpus sources it; the hook, written out; the channels and
+makes and its identifiable sources (a corpus record when applicable); the hook, written out; the channels and
 what changes between them; and the comparable that justifies it, with numbers.
 
-A video whose claim is not already in a fiche is a research request first — hand
-it to `/afrik-curator` before scripting.
+A claim needs verified provenance before scripting. Research a missing claim first;
+use `/afrik-curator` when a fiche needs work. A sourced social-only piece does not
+require creating a fiche merely to fit the production chain.
 
 ## Step 4 — Decide the site plan
 
@@ -218,8 +231,9 @@ two are manual regardless.
 - **Colonial terminology**: keep the colonial-era name, explain why it is
   problematic, always surface the autonym. Half the pillar rotation is built on
   exactly this move.
-- Documentation and commits in **English**; reader-facing and social copy in
-  **French**, the site's only language.
+- Documentation and commits in **English**. Reader-facing French copy carries
+  its English counterpart under `CLAUDE.md`’s bilingual-content rules; publication
+  remains French-only unless the operator explicitly changes the locale mode.
 
 ## Boundaries
 

@@ -15,7 +15,9 @@
           "countryId": "MLI",
           "sourceRefs": [
             "bensignor-1997-oumou-sangare",
-            "iffono-wassoulou-tradition"
+            "iffono-wassoulou-tradition",
+            "interpeace-autoportrait-mali-2015",
+            "sy-2015-ethnies-langues-mali"
           ]
         },
         {
@@ -55,7 +57,7 @@
     "oralTraditions": [],
     "writtenChronicles": [
       {
-        "claim": "Dans leur étude des élites gouvernementales guinéennes, Rainer et Trebbi décrivent les porteurs de Sangaré comme originaires du Wassoulou : leur consultant les classe comme Peuls intégrés linguistiquement et culturellement aux Malinkés, tandis que les sources divergent entre les deux appartenances.",
+        "claim": "Une étude des élites gouvernementales guinéennes décrit les porteurs de Sangaré comme originaires du Wassoulou : son consultant les classe comme Peuls intégrés linguistiquement et culturellement aux Malinkés, tandis que les sources divergent entre les deux appartenances.",
         "claimStatus": "contested",
         "sourceRefs": ["rainer-trebbi-2012-political-power"]
       },
@@ -71,6 +73,19 @@
       },
       {
         "claim": "Une étude sur les Peuls de l'ouest du Burkina Faso range Sangaré parmi les quatre clans peuls principaux, aux côtés de Diallo, Diakité et Sidibé, et décrit le couple Sidibé/Sangaré comme l'un des deux couples fondateurs de l'identité peule, unis par une relation à plaisanterie du fait de cette parenté mythique.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
+      },
+      {
+        "claim": "Le nom compte parmi les noms de famille peuls du Mali, où les Foula du Wassoulou, dans les régions de Koulikoro, de Kita, de Bafoulabé et de Sikasso, se réclament de la grande famille peule bien qu'ils ne parlent plus la langue.",
+        "claimStatus": "claimed",
+        "sourceRefs": [
+          "interpeace-autoportrait-mali-2015",
+          "sy-2015-ethnies-langues-mali"
+        ]
+      },
+      {
+        "claim": "Chez les Peuls de l'ouest du Burkina Faso, les Bingaabe sont classés au sein des Sangaré et entretiennent une relation de plaisanterie avec les Toroobe.",
         "claimStatus": "claimed",
         "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
       }
@@ -96,7 +111,9 @@
         "rainer-trebbi-2012-political-power",
         "bensignor-1997-oumou-sangare",
         "iffono-wassoulou-tradition",
-        "diallo-2006-plaisanterie-peuls"
+        "diallo-2006-plaisanterie-peuls",
+        "interpeace-autoportrait-mali-2015",
+        "sy-2015-ethnies-langues-mali"
       ]
     },
     {
@@ -115,7 +132,9 @@
       "status": "attested",
       "sourceRefs": [
         "bensignor-1997-oumou-sangare",
-        "iffono-wassoulou-tradition"
+        "iffono-wassoulou-tradition",
+        "interpeace-autoportrait-mali-2015",
+        "sy-2015-ethnies-langues-mali"
       ]
     },
     {
@@ -138,7 +157,7 @@
     },
     {
       "countryId": "SEN",
-      "status": "supposed",
+      "status": "attested",
       "sourceRefs": ["forebears-sangare"]
     }
   ],
@@ -174,7 +193,15 @@
   ],
   "casteOrSocialFunction": null,
   "bearers": [],
-  "homonyms": [],
+  "homonyms": [
+    {
+      "label": "Sangare (Inde)",
+      "entityType": "patronyme",
+      "entityId": null,
+      "distinction": "La même graphie est portée en Inde, où un agrégateur compte environ 5 400 porteurs et la transcrit en marathi. Aucune source consultée ne la relie au patronyme ouest-africain ; elle est signalée pour qu'on ne les confonde pas.",
+      "sourceRefs": ["forebears-sangare"]
+    }
+  ],
   "sources": [
     {
       "sourceKey": "rainer-trebbi-2012-political-power",
@@ -206,7 +233,7 @@
       "url": "https://forebears.io/fr/surnames/sangare",
       "tier": "unverified",
       "source_kind": "repository",
-      "notes": "Site agrégateur de statistiques patronymiques, sans revue éditoriale indépendante vérifiable. Cité uniquement pour la répartition déclarée du nom par pays (Mali, Côte d'Ivoire, Guinée, Sénégal), à titre indicatif et non comme preuve d'origine ethnique."
+      "notes": "Site agrégateur de statistiques patronymiques, sans revue éditoriale indépendante vérifiable ; données de 2014, consultées dans une copie archivée de 2024. Il compte environ 464 000 porteurs : Mali 265 431, Côte d'Ivoire 96 057, Guinée 51 571, Burkina Faso 36 913, Sénégal 2 775, Togo 525, Ghana 416, et 5 416 en Inde, où la page transcrit la graphie en marathi. Cité pour la répartition et pour signaler l'homonyme indien, non comme preuve d'origine ethnique."
     },
     {
       "sourceKey": "diallo-2006-plaisanterie-peuls",
@@ -247,6 +274,22 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Canut, Cécile, et Smith, Étienne, Cahiers d'études africaines, numéro 184, 2006, p. 687 et suivantes. Citée pour la mise en garde qu'elle porte : l'idée que la parenté à plaisanterie apaiserait les conflits y est traitée comme une hypothèse héritée de Radcliffe-Brown et reprise par les études sur la résolution des conflits, donc comme un discours à analyser et non comme un effet mesuré. La page de début est vérifiée, la page de fin ne l'est pas."
+    },
+    {
+      "sourceKey": "interpeace-autoportrait-mali-2015",
+      "title": "Autoportrait du Mali — Les Obstacles à la Paix",
+      "url": "https://www.interpeace.org/wp-content/uploads/2015/03/2015_03_02_Mali_Autoportrait_FR.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Rapport de recherche-action de l'Institut malien de recherche action pour la paix avec Interpeace, en partenariat avec les Nations unies, mars 2015. Son chapitre sur les diversités socioculturelles donne, pour chaque grand groupe du Mali, quelques noms de famille suivis de « etc. » : la liste est illustrative, sans méthode d'établissement ni source indiquée. Elle atteste qu'un nom est porté dans un groupe, non d'où il vient."
+    },
+    {
+      "sourceKey": "sy-2015-ethnies-langues-mali",
+      "title": "Études synchroniques des ethnies et des langues au Mali",
+      "url": "https://arlap.hypotheses.org/3726",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Salif Sy, carnet de recherche ARLAP (Hypotheses.org), 18 février 2015. Billet d'un doctorant en langues africaines, sans relecture par des pairs, qui range Diallo, Diakité, Sidibé et Sangaré parmi les noms identifiés comme peuls au Mali. Cité pour attester le nom dans ce groupe et dans ce pays, non pour son origine."
     }
   ],
   "gaps": [
@@ -257,10 +300,6 @@
     {
       "fieldPath": "bearers",
       "reason": "Une porteuse contemporaine largement connue de ce nom est bien documentée par la presse et la recherche, mais aucune déclaration de son cru sur son origine lignagère n'a été retrouvée ; en l'absence d'une telle parole propre, aucun porteur vivant n'est nommé ici."
-    },
-    {
-      "fieldPath": "homonyms",
-      "reason": "Aucune entité homonyme d'origine distincte n'a été trouvée pour ce nom au terme des recherches menées."
     }
   ]
 }

@@ -5,6 +5,18 @@ description: Challenger une production EthniAfrica (idée, cards.json, narration
 
 # onomastique — cette pièce raconte-t-elle un nom, ou seulement un événement ?
 
+## Editorial voice and reader needs (2026-09-30)
+
+Before writing or reviewing reader-facing copy, read
+`docs/editorial/reader-facing-register.md` and `docs/editorial/audience-personas.md`.
+EthniAfrica speaks as a popular educator using research methods, without claiming
+scientific, linguistic or historical qualifications for its operator. Explain the
+subject in ordinary language, keep uncertainty in the sentence, and put traceable
+sources after it. Oral and local accounts are sources in their own right; preserve
+their actual context and never invent interviews or community consensus.
+State the primary reader need in the existing working report; personas are
+provisional, and geography or platform demographics never establish diaspora identity.
+
 ## When this review applies (2026-09-29)
 
 The review follows the **claims**, not the family. It is `required` when the piece

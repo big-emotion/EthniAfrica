@@ -32,6 +32,33 @@
           "sourceRefs": ["corpus-ppl-bambara-organisation"]
         }
       ]
+    },
+    {
+      "spelling": "Traoré",
+      "attestations": [
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["niane-1960"]
+        }
+      ]
+    },
+    {
+      "spelling": "Tarawele",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
+    },
+    {
+      "spelling": "Taraore",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
     }
   ],
   "transmissionMode": "patrilineal",
@@ -76,12 +103,12 @@
         "sourceRefs": ["gha-iv-mali", "niane-1985-fr-mali-chapitre"]
       },
       {
-        "claim": "Selon Jan Jansen, l'ancêtre Tiramagan, célébré comme général de Soundiata et fondateur du Kaabu, est un cas où l'on doute qu'un héros de l'épopée renvoie à une personne historique : au Kaabu, où le récit ignore presque son lien avec Soundiata, son nom Tiramagan ou Siramagan pourrait désigner le « chef des ordalies », un objet de culte, la lance de l'épreuve, devenu personnage. Cette lecture est une hypothèse et ne fait pas consensus ; l'Histoire générale de l'Afrique tient de son côté le personnage pour un général envoyé par Soundiata.",
+        "claim": "On doute que l'ancêtre Tiramagan, célébré comme général de Soundiata et fondateur du Kaabu, renvoie à une personne historique : au Kaabu, où le récit ignore presque son lien avec Soundiata, son nom Tiramagan ou Siramagan pourrait désigner le « chef des ordalies », un objet de culte, la lance de l'épreuve, devenu personnage. Cette lecture est une hypothèse et ne fait pas consensus ; une autre lecture y voit un général envoyé par Soundiata.",
         "claimStatus": "contested",
         "sourceRefs": ["jansen-sunjata-paradigm", "gha-iv-mali"]
       },
       {
-        "claim": "Pour un étranger, le jamu est la porte d'entrée dans le tissu social : à Bamako, on lui attribue un jamu mandingue pour lui donner une place dans le groupe. Cécile Canut note qu'aujourd'hui les références historiques des pactes entre noms sont souvent oubliées et que les personnes peinent à en expliquer l'origine.",
+        "claim": "Pour un étranger, le jamu est la porte d'entrée dans le tissu social : à Bamako, on lui attribue un jamu mandingue pour lui donner une place dans le groupe. Aujourd'hui, les références historiques des pactes entre noms sont souvent oubliées et les personnes peinent à en expliquer l'origine.",
         "claimStatus": "established",
         "sourceRefs": ["canut-2002-senankuya"]
       }
@@ -92,6 +119,11 @@
       "peopleId": "PPL_BAMBARA",
       "status": "attested",
       "sourceRefs": ["corpus-ppl-bambara-organisation"]
+    },
+    {
+      "peopleId": "PPL_MALINKE",
+      "status": "supposed",
+      "sourceRefs": ["bamadaba-jamuw"]
     }
   ],
   "countries": [
@@ -140,10 +172,28 @@
         "canut-2002-senankuya",
         "canut-smith-2006-pactes"
       ]
+    },
+    {
+      "targetPatronymeId": "PAT_KONE",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_TOURE",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
     }
   ],
   "casteOrSocialFunction": {
-    "value": "Statut variable d'une aire à l'autre, et non absence de statut. Charry range Traoré parmi les jamuw hɔrɔn, de condition libre et non artisanale ; le dictionnaire des jamuw enregistre pour la même entrée hɔ́rɔn, puis tontigi chez les Bamana et les Maninka, puis nùmu (forgeron) chez les Kagoro et les Wassoulounké. Le versant numu du jamu est donc attesté, et l'absence de fonction héréditaire ne vaut pas pour toute l'aire du nom.",
+    "value": "Statut variable d'une aire à l'autre, et non absence de statut. Traoré compte parmi les jamuw hɔrɔn, de condition libre et non artisanale ; le dictionnaire des jamuw enregistre pour la même entrée hɔ́rɔn, puis tontigi chez les Bamana et les Maninka, puis nùmu (forgeron) chez les Kagoro et les Wassoulounké. Le versant numu du jamu est donc attesté, et l'absence de fonction héréditaire ne vaut pas pour toute l'aire du nom.",
     "sourceRefs": ["charry-1996-jembe", "bamadaba-jamuw"]
   },
   "bearers": [
@@ -185,7 +235,7 @@
       "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs, et la lecture retenue est celle que le fichier impose : \\ca porte les termes de statut mandingues eux-mêmes (nùmu, jèli, hɔ́rɔn, garanke, finɛ, tontigi, wage, gesere) ; \\sn se lit senankun parce que l'entrée Kúyate annote sa propre ligne « \\sn Keyita » d'une réserve disant que cette relation-là est une entente amicale et non un senankuya. Les liens \\sn ne sont pas systématiquement réciproques d'une entrée à l'autre : chaque paire est donc citée d'après l'entrée qui la porte, nommée dans le claim ou le gap."
+      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs, et la lecture retenue est celle que le fichier impose : \\ca porte les termes de statut mandingues eux-mêmes (nùmu, jèli, hɔ́rɔn, garanke, finɛ, tontigi, wage, gesere) ; \\sn se lit senankun parce que l'entrée Kúyate annote sa propre ligne « \\sn Keyita » d'une réserve disant que cette relation-là est une entente amicale et non un senankuya. Les liens \\sn ne sont pas systématiquement réciproques d'une entrée à l'autre : chaque paire est donc citée d'après l'entrée qui la porte, nommée dans le claim ou le gap. L'entrée Tàrawéle porte les marqueurs de groupe b (bambara) et m, lu comme indice malinké par recoupement avec l'entrée Kéyità, qu'une autre de nos fiches documente comme jamu malinké ; ses liens \\sn nomment Jàra, Kɔ́nɛ, Jawara et Turɛ, et ses variantes Traore et Taraore."
     },
     {
       "sourceKey": "charry-1996-jembe",

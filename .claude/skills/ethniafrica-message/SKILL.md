@@ -5,6 +5,18 @@ description: Auditer si une production EthniAfrica — carrousel, vidéo, ou pag
 
 # message — le message passe-t-il ?
 
+## Editorial voice and reader needs (2026-09-30)
+
+Before writing or reviewing reader-facing copy, read
+`docs/editorial/reader-facing-register.md` and `docs/editorial/audience-personas.md`.
+EthniAfrica speaks as a popular educator using research methods, without claiming
+scientific, linguistic or historical qualifications for its operator. Explain the
+subject in ordinary language, keep uncertainty in the sentence, and put traceable
+sources after it. Oral and local accounts are sources in their own right; preserve
+their actual context and never invent interviews or community consensus.
+State the primary reader need in the existing working report; personas are
+provisional, and geography or platform demographics never establish diaspora identity.
+
 ## Mémoires sonores review scope (2026-09-25)
 
 Read `docs/design/gabarits-social/MEMOIRES-SONORES.md` first for this feature.
@@ -23,6 +35,12 @@ the universal checks it owns — **uncertainty, intelligibility, non-essentialis
 for every family, and none of them can be `sans objet`. The grid below was written on
 the name series; read by family:
 
+- **A brief with a `narrativeDesign`**: also read the chosen proposal's takeaways and
+  success criteria and the outline's viewer-success statements, and say for each whether
+  the written piece actually lets a viewer complete it — with the limit the statement
+  declares, not an invented certainty. A criterion the text cannot support is a rewrite
+  item, not a pass. This is an editorial judgement; `check-narrative-design.mjs` only
+  proved that the plan was recorded.
 - **Series `name-origin`** (and any legacy production whose subject the site ledger
   holds): the grid as written, including criteria 1, 2 and 8 in their name-series form
   and the « Un reel au gabarit » section.
@@ -116,7 +134,7 @@ Chaque critère se note **0, 1 ou 2**, avec la phrase citée qui justifie la not
 | 8   | **La clôture.** Carrousel et reel : la clôture unique de §7 ter, mot pour mot — « Notre objectif : raconter l'origine des noms, avec des sources. Vous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica. » Sur une page du site : le propos est atteignable (« Notre propos », la page About).                                                                                                                                                                                                                                                                                                                | oui      | l'abonné        |
 
 | 9 | **Aucun groupe n'est rendu plus chez lui qu'un autre.** Ni en le disant, ni en le laissant entendre. Nommer les peuples qui sont « entiers », « chez eux », « là depuis toujours », « les premiers » fabrique un dehors pour tous ceux qu'on ne nomme pas. La mesure se publie ; le classement, jamais. Un lot qui hiérarchise l'appartenance, même par omission : 0. | oui | les deux |
-| 10 | **Les peuples parlent d'abord, la source vient après.** Aucune phrase de la narration, d'une carte ou d'une légende n'ouvre sur un linguiste, un historien, un auteur ou un livre (« Selon Delafosse… », « Un livre de 1912 montre… »). Elle dit ce que les peuples se disent et se donnent ; la source est sur la carte de source ou à la ligne de source, toujours présente, mais après. La prudence d'une affirmation contestée reste (date, temps, « une explication dit que… »), sans le nom du savant. `check-narration.mjs` voit les formes lexicales (`attribution-en-tete`) ; ce critère lit ce qu'il ne voit pas : un nom propre seul, un document en sujet (« Un texte portugais écrit… »). Règle de l'opérateur du 2026-09-28, `CLAUDE.md` `### Reader-facing register`. | oui | les deux |
+| 10 | **The subject comes first; the reference follows.** Explain without borrowing an author’s authority. Preserve disputed status, local scope and the difference between publication date and event date. Never turn an outside interpretation into community consensus or imply fieldwork that did not happen. Oral accounts retain their real provenance and limits. Apply `docs/editorial/reader-facing-register.md`; books, historical actors and quoted speakers may be named when they are the actual subject. The `attribution-en-tete` checker is lexical; this criterion supplies semantic review. | oui | les deux |
 
 Les critères 1 et 7 servent le nouveau venu : il n'a que cette pièce. Le 2 et
 le 8 servent l'abonné : c'est la répétition du même bloc, à la même place, dans

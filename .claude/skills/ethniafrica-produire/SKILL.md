@@ -60,7 +60,9 @@ require a carousel deck or impose image timers on video production.
 For name-origin narration only, read
 `.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md` and run
 `node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <category>`.
-Other profiles do not run this category checker.
+Other profiles do not run this category checker. A name-origin brief that carries a
+`narrativeDesign` is checked with `--brief <brief.json>` instead (its plan was chosen
+and shown upstream; the legacy scene list and two-explanation ceiling do not apply).
 
 Require the genuine text-approval record, approved recording, matching alignment,
 filled plan, relative asset bundle and source/licence register. Review the brief,
