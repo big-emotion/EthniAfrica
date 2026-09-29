@@ -953,6 +953,15 @@ contrôleur est `social/tools/narration/check-gabarit.mjs`, et le carrousel n'es
 pas concerné. Cette spécification ne recopie pas le gabarit : une deuxième copie
 est celle qui dérive.
 
+**Exception explicite (2026-09-30).** Ce gabarit est la structure spécialisée de
+l'inventaire des noms, pas l'obligation universelle du reel : un brief qui porte une
+section `narrativeDesign` (conception guidée par la recherche, choix de l'opérateur et
+plan détaillé montré avant toute rédaction) suit son plan choisi et se vérifie par
+`check-gabarit.mjs --brief`. Le titre, la question d'ouverture et la clôture unique
+restent ceux de la série ; la liste de scènes, le nombre de noms et le plafond de deux
+explications ne s'y appliquent pas. Voir
+[NARRATIVE-DESIGN.md](NARRATIVE-DESIGN.md).
+
 ### Le carrousel a un seul gabarit
 
 Décidé par l'opérateur le 2026-09-21. **Un carrousel « nom de X » suit le même ordre pour

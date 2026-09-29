@@ -36,7 +36,22 @@ meanings (family ≠ visual profile ≠ format) are in
    demanded, nothing changes for it. A social-only piece is never filed in
    `docs/productions/` and never gets an invented site path, typologie, episode or
    myth.
-4. **Carousel and video are independent editions.** Adapting a published carousel to
+4. **A brief with a `narrativeDesign` section is the research-led route
+   (2026-09-30).** `idee` has already framed, researched, proposed, recorded the
+   operator's choice and shown the detailed plan; `check-family-brief.mjs` refuses the
+   brief until all of that is recorded and shown (a draft, an unshown plan or a
+   synthetic choice is not a handoff). **Consume the selected plan; do not choose a
+   fresh argument.** Write the narration from the outline's blocks, in their order,
+   keeping each block's evidence and limits, its transition and the viewer-success
+   statements it must earn; a block that cannot be written from its cited claims goes
+   back to `idee`, it is not filled with an invented source, date or creator. The
+   old gabarit (`--type`, fixed scenes, two-explanation ceiling) does not apply on
+   this route; the check is
+   `node social/tools/narration/check-gabarit.mjs narration.fr.txt --brief <brief.json>`
+   (the series' closing stays word for word). The reviews from step 2 still apply.
+   Narration approval, voice and rendering remain later steps. Briefs without the
+   section, and any narration already approved, follow their established path.
+5. **Carousel and video are independent editions.** Adapting a published carousel to
    a video on the same angle needs no new angle; the sourced claims and approved
    copy carry over, and only what a change touches is re-reviewed. Neither format is
    a prerequisite of the other, and no date or weekday is required.
@@ -529,7 +544,8 @@ précède les cinq portes de `produire`, elle ne s'y ajoute pas.
 Avant de dire que `structure` est fini :
 
 0. **Check narration before presenting it.** For name-origin only, run
-   `node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <category>`.
+   `node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <category>`
+   (or `--brief <brief.json>` when the brief carries a `narrativeDesign`).
    For every profile, run `node social/tools/narration/check-narration.mjs narration.fr.txt`
    and review plain language. Correct failures before full-text approval.
 1. **Lance les revues que `check-family-brief.mjs` marque `required`** sur le texte

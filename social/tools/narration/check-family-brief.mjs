@@ -34,7 +34,9 @@ if (!ok) {
   process.exit(1);
 }
 
-const plan = planReviews(brief.edition);
+const plan = planReviews(brief.edition, {
+  narrativeDesign: brief.narrativeDesign,
+});
 console.log(`family: ${plan.family}`);
 for (const review of plan.reviews) {
   const detail =
@@ -44,7 +46,9 @@ for (const review of plan.reviews) {
   console.log(`  ${review.id}: ${detail}`);
 }
 console.log(
-  plan.narrationGabarit.applies
-    ? `✔ brief valid; the name-origin gabarit « ${plan.narrationGabarit.type} » applies to the narration`
-    : "✔ brief valid; no fixed name-origin wording applies"
+  plan.narrationGabarit.route === "narrative-design"
+    ? "✔ brief valid; the narrative-design route applies: check the narration with check-gabarit.mjs <narration> --brief <brief.json>"
+    : plan.narrationGabarit.applies
+      ? `✔ brief valid; the name-origin gabarit « ${plan.narrationGabarit.type} » applies to the narration`
+      : "✔ brief valid; no fixed name-origin wording applies"
 );

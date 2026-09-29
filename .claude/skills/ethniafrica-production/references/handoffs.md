@@ -22,6 +22,15 @@ the same table instead of each restating it. There is one agent per role, never 
   (`node social/tools/narration/check-family-brief.mjs <brief.json>`). `not-applicable` is recorded
   with its reason and never removes one of the five universal checks.
 
+## Upstream design: `idee` owns five stages, the coordinator only resumes them
+
+Frame, research, propose, record the choice, show the detailed plan: all five belong to
+`ethniafrica-idee`, recorded in the brief's `narrativeDesign` section, not in a new registry.
+`check-narrative-design.mjs <brief.json> --resume` names the real missing step; the coordinator
+never records a selection, and `structure` starts only at `handoff`
+(`--mode handoff`, which `check-family-brief.mjs` also enforces). Details:
+`docs/design/gabarits-social/NARRATIVE-DESIGN.md`.
+
 ## Three separate records, never fused
 
 | Question                                  | Where it lives                                                                |
