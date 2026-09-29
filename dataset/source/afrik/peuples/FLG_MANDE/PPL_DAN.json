@@ -15,6 +15,7 @@
         "Da",
         "Gyo"
       ],
+      "spellingAliases": ["Yacuba", "Yakuba", "Yakouba"],
       "originOfExonyms": "Yacouba est une adaptation francophone du terme mandingue Jakuba. Le terme Gio est un exonyme bassa utilise au Liberia pour designer les Dan ; le sens de esclave le rend devalorisant aux yeux des Dan eux-memes. Dan est la forme preferee par le peuple.",
       "whyProblematic": "Gio est pejoratif car etymologiquement lie au terme esclave en bassa. Son usage perdure dans les documents officiels liberiens et dans certaines sources academiques anglophones malgre la preference des Dan pour leur propre ethnonyme.",
       "contemporaryUsage": "Dan est l'appellation academique internationale standard et celle preferee par le peuple. Yacouba reste tres utilise en Cote d'Ivoire dans la vie quotidienne et dans les medias. Gio est encore courant au Liberia dans les documents officiels et la presse.",
@@ -123,6 +124,12 @@
         "title": "101 Last Tribes – The Dan",
         "url": "https://www.101lasttribes.com/tribes/dan.html",
         "tier": "unverified"
+      },
+      {
+        "title": "Mémoires d'Afrique — Dan ou Yacouba (page d'un site de vente d'art africain)",
+        "url": "https://memoires-afrique.com/34-dan-ou-yacouba",
+        "tier": "unverified",
+        "notes": "Texte lu directement : la page écrit Yacuba (Yacouba) et rattache les Dan au Liberia, à la Guinée et à l'ouest de la Côte d'Ivoire. Site marchand, sans auteur ni références."
       }
     ]
   },

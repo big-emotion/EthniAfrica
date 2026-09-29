@@ -30,7 +30,7 @@
     }
   ],
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "Langue de communication élargie, née en Guinée, au Mali et en Sierra Leone. Elle n'est pas connue pour être enseignée à l'école.",
     "dialects": ["Amana", "Bö", "Koulounkalan", "Wasulu"],
     "vitalityStatus": {
       "status": "Wider communication",
@@ -43,6 +43,12 @@
         "url": "https://glottolog.org/resource/languoid/id/east2426",
         "tier": "official",
         "notes": "Notice directe pour le code ISO 639-3 emk et le glottocode east2426. Classification Glottolog, du plus large au plus étroit : Mande, Mande occidental, Manding-Kpelle, Mande central, Manding-Jogo, Manding-Vai, Manding-Mokole, Manding, Manding oriental, Manenkan. La notice reprend l'appréciation EGIDS d'Ethnologue 2025, niveau 3, communication élargie, situe la langue en Guinée, au Mali, en Sierra Leone, au Liberia et en Côte d'Ivoire, et rappelle son usage de langue de cour et de gouvernement sous l'empire du Mali. Les dialectes listés sont les sous-languoids que Glottolog rattache à east2426, hors languoids portant leur propre code ISO 639-3. Consultée le 2026-09-16."
+      },
+      {
+        "title": "SIL Ethnologue — Eastern Maninkakan (emk)",
+        "url": "https://www.ethnologue.com/language/emk/",
+        "tier": "official",
+        "notes": "Résumé public de la notice, consulté le 2026-09-29 : langue de communication élargie, née en Guinée, au Mali et en Sierra Leone, rattachée à la macrolangue mandingo ; la notice précise que les preuves directes manquent, mais que la langue est réputée première langue de toute sa communauté ethnique, et qu'elle n'est pas connue pour être enseignée à l'école."
       },
       {
         "title": "ISO 639-3, tables de codes publiées par SIL Global, autorité d'enregistrement de la norme",

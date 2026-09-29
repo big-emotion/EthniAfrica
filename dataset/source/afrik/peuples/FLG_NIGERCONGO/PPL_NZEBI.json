@@ -19,6 +19,15 @@
         "Njawi",
         "Nzabi"
       ],
+      "spellingAliases": [
+        "Njebi",
+        "Binzabi",
+        "Injebi",
+        "Ndjevi",
+        "Njevi",
+        "Yinjebi",
+        "Yinzebi"
+      ],
       "originOfExonyms": "Le terme Bandjabi (ou Bandzabi) est le nom le plus courant donne par les administrateurs coloniaux francais et les peuples voisins. Il derive du prefixe bantou Ba- (pluriel de personnes) suivi du radical nzabi/njabi. Les variantes orthographiques nombreuses refletent les difficultes de transcription du nom par differents observateurs europeens.",
       "whyProblematic": "La multiplicite des graphies (Nzebi, Ndzébi, Njabi, Bandjabi...) engendre des confusions dans la litterature coloniale et ethnographique. Le groupe est parfois confondu avec les Tsaangi, population voisine avec laquelle les Nzebi ont fusionne au fil du temps, creant une identite composite.",
       "contemporaryUsage": "Le terme Nzebi (ou Ndzébi) est celui privilegié dans les publications academiques et par les communautes elles-memes au Gabon et en Republique du Congo. Bandjabi reste courant dans l'usage populaire gabonais.",
@@ -163,7 +172,7 @@
         "title": "Glottolog 5.x — Njebi [njeb1242]",
         "url": "https://glottolog.org/resource/languoid/id/njeb1242",
         "tier": "official",
-        "notes": "Confirms glottocode njeb1242 and ISO 639-3 nzb."
+        "notes": "Confirms glottocode njeb1242 and ISO 639-3 nzb. Lists Njebi, Nzebi, Binzabi, Injebi, Ndjevi, Njevi, Yinjebi and Yinzebi among the names of the language."
       },
       {
         "title": "CIA World Factbook — Gabon, People and Society (ethnic groups)",

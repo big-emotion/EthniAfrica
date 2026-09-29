@@ -8,15 +8,12 @@
   "nameOriginActor": "Le nom vient du royaume Kongo historique. Les Portugais ont popularisé le terme \"Congo\" au XVe siècle. Le nom \"Congo-Brazzaville\" a été utilisé pour distinguer ce pays de la République démocratique du Congo (Congo-Kinshasa) après l'indépendance des deux pays en 1960.",
   "content": {
     "historicalNames": {
-      "formerNames": [
-        "Congo français (1880-1960)",
-        "Congo-Brazzaville (usage courant)"
-      ],
+      "formerNames": ["Congo français (1880-1960)", "Congo-Brazzaville"],
       "antiquity": "Le territoire actuel de la République du Congo était peuplé de diverses sociétés bantoues sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs territoires.",
       "middleAges": "Développement des royaumes et chefferies bantoues (Royaume Kongo, chefferies Teke) sans nom unifié pour l'ensemble du territoire.",
       "precolonial": "Mosaïque de royaumes et chefferies indépendants : Royaume Kongo (partie ouest), royaume Tio (Teke), chefferies Mbochi, et autres peuples bantous. Les Portugais utilisaient le terme \"Congo\" pour désigner la région du royaume Kongo.",
       "colonization": "1880-1960 : Colonie française du Congo (partie de l'Afrique-Équatoriale française, AEF). Les Français ont créé la colonie du Congo français en 1880. Le territoire était administré comme une colonie française jusqu'à l'indépendance en 1960. Brazzaville était la capitale de l'AEF.",
-      "contemporary": "1960 : Indépendance du Congo (15 août 1960), proclamation de la République du Congo. Le nom \"République du Congo\" est officialisé. Le pays est aussi appelé \"Congo-Brazzaville\" pour le distinguer de la République démocratique du Congo (Congo-Kinshasa)."
+      "contemporary": "1960 : Indépendance du Congo (15 août 1960), proclamation de la République du Congo. Le nom \"République du Congo\" est officialisé. Le pays est aussi appelé \"Congo-Brazzaville\" pour le distinguer de la République démocratique du Congo (Congo-Kinshasa). \"Congo\" est son nom court, \"République du Congo\" son titre officiel."
     },
     "kingdoms": [
       {
@@ -138,6 +135,11 @@
       }
     ],
     "culture": {
+      "mainLanguages": [
+        { "name": "Français", "isoCode": "fra", "isPrimary": true },
+        { "name": "Kituba", "isoCode": "mkw" },
+        { "name": "Lingala", "isoCode": "lin" }
+      ],
       "culturalTraditions": "Musique congolaise (soukous, rumba), danse traditionnelle, poésie orale, artisanat (poterie, tissage, sculpture), masques traditionnels, tambours royaux",
       "dominantReligions": "Christianisme (catholique majoritaire, protestant, kimbanguiste), croyances traditionnelles (syncrétisme), islam (minorité)",
       "lifestyles": "Vie principalement urbaine (Brazzaville, Pointe-Noire), agriculture (manioc, bananes, arachides), pêche (fleuve Congo, océan Atlantique), commerce, industrie pétrolière",
@@ -197,6 +199,12 @@
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official"
+      },
+      {
+        "title": "Toponymic Factfile: Congo — Permanent Committee on Geographical Names (Royaume-Uni)",
+        "url": "https://assets.publishing.service.gov.uk/media/671267969cd657734653d7f5/Congo_Toponymic_Factfile.pdf",
+        "tier": "official",
+        "notes": "Fiche officielle britannique de toponymie, édition 2024 : nom court Congo, titre de l'État République du Congo, capitale Brazzaville ; nomme les formes courantes Congo-Brazzaville et Congo-Kinshasa qui distinguent les deux États ; le français seule langue officielle, le kituba et le lingala langues nationales (Constitution de 2015) ; précise que le gentilé congolais est aussi employé pour la République démocratique du Congo."
       }
     ],
     "demographics": {
