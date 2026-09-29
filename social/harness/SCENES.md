@@ -545,12 +545,64 @@ FFmpeg, font or operating-system versions are not promised. The report records
 hashes and runtime versions. No model's quality is guaranteed by choosing its
 name; the next subject must test this handoff in practice.
 
+## Archive excerpts and the audio timeline
+
+Built for guided listening: hear, explain, hear again. Narration still defines the film; an
+excerpt is **inserted** into it. At a caption boundary the voice stops, an authored silence lets the
+room settle, the excerpt plays alone, and the voice resumes. Nothing speaks over an excerpt, so a
+featured sound is heard rather than buried. Plans that carry neither `insertions` nor `bed` render
+exactly as before (the legacy audio path is untouched).
+
+```json
+"assets": {"bebey-excerpt": {"kind": "clip", "path": "clips/x.mp4", "sha256": "…",
+                             "credit": "…", "license": "…", "source": "register-key"}},
+"insertions": [{"id": "hear-1", "at": 12.4, "asset": "bebey-excerpt", "in": 31.0, "out": 43.5,
+                "silence_before": 0.6, "silence_after": 0.8, "gain_db": 0}],
+"bed": {"asset": "room-tone", "in": 0, "gain_db": -22, "duck_db": -8},
+"scenes": [{"type": "clip", "clip": {"insertion": "hear-1", "fit": "contain"}, …}]
+```
+
+- **`clip` asset**: audio or video, hashed and credited like any asset. The renderer never trusts a
+  declared duration; `ffprobe` measures the file.
+- **`insertions[]`**, in increasing `at` order. `at` is seconds in _narration_ time (the approved
+  excerpt), and must sit at a caption boundary: an insertion inside a caption is refused. `in`/`out`
+  are source seconds (`0 ≤ in`, `out - in ≥ 0.5`, `out ≤` probed duration); the clip must carry an audio
+  track. `silence_before`/`silence_after` 0–3 s; `gain_db` ±12. The same range may be inserted twice
+  (that is the "hear again").
+- **Master timeline**: `prepare_source(project, source, plan)` returns `duration` (narration plus every
+  block), retimed `words` and `captions`, and `timeline.windows[]` (`start`, `clip_start`, `clip_end`,
+  `end`, `at`, `in`, `out`, `has_video`). Scenes are written against this master time and must
+  cover it. Other callers of `validate_plan` pass `source.get("timeline")` as the fourth argument.
+- **`clip` scene** (panel layout only): shows the insertion's picture, decoded at 25 fps, first frame
+  held through `silence_before`, last frame through `silence_after`. The scene window must contain the
+  whole excerpt, and a transition into it must finish before the excerpt's sound starts. An
+  audio-only insertion is covered by any other scene type; its credit is drawn on screen while it plays.
+- **`bed`** (optional): never looped or padded — it must last the film from its `in`. It is
+  gated to silence during every insertion block and ducked by `duck_db` under narration.
+- **Technical bounds (fail closed)**: bed at least 15 dB below the narration during speech; each excerpt
+  within −15…+10 dB of the narration level; the mix is limited to −1 dBFS and refused if that would cost
+  more than 6 dB. These are floors for intelligibility, not proof of a comfortable listen — the
+  listening check in the release review stays a human decision.
+- **Provenance**: `render-report.json` gains `audio_timeline` (per insertion: asset, path, sha256,
+  credit, licence, source, trim, film position, gains; plus the measured mix). `REVIEW.md` and the
+  delivery `CREDITS.md` list each excerpt with its source and film timecodes. Clip assets are covered
+  by the handoff identity and by the per-asset rights review like any other asset.
+
+### Engine decision
+
+Keep Python, Pillow and FFmpeg. The guided-listening requirement is served by this primitive with
+sample-measured sync, so no concrete requirement remains for an optional Remotion adapter, and none
+was installed or evaluated. Reopen the comparison only if a piece needs something this stack cannot
+do (for example overlapping multi-track picture with per-layer animation), and then read the current
+official licensing terms first and compare editability, re-render cost, sync and review burden on the
+same short scene.
+
 ## Deliberate v1 limits
 
-No clip scene, interactive globe export, arbitrary vector effects, automatic
+No interactive globe export, arbitrary vector effects, automatic
 historical reconstruction, density interpolation or inferred migration. Clips
-need trim bounds, frame-rate normalization, embedded-audio policy and licensing;
-globe export needs a frame-driven camera and deterministic graphics capture.
+exist only as inserted excerpts (see above): no picture-over-picture, no narration over an
+excerpt, no fullbleed clip scene, no video upscale ceiling; globe export needs a frame-driven camera and deterministic graphics capture.
 These are extension points, not working capabilities claimed by this release.
 
 The geographic data adapter is explicit GeoJSON. The website's data can feed

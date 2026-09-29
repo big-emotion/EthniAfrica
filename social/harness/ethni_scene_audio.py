@@ -12,7 +12,7 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def prepare_source(project, source):
+def prepare_source(project, source, plan=None):
     keys(source, "source_script_sha256 source_audio_sha256 cuts paragraphs", "source")
     script = project / "narration.fr.txt"
     approval = project / "post.md"
@@ -52,6 +52,10 @@ def prepare_source(project, source):
     letters = lambda value: "".join(c for c in value.lower() if c.isalnum())
     require(letters(narration) == letters("".join(w["word"] for w in selected)),
             "Cuts must contain exactly the selected complete approved paragraphs")
-    return {"audio": audio, "narration": narration, "words": selected,
-            "captions": subtitles.minuter(subtitles.segmenter(narration), selected),
-            "duration": round(sum(b-a for a, b in cuts), 6)}
+    prepared = {"audio": audio, "narration": narration, "words": selected,
+                "captions": subtitles.minuter(subtitles.segmenter(narration), selected),
+                "duration": round(sum(b-a for a, b in cuts), 6)}
+    if plan and ("insertions" in plan or "bed" in plan):
+        from ethni_scene_clips import arrange
+        arrange(project, plan, prepared)
+    return prepared
