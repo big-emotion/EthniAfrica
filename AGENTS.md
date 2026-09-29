@@ -30,7 +30,16 @@ Read `docs/design/brand-charter.md`, then `docs/design/typography-charter.md`. I
 
 ## Before writing narration, cards, captions or page copy
 
-The peoples speak first and the source comes after (`CLAUDE.md`, `### Reader-facing register`, operator ruling of 2026-09-28): say what peoples call themselves and each other, never open a sentence on a linguist, an author or a book, and put the source on a card or in the source line. The hedge for a contested claim stays; only the scholar's name leaves the sentence. `npm run test:social-tools` holds the check (`attribution-en-tete`).
+EthniAfrica speaks as a popular educator drawing on research methods, without
+claiming scientific, linguistic or historical qualifications. Read `CLAUDE.md`
+(`### Reader-facing register`) and `docs/editorial/reader-facing-register.md`.
+Explain the subject first and place identifiable sources after it. Preserve
+uncertainty: a book's date is not an event date, and an author's interpretation
+must not become a community's belief. Oral and local knowledge are sources in
+their own right, with their context and limits. Choose reader needs from
+`docs/editorial/audience-personas.md`; distinguish intended audiences, observed
+behaviour and hypotheses. `npm run test:social-tools` holds the lexical check
+(`attribution-en-tete`); human semantic review remains necessary.
 
 ## Read `CLAUDE.md` for everything else
 
