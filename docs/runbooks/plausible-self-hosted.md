@@ -112,6 +112,25 @@ read at runtime. Setting them takes effect on the _next_ image build (the next R
 deploy, or a manual `docker compose build ethniafrica` on the host), never by editing `.env`
 alone.
 
+## Search terms on a public dashboard
+
+`search:submit` (surface `serp`) carries `results` and, when it passes
+`searchQueryProp`, `query`: the committed search, lowercased, once per search — never per
+keystroke. Two steps in the Plausible UI make it readable; neither is code and neither
+survives a reinstall of the instance, so redo them if the instance is rebuilt:
+
+1. **Register the properties.** Site settings → Custom properties → add `query` and
+   `results`. Plausible only lists a property in a goal's breakdown once its key is
+   registered. `search:result_click` should be registered as a goal at the same time.
+2. **Publish the dashboard.** Site settings → Visibility → make the dashboard public (or
+   create a shared link, with a password if the audience should be limited). Open
+   _Goal conversions_ → `search:submit` → _Properties_ → `query` to see the top terms.
+
+A published term cannot be recalled. The filter in `src/lib/analytics/searchQueryProp.ts`
+drops emails, links, long digit runs and paragraphs; it cannot recognise a personal name.
+The privacy page states this. The full history, keystroke prefixes included, stays in the
+`search_query_log` table.
+
 ## Data volume and cost
 
 ClickHouse config under `infra/plausible/clickhouse/` is the upstream "low resources"

@@ -11,6 +11,7 @@ import { PageLayout } from "@/components/layout/PageLayout";
 import { SearchFeedFrame } from "@/components/search/SearchFeedFrame";
 import { SearchFeed } from "@/components/search/SearchFeed";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
+import { searchQueryProp } from "@/lib/analytics/searchQueryProp";
 import { trackEvent } from "@/lib/analytics/trackEvent";
 import { SearchResultCard } from "@/components/search/SearchResultCard";
 import { SearchPeopleGroupCard } from "@/components/search/SearchPeopleGroupCard";
@@ -226,16 +227,20 @@ export function RecherchePageContent() {
         // is. Only the modal used to report, which left every such arrival out.
         //
         // The count is the point: a query returning nothing is what the corpus
-        // was asked for and does not hold. The query itself is deliberately
-        // absent, on this surface as on the modal.
+        // was asked for and does not hold. The query travels with it — once,
+        // here, for a search the reader committed, never per keystroke — so the
+        // public dashboard can list what was asked. The modal stays without it:
+        // it precedes this event on the same search and would count it twice.
         //
         // `answered` gates it because the loader degrades every failure to an
         // empty envelope, so a zero here is otherwise indistinguishable from
         // an outage.
         if (answered) {
+          const query = searchQueryProp(q);
           trackEvent("search:submit", {
             surface: "serp",
             results: hits.length,
+            ...(query ? { query } : {}),
           });
         }
         if (!answered) {
