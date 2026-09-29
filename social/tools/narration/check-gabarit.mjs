@@ -35,6 +35,12 @@ let trouvailles;
 let route;
 if (drapeau === "--brief") {
   const brief = JSON.parse(readFileSync(valeur, "utf-8"));
+  if (brief.narrativeDesign?.format === "carrousel") {
+    console.log(
+      "✖ ce contrôleur lit la narration d'un reel ; un carrousel n'a pas de narration : ses cartes sont écrites et montrées par `structure`, et le moteur de rendu contrôle leur mise en page"
+    );
+    process.exit(2);
+  }
   const { ok, errors } = validateDesign(brief.narrativeDesign, {
     mode: "handoff",
     brief,

@@ -51,7 +51,26 @@ meanings (family ≠ visual profile ≠ format) are in
    (the series' closing stays word for word). The reviews from step 2 still apply.
    Narration approval, voice and rendering remain later steps. Briefs without the
    section, and any narration already approved, follow their established path.
-5. **Carousel and video are independent editions.** Adapting a published carousel to
+5. **A `narrativeDesign` with `format: "carrousel"` is the same route for cards
+   (2026-09-30).** The design is a handoff only when `check-family-brief.mjs` accepts
+   it: `carouselSequence` is the outline's card ids, `carouselProfile` and
+   `edition.series` are the selected proposal's. **Write each card from its row of the
+   shown outline, in order**: the row's evidence and limits become the card's
+   qualification and its short `source`; its `headingKind` decides how flat the title
+   may be (a `claim` title over a qualified claim is a rewrite, and no uncertainty
+   hides only in the caption); its composition and intention are what you ask the
+   assets for. A card that cannot be written from its cited claims, or whose
+   composition the assets cannot fill (a timeline with fewer than two real dates, a
+   map with no documented route), goes back to `idee` and the plan is revised and
+   shown again; it is never padded with an invented source, date or image. Stay inside
+   the profile's card range and typography: never shrink type, split within the range
+   or narrow the question. `check-gabarit.mjs` does not apply to a carousel; the
+   renderer's own fit, crop and subject checks do, and the checks run at 320, 390 and
+   430 px first. Show the **complete card copy and the caption** for the existing text
+   approval: choosing a plan is not approving its copy. The reviews from step 2 follow
+   the claims and media actually present, and a social-only name investigation still
+   gets the name review. A reel's chosen pattern approves nothing here.
+6. **Carousel and video are independent editions.** Adapting a published carousel to
    a video on the same angle needs no new angle; the sourced claims and approved
    copy carry over, and only what a change touches is re-reviewed. Neither format is
    a prerequisite of the other, and no date or weekday is required.

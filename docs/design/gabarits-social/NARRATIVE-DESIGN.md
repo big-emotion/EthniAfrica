@@ -1,6 +1,7 @@
-# Research-led narrative design for reels
+# Research-led narrative design for reels and carousels
 
-Status: implemented, first version (2026-09-30). Scope: reels. Carousels are unchanged.
+Status: implemented (2026-09-30). Reels: first version. Carousels: added the same day as a
+`format` branch of the same model; see [Carousels](#carousels).
 
 ## What changed, in one sentence
 
@@ -117,6 +118,70 @@ not an approved episode, not a verified source register, and **its selection is 
 (`kind: synthetic` can never open a handoff). The Boundji 1938 claim is deliberately a `gap`, so
 the outline cannot lean on it. A second fixture, `single-origin.brief.json`, is a clearly
 synthetic single-origin case with one proposal and no invented competitor.
+
+## Carousels
+
+A carousel is not a reel transcript cut into boxes: the reader sets the pace, goes back,
+compares cards and can share one card without its neighbours. So the same five stages, the
+same ten patterns (each with a carousel reading in the catalogue) and the same B1–B6 apply,
+and what differs is what a plan has to prove.
+
+The design says `"format": "carrousel"`. **A design without `format` is a reel**, so every
+existing brief validates as it did; an unknown format fails, and a design and an edition that
+disagree on the format fail (a choice made for a reel never approves a carousel).
+
+| Reel | Carousel |
+| ---- | -------- |
+| `durationSeconds`, blocks with `seconds`, three-minute target | none; `seconds`, `durationSeconds` and `durationReason` are refused |
+| `videoSequence` = outline blocks | `carouselSequence` = outline card ids; no video sequence required |
+| arrangement = ordered moves | arrangement = a card preview, one step per card, `steps.length == cardCount` |
+| scene profile untouched | `profile` (a reading profile) or the name-origin series' own template, with `cardCount` and `countReason` |
+| outline `blocks` | outline `cards`, plus `countReason` and `unresolved` |
+
+**Route, kept separate.** A carousel proposal declares `series`: `null` (a social-only edition,
+stated as such) or `name-origin` (the historical name carousel: no reading profile, 8–14 cards
+from its template, its attested myth as `myth.claimRef`, its closing and ledger). It can never
+turn an existing series edition into a social-only one to pass a check: at handoff the edition's
+series must equal the proposal's. `memoires-sonores` and `lectures-afrique` keep their contract
+and are refused as plan targets. Family, pattern, series, profile, format and destination stay
+six separate choices.
+
+**Counts and compositions come from the renderer.** The validator reads
+`social/harness/carousel-profiles/*.json` (`reading-story` 4–9, `reading-comparison` 4–7,
+`reading-listening` 3–8, which also owes a music claim so the music review stays required).
+It holds the first card to `cover`, the last to `credits`, every other card to the profile's
+compositions, a `timeline` to 2–4 dated entries, a `comparison` to `relation: "comparaison"`
+(never the derivation arrow) and a `map` to a place or route claim. The one copied range,
+the name template's 8–14, is held to its source sentence by a test.
+
+**A card carries its claim locally.** Each card owes a working heading and its `headingKind`
+(`question`, `label`, `qualified-claim`, `claim`), a message, evidence with limits, a
+`qualification` shown on the card, a short `sourceLine` (every card after the cover), a
+composition and a visual intention (what must be recognised, not an image prompt), a
+transition and the takeaways or criteria it serves. A `claim` heading over a qualified claim
+fails, so a caveat cannot live only in the caption, and no workshop notation (`B3`, `claim ID`,
+`livre C`, `k2`) may reach a heading, qualification or source line.
+
+**What the code cannot check** (an editorial pass, as for reels): that a `qualified-claim`
+heading is honest when the card is read alone, that a source line truly identifies the source,
+that a card's message does not turn an attestation date into a creation date, and that
+`qualification` says something a reader understands. It also says nothing about phone reading
+comfort: the standard body is about 9.5 px equivalent at 320 px, a limit of the renderer that a
+narrative plan neither fixes nor excuses. Type is never shrunk to make a card fit, and the
+renderer's own fit, crop and subject checks stay the gate, viewed at 320, 390 and 430 px first.
+
+**Reuse.** One brief can hold a shared subject and research; selection and outline belong to
+one format. A reel's chosen pattern is not a carousel approval, and an explicit instruction to
+adapt the angle is enough to authorise showing the carousel plan without asking again.
+
+Demonstration: [`NARRATIVE-DESIGN-CAROUSEL-LINGALA-DEMO.md`](NARRATIVE-DESIGN-CAROUSEL-LINGALA-DEMO.md),
+rendered from `lingala-carousel-demo.brief.json` (a test holds them equal), with the reel demo's
+research copied verbatim (a test holds that too). Three proposals with three different
+questions, learning goals and card sequences (C1 competing explanations, `reading-story`, 9
+cards; C2 historical actor, `reading-story`, 6; C3 clarifying comparison, `reading-comparison`,
+7) and a nine-card plan for C1. **The selection of C1 is synthetic**, the research is the
+provisional Lingala synthesis, and nothing in it is an approved episode.
+`single-origin-carousel.brief.json` is the synthetic full brief used to exercise a handoff.
 
 ## Older work
 

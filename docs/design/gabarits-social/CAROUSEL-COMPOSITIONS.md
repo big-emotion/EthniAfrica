@@ -7,6 +7,11 @@ was missing around it: a variable card count, a slot contract per card, a check
 that a face, a document or a route survives the crop, and a way to state a
 comparison without claiming a derivation.
 
+How a deck's argument is chosen before its cards are written — five stages in
+`ethniafrica-idee`, a card table shown before any copy — is in
+[NARRATIVE-DESIGN.md](NARRATIVE-DESIGN.md#carousels). It reads this table's counts and
+compositions from the profile descriptors and adds none of its own.
+
 Nothing here approves an episode's copy, sources or images. Every example below is
 a synthetic fixture (`social/harness/layout_fixtures.py`), drawn, not photographed.
 

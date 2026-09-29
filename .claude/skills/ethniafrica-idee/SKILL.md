@@ -1,6 +1,6 @@
 ---
 name: ethniafrica-idee
-description: Brainstormer un sujet de publication EthniAfrica et en sortir un rapport de sujet — angle, pilier, promesse en une phrase, ce que le sujet ne dira pas, sources pressenties, formats visés, réserves. Première étape de la chaîne idee → structure → produire. Porte aussi les cinq étapes de conception narrative d'un reel (cadrer, rechercher, proposer des trames avec critères de réussite, enregistrer le choix réel de l'opérateur, montrer le plan détaillé avant toute rédaction). Utiliser pour « j'ai une idée de… », « on pourrait parler de… », « trouve-moi un sujet », « qu'est-ce qu'on pourrait publier sur… », « quels récits possibles pour ce sujet », ou /ethniafrica-idee. N'écrit aucune carte, ne choisit aucune image, ne touche à aucun gabarit.
+description: Brainstormer un sujet de publication EthniAfrica et en sortir un rapport de sujet — angle, pilier, promesse en une phrase, ce que le sujet ne dira pas, sources pressenties, formats visés, réserves. Première étape de la chaîne idee → structure → produire. Porte aussi les cinq étapes de conception narrative d'un reel ou d'un carrousel (cadrer, rechercher, proposer des trames avec critères de réussite, enregistrer le choix réel de l'opérateur, montrer le plan détaillé avant toute rédaction). Utiliser pour « j'ai une idée de… », « on pourrait parler de… », « trouve-moi un sujet », « qu'est-ce qu'on pourrait publier sur… », « quels récits possibles pour ce sujet », ou /ethniafrica-idee. N'écrit aucune carte, ne choisit aucune image, ne touche à aucun gabarit.
 ---
 
 # idee — brainstormer un sujet
@@ -34,10 +34,11 @@ visual profile, format and destination are four separate choices.
 
 ## Conception narrative guidée par la recherche — cinq étapes (2026-09-30)
 
-**Quand elle s'applique.** Pour un reel dont le sujet a de la matière de recherche et
-plusieurs récits possibles (le cas fondateur : Lingala). Le brief porte alors une section
-`narrativeDesign` (version 1) ; **c'est ce qui aiguille**, jamais une phrase, une famille
-ou une série. Sans cette section, le brief suit son chemin habituel : un brief ou une
+**Quand elle s'applique.** Pour un reel **ou un carrousel** dont le sujet a de la matière
+de recherche et plusieurs récits possibles (le cas fondateur : Lingala). Le brief porte
+alors une section `narrativeDesign` (version 1) ; **c'est ce qui aiguille**, jamais une
+phrase, une famille ou une série. Sans `format`, la section décrit un reel ; un carrousel
+écrit `"format": "carrousel"` (voir « Le carrousel » plus bas). Sans cette section, le brief suit son chemin habituel : un brief ou une
 narration déjà approuvés ne reçoivent ni recherche ni choix rétroactifs.
 
 Avant : recherche → un angle choisi par l'assistant → narration complète. Après :
@@ -76,7 +77,7 @@ pas … »), pas une mesure d'audience : rien ici ne prétend qu'un public a ét
   clairement délégué le choix, enregistre la délégation (`kind: "delegated"`) ; sinon le
   choix est le sien. Plusieurs propositions retenues restent des éditions séparées :
   demande laquelle développer d'abord.
-- **Durée.** Trois minutes est la cible ; une cible plus longue porte sa raison visible
+- **Durée (reel seulement ; un carrousel n'en a aucune).** Trois minutes est la cible ; une cible plus longue porte sa raison visible
   (`durationReason`). N'accélère jamais la voix et ne retire jamais une incertitude pour
   cacher un texte trop long : dis la décision de périmètre.
 - **Si seule l'idée était demandée, arrête-toi à l'étape 5 montrée.** Si l'écriture de
@@ -104,7 +105,7 @@ qu'une affirmation historique est vraie, ni qu'un récit est bon — cela reste 
 éditoriale (liste dans `docs/design/gabarits-social/NARRATIVE-DESIGN.md`).
 
 **Au passage à `structure`**, le brief reprend la forme ordinaire (`edition`, `question`,
-`claims`, `beats`, `videoSequence`) **dérivée du choix** : la question et la famille de
+`claims`, `beats`, `videoSequence` — `carouselSequence` pour un carrousel) **dérivée du choix** : la question et la famille de
 l'édition sont celles de la proposition retenue, les affirmations viennent de la
 recherche, et les étapes de `videoSequence` sont les blocs du plan. Aucune édition n'est
 créée pour une proposition non retenue. Le brouillon de conception (sans choix ni plan)
@@ -126,6 +127,66 @@ sortie ou un détail technique ne rouvrent pas un choix inchangé.
 **Un sujet déjà produit** (par exemple le paquet Lingala de 210,6 s) garde ses
 approbations, liées à sa version : ne les réécris pas et n'en transfère aucune à un
 nouveau script.
+
+### Le carrousel (2026-09-30)
+
+Les cinq étapes, les dix trames (`references/narrative-patterns.md`, qui donne aussi la
+lecture carrousel de chacune) et les fonctions B1–B6 sont **les mêmes** ; le carrousel
+n'a ni skill, ni catalogue à lui. Ce qui change, parce que le lecteur tient le rythme,
+revient en arrière, compare des cartes et peut partager une carte sans ses voisines :
+
+- **Aucune durée.** Ni secondes, ni cible de trois minutes, ni reel d'accompagnement
+  obligatoire. Le nombre de cartes est celui du **profil**, lu dans
+  `social/harness/carousel-profiles/*.json` (`reading-story` 4–9, `reading-comparison`
+  4–7, `reading-listening` 3–8) : ne le recopie jamais. Un argument qui dépasse le
+  maximum resserre la question ou devient une série de pièces complètes, montrée
+  comme telle ; ne réduis jamais la typographie, n'ôte jamais une incertitude, ne
+  change jamais un profil en silence. `memoires-sonores` et `lectures-afrique` gardent
+  leur propre route : ne les planifie pas ici.
+- **Chaque proposition déclare sa route** : `series` (`null` = enquête sociale sans
+  mythe, dite telle ; `name-origin` = le carrousel historique des noms, sans profil de
+  lecture, avec son mythe posé en question — `myth.claimRef` —, sa clôture unique et son
+  carnet), `profile`, `cardCount`, `countReason` (pourquoi ce nombre suffit) et
+  `particularity` (ce que cette trame accentue, répète ou déplace). Une enquête sociale
+  n'est jamais un moyen de sortir un épisode d'une série existante.
+- **La carte d'une proposition** ajoute aux champs du reel : **Recherche**, **Exemple de
+  référence** (réel avec localisateur, ou hypothétique), **Agencement** (l'aperçu carte
+  par carte, chaque carte avec ses fonctions B1–B6), **Profil et nombre**,
+  **Particularité** et **Statut**. Six fonctions ne sont pas six cartes : une carte peut
+  en porter plusieurs, une fonction peut en occuper plusieurs (B2+B3 répétés par
+  explication). Une réponse ou une orientation utile arrive normalement dès la carte 2 ;
+  le payoff complet ne dépend jamais d'un second carrousel.
+- **Après le choix, le tableau des cartes** (`--render plan`) : identifiant stable,
+  fonctions, titre de travail, sa nature (`headingKind` : `question`, `label`,
+  `qualified-claim` ou `claim`), message, preuves et limites, **qualification et source
+  affichées sur la carte**, composition et intention visuelle, transition, acquis. Il
+  se ferme sur le nombre de cartes expliqué, les phrases de réussite remplies et
+  `unresolved` (ce qu'il reste à établir avant d'écrire).
+- **Règles de carte.** Un titre factuel reste honnête isolé : `claim` est refusé sur une
+  affirmation qualifiée, l'incertitude voyage avec l'affirmation et pas seulement dans la
+  légende. Toute carte après la couverture porte une source courte identifiable.
+  Aucune notation d'atelier (« B3 », « claim ID », « livre C manquant ») ne s'imprime
+  sur une carte : ces manques restent dans le rapport. La couverture ouvre, `credits`
+  ferme (et peut porter la synthèse sourcée plus tôt) ; une comparaison porte
+  `relation: "comparaison"`, jamais la flèche de dérivation ; une frise exige 2 à 4 dates
+  réellement étayées ; une carte géographique, un lieu ou un trajet étayé.
+- **Ce que ce plan ne garantit pas.** Il ne règle ni le confort de lecture sur téléphone
+  ni le cadrage : la typographie, le recadrage et les portes d'image restent ceux du
+  moteur de rendu, à regarder d'abord à 320, 390 et 430 px. Ne dis jamais le contraire.
+- **Au passage à `structure`**, le brief porte `edition.format: "carrousel"`,
+  `carouselProfile` (le profil de la proposition, ou absent pour `name-origin`),
+  `carouselSequence` (les identifiants des cartes du plan), et `edition.series` égal à
+  la série de la proposition. Aucun `videoSequence` n'est requis. Les revues suivent les
+  affirmations et les médias réels : la revue du nom reste due pour toute affirmation
+  d'origine, même hors série ; le mythe seulement si `edition.myth` existe.
+- **Un choix de reel n'approuve pas le carrousel.** Un « adapte cet angle en carrousel »
+  suffit à l'autoriser : réutilise la recherche et le choix d'angle, montre le plan
+  carrousel, sans redemander le même choix. Les approbations de texte ne passent que sur
+  des entrées inchangées.
+
+Mêmes commandes que pour le reel (`check-narrative-design.mjs`) ; `check-gabarit.mjs`
+ne s'applique pas à un carrousel. La démonstration lisible :
+`docs/design/gabarits-social/NARRATIVE-DESIGN-CAROUSEL-LINGALA-DEMO.md`.
 
 ## Mémoires sonores scope (2026-09-25)
 

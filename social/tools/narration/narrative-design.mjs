@@ -16,11 +16,15 @@
  * matter and are not touched here.
  */
 import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
 
 import { FAMILIES } from "../contract/contract.mjs";
 import { CLOTURE_UNIQUE } from "./gabarit-reel.mjs";
 
 export const DESIGN_VERSION = 1;
+// A design without `format` is a reel: the field was added for carousels, and
+// every brief written before it must keep validating as it did.
+export const DESIGN_FORMATS = Object.freeze(["video", "carrousel"]);
 export const DEFAULT_TARGET_SECONDS = 180;
 const MIN_CONTENT_CHARS = 40;
 
@@ -217,6 +221,69 @@ export const BLOCKS = Object.freeze([
   },
 ]);
 
+/**
+ * How each catalogue pattern reads as a carousel. The ten ids are the reel's:
+ * this is a second reading of the same pattern, never a second catalogue. The
+ * arrangement is a starting shape; a proposal's own preview overrides it with
+ * the subject's material.
+ */
+export const CAROUSEL_READING = Object.freeze({
+  "origin-explained": {
+    arrangement: "B1 → B2 → B3 → B4 → B5 → B6",
+    success:
+      "Le lecteur explique la forme et le sens proposés, dit quel est leur degré de certitude et distingue une attestation d'une création.",
+  },
+  "competing-explanations": {
+    arrangement:
+      "B1 → B5 (limite dès le début) → B2+B3 répétés par explication → B4 si étayé → B5 → B6",
+    success:
+      "Le lecteur reformule les explications et le point précis qu'on ne peut pas trancher, sans accorder une crédibilité égale par défaut.",
+  },
+  "chronological-trajectory": {
+    arrangement: "B1 → B2 au besoin → B3+B4 en alternance → B5 → B6",
+    success:
+      "Le lecteur remet dans l'ordre les jalons étayés et dit ce qui a changé, sans transformer un intervalle vide en continuité inventée.",
+  },
+  "naming-perspectives": {
+    arrangement: "B1 → B2+B3 par point de vue de nomination → B4 → B5 → B6",
+    success:
+      "Le lecteur rattache chaque usage attesté à son contexte documenté, sans faire d'une étiquette historique l'identité permanente de tous les locuteurs.",
+  },
+  "name-circulation": {
+    arrangement: "B1 → B2+B3 du point de départ → B4 répété → B5 → B6",
+    success:
+      "Le lecteur décrit un trajet et un mécanisme étayés, et distingue la diffusion d'un nom de celle d'une langue ou d'une chanson.",
+  },
+  "turning-point": {
+    arrangement:
+      "B1 → B2+B3 du contexte → B3 de l'événement → B4 du changement → B5 → B6",
+    success:
+      "Le lecteur dit la différence avant et après, et ce que l'événement explique ou n'explique pas.",
+  },
+  "historical-actor": {
+    arrangement:
+      "B1 → B2 du contexte antérieur → B3 des actes → B4 des suites → B5 → B6",
+    success:
+      "Le lecteur nomme la contribution étayée sans faire de la codification, de l'enseignement ou de la circulation une invention.",
+  },
+  "clarifying-comparison": {
+    arrangement: "B1 → B2 des définitions → B3+B4 par critère commun → B5 → B6",
+    success:
+      "Le lecteur donne deux distinctions étayées et un trait ou une limite communs, sans classement pur ou dégradé.",
+  },
+  "anecdote-entry": {
+    arrangement: "B1 par la scène → B3 → B2+B4 → B5 → B6",
+    success:
+      "Le lecteur explique la portée de l'anecdote et pourquoi un épisode ne décrit pas tout un continent ou un siècle.",
+  },
+  "received-claim-examined": {
+    arrangement:
+      "B1 de l'affirmation en question → B5 précoce → B2+B3 → B4 si utile → B5 → B6",
+    success:
+      "Le lecteur corrige l'affirmation précise à l'aide des preuves, sans la remplacer par une exagération inverse.",
+  },
+});
+
 const BLOCK_IDS = BLOCKS.map((block) => block.id);
 const PATTERN_IDS = PATTERNS.map((pattern) => pattern.id);
 const DISPOSITIONS = ["offered", "conditional", "unsupported", "inapplicable"];
@@ -228,6 +295,63 @@ const SOURCE_TIERS = ["official", "referenced", "unverified", "needs_review"];
 const SELECTION_KINDS = ["operator", "delegated", "synthetic"];
 const OMITTABLE = ["B2", "B3", "B4"];
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
+
+const formatOf = (design) => design?.format ?? "video";
+
+const PROFILE_DIR = new URL(
+  "../../harness/carousel-profiles/",
+  import.meta.url
+);
+// The historical name-origin carousel has no profile descriptor: its count is
+// the template's own (gabarit-carrousel-nom.md, « 8 à 14 »), and a test holds
+// this copy to that sentence.
+const NAME_CAROUSEL = Object.freeze({ min: 8, max: 14 });
+const HEADING_KINDS = ["question", "label", "qualified-claim", "claim"];
+// What only the workshop should read; a card that prints it leaks the tooling.
+const WORKSHOP_NOTATION =
+  /\bB[1-6]\b|\bclaim ID\b|\binventaire non vérifié\b|\bunverified inventory\b|\b(?:livre|book|ouvrage) [A-C]\b|\b[ku]\d+\b/i;
+const TIMING_KEYS = ["seconds", "durationSeconds", "durationReason"];
+
+/**
+ * What the renderer's own profile descriptor says, so counts and compositions
+ * are never copied into Node. `own` marks the routes that keep their contract
+ * (Mémoires sonores, Lectures d'Afrique): a plan may not reshape them.
+ */
+function readProfile(id) {
+  if (typeof id !== "string" || !/^[a-z][a-z-]*$/.test(id)) return null;
+  let descriptor;
+  try {
+    descriptor = JSON.parse(
+      readFileSync(new URL(`${id}.json`, PROFILE_DIR), "utf-8")
+    );
+  } catch {
+    return null;
+  }
+  if (!descriptor.reading) return { kind: "own", id };
+  return {
+    kind: "reading",
+    id,
+    label: id,
+    min: descriptor.reading.min,
+    max: descriptor.reading.max,
+    compositions: descriptor.reading.compositions,
+    music: descriptor.music === true,
+  };
+}
+
+/** The count and composition contract a carousel proposal is planned under. */
+function carouselRoute(proposal) {
+  if (proposal.series === "name-origin") {
+    return {
+      kind: "name-origin",
+      label: "the name-origin template",
+      ...NAME_CAROUSEL,
+      compositions: null,
+    };
+  }
+  const profile = readProfile(proposal.profile);
+  return profile?.kind === "reading" ? profile : null;
+}
 
 const blank = (value) => typeof value !== "string" || value.trim() === "";
 const ids = (list) => (Array.isArray(list) ? list.map((item) => item?.id) : []);
@@ -417,7 +541,7 @@ function orderErrors(where, groups, push, unit) {
   }
 }
 
-function proposalErrors(proposal, refs, push) {
+function proposalErrors(proposal, refs, push, { format, research }) {
   const where = `proposal ${proposal.id}`;
   if (blank(proposal.id)) push("a proposal has no id");
   if (!PATTERN_IDS.includes(proposal.patternId)) {
@@ -483,7 +607,9 @@ function proposalErrors(proposal, refs, push) {
     push(`${where}: a real reference example needs a locator`);
   }
 
-  if (
+  if (format === "carrousel") {
+    carouselProposalErrors(proposal, research, push);
+  } else if (
     !Number.isInteger(proposal.durationSeconds) ||
     proposal.durationSeconds <= 0
   ) {
@@ -497,6 +623,100 @@ function proposalErrors(proposal, refs, push) {
     );
   }
   arrangementErrors(where, proposal.arrangement, proposal.family, refs, push);
+}
+
+// The carousel's own promises: which route it is planned under (a series or a
+// reading profile), how many cards that route allows, and that no time enters.
+function carouselProposalErrors(proposal, research, push) {
+  const where = `proposal ${proposal.id}`;
+  for (const key of TIMING_KEYS) {
+    if (key in proposal) {
+      push(`${where} carries ${key}: a carousel design carries no timing`);
+    }
+  }
+  if (blank(proposal.particularity)) push(`${where} has no particularity`);
+  if (![null, "name-origin"].includes(proposal.series)) {
+    push(
+      `${where} must declare series: null (a social-only edition) or "name-origin"; memoires-sonores and lectures-afrique keep their own routes`
+    );
+  }
+  const nameOrigin = proposal.series === "name-origin";
+  const claims = list(research?.claims);
+  let route = null;
+  if (nameOrigin) {
+    route = carouselRoute(proposal);
+    if (proposal.profile !== null && proposal.profile !== undefined) {
+      push(
+        `${where}: the name-origin series keeps its legacy name carousel, with no reading profile`
+      );
+    }
+    if (proposal.family !== "name-investigation") {
+      push(
+        `${where}: the name-origin series requires the name-investigation family`
+      );
+    }
+    // The series never loses its myth by being planned here.
+    if (!claims.some((claim) => claim.id === proposal.myth?.claimRef)) {
+      push(
+        `${where}: the name-origin series needs its attested myth (myth.claimRef, a research claim)`
+      );
+    }
+  } else if (blank(proposal.profile)) {
+    push(
+      `${where} needs a reading profile (reading-story, reading-comparison or reading-listening)`
+    );
+  } else {
+    const profile = readProfile(proposal.profile);
+    if (!profile) {
+      push(`${where} names unknown profile "${proposal.profile}"`);
+    } else if (profile.kind === "own") {
+      push(
+        `${where}: ${profile.id} keeps its own contract and is not planned by narrative design`
+      );
+    } else {
+      route = profile;
+      const cited = list(proposal.claimRefs);
+      if (
+        profile.music &&
+        !cited.some((id) => claims.find((c) => c.id === id)?.kind === "music")
+      ) {
+        push(
+          `${where}: ${profile.id} needs a music claim, so the music review stays required`
+        );
+      }
+    }
+  }
+
+  const count = proposal.cardCount;
+  if (!Number.isInteger(count) || count <= 0) {
+    push(`${where} needs an integer cardCount`);
+  } else if (route && (count < route.min || count > route.max)) {
+    push(
+      `${where} cardCount ${count} is outside ${route.label}'s ${route.min}–${route.max}`
+    );
+  }
+  if (blank(proposal.countReason)) {
+    push(`${where} needs a countReason: why this many cards suffice`);
+  }
+  const steps = list(proposal.arrangement?.steps);
+  if (Number.isInteger(count) && steps.length !== count) {
+    push(
+      `${where} has ${steps.length} cards in the preview but cardCount is ${count}`
+    );
+  }
+  for (const [index, step] of steps.entries()) {
+    const allowed = route?.compositions;
+    if (step.composition === undefined || !allowed) continue;
+    const fits =
+      index === 0
+        ? step.composition === "cover"
+        : allowed.includes(step.composition);
+    if (!fits) {
+      push(
+        `${where} preview card ${index + 1} names composition "${step.composition}", which ${route.label} does not offer there`
+      );
+    }
+  }
 }
 
 function assessmentErrors(design, push) {
@@ -681,13 +901,18 @@ function outlineErrors(design, refs, gaps, push) {
     if (blank(outline.rationale?.[field]))
       push(`outline rationale needs ${field}`);
   }
+  statementErrors(outline, criterionIds, "viewer", push);
+}
+
+// One filled statement per criterion, never a formula with an ellipsis.
+function statementErrors(outline, criterionIds, audience, push) {
   const statements = new Map(
     list(outline.successStatements).map((s) => [s.criterionId, s])
   );
   for (const id of criterionIds) {
     const statement = statements.get(id)?.statement;
     if (blank(statement))
-      push(`criterion ${id} has no viewer success statement`);
+      push(`criterion ${id} has no ${audience} success statement`);
     else if (/…|\.\.\./.test(statement)) {
       push(`success statement for ${id} still holds a placeholder (ellipsis)`);
     }
@@ -695,6 +920,236 @@ function outlineErrors(design, refs, gaps, push) {
   for (const id of statements.keys()) {
     if (!criterionIds.has(id))
       push(`success statement for unknown criterion ${id}`);
+  }
+}
+
+/**
+ * The carousel's stage-5 table. Each card owes its own evidence, its own
+ * qualification and its own source, because a reader can share one card without
+ * its neighbours; nothing here is timed, since the reader sets the pace.
+ */
+function carouselOutlineErrors(design, refs, gaps, push) {
+  const outline = design.outline;
+  const proposal = list(design.proposals).find(
+    (p) => p.id === design.selection?.proposalId
+  );
+  if (!proposal) return;
+  if (outline.proposalId !== proposal.id) {
+    push(
+      `outline is for ${outline.proposalId}, not for the selected proposal ${proposal.id}`
+    );
+  }
+  for (const key of TIMING_KEYS) {
+    if (key in outline) {
+      push(`outline carries ${key}: a carousel design carries no timing`);
+    }
+  }
+  const cards = list(outline.cards);
+  if (cards.length === 0) return push("outline has no card");
+
+  const route = carouselRoute(proposal);
+  if (route && (cards.length < route.min || cards.length > route.max)) {
+    push(
+      `outline has ${cards.length} cards, outside ${route.label}'s ${route.min}–${route.max}`
+    );
+  }
+  if (blank(outline.countReason)) {
+    push(
+      "outline needs a countReason: why this many cards, each earning its place"
+    );
+  }
+  if (!Array.isArray(outline.unresolved)) {
+    push(
+      "outline must declare what is unresolved (unresolved: an empty list is a declaration)"
+    );
+  }
+
+  const claims = list(design.research?.claims);
+  const takeawayIds = new Set(ids(proposal.takeaways));
+  const criterionIds = new Set(ids(proposal.successCriteria));
+  const supportedTakeaways = new Set();
+  const supportedCriteria = new Set();
+  const covered = new Set(
+    list(proposal.arrangement?.omitted).map((o) => o.function)
+  );
+  const messages = new Map();
+  const seenIds = new Set();
+
+  for (const [index, card] of cards.entries()) {
+    const where = `card ${card.id}`;
+    if (blank(card.id) || seenIds.has(card.id)) {
+      push(`${where} needs a unique id`);
+    }
+    seenIds.add(card.id);
+    if ("seconds" in card) {
+      push(`${where} carries seconds: a carousel design carries no timing`);
+    }
+    for (const fn of list(card.functions)) {
+      if (BLOCK_IDS.includes(fn)) covered.add(fn);
+      else push(`${where} names unknown function ${fn}`);
+    }
+    if (list(card.functions).length === 0) push(`${where} maps no function`);
+
+    if (blank(card.heading)) push(`${where} has no heading`);
+    if (!HEADING_KINDS.includes(card.headingKind)) {
+      push(
+        `${where} headingKind "${card.headingKind}" must be ${HEADING_KINDS.join(", ")}`
+      );
+    }
+    if (blank(card.message) || card.message.trim().length < MIN_CONTENT_CHARS) {
+      push(
+        `${where} message is too generic (needs subject material, ${MIN_CONTENT_CHARS}+ characters)`
+      );
+    } else if (card.message.trim() === card.heading?.trim()) {
+      push(`${where} message only repeats its heading`);
+    }
+    const key = card.message?.trim();
+    if (key && messages.has(key)) {
+      push(`cards ${messages.get(key)} and ${card.id} have the same message`);
+    }
+    messages.set(key, card.id);
+    if (blank(card.evidence?.limits)) push(`${where} needs evidence.limits`);
+    if (blank(card.qualification)) {
+      push(`${where} needs a qualification the reader sees on the card itself`);
+    }
+    if (index > 0 && blank(card.sourceLine)) {
+      push(`${where} needs a source line: every card after the cover owes one`);
+    }
+    if (blank(card.visualIntention)) push(`${where} needs a visualIntention`);
+    if (blank(card.transition)) push(`${where} needs a transition`);
+    for (const field of ["heading", "qualification", "sourceLine"]) {
+      const leaked = String(card[field] ?? "").match(WORKSHOP_NOTATION);
+      if (leaked) {
+        push(
+          `${where} ${field} prints workshop notation to the reader ("${leaked[0]}")`
+        );
+      }
+    }
+
+    const cited = list(card.evidence?.claimRefs);
+    for (const ref of cited) {
+      if (!refs.has(ref)) push(`${where} cites unknown reference ${ref}`);
+      else if (gaps.has(ref)) {
+        push(
+          `${where} cites ${ref} as evidence but ${ref} is a gap: resolve or qualify it before use`
+        );
+      }
+    }
+    const citedClaims = cited
+      .map((ref) => claims.find((c) => c.id === ref))
+      .filter(Boolean);
+    if (card.headingKind === "claim") {
+      const qualified = citedClaims.filter(
+        (c) => c.status !== "sourced" || !blank(c.uncertainty)
+      );
+      if (citedClaims.length === 0 || qualified.length) {
+        push(
+          `${where} has a flat factual heading over ${citedClaims.length === 0 ? "no claim" : `a qualified claim (${qualified.map((c) => c.id).join(", ")})`}: qualify the heading, or make it a question or a label`
+        );
+      }
+    }
+
+    compositionErrors(
+      where,
+      card,
+      index,
+      cards.length,
+      route,
+      citedClaims,
+      push
+    );
+
+    for (const id of list(card.supports?.takeawayIds)) {
+      if (takeawayIds.has(id)) supportedTakeaways.add(id);
+      else push(`${where} supports unknown takeaway ${id}`);
+    }
+    for (const id of list(card.supports?.criterionIds)) {
+      if (criterionIds.has(id)) supportedCriteria.add(id);
+      else push(`${where} supports unknown criterion ${id}`);
+    }
+  }
+  for (const fn of BLOCK_IDS) {
+    if (!covered.has(fn)) {
+      push(
+        `outline: function ${fn} is in no card and not omitted by the proposal`
+      );
+    }
+  }
+  orderErrors(
+    "outline",
+    cards.map((card) => list(card.functions)),
+    push,
+    "card"
+  );
+  for (const id of takeawayIds) {
+    if (!supportedTakeaways.has(id))
+      push(`takeaway ${id} is supported by no card`);
+  }
+  for (const id of criterionIds) {
+    if (!supportedCriteria.has(id))
+      push(`criterion ${id} is supported by no card`);
+  }
+  for (const field of ["patternFit", "orderLogic"]) {
+    if (blank(outline.rationale?.[field]))
+      push(`outline rationale needs ${field}`);
+  }
+  statementErrors(outline, criterionIds, "reader", push);
+}
+
+// A composition is a slot contract of the renderer: the plan may only ask for
+// one the profile offers, and for the data that composition cannot be drawn
+// without. Whether the finished card fits is the renderer's own check.
+function compositionErrors(
+  where,
+  card,
+  index,
+  total,
+  route,
+  citedClaims,
+  push
+) {
+  const composition = card.composition;
+  if (blank(composition)) return push(`${where} needs a composition`);
+  if (route?.compositions) {
+    if (index === 0 && composition !== "cover") {
+      push(`${where}: the first card must be a cover`);
+    } else if (index === total - 1 && composition !== "credits") {
+      push(`${where}: the last card must be credits`);
+    } else if (index > 0 && !route.compositions.includes(composition)) {
+      push(
+        `${where} composition "${composition}" is not in ${route.label}'s compositions (${route.compositions.join(", ")})`
+      );
+    }
+  }
+  const between = (value) =>
+    Number.isInteger(value) && value >= 2 && value <= 4;
+  if (composition === "timeline") {
+    if (!between(card.datedEntries)) {
+      push(`${where}: a timeline card needs 2–4 dated entries (datedEntries)`);
+    }
+    if (card.relation !== undefined && card.relation !== "chronologie") {
+      push(`${where} relation must be "chronologie" on a timeline`);
+    }
+  } else if (composition === "comparison") {
+    if (!between(card.pairs)) {
+      push(`${where}: a comparison card needs 2–4 pairs (pairs)`);
+    }
+    // The name-derivation arrow claims one term became the other.
+    if (card.relation !== "comparaison") {
+      push(
+        `${where}: a comparison card needs relation "comparaison", never a derivation arrow`
+      );
+    }
+  } else if (card.relation !== undefined) {
+    push(
+      `${where} names a relation, which only timeline and comparison cards take`
+    );
+  }
+  if (
+    composition === "map" &&
+    !citedClaims.some((c) => ["place", "route", "map"].includes(c.kind))
+  ) {
+    push(`${where}: a map card needs a place or route claim it can show`);
   }
 }
 
@@ -752,12 +1207,22 @@ function snapshotErrors(design, brief, refs, push) {
         );
     }
   }
-  const expected = list(design.outline?.blocks).map((b) => b.id);
-  const actual = list(brief.videoSequence).map((s) => s.step);
-  if (stable(expected) !== stable(actual)) {
+  const format = formatOf(design);
+  if (edition.format !== format) {
     push(
-      `videoSequence steps [${actual.join(", ")}] must be the outline blocks [${expected.join(", ")}]`
+      `edition format "${edition.format}" differs from the design's "${format}": a choice made for one format never approves the other`
     );
+  }
+  if (format === "carrousel") {
+    carouselSnapshotErrors(design, brief, proposal, push);
+  } else {
+    const expected = list(design.outline?.blocks).map((b) => b.id);
+    const actual = list(brief.videoSequence).map((s) => s.step);
+    if (stable(expected) !== stable(actual)) {
+      push(
+        `videoSequence steps [${actual.join(", ")}] must be the outline blocks [${expected.join(", ")}]`
+      );
+    }
   }
   for (const id of list(proposal.claimRefs)) {
     const claim = list(design.research?.claims).find((c) => c.id === id);
@@ -766,6 +1231,36 @@ function snapshotErrors(design, brief, refs, push) {
         `the selected proposal cites ${id} but ${id} is a gap: resolve or qualify it first`
       );
     }
+  }
+}
+
+// What is specific to a carousel handoff: the card ids become carouselSequence,
+// and the edition keeps the series and profile the operator chose. An existing
+// series edition is never relabelled social-only, nor the reverse, to pass.
+function carouselSnapshotErrors(design, brief, proposal, push) {
+  const expected = list(design.outline?.cards).map((card) => card.id);
+  const actual = list(brief.carouselSequence).map((s) => s.step);
+  if (stable(expected) !== stable(actual)) {
+    push(
+      `carouselSequence steps [${actual.join(", ")}] must be the outline cards [${expected.join(", ")}]`
+    );
+  }
+  const profile = proposal.profile ?? null;
+  if ((brief.carouselProfile ?? null) !== profile) {
+    push(
+      `brief carouselProfile "${brief.carouselProfile ?? null}" differs from the selected proposal's "${profile}"`
+    );
+  }
+  const series = proposal.series ?? null;
+  if ((brief.edition.series ?? null) !== series) {
+    push(
+      `edition series "${brief.edition.series ?? null}" differs from the selected proposal's "${series}"`
+    );
+  }
+  if (series === "name-origin" && !brief.edition.myth) {
+    push(
+      "the name-origin series needs edition.myth in the brief, so the myth review stays required"
+    );
   }
 }
 
@@ -788,6 +1283,15 @@ export function validateDesign(design, { mode = "draft", brief } = {}) {
       ],
     };
   }
+  const format = formatOf(design);
+  if (!DESIGN_FORMATS.includes(format)) {
+    return {
+      ok: false,
+      errors: [
+        `narrativeDesign format "${design.format}" is unknown; expected ${DESIGN_FORMATS.join(" or ")}`,
+      ],
+    };
+  }
   const errors = [];
   const push = (message) => errors.push(message);
   if (blank(design.subject)) push("narrativeDesign has no subject");
@@ -800,7 +1304,7 @@ export function validateDesign(design, { mode = "draft", brief } = {}) {
   for (const proposal of list(design.proposals)) {
     if (seen.has(proposal.id)) push(`proposal id ${proposal.id} is used twice`);
     seen.add(proposal.id);
-    proposalErrors(proposal, refs, push);
+    proposalErrors(proposal, refs, push, { format, research: design.research });
   }
   assessmentErrors(design, push);
   const recommendation = design.recommendation;
@@ -814,7 +1318,14 @@ export function validateDesign(design, { mode = "draft", brief } = {}) {
 
   if (mode !== "draft") {
     selectionErrors(design, push);
-    if (design.outline) outlineErrors(design, refs, gaps, push);
+    if (design.outline) {
+      (format === "carrousel" ? carouselOutlineErrors : outlineErrors)(
+        design,
+        refs,
+        gaps,
+        push
+      );
+    }
   }
   if (mode === "handoff") {
     if (design.selection?.kind === "synthetic") {
@@ -971,8 +1482,112 @@ function arrangementLine(arrangement) {
   return [steps.join(" → "), ...omitted, ...adapted].join(" ; ");
 }
 
+const routeLine = (proposal) => {
+  const route = carouselRoute(proposal);
+  const range = route ? `, plage ${route.min}–${route.max}` : "";
+  const where =
+    proposal.series === "name-origin"
+      ? `série name-origin, parcours historique du carrousel des noms (mythe : ${proposal.myth?.claimRef})`
+      : `${proposal.profile}, édition sociale hors série`;
+  return `${where}, ${proposal.cardCount} cartes envisagées${range}. ${proposal.countReason} Une faisabilité de brouillon : aucun rendu n'a été validé.`;
+};
+
+const cardPreviewLine = (arrangement) => {
+  const cards = list(arrangement.steps).map(
+    (step, i) => `${i + 1} ${fnLabel(step.functions)} ${step.move}`
+  );
+  const omitted = list(arrangement.omitted).map(
+    (o) => `${o.function} omis (${o.reason})`
+  );
+  const adapted = list(arrangement.adaptations).map(
+    (a) => `${a.function} adapté (${a.note})`
+  );
+  return [cards.join(" → "), ...omitted, ...adapted].join(" ; ");
+};
+
+// Stage 3 for a carousel: the same five named fields, then what a carousel
+// adds — a card preview, the profile and count, and what this pattern stresses.
+function renderCarouselProposals(design) {
+  const out = [
+    `# Propositions de lecture : ${design.subject}`,
+    "",
+    design.scope,
+    "",
+  ];
+  for (const proposal of design.proposals) {
+    const pattern = PATTERNS.find((p) => p.id === proposal.patternId);
+    const entry = design.patternAssessment.find(
+      (a) => a.patternId === proposal.patternId
+    );
+    const recommended = design.recommendation?.proposalId === proposal.id;
+    out.push(
+      `## ${proposal.id} · ${pattern.labelFr}${recommended ? " · recommandée" : ""}`,
+      "",
+      `**Question** ${proposal.question} ${proposal.intention}`,
+      "",
+      `**Trame** ${pattern.labelFr} : ${pattern.moves.join(" → ")}.`,
+      "",
+      `**Application au sujet** ${proposal.application}`,
+      "",
+      "**Recherche** (état des sources et incertitudes)",
+      ...proposal.claimRefs.map((ref) => researchLine(design, ref)),
+      "",
+      "**Acquis**",
+      ...proposal.takeaways.map((t) => `- ${t.text}`),
+      "",
+      "**Critère de réussite**",
+      ...proposal.successCriteria.flatMap((c) => [
+        `- ${c.prompt}`,
+        `  Réponse ou limite attendue : ${c.expected}`,
+      ]),
+      "",
+      `**Exemple de référence** ${proposal.referenceExample.status === "real" ? `réel (${proposal.referenceExample.locator})` : "hypothétique, pas un carrousel publié"} : ${proposal.referenceExample.text}`,
+      "",
+      `**Agencement** ${cardPreviewLine(proposal.arrangement)}`,
+      "",
+      `**Profil et nombre** ${routeLine(proposal)}`,
+      "",
+      `**Particularité** ${proposal.particularity}`,
+      "",
+      `**Statut** ${DISPOSITION_FR[entry.disposition]}${entry.reason ? ` — ${entry.reason}` : ""} ${proposal.rationale}`,
+      ""
+    );
+  }
+  if (design.recommendation) {
+    out.push(
+      "**Recommandation**",
+      `${design.recommendation.proposalId} : ${design.recommendation.reason} Une recommandation n'est pas le choix : rien n'est retenu tant que vous ne choisissez pas.`,
+      ""
+    );
+  }
+  out.push(...coverageTable(design));
+  return out.join("\n");
+}
+
+function coverageTable(design) {
+  return [
+    "## Les dix trames examinées",
+    "",
+    "| Trame | Disposition | Raison ou carte |",
+    "| --- | --- | --- |",
+    ...PATTERNS.map((pattern) => {
+      const entry = design.patternAssessment.find(
+        (a) => a.patternId === pattern.id
+      );
+      const detail = entry.reason ?? `carte ${entry.proposals.join(", ")}`;
+      const cards =
+        entry.reason && list(entry.proposals).length
+          ? ` (carte ${entry.proposals.join(", ")})`
+          : "";
+      return `| ${pattern.id} · ${pattern.labelFr} | ${DISPOSITION_FR[entry.disposition]} | ${cell(detail)}${cards} |`;
+    }),
+    "",
+  ];
+}
+
 /** Stage 3 as the operator reads it: one card per proposal, then the coverage. */
 export function renderProposals(design) {
+  if (formatOf(design) === "carrousel") return renderCarouselProposals(design);
   const out = [
     `# Propositions de narration : ${design.subject}`,
     "",
@@ -1047,8 +1662,60 @@ const SELECTION_FR = {
   synthetic: "démonstration, pas une décision de l'opérateur",
 };
 
+function renderCarouselPlan(design) {
+  const proposal = design.proposals.find(
+    (p) => p.id === design.selection.proposalId
+  );
+  const pattern = PATTERNS.find((p) => p.id === proposal.patternId);
+  const route = carouselRoute(proposal);
+  const cards = design.outline.cards;
+  const takeaway = (id) =>
+    proposal.takeaways.find((t) => t.id === id)?.text ?? id;
+  const unresolved = list(design.outline.unresolved);
+  return [
+    `# Plan de lecture détaillé : ${design.subject}, proposition ${proposal.id}`,
+    "",
+    `Trame : ${pattern.labelFr}. Question : ${proposal.question}`,
+    `Choix : ${SELECTION_FR[design.selection.kind]} — ${design.selection.statement}`,
+    "",
+    "| Carte | Fonctions | Titre de travail | Message | Preuves et limites | Qualification et source sur la carte | Composition et intention visuelle | Transition | Acquis / critère |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...cards.map((card) => {
+      const refs = list(card.evidence.claimRefs).join(", ");
+      const supports = [
+        ...list(card.supports.takeawayIds).map(takeaway),
+        ...list(card.supports.criterionIds).map((id) => `critère ${id}`),
+      ].join(" ; ");
+      const source = card.sourceLine ? ` Source : ${card.sourceLine}.` : "";
+      return `| ${card.id} | ${fnLabel(card.functions)} | ${cell(card.heading)} | ${cell(card.message)} | ${cell(`${refs ? `${refs} — ` : ""}${card.evidence.limits}`)} | ${cell(`${card.qualification}${source}`)} | ${cell(`${card.composition} : ${card.visualIntention}`)} | ${cell(card.transition)} | ${cell(supports)} |`;
+    }),
+    "",
+    `**${cards.length} cartes** (profil ${route?.label}, plage ${route?.min}–${route?.max}). ${design.outline.countReason} Les six fonctions ne sont pas six cartes : une carte peut en porter plusieurs, une fonction peut en occuper plusieurs.`,
+    "",
+    "## Pourquoi cette trame",
+    design.outline.rationale.patternFit,
+    "",
+    "## Pourquoi cet ordre",
+    design.outline.rationale.orderLogic,
+    "",
+    "## Ce que le lecteur doit pouvoir dire",
+    ...design.outline.successStatements.map(
+      (s) => `- (${s.criterionId}) ${s.statement}`
+    ),
+    "",
+    "## Reste à établir avant l'écriture",
+    ...(unresolved.length
+      ? unresolved.map((item) => `- ${item}`)
+      : ["- Rien de bloquant n'est déclaré."]),
+    "",
+    "Ce plan n'est pas le texte des cartes : `structure` l'écrit ensuite, avec la légende, et vous le montre pour approbation avant tout rendu. Il ne dit rien du confort de lecture sur téléphone : la typographie et le cadrage restent jugés par le moteur de rendu.",
+    "",
+  ].join("\n");
+}
+
 /** Stage 5: only the selected proposal gets the detailed table. */
 export function renderPlan(design) {
+  if (formatOf(design) === "carrousel") return renderCarouselPlan(design);
   const proposal = design.proposals.find(
     (p) => p.id === design.selection.proposalId
   );
@@ -1097,7 +1764,7 @@ export function renderCatalogue() {
     "",
     "Generated by `node social/tools/narration/check-narrative-design.mjs --catalogue`. Do not edit by hand: the authority is `social/tools/narration/narrative-design.mjs`, and a test holds this file equal to that output.",
     "",
-    "Ten patterns are examined for every subject. There is no quota of proposals: a pattern the evidence cannot carry is reported with its reason. A proposal chooses one main pattern; a secondary device (an anecdotal opening) is described in its arrangement, not combined into a new pattern. The six families classify the investigation, the patterns say how the argument unfolds, and the visual profile is a separate rendering choice.",
+    "Ten patterns are examined for every subject. There is no quota of proposals: a pattern the evidence cannot carry is reported with its reason. A proposal chooses one main pattern; a secondary device (an anecdotal opening) is described in its arrangement, not combined into a new pattern. The six families classify the investigation, the patterns say how the argument unfolds, and the visual profile is a separate rendering choice. Reels and carousels share these ten ids: each pattern also lists how it reads as a carousel, where a reader controls the pace and a card can be shared alone. A carousel proposal is planned under an existing reading profile (or the name-origin series' own template) and sets no duration.",
     "",
     "## Patterns",
     "",
@@ -1111,6 +1778,8 @@ export function renderCatalogue() {
       ...pattern.moves.map((move, i) => `  ${i + 1}. ${move}`),
       `- Typical families : ${pattern.families.length ? pattern.families.join(", ") : "determined by the broader question or the claim"}`,
       `- Success demonstration : ${pattern.success}`,
+      `- Carousel arrangement : ${CAROUSEL_READING[pattern.id].arrangement}`,
+      `- Reader success (carousel) : ${CAROUSEL_READING[pattern.id].success}`,
       ""
     );
   }
