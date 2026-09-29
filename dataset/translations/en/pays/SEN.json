@@ -156,6 +156,15 @@
       }
     ],
     "culture": {
+      "mainLanguages": [
+        { "name": "Français", "isoCode": "fra", "isPrimary": true },
+        { "name": "Wolof", "isoCode": "wol" },
+        { "name": "Pulaar", "isoCode": "fuf" },
+        { "name": "Sérère", "isoCode": "srr" },
+        { "name": "Diola / Jola", "isoCode": "dyo" },
+        { "name": "Malinké", "isoCode": "man" },
+        { "name": "Soninké", "isoCode": "snk" }
+      ],
       "culturalTraditions": "Traditional music (sabar, mbalax), traditional dance, oral poetry (griot), crafts (basket weaving, pottery, weaving), traditional architecture, Senegalese wrestling",
       "dominantReligions": "Islam (majority Sufi: Tijaniyya, Muridiyya), Christianity (minority), traditional beliefs (syncretism)",
       "lifestyles": "Predominantly rural life, agriculture (groundnuts, millet, sorghum, rice), livestock farming (cattle, goats), fishing (coasts and rivers), trade, growing urbanisation",
@@ -269,6 +278,12 @@
         "url": "https://www.peaceau.org/uploads/ahg-res-16-i-en.pdf",
         "tier": "official",
         "notes": "Text of the resolution read in full. It commits member states to respect the borders existing at their independence; it contains no record of votes and no mention of the consent of the populations."
+      },
+      {
+        "title": "Toponymic Factfile: Senegal — Permanent Committee on Geographical Names (Royaume-Uni)",
+        "url": "https://assets.publishing.service.gov.uk/media/69e6292c3e3b4e9340cc92d8/Senegal_Toponymic_Factfile.pdf",
+        "tier": "official",
+        "notes": "Official British toponymic factfile, 2026 edition: French as the official language, six national languages (Wolof, Pulaar, Serer, Jola, Malinke, Soninke) with their ISO 639-3 codes."
       }
     ],
     "demographics": {

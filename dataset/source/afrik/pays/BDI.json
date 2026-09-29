@@ -105,6 +105,11 @@
       }
     ],
     "culture": {
+      "mainLanguages": [
+        { "name": "Kirundi", "isoCode": "run", "isPrimary": true },
+        { "name": "Français", "isoCode": "fra" },
+        { "name": "Anglais", "isoCode": "eng" }
+      ],
       "culturalTraditions": "Tambours royaux (ingoma), danse traditionnelle (intore), poésie orale, artisanat (vannerie, poterie), architecture traditionnelle, élevage bovin (importance symbolique et économique)",
       "dominantReligions": "Christianisme (catholique majoritaire, protestant), croyances traditionnelles (syncrétisme), islam (minorité)",
       "lifestyles": "Vie principalement rurale, agriculture (café, thé, bananes, haricots, sorgho), élevage (bovins, caprins), pêche (lac Tanganyika), commerce",
@@ -164,6 +169,12 @@
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official"
+      },
+      {
+        "title": "Toponymic Factfile: Burundi — Permanent Committee on Geographical Names (Royaume-Uni)",
+        "url": "https://assets.publishing.service.gov.uk/media/68b99685b0a373a01819fe3c/Burundi_Toponymic_Factfile.pdf",
+        "tier": "official",
+        "notes": "Fiche officielle britannique de toponymie, édition 2025 : kirundi langue nationale (Constitution de 2005), français et anglais, ce dernier langue officielle depuis 2014 ; Gitega capitale politique depuis 2019, Bujumbura capitale économique."
       }
     ],
     "demographics": {

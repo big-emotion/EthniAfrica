@@ -15,6 +15,7 @@
         "Krou côtiers",
         "Kroomen (Royal Navy)"
       ],
+      "spellingAliases": ["Krooboys", "Krus", "Croos"],
       "originOfExonyms": "Le terme Krumen (ou Kroumen, Kroomen) est utilisé par les Européens depuis le XVIIIe siècle pour désigner les marins Krou employés à bord des navires européens. La théorie d'une dérivation de l'anglais crewmen (hommes d'équipage) est populaire mais linguistiquement inexacte : le terme Kru précède l'usage maritime anglophone et dérive du nom propre Klao (Krao) que le peuple se donne lui-même. Dès 1588, une carte anglaise désigne la côte kru du Liberia sous le terme Crua. Le terme Kroumen a acquis une signification à la fois ethnique et professionnelle : il désignait tout marin d'origine krou, quelle que soit sa sous-appartenance clanique.",
       "whyProblematic": "Le terme Kroumen a oscillé entre désignation ethnique et désignation professionnelle : des marins d'origines diverses adoptaient l'identité Kroumen pour bénéficier de la réputation maritime krou. Il peut donc désigner un sous-groupe ethnique précis (populations côtières de Tabou à San Pedro en CIV) ou plus largement tout marin d'origine krou.",
       "contemporaryUsage": "Kroumen désigne aujourd'hui spécifiquement les populations Krou côtières du littoral sud-ouest de la Côte d'Ivoire, entre l'embouchure du Cavally (Tabou) et la lagune Digboué (San Pedro), réparties en 25 à 27 communautés ou tribus. Ce groupe comprend trois principales variantes linguistiques : Tepo, Pye et Plapo.",
@@ -124,6 +125,12 @@
         "title": "Facebook/APRNews1 — Les Kroumen, 2024",
         "url": "https://www.facebook.com/APRNEWS1/posts/connais-tu-les-kroumen",
         "tier": "unverified"
+      },
+      {
+        "title": "Encyclopædia Britannica, 11e édition (1911) — Krumen",
+        "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Krumen",
+        "tier": "unverified",
+        "notes": "Texte de l'édition de 1911, cité pour les graphies Kroomen, Krooboys, Krus et Croos."
       }
     ]
   },

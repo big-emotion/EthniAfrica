@@ -14,13 +14,13 @@
         "Bassa-Bakoko (etiquette coloniale allemande aggregant artificielement Bassa et Bakoko)"
       ],
       "originOfExonyms": "Bassa est une transcription coloniale du terme endonyme bàsáa. Bassa-Bakoko est une classification coloniale allemande regroupant artificiellement les Bassa et les Bakoko, deux peuples distincts, pour des raisons administratives de simplification. Les Bassa se désignent eux-mêmes comme Bàsáa (avec marques tonales) et leur langue comme Hɔp ɓasàa. Aucune source consultée n'établit ce que Bàsáa signifie. Une lecture circule dans les publications communautaires bassa : Bassa serait le pluriel de nsa, « la rétribution, le partage », et viendrait d'une querelle entre les fils de l'ancêtre Mban sur le partage d'un serpent rapporté de la chasse, d'où le sens de « ravisseurs ». Le site Li'ten Li Bassa la rapporte ainsi en 2016 sans nommer de source, et aucun dictionnaire ni travail linguistique consulté ne la confirme. Ce qui est documenté n'est pas le sens de l'ethnonyme mais la façon dont les Bassa se disent : Bon ba Ngog Lituba, les enfants de la grotte d'où la tradition les fait sortir, que Louis-Marie Pouka, lui-même bassa, glose « pierre à trou » dès 1950 et qu'Athanase Bopda documente en 2001 comme le récit fondateur commun aux Bassa, aux Bakoko, aux Babimbi et aux Douala.",
-      "whyProblematic": "Bassa-Bakoko est reducteur car il amalgame deux peuples distincts sous une meme etiquette coloniale, niant leurs specificites culturelles respectives. Le terme a aussi ete utilise pour justifier des politiques de travail force sur le chemin de fer Douala-Yaounde.",
+      "whyProblematic": "Bassa-Bakoko est reducteur car il amalgame deux peuples distincts sous une meme etiquette coloniale, niant leurs specificites culturelles respectives. Le terme a aussi ete utilise pour justifier des politiques de travail force sur le chemin de fer Douala-Yaounde. Le nom Bassa s'écrit aussi de la même façon pour un autre peuple, les Bassa du Liberia et de Sierra Leone, dont la langue (code bsq) appartient à la famille krou et non au groupe bantou : ce sont deux peuples et deux langues distincts, sans lien établi par nos sources, que la ressemblance des noms a souvent confondus.",
       "contemporaryUsage": "Basaa ou Bàsáa est universellement accepte dans les contextes contemporains. Bàsáa (avec tons marques) est prefere dans les contextes linguistiques et academiques. Le terme Hɔp ɓasàa designe la langue elle-meme.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantous du littoral et du centre camerounais (groupe A, zone A40 selon la classification de Guthrie)",
       "historicalRegion": "Littoral et Centre du Cameroun (Sanaga-Maritime, Nkam, Nyong-et-Kelle, region d'Edea, Eseka, Yabassi)",
       "currentCountries": ["CMR"],
-      "spellingAliases": ["Basaá", "Basa'a"]
+      "spellingAliases": ["Basaá", "Basa'a", "Basa-um", "Basaeg"]
     },
     "ethnicities": [
       "Bassa de Nyong-et-Kelle — groupe central, region d'Eseka et Makak",
@@ -109,7 +109,14 @@
       {
         "title": "Glottolog — Basaa (basa1284)",
         "url": "https://glottolog.org/resource/languoid/id/basa1284",
-        "tier": "official"
+        "tier": "official",
+        "notes": "Donne Basaa, Basa-um, Basaeg et Bassa comme noms de la langue de code bas, parlée au Cameroun et classée bantoue."
+      },
+      {
+        "title": "Glottolog — Bassa (nucl1418)",
+        "url": "https://glottolog.org/resource/languoid/id/nucl1418",
+        "tier": "official",
+        "notes": "Notice de la langue bassa du Liberia et de Sierra Leone, de code bsq, classée dans la famille krou."
       },
       {
         "title": "Joshua Project — Basaa, Cameroon people group profile",

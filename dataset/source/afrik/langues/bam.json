@@ -20,7 +20,7 @@
     }
   ],
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "Langue de communication élargie, née au Mali et en Côte d'Ivoire : toute sa communauté ethnique la parle comme première langue, et elle sert de langue d'enseignement à l'école.",
     "dialects": [
       "Beledugu",
       "Ganadugu",
@@ -37,6 +37,12 @@
         "url": "https://glottolog.org/resource/languoid/id/bamb1269",
         "tier": "official",
         "notes": "Glottolog name: Bambara; classification includes Mande. Les dialectes listés sont les sous-languoids que Glottolog rattache à bamb1269, hors languoids portant leur propre code ISO 639-3."
+      },
+      {
+        "title": "SIL Ethnologue — Bamanankan (bam)",
+        "url": "https://www.ethnologue.com/language/bam/",
+        "tier": "official",
+        "notes": "Résumé public de la notice, consulté le 2026-09-29 : langue de communication élargie, née au Mali et en Côte d'Ivoire, employée comme première langue par toute sa communauté ethnique et comme langue d'enseignement. Les chiffres et le niveau détaillé de vitalité sont réservés aux abonnés : la vitalité reste donc non renseignée ici."
       }
     ]
   }
