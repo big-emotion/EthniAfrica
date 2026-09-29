@@ -5,6 +5,30 @@ description: Render EthniAfrica scene videos from an approved scene plan, or ren
 
 # produire — rendre carrousels et reels
 
+## Family-scoped reviews (2026-09-29)
+
+Before any render, read the edition's plan:
+`node social/tools/narration/check-family-brief.mjs <brief.json>`. The five universal
+reviews (provenance, uncertainty, attribution, intelligibility, non-essentialising) are
+owed by every family and no scene profile — `free` included — waives one. `name`,
+`myth`, `geography`, `music` and `name-origin-gabarit` are owed only where the plan says
+`required`; each `not-applicable` is recorded with its reason in `message.md` (« Revues
+appliquées ») and cancels nothing else.
+
+- **`mythe.md` exists only when the `myth` review is `required`.** No myth, no
+  `mythe.md`, and gate 5 is not blocked by its absence; the engine's `porte_message`
+  already treats it as optional. A `mythe.md` that exists and says « ne passe pas » still
+  blocks.
+- **`check-gabarit.mjs` and the production ledger are for `series: name-origin`.** A
+  social-only piece is never stamped in `docs/productions/` (see « Pour finir »).
+- **Geography and music** reviews follow the claims and media present: a map or route
+  claim is checked against its sources; a music claim or audio excerpt needs the recorded
+  audio review and the excerpt's attribution.
+- **Each edition is independent.** A carousel does not wait for a video, and a video
+  adapted from an approved carousel reuses that text approval for unchanged copy. Only
+  the checks whose inputs changed (a claim, an asset, the audio, a layout, a destination)
+  are rerun. No weekday and no date is required to render or to mark an edition ready.
+
 ## Mémoires sonores delivery scope (2026-09-25)
 
 Read `docs/design/gabarits-social/MEMOIRES-SONORES.md` first for this feature.
@@ -111,8 +135,10 @@ their archived renderer version; they do not define current production rules.
 
 Dernière étape de la chaîne. **Rien ne vient après.** La publication est un acte
 humain : l'opérateur poste, puis renseigne la date et les réseaux dans la section
-Diffusion du `post.md`, ce qui fait passer le sujet en ✅. Tu ne publies pas, tu
-ne programmes pas, tu ne proposes pas de le faire.
+Diffusion du `post.md`. Chaque publication est une **occurrence** de l'édition, pas
+un état final : elle ne ferme ni le sujet, ni l'angle, ni l'édition, et une nouvelle
+édition, une adaptation ou une republication restent légitimes. Tu ne publies pas,
+tu ne programmes pas, tu ne proposes pas de le faire.
 
 Si `cards.json` ou `SOURCES.md` manquent, dis-le et propose `structure`. Ne saute
 pas l'étape.
@@ -161,8 +187,9 @@ Le dossier du post est celui de la bibliothèque, pas celui de l'atelier — voi
    porte est franchie si ce verdict dit **passe** et s'il est plus récent que
    `cards.json`, `narration.fr.txt` et `post.md` : un verdict rendu sur une
    version précédente du texte ne juge pas celle qu'on rend. Lance aussi
-   `ethniafrica-mythe` : un `mythe.md` qui dit **ne passe pas**, ou plus ancien
-   que ces fichiers, ferme cette porte de la même façon.
+   `ethniafrica-mythe` **quand la revue `myth` est `required`** : un `mythe.md` qui
+   dit **ne passe pas**, ou plus ancien que ces fichiers, ferme cette porte de la
+   même façon. Quand elle est `not-applicable`, il n'y a pas de `mythe.md` à écrire.
 
 La cinquième porte n'empêche pas de rendre, comme les quatre autres : un message
 qui ne passe pas fait sortir le lot **en épreuve**, et l'encart de l'épreuve
@@ -290,7 +317,9 @@ node <00-Index>/build-index.mjs
 node <00-Index>/sync-deliverables.mjs --write  # après le déplacement : il compare au bac du statut
 ```
 
-**Stampe le carnet de production** — `docs/productions/<typologie>/<NNN>-
+**Série name-origin seulement : stampe le carnet de production** — une pièce d'une
+autre famille, ou sociale seulement, n'y est jamais inscrite et n'y reçoit aucun
+chemin de site fabriqué. `docs/productions/<typologie>/<NNN>-
 <slug>.json` (`docs/plans/production-history-plan.md` §6, `campaign` égal au
 `--id` ci-dessus). Pour chaque réseau que le dossier-réseau tout juste peuplé
 dessert (le nom du dossier le dit, §1 bis), ajoute une ligne à `publications[]` :
@@ -308,5 +337,6 @@ vérifie le bac et le `post.md`, pas le code de sortie. Plusieurs montages sans
 Recalcule l'état : `node social/tools/etat-pipeline/build-etat.mjs`.
 
 Puis dis, en une ligne : ce qui a été rendu, dans quel dossier, et l'état atteint.
-Si le sujet est en 🟢, rappelle qu'il ne manque que l'acte de publier — et que
-c'est l'opérateur qui le fait.
+Si l'édition est en 🟢, rappelle qu'il ne manque que l'acte de publier — et que
+c'est l'opérateur qui le fait, quand et où il le décide : aucun jour ni aucun réseau
+n'est imposé.

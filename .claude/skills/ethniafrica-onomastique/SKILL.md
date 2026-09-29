@@ -5,6 +5,26 @@ description: Challenger une production EthniAfrica (idée, cards.json, narration
 
 # onomastique — cette pièce raconte-t-elle un nom, ou seulement un événement ?
 
+## When this review applies (2026-09-29)
+
+The review follows the **claims**, not the family. It is `required` when the piece
+carries a claim of kind `name-origin` — it says where a name comes from, who gave it,
+or since when — whatever the family (a portrait, a route, a material biography and a
+name investigation all trigger it the same way). `check-family-brief.mjs` states
+whether it applies.
+
+- **Applies** (`name` = `required`): run the questions below on every name the piece
+  _explains_. Verdicts as written.
+- **Does not apply** (`name` = `not-applicable`, no `name-origin` claim): a piece that
+  merely uses a person's or a place's name without stating its origin owes no
+  onomastic interrogation, and is not judged « raconte sans nommer » — that verdict
+  belongs to the name series, whose subject _is_ the name. Record the `not-applicable`
+  with its reason; do not force a name question into a portrait or a comparison to
+  satisfy this review. The universal reviews (provenance, uncertainty, attribution,
+  intelligibility, non-essentialising) stay owed regardless.
+- **The fifth question below (whose account is it)** governs every name the piece
+  explains, in any family, including when a local account and an outside one disagree.
+
 Né le 2026-09-16, sur `cabinda-yombe-trois-lignes` : un premier jet racontait
 avec exactitude trois conventions frontalières et une carte de conflit, sans
 jamais poser la question qui fonde le projet — qui a nommé ce peuple, qui a

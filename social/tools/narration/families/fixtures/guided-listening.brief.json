@@ -1,0 +1,77 @@
+{
+  "fixture": true,
+  "_note": "Synthetic. Guided listening: the scene profile is free (own beats); free bypasses no review.",
+  "sceneProfile": "free",
+  "strategy": {
+    "basis": "exploratory",
+    "reason": "existing music briefs, no comparator"
+  },
+  "question": "What should the listener hear in this passage, and why does it matter?",
+  "beats": [
+    {
+      "id": "b1",
+      "purpose": "name the recording, the artist and the passage to listen to",
+      "claims": ["c1"]
+    },
+    {
+      "id": "b2",
+      "purpose": "one thing to hear, at a stated timecode",
+      "claims": ["c2"]
+    },
+    {
+      "id": "b3",
+      "purpose": "what the passage carries, attributed to who says so",
+      "claims": ["c2"]
+    }
+  ],
+  "uncertainties": [
+    "the exact recording year is given differently by two catalogues"
+  ],
+  "carouselSequence": [
+    { "step": "cover", "purpose": "the artist, the recording, the promise" },
+    {
+      "step": "what to hear",
+      "purpose": "one detail per card, with its timecode"
+    },
+    { "step": "what it carries", "purpose": "the sourced account" },
+    { "step": "reference", "purpose": "the recording and the credit" }
+  ],
+  "videoSequence": [
+    { "step": "before", "purpose": "one sentence of setting" },
+    { "step": "listen", "purpose": "the excerpt, uncut, at its stated length" },
+    { "step": "after", "purpose": "what was just heard, named" },
+    {
+      "step": "credit",
+      "purpose": "recording, artist, rights holder as verified"
+    }
+  ],
+  "edition": {
+    "id": "fx-listening-001-video",
+    "subject": {
+      "key": "piece:example-recording",
+      "label": "Example recording"
+    },
+    "angle": {
+      "id": "one-passage",
+      "question": "What should the listener hear in this passage, and why does it matter?"
+    },
+    "family": "guided-listening",
+    "format": "video",
+    "readiness": "brouillon",
+    "claims": [
+      {
+        "id": "c1",
+        "kind": "music",
+        "sources": [{ "tier": "official", "ref": "fx-source-10" }]
+      },
+      {
+        "id": "c2",
+        "kind": "music",
+        "sources": [{ "tier": "referenced", "ref": "fx-source-11" }]
+      }
+    ],
+    "media": [{ "kind": "audio-excerpt" }],
+    "intendedNetworks": ["tiktok", "instagram"],
+    "occurrences": []
+  }
+}
