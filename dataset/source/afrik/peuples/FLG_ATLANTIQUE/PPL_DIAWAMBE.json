@@ -1,0 +1,129 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "peuple",
+    "directives": "Voir DIRECTIVES-AFRIK.md pour les règles de rédaction complètes."
+  },
+  "id": "PPL_DIAWAMBE",
+  "nameMain": "Diawambé (Jaawambe / Diokoramé)",
+  "languageFamilyId": "FLG_ATLANTIQUE",
+  "currentCountries": ["MLI"],
+  "content": {
+    "appellations": {
+      "mainName": "Diawambé (Jaawambe / Diokoramé)",
+      "selfAppellation": "Diawando (singulier), Diawambé (pluriel), écrit aussi Jaawando et Jaawambe en pulaar ; forme employée par des membres du groupe, nos sources n'en donnent pas d'autre",
+      "exonyms": [
+        "Diokoramé (forme des pays malinké et bambara ; écrit aussi Diogoramé)",
+        "Diavandous (forme notée en 1846 au Bondou)",
+        "Halobé (kalowo au singulier), mot peul du Macina que l'on donne le plus souvent pour des Diawambé"
+      ],
+      "spellingAliases": [
+        "Diawambe",
+        "Dyawambé",
+        "Jaawambe",
+        "Jaawanbe",
+        "Diawando",
+        "Dyawando",
+        "Jaawando",
+        "Jaawanndo",
+        "Jawando",
+        "Diokorame",
+        "Diogoramé",
+        "Diogoramè"
+      ],
+      "originOfExonyms": "Diawambé est la forme dont les Peuls de l'ouest nomment le groupe, Diawando au singulier. Diokoramé est celle des pays malinké et bambara ; un témoin de 2018 donne Diogoramè comme l'appellation des Soninkés. Trois lectures de Diokoramé, ou du mot voisin Djogorani, circulent sans qu'aucune soit tranchée : une décomposition en dion, captif, orôn, homme libre, et bé, il y a, y lit « homme libre parmi les captifs ou issu des captifs » ; une autre y voit l'emprunt soninké d'un mot mandé, dyogoro, « affranchi », littéralement « esclave libéré » ; une troisième lit « gens du Diagha ». Des chroniques arabes du Soudan parlent des Zaghrâni, mot rapproché de Diokoramé, mais leur identification avec les Diawambé n'est pas démontrée. Aucune étymologie de Diawambé n'est donnée par nos sources.",
+      "whyProblematic": "Deux images se sont attachées au nom. Des auteurs européens du XXe siècle ont rangé les Diawambé parmi les « courtiers et tisserands » ou les « tisserands peuls » ; une explication y voit une confusion avec les Maabube, griots des Peuls et souvent tisserands, alors que la tradition d'honneur des Diawambé leur interdit le tissage et les autres métiers d'artisan. D'autre part, la lecture « homme libre parmi les captifs » de Diokoramé, comme des légendes rapportées d'origine humble, rattachent le groupe à une position sociale basse : on ne peut pas dire si ces récits reposent sur une réalité ancienne ou sur une fable née de la rivalité. Un membre du groupe rapporte l'inverse : Diawando évoque pour lui noblesse, dignité et générosité. « Caste » et « métis », mots de cette littérature extérieure, sont des classements posés du dehors.",
+      "contemporaryUsage": "Diawambé et Diawando, écrits aussi Jaawambe et Jaawando en pulaar, sont les formes employées aujourd'hui par une association peule, qui range les Jaawanbe parmi les nobles courtisans, et par un membre du groupe qui s'en réclame dans un texte de 2018. En 1936 déjà, un auteur issu d'une famille diawambé titrait une étude avec les deux noms, Diawandos et Diogorames. Diokoramé et Diogoramé restent les formes des voisins mandé ; aucune source trouvée ne dit si elles sont ressenties comme neutres, valorisantes ou blessantes.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
+    },
+    "ethnicities": [],
+    "origins": {
+      "ancientOrigins": "D'après la tradition orale recueillie à Néma, les Diawambé et les Peuls descendent d'un ancêtre commun, Ouba Bouniassoum, par deux de ses fils, Kananata Ouba pour les Diawambé et Bodéwal Ouba pour les Peuls. D'autres récits donnent à cet ancêtre d'autres noms et d'autres histoires, dont celle d'un ancêtre arabe. On cherche l'aire de départ des Diawambé en vain, comme celle des Peuls : il paraît seulement probable que les deux groupes s'étendaient il y a environ dix siècles de la région d'Oualata jusqu'au fleuve Sénégal, en pays plus verdoyant qu'aujourd'hui.",
+      "formationPeriod": "Aucune date d'origine n'est établie. Les récits de famille placent des ancêtres bien avant le XIIIe siècle et la légende fait de l'ancêtre Mogomondji le conseiller de Soundiata Keïta, mais toute chronologie antérieure au XVIIIe siècle est calculée en comptant vingt-cinq ans par génération : elle ne donne pas des dates attestées.",
+      "migrationRoutes": [
+        "D'après la tradition orale, un premier établissement important à Kong, au sud-est de Korhogo, puis un départ vers le nord après un conflit avec le royaume de Kong ; une autre version place cette première agglomération à Aribinda, près de Dori",
+        "Traversée du Mandé et franchissement du Niger : quelques familles s'installent au Kingui, autour de Nioro, un groupe plus nombreux gagne le Fouta Toro sous la protection du roi du Djolof, puis repart vers l'est après une révolte",
+        "Aux XVIIIe et XIXe siècles, trois vagues vers Ségou et le Macina : à l'époque du chef bambara Ngolo Diarra de Ségou (1766-1790 environ), sous le chef massassi Garan Coulibaly (1832-1843) vers le Macina, puis avec la conquête d'El Hadj Omar à partir de 1860"
+      ],
+      "historicalSettlementZones": [
+        "Sahel de Nioro, Kingui et Kaarta (Mali)",
+        "Cercle de Ségou (Mali) : Garna, Dougouninkoro, Massabougou, Kouna",
+        "Macina (Mali) : Sokoura, Paré, Saréna, Ti",
+        "Bondou (Sénégal), où le nom est noté en 1846"
+      ],
+      "unificationsOrDivisions": "Le groupe s'est dispersé sans État propre, en familles qui ont accepté successivement la suzeraineté du Mali, des Niakhaté de Diara, des Diawara, puis des Bambara Massassi entre 1700 et 1750. Les dates antérieures à 1700 ne sont que des approximations.",
+      "externalInfluences": "Alliances et voisinage avec les Peuls, les Soninkés, les Bambara, les Kagoro, les Toucouleurs et les Sarakollés, qui ont pesé sur les déplacements successifs du groupe.",
+      "majorHistoricalEvents": "Le départ du Kaarta vers le Macina sous Garan Coulibaly (1832-1843), à la suite d'un conflit sur le tribut : on rapporte que 400 familles diawambé se trouvaient déjà à Hamdallahi et qu'un nombre bien plus élevé quitta le Kaarta avec l'appui du chef peul de Hamdallahi. Une partie revint ensuite s'établir à Damba, puis dans la région de Tamani."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "Sans chef commun ni territoire propre : les familles se sont placées auprès des puissances voisines et, selon plusieurs témoignages, ont servi de conseillers et d'intermédiaires auprès de leurs chefs.",
+      "clanOrganization": "Quinze familles et une caste, dans l'ordre d'apparition donné par la tradition orale d'un dépositaire de Néma : Bocoum, Daou ou Daffé, La, N'diaye, Bathily, Karagnara, Guimbaira, Yaranangore, Dramera, Niangado, Djigué, Golfa, Demba, Yattassaye et Gambi ; la caste est celle des Maabube Kida, griots généalogistes du groupe. D'autres listes ajoutent Bassoum, Djime, Kamé, Koita, Landouré, Niane, Ouahicalo, Samé, Tiokari et N'djim. Plusieurs de ces noms sont aussi portés par d'autres peuples et un nom ne dit rien de l'origine d'une personne. Les anciens disent que la coutume voulait qu'on ne se marie qu'entre Diawambé ; elle n'est plus suivie depuis longtemps en pays bambara.",
+      "ageClassSystems": null,
+      "roleOfLineages": "La tradition rapporte que la famille La s'est installée la première au Kingui et qu'elle y a accueilli d'autres Diawambé ; elle en garde le privilège d'être l'intermédiaire des mariages, et les Bathily, branche des La, le partagent. La mémoire des généalogies est tenue par les griots maabube.",
+      "religiousAuthority": null
+    },
+    "languages": {
+      "mainLanguage": null,
+      "isoCodes": [],
+      "dialects": [],
+      "vehicularRole": "La langue que parlent les Diawambé n'est pas établie par nos sources : leur nom est une forme peule, des sources en pulaar les rangent parmi les Peuls et les Toucouleurs, et leurs voisins mandé les nomment dans leur propre langue."
+    },
+    "culture": {
+      "majorRites": null,
+      "symbols": "L'interdit principal serait la gueule tapée, le grand lézard, qui serait aussi celui des Kagoro, d'après un mémoire de 1956-1957.",
+      "artsAndMusic": "Les généalogies se transmettent oralement par des griots spécialisés, les Maabube, dont une famille, les Kida, est propre aux Diawambé.",
+      "spiritualities": null
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": "Aucun État propre. Les familles diawambé de la région de Nioro s'attribuent la fondation de villages du Kingui et du Kaarta, parmi lesquels Kalaharo, Guidibiné, Youri, Nioro Tougoumbé, Karsala, Néma, Goulambé, Guédiaba et Fassoudébé.",
+      "relationsWithNeighbors": "Plusieurs sources décrivent les Diawambé comme des intermédiaires, des courtiers et des conseillers auprès des chefs peuls, bambara, malinké et toucouleurs, dont ils ont souvent cherché l'alliance par le mariage. Ils sont dits parents utérins des Peuls sans être assimilés à eux, et distincts des groupes de nyamakala, artisans et griots.",
+      "conflictsOrAlliances": "Alliance de senankuya, ou alliance à plaisanterie, avec les Kagoro, entre Nyamina, Nioro, Séguéla et Mourdiah : deux légendes l'expliquent, l'une par l'aide d'un Kagoro à un Diawando emprisonné à Kong, l'autre par l'accueil d'un enfant rejeté par les Peuls. Conflit avec les Bambara Massassi du Kaarta autour du tribut, puis départ vers le Macina. Une partie du groupe a suivi El Hadj Omar dans sa conquête du pays bambara à partir de 1860.",
+      "diaspora": "Dans les années 1950, des familles diawambé sont présentes dans la plupart des villes du Soudan et dans une chaîne de logeurs, de correspondants et de courtiers qui va du Niger jusqu'à Abidjan et Kumasi, avec le bétail sur pied pour commerce principal ; on les signale aussi en Haute-Guinée."
+    },
+    "demography": {
+      "totalPopulation": null,
+      "referenceYear": 2025,
+      "source": "Aucune valeur pour 2025 n'est déclarée. Le dernier chiffre d'ensemble publié que nous avons trouvé date de 1959 et donne au plus 25 000 personnes ; il s'appuie sur environ 5 400 personnes vers 1920 dans la région de Nioro et 3 700 en 1957 dans le cercle de Ségou. Des estimations bien plus élevées circulent aujourd'hui sans source vérifiable : en déclarer une reviendrait à trancher un écart que les sources n'ont pas tranché.",
+      "distributionByCountry": [
+        {
+          "country": "MLI",
+          "population": null,
+          "note": "Aire principale : sahel de Nioro (Kingui, Kaarta), cercle de Ségou et Macina. Le chiffre de 1957 pour le seul cercle de Ségou est de 3 700 personnes."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Pageard, R. — Note sur les Diawambé ou Diokoramé. Journal de la Société des Africanistes, t. 29, fasc. 2, 1959, p. 239-260",
+        "url": "https://www.persee.fr/doc/jafr_0037-9166_1959_num_29_2_1907",
+        "tier": "referenced",
+        "notes": "Revue savante en accès libre sur Persée (doi 10.3406/jafr.1959.1907), lue en entier. Les informations reposent surtout sur la tradition orale d'un dépositaire mabo de Néma et sur des enquêtes à Ségou, Dougouninkoro et Garna. Rapporte, sans que nous les ayons consultés dans l'original : Raffenel 1846 (p. 204), Delafosse 1911 (t. II, p. 157 et 224), Tauxier 1940 (note p. 119), Monteil 1932 (p. 55 et 95), Baumann 1957 (p. 390), Houdas 1900 (p. 84, 165, 253 et 284), Hampâté Bâ et Daget 1955 (p. 66 et 173-185)."
+      },
+      {
+        "title": "Hampâté Bâ, A. (présentation) — Les Jaawambe : traditions historiques des Peuls Jaawambe. Niamey, Centre régional de documentation pour la tradition orale, 1972",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Référence relevée dans des notices bibliographiques ; ouvrage non consulté."
+      },
+      {
+        "title": "Bathily, Ibrahima — Les Diawandos ou Diogorames. Traditions orales recueillies à Djenné, Corientzé, Ségou et Nioro. L'Éducation africaine, n° 94, 1936, p. 173-193",
+        "url": "https://bibcolaf.hypotheses.org/sommaires/le-beaof-leducation-africaine-1913-1959",
+        "tier": "referenced",
+        "notes": "Titre et pagination relevés dans un sommaire de la revue ; article non consulté. L'auteur range sa propre famille parmi les familles diawambé, d'après Pageard 1959."
+      },
+      {
+        "title": "Tabital Pulaaku International — Sociétés (castes peules et toucouleurs)",
+        "url": "https://www.tabitalpulaaku.org/societes/",
+        "tier": "unverified",
+        "notes": "Page d'une association peule, consultée le 29 septembre 2026 ; aucune date de publication affichée."
+      },
+      {
+        "title": "Niane, Alpha — Diawando (Diogoramè). Blog Le bout du fil, 15 septembre 2018",
+        "url": "https://leboutdufil.wordpress.com/2018/09/15/diawando-diogorame/",
+        "tier": "unverified",
+        "notes": "Témoignage publié par un membre du groupe qui se présente comme Diawando ; consulté le 29 septembre 2026."
+      }
+    ]
+  }
+}

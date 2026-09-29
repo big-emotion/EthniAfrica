@@ -4781,7 +4781,12 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // 7048 -> 7039 on 2026-09-23: PPL_DYULA.json deleted (accidental duplicate
   // of PPL_DIOULA, merged into it — see docs/editorial for the classification
   // and demography ledger entries removed in the same change).
-  peuple: 7039,
+  // 7039 -> 7042 on 2026-09-29: PPL_DIAWAMBE.json added. It omits the three
+  // optional keys the model says to leave out until they apply
+  // (`classificationStatus` before review, `externalIdentifiers` with no
+  // unambiguous match, `historicalAffiliation` for a people with a defensible
+  // linguistic family), one count each like every fiche that omits them.
+  peuple: 7042,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
