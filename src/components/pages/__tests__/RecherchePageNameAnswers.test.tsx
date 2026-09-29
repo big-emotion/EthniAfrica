@@ -16,7 +16,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("@/api/v2/services/searchService", () => ({ ftsSearch: vi.fn() }));
 vi.mock("next/navigation", () => ({
-  usePathname: vi.fn(() => "/fr/atlas/recherche"),
+  usePathname: vi.fn(() => "/"),
   useSearchParams: vi.fn(() => new URLSearchParams()),
   useRouter: vi.fn(() => ({ replace: vi.fn(), push: vi.fn() })),
 }));

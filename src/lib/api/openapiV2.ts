@@ -866,6 +866,12 @@ const options: swaggerJsdoc.Options = {
               description:
                 "Reviewed, sourced answers to « where does this name come from? » for the searched term (REQ-178), matched on the whole term with accents and case ignored and localized by `lang`. Resolved from the term alone, so a search with no hit can still carry one. Empty for a name nobody has reviewed and for quiz-lens searches.",
             },
+            nameSuggestions: {
+              type: "array",
+              items: { type: "string" },
+              description:
+                "Reviewed terms a near spelling may have meant (REQ-125), offered only when `total` is 0: within one edit of the searched term, two from eight letters, and never under four letters. The query is never rewritten; a client presents these as choices. Empty otherwise.",
+            },
           },
           required: [
             "peoples",
@@ -887,6 +893,7 @@ const options: swaggerJsdoc.Options = {
             "leads",
             "nearNames",
             "nameAnswers",
+            "nameSuggestions",
           ],
         },
         NameAnswerV2: {

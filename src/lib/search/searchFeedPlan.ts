@@ -130,6 +130,8 @@ type SearchFeedClassificationInput = {
   companions: SearchCompanionsData;
   /** Exact name subjects, when the caller has already resolved them. */
   subjects?: readonly SearchResult[];
+  /** Reviewed terms a near spelling may have meant; they count as suggestions. */
+  termSuggestions?: readonly string[];
 };
 
 function companionRelations(data: SearchCompanionsData): string[] {
@@ -147,6 +149,7 @@ export function classifySearchFeed({
   search,
   companions,
   subjects,
+  termSuggestions = [],
 }: SearchFeedClassificationInput): SearchFeedAnswerState {
   if (subjects && subjects.length === 0 && search.results.length > 0) {
     return "widened";
@@ -155,7 +158,8 @@ export function classifySearchFeed({
     const foundByWord = companions.shorts.items.some(
       ({ match }) => match.relation === "word"
     );
-    return search.leads.length > 0 && !foundByWord ? "typo" : "unknown";
+    const hasSuggestion = search.leads.length + termSuggestions.length > 0;
+    return hasSuggestion && !foundByWord ? "typo" : "unknown";
   }
 
   const relations = companionRelations(companions);

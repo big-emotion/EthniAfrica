@@ -3,7 +3,7 @@ import { join } from "node:path";
 
 import { describe, expect, it } from "vitest";
 
-import { findNameAnswers } from "@/lib/search/nameAnswers";
+import { findNameAnswers, suggestNameTerms } from "@/lib/search/nameAnswers";
 import { violatesReaderRegister } from "@/lib/editorial/readerRegister";
 
 const DATASET = join(process.cwd(), "dataset/source/afrik");
@@ -60,6 +60,34 @@ describe("reviewed name answers", () => {
         }
       }
     }
+  });
+
+  // A reviewed term is suggested for a near spelling, never substituted for it:
+  // the reader picks it, and the page never claims « pigmée » was « Pygmée ».
+  // @req REQ-125
+  it.each([
+    ["pigmée", ["Pygmée"]],
+    ["Pigmee", ["Pygmée"]],
+    ["bambra", ["Bambara"]],
+    ["lingla", ["Lingala"]],
+  ])(
+    "suggests the reviewed term for a near spelling: %s",
+    (query, expected) => {
+      expect(suggestNameTerms(query)).toEqual(expected);
+    }
+  );
+
+  // @req REQ-125
+  it.each(["pygmée", "zzzzzz", "mal", "", "kossiwa"])(
+    "suggests nothing for an exact match or a distant one: %s",
+    (query) => {
+      expect(suggestNameTerms(query)).toEqual([]);
+    }
+  );
+
+  // @req REQ-125
+  it("localizes the suggested term", () => {
+    expect(suggestNameTerms("pigmy", "en")).toEqual(["Pygmy"]);
   });
 
   // @req REQ-178

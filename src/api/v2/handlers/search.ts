@@ -5,7 +5,7 @@
  */
 
 import type { NameAnswer } from "@/lib/search/nameAnswer";
-import { findNameAnswers } from "@/lib/search/nameAnswers";
+import { findNameAnswers, suggestNameTerms } from "@/lib/search/nameAnswers";
 import { ftsSearch } from "../services/searchService";
 import { createApiResponse } from "../utils/response";
 import type {
@@ -53,6 +53,11 @@ export interface FtsSearchData {
    * answered; empty for a name nobody has reviewed.
    */
   nameAnswers: NameAnswer[];
+  /**
+   * Reviewed terms a near spelling may have meant, offered only when the search
+   * found nothing. Never applied to the query: the reader chooses.
+   */
+  nameSuggestions: string[];
 }
 
 // @req REQ-002
@@ -91,6 +96,7 @@ function shapeSearchData(
       leads: [],
       nearNames: [],
       nameAnswers: [],
+      nameSuggestions: [],
     };
   }
 
@@ -100,6 +106,14 @@ function shapeSearchData(
   const personsTotal = result.personsTotal ?? 0;
   const patronymesTotal = result.patronymesTotal ?? 0;
   const languagesTotal = result.languagesTotal ?? 0;
+  const total =
+    peoplesTotal +
+    countriesTotal +
+    familiesTotal +
+    personsTotal +
+    patronymesTotal +
+    languagesTotal;
+  const language = lang === "en" ? "en" : "fr";
 
   return {
     peoples: (result.peoples ?? []) as object[],
@@ -118,15 +132,10 @@ function shapeSearchData(
     patronymesTotal,
     quizzesTotal: 0,
     languagesTotal,
-    total:
-      peoplesTotal +
-      countriesTotal +
-      familiesTotal +
-      personsTotal +
-      patronymesTotal +
-      languagesTotal,
+    total,
     leads: (result.leads ?? []) as object[],
     nearNames: result.nearNames ?? [],
-    nameAnswers: findNameAnswers(q, lang === "en" ? "en" : "fr"),
+    nameAnswers: findNameAnswers(q, language),
+    nameSuggestions: total === 0 ? suggestNameTerms(q, language) : [],
   };
 }

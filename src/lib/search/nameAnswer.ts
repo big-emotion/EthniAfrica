@@ -53,6 +53,19 @@ const nameAnswerSchema = z.object({
   sources: z.array(evidenceShape),
 });
 
+/** Reads `data.nameSuggestions` off a search envelope: strings only, or nothing. */
+// @req REQ-125
+export function mapNameSuggestions(envelope: unknown): string[] {
+  const data = (envelope as { data?: unknown })?.data;
+  if (!data || typeof data !== "object" || Array.isArray(data)) return [];
+  const { nameSuggestions } = data as Record<string, unknown>;
+  return Array.isArray(nameSuggestions)
+    ? nameSuggestions.filter(
+        (term): term is string => typeof term === "string" && term.trim() !== ""
+      )
+    : [];
+}
+
 /**
  * Reads `data.nameAnswers` off a search envelope. A malformed entry is dropped
  * rather than rendered half-shaped: the page then falls back to the ordinary

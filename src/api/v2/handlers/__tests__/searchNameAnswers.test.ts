@@ -73,3 +73,47 @@ describe("search response name answers", () => {
     expect(data.nameAnswers ?? []).toEqual([]);
   });
 });
+
+describe("search response name suggestions", () => {
+  type Suggested = { data: { nameSuggestions?: string[] } };
+
+  // @req REQ-125
+  it("suggests a reviewed term when a near spelling finds nothing", async () => {
+    const { data } = (await ftsSearchHandler({
+      q: "pigmée",
+      limit: 20,
+      offset: 0,
+    })) as unknown as Suggested;
+
+    expect(data.nameSuggestions).toEqual(["Pygmée"]);
+  });
+
+  // @req REQ-125
+  it("suggests it in English for an English search", async () => {
+    const { data } = (await ftsSearchHandler({
+      q: "pigmy",
+      limit: 20,
+      offset: 0,
+      lang: "en",
+    })) as unknown as Suggested;
+
+    expect(data.nameSuggestions).toEqual(["Pygmy"]);
+  });
+
+  // @req REQ-125
+  it("suggests nothing once the search has found something", async () => {
+    vi.mocked(ftsSearch).mockResolvedValue({
+      ...emptyResponse(),
+      peoplesTotal: 1,
+      total: 1,
+    } as unknown as FtsSearchResponse);
+
+    const { data } = (await ftsSearchHandler({
+      q: "pigmée",
+      limit: 20,
+      offset: 0,
+    })) as unknown as Suggested;
+
+    expect(data.nameSuggestions).toEqual([]);
+  });
+});

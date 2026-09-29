@@ -109,6 +109,8 @@ export interface SearchFeedProps {
   nearNames?: readonly SearchNearName[];
   /** Reviewed answers for the searched term, from the search response. */
   nameAnswers?: readonly NameAnswer[];
+  /** Reviewed terms a near spelling may have meant; offered as choices, never applied. */
+  nameSuggestions?: readonly string[];
   companions: SearchCompanionsData;
   resultCount?: number;
   presentation?: SearchFeedPresentation;
@@ -132,20 +134,24 @@ function resultForms(
   query: string,
   subjects: readonly SearchResult[],
   leads: readonly SearchLead[],
+  nameSuggestions: readonly string[],
   language: Language
 ) {
   if (state === "typo") {
     // Each suggestion is a new search the reader chooses; none is marked as
-    // the searched form, because nothing the reader typed matched it.
-    return leads.map((lead) => ({
-      form: lead.name,
-      subjectId: undefined,
-      qualifier: undefined,
-      selfGiven: null,
-      problematic: undefined,
-      searched: false,
-      href: `${getLocalizedRoute(language, "search")}?${new URLSearchParams({ q: lead.name })}`,
-    }));
+    // the searched form, because nothing the reader typed matched it. Reviewed
+    // terms come first: they are spellings we hold an answer for.
+    return [...nameSuggestions, ...leads.map((lead) => lead.name)].map(
+      (name) => ({
+        form: name,
+        subjectId: undefined,
+        qualifier: undefined,
+        selfGiven: null,
+        problematic: undefined,
+        searched: false,
+        href: `${getLocalizedRoute(language, "search")}?${new URLSearchParams({ q: name })}`,
+      })
+    );
   }
 
   const wanted = normalizeString(query.trim());
@@ -268,6 +274,7 @@ export function SearchFeed({
   leads,
   nearNames = [],
   nameAnswers = [],
+  nameSuggestions = [],
   companions: loadedCompanions,
   resultCount,
   presentation,
@@ -298,7 +305,14 @@ export function SearchFeed({
         quiz: { count: 0, item: null },
       }
     : loadedCompanions;
-  const derivedForms = resultForms(state, query, subjects, leads, language);
+  const derivedForms = resultForms(
+    state,
+    query,
+    subjects,
+    leads,
+    nameSuggestions,
+    language
+  );
   const forms = presentation?.appellations?.forms ?? derivedForms;
   const presentations = subjects.flatMap((subject) =>
     subject.naming ? [subject.naming.presentation] : []

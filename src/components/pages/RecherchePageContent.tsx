@@ -133,6 +133,7 @@ export function RecherchePageContent() {
   const [leads, setLeads] = useState<SearchLead[]>([]);
   const [nearNames, setNearNames] = useState<SearchNearName[]>([]);
   const [nameAnswers, setNameAnswers] = useState<NameAnswer[]>([]);
+  const [nameSuggestions, setNameSuggestions] = useState<string[]>([]);
   const [counts, setCounts] = useState<SearchLensCounts>(
     EMPTY_SEARCH_LENS_COUNTS
   );
@@ -192,6 +193,7 @@ export function RecherchePageContent() {
         setLeads([]);
         setNearNames([]);
         setNameAnswers([]);
+        setNameSuggestions([]);
         setCounts(EMPTY_SEARCH_LENS_COUNTS);
         setCompanions(null);
         setFeedState(null);
@@ -211,6 +213,7 @@ export function RecherchePageContent() {
           leads: nearMisses,
           nearNames: qualifiedNearNames = [],
           nameAnswers: reviewedAnswers = [],
+          nameSuggestions: reviewedSuggestions = [],
           counts: lensCounts,
           presentation,
           answered,
@@ -225,6 +228,7 @@ export function RecherchePageContent() {
         setLeads(nearMisses);
         setNearNames(qualifiedNearNames);
         setNameAnswers(reviewedAnswers);
+        setNameSuggestions(reviewedSuggestions);
         setCounts(lensCounts);
         setFeedPresentation(presentation);
         // Reported here rather than from the submit handler, so a query that
@@ -286,6 +290,7 @@ export function RecherchePageContent() {
             search: { results: hits, leads: nearMisses },
             companions: nextCompanions,
             subjects: resolvedSubjects,
+            termSuggestions: reviewedSuggestions,
           })
         );
         setStatus("loaded");
@@ -297,6 +302,7 @@ export function RecherchePageContent() {
         setLeads([]);
         setNearNames([]);
         setNameAnswers([]);
+        setNameSuggestions([]);
         setCounts(EMPTY_SEARCH_LENS_COUNTS);
         setCompanions(null);
         setFeedState(null);
@@ -396,6 +402,7 @@ export function RecherchePageContent() {
     setLeads([]);
     setNearNames([]);
     setNameAnswers([]);
+    setNameSuggestions([]);
     setCounts(EMPTY_SEARCH_LENS_COUNTS);
     setCompanions(null);
     setFeedState(null);
@@ -727,6 +734,7 @@ export function RecherchePageContent() {
               leads={leads}
               nearNames={nearNames}
               nameAnswers={nameAnswers}
+              nameSuggestions={nameSuggestions}
               companions={companions}
               resultCount={counts.all}
               presentation={feedPresentation}

@@ -112,6 +112,35 @@ describe("two subjects answering one name", () => {
   });
 });
 
+// @req REQ-125
+describe("a misspelling of a reviewed term", () => {
+  // @req REQ-125
+  it("offers the reviewed term as a choice instead of confessing ignorance", () => {
+    render(
+      <SearchFeed
+        query="pigmée"
+        language="fr"
+        state="typo"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        nameSuggestions={["Pygmée"]}
+        companions={noCompanions}
+      />
+    );
+
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "pigmée"
+    );
+    expect(screen.getByText("Cherchiez-vous… ?")).toBeVisible();
+    expect(screen.getByRole("link", { name: /Pygmée/ })).toHaveAttribute(
+      "href",
+      `${getLocalizedRoute("fr", "search")}?${new URLSearchParams({ q: "Pygmée" })}`
+    );
+    expect(screen.queryByText(/ne connaissons pas/i)).toBeNull();
+  });
+});
+
 // @req REQ-178
 describe("a known name with no reviewed answer", () => {
   // @req REQ-178

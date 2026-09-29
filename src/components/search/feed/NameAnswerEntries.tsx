@@ -103,12 +103,16 @@ export function NameAnswerEntries({
               })}
             </div>
             {answer.sources.map((evidence, evidenceIndex) => (
-              <SearchFeedEvidenceAction
-                key={evidence.assertion.statement}
-                evidence={evidence}
-                anchorId={`answer-source-${entryIndex}-${evidenceIndex}`}
-                language={language}
-              />
+              <div key={evidence.assertion.statement} className="mt-afh-lg">
+                <p className="max-w-[65ch] text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
+                  {evidence.assertion.statement}
+                </p>
+                <SearchFeedEvidenceAction
+                  evidence={evidence}
+                  anchorId={`answer-source-${entryIndex}-${evidenceIndex}`}
+                  language={language}
+                />
+              </div>
             ))}
           </section>
         );

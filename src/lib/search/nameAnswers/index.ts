@@ -53,6 +53,49 @@ function evidenceOf(
   });
 }
 
+function editDistance(left: string, right: string): number {
+  let previous = Array.from({ length: right.length + 1 }, (_, index) => index);
+  for (let row = 1; row <= left.length; row++) {
+    const current = [row];
+    for (let column = 1; column <= right.length; column++) {
+      current[column] = Math.min(
+        previous[column] + 1,
+        current[column - 1] + 1,
+        previous[column - 1] + (left[row - 1] === right[column - 1] ? 0 : 1)
+      );
+    }
+    previous = current;
+  }
+  return previous[right.length];
+}
+
+/**
+ * Reviewed terms a near spelling may have meant, for a search that found
+ * nothing. Deliberately narrow: one substitution, insertion or deletion (two
+ * from eight letters up), and never under four letters, where every word is
+ * one edit from another. The query is never rewritten — the reader is offered
+ * the term and chooses it. Shared spelling of an *entity's* filed name is a
+ * different question and stays with the API's own near-miss leads.
+ */
+// @req REQ-125
+export function suggestNameTerms(
+  query: string | undefined,
+  language: Language = "fr"
+): string[] {
+  const wanted = normalizeString(query?.trim());
+  if (wanted.length < 4) return [];
+  const allowed = wanted.length >= 8 ? 2 : 1;
+  const suggested = new Set<string>();
+  for (const answer of REVIEWED) {
+    const terms = termsOf(answer);
+    if (terms.includes(wanted)) return [];
+    if (terms.some((term) => editDistance(wanted, term) <= allowed)) {
+      suggested.add(answer.term[language] ?? answer.term.fr);
+    }
+  }
+  return [...suggested];
+}
+
 /**
  * The reviewed answers for a searched term, matched on the whole term with
  * accents and case ignored. An answer is never inferred from a partial match:
