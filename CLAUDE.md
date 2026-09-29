@@ -414,6 +414,11 @@ reseaux-help — à tout moment : où j'en suis, doublons, prochain geste
 - **Where am I — `/ethniafrica-reseaux-help`.** Reads the pipeline state and
   `social/tools/etat-pipeline/bilan-sujets.mjs`, flags a validated post whose
   subject is already published in the same format, and names one next move.
+- **A third-party video, cut into a reel — `/ethniafrica-clip-reel`.** Off the
+  chain: a video and a prompt in, a captioned 9:16 reel, its cover and one
+  description per network out, drawn by `social/harness/ethni_clip_reel.py` from a
+  plan file. It publishes nothing, registers nothing and never clears the source's
+  rights — it reminds.
 - **Anecdotes and proverbs are coming** as content types. Neither is on the site
   nor has a template yet; the chain notes such a subject as an idea until one
   exists.
