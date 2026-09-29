@@ -651,7 +651,10 @@ export function SearchFeed({
                 `${getLocalizedSearchResultName(subject, language)} · ${getSearchEntityLabel(subject.type, language)}`,
               ])
             )}
-            title={presentation?.appellations?.title}
+            title={
+              presentation?.appellations?.title ??
+              (state === "typo" ? copy.answer.typoChoices : undefined)
+            }
             subtitle={appellationsSubtitle}
             language={language}
             className="min-[1200px]:col-span-5"
