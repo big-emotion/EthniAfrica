@@ -56,17 +56,19 @@ export const READER_QUERIES: ReaderQuery[] = [
   },
   { typed: "le bambara", problem: "article", outcome: "hit", answered: true },
 
-  // Spelling of a word the corpus files under another spelling
+  // Spelling of a word the corpus files under another spelling. « Pigmée » is
+  // attested (Académie française, 1694) and filed as a spelling alias of the
+  // Pygmées entry, so the entry is reached rather than offered as a neighbour.
   {
     typed: "pigmée",
     problem: "variant spelling of Pygmée",
-    outcome: "neighbour",
+    outcome: "widened",
     answered: true,
   },
   {
     typed: "pigmee",
     problem: "variant spelling, unaccented",
-    outcome: "neighbour",
+    outcome: "widened",
     answered: true,
   },
   {
@@ -97,10 +99,12 @@ export const READER_QUERIES: ReaderQuery[] = [
   { typed: "adjoukrou", problem: "spelling of Adioukrou", outcome: "widened" },
 
   // Questions and punctuation
+  // The Bagayoko surname fiche lists « Bakayoko » as a spelling, so the name is
+  // answered outright since the surname fiches were added.
   {
     typed: "d’où vient les bakayoko",
     problem: "question frame, curly apostrophe",
-    outcome: "widened",
+    outcome: "hit",
   },
   {
     typed: "qui a créé la côte d'ivoire",
