@@ -71,11 +71,17 @@ technical success is not approval of an unidentified new version.
 Load supporting skills from `.claude/skills/<name>/SKILL.md` when their work is
 needed. `ethniafrica-audience-audit` and `ethniafrica-content-strategist` handle
 missing upstream audience/strategy decisions; they are not compulsory reruns for
-an existing narrative. `ethniafrica-message`, `ethniafrica-mythe` and, for naming
-claims, `ethniafrica-onomastique` perform the applicable reviews. Keep existing
-valid reviews; a thematic explanation need not invent a myth or a corpus entity.
+an existing narrative. Run `node social/tools/narration/check-family-brief.mjs <brief.json>`
+and perform the reviews it lists `required` (`ethniafrica-message`, `ethniafrica-mythe` and, for
+naming claims, `ethniafrica-onomastique`); record each `not-applicable` with its reason. Keep
+existing valid reviews; a thematic explanation need not invent a myth or a corpus entity.
 If the source report is missing, recover or complete the missing evidence through
 `idee` and report it; do not discard an existing approved narrative to restart it.
+
+Roles, inputs, outputs and resume conditions are in
+[`references/handoffs.md`](references/handoffs.md). After delivery, per-network packages,
+occurrences and readings follow `docs/design/gabarits-social/EDITION-DELIVERY.md`; a package is
+never a publication.
 
 Use the canonical `structure` and `produire` instructions for their actual work.
 The coordinator records routing and decisions, not a second copy of their schemas

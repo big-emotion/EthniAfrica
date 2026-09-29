@@ -105,6 +105,30 @@ class SceneReleaseTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'changed'): self.finalize()
         self.assertFalse(self.final.exists())
 
+    def test_a_conditional_check_may_be_not_applicable_only_with_its_reason(self):
+        self.approve()
+        original = json.loads(self.review.read_text())
+        for name in ('myth', 'closing'):
+            value = copy.deepcopy(original)
+            value['checks'][name].update(status='not-applicable', evidence='No attested belief is corrected here.')
+            self.review.write_text(json.dumps(value))
+            out = self.root/f'video/release-{name}'
+            execute('finalize', self.root, self.path, self.lock, out, review_path=self.review)
+            self.assertIn('not-applicable', (out/'release-review.json').read_text())
+            value['checks'][name]['evidence'] = ' '
+            self.review.write_text(json.dumps(value))
+            with self.assertRaisesRegex(ValueError, 'evidence'): self.finalize()
+
+    def test_universal_and_rights_checks_can_never_be_not_applicable(self):
+        self.approve()
+        original = json.loads(self.review.read_text())
+        for name in ('visual', 'listening', 'history', 'message', 'voice_rights', 'license_compatibility'):
+            value = copy.deepcopy(original)
+            value['checks'][name].update(status='not-applicable', evidence='Claimed not to apply.')
+            self.review.write_text(json.dumps(value))
+            with self.assertRaisesRegex(ValueError, 'pending or failed'): self.finalize()
+        self.assertFalse(self.final.exists())
+
     def test_changed_input_and_review_cannot_be_bypassed(self):
         self.approve()
         (self.root / 'SOURCES.md').write_text('Changed facts')

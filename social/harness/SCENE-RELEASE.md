@@ -23,6 +23,9 @@ The record contains:
 - `checks`: `visual`, `listening`, `history`, `message`, `myth`, `voice_rights`,
   `license_compatibility`, `closing`. Each needs `status: "pass"` and concrete `evidence`.
   A myth review can pass because the piece explains rather than refutes, with that reason recorded.
+  `myth` and `closing` alone may instead read `status: "not-applicable"` with the reason as `evidence`
+  (no belief is corrected; the family has no approved closing). Every other check, and every asset,
+  must pass: `not-applicable` never waives visual, listening, history, message or a rights check.
 - `assets`: every asset ID, its exact licence and credit, a passing status and evidence of identity
   and rights review. Retain the permission URL, account entitlement or private evidence reference.
 
@@ -104,3 +107,10 @@ network/format entries with neither URL nor publication date, then run
 An unregistered thematic post can receive its reviewed private delivery without a fictional
 ledger entry; report library registration separately. Social copy and links come from the
 approved brief/copy file; the renderer does not invent them. Actual publishing stays with the operator.
+
+## From one export to one package per network
+
+This release is destination-independent: one clean video. What a given network receives, which
+reviews still hold for it, and what was actually posted are recorded per edition and destination by
+[`EDITION-DELIVERY.md`](../../docs/design/gabarits-social/EDITION-DELIVERY.md). Music rights, for
+example, are reviewed per network there, while this file's checks stay valid across all of them.
