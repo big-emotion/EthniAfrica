@@ -1,0 +1,82 @@
+{
+  "fixture": true,
+  "_note": "Synthetic. Circulation: what travelled between two places and who carried it.",
+  "sceneProfile": "history-geography",
+  "strategy": {
+    "basis": "exploratory",
+    "reason": "no comparator exists for this angle"
+  },
+  "question": "What travelled between place A and place B, and along which documented route?",
+  "beats": [
+    {
+      "id": "b1",
+      "purpose": "the thing that travelled, named by those who carried it",
+      "claims": ["c1"]
+    },
+    {
+      "id": "b2",
+      "purpose": "the route, as far as the sources locate it",
+      "claims": ["c2"]
+    },
+    {
+      "id": "b3",
+      "purpose": "what it became at the other end",
+      "claims": ["c3"]
+    }
+  ],
+  "uncertainties": [
+    "the middle of the route is inferred from two attestations only"
+  ],
+  "carouselSequence": [
+    { "step": "cover", "purpose": "the two places and the question" },
+    {
+      "step": "map",
+      "purpose": "the route, with the uncertain stretch drawn as uncertain"
+    },
+    {
+      "step": "stages",
+      "purpose": "one card per documented stage, dated"
+    },
+    { "step": "at arrival", "purpose": "what it became there" },
+    { "step": "what is not known", "purpose": "the unattested stretch" }
+  ],
+  "videoSequence": [
+    { "step": "question", "purpose": "what left, and where it went" },
+    { "step": "context", "purpose": "who moved and why" },
+    { "step": "evidence", "purpose": "the attestations along the route" },
+    { "step": "evolution", "purpose": "what changed in transit" },
+    { "step": "limits", "purpose": "the stretch nobody documented" },
+    { "step": "closing", "purpose": "one line" }
+  ],
+  "edition": {
+    "id": "fx-circulation-001-carousel",
+    "subject": { "key": "route:example-route", "label": "Example route" },
+    "angle": {
+      "id": "route-and-carriers",
+      "question": "What travelled between place A and place B, and along which documented route?"
+    },
+    "family": "circulation-connections",
+    "format": "carrousel",
+    "readiness": "brouillon",
+    "claims": [
+      {
+        "id": "c1",
+        "kind": "artifact",
+        "sources": [{ "tier": "referenced", "ref": "fx-source-5" }]
+      },
+      {
+        "id": "c2",
+        "kind": "route",
+        "sources": [{ "tier": "referenced", "ref": "fx-source-6" }]
+      },
+      {
+        "id": "c3",
+        "kind": "event",
+        "sources": [{ "tier": "unverified", "ref": "fx-source-7" }]
+      }
+    ],
+    "media": [{ "kind": "map" }],
+    "intendedNetworks": ["instagram", "tiktok"],
+    "occurrences": []
+  }
+}

@@ -25,7 +25,11 @@ compte maintenant : le catalogue entier n'aide personne à décider.
 | Publier              | l'opérateur, à la main            | la section Diffusion du `post.md`                           | ✅ Publié                   |
 
 `produire` lance `message` avant de rendre. Les deux premières étapes sont
-facultatives ; un plan écrit sans la mesure est un plan écrit au goût.
+facultatives ; un plan écrit sans la mesure est un plan écrit au goût — ou un
+sujet explicitement **exploratoire**, dit tel. Chaque sujet passe par une des six
+familles narratives (`idee` la choisit) et ne demande ni date, ni jour de la
+semaine, ni format compagnon. « ✅ Publié » est une **occurrence** : elle ne ferme ni
+le sujet, ni l'angle, ni l'édition.
 
 **Les quatre états sont ceux de `social/tools/etat-pipeline/etat.mjs`, et il n'y
 en a pas de cinquième.** « En atelier » est 🟡 En traitement : le post est inscrit
@@ -56,24 +60,34 @@ n'est pas une bibliothèque vide.
 
 Dans cet ordre, parce que c'est l'ordre dans lequel on agit :
 
-1. **⚠ Les doublons.** Un post validé ou en atelier dont le sujet est déjà publié
-   dans le même format. Mesuré le 2026-09-13 : `build-etat` proposait de publier
-   deux vidéos validées, Nzebi et le zombie, alors qu'une vidéo sur chacun des
-   deux sujets était déjà sur cinq réseaux. **Ne recommande jamais de publier un
-   doublon.** La décision reste à l'opérateur : autre angle, autre format, ou
-   abandon — dis-lui laquelle tu recommandes et pourquoi.
+1. **⚠ Les vrais doublons, et les couvertures répétées.** Deux choses différentes
+   (`docs/design/gabarits-social/EDITORIAL-CONTRACT.md` §3).
+   - **Un doublon**, c'est _une même publication de plateforme_ enregistrée deux fois
+     (même réseau, même identifiant ou même lien) — ou une édition prête à repartir sur
+     un réseau où _cette même édition_ est déjà en ligne, sans que l'opérateur l'ait
+     décidé. Mesuré le 2026-09-13 : `build-etat` proposait de publier deux vidéos
+     validées, Nzebi et le zombie, alors qu'une vidéo sur chacun des deux sujets était
+     déjà sur cinq réseaux. Ne recommande pas de republier une édition **sans le
+     dire** : nomme-la comme republication, et laisse l'opérateur décider.
+   - **Une couverture répétée** — même sujet et même angle dans l'autre format, ou un
+     angle plus profond, ou une nouvelle édition — est légitime et n'est jamais un
+     doublon. Propose-la comme **adapter**, **approfondir** ou **republier**, trois gestes
+     distincts, sans exiger un angle nouveau ni un second format.
 
-   **L'outil compare le champ `Sujet` des `post.md`, et rien d'autre.** Le zombie
-   lui échappe : publié sous « Mot · zombie », validé sous « Peuple · Kongo ».
-   Avant de recommander de publier un 🟢, relis les titres des posts publiés sur
-   le même peuple ou le même mot — un doublon étiqueté autrement reste un doublon.
+   **L'outil compare le champ `Sujet` des `post.md`, et rien d'autre**, et il range
+   encore une couverture répétée parmi les doublons tant que le registre n'a pas la
+   règle de plateforme (S2). Lis son « doublon » comme un signal à vérifier, pas comme un
+   verdict. Le zombie lui échappait : publié sous « Mot · zombie », validé sous
+   « Peuple · Kongo ». Avant de recommander de publier un 🟢, relis les titres des posts
+   publiés sur le même peuple ou le même mot.
 
 2. **🟢 Prêt à publier**, hors doublons.
 3. **🟡 En atelier**, avec ce qui bloque.
 4. **⚪️ Brouillons.**
 5. **Les sujets publiés dans un seul format.** Un sujet sorti en vidéo seulement
    peut sortir en carrousel, et l'inverse — c'est souvent le prochain geste le
-   moins coûteux, puisque les sources sont déjà vérifiées.
+   moins coûteux, puisque les sources sont déjà vérifiées. C'est une **option**, jamais
+   un manque : l'absence de l'autre format n'est ni un défaut ni un blocage.
 6. **L'âge du rapport d'audience.**
 
 Puis **le prochain geste** : un seul, le skill qui le fait, et propose de le
@@ -89,7 +103,10 @@ it does not need to restart the upstream skills. See
 réseaux —, ce qui est déjà publié, les doublons, le format jamais publié, le
 dossier d'atelier, le rapport d'idée et l'audit du message s'ils existent.
 
-**Complète avec `docs/productions/<typologie>/<NNN>-<slug>.json`**, cherché par
+**Complète, pour la série name-origin, avec
+`docs/productions/<typologie>/<NNN>-<slug>.json`** (un sujet social seul n'y figure
+pas : son registre est la bibliothèque, et l'absence d'un fichier ici n'est pas un
+défaut), cherché par
 `campaign` égal au sujet demandé (le même id que `--id` dans la bibliothèque) —
 c'est là, et non dans `bilan-sujets.mjs`, que la question exacte de l'opérateur
 se répond : ce sujet est-il sorti en carrousel sur tel réseau et en vidéo sur
