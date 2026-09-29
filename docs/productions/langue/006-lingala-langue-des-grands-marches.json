@@ -1,0 +1,20 @@
+{
+  "campaign": "lingala-langue-des-grands-marches",
+  "typologie": "langue",
+  "episode": 6,
+  "question": {
+    "fr": "D'où vient le nom Lingala ?"
+  },
+  "myth": {
+    "fr": "Le lingala vient-il d'une tribu Bangala, ou du latin lingua ?"
+  },
+  "subjects": [
+    {
+      "kind": "language",
+      "id": "lin",
+      "label": { "fr": "Lingala" }
+    }
+  ],
+  "sitePath": "/fr/atlas/langues/lin",
+  "publications": []
+}
