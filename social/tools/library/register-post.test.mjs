@@ -405,3 +405,63 @@ test("an entry whose folder sits in another bucket gets no second folder", () =>
     false
   );
 });
+
+// @req REQ-187
+test("an angle, family, format, relation and planned date are stored beside the entry's own date", () => {
+  const library = scratchLibrary();
+
+  const run = register(
+    [
+      ...MANDE,
+      "--family",
+      "historical-portrait",
+      "--angle-id",
+      "portrait-mande",
+      "--angle-question",
+      "Qui étaient les Mandé avant le nom ?",
+      "--format",
+      "carrousel",
+      "--planned-date",
+      "2026-10-05",
+      "--relates",
+      "adapts:touareg-cinq-pays",
+      "--write",
+    ],
+    library.posts
+  );
+
+  assert.equal(run.status, 0, run.stderr);
+  const entry = JSON.parse(fs.readFileSync(library.ledger, "utf8")).posts.at(
+    -1
+  );
+  assert.equal(entry.family, "historical-portrait");
+  assert.deepEqual(entry.angle, {
+    id: "portrait-mande",
+    question: "Qui étaient les Mandé avant le nom ?",
+  });
+  assert.equal(entry.format, "carrousel");
+  assert.equal(entry.plannedDate, "2026-10-05");
+  assert.deepEqual(entry.relations, [
+    { type: "adapts", to: "touareg-cinq-pays" },
+  ]);
+  assert.equal(entry.date, "");
+});
+
+// @req REQ-187
+test("an unknown family, format, date or relation cannot reach the ledger", () => {
+  const library = scratchLibrary();
+  const before = fs.readFileSync(library.ledger, "utf8");
+  const refused = [
+    [["--family", "free"], /famille/i],
+    [["--format", "podcast"], /format/i],
+    [["--planned-date", "5 octobre"], /YYYY-MM-DD/],
+    [["--relates", "copies:touareg-cinq-pays"], /relation/i],
+    [["--relates", "adapts:nulle-part"], /nulle-part/],
+  ];
+  for (const [flags, message] of refused) {
+    const run = register([...MANDE, ...flags, "--write"], library.posts);
+    assert.notEqual(run.status, 0, flags.join(" "));
+    assert.match(run.stderr, message);
+    assert.equal(fs.readFileSync(library.ledger, "utf8"), before);
+  }
+});

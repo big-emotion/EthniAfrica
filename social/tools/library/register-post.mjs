@@ -33,6 +33,7 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { parseArgs } from "node:util";
 
+import { FAMILIES, FORMATS } from "../contract/contract.mjs";
 import { publicationsRoot } from "../paths.mjs";
 
 /**
@@ -63,6 +64,13 @@ try {
       campaign: { type: "string" },
       content: { type: "string" },
       profile: { type: "string" },
+      family: { type: "string" },
+      series: { type: "string" },
+      "angle-id": { type: "string" },
+      "angle-question": { type: "string" },
+      format: { type: "string" },
+      "planned-date": { type: "string" },
+      relates: { type: "string", multiple: true },
       video: { type: "string", multiple: true },
       where: { type: "string" },
       write: { type: "boolean", default: false },
@@ -162,6 +170,42 @@ if (!existing) {
 if (values.dir && !/^[^/.][^/]*\/[^/.][^/]*$/.test(values.dir)) {
   fail(`--dir doit être <Prefixe-Sujet>/<slug>, reçu « ${values.dir} ».`);
 }
+// Stored only when declared: the catalogue derives family, angle and format
+// for legacy entries, so nothing here is a default. Vocabulary is the
+// contract's; a value it does not know is refused rather than kept.
+if (values.family && !FAMILIES.includes(values.family)) {
+  fail(
+    `famille inconnue « ${values.family} » ; attendu : ${FAMILIES.join(", ")}.`
+  );
+}
+if (values.format && !FORMATS.includes(values.format)) {
+  fail(
+    `format inconnu « ${values.format} » ; attendu : ${FORMATS.join(", ")}.`
+  );
+}
+if (
+  values["planned-date"] &&
+  !/^\d{4}-\d{2}-\d{2}$/.test(values["planned-date"])
+) {
+  fail(
+    `--planned-date doit être YYYY-MM-DD, reçu « ${values["planned-date"]} ».`
+  );
+}
+if (values["angle-question"] && !values["angle-id"]) {
+  fail("--angle-question demande --angle-id.");
+}
+const RELATIONS = ["adapts", "deepens", "republishes"];
+const relations = (values.relates ?? []).map((pair) => {
+  const [type, to] = pair.split(":");
+  if (!RELATIONS.includes(type)) {
+    fail(`relation inconnue « ${type} » ; attendu : ${RELATIONS.join(", ")}.`);
+  }
+  if (!ledger.posts.some((candidate) => candidate.id === to)) {
+    fail(`--relates : aucun post « ${to} » dans le registre.`);
+  }
+  return { type, to };
+});
+
 const holder =
   values.dir &&
   ledger.posts.find((p) => p.dir === values.dir && p.id !== values.id);
@@ -215,6 +259,17 @@ if (values["link-path"] || values.campaign || values.content) {
   };
 }
 if (values.copy !== undefined) post.copy = values.copy;
+for (const field of ["family", "series", "format"]) {
+  if (values[field] !== undefined) post[field] = values[field];
+}
+if (values["angle-id"]) {
+  post.angle = {
+    id: values["angle-id"],
+    ...(values["angle-question"] ? { question: values["angle-question"] } : {}),
+  };
+}
+if (values["planned-date"]) post.plannedDate = values["planned-date"];
+if (relations.length) post.relations = relations;
 if (profile) {
   post.profile = profile.id;
   post.intendedChannels = profile.formats.carrousel.map((network) =>
