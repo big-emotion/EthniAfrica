@@ -1,0 +1,110 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "patronyme",
+    "directives": "Fiche limitée aux affirmations portées par les deux sources dédiées à Adewusi ; l'appartenance à une maison royale d'Ijebu-Ode ne repose que sur une source communautaire et reste formulée avec prudence."
+  },
+  "id": "PAT_ADEWUSI",
+  "nameMain": "Adewusi",
+  "nameSystem": "clan_name",
+  "spellings": [
+    {
+      "spelling": "Adewusi",
+      "attestations": [
+        {
+          "countryId": "NGA",
+          "sourceRefs": ["yorubanames-adewusi", "forebears-adewusi"]
+        }
+      ]
+    },
+    {
+      "spelling": "Adeusi",
+      "attestations": [
+        { "countryId": "NGA", "sourceRefs": ["yorubanames-adewusi"] }
+      ]
+    }
+  ],
+  "transmissionMode": "other",
+  "designatedSocialUnit": "lineage",
+  "origin": {
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "linguisticReconstructions": [
+      {
+        "claim": "La base collaborative YorubaNames analyse Adéwùsì comme adé (couronne, royauté) et wùsì (être influent, se multiplier), soit « la royauté se multiplie » ou « la royauté est influente ». Une seule source dédiée donne cette lecture ; elle reste donc une proposition.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["yorubanames-adewusi"]
+      },
+      {
+        "claim": "La même entrée range Adéwùsì, prononcé aussi Adéùsì, parmi les noms de familles d'une souche royale d'Ijebu-Ode, dans l'État d'Ogun : la famille Adewusi ou Adeusi serait l'une des branches de la maison régnante Gbelegbuwa, l'une des maisons dont sort l'Awujale, souverain d'Ijebuland, et sa concession familiale se trouverait à Odo-Esa, dans le quartier d'Iwade. Cette indication ne repose que sur cette entrée communautaire.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["yorubanames-adewusi"]
+      }
+    ]
+  },
+  "peoples": [
+    {
+      "peopleId": "PPL_YORUBA",
+      "status": "attested",
+      "sourceRefs": ["yorubanames-adewusi", "forebears-adewusi"]
+    }
+  ],
+  "countries": [
+    {
+      "countryId": "NGA",
+      "status": "attested",
+      "sourceRefs": ["yorubanames-adewusi", "forebears-adewusi"]
+    }
+  ],
+  "alliances": [],
+  "casteOrSocialFunction": {
+    "value": "L'entrée YorubaNames présente Adewusi ou Adeusi comme le nom d'une famille issue d'une souche royale d'Ijebu-Ode, branche de la maison Gbelegbuwa dont sort l'Awujale. Cette indication communautaire n'est recoupée par aucune autre source consultée ; le préfixe adé, « couronne », est la seule marque de royauté que le nom porte lui-même.",
+    "sourceRefs": ["yorubanames-adewusi"]
+  },
+  "bearers": [],
+  "homonyms": [],
+  "sources": [
+    {
+      "sourceKey": "yorubanames-adewusi",
+      "title": "Adéwùsì — YorubaNames",
+      "url": "https://www.yorubaname.com/entries/adewusi",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Entrée de la base collaborative YorubaNames consultée directement. Elle donne la forme tonale, les variantes Adéùsì, Adewusi et Adeusi, une segmentation morphologique, la glose « la royauté se multiplie ou est influente » et l'appartenance à la maison Gbelegbuwa d'Ijebu-Ode, sans signaler d'auteur ni de source. Son contenu communautaire est conservé au niveau « unverified »."
+    },
+    {
+      "sourceKey": "forebears-adewusi",
+      "title": "Adewusi — origine, signification et incidence du nom de famille",
+      "url": "https://forebears.io/surnames/adewusi",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Agrégateur généalogique mondial. Donne une incidence mondiale d'environ 17 418 porteurs, dont 16 687 au Nigeria, surtout dans les États de Lagos, d'Ogun et d'Oyo, et de petits effectifs au Ghana, en Angleterre et aux États-Unis. Le site ne renseigne pas la signification du nom. Sert ici à l'aire de diffusion seulement."
+    }
+  ],
+  "gaps": [
+    {
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Aucune tradition orale de la famille, ni parole de chroniqueur de cour, n'a pu être rattachée à ce nom."
+    },
+    {
+      "fieldPath": "origin.writtenChronicles",
+      "reason": "Aucune chronique écrite ni pièce d'archives sur les branches de la maison Gbelegbuwa n'a été retrouvée qui cite ce nom."
+    },
+    {
+      "fieldPath": "transmissionMode",
+      "reason": "Les sources consultées présentent Adewusi comme un nom de famille sans dire s'il passe par le père ni s'il se donne aussi comme prénom ; le mode de transmission n'est donc pas établi."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "Aucun lien de parenté à plaisanterie avec un autre nom n'a été trouvé pour ce nom."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "Des personnalités décédées portent ce nom, mais aucune n'est rattachée ici à une source qui dise son lien avec la famille d'Ijebu-Ode."
+    },
+    {
+      "fieldPath": "homonyms",
+      "reason": "Aucune graphie identique désignant un autre peuple, un lieu ou une autre chaîne n'a été relevée. L'entrée communautaire renvoie seulement au nom voisin Ògúnwùsì, sans en préciser le lien."
+    }
+  ]
+}

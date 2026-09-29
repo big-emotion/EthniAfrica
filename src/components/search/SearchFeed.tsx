@@ -487,42 +487,52 @@ export function SearchFeed({
     hasWordPiece &&
     subjects.length === 0 &&
     (state === "unknown" || state === "widened");
+  // A reviewed answer matched on the term alone (no fiche answered to the
+  // spelling): the confession would deny the answer shown right below it.
+  const answeredByReview =
+    subjects.length === 0 &&
+    opening.entries.length > 0 &&
+    (state === "unknown" || state === "typo");
   const verdict =
     presentation?.answer?.verdict ??
     (answeredByWord
       ? answerCopy.wordName
-      : state === "unknown"
-        ? answerCopy.unknownName
-        : state === "typo"
-          ? copy.answer.typo
-          : hasPeopleDisambiguation
-            ? copy.answer.shared(subjects.length)
-            : hasCrossTypeDisambiguation
-              ? copy.answer.sharedGeneric(subjects.length)
-              : state === "widened"
-                ? subjects.length > 0
-                  ? copy.answer.widened
-                  : relation?.kind === "family" && relationLabel
-                    ? copy.answer.relationFamilyVerdict(relationLabel)
-                    : relation?.kind === "country"
-                      ? copy.answer.relationCountryVerdict(
-                          inCountry(relation.id, displayName, language)
-                        )
-                      : copy.answer.relatedOnly
-                : copy.answer.exact);
+      : answeredByReview
+        ? copy.answer.exact
+        : state === "unknown"
+          ? answerCopy.unknownName
+          : state === "typo"
+            ? copy.answer.typo
+            : hasPeopleDisambiguation
+              ? copy.answer.shared(subjects.length)
+              : hasCrossTypeDisambiguation
+                ? copy.answer.sharedGeneric(subjects.length)
+                : state === "widened"
+                  ? subjects.length > 0
+                    ? copy.answer.widened
+                    : relation?.kind === "family" && relationLabel
+                      ? copy.answer.relationFamilyVerdict(relationLabel)
+                      : relation?.kind === "country"
+                        ? copy.answer.relationCountryVerdict(
+                            inCountry(relation.id, displayName, language)
+                          )
+                        : copy.answer.relatedOnly
+                  : copy.answer.exact);
   const summary =
     presentation?.answer?.summary ??
-    (state === "unknown"
-      ? hasWordPiece
-        ? answerCopy.wordNameBody
-        : answerCopy.unknownNameBody
-      : state === "typo"
-        ? copy.answer.typoSummary(displayName)
-        : state === "widened"
-          ? isRelationBrowse
-            ? copy.answer.relationSummary
-            : copy.answer.widenedSummary
-          : copy.answer.exactSummary);
+    (answeredByReview
+      ? copy.answer.exactSummary
+      : state === "unknown"
+        ? hasWordPiece
+          ? answerCopy.wordNameBody
+          : answerCopy.unknownNameBody
+        : state === "typo"
+          ? copy.answer.typoSummary(displayName)
+          : state === "widened"
+            ? isRelationBrowse
+              ? copy.answer.relationSummary
+              : copy.answer.widenedSummary
+            : copy.answer.exactSummary);
   const relationEyebrow = isRelationBrowse
     ? copy.answer.relationEyebrow
     : undefined;

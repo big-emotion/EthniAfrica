@@ -80,7 +80,7 @@ describe("search response name suggestions", () => {
   // @req REQ-125
   it("suggests a reviewed term when a near spelling finds nothing", async () => {
     const { data } = (await ftsSearchHandler({
-      q: "pigmée",
+      q: "pygmeee",
       limit: 20,
       offset: 0,
     })) as unknown as Suggested;
@@ -115,5 +115,41 @@ describe("search response name suggestions", () => {
     })) as unknown as Suggested;
 
     expect(data.nameSuggestions).toEqual([]);
+  });
+});
+
+describe("search response interpretation (REQ-178)", () => {
+  type Interpreted = {
+    data: { matchedQuery?: string; widenedFrom?: string[] };
+  };
+
+  // @req REQ-178
+  it("reports the cleaned query that found the results, and the names a widening came from", async () => {
+    vi.mocked(ftsSearch).mockResolvedValue({
+      ...emptyResponse(),
+      matchedQuery: "hausa",
+      widenedFrom: ["hausa", "egypte"],
+    } as unknown as FtsSearchResponse);
+
+    const { data } = (await ftsSearchHandler({
+      q: "les hausas",
+      limit: 20,
+      offset: 0,
+    })) as unknown as Interpreted;
+
+    expect(data.matchedQuery).toBe("hausa");
+    expect(data.widenedFrom).toEqual(["hausa", "egypte"]);
+  });
+
+  // @req REQ-178
+  it("leaves both absent when the typed text answered", async () => {
+    const { data } = (await ftsSearchHandler({
+      q: "hausa",
+      limit: 20,
+      offset: 0,
+    })) as unknown as Interpreted;
+
+    expect(data).not.toHaveProperty("matchedQuery");
+    expect(data).not.toHaveProperty("widenedFrom");
   });
 });

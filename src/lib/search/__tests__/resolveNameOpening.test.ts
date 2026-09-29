@@ -100,4 +100,29 @@ describe("resolveNameOpening", () => {
     });
     expect(opening.entries).toEqual([]);
   });
+
+  // A reviewed answer resolves from the term alone. « pigmée » finds no
+  // fiche, but the answer for « Pygmée » covers it, so the page owes it.
+  // @req REQ-178
+  it("keeps a reviewed answer when no subject was found", () => {
+    const opening = resolveNameOpening({
+      query: "pigmée",
+      subjects: [],
+      nameAnswers: [pygmee],
+    });
+
+    expect(opening.entries).toEqual([{ answer: pygmee, subjects: [] }]);
+    expect(opening.unanswered).toEqual([]);
+  });
+
+  // @req REQ-178
+  it("still drops an answer that covers none of the subjects found", () => {
+    const opening = resolveNameOpening({
+      query: "bassa",
+      subjects: [result("people", "PPL_BASSA_CMR", "Bassa")],
+      nameAnswers: [pygmee],
+    });
+
+    expect(opening.entries).toEqual([]);
+  });
 });
