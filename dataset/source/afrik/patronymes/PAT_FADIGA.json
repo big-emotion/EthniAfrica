@@ -1,0 +1,208 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "patronyme",
+    "directives": "Dossier fondé sur des sources externes, dont plusieurs communautaires ; ne pas étendre les affirmations sans source dédiée."
+  },
+  "id": "PAT_FADIGA",
+  "nameMain": "Fadiga",
+  "nameSystem": "clan_name",
+  "spellings": [
+    {
+      "spelling": "Fadiga",
+      "attestations": [
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["forebears-fadiga"]
+        },
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["forebears-fadiga", "bamadaba-jamuw"]
+        },
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["forebears-fadiga"]
+        },
+        {
+          "countryId": "SEN",
+          "sourceRefs": ["forebears-fadiga", "djakodico-diakhanke-history"]
+        }
+      ]
+    },
+    {
+      "spelling": "Fadika",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
+    }
+  ],
+  "transmissionMode": "patrilineal",
+  "designatedSocialUnit": "clan",
+  "origin": {
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "linguisticReconstructions": [
+      {
+        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
+        "claimStatus": "established",
+        "sourceRefs": ["jansen-sunjata-paradigm"]
+      },
+      {
+        "claim": "Fadiga est l'un des quatre clans soninké autour desquels la communauté diakhanké s'est formée, les quatre maisons (boulou nano), avec Souaré, Dramé et Fofana-Guirassy. Le récit communautaire en fait aussi le nom d'un des trois cousins avec lesquels le fondateur, venu de Diafounou, créa dans le Bambouk le premier village diakhanké, Diakha.",
+        "claimStatus": "claimed",
+        "sourceRefs": [
+          "djakodico-diakhanke-history",
+          "sunugox-diakhanke-history"
+        ]
+      },
+      {
+        "claim": "Le dictionnaire des jamuw a une entrée Fàdiga, avec la variante Fàdika, qu'il rattache notamment aux Malinké. Il n'y ajoute aucun statut.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
+      },
+      {
+        "claim": "Une liste communautaire soninké range Fadiga parmi les seconds noms (jammu kare) de Dramé, à côté de Kandji, Saama, Demba, Dibasi et d'autres, alors que le récit diakhanké compte Fadiga et Dramé comme deux maisons distinctes. Les sources ne disent pas comment ces deux lectures s'accordent.",
+        "claimStatus": "contested",
+        "sourceRefs": ["soninkara-noms-soninke", "djakodico-diakhanke-history"]
+      }
+    ]
+  },
+  "peoples": [
+    {
+      "peopleId": "PPL_JAHANKA",
+      "status": "attested",
+      "sourceRefs": ["djakodico-diakhanke-history", "sunugox-diakhanke-history"]
+    },
+    {
+      "peopleId": "PPL_SONINKE",
+      "status": "attested",
+      "sourceRefs": [
+        "djakodico-diakhanke-history",
+        "soninkara-noms-soninke",
+        "soninkara-forum-noms-soninke"
+      ]
+    },
+    {
+      "peopleId": "PPL_MALINKE",
+      "status": "supposed",
+      "sourceRefs": ["bamadaba-jamuw"]
+    }
+  ],
+  "countries": [
+    {
+      "countryId": "GIN",
+      "status": "attested",
+      "sourceRefs": ["forebears-fadiga"]
+    },
+    {
+      "countryId": "MLI",
+      "status": "attested",
+      "sourceRefs": ["forebears-fadiga", "bamadaba-jamuw"]
+    },
+    {
+      "countryId": "CIV",
+      "status": "attested",
+      "sourceRefs": ["forebears-fadiga"]
+    },
+    {
+      "countryId": "SEN",
+      "status": "attested",
+      "sourceRefs": ["forebears-fadiga", "djakodico-diakhanke-history"]
+    }
+  ],
+  "alliances": [],
+  "casteOrSocialFunction": null,
+  "bearers": [],
+  "homonyms": [],
+  "sources": [
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs : la ligne des termes de statut porte les mots mandingues eux-mêmes ; le marqueur de groupe son est confirmé par la notice de l'entrée Wago, qui énumère des jamuw soninké, et le marqueur m est retenu comme indice malinké par comparaison avec l'entrée Kéyità, qu'une autre de nos fiches documente comme jamu malinké ; les autres marqueurs de groupe ne sont pas exploités ici. Les notes libres des entrées sont rédigées en russe et traduites ici par nous. L'entrée Fàdiga (variante Fàdika) porte deux marqueurs de groupe, dont m, et ni statut ni lien clanique."
+    },
+    {
+      "sourceKey": "djakodico-diakhanke-history",
+      "title": "Histoire des Diakhankhé",
+      "url": "https://www.djakodico.com/history.php",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Site communautaire consacré au patrimoine diakhanké, sans auteur individuel identifié. Rapporte que la confédération diakhanké, fondée autour de quatre clans soninké (Souaré, Dramé, Fofana, Fadiga), s'est élargie à d'autres lignées dont les Diakhité-Kaba, les Sylla, les Diaby-Gassama, les Dansokho, les Diakhaby, les Badio et les Sakho ; situe les Diaby à Didé, au Sénégal, et rapporte une généalogie légendaire qui les fait descendre du calife Omar Ibn al-Khattab. Contenu de mémoire communautaire, non adossé à une bibliographie académique consultable."
+    },
+    {
+      "sourceKey": "sunugox-diakhanke-history",
+      "title": "Un regard sur les Diakhankés",
+      "url": "https://sunugox.info/histoire/histoire-regard-diakhankes",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Portail d'actualités sénégalais (direction de publication Y. Cissokho, rédaction en chef Mame Anta Diamé), article de mémoire sans auteur signé ni bibliographie académique. Reprend la même liste de clans ajoutés à la confédération diakhanké que la source précédente (Diakhité-Kaba, Sylla, Gassama-Diaby, Dansokho, Diakhaby, Badio, Sakho) et la même généalogie légendaire remontant à Omar Ibn al-Khattab ; le même texte est aussi publié sur un site miroir."
+    },
+    {
+      "sourceKey": "soninkara-noms-soninke",
+      "title": "Les noms de famille avec leur jammu kare",
+      "url": "http://www.soninkara.com/societe/organisation-sociale/les-noms-de-famille-avec-leur-jammu-kare.html",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Portail communautaire soninké, page d'organisation sociale sans auteur académique identifié : liste non exhaustive, constituée par les internautes du portail, des seconds noms (jammu kare) donnés aux noms de famille soninké. Le jammu kare est, dit la page, le second nom qui s'ajoute à un nom de famille et lui sert d'identifiant. Consultée dans une copie archivée du 12 décembre 2024. On n'en retire ici que la présence du nom dans la liste et ses seconds noms : la liste ne dit rien de leur origine."
+    },
+    {
+      "sourceKey": "soninkara-forum-noms-soninke",
+      "title": "Les noms de Famille d'Origine Soninké",
+      "url": "https://www.soninkara.com/forums/de-l-origine-des-soninke/les-noms-de-famille-d-origine-soninke-530.html",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Fil de discussion du forum du portail communautaire Soninkara.com, ouvert en décembre 2006 et poursuivi jusqu'en 2011 : des contributeurs, sous pseudonyme, y dressent des listes de noms qu'ils tiennent pour soninké. Les listes se recoupent en partie et se contredisent : plusieurs intervenants rappellent que beaucoup de noms portés aujourd'hui par des Soninké ne sont pas soninké à l'origine, et l'un d'eux demande de distinguer les noms soninké des noms d'origine soninké. Consulté dans une copie archivée de 2024."
+    },
+    {
+      "sourceKey": "jansen-sunjata-paradigm",
+      "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
+      "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
+    },
+    {
+      "sourceKey": "forebears-fadiga",
+      "title": "Fadiga — origine, signification et incidence du nom de famille",
+      "url": "https://forebears.io/surnames/fadiga",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Agrégateur généalogique mondial, consulté le 29 septembre 2026. Classé au 20 830e rang mondial ; Guinée 9 132, Mali 8 389, Côte d'Ivoire 6 292, Sénégal 1 175, Maroc 341, France 161. La page ne donne aucune signification du nom. Les effectifs hors d'Afrique ne sont pas repris dans les attestations de cette fiche."
+    }
+  ],
+  "gaps": [
+    {
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Nous n'avons trouvé aucune tradition orale rapportant l'origine de ce nom."
+    },
+    {
+      "fieldPath": "origin.writtenChronicles",
+      "reason": "Nous n'avons trouvé aucune chronique écrite qui mentionne l'origine de ce nom."
+    },
+    {
+      "fieldPath": "origin.linguisticReconstructions",
+      "reason": "Aucune étymologie de ce nom n'est établie dans les sources consultées : nous ne proposons aucune signification."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "Nous ne nommons aucun porteur : aucune source consultée n'en cite qui soit décédé et dont l'appartenance à ce nom soit établie."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "Nous n'avons trouvé aucun lien de plaisanterie (sanankuya) attesté pour ce nom qui puisse être relié à une fiche existante."
+    },
+    {
+      "fieldPath": "homonyms",
+      "reason": "Nous n'avons trouvé aucune source signalant un homonyme de ce nom à distinguer."
+    },
+    {
+      "fieldPath": "casteOrSocialFunction",
+      "reason": "Le dictionnaire des jamuw ne porte aucun statut pour ce nom, et nous n'avons trouvé aucune autre source lui attribuant une fonction sociale."
+    }
+  ]
+}

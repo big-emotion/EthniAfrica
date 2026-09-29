@@ -29,6 +29,10 @@
         },
         { "countryId": "GNB", "sourceRefs": ["corpus-ppl-dioula-organisation"] }
       ]
+    },
+    {
+      "spelling": "Sakiliba",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
     }
   ],
   "transmissionMode": "patrilineal",
@@ -46,6 +50,11 @@
         "claim": "The nyamakalaw — endogamous groups of artisans and musicians — are attested among the Malinke by at least around 1300 and are found among more than fifteen West African peoples. Status is transmitted with the jamu, which makes the clan name the vehicle of social position as much as of descent.",
         "claimStatus": "established",
         "sourceRefs": ["tamari-1991-caste"]
+      },
+      {
+        "claim": "The dictionary of jamuw has an entry Sakiliba, which it glosses as the female jamu corresponding to Dunbuya (Doumbia). The same form also appears there as the female equivalent of Sisoko among free men (hɔ́rɔn) and of Danba among griots (jèli): it is a name borne by women, distinct from the name of the men of the lineage.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
       }
     ]
   },
@@ -170,12 +179,13 @@
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-09-09T09:39:26.335Z",
-    "model": "claude-sonnet-5",
-    "sourceHash": "2cc06089bf10059b6bb88346206934f935fddd6867f93630e8b57ed8c9c242b1",
+    "translatedAt": "2026-09-29T15:45:06.603Z",
+    "model": "claude-sonnet-5-5",
+    "sourceHash": "ac34eb82603ac83d088bdfa6863fc4c4bd3f05ad5fb4ed5f770ed27d9ced9cb8",
     "fieldHashes": {
       "origin.linguisticReconstructions[0].claim": "14f92c91d5d99f18",
       "origin.linguisticReconstructions[1].claim": "77da92e5bff5b48d",
+      "origin.linguisticReconstructions[2].claim": "e9d94a434704e403",
       "casteOrSocialFunction.value": "dc7d667caca11c0d",
       "sources[0].notes": "8b203b5d149279c0",
       "sources[1].notes": "4e75f41a563c53c3",
@@ -189,7 +199,8 @@
     },
     "reviewRequired": [
       "origin.linguisticReconstructions[0].claim",
-      "origin.linguisticReconstructions[1].claim"
+      "origin.linguisticReconstructions[1].claim",
+      "origin.linguisticReconstructions[2].claim"
     ]
   }
 }
