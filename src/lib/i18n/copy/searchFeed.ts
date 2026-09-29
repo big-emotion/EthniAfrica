@@ -5,7 +5,9 @@ export interface SearchFeedCopy {
     exact: string;
     widened: string;
     relatedOnly: string;
-    typo: (name: string) => string;
+    /** Said when no name answers: the nearest names follow as explicit choices. */
+    typo: string;
+    typoSummary: (query: string) => string;
     shared: (count: number) => string;
     /** A cross-type clash (a people and a language filed under the same name) — `shared` reads as people-specific. */
     sharedGeneric: (count: number) => string;
@@ -95,7 +97,9 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
         "We document this name, but the context below is related rather than identical.",
       relatedOnly:
         "We found related entries without establishing that they answer to this name.",
-      typo: (name) => `Did you mean ${name}?`,
+      typo: "Were you looking for…?",
+      typoSummary: (query) =>
+        `No name matches “${query}” exactly. These are the closest ones — choose one to search it.`,
       shared: (count) => `${count} peoples carry this name.`,
       sharedGeneric: (count) => `${count} entries carry this name.`,
       exactSummary: "The forms and sources below state what we can establish.",
@@ -186,7 +190,9 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
         "Nous documentons ce nom, mais le contexte ci-dessous est lié plutôt qu’identique.",
       relatedOnly:
         "Nous avons trouvé des fiches liées sans établir qu’elles répondent à ce nom.",
-      typo: (name) => `Vouliez-vous dire ${name} ?`,
+      typo: "Cherchiez-vous… ?",
+      typoSummary: (query) =>
+        `Aucun nom ne correspond exactement à « ${query} ». Voici les plus proches : choisissez-en un pour le chercher.`,
       shared: (count) => `${count} peuples portent ce nom.`,
       sharedGeneric: (count) => `${count} entrées portent ce nom.`,
       exactSummary:

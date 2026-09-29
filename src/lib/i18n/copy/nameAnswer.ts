@@ -37,8 +37,6 @@ export interface NameAnswerCopy {
   /** Movement III. */
   silences: string;
   silencesLead: string;
-  noDatedAttestation: string;
-  noDatedAttestationBody: string;
   invitation: string;
   invitationBody: string;
   invitationAction: string;
@@ -95,9 +93,6 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     atlasHolds: "What we know",
     silences: "What we do not know yet",
     silencesLead: "A declared silence, not an oversight.",
-    noDatedAttestation: "No dated attestation",
-    noDatedAttestationBody:
-      "The sources shown here do not yet date these forms.",
     invitation: "Have we got it wrong?",
     invitationBody:
       "If you know a source on any of these names, it will be read.",
@@ -140,9 +135,6 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     atlasHolds: "Ce que nous savons",
     silences: "Ce que nous ne savons pas encore",
     silencesLead: "Un silence déclaré, pas un oubli.",
-    noDatedAttestation: "Aucune attestation datée",
-    noDatedAttestationBody:
-      "Les sources présentées ici ne permettent pas encore de dater ces formes.",
     invitation: "Nous nous sommes trompés ?",
     invitationBody:
       "Si vous connaissez une source sur l’un de ces noms, elle sera lue.",

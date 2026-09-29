@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { SearchFeed } from "@/components/search/SearchFeed";
+import { getLocalizedRoute } from "@/lib/routing";
 import type { NameAnswer } from "@/lib/search/nameAnswer";
 import type { SearchResult } from "@/types/afrik-frontend";
 
@@ -108,6 +109,83 @@ describe("two subjects answering one name", () => {
     expect(hrefs[1]).toContain("bam");
     expect(screen.getByText("Le peuple.")).toBeVisible();
     expect(screen.getByText("La langue.")).toBeVisible();
+  });
+});
+
+// @req REQ-178
+describe("a known name with no reviewed answer", () => {
+  // @req REQ-178
+  it("still opens onto its fiche, without claiming the origin is unknown", () => {
+    const { container } = renderFeed("Lingala", [
+      subject("people", "PPL_LINGALA", "Lingala"),
+    ]);
+
+    const opening = container.querySelector('[data-feed-block="verdict"]');
+    expect(
+      within(opening as HTMLElement).getByRole("link", { name: /fiche/i })
+    ).toHaveAttribute("href", expect.stringContaining("PPL_LINGALA"));
+    expect(screen.queryByText(/ne connaissons pas/i)).toBeNull();
+  });
+});
+
+// @req REQ-125
+describe("a query no name answers to", () => {
+  const leads = [
+    { type: "people" as const, id: "PPL_AKA", name: "Aka", similarity: 0.6 },
+    { type: "people" as const, id: "PPL_TWA", name: "Twa", similarity: 0.5 },
+  ];
+
+  function renderTypo() {
+    return render(
+      <SearchFeed
+        query="pigmée"
+        language="fr"
+        state="typo"
+        results={[]}
+        subjects={[]}
+        leads={leads}
+        companions={noCompanions}
+      />
+    );
+  }
+
+  // The title came from leads[0], so « pigmée » read as a page about « Aka ».
+  // @req REQ-125
+  it("keeps what the reader typed as the title, never a suggestion", () => {
+    renderTypo();
+
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "pigmée"
+    );
+    expect(screen.getByText("Cherchiez-vous… ?")).toBeVisible();
+  });
+
+  // @req REQ-125
+  it("offers each nearest name as an explicit new search, corrected by nobody", () => {
+    renderTypo();
+
+    const choices = screen.getByTestId("appellations-list");
+    const hrefs = within(choices)
+      .getAllByRole("link")
+      .map((link) => link.getAttribute("href"));
+    expect(hrefs).toEqual([
+      `${getLocalizedRoute("fr", "search")}?q=Aka`,
+      `${getLocalizedRoute("fr", "search")}?q=Twa`,
+    ]);
+    expect(screen.queryByText("votre recherche")).toBeNull();
+  });
+});
+
+// @req REQ-180
+describe("empty structured fields are not declared silences", () => {
+  // Every subject without structured dates was told « Aucune attestation
+  // datée », including names whose fiche dates them: an empty field describes
+  // what we projected, not what is known.
+  // @req REQ-180
+  it("never derives a knowledge gap from a missing date field", () => {
+    renderFeed("Lingala", [subject("people", "PPL_LINGALA", "Lingala")]);
+
+    expect(screen.queryByText(/attestation datée/i)).toBeNull();
   });
 });
 

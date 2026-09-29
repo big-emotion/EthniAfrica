@@ -77,6 +77,21 @@ describe("resolveNameOpening", () => {
   });
 
   // @req REQ-178
+  it("reports the subjects no reviewed answer covers, so each keeps a fiche link", () => {
+    const yaka = result("people", "PPL_YAKA", "Yaka");
+    const opening = resolveNameOpening({
+      query: "pygmée",
+      subjects: [aka, twa, yaka],
+      nameAnswers: [pygmee],
+    });
+    expect(opening.unanswered.map(({ id }) => id)).toEqual(["PPL_YAKA"]);
+    expect(
+      resolveNameOpening({ query: "x", subjects: [yaka], nameAnswers: [] })
+        .unanswered
+    ).toEqual([yaka]);
+  });
+
+  // @req REQ-178
   it("never attaches an answer to a subject it does not name", () => {
     const opening = resolveNameOpening({
       query: "pygmée",

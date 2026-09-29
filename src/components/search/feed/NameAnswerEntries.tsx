@@ -5,7 +5,44 @@ import { ActionLink } from "@/components/ui/ActionLink";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import type { NameAnswerEntry } from "@/lib/search/resolveNameOpening";
 import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
+import type { SearchResult } from "@/types/afrik-frontend";
 import type { Language } from "@/types/shared";
+
+/**
+ * A subject no reviewed answer covers still owes the reader its fiche: the
+ * opening never leaves a known name without a way in, and never says the
+ * origin is unknown just because nobody has written the summary yet.
+ */
+// @req REQ-178
+export function UnansweredFicheLinks({
+  subjects,
+  language,
+}: {
+  subjects: readonly SearchResult[];
+  language: Language;
+}) {
+  const copy = nameAnswerCopy[language];
+  const single = subjects.length === 1;
+  return (
+    <div className="mt-afh-md flex flex-wrap items-center gap-x-afh-2xl">
+      {subjects.map((subject) => {
+        const kind = getSearchEntityLabel(subject.type, language);
+        return (
+          <ActionLink
+            key={`${subject.type}:${subject.id}`}
+            href={ficheHrefFor(subject, language)}
+          >
+            {copy.answerFiche(
+              single
+                ? kind
+                : `${getLocalizedSearchResultName(subject, language)} (${kind})`
+            )}
+          </ActionLink>
+        );
+      })}
+    </div>
+  );
+}
 
 export interface NameAnswerEntriesProps {
   entries: readonly NameAnswerEntry[];

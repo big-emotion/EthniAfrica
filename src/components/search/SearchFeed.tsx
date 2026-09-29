@@ -135,13 +135,16 @@ function resultForms(
   language: Language
 ) {
   if (state === "typo") {
-    return leads.map((lead, index) => ({
+    // Each suggestion is a new search the reader chooses; none is marked as
+    // the searched form, because nothing the reader typed matched it.
+    return leads.map((lead) => ({
       form: lead.name,
-      subjectId: `${lead.type}:${lead.id}`,
+      subjectId: undefined,
       qualifier: undefined,
       selfGiven: null,
       problematic: undefined,
-      searched: index === 0,
+      searched: false,
+      href: `${getLocalizedRoute(language, "search")}?${new URLSearchParams({ q: lead.name })}`,
     }));
   }
 
@@ -373,28 +376,10 @@ export function SearchFeed({
     subjectIdentities.size >= 2;
   const hasNameDisambiguation =
     hasPeopleDisambiguation || hasCrossTypeDisambiguation;
-  const derivedSubjectSilences = subjects.flatMap((subject) => {
-    const naming = subject.naming;
-    const isDated = Boolean(
-      naming &&
-      (naming.presentation.forms.some((form) => form.attestationPeriod) ||
-        naming.presentation.eras.length > 0)
-    );
-    if (isDated) return [];
-    const subjectName = getLocalizedSearchResultName(subject, language);
-    return [
-      {
-        id: `${subject.type}:${subject.id}`,
-        title:
-          subjects.length > 1
-            ? `${subjectName} — ${answerCopy.noDatedAttestation}`
-            : answerCopy.noDatedAttestation,
-        detail: answerCopy.noDatedAttestationBody,
-      },
-    ];
-  });
-  const subjectSilences =
-    presentation?.owed?.silences ?? derivedSubjectSilences;
+  // Only silences a reviewer declared are shown. A missing structured field
+  // describes what was projected onto this page, not what is known: the same
+  // rule that keeps a missing video from reading as a missing source.
+  const subjectSilences = presentation?.owed?.silences ?? [];
   const availability = feedAvailability(
     state,
     subjects,
@@ -472,8 +457,8 @@ export function SearchFeed({
     presentation?.answer?.name ??
     relationLabel ??
     opening.title ??
-    (state === "typo" && leads[0]
-      ? leads[0].name
+    (state === "typo"
+      ? query.trim()
       : subjects[0]
         ? getLocalizedSearchResultName(subjects[0], language)
         : query);
@@ -495,7 +480,7 @@ export function SearchFeed({
       : state === "unknown"
         ? answerCopy.unknownName
         : state === "typo"
-          ? copy.answer.typo(displayName)
+          ? copy.answer.typo
           : hasPeopleDisambiguation
             ? copy.answer.shared(subjects.length)
             : hasCrossTypeDisambiguation
@@ -517,11 +502,13 @@ export function SearchFeed({
       ? hasWordPiece
         ? answerCopy.wordNameBody
         : answerCopy.unknownNameBody
-      : state === "widened"
-        ? isRelationBrowse
-          ? copy.answer.relationSummary
-          : copy.answer.widenedSummary
-        : copy.answer.exactSummary);
+      : state === "typo"
+        ? copy.answer.typoSummary(displayName)
+        : state === "widened"
+          ? isRelationBrowse
+            ? copy.answer.relationSummary
+            : copy.answer.widenedSummary
+          : copy.answer.exactSummary);
   const relationEyebrow = isRelationBrowse
     ? copy.answer.relationEyebrow
     : undefined;
@@ -624,6 +611,7 @@ export function SearchFeed({
             verdict={verdict}
             summary={summary}
             entries={presentation?.answer ? [] : opening.entries}
+            unanswered={presentation?.answer ? [] : opening.unanswered}
             kind={presentation?.answer?.kind}
             eyebrow={presentation?.answer?.eyebrow ?? relationEyebrow}
             language={language}

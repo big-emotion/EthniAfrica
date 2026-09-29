@@ -14,6 +14,8 @@ export interface NameOpening {
    */
   title?: string;
   entries: NameAnswerEntry[];
+  /** Matched subjects no reviewed answer covers; they still owe the reader their fiche. */
+  unanswered: SearchResult[];
 }
 
 interface ResolveNameOpeningInput {
@@ -45,8 +47,21 @@ export function resolveNameOpening({
     return covered.length > 0 ? [{ answer, subjects: covered }] : [];
   });
 
-  const distinct = new Set(subjects.map(({ type, id }) => `${type}:${id}`));
-  if (distinct.size < 2) return { entries };
+  const answered = new Set(
+    entries.flatMap((entry) =>
+      entry.subjects.map(({ type, id }) => `${type}:${id}`)
+    )
+  );
+  const unanswered = subjects.filter(
+    ({ type, id }) => !answered.has(`${type}:${id}`)
+  );
 
-  return { title: entries[0]?.answer.term ?? query.trim(), entries };
+  const distinct = new Set(subjects.map(({ type, id }) => `${type}:${id}`));
+  if (distinct.size < 2) return { entries, unanswered };
+
+  return {
+    title: entries[0]?.answer.term ?? query.trim(),
+    entries,
+    unanswered,
+  };
 }
