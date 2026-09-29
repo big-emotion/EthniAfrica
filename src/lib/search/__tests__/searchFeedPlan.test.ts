@@ -189,7 +189,7 @@ describe("search-feed plan", () => {
   it("does not add an owed closing for related-only results", () => {
     expect(
       buildSearchFeedPlan("widened", {}, { relatedOnly: true }).mobile
-    ).toEqual(["lenses", "verdict", "shorts"]);
+    ).toEqual(["verdict", "lenses", "shorts"]);
   });
 
   // @req REQ-180

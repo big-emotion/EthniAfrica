@@ -920,7 +920,6 @@ export function SearchFeed({
   const opensWithPaddedVerdict = state === "unknown" && Boolean(presentation);
   const first = (
     <>
-      {firstIds.includes("lenses") ? renderBlock("lenses") : null}
       <div
         data-feed-opening="answer"
         className={cn(
@@ -939,6 +938,7 @@ export function SearchFeed({
         ) : null}
         {hasAppellations ? renderBlock("appellations") : null}
       </div>
+      {firstIds.includes("lenses") ? renderBlock("lenses") : null}
       {firstIds.includes("shorts") ? (
         <div
           data-feed-opening="shorts"

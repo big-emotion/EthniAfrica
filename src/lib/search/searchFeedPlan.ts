@@ -84,9 +84,11 @@ export function buildSearchFeedPlan(
   availability: SearchFeedAvailability,
   options: SearchFeedPlanOptions = {}
 ): SearchFeedPlan {
-  const first: FeedBlockId[] = ["lenses", "verdict"];
+  // The answer and the forms come before the filters: a filter refines the
+  // exploration stream below, never the answer to the searched name.
+  const first: FeedBlockId[] = ["verdict"];
   if (availability.appellations) first.push("appellations");
-  first.push("shorts");
+  first.push("lenses", "shorts");
 
   const movement = FEED_BLOCKS.filter(
     (id) =>

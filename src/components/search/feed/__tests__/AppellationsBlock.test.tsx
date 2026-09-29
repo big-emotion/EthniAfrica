@@ -3,6 +3,7 @@ import userEvent from "@testing-library/user-event";
 import { describe, expect, it } from "vitest";
 
 import { AppellationsBlock } from "@/components/search/feed/AppellationsBlock";
+import { getPeopleRoute } from "@/lib/routing";
 
 const forms = [
   { form: "Fang", selfGiven: true },
@@ -260,7 +261,7 @@ describe("AppellationsBlock form semantics", () => {
       <AppellationsBlock
         language="fr"
         forms={[
-          { form: "Kongo", href: "/fr/atlas/peoples/PPL_KONGO" },
+          { form: "Kongo", href: getPeopleRoute("fr", "PPL_KONGO") },
           { form: "Ngala" },
         ]}
       />
@@ -268,7 +269,7 @@ describe("AppellationsBlock form semantics", () => {
 
     expect(screen.getByRole("link", { name: /Kongo/ })).toHaveAttribute(
       "href",
-      "/fr/atlas/peoples/PPL_KONGO"
+      getPeopleRoute("fr", "PPL_KONGO")
     );
     expect(screen.queryByRole("button")).toBeNull();
     expect(screen.queryByRole("link", { name: /Ngala/ })).toBeNull();
