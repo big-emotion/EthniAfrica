@@ -16,6 +16,36 @@
           "sourceRefs": ["afrik-candidate-queue"]
         }
       ]
+    },
+    {
+      "spelling": "Bagayogo",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
+    },
+    {
+      "spelling": "Bakayoko",
+      "attestations": [
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["forebears-bakayoko"]
+        },
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["forebears-bakayoko"]
+        },
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["forebears-bakayoko"]
+        },
+        {
+          "countryId": "BFA",
+          "sourceRefs": ["forebears-bakayoko"]
+        }
+      ]
     }
   ],
   "transmissionMode": "other",
@@ -85,6 +115,14 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Canut, Cécile, et Smith, Étienne, Cahiers d'études africaines, numéro 184, 2006, p. 687 et suivantes. Citée pour la mise en garde qu'elle porte : l'idée que la parenté à plaisanterie apaiserait les conflits y est traitée comme une hypothèse héritée de Radcliffe-Brown et reprise par les études sur la résolution des conflits, donc comme un discours à analyser et non comme un effet mesuré. La page de début est vérifiée, la page de fin ne l'est pas."
+    },
+    {
+      "sourceKey": "forebears-bakayoko",
+      "title": "Bakayoko — origine, signification et incidence du nom de famille",
+      "url": "https://forebears.io/surnames/bakayoko",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Agrégateur généalogique mondial, consulté le 29 septembre 2026. Incidence mondiale d'environ 101 645 porteurs ; Côte d'Ivoire 95 088, Mali 2 517, Guinée 1 912, France 814, Burkina Faso 317. La page ne donne aucune signification du nom. Les effectifs hors d'Afrique ne sont pas repris dans les attestations de cette fiche. Bakayoko est la graphie la plus portée ; le dictionnaire des jamuw donne Bagayoko et Bagayogo pour la même entrée."
     }
   ],
   "gaps": [

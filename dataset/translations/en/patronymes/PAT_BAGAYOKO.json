@@ -13,6 +13,19 @@
       "attestations": [
         { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] }
       ]
+    },
+    {
+      "spelling": "Bagayogo",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
+    },
+    {
+      "spelling": "Bakayoko",
+      "attestations": [
+        { "countryId": "CIV", "sourceRefs": ["forebears-bakayoko"] },
+        { "countryId": "MLI", "sourceRefs": ["forebears-bakayoko"] },
+        { "countryId": "GIN", "sourceRefs": ["forebears-bakayoko"] },
+        { "countryId": "BFA", "sourceRefs": ["forebears-bakayoko"] }
+      ]
     }
   ],
   "transmissionMode": "other",
@@ -57,7 +70,7 @@
       "url": null,
       "tier": "unverified",
       "source_kind": "ai_generated",
-      "notes": "This name appears on our list of names to document: it has been identified as a name requiring documentation, but no dedicated source has yet been consulted. The entry exists to record the name, not to make a claim about it. Future verification will draw on electoral registers, national statistical institutes and the onomastic scholarship of the country concerned."
+      "notes": "This name appears in our coverage list: it has been selected as a name to document, but no dedicated source has yet been consulted. The fiche therefore exists to flag the name, not for what it states about it. Forthcoming checks will draw on electoral registers, national statistical institutes and the onomastic scholarship of the country concerned."
     },
     {
       "sourceKey": "bamadaba-jamuw",
@@ -82,6 +95,14 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Canut, Cécile, and Smith, Étienne, Cahiers d'études africaines, number 184, 2006, p. 687 and following. Cited for the caution it raises: the idea that joking kinship pacifies conflict is treated there as a hypothesis inherited from Radcliffe-Brown and taken up by conflict-resolution studies, hence as a discourse to be analysed rather than as a measured effect. The starting page is verified; the closing page is not."
+    },
+    {
+      "sourceKey": "forebears-bakayoko",
+      "title": "Bakayoko — origine, signification et incidence du nom de famille",
+      "url": "https://forebears.io/surnames/bakayoko",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Worldwide genealogical aggregator, consulted on 29 September 2026. Worldwide incidence of about 101,645 bearers; Côte d'Ivoire 95,088, Mali 2,517, Guinea 1,912, France 814, Burkina Faso 317. The page gives no meaning for the name. The figures outside Africa are not carried into the attestations of this fiche. Bakayoko is the most widely borne spelling; the dictionary of jamuw gives Bagayoko and Bagayogo for the same entry."
     }
   ],
   "gaps": [
@@ -103,24 +124,25 @@
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "The clan name alone does not determine the mode of transmission: we do not yet document this for this name."
+      "reason": "The clan name does not by itself determine the mode of transmission: we do not yet document it for this name."
     }
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-09-09T09:33:26.322Z",
-    "model": "claude-sonnet-5",
-    "sourceHash": "df43c3eff9b7c2ec9864191766ab3f68a286089cc73f0334494b41e0a22c8f89",
+    "translatedAt": "2026-09-29T15:44:55.271Z",
+    "model": "claude-sonnet-5-5",
+    "sourceHash": "f17e51efd1537a4b05f5d14ff6e86f3a5d7e61e7b478104de8dde01ee057bd1a",
     "fieldHashes": {
-      "sources[0].notes": "78128286f23912b9",
+      "sources[0].notes": "22ca6f28c6df8af9",
       "sources[1].notes": "513bce19234bc315",
       "sources[2].notes": "2c14e48c42d56e18",
       "sources[3].notes": "79986afda62f44db",
-      "gaps[0].reason": "dd2f14fbf2d6fc09",
-      "gaps[1].reason": "dd2f14fbf2d6fc09",
-      "gaps[2].reason": "dd2f14fbf2d6fc09",
-      "gaps[3].reason": "dd2f14fbf2d6fc09",
-      "gaps[4].reason": "e28bcf8ccd2ff766"
+      "sources[4].notes": "43080d0ae334df7e",
+      "gaps[0].reason": "3af5e0bb2ae9e2c5",
+      "gaps[1].reason": "3af5e0bb2ae9e2c5",
+      "gaps[2].reason": "3af5e0bb2ae9e2c5",
+      "gaps[3].reason": "3af5e0bb2ae9e2c5",
+      "gaps[4].reason": "699bc12443774222"
     },
     "reviewRequired": []
   }
