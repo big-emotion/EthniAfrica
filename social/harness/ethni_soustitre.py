@@ -33,7 +33,13 @@ TOKEN_PATTERN = re.compile(r"[^\W_]+(?:[-'’][^\W_]+)*[.,!?;:]?", re.UNICODE)
 # Punctuation first, because a comma or a full stop is a breath the speaker
 # actually takes. Then the function words that open a group: a caption may start
 # with « parce que » or « et », never end on them.
-PONCTUATION = re.compile(r"(?<=[.!?…:;,])\s+")
+#
+# A closing mark (« » », a closing bracket) belongs to the sentence it closes: the cut
+# falls after it, never between the full stop and it. French sets « monde. » with a
+# space, so a cut right after the full stop left « » » at the head of the next caption,
+# and at a paragraph end it carried the blank line with it.
+PONCTUATION = re.compile(
+    r"(?:(?<=[.!?…:;,])|(?<=[.!?…:;,][»”’)\]])|(?<=[.!?…:;,][   ][»”’)\]]))\s+(?![»”’)\]])")
 
 # Marks that open what follows; every other wordless mark closes what precedes.
 OUVRANTS = frozenset("«“‘([")

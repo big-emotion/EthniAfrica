@@ -12,9 +12,19 @@ from PIL import Image, ImageColor, ImageDraw, ImageFilter
 from ethni_globe import sample_bilinear
 from ethni_map import mix, partial_path
 
-# The relief is soft by nature, so it is resampled at half the frame and enlarged: a quarter of
-# the pixels to compute, and no visible loss under the vector layers drawn on top at full size.
+# In a wide view the relief is soft by nature, so it is resampled at half the frame and enlarged: a
+# quarter of the pixels to compute, and no visible loss under the vector layers drawn on top.
 BASE_SCALE = .5
+# Below this span (degrees across the frame) the relief is sampled at full frame resolution. Measured
+# on the west-Africa pack (60 px per degree) on 2026-09-28: at 17 degrees half resolution visibly blurs
+# the coast and the hill shading, at 5 degrees the gain is small because the pack itself is coarser
+# than the frame. Full resolution costs about 0.16 s more per base render (0.07 s to 0.23 s at
+# 1080 x 1920); a still camera pays it once per scene, a moving one on every frame.
+CLOSE_UP_SPAN = 20
+
+
+def base_scale(span):
+    return 1.0 if span < CLOSE_UP_SPAN else BASE_SCALE
 HALO = .07          # the atmosphere extends this fraction of the radius beyond the limb
 MAX_WALL_POINTS = 320
 
@@ -54,21 +64,26 @@ def visible_runs(camera, coords, height=0.0):
     return runs
 
 
-def relief_base(raster, bounds, camera, size, ground):
-    """The Earth as seen from the camera: the relief resampled onto the sphere, ground colour around it."""
+def relief_base(raster, bounds, camera, size, ground, space=None):
+    """The Earth as seen from the camera: the relief resampled onto the sphere, `space` (default: the
+    ground colour) around it."""
     width, height = size
-    small = (max(1, round(width*BASE_SCALE)), max(1, round(height*BASE_SCALE)))
+    # Derived from the camera alone, so a base cached per camera can never be reused at the wrong scale.
+    scale = base_scale(camera.span)
+    small = (max(1, round(width*scale)), max(1, round(height*scale)))
     lon, lat, disc = camera.grid(*small)
     samples, covered = sample_bilinear(raster, bounds, lon, lat)
     backdrop = np.array(ImageColor.getrgb(ground), np.float32)
     # Where the pack does not reach, the sphere is shown dimmed instead of smeared from the pack's edge.
+    # That fill keeps following the ground, not the space: a dark space doubled is still near black.
     picture = np.where(covered[..., None], samples, backdrop*2.0)
-    picture = np.where(disc[..., None], picture, backdrop)
+    around = np.array(ImageColor.getrgb(space), np.float32) if space else backdrop
+    picture = np.where(disc[..., None], picture, around)
     image = Image.fromarray(np.clip(picture, 0, 255).astype(np.uint8), "RGB")
     return image.resize(size, Image.Resampling.BILINEAR)
 
 
-def atmosphere(image, camera, ground, glow):
+def atmosphere(image, camera, glow):
     """Limb darkening on the globe and a thin halo just outside it."""
     width, height = image.size
     (ox, oy), radius = camera.disc()

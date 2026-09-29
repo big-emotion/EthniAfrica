@@ -2,10 +2,12 @@
 import hashlib
 import json
 import math
+import re
 from pathlib import Path
 
 from PIL import Image
 
+import ethni_tokens as tokens
 from ethni_globe import EASINGS, GlobeCamera
 from ethni_map import Camera
 
@@ -20,7 +22,13 @@ STATUS = {"documented": "Documenté", "estimate": "Estimation", "hypothesis": "H
 COLOURS = ("gold", "white", "night-ink-2", "teal", "perv", "sea")
 BORDER_STYLES = ("solid", "dashed", "soft", "glow", "none")
 LABEL_STYLES = ("sea", "place")
-GLOBE_ONLY = ("projection", "relief", "rivers", "lakes", "atmosphere")
+GLOBE_ONLY = ("projection", "relief", "rivers", "lakes", "atmosphere", "space", "glow")
+# `space` (around the sphere) and `glow` (its halo) name an engine palette entry, never a value: the
+# palette resolves through the charter tokens, so a plan cannot smuggle in a colour nobody ruled on.
+GLOBE_TINTS = ("space", "glow")
+# Four lines fill the space between the header and the caption; a line that appears less than a second
+# before its scene ends is a flash, not a piece of reading.
+KINETIC_MAX_LINES, KINETIC_READING_SECONDS = 4, 1.0
 
 
 def require(condition, message):
@@ -85,7 +93,7 @@ def validate_geometry(geo):
 
 def validate_map(value, duration, assets, sources):
     keys(value, "asset layer borders border_style border_width highlights camera features graticule inserts "
-                "projection relief rivers lakes atmosphere", "map")
+                "projection relief rivers lakes atmosphere space glow", "map")
     globe = value.get("projection", "mercator")
     require(globe in ("mercator", "globe"), "Unknown map.projection")
     globe = globe == "globe"
@@ -97,6 +105,11 @@ def validate_map(value, duration, assets, sources):
                 require(value[layer] in assets and assets[value[layer]]["kind"] == "vector", f"map.{layer} needs a vector asset")
         if "atmosphere" in value:
             require(type(value["atmosphere"]) is bool, "map.atmosphere must be boolean")
+        names = tokens.palette()
+        for key in GLOBE_TINTS:
+            if key in value:
+                require(isinstance(value[key], str) and value[key] in names,
+                        f"map.{key} must name a palette token: {', '.join(sorted(names))}")
     if "border_width" in value:
         number(value["border_width"], "map.border_width", 1, 12)
     inserts = value.get("inserts", [])
@@ -156,7 +169,9 @@ def validate_map(value, duration, assets, sources):
         end = number(feature.get("until"), "feature.until", 0, duration)
         require(end > start, "feature.until must follow at")
         require(feature.get("role", "subject") in ("subject", "context"), "Unknown feature role")
-        require(feature.get("role") != "context" or kind in ("territory", "point"), "Context role requires a territory or point")
+        require(feature.get("role") != "context" or kind in ("territory", "point")
+                or (kind == "country" and value["layer"] == "people"),
+                "Context role requires a territory or point, or a country on the people layer")
         if "annotation" in feature:
             require(kind == "point", "annotation requires a point")
             text(feature["annotation"], "feature.annotation")
@@ -192,8 +207,10 @@ def validate_map(value, duration, assets, sources):
                 require(type(feature.get("value")) is int and feature["value"] > 0,
                         "A speakers feature needs a positive integer value")
         elif kind == "country":
-            # A whole present-day country switched on at a cue, on the national layer only.
-            require(value["layer"] == "national", "A country feature needs the national layer")
+            # A whole present-day country switched on at a cue. On the people layer it may only stand as
+            # context, drawn under the zones: the country orients, it never stands for a people.
+            require(value["layer"] == "national" or (value["layer"] == "people" and feature.get("role") == "context"),
+                    "A country feature needs the national layer, or role: context on the people layer")
             text(feature.get("code"), "feature.code")
             require(not {"point", "points", "meaning"} & set(feature), "Country feature has point or route fields")
         else:
@@ -385,6 +402,37 @@ def validate_backdrop(value, duration, root, assets, sources):
         validate_map_scene(config, duration, root, assets, sources)
 
 
+def accent_span(line):
+    """Where the accent word sits in its line as a whole word, or None: « nous » is not inside « nouveau »."""
+    accent = line.get("accent")
+    match = re.search(rf"(?<!\w){re.escape(accent)}(?!\w)", line["text"]) if isinstance(accent, str) and accent else None
+    return match.span() if match else None
+
+
+def validate_kinetic(value, duration):
+    """Lines arrive in the order they are spoken; the card carries one accent word at most."""
+    keys(value, "lines", "kinetic")
+    lines = value.get("lines")
+    require(isinstance(lines, list) and 1 <= len(lines) <= KINETIC_MAX_LINES,
+            f"kinetic needs one to {KINETIC_MAX_LINES} lines")
+    previous, accents = 0, 0
+    for line in lines:
+        keys(line, "text detail at accent", "kinetic line")
+        text(line.get("text"), "kinetic.text")
+        if "detail" in line:
+            text(line["detail"], "kinetic.detail")
+        cue = number(line.get("at"), "kinetic.at", 0)
+        require(cue <= duration-KINETIC_READING_SECONDS, "A kinetic line needs at least a second of reading time")
+        require(cue >= previous, "Kinetic lines must follow the narration in reading order")
+        previous = cue
+        if "accent" in line:
+            accents += 1
+            require(accents == 1, "A card carries at most one accent word")
+            accent = line["accent"]
+            require(isinstance(accent, str) and len(accent.split()) == 1 and accent_span(line),
+                    "The accent must be one word of its own line")
+
+
 def validate_plan(plan, root, duration):
     """Validate shape, local assets, provenance and complete audio coverage."""
     keys(plan, "version profile coverage title source output_dir sources assets scenes progress cover outro layout", "plan")
@@ -426,7 +474,7 @@ def validate_plan(plan, root, duration):
     ids, previous = set(), 0.0
     for index, scene in enumerate(scenes):
         where = f"scene {index+1}"
-        keys(scene, "id type start end title purpose evidence beat map image text comparison backdrop timeline document transition", where)
+        keys(scene, "id type start end title purpose evidence beat map image text comparison kinetic backdrop timeline document transition", where)
         text(scene.get("id"), f"{where}.id")
         require(scene["id"] not in ids, "Scene ids must be unique")
         ids.add(scene["id"])
@@ -438,11 +486,12 @@ def validate_plan(plan, root, duration):
         for field in ("title", "purpose"): text(scene.get(field), f"{where}.{field}")
         evidence(scene.get("evidence"), sources, f"{where}.evidence")
         kind = scene.get("type")
-        require(kind in ("map", "image", "text", "comparison", "timeline", "document"), "Unknown scene type")
-        require(all(field == kind or field not in scene for field in ("map", "image", "text", "comparison", "timeline", "document")),
+        require(kind in ("map", "image", "text", "comparison", "kinetic", "timeline", "document"), "Unknown scene type")
+        require(all(field == kind or field not in scene for field in ("map", "image", "text", "comparison", "kinetic", "timeline", "document")),
                 f"{where}: content for another scene type")
-        # The full-frame layout draws words only as an overlay: a comparison whose items arrive over a picture or a map.
-        require(layout != "fullbleed" or kind in ("map", "image", "timeline", "comparison"),
+        # The full-frame layout draws words only as an overlay (a comparison whose items arrive over a picture or a map)
+        # or as a kinetic card.
+        require(layout != "fullbleed" or kind in ("map", "image", "timeline", "comparison", "kinetic"),
                 f"{where}: the fullbleed layout cannot draw a {kind} scene")
         if kind == "comparison" and layout == "fullbleed":
             require("backdrop" in scene, f"{where}: a full-frame comparison needs a backdrop, or it is words on a black screen")
@@ -471,6 +520,8 @@ def validate_plan(plan, root, duration):
             for field in ("label", "body"): text(value.get(field), f"document.{field}")
         elif kind == "text":
             text(scene.get("text"), "scene.text")
+        elif kind == "kinetic":
+            validate_kinetic(scene.get("kinetic"), end-start)
         else:
             items = scene.get("comparison")
             full = layout == "fullbleed"

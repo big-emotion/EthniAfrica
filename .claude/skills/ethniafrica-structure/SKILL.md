@@ -379,8 +379,20 @@ reading comfort. Paragraph boundaries carry editorial structure, not cut points.
   (`plain-language-doctrine-2026-09-09.md`), rappelée le 2026-09-21 après une
   narration qui ne l'appliquait pas. **`node social/tools/narration/check-narration.mjs
 <narration.fr.txt>` la vérifie** (ouvertures refusées, verbes de parole inversés,
-  plus de vingt mots) ; il ne voit pas si une phrase est simple, cela reste à
-  l'auteur et à la validation de l'opérateur.
+  plus de vingt mots, **linguiste, auteur ou livre en tête de phrase**) ; il ne
+  voit pas si une phrase est simple, cela reste à l'auteur et à la validation de
+  l'opérateur.
+- **Les peuples parlent d'abord, la source vient après** (règle de l'opérateur du
+  2026-09-28, `CLAUDE.md`, `### Reader-facing register`). La narration, les
+  cartes et les légendes disent ce que les peuples se disent et se donnent
+  (« Les Peuls les appellent Malinké. »), jamais « Selon Delafosse… », « Le
+  linguiste X note… », « Un livre de 1912 montre… », « Un auteur pense… ». La
+  source reste due, à chaque fois, mais **après** : carte de source en fin de
+  scène, ligne de source de la légende. La prudence d'une affirmation contestée
+  reste, portée par une date, un temps ou « une explication dit que… », et non
+  par le nom du savant. Citer un livre, c'est avouer qu'on n'est pas allé vers les
+  gens : le projet leur pose la question sur les réseaux, et l'opérateur peut aller
+  les voir. `check-narration.mjs` refuse ces formes (`attribution-en-tete`).
 - Les trois champs publiés verbatim au lecteur ne portent **aucune mention
   interne** : ni « à nommer », ni « à confirmer », ni « à compléter ». Ce sont
   des messages à l'opérateur, et ils bloquent la publication au lieu de

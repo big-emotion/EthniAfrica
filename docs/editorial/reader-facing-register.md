@@ -121,6 +121,29 @@ The banned vocabulary lives in two exported constants in
 and `INTERNAL_REGISTER_PATTERNS_EN` (English) — so this document and the gate
 cannot drift apart.
 
+## Narration, cards and captions: the peoples speak first
+
+Operator ruling of 2026-09-28, written in `CLAUDE.md` (`### Reader-facing register`).
+A reel's narration, a carousel card and a caption say what peoples call
+themselves and each other. The linguist, the author or the book that documents
+it never opens the sentence: the source is owed every time, but it goes on a
+source card or in the source line, after. A fiche's own `sources[]` fields are
+where the authority belongs and are untouched by this section.
+
+| Refused                                               | Instead                                                      |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| « Selon Delafosse, les Peuls les appellent Malinké. » | « Les Peuls les appellent Malinké. » (card: Delafosse, 1912) |
+| « Un livre de 1912 montre que… »                      | « Les Peuls les appelaient Malinké en 1912. »                |
+| « Un auteur français pense que Malinké est peul. »    | « Une explication dit que Malinké est un mot peul. »         |
+| « Le linguiste X publie leur mot. »                   | « Ils ont un mot pour se nommer. » (card: X, 2013)           |
+| « Un texte portugais écrit Mandingas. »               | « On imprime Mandingas à Lisbonne en 1502. »                 |
+
+The hedge of a contested claim stays: it is carried by a date, a tense or « une
+explication dit que… », never by the scholar's name. `check-narration.mjs`
+refuses the lexical shapes (`attribution-en-tete`); a surname alone passes it, and
+`ethniafrica-message` (criterion 10) reads what it cannot see. Published text is
+not rewritten by this section.
+
 ## Prompt block for curation sessions
 
 Paste this into any agent session that writes or edits fiches.

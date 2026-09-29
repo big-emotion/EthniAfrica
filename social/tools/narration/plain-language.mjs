@@ -16,9 +16,12 @@
  *     imperative verb (« En 1994, … », « Selon lui, … », « Aidez-nous … »);
  *   - a speech verb does not follow its quotation (« … , écrit-elle », « … , dit
  *     le Trésor »);
- *   - a sentence has at most twenty words of its own.
+ *   - a sentence has at most twenty words of its own;
+ *   - a sentence does not lead with a scholar, an author or a book (see
+ *     `AUTORITES`): the peoples speak, the source goes on a card, after.
  *
- * It cannot see whether a sentence is *simple*; that stays with the author and
+ * It cannot see whether a sentence is *simple*, nor every way of hiding behind
+ * a name (a surname alone passes); that stays with the author and
  * the operator's validation. A quotation cannot be rewritten, so the words
  * inside « … » are neither counted nor inspected.
  *
@@ -43,6 +46,7 @@ const OUVERTURES_REFUSEES = new Set([
   "car",
   "cependant",
   "chez",
+  "d'apres",
   "comme",
   "contre",
   "dans",
@@ -97,6 +101,30 @@ const IMPERATIFS = new Set([
   "sachez",
   "suivez",
 ]);
+
+/**
+ * An authority or a document put in front of what peoples say.
+ *
+ * Operator ruling of 2026-09-28: the narration says what the peoples call each
+ * other, and the linguist, the author or the book that documents it goes on a
+ * source card, after. Leading with them reads as a scientific corpus, and
+ * citing a book reads as admitting the project never asked the people. The
+ * source is still owed; only its place moves. A lexical check, on purpose: it
+ * catches the shapes that were shipped (« Un livre de 1912 le montre »,
+ * « Le linguiste X publie… »), not every way of hiding behind a name.
+ *
+ * A scholar is refused as the *source* of a statement, never as an *actor* in
+ * the history of a name: « Un linguiste européen inscrit la langue dans un
+ * catalogue en 1934 » says who named, which is the project's own question. So a
+ * scholar is flagged only in a sentence that also carries a verb of speech or
+ * knowledge (« écrit », « pense », « note »…); a document is flagged anywhere.
+ */
+const DOCUMENTS =
+  /\b(?:livres?|ouvrages?|articles?|dictionnaires?|etudes?|manuels?|theses?)\b/;
+const SAVANTS =
+  /\b(?:linguistes?|philologues?|ethnologues?|anthropologues?|historiens?|historiennes?|chercheu(?:rs?|ses?)|universitaires?|savants?|lexicographes?|auteurs?|autrices?)\b/;
+const PAROLE_DU_SAVANT =
+  /\b(?:ecri(?:t|vent)|not(?:e|ent)|pens(?:e|ent)|montr(?:e|ent)|affirm(?:e|ent)|expliqu(?:e|ent)|relev(?:e|ent)|rapport(?:e|ent)|decri(?:t|vent)|publi(?:e|ent)|estim(?:e|ent)|propos(?:e|ent)|soutien(?:t|nent)|dit|disent|remarqu(?:e|ent)|observ(?:e|ent)|constat(?:e|ent)|considere(?:nt)?|jug(?:e|ent)|attribu(?:e|ent))\b/;
 
 const VERBES_DE_PAROLE =
   "dit|ecrit|explique|affirme|note|declare|precise|ajoute|souligne";
@@ -164,6 +192,17 @@ function verifierPhrase(phrase) {
         detail: `« ${mot} » ouvre la phrase : mettre le sujet d'abord (sujet, verbe, complément)`,
       });
     }
+  }
+
+  const plie = plier(nues);
+  const autorite =
+    plie.match(DOCUMENTS) ??
+    (PAROLE_DU_SAVANT.test(plie) ? plie.match(SAVANTS) : null);
+  if (autorite) {
+    trouvailles.push({
+      regle: "attribution-en-tete",
+      detail: `« ${autorite[0]} » met une autorité devant ce que disent les peuples : dire directement ce que les peuples disent, la source va sur la carte de source, après`,
+    });
   }
 
   if (VERBE_INVERSE.test(plier(nues))) {

@@ -7,7 +7,7 @@ const regles = (texte) => verifierNarration(texte).map((f) => f.regle);
 
 // @req REQ-032
 test("a sentence that opens on its subject passes", () => {
-  assert.deepEqual(regles("Lapouge écrit un livre. Il propose un mot."), []);
+  assert.deepEqual(regles("Lapouge propose un mot. Il l'écrit en 1899."), []);
 });
 
 // @req REQ-032
@@ -18,11 +18,11 @@ test("a question may open on a complement", () => {
 // @req REQ-032
 test("a statement may not open on a complement, an adverb or a conjunction", () => {
   for (const phrase of [
-    "En 1994, elle écrit un article.",
+    "En 1994, elle écrit un nom.",
     "Vers 1950, le mot change de sens.",
     "Selon lui, ce groupe n'est pas une race.",
     "Dans notre projet, nous partons du nom.",
-    "Mais le livre parle de races.",
+    "Mais le mot parle de races.",
     "Page 10, il écrit une phrase.",
     "Voici ce que disent les sources.",
     "Parce que nommer un peuple demande de la précision.",
@@ -37,6 +37,57 @@ test("an imperative has no subject and is refused", () => {
   assert.deepEqual(regles("Partagez-la sur EthniAfrica."), [
     "sujet-en-premier",
   ]);
+});
+
+// @req REQ-032
+test("a sentence led by a scholar, an author or a book is refused", () => {
+  for (const phrase of [
+    "Le linguiste Denis Creissels publie leur mot en 2013.",
+    "Un livre français de 1912 le montre.",
+    "Ce livre écrit que les Malinké se disent Mandenka.",
+    "Un auteur français pense que Malinké est un mot peul.",
+    "L'historienne Catherine Coquery-Vidrovitch écrit que le mot est récent.",
+    "D'après ce dictionnaire, le mot vient du peul.",
+  ]) {
+    assert.ok(regles(phrase).includes("attribution-en-tete"), phrase);
+  }
+});
+
+// @req REQ-032
+test("a sentence that says what peoples call each other passes", () => {
+  for (const phrase of [
+    "Les Peuls les appelaient Malinké ou Mellinké en 1912.",
+    "Les Bambara les appellent Maninka.",
+    "On imprime Mandingas à Lisbonne en 1502.",
+    "Une explication dit que Malinké est un mot peul.",
+  ]) {
+    assert.deepEqual(regles(phrase), [], phrase);
+  }
+});
+
+// @req REQ-032
+test("a scholar who gave the name is the history of the name, not a source hidden behind", () => {
+  for (const phrase of [
+    "Un linguiste européen inscrit la langue dans un catalogue en 1934.",
+    "Un linguiste retire le préfixe et ajoute un i final.",
+    "Un missionnaire donne ce nom au fleuve.",
+  ]) {
+    assert.deepEqual(regles(phrase), [], phrase);
+  }
+});
+
+// @req REQ-032
+test("the finding says where the source goes instead", () => {
+  const [trouvaille] = verifierNarration(
+    "Ce livre écrit que les Malinké se disent Mandenka."
+  );
+  assert.equal(trouvaille.regle, "attribution-en-tete");
+  assert.match(trouvaille.detail, /carte de source/);
+});
+
+// @req REQ-032
+test("words inside a quotation are not inspected for attribution", () => {
+  assert.deepEqual(regles("Le mot revient dans « le livre de 1912 »."), []);
 });
 
 // @req REQ-032
@@ -72,10 +123,10 @@ test("a full stop inside a quotation does not cut the sentence", () => {
 // @req REQ-032
 test("each finding names the sentence and the paragraph it comes from", () => {
   const [trouvaille] = verifierNarration(
-    "Il écrit un livre.\n\nEn 1994, elle écrit un article."
+    "Il écrit un mot.\n\nEn 1994, elle écrit un nom."
   );
   assert.equal(trouvaille.paragraphe, 2);
-  assert.equal(trouvaille.phrase, "En 1994, elle écrit un article.");
+  assert.equal(trouvaille.phrase, "En 1994, elle écrit un nom.");
 });
 
 // @req REQ-032
