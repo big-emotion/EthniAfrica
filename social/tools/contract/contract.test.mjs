@@ -37,6 +37,7 @@ const published = (extra = {}) => ({
   ...extra,
 });
 
+// @req REQ-186
 test("exactly six narrative families are recognised", () => {
   assert.deepEqual([...FAMILIES].sort(), [
     "circulation-connections",
@@ -48,6 +49,7 @@ test("exactly six narrative families are recognised", () => {
   ]);
 });
 
+// @req REQ-186
 test("an approved existing name story is a valid edition", () => {
   assert.deepEqual(validateEdition(clone("legacyNameOrigin")), {
     ok: true,
@@ -55,6 +57,7 @@ test("an approved existing name story is a valid edition", () => {
   });
 });
 
+// @req REQ-186
 test("a sourced social-only portrait needs no site record and no myth", () => {
   const portrait = clone("socialOnlyPortrait");
   assert.equal(portrait.subject.corpusRef, undefined);
@@ -68,6 +71,7 @@ test("a sourced social-only portrait needs no site record and no myth", () => {
   assert.ok(myth.reason.length > 0);
 });
 
+// @req REQ-187
 test("a repeated angle stays eligible and is not a duplicate", () => {
   const carousel = clone("socialOnlyPortrait");
   const video = {
@@ -80,6 +84,7 @@ test("a repeated angle stays eligible and is not a duplicate", () => {
   assert.deepEqual(findDuplicateOccurrences([carousel, video]), []);
 });
 
+// @req REQ-187
 test("the same platform post recorded twice is a duplicate", () => {
   const first = clone("socialOnlyPortrait");
   const second = {
@@ -91,6 +96,7 @@ test("the same platform post recorded twice is a duplicate", () => {
   assert.equal(findDuplicateOccurrences([first, second]).length, 1);
 });
 
+// @req REQ-187
 test("publishing on one network does not mark the edition fully distributed", () => {
   const edition = clone("socialOnlyPortrait");
   edition.occurrences = [published()];
@@ -101,12 +107,14 @@ test("publishing on one network does not mark the edition fully distributed", ()
   });
 });
 
+// @req REQ-187
 test("a planned occurrence is not a publication", () => {
   const edition = clone("socialOnlyPortrait");
   edition.occurrences = [{ network: "tiktok", status: "planned" }];
   assert.equal(distribution(edition).state, "none");
 });
 
+// @req REQ-187
 test("a test-fixture URL never counts as a live publication", () => {
   const edition = clone("socialOnlyPortrait");
   edition.occurrences = [
@@ -119,18 +127,21 @@ test("a test-fixture URL never counts as a live publication", () => {
   assert.equal(distribution(edition).state, "none");
 });
 
+// @req REQ-187
 test("ready without a date is valid", () => {
   const edition = clone("socialOnlyPortrait");
   assert.equal(edition.plannedDate, undefined);
   assert.equal(validateEdition(edition).ok, true);
 });
 
+// @req REQ-187
 test("a malformed date is refused, an absent one is not", () => {
   const edition = clone("socialOnlyPortrait");
   edition.plannedDate = "next sunday";
   assert.equal(validateEdition(edition).ok, false);
 });
 
+// @req REQ-187
 test("a published occurrence with unknown url and date keeps them explicit", () => {
   const edition = clone("socialOnlyPortrait");
   edition.occurrences = [{ network: "tiktok", status: "published" }];
@@ -139,6 +150,7 @@ test("a published occurrence with unknown url and date keeps them explicit", () 
   assert.equal(validateEdition(edition).ok, true);
 });
 
+// @req REQ-186
 test("an unknown family fails clearly", () => {
   const edition = clone("socialOnlyPortrait");
   edition.family = "free";
@@ -148,6 +160,7 @@ test("an unknown family fails clearly", () => {
   assert.throws(() => applicableChecks(edition), /unknown narrative family/);
 });
 
+// @req REQ-186
 test("a claim without source evidence fails whatever the family", () => {
   for (const family of FAMILIES) {
     const edition = clone("socialOnlyPortrait");
@@ -159,6 +172,7 @@ test("a claim without source evidence fails whatever the family", () => {
   }
 });
 
+// @req REQ-186
 test("universal checks stay required in every family", () => {
   for (const family of FAMILIES) {
     const edition = clone("socialOnlyPortrait");
@@ -172,6 +186,7 @@ test("universal checks stay required in every family", () => {
   }
 });
 
+// @req REQ-186
 test("conditional checks follow the actual claims and media, not the family", () => {
   const portrait = clone("socialOnlyPortrait");
   portrait.claims.push({ id: "c2", kind: "name-origin" });
@@ -184,6 +199,7 @@ test("conditional checks follow the actual claims and media, not the family", ()
   }
 });
 
+// @req REQ-186
 test("the legacy name series keeps its name-origin gabarit check", () => {
   assert.ok(
     required(applicableChecks(clone("legacyNameOrigin"))).includes(
@@ -198,6 +214,7 @@ test("the legacy name series keeps its name-origin gabarit check", () => {
   );
 });
 
+// @req REQ-186
 test("a changed crop keeps unrelated text approval", () => {
   const approved = [
     { check: "text:card3", inputs: { "copy:card3": "h1", "claim:c1": "h2" } },
@@ -215,6 +232,7 @@ test("a changed crop keeps unrelated text approval", () => {
   assert.deepEqual(staleApprovals(approved, current), ["crop:card3:tiktok"]);
 });
 
+// @req REQ-186
 test("a changed claim invalidates every dependant and nothing else", () => {
   const approved = [
     { check: "text:card3", inputs: { "copy:card3": "h1", "claim:c1": "h2" } },
@@ -236,6 +254,7 @@ test("a changed claim invalidates every dependant and nothing else", () => {
   ]);
 });
 
+// @req REQ-186
 test("an approval whose input has disappeared is stale", () => {
   const approved = [{ check: "audio", inputs: { "audio:mix": "h1" } }];
   assert.deepEqual(staleApprovals(approved, {}), ["audio"]);
