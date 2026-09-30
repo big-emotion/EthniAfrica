@@ -192,3 +192,32 @@ The three pilots (Mali, Lingala, Mandé) are written test-first against the
 [semantic review cases](articles-pilots-review-cases.md), frozen before drafting. All three stay
 `draft` with no `publishedAt`: publication needs operator review and a durable media host.
 A green mechanical test is not prose approval.
+
+**Written:** all three bodies (Mali 8 sections, Lingala 9, Mandé 9), real excerpts, an
+English deferral on each, Mali ↔ Mandé cross-linked. `src/lib/articles/__tests__/pilots.test.ts`
+holds the mechanical floor (18 cases, green).
+
+**Source pages opened for this pass** (the claim was checked on the page): Office of the
+Historian, Mali; FRUS 1958–60 vol. XIV doc. 75; IBS No. 23 (pp. 1–3); ICJ case 69 summary;
+Niane 1985 chapter pp. 141–143, 148–154; Fauvelle 2024 (Medievalista); ORIAS, Ibn Battuta;
+Fauvelle-Aymar 2012 abstract; Bamadaba, letter m; Core Knowledge PDF p. 150; Meeuwis, APiCS
+survey 60; Mimpongo, lingbuzz 008154 (abstract); Koelle variety notes (Lexibank); Vydrin 2009
+p. 107; Donaldson 2019 (publisher page summary). **Not opened:** Collet 2013, Foltz 1965,
+Harms 1981, Mbulamoko 1991, Burssens 1954, Castillo 2024, IPS 2004, Prunier 2009, Camara
+Laye 1978. Claims from those rest on the workshop's own reading and are marked in the notes.
+
+**Left out of the bodies, with reasons:** Senghor's role and the December 1958 Bamako congress
+(Foltz, read only through English Wikipedia; the Mali text names the Senghor point as unverified
+instead of asserting it); the party name "Union soudanaise-RDA" (absent from both official pages
+opened); the 1959 federation date (no opened source); Lingala artist names (Wikipédia FR only);
+the 1876 "Bangala" label, the list of peoples and the Nouvelle-Anvers/Makanza renamings (works
+not read); "one of four national languages" (caption only); Almada, Park, Caillié and Delafosse
+as users of the words (not page-verified, not in the record's sources); "Mali attested only from
+the fourteenth century" (contradicted by Niane p. 150 on al-Bakri).
+
+**Still open for the operator:** prose review of all three; the Lingala source tiers remain
+`needs_review` (the workshop proposes `referenced` for most, `unverified` for the encyclopedia);
+Lingala card 6/8 credit mismatch and the card 2/9 image reuse are unchanged; the Lingala
+edition-date conflict (Sept 16 vs 17) is unchanged; the Mandé media credits come from the
+workshop register, including an iNaturalist licence whose version is still to confirm; the Mali
+record's Foltz and coordinates entries still cite English Wikipedia in their titles.
