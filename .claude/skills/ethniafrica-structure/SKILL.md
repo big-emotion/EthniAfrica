@@ -615,6 +615,17 @@ do not invent brand values or alter the renderer to complete a subject.
 
 ## Pour finir
 
+Create or update the subject's single `production-record.md` decision record using
+`docs/social-workshop-cleanup.md`. Carry forward the accepted angle/family and cuts
+from `idee`, then record ordered steps, rationale, source tiers and exact recovery
+locators, actual review verdicts and unresolved points. Keep narration/card copy in
+their operational files rather than pasting them into this record. Preserve
+`cards.json`, `SOURCES.md`, plans and approval evidence: existing readers need them.
+Add `--workshop <Subject>` to registration, using the real top-level workshop folder,
+and list every associated edition in the record's `postIds`. Leave pending voice
+and production choices explicit; `produire` completes them before filing. An active
+adaptation sharing this folder must remain listed, so it blocks premature cleanup.
+
 Affiche le texte et obtiens la validation (voir ci-dessus). Une fois validé :
 
 1. **Pose la ligne Texte validé** dans le `post.md` de l'atelier.

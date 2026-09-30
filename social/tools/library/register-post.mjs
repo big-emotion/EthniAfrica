@@ -8,6 +8,8 @@
  *       [--video <name>.mp4=<Sujet>/video/<name>.mp4] [--notes "…"] [--write]
  *       [--profile memoires-sonores]
  *     node social/tools/library/register-post.mjs --where <slug>
+ *     node social/tools/library/register-post.mjs --id <slug> --workshop <Subject> --write
+ *     node social/tools/library/register-post.mjs --id <slug> --filed [--write]
  *
  * The library's `publications.json` is its single source of truth: every
  * `post.md`, the dashboard and the CSV are generated from it, and a post's shelf
@@ -16,8 +18,8 @@
  * workshop, where `build-etat.mjs` does not look — the pipeline state reported it
  * nowhere.
  *
- * This tool does the one thing that was missing and nothing the library's own
- * tools already do: it upserts the entry and creates the post's folder once.
+ * Registration upserts the entry and creates the post's folder once. The separate
+ * --filed completion event verifies delivery and automatically cleans scratch.
  * Moving folders, regenerating views and copying renders stay with the library.
  * The shelf rule is imported from the library's `library-paths.mjs` rather than
  * restated here, because a second copy of that rule is the one that would drift.
@@ -35,6 +37,7 @@ import { parseArgs } from "node:util";
 
 import { FAMILIES, FORMATS } from "../contract/contract.mjs";
 import { publicationsRoot } from "../paths.mjs";
+import { cleanupWorkshop } from "./cleanup-workshop.mjs";
 
 /**
  * `publie` is absent on purpose: publishing is the operator's act, and the
@@ -73,6 +76,8 @@ try {
       relates: { type: "string", multiple: true },
       video: { type: "string", multiple: true },
       where: { type: "string" },
+      workshop: { type: "string" },
+      filed: { type: "boolean", default: false },
       write: { type: "boolean", default: false },
     },
   }));
@@ -161,6 +166,29 @@ if (values.status && !CHAIN_STATUSES.includes(values.status)) {
 }
 
 const existing = ledger.posts.find((p) => p.id === values.id);
+// Filing completes after migration and sync, not when status is first written.
+// This completion event reads the ledger again and automatically reclaims scratch.
+if (values.filed) {
+  if (!existing) fail("Filing completion requires an existing edition.");
+  if (
+    Object.keys(values).some((key) => !["id", "filed", "write"].includes(key))
+  )
+    fail(
+      "--filed accepts only --id and optional --write; register changes first."
+    );
+  if (!existing.workshopSubject)
+    fail("Register --workshop before completing filing.");
+  try {
+    const report = await cleanupWorkshop({
+      subject: existing.workshopSubject,
+      write: values.write,
+    });
+    console.log(JSON.stringify(report, null, 2));
+    process.exit(report.blockers.length ? 1 : 0);
+  } catch (error) {
+    fail(error.message);
+  }
+}
 if (!existing) {
   for (const field of ["dir", "title", "subject", "pillar", "status"]) {
     if (!values[field])
@@ -259,6 +287,11 @@ if (values["link-path"] || values.campaign || values.content) {
   };
 }
 if (values.copy !== undefined) post.copy = values.copy;
+if (values.workshop !== undefined) {
+  if (!/^[^_./\\][^/\\]*$/.test(values.workshop) || values.workshop === "..")
+    fail("--workshop must name one top-level subject folder.");
+  post.workshopSubject = values.workshop;
+}
 for (const field of ["family", "series", "format"]) {
   if (values[field] !== undefined) post[field] = values[field];
 }
@@ -313,4 +346,5 @@ Ensuite :
   node ${path.join(indexDir, "migrate-library.mjs")} --write     # si le statut a changé de bac
   node ${path.join(indexDir, "build-index.mjs")}                 # régénère post.md, README.md, PUBLICATIONS.csv
   node ${path.join(indexDir, "sync-deliverables.mjs")} --write   # si une vidéo est inscrite
+  node social/tools/library/register-post.mjs --id ${post.id} --filed --write # after verified filing; requires --workshop and production-record.md
   node social/tools/etat-pipeline/build-etat.mjs`);

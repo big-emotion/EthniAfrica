@@ -125,6 +125,14 @@ using `.claude/skills/ethniafrica-production/references/publication-delivery.md`
 The mobile preview does not satisfy the cover requirement. Inspect the cover, record
 real approval evidence and deliver explicit links to both files. A registered post
 receives verified library copies of all three: video, cover and Markdown.
+Complete the filing event described in `docs/social-workshop-cleanup.md` after
+those copies are verified: register the top-level workshop with `--workshop`,
+complete its `production-record.md`, then run
+`node social/tools/library/register-post.mjs --id <id> --filed --write`.
+This automatically checks the ledger, delivery and record before removing proven
+scratch. A failure remains visible; do not report housekeeping complete or fall
+back to recursive deletion. Retain the sealed release, review evidence, approved
+voice/timing, source assets and operational plans. They are replay dependencies.
 Missing rights or editorial decisions are reported together; retain the proof
 while they are unresolved. Do not publish or schedule automatically.
 
@@ -321,11 +329,21 @@ For a carousel, when all five gates pass, set its ready status through the
 registry rather than editing the generated header:
 
 ```
-node social/tools/library/register-post.mjs --id <id> --status pret --write
+node social/tools/library/register-post.mjs --id <id> --workshop <Subject> --status pret --write
 node <00-Index>/migrate-library.mjs --write     # Brouillon → Valide, dossier et rendus compris
 node <00-Index>/build-index.mjs
 node <00-Index>/sync-deliverables.mjs --write  # après le déplacement : il compare au bac du statut
+node social/tools/library/register-post.mjs --id <id> --filed --write
 ```
+
+Before this sequence, complete `production-record.md` using
+`docs/social-workshop-cleanup.md`: actual angle/family, decisions, cuts, sources,
+review evidence, selected take and all associated editions. The final command is
+the required filing completion event and automatically cleans disposable scratch.
+It never moves or deletes library products. A missing record, unfinished associated
+edition or incomplete filing blocks cleanup. Report that blocker and retain the
+workshop. Historical backlog cleanup still requires the operator's separate consent;
+use a dry run when inspecting previously filed productions.
 
 **Série name-origin seulement : stampe le carnet de production** — une pièce d'une
 autre famille, ou sociale seulement, n'y est jamais inscrite et n'y reçoit aucun
