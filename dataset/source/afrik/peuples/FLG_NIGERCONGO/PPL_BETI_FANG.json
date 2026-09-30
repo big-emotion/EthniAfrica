@@ -90,7 +90,7 @@
     "demography": {
       "totalPopulation": 3500000,
       "referenceYear": 2025,
-      "source": "101 Last Tribes : total fang (CMR, GNQ, GAB, Congo) d'environ 1,52 million de locuteurs selon l'Ethnologue. Britannica (fin XXe siecle) : 3,32 millions pour l'ensemble Fang au sens large. Fang GNQ : 85% de la population de GNQ (environ 1,5 million en 2023) = 1,27 million. Fang Gabon : environ 25% de la population gabonaise (environ 2,4 million en 2023) = 600 000. Fang CMR : environ 130 000 (Ethnologue). Estimation retenue 2025 : 3,5 millions (Fang + Beti-Fang au sens strict, excluant les Ewondo-Bulu traites dans PPL_BETI).",
+      "source": "101 Last Tribes : total fang (CMR, GNQ, GAB, Congo) d'environ 1,52 million de locuteurs selon l'Ethnologue. Britannica (fin XXe siecle) : 3,32 millions pour l'ensemble Fang au sens large. Fang GNQ : 85% de la population de GNQ (environ 1,5 million en 2023) = 1,27 million. Fang Gabon : environ 25% de la population gabonaise (environ 2,4 million en 2023) = 600 000. Fang CMR : environ 130 000 (Ethnologue). Estimation retenue 2025 : 3,5 millions (Fang + Beti-Fang au sens strict, excluant les Ewondo-Bulu traites dans la fiche Béti).",
       "distributionByCountry": [
         {
           "country": "GNQ",

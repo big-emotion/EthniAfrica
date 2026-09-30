@@ -75,7 +75,7 @@
     "demography": {
       "totalPopulation": 1200000,
       "referenceYear": 2025,
-      "source": "Estimation basee sur les donnees du recensement angolais et les estimations de la Banque mondiale. La categorie Ganguela representait environ 6% de la population angolaise selon les statistiques coloniales. Population de l'Angola 2025 environ 37 millions. Chiffre inferieur a celui de PPL_GANGUELA (1 500 000) car PPL_NGANGUELA se concentre sur le territoire angolais sans inclure les Mbunda de Zambie deja comptabilises dans PPL_GANGUELA.",
+      "source": "Estimation basee sur les donnees du recensement angolais et les estimations de la Banque mondiale. La categorie Ganguela representait environ 6% de la population angolaise selon les statistiques coloniales. Population de l'Angola 2025 environ 37 millions. Chiffre inferieur a celui des Ganguela (1 500 000) car cette fiche se concentre sur le territoire angolais sans inclure les Mbunda de Zambie deja comptabilises dans ce chiffre.",
       "distributionByCountry": [
         {
           "country": "AGO",
