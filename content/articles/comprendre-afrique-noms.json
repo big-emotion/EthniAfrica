@@ -1,0 +1,188 @@
+{
+  "id": "comprendre-afrique-noms",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "La carte cachée",
+  "fr": {
+    "slug": "comprendre-afrique-noms",
+    "title": "Quelles histoires les noms ouvrent-ils ?",
+    "excerpt": "Noms de pays, de langues, de peuples, noms que portent des personnes : notre projet part de ces noms pour comprendre les sociétés africaines, et pose d'abord des questions avant de proposer des réponses.",
+    "sections": [
+      {
+        "heading": "Partir des noms",
+        "paragraphs": [
+          "Mali, Côte d'Ivoire, Ghana, Cameroun, Congo, Gabon, Comores, Madagascar. Ces noms sont familiers, mais chacun ouvre une histoire : qui l'a donné, quand, et à quoi il a été appliqué.",
+          "EthniAfrica part de là. Plutôt que d'ouvrir sur une chronologie ou une carte, notre projet part des noms pour comprendre les sociétés africaines. Ce court texte présente les questions que nous posons ; les articles qui y répondent, sujet par sujet, sont listés à part."
+        ],
+        "sourceRefs": ["s2"]
+      },
+      {
+        "heading": "Quatre sortes de noms",
+        "paragraphs": [
+          "Des noms de pays : comment ces territoires ont-ils reçu leurs noms ? Quand vous dites « Mali », de quelle histoire parlez-vous ?",
+          "Des noms de langues, comme dioula ou lingala : que disent-ils des personnes qui les parlent et de leurs échanges ? Quand vous entendez « dioula », parlez-vous d'une langue, d'un métier ou d'une identité ? Ces usages dépendent de qui parle et où ; ils ne se rangent pas dans des cases qui s'excluent.",
+          "Des noms de peuples et d'appartenances : Bambara, Baoulé, Akan, Bamiléké, Kongo, Fang, Merina. Quelles histoires relient les personnes qui se reconnaissent dans ces noms ? Et aux Comores, appartient-on d'abord à son île ou à l'archipel ?",
+          "Des noms que portent des personnes : Traoré, Kouassi, Appiah, Kamdem, Ngoma, Soilihi, Rakotomalala. Comment les reçoit-on, les choisit-on, les transmet-on ? Porter le même nom ne suffit pas à prouver une ascendance commune."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      },
+      {
+        "heading": "Notre démarche",
+        "paragraphs": [
+          "Nous confrontons les sources écrites, les traditions orales et les recherches. Quand elles ne s'accordent pas, nous l'expliquons. Quand nous ne savons pas, nous le disons.",
+          "Chaque nom peut ainsi nous conduire vers des personnes : leurs déplacements, leurs échanges, leurs appartenances et leurs façons de vivre ensemble. Vous avez une histoire, un nom transmis dans votre famille ou une source ? Vous pouvez nous en indiquer la provenance."
+        ],
+        "sourceRefs": ["s2"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Chikouna Cissé, « Entre descriptions (pré)coloniales et descriptions de soi », 2025",
+      "url": "https://ouvroir.fr/apropos/index.php?id=100",
+      "tier": "needs_review",
+      "notes": "Article sur les usages du nom dioula selon les contextes."
+    },
+    {
+      "id": "s2",
+      "title": "EthniAfrica — essai sur la démarche du projet, 2026",
+      "tier": "needs_review",
+      "notes": "Texte de présentation du projet : partir des noms, confronter les sources, dire les désaccords et ce qui reste inconnu."
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "comprendre-afrique-noms-carrousel"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "comprendre-afrique-noms/comprendre-afrique-noms-carrousel/slide-01-daba0969de90.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Une vue en hauteur montre des immeubles, un stade, des routes et des plans d’eau dans une ville dense.",
+            "text": "Comprendre l’Afrique à travers les noms"
+          },
+          {
+            "src": "comprendre-afrique-noms/comprendre-afrique-noms-carrousel/slide-02-d57bbfc00178.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Des parcelles agricoles aux tons dorés occupent une vallée entre des reliefs, avec un arbre au premier plan.",
+            "text": "Des noms de pays\n\nMali, Côte d’Ivoire, Ghana, Cameroun, Congo, Gabon, Comores, Madagascar. Comment ces territoires ont-ils reçu leurs noms ?\n\nEthniAfrica · corpus des pays"
+          },
+          {
+            "src": "comprendre-afrique-noms/comprendre-afrique-noms-carrousel/slide-03-f9517fee1f50.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Un saxophoniste joue au premier plan ; deux autres musiciens sont assis derrière lui.",
+            "text": "Des noms de langues\n\nDioula, Lingala. Quand vous entendez « Dioula », parlez-vous d’une langue, d’un métier ou d’une identité ?\n\nChikouna Cissé, 2025 · usages situés"
+          },
+          {
+            "src": "comprendre-afrique-noms/comprendre-afrique-noms-carrousel/slide-04-f83cd5a55fb6.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Plusieurs personnes travaillent sur des métiers à tisser en bois, avec des fils multicolores au premier plan.",
+            "text": "Des noms de peuples\n\nBambara, Baoulé, Akan, Bamiléké, Kongo, Fang, Merina. Quelles histoires relient les personnes qui se reconnaissent dans ces noms ?\n\nEthniAfrica · corpus des peuples"
+          },
+          {
+            "src": "comprendre-afrique-noms/comprendre-afrique-noms-carrousel/slide-05-461adfb45795.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Un homme marche en téléphonant devant des vendeuses installées sous des parasols.",
+            "text": "Et aux Comores ?\n\nAppartient-on d’abord à son île ou à l’archipel ?\n\nSophie Blanchy · recherches sur les Comores"
+          },
+          {
+            "src": "comprendre-afrique-noms/comprendre-afrique-noms-carrousel/slide-06-4a1132a7b049.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Un homme en polo rouge manipule une pièce de tissu devant une machine à coudre.",
+            "text": "Des noms que portent des personnes\n\nTraoré, Kouassi, Appiah, Kamdem, Ngoma, Soilihi, Rakotomalala. Quand vous transmettez le nom « Traoré », que transmettez-vous avec lui ?\n\nEthniAfrica · corpus des noms"
+          },
+          {
+            "src": "comprendre-afrique-noms/comprendre-afrique-noms-carrousel/slide-07-7b4132405a18.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Plusieurs personnes se tiennent et circulent devant des étals en plein air, sous des arbres et des parasols.",
+            "text": "Des noms aux personnes\n\nEt si chaque nom nous conduisait vers des personnes : leurs déplacements, leurs échanges, leurs appartenances ?\n\nEthniAfrica · essai, 2026"
+          },
+          {
+            "src": "comprendre-afrique-noms/comprendre-afrique-noms-carrousel/slide-08-58882c405da1.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Des mains munies d’un pinceau et d’une spatule interviennent sur les feuillets manuscrits posés sur une table.",
+            "text": "Notre démarche\n\nEthniAfrica part des noms pour comprendre les sociétés africaines. Nous confrontons les sources écrites, les traditions orales et les recherches. Nous expliquons leurs désaccords et ce que nous ignorons encore.\n\nEthniAfrica · méthode de recherche"
+          },
+          {
+            "src": "comprendre-afrique-noms/comprendre-afrique-noms-carrousel/slide-09-324ccc04f2ab.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Une vue aérienne montre une côte, des pistes, des espaces verts et des zones bâties au loin ; la signature du photographe figure en bas à droite.",
+            "text": "Notre objectif : raconter l’origine des noms, avec des sources.\n\nVous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica."
+          }
+        ],
+        "credits": "ព្រះមហាក្សត្ររាជ · CC0 · Wikimedia Commons · CC0 ; Valerian Guillot from Montpellier, France · CC BY 2.0 · Wikimedia Commons · CC BY 2.0 ; Jeanne Vu Van · CC BY-SA 4.0 · Wikimedia Commons · CC BY-SA 4.0 ; Kwameghana(Bright Kwame Ayisi) · CC BY-SA 4.0 · Wikimedia Commons · CC BY-SA 4.0 ; Radosław Botev · CC BY 3.0 pl · Wikimedia Commons · CC BY 3.0 pl ; OUMAROU OB · CC0 · Wikimedia Commons · CC0 ; B.navez · CC BY-SA 3.0 · Wikimedia Commons · CC BY-SA 3.0 ; Mark Fischer · CC BY-SA 2.0 · Wikimedia Commons · CC BY-SA 2.0 ; VIGNA christian · CC BY-SA 4.0 · Wikimedia Commons · CC BY-SA 4.0"
+      },
+      {
+        "kind": "video",
+        "youtubeId": "tcmstnubVjE",
+        "poster": {
+          "src": "comprendre-afrique-noms/comprendre-afrique-noms/poster-f91a734bfc46.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "facebook",
+        "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0UgU41V3RG7SqC25MvExsvKrknSdcbV9pWLxTJ8jfpeEj1ZMDmyjzpkac5qd7rjsYl&id=61593966096643",
+        "publishedAt": "2026-09-25"
+      },
+      {
+        "network": "facebook",
+        "url": "https://www.facebook.com/share/v/1FUjcEzAw7/",
+        "publishedAt": "2026-09-23"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/DdtlAfziEDK/",
+        "publishedAt": "2026-09-25"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/reel/Ddm53XToG7y/",
+        "publishedAt": "2026-09-23"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7689465383740378390",
+        "publishedAt": "2026-09-25"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7688501597739011350",
+        "publishedAt": "2026-09-22"
+      },
+      {
+        "network": "youtube",
+        "url": "https://youtube.com/shorts/tcmstnubVjE",
+        "publishedAt": "2026-09-23"
+      }
+    ]
+  },
+  "relatedArticleIds": [
+    "mali-quelle-histoire",
+    "lingala-invente-par-les-belges",
+    "dioula-un-metier-une-langue-une-identite"
+  ]
+}

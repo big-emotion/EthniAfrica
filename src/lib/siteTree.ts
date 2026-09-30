@@ -141,6 +141,13 @@ export function getSiteTree(language: Language): SiteTreeSection[] {
           label: copy.corpus.compare[0],
           note: copy.corpus.compare[1],
         },
+        // Designations sit with the browse entries: its URL is under the
+        // atlas, and it used to be grouped with the dossiers only by habit.
+        {
+          href: route("names"),
+          label: copy.dossiers.names[0],
+          note: copy.dossiers.names[1],
+        },
       ],
     },
     {
@@ -197,11 +204,6 @@ export function getSiteTree(language: Language): SiteTreeSection[] {
           label: dossier.title,
           note: dossier.summary,
         })),
-        {
-          href: route("names"),
-          label: copy.dossiers.names[0],
-          note: copy.dossiers.names[1],
-        },
         ...(isModulePublished("galerie")
           ? [
               {
@@ -228,11 +230,6 @@ export function getSiteTree(language: Language): SiteTreeSection[] {
               },
             ]
           : []),
-        {
-          href: route("doctrine"),
-          label: copy.dossiers.doctrine[0],
-          note: copy.dossiers.doctrine[1],
-        },
       ],
     },
     {
@@ -288,6 +285,11 @@ export function getSiteTree(language: Language): SiteTreeSection[] {
       blurb: copy.site.blurb,
       links: [
         { href: `/${language}/about`, label: copy.site.about },
+        {
+          href: route("doctrine"),
+          label: copy.dossiers.doctrine[0],
+          note: copy.dossiers.doctrine[1],
+        },
         {
           href: route("glossary"),
           label: copy.site.glossary[0],

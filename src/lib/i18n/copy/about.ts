@@ -82,7 +82,7 @@ export const aboutCopy: Record<Language, AboutCopy> = {
       title: "What you can explore",
       paragraphs: [
         "Search a name, find its different forms, place the populations and languages it refers to, then consult the sources to go further.",
-        "The dossiers develop one question. The videos offer a first look. The Browse section lets you carry on searching at your own pace.",
+        "The articles develop one question. The videos offer a first look. The Browse section lets you carry on searching at your own pace.",
       ],
       accessModes: [
         {
@@ -94,9 +94,9 @@ export const aboutCopy: Record<Language, AboutCopy> = {
         },
         {
           id: "dossiers",
-          label: "Dossiers",
+          label: "Articles",
           description:
-            "Sourced anecdotes, initial migration landmarks and a dossier on colonisation.",
+            "Articles that develop the subjects of our videos and carousels, with their references, plus anecdotes, proverbs and a gallery.",
           accentClass: ACCENT_CLASS.dossiers,
         },
         {
@@ -164,7 +164,7 @@ export const aboutCopy: Record<Language, AboutCopy> = {
       title: "Ce que vous pouvez explorer",
       paragraphs: [
         "Chercher un nom, retrouver ses différentes formes, situer les populations et les langues auxquelles il renvoie, puis consulter les sources pour aller plus loin.",
-        "Les dossiers développent une question. Les vidéos proposent un premier éclairage. La rubrique Parcourir permet de poursuivre la recherche à votre rythme.",
+        "Les articles développent une question. Les vidéos proposent un premier éclairage. La rubrique Parcourir permet de poursuivre la recherche à votre rythme.",
       ],
       accessModes: [
         {
@@ -176,9 +176,9 @@ export const aboutCopy: Record<Language, AboutCopy> = {
         },
         {
           id: "dossiers",
-          label: "Les dossiers",
+          label: "Articles",
           description:
-            "Des anecdotes sourcées, les premiers repères de migrations et un dossier sur la colonisation.",
+            "Des articles qui développent les sujets de nos vidéos et de nos carrousels, avec leurs références, puis des anecdotes, des proverbes et une galerie.",
           accentClass: ACCENT_CLASS.dossiers,
         },
         {

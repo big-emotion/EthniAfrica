@@ -46,8 +46,8 @@ describe("the Nommer dossier — charter contract", () => {
   // The rubric's order is the registry's declaration order, so this is also
   // the order the menu, the home panel and the mobile drawer render.
   // @req REQ-114
-  it("opens the Dossiers rubric", () => {
-    expect(getModulesForAccessMode("dossiers")[0]?.id).toBe("nommer");
+  it("opens the Articles axis on the listing", () => {
+    expect(getModulesForAccessMode("dossiers")[0]?.id).toBe("articles");
   });
 
   // Brand charter §5.2: one accent, set once, at page level. A nested wrapper

@@ -1,0 +1,29 @@
+{
+  "id": "toponymie-villes-montagnes-fantomes",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "toponymie-villes-montagnes-fantomes",
+    "title": "Un nom de ville ou de montagne, sur une carte d'Afrique, dit-il toujours une vérité géographique ?",
+    "excerpt": "Bingerville, Brazzaville, Léopoldville : ces villes d'Afrique portent le nom d'un Européen.",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "villes-ville"
+    },
+    "formats": [],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7684273739822796054",
+        "publishedAt": "2026-09-11"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

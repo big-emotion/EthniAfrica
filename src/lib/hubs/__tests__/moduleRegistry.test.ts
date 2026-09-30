@@ -30,7 +30,7 @@ describe("moduleRegistry — access-mode → module mapping (REQ-114)", () => {
   it("owns the exact French label of every access mode", () => {
     expect(ACCESS_MODE_LABELS).toEqual({
       atlas: "Parcourir",
-      dossiers: "Les dossiers",
+      dossiers: "Articles",
       jeux: "Jouer",
     });
   });
@@ -188,6 +188,7 @@ describe("moduleRegistry — access-mode → module mapping (REQ-114)", () => {
   it("gives comprendre only the questions asked of the corpus", () => {
     const ids = getModulesForAccessMode("dossiers").map((m) => m.id);
     expect(ids).toEqual([
+      "articles",
       "nommer",
       "anecdotes",
       "frise",
@@ -308,6 +309,7 @@ describe("moduleRegistry — access-mode → module mapping (REQ-114)", () => {
     );
     expect(staticModules.map((m) => m.id)).toEqual([
       "recherche",
+      "articles",
       "nommer",
       "anecdotes",
       "regards-colonisation",
@@ -436,20 +438,19 @@ describe("moduleRegistry — per-module accent (atlas charter §2)", () => {
       patronymes: "afh-accent-ocre",
       recherche: "afh-accent-teal",
       noms: "afh-accent-terre",
-      nommer: "afh-accent-perv",
-      anecdotes: "afh-accent-ocre",
-      // The seven Réalités dossiers left the registry, so the walk closes up
-      // behind them: `frise` moves from ocre to teal and everything after it
-      // rotates one step. The dossiers of the corpus take their accent from
-      // their position in the menu instead (`SiteHeader.dossierAsEntry`),
-      // because a corpus that grows by a file cannot renumber this list.
-      frise: "afh-accent-teal",
-      "regards-colonisation": "afh-accent-terre",
-      quiz: "afh-accent-perv",
-      mercator: "afh-accent-ocre",
+      // `articles` opens the Articles axis, so it takes the slot `nommer` held
+      // and every module after it rotates one step: that repaint is the price
+      // of putting the listing first, and this pin is what makes it visible.
+      articles: "afh-accent-perv",
+      nommer: "afh-accent-ocre",
+      anecdotes: "afh-accent-teal",
+      frise: "afh-accent-terre",
+      "regards-colonisation": "afh-accent-perv",
+      quiz: "afh-accent-ocre",
+      mercator: "afh-accent-teal",
       // Appended after the last module so none of the pins above moves.
-      proverbes: "afh-accent-teal",
-      galerie: "afh-accent-terre",
+      proverbes: "afh-accent-terre",
+      galerie: "afh-accent-perv",
     } as const);
 
     for (const [id, accent] of Object.entries(expectedAccents)) {

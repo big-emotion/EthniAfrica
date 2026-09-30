@@ -1,0 +1,200 @@
+{
+  "id": "griot-d-ou-vient-le-nom",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "griot-d-ou-vient-le-nom",
+    "title": "D'où vient le nom « griot » ?",
+    "excerpt": "« Griot » est un mot français, écrit « Guiriots » dès 1637. Ceux qu'il désigne se nomment autrement selon leur langue : jeli ou jali, gewel, gawlo, gesere… L'origine du mot « griot » n'est pas établie : plusieurs explications sont proposées, aucune n'est démontrée.",
+    "sections": [
+      {
+        "heading": "Un mot du dehors, des noms du dedans",
+        "paragraphs": [
+          "« Griot » est le mot que le français emploie pour ces artisans de la parole et de la musique d'Afrique de l'Ouest. Mais les sociétés qui les comptent parmi leurs membres ont leurs propres mots pour les désigner, et ce sont d'abord ces mots-là qu'il faut connaître.",
+          "Cet article répond à deux questions : comment se nomment-ils, et d'où vient le mot « griot » ?"
+        ],
+        "sourceRefs": ["s4", "s7"]
+      },
+      {
+        "heading": "Jeli, jali, gewel, gawlo, gesere…",
+        "paragraphs": [
+          "Le chercheur Thomas A. Hale en donne une liste dans un article de 1997 : jeli chez les Maninka et les Bamana, jali chez les Mandinka, guewel ou géwél chez les Wolof, mabo ou gawlo chez les Fulbe, geseré ou jaaré chez les Soninké. Il ajoute iggio chez les Maures, jeseré chez les Songhay, marok'i chez les Haoussa, « sans parler d'autres termes ».",
+          "Ces mots ne sont pas des traductions exactes les uns des autres : chacun appartient à sa langue et à sa société. Hale note que cette multitude de noms reflète à la fois des identités propres et des échanges anciens entre peuples voisins."
+        ],
+        "sourceRefs": ["s4"]
+      },
+      {
+        "heading": "Depuis quand ces noms sont-ils écrits ?",
+        "paragraphs": [
+          "Pour chacun de ces noms, nous avons cherché la plus ancienne trace écrite que nous puissions lire. Pour jeli ou jali : « Jelliki », traduit par « un Chanteur », dans un vocabulaire mandingue publié à Paris en 1746 dans l'Histoire générale des voyages. Pour gewel : « Guéwal », traduit par « Griot », dans une grammaire wolof de Jean Dard publiée en 1826. Pour gawlo : « Gaoulo », dans un essai de Louis Faidherbe sur la langue des Fulbe publié en 1875. Pour gesere : un ouvrage d'E. Pollet et G. Winter paru en 1971, cité par Hale.",
+          "Ces dates sont celles des écrits que nous avons trouvés, souvent rédigés par des Européens. Elles ne donnent pas l'âge des noms : ces mots étaient dits bien avant d'être imprimés, et des écrits plus anciens peuvent exister."
+        ],
+        "sourceRefs": ["s1", "s2", "s3", "s5"]
+      },
+      {
+        "heading": "1637 : « Guiriots », un mot français",
+        "paragraphs": [
+          "Le mot « griot » apparaît en français sous la forme « Guiriots ». La plus ancienne trace que nous ayons lue se trouve à la page 71 d'un livre publié à Paris en 1637, la Relation du voyage du Cap-Verd d'Alexis de Saint-Lô : « Les Guiriots, qui sont comme leurs Basteleurs ». Hale présente l'auteur comme un moine capucin qui a longé la côte sénégambienne en 1634-1635.",
+          "La phrase compare les griots aux bateleurs, les amuseurs de foire de l'Europe de l'époque. C'est le regard d'un voyageur venu d'ailleurs, qui ramène ce qu'il voit à ce qu'il connaît : on y lit comment il les voyait, pas ce qu'ils étaient."
+        ],
+        "sourceRefs": ["s6", "s7"]
+      },
+      {
+        "heading": "D'où vient « griot » ? Plusieurs explications, aucune démontrée",
+        "paragraphs": [
+          "Hale le dit dès le début de sa recherche : personne n'a jamais clairement établi l'origine du mot « griot » dans une langue africaine. Voyageurs, administrateurs coloniaux et chercheurs ont proposé de nombreuses explications, dans des langues européennes comme africaines.",
+          "Il en rapporte plusieurs. En 1882, Bérenger-Féraud propose le mot wolof gueroual ou guewoual. En 1985, Oumarou Watta propose le mot des Fulbe, gawlo. Pour ces deux pistes, Hale note une ressemblance avec « griot », mais juge qu'il faudrait davantage de preuves linguistiques. En 1951, Henri Labouret propose un mot portugais, criado, « celui qui a été nourri, élevé », d'où « serviteur, client ». En 1992, Charry propose un mot arabe, qawal, « chanteur », passé par le wolof guewel. Le linguiste Charles Bird a aussi proposé, en 1971, une ancienne forme mandé du mot, idée contestée par l'historien David Conrad.",
+          "Hale défend lui-même une autre piste, qu'il juge la plus prometteuse : un passage par le mot « guinée », ancien nom de la région, via l'espagnol guineo. C'est une hypothèse de plus, présentée comme telle par son auteur.",
+          "Aucune de ces explications n'est démontrée. Nous n'en retenons aucune."
+        ],
+        "sourceRefs": ["s7"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "Ceux que le français appelle griots se nomment, selon leur langue, jeli, jali, gewel, gawlo ou mabo, gesere, et d'autres noms encore. « Griot » est un mot français, écrit dès 1637, et son origine n'est pas établie : plusieurs explications s'affrontent, aucune n'est prouvée.",
+          "Dans votre langue, comment appelle-t-on ceux qu'on nomme griots en français ? Si vous connaissez un nom ou un récit sur son origine, dites-nous d'où il vient."
+        ],
+        "sourceRefs": ["s4", "s6", "s7"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Abbé Prévost, Histoire générale des voyages, tome III, Paris, 1746, « Vocabulaire mandingo »",
+      "tier": "needs_review",
+      "kind": "book",
+      "notes": "Vocabulaire mandingue : « un Chanteur, Jelliki ». Lu sur des exemplaires numérisés de l'Internet Archive."
+    },
+    {
+      "id": "s2",
+      "title": "Jean Dard, Grammaire wolofe, Paris, 1826, p. 161",
+      "tier": "needs_review",
+      "kind": "book",
+      "notes": "« Guéwal. — Griot. » Exemplaire numérisé de l'Internet Archive."
+    },
+    {
+      "id": "s3",
+      "title": "Louis Faidherbe, Essai sur la langue poul, Paris, 1875",
+      "tier": "needs_review",
+      "kind": "book",
+      "notes": "Vocabulaire : « Griot […] — Gaoulo, haouloubé ». Exemplaire numérisé de l'Internet Archive."
+    },
+    {
+      "id": "s4",
+      "title": "Thomas A. Hale, Oral Tradition 12(2), 1997, p. 251",
+      "url": "https://journal.oraltradition.org/wp-content/uploads/files/articles/12ii/2_Hale.pdf",
+      "tier": "needs_review",
+      "kind": "article",
+      "notes": "« From the Griot of Roots to the Roots of Griot: A New Look at the Origins of a Controversial African Term for Bard » : la liste des noms donnés aux griots selon les sociétés."
+    },
+    {
+      "id": "s5",
+      "title": "Thomas A. Hale, Oral Tradition 12(2), 1997, p. 262, d'après E. Pollet et G. Winter, 1971",
+      "url": "https://journal.oraltradition.org/wp-content/uploads/files/articles/12ii/2_Hale.pdf",
+      "tier": "needs_review",
+      "kind": "article",
+      "notes": "Même article : le mot geseré chez les Soninké, d'après l'ouvrage de Pollet et Winter, que nous n'avons pas consulté directement."
+    },
+    {
+      "id": "s6",
+      "title": "Alexis de Saint-Lô, Relation du voyage du Cap-Verd, Paris, 1637, p. 71",
+      "tier": "needs_review",
+      "kind": "book",
+      "notes": "« Les Guiriots, qui sont comme leurs Basteleurs ». Exemplaire de Harvard numérisé, Internet Archive."
+    },
+    {
+      "id": "s7",
+      "title": "Thomas A. Hale, Oral Tradition 12(2), 1997",
+      "url": "https://journal.oraltradition.org/wp-content/uploads/files/articles/12ii/2_Hale.pdf",
+      "tier": "needs_review",
+      "kind": "article",
+      "locator": "p. 251-256",
+      "notes": "Même article : Saint-Lô et le mot « guiriot », puis les explications proposées pour l'origine du mot « griot »."
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "griot-d-ou-vient-le-nom"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "griot-d-ou-vient-le-nom/griot-d-ou-vient-le-nom/slide-01-217de35df211.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un griot âgé, lunettes noires et bonnet brodé, frappe un grand tambour avec une baguette ; derrière lui, des vêtements et des mains qui applaudissent",
+            "text": "D'où vient le nom « griot » ?"
+          },
+          {
+            "src": "griot-d-ou-vient-le-nom/griot-d-ou-vient-le-nom/slide-02-8ced900b8a49.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte claire de l'Afrique de l'Ouest, une seule zone ocre floue au sud du Mali et au nord-est de la Guinée",
+            "text": "jeli · jali\n\nLes Mandingues l'emploient. La plus ancienne trace écrite que nous avons lue date de 1746 : « Jelliki ».\n\nAbbé Prévost, Histoire générale des voyages, tome III, Paris, 1746, « Vocabulaire mandingo »"
+          },
+          {
+            "src": "griot-d-ou-vient-le-nom/griot-d-ou-vient-le-nom/slide-03-22b6609fd3ff.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte claire de l'Afrique de l'Ouest, une seule zone ocre floue le long de la côte du Sénégal",
+            "text": "gewel\n\nLes Wolof l'emploient. La plus ancienne trace écrite que nous avons lue date de 1826 : « Guéwal », chez Jean Dard.\n\nJean Dard, Grammaire wolofe, Paris, 1826, p. 161"
+          },
+          {
+            "src": "griot-d-ou-vient-le-nom/griot-d-ou-vient-le-nom/slide-04-681832dc0661.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte claire de l'Afrique de l'Ouest, une seule zone ocre floue le long du fleuve Sénégal, en aval",
+            "text": "gawlo\n\nLes Fulbe l'emploient, ainsi que maabo. La plus ancienne trace écrite que nous avons lue date de 1875 : « gaoulo ».\n\nLouis Faidherbe, Essai sur la langue poul, Paris, 1875 · Thomas A. Hale, Oral Tradition 12(2), 1997, p. 251"
+          },
+          {
+            "src": "griot-d-ou-vient-le-nom/griot-d-ou-vient-le-nom/slide-05-484af3c03a9a.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte claire de l'Afrique de l'Ouest, une seule zone ocre floue à la frontière du Mali et de la Mauritanie",
+            "text": "gesere\n\nLes Soninké l'emploient. La plus ancienne trace écrite que nous avons lue date de 1971, chez Pollet et Winter.\n\nThomas A. Hale, Oral Tradition 12(2), 1997, p. 262, d'après E. Pollet et G. Winter, 1971"
+          },
+          {
+            "src": "griot-d-ou-vient-le-nom/griot-d-ou-vient-le-nom/slide-06-1c70c23534dd.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "page imprimée ancienne, en-tête « du Cap-Vert. 71 », où se lit « Les Guiriots, qui sont comme leurs Basteleurs »",
+            "text": "griot\n\nCe mot est français. La plus ancienne trace écrite que nous avons lue date de 1637 : « Guiriots ». Son origine n'est pas établie.\n\nAlexis de Saint-Lô, Relation du voyage du Cap-Verd, Paris, 1637, p. 71 · Thomas A. Hale, Oral Tradition 12(2), 1997"
+          },
+          {
+            "src": "griot-d-ou-vient-le-nom/griot-d-ou-vient-le-nom/slide-07-13c0f25cefbf.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un griot âgé, lunettes noires et bonnet brodé, frappe un grand tambour avec une baguette ; derrière lui, des vêtements et des mains qui applaudissent",
+            "text": "Notre objectif : raconter l'origine des noms, avec des sources.\n\nVous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica."
+          }
+        ],
+        "credits": "Un griot joue du tambour, région de Thiès (Sénégal), photographie recadrée, Kalamuh 045, 2026 · Wikimedia Commons · CC BY-SA 4.0 ; Zone indicative jeli · jali, autour des lieux que nos fiches nomment, carte EthniAfrica, 2026, fond Natural Earth · EthniAfrica · CC BY-SA 4.0 ; Zone indicative gewel, autour des lieux que nos fiches nomment, carte EthniAfrica, 2026, fond Natural Earth · EthniAfrica · CC BY-SA 4.0 ; Zone indicative gawlo (Fuuta Tooro), autour des lieux que nos fiches nomment, carte EthniAfrica, 2026, fond Natural Earth · EthniAfrica · CC BY-SA 4.0 ; Zone indicative gesere, autour des lieux que nos fiches nomment, carte EthniAfrica, 2026, fond Natural Earth · EthniAfrica · CC BY-SA 4.0 ; Alexis de Saint-Lô, Relation du voyage du Cap-Verd, Paris, 1637, page 71, exemplaire de Harvard numérisé par Google · Internet Archive · domaine public"
+      }
+    ],
+    "originals": [
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/Ddty8BbiOyM/",
+        "publishedAt": "2026-09-25"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7689496831113399574",
+        "publishedAt": "2026-09-25"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

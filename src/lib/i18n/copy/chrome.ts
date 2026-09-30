@@ -9,7 +9,7 @@ const en = {
   openMenu: "Open menu",
   breadcrumb: "Breadcrumb",
   backToTop: "Back to top",
-  allDossiers: "All dossiers",
+  allDossiers: "All articles",
   theme: {
     switchToParchment: "Switch to parchment mode",
     switchToNight: "Switch to night mode",
@@ -41,7 +41,7 @@ const fr: ChromeCopy = {
   openMenu: "Ouvrir le menu",
   breadcrumb: "Fil d'ariane",
   backToTop: "Revenir en haut de la page",
-  allDossiers: "Tous les dossiers",
+  allDossiers: "Tous les articles",
   theme: {
     switchToParchment: "Passer en mode parchemin",
     switchToNight: "Passer en mode nuit",

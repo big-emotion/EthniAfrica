@@ -1,5 +1,10 @@
 import type { MetadataRoute } from "next";
 
+import {
+  publishedArticleSummaries,
+  readArticleCorpus,
+} from "@/lib/articles/corpus";
+import { articleHref } from "@/components/articles/articlePaths";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { getPublishedLocales } from "@/lib/locale";
 import {
@@ -126,6 +131,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
     for (const path of await fichePaths(locale, corpus)) {
       entries.push(entry(path, FICHE_CHANGE_FREQUENCY, 0.6));
+    }
+    // The same publication predicate as the listing and the menu; French only
+    // because an article has no English text yet.
+    if (locale === "fr") {
+      for (const summary of publishedArticleSummaries(
+        readArticleCorpus().articles
+      )) {
+        entries.push(
+          entry(articleHref("fr", summary.slug), FICHE_CHANGE_FREQUENCY, 0.7)
+        );
+      }
     }
   }
   return entries;

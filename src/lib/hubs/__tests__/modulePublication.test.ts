@@ -42,7 +42,13 @@ describe("module publication", () => {
       .filter((module) => isModulePublished(module.id))
       .map((module) => module.id);
 
-    expect(published).toEqual(["anecdotes", "proverbes", "galerie"]);
+    // The article listing is published with them: it is the axis's own entry.
+    expect(published).toEqual([
+      "articles",
+      "anecdotes",
+      "proverbes",
+      "galerie",
+    ]);
   });
 
   // The freeze is confined to the dossiers: withdrawing the atlas or the

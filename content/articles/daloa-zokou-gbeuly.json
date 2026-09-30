@@ -1,0 +1,179 @@
+{
+  "id": "daloa-zokou-gbeuly",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Personnage historique",
+  "fr": {
+    "slug": "daloa-zokou-gbeuly",
+    "title": "Qui était Zokou Gbeuly, présenté comme le fondateur de Daloa ?",
+    "excerpt": "Né en 1835, chef de guerre bété, il s'oppose à la colonisation française, est déporté en 1911 et meurt en exil à Zuénoula en 1912. Un livre le présente comme le fondateur de Daloa. Ce que disent les sources, et ce qu'elles ne disent pas.",
+    "sections": [
+      {
+        "heading": "Un homme, plusieurs orthographes",
+        "paragraphs": [
+          "Zokou Gbeuly est un chef de guerre bété de l'ouest de la Côte d'Ivoire, né en 1835 et mort en 1912. Son nom s'écrit de plusieurs façons : Zokou Gbeuly dans la notice des bibliothèques universitaires françaises et dans le livre qui lui est consacré, Zokou Gbeuli dans un article de presse ivoirien, Zoku'o Gbëli dans un récit publié en ligne. Notre propre fiche du peuple bété l'écrit Gbéouli.",
+          "Nous suivons ici l'orthographe de la notice et du livre, sans prétendre qu'elle soit la seule juste. Si vous savez comment son nom se prononce ou s'écrit en bété, dites-le-nous."
+        ],
+        "sourceRefs": ["s4", "s1", "s3", "s2"]
+      },
+      {
+        "heading": "« Fondateur de la Cité de Daloa »",
+        "paragraphs": [
+          "Un ouvrage collectif paru en 2020 chez L'Harmattan Côte d'Ivoire, dirigé par Zacharie Séry Bailly, lui est consacré. Sa présentation le décrit comme le « fondateur de la Cité de Daloa », un fin tacticien et une figure de l'opposition à la colonisation.",
+          "C'est la façon dont ce livre le présente ; nous n'avons pas lu le livre lui-même. Un récit publié en ligne en 2018 le fait naître à Daloa, en 1835. Quant au nom Daloa, aucune des sources que nous avons consultées n'en explique l'origine."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      },
+      {
+        "heading": "De l'accueil à la résistance",
+        "paragraphs": [
+          "Le récit de 2018 raconte qu'il accueille d'abord les colons français, en y voyant une occasion de commerce, puis qu'il se retourne contre eux en comprenant le danger qui menace Daloa.",
+          "Un article de presse ivoirien de 2024 situe ses années d'activité entre 1903 et 1906. Il rapporte qu'il fait appel à environ mille combattants venus de trois villages, Sabwa, Galebha et Labéa, et que ces hommes brûlent le poste colonial de Daloa. Le récit de 2018 date la révolte du 26 septembre 1906 et mentionne un second soulèvement en 1907."
+        ],
+        "sourceRefs": ["s2", "s3"]
+      },
+      {
+        "heading": "Ce que les sources ne tranchent pas",
+        "paragraphs": [
+          "En 1906, un agent de l'administration coloniale est tué. Les deux récits qui en parlent ne lui donnent pas le même nom : nous ne le nommons donc pas.",
+          "Aucune de ces sources ne rapporte une parole de Zokou Gbeuly lui-même, et aucune ne fait de sa résistance celle de tous les Bété. Elle est la sienne et celle des combattants qui l'ont suivi."
+        ],
+        "sourceRefs": ["s2", "s3"]
+      },
+      {
+        "heading": "Arrestation, exil et mort",
+        "paragraphs": [
+          "Zokou Gbeuly est arrêté en 1911 et déporté à Zuénoula, le 4 octobre selon le récit de 2018. Il y meurt en exil en 1912, loin de Daloa. Ces deux dates, 1911 et 1912, sont les mieux attestées de sa vie : on les retrouve dans la présentation du livre, dans l'article de presse et, pour 1912, dans la notice d'autorité."
+        ],
+        "sourceRefs": ["s1", "s3", "s4", "s2"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "Zokou Gbeuly (1835-1912), chef de guerre bété, a résisté à la colonisation française autour de Daloa, avant d'être déporté et de mourir en exil à Zuénoula. Un livre le présente comme le fondateur de la ville. Son nom s'écrit de plusieurs façons, et l'origine du nom Daloa reste à documenter.",
+          "Vous connaissez un récit transmis sur Zokou Gbeuly ou sur le nom Daloa ? Vous pouvez nous en indiquer la provenance."
+        ],
+        "sourceRefs": ["s4", "s1", "s3"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Zacharie Séry Bailly (dir.), Zokou Gbeuly : un héros de la résistance en Côte d'Ivoire, L'Harmattan Côte d'Ivoire, 2020",
+      "url": "https://www.mollat.com/livres/2466197/zokou-gbeuly-un-heros-de-la-resistance-en-cote-d-ivoire",
+      "tier": "needs_review",
+      "notes": "Ouvrage collectif. Seule la présentation de l'éditeur a été lue : le « fondateur de la Cité de Daloa », la déportation en 1911 et la mort en exil à Zuénoula en 1912."
+    },
+    {
+      "id": "s2",
+      "title": "Candy Côte d'Ivoire, « Zoku'o Gbëli, le guerrier bété », 2018",
+      "url": "https://candycotedivoire.over-blog.com/2018/05/zoku-o-gbeli-le-guerrier-bete.html",
+      "tier": "needs_review",
+      "notes": "Blog. Récit de sa vie : naissance à Daloa en 1835, révolte du 26 septembre 1906, second soulèvement en 1907, déportation le 4 octobre 1911."
+    },
+    {
+      "id": "s3",
+      "title": "Pulse.ci, « 5 résistants ivoiriens à la colonisation », 5 septembre 2024",
+      "url": "https://www.pulse.ci/article/5-resistants-ivoiriens-a-la-colonisation-2024090510573985739",
+      "tier": "needs_review",
+      "notes": "Presse ivoirienne : les mille combattants de Sabwa, Galebha et Labéa, le poste de Daloa brûlé, l'arrestation en 1911 et la mort en exil en 1912."
+    },
+    {
+      "id": "s4",
+      "title": "Notice d'autorité IdRef, « Gbeuly, Zokou (1835-1912) ».",
+      "url": "https://www.idref.fr/265567963",
+      "tier": "needs_review",
+      "notes": "Notice des bibliothèques de l'enseignement supérieur français : forme du nom et dates de vie."
+    },
+    {
+      "id": "s5",
+      "title": "Aucun article Wikipédia, en français ou en anglais, ne lui est consacré — vérifié le 2026-09-14.",
+      "tier": "needs_review"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "zokou-gbeuly"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "daloa-zokou-gbeuly/zokou-gbeuly/slide-01-193797de1e03.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un masque bété en bois sombre poli, visage lisse aux yeux mi-clos, une barbe de cordelettes tressées vertes et beiges suspendue sous le menton, exposé en musée, d'autres masques flous à l'arrière-plan",
+            "text": "Le fondateur de Daloa est mort en exil.\n\nLe corpus ne le mentionne qu'en une ligne, dans la fiche d'un peuple entier."
+          },
+          {
+            "src": "daloa-zokou-gbeuly/zokou-gbeuly/slide-02-05d35bbc8a08.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un masque bété en bois sombre poli, visage lisse aux yeux mi-clos, une barbe de cordelettes tressées vertes et beiges suspendue sous le menton, exposé en musée, d'autres masques flous à l'arrière-plan",
+            "text": "1835\n\nSa naissance, à l'ouest ivoirien\n\nIl devient chef de guerre bété.\n\nIdRef · Séry Bailly (dir.), 2020"
+          },
+          {
+            "src": "daloa-zokou-gbeuly/zokou-gbeuly/slide-03-095ce821ca80.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une carte imprimée de l'époque coloniale montrant l'intérieur de la Côte d'Ivoire, ses villes (Séguéla, Man, Bouaké, Toumodi, Bingerville) et ses frontières avec la Guinée et le Soudan français, photographiée sur un support incliné",
+            "text": "1893\n\nLa Côte d'Ivoire devient colonie française\n\nIl accueille d'abord les colons, puis s'y oppose.\n\nSéry Bailly (dir.), 2020 · Candy CI, 2018"
+          },
+          {
+            "src": "daloa-zokou-gbeuly/zokou-gbeuly/slide-04-85d2de53eaca.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une carte imprimée de l'époque coloniale montrant l'intérieur de la Côte d'Ivoire, ses villes (Séguéla, Man, Bouaké, Toumodi, Bingerville) et ses frontières avec la Guinée et le Soudan français, photographiée sur un support incliné",
+            "text": "1906\n\nIl brûle le poste colonial de Daloa\n\nMille combattants, venus de trois villages voisins. Un second soulèvement suit en 1907.\n\nPulse.ci, 2024 · Candy CI, 2018"
+          },
+          {
+            "src": "daloa-zokou-gbeuly/zokou-gbeuly/slide-05-c8acffea826b.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une carte imprimée de l'époque coloniale montrant l'intérieur de la Côte d'Ivoire, ses villes (Séguéla, Man, Bouaké, Toumodi, Bingerville) et ses frontières avec la Guinée et le Soudan français, photographiée sur un support incliné",
+            "text": "1911\n\nSon arrestation, puis son exil\n\nAprès des années de résistance, il est arrêté et envoyé à Zuénoula.\n\nIdRef · Séry Bailly (dir.), 2020"
+          },
+          {
+            "src": "daloa-zokou-gbeuly/zokou-gbeuly/slide-06-03f2d04fa618.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une carte imprimée de l'époque coloniale montrant l'intérieur de la Côte d'Ivoire, ses villes (Séguéla, Man, Bouaké, Toumodi, Bingerville) et ses frontières avec la Guinée et le Soudan français, photographiée sur un support incliné",
+            "text": "1912\n\nSa mort en exil, à Zuénoula\n\nUn an après sa déportation, loin de la ville qu'il avait fondée.\n\nNotice d'autorité IdRef, « Gbeuly, Zokou (1835-1912) »."
+          },
+          {
+            "src": "daloa-zokou-gbeuly/zokou-gbeuly/slide-07-8a3c258406b9.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une rue en terre ocre d'un centre-ville, un immeuble à balcon incurvé avec du linge séchant, une voiture noire garée devant une boutique aux volets verts, un jeune homme de dos portant une barre de métal sur l'épaule au premier plan",
+            "text": "Daloa existe toujours.\n\nLa ville qu'il a fondée est aujourd'hui l'une des grandes villes de Côte d'Ivoire. Son nom à lui n'a pas de page Wikipédia.\n\nAucun article Wikipédia, en français ou en anglais, ne lui est consacré — vérifié le 2026-09-14."
+          },
+          {
+            "src": "daloa-zokou-gbeuly/zokou-gbeuly/slide-08-504a2392a963.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un rond-point urbain avec un monument central portant une antilope bondissante en silhouette et une fresque murale, des voitures et taxis verts en circulation, une large avenue bordée d'arbres à l'arrière-plan",
+            "text": "Il n'a pas eu qu'une ligne dans l'Histoire.\n\nC'est pourtant tout ce qu'on lui avait laissé.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "Masque bété, Côte d'Ivoire · Musée d'art moderne de Troyes · Gérald Garitan · 2023 · Wikimedia Commons · CC BY-SA 4.0 ; Carte de l'époque coloniale · photographie Modjou · 2020 · Wikimedia Commons · CC BY-SA 4.0 ; Rue de Daloa · EBENEZER ESDRAS · 2024 · Wikimedia Commons · CC0 1.0 ; Rond-point de Daloa · Kzie45 · 2023 · Wikimedia Commons · CC BY-SA 4.0"
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7685440978597055766",
+        "publishedAt": "2026-09-14"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

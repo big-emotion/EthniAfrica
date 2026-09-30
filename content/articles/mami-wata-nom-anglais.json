@@ -1,0 +1,44 @@
+{
+  "id": "mami-wata-nom-anglais",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "mami-wata-nom-anglais",
+    "title": "D'où vient le nom Mami Wata ?",
+    "excerpt": "Au Bénin comme au Cameroun, Mami Wata porte un nom anglais.",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "mami-wata"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "-M7cqgteHj0",
+        "poster": {
+          "src": "mami-wata-nom-anglais/mami-wata/poster-dfa707985c56.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7684680368108375298",
+        "publishedAt": "2026-09-12"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/-M7cqgteHj0",
+        "publishedAt": "2026-09-12"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

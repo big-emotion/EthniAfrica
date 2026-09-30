@@ -1,0 +1,282 @@
+{
+  "id": "carnaval-caraibe-fete-d-europe",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "carnaval-caraibe-fete-d-europe",
+    "title": "D'où vient le nom « Carnaval » ?",
+    "excerpt": "Le mot carnaval vient d'Europe. Mais en Martinique, à Trinidad ou à Recife, la fête porte aussi d'autres noms : Nations, bois-bois, Vaval, Canboulay, maracatu. Chacun garde une histoire, et les auteurs ne s'accordent pas sur celle de la fête elle-même.",
+    "sections": [
+      {
+        "heading": "Le mot vient d'Europe",
+        "paragraphs": [
+          "Le mot carnaval vient de l'italien ; il est attesté au XIIIe siècle. Sur ce point, il n'y a pas de doute : le mot est européen.",
+          "Mais un mot n'est pas une fête. Dans la Caraïbe et au Brésil, le carnaval porte aussi d'autres noms, et ces noms racontent d'autres histoires. En voici trois, en Martinique, à Trinidad et à Recife."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "Martinique : les Nations",
+        "paragraphs": [
+          "En Martinique, on appelait « Nation » un groupe d'esclaves de même origine. Au milieu du XVIIIe siècle, un gouverneur exclut les Nations de la procession de la Fête-Dieu, parce qu'il y voit une menace pour l'ordre établi. En 1765, un arrêté interdit les mascarades armées de bâtons ferrés.",
+          "Après 1848, le carnaval de Saint-Pierre devient une fête populaire. Le guide qui rapporte cette histoire, publié en 2013 par le Comité martiniquais du tourisme, voit dans les Nations une reconstruction de sociétés africaines."
+        ],
+        "sourceRefs": ["s2"]
+      },
+      {
+        "heading": "Martinique : du bois-bois à Vaval",
+        "paragraphs": [
+          "À Saint-Pierre, le mannequin du carnaval s'appelait le « bois-bois ». C'était un pantin de paille qui caricaturait l'incident le plus impopulaire de l'année ; on l'enterrait ou on le jetait à la mer. Un livre publié en 1890 par L. Hearn décrit déjà cette cérémonie au passé, et n'écrit jamais le mot Vaval.",
+          "Aujourd'hui, le roi du carnaval s'appelle Vaval ; on le brûle le mercredi des Cendres. Une explication publiée voit dans ce nom un diminutif créole de « carnaval ». Nous n'avons trouvé aucune date sûre pour l'apparition du nom Vaval, ni pour le passage du bois-bois à Vaval."
+        ],
+        "sourceRefs": ["s3", "s4", "s2"]
+      },
+      {
+        "heading": "Trinidad : le Canboulay",
+        "paragraphs": [
+          "À Trinidad, la nuit d'ouverture du carnaval s'appelait le Canboulay. Le mot vient du français « cannes brûlées », sous sa forme créole.",
+          "Après l'émancipation, d'anciens esclaves organisent ces cortèges de nuit. Une lecture y voit la reconstitution, moqueuse, des incendies de champs de cannes. C'est une interprétation, pas un fait établi."
+        ],
+        "sourceRefs": ["s7"]
+      },
+      {
+        "heading": "Recife : le maracatu",
+        "paragraphs": [
+          "À Recife, au Brésil, les cortèges du carnaval qui portent des rois du Congo s'appellent maracatu. Pendant la période coloniale, des confréries noires y couronnaient un roi et une reine du Congo. En 2014, le Brésil a inscrit le maracatu-nação à son patrimoine, en le présentant comme une « création, résistance et foi ».",
+          "L'origine du mot maracatu, elle, n'est pas établie. Plusieurs explications circulent ; nous ne les reprenons pas ici, parce que nous n'avons pas encore lu les ouvrages qui les proposent."
+        ],
+        "sourceRefs": ["s11"]
+      },
+      {
+        "heading": "Qui a apporté la fête ? D'où viennent ses formes ?",
+        "paragraphs": [
+          "Ce sont deux questions différentes, et les auteurs ne répondent pas de la même façon. Une chronique publiée en 2024 écrit que les Français ont apporté le carnaval à Trinidad, tout en rappelant qu'une autre thèse lui donne une origine panafricaine.",
+          "Du côté des formes, le guide martiniquais de 2013 rattache au conditionnel le Moko Zombi, l'échassier du carnaval, aux Efik du Vieux Calabar. Pour le maracatu, ce sont les couronnements de rois du Congo qui sont à son origine. Aucune de ces sources ne permet de dire, d'un seul mot, que le carnaval de la Caraïbe est « européen » ou « africain »."
+        ],
+        "sourceRefs": ["s13", "s2", "s11"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "Le mot carnaval est européen. La fête, elle, porte dans la Caraïbe et au Brésil des noms locaux, Nations, bois-bois, Vaval, Canboulay, maracatu, qui gardent chacun la trace de ceux qui l'ont faite et de ceux qui ont voulu l'interdire.",
+          "Vous connaissez un nom du carnaval transmis dans votre famille ou votre quartier, ou une source sur l'un de ces noms ? Dites-nous d'où il vient."
+        ],
+        "sourceRefs": ["s1", "s2", "s7", "s11"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "TLFi (CNRTL), « carnaval »",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s2",
+      "title": "A. Lucrèce et T. L'Etang, Guide du Carnaval, Comité martiniquais du tourisme, 2013",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s3",
+      "title": "L. Hearn, Two Years in the French West Indies, Harper & Brothers, 1890",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s4",
+      "title": "R. Confiant, 2007",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s5",
+      "title": "Manioc, 2019",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s6",
+      "title": "La 1ère Martinique, 2026",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s7",
+      "title": "P. Scher, Cabinet, n° 6",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s8",
+      "title": "B. Brereton, 2002",
+      "tier": "needs_review",
+      "notes": "Citée sur une carte du carrousel. Nous ne l'avons pas encore relue directement, et le texte ci-dessus ne s'appuie pas sur elle."
+    },
+    {
+      "id": "s9",
+      "title": "M. La Rose, 2019",
+      "tier": "needs_review",
+      "notes": "Citée sur une carte du carrousel. Nous ne l'avons pas encore relue directement, et le texte ci-dessus ne s'appuie pas sur elle."
+    },
+    {
+      "id": "s10",
+      "title": "Archives nationales britanniques, 1884",
+      "tier": "needs_review",
+      "notes": "Citée sur une carte du carrousel. Nous ne l'avons pas encore relue directement, et le texte ci-dessus ne s'appuie pas sur elle."
+    },
+    {
+      "id": "s11",
+      "title": "IPHAN, Maracatu Nação, 2014",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s12",
+      "title": "E. Chamone, F. Lyra de Carvalho et C. Sandroni",
+      "tier": "needs_review",
+      "notes": "Citée sur une carte du carrousel. Nous ne l'avons pas encore relue directement, et le texte ci-dessus ne s'appuie pas sur elle."
+    },
+    {
+      "id": "s13",
+      "title": "J. Coomansingh, Caribbean News Global, 16 janv. 2024",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s14",
+      "title": "H. U. Liverpool, TDR, 1998",
+      "tier": "needs_review",
+      "notes": "Citée sur une carte du carrousel. Nous ne l'avons pas encore relue directement, et le texte ci-dessus ne s'appuie pas sur elle."
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "carnaval-caraibe-fete-d-europe"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "carnaval-caraibe-fete-d-europe/carnaval-caraibe-fete-d-europe/slide-01-7ed64c9639c0.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Trois musiciens adultes en costume de satin vert et jaune, chapeaux de paille ornés et visages peints, frappent des tubes de bambou marqués « Dynamic Karnaval » dans une rue bordée de palmiers.",
+            "text": "Le carnaval de la Caraïbe, une fête arrivée d'Europe ?\n\nAmériques · Caraïbe"
+          },
+          {
+            "src": "carnaval-caraibe-fete-d-europe/carnaval-caraibe-fete-d-europe/slide-02-3d7bb374f3ec.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Une place flamande grouillante : au premier plan, un gros homme à califourchon sur un tonneau, une broche à la main, fait face à une femme maigre sur un chariot rouge chargé de pain et de harengs ; autour, une foule, des mendiants et des fidèles sortant d'une église.",
+            "text": "Le mot vient d'Europe. Ces fêtes ont leur propre histoire.\n\nLe mot carnaval vient de l'italien. Il est attesté au XIIIe siècle. Dans la Caraïbe et au Brésil, la fête porte d'autres noms.\n\nTLFi (CNRTL), « carnaval »"
+          },
+          {
+            "src": "carnaval-caraibe-fete-d-europe/carnaval-caraibe-fete-d-europe/slide-03-c051fc3fd503.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Une carte ancienne coloriée de l'Amérique, de l'Atlantique et de la côte ouest de l'Afrique, avec des bateaux, des monstres marins et, en bordure, des vignettes de villes dont Olinda ; les Caraïbes sont au centre.",
+            "text": "Un carnaval n'est pas seulement une fête.\n\nChaque nom garde une histoire. Trois lieux : la Martinique, Trinidad, Recife au Brésil."
+          },
+          {
+            "src": "carnaval-caraibe-fete-d-europe/carnaval-caraibe-fete-d-europe/slide-04-b8258183f39b.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Une gravure coloriée : à l'ombre d'un arbre à pain, une femme en jupe bleue relevée et un homme au foulard rouge dansent face à face, entourés de personnes en foulards rayés dont un tambourinier assis et une joueuse de tambourin ; une maison à toit rouge à droite.",
+            "text": "En Martinique, des Nations défilent, puis sont interdites.\n\nMartinique, Saint-Pierre puis Fort-de-France.\n\nUne Nation est un groupe d'esclaves de même origine. Au milieu du XVIIIe siècle, un gouverneur les exclut de la procession de la Fête-Dieu : il y voit une menace pour l'ordre établi. En 1765, un arrêté interdit les mascarades armées de bâtons ferrés. Après 1848, le carnaval de Saint-Pierre devient populaire.\n\nGuide du Carnaval, 2013"
+          },
+          {
+            "src": "carnaval-caraibe-fete-d-europe/carnaval-caraibe-fete-d-europe/slide-05-a05e0b391fb3.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Une photographie ancienne en noir et blanc d'une rue de ville : des façades claires à balcons de fer forgé, un attelage de chevaux au milieu de la chaussée, quelques passants.",
+            "text": "En Martinique, le mannequin s'appelait « bois-bois ».\n\nMartinique, Saint-Pierre.\n\nLe bois-bois est un pantin de paille. Il caricature l'incident le plus impopulaire de l'année. À Saint-Pierre, on l'enterre ou on le jette à la mer. Un livre de 1890 décrit déjà cette cérémonie, au passé. Ce livre n'écrit pas le mot Vaval.\n\nL. Hearn, Two Years in the French West Indies, Harper & Brothers, 1890 · R. Confiant, 2007"
+          },
+          {
+            "src": "carnaval-caraibe-fete-d-europe/carnaval-caraibe-fete-d-europe/slide-06-171b7acb6d34.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Un énorme personnage-crocodile en papier mâché vert et bleu sombre, assis sur un char, tient un smartphone violet et une carte bancaire « VISA », sous un ciel bleu, avec du public flou en bas à droite.",
+            "text": "Vaval, roi du carnaval : d'où vient son nom ?\n\nMartinique, Fort-de-France.\n\nVaval est le roi du carnaval. On le brûle le mercredi des Cendres. Une explication publiée y voit un diminutif créole de « carnaval ». Nous n'avons trouvé aucune date pour ce nom. Deux récits non prouvés s'opposent : Vaval aurait remplacé le bois-bois après 1902, ou serait né avec le Comité Carnaval Foyal, créé en 1964.\n\nGuide du Carnaval, 2013 · Manioc, 2019 · La 1ère Martinique, 2026"
+          },
+          {
+            "src": "carnaval-caraibe-fete-d-europe/carnaval-caraibe-fete-d-europe/slide-07-425330a444b6.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Une lithographie coloriée : en plein air devant une maison de plantation, des hommes et des femmes noirs dansent en cercle, l'un brandit un chapeau, un autre tient une cage-hochet ; deux hommes assis jouent d'un grand tambour et de fers, des enfants sont à l'arrière-plan.",
+            "text": "À Trinidad, la nuit d'ouverture s'appelait Canboulay.\n\nPort of Spain, Trinidad et Tobago.\n\nCanboulay vient du français « cannes brûlées », sous sa forme créole. Après l'émancipation, d'anciens esclaves organisent ces cortèges de nuit. Une lecture y voit la reconstitution moqueuse des incendies de cannes.\n\nP. Scher, Cabinet, n° 6"
+          },
+          {
+            "src": "carnaval-caraibe-fete-d-europe/carnaval-caraibe-fete-d-europe/slide-08-0d897f8da337.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Un détail d'une lithographie coloriée : un homme à genoux joue d'un grand tambour à peau, un autre, assis à gauche, tient un instrument en fer ; au sol, un chapeau et un grand couteau, devant une case en bois où se tient une femme à jupe fleurie.",
+            "text": "Puis la police a interdit le Canboulay.\n\nPort of Spain, Trinidad et Tobago.\n\nEn 1880, la police exige la remise des torches et des tambours. En 1881, elle tente d'empêcher le cortège et une lutte violente éclate. En 1884, une ordonnance interdit les torches, les tambours, les cornes et les combats de bâtons. Jouvay, « jour ouvert », remplace ensuite cette ouverture. Nous n'avons trouvé aucune date écrite pour ces deux noms.\n\nB. Brereton, 2002 · M. La Rose, 2019 · Archives nationales britanniques, 1884"
+          },
+          {
+            "src": "carnaval-caraibe-fete-d-europe/carnaval-caraibe-fete-d-europe/slide-09-b195b77d20b2.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Une bannière rouge brodée d'or, « Maracatu Nação Leão Coroado, fund. 08-12-1863, 2020 », avec un lion couronné, domine une rue de carnaval décorée ; autour dansent des femmes en robes à crinoline blanches, bleues et roses, avec une ombrelle rouge et blanche à l'arrière-plan.",
+            "text": "À Recife, les cortèges de rois du Congo s'appellent maracatu.\n\nRecife et Olinda, Pernambouc, Brésil.\n\nDes confréries noires couronnent un roi et une reine du Congo pendant la période coloniale. Le plus ancien emploi écrit connu du mot maracatu date de 1840. En 1861, une loi d'Olinda interdit « les danses des Noirs esclaves ». Le Brésil inscrit le maracatu-nação à son patrimoine en 2014 : « création, résistance et foi ».\n\nIPHAN, Maracatu Nação, 2014 · E. Chamone, F. Lyra de Carvalho et C. Sandroni"
+          },
+          {
+            "src": "carnaval-caraibe-fete-d-europe/carnaval-caraibe-fete-d-europe/slide-10-99dded3fd0eb.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Une lithographie coloriée : au centre, un homme couronné de plumes en habit vert et jaune et une femme en robe jaune sont acclamés par une foule ; musiciens (tambour, cornemuse), bannières, coups de fusil avec fumée, un cavalier à gauche et une ville à églises au fond.",
+            "text": "L'origine de « maracatu » n'est pas établie.\n\nBrésil.\n\nUn historien écrit qu'elle est impossible à trouver. Une lecture y voit deux mots tupi : maracá, un hochet, et catu, « beau ». Une autre propose une forme angolaise, maracatucá, « allons nous disperser ».\n\nI. M. de F. Lima · M. de Andrade · Gonçalves Fernandes"
+          },
+          {
+            "src": "carnaval-caraibe-fete-d-europe/carnaval-caraibe-fete-d-europe/slide-11-32830288020b.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Deux échassiers en costume, l'un en orange à motifs de têtes de mort, l'autre en violet, tenant chacun un drapeau rouge, devant un bâtiment blanc portant l'enseigne « Box Office » et deux silhouettes découpées de personnages de carnaval sur une pelouse.",
+            "text": "Ce que des auteurs rattachent à l'Afrique.\n\nEn Martinique, un guide voit dans les Nations une reconstruction de sociétés africaines, et attribue le Moko Zombi aux Efik du Vieux Calabar, au conditionnel. À Trinidad, Hollis Liverpool rattache à l'Afrique le kalinda et le Canboulay. À Recife, les couronnements de rois du Congo sont à l'origine du maracatu-nação.\n\nGuide du Carnaval, 2013 · H. U. Liverpool · IPHAN"
+          },
+          {
+            "src": "carnaval-caraibe-fete-d-europe/carnaval-caraibe-fete-d-europe/slide-12-98611ff8769a.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Un masque blanc couvert de perles, de sequins nacrés et de fleurs de perles, bordé de plumes blanches, posé sur un mannequin dans une salle aux moulures claires.",
+            "text": "Qui a apporté la fête ? D'où viennent ses formes ?\n\nJohnny Coomansingh écrit en 2024 que les Français ont apporté le carnaval à Trinidad, tout en rappelant une thèse d'origine pan-africaine. Hollis Liverpool conteste l'origine européenne. Ce sont deux questions distinctes.\n\nJ. Coomansingh, Caribbean News Global, 16 janv. 2024 · H. U. Liverpool, TDR, 1998"
+          },
+          {
+            "src": "carnaval-caraibe-fete-d-europe/carnaval-caraibe-fete-d-europe/slide-13-cd298c57b831.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Un costume de carnaval sur mannequin sans visage : tunique de paillettes turquoise et argent, éventail rayonnant de plumes bleues, couronne, gouvernail brodé sur la poitrine ; un tambour d'acier au premier plan, en bas.",
+            "text": "Le mot, oui. La fête, les auteurs divergent.\n\nLe mot carnaval vient de l'italien. Canboulay, Jouvay, Vaval et maracatu sont des noms locaux. Chacun garde la trace de celui qui l'a donné."
+          },
+          {
+            "src": "carnaval-caraibe-fete-d-europe/carnaval-caraibe-fete-d-europe/slide-14-83167e231775.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "La Montagne Pelée en lumière de fin de journée au-dessus de la ville de Saint-Pierre, aux toits blancs et rouges et au clocher, au bord d'une baie sombre où mouillent quelques voiliers.",
+            "text": "Notre objectif : raconter l'origine des noms, avec des sources.\n\nVous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica."
+          }
+        ],
+        "credits": "Groupe à pied, dimanche gras, Fort-de-France, Martinique, 2017 · Georges-Michel Granville · Wikimedia Commons · CC BY-SA 4.0 ; Le Combat de Carnaval et Carême · Pieter Bruegel l'Ancien, 1559 · Kunsthistorisches Museum, Vienne, via Wikimedia Commons · domaine public ; Americæ nova Tabula · Joan Blaeu, Atlas Maior, 1667 · British Library, via Wikimedia Commons · domaine public ; Danse à la Dominique, illustration d'époque · Agostino Brunias, Londres, 1779 · Bibliothèque nationale de France (Gallica), via Wikimedia Commons · domaine public ; Rue Victor-Hugo, Saint-Pierre, Martinique, avant l'éruption de 1902 · auteur inconnu, Popular Science Monthly, vol. 61, 1902 · Wikimedia Commons · domaine public ; Vaval du carnaval de Martinique, 2024 · Aude Lazaro ArcheOn · Wikimedia Commons · CC BY-SA 4.0 ; Danse à Trinidad, illustration d'époque · Richard Bridgens, lithographie de Day et Haghe, Londres, v. 1838-1845 · Library of Congress, via Wikimedia Commons · domaine public ; Danse à Trinidad, détail · Richard Bridgens, lithographie de Day et Haghe, Londres, v. 1838-1845 · Library of Congress, via Wikimedia Commons · domaine public ; Maracatu Nação Leão Coroado, Olinda, carnaval 2020 · Prefeitura de Olinda / Sandro Barros · Flickr, via Wikimedia Commons · CC BY 2.0 ; Fête de Sainte Rosalie, patronne des nègres (Minas Gerais), lithographie de J. M. Rugendas, Voyage pittoresque dans le Brésil, 1835 · photographie Wilfredor · Itaú Cultural, São Paulo, via Wikimedia Commons · CC BY-SA 4.0 ; Moko Jumbie, Trinidad et Tobago, 2009 · Trinidad News · Flickr, via Wikimedia Commons · CC BY 2.0 ; Masque de Pierrot de Peter Minshall, bande « Carnival is Colour », 1987, exposé à Port-of-Spain en 2019 · Lisa Allen-Agostini · Wikimedia Commons · CC BY-SA 4.0 ; Costume « King Sailor », Port of Spain, Trinidad et Tobago, 2010 (Brian MacFarlane), photographié au Musical Instrument Museum, Phoenix, en 2022 · Terry Ballard · Flickr, via Wikimedia Commons · CC BY 2.0 ; Baie de Saint-Pierre et Montagne Pelée, Martinique, 2015 · Ze Moudong · Wikimedia Commons · CC BY-SA 4.0"
+      }
+    ],
+    "originals": [
+      {
+        "network": "facebook",
+        "url": "https://www.facebook.com/photo/?fbid=122117062311465536&set=pcb.122117062437465536",
+        "publishedAt": "2026-09-27"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/DdyNc-XCGwz/",
+        "publishedAt": "2026-09-27"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7690133056920767766",
+        "publishedAt": "2026-09-27"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

@@ -1,0 +1,221 @@
+{
+  "id": "guinee-vingt-neuf-peuples",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Ce que ce nom veut dire",
+  "fr": {
+    "slug": "guinee-vingt-neuf-peuples",
+    "title": "D'où vient le nom Guinée ?",
+    "excerpt": "L'origine du nom Guinée n'est pas établie : un mot soussou, une expression amazighe et l'orthographe des navigateurs portugais se disputent l'explication. À l'intérieur du pays, le nom du Fouta Djallon réunit deux langues, celle des Fulɓe et celle des Yalunka.",
+    "sections": [
+      {
+        "heading": "Un nom dont l'origine n'est pas établie",
+        "paragraphs": [
+          "D'où vient le nom Guinée ? Trois explications circulent, et aucune n'est démontrée.",
+          "La première relie le mot au soussou guinè, qui désigne la femme. C'est une étymologie couramment citée, notamment en Guinée.",
+          "La deuxième le rattache à une expression amazighe, akal n ignawen, « la terre des ignawen ». Les berbérophones désignaient ainsi, au Moyen Âge, la zone sahélienne au sud du Sahara. On la traduit d'ordinaire par « pays des Noirs », d'après Maurice Delafosse en 1924. Rachid Agrour, qui reprend cette lecture dans un article de 2012, rapporte aussi une autre analyse du mot agnaw : il viendrait du verbe gnu, coudre. L'agnaw serait alors « celui qui a la langue cousue », celui qui ne parle pas la langue de celui qui le nomme.",
+          "La troisième explication ne dit pas d'où vient le mot, mais comment il s'est imposé : les navigateurs portugais écrivent Guiné dès le XVe siècle, pour toute la côte ouest-africaine au sud du Sénégal. C'est cette forme écrite qui s'est répandue en Europe. Elle ne désignait pas le pays actuel, qui n'existait pas encore."
+        ],
+        "sourceRefs": ["s1", "s2", "s3"]
+      },
+      {
+        "heading": "Un nom de colonie gardé à l'indépendance",
+        "paragraphs": [
+          "En 1891, la France reprend ce nom pour sa colonie : la Guinée française, qui dure jusqu'en 1958. Le 2 octobre 1958, le pays devient indépendant et garde le nom de Guinée."
+        ],
+        "sourceRefs": ["s3"]
+      },
+      {
+        "heading": "Fouta Djallon : un nom fait de deux langues",
+        "paragraphs": [
+          "Au centre du pays, le massif du Fouta Djallon porte un nom en deux morceaux. « Fouta » est le mot fulfulde, la langue des Fulɓe, pour une région qu'ils habitent. « Djallon » vient du yalunka, où il veut dire « montagne ».",
+          "Avant, la région s'appelait Jallonkadu, « le pays des gens de la montagne ». Le nouveau nom n'a pas effacé l'ancien : il lui a ajouté un mot devant. Chaque moitié du nom garde la trace d'une langue et d'un peuple."
+        ],
+        "sourceRefs": ["s3", "s4", "s5"]
+      },
+      {
+        "heading": "Un État fulɓe sur le plateau",
+        "paragraphs": [
+          "Aux XVIIIe et XIXe siècles, le Fouta Djallon est le siège d'une théocratie fulɓe, l'un des plus importants États fulɓe d'Afrique de l'Ouest : un État islamique organisé, qui a résisté à la colonisation française.",
+          "Les Fulɓe n'y sont pas arrivés d'un coup. Notre fiche sur ce peuple décrit deux vagues distinctes : des éleveurs à partir du XIVe siècle, puis, aux XVIIe et XVIIIe siècles, des musulmans qui fondent la théocratie."
+        ],
+        "sourceRefs": ["s3", "s6"]
+      },
+      {
+        "heading": "Un pays d'arrivées autant que de départs",
+        "paragraphs": [
+          "On entend dire que la Guinée est le pays « d'où viennent » les peuples de la région. Nos fiches racontent aussi l'inverse : pour ses grands groupes, la Guinée a été une destination.",
+          "Les premières traces des Yalunka sur le plateau remontent au XIe siècle ; notre fiche sur ce peuple les présente comme les premiers habitants du Jallonkadu. Une tradition kissi, rapportée dans un ouvrage de synthèse, les fait venir de la région du Haut-Niger, puis vivre au sud du Fouta Djallon jusqu'à ce que les Yalunka les poussent vers l'ouest, à partir de 1600. L'origine des Soussou est discutée : une lecture les fait venir du Wagadu, l'ancien Ghana, mais les auteurs ne s'accordent pas. Leur expansion vers la côte atlantique, au XVIIIe siècle, suit les guerres menées par les Fulɓe du Fouta Djallon.",
+          "Ces récits reposent sur des sources de solidité inégale, que chaque fiche indique. Ils ne font pas de la Guinée un point de départ unique, ni un point d'arrivée unique : les peuples qui y vivent vivent aussi dans les pays voisins, et leurs histoires traversent les frontières actuelles."
+        ],
+        "sourceRefs": ["s5", "s7", "s6"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "Le nom Guinée est arrivé par l'écrit, par l'orthographe des navigateurs portugais, puis par la colonie française, et le pays l'a gardé en 1958. Son origine reste discutée entre plusieurs explications. À l'intérieur, le nom du Fouta Djallon réunit deux langues et deux peuples.",
+          "Vous connaissez une autre explication du nom Guinée, ou un récit sur le nom Jallonkadu ? Dites-nous d'où vient ce que vous savez."
+        ],
+        "sourceRefs": ["s1", "s2", "s3", "s5"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Fiche du peuple soussou, EthniAfrica",
+      "tier": "needs_review",
+      "notes": "Notre fiche sur les Soussou : l'étymologie couramment citée qui relie Guinée au mot soussou pour « femme », et les lectures divergentes sur l'origine du peuple."
+    },
+    {
+      "id": "s2",
+      "title": "Rachid Agrour, Cahiers d'Études africaines, 2012, d'après Maurice Delafosse, 1924",
+      "url": "https://doi.org/10.4000/etudesafricaines.17161",
+      "tier": "needs_review",
+      "kind": "article",
+      "locator": "p. 767-811",
+      "notes": "« Contribution à l'étude d'un mot voyageur : Chleuh », Cahiers d'Études africaines 208. L'article cite Delafosse (1924, p. 153) pour akal n ignawen ; il ne s'oppose pas à lui."
+    },
+    {
+      "id": "s3",
+      "title": "Fiche pays de la Guinée, EthniAfrica",
+      "tier": "needs_review",
+      "notes": "Notre fiche pays : les trois explications du nom, la Guinée française, l'indépendance, le nom du Fouta Djallon (d'après N'Daou, 1999) et la théocratie du Fouta Djallon."
+    },
+    {
+      "id": "s4",
+      "title": "Compte rendu de Thierno Diallo, Cahiers d'Études africaines, 1974",
+      "tier": "needs_review",
+      "kind": "article",
+      "notes": "Compte rendu paru en 1974, cité par le carrousel pour le sens des deux moitiés du nom. Nous ne l'avons pas relu pour cet article."
+    },
+    {
+      "id": "s5",
+      "title": "Fiche du peuple yalunka, EthniAfrica",
+      "tier": "needs_review",
+      "notes": "Notre fiche sur les Yalunka : leur présence sur le plateau et le nom Jallonkadu."
+    },
+    {
+      "id": "s6",
+      "title": "Fiches des peuples fulɓe, malinké, soussou et kissi, EthniAfrica",
+      "tier": "needs_review",
+      "notes": "Nos fiches sur ces peuples : leurs routes de migration, dont les deux vagues fulɓe vers le Fouta Djallon."
+    },
+    {
+      "id": "s7",
+      "title": "Fiches des peuples kissi, yalunka et soussou, EthniAfrica",
+      "tier": "needs_review",
+      "notes": "Nos fiches sur ces peuples : la tradition kissi d'une origine au Haut-Niger et le départ vers l'ouest, l'expansion soussou vers la côte."
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "guinee-fouta-djallon-carrousel"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "guinee-vingt-neuf-peuples/guinee-fouta-djallon-carrousel/slide-01-accae9dc2bc4.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Une vallée verte de saison des pluies vue depuis une hauteur : prairies et bosquets jusqu'à des crêtes bleutées, quelques vaches qui pâturent à gauche, un gros rocher clair au premier plan, sous un ciel couvert.",
+            "text": "La Guinée, c'est vingt-neuf peuples.\n\net aucun n'a commencé ici"
+          },
+          {
+            "src": "guinee-vingt-neuf-peuples/guinee-fouta-djallon-carrousel/slide-02-c2dc39f9a01a.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Carte postale ancienne : un ruisseau en sous-bois, un grand arbre aux longues lianes retombantes, et un jeune garçon assis seul sur la berge, les pieds au bord de l'eau.",
+            "text": "En Guinée, on dit : guinè\n\nEn soussou, guinè veut dire la femme. L'explication la plus répandue dans le pays veut que des marins aient pris pour un nom de terre la réponse des femmes qu'ils croisaient sur la côte.\n\nFiche du peuple soussou, EthniAfrica"
+          },
+          {
+            "src": "guinee-vingt-neuf-peuples/guinee-fouta-djallon-carrousel/slide-03-41ebcad885d4.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Une dalle rocheuse claire en lumière rasante, gravée d'une large frise de spirales entrelacées et, en haut à droite, d'une ligne de caractères anguleux faits de croix, de cercles et de points.",
+            "text": "Au nord, on disait : la terre des ignawen\n\nEn amazigh, akal n ignawen. C'est ainsi que les berbérophones désignaient la zone sahélienne au Moyen Âge. On traduit d'ordinaire par le pays des Noirs. Mais les linguistes rattachent agnaw au verbe gnu, coudre : l'agnaw, c'est celui qui a la langue cousue. Celui qui ne parle pas la langue de celui qui le nomme.\n\nRachid Agrour, Cahiers d'Études africaines, 2012, d'après Maurice Delafosse, 1924"
+          },
+          {
+            "src": "guinee-vingt-neuf-peuples/guinee-fouta-djallon-carrousel/slide-04-052db31b6d1b.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Carte ancienne gravée et coloriée à la main, encadrée sous verre : l'Afrique du Nord et de l'Ouest couverte de toponymes serrés, les limites rehaussées de rouge, le titre en bandeau au sommet et une échelle en bas à droite.",
+            "text": "Guiné, c'est la forme qui est restée\n\nLes navigateurs portugais l'écrivent dès le XVe siècle, pour toute la côte au sud du Sénégal. Pas pour ce pays-ci : il n'existait pas. Des trois lectures, c'est leur orthographe qui a traversé, parce que c'est elle qu'on a imprimée.\n\nFiche pays de la Guinée, EthniAfrica"
+          },
+          {
+            "src": "guinee-vingt-neuf-peuples/guinee-fouta-djallon-carrousel/slide-05-65f3939bf1ea.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Un plan d'eau immobile au crépuscule, reflétant un ciel de gros nuages ; sur la rive opposée, la silhouette d'un grand arbre, un pylône électrique et des bâtiments bas éclairés.",
+            "text": "Le nom est resté, et il n'est pas seul\n\nGuinée française de 1891 à 1958. Le 2 octobre 1958, le pays devient indépendant et garde ce nom-là. Ce qui est resté avec lui : le français comme langue officielle, et Conakry, capitale de la colonie devenue capitale du pays.\n\nFiche pays de la Guinée, EthniAfrica"
+          },
+          {
+            "src": "guinee-vingt-neuf-peuples/guinee-fouta-djallon-carrousel/slide-06-e5d94fdca6c2.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Une haute falaise coiffée de forêt d'où tombe une mince cascade ; en contrebas, quelques cases rondes à toit de chaume derrière une clôture de perches.",
+            "text": "À l'intérieur, un nom fait de deux langues\n\nFouta — la région, en fulfulde\nDjallon — la montagne, en yalunka\n\nLe massif central s'appelle Fouta Djallon. Chaque moitié du nom vient d'une langue différente, et d'un peuple différent.\n\nCompte rendu de Thierno Diallo, Cahiers d'Études africaines, 1974"
+          },
+          {
+            "src": "guinee-vingt-neuf-peuples/guinee-fouta-djallon-carrousel/slide-07-c2a816e04ec3.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Carte postale ancienne : une cour de village balayée entre de grandes cases coniques en chaume, une dizaine d'habitants assis ou debout, dont plusieurs enfants au premier plan, et un homme tenant un objet rond.",
+            "text": "Avant, il s'appelait Jallonkadu\n\nLe pays des gens de la montagne. Les Yalunka entrent sur ce plateau au XIe puis au XIIIe siècle, et les traditions rapportées en font ses premiers habitants. Le nom n'a pas été remplacé : on lui a mis un mot devant.\n\nFiche du peuple yalunka, EthniAfrica"
+          },
+          {
+            "src": "guinee-vingt-neuf-peuples/guinee-fouta-djallon-carrousel/slide-08-81a1f0a7aa6e.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Carte postale ancienne : un homme debout en longue robe claire, tenant une haute canne, entouré de quatre femmes debout en pagnes et coiffes ; derrière eux, une case conique en armature de bois et des murs de paille.",
+            "text": "Ici, un État décidait\n\nAu XVIIIe siècle, la théocratie du Fouta Djallon : l'un des plus importants États fulɓe d'Afrique de l'Ouest, avec sa capitale à Timbo. À sa tête, un almami. Karamokho Alfa, puis Ibrahima Sori.\n\nFiche pays de la Guinée, EthniAfrica"
+          },
+          {
+            "src": "guinee-vingt-neuf-peuples/guinee-fouta-djallon-carrousel/slide-09-ae0bddaeb83a.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Gravure ancienne : une colonne de cavaliers et de fantassins traverse le premier plan ; à droite, un homme à cheval lève le bras devant deux personnes à pied ; au fond, un alignement de cases coniques et des collines.",
+            "text": "Et chacun vient d'ailleurs\n\nle premier groupe du pays comme les autres\n\nLes Fulɓe viennent du Fouta Toro, la vallée du Sénégal. Les Maninka du Manden, à cheval sur le Mali et la Haute-Guinée. Les Sosoxui de Wagadou, l'empire du Ghana, par le Sosso. Les Kissi du Haut Niger.\n\nFiches des peuples fulɓe, malinké, soussou et kissi, EthniAfrica"
+          },
+          {
+            "src": "guinee-vingt-neuf-peuples/guinee-fouta-djallon-carrousel/slide-10-bdceddec1410.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Gravure ancienne : un chemin entre deux collines, trois hommes arrêtés dont l'un mène un âne bâté ; au fond, un village de cases coniques, des palmiers et un pic isolé.",
+            "text": "Chacun est arrivé sur quelqu'un\n\nLes Yalunka poussent les Kissi vers la forêt à partir de 1600. Un siècle plus tard, les Fulɓe poussent les Yalunka et les Sosoxui vers la côte : Conakry est en pays soussou pour cette raison. Aucun de ces peuples ne vit seulement ici.\n\nFiches des peuples kissi, yalunka et soussou, EthniAfrica"
+          },
+          {
+            "src": "guinee-vingt-neuf-peuples/guinee-fouta-djallon-carrousel/slide-11-8a1ecc15e24a.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Un grand arbre à large ramure penché au-dessus d'une piste de latérite rouge qui monte entre des buissons verts, sous un ciel clair et nuageux.",
+            "text": "Ces peuples n'ont pas été rassemblés.\n\nC'est la carte qui a été dessinée autour d'eux.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "Hauts plateaux du Fouta Djallon, Guinée, 2013 · Maarten van der Bent · Wikimedia Commons · CC BY-SA 2.0 ; Dubréka, Quenendè · François-Edmond Fortier, v. 1905 · Wikimedia Commons · domaine public ; Gravures rupestres en tifinagh, Sahara algérien, 2006 · Paul Gruban · Wikimedia Commons · CC BY-SA 2.0 ; Carte de la Barbarie, de la Nigritie et de la Guinée · Guillaume Delisle, 1707, Musée de la Compagnie des Indes · Wikimedia Commons · domaine public ; Conakry, Guinée, 2015 · Vincentyang1912 · Wikimedia Commons · CC BY-SA 4.0 ; Massif du Fouta Djallon, Guinée, 2013 · Maarten van der Bent · Wikimedia Commons · CC BY-SA 2.0 ; Intérieur de village djallonké, Guinée · François-Edmond Fortier, v. 1905 · Wikimedia Commons · domaine public ; L'almami de Timbo et sa maison, Guinée · François-Edmond Fortier, v. 1905 · Wikimedia Commons · domaine public ; Vue de l'armée du Fouta Toro en marche · gravure d'Ambroise Tardieu, 1820, Bibliothèque nationale de France · Wikimedia Commons · domaine public ; Timbo, capitale du Fouta Djallon, gravure de 1818 · New York Public Library · Wikimedia Commons · domaine public ; Fouta Djallon, Guinée, 2013 · Maarten van der Bent · Wikimedia Commons · CC BY-SA 2.0"
+      }
+    ],
+    "originals": [
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/DdXGE_bCBNZ/",
+        "publishedAt": "2026-09-17"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7686225332197657878",
+        "publishedAt": "2026-09-16"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

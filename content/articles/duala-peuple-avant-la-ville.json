@@ -1,0 +1,49 @@
+{
+  "id": "duala-peuple-avant-la-ville",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Ce que ce nom veut dire",
+  "fr": {
+    "slug": "duala-peuple-avant-la-ville",
+    "title": "D'où vient le nom Duala ?",
+    "excerpt": "Au Cameroun, Douala est le nom d'un peuple avant d'être celui d'une ville.",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "sawa-douala"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "HUBAIkOPKTE",
+        "poster": {
+          "src": "duala-peuple-avant-la-ville/sawa-douala/poster-5a98f79797be.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/reel/DdMe4BKK1Qc/",
+        "publishedAt": "2026-09-12"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7684695856146042134",
+        "publishedAt": "2026-09-12"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/HUBAIkOPKTE",
+        "publishedAt": "2026-09-12"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

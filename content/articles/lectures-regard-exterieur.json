@@ -1,0 +1,83 @@
+{
+  "id": "lectures-regard-exterieur",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Lectures",
+  "fr": {
+    "slug": "lectures-regard-exterieur",
+    "title": "Le regard venu d'ailleurs",
+    "excerpt": "Le regard venu d'ailleurs",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "lectures-regard-exterieur"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "lectures-regard-exterieur/lectures-regard-exterieur/slide-01-9ac125cc8683.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "les couvertures des 4 livres de la sélection, côte à côte",
+            "text": "Le regard venu d'ailleurs\n\n4 livres à lire"
+          },
+          {
+            "src": "lectures-regard-exterieur/lectures-regard-exterieur/slide-02-7e74c5b45263.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « Voyage dans l'intérieur de l'Afrique » (Mungo Park), détourée et redressée à partir d'une photographie",
+            "text": "Voyage dans l'intérieur de l'Afrique\n\nMungo Park"
+          },
+          {
+            "src": "lectures-regard-exterieur/lectures-regard-exterieur/slide-03-a8a8717a776a.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « Ébène : Aventures africaines » (Ryszard Kapuściński), détourée et redressée à partir d'une photographie",
+            "text": "Ébène : Aventures africaines\n\nRyszard Kapuściński"
+          },
+          {
+            "src": "lectures-regard-exterieur/lectures-regard-exterieur/slide-04-7926aaf5cee8.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « Histoire des Blancs » (Nell Irvin Painter), détourée et redressée à partir d'une photographie",
+            "text": "Histoire des Blancs\n\nNell Irvin Painter"
+          },
+          {
+            "src": "lectures-regard-exterieur/lectures-regard-exterieur/slide-05-3bdd5192a3ed.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « L'Invention de l'Afrique » (Valentin-Yves Mudimbe), détourée et redressée à partir d'une photographie",
+            "text": "L'Invention de l'Afrique\n\nValentin-Yves Mudimbe"
+          },
+          {
+            "src": "lectures-regard-exterieur/lectures-regard-exterieur/slide-06-bfbbd0313750.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "les couvertures des 4 livres de la sélection, côte à côte",
+            "text": "Notre objectif : raconter l'origine des noms, avec des sources.\n\nVous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica."
+          }
+        ],
+        "credits": "Couvertures : éditeurs respectifs · photographie de l'opérateur · couverture © éditeur ; Couverture : La Découverte / Poche · photographie de l'opérateur · couverture © éditeur ; Couverture : Pocket · photographie de l'opérateur · couverture © éditeur ; Couverture : Voix libres / Max Milo · photographie de l'opérateur · couverture © éditeur ; Couverture : Présence Africaine · photographie de l'opérateur · couverture © éditeur"
+      }
+    ],
+    "originals": [
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/DdxlSIaCF5O/",
+        "publishedAt": "2026-09-27"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7690042427356302595",
+        "publishedAt": "2026-09-27"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

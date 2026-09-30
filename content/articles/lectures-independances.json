@@ -1,0 +1,97 @@
+{
+  "id": "lectures-independances",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Lectures",
+  "fr": {
+    "slug": "lectures-independances",
+    "title": "Les indépendances, aujourd'hui",
+    "excerpt": "Les indépendances, aujourd'hui",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "lectures-independances"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "lectures-independances/lectures-independances/slide-01-2b6941ff6e8d.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "les couvertures des 6 livres de la sélection, côte à côte",
+            "text": "Les indépendances, aujourd'hui\n\n6 livres à lire"
+          },
+          {
+            "src": "lectures-independances/lectures-independances/slide-02-aece6d70542e.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « L'Afrique noire est mal partie » (René Dumont), détourée et redressée à partir d'une photographie",
+            "text": "L'Afrique noire est mal partie\n\nRené Dumont"
+          },
+          {
+            "src": "lectures-independances/lectures-independances/slide-03-8c58a48e595b.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « La Pensée politique de Patrice Lumumba » (Jean Van Lierde (éd.)), détourée et redressée à partir d'une photographie",
+            "text": "La Pensée politique de Patrice Lumumba\n\nJean Van Lierde (éd.)"
+          },
+          {
+            "src": "lectures-independances/lectures-independances/slide-04-323f804551e3.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « Le Consciencisme » (Kwame Nkrumah), détourée et redressée à partir d'une photographie",
+            "text": "Le Consciencisme\n\nKwame Nkrumah"
+          },
+          {
+            "src": "lectures-independances/lectures-independances/slide-05-69f8f2a2eb9f.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « Journal du Congo » (Ernesto Che Guevara), détourée et redressée à partir d'une photographie",
+            "text": "Journal du Congo\n\nErnesto Che Guevara"
+          },
+          {
+            "src": "lectures-independances/lectures-independances/slide-06-d557478deebb.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « Quand on refuse on dit non » (Ahmadou Kourouma), détourée et redressée à partir d'une photographie",
+            "text": "Quand on refuse on dit non\n\nAhmadou Kourouma"
+          },
+          {
+            "src": "lectures-independances/lectures-independances/slide-07-3c580c10a057.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « Cocoaïans : Naissance d'une nation chocolat » (Gauz), détourée et redressée à partir d'une photographie",
+            "text": "Cocoaïans : Naissance d'une nation chocolat\n\nGauz"
+          },
+          {
+            "src": "lectures-independances/lectures-independances/slide-08-350263448f68.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "les couvertures des 6 livres de la sélection, côte à côte",
+            "text": "Notre objectif : raconter l'origine des noms, avec des sources.\n\nVous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica."
+          }
+        ],
+        "credits": "Couvertures : éditeurs respectifs · photographie de l'opérateur · couverture © éditeur ; Couverture : Seuil · photographie de l'opérateur · couverture © éditeur ; Couverture : Présence Africaine · photographie de l'opérateur · couverture © éditeur ; Couverture : Les Poches du Diable · photographie de l'opérateur · couverture © éditeur ; Couverture : Points · photographie de l'opérateur · couverture © éditeur ; Couverture : L'Arche · photographie de l'opérateur · couverture © éditeur"
+      }
+    ],
+    "originals": [
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/DdxniCzCHNP/",
+        "publishedAt": "2026-09-27"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7690047473154559255",
+        "publishedAt": "2026-09-27"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}
