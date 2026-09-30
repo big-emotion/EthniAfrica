@@ -1,0 +1,20 @@
+{
+  "campaign": "amazigh-d-ou-vient-le-nom",
+  "typologie": "peuple",
+  "episode": 15,
+  "question": {
+    "fr": "D'où vient le nom Amazigh ?"
+  },
+  "myth": {
+    "fr": "« Amazigh » veut-il vraiment dire « les hommes libres » ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_AMAZIGH_MACRO",
+      "label": { "fr": "Amazigh" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_AMAZIGH_MACRO",
+  "publications": []
+}
