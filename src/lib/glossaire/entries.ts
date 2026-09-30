@@ -37,7 +37,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     definition:
       "Émique : décrire avec les catégories des intéressés. Étique : décrire avec celles de l'observateur. Nous faisons porter l'émique et signalons l'étique quand nous ne pouvons pas faire autrement.",
     corpusExample:
-      "Un peuple rangé sous une famille linguistique forgée en 1862 est décrit étiquement, et la fiche le dit.",
+      "Un peuple rangé sous une famille linguistique forgée au XIXe siècle est décrit étiquement, et la fiche le dit.",
     corpusPresence: "instantiated",
     seeAlso: ["reification-ethnique"],
     chapterRef: "la-langue",
@@ -183,7 +183,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     definition:
       "Le nom d'une langue. Un glossonyme n'est pas un ethnonyme, et une famille de langues ne décrit aucune population.",
     corpusExample:
-      "Le corpus range 800 peuples sous 25 familles ; la plus vaste porte un mot forgé en 1862.",
+      "Le corpus range 800 peuples sous 25 familles ; la plus vaste porte un mot forgé au XIXe siècle.",
     corpusPresence: "instantiated",
     seeAlso: ["ethnonyme", "reification-ethnique"],
     chapterRef: "la-langue",

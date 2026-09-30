@@ -27,8 +27,8 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
     figureRefs: ["corpus-language-families"],
   },
   measure: {
-    value: "« bantou », 1862",
-    unit: "première attestation",
+    value: "« bantou », 1857",
+    unit: "première trace écrite connue, imprimée en 1858",
     sourceRefs: ["bleek-1862"],
     figureRefs: [],
   },
@@ -36,7 +36,7 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
     {
       id: "un-mot-forge-dans-un-bureau",
       stepLabel: "04 · La langue",
-      heading: "Un mot forgé dans un bureau, en 1862",
+      heading: "Un mot forgé dans un bureau",
       blocks: [
         {
           id: "un-nom-sans-locuteurs",
@@ -46,7 +46,7 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
         },
         {
           id: "bleek-et-abantu",
-          text: "Le mot est forgé en 1862 par Wilhelm Bleek, dans sa Comparative Grammar of South African Languages. Il prend au zoulou abantu, « les gens » — ba-, préfixe de pluriel humain, et -ntu, la personne — et en fait une étiquette de classification. Le geste est ordinaire en philologie comparée du XIXe siècle ; ce qui l'est moins, c'est le lieu.",
+          text: "Le mot est forgé par Wilhelm Bleek : les historiens de la linguistique le trouvent dans un manuscrit de 1857, il paraît imprimé en 1858, et c'est sa Comparative Grammar of South African Languages, en 1862, qui le répand. Il prend au zoulou abantu, « les gens » — ba-, préfixe de pluriel humain, et -ntu, la personne — et en fait une étiquette de classification. Le geste est ordinaire en philologie comparée du XIXe siècle ; ce qui l'est moins, c'est le lieu.",
           sourceRefs: ["bleek-1862", "britannica-bleek"],
           figureRefs: [],
         },
@@ -78,7 +78,7 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
           {
             cells: [
               "Une famille de langues apparentées",
-              "La linguistique comparée, depuis 1862",
+              "La linguistique comparée, depuis Bleek",
               "Admis : la parenté généalogique n'est pas discutée",
             ],
             sourceRefs: ["bleek-1862", "saho-bantu"],

@@ -189,8 +189,8 @@ export interface ChapterEntity {
  * It carries its own refs rather than borrowing the chapter's: a figure shown
  * on a navigation tile is still an assertion, and the one most likely to be
  * screenshotted out of context. Split into `value` and `unit` so a count
- * (3 207 · exonymes recensés) and a word-and-date (« bantou » · 1862, première
- * attestation) share one shape — a template built around a big numeral would
+ * (3 207 · exonymes recensés) and a word-and-date (« bantou » · 1857, première
+ * trace écrite connue) share one shape — a template built around a big numeral would
  * have made the fourth tile absurd.
  */
 export interface ChapterMeasure {

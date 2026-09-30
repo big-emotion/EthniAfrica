@@ -15,7 +15,7 @@ const facts: DidYouKnowFact[] = [
   {
     id: "bantou",
     headline:
-      "« Bantou » n'est pas un peuple : c'est une catégorie forgée par un philologue en 1862.",
+      "« Bantou » n'est pas un peuple : c'est une catégorie forgée par un philologue au milieu du XIXe siècle.",
     body: ["…"],
     entities: [
       { kind: "family", id: "FLG_BANTU", label: "Langues bantoues" },
@@ -31,7 +31,7 @@ describe("SourcedHighlightBlock", () => {
     render(<SourcedHighlightBlock result={zuluResult} facts={facts} />);
 
     expect(screen.getByTestId("sourced-highlight-block")).toHaveTextContent(
-      /philologue en 1862/
+      /philologue au milieu du XIXe siècle/
     );
     expect(screen.getByTestId("sourced-highlight-tier")).toHaveTextContent(
       "Source référencée"
@@ -58,7 +58,7 @@ describe("SourcedHighlightBlock", () => {
 
     expect(screen.getByText("Did you know?")).toBeInTheDocument();
     expect(screen.getByTestId("sourced-highlight-block")).toHaveTextContent(
-      /category coined by a philologist in 1862/
+      /category coined by a philologist in the mid-nineteenth century/
     );
     expect(screen.getByTestId("sourced-highlight-tier")).toHaveTextContent(
       "Referenced source"
