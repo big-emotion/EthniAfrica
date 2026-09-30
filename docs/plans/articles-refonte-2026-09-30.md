@@ -362,11 +362,11 @@ Evidence for each phase, and every unresolved item, is recorded in
 
 - [x] P0 — Refresh evidence, resolve scope and record route/content dispositions (Confluence contract check and candidate mapping remain open; see evidence file).
 - [x] P1 — Freeze the article contract, fixtures and media-delivery choice (production media host still needs an operator decision; see evidence file).
-- [ ] P2 — Build the shared article and listing experience against fixtures.
-- [ ] P3 — Recover, reconcile and import existing publications (pilot then full resolved batch).
-- [ ] P4 — Integrate navigation, sitemap, metadata and discovery destinations.
-- [ ] P5 — Write/review the three pilot articles, then complete the eligible backlog.
-- [ ] P6 — Validate the integrated release, deploy through the project workflow and verify.
+- [x] P2 — Build the shared article and listing experience against fixtures (English pages, night theme, keyboard walkthrough, axe/Lighthouse and touch swipe not verified).
+- [ ] P3 — Recover, reconcile and import existing publications: PARTIAL. 60 drafts imported, 2 need recovery, 4 not published, 6 excluded, 8 copy pointers unresolved, media host absent.
+- [ ] P4 — Integrate navigation, sitemap, metadata and discovery destinations: done except search-companion destinations, old-URL dispositions beyond withheld routes, and the brand charter §8.6 text.
+- [ ] P5 — Pilots written (draft); 20 of 22 eligible backlog drafts written; 35 blocked on sources, 2 unwritten for lack of evidence. Nothing reviewed by the operator, nothing published.
+- [ ] P6 — Integrated validation done locally (see evidence); deploy, live checks, rendered review of real articles and operator sign-off not done.
 
 ### P0 — Refresh and establish the baseline (one coordinator)
 

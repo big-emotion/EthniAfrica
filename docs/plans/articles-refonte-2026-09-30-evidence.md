@@ -292,3 +292,74 @@ Lingala card 6/8 credit mismatch and the card 2/9 image reuse are unchanged; the
 edition-date conflict (Sept 16 vs 17) is unchanged; the Mandé media credits come from the
 workshop register, including an iNaturalist licence whose version is still to confirm; the Mali
 record's Foltz and coordinates entries still cite English Wikipedia in their titles.
+
+### P5 — backlog batches A and B (2026-09-30)
+
+Review cases, frozen before each body was drafted: [batch A](articles-batch-a-review-cases.md)
+(A1–A11) and [batch B](articles-batch-b-review-cases.md) (B1–B11). The eligible set was measured
+first: of the 57 drafts without a body, **22 had parsed sources and displayable media**, so
+those 22 were assigned in two disjoint batches; the other 35 have no parsed source and are
+listed below. `pilots.test.ts` now covers every article that has a body (169 tests in
+`src/lib/articles`, all green). All written articles stay `draft`, no `publishedAt`, author
+unchanged, no English text, a stated English deferral on each, no tier ruling made (every
+added source is `needs_review`). **Passing the mechanical floor is not prose approval; every
+body still needs the operator's and a semantic review.**
+
+**Written (23 of 60 drafts have a body: 3 pilots + 20 of the 22 eligible; none of the other 35).**
+Batch A, all 11: `agni-anyi-meme-peuple`, `amazigh-berbere-deux-noms`,
+`cabinda-yombe-trois-conventions`, `cameroun-le-continent`, `carnaval-caraibe-fete-d-europe`,
+`comprendre-afrique-noms` (short by design: a project introduction), `daloa-zokou-gbeuly`
+(retitled: no source read explains the name Daloa), `diallo-djallo-jallow`,
+`dioula-un-metier-une-langue-une-identite`, `ethnie-d-ou-vient-le-mot`,
+`garvey-arbre-sans-racines` (short). Batch B, 9 of 11: `ghana-qui-a-choisi-le-nom`,
+`griot-d-ou-vient-le-nom`, `guinee-vingt-neuf-peuples`, `igbo-enwe-eze-sans-roi`,
+`krio-quatre-vagues-freetown` (short), `liberia-nom-latin-libre`,
+`pourquoi-la-meconnaissance-freine-l-afrique` (short position piece), `pygmee-d-ou-vient-le-nom`,
+`swahili-le-nom-de-la-cote`.
+
+**Not written although eligible by the mechanical test, because the evidence does not support a
+body:** `rastafari-ras-tafari` (every claim rests on books our Amhara fiche cites only "via
+Wikipedia"; Britannica and the Gleaner were unreachable; the negus date differs between the card
+and the fiche); `senoufo-syenambele` (none of the central claims is anchored in a source anyone
+read; card 7 contradicts card 6). What would unblock each is in the batch B report and cases.
+
+**Blocked, not attempted (35 drafts with no parsed source):** afrique-depuis-les-independances,
+afrique-province-romaine, bantou-cent-soixante-dix, bantou-mot-de-linguiste-allemand,
+benin-royaume-jamais-au-benin, cameroun-crevette, cote-divoire-bouet-willaumez,
+diaspora-noms-repris-saamaka, duala-peuple-avant-la-ville, exonymes-hottentot-kirdi-dogon,
+frontieres-appartenance, fulbe-personne-appele-comme-ca, fulbe-sept-noms-un-sens-ouvert,
+ghana-empire-jamais-sur-son-territoire, goma-un-nom-sans-source,
+keita-coulibaly-obligations-alliance, kouyate-jeli, krou-pas-lequipage, lectures-avant-recit,
+lectures-independances, lectures-regard-exterieur, lectures-se-penser-noir,
+lectures-traite-colonie, mami-wata-nom-anglais, mbappe-d-ou-vient-le-nom,
+mercator-afrique-petite, mungo-park-fleuve-joliba, nigeria-flora-shaw,
+noms-de-metier-dioula-teke, nzebi-muyambili-memoire, nzema-appolo-frontiere,
+retour-ou-decouverte, toponymie-villes-montagnes-fantomes, vodun-mot-fon-esprit,
+zombie-mot-bantou. Each needs its workshop SOURCES material extracted and read before a body
+can honestly be written; the recovery report lists the per-item next action. Plus the 2 needing
+recovery, 4 not published and 6 excluded in P3, and 8 drafts whose slides are not displayable.
+
+**Decisions the operator needs to see**
+
+- Two records gained sources the import had not parsed: Dioula (four) and Garvey (four), because
+  the two original entries could not support the approved claims; Zokou Gbeuly was retitled.
+- **Dioula:** the carousel shown with the article (12 September edition) still displays on cards
+  1 and 2 the two claims the project retracted on 2026-09-23; the corrected video is still a
+  proof, so no newer edition exists to show instead. The article uses what the opened chapter
+  says and drops a quotation the approved narration attributes to Niane p. 142 that is not in
+  the online chapter.
+- **Agni-Anyi:** the library notes the render was not publishable (capital accents collide on
+  5 of 6 cards) and the title was not approved, yet the post is filed as published.
+- Card credit/image mismatches, reused images, date conflicts and registry-status conflicts
+  (`pret` in the library vs live on the ledger) are unchanged in every article; none was
+  resolved by guessing.
+- **Pygmée:** a recognisable minor appears with no documented consent (marked to re-read);
+  **Méconnaissance:** the reel uses cloned voices of named people whose usage rights the
+  workshop never settled; soundtrack clearance for website reuse is recorded for no video.
+- `PPL_YOMBE` cites a page about a different, Zambian Yombe group (needs `/afrik-curator`).
+
+**Sources.** Each report separates pages opened this pass from pages the workshop recorded as
+read. Where a fetch tool's summary looked implausible, only the workshop-recorded part was used.
+The Wikipedia rule was applied: claims resting only on Wikipedia or on an unread work were dropped
+or marked. That is the extent of source verification; nothing beyond the pages named in the
+reports was checked.
