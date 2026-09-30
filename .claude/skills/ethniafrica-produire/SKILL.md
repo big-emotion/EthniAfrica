@@ -249,6 +249,12 @@ Tout vient de `docs/design/gabarits-social/GABARITS-SOCIAL.md` :
 Le contraste se **mesure sur les pixels réels sous le voile**, pas s'estime. Le
 halo de texte aide la perception et ne compte pas dans le calcul.
 
+**Sur une image claire, le voile est clair et l'encre sombre ; sur une image sombre,
+l'encre est claire. Il n'y a jamais de plaque sombre sur une image claire.** Le moteur
+choisit par carte (`GABARITS-SOCIAL.md` §4) ; un lot ne déclare rien. Une épreuve d'un
+carrousel dont une page de livre garde un bas de carte noir est un défaut du moteur, pas
+du lot.
+
 ## Où sont les valeurs
 
 Nulle part dans ta tête, et nulle part dans les scripts :

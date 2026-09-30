@@ -111,7 +111,9 @@ refuses:
 1. **A crop that loses it.** The object-fit cover crop and `image.cadrage` can push a
    subject out of the frame; the whole box must stay inside.
 2. **Text on it.** Any text block overlapping the box.
-3. **The scrim on it.** The ramp that carries the text darkens the photograph above
+3. **The scrim on it.** (On a light picture the ramp is a light veil under dark ink and
+   lightens instead; the rule is GABARITS-SOCIAL §4, « Le voile suit l'image ».) The ramp
+   that carries the text darkens the photograph above
    the column. Twenty per cent of the darkening is reached 55 % of the way down the
    ramp, so a subject reaching past that is dimmed although no letter touches it.
 4. **The platform interface.** In 9:16 nothing that has to be seen goes under y = 1620.

@@ -362,6 +362,9 @@ dark, plain or solid-colour background mode** (operator ruling, 2026-09-30). The
 a card or a scene with no image rather than painting a ground; `nuit` and `parchemin` are the
 ink and the scrim tint laid over the photograph, never a background. Do not re-introduce a
 « fond sombre », a panel layout or a flat plate to carry text.
+On a light image the veil is light and the ink dark; on a dark image the ink is light. There
+is never a dark plate over a light image (operator ruling, 2026-10-01): the carousel engine
+picks the family per card from the picture under the text (`GABARITS-SOCIAL.md` §4).
 
 The publishing chain runs in one order, and **all ten of its skills live here**,
 under their `ethniafrica-` names. They left for the private workspace on
