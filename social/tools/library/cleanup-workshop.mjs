@@ -59,7 +59,7 @@ function checked(root, name = "") {
   return target;
 }
 
-function walk(root, prefix = "") {
+function walk(root, prefix = "", deckAliases = false) {
   const files = [];
   for (const entry of fs.readdirSync(path.join(root, prefix), {
     withFileTypes: true,
@@ -67,8 +67,30 @@ function walk(root, prefix = "") {
     const name = prefix ? `${prefix}/${entry.name}` : entry.name;
     if (entry.name === ".git" || entry.name === "_shared-assets")
       throw new Error(`Protected directory refused: ${name}`);
-    if (entry.isSymbolicLink()) throw new Error(`Symlink refused: ${name}`);
-    if (entry.isDirectory()) files.push(...walk(root, name));
+    if (entry.isSymbolicLink()) {
+      const target = fs.readlinkSync(path.join(root, name));
+      const counterpart =
+        entry.name === "cards.json"
+          ? "cartes.json"
+          : entry.name === "cartes.json"
+            ? "cards.json"
+            : null;
+      if (
+        !deckAliases ||
+        target !== counterpart ||
+        !fs.lstatSync(path.join(root, prefix, target)).isFile()
+      )
+        throw new Error(`Symlink refused: ${name}`);
+      files.push({
+        path: name,
+        bytes: 0,
+        nlink: 0,
+        mtime: fs.lstatSync(path.join(root, name)).mtimeMs,
+        alias: target,
+      });
+      continue;
+    }
+    if (entry.isDirectory()) files.push(...walk(root, name, deckAliases));
     else if (entry.isFile()) {
       const stat = fs.lstatSync(path.join(root, name));
       files.push({
@@ -237,13 +259,15 @@ export async function cleanupWorkshop({
   } catch (error) {
     blockers.push(`Delivery: ${error.message}`);
   }
-  const files = walk(root);
+  const files = walk(root, "", true);
   // Explicit evidence or authored references always win over a generated filename.
   const references = new Set(record?.metadata.keep ?? []);
-  for (const file of files.filter((file) =>
-    /\.(json|md|txt|py|sh)$/i.test(file.path)
+  const documents = new Map();
+  for (const file of files.filter(
+    (file) => !file.alias && /\.(json|md|txt|py|sh)$/i.test(file.path)
   )) {
     const text = fs.readFileSync(path.join(root, file.path), "utf8");
+    documents.set(file.path, text);
     for (const match of text.matchAll(
       /[\w./-]+\.(?:png|wav|log|pyc|ffconcat)/g
     ))
@@ -256,6 +280,66 @@ export async function cleanupWorkshop({
   );
   const byPath = new Map(files.map((file) => [file.path, file]));
   const nonempty = (name) => (byPath.get(name)?.bytes ?? 0) > 0;
+  const retiredTakes = record?.metadata.retiredTakes ?? [];
+  if (!Array.isArray(retiredTakes))
+    throw new Error("retiredTakes must be an array");
+  const retired = new Map();
+  for (const take of retiredTakes) {
+    try {
+      for (const name of [take.path, take.replacement, take.evidence])
+        relative(name);
+      if (
+        !/(^|\/)work\/.*(?:non-retenue|rejected|discarded).*\.(wav|mp3|m4a)$/.test(
+          take.path
+        ) ||
+        !/^[a-f0-9]{64}$/.test(take.sha256) ||
+        !take.reason?.trim()
+      )
+        throw new Error("Only explicitly rejected audio takes may be retired");
+      if (
+        !/\.(wav|mp3|m4a)$/.test(take.replacement) ||
+        !nonempty(take.replacement) ||
+        retiredTakes.some((other) => other.path === take.replacement)
+      )
+        throw new Error("A retained replacement take is required");
+      const work = take.path.slice(0, take.path.indexOf("work/") + 4);
+      if (
+        !nonempty(`${work}/narration.wav`) ||
+        !nonempty(`${work}/aligned-words.json`)
+      )
+        throw new Error("Approved master and alignment must survive");
+      const decision = fs.readFileSync(checked(root, take.evidence), "utf8");
+      if (
+        !/non.retenu|not retained|rejected|discarded/i.test(decision) ||
+        ![
+          path.basename(take.path),
+          path.basename(path.dirname(take.path)),
+        ].some((name) => name !== "work" && decision.includes(name))
+      )
+        throw new Error("The decision must identify the rejected take");
+      if (!byPath.has(take.path)) continue;
+      if (digest(checked(root, take.path)) !== take.sha256)
+        throw new Error("Rejected take changed");
+      for (const [document, text] of documents) {
+        if (document === RECORD || document === take.evidence) continue;
+        if (text.includes(take.path) || text.includes(path.basename(take.path)))
+          throw new Error(`Still referenced by ${document}`);
+      }
+      if (
+        (record.metadata.keep ?? []).some(
+          (name) => take.path === name || take.path.startsWith(name + "/")
+        )
+      )
+        throw new Error("Explicit keep overrides retirement");
+      retired.set(take.path, {
+        ...take,
+        replacementSha256: digest(checked(root, take.replacement)),
+        evidenceSha256: digest(checked(root, take.evidence)),
+      });
+    } catch (error) {
+      blockers.push(`Retirement ${take.path}: ${error.message}`);
+    }
+  }
   const frame = (name) =>
     /(^|\/)work\/images(?:-controle)?\/\d{6}\.png$/.test(name);
   function disposable(name) {
@@ -276,10 +360,11 @@ export async function cleanupWorkshop({
   }
   const candidates = files.filter(
     (file) =>
-      disposable(file.path) &&
+      (disposable(file.path) || retired.has(file.path)) &&
       file.nlink === 1 &&
-      !references.has(file.path) &&
-      !referencedNames.has(path.basename(file.path)) &&
+      (retired.has(file.path) ||
+        (!references.has(file.path) &&
+          !referencedNames.has(path.basename(file.path)))) &&
       !(record?.metadata.keep ?? []).some((ref) =>
         file.path.startsWith(ref + "/")
       )
@@ -351,6 +436,7 @@ export async function cleanupWorkshop({
       .map((file) => file.path),
     retainedFiles: retained.length,
     retainedBytes: retained.reduce((sum, file) => sum + file.bytes, 0),
+    retiredTakes: [...retired.values()],
   };
   if (!write || blockers.length) return report;
 
@@ -360,8 +446,16 @@ export async function cleanupWorkshop({
     throw new Error("Ledger changed during cleanup");
   if (recordAt(root).text !== record.text)
     throw new Error("Production record changed during cleanup");
+  for (const take of retired.values()) {
+    if (
+      digest(checked(root, take.path)) !== take.sha256 ||
+      digest(checked(root, take.replacement)) !== take.replacementSha256 ||
+      digest(checked(root, take.evidence)) !== take.evidenceSha256
+    )
+      throw new Error("Retirement evidence or audio changed during cleanup");
+  }
   const receipt = (state) =>
-    `\n## Cleanup verification\n\n${new Date().toISOString()} — ${report.bytes} bytes of disposable scratch selected.\nThe verified delivery and retained replay inputs are exceptions to the single-record goal.\n\n\`\`\`cleanup-state\n${JSON.stringify({ state, bytes: report.bytes, files: candidates.length, evidence }, null, 2)}\n\`\`\`\n`;
+    `\n## Cleanup verification\n\n${new Date().toISOString()} — ${report.bytes} bytes of disposable scratch selected.\nThe verified delivery and retained replay inputs are exceptions to the single-record goal.\nAny rejected voice removal is explicitly documented below.\n\n\`\`\`cleanup-state\n${JSON.stringify({ state, bytes: report.bytes, files: candidates.length, evidence, retiredTakes: report.retiredTakes }, null, 2)}\n\`\`\`\n`;
   function writeRecord(state) {
     const written = record.text + receipt(state);
     const descriptor = fs.openSync(
@@ -424,7 +518,7 @@ export function workshopCleanupState(post) {
     )
       return "cleanup pending";
     const writtenAt = fs.statSync(path.join(root, RECORD)).mtimeMs;
-    if (walk(root).some((file) => file.mtime > writtenAt))
+    if (walk(root, "", true).some((file) => file.mtime > writtenAt))
       return "cleanup pending (workshop changed)";
     return "scratch cleaned; required inputs kept";
   } catch {

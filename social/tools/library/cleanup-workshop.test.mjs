@@ -1,5 +1,6 @@
 /** @req REQ-032 — Filed media survive automatic workshop housekeeping. */
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { spawnSync } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
@@ -8,6 +9,103 @@ import { test } from "node:test";
 import { fileURLToPath } from "node:url";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
+const hash = (text) => createHash("sha256").update(text).digest("hex");
+
+// @req REQ-032
+test("internal deck aliases survive cleanup without permitting other symlinks", (t) => {
+  const f = fixture(t);
+  fs.symlinkSync("cards.json", path.join(f.subject, "cartes.json"));
+  const result = f.run(["--subject", "Example", "--write"]);
+  assert.equal(result.status, 0, result.stderr);
+  assert.equal(
+    fs.readlinkSync(path.join(f.subject, "cartes.json")),
+    "cards.json"
+  );
+  assert.equal(
+    fs.existsSync(path.join(f.subject, "work/images/000000.png")),
+    false
+  );
+});
+
+// @req REQ-032
+test("a deck alias cannot lead outside the subject", (t) => {
+  const f = fixture(t);
+  f.put("outside/cards.json", "external deck");
+  fs.symlinkSync(
+    "../../outside/cards.json",
+    path.join(f.subject, "cartes.json")
+  );
+  assert.notEqual(f.run(["--subject", "Example", "--write"]).status, 0);
+  assert.ok(fs.existsSync(path.join(f.subject, "work/images/000000.png")));
+});
+
+for (const condition of [
+  "valid",
+  "changed",
+  "missing-replacement",
+  "active-evidence",
+  "protected-class",
+  "missing-decision",
+]) {
+  // @req REQ-032
+  test(`explicitly rejected voice retirement: ${condition}`, (t) => {
+    const f = fixture(t);
+    const file =
+      condition === "protected-class"
+        ? "work/narration.wav"
+        : "work/tts-ines-non-retenue.wav";
+    f.put(`workshop/Example/${file}`, "rejected voice");
+    f.put(
+      "workshop/Example/production.json",
+      JSON.stringify({
+        voice: {
+          source:
+            "tts-ines-non-retenue.wav was rejected; keep the selected original instead.",
+        },
+      })
+    );
+    if (condition === "active-evidence")
+      f.put(
+        "workshop/Example/progress.json",
+        JSON.stringify({ evidence: [{ path: file }] })
+      );
+    if (condition === "missing-replacement")
+      fs.unlinkSync(path.join(f.subject, "tts-original.mp3"));
+    const retirement = {
+      path: file,
+      sha256: hash("rejected voice"),
+      replacement: "tts-original.mp3",
+      evidence: "production.json",
+      reason:
+        "The recorded production decision rejects this audition in favor of the selected take.",
+    };
+    if (condition === "missing-decision") retirement.evidence = "absent.md";
+    f.put(
+      "workshop/Example/production-record.md",
+      RECORD.replace(
+        '"keep":[]',
+        `"keep":[],"retiredTakes":${JSON.stringify([retirement])}`
+      )
+    );
+    if (condition === "changed")
+      f.put(`workshop/Example/${file}`, "changed voice");
+    const result = f.run(["--subject", "Example", "--write"]);
+    if (condition === "valid") {
+      assert.equal(result.status, 0, result.stderr);
+      assert.equal(fs.existsSync(path.join(f.subject, file)), false);
+      assert.ok(fs.existsSync(path.join(f.subject, "tts-original.mp3")));
+      assert.match(
+        fs.readFileSync(path.join(f.subject, "production-record.md"), "utf8"),
+        /rejected voice/
+      );
+      assert.equal(f.run(["--subject", "Example", "--write"]).status, 0);
+    } else {
+      assert.notEqual(result.status, 0, result.stdout);
+      assert.ok(fs.existsSync(path.join(f.subject, file)));
+      assert.ok(fs.existsSync(path.join(f.subject, "work/images/000000.png")));
+    }
+  });
+}
 const RECORD = `# Production record
 
 ## Subject and angle

@@ -97,6 +97,21 @@ non-applicable review or voice choice. Never manufacture approval or a locator.
 All source files remain kept even when the metadata is complete; it is recovery
 documentation, not proof that re-fetch succeeded.
 
+For an explicitly rejected audition, the record may also declare `retiredTakes`.
+Each entry names `path`, its current `sha256`, a retained audio `replacement`, the
+existing decision document `evidence`, and a non-empty English `reason`. Only audio
+under `work/` whose path includes `non-retenue`, `rejected` or `discarded` qualifies.
+The decision must identify that take as rejected; current master and alignment must
+survive, and other documents must not still reference it. Take, replacement and
+evidence hashes are checked again before deletion and written to the receipt. This
+is a bounded KEEP-SMALL-SUBSET exception, not permission to discard every older take
+or an approved performance. An explicit `keep` wins.
+
+An existing workshop-only `cards.json` to `cartes.json` alias (or its reverse) is
+retained when its target is the regular counterpart in the same directory. It is
+neither followed by inventory nor deleted. Other symlinks, alias chains, outside
+targets and library symlinks still refuse cleanup.
+
 ````markdown
 # Production record
 
