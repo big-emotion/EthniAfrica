@@ -9,6 +9,8 @@ commit `be9084345`, consolidates its P0–P6 work, and operationalizes all 33 fi
 [contradictions audit](contradictions-2026-09-30/README.md). The audit remains dated evidence,
 not a second normative guide. PR #1422 (guide/personas) and PR #1424 (audit) are merged.
 Planning baseline: `93cc2288945dd0ba8c26ade58eb073a6b07349a5` on recette.
+Progress and evidence for each finding: [closure ledger](remediation-2026-09-30/README.md);
+the frozen review cases are in [review-cases.md](remediation-2026-09-30/review-cases.md).
 
 ## Outcome and governing intent
 
