@@ -224,3 +224,22 @@ Wikipedia page, or on a work nobody read, is dropped or flagged.
   CC BY-SA 4.0) vs the 2025 public-domain file is unresolved.
 - **Improvement over the video.** Puts each people's own name before the word, and gives the
   word's history and the 2011 law with their sources and limits.
+
+## Case B9 — `rastafari-ras-tafari` — **left unwritten**
+
+- **Reader's question.** Where does the word Rastafari come from?
+- **Why no body was written.** Every factual claim of the carousel rests on works nobody on the
+  project has read: our Amhara fiche, which the workshop used as its anchor, cites Marcus 1994,
+  Witakowski & Balicka-Witakowska 2013 and Murrell et al. 1998 with the note that each was
+  "cited by Wikipedia" and "not consulted directly". Leslau 1987 and the SBS Cultural Atlas are
+  not recorded as opened either. Attempts to reach a non-Wikipedia source for this article failed
+  (Britannica: HTTP 403; Jamaica Gleaner: redirect then HTTP 503). Writing the body would publish
+  Wikipedia's reading under the names of books.
+- **Unresolved flag.** Date conflict on the negus coronation: the carousel says 5 November 1928
+  (card 3, also the date of the coronation photograph's caption), while the fiche's note on Marcus
+  gives 7 October 1928 (via Wikipedia). Cards 1 and 7 reuse one image.
+- **What would unblock it.** Open Marcus 1994 (or another dated history) for 1917, 1928 and
+  2 November 1930; the 1955 Constitution text for article 2; one Rastafari history (Murrell et al.
+  or equivalent) for the 1933 start in Jamaica. The claims could then be written as a short
+  article: Tafari son of Makonnen, ras, negus, Negusa Nagast as Haile Selassie, the claimed
+  Solomonic line as a claim, and the Jamaican movement taking the pre-1930 name.
