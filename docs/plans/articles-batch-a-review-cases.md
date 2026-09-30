@@ -182,3 +182,29 @@ work nobody read, is dropped or left flagged.
   of several names was never checked by ear (workshop note); credit-check on all nine cards.
 - **Why short.** The evidence is a statement of intent. Padding it with facts about the named
   examples would be writing a different article; the article links to the ones that exist.
+
+## Case A7 — `daloa-zokou-gbeuly`
+
+- **Reader's question.** Who was Zokou Gbeuly, the man Daloa remembers as its founder? (The
+  imported title asked where the name Daloa comes from; no source consulted answers that.)
+- **Primary reader need.** P2 (Bété and Daloa readers) and P1.
+- **Claims and support.**
+  | Claim                                                                                                                                               | Record source                                    |
+  | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+  | Zokou Gbeuly, 1835–1912                                                                                                                             | s4 (opened: IdRef authority record)              |
+  | A 2020 collective book presents him as a resistance figure and "fondateur de la Cité de Daloa"; deported in 1911, died in exile at Zuénoula in 1912 | s1 (publisher page opened, not the book)         |
+  | About a thousand fighters from Sabwa, Galebha and Labéa burned the Daloa post; arrested 1911, deported to Zuénoula, died 1912                       | s3 (opened)                                      |
+  | Born 1835 at Daloa; welcomed the colonists, then turned against them; 26 September 1906 revolt; second uprising in 1907; deported 4 October 1911    | s2 (opened; a blog, tier to be ruled)            |
+  | His name is written Zokou Gbeuly, Gbeuli, Zoku'o Gbëli; our own people record writes Gbéouli                                                        | s1, s2, s3, s4 (opened) ; our Bété people record |
+- **Uncertainty.** The origin of the name Daloa is not documented in any source read. The name
+  of the colonial agent killed in 1906 differs between sources and is not written. "Founder"
+  is the book's description, not an independently documented fact.
+- **Dropped or flagged.** 1893 as the date of colonisation (taken from an earlier project post,
+  not from these sources); "no Wikipedia page" (s5 is a workshop observation, not a source —
+  its title is left as imported, flagged for the operator); the one-line-in-our-corpus framing
+  (internal, and the count changes). Flags: **title changed** from "D'où vient le nom Daloa ?"
+  to a question the evidence answers (operator may revert); registry status (library `pret`,
+  site ledger live); slides recovered from the workshop, not proven to be the posted files;
+  cards 1/2 and 3–6 reuse images; no portrait exists.
+- **Improvement over the carousel.** Names which source says what, including the book's own
+  "founder" framing, and shows the name's several spellings instead of fixing one.
