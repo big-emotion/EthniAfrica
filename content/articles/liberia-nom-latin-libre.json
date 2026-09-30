@@ -8,24 +8,100 @@
   "fr": {
     "slug": "liberia-nom-latin-libre",
     "title": "D'où vient le nom Liberia ?",
-    "excerpt": "Libéria : un nom donné par une société privée.",
-    "sections": []
+    "excerpt": "Le nom Liberia est lié à l'American Colonization Society, une organisation privée américaine. On en attribue souvent l'invention à Robert Goodloe Harper, en 1824. Mais le mot était imprimé dès 1822, et la personne qui l'a formé n'est pas identifiée.",
+    "sections": [
+      {
+        "heading": "Un nom venu d'une organisation privée",
+        "paragraphs": [
+          "Le nom Liberia n'a été donné ni par un roi ni par un État. En 1816, un groupe d'Américains blancs fonde l'American Colonization Society, une organisation privée. Son projet : installer en Afrique des Noirs libres des États-Unis, dont le nombre croissant était présenté comme un « problème ».",
+          "Le nom est formé sur le latin liber, « libre », en référence à l'installation d'Afro-Américains affranchis sur cette côte."
+        ],
+        "sourceRefs": ["s1", "s5"]
+      },
+      {
+        "heading": "1821 : d'abord, la terre",
+        "paragraphs": [
+          "Avant le nom, il a fallu la terre. En 1821, un dirigeant de la côte cède à la société une bande de terre, là où Monrovia sera bâtie. Le service historique du Département d'État américain écrit que l'officier de marine qui menait l'opération, le lieutenant Robert Stockton, l'y a contraint.",
+          "Ce cap avait déjà un nom. Notre fiche indique qu'on l'appelait Ducor, du nom que lui donnaient les Dei et les Bassa."
+        ],
+        "sourceRefs": ["s1", "s5"]
+      },
+      {
+        "heading": "1822 ou 1824 ? Le nom est plus ancien qu'on ne le dit",
+        "paragraphs": [
+          "La version la plus répandue attribue le nom à Robert Goodloe Harper, un membre de la société, qui l'aurait proposé à l'assemblée annuelle de février 1824. La page du Département d'État date elle aussi de 1824 le moment où l'établissement est nommé Liberia.",
+          "L'historien Fred van der Kraaij, dans un livre publié en 2026 par l'African Studies Centre de Leyde, montre que le mot existait déjà en 1822 : il circulait dans la presse américaine et dans les publications de la société, plus d'un an avant l'assemblée. Il a cherché qui l'avait écrit le premier, et conclut qu'aucun auteur identifié ne convient.",
+          "Les deux dates coexistent donc : 1824 dans la version officielle, 1822 dans cette étude récente. Qui a formé le mot n'est pas établi."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      },
+      {
+        "heading": "Monrovia et Harper : des noms sans doute",
+        "paragraphs": [
+          "Pour la capitale, il n'y a pas de doute : Monrovia porte le nom de James Monroe, président des États-Unis, qui avait obtenu davantage d'argent public pour le projet.",
+          "Sur la côte, une ville porte le nom de Harper. Les archives d'État du Maryland, qui retracent sa carrière, indiquent que la ville libérienne de Harper porte son nom. Elles ne lui attribuent pas le nom du pays.",
+          "Au recensement libérien de 2008, les chefs-lieux s'appellent Monrovia, Buchanan, Harper, Greenville, Robertsport : une côte en grande partie nommée depuis l'autre rive de l'Atlantique."
+        ],
+        "sourceRefs": ["s1", "s4", "s3"]
+      },
+      {
+        "heading": "Avant et à côté de ces noms",
+        "paragraphs": [
+          "Les peuples de cette côte avaient leurs propres noms, pour eux-mêmes et pour leurs lieux. Les Vai, par exemple, y ont mis au point leur propre écriture, l'un des rares systèmes d'écriture conçus en Afrique.",
+          "En 1847, le Liberia déclare son indépendance à l'égard de la société, et le nom devient celui d'un État souverain."
+        ],
+        "sourceRefs": ["s5", "s1"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "Le nom Liberia vient du projet d'une organisation privée américaine. On l'attribue d'habitude à Robert Goodloe Harper en 1824, mais le mot circulait dès 1822, et la personne qui l'a formé n'est pas identifiée. La capitale, elle, porte sans ambiguïté le nom d'un président américain.",
+          "Connaissez-vous d'autres noms, plus anciens, pour des lieux de cette côte ? Dites-nous qui les emploie et d'où vous les tenez."
+        ],
+        "sourceRefs": ["s1", "s2", "s4"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
   },
   "sources": [
     {
       "id": "s1",
-      "title": "U.S. Department of State, Office of the Historian",
-      "tier": "needs_review"
+      "title": "U.S. Department of State, Office of the Historian, « Founding of Liberia, 1847 »",
+      "tier": "needs_review",
+      "url": "https://history.state.gov/milestones/1830-1860/liberia",
+      "kind": "web"
     },
     {
       "id": "s2",
-      "title": "F. van der Kraaij, African Studies Centre Leiden, 2026",
-      "tier": "needs_review"
+      "title": "F. van der Kraaij, Liberia in the 19th Century: From American Colony to African Republic, African Studies Centre Leiden, 2026",
+      "tier": "needs_review",
+      "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
+      "kind": "book",
+      "notes": "Le livre relève des emplois du nom Liberia dès 1822 et discute qui l'a formé."
     },
     {
       "id": "s3",
-      "title": "Recensement national du Libéria, 2008",
-      "tier": "needs_review"
+      "title": "Republic of Liberia, 2008 Population and Housing Census — Highlights",
+      "tier": "needs_review",
+      "url": "https://www.paris21.org/sites/default/files/LIBERIA_census.pdf",
+      "kind": "archive"
+    },
+    {
+      "id": "s4",
+      "title": "Maryland State Archives, notice biographique de Robert Goodloe Harper",
+      "url": "https://msa.maryland.gov/megafile/msa/speccol/sc3500/sc3520/002000/002031/html/02031bio.html",
+      "tier": "needs_review",
+      "kind": "archive"
+    },
+    {
+      "id": "s5",
+      "title": "Fiche pays du Libéria, EthniAfrica",
+      "tier": "needs_review",
+      "notes": "Notre fiche pays : la formation du nom sur le latin liber, l'ancien nom Ducor du cap de Monrovia, l'écriture vai et l'indépendance de 1847."
     }
   ],
   "media": {

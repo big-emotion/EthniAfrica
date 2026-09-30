@@ -143,3 +143,28 @@ Wikipedia page, or on a work nobody read, is dropped or flagged.
   be the files posted**; post.md records no URL for any network; the ledger links the campaign.
 - **Improvement over the carousel.** Separates the word's colonial meaning from the self-name, and
   says that the four groups became one people over decades, not on arrival.
+
+## Case B6 — `liberia-nom-latin-libre`
+
+- **Reader's question.** Who named Liberia?
+- **Primary reader need.** P1 and P3; P2 for Liberian readers who met the official "bicentenary of
+  the name".
+- **Claims and support.**
+  | Claim                                                                                                                        | Record source                                                     |
+  | ---------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+  | ACS founded 1816 by a group of white Americans, to resettle free Black Americans in Africa                                   | s1 (opened)                                                       |
+  | 1821: Lieutenant Robert Stockton "coerced a local ruler to sell a strip of land"                                             | s1 (opened)                                                       |
+  | Monrovia named after James Monroe, who procured more US government money; the State Department page dates the naming to 1824 | s1 (opened)                                                       |
+  | The name Liberia already existed in 1822, not 1824 "as is the official version"                                              | s2 (abstract opened)                                              |
+  | Harper "proposed" the name at the February 1824 meeting; van der Kraaij finds no identified author who fits                  | s2 (workshop reading of the book; not opened beyond the abstract) |
+  | The town of Harper is named for him; the archive does not attach the country's name to him                                   | s4 Maryland State Archives (opened)                               |
+  | County seats Monrovia, Buchanan, Harper, Greenville, Robertsport                                                             | s3 (workshop reading)                                             |
+  | Formed on Latin liber; Ducor, the cape's earlier name used by the Dei and Bassa; Vai script; independence 26 July 1847       | s5 (our fiche, read)                                              |
+- **Uncertainty.** The first user of the word is not identified; 1822 vs 1824 is a disagreement
+  between an official US page and a 2026 study, stated as such.
+- **Dropped or flagged.** "Ces peuples n'ont pas été rassemblés…" (closing rhetoric, not repeated
+  as a finding). The Latin etymology is only in our fiche (unsourced there) and in the reel
+  narration, not on the carousel. Card 9 cites the census for the Vai script (the census does not
+  carry it). Credit-check on cards 1, 4, 6, 9; cards 1/6/10 and 2/4 reuse images.
+- **Improvement over the carousel.** Shows the two dates side by side with who holds each, and
+  gives the reader the earlier name of the cape.
