@@ -54,19 +54,6 @@ were referenced by nothing at all, two of them written that same week.
 
 ## Editorial — doctrine, audits and essays
 
-<<<<<<< HEAD
-
-- [Editorial unification — implementation plan](editorial/remediation-plan-2026-09-30.md)
-
-- [Editorial remediation — closure ledger and frozen review cases](editorial/remediation-2026-09-30/README.md)
-
-- [Editorial contradictions audit — 2026-09-30](editorial/contradictions-2026-09-30/README.md)
-
-- [Editorial voice review — 2026-09-30](editorial/editorial-voice-review-2026-09-30.md)
-  \=======
-
-> > > > > > > origin/recette
-
 - [Editorial personas](editorial/audience-personas.md)
 - [Audit — where the publication rules live](editorial/audit-doctrine-publication-2026-09-17.md)
 - [Editorial classification status](editorial/classification-status.md)
