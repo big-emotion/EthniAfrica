@@ -135,6 +135,15 @@ export function ArticleCarousel({
         <span className={styles.position} aria-hidden="true">
           {copy.position(current + 1, total)}
         </span>
+        <button
+          type="button"
+          className={styles.carouselButton}
+          onClick={() => show(current + 1)}
+          disabled={current === total - 1}
+          aria-label={copy.next}
+        >
+          <ChevronRight aria-hidden="true" size={20} />
+        </button>
         <DialogPrimitive.Root open={enlarged} onOpenChange={setEnlarged}>
           <DialogPrimitive.Trigger asChild>
             <button type="button" className={styles.enlarge}>
@@ -166,15 +175,6 @@ export function ArticleCarousel({
             </DialogPrimitive.Content>
           </DialogPrimitive.Portal>
         </DialogPrimitive.Root>
-        <button
-          type="button"
-          className={styles.carouselButton}
-          onClick={() => show(current + 1)}
-          disabled={current === total - 1}
-          aria-label={copy.next}
-        >
-          <ChevronRight aria-hidden="true" size={20} />
-        </button>
       </div>
       {/* Visible count above is for the eye; this line is for the ear, and
           speaks only when the slide changes. */}

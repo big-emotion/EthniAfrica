@@ -76,7 +76,7 @@ export function ArticleView({ language, article, related }: ArticleViewProps) {
       </header>
 
       {hasMedia ? (
-        <>
+        <div className={styles.mediaBlock}>
           <a className={styles.skip} href={`#${TEXT_ID}`}>
             {copy.skipToText}
           </a>
@@ -95,16 +95,17 @@ export function ArticleView({ language, article, related }: ArticleViewProps) {
             ) : null}
             <Originals language={language} article={article} />
           </section>
-        </>
+        </div>
       ) : null}
 
       <div className={styles.text} id={TEXT_ID}>
         <p className={styles.lead}>{body.excerpt}</p>
-        {body.sections.map((section) => (
-          <section className={styles.section} key={section.heading}>
+        {body.sections.map((section, index) => (
+          <section className={styles.section} key={index}>
             <h2>{section.heading}</h2>
-            {section.paragraphs.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
+            {/* Keyed by position: nothing forbids two identical paragraphs. */}
+            {section.paragraphs.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
             ))}
             {section.sourceRefs.length > 0 ? (
               <ul className={styles.cited} aria-label={copy.citedBy}>

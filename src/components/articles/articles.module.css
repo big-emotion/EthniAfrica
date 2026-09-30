@@ -63,9 +63,10 @@
 
 .card {
   display: grid;
-  grid-template-columns: 96px minmax(0, 1fr);
+  grid-template-columns: 72px minmax(0, 1fr);
   gap: var(--afh-space-2xl);
   align-items: start;
+  align-content: start;
   height: 100%;
   padding: var(--afh-space-2xl);
   border: 1px solid var(--afh-border);
@@ -94,18 +95,21 @@
   outline-offset: 2px;
 }
 
+/* Contained, never cropped: a post's poster carries its own words, and a
+   crop that cuts « CAMEROUN » in half is a misquotation. The warm ground
+   fills whatever the poster's ratio leaves. */
 .cardPoster {
   width: 100%;
   height: auto;
   aspect-ratio: 4 / 5;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: var(--afh-radius-md);
   background: var(--afh-bg-warm);
 }
 
 @media (min-width: 768px) {
   .cardPoster {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 4 / 3;
   }
 }
 
@@ -150,6 +154,14 @@
   line-height: var(--afh-leading-body);
 }
 
+/* Form B: the retry sits inside the sentence that explains the failure. */
+.state a,
+.pager a {
+  color: var(--accent-ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .pager {
   display: flex;
   align-items: center;
@@ -158,10 +170,22 @@
   border-top: 1px solid var(--afh-border);
   padding-top: var(--afh-space-2xl);
   font-size: var(--afh-text-small);
+  /* Anchored to the list's edges, not to the phone's centring default. */
+  text-align: left;
+}
+
+.pager > span {
+  white-space: nowrap;
 }
 
 .pagerStep {
-  min-width: 6rem;
+  min-width: 4.5rem;
+}
+
+.pagerStep a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 
 .pagerStep:last-child {
@@ -171,15 +195,24 @@
 /* ——— Article ——— */
 
 /* One box for the whole document: title, media, prose and apparatus share
-   one left edge at every width (plan §4.2). The measure is the container's,
-   not the paragraph's (typography charter §5). */
+   one left edge at every width (plan §4.2), and it is the trail's edge —
+   centring the box put the trail and the title on two verticals from
+   tablet up. The measure is the container's, not the paragraph's
+   (typography charter §5). */
 .article {
   display: grid;
   gap: var(--afh-section-gap);
   width: 100%;
   max-width: 46rem;
-  margin-inline: auto;
   text-align: left;
+}
+
+/* The skip link belongs to the media it skips, so it sits at the media's
+   own spacing rather than a section-gap away from it. */
+.mediaBlock {
+  display: grid;
+  gap: var(--afh-space-md);
+  min-width: 0;
 }
 
 .article :is(h1, h2, h3, p, li, figcaption, dt, dd) {
@@ -280,11 +313,11 @@
   background: var(--afh-night-ground);
 }
 
+/* The summary keeps its list-item display, so the disclosure triangle stays:
+   it is the only sign that the line opens. Padding gives it the 44px target. */
 .disclosure summary {
   cursor: pointer;
-  min-height: 44px;
-  display: flex;
-  align-items: center;
+  padding-block: var(--afh-space-lg);
   font-size: var(--afh-text-small);
   font-weight: var(--afh-weight-semibold);
 }
@@ -469,11 +502,16 @@
   object-fit: contain;
 }
 
+/* Step, count, step side by side — the count reads as the position between
+   the two moves — and the enlargement, a different act, at the far edge. */
 .controls {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: var(--afh-space-lg);
+}
+
+.controls .enlarge {
+  margin-left: auto;
 }
 
 .carouselButton,
