@@ -109,10 +109,10 @@ they must not explain how the source-classification pipeline assigned its tier.
 
 ### How to say it instead
 
-| Workshop register                                                                                             | Reader register                                                                                   |
-| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| Generated from the candidate queue; the field awaits the per-fiche research protocol.                         | The atlas does not yet document this point for this name: no dedicated source has been consulted. |
-| Source passage: PPL_DIOULA, clan organisation chapter. Inherited tier unresolved; claim-level review pending. | Taken from the "Clan organisation" chapter of the Dioula people's fiche.                          |
-| AFRIK corpus — PPL_DIOULA, clan organisation                                                                  | EthniAfrica — fiche of the Dioula people, clan organisation                                       |
-| No deceased bearer was attached to the jamu by the sources of this pass.                                      | No bearer has been attached to the jamu by the sources consulted.                                 |
-| Machine translation of the French note; class 3, not yet reviewed.                                            | (nothing — the provenance marker says it)                                                         |
+| Workshop register                                                                                             | Reader register                                                                                  |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Generated from the candidate queue; the field awaits the per-fiche research protocol.                         | We do not yet document this point for this name: no dedicated source has been consulted.         |
+| Source passage: PPL_DIOULA, clan organisation chapter. Inherited tier unresolved; claim-level review pending. | Taken from the "Clan organisation" chapter of the Dioula people's fiche.                         |
+| AFRIK corpus — PPL_DIOULA, clan organisation                                                                  | EthniAfrica — fiche of the Dioula people, clan organisation                                      |
+| No deceased bearer was attached to the jamu by the sources of this pass.                                      | We do not yet present a bearer of this jamu: the sources consulted attach none that we can name. |
+| Machine translation of the French note; class 3, not yet reviewed.                                            | (nothing — the provenance marker says it)                                                        |

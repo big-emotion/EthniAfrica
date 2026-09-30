@@ -87,8 +87,10 @@ prevents.
 9. **The reader-facing register applies in English.** `gaps[].reason`,
    `sources[].title` and `sources[].notes` carry no path, no identifier and
    none of the pipeline's vocabulary — _sidecar_, _class 3_, _research pass_,
-   _coverage plan_ included. The French gate does not read English yet; you
-   are the guard.
+   _coverage plan_ included. The editorial gate reads the English sidecars
+   against the English vocabulary list, and French fiches against both lists,
+   but it only matches words: whether a sentence keeps its meaning is yours to
+   judge.
 10. **Bilingual pairs are reused, never re-translated.** `nameEn` on families,
     languages and countries.
 11. **No markdown in prose**, in either language.

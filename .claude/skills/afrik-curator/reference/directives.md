@@ -74,9 +74,10 @@ Reference year **2025**.
 - A people's `distributionByCountry[].percentage` totals 100 %.
 - A country's `demographics.peoples[].percentageInCountry` totals 100 %.
 
-The validator enforces a hard band of [95, 105] and a strict band of [99, 101], and **both
-now fail the build** — the re-sourcing burn-down that made them advisory is finished, so a
-fiche cannot drift back out.
+The validator reports a wide band [95, 105] and a strict band [99, 101] as **warnings that
+name the record and its sum, never failures** (DEC-055, REQ-170). Aim for the strict band.
+When a breakdown cannot reach it, keep the dated estimates you have and let the page say the
+breakdown is incomplete — never adjust a figure to make it total, and never omit a partial one.
 
 Cite the demographic source, and beware a stale vintage: a census a decade old is a
 different claim from a 2025 estimate, and saying so is part of the citation.
