@@ -233,3 +233,43 @@ work nobody read, is dropped or left flagged.
   reviewed and kept it).
 - **Improvement over the carousel.** States plainly that the meaning is unknown and that 1734 is
   the oldest written mention found, not the birth of the name.
+
+## Case A9 — `dioula-un-metier-une-langue-une-identite` (carries a correction)
+
+- **Reader's question.** Where does the name Dioula come from? Is it a trade, a language or a
+  people?
+- **Primary reader need.** P2 (readers who call themselves Dioula — the 12 September carousel
+  denied that belonging, and readers corrected it in comments) and P1.
+- **Evidence base.** The selected edition is the 12 September carousel, whose first two cards
+  carry two claims the project has since retracted: "Dioula n'est pas un nom de peuple" and
+  "Eux se nomment Julakan : les gens du commerce". The operator approved a correction text on
+  2026-09-23 (`correction.fr.md`) together with a revised narration for a video that exists only
+  as a proof. The article is written from that approved correction and revised narration and
+  their sources, not from the retracted cards.
+- **Claims and support.**
+  | Claim                                                                                                                                                                                                                                                          | Record source                              |
+  | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+  | Correction, quoted from the approved text                                                                                                                                                                                                                      | approved correction; s3, s4, s6            |
+  | Speakers translate _jula_ as "commerçant"; the name comes from the Manding _jùla_, "marchand"                                                                                                                                                                  | s4 (opened, §22, 24, 29)                   |
+  | Niane (1985): in the Ivorian forest the Manden are called by the Maninka term Jula, "commerçant"; Wangara and Jula designate especially the Manden engaged in trade; in the fourteenth century Mandenka merchants went south into the forest for cola and gold | s5 (opened, p. 141 n. 1, p. 142)           |
+  | First written mention of _jula_: Richard Jobson, 1623 (Bathily, cited by Cissé)                                                                                                                                                                                | s3 (opened)                                |
+  | The ultimate origin is not settled: Cissé proposes Arabic _jawla_ ("tournée") as his hypothesis; Bathily reports a Soninke sense of an activity carried from one place to another                                                                              | s3 (opened)                                |
+  | Local variation: "ethnie" at Kong, "commerçant" at Odienné                                                                                                                                                                                                     | s3 (opened)                                |
+  | Julakan = jula + kan ("langue"): the language name                                                                                                                                                                                                             | s6 (workshop reading; not opened)          |
+  | The 1889 Binger map names Pays de Kong, États de Samori, Mossi, Gondja and draws no inland border                                                                                                                                                              | s1 (map read on the image by the workshop) |
+- **Uncertainty.** The deeper etymology is open (Arabic and Soninke proposals attributed, none
+  crowned); Kong's founding date is contested and not given; speaking the language, trading and
+  identifying as Dioula are not interchangeable tests.
+- **Dropped or flagged.** The narration's quote attributed to Niane p. 142 ("Le nom de 'Dioula'
+  … à partir du XIVe siècle", relayed from photographs, "l'événement historique capital de la
+  dispersion des Mandé") was **not found** in the online chapter opened; the article uses what
+  that chapter does say. Kong's 1710 founding and the Asante-pressure retreat (uncited in our
+  record / unnamed atlas), Samory's 1897 destruction (rests on s2, not read), Bobo-Dioulasso and
+  _faso_ (our records only), population figures, the colonial-borders conclusion of the video
+  script (an ethical statement, not a sourced finding). **Contract note:** four sources (s3–s6)
+  were added to the record because the record's two sources cannot support the approved
+  correction. **Media flag, for the operator:** the carousel shown with this article still
+  displays the retracted claims on cards 1 and 2; the corrected video is unpublished, so no
+  superseding edition exists to point to.
+- **Improvement over the carousel.** The article corrects the carousel openly, in the approved
+  words, and separates the trade word, the language name and a lived identity.
