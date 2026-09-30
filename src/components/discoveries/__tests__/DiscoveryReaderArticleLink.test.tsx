@@ -1,6 +1,7 @@
 import { fireEvent, render, screen, within } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
+import { articleHref } from "@/components/articles/articlePaths";
 import { DiscoveryReader } from "@/components/discoveries/DiscoveryReader";
 import { getDiscoveryPublications } from "@/lib/discoveries/entries";
 
@@ -20,7 +21,7 @@ describe("Découvertes — the matching article", () => {
         language="fr"
         publications={publications}
         initialId={initialId}
-        articleLinks={{ [initialId]: "/fr/dossiers/un-article" }}
+        articleLinks={{ [initialId]: articleHref("fr", "un-article") }}
       />
     );
     openDetail();
@@ -29,7 +30,7 @@ describe("Découvertes — the matching article", () => {
       within(screen.getByRole("dialog")).getByRole("link", {
         name: "Lire l'article",
       })
-    ).toHaveAttribute("href", "/fr/dossiers/un-article");
+    ).toHaveAttribute("href", articleHref("fr", "un-article"));
   });
 
   // @req REQ-157
