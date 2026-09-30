@@ -1,0 +1,574 @@
+/* Articles — the listing and the shared article page.
+
+   Every block here is ragged-right (brand charter §8.1): the body-level
+   centring below 768px is for bands of one or two lines, and an article is
+   made of paragraphs. Spacing stays on the ramp 4 · 8 · 12 · 16 · 24 · 32 ·
+   48 · 64; sections are separated by the section-gap token only. */
+
+/* ——— Listing ——— */
+
+.listing {
+  display: grid;
+  gap: var(--afh-section-gap);
+  text-align: left;
+}
+
+.listing :is(p, h2, li, a) {
+  text-align: left;
+}
+
+.collections {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--afh-space-md) var(--afh-space-2xl);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.collectionsLabel {
+  margin: 0;
+  width: 100%;
+  font-size: var(--afh-text-eyebrow);
+  font-weight: var(--afh-eyebrow-weight);
+  letter-spacing: var(--afh-eyebrow-tracking);
+  text-transform: var(--afh-eyebrow-transform);
+  color: var(--afh-text-soft);
+}
+
+/* One column on a phone, two from tablet, three from desktop — and never a
+   squeezed card: the columns take their minimum from the card, not the
+   viewport. */
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--afh-space-5xl);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: var(--afh-space-2xl);
+  align-items: start;
+  align-content: start;
+  height: 100%;
+  padding: var(--afh-space-2xl);
+  border: 1px solid var(--afh-border);
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-surface);
+  color: var(--afh-text);
+  text-decoration: none;
+}
+
+/* From tablet the poster sits above the words: a card two columns wide has
+   room for the picture a phone row does not. */
+@media (min-width: 768px) {
+  .card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.card:hover .cardTitle,
+.card:focus-visible .cardTitle {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--accent-ink);
+  outline-offset: 2px;
+}
+
+/* Contained, never cropped: a post's poster carries its own words, and a
+   crop that cuts « CAMEROUN » in half is a misquotation. The warm ground
+   fills whatever the poster's ratio leaves. */
+.cardPoster {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  border-radius: var(--afh-radius-md);
+  background: var(--afh-bg-warm);
+}
+
+@media (min-width: 768px) {
+  .cardPoster {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.cardBody {
+  display: grid;
+  gap: var(--afh-space-md);
+  min-width: 0;
+}
+
+/* Typography charter §4: display face at body size, so twelve cards never
+   shout over the page title. */
+.cardTitle {
+  margin: 0;
+  font-family: var(--afh-font-display);
+  font-weight: var(--afh-weight-bold);
+  font-size: var(--afh-text-body);
+  line-height: var(--afh-leading-snug);
+  overflow-wrap: anywhere;
+}
+
+.cardExcerpt {
+  margin: 0;
+  font-size: var(--afh-text-small);
+  line-height: var(--afh-leading-small);
+  color: var(--afh-text-soft);
+}
+
+.cardMeta {
+  margin: 0;
+  font-size: var(--afh-text-caption);
+  line-height: var(--afh-leading-caption);
+  color: var(--afh-text-soft);
+}
+
+.state {
+  margin: 0;
+  padding: var(--afh-space-5xl);
+  border: 1px solid var(--afh-border);
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-bg-warm);
+  font-size: var(--afh-text-body);
+  line-height: var(--afh-leading-body);
+}
+
+/* Form B: the retry sits inside the sentence that explains the failure. */
+.state a,
+.pager a {
+  color: var(--accent-ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--afh-space-lg);
+  border-top: 1px solid var(--afh-border);
+  padding-top: var(--afh-space-2xl);
+  font-size: var(--afh-text-small);
+  /* Anchored to the list's edges, not to the phone's centring default. */
+  text-align: left;
+}
+
+.pager > span {
+  white-space: nowrap;
+}
+
+.pagerStep {
+  min-width: 4.5rem;
+}
+
+.pagerStep a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.pagerStep:last-child {
+  text-align: right;
+}
+
+/* ——— Article ——— */
+
+/* One box for the whole document: title, media, prose and apparatus share
+   one left edge at every width (plan §4.2), and it is the trail's edge —
+   centring the box put the trail and the title on two verticals from
+   tablet up. The measure is the container's, not the paragraph's
+   (typography charter §5). */
+.article {
+  display: grid;
+  gap: var(--afh-section-gap);
+  width: 100%;
+  max-width: 46rem;
+  text-align: left;
+}
+
+/* The skip link belongs to the media it skips, so it sits at the media's
+   own spacing rather than a section-gap away from it. */
+.mediaBlock {
+  display: grid;
+  gap: var(--afh-space-md);
+  min-width: 0;
+}
+
+.article :is(h1, h2, h3, p, li, figcaption, dt, dd) {
+  text-align: left;
+}
+
+.head {
+  display: grid;
+  gap: var(--afh-space-lg);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--afh-font-display);
+  font-weight: var(--afh-weight-black);
+  font-size: var(--afh-text-h1);
+  line-height: var(--afh-leading-h1);
+  color: var(--afh-text);
+  overflow-wrap: anywhere;
+}
+
+.byline {
+  margin: 0;
+  font-size: var(--afh-text-small);
+  line-height: var(--afh-leading-small);
+  color: var(--afh-text-soft);
+}
+
+.skip {
+  justify-self: start;
+  font-size: var(--afh-text-small);
+  font-weight: var(--afh-weight-semibold);
+  color: var(--accent-ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.media {
+  display: grid;
+  gap: var(--afh-space-lg);
+  min-width: 0;
+}
+
+.formatSwitch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--afh-space-md);
+}
+
+.formatButton {
+  min-height: 44px;
+  padding-inline: var(--afh-space-2xl);
+  border: 1px solid var(--afh-border);
+  border-radius: var(--afh-radius-full);
+  background: var(--afh-surface);
+  color: var(--afh-text);
+  font-size: var(--afh-text-small);
+  cursor: pointer;
+}
+
+.formatButton[aria-pressed="true"] {
+  border-color: var(--accent-ink);
+  background: var(--accent-tint);
+  font-weight: var(--afh-weight-semibold);
+}
+
+.formatButton:focus-visible,
+.carouselButton:focus-visible,
+.enlarge:focus-visible {
+  outline: 2px solid var(--accent-ink);
+  outline-offset: 2px;
+}
+
+.mediaNote {
+  margin: 0;
+  font-size: var(--afh-text-caption);
+  line-height: var(--afh-leading-caption);
+  color: var(--afh-text-soft);
+}
+
+.unavailable {
+  margin: 0;
+  padding: var(--afh-space-2xl);
+  border: 1px solid var(--afh-border);
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-bg-warm);
+  font-size: var(--afh-text-small);
+}
+
+.nativeVideo {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 75svh;
+  background: var(--afh-night-ground);
+}
+
+/* The summary keeps its list-item display, so the disclosure triangle stays:
+   it is the only sign that the line opens. Padding gives it the 44px target. */
+.disclosure summary {
+  cursor: pointer;
+  padding-block: var(--afh-space-lg);
+  font-size: var(--afh-text-small);
+  font-weight: var(--afh-weight-semibold);
+}
+
+.disclosure p,
+.disclosure li {
+  font-size: var(--afh-text-small);
+  line-height: var(--afh-leading-small);
+}
+
+.originals {
+  display: grid;
+  gap: var(--afh-space-xs);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--afh-text-small);
+}
+
+.originals a {
+  color: var(--accent-ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.correction {
+  margin: 0;
+  padding: var(--afh-space-2xl);
+  border-left: 4px solid var(--accent-ink);
+  border-radius: var(--afh-radius-0);
+  background: var(--afh-bg-warm);
+  font-size: var(--afh-text-small);
+  line-height: var(--afh-leading-small);
+}
+
+.correction strong {
+  display: block;
+  margin-bottom: var(--afh-space-xs);
+}
+
+.text {
+  display: grid;
+  gap: var(--afh-space-6xl);
+  scroll-margin-top: var(--afh-space-9xl);
+}
+
+.lead {
+  margin: 0;
+  font-size: var(--afh-text-lead);
+  line-height: var(--afh-leading-lead);
+}
+
+.section {
+  display: grid;
+  gap: var(--afh-space-2xl);
+}
+
+.section h2,
+.apparatus h2 {
+  margin: 0;
+  font-family: var(--afh-font-display);
+  font-weight: var(--afh-weight-bold);
+  font-size: var(--afh-text-h2);
+  line-height: var(--afh-leading-h2);
+}
+
+.section p {
+  margin: 0;
+  font-size: var(--afh-text-body);
+  line-height: var(--afh-leading-body);
+}
+
+.cited {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--afh-space-md);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--afh-text-caption);
+}
+
+.cited a {
+  color: var(--accent-ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.apparatus {
+  display: grid;
+  gap: var(--afh-space-2xl);
+  border-top: 1px solid var(--afh-border);
+  padding-top: var(--afh-space-5xl);
+}
+
+/* The citation apparatus takes the sharp corner (actions charter §6). */
+.references {
+  display: grid;
+  gap: var(--afh-space-lg);
+  margin: 0;
+  padding-left: var(--afh-space-5xl);
+  font-size: var(--afh-text-small);
+  line-height: var(--afh-leading-small);
+}
+
+.references li {
+  scroll-margin-top: var(--afh-space-9xl);
+}
+
+.references li:target {
+  outline: 2px solid var(--accent-ink);
+  outline-offset: 4px;
+}
+
+.references a {
+  color: var(--accent-ink);
+  overflow-wrap: anywhere;
+}
+
+.tier {
+  display: inline-block;
+  margin-left: var(--afh-space-md);
+  padding: 0 var(--afh-space-xs);
+  border: 1px solid var(--afh-border);
+  border-radius: var(--afh-radius-0);
+  font-size: var(--afh-text-caption);
+  color: var(--afh-text-soft);
+}
+
+.related {
+  display: grid;
+  gap: var(--afh-space-md);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ——— Carousel ——— */
+
+.carousel {
+  display: grid;
+  gap: var(--afh-space-lg);
+  min-width: 0;
+}
+
+.carousel:focus-visible {
+  outline: 2px solid var(--accent-ink);
+  outline-offset: 4px;
+}
+
+/* A native scroller is the swipe: the browser already knows how a finger
+   moves, and a snap point per slide keeps each one whole. */
+.track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-bg-warm);
+}
+
+.track::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  scroll-snap-align: center;
+  min-width: 0;
+}
+
+/* Contained, never cropped: the slide's words are baked into the picture. */
+.slideImage {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 75svh;
+  object-fit: contain;
+}
+
+/* Step, count, step side by side — the count reads as the position between
+   the two moves — and the enlargement, a different act, at the far edge. */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: var(--afh-space-lg);
+}
+
+.controls .enlarge {
+  margin-left: auto;
+}
+
+.carouselButton,
+.enlarge {
+  min-height: 44px;
+  min-width: 44px;
+  padding-inline: var(--afh-space-lg);
+  border: 1px solid var(--afh-border);
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-surface);
+  color: var(--afh-text);
+  font-size: var(--afh-text-small);
+  cursor: pointer;
+}
+
+.carouselButton:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.position {
+  font-size: var(--afh-text-small);
+  font-variant-numeric: tabular-nums;
+  color: var(--afh-text-soft);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: color-mix(in srgb, var(--afh-night-ground) 88%, transparent);
+}
+
+.enlarged {
+  position: fixed;
+  inset: 0;
+  z-index: 61;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: var(--afh-space-lg);
+  padding: var(--afh-space-2xl);
+}
+
+.enlarged:focus-visible {
+  outline: none;
+}
+
+.enlargedClose {
+  justify-self: end;
+}
+
+.enlargedImage {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  object-fit: contain;
+}
