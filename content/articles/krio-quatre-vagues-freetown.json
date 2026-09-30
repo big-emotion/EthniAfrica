@@ -8,24 +8,76 @@
   "fr": {
     "slug": "krio-quatre-vagues-freetown",
     "title": "D'où vient le nom Krio ?",
-    "excerpt": "« Créole » veut dire né dans la colonie. En Afrique, c'est devenu un nom de peuples.",
-    "sections": []
+    "excerpt": "En espagnol et en portugais, « créole » désignait celui qui était né dans la colonie. À Freetown, des groupes arrivés de Londres, de Nouvelle-Écosse, de Jamaïque et des navires négriers ont fini par former un seul peuple, qui se nomme Krio.",
+    "sections": [
+      {
+        "heading": "Un mot né dans les colonies",
+        "paragraphs": [
+          "Le mot « créole » vient de l'espagnol criollo et du portugais crioulo. Il désignait d'abord une personne née dans une colonie, par opposition à celle qui arrivait d'Europe. Il remonte au latin creare, « élever ».",
+          "Au départ, le mot ne dit donc rien d'une origine africaine : il dit seulement où l'on est né. C'est en Afrique même, et dans l'océan Indien, qu'il est devenu le nom de plusieurs peuples."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "Cidade Velha, au Cap-Vert",
+        "paragraphs": [
+          "En 2009, l'UNESCO inscrit Cidade Velha, un ancien comptoir portugais du Cap-Vert, sur sa liste du patrimoine mondial. Elle la présente comme le lieu où s'est formée la première société créole d'Afrique."
+        ],
+        "sourceRefs": ["s2"]
+      },
+      {
+        "heading": "Freetown : quatre groupes, un seul nom",
+        "paragraphs": [
+          "En Sierra Leone, le nom est porté par les Krio. Ils descendent de plusieurs groupes arrivés à Freetown et dans ses environs. En 1787, d'anciens esclaves venus de Londres, les « Black Poor », fondent Granville Town. En 1792, des Loyalistes noirs de la guerre d'indépendance américaine arrivent de Nouvelle-Écosse, au Canada. En 1800, des Marrons de Jamaïque sont déportés vers la colonie. Enfin, à partir de l'abolition de la traite par la Grande-Bretagne en 1807 et jusqu'en 1860, des Africains libérés des navires négriers sont débarqués à Freetown ; ils venaient de nombreux peuples, dont les Yoruba, les Igbo, les Akan ou les Bakongo.",
+          "Ces groupes n'ont pas formé un seul peuple dès leur arrivée. Notre fiche décrit des identités restées distinctes jusque vers les années 1870, puis une fusion progressive, par la langue krio, les mariages et la religion.",
+          "Le peuple qui en est issu se nomme Krio pipul. « Krio » est la forme que le mot « Creole » a prise dans la langue krio : un mot venu des colonies, devenu le nom que ce peuple se donne."
+        ],
+        "sourceRefs": ["s3"]
+      },
+      {
+        "heading": "Jusqu'à Lagos : les Saro",
+        "paragraphs": [
+          "Au XIXe siècle, des Krio s'installent au Nigeria, notamment à Lagos et à Abeokuta. On les y appelle Saro, une déformation de « Sierra Leone ». Le nom a donc circulé le long de la côte bien avant les frontières et les indépendances d'aujourd'hui."
+        ],
+        "sourceRefs": ["s3"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "« Créole » désignait d'abord, dans les empires espagnol et portugais, ceux qui étaient nés dans une colonie. À Freetown, des groupes venus d'horizons différents, dont beaucoup avaient été arrachés à leur terre par la traite, ont fini par se reconnaître dans ce mot, sous la forme Krio.",
+          "Vous portez ce nom, ou celui de Saro, ou vous connaissez son histoire dans votre famille ? Dites-nous ce que vous en savez, et d'où vous le tenez."
+        ],
+        "sourceRefs": ["s1", "s3"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
   },
   "sources": [
     {
       "id": "s1",
       "title": "TLFi / CNRTL, entrée « créole »",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "url": "https://www.cnrtl.fr/etymologie/cr%C3%A9ole",
+      "kind": "web",
+      "notes": "Trésor de la langue française informatisé, étymologie du mot « créole »."
     },
     {
       "id": "s2",
       "title": "UNESCO — Patrimoine mondial, Cidade Velha (2009)",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "url": "https://whc.unesco.org/en/list/1310",
+      "kind": "web",
+      "notes": "Fiche d'inscription de Cidade Velha, centre historique de Ribeira Grande, sur la Liste du patrimoine mondial."
     },
     {
       "id": "s3",
-      "title": "vagues fondatrices, 1787–1860 ; diaspora saro au Nigeria, XIXe siècle",
-      "tier": "needs_review"
+      "title": "Fiche du peuple krio, EthniAfrica — vagues fondatrices, 1787–1860 ; diaspora saro au Nigeria, XIXe siècle",
+      "tier": "needs_review",
+      "notes": "Notre fiche sur les Krio : les groupes arrivés à Freetown, leur fusion, le nom Krio pipul et les Saro. Elle s'appuie surtout sur des articles de presse et des ouvrages de référence."
     }
   ],
   "media": {

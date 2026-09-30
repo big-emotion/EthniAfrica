@@ -8,44 +8,146 @@
   "fr": {
     "slug": "ghana-qui-a-choisi-le-nom",
     "title": "D'où vient le nom « Ghana » ?",
-    "excerpt": "D'où vient le nom « Ghana » ?",
-    "sections": []
+    "excerpt": "Le Ghana actuel porte le nom d'un ancien royaume du Sahel, mais ce royaume se trouvait ailleurs. Avant « Ghana », cette côte s'est appelée Mina, puis Gold Coast. Qui a choisi le nom en 1956-1957 ? Trois versions circulent, et aucune ne l'emporte.",
+    "sections": [
+      {
+        "heading": "La question : le nom, ou le lieu ?",
+        "paragraphs": [
+          "Le Ghana actuel tient-il son nom de l'ancien empire du Ghana ? Pour le nom, oui : le mot vient bien d'un ancien royaume du Sahel. Pour le lieu, non : ce royaume ne se trouvait pas sur le territoire du Ghana d'aujourd'hui.",
+          "Pour le comprendre, il faut suivre les noms que ce pays a portés avant 1957, puis le moment où « Ghana » devient officiel, et enfin l'histoire du mot lui-même."
+        ],
+        "sourceRefs": ["s1", "s5"]
+      },
+      {
+        "heading": "Avant « Ghana » : la Mina",
+        "paragraphs": [
+          "Le plus ancien nom de cette côte que nous ayons lu est portugais. Duarte Pacheco Pereira, un Portugais, écrit, au début du XVIe siècle, qu'un lieu appelé Shama portait alors le nom de Mina, et que les Portugais y ont obtenu leur premier or en janvier 1471. Nous l'avons lu dans une traduction anglaise publiée en 1937, pas dans le texte portugais.",
+          "En 1602, un livre néerlandais de P. de Marees désigne la côte comme la « Gout-Custe de Mina » : la côte de l'or de la Mina."
+        ],
+        "sourceRefs": ["s7"]
+      },
+      {
+        "heading": "Gold Coast : un nom donné par d'autres",
+        "paragraphs": [
+          "« Gold Coast », la Côte de l'Or, désigne la côte par l'or qu'on y échangeait. Le plus ancien texte en anglais que nous ayons lu qui emploie ce nom est la traduction, parue en 1705, d'un livre de W. Bosman écrit en néerlandais. Ce n'est pas forcément la première fois que le nom est écrit : c'est la plus ancienne que nous ayons trouvée.",
+          "En 1874, une charte britannique réunit ces territoires en une colonie appelée « Gold Coast Colony ». L'Encyclopaedia Britannica de 1911 explique encore le nom par les grains d'or mêlés au sable des rivières. Jusqu'en 1957, c'est ce nom venu de l'extérieur qui est le plus connu."
+        ],
+        "sourceRefs": ["s6"]
+      },
+      {
+        "heading": "1956-1957 : « Ghana » devient le nom officiel",
+        "paragraphs": [
+          "En 1956, l'Assemblée de la Gold Coast adopte une motion pour l'indépendance par 72 voix contre zéro, les députés de l'opposition s'étant absentés. Le 11 décembre 1956, à Londres, devant la Chambre des communes, le ministre Lord John Hope explique d'où vient le nouveau nom : il a été donné « en accord avec les souhaits locaux », et c'était le nom d'un ancien royaume situé dans ce qui était alors un territoire français au sud du Sahara, un nom qui avait pris une grande importance historique en Gold Coast.",
+          "La loi britannique d'indépendance de 1957 dit ensuite que ces territoires forment un pays « sous le nom de Ghana »."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      },
+      {
+        "heading": "Qui a choisi le nom ? Trois versions",
+        "paragraphs": [
+          "Première version : J. B. Danquah. L'Encyclopaedia Africana écrit que c'est lui qui a suggéré de donner le nom « Ghana » à la Gold Coast après l'indépendance. Cette version est contestée : en septembre 2023, Johnson Asiedu Nketia, alors président d'un parti d'opposition, a dit le contraire dans un discours rapporté par la presse ghanéenne. C'est la parole d'un responsable politique, et nous la rapportons comme telle.",
+          "Deuxième version : Kwame Nkrumah. Un article de Citi Newsroom publié en mars 2026 lui donne un rôle décisif pour que « Ghana » devienne le nom officiel du pays. Il ne dit pas qu'il a inventé le nom.",
+          "Troisième version : celle du ministre britannique en 1956, qui parle de « souhaits locaux » sans nommer personne.",
+          "Aucun des textes que nous avons lus ne permet de trancher entre ces trois versions."
+        ],
+        "sourceRefs": ["s5", "s8", "s4", "s1"]
+      },
+      {
+        "heading": "Un mot bien plus ancien : un titre de roi",
+        "paragraphs": [
+          "Le mot « Ghana » apparaît dans des textes écrits en arabe bien avant la colonisation. L'historien N. Levtzion signale qu'al-Mas'udi, au milieu du Xe siècle, cite un passage plus ancien d'al-Fazari qui mentionne Ghana.",
+          "Au XIe siècle, al-Bakri donne une précision importante : « Ghana est le titre que portent les rois de ce peuple ; le nom de leur pays est Awkar. » Dans ce texte, « Ghana » n'est donc pas d'abord le nom d'un territoire, mais celui d'un titre royal."
+        ],
+        "sourceRefs": ["s2", "s3"]
+      },
+      {
+        "heading": "Ce que le mot veut dire : une question ouverte",
+        "paragraphs": [
+          "Al-Bakri ne dit pas ce que le mot signifie. L'article de Citi Newsroom de 2026 le traduit par « chef de guerre », sans que nous ayons pu retrouver sur quoi repose cette traduction.",
+          "On lit parfois aussi « roi de l'or ». Mais ce sens concerne un autre titre de ces rois, Kaya Maghan : c'est une chronique de Tombouctou, le Ta'rikh al-fattash, qui l'explique ainsi, comme le rapporte l'historien J. O. Hunwick. Ce n'est pas une traduction du mot « Ghana ».",
+          "Le sens premier du mot n'est donc pas établi par les sources que nous avons consultées."
+        ],
+        "sourceRefs": ["s4"]
+      },
+      {
+        "heading": "Un royaume situé ailleurs",
+        "paragraphs": [
+          "Le royaume que désignait ce titre se trouvait plus au nord et à l'ouest. L'Encyclopaedia Africana le situe au-delà de Tombouctou, entre le Sahara et les sources des fleuves Sénégal et Niger. Le ministre britannique le disait lui-même en 1956 : un territoire alors français, au sud du Sahara.",
+          "J. B. Danquah défendait l'idée que les Akan descendaient des habitants de cet ancien royaume. L'Encyclopaedia Africana juge cette filiation douteuse, justement à cause de la distance entre les deux régions. Le nom a donc été repris ; un héritage direct n'est pas établi."
+        ],
+        "sourceRefs": ["s5", "s1"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "Ce pays a porté au moins trois noms. Mina, donné par les Portugais, le plus ancien que nous ayons lu. Gold Coast, donné par d'autres et devenu le nom de la colonie en 1874. Ghana, devenu officiel à l'indépendance en 1957.",
+          "« Ghana » reprend le titre des rois d'un royaume du Sahel, pas son territoire. Qui a proposé ce nom reste discuté, et ce que le mot voulait dire au départ n'est pas établi.",
+          "Vous connaissez un autre récit sur ce nom, ou un nom que les habitants donnaient à cette région avant 1957 ? Dites-nous d'où vient ce que vous savez."
+        ],
+        "sourceRefs": ["s7", "s6", "s2", "s3", "s5"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
   },
   "sources": [
     {
       "id": "s1",
-      "title": "Hansard, 11 décembre 1956 ; Encyclopaedia Africana",
-      "tier": "needs_review"
+      "title": "Hansard, Chambre des communes, 11 décembre 1956, « Ghana Independence Bill » ; Encyclopaedia Africana",
+      "url": "https://api.parliament.uk/historic-hansard/commons/1956/dec/11/ghana-independence-bill",
+      "tier": "needs_review",
+      "kind": "archive",
+      "notes": "Compte rendu du débat : intervention de Lord John Hope sur le nom « Ghana » et rappel du vote de la motion pour l'indépendance (72 voix contre aucune, opposition absente)."
     },
     {
       "id": "s2",
-      "title": "Ghana Independence Act 1957 ; Levtzion, 1979",
-      "tier": "needs_review"
+      "title": "Ghana Independence Act 1957 ; N. Levtzion, « Ancient Ghana: a Reassessment of some Arabic Sources », Revue française d'histoire d'outre-mer 66, 1979",
+      "url": "https://www.legislation.gov.uk/ukpga/Eliz2/5-6/6/enacted",
+      "tier": "needs_review",
+      "notes": "La loi d'indépendance (« under the name of Ghana ») ; l'article de Levtzion, consultable sur Persée, signale la mention de Ghana par al-Fazari, citée par al-Mas'udi."
     },
     {
       "id": "s3",
       "title": "al-Bakri, Notice sur le Soudan (traduction française)",
-      "tier": "needs_review"
+      "url": "https://www.culture-islam.fr/contrees/sahel/al-bakri-notice-sur-le-soudan-v-1070-n-e",
+      "tier": "needs_review",
+      "kind": "web",
+      "notes": "Extrait traduit en français ; le traducteur n'est pas nommé sur la page."
     },
     {
       "id": "s4",
       "title": "Citi Newsroom, mars 2026 ; J. O. Hunwick, 2003",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "Citi Newsroom, « From Gold Coast to Ghana: history, memory and the naming of a nation » (mars 2026) ; J. O. Hunwick, Timbuktu and the Songhay Empire, Brill, 2003, chap. 4, note 1, sur le titre Kaya Maghan."
     },
     {
       "id": "s5",
       "title": "Encyclopaedia Africana ; Citi Newsroom, 2026 ; Hansard, 11 décembre 1956",
-      "tier": "needs_review"
+      "url": "https://encyclopaediaafricana.com/ghana/",
+      "tier": "needs_review",
+      "notes": "Notice « Ghana » de l'Encyclopaedia Africana : la suggestion du nom par J. B. Danquah, et la filiation akan jugée douteuse."
     },
     {
       "id": "s6",
       "title": "Bosman, 1705 ; rapport colonial 1935-36 ; Encyclopaedia Britannica, 1911",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "W. Bosman, A New and Accurate Description of the Coast of Guinea, traduction anglaise de 1705 ; rapport annuel de la colonie pour 1935-36 (charte du 24 juillet 1874) ; notice « Gold Coast » de l'édition 1911 de l'Encyclopaedia Britannica."
     },
     {
       "id": "s7",
       "title": "Pacheco Pereira (trad. Kimble, 1937) ; De Marees, 1602",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "D. Pacheco Pereira, Esmeraldo de situ orbis, traduction anglaise de G. H. T. Kimble, Hakluyt Society, 1937 ; P. de Marees, Beschryvinghe ende historische verhael van het Gout Koninckrijck van Gunea, 1602."
+    },
+    {
+      "id": "s8",
+      "title": "OnuaOnline, 25 septembre 2023, discours de Johnson Asiedu Nketia du 23 septembre 2023",
+      "tier": "needs_review",
+      "kind": "press",
+      "notes": "Article de presse ghanéenne rapportant la contestation, par un responsable politique, du rôle de J. B. Danquah dans le choix du nom."
     }
   ],
   "media": {

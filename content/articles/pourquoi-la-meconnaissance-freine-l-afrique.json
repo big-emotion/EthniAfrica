@@ -8,29 +8,89 @@
   "fr": {
     "slug": "pourquoi-la-meconnaissance-freine-l-afrique",
     "title": "Pourquoi ignorer nos noms freine l'Afrique ?",
-    "excerpt": "Pourquoi ignorer nos noms freine l'Afrique ?",
-    "sections": []
+    "excerpt": "Une prise de position de notre projet : le mot « ethnie » vient d'Europe, les classements coloniaux ont séparé des voisins, et comprendre l'histoire des noms des peuples est, pour nous, un chemin vers l'union. Ce qui est sourcé et ce qui relève de nos convictions y est distingué.",
+    "sections": [
+      {
+        "heading": "Un message, pas une enquête sur un nom",
+        "paragraphs": [
+          "Ce texte ne raconte pas l'origine d'un nom précis. C'est une prise de position de notre projet : pourquoi nous pensons qu'ignorer l'histoire de nos noms freine l'Afrique, et pourquoi nous cherchons ces noms en premier.",
+          "Nous y distinguons deux choses : quelques faits sourcés, et des convictions, que nous présentons comme telles."
+        ],
+        "sourceRefs": []
+      },
+      {
+        "heading": "Le mot « ethnie » vient d'Europe",
+        "paragraphs": [
+          "Le mot « ethnie » est proposé en 1896, en Europe, par Georges Vacher de Lapouge, dans un livre qui classait des Européens, pas des Africains.",
+          "Dans les colonies, l'administration a surtout recensé et séparé les gens sous d'autres noms. Joël Glasman l'a étudié pour le Sénégal, de 1816 aux années 1920 : on y parle surtout de « race » et de « tribu », et parfois d'« ethnie ». Son étude porte sur le Sénégal ; nous ne l'étendons pas ici à toutes les colonies."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      },
+      {
+        "heading": "Ce que nous pensons des classements",
+        "paragraphs": [
+          "Notre message part d'une thèse que nous ne démontrons pas dans ce texte : beaucoup de frontières africaines n'ont pas été tracées pour les peuples qui y vivaient déjà, et elles ont surtout servi des intérêts extérieurs.",
+          "Nous pensons aussi que les classements hérités de cette époque ont séparé les peuples d'un même pays en camps distincts, et détourné l'attention du pouvoir et des institutions vers le voisin. Aujourd'hui encore, on appelle « ethniques » des tensions qui ont souvent d'autres causes, mêlées entre elles : le pouvoir, la terre, l'appartenance. Ce voisin n'a pas choisi ce regroupement non plus. Plutôt que de l'accuser, nous proposons de remonter l'histoire : pourquoi ces peuples se retrouvent-ils dans le même ensemble ?"
+        ],
+        "sourceRefs": []
+      },
+      {
+        "heading": "L'union comme horizon",
+        "paragraphs": [
+          "Nous croyons à une autre issue : l'union. Ce projet n'est pas nouveau. L'Organisation de l'unité africaine est fondée en mai 1963 ; l'Union africaine est lancée en juillet 2002.",
+          "L'union ne supprime pas les tensions. Elle peut, selon nous, donner un cadre pour les traverser."
+        ],
+        "sourceRefs": ["s3"]
+      },
+      {
+        "heading": "Remonter aux peuples",
+        "paragraphs": [
+          "En 1960, dix-sept pays africains accèdent à l'indépendance la même année. Les peuples qui vivent dans ces pays ont une histoire plus ancienne que ces États, et qui dépasse souvent leurs frontières : des clans, des familles, des alliances, que le seul mot « ethnie » ne suffit pas à dire.",
+          "C'est pour cela que nous commençons par les noms : celui qu'un peuple se donne, ceux que d'autres lui ont donnés, et leur histoire. Comprendre son pays, c'est aussi remonter à ses peuples et à leurs voisins."
+        ],
+        "sourceRefs": ["s4"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "Le mot « ethnie » est né en Europe pour classer des Européens, et les administrations coloniales ont classé les Africains sous d'autres noms. Le reste de ce texte dit ce que nous croyons : que comprendre son nom et celui du voisin est un premier pas vers l'unité.",
+          "Vous avez une histoire, un nom transmis ou une source sur l'un de ces points ? Dites-nous ce que vous savez, et d'où vous le tenez."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
   },
   "sources": [
     {
       "id": "s1",
       "title": "Georges Vacher de Lapouge, Les Sélections sociales, Paris, Fontemoing, 1896, p. 10",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "kind": "book",
+      "url": "https://commons.wikimedia.org/wiki/File:Vacher_de_Lapouge_-_Les_Selections_sociales,_Fontemoing,_1896.djvu"
     },
     {
       "id": "s2",
       "title": "Joël Glasman, « Le Sénégal imaginé. Évolution d'une classification ethnique de 1816 aux années 1920 », Afrique & histoire, 2004",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "kind": "article",
+      "notes": "Étude de la classification des populations du Sénégal par l'administration, de 1816 aux années 1920."
     },
     {
       "id": "s3",
       "title": "Union africaine, présentation (au.int) : OUA fondée en mai 1963, Union africaine lancée en juillet 2002",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "kind": "web"
     },
     {
       "id": "s4",
       "title": "African Studies Centre Leiden, « Infosheets on the 17 African countries that gained independence in 1960 »",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "kind": "web"
     }
   ],
   "media": {
