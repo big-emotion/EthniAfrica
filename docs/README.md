@@ -18,8 +18,12 @@ were referenced by nothing at all, two of them written that same week.
 - [Edition delivery — packages per network, occurrences, readings](design/gabarits-social/EDITION-DELIVERY.md)
 - [Editorial contract — subject, angle, edition, occurrence, family, review](design/gabarits-social/EDITORIAL-CONTRACT.md)
 - [Gabarits sociaux EthniAfrica — spécification de reproduction](design/gabarits-social/GABARITS-SOCIAL.md)
+- [Integration acceptance of the social workshop (S7)](design/gabarits-social/INTEGRATION-ACCEPTANCE.md)
 - [Lectures d'Afrique — reading-list carousel](design/gabarits-social/LECTURES-AFRIQUE.md)
 - [Mémoires sonores — editorial carousel reference](design/gabarits-social/MEMOIRES-SONORES.md)
+- [Propositions de lecture : Lingala](design/gabarits-social/NARRATIVE-DESIGN-CAROUSEL-LINGALA-DEMO.md)
+- [Propositions de narration : Lingala](design/gabarits-social/NARRATIVE-DESIGN-LINGALA-DEMO.md)
+- [Research-led narrative design for reels and carousels](design/gabarits-social/NARRATIVE-DESIGN.md)
 - [Retired Mémoires sonores visual references (`memoires-sonores-v1`)](design/gabarits-social/memoires-sonores-approved/README.md)
 - [Six défauts de rendu, et une perte de fichiers — 11 septembre 2026](design/gabarits-social/notes/_defauts-rendus-2026-09-11.md)
 - [Ce qu'une session neuve trouvera, et ce qui l'attend](design/gabarits-social/notes/_etat-avant-reprise-2026-09-11.md)
@@ -50,25 +54,17 @@ were referenced by nothing at all, two of them written that same week.
 
 ## Editorial — doctrine, audits and essays
 
-- [Editorial unification — implementation plan](editorial/remediation-plan-2026-09-30.md)
-
-- [Editorial remediation — closure ledger and frozen review cases](editorial/remediation-2026-09-30/README.md)
-
-- [Editorial contradictions audit — 2026-09-30](editorial/contradictions-2026-09-30/README.md)
-
-- [Editorial voice review — 2026-09-30](editorial/editorial-voice-review-2026-09-30.md)
 - [Editorial personas](editorial/audience-personas.md)
-- [Editorial measurement protocol](audience/editorial-measurement.md)
-- [Audience audit — 2026-09-30](audience/audit-2026-09-30.md)
-
 - [Audit — where the publication rules live](editorial/audit-doctrine-publication-2026-09-17.md)
 - [Editorial classification status](editorial/classification-status.md)
 - [Congo dossier publication notes](editorial/congo-dossier-publication-notes.md)
 - [Congo dossier translation classification](editorial/congo-dossier-translation-classification.md)
+- [Editorial consistency audit — 2026-09-30](editorial/contradictions-2026-09-30/README.md)
 - [Contribution forms — a draft per fiche category](editorial/contribution-forms-draft-2026-09-22.md)
 - [Country enrichment tracking](editorial/country-enrichment/README.md)
 - [Demographic cleanup — arbitration note](editorial/demography-cleanup/README.md)
 - [Réalités — research record](editorial/dossiers-realites/README.md)
+- [Editorial voice and audience review — 2026-09-30](editorial/editorial-voice-review-2026-09-30.md)
 - [Essais — la base idéologique, série par série](editorial/essais/README.md)
 - [Essai — comprendre les sociétés africaines à travers leurs noms](editorial/essais/comprendre-les-societes-par-les-noms-2026-09-22.md)
 - [Essai — d'où viennent les noms](editorial/essais/dou-viennent-les-noms-2026-09-17.md)
@@ -85,6 +81,7 @@ were referenced by nothing at all, two of them written that same week.
 - [The purpose doctrine — the exchange it came from](editorial/purpose-doctrine.md)
 - [Reader-facing register](editorial/reader-facing-register.md)
 - [The editorial reorientation — what changes, in what order, what blocks what](editorial/refonte-plan-2026-09-18.md)
+- [Editorial unification — implementation plan](editorial/remediation-plan-2026-09-30.md)
 - [The pinned comment reply](editorial/reponse-commentaires.md)
 - [Source tier rulings](editorial/source-review/README.md)
 - [Mande corpus correction for S2](editorial/source-review/mande-s2-correction-2026-09-23.md)
@@ -109,6 +106,8 @@ were referenced by nothing at all, two of them written that same week.
 - [Audience audit — 2026-09-20](audience/audit-2026-09-20.md)
 - [Audience audit — 2026-09-22](audience/audit-2026-09-22.md)
 - [Audience audit — 2026-09-23](audience/audit-2026-09-23.md)
+- [Audience audit — 2026-09-30](audience/audit-2026-09-30.md)
+- [Measuring whether the editorial voice helps readers](audience/editorial-measurement.md)
 - [Carousel or reel? What our first three weeks of publications show](audience/format-audit-2026-09-26/README.md)
 - [Adaptation shortlist](audience/format-audit-2026-09-26/adaptation-shortlist.md)
 - [Carousel versus reel: decision matrix](audience/format-audit-2026-09-26/decision-matrix.md)
@@ -116,6 +115,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Reconciliation candidates](audience/format-audit-2026-09-26/reconciliation-candidates.md)
 - [Exploratory comparison plan](audience/format-audit-2026-09-26/validation-plan.md)
 - [Message audit — 2026-09-13](audience/message/message-audit-2026-09-13.md)
+- [Page observations — 2026-09-30](audience/pages-2026-09-30.md)
 
 ## Runbooks — procedures, and records of ones already run
 
@@ -149,6 +149,7 @@ were referenced by nothing at all, two of them written that same week.
 
 ## Plans
 
+- [Articles redesign — option A implementation and content recovery plan](plans/articles-refonte-2026-09-30.md)
 - [Playing the productions on the site — analysis brief](plans/embedded-media-brief.md)
 - [Playing the productions on the site — decision](plans/embedded-media-decision.md)
 - [The publishing format, and a production history the site can read — brief](plans/production-history-brief.md)
@@ -165,4 +166,5 @@ were referenced by nothing at all, two of them written that same week.
 - [Language alternate names — the pass of 18 September 2026](data-audits/language-alternate-names-2026-09-18.md)
 - [Language-tier catalog audit against Glottolog 5.3](data-audits/language-tier-audit-glottolog-5.3.md)
 - [The production history and its cadence](productions/README.md)
+- [Workshop cleanup after filing](social-workshop-cleanup.md)
 - [Découvertes implementation tracker](tasks/discoveries-implementation.md)
