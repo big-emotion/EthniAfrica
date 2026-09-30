@@ -259,6 +259,12 @@ never advertises. Ruled with ETNI-1831: a contraction reads as marketing copy
 on a page that must read as a record, and a second Voice section would be the
 place where the two registers drift apart, which is why there is one.
 
+These rules serve precision and reading comfort; a formal register is a means, not
+an end (`docs/editorial/reader-facing-register.md`). Whether the no-contraction and
+no-second-person rules help or hinder the invitation to check a source or contribute
+an account is a question for a reader test, tracked as T06 in the remediation ledger
+— not one for an agent to settle by relaxing or hardening them alone.
+
 Three habits carry the decolonial posture, and they are visual as much as
 editorial. They do not translate: an autonym is the same string in both
 locales and keeps its `lang`; the exonym's gloss is the one thing that changes
