@@ -23,6 +23,13 @@ services:
         # run time. Keeping one file means the two can never disagree.
         - build_env
     restart: unless-stopped
+    volumes:
+      # Article media (posters and carousel slides), served by the app at
+      # /media/articles. It lives beside the deploy directory, not inside it:
+      # that directory is a checkout at the released tag, and media is not git.
+      # Read-only, and an empty or missing directory only means missing images.
+      # Runbook: docs/runbooks/article-media.md
+      - /srv/ethniafrica-media/articles:/app/article-media:ro
     env_file: .env
     expose:
       - "3000"
