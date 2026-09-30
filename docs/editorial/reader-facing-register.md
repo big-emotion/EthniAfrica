@@ -139,6 +139,42 @@ The banned vocabulary lives in two exported constants in
 and `INTERNAL_REGISTER_PATTERNS_EN` (English) — so this document and the gate
 cannot drift apart.
 
+## Working method
+
+One sequence for every writing route — page, fiche, card, caption, narration,
+translation, game reveal. It is a way of working, not a form to fill: the primary
+reader need, the question answered and what stays uncertain go in the existing
+working brief, and no new mandatory schema is added.
+
+1. **Start from the reader's question**, in their words, and pick the primary need
+   from the [personas](audience-personas.md). Every piece stays intelligible to a
+   newcomer.
+2. **Name who can speak to it**: which people, place, period and language the
+   question really concerns. A usage documented in one place is not a usage of a
+   whole people.
+3. **Look for evidence that fits the question.** Oral, local, written, material and
+   scholarly sources answer different questions; none is admitted or dismissed for
+   its category alone. Scientific and linguistic tools stay useful to ask « is this
+   attested, by whom, when » — they are not the only framework, and neither a single
+   « African method » nor a single « European method » is assumed.
+4. **Record how each account reached us**: heard directly or through a collector,
+   by whom, where, when and in which language, and what permission covers it.
+5. **Compare the accounts** before choosing words. A difference is content: say
+   whether it concerns a pronunciation, a meaning, a chronology or an
+   interpretation. Repeating one account is not corroborating it.
+6. **Write the explanation** in ordinary words, the subject first.
+7. **Attach the reference where a reader can use it**, beside or after the claim,
+   mapped to the claim it supports.
+8. **State what remains uncertain and invite a next step** — a source to check, a
+   related account, a way to correct us.
+
+The research behind steps 3–4 is in
+[the dated research record](remediation-2026-09-30/research-african-methods.md).
+It was desk research on a handful of mostly West African and general-purpose
+sources; no community was consulted, and it is not a survey of African practice.
+Adopt from it only what it supports, and read its open questions before treating
+any rule below as settled for a specific community.
+
 ## Using sources
 
 This section owns the rule; skills, the curator references and `CLAUDE.md` point
@@ -207,6 +243,28 @@ respect anonymity and reuse restrictions. Do not invent a griot, interview or
 “local source” to make a reference list look balanced. Existing source tiers,
 rights checks and `oral_tradition` provenance remain applicable; oral form alone
 neither disqualifies nor proves an assertion.
+
+What the research record supports adding (each traced there, none a claim about a
+particular community):
+
+- **Give the chain as the carrier gave it** — who taught whom, where, in which
+  language — and never infer it. Name a carrier's role only when the source states
+  it; do not assume a griot, or any famous elder, speaks for a whole people.
+- **Keep a carrier's own additions or opinions labelled** as such when the carrier
+  marks them, rather than merging them into the inherited account.
+- **Attribute an oral account to its place, language and carrier**, never to « the
+  African tradition » or « what Africans believe ».
+- **« Not stated » is a valid value** for a carrier, a date, a language or a
+  permission. Never guess one to complete a record, and never fill a gap left by a
+  carrier's reserve from another source.
+- **Record consent and its scope before publishing** — who gave it, for what use
+  (quotation, online, teaching), and how it can be withdrawn. When an account was
+  collected by someone else and no consent is recorded, use only what the carrier
+  or community already made public, and say so. When a protocol is unknown, do not
+  publish, and ask.
+- **Credit the carrier and community in the source line**, and never publish a
+  restricted item because a copy is technically available.
+- **Keep competing accounts as separate records**, each with its own carrier.
 
 Present different accounts side by side when available. Explain what differs:
 a pronunciation, a meaning, a chronology or an interpretation. Several books
