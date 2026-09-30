@@ -124,6 +124,21 @@ def _sequence_errors(selected, deck, cards):
     return problems
 
 
+def image_errors(deck):
+    """Every card stands on a full-frame image: a card without one is refused, never drawn on a ground.
+
+    Held for every deck, profile or not. A profile's own `errors` repeats it with the card's position
+    in the profile, but a deck with no `profil` (the name-origin series) has no other check.
+    """
+    cards = deck.get("cartes")
+    if not isinstance(cards, list):
+        return []
+    return [f"carte {card.get('rang', rank) if isinstance(card, dict) else rank} : `image.fichier` est requis, "
+            f"chaque carte a une image plein cadre (il n'existe aucun fond uni, sombre ou de couleur)"
+            for rank, card in enumerate(cards, 1)
+            if not isinstance(card, dict) or not _text((card.get("image") or {}).get("fichier"))]
+
+
 def errors(deck, cards=None):
     try:
         selected = profile(deck)

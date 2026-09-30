@@ -7,6 +7,8 @@ import tempfile
 import unittest
 import wave
 
+from PIL import Image
+
 from ethni_scene_audio import prepare_source
 
 
@@ -66,11 +68,14 @@ class AudioSourceTests(unittest.TestCase):
     def test_montage_scene_pipeline_exports_real_video_with_provenance(self):
         from ethni_scenes import run
         import subprocess
+        Image.new("RGB", (1200, 2000), "gray").save(self.root/"photo.png")
+        photo = {"path": "photo.png", "kind": "image", "sha256": self.digest("photo.png"),
+                 "credit": "Test fixture", "license": "CC0", "source": "test"}
         plan = {"version": 1, "profile": "free", "title": "Fixture", "source": self.source,
-                "output_dir": str(self.root/"_epreuves"), "assets": {},
+                "output_dir": str(self.root/"_epreuves"), "assets": {"photo": photo},
                 "sources": {"test": {"citation": "Test fixture", "url": "https://example.org", "tier": "unverified"}},
-                "scenes": [{"id": "one", "start": 0, "end": 1, "type": "text", "title": "TEST",
-                            "text": "Hello world.", "purpose": "Exercise the complete render path",
+                "scenes": [{"id": "one", "start": 0, "end": 1, "type": "image", "title": "TEST",
+                            "image": {"asset": "photo", "fit": "cover"}, "purpose": "Exercise the complete render path",
                             "evidence": {"sources": ["test"], "status": "illustration", "period": "Test"}}]}
         file = self.root/"scene-plan.json"
         file.write_text(json.dumps(plan))

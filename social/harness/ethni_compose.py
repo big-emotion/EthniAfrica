@@ -106,7 +106,7 @@ COLONNE_ARRETS = ((0.00, 0.92), (0.40, 0.94), (1.00, 0.95))
 # rule asks 4,5:1: five points of contrast spent darkening something already
 # dark, and the photograph lost behind its own caption. The scrim is solved per
 # card and per format instead, between these bounds.
-VOILE_PLANCHER = 0.55     # a scrim lighter than this stops being a ground at all
+VOILE_PLANCHER = 0.0      # no floor: the scrim is the lightest that carries the ink, never a ground
 VOILE_PLAFOND = 0.95      # the old constant, kept as the ceiling
 VOILE_MARGE = 1.12        # aim past the threshold: JPEG noise and anti-aliasing
 VOILE_PERCENTILE = 92     # protect the bright tail of the region, never its mean
@@ -548,12 +548,25 @@ def colonne_A_tient(carte, deck, fmt_key, *, image):
 # ------------------------------------------------------------------ the plan
 
 
+def _exiger_image(image):
+    """There is no dark, plain or solid-colour card: the photograph is the card's ground.
+
+    The canvas under the image is painted in the deck's ink colour only so that the scrims have a
+    colour to mix toward; it is never visible, because the image covers the frame in every layout.
+    A card without an image would show it, so the card is refused instead.
+    """
+    if image is None:
+        raise ValueError("a card needs a full-frame image: there is no dark, plain or "
+                         "solid-colour background to fall back on")
+
+
 def plan(carte, deck, fmt_key, *, image, sous_titre=False, disposition=None):
     """Geometry only. Nothing is drawn, so everything can be asserted.
 
     `disposition` forces a layout without consulting §6 at all. The fit trial §6
     runs is itself a plan, so without this the rule would call itself.
     """
+    _exiger_image(image)
     cadre = tk.fmt(fmt_key)
     W, H, k = cadre["w"], cadre["h"], cadre["k"]
 
@@ -1409,6 +1422,7 @@ def plan_video(carte, deck, *, image, sous_titre=False):
     `sous_titre` only decides whether the narration slot is *filled*. The slot is
     reserved either way: an empty slot costs nothing and guarantees nothing moves.
     """
+    _exiger_image(image)
     W, H = 1080, 1920
     p = Plan(disposition="A")
     role = carte.get("role")

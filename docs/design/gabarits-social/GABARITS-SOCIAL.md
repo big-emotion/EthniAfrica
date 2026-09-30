@@ -30,6 +30,12 @@ only for this series; the general machine-readable format matrix is unchanged.
 5. **Le crédit et la licence sont dans le cadre visible**, jamais sous l'interface
    de la plateforme.
 6. **Aucune image agrandie plus de ×2.** Au-delà, on change de gabarit (§7).
+7. **Every carousel card and every reel scene has a full-frame image background; there is
+   no dark, plain or solid-colour background mode** (operator ruling, 2026-09-30). The
+   photograph *is* the card: the engine refuses a card or a scene that has no image
+   instead of painting a ground, and no session may rely on a « fond sombre », « fond de
+   nuit » or « aplat » to carry a card. What sits over the photograph is a legibility
+   scrim (§4), the lightest one that holds the ink — a veil, never a background.
 
 ---
 
@@ -214,6 +220,12 @@ mots et le refus de réduire le titre s'appliquent comme avant.
 ---
 
 ## 2. Couleurs — jetons de la charte, jamais de littéral
+
+> **Un thème n'est pas un fond.** « Nuit » et « parchemin » nomment l'encre du texte et la
+> teinte du voile posé sur la photographie (clé `fond` du `cards.json`, gardée telle
+> quelle pour que les lots existants se relisent). Aucun des deux ne se voit là où il n'y a
+> pas de texte : derrière eux il y a toujours l'image plein cadre (§0.7). Dans les tables
+> ci-dessous, la ligne « Fond » est la teinte vers laquelle le voile se mélange.
 
 ### Thème nuit (défaut)
 
@@ -514,7 +526,7 @@ petit alpha qui porte chaque texte à son seuil :
 | --- | --- |
 | Cible | le seuil du bloc × **1,12** — la marge absorbe le bruit JPEG et l'anticrénelage |
 | Échantillon | le **92ᵉ centile** de la zone, jamais sa moyenne |
-| Plancher | **0,55** |
+| Plancher | **aucun** — le voile le plus léger qui tient l'encre, jamais un fond (2026-09-30 ; il était 0,55) |
 | Plafond | **0,95**, la valeur de la table |
 
 **L'échantillon est un centile haut et c'est le cœur de la règle.** Une légende qui
@@ -634,7 +646,7 @@ dans le calcul de contraste : c'est le voile qui doit atteindre 4,5:1.
 > bande et le pied épinglé, pour chaque disposition × format × forme de paire. Une
 > assertion sur le pied ne suffit pas : le bloc peut être correctement épinglé à 1266
 > tandis que ses enfants débordent à 1436 sans que rien ne le signale.
-- Aplat de fond en dessous, texte dedans : titre Anton 110–124 → précision 34–38 →
+- Texte sur le voile, l'image dessous : titre Anton 110–124 → précision 34–38 →
   filet supérieur 2 px `rgba(232,185,106,.35)` → corps 42–46 / 800.
 - Crédit + logo épinglés en bas.
 - **C absorbe la différence de hauteur entre 4:5 et 9:16** : l'ancre garde sa

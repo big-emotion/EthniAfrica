@@ -2,9 +2,9 @@
 
 The picture, or the map, fills the whole screen; shading carries the text: a label at the
 top, the title low on the left, the narration in a translucent box, the credits at the foot.
-A plan opts in with `"layout": "fullbleed"`. The map is the subject, so it gets a light,
-warm palette of its own instead of the dark panel palette; the shading is what keeps the
-text readable over it.
+It is the only layout: there is no dark, plain or solid-colour ground mode, and the plan
+validator refuses a scene that has no picture or map to stand on. The map is the subject, so it
+gets a light, warm palette of its own; the shading is what keeps the text readable over it.
 """
 from PIL import Image, ImageColor, ImageDraw
 
@@ -30,6 +30,9 @@ OVERLAY_TOP, OVERLAY_BOTTOM, PLATE_PAD, ITEM_GAP, RISE = 480, 1330, 20, 18, 26
 PLATE_ALPHA = 150
 REVEAL_S = tokens.duree("slow")
 TITLE_BOTTOM = 1290
+# A kinetic card's lines run from y 540 to the caption band; the scrim behind them keeps the picture
+# visible (alpha 170 of 255) while holding white type at reading contrast.
+KINETIC_SCRIM, KINETIC_BAND = 170, (480, 1330)
 
 
 def shade_variant(scene):
@@ -38,6 +41,8 @@ def shade_variant(scene):
     out there instead of competing with them."""
     if scene["type"] == "comparison":
         return "overlay"
+    if scene["type"] == "kinetic":
+        return "kinetic"
     if scene["type"] == "image" and "keys" in scene["image"].get("motion", {}):
         return "page"
     return "default"
@@ -55,6 +60,12 @@ def shade(renderer, variant="default"):
                 top = 215 if y < 330 else 215*(1-(y-330)/300) if y < 630 else 0
             # Nothing above 900 px: the map is the subject. Text sits on the shading and a drop shadow.
             bottom = 0 if y < 900 else 165*(y-900)/400 if y < 1300 else 165+50*min(1, (y-1300)/260)
+            if variant == "kinetic":
+                # The lines stand on the picture itself, so the band they occupy carries its own scrim,
+                # ramped in and out rather than cut.
+                lo, hi = KINETIC_BAND
+                ramp = min(1, (y-(lo-120))/120) if y < lo else 1 if y <= hi else max(0, 1-(y-hi)/120)
+                top = max(top, KINETIC_SCRIM*max(0, ramp))
             if variant == "page":
                 bottom = 0 if y < 880 else 245*(y-880)/130 if y < 1010 else 245
             draw.line((0, y, W, y), fill=round(max(top, bottom)))
@@ -87,19 +98,13 @@ def shadowed(renderer, draw, value, box, role):
     return renderer.paragraph(draw, value, box, role, renderer.palette["white"])
 
 
-def kinetic_ground(renderer):
-    """A kinetic card stands on the plain night ground. Its lines and header are laid on after the
-    shading (a gradient would dim the lower lines), so a dissolve fades them apart from the ground."""
-    return Image.new("RGB", (W, H), renderer.palette["ground"])
-
-
 def background(renderer, scene, local):
     kind = scene["type"]
-    if kind == "kinetic":
-        return kinetic_ground(renderer)
     if kind == "image":
         return renderer._image(scene, local, size=(W, H))
-    if kind == "comparison":
+    if kind == "clip":
+        return renderer._clip(scene, scene["start"]+local, (W, H))
+    if kind in ("comparison", "kinetic"):
         backdrop = scene["backdrop"]
         if "image" in backdrop:
             return renderer._image({"image": backdrop["image"], "start": scene["start"], "end": scene["end"]}, local, size=(W, H))
@@ -107,9 +112,8 @@ def background(renderer, scene, local):
     if kind == "map":
         frame = renderer._map(scene, local, (0, 0, W, H), LIGHT)
     else:
-        map_config = scene["timeline"].get("background")
-        frame = (renderer._map({"map": map_config}, local, (0, 0, W, H), LIGHT) if map_config
-                 else Image.new("RGB", (W, H), LIGHT["ground"]))
+        map_config = scene["timeline"]["background"]
+        frame = renderer._map({"map": map_config}, local, (0, 0, W, H), LIGHT)
     for card in (map_config if kind == "timeline" and map_config else scene.get("map", {})).get("inserts", []) \
             if kind in ("map", "timeline") else []:
         if card["at"] <= local < card["until"]:
@@ -256,6 +260,13 @@ def render(renderer, instant):
                  (renderer.left, 190 if heading["type"] == "comparison" else title_top(renderer, heading), 809, 260),
                  "Titre de série")
     captions.draw(renderer, frame, instant)
+    if renderer.plan.get("progress", False):
+        # Between the credits and the brand mark, inside the safe area.
+        fraction = max(0, min(1, instant/renderer.duration))
+        draw.line((renderer.left, 1800, renderer.right, 1800), fill=palette["night-ink-3"], width=3)
+        if fraction:
+            draw.line((renderer.left, 1800, renderer.left+(renderer.right-renderer.left)*fraction, 1800),
+                      fill=palette["gold"], width=5)
     lines = renderer.legend(credit_scene, credit_local) + renderer.credits(credit_scene, credit_local)
     renderer.paragraph(draw, "\n".join(lines), (renderer.left, 1540, 809, 300), "Crédit", palette["night-ink-2"])
     renderer.paragraph(draw, "ETHNIAFRICA", (renderer.left, 1850, 380, 40), "Bandeau", palette["gold"])

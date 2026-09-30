@@ -117,7 +117,7 @@ refuses:
 4. **The platform interface.** In 9:16 nothing that has to be seen goes under y = 1620.
 
 Declare `sujet` whenever the picture carries something the reader has to see. A
-decorative ground needs none, and then the header row may sit on the picture: that
+decorative picture (a landscape, a texture) needs none, and then the header row may sit on the picture: that
 is the standard gabarit, not a defect.
 
 ## Type hierarchy

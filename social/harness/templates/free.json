@@ -22,11 +22,14 @@
   "scenes": [
     {
       "id": "01-opening",
-      "type": "text",
+      "type": "image",
       "start": null,
       "end": null,
       "title": "REPLACE: visible title",
-      "text": "REPLACE: approved visible copy",
+      "image": {
+        "asset": "REPLACE: full-frame image asset id",
+        "fit": "cover"
+      },
       "purpose": "Explain the role of the opening beat in this particular argument.",
       "beat": "opening",
       "evidence": {
@@ -41,11 +44,14 @@
     },
     {
       "id": "02-development",
-      "type": "text",
+      "type": "image",
       "start": null,
       "end": null,
       "title": "REPLACE: visible title",
-      "text": "REPLACE: approved visible copy",
+      "image": {
+        "asset": "REPLACE: full-frame image asset id",
+        "fit": "cover"
+      },
       "purpose": "Explain the role of the development beat in this particular argument.",
       "beat": "development",
       "evidence": {
@@ -60,11 +66,14 @@
     },
     {
       "id": "03-closing",
-      "type": "text",
+      "type": "image",
       "start": null,
       "end": null,
       "title": "REPLACE: visible title",
-      "text": "REPLACE: approved visible copy",
+      "image": {
+        "asset": "REPLACE: full-frame image asset id",
+        "fit": "cover"
+      },
       "purpose": "Explain the role of the closing beat in this particular argument.",
       "beat": "closing",
       "evidence": {

@@ -357,6 +357,12 @@ and enforced by `social/tools/contract/`. In short:
   under `docs/productions/` stays the name series' ledger; a social-only piece is
   never filed there.
 
+**Every carousel card and every reel scene has a full-frame image background; there is no
+dark, plain or solid-colour background mode** (operator ruling, 2026-09-30). The engine refuses
+a card or a scene with no image rather than painting a ground; `nuit` and `parchemin` are the
+ink and the scrim tint laid over the photograph, never a background. Do not re-introduce a
+« fond sombre », a panel layout or a flat plate to carry text.
+
 The publishing chain runs in one order, and **all ten of its skills live here**,
 under their `ethniafrica-` names. They left for the private workspace on
 2026-09-10, on the rule that a public repository carries no production skills, and

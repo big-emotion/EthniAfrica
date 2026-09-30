@@ -41,6 +41,7 @@ class KineticTests(unittest.TestCase):
         plan["scenes"] = [{"id": "k", "type": "kinetic", "start": 0, "end": 10, "title": "Trois mots",
                            "purpose": "Say the three words one after another",
                            "evidence": copy.deepcopy(self.plan["scenes"][0]["evidence"]),
+                           "backdrop": {"image": {"asset": "photo", "fit": "cover"}},
                            "kinetic": {"lines": copy.deepcopy(LINES if lines is None else lines)}}]
         if layout:
             plan["layout"] = layout
@@ -50,9 +51,16 @@ class KineticTests(unittest.TestCase):
         return SceneRenderer(plan, self.root, [], proof=False, **options)
 
     def ink(self, renderer, instant):
-        ground = numpy.array(ImageColor.getrgb(renderer.palette["ground"]))
+        """Where a frame differs from the same card before any line has arrived: the lines, and only them.
+
+        The card stands on a picture, so there is no flat ground to measure against; the bare frame is the
+        picture, its scrim and the header, all of which the lines are laid over."""
+        plan = copy.deepcopy(renderer.plan)
+        for line in plan["scenes"][0]["kinetic"]["lines"]:
+            line["at"] = 9.0
+        bare = numpy.asarray(self.renderer(plan).render(0.2).convert("RGB"), dtype=int)
         frame = numpy.asarray(renderer.render(instant).convert("RGB"), dtype=int)
-        return numpy.abs(frame - ground).sum(axis=2) > 24
+        return numpy.abs(frame - bare).sum(axis=2) > 24
 
     # ------------------------------------------------------------------ the plan
 
@@ -164,8 +172,9 @@ class KineticTests(unittest.TestCase):
         columns = numpy.flatnonzero(in_gold.any(axis=0))
         first, last = columns.min() + 2, columns.max() - 2
         plain = frame({"text": text, "at": 1})
-        ground = numpy.array(ImageColor.getrgb(self.renderer(self.kinetic()).palette["ground"]))
-        plain_rows = numpy.flatnonzero((numpy.abs(plain[:, first:last + 1] - ground).sum(axis=2) > 24).any(axis=1))
+        bare = numpy.asarray(self.renderer(self.kinetic(lines=[{"text": text, "at": 9}])).render(3).convert("RGB"),
+                             dtype=int)[500:800, 91:900]
+        plain_rows = numpy.flatnonzero((numpy.abs(plain[:, first:last + 1] - bare[:, first:last + 1]).sum(axis=2) > 24).any(axis=1))
         gold_rows = numpy.flatnonzero(in_gold.any(axis=1))
         self.assertLessEqual(abs(int(gold_rows.max()) - int(plain_rows.max())), 2, "same baseline")
         self.assertLessEqual(abs(int(gold_rows.min()) - int(plain_rows.min())), 2, "same top")
@@ -196,10 +205,14 @@ class KineticTests(unittest.TestCase):
                 self.assertTrue(any(abs(i - (cue + delta)) < 1e-6 for i in instants), (cue, delta))
 
     def test_full_frame_layout_puts_the_title_above_the_lines_not_low_left(self):
-        renderer = self.renderer(self.kinetic("fullbleed"))
-        before_any_line = self.ink(renderer, .5)
-        self.assertTrue(before_any_line[180:470, 91:900].any(), "the title is the header of the card")
-        self.assertFalse(before_any_line[900:1300, 91:900].any(), "the low-left title slot stays empty")
+        plan = self.kinetic("fullbleed")
+        renderer = self.renderer(plan)
+        retitled = copy.deepcopy(plan)
+        retitled["scenes"][0]["title"] = "Un autre titre"
+        changed = numpy.abs(numpy.asarray(renderer.render(.5).convert("L"), dtype=int)
+                            - numpy.asarray(self.renderer(retitled).render(.5).convert("L"), dtype=int)) > 24
+        self.assertTrue(changed[180:470, 91:900].any(), "the title is the header of the card")
+        self.assertFalse(changed[900:1300, 91:900].any(), "the low-left title slot stays empty")
 
     def test_the_shading_never_dims_the_header_or_the_lowest_line(self):
         four = LINES + [{"text": "l'État-nation : les deux", "at": 7.0}]
@@ -210,7 +223,7 @@ class KineticTests(unittest.TestCase):
         for top, bottom in bands(self.ink(renderer, 9.5)):
             self.assertGreaterEqual(frame[top:bottom + 1, 91:900].max(), white - 40, f"the line at {top} keeps its ink")
 
-    def test_a_dissolve_fades_the_outgoing_card_out_over_the_ground(self):
+    def test_a_dissolve_fades_the_outgoing_card_out_over_the_picture(self):
         plan = self.kinetic("fullbleed", lines=[{"text": "le pays : la carte", "at": 1.0}])
         plan["scenes"][0]["end"] = 5
         second = copy.deepcopy(plan["scenes"][0])

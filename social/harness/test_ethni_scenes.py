@@ -40,7 +40,7 @@ def fixture(root):
                                 "camera": [{"at": 0, "bounds": [-20, -5, 20, 25]}], "features": []}},
                        {"id": "b", "type": "image", "start": 5, "end": 10, "title": "Photo",
                         "purpose": "Observe the document", "evidence": evidence,
-                        "image": {"asset": "photo", "fit": "cover", "motion": {"from": [1, .5, .5], "to": [1.1, .6, .5]}},
+                        "image": {"asset": "photo", "fit": "cover", "motion": {"from": [1, .5, .5], "to": [1.03, .6, .5]}},
                         "transition": {"type": "dissolve", "duration": .4}}]}
 
 
@@ -57,12 +57,18 @@ class ScenePlanTests(unittest.TestCase):
         self.assertEqual(self.plan, before)
 
     def test_transition_never_superimposes_scene_headings(self):
+        """The heading switches once, at the middle of the transition; crossfading the two titles would
+        print both over each other."""
         from ethni_scene_render import SceneRenderer
-        renderer = SceneRenderer(self.plan, self.root, [])
-        heading = (0, 198, 1080, 475)
-        for instant, reference in ((5.1, 4.9), (5.3, 5.5)):
-            self.assertEqual(renderer.render(instant).crop(heading).tobytes(),
-                             renderer.render(reference).crop(heading).tobytes())
+
+        def frame(plan, instant):
+            return SceneRenderer(plan, self.root, [], proof=False).render(instant).tobytes()
+
+        incoming_retitled, outgoing_retitled = copy.deepcopy(self.plan), copy.deepcopy(self.plan)
+        incoming_retitled["scenes"][1]["title"] = "Another"
+        outgoing_retitled["scenes"][0]["title"] = "Another"
+        self.assertEqual(frame(self.plan, 5.1), frame(incoming_retitled, 5.1), "still the outgoing heading")
+        self.assertEqual(frame(self.plan, 5.3), frame(outgoing_retitled, 5.3), "already the incoming heading")
 
     def test_gap_overlap_and_missing_audio_tail_fail(self):
         for change in (4.9, 5.1):

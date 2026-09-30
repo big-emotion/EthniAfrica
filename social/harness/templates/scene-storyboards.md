@@ -47,14 +47,14 @@ Keep its prescribed wording/order and category checks. Visual cuts need not equa
 
 ### Narrative-to-image plan
 
-| Editorial step                        | Speech content from the prescribed template                | Suggested screen and cue                                                                                          | Assets/evidence                                   | Engine beat                           |
-| ------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------- |
-| Opening                               | Exact category opening about [name]                        | Wide map, then slow focus on the relevant area                                                                    | Basemap + verified locator                        | `question`                            |
-| Inventory                             | Endonym first, then the attested other names               | `comparison` labels revealed when spoken; brief image/map if comparison is crowded                                | Names/glosses with independent sources            | `usages`                              |
-| Optional variants and each name block | Who used [form], where, when, what its proposed meaning is | Relevant archive as `document`, or sustained map with dated points; chronological sequence only when dates matter | Actual title page/portrait identity; attestations | `evidence` (may repeat across scenes) |
-| Classification and uncertainty        | Who named whom; what the sources cannot establish          | Map of usage/presence or concise comparison; no invented ethnic border                                            | Period/status for every claim                     | `limits`                              |
-| Synthesis                             | Operator-selected approved synthesis answering the opening | 2–3-item focus timeline or a wider map; no new spoken fact                                                        | Reuse only established events                     | `answer`                              |
-| Closing                               | Existing unique closing, verbatim                          | Quiet closing text/image scene; avoid additional optional context                                                 | Editorial evidence, existing approved copy        | `closing`                             |
+| Editorial step                        | Speech content from the prescribed template                | Suggested screen and cue                                                                                                   | Assets/evidence                                   | Engine beat                           |
+| ------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------- |
+| Opening                               | Exact category opening about [name]                        | Wide map, then slow focus on the relevant area                                                                             | Basemap + verified locator                        | `question`                            |
+| Inventory                             | Endonym first, then the attested other names               | `comparison` labels revealed when spoken; brief image/map if comparison is crowded                                         | Names/glosses with independent sources            | `usages`                              |
+| Optional variants and each name block | Who used [form], where, when, what its proposed meaning is | Relevant archive as a contained `image`, or sustained map with dated points; chronological sequence only when dates matter | Actual title page/portrait identity; attestations | `evidence` (may repeat across scenes) |
+| Classification and uncertainty        | Who named whom; what the sources cannot establish          | Map of usage/presence or concise comparison; no invented ethnic border                                                     | Period/status for every claim                     | `limits`                              |
+| Synthesis                             | Operator-selected approved synthesis answering the opening | 2–3-item focus timeline or a wider map; no new spoken fact                                                                 | Reuse only established events                     | `answer`                              |
+| Closing                               | Existing unique closing, verbatim                          | Quiet closing image scene; avoid additional optional context                                                               | Editorial evidence, existing approved copy        | `closing`                             |
 
 **Timing:** keep the introductory zoom within the opening voice. Reveal each name at its aligned
 word. Hold the document long enough to see what it is; a rapid montage of unrelated images is not
@@ -80,18 +80,18 @@ source-supported population/language movement.
 - For each period: sources, political/population/linguistic meaning, known uncertainty.
 - For each path: endpoints, whether intervening stops are attested, journey vs migration distinction.
 - Separate features for separate historical states; no automatic territory morph.
-- Optional regional and world context chosen for the intended audience, not compulsory filler.
+- Optional regional context features chosen for the intended audience, not compulsory filler.
 
 ### Narrative-to-image plan
 
-| Editorial step       | Spoken purpose                                              | Suggested screen and cue                                                        | Assets/evidence                                                  | Engine beat                                       |
-| -------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------- |
-| Question             | State what changed in [place/people/period]                 | Africa or relevant wide region; progress starts                                 | Basemap, current borders                                         | `question`                                        |
-| Orientation          | Locate [region] without equating it with a modern nation    | Smooth zoom; regional fill appears, then city points                            | Reviewed area and locators                                       | `context`                                         |
-| Dated turning point  | Explain [event/date] and what is actually known             | Kirina-style point or one dated political snapshot                              | Event + coordinates separately sourced                           | `evidence`                                        |
-| Movement             | Describe [individual journey / sourced collective movement] | Route draws while words name the movement; flags only as dated orientation aids | Authored path and explicit schematic note where needed           | `evolution`                                       |
-| Limits and synthesis | Explain what changed and what the map cannot establish      | Focused timeline with corner note and map layers, then overview before closing  | Reuse previous dated facts; independent dates for silent context | `limits`; add another `evolution` scene if useful |
-| Closing              | Approved project closing                                    | Calm final shot, no new historical claim                                        | Approved wording                                                 | `closing`                                         |
+| Editorial step       | Spoken purpose                                              | Suggested screen and cue                                                        | Assets/evidence                                                    | Engine beat                                       |
+| -------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------- |
+| Question             | State what changed in [place/people/period]                 | Africa or relevant wide region; progress starts                                 | Basemap, current borders                                           | `question`                                        |
+| Orientation          | Locate [region] without equating it with a modern nation    | Smooth zoom; regional fill appears, then city points                            | Reviewed area and locators                                         | `context`                                         |
+| Dated turning point  | Explain [event/date] and what is actually known             | Kirina-style point or one dated political snapshot                              | Event + coordinates separately sourced                             | `evidence`                                        |
+| Movement             | Describe [individual journey / sourced collective movement] | Route draws while words name the movement; flags only as dated orientation aids | Authored path and explicit schematic note where needed             | `evolution`                                       |
+| Limits and synthesis | Explain what changed and what the map cannot establish      | Focused timeline over its map layers, then a wider shot before closing          | Reuse previous dated facts; independent dates for context features | `limits`; add another `evolution` scene if useful |
+| Closing              | Approved project closing                                    | Calm final shot, no new historical claim                                        | Approved wording                                                   | `closing`                                         |
 
 **Reusable Mandén arrangement:** early region + Kirina point → Mansa Musa route with Cairo and
 Mecca → later dated visit with a regional locator rather than a falsely exact capital → timeline
@@ -100,10 +100,10 @@ another people. The first full geographic shot can precede the timeline so the l
 
 **Timing:** start the route on the movement phrase; reach a named city near its spoken cue.
 Use explicit `at`, `until`, `draw_seconds` and camera keyframes. A wider-context shot may continue
-briefly after speech, but do not pad a short test into a long empty sequence. Context notes are silent.
+briefly after speech, but do not pad a short test into a long empty sequence.
 
 **Transitions:** preserve map continuity with matching outgoing/incoming camera bounds and a cut.
-Use `overview_at` for the recap, not a hard replacement of all dates. Nearby territories stay behind
+Nearby territories stay behind
 the subject and retain their own periods. Current borders remain distinguishable from historical outlines.
 
 **Ready for execution when:** every geometry has provenance/status, the direction of travel is
@@ -131,7 +131,7 @@ belonging, or the meaning and use of “ethnie”. A myth is not required.
 | Question               | Ask [bounded question] without assigning a trait to a whole people          | Relevant image with gentle motion or a located map                                      | Actual case, not a generic symbolic crowd | `question`    |
 | Definitions            | Explain two terms in ordinary language                                      | `comparison`, one term at a time                                                        | Terminological sources                    | `definitions` |
 | Situated case          | Describe what happened in [place/context]                                   | Map point/region, then a relevant photograph                                            | Place + event + image licence             | `case`        |
-| Evidence               | Say what [source/study/document] observes                                   | `document` or image with concise explanatory copy                                       | Actual document and limited claim         | `evidence`    |
+| Evidence               | Say what [source/study/document] observes                                   | Contained `image` with concise explanatory copy                                         | Actual document and limited claim         | `evidence`    |
 | Limits                 | State what the evidence does not prove; acknowledge alternative explanation | Comparison or wider contextual map; no visual causal arrow unless justified             | Scope and competing account               | `limits`      |
 | Position and synthesis | Express the approved argument, distinguishing it from measurement           | Calm image or concise spoken synthesis; timeline only for a genuinely temporal argument | `editorial` status for the position       | `position`    |
 | Closing                | Existing approved project closing                                           | Stable final scene                                                                      | Approved wording                          | `closing`     |

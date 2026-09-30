@@ -32,8 +32,11 @@ import ethni_tokens as tk
 HARNESS = pathlib.Path(__file__).resolve().parent
 FORMATS = ("carrousel", "linkedin", "reel")
 
-# §4 — the bounds the adaptive rule may never leave.
-PLANCHER, PLAFOND = 0.55, 0.95
+# §4 — the bounds the adaptive rule may never leave. There is no floor above zero: the scrim is the
+# lightest that carries the ink (operator ruling, 2026-09-30), and a floor made it a dark ground.
+PLANCHER, PLAFOND = 0.0, 0.95
+# A block under less alpha than this, on a pale photograph, sits in the bright gap of a banded card.
+GAP_ALPHA = 0.30
 BASE = 14.0          # the ground #120e0a reads at luminance 14
 
 
@@ -118,6 +121,14 @@ def test_the_scrim_lightens_on_a_dark_photograph():
         a = alpha_du_plat(carte(), fmt, ton=40, disposition="A")
         assert a < 0.80, (f"{fmt} : voile à {a:.2f} sur une image sombre — "
                           f"la constante de 0,92 n'a pas été remplacée")
+
+
+def test_a_dark_photograph_is_not_blanketed_by_a_dark_ground():
+    """The scrim has no floor: over a dark photograph it stays far below the 0,55 that used to be
+    imposed, so the picture is the card and the scrim only holds the ink."""
+    for fmt in FORMATS:
+        assert alpha_du_plat(carte(), fmt, ton=40, disposition="A") < 0.20
+        assert alpha_du_plat(carte(), fmt, ton=90, disposition="A") < 0.50
 
 
 def test_the_scrim_stays_heavier_on_a_pale_engraving():
@@ -264,7 +275,7 @@ def test_no_text_lives_in_the_bright_gap():
                 if not b.texte or not getattr(b, "couleur", None):
                     continue
                 a = alpha_sous(fond, min(b.y + b.h // 2, fond.height - 1), 240)
-                if a < PLANCHER - 0.01:
+                if a < GAP_ALPHA:
                     fautes.append(f"{disposition} {fmt} {b.nom} : alpha {a:.2f} "
                                   f"— le bloc tombe dans la trouée claire")
     assert not fautes, "\n  " + "\n  ".join(fautes[:10])

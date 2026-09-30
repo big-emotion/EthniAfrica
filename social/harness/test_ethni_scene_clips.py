@@ -14,6 +14,7 @@ import unittest
 import wave
 
 import numpy as np
+from PIL import Image
 
 from ethni_scene_audio import prepare_source
 from ethni_scene_mix import render_master
@@ -86,6 +87,7 @@ class Fixtures(unittest.TestCase):
         (self.root/"work/aligned-words.json").write_text(json.dumps([
             {"word": "Alpha", "start": .2, "end": .6}, {"word": "beta.", "start": .7, "end": 1.1},
             {"word": "Gamma", "start": 1.6, "end": 2.0}, {"word": "delta.", "start": 2.1, "end": 2.5}]))
+        Image.new("RGB", (1200, 2000), "gray").save(self.root/"photo.png")
         self.plan = self.make_plan()
 
     def asset(self, name, credit="Synthetic tone"):
@@ -97,7 +99,8 @@ class Fixtures(unittest.TestCase):
                      "silence_before": .5, "silence_after": .5}
         evidence = {"sources": ["fixture"], "status": "illustration", "period": "Test"}
         def text_scene(name, start, end):
-            return {"id": name, "type": "text", "start": start, "end": end, "title": "TEST", "text": name,
+            return {"id": name, "type": "image", "start": start, "end": end, "title": "TEST",
+                    "image": {"asset": "photo", "fit": "cover"},
                     "purpose": "Exercise the timeline", "evidence": evidence}
         return {"version": 1, "profile": "free", "title": "Fixture", "output_dir": str(self.root/"_epreuves"),
                 "source": {"source_script_sha256": sha(self.root/"narration.fr.txt"),
@@ -106,7 +109,9 @@ class Fixtures(unittest.TestCase):
                 "sources": {"fixture": {"citation": "Synthetic fixture", "url": "https://example.org", "tier": "unverified"}},
                 "assets": {"excerpt": self.asset("excerpt.wav"), "film": self.asset("film.mp4"),
                            "mute": self.asset("mute-film.mp4"), "bed": self.asset("bed.wav"),
-                           "loud": self.asset("loud.wav")},
+                           "loud": self.asset("loud.wav"),
+                           "photo": {"path": "photo.png", "kind": "image", "sha256": sha(self.root/"photo.png"),
+                                     "credit": "Test fixture", "license": "CC0", "source": "fixture"}},
                 "insertions": [insertion],
                 "scenes": scenes or [text_scene("intro", 0, 1.3), text_scene("listen", 1.3, 5.3),
                                      text_scene("after", 5.3, 7)]}
@@ -263,7 +268,8 @@ class ClipScenes(Fixtures):
     def scenes(self, transition=None, kind="film", start=1.3, end=5.3):
         evidence = {"sources": ["fixture"], "status": "illustration", "period": "Test"}
         def text_scene(name, a, b):
-            return {"id": name, "type": "text", "start": a, "end": b, "title": "TEST", "text": name,
+            return {"id": name, "type": "image", "start": a, "end": b, "title": "TEST",
+                    "image": {"asset": "photo", "fit": "cover"},
                     "purpose": "Exercise the timeline", "evidence": evidence}
         clip = {"id": "clip", "type": "clip", "start": start, "end": end, "title": "TEST",
                 "purpose": "Show the excerpt", "evidence": evidence, "clip": {"insertion": "hear-1", "fit": "contain"}}
@@ -287,12 +293,11 @@ class ClipScenes(Fixtures):
         validate_plan(plan, self.root, prepared["duration"], prepared["timeline"])
         renderer = SceneRenderer(plan, self.root, prepared["captions"], timeline=prepared["timeline"])
         for instant in (1.4, 1.8, 3.3, 4.79, 5.2):
-            frame = renderer.visual(plan["scenes"][1], instant)
+            frame = renderer.render(instant)
             r, g, b = frame.getpixel((540, 760))
             self.assertGreater(r, 180, instant)
             self.assertLess(g+b, 120, instant)
-        self.assertNotEqual(renderer.visual(plan["scenes"][0], .5).getpixel((540, 760)),
-                            renderer.visual(plan["scenes"][1], 3.0).getpixel((540, 760)))
+        self.assertNotEqual(renderer.render(.5).getpixel((540, 760)), renderer.render(3.0).getpixel((540, 760)))
 
     def test_scene_window_must_contain_the_excerpt_and_the_insertion_must_exist(self):
         for kwargs in ({"start": 1.9}, {"end": 4.0}):
