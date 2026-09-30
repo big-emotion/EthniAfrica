@@ -109,6 +109,7 @@ export function findPostRelPath() { return null; }
   return { root, projects, posts, subject, ledger, post, save, put, run };
 }
 
+// @req REQ-032
 test("dry-run lists exact disposable files and bytes without writing anything", (t) => {
   const f = fixture(t);
   const before = fs.readFileSync(
@@ -135,6 +136,7 @@ test("dry-run lists exact disposable files and bytes without writing anything", 
   assert.ok(fs.existsSync(path.join(f.subject, "work/images/000000.png")));
 });
 
+// @req REQ-032
 test("explicit write removes frames, preserves inputs and library, and is repeatable", (t) => {
   const f = fixture(t);
   const result = f.run(["--subject", "Example", "--write"]);
@@ -269,6 +271,7 @@ for (const location of ["subject", "work", "frame", "record", "library"]) {
   });
 }
 
+// @req REQ-032
 test("shared directories and path escapes cannot be selected", (t) => {
   const f = fixture(t);
   for (const subject of [
@@ -281,6 +284,7 @@ test("shared directories and path escapes cannot be selected", (t) => {
   }
 });
 
+// @req REQ-032
 test("nested shared material and Git checkouts are refused before any deletion", (t) => {
   const f = fixture(t);
   f.put("workshop/Example/_shared-assets/work/cache.log", "shared");
@@ -348,6 +352,7 @@ require("node:module").syncBuiltinESMExports();
   });
 }
 
+// @req REQ-032
 test("explicit keep and evidence references override the disposable class", (t) => {
   const f = fixture(t);
   f.put(
@@ -363,6 +368,7 @@ test("explicit keep and evidence references override the disposable class", (t) 
   assert.equal(JSON.parse(result.stdout).bytes, 0);
 });
 
+// @req REQ-032
 test("record evidence, absolute references and filenames with spaces are protected", (t) => {
   const f = fixture(t);
   f.put(
@@ -385,6 +391,7 @@ test("record evidence, absolute references and filenames with spaces are protect
   assert.equal(JSON.parse(result.stdout).bytes, 0);
 });
 
+// @req REQ-032
 test("a script mentioning the work directory does not protect every generated frame", (t) => {
   const f = fixture(t);
   f.put("workshop/Example/work/edl.py", 'work = project / "work"\n');
@@ -393,6 +400,7 @@ test("a script mentioning the work directory does not protect every generated fr
   assert.equal(JSON.parse(result.stdout).bytes, 18);
 });
 
+// @req REQ-032
 test("published status uses the dated shelf and records actual occurrences", (t) => {
   const f = fixture(t);
   f.post.status = "publie";
@@ -413,6 +421,7 @@ test("published status uses the dated shelf and records actual occurrences", (t)
   );
 });
 
+// @req REQ-032
 test("filing completion in register-post invokes cleanup automatically, dry-run stays dry", (t) => {
   const f = fixture(t);
   const args = ["--id", "example", "--filed"];
@@ -427,6 +436,7 @@ test("filing completion in register-post invokes cleanup automatically, dry-run 
   );
 });
 
+// @req REQ-032
 test("registration stores an explicit workshop binding and rejects shared or escaped paths", (t) => {
   const f = fixture(t);
   delete f.post.workshopSubject;
@@ -452,6 +462,7 @@ test("registration stores an explicit workshop binding and rejects shared or esc
     );
 });
 
+// @req REQ-032
 test("filing completion fails visibly when the actual library copy is missing", (t) => {
   const f = fixture(t);
   fs.unlinkSync(
@@ -465,6 +476,7 @@ test("filing completion fails visibly when the actual library copy is missing", 
   assert.ok(fs.existsSync(path.join(f.subject, "work/images/000000.png")));
 });
 
+// @req REQ-032
 test("derived audio needs the selected take and master; evidence logs and unique takes survive", (t) => {
   const f = fixture(t);
   f.put("workshop/Example/work/source.wav", "derived-source");
@@ -484,6 +496,7 @@ test("derived audio needs the selected take and master; evidence logs and unique
     assert.ok(fs.existsSync(path.join(f.subject, "work", name)));
 });
 
+// @req REQ-032
 test("the state report distinguishes completed housekeeping from a missing record", (t) => {
   const f = fixture(t);
   f.put(
