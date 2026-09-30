@@ -86,18 +86,18 @@ the workshop has not filled it yet.**
 
 ## How to say it instead
 
-| Curator register                                                                                                                                                                    | Reader register                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Fiche générée depuis la file d'attente des candidats : le champ n'a pas été renseigné faute de recherche, et attend le protocole de recherche par fiche.                            | Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour.             |
-| Le système « clan_name » ne détermine pas à lui seul le mode de transmission : …                                                                                                    | Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom. |
-| Corpus AFRIK — PPL_DIOULA, organisation clanique                                                                                                                                    | EthniAfrica — fiche du peuple Dioula, organisation clanique                                                         |
-| Passage source : dataset/…/PPL_DIOULA.json#content.organization.clanOrganization. Le tier hérité n'est pas résolu ; la revue claim-level reste requise.                             | Reprise du chapitre « Organisation clanique » de la fiche du peuple Dioula.                                         |
-| Aucun porteur décédé n'a été rattaché au jamu par les sources de cette passe.                                                                                                       | Aucun porteur n'a été rattaché au jamu par les sources consultées.                                                  |
-| Les recherches exactes n'ont pas fourni, dans cette passe, un porteur décédé rattaché au patronyme.                                                                                 | Les recherches exactes n'ont pas fourni de porteur décédé rattaché au patronyme.                                    |
-| Personne vivante, donc exclue par le protocole.                                                                                                                                     | Aucun porteur décédé n'est documenté dans les sources consultées.                                                   |
-| Tier resolved from the domain ruling for jstor.org.                                                                                                                                 | _(no note — the tier badge says it)_                                                                                |
-| No URL and no recognisable citation shape; the tier awaits editorial review.                                                                                                        | _(no note — the Non vérifiée badge says it)_                                                                        |
-| Tier resolved from the domain ruling for unesco.org (sous-domaine ich.unesco.org). Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité. | Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité.                    |
+| Curator register                                                                                                                                                                    | Reader register                                                                                                                    |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Fiche générée depuis la file d'attente des candidats : le champ n'a pas été renseigné faute de recherche, et attend le protocole de recherche par fiche.                            | Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour.                            |
+| Le système « clan_name » ne détermine pas à lui seul le mode de transmission : …                                                                                                    | Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom.                |
+| Corpus AFRIK — PPL_DIOULA, organisation clanique                                                                                                                                    | EthniAfrica — fiche du peuple Dioula, organisation clanique                                                                        |
+| Passage source : dataset/…/PPL_DIOULA.json#content.organization.clanOrganization. Le tier hérité n'est pas résolu ; la revue claim-level reste requise.                             | Reprise du chapitre « Organisation clanique » de la fiche du peuple Dioula.                                                        |
+| Aucun porteur décédé n'a été rattaché au jamu par les sources de cette passe.                                                                                                       | Nous ne présentons pas encore de porteur de ce jamu : les sources consultées n'en rattachent aucun que nous puissions nommer.      |
+| Les recherches exactes n'ont pas fourni, dans cette passe, un porteur décédé rattaché au patronyme.                                                                                 | Nous ne présentons pas encore de porteur de ce patronyme : les recherches exactes n'en ont fourni aucun que nous puissions nommer. |
+| Personne vivante, donc exclue par le protocole.                                                                                                                                     | Nous ne présentons pas encore de porteur de ce nom : les sources consultées n'en rattachent aucun que nous puissions nommer.       |
+| Tier resolved from the domain ruling for jstor.org.                                                                                                                                 | _(no note — the tier badge says it)_                                                                                               |
+| No URL and no recognisable citation shape; the tier awaits editorial review.                                                                                                        | _(no note — the Non vérifiée badge says it)_                                                                                       |
+| Tier resolved from the domain ruling for unesco.org (sous-domaine ich.unesco.org). Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité. | Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité.                                   |
 
 A note that only explained the tier is removed, not replaced: an empty or
 absent `notes` renders nothing, which is the silence the reader is owed.
@@ -108,8 +108,10 @@ That last row is its own lesson. DEC-040 lets a fiche name only public figures,
 the deceased, or the self-identified, so a curator searching for eligible bearers
 naturally wrote the silence in those terms — and a section that simply lists who
 bears a name came out reading as a search through the dead. The eligibility rule
-is real and stays; it is a curation constraint, not something the reader needs in
-order to understand that no bearer is documented.
+is real and stays; it is a curation constraint, not something the reader needs to
+be told. The reader sentence keeps the scope that was actually searched — what we
+can name here — and never says that no bearer exists: a search limited by who may
+be named cannot support that broader claim.
 
 ## The gate
 
@@ -136,6 +138,37 @@ The banned vocabulary lives in two exported constants in
 `src/lib/editorial/readerRegister.ts` — `INTERNAL_REGISTER_PATTERNS` (French)
 and `INTERNAL_REGISTER_PATTERNS_EN` (English) — so this document and the gate
 cannot drift apart.
+
+## Using sources
+
+This section owns the rule; skills, the curator references and `CLAUDE.md` point
+here instead of restating it (remediation ledger, C01/C02/C07).
+
+- **Admission is traceability, not category.** A source the project consulted is
+  cited for what it is, with a tier and enough to find it again. A weak source is
+  labelled, never hidden, and a source is never described as more than it is.
+  The one true gap is a citation that identifies nothing (« internet », « un
+  site »): that is a missing source, and the reader is told the point is not yet
+  documented.
+- **Wikipedia and other tertiary encyclopedias** are read first, and what they
+  cite is read next. When the article was consulted and supports the statement, it
+  may be cited directly as what it is — a tertiary encyclopedia, at `unverified`,
+  with its language, title and consultation date; the gate reports it and does not
+  refuse it (DEC-055). Prefer the primary source it points to, cited at its own
+  standing and address, with the language versions crossed noted in `notes`. Do
+  not pretend a consulted source was not used, and do not present the article as
+  the authority for a contested claim. This governs the site and the corpus, where
+  a source list is labelled. **Social publications keep the operator's ruling of
+  2026-09-21**: Wikipedia never appears on screen or in a caption as a source (no
+  capture, credit or spoken « selon Wikipédia »), because showing it lends an
+  authority the project does not give it. That is a rule about what is displayed,
+  not a licence to hide what was consulted: the workshop record of the piece keeps
+  the consultation, dated, for traceability.
+- **`notes` says what the source is**, never why it received its tier. The tier
+  rationale belongs in the internal ruling ledger; the badge already speaks.
+- **A partial estimate is shown as partial.** Population shares that do not sum to
+  100 % raise a warning, not an omission: keep the dated estimates and let the page
+  say that the breakdown is incomplete. Never complete a figure to make it total.
 
 ## Narration, cards, captions and pages: the subject before the reference
 
