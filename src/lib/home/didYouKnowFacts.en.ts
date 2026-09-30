@@ -1267,7 +1267,7 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
       headline:
         "The Manianga may be named after a market, or after a word let slip by Stanley.",
       body: [
-        "Manianga was not an ethnonym. According to Van Bulck, it is the name of a market founded near Kimbanza by the ancestor Volumina, the only market in the region to survive into the colonial period. According to Monnier and Wiliame, it is a nickname thrown out by Stanley and his party in 1881 near the Mpioka falls, applied to a people that called itself Sundi.",
+        "Two explanations agree: Manianga was not an ethnonym. One explanation makes it the name of a market founded near Kimbanza by the ancestor Volumina, the only market in the region to survive into the colonial period (Van Bulck). Another sees a nickname thrown out by Stanley and his party in 1881 near the Mpioka falls, applied to a people that called itself Sundi (Monnier and Wiliame).",
         "The two versions tell the same story: a word of circumstance, picked up by colonial writing, that became the name of a group. Ba-sundi remains the proper ethnic name — Ba- being the Bantu prefix for the human plural.",
       ],
       entities: [

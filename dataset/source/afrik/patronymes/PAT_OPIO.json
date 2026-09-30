@@ -24,7 +24,7 @@
     "oralTraditions": [],
     "writtenChronicles": [
       {
-        "claim": "Opio est documenté dans le système lango comme le nom masculin du premier jumeau ; Apio est la forme féminine correspondante. La graphie Opiyo figurait dans la fiche vague 1, mais la source lango consultée ne l’atteste pas et elle est retirée plutôt que reportée sans preuve.",
+        "claim": "Opio est documenté dans le système lango comme le nom masculin du premier jumeau ; Apio est la forme féminine correspondante. La graphie Opiyo n’est pas attestée par la source lango consultée : nous ne la retenons pas.",
         "claimStatus": "established",
         "sourceRefs": ["agea-eton-lango-naming-2026"]
       }

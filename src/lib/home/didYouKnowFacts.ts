@@ -1307,7 +1307,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
     headline:
       "Les Manianga s'appellent peut-être d'après un marché, ou d'après un mot lâché par Stanley.",
     body: [
-      "Manianga n'était pas un ethnonyme. Selon Van Bulck, c'est le nom d'un marché fondé près de Kimbanza par l'ancêtre Volumina, seul marché de la région à subsister à l'époque coloniale. Selon Monnier et Wiliame, c'est un surnom lancé par Stanley et sa suite en 1881 près des chutes de Mpioka, appliqué à un peuple qui s'appelait Sundi.",
+      "Deux explications s'accordent : Manianga n'était pas un ethnonyme. Une explication en fait le nom d'un marché fondé près de Kimbanza par l'ancêtre Volumina, seul marché de la région à subsister à l'époque coloniale (Van Bulck). Une autre y voit un surnom lancé par Stanley et sa suite en 1881 près des chutes de Mpioka, appliqué à un peuple qui s'appelait Sundi (Monnier et Wiliame).",
       "Les deux versions racontent la même chose : un mot de circonstance, ramassé par l'écrit colonial, devenu le nom d'un groupe. Ba-sundi reste l'appellation ethnique propre — Ba- étant le préfixe bantou du pluriel des humains.",
     ],
     entities: [
