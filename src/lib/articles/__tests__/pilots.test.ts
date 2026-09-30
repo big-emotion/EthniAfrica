@@ -4,21 +4,22 @@ import { violatesReaderRegister } from "@/lib/editorial/readerRegister";
 
 import { readArticleCorpus } from "../corpus";
 
-// The mechanical floor under the three P5 pilots. Whether the prose is right is
+// The mechanical floor under every written article (the three pilots first). Whether the prose is right is
 // judged against docs/plans/articles-pilots-review-cases.md by a person; this
 // only refuses the shapes that are wrong whatever the prose says.
-const PILOT_IDS = [
-  "mali-quelle-histoire",
-  "lingala-invente-par-les-belges",
-  "manden-mande-mandingue-trois-mots",
-];
 
 // A paragraph that opens on its authority instead of its subject.
 const AUTHORITY_OPENER = /^\s*(Selon |D['’]après |According to )/i;
 
 const { articles } = readArticleCorpus();
 
-describe.each(PILOT_IDS)("pilot article %s", (id) => {
+// Every article that has a written body, so a batch is held to the floor the
+// moment it lands, with no list to keep up to date.
+const PILOT_IDS = articles
+  .filter((a) => a.fr.sections.length > 0)
+  .map((a) => a.id);
+
+describe.each(PILOT_IDS)("written article %s", (id) => {
   const article = articles.find((a) => a.id === id);
 
   // @req REQ-114
