@@ -1,0 +1,160 @@
+{
+  "id": "lingala-invente-par-les-belges",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Mythe déconstruit",
+  "fr": {
+    "slug": "lingala-invente-par-les-belges",
+    "title": "D'où vient le nom lingala ?",
+    "excerpt": "Le lingala, une langue inventée par les Belges ?",
+    "sections": []
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "R. Harms, River of Wealth, River of Sorrow, 1981",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s2",
+      "title": "M. Meeuwis, APiCS Online",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s3",
+      "title": "N. Mbulamoko, Annales Aequatoria 12, 1991",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s4",
+      "title": "G. Burssens, Kongo-Overzee 20(3), 1954",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s5",
+      "title": "J. Castillo, Journal of African History 65, 2024, p. 332",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s6",
+      "title": "M. Meeuwis, chapitre « Lingala », APiCS Online",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s7",
+      "title": "M. Mimpongo, lingbuzz/008154, 2024-2025",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s8",
+      "title": "J. Castillo, Journal of African History 65, 2024, p. 334-336",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s9",
+      "title": "IPS, 9 août 2004",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s10",
+      "title": "G. Prunier, Africa's World War, 2009, p. 150",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s11",
+      "title": "M. Meeuwis, APiCS Online (cite E. Marker, 1929)",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s12",
+      "title": "Wikipédia FR, Lingala (Musique)",
+      "tier": "needs_review"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "lingala-invente-par-les-belges"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "lingala-invente-par-les-belges/lingala-invente-par-les-belges/slide-01-779de5b39dd6.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Un soldat de la Force publique en uniforme colonial et calot, fusil à l'épaule, monte la garde sur un chemin bordé de palmiers ; d'autres soldats assis près de fusils en faisceau à l'arrière-plan.",
+            "text": "Le lingala, une langue inventée par les Belges ?"
+          },
+          {
+            "src": "lingala-invente-par-les-belges/lingala-invente-par-les-belges/slide-02-7de2d01f218d.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Gravure d'un vapeur fluvial à aubes, bâché et pavoisé, remontant un large fleuve avec des passagers à son bord, une rive boisée à l'horizon.",
+            "text": "Avant les Belges, il existait déjà une langue de fleuve : le bobangi.\n\nLangue de commerce du fleuve Congo bien avant la colonisation, le bobangi se transforme, au contact des premiers agents européens et de leurs troupes, en une variété simplifiée dès les années 1880.\n\nR. Harms, River of Wealth, River of Sorrow, 1981 · M. Meeuwis, APiCS Online"
+          },
+          {
+            "src": "lingala-invente-par-les-belges/lingala-invente-par-les-belges/slide-03-2c2d8f18ebf5.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Carte en courbes de niveau d'un méandre du fleuve, avec la mention manuscrite « Mankansa (Post of the Ba-Ngala) » et les toponymes Bangalasoko et Bolombo.",
+            "text": "En 1884, une station reprend un nom déjà utilisé — à tort — pour tout un peuple.\n\nEn 1884, des agents européens s'installent sur place et appellent leur poste « station Bangala » — un nom qu'ils utilisaient déjà, depuis 1876, pour un ensemble de peuples distincts : Budja, Ngombe, Poto, Boloki, Libinza, Ngbandi. La station prend le nom de Nouvelle-Anvers en 1890, puis celui de Makanza.\n\nN. Mbulamoko, Annales Aequatoria 12, 1991 · G. Burssens, Kongo-Overzee 20(3), 1954"
+          },
+          {
+            "src": "lingala-invente-par-les-belges/lingala-invente-par-les-belges/slide-04-29724eba6eed.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Un soldat en uniforme colonial et calot guide un autre soldat agenouillé qui vise un fusil, dans un champ d'herbe sèche bordé d'arbres.",
+            "text": "Après la mutinerie de 1893, l'armée coloniale en fait sa langue de commandement.\n\nPour réduire le risque de nouvelles mutineries, la Force publique adopte cette langue pour unifier des troupes recrutées dans tout le bassin du fleuve.\n\nJ. Castillo, Journal of African History 65, 2024, p. 332"
+          },
+          {
+            "src": "lingala-invente-par-les-belges/lingala-invente-par-les-belges/slide-05-c5a014946051.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Photographie ancienne, reproduite dans un livre, de bâtiments de mission au toit de chaume entourés de palmiers, avec sa légende imprimée « La mission catholique de Nouvelle-Anvers. Coté nord. »",
+            "text": "En 1901, des missionnaires écrivent pour la première fois le nom « lingala ».\n\nLes pères de Scheut codifient la langue à Nouvelle-Anvers. L'ont-ils aussi renommée ? Meeuwis le pense ; Mimpongo dit que « lingála » signifiait déjà « langue » en bobangi.\n\nM. Meeuwis, chapitre « Lingala », APiCS Online · M. Mimpongo, lingbuzz/008154, 2024-2025"
+          },
+          {
+            "src": "lingala-invente-par-les-belges/lingala-invente-par-les-belges/slide-06-e4786360e689.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Portrait en légère contre-plongée d'un homme à lunettes, en veste sombre à épaulettes torsadées et décorée d'une médaille, derrière un pupitre équipé de plusieurs microphones.",
+            "text": "Mobutu ne décrète rien : le lingala s'impose par l'usage, pas par la loi.\n\nLe français reste seul officiel. Mobutu, lui-même lingalaphone, en fait la langue reconnaissable de l'armée à travers les meetings, les chansons du parti unique et ses discours.\n\nJ. Castillo, Journal of African History 65, 2024, p. 334-336"
+          },
+          {
+            "src": "lingala-invente-par-les-belges/lingala-invente-par-les-belges/slide-07-93f2a705a9aa.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Deux hommes assis dans des fauteuils de cuir, en pleine conversation souriante, autour d'une table basse couverte de livres et d'un téléphone, dans un bureau aux parois métalliques verticales.",
+            "text": "En 1997, les troupes de Kabila parlent swahili, pas lingala.\n\nSes soldats, les Kadogos, viennent de l'Est du pays et renforcent la place du swahili dans l'armée — un basculement de langue, jamais une tentative documentée d'en faire la langue officielle.\n\nIPS, 9 août 2004 · G. Prunier, Africa's World War, 2009, p. 150"
+          },
+          {
+            "src": "lingala-invente-par-les-belges/lingala-invente-par-les-belges/slide-08-d809ed333d31.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Un chanteur-guitariste en chemise rouge, souriant, joue de la guitare électrique sur scène sous des projecteurs de couleur, entouré d'autres musiciens et d'un micro sur pied.",
+            "text": "Le lingala porte aujourd'hui la rumba congolaise — sans faire l'unanimité.\n\nIl donne son nom aux tubes de Franco Luambo, Papa Wemba ou Fally Ipupa. Mais dès 1929, des linguistes le décrivaient comme un « mauvais bobangi » — et à l'est, où des swahiliphones le critiquent, il reste minoritaire.\n\nM. Meeuwis, APiCS Online (cite E. Marker, 1929) · Wikipédia FR, Lingala (Musique)"
+          },
+          {
+            "src": "lingala-invente-par-les-belges/lingala-invente-par-les-belges/slide-09-4bd0c2600d3a.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Gravure d'un vapeur fluvial à aubes, bâché et pavoisé, remontant un large fleuve avec des passagers à son bord, une rive boisée à l'horizon.",
+            "text": "Cette langue n'a pas été inventée.\n\nElle existait déjà — on lui a seulement donné un nom écrit.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "Soldats de la Force publique, Congo belge, 1914-1918 · VRT, via Wikimedia Commons · domaine public ; Le vapeur missionnaire Henry Reed sur le fleuve Congo, v. 1890 · André & Sleigh, d'après Rev. A. Billington · The Story of Africa and its Explorers (1892), via Wikimedia Commons · domaine public ; Carte de la station de Mankansa (poste des Ba-Ngala), v. 1890 · vintage-views.com, via Wikimedia Commons · domaine public ; Instruction au tir, soldats de la Force publique, Congo belge, v. 1943 · National Archives and Records Administration (fonds Franklin D. Roosevelt), via Wikimedia Commons · domaine public ; La mission catholique de Nouvelle-Anvers, côté nord · Franz Thonner, 1896 · Rijksmuseum, via Wikimedia Commons · CC0 ; Le maréchal Mobutu Sese Seko, chef des forces armées zaïroises, 1980-1993 · Agence Zaïre Presse · Zaire: A Country Study (1993), Library of Congress, via Wikimedia Commons · domaine public ; Laurent-Désiré Kabila reçoit João de Deus Pinheiro, 25 novembre 1998 · Etienne Scholasse, Commission européenne · Service audiovisuel de la Commission européenne, via Wikimedia Commons · CC BY 4.0 ; Franco Luambo et son orchestre OK Jazz en concert au festival Zaïre 74, Kinshasa, septembre 1974 · Therumbakings.com, via Wikimedia Commons · domaine public"
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7685962182923767062",
+        "publishedAt": "2026-09-16"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}
