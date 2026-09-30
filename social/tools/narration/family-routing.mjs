@@ -73,6 +73,12 @@ const STALE_AFTER_DAYS = 30;
 // production ledger, so the series cannot run without one.
 const typologieOf = (edition) => edition.subject?.key?.split(":")[0];
 
+// `mot` is the operator's one exception (2026-09-21): a word no fiche carries.
+// It is a series typology but not a gabarit one — the reel gabarit has no
+// skeleton for it — so it lives here and `TYPES` stays the gabarit's own list.
+const MOT = "mot";
+const SERIES_TYPOLOGIES = [...TYPES, MOT];
+
 // `narrativeDesign` is the explicit switch of the research-led route: the
 // series keeps its closing, but the fixed scene list, name count and
 // explanation ceiling of the legacy gabarit stop applying. Never inferred from
@@ -109,9 +115,11 @@ export function planReviews(edition, { narrativeDesign } = {}) {
         route: "narrative-design",
         ...(inSeries ? { closing: CLOTURE_UNIQUE } : {}),
       }
-    : inSeries
-      ? { applies: true, type }
-      : { applies: false };
+    : inSeries && type === MOT
+      ? { applies: false, closing: CLOTURE_UNIQUE }
+      : inSeries
+        ? { applies: true, type }
+        : { applies: false };
   return { family: edition.family, reviews, narrationGabarit };
 }
 
@@ -189,10 +197,10 @@ export function validateBrief(brief, { today }) {
   }
   if (
     edition.series === "name-origin" &&
-    !TYPES.includes(typologieOf(edition))
+    !SERIES_TYPOLOGIES.includes(typologieOf(edition))
   ) {
     errors.push(
-      `the name-origin series needs a subject key typed by a typologie (${TYPES.join(", ")})`
+      `the name-origin series needs a subject key typed by a typologie (${SERIES_TYPOLOGIES.join(", ")})`
     );
   }
   errors.push(...strategyErrors(brief.strategy, today));
