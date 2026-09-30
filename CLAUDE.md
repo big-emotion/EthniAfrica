@@ -654,8 +654,9 @@ name gates remain unchanged. This is a scoped exception to REQ-095 for the
 provenance of a people's name, not a change to how oral accounts support other
 assertions.
 
-A fiche sourced only at `unverified` is published and visibly marked low-confidence through
-`ConfidenceChip`. That is the intended outcome, not a defect to fix.
+A fiche sourced only at `unverified` is published, and its sources are visibly labelled
+(the **Non vérifiée** badge, the reference count in `ConfidenceChip`, which prints no
+percentage and no « vérifié »). That is the intended outcome, not a defect to fix.
 
 #### Assertion tracks certainty, in the sentence itself
 

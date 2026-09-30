@@ -21,8 +21,9 @@ user-facing label all say the same thing.
 | `referenced` | **Référencée**   | 0.7    | Published, identifiable, verifiable work — academic, press, books. Not necessarily official     |
 | `unverified` | **Non vérifiée** | 0.4    | Aggregators, tertiary encyclopedias, blogs, social media, community accounts, AI-generated text |
 
-A fiche resting only on `unverified` sources is **published**, and visibly marked
-low-confidence through `ConfidenceChip`. That is the intended outcome, not a defect to fix.
+A fiche resting only on `unverified` sources is **published**, and its sources are visibly
+labelled (the badge, and the reference count in `ConfidenceChip`, which prints no percentage).
+That is the intended outcome, not a defect to fix.
 
 ### The CIA World Factbook is retired — cite an edition, never the live site
 

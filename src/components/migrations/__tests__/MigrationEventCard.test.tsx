@@ -102,7 +102,7 @@ describe("MigrationEventCard", () => {
         }}
       />
     );
-    expect(screen.getByText(/90 %/)).toBeInTheDocument();
+    expect(screen.getByText(/4 références · revu/)).toBeInTheDocument();
   });
 
   // @req REQ-101 FR81 FR82
