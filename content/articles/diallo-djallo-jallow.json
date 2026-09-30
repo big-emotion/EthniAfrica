@@ -1,6 +1,6 @@
 {
   "id": "diallo-djallo-jallow",
-  "status": "draft",
+  "status": "published",
   "author": {
     "name": "EthniAfrica"
   },
@@ -146,5 +146,6 @@
       }
     ]
   },
-  "relatedArticleIds": ["fulbe-personne-appele-comme-ca"]
+  "relatedArticleIds": ["fulbe-personne-appele-comme-ca"],
+  "publishedAt": "2026-09-30"
 }

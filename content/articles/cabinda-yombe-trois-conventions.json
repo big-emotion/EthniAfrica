@@ -1,6 +1,6 @@
 {
   "id": "cabinda-yombe-trois-conventions",
-  "status": "draft",
+  "status": "published",
   "author": {
     "name": "EthniAfrica"
   },
@@ -189,5 +189,6 @@
       }
     ]
   },
-  "relatedArticleIds": []
+  "relatedArticleIds": [],
+  "publishedAt": "2026-09-30"
 }

@@ -1,6 +1,6 @@
 {
   "id": "ghana-qui-a-choisi-le-nom",
-  "status": "draft",
+  "status": "published",
   "author": {
     "name": "EthniAfrica"
   },
@@ -156,14 +156,6 @@
     },
     "formats": [
       {
-        "kind": "video",
-        "poster": {
-          "src": "ghana-qui-a-choisi-le-nom/ghana-qui-a-choisi-le-nom/poster-cc47d6efe31e.webp",
-          "width": 1080,
-          "height": 1920
-        }
-      },
-      {
         "kind": "carousel",
         "slides": [
           {
@@ -294,5 +286,6 @@
       }
     ]
   },
-  "relatedArticleIds": []
+  "relatedArticleIds": [],
+  "publishedAt": "2026-09-30"
 }
