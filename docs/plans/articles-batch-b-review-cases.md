@@ -121,3 +121,25 @@ Wikipedia page, or on a work nobody read, is dropped or flagged.
   Credit-check on cards 1, 2, 5, 6.
 - **Improvement over the carousel.** Gives the 1973 testimony its institutions, dates the colonial
   reform from a source actually read, and keeps "most" instead of "never".
+
+## Case B5 — `krio-quatre-vagues-freetown`
+
+- **Reader's question.** Where does the name Krio come from, and what did "créole" first mean?
+- **Primary reader need.** P1 and P3; P2 for Sierra Leonean and Saro readers. **Short article**:
+  the evidence is one dictionary entry, one UNESCO listing and our own fiche.
+- **Claims and support.**
+  | Claim                                                                                                                                                                                                                                        | Record source                                                                           |
+  | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+  | Spanish criollo / Portuguese crioulo: born in the colony, not arrived from Europe; from Latin creare                                                                                                                                         | s1 CNRTL (workshop reading; page did not render when we tried)                          |
+  | UNESCO inscribed Cidade Velha in 2009 and presents it as the cradle of the first creole society in Africa                                                                                                                                    | s2 (workshop reading; page refused automated access)                                    |
+  | Four waves at Freetown: 1787 (London), 1792 (Nova Scotia), 1800 (Jamaica), liberated Africans from slave ships until 1860; distinct identities until the 1870s, then a common one; self-name Krio pipul; "Krio" is the Krio form of "Creole" | s3 (our fiche, read; its own sources are mostly `referenced` press and reference works) |
+  | Saro: Krio settled in Lagos and Abeokuta in the 19th century; "Saro" from "Sierra Leone"                                                                                                                                                     | s3 (fiche, read)                                                                        |
+- **Uncertainty.** When the four groups began to use one name is given only as a period (fusion
+  up to the 1870s-1880s); the carousel's "ces quatre vagues se donnent un seul nom" compresses it.
+- **Dropped or flagged.** The list of other creole peoples (card 5, cites a corpus map not in the
+  record's sources); "Ce nom n'a pas été subi. On se l'est approprié." (rhetoric, not repeated as a
+  finding); population figures (not in the carousel). Card 5 calls the project "l'atlas" on screen
+  (a published slide, not edited). Slides recovered from the workshop render folder, **not proven to
+  be the files posted**; post.md records no URL for any network; the ledger links the campaign.
+- **Improvement over the carousel.** Separates the word's colonial meaning from the self-name, and
+  says that the four groups became one people over decades, not on arrival.
