@@ -46,3 +46,30 @@ work nobody read, is dropped or left flagged.
 - **Improvement over the carousel.** Separates the language, the people and the spelling;
   says what the carousel's "même peuple" rests on (one language code and two place names), and
   keeps the Asante meaning as an attributed outside reading.
+
+## Case A2 — `amazigh-berbere-deux-noms`
+
+- **Reader's question.** Does Amazigh mean "free men"? Where does "Berbère" come from?
+- **Primary reader need.** P2 (readers who call themselves Amazigh and may hold the "free men"
+  reading as their own) and P1.
+- **Claims and support.**
+  | Claim                                                                                                                                                | Record source                       |
+  | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+  | Amazigh (one person), Imazighen (plural), tamazight (feminine; also the language)                                                                    | s1 (opened)                         |
+  | "Free men / noble" comes from Leo Africanus ("langage noble"), then Gsell; Chaker: "certainement pas fondée", an ethnonym, not a status              | s1 (opened)                         |
+  | No sure etymology can be established                                                                                                                 | s1 (opened)                         |
+  | The "free / noble" sense is real locally, where society was strongly stratified (southern Tuareg; south Morocco and Sahara per the workshop reading) | s1 (opened for the Tuareg sentence) |
+  | Ancient forms: Maxyes (Herodotus), Mazyes (Hecataeus), Mazices, Mazax (Latin authors)                                                                | s1 (opened)                         |
+  | The term was unknown in traditional Kabylie, Mzab and Aurès; its general use starts from Kabylie and is dated 1945–50                                | s1 (opened)                         |
+  | "Berbère": generic term forged by the Arabs on arrival, probably from Latin _Barbari_; genealogists later invented an eponym Berr/Berber             | s2 (opened, p. 5165)                |
+- **Uncertainty.** The origin of Amazigh is not established; "Berbère" < _Barbari_ carries the
+  source's "probablement".
+- **Dropped or flagged.** "Tamazight official in Morocco since 2011" (card 2 credits Chaker 1986,
+  which cannot carry a 2011 fact: no source in the record); "jusqu'au Burkina Faso" (card 1, no
+  source); "VIIe siècle" and "barbari = étranger" (card 6 wording, not in the Modéran passage
+  opened); the Egyptian _Barabara_ inscriptions and population figures (already refused by the
+  workshop). Flag: the workshop `post.md` still reads "Validé, en attente — pas encore publié"
+  while the library files it as published 2026-09-12 with one TikTok URL; the subject's
+  working title states both etymologies as facts (the workshop kept it internal).
+- **Improvement over the carousel.** Keeps the Tuareg nuance and the unsettled etymology in the
+  same place as the correction, and gives the source and page for each point.

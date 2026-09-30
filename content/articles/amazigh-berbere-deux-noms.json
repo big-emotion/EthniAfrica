@@ -8,19 +8,85 @@
   "fr": {
     "slug": "amazigh-berbere-deux-noms",
     "title": "D'où vient le nom Amazigh ?",
-    "excerpt": "Amazigh veut dire les hommes libres. Berbère vient de barbarus.",
-    "sections": []
+    "excerpt": "« Les hommes libres » : la traduction d'Amazigh que l'on lit partout a un auteur, et un linguiste la juge sans fondement. Berbère, lui, a été forgé de l'extérieur. Ce que l'on sait de ces deux noms, et ce qui reste ouvert.",
+    "sections": [
+      {
+        "heading": "Un nom qui change avec le nombre",
+        "paragraphs": [
+          "Amazigh désigne une personne : un homme, un Berbère. Au pluriel, Imazighen désigne le peuple. Au féminin, tamazight dit à la fois la femme et la langue.",
+          "Ce peuple porte donc au moins deux noms : celui-ci, qu'il emploie, et Berbère, que d'autres lui ont donné. Aucun des deux ne dit tout à fait ce qu'on croit."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "« Les hommes libres » : une traduction qui a un auteur",
+        "paragraphs": [
+          "On lit souvent qu'Amazigh veut dire « les hommes libres » ou « les nobles ». Cette lecture semble venir de Jean-Léon l'Africain, voyageur et auteur du XVIe siècle, qui rend awal amazigh par « langage noble ». L'historien Stéphane Gsell l'a ensuite reprise, et elle s'est répandue.",
+          "Le linguiste Salem Chaker, spécialiste des langues berbères, écrit dans l'Encyclopédie berbère (1986) que cette interprétation n'est « certainement pas fondée ». Pour lui, Amazigh est d'abord un nom de peuple, pas le nom d'un rang ou d'un statut social."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "Là où le sens « homme libre » est réel",
+        "paragraphs": [
+          "La traduction n'est pas inventée de toutes pièces. Là où la société était fortement hiérarchisée, notamment chez les Touareg du sud, le mot a bien servi à désigner l'homme libre, le noble ou le suzerain. Chaker rapporte le même usage dans le sud du Maroc et au Sahara.",
+          "Ce sens est donc attesté, mais il est local. L'erreur, selon Chaker, est de l'avoir étendu à tous les Imazighen et d'en avoir fait le sens premier du mot."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "Un nom très ancien, d'origine inconnue",
+        "paragraphs": [
+          "Le nom est ancien. Des auteurs grecs et latins de l'Antiquité notent déjà des formes proches : Maxyes chez Hérodote, Mazyes chez Hécatée, Mazices ou Mazax chez des auteurs latins.",
+          "Quant à son sens premier, l'origine d'Amazigh n'est pas établie. Chaker conclut qu'il est « difficile d'établir une étymologie sûre » pour ce nom, formé à une époque très ancienne."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "Un nom longtemps inconnu en Kabylie",
+        "paragraphs": [
+          "Aujourd'hui, Amazigh sert de nom commun à tous. Ce n'a pas toujours été le cas. Dans la culture traditionnelle du nord de l'Algérie, en Kabylie, au Mzab et dans les Aurès, le terme était inconnu.",
+          "Son emploi pour nommer l'ensemble des Berbères part justement de Kabylie, dans les années 1945-1950. Chaker le relie au mouvement nationaliste berbère de l'époque, qui l'a diffusé notamment par la chanson."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "Berbère : un nom venu de l'extérieur",
+        "paragraphs": [
+          "Le mot Berbère n'a pas été choisi par ceux qu'il désigne. L'historien Yves Modéran le décrit, dans l'Encyclopédie berbère (2010), comme le terme général forgé par les Arabes à leur arrivée, « probablement » à partir du latin barbari. Ce « probablement » est le sien : la dérivation est plausible, pas démontrée.",
+          "Plus tard, des généalogistes ont proposé un ancêtre du nom de Berr, ou Berber, pour expliquer ce mot. Modéran y voit un ancêtre inventé après coup, pour donner une origine à un nom qui venait du dehors."
+        ],
+        "sourceRefs": ["s2"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "« Les hommes libres » n'est pas le sens premier d'Amazigh : c'est un sens local, étendu à tort à tout un peuple. Le sens premier du mot reste inconnu. Berbère vient probablement du latin, par l'arabe. Et le nom que presque tout le monde emploie aujourd'hui s'est généralisé il y a moins d'un siècle.",
+          "Quel sens avez-vous entendu donner à Amazigh autour de vous, et dans quelle région ? Vous pouvez nous le dire, avec la provenance de ce que vous savez."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
   },
   "sources": [
     {
       "id": "s1",
-      "title": "Salem Chaker, Encyclopédie berbère, 1986",
-      "tier": "needs_review"
+      "title": "Salem Chaker, « Amaziɣ (le/un Berbère) », Encyclopédie berbère 4, 1986, p. 562-568",
+      "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+      "tier": "needs_review",
+      "notes": "Article de référence sur le nom : Jean-Léon l'Africain et Gsell, la réfutation de « hommes libres », le sens local chez les Touareg, les formes antiques, l'emploi généralisé depuis la Kabylie dans les années 1945-1950."
     },
     {
       "id": "s2",
-      "title": "Yves Modéran, Encyclopédie berbère, 2010",
-      "tier": "needs_review"
+      "title": "Yves Modéran, « Mythes d'origine des Berbères (Antiquité et Moyen Âge) », Encyclopédie berbère 32, 2010, p. 5157-5169",
+      "url": "https://journals.openedition.org/encyclopedieberbere/674",
+      "tier": "needs_review",
+      "notes": "Le nom « Berbère » forgé par les Arabes, probablement sur le latin barbari, et l'ancêtre éponyme inventé par des généalogistes (p. 5165)."
     }
   ],
   "media": {
