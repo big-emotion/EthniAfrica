@@ -271,6 +271,11 @@ Créer un dossier dans `02-Reseaux-sociaux/`.
 
 ## Pour finir
 
+Carry the accepted angle, narrative family, rejected alternatives and reasons into
+the handoff to `structure`. It records these in the subject's `production-record.md`
+using `docs/social-workshop-cleanup.md`. Do not replace the idea report with copied
+narration, invent later approval, or delete assets during this planning stage.
+
 Recalcule l'état : `node social/tools/etat-pipeline/build-etat.mjs`.
 
 Affiche le prompt de recherche externe **en clair dans la conversation**, pas

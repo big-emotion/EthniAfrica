@@ -99,6 +99,22 @@ it does not need to restart the upstream skills. See
 
 ## Avec un sujet : le bilan
 
+Read the separate **Workshop cleanup** column in the generated state report.
+`scratch cleaned; required inputs kept` means disposable intermediates were removed,
+not that masters, sources or provenance vanished. `cleanup pending` or `workshop
+unlinked` calls for reviewing the decision record/binding and running the read-only
+simulation in `docs/social-workshop-cleanup.md`. Report its specific blockers,
+recoverable bytes, locator gaps and potential only copies. Do not infer permission
+to clean the historical backlog from a published/ready status.
+
+For a new production, a pending cleanup after successful filing belongs to
+`produire`'s mandatory `register-post --filed` completion event. After the operator
+records and files a genuine publication occurrence, that same event updates the
+record's actual dates/channels. Help itself remains read-only. A cleanup blocker
+does not erase an already published occurrence or justify re-rendering a valid
+delivery. If a new adaptation is requested, reuse the retained approved inputs and
+regenerate frame scratch through the engine rather than looking for archived PNGs.
+
 `bilan-sujets.mjs <sujet>` donne chaque post du sujet — état, format, date,
 réseaux —, ce qui est déjà publié, les doublons, le format jamais publié, le
 dossier d'atelier, le rapport d'idée et l'audit du message s'ils existent.

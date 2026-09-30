@@ -88,6 +88,13 @@ migration/index/sync workflow from `SCENE-RELEASE.md`, and compare all three del
 file hashes at the actual library paths. The generated library `post.md` remains the
 network overview; the separate Markdown is the exact portable approved copy.
 
+Finish the registered filing workflow with the automatic housekeeping event in
+`docs/social-workshop-cleanup.md`. Register `--workshop` with the actual top-level
+subject folder, complete that subject's decision record from approved evidence,
+then run `node social/tools/library/register-post.mjs --id "$POST_ID" --filed --write`
+after migration and sync. Report any refusal. Keep the sealed release, kit and
+review inputs needed by the progress reader; do not remove them as scratch.
+
 An unregistered subject still receives the complete private kit; record its actual
 unregistered status without inventing a category. A missing or changed cover, copy,
 review reference, kit manifest or required library copy keeps progress at 95%.
