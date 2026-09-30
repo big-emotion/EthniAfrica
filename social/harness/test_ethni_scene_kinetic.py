@@ -148,6 +148,28 @@ class KineticTests(unittest.TestCase):
         self.assertEqual(plain, 0)
         self.assertGreater(accented, 200)
 
+    def test_the_accent_word_stands_on_the_same_baseline_as_the_rest_of_its_line(self):
+        """A card once showed « selon » raised above « l'État-nation, » and « Rougemont » : the pieces of a
+        line were placed by the top of their own ink, so a piece ending in a comma or holding a capital
+        accent did not stand where its neighbours did. The word keeps the rows it has when unaccented."""
+        text = "l'État-nation, selon Rougemont"
+        gold = numpy.array(ImageColor.getrgb(self.renderer(self.kinetic()).palette["gold"]))
+
+        def frame(line):
+            renderer = self.renderer(self.kinetic(lines=[line]))
+            return numpy.asarray(renderer.render(3).convert("RGB"), dtype=int)[500:800, 91:900]
+
+        accented = frame({"text": text, "at": 1, "accent": "selon"})
+        in_gold = (accented == gold).all(axis=2)
+        columns = numpy.flatnonzero(in_gold.any(axis=0))
+        first, last = columns.min() + 2, columns.max() - 2
+        plain = frame({"text": text, "at": 1})
+        ground = numpy.array(ImageColor.getrgb(self.renderer(self.kinetic()).palette["ground"]))
+        plain_rows = numpy.flatnonzero((numpy.abs(plain[:, first:last + 1] - ground).sum(axis=2) > 24).any(axis=1))
+        gold_rows = numpy.flatnonzero(in_gold.any(axis=1))
+        self.assertLessEqual(abs(int(gold_rows.max()) - int(plain_rows.max())), 2, "same baseline")
+        self.assertLessEqual(abs(int(gold_rows.min()) - int(plain_rows.min())), 2, "same top")
+
     def test_a_detail_sits_under_its_line_and_arrives_with_it(self):
         renderer = self.renderer(self.kinetic(lines=[{"text": "l'État", "at": 1, "detail": "une autorité qui organise un pays"}]))
         (top, bottom), = bands(self.ink(renderer, 1 + ARRIVAL))
