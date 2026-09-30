@@ -5,11 +5,12 @@ import {
   readFileSync,
   readdirSync,
   readlinkSync,
+  realpathSync,
   rmSync,
   symlinkSync,
   unlinkSync,
 } from "node:fs";
-import { join, relative } from "node:path";
+import { join, relative, sep } from "node:path";
 
 /**
  * The afrik-curator skill has one canonical copy, versioned under `.claude/`,
@@ -280,6 +281,23 @@ export function reconcileMirrorSkill(
     !existsSync(join(canonicalPath, "SKILL.md"))
   ) {
     return linkMirrorSkill(projectRoot, skillName);
+  }
+
+  // A tool-installed skill keeps its real files in the mirror and points the
+  // canonical path at them. Every file would then "equal" its canonical
+  // counterpart by reading itself, and deleting the mirror would delete the only
+  // copy. Refused before anything is read or removed.
+  const mirrorReal = realpathSync(mirrorPath);
+  const canonicalReal = realpathSync(canonicalPath);
+  if (
+    canonicalReal === mirrorReal ||
+    canonicalReal.startsWith(`${mirrorReal}${sep}`)
+  ) {
+    return {
+      action: "blocked",
+      target: mirrorPath,
+      detail: `${mirrorPath} is the real copy: the canonical skill is a link back to it, so replacing it would delete the only copy. Left untouched`,
+    };
   }
 
   const unaccounted = filesRecursively(mirrorPath, mirrorPath).filter(

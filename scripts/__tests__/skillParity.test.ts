@@ -433,6 +433,36 @@ describe("reconcileMirrorSkill", () => {
       "already-linked"
     );
   });
+
+  // A skill installed by a tool keeps its real files under `.agents/skills` and
+  // points `.claude/skills` at them. The mirror then "equals" the canonical skill
+  // because it reads itself; replacing it would delete the only copy. A name
+  // given explicitly bypasses the listing, which skips links, so the function
+  // has to refuse by itself.
+  // @req REQ-032
+  it("refuses to replace a mirror that the canonical skill is a link to, and keeps its files", () => {
+    const root = makeTemporaryProject();
+    writeSkill(root, MIRROR_SKILLS_DIR, "installed", {
+      "SKILL.md": canonical,
+      "references/notes.md": "kept\n",
+    });
+    mkdirSync(join(root, CANONICAL_SKILLS_DIR), { recursive: true });
+    symlinkSync(
+      "../../.agents/skills/installed",
+      join(root, CANONICAL_SKILLS_DIR, "installed")
+    );
+
+    const result = reconcileMirrorSkill(root, "installed", () => true);
+
+    expect(result.action).toBe("blocked");
+    expect(result.detail).toContain("link");
+    expect(
+      lstatSync(join(root, MIRROR_SKILLS_DIR, "installed")).isSymbolicLink()
+    ).toBe(false);
+    expect(
+      readSkillManifest(root, MIRROR_SKILLS_DIR, "installed").files
+    ).toEqual({ "SKILL.md": canonical, "references/notes.md": "kept\n" });
+  });
 });
 
 describe("the afrik-curator skill in this repository", () => {
