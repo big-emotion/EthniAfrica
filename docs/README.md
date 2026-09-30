@@ -81,6 +81,8 @@ were referenced by nothing at all, two of them written that same week.
 - [The purpose doctrine — the exchange it came from](editorial/purpose-doctrine.md)
 - [Reader-facing register](editorial/reader-facing-register.md)
 - [The editorial reorientation — what changes, in what order, what blocks what](editorial/refonte-plan-2026-09-18.md)
+- [Editorial remediation — closure ledger](editorial/remediation-2026-09-30/README.md)
+- [Frozen review cases — editorial remediation](editorial/remediation-2026-09-30/review-cases.md)
 - [Editorial unification — implementation plan](editorial/remediation-plan-2026-09-30.md)
 - [The pinned comment reply](editorial/reponse-commentaires.md)
 - [Source tier rulings](editorial/source-review/README.md)

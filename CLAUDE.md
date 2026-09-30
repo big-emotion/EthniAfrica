@@ -699,9 +699,10 @@ that is largely African and reads that choice immediately. The discipline that f
 - **Where a local account exists, it is named alongside the external one**, at its own
   tier, in the same breath — not relegated to a footnote or dropped for being weaker.
   Excluding it would be the colonial filter the Source Tier Policy exists to refuse.
-- **Scientific and linguistic method stays the frame for verifying sources, never the
-  arbiter of whose account deserves to be heard.** It answers « is this attested, by whom,
-  when » — it does not answer « which people's explanation of their own name counts ».
+- **Scientific and linguistic tools stay useful for checking sources; they are neither the
+  only framework nor the arbiter of whose account deserves to be heard.** They answer « is
+  this attested, by whom, when » — they do not answer « which people's explanation of their
+  own name counts ». The working method is in the guide (`docs/editorial/reader-facing-register.md`).
 - **Silence about the imbalance is itself a choice.** Where the corpus can only offer
   outside sources on a name, the piece may say so.
 

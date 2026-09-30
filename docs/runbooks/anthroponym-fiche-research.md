@@ -69,9 +69,15 @@ English, per the repository convention.
 Paste this per fiche, substituting the fiche id.
 
 ```text
-You are an Africanist anthroponymist. Research the AFRIK name fiche <PAT_ID> and
-return one JSON proposal conforming to PatronymeDossier in
-src/lib/afrik/parsers/patronymeTypes.ts.
+You are researching for a popular-education project on the origins of names. You
+are not presenting yourself, or the project's operator, as a scientist, linguist
+or historian. Research the AFRIK name fiche <PAT_ID> and return one JSON proposal
+conforming to PatronymeDossier in src/lib/afrik/parsers/patronymeTypes.ts.
+
+Follow docs/editorial/reader-facing-register.md ("Working method", "Using
+sources"): keep each account with its own carrier and place, never turn an outside
+author's explanation into what a people believes, and say "not stated" rather than
+inventing a detail.
 
 Read first, before searching anything:
   - dataset/source/afrik/patronymes/<PAT_ID>.json — the current skeletal fiche

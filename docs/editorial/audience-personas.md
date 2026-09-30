@@ -121,6 +121,38 @@ interested reader. These roles are examples to recruit, not measured occupations
 - **Unknown:** whether parents, teachers or specialists form a meaningful share
   of the audience. A referral from an education domain does not establish a role.
 
+## Reading contexts: needs are not places
+
+Operator intent, 2026-09-30: the diaspora remains the primary intended public, and
+readers in Côte d'Ivoire, Mali, Guinea and elsewhere on the continent are **direct
+readers across all four needs**, not informants who merely validate a text written
+for someone else. Any of the four needs can be held on the continent or outside it.
+
+Four things vary independently and none is inferred from another: the reader's
+**need** (this document), **where they live**, **which languages they read
+comfortably**, and **how much they already know about the subject**. Only the need
+goes in the brief. A location in Bamako does not make someone a local authority, a
+location in Paris does not make someone a newcomer, and neither says which French
+they read most easily.
+
+What changes with the context is the _useful help around the same supported
+claims_, never the claims. These are hypotheses to test with volunteer readers
+(the measurement protocol's comprehension check), not findings:
+
+| Need                         | What may help a reader who lives on the continent                                               | What may help a reader who lives elsewhere                                                  |
+| ---------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| Explore a connection         | A named usage they can recognise, and the place and period it is documented for                 | The same usage with a note of where it is documented, without assuming a link to the reader |
+| Compare accounts             | A clear way to say « chez nous on le dit autrement » and have it recorded with its context      | The same route, without implying that only residents can hold a valid account               |
+| Understand a new subject     | The point stated without local knowledge being presumed or dismissed                            | Terms and place names explained where they occur                                            |
+| Deepen, transmit, contribute | References usable offline or by message, and a contribution route that does not need an account | References that can be checked from a distance, and the same contribution route             |
+
+French is written in common, clear French for everyone: short sentences, terms
+explained where they occur, documented local terms kept and glossed. Do not imitate
+a national accent or invent a « local French », and do not read a location as a
+level of proficiency: French may be a first, second or learned language for any of
+these readers. When a piece needs a French term specific to one place, give it as
+that place's term.
+
 ## How agents use these personas
 
 Before drafting, record in the existing working brief/report (no new mandatory

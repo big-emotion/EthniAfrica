@@ -128,12 +128,14 @@ immédiatement.
 4. **Si le corpus n'offre que des sources extérieures sur ce nom**, la pièce peut
    le dire. Le silence sur le déséquilibre est lui aussi un choix.
 
-**La méthode scientifique reste le cadre de vérification, jamais l'arbitre de qui
-a droit à la parole.** Elle répond à « est-ce attesté, par qui, quand » — elle ne
-répond pas à « quelle explication d'un peuple sur son propre nom mérite d'être
-entendue ». La position linguistique occidentale est un outil du projet, pas sa
-voix ; l'employer comme voix revient à trancher un débat de légitimité avec un
-instrument conçu pour trancher un débat de preuve.
+**Les outils scientifiques et linguistiques restent utiles pour vérifier, sans être
+le seul cadre ni l'arbitre de qui a droit à la parole.** Ils répondent à « est-ce
+attesté, par qui, quand » — ils ne répondent pas à « quelle explication d'un peuple
+sur son propre nom mérite d'être entendue ». Une position savante, d'où qu'elle
+vienne, est un outil du projet, pas sa voix ; l'employer comme voix revient à
+trancher un débat de légitimité avec un instrument conçu pour trancher un débat de
+preuve. La méthode de travail est dans le guide
+(`docs/editorial/reader-facing-register.md`, « Working method »).
 
 Une pièce qui explique un nom contesté sans que le lecteur puisse deviner qu'il
 est contesté **ne passe pas cette question**, quelle que soit la qualité de la
