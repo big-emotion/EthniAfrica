@@ -50,6 +50,8 @@ were referenced by nothing at all, two of them written that same week.
 
 ## Editorial — doctrine, audits and essays
 
+- [Editorial contradictions audit — 2026-09-30](editorial/contradictions-2026-09-30/README.md)
+
 - [Editorial voice review — 2026-09-30](editorial/editorial-voice-review-2026-09-30.md)
 - [Editorial personas](editorial/audience-personas.md)
 - [Editorial measurement protocol](audience/editorial-measurement.md)
