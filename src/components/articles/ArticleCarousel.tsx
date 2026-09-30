@@ -1,6 +1,7 @@
 "use client";
 
 import * as DialogPrimitive from "@radix-ui/react-dialog";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useRef, useState, type KeyboardEvent } from "react";
 
@@ -129,7 +130,7 @@ export function ArticleCarousel({
           disabled={current === 0}
           aria-label={copy.previous}
         >
-          <span aria-hidden="true">←</span>
+          <ChevronLeft aria-hidden="true" size={20} />
         </button>
         <span className={styles.position} aria-hidden="true">
           {copy.position(current + 1, total)}
@@ -172,7 +173,7 @@ export function ArticleCarousel({
           disabled={current === total - 1}
           aria-label={copy.next}
         >
-          <span aria-hidden="true">→</span>
+          <ChevronRight aria-hidden="true" size={20} />
         </button>
       </div>
       {/* Visible count above is for the eye; this line is for the ear, and
