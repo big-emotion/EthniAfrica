@@ -26,6 +26,7 @@ const cards = {
   ],
 };
 
+// @req REQ-114
 test("slide text keeps the card order and the card's own words", () => {
   const { slides, sources, credits } = cardsToSlides(cards);
   assert.deepEqual(
@@ -49,6 +50,7 @@ test("slide text keeps the card order and the card's own words", () => {
   );
 });
 
+// @req REQ-114
 test("slide text follows the slide's reading order, pairs included", () => {
   const { slides } = cardsToSlides({
     cartes: [
@@ -71,6 +73,7 @@ test("slide text follows the slide's reading order, pairs included", () => {
   );
 });
 
+// @req REQ-114
 test("a ';' inside a reference line is not split: it can join two locators of one work", () => {
   const { sources } = cardsToSlides({
     cartes: [
@@ -88,6 +91,7 @@ test("a ';' inside a reference line is not split: it can join two locators of on
   );
 });
 
+// @req REQ-114
 test("an image under an all-rights-reserved licence is named for review", () => {
   const { restricted } = cardsToSlides({
     cartes: [
@@ -98,6 +102,7 @@ test("an image under an all-rights-reserved licence is named for review", () => 
   assert.deepEqual(restricted, [1]);
 });
 
+// @req REQ-114
 test("a slogan printed in the source slot is not a reference", () => {
   const { sources } = cardsToSlides({
     cartes: [
@@ -135,6 +140,7 @@ const CREDITS = `# Publication credits
 Voice named in production.json.
 `;
 
+// @req REQ-114
 test("release credits: factual sources apart from asset credits and self-citation", () => {
   const { sources, set_aside, credits } = parseCreditsSources(CREDITS);
   assert.equal(

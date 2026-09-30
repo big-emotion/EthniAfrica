@@ -8,6 +8,7 @@ import { test } from "node:test";
 
 import { selectRelease } from "./release.mjs";
 
+// @req REQ-114
 test("a carousel is the one network folder of 4:5 slides, in slide order", () => {
   const release = selectRelease(
     [
@@ -39,6 +40,7 @@ test("a carousel is the one network folder of 4:5 slides, in slide order", () =>
   );
 });
 
+// @req REQ-114
 test("two carousel folders, or a hole in the numbering, is not a release", () => {
   const two = selectRelease(
     [
@@ -58,6 +60,7 @@ test("two carousel folders, or a hole in the numbering, is not a release", () =>
   assert.match(hole.problems.join(), /slide 02 missing/);
 });
 
+// @req REQ-114
 test("a video is the only cut, or the one the record designates", () => {
   const one = selectRelease(["video/video.mp4", "video/thumbnail.png"], {});
   assert.equal(one.video, "video/video.mp4");
@@ -81,6 +84,7 @@ test("a video is the only cut, or the one the record designates", () => {
   assert.equal(chosen.poster, "images/b_tiktok-story_1080x1920.png");
 });
 
+// @req REQ-114
 test("a folder holding only post.md has nothing to release", () => {
   const empty = selectRelease(["post.md"], {});
   assert.equal(empty.video, null);

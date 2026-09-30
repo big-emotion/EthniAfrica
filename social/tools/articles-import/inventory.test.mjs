@@ -15,6 +15,7 @@ import {
   tiktokCreatedOn,
 } from "./inventory.mjs";
 
+// @req REQ-114
 test("a URL is keyed by what identifies the post, not by its spelling", () => {
   assert.equal(
     normalizeUrl(
@@ -42,6 +43,7 @@ test("a URL is keyed by what identifies the post, not by its spelling", () => {
   );
 });
 
+// @req REQ-114
 test("URLs are read out of the free-text channel notes the library keeps", () => {
   assert.deepEqual(
     extractUrls(
@@ -55,6 +57,7 @@ test("URLs are read out of the free-text channel notes the library keeps", () =>
   );
 });
 
+// @req REQ-114
 test("a TikTok id carries its own creation day", () => {
   assert.equal(
     tiktokCreatedOn(
@@ -80,6 +83,7 @@ const campaign = (id, publications = []) => ({
   publications,
 });
 
+// @req REQ-114
 test("identity and shared URLs tie records to campaigns; titles never do", () => {
   const result = reconcile({
     records: [
@@ -119,6 +123,7 @@ test("identity and shared URLs tie records to campaigns; titles never do", () =>
   assert.match(byUrl.evidence.join("\n"), /youtube:AAAAAAAAAAA/);
 });
 
+// @req REQ-114
 test("a curated link needs written evidence, and names records that exist", () => {
   assert.throws(
     () =>
@@ -149,6 +154,7 @@ test("a curated link needs written evidence, and names records that exist", () =
   assert.deepEqual(result.groups[0].campaigns, ["b"]);
 });
 
+// @req REQ-114
 test("a video and its carousel from one workshop subject are one angle", () => {
   const result = reconcile({
     records: [
@@ -161,6 +167,7 @@ test("a video and its carousel from one workshop subject are one angle", () => {
   assert.deepEqual(result.groups[0].records, ["intro", "intro-carrousel"]);
 });
 
+// @req REQ-114
 test("the grouping does not depend on input order", () => {
   const records = [
     record("r1", { links: { campaign: "c1" } }),

@@ -298,6 +298,7 @@ const readDraft = (world, id) =>
 const candidate = (result, id) =>
   result.candidates.find((c) => c.articleId === id);
 
+// @req REQ-114
 test("a dry run reads everything and writes nothing", async () => {
   const world = await buildWorld();
   const before = snapshotTree(world.root);
@@ -307,6 +308,7 @@ test("a dry run reads everything and writes nothing", async () => {
   assert.equal(candidate(result, "a").disposition, "article-draft");
 });
 
+// @req REQ-114
 test("drafts carry no body, keep slide order and the card's words", async () => {
   const world = await buildWorld();
   await runImport(options(world, { write: true }));
@@ -333,6 +335,7 @@ test("drafts carry no body, keep slide order and the card's words", async () => 
   }
 });
 
+// @req REQ-114
 test("a cross-post is one edition with several originals", async () => {
   const world = await buildWorld();
   await runImport(options(world, { write: true }));
@@ -352,6 +355,7 @@ test("a cross-post is one edition with several originals", async () => {
   assert.ok(exceptions.includes("date-conflict"));
 });
 
+// @req REQ-114
 test("the corrected edition is shown, never the older URL", async () => {
   const world = await buildWorld();
   await runImport(options(world, { write: true }));
@@ -366,6 +370,7 @@ test("the corrected edition is shown, never the older URL", async () => {
   assert.ok(!JSON.stringify(a).includes("OLDOLDOLD01"));
 });
 
+// @req REQ-114
 test("an older release in another format is recorded, not shown as a companion", async () => {
   const OLD_VIDEO_B = {
     ...VIDEO_A_OLD,
@@ -402,6 +407,7 @@ test("an older release in another format is recorded, not shown as a companion",
   );
 });
 
+// @req REQ-114
 test("two editions of one format with no ruling are refused, not guessed", async () => {
   const world = await buildWorld();
   const result = await runImport(options(world, { curation: {}, write: true }));
@@ -414,6 +420,7 @@ test("two editions of one format with no ruling are refused, not guessed", async
   assert.ok(!fs.existsSync(path.join(world.articlesDir, "a.json")));
 });
 
+// @req REQ-114
 test("a correction note must be found verbatim in the workshop", async () => {
   const world = await buildWorld();
   const curation = structuredClone(CURATION);
@@ -426,6 +433,7 @@ test("a correction note must be found verbatim in the workshop", async () => {
   );
 });
 
+// @req REQ-114
 test("a re-run is stable: same files, same bytes, no duplicates", async () => {
   const world = await buildWorld();
   await runImport(options(world, { write: true }));
@@ -438,6 +446,7 @@ test("a re-run is stable: same files, same bytes, no duplicates", async () => {
   );
 });
 
+// @req REQ-114
 test("a draft edited by hand is never overwritten", async () => {
   const world = await buildWorld();
   await runImport(options(world, { write: true }));
@@ -454,6 +463,7 @@ test("a draft edited by hand is never overwritten", async () => {
   assert.equal(candidate(result, "b").draft.action, "refuse");
 });
 
+// @req REQ-114
 test("a source changed since the snapshot is refused", async () => {
   const world = await buildWorld();
   await runImport(options(world, { write: true }));
@@ -475,6 +485,7 @@ test("a source changed since the snapshot is refused", async () => {
   );
 });
 
+// @req REQ-114
 test("a hash declared by the release that does not match is refused", async () => {
   const world = await buildWorld({
     posts: [
@@ -496,6 +507,7 @@ test("a hash declared by the release that does not match is refused", async () =
   );
 });
 
+// @req REQ-114
 test("slug collisions and reserved segments are refused", async () => {
   const world = await buildWorld({
     posts: [
@@ -529,6 +541,7 @@ test("slug collisions and reserved segments are refused", async () => {
   assert.ok(!fs.existsSync(path.join(other.articlesDir, "b.json")));
 });
 
+// @req REQ-114
 test("a legacy dossier slug is reserved too", async () => {
   const world = await buildWorld({
     posts: [
@@ -547,6 +560,7 @@ test("a legacy dossier slug is reserved too", async () => {
   );
 });
 
+// @req REQ-114
 test("missing media is an explicit exception with a next action", async () => {
   const world = await buildWorld();
   const result = await runImport(options(world));
@@ -555,6 +569,7 @@ test("missing media is an explicit exception with a next action", async () => {
   assert.ok(c.exceptions.some((e) => e.code === "no-media" && e.next));
 });
 
+// @req REQ-114
 test("private roots and production notes never reach public output", async () => {
   const world = await buildWorld();
   await runImport(options(world, { write: true }));
@@ -567,6 +582,7 @@ test("private roots and production notes never reach public output", async () =>
   }
 });
 
+// @req REQ-114
 test("a carousel's cards are found by the folder their render was aimed at", async () => {
   const world = await buildWorld();
   const cardsFile = path.join(world.workshopRoot, "b", "cards.json");
@@ -587,6 +603,7 @@ test("a carousel's cards are found by the folder their render was aimed at", asy
   );
 });
 
+// @req REQ-114
 test("slides without recoverable text are exported but not shown", async () => {
   const world = await buildWorld();
   fs.rmSync(path.join(world.workshopRoot, "b"), { recursive: true });
@@ -597,6 +614,7 @@ test("slides without recoverable text are exported but not shown", async () => {
   assert.ok(b.exceptions.some((e) => e.code === "slide-text-missing"));
 });
 
+// @req REQ-114
 test("an excerpt never comes from a caption file's working notes", async () => {
   const world = await buildWorld({
     posts: [{ ...VIDEO_A_NEW, copy: "_legendes/a.md" }],
@@ -611,6 +629,7 @@ test("an excerpt never comes from a caption file's working notes", async () => {
   assert.equal(a.fr.excerpt, a.fr.title);
 });
 
+// @req REQ-114
 test("the command refuses to run without its private roots", () => {
   const tool = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
