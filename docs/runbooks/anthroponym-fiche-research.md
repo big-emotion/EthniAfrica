@@ -49,9 +49,13 @@ not `public/modele-nom.json` — that file is the _appellation_ model, addressed
 by `PPL_*`, and describes the ethnonym dossier served at `/v2/names`. Two
 constraints only the real type states:
 
-- `origin.oralTraditions[]` requires a `griot` and a `transcription` alongside
-  the claim. An oral tradition with no named transmitter does not typecheck,
-  which is the schema refusing an unattributable "the ancestors say".
+- `origin.oralTraditions[]` records who carried the account and how it was
+  collected: `carrier` (a person, a role or an agreed public description),
+  `collection` (`direct`, `mediated` or `not-stated`), `collector` and `context`
+  (language, place, date). `griot` and `transcription` are still accepted, and
+  none of them is required: leave a field out when the source does not give it,
+  never invent one. The schema still refuses a claim with no `sourceRefs`, and
+  the page shows an account with no stated carrier as « Transmetteur non précisé ».
 - `alliances[].targetPatronymeId` must be another `PAT_*` in the batch, and
   self-alliance is rejected. A joking-kinship pair is only recordable when both
   patronyms have fiches.
@@ -88,8 +92,10 @@ Read first, before searching anything:
 Then establish, chapter by chapter, only what a dedicated source supports:
 
 1. origin.oralTraditions — the emic account: founding ancestor, migration
-   narrative, the griot or lineage tradition that carries it. Name the tradition
-   and who transmits it; do not paraphrase a generic "the ancestors came from".
+   narrative, the tradition that carries it. Name the tradition and who
+   transmits it, as the source states it — a griot, a family elder, an agreed
+   description — and how it was collected; do not paraphrase a generic "the
+   ancestors came from", and do not name a carrier the source does not.
 2. origin.writtenChronicles — chronicles, colonial administrative records,
    Arabic-language sources, dated where possible.
 3. origin.linguisticReconstructions — the etymon and the comparative work that

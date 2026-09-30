@@ -65,8 +65,8 @@ reader-facing rules.
   éditoriale_, _tier résolu depuis le catalogue_, _tier fondé sur la nature
   académique_, _non listée au catalogue de domaines officiels_, _doctrine des
   sources du corpus_ — accented or not. How a source's tier was decided is the
-  workshop's reasoning; the tier badge already tells the reader how far to trust
-  the source. A tiering codemod wrote one such sentence into more than 5 000
+  workshop's reasoning; the tier badge already labels the source, and a badge
+  labels who published it — it does not settle whether a claim is true. A tiering codemod wrote one such sentence into more than 5 000
   notes, in English, into French fiches too, and the gate read neither
   `content.sources`, nor the sources a chapter keeps for itself
   (`content.historicalAffiliation.sources`), nor French fiches against the

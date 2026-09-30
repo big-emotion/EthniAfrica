@@ -295,6 +295,13 @@ export const TRANSLATION_CLASSES: Readonly<
     "origin.oralTraditions[].claim": "translatable",
     "origin.oralTraditions[].claimStatus": "invariant",
     "origin.oralTraditions[].griot": "invariant",
+    // Who carried the account and how it was collected: names and roles as the
+    // record states them, kept in the language they were recorded in. The
+    // context sentence is prose about place and time, so it is reviewed.
+    "origin.oralTraditions[].carrier": "invariant",
+    "origin.oralTraditions[].collection": "invariant",
+    "origin.oralTraditions[].collector": "invariant",
+    "origin.oralTraditions[].context": "review_required",
     "origin.oralTraditions[].transcription": "review_required",
     "origin.oralTraditions[].sourceRefs[]": "invariant",
     // origin.writtenChronicles[], origin.linguisticReconstructions[] and

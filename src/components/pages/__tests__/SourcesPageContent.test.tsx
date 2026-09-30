@@ -135,6 +135,32 @@ describe("SourcesPageContent — the editorial bibliographies", () => {
     expect(note.textContent).not.toMatch(/remontée/);
   });
 
+  // A count of references is a count; several works can repeat one account. And
+  // the page lists institutions and works, so it says where an account passed
+  // on orally is cited instead of pretending it is absent or listed here
+  // (audit findings T02, C24).
+  // @req REQ-091
+  it("says a count is not proof and where an orally transmitted account is cited", () => {
+    render(<SourcesPageContent />);
+
+    const note = screen.getByText(/Nous lisons Wikipédia d'abord/);
+    expect(note.textContent).toMatch(
+      /nombre de références n'est pas une preuve/
+    );
+    expect(note.textContent).toMatch(/récit transmis oralement/);
+    expect(note.textContent).toMatch(/fiche concernée/);
+  });
+
+  // @req REQ-141
+  it("says the same in English", () => {
+    render(<SourcesPageContent language="en" />);
+
+    const note = screen.getByText(/Wikipedia is read first/);
+    expect(note.textContent).toMatch(/count of references is not proof/);
+    expect(note.textContent).toMatch(/passed on orally/);
+    expect(note.textContent).toMatch(/entry concerned/);
+  });
+
   // Deriving rather than restating is what keeps the page from drifting from
   // the dossier it documents.
   // @req REQ-091

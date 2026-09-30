@@ -223,6 +223,39 @@ describe("search companion catalogs", () => {
     ]);
   });
 
+  // Standing alone decides nothing about whether a sourced, attested proverb is
+  // worth suggesting: it is shown with its label, as the anecdotes beside it are
+  // (DEC-055, audit finding T03). What still counts is that the citation can be
+  // read, and that the origin is attested.
+  // @req REQ-180
+  it("keeps an attested proverb whose only citation is unverified but readable", () => {
+    const selection = proverbsForTargets(exactPeople, {
+      proverbs: [
+        proverb("community", {
+          sources: [{ title: "Recueil communautaire", tier: "unverified" }],
+        }),
+      ],
+    });
+
+    expect(selection.items.map(({ item }) => item.proverb.id)).toEqual([
+      "community",
+    ]);
+  });
+
+  // @req REQ-180
+  it("still refuses a proverb whose citation cannot be read", () => {
+    const selection = proverbsForTargets(exactPeople, {
+      proverbs: [
+        proverb("untitled", {
+          sources: [{ title: "  ", tier: "referenced" }],
+        }),
+        proverb("no-source", { sources: [] }),
+      ],
+    });
+
+    expect(selection.items).toEqual([]);
+  });
+
   // @req REQ-180
   it("passes generated images through the publication eligibility gate", () => {
     const selection = imagesForTargets(exactPeople, [

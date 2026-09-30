@@ -21,8 +21,9 @@ user-facing label all say the same thing.
 | `referenced` | **Référencée**   | 0.7    | Published, identifiable, verifiable work — academic, press, books. Not necessarily official     |
 | `unverified` | **Non vérifiée** | 0.4    | Aggregators, tertiary encyclopedias, blogs, social media, community accounts, AI-generated text |
 
-A fiche resting only on `unverified` sources is **published**, and visibly marked
-low-confidence through `ConfidenceChip`. That is the intended outcome, not a defect to fix.
+A fiche resting only on `unverified` sources is **published**, and its sources are visibly
+labelled (the badge, and the reference count in `ConfidenceChip`, which prints no percentage).
+That is the intended outcome, not a defect to fix.
 
 ### The CIA World Factbook is retired — cite an edition, never the live site
 
@@ -157,5 +158,8 @@ UNESCO World Heritage.
 cited with a DOI or persistent URL; university presses including Karthala and Présence
 Africaine; national archives.
 
-**Oral tradition** — cited as the transcribed version and attributed to the griot it comes
-from, at the tier the transcription earns. Not excluded for being oral.
+**Oral tradition** — cited as the version that exists (a transcript, a summary or an audio
+locator, whichever was actually available) and attributed to the carrier as the source
+states it, with how it was collected. A griot is one possible carrier, never assumed. A
+detail the source does not give stays absent, never invented; permission and withdrawal
+are checked separately from any assessment of the claim. Not excluded for being oral.

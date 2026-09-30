@@ -312,6 +312,10 @@ contract test is what keeps them equal to it, row for row and model for model.
 | `origin.oralTraditions[].claim`                   | `translatable`    |             |
 | `origin.oralTraditions[].claimStatus`             | `invariant`       |             |
 | `origin.oralTraditions[].griot`                   | `invariant`       |             |
+| `origin.oralTraditions[].carrier`                 | `invariant`       |             |
+| `origin.oralTraditions[].collection`              | `invariant`       |             |
+| `origin.oralTraditions[].collector`               | `invariant`       |             |
+| `origin.oralTraditions[].context`                 | `review_required` |             |
 | `origin.oralTraditions[].transcription`           | `review_required` |             |
 | `origin.oralTraditions[].sourceRefs[]`            | `invariant`       |             |
 | `peoples[].peopleId`                              | `invariant`       |             |

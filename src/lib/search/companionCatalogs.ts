@@ -148,10 +148,15 @@ export function proverbsForTargets(
 ): CompanionSelection<CompanionProverb> {
   const items = (options.proverbs ?? PROVERBS).flatMap<CompanionProverb>(
     (proverb) => {
-      const hasAuthority = proverb.sources.some(
-        (source) => source.tier !== "unverified" && hasText(source.title)
+      // A readable citation, whatever its standing: the suggestion carries its
+      // own label, and standing alone no longer keeps an attested proverb out
+      // (DEC-055). An unreadable citation is still a missing one.
+      const hasReadableCitation = proverb.sources.some((source) =>
+        hasText(source.title)
       );
-      if (proverb.origin.status !== "attested" || !hasAuthority) return [];
+      if (proverb.origin.status !== "attested" || !hasReadableCitation) {
+        return [];
+      }
 
       const subjects = proverb.entities.map(subjectForEntity);
       if (proverb.original?.lang) {
