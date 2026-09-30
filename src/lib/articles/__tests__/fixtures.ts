@@ -83,7 +83,9 @@ export function carouselArticle(
       ],
     },
   ];
-  return { ...a, ...over };
+  const merged = { ...a, ...over };
+  if (over.id) merged.fr = { ...merged.fr, slug: over.id };
+  return merged;
 }
 
 // @req REQ-114
@@ -94,5 +96,7 @@ export function bothFormatsArticle(
   a.id = "both-a";
   a.fr.slug = "both-a";
   a.media.formats.push(...videoArticle().media.formats);
-  return { ...a, ...over };
+  const merged = { ...a, ...over };
+  if (over.id) merged.fr = { ...merged.fr, slug: over.id };
+  return merged;
 }
