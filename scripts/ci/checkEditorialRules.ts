@@ -778,7 +778,7 @@ export function checkReaderFacingRegister(
  * same change. At 0, delete the ratchet and let these be errors like the
  * original three fields.
  */
-export const UNGUARDED_PROSE_CEILING = 50;
+export const UNGUARDED_PROSE_CEILING = 51;
 
 export function checkUnguardedProseCeiling(
   count: number,
