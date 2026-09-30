@@ -8,29 +8,88 @@
   "fr": {
     "slug": "ethnie-d-ou-vient-le-mot",
     "title": "D'où vient le mot « ethnie » ?",
-    "excerpt": "D'où vient le mot « ethnie » ?",
-    "sections": []
+    "excerpt": "Un mot courant, à l'histoire peu connue. Les dictionnaires le datent de 1896, dans un livre qui parle de races ; des anthropologues l'ont repris vers 1950, quand « tribu » devenait péjoratif. Ce que l'on sait de ce mot, et pourquoi le manier avec prudence.",
+    "sections": [
+      {
+        "heading": "Un mot daté de 1896",
+        "paragraphs": [
+          "Le mot « ethnie » vient du grec ethnos. Le Trésor de la langue française, un dictionnaire de référence, le date de 1896, dans un livre de Georges Vacher de Lapouge, Les Sélections sociales.",
+          "Ce livre reprend un cours donné à l'université de Montpellier en 1888-1889. À la page 10, Lapouge cherche un mot différent de « peuple », de « nation » ou de « nationalité », et propose « ethne » ou « ethnie »."
+        ],
+        "sourceRefs": ["s1", "s3"]
+      },
+      {
+        "heading": "Un livre sur les races",
+        "paragraphs": [
+          "Le livre de Lapouge parle aussi de races et d'eugénisme : son index renvoie à ces deux thèmes. L'anthropologue Jean-Loup Amselle relève, dans un article de 1987, que la notion d'ethnie a été utilisée en référence à une problématique raciale.",
+          "Aucune des sources que nous avons lues ne dit que le mot a servi à justifier l'eugénisme. Ce qu'elles montrent, c'est le contexte dans lequel il a été proposé."
+        ],
+        "sourceRefs": ["s2", "s5"]
+      },
+      {
+        "heading": "Le premier emploi ?",
+        "paragraphs": [
+          "1896 est la date que donne le dictionnaire. Nous avons cherché un emploi plus ancien, dans des revues d'anthropologie des années 1890, sans en trouver. Cela ne permet pas d'affirmer qu'il n'en existe aucun : d'autres revues et d'autres fonds restent à consulter."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "Vers 1950 : « ethnie » plutôt que « tribu »",
+        "paragraphs": [
+          "Vers 1950, le mot « tribu » devient de plus en plus péjoratif lorsqu'il s'agit de l'Afrique. Des anthropologues reprennent alors le mot « ethnie ». L'historienne Catherine Coquery-Vidrovitch lie ce choix à l'idée que ces peuples avaient, comme les autres, une histoire.",
+          "Le chercheur Mahmood Mamdani, dans un article de 2012, fait une distinction utile. Si l'on entend par « tribu » un groupe qui partage une langue, ces groupes existaient avant la colonisation. Mais la tribu comme catégorie administrative, qui distinguait les « natifs » des « non-natifs », n'existait pas avant elle."
+        ],
+        "sourceRefs": ["s4", "s6"]
+      },
+      {
+        "heading": "Un mot qui finit par tout désigner",
+        "paragraphs": [
+          "En 1994, Coquery-Vidrovitch met en garde : les mots « ethnie » et « ethnicité » servent à tout, et risquent donc de ne plus rien préciser.",
+          "Pour notre part, nous employons « ethnie » avec prudence. Un peuple porte d'abord le nom qu'il se donne ; « ethnie » est un mot proposé par des observateurs extérieurs, dont le sens a changé avec le temps. C'est une position de notre projet, pas une conclusion des sources."
+        ],
+        "sourceRefs": ["s4"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "« Ethnie » est-il un mot de la colonisation ? Pas directement : le dictionnaire le date de 1896, dans un livre français sur les races et la sélection sociale. Des anthropologues l'ont repris vers 1950, alors que « tribu » devenait péjoratif. Son sens a changé, et continue de changer.",
+          "Quels mots utilise-t-on autour de vous pour parler de votre peuple ? Vous pouvez nous le dire, avec la langue et le lieu."
+        ],
+        "sourceRefs": ["s1", "s4", "s6"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
   },
   "sources": [
     {
       "id": "s1",
       "title": "Trésor de la langue française (CNRTL), article « ethnie »",
-      "tier": "needs_review"
+      "url": "https://www.cnrtl.fr/etymologie/ethnie",
+      "tier": "needs_review",
+      "notes": "Datation de 1896 (Vacher de Lapouge, Sélections sociales) et dérivation savante du grec ethnos."
     },
     {
       "id": "s2",
       "title": "G. Vacher de Lapouge, Les Sélections sociales, Paris, Fontemoing, 1896",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "Cours professé à Montpellier en 1888-1889 ; l'index renvoie aux races et à l'eugénisme."
     },
     {
       "id": "s3",
       "title": "G. Vacher de Lapouge, Les Sélections sociales, Paris, Fontemoing, 1896, p. 10",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "Le passage où l'auteur propose « ethne » ou « ethnie »."
     },
     {
       "id": "s4",
-      "title": "Catherine Coquery-Vidrovitch, Le Monde diplomatique, juillet 1994",
-      "tier": "needs_review"
+      "title": "Catherine Coquery-Vidrovitch, « Du bon usage de l'ethnicité… », Le Monde diplomatique, juillet 1994",
+      "url": "https://www.monde-diplomatique.fr/1994/07/COQUERY_VIDROVITCH/7336",
+      "tier": "needs_review",
+      "notes": "Article dont seule la partie en accès libre a été lue."
     },
     {
       "id": "s5",
@@ -40,6 +99,7 @@
     {
       "id": "s6",
       "title": "Mahmood Mamdani, « What is a tribe? », London Review of Books, 13 septembre 2012",
+      "url": "https://www.lrb.co.uk/the-paper/v34/n17/mahmood-mamdani/what-is-a-tribe",
       "tier": "needs_review"
     }
   ],

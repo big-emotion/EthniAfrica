@@ -273,3 +273,31 @@ work nobody read, is dropped or left flagged.
   superseding edition exists to point to.
 - **Improvement over the carousel.** The article corrects the carousel openly, in the approved
   words, and separates the trade word, the language name and a lived identity.
+
+## Case A10 — `ethnie-d-ou-vient-le-mot`
+
+- **Reader's question.** Where does the word "ethnie" come from? Was it invented by
+  colonisation?
+- **Primary reader need.** P1 and P3; P4 for the references.
+- **Claims and support.**
+  | Claim                                                                                                                                                                                                   | Record source                                                      |
+  | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+  | The TLFi derives the word from Greek _ethnos_ and dates it to 1896, in Vacher de Lapouge's _Les Sélections sociales_                                                                                    | s1 (workshop reading, verbatim; CNRTL did not serve the page here) |
+  | Lapouge seeks a word distinct from "peuple", "nation", "nationalité" and proposes "ethne" or "ethnie" (p. 10); the book is a course taught 1888–1889, published 1896, and deals with races and eugenics | s2, s3 (workshop reading of the scan and OCR)                      |
+  | Amselle (1987, p. 465): the notion has been used with reference to a racial problematic ("toujours"; the narration softens it to "longtemps")                                                           | s5 (workshop reading)                                              |
+  | No older use found — a bounded negative                                                                                                                                                                 | workshop search record                                             |
+  | Around 1950 "tribu" becomes increasingly pejorative for Africa; anthropologists take up "ethnie", linked to the idea that these peoples had a history like others                                       | s4 (workshop reading, paywall-truncated)                           |
+  | Mamdani (2012): groups with a common language existed before colonialism; the tribe as an administrative entity did not                                                                                 | s6 (opened)                                                        |
+  | Coquery-Vidrovitch (1994): "ethnie" and "ethnicité" risk serving for everything, hence for nothing                                                                                                      | s4 (workshop reading, first sentence)                              |
+- **Uncertainty.** 1896 is the TLFi's date, not a proven first use; the anthropologists'
+  intention is not stated by the truncated source (the article keeps "lié à l'idée que", not
+  "ils veulent rappeler"); "à manier avec prudence" is the project's position.
+- **Dropped or flagged.** 1787/Chavannes, "naturel et factice", Hecht 2000, the Académie 1935
+  entry (removed from the voice by the operator); "inventé", "colonial", "pour justifier
+  l'eugénisme" (no source says it of the word). "Chaque peuple porte d'abord le nom qu'il se
+  donne" is kept only as the project's position. Flags: the carousel's opening question poses a
+  myth the workshop did not find attested (operator's choice, noted in the myth review);
+  reused images (1/9, 2/10, 3/4/7/8); soundtrack/voice not cleared for website reuse; s2 and s3
+  are the same book (duplicate entries left as imported).
+- **Improvement over the reel.** Restores the source's own wording where the narration had
+  attributed an intention, and keeps the dating limit next to the date.
