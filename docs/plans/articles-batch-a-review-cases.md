@@ -159,3 +159,26 @@ work nobody read, is dropped or left flagged.
   (s2 completed from the workshop; others left for the operator).
 - **Improvement over the carousel.** Keeps the word and the festival apart, and keeps only the
   local histories whose sources were read.
+
+## Case A6 — `comprendre-afrique-noms` (short by design)
+
+- **Reader's question.** What does EthniAfrica do, and why start from names?
+- **Primary reader need.** P3 (a newcomer meeting the project through its introduction reel)
+  and P1.
+- **Claims and support.** This is a project introduction, not a historical piece: the approved
+  narration asks questions and states a method. The workshop's myth review found no myth and
+  no factual claim.
+  | Claim                                                                                                                 | Record source                                              |
+  | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+  | Four kinds of names (countries, languages, peoples, personal names), with the approved examples                       | approved narration and cards; s2 (the project's own essay) |
+  | "Dioula" can be heard as a language, a trade or an identity — a question, not a classification                        | s1 (workshop reading; not opened)                          |
+  | The method: confront written sources, oral traditions and research; say where they disagree and what is still unknown | approved narration; s2                                     |
+- **Uncertainty.** None asserted; the article must not turn any question into an answer (no
+  etymology of "Mali", no ranking of names, no answer to the Comoros question).
+- **Dropped or flagged.** The Comoros question is kept as a question without its card reference
+  (Sophie Blanchy is not in the record's sources). The closing call "Partagez-la" is not
+  reproduced; an invitation to contribute is. Flags: TikTok date conflict (ledger 2026-09-23,
+  id day 2026-09-22); soundtrack/voice not cleared for website reuse; the voice's pronunciation
+  of several names was never checked by ear (workshop note); credit-check on all nine cards.
+- **Why short.** The evidence is a statement of intent. Padding it with facts about the named
+  examples would be writing a different article; the article links to the ones that exist.

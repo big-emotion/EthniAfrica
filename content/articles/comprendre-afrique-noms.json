@@ -8,19 +8,54 @@
   "fr": {
     "slug": "comprendre-afrique-noms",
     "title": "Quelles histoires les noms ouvrent-ils ?",
-    "excerpt": "Comprendre l’Afrique à travers les noms",
-    "sections": []
+    "excerpt": "Noms de pays, de langues, de peuples, noms que portent des personnes : notre projet part de ces noms pour comprendre les sociétés africaines, et pose d'abord des questions avant de proposer des réponses.",
+    "sections": [
+      {
+        "heading": "Partir des noms",
+        "paragraphs": [
+          "Mali, Côte d'Ivoire, Ghana, Cameroun, Congo, Gabon, Comores, Madagascar. Ces noms sont familiers, mais chacun ouvre une histoire : qui l'a donné, quand, et à quoi il a été appliqué.",
+          "EthniAfrica part de là. Plutôt que d'ouvrir sur une chronologie ou une carte, notre projet part des noms pour comprendre les sociétés africaines. Ce court texte présente les questions que nous posons ; les articles qui y répondent, sujet par sujet, sont listés à part."
+        ],
+        "sourceRefs": ["s2"]
+      },
+      {
+        "heading": "Quatre sortes de noms",
+        "paragraphs": [
+          "Des noms de pays : comment ces territoires ont-ils reçu leurs noms ? Quand vous dites « Mali », de quelle histoire parlez-vous ?",
+          "Des noms de langues, comme dioula ou lingala : que disent-ils des personnes qui les parlent et de leurs échanges ? Quand vous entendez « dioula », parlez-vous d'une langue, d'un métier ou d'une identité ? Ces usages dépendent de qui parle et où ; ils ne se rangent pas dans des cases qui s'excluent.",
+          "Des noms de peuples et d'appartenances : Bambara, Baoulé, Akan, Bamiléké, Kongo, Fang, Merina. Quelles histoires relient les personnes qui se reconnaissent dans ces noms ? Et aux Comores, appartient-on d'abord à son île ou à l'archipel ?",
+          "Des noms que portent des personnes : Traoré, Kouassi, Appiah, Kamdem, Ngoma, Soilihi, Rakotomalala. Comment les reçoit-on, les choisit-on, les transmet-on ? Porter le même nom ne suffit pas à prouver une ascendance commune."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      },
+      {
+        "heading": "Notre démarche",
+        "paragraphs": [
+          "Nous confrontons les sources écrites, les traditions orales et les recherches. Quand elles ne s'accordent pas, nous l'expliquons. Quand nous ne savons pas, nous le disons.",
+          "Chaque nom peut ainsi nous conduire vers des personnes : leurs déplacements, leurs échanges, leurs appartenances et leurs façons de vivre ensemble. Vous avez une histoire, un nom transmis dans votre famille ou une source ? Vous pouvez nous en indiquer la provenance."
+        ],
+        "sourceRefs": ["s2"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
   },
   "sources": [
     {
       "id": "s1",
-      "title": "Chikouna Cissé, 2025",
-      "tier": "needs_review"
+      "title": "Chikouna Cissé, « Entre descriptions (pré)coloniales et descriptions de soi », 2025",
+      "url": "https://ouvroir.fr/apropos/index.php?id=100",
+      "tier": "needs_review",
+      "notes": "Article sur les usages du nom dioula selon les contextes."
     },
     {
       "id": "s2",
-      "title": "essai, 2026",
-      "tier": "needs_review"
+      "title": "EthniAfrica — essai sur la démarche du projet, 2026",
+      "tier": "needs_review",
+      "notes": "Texte de présentation du projet : partir des noms, confronter les sources, dire les désaccords et ce qui reste inconnu."
     }
   ],
   "media": {
@@ -145,5 +180,9 @@
       }
     ]
   },
-  "relatedArticleIds": []
+  "relatedArticleIds": [
+    "mali-quelle-histoire",
+    "lingala-invente-par-les-belges",
+    "dioula-un-metier-une-langue-une-identite"
+  ]
 }
