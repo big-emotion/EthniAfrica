@@ -101,3 +101,29 @@ work nobody read, is dropped or left flagged.
   (in s4) was not opened.
 - **Improvement over the carousel.** Removes an etymology the carousel stated on encyclopedia
   support alone, and gives each boundary act its date and parties from the boundary study.
+
+## Case A4 — `cameroun-le-continent`
+
+- **Reader's question.** Is Cameroon really "Africa in miniature", "le Continent"? How far does
+  the comparison hold?
+- **Primary reader need.** P2 (Cameroonian readers who use or hear the nickname) and P3.
+- **Claims and support.**
+  | Claim                                                                                                                                               | Record source                                            |
+  | --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+  | "Afrique en miniature" is a slogan repeated above all by tourism marketing; its origin is not identified; one researcher (Bruneau 1999) defended it | s5 (opened)                                              |
+  | Its justifications: Cameroon sits between plain/plateau, forest/savanna, Christian/Muslim, anglophone/francophone Africa                            | s5 (opened, abstract)                                    |
+  | Of Greenberg's major African language families, only Khoisan and Austronesian are not represented                                                   | s5 (opened)                                              |
+  | Tchawa's conclusion: founded, yet scientifically excessive                                                                                          | s5 (opened)                                              |
+  | A 1979 "Que sais-je ?" compared its ethnic configuration to Africa's ("à l'image de celle de l'Afrique")                                            | s2 (second hand through an IRD document; neither opened) |
+  | Fulfulde, Chadic, Adamawa-Ubangian and Bantu languages side by side (the map shown in the carousel, after Le Fur)                                   | s4 (map read by the workshop; the two books not read)    |
+- **Uncertainty.** Who coined the nickname and when is not known; no source says what
+  Cameroonians themselves mean by it.
+- **Dropped or flagged.** The name's etymology (1472, Fernão do Pó, the ghost shrimp, "Kamerun"
+  on 5 July 1884): English Wikipedia plus an unread book — dropped; the article points to the
+  separate shrimp article instead. "278 groups" (Yakan, read only via French Wikipedia) and "49
+  fiches" (an internal count that changes) — dropped. No count of families present (a doctrine
+  conflict the workshop recorded). Flags: s1 is Wikipedia-only; "le Continent" as the exact
+  nickname is attested in the workshop's subject report (France 24, Présidence 2024), not in
+  the record's sources; credit-check on card 2; an Instagram occurrence is unattributed.
+- **Improvement over the carousel.** Replaces a count resting on Wikipedia with the one
+  scholarly assessment of the slogan that was read, including its verdict and its reasons.

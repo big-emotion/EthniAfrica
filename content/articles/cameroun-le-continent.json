@@ -8,34 +8,93 @@
   "fr": {
     "slug": "cameroun-le-continent",
     "title": "Pourquoi appelle-t-on le Cameroun « le Continent » ?",
-    "excerpt": "On appelle le Cameroun « le Continent ».",
-    "sections": []
+    "excerpt": "« Le Continent », « l'Afrique en miniature » : le surnom du Cameroun repose sur de vraies diversités, de paysages, de religions, de langues. Jusqu'où tient la comparaison, et ce qui lui manque.",
+    "sections": [
+      {
+        "heading": "Un surnom, pas un inventaire",
+        "paragraphs": [
+          "On entend dire du Cameroun qu'il est « le Continent », ou « l'Afrique en miniature ». L'idée : on y trouverait, sur un seul territoire, un résumé de l'Afrique entière.",
+          "Nous ne savons pas qui a lancé ce surnom, ni quand. P. Tchawa, qui lui a consacré un article de géographie en 2012, ne l'attribue à personne : il note que le slogan, « quelle que soit sa genèse », a surtout été répété par ceux qui vendent le pays comme destination touristique."
+        ],
+        "sourceRefs": ["s5"]
+      },
+      {
+        "heading": "Une comparaison ancienne",
+        "paragraphs": [
+          "La comparaison n'est pas nouvelle. Un ouvrage de 1979 sur le Cameroun, dans la collection « Que sais-je ? », décrivait déjà sa configuration ethnique comme « à l'image de celle de l'Afrique ».",
+          "C'est une comparaison, pas un décompte. Nous ne connaissons cette phrase que par un document de l'IRD qui la cite ; nous n'avons pas lu le livre lui-même."
+        ],
+        "sourceRefs": ["s2"]
+      },
+      {
+        "heading": "Ce qui justifie le surnom",
+        "paragraphs": [
+          "Le slogan a pourtant des raisons, que Tchawa examine une à une. Elles tiennent surtout à la position du pays. Le Cameroun se situe entre une Afrique des plaines et une Afrique des plateaux, entre la forêt et la savane, entre des régions à majorité chrétienne et d'autres à majorité musulmane, entre un héritage anglophone et un héritage francophone.",
+          "Les langues vont dans le même sens. La carte des langues reproduite dans le carrousel, établie d'après Anne Le Fur, montre côte à côte des langues bantoues au sud, des langues tchadiennes et adamaoua-oubanguiennes au nord, des zones où l'on parle peul, et bien d'autres. Des langues rattachées à des régions très différentes du continent s'y côtoient."
+        ],
+        "sourceRefs": ["s5", "s4"]
+      },
+      {
+        "heading": "Ce qui lui manque",
+        "paragraphs": [
+          "Le Cameroun ne contient pas pour autant toute l'Afrique. Tchawa reprend la classification des langues africaines proposée par le linguiste Joseph Greenberg : deux de ses grandes familles ne sont pas représentées au Cameroun. Ce sont les langues khoisan, les langues à clics d'Afrique australe et orientale, et les langues austronésiennes, auxquelles appartient le malgache.",
+          "Sa conclusion est nuancée : le slogan est fondé sur des éléments réels, mais, d'un point de vue scientifique, il « paraît tout de même être excessif ». Aucun pays ne peut résumer tous les autres."
+        ],
+        "sourceRefs": ["s5"]
+      },
+      {
+        "heading": "Et le nom Cameroun ?",
+        "paragraphs": [
+          "Le nom du pays lui-même a une autre histoire, liée à un fleuve et à des crevettes. Nous la traitons dans un article à part, pour ne pas mêler l'origine du nom et celle du surnom."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "« Le Continent » est un surnom, pas une mesure. Il s'appuie sur une vraie position de carrefour, de paysages, de religions, de langues et d'héritages coloniaux. Mais le Cameroun reste un carrefour de l'Afrique, pas son résumé.",
+          "Que veut dire ce surnom pour vous, et où l'avez-vous entendu pour la première fois ? Vous pouvez nous le raconter."
+        ],
+        "sourceRefs": ["s5"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
   },
   "sources": [
     {
       "id": "s1",
       "title": "Wikipédia EN, Cameroon (étymologie) et Lepidophthalmus turneranus ; C. Roche, Afrique noire et la France au XIXe siècle, Karthala, 2011, p. 105",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "Encyclopédie en ligne et ouvrage cités sur une carte du carrousel pour l'origine du nom Cameroun. Le texte ci-dessus ne reprend pas ces détails ; nous n'avons pas lu l'ouvrage de C. Roche."
     },
     {
       "id": "s2",
       "title": "J. Imbert, Le Cameroun, PUF, « Que sais-je ? », 1979, cité par un document de l'IRD (Horizon 02981, p. 239)",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "Citation connue de seconde main, par un document de l'IRD. Nous n'avons pas lu le livre."
     },
     {
       "id": "s3",
       "title": "M. Z. Yakan, Almanac of African Peoples & Nations, Transaction, 1999, p. 37-39",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "Cité sur une carte du carrousel pour un nombre de groupes. Nous ne l'avons pas lu, et le texte ci-dessus ne reprend pas ce chiffre."
     },
     {
       "id": "s4",
       "title": "Carte : Langues et ethnies du Cameroun, d'après A. Le Fur ; A. Neba, Modern Geography of the Republic of Cameroon, 3e éd., 1999, p. 65 ; T. Rosendal, Multilingual Cameroon, Göteborg, 2008, p. 16",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "La carte est reproduite dans le carrousel. Les deux ouvrages n'ont pas été lus directement."
     },
     {
       "id": "s5",
       "title": "P. Tchawa, « Le Cameroun : une « Afrique en miniature » ? », Les Cahiers d'Outre-Mer, n° 259, 2012, p. 319-338",
-      "tier": "needs_review"
+      "url": "https://journals.openedition.org/com/6640",
+      "tier": "needs_review",
+      "notes": "Article de géographie consacré au slogan : ses justifications, les familles de langues absentes, et sa conclusion."
     }
   ],
   "media": {
@@ -107,5 +166,5 @@
       }
     ]
   },
-  "relatedArticleIds": []
+  "relatedArticleIds": ["cameroun-crevette"]
 }
