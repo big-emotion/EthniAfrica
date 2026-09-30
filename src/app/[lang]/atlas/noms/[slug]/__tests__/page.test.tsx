@@ -52,8 +52,12 @@ beforeEach(() => {
 });
 
 describe("the name fiche's indexing directive", () => {
+  // The sitemap submits every name that cites a readable source, whatever its
+  // tier; a page that then declared `noindex` would be a submitted URL that
+  // contradicts itself. Both follow the same rule, which replaces DEC-050's
+  // threshold (operator approval 2026-09-30, audit finding T03).
   // @req REQ-147
-  it("withholds a name resting only on unverified sources from the index", async () => {
+  it("leaves a name resting only on unverified sources free to be indexed", async () => {
     getPatronymeByIdMock.mockResolvedValue(
       dossierCiting({
         title: "Un blog de généalogie",
@@ -64,7 +68,7 @@ describe("the name fiche's indexing directive", () => {
 
     const metadata = await metadataFor("PAT_KEITA");
 
-    expect(metadata.robots).toEqual({ index: false, follow: true });
+    expect(metadata.robots).toBeUndefined();
     expect(metadata.alternates?.canonical).toBe(KEITA_ROUTE);
   });
 
