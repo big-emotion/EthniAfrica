@@ -121,6 +121,7 @@ were referenced by nothing at all, two of them written that same week.
 
 ## Runbooks — procedures, and records of ones already run
 
+- [Runbook — article media on the application host](runbooks/article-media.md)
 - [Runbook — AFRIK corpus synchronization](runbooks/afrik-data-sync.md)
 - [Anthroponym coverage plan](runbooks/anthroponym-coverage-plan.md)
 - [Anthroponym fiche research protocol](runbooks/anthroponym-fiche-research.md)
