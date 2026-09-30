@@ -63,6 +63,8 @@ interface DiscoveryReaderProps {
   language: Language;
   publications: readonly DiscoveryPublication[];
   initialId: string;
+  /** Publication id to the canonical address of its published article. */
+  articleLinks?: Readonly<Record<string, string>>;
 }
 
 function atlasPath(
@@ -156,6 +158,7 @@ export function DiscoveryReader({
   language,
   publications,
   initialId,
+  articleLinks,
 }: DiscoveryReaderProps) {
   const ordered = useMemo(
     () => [
@@ -692,6 +695,11 @@ export function DiscoveryReader({
                   {paragraph}
                 </p>
               ))}
+              {articleLinks?.[active.id] ? (
+                <p className={styles.detailBody}>
+                  <a href={articleLinks[active.id]}>{words.readArticle}</a>
+                </p>
+              ) : null}
               {active.detail?.entities.length ? (
                 <section
                   aria-label={words.atlas}
