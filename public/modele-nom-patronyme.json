@@ -25,8 +25,12 @@
       {
         "claim": "<Tradition orale attribuée>",
         "claimStatus": "claimed | contested | established",
-        "griot": "<Griot ou informateur cité>",
-        "transcription": "<Version transcrite et localisateur>",
+        "carrier": "<Personne, rôle ou description convenue de qui a transmis le récit — omettre si inconnu>",
+        "collection": "direct | mediated | not-stated",
+        "collector": "<Qui a recueilli le récit, si la collecte est indirecte>",
+        "context": "<Langue, lieu et date, tels que la source les donne>",
+        "griot": "<Griot ou informateur cité — forme existante, facultative>",
+        "transcription": "<Version transcrite et localisateur — forme existante, facultative>",
         "sourceRefs": ["source-key"]
       }
     ],

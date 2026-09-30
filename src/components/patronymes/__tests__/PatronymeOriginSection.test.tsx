@@ -80,7 +80,7 @@ describe("PatronymeOriginSection (REQ-133)", () => {
       />
     );
 
-    expect(screen.getByText("Tradition orale griotique")).toBeInTheDocument();
+    expect(screen.getByText("Tradition orale")).toBeInTheDocument();
     expect(screen.getByText(/Le nom vient du Mandé/)).toBeInTheDocument();
     expect(
       screen.getByText(/Transmis par\s+Fadama Diarra/)
@@ -105,14 +105,89 @@ describe("PatronymeOriginSection (REQ-133)", () => {
     );
 
     // Two testimonies about one name; neither is promoted over the other.
-    expect(screen.getByText("Tradition orale griotique")).toBeInTheDocument();
+    expect(screen.getByText("Tradition orale")).toBeInTheDocument();
     expect(screen.getByText("Chronique écrite")).toBeInTheDocument();
     expect(screen.getByText(/Version griotique/)).toBeInTheDocument();
     expect(screen.getByText(/Version chroniquée/)).toBeInTheDocument();
   });
 
+  // An account is shown with the carrier and collection it was recorded with,
+  // and no word the record did not use (audit finding C10).
   // @req REQ-133
-  it("omits the griot wording when no oral tradition is documented", () => {
+  it("attributes an account to its carrier and collector as recorded, without the word griot", () => {
+    render(
+      <PatronymeOriginSection
+        language="fr"
+        patronyme={{
+          ...base,
+          content: {
+            origin: {
+              oralTraditions: [
+                {
+                  claim: "Un récit relie ce nom à une lignée.",
+                  claimStatus: "claimed",
+                  carrier: "Une aînée de la famille, nom tenu à sa demande",
+                  collection: "mediated",
+                  collector: "Un enseignant qui l'a recueillie",
+                  context: "Récit transmis en dioula, à Bobo-Dioulasso",
+                },
+              ],
+            },
+          },
+        }}
+      />
+    );
+
+    expect(screen.getByText(/Transmis par\s+Une aînée/)).toBeInTheDocument();
+    expect(
+      screen.getByText(/Recueilli par\s+Un enseignant/)
+    ).toBeInTheDocument();
+    expect(screen.getByText(/Bobo-Dioulasso/)).toBeInTheDocument();
+    expect(screen.queryByText(/griot/i)).not.toBeInTheDocument();
+  });
+
+  // @req REQ-133
+  it("says the carrier is not stated rather than leaving the account unattributed and silent", () => {
+    render(
+      <PatronymeOriginSection
+        language="fr"
+        patronyme={{
+          ...base,
+          content: {
+            origin: {
+              oralTraditions: [{ claim: "Un récit sans transmetteur." }],
+            },
+          },
+        }}
+      />
+    );
+
+    expect(screen.getByText(/Transmetteur non précisé/)).toBeInTheDocument();
+  });
+
+  // @req REQ-133
+  it("names the strand an oral tradition in English, not a griot tradition", () => {
+    render(
+      <PatronymeOriginSection
+        language="en"
+        patronyme={{
+          ...base,
+          content: {
+            origin: {
+              oralTraditions: [{ claim: "An account.", carrier: "An elder" }],
+            },
+          },
+        }}
+      />
+    );
+
+    expect(screen.getByText("Oral tradition")).toBeInTheDocument();
+    expect(screen.getByText(/Transmitted by\s+An elder/)).toBeInTheDocument();
+    expect(screen.queryByText(/griot/i)).not.toBeInTheDocument();
+  });
+
+  // @req REQ-133
+  it("omits the oral-tradition note when no oral tradition is documented", () => {
     render(
       <PatronymeOriginSection
         language="fr"
@@ -128,8 +203,6 @@ describe("PatronymeOriginSection (REQ-133)", () => {
     );
 
     expect(screen.getByText("Chronique écrite")).toBeInTheDocument();
-    expect(
-      screen.queryByText(/transmise par tradition orale griotique/)
-    ).not.toBeInTheDocument();
+    expect(screen.queryByText(/transmise oralement/)).not.toBeInTheDocument();
   });
 });

@@ -123,7 +123,14 @@ export interface OriginAccount {
   claimStatus: "claimed" | "contested" | "established" | null;
   griot: string | null;
   transcription: string | null;
+  /** Who carried the account, as the record states it; null when it does not. */
+  carrier: string | null;
+  collection: "direct" | "mediated" | "not-stated" | null;
+  collector: string | null;
+  context: string | null;
 }
+
+const COLLECTION_MODES = ["direct", "mediated", "not-stated"];
 
 export interface PatronymeOrigin {
   oralTraditions: OriginAccount[];
@@ -355,6 +362,14 @@ function readOriginAccounts(value: unknown): OriginAccount[] {
           : null,
       griot: readStringField(entry.griot),
       transcription: readStringField(entry.transcription),
+      carrier: readStringField(entry.carrier),
+      collection:
+        typeof entry.collection === "string" &&
+        COLLECTION_MODES.includes(entry.collection)
+          ? (entry.collection as OriginAccount["collection"])
+          : null,
+      collector: readStringField(entry.collector),
+      context: readStringField(entry.context),
     }));
 }
 

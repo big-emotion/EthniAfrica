@@ -248,6 +248,10 @@ describe("patronyme content readers (REQ-133)", () => {
         claimStatus: "contested",
         griot: "Fadama Diarra",
         transcription: "Monteil 1962, p. 44",
+        carrier: null,
+        collection: null,
+        collector: null,
+        context: null,
       },
     ]);
     expect(origin.writtenChronicles).toEqual([
@@ -256,9 +260,55 @@ describe("patronyme content readers (REQ-133)", () => {
         claimStatus: null,
         griot: null,
         transcription: null,
+        carrier: null,
+        collection: null,
+        collector: null,
+        context: null,
       },
     ]);
     expect(origin.linguisticReconstructions).toEqual([]);
+  });
+
+  // An account with no griot and no transcript must come through exactly as
+  // recorded: nothing is invented to fill the shape (audit finding C10).
+  // @req REQ-133
+  it("reads an oral account by its carrier and collection without inventing a griot or a transcript", () => {
+    const origin = readOrigin({
+      origin: {
+        oralTraditions: [
+          {
+            claim: "Un récit transmis relie ce nom à une lignée.",
+            claimStatus: "claimed",
+            carrier: "Une aînée de la famille, nom tenu à sa demande",
+            collection: "mediated",
+            collector: "Un enseignant qui l'a recueillie",
+            context: "Récit transmis en dioula, à Bobo-Dioulasso",
+          },
+        ],
+      },
+    });
+
+    expect(origin.oralTraditions).toEqual([
+      {
+        claim: "Un récit transmis relie ce nom à une lignée.",
+        claimStatus: "claimed",
+        griot: null,
+        transcription: null,
+        carrier: "Une aînée de la famille, nom tenu à sa demande",
+        collection: "mediated",
+        collector: "Un enseignant qui l'a recueillie",
+        context: "Récit transmis en dioula, à Bobo-Dioulasso",
+      },
+    ]);
+  });
+
+  // @req REQ-133
+  it("ignores a collection mode outside the three the record can state", () => {
+    const [account] = readOrigin({
+      origin: { oralTraditions: [{ claim: "X.", collection: "on tape" }] },
+    }).oralTraditions;
+
+    expect(account.collection).toBeNull();
   });
 
   // @req REQ-133

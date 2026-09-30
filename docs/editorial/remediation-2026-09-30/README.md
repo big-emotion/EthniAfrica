@@ -7,6 +7,8 @@ evidence, or is shown to be inapplicable or superseded. A finding is never marke
 resolved because a checker went green: the row says what was read and by whom.
 
 - Frozen cases every phase is reviewed against: [review-cases.md](review-cases.md).
+- The source contract P3 works to, with its proposals marked as such:
+  [source-contract.md](source-contract.md).
 - Status vocabulary: `open` · `in progress` · `resolved` · `superseded` ·
   `inapplicable`. Nothing else. A limitation that survives resolution is written
   in the last column, not hidden by a stronger status.

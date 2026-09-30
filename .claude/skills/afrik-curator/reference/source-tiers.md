@@ -157,5 +157,8 @@ UNESCO World Heritage.
 cited with a DOI or persistent URL; university presses including Karthala and Présence
 Africaine; national archives.
 
-**Oral tradition** — cited as the transcribed version and attributed to the griot it comes
-from, at the tier the transcription earns. Not excluded for being oral.
+**Oral tradition** — cited as the version that exists (a transcript, a summary or an audio
+locator, whichever was actually available) and attributed to the carrier as the source
+states it, with how it was collected. A griot is one possible carrier, never assumed. A
+detail the source does not give stays absent, never invented; permission and withdrawal
+are checked separately from any assessment of the claim. Not excluded for being oral.
