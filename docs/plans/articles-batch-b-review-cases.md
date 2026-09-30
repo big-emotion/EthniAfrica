@@ -63,3 +63,31 @@ Wikipedia page, or on a work nobody read, is dropped or flagged.
   Faidherbe 1875 rest on OCR, page images not opened by the workshop.
 - **Improvement over the carousel.** Gives the reader the competing explanations of "griot" with
   their authors and dates, which the carousel reduced to "origin not established".
+
+## Case B3 — `guinee-vingt-neuf-peuples`
+
+- **Reader's question.** Where does the name Guinée come from, and is Guinea the place the peoples
+  of the region "come from"?
+- **Primary reader need.** P2 (Guinean and Fulɓe readers for whom the Fouta Djallon is central;
+  readers who hold that the northern Ivorian peoples "come from Guinea") and P1.
+- **Claims and support.** Most support is our own corpus fiches, which rest on sources of uneven
+  standing; the article says so.
+  | Claim                                                                                                                                                                                                                                                                                             | Record source                                                                      |
+  | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+  | Three unsettled readings of "Guinée": Soussou guinè "woman" (commonly cited), Amazigh akal n ignawen (Delafosse 1924 via Agrour 2012, agnaw from gnu "to sew"), Portuguese "Guiné" written from the 15th century for the coast south of Senegal                                                   | s1 (Soussou fiche, read), s2 (Agrour: workshop opened it), s3 (Guinea fiche, read) |
+  | French Guinea 1891-1958; independence 2 October 1958 under the same name                                                                                                                                                                                                                          | s3 (fiche, read)                                                                   |
+  | Fouta (Fulfulde, a region inhabited by Fulɓe) + Djallon ("mountain" in Yalunka); formerly Jallonkadu                                                                                                                                                                                              | s3 (fiche, read, citing N'Daou 1999), s4 (not opened), s5                          |
+  | Fouta Djallon theocracy, 18th-19th c., one of the major Fulɓe states                                                                                                                                                                                                                              | s3 (fiche, read)                                                                   |
+  | Yalunka traces on the plateau from the 11th c., first inhabitants of Jallonkadu per the fiche; Kissi tradition of a Haut-Niger origin, pushed west by the Yalunka from 1600; Soussou origin disputed, one reading from Wagadu; Soussou expansion to the coast in the 18th c. after the Fulɓe wars | s5, s7, s6 (fiches, read)                                                          |
+- **Uncertainty.** The origin of "Guinée" is not established; the peoples' origins are reported
+  traditions or disputed readings; the fiches rest on sources of uneven standing.
+- **Dropped or flagged.** Card 1's "et aucun n'a commencé ici" (stronger than the fiches, which
+  make the Yalunka the first inhabitants of Jallonkadu); card 2's sailors-and-women anecdote (not
+  found in the Soussou fiche); card 7's "XIIIe siècle" second wave (the fiche gives the 11th
+  century only); card 8's Timbo, Karamokho Alfa and Ibrahima Sori (not found in the fiche read);
+  "vingt-neuf peuples" (a count of our own fiches on 2026-09-16, not a census); Conakry and French
+  as colonial legacies (card only). Registry status `pret` vs live post, and date conflict
+  (ledger 2026-09-17, TikTok id 2026-09-16); credit-check on cards 1, 2, 3, 5, 6, 8, 11; card 2
+  image (a boy alone) does not match its subject (workshop reserve).
+- **Improvement over the carousel.** Presents the three readings of the name side by side, tells
+  the reader what our migration claims rest on, and removes the flat "no people began here".
