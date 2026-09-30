@@ -127,3 +127,35 @@ work nobody read, is dropped or left flagged.
   the record's sources; credit-check on card 2; an Instagram occurrence is unattributed.
 - **Improvement over the carousel.** Replaces a count resting on Wikipedia with the one
   scholarly assessment of the slogan that was read, including its verdict and its reasons.
+
+## Case A5 — `carnaval-caraibe-fete-d-europe`
+
+- **Reader's question.** Is the Caribbean carnival a festival that came from Europe? What do
+  its local names say?
+- **Primary reader need.** P1 (diaspora readers from the Antilles, Trinidad or Brazil) and P2.
+- **Claims and support.**
+  | Claim                                                                                                                                                                                                                                                             | Record source                                            |
+  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+  | The word _carnaval_ comes from Italian and is attested in the thirteenth century                                                                                                                                                                                  | s1 (workshop reading; CNRTL did not serve the page here) |
+  | Martinique: "Nations" (groups of enslaved people of the same origin) excluded from the Corpus Christi procession in the mid-eighteenth century; a 1765 order bans masquerades armed with iron-tipped sticks; after 1848 the Saint-Pierre carnival becomes popular | s2 (workshop reading, "lu")                              |
+  | The _bois-bois_: a straw effigy caricaturing the year's most unpopular incident, buried or thrown into the sea at Saint-Pierre; an 1890 book already describes it in the past tense and does not write "Vaval"                                                    | s3, s4 (workshop reading)                                |
+  | Vaval, king of the carnival, burned on Ash Wednesday; one published explanation sees a Creole diminutive of _carnaval_; no date found for the name                                                                                                                | s2 (workshop reading)                                    |
+  | Canboulay: from French "cannes brûlées" in Creole form; after emancipation, former slaves organise night processions; one reading sees a mocking re-enactment of cane fires                                                                                       | s7 (workshop reading)                                    |
+  | Recife: Black confraternities crowned a king and queen of Congo in the colonial period; maracatu-nação registered as heritage in 2014 ("création, résistance et foi")                                                                                             | s11 (workshop reading)                                   |
+  | The guide reads the Nations as a reconstruction of African societies and attributes the Moko Zombi to the Efik of Old Calabar, in the conditional                                                                                                                 | s2                                                       |
+  | An opinion column (2024) says the French brought carnival to Trinidad, while recalling a pan-African thesis                                                                                                                                                       | s13 (workshop reading)                                   |
+- **Uncertainty.** Who brought the festival and where its forms come from are two distinct
+  questions on which authors diverge; the origin of "maracatu" is not established; no date for
+  "Vaval".
+- **Dropped or flagged.** Everything the workshop itself marked "to re-read at the source before
+  publication": the 1880/1881/1884 Trinidad police measures and the Jouvay replacement (read
+  through Wikipedia's references: s8, s9, s10), the 1861 Olinda law (s12, summaries only),
+  Liverpool's attributions (s14), the two competing stories about Vaval (1902 / 1964). The
+  1840 first written use of "maracatu" (support unclear between s11 and s12 summaries). The
+  three maracatu etymologies (card 10 names Lima, Andrade and Gonçalves Fernandes, none of whom
+  is in the record's sources). Flags: images that do not match their card (card 4 shows
+  Dominica, cards 7–8 a plantation dance not the Canboulay, card 10 Minas Gerais), weak card 11
+  image, credit-check on eight cards; source titles are too short to find the works again
+  (s2 completed from the workshop; others left for the operator).
+- **Improvement over the carousel.** Keeps the word and the festival apart, and keeps only the
+  local histories whose sources were read.

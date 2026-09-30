@@ -8,8 +8,70 @@
   "fr": {
     "slug": "carnaval-caraibe-fete-d-europe",
     "title": "D'où vient le nom « Carnaval » ?",
-    "excerpt": "Le carnaval de la Caraïbe, une fête arrivée d'Europe ?",
-    "sections": []
+    "excerpt": "Le mot carnaval vient d'Europe. Mais en Martinique, à Trinidad ou à Recife, la fête porte aussi d'autres noms : Nations, bois-bois, Vaval, Canboulay, maracatu. Chacun garde une histoire, et les auteurs ne s'accordent pas sur celle de la fête elle-même.",
+    "sections": [
+      {
+        "heading": "Le mot vient d'Europe",
+        "paragraphs": [
+          "Le mot carnaval vient de l'italien ; il est attesté au XIIIe siècle. Sur ce point, il n'y a pas de doute : le mot est européen.",
+          "Mais un mot n'est pas une fête. Dans la Caraïbe et au Brésil, le carnaval porte aussi d'autres noms, et ces noms racontent d'autres histoires. En voici trois, en Martinique, à Trinidad et à Recife."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "Martinique : les Nations",
+        "paragraphs": [
+          "En Martinique, on appelait « Nation » un groupe d'esclaves de même origine. Au milieu du XVIIIe siècle, un gouverneur exclut les Nations de la procession de la Fête-Dieu, parce qu'il y voit une menace pour l'ordre établi. En 1765, un arrêté interdit les mascarades armées de bâtons ferrés.",
+          "Après 1848, le carnaval de Saint-Pierre devient une fête populaire. Le guide qui rapporte cette histoire, publié en 2013 par le Comité martiniquais du tourisme, voit dans les Nations une reconstruction de sociétés africaines."
+        ],
+        "sourceRefs": ["s2"]
+      },
+      {
+        "heading": "Martinique : du bois-bois à Vaval",
+        "paragraphs": [
+          "À Saint-Pierre, le mannequin du carnaval s'appelait le « bois-bois ». C'était un pantin de paille qui caricaturait l'incident le plus impopulaire de l'année ; on l'enterrait ou on le jetait à la mer. Un livre publié en 1890 par L. Hearn décrit déjà cette cérémonie au passé, et n'écrit jamais le mot Vaval.",
+          "Aujourd'hui, le roi du carnaval s'appelle Vaval ; on le brûle le mercredi des Cendres. Une explication publiée voit dans ce nom un diminutif créole de « carnaval ». Nous n'avons trouvé aucune date sûre pour l'apparition du nom Vaval, ni pour le passage du bois-bois à Vaval."
+        ],
+        "sourceRefs": ["s3", "s4", "s2"]
+      },
+      {
+        "heading": "Trinidad : le Canboulay",
+        "paragraphs": [
+          "À Trinidad, la nuit d'ouverture du carnaval s'appelait le Canboulay. Le mot vient du français « cannes brûlées », sous sa forme créole.",
+          "Après l'émancipation, d'anciens esclaves organisent ces cortèges de nuit. Une lecture y voit la reconstitution, moqueuse, des incendies de champs de cannes. C'est une interprétation, pas un fait établi."
+        ],
+        "sourceRefs": ["s7"]
+      },
+      {
+        "heading": "Recife : le maracatu",
+        "paragraphs": [
+          "À Recife, au Brésil, les cortèges du carnaval qui portent des rois du Congo s'appellent maracatu. Pendant la période coloniale, des confréries noires y couronnaient un roi et une reine du Congo. En 2014, le Brésil a inscrit le maracatu-nação à son patrimoine, en le présentant comme une « création, résistance et foi ».",
+          "L'origine du mot maracatu, elle, n'est pas établie. Plusieurs explications circulent ; nous ne les reprenons pas ici, parce que nous n'avons pas encore lu les ouvrages qui les proposent."
+        ],
+        "sourceRefs": ["s11"]
+      },
+      {
+        "heading": "Qui a apporté la fête ? D'où viennent ses formes ?",
+        "paragraphs": [
+          "Ce sont deux questions différentes, et les auteurs ne répondent pas de la même façon. Une chronique publiée en 2024 écrit que les Français ont apporté le carnaval à Trinidad, tout en rappelant qu'une autre thèse lui donne une origine panafricaine.",
+          "Du côté des formes, le guide martiniquais de 2013 rattache au conditionnel le Moko Zombi, l'échassier du carnaval, aux Efik du Vieux Calabar. Pour le maracatu, ce sont les couronnements de rois du Congo qui sont à son origine. Aucune de ces sources ne permet de dire, d'un seul mot, que le carnaval de la Caraïbe est « européen » ou « africain »."
+        ],
+        "sourceRefs": ["s13", "s2", "s11"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "Le mot carnaval est européen. La fête, elle, porte dans la Caraïbe et au Brésil des noms locaux, Nations, bois-bois, Vaval, Canboulay, maracatu, qui gardent chacun la trace de ceux qui l'ont faite et de ceux qui ont voulu l'interdire.",
+          "Vous connaissez un nom du carnaval transmis dans votre famille ou votre quartier, ou une source sur l'un de ces noms ? Dites-nous d'où il vient."
+        ],
+        "sourceRefs": ["s1", "s2", "s7", "s11"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
   },
   "sources": [
     {
@@ -19,7 +81,7 @@
     },
     {
       "id": "s2",
-      "title": "Guide du Carnaval, 2013",
+      "title": "A. Lucrèce et T. L'Etang, Guide du Carnaval, Comité martiniquais du tourisme, 2013",
       "tier": "needs_review"
     },
     {
@@ -50,17 +112,20 @@
     {
       "id": "s8",
       "title": "B. Brereton, 2002",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "Citée sur une carte du carrousel. Nous ne l'avons pas encore relue directement, et le texte ci-dessus ne s'appuie pas sur elle."
     },
     {
       "id": "s9",
       "title": "M. La Rose, 2019",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "Citée sur une carte du carrousel. Nous ne l'avons pas encore relue directement, et le texte ci-dessus ne s'appuie pas sur elle."
     },
     {
       "id": "s10",
       "title": "Archives nationales britanniques, 1884",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "Citée sur une carte du carrousel. Nous ne l'avons pas encore relue directement, et le texte ci-dessus ne s'appuie pas sur elle."
     },
     {
       "id": "s11",
@@ -70,7 +135,8 @@
     {
       "id": "s12",
       "title": "E. Chamone, F. Lyra de Carvalho et C. Sandroni",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "Citée sur une carte du carrousel. Nous ne l'avons pas encore relue directement, et le texte ci-dessus ne s'appuie pas sur elle."
     },
     {
       "id": "s13",
@@ -80,7 +146,8 @@
     {
       "id": "s14",
       "title": "H. U. Liverpool, TDR, 1998",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "Citée sur une carte du carrousel. Nous ne l'avons pas encore relue directement, et le texte ci-dessus ne s'appuie pas sur elle."
     }
   ],
   "media": {
