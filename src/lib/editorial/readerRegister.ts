@@ -65,7 +65,9 @@ export const INTERNAL_REGISTER_PATTERNS: ReadonlyArray<RegisterPattern> = [
   {
     // A research wave is numbered with one or two digits; the lookahead and
     // the digit cap keep "la vague 1960 des indépendances" and "une vague
-    // 1 500 ans plus tôt" readable, since a year is the subject's history.
+    // 1 500 ans plus tôt" readable, since a year is the subject's history. A
+    // number followed by its own period — "Vague 1 (3000-2000 av. J.-C.)" —
+    // is a chronology, so an opening parenthesis and a digit also spare it.
     //
     // "passe" and "protocole" are ordinary words, so only the workshop's own
     // sentences are matched. "cette passe" / "la passe" name the research
@@ -75,7 +77,7 @@ export const INTERNAL_REGISTER_PATTERNS: ReadonlyArray<RegisterPattern> = [
     // protocole"), so a treaty or a book titled "Protocole d'enquête" stays.
     label: "curation vocabulary",
     pattern:
-      /file d'attente|passe de recherche|passe anthroponymique|\bcette passe\b|\blors de la passe\b|\bla passe\b(?! (?:de|du|des|d['’]))|protocole de recherche|protocole (?:l['’]|les |le |ce )?(?:exclut|excluent|interdit|interdisant|interdisent)|(?:conform[ée]ment|répondant|exclue?s?) (?:au|par le) protocole|claim-level|tier hérité|hors corpus|plan de couverture|\bvague \d{1,2}\b(?! ?\d)/i,
+      /file d'attente|passe de recherche|passe anthroponymique|\bcette passe\b|\blors de la passe\b|\bla passe\b(?! (?:de|du|des|d['’]))|protocole de recherche|protocole (?:l['’]|les |le |ce )?(?:exclut|excluent|interdit|interdisant|interdisent)|(?:conform[ée]ment|répondant|exclue?s?) (?:au|par le) protocole|claim-level|tier hérité|hors corpus|plan de couverture|\bvague \d{1,2}\b(?! ?\(?\d)/i,
   },
   {
     label: "pipeline source note",
@@ -104,7 +106,7 @@ export const INTERNAL_REGISTER_PATTERNS_EN: ReadonlyArray<RegisterPattern> = [
   {
     label: "curation vocabulary",
     pattern:
-      /(?:candidate|work|research) queue|research (?:pass|protocol)|anthroponym pass|\bthis (?:research )?pass\b|protocol (?:excludes|forbids|prohibits)|(?:in accordance with|per|under) the protocol|claim-level|inherited tier|out(?:side)? (?:of )?(?:the )?corpus|coverage plan|\bwave \d{1,2}\b(?! ?\d)/i,
+      /(?:candidate|work|research) queue|research (?:pass|protocol)|anthroponym pass|\bthis (?:research )?pass\b|protocol (?:excludes|forbids|prohibits)|(?:in accordance with|per|under) the protocol|claim-level|inherited tier|out(?:side)? (?:of )?(?:the )?corpus|coverage plan|\bwave \d{1,2}\b(?! ?\(?\d)/i,
   },
   {
     // The tiering codemod explained its own decision in every note it wrote:
