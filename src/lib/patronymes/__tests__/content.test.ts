@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import {
   readAlliances,
+  isIndexableStanding,
   readDesignatedSocialUnit,
   readGaps,
   readHomonyms,
@@ -142,6 +143,35 @@ describe("patronyme content readers (REQ-133)", () => {
         ],
       })
     ).toEqual({ tier: "unverified", sourceCount: 1, aiGeneratedCount: 1 });
+  });
+
+  // The one rule the sitemap and the page's robots directive share: a name is
+  // offered to crawlers when a person wrote at least one readable source it
+  // cites. A dossier resting only on machine-written sources is published and
+  // labelled, but not offered (operator decision 2026-09-30).
+  // @req REQ-147
+  it("offers a name to crawlers only when at least one readable source is human-written", () => {
+    const standing = (
+      ...sources: { title: string; tier: string; source_kind?: string }[]
+    ) => readNameStanding({ sources });
+    const ai = {
+      title: "Relevé",
+      tier: "unverified",
+      source_kind: "ai_generated",
+    };
+
+    expect(isIndexableStanding(null)).toBe(false);
+    expect(isIndexableStanding(standing(ai))).toBe(false);
+    expect(isIndexableStanding(standing(ai, ai))).toBe(false);
+    expect(
+      isIndexableStanding(standing(ai, { title: "Blog", tier: "unverified" }))
+    ).toBe(true);
+    expect(
+      isIndexableStanding(standing({ title: "Blog", tier: "unverified" }))
+    ).toBe(true);
+    expect(
+      isIndexableStanding(standing(ai, { title: "GHA", tier: "official" }))
+    ).toBe(true);
   });
 
   // @req REQ-147

@@ -274,6 +274,19 @@ export function readNameStanding(content: ContentBag): NameStanding | null {
   };
 }
 
+/**
+ * Whether a name is offered to crawlers: a person wrote at least one readable
+ * source it cites, whatever that source's tier. A dossier resting only on
+ * machine-written sources is published and labelled, but not offered (operator
+ * decision 2026-09-30; it replaces DEC-050's threshold by tier). The sitemap
+ * and the page's `robots` directive both read this one predicate, so a
+ * submitted URL never declares itself `noindex`.
+ */
+// @req REQ-147
+export function isIndexableStanding(standing: NameStanding | null): boolean {
+  return standing !== null && standing.aiGeneratedCount < standing.sourceCount;
+}
+
 // @req REQ-133
 export function readGaps(content: ContentBag): PatronymeGap[] {
   const value = content.gaps;

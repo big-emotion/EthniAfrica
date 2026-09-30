@@ -1,5 +1,8 @@
 import { logger } from "@/lib/api/logger";
-import { readNameStanding } from "@/lib/patronymes/content";
+import {
+  isIndexableStanding,
+  readNameStanding,
+} from "@/lib/patronymes/content";
 import { walkRanges, type RangeWalk } from "@/lib/supabase/queries/walkRanges";
 
 import { createServerClient } from "../../server";
@@ -149,11 +152,12 @@ async function idsInTable(
 
 /**
  * A name fiche is submitted to search engines when its dossier cites at least
- * one source a reader can read, whatever that source's standing. The page is
- * published and labelled either way, so the tier never decided whether the name
- * deserved an index entry (DEC-055; it replaces DEC-050's threshold — audit
- * finding T03). A dossier citing nothing readable stays published and
- * reachable, but the sitemap does not submit it.
+ * one readable source that a person wrote, whatever that source's tier. The
+ * page is published and labelled either way, so the tier never decided whether
+ * the name deserved an index entry (DEC-055; it replaces DEC-050's threshold —
+ * audit finding T03). A dossier citing nothing readable, or only machine-written
+ * sources, stays published and reachable, but the sitemap does not submit it
+ * (`isIndexableStanding`, shared with the page's `robots` directive).
  *
  * Decided here, in TypeScript, over the rows already fetched. As a PostgREST
  * filter it would be a JSON path over `content -> sources[]`, an unindexed
@@ -165,7 +169,7 @@ async function idsInTable(
  * build — paid by every `next build` against a database metered by egress.
  */
 function nameCitesAReadableSource(row: SitemapRow): boolean {
-  return readNameStanding({ sources: row.sources }) !== null;
+  return isIndexableStanding(readNameStanding({ sources: row.sources }));
 }
 
 /**

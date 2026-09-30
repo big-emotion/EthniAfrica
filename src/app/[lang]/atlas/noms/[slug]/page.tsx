@@ -4,7 +4,10 @@ import { notFound } from "next/navigation";
 import { ficheHead } from "@/lib/seo/ficheHead";
 import type { Language } from "@/types/shared";
 import { loadPatronymeFiche } from "@/lib/fiche/ficheExistence";
-import { readNameStanding } from "@/lib/patronymes/content";
+import {
+  isIndexableStanding,
+  readNameStanding,
+} from "@/lib/patronymes/content";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { FicheJsonLd } from "@/components/fiche/FicheJsonLd";
 import { FicheOnward } from "@/components/fiche/FicheOnward";
@@ -34,11 +37,12 @@ interface PageParams {
 /**
  * What this fiche asks a crawler to do with it.
  *
- * A name dossier is indexable when it cites at least one readable source,
- * whatever that source's tier (DEC-055, which replaces DEC-050's threshold by
- * tier; operator approval 2026-09-30). The Source Tier Policy labels and never
- * suppresses, and the sitemap applies the same rule. Only a dossier citing
- * nothing readable is withheld from the index.
+ * A name dossier is indexable when it cites at least one readable source that
+ * a person wrote, whatever that source's tier (DEC-055, which replaces
+ * DEC-050's threshold by tier; operator decisions of 2026-09-30). The Source
+ * Tier Policy labels and never suppresses, and the sitemap applies the same
+ * predicate. Only a dossier citing nothing readable, or only machine-written
+ * sources, is withheld from the index; it stays published and labelled.
  *
  * `follow` stays `true` on purpose: the fiche's outbound links point at
  * sourced fiches, and `nofollow` would strip the inbound signal those earn
@@ -76,10 +80,11 @@ export async function generateMetadata({
     return canonical;
   }
 
-  // Any readable citation keeps the name indexable, whatever its tier — the
-  // same rule the sitemap applies, so a submitted URL never declares itself
-  // `noindex`. A dossier that cites nothing readable is the only one withheld.
-  if (standing !== null) return canonical;
+  // A readable, human-written citation keeps the name indexable, whatever its
+  // tier — the same predicate the sitemap applies, so a submitted URL never
+  // declares itself `noindex`. A dossier that cites nothing readable, or only
+  // machine-written sources, is withheld.
+  if (isIndexableStanding(standing)) return canonical;
 
   return { ...canonical, robots: { index: false, follow: true } };
 }
