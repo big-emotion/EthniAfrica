@@ -93,7 +93,8 @@ const localized = z.object({
   slug: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/),
   title: z.string().min(1),
   excerpt: z.string().min(1),
-  sections: z.array(section).min(1),
+  // Empty only on an imported draft; publication requires a body (see corpus.ts).
+  sections: z.array(section),
 });
 
 // @req REQ-114

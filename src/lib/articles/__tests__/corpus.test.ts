@@ -64,6 +64,23 @@ describe("article corpus", () => {
   });
 
   // @req REQ-114
+  it("lets an imported draft exist without body text but never publishes one", () => {
+    const draft = videoArticle({
+      id: "d1",
+      status: "draft",
+      publishedAt: undefined,
+    });
+    draft.fr.sections = [];
+    expect(assembleArticleCorpus([record(draft, "d1")]).errors).toEqual([]);
+
+    const live = videoArticle({ id: "d2" });
+    live.fr.sections = [];
+    expect(
+      assembleArticleCorpus([record(live, "d2")]).errors.join("\n")
+    ).toMatch(/d2.*without body/);
+  });
+
+  // @req REQ-114
   it("refuses a published article without media or without sources", () => {
     const noMedia = assembleArticleCorpus([
       record(

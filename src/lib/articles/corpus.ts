@@ -63,6 +63,8 @@ function publicationProblems(article: Article): string[] {
   if (article.media.formats.length === 0)
     problems.push("published without media");
   if (article.sources.length === 0) problems.push("published without sources");
+  if (article.fr.sections.length === 0)
+    problems.push("published without body text");
   for (const format of article.media.formats) {
     if (format.kind === "video" && !format.youtubeId && !format.nativeSrc) {
       // A link out is not a playable reel.
