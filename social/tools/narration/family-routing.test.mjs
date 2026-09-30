@@ -12,6 +12,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 
 import { FAMILIES } from "../contract/contract.mjs";
+import { CLOTURE_UNIQUE } from "./gabarit-reel.mjs";
 import {
   CLAIM_KINDS,
   SCENE_PROFILE_BY_FAMILY,
@@ -179,6 +180,26 @@ test("the name-origin series needs a typologie the gabarit knows", () => {
   const { ok, errors } = validateBrief(brief, { today: TODAY });
   assert.equal(ok, false);
   assert.ok(errors.some((error) => /typologie/.test(error)));
+});
+
+// A `mot` has no fiche to resolve (operator exception, 2026-09-21), so its
+// subject key carries no corpusRef and the series still accepts it.
+// @req REQ-186
+test("the name-origin series accepts the mot exception", () => {
+  const brief = fixture("legacy-name-origin");
+  brief.edition.subject = { key: "mot:FXM", label: "Mot · Example" };
+  assert.equal(validateBrief(brief, { today: TODAY }).ok, true);
+});
+
+// The reel gabarit has a skeleton per typologie but none for a word, so the
+// fixed comparison checks cannot run on a mot; the single closing still binds.
+// @req REQ-186
+test("a mot in the series keeps the closing but no gabarit skeleton", () => {
+  const brief = fixture("legacy-name-origin");
+  brief.edition.subject = { key: "mot:FXM", label: "Mot · Example" };
+  const { narrationGabarit } = planReviews(brief.edition);
+  assert.equal(narrationGabarit.applies, false);
+  assert.equal(narrationGabarit.closing, CLOTURE_UNIQUE);
 });
 
 // @req REQ-186
