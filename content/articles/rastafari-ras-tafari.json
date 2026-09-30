@@ -1,0 +1,111 @@
+{
+  "id": "rastafari-ras-tafari",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Ce que ce nom veut dire",
+  "fr": {
+    "slug": "rastafari-ras-tafari",
+    "title": "D'où vient le mot Rastafari ?",
+    "excerpt": "Rastafari n'est pas un mot jamaïcain.",
+    "sections": []
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Wolf Leslau, Comparative Dictionary of Geʿez, Otto Harrassowitz, 1987",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s2",
+      "title": "Cultural Atlas — Ethiopian Culture: Naming, SBS",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s3",
+      "title": "Harold G. Marcus, A History of Ethiopia, University of California Press, 1994",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s4",
+      "title": "Witakowski & Balicka-Witakowska, « Solomon in Ethiopian Tradition », in The Queen of Sheba and Her Sons, Brill, 2013",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s5",
+      "title": "Nathaniel Samuel Murrell, William D. Spencer, Adrian A. McFarlane (dir.), Chanting Down Babylon: The Rastafari Reader, Temple University Press, 1998",
+      "tier": "needs_review"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "rastafari-ras-tafari"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "rastafari-ras-tafari/rastafari-ras-tafari/slide-01-823248fc6fa7.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un homme en robe de cérémonie ample, posant de face pour un portrait officiel",
+            "text": "Rastafari n'est pas un mot jamaïcain.\n\nNommer un peuple aussi facilement qu'un pays."
+          },
+          {
+            "src": "rastafari-ras-tafari/rastafari-ras-tafari/slide-02-3b38d01871dc.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un jeune enfant portant une lourde croix pectorale sur une tenue de cérémonie, posant pour un portrait de studio",
+            "text": "Il naît Tafari, fils de Makonnen.\n\nDans le système habesha, il n'existe pas de nom de famille hérité : le second élément du nom est le prénom du père, et il change à chaque génération.\n\nWolf Leslau, Comparative Dictionary of Geʿez, Otto Harrassowitz, 1987 · Cultural Atlas — Ethiopian Culture: Naming, SBS"
+          },
+          {
+            "src": "rastafari-ras-tafari/rastafari-ras-tafari/slide-03-6eaaa4a8a8a9.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une cérémonie de couronnement en extérieur : un dignitaire en habits d'apparat entouré d'hommes en tenue traditionnelle et religieuse",
+            "text": "Ras, puis negus : deux titres avant la couronne.\n\nRas (guèze rəʾs, « tête ») est un titre de haute noblesse, souvent rendu par « duc ». Tafari le reçoit en 1917, puis devient negus (« roi ») le 5 novembre 1928.\n\nHarold G. Marcus, A History of Ethiopia, University of California Press, 1994"
+          },
+          {
+            "src": "rastafari-ras-tafari/rastafari-ras-tafari/slide-04-14ec516f4972.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une scène de couronnement en extérieur, imprimée en couverture d'un magazine illustré, avec un dignitaire en habits d'apparat entouré d'une assemblée nombreuse",
+            "text": "1930\n\nTafari est couronné Negusa Nagast — « roi des rois » — sous le nom de Haïlé Sélassié.\n\nHarold G. Marcus, A History of Ethiopia, University of California Press, 1994"
+          },
+          {
+            "src": "rastafari-ras-tafari/rastafari-ras-tafari/slide-05-eebb64c7e278.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une statue d'un lion couronné tenant une hampe surmontée d'une croix, sur un socle portant une inscription",
+            "text": "Son titre le dit aussi « Lion de Juda ».\n\nSelon la Constitution de 1955, sa lignée remontait à Ménélik Ier, fils de la reine de Saba et du roi Salomon — une revendication inscrite dans le droit, pas un fait établi.\n\nWitakowski & Balicka-Witakowska, « Solomon in Ethiopian Tradition », in The Queen of Sheba and Her Sons, Brill, 2013"
+          },
+          {
+            "src": "rastafari-ras-tafari/rastafari-ras-tafari/slide-06-0225bff14416.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un drapeau aux bandes rouge, jaune et verte flottant au-dessus d'un paysage urbain, sous un ciel dégagé",
+            "text": "En Jamaïque, ce nom devient une foi.\n\nDès 1933, des prédicateurs jamaïcains reprennent « Ras Tafari », le nom que portait Haïlé Sélassié avant 1930, pour nommer un mouvement religieux et culturel : le rastafari.\n\nNathaniel Samuel Murrell, William D. Spencer, Adrian A. McFarlane (dir.), Chanting Down Babylon: The Rastafari Reader, Temple University Press, 1998"
+          },
+          {
+            "src": "rastafari-ras-tafari/rastafari-ras-tafari/slide-07-e89c7e613ae2.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un homme en robe de cérémonie ample, posant de face pour un portrait officiel",
+            "text": "Ce mot n'était pas anonyme.\n\nC'est un nom d'homme, titre après titre.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "Portrait de Haïlé Sélassié en robe de cérémonie · collection Matson, 1923 · Bibliothèque du Congrès (Library of Congress), via Wikimedia Commons · domaine public ; Lij Tafari Makonnen à trois ans, portant la croix pectorale du père André Jarosseau, 1895 · Wikimedia Commons, reproduit dans Harold G. Marcus, Haile Sellassie I: The Formative Years, 1892-1936 · domaine public ; Couronnement de Tafari comme negus d'Abyssinie, 5 novembre 1928 · Wikimedia Commons · domaine public ; Le couronnement de Haïlé Sélassié, couverture de L'Illustration, 15 novembre 1930 · Wikimedia Commons · CC BY-SA 4.0 ; Statue du Lion de Juda commémorant le couronnement de l'empereur Tafari Makonnen (Haïlé Sélassié Ier) · A. Davey, 22 octobre 2007 · Wikimedia Commons · CC BY 2.0 ; Drapeau rastafari à Shashamané, Éthiopie · Jahsensie, 18 février 2005 · Wikimedia Commons · CC BY-SA 2.0"
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7685966237544828182",
+        "publishedAt": "2026-09-16"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

@@ -1,0 +1,49 @@
+{
+  "id": "fulbe-sept-noms-un-sens-ouvert",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Ce que ce nom veut dire",
+  "fr": {
+    "slug": "fulbe-sept-noms-un-sens-ouvert",
+    "title": "D'où vient le nom Fulbe ?",
+    "excerpt": "D'où vient le nom « Fulbe » ?",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "fulbe-sept-noms-un-sens-ouvert"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "7nfhkaR1eUw",
+        "poster": {
+          "src": "fulbe-sept-noms-un-sens-ouvert/fulbe-sept-noms-un-sens-ouvert/poster-5ea2e44dc77d.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/reel/Ddi4DCdqKqC/",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7687923098712214807",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/7nfhkaR1eUw",
+        "publishedAt": "2026-09-21"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

@@ -1,0 +1,86 @@
+{
+  "id": "manden-mande-mandingue-trois-mots",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "La carte cachée",
+  "fr": {
+    "slug": "manden-mande-mandingue-trois-mots",
+    "title": "D'où vient le nom Mandé ?",
+    "excerpt": "D'où vient le nom Mandé ?",
+    "sections": []
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Djibril Tamsir Niane, “Le Mali et la deuxième expansion manden”, Histoire générale de l'Afrique IV, UNESCO/NEA, 1985, pp. 141 and 153–154.",
+      "url": "https://bokundoli.org/wp-content/uploads/2021/12/T4-10.pdf",
+      "tier": "official"
+    },
+    {
+      "id": "s2",
+      "title": "S. W. Koelle, Polyglotta Africana, 1854, variety II-1-a, Manden·ga",
+      "url": "https://raw.githubusercontent.com/lexibank/polyglottaafricana/master/raw/koelle_variety_notes.txt",
+      "tier": "referenced"
+    },
+    {
+      "id": "s3",
+      "title": "Valentin Vydrin, “On the Problem of the Proto-Mande Homeland”, Journal of Language Relationship 1, 2009, pp. 107–142, especially p. 107",
+      "url": "https://www.jolr.ru/files/(10)jlr2009-1(107-142).pdf",
+      "tier": "referenced"
+    },
+    {
+      "id": "s4",
+      "title": "Coleman Donaldson, “Linguistic and Civic Refinement in the N’ko Movement of Manding-Speaking West Africa”, Signs and Society 7(2), 2019, pp. 156–185",
+      "url": "https://doi.org/10.1086/702554",
+      "tier": "referenced"
+    },
+    {
+      "id": "s5",
+      "title": "Camara Laye, Le Maître de la parole, Plon, 1978, p. 130 note 1",
+      "tier": "needs_review"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "manden-mande-mandingue-trois-mots",
+      "supersedes": "mande-nest-pas-un-peuple",
+      "correctionNote": "Notre ancienne vidéo réduisait Mandé à une catégorie linguistique. Cette formulation effaçait ses autres usages. Nous la corrigeons."
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "bqpj5UiwGJ8",
+        "poster": {
+          "src": "manden-mande-mandingue-trois-mots/manden-mande-mandingue-trois-mots/poster-b969595743da.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "facebook",
+        "url": "https://www.facebook.com/reel/1380903870695826",
+        "publishedAt": "2026-09-25"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/DdtxN3eKEUR/",
+        "publishedAt": "2026-09-25"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7689493406640377110",
+        "publishedAt": "2026-09-25"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/bqpj5UiwGJ8",
+        "publishedAt": "2026-09-25"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

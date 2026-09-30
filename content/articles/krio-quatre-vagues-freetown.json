@@ -1,0 +1,94 @@
+{
+  "id": "krio-quatre-vagues-freetown",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Ce que ce nom veut dire",
+  "fr": {
+    "slug": "krio-quatre-vagues-freetown",
+    "title": "D'où vient le nom Krio ?",
+    "excerpt": "« Créole » veut dire né dans la colonie. En Afrique, c'est devenu un nom de peuples.",
+    "sections": []
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "TLFi / CNRTL, entrée « créole »",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s2",
+      "title": "UNESCO — Patrimoine mondial, Cidade Velha (2009)",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s3",
+      "title": "vagues fondatrices, 1787–1860 ; diaspora saro au Nigeria, XIXe siècle",
+      "tier": "needs_review"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "creole-ne-dans-la-colonie"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "krio-quatre-vagues-freetown/creole-ne-dans-la-colonie/slide-01-e64c7b520c4e.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une colonne de pierre sculptée (le pilori) au centre d'une place pavée, entourée de palmiers et de maisons colorées, une colline volcanique aride en arrière-plan sous un ciel bleu",
+            "text": "« Créole » veut dire né dans la colonie. En Afrique, c'est devenu un nom de peuples."
+          },
+          {
+            "src": "krio-quatre-vagues-freetown/creole-ne-dans-la-colonie/slide-02-7e80680c31d4.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une rue animée de Freetown, une berline et une moto au premier plan, des passants de dos ou de profil sur les trottoirs, le Cotton Tree visible au loin entre les immeubles",
+            "text": "Ce mot ne disait qu'une chose : né dans la colonie.\n\ncriollo — né dans la colonie, en espagnol\nKrio — le nom qu'ils se donnent aujourd'hui\n\nEn espagnol et en portugais, ce mot désignait celui qui était né dans la colonie, pas arrivé d'Europe. Il vient du latin creare, « élever ».\n\nTLFi / CNRTL, entrée « créole »"
+          },
+          {
+            "src": "krio-quatre-vagues-freetown/creole-ne-dans-la-colonie/slide-03-f33e28c4bce8.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un mur de fortification en pierre couronnant une crête volcanique verte, vu depuis un village aux toits de tôle et de tuile en contrebas, sous un ciel bleu partiellement nuageux",
+            "text": "En 2009, l'UNESCO inscrit Cidade Velha, au Cap-Vert, à son patrimoine mondial.\n\nCet ancien comptoir portugais est présenté par l'UNESCO comme le berceau de la première société créole d'Afrique.\n\nUNESCO — Patrimoine mondial, Cidade Velha (2009)"
+          },
+          {
+            "src": "krio-quatre-vagues-freetown/creole-ne-dans-la-colonie/slide-04-338758e848b3.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un fromager géant au feuillage large dominant un carrefour du centre de Freetown, entre un immeuble moderne et un bâtiment colonial à toit rouge, des passants et des véhicules en contrebas",
+            "text": "Freetown réunit quatre vagues de déportés. Ensemble, ils se nomment Krio.\n\n1787, Londres. 1792, la Nouvelle-Écosse. 1800, la Jamaïque. Jusqu'en 1860, les navires négriers. Ces quatre vagues se donnent un seul nom à Freetown : Krio pipul. Dès le XIXe siècle, il voyage jusqu'à Lagos, au Nigeria — avant les indépendances de 1960.\n\nFiche Krio · vagues fondatrices, 1787–1860 ; diaspora saro au Nigeria, XIXe siècle"
+          },
+          {
+            "src": "krio-quatre-vagues-freetown/creole-ne-dans-la-colonie/slide-05-c5a0ffd8c6b8.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un grand bâtiment victorien en brique rouge à véranda et lucarnes, photographié au crépuscule sous un ciel orageux, un palmier isolé à droite et une silhouette lointaine sur le chemin",
+            "text": "Du Cap-Vert à La Réunion, d'autres peuples se disent créoles.\n\nDes peuples créoles d'ascendance africaine vivent aussi aux Antilles et en Amérique : l'atlas y viendra. En Afrique et dans l'océan Indien, on les retrouve aussi en Guinée-Bissau, à São Tomé, en Guinée équatoriale, au Liberia et aux Seychelles.\n\nAtlas EthniAfrica — carte des peuples créoles"
+          },
+          {
+            "src": "krio-quatre-vagues-freetown/creole-ne-dans-la-colonie/slide-06-b61e8ed6f7ec.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une maison coloniale restaurée, façade bleue à volets bordeaux et toit de tuiles, sur une rue pavée de Cidade Velha, un palmier et une église blanche en arrière-plan, un chien au loin",
+            "text": "Ce nom n'a pas été subi.\n\nOn se l'est approprié.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "Cidade Velha, la place du pilori · Cayambe · 2011 · Wikimedia Commons · CC BY-SA 3.0 ; Une rue de Freetown, le Cotton Tree au loin · Aranae · 2005 · Wikimedia Commons · domaine public ; Fort Real de São Filipe, Cidade Velha · Xandu · 2008 · Wikimedia Commons · domaine public ; Le Cotton Tree, Freetown · Christian Trede · avril 2007 · Wikimedia Commons · CC BY-SA 2.0 DE ; L'ancien bâtiment du Fourah Bay College, Freetown · Jared, Melanie & Huxley Ponchot · 2007 · Flickr, via Wikimedia Commons · CC BY 2.0 ; Maison de la rua Banana, Cidade Velha · Cayambe · 2011 · Wikimedia Commons · CC BY-SA 3.0"
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7685354452248890626",
+        "publishedAt": "2026-09-14"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

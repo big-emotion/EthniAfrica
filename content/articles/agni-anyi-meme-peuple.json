@@ -1,0 +1,104 @@
+{
+  "id": "agni-anyi-meme-peuple",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "La carte cachée",
+  "fr": {
+    "slug": "agni-anyi-meme-peuple",
+    "title": "D'où viennent les noms Agni et Anyi ?",
+    "excerpt": "En Côte d'Ivoire on écrit Agni. Au Ghana, Anyi. C'est le même peuple.",
+    "sections": []
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "SIL Ethnologue, entrée anyin",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s2",
+      "title": "base Agni de DICE, Université du Missouri",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s3",
+      "title": "SIL Ethnologue, entrées anyin et baoulé",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s4",
+      "title": "Rattray, Ashanti, Oxford University Press, 1923",
+      "tier": "needs_review"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "akan-quatre-noms"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "agni-anyi-meme-peuple/akan-quatre-noms/slide-01-d8396a63a719.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un poste frontière routier entre la Côte d'Ivoire et le Ghana : un portique métallique porte « A bientôt au revoir », un car et des voitures attendent sur la chaussée, une clôture surmontée de barbelé longe la forêt",
+            "text": "En Côte d'Ivoire, Agni. Au Ghana, Anyi.\n\nNommer un peuple aussi facilement qu'un pays."
+          },
+          {
+            "src": "agni-anyi-meme-peuple/akan-quatre-noms/slide-02-c74aca4b3188.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la cour royale de l'Indénié à Abengourou : un bâtiment crème à deux niveaux derrière une grille noire à médaillons, un portail gardé par deux lions peints, un homme pousse un chariot de boissons dans la rue",
+            "text": "Les Agni vivent dans deux pays à la fois.\n\nEn Côte d'Ivoire, ils tiennent la cour royale de l'Indénié, à Abengourou. Au Ghana, ils habitent le district d'Aowin.\n\nSIL Ethnologue, entrée anyin · base Agni de DICE, Université du Missouri"
+          },
+          {
+            "src": "agni-anyi-meme-peuple/akan-quatre-noms/slide-03-cc09e870ddbe.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une étoffe adinkra de 1825 : une grille de panneaux séparés par des traits peignés, chacun estampé d'un motif répété, spirales, croix, triangles et entrelacs en noir sur un fond rose pâle, et au centre un petit écu à deux figures animales dressées",
+            "text": "L'anyi et le baoulé sont deux maillons d'une même chaîne.\n\nLes linguistes les rangent dans le même petit groupe de langues, le bia. D'un village au suivant, on passe de l'une à l'autre sans rupture.\n\nSIL Ethnologue, entrées anyin et baoulé"
+          },
+          {
+            "src": "agni-anyi-meme-peuple/akan-quatre-noms/slide-04-43b9b3adc68e.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une carte imprimée de 1896 intitulée « Map of the Gold Coast Colony and adjacent territories » : Ashanti et Kumasi au centre, Fanti vers la côte, et le long du bord ouest la mention verticale « French Protectorate »",
+            "text": "Anyi devient Agni en passant la frontière.\n\nAnyi — le nom qu'ils se donnent\nAgni — la façon dont le français l'a écrit\n\nLe peuple n'a pas changé de nom. Ce sont deux administrations qui l'ont écrit chacune à sa façon.\n\nSIL Ethnologue, entrée anyin · base Agni de DICE, Université du Missouri"
+          },
+          {
+            "src": "agni-anyi-meme-peuple/akan-quatre-noms/slide-05-14f3346f744d.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une gravure coloriée en deux panneaux montrant une rue de Kumasi : des maisons à toit de chaume et à murs blancs couverts de reliefs géométriques rouges et bleus, un marchand assis devant de petites balances, et à droite un tisserand à son métier",
+            "text": "Ils se disent Asante. Le monde écrit Ashanti.\n\nAsante — « peuple de la guerre », dans leur langue\nAshanti — la forme écrite par les Britanniques\n\nIls prennent ce nom vers 1670, en devenant un royaume centralisé. La forme anglaise, elle, est restée dans les livres.\n\nRattray, Ashanti, Oxford University Press, 1923"
+          },
+          {
+            "src": "agni-anyi-meme-peuple/akan-quatre-noms/slide-06-99d806a5e01e.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une carte gravée de 1819 de l'Afrique occidentale : dans l'angle inférieur gauche se lisent Ashantee, Fantee et Aowin, aucune ligne d'État ne les sépare, et la seule limite tracée porte en légende « Boundary of Ashantee authority »",
+            "text": "Ce n'est pas ce peuple qui s'est divisé, c'est son orthographe.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "Enock4seth, poste frontière Côte d'Ivoire - Ghana, 2019 · Wikimedia Commons · CC BY-SA 4.0 ; WILLAV-FR, cour royale de l'Indénié à Abengourou, 2010 · Wikimedia Commons · CC BY-SA 4.0 ; Étoffe adinkra, 1825, auteur inconnu · Wikimedia Commons · domaine public ; J. G. Bartholomew, carte de la colonie de la Gold Coast, 1896 · Wikimedia Commons · domaine public ; T. E. Bowdich, une rue de Kumasi, planche de 1819 · Wikimedia Commons · domaine public ; T. E. Bowdich, carte de l'Afrique occidentale, 1819 · Wikimedia Commons · domaine public"
+      }
+    ],
+    "originals": [
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/DdMaTlIiAUR/",
+        "publishedAt": "2026-09-12"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7684685493895793942",
+        "publishedAt": "2026-09-12"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

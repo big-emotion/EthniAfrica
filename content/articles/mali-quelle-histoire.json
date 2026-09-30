@@ -1,0 +1,134 @@
+{
+  "id": "mali-quelle-histoire",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Ce que ce nom veut dire",
+  "fr": {
+    "slug": "mali-quelle-histoire",
+    "title": "D'où vient le nom Mali ?",
+    "excerpt": "D'où vient le nom Mali ? Un empire, une ville, une fédération, une république : le même mot, plusieurs histoires. Nous suivons ce que les sources attestent, et nous disons ce qu'elles ne disent pas : aucune source que nous avons trouvée ne dit pourquoi le nom a été choisi. Vous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica.",
+    "sections": []
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Office of the Historian, U.S. Department of State, A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations: Mali. Federation independence 20 June 1960, Senegal withdrawal 20 August, Republic of Mali 22 September 1960. Embassy status for the Consulate General at Dakar on 20 June 1960 and at Bamako on 24 September 1960.",
+      "url": "https://history.state.gov/countries/mali",
+      "tier": "official"
+    },
+    {
+      "id": "s2",
+      "title": "Memorandum from Acting Secretary of State Dillon to President Eisenhower, 23 September 1960, FRUS 1958–1960, vol. XIV, document 75: the Sudanese Republic's Assembly decision of 22 September 1960.",
+      "url": "https://history.state.gov/historicaldocuments/frus1958-60v14/d75",
+      "tier": "official"
+    },
+    {
+      "id": "s3",
+      "title": "William J. Foltz, From French West Africa to the Mali Federation, Yale University Press, 1965, p. 100 (Bamako meeting, 28–30 December 1958) and p. 104 (Senghor's role in the name), as cited by the English Wikipedia article 'Mali Federation', read 2026-09-25. Pages not yet checked in the book.",
+      "url": "https://en.wikipedia.org/wiki/Mali_Federation",
+      "tier": "unverified"
+    },
+    {
+      "id": "s4",
+      "title": "Djibril Tamsir Niane, Le Mali et la deuxième expansion manden, Histoire générale de l'Afrique IV, UNESCO/NEA, 1985, pp. 141–196: p. 141 places Manden between Kangaba and Siguiri; p. 143 'empire manden'; p. 153 note 28, Manden to Mali through the Fulɓe. Map « L'empire du Mali 1325 », p. 177; p. 150: al-Bakri « a été le premier à faire mention du Mali, qu'il appelle Malel ».",
+      "url": "https://bokundoli.org/wp-content/uploads/2021/12/T4-10.pdf",
+      "tier": "official"
+    },
+    {
+      "id": "s5",
+      "title": "François-Xavier Fauvelle, The imperial capital of Mâli (14th century): A new hypothesis, Medievalista 35 (2024), doi:10.4000/medievalista.7706. Arabic accounts including Ibn Battuta's 1352 visit, and the Catalan Atlas of 1375.",
+      "url": "https://scielo.pt/scielo.php?pid=S1646-740X2024000100055&script=sci_arttext",
+      "tier": "referenced"
+    },
+    {
+      "id": "s6",
+      "title": "Berkeley ORIAS, The Travels of Ibn Battuta: Journey to Mali. Sijilmasa, Taghaza (February–March 1352), Walata (end of April 1352), then the seat of government, not located by the page.",
+      "url": "https://orias.berkeley.edu/node/176",
+      "tier": "referenced"
+    },
+    {
+      "id": "s7",
+      "title": "François-Xavier Fauvelle-Aymar, Niani redux : mise au point sur la ville éponyme de l'empire du Mali, P@lethnology 4, 2012. Archaeological objection to Niani as the fourteenth-century capital.",
+      "url": "https://blogs.univ-tlse2.fr/palethnologie/en/2012-10-fauvelle-aymar/",
+      "tier": "referenced"
+    },
+    {
+      "id": "s8",
+      "title": "Hadrien Collet, L'introuvable capitale du Mali, Afriques 4, 2013.",
+      "url": "https://journals.openedition.org/afriques/1098",
+      "tier": "referenced"
+    },
+    {
+      "id": "s9",
+      "title": "Bamadaba, dictionnaire bambara, entries Màli (country) and màli (hippopotamus), consulted 2026-09-23. No historical derivation established.",
+      "url": "https://bamadaba.coastsystems.net/lexicon/m/",
+      "tier": "referenced"
+    },
+    {
+      "id": "s10",
+      "title": "Core Knowledge, Mali, teaching background PDF, first page: 'place where the king lives' explanation, without linguistic demonstration.",
+      "url": "https://www.coreknowledge.org/wp-content/uploads/2017/03/CKHG-G4-U5-about-Mali.pdf",
+      "tier": "referenced"
+    },
+    {
+      "id": "s11",
+      "title": "Present-day locator coordinates read on 2026-09-25 from the coordinate records of the English Wikipedia articles: Dakar [-17.44667, 14.69278], Bamako [-8.00278, 12.63917], Sijilmasa [-4.28, 31.28], Taghaza [-5.0, 23.6], Oualata [-7.025, 17.3], Niani [-8.38417, 11.37972], Kangaba [-8.417, 11.933], Siguiri [-9.167, 11.417], Ségou [-6.267, 13.45], Sansanding [-6.00583, 13.72667]. Locators only, not surveyed historical sites.",
+      "url": "https://en.wikipedia.org/wiki/Oualata",
+      "tier": "unverified"
+    },
+    {
+      "id": "s12",
+      "title": "U.S. Department of State, Office of the Geographer, International Boundary Study No. 23, Mali – Mauritania Boundary (16 December 1963): 1913 decree, 1944 transfers of the Hodh from French Soudan to Mauritania, Treaty of Kayes of 16 February 1963 settling the boundary (Mauritania keeps the western Hodh; Mali keeps Diandioume, Gourdian, Gouguel, Boulouli and obtains wells in the south-east).",
+      "url": "https://library.law.fsu.edu/Digital-Collections/LimitsinSeas/pdf/ibs023.pdf",
+      "tier": "official"
+    },
+    {
+      "id": "s13",
+      "title": "International Court of Justice, Frontier Dispute (Burkina Faso/Republic of Mali), judgment of 22 December 1986: the frontier fixed by uti possidetis juris on the French colonial administrative limits as they stood at independence in 1960.",
+      "url": "https://www.icj-cij.org/case/69",
+      "tier": "official"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "mali-quelle-histoire"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "A99ETtxdxiU",
+        "poster": {
+          "src": "mali-quelle-histoire/mali-quelle-histoire/poster-47cf59469f83.webp",
+          "width": 1080,
+          "height": 1920
+        },
+        "credits": "Natural Earth — Domaine public ; Guaka / Wikimedia Commons — CC BY-SA 3.0 ; Jansen.2 / Wikimedia Commons — CC BY-SA 4.0 ; BnF / Wikimedia Commons — CC BY-SA 4.0 ; Bernard DUPONT / Wikimedia Commons — CC BY-SA 2.0 ; SKopp / Wikimedia Commons — Domaine public"
+      }
+    ],
+    "originals": [
+      {
+        "network": "facebook",
+        "url": "https://www.facebook.com/reel/4460192550908000",
+        "publishedAt": "2026-09-25"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/Ddtpv6yKDaf/",
+        "publishedAt": "2026-09-25"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7689476088501767446",
+        "publishedAt": "2026-09-25"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/watch?v=A99ETtxdxiU&feature=youtu.be",
+        "publishedAt": "2026-09-25"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

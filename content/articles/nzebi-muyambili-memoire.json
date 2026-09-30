@@ -1,0 +1,44 @@
+{
+  "id": "nzebi-muyambili-memoire",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "La carte cachée",
+  "fr": {
+    "slug": "nzebi-muyambili-memoire",
+    "title": "Qui gardait la mémoire des clans nzebi ?",
+    "excerpt": "Au Gabon, un homme retenait par cœur l'histoire de tous les clans nzebi.",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "nzebi-clans"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "1NUTL_-6t2w",
+        "poster": {
+          "src": "nzebi-muyambili-memoire/nzebi-clans/poster-fd08b884b0c8.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7684702208629198083",
+        "publishedAt": "2026-09-12"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/1NUTL_-6t2w",
+        "publishedAt": "2026-09-12"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

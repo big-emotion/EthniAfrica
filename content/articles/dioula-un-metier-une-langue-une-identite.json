@@ -1,0 +1,89 @@
+{
+  "id": "dioula-un-metier-une-langue-une-identite",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "La carte cachée",
+  "fr": {
+    "slug": "dioula-un-metier-une-langue-une-identite",
+    "title": "D'où vient le nom Dioula ?",
+    "excerpt": "Dioula n'est pas un nom de peuple. C'est le mot mandingue pour marchand.",
+    "sections": []
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Carte de L.-G. Binger, Société de géographie, 1889",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s2",
+      "title": "Georges Niamkey Kodjo, Le Royaume de Kong, 2006",
+      "tier": "needs_review"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "dioula-cinq-pays"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "dioula-un-metier-une-langue-une-identite/dioula-cinq-pays/slide-01-1e7bf4ede717.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un marché de plein air adossé à un mur de terre, des denrées posées à même le sol dans des plateaux de vannerie, plusieurs adultes debout et assis, un homme drapé marchant au premier plan",
+            "text": "Les Dioula n'ont jamais eu de territoire\n\ncinq pays, et aucun ne porte leur nom\n\nLa raison est dans leur nom."
+          },
+          {
+            "src": "dioula-un-metier-une-langue-une-identite/dioula-cinq-pays/slide-02-899a4a6ceee7.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un passage étroit entre deux murs de terre, une femme s'éloigne un plateau chargé sur la tête, un homme en boubou blanc et turban se tient à droite, des vanneries et des denrées posées au sol",
+            "text": "Un nom de métier devenu un nom de peuple\n\njula — marchand, en mandingue\nDioula — le nom d'un peuple\n\nJula veut dire marchand ambulant, en mandingue. Le mot disait un métier, pas une origine. Eux se nomment Julakan : les gens du commerce.\n\nFiche Dioula · Ethnologue"
+          },
+          {
+            "src": "dioula-un-metier-une-langue-une-identite/dioula-cinq-pays/slide-03-586431194ee5.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une carte gravée de l'Afrique de l'Ouest, un itinéraire tracé en rouge du Niger au golfe de Guinée, les mentions Pays de Kong, États de Samori, Mossi et Gondja en capitales, un carton orographique en bas à gauche",
+            "text": "En 1889, la carte ne montrait que des routes\n\nElle nomme le Pays de Kong, les États de Samori, le Mossi, le Gondja. À l'intérieur des terres, elle ne trace aucune frontière.\n\nCarte de L.-G. Binger, Société de géographie, 1889"
+          },
+          {
+            "src": "dioula-un-metier-une-langue-une-identite/dioula-cinq-pays/slide-04-2ac8910e5201.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une mosquée de terre aux pinacles coniques hérissés de pieux de bois, un mur d'enceinte bas et une tour à contrefort au premier plan, aucune personne dans le cadre",
+            "text": "Une fois, ils ont bâti un royaume\n\nSékou Ouattara fonde Kong en 1710. Jamais les Dioula ne sont allés plus loin vers un État. Samory Touré détruit la ville en 1897.\n\nGeorges Niamkey Kodjo, Le Royaume de Kong, 2006"
+          },
+          {
+            "src": "dioula-un-metier-une-langue-une-identite/dioula-cinq-pays/slide-05-227c27a6091b.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une mosquée de terre aux contreforts coniques hérissés de pieux de bois, un minaret blanchi à la chaux derrière, une cour de terre balayée, aucune personne dans le cadre",
+            "text": "Le mot dioula est sur la carte, deux fois\n\nBobo-Dioulasso porte le nom du peuple bobo et le mot dioula, marchand. Et dans Burkina Faso, faso est le mot dioula pour le pays.\n\nFiches Bobo et Burkina Faso"
+          },
+          {
+            "src": "dioula-un-metier-une-langue-une-identite/dioula-cinq-pays/slide-06-bec3c93c5a60.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un grand arbre fourchu barrant une forêt dense, une silhouette lointaine et minuscule au pied du tronc donne l'échelle du sous-bois",
+            "text": "Une frontière ne contient pas un peuple. Elle le traverse.\n\nTracées à la conférence de Berlin, en 1884. Les noms sont mille ans plus vieux.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "Marché (Kong), mission Binger · Marcel Monnier · 1892 · Bibliothèque nationale de France, via Wikimedia Commons · domaine public ; Marché dans un carrefour, Bondoukou, mission Binger · Marcel Monnier · 1892 · Bibliothèque nationale de France, via Wikimedia Commons · domaine public ; Itinéraire de Bammako au golfe de Guinée · L.-G. Binger · 1889 · Bibliothèque nationale de France, via Wikimedia Commons · domaine public ; Une mosquée (Kong), mission Binger · Marcel Monnier · 1892 · Bibliothèque nationale de France, via Wikimedia Commons · domaine public ; La Grande Mosquée de Dioulasso-Bâ, Bobo-Dioulasso · KONATEYaya226 · 2023 · Wikimedia Commons · CC BY-SA 4.0 ; Sentier de forêt, mission Binger · Marcel Monnier · 1892 · Bibliothèque nationale de France, via Wikimedia Commons · domaine public"
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7684693876015418627",
+        "publishedAt": "2026-09-12"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

@@ -1,0 +1,111 @@
+{
+  "id": "cameroun-le-continent",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Mythe déconstruit",
+  "fr": {
+    "slug": "cameroun-le-continent",
+    "title": "Pourquoi appelle-t-on le Cameroun « le Continent » ?",
+    "excerpt": "On appelle le Cameroun « le Continent ».",
+    "sections": []
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Wikipédia EN, Cameroon (étymologie) et Lepidophthalmus turneranus ; C. Roche, Afrique noire et la France au XIXe siècle, Karthala, 2011, p. 105",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s2",
+      "title": "J. Imbert, Le Cameroun, PUF, « Que sais-je ? », 1979, cité par un document de l'IRD (Horizon 02981, p. 239)",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s3",
+      "title": "M. Z. Yakan, Almanac of African Peoples & Nations, Transaction, 1999, p. 37-39",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s4",
+      "title": "Carte : Langues et ethnies du Cameroun, d'après A. Le Fur ; A. Neba, Modern Geography of the Republic of Cameroon, 3e éd., 1999, p. 65 ; T. Rosendal, Multilingual Cameroon, Göteborg, 2008, p. 16",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s5",
+      "title": "P. Tchawa, « Le Cameroun : une « Afrique en miniature » ? », Les Cahiers d'Outre-Mer, n° 259, 2012, p. 319-338",
+      "tier": "needs_review"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "cameroun-le-continent"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "cameroun-le-continent/cameroun-le-continent/slide-01-5f2da731de36.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une rue de marché non pavée bondée en plein jour, des dizaines de personnes qui marchent et commercent parmi des étals d'œufs, de plantains, de piments et de pain, un 4x4 se frayant un chemin dans la foule, des bâtiments bas et des lignes électriques en arrière-plan",
+            "text": "On appelle le Cameroun « le Continent »."
+          },
+          {
+            "src": "cameroun-le-continent/cameroun-le-continent/slide-02-f7310293fdce.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une mappemonde manuscrite ancienne et enluminée sur vélin, peinte à la main en vert, bleu, rouge et or, montrant les côtes d'Europe, d'Afrique et des Amériques avec des roses des vents, des drapeaux, des noms de lieux en écriture d'époque et des lignes de loxodromie qui traversent l'océan",
+            "text": "Le nom du pays vient d'un fleuve, et d'un crustacé.\n\nEn 1472, les marins du navigateur portugais Fernão do Pó entrent dans l'estuaire du Wouri et le nomment Rio dos Camarões — « la rivière des crevettes », à cause d'une crevette fantôme qui y essaime tous les trois à cinq ans, pas de la crevette qu'on mange. Les Allemands en font Kamerun le 5 juillet 1884. Un fleuve, puis un pays — comme raconté dans « Cameroun — la rivière des crevettes ».\n\nWikipédia EN, Cameroon (étymologie) et Lepidophthalmus turneranus ; C. Roche, Afrique noire et la France au XIXe siècle, Karthala, 2011, p. 105"
+          },
+          {
+            "src": "cameroun-le-continent/cameroun-le-continent/slide-03-1e7a0fcf90cc.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une vallée montagneuse en saison sèche dans le nord du Cameroun, avec des collines et des blocs de roche volcanique arrondis au premier plan, une végétation clairsemée et de petites cases rondes à toit de chaume regroupées parmi les arbustes, sous un ciel pâle et brumeux",
+            "text": "En 1979, un géographe le comparait déjà à l'Afrique entière.\n\nIl décrivait la configuration ethnique du Cameroun comme « à l'image de celle de l'Afrique » — une comparaison, pas un inventaire. La question reste : à l'image, jusqu'où ?\n\nJ. Imbert, Le Cameroun, PUF, « Que sais-je ? », 1979, cité par un document de l'IRD (Horizon 02981, p. 239)"
+          },
+          {
+            "src": "cameroun-le-continent/cameroun-le-continent/slide-04-22d6d2138141.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une scène de marché en plein air dense, un grand parasol rayé au premier plan, une femme en robe jaune et bleu à motifs et foulard perlé au premier plan, et derrière elle des rangées de vendeurs et d'acheteurs autour de tas d'avocats, de piments, de légumes verts et de manioc",
+            "text": "278\n\ngroupes recensés par un auteur, en 1999\n\nL'atlas documente aujourd'hui 49 fiches liées au Cameroun : ce que le corpus couvre, pas ce que le pays compte — le dernier recensement général remonte à 2005, un nouveau est attendu en 2026.\n\nM. Z. Yakan, Almanac of African Peoples & Nations, Transaction, 1999, p. 37-39"
+          },
+          {
+            "src": "cameroun-le-continent/cameroun-le-continent/slide-05-2f9d42a0926c.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une carte du Cameroun découpée en zones de couleur par langue et ethnie — nigéro-congolaises du centre-sud dont bantoues au sud, tchadiennes et adamaoua-oubanguiennes au nord, poches peul, soudanaises centrales, et cercles marquant des populations pygmées — avec les grandes villes et les pays voisins nommés",
+            "text": "On y parle peul, tchadien, adamaoua-oubanguien, bantou — et bien d'autres.\n\nCes langues viennent de régions très différentes du continent, et se côtoient au Cameroun sans qu'aucune n'y soit reine.\n\nCarte : Langues et ethnies du Cameroun, d'après A. Le Fur ; A. Neba, Modern Geography of the Republic of Cameroon, 3e éd., 1999, p. 65 ; T. Rosendal, Multilingual Cameroon, Göteborg, 2008, p. 16"
+          },
+          {
+            "src": "cameroun-le-continent/cameroun-le-continent/slide-06-5696baef36c9.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une carte politique nette et codée par couleur de l'Afrique et de ses abords, chaque pays dans une teinte pastel distincte, les capitales marquées d'une étoile, une grille de projection et une échelle en coin",
+            "text": "Mais on n'y parle ni les langues à clics d'Afrique australe et orientale, ni le malgache.\n\nLe Cameroun est un carrefour de langues, pas un résumé du continent.\n\nP. Tchawa, « Le Cameroun : une « Afrique en miniature » ? », Les Cahiers d'Outre-Mer, n° 259, 2012, p. 319-338"
+          },
+          {
+            "src": "cameroun-le-continent/cameroun-le-continent/slide-07-8bc6a84d8db2.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une carte côtière gravée en noir et blanc du XIXe siècle intitulée « Sketch of the Mouths of the Jamoor River », montrant Fernando Po, la baie d'Ambas, le mont Cameroun, King Bell's Town et un système fluvial nommé « R. Cameroons », avec une légende numérotée et une échelle de milles",
+            "text": "Ces peuples n'ont pas été rassemblés.\n\nC'est la carte qui a été dessinée autour d'eux.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "Ambiance du marché du Mfoundi, Yaoundé · MBATAKA Jean-Louis Aimé · 26 janvier 2017 · Wikimedia Commons · CC BY-SA 4.0 ; Planisphère de Cantino, 1502, cartographe portugais anonyme · Biblioteca Estense Universitaria, Modène · Wikimedia Commons · domaine public ; Massif de Mora, monts Mandara, région de l'Extrême-Nord · Serieminou · 26 avril 2018 · Wikimedia Commons · CC BY-SA 4.0 ; Marché Mokolo, Yaoundé · Fabrice Beloko · 1er avril 2021 · Wikimedia Commons · CC BY-SA 4.0 ; Langues et ethnies du Cameroun, d'après Anne Le Fur · carte de Spiridon Ion Cepleanu · Wikimedia Commons · CC BY-SA 3.0 ; Carte politique de l'Afrique · Central Intelligence Agency (États-Unis) · Wikimedia Commons · domaine public ; Sketch of the Mouths of the Jamoor River (côte du Cameroun) · W. Hughes, pour la Royal Geographical Society · 1846 · Wikimedia Commons · domaine public"
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7685967454413098262",
+        "publishedAt": "2026-09-16"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

@@ -1,0 +1,171 @@
+{
+  "id": "ethnie-d-ou-vient-le-mot",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "ethnie-d-ou-vient-le-mot",
+    "title": "D'où vient le mot « ethnie » ?",
+    "excerpt": "D'où vient le mot « ethnie » ?",
+    "sections": []
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Trésor de la langue française (CNRTL), article « ethnie »",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s2",
+      "title": "G. Vacher de Lapouge, Les Sélections sociales, Paris, Fontemoing, 1896",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s3",
+      "title": "G. Vacher de Lapouge, Les Sélections sociales, Paris, Fontemoing, 1896, p. 10",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s4",
+      "title": "Catherine Coquery-Vidrovitch, Le Monde diplomatique, juillet 1994",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s5",
+      "title": "Jean-Loup Amselle, Annales ESC, 1987, p. 465",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s6",
+      "title": "Mahmood Mamdani, « What is a tribe? », London Review of Books, 13 septembre 2012",
+      "tier": "needs_review"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "ethnie-d-ou-vient-le-mot"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "-6qrkZ2jMQU",
+        "poster": {
+          "src": "ethnie-d-ou-vient-le-mot/ethnie-d-ou-vient-le-mot/poster-54e5326a8c25.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      },
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "ethnie-d-ou-vient-le-mot/ethnie-d-ou-vient-le-mot-carrousel/slide-01-b128c4587cfd.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "photographie en noir et blanc d'un papyrus déchiré en haut, portant une vingtaine de lignes de texte grec en grandes capitales",
+            "text": "« Ethnie » est-il un mot inventé par la colonisation ?"
+          },
+          {
+            "src": "ethnie-d-ou-vient-le-mot/ethnie-d-ou-vient-le-mot-carrousel/slide-02-419d4368a38b.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "page de titre d'un livre ancien : « LES SÉLECTIONS SOCIALES, cours libre de science politique professé à l'Université de Montpellier (1888-1889), par G. Vacher de Lapouge », Paris, 1896",
+            "text": "Pas directement.\n\nLe Trésor de la langue française date « ethnie » de 1896, dans un livre de Georges Vacher de Lapouge. Ce livre parle de races et d'eugénisme. Nous n'avons pas trouvé d'emploi plus ancien. Cela ne permet pas d'affirmer qu'il n'en existe aucun.\n\nTrésor de la langue française (CNRTL), article « ethnie » · G. Vacher de Lapouge, Les Sélections sociales, Paris, Fontemoing, 1896"
+          },
+          {
+            "src": "ethnie-d-ou-vient-le-mot/ethnie-d-ou-vient-le-mot-carrousel/slide-03-35b8868f8e27.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte gravée en couleurs, « CARTE ETHNOGRAPHIQUE de la Région N. E. DE L'AFRIQUE (Nilland) », des surfaces colorées portant des noms de peuples, une légende en bas à gauche",
+            "text": "Un groupe, plusieurs mots\n\nPlusieurs mots désignent un groupe de personnes. Chacun a une histoire. Nous regardons deux mots : « ethnie » et « tribu »."
+          },
+          {
+            "src": "ethnie-d-ou-vient-le-mot/ethnie-d-ou-vient-le-mot-carrousel/slide-04-a87c6aad1f2d.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte gravée en couleurs, « CARTE ETHNOGRAPHIQUE de la Région N. E. DE L'AFRIQUE (Nilland) », des surfaces colorées portant des noms de peuples, une légende en bas à gauche",
+            "text": "Ethnie · Tribu\n\nLapouge écarte « peuple », « nation » et « nationalité ».\n\nG. Vacher de Lapouge, Les Sélections sociales, Paris, Fontemoing, 1896, p. 10"
+          },
+          {
+            "src": "ethnie-d-ou-vient-le-mot/ethnie-d-ou-vient-le-mot-carrousel/slide-05-a15ec2432875.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "page imprimée d'un livre ancien, en-tête « 10 — LES SÉLECTIONS SOCIALES », un long paragraphe de texte noir sur fond blanc, filigrane « Digitized by Google » en bas à droite",
+            "text": "« Ethnie »\n\nFormes : « ethne » ou « ethnie ». Lapouge le propose dans Les Sélections sociales, page 10. Le mot vient du grec ethnos.\n\nG. Vacher de Lapouge, Les Sélections sociales, Paris, Fontemoing, 1896, p. 10 · Trésor de la langue française (CNRTL)"
+          },
+          {
+            "src": "ethnie-d-ou-vient-le-mot/ethnie-d-ou-vient-le-mot-carrousel/slide-06-6bccbc0bf6d5.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "page d'index alphabétique imprimée, en-tête « 496 — INDEX ALPHABÉTIQUE », deux colonnes d'entrées en gras suivies de numéros de pages",
+            "text": "Réemployé vers 1950\n\nDes anthropologues réemploient « ethnie » vers 1950. Jean-Loup Amselle relève qu'il a longtemps été lié aux théories raciales. Statut : mot donné par un observateur extérieur.\n\nCatherine Coquery-Vidrovitch, Le Monde diplomatique, juillet 1994 · Jean-Loup Amselle, Annales ESC, 1987, p. 465"
+          },
+          {
+            "src": "ethnie-d-ou-vient-le-mot/ethnie-d-ou-vient-le-mot-carrousel/slide-07-27ab1037b20e.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte gravée en couleurs, « CARTE ETHNOGRAPHIQUE de la Région N. E. DE L'AFRIQUE (Nilland) », des surfaces colorées portant des noms de peuples, une légende en bas à gauche",
+            "text": "« Tribu »\n\nLe mot devient de plus en plus péjoratif pour parler de l'Afrique vers 1950. Mahmood Mamdani écrit que la « tribu », catégorie administrative, n'existait pas avant la colonisation. Statut : mot évité.\n\nCatherine Coquery-Vidrovitch, Le Monde diplomatique, juillet 1994 · Mahmood Mamdani, « What is a tribe? », London Review of Books, 13 septembre 2012"
+          },
+          {
+            "src": "ethnie-d-ou-vient-le-mot/ethnie-d-ou-vient-le-mot-carrousel/slide-08-dce0dc45f870.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte gravée en couleurs, « CARTE ETHNOGRAPHIQUE de la Région N. E. DE L'AFRIQUE (Nilland) », des surfaces colorées portant des noms de peuples, une légende en bas à gauche",
+            "text": "Le classement\n\nEthnie : mot donné par d'autres, encore employé, à manier avec prudence. Tribu : mot évité."
+          },
+          {
+            "src": "ethnie-d-ou-vient-le-mot/ethnie-d-ou-vient-le-mot-carrousel/slide-09-1b3d38cee05b.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "photographie en noir et blanc d'un papyrus déchiré en haut, portant une vingtaine de lignes de texte grec en grandes capitales",
+            "text": "Pas directement.\n\nPlusieurs mots ont désigné les mêmes groupes. Le Trésor de la langue française date « ethnie » de 1896, dans un livre sur les races. Des anthropologues le réemploient ensuite. Son sens change encore."
+          },
+          {
+            "src": "ethnie-d-ou-vient-le-mot/ethnie-d-ou-vient-le-mot-carrousel/slide-10-71a86e0edb60.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "page de titre d'un livre ancien : « LES SÉLECTIONS SOCIALES, cours libre de science politique professé à l'Université de Montpellier (1888-1889), par G. Vacher de Lapouge », Paris, 1896",
+            "text": "Notre objectif : raconter l'origine des noms, avec des sources.\n\nVous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica."
+          }
+        ],
+        "credits": "Homère, Iliade, chant II, vers 757-775, papyrus Hawara 24-28 (IIe siècle), Bodleian Library, Oxford · Wikimedia Commons · domaine public ; Georges Vacher de Lapouge, Les Sélections sociales, Paris, Thorin et fils, A. Fontemoing successeur, 1896, page de titre (exemplaire numérisé de la bibliothèque de l'Université de l'Iowa) · Wikimedia Commons · domaine public ; Carte ethnographique de la région N. E. de l'Afrique (Nilland), gravé chez Erhard, Paris, A. Bry, XIXe siècle, Bibliothèque nationale de France · Wikimedia Commons, d'après la Bibliothèque nationale de France · domaine public ; Georges Vacher de Lapouge, Les Sélections sociales, Paris, Fontemoing, 1896, p. 10 (exemplaire numérisé de la bibliothèque de l'Université de l'Iowa) · Wikimedia Commons · domaine public ; Georges Vacher de Lapouge, Les Sélections sociales, Paris, Fontemoing, 1896, index alphabétique, p. 496 (exemplaire numérisé de la bibliothèque de l'Université de l'Iowa) · Wikimedia Commons · domaine public"
+      }
+    ],
+    "originals": [
+      {
+        "network": "facebook",
+        "url": "https://www.facebook.com/reel/1091358410515555",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/Ddjg1LcCKsc/",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/reel/Ddio8K6q1WF/",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7688013767250038038",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7687888641334578454",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/-6qrkZ2jMQU",
+        "publishedAt": "2026-09-21"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

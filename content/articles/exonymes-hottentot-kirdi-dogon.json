@@ -1,0 +1,29 @@
+{
+  "id": "exonymes-hottentot-kirdi-dogon",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "exonymes-hottentot-kirdi-dogon",
+    "title": "Qui s'est appelé Hottentot, ou Kirdi ?",
+    "excerpt": "Hottentot, Habé, Kirdi, Pahouin : quatre noms que personne n'a choisis.",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "noms-imposes"
+    },
+    "formats": [],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7684276118811086102",
+        "publishedAt": "2026-09-11"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

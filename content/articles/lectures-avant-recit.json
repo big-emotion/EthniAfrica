@@ -1,0 +1,97 @@
+{
+  "id": "lectures-avant-recit",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Lectures",
+  "fr": {
+    "slug": "lectures-avant-recit",
+    "title": "L'Afrique avant qu'on la raconte",
+    "excerpt": "L'Afrique avant qu'on la raconte",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "lectures-avant-recit"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "lectures-avant-recit/lectures-avant-recit/slide-01-8e1562b725ee.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "les couvertures des 6 livres de la sélection, côte à côte",
+            "text": "L'Afrique avant qu'on la raconte\n\n6 livres à lire"
+          },
+          {
+            "src": "lectures-avant-recit/lectures-avant-recit/slide-02-ab48f877a40e.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « Histoire générale de l'Afrique, I : Méthodologie et préhistoire africaine » (Joseph Ki-Zerbo (dir.)), détourée et redressée à partir d'une photographie",
+            "text": "Histoire générale de l'Afrique, I : Méthodologie et préhistoire africaine\n\nJoseph Ki-Zerbo (dir.)"
+          },
+          {
+            "src": "lectures-avant-recit/lectures-avant-recit/slide-03-9d43ef9e505d.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « Histoire de l'Afrique noire » (Joseph Ki-Zerbo), détourée et redressée à partir d'une photographie",
+            "text": "Histoire de l'Afrique noire\n\nJoseph Ki-Zerbo"
+          },
+          {
+            "src": "lectures-avant-recit/lectures-avant-recit/slide-04-28677e7ee270.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « La Culture afro-berbère » (Bert Flint), détourée et redressée à partir d'une photographie",
+            "text": "La Culture afro-berbère\n\nBert Flint"
+          },
+          {
+            "src": "lectures-avant-recit/lectures-avant-recit/slide-05-f5382e725335.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « Atlas des peuples d'Afrique » (Jean Sellier), détourée et redressée à partir d'une photographie",
+            "text": "Atlas des peuples d'Afrique\n\nJean Sellier"
+          },
+          {
+            "src": "lectures-avant-recit/lectures-avant-recit/slide-06-b61736423f26.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « Chefs-d'œuvre d'Afrique dans les collections du Musée Dapper » (Musée Dapper), détourée et redressée à partir d'une photographie",
+            "text": "Chefs-d'œuvre d'Afrique dans les collections du Musée Dapper\n\nMusée Dapper"
+          },
+          {
+            "src": "lectures-avant-recit/lectures-avant-recit/slide-07-abe194a6d173.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « Le Grand Livre des proverbes africains » (présentés par Ahmadou Kourouma), détourée et redressée à partir d'une photographie",
+            "text": "Le Grand Livre des proverbes africains\n\nprésentés par Ahmadou Kourouma"
+          },
+          {
+            "src": "lectures-avant-recit/lectures-avant-recit/slide-08-f2206cf7f785.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "les couvertures des 6 livres de la sélection, côte à côte",
+            "text": "Notre objectif : raconter l'origine des noms, avec des sources.\n\nVous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica."
+          }
+        ],
+        "credits": "Couvertures : éditeurs respectifs · photographie de l'opérateur · couverture © éditeur ; Couverture : Jeune Afrique / Stock / Unesco · photographie de l'opérateur · couverture © éditeur ; Couverture : Hatier · photographie de l'opérateur · couverture © éditeur ; Couverture : Éditions Jardin Majorelle · photographie de l'opérateur · couverture © éditeur ; Couverture : La Découverte · photographie de l'opérateur · couverture © éditeur ; Couverture : Musée Dapper · photographie de l'opérateur · couverture © éditeur ; Couverture : Presses du Châtelet · photographie de l'opérateur · couverture © éditeur"
+      }
+    ],
+    "originals": [
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/Ddxkmw-CH50/",
+        "publishedAt": "2026-09-27"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7690040928890817814",
+        "publishedAt": "2026-09-27"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

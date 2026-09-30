@@ -1,0 +1,125 @@
+{
+  "id": "cote-divoire-bouet-willaumez",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Ce que ce nom veut dire",
+  "fr": {
+    "slug": "cote-divoire-bouet-willaumez",
+    "title": "D'où vient le nom Côte d'Ivoire ?",
+    "excerpt": "La Côte d'Ivoire, inventée par Bouët-Willaumez ?",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "bouet-willaumez-a-t-il-invente-la-cote-divoire-carrousel"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "cote-divoire-bouet-willaumez/bouet-willaumez-a-t-il-invente-la-cote-divoire-carrousel/slide-01-d9cd46f6c393.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Portrait lithographié en pied d'un officier de marine en uniforme et bicorne, devant le bastingage d'un navire.",
+            "text": "La Côte d'Ivoire, inventée par Bouët-Willaumez ?\n\nNon : le nom est plus vieux que lui."
+          },
+          {
+            "src": "cote-divoire-bouet-willaumez/bouet-willaumez-a-t-il-invente-la-cote-divoire-carrousel/slide-02-5f314ca02174.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Planisphère portugais enluminé montrant l'Afrique entière, parcouru de lignes de rhumbs et de roses des vents.",
+            "text": "1471\n\nDes navigateurs portugais longent la côte.\n\nPortugais puis Hollandais la nomment d'après ce qu'on y trouve en abondance : l'ivoire."
+          },
+          {
+            "src": "cote-divoire-bouet-willaumez/bouet-willaumez-a-t-il-invente-la-cote-divoire-carrousel/slide-03-c6b242bb3f1b.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Village de cases aux toits de palmes sur le sable, devant une rangée de cocotiers à Assinie.",
+            "text": "L'or, la traite, l'huile de palme\n\nDes Français s'installent à Assinie, attirés par l'or.\n\nLa traite négrière y est présente, moins qu'au Bénin ou au Nigeria. Puis viennent les négociants de Marseille, pour l'huile de palme."
+          },
+          {
+            "src": "cote-divoire-bouet-willaumez/bouet-willaumez-a-t-il-invente-la-cote-divoire-carrousel/slide-04-80fd4cd8f4d4.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Portrait lithographié en pied d'un officier de marine en uniforme et bicorne, devant le bastingage d'un navire.",
+            "text": "Des comptoirs, pas un pays\n\n1842 · Grand-Bassam et Assinie\n\nEn 1842, Paris ordonne à Bouët-Willaumez de bâtir des comptoirs.\n\nGrand-Bassam et Assinie, pour contrer les Anglais. Ses traités ouvrent ces comptoirs. Ils ne nomment pas le pays — ces établissements s'appelleront même la Côte d'Or, un nom pris à la côte voisine."
+          },
+          {
+            "src": "cote-divoire-bouet-willaumez/bouet-willaumez-a-t-il-invente-la-cote-divoire-carrousel/slide-05-0eb8328cfef1.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Mosquée en terre crue hérissée de contreforts coniques et de bois saillants, derrière un mur en banco, à Kong.",
+            "text": "Pas un pays : des royaumes\n\nKong · Gyaman · Sanwi · pays baoulé\n\nÀ l'intérieur, il n'y a pas un pays.\n\nKong au nord, le Gyaman autour de Bondoukou, le Sanwi au sud-est, le pays baoulé au centre. Puis Samory Touré bâtit un empire et soumet les royaumes du nord."
+          },
+          {
+            "src": "cote-divoire-bouet-willaumez/bouet-willaumez-a-t-il-invente-la-cote-divoire-carrousel/slide-06-0e1649d23edb.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Photographie de Marcel Treich-Laplène en chapeau et bottes, fusil à la main, avec des guides dans la végétation.",
+            "text": "1893\n\nUn décret crée la colonie de Côte d'Ivoire.\n\nUn premier décret avait rangé toute la côte sous le nom de Guinée française. Binger devient le premier gouverneur de la colonie."
+          },
+          {
+            "src": "cote-divoire-bouet-willaumez/bouet-willaumez-a-t-il-invente-la-cote-divoire-carrousel/slide-07-2b45ef05dfa2.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Samory Touré debout, coiffé d'un turban et vêtu d'un boubou rayé, entouré de soldats armés après sa capture.",
+            "text": "Conquise jusqu'en 1920\n\nLes résistances commencent dès l'exploration.\n\nLa France fait la guerre à Samory, qui est vaincu. La conquête ne s'achève qu'en 1920, juste après la Première Guerre mondiale."
+          },
+          {
+            "src": "cote-divoire-bouet-willaumez/bouet-willaumez-a-t-il-invente-la-cote-divoire-carrousel/slide-08-968d4199c62a.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Vague qui se brise sur une plage de sable doré marquée d'empreintes de pas, à Port-Bouët.",
+            "text": "Leurs noms sont restés\n\nPort-Bouët · Treichville · Bingerville\n\nCes hommes sont encore sur la carte.\n\nPort-Bouët porte le nom du commandant. Treichville, celui de Treich-Laplène. Bingerville, celui de Binger."
+          },
+          {
+            "src": "cote-divoire-bouet-willaumez/bouet-willaumez-a-t-il-invente-la-cote-divoire-carrousel/slide-09-a491ec389745.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Drapeau orange, blanc et vert de la Côte d'Ivoire planté sur des rochers au bord de la mer.",
+            "text": "Inventée de l'extérieur\n\nTraité après traité, décret après décret.\n\nAprès l'indépendance, le pays garde son nom et demande qu'on ne le traduise plus. Mais ses peuples avaient déjà les leurs : les Tchaman, sur la lagune d'Abidjan, qu'on appelle Ébrié."
+          },
+          {
+            "src": "cote-divoire-bouet-willaumez/bouet-willaumez-a-t-il-invente-la-cote-divoire-carrousel/slide-10-57d5940692b3.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Carte de la Côte d'Ivoire colorée par groupes ethnolinguistiques, avec les noms des peuples dans leurs aires.",
+            "text": "Ces peuples n'ont pas été rassemblés.\n\nC'est la carte qui a été dessinée autour d'eux.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "Portrait du contre-amiral Bouët-Willaumez, Imp. Lemercier, Paris · Bibliothèque Sainte-Geneviève, via Wikimedia Commons · CC0 ; Planisphère de Cantino, cartographe portugais anonyme, 1502 · Biblioteca Estense Universitaria, via Wikimedia Commons · domaine public ; Assinie, photographie de Marcel Monnier, mission Binger, 1892 · Bibliothèque nationale de France, Société de géographie, via Wikimedia Commons · domaine public ; Une mosquée à Kong, photographie de Marcel Monnier, mission Binger, 1892 · Bibliothèque nationale de France, Société de géographie, via Wikimedia Commons · domaine public ; Marcel Treich-Laplène, photographie de Charles Alluaud · Bibliothèque nationale de France, Société de géographie, via Wikimedia Commons · domaine public ; Samory Touré après sa capture, photographie d'Henri Gaden, 1898 · Archives de Bordeaux Métropole, via Wikimedia Commons · domaine public ; Bord d'une plage à Port-Bouët, Blessingedi76 · Wikimedia Commons · CC0 ; Drapeau ivoirien sur le rocher des amoureux, San-Pédro, Dadrik · Wikimedia Commons · CC0 ; Carte des groupes ethnolinguistiques de la Côte d'Ivoire, Spiridon Ion Cepleanu, d'après P. Vennetier · Wikimedia Commons · CC BY-SA 3.0"
+      },
+      {
+        "kind": "video",
+        "youtubeId": "9cUREZbgI5k",
+        "poster": {
+          "src": "cote-divoire-bouet-willaumez/bouet-willaumez-a-t-il-invente-la-cote-divoire/poster-026d047ba109.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7685531757302549782",
+        "publishedAt": "2026-09-14"
+      },
+      {
+        "network": "x",
+        "url": "https://x.com/ethniafrica/status/2100035410697060675",
+        "publishedAt": "2026-09-16"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/9cUREZbgI5k",
+        "publishedAt": "2026-09-15"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

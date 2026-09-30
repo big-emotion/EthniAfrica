@@ -1,0 +1,126 @@
+{
+  "id": "griot-d-ou-vient-le-nom",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "griot-d-ou-vient-le-nom",
+    "title": "D'où vient le nom « griot » ?",
+    "excerpt": "D'où vient le nom « griot » ?",
+    "sections": []
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Abbé Prévost, Histoire générale des voyages, tome III, Paris, 1746, « Vocabulaire mandingo »",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s2",
+      "title": "Jean Dard, Grammaire wolofe, Paris, 1826, p. 161",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s3",
+      "title": "Louis Faidherbe, Essai sur la langue poul, Paris, 1875",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s4",
+      "title": "Thomas A. Hale, Oral Tradition 12(2), 1997, p. 251",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s5",
+      "title": "Thomas A. Hale, Oral Tradition 12(2), 1997, p. 262, d'après E. Pollet et G. Winter, 1971",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s6",
+      "title": "Alexis de Saint-Lô, Relation du voyage du Cap-Verd, Paris, 1637, p. 71",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s7",
+      "title": "Thomas A. Hale, Oral Tradition 12(2), 1997",
+      "tier": "needs_review"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "griot-d-ou-vient-le-nom"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "griot-d-ou-vient-le-nom/griot-d-ou-vient-le-nom/slide-01-217de35df211.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un griot âgé, lunettes noires et bonnet brodé, frappe un grand tambour avec une baguette ; derrière lui, des vêtements et des mains qui applaudissent",
+            "text": "D'où vient le nom « griot » ?"
+          },
+          {
+            "src": "griot-d-ou-vient-le-nom/griot-d-ou-vient-le-nom/slide-02-8ced900b8a49.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte claire de l'Afrique de l'Ouest, une seule zone ocre floue au sud du Mali et au nord-est de la Guinée",
+            "text": "jeli · jali\n\nLes Mandingues l'emploient. La plus ancienne trace écrite que nous avons lue date de 1746 : « Jelliki ».\n\nAbbé Prévost, Histoire générale des voyages, tome III, Paris, 1746, « Vocabulaire mandingo »"
+          },
+          {
+            "src": "griot-d-ou-vient-le-nom/griot-d-ou-vient-le-nom/slide-03-22b6609fd3ff.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte claire de l'Afrique de l'Ouest, une seule zone ocre floue le long de la côte du Sénégal",
+            "text": "gewel\n\nLes Wolof l'emploient. La plus ancienne trace écrite que nous avons lue date de 1826 : « Guéwal », chez Jean Dard.\n\nJean Dard, Grammaire wolofe, Paris, 1826, p. 161"
+          },
+          {
+            "src": "griot-d-ou-vient-le-nom/griot-d-ou-vient-le-nom/slide-04-681832dc0661.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte claire de l'Afrique de l'Ouest, une seule zone ocre floue le long du fleuve Sénégal, en aval",
+            "text": "gawlo\n\nLes Fulbe l'emploient, ainsi que maabo. La plus ancienne trace écrite que nous avons lue date de 1875 : « gaoulo ».\n\nLouis Faidherbe, Essai sur la langue poul, Paris, 1875 · Thomas A. Hale, Oral Tradition 12(2), 1997, p. 251"
+          },
+          {
+            "src": "griot-d-ou-vient-le-nom/griot-d-ou-vient-le-nom/slide-05-484af3c03a9a.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte claire de l'Afrique de l'Ouest, une seule zone ocre floue à la frontière du Mali et de la Mauritanie",
+            "text": "gesere\n\nLes Soninké l'emploient. La plus ancienne trace écrite que nous avons lue date de 1971, chez Pollet et Winter.\n\nThomas A. Hale, Oral Tradition 12(2), 1997, p. 262, d'après E. Pollet et G. Winter, 1971"
+          },
+          {
+            "src": "griot-d-ou-vient-le-nom/griot-d-ou-vient-le-nom/slide-06-1c70c23534dd.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "page imprimée ancienne, en-tête « du Cap-Vert. 71 », où se lit « Les Guiriots, qui sont comme leurs Basteleurs »",
+            "text": "griot\n\nCe mot est français. La plus ancienne trace écrite que nous avons lue date de 1637 : « Guiriots ». Son origine n'est pas établie.\n\nAlexis de Saint-Lô, Relation du voyage du Cap-Verd, Paris, 1637, p. 71 · Thomas A. Hale, Oral Tradition 12(2), 1997"
+          },
+          {
+            "src": "griot-d-ou-vient-le-nom/griot-d-ou-vient-le-nom/slide-07-13c0f25cefbf.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un griot âgé, lunettes noires et bonnet brodé, frappe un grand tambour avec une baguette ; derrière lui, des vêtements et des mains qui applaudissent",
+            "text": "Notre objectif : raconter l'origine des noms, avec des sources.\n\nVous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica."
+          }
+        ],
+        "credits": "Un griot joue du tambour, région de Thiès (Sénégal), photographie recadrée, Kalamuh 045, 2026 · Wikimedia Commons · CC BY-SA 4.0 ; Zone indicative jeli · jali, autour des lieux que nos fiches nomment, carte EthniAfrica, 2026, fond Natural Earth · EthniAfrica · CC BY-SA 4.0 ; Zone indicative gewel, autour des lieux que nos fiches nomment, carte EthniAfrica, 2026, fond Natural Earth · EthniAfrica · CC BY-SA 4.0 ; Zone indicative gawlo (Fuuta Tooro), autour des lieux que nos fiches nomment, carte EthniAfrica, 2026, fond Natural Earth · EthniAfrica · CC BY-SA 4.0 ; Zone indicative gesere, autour des lieux que nos fiches nomment, carte EthniAfrica, 2026, fond Natural Earth · EthniAfrica · CC BY-SA 4.0 ; Alexis de Saint-Lô, Relation du voyage du Cap-Verd, Paris, 1637, page 71, exemplaire de Harvard numérisé par Google · Internet Archive · domaine public"
+      }
+    ],
+    "originals": [
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/Ddty8BbiOyM/",
+        "publishedAt": "2026-09-25"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7689496831113399574",
+        "publishedAt": "2026-09-25"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}
