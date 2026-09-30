@@ -87,3 +87,44 @@ Pagination pattern to reuse: `HUB_PAGE_SIZE` and `pageOf` in `src/lib/dossiers/p
   REQ/DEC amendment has been checked or recorded; the article contract is recorded in this file only.
 - Mapping of the 74 private records to ledger campaigns, and the Lingala carousel edition: P3.
 - Publication cut-off for the migration batch: 2026-09-30 (recette `1bd03eb36`).
+
+## P1 — contract, fixtures, media delivery (2026-09-30)
+
+**Contract (frozen for P2/P3 workers).** `src/lib/articles/schema.ts` (zod) is the single
+shape: identity, `status` draft/published, own `publishedAt` and `modifiedAt`, author, `fr`
+(required) and `en` (optional, or a non-empty `_translation.deferred.en`), `sources` with tier
+and kind kept as separate axes, `media.edition` with `supersedes` + `correctionNote`,
+`media.formats` (video or carousel, media paths relative to a media root), `media.originals`
+(per network URL and date), `relatedArticleIds`, `entities`. `src/lib/articles/corpus.ts` loads
+`content/articles/*.json`, reports every invalid record (an unreadable bank is never an empty
+catalogue), refuses duplicate ids/slugs, reserved segments and legacy dossier slugs, unknown
+source or related references, a published article lacking a date, media, sources or a playable
+video, and a superseding edition without a correction note. `publishedArticleSummaries` is
+the one projection (id, slug, title, excerpt, publishedAt, poster, formats), ordered by
+`publishedAt` descending with an id tie-break, unaffected by `modifiedAt`.
+
+**Tests:** 24 in `src/lib/articles/__tests__` (corpus + media), written before the code.
+`tsc`, `eslint`, `lint:req` green. `@req` uses the existing REQ-114 (dossier corpus reading);
+no new requirement was allocated because Confluence was not consulted (see open items).
+
+**Media-delivery decision (measured).**
+
+- `public/` has 0.76 MiB of headroom (40.24 of 41 MiB); one nine-slide carousel at web quality
+  would consume most of it. Not viable.
+- The self-hosted Supabase stack is documented as started without its storage service, so
+  there is no bucket to use. No other durable media host exists in the repository.
+- Pilot masters measured: Mali video 21 MB and Mandé video 55 MB (both have YouTube editions,
+  so the existing facade plays them without hosting); Lingala carousel PNG masters 14 MB
+  (9 × 1080×1350) and a second export 18 MB (9 × 1080×1920).
+- **Decision:** videos with a YouTube edition use the existing click-to-load facade; carousel
+  slides and posters are exported as WebP derivatives into a `media/articles/` tree served
+  through one constant, `ARTICLE_MEDIA_BASE_URL` (default same-origin `/media/articles`, in
+  `src/lib/articles/media.ts`). Moving to a durable host is a one-line reviewed change. It is a
+  source constant, not an env var, following `ENABLED_EMBED_PROVIDERS`.
+- **Not decided, needs the operator:** which durable host actually serves those files in
+  production (VPS volume behind the reverse proxy vs. an object store) and its upload/backup
+  procedure. Nothing here claims that host exists. Until it does, derivatives can be
+  exported and verified locally but not shipped.
+
+`check:dead` reports 6 unreferenced production files against a ceiling of 3: the three new
+`src/lib/articles` modules have no importer until the P2 route lands; re-measure at P2.

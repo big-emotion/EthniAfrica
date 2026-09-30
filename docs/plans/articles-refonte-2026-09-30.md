@@ -361,7 +361,7 @@ Evidence for each phase, and every unresolved item, is recorded in
 [the execution evidence file](articles-refonte-2026-09-30-evidence.md).
 
 - [x] P0 — Refresh evidence, resolve scope and record route/content dispositions (Confluence contract check and candidate mapping remain open; see evidence file).
-- [ ] P1 — Freeze the article contract, fixtures and media-delivery choice.
+- [x] P1 — Freeze the article contract, fixtures and media-delivery choice (production media host still needs an operator decision; see evidence file).
 - [ ] P2 — Build the shared article and listing experience against fixtures.
 - [ ] P3 — Recover, reconcile and import existing publications (pilot then full resolved batch).
 - [ ] P4 — Integrate navigation, sitemap, metadata and discovery destinations.
