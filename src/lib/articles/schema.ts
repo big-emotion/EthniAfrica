@@ -126,6 +126,9 @@ export const articleSchema = z.object({
     ),
     originals: z.array(original),
   }),
+  // Production-ledger campaign ids this article develops: the one join that
+  // lets a short in Découvertes point at its article.
+  campaigns: z.array(z.string().min(1)).optional(),
   relatedArticleIds: z.array(z.string()).default([]),
   entities: z
     .array(z.object({ kind: z.string().min(1), id: z.string().min(1) }))

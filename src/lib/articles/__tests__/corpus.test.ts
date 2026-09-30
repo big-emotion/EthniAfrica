@@ -4,6 +4,7 @@ import { join } from "path";
 import { afterEach, describe, expect, it } from "vitest";
 
 import {
+  articleForCampaign,
   assembleArticleCorpus,
   publishedArticleSummaries,
   readArticleCorpus,
@@ -205,6 +206,31 @@ describe("article corpus", () => {
       "b",
       "a",
     ]);
+  });
+
+  // @req REQ-114
+  it("finds the published article that develops a production campaign", () => {
+    const linked = videoArticle({ id: "linked" });
+    linked.campaigns = ["mali-quelle-histoire"];
+    const draft = videoArticle({
+      id: "draft-link",
+      status: "draft",
+      publishedAt: undefined,
+    });
+    draft.campaigns = ["lingala-invente-par-les-belges"];
+    const { articles } = assembleArticleCorpus([
+      record(linked, "linked"),
+      record(draft, "draft-link"),
+    ]);
+
+    expect(articleForCampaign(articles, "mali-quelle-histoire")?.id).toBe(
+      "linked"
+    );
+    // A draft is never a destination, whatever it declares.
+    expect(
+      articleForCampaign(articles, "lingala-invente-par-les-belges")
+    ).toBeUndefined();
+    expect(articleForCampaign(articles, "unknown")).toBeUndefined();
   });
 
   // @req REQ-114

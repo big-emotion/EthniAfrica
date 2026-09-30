@@ -197,3 +197,13 @@ export function publishedArticleSummaries(
         b.publishedAt.localeCompare(a.publishedAt) || a.id.localeCompare(b.id)
     );
 }
+
+// @req REQ-114
+export function articleForCampaign(
+  articles: Article[],
+  campaign: string
+): Article | undefined {
+  return articles
+    .filter(isPublished)
+    .find((article) => article.campaigns?.includes(campaign));
+}
