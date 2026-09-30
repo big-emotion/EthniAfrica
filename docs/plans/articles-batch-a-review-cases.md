@@ -208,3 +208,28 @@ work nobody read, is dropped or left flagged.
   cards 1/2 and 3–6 reuse images; no portrait exists.
 - **Improvement over the carousel.** Names which source says what, including the book's own
   "founder" framing, and shows the name's several spellings instead of fixing one.
+
+## Case A8 — `diallo-djallo-jallow`
+
+- **Reader's question.** Diallo, Djaló, Jallow, Jalloh: one name or several? What does it mean?
+- **Primary reader need.** P1 (bearers of the name; the subject came from a reader's request)
+  and P2.
+- **Claims and support.**
+  | Claim                                                                                                                                                                                           | Record source                                                         |
+  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+  | Diallo, Djaló and Jaló are spellings used by one Fula group in Guinea-Bissau                                                                                                                    | s1 (workshop reading, pp. 19–20; not opened, no URL)                  |
+  | Jallow (Gambia) and Jalloh (Sierra Leone) are forms of the same name                                                                                                                            | s2 (workshop reading; not opened)                                     |
+  | The spelling follows the language of each territory's administration — an observation of distribution, not an explained mechanism                                                               | cards 3; s1, s2                                                       |
+  | 1734: Ayuba Suleiman Diallo's account, written by Thomas Bluett in London, separates his filiation (son of Suleiman, son of Ibrahim) from his family name: "The Surname of his Family is Jallo" | s3 (workshop reading, verbatim; primary host refused connection here) |
+  | The 1734 text describes a family name already inherited, so the name is older than that mention                                                                                                 | s3                                                                    |
+- **Uncertainty.** The meaning of the name is not established; no source consulted explains it.
+  Why each language spells it that way is not explained by any source.
+- **Dropped or flagged.** "8 pays" and the Peul/Fula exonym origins (card 2, card 4): they rest on
+  our own name and people records, which are not among this article's sources — dropped; the
+  article links to the Fulbe articles instead. The four-clan division (Diallo, Bâ, Barry, Sow)
+  was already refused by the workshop (community blog only). Flags: DAFN is tiered
+  `unverified` by the workshop; credit-check on card 3; an Instagram occurrence
+  (2026-09-17) is unattributed; the card 2 portrait shows an identifiable adult (the workshop
+  reviewed and kept it).
+- **Improvement over the carousel.** States plainly that the meaning is unknown and that 1734 is
+  the oldest written mention found, not the birth of the name.
