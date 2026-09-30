@@ -194,3 +194,33 @@ Wikipedia page, or on a work nobody read, is dropped or flagged.
   the workshop's CREDITS-PUBLICATION.md, not yet in the record.
 - **Improvement over the posts.** Separates what is sourced from what is believed, and gives the
   sourced facts their scope (Senegal for Glasman).
+
+## Case B8 — `pygmee-d-ou-vient-le-nom`
+
+- **Reader's question.** Where does the word "pygmée" come from, and what do the peoples it is
+  applied to call themselves?
+- **Primary reader need.** P2 and P3; the peoples named are subjects, not a category.
+- **Claims and support.**
+  | Claim                                                                                                                                                                          | Record source                                  |
+  | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- |
+  | Greek pygmaios, from pygmē, fist, then the measure from elbow to knuckles; Europeans applied the ancient word to equatorial African peoples in the 19th century                | s9 Etymonline (opened; it gives "from 1863")   |
+  | Homer, Iliad III, 3-6: Pygmies fighting the cranes at the edges of the world                                                                                                   | s3 (workshop reading on Perseus)               |
+  | We found no Greek text naming a present-day Central African people                                                                                                             | workshop external research, bounded as "found" |
+  | Baka (SE Cameroon, N Gabon, N Congo), unequal exchange with farming neighbours; Bagyeli/Bakola around Kribi, sources differ on the preferred name; Bedzan/Medzan in the centre | s6 (fiche, read), s1 (Kribi location)          |
+  | Aka/BaAka (SW Central African Republic, N Congo), also Bayaka; elephant hunting for ivory in the 19th c.; 1930s French pressure to settle them along roads, refused by most    | s7 (fiche, read)                               |
+  | Twa/Batwa (Mutwa), Great Lakes; expulsions from forests for national parks since the 1970s                                                                                     | s8 (fiche, read)                               |
+  | Mbuti in Ituri, a name grouping several communities including Efe and Sua; we do not yet document them                                                                         | workshop external research (not reopened)      |
+  | Du Chaillu 1872: "the Dwarfs of Equatorial Africa—the Dwarfs of Homer, Herodotus…", said on seeing a terrified old woman                                                       | s4 (workshop reading, Gutenberg)               |
+  | Republic of Congo, Act No. 5-2011, art. 1: use of the term prohibited, an insult                                                                                               | s5 (workshop reading of the IWGIA PDF)         |
+  | IWGIA/IFAD note: DRC representatives chose "peuple autochtone pygmée" as a common name                                                                                         | s2 (not reopened; 403)                         |
+- **Uncertainty.** Opinions among the people concerned diverge; the first application to Central
+  Africa is not established (a 1625 note is reported but not found).
+- **Dropped or flagged.** Herodotus and Aristotle attestations (not re-read); Purchas 1625 (note
+  not found); genetics figures; stature. Flags: the Baka image shows a recognisable **minor** with
+  no documented consent (operator's explicit choice, "à relire avant publication"); no consent is
+  documented for any photographed person; the Twa date "1970-1980" should be re-listened (a
+  transcription heard "1950"); the video soundtrack is not cleared for the site; the licence of the
+  law text image is not established; the Tom Patterson map credit on an earlier TikTok (2023,
+  CC BY-SA 4.0) vs the 2025 public-domain file is unresolved.
+- **Improvement over the video.** Puts each people's own name before the word, and gives the
+  word's history and the 2011 law with their sources and limits.
