@@ -42,3 +42,24 @@ Wikipedia page, or on a work nobody read, is dropped or flagged.
   soundtrack not cleared; video media credits not recovered.
 - **Improvement over the posts.** Separates the three names by date and by who gave them,
   separates name from territory, and keeps the three versions of the choice side by side.
+
+## Case B2 — `griot-d-ou-vient-le-nom`
+
+- **Reader's question.** Where does the word "griot" come from, and what do the people it names
+  call themselves?
+- **Primary reader need.** P2 (readers who say jeli, jali, gewel, gawlo, gesere at home) and P3.
+- **Claims and support.**
+  | Claim                                                                                                                                                                                                                                                                                                                            | Record source                                                                                         |
+  | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+  | Societies have their own words: guewel (Wolof), mabo or gawlo (Fulbe), jali (Mandinka), jeli (Maninka, Bamana), geseré or jaaré (Soninke), also iggio (Moor), jeseré (Songhay), marok'i (Hausa)                                                                                                                                  | s4 Hale p. 251 (opened)                                                                               |
+  | Oldest written traces we read: 1746 "Jelliki" (Mandingo vocabulary), 1826 "Guéwal" (Dard), 1875 "gaoulo" (Faidherbe), 1971 gesere (Pollet and Winter, cited by Hale)                                                                                                                                                             | s1 (workshop OCR), s2 (workshop, page image), s3 (workshop OCR), s5 (workshop reading of Hale p. 262) |
+  | "Guiriots" in Saint-Lô, 1637, p. 71; Saint-Lô a Capuchin who travelled the Senegambian coast in 1634-35                                                                                                                                                                                                                          | s6 (workshop, page image), s7 Hale p. 251 (opened)                                                    |
+  | Nobody has clearly documented the origin of "griot" in an African language; theories: Wolof gueroual (Bérenger-Féraud 1882), Fulbe gawlo (Watta 1985), Portuguese criado (Labouret 1951), Arabic qawal via Wolof guewel (Charry 1992), a Mande form (Bird 1971, contested by Conrad); Hale's own preferred path through "guinea" | s7 Hale pp. 251-256 (opened)                                                                          |
+- **Uncertainty.** The origin of "griot" is not established; Hale's own path is one more
+  hypothesis. The dates are those of the writings read, not the age of the names.
+- **Dropped or flagged.** Tamari's c. 1300 date for the status (abstract only, not in the record's
+  sources); Ibn Battuta (no year in Hale); "maabo" spelling (a private community testimony, not
+  cited; the article uses Hale's "mabo"). Cards 1 and 7 reuse one image. Prévost 1746 and
+  Faidherbe 1875 rest on OCR, page images not opened by the workshop.
+- **Improvement over the carousel.** Gives the reader the competing explanations of "griot" with
+  their authors and dates, which the carousel reduced to "origin not established".
