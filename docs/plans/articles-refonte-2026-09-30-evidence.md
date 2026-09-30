@@ -128,3 +128,60 @@ no new requirement was allocated because Confluence was not consulted (see open 
 
 `check:dead` reports 6 unreferenced production files against a ceiling of 3: the three new
 `src/lib/articles` modules have no importer until the P2 route lands; re-measure at P2.
+
+## P2 — listing and article UI (worker A, merged 2026-09-30)
+
+Built test-first on branch `articles-ui` from the frozen contract and merged without
+conflicts: `src/components/articles/*` (listing, article view, media switch, carousel),
+`/fr/dossiers` as the Articles listing (paged with `pageOf`), `/fr/dossiers/<slug>` serving a
+published article first and otherwise falling through unchanged to the old dossier logic
+(drafts and `DOS_*` slugs still answer 404), bilingual copy in `src/lib/i18n/copy/articles.ts`.
+
+- Read on the rendered pages by the worker at 320, 390, 768 and 1200 px with 15 temporary
+  fixture records (deleted afterwards, none committed): no horizontal overflow, one h1, draft
+  title never shown, error state for an invalid bank, YouTube facade loads nothing until
+  clicked, carousel buttons/count/enlargement (focus returns to its button). Corrections made
+  after looking: baked-in poster text was cropped, pager overflowed at 320, trail/title edges.
+- **Not seen** (open): English pages, night theme, keyboard walkthrough in a real browser,
+  axe and Lighthouse, touch swipe (checked visually only), the native-video (`nativeSrc`) path
+  (untested, not rendered).
+- One existing test was changed on purpose: `axisHubCharter.test.ts` no longer expects the
+  dossiers axis to render the spread hub (brand charter §8.6 superseded for this section
+  only); a new test asserts it serves the listing. `frozenRoutes.test.tsx` is unchanged and green.
+- Brand charter §8.6 prose itself was **not edited**; the inline-facade CSS change (parchment
+  inks) is unreviewed by the operator.
+- Contract requests from the worker, dispositions: (1) per-locale summary: deferred, English
+  is unpublished; (2) no `intro` field: `excerpt` serves as the lead, accepted; (3) citations
+  are per section, not per paragraph: accepted for the first release, a limitation on the
+  "claim-adjacent" goal; (4) caption language: not needed until captions exist.
+- Any bank error shows only the error state on the listing, so a bad draft file would hide
+  every published article; `src/lib/articles/__tests__/bank.test.ts` holds the committed bank
+  to zero errors in the suite every PR runs.
+
+Gates on the merged tree: 1,033 files / 10,591 tests pass except one route-literal test that
+my own new tests broke and that is fixed (hardcoded `/fr/dossiers/...` literals replaced by
+route helpers); `typecheck`, `lint` (0 errors, 35 pre-existing warnings), `lint:req`,
+`check:dead` (3/3), `test:charter-contracts` green.
+
+## P4 — navigation, SEO, discovery (coordinator; in progress)
+
+Done and tested:
+
+- Axis label Articles in fr and en (header, tray, footer, trail, site tree, About copy).
+  `articles` module first; `nommer`, `frise`, `regards-colonisation` marked `unlisted`, so no
+  Bientôt row remains; their routes are untouched and withheld. The rubric-filing tests of the
+  header (13) described a retired presentation and were replaced by tests for the flat
+  four-destination menu; the availability tests that used the withdrawn drafts now read
+  `getModuleAvailabilityMap()`. The tile-accent pin moved one step (insertion cost, documented
+  in the test). The rubric mechanism in `SiteHeader` is now dormant (`RUBRIC_FILED_AXES` empty):
+  removal is a follow-up, not done here.
+- Site tree: section Articles = listing + Anecdotes + Proverbes + Galerie; Designations moved
+  under Parcourir and the doctrine under the site section (URLs unchanged).
+- XML sitemap lists every published article once, French only, through the same predicate;
+  no English article URL while articles have no English text.
+- Article JSON-LD with the article's own dates and author; metadata/hreflang come from the route.
+- Découvertes: a publication whose production campaign an article declares (`campaigns`)
+  shows **Lire l'article** in its detail sheet.
+
+Not done: search-companion destinations (they reach articles through Découvertes),
+old-URL disposition beyond "withheld routes stay 404", brand charter §8.6 text.
