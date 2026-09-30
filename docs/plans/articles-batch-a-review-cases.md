@@ -73,3 +73,31 @@ work nobody read, is dropped or left flagged.
   working title states both etymologies as facts (the workshop kept it internal).
 - **Improvement over the carousel.** Keeps the Tuareg nuance and the unsettled etymology in the
   same place as the correction, and gives the source and page for each point.
+
+## Case A3 — `cabinda-yombe-trois-conventions`
+
+- **Reader's question.** Where does the name Cabinda come from, and who drew the line that
+  runs through the Yombe's country? Was it the Berlin conference?
+- **Primary reader need.** P2 (Yombe/Kongo readers in three states) and P3.
+- **Claims and support.**
+  | Claim                                                                                                                                                                                                                                        | Record source                                                                                      |
+  | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+  | Bayombe (plural), Muyombe (singular), Kiyombe (the language); the name barely changes between French, Portuguese and neighbouring languages                                                                                                  | s1 (our own people record, read; its own sources are weak)                                         |
+  | Cabinda: Angola's exclave north of the Congo river, between Zaire (DRC) and the Republic of the Congo; its eastern and southern limits run about 140 miles (≈ 225 km)                                                                        | s3 (opened: IBS 144, p. 1)                                                                         |
+  | 14 Feb 1885 Portugal – International Association of the Congo convention: recognises Portugal's claim to Cabinda, guarantees the Association a narrow corridor to the coast                                                                  | s3 (opened, pp. 1–2)                                                                               |
+  | 12 May 1886 France–Portugal convention (French Congo / Cabinda); 25 May 1891 Brussels convention names villages on each side and follows the Luculla to the Chiloango; demarcation 1900; protocol of 5 July 1913 gives the present alignment | s3/s4 (opened, pp. 2–3, 5)                                                                         |
+  | The Kiyombe language is attested in Angola, DRC and the Republic of the Congo; the Mayombe forest                                                                                                                                            | s5 (Glottolog opened for the three countries; Vansina not read) ; s3 names the "Forest of Maiombe" |
+- **Uncertainty.** The origin of the name Cabinda is not established by any source we read; the
+  Berlin conference recognised Leopold's Association but did not draw this line; population
+  figures are contradictory and left out.
+- **Dropped or flagged.** The carousel's three Kikongo etymologies and "jamais au portugais"
+  (card 3) rest only on Portuguese Wikipedia citing a historian nobody read: dropped from the
+  body, and s2 is described as what it is. The unity sentence of card 8 is a project conviction,
+  not a finding, and is not repeated as fact. Signature place of the 1885 convention not written
+  (operator decision). Flags: source titles s1/s5 carried a raw corpus identifier (rewritten);
+  our Yombe people record cites a DICE page about a different (Zambian) Yombe group — for
+  `/afrik-curator`, not fixed here; image reuse on cards 1/9, 2/8, 6/7 and credit-check on
+  1, 6, 7, 9; the carved figures are credited "Kongo" by their museums, not "Yombe"; Leganet.cd
+  (in s4) was not opened.
+- **Improvement over the carousel.** Removes an etymology the carousel stated on encyclopedia
+  support alone, and gives each boundary act its date and parties from the boundary study.
