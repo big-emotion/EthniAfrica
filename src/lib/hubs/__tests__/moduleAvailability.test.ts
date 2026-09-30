@@ -16,7 +16,10 @@ vi.mock("@/lib/supabase/server", () => ({
   createServerClient: createServerClientMock,
 }));
 
-import { getHubModules } from "@/lib/hubs/moduleAvailability";
+import {
+  getHubModules,
+  getModuleAvailabilityMap,
+} from "@/lib/hubs/moduleAvailability";
 import {
   MODULE_DEFINITIONS,
   getNavModules,
@@ -277,9 +280,11 @@ describe("moduleAvailability — REQ-106/REQ-114 data-backed hub availability", 
       buildSupabaseMock({ [PRESENCE_VIEW]: STATEMENT_TIMEOUT })
     );
 
-    const modules = await getHubModules("dossiers");
+    // The draft modules are withdrawn from the Articles menu, so the hub grid
+    // no longer carries them; the whole-registry map still answers for them.
+    const availability = await getModuleAvailabilityMap();
 
-    expect(modules.find((m) => m.id === "frise")?.available).toBe(false);
+    expect(availability.frise).toBe(false);
   });
 
   // @req REQ-106 @req REQ-114
@@ -347,7 +352,9 @@ describe("moduleAvailability — REQ-106/REQ-114 data-backed hub availability", 
     const explorer = await getHubModules("atlas");
 
     expect(comprendre.find((m) => m.id === "anecdotes")?.available).toBe(true);
-    expect(comprendre.find((m) => m.id === "frise")?.available).toBe(false);
+    // frise is a withdrawn draft: absent from the grid, false in the map.
+    expect(comprendre.find((m) => m.id === "frise")).toBeUndefined();
+    expect((await getModuleAvailabilityMap()).frise).toBe(false);
     // A data-backed atlas module reads its own emptiness the same way. `noms`
     // used to stand for that case and no longer can — it is unlisted, so the
     // grid never receives it — so `patronymes` carries the assertion.
@@ -431,11 +438,10 @@ describe("moduleAvailability — REQ-106/REQ-114 data-backed hub availability", 
       buildSupabaseMock({ [PRESENCE_VIEW]: presenceView() })
     );
 
-    const modules = await getHubModules("dossiers");
-    const frise = modules.find((m) => m.id === "frise");
+    const availability = await getModuleAvailabilityMap();
 
-    expect(frise).toBeDefined();
-    expect(frise?.available).toBe(false);
+    expect(availability).toHaveProperty("frise");
+    expect(availability.frise).toBe(false);
   });
 
   // The state `static` was the trap: with no table to consult, a static
@@ -447,27 +453,29 @@ describe("moduleAvailability — REQ-106/REQ-114 data-backed hub availability", 
       buildSupabaseMock({ [PRESENCE_VIEW]: presenceView() })
     );
 
-    const modules = await getHubModules("dossiers");
+    const availability = await getModuleAvailabilityMap();
 
-    expect(
-      modules.find((m) => m.id === "regards-colonisation")?.available
-    ).toBe(false);
+    expect(availability["regards-colonisation"]).toBe(false);
     // Its neighbour on the same axis is static too, and stays live: nothing
     // about being static decides this either way.
-    expect(modules.find((m) => m.id === "anecdotes")?.available).toBe(true);
+    expect(availability.anecdotes).toBe(true);
   });
 
-  // Listed, always. Withholding the click is the whole of what draft does.
+  // A draft stays registered and measured; on the Articles axis it is also
+  // withdrawn from the menu, so the hub grid promises no Bientôt row there.
   // @req REQ-106 @req REQ-114
-  it("still lists a module in preparation", async () => {
+  it("keeps a withdrawn draft registered but out of the Articles grid", async () => {
     createServerClientMock.mockReturnValue(
       buildSupabaseMock({ [PRESENCE_VIEW]: presenceView() })
     );
 
     const modules = await getHubModules("dossiers");
+    const availability = await getModuleAvailabilityMap();
 
-    expect(modules.map((m) => m.id)).toContain("frise");
-    expect(modules.map((m) => m.id)).toContain("regards-colonisation");
+    expect(modules.map((m) => m.id)).not.toContain("frise");
+    expect(modules.map((m) => m.id)).not.toContain("regards-colonisation");
+    expect(availability).toHaveProperty("frise");
+    expect(availability).toHaveProperty("regards-colonisation");
   });
 
   /**

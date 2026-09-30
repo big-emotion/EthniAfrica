@@ -94,10 +94,11 @@ describe("header panel blurbs", () => {
   const MENU_BLURB_MAX_LENGTH = 2 * 52;
 
   // @req REQ-113
-  it("describes themes for dossiers and names modules for the other panels", () => {
+  it("describes the articles for the Articles axis and names modules for the other panels", () => {
     for (const axis of axes) {
       if (axis === "dossiers") {
-        expect(hubs[axis].menuBlurb).toMatch(/thème/);
+        // The panel describes the articles, in either locale.
+        expect(hubs[axis].menuBlurb).toMatch(/sujets|subjects/);
       } else {
         expect(
           modulesNamedIn(axis, hubs[axis].menuBlurb).length

@@ -20,7 +20,7 @@ const en = {
     pageTitle: "Understand the peoples of Africa",
     blurb:
       "Where a name comes from, where the peoples passed, and which sources we rest on.",
-    menuBlurb: "Read by theme, across peoples, territories and eras.",
+    menuBlurb: "The subjects of our videos and carousels, read in full.",
     hubEntryName: "The reading hub",
     // The hub shows one page of readings at a time; these are its controls.
     pager: {
@@ -57,6 +57,7 @@ const en = {
     noms: "Ethnonyms",
     patronymes: "The names of Africa",
     recherche: "Free search",
+    articles: "All articles",
     nommer: "Who gave this name?",
     anecdotes: "Anecdotes",
     proverbes: "Proverbs",
@@ -161,7 +162,7 @@ const fr: HubsCopy = {
     blurb:
       "D'où vient un nom, par où sont passés les peuples, et sur quelles sources nous nous appuyons.",
     menuBlurb:
-      "Des lectures par thème, à travers les peuples, les territoires et les époques.",
+      "Les sujets de nos vidéos et de nos carrousels, à lire en entier.",
     hubEntryName: "Le hub de lecture",
     pager: {
       label: "Pages de dossiers",
@@ -198,6 +199,7 @@ const fr: HubsCopy = {
     noms: "Appellations",
     patronymes: "Les noms d'Afrique",
     recherche: "Recherche libre",
+    articles: "Tous les articles",
     nommer: "Qui a donné ce nom ?",
     anecdotes: "Anecdotes",
     proverbes: "Proverbes",

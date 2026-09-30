@@ -82,7 +82,13 @@ describe("moduleGroups — the shelf a module sits on (REQ-120)", () => {
     expect(
       shelves.map((shelf) => [shelf.id, shelf.modules.map((m) => m.id)])
     ).toEqual([
-      ["dossiers-noms", ["nommer", "anecdotes", "proverbes", "galerie"]],
+      // This reads the whole registry, drafts included: the withdrawn ones
+      // stay filed under their rubrics even though the menu no longer shows
+      // them.
+      [
+        "dossiers-noms",
+        ["articles", "nommer", "anecdotes", "proverbes", "galerie"],
+      ],
       ["dossiers-organisation", ["regards-colonisation"]],
       ["dossiers-populations", ["frise"]],
     ]);

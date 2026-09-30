@@ -39,10 +39,10 @@ const en = {
     compare: ["Compare", "Place two entities of the same type side by side."],
   },
   dossiers: {
-    title: "Dossiers",
+    title: "Articles",
     blurb:
-      "Where a name comes from, where a people comes from, and who says so. The three questions, in that order.",
-    all: "All dossiers",
+      "The subjects of our videos and carousels, developed in writing, with their references.",
+    all: "All articles",
     nommerTitle: "Who gave this name?",
     nommerNote: "The founding dossier and its five chapters.",
     names: [
@@ -130,10 +130,10 @@ const fr: SiteTreeCopy = {
     compare: ["Comparer", "Mettre deux entités du même type côte à côte."],
   },
   dossiers: {
-    title: "Les dossiers",
+    title: "Articles",
     blurb:
-      "D'où vient ce nom, d'où vient ce peuple, et qui l'affirme. Les trois questions dans cet ordre.",
-    all: "Tous les dossiers",
+      "Les sujets de nos vidéos et de nos carrousels, développés par écrit, avec leurs références.",
+    all: "Tous les articles",
     nommerTitle: "Qui a donné ce nom ?",
     nommerNote: "Le dossier fondateur, et ses cinq chapitres.",
     names: ["Appellations", "Autonymes, exonymes, et ce que l'écart raconte."],

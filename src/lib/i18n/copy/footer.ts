@@ -17,7 +17,7 @@ const en = {
     explorerHeading: "Explore",
     axes: {
       atlas: "Browse",
-      dossiers: "The dossiers",
+      dossiers: "Articles",
       jeux: "Play",
     },
     participateHeading: "Take part",
@@ -71,7 +71,7 @@ const fr: FooterCopy = {
     explorerHeading: "Explorer",
     axes: {
       atlas: "Parcourir",
-      dossiers: "Les dossiers",
+      dossiers: "Articles",
       jeux: "Jouer",
     },
     participateHeading: "Participer",
