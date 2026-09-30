@@ -68,6 +68,8 @@ const RESERVED_SLUGS = [
 const COMPANION_DAYS = 3;
 
 const NEXT = {
+  "rights-restricted":
+    "Obtain the rights holder's permission for the site, or show the carousel without these slides.",
   "edition-not-shown":
     "P5 decides whether this earlier edition belongs in the article or needs its own.",
   "no-media":
@@ -83,7 +85,7 @@ const NEXT = {
   "no-youtube":
     "Record the YouTube edition, or provide a cleared native derivative and a durable host.",
   "slide-text-missing":
-    "Recover the slide text (cards.json of this release) before the carousel can be shown.",
+    "Recover this release's cards.json, or transcribe each exported slide by eye; the carousel is shown only with its words.",
   "sources-empty":
     "P5: build the source list from the workshop's SOURCES.md; nothing was parsed automatically.",
   "mapping-probable":
@@ -186,18 +188,24 @@ function workshopIndex(workshopRoot) {
       /* no post.md link: the folder was never tied to a library post */
     }
     let campagne = null;
+    let outDir = null;
     try {
-      campagne = readJson(path.join(dir, "cards.json")).campagne ?? null;
+      const cards = readJson(path.join(dir, "cards.json"));
+      campagne = cards.campagne ?? null;
+      outDir = typeof cards.outDir === "string" ? cards.outDir : null;
     } catch {
       /* no cards: not a carousel workshop */
     }
-    index.push({ name, postTarget, campagne });
+    index.push({ name, postTarget, campagne, outDir });
   }
   return index;
 }
 
 /** The workshop folder a record came from, and the evidence that says so. */
-function findWorkshop(post, folderAbs, workshopRoot, index) {
+function findWorkshop(post, folderAbs, workshopRoot, index, curated) {
+  const named = curated?.find((w) => w.record === post.id);
+  if (named)
+    return { dir: named.workshopDir, evidence: `curated: ${named.evidence}` };
   if (
     post.workshopSubject &&
     exists(path.join(workshopRoot, post.workshopSubject))
@@ -217,11 +225,21 @@ function findWorkshop(post, folderAbs, workshopRoot, index) {
       evidence: "workshop post.md links to the published folder",
     };
   }
+  // The render's own destination names the post folder it was made for.
+  const aimed = index.filter((e) =>
+    e.outDir?.replace(/\/images\/?$/, "").endsWith(`/${post.dir}`)
+  );
+  if (aimed.length === 1) {
+    return {
+      dir: aimed[0].name,
+      evidence: "workshop cards.json outDir names the post's folder",
+    };
+  }
   for (const key of [post.id, post.links?.campaign]) {
-    const named = key ? index.filter((e) => e.campagne === key) : [];
-    if (named.length === 1) {
+    const byCampaign = key ? index.filter((e) => e.campagne === key) : [];
+    if (byCampaign.length === 1) {
       return {
-        dir: named[0].name,
+        dir: byCampaign[0].name,
         evidence: `workshop cards.json campagne "${key}"`,
       };
     }
@@ -432,7 +450,8 @@ function buildEdition(post, ctx) {
     post,
     folderAbs ?? "",
     ctx.workshopRoot,
-    ctx.workshopIndex
+    ctx.workshopIndex,
+    ctx.curation.workshop
   );
   const formats = [];
   let slides = null;
@@ -461,6 +480,14 @@ function buildEdition(post, ctx) {
       slides = parsed.slides;
       cardSources = parsed.sources;
       cardCredits = parsed.credits;
+      if (parsed.restricted.length) {
+        notes.push(
+          exception(
+            "rights-restricted",
+            `card(s) ${parsed.restricted.join(", ")} show an image whose licence reserves all rights; website reuse is not cleared`
+          )
+        );
+      }
       hashed.set("cards.json", {
         key: `workshop:${workshop.dir}/cards.json`,
         sha256: sha256(fs.readFileSync(cardsFile)),
@@ -1016,7 +1043,9 @@ export async function runImport(options) {
         a === primary ? -1 : b === primary ? 1 : 0
       )) {
         const base = `${articleId}/${e.recordId}`;
-        if (e.formats.includes("carousel") && e.slides) {
+        // Slides are exported even without their text, so the recovered
+        // files are hashed and kept; they are shown only with their words.
+        if (e.formats.includes("carousel")) {
           const slides = [];
           for (const [i, rel] of e.release.slides.entries()) {
             const src = e.hashed.get(rel);
@@ -1030,20 +1059,23 @@ export async function runImport(options) {
               order: i + 1,
               ...out,
             });
-            slides.push({
-              src: target,
-              width: out.width,
-              height: out.height,
-              alt: e.slides[i].alt,
-              text: e.slides[i].text,
-            });
+            if (e.slides) {
+              slides.push({
+                src: target,
+                width: out.width,
+                height: out.height,
+                alt: e.slides[i].alt,
+                text: e.slides[i].text,
+              });
+            }
           }
-          formats.push({
-            kind: "carousel",
-            slides,
-            ...(e.credits.carousel ? { credits: e.credits.carousel } : {}),
-          });
-          if (!e.credits.carousel)
+          if (e.slides)
+            formats.push({
+              kind: "carousel",
+              slides,
+              ...(e.credits.carousel ? { credits: e.credits.carousel } : {}),
+            });
+          if (e.slides && !e.credits.carousel)
             exceptions.push(
               exception(
                 "credits-missing",

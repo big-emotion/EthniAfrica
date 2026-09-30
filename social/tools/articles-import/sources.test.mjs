@@ -49,6 +49,55 @@ test("slide text keeps the card order and the card's own words", () => {
   );
 });
 
+test("slide text follows the slide's reading order, pairs included", () => {
+  const { slides } = cardsToSlides({
+    cartes: [
+      {
+        rang: 1,
+        titre: "1471",
+        punchline: "Des navigateurs longent la côte.",
+        corps: "Ils la nomment d'après l'ivoire.",
+        paires: [
+          { terme: "criollo", glose: "né dans la colonie" },
+          { terme: "Krio", glose: "le nom qu'ils se donnent" },
+        ],
+        source: "TLFi, entrée « créole »",
+      },
+    ],
+  });
+  assert.equal(
+    slides[0].text,
+    "1471\n\nDes navigateurs longent la côte.\n\ncriollo — né dans la colonie\nKrio — le nom qu'ils se donnent\n\nIls la nomment d'après l'ivoire.\n\nTLFi, entrée « créole »"
+  );
+});
+
+test("a ';' inside a reference line is not split: it can join two locators of one work", () => {
+  const { sources } = cardsToSlides({
+    cartes: [
+      {
+        rang: 1,
+        titre: "T",
+        source:
+          "US Department of State, Boundary Study n° 144, 1974 ; n° 105, 1970",
+      },
+    ],
+  });
+  assert.deepEqual(
+    sources.map((s) => s.title),
+    ["US Department of State, Boundary Study n° 144, 1974 ; n° 105, 1970"]
+  );
+});
+
+test("an image under an all-rights-reserved licence is named for review", () => {
+  const { restricted } = cardsToSlides({
+    cartes: [
+      { rang: 1, titre: "Livre", image: { licence: "couverture © éditeur" } },
+      { rang: 2, titre: "Photo", image: { licence: "CC BY-SA 4.0" } },
+    ],
+  });
+  assert.deepEqual(restricted, [1]);
+});
+
 test("a slogan printed in the source slot is not a reference", () => {
   const { sources } = cardsToSlides({
     cartes: [

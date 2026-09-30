@@ -19,11 +19,20 @@ export function cardsToSlides(cardsJson) {
   const credits = [];
   const titles = [];
   for (const card of cards) {
+    // The order the gabarit draws them in: title, its gloss, the punchline,
+    // the pairs under the title, the body, the reference line.
+    const pairs = (Array.isArray(card.paires) ? card.paires : [])
+      .map((p) =>
+        [clean(p?.terme), clean(p?.glose)].filter(Boolean).join(" — ")
+      )
+      .filter(Boolean)
+      .join("\n");
     const words = [
       card.titre,
       card.precision,
-      card.corps,
       card.punchline,
+      pairs,
+      card.corps,
       card.source,
     ]
       .map(clean)
@@ -50,7 +59,11 @@ export function cardsToSlides(cardsJson) {
     .filter((title) => /[,\d]/.test(title))
     // A card's reference line carries no tier: nobody has ruled on it yet.
     .map((title) => ({ title, tier: "needs_review" }));
-  return { slides, sources, credits: credits.join(" ; ") };
+  // A licence a social post relied on is not a licence for the site.
+  const restricted = cards
+    .filter((c) => /©|tous droits|all rights/i.test(clean(c.image?.licence)))
+    .map((c) => c.rang);
+  return { slides, sources, credits: credits.join(" ; "), restricted };
 }
 
 function section(markdown, heading) {

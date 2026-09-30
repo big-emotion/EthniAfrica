@@ -567,6 +567,36 @@ test("private roots and production notes never reach public output", async () =>
   }
 });
 
+test("a carousel's cards are found by the folder their render was aimed at", async () => {
+  const world = await buildWorld();
+  const cardsFile = path.join(world.workshopRoot, "b", "cards.json");
+  const cards = JSON.parse(fs.readFileSync(cardsFile, "utf8"));
+  fs.rmSync(path.join(world.workshopRoot, "b"), { recursive: true });
+  put(
+    path.join(world.workshopRoot, "Peuples-B-atelier", "cards.json"),
+    JSON.stringify({
+      ...cards,
+      campagne: "Un intitulé libre",
+      outDir: "/elsewhere/Valide/Peuples-B/b/images",
+    })
+  );
+  await runImport(options(world, { write: true }));
+  assert.equal(
+    readDraft(world, "b").media.formats[0].slides[0].text,
+    "Un\n\nPremier corps."
+  );
+});
+
+test("slides without recoverable text are exported but not shown", async () => {
+  const world = await buildWorld();
+  fs.rmSync(path.join(world.workshopRoot, "b"), { recursive: true });
+  const result = await runImport(options(world, { write: true }));
+  assert.deepEqual(readDraft(world, "b").media.formats, []);
+  const b = candidate(result, "b");
+  assert.equal(b.derivatives.length, 3);
+  assert.ok(b.exceptions.some((e) => e.code === "slide-text-missing"));
+});
+
 test("an excerpt never comes from a caption file's working notes", async () => {
   const world = await buildWorld({
     posts: [{ ...VIDEO_A_NEW, copy: "_legendes/a.md" }],
