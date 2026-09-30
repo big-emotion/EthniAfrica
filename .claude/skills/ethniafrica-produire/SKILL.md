@@ -145,6 +145,14 @@ tu ne programmes pas, tu ne proposes pas de le faire.
 Si `cards.json` ou `SOURCES.md` manquent, dis-le et propose `structure`. Ne saute
 pas l'étape.
 
+**Un carrousel dont le brief porte une `narrativeDesign` (`format: "carrousel"`)** ne
+change rien au rendu : mêmes cinq portes, même moteur, même profil. Vérifie seulement
+que `check-family-brief.mjs` accepte le brief (un plan non montré, un choix synthétique
+ou un brouillon n'est pas un feu vert) et que le texte complet des cartes est validé ;
+un choix de plan n'est pas cette validation. Le plan ne dit rien du confort de lecture :
+regarde le rendu à 320, 390 et 430 px d'abord, et ne réduis jamais la typographie pour
+faire tenir une carte.
+
 ## La porte qui précède les cinq autres : le texte validé
 
 Décidé le 2026-09-14, après qu'une vidéo a été rendue — deux fois — sur un

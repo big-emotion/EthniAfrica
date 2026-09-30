@@ -46,9 +46,12 @@ for (const review of plan.reviews) {
   console.log(`  ${review.id}: ${detail}`);
 }
 console.log(
-  plan.narrationGabarit.route === "narrative-design"
-    ? "✔ brief valid; the narrative-design route applies: check the narration with check-gabarit.mjs <narration> --brief <brief.json>"
-    : plan.narrationGabarit.applies
-      ? `✔ brief valid; the name-origin gabarit « ${plan.narrationGabarit.type} » applies to the narration`
-      : "✔ brief valid; no fixed name-origin wording applies"
+  plan.narrationGabarit.route === "narrative-design" &&
+    brief.narrativeDesign?.format === "carrousel"
+    ? "✔ brief valid; the carousel narrative-design route applies: structure writes the card copy from the shown outline, and the renderer checks the layout"
+    : plan.narrationGabarit.route === "narrative-design"
+      ? "✔ brief valid; the narrative-design route applies: check the narration with check-gabarit.mjs <narration> --brief <brief.json>"
+      : plan.narrationGabarit.applies
+        ? `✔ brief valid; the name-origin gabarit « ${plan.narrationGabarit.type} » applies to the narration`
+        : "✔ brief valid; no fixed name-origin wording applies"
 );
