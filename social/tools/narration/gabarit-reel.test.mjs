@@ -75,6 +75,24 @@ test("the opening may say « plusieurs noms » of this subject without a rule ab
 });
 
 // @req REQ-032
+test("the canonical examples show both openings, so the norm they teach is not « always several names »", () => {
+  const texte = exemple("peuple-dialectes");
+  assert.ok(
+    texte.includes("Ce peuple porte plusieurs noms."),
+    "peuple-dialectes opens with the sentence proper to its subject"
+  );
+  assert.ok(
+    !texte.includes("toujours plusieurs noms"),
+    "peuple-dialectes does not claim it of every people"
+  );
+  assert.deepEqual(regles(texte, "peuple"), []);
+  assert.ok(
+    exemple("peuple").includes("Un même peuple porte toujours plusieurs noms."),
+    "peuple keeps the operator's universal sentence"
+  );
+});
+
+// @req REQ-032
 test("the universal sentence stays valid, and a sentence claiming more or less than either is refused", () => {
   for (const type of TYPES.filter((t) => t !== "patronyme")) {
     assert.deepEqual(regles(exemple(type), type), [], type);

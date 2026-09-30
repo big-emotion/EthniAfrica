@@ -293,3 +293,9 @@ Fictifs — noms, dates et sens inventés, à ne jamais publier :
 formes), `patronyme-transmission.fr.txt` (second cas patronyme, ci-dessus),
 `lieu.fr.txt`, `langue.fr.txt`. Ils servent aussi de cas de test au contrôleur :
 une phrase fixe modifiée ici fait échouer la suite.
+
+Les deux ouvertures permises y figurent : `peuple.fr.txt` garde la phrase de
+l'opérateur (« Un même peuple porte toujours plusieurs noms. »), et
+`peuple-dialectes.fr.txt` ouvre avec la phrase propre au sujet (« Ce peuple
+porte plusieurs noms. »), qui n'affirme rien des autres peuples. Un sujet qui
+n'a qu'un nom attesté ne doit pas reprendre la première.
