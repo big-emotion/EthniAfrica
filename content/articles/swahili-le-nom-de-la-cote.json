@@ -8,34 +8,100 @@
   "fr": {
     "slug": "swahili-le-nom-de-la-cote",
     "title": "D'où vient le nom swahili ?",
-    "excerpt": "D'où vient le nom « swahili » ?",
-    "sections": []
+    "excerpt": "Le swahili n'est pas une langue arabe : c'est une langue bantoue. Son nom, lui, vient de l'arabe, et désigne la côte. Ses locuteurs disent kiswahili ; le français et l'anglais disent swahili.",
+    "sections": [
+      {
+        "heading": "Une langue bantoue, un nom arabe",
+        "paragraphs": [
+          "Le swahili est-il une langue arabe ? Non. C'est une langue bantoue, du groupe des langues de la côte nord-est de l'Afrique. Son nom, en revanche, vient bien de l'arabe.",
+          "Au fil des siècles, la langue a emprunté beaucoup de mots à l'arabe, mais aussi au persan et au gujarati. M. J. Robinson note que ces emprunts ont conduit certains observateurs du passé à ne pas la compter parmi les langues africaines. Les emprunts d'une langue ne changent pas sa famille."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "Kiswahili : le nom que lui donnent ses locuteurs",
+        "paragraphs": [
+          "Ceux qui parlent la langue disent kiswahili. Le même mot change de préfixe selon ce qu'il désigne : kiswahili, la langue ; mswahili, une personne ; waswahili, le peuple.",
+          "Le français et l'anglais disent simplement swahili, sans préfixe. C'est le nom donné par d'autres, devenu le plus connu."
+        ],
+        "sourceRefs": ["s2", "s1"]
+      },
+      {
+        "heading": "Sawāḥil, les côtes",
+        "paragraphs": [
+          "Le mot remonte à l'arabe sawāḥil, « les côtes » (singulier sāḥil). Les Swahili seraient ainsi, d'après ce nom, « ceux de la côte », par opposition à l'intérieur des terres.",
+          "Au XIVe siècle, le voyageur Ibn Battuta raconte qu'il embarque à Mogadiscio pour « le pays des Sawahil ». Dans la traduction anglaise de H. A. R. Gibb, publiée en 1962, le mot est un nom de lieu, glosé « les côtes ». Robinson, lui, y lit déjà le nom « Swahili ». Les deux lectures existent ; nous n'avons pas consulté le texte arabe."
+        ],
+        "sourceRefs": ["s5", "s1"]
+      },
+      {
+        "heading": "1850 : trois explications notées par Krapf",
+        "paragraphs": [
+          "En 1850, le missionnaire Johann Ludwig Krapf publie un livre sur la langue, dont le titre l'écrit « Kisuáheli ». C'est la plus ancienne mention de ce nom que notre projet ait trouvée, pas forcément la plus ancienne qui existe.",
+          "À la page 10, il rapporte trois explications du nom. Ses interlocuteurs le rattachent à saua hila, qu'il traduit par « ruse » ou « artifice », et ajoutent qu'ils s'en vantent : « ne sommes-nous pas Suaheli ? », disent-ils quand ils se tirent d'un mauvais pas. Krapf écrit qu'il a une forte objection contre cette explication.",
+          "La deuxième passe par Süḥel, qui désigne en kiswahili le sud-est et le sud-ouest, un mot qu'il rapproche de l'arabe suhail, le nom de l'étoile Canope. La troisième, qu'il juge « la plus correcte », part de l'arabe sahel, pluriel suahel : le rivage, la côte.",
+          "Ce passage montre aussi que les Swahili employaient déjà ce nom pour eux-mêmes au milieu du XIXe siècle, et qu'ils en donnaient leur propre explication, différente de celle que le missionnaire a retenue."
+        ],
+        "sourceRefs": ["s3", "s4"]
+      },
+      {
+        "heading": "Ce qui n'est pas établi",
+        "paragraphs": [
+          "Depuis quand ce mot désigne-t-il des personnes, puis une langue ? Entre la mention d'Ibn Battuta et le livre de Krapf, nous n'avons rien établi."
+        ],
+        "sourceRefs": ["s5", "s3"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "Le swahili est une langue bantoue dont le nom vient de l'arabe sawāḥil, « les côtes ». Ses locuteurs l'appellent kiswahili. En 1850, ils donnaient à Krapf une autre explication de leur nom, la ruse ; lui préférait la côte.",
+          "Vous parlez kiswahili, ou vous connaissez une autre explication de ce nom ? Dites-nous d'où vous la tenez."
+        ],
+        "sourceRefs": ["s1", "s4"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
   },
   "sources": [
     {
       "id": "s1",
-      "title": "M. J. Robinson, 2024",
-      "tier": "needs_review"
+      "title": "M. J. Robinson, « History of the Standard Swahili Language », Oxford Research Encyclopedia of African History, 2024",
+      "tier": "needs_review",
+      "url": "https://doi.org/10.1093/acrefore/9780190277734.013.1012",
+      "kind": "article"
     },
     {
       "id": "s2",
       "title": "Fiche de la langue swahili, EthniAfrica",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "Notre fiche sur la langue swahili : le nom kiswahili et les formes mswahili et waswahili."
     },
     {
       "id": "s3",
       "title": "J. L. Krapf, Outline of the Elements of the Kisuáheli Language, 1850",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "url": "https://archive.org/details/krapf-outline-of-the-elements-of-the-kisuaheli-language",
+      "kind": "book",
+      "notes": "Publié à Tübingen ; exemplaire numérisé de l'Internet Archive."
     },
     {
       "id": "s4",
       "title": "J. L. Krapf, Outline of the Elements of the Kisuáheli Language, 1850, p. 10",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "url": "https://archive.org/details/krapf-outline-of-the-elements-of-the-kisuaheli-language",
+      "kind": "book",
+      "notes": "Page 10 : les trois explications du nom Suaheli, lues sur l'image de la page."
     },
     {
       "id": "s5",
       "title": "Ibn Battuta, trad. H. A. R. Gibb, Hakluyt Society, 1962, vol. II, p. 378",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "kind": "book",
+      "notes": "The Travels of Ibn Battuta, A.D. 1325-1354, traduction anglaise : « the country of the Sawahil [Coastlands] »."
     }
   ],
   "media": {

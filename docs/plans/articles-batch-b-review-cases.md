@@ -265,3 +265,26 @@ Wikipedia page, or on a work nobody read, is dropped or flagged.
 - **What would unblock it.** A read source for Syénambélé and its meaning; Richter 1980 opened
   for the caste nuance; Diakité & Sissoko for the Kénédougou and 1898; the exhibition catalogue
   for the Picasso link. Then a short article on the name first, the caste debate second.
+
+## Case B11 — `swahili-le-nom-de-la-cote`
+
+- **Reader's question.** Is Swahili an Arabic language? Where does its name come from?
+- **Primary reader need.** P2 (speakers who say Kiswahili) and P3.
+- **Claims and support.**
+  | Claim                                                                                                                                                                                                                                                    | Record source                                                                             |
+  | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+  | The name "Swahili" is of Arabic origin; the language is Bantu (north-east coastal cluster); borrowings from Arabic, Persian, Gujarati led some historical observers to class it as non-African                                                           | s1 Robinson 2024 (workshop: read in full; not reopened, the publisher page shows no text) |
+  | Kiswahili is the speakers' name for the language; Mswahili a person, Waswahili the people (fiche, no source of its own); ki- for the language (Robinson)                                                                                                 | s2 (fiche), s1                                                                            |
+  | Krapf 1850, p. 10: three derivations — saua hila "artifice", given by his informants, which he rejects; Süḥel, south-east and south-west, probably linked to Arabic suhail, Canopus; Sahel, coast, "the most correct"; speakers say "are not we Suaheli" | s4 (workshop: read on the page image)                                                     |
+  | Title "Kisuáheli" (1850): oldest mention the project found                                                                                                                                                                                               | s3                                                                                        |
+  | Ibn Battuta (14th c.), in Gibb's 1962 translation, sails from Mogadishu for "the country of the Sawahil [Coastlands]", a place name; Robinson reads the name Swahili there                                                                               | s5 (workshop: OCR text), s1                                                               |
+- **Uncertainty.** When the word first named people or a language is not established; Gibb and
+  Robinson disagree on Ibn Battuta.
+- **Dropped or flagged.** "Ethnie" 1896 (removed from the carousel for want of a reopened source);
+  Glottolog path (codes only). Inconsistency between formats: the carousel glosses Süḥel as "the
+  star Canopus", the reel narration as "the south-east"; Krapf gives both (the article gives both).
+  The reel voice was never listened to by the workshop agent (pronunciations to check by ear); the
+  reel end card is flagged in post.md as needing a new approved asset; video soundtrack not cleared
+  and video media credits not recovered; credit-check on carousel cards 4, 6-9.
+- **Improvement over the posts.** Gives all three of Krapf's derivations with his own judgment,
+  and sets Gibb's reading beside Robinson's.
