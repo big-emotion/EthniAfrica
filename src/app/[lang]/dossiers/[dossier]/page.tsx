@@ -14,6 +14,7 @@ import {
 import { getDossierBySlug, getDossierTranslation } from "@/lib/dossiers/corpus";
 import { isDossierSlugPublished } from "@/lib/dossiers/publication";
 import { getPublishedLocales, isLocale } from "@/lib/locale";
+import { articleJsonLd, serializeJsonLd } from "@/lib/articles/jsonLd";
 import { localeHead } from "@/lib/seo/localeAlternates";
 import type { Language } from "@/types/shared";
 
@@ -116,6 +117,13 @@ export default async function DossierRoute({ params }: DossierRouteProps) {
           language={language}
           article={found.article}
           related={found.related}
+        />
+        <script
+          type="application/ld+json"
+          // Built from the article record, with `<` escaped, never from the request.
+          dangerouslySetInnerHTML={{
+            __html: serializeJsonLd(articleJsonLd(found.article, language)),
+          }}
         />
       </PageLayout>
     );
