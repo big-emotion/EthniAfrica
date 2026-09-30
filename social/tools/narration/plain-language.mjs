@@ -107,22 +107,32 @@ const IMPERATIFS = new Set([
  *
  * Operator ruling of 2026-09-28: the narration says what the peoples call each
  * other, and the linguist, the author or the book that documents it goes on a
- * source card, after. Leading with them reads as a scientific corpus, and
- * citing a book reads as admitting the project never asked the people. The
- * source is still owed; only its place moves. A lexical check, on purpose: it
+ * source card, after. Leading with them makes the sentence's authority the
+ * reference instead of the subject. The source is still owed; only its place
+ * moves. Citing a book proves neither that people were asked nor that they
+ * were not, so nothing here infers either. A lexical check, on purpose: it
  * catches the shapes that were shipped (« Un livre de 1912 le montre »,
  * « Le linguiste X publie… »), not every way of hiding behind a name.
  *
- * A scholar is refused as the *source* of a statement, never as an *actor* in
- * the history of a name: « Un linguiste européen inscrit la langue dans un
- * catalogue en 1934 » says who named, which is the project's own question. So a
- * scholar is flagged only in a sentence that also carries a verb of speech or
- * knowledge (« écrit », « pense », « note »…); a document is flagged anywhere.
+ * A scholar or a document is refused as the *source* of a statement, never as
+ * an *actor* in the history of a name or as the *subject* of the sentence:
+ * « Un linguiste européen inscrit la langue dans un catalogue en 1934 » says
+ * who named, and « Ce livre raconte la vie de son auteur » is about the book.
+ * So either is flagged only when the sentence also carries a verb of speech or
+ * knowledge (« écrit », « pense », « note »…) or opens with « selon » /
+ * « d'après » in front of it. That cannot tell a book that *describes* from a
+ * book that is the subject of a reading tip; such a sentence is refused until
+ * a reviewer records why in a review (`appliquerRevues`), never bypassed.
  */
-const DOCUMENTS =
-  /\b(?:livres?|ouvrages?|articles?|dictionnaires?|etudes?|manuels?|theses?)\b/;
-const SAVANTS =
-  /\b(?:linguistes?|philologues?|ethnologues?|anthropologues?|historiens?|historiennes?|chercheu(?:rs?|ses?)|universitaires?|savants?|lexicographes?|auteurs?|autrices?)\b/;
+const NOMS_DOCUMENT =
+  "livres?|ouvrages?|articles?|dictionnaires?|etudes?|manuels?|theses?";
+const NOMS_SAVANT =
+  "linguistes?|philologues?|ethnologues?|anthropologues?|historiens?|historiennes?|chercheu(?:rs?|ses?)|universitaires?|savants?|lexicographes?|auteurs?|autrices?";
+const DOCUMENTS = new RegExp(`\\b(?:${NOMS_DOCUMENT})\\b`);
+const SAVANTS = new RegExp(`\\b(?:${NOMS_SAVANT})\\b`);
+const OUVERTURE_ATTRIBUEE = new RegExp(
+  `^(?:selon|d'apres)\\s+(?:l'|(?:le|la|les|ce|cet|cette|un|une|des)\\s+)?(?:${NOMS_DOCUMENT}|${NOMS_SAVANT})\\b`
+);
 const PAROLE_DU_SAVANT =
   /\b(?:ecri(?:t|vent)|not(?:e|ent)|pens(?:e|ent)|montr(?:e|ent)|affirm(?:e|ent)|expliqu(?:e|ent)|relev(?:e|ent)|rapport(?:e|ent)|decri(?:t|vent)|publi(?:e|ent)|estim(?:e|ent)|propos(?:e|ent)|soutien(?:t|nent)|dit|disent|remarqu(?:e|ent)|observ(?:e|ent)|constat(?:e|ent)|considere(?:nt)?|jug(?:e|ent)|attribu(?:e|ent))\b/;
 
@@ -196,8 +206,10 @@ function verifierPhrase(phrase) {
 
   const plie = plier(nues);
   const autorite =
-    plie.match(DOCUMENTS) ??
-    (PAROLE_DU_SAVANT.test(plie) ? plie.match(SAVANTS) : null);
+    plie.trimStart().match(OUVERTURE_ATTRIBUEE) ??
+    (PAROLE_DU_SAVANT.test(plie)
+      ? (plie.match(DOCUMENTS) ?? plie.match(SAVANTS))
+      : null);
   if (autorite) {
     trouvailles.push({
       regle: "attribution-en-tete",
@@ -246,4 +258,47 @@ export function verifierNarration(narration) {
       }
     });
   return trouvailles;
+}
+
+/**
+ * Sets aside the findings a reviewer has explicitly accepted, and nothing else.
+ *
+ * A lexical rule cannot decide whether a book is the subject of a sentence or
+ * an authority put in front of it, so an ambiguous case is accepted only by an
+ * entry naming the exact sentence, the rule and a written reason. An entry with
+ * no reason blocks nothing, and an entry that no longer matches a sentence is
+ * reported as stale: a review must not outlive the text it was written for.
+ *
+ * @param {ReturnType<typeof verifierNarration>} trouvailles
+ * @param {{phrase: string, regle: string, raison: string}[]} revues
+ */
+export function appliquerRevues(trouvailles, revues = []) {
+  const valides = [];
+  const invalides = [];
+  for (const revue of revues) {
+    const complete =
+      revue.phrase &&
+      revue.regle &&
+      typeof revue.raison === "string" &&
+      revue.raison.trim();
+    (complete ? valides : invalides).push(revue);
+  }
+
+  const utilisees = new Set();
+  const bloquantes = [];
+  const acceptees = [];
+  for (const trouvaille of trouvailles) {
+    const index = valides.findIndex(
+      (revue) =>
+        revue.phrase === trouvaille.phrase && revue.regle === trouvaille.regle
+    );
+    if (index === -1) {
+      bloquantes.push(trouvaille);
+    } else {
+      utilisees.add(index);
+      acceptees.push({ ...trouvaille, raison: valides[index].raison });
+    }
+  }
+  const perimees = valides.filter((_, index) => !utilisees.has(index));
+  return { bloquantes, revues: acceptees, invalides, perimees };
 }

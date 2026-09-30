@@ -45,7 +45,11 @@ changent.
 ### Ouverture (peuple, pays, lieu, langue)
 
 1. Une question : « Comment ce peuple s'appelle-t-il lui-même ? »
-2. « Un même [peuple] porte toujours plusieurs noms. »
+2. « Un même [peuple] porte toujours plusieurs noms. » — ou, quand la recherche ne
+   permet pas de le dire de tous les sujets de cette catégorie : « Ce [peuple]
+   porte plusieurs noms. » (« Cette » pour un nom féminin). Choisir la seconde
+   forme par défaut : choisir un sujet qui a plusieurs noms attestés n'établit pas
+   une règle sur tous les peuples, pays ou langues. Le contrôleur accepte les deux.
 3. Un seul endonyme : « Un seul vient de [lui et de sa langue] : c'est l'endonyme, le nom de l'intérieur. »
    Plusieurs endonymes : « Ici, il en emploie [deux], selon [son dialecte] : ce sont des endonymes, les noms de l'intérieur. »
 4. « Les autres viennent d'ailleurs : ce sont des exonymes, et certains sont plus connus que [le sien]. »

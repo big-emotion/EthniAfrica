@@ -146,15 +146,19 @@ function verifierOuverture(paragraphe, numero, type, nbInterieur) {
     );
   }
   const refs = vocab.referents.join("|");
+  // Two accepted forms. The universal one is the operator's original sentence
+  // and stays valid. The subject-specific one exists because « toujours » is a
+  // claim about every people, country or language, and choosing a subject that
+  // has several attested names does not establish it (audit finding C11).
   const attendue = new RegExp(
-    `^(?:Un|Une) même (?:${refs}) ${vocab.verbe} toujours plusieurs ${vocab.formes}\\.$`
+    `^(?:(?:Un|Une) même (?:${refs}) ${vocab.verbe} toujours plusieurs ${vocab.formes}|(?:Ce|Cette) (?:${refs}) ${vocab.verbe} plusieurs ${vocab.formes})\\.$`
   );
   if (!definition || !attendue.test(definition)) {
     trouvailles.push(
       trouvaille(
         numero,
         "gabarit-ouverture",
-        `deuxième phrase attendue : « Un même ${vocab.referents[0]} ${vocab.verbe} toujours plusieurs ${vocab.formes}. »`
+        `deuxième phrase attendue : « Un même ${vocab.referents[0]} ${vocab.verbe} toujours plusieurs ${vocab.formes}. » ou, si la recherche ne permet pas de le dire de tous, « Ce ${vocab.referents[0]} ${vocab.verbe} plusieurs ${vocab.formes}. »`
       )
     );
   }

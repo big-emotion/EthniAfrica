@@ -41,6 +41,61 @@ test("every canonical example passes its own type", () => {
 });
 
 // @req REQ-032
+test("the opening may say « plusieurs noms » of this subject without a rule about every subject", () => {
+  const exemplesParType = [
+    [
+      "peuple",
+      "Un même peuple porte toujours plusieurs noms.",
+      "Ce peuple porte plusieurs noms.",
+    ],
+    [
+      "pays",
+      "Un même pays porte toujours plusieurs noms.",
+      "Ce pays porte plusieurs noms.",
+    ],
+    [
+      "langue",
+      "Une même langue porte toujours plusieurs noms.",
+      "Cette langue porte plusieurs noms.",
+    ],
+    [
+      "lieu",
+      "Une même ville porte toujours plusieurs noms.",
+      "Cette ville porte plusieurs noms.",
+    ],
+  ];
+  for (const [type, universelle, propre] of exemplesParType) {
+    const texte = exemple(type);
+    assert.deepEqual(
+      regles(remplacer(texte, universelle, propre), type),
+      [],
+      `${type} : la phrase propre au sujet doit passer`
+    );
+  }
+});
+
+// @req REQ-032
+test("the universal sentence stays valid, and a sentence claiming more or less than either is refused", () => {
+  for (const type of TYPES.filter((t) => t !== "patronyme")) {
+    assert.deepEqual(regles(exemple(type), type), [], type);
+  }
+  const texte = exemple("peuple");
+  const universelle = "Un même peuple porte toujours plusieurs noms.";
+  for (const autre of [
+    "Tout peuple porte plusieurs noms.",
+    "Ce peuple porte deux noms.",
+    "Ce peuple a plusieurs noms.",
+  ]) {
+    assert.ok(
+      regles(remplacer(texte, universelle, autre), "peuple").includes(
+        "gabarit-ouverture"
+      ),
+      autre
+    );
+  }
+});
+
+// @req REQ-032
 test("an example fails when it is read as another type", () => {
   assert.notDeepEqual(verifierGabarit(exemple("peuple"), "pays"), []);
   assert.notDeepEqual(verifierGabarit(exemple("langue"), "lieu"), []);

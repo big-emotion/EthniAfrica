@@ -1,9 +1,122 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
+import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import { fileURLToPath } from "node:url";
 
-import { verifierNarration } from "./plain-language.mjs";
+import { appliquerRevues, verifierNarration } from "./plain-language.mjs";
 
 const regles = (texte) => verifierNarration(texte).map((f) => f.regle);
+
+// @req REQ-032
+test("a book that is itself the subject is not an authority put in front", () => {
+  for (const phrase of [
+    "Ce livre raconte la vie de son auteur.",
+    "Ce livre est un récit de voyage.",
+  ]) {
+    assert.deepEqual(regles(phrase), [], phrase);
+  }
+});
+
+// @req REQ-032
+test("« selon » or « d'après » in front of a document or a scholar is refused", () => {
+  for (const phrase of [
+    "Selon ce dictionnaire, le mot vient du peul.",
+    "D'après ce dictionnaire, le mot vient du peul.",
+    "Selon l'historien, le mot est récent.",
+  ]) {
+    assert.ok(regles(phrase).includes("attribution-en-tete"), phrase);
+  }
+});
+
+// @req REQ-032
+test("a surname alone is not judged by the lexical rule", () => {
+  assert.ok(
+    !regles("Selon Delafosse, le mot est récent.").includes(
+      "attribution-en-tete"
+    )
+  );
+});
+
+const PHRASE_AMBIGUE = "Ce livre décrit la vie de son auteur.";
+const RAISON =
+  "Le livre est le sujet de la carte : une recommandation de lecture.";
+
+// @req REQ-032
+test("a document that describes something stays refused until a reviewer says why it is the subject", () => {
+  assert.ok(regles(PHRASE_AMBIGUE).includes("attribution-en-tete"));
+  const { bloquantes, revues } = appliquerRevues(
+    verifierNarration(PHRASE_AMBIGUE),
+    [{ phrase: PHRASE_AMBIGUE, regle: "attribution-en-tete", raison: RAISON }]
+  );
+  assert.deepEqual(bloquantes, []);
+  assert.equal(revues.length, 1);
+  assert.equal(revues[0].raison, RAISON);
+});
+
+// @req REQ-032
+test("a review with no reason does not unblock anything", () => {
+  const { bloquantes, invalides } = appliquerRevues(
+    verifierNarration(PHRASE_AMBIGUE),
+    [{ phrase: PHRASE_AMBIGUE, regle: "attribution-en-tete", raison: "  " }]
+  );
+  assert.equal(bloquantes.length, 1);
+  assert.equal(invalides.length, 1);
+});
+
+// @req REQ-032
+test("the command line accepts a reviewed sentence only with its reason, and reports a stale review", () => {
+  const dossier = mkdtempSync(join(tmpdir(), "narration-revue-"));
+  try {
+    const narration = join(dossier, "narration.fr.txt");
+    const revues = join(dossier, "revues.json");
+    const lancer = (...args) =>
+      spawnSync(
+        process.execPath,
+        [
+          fileURLToPath(new URL("./check-narration.mjs", import.meta.url)),
+          ...args,
+        ],
+        { encoding: "utf-8" }
+      );
+    writeFileSync(narration, `${PHRASE_AMBIGUE}\n`);
+
+    assert.equal(lancer(narration).status, 1);
+
+    writeFileSync(
+      revues,
+      JSON.stringify([
+        {
+          phrase: PHRASE_AMBIGUE,
+          regle: "attribution-en-tete",
+          raison: RAISON,
+        },
+      ])
+    );
+    const acceptee = lancer(narration, "--revues", revues);
+    assert.equal(acceptee.status, 0, acceptee.stdout);
+    assert.match(acceptee.stdout, /relue/);
+    assert.ok(acceptee.stdout.includes(RAISON));
+
+    writeFileSync(narration, "Ils se nomment Peuls.\n");
+    const perimee = lancer(narration, "--revues", revues);
+    assert.equal(perimee.status, 1);
+    assert.match(perimee.stdout, /périmée/);
+  } finally {
+    rmSync(dossier, { recursive: true, force: true });
+  }
+});
+
+// @req REQ-032
+test("a review that matches no sentence is reported as stale, never silently kept", () => {
+  const { perimees } = appliquerRevues(
+    verifierNarration("Ils se nomment Peuls."),
+    [{ phrase: PHRASE_AMBIGUE, regle: "attribution-en-tete", raison: RAISON }]
+  );
+  assert.equal(perimees.length, 1);
+});
 
 // @req REQ-032
 test("a sentence that opens on its subject passes", () => {
