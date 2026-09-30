@@ -185,3 +185,74 @@ Done and tested:
 
 Not done: search-companion destinations (they reach articles through Découvertes),
 old-URL disposition beyond "withheld routes stay 404", brand charter §8.6 text.
+
+## P3 — recovery and import (worker B, merged; recovery is PARTIAL)
+
+Tool: `social/tools/articles-import/` (dry run by default, `--write`, required `--out` outside
+the repository, no default path, roots read from the two environment variables). 36 tests on
+isolated fixtures cover: dry run writes nothing, byte-identical re-run, refusal on a source
+changed since the snapshot / hash mismatch / two undecided editions / reserved, legacy or
+duplicate slug, slide order kept, cross-posts collapsed into one edition, a corrected edition
+shown with its verbatim correction note and never the older URL, hand-edited drafts never
+overwritten, missing media raised as an exception, private roots and production notes never
+reaching public output. `npm run test:social-tools`: 381 pass, 0 fail.
+
+Private outputs (not committed): `manifest.json`, `report.md`, `curation.json` and
+`derivatives/` under the workshop's `_articles-recovery` folder (checksums, per-candidate
+evidence and next actions). A re-run after the last change left all 321 files byte-identical.
+The committed result is 60 draft records in `content/articles/` (all `status: draft`, no body
+text, nothing published); all 60 load through `readArticleCorpus()` with zero errors and no
+local path appears in them (`check:local-paths` green).
+
+Cut-off 2026-09-30. 72 candidates: 74 published private records, 2 records the site ledger
+shows live but the library does not, and all 56 ledger campaigns are accounted for.
+
+| Disposition    | Count | Items                                                                                                                                                                                                                                                                                 |
+| -------------- | ----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Draft imported |    60 | all in the manifest                                                                                                                                                                                                                                                                   |
+| Needs recovery |     2 | `senegal-notre-pirogue` (two cuts, none selected); `bantou-ntu-ba-prefixe` (live on the ledger, no library record matches; `bantou-cent-soixante-dix` looks similar but its content does not match, not linked)                                                                       |
+| Not published  |     4 | `bangala-un-nom-plusieurs-referents`, `lingala-langue-des-grands-marches`, `macina-diina-pouvoir`, `traore-jamu-transmission`                                                                                                                                                         |
+| Excluded       |     6 | `appel-corrections`, `prochains-sujets-appel` (calls to the audience); `kassav`, `docteur-nico`, `francis-bebey` (Mémoires sonores: no site article owed, music not cleared); `zanu-airplane-analogy` (third-party video, rights unverified). The operator can reverse any exclusion. |
+
+Mapping between the two registries: 22 groups match automatically, 33 by curated link with
+written evidence in `curation.json`; one is only probable (`corriger-la-carte` ↔
+`mercator-afrique-petite`). Recovered from workshop `rendus/images`, **not proven to be the
+exact posted files**: `creole-ne-dans-la-colonie` (6 slides), `senoufo-caste-sculpteurs` (7),
+`zokou-gbeuly`. The 8 unresolved copy pointers stay unresolved (`post.md` says the copy was not
+found; the workshop folders hold only subject notes).
+
+Exceptions raised, by type (counts are per item, several per candidate): credit-check 94 (credit
+and image description share no word), sources-empty 35, audio-not-cleared 28 (one per video; no
+soundtrack exported), credits-missing 26, excerpt-placeholder 18 (excerpt repeats the title),
+image-reused 15, unattributed-occurrence 13 (ledger URLs with no filed edition, e.g. the Lingala
+2026-09-07 TikTok carousel), slide-text-missing 11 (the cards.json of the 2026-09-11 batch were
+destroyed by the workshop reset; 8 drafts have slides exported and hashed but no displayable
+media), copy-unresolved 8, date-conflict 7 (ledger date one day after the TikTok id day),
+wikipedia-source 6, rights-restricted 5 (book covers marked © publisher), registry-status 4
+(`zokou-gbeuly` and the Guinée carousel are `pret` in the library but live on the site ledger;
+neither ledger was edited), no-url 2, no-youtube 1 (`ghana-qui-a-choisi-le-nom`).
+
+Pilots, as inspected by the worker on rendered slides and frames: Mali video hash matches its
+delivery record, YouTube `A99ETtxdxiU` plus three networks, 13 factual sources parsed from the
+credits (two point at Wikipedia, flagged), poster 1080×1920 49 KB. Lingala: nine 1080×1350
+slides, 1.10 MB of WebP; credit/image mismatches on cards 6 and 8, card 9 reuses card 2's image,
+a Wikipédia FR reference; the ledger's 2026-09-17 carousel URL has a TikTok id created
+2026-09-16 about an hour after the slides were rendered and was attached to this edition on
+that evidence with a date-conflict exception; the 2026-09-07 carousel stays unattributed; the
+2026-09-05 video `kzzDsZQlprI` is a separate edition, not shown. Mandé: library video matches the
+workshop render by hash, YouTube `bqpj5UiwGJ8`, supersedes `mande-nest-pas-un-peuple`
+(`vESK91smqxQ`), correction note quoted verbatim from the approved narration, 5 sources
+(Camara Laye tiered `needs_review`), media credits not parsed.
+
+Sizes: 334 WebP files, 36.41 MiB, of which 31.26 MiB are referenced by the drafts; the largest
+file is 390 KB. That is about 48 times the 0.76 MiB of `public/` headroom, so **nothing is in
+`public/`, no limit was raised, and the drafts' media cannot be served until a durable host
+exists.** The 30 selected video masters (470 MiB) were not exported.
+
+Not verified by anyone in this phase: that any platform URL is live; any licence or
+website-reuse right including audio; historical accuracy; slide text against images except
+about a dozen slides and frames the worker viewed; that the Mandé narration matches the audio;
+that TikTok id days (inferred from the id format) are the platform's dates.
+
+Worker B's contract requests (empty excerpt and absent author on drafts, per-format edition
+and `originals`, per-slide credits) are not adopted; drafts load with placeholders today.
