@@ -1,6 +1,6 @@
 {
   "id": "manden-mande-mandingue-trois-mots",
-  "status": "draft",
+  "status": "published",
   "author": {
     "name": "EthniAfrica"
   },
@@ -166,5 +166,6 @@
       }
     ]
   },
-  "relatedArticleIds": ["mali-quelle-histoire"]
+  "relatedArticleIds": ["mali-quelle-histoire"],
+  "publishedAt": "2026-09-30"
 }

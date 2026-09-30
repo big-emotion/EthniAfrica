@@ -1,6 +1,6 @@
 {
   "id": "pygmee-d-ou-vient-le-nom",
-  "status": "draft",
+  "status": "published",
   "author": {
     "name": "EthniAfrica"
   },
@@ -172,5 +172,6 @@
       }
     ]
   },
-  "relatedArticleIds": []
+  "relatedArticleIds": [],
+  "publishedAt": "2026-09-30"
 }

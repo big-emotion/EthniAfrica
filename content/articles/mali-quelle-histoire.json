@@ -1,6 +1,6 @@
 {
   "id": "mali-quelle-histoire",
-  "status": "draft",
+  "status": "published",
   "author": {
     "name": "EthniAfrica"
   },
@@ -205,5 +205,6 @@
       }
     ]
   },
-  "relatedArticleIds": ["manden-mande-mandingue-trois-mots"]
+  "relatedArticleIds": ["manden-mande-mandingue-trois-mots"],
+  "publishedAt": "2026-09-30"
 }

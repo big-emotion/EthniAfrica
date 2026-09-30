@@ -1,6 +1,6 @@
 {
   "id": "cameroun-le-continent",
-  "status": "draft",
+  "status": "published",
   "author": {
     "name": "EthniAfrica"
   },
@@ -166,5 +166,6 @@
       }
     ]
   },
-  "relatedArticleIds": ["cameroun-crevette"]
+  "relatedArticleIds": ["cameroun-crevette"],
+  "publishedAt": "2026-09-30"
 }

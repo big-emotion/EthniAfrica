@@ -1,6 +1,6 @@
 {
   "id": "comprendre-afrique-noms",
-  "status": "draft",
+  "status": "published",
   "author": {
     "name": "EthniAfrica"
   },
@@ -184,5 +184,6 @@
     "mali-quelle-histoire",
     "lingala-invente-par-les-belges",
     "dioula-un-metier-une-langue-une-identite"
-  ]
+  ],
+  "publishedAt": "2026-09-30"
 }

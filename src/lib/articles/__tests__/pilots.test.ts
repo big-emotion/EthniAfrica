@@ -23,10 +23,13 @@ describe.each(PILOT_IDS)("written article %s", (id) => {
   const article = articles.find((a) => a.id === id);
 
   // @req REQ-114
-  it("loads and stays a draft without a publication date", () => {
+  it("loads, and is dated exactly when it is published", () => {
     expect(article).toBeDefined();
-    expect(article.status).toBe("draft");
-    expect(article.publishedAt).toBeUndefined();
+    if (article.status === "published") {
+      expect(article.publishedAt).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+    } else {
+      expect(article.publishedAt).toBeUndefined();
+    }
   });
 
   // @req REQ-114
