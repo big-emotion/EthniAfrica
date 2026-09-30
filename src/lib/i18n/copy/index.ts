@@ -3,6 +3,7 @@ import { adminCopy } from "@/lib/i18n/copy/admin";
 import { classificationCopy } from "@/lib/i18n/copy/classification";
 import { atlasCopy } from "@/lib/i18n/copy/atlas";
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
+import { articlesCopy } from "@/lib/i18n/copy/articles";
 import { colonizationCopy } from "@/lib/i18n/copy/colonization";
 import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import { chromeCopy } from "@/lib/i18n/copy/chrome";
@@ -61,6 +62,7 @@ export const COPY_MODULES = {
   admin: adminCopy,
   server: serverCopy,
   anecdotes: anecdotesCopy,
+  articles: articlesCopy,
   proverbs: proverbsCopy,
   gallery: galleryCopy,
   generatedImages: generatedImagesCopy,
