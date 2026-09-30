@@ -243,3 +243,25 @@ Wikipedia page, or on a work nobody read, is dropped or flagged.
   or equivalent) for the 1933 start in Jamaica. The claims could then be written as a short
   article: Tafari son of Makonnen, ras, negus, Negusa Nagast as Haile Selassie, the claimed
   Solomonic line as a claim, and the Jamaican movement taking the pre-1930 name.
+
+## Case B10 — `senoufo-syenambele` — **left unwritten**
+
+- **Reader's question.** Where does the name Sénoufo come from, and what does Syénambélé mean?
+- **Why no body was written.** The workshop's own `SOURCES.md` records that the carousel's central
+  claims are not anchored in anything read: the self-name Syénambélé and its meaning come from our
+  Senufo fiche, where no source carries them; the caste hierarchy rests on tertiary sources
+  labelled unverified; the Picasso / Trocadéro / 1907 context is written "as context rather than
+  as a separately sourced claim"; the "Senufo Unbound" link to Picasso and Léger was read only
+  through a radio review we could not find again; nothing records that Richter 1980 or Diakité &
+  Sissoko 2014 were opened. We could not open Richter or a museum text on Senufo art in this pass
+  (Met Museum: HTTP 429, then no readable text). The name part, which the article title promises,
+  would have rested on one unsourced fiche sentence.
+- **Unresolved flags.** Card 7, « Ce peuple n'a jamais eu de roi », contradicts card 6, which
+  names the Kénédougou, a Senufo kingdom over part of the group (the workshop rule forbids
+  "jamais" where an exception is documented). The slides were recovered from the workshop render
+  folder and are **not proven to be the files posted**; no URL is recorded in the library. The
+  message audit's criterion 7 (two unrelated threads, caste/Picasso vs governance) was never
+  resolved.
+- **What would unblock it.** A read source for Syénambélé and its meaning; Richter 1980 opened
+  for the caste nuance; Diakité & Sissoko for the Kénédougou and 1898; the exhibition catalogue
+  for the Picasso link. Then a short article on the name first, the caste debate second.
