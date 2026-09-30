@@ -1,0 +1,49 @@
+{
+  "id": "nzema-appolo-frontiere",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "nzema-appolo-frontiere",
+    "title": "D'où vient le nom Nzema ?",
+    "excerpt": "En Côte d'Ivoire et au Ghana, on les appelle Appolo, du nom d'une sainte. Eux se disent Nzema.",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "appolo-nzema"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "L7EXNupLWds",
+        "poster": {
+          "src": "nzema-appolo-frontiere/appolo-nzema/poster-67fed787dc51.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/reel/DdQ64__Krjy/",
+        "publishedAt": "2026-09-14"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7685334903814180118",
+        "publishedAt": "2026-09-14"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/L7EXNupLWds",
+        "publishedAt": "2026-09-14"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

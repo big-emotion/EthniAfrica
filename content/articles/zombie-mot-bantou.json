@@ -1,0 +1,44 @@
+{
+  "id": "zombie-mot-bantou",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Mythe déconstruit",
+  "fr": {
+    "slug": "zombie-mot-bantou",
+    "title": "D'où vient le mot « zombie » ?",
+    "excerpt": "Le premier film de zombies est américain. Le mot, lui, est bantou.",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "zombie-bantou"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "OQSu4O9TjN4",
+        "poster": {
+          "src": "zombie-mot-bantou/zombie-bantou/poster-d96c53f7c18e.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7684713962822176022",
+        "publishedAt": "2026-09-12"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/OQSu4O9TjN4",
+        "publishedAt": "2026-09-12"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ghana-empire-jamais-sur-son-territoire",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Mythe déconstruit",
+  "fr": {
+    "slug": "ghana-empire-jamais-sur-son-territoire",
+    "title": "D'où vient le nom Ghana ?",
+    "excerpt": "Ghana — l'empire qui n'était pas là",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "ghana"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "T73Pg93_6_E",
+        "poster": {
+          "src": "ghana-empire-jamais-sur-son-territoire/ghana/poster-815ce9d324db.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7683294371663465750",
+        "publishedAt": "2026-09-08"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/T73Pg93_6_E",
+        "publishedAt": "2026-09-09"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

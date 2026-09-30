@@ -1,0 +1,68 @@
+{
+  "id": "pygmee-d-ou-vient-le-nom",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "pygmee-d-ou-vient-le-nom",
+    "title": "D'où vient le nom « pygmée » ?",
+    "excerpt": "D'où vient le nom « pygmée » ?",
+    "sections": []
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "GeoNames, Kribi (id 2229761), 2.93725 N, 9.90765 E, seat of a second-order administrative division, read 2026-09-27",
+      "url": "https://www.geonames.org/2229761/kribi.html",
+      "tier": "referenced"
+    },
+    {
+      "id": "s2",
+      "title": "IFAD / IWGIA, Democratic Republic of the Congo: Country Technical Note on Indigenous Peoples' Issues, 2022 (reported by the external research of 2026-09-26; not reopened: HTTP 403 on 2026-09-27)",
+      "url": "https://www.ifad.org/en/w/publications/democratic-republic-of-the-congo-country-technical-note-on-indigenous-peoples-issues",
+      "tier": "official"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "pygmee-d-ou-vient-le-nom"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "dIgFvRJnxug",
+        "poster": {
+          "src": "pygmee-d-ou-vient-le-nom/pygmee-d-ou-vient-le-nom/poster-a29556122f72.webp",
+          "width": 1080,
+          "height": 1920
+        },
+        "credits": "Natural Earth : relief, fleuves et frontières (1:10m) — domaine public ; Natural Earth, HYP_HR_SR_OB_DR 2.0.0 (découpe Afrique centrale) — domaine public ; Natural Earth, rivers + lake centerlines 1:10m — domaine public ; JosepMGracia, Wikimedia Commons — CC BY-SA 4.0 (recadrée) ; BACHELOR45, Wikimedia Commons — CC BY-SA 4.0 (recadrée) ; Owobusingye, Wikimedia Commons — CC BY 4.0 (recadrée) ; Garry Walsh / Trócaire, Wikimedia Commons — CC BY 2.0 ; Texte grec : Homeri Opera, éd. Monro et Allen, Oxford, Oxford University Press, 1920, via Perseus Digital Library — texte numérique sous licence CC BY-SA 3.0 US · traduction EthniAfrica ; Homère, Iliade, ms. Vaticanus Palatinus graecus 246, fol. 1r (XVe siècle), Bibliothèque apostolique vaticane, via Wikimedia Commons — domaine public (recadrée) ; Marie-Lan Nguyen, Wikimedia Commons · British Museum — domaine public (recadrée) ; Wilhelm Zahn, dessin publié en 1833 (Zahn et Jahn), Wikimedia Commons — domaine public ; Paul B. Du Chaillu, The Country of the Dwarfs, New York, Harper & Brothers, 1872, chap. XXIV, p. 249 (Project Gutenberg, ebook 48643) — domaine public · traduction EthniAfrica ; Act No. 5-2011 of 25 February 2011 on the Promotion and Protection of Indigenous Populations, texte anglais publié par IWGIA — traducteur non nommé, aucune mention de réutilisation · traduction EthniAfrica"
+      }
+    ],
+    "originals": [
+      {
+        "network": "facebook",
+        "url": "https://www.facebook.com/reel/2303466483736794",
+        "publishedAt": "2026-09-28"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/Dd1z1vRKDaq/",
+        "publishedAt": "2026-09-28"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7690652445919218966",
+        "publishedAt": "2026-09-28"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/watch?v=dIgFvRJnxug",
+        "publishedAt": "2026-09-28"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

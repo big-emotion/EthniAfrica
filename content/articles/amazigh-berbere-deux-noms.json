@@ -1,0 +1,103 @@
+{
+  "id": "amazigh-berbere-deux-noms",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "La carte cachée",
+  "fr": {
+    "slug": "amazigh-berbere-deux-noms",
+    "title": "D'où vient le nom Amazigh ?",
+    "excerpt": "Amazigh veut dire les hommes libres. Berbère vient de barbarus.",
+    "sections": []
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Salem Chaker, Encyclopédie berbère, 1986",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s2",
+      "title": "Yves Modéran, Encyclopédie berbère, 2010",
+      "tier": "needs_review"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "amazigh-neuf-pays"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "amazigh-berbere-deux-noms/amazigh-neuf-pays/slide-01-8dbb509c49ba.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un versant de haute montagne tacheté de neige, dominant une vallée aride et des chaînes bleutées jusqu'à l'horizon",
+            "text": "Personne n'a choisi le mot Berbère.\n\ndu Maroc à l'Égypte, et jusqu'au Burkina Faso\n\nDeux noms. Aucun ne dit ce qu'on croit."
+          },
+          {
+            "src": "amazigh-berbere-deux-noms/amazigh-neuf-pays/slide-02-e9ae4ab791ef.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une borne routière blanche à sommet rouge, portant un nom en arabe, le même en tifinagh et le chiffre 10, au bord d'une route de campagne",
+            "text": "Leur nom change avec le nombre.\n\nAmazigh — un homme\nImazighen — le peuple\n\nAu féminin, tamazight dit la femme et la langue. Elle est officielle au Maroc depuis 2011.\n\nSalem Chaker, Encyclopédie berbère, 1986"
+          },
+          {
+            "src": "amazigh-berbere-deux-noms/amazigh-neuf-pays/slide-03-f11afa105737.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la page de titre gravée d'un livre ancien en italien, un grand bandeau de capitales en haut et une vignette ornée à la base",
+            "text": "« Les hommes libres » a un auteur.\n\nOn lit partout qu'Amazigh veut dire « les hommes libres ». La phrase vient de Jean-Léon l'Africain, un voyageur du XVIe siècle. Il traduit awal amazigh par « langage noble ». L'historien Stéphane Gsell la reprend, et elle se répand.\n\nSalem Chaker, Encyclopédie berbère, 1986"
+          },
+          {
+            "src": "amazigh-berbere-deux-noms/amazigh-neuf-pays/slide-04-3d5c48470de1.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une haute stèle de pierre dressée dans une vitrine de musée, couverte de signes incisés, avec un cartouche rectangulaire gravé en son milieu",
+            "text": "Salem Chaker dit que c'est faux.\n\nSalem Chaker est linguiste, spécialiste des langues berbères. Il écrit que cette traduction n'est « certainement pas fondée ». Pour lui, c'est un nom de peuple, pas un rang. Les Grecs écrivaient déjà Maxyes, les Romains Mazices.\n\nSalem Chaker, Encyclopédie berbère, 1986"
+          },
+          {
+            "src": "amazigh-berbere-deux-noms/amazigh-neuf-pays/slide-05-7bf2a769687b.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un massif rocheux isolé se dressant au milieu d'un désert de pierres, sous un ciel chargé de nuages",
+            "text": "Sauf chez les Touareg.\n\nChez les Touareg du Mali et du Niger, amajegh désigne bien le noble. Dans le sud du Maroc et au Sahara, amazigh a servi à dire l'homme libre, face à ceux qu'on tenait pour inférieurs. La traduction est vraie là-bas. Elle ne l'est pas partout.\n\nSalem Chaker, Encyclopédie berbère, 1986"
+          },
+          {
+            "src": "amazigh-berbere-deux-noms/amazigh-neuf-pays/slide-06-47d4df66d8ed.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la vaste cour dallée d'une mosquée bordée d'arcades, avec une tour carrée à degrés au fond, sous un ciel de nuages",
+            "text": "Berbère vient probablement de barbarus.\n\nLes Arabes forgent ce mot à leur arrivée, au VIIe siècle. Il vient probablement du latin barbari, qui voulait dire étranger. Plus tard, des généalogistes inventent un ancêtre, Berr, pour expliquer ce nom venu du dehors.\n\nYves Modéran, Encyclopédie berbère, 2010"
+          },
+          {
+            "src": "amazigh-berbere-deux-noms/amazigh-neuf-pays/slide-07-cd004c1788d4.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "des collines vertes au premier plan, des chaînes bleutées derrière traversées de rayons de soleil, des villages accrochés aux crêtes",
+            "text": "En Kabylie, le mot était inconnu.\n\nAmazigh n'existait pas dans la culture des Kabyles, ni dans les Aurès, ni au Mzab. Il s'y installe entre 1945 et 1950, porté par la chanson nationaliste. En quelques dizaines d'années, il devient le nom de tous.\n\nSalem Chaker, Encyclopédie berbère, 1986"
+          },
+          {
+            "src": "amazigh-berbere-deux-noms/amazigh-neuf-pays/slide-08-661ed7510dfd.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "des ânes et des mulets tournant sur une aire de battage, cinq personnes maniant des fourches, et un village de maisons de terre étagé sur le versant derrière",
+            "text": "Ce peuple n'a pas changé de nom.\n\nOn lui en a posé un par-dessus.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "Mont Ayachi, Haut Atlas oriental, Maroc · Mounir Neddi, 2020 · Wikimedia Commons · CC BY-SA 4.0 ; Borne routière à Aïn Aouda, Maroc · Anass Sedrati, 2025 · Wikimedia Commons · CC BY-SA 4.0 ; Delle navigationi et viaggi, page de titre, Venise · Giovanni Battista Ramusio, 1554 · Wikimedia Commons · domaine public ; Stèle funéraire bilingue de Bordj Helal, musée du Louvre · Marie-Lan Nguyen, 2017 · Wikimedia Commons · CC BY 4.0 ; Parc national du Hoggar, Tamanrasset, Algérie · Abderrehmann H. Dribat, 2019 · Wikimedia Commons · CC BY-SA 4.0 ; Cour de la Grande Mosquée de Kairouan, Tunisie · Ed Kirby, 2010 · Wikimedia Commons · CC BY-SA 2.0 ; Souamaâ, Tizi Ouzou, Grande Kabylie, Algérie · Rabah Boualia, 2020 · Wikimedia Commons · CC BY-SA 4.0 ; Battage traditionnel dans le Haut Atlas, Maroc · Moroccan Sanchez, 2025 · Wikimedia Commons · CC BY-SA 4.0"
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7684690245262101782",
+        "publishedAt": "2026-09-12"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

@@ -1,0 +1,138 @@
+{
+  "id": "igbo-enwe-eze-sans-roi",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Mythe déconstruit",
+  "fr": {
+    "slug": "igbo-enwe-eze-sans-roi",
+    "title": "Les villages igbo avaient-ils un roi ?",
+    "excerpt": "Ce roman africain s'ouvre sans un seul roi.",
+    "sections": []
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "C. Onwumechili, « Igbo Enwe Eze: The Igbo Have No Kings », conférence Ahiajoku, 20 novembre 2000",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s2",
+      "title": "Témoignage de Noo Udala, Umuaga, 19 juin 1973, recueilli par E. N. Okechukwu, in Elizabeth Isichei (dir.), Igbo Worlds, 1978, p. 71-75",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s3",
+      "title": "SIL Ethnologue, Igbo [ibo], 28ᵉ éd., 2025",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s4",
+      "title": "A. R. Mustapha, CRISE Working Paper n° 18, Université d'Oxford, 2005, tableau 1",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s5",
+      "title": "B. A. Ogot (dir.), Histoire générale de l'Afrique, UNESCO, 1997, p. 498",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s6",
+      "title": "G. Furniss & L. Gunner, Power, Marginality and African Oral Literature, Cambridge University Press, 1995, p. 67",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s7",
+      "title": "J. Van Allen, « “Sitting on a man”… », Canadian Journal of African Studies, 6-2, 1972, p. 165-181",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s8",
+      "title": "Kwame Anthony Appiah, introduction, Everyman's Library",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s9",
+      "title": "S. Jilani, « Things Fall Apart… », The Conversation, 28 novembre 2018",
+      "tier": "needs_review"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "igbo-enwe-eze-sans-roi"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "igbo-enwe-eze-sans-roi/igbo-enwe-eze-sans-roi/slide-01-53bf695b1364.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un homme âgé à lunettes, coiffé d'un bonnet rouge traditionnel igbo (okpu ozo), parle derrière un pupitre et un micro sur une scène, devant un rideau sombre",
+            "text": "Ce roman africain s'ouvre sans un seul roi.\n\nNommer un peuple aussi facilement qu'un pays."
+          },
+          {
+            "src": "igbo-enwe-eze-sans-roi/igbo-enwe-eze-sans-roi/slide-02-11ef5596e2f7.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une femme au chignon tressé relevé, vêtue d'un imprimé zébré, sourit en tenant des ignames entre deux autres femmes, devant une installation faite de perles et de gourdes empilées sur des poteaux, en plein air",
+            "text": "Ils se disent Ndi Igbo, pas seulement Igbo.\n\nNdi Igbo — le nom qu'ils se donnent\nIgbo — la forme retenue à l'international\n\nNdi Igbo, « le peuple igbo » en igbo, est le nom qu'ils se donnent ; « Igbo » est la forme retenue à l'international. C'est en igbo qu'est né le dicton « Igbo enwe eze » — « les Igbo n'ont pas de roi » —, qui a donné son titre à une conférence publique en 2000.\n\nC. Onwumechili, « Igbo Enwe Eze: The Igbo Have No Kings », conférence Ahiajoku, 20 novembre 2000"
+          },
+          {
+            "src": "igbo-enwe-eze-sans-roi/igbo-enwe-eze-sans-roi/slide-03-06572770c1c6.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un chef vêtu d'une tenue cérémonielle à motifs pourpres et dorés, coiffé d'une haute coiffe à plumes multicolores, tenant un bâton doré, entouré de dignitaires et de photographes lors d'une cérémonie d'intronisation",
+            "text": "Avant la colonisation, les villages igbo se gouvernaient par assemblée.\n\n« Avant l'arrivée des Blancs, nous n'avions pas de chef qui s'occupait des affaires de la ville. Mais nous avions plusieurs institutions qui nous aidaient à organiser nos activités », racontait un aîné d'Agbaja en 1973.\n\nTémoignage de Noo Udala, Umuaga, 19 juin 1973, recueilli par E. N. Okechukwu, in Elizabeth Isichei (dir.), Igbo Worlds, 1978, p. 71-75"
+          },
+          {
+            "src": "igbo-enwe-eze-sans-roi/igbo-enwe-eze-sans-roi/slide-04-964d7b421973.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une rue de marché animée, bordée d'étals de vêtements et de mannequins sans tête, une charrette tirée passant au milieu d'une foule dense, sous un ciel couvert",
+            "text": "30 millions\n\nde personnes parlent aujourd'hui l'igbo, selon Ethnologue (2023).\n\nDéjà 5 483 660 Igbo étaient recensés en 1952-53, soit 61 % de la Région Est du Nigeria — un chiffre que les démographes jugent sous-estimé.\n\nSIL Ethnologue, Igbo [ibo], 28ᵉ éd., 2025 · A. R. Mustapha, CRISE Working Paper n° 18, Université d'Oxford, 2005, tableau 1"
+          },
+          {
+            "src": "igbo-enwe-eze-sans-roi/igbo-enwe-eze-sans-roi/slide-05-361787c56502.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "au centre, une personnalité en tenue royale bleu pâle et perles de corail, coiffée d'une vaste couronne à plumes multicolores, entourée de dignitaires aux coiffes similaires, lors d'une procession en plein air",
+            "text": "Nri et Onitsha, deux villes qui avaient bien un roi.\n\nLe royaume de Nri avait à sa tête un Eze Nri, une autorité « rituelle et mystique, mais pas militaire ». À Onitsha, l'Obi était choisi dans des lignages royaux. Deux exceptions qui empêchent d'en faire une règle absolue.\n\nB. A. Ogot (dir.), Histoire générale de l'Afrique, UNESCO, 1997, p. 498"
+          },
+          {
+            "src": "igbo-enwe-eze-sans-roi/igbo-enwe-eze-sans-roi/slide-06-24e886035dda.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un mémorial en béton entouré d'une balustrade métallique verte et blanche, portant une plaque commémorative, envahi par l'herbe au bord d'un cours d'eau ombragé",
+            "text": "Faute de rois, l'administration coloniale en a fabriqué.\n\nDes warrant chiefs sont installés comme Eze là où il n'existait pas de monarchie. En 1929, Nwanyeruwa réplique à un recenseur : « Ta mère veuve a-t-elle été comptée ? » — le début de la guerre des femmes, Ogu Umunwanyi. Le système est aboli l'année suivante.\n\nG. Furniss & L. Gunner, Power, Marginality and African Oral Literature, Cambridge University Press, 1995, p. 67 · J. Van Allen, « “Sitting on a man”… », Canadian Journal of African Studies, 6-2, 1972, p. 165-181"
+          },
+          {
+            "src": "igbo-enwe-eze-sans-roi/igbo-enwe-eze-sans-roi/slide-07-f6054697c2de.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une haute figure de masquerade vêtue de jupes de raphia et de pompons rouges, coiffée d'une toison claire, défile dans une rue résidentielle devant une foule de jeunes gens",
+            "text": "Umuofia, le village du roman, n'a jamais existé.\n\nThings Fall Apart (1958), traduit dans plus de 50 langues, s'ouvre sur Umuofia — un clan fictif, inventé par Chinua Achebe. La société qu'il décrit s'inspire de celles d'Ogidi et d'Onitsha, sa région natale.\n\nKwame Anthony Appiah, introduction, Everyman's Library · S. Jilani, « Things Fall Apart… », The Conversation, 28 novembre 2018"
+          },
+          {
+            "src": "igbo-enwe-eze-sans-roi/igbo-enwe-eze-sans-roi/slide-08-439aad2d5c1c.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "deux masquerades de raphia et de tissu rouge dansent l'une derrière l'autre dans une rue, devant des spectateurs alignés le long des façades",
+            "text": "Ce peuple n'a pas eu de roi unique.\n\nLa plupart de ses villages se gouvernaient sans roi.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "Chinua Achebe, université de Buffalo · Stuart C. Shapiro · 25 septembre 2008 · Wikimedia Commons · CC BY-SA 3.0 ; Chimamanda Ngozi Adichie, Institut d'études africaines, Université du Nigeria à Nsukka · Nnamdi93 · 7 juillet 2025 · Wikimedia Commons · CC BY-SA 4.0 ; Intronisation d'un chef igbo · Adimora chidinma · 4 janvier 2024 · Wiki Loves Folklore 2025 (Nigeria), via Wikimedia Commons · CC BY-SA 4.0 ; Marché principal d'Onitsha, État d'Anambra · Nonso wesley · 2 décembre 2017 · Wiki Loves Africa 2017, via Wikimedia Commons · CC BY-SA 4.0 ; L'Obi d'Onitsha, Nnaemeka Achebe, à la fête annuelle Ofala · Eaghadiuno · 20 mai 2016 · Wikimedia Commons · CC BY-SA 4.0 ; Tombe symbolique de la guerre des femmes de 1929 · Dappa Solomon · 2 février 2023 · Wiki Loves Monuments 2023 dans le delta du Niger, via Wikimedia Commons · CC BY-SA 4.0 ; Masquerade Mmanwu · Anthony Nsofor · 4 janvier 2013 · Wiki Loves Africa 2016, via Wikimedia Commons · CC BY-SA 4.0 ; Masquerades Mmanwu, Oguta, État d'Imo · Tony Nsofor · 23 janvier 2017 · Wiki Loves Africa 2016, via Wikimedia Commons · CC BY-SA 4.0"
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7685972245491027222",
+        "publishedAt": "2026-09-16"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "lectures-traite-colonie",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Lectures",
+  "fr": {
+    "slug": "lectures-traite-colonie",
+    "title": "Ce que la traite et la colonie ont fait",
+    "excerpt": "Ce que la traite et la colonie ont fait",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "lectures-traite-colonie"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "lectures-traite-colonie/lectures-traite-colonie/slide-01-44c1f8d179af.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "les couvertures des 4 livres de la sélection, côte à côte",
+            "text": "Ce que la traite et la colonie ont fait\n\n4 livres à lire"
+          },
+          {
+            "src": "lectures-traite-colonie/lectures-traite-colonie/slide-02-ec885b4d9067.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « L'esclavage : quel impact sur la psychologie des populations ? » (Aimé Charles-Nicolas et Benjamin Bowser (dir.)), détourée et redressée à partir d'une photographie",
+            "text": "L'esclavage : quel impact sur la psychologie des populations ?\n\nAimé Charles-Nicolas et Benjamin Bowser (dir.)"
+          },
+          {
+            "src": "lectures-traite-colonie/lectures-traite-colonie/slide-03-5a5f30af9cec.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « Comment l'Europe sous-développa l'Afrique » (Walter Rodney), détourée et redressée à partir d'une photographie",
+            "text": "Comment l'Europe sous-développa l'Afrique\n\nWalter Rodney"
+          },
+          {
+            "src": "lectures-traite-colonie/lectures-traite-colonie/slide-04-d74e031e1075.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « L'Enfant noir » (Camara Laye), détourée et redressée à partir d'une photographie",
+            "text": "L'Enfant noir\n\nCamara Laye"
+          },
+          {
+            "src": "lectures-traite-colonie/lectures-traite-colonie/slide-05-b59a6090e22c.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « Une vie de boy » (Ferdinand Oyono), détourée et redressée à partir d'une photographie",
+            "text": "Une vie de boy\n\nFerdinand Oyono"
+          },
+          {
+            "src": "lectures-traite-colonie/lectures-traite-colonie/slide-06-e0dadb60b196.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "les couvertures des 4 livres de la sélection, côte à côte",
+            "text": "Notre objectif : raconter l'origine des noms, avec des sources.\n\nVous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica."
+          }
+        ],
+        "credits": "Couvertures : éditeurs respectifs · photographie de l'opérateur · couverture © éditeur ; Couverture : Idem Campus · photographie de l'opérateur · couverture © éditeur ; Couverture : B42 · photographie de l'opérateur · couverture © éditeur ; Couverture : Pocket · photographie de l'opérateur · couverture © éditeur"
+      }
+    ],
+    "originals": [
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/Ddxl2KpCJAR/",
+        "publishedAt": "2026-09-27"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7690043740077034774",
+        "publishedAt": "2026-09-27"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

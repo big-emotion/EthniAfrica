@@ -1,0 +1,196 @@
+{
+  "id": "ghana-qui-a-choisi-le-nom",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Mythe déconstruit",
+  "fr": {
+    "slug": "ghana-qui-a-choisi-le-nom",
+    "title": "D'où vient le nom « Ghana » ?",
+    "excerpt": "D'où vient le nom « Ghana » ?",
+    "sections": []
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Hansard, 11 décembre 1956 ; Encyclopaedia Africana",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s2",
+      "title": "Ghana Independence Act 1957 ; Levtzion, 1979",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s3",
+      "title": "al-Bakri, Notice sur le Soudan (traduction française)",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s4",
+      "title": "Citi Newsroom, mars 2026 ; J. O. Hunwick, 2003",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s5",
+      "title": "Encyclopaedia Africana ; Citi Newsroom, 2026 ; Hansard, 11 décembre 1956",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s6",
+      "title": "Bosman, 1705 ; rapport colonial 1935-36 ; Encyclopaedia Britannica, 1911",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s7",
+      "title": "Pacheco Pereira (trad. Kimble, 1937) ; De Marees, 1602",
+      "tier": "needs_review"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "ghana-qui-a-choisi-le-nom"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "poster": {
+          "src": "ghana-qui-a-choisi-le-nom/ghana-qui-a-choisi-le-nom/poster-cc47d6efe31e.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      },
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "ghana-qui-a-choisi-le-nom/ghana-qui-a-choisi-le-nom-carrousel/slide-01-d074f62809b4.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "L'arche de l'indépendance à Accra, portique de pierre surmonté d'une étoile noire et gravé « AD 1957 » et « Freedom and Justice », sous un ciel chargé, un drapeau ghanéen flottant à son sommet.",
+            "text": "Le nom du Ghana actuel vient-il de l'ancien empire du Ghana ?"
+          },
+          {
+            "src": "ghana-qui-a-choisi-le-nom/ghana-qui-a-choisi-le-nom-carrousel/slide-02-1940dcf7a81e.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Carte de l'Afrique de l'Ouest aux frontières actuelles : une zone jaune, « The Ghana Empire », couvre l'est du Sénégal, le sud de la Mauritanie et l'ouest du Mali ; plus au sud-est, le Ghana actuel est étiqueté à part.",
+            "text": "Le nom, oui. Le lieu, non.\n\nLe nom vient bien d'un ancien royaume du Sahel. Ce royaume se trouvait hors du Ghana actuel. L'Encyclopaedia Africana juge douteux le lien avec les Akan.\n\nHansard, 11 décembre 1956 ; Encyclopaedia Africana"
+          },
+          {
+            "src": "ghana-qui-a-choisi-le-nom/ghana-qui-a-choisi-le-nom-carrousel/slide-03-b21d7ec71bff.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "La grande arche jaune de la place de l'Étoile noire à Accra, portant l'inscription « Black Star Square », au-dessus d'une esplanade de sable où quelques personnes marchent au loin, sous un ciel dégagé.",
+            "text": "Un pays, plusieurs noms\n\nUn pays porte plusieurs noms. Nous cherchons celui que l'État a choisi. D'autres lui en ont donné d'autres, parfois plus connus."
+          },
+          {
+            "src": "ghana-qui-a-choisi-le-nom/ghana-qui-a-choisi-le-nom-carrousel/slide-04-ece8907235cb.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Sept poids en laiton à peser la poudre d'or, têtes de bovidés stylisées dont une grande au centre, photographiés sur fond noir avec une échelle d'un centimètre.",
+            "text": "Trois noms\n\nGhana, Gold Coast, Mina. Le nom que l'État a choisi vient en premier."
+          },
+          {
+            "src": "ghana-qui-a-choisi-le-nom/ghana-qui-a-choisi-le-nom-carrousel/slide-05-ef4dfa8d8700.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Vue prise à travers une vitre de voiture de l'arche de l'indépendance à Accra et, derrière elle, de la grande arche jaune de la place de l'Étoile noire.",
+            "text": "Ghana\n\nnom qu'ils se donnent\n\nL'État a choisi ce nom à l'indépendance, en 1957. Le même mot désigne aussi l'ancien royaume. Al-Mas'udi cite vers 950 un texte d'al-Fazari qui mentionne Ghana.\n\nGhana Independence Act 1957 ; Levtzion, 1979"
+          },
+          {
+            "src": "ghana-qui-a-choisi-le-nom/ghana-qui-a-choisi-le-nom-carrousel/slide-06-c05c6c8045f6.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Carte du monde d'Al-Idrisi (1154), copie du 20e siècle aux noms translittérés : la Méditerranée au centre, les terres d'Afrique en dessous, le titre imprimé à l'envers en haut.",
+            "text": "Un titre de roi\n\nAl-Bakri écrit en 1067 : « Ghana est le titre que portent les rois de ce peuple ». Il nomme le pays Awkar.\n\nal-Bakri, Notice sur le Soudan (traduction française)"
+          },
+          {
+            "src": "ghana-qui-a-choisi-le-nom/ghana-qui-a-choisi-le-nom-carrousel/slide-07-ef1743d20788.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Un feuillet de manuscrit arabe, écrit à l'encre brune et noire sur un papier ocre aux bords irréguliers, présenté devant un fond gris ; quelques annotations au crayon en marge.",
+            "text": "Que veut dire le mot ?\n\nCiti Newsroom le traduit souvent par « chef de guerre ». Une chronique de Tombouctou, citée par Hunwick, donne « roi de l'or » pour Kaya Maghan, un autre titre de ces rois.\n\nCiti Newsroom, mars 2026 ; J. O. Hunwick, 2003"
+          },
+          {
+            "src": "ghana-qui-a-choisi-le-nom/ghana-qui-a-choisi-le-nom-carrousel/slide-08-3844296ef9b7.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Photographie ancienne, en sépia, du palais de Westminster : la tour de l'horloge à gauche, la façade le long de la Tamise, Westminster Hall au centre ; au premier plan, une place où passent des fiacres à chevaux, flous par le mouvement. La légende « Houses of Parliament & Westminster Hall, London, 3590, G.W.W. » est imprimée en bas.",
+            "text": "Qui a choisi le nom ?\n\nL'Encyclopaedia Africana écrit que J. B. Danquah l'a suggéré. Citi Newsroom donne à Kwame Nkrumah un rôle décisif. Un ministre britannique parle en 1956 de « souhaits locaux ». Aucun texte lu ne tranche.\n\nEncyclopaedia Africana ; Citi Newsroom, 2026 ; Hansard, 11 décembre 1956"
+          },
+          {
+            "src": "ghana-qui-a-choisi-le-nom/ghana-qui-a-choisi-le-nom-carrousel/slide-09-e8ae5eaf4f94.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Carte gravée de la Côte de l'Or, d'Issini à Alampi, où les royaumes et pays de l'intérieur (Asiante, Akim, Akanni, Aquambo) sont nommés, avec une cartouche ornée en bas à droite.",
+            "text": "Gold Coast\n\nnom donné par d'autres\n\nLe nom désigne la côte par son or. Le plus ancien texte anglais lu qui l'emploie est la traduction de Bosman, en 1705. Une charte de 1874 crée la colonie de la Gold Coast.\n\nBosman, 1705 ; rapport colonial 1935-36 ; Encyclopaedia Britannica, 1911"
+          },
+          {
+            "src": "ghana-qui-a-choisi-le-nom/ghana-qui-a-choisi-le-nom-carrousel/slide-10-c53cf5583a0b.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Le château d'Elmina, bâtiment blanc à toit rouge posé sur la côte, vu depuis des rochers ; des barques de pêche sur une mer calme et quelques palmiers derrière.",
+            "text": "Mina\n\nnom donné par d'autres\n\nDuarte Pacheco Pereira écrit vers 1505 que Shama s'appelait alors Mina. Les Portugais y ont obtenu leur premier or en janvier 1471. Un livre néerlandais de 1602 nomme la côte « Gout-Custe de Mina ».\n\nPacheco Pereira (trad. Kimble, 1937) ; De Marees, 1602"
+          },
+          {
+            "src": "ghana-qui-a-choisi-le-nom/ghana-qui-a-choisi-le-nom-carrousel/slide-11-14b7ac5ee936.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Carte postale en noir et blanc : deux pavillons d'hôpital en brique encadrent un jardin ; au loin, de l'autre côté de la Tamise, le palais de Westminster et sa tour de l'horloge. La légende imprimée dit « St. Thomas's Hospital, View from St. Thomas's Home ».",
+            "text": "Trois noms, trois statuts\n\nGhana : le nom que l'État a choisi. Gold Coast : donné par d'autres, le plus connu jusqu'en 1957. Mina : donné par les Portugais, le plus ancien nom de cette côte que nous ayons lu."
+          },
+          {
+            "src": "ghana-qui-a-choisi-le-nom/ghana-qui-a-choisi-le-nom-carrousel/slide-12-bd20a02223b0.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "L'arche de l'indépendance à Accra, portique de pierre surmonté d'une étoile noire et gravé « AD 1957 » et « Freedom and Justice », sous un ciel chargé, un drapeau ghanéen flottant à son sommet.",
+            "text": "Oui pour le nom, non pour le lieu.\n\nCe pays a porté trois noms : Mina, Gold Coast, Ghana. Le dernier reprend un titre de roi du Sahel, pas son territoire."
+          },
+          {
+            "src": "ghana-qui-a-choisi-le-nom/ghana-qui-a-choisi-le-nom-carrousel/slide-13-711f59ae1f87.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Vue plongeante sur une vaste esplanade d'Accra, avec l'arche de l'indépendance au fond, des gradins de chaque côté, l'océan à l'horizon et une route au premier plan.",
+            "text": "Notre objectif : raconter l'origine des noms, avec des sources.\n\nVous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica."
+          }
+        ],
+        "credits": "« Independence arch at sunset 2 », Kwameghana (Bright Kwame Ayisi), 2023 · Wikimedia Commons · CC0 1.0 ; « The Ghana Empire », Amitchell125, 2021 · Wikimedia Commons · CC BY-SA 4.0 ; « Independence Arch, Accra », Celestinesucess, 2023 · Wikimedia Commons · CC BY-SA 4.0 ; « Akan Gold Weight MHNT bovid head », Didier Descouens, Muséum de Toulouse (objet du 19e siècle) · Wikimedia Commons · CC BY-SA 4.0 ; « Outside view of Independence Square, Accra, Ghana », Ijon, 2017 · Wikimedia Commons · CC BY-SA 4.0 ; « Tabula Rogeriana », Al-Idrisi, 1154 ; copie translittérée de Konrad Miller, 1929 · Wikimedia Commons · domaine public ; Feuillet du Ta'rikh al-fattash (Mahmûd Kâti, manuscrit de 1622-1653, domaine public), Bibliothèque commémorative Mamma Haidara, Tombouctou ; photographie © Marie-Lan Nguyen / Wikimedia Commons / CC-BY 4.0 · Wikimedia Commons · CC BY 4.0 ; « Houses of Parliament & Westminster Hall, London », G. W. Wilson & Co., 1880 · Library of Congress, via Wikimedia Commons · domaine public ; « A Map of the Gold Coast, from Issini to Alampi », gravure de G. Child d'après d'Anville, 1745 · Wikimedia Commons · domaine public ; « Elmina Castle - Elmina », Brans Wyte GH, 2025 · Wikimedia Commons · CC0 1.0 ; « Palace of Westminster » (vue depuis l'hôpital St Thomas), carte postale, photographe inconnu, vers 1912 ; numérisée par Leonard Bentley · Wikimedia Commons · domaine public ; « Black Star Square 01 », Celestinesucess, 2023 · Wikimedia Commons · CC BY-SA 4.0"
+      }
+    ],
+    "originals": [
+      {
+        "network": "facebook",
+        "url": "https://www.facebook.com/photo?fbid=122113839261465536&set=pcb.122113839537465536",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "facebook",
+        "url": "https://www.facebook.com/share/v/1MDxsdLPNo/",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/Ddjj-qyCJZP/",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/reel/DdiqXAWKY3F/",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7688022047796071702",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7687891884458446103",
+        "publishedAt": "2026-09-21"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

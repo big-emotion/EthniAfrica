@@ -1,0 +1,49 @@
+{
+  "id": "frontieres-appartenance",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "frontieres-appartenance",
+    "title": "Pourquoi les pays d'Afrique ont-ils gardé leurs frontières ?",
+    "excerpt": "Pourquoi les pays d'Afrique ont-ils gardé leurs frontières ?",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "etats-herites-appartenance-nationale"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "sA3Sy8MAae4",
+        "poster": {
+          "src": "frontieres-appartenance/etats-herites-appartenance-nationale/poster-614ec431be9e.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "facebook",
+        "url": "https://www.facebook.com/reel/2316931765832568",
+        "publishedAt": "2026-09-25"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7689515819188997398",
+        "publishedAt": "2026-09-25"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/sA3Sy8MAae4",
+        "publishedAt": "2026-09-25"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

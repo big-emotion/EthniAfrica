@@ -1,0 +1,88 @@
+{
+  "id": "retour-ou-decouverte",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "EthniAfrica",
+  "fr": {
+    "slug": "retour-ou-decouverte",
+    "title": "Quand on est né hors d’Afrique et qu’on visite pour la première fois le pays d’origine de ses parents, est-ce qu’on y retourne ou est-ce qu’on le découvre ?",
+    "excerpt": "Quand on est né hors d’Afrique et qu’on visite pour la première fois le pays d’origine de ses parents, est-ce qu’on y retourne ou est-ce qu’on le découvre ?",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "retour-ou-decouverte"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "retour-ou-decouverte/retour-ou-decouverte/slide-01-ba50dbea43ad.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "photographie prise depuis un avion : un village de petits toits et de cours de terre ocre, traversé par une route, entouré de champs secs et d'arbres",
+            "text": "Quand on est né hors d’Afrique et qu’on visite pour la première fois le pays d’origine de ses parents, est-ce qu’on y retourne ou est-ce qu’on le découvre ?"
+          },
+          {
+            "src": "retour-ou-decouverte/retour-ou-decouverte/slide-02-3111ef5588ce.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un grand carrefour en plein jour : motos et voitures à gauche, un vaste bâtiment de brique à charpente métallique à droite, des immeubles au fond, un ciel bleu à nuages blancs",
+            "text": "Découvrir\n\nC’est une première rencontre avec le lieu, même si on le connaît déjà à travers les récits de sa famille."
+          },
+          {
+            "src": "retour-ou-decouverte/retour-ou-decouverte/slide-03-1520bf6e7e57.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "vue de dessus d'un grand plat métallique de riz, de légumes et de viande posé sur la terre rouge, entouré de nombreuses mains qui mangent ensemble",
+            "text": "Retourner\n\nLe mot peut exprimer un lien transmis et un sentiment d’appartenance, même si on n’y a jamais vécu."
+          },
+          {
+            "src": "retour-ou-decouverte/retour-ou-decouverte/slide-04-311cf088464d.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une large arche en terre ocre à créneaux au-dessus d'une route à deux voies et d'un terre-plein pavé, portant les inscriptions « WELCOME TO BAMAKO » et « BIENVENUE A BAMAKO », cadrée serré sous un ciel gris",
+            "text": "Pour certains, c’est un retour. Pour d’autres, une découverte.\n\nEt parfois, les deux à la fois."
+          },
+          {
+            "src": "retour-ou-decouverte/retour-ou-decouverte/slide-05-dd518ac213be.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un panneau routier blanc au pied d'un grand arbre, avec trois flèches et quatre noms de lieux : LOUDIA, CAP SKIRRING, ELINKINE, MLOMP",
+            "text": "Pourquoi dire « l’Afrique » quand on parle d’un pays précis ?\n\nNommer le lieu rend sa place à chaque histoire familiale."
+          },
+          {
+            "src": "retour-ou-decouverte/retour-ou-decouverte/slide-06-579e38129d47.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un soleil bas voilé de nuages dorés au-dessus d'une ligne d'immeubles sombres en bord d'eau, un bateau à droite et des feuillages noirs au premier plan",
+            "text": "À vous la parole\n\nSi vous avez vécu ce voyage, quels mots avez-vous choisis pour le raconter ?"
+          }
+        ],
+        "credits": "Vue du Mali pendant l'approche de l'aéroport international de Bamako, 25 janvier 2013, Brandi Hansen, US Air Force (DVIDS) · Wikimedia Commons, d'après DVIDS · domaine public ; Carrefour devant le marché Ganhi, avenue Clozel et rue de la Poste, Cotonou (Bénin), 2 octobre 2025, Alacoolwiki · Wikimedia Commons · CC BY 4.0 ; « Repas commun », Mali, 28 avril 2026, Souleymane DIARRA · Wikimedia Commons · CC BY 4.0 ; Arche d'accueil à l'entrée de Bamako, depuis l'aéroport, 18 mai 2008, Rgaudin (recadré) · Wikimedia Commons · domaine public ; Signalisation routière à Oussouye (Casamance, Sénégal), 14 janvier 2008, Ji-Elle (recadré) · Wikimedia Commons · domaine public ; Coucher de soleil sur Dakar vu de Gorée, 11 septembre 2024, Fawaz.tairou · Wikimedia Commons · CC BY 4.0"
+      }
+    ],
+    "originals": [
+      {
+        "network": "facebook",
+        "url": "https://www.facebook.com/photo/?fbid=122117706033465536&set=pcb.122117706105465536",
+        "publishedAt": "2026-09-28"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/Dd1eNSTCMIr/",
+        "publishedAt": "2026-09-28"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7690603087718976770",
+        "publishedAt": "2026-09-28"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

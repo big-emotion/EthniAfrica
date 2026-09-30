@@ -1,0 +1,29 @@
+{
+  "id": "noms-de-metier-dioula-teke",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Ce que ce nom veut dire",
+  "fr": {
+    "slug": "noms-de-metier-dioula-teke",
+    "title": "D'où viennent des noms comme Dioula ou Teke ?",
+    "excerpt": "Dioula, Teke, Manianga, Kavango : quatre peuples nommés par un commerce ou une rivière.",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "noms-de-commerce"
+    },
+    "formats": [],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7684283952235908374",
+        "publishedAt": "2026-09-11"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

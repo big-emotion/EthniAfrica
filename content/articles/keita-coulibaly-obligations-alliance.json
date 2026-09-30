@@ -1,0 +1,49 @@
+{
+  "id": "keita-coulibaly-obligations-alliance",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "La carte cachée",
+  "fr": {
+    "slug": "keita-coulibaly-obligations-alliance",
+    "title": "À quoi oblige une alliance entre deux noms ?",
+    "excerpt": "Au Mali, un Keïta et un Coulibaly n'ont pas le droit de se fâcher.",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "sanankuya"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "-odrM5cp9jc",
+        "poster": {
+          "src": "keita-coulibaly-obligations-alliance/sanankuya/poster-84f2ccf26bcd.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7684291051401661718",
+        "publishedAt": "2026-09-11"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7684710053743430934",
+        "publishedAt": "2026-09-12"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/-odrM5cp9jc",
+        "publishedAt": "2026-09-12"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

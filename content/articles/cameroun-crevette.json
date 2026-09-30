@@ -1,0 +1,44 @@
+{
+  "id": "cameroun-crevette",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Ce que ce nom veut dire",
+  "fr": {
+    "slug": "cameroun-crevette",
+    "title": "D'où vient le nom Cameroun ?",
+    "excerpt": "Cameroun — la rivière des crevettes",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "cameroun"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "_Q1E23vO78A",
+        "poster": {
+          "src": "cameroun-crevette/cameroun/poster-09b865b50f6f.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7682865174155496726",
+        "publishedAt": "2026-09-07"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/_Q1E23vO78A",
+        "publishedAt": "2026-09-07"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

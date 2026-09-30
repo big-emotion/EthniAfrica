@@ -1,0 +1,44 @@
+{
+  "id": "nigeria-flora-shaw",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "nigeria-flora-shaw",
+    "title": "D'où vient le nom Nigeria ?",
+    "excerpt": "Nigeria — Flora Shaw, 1897 (montage Codex)",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "nigeria"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "TtmKqJ5Ly3Q",
+        "poster": {
+          "src": "nigeria-flora-shaw/nigeria/poster-402d50cc1821.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7681920972634459414",
+        "publishedAt": "2026-09-05"
+      },
+      {
+        "network": "youtube",
+        "url": "https://youtube.com/shorts/TtmKqJ5Ly3Q",
+        "publishedAt": "2026-09-05"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

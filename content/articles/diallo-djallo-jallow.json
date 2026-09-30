@@ -1,0 +1,101 @@
+{
+  "id": "diallo-djallo-jallow",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "diallo-djallo-jallow",
+    "title": "D'où vient le nom Diallo ?",
+    "excerpt": "Les frontières traversent les Diallo.",
+    "sections": []
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Ibu Sadjo, UNILAB, 2019",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s2",
+      "title": "Dictionary of American Family Names, 2e édition",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s3",
+      "title": "Thomas Bluett, Some Memoirs of the Life of Job, Londres, 1734",
+      "tier": "needs_review"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "diallo-djallo"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "diallo-djallo-jallow/diallo-djallo/slide-01-30fc35021ab0.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une concession familiale de cases rondes à toit de chaume, serrées autour d'une cour de terre battue, au pied d'un relief boisé",
+            "text": "Les frontières traversent les Diallo.\n\nNommer un peuple aussi facilement qu'un pays."
+          },
+          {
+            "src": "diallo-djallo-jallow/diallo-djallo/slide-02-44936e04bbff.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une femme debout devant une toile bleue, les deux mains levées paumes ouvertes devant son visage, en boubou brun sur un tissu teint à l'indigo, bracelets et bagues d'or, colliers de perles et pendentif ciselé",
+            "text": "Eux, ils se disent Fulbe.\n\nFulbe — le nom qu'ils se donnent\nPeul — le nom qu'on leur donne\n\nPullo au singulier. Peul vient du wolof Pel, repris par les colonisateurs français ; Fula est l'anglicisation d'un mot mandingue. Aucun de ces noms n'est le leur.\n\nFiche du peuple sur EthniAfrica — appellations"
+          },
+          {
+            "src": "diallo-djallo-jallow/diallo-djallo/slide-03-22d0e86a60b0.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un hameau de cases coniques à toit de chaume entouré de palissades de branchages, quelques silhouettes debout entre les enclos, sur un plateau dégagé",
+            "text": "Un seul nom, quatre orthographes.\n\nDiallo — là où l'administration écrivait en français\nDjaló — en Guinée-Bissau, où elle écrivait en portugais\n\nJallow en Gambie, Jalloh en Sierra Leone. Le nom ne change pas : ce qui change d'un territoire à l'autre, c'est la langue de l'administration qui l'a transcrit.\n\nIbu Sadjo, UNILAB, 2019 · Dictionary of American Family Names, 2e édition"
+          },
+          {
+            "src": "diallo-djallo-jallow/diallo-djallo/slide-04-8d9a91a39ad6.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une jeune femme debout de dos, un enfant porté dans un pagne noué à hauteur des reins, devant un mur de terre et un auvent de chaume",
+            "text": "8\n\npays où l'atlas documente ce nom, toujours chez les Fulbe.\n\nSénégal, Guinée, Guinée-Bissau, Gambie, Sierra Leone, Côte d'Ivoire, Cameroun, Gabon. Aucune de ces frontières n'existait quand le nom se transmettait déjà.\n\nFiches du nom sur EthniAfrica · Dictionary of American Family Names, 2e édition"
+          },
+          {
+            "src": "diallo-djallo-jallow/diallo-djallo/slide-05-c1441671ca87.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "le portrait peint d'un homme de trois quarts, en tunique et coiffe blanches, un petit livre suspendu à un cordon sur la poitrine",
+            "text": "En 1734, il dicte son propre nom.\n\nCapturé et vendu comme esclave, Ayuba Suleiman Diallo dicte son récit à Londres. Il y sépare sa filiation — fils de Suleiman, fils d'Ibrahim — du nom de sa famille : « The Surname of his Family is Jallo ».\n\nThomas Bluett, Some Memoirs of the Life of Job, Londres, 1734"
+          },
+          {
+            "src": "diallo-djallo-jallow/diallo-djallo/slide-06-1deb4cff30e6.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "des bergers menant un troupeau de bovins à longues cornes dans une plaine sèche et rase, sous un ciel bas",
+            "text": "Ce que le mot veut dire reste ouvert.\n\nAucune racine pulaar établie ne porte ce nom, et les rapprochements qui circulent ne s'appuient sur aucune source linguistique primaire. L'atlas le dit plutôt que de l'inventer.\n\nFiche du nom sur EthniAfrica — lacunes déclarées"
+          },
+          {
+            "src": "diallo-djallo-jallow/diallo-djallo/slide-07-7813aa046b5b.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un village de maisons de terre à toit de chaume étagées sur un versant, des arbres entre les toits et une falaise en arrière-plan",
+            "text": "Ce peuple n'a pas été divisé.\n\nC'est la carte qui a été dessinée par-dessus.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "La concession des Diallo à Ibel, sud-est du Sénégal · John Atherton, 1982 · Wikimedia Commons · CC BY-SA 2.0 ; Femme peule en tenue de cérémonie, Sénégal · Seydou221, 2025 · Wikimedia Commons · CC BY-SA 4.0 ; Village foulah du Fouta-Djallon, Guinée · photographe inconnu, v. 1900-1910 · Wikimedia Commons, collection particulière · domaine public ; Jeune femme fula (peule) et son enfant, Kamabai, Sierra Leone · John Atherton, 1968 · Wikimedia Commons · CC BY-SA 2.0 ; Portrait d'Ayuba Suleiman Diallo · William Hoare of Bath, XVIIIe siècle · National Portrait Gallery, Londres, via Wikimedia Commons · domaine public ; Bergers fula et leur troupeau, Sénégal · John Atherton, novembre 1967 · Wikimedia Commons · CC BY-SA 2.0 ; Maisons du village d'Ibel, sud-est du Sénégal · John Atherton, 1981 · Wikimedia Commons · CC BY-SA 2.0"
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7686049879138864406",
+        "publishedAt": "2026-09-16"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

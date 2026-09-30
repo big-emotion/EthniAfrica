@@ -1,0 +1,44 @@
+{
+  "id": "mercator-afrique-petite",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "La carte cachée",
+  "fr": {
+    "slug": "mercator-afrique-petite",
+    "title": "Pourquoi l'Afrique paraît-elle si petite sur les cartes qu'on nous a montrées ?",
+    "excerpt": "Corriger la carte — la résolution du 4 septembre",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "corriger-la-carte"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "TqwCu6Rf3QY",
+        "poster": {
+          "src": "mercator-afrique-petite/corriger-la-carte/poster-f3889e3e15c9.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7682862732017716502",
+        "publishedAt": "2026-09-07"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/TqwCu6Rf3QY",
+        "publishedAt": "2026-09-07"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}
