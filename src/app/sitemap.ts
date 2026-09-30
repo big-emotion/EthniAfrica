@@ -4,7 +4,7 @@ import {
   publishedArticleSummaries,
   readArticleCorpus,
 } from "@/lib/articles/corpus";
-import { getArticleRoute } from "@/lib/articles/routes";
+import { articleHref } from "@/components/articles/articlePaths";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { getPublishedLocales } from "@/lib/locale";
 import {
@@ -139,7 +139,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         readArticleCorpus().articles
       )) {
         entries.push(
-          entry(getArticleRoute(summary.slug), FICHE_CHANGE_FREQUENCY, 0.7)
+          entry(articleHref("fr", summary.slug), FICHE_CHANGE_FREQUENCY, 0.7)
         );
       }
     }

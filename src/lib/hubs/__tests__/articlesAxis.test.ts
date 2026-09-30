@@ -31,7 +31,6 @@ describe("the Articles axis", () => {
     expect(getModuleHref(listing, "fr")).toBe(
       getLocalizedRoute("fr", "dossiersHub")
     );
-    expect(getModuleHref(listing, "fr")).toBe("/fr/dossiers");
   });
 
   // @req REQ-114

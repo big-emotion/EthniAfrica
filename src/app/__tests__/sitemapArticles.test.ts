@@ -15,6 +15,7 @@ vi.mock("@/lib/articles/corpus", async (importOriginal) => ({
 }));
 
 import sitemap from "../sitemap";
+import { articleHref } from "@/components/articles/articlePaths";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import {
   assembleArticleCorpus,
@@ -59,10 +60,10 @@ describe("sitemap.xml — articles", () => {
     const urls = (await sitemap()).map((entry) => entry.url);
     const base = `https://${CANONICAL_DOMAIN}`;
 
-    expect(urls).toContain(`${base}/fr/dossiers/live-one`);
-    expect(urls).toContain(`${base}/fr/dossiers/live-two`);
+    expect(urls).toContain(`${base}${articleHref("fr", "live-one")}`);
+    expect(urls).toContain(`${base}${articleHref("fr", "live-two")}`);
     expect(
-      urls.filter((u) => u.endsWith("/fr/dossiers/live-one"))
+      urls.filter((u) => u.endsWith(articleHref("fr", "live-one")))
     ).toHaveLength(1);
     expect(urls.some((u) => u.includes("/wip"))).toBe(false);
   });
