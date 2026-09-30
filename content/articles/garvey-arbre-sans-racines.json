@@ -8,14 +8,81 @@
   "fr": {
     "slug": "garvey-arbre-sans-racines",
     "title": "« Un peuple sans connaissance de son histoire est comme un arbre sans racine. »",
-    "excerpt": "« Un peuple sans connaissance de son histoire est comme un arbre sans racine. »",
-    "sections": []
+    "excerpt": "Cette phrase circule sous le nom de Marcus Garvey, le fondateur de l'UNIA. Nous n'avons trouvé aucun texte de lui qui la porte. Ce que l'on sait de l'homme, et de la trace écrite la plus ancienne de la phrase.",
+    "sections": [
+      {
+        "heading": "Une phrase attribuée",
+        "paragraphs": [
+          "« Un peuple sans connaissance de son histoire est comme un arbre sans racine. » La phrase est souvent donnée comme une citation de Marcus Garvey. En 1979, la pochette de l'album Survival de Bob Marley en imprime une version plus longue, « attribuée à Marcus Garvey », qui parle aussi de l'origine et de la culture.",
+          "Nous n'avons trouvé aucun texte de Garvey qui la porte. Cela ne prouve pas qu'il ne l'a jamais dite : ses textes n'ont pas été fouillés en entier. C'est pourquoi nous écrivons « attribuée »."
+        ],
+        "sourceRefs": ["s5"]
+      },
+      {
+        "heading": "La trace écrite la plus ancienne retrouvée",
+        "paragraphs": [
+          "La plus ancienne occurrence écrite repérée à ce jour figure dans un ouvrage de Charles C. Seifert publié en 1938, The Negro's or Ethiopian's Contribution to Art, à la page 5. Nous ne savons pas si la phrase est de Seifert ou s'il la cite.",
+          "Une précaution : cette page nous a été signalée, mais nous ne l'avons pas encore vue sur l'ouvrage lui-même. Nous la donnons comme une piste, pas comme une preuve."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "Qui était Marcus Garvey ?",
+        "paragraphs": [
+          "Marcus Mosiah Garvey naît le 17 août 1887 à Saint Ann's Bay, en Jamaïque. En juillet 1914, il fonde en Jamaïque l'Universal Negro Improvement Association, l'UNIA, qui veut promouvoir un nationalisme noir en célébrant l'histoire et la culture africaines.",
+          "À New York, il dirige la rédaction du journal The Negro World dès son premier numéro, le 17 août 1918. Il meurt à Londres le 10 juin 1940."
+        ],
+        "sourceRefs": ["s2", "s3", "s4"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "La phrase de l'arbre sans racine circule sous le nom de Garvey au moins depuis 1979, mais nous ne l'avons pas trouvée sous sa plume. Sa plus ancienne trace écrite repérée date de 1938, dans un livre de Charles C. Seifert. Si vous connaissez un texte ou un discours de Garvey qui la contient, dites-nous où le trouver."
+        ],
+        "sourceRefs": ["s1", "s5"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
   },
   "sources": [
     {
       "id": "s1",
-      "title": "Seifert, 1938",
-      "tier": "needs_review"
+      "title": "Charles C. Seifert, The Negro's or Ethiopian's Contribution to Art, New York, 1938, p. 5",
+      "url": "https://catalog.hathitrust.org/Record/102142349",
+      "tier": "needs_review",
+      "notes": "Notice de l'ouvrage. La page où figure la phrase n'a pas encore été vue sur l'ouvrage lui-même."
+    },
+    {
+      "id": "s2",
+      "title": "National Archives (États-Unis), « Marcus Garvey »",
+      "url": "https://www.archives.gov/research/african-americans/individuals/marcus-garvey",
+      "tier": "needs_review",
+      "notes": "Naissance le 17 août 1887 à Saint Ann's Bay, l'UNIA formée en Jamaïque en juillet 1914, mort le 10 juin 1940."
+    },
+    {
+      "id": "s3",
+      "title": "Marcus Garvey and UNIA Papers Project, UCLA, « Fact Sheet on Marcus Garvey »",
+      "url": "https://pku-jri.ucla.edu/asc/mgpp/facts",
+      "tier": "needs_review",
+      "notes": "Mort le 10 juin 1940 à Londres ; lancement du Negro World en août 1918."
+    },
+    {
+      "id": "s4",
+      "title": "PBS, American Experience, page consacrée à Garvey et à l'UNIA",
+      "url": "https://www.pbs.org/wgbh/americanexperience/features/garvey-unia/",
+      "tier": "needs_review",
+      "notes": "Garvey à la rédaction du Negro World depuis le premier numéro, le 17 août 1918."
+    },
+    {
+      "id": "s5",
+      "title": "J. Wyatt Emmerich, The Harvard Crimson, 20 novembre 1979",
+      "url": "https://www.thecrimson.com/article/1979/11/20/reggae-revolution-pbobver-the-last-two/",
+      "tier": "needs_review",
+      "notes": "Critique de l'album Survival de Bob Marley, dont la pochette porte la phrase « attribuée à Marcus Garvey »."
     }
   ],
   "media": {

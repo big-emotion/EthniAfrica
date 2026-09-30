@@ -301,3 +301,29 @@ work nobody read, is dropped or left flagged.
   are the same book (duplicate entries left as imported).
 - **Improvement over the reel.** Restores the source's own wording where the narration had
   attributed an intention, and keeps the dating limit next to the date.
+
+## Case A11 — `garvey-arbre-sans-racines` (short by design)
+
+- **Reader's question.** Did Marcus Garvey say "a people without the knowledge of its history is
+  like a tree without roots"? Who was he?
+- **Primary reader need.** P1 (diaspora readers who meet and share the quotation) and P3.
+- **Claims and support.**
+  | Claim                                                                                                                                                      | Record source                                                                     |
+  | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+  | Born 17 August 1887 at Saint Ann's Bay, Jamaica; UNIA formed in Jamaica in July 1914; died 10 June 1940                                                    | s2 (opened)                                                                       |
+  | Died in London                                                                                                                                             | s3 (opened)                                                                       |
+  | Managing editor of _The Negro World_ from its first issue, 17 August 1918                                                                                  | s4 (opened), s3 (opened: "August 1918")                                           |
+  | In 1979 the sleeve of Bob Marley's _Survival_ prints a longer version "attributed to Marcus Garvey"                                                        | s5 (opened)                                                                       |
+  | The oldest written occurrence found so far is in a 1938 book by Charles C. Seifert (printed p. 5); whether Seifert wrote it or quoted it is not determined | s1 (workshop reading, reported by an agent; the page has not been seen by anyone) |
+- **Uncertainty.** No text by Garvey carrying the sentence was found, which does not prove he
+  never said it; the Seifert occurrence itself is unverified at the primary page; the wording
+  varies between versions.
+- **Dropped or flagged.** The UNIA's exact founding day (sources disagree: 20 July, July,
+  1 August); Amy Ashwood as co-founder (one source); "editor-in-chief". Jamaica Information
+  Service was cited on the card but not opened here, so it is not added. **Contract note:**
+  four sources (s2–s5) were added; the importer had parsed only Seifert although card 2 cites
+  National Archives, JIS, PBS and UCLA. Flags: Seifert tier stays `needs_review` (the workshop
+  says `unverified` until the page is seen); image rights are US public domain only (French
+  status not settled); the portrait's date is "vers 1920" with an unresolved verso caption.
+- **Why short.** The subject is one attribution and a short biography; the evidence supports
+  nothing more.
