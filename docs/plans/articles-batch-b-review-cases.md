@@ -91,3 +91,33 @@ Wikipedia page, or on a work nobody read, is dropped or flagged.
   image (a boy alone) does not match its subject (workshop reserve).
 - **Improvement over the carousel.** Presents the three readings of the name side by side, tells
   the reader what our migration claims rest on, and removes the flat "no people began here".
+
+## Case B4 — `igbo-enwe-eze-sans-roi`
+
+- **Reader's question.** "Igbo enwe eze", the Igbo have no king: is it true, and what did the
+  colonial administration do with it?
+- **Primary reader need.** P2 (Igbo readers, including those whose town has an Eze or an Obi) and
+  P3 (a reader who met the novel).
+- **Claims and support.**
+  | Claim                                                                                                                                                                                                             | Record source                                                             |
+  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+  | Ndi Igbo is the name they give themselves                                                                                                                                                                         | s10 (our fiche, read; workshop read it only on Wikipedia)                 |
+  | A 2000 Ahiajoku lecture is titled "Igbo Enwe Eze: The Igbo Have No Kings"                                                                                                                                         | s1 (lecture not read; title attested by academic relays per the workshop) |
+  | Noo Udala, Umuaga, 1973: "Before the white man came we had no chief that saw to the affairs of the town. But we had several institutions…"; village heads, lineage heads, age grades, women's groups, masquerades | s2 (excerpt opened, AHA page)                                             |
+  | Political power diffuse, no one could command others; Van Allen's scope is the Owerri and Calabar provinces                                                                                                       | s7 (authorised Spanish translation opened)                                |
+  | Warrant chiefs: one "representative" per village, contrary to Igbo conceptions; some were lineage heads, many young opportunists                                                                                  | s7 (opened)                                                               |
+  | 23 November 1929, Oloko: warrant chief Okugo tells Nwanyeruwa to count her goats and sheep; she asks whether his mother was counted; the Women's War follows                                                      | s7 (opened, citing Perham 1937)                                           |
+  | 1933 reforms replace the warrant chiefs with benches of judges                                                                                                                                                    | s7 (opened)                                                               |
+  | Things Fall Apart (1958), translated into more than 50 languages                                                                                                                                                  | s9 (workshop reading, not opened)                                         |
+- **Uncertainty.** "Most" communities, not all; Van Allen describes the southern provinces; the
+  exceptions (Nri, Onitsha) are named but not checked by us.
+- **Dropped or flagged.** Ethnologue's 30 million speakers (read only through Wikipedia); the
+  1952-53 census figure (tangential); Nri "ritual, not military" (Ogot read only through Wikipedia)
+  and Onitsha's Obi chosen from royal lineages (Wikipedia only): named as exceptions, marked as
+  not yet checked; Furniss & Gunner on warrant chiefs made Eze (Wikipedia only; Van Allen used
+  instead); "Ogu Umunwanyi" (Wikipedia only); **date conflict**: the carousel says the system was
+  abolished "the following year" (1930, Wikipedia), Van Allen dates the replacement to the 1933
+  reforms; Umuofia inspired by Ogidi and Onitsha (Appiah, read only through Wikipedia).
+  Credit-check on cards 1, 2, 5, 6.
+- **Improvement over the carousel.** Gives the 1973 testimony its institutions, dates the colonial
+  reform from a source actually read, and keeps "most" instead of "never".

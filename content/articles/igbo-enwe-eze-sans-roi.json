@@ -8,19 +8,86 @@
   "fr": {
     "slug": "igbo-enwe-eze-sans-roi",
     "title": "Les villages igbo avaient-ils un roi ?",
-    "excerpt": "Ce roman africain s'ouvre sans un seul roi.",
-    "sections": []
+    "excerpt": "« Igbo enwe eze » : les Igbo n'ont pas de roi. Le dicton dit vrai pour la plupart des villages, qui se gouvernaient sans souverain, mais pas pour tous. Et là où il n'y avait pas de chef, l'administration britannique en a installé, jusqu'à la révolte des femmes de 1929.",
+    "sections": [
+      {
+        "heading": "Un dicton : « les Igbo n'ont pas de roi »",
+        "paragraphs": [
+          "Ndi Igbo, « le peuple igbo », est le nom que les Igbo se donnent dans leur langue. Une expression igbo, « Igbo enwe eze », se traduit par « les Igbo n'ont pas de roi ». En 2000, une grande conférence publique de la série Ahiajoku, prononcée par C. Onwumechili, a pris ce titre.",
+          "Le dicton pose une vraie question : comment un peuple aussi nombreux s'organisait-il sans roi ? Et que s'est-il passé quand un pouvoir colonial, qui cherchait des chefs, est arrivé ?"
+        ],
+        "sourceRefs": ["s10", "s1"]
+      },
+      {
+        "heading": "Pas de chef, mais des institutions",
+        "paragraphs": [
+          "En 1973, à Umuaga, dans la région d'Agbaja, un aîné nommé Noo Udala témoigne devant E. N. Okechukwu, qui recueille sa parole : « Avant l'arrivée des Blancs, nous n'avions pas de chef qui s'occupait des affaires de la ville. Mais nous avions plusieurs institutions qui nous aidaient à organiser nos activités. » Son témoignage a été publié en 1978 dans un recueil dirigé par Elizabeth Isichei.",
+          "Il décrit ces institutions : des chefs de village qui ne portaient une décision devant leur communauté qu'une fois que « tous » l'avaient acceptée ; des chefs de lignage ; des classes d'âge chargées de la garde de nuit, des travaux publics et de l'application des décisions ; des groupes de femmes qui faisaient pression contre les mauvaises conduites ; des mascarades, les mmanwu, qui faisaient respecter les sanctions de la ville.",
+          "C'est le témoignage d'un homme, sur sa ville. Il ne parle pas au nom de tous les Igbo, mais il montre ce que « pas de roi » pouvait vouloir dire : pas d'absence d'ordre, un ordre partagé entre plusieurs groupes."
+        ],
+        "sourceRefs": ["s2"]
+      },
+      {
+        "heading": "Un pouvoir diffus",
+        "paragraphs": [
+          "Dans un article de 1972, la politologue Judith Van Allen décrit le pouvoir dans la société igbo comme diffus : aucune institution ni aucune personne, quel que soit son statut ou son rôle rituel, n'avait l'autorité de donner des ordres que tous devaient suivre. Les personnes influentes, hommes et femmes, l'étaient par leur générosité et leur talent de parole.",
+          "Elle précise elle-même la portée de son étude : elle décrit les Igbo des provinces d'Owerri et de Calabar, au sud, qu'elle juge relativement homogènes sur le plan politique. Ce n'est pas un portrait de toutes les communautés igbo."
+        ],
+        "sourceRefs": ["s7"]
+      },
+      {
+        "heading": "Des exceptions",
+        "paragraphs": [
+          "Le dicton n'est pas une règle absolue. Le carrousel cite deux exceptions souvent rappelées : le royaume de Nri, dirigé par un Eze Nri dont l'autorité est décrite comme rituelle plutôt que militaire, et Onitsha, où un roi, l'Obi, est choisi dans des lignages royaux. Nous n'avons pas encore consulté directement les sources qui décrivent ces deux institutions ; nous les nommons pour ne pas écrire « jamais »."
+        ],
+        "sourceRefs": ["s5"]
+      },
+      {
+        "heading": "Faute de chefs, l'administration coloniale en a nommé",
+        "paragraphs": [
+          "Après la conquête britannique, l'administration veut gouverner par l'intermédiaire de chefs locaux, comme elle le fait dans le nord du Nigeria. Chez les Igbo, elle désigne pour chaque village un « représentant » muni d'un mandat écrit, un warrant : ce sont les warrant chiefs. Pour Van Allen, qu'un seul homme représente le village et donne des ordres aux autres allait contre les conceptions igbo. Certains de ces chefs étaient des chefs de lignage déjà respectés ; beaucoup, écrit-elle, étaient de jeunes ambitieux, amis des conquérants.",
+          "Le 23 novembre 1929, à Oloko, dans la province d'Owerri, le warrant chief Okugo entre dans une concession et demande à une femme mariée, Nwanyeruwa, de compter ses chèvres et ses moutons. Les femmes craignent un nouvel impôt. Nwanyeruwa lui répond par une question : sa mère à lui, l'a-t-on comptée ? La nouvelle circule d'un marché à l'autre, et des femmes de toute la province convergent vers Oloko. Les Britanniques parlent des « émeutes d'Aba » ; les Igbo, de la « guerre des femmes ».",
+          "En 1933, des réformes remplacent les warrant chiefs par des tribunaux où siègent plusieurs juges ensemble. Van Allen note que ces réformes n'ont pas rendu aux femmes la place politique qu'elles avaient."
+        ],
+        "sourceRefs": ["s7"]
+      },
+      {
+        "heading": "Le roman n'est pas la source",
+        "paragraphs": [
+          "Beaucoup de lecteurs ont découvert la société igbo par un roman : Things Fall Apart (Tout s'effondre), de Chinua Achebe, publié en 1958 et traduit dans plus de cinquante langues. Son village, Umuofia, est celui d'une fiction. Un roman peut faire comprendre une société ; il ne remplace pas les témoignages et les études qui la décrivent."
+        ],
+        "sourceRefs": ["s9"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "« Igbo enwe eze » dit une réalité pour la plupart des communautés igbo : elles se gouvernaient sans roi, par des assemblées, des lignages, des classes d'âge, des groupes de femmes et des mascarades. Il y a eu des exceptions. Et ce que la colonisation a imposé, ce n'est pas une tradition de chefs, mais des chefs nommés par elle.",
+          "Dans votre ville ou votre village, qui prenait les décisions avant la colonisation ? Si vous connaissez un récit sur ce sujet, dites-nous d'où il vient."
+        ],
+        "sourceRefs": ["s2", "s7", "s5"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
   },
   "sources": [
     {
       "id": "s1",
       "title": "C. Onwumechili, « Igbo Enwe Eze: The Igbo Have No Kings », conférence Ahiajoku, 20 novembre 2000",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "kind": "other",
+      "notes": "Conférence de la série Ahiajoku. Nous n'avons pas pu en consulter le texte ; nous citons seulement son titre."
     },
     {
       "id": "s2",
       "title": "Témoignage de Noo Udala, Umuaga, 19 juin 1973, recueilli par E. N. Okechukwu, in Elizabeth Isichei (dir.), Igbo Worlds, 1978, p. 71-75",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "url": "https://www.historians.org/resource/igbo-village-democracy/",
+      "kind": "oral",
+      "notes": "Témoignage recueilli en 1973 et publié dans Igbo Worlds (Institute for the Study of Human Issues, 1978). Extrait lu sur la page de l'American Historical Association qui le reproduit."
     },
     {
       "id": "s3",
@@ -35,7 +102,9 @@
     {
       "id": "s5",
       "title": "B. A. Ogot (dir.), Histoire générale de l'Afrique, UNESCO, 1997, p. 498",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "kind": "book",
+      "notes": "Page citée par le carrousel pour le royaume de Nri. Nous ne l'avons pas encore consultée directement."
     },
     {
       "id": "s6",
@@ -45,7 +114,10 @@
     {
       "id": "s7",
       "title": "J. Van Allen, « “Sitting on a man”… », Canadian Journal of African Studies, 6-2, 1972, p. 165-181",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "url": "https://dx.doi.org/10.12795/Africa-Confluence.2026.i01.03",
+      "kind": "article",
+      "notes": "Lu dans la traduction espagnole autorisée publiée par la revue Africa Confluence en avril 2026 : le pouvoir diffus, les warrant chiefs, la guerre des femmes de 1929 et les réformes de 1933."
     },
     {
       "id": "s8",
@@ -55,7 +127,15 @@
     {
       "id": "s9",
       "title": "S. Jilani, « Things Fall Apart… », The Conversation, 28 novembre 2018",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "kind": "press",
+      "notes": "Article de presse sur le roman de Chinua Achebe et les langues de la littérature africaine."
+    },
+    {
+      "id": "s10",
+      "title": "Fiche du peuple igbo, EthniAfrica",
+      "tier": "needs_review",
+      "notes": "Notre fiche sur les Igbo : le nom qu'ils se donnent, Ndi Igbo."
     }
   ],
   "media": {
