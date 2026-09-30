@@ -168,3 +168,29 @@ Wikipedia page, or on a work nobody read, is dropped or flagged.
   carry it). Credit-check on cards 1, 4, 6, 9; cards 1/6/10 and 2/4 reuse images.
 - **Improvement over the carousel.** Shows the two dates side by side with who holds each, and
   gives the reader the earlier name of the cape.
+
+## Case B7 — `pourquoi-la-meconnaissance-freine-l-afrique`
+
+- **Reader's question.** Why does EthniAfrica say that not knowing the history of our names holds
+  Africa back?
+- **Primary reader need.** P1 and P3. This is a **position piece**, outside the name series by
+  operator decision (post.md). The article must keep the project's convictions visibly separate
+  from the few sourced facts. **Short article.**
+- **Claims and support.**
+  | Claim                                                                                                                               | Record source                                                                      |
+  | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+  | "Ethnie" proposed in 1896, in Europe, to classify Europeans                                                                         | s1 Lapouge 1896 p. 10 (workshop reading; not opened here)                          |
+  | In Senegal, the colonial administration classified mostly under "race" and "tribu", sometimes "ethnie"                              | s2 Glasman 2004 (workshop reading; its scope is Senegal, which the article states) |
+  | OAU founded May 1963, African Union launched July 2002                                                                              | s3 (workshop reading of au.int)                                                    |
+  | Seventeen African countries became independent in 1960                                                                              | s4 (workshop reading)                                                              |
+  | Borders not drawn for the peoples already there; "ethnic" tensions with mixed causes; union as the way out; education about peoples | **no source**: stated as the project's thesis and convictions, not as findings     |
+- **Uncertainty.** The border thesis is not demonstrated in the piece; the article says so.
+- **Dropped or flagged.** The comparison with the United States, the EU and the UAE (reel only,
+  not on the carousel); "Beaucoup connaissent mieux l'histoire de l'ancien pays colonisateur…"
+  (a generalisation with no source, kept only as a conviction). **Cloned voices of named real
+  people** (Marie-victoire, issa sagna): usage rights never settled in the workshop (post.md,
+  open question); the video soundtrack is not cleared for the site either. Credit-check on cards
+  1, 2, 4-7, 9-11, 13, 14; cards 1/10 and 2/4/6 reuse images; the video's media credits are in
+  the workshop's CREDITS-PUBLICATION.md, not yet in the record.
+- **Improvement over the posts.** Separates what is sourced from what is believed, and gives the
+  sourced facts their scope (Senegal for Glasman).
