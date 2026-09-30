@@ -57,7 +57,7 @@ function handoffReady(brief = single()) {
 }
 const has = (errors, pattern) => errors.some((error) => pattern.test(error));
 
-// @req REQ-186
+// @req REQ-188
 test("the catalogue has ten stable patterns and six common functions, distinct from the six families", () => {
   assert.equal(PATTERNS.length, 10);
   assert.equal(new Set(PATTERNS.map((p) => p.id)).size, 10);
@@ -76,7 +76,7 @@ test("the catalogue has ten stable patterns and six common functions, distinct f
   assert.equal(DEFAULT_TARGET_SECONDS, 180);
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the reference catalogue in the idee skill is the rendered catalogue, never a second list", () => {
   const skillDir = new URL(
     "../../../.claude/skills/ethniafrica-idee/",
@@ -91,7 +91,7 @@ test("the reference catalogue in the idee skill is the rendered catalogue, never
   );
 });
 
-// @req REQ-186
+// @req REQ-188
 test("valid synthetic and Lingala designs pass in draft mode, with one or three proposals", () => {
   assert.deepEqual(errorsOf(single(), "draft"), []);
   assert.equal(design(single()).proposals.length, 1);
@@ -99,7 +99,7 @@ test("valid synthetic and Lingala designs pass in draft mode, with one or three 
   assert.equal(design(lingala()).proposals.length, 3);
 });
 
-// @req REQ-186
+// @req REQ-188
 test("a draft with no selection and no outline is valid but cannot be handed to structure", () => {
   const draft = single();
   draft.narrativeDesign.selection = null;
@@ -116,7 +116,7 @@ test("a draft with no selection and no outline is valid but cannot be handed to 
   );
 });
 
-// @req REQ-186
+// @req REQ-188
 test("an unknown version or a missing design fails; it never falls back to the legacy path", () => {
   const brief = single();
   brief.narrativeDesign.version = 2;
@@ -130,7 +130,7 @@ test("an unknown version or a missing design fails; it never falls back to the l
   assert.equal(validateBrief(brief, { today: TODAY }).ok, false);
 });
 
-// @req REQ-186
+// @req REQ-188
 test("each named proposal field is required and substantive", () => {
   for (const field of ["question", "application", "intention", "rationale"]) {
     const brief = single();
@@ -145,7 +145,7 @@ test("each named proposal field is required and substantive", () => {
   assert.ok(has(errorsOf(noCriterion, "draft"), /success criterion/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("a success criterion needs a prompt, an expected answer or limit, and resolving links", () => {
   const vague = single();
   Object.assign(vague.narrativeDesign.proposals[0].successCriteria[0], {
@@ -163,7 +163,7 @@ test("a success criterion needs a prompt, an expected answer or limit, and resol
   );
 });
 
-// @req REQ-186
+// @req REQ-188
 test("claim references must resolve; an explicit unknown is a valid reference", () => {
   const brief = single();
   brief.narrativeDesign.proposals[0].claimRefs.push("c99");
@@ -172,7 +172,7 @@ test("claim references must resolve; an explicit unknown is a valid reference", 
   assert.deepEqual(errorsOf(single(), "draft"), []);
 });
 
-// @req REQ-186
+// @req REQ-188
 test("a claim marked sourced must rest on a source actually read", () => {
   const brief = single();
   brief.narrativeDesign.research.sources[0].access = "indirect";
@@ -185,7 +185,7 @@ test("a claim marked sourced must rest on a source actually read", () => {
   assert.ok(has(errorsOf(silent, "draft"), /uncertainty/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("all ten patterns are assessed, none twice, and only real ones", () => {
   const missing = single();
   missing.narrativeDesign.patternAssessment.pop();
@@ -202,7 +202,7 @@ test("all ten patterns are assessed, none twice, and only real ones", () => {
   assert.ok(has(errorsOf(twice, "draft"), /assessed twice/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("an unproposed pattern needs a reason; a proposal needs an offered or conditional assessment", () => {
   const noReason = single();
   delete noReason.narrativeDesign.patternAssessment[1].reason;
@@ -217,7 +217,7 @@ test("an unproposed pattern needs a reason; a proposal needs an offered or condi
   );
 });
 
-// @req REQ-186
+// @req REQ-188
 test("every function B1–B6 is in the arrangement or omitted with a reason; order is B1 first, B5 before B6 last", () => {
   const dropped = single();
   dropped.narrativeDesign.proposals[0].arrangement.steps.splice(3, 1);
@@ -238,7 +238,7 @@ test("every function B1–B6 is in the arrangement or omitted with a reason; ord
   assert.ok(has(errorsOf(misplaced, "draft"), /B5 .*before B6|B6 .*last/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("functions may be merged or repeated; an off-family proposal must say how it adapted the name wording", () => {
   // Lingala L1 merges B2+B3 twice and passes
   assert.deepEqual(errorsOf(lingala(), "draft"), []);
@@ -248,7 +248,7 @@ test("functions may be merged or repeated; an off-family proposal must say how i
   assert.ok(has(errorsOf(unadapted, "draft"), /L2.*adapt/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("a recommendation is not a selection; a synthetic selection never opens a handoff", () => {
   const recommendedOnly = single();
   recommendedOnly.narrativeDesign.selection = null;
@@ -266,7 +266,7 @@ test("a recommendation is not a selection; a synthetic selection never opens a h
   assert.ok(has(errorsOf(noStatement, "selected"), /statement/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("a handoff needs the selection, the outline, and proof both were actually shown", () => {
   const ready = handoffReady();
   assert.deepEqual(errorsOf(ready, "handoff"), []);
@@ -282,7 +282,7 @@ test("a handoff needs the selection, the outline, and proof both were actually s
   assert.ok(has(errorsOf(noOutline, "handoff"), /no detailed outline/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("editing the outline or the proposals after they were shown makes the presentation stale", () => {
   const editedOutline = handoffReady();
   editedOutline.narrativeDesign.outline.blocks[1].seconds = 41;
@@ -302,7 +302,7 @@ test("editing the outline or the proposals after they were shown makes the prese
   );
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the outline is shown after the choice, and the choice comes after the proposals were shown", () => {
   const early = handoffReady();
   early.narrativeDesign.presentation.outline.at = "2026-09-29";
@@ -314,7 +314,7 @@ test("the outline is shown after the choice, and the choice comes after the prop
   );
 });
 
-// @req REQ-186
+// @req REQ-188
 test("outline timing is derived from per-block seconds and closes the piece", () => {
   const { blocks, totalSeconds } = timeline(design(single()).outline);
   assert.equal(totalSeconds, 180);
@@ -337,7 +337,7 @@ test("outline timing is derived from per-block seconds and closes the piece", ()
   assert.ok(has(errorsOf(noClose, "selected"), /last block .*B6|B6/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("a longer target needs a visible reason, and the overrun is reported rather than silently trimmed", () => {
   const long = single();
   long.narrativeDesign.outline.blocks[1].seconds = 70;
@@ -350,7 +350,7 @@ test("a longer target needs a visible reason, and the overrun is reported rather
   assert.ok(has(errorsOf(proposalLong, "draft"), /durationReason/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the outline must cover the six functions, cover every takeaway and criterion, and resolve its references", () => {
   const noB4 = single();
   noB4.narrativeDesign.outline.blocks.splice(3, 1);
@@ -372,7 +372,7 @@ test("the outline must cover the six functions, cover every takeaway and criteri
   );
 });
 
-// @req REQ-186
+// @req REQ-188
 test("generic outline blocks are refused: same text pasted, empty limits, role repeated as content", () => {
   const pasted = single();
   const blocks = pasted.narrativeDesign.outline.blocks;
@@ -389,7 +389,7 @@ test("generic outline blocks are refused: same text pasted, empty limits, role r
   assert.ok(has(errorsOf(noTransition, "selected"), /transition/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("viewer success statements are filled, one per criterion, and never formula-only", () => {
   const blank = single();
   blank.narrativeDesign.outline.successStatements[0].statement =
@@ -403,7 +403,7 @@ test("viewer success statements are filled, one per criterion, and never formula
   assert.ok(has(errorsOf(rationale, "selected"), /orderLogic|rationale/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("a claim that is a gap cannot be cited by the handoff outline, but a qualified one can", () => {
   const brief = lingala();
   const d = design(brief);
@@ -413,7 +413,7 @@ test("a claim that is a gap cannot be cited by the handoff outline, but a qualif
   assert.deepEqual(errorsOf(conditionalCard, "selected"), []);
 });
 
-// @req REQ-186
+// @req REQ-188
 test("a reference example is real with a locator, or explicitly hypothetical", () => {
   const brief = single();
   brief.narrativeDesign.proposals[0].referenceExample = {
@@ -428,7 +428,7 @@ test("a reference example is real with a locator, or explicitly hypothetical", (
   assert.ok(has(errorsOf(brief, "draft"), /reference example status/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("three documented explanations pass on the new route, where the old gabarit caps at two", () => {
   const brief = single();
   const d = design(brief);
@@ -456,7 +456,7 @@ test("three documented explanations pass on the new route, where the old gabarit
   );
 });
 
-// @req REQ-186
+// @req REQ-188
 test("on the new route the name-origin closing stays mandatory, and other series keep their own ending", () => {
   const wrong = "Une scène.\n\nAppelez-nous.";
   const findings = verifierNarrationConcue(wrong, { series: "name-origin" });
@@ -487,7 +487,7 @@ test("the new route keeps name, geography and universal reviews, and never turns
   assert.deepEqual(legacy.narrationGabarit, { applies: true, type: "peuple" });
 });
 
-// @req REQ-186
+// @req REQ-188
 test("a handoff brief's edition is a snapshot of the design: question, family, claims and video steps agree", () => {
   const question = handoffReady();
   question.edition.angle.question = "Another question ?";
@@ -507,7 +507,7 @@ test("a handoff brief's edition is a snapshot of the design: question, family, c
   assert.ok(has(errorsOf(steps, "handoff"), /videoSequence/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("legacy briefs without narrativeDesign follow their established path untouched", () => {
   const legacy = JSON.parse(
     readFileSync(
@@ -525,7 +525,7 @@ test("legacy briefs without narrativeDesign follow their established path untouc
   });
 });
 
-// @req REQ-186
+// @req REQ-188
 test("resumption names the real missing step for every state, and never selects for the operator", () => {
   const stage = (brief) => resumeStep(brief).stage;
   assert.equal(stage({}), "1-2");
@@ -570,12 +570,12 @@ test("resumption names the real missing step for every state, and never selects 
   assert.equal(stage(changed), "3-refresh");
 });
 
-// @req REQ-186
+// @req REQ-188
 test("a file alone proves nothing: an unshown design with a synthetic choice is not a handoff", () => {
   assert.equal(resumeStep(single()).stage, "3-present");
 });
 
-// @req REQ-186
+// @req REQ-188
 test("proposal cards carry the five French fields, each proposal its own arrangement, and label examples", () => {
   const text = renderProposals(design(lingala()));
   for (const label of [
@@ -606,7 +606,7 @@ test("proposal cards carry the five French fields, each proposal its own arrange
   assert.match(text, /B2\+B3/);
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the coverage table lists all ten patterns with a disposition and a reason", () => {
   const text = renderProposals(design(lingala()));
   for (const pattern of PATTERNS) {
@@ -616,7 +616,7 @@ test("the coverage table lists all ten patterns with a disposition and a reason"
   assert.match(text, /conditionnel/i);
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the chosen plan renders the timed table, the reasons and filled viewer statements", () => {
   const text = renderPlan(design(lingala()));
   assert.match(text, /\| 0:00–0:15 \| B1 \|/);
@@ -630,7 +630,7 @@ test("the chosen plan renders the timed table, the reasons and filled viewer sta
   assert.doesNotMatch(text, /…/, "no formula-only statement");
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the committed Lingala demonstration is what the tool renders from its fixture", () => {
   const d = design(lingala());
   assert.equal(
@@ -645,7 +645,7 @@ test("the committed Lingala demonstration is what the tool renders from its fixt
   );
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the CLI validates by mode, renders, records presentation and prints the resume step", () => {
   const cli = new URL("./check-narrative-design.mjs", import.meta.url).pathname;
   const dir = mkdtempSync(join(tmpdir(), "narrative-design-"));
@@ -688,7 +688,7 @@ test("the CLI validates by mode, renders, records presentation and prints the re
   }
 });
 
-// @req REQ-186
+// @req REQ-188
 test("check-family-brief refuses a design draft, and check-gabarit routes by brief on request", () => {
   const dir = mkdtempSync(join(tmpdir(), "narrative-design-"));
   try {
