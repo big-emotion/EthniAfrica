@@ -64,7 +64,12 @@ const RESERVED_SLUGS = [
   "regards",
 ];
 
+// A carousel posted two days after its reel is one release in two formats.
+const COMPANION_DAYS = 3;
+
 const NEXT = {
+  "edition-not-shown":
+    "P5 decides whether this earlier edition belongs in the article or needs its own.",
   "no-media":
     "Recover the rendered files from the workshop or the platform, or record the loss.",
   "release-ambiguous":
@@ -236,6 +241,8 @@ function channelDate(text) {
 /** First caption paragraph fit to stand as an excerpt, or null. */
 function captionExcerpt(markdown, title) {
   for (const raw of markdown.split("\n")) {
+    // Only the quoted blocks are the text that was posted.
+    if (!raw.startsWith(">")) continue;
     const line = raw.replace(/^>\s?/, "").trim();
     if (line.length < 40) continue;
     if (
@@ -296,7 +303,21 @@ function buildEdition(post, ctx) {
   const recover = (ctx.curation.recover ?? []).find(
     (r) => r.record === post.id
   );
-  const folderRel = ctx.shelves.postRelPath(post);
+  // The shelf the status derives, else wherever the library actually holds it.
+  let folderRel = ctx.shelves.postRelPath(post);
+  if (
+    (!folderRel || !exists(path.join(ctx.postsRoot, folderRel))) &&
+    ctx.shelves.findPostRelPath
+  ) {
+    folderRel =
+      ctx.shelves.findPostRelPath(
+        ctx.postsRoot,
+        post.dir,
+        fs.existsSync,
+        path.join,
+        fs.readdirSync
+      ) ?? folderRel;
+  }
   const folderAbs = folderRel ? path.join(ctx.postsRoot, folderRel) : null;
 
   let files = [];
@@ -502,22 +523,25 @@ function buildEdition(post, ctx) {
     }
   }
 
+  // Caption files mix the published text with the operator's working notes,
+  // so only a release kit's caption, verified against the hash the kit
+  // declared, may lend an excerpt.
   let copyText = null;
-  const copyPointers = [
-    post.copy,
-    renderedVideo
-      ? path.join(
-          path.dirname(renderedVideo),
-          "publication",
-          "publication-copy.md"
-        )
-      : null,
-  ].filter(Boolean);
-  for (const pointer of copyPointers.reverse()) {
-    const file = path.join(ctx.workshopRoot, pointer);
-    if (exists(file)) {
-      copyText = fs.readFileSync(file, "utf8");
-      break;
+  if (releaseDir) {
+    const kitFile = path.join(
+      releaseDir,
+      "publication",
+      "publication-kit.json"
+    );
+    const copyFile = path.join(
+      releaseDir,
+      "publication",
+      "publication-copy.md"
+    );
+    if (exists(kitFile) && exists(copyFile)) {
+      const declared = readJson(kitFile).files?.["publication-copy.md"];
+      const text = fs.readFileSync(copyFile, "utf8");
+      if (declared && declared === sha256(Buffer.from(text))) copyText = text;
     }
   }
   if (post.copy && !exists(path.join(ctx.workshopRoot, post.copy))) {
@@ -756,14 +780,20 @@ export async function runImport(options) {
       );
       let how = "same URL";
       if (!owner) {
-        const fits = editions.filter(
-          (e) =>
-            e.formats.includes(formatOf(occ.format)) &&
-            (occ.publishedAt === e.date || tiktokDay === e.date)
+        const sameFormat = editions.filter((e) =>
+          e.formats.includes(formatOf(occ.format))
+        );
+        const fits = sameFormat.filter(
+          (e) => occ.publishedAt === e.date || tiktokDay === e.date
         );
         if (fits.length === 1) {
           owner = fits[0];
           how = "same format and day";
+        } else if (sameFormat.length === 1 && !sameFormat[0].date) {
+          // A record never marked published carries no date; the curated link
+          // already ties it to this campaign, and it is the only one in its format.
+          owner = sameFormat[0];
+          how = "only edition in this format, undated record";
         }
       }
       const day = tiktokDay ?? occ.publishedAt ?? null;
@@ -801,6 +831,20 @@ export async function runImport(options) {
       }
     }
 
+    for (const e of editions.filter((x) => !x.date)) {
+      const days = e.occurrences
+        .map((o) => o.day)
+        .filter(Boolean)
+        .sort();
+      e.date = days[0] ?? null;
+      exceptions.push(
+        exception(
+          "registry-status",
+          `${e.recordId} has no publication date in the library; ${e.date ? `dated ${e.date} from its first recorded occurrence` : "no occurrence dates it either"}`
+        )
+      );
+    }
+
     // One selected edition per format; a second one needs a written ruling.
     const selected = {};
     for (const format of ["carousel", "video"]) {
@@ -820,20 +864,46 @@ export async function runImport(options) {
         selected.blocked = true;
       } else if (remaining.length === 1) selected[format] = remaining[0];
     }
-    const chosen = selected.blocked
+    const candidatesChosen = selected.blocked
       ? []
       : uniqueBy(
           [selected.carousel, selected.video].filter(Boolean),
           (e) => e.recordId
         );
+    // The newest release leads. Another format joins it only as a companion
+    // released within a few days; an older release in another format is a
+    // different edition, and showing it would pass it off as part of this one.
+    const lead = [...candidatesChosen].sort(
+      (a, b) =>
+        (b.date ?? "").localeCompare(a.date ?? "") ||
+        (a.formats.includes("video") ? -1 : 1)
+    )[0];
+    const chosen = candidatesChosen.filter(
+      (e) =>
+        e === lead ||
+        Math.abs(Date.parse(e.date) - Date.parse(lead.date)) <=
+          COMPANION_DAYS * 86400000
+    );
+    const notShown = new Set();
+    for (const e of candidatesChosen.filter((x) => !chosen.includes(x))) {
+      notShown.add(e.recordId);
+      exceptions.push(
+        exception(
+          "edition-not-shown",
+          `${e.recordId} (${e.formats.join("+")}, ${e.date}) is an earlier edition than ${lead.recordId} (${lead.date}); recorded, not shown`
+        )
+      );
+    }
     for (const role of entry.records) {
       const e = chosen.find((c) => c.recordId === role.id);
       if (!role.role)
         role.role = e
           ? "selected"
-          : editions.some((x) => x.recordId === role.id)
-            ? "superseded"
-            : "blocked";
+          : notShown.has(role.id)
+            ? "other-edition"
+            : editions.some((x) => x.recordId === role.id)
+              ? "superseded"
+              : "blocked";
     }
 
     if (!groupRecords.length) {
@@ -891,7 +961,8 @@ export async function runImport(options) {
     // Supersession and its correction note, verified in the workshop.
     const primary = [...chosen].sort(
       (a, b) =>
-        b.date.localeCompare(a.date) || (a.formats.includes("video") ? -1 : 1)
+        (b.date ?? "").localeCompare(a.date ?? "") ||
+        (a.formats.includes("video") ? -1 : 1)
     )[0];
     const ruling = (curation.supersedes ?? []).find(
       (s) => s.record === primary.recordId
@@ -1063,7 +1134,7 @@ export async function runImport(options) {
         exception("sources-empty", "no factual source recovered automatically")
       );
     for (const s of sources) {
-      if (s.url && /wikipedia\.org/.test(s.url))
+      if (/wikipedia\.org/.test(s.url ?? "") || /wikip[ée]dia/i.test(s.title))
         exceptions.push(exception("wikipedia-source", s.title));
     }
 

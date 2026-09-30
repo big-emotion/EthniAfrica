@@ -366,6 +366,42 @@ test("the corrected edition is shown, never the older URL", async () => {
   assert.ok(!JSON.stringify(a).includes("OLDOLDOLD01"));
 });
 
+test("an older release in another format is recorded, not shown as a companion", async () => {
+  const OLD_VIDEO_B = {
+    ...VIDEO_A_OLD,
+    id: "b-video",
+    dir: "Peuples-B/b-video",
+    date: "2026-09-05",
+    channels: { youtube: "https://youtube.com/shorts/BVIDEOBVID1" },
+    notes: "",
+    links: { campaign: "b", content: "video" },
+  };
+  const world = await buildWorld({
+    posts: [VIDEO_A_OLD, VIDEO_A_NEW, CAROUSEL_B, EMPTY_C, OLD_VIDEO_B],
+  });
+  const folder = path.join(
+    world.postsRoot,
+    "Publie",
+    "2026-09-05",
+    "Peuples-B",
+    "b-video"
+  );
+  put(path.join(folder, "video", "b.mp4"), "old b video");
+  await png(path.join(folder, "video", "thumbnail.png"), 99);
+  const result = await runImport(options(world, { write: true }));
+  const b = readDraft(world, "b");
+  assert.deepEqual(
+    b.media.formats.map((f) => f.kind),
+    ["carousel"]
+  );
+  assert.ok(!JSON.stringify(b).includes("BVIDEOBVID1"));
+  assert.ok(
+    candidate(result, "b").exceptions.some(
+      (e) => e.code === "edition-not-shown" && e.detail.includes("b-video")
+    )
+  );
+});
+
 test("two editions of one format with no ruling are refused, not guessed", async () => {
   const world = await buildWorld();
   const result = await runImport(options(world, { curation: {}, write: true }));
@@ -529,6 +565,20 @@ test("private roots and production notes never reach public output", async () =>
     assert.ok(!text.includes("NOTE-PRIVEE"), file);
     assert.ok(!text.includes("Publie/"), file);
   }
+});
+
+test("an excerpt never comes from a caption file's working notes", async () => {
+  const world = await buildWorld({
+    posts: [{ ...VIDEO_A_NEW, copy: "_legendes/a.md" }],
+  });
+  put(
+    path.join(world.workshopRoot, "_legendes", "a.md"),
+    "# A\n\nRewritten and validated by the operator on 2026-09-25, after the full draft was shown.\n\n> D'où vient le nom A ? Une longue légende publiée sur les réseaux, assez longue pour servir.\n"
+  );
+  await runImport(options(world, { curation: {}, write: true }));
+  const a = readDraft(world, "a");
+  assert.ok(!JSON.stringify(a).includes("validated by the operator"));
+  assert.equal(a.fr.excerpt, a.fr.title);
 });
 
 test("the command refuses to run without its private roots", () => {

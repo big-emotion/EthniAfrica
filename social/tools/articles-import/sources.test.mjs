@@ -49,6 +49,23 @@ test("slide text keeps the card order and the card's own words", () => {
   );
 });
 
+test("a slogan printed in the source slot is not a reference", () => {
+  const { sources } = cardsToSlides({
+    cartes: [
+      {
+        rang: 1,
+        titre: "Fin",
+        source: "Nommer un peuple aussi facilement qu'un pays.",
+      },
+      { rang: 2, titre: "Réf", source: "M. Meeuwis, APiCS Online" },
+    ],
+  });
+  assert.deepEqual(
+    sources.map((s) => s.title),
+    ["M. Meeuwis, APiCS Online"]
+  );
+});
+
 const CREDITS = `# Publication credits
 
 ## Assets

@@ -45,6 +45,9 @@ export function cardsToSlides(cardsJson) {
   }
   const sources = titles
     .filter((title) => !/^EthniAfrica\b/i.test(title))
+    // A reference names an author, a work or a date; a sentence with neither a
+    // comma nor a figure is the account's closing line printed in that slot.
+    .filter((title) => /[,\d]/.test(title))
     // A card's reference line carries no tier: nobody has ruled on it yet.
     .map((title) => ({ title, tier: "needs_review" }));
   return { slides, sources, credits: credits.join(" ; ") };
