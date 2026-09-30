@@ -223,7 +223,8 @@ two are manual regardless.
 
 - **Source tiers**: every claim carries its source and tier (`official` /
   `referenced` / `unverified`). Nothing is excluded for being weak; everything is
-  labelled. Wikipedia is not a source — cite what it led to.
+  labelled. Wikipedia is read first — prefer to cite what it led to (rule:
+  `docs/editorial/reader-facing-register.md`, "Using sources").
 - **Reader-facing register**: never let the workshop's vocabulary reach the
   reader. No file paths, no `PPL_`/`FLG_`/`PAT_` identifiers, no _file d'attente_,
   _la passe_, _protocole de recherche_. This binds social copy as much as fiche

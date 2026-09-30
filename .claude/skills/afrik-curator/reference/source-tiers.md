@@ -99,16 +99,20 @@ content whose _origin_ happens to matter. So it is `tier: "unverified"` plus
 The interface keeps the distinction visible: the **Non vérifiée** badge plus a separate AI
 provenance marker driven by `source_kind`, never by the tier.
 
-## Wikipedia is not a source
+## Wikipedia is read first, and cited for what it is
 
-A primary source _discovered through_ Wikipedia is cited at its own tier, by its own URL,
-and the `notes` field records which Wikipedia language versions were crossed — so the chain
-stays auditable.
+Rule owned by `docs/editorial/reader-facing-register.md` ("Using sources"). In short: prefer
+the primary source _discovered through_ Wikipedia, cited at its own tier by its own URL, with
+the Wikipedia language versions crossed recorded in `notes` so the chain stays auditable. A
+Wikipedia article that was actually consulted may be cited directly as a tertiary encyclopedia
+at `unverified`; the gate reports it, it does not refuse it.
 
-## `notes` carries the reason for the tier
+## `notes` says what the source is
 
-Not a summary of the source. The reason it sits at that level. The language fiches are the
-model to copy: all 24 carry one.
+Publisher, edition, what was read or cross-checked — not why the source sits at its tier.
+That rationale is workshop reasoning: it goes in the internal ruling ledger, never in a
+field readers see verbatim. The language fiches are the model to copy: their notes describe
+the source, as in the example below.
 
 ```json
 {

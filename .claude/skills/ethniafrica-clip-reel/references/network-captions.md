@@ -20,8 +20,9 @@ or none**, each attributed to who holds it, none crowned. « Son origine n'est p
 établie. Une piste… Une autre… » Then what is better known (the earlier senses, the
 first attested dates), then the question the reel leaves to the reader. Check every
 date and sense first — an encyclopedia read is a first pass, **never the source shown
-to the reader**; cite a dictionary of reference or a primary document if a source has
-to appear. If a cover asks « qui a inventé… ? », the description must answer or
+in a caption or on screen** (operator ruling, 2026-09-21); cite a dictionary of reference
+or a primary document if a source has to appear. The consultation itself is kept, dated,
+in the piece's workshop record — what is displayed is restricted, what was read is not hidden. If a cover asks « qui a inventé… ? », the description must answer or
 admit it cannot.
 
 ## The six

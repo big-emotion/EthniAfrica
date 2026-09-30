@@ -572,9 +572,11 @@ This supersedes the earlier Tier 1/2/3 policy, under which Tier 3 was forbidden 
 claim was deleted. It also settles the aggregator question (Joshua Project, 101lasttribes,
 peoplegroups): they are cited, at `unverified`.
 
-Wikipedia is not a source. A primary source _discovered through_ Wikipedia is cited at its own tier,
-by its own URL, and its `notes` field may record which Wikipedia language versions were crossed. No
-gate requires that path, and a Wikipedia URL cited directly is reported, not refused.
+Wikipedia is read first and cited for what it is (rule owned by
+`docs/editorial/reader-facing-register.md`, "Using sources"). A primary source _discovered through_
+Wikipedia is cited at its own tier, by its own URL, and its `notes` field may record which Wikipedia
+language versions were crossed. No gate requires that path, and a Wikipedia URL cited directly is
+reported, not refused.
 
 **Wikipedia is a first-pass verification tool, and this applies to every action, not only citing a
 claim** — curation, production, an audit, a rewrite. Decided 2026-09-14, after a video script asserted
@@ -641,12 +643,16 @@ DEC-052 makes a narrow exception for people names. `oral_tradition` and
 `ethniafrica_synthesis` both retain `tier: "unverified"`, but their source-quality
 weights are fixed by provenance at 0.6 and 0.3 respectively. These values **replace**
 the tier weight; they are not coefficients. An oral source qualifies a people name
-only through an approved, rights-cleared narrative linked to that people, and one
-such narrative is sufficient. The synthesis may qualify a people name on its own.
-Narratives with the same opaque `carrier_ref` count once in the source-count part
-of confidence. Patronyme and other name gates remain unchanged. This is a scoped
-exception to REQ-095 for the provenance of a people's name, not a change to how
-oral accounts support other assertions.
+through a rights-cleared narrative linked to that people that has not been
+rejected — review is not a precondition, consent is (DEC-055 §6, migration `091`;
+DEC-052's "approved" is superseded). One such narrative is sufficient. The
+synthesis may qualify a people name on its own. Confidence counts source IDs, not
+carriers: `carrier_ref` no longer merges narratives, so ten narratives from one
+carrier are ten sources. That counts quantity, not independent corroboration — see
+the guide's "Using sources" and the remediation ledger (T02). Patronyme and other
+name gates remain unchanged. This is a scoped exception to REQ-095 for the
+provenance of a people's name, not a change to how oral accounts support other
+assertions.
 
 A fiche sourced only at `unverified` is published and visibly marked low-confidence through
 `ConfidenceChip`. That is the intended outcome, not a defect to fix.

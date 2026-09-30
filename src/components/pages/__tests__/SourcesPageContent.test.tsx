@@ -33,7 +33,8 @@ describe("SourcesPageContent (REQ-091)", () => {
       })
     ).toBeInTheDocument();
     expect(screen.getByText("North Africa")).toBeInTheDocument();
-    expect(screen.getByText(/Wikipedia is not a source/)).toBeInTheDocument();
+    expect(screen.getByText(/Wikipedia is read first/)).toBeInTheDocument();
+    expect(screen.queryByText(/is not a source/)).not.toBeInTheDocument();
     expect(screen.queryByText("Afrique du Nord")).not.toBeInTheDocument();
   });
 
@@ -122,12 +123,16 @@ describe("SourcesPageContent — the editorial bibliographies", () => {
   });
 
   // @req REQ-091
-  it("says that Wikipedia is not a source, where a reader would cite one", () => {
+  it("says what Wikipedia is used for and what « awaiting review » means, without hiding either", () => {
     render(<SourcesPageContent />);
 
-    expect(
-      screen.getByText(/Wikipédia n'est pas une source/)
-    ).toBeInTheDocument();
+    const note = screen.getByText(/Nous lisons Wikipédia d'abord/);
+    expect(note).toBeInTheDocument();
+    expect(note.textContent).not.toMatch(/n'est pas une source/);
+    // « En attente d'examen » is a weight not yet assessed, never a claim that
+    // tracing the source is unfinished.
+    expect(note.textContent).toMatch(/pas encore évalué/);
+    expect(note.textContent).not.toMatch(/remontée/);
   });
 
   // Deriving rather than restating is what keeps the page from drifting from
