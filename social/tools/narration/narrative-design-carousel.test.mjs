@@ -55,7 +55,7 @@ function handoffReady(brief = single()) {
   return ready;
 }
 
-// @req REQ-186
+// @req REQ-188
 test("a carousel design is a draft with evidence-based proposals and no selection, and needs no timing or video sequence", () => {
   const draft = single();
   draft.narrativeDesign.selection = null;
@@ -72,7 +72,7 @@ test("a carousel design is a draft with evidence-based proposals and no selectio
   assert.ok(has(refused.errors, /narrative design is not ready/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("an unknown format fails, an absent format stays the reel, and the design and the edition must agree on the format", () => {
   const unknown = single();
   unknown.narrativeDesign.format = "texte";
@@ -92,7 +92,7 @@ test("an unknown format fails, an absent format stays the reel, and the design a
   assert.ok(has(errorsOf(reelForCarousel, "handoff"), /edition format/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("a carousel proposal declares its series and a real reading profile; other routes keep their own contract", () => {
   const noSeries = single();
   delete proposalOf(noSeries).series;
@@ -115,7 +115,7 @@ test("a carousel proposal declares its series and a real reading profile; other 
   assert.ok(has(errorsOf(series, "draft"), /series/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the card count is checked against the profile descriptor, with a reason, and equals the preview", () => {
   const range = (id) =>
     JSON.parse(
@@ -150,7 +150,7 @@ test("the card count is checked against the profile descriptor, with a reason, a
   assert.ok(has(errorsOf(reason, "draft"), /countReason/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("a carousel carries no duration: seconds, targets and time reasons are refused rather than ignored", () => {
   const seconds = single();
   proposalOf(seconds).durationSeconds = 180;
@@ -163,7 +163,7 @@ test("a carousel carries no duration: seconds, targets and time reasons are refu
   assert.ok(has(errorsOf(reason, "selected"), /no timing/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("six functions can span nine cards: merged, repeated and interleaved, with B1 first, B5 before B6 and B6 last", () => {
   const brief = lingala();
   const steps = proposalOf(brief, "C1").arrangement.steps;
@@ -184,7 +184,7 @@ test("six functions can span nine cards: merged, repeated and interleaved, with 
   assert.deepEqual(errorsOf(omitted, "draft"), []);
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the name-origin series keeps its own legacy route: no profile, a declared myth, and the 8–14 name template count", () => {
   const legacyDoc = readFileSync(
     new URL(
@@ -223,7 +223,7 @@ test("the name-origin series keeps its own legacy route: no profile, a declared 
   assert.ok(has(errorsOf(brief, "draft"), /name-origin.*name-investigation/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("guided listening owes a music claim, so the music review can never be skipped by the plan", () => {
   const brief = single();
   const p = proposalOf(brief);
@@ -233,7 +233,7 @@ test("guided listening owes a music claim, so the music review can never be skip
   assert.ok(!has(errorsOf(brief, "draft"), /music/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the selected plan fits the profile: cover first, credits last, foreign compositions refused, no timeline without dates", () => {
   const foreign = single();
   cardsOf(foreign)[2].composition = "comparison";
@@ -263,7 +263,7 @@ test("the selected plan fits the profile: cover first, credits last, foreign com
   assert.ok(has(errorsOf(outOfRange, "selected"), /outside reading-story/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("a comparison card names its relation as comparaison, never the derivation arrow or a ranking", () => {
   // C3 has no outline in the demo, so the rule is exercised on a synthetic card
   const c3 = proposalOf(lingala(), "C3");
@@ -281,7 +281,7 @@ test("a comparison card names its relation as comparaison, never the derivation 
   assert.ok(c3.arrangement.steps.some((s) => s.composition === "comparison"));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("every takeaway and criterion is reached by a card, and every statement is filled", () => {
   const unsupported = single();
   for (const card of cardsOf(unsupported)) {
@@ -304,7 +304,7 @@ test("every takeaway and criterion is reached by a card, and every statement is 
   assert.ok(has(errorsOf(noStatement, "selected"), /no reader success/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("each card carries its qualification and source locally, and the heading stays honest when read alone", () => {
   const noQualification = single();
   cardsOf(noQualification)[1].qualification = " ";
@@ -337,7 +337,7 @@ test("each card carries its qualification and source locally, and the heading st
   }
 });
 
-// @req REQ-186
+// @req REQ-188
 test("a card cannot rest on a gap, and an unresolved reference fails", () => {
   const gap = single();
   design(gap).research.claims[1].status = "gap";
@@ -347,7 +347,7 @@ test("a card cannot rest on a gap, and an unresolved reference fails", () => {
   assert.ok(has(errorsOf(ghost, "selected"), /unknown reference c99/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the outline must explain its count, its pattern fit and its order, and declare what is unresolved", () => {
   for (const field of ["countReason"]) {
     const brief = single();
@@ -362,7 +362,7 @@ test("the outline must explain its count, its pattern fit and its order, and dec
   assert.ok(has(errorsOf(unresolved, "selected"), /unresolved/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("a recommendation is not a selection, a synthetic choice never opens a handoff, and a file alone proves nothing", () => {
   const brief = single();
   design(brief).selection = null;
@@ -379,7 +379,7 @@ test("a recommendation is not a selection, a synthetic choice never opens a hand
   assert.ok(has(errorsOf(stale, "handoff"), /outline changed/));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("a valid carousel handoff derives carouselSequence, keeps claim IDs and uncertainty, and asks for no video sequence", () => {
   const brief = handoffReady();
   assert.deepEqual(errorsOf(brief, "handoff"), []);
@@ -397,7 +397,7 @@ test("a valid carousel handoff derives carouselSequence, keeps claim IDs and unc
   }
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the handoff edition is a snapshot of the design: sequence, format, profile, question and series agree", () => {
   const sequence = handoffReady();
   sequence.carouselSequence.pop();
@@ -445,7 +445,7 @@ test("a name-origin carousel edition needs its myth in the brief, and a social-o
   );
 });
 
-// @req REQ-186
+// @req REQ-188
 test("an approved legacy carousel resumes without the new intake, and Mémoires sonores keeps its own route", () => {
   const legacy = JSON.parse(
     readFileSync(
@@ -466,7 +466,7 @@ test("an approved legacy carousel resumes without the new intake, and Mémoires 
   assert.ok(profiles.includes("lectures-afrique.json"));
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the three Lingala proposals differ in question, learning and card sequence, and their examples are labelled", () => {
   const proposals = design(lingala()).proposals;
   assert.deepEqual(
@@ -495,7 +495,7 @@ test("the three Lingala proposals differ in question, learning and card sequence
   assert.ok(design(lingala()).selection.kind === "synthetic");
 });
 
-// @req REQ-186
+// @req REQ-188
 test("proposal cards show every field of the specification, a card preview mapped to B1–B6, and no duration", () => {
   const text = renderProposals(design(lingala()));
   for (const label of [
@@ -532,7 +532,7 @@ test("proposal cards show every field of the specification, a card preview mappe
   assert.equal(new Set(previews).size, 3);
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the chosen plan is shown as a card table with count, rationale, completed statements and unresolved needs", () => {
   const text = renderPlan(design(lingala()));
   assert.match(text, /\| C1-01 \| B1 \|/);
@@ -552,7 +552,7 @@ test("the chosen plan is shown as a card table with count, rationale, completed 
   assert.doesNotMatch(text, /Durée|secondes|minut/i);
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the committed carousel demonstration is what the tool renders, and shares the reel demonstration's research verbatim", () => {
   const d = design(lingala());
   assert.equal(
@@ -568,7 +568,7 @@ test("the committed carousel demonstration is what the tool renders, and shares 
   assert.deepEqual(d.research, load("lingala-demo").narrativeDesign.research);
 });
 
-// @req REQ-186
+// @req REQ-188
 test("one catalogue serves both formats: every pattern has a carousel reading, and the rendered reference includes it", () => {
   assert.deepEqual(
     Object.keys(CAROUSEL_READING).sort(),
@@ -592,7 +592,7 @@ test("one catalogue serves both formats: every pattern has a carousel reading, a
   );
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the CLI validates, renders, records presentation and resumes a carousel design", () => {
   const cli = new URL("./check-narrative-design.mjs", import.meta.url).pathname;
   const dir = mkdtempSync(join(tmpdir(), "narrative-carousel-"));
@@ -631,7 +631,7 @@ test("the CLI validates, renders, records presentation and resumes a carousel de
   }
 });
 
-// @req REQ-186
+// @req REQ-188
 test("the reel narration checker refuses a carousel brief instead of grading cards as narration", () => {
   const dir = mkdtempSync(join(tmpdir(), "narrative-carousel-"));
   try {
@@ -652,7 +652,7 @@ test("the reel narration checker refuses a carousel brief instead of grading car
   }
 });
 
-// @req REQ-186
+// @req REQ-188
 test("check-family-brief refuses a carousel draft and accepts a shown handoff with the card-copy route", () => {
   const dir = mkdtempSync(join(tmpdir(), "narrative-carousel-"));
   try {
