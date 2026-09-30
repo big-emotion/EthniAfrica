@@ -5,6 +5,7 @@ import {
   readFileSync,
   readdirSync,
   readlinkSync,
+  rmSync,
   symlinkSync,
   unlinkSync,
 } from "node:fs";
@@ -192,7 +193,8 @@ export function compareSkillManifests(
   return issues;
 }
 
-export type LinkAction = "created" | "relinked" | "already-linked" | "blocked";
+export type LinkAction =
+  "created" | "relinked" | "already-linked" | "reconciled" | "blocked";
 
 export interface LinkResult {
   action: LinkAction;
@@ -239,4 +241,70 @@ export function linkMirrorSkill(
 
   symlinkSync(target, mirrorPath);
   return { action: "created", target, detail: mirrorPath };
+}
+
+function filesRecursively(directory: string, base: string): string[] {
+  return readdirSync(directory, { withFileTypes: true })
+    .sort((left, right) => left.name.localeCompare(right.name))
+    .flatMap((entry) => {
+      const entryPath = join(directory, entry.name);
+      if (entry.isDirectory()) return filesRecursively(entryPath, base);
+      return entry.isFile() ? [relative(base, entryPath)] : [];
+    });
+}
+
+/**
+ * Replaces a real directory standing where the link belongs, but only when it
+ * is provably a stale copy: every file equals the canonical file today, or is
+ * a version the canonical skill once had (`isKnownCanonicalVersion`, backed by
+ * git history in the CLI). A file with no canonical counterpart, or with
+ * contents no canonical version ever had, is someone's own work: the directory
+ * stays exactly as it is and the files are listed.
+ *
+ * Deleting is safe in the accepted case because everything removed is
+ * recoverable byte for byte from the canonical skill's history, which is why no
+ * backup is kept.
+ */
+export function reconcileMirrorSkill(
+  projectRoot: string,
+  skillName: string,
+  isKnownCanonicalVersion: (path: string, contents: string) => boolean
+): LinkResult {
+  const canonicalPath = join(projectRoot, CANONICAL_SKILLS_DIR, skillName);
+  const mirrorPath = join(projectRoot, MIRROR_SKILLS_DIR, skillName);
+  const standing = lstatSync(mirrorPath, { throwIfNoEntry: false });
+
+  if (
+    !standing ||
+    !standing.isDirectory() ||
+    !existsSync(join(canonicalPath, "SKILL.md"))
+  ) {
+    return linkMirrorSkill(projectRoot, skillName);
+  }
+
+  const unaccounted = filesRecursively(mirrorPath, mirrorPath).filter(
+    (path) => {
+      const contents = readFileSync(join(mirrorPath, path), "utf8");
+      const counterpart = join(canonicalPath, path);
+      const equalsCurrent =
+        existsSync(counterpart) &&
+        readFileSync(counterpart, "utf8") === contents;
+      return !equalsCurrent && !isKnownCanonicalVersion(path, contents);
+    }
+  );
+
+  if (unaccounted.length > 0) {
+    return {
+      action: "blocked",
+      target: mirrorPath,
+      detail: `${mirrorPath} holds work the canonical skill never had, left untouched: ${unaccounted.join(", ")}`,
+    };
+  }
+
+  rmSync(mirrorPath, { recursive: true });
+  const linked = linkMirrorSkill(projectRoot, skillName);
+  return {
+    ...linked,
+    action: linked.action === "created" ? "reconciled" : linked.action,
+  };
 }

@@ -471,9 +471,15 @@ reading comfort. Paragraph boundaries carry editorial structure, not cut points.
   (`plain-language-doctrine-2026-09-09.md`), rappelée le 2026-09-21 après une
   narration qui ne l'appliquait pas. **`node social/tools/narration/check-narration.mjs
 <narration.fr.txt>` la vérifie** (ouvertures refusées, verbes de parole inversés,
-  plus de vingt mots, **linguiste, auteur ou livre en tête de phrase**) ; il ne
-  voit pas si une phrase est simple, cela reste à l'auteur et à la validation de
-  l'opérateur.
+  plus de vingt mots, **linguiste, auteur ou livre en tête de phrase**, ou
+  introduit par « selon » / « d'après ») ; il ne voit pas si une phrase est
+  simple, cela reste à l'auteur et à la validation de l'opérateur. Un livre qui
+  est le sujet réel d'une phrase (une recommandation de lecture) passe s'il n'a pas
+  de verbe de parole ; s'il en a un (« décrit »), le contrôle le refuse tant qu'une
+  revue écrite n'a pas dit pourquoi : `check-narration.mjs <narration.fr.txt>
+--revues <revues.json>`, avec pour chaque phrase `{phrase, regle, raison}`. Une
+  revue sans raison ne débloque rien, une revue qui ne correspond plus à aucune
+  phrase échoue.
 - **The subject comes first; its reference follows.** Narration, cards and captions
   explain the subject without leading on a scholar or book as borrowed authority.
   Keep contested explanations qualified. A publication year is not an event date,

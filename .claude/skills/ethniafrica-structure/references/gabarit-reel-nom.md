@@ -45,7 +45,11 @@ changent.
 ### Ouverture (peuple, pays, lieu, langue)
 
 1. Une question : « Comment ce peuple s'appelle-t-il lui-même ? »
-2. « Un même [peuple] porte toujours plusieurs noms. »
+2. « Un même [peuple] porte toujours plusieurs noms. » — ou, quand la recherche ne
+   permet pas de le dire de tous les sujets de cette catégorie : « Ce [peuple]
+   porte plusieurs noms. » (« Cette » pour un nom féminin). Choisir la seconde
+   forme par défaut : choisir un sujet qui a plusieurs noms attestés n'établit pas
+   une règle sur tous les peuples, pays ou langues. Le contrôleur accepte les deux.
 3. Un seul endonyme : « Un seul vient de [lui et de sa langue] : c'est l'endonyme, le nom de l'intérieur. »
    Plusieurs endonymes : « Ici, il en emploie [deux], selon [son dialecte] : ce sont des endonymes, les noms de l'intérieur. »
 4. « Les autres viennent d'ailleurs : ce sont des exonymes, et certains sont plus connus que [le sien]. »
@@ -149,6 +153,31 @@ Le patronyme a deux cas »).
 Le **piège propre à la langue** est de confondre la langue et son peuple ; le
 piège propre au **lieu** est de croire que le nom officiel est le nom des
 habitants.
+
+## Patronyme : comparer des formes sans en couronner une
+
+Décidé par l'opérateur le 2026-09-30 (constat C12, option a). Le squelette de
+comparaison ci-dessus pose **une** forme d'origine et attribue les autres à l'état
+civil. C'est faux dès que l'origine n'est pas établie, ou que les formes viennent
+de plusieurs langues ou de plusieurs transmissions. Dans ce cas, toutes les formes
+portent la même étiquette, « une forme attestée », et le texte ne dit que ce que
+chaque source montre. Le contrôleur reconnaît cette variante à ses étiquettes ;
+le squelette d'origine reste valide, tel quel.
+
+- **Ouverture** (quatre phrases) : la question ; « Ce nom de famille prend plusieurs
+  formes. » (ou la phrase universelle) ; « Nous ne savons pas encore quelle forme est
+  la plus ancienne. » ; « Plusieurs formes circulent aujourd'hui. »
+- **Inventaire** : « Ce nom de famille porte [deux à quatre] formes : A, B et C. »
+- **Un bloc par forme** : « X est une forme attestée. » Puis où elle est attestée
+  (une date) **ou** « Nous ne savons pas… » : chaque bloc dit l'un des deux.
+  Toutes les formes portent la même étiquette, sans mélange avec « forme d'origine ».
+- **Classement** : « Les sources consultées ne permettent pas de dire quelle forme
+  est la plus ancienne. » puis une ou deux phrases qui nomment toutes les formes.
+- **Synthèse** (trois phrases au plus) et **clôture unique**, comme partout.
+
+Exemple canonique : `social/tools/narration/exemples/patronyme-attestees.fr.txt`.
+Choisir cette variante par défaut tant qu'aucune source n'établit la forme d'origine ;
+le squelette d'origine suppose cette preuve, il ne la remplace pas.
 
 ## Le patronyme a deux cas
 

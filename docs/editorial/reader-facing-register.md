@@ -130,6 +130,22 @@ through
 npx tsx scripts/ci/checkEditorialRules.ts
 ```
 
+Since the audit of 2026-09-30 (finding C23) the rule also reads the narrative
+fields a fiche renders, not only those three. For a people, country, family,
+language or surname fiche, a leaf is narrative when the translation-class table
+(`src/lib/i18n/translationClasses.ts`) marks it `translatable` or
+`review_required` — the table is the field list, so no second list can drift.
+Names, labels and citation titles are not vetted for vocabulary, but a raw corpus
+identifier **inside** one (« Yoruba (PPL_YORUBA) - Nigeria ») is refused; a value
+that _is_ an identifier (`languageFamilyId`, `linguisticFamily`) is what its field
+is for. A numbered wave followed by its own period (« Vague 1 (3000-2000 av.
+J.-C.) ») is chronology, not a research batch. Leaks in these extended fields are
+warnings held by `UNGUARDED_PROSE_CEILING` in `checkEditorialRules.ts`, a ratchet
+that fails in both directions: each correction lowers it in the same change, and at
+zero the findings become errors like the original three. Fiche classes without a
+model in that table, and the English sidecars, still get only the three original
+fields — a stated limit, not a claim of coverage.
+
 `_`-prefixed files under the corpus — `_candidates-by-country.json`,
 `_coverage-findings.json`, `_manifest.json` — are the curator's own worksheets.
 Nothing loads them and no surface renders them, so the rule leaves them alone.

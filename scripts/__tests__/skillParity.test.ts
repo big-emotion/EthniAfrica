@@ -1,4 +1,5 @@
 import {
+  lstatSync,
   mkdtempSync,
   mkdirSync,
   rmSync,
@@ -19,6 +20,7 @@ import {
   listCanonicalSkills,
   parseSkillName,
   readSkillManifest,
+  reconcileMirrorSkill,
 } from "../lib/skillParity";
 
 const projectRoot = resolve(import.meta.dirname, "../..");
@@ -343,6 +345,93 @@ describe("linkMirrorSkill", () => {
     const root = makeTemporaryProject();
 
     expect(linkMirrorSkill(root, "absent").action).toBe("blocked");
+  });
+});
+
+/**
+ * A real directory where a link belongs is either a stale copy — every file
+ * equals the canonical skill today or as it was at some past commit — or it
+ * carries someone's own edits. Only the first may be replaced; the second is
+ * listed file by file and left where it stands (audit finding C04).
+ */
+describe("reconcileMirrorSkill", () => {
+  const canonical = "---\nname: demo\n---\n\nCurrent body.\n";
+  const never = () => false;
+
+  function seed(mirrorFiles: Record<string, string>): string {
+    const root = makeTemporaryProject();
+    writeSkill(root, CANONICAL_SKILLS_DIR, "demo", { "SKILL.md": canonical });
+    writeSkill(root, MIRROR_SKILLS_DIR, "demo", mirrorFiles);
+    return root;
+  }
+
+  // @req REQ-032
+  it("replaces a copy that equals the canonical skill with the link", () => {
+    const root = seed({ "SKILL.md": canonical });
+
+    const result = reconcileMirrorSkill(root, "demo", never);
+
+    expect(result.action).toBe("reconciled");
+    expect(
+      lstatSync(join(root, MIRROR_SKILLS_DIR, "demo")).isSymbolicLink()
+    ).toBe(true);
+  });
+
+  // @req REQ-032
+  it("replaces a copy that equals a past version of the canonical skill", () => {
+    const stale = "---\nname: demo\n---\n\nOld body.\n";
+    const root = seed({ "SKILL.md": stale });
+
+    const result = reconcileMirrorSkill(
+      root,
+      "demo",
+      (path, contents) => path === "SKILL.md" && contents === stale
+    );
+
+    expect(result.action).toBe("reconciled");
+    expect(readSkillManifest(root, MIRROR_SKILLS_DIR, "demo").files).toEqual({
+      "SKILL.md": canonical,
+    });
+  });
+
+  // @req REQ-032
+  it("refuses a copy carrying a line no canonical version ever had, and names the file", () => {
+    const root = seed({ "SKILL.md": "someone's own edit\n" });
+
+    const result = reconcileMirrorSkill(root, "demo", never);
+
+    expect(result.action).toBe("blocked");
+    expect(result.detail).toContain("SKILL.md");
+    expect(
+      lstatSync(join(root, MIRROR_SKILLS_DIR, "demo")).isSymbolicLink()
+    ).toBe(false);
+    expect(readSkillManifest(root, MIRROR_SKILLS_DIR, "demo").files).toEqual({
+      "SKILL.md": "someone's own edit\n",
+    });
+  });
+
+  // @req REQ-032
+  it("refuses a copy with a file the canonical skill does not have", () => {
+    const root = seed({ "SKILL.md": canonical, "notes/mine.md": "local\n" });
+
+    const result = reconcileMirrorSkill(root, "demo", never);
+
+    expect(result.action).toBe("blocked");
+    expect(result.detail).toContain("notes/mine.md");
+    expect(
+      readSkillManifest(root, MIRROR_SKILLS_DIR, "demo").files["notes/mine.md"]
+    ).toBe("local\n");
+  });
+
+  // @req REQ-032
+  it("behaves as linkMirrorSkill when nothing stands in the way", () => {
+    const root = makeTemporaryProject();
+    writeSkill(root, CANONICAL_SKILLS_DIR, "demo", { "SKILL.md": canonical });
+
+    expect(reconcileMirrorSkill(root, "demo", never).action).toBe("created");
+    expect(reconcileMirrorSkill(root, "demo", never).action).toBe(
+      "already-linked"
+    );
   });
 });
 

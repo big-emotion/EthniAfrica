@@ -1,7 +1,8 @@
 # Editorial directives
 
-Condensed. `public/DIRECTIVES-AFRIK.md` is the source of truth; read it when anything here
-is ambiguous.
+Condensed. The strict models `public/modele-*.json` and their parsers own the shape of a
+fiche; `public/DIRECTIVES-AFRIK.md` owns the writing rules. Read it when anything here is
+ambiguous, and where the two disagree the model wins.
 
 ## Format
 

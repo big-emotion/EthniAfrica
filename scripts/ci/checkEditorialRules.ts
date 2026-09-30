@@ -53,6 +53,8 @@ import * as fs from "fs";
 import * as path from "path";
 import { pathToFileURL } from "url";
 
+import { classOf, type StrictModelFile } from "@/lib/i18n/translationClasses";
+
 // ───── Types ──────────────────────────────────────────────────────────────
 
 export type Severity = "error" | "warning" | "notice";
@@ -540,6 +542,58 @@ const REGISTER_RULE: RuleName = "reader-facing-register";
 export interface ProseField {
   path: string;
   text: string;
+  /**
+   * `original` are the three fields this rule has always guarded and stay
+   * errors. `extended` are the narrative fields the fiche surface also
+   * renders, found through the translation-class table; their leaks are
+   * warnings held by `UNGUARDED_PROSE_CEILING` until the corpus is corrected.
+   */
+  coverage: "original" | "extended";
+  /**
+   * A name, label or citation field is never prose to vet for vocabulary, but a
+   * raw corpus identifier inside one is still a row shown to a reader
+   * (« Yoruba (PPL_YORUBA) - Nigeria »). Only the identifier pattern applies.
+   */
+  identifiersOnly?: boolean;
+}
+
+/** A value that *is* an identifier is what an identifier field is for. */
+const WHOLE_IDENTIFIER = /^\s*(?:(?:PPL|FLG|PAT)_[A-Z0-9_]+\s*[,;]?\s*)+$/;
+const EMBEDDED_IDENTIFIER = /\b(?:PPL|FLG|PAT)_[A-Z0-9_]+\b/;
+/** Keys whose job is to carry an identifier or a locator. */
+const IDENTIFIER_KEY =
+  /(?:^id$|Id$|Ids$|^sourceKey$|^sourceRefs$|^fieldPath$|^url$)/;
+
+/**
+ * The strict model a corpus directory follows, where the translation-class
+ * table can say which leaves are narrative. Classes without an entry here keep
+ * only the three original fields — a stated limit, not a claim of coverage.
+ * Translated sidecars are excluded: their shape is the sidecar's, not the
+ * model's.
+ */
+const MODEL_BY_DIRECTORY: Readonly<Record<string, StrictModelFile>> = {
+  peuples: "modele-peuple.json",
+  pays: "modele-pays.json",
+  famille_linguistique: "modele-linguistique.json",
+  langues: "modele-langue.json",
+  patronymes: "modele-nom-patronyme.json",
+};
+
+export function modelForFile(relPath: string): StrictModelFile | undefined {
+  const parts = relPath.split(/[\\/]/);
+  if (parts.includes("translations")) return undefined;
+  for (const part of parts) {
+    if (MODEL_BY_DIRECTORY[part]) return MODEL_BY_DIRECTORY[part];
+  }
+  return undefined;
+}
+
+/** Narrative leaves are the ones a reader is shown as prose. */
+function isNarrativeLeaf(model: StrictModelFile, path: string): boolean {
+  const generic = path.replace(/\[\d+\]/g, "[]");
+  const cls =
+    classOf(model, generic) ?? classOf(model, generic.replace(/\[\]$/, ""));
+  return cls === "translatable" || cls === "review_required";
 }
 
 /**
@@ -559,7 +613,10 @@ export interface ProseField {
  * Every `_`-prefixed key — `_meta.directives`, `_translation` — is authoring
  * metadata that no surface renders, and stays the curator's to write.
  */
-export function readerFacingProseFields(fiche: Fiche): ProseField[] {
+export function readerFacingProseFields(
+  fiche: Fiche,
+  file?: string
+): ProseField[] {
   const fields: ProseField[] = [];
 
   if (Array.isArray(fiche.gaps)) {
@@ -567,7 +624,11 @@ export function readerFacingProseFields(fiche: Fiche): ProseField[] {
       if (!isRecord(gap)) return;
       const reason = gap.reason;
       if (typeof reason === "string" && reason.trim() !== "") {
-        fields.push({ path: `gaps[${i}].reason`, text: reason });
+        fields.push({
+          path: `gaps[${i}].reason`,
+          text: reason,
+          coverage: "original",
+        });
       }
     });
   }
@@ -588,7 +649,11 @@ export function readerFacingProseFields(fiche: Fiche): ProseField[] {
           for (const field of ["title", "notes"] as const) {
             const text = source[field];
             if (typeof text === "string" && text.trim() !== "") {
-              fields.push({ path: `${childPath}[${i}].${field}`, text });
+              fields.push({
+                path: `${childPath}[${i}].${field}`,
+                text,
+                coverage: "original",
+              });
             }
           }
         });
@@ -597,6 +662,41 @@ export function readerFacingProseFields(fiche: Fiche): ProseField[] {
     }
   };
   walk(fiche, "");
+
+  const model = file ? modelForFile(file) : undefined;
+  if (model) {
+    const seen = new Set(fields.map((f) => f.path));
+    const walkNarrative = (value: unknown, path: string, key: string): void => {
+      if (Array.isArray(value)) {
+        value.forEach((item, i) => walkNarrative(item, `${path}[${i}]`, key));
+        return;
+      }
+      if (typeof value === "string") {
+        if (value.trim() === "" || seen.has(path)) return;
+        if (isNarrativeLeaf(model, path)) {
+          fields.push({ path, text: value, coverage: "extended" });
+        } else if (
+          !IDENTIFIER_KEY.test(key) &&
+          !WHOLE_IDENTIFIER.test(value) &&
+          EMBEDDED_IDENTIFIER.test(value)
+        ) {
+          fields.push({
+            path,
+            text: value,
+            coverage: "extended",
+            identifiersOnly: true,
+          });
+        }
+        return;
+      }
+      if (!isRecord(value)) return;
+      for (const [childKey, child] of Object.entries(value)) {
+        if (childKey.startsWith("_")) continue;
+        walkNarrative(child, path ? `${path}.${childKey}` : childKey, childKey);
+      }
+    };
+    walkNarrative(fiche, "", "");
+  }
 
   return fields;
 }
@@ -651,13 +751,14 @@ export function checkReaderFacingRegister(
   const slug = getSlug(fiche, file);
   const findings: RuleResult[] = [];
 
-  for (const field of readerFacingProseFields(fiche)) {
+  for (const field of readerFacingProseFields(fiche, file)) {
     for (const { label, pattern } of patterns) {
+      if (field.identifiersOnly && label !== "raw corpus identifier") continue;
       const hit = field.text.match(pattern);
       if (hit === null) continue;
       findings.push({
         rule: REGISTER_RULE,
-        severity: "error",
+        severity: field.coverage === "original" ? "error" : "warning",
         file,
         slug,
         message: `${field.path} is published verbatim to the reader but carries a ${label} ("${hit[0]}"). Say what we do not know; never how the workshop knows it does not.`,
@@ -667,6 +768,34 @@ export function checkReaderFacingRegister(
   }
 
   return findings;
+}
+
+/**
+ * Leaks found in the narrative fields the register rule started reading with
+ * C23 (`ProseField.coverage === "extended"`), measured across the source
+ * corpus. Same ratchet as `UNDATED_POLITY_CEILING`: above it is a regression,
+ * below it is also a failure, and each correction lowers the constant in the
+ * same change. At 0, delete the ratchet and let these be errors like the
+ * original three fields.
+ */
+export const UNGUARDED_PROSE_CEILING = 51;
+
+export function checkUnguardedProseCeiling(
+  count: number,
+  ceiling: number
+): RuleResult | null {
+  if (count === ceiling) return null;
+  const direction =
+    count > ceiling
+      ? `rose to ${count} (ceiling ${ceiling}) — a narrative field gained a workshop note`
+      : `fell to ${count} (ceiling ${ceiling}) — lower UNGUARDED_PROSE_CEILING to ${count} in the same change`;
+  return {
+    rule: REGISTER_RULE,
+    severity: "error",
+    file: "scripts/ci/checkEditorialRules.ts",
+    slug: "UNGUARDED_PROSE_CEILING",
+    message: `Workshop notes in narrative fields ${direction}.`,
+  };
 }
 
 // ───── Rule 6: chronology symmetry ────────────────────────────────────────
@@ -867,6 +996,8 @@ export interface RunOptions {
    * `UNDATED_POLITY_CEILING`; that call site is the arming.
    */
   undatedPolityCeiling?: number;
+  /** Armed the same way, by the CLI, against this repository's corpus. */
+  unguardedProseCeiling?: number;
 }
 
 export function runEditorialRules(opts: RunOptions): RunResult {
@@ -936,6 +1067,19 @@ export function runEditorialRules(opts: RunOptions): RunResult {
     if (ratchet) findings.push(ratchet);
   }
 
+  if (opts.unguardedProseCeiling !== undefined) {
+    // Only extended fields produce a register *warning*; the original three
+    // fields are errors, so the count below is exactly the extended leaks.
+    const unguarded = findings.filter(
+      (f) => f.rule === REGISTER_RULE && f.severity === "warning"
+    ).length;
+    const ratchet = checkUnguardedProseCeiling(
+      unguarded,
+      opts.unguardedProseCeiling
+    );
+    if (ratchet) findings.push(ratchet);
+  }
+
   // A translated record publishes the same three fields verbatim, in English.
   // Only the register rule applies: invariants and sources are the source
   // fiche's, and TR-1 in validateAfrikData holds the sidecar to them.
@@ -985,6 +1129,7 @@ async function main(): Promise<void> {
   const result = runEditorialRules({
     repoRoot,
     undatedPolityCeiling: UNDATED_POLITY_CEILING,
+    unguardedProseCeiling: UNGUARDED_PROSE_CEILING,
   });
   for (const line of result.annotations) {
     // PR annotations must be written to stdout for GitHub Actions to pick

@@ -6,7 +6,8 @@
  * modele-nom.json-shaped candidates (sources: []) from existing fiche prose,
  * writes them to a working directory, and stops. Curation into
  * dataset/source/afrik/noms/ is a separate, human-reviewed editorial pass
- * (afrik-curator skill) that attaches Tier 1/2 sources or drops the draft.
+ * (afrik-curator skill) that attaches traceable sources, each with its tier, or
+ * drops the draft.
  *
  * Mapping (content.appellations -> draft names[]):
  *   - selfAppellation      -> one `endonym` draft (sortRank 0)
@@ -84,7 +85,7 @@ export interface ExtractionStats {
 
 const DRAFT_NOTICE =
   "Brouillon genere automatiquement depuis content.appellations — aucune source attachee. " +
-  "Publication interdite tant qu'aucune source Tier 1/2 n'est citee (voir le skill afrik-curator).";
+  "Publication interdite tant qu'aucune source tracable n'est citee (voir le skill afrik-curator).";
 
 /**
  * Strips a trailing parenthetical from a raw exonym string, e.g.
@@ -268,8 +269,8 @@ function main(): void {
   console.log(`  Exonym drafts:             ${stats.exonymDraftsWritten}`);
   console.log(`  Output directory:          ${DEFAULT_OUTPUT_DIR}`);
   console.log(
-    "  Next step: curate via the afrik-curator skill — attach Tier 1/2 " +
-      "sources, drop unsourceable claims, then PR the result into " +
+    "  Next step: curate via the afrik-curator skill — attach traceable " +
+      "sources with their tier, drop unsourceable claims, then PR the result into " +
       "dataset/source/afrik/noms/."
   );
 }
