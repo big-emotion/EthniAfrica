@@ -185,3 +185,10 @@ Done and tested:
 
 Not done: search-companion destinations (they reach articles through Découvertes),
 old-URL disposition beyond "withheld routes stay 404", brand charter §8.6 text.
+
+## P5 — pilot articles (in progress, 2026-09-30)
+
+The three pilots (Mali, Lingala, Mandé) are written test-first against the
+[semantic review cases](articles-pilots-review-cases.md), frozen before drafting. All three stay
+`draft` with no `publishedAt`: publication needs operator review and a durable media host.
+A green mechanical test is not prose approval.
