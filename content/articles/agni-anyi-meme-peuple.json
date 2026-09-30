@@ -8,29 +8,87 @@
   "fr": {
     "slug": "agni-anyi-meme-peuple",
     "title": "D'où viennent les noms Agni et Anyi ?",
-    "excerpt": "En Côte d'Ivoire on écrit Agni. Au Ghana, Anyi. C'est le même peuple.",
-    "sections": []
+    "excerpt": "Deux orthographes, une seule langue de part et d'autre d'une frontière : Anyi, la forme que le peuple emploie, et Agni, la forme écrite par l'administration française. Ce que les sources consultées disent de ce doublet, et ce qu'elles ne disent pas.",
+    "sections": [
+      {
+        "heading": "Deux orthographes, une frontière",
+        "paragraphs": [
+          "En Côte d'Ivoire, les documents officiels écrivent Agni. Au Ghana, on écrit Anyi. Ces deux mots ne désignent pas deux peuples voisins : les sources que nous avons utilisées les traitent comme un même peuple, dont la langue est parlée des deux côtés de la frontière.",
+          "Le répertoire de langues SIL Ethnologue range cette langue, l'anyin, sous un seul code, « any », en Côte d'Ivoire comme au Ghana. Un même peuple porte donc deux orthographes officielles, selon le côté de la frontière où il est recensé."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "Un peuple présent dans deux pays",
+        "paragraphs": [
+          "Côté ivoirien, les sources consultées situent chez les Agni la cour royale de l'Indénié, à Abengourou. Côté ghanéen, elles les situent dans le district d'Aowin.",
+          "Nous donnons ici des noms de lieux, pas de chiffres de population : les chiffres dont nous disposons ne s'accordent pas entre eux et reposent sur des sources trop faibles pour être publiés."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      },
+      {
+        "heading": "Une langue qui passe à la suivante sans rupture",
+        "paragraphs": [
+          "Les linguistes rangent l'anyi et le baoulé dans le même petit groupe de langues, appelé bia. D'un village au suivant, on passe de l'une à l'autre sans rupture nette.",
+          "Cette continuité ne suit pas le tracé des États. Elle ne dit pas non plus que tous ces peuples ont une seule origine : une parenté de langues n'est pas une histoire commune démontrée."
+        ],
+        "sourceRefs": ["s3"]
+      },
+      {
+        "heading": "Anyi, Agni : qui a écrit quoi",
+        "paragraphs": [
+          "Les sources consultées présentent Anyi comme la forme que le peuple emploie pour se nommer, et Agni comme la façon dont le français l'a transcrite ; c'est cette forme qui est devenue officielle en Côte d'Ivoire. L'usage anglophone, au Ghana, a gardé Anyi.",
+          "Le peuple n'a donc pas changé de nom en passant la frontière : deux administrations l'ont écrit chacune à sa façon. Nous ne savons pas quand ni par qui la graphie Agni a été fixée pour la première fois, et nous n'avons pas trouvé l'acte qui a tracé la frontière à cet endroit."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      },
+      {
+        "heading": "Le même mécanisme chez les voisins : Asante et Ashanti",
+        "paragraphs": [
+          "Leurs voisins connaissent un doublet semblable. Ils se disent Asante ; les textes britanniques ont écrit Ashanti, et c'est cette forme qui est restée dans les livres.",
+          "Une explication, publiée en 1923 par R. S. Rattray dans son livre Ashanti, rend Asante par « peuple de la guerre » et associe l'adoption de ce nom à la formation d'un royaume centralisé, vers 1670. C'est la lecture d'un auteur britannique de l'époque coloniale : nous ne l'avons pas confrontée à d'autres sources, et elle ne suffit pas à établir l'origine du nom."
+        ],
+        "sourceRefs": ["s4"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "Agni et Anyi sont deux orthographes d'un même nom, pas deux peuples. Ce qui les sépare, c'est la façon dont deux administrations, l'une francophone, l'autre anglophone, ont écrit ce nom, pas la langue.",
+          "Si votre nom de peuple s'écrit autrement de l'autre côté d'une frontière, ou si vous connaissez l'histoire de la graphie Agni, dites-nous d'où vient ce que vous savez."
+        ],
+        "sourceRefs": ["s1", "s3"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
   },
   "sources": [
     {
       "id": "s1",
       "title": "SIL Ethnologue, entrée anyin",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "Répertoire des langues du monde : l'anyin sous le code « any », parlé en Côte d'Ivoire et au Ghana."
     },
     {
       "id": "s2",
       "title": "base Agni de DICE, Université du Missouri",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "Base de données universitaire sur les Agni, citée pour leur présence des deux côtés de la frontière et pour les deux graphies."
     },
     {
       "id": "s3",
       "title": "SIL Ethnologue, entrées anyin et baoulé",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "Classement de l'anyin et du baoulé dans le même groupe de langues, le bia."
     },
     {
       "id": "s4",
       "title": "Rattray, Ashanti, Oxford University Press, 1923",
-      "tier": "needs_review"
+      "tier": "needs_review",
+      "notes": "Ouvrage d'un auteur britannique de l'époque coloniale : le sens « peuple de la guerre » et la date d'environ 1670. Nous ne l'avons pas encore consulté directement."
     }
   ],
   "media": {
