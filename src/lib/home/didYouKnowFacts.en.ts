@@ -51,9 +51,9 @@ export const DID_YOU_KNOW_FACTS_EN: Record<string, DidYouKnowFactTranslation> =
     },
     bantou: {
       headline:
-        "“Bantu” is not a people: it is a category coined by a philologist in 1862.",
+        "“Bantu” is not a people: it is a category coined by a philologist in the mid-nineteenth century.",
       body: [
-        "Wilhelm Bleek builds the term in A Comparative Grammar of South African Languages, from a root shared by hundreds of languages: ba-, the human plural prefix, and -ntu, the person. Ba-ntu: “the people”.",
+        "Wilhelm Bleek builds the term: he wrote it in 1857 according to historians of linguistics, published it in 1858, and his Comparative Grammar of South African Languages (1862) spread it, from a root shared by hundreds of languages: ba-, the human plural prefix, and -ntu, the person. Ba-ntu: “the people”.",
         "What Bleek names is a kinship between languages, not an identity. Colonial anthropology, then apartheid with the Bantu Education Act of 1953, turned it into a category of Bantu “races” and “cultures” — a use his classification never carried.",
       ],
       entities: [

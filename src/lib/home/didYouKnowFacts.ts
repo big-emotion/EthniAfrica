@@ -93,9 +93,9 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "bantou",
     headline:
-      "« Bantou » n'est pas un peuple : c'est une catégorie forgée par un philologue en 1862.",
+      "« Bantou » n'est pas un peuple : c'est une catégorie forgée par un philologue au milieu du XIXe siècle.",
     body: [
-      "Wilhelm Bleek construit le terme dans A Comparative Grammar of South African Languages, à partir d'une racine commune à des centaines de langues : ba-, le préfixe de pluriel humain, et -ntu, la personne. Ba-ntu : « les gens ».",
+      "Wilhelm Bleek construit le terme : il l'écrit en 1857 selon les historiens de la linguistique, le publie en 1858, et sa Comparative Grammar of South African Languages (1862) le répand, à partir d'une racine commune à des centaines de langues : ba-, le préfixe de pluriel humain, et -ntu, la personne. Ba-ntu : « les gens ».",
       "Ce que Bleek nomme est une parenté entre langues, pas une identité. L'anthropologie coloniale, puis l'apartheid avec le Bantu Education Act de 1953, en ont fait une catégorie de « races » et de « cultures » bantoues — un usage que sa classification ne portait pas.",
     ],
     entities: [
