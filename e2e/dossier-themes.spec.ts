@@ -13,7 +13,7 @@ import { LOCALE } from "./support/locale";
  */
 test.describe("Dossiers while the readings are withdrawn @cross-viewport", () => {
   // @req REQ-140
-  test("names the hub in English, and leads to the anecdotes", async ({
+  test("names the hub Articles in English, and leads to the anecdotes", async ({
     page,
   }) => {
     test.skip(LOCALE !== "en", "English copy assertion");
@@ -21,12 +21,11 @@ test.describe("Dossiers while the readings are withdrawn @cross-viewport", () =>
     await page.goto(getLocalizedRoute(LOCALE, "dossiersHub"));
 
     await expect(
-      page.getByRole("heading", { name: "The dossiers", exact: true })
+      page.getByRole("heading", { name: "Articles", exact: true })
     ).toBeVisible();
-    await expect(page.getByTestId("hub-tile-anecdotes")).toHaveAttribute(
-      "href",
-      getLocalizedRoute(LOCALE, "anecdotes")
-    );
+    await expect(
+      page.getByRole("link", { name: "Anecdotes", exact: true })
+    ).toHaveAttribute("href", getLocalizedRoute(LOCALE, "anecdotes"));
   });
 
   for (const width of [320, 375, 430, 768, 1199, 1200, 1440]) {
@@ -39,7 +38,7 @@ test.describe("Dossiers while the readings are withdrawn @cross-viewport", () =>
       await page.goto(getLocalizedRoute(LOCALE, "dossiersHub"));
 
       await expect(
-        page.getByRole("heading", { name: "Les dossiers", exact: true })
+        page.getByRole("heading", { name: "Articles", exact: true })
       ).toBeVisible();
 
       expect(
@@ -51,15 +50,12 @@ test.describe("Dossiers while the readings are withdrawn @cross-viewport", () =>
   }
 
   /**
-   * The chip and the route are one promise.
-   *
-   * The menu lists every withdrawn reading under **Bientôt**, inert; this is
-   * the other half — that the address behind each of them serves nothing. A
-   * reader with a bookmark, a crawler with an old sitemap and a shared link all
-   * arrive here.
+   * The menu promises four destinations and no more; the addresses of the
+   * withdrawn readings serve nothing. A reader with a bookmark, a crawler with
+   * an old sitemap and a shared link all arrive here.
    */
   // @req REQ-114
-  test("lists the withdrawn readings as Bientôt, and serves none of them", async ({
+  test("lists four Articles destinations as links, and serves none of the withdrawn readings", async ({
     page,
   }) => {
     test.skip(LOCALE !== "fr", "French copy assertion");
@@ -68,16 +64,14 @@ test.describe("Dossiers while the readings are withdrawn @cross-viewport", () =>
 
     await page.getByRole("button", { name: "Ouvrir le menu" }).click();
     const tray = page.getByRole("dialog");
-    await tray.getByRole("button", { name: /Les dossiers/ }).click();
+    await tray.getByRole("button", { name: /Articles/ }).click();
 
-    const nommer = tray.getByTestId("site-nav-module-nommer");
-    await expect(nommer).toContainText("Bientôt");
-    await expect(nommer).toHaveAttribute("aria-disabled", "true");
-
-    // Anecdotes keeps its link, in the same grid.
-    await expect(
-      tray.getByTestId("site-nav-module-anecdotes")
-    ).not.toContainText("Bientôt");
+    for (const id of ["articles", "anecdotes", "proverbes", "galerie"]) {
+      const entry = tray.getByTestId(`site-nav-module-${id}`);
+      await expect(entry).not.toContainText("Bientôt");
+      await expect(entry).toHaveAttribute("href", /.+/);
+    }
+    await expect(tray.getByTestId("site-nav-module-nommer")).toHaveCount(0);
 
     for (const route of [
       getLocalizedRoute(LOCALE, "nommer"),
