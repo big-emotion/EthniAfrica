@@ -769,6 +769,15 @@ ethniafrica.com · @ethniafrica
 - La licence de sortie est la **licence virale la plus contraignante du lot**.
   Un lot mêlant domaine public et CC BY-SA 2.0 se diffuse en CC BY-SA 2.0 ;
   un lot mêlant 3.0 et 4.0 se diffuse en 4.0.
+- Les licences reconnues, de la moins à la plus contraignante : domaine public, CC0,
+  **licence Pexels**, licence ouverte, CC BY 2.0 / 3.0 / 4.0, CC BY-SA 2.0 / 3.0 / 4.0.
+  La licence Pexels (pexels.com/license, lue le 2026-10-01) autorise l'usage libre et
+  la modification sans attribution ; elle interdit la revente de copies non modifiées,
+  l'usage d'une personne identifiable sous un jour négatif ou offensant, l'effet
+  d'une caution (personne ou marque), la redistribution sur une autre plateforme
+  d'images et l'usage comme marque. Elle n'est ni virale ni soumise à attribution :
+  elle se classe sous toute licence CC BY et ne devient jamais la licence de sortie
+  d'un lot qui en contient une. La chaîne exacte reconnue est « licence Pexels ».
 - **Aucune note interne sur l'image finie.** « licence à nommer », « série à confirmer »,
   « crédit à compléter » sont des messages à l'opérateur : ils bloquent la publication,
   ils ne s'impriment pas. Si la licence n'est pas connue, la carte ne sort pas.
