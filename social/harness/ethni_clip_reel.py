@@ -12,6 +12,9 @@ this format got it wrong once:
 - a caption is **two to four words**, coloured by who speaks. A paragraph under a
   reel is unreadable at phone size, and a one-word orphan flashes by like a glitch;
 - a phrase never straddles a cut — its output time would be a lie;
+- a source that is a screen recording shows a player's chrome for a while: a
+  `reframes` window keeps only the rectangle that is the picture, for that stretch
+  of source time, instead of dropping the words spoken under the chrome;
 - a cover title is **eight words at most and its last words carry the accent**
   (GABARITS-SOCIAL §1 ter): the punchline is the ending, and the copy yields when
   it does not fit, the type never shrinks.
@@ -112,6 +115,27 @@ class Timeline:
         return None
 
 
+def video_pieces(clip, reframes):
+    """A clip's video as (start, end, window or None) pieces, split at each reframe window.
+
+    Only the picture is split: the audio of a clip stays one stretch, so a reframe
+    landing mid-word never puts a fade inside the word.
+    """
+    start, end = float(clip[0]), float(clip[1])
+    pieces, cursor = [], start
+    for window in sorted(reframes, key=lambda w: w["start"]):
+        a, b = max(float(window["start"]), start), min(float(window["end"]), end)
+        if a >= b:
+            continue
+        if a > cursor:
+            pieces.append((cursor, a, None))
+        pieces.append((a, b, window))
+        cursor = b
+    if cursor < end:
+        pieces.append((cursor, end, None))
+    return pieces
+
+
 # -------------------------------------------------------------- validation
 
 def _word_count(text):
@@ -158,6 +182,21 @@ def validate_plan(plan):
         elif first != last:
             errors.append(f"{label}: straddles two clips — split it at the cut")
 
+    reframes = plan.get("reframes") or []
+    for index, window in enumerate(reframes):
+        rect = window.get("rect")
+        if rect is None and window.get("still_at") is None:
+            errors.append(f"reframes[{index}]: needs a rect, a still_at, or both")
+        elif rect is not None and not (isinstance(rect, list) and len(rect) == 4 and rect[0] >= 0
+                                       and rect[1] >= 0 and rect[2] > 0 and rect[3] > 0):
+            errors.append(f"reframes[{index}]: rect needs [x, y, width, height], sizes above zero")
+        if not window.get("start", 0) < window.get("end", 0):
+            errors.append(f"reframes[{index}]: needs start < end")
+    ordered = sorted(reframes, key=lambda w: w.get("start", 0))
+    for before, after in zip(ordered, ordered[1:]):
+        if after.get("start", 0) < before.get("end", 0):
+            errors.append("reframes: two windows overlap — one instant has one frame")
+
     cover = plan.get("thumbnail")
     if cover is not None:
         lines = [str(line).upper() for line in cover.get("title_lines", [])]
@@ -198,6 +237,14 @@ def _has_audio(source):
     return bool(probe.stdout.strip())
 
 
+def _frame_size(source):
+    out = subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
+         "-of", "csv=p=0", str(source)], check=True, capture_output=True, text=True).stdout
+    width, height = out.strip().split(",")[:2]
+    return int(width), int(height)
+
+
 def _blurred_ground(frame):
     """The source frame, blown up to fill 1080 x 1920, blurred and darkened."""
     from PIL import Image, ImageEnhance, ImageFilter
@@ -225,9 +272,27 @@ def render_reel(plan, out_path):
     with tempfile.TemporaryDirectory() as work:
         work = pathlib.Path(work)
         fade, clips = 0.02, plan["clips"]
+        reframes = plan.get("reframes") or []
+        width, height = _frame_size(plan["source"]) if reframes else (None, None)
         graph = []
         for i, (start, end) in enumerate(clips):
-            graph.append(f"[0:v]trim={start}:{end},setpts=PTS-STARTPTS,fps={FPS}[v{i}]")
+            pieces = video_pieces([start, end], reframes)
+            for j, (a, b, window) in enumerate(pieces):
+                window = window or {}
+                if window.get("still_at") is not None:
+                    # One clean frame held for the window's length; the audio keeps running under it.
+                    held = float(window["still_at"])
+                    head = (f"[0:v]trim={held}:{held + 0.1},setpts=PTS-STARTPTS,fps={FPS},"
+                            f"tpad=stop_mode=clone:stop_duration={b - a},trim=duration={b - a}")
+                else:
+                    head = f"[0:v]trim={a}:{b},setpts=PTS-STARTPTS,fps={FPS}"
+                rect = window.get("rect")
+                crop = f",crop={rect[2]}:{rect[3]}:{rect[0]}:{rect[1]}" if rect else ""
+                # Every piece is brought back to the source size, or concat refuses the join.
+                size = f",scale={width}:{height},setsar=1" if reframes else ""
+                graph.append(f"{head}{crop}{size}[v{i}p{j}]")
+            parts = "".join(f"[v{i}p{j}]" for j in range(len(pieces)))
+            graph.append(f"{parts}concat=n={len(pieces)}:v=1:a=0[v{i}]")
             graph.append(f"[0:a]atrim={start}:{end},asetpts=PTS-STARTPTS,"
                          f"afade=t=in:d={fade},afade=t=out:st={end - start - fade}:d={fade}[a{i}]")
         joined = "".join(f"[v{i}][a{i}]" for i in range(len(clips)))
