@@ -131,31 +131,29 @@ def test_a_dark_photograph_is_not_blanketed_by_a_dark_ground():
         assert alpha_du_plat(carte(), fmt, ton=90, disposition="A") < 0.50
 
 
-def test_the_scrim_stays_heavier_on_a_mid_tone_than_on_a_dark_photograph():
-    """The lighter scrim may never cost a brighter picture its legibility.
+def test_the_scrim_stays_heavier_on_a_pale_engraving():
+    """The lighter scrim may never cost the pale documents their legibility.
 
-    Stated as a comparison, not as §4's tabulated 0,88: that table is a worst case
-    computed on paper. Above the switch (`LUMINANCE_CLAIRE`) the ink goes dark and the
-    veil light, which `test_voile_clair.py` measures; this suite holds the night family,
-    where light ink needs more veil the brighter the picture.
+    Stated as a comparison and a floor, not as §4's tabulated 0,88. That table is
+    a worst case computed on paper; measured, a solved 0,78 already clears every
+    threshold over a near-white ground with margin to spare. Asserting the table's
+    figure here would test the old constant rather than the new rule — and the
+    guarantee that actually matters is the contrast one below.
     """
     for fmt in FORMATS:
-        moyen = alpha_du_plat(carte(), fmt, ton=150, disposition="A")
+        pale = alpha_du_plat(carte(), fmt, ton=250, disposition="A")
         sombre = alpha_du_plat(carte(), fmt, ton=40, disposition="A")
-        assert moyen > sombre + 0.05, (
-            f"{fmt} : le ton moyen ({moyen:.2f}) n'est pas plus couvert que "
+        assert pale >= 0.70, f"{fmt} : voile à {pale:.2f} sur une gravure pâle"
+        assert pale > sombre + 0.05, (
+            f"{fmt} : la gravure pâle ({pale:.2f}) n'est pas plus couverte que "
             f"la photographie sombre ({sombre:.2f}) — le voile ne s'adapte pas")
 
 
 def test_the_scrim_follows_the_image_monotonically():
-    """Darker image, lighter scrim — with no inversion anywhere in between.
-
-    Up to the switch only: past it the card changes family (dark ink, light veil) and
-    the night scrim rightly drops to nothing.
-    """
+    """Darker image, lighter scrim — with no inversion anywhere in between."""
     for fmt in FORMATS:
         suite = [alpha_du_plat(carte(), fmt, ton=t, disposition="A")
-                 for t in (30, 60, 90, 120, 150)]
+                 for t in (30, 90, 150, 210, 255)]
         # The floor flattens the dark end, so equality there is the rule working,
         # not an inversion. Only a real climb back down is a fault.
         for gauche, droite in zip(suite, suite[1:]):
@@ -164,18 +162,19 @@ def test_the_scrim_follows_the_image_monotonically():
                 f"{[round(a, 3) for a in suite]}")
 
 
-def test_a_printed_page_takes_dark_ink_instead_of_the_heaviest_night_scrim():
-    """Measured on the « ethnie » carousel, 2026-09-21: over a scanned page the night scrim
-    solved to the lightest alpha that carries cream ink over white paper, and the printed
-    lines showed through it — black on dark grey, drawn straight through the title. The
-    answer used to be the ceiling (0,95): a near-black panel over a pale page. The page
-    now takes dark ink on a light veil, solved against its darkest printed line
-    (`test_voile_clair.py`); the night ceiling is no longer given to any picture.
+def test_a_printed_page_gets_the_heaviest_scrim():
+    """The solved alpha protects the brightest pixels, and a page is not only that.
+
+    Measured on the « ethnie » carousel, 2026-09-21: over a scanned page the
+    scrim solved to the lightest alpha that carries the cream ink over white
+    paper, and the printed lines of the page showed through it — black on dark
+    grey, drawn straight through the title. Contrast against the paper was met;
+    legibility was not. A near-white ground (the engine already treats it as a
+    cutout and refuses it the full frame) takes the ceiling instead.
     """
     for fmt in FORMATS:
-        _, p = gab.fond_et_plan(carte(), DECK, fmt, image=plat(250), disposition="C")
-        assert p.theme == "parchemin", f"{fmt} : thème {p.theme} sur une page imprimée"
-        assert alpha_du_plat(carte(), fmt, ton=250, disposition="C") < PLAFOND - 0.05
+        page = alpha_du_plat(carte(), fmt, ton=250, disposition="C")
+        assert page >= PLAFOND - 0.01, f"{fmt} : voile à {page:.2f} sur une page imprimée"
 
 
 def test_the_heaviest_scrim_is_not_given_to_every_image():
@@ -270,14 +269,12 @@ def test_no_text_lives_in_the_bright_gap():
     fautes = []
     for disposition in ("B", "C"):
         for fmt in FORMATS:
-            # A mid-tone, below the switch: a light picture takes dark ink and may need
-            # no veil at all, which is not a gap but a card that needs nothing.
-            fond, p = gab.fond_et_plan(carte(), DECK, fmt, image=plat(140),
+            fond, p = gab.fond_et_plan(carte(), DECK, fmt, image=plat(240),
                                        disposition=disposition)
             for b in p.blocs:
                 if not b.texte or not getattr(b, "couleur", None):
                     continue
-                a = alpha_sous(fond, min(b.y + b.h // 2, fond.height - 1), 140)
+                a = alpha_sous(fond, min(b.y + b.h // 2, fond.height - 1), 240)
                 if a < GAP_ALPHA:
                     fautes.append(f"{disposition} {fmt} {b.nom} : alpha {a:.2f} "
                                   f"— le bloc tombe dans la trouée claire")
