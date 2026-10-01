@@ -67,7 +67,12 @@ traps measured on the first use:
 **3. Write the plan** (`references/plan.example.json` is the shape):
 `clips` are the kept source ranges in order; each `phrase` is one speaker turn or
 sentence inside a single clip, with its French translation; `thumbnail` names the
-frame, the title lines and the accent. Then:
+frame, the title lines and the accent. When the source is a screen recording, an
+optional `reframes` list (`{start, end, rect: [x, y, w, h]}`, source time and pixels)
+keeps only the picture inside the player's chrome for that stretch; measure the
+rectangle on a full-resolution frame and keep it at the source's aspect. Where the
+chrome sits inside the picture (a chapter title, a seek preview), `still_at` holds one
+clean frame of the same shot for the window instead — the voice runs on under it. Then:
 
 ```
 python3 social/harness/ethni_clip_reel.py validate plan.json

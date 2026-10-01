@@ -161,6 +161,56 @@ def test_a_longer_chunk_stays_on_screen_longer():
     assert longest["end"] - longest["start"] >= shortest["end"] - shortest["start"]
 
 
+# ----------------------------------------------------------------- reframes
+# A source can be a screen recording: for a few seconds the picture sits inside a
+# player's chrome. A reframe names the rectangle that is the picture, for a window
+# of source time, so the passage can be kept without publishing the chrome.
+
+RECT = [0, 114, 872, 491]
+
+
+def test_a_clip_without_reframes_is_one_piece_left_as_it_is():
+    assert reel.video_pieces([1.0, 10.0], []) == [(1.0, 10.0, None)]
+
+
+def test_a_reframe_window_splits_its_clip_into_pieces_in_order():
+    window = {"start": 2.0, "end": 4.0, "rect": RECT}
+    pieces = reel.video_pieces([1.0, 10.0], [window])
+    assert pieces == [(1.0, 2.0, None), (2.0, 4.0, window), (4.0, 10.0, None)]
+
+
+def test_a_reframe_window_is_clamped_to_the_clip_and_ignored_outside_it():
+    window = {"start": 0.0, "end": 3.0, "rect": RECT}
+    windows = [window, {"start": 20.0, "end": 30.0, "rect": [0, 0, 16, 9]}]
+    assert reel.video_pieces([1.0, 10.0], windows) == [(1.0, 3.0, window), (3.0, 10.0, None)]
+
+
+def test_a_well_formed_reframe_is_accepted():
+    assert reel.validate_plan(plan(reframes=[{"start": 10.0, "end": 12.0, "rect": RECT}])) == []
+
+
+def test_a_reframe_needs_a_rectangle_of_four_positive_sizes():
+    errors = reel.validate_plan(plan(reframes=[{"start": 10.0, "end": 12.0, "rect": [0, 0, 0, 9]}]))
+    assert any("reframes[0]" in e for e in errors)
+
+
+def test_a_reframe_may_hold_a_still_instead_of_a_rectangle():
+    window = {"start": 10.0, "end": 12.0, "still_at": 15.0}
+    assert reel.validate_plan(plan(reframes=[window])) == []
+    assert reel.video_pieces([10.0, 20.0], [window]) == [(10.0, 12.0, window), (12.0, 20.0, None)]
+
+
+def test_a_reframe_with_neither_rectangle_nor_still_is_refused():
+    errors = reel.validate_plan(plan(reframes=[{"start": 10.0, "end": 12.0}]))
+    assert any("reframes[0]" in e for e in errors)
+
+
+def test_overlapping_reframes_are_refused_because_one_instant_has_one_frame():
+    errors = reel.validate_plan(plan(reframes=[{"start": 10.0, "end": 13.0, "rect": RECT},
+                                               {"start": 12.0, "end": 14.0, "rect": RECT}]))
+    assert any("reframes" in e for e in errors)
+
+
 # ------------------------------------------------------------- rendered files
 
 def _synthetic_source(path):
@@ -193,6 +243,75 @@ def test_the_reel_is_a_vertical_1080_by_1920_and_as_long_as_the_clips():
         video = [s for s in info["streams"] if "width" in s][0]
         assert (video["width"], video["height"]) == (1080, 1920)
         assert abs(float(info["format"]["duration"]) - 6.0) < 0.2
+
+
+def _split_source(path):
+    """Left half red, right half blue: which half fills the frame says what was kept."""
+    subprocess.run(
+        ["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", "color=red:size=320x360:rate=25:duration=6",
+         "-f", "lavfi", "-i", "color=blue:size=320x360:rate=25:duration=6",
+         "-f", "lavfi", "-i", "sine=frequency=440:duration=6",
+         "-filter_complex", "[0:v][1:v]hstack[v]", "-map", "[v]", "-map", "2:a", "-shortest",
+         "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", str(path)],
+        check=True)
+
+
+def _pixel_at(video, instant, xy):
+    from PIL import Image
+    with tempfile.TemporaryDirectory() as tmp:
+        still = pathlib.Path(tmp) / "f.png"
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", str(instant), "-i", str(video),
+                        "-frames:v", "1", str(still)], check=True)
+        return Image.open(still).convert("RGB").getpixel(xy)
+
+
+def test_a_reframed_window_shows_only_its_rectangle_and_the_rest_is_untouched():
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = pathlib.Path(tmp)
+        src = tmp / "source.mp4"
+        _split_source(src)
+        p = plan(source=str(src), clips=[[0.0, 4.0]],
+                 phrases=[{"start": 0.0, "end": 4.0, "speaker": 0, "fr": "Bonne question."}],
+                 reframes=[{"start": 0.0, "end": 2.0, "rect": [0, 0, 320, 180]}])
+        out = tmp / "reel.mp4"
+        reel.render_reel(p, out)
+        right_of_centre = (800, reel.FRAME_CENTRE_Y)
+        red, _, blue = _pixel_at(out, 1.0, right_of_centre)
+        assert red > 150 and blue < 100, "inside the window the red quarter fills the frame"
+        red, _, blue = _pixel_at(out, 3.0, right_of_centre)
+        assert blue > 150 and red < 100, "after the window the whole source is back"
+        duration = float(_probe(out, "format=duration")["format"]["duration"])
+        assert abs(duration - 4.0) < 0.2
+
+
+def _red_then_blue_source(path):
+    """Red for three seconds, then blue: the colour on screen says which instant is shown."""
+    subprocess.run(
+        ["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", "color=red:size=640x360:rate=25:duration=3",
+         "-f", "lavfi", "-i", "color=blue:size=640x360:rate=25:duration=3",
+         "-f", "lavfi", "-i", "sine=frequency=440:duration=6",
+         "-filter_complex", "[0:v][1:v]concat=n=2:v=1:a=0[v]", "-map", "[v]", "-map", "2:a", "-shortest",
+         "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", str(path)],
+        check=True)
+
+
+def test_a_still_window_holds_the_frame_it_names_for_its_whole_length():
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = pathlib.Path(tmp)
+        src = tmp / "source.mp4"
+        _red_then_blue_source(src)
+        p = plan(source=str(src), clips=[[0.0, 4.0]],
+                 phrases=[{"start": 0.0, "end": 4.0, "speaker": 0, "fr": "Bonne question."}],
+                 reframes=[{"start": 0.0, "end": 2.0, "still_at": 4.5}])
+        out = tmp / "reel.mp4"
+        reel.render_reel(p, out)
+        centre = (540, reel.FRAME_CENTRE_Y)
+        red, _, blue = _pixel_at(out, 1.0, centre)
+        assert blue > 150 and red < 100, "inside the window the blue still stands in for the red"
+        red, _, blue = _pixel_at(out, 2.5, centre)
+        assert red > 150 and blue < 100, "after the window the source plays again"
+        duration = float(_probe(out, "format=duration")["format"]["duration"])
+        assert abs(duration - 4.0) < 0.2
 
 
 def test_the_thumbnail_is_a_vertical_1080_by_1920_png():
