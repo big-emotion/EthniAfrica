@@ -213,6 +213,19 @@ def test_output_licence_is_the_most_viral_of_the_lot():
     assert tk.licence_sortie(["domaine public", "à nommer"]) is None
 
 
+def test_pexels_licence_is_recognised_and_never_outranks_an_attribution_licence():
+    """§7 — the Pexels licence needs no attribution and is not share-alike.
+
+    Alone it is a named licence; beside a CC BY or CC BY-SA image the deck still
+    ships under the attribution or share-alike licence.
+    """
+    assert tk.licence_sortie(["licence Pexels"]) == "licence Pexels"
+    assert tk.licence_sortie(["licence Pexels", "CC BY 2.0"]) == "CC BY 2.0"
+    assert tk.licence_sortie(["licence Pexels", "CC BY-SA 4.0"]) == "CC BY-SA 4.0"
+    assert tk.licence_sortie(["domaine public", "licence Pexels"]) == "licence Pexels"
+    assert tk.licence_sortie(["licence Pexels", "CC0"]) == "licence Pexels"
+
+
 def test_internal_notes_never_reach_a_printed_field():
     """§7 and §11 — « licence à nommer » is a message to the operator."""
     assert tk.note_interne("licence à nommer")

@@ -568,6 +568,14 @@ def test_a_clean_lot_passes_and_computes_its_output_licence():
     assert verdict.licence_sortie == "CC BY-SA 4.0"
 
 
+def test_a_card_naming_the_pexels_licence_passes_the_licence_gate():
+    base = carte()["image"]
+    c = carte(image=dict(base, licence="licence Pexels"))
+    verdict = gab.portes([c], DECK)
+    assert not any("licence" in m for m in verdict.manquantes), verdict.manquantes
+    assert verdict.licence_sortie == "licence Pexels"
+
+
 # ---------------------------------------------------------------- §3 proof
 
 
