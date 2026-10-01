@@ -8,6 +8,7 @@
       "mainName": "Abé",
       "selfAppellation": "Abé",
       "exonyms": ["Abbey", "Abbeys", "Abbays", "Abès", "Béssouffouè"],
+      "spellingAliases": ["Abbé", "Abbey"],
       "originOfExonyms": "Abbey est la transcription anglophone la plus courante du nom Abe. Bessouffoue est le nom donne par les Baoule voisins. Les variantes orthographiques (Abbeys, Abbays, Abes) refletent les differentes translitterations coloniales et academiques du nom.",
       "whyProblematic": null,
       "contemporaryUsage": "Abe est la forme officielle utilisee en Cote d'Ivoire. Abbey est frequemment utilise dans les sources anglophones et les bases de donnees de langues (Joshua Project, code ISO aba).",
@@ -82,6 +83,18 @@
       ]
     },
     "sources": [
+      {
+        "title": "Rezo Ivoire — Les Abés",
+        "url": "https://rezoivoire.net/ivoire/patrimoine/3653/les-abes.html",
+        "tier": "unverified",
+        "notes": "Cité pour les graphies Abés, Abbeys, Abbays et Abès, pour le nom baoulé Béssouffouè et pour la révolte de 1910, dite « révolte du peuple Abbé »."
+      },
+      {
+        "title": "Rezo Ivoire — L'histoire des Abbey",
+        "url": "https://www.rezoivoire.net/ivoire/patrimoine/2888/lhistoire-des-abbey.html",
+        "tier": "unverified",
+        "notes": "Récit d'origine rapporté comme une légende, cité pour la graphie Abbey."
+      },
       {
         "title": "Abe, Abbey – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/10141/IV",

@@ -82,13 +82,17 @@ prevents.
    glossary wins and you open a ticket.
 8. **The English register is brand charter §3**: British spelling, present
    tense, declarative, no contractions in editorial prose, second person only
-   where the French uses it. _A contraction reads as marketing copy on a page
-   that must read as a record._
+   where the French uses it. These rules serve precision and reading comfort;
+   they are not a taste for formality, and whether they help the invitation to
+   check a source or contribute is being tested with readers (ledger T06) — keep
+   them until that test rules.
 9. **The reader-facing register applies in English.** `gaps[].reason`,
    `sources[].title` and `sources[].notes` carry no path, no identifier and
    none of the pipeline's vocabulary — _sidecar_, _class 3_, _research pass_,
-   _coverage plan_ included. The French gate does not read English yet; you
-   are the guard.
+   _coverage plan_ included. The editorial gate reads the English sidecars
+   against the English vocabulary list, and French fiches against both lists,
+   but it only matches words: whether a sentence keeps its meaning is yours to
+   judge.
 10. **Bilingual pairs are reused, never re-translated.** `nameEn` on families,
     languages and countries.
 11. **No markdown in prose**, in either language.

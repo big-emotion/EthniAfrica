@@ -13,13 +13,9 @@ spoken call to action plays over it.
 ## scenes.json
 
     {
-      "background": "#142B25",
       "scenes": [
         {
           "bg": {"kind": "photo",  "asset": "hall.jpg", "zoom": 0.035},
-          "bg": {"kind": "colour"},
-          "bg": {"kind": "plate",  "asset": "map.jpg", "width": 1010,
-                 "centreY": 890, "keepTop": 0.80},
 
           "cards": [
             {"role": "serie",    "text": "Le vrai nom · série",         "at": "haut"},
@@ -50,6 +46,9 @@ spoken call to action plays over it.
 those of `ethni_type.py`, and there is no `registre`: the pillar line is `serie`.
 This docstring said otherwise until 2026-09-09, and it is the schema the thirteen
 video sessions read.
+
+Every scene stands on a full-frame photograph: there is no `colour` or `plate` background and no
+default one, and a scene without a `photo` background is refused (operator ruling, 2026-09-30).
 
 There must be exactly one scene per narration paragraph. `note` is the on-screen
 source annotation; `credit` is the licence line, and a photographic scene without
@@ -155,25 +154,13 @@ BLOCK_GAP = 48              # between the two lines of the register itself
 # pixels of empty photograph.
 REGISTER_ROLES = ("serie", "date")
 REGISTER_CLEAR = 140        # minimum between the register and the content below it
-# A plate is not shaded the way a photograph is, so the register keeps whatever
-# contrast the document's own paper gives it. Measured 2026-09-10 over the ten
-# plate scenes of five projects: on the six that clear this band the register
-# reads at 14.0 against the green ground, and on the four that did not it fell to
-# 1.2–2.9 — below the 3.0 floor for large text, and invisible on two of them. The
-# fix is separation, not shading: darkening the plate veils a document whose
-# legibility is the argument, and neither shading nor a dark register would undo
-# the second half of the defect, which is the register landing on the document's
-# own typography. Libreville found this by hand and its SOURCES.md §6 records it.
-PLATE_REGISTER_CLEAR = 8    # between the register's ink and the top of a plate
 CONTENT_GAP_MIN = 72        # between two content blocks, never tighter
 CONTENT_GAP_MAX = 220       # space-between, capped, or two cards drift apart
 
-# The doctrine caps colour-ground-with-text at 2 % of running time, ideally 1 %.
-# Measured on the two approved masters: Ghana 0.0 %, Sénégal V2 15.9 % — five and
-# a half seconds of flat #142B25 that its own DEVIATIONS.md does not record. So
-# the share is measured at every render and written into validation.json. It is
-# a reported figure and not yet a gate; see the note of 2026-09-09.
-COLOUR_GROUND_CAP = 0.02
+# No frame stands on a flat colour (operator ruling, 2026-09-30): the cap was 2 % until then.
+# The share is still measured at every render and written into validation.json, as a
+# reported figure and not a gate, so a flat frame that got in some other way is visible.
+COLOUR_GROUND_CAP = 0.0
 
 
 def colour(name):
@@ -440,64 +427,6 @@ def photo_canvas(path):
     return p
 
 
-def plate(path, width, centre_y, keep_top=1.0):
-    """A document is evidence, so it is fitted to width and never cropped sideways.
-
-    Cropping a map or a chart to fill a portrait frame removes exactly the part the
-    video is arguing about. `keep_top` trims only a blank band that carries none of
-    the argument.
-    """
-    m = Image.open(path)
-    m = ImageOps.exif_transpose(m).convert("RGB")
-    if keep_top < 1.0:
-        m = m.crop((0, 0, m.width, round(m.height * keep_top)))
-    height = round(m.height * width / m.width)
-    m = m.resize((width, height), Image.Resampling.LANCZOS).convert("RGBA")
-    out = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    top = round(centre_y - height / 2)
-    out.alpha_composite(m, ((W - width) // 2, top))
-    return out, (top, top + height)
-
-
-def assert_plate_clears_register(span, bg, register_ink, scene):
-    """A document may not climb into the register's ink.
-
-    The register is white and a plate is not shaded, so a pale document simply
-    swallows it — measured at a contrast of 1.2 on the Brazzaville report, which
-    is no contrast at all. Lowering the plate is what Libreville did by hand and
-    it costs nothing: the four scenes this refused all fitted the frame whole
-    once moved. The failure names the `centreY` that clears the register, because
-    a constraint the operator has to solve by trial is a constraint that gets
-    worked around instead.
-    """
-    if not register_ink:
-        return
-    top, bottom = span
-    floor = max(box[3] for box in register_ink) + PLATE_REGISTER_CLEAR
-    if top >= floor:
-        return
-    height = bottom - top
-    centre_y = bg.get("centreY", H // 2) + (floor - top)
-    # `plate` rounds the top edge from a half-pixel centre, so an odd height lands
-    # this suggestion one pixel short of the floor and the next run fails again on
-    # the value this message gave. Solve it here rather than hand it back.
-    while round(centre_y - height / 2) < floor:
-        centre_y += 1
-    if round(centre_y - height / 2) + height > H:
-        raise AssertionError(
-            f"scène {scene} : la planche « {bg['asset']} » monte jusqu'à y={top}, "
-            f"dans l'encre du registre qui descend à "
-            f"y={floor - PLATE_REGISTER_CLEAR}, et l'abaisser la ferait sortir du "
-            f"cadre par le bas. Elle fait {height} px de haut pour {H - floor} px "
-            f"disponibles sous le registre : réduis « width » à "
-            f"{round(bg.get('width', 1010) * (H - floor) / height)} environ, puis "
-            f"reprends le centreY")
-    raise AssertionError(
-        f"scène {scene} : la planche « {bg['asset']} » monte jusqu'à y={top} et "
-        f"recouvre le registre, dont l'encre descend à y={floor - PLATE_REGISTER_CLEAR}. "
-        f"Le registre est blanc et une planche n'est pas assombrie, donc il y "
-        f"disparaît — passe « centreY » de {bg.get('centreY', H // 2)} à {centre_y}")
-
 
 # ── the brand ending's typographic card, rebuilt only for the logo entrance ──────
 logo = Image.open(HARNESS / "ethniafrica-logo.png").convert("RGBA")
@@ -506,11 +435,6 @@ logo = logo.crop(logo.getbbox())
 
 def main():
     sheet = json.loads((ROOT / "scenes.json").read_text(encoding="utf-8"))
-    # The project's dark ground, not a second one. `PALETTE["green"]` was
-    # `#142B25`, a value the charter never defined; it was deleted on 2026-09-10
-    # rather than tokenised, because a second unrecorded dark ground is how a
-    # colour becomes a decision by habit.
-    bg_default = sheet.get("background", PALETTE["ground"])
     assets = ROOT / "assets"
     work = ROOT / "work"
     os.chdir(work)
@@ -576,15 +500,13 @@ def main():
             box = compose.draw(opening, spec, "couverture", SAFE_TOP, tw, mf)
             assert_in_safe_box(box, f"scène {i}, ouverture")
 
-        drawn, card_layers, register_ink = [], [], []
+        drawn, card_layers = [], []
         tops, after_cards = stack(cards, pq_height, scales)
         for card, top in zip(cards, tops):
             layer = Image.new("RGBA", (W, H))
             box = typo.draw(layer, card, top, *geom(scales, card["role"]))
             assert_in_safe_box(box, f"scène {i}, carte « {card['role']} »")
             drawn.append((f"carte « {card['role']} »", box))
-            if card["role"] in REGISTER_ROLES:
-                register_ink.append(box)
             delay = resolve_cue(card.get("cue"), aligned, starts[i],
                                 f"scène {i}, carte « {card['role']} »")
             card_layers.append((layer, card.get("delay", 0) if delay is None else delay))
@@ -626,17 +548,14 @@ def main():
         anno = note_layer(s_["note"]["lines"], s_["note"].get("top", 200)) if s_.get("note") else None
         credits = [text_layer(line, 1490 + j * 42, 25, "sans", PALETTE["paper"], maxw=890)
                    for j, line in enumerate(s_.get("credit", []))]
-        bg = s_.get("bg", {"kind": "colour"})
-        if bg["kind"] == "photo":
-            canvas = photo_canvas(assets / bg["asset"])
-        elif bg["kind"] == "plate":
-            canvas, span = plate(assets / bg["asset"], bg.get("width", 1010),
-                                 bg.get("centreY", H // 2), bg.get("keepTop", 1.0))
-            assert_plate_clears_register(span, bg, register_ink, i)
-        else:
-            canvas = None
+        bg = s_.get("bg")
+        # There is no dark, plain or solid-colour scene: every scene stands on a full-frame photograph.
+        assert bg and bg.get("kind") == "photo", (
+            f"scène {i} : `bg` doit être une photo plein cadre (kind photo, avec son asset) ; "
+            f"il n'existe ni fond de couleur ni planche sur fond : {bg}")
+        canvas = photo_canvas(assets / bg["asset"])
         # A sourced visual states its licence on screen, or it does not ship.
-        assert bg["kind"] == "colour" or s_.get("credit"), f"visual without a credit line: {bg}"
+        assert s_.get("credit"), f"visual without a credit line: {bg}"
         built.append((bg, canvas, items, card_layers, anno, credits, plaque, opening))
 
     parts = []
@@ -660,16 +579,11 @@ def main():
 
         for frame in range(n):
             t = frame / FPS
-            if bg["kind"] == "photo":
-                zoom = bg.get("zoom", 0.035)
-                scale = 1 + zoom * frame / max(1, n - 1)
-                bw, bh = round(W * scale), round(H * scale)
-                big = canvas.resize((bw, bh), Image.Resampling.BILINEAR)
-                im = big.crop(((bw - W) // 2, (bh - H) // 2, (bw + W) // 2, (bh + H) // 2))
-            else:
-                im = Image.new("RGBA", (W, H), bg.get("colour", bg_default))
-                if canvas is not None:
-                    im.alpha_composite(canvas)
+            zoom = bg.get("zoom", 0.035)
+            scale = 1 + zoom * frame / max(1, n - 1)
+            bw, bh = round(W * scale), round(H * scale)
+            big = canvas.resize((bw, bh), Image.Resampling.BILINEAR)
+            im = big.crop(((bw - W) // 2, (bh - H) // 2, (bw + W) // 2, (bh + H) // 2))
             if opening is not None:
                 im.alpha_composite(opening)
             for layer, delay in items:

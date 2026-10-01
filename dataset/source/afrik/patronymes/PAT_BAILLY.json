@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Dossier fondé sur deux publications grand public consacrées aux noms bété, corroborées par le chapitre organisation sociale de la fiche du peuple bété déjà présente dans ce corpus. Un homonyme européen sans rapport est signalé pour éviter toute confusion."
+    "directives": "Dossier fondé sur deux publications grand public de 2021 consacrées aux noms bété, sur une liste plus ancienne de prénoms bété (2012) qui recoupe leur attestation sans en donner le sens, et sur le chapitre organisation sociale de la fiche du peuple bété déjà présente dans ce corpus. Un homonyme européen sans rapport est signalé pour éviter toute confusion."
   },
   "id": "PAT_BAILLY",
   "nameMain": "Bailly",
@@ -16,7 +16,8 @@
           "sourceRefs": [
             "civ-tourisme-fb-2021-bailly",
             "afriksoir-2021-bailly",
-            "forebears-bailly"
+            "forebears-bailly",
+            "messager-2012-prenoms-bete"
           ]
         }
       ]
@@ -28,7 +29,8 @@
           "countryId": "CIV",
           "sourceRefs": [
             "civ-tourisme-fb-2021-bailly",
-            "corpus-ppl-bete-bagnon"
+            "corpus-ppl-bete-bagnon",
+            "messager-2012-prenoms-bete"
           ]
         }
       ]
@@ -58,7 +60,8 @@
       "sourceRefs": [
         "civ-tourisme-fb-2021-bailly",
         "afriksoir-2021-bailly",
-        "corpus-ppl-bete-bagnon"
+        "corpus-ppl-bete-bagnon",
+        "messager-2012-prenoms-bete"
       ]
     }
   ],
@@ -69,13 +72,20 @@
       "sourceRefs": [
         "civ-tourisme-fb-2021-bailly",
         "afriksoir-2021-bailly",
-        "forebears-bailly"
+        "forebears-bailly",
+        "apa-2018-sery-bailly"
       ]
     }
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Séry Bailly",
+      "sourceRefs": ["apa-2018-sery-bailly"]
+    }
+  ],
   "homonyms": [
     {
       "label": "Bailly (patronyme français)",
@@ -109,6 +119,22 @@
       "tier": "unverified",
       "source_kind": "repository",
       "notes": "Reprise du chapitre consacré à l'organisation traditionnelle de notre fiche du peuple bété, qui décrit le bagnon comme une personne désignée dans chaque village selon des critères physiques et moraux, consultée et respectée, sans qu'il s'agisse d'une charge héréditaire."
+    },
+    {
+      "sourceKey": "messager-2012-prenoms-bete",
+      "title": "Liste de prénoms bété (Le Messager, reprise sur blog, 2012)",
+      "url": "http://gozoa.unblog.fr/2012/04/21/liste-de-prenoms-bete/",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Reprise sur un blog, datée du 21 avril 2012, d'une liste alphabétique de noms bété présentée sous l'intitulé du journal Le Messager ; l'article d'origine n'a pas été consulté. La liste range Bailly et Bagnon parmi les noms bété, sans en donner le sens ni citer de source. Elle est antérieure de près de dix ans aux deux publications de 2021 et ne reprend pas leur texte : elle atteste le nom comme nom bété, non son sens."
+    },
+    {
+      "sourceKey": "apa-2018-sery-bailly",
+      "title": "Décès à Abidjan du Pr Séry Bailly, un ex-ministre de Gbagbo à 70 ans",
+      "url": "https://news.abidjan.net/articles/648889/deces-a-abidjan-du-pr-sery-bailly-un-ex-ministre-de-gbagbo-a-70-ans",
+      "tier": "referenced",
+      "source_kind": "community",
+      "notes": "Dépêche de l'Agence de presse africaine relayée par Abidjan.net le 3 décembre 2018 : universitaire, écrivain et homme politique ivoirien né en 1948, ancien ministre de l'Enseignement supérieur et de la Recherche scientifique, mort à Abidjan le 2 décembre 2018. Elle atteste un porteur ivoirien décédé du nom ; elle ne dit rien de son origine familiale, et aucune appartenance à un peuple n'en est déduite."
     },
     {
       "sourceKey": "forebears-bailly",
@@ -146,7 +172,7 @@
     },
     {
       "fieldPath": "bearers",
-      "reason": "Plusieurs personnalités ivoiriennes, vivantes ou récemment décédées, portent ce nom, mais aucune source consultée ne documente leur rattachement bété dans leurs propres mots ni ne permet de l'établir de façon indépendante ; aucune n'est donc citée ici."
+      "reason": "Un seul porteur décédé est cité, sur la foi d'une dépêche de presse qui ne dit rien de son origine familiale. Plusieurs autres personnalités ivoiriennes portent ce nom, mais aucune source consultée ne documente leur rattachement bété dans leurs propres mots ni ne permet de l'établir de façon indépendante ; aucune n'est donc citée ici, et un nom ne suffit pas à dire d'où vient une personne."
     },
     {
       "fieldPath": "homonyms",

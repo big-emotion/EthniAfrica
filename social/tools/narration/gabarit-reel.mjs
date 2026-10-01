@@ -94,13 +94,29 @@ const ETIQUETTES_INTERIEUR = new Set([
   "la forme d'origine",
 ]);
 const ETIQUETTES_EXTERIEUR = new Set(["un exonyme", "une forme transformée"]);
+/**
+ * The neutral surname skeleton (audit finding C12). The comparison skeleton
+ * crowns one « forme d'origine » and blames the civil register for the rest;
+ * where the origin is unsettled or the variants have another cause, every form
+ * is labelled with this one instead, and only what each source shows is said.
+ */
+const ETIQUETTE_NEUTRE = "une forme attestée";
+const PATRONYME_NEUTRE_TROISIEME =
+  "Nous ne savons pas encore quelle forme est la plus ancienne.";
+const PATRONYME_NEUTRE_QUATRIEME = "Plusieurs formes circulent aujourd'hui.";
+const PATRONYME_NEUTRE_CLASSEMENT =
+  "Les sources consultées ne permettent pas de dire quelle forme est la plus ancienne.";
+/** A neutral block must say where its form is attested, or that we do not know. */
+const ATTESTATION_OU_SILENCE =
+  /\b\d{4}\b|\bnous ne savons pas\b|\baucune source\b/i;
+
 const ETIQUETTES_PAR_TYPE = (type) =>
   type === "patronyme"
-    ? new Set(["la forme d'origine", "une forme transformée"])
+    ? new Set(["la forme d'origine", "une forme transformée", ETIQUETTE_NEUTRE])
     : new Set(["l'endonyme", "un endonyme", "aussi un endonyme", "un exonyme"]);
 
 const OUVREUR_DE_BLOC =
-  /^(.+) est (l'endonyme|un endonyme|aussi un endonyme|un exonyme|la forme d'origine|une forme transformée)\.$/;
+  /^(.+) est (l'endonyme|un endonyme|aussi un endonyme|un exonyme|la forme d'origine|une forme transformée|une forme attestée)\.$/;
 const VARIANTES = /s'écrit|pose(?:nt)? un problème/;
 const LANGUE_DU_GROUPE = /^Ce nom vient de (?:la|leur|sa) langue/;
 const EXPLICATION_LOCALE = /\bexpliquent?\b[^.]*\bainsi\b/;
@@ -121,7 +137,7 @@ const noms = (liste) => liste.split(/, | et /).map((n) => n.trim());
 const memesNoms = (a, b) =>
   a.length === b.length && a.every((nom, i) => nom === b[i]);
 
-function verifierOuverture(paragraphe, numero, type, nbInterieur) {
+function verifierOuverture(paragraphe, numero, type, nbInterieur, neutre) {
   const vocab = VOCABULAIRE[type];
   const trouvailles = [];
   const phrases = phrasesDe(paragraphe);
@@ -146,17 +162,43 @@ function verifierOuverture(paragraphe, numero, type, nbInterieur) {
     );
   }
   const refs = vocab.referents.join("|");
+  // Two accepted forms. The universal one is the operator's original sentence
+  // and stays valid. The subject-specific one exists because « toujours » is a
+  // claim about every people, country or language, and choosing a subject that
+  // has several attested names does not establish it (audit finding C11).
   const attendue = new RegExp(
-    `^(?:Un|Une) même (?:${refs}) ${vocab.verbe} toujours plusieurs ${vocab.formes}\\.$`
+    `^(?:(?:Un|Une) même (?:${refs}) ${vocab.verbe} toujours plusieurs ${vocab.formes}|(?:Ce|Cette) (?:${refs}) ${vocab.verbe} plusieurs ${vocab.formes})\\.$`
   );
   if (!definition || !attendue.test(definition)) {
     trouvailles.push(
       trouvaille(
         numero,
         "gabarit-ouverture",
-        `deuxième phrase attendue : « Un même ${vocab.referents[0]} ${vocab.verbe} toujours plusieurs ${vocab.formes}. »`
+        `deuxième phrase attendue : « Un même ${vocab.referents[0]} ${vocab.verbe} toujours plusieurs ${vocab.formes}. » ou, si la recherche ne permet pas de le dire de tous, « Ce ${vocab.referents[0]} ${vocab.verbe} plusieurs ${vocab.formes}. »`
       )
     );
+  }
+
+  if (type === "patronyme" && neutre) {
+    if (interieur !== PATRONYME_NEUTRE_TROISIEME) {
+      trouvailles.push(
+        trouvaille(
+          numero,
+          "gabarit-ouverture",
+          `troisième phrase attendue : « ${PATRONYME_NEUTRE_TROISIEME} »`
+        )
+      );
+    }
+    if (exterieur !== PATRONYME_NEUTRE_QUATRIEME) {
+      trouvailles.push(
+        trouvaille(
+          numero,
+          "gabarit-ouverture",
+          `quatrième phrase attendue : « ${PATRONYME_NEUTRE_QUATRIEME} »`
+        )
+      );
+    }
+    return trouvailles;
   }
 
   if (type === "patronyme") {
@@ -294,7 +336,17 @@ function verifierBloc(paragraphe, numero, type, ouvreur) {
     );
   }
 
-  if (interieur) {
+  if (ouvreur.etiquette === ETIQUETTE_NEUTRE) {
+    if (!phrases.some((p) => ATTESTATION_OU_SILENCE.test(p))) {
+      trouvailles.push(
+        trouvaille(
+          numero,
+          "gabarit-bloc",
+          "le bloc d'une forme attestée dit où elle est attestée (une date) ou déclare le silence (« Nous ne savons pas… »)"
+        )
+      );
+    }
+  } else if (interieur) {
     if (!phrases.some((p) => LANGUE_DU_GROUPE.test(p))) {
       trouvailles.push(
         trouvaille(
@@ -333,6 +385,40 @@ function verifierBloc(paragraphe, numero, type, ouvreur) {
         numero,
         "gabarit-bloc",
         `« ${ouvreur.etiquette} » n'existe pas dans le gabarit ${type}`
+      )
+    );
+  }
+  return trouvailles;
+}
+
+function verifierClassementNeutre(paragraphe, numero, tousLesNoms) {
+  const trouvailles = [];
+  const phrases = phrasesDe(paragraphe);
+  if (phrases.length < 2 || phrases.length > 3) {
+    trouvailles.push(
+      trouvaille(
+        numero,
+        "gabarit-classement",
+        `deux ou trois phrases, ${phrases.length} trouvée(s)`
+      )
+    );
+  }
+  if (phrases[0] !== PATRONYME_NEUTRE_CLASSEMENT) {
+    trouvailles.push(
+      trouvaille(
+        numero,
+        "gabarit-classement",
+        `première phrase attendue : « ${PATRONYME_NEUTRE_CLASSEMENT} » (aucune forme n'est couronnée)`
+      )
+    );
+  }
+  const absents = tousLesNoms.filter((nom) => !paragraphe.includes(nom));
+  if (absents.length) {
+    trouvailles.push(
+      trouvaille(
+        numero,
+        "gabarit-classement",
+        `le classement ne nomme pas : ${absents.join(", ")}`
       )
     );
   }
@@ -611,11 +697,44 @@ export function verifierGabarit(narration, type) {
   const interieurs = blocs.filter((b) => ETIQUETTES_INTERIEUR.has(b.etiquette));
   const exterieurs = blocs.filter((b) => ETIQUETTES_EXTERIEUR.has(b.etiquette));
 
+  const neutres = blocs.filter((b) => b.etiquette === ETIQUETTE_NEUTRE);
+  const neutre =
+    type === "patronyme" &&
+    neutres.length > 0 &&
+    neutres.length === blocs.length;
+  if (type === "patronyme" && neutres.length > 0 && !neutre) {
+    trouvailles.push(
+      trouvaille(
+        debutBlocs + 1,
+        "gabarit-bloc",
+        `« ${ETIQUETTE_NEUTRE} » ne se mélange pas avec la forme d'origine ou les formes transformées : toutes les formes portent la même étiquette`
+      )
+    );
+  }
+  if (neutre && blocs.length < 2) {
+    trouvailles.push(
+      trouvaille(
+        debutBlocs + 1,
+        "gabarit-bloc",
+        "au moins deux formes attestées pour comparer"
+      )
+    );
+  }
+
   trouvailles.push(
-    ...verifierOuverture(paragraphes[0] ?? "", 1, type, interieurs.length)
+    ...verifierOuverture(
+      paragraphes[0] ?? "",
+      1,
+      type,
+      interieurs.length,
+      neutre
+    )
   );
 
-  if (!interieurs.length || (type === "patronyme" && interieurs.length !== 1)) {
+  if (
+    !neutre &&
+    (!interieurs.length || (type === "patronyme" && interieurs.length !== 1))
+  ) {
     trouvailles.push(
       trouvaille(
         debutBlocs + 1,
@@ -626,7 +745,7 @@ export function verifierGabarit(narration, type) {
       )
     );
   }
-  if (!exterieurs.length) {
+  if (!neutre && !exterieurs.length) {
     trouvailles.push(
       trouvaille(
         debutBlocs + 1,
@@ -713,13 +832,19 @@ export function verifierGabarit(narration, type) {
     );
   } else {
     trouvailles.push(
-      ...verifierClassement(
-        suite[0],
-        finBlocs + 1,
-        type,
-        interieurs.map((b) => b.nom),
-        blocs.map((b) => b.nom)
-      )
+      ...(neutre
+        ? verifierClassementNeutre(
+            suite[0],
+            finBlocs + 1,
+            blocs.map((b) => b.nom)
+          )
+        : verifierClassement(
+            suite[0],
+            finBlocs + 1,
+            type,
+            interieurs.map((b) => b.nom),
+            blocs.map((b) => b.nom)
+          ))
     );
     const synthese = phrasesDe(suite[1]);
     if (synthese.length > PLAFOND_PHRASES_SYNTHESE) {

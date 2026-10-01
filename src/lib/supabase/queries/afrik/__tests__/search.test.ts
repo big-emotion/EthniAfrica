@@ -1908,4 +1908,152 @@ describe("ftsSearchEntities", () => {
     expect(result.countriesTotal).toBe(1);
     expect(result.results).toHaveLength(2);
   });
+
+  describe("reader tolerance (REQ-178)", () => {
+    /** Answers the peoples/countries RPCs with a hit only for the given query text. */
+    function corpusHolds(byQuery: Record<string, "people" | "country">) {
+      const base = rpc.getMockImplementation();
+      rpc.mockImplementation((fn: string, args: { p_q?: string }) => {
+        const holds = byQuery[(args?.p_q ?? "").toLowerCase()];
+        if (fn === "afrik_search_peoples" && holds === "people") {
+          return Promise.resolve({
+            data: {
+              total: 1,
+              rows: [peopleRow("PPL_HAUSA", "Hausa", { normalizedScore: 0.9 })],
+            },
+            error: null,
+          });
+        }
+        if (fn === "afrik_search_countries" && holds === "country") {
+          return Promise.resolve({
+            data: {
+              total: 1,
+              rows: [countryRow("EGY", "Égypte", { normalizedScore: 0.9 })],
+            },
+            error: null,
+          });
+        }
+        if (fn === "afrik_search_peoples" || fn === "afrik_search_countries") {
+          return Promise.resolve({
+            data: { total: 0, rows: [] },
+            error: null,
+          });
+        }
+        return base(fn, args);
+      });
+    }
+
+    const peoplesQueries = () =>
+      rpc.mock.calls
+        .filter(([fn]: [string]) => fn === "afrik_search_peoples")
+        .map(([, args]: [string, { p_q: string }]) => args.p_q);
+
+    // @req REQ-178
+    it("strips a leading article and retries without the plural s", async () => {
+      corpusHolds({ hausa: "people" });
+
+      const result = await ftsSearchEntities({
+        q: "les hausas",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(peoplesQueries()).toEqual(["hausas", "hausa"]);
+      expect(result.peoples.map((p) => p.id)).toEqual(["PPL_HAUSA"]);
+      expect(result.matchedQuery).toBe("hausa");
+    });
+
+    // @req REQ-178
+    it("sends what the reader typed when nothing needs stripping", async () => {
+      corpusHolds({ hausa: "people" });
+
+      await ftsSearchEntities({ q: "Hausa", limit: 20, offset: 0 });
+
+      expect(peoplesQueries()).toEqual(["Hausa"]);
+    });
+
+    // @req REQ-178
+    it("understands a question frame with a curly apostrophe", async () => {
+      corpusHolds({ hausa: "people" });
+
+      const result = await ftsSearchEntities({
+        q: "d’où vient le nom hausa ?",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(peoplesQueries()).toEqual(["hausa"]);
+      expect(result.total).toBe(1);
+    });
+
+    // @req REQ-178
+    it("widens a multi-name query per name instead of failing on both", async () => {
+      corpusHolds({ hausa: "people", egypte: "country" });
+
+      const result = await ftsSearchEntities({
+        q: "hausa egypte",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.peoples.map((p) => p.id)).toEqual(["PPL_HAUSA"]);
+      expect(result.countries.map((c) => c.id)).toEqual(["EGY"]);
+      expect(result.total).toBe(2);
+      expect(result.widenedFrom).toEqual(["hausa", "egypte"]);
+      expect(result.matchedQuery).toBeUndefined();
+    });
+
+    // @req REQ-178
+    it("never widens a query that already found something", async () => {
+      corpusHolds({ "hausa egypte": "people" });
+
+      const result = await ftsSearchEntities({
+        q: "hausa egypte",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.widenedFrom).toBeUndefined();
+      expect(peoplesQueries()).toEqual(["hausa egypte"]);
+    });
+
+    // @req REQ-178
+    it("asks the near-miss leads about the cleaned name, once", async () => {
+      leadsPayload = {
+        rows: [
+          { kind: "people", id: "PPL_KROU", name: "Krou", similarity: 0.3 },
+        ],
+      };
+
+      const result = await ftsSearchEntities({
+        q: "les krus",
+        limit: 20,
+        offset: 0,
+      });
+
+      const leadCalls = rpc.mock.calls.filter(
+        ([fn]: [string]) => fn === "afrik_search_leads"
+      );
+      expect(leadCalls).toHaveLength(1);
+      expect(leadCalls[0][1].p_q).toBe("krus");
+      // A neighbour is offered as a neighbour: it is a lead, not a result.
+      expect(result.total).toBe(0);
+      expect(result.peoples).toEqual([]);
+      expect(result.leads.map((lead) => lead.id)).toEqual(["PPL_KROU"]);
+    });
+
+    // @req REQ-178
+    it("still fails loudly when an attempt errors, rather than reading it as empty", async () => {
+      const base = rpc.getMockImplementation();
+      rpc.mockImplementation((fn: string, args: unknown) =>
+        fn === "afrik_search_peoples"
+          ? Promise.resolve({ data: null, error: { message: "timeout" } })
+          : base(fn, args)
+      );
+
+      await expect(
+        ftsSearchEntities({ q: "les hausas", limit: 20, offset: 0 })
+      ).rejects.toEqual({ message: "timeout" });
+    });
+  });
 });

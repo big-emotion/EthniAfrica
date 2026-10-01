@@ -1,0 +1,29 @@
+{
+  "id": "diaspora-noms-repris-saamaka",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "diaspora-noms-repris-saamaka",
+    "title": "Qui a choisi le nom que portent aujourd'hui des peuples afrodescendants comme les Saamaka ?",
+    "excerpt": "Du Suriname au Belize, six peuples ont refusé le nom qu'on leur avait donné.",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "noms-refuses-ameriques"
+    },
+    "formats": [],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7684282290012261654",
+        "publishedAt": "2026-09-11"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

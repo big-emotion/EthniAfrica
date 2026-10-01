@@ -1,0 +1,170 @@
+{
+  "id": "amazigh-berbere-deux-noms",
+  "status": "published",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "La carte cachée",
+  "fr": {
+    "slug": "amazigh-berbere-deux-noms",
+    "title": "D'où vient le nom Amazigh ?",
+    "excerpt": "« Les hommes libres » : la traduction d'Amazigh que l'on lit partout a un auteur, et un linguiste la juge sans fondement. Berbère, lui, a été forgé de l'extérieur. Ce que l'on sait de ces deux noms, et ce qui reste ouvert.",
+    "sections": [
+      {
+        "heading": "Un nom qui change avec le nombre",
+        "paragraphs": [
+          "Amazigh désigne une personne : un homme, un Berbère. Au pluriel, Imazighen désigne le peuple. Au féminin, tamazight dit à la fois la femme et la langue.",
+          "Ce peuple porte donc au moins deux noms : celui-ci, qu'il emploie, et Berbère, que d'autres lui ont donné. Aucun des deux ne dit tout à fait ce qu'on croit."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "« Les hommes libres » : une traduction qui a un auteur",
+        "paragraphs": [
+          "On lit souvent qu'Amazigh veut dire « les hommes libres » ou « les nobles ». Cette lecture semble venir de Jean-Léon l'Africain, voyageur et auteur du XVIe siècle, qui rend awal amazigh par « langage noble ». L'historien Stéphane Gsell l'a ensuite reprise, et elle s'est répandue.",
+          "Le linguiste Salem Chaker, spécialiste des langues berbères, écrit dans l'Encyclopédie berbère (1986) que cette interprétation n'est « certainement pas fondée ». Pour lui, Amazigh est d'abord un nom de peuple, pas le nom d'un rang ou d'un statut social."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "Là où le sens « homme libre » est réel",
+        "paragraphs": [
+          "La traduction n'est pas inventée de toutes pièces. Là où la société était fortement hiérarchisée, notamment chez les Touareg du sud, le mot a bien servi à désigner l'homme libre, le noble ou le suzerain. Chaker rapporte le même usage dans le sud du Maroc et au Sahara.",
+          "Ce sens est donc attesté, mais il est local. L'erreur, selon Chaker, est de l'avoir étendu à tous les Imazighen et d'en avoir fait le sens premier du mot."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "Un nom très ancien, d'origine inconnue",
+        "paragraphs": [
+          "Le nom est ancien. Des auteurs grecs et latins de l'Antiquité notent déjà des formes proches : Maxyes chez Hérodote, Mazyes chez Hécatée, Mazices ou Mazax chez des auteurs latins.",
+          "Quant à son sens premier, l'origine d'Amazigh n'est pas établie. Chaker conclut qu'il est « difficile d'établir une étymologie sûre » pour ce nom, formé à une époque très ancienne."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "Un nom longtemps inconnu en Kabylie",
+        "paragraphs": [
+          "Aujourd'hui, Amazigh sert de nom commun à tous. Ce n'a pas toujours été le cas. Dans la culture traditionnelle du nord de l'Algérie, en Kabylie, au Mzab et dans les Aurès, le terme était inconnu.",
+          "Son emploi pour nommer l'ensemble des Berbères part justement de Kabylie, dans les années 1945-1950. Chaker le relie au mouvement nationaliste berbère de l'époque, qui l'a diffusé notamment par la chanson."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "Berbère : un nom venu de l'extérieur",
+        "paragraphs": [
+          "Le mot Berbère n'a pas été choisi par ceux qu'il désigne. L'historien Yves Modéran le décrit, dans l'Encyclopédie berbère (2010), comme le terme général forgé par les Arabes à leur arrivée, « probablement » à partir du latin barbari. Ce « probablement » est le sien : la dérivation est plausible, pas démontrée.",
+          "Plus tard, des généalogistes ont proposé un ancêtre du nom de Berr, ou Berber, pour expliquer ce mot. Modéran y voit un ancêtre inventé après coup, pour donner une origine à un nom qui venait du dehors."
+        ],
+        "sourceRefs": ["s2"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "« Les hommes libres » n'est pas le sens premier d'Amazigh : c'est un sens local, étendu à tort à tout un peuple. Le sens premier du mot reste inconnu. Berbère vient probablement du latin, par l'arabe. Et le nom que presque tout le monde emploie aujourd'hui s'est généralisé il y a moins d'un siècle.",
+          "Quel sens avez-vous entendu donner à Amazigh autour de vous, et dans quelle région ? Vous pouvez nous le dire, avec la provenance de ce que vous savez."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Salem Chaker, « Amaziɣ (le/un Berbère) », Encyclopédie berbère 4, 1986, p. 562-568",
+      "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+      "tier": "needs_review",
+      "notes": "Article de référence sur le nom : Jean-Léon l'Africain et Gsell, la réfutation de « hommes libres », le sens local chez les Touareg, les formes antiques, l'emploi généralisé depuis la Kabylie dans les années 1945-1950."
+    },
+    {
+      "id": "s2",
+      "title": "Yves Modéran, « Mythes d'origine des Berbères (Antiquité et Moyen Âge) », Encyclopédie berbère 32, 2010, p. 5157-5169",
+      "url": "https://journals.openedition.org/encyclopedieberbere/674",
+      "tier": "needs_review",
+      "notes": "Le nom « Berbère » forgé par les Arabes, probablement sur le latin barbari, et l'ancêtre éponyme inventé par des généalogistes (p. 5165)."
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "amazigh-neuf-pays"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "amazigh-berbere-deux-noms/amazigh-neuf-pays/slide-01-8dbb509c49ba.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un versant de haute montagne tacheté de neige, dominant une vallée aride et des chaînes bleutées jusqu'à l'horizon",
+            "text": "Personne n'a choisi le mot Berbère.\n\ndu Maroc à l'Égypte, et jusqu'au Burkina Faso\n\nDeux noms. Aucun ne dit ce qu'on croit."
+          },
+          {
+            "src": "amazigh-berbere-deux-noms/amazigh-neuf-pays/slide-02-e9ae4ab791ef.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une borne routière blanche à sommet rouge, portant un nom en arabe, le même en tifinagh et le chiffre 10, au bord d'une route de campagne",
+            "text": "Leur nom change avec le nombre.\n\nAmazigh — un homme\nImazighen — le peuple\n\nAu féminin, tamazight dit la femme et la langue. Elle est officielle au Maroc depuis 2011.\n\nSalem Chaker, Encyclopédie berbère, 1986"
+          },
+          {
+            "src": "amazigh-berbere-deux-noms/amazigh-neuf-pays/slide-03-f11afa105737.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la page de titre gravée d'un livre ancien en italien, un grand bandeau de capitales en haut et une vignette ornée à la base",
+            "text": "« Les hommes libres » a un auteur.\n\nOn lit partout qu'Amazigh veut dire « les hommes libres ». La phrase vient de Jean-Léon l'Africain, un voyageur du XVIe siècle. Il traduit awal amazigh par « langage noble ». L'historien Stéphane Gsell la reprend, et elle se répand.\n\nSalem Chaker, Encyclopédie berbère, 1986"
+          },
+          {
+            "src": "amazigh-berbere-deux-noms/amazigh-neuf-pays/slide-04-3d5c48470de1.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une haute stèle de pierre dressée dans une vitrine de musée, couverte de signes incisés, avec un cartouche rectangulaire gravé en son milieu",
+            "text": "Salem Chaker dit que c'est faux.\n\nSalem Chaker est linguiste, spécialiste des langues berbères. Il écrit que cette traduction n'est « certainement pas fondée ». Pour lui, c'est un nom de peuple, pas un rang. Les Grecs écrivaient déjà Maxyes, les Romains Mazices.\n\nSalem Chaker, Encyclopédie berbère, 1986"
+          },
+          {
+            "src": "amazigh-berbere-deux-noms/amazigh-neuf-pays/slide-05-7bf2a769687b.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un massif rocheux isolé se dressant au milieu d'un désert de pierres, sous un ciel chargé de nuages",
+            "text": "Sauf chez les Touareg.\n\nChez les Touareg du Mali et du Niger, amajegh désigne bien le noble. Dans le sud du Maroc et au Sahara, amazigh a servi à dire l'homme libre, face à ceux qu'on tenait pour inférieurs. La traduction est vraie là-bas. Elle ne l'est pas partout.\n\nSalem Chaker, Encyclopédie berbère, 1986"
+          },
+          {
+            "src": "amazigh-berbere-deux-noms/amazigh-neuf-pays/slide-06-47d4df66d8ed.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la vaste cour dallée d'une mosquée bordée d'arcades, avec une tour carrée à degrés au fond, sous un ciel de nuages",
+            "text": "Berbère vient probablement de barbarus.\n\nLes Arabes forgent ce mot à leur arrivée, au VIIe siècle. Il vient probablement du latin barbari, qui voulait dire étranger. Plus tard, des généalogistes inventent un ancêtre, Berr, pour expliquer ce nom venu du dehors.\n\nYves Modéran, Encyclopédie berbère, 2010"
+          },
+          {
+            "src": "amazigh-berbere-deux-noms/amazigh-neuf-pays/slide-07-cd004c1788d4.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "des collines vertes au premier plan, des chaînes bleutées derrière traversées de rayons de soleil, des villages accrochés aux crêtes",
+            "text": "En Kabylie, le mot était inconnu.\n\nAmazigh n'existait pas dans la culture des Kabyles, ni dans les Aurès, ni au Mzab. Il s'y installe entre 1945 et 1950, porté par la chanson nationaliste. En quelques dizaines d'années, il devient le nom de tous.\n\nSalem Chaker, Encyclopédie berbère, 1986"
+          },
+          {
+            "src": "amazigh-berbere-deux-noms/amazigh-neuf-pays/slide-08-661ed7510dfd.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "des ânes et des mulets tournant sur une aire de battage, cinq personnes maniant des fourches, et un village de maisons de terre étagé sur le versant derrière",
+            "text": "Ce peuple n'a pas changé de nom.\n\nOn lui en a posé un par-dessus.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "Mont Ayachi, Haut Atlas oriental, Maroc · Mounir Neddi, 2020 · Wikimedia Commons · CC BY-SA 4.0 ; Borne routière à Aïn Aouda, Maroc · Anass Sedrati, 2025 · Wikimedia Commons · CC BY-SA 4.0 ; Delle navigationi et viaggi, page de titre, Venise · Giovanni Battista Ramusio, 1554 · Wikimedia Commons · domaine public ; Stèle funéraire bilingue de Bordj Helal, musée du Louvre · Marie-Lan Nguyen, 2017 · Wikimedia Commons · CC BY 4.0 ; Parc national du Hoggar, Tamanrasset, Algérie · Abderrehmann H. Dribat, 2019 · Wikimedia Commons · CC BY-SA 4.0 ; Cour de la Grande Mosquée de Kairouan, Tunisie · Ed Kirby, 2010 · Wikimedia Commons · CC BY-SA 2.0 ; Souamaâ, Tizi Ouzou, Grande Kabylie, Algérie · Rabah Boualia, 2020 · Wikimedia Commons · CC BY-SA 4.0 ; Battage traditionnel dans le Haut Atlas, Maroc · Moroccan Sanchez, 2025 · Wikimedia Commons · CC BY-SA 4.0"
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7684690245262101782",
+        "publishedAt": "2026-09-12"
+      }
+    ]
+  },
+  "relatedArticleIds": [],
+  "publishedAt": "2026-09-30"
+}

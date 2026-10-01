@@ -1,7 +1,9 @@
 import { logger } from "@/lib/api/logger";
-import { readNameStanding } from "@/lib/patronymes/content";
+import {
+  isIndexableStanding,
+  readNameStanding,
+} from "@/lib/patronymes/content";
 import { walkRanges, type RangeWalk } from "@/lib/supabase/queries/walkRanges";
-import { isAuthoritativeSourceTier } from "@/types/sources";
 
 import { createServerClient } from "../../server";
 
@@ -149,29 +151,30 @@ async function idsInTable(
 }
 
 /**
- * A name fiche is submitted to search engines only when its best citation is
- * `referenced` or `official`. One resting solely on unverified sources — or
- * citing nothing readable — stays published and reachable, but the sitemap
- * stops vouching for it.
+ * A name fiche is submitted to search engines when its dossier cites at least
+ * one readable source that a person wrote, whatever that source's tier. The
+ * page is published and labelled either way, so the tier never decided whether
+ * the name deserved an index entry (DEC-055; it replaces DEC-050's threshold —
+ * audit finding T03). A dossier citing nothing readable, or only machine-written
+ * sources, stays published and reachable, but the sitemap does not submit it
+ * (`isIndexableStanding`, shared with the page's `robots` directive).
  *
- * The tier is decided here, in TypeScript, over the rows already fetched. As a
- * PostgREST filter it would be a JSON path over `content -> sources[]`, an
- * unindexed array walk expressed as an opaque query string — a sequential scan
- * that reads as line noise, for a table of ~800 rows.
+ * Decided here, in TypeScript, over the rows already fetched. As a PostgREST
+ * filter it would be a JSON path over `content -> sources[]`, an unindexed
+ * array walk expressed as an opaque query string — a sequential scan that reads
+ * as line noise, for a table of ~800 rows.
  *
  * Only `content -> sources` is fetched, never the whole dossier: the standing
  * reads nothing else, and the full `content` column was ~4.3 MB per sitemap
  * build — paid by every `next build` against a database metered by egress.
  */
-function nameCarriesIndexableStanding(row: SitemapRow): boolean {
-  const standing = readNameStanding({ sources: row.sources });
-  return standing !== null && isAuthoritativeSourceTier(standing.tier);
+function nameCitesAReadableSource(row: SitemapRow): boolean {
+  return isIndexableStanding(readNameStanding({ sources: row.sources }));
 }
 
 /**
  * Every people, country, language-family and language identifier, plus the
- * name identifiers whose dossier carries indexable standing, walked page by
- * page.
+ * name identifiers whose dossier cites a readable source, walked page by page.
  *
  * Never throws. `sitemap.xml` is served from a route that must answer, and a
  * database that is unreachable should cost the entity URLs — the static
@@ -195,7 +198,7 @@ export async function getSitemapEntityIds(): Promise<SitemapEntityIds> {
       idsInTable(supabase, TABLES.languages),
       idsInTable(supabase, TABLES.patronymes, {
         columns: "id, sources:content->sources",
-        keeps: nameCarriesIndexableStanding,
+        keeps: nameCitesAReadableSource,
       }),
     ]);
 

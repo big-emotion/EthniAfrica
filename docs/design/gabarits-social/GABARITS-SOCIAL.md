@@ -30,6 +30,12 @@ only for this series; the general machine-readable format matrix is unchanged.
 5. **Le crédit et la licence sont dans le cadre visible**, jamais sous l'interface
    de la plateforme.
 6. **Aucune image agrandie plus de ×2.** Au-delà, on change de gabarit (§7).
+7. **Every carousel card and every reel scene has a full-frame image background; there is
+   no dark, plain or solid-colour background mode** (operator ruling, 2026-09-30). The
+   photograph *is* the card: the engine refuses a card or a scene that has no image
+   instead of painting a ground, and no session may rely on a « fond sombre », « fond de
+   nuit » or « aplat » to carry a card. What sits over the photograph is a legibility
+   scrim (§4), the lightest one that holds the ink — a veil, never a background.
 
 ---
 
@@ -170,6 +176,41 @@ répond.
 question — pour le Ghana : « Le nom du Ghana actuel vient-il de l'ancien empire du
 Ghana ? ».
 
+### L'exception de la question ouverte (2026-09-28)
+
+**Une couverture peut être une seule question longue, quand l'opérateur l'a approuvée
+telle quelle.** Décidé le 2026-09-28 sur le carrousel « retour ou découverte » : la
+question complète, 29 mots — « Quand on est né hors d'Afrique et qu'on visite pour la
+première fois le pays d'origine de ses parents, est-ce qu'on y **retourne** ou est-ce
+qu'on le **découvre** ? » — a été préférée par l'opérateur à une version courte
+(« Un premier voyage peut-il être un retour ? »), parce que la version courte
+présupposait la réponse, alors que la question longue place les deux mots au même rang.
+
+Ce que la règle 2 et la règle 3 ci-dessus disent ne change pas pour les autres
+ouvertures. L'exception est **déclarée sur la carte** (`titre_forme: "question"`, voir
+§10) et ne se déduit jamais de la longueur du titre : sans elle, le plafond de huit
+mots et le refus de réduire le titre s'appliquent comme avant.
+
+- **Un rang à elle : « Titre de couverture — question »**, Anton 64 px (§3), le corps
+  de la punchline. À 120 px la question demande dix lignes et 1 296 px pour 345 px
+  disponibles ; à 64 px elle tient en cinq lignes et 346 px. Lue à 430 px de large, la
+  ligne mesure 25 px de corps à l'écran.
+- **Le plafond se mesure en lignes, jamais en mots** : cinq lignes composées au plus en
+  4:5, six en 9:16, dont la colonne perd 180 px à droite pour l'interface de la plateforme
+  (même question : 6 lignes à 69 px sur 855 px de large). Au-delà, le moteur nomme la
+  faute et ne rapetisse pas le titre en silence.
+- **En 9:16 la carte se déclare en A** (`disposition: "A"`). La règle de §6 renvoie la
+  question au cartouche, qui ne la tient pas (447 px pour 369 disponibles) ; la mise en A
+  la tient sans faute. C'est un écart à la règle, écrit sur la carte et consigné par le
+  rapport de rendu (« A imposée par la carte »), jamais une correction silencieuse du moteur.
+- **Deux mots en accent, pas un** (`titre_accents`) : les deux pôles de la question,
+  « retourne » et « découvre », prennent la même couleur d'accent, de sorte qu'aucun
+  ne passe avant l'autre. L'accent reste une seule couleur par carte.
+- **La question ne vaut que si la pièce y répond.** Comme toute accroche (« Ce qu'une
+  miniature ne fait pas »), elle est refermée dans le carrousel — ici par l'absence
+  volontaire de verdict : la pièce dit que les deux mots existent et qu'aucun ne doit
+  être imposé.
+
 > **Décision ouverte — à trancher par l'opérateur.** Cette accroche fait onze mots,
 > et la règle 3 en plafonne huit : le moteur la refuserait comme titre d'ouverture.
 > Trois issues, aucune n'est choisie ici : raccourcir l'accroche ; faire porter la
@@ -179,6 +220,12 @@ Ghana ? ».
 ---
 
 ## 2. Couleurs — jetons de la charte, jamais de littéral
+
+> **Un thème n'est pas un fond.** « Nuit » et « parchemin » nomment l'encre du texte et la
+> teinte du voile posé sur la photographie (clé `fond` du `cards.json`, gardée telle
+> quelle pour que les lots existants se relisent). Aucun des deux ne se voit là où il n'y a
+> pas de texte : derrière eux il y a toujours l'image plein cadre (§0.7). Dans les tables
+> ci-dessous, la ligne « Fond » est la teinte vers laquelle le voile se mélange.
 
 ### Thème nuit (défaut)
 
@@ -254,6 +301,7 @@ taille et de sa place, jamais d'un contraste raté.**
 | Rang « 01/05 » | Nunito | 22 | — | 700 | interlettre .14em | accent |
 | Chiffre / mot d'accent | Anton | 216 | 0,84 | — | — | accent |
 | Titre de couverture | Anton | 120–126 | 1,08 | — | maj. | encre 1 |
+| Titre de couverture — question | Anton | 64 | 1,08 | — | maj. | encre 1, deux mots en accent |
 | Titre de série | Anton | 96–118 | 1,08 | — | maj. | encre 1 |
 | Paire — terme | Anton | 56 | 1,0 | — | — | encre 1 / accent |
 | Paire — glose | Nunito | 28 | 1,35 | 400 | — | encre 2 |
@@ -280,6 +328,7 @@ légende avant, puis ne lui laissait que 5 px d'air après un premier
 correctif trop étroit — l'écart maintenant se compare à celui d'une
 production déjà publiée (« Sénoufo », pilier Mythe déconstruit).
 | Sous-titre narration | Nunito | 44–46 | 1,30 | 800 | — | encre 1 |
+| Sous-titre parlé (scènes, mot à mot) | Nunito | 72 | 1,20 | 800 | — | encre 1, un mot en accent |
 
 **Mesures maximales** (rag maîtrisé) : précision 800 px · punchline 880 px ·
 corps 740 px · crédit 760 px.
@@ -477,7 +526,7 @@ petit alpha qui porte chaque texte à son seuil :
 | --- | --- |
 | Cible | le seuil du bloc × **1,12** — la marge absorbe le bruit JPEG et l'anticrénelage |
 | Échantillon | le **92ᵉ centile** de la zone, jamais sa moyenne |
-| Plancher | **0,55** |
+| Plancher | **aucun** — le voile le plus léger qui tient l'encre, jamais un fond (2026-09-30 ; il était 0,55) |
 | Plafond | **0,95**, la valeur de la table |
 
 **L'échantillon est un centile haut et c'est le cœur de la règle.** Une légende qui
@@ -597,7 +646,7 @@ dans le calcul de contraste : c'est le voile qui doit atteindre 4,5:1.
 > bande et le pied épinglé, pour chaque disposition × format × forme de paire. Une
 > assertion sur le pied ne suffit pas : le bloc peut être correctement épinglé à 1266
 > tandis que ses enfants débordent à 1436 sans que rien ne le signale.
-- Aplat de fond en dessous, texte dedans : titre Anton 110–124 → précision 34–38 →
+- Texte sur le voile, l'image dessous : titre Anton 110–124 → précision 34–38 →
   filet supérieur 2 px `rgba(232,185,106,.35)` → corps 42–46 / 800.
 - Crédit + logo épinglés en bas.
 - **C absorbe la différence de hauteur entre 4:5 et 9:16** : l'ancre garde sa
@@ -720,6 +769,15 @@ ethniafrica.com · @ethniafrica
 - La licence de sortie est la **licence virale la plus contraignante du lot**.
   Un lot mêlant domaine public et CC BY-SA 2.0 se diffuse en CC BY-SA 2.0 ;
   un lot mêlant 3.0 et 4.0 se diffuse en 4.0.
+- Les licences reconnues, de la moins à la plus contraignante : domaine public, CC0,
+  **licence Pexels**, licence ouverte, CC BY 2.0 / 3.0 / 4.0, CC BY-SA 2.0 / 3.0 / 4.0.
+  La licence Pexels (pexels.com/license, lue le 2026-10-01) autorise l'usage libre et
+  la modification sans attribution ; elle interdit la revente de copies non modifiées,
+  l'usage d'une personne identifiable sous un jour négatif ou offensant, l'effet
+  d'une caution (personne ou marque), la redistribution sur une autre plateforme
+  d'images et l'usage comme marque. Elle n'est ni virale ni soumise à attribution :
+  elle se classe sous toute licence CC BY et ne devient jamais la licence de sortie
+  d'un lot qui en contient une. La chaîne exacte reconnue est « licence Pexels ».
 - **Aucune note interne sur l'image finie.** « licence à nommer », « série à confirmer »,
   « crédit à compléter » sont des messages à l'opérateur : ils bloquent la publication,
   ils ne s'impriment pas. Si la licence n'est pas connue, la carte ne sort pas.
@@ -916,6 +974,15 @@ contrôleur est `social/tools/narration/check-gabarit.mjs`, et le carrousel n'es
 pas concerné. Cette spécification ne recopie pas le gabarit : une deuxième copie
 est celle qui dérive.
 
+**Exception explicite (2026-09-30).** Ce gabarit est la structure spécialisée de
+l'inventaire des noms, pas l'obligation universelle du reel : un brief qui porte une
+section `narrativeDesign` (conception guidée par la recherche, choix de l'opérateur et
+plan détaillé montré avant toute rédaction) suit son plan choisi et se vérifie par
+`check-gabarit.mjs --brief`. Le titre, la question d'ouverture et la clôture unique
+restent ceux de la série ; la liste de scènes, le nombre de noms et le plafond de deux
+explications ne s'y appliquent pas. Voir
+[NARRATIVE-DESIGN.md](NARRATIVE-DESIGN.md).
+
 ### Le carrousel a un seul gabarit
 
 Décidé par l'opérateur le 2026-09-21. **Un carrousel « nom de X » suit le même ordre pour
@@ -946,6 +1013,17 @@ fichier.
 
 **Un sujet sans mythe sourcé n'a pas de carrousel.** N'en invente pas un pour remplir
 l'accroche : une question dont la pièce ne paie pas la réponse est un appât.
+
+**Exception nommée : le carrousel « retour ou découverte » (opérateur, 2026-09-28).**
+Ce carrousel de six cartes, approuvé mot pour mot, n'a ni mythe attesté ni clôture unique : sa
+dernière carte est « À vous la parole », une question posée à la personne qui a vécu le
+voyage. L'opérateur a tranché que **cette carte tient lieu de clôture pour ce carrousel** et
+qu'aucune septième carte ne s'ajoute. L'audit du message note donc le critère 8 sans objet
+pour lui, en citant cette décision.
+
+Elle vaut pour ce carrousel et pour lui seul. Elle n'ouvre pas de règle : un autre carrousel
+sans clôture unique attend sa propre décision. La question de la couverture reste refermée
+dans la pièce (carte 4), comme l'exige toute accroche.
 
 ### La carte d'ouverture
 
@@ -1062,6 +1140,23 @@ dit que « ethniafrica.com » a laissé le lecteur sans la raison d'y aller. Et
   pas de contour noir sur une police d'affichage.
 - Bande réservée entre la colonne de contenu et le pied. Le pied remonte d'autant.
 - Le mot pivot de la phrase peut passer en accent dans la plaque : un seul par carte.
+
+**Scene videos (2026-09-29, operator direction).** The rules above describe the legacy image-deck plate and stay in
+force for it. A scene video (`social/harness/SCENES.md`, *Captions: word by word*) supersedes the fixed plate:
+
+- **Words arrive with the voice.** Each word fades in at the start the aligner gave it; a group of at most two
+  lines keeps its shape while its words appear, and leaves a quarter of a second after its last word. Changing the
+  colour of a phrase that is already whole on screen is not a reveal.
+- **Type.** Role « Sous-titre parlé » of §3: Nunito 800 at 72 px × the reel factor, ink 1, soft drop shadow, no plate.
+  The plate's 44–52 px did not read on a phone held at arm's length; the reference the operator supplied sets
+  two short lines of three or four words that span about three quarters of the frame's width.
+- **Emphasis.** One word per group at most, authored on the scene (`emphasis`), in the accent colour. Nothing is
+  accented by default.
+- **Placement is no longer a fixed slot for scene videos.** The default is still the low band (baseline y 1520), but a
+  map's highlighted country, a projected feature and its label, a protected region or a scene's own text moves the
+  captions of that scene up to the lowest clear place, once for the whole scene. A scene with no clear place is
+  refused. The §9 bis rule that *no position changes because another block appears* is kept where it matters:
+  nothing changes inside a scene.
 
 ---
 
@@ -1343,6 +1438,14 @@ prepared and its rights limits are in [LECTURES-AFRIQUE](LECTURES-AFRIQUE.md);
 `ethni_carrousel2.py --brief lectures-afrique` returns the guide and the empty
 scaffold.
 
+**Optional reading profiles:** `profil: "reading-story"`, `"reading-comparison"` or
+`"reading-listening"` describe a variable-length carousel whose cards each name a
+`composition` (cover, portrait, document, timeline, comparison, map, listening,
+credits), in the standard layouts. The compositions, the subject-zone and crop
+checks, the phone-readability criteria and the six family examples are in
+[CAROUSEL-COMPOSITIONS](CAROUSEL-COMPOSITIONS.md);
+`ethni_carrousel2.py --brief reading-story` returns the guide and the scaffold.
+
 ```json
 {
   "campagne": "mercator-taille",
@@ -1415,6 +1518,18 @@ toute scène vidéo.
 sont écrits dans `structure`. **Champ facultatif, jamais bloquant** : sans lui le titre
 reste en encre 1, ce qui est correct, seulement moins parlant. Il se remplit deck par
 deck au moment de rendre, comme `image.identite`.
+
+`titre_forme` — **facultatif, carte d'ouverture seulement** — vaut `"question"` quand le
+titre est une seule question longue approuvée telle quelle (§1 ter, « L'exception de la
+question ouverte »). Il change le rang du titre (§3, « Titre de couverture — question »)
+et remplace le plafond de huit mots par un plafond de lignes composées (cinq en 4:5, six en
+9:16). Absent, il
+laisse l'ouverture sous la règle ordinaire.
+
+`titre_accents` — **facultatif** — liste des mots ou membres de phrase du titre qui
+prennent l'accent, écrits en minuscules avec leurs accents comme `titre_camps` :
+`["retourne", "découvre"]`. Un mot absent du titre ne bloque rien. Le moteur ne les déduit
+jamais du titre.
 
 `coupe` force les retours à la ligne d'un titre. `null` laisse le moteur couper sur la
 mesure. Ne l'employer que là où la coupe **porte du sens** — une énumération dont les

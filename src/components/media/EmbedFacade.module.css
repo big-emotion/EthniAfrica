@@ -170,3 +170,26 @@
 .facade[data-layout="fill"] .notice {
   max-width: 16rem;
 }
+
+/* Inline mode sits on the parchment of a document (an article page), so the
+   chrome outside the stage takes the document's inks. The night inks above
+   are the fill mode's, drawn over a picture; on parchment they vanish. The
+   stage itself stays dark — it is the player's screen. */
+.facade[data-layout="inline"] .linkOut {
+  color: var(--accent-ink);
+}
+
+.facade[data-layout="inline"] .notice {
+  color: var(--afh-text-soft);
+}
+
+.facade[data-layout="inline"] .close {
+  border-color: var(--afh-border);
+  color: var(--afh-text);
+}
+
+.facade[data-layout="inline"] .linkOut:focus-visible,
+.facade[data-layout="inline"] .close:focus-visible,
+.facade[data-layout="inline"] .settingsLink:focus-visible {
+  outline-color: var(--accent-ink);
+}

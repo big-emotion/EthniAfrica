@@ -1,0 +1,199 @@
+{
+  "id": "liberia-nom-latin-libre",
+  "status": "published",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Ce que ce nom veut dire",
+  "fr": {
+    "slug": "liberia-nom-latin-libre",
+    "title": "D'où vient le nom Liberia ?",
+    "excerpt": "Le nom Liberia est lié à l'American Colonization Society, une organisation privée américaine. On en attribue souvent l'invention à Robert Goodloe Harper, en 1824. Mais le mot était imprimé dès 1822, et la personne qui l'a formé n'est pas identifiée.",
+    "sections": [
+      {
+        "heading": "Un nom venu d'une organisation privée",
+        "paragraphs": [
+          "Le nom Liberia n'a été donné ni par un roi ni par un État. En 1816, un groupe d'Américains blancs fonde l'American Colonization Society, une organisation privée. Son projet : installer en Afrique des Noirs libres des États-Unis, dont le nombre croissant était présenté comme un « problème ».",
+          "Le nom est formé sur le latin liber, « libre », en référence à l'installation d'Afro-Américains affranchis sur cette côte."
+        ],
+        "sourceRefs": ["s1", "s5"]
+      },
+      {
+        "heading": "1821 : d'abord, la terre",
+        "paragraphs": [
+          "Avant le nom, il a fallu la terre. En 1821, un dirigeant de la côte cède à la société une bande de terre, là où Monrovia sera bâtie. Le service historique du Département d'État américain écrit que l'officier de marine qui menait l'opération, le lieutenant Robert Stockton, l'y a contraint.",
+          "Ce cap avait déjà un nom. Notre fiche indique qu'on l'appelait Ducor, du nom que lui donnaient les Dei et les Bassa."
+        ],
+        "sourceRefs": ["s1", "s5"]
+      },
+      {
+        "heading": "1822 ou 1824 ? Le nom est plus ancien qu'on ne le dit",
+        "paragraphs": [
+          "La version la plus répandue attribue le nom à Robert Goodloe Harper, un membre de la société, qui l'aurait proposé à l'assemblée annuelle de février 1824. La page du Département d'État date elle aussi de 1824 le moment où l'établissement est nommé Liberia.",
+          "L'historien Fred van der Kraaij, dans un livre publié en 2026 par l'African Studies Centre de Leyde, montre que le mot existait déjà en 1822 : il circulait dans la presse américaine et dans les publications de la société, plus d'un an avant l'assemblée. Il a cherché qui l'avait écrit le premier, et conclut qu'aucun auteur identifié ne convient.",
+          "Les deux dates coexistent donc : 1824 dans la version officielle, 1822 dans cette étude récente. Qui a formé le mot n'est pas établi."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      },
+      {
+        "heading": "Monrovia et Harper : des noms sans doute",
+        "paragraphs": [
+          "Pour la capitale, il n'y a pas de doute : Monrovia porte le nom de James Monroe, président des États-Unis, qui avait obtenu davantage d'argent public pour le projet.",
+          "Sur la côte, une ville porte le nom de Harper. Les archives d'État du Maryland, qui retracent sa carrière, indiquent que la ville libérienne de Harper porte son nom. Elles ne lui attribuent pas le nom du pays.",
+          "Au recensement libérien de 2008, les chefs-lieux s'appellent Monrovia, Buchanan, Harper, Greenville, Robertsport : une côte en grande partie nommée depuis l'autre rive de l'Atlantique."
+        ],
+        "sourceRefs": ["s1", "s4", "s3"]
+      },
+      {
+        "heading": "Avant et à côté de ces noms",
+        "paragraphs": [
+          "Les peuples de cette côte avaient leurs propres noms, pour eux-mêmes et pour leurs lieux. Les Vai, par exemple, y ont mis au point leur propre écriture, l'un des rares systèmes d'écriture conçus en Afrique.",
+          "En 1847, le Liberia déclare son indépendance à l'égard de la société, et le nom devient celui d'un État souverain."
+        ],
+        "sourceRefs": ["s5", "s1"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "Le nom Liberia vient du projet d'une organisation privée américaine. On l'attribue d'habitude à Robert Goodloe Harper en 1824, mais le mot circulait dès 1822, et la personne qui l'a formé n'est pas identifiée. La capitale, elle, porte sans ambiguïté le nom d'un président américain.",
+          "Connaissez-vous d'autres noms, plus anciens, pour des lieux de cette côte ? Dites-nous qui les emploie et d'où vous les tenez."
+        ],
+        "sourceRefs": ["s1", "s2", "s4"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "U.S. Department of State, Office of the Historian, « Founding of Liberia, 1847 »",
+      "tier": "needs_review",
+      "url": "https://history.state.gov/milestones/1830-1860/liberia",
+      "kind": "web"
+    },
+    {
+      "id": "s2",
+      "title": "F. van der Kraaij, Liberia in the 19th Century: From American Colony to African Republic, African Studies Centre Leiden, 2026",
+      "tier": "needs_review",
+      "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
+      "kind": "book",
+      "notes": "Le livre relève des emplois du nom Liberia dès 1822 et discute qui l'a formé."
+    },
+    {
+      "id": "s3",
+      "title": "Republic of Liberia, 2008 Population and Housing Census — Highlights",
+      "tier": "needs_review",
+      "url": "https://www.paris21.org/sites/default/files/LIBERIA_census.pdf",
+      "kind": "archive"
+    },
+    {
+      "id": "s4",
+      "title": "Maryland State Archives, notice biographique de Robert Goodloe Harper",
+      "url": "https://msa.maryland.gov/megafile/msa/speccol/sc3500/sc3520/002000/002031/html/02031bio.html",
+      "tier": "needs_review",
+      "kind": "archive"
+    },
+    {
+      "id": "s5",
+      "title": "Fiche pays du Libéria, EthniAfrica",
+      "tier": "needs_review",
+      "notes": "Notre fiche pays : la formation du nom sur le latin liber, l'ancien nom Ducor du cap de Monrovia, l'écriture vai et l'indépendance de 1847."
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "qui-a-nomme-le-liberia-carrousel"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "liberia-nom-latin-libre/qui-a-nomme-le-liberia-carrousel/slide-01-db5a4b763ad9.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "bande verticale d'une carte gravée ancienne, où se lisent en capitales espacées « VEY COUNTRY », « GOLAH COUNTRY » et « CONDOE PEOPLE », au-dessus d'un semis de noms de villages et d'un littoral pointillé",
+            "text": "Libéria : un nom donné par une société privée.\n\nNommer un peuple aussi facilement qu'un pays."
+          },
+          {
+            "src": "liberia-nom-latin-libre/qui-a-nomme-le-liberia-carrousel/slide-02-ea3617b03ecc.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "cartouche calligraphié d'une carte gravée, « MAP of the WEST COAST OF AFRICA from SIERRA LEONE to CAPE PALMAS including the Colony of LIBERIA », au-dessus d'une échelle de milles",
+            "text": "1816 — une organisation privée se fonde à Washington.\n\nL'American Colonization Society se donne pour projet d'installer sur la côte ouest-africaine des Afro-Américains affranchis.\n\nU.S. Department of State, Office of the Historian"
+          },
+          {
+            "src": "liberia-nom-latin-libre/qui-a-nomme-le-liberia-carrousel/slide-03-c50f377b19ea.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "gravure panoramique en noir et blanc d'un cap boisé vu depuis la mer, deux drapeaux plantés sur la hauteur, des pirogues sur l'eau et un trois-mâts à droite, légende « View of the Colonial Settlement at Cape Montserado »",
+            "text": "1821 — la terre change de mains.\n\nUn dirigeant de cette côte cède la bande où Monrovia sera bâtie. Le service historique du Département d'État américain écrit qu'un lieutenant de la marine l'y a contraint.\n\nU.S. Department of State, Office of the Historian"
+          },
+          {
+            "src": "liberia-nom-latin-libre/qui-a-nomme-le-liberia-carrousel/slide-04-2d8491c309e0.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "bloc de texte gravé intitulé « REMARKS », deux colonnes de notes en italique décrivant l'étendue de la colonie et les peuples de la côte",
+            "text": "1822 — le nom est déjà imprimé.\n\nLe mot « Liberia » circule dans la presse américaine et dans les publications de la société.\n\nF. van der Kraaij, African Studies Centre Leiden, 2026"
+          },
+          {
+            "src": "liberia-nom-latin-libre/qui-a-nomme-le-liberia-carrousel/slide-05-315396cf6ef5.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "portrait gravé en médaillon ovale, homme de profil droit, cheveux poudrés bouclés, col montant sombre et cravate blanche nouée",
+            "text": "Février 1824 — un membre « propose » le nom.\n\nL'assemblée annuelle de la société entend Robert Goodloe Harper proposer « Liberia ». Le mot a plus d'un an.\n\nF. van der Kraaij, African Studies Centre Leiden, 2026"
+          },
+          {
+            "src": "liberia-nom-latin-libre/qui-a-nomme-le-liberia-carrousel/slide-06-cdb36310a7c7.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "bande verticale d'une carte gravée ancienne, réseau de rivières et de noms de villages, avec un encart rectangulaire intitulé « MAP OF A JOURNEY TO MUSARDU »",
+            "text": "Aucun auteur identifié ne convient.\n\nL'historien qui a retrouvé ces emplois antérieurs a cherché qui avait écrit le nom le premier. Il conclut qu'aucun candidat ne tient.\n\nF. van der Kraaij, African Studies Centre Leiden, 2026"
+          },
+          {
+            "src": "liberia-nom-latin-libre/qui-a-nomme-le-liberia-carrousel/slide-07-603e66baf3dc.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "portrait peint à l'huile, homme âgé de trois quarts, cheveux gris en désordre, redingote noire, cravate blanche nouée sur une chemise à jabot, fond brumeux",
+            "text": "La capitale, elle, ne fait aucun doute.\n\nMonrovia, pour James Monroe, président des États-Unis, qui avait obtenu de l'argent public pour le projet.\n\nU.S. Department of State, Office of the Historian"
+          },
+          {
+            "src": "liberia-nom-latin-libre/qui-a-nomme-le-liberia-carrousel/slide-08-c94792b94283.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "photographie en couleurs d'un phare blanc sur une pointe herbeuse dominant l'océan, une maison basse à son pied, un grand cocotier à droite, soleil bas dans les nuages",
+            "text": "Une ville porte le nom de celui qu'on crédite.\n\nHarper, chef-lieu du comté de Maryland. Les archives d'État du Maryland lui reconnaissent la ville. Pas le pays.\n\nMaryland State Archives"
+          },
+          {
+            "src": "liberia-nom-latin-libre/qui-a-nomme-le-liberia-carrousel/slide-09-50081f615811.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte gravée et coloriée à la main, littoral en bande jaune, dont la légende imprimée distingue « Colonial Towns » et « Native Towns » ; on y lit Monrovia, Edina, Greenville, Harper, et « PENNSYLVANIA COLONY », « MISSISSIPPI COLONY », « MARYLAND COLONY » à côté de « VEYS », « DEYS », « BASSAS » et « KROOS or KROOMEN »",
+            "text": "Monrovia, Buchanan, Harper, Greenville, Robertsport.\n\nCinq chefs-lieux du recensement libérien. Une côte nommée depuis l'autre rive de l'Atlantique. Sur cette même côte, les Vai ont mis au point leur propre écriture, l'un des rares systèmes conçus en Afrique.\n\nRecensement national du Libéria, 2008"
+          },
+          {
+            "src": "liberia-nom-latin-libre/qui-a-nomme-le-liberia-carrousel/slide-10-1fafef82cb03.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "bande verticale d'une carte gravée ancienne portant en capitales « MARYLAND IN LIBERIA », « WEBO COUNTRY », « HUREBO COUNTRY » et « GREBO COUNTRY », le long d'un littoral hachuré",
+            "text": "Ces peuples n'ont pas été rassemblés.\n\nC'est la carte qui a été dessinée autour d'eux.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "Map of Liberia by the American Colonization Society, 1870, don de la société à la Library of Congress · Library of Congress, via Wikimedia Commons · domaine public ; Map of the West Coast of Africa, from Sierra Leone to Cape Palmas, including the Colony of Liberia, d'après les relevés de Jehudi Ashmun, publiée par A. Finley, Philadelphie, 1830 · Internet Archive Book Images, via Wikimedia Commons · domaine public ; View of the Colonial Settlement at Cape Montserado, gravure publiée par l'American Colonization Society, 1825 · Wikimedia Commons · domaine public ; Robert Goodloe Harper, portrait de profil par Charles Balthazar Julien Fevret de Saint-Mémin, 1799 · Library of Congress, via Wikimedia Commons · domaine public ; James Monroe, huile sur toile de Gilbert Stuart, vers 1817 · National Gallery of Art, Washington, via Wikimedia Commons · CC0 ; Le phare de Cape Palmas sur la presqu'île, ville de Harper, comté de Maryland, photographie de Fred van der Kraaij, 1979 · African Studies Centre Leiden, via Wikimedia Commons · CC BY-SA 4.0 ; Map of Liberia n° 17, Samuel Augustus Mitchell, 1839 · Wikimedia Commons · domaine public"
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7686223381418544406",
+        "publishedAt": "2026-09-16"
+      }
+    ]
+  },
+  "relatedArticleIds": [],
+  "publishedAt": "2026-09-30"
+}

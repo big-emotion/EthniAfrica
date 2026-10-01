@@ -50,6 +50,30 @@ describe("violatesReaderRegister — research waves", () => {
   });
 });
 
+describe("violatesReaderRegister — a numbered wave that carries its dates", () => {
+  // A numbered wave followed by its own period is the subject's chronology
+  // (the Bantu expansion), not a research batch; a bare number is the batch.
+  // @req REQ-133
+  it("keeps « Vague 1 (3000-2000 av. J.-C.) » and still refuses a bare number", () => {
+    expect(
+      violatesReaderRegister(
+        "Expansion en vagues : Vague 1 (3000-2000 av. J.-C.) : vers le bassin du Congo."
+      )
+    ).toBe(false);
+    expect(
+      violatesReaderRegister(
+        "Wave 2 (1000 BCE-500 CE) reaches the Great Lakes."
+      )
+    ).toBe(false);
+    expect(violatesReaderRegister("Retirée de la fiche vague 1 du lot.")).toBe(
+      true
+    );
+    expect(
+      violatesReaderRegister("Reclassée après la vague 1 (héritée).")
+    ).toBe(true);
+  });
+});
+
 describe("violatesReaderRegister — the project called an atlas", () => {
   // @req REQ-143
   it("refuses a sentence in which the project calls itself an atlas", () => {

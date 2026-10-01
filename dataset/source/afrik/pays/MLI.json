@@ -4,7 +4,7 @@
   "nameEn": "Mali",
   "nameOfficial": "République du Mali",
   "summary": "Le Mali porte le nom de l'empire qui domina l'Afrique de l'Ouest du XIIIe au XVIe siècle. Ghana, Mali, Songhaï : trois empires s'y sont succédé, et Djenné comme Tombouctou en gardent l'architecture. Bambara, Peuls, Dogons, Touaregs, Soninké et Songhaï y perpétuent l'épopée de Soundiata et l'art des griots.",
-  "etymology": "Selon Djibril Tamsir Niane, la plus ancienne mention est celle du géographe al-Bakrī au XIe siècle, qui écrit Malel ; le nom est aussi attesté dans des récits arabes du XIVe siècle. Le nom de l’État actuel renvoie à l’empire médiéval, mais son sens premier n’est pas établi par les sources citées. Djibril Tamsir Niane (1985, p. 153, note 28) propose que Mali provienne d’une transformation de Manden chez les Fulɓe, aussi appelés Peuls en français, et donne Mellit comme variante berbère du même nom. Le dictionnaire bambara Bamadaba donne au mot màli le sens d’hippopotame ; ce sens lexical ne démontre pas que le nom du pays en dérive. L’interprétation « lieu où vit le roi » figure notamment dans un document pédagogique de Core Knowledge, sans démonstration linguistique dans le passage concerné. Ces rapprochements doivent être distingués d’une traduction certaine du nom.",
+  "etymology": "La plus ancienne mention est celle du géographe al-Bakrī au XIe siècle, qui écrit Malel, selon Djibril Tamsir Niane ; le nom est aussi attesté dans des récits arabes du XIVe siècle. Le nom de l’État actuel renvoie à l’empire médiéval, mais son sens premier n’est pas établi par les sources citées. Djibril Tamsir Niane (1985, p. 153, note 28) propose que Mali provienne d’une transformation de Manden chez les Fulɓe, aussi appelés Peuls en français, et donne Mellit comme variante berbère du même nom. Le dictionnaire bambara Bamadaba donne au mot màli le sens d’hippopotame ; ce sens lexical ne démontre pas que le nom du pays en dérive. L’interprétation « lieu où vit le roi » figure notamment dans un document pédagogique de Core Knowledge, sans démonstration linguistique dans le passage concerné. Ces rapprochements doivent être distingués d’une traduction certaine du nom.",
   "nameOriginActor": "L’Assemblée de la République soudanaise adopte le nom de République du Mali le 22 septembre 1960. Cette décision moderne ne permet pas d’identifier qui a créé le nom médiéval.",
   "content": {
     "historicalNames": {
@@ -206,10 +206,26 @@
         "mainRegion": "Sud du Mali",
         "languages": ["Mamara / Minyanka (myk)"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Minyanka est l'appellation publique consacrée. Selon Colleyn et Jonckers, les intéressés se désignent comme Bamana dans le contexte étudié ; cet usage ne doit pas être confondu automatiquement avec le peuple Bambara ou Bamana."
+        "appellationRemarks": "Minyanka est l'appellation publique consacrée. Les intéressés se désignent comme Bamana dans le contexte étudié, selon Colleyn et Jonckers ; cet usage ne doit pas être confondu automatiquement avec le peuple Bambara ou Bamana."
       }
     ],
     "culture": {
+      "mainLanguages": [
+        { "name": "Bambara", "isoCode": "bam", "isPrimary": true },
+        { "name": "Français", "isoCode": "fra" },
+        { "name": "Bobo", "isoCode": "bbo" },
+        { "name": "Bozo", "isoCode": "boz" },
+        { "name": "Dogon" },
+        { "name": "Peul (fula)", "isoCode": "ful" },
+        { "name": "Arabe hassaniya", "isoCode": "mey" },
+        { "name": "Kassonké", "isoCode": "kao" },
+        { "name": "Maninka" },
+        { "name": "Minyanka", "isoCode": "myk" },
+        { "name": "Sénoufo" },
+        { "name": "Songhay", "isoCode": "ses" },
+        { "name": "Soninké", "isoCode": "snk" },
+        { "name": "Tamasheq", "isoCode": "tmh" }
+      ],
       "culturalTraditions": "Musique traditionnelle (griot, kora), danse traditionnelle, poésie orale (épopée de Soundiata), artisanat (vannerie, poterie, tissage, cuir), architecture traditionnelle (mosquées de Djenné, Tombouctou), art rupestre dogon",
       "dominantReligions": "Islam (sunnite majoritaire), croyances traditionnelles (syncrétisme), christianisme (minorité)",
       "lifestyles": "Vie principalement rurale, agriculture (mil, sorgho, riz, coton), élevage (bovins, caprins, dromadaires), pêche (fleuve Niger), commerce transsaharien, nomadisme pastoral (Touaregs, Peuls)",
@@ -280,6 +296,12 @@
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official"
+      },
+      {
+        "title": "Toponymic Factfile: Mali — Permanent Committee on Geographical Names (Royaume-Uni)",
+        "url": "https://assets.publishing.service.gov.uk/media/67eaae97070b3238cf7f27b8/Mali_toponymic_factfile.pdf",
+        "tier": "official",
+        "notes": "Fiche officielle britannique de toponymie, édition 2025 : les treize langues nationales reconnues par la Constitution, le bambara compris par environ 80 % de la population, le français devenu langue de travail avec la révision constitutionnelle de 2023."
       },
       {
         "title": "Fauvelle-Aymar, François-Xavier (2012) – Niani redux : mise au point sur la ville éponyme de l'empire du Mali, P@lethnology 4",

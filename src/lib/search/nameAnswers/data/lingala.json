@@ -1,0 +1,90 @@
+{
+  "term": { "fr": "Lingala", "en": "Lingala" },
+  "aliases": [],
+  "subjects": [
+    { "type": "people", "id": "PPL_LINGALA" },
+    { "type": "language", "id": "lin" }
+  ],
+  "paragraphs": {
+    "fr": [
+      "L'origine du nom Lingala n'est pas établie. Une lecture dit que des Européens ont d'abord appelé « Bangala » le parler du poste de Bangala Station (1884-1885), puis que des missionnaires de Scheut l'ont rebaptisé « Lingala » en 1901-1902, date où le nom apparaît par écrit. Une autre y voit un nom d'origine bobangi : Lingála et Mangála seraient des formes abrégées d'expressions qui signifient « la langue des marchés ». Une troisième le fait dériver de Bangala, en usage vers 1895.",
+      "Le nom et la langue sont deux questions. On rapporte que la langue vient du bobangi, langue de commerce des riverains du fleuve Congo, que des Européens arrivés en 1881-1882 auraient appris et fortement simplifié."
+    ],
+    "en": [
+      "The origin of the name Lingala is not settled. One reading says Europeans first called the speech of the Bangala Station post (1884-1885) \"Bangala\", and that Scheut missionaries then renamed it \"Lingala\" in 1901-1902, when the name first appears in writing. Another sees a name of Bobangi origin: Lingála and Mangála would be shortened forms of expressions meaning \"the language of the markets\". A third derives it from Bangala, in use around 1895.",
+      "The name and the language are two separate questions. The language is reported to come from Bobangi, the trade language of the Congo river peoples, which Europeans arriving in 1881-1882 are said to have learned and greatly simplified."
+    ]
+  },
+  "uncertainty": {
+    "fr": "Ces lectures s'appuient sur des sources différentes et ne sont pas départagées ; elles divergent notamment sur l'ancienneté de Lingala et de Mangála comme noms de la langue.",
+    "en": "These readings rest on different sources and are not ruled between; they differ notably on how old Lingala and Mangála are as names of the language."
+  },
+  "evidence": [
+    {
+      "statement": {
+        "fr": "Le nom Bangala a été donné par des Européens aux habitants de la région de Mankanza, puis à leur poste et à leur parler ; des missionnaires de Scheut l'ont rebaptisé Lingala en 1901-1902.",
+        "en": "The name Bangala was given by Europeans to the inhabitants of the Mankanza area, then to their post and their speech; Scheut missionaries renamed it Lingala in 1901-1902."
+      },
+      "sources": [
+        {
+          "title": "Meeuwis, Michael, « Lingala », APiCS Online (Atlas of Pidgin and Creole Language Structures Online), chapitre de synthèse",
+          "author": "Michael Meeuwis",
+          "url": "https://apics-online.info/surveys/60",
+          "tier": "referenced"
+        },
+        {
+          "title": "Meeuwis, Michael, « The linguistic features of Bangala before Lingala: The pidginization of Bobangi in the 1880s and 1890s », Afrikanistik-Aegyptologie Online, 2019 (publié en 2020)",
+          "author": "Michael Meeuwis",
+          "year": 2019,
+          "url": "https://backoffice.biblio.ugent.be/download/8644523/8645617",
+          "tier": "referenced"
+        }
+      ]
+    },
+    {
+      "statement": {
+        "fr": "Lingála et Mangála seraient des formes abrégées d'expressions bobangi signifiant « la langue des marchés ».",
+        "en": "Lingála and Mangála would be shortened forms of Bobangi expressions meaning \"the language of the markets\"."
+      },
+      "sources": [
+        {
+          "title": "Mimpongo, Mpoke, « L'origine et la signification du glossonyme lingala », lingbuzz, 2024",
+          "author": "Mpoke Mimpongo",
+          "year": 2024,
+          "url": "https://ling.auf.net/lingbuzz/008154",
+          "tier": "referenced"
+        }
+      ]
+    },
+    {
+      "statement": {
+        "fr": "Lingala dériverait de Bangala, nom employé pour la première fois en 1877, et serait entré dans l'usage vers 1895.",
+        "en": "Lingala would derive from Bangala, a name first used in 1877, and would have entered use around 1895."
+      },
+      "sources": [
+        {
+          "title": "Mbulamoko Nzenge Movoambe, « État des recherches sur le lingala comme groupe linguistique autonome », Annales Aequatoria, 12, 1991, p. 377-406",
+          "author": "Mbulamoko Nzenge Movoambe",
+          "year": 1991,
+          "page": "377-406",
+          "url": "https://www.aequatoria.be/04common/020publications_pdf/Annales%20Aequatoria%201991.pdf",
+          "tier": "referenced"
+        }
+      ]
+    },
+    {
+      "statement": {
+        "fr": "La langue est issue du bobangi, langue de commerce des riverains, que des Européens arrivés en 1881-1882 ont appris de façon imparfaite et fortement simplifié.",
+        "en": "The language comes from Bobangi, the riverside trade language, which Europeans arriving in 1881-1882 learned imperfectly and greatly simplified."
+      },
+      "sources": [
+        {
+          "title": "Meeuwis, Michael, « Lingala », APiCS Online (Atlas of Pidgin and Creole Language Structures Online), chapitre de synthèse",
+          "author": "Michael Meeuwis",
+          "url": "https://apics-online.info/surveys/60",
+          "tier": "referenced"
+        }
+      ]
+    }
+  ]
+}

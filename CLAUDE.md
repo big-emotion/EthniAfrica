@@ -328,6 +328,41 @@ memoires-sonores` in the private library only, without a fabricated site record.
 The website's remit is unchanged; broader display names and bios for
 these two accounts are approved in principle, with exact copy still pending.
 
+**Social scope and the editorial contract (operator direction, 2026-09-27).** The
+website's remit is unchanged and stays name-centred; the social workshop may also
+tell sourced stories about Africa, its diasporas and their relationships, without a
+site fiche, a site path or an attested myth existing for the piece. What that
+rests on is defined once, in
+[`docs/design/gabarits-social/EDITORIAL-CONTRACT.md`](docs/design/gabarits-social/EDITORIAL-CONTRACT.md),
+and enforced by `social/tools/contract/`. In short:
+
+- **Six narrative families** (name investigation, historical portrait, circulation and
+  connections, guided listening, comparison, material biography) are narrative
+  structures, chosen separately from the visual profile and the output format. An
+  unknown family fails; a missing one is never guessed.
+- **A subject has angles, an angle has editions, an edition has publication
+  occurrences.** "Published" is a property of one occurrence on one network, never a
+  state that closes a subject. Adapting, deepening and republishing are legitimate,
+  distinct acts; no companion format is owed.
+- **A production date is optional.** Ready is not scheduled; no weekday is mandatory
+  and no piece is cross-posted by obligation.
+- **Reviews follow the claims and media actually present.** Provenance, honest
+  uncertainty, real asset attribution, intelligibility and non-essentialising claims
+  apply to every piece; the name, myth, geographic and musical reviews apply when a
+  claim or a medium requires them, and report `not-applicable` with a reason
+  otherwise. An approval is bound to the inputs it read and goes stale only when one
+  of them changes.
+- The name-origin series keeps its fixed checks (`series: name-origin`), and the
+  approved Mémoires sonores presentation is untouched. The site's production ledger
+  under `docs/productions/` stays the name series' ledger; a social-only piece is
+  never filed there.
+
+**Every carousel card and every reel scene has a full-frame image background; there is no
+dark, plain or solid-colour background mode** (operator ruling, 2026-09-30). The engine refuses
+a card or a scene with no image rather than painting a ground; `nuit` and `parchemin` are the
+ink and the scrim tint laid over the photograph, never a background. Do not re-introduce a
+« fond sombre », a panel layout or a flat plate to carry text.
+
 The publishing chain runs in one order, and **all ten of its skills live here**,
 under their `ethniafrica-` names. They left for the private workspace on
 2026-09-10, on the rule that a public repository carries no production skills, and
@@ -385,6 +420,11 @@ reseaux-help — à tout moment : où j'en suis, doublons, prochain geste
 - **Where am I — `/ethniafrica-reseaux-help`.** Reads the pipeline state and
   `social/tools/etat-pipeline/bilan-sujets.mjs`, flags a validated post whose
   subject is already published in the same format, and names one next move.
+- **A third-party video, cut into a reel — `/ethniafrica-clip-reel`.** Off the
+  chain: a video and a prompt in, a captioned 9:16 reel, its cover and one
+  description per network out, drawn by `social/harness/ethni_clip_reel.py` from a
+  plan file. It publishes nothing, registers nothing and never clears the source's
+  rights — it reminds.
 - **Anecdotes and proverbs are coming** as content types. Neither is on the site
   nor has a template yet; the chain notes such a subject as an idea until one
   exists.
@@ -538,9 +578,11 @@ This supersedes the earlier Tier 1/2/3 policy, under which Tier 3 was forbidden 
 claim was deleted. It also settles the aggregator question (Joshua Project, 101lasttribes,
 peoplegroups): they are cited, at `unverified`.
 
-Wikipedia is not a source. A primary source _discovered through_ Wikipedia is cited at its own tier,
-by its own URL, and its `notes` field may record which Wikipedia language versions were crossed. No
-gate requires that path, and a Wikipedia URL cited directly is reported, not refused.
+Wikipedia is read first and cited for what it is (rule owned by
+`docs/editorial/reader-facing-register.md`, "Using sources"). A primary source _discovered through_
+Wikipedia is cited at its own tier, by its own URL, and its `notes` field may record which Wikipedia
+language versions were crossed. No gate requires that path, and a Wikipedia URL cited directly is
+reported, not refused.
 
 **Wikipedia is a first-pass verification tool, and this applies to every action, not only citing a
 claim** — curation, production, an audit, a rewrite. Decided 2026-09-14, after a video script asserted
@@ -607,15 +649,20 @@ DEC-052 makes a narrow exception for people names. `oral_tradition` and
 `ethniafrica_synthesis` both retain `tier: "unverified"`, but their source-quality
 weights are fixed by provenance at 0.6 and 0.3 respectively. These values **replace**
 the tier weight; they are not coefficients. An oral source qualifies a people name
-only through an approved, rights-cleared narrative linked to that people, and one
-such narrative is sufficient. The synthesis may qualify a people name on its own.
-Narratives with the same opaque `carrier_ref` count once in the source-count part
-of confidence. Patronyme and other name gates remain unchanged. This is a scoped
-exception to REQ-095 for the provenance of a people's name, not a change to how
-oral accounts support other assertions.
+through a rights-cleared narrative linked to that people that has not been
+rejected — review is not a precondition, consent is (DEC-055 §6, migration `091`;
+DEC-052's "approved" is superseded). One such narrative is sufficient. The
+synthesis may qualify a people name on its own. Confidence counts source IDs, not
+carriers: `carrier_ref` no longer merges narratives, so ten narratives from one
+carrier are ten sources. That counts quantity, not independent corroboration — see
+the guide's "Using sources" and the remediation ledger (T02). Patronyme and other
+name gates remain unchanged. This is a scoped exception to REQ-095 for the
+provenance of a people's name, not a change to how oral accounts support other
+assertions.
 
-A fiche sourced only at `unverified` is published and visibly marked low-confidence through
-`ConfidenceChip`. That is the intended outcome, not a defect to fix.
+A fiche sourced only at `unverified` is published, and its sources are visibly labelled
+(the **Non vérifiée** badge, the reference count in `ConfidenceChip`, which prints no
+percentage and no « vérifié »). That is the intended outcome, not a defect to fix.
 
 #### Assertion tracks certainty, in the sentence itself
 
@@ -628,11 +675,11 @@ not support.
 
 The register has three steps, and the right one is chosen by what the sources actually do:
 
-| What the sources do                             | How the sentence reads                                                                |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------- |
-| They agree, at `official` or `referenced`       | « X est Y. »                                                                          |
-| They diverge, or a single tier carries it alone | « Selon X, … », « une lecture y voit… », « la piste la plus citée est… »              |
-| They do not settle it                           | « L'origine de X n'est pas établie. » — then the paths, each attributed, none crowned |
+| What the sources do                                            | How the sentence reads                                                                |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Evidence establishes this specific claim within its scope      | « X est Y. » — with the relevant time, place and limits                               |
+| The claim is an interpretation, a reported account or disputed | « Une explication relie X à Y. » — then its provenance; never invent a consensus      |
+| They do not settle it                                          | « L'origine de X n'est pas établie. » — then the paths, each attributed, none crowned |
 
 Where several explanations compete, **the piece names more than one or names none**.
 Picking one and stating it flat is the failure this rule exists to stop: it was measured
@@ -659,9 +706,10 @@ that is largely African and reads that choice immediately. The discipline that f
 - **Where a local account exists, it is named alongside the external one**, at its own
   tier, in the same breath — not relegated to a footnote or dropped for being weaker.
   Excluding it would be the colonial filter the Source Tier Policy exists to refuse.
-- **Scientific and linguistic method stays the frame for verifying sources, never the
-  arbiter of whose account deserves to be heard.** It answers « is this attested, by whom,
-  when » — it does not answer « which people's explanation of their own name counts ».
+- **Scientific and linguistic tools stay useful for checking sources; they are neither the
+  only framework nor the arbiter of whose account deserves to be heard.** They answer « is
+  this attested, by whom, when » — they do not answer « which people's explanation of their
+  own name counts ». The working method is in the guide (`docs/editorial/reader-facing-register.md`).
 - **Silence about the imbalance is itself a choice.** Where the corpus can only offer
   outside sources on a name, the piece may say so.
 
@@ -707,13 +755,59 @@ A character ratio is a hint, not a measurement — the archive is markdown, the 
 
 ### Reader-facing register
 
-Three fiche fields are published to the reader **verbatim**, with no sanitising layer: `gaps[].reason`, `sources[].title` and `sources[].notes` (nested under `names[].sources[]` on name fiches). Everything else, `_meta.directives` included, is authoring metadata nothing renders.
+Three fiche fields are published to the reader **verbatim**, with no sanitising layer: `gaps[].reason`, `sources[].title` and `sources[].notes` (nested under `names[].sources[]` on name fiches). Authoring metadata such as `_meta.directives` stays internal; other reader-facing fiche prose also follows the register below.
 
 So those three may carry no repository path, no JSON field path, no raw `PPL_`/`FLG_`/`PAT_` identifier, and none of the pipeline's own vocabulary — _file d'attente_, _la passe_, _protocole de recherche_, _revue claim-level_, _tier hérité_. That last class is the one that got through: it carries no path and no identifier, so it reads as ordinary French, and 774 name fiches told their visitors which queue they came from and which research protocol they awaited. **The reader is owed the silence itself, never the reason the workshop has not filled it yet.**
 
 `checkEditorialRules.ts` enforces this as `reader-facing-register` at error severity; the banned vocabulary is one exported constant, `INTERNAL_REGISTER_PATTERNS`. Doctrine, rewrite table and a paste-able prompt block for curation sessions: `docs/editorial/reader-facing-register.md`.
 
 **No reader-facing text calls the project an "atlas"** (operator ruling, 2026-09-22). An object that "documents", "holds" or "does not say" is replaced by a project that speaks: « nous », « notre projet », EthniAfrica; the section a reader browses is « Parcourir ». URLs (`/atlas/…`), identifiers, comments, the titles of real works (UNESCO's _Atlas des langues africaines_…) and the Atlas mountains are not self-references and stay. `src/lib/__tests__/noAtlasInReaderCopy.test.ts` scans the site's string literals and JSX text for it.
+
+**EthniAfrica's voice is that of a popular educator** (operator clarification,
+2026-09-30). The operator draws on scientific, linguistic and historical methods
+to research and explain; neither the operator nor an agent claims those professional
+qualifications on their behalf. Specialists may contribute. The primary intended
+public is the African diaspora, with readers on the continent and other interested
+readers welcome. Explain in ordinary language, without assuming academic training,
+a shared mother tongue or a single relationship to Africa. Use
+`docs/editorial/audience-personas.md` for reader needs and their evidence status.
+
+**Peoples speak first, and the source comes after** (2026-09-28, clarified
+2026-09-30). Narration, cards, captions and site copy explain the subject directly.
+An author, study or book must not lead as a borrowed authority: avoid « Selon
+Delafosse… » and « Une étude montre que… ». Put the precise provenance after the
+claim, in an adjacent reference, a source card or the source line. Keep each
+account traceable; a bibliography alone must not blur which source supports which
+claim. A scholar who is a historical actor, a book being recommended, or a speaker
+whose words are quoted may be named when they are the actual subject.
+
+**Moving the reference never increases certainty.** Keep a disputed origin an
+explanation, a testimony an account, and a local usage local. A publication year
+is not an event date; a past tense does not qualify a contested assertion.
+« Une explication relie ce nom à… » preserves uncertainty. « Ce nom vient de… »
+does not. Attribute an account to a community only when the source establishes
+that provenance; an outside author's theory must not become what a whole people
+supposedly believes. Never imply that we interviewed people or did fieldwork
+unless that actually happened.
+
+**Oral knowledge is a source in its own right.** It may be the most relevant
+source for a lived practice, a pronunciation or a transmitted account. Academic
+validation is not an admission requirement. Identify its carrier or public role,
+place, language, collection context and date when known, and preserve permission
+and privacy. Distinguish the existence and meaning of an account from proof of
+every historical event it describes. Written and external sources receive the
+same attention to context and limits. Several sources are shown when they were
+actually consulted; neither plurality nor agreement is invented. The existing
+tiers and provenance fields remain; no badge settles an interpretation.
+
+Practical instructions and paired rewriting examples live in
+`docs/editorial/reader-facing-register.md`. They apply to content written or
+edited from now on; published material is not silently rewritten. Sources stay
+fully identifiable in the dedicated references. The operator's 2026-09-21 ruling
+still permits « endonyme » / « exonyme », explained in the opening sentence of a
+name-origin reel; it does not require these terms where ordinary words suffice.
+
+Enforcement: `social/tools/narration/check-narration.mjs` refuses the shapes above (`attribution-en-tete`, a lexical check: a surname alone passes), `ethniafrica-structure` runs it before any text is shown, and `ethniafrica-message` grades what it cannot see (criterion 10).
 
 ### Bilingual content (`npm run check:translation-parity`, reported — never blocking)
 
@@ -776,7 +870,7 @@ Ferry (`ferry.config.yaml`) drives agent automation off Jira status transitions 
 
 ### Skills and agents — one source, two runtimes
 
-Every skill lives once, under `.claude/skills/<name>/`. Codex reads the gitignored mirror `.agents/skills/`, which `npm run skills:link` fills with one symlink per skill — enumerated from the directory, so a new skill is linked and checked without editing a list. `check:skill-parity` holds each skill's resources to what its `SKILL.md` references; a resource of _another_ skill is written as its full `.claude/skills/...` path, or the checker looks for it in the wrong place. A sub-agent is declared twice because the two runtimes read different formats: `.claude/agents/<name>.md` and `.codex/agents/<name>.toml` carry the same instruction text.
+Every skill lives once, under `.claude/skills/<name>/`. Codex reads the gitignored mirror `.agents/skills/`, which `npm run skills:link` fills with one symlink per skill — enumerated from the directory, so a new skill is linked and checked without editing a list. A real directory where a link belongs (an old hand-made copy) blocks it; `npm run skills:link -- --reconcile` replaces it only if every file equals the canonical one today or a version it once had in git history, and lists anything else untouched. A mirror that the canonical path is itself a link to — a skill installed by a tool, whose real files live in `.agents/skills` — is never replaced, since that would delete the only copy. `check:skill-parity` run in a checkout reads its live `.agents/` copies, so it is also the read-only preflight for that checkout — CI cannot certify another one. `check:skill-parity` holds each skill's resources to what its `SKILL.md` references; a resource of _another_ skill is written as its full `.claude/skills/...` path, or the checker looks for it in the wrong place. A sub-agent is declared twice because the two runtimes read different formats: `.claude/agents/<name>.md` and `.codex/agents/<name>.toml` carry the same instruction text.
 
 ### Test placement
 

@@ -219,7 +219,7 @@ export const NOMMER_BIBLIOGRAPHY: Record<SourceKey, DossierSource> = {
     standing: "referenced",
     sourceKind: "academic",
     notes:
-      "L'ouvrage où « bantou » est forgé comme étiquette de classification, à partir du zoulou abantu. Domaine public, numérisé par l'Internet Archive et cité ici par cette numérisation plutôt que par une notice. Ce qui reste ouvert est la page exacte où ba-ntu est construit : le chapitre n'en dépend pas, mais une vérification la donnerait.",
+      "L'ouvrage de 1862 qui répand « bantou » comme étiquette de classification, à partir du zoulou abantu ; le mot est plus ancien, écrit en 1857 et imprimé en 1858 d'après les historiens de la linguistique. Domaine public, numérisé par l'Internet Archive et cité ici par cette numérisation plutôt que par une notice. Ce qui reste ouvert est la page exacte où ba-ntu est construit : le chapitre n'en dépend pas, mais une vérification la donnerait.",
     discoveredVia: [],
   },
   "britannica-bleek": {
@@ -245,7 +245,7 @@ export const NOMMER_BIBLIOGRAPHY: Record<SourceKey, DossierSource> = {
     standing: "referenced",
     sourceKind: "academic",
     notes:
-      "Atteste la forge de 1862 et le devenir politique du mot en Afrique du Sud. Ne suffit pas pour le Bantu Education Act de 1953, qu'il faut citer sur son propre texte.",
+      "Atteste la forge du mot (que d'autres sources placent dès 1857-1858, avant le livre de 1862) et le devenir politique du mot en Afrique du Sud. Ne suffit pas pour le Bantu Education Act de 1953, qu'il faut citer sur son propre texte.",
     discoveredVia: [],
   },
   "bantu-class-prefixes": {

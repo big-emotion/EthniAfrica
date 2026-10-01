@@ -37,7 +37,7 @@ export const ACCESS_MODES: AccessMode[] = ["atlas", "dossiers", "jeux"];
 // @req REQ-114
 export const ACCESS_MODE_LABELS = {
   atlas: "Parcourir",
-  dossiers: "Les dossiers",
+  dossiers: "Articles",
   jeux: "Jouer",
 } satisfies Record<AccessMode, string>;
 
@@ -140,7 +140,7 @@ export const MODULE_GROUP_ORDER: readonly ModuleGroupId[] = [
  * it drawing a different navigation from its two neighbours.
  */
 // @req REQ-120
-export const RUBRIC_FILED_AXES: readonly AccessMode[] = ["dossiers"];
+export const RUBRIC_FILED_AXES: readonly AccessMode[] = [];
 
 /**
  * How many readings a rubric lists in the tray before it starts counting.
@@ -473,6 +473,18 @@ export const MODULE_DEFINITIONS: HubModuleDefinition[] = [
   // the repository, not a table, so there is nothing for the availability
   // probe to count and "static" is the honest answer.
   {
+    // The Articles listing, first in the axis: the reader's direct way to the
+    // publications the site develops in text. It shares the /dossiers address
+    // with the old hub so no URL moves.
+    id: "articles",
+    group: "dossiers-noms",
+    name: "Tous les articles",
+    accessMode: "dossiers",
+    page: "dossiersHub",
+    availability: "static",
+    editorialReadiness: "ready",
+  },
+  {
     id: "nommer",
     group: "dossiers-noms",
     name: "Qui a donné ce nom ?",
@@ -481,8 +493,10 @@ export const MODULE_DEFINITIONS: HubModuleDefinition[] = [
     availability: "static",
     // Withdrawn with the rest of the axis — see THE DOSSIERS FREEZE above.
     // The five chapters are written and cited; what is being reworked is the
-    // shape of the reading, not its sourcing.
+    // shape of the reading, not its sourcing. Out of the Articles menu; the
+    // route stays withheld, not revived.
     editorialReadiness: "draft",
+    unlisted: true,
   },
   {
     id: "anecdotes",
@@ -524,6 +538,9 @@ export const MODULE_DEFINITIONS: HubModuleDefinition[] = [
     // going to hold this back — and six pins do not answer "d'où
     // viennent-ils". Readiness is the only field that can say so.
     editorialReadiness: "draft",
+    // Withdrawn from the Articles menu with the rest of the old dossier
+    // surfaces; the route and the hero preview stay.
+    unlisted: true,
     dataSource: "migration_events",
     heroable: "migration-paths",
   },
@@ -542,6 +559,7 @@ export const MODULE_DEFINITIONS: HubModuleDefinition[] = [
     // before this field the page was structurally incapable of being marked
     // in preparation, whatever state its sections were in.
     editorialReadiness: "draft",
+    unlisted: true,
   },
   // Jouer: the quiz keeps its own route; every other entry is a game the
   // hub reaches by slug. comparer and liens keep the ids they shipped with

@@ -141,8 +141,8 @@ Traps already met, so the next run does not rediscover them:
 **Signals of understanding first, views as context.** In order: comments (count,
 and what they say — understood, misunderstood, contested, a question), shares,
 saves, stayed-to-watch or 3-second views, profile visits, link taps, and tagged
-site visits per `utm_campaign`. A view says the feed showed the post; it says
-nothing about whether the message arrived.
+site visits per `utm_campaign`. A view follows the platform’s counting rules; it does not establish
+whether the message was understood.
 
 **Record each post's publication date next to its figures.** Posts of different
 ages never compare as equals; a one-day-old post at 9 views is not a failure.
@@ -154,6 +154,24 @@ posts, formats and networks.
 This step measures. Whether a production carries the message is scored by
 `/ethniafrica-message`; put the two side by side in the report, never merge
 them into one number.
+
+## Editorial audience evidence (2026-09-30)
+
+Read `docs/audience/editorial-measurement.md` when measurement informs voice or
+personas. Separate intended audience, observed behaviour, hypotheses and unknowns.
+Record follower versus viewer denominators for demographics; country does not
+establish diaspora membership, ancestry, profession or expertise. Review mobile,
+then tablet, then desktop. A device gap is a prompt to investigate, not proof of
+a design defect from aggregate statistics alone.
+
+Collect a bounded sample of public comment text, record its selection and count,
+and distinguish misunderstanding, disagreement, questions and contributed accounts.
+Paraphrase without personal identifiers. Never treat shares, saves or positive
+comments as proof of comprehension or truth. Keep platform metrics separate;
+`stayed-to-watch` is not automatically three-second retention. Record exact returned
+site dates and event availability; absent rows are not automatically zero.
+Connect the report to `docs/editorial/audience-personas.md` without changing the
+personas' hypothetical status merely because reach grows.
 
 ## Step 2 — Inventory the site's own URLs
 
@@ -249,9 +267,9 @@ there are none.
 
 ## Devices
 
-Mobile vs desktop, each with its own bounce and duration. Flag any gap wider
-than the site average — the site is mobile-first by charter, so a mobile
-session that underperforms desktop is a contract violation, not a curiosity.
+Mobile vs desktop, each with its own bounce and duration. Report mobile first, then tablet, then desktop. A gap in bounce or duration
+suggests an investigation; different audiences and small samples prevent it from
+proving a design defect.
 
 ## Page verdicts
 

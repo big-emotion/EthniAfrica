@@ -47,13 +47,17 @@ const en = {
   nisbaSubtypeLabel: "Nisba type",
   nisbaSubtypeLabels: PATRONYME_VOCABULARY.en.nisbaSubtype,
   originTitle: "Origin",
-  originOralTraditionsLabel: "Griot oral tradition",
+  originOralTraditionsLabel: "Oral tradition",
   originWrittenChroniclesLabel: "Written chronicle",
   originLinguisticReconstructionsLabel: "Linguistic reconstruction",
   originClaimStatusLabels: PATRONYME_VOCABULARY.en.originClaimStatus,
-  griotOriginNote:
-    "This origin is transmitted by griot oral tradition. It is presented as transcribed, with its source and, where documented, the griot who transmitted it.",
-  griotAttributionPrefix: "Transmitted by",
+  oralOriginNote:
+    "This origin is transmitted orally. It is presented as its carrier gave it, with its source and, where documented, who transmitted it and how it was collected.",
+  oralAttributionPrefix: "Transmitted by",
+  oralCollectedByPrefix: "Collected by",
+  oralCollectedByIntermediary: "Collected through an intermediary.",
+  oralCollectedDirectly: "Collected directly from the carrier.",
+  oralCarrierNotStated: "Carrier not stated.",
   sourcesTitle: "Sources",
   alliancesTitle: "Alliances",
   alliancesNote:
@@ -153,19 +157,23 @@ const fr: PatronymesCopy = {
   nisbaSubtypeLabels: PATRONYME_VOCABULARY.fr.nisbaSubtype,
   originTitle: "Origine",
   // Three parallel lists, not one classification: the corpus can hold a
-  // griot's account and a written chronicle for the same name without
-  // either overruling the other.
-  originOralTraditionsLabel: "Tradition orale griotique",
+  // account carried orally and a written chronicle for the same name without
+  // either overruling the other. The strand is not called « griotique »: a
+  // griot is one possible carrier, named as the record states it.
+  originOralTraditionsLabel: "Tradition orale",
   originWrittenChroniclesLabel: "Chronique écrite",
   originLinguisticReconstructionsLabel: "Reconstruction linguistique",
   originClaimStatusLabels: PATRONYME_VOCABULARY.fr.originClaimStatus,
-  // Attributed to the transcription and its griot rather than stated as
-  // a bare fact: an oral chain of transmission is the source, and a
-  // page that dropped that attribution would present a griot's telling
-  // as if it were the corpus's own claim.
-  griotOriginNote:
-    "Cette origine est transmise par tradition orale griotique. Elle est présentée telle que transcrite, avec sa source et, lorsqu'il est documenté, le griot qui l'a transmise.",
-  griotAttributionPrefix: "Transmis par",
+  // Attributed to its carrier rather than stated as a bare fact: an oral
+  // chain of transmission is the source, and a page that dropped that
+  // attribution would present one carrier's telling as our own claim.
+  oralOriginNote:
+    "Cette origine est transmise oralement. Elle est présentée telle que son transmetteur l'a donnée, avec sa source et, lorsqu'ils sont documentés, celui qui l'a transmise et la manière dont elle a été recueillie.",
+  oralAttributionPrefix: "Transmis par",
+  oralCollectedByPrefix: "Recueilli par",
+  oralCollectedByIntermediary: "Recueilli par un intermédiaire.",
+  oralCollectedDirectly: "Recueilli directement auprès du transmetteur.",
+  oralCarrierNotStated: "Transmetteur non précisé.",
   sourcesTitle: "Sources",
   alliancesTitle: "Alliances",
   alliancesNote:

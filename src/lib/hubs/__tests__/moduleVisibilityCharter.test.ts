@@ -101,8 +101,12 @@ describe("module visibility charter", () => {
    */
   // @req REQ-114
   it("keeps an unlisted module routed, on its axis and in the site plan", () => {
+    // A ready module withdrawn from the menu stays in the site plan. A draft
+    // withdrawn from the Articles menu (nommer, frise, regards-colonisation)
+    // is withheld from the plan too, exactly as a draft always was.
     const unlisted = MODULE_DEFINITIONS.filter(
-      (definition) => definition.unlisted
+      (definition) =>
+        definition.unlisted && definition.editorialReadiness === "ready"
     );
 
     expect(
@@ -190,7 +194,11 @@ describe("module visibility charter", () => {
         ? `${getAxisHubRoute("fr", "jeux")}/${definition.gameSlug}`
         : getModuleHref(definition, "fr");
       expect(href, `${definition.id} is draft and unroutable`).toBeTruthy();
-      expect(getNavModules(definition.accessMode)).toContainEqual(definition);
+      // A draft is listed as Bientôt unless it was withdrawn from the menu
+      // outright, as the old dossier surfaces were from the Articles axis.
+      if (!definition.unlisted) {
+        expect(getNavModules(definition.accessMode)).toContainEqual(definition);
+      }
     }
   });
 

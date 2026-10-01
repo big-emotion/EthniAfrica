@@ -54,6 +54,15 @@
           "sourceRefs": ["diouf-1998"]
         }
       ]
+    },
+    {
+      "spelling": "Dukure",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
     }
   ],
   "transmissionMode": "patrilineal",
@@ -102,7 +111,8 @@
       "sourceRefs": [
         "senat-doucoure",
         "forebears-doucoure-accent",
-        "forebears-doucoure-plain"
+        "forebears-doucoure-plain",
+        "bamadaba-jamuw"
       ]
     },
     {
@@ -220,7 +230,7 @@
     },
     {
       "fieldPath": "countries",
-      "reason": "Ce patronyme est également mentionné pour la Guinée et la Gambie, mais aucune source chiffrée ou documentée propre au nom n'a été trouvée pour ces deux pays."
+      "reason": "Ce patronyme est également mentionné pour la Guinée et la Gambie, mais aucune source chiffrée ou documentée propre au nom n'a pu être consultée pour ces deux pays : l'agrégateur qui les chiffre n'a pas pu être relu directement."
     }
   ]
 }

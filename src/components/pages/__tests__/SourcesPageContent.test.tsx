@@ -33,7 +33,8 @@ describe("SourcesPageContent (REQ-091)", () => {
       })
     ).toBeInTheDocument();
     expect(screen.getByText("North Africa")).toBeInTheDocument();
-    expect(screen.getByText(/Wikipedia is not a source/)).toBeInTheDocument();
+    expect(screen.getByText(/Wikipedia is read first/)).toBeInTheDocument();
+    expect(screen.queryByText(/is not a source/)).not.toBeInTheDocument();
     expect(screen.queryByText("Afrique du Nord")).not.toBeInTheDocument();
   });
 
@@ -122,12 +123,42 @@ describe("SourcesPageContent — the editorial bibliographies", () => {
   });
 
   // @req REQ-091
-  it("says that Wikipedia is not a source, where a reader would cite one", () => {
+  it("says what Wikipedia is used for and what « awaiting review » means, without hiding either", () => {
     render(<SourcesPageContent />);
 
-    expect(
-      screen.getByText(/Wikipédia n'est pas une source/)
-    ).toBeInTheDocument();
+    const note = screen.getByText(/Nous lisons Wikipédia d'abord/);
+    expect(note).toBeInTheDocument();
+    expect(note.textContent).not.toMatch(/n'est pas une source/);
+    // « En attente d'examen » is a weight not yet assessed, never a claim that
+    // tracing the source is unfinished.
+    expect(note.textContent).toMatch(/pas encore évalué/);
+    expect(note.textContent).not.toMatch(/remontée/);
+  });
+
+  // A count of references is a count; several works can repeat one account. And
+  // the page lists institutions and works, so it says where an account passed
+  // on orally is cited instead of pretending it is absent or listed here
+  // (audit findings T02, C24).
+  // @req REQ-091
+  it("says a count is not proof and where an orally transmitted account is cited", () => {
+    render(<SourcesPageContent />);
+
+    const note = screen.getByText(/Nous lisons Wikipédia d'abord/);
+    expect(note.textContent).toMatch(
+      /nombre de références n'est pas une preuve/
+    );
+    expect(note.textContent).toMatch(/récit transmis oralement/);
+    expect(note.textContent).toMatch(/fiche concernée/);
+  });
+
+  // @req REQ-141
+  it("says the same in English", () => {
+    render(<SourcesPageContent language="en" />);
+
+    const note = screen.getByText(/Wikipedia is read first/);
+    expect(note.textContent).toMatch(/count of references is not proof/);
+    expect(note.textContent).toMatch(/passed on orally/);
+    expect(note.textContent).toMatch(/entry concerned/);
   });
 
   // Deriving rather than restating is what keeps the page from drifting from

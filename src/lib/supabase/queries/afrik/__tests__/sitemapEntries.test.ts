@@ -227,11 +227,13 @@ describe("sitemap entity ids", () => {
     });
   });
 
-  // A name resting only on unverified sources is published and readable — it
-  // is submitted to search engines that it is not, since an index entry is a
-  // claim of standing the dossier cannot back.
+  // A name is submitted when its dossier cites something a reader can read,
+  // whatever the standing of the source: the page is published and labelled
+  // either way, and the tier was never a claim about the name (DEC-055, audit
+  // finding T03). Ordinary search relevance is unaffected. What stays out is a
+  // dossier that cites nothing readable, tested just below.
   // @req REQ-147
-  it("submits only the names whose best source tier is referenced or official", async () => {
+  it("submits every name with a human-written readable source whatever its tier, and leaves out AI-only dossiers", async () => {
     const client = supabaseServing({
       afrik_peoples: [],
       afrik_countries: [],
@@ -241,6 +243,31 @@ describe("sitemap entity ids", () => {
         nameCiting("PAT_OFFICIAL", "official"),
         nameCiting("PAT_REFERENCED", "referenced"),
         nameCiting("PAT_UNVERIFIED", "unverified"),
+        {
+          id: "PAT_AI_ONLY",
+          content: {
+            sources: [
+              {
+                title: "Relevé de couverture",
+                tier: "unverified",
+                source_kind: "ai_generated",
+              },
+            ],
+          },
+        },
+        {
+          id: "PAT_AI_AND_HUMAN",
+          content: {
+            sources: [
+              {
+                title: "Relevé de couverture",
+                tier: "unverified",
+                source_kind: "ai_generated",
+              },
+              { title: "Un blog de généalogie", tier: "unverified" },
+            ],
+          },
+        },
       ],
     });
     (createServerClient as unknown as ReturnType<typeof vi.fn>).mockReturnValue(
@@ -249,7 +276,12 @@ describe("sitemap entity ids", () => {
 
     const entries = await getSitemapEntityIds();
 
-    expect(entries.patronymes).toEqual(["PAT_OFFICIAL", "PAT_REFERENCED"]);
+    expect(entries.patronymes).toEqual([
+      "PAT_OFFICIAL",
+      "PAT_REFERENCED",
+      "PAT_UNVERIFIED",
+      "PAT_AI_AND_HUMAN",
+    ]);
   });
 
   // @req REQ-147

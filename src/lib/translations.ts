@@ -2,6 +2,7 @@ import { adminCopy } from "@/lib/i18n/copy/admin";
 import { classificationCopy } from "@/lib/i18n/copy/classification";
 import { atlasCopy } from "@/lib/i18n/copy/atlas";
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
+import { articlesCopy } from "@/lib/i18n/copy/articles";
 import { colonizationCopy } from "@/lib/i18n/copy/colonization";
 import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import { chromeCopy } from "@/lib/i18n/copy/chrome";
@@ -64,6 +65,7 @@ const en = {
   admin: adminCopy.en,
   server: serverCopy.en,
   anecdotes: anecdotesCopy.en,
+  articles: articlesCopy.en,
   proverbs: proverbsCopy.en,
   gallery: galleryCopy.en,
   generatedImages: generatedImagesCopy.en,
@@ -120,6 +122,7 @@ const fr: UiDictionary = {
   admin: adminCopy.fr,
   server: serverCopy.fr,
   anecdotes: anecdotesCopy.fr,
+  articles: articlesCopy.fr,
   proverbs: proverbsCopy.fr,
   gallery: galleryCopy.fr,
   generatedImages: generatedImagesCopy.fr,

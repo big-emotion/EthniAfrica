@@ -16,8 +16,7 @@ from ethni_scene_pipeline import execute
 from ethni_scene_plan import validate_plan
 from ethni_scene_render import SceneRenderer
 
-SPOKEN = [{"debut": 0.0, "fin": 2.0, "texte": "A first spoken sentence."},
-          {"debut": 2.2, "fin": 4.0, "texte": "A last spoken sentence."}]
+SPOKEN = scenes.spoken("A first spoken sentence.", 0.0, 2.0) + scenes.spoken("A last spoken sentence.", 2.2, 4.0)
 
 
 class OutroCueTests(unittest.TestCase):

@@ -21,7 +21,7 @@ describe("dossier theme trails", () => {
 
     expect(trail).toEqual([
       { label: "Accueil", href: "/fr" },
-      { label: "Les dossiers", href: getLocalizedRoute("fr", "dossiersHub") },
+      { label: "Articles", href: getLocalizedRoute("fr", "dossiersHub") },
       { label: "Anecdotes" },
     ]);
     expect(trail.some((crumb) => crumb.href?.includes("/themes/"))).toBe(false);
@@ -43,7 +43,7 @@ describe("dossier theme trails", () => {
   it("returns from a theme to the dossier directory without a redundant level", () => {
     expect(deriveTrail(getDossierThemeHref("noms"))).toEqual([
       { label: "Accueil", href: "/fr" },
-      { label: "Les dossiers", href: getLocalizedRoute("fr", "dossiersHub") },
+      { label: "Articles", href: getLocalizedRoute("fr", "dossiersHub") },
       { label: "Noms et identités" },
     ]);
   });

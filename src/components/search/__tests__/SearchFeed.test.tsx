@@ -69,8 +69,8 @@ describe("SearchFeed", () => {
     );
 
     expect(blockIds(container)).toEqual([
-      "lenses",
       "verdict",
+      "lenses",
       "shorts",
       "owed",
       "further",
@@ -80,6 +80,39 @@ describe("SearchFeed", () => {
     );
     expect(
       screen.getByText("Nous ne connaissons pas ce nom.")
+    ).toBeInTheDocument();
+  });
+
+  // « pigmée » reaches no fiche, yet the reviewed answer for « Pygmée » covers
+  // it. The confession is a claim about the corpus; it cannot stand above an
+  // answer the corpus holds.
+  // @req REQ-178
+  it("answers from a reviewed answer instead of confessing when no fiche matched", () => {
+    render(
+      <SearchFeed
+        query="pigmée"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+        nameAnswers={[
+          {
+            term: "Pygmée",
+            subjects: [{ type: "people", id: "PPL_TWA" }],
+            paragraphs: [
+              "« Pygmée » n'est pas un nom que ces peuples se donnent.",
+            ],
+            sources: [],
+          },
+        ]}
+      />
+    );
+
+    expect(screen.queryByText("Nous ne connaissons pas ce nom.")).toBeNull();
+    expect(
+      screen.getByText(/n'est pas un nom que ces peuples se donnent/)
     ).toBeInTheDocument();
   });
 
@@ -245,9 +278,9 @@ describe("SearchFeed", () => {
     await userEvent.click(screen.getByRole("button", { name: /Shorts 6/ }));
 
     expect(blockIds(container)).toEqual([
-      "lenses",
       "verdict",
       "appellations",
+      "lenses",
       "shorts",
     ]);
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
@@ -657,7 +690,7 @@ describe("SearchFeed", () => {
   });
 
   // @req REQ-180
-  it("declares dating silences per undated subject", () => {
+  it("declares no dating silence for a subject merely lacking structured dates", () => {
     const dated = namedResult({
       type: "people",
       id: "PPL_DATED",
@@ -700,9 +733,8 @@ describe("SearchFeed", () => {
       />
     );
 
-    const silences = container.querySelector('[data-feed-part="silences"]');
-    expect(silences).toHaveTextContent("Bassa Nge");
-    expect(silences).not.toHaveTextContent("Bassa —");
+    // An empty date field describes what was projected, not what is known.
+    expect(container.querySelector('[data-feed-part="silences"]')).toBeNull();
   });
 
   // @req REQ-180
@@ -729,7 +761,7 @@ describe("SearchFeed", () => {
 
     expect(
       container.querySelectorAll(
-        '[data-testid="appellations-mobile"] [data-appellation][data-subject-id]'
+        '[data-testid="appellations-list"] [data-appellation][data-subject-id]'
       )
     ).toHaveLength(2);
   });

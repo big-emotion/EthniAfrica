@@ -9,7 +9,7 @@ import test_ethni_scenes as fixtures
 from ethni_scene_plan import validate_plan
 from ethni_scene_render import SceneRenderer
 
-SPOKEN = [{"debut": 0.0, "fin": 4.0, "texte": "A spoken sentence for the caption box."}]
+SPOKEN = fixtures.spoken("A spoken sentence for the caption box.", 0.0, 4.0)
 
 
 class FullbleedTests(unittest.TestCase):
@@ -24,7 +24,7 @@ class FullbleedTests(unittest.TestCase):
     def evidence(self):
         return copy.deepcopy(self.plan["scenes"][0]["evidence"])
 
-    def test_the_layout_is_named_and_only_two_are_known(self):
+    def test_the_layout_is_named_and_only_one_is_known(self):
         plan = self.fullbleed()
         validate_plan(plan, self.root, 10)
         plan["layout"] = "sideways"
@@ -36,7 +36,7 @@ class FullbleedTests(unittest.TestCase):
         plan["scenes"][1]["type"] = "text"
         plan["scenes"][1]["text"] = "Words"
         del plan["scenes"][1]["image"]
-        with self.assertRaisesRegex(ValueError, "fullbleed"):
+        with self.assertRaisesRegex(ValueError, "full-frame"):
             validate_plan(plan, self.root, 10)
 
     def test_images_zoom_at_most_a_few_percent_like_the_legacy_film(self):
@@ -132,7 +132,7 @@ class FullbleedTests(unittest.TestCase):
         self.assertNotEqual(first.crop((0, 150, 1080, 620)).tobytes(), second.crop((0, 150, 1080, 620)).tobytes())
         plan["scenes"][1]["timeline"]["context"] = [{"event_year": 1220, "lane": "world", "label": "X",
                                                      "detail": "Y", "at": 2, "evidence": evidence}]
-        with self.assertRaisesRegex(ValueError, "fullbleed"):
+        with self.assertRaisesRegex(ValueError, "unknown fields"):
             validate_plan(plan, self.root, 10)
 
 
@@ -337,6 +337,8 @@ class FullbleedExtensionTests(unittest.TestCase):
         plan["scenes"][1] = {"id": "t", "type": "timeline", "start": 5, "end": 10, "title": "Time", "purpose": "x",
                              "evidence": evidence,
                              "timeline": {"layout": "focus", "scale": "ordinal",
+                                          "background": {"asset": "map", "layer": "national", "borders": True,
+                                                         "camera": [{"at": 0, "bounds": [-20, -5, 20, 25]}]},
                                           "events": [first, {"year": 1220, "label": "War", "at": 3, "evidence": evidence}]}}
         return plan
 

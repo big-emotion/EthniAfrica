@@ -52,6 +52,18 @@
           "sourceRefs": ["corpus-ppl-malinke-organisation"]
         }
       ]
+    },
+    {
+      "spelling": "Keita",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
+    },
+    {
+      "spelling": "Keyita",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
+    },
+    {
+      "spelling": "Kéta",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
     }
   ],
   "transmissionMode": "patrilineal",
@@ -82,6 +94,16 @@
         "claim": "A genealogy of the kings of Manden prior to Soundiata traces the Keita clan back to Lawalo, son of the muezzin Bilal ben Rabah, then Latal Kalabi, Damal Kalabi and Lahilatul Kalabi, the first king of Manden to make the pilgrimage to Mecca. His great-grandson Mamadi Kani, a \"master hunter\" whose reign is placed around the beginning of the twelfth century, extends the kingdom; his great-great-grandson Maghan Kön Fatta, also called Frako Maghan Keñi or Naré Fa Maghan, father of Soundiata, reigns at the beginning of the thirteenth century. Tradition counts sixteen kings before Soundiata, with variants in the list from one school of griots to another.",
         "claimStatus": "claimed",
         "sourceRefs": ["niane-1985-fr-mali-chapitre"]
+      },
+      {
+        "claim": "A note in the Kéyità entry of the dictionary of jamuw points to a common origin with the jamu Kulibali (Coulibaly). This indication is carried by that entry alone.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
+      },
+      {
+        "claim": "The dictionary of jamuw links the Kéyità entry to the regions of Kita, Manding and Farana, without saying whether these are places of origin or of settlement.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
       }
     ]
   },
@@ -166,6 +188,24 @@
         "canut-2002-senankuya",
         "canut-smith-2006-pactes"
       ]
+    },
+    {
+      "targetPatronymeId": "PAT_TOURE",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_SIDIBE",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
     }
   ],
   "casteOrSocialFunction": null,
@@ -221,7 +261,7 @@
       "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Onomastic appendix of the Bamadaba, the Bambara-French electronic dictionary supplement to the Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA); the clan-name appendix is identified as such by Vydrin, \"Vers une lexicographie mandingue sur la base de grands corpus annotés\", Mandenkan 63, 2020, p. 89-110. 375 entries in MDF format, consulted on the complete file. The file provides no legend for its markers, and the reading adopted is the one the file imposes: \\ca carries the Mandingo status terms themselves (nùmu, jèli, hɔ́rɔn, garanke, finɛ, tontigi, wage, gesere); \\sn reads senankun because the Kúyate entry annotates its own line \"\\sn Keyita\" with a caveat stating that this particular relation is a friendly agreement and not a senankuya. The \\sn links are not systematically reciprocal from one entry to another: each pair is therefore cited according to the entry that carries it, named in the claim or the gap."
+      "notes": "Onomastic annex of the Bamadaba, an electronic Bambara-French dictionary supplementing the Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA); the annex of clan names is identified as such by Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, pp. 89-110. 375 entries in MDF format, consulted in the complete file. The file provides no legend for its markers, and the reading adopted is the one the file imposes: \\ca carries the Manding status terms themselves (nùmu, jèli, hɔ́rɔn, garanke, finɛ, tontigi, wage, gesere); \\sn is read as senankun because the Kúyate entry annotates its own line \"\\sn Keyita\" with a reservation stating that this relation is a friendly understanding and not a sanankuya. The \\sn links are not systematically reciprocal from one entry to another: each pair is therefore cited from the entry that carries it, named in the claim or the gap. The Kéyità entry also carries indications of region (Kita, Manding, Farana) and a note of common origin with Kulibali, written in Russian in the file and translated here; its \\sn links name Turɛ, Kulibali, Sisɛ, Sidibɛ, Kaba, Wulare, Jane and Màriko."
     },
     {
       "sourceKey": "niane-1985-fr-mali-chapitre",
@@ -253,7 +293,7 @@
       "url": "https://ich.unesco.org/en/RL/manden-charter-proclaimed-in-kurukan-fuga-00290",
       "tier": "official",
       "source_kind": "intergovernmental",
-      "notes": "Inscribed in 2009. The entry describes a charter proclaimed in the early thirteenth century by the founder of the Mali empire and an assembly of wise men, whose words are passed on orally from father to son within Malinké clans. It does not mention the sanankuya."
+      "notes": "Inscription of 2009. The entry describes a charter proclaimed in the early thirteenth century by the founder of the Mali empire and an assembly of sages, whose words are transmitted orally from father to son within the Malinké clans. It does not mention the sanankuya."
     },
     {
       "sourceKey": "saibou-2023-kurukan-fuga",
@@ -261,7 +301,7 @@
       "url": "https://www.revues.scienceafrique.org/magana/texte/saibou2023/",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Quotes article 7 of the charter: « il est institué entre les Mandenkas le Sanankunya (cousinage à plaisanterie) et le Tanamanyöya (forme de totémisme) » (the sanankunya, a joking relationship, and the tanamanyöya, a form of totemism, are instituted among the Mandenka). Places the oral assembly around 1236 and states that the text was restituted by griots at a seminar in Kankan, Guinea, in 1998, then translated into French and published in 2008."
+      "notes": "Cites article 7 of the charter: \"the Sanankunya (joking cousinship) and the Tanamanyöya (a form of totemism) are instituted among the Mandenkas\". Places the oral assembly around 1236 and states that the text was restored by griots during a seminar in Kankan, Guinea, in 1998, then translated into French and published in 2008."
     },
     {
       "sourceKey": "mann-2022-hunters-oath",
@@ -269,13 +309,13 @@
       "url": "https://humanityjournal.org/issue13-2/the-world-wont-listen-the-mande-hunters-oath-and-human-rights-in-translation/",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Notes that the celebration of these charters has provoked skepticism among those who question their origins, and therefore their age, and refers to Jan Jansen's work reading them as interventions in a contested cultural politics."
+      "notes": "Notes that the celebration of these charters has aroused scepticism among those who question their origin, and therefore their age, and refers to the work of Jan Jansen, who reads them as interventions in a disputed cultural politics."
     }
   ],
   "gaps": [
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Charry explicitly lists Keita among the jamuw horon, that is, the noble-status names rather than the craft-status ones. The dictionary of jamuw points the same way through its silence: the Kéyità entry is one of the rare ones in the Mande block to carry no status marker, whereas Traoré, Coulibaly, Camara, Diabaté, Kouyaté, Bamba and Fofana all carry at least one. The absence of a hereditary function is therefore an established result, not an unsuccessful search: royalty is not a caste in the sense of this field."
+      "reason": "Keita is named explicitly among the jamuw horon, that is, the names of noble, non-artisan status. The dictionary of jamuw points the same way through its silence: the Kéyità entry is one of the few in the Mande block to carry no status marker, whereas Traoré, Coulibaly, Camara, Diabaté, Kouyaté, Bamba and Fofana each carry at least one. The absence of a hereditary function is therefore an established result and not an unsuccessful search: kingship is not a caste in the sense of this field."
     },
     {
       "fieldPath": "homonyms",
@@ -284,31 +324,38 @@
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-09-23T10:45:19.687Z",
-    "model": "claude-sonnet-5",
-    "sourceHash": "6ba66d6b9e3538575cb522ef9a986186626f29ba20464035579653c314fe0194",
+    "translatedAt": "2026-09-29T16:20:52.917Z",
+    "model": "claude-sonnet-5-5",
+    "sourceHash": "d4f0ac766f869b1a39a16a045a8b90c69c814848ecc53d829e6acf75042f2159",
     "fieldHashes": {
       "origin.oralTraditions[0].claim": "e96b0dc94c6a80c3",
       "origin.oralTraditions[0].transcription": "d753a01648ff3240",
       "origin.linguisticReconstructions[0].claim": "14f92c91d5d99f18",
       "origin.linguisticReconstructions[1].claim": "6840b4f8aae5975f",
       "origin.linguisticReconstructions[2].claim": "c490a575eaafcde2",
+      "origin.linguisticReconstructions[3].claim": "2da245aa3d6bc69f",
+      "origin.linguisticReconstructions[4].claim": "e4017da6f0f24211",
       "sources[0].notes": "29012643eb034ff2",
       "sources[1].notes": "fc0dbc4dd8f99c38",
       "sources[2].notes": "4e75f41a563c53c3",
       "sources[3].notes": "3a5b80d26c30b0b6",
-      "sources[4].notes": "b80adb343411bfb9",
+      "sources[4].notes": "312686d77b152646",
       "sources[5].notes": "9cabc8ca7d3b4fb6",
       "sources[6].notes": "2c14e48c42d56e18",
       "sources[7].notes": "79986afda62f44db",
-      "gaps[0].reason": "6f0e3c41d59bf256",
+      "sources[8].notes": "53ac45265e444fe6",
+      "sources[9].notes": "a4e54a5f67982b0c",
+      "sources[10].notes": "2c7aa22ef02dfaab",
+      "gaps[0].reason": "13a68bd50c7a00af",
       "gaps[1].reason": "d39d08d11a9f5b36"
     },
     "reviewRequired": [
       "origin.oralTraditions[0].transcription",
       "origin.linguisticReconstructions[0].claim",
       "origin.linguisticReconstructions[1].claim",
-      "origin.linguisticReconstructions[2].claim"
+      "origin.linguisticReconstructions[2].claim",
+      "origin.linguisticReconstructions[3].claim",
+      "origin.linguisticReconstructions[4].claim"
     ]
   }
 }

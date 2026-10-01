@@ -98,7 +98,7 @@
     "demography": {
       "totalPopulation": 7900000,
       "referenceYear": 2025,
-      "source": "Ethnologue / Wikipedia EN — Omotic languages : environ 7,9 millions de locuteurs de langues omotiques. Recensement ethiopien 2007 (base de calcul) avec projection à 2025 selon le taux de croissance démographique éthiopien (~2,4% par an). Les principaux groupes : Wolaita ~2,4M, Gamo ~1,6M, Kefa ~1,3M, Dawro ~800K, Bench ~500K, Aari ~420K, et dizaines de petits groupes. Nota bene : les Me'en (PPL_MEEN, ISO mym) sont Surmiques (Nilo-Sahariens) et ne font pas strictement partie de la famille omotique.",
+      "source": "Ethnologue / Wikipedia EN — Omotic languages : environ 7,9 millions de locuteurs de langues omotiques. Recensement ethiopien 2007 (base de calcul) avec projection à 2025 selon le taux de croissance démographique éthiopien (~2,4% par an). Les principaux groupes : Wolaita ~2,4M, Gamo ~1,6M, Kefa ~1,3M, Dawro ~800K, Bench ~500K, Aari ~420K, et dizaines de petits groupes. Nota bene : les Me'en (ISO mym) sont Surmiques (Nilo-Sahariens) et ne font pas strictement partie de la famille omotique.",
       "distributionByCountry": [
         {
           "country": "ETH",

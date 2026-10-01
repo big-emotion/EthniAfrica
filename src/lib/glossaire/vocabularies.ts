@@ -327,7 +327,7 @@ export const ACCESS_MODE_LABELS_BY_LOCALE: Labels<AccessMode> = {
   fr: ACCESS_MODE_LABELS,
   en: {
     atlas: "Browse",
-    dossiers: "The dossiers",
+    dossiers: "Articles",
     jeux: "Play",
   },
 };

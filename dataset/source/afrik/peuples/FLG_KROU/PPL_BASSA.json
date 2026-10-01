@@ -9,8 +9,9 @@
       "mainName": "Bassa",
       "selfAppellation": "Bassa",
       "exonyms": ["Bassa", "Gboboh", "Adbassa", "Bambog-Mbog"],
+      "spellingAliases": ["Basa"],
       "originOfExonyms": "Aucune des sources consultées ne rapporte d'explication du nom venue des voyageurs, des missionnaires ou des linguistes européens : ceux-ci l'ont transcrit sans le gloser. La seule explication publiée est une tradition orale bassa. L'historien bassa Joseph Gbadyu, ancien superintendant du comté de Grand Bassa, la rapporte ainsi : Ɓǎ Sɔ́ɔ́ était un chef et un commerçant réputé, et ceux qui dépendaient de lui se disaient Ɓǎ Sɔ́ɔ́ nyɔ ɓě, « les gens de Ɓǎ Sɔ́ɔ́ » ; les marchands européens n'ayant pu prononcer la formule entière, la forme abrégée Bassa s'est imposée. Le dictionnaire bassa-anglais publié au Liberia confirme chaque élément de la formule : ɓǎ, « père » ; sɔ́ɔ́, « roche » ; nyɔ, « personne » ; ɓě, marque du pluriel — et il donne Ɓǎsɔ́ɔ̀-nyɔ̀ pour « un Bassa ». Sɔ́ɔ́ désigne la pierre minérale, jamais un prénom : la formule nomme un homme dit « Père Roche », et non un Père Pierre. La version anglaise la plus reprise, « Father Stone's people », vient d'une encyclopédie parue en 2009 qui traite sous une entrée unique les Bassa du Liberia, du Cameroun, du Nigeria, du Togo, du Congo et du Sénégal, et leur applique la classification bantoue des Bassa du Cameroun. C'est de cette même entrée que viennent les formes Gboboh, Adbassa et Bambog-Mbog portées ici, la dernière renvoyant au mbombog, qui est une institution des Bassa du Cameroun. Aucune source consultée ne les atteste indépendamment pour les Bassa du Liberia.",
-      "whyProblematic": "Le terme Bassa est parfois confondu avec le peuple Bassa du Cameroun, dont la langue appartient au groupe bantou de la famille Niger-Congo. Il s'agit d'une entité distincte des Bassa du Liberia, dont la langue bassa (bsq) appartient à la famille krou.",
+      "whyProblematic": "Le terme Bassa est parfois confondu avec le peuple Bassa du Cameroun, dont la langue appartient au groupe bantou de la famille Niger-Congo. Il s'agit d'une entité distincte des Bassa du Liberia, dont la langue bassa (bsq) appartient à la famille krou. Il l'est aussi avec les Bassa Nge du Nigeria, un autre peuple qui porte le même nom (voir sa fiche) : ce sont trois peuples distincts, que seule la ressemblance du nom rapproche.",
       "contemporaryUsage": "Le terme Bassa est universellement utilise au Liberia pour designer ce peuple. Ils se designent eux-memes comme Bassa et parlent le bassa (bsq). Ils constituent le deuxieme groupe ethnique du Liberia.",
       "linguisticFamily": "FLG_KROU",
       "ethnoLinguisticGroup": "Kru (Niger-Congo), confederation des peuples kru du Liberia et de la Cote d'Ivoire",
@@ -190,6 +191,12 @@
         "url": "https://cefliberia.org/wp-content/uploads/2016/12/BassaDict.pdf",
         "tier": "referenced",
         "notes": "Lexique bassa-anglais de 88 pages publié au Liberia, consulté le 10 septembre 2026. Il donne ɓǎ « father », sɔ́ɔ́ « rock », nyɔ « person », ɓě comme marque du pluriel, et Ɓǎsɔ́ɔ̀-nyɔ̀ « Bassa person ». Les composés sɔ́ɔ́-gbò « stone house », sɔ́ɔ́-kpò « rock » et sɔ́ɔ́-tòɖò « rock mountain, cliff » confirment que sɔ́ɔ́ nomme la pierre et rien d'autre."
+      },
+      {
+        "title": "Encyclopædia Britannica, 11e édition (1911) — Krumen",
+        "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Krumen",
+        "tier": "unverified",
+        "notes": "Texte de l'édition de 1911, cité pour la graphie Basa, donnée pour un peuple apparenté aux Kru sur la côte libérienne."
       }
     ]
   },

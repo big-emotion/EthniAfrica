@@ -1,10 +1,13 @@
 """Versioned, fail-closed input contract for the local scene renderer."""
 import hashlib
+import json
 import math
+import re
 from pathlib import Path
 
 from PIL import Image
 
+import ethni_tokens as tokens
 from ethni_globe import EASINGS, GlobeCamera
 from ethni_map import Camera
 
@@ -19,7 +22,13 @@ STATUS = {"documented": "Documenté", "estimate": "Estimation", "hypothesis": "H
 COLOURS = ("gold", "white", "night-ink-2", "teal", "perv", "sea")
 BORDER_STYLES = ("solid", "dashed", "soft", "glow", "none")
 LABEL_STYLES = ("sea", "place")
-GLOBE_ONLY = ("projection", "relief", "rivers", "lakes", "atmosphere")
+GLOBE_ONLY = ("projection", "relief", "rivers", "lakes", "atmosphere", "space", "glow")
+# `space` (around the sphere) and `glow` (its halo) name an engine palette entry, never a value: the
+# palette resolves through the charter tokens, so a plan cannot smuggle in a colour nobody ruled on.
+GLOBE_TINTS = ("space", "glow")
+# Four lines fill the space between the header and the caption; a line that appears less than a second
+# before its scene ends is a flash, not a piece of reading.
+KINETIC_MAX_LINES, KINETIC_READING_SECONDS = 4, 1.0
 
 
 def require(condition, message):
@@ -84,7 +93,7 @@ def validate_geometry(geo):
 
 def validate_map(value, duration, assets, sources):
     keys(value, "asset layer borders border_style border_width highlights camera features graticule inserts "
-                "projection relief rivers lakes atmosphere", "map")
+                "projection relief rivers lakes atmosphere space glow", "map")
     globe = value.get("projection", "mercator")
     require(globe in ("mercator", "globe"), "Unknown map.projection")
     globe = globe == "globe"
@@ -96,6 +105,11 @@ def validate_map(value, duration, assets, sources):
                 require(value[layer] in assets and assets[value[layer]]["kind"] == "vector", f"map.{layer} needs a vector asset")
         if "atmosphere" in value:
             require(type(value["atmosphere"]) is bool, "map.atmosphere must be boolean")
+        names = tokens.palette()
+        for key in GLOBE_TINTS:
+            if key in value:
+                require(isinstance(value[key], str) and value[key] in names,
+                        f"map.{key} must name a palette token: {', '.join(sorted(names))}")
     if "border_width" in value:
         number(value["border_width"], "map.border_width", 1, 12)
     inserts = value.get("inserts", [])
@@ -155,7 +169,9 @@ def validate_map(value, duration, assets, sources):
         end = number(feature.get("until"), "feature.until", 0, duration)
         require(end > start, "feature.until must follow at")
         require(feature.get("role", "subject") in ("subject", "context"), "Unknown feature role")
-        require(feature.get("role") != "context" or kind in ("territory", "point"), "Context role requires a territory or point")
+        require(feature.get("role") != "context" or kind in ("territory", "point")
+                or (kind == "country" and value["layer"] == "people"),
+                "Context role requires a territory or point, or a country on the people layer")
         if "annotation" in feature:
             require(kind == "point", "annotation requires a point")
             text(feature["annotation"], "feature.annotation")
@@ -191,8 +207,10 @@ def validate_map(value, duration, assets, sources):
                 require(type(feature.get("value")) is int and feature["value"] > 0,
                         "A speakers feature needs a positive integer value")
         elif kind == "country":
-            # A whole present-day country switched on at a cue, on the national layer only.
-            require(value["layer"] == "national", "A country feature needs the national layer")
+            # A whole present-day country switched on at a cue. On the people layer it may only stand as
+            # context, drawn under the zones: the country orients, it never stands for a people.
+            require(value["layer"] == "national" or (value["layer"] == "people" and feature.get("role") == "context"),
+                    "A country feature needs the national layer, or role: context on the people layer")
             text(feature.get("code"), "feature.code")
             require(not {"point", "points", "meaning"} & set(feature), "Country feature has point or route fields")
         else:
@@ -248,83 +266,151 @@ def validate_globe_camera(frame):
                 tilt=number(frame.get("tilt", 0), "camera.tilt"), heading=number(frame.get("heading", 0), "camera.heading"))
 
 
-def validate_timeline(value, duration, sources, assets=None):
-    keys(value, "scale events context layout background overview_at context_layout", "timeline")
-    layout = value.get("layout", "overview")
-    require(layout in ("overview", "focus"), "Unknown timeline layout")
-    if layout == "focus":
-        validate_focused_timeline(value, duration, sources, assets or {})
-        return
-    require(not any(key in value for key in ("background", "overview_at", "context_layout")), "Focus options require the focus layout")
+def validate_timeline(value, duration, sources, assets):
+    """A chronology is a band over its map: two or three events cued in order, and the map behind them."""
+    keys(value, "scale events layout background", "timeline")
+    require(value.get("layout") == "focus", "timeline.layout must be focus: a chronology is drawn as a band over a map")
+    require("background" in value, "A chronology needs a map background behind it")
     require(value.get("scale") == "ordinal", "timeline.scale must be ordinal; spacing is explicitly not proportional")
-    events, context = value.get("events"), value.get("context", [])
+    events = value.get("events")
     require(isinstance(events, list) and 2 <= len(events) <= 3, "timeline needs two or three primary events")
-    require(isinstance(context, list) and len(context) <= 2, "timeline supports at most two context events")
-    years = []
-    for lane in (events, context):
-        for event in lane:
-            keys(event, "year label detail at evidence" if lane is context else "year label at evidence display", "timeline event")
-            require(type(event.get("year")) is int and event["year"] != 0, "event.year must be a nonzero integer")
-            # `display` replaces the printed year when sources give only a century: the year then
-            # only orders the events and is never shown.
-            if "display" in event: text(event["display"], "event.display")
-            text(event.get("label"), "event.label")
-            if lane is context: text(event.get("detail"), "event.detail")
-            number(event.get("at"), "event.at", 0, duration-.04)
-            evidence(event.get("evidence"), sources, "event.evidence")
-        if lane is events:
-            years = [event["year"] for event in events]
-            require(all(a < b for a, b in zip(years, years[1:])), "Primary events must be in chronological order")
-    require(all(event["year"] in years for event in context), "Context must share the same year as a primary event")
-    require(len({event["year"] for event in context}) == len(context), "Group same-year context into one event")
+    for event in events:
+        keys(event, "year label at evidence display", "timeline event")
+        require(type(event.get("year")) is int and event["year"] != 0, "event.year must be a nonzero integer")
+        # `display` replaces the printed year when sources give only a century: the year then
+        # only orders the events and is never shown.
+        if "display" in event: text(event["display"], "event.display")
+        text(event.get("label"), "event.label")
+        number(event.get("at"), "event.at", 0, duration-.04)
+        evidence(event.get("evidence"), sources, "event.evidence")
+    years = [event["year"] for event in events]
+    require(all(a < b for a, b in zip(years, years[1:])), "Primary events must be in chronological order")
+    require(all(a["at"] < b["at"] for a, b in zip(events, events[1:])), "Event cues must be chronological")
+    validate_map(value["background"], duration, assets, sources)
 
 
-def validate_focused_timeline(value, duration, sources, assets):
-    """Anchor context to a scene cue without pretending its period is that year."""
-    primary = {key: value[key] for key in ("scale", "events") if key in value}
-    validate_timeline(primary, duration, sources)
-    require(value.get("context_layout", "cards") in ("cards", "corner"), "Unknown context layout")
-    events = value["events"]
-    require(all(a["at"] < b["at"] for a, b in zip(events, events[1:])),
-            "Focus event cues must be chronological")
-    overview = value.get("overview_at", duration)
-    number(overview, "overview_at", events[-1]["at"], duration)
-    require(overview > events[-1]["at"], "Overview must follow the final event")
-    windows = {event["year"]: (event["at"], events[i+1]["at"] if i+1 < len(events) else overview)
-               for i, event in enumerate(events)}
-    context = value.get("context", [])
-    require(isinstance(context, list) and len(context) <= 2*len(events), "Focus supports two lanes per event")
-    used = set()
-    for item in context:
-        keys(item, "event_year lane label detail at evidence", "focus context")
-        anchor = item.get("event_year")
-        require(type(anchor) is int and anchor in windows, "Context event_year must reference a primary event")
-        require(item.get("lane") in ("regional", "world"), "Unknown context lane")
-        pair = (anchor, item["lane"])
-        require(pair not in used, "Only one context per lane and primary event")
-        used.add(pair)
-        for field in ("label", "detail"): text(item.get(field), "context."+field)
-        evidence(item.get("evidence"), sources, "context.evidence")
-        start, end = windows[anchor]
-        cue = number(item.get("at"), "context.at", start)
-        require(cue < end, "Context must appear within its event window")
-    if value.get("context_layout") == "corner":
-        require(len({item["at"] for item in context}) == len(context),
-                "Corner context cues must be distinct; one note is visible at a time")
-    if "background" in value:
-        background = value["background"]
-        validate_map(background, duration, assets, sources)
-        if background.get("features") or background.get("highlights"):
-            require(not context or value.get("context_layout") == "corner",
-                    "Composed timeline maps require corner context to keep geography visible")
+def validate_image(value, assets, layout, duration):
+    """An image scene's picture, or the picture behind an overlay: the same contract in both places."""
+    keys(value, "asset fit motion", "image")
+    require(value.get("asset") in assets and assets[value["asset"]]["kind"] == "image", "image asset required")
+    require(value.get("fit") in ("contain", "cover"), "image.fit must be contain or cover")
+    motion = value.get("motion")
+    if motion is None:
+        return
+    if "keys" in motion:
+        # A camera of keys is a deliberate move, eased between views, so it may go far beyond the five percent
+        # that a slow push-in is allowed in the full-frame layout. The charter's enlargement ceiling still applies
+        # at render time, and the preflight renders every key.
+        keys(motion, "keys", "image.motion with keys")
+        require(value["fit"] == "cover", "image.motion.keys needs fit cover: a document held whole does not move")
+        steps = motion["keys"]
+        require(isinstance(steps, list) and len(steps) >= 2, "image.motion.keys needs at least two keys")
+        previous = -1
+        for step in steps:
+            keys(step, "at view", "image.motion.keys")
+            at = number(step.get("at"), "key.at", 0, duration-.04)
+            require(at > previous, "image.motion.keys must increase in time")
+            previous = at
+            view = step.get("view")
+            require(isinstance(view, list) and len(view) == 3, "a key view is [zoom, focusX, focusY]")
+            number(view[0], "zoom", 1, 3)
+            number(view[1], "focusX", 0, 1)
+            number(view[2], "focusY", 0, 1)
+        require(steps[0]["at"] == 0, "image.motion.keys must start at 0")
+        return
+    keys(motion, "from to", "image.motion")
+    for field in ("from", "to"):
+        k = motion.get(field)
+        require(isinstance(k, list) and len(k) == 3, "motion needs [zoom, focusX, focusY]")
+        number(k[0], "zoom", 1, 1.25)
+        number(k[1], "focusX", 0, 1)
+        number(k[2], "focusY", 0, 1)
+    require(value["fit"] == "cover" or all(k[0] == 1 for k in motion.values()),
+            "contain preserves the full document; use zoom 1 or explicitly choose cover")
+    # The legacy film zooms 3.5 percent over a scene; a bigger push-in reads as a jolt.
+    require(layout != "fullbleed" or all(k[0] <= 1.05 for k in motion.values()),
+            "fullbleed images zoom at most five percent")
 
 
-def validate_plan(plan, root, duration):
+def validate_map_scene(value, duration, root, assets, sources):
+    """A map with its countries checked against the basemap it names."""
+    validate_map(value, duration, assets, sources)
+    require(assets[value["asset"]]["kind"] == "geojson", "map asset must be geojson")
+    data = json.loads(asset_path(root, assets[value["asset"]]).read_text())
+    codes = {f["properties"]["ADM0_A3"] for f in data["features"]}
+    require(all(c in codes for c in value.get("highlights", [])), "Unknown highlighted country")
+    require(all(f["code"] in codes for f in value.get("features", []) if f["kind"] == "country"),
+            "Unknown country in a country feature")
+
+
+def validate_backdrop(value, duration, root, assets, sources):
+    """What an overlay is drawn over: exactly one picture or map, checked as it would be as a scene of its own."""
+    require(isinstance(value, dict) and len(value) == 1 and next(iter(value)) in ("image", "map"),
+            "backdrop is exactly one image or one map")
+    (kind, config), = value.items()
+    if kind == "image":
+        validate_image(config, assets, "fullbleed", duration)
+    else:
+        validate_map_scene(config, duration, root, assets, sources)
+
+
+def caption_options(scene, where):
+    """The two authored hints a scene gives its captions: which words to accent, and what not to cover."""
+    if "emphasis" in scene:
+        words = scene["emphasis"]
+        require(isinstance(words, list) and 1 <= len(words) <= 3
+                and all(isinstance(w, str) and w.strip() and len(w.split()) == 1 for w in words),
+                f"{where}.emphasis: one to three single words")
+    if "protect" in scene:
+        regions = scene["protect"]
+        require(isinstance(regions, list) and 1 <= len(regions) <= 4 and all(isinstance(r, list) and len(r) == 4 for r in regions),
+                f"{where}.protect: one to four [x0, y0, x1, y1] rectangles")
+        for x0, y0, x1, y1 in regions:
+            for value, high in ((x0, 1080), (x1, 1080), (y0, 1920), (y1, 1920)):
+                number(value, f"{where}.protect", 0, high)
+            require(x0 < x1 and y0 < y1, f"{where}.protect: a rectangle needs x0 < x1 and y0 < y1")
+
+
+def accent_span(line):
+    """Where the accent word sits in its line as a whole word, or None: « nous » is not inside « nouveau »."""
+    accent = line.get("accent")
+    match = re.search(rf"(?<!\w){re.escape(accent)}(?!\w)", line["text"]) if isinstance(accent, str) and accent else None
+    return match.span() if match else None
+
+
+def validate_kinetic(value, duration):
+    """Lines arrive in the order they are spoken; the card carries one accent word at most."""
+    keys(value, "lines", "kinetic")
+    lines = value.get("lines")
+    require(isinstance(lines, list) and 1 <= len(lines) <= KINETIC_MAX_LINES,
+            f"kinetic needs one to {KINETIC_MAX_LINES} lines")
+    previous, accents = 0, 0
+    for line in lines:
+        keys(line, "text detail at accent", "kinetic line")
+        text(line.get("text"), "kinetic.text")
+        if "detail" in line:
+            text(line["detail"], "kinetic.detail")
+        cue = number(line.get("at"), "kinetic.at", 0)
+        require(cue <= duration-KINETIC_READING_SECONDS, "A kinetic line needs at least a second of reading time")
+        require(cue >= previous, "Kinetic lines must follow the narration in reading order")
+        previous = cue
+        if "accent" in line:
+            accents += 1
+            require(accents == 1, "A card carries at most one accent word")
+            accent = line["accent"]
+            require(isinstance(accent, str) and len(accent.split()) == 1 and accent_span(line),
+                    "The accent must be one word of its own line")
+
+
+def validate_plan(plan, root, duration, timeline=None):
     """Validate shape, local assets, provenance and complete audio coverage."""
-    import json
-    keys(plan, "version profile coverage title source output_dir sources assets scenes progress cover outro layout", "plan")
-    layout = plan.get("layout", "panel")
-    require(layout in ("panel", "fullbleed"), "Unknown layout")
+    keys(plan, "version profile coverage title source output_dir sources assets scenes progress cover outro layout insertions bed", "plan")
+    # Every scene is drawn over a full-frame picture or map. The dark panel layout that once stood on
+    # a plain night ground is gone (operator ruling, 2026-09-30); `layout` survives only so a plan that
+    # names the one remaining layout keeps validating.
+    layout = plan.get("layout", "fullbleed")
+    require(layout != "panel", "The dark panel layout no longer exists: every scene is drawn over a full-frame picture or map")
+    require(layout == "fullbleed", "Unknown layout")
     for flag in ("progress", "cover", "outro"):
         if flag in plan:
             require(type(plan[flag]) is bool, f"{flag} must be boolean")
@@ -343,7 +429,7 @@ def validate_plan(plan, root, duration):
     require(isinstance(assets, dict), "assets must be an object")
     for key, asset in assets.items():
         keys(asset, "path kind sha256 credit license source bounds", f"asset {key}")
-        require(asset.get("kind") in ("geojson", "image", "relief", "vector"), "Unknown asset kind")
+        require(asset.get("kind") in ("geojson", "image", "relief", "vector", "clip"), "Unknown asset kind")
         require(("bounds" in asset) == (asset["kind"] == "relief"), "Only a relief asset carries bounds, and it must")
         if asset["kind"] == "relief": validate_relief_bounds(asset["bounds"])
         for field in ("path", "credit", "license", "sha256"): text(asset.get(field), f"asset.{field}")
@@ -354,6 +440,8 @@ def validate_plan(plan, root, duration):
             validate_geometry(json.loads(path.read_text()))
         elif asset["kind"] == "vector":
             validate_vector(json.loads(path.read_text()))
+        elif asset["kind"] == "clip":
+            pass  # its trims are checked against the probed media where the insertions are arranged
         else:
             with Image.open(path) as image: image.verify()
     scenes = plan.get("scenes")
@@ -361,7 +449,7 @@ def validate_plan(plan, root, duration):
     ids, previous = set(), 0.0
     for index, scene in enumerate(scenes):
         where = f"scene {index+1}"
-        keys(scene, "id type start end title purpose evidence beat map image text comparison timeline document transition", where)
+        keys(scene, "id type start end title purpose evidence beat map image text comparison kinetic backdrop timeline document clip transition emphasis protect", where)
         text(scene.get("id"), f"{where}.id")
         require(scene["id"] not in ids, "Scene ids must be unique")
         ids.add(scene["id"])
@@ -371,59 +459,39 @@ def validate_plan(plan, root, duration):
         require(end-start >= 1, "A scene needs at least one second of reading time")
         previous = end
         for field in ("title", "purpose"): text(scene.get(field), f"{where}.{field}")
+        caption_options(scene, where)
         evidence(scene.get("evidence"), sources, f"{where}.evidence")
         kind = scene.get("type")
-        require(kind in ("map", "image", "text", "comparison", "timeline", "document"), "Unknown scene type")
-        require(all(field == kind or field not in scene for field in ("map", "image", "text", "comparison", "timeline", "document")),
+        require(kind in ("map", "image", "text", "comparison", "kinetic", "timeline", "document", "clip"), "Unknown scene type")
+        require(kind in ("map", "image", "timeline", "comparison", "kinetic", "clip"),
+                f"{where}: a {kind} scene has no full-frame picture behind it; every scene is drawn over a picture, a map or a film excerpt")
+        require(all(field == kind or field not in scene for field in ("map", "image", "text", "comparison", "kinetic", "timeline", "document", "clip")),
                 f"{where}: content for another scene type")
-        require(layout != "fullbleed" or kind in ("map", "image", "timeline"),
-                f"{where}: the fullbleed layout cannot draw a {kind} scene")
+        if kind in ("comparison", "kinetic"):
+            require("backdrop" in scene, f"{where}: a {kind} scene needs a backdrop picture or map behind its words")
+            validate_backdrop(scene["backdrop"], end-start, root, assets, sources)
+        else:
+            require("backdrop" not in scene, f"{where}: a backdrop belongs to a comparison or a kinetic card")
         if kind == "map":
-            validate_map(scene.get("map"), end-start, assets, sources)
-            map_data = json.loads(asset_path(root, assets[scene["map"]["asset"]]).read_text())
-            codes = {f["properties"]["ADM0_A3"] for f in map_data["features"]}
-            require(all(c in codes for c in scene["map"].get("highlights", [])), "Unknown highlighted country")
-            require(all(f["code"] in codes for f in scene["map"].get("features", []) if f["kind"] == "country"),
-                    "Unknown country in a country feature")
+            validate_map_scene(scene.get("map"), end-start, root, assets, sources)
         elif kind == "image":
-            value = scene.get("image")
-            keys(value, "asset fit motion", "image")
-            require(value.get("asset") in assets and assets[value["asset"]]["kind"] == "image", "image asset required")
-            require(value.get("fit") in ("contain", "cover"), "image.fit must be contain or cover")
-            if "motion" in value:
-                keys(value["motion"], "from to", "image.motion")
-                for field in ("from", "to"):
-                    k = value["motion"].get(field)
-                    require(isinstance(k, list) and len(k) == 3, "motion needs [zoom, focusX, focusY]")
-                    number(k[0], "zoom", 1, 1.25)
-                    number(k[1], "focusX", 0, 1)
-                    number(k[2], "focusY", 0, 1)
-                require(value["fit"] == "cover" or all(k[0] == 1 for k in value["motion"].values()),
-                        "contain preserves the full document; use zoom 1 or explicitly choose cover")
-                # The legacy film zooms 3.5 percent over a scene; a bigger push-in reads as a jolt.
-                require(layout != "fullbleed" or all(k[0] <= 1.05 for k in value["motion"].values()),
-                        "fullbleed images zoom at most five percent")
+            validate_image(scene.get("image"), assets, layout, end-start)
         elif kind == "timeline":
             validate_timeline(scene.get("timeline"), end-start, sources, assets)
-            require(layout != "fullbleed" or (scene["timeline"].get("layout") == "focus" and not scene["timeline"].get("context")),
-                    f"{where}: the fullbleed layout draws a focused chronology without context cards")
-            background = scene["timeline"].get("background")
-            if background:
-                data = json.loads(asset_path(root, assets[background["asset"]]).read_text())
-                codes = {f["properties"]["ADM0_A3"] for f in data["features"]}
-                require(all(c in codes for c in background.get("highlights", [])), "Unknown highlighted country")
-                require(all(f["code"] in codes for f in background.get("features", []) if f["kind"] == "country"),
-                        "Unknown country in a country feature")
-        elif kind == "document":
-            value = scene.get("document")
-            keys(value, "asset label body", "document")
-            require(value.get("asset") in assets and assets[value["asset"]]["kind"] == "image", "document image asset required")
-            for field in ("label", "body"): text(value.get(field), f"document.{field}")
-        elif kind == "text":
-            text(scene.get("text"), "scene.text")
+            background = scene["timeline"]["background"]
+            data = json.loads(asset_path(root, assets[background["asset"]]).read_text())
+            codes = {f["properties"]["ADM0_A3"] for f in data["features"]}
+            require(all(c in codes for c in background.get("highlights", [])), "Unknown highlighted country")
+            require(all(f["code"] in codes for f in background.get("features", []) if f["kind"] == "country"),
+                    "Unknown country in a country feature")
+        elif kind == "clip":
+            validate_clip_scene(scene, timeline)
+        elif kind == "kinetic":
+            validate_kinetic(scene.get("kinetic"), end-start)
         else:
             items = scene.get("comparison")
-            require(isinstance(items, list) and 2 <= len(items) <= 3, "comparison needs two or three items")
+            require(isinstance(items, list) and 2 <= len(items) <= 5,
+                    "comparison needs two to five items")
             for item in items:
                 keys(item, "label body at", "comparison item")
                 text(item.get("label"), "comparison.label")
@@ -441,6 +509,23 @@ def validate_plan(plan, root, duration):
         beats = [s.get("beat") for s in scenes]
         require(all(beat in beats for beat in required), f"Complete {plan['profile']} requires beats {required}")
     return plan
+
+
+def validate_clip_scene(scene, timeline):
+    """A clip scene shows an inserted excerpt's picture and must frame the whole excerpt."""
+    from ethni_scene_clips import window_for
+    value = scene.get("clip")
+    keys(value, "insertion fit", "clip")
+    require(value.get("fit") in ("contain", "cover"), "clip.fit must be contain or cover")
+    require(timeline is not None, "A clip scene needs the prepared audio timeline")
+    window = window_for(timeline, value.get("insertion"))
+    require(window is not None, f"Unknown insertion: {value.get('insertion')!r}")
+    require(window["has_video"], "A clip scene needs a picture: the insertion's clip has no video track")
+    require(scene["start"] <= window["clip_start"]+1e-6 and scene["end"] >= window["clip_end"]-1e-6,
+            "The scene window must contain the whole excerpt")
+    length = scene.get("transition", {}).get("duration", 0)
+    require(scene["start"]+length <= window["clip_start"]+1e-6,
+            "The transition into a clip scene must finish before the excerpt's sound starts")
 
 
 def scene_at(scenes, instant):

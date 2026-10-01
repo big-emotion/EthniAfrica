@@ -6,11 +6,13 @@ no corpus entity, no numbered episode and no site record. It is a social-only fe
 registered in the private library only.
 
 **It uses the standard carousel gabarit and no other.** A first version drew its own
-layout (cover on a night ground, small type) and the operator rejected it the same day:
+layout (cover on a plain ground, small type) and the operator rejected it the same day:
 every carousel keeps the look the account already has. A second version used the white
-variant with the cover in the upper part; the operator preferred the dark ground with the
-cover as the photograph of the card, like the Rastafari and Lingala carousels. There is no
-reading-list layout, and none is to be added.
+variant with the cover in the upper part; the operator preferred the cover as the
+full-frame photograph of the card, like the Rastafari and Lingala carousels. There is no
+reading-list layout, and none is to be added, and no plain, dark or solid-colour
+background mode exists: every card has a full-frame image behind it (operator ruling,
+2026-09-30).
 
 The engine reads `profil: "lectures-afrique"` (`carousel-profiles/lectures-afrique.json`).
 `ethni_carrousel2.py --brief lectures-afrique` returns this guide and an empty scaffold.
@@ -56,8 +58,9 @@ rather than from anything in this profile:
 `ethni_couvertures.py <Sujet>` writes the images. It reads the covers from
 `<projet>/couvertures/<image.couverture>` and writes `<projet>/assets/<image.fichier>`:
 each cover unaltered, and, for the opening and the closing, every cover of the selection
-side by side on the ground, placed above the start of that card's own veil (read from the
-engine's plan, since a longer title means a shorter free zone).
+side by side over a full-frame picture (the first cover, enlarged and blurred), placed above
+the start of that card's own veil (read from the engine's plan, since a longer title means
+a shorter free zone).
 
 ## Rights
 

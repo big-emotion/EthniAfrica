@@ -1,0 +1,49 @@
+{
+  "id": "goma-un-nom-sans-source",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Ce que ce nom veut dire",
+  "fr": {
+    "slug": "goma-un-nom-sans-source",
+    "title": "D'où vient le nom « Goma » ?",
+    "excerpt": "D'où vient le nom « Goma » ?",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "goma-un-nom-sans-source"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "gjLIHxREip0",
+        "poster": {
+          "src": "goma-un-nom-sans-source/goma-un-nom-sans-source/poster-813fadb8af40.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/reel/Ddipp7NK1v7/",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7687890569099578646",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/gjLIHxREip0",
+        "publishedAt": "2026-09-21"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

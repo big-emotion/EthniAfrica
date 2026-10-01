@@ -99,7 +99,7 @@ describe("MigrationNarrative", () => {
     );
     const paragraph = screen.getByText(/Avec confiance\./).closest("p");
     expect(
-      within(paragraph as HTMLElement).getByText(/85 %/)
+      within(paragraph as HTMLElement).getByText(/références · revu/)
     ).toBeInTheDocument();
   });
 

@@ -1,0 +1,194 @@
+{
+  "id": "cabinda-yombe-trois-conventions",
+  "status": "published",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "La carte cachée",
+  "fr": {
+    "slug": "cabinda-yombe-trois-conventions",
+    "title": "D'où vient le nom Cabinda ?",
+    "excerpt": "L'origine du nom Cabinda n'est pas établie. La ligne qui sépare aujourd'hui l'Angola des deux Congo, elle, a des dates et des signataires : trois conventions entre 1885 et 1891, fixées en 1913, à travers la forêt où vivent les Yombe.",
+    "sections": [
+      {
+        "heading": "Un nom dont l'origine reste inconnue",
+        "paragraphs": [
+          "Le Cabinda est aujourd'hui la seule partie de l'Angola située au nord du fleuve Congo. D'où vient son nom ? Nous n'avons trouvé aucune source, parmi celles que nous avons pu lire, qui l'établisse.",
+          "Les explications que nous avons rencontrées viennent d'une encyclopédie en ligne, qui renvoie elle-même au travail d'un historien que nous n'avons pas lu. Nous ne les reprenons donc pas ici. Si vous connaissez une explication du nom Cabinda transmise autour de vous, ou un travail qui l'étudie, dites-nous d'où elle vient."
+        ],
+        "sourceRefs": ["s2"]
+      },
+      {
+        "heading": "Un peuple, les Yombe, et la forêt du Mayombe",
+        "paragraphs": [
+          "Les Yombe se nomment Bayombe au pluriel et Muyombe au singulier ; leur langue est le kiyombe. Le préfixe ba- désigne les personnes, ki- la langue. Contrairement à beaucoup de noms de peuples, celui-ci n'a presque pas changé en passant du kiyombe au français ou au portugais.",
+          "Le kiyombe est parlé en Angola, en République démocratique du Congo et en République du Congo. Ces trois pays se rejoignent autour de la forêt du Mayombe, que les Yombe habitent et à laquelle ils doivent aussi un autre nom : Kongo du Mayombe."
+        ],
+        "sourceRefs": ["s1", "s5"]
+      },
+      {
+        "heading": "Une enclave séparée du reste de l'Angola",
+        "paragraphs": [
+          "Le Cabinda est une enclave : il touche l'océan Atlantique et se trouve entre la République démocratique du Congo et la République du Congo. Une bande de territoire de la RD Congo le sépare du reste de l'Angola.",
+          "Une étude du département d'État américain publiée en 1974 mesure la frontière qui le borde à l'est et au sud à environ 140 miles, soit quelque 225 kilomètres."
+        ],
+        "sourceRefs": ["s3"]
+      },
+      {
+        "heading": "14 février 1885 : un partage entre deux parties",
+        "paragraphs": [
+          "On attribue souvent ce tracé à la conférence de Berlin. La conférence de 1884-1885 a bien reconnu le roi Léopold II comme souverain de l'Association internationale du Congo. Mais la première ligne autour du Cabinda vient d'un texte distinct : une convention datée du 14 février 1885 entre le Portugal et cette Association.",
+          "Par cette convention, l'Association reconnaît les prétentions du Portugal sur le Cabinda, et le Portugal garantit à l'Association un étroit couloir de terre jusqu'à la côte. Le texte décrit déjà la ligne en suivant des rivières, dont la Luculla jusqu'à sa jonction avec le Chiloango."
+        ],
+        "sourceRefs": ["s3", "s4"]
+      },
+      {
+        "heading": "1886, 1891, 1913 : la ligne redessinée puis fixée",
+        "paragraphs": [
+          "Au nord, une convention entre la France et le Portugal, datée du 12 mai 1886, trace la limite entre le Congo français et le Cabinda. Au sud et à l'est, une convention signée à Bruxelles le 25 mai 1891 entre le Portugal et l'État indépendant du Congo redessine une partie de la ligne. Elle va jusqu'à nommer des villages : certains restent à l'État du Congo, d'autres au Portugal. Elle suit ensuite la Luculla jusqu'au Chiloango.",
+          "La ligne est bornée sur le terrain par une commission mixte en 1900, puis approuvée par un protocole signé à Bruxelles le 5 juillet 1913, qui suit le cours du Chiloango. C'est ce protocole qui donne, pour l'essentiel, le tracé actuel. L'étude de 1974 note que les hauteurs qui marquent cette limite bordent ce qu'elle appelle la « forêt du Maiombe »."
+        ],
+        "sourceRefs": ["s3"]
+      },
+      {
+        "heading": "Ce que ces textes ne disent pas",
+        "paragraphs": [
+          "Ces conventions tracent des lignes et répartissent des villages entre des puissances. Elles ne renomment aucun peuple, et elles ne disent pas qui habitait chacun de ces villages. Les sources que nous avons consultées ne permettent pas de dire quels villages nommés en 1891 étaient yombe.",
+          "Ce que l'on peut rapprocher, c'est ceci : les rivières qui portent la ligne traversent le Mayombe, et la langue des Yombe est parlée dans les trois pays que cette ligne sépare aujourd'hui."
+        ],
+        "sourceRefs": ["s3", "s5"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "Le nom Cabinda n'a pas d'origine établie dans les sources que nous avons lues. Sa frontière, en revanche, est datée : une convention entre le Portugal et l'Association de Léopold II en 1885, deux autres en 1886 et 1891, un protocole en 1913. Les Yombe, eux, ont gardé leur nom de part et d'autre de ces lignes."
+        ],
+        "sourceRefs": ["s1", "s3"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "EthniAfrica — fiche du peuple Yombe, appellations",
+      "tier": "needs_review",
+      "notes": "Reprise du chapitre « Appellations » de la fiche du peuple Yombe : Bayombe, Muyombe, kiyombe, Kongo du Mayombe."
+    },
+    {
+      "id": "s2",
+      "title": "Wikipédia en portugais, « Cabinda (província) », section sur l'étymologie, qui cite l'historien J. Martins",
+      "tier": "needs_review",
+      "notes": "Encyclopédie en ligne, citée sur une carte du carrousel pour l'origine du nom. Nous n'avons pas lu le travail de l'historien qu'elle cite, et le texte ci-dessus ne reprend pas les explications qu'elle rapporte."
+    },
+    {
+      "id": "s3",
+      "title": "US Department of State, International Boundary Study n° 144, Angola – Zaire Boundary, 1974 ; n° 105, 1970",
+      "url": "https://library.law.fsu.edu/Digital-Collections/LimitsinSeas/pdf/ibs144.pdf",
+      "tier": "needs_review",
+      "notes": "Étude n° 144 : longueur de la frontière du Cabinda, conventions du 14 février 1885, du 12 mai 1886 et du 25 mai 1891, bornage de 1900, protocole de Bruxelles du 5 juillet 1913."
+    },
+    {
+      "id": "s4",
+      "title": "US Department of State, International Boundary Study n° 144 (1974) et n° 105 (1970) ; Leganet.cd, Conventions internationales — frontières",
+      "tier": "needs_review",
+      "notes": "Le recueil Leganet.cd donne le texte de la convention du 14 février 1885. Nous ne l'avons pas consulté à nouveau pour cet article."
+    },
+    {
+      "id": "s5",
+      "title": "Glottolog 5.3, yomb1244 ; EthniAfrica — fiche du peuple Yombe ; J. Vansina, Paths in the Rainforests, 1990",
+      "url": "https://glottolog.org/resource/languoid/id/yomb1244",
+      "tier": "needs_review",
+      "notes": "Glottolog : le kiyombe en Angola, en RD Congo et en République du Congo. L'ouvrage de Vansina, cité pour l'habitat des Yombe dans le Mayombe, n'a pas été lu directement."
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "cabinda-yombe-trois-lignes"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "cabinda-yombe-trois-conventions/cabinda-yombe-trois-lignes/slide-01-035200c81651.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un visage sculpté en gros plan, les yeux incrustés de nacre, un petit coquillage fixé au sommet du crâne, entouré d'une masse dense de clous et de lames de métal fichés dans une chevelure de cordes",
+            "text": "La frontière d'Angola traverse les Yombe."
+          },
+          {
+            "src": "cabinda-yombe-trois-conventions/cabinda-yombe-trois-lignes/slide-02-f167165de113.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une figure en bois assise en tailleur, coiffée d'un chapeau pointu, portant un collier de perles et une boucle d'oreille, tenant sur ses genoux un petit récipient rond rempli d'une matière blanche et une petite figure animale",
+            "text": "Eux, ils se disent Bayombe.\n\nYombe — le nom qu'on leur donne\nBayombe — le nom qu'ils se donnent\n\nYombe est le nom que le français leur donne ; Kiyombe, celui de leur langue. Contrairement à beaucoup de peuples de cet atlas, ce nom n'a presque pas changé en passant d'une langue à l'autre.\n\nFiche EthniAfrica, PPL_YOMBE — appellations"
+          },
+          {
+            "src": "cabinda-yombe-trois-conventions/cabinda-yombe-trois-lignes/slide-03-a90aefacd70c.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une carte ancienne en allemand du Bas-Congo, aux couleurs pastel, avec le tracé d'un chemin de fer en rouge et les toponymes Kabinda, Boma, Matadi, Brazzaville et Léopoldville",
+            "text": "Personne ne sait vraiment qui a nommé le Cabinda.\n\nToutes les pistes sérieuses le font remonter au kikongo — un lieu d'échange, un lieu d'assemblée, ou le nom d'une antilope locale — jamais au portugais, qui l'a seulement mis par écrit.\n\nJ. Martins, historien, cité par Wikipédia PT « Cabinda (província) » — étymologie disputée, non vérifiée"
+          },
+          {
+            "src": "cabinda-yombe-trois-conventions/cabinda-yombe-trois-lignes/slide-04-6e30a0d54870.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une carte imprimée intitulée « Cabinda (Angola) », montrant l'enclave encadrée par les mentions Congo au nord et Zaïre à l'est et au sud, traversée par le Rio Chiloango, avec un cachet ovale de la Library of Congress",
+            "text": "Ce nom désigne aujourd'hui la seule terre angolaise au nord du fleuve Congo.\n\nUne bande de République démocratique du Congo la sépare du reste de l'Angola.\n\nUS Department of State, International Boundary Study n° 144, 1974 ; n° 105, 1970"
+          },
+          {
+            "src": "cabinda-yombe-trois-conventions/cabinda-yombe-trois-lignes/slide-05-357f99d7adea.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une carte ancienne aux couleurs pastel intitulée « Carte du Bas-Congo », montrant l'enclave portugaise du Cabinda au coin inférieur gauche, le Congo français au nord et le district du Congo belge à l'est",
+            "text": "Le 14 février 1885, le Portugal et l'Association internationale du Congo se partagent la région.\n\nLe Portugal obtient le Cabinda ; l'Association, dirigée par Léopold II, un couloir étroit vers la mer.\n\nUS Department of State, International Boundary Study n° 144 (1974) et n° 105 (1970) ; Leganet.cd, Conventions internationales — frontières"
+          },
+          {
+            "src": "cabinda-yombe-trois-conventions/cabinda-yombe-trois-lignes/slide-06-57f5ef0fa7d8.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une photographie ancienne en noir et blanc montrant trois personnes dans un cours d'eau forestier, sous une frondaison dense, l'une penchée vers l'eau et une autre accroupie sur la berge tenant un récipient",
+            "text": "En 1886 puis en 1891, deux nouvelles conventions redessinent la ligne, village par village.\n\nElle suit ensuite les rivières Luculla et Chiloango, puis leurs lignes de partage des eaux. Le protocole de Bruxelles la fixe en 1913, sur le lit du Chiloango — sans jamais renommer personne.\n\nUS Department of State, International Boundary Study n° 144, 1974 ; n° 105, 1970"
+          },
+          {
+            "src": "cabinda-yombe-trois-conventions/cabinda-yombe-trois-lignes/slide-07-40f7da6dc352.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une photographie ancienne en noir et blanc montrant trois personnes dans un cours d'eau forestier, sous une frondaison dense, l'une penchée vers l'eau et une autre accroupie sur la berge tenant un récipient",
+            "text": "Ces rivières traversent le Mayombe, la forêt où vivent les Yombe.\n\nLe kiyombe, leur langue, est attesté en Angola, en RD Congo et au Congo — dans les trois pays que cette ligne sépare.\n\nGlottolog 5.3, yomb1244 ; Fiche EthniAfrica, PPL_YOMBE ; J. Vansina, Paths in the Rainforests, 1990"
+          },
+          {
+            "src": "cabinda-yombe-trois-conventions/cabinda-yombe-trois-lignes/slide-08-7862c773e18d.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une figure en bois assise en tailleur, coiffée d'un chapeau pointu, portant un collier de perles et une boucle d'oreille, tenant sur ses genoux un petit récipient rond rempli d'une matière blanche et une petite figure animale",
+            "text": "Ce qui relie a survécu aux ruptures.\n\nCe qui relie les peuples d'Afrique a survécu à leurs propres ruptures autant qu'aux frontières qu'on leur a imposées. C'est là que commence une unité plus forte."
+          },
+          {
+            "src": "cabinda-yombe-trois-conventions/cabinda-yombe-trois-lignes/slide-09-c9da52de45c5.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un visage sculpté en gros plan, les yeux incrustés de nacre, un petit coquillage fixé au sommet du crâne, entouré d'une masse dense de clous et de lames de métal fichés dans une chevelure de cordes",
+            "text": "Ce peuple n'a pas été divisé.\n\nC'est la carte qui a été dessinée par-dessus.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "Figure de pouvoir nkisi nkondi, peuple kongo, région du Mayombe, Bas-Congo (RDC) · Musée royal de l'Afrique centrale (Tervuren), via Wikimedia Commons · CC0 1.0 ; Figure de maternité (phemba), peuple kongo, région du Kongo Central (RDC), XIXe siècle · Brooklyn Museum, via Wikimedia Commons · CC BY 3.0 ; Carte du Bas-Congo, Andrees Allgemeiner Handatlas, 1912 · via Wikimedia Commons · domaine public ; Carte de la province de Cabinda, gouvernement fédéral des États-Unis, 1977 · Library of Congress, Geography and Map Division, via Wikimedia Commons · domaine public ; Carte du Bas-Congo, échelle 1:1 080 000, 1913 · via Wikimedia Commons · domaine public ; Dans la forêt du Mayumbe, Congo français et dépendances, collection J. Audema, v. 1896-1910 · via Wikimedia Commons · domaine public"
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7685976377224498434",
+        "publishedAt": "2026-09-16"
+      }
+    ]
+  },
+  "relatedArticleIds": [],
+  "publishedAt": "2026-09-30"
+}

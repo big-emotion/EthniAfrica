@@ -10,6 +10,10 @@ from ethni_scene_render import SceneRenderer
 from ethni_scenes import encode
 
 CHECKS = ('visual', 'listening', 'history', 'message', 'myth', 'voice_rights', 'license_compatibility', 'closing')
+# Only these follow the claims actually present (EDITORIAL-CONTRACT.md §4): a piece that
+# corrects no belief has no myth to review, and a family with no approved closing has none
+# to check. Everything else is universal or a rights matter and can never be waived.
+CONDITIONAL_CHECKS = ('myth', 'closing')
 DOCUMENTS = ('production-brief.md', 'SOURCES.md', 'message.md', 'mythe.md')
 
 
@@ -43,7 +47,8 @@ def validate_review(project, plan, lock, review):
     checks = review.get('checks', {})
     require(set(checks) == set(CHECKS), 'Release review must include all checks')
     for name, check in checks.items():
-        require(check.get('status') == 'pass', f'Release review pending or failed: {name}')
+        waived = check.get('status') == 'not-applicable' and name in CONDITIONAL_CHECKS
+        require(check.get('status') == 'pass' or waived, f'Release review pending or failed: {name}')
         text(check.get('evidence'), f'Release review evidence: {name}')
     assets = review.get('assets', {})
     require(set(assets) == set(plan['assets']), 'Release review must cover every asset')
@@ -74,7 +79,7 @@ def deliver(project, plan, lock, review_path, output, source, check_video, uncha
     proof = validate_review(project, plan, lock, review)
     require(not output.exists(), 'Delivery folder already exists; choose a new version')
     require('_epreuves' not in output.parts, 'A final delivery must be outside _epreuves')
-    renderer = SceneRenderer(plan, project, source['captions'], proof=False)
+    renderer = SceneRenderer(plan, project, source['captions'], proof=False, timeline=source.get('timeline'))
     renderer.preflight()
     output.parent.mkdir(parents=True, exist_ok=True)
     # Nothing is exposed as a final delivery until all checks pass.
@@ -82,7 +87,7 @@ def deliver(project, plan, lock, review_path, output, source, check_video, uncha
         stage = Path(temporary)/'delivery'
         stage.mkdir()
         video = stage/'video.mp4'
-        encode(renderer, source['audio'], plan['source']['cuts'], video)
+        encode(renderer, source['audio'], plan['source']['cuts'], video, source, project)
         result = {'version': 1, 'action': 'finalize', 'proof_only': False, 'ready_to_publish': True,
                   'published': False, 'paid_api_calls': 0, 'coverage': plan.get('coverage', 'excerpt'),
                   'lock_sha256': digest(lock), 'review_sha256': digest(review_path),
@@ -97,6 +102,10 @@ def deliver(project, plan, lock, review_path, output, source, check_video, uncha
                 '## Assets', '']
         for key, asset in plan['assets'].items():
             rows.append(f"- {key}: {asset['credit']} — {asset['license']} — {plan['sources'][asset['source']]['url']}")
+        if source.get('timeline', {}).get('windows'):
+            rows += ['', '## Archive excerpts', '']
+            rows += [f"- {w['id']}: {plan['assets'][w['asset']]['credit']}, source {w['in']:.2f}–{w['out']:.2f} s, "
+                     f"film {w['clip_start']:.2f}–{w['clip_end']:.2f} s" for w in source['timeline']['windows']]
         rows += ['', '## Sources', '']
         rows += [f"- {s['citation']} — {s['url']} ({s['tier']})" for s in plan['sources'].values()]
         rows += ['', '## Voice rights', '', review['checks']['voice_rights']['evidence'], '',

@@ -15,9 +15,9 @@ describe("search-result feed grammar", () => {
   // @req REQ-180
   it("keeps one canonical order for top-level blocks and owed parts", () => {
     expect(FEED_BLOCKS).toEqual([
-      "lenses",
       "verdict",
       "appellations",
+      "lenses",
       "shorts",
       "origins",
       "peoples",

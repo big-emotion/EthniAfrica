@@ -9,6 +9,7 @@ It is a navigation record, not approval, a release review or a library status.
 - Subject and one question:
 - Private project directory:
 - Audience / intended platforms / approximate duration:
+- Family and angle (`family`, `angle.id` from the brief):
 - Profile and reason: name-origin / history-geography / thematic-analysis / free
 - Scope: complete episode / explicitly approved excerpt
 - Subject report, audience and strategy references:
@@ -35,22 +36,27 @@ Paths are relative to this private project when possible. Calculate hashes from
 actual bytes; do not fill sample hashes or label drafts as final. The engine lock
 and delivery manifest remain the authorities for technical reproducibility.
 
-| Artifact                                         | Path                    | Current SHA-256 / version | Evidence / unresolved work |
-| ------------------------------------------------ | ----------------------- | ------------------------- | -------------------------- |
-| French narration                                 |                         |                           |                            |
-| Visual proposal / production brief               |                         |                           |                            |
-| Source and licence register / asset bundle       |                         |                           |                            |
-| Approved voice and matching alignment            |                         |                           |                            |
-| Executable scene plan                            |                         |                           |                            |
-| Message / myth / applicable naming reviews       |                         |                           |                            |
-| Handoff lock                                     |                         |                           |                            |
-| Proof and execution report                       |                         |                           |                            |
-| Release review                                   |                         |                           |                            |
-| Clean delivery manifest                          |                         |                           |                            |
-| Delivery copy / library evidence                 | `delivery-handoff.json` |                           |                            |
-| Reviewed full-resolution cover and selected time |                         |                           |                            |
-| Publication-kit manifest                         |                         |                           |                            |
-| Approved social copy and links                   |                         |                           |                            |
+| Artifact                                                                                                | Path                    | Current SHA-256 / version | Evidence / unresolved work |
+| ------------------------------------------------------------------------------------------------------- | ----------------------- | ------------------------- | -------------------------- |
+| French narration                                                                                        |                         |                           |                            |
+| Visual proposal / production brief                                                                      |                         |                           |                            |
+| Source and licence register / asset bundle                                                              |                         |                           |                            |
+| Approved voice and matching alignment                                                                   |                         |                           |                            |
+| Executable scene plan                                                                                   |                         |                           |                            |
+| Review: provenance                                                                                      |                         |                           |                            |
+| Review: uncertainty                                                                                     |                         |                           |                            |
+| Review: attribution                                                                                     |                         |                           |                            |
+| Review: intelligibility                                                                                 |                         |                           |                            |
+| Review: non-essentialising                                                                              |                         |                           |                            |
+| Conditional reviews (name, myth, geography, music), each `required` or `not-applicable` with its reason |                         |                           |                            |
+| Handoff lock                                                                                            |                         |                           |                            |
+| Proof and execution report                                                                              |                         |                           |                            |
+| Release review                                                                                          |                         |                           |                            |
+| Clean delivery manifest                                                                                 |                         |                           |                            |
+| Delivery copy / library evidence                                                                        | `delivery-handoff.json` |                           |                            |
+| Reviewed full-resolution cover and selected time                                                        |                         |                           |                            |
+| Publication-kit manifest                                                                                |                         |                           |                            |
+| Approved social copy and links                                                                          |                         |                           |                            |
 
 ## Approval evidence
 
@@ -83,4 +89,5 @@ rights and voice rights in the source/release records, never infer them from thi
 - Library thumbnail and Markdown copy hash verification, if applicable:
 - Publication kit ready / missing:
 - Remaining release or registration decisions:
+- Destination packages (`edition-cli.mjs status`) and their occurrences:
 - Published or scheduled by this workflow: no

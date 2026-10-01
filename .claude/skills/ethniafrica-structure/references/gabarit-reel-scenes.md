@@ -56,12 +56,16 @@ freedom to omit uncertainty or to turn unsupported geography into a picture.
 The maintained recipes are in `social/harness/templates/scene-storyboards.md`;
 use `social/harness/SCENE-PRODUCTION.md` for the preparation/execution boundary.
 
-Use `timeline.layout: focus` with `context_layout: corner` for the operator's
-preferred chronology: one dominant date, a quiet upper-right note and an optional
-final overview before closing. Use two or three primary dates per scene. Each
-context item has its own period, which need not equal the main event's exact year.
-Regional neighbours and familiar world events should fit the subject and audience;
-never manufacture a causal connection or force the same country into every sequence.
+Use `timeline.layout: focus` with a map `background` for the operator's preferred
+chronology: one dominant date as a band over its map. Use two or three primary dates
+per scene. Regional neighbours belong on the map as context features with their own
+period; they should fit the subject and audience, and never manufacture a causal
+connection or force the same country into every sequence.
+
+**Every scene has a full-frame picture or map behind it.** There is no dark, plain or
+solid-colour background mode: a `text` or `document` scene, a `kinetic` or `comparison`
+scene without a `backdrop`, and a chronology without a map are refused by the plan
+validator. Plan the picture of each beat before the words.
 
 **Maps and openings (operator ruling, 2026-09-27).** A new video draws its maps on the relief
 globe (`projection: "globe"`, contract in `social/harness/SCENES.md`), never on the flat vector
@@ -81,6 +85,8 @@ Prefer visible region fills and simple location points. Halos remain supported f
 older plans but are not the preferred default. Current dashed borders orient the
 viewer without becoming historical or exclusive population boundaries. Reuse a
 camera/scene pattern, never another subject's geometry without evidence.
+
+A beat that is a short list of statements (definitions, a summary, a chain of dated facts) uses `kinetic` text: its lines arrive one after another on the words that say them, with at most one accent word (contract in `social/harness/SCENES.md`, « Kinetic text »). A `text` scene stays a static pause and a `comparison` scene shows its items at once ; neither draws a photograph or a map behind it.
 
 A sustained historical explanation should carry a relevant document or image.
 Use `document` for an attributed portrait, title page or other archival object

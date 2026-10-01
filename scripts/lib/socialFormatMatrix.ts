@@ -8,7 +8,14 @@
  * whoever revises §1 bis must revise this constant in the same change, and
  * whoever revises this constant without touching §1 bis has broken the rule
  * that the table lives in one place.
+ *
+ * The data is `socialFormatMatrix.json`, read as-is by the Node production
+ * tools (`social/tools/production/destinations.mjs`), which run on plain Node
+ * and cannot import TypeScript. It also carries the platform limits that were
+ * verified against an official page, each with its URL and the day it was read.
  */
+import matrix from "./socialFormatMatrix.json";
+
 export type Network =
   "tiktok" | "instagram" | "facebook" | "youtube" | "linkedin" | "x";
 
@@ -23,14 +30,7 @@ export type ProductionFormat = "video" | "carrousel" | "texte";
 
 export const NETWORK_FORMAT_MATRIX: Readonly<
   Record<Network, readonly ProductionFormat[]>
-> = {
-  tiktok: ["video", "carrousel"],
-  instagram: ["video", "carrousel"],
-  facebook: ["video", "carrousel"],
-  youtube: ["video", "carrousel"],
-  linkedin: ["video", "carrousel", "texte"],
-  x: ["video", "texte"],
-};
+> = matrix.formats as Record<Network, ProductionFormat[]>;
 
 export function networkAcceptsFormat(
   network: Network,

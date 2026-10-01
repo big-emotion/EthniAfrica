@@ -16,7 +16,7 @@
       ],
       "originOfExonyms": "Le terme Baluba (prefixe de classe ba- au pluriel + Luba) est l'appellation authentique en kiluba. Les subdivisions geographiques (Katanga, Kasai) sont des distinctions coloniales belges codifiant des differences dialectales et territoriales.",
       "whyProblematic": null,
-      "contemporaryUsage": "Baluba est l'appellation communautaire usuelle en RDC. Les termes Luba-Kasai et Luba-Katanga sont utilises dans les contextes administratifs et academiques pour distinguer les deux grandes branches.",
+      "contemporaryUsage": "Baluba est l'appellation communautaire usuelle en RDC. Les termes Luba-Kasai et Luba-Katanga sont utilises dans les contextes administratifs et academiques pour distinguer les deux grandes branches. Le nom Luba recouvre aussi deux langues distinctes, chacune avec son code et sa notice : le tshiluba (Luba-Lulua ou Luba-Kasaï, code lua), langue reconnue comme langue nationale en RDC, et le kiluba (Luba-Katanga ou Luba-Shaba, code lub), classé menacé. Qui cherche « Luba » trouve donc trois fiches de peuples (Luba, Luba-Kasaï, Luba-Katanga) et deux fiches de langues, à ne pas confondre.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantou zone L (Luba-Bemba)",
       "historicalRegion": "Centre-sud de la Republique Democratique du Congo — depression d'Upemba (Katanga), provinces du Kasai, Kasai-Oriental, Kasai-Central, Lomami et Maniema",
@@ -102,6 +102,18 @@
         "title": "SIL Ethnologue — Luba-Katanga (lub)",
         "url": "https://www.ethnologue.com/language/lub/",
         "tier": "official"
+      },
+      {
+        "title": "Glottolog 5.3 — Luba-Lulua (luba1249)",
+        "url": "https://glottolog.org/resource/languoid/id/luba1249",
+        "tier": "official",
+        "notes": "Donne Tshiluba, Ciluba, Luba-Kasai et Western Luba comme noms de la langue de code lua, et son statut de langue d'identité nationale en RDC."
+      },
+      {
+        "title": "Glottolog 5.3 — Luba-Katanga (luba1250)",
+        "url": "https://glottolog.org/resource/languoid/id/luba1250",
+        "tier": "official",
+        "notes": "Donne Kiluba et Luba-Shaba comme noms de la langue de code lub, et son statut de langue menacée."
       },
       {
         "title": "Omniglot — Luba-Katanga language",

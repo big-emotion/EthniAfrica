@@ -17,7 +17,7 @@
   {
     "id": "FLG_BANTU",
     "status": "colonial-legacy",
-    "rationale": "Créé par Bleek (1862), popularisé par Meinhof et par l'administrateur colonial Johnston « dans un contexte de classification raciale », puis fait catégorie légale par le Bantu Education Act de l'apartheid en 1953."
+    "rationale": "Créé par Bleek (écrit en 1857 ou 1858, répandu par sa Comparative Grammar de 1862), popularisé par Meinhof et par l'administrateur colonial Johnston « dans un contexte de classification raciale », puis fait catégorie légale par le Bantu Education Act de l'apartheid en 1953."
   },
   {
     "id": "FLG_BENOUECONGO",
@@ -583,6 +583,11 @@
     "id": "PPL_DEI",
     "status": "contested",
     "rationale": "Prose mince : la fiche ne signale qu'une « confusion entre le nom du peuple (Dei/Dey) et le nom de la langue (Dewoin) » dans les sources, sans acteur colonial ni rejet communautaire."
+  },
+  {
+    "id": "PPL_DIAWAMBE",
+    "status": "contested",
+    "rationale": "Trois lectures de Diokoramé restent en concurrence sans qu'aucune soit tranchée, et l'étiquette « tisserands » ou « caste peule » posée par des auteurs européens est expliquée par une confusion avec les Maabube ; la fiche ne relève ni imposition coloniale du nom ni rejet communautaire."
   },
   {
     "id": "PPL_DIDA",

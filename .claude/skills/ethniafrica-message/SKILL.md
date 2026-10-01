@@ -5,6 +5,18 @@ description: Auditer si une production EthniAfrica — carrousel, vidéo, ou pag
 
 # message — le message passe-t-il ?
 
+## Editorial voice and reader needs (2026-09-30)
+
+Before writing or reviewing reader-facing copy, read
+`docs/editorial/reader-facing-register.md` and `docs/editorial/audience-personas.md`.
+EthniAfrica speaks as a popular educator using research methods, without claiming
+scientific, linguistic or historical qualifications for its operator. Explain the
+subject in ordinary language, keep uncertainty in the sentence, and put traceable
+sources after it. Oral and local accounts are sources in their own right; preserve
+their actual context and never invent interviews or community consensus.
+State the primary reader need in the existing working report; personas are
+provisional, and geography or platform demographics never establish diaspora identity.
+
 ## Mémoires sonores review scope (2026-09-25)
 
 Read `docs/design/gabarits-social/MEMOIRES-SONORES.md` first for this feature.
@@ -14,6 +26,38 @@ name-origin closing are not required. Mark inapplicable name-specific criteria
 explicitly with a reason; retain truthfulness, source attribution and
 non-hierarchical treatment of communities. The renderer checks the ordered
 stages and recorded audio review; it does not replace this semantic audit.
+
+## Family reading (2026-09-29)
+
+Read the production's brief first, or run
+`node social/tools/narration/check-family-brief.mjs <brief.json>`. This skill answers
+the universal checks it owns — **uncertainty, intelligibility, non-essentialising** —
+for every family, and none of them can be `sans objet`. The grid below was written on
+the name series; read by family:
+
+- **A brief with a `narrativeDesign`**: also read the chosen proposal's takeaways and
+  success criteria and the outline's viewer-success statements, and say for each whether
+  the written piece actually lets a viewer complete it — with the limit the statement
+  declares, not an invented certainty. A criterion the text cannot support is a rewrite
+  item, not a pass. This is an editorial judgement; `check-narrative-design.mjs` only
+  proved that the plan was recorded.
+- **Series `name-origin`** (and any legacy production whose subject the site ledger
+  holds): the grid as written, including criteria 1, 2 and 8 in their name-series form
+  and the « Un reel au gabarit » section.
+- **Every other family**: criteria 3, 4, 5, 6, 7, 9 and 10 apply unchanged — they judge
+  who is the subject of a sentence, refused phrases, dates, what remains, one closed
+  loop, non-hierarchy and register. Criterion **1** reads « the hook's question receives
+  its answer in the piece, and the piece says what it is (a portrait, a route, a
+  comparison…) » ; the « plusieurs appellations » clause applies only if the piece
+  states a name claim or a people is its declared subject. Criterion **2** applies only
+  when a people is the declared subject, as before. Criterion **8**: the fixed closing
+  is the name series' wording (« raconter l'origine des noms »). Where the family's
+  approved profile carries a closing, judge that one; where none is approved, the
+  criterion is `sans objet` with the reason and the decision left to the operator — do
+  not write new closing copy and call it approved.
+- **`sans objet` is a recorded verdict, not a skipped line**: the note says why. A
+  blocking criterion that applies and scores 0 still blocks; `sans objet` never lifts
+  it, and never applies to criteria 3, 4, 5, 9 or 10.
 
 Une seule question : **quelqu'un qui voit cette production pour la première
 fois repart-il avec le message, et un abonné le reconnaît-il ?**
@@ -43,6 +87,9 @@ bref — la source l'emporte si elle a changé :
 - **La pièce répond à sa question d'accroche**, sans jugement.
 - **Pour un peuple : il porte d'abord le nom qu'il se donne. Celui que les autres
   lui donnent vient après.**
+- **Les peuples parlent d'abord, la source vient après** (critère 10) : la
+  narration dit ce que les peuples se disent, jamais « selon un linguiste » ; la
+  source est sur la carte de source.
 - **Ce qui est resté, pas ce qui a été pris.** Le registre de la réparation garde
   le colonisateur sujet du verbe.
 - **Trois phrases qu'on n'écrit pas** : « Avant, on vivait en accord avec le
@@ -87,6 +134,7 @@ Chaque critère se note **0, 1 ou 2**, avec la phrase citée qui justifie la not
 | 8   | **La clôture.** Carrousel et reel : la clôture unique de §7 ter, mot pour mot — « Notre objectif : raconter l'origine des noms, avec des sources. Vous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica. » Sur une page du site : le propos est atteignable (« Notre propos », la page About).                                                                                                                                                                                                                                                                                                                | oui      | l'abonné        |
 
 | 9 | **Aucun groupe n'est rendu plus chez lui qu'un autre.** Ni en le disant, ni en le laissant entendre. Nommer les peuples qui sont « entiers », « chez eux », « là depuis toujours », « les premiers » fabrique un dehors pour tous ceux qu'on ne nomme pas. La mesure se publie ; le classement, jamais. Un lot qui hiérarchise l'appartenance, même par omission : 0. | oui | les deux |
+| 10 | **The subject comes first; the reference follows.** Explain without borrowing an author’s authority. Preserve disputed status, local scope and the difference between publication date and event date. Never turn an outside interpretation into community consensus or imply fieldwork that did not happen. Oral accounts retain their real provenance and limits. Apply `docs/editorial/reader-facing-register.md`; books, historical actors and quoted speakers may be named when they are the actual subject. The `attribution-en-tete` checker is lexical; this criterion supplies semantic review. | oui | les deux |
 
 Les critères 1 et 7 servent le nouveau venu : il n'a que cette pièce. Le 2 et
 le 8 servent l'abonné : c'est la répétition du même bloc, à la même place, dans
@@ -106,12 +154,19 @@ sujet. Une grille lue à l'ancienne noterait 0 chaque pièce qui la porte, et
   ligne de vision n'est exigée : leur absence ne vaut pas 0.
 - **Critère 8, reel sans carte de clôture :** rare, mais possible (§7 ter). Le critère
   ne juge alors que l'ouverture ; l'absence de clôture ne vaut pas 0.
+- **Critère 8, exception nommée — le carrousel `retour-ou-decouverte` seul** (opérateur,
+  2026-09-28, écrite dans `GABARITS-SOCIAL.md` §7 ter). Sa dernière carte, « À vous la parole »,
+  tient lieu de clôture. Le critère est **sans objet** pour ce carrousel, avec la décision citée dans
+  `message.md`. L'exception ne se généralise pas : tout autre carrousel sans clôture unique note 0.
 - **Critère 3 :** la clôture n'est pas un renversement d'agent, donc le critère
   juge les phrases du corps de la pièce et de la morale : le peuple y reste le
   sujet de la phrase, et le colonisateur n'est jamais celui des phrases qui
   concluent.
 
 ### Un reel au gabarit : les critères 1, 2, 3 et le vocabulaire
+
+Cette section vaut pour la **série name-origin**. Un reel d'une autre famille n'a pas
+de gabarit de nom à respecter : voir « Family reading » plus haut.
 
 Depuis le 2026-09-21, la narration d'un reel suit le gabarit de sa catégorie
 (`.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md`). Lue avec
@@ -319,6 +374,13 @@ Lus : `cards.json`, `narration.fr.txt`, `post.md`
 
 | #   | Critère | Note | Bloquant | La phrase | Pourquoi |
 | --- | ------- | ---- | -------- | --------- | -------- |
+
+## Revues appliquées
+
+Une ligne par revue du plan de la famille (`check-family-brief.mjs`) : les cinq
+universelles (`required`), puis `name`, `myth`, `geography`, `music`,
+`name-origin-gabarit` avec `required` et le verdict de la revue, ou `not-applicable`
+et **la raison**. Une revue `not-applicable` n'en annule aucune autre.
 
 ## À réécrire
 

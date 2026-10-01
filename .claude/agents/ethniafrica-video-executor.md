@@ -8,3 +8,5 @@ disallowedTools:
 Read `.claude/skills/ethniafrica-production/references/executor.md` and execute only
 the supplied milestone. Return evidence and unresolved decisions to the coordinator.
 Never spawn agents or advance to another milestone yourself.
+Roles, inputs, outputs and resume conditions:
+`.claude/skills/ethniafrica-production/references/handoffs.md`. The reviewer of an artifact is never its producer.

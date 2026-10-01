@@ -122,8 +122,9 @@ describe("getCorpusCounts (ETNI-1327, REQ-113)", () => {
     expect(counts.patronymes).not.toBe(counts.nameForms);
   });
 
-  // DEC-050 withholds a name resting only on unverified sources from the
-  // sitemap. That is a crawler policy: the tile still owes the reader every
+  // DEC-050 once withheld a name resting only on unverified sources from the
+  // sitemap (it now submits any name citing a readable source). That is a
+  // crawler policy: the tile still owes the reader every
   // name the corpus documents, and would understate the dimension if the
   // indexing predicate were ever reused to narrow this read.
   // @req REQ-147

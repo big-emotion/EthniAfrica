@@ -5,6 +5,30 @@ description: Render EthniAfrica scene videos from an approved scene plan, or ren
 
 # produire — rendre carrousels et reels
 
+## Family-scoped reviews (2026-09-29)
+
+Before any render, read the edition's plan:
+`node social/tools/narration/check-family-brief.mjs <brief.json>`. The five universal
+reviews (provenance, uncertainty, attribution, intelligibility, non-essentialising) are
+owed by every family and no scene profile — `free` included — waives one. `name`,
+`myth`, `geography`, `music` and `name-origin-gabarit` are owed only where the plan says
+`required`; each `not-applicable` is recorded with its reason in `message.md` (« Revues
+appliquées ») and cancels nothing else.
+
+- **`mythe.md` exists only when the `myth` review is `required`.** No myth, no
+  `mythe.md`, and gate 5 is not blocked by its absence; the engine's `porte_message`
+  already treats it as optional. A `mythe.md` that exists and says « ne passe pas » still
+  blocks.
+- **`check-gabarit.mjs` and the production ledger are for `series: name-origin`.** A
+  social-only piece is never stamped in `docs/productions/` (see « Pour finir »).
+- **Geography and music** reviews follow the claims and media present: a map or route
+  claim is checked against its sources; a music claim or audio excerpt needs the recorded
+  audio review and the excerpt's attribution.
+- **Each edition is independent.** A carousel does not wait for a video, and a video
+  adapted from an approved carousel reuses that text approval for unchanged copy. Only
+  the checks whose inputs changed (a claim, an asset, the audio, a layout, a destination)
+  are rerun. No weekday and no date is required to render or to mark an edition ready.
+
 ## Mémoires sonores delivery scope (2026-09-25)
 
 Read `docs/design/gabarits-social/MEMOIRES-SONORES.md` first for this feature.
@@ -36,7 +60,9 @@ require a carousel deck or impose image timers on video production.
 For name-origin narration only, read
 `.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md` and run
 `node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <category>`.
-Other profiles do not run this category checker.
+Other profiles do not run this category checker. A name-origin brief that carries a
+`narrativeDesign` is checked with `--brief <brief.json>` instead (its plan was chosen
+and shown upstream; the legacy scene list and two-explanation ceiling do not apply).
 
 Require the genuine text-approval record, approved recording, matching alignment,
 filled plan, relative asset bundle and source/licence register. Review the brief,
@@ -46,9 +72,30 @@ The scene renderer checks the text marker/hashes; it does not itself certify the
 editorial audits or infer licensing compatibility. Final delivery checks explicit,
 version-bound review records rather than fabricating those judgments.
 
+### Pending rights do not block a private render
+
+Publication clearance is not a prerequisite for `prepare`, `render` or private
+proof delivery. Once the text, recording and visual plan are approved and the
+technical inputs are ready, render the video even when voice publication rights
+or permission for an incorporated image, page or excerpt are still pending.
+Recording approval means approval of the performance; it does not assert rights
+clearance. Do not ask for clearance or a separate waiver before rendering.
+
+Record each unresolved permission in the source/licence register and leave the
+corresponding release-review checks pending. For example, pending publication
+rights for the Marie-Victoire voice or an unanswered request to Présence Africaine
+for page 46 must not stop the private proof. These examples do not establish the
+actual status of either request. Deliver the proof with its existing proof badge
+and a concise list of outstanding rights; never invent permission or mark it passed.
+
+Pending rights still prevent `finalize`, ready-to-publish status and publication.
+Ask any clearance question at the release-review stage, after delivering the proof,
+only when needed to proceed to the publication package. Existing text, visual-plan,
+recording and paid-generation approval requirements continue to apply.
+
 For a new prepared package, run `ethni_scene_pipeline.py prepare` with its plan,
 new named lock and private proof output. Inspect the cue preview index at phone
-size, including route reveals, each timeline date and the final overview. The lock
+size, including route reveals and each timeline date. The lock
 records technical identity and sampled pixels; it is not editorial approval.
 If the brief authorizes production and the unchanged script/voice are approved,
 continue without another generic permission request.
@@ -78,6 +125,14 @@ using `.claude/skills/ethniafrica-production/references/publication-delivery.md`
 The mobile preview does not satisfy the cover requirement. Inspect the cover, record
 real approval evidence and deliver explicit links to both files. A registered post
 receives verified library copies of all three: video, cover and Markdown.
+Complete the filing event described in `docs/social-workshop-cleanup.md` after
+those copies are verified: register the top-level workshop with `--workshop`,
+complete its `production-record.md`, then run
+`node social/tools/library/register-post.mjs --id <id> --filed --write`.
+This automatically checks the ledger, delivery and record before removing proven
+scratch. A failure remains visible; do not report housekeeping complete or fall
+back to recursive deletion. Retain the sealed release, review evidence, approved
+voice/timing, source assets and operational plans. They are replay dependencies.
 Missing rights or editorial decisions are reported together; retain the proof
 while they are unresolved. Do not publish or schedule automatically.
 
@@ -90,11 +145,21 @@ their archived renderer version; they do not define current production rules.
 
 Dernière étape de la chaîne. **Rien ne vient après.** La publication est un acte
 humain : l'opérateur poste, puis renseigne la date et les réseaux dans la section
-Diffusion du `post.md`, ce qui fait passer le sujet en ✅. Tu ne publies pas, tu
-ne programmes pas, tu ne proposes pas de le faire.
+Diffusion du `post.md`. Chaque publication est une **occurrence** de l'édition, pas
+un état final : elle ne ferme ni le sujet, ni l'angle, ni l'édition, et une nouvelle
+édition, une adaptation ou une republication restent légitimes. Tu ne publies pas,
+tu ne programmes pas, tu ne proposes pas de le faire.
 
 Si `cards.json` ou `SOURCES.md` manquent, dis-le et propose `structure`. Ne saute
 pas l'étape.
+
+**Un carrousel dont le brief porte une `narrativeDesign` (`format: "carrousel"`)** ne
+change rien au rendu : mêmes cinq portes, même moteur, même profil. Vérifie seulement
+que `check-family-brief.mjs` accepte le brief (un plan non montré, un choix synthétique
+ou un brouillon n'est pas un feu vert) et que le texte complet des cartes est validé ;
+un choix de plan n'est pas cette validation. Le plan ne dit rien du confort de lecture :
+regarde le rendu à 320, 390 et 430 px d'abord, et ne réduis jamais la typographie pour
+faire tenir une carte.
 
 ## La porte qui précède les cinq autres : le texte validé
 
@@ -140,8 +205,9 @@ Le dossier du post est celui de la bibliothèque, pas celui de l'atelier — voi
    porte est franchie si ce verdict dit **passe** et s'il est plus récent que
    `cards.json`, `narration.fr.txt` et `post.md` : un verdict rendu sur une
    version précédente du texte ne juge pas celle qu'on rend. Lance aussi
-   `ethniafrica-mythe` : un `mythe.md` qui dit **ne passe pas**, ou plus ancien
-   que ces fichiers, ferme cette porte de la même façon.
+   `ethniafrica-mythe` **quand la revue `myth` est `required`** : un `mythe.md` qui
+   dit **ne passe pas**, ou plus ancien que ces fichiers, ferme cette porte de la
+   même façon. Quand elle est `not-applicable`, il n'y a pas de `mythe.md` à écrire.
 
 La cinquième porte n'empêche pas de rendre, comme les quatre autres : un message
 qui ne passe pas fait sortir le lot **en épreuve**, et l'encart de l'épreuve
@@ -165,6 +231,11 @@ le suffixe `-epreuve`.
 ## Ce que tu appliques
 
 Tout vient de `docs/design/gabarits-social/GABARITS-SOCIAL.md` :
+
+- **§0.7, l'image plein cadre.** Every carousel card and every reel scene has a
+  full-frame image background; there is no dark, plain or solid-colour background mode.
+  Une carte ou une scène sans image échoue au rendu, avec un message clair : ne la
+  « répare » jamais avec un fond uni, sombre ou de couleur, rends-la à `structure`.
 
 - **§6, la règle de choix de disposition.** `auto` mesure et choisit. Le repli sur
   résolution est la règle la plus importante du lot : une image de 900 px en
@@ -263,13 +334,25 @@ For a carousel, when all five gates pass, set its ready status through the
 registry rather than editing the generated header:
 
 ```
-node social/tools/library/register-post.mjs --id <id> --status pret --write
+node social/tools/library/register-post.mjs --id <id> --workshop <Subject> --status pret --write
 node <00-Index>/migrate-library.mjs --write     # Brouillon → Valide, dossier et rendus compris
 node <00-Index>/build-index.mjs
 node <00-Index>/sync-deliverables.mjs --write  # après le déplacement : il compare au bac du statut
+node social/tools/library/register-post.mjs --id <id> --filed --write
 ```
 
-**Stampe le carnet de production** — `docs/productions/<typologie>/<NNN>-
+Before this sequence, complete `production-record.md` using
+`docs/social-workshop-cleanup.md`: actual angle/family, decisions, cuts, sources,
+review evidence, selected take and all associated editions. The final command is
+the required filing completion event and automatically cleans disposable scratch.
+It never moves or deletes library products. A missing record, unfinished associated
+edition or incomplete filing blocks cleanup. Report that blocker and retain the
+workshop. Historical backlog cleanup still requires the operator's separate consent;
+use a dry run when inspecting previously filed productions.
+
+**Série name-origin seulement : stampe le carnet de production** — une pièce d'une
+autre famille, ou sociale seulement, n'y est jamais inscrite et n'y reçoit aucun
+chemin de site fabriqué. `docs/productions/<typologie>/<NNN>-
 <slug>.json` (`docs/plans/production-history-plan.md` §6, `campaign` égal au
 `--id` ci-dessus). Pour chaque réseau que le dossier-réseau tout juste peuplé
 dessert (le nom du dossier le dit, §1 bis), ajoute une ligne à `publications[]` :
@@ -287,5 +370,6 @@ vérifie le bac et le `post.md`, pas le code de sortie. Plusieurs montages sans
 Recalcule l'état : `node social/tools/etat-pipeline/build-etat.mjs`.
 
 Puis dis, en une ligne : ce qui a été rendu, dans quel dossier, et l'état atteint.
-Si le sujet est en 🟢, rappelle qu'il ne manque que l'acte de publier — et que
-c'est l'opérateur qui le fait.
+Si l'édition est en 🟢, rappelle qu'il ne manque que l'acte de publier — et que
+c'est l'opérateur qui le fait, quand et où il le décide : aucun jour ni aucun réseau
+n'est imposé.

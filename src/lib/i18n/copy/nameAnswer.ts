@@ -19,6 +19,11 @@ import type { Language } from "@/types/shared";
 
 export interface NameAnswerCopy {
   eyebrow: string;
+  /** The link after a subject's answer; the kind tells two same-named subjects apart. */
+  answerFiche: (kind: string) => string;
+  /** Expand and collapse a long list of names in place. */
+  showMoreNames: (count: number) => string;
+  showFewerNames: string;
   /** Movement II, in the grammar's order. */
   disambiguation: string;
   appellations: string;
@@ -32,8 +37,6 @@ export interface NameAnswerCopy {
   /** Movement III. */
   silences: string;
   silencesLead: string;
-  noDatedAttestation: string;
-  noDatedAttestationBody: string;
   invitation: string;
   invitationBody: string;
   invitationAction: string;
@@ -74,6 +77,10 @@ export interface NameAnswerCopy {
 export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
   en: {
     eyebrow: "Where this name comes from",
+    answerFiche: (kind) => `Read the entry · ${kind}`,
+    showMoreNames: (count) =>
+      `Show ${count} more ${count === 1 ? "name" : "names"}`,
+    showFewerNames: "Show fewer",
     disambiguation: "Which one are you looking for?",
     appellations: "The names",
     appellationsLead:
@@ -86,9 +93,6 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     atlasHolds: "What we know",
     silences: "What we do not know yet",
     silencesLead: "A declared silence, not an oversight.",
-    noDatedAttestation: "No dated attestation",
-    noDatedAttestationBody:
-      "The sources shown here do not yet date these forms.",
     invitation: "Have we got it wrong?",
     invitationBody:
       "If you know a source on any of these names, it will be read.",
@@ -115,6 +119,10 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
   },
   fr: {
     eyebrow: "D'où vient ce nom",
+    answerFiche: (kind) => `Voir la fiche · ${kind}`,
+    showMoreNames: (count) =>
+      `Afficher ${count === 1 ? "l’autre appellation" : `les ${count} autres appellations`}`,
+    showFewerNames: "Réduire",
     disambiguation: "Lequel cherchez-vous ?",
     appellations: "Les appellations",
     appellationsLead:
@@ -127,9 +135,6 @@ export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
     atlasHolds: "Ce que nous savons",
     silences: "Ce que nous ne savons pas encore",
     silencesLead: "Un silence déclaré, pas un oubli.",
-    noDatedAttestation: "Aucune attestation datée",
-    noDatedAttestationBody:
-      "Les sources présentées ici ne permettent pas encore de dater ces formes.",
     invitation: "Nous nous sommes trompés ?",
     invitationBody:
       "Si vous connaissez une source sur l’un de ces noms, elle sera lue.",

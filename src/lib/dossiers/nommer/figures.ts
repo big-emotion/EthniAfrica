@@ -25,7 +25,7 @@
 import type { CorpusFigure, FigureKey } from "./types";
 
 /** Every count below was taken against `recette` on this date. */
-const COUNTED_ON = "2026-09-23";
+const COUNTED_ON = "2026-09-29";
 
 const PEOPLE_GLOB = "dataset/source/afrik/peuples/*/*.json";
 
@@ -52,7 +52,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "corpus-peoples",
     label: "fiches de peuple",
-    value: 771,
+    value: 772,
     method: `nombre de fichiers ${PEOPLE_GLOB}`,
     countedOn: COUNTED_ON,
   },
@@ -60,7 +60,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "corpus-exonyms",
     label: "exonymes recensés",
-    value: 3119,
+    value: 3122,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -74,7 +74,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // Maninka, Bambara, Dioula… » — which the count took for an autonym. A
     // grouping of peoples has no name for itself, so those fiches now declare
     // the absence with `null`, and the figure counts only what it says it does.
-    value: 760,
+    value: 761,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
     countedOn: COUNTED_ON,
@@ -90,9 +90,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     figureKey: "status-contested-or-colonial",
     label:
       "fiches déclarant leur appellation contestée ou héritée de la colonisation",
-    value: 443,
+    value: 444,
     method:
-      "fiches dont classificationStatus vaut contested (253) ou colonial-legacy (190)",
+      "fiches dont classificationStatus vaut contested (254) ou colonial-legacy (190)",
     countedOn: COUNTED_ON,
   },
   "status-other": {
@@ -142,7 +142,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     figureKey: "probe-european",
     label: "fiches employant le radical « europ- »",
     // 119 -> 120 on 2026-09-25: the same Dogon sentence (« Europeens »).
-    value: 120,
+    value: 121,
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -150,7 +150,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-neighbours",
     label: "fiches attribuant un exonyme à des voisins",
-    value: 112,
+    value: 113,
     method: "radical voisin dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -174,7 +174,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-arabic",
     label: "fiches employant le radical « arab- »",
-    value: 73,
+    value: 74,
     method: "radical arab dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -190,7 +190,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-slavery",
     label: "fiches employant le radical « esclav- »",
-    value: 26,
+    value: 27,
     method: "radical esclav dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -264,13 +264,13 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "patronyme-fiches",
     label: "fiches de nom",
-    value: 592,
+    value: 604,
     method:
       "fiches dataset/source/afrik/patronymes/PAT_*.json portant un nameSystem et " +
       "au moins une source autre que la file d'attente des candidats — les fiches " +
       "générées depuis cette file couvrent un nom sans rien en documenter, et le " +
       "dossier dit « documente »",
-    countedOn: "2026-09-23",
+    countedOn: COUNTED_ON,
   },
   "patronyme-non-hereditary": {
     kind: "counted",

@@ -8,7 +8,8 @@ usual text column sits over it. A cover too small for the full frame falls back 
 standard cartouche by the engine's own resolution rule; nothing here decides that.
 
 Only the opening and the closing need an image made: every cover of the selection side
-by side, on the deck's ground, above the start of that card's own veil. Covers are read
+by side, above the start of that card's own veil, over a full-frame picture (the first
+cover, enlarged and blurred). There is no plain ground behind them. Covers are read
 from `<projet>/couvertures/<image.couverture>` and the images are written to
 `<projet>/assets/<image.fichier>`.
 """
@@ -25,17 +26,22 @@ W, H = 1080, 1350
 TOP = 64
 LEFT, WIDTH = 90, 900
 MIN_ZONE = 200
-# How far into the veil ramp a mosaic may reach: it melts into the ground like a photograph.
+# How far into the veil ramp a mosaic may reach: it melts into its picture like a photograph.
 RAMP_KEEP = 190
 
 
-def _ground(deck):
-    return gab._rgb(gab._fond(deck))
+def _picture(cover):
+    """A full-frame picture made of a cover: enlarged to fill the card and blurred past legibility."""
+    scale = max(W / cover.width, H / cover.height)
+    big = cover.convert("RGB").resize((max(W, round(cover.width * scale)), max(H, round(cover.height * scale))),
+                                      Image.Resampling.BILINEAR)
+    left, top = (big.width - W) // 2, (big.height - H) // 2
+    return big.crop((left, top, left + W, top + H)).filter(ImageFilter.GaussianBlur(40))
 
 
 def free_zone(card, deck):
     """(x, y, w, h) above the veil the engine will draw under this card's own text."""
-    blank = Image.new("RGB", (W, H), _ground(deck))
+    blank = Image.new("RGB", (W, H), (128, 128, 128))
     plan = gab.plan(card, deck, "carrousel", image=blank)
     banner = plan.bloc("entete-bandeau")
     ramp = plan.bloc("voile-rampe")
@@ -78,7 +84,7 @@ def prepare_mosaic(covers, card, deck):
             best = (area, rows, cols)
     _, rows, cols = best
     cell_w, cell_h = w / cols, h / rows
-    canvas = Image.new("RGBA", (W, H), _ground(deck) + (255,))
+    canvas = _picture(covers[0]).convert("RGBA")
     for i, cover in enumerate(covers):
         row, col = divmod(i, cols)
         in_row = min(cols, len(covers) - row * cols)

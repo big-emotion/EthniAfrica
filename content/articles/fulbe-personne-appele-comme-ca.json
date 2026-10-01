@@ -1,0 +1,34 @@
+{
+  "id": "fulbe-personne-appele-comme-ca",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "fulbe-personne-appele-comme-ca",
+    "title": "Peul, Fulbe, Foulani, Fellata : d'où viennent ces noms ?",
+    "excerpt": "Peul, Fula, Fulani, Fellata : au Mali, aucun de ces noms n'est le leur.",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "peul-fula-fulani"
+    },
+    "formats": [],
+    "originals": [
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/DdJiDFiCp5H/",
+        "publishedAt": "2026-09-11"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7684269804156423446",
+        "publishedAt": "2026-09-11"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

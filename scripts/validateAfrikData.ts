@@ -4781,13 +4781,22 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // 7048 -> 7039 on 2026-09-23: PPL_DYULA.json deleted (accidental duplicate
   // of PPL_DIOULA, merged into it — see docs/editorial for the classification
   // and demography ledger entries removed in the same change).
-  peuple: 7039,
+  // 7039 -> 7041 on 2026-09-29: PPL_DIAWAMBE.json added. It omits two
+  // optional keys the model says to leave out until they apply
+  // (`externalIdentifiers` with no unambiguous match, `historicalAffiliation`
+  // for a people with a defensible linguistic family), one count each like
+  // every fiche that omits them.
+  // 7041 -> 7025 on 2026-09-29: spelling aliases and missing appellation keys
+  // filled on the most-searched peoples, each one a key the model declares.
+  peuple: 7025,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
   // day, when FLG_BERBERE gained `originOfHistoricalTerm` the same way.
   famille_linguistique: 104,
-  pays: 13,
+  // 13 -> 9 on 2026-09-29: `culture.mainLanguages` added on Mali, Senegal,
+  // Burundi and the Republic of the Congo from an official toponymic factfile.
+  pays: 9,
 };
 
 // Authoring blocks no model declares: `_meta` is curator metadata and

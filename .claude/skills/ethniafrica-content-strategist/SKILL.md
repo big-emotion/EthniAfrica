@@ -9,6 +9,18 @@ metadata:
 
 # EthniAfrica Content Strategist
 
+## Editorial voice and reader needs (2026-09-30)
+
+Before writing or reviewing reader-facing copy, read
+`docs/editorial/reader-facing-register.md` and `docs/editorial/audience-personas.md`.
+EthniAfrica speaks as a popular educator using research methods, without claiming
+scientific, linguistic or historical qualifications for its operator. Explain the
+subject in ordinary language, keep uncertainty in the sentence, and put traceable
+sources after it. Oral and local accounts are sources in their own right; preserve
+their actual context and never invent interviews or community consensus.
+State the primary reader need in the existing working report; personas are
+provisional, and geography or platform demographics never establish diaspora identity.
+
 Decides **what to publish next, on which channel, how often, and for whom.**
 
 It is a **consumer** in the three-skill pipeline; its audience evidence comes
@@ -56,14 +68,30 @@ days → stop and run `/ethniafrica-audience-audit` first.** Read its
 `## Handoffs → For /ethniafrica-content-strategist` section, the page verdicts,
 and the acquisition table.
 
-## Step 2 — Collect every network, every run
+## Step 2 — Collect every network, for a run that plans or audits
 
-**This skill collects all six networks on every run** — YouTube, LinkedIn,
-Instagram, TikTok, Facebook and X (Twitter) — whatever the age of the audience
-report or of `reference/published-state.md`. Operator ruling, 2026-09-15: a run
-skipped three networks because the audit had read them the day before, and
-planned without a Facebook reel that had drawn 21 211 views in fourteen hours. A
-report one day old already misses a day of posts.
+**This skill collects all six networks on every run that decides what to
+publish or commissions an audit** — YouTube, LinkedIn, Instagram, TikTok, Facebook and X
+(Twitter) — whatever the age of the audience report or of
+`reference/published-state.md`. Operator ruling, 2026-09-15: a run skipped three
+networks because the audit had read them the day before, and planned without a
+Facebook reel that had drawn 21 211 views in fourteen hours. A report one day old
+already misses a day of posts.
+
+**This collection is owed to a strategy or audit commission, not to every task
+that touches the chain.** Rendering, resuming a video, editing a skill, fixing a
+tool or preparing a brief whose strategy basis is already recorded does not
+re-collect six networks (2026-09-29). Only a run that is itself the audit, or that
+must justify a subject against comparables, pays this cost.
+
+**The evidence basis is stated, never assumed.** A proposal rests either on
+**dated evidence** — the numbers of a comparable published piece, from a report of the
+last 30 days — or is labelled **exploratory**, with the reason no comparator exists
+(a new family, a new format, an untested network). An exploratory subject is
+legitimate and is proposed as a test with what would count as a result; it is never
+presented as measured. The brief carries this as `strategy.basis`
+(`social/tools/narration/check-family-brief.mjs` refuses a brief with neither, or
+with a dated report older than 30 days).
 
 X joined on 2026-09-16 and is the one channel here that **cannot be collected
 from a dashboard**: account analytics sit behind X Premium, and both
@@ -122,26 +150,46 @@ video view and an Instagram Reels view count different things.
 ## Step 3 — Decide the social plan
 
 **The cadence is `docs/productions/README.md`'s, not `reference/platforms.md`'s.**
-Read its current operator revision before proposing slots. On 2026-09-22 the
-operator replaced the numbered volume ramp with Monday/Wednesday/Friday
-appointments and a connected subject sequence: a complex subject may span
-several appointments, and there is no fixed quota of two or three new subjects
-per week. Four to six distinct pieces is a working envelope, subject to source
-readiness; cross-posts do not count as additional produced pieces. Never revive
-the retired five-subjects-per-day target or force a carousel without an attested
-myth. Preserve the selected order and explain the connection between episodes.
-The dated plan lives under `docs/editorial/strategy/`; update it with the evidence
-behind any change in direction. Later operator decisions take precedence.
+Read its current operator revision before proposing slots. Monday, Wednesday and
+Friday are the **name series' appointments when that series is scheduled**; they are
+not a rule for every piece. A ready edition may have no date, a topical opportunity
+(an anniversary, a news event) may bring a verified subject forward, and a ready
+library, a connected series and topical items coexist. No weekday, no automatic
+schedule and no cross-post to every network is required. A complex subject may span
+several appointments, there is no fixed quota of new subjects per week, and four to
+six distinct pieces is a working envelope subject to source readiness; cross-posts do
+not count as additional produced pieces. Never revive the retired five-subjects-per-day
+target. Preserve the selected order and explain the connection between episodes. The
+dated plan lives under `docs/editorial/strategy/`; update it with the evidence behind
+any change in direction. Later operator decisions take precedence.
+
+**Choose a narrative family, then a format, then networks** — three separate
+decisions (`.claude/skills/ethniafrica-structure/references/narrative-families.md`;
+`docs/design/gabarits-social/EDITORIAL-CONTRACT.md`). A subject may have several
+angles; an adaptation (same angle, other format), a deepening and a republication are
+three different legitimate acts, and a subject already covered is not excluded for
+that. No myth, no name-origin question and no site record is required of a social
+piece; the name-origin machinery belongs to `series: name-origin`.
+
+**Format evidence is a dated observation, not a rule.** The 2026-09-26 format audit,
+as corrected on 2026-09-29 (`docs/audience/format-audit-2026-09-26/decision-matrix.md`,
+`measurement-protocol.md`), is the current reading: reels are the better-observed way
+to reach new people on Instagram and Facebook; both formats produced breakouts on
+TikTok; Shorts are the best-observed YouTube video format, not the only permitted one;
+LinkedIn and X did not test formats. Cite it as evidence with its date and sample, let
+a newer report override it, and never turn it into a channel ban or a required pairing.
+Both formats can teach, move an audience, attract discovery and be saved.
 
 What varies per channel is the **cut, the caption, and whether video is the
 right format there at all**, per `reference/platforms.md` and GABARITS §1 bis.
 
 Per proposed piece, state: the pillar and the slot it fills; the single claim it
-makes and where the corpus sources it; the hook, written out; the channels and
+makes and its identifiable sources (a corpus record when applicable); the hook, written out; the channels and
 what changes between them; and the comparable that justifies it, with numbers.
 
-A video whose claim is not already in a fiche is a research request first — hand
-it to `/afrik-curator` before scripting.
+A claim needs verified provenance before scripting. Research a missing claim first;
+use `/afrik-curator` when a fiche needs work. A sourced social-only piece does not
+require creating a fiche merely to fit the production chain.
 
 ## Step 4 — Decide the site plan
 
@@ -175,7 +223,8 @@ two are manual regardless.
 
 - **Source tiers**: every claim carries its source and tier (`official` /
   `referenced` / `unverified`). Nothing is excluded for being weak; everything is
-  labelled. Wikipedia is not a source — cite what it led to.
+  labelled. Wikipedia is read first — prefer to cite what it led to (rule:
+  `docs/editorial/reader-facing-register.md`, "Using sources").
 - **Reader-facing register**: never let the workshop's vocabulary reach the
   reader. No file paths, no `PPL_`/`FLG_`/`PAT_` identifiers, no _file d'attente_,
   _la passe_, _protocole de recherche_. This binds social copy as much as fiche
@@ -183,8 +232,9 @@ two are manual regardless.
 - **Colonial terminology**: keep the colonial-era name, explain why it is
   problematic, always surface the autonym. Half the pillar rotation is built on
   exactly this move.
-- Documentation and commits in **English**; reader-facing and social copy in
-  **French**, the site's only language.
+- Documentation and commits in **English**. Reader-facing French copy carries
+  its English counterpart under `CLAUDE.md`’s bilingual-content rules; publication
+  remains French-only unless the operator explicitly changes the locale mode.
 
 ## Boundaries
 

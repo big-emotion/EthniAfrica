@@ -31,15 +31,53 @@ describe("ConfidenceChip", () => {
       />
     );
     expect(
-      screen.getByText(/87 % · 4 sources · verified 2025-09-21/)
+      screen.getByText(/4 references · reviewed 2025-09-21/)
     ).toBeVisible();
     expect(
       screen.getByRole("button", { name: /open the source chain/ })
     ).toBeVisible();
   });
 
+  // A percentage read as a probability of truth, and « verified » read as a
+  // guarantee, were what the old wording promised (audit findings T04, T02).
+  // The chip says how many references there are and when a person last reviewed
+  // them, and nothing about how likely the claim is to be true.
+  // @req REQ-019
+  it("states no probability of truth and no verification", () => {
+    const { container } = render(
+      <ConfidenceChip
+        language="fr"
+        confidenceScore={87}
+        sourceCount={4}
+        lastHumanAuditAt="2025-09-21"
+      />
+    );
+
+    expect(container.textContent).not.toMatch(/%/);
+    expect(container.textContent).not.toMatch(/vérifi|verified/i);
+    expect(screen.getByRole("button").getAttribute("aria-label")).not.toMatch(
+      /confiance|confidence|vérifi|verified|%/i
+    );
+  });
+
+  // @req REQ-019
+  it("counts one reference in the singular", () => {
+    render(
+      <ConfidenceChip
+        language="fr"
+        confidenceScore={40}
+        sourceCount={1}
+        lastHumanAuditAt="2025-09-21"
+      />
+    );
+
+    expect(screen.getByText(/1 référence ·/)).toBeInTheDocument();
+    expect(screen.queryByText(/1 références/)).not.toBeInTheDocument();
+  });
+
   describe("rendering with complete data", () => {
-    it("renders the typographic pill with confidence score, source count and audit date", () => {
+    // @req REQ-019
+    it("renders the typographic pill with the reference count and the review date", () => {
       render(
         <ConfidenceChip
           confidenceScore={87}
@@ -49,7 +87,7 @@ describe("ConfidenceChip", () => {
       );
 
       expect(
-        screen.getByText(/87\s*%\s*·\s*4\s*sources\s*·\s*vérifié\s*2025-09-21/i)
+        screen.getByText(/4\s*références\s*·\s*revu\s*2025-09-21/i)
       ).toBeInTheDocument();
     });
 
@@ -80,7 +118,7 @@ describe("ConfidenceChip", () => {
       const button = screen.getByRole("button");
       expect(button).toHaveAttribute(
         "aria-label",
-        "ouvrir la chaîne de sources pour cette assertion (confiance 87 %, 4 sources, vérifiée le 21 septembre 2025)"
+        "ouvrir la chaîne de sources pour cette assertion (4 références, dernière relecture le 21 septembre 2025)"
       );
     });
 
@@ -163,7 +201,7 @@ describe("ConfidenceChip", () => {
       );
 
       expect(
-        screen.getByText(/42\s*%\s*·\s*2\s*sources\s*·\s*vérifié\s*2025-09-21/i)
+        screen.getByText(/2\s*références\s*·\s*revu\s*2025-09-21/i)
       ).toBeInTheDocument();
     });
   });

@@ -7,8 +7,7 @@ and its media outside Git. The [feature catalogue](../SCENE-CATALOGUE.md) explai
 | ---------------------------- | --------------------- | ------------------------------ | ------------------------------------------------------- |
 | Original map POC             | Fill local paths      | Wide / focused / closing view  | National orientation, flags, city points, progress      |
 | Geographic 10-second excerpt | Fill local paths      | During speech / after pullback | Animated journey, geographic note, silent wider context |
-| Corner-note timeline         | Fill local paths      | Each date and final overview   | Optional context in the upper-right                     |
-| Composed timeline            | Fill local paths      | Kirina / journey / overview    | Region + points + route under chronological rail        |
+| Composed timeline            | Fill local paths      | Kirina / journey / each date   | Region + points + route under the chronological band    |
 | Mixed image/map proof        | Fill local paths      | Every transition               | Photographs/documents with maps; style may need review  |
 
 Embed the actual videos and selected phone frames below. State whether a proof was approved,

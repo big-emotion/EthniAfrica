@@ -43,6 +43,14 @@ function dossierCiting(...sources: PatronymeSource[]) {
   };
 }
 
+// The corpus writes `source_kind` on the raw dossier; the reader parses it.
+const machineWritten = {
+  title: "Relevé de couverture",
+  url: null,
+  tier: "unverified",
+  source_kind: "ai_generated",
+} as unknown as PatronymeSource;
+
 function metadataFor(slug: string) {
   return generateMetadata({ params: Promise.resolve({ lang: "fr", slug }) });
 }
@@ -52,8 +60,12 @@ beforeEach(() => {
 });
 
 describe("the name fiche's indexing directive", () => {
+  // The sitemap submits every name that cites a readable source, whatever its
+  // tier; a page that then declared `noindex` would be a submitted URL that
+  // contradicts itself. Both follow the same rule, which replaces DEC-050's
+  // threshold (operator approval 2026-09-30, audit finding T03).
   // @req REQ-147
-  it("withholds a name resting only on unverified sources from the index", async () => {
+  it("leaves a name resting only on unverified sources free to be indexed", async () => {
     getPatronymeByIdMock.mockResolvedValue(
       dossierCiting({
         title: "Un blog de généalogie",
@@ -64,8 +76,36 @@ describe("the name fiche's indexing directive", () => {
 
     const metadata = await metadataFor("PAT_KEITA");
 
+    expect(metadata.robots).toBeUndefined();
+    expect(metadata.alternates?.canonical).toBe(KEITA_ROUTE);
+  });
+
+  // A dossier resting only on machine-written sources is published and
+  // labelled, but not offered to a search index (operator decision 2026-09-30).
+  // The sitemap applies the same predicate.
+  // @req REQ-147
+  it("withholds a name whose every citation is AI-generated, and keeps its canonical", async () => {
+    getPatronymeByIdMock.mockResolvedValue(dossierCiting(machineWritten));
+
+    const metadata = await metadataFor("PAT_KEITA");
+
     expect(metadata.robots).toEqual({ index: false, follow: true });
     expect(metadata.alternates?.canonical).toBe(KEITA_ROUTE);
+  });
+
+  // @req REQ-147
+  it("leaves a name free to be indexed when one human-written source sits beside the AI survey", async () => {
+    getPatronymeByIdMock.mockResolvedValue(
+      dossierCiting(machineWritten, {
+        title: "Un blog de généalogie",
+        url: null,
+        tier: "unverified",
+      })
+    );
+
+    const metadata = await metadataFor("PAT_KEITA");
+
+    expect(metadata.robots).toBeUndefined();
   });
 
   // @req REQ-147

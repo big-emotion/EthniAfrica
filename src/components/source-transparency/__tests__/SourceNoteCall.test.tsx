@@ -7,7 +7,7 @@ import { SourceNoteCall } from "@/components/source-transparency/SourceNoteCall"
  * The inline mark that turns a sourced field into a citation.
  *
  * Deliberately not `ConfidenceChip`, which occupies the same character
- * position. The chip states a verdict — "85 % · 3 sources · vérifié le …" —
+ * position. The chip states a reference count and a review date — "3 références · revu …" —
  * and degrades to a text link the moment any of those three is null, which on
  * this corpus is almost always, because `last_human_audit_at` is unset nearly
  * everywhere. A note callout must never degrade: it exists because sources

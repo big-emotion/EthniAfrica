@@ -8,11 +8,11 @@ from PIL import Image, ImageColor, ImageDraw, ImageOps, ImageFilter
 import ethni_globe_layers as globe_layers
 import ethni_tokens as tokens
 from ethni_globe import GlobeCamera, globe_camera_at
-from ethni_montage import MINIATURE_S
 from ethni_type import font
 from ethni_map import Camera, camera_at, mix, partial_path, smooth
+from ethni_scene_kinetic import cues as kinetic_cues
 from ethni_scene_plan import STATUS, asset_path, scene_at, transition_at, require
-from ethni_scene_timeline import draw_timeline
+import ethni_scene_captions as captions
 import ethni_scene_fullbleed as fullbleed
 
 
@@ -72,7 +72,35 @@ def flowing_line(draw, points, colour, width, phase, dash=26, gap=64):
 
 
 def scene_map(scene):
-    return scene.get("map") if scene["type"] == "map" else scene.get("timeline", {}).get("background")
+    if scene["type"] == "map":
+        return scene.get("map")
+    if scene["type"] in ("comparison", "kinetic"):
+        return scene.get("backdrop", {}).get("map")
+    return scene.get("timeline", {}).get("background")
+
+
+def image_view(motion, local, duration, reduced=False):
+    """(zoom, focusX, focusY) of a picture's camera at `local` seconds into its scene.
+
+    `from`/`to` drifts over the whole scene. `keys` is a deliberate move: the camera eases from one key's view
+    to the next, then holds the last one, so a page can be shown whole and then brought closer on a column.
+    """
+    if "keys" in motion:
+        steps = motion["keys"]
+        if reduced:
+            return tuple(steps[0]["view"])
+        for a, b in zip(steps, steps[1:]):
+            if local < b["at"]:
+                progress = smooth((local-a["at"])/(b["at"]-a["at"]))
+                return tuple(x+(y-x)*progress for x, y in zip(a["view"], b["view"]))
+        return tuple(steps[-1]["view"])
+    progress = 0 if reduced else smooth(local/duration)
+    return tuple(a+(b-a)*progress for a, b in zip(motion["from"], motion["to"]))
+
+
+def image_zooms(motion):
+    """Every zoom a camera passes through: the base picture is resized once at the largest."""
+    return [step["view"][0] for step in motion["keys"]] if "keys" in motion else [motion["from"][0], motion["to"][0]]
 
 
 def dashed_line(draw, points, colour, width=2):
@@ -94,10 +122,13 @@ class SceneRenderer:
     width, height = 1080, 1920
     # Text remains outside the right-hand social controls and the bottom interface.
     left, right = 91, 900
-    content = (45, 480, 1035, 1170)
+    # The window a map is drawn in when a caller does not ask for the whole frame (map previews and
+    # the map tests); a scene's own map always fills the frame.
+    viewport = (45, 480, 1035, 1170)
 
-    def __init__(self, plan, root, captions, reduced_motion=False, proof=True):
-        self.plan, self.root, self.captions = plan, root, captions
+    def __init__(self, plan, root, captions, reduced_motion=False, proof=True, timeline=None):
+        self.plan, self.root, self.captions, self.timeline = plan, root, captions, timeline
+        self._clip_frames = None
         self.reduced_motion = reduced_motion
         self.proof = proof
         self._base_cache = {}
@@ -109,6 +140,8 @@ class SceneRenderer:
             path = asset_path(root, asset)
             if asset["kind"] in ("geojson", "vector"):
                 self.assets[key] = json.loads(path.read_text())
+            elif asset["kind"] == "clip":
+                continue  # decoded on demand by ClipFrames, never held in memory
             elif asset["kind"] == "relief":
                 with Image.open(path) as image:
                     self.assets[key] = np.asarray(image.convert("RGB"))
@@ -160,24 +193,22 @@ class SceneRenderer:
     def _image(self, scene, local, size=None):
         value = scene["image"]
         source = self.assets[value["asset"]]
-        x0, y0, x1, y1 = self.content
-        w, h = size or (x1-x0, y1-y0)
+        w, h = size or (self.width, self.height)
         motion = value.get("motion", {"from": [1, .5, .5], "to": [1, .5, .5]})
-        progress = 0 if self.reduced_motion else smooth(local/(scene["end"]-scene["start"]))
-        zoom, fx, fy = [a+(b-a)*progress for a, b in zip(motion["from"], motion["to"])]
+        zoom, fx, fy = image_view(motion, local, scene["end"]-scene["start"], self.reduced_motion)
         fit_scale = (min if value["fit"] == "contain" else max)(w/source.width, h/source.height)
         scale = fit_scale*zoom
         require(scale <= tokens.SUR_ECH_MAX, "Image enlargement exceeds the charter ceiling")
         if value["fit"] == "contain":
             resized = source.resize((round(source.width*scale), round(source.height*scale)), Image.Resampling.LANCZOS)
-            out = self._backdrop(value["asset"], w, h).copy() if size else Image.new("RGB", (w, h), self.palette["ground"])
+            out = self._backdrop(value["asset"], w, h).copy()
             out.paste(resized, ((w-resized.width)//2, (h-resized.height)//2))
             return out
         # Rounding the resized size and the crop offset to whole pixels on every frame made a
         # slow push-in stair-step by up to a pixel, and Image.transform's bicubic still advanced
         # unevenly. Resize once per scene at its largest zoom, then resample the frame window
         # from a fractional source box, which is what gives a true sub-pixel filter.
-        largest = fit_scale*max(motion["from"][0], motion["to"][0])
+        largest = fit_scale*max(image_zooms(motion))
         base = self._base_resize(value["asset"], largest)
         bx, by = base.width/(source.width*scale), base.height/(source.height*scale)
         left, top = (source.width*scale-w)*fx, (source.height*scale-h)*fy
@@ -195,7 +226,7 @@ class SceneRenderer:
     def _flag(self, draw, feature, x, y):
         """Three equal stripes above the mark, vertical by default. Simplified: an emblem or a star is not drawn."""
         stripes = feature.get("flag_stripes", [])
-        scale = 1.5 if self.plan.get("layout") == "fullbleed" else 1
+        scale = 1.5
         width, height, top = 36*scale, 22*scale, y-40*scale
         for i, stripe in enumerate(stripes):
             if feature.get("flag_orientation", "vertical") == "horizontal":
@@ -239,12 +270,17 @@ class SceneRenderer:
     def _globe_base(self, cfg, camera, size, p):
         """Relief, hydrography, borders and atmosphere: everything that depends on the camera alone."""
         key = (json.dumps({k: cfg.get(k) for k in ("asset", "relief", "rivers", "lakes", "borders", "border_style",
-                                                     "border_width", "atmosphere")}, sort_keys=True),
+                                                     "border_width", "atmosphere", "space", "glow")}, sort_keys=True),
                size, camera.center, camera.span, camera.tilt, camera.heading, camera.disc())
         if self._globe_base_cache and self._globe_base_cache[0] == key:
             return self._globe_base_cache[1]
+        # Read from the charter palette, not from `p`: the full-frame palette is a light map palette
+        # whose names mean other colours, and a plan names the charter's tokens.
+        space = self.palette[cfg["space"]] if "space" in cfg else p["ground"]
+        glow = self.palette[cfg["glow"]] if "glow" in cfg else p["perv"]
         relief = self.plan["assets"][cfg["relief"]]
-        canvas = globe_layers.relief_base(self.assets[cfg["relief"]], relief["bounds"], camera, size, p["ground"])
+        canvas = globe_layers.relief_base(self.assets[cfg["relief"]], relief["bounds"], camera, size, p["ground"],
+                                          space=space)
         water = mix(p["perv"], p["white"], .3)
         if "lakes" in cfg:
             globe_layers.draw_lakes(canvas, camera, self.assets[cfg["lakes"]], mix(p["perv"], p["ground"], .35), water)
@@ -254,25 +290,91 @@ class SceneRenderer:
             globe_layers.draw_borders(canvas, camera, self.assets[cfg["asset"]], cfg.get("border_style", "solid"),
                                       cfg.get("border_width", 2), p, dashed_line)
         if cfg.get("atmosphere", True):
-            canvas = globe_layers.atmosphere(canvas, camera, p["ground"], p["perv"])
+            canvas = globe_layers.atmosphere(canvas, camera, glow)
         self._globe_base_cache = (key, canvas)
         return canvas
 
+    @staticmethod
+    def _camera(cfg, when, w, h):
+        if cfg.get("projection") == "globe":
+            return GlobeCamera(viewport=(0, 0, w, h), **globe_camera_at(cfg["camera"], when))
+        return Camera(camera_at(cfg["camera"], when), (0, 0, w, h))
+
+    def subject_boxes(self, scene, local):
+        """Where a full-frame map's subject stands on screen at `local`: each highlighted or active country, mark and
+        line, with the room its label takes."""
+        cfg = scene_map(scene)
+        if not cfg:
+            return []
+        globe = cfg.get("projection") == "globe"
+        camera = self._camera(cfg, 0 if self.reduced_motion else local, self.width, self.height)
+
+        def pixels(points):
+            points = np.asarray(points, dtype=float)[:, :2]
+            if globe:
+                shown, visible = camera.project_many(points)
+                return shown[visible]
+            return np.array([camera.project(point) for point in points])
+
+        def country(code):
+            rings = [ring for shape in self.assets[cfg["asset"]]["features"] if shape["properties"]["ADM0_A3"] == code
+                     for ring in globe_layers.outer_rings(shape["geometry"])]
+            return [pixels(ring) for ring in rings]
+
+        found = []
+        for code in cfg.get("highlights", []):
+            found.append((country(code), None))
+        for feature in cfg.get("features", []):
+            if not feature["at"] <= local < feature["until"]:
+                continue
+            kind = feature["kind"]
+            if kind == "country":
+                found.append((country(feature["code"]), feature))
+            elif kind in ("label", "point", "presence", "speakers"):
+                if globe and not camera.visible(feature["point"]):
+                    continue
+                x, y = camera.project(feature["point"])
+                radius = 60 if kind != "speakers" else max(60, round(SPEAKERS_RADIUS*math.sqrt(feature["value"]/SPEAKERS_REFERENCE)))
+                found.append(([np.array([[x-radius, y-radius], [x+radius, y+radius]])], feature))
+            else:
+                found.append(([pixels(feature["points"])], feature))
+
+        boxes = []
+        for shapes, feature in found:
+            shapes = [s for s in shapes if len(s)]
+            if not shapes:
+                continue
+            every = np.concatenate(shapes)
+            box = [every[:, 0].min(), every[:, 1].min(), every[:, 0].max(), every[:, 1].max()]
+            boxes.append(box)
+            if feature and not feature.get("unlabelled"):
+                # The same anchor and offset _map draws the label with.
+                if "point" in feature:
+                    x, y = camera.project(feature["point"])
+                elif feature["kind"] == "country":
+                    x, y = (box[0]+box[2])/2, (box[1]+box[3])/2
+                else:
+                    x, y = shapes[0][0]
+                dx, dy = feature.get("offset", [0, 0] if feature["kind"] == "label" else [18, -30])
+                width = max(self.face("Bandeau").getlength(feature["label"]), 300 if "annotation" in feature else 0)
+                boxes.append([x+dx, y+dy, x+dx+width, y+dy+(146 if "annotation" in feature else 36)])
+        clipped = [(max(0, b[0]), max(0, b[1]), min(self.width, b[2]), min(self.height, b[3])) for b in boxes]
+        return [tuple(round(v) for v in b) for b in clipped if b[0] < b[2] and b[1] < b[3]]
+
     def _map(self, scene, local, viewport=None, palette=None):
         cfg = scene["map"]
-        x0, y0, x1, y1 = viewport or self.content
+        x0, y0, x1, y1 = viewport or self.viewport
         w, h = x1-x0, y1-y0
         p = palette or self.palette
         when = 0 if self.reduced_motion else local
         globe = cfg.get("projection") == "globe"
+        camera = self._camera(cfg, when, w, h)
         if globe:
-            camera = GlobeCamera(viewport=(0, 0, w, h), **globe_camera_at(cfg["camera"], when))
             canvas = self._globe_base(cfg, camera, (w, h), p).copy()
             draw = ImageDraw.Draw(canvas)
         else:
             canvas = Image.new("RGB", (w, h), p["ground"])
             draw = ImageDraw.Draw(canvas)
-            camera = Camera(camera_at(cfg["camera"], when), (0, 0, w, h))
             self._flat_base(cfg, camera, draw, p)
         label_boxes = []
         features = sorted(cfg.get("features", []), key=lambda f: f.get("role") != "context")
@@ -422,56 +524,45 @@ class SceneRenderer:
                 draw = ImageDraw.Draw(canvas)
         return canvas
 
-    def _document(self, image, draw, scene):
-        value, p = scene["document"], self.palette
-        source = self.assets[value["asset"]]
-        draw.rounded_rectangle((65, 490, 957, 1230), radius=20, fill=mix(p["ground"], p["gold"], .075))
-        scale = min(470/source.width, 690/source.height)
-        require(scale <= tokens.SUR_ECH_MAX, "Document enlargement exceeds the charter ceiling")
-        document = source.resize((round(source.width*scale), round(source.height*scale)), Image.Resampling.LANCZOS)
-        image.paste(document, (91+(470-document.width)//2, 510+(690-document.height)//2))
-        draw.line((597, 552, 597, 1140), fill=mix(p["ground"], p["gold"], .35), width=2)
-        self.paragraph(draw, value["label"], (625, 570, 275, 180), "Paire — terme", p["gold"])
-        self.paragraph(draw, value["body"], (625, 795, 275, 365), "Corps")
+    def _clip(self, scene, instant, size):
+        """The excerpt's picture filling the frame. `contain` never crops what an archive shows: the
+        picture is held whole over a dimmed, blurred cover of itself, like a contained photograph."""
+        from ethni_scene_clips import ClipFrames, window_for
+        if self._clip_frames is None:
+            self._clip_frames = ClipFrames(self.root, self.plan, self.timeline)
+        window = window_for(self.timeline, scene["clip"]["insertion"])
+        picture = self._clip_frames.frame(window, instant)
+        w, h = size
+        if scene["clip"]["fit"] == "cover":
+            scale = max(w/picture.width, h/picture.height)
+            cover = picture.resize((max(w, round(picture.width*scale)), max(h, round(picture.height*scale))),
+                                   Image.Resampling.LANCZOS)
+            left, top = (cover.width-w)//2, (cover.height-h)//2
+            return cover.crop((left, top, left+w, top+h))
+        scale = min(w/picture.width, h/picture.height)
+        held = picture.resize((round(picture.width*scale), round(picture.height*scale)), Image.Resampling.LANCZOS)
+        fill = max(w/picture.width, h/picture.height)
+        cover = picture.resize((max(w, round(picture.width*fill)), max(h, round(picture.height*fill))),
+                               Image.Resampling.BILINEAR)
+        left, top = (cover.width-w)//2, (cover.height-h)//2
+        out = Image.blend(cover.crop((left, top, left+w, top+h)).filter(ImageFilter.GaussianBlur(32)),
+                          Image.new("RGB", (w, h), self.palette["ground"]), .45)
+        out.paste(held, ((w-held.width)//2, (h-held.height)//2))
+        return out
 
-    def visual(self, scene, instant):
-        image = Image.new("RGB", (self.width, self.height), self.palette["ground"])
-        draw = ImageDraw.Draw(image)
-        local = min(scene["end"]-scene["start"]-1e-6, max(0, instant-scene["start"]))
-        kind = scene["type"]
-        if kind in ("map", "image"):
-            content = self._map(scene, local) if kind == "map" else self._image(scene, local)
-            image.paste(content, self.content[:2])
-        elif kind == "timeline":
-            background = scene["timeline"].get("background")
-            if background:
-                composed = bool(background.get("features") or background.get("highlights"))
-                viewport = (45, 820, 1035, 1210) if composed else self.content
-                content = self._map({"map": background}, local, viewport)
-                if not composed:
-                    content = Image.blend(Image.new("RGB", content.size, self.palette["ground"]), content, .6)
-                image.paste(content, viewport[:2])
-            draw_timeline(self, draw, scene, local)
-        elif kind == "document":
-            self._document(image, draw, scene)
-        elif kind == "text":
-            self.paragraph(draw, scene["text"], (self.left, 640, self.right-self.left, 470), "Corps")
-        else:
-            for index, item in enumerate(scene["comparison"]):
-                if local < item.get("at", 0):
-                    continue
-                top = 540+index*210
-                self.paragraph(draw, item["label"], (self.left, top, self.right-self.left, 100), "Paire — terme", self.palette["gold"])
-                self.paragraph(draw, item["body"], (self.left, top+94, self.right-self.left, 100), "Corps")
-        legend = self.legend(scene, local)
-        self.paragraph(draw, "\n".join(legend), (self.left, 1215 if kind == "timeline" else 1190, self.right-self.left, 115 if kind == "timeline" else 142), "Crédit", self.palette["night-ink-2"])
-        return image
+    def excerpt_credit(self, instant):
+        """While an excerpt sounds, its credit is on screen whatever scene happens to be drawn."""
+        for window in (self.timeline or {}).get("windows", []):
+            if window["clip_start"] <= instant < window["clip_end"]:
+                asset = self.plan["assets"][window["asset"]]
+                return [f"Extrait : {asset['credit']} · {asset['license']}"]
+        return []
 
     def legend(self, scene, local):
         """What the map shows and how sure the author is: period and status of every active feature."""
         legend = []
         geographic = scene_map(scene)
-        if geographic and (scene["type"] == "map" or geographic.get("features") or geographic.get("highlights")):
+        if geographic and (scene["type"] in ("map", "comparison") or geographic.get("features") or geographic.get("highlights")):
             projection = "Globe" if geographic.get("projection") == "globe" else "Mercator"
             legend.append((f"Frontières actuelles en pointillé · {projection}" if geographic.get("border_style") == "dashed"
                            else f"Frontières actuelles · {projection}") if geographic["borders"] and geographic.get("border_style") != "none"
@@ -483,35 +574,33 @@ class SceneRenderer:
                     meaning = {"journey": "Trajet", "migration": "Migration", "language-diffusion": "Diffusion linguistique",
                                "name-circulation": "Circulation du nom",
                                "river": "Cours d'eau (tracé schématique)"}.get(feature.get("meaning"))
-                    role = "Voisinage : " if feature.get("role") == "context" else ""
+                    # A context country contains the subject rather than neighbouring it.
+                    role = "Voisinage : " if feature.get("role") == "context" and feature["kind"] != "country" else ""
                     tail = f" · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else "")
                     entries.append((role+feature["label"], tail, feature.get("geometry_note"), e["period"],
                                     STATUS[e["status"]] + (f" · {meaning}" if meaning else "")))
             noted = set()
-            if self.plan.get("layout") == "fullbleed":
-                # Features that share a status share one line, each keeping its own period when the periods differ,
-                # and a geometry note is printed once: a dozen features must fit the foot of the frame.
-                grouped = {}
-                for label, tail, note, period, status in entries:
-                    grouped.setdefault(status, []).append((label, period, note))
-                entries = []
-                notes = []
-                for status, items in grouped.items():
-                    periods = {period for _, period, _ in items}
-                    if len(periods) == 1:
-                        text = ", ".join(dict.fromkeys(label for label, _, _ in items))+f" · {periods.pop()} · {status}"
-                    else:
-                        by_period = {}
-                        for label, period, _ in items:
-                            by_period.setdefault(period, []).append(label)
-                        text = " ; ".join(f"{', '.join(dict.fromkeys(labels))} · {period}"
-                                          for period, labels in by_period.items())+f" · {status}"
-                    entries.append((text, "", None))
-                    notes += [note for _, _, note in items if note and note not in notes]
-                if notes:
-                    entries.append((" · ".join(notes), "", None))
-            else:
-                entries = [(label, tail, note) for label, tail, note, _, _ in entries]
+            # Features that share a status share one line, each keeping its own period when the periods differ,
+            # and a geometry note is printed once: a dozen features must fit the foot of the frame.
+            grouped = {}
+            for label, tail, note, period, status in entries:
+                grouped.setdefault(status, []).append((label, period, note))
+            entries = []
+            notes = []
+            for status, items in grouped.items():
+                periods = {period for _, period, _ in items}
+                if len(periods) == 1:
+                    text = ", ".join(dict.fromkeys(label for label, _, _ in items))+f" · {periods.pop()} · {status}"
+                else:
+                    by_period = {}
+                    for label, period, _ in items:
+                        by_period.setdefault(period, []).append(label)
+                    text = " ; ".join(f"{', '.join(dict.fromkeys(labels))} · {period}"
+                                      for period, labels in by_period.items())+f" · {status}"
+                entries.append((text, "", None))
+                notes += [note for _, _, note in items if note and note not in notes]
+            if notes:
+                entries.append((" · ".join(notes), "", None))
             for label, tail, note in entries:
                 legend.append(label+tail)
                 if note and note not in noted:
@@ -525,9 +614,11 @@ class SceneRenderer:
         kind = scene["type"]
         credits = []
         asset_source = None
-        asset_id = scene[kind]["asset"] if kind in ("map", "image", "document") else None
+        asset_id = scene[kind]["asset"] if kind in ("map", "image") else None
         if kind == "timeline" and "background" in scene["timeline"]:
             asset_id = scene["timeline"]["background"]["asset"]
+        if kind in ("comparison", "kinetic") and "backdrop" in scene:
+            asset_id = next(iter(scene["backdrop"].values()))["asset"]
         if asset_id:
             asset = self.plan["assets"][asset_id]
             credits.append(f"{asset['credit']} · {asset['license']}")
@@ -538,7 +629,7 @@ class SceneRenderer:
                 credits.append(f"{asset['credit']} · {asset['license']}")
         source_keys = list(scene["evidence"]["sources"])
         if kind == "timeline":
-            for event in scene["timeline"]["events"] + scene["timeline"].get("context", []):
+            for event in scene["timeline"]["events"]:
                 source_keys.extend(event["evidence"]["sources"])
         geographic = scene_map(scene)
         if geographic:
@@ -550,58 +641,13 @@ class SceneRenderer:
         return credits
 
     def render(self, instant):
-        if self.plan.get("layout") == "fullbleed":
-            return fullbleed.render(self, instant)
-        scene = scene_at(self.plan["scenes"], instant)
-        transition = None if self.reduced_motion else transition_at(self.plan["scenes"], instant)
-        image = self.visual(scene, instant)
-        credits = self.credits(scene)
-        heading = scene
-        if transition:
-            before, after, progress = transition
-            previous = self.plan["scenes"][before]
-            heading = previous if progress < .5 else scene
-            old = self.visual(previous, previous["end"]-1e-6)
-            if scene["transition"]["type"] == "fade":
-                blank = Image.new("RGB", image.size, self.palette["ground"])
-                image = Image.blend(old, blank, progress*2) if progress < .5 else Image.blend(blank, image, (progress-.5)*2)
-            else:
-                image = Image.blend(old, image, smooth(progress))
-            credits = list(dict.fromkeys(self.credits(previous)+credits))
-        draw = ImageDraw.Draw(image)
-        # Switch the heading once; crossfading words makes both titles unreadable.
-        corner = heading.get("timeline", {}).get("context_layout") == "corner"
-        heading_width = 440 if corner else self.right-self.left
-        self.paragraph(draw, heading["title"], (self.left, 198, heading_width, 215), "Titre de série", self.palette["gold"])
-        ev = heading["evidence"]
-        self.paragraph(draw, f"{ev['period']} · {STATUS[ev['status']]}",
-                       (self.left, 426, heading_width, 85 if corner else 45), "Bandeau", self.palette["night-ink-2"])
-        self.paragraph(draw, "ETHNIAFRICA", (self.left, 65, 380, 45), "Bandeau", self.palette["night-ink-2"])
-        self.paragraph(draw, "L’AFRIQUE À TRAVERS SES NOMS", (self.left, 132, self.right-self.left, 45), "Bandeau", self.palette["night-ink-2"])
-        caption = next((c for c in self.captions if c["debut"] <= instant < c["fin"]), None)
-        # §1 ter: the opening is the thumbnail, so for its first seconds it carries its title alone.
-        if caption and not (self.plan.get("cover") and instant < MINIATURE_S):
-            self.paragraph(draw, caption["texte"], (self.left, 1380, self.right-self.left, 140), "Corps")
-        self.paragraph(draw, "\n".join(credits), (self.left, 1530, self.right-self.left, 88), "Crédit", self.palette["night-ink-2"])
-        if self.plan.get("progress", False):
-            fraction = max(0, min(1, instant/self.duration))
-            draw.line((self.left, 1615, self.right, 1615), fill=self.palette["night-ink-3"], width=3)
-            if fraction:
-                draw.line((self.left, 1615, self.left+(self.right-self.left)*fraction, 1615),
-                          fill=self.palette["gold"], width=5)
-        if self.proof:
-            badge = Image.new("RGBA", (620, 68), ImageColor.getrgb(self.palette["ground"])+(240,))
-            self.paragraph(ImageDraw.Draw(badge), "ÉPREUVE — NE PAS PUBLIER", (16, 12, 590, 50), "Bandeau", self.palette["night-ink-2"])
-            badge = badge.rotate(-15, expand=True, resample=Image.Resampling.BICUBIC)
-            image.paste(badge, (460, 25), badge)
-        return image
+        return fullbleed.render(self, instant)
 
     def preflight(self):
         """Inspect all caption content and scene/event/camera boundaries before encoding."""
-        draw = ImageDraw.Draw(Image.new("RGB", (self.width, self.height)))
-        for caption in self.captions:
-            self.paragraph(draw, caption["texte"], (self.left, 1380, self.right-self.left, 140), "Corps")
-        instants = set()
+        # Laying the captions out refuses a word wider than the column, an emphasis word nobody speaks and a scene
+        # with no clear place for its captions, before any frame is encoded.
+        instants = {min(self.duration-1e-6, group["fin"]) for group in captions.layout(self)}
         for scene in self.plan["scenes"]:
             start, end = scene["start"], scene["end"]
             instants.update((start, (start+end)/2, end-1e-6))
@@ -620,16 +666,23 @@ class SceneRenderer:
                     if "fade_seconds" in f:
                         instants.update((start+f["at"]+f["fade_seconds"]/2,
                                          min(end-1e-6, start+f["at"]+f["fade_seconds"])))
+            if scene["type"] == "clip":
+                window = next(w for w in self.timeline["windows"] if w["id"] == scene["clip"]["insertion"])
+                instants.update((window["clip_start"], (window["clip_start"]+window["clip_end"])/2, window["clip_end"]-1e-6))
             if scene["type"] == "comparison":
                 instants.update(start+i.get("at", 0) for i in scene["comparison"] if start+i.get("at", 0) < end)
+                # An overlay's items rise and fade in: look at the moment each one has finished arriving.
+                instants.update(min(end-1e-6, start+i.get("at", 0)+fullbleed.REVEAL_S) for i in scene["comparison"])
+            picture = scene.get("image") or next(iter(scene.get("backdrop", {}).values()), {})
+            motion = picture.get("motion", {}) if "fit" in picture else {}
+            instants.update(start+k["at"] for k in motion.get("keys", []) if start+k["at"] < end)
+            if scene["type"] == "kinetic":
+                instants.update(min(end-1e-6, start+cue) for cue in kinetic_cues(scene))
             if scene["type"] == "timeline":
                 timeline = scene["timeline"]
-                cues = [i["at"] for i in timeline["events"]+timeline.get("context", [])]
+                cues = [i["at"] for i in timeline["events"]]
                 instants.update(start+cue for cue in cues)
-                if timeline.get("layout") == "focus":
-                    instants.update(min(end-1e-6, start+cue+delta) for cue in cues for delta in (.25, .85))
-                    if "overview_at" in timeline:
-                        instants.update(min(end-1e-6, start+timeline["overview_at"]+delta) for delta in (0, .55, 1.1))
+                instants.update(min(end-1e-6, start+cue+delta) for cue in cues for delta in (.25, .85))
         for instant in sorted(instants):
             self.render(instant)
         return sorted(instants)

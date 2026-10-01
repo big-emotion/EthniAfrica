@@ -43,8 +43,9 @@ def networks(deck, format_key):
 
 
 def label(deck):
+    """A reading profile names no series: the deck's own `serie` or `pilier` heads its cards."""
     selected = profile(deck)
-    return selected["label"] if selected else None
+    return selected.get("label") if selected else None
 
 
 def visual(deck):
@@ -123,6 +124,21 @@ def _sequence_errors(selected, deck, cards):
     return problems
 
 
+def image_errors(deck):
+    """Every card stands on a full-frame image: a card without one is refused, never drawn on a ground.
+
+    Held for every deck, profile or not. A profile's own `errors` repeats it with the card's position
+    in the profile, but a deck with no `profil` (the name-origin series) has no other check.
+    """
+    cards = deck.get("cartes")
+    if not isinstance(cards, list):
+        return []
+    return [f"carte {card.get('rang', rank) if isinstance(card, dict) else rank} : `image.fichier` est requis, "
+            f"chaque carte a une image plein cadre (il n'existe aucun fond uni, sombre ou de couleur)"
+            for rank, card in enumerate(cards, 1)
+            if not isinstance(card, dict) or not _text((card.get("image") or {}).get("fichier"))]
+
+
 def errors(deck, cards=None):
     try:
         selected = profile(deck)
@@ -131,6 +147,8 @@ def errors(deck, cards=None):
     if selected is None:
         return []
     cards = deck.get("cartes") if cards is None else cards
+    if "reading" in selected:
+        return _reading_errors(selected, deck, cards)
     if "sequence" in selected:
         return _sequence_errors(selected, deck, cards)
 
@@ -176,10 +194,15 @@ def errors(deck, cards=None):
         else:
             problems += _image_problems(prefix, rank, image)
 
+    return problems + _music_errors(prefix, selected, deck)
+
+
+def _music_errors(prefix, selected, deck):
+    """The recording identified and its use verified on every network that carries it."""
     music = deck.get("musique")
     if not isinstance(music, dict):
-        problems.append(f"{prefix} : `musique` doit identifier l'enregistrement et son usage")
-        return problems
+        return [f"{prefix} : `musique` doit identifier l'enregistrement et son usage"]
+    problems = []
     for field in ("titre", "artiste", "version", "extrait"):
         if not _text(music.get(field)):
             problems.append(f"{prefix} : `musique.{field}` doit être renseigné")
@@ -192,6 +215,48 @@ def errors(deck, cards=None):
                 or not all(_text(review.get(field)) for field in ("reference", "usage"))):
             problems.append(f"{prefix} : documenter la référence du son, vérifier son usage "
                             f"sur {network} et poser `verifie: true`")
+    return problems
+
+
+def _reading_errors(selected, deck, cards):
+    """A variable-length deck of named compositions: a cover, bodies, a credits card."""
+    import ethni_carousel_layouts as layouts
+    prefix = selected["id"]
+    bounds = selected["reading"]
+    if not isinstance(cards, list) or not bounds["min"] <= len(cards) <= bounds["max"]:
+        return [f"{prefix} : de {bounds['min']} à {bounds['max']} cartes sont attendues"]
+    problems = []
+    if not _text(deck.get("campagne")):
+        problems.append(f"{prefix} : `campagne` doit identifier le sujet")
+    allowed = bounds["compositions"]
+    for rank, card in enumerate(cards, 1):
+        if not isinstance(card, dict):
+            problems.append(f"{prefix} : carte {rank} invalide")
+            continue
+        composition = card.get("composition")
+        expected = "cover" if rank == 1 else "credits" if rank == len(cards) else None
+        if not _text(composition):
+            problems.append(f"{prefix} : carte {rank}, `composition` doit être renseignée")
+            continue
+        if expected and composition != expected:
+            problems.append(f"{prefix} : carte {rank} attend la composition « {expected} »")
+        if composition == "cover" and rank != 1:
+            problems.append(f"{prefix} : carte {rank}, une couverture n'ouvre que la carte 1")
+        role_ok = (card.get("role") == "ouverture" if rank == 1
+                   else card.get("role") in ("serie", "bascule"))
+        if card.get("rang") != rank or not role_ok:
+            problems.append(f"{prefix} : carte {rank} attend `rang={rank}` et "
+                            f"{'`role=ouverture`' if rank == 1 else '`role=serie`'}")
+        problems += layouts.card_errors(card, prefix, rank, composition, allowed)
+        if rank > 1 and not _text(card.get("source")):
+            problems.append(f"{prefix} : carte {rank}, `source` doit être renseigné")
+        image = card.get("image")
+        if not isinstance(image, dict) or not _text(image.get("fichier")):
+            problems.append(f"{prefix} : carte {rank}, `image.fichier` doit être renseigné")
+        else:
+            problems += _image_problems(prefix, rank, image)
+    if selected.get("music"):
+        problems += _music_errors(prefix, selected, deck)
     return problems
 
 
@@ -210,8 +275,30 @@ def _sequence_brief(name, selected):
     }
 
 
+def _reading_brief(name, selected):
+    """The smallest valid shape: a cover and a credits card, to be filled or grown."""
+    image = {"fichier": "", "w": None, "h": None, "cadrage": "50% 50%", "sujet": None,
+             "identite": "", "credit": "", "depot": "", "licence": ""}
+    cards = [{"rang": rank, "role": "ouverture" if rank == 1 else "serie",
+              "composition": composition, "titre": "", "precision": "", "corps": "",
+              "punchline": "", "source": "", "paires": None, "disposition": "auto",
+              "image": dict(image)}
+             for rank, composition in enumerate(("cover", "credits"), 1)]
+    deck = {"profil": name, "campagne": "", "pilier": "EthniAfrica", "accent": "ocre",
+            "fond": "nuit", "cartes": cards}
+    if selected.get("music"):
+        deck["musique"] = {"titre": "", "artiste": "", "version": "", "extrait": "",
+                           "plateformes": {n.lower(): {"reference": "", "usage": "", "verifie": False}
+                                           for n in selected["formats"]["carrousel"]}}
+    return {"profile": copy.deepcopy(selected), "guide": selected["guide"],
+            "instructions": (REPO / selected["guide"]).read_text(encoding="utf-8"),
+            "deck": deck}
+
+
 def brief(name):
     selected = load(name)
+    if "reading" in selected:
+        return _reading_brief(name, selected)
     if "sequence" in selected:
         return _sequence_brief(name, selected)
     cards = []
@@ -242,6 +329,17 @@ def report(deck):
     selected = profile(deck)
     if selected is None:
         return []
+    if "reading" in selected:
+        lines = [f"## Lecture — {selected['id']}", "", f"Consignes : `{selected['guide']}`.",
+                 "Gabarit standard des carrousels ; chaque carte nomme sa composition.",
+                 f"{len(deck['cartes'])} carte(s) : "
+                 + ", ".join(c["composition"] for c in deck["cartes"]) + ".", ""]
+        if selected.get("music"):
+            music = deck["musique"]
+            lines += [f"Musique : {music['artiste']} — {music['titre']} ({music['version']}).",
+                      "Le son est à ajouter sur chaque plateforme ; les PNG ne contiennent pas d'audio.",
+                      ""]
+        return lines
     if "sequence" in selected:
         items = sum(1 for c in deck["cartes"] if c["role"] == selected["sequence"][1])
         return [f"## {selected['label']}", "",

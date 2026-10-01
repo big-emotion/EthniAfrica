@@ -287,19 +287,11 @@ ever run on posts that were already published.
   y 1233–1363 and a caption lands at y 1298–1421; solving the ending's _length_
   is not enough, its _start_ is what has to be solved.
 - A scene with a sourced visual and no `credit` line fails.
-- **A `plate` may not climb into the register's ink**, and the failure names the
-  `centreY` that clears it. A plate is not shaded the way a photograph is, so the
-  white register keeps whatever contrast the document's own paper gives it.
-  Measured 2026-09-10 across the ten plate scenes of five projects: the six that
-  clear the register read at 14.0 against the green ground, the four that did not
-  fell to 1.2–2.9, below the 3.0 floor for large text and invisible on two of
-  them. Krou shipped it on 2026-09-09 and no one saw it; Libreville and
-  Brazzaville met it independently the next day. Separation rather than shading
-  was the ruling: darkening the plate veils a document whose legibility is the
-  argument, and neither shading nor a dark register would undo the other half of
-  the defect, which is the register landing on the document's own typography.
-  Lowering cost nothing — all four scenes still fit the frame whole. A document
-  too tall to fit under the register fails naming the `width` that would.
+- **A scene without a full-frame `photo` background fails** (operator ruling,
+  2026-09-30). The sheet renderer had a `colour` background, which was also the default
+  for a scene that named none, and a `plate` mode that set a document on that colour;
+  both are gone, with the register-clearance check that only the plate needed. There is
+  no dark, plain or solid-colour scene.
 - A text line wider than its safe box fails rather than being shrunk silently —
   **after** the role's size has been solved. Each role gets one size for the whole
   video, the largest at which all its cards fit; a line that still does not fit at
@@ -327,8 +319,7 @@ ever run on posts that were already published.
   `forme` card below the rule, the five frames before the proper name arrives read
   « KROU → CRUA », a statement the corpus does not make.
 - The flat-colour-ground share is measured into `validation.json` at every render,
-  against the doctrine's 2 % cap. Ghana measures 0.0 %; Sénégal V2 measures 15.9 %.
-  Reported, not yet gated.
+  against a cap of zero: no frame stands on a flat colour. Reported, not gated.
 
 ## Fonts
 

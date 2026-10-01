@@ -1,0 +1,245 @@
+{
+  "id": "pourquoi-la-meconnaissance-freine-l-afrique",
+  "status": "published",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "pourquoi-la-meconnaissance-freine-l-afrique",
+    "title": "Pourquoi ignorer nos noms freine l'Afrique ?",
+    "excerpt": "Une prise de position de notre projet : le mot « ethnie » vient d'Europe, les classements coloniaux ont séparé des voisins, et comprendre l'histoire des noms des peuples est, pour nous, un chemin vers l'union. Ce qui est sourcé et ce qui relève de nos convictions y est distingué.",
+    "sections": [
+      {
+        "heading": "Un message, pas une enquête sur un nom",
+        "paragraphs": [
+          "Ce texte ne raconte pas l'origine d'un nom précis. C'est une prise de position de notre projet : pourquoi nous pensons qu'ignorer l'histoire de nos noms freine l'Afrique, et pourquoi nous cherchons ces noms en premier.",
+          "Nous y distinguons deux choses : quelques faits sourcés, et des convictions, que nous présentons comme telles."
+        ],
+        "sourceRefs": []
+      },
+      {
+        "heading": "Le mot « ethnie » vient d'Europe",
+        "paragraphs": [
+          "Le mot « ethnie » est proposé en 1896, en Europe, par Georges Vacher de Lapouge, dans un livre qui classait des Européens, pas des Africains.",
+          "Dans les colonies, l'administration a surtout recensé et séparé les gens sous d'autres noms. Joël Glasman l'a étudié pour le Sénégal, de 1816 aux années 1920 : on y parle surtout de « race » et de « tribu », et parfois d'« ethnie ». Son étude porte sur le Sénégal ; nous ne l'étendons pas ici à toutes les colonies."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      },
+      {
+        "heading": "Ce que nous pensons des classements",
+        "paragraphs": [
+          "Notre message part d'une thèse que nous ne démontrons pas dans ce texte : beaucoup de frontières africaines n'ont pas été tracées pour les peuples qui y vivaient déjà, et elles ont surtout servi des intérêts extérieurs.",
+          "Nous pensons aussi que les classements hérités de cette époque ont séparé les peuples d'un même pays en camps distincts, et détourné l'attention du pouvoir et des institutions vers le voisin. Aujourd'hui encore, on appelle « ethniques » des tensions qui ont souvent d'autres causes, mêlées entre elles : le pouvoir, la terre, l'appartenance. Ce voisin n'a pas choisi ce regroupement non plus. Plutôt que de l'accuser, nous proposons de remonter l'histoire : pourquoi ces peuples se retrouvent-ils dans le même ensemble ?"
+        ],
+        "sourceRefs": []
+      },
+      {
+        "heading": "L'union comme horizon",
+        "paragraphs": [
+          "Nous croyons à une autre issue : l'union. Ce projet n'est pas nouveau. L'Organisation de l'unité africaine est fondée en mai 1963 ; l'Union africaine est lancée en juillet 2002.",
+          "L'union ne supprime pas les tensions. Elle peut, selon nous, donner un cadre pour les traverser."
+        ],
+        "sourceRefs": ["s3"]
+      },
+      {
+        "heading": "Remonter aux peuples",
+        "paragraphs": [
+          "En 1960, dix-sept pays africains accèdent à l'indépendance la même année. Les peuples qui vivent dans ces pays ont une histoire plus ancienne que ces États, et qui dépasse souvent leurs frontières : des clans, des familles, des alliances, que le seul mot « ethnie » ne suffit pas à dire.",
+          "C'est pour cela que nous commençons par les noms : celui qu'un peuple se donne, ceux que d'autres lui ont donnés, et leur histoire. Comprendre son pays, c'est aussi remonter à ses peuples et à leurs voisins."
+        ],
+        "sourceRefs": ["s4"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "Le mot « ethnie » est né en Europe pour classer des Européens, et les administrations coloniales ont classé les Africains sous d'autres noms. Le reste de ce texte dit ce que nous croyons : que comprendre son nom et celui du voisin est un premier pas vers l'unité.",
+          "Vous avez une histoire, un nom transmis ou une source sur l'un de ces points ? Dites-nous ce que vous savez, et d'où vous le tenez."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Georges Vacher de Lapouge, Les Sélections sociales, Paris, Fontemoing, 1896, p. 10",
+      "tier": "needs_review",
+      "kind": "book",
+      "url": "https://commons.wikimedia.org/wiki/File:Vacher_de_Lapouge_-_Les_Selections_sociales,_Fontemoing,_1896.djvu"
+    },
+    {
+      "id": "s2",
+      "title": "Joël Glasman, « Le Sénégal imaginé. Évolution d'une classification ethnique de 1816 aux années 1920 », Afrique & histoire, 2004",
+      "tier": "needs_review",
+      "kind": "article",
+      "notes": "Étude de la classification des populations du Sénégal par l'administration, de 1816 aux années 1920."
+    },
+    {
+      "id": "s3",
+      "title": "Union africaine, présentation (au.int) : OUA fondée en mai 1963, Union africaine lancée en juillet 2002",
+      "tier": "needs_review",
+      "kind": "web"
+    },
+    {
+      "id": "s4",
+      "title": "African Studies Centre Leiden, « Infosheets on the 17 African countries that gained independence in 1960 »",
+      "tier": "needs_review",
+      "kind": "web"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "pourquoi-la-meconnaissance-freine-l-afrique-carrousel"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "pourquoi-la-meconnaissance-freine-l-afrique/pourquoi-la-meconnaissance-freine-l-afrique-carrousel/slide-01-b9f4f5ea64ac.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte physique de l'Afrique en couleurs, relief ombré, avec un petit encart de légende en bas à gauche",
+            "text": "Pourquoi ignorer nos noms freine l'Afrique ?"
+          },
+          {
+            "src": "pourquoi-la-meconnaissance-freine-l-afrique/pourquoi-la-meconnaissance-freine-l-afrique-carrousel/slide-02-65f1b8dd1c0c.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte gravée ancienne de la côte de Guinée en Afrique de l'Ouest, avec des noms de royaumes, des vaisseaux et des animaux dessinés",
+            "text": "Les frontières\n\nBeaucoup de frontières africaines n'ont pas été tracées pour les peuples qui y vivaient déjà. Elles ont surtout servi des intérêts extérieurs : les ressources, les terres, le commerce."
+          },
+          {
+            "src": "pourquoi-la-meconnaissance-freine-l-afrique/pourquoi-la-meconnaissance-freine-l-afrique-carrousel/slide-03-3c78734ee852.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "page de titre d'un livre ancien : « Les Sélections sociales », cours libre de science politique, par G. Vacher de Lapouge, Paris, 1896",
+            "text": "1896\n\nLe mot « ethnie »\n\nLe mot « ethnie » est proposé en 1896, en Europe, pour classer des Européens — pas des Africains.\n\nGeorges Vacher de Lapouge, Les Sélections sociales, Paris, Fontemoing, 1896, p. 10 · Trésor de la langue française (CNRTL)"
+          },
+          {
+            "src": "pourquoi-la-meconnaissance-freine-l-afrique/pourquoi-la-meconnaissance-freine-l-afrique-carrousel/slide-04-694f1e4ad79e.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte gravée ancienne de la côte de Guinée en Afrique de l'Ouest, avec des noms de royaumes, des vaisseaux et des animaux dessinés",
+            "text": "Recenser. Séparer.\n\nL'administration coloniale, elle, recense et sépare surtout sous les noms de « race » et de « tribu » — « ethnie » aussi, par endroits.\n\nJoël Glasman, « Le Sénégal imaginé. Évolution d'une classification ethnique de 1816 aux années 1920 », Afrique & histoire, 2004"
+          },
+          {
+            "src": "pourquoi-la-meconnaissance-freine-l-afrique/pourquoi-la-meconnaissance-freine-l-afrique-carrousel/slide-05-91542cc3c270.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "vue d'un port au bord de l'eau, avec des immeubles clairs sous un ciel bleu et des rochers au premier plan",
+            "text": "Où va l'attention ?\n\nCe classement sépare les peuples d'un même pays en camps distincts. Il déplace l'attention loin du pouvoir et des institutions, vers le voisin d'à côté."
+          },
+          {
+            "src": "pourquoi-la-meconnaissance-freine-l-afrique/pourquoi-la-meconnaissance-freine-l-afrique-carrousel/slide-06-07c8bcb3c831.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte gravée ancienne de la côte de Guinée en Afrique de l'Ouest, avec des noms de royaumes, des vaisseaux et des animaux dessinés",
+            "text": "Des causes mêlées\n\nAujourd'hui encore, on appelle « ethniques » des tensions qui ont souvent d'autres causes, mêlées entre elles : le pouvoir, la terre, l'appartenance."
+          },
+          {
+            "src": "pourquoi-la-meconnaissance-freine-l-afrique/pourquoi-la-meconnaissance-freine-l-afrique-carrousel/slide-07-e1b9e4af1fb2.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "photographie d'un feuillet de manuscrit arabe ancien, écrit à l'encre noire sur papier jauni, dans une vitrine",
+            "text": "Remonter l'histoire\n\nLe réflexe facile accuse ce voisin. Mais ce voisin n'a pas choisi ce regroupement non plus. Le bon réflexe remonte l'histoire : pourquoi ces peuples se retrouvent dans le même ensemble, et pour quelle raison."
+          },
+          {
+            "src": "pourquoi-la-meconnaissance-freine-l-afrique/pourquoi-la-meconnaissance-freine-l-afrique-carrousel/slide-08-b18ccf3bedb6.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "drapeau vert portant la silhouette blanche de l'Afrique entourée de rayons et d'un cercle d'étoiles dorées",
+            "text": "L'union\n\nNous croyons à une autre issue : l'union. L'Organisation de l'unité africaine, puis l'Union africaine, portent déjà ce projet depuis 1963.\n\nUnion africaine, présentation (au.int) : OUA fondée en mai 1963, Union africaine lancée en juillet 2002"
+          },
+          {
+            "src": "pourquoi-la-meconnaissance-freine-l-afrique/pourquoi-la-meconnaissance-freine-l-afrique-carrousel/slide-09-4ec3552f4136.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un enseignant assis à une table couverte de cahiers, qui explique un exercice à un élève en tablier rayé",
+            "text": "L'histoire de son pays\n\nBeaucoup connaissent mieux l'histoire de l'ancien pays colonisateur que celle de leur propre pays."
+          },
+          {
+            "src": "pourquoi-la-meconnaissance-freine-l-afrique/pourquoi-la-meconnaissance-freine-l-afrique-carrousel/slide-10-a900fdebd1a8.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "carte physique de l'Afrique en couleurs, relief ombré, avec un petit encart de légende en bas à gauche",
+            "text": "Une affaire d'éducation\n\nC'est aussi une affaire d'éducation — qui passe par l'éducation sur le peuple, car le peuple porte une histoire plus ancienne que le pays, et qui dépasse ses frontières nationales."
+          },
+          {
+            "src": "pourquoi-la-meconnaissance-freine-l-afrique/pourquoi-la-meconnaissance-freine-l-afrique-carrousel/slide-11-24ea07f4700f.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "composition de nombreux drapeaux de pays africains alignés en rangées",
+            "text": "Remonter aux peuples\n\nNos mots eux-mêmes restent souvent imprécis pour décrire une identité. Comprendre son pays, c'est remonter à ses peuples, et aux peuples voisins qui l'ont forcément influencé."
+          },
+          {
+            "src": "pourquoi-la-meconnaissance-freine-l-afrique/pourquoi-la-meconnaissance-freine-l-afrique-carrousel/slide-12-4173dd9a4bf2.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "détail d'un atlas enluminé du Moyen Âge : un roi couronné assis, tenant une pépite d'or, sur fond de cartes",
+            "text": "1960\n\nLes indépendances africaines\n\nDix-sept pays africains accèdent à l'indépendance la même année, en 1960. C'est cette histoire des peuples qu'il faut raconter : les clans, les familles, les alliances — tout ce qu'un seul mot, « ethnie », ne peut pas contenir.\n\nAfrican Studies Centre Leiden, « Infosheets on the 17 African countries that gained independence in 1960 »"
+          },
+          {
+            "src": "pourquoi-la-meconnaissance-freine-l-afrique/pourquoi-la-meconnaissance-freine-l-afrique-carrousel/slide-13-0f7feae34bb3.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "coucher de soleil orangé sur une plage, avec des silhouettes de joueurs de football",
+            "text": "Comprendre son nom. Comprendre le voisin.\n\nC'est par là que commence l'unité."
+          },
+          {
+            "src": "pourquoi-la-meconnaissance-freine-l-afrique/pourquoi-la-meconnaissance-freine-l-afrique-carrousel/slide-14-aef05fac0014.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "foule assise en plein air à l'ombre d'un arbre, écoutant un orateur debout au fond",
+            "text": "Notre objectif : raconter l'origine des noms, avec des sources.\n\nVous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica."
+          }
+        ],
+        "credits": "Physical Map of Africa · Tom Patterson, 2025 · Wikimedia Commons · domaine public ; Guinea · John Ogilby, 1670 · détail · Geographicus / Commons · domaine public ; Les Sélections sociales · G. Vacher de Lapouge · 1896 · page de titre · Commons · domaine public ; Durban Harbour View · RishHans, 2025 · Wikimedia Commons · CC0 ; Taʾrīkh al-fattāsh · folio 34122 · © Marie-Lan Nguyen / Commons · CC BY 4.0 ; Drapeau actuel de l’Union africaine · Union africaine / Commons · domaine public ; African teacher · Ghana, 2017 · Ekow Ackerson / Commons · CC BY-SA 4.0 ; Flags of Africa · Dr. Blofeld / KNPC1256 · Wikimedia Commons · CC BY-SA 4.0 ; Mansa Musa · Atlas catalan, 1375 · détail · Attribué à A. Cresques / BnF / Commons · domaine public ; African Sunset for the love of the game · Yedurie / Commons · CC BY-SA 4.0 ; Village meeting to discuss matters at hand · Tom Cat King / Commons · CC BY-SA 4.0"
+      },
+      {
+        "kind": "video",
+        "youtubeId": "Jrts8VGjaPo",
+        "poster": {
+          "src": "pourquoi-la-meconnaissance-freine-l-afrique/pourquoi-la-meconnaissance-freine-l-afrique/poster-c2d6379173dd.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/DdtmHSpiHFj/",
+        "publishedAt": "2026-09-25"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/reel/Ddo3LdXpW7s/",
+        "publishedAt": "2026-09-23"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7689467856752348438",
+        "publishedAt": "2026-09-25"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7688783622890933526",
+        "publishedAt": "2026-09-23"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/Jrts8VGjaPo",
+        "publishedAt": "2026-09-23"
+      }
+    ]
+  },
+  "relatedArticleIds": [],
+  "publishedAt": "2026-09-30"
+}

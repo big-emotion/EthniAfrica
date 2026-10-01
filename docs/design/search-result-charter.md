@@ -205,10 +205,21 @@ to the 900 px the rich boards use.
 The top-level block vocabulary, in canonical mobile order, is:
 
 ```text
-lenses · verdict · appellations · shorts · origins · peoples · shared-name ·
+verdict · appellations · lenses · shorts · origins · peoples · shared-name ·
 tiles · atlas-holds · plates · quiz · images · problem · near-name · fiches ·
 owed · further
 ```
+
+The filters (`lenses`) follow the answer and the forms (operator direction,
+2026-09-29). A filter refines the exploration stream below it; placed above the
+answer it made the first thing a reader met a control instead of the reply, and
+it suggested that a filter could change the answer. The `verdict` block carries
+the reviewed answer when one exists (`nameAnswers` in the search response):
+ordinary prose on the page ground, one entry per subject answering the name, a
+link to that subject's fiche and its source access after each entry, never
+clamped — the last sentence of an answer often carries its uncertainty. A shared
+name keeps the searched term as its single `h1`, never the first-ranked
+subject's name.
 
 `owed` is one top-level block because it is one visual and rhetorical closing.
 Its independently testable parts are, in order:

@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "frontiere-coloniale",
-    "directives": "Voir DIRECTIVES-AFRIK.md pour les règles de rédaction complètes. Aucune section n'est optionnelle ni inventable : une frontière sans source Tier 1/2 ne doit jamais être publiée (source ou abandon — voir Source Tier Policy dans CLAUDE.md)."
+    "directives": "Voir DIRECTIVES-AFRIK.md pour les règles de rédaction complètes. Aucune section n'est optionnelle ni inventable : une frontière doit citer au moins une source traçable (source ou abandon). Un statut faible n'interdit pas la publication : la source est publiée avec son palier (voir Source Tier Policy dans CLAUDE.md)."
   },
   "id": "<Identifiant du layer — ex: FRONTIERE_AOF_1904>",
   "title_fr": "<Titre du layer en français — ex: Partition coloniale de l'Afrique-Occidentale française>",

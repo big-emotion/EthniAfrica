@@ -1,0 +1,134 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "patronyme",
+    "directives": "Dossier fondé sur une source institutionnelle malienne et un agrégateur ; ne pas étendre les affirmations sans source dédiée."
+  },
+  "id": "PAT_DAO",
+  "nameMain": "Dao",
+  "nameSystem": "clan_name",
+  "spellings": [
+    {
+      "spelling": "Dao",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["interpeace-autoportrait-mali-2015", "forebears-dao"]
+        },
+        {
+          "countryId": "BFA",
+          "sourceRefs": ["forebears-dao"]
+        },
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["forebears-dao"]
+        }
+      ]
+    }
+  ],
+  "transmissionMode": "other",
+  "designatedSocialUnit": "clan",
+  "origin": {
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "linguisticReconstructions": [
+      {
+        "claim": "Le nom compte parmi les noms de famille minyanka du Mali, avec Goïta, Dembélé et Sogoba ; les Minyanka sont établis dans les régions de San, Koutiala et Sikasso.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["interpeace-autoportrait-mali-2015"]
+      }
+    ]
+  },
+  "peoples": [
+    {
+      "peopleId": "PPL_MINYANKA",
+      "status": "attested",
+      "sourceRefs": ["interpeace-autoportrait-mali-2015"]
+    }
+  ],
+  "countries": [
+    {
+      "countryId": "MLI",
+      "status": "attested",
+      "sourceRefs": ["interpeace-autoportrait-mali-2015", "forebears-dao"]
+    },
+    {
+      "countryId": "BFA",
+      "status": "attested",
+      "sourceRefs": ["forebears-dao"]
+    },
+    {
+      "countryId": "CIV",
+      "status": "attested",
+      "sourceRefs": ["forebears-dao"]
+    }
+  ],
+  "alliances": [],
+  "casteOrSocialFunction": null,
+  "bearers": [],
+  "homonyms": [
+    {
+      "label": "Dao (nom vietnamien)",
+      "entityType": "other",
+      "entityId": null,
+      "distinction": "Le même mot s'écrit Dao au Vietnam, où il est porté par bien plus de personnes qu'en Afrique de l'Ouest. Nous n'avons trouvé aucune source qui relie les deux noms, et rien n'indique qu'ils aient un rapport.",
+      "sourceRefs": ["forebears-dao"]
+    }
+  ],
+  "sources": [
+    {
+      "sourceKey": "interpeace-autoportrait-mali-2015",
+      "title": "Autoportrait du Mali — Les Obstacles à la Paix",
+      "url": "https://www.interpeace.org/wp-content/uploads/2015/03/2015_03_02_Mali_Autoportrait_FR.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Rapport de recherche-action de l'Institut malien de recherche action pour la paix avec Interpeace, en partenariat avec les Nations unies, mars 2015. Son chapitre sur les diversités socioculturelles donne, pour chaque grand groupe du Mali, quelques noms de famille suivis de « etc. » : la liste est illustrative, sans méthode d'établissement ni source indiquée. Elle atteste qu'un nom est porté dans un groupe, non d'où il vient."
+    },
+    {
+      "sourceKey": "forebears-dao",
+      "title": "Dao — origine, signification et incidence du nom de famille",
+      "url": "https://forebears.io/surnames/dao",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Agrégateur généalogique mondial, consulté le 29 septembre 2026. Incidence mondiale d'environ 835 374 porteurs ; Vietnam 593 679, Mali 97 834, Burkina Faso 74 123, Côte d'Ivoire 27 803, États-Unis 12 287. La page ne donne aucune signification du nom. Les effectifs hors d'Afrique ne sont pas repris dans les attestations de cette fiche."
+    }
+  ],
+  "gaps": [
+    {
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Nous n'avons trouvé aucune tradition orale rapportant l'origine de ce nom."
+    },
+    {
+      "fieldPath": "origin.writtenChronicles",
+      "reason": "Nous n'avons trouvé aucune chronique écrite qui mentionne l'origine de ce nom."
+    },
+    {
+      "fieldPath": "origin.linguisticReconstructions",
+      "reason": "Aucune étymologie de ce nom n'est établie dans les sources consultées : nous ne proposons aucune signification."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "Nous ne nommons aucun porteur : aucune source consultée n'en cite qui soit décédé et dont l'appartenance à ce nom soit établie."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "Nous n'avons trouvé aucun lien de plaisanterie (sanankuya) attesté pour ce nom qui puisse être relié à une fiche existante."
+    },
+    {
+      "fieldPath": "casteOrSocialFunction",
+      "reason": "Nous n'avons trouvé aucune source attribuant à ce nom une fonction sociale ou un statut."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Nous ne savons pas si ce nom est, chez les Minyanka, un nom de clan d'origine locale ou un nom de clan mandingue adopté : la source consultée le range parmi les noms de famille sans le préciser."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Au Burkina Faso, où le nom est porté par plus de soixante-dix mille personnes, nous n'avons trouvé aucune source qui le rattache à un peuple."
+    },
+    {
+      "fieldPath": "transmissionMode",
+      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+    }
+  ]
+}

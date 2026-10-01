@@ -13,6 +13,16 @@ an attested myth is optional. Evaluate any actual correction against its
 identified sources, without requiring a nonexistent site fiche. Do not invent
 a myth to admit the subject. Attribution and uncertainty remain mandatory.
 
+## When this review applies (2026-09-29)
+
+It is `required` only when the edition declares an attested belief it corrects
+(`myth` in the brief; `check-family-brief.mjs` says so). A piece with no such belief —
+a portrait, a listening, a comparison, a material biography, or a name investigation
+that simply explains — is `not-applicable`, recorded with its reason, and needs no myth:
+inventing one to have something to defeat is the « homme de paille » failure this skill
+exists to stop. `explique` remains a complete and valid verdict. When it _does_ apply,
+in any family, every rule below holds, including the five slippages.
+
 Une question, trois lignes, un verdict. C'est tout le skill.
 
 Il est appelé par `ethniafrica-idee` (le sujet), `ethniafrica-structure` (les
@@ -39,11 +49,11 @@ Une pièce qui défait un mythe attire la contradiction. Elle doit donc tenir.
 
 ## Les trois lignes
 
-| Ligne                       | Ce qu'elle dit                                          | Ce qui la rend valide                                                                                                                                                                                                                     |
-| --------------------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Le mythe**                | ce que le public visé croit, dans ses mots à lui        | **attesté** : où on l'a entendu (un commentaire publié, un usage courant, un manuel, un discours). Un mythe qu'on invente pour le défaire est un homme de paille — un appât.                                                              |
-| **La correction**           | ce que l'atlas montre à la place, en une phrase         | une fiche sous `dataset/source/afrik/` et ses sources, chacune avec son tier. Wikipédia se lit d'abord, pour ce qu'il cite, jamais comme source. Une correction que le corpus ne porte pas va à `/afrik-curator` avant d'aller plus loin. |
-| **La preuve dans la pièce** | la carte, la scène ou l'écran où la correction est dite | nommée par son rang. Une correction dite seulement dans la légende n'est pas dans la pièce.                                                                                                                                               |
+| Ligne                       | Ce qu'elle dit                                          | Ce qui la rend valide                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| --------------------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Le mythe**                | ce que le public visé croit, dans ses mots à lui        | **attesté** : où on l'a entendu (un commentaire publié, un usage courant, un manuel, un discours). Un mythe qu'on invente pour le défaire est un homme de paille — un appât.                                                                                                                                                                                                                                                                    |
+| **La correction**           | ce que l'atlas montre à la place, en une phrase         | une fiche sous `dataset/source/afrik/` et ses sources, chacune avec son tier. Wikipédia se lit d'abord, pour ce qu'il cite ; on appuie la correction sur ce qu'il cite, et il n'est jamais affiché comme source dans une publication sociale (règle de l'opérateur du 2026-09-21, voir `docs/editorial/reader-facing-register.md`, « Using sources »). Une correction que le corpus ne porte pas va à `/afrik-curator` avant d'aller plus loin. |
+| **La preuve dans la pièce** | la carte, la scène ou l'écran où la correction est dite | nommée par son rang. Une correction dite seulement dans la légende n'est pas dans la pièce.                                                                                                                                                                                                                                                                                                                                                     |
 
 ## Le verdict
 

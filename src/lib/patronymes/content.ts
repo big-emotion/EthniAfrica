@@ -123,7 +123,14 @@ export interface OriginAccount {
   claimStatus: "claimed" | "contested" | "established" | null;
   griot: string | null;
   transcription: string | null;
+  /** Who carried the account, as the record states it; null when it does not. */
+  carrier: string | null;
+  collection: "direct" | "mediated" | "not-stated" | null;
+  collector: string | null;
+  context: string | null;
 }
+
+const COLLECTION_MODES = ["direct", "mediated", "not-stated"];
 
 export interface PatronymeOrigin {
   oralTraditions: OriginAccount[];
@@ -267,6 +274,19 @@ export function readNameStanding(content: ContentBag): NameStanding | null {
   };
 }
 
+/**
+ * Whether a name is offered to crawlers: a person wrote at least one readable
+ * source it cites, whatever that source's tier. A dossier resting only on
+ * machine-written sources is published and labelled, but not offered (operator
+ * decision 2026-09-30; it replaces DEC-050's threshold by tier). The sitemap
+ * and the page's `robots` directive both read this one predicate, so a
+ * submitted URL never declares itself `noindex`.
+ */
+// @req REQ-147
+export function isIndexableStanding(standing: NameStanding | null): boolean {
+  return standing !== null && standing.aiGeneratedCount < standing.sourceCount;
+}
+
 // @req REQ-133
 export function readGaps(content: ContentBag): PatronymeGap[] {
   const value = content.gaps;
@@ -355,6 +375,14 @@ function readOriginAccounts(value: unknown): OriginAccount[] {
           : null,
       griot: readStringField(entry.griot),
       transcription: readStringField(entry.transcription),
+      carrier: readStringField(entry.carrier),
+      collection:
+        typeof entry.collection === "string" &&
+        COLLECTION_MODES.includes(entry.collection)
+          ? (entry.collection as OriginAccount["collection"])
+          : null,
+      collector: readStringField(entry.collector),
+      context: readStringField(entry.context),
     }));
 }
 

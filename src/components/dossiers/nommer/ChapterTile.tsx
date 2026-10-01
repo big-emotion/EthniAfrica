@@ -23,7 +23,7 @@ interface ChapterTileProps {
  *
  * Three levels, and there is no fourth (typography charter §4): the title, the
  * question, and the measure. The measure is a **line**, not a big numeral,
- * because one of the five reads « bantou », 1862 — a word and a date. A
+ * because one of the five reads « bantou », 1857 — a word and a date. A
  * template built around a hero-sized figure would have made that tile absurd
  * and broken the rhythm of the row, so the emphasis is carried by weight and
  * `--accent-ink` inside the caption rather than by a size of its own.

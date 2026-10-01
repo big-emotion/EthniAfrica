@@ -1,0 +1,111 @@
+{
+  "id": "senoufo-syenambele",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Mythe déconstruit",
+  "fr": {
+    "slug": "senoufo-syenambele",
+    "title": "D'où vient le nom Sénoufo ?",
+    "excerpt": "En Côte d'Ivoire, les sculpteurs qui ont inspiré Picasso formaient une caste redoutée.",
+    "sections": []
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Atlas EthniAfrica, appellations sénoufo",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s2",
+      "title": "Ethnologue — Cebaara Senufo (sef) ; ISO 639-3 sef, SIL International",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s3",
+      "title": "Dolores Richter, Africa, 1980",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s4",
+      "title": "« Senufo Unbound », Cleveland Museum of Art, 2015",
+      "tier": "needs_review"
+    },
+    {
+      "id": "s5",
+      "title": "Diakité et Sissoko, Le royaume du Kénédougou et sa capitale Sikasso, Jamana / L'Harmattan Burkina, 2014",
+      "tier": "needs_review"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "senoufo-caste-sculpteurs"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "senoufo-syenambele/senoufo-caste-sculpteurs/slide-01-e666c1e3428f.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une statue sénoufo en bois clair, à la tête en losange et aux bras largement ajourés, posée sur un socle derrière une vitrine de musée, avec le reflet d'une visiteuse dans la vitre",
+            "text": "En Côte d'Ivoire, les masques qui ont inspiré Picasso venaient d'une caste redoutée."
+          },
+          {
+            "src": "senoufo-syenambele/senoufo-caste-sculpteurs/slide-02-6b0e030da1ac.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un boubou traditionnel tissé, damier de carrés indigo et rouille à petits motifs losanges, présenté à bout de bras sous un auvent de marché, d'autres tissus visibles à l'arrière-plan",
+            "text": "Ils se disent Syénambélé, pas seulement Sénoufo.\n\nSyénambélé — le nom qu'ils se donnent\nSenufo — la forme retenue à l'international\n\nSyénambélé signifie « les gens du nord » ou « les gens de Syen » : c'est le nom qu'ils se donnent. « Senufo » — Senoufo en orthographe française — est la forme que les répertoires internationaux ont retenue.\n\nAtlas EthniAfrica, appellations sénoufo"
+          },
+          {
+            "src": "senoufo-syenambele/senoufo-caste-sculpteurs/slide-03-8f852b539945.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un boubou en coton tissé, fond indigo à bandes claires et motifs triangulaires jaunes, rouges et verts, suspendu à l'étal d'un marché artisanal sous un toit de tôle",
+            "text": "Les Sénoufo vivent entre quatre pays, sans qu'aucun royaume ne les ait jamais réunis.\n\nEnviron quatre millions de Sénoufo vivent aujourd'hui en Côte d'Ivoire, au Mali, au Burkina Faso et au Ghana — plus de la moitié dans la seule région de Korhogo, dans le nord ivoirien, qui en est le centre culturel et commercial reconnu.\n\nEthnologue — Cebaara Senufo (sef) ; ISO 639-3 sef, SIL International"
+          },
+          {
+            "src": "senoufo-syenambele/senoufo-caste-sculpteurs/slide-04-224ab8a8b258.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un couple de statues-ancêtres sénoufo en bois sombre, hautes et élancées, aux bras largement ajourés et aux têtes anguleuses, posées sur des socles dans une salle de musée aux cimaises bleu et vert",
+            "text": "Cette caste d'artisans vivait à l'écart, crainte pour ses pouvoirs rituels.\n\nSix groupes d'artisans endogames — forgerons, sculpteurs, fondeurs de laiton — étaient classés en dessous des agriculteurs, craints pour leurs pouvoirs rituels. Une chercheuse conteste la rigidité de ce système : la hiérarchie tiendrait plus à la richesse qu'au métier.\n\nDolores Richter, Africa, 1980"
+          },
+          {
+            "src": "senoufo-syenambele/senoufo-caste-sculpteurs/slide-05-fa22646d67a2.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un masque-heaume en bois sombre à la gueule ouverte hérissée de dents pointues, aux longues cornes recourbées, photographié en studio sur fond gris uni",
+            "text": "Ce même art a fait basculer la peinture de Picasso vers le cubisme.\n\nVers 1907, Picasso découvre l'art africain au Trocadéro, juste avant « Les Demoiselles d'Avignon », le tableau qui ouvre le cubisme. L'exposition « Senufo Unbound » (2015) situe l'art sénoufo au cœur de ce moment, aux côtés de Fernand Léger.\n\n« Senufo Unbound », Cleveland Museum of Art, 2015"
+          },
+          {
+            "src": "senoufo-syenambele/senoufo-caste-sculpteurs/slide-06-02dfd88fee29.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un buste de mannequin au visage peint en noir, coiffé d'un bonnet pointu en tissu imprimé à motifs sombres et vêtu d'une tunique assortie, photographié contre un mur clair",
+            "text": "Aucun chef sénoufo ne répond à un roi.\n\nAucune structure politique ne réunit l'ensemble des Sénoufo : les villages restent indépendants, organisés autour du Poro, une société initiatique masculine qui rythme l'éducation et les rites de passage. Le seul royaume que le groupe ait connu, le Kénédougou, fondé par la famille Traoré au XVIIe siècle, n'en gouvernait qu'une partie — et s'effondre en 1898 avec la prise de Sikasso par les troupes coloniales françaises.\n\nDiakité et Sissoko, Le royaume du Kénédougou et sa capitale Sikasso, Jamana / L'Harmattan Burkina, 2014"
+          },
+          {
+            "src": "senoufo-syenambele/senoufo-caste-sculpteurs/slide-07-aaf4ff9dd836.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un danseur masqué, entièrement recouvert d'un costume de fibres et de tissu brun, exécute une figure acrobatique jambe levée sous un auvent de chaume, devant une foule de spectateurs assis et debout",
+            "text": "Ce peuple n'a jamais eu de roi.\n\nLe pouvoir s'y prête, il ne s'y transmet pas.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "Statue déblé sénoufo, Musée d'art moderne de Troyes · Gérald Garitan · 11 février 2023 · Musée d'art moderne de Troyes, via Wikimedia Commons · CC BY-SA 4.0 ; Boubou traditionnel sénoufo · Papischou · 28 novembre 2015 · Wiki Loves Africa 2015, via Wikimedia Commons · CC BY-SA 4.0 ; Tenue de chefs sénoufos, marché artisanal · Papischou · 28 novembre 2015 · Wiki Loves Africa 2015, via Wikimedia Commons · CC BY-SA 4.0 ; Couple d'ancêtres sénoufo · AnaKnežević · 7 septembre 2018 · Musée d'art africain de Belgrade, via Wikimedia Commons · CC BY-SA 4.0 ; Masque Wabele ou Wo, sénoufo, début XXe siècle · photographie Brooklyn Museum · Brooklyn Museum, via Wikimedia Commons · CC BY 3.0 ; Chapeau de chef sénoufo · Papischou · 4 octobre 2015 · Wiki Loves Africa 2015, via Wikimedia Commons · CC BY-SA 4.0 ; Danse sacrée Boloye · Nedjmedias · 30 janvier 2026 · Wikimedia Commons · CC BY-SA 4.0"
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7685437746491542806",
+        "publishedAt": "2026-09-14"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

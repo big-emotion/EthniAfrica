@@ -14,6 +14,14 @@
         { "countryId": "LBR", "sourceRefs": ["corpus-ppl-vai-organisation"] },
         { "countryId": "SLE", "sourceRefs": ["corpus-ppl-vai-organisation"] }
       ]
+    },
+    {
+      "spelling": "Kamara",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["gha-iv-mali"] }]
+    },
+    {
+      "spelling": "Kámala",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
     }
   ],
   "transmissionMode": "patrilineal",
@@ -31,6 +39,11 @@
         "claim": "The nyamakalaw — endogamous groups of artisans and musicians — are attested among the Malinke by around 1300 at the latest and are found among more than fifteen West African peoples. The status is transmitted with the jamu, which makes the clan name the vehicle of social position as much as of descent.",
         "claimStatus": "established",
         "sourceRefs": ["tamari-1991-caste"]
+      },
+      {
+        "claim": "In the tradition that accompanies the founding of the Mali empire, the Kamara hold Sibi and Tabon and divide into two branches, one led by Tabon-Wana, the other by Kamadian Camara of Sibi.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["gha-iv-mali"]
       }
     ]
   },
@@ -60,7 +73,7 @@
     {
       "countryId": "MLI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "gha-iv-mali"]
     },
     {
       "countryId": "GIN",
@@ -76,6 +89,15 @@
   "alliances": [
     {
       "targetPatronymeId": "PAT_FOFANA",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_KOUROUMA",
       "allianceType": "sanankuya",
       "sourceRefs": [
         "bamadaba-jamuw",
@@ -159,7 +181,7 @@
       "url": null,
       "tier": "unverified",
       "source_kind": "ai_generated",
-      "notes": "This name appears among those we have identified for documentation: it has been selected as a name to document, but no dedicated source has yet been consulted. The fiche therefore exists to record the name, not for what it states about it. Future verification will draw on electoral registers, national statistical institutes and onomastic scholarship for the country concerned."
+      "notes": "This name is on our list of names to document, but no dedicated source has yet been consulted. The fiche therefore exists to flag the name, not for what it asserts about it. Further checks will draw on electoral registers, national statistical institutes and onomastic studies of the country concerned."
     },
     {
       "sourceKey": "canut-2002-senankuya",
@@ -186,12 +208,13 @@
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-09-09T09:35:08.319Z",
-    "model": "claude-sonnet-5",
-    "sourceHash": "1691602c020a0b80960723fbb94151ee487c3f976d3162558a24f50e2ea3ad44",
+    "translatedAt": "2026-09-29T16:20:29.372Z",
+    "model": "claude-sonnet-5-5",
+    "sourceHash": "0d8b67f1f1fed5417ebd2bdaedb9c5e7847cd1f79ba4c6407b3c72ebd4e4a49f",
     "fieldHashes": {
       "origin.linguisticReconstructions[0].claim": "14f92c91d5d99f18",
       "origin.linguisticReconstructions[1].claim": "77da92e5bff5b48d",
+      "origin.linguisticReconstructions[2].claim": "f9c395bc3eec48de",
       "casteOrSocialFunction.value": "696ddc1f839db0ba",
       "sources[0].notes": "ab51999e890feb22",
       "sources[1].notes": "4e75f41a563c53c3",
@@ -200,14 +223,15 @@
       "sources[4].notes": "b80adb343411bfb9",
       "sources[5].notes": "16bdc28ca53255a6",
       "sources[6].notes": "3a5b80d26c30b0b6",
-      "sources[7].notes": "78128286f23912b9",
+      "sources[7].notes": "22ca6f28c6df8af9",
       "sources[8].notes": "2c14e48c42d56e18",
       "sources[9].notes": "79986afda62f44db",
       "gaps[0].reason": "707e7e4ce5e2cd86"
     },
     "reviewRequired": [
       "origin.linguisticReconstructions[0].claim",
-      "origin.linguisticReconstructions[1].claim"
+      "origin.linguisticReconstructions[1].claim",
+      "origin.linguisticReconstructions[2].claim"
     ]
   }
 }

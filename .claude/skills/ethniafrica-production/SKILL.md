@@ -58,24 +58,37 @@ technical success is not approval of an unidentified new version.
 
 ## 2. Resume at the first genuinely missing step
 
-| Available evidence                            | Next work                                                                                                                          |
-| --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Only an idea                                  | Read existing audience/strategy work; use `ethniafrica-idee` for the missing sourced subject report, then `ethniafrica-structure`. |
-| Narrative and sources, no visual plan         | Use `ethniafrica-structure` to prepare the visual proposal. Do not restart audience research or rewrite approved narration.        |
-| Proposed plan, approval absent                | Present it with the complete text if that text is unapproved; wait for the combined review.                                        |
-| Approved plan, missing voice/alignment/assets | Complete the approved package, resolving voice authorization before generation.                                                    |
-| Filled plan and valid handoff lock            | Use `ethniafrica-produire` to verify and render; do not redesign.                                                                  |
-| Exact proof and genuine release evidence      | Complete the version-bound review, finalize and perform the documented library handoff if registered.                              |
-| Clean delivery already exists                 | Verify its manifest/files and report them; do not rerender without a reason.                                                       |
+| Available evidence                                            | Next work                                                                                                                                                                                                                                                                      |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Only an idea                                                  | Read existing audience/strategy work; use `ethniafrica-idee` for the missing sourced subject report, then `ethniafrica-structure`.                                                                                                                                             |
+| Narrative design in progress (`narrativeDesign` in the brief) | Run `check-narrative-design.mjs <brief> --resume` and follow its stage: research, proposals not yet shown, **wait for the operator's choice** (never select or write the recommended script), outline not yet shown, or handoff. All five stages belong to `ethniafrica-idee`. |
+| Narrative and sources, no visual plan                         | Use `ethniafrica-structure` to prepare the visual proposal. Do not restart audience research or rewrite approved narration.                                                                                                                                                    |
+| Proposed plan, approval absent                                | Present it with the complete text if that text is unapproved; wait for the combined review.                                                                                                                                                                                    |
+| Approved plan, missing voice/alignment/assets                 | Complete the approved package, resolving voice authorization before generation.                                                                                                                                                                                                |
+| Filled plan and valid handoff lock                            | Use `ethniafrica-produire` to verify and render; do not redesign.                                                                                                                                                                                                              |
+| Exact proof and genuine release evidence                      | Complete the version-bound review, finalize and perform the documented library handoff if registered.                                                                                                                                                                          |
+| Clean delivery already exists                                 | Verify its manifest/files and report them; do not rerender without a reason.                                                                                                                                                                                                   |
 
 Load supporting skills from `.claude/skills/<name>/SKILL.md` when their work is
 needed. `ethniafrica-audience-audit` and `ethniafrica-content-strategist` handle
 missing upstream audience/strategy decisions; they are not compulsory reruns for
-an existing narrative. `ethniafrica-message`, `ethniafrica-mythe` and, for naming
-claims, `ethniafrica-onomastique` perform the applicable reviews. Keep existing
-valid reviews; a thematic explanation need not invent a myth or a corpus entity.
+an existing narrative. Run `node social/tools/narration/check-family-brief.mjs <brief.json>`
+and perform the reviews it lists `required` (`ethniafrica-message`, `ethniafrica-mythe` and, for
+naming claims, `ethniafrica-onomastique`); record each `not-applicable` with its reason. Keep
+existing valid reviews; a thematic explanation need not invent a myth or a corpus entity.
+A brief carrying a `narrativeDesign` is not ready until its selection is a real operator
+(or delegated) choice and both the proposals and the detailed outline were actually shown:
+a file on disk proves neither, and a synthetic fixture selection never counts. Changed
+evidence that touches the chosen question reopens that choice; a changed crop, output
+folder or re-render does not. An older approved narration keeps its approvals and needs no
+five-stage intake.
 If the source report is missing, recover or complete the missing evidence through
 `idee` and report it; do not discard an existing approved narrative to restart it.
+
+Roles, inputs, outputs and resume conditions are in
+[`references/handoffs.md`](references/handoffs.md). After delivery, per-network packages,
+occurrences and readings follow `docs/design/gabarits-social/EDITION-DELIVERY.md`; a package is
+never a publication.
 
 Use the canonical `structure` and `produire` instructions for their actual work.
 The coordinator records routing and decisions, not a second copy of their schemas
@@ -99,9 +112,9 @@ Use the established visual language where it serves the explanation:
 - Flags only when historically appropriate or explicitly present-day orientation.
 - Animated schematic routes with visible uncertainty; distinguish journeys,
   migrations, political territories and population presence.
-- Focused timelines with one dominant date, discreet corner context and readable motion.
+- Focused timelines with one dominant date over their map and readable motion.
 - Relevant photographs or documents that explain the spoken point.
-- Optional neighbouring territories or silent regional/world events when sourced,
+- Optional neighbouring territories, as context features on the map, when sourced,
   contemporary with the depicted period and meaningful to this audience; keep them secondary.
 
 Do not force every feature into every video. Never reuse another subject's
@@ -132,6 +145,13 @@ Prepare `production-brief.md`, actual sourced assets, source/licence records and
 Otherwise resolve voice choice, pronunciation needs and paid-generation authorization
 before generating audio through the existing workflow; plan approval alone is not
 permission to purchase audio. The scene engine does not generate speech.
+
+Apply the pending-rights rule in `.claude/skills/ethniafrica-produire/SKILL.md`:
+missing publication clearance for the voice or an incorporated asset does not
+block preparation, rendering or private proof delivery. Record it as pending and
+continue without a clearance question or waiver request. Resolve publication
+rights at release review before finalization; do not equate recording approval
+with rights clearance.
 
 Bind timings to the completed recording and exact alignment. Never call estimated
 timing measured timing, retime speech to an arbitrary slot, or give the execution

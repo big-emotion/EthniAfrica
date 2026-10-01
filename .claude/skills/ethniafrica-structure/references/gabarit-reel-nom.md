@@ -10,6 +10,15 @@ le vérifie. Un écart se corrige dans le texte, pas dans le contrôleur. La
 catégorie est la `typologie` du carnet de production. Ce gabarit ne couvre pas la
 typologie `mot` (« ethnie ») : voir « Ce que le gabarit ne couvre pas ».
 
+**Portée (2026-09-30).** Ce gabarit est la structure spécialisée de l'inventaire
+endonyme/exonyme et de la transmission du patronyme ; il n'est **pas** l'obligation
+universelle d'un reel de la série. Un reel dont le brief porte une section
+`narrativeDesign` suit le plan détaillé choisi à l'étape 5 d'`idee`, et se vérifie par
+`check-gabarit.mjs <narration> --brief <brief.json>` : le plafond de deux explications,
+le nombre de noms et la liste de scènes ci-dessous ne s'y appliquent pas, la clôture
+unique si. On ne contourne pas ce gabarit en déclarant la série « libre » ni en retirant
+`series` : la route est une section explicite du brief, jamais une déduction.
+
 Le **carrousel n'est pas concerné** : il a son propre gabarit, traité à part.
 
 ## Le squelette : sept temps, un paragraphe chacun, dans cet ordre
@@ -36,7 +45,11 @@ changent.
 ### Ouverture (peuple, pays, lieu, langue)
 
 1. Une question : « Comment ce peuple s'appelle-t-il lui-même ? »
-2. « Un même [peuple] porte toujours plusieurs noms. »
+2. « Un même [peuple] porte toujours plusieurs noms. » — ou, quand la recherche ne
+   permet pas de le dire de tous les sujets de cette catégorie : « Ce [peuple]
+   porte plusieurs noms. » (« Cette » pour un nom féminin). Choisir la seconde
+   forme par défaut : choisir un sujet qui a plusieurs noms attestés n'établit pas
+   une règle sur tous les peuples, pays ou langues. Le contrôleur accepte les deux.
 3. Un seul endonyme : « Un seul vient de [lui et de sa langue] : c'est l'endonyme, le nom de l'intérieur. »
    Plusieurs endonymes : « Ici, il en emploie [deux], selon [son dialecte] : ce sont des endonymes, les noms de l'intérieur. »
 4. « Les autres viennent d'ailleurs : ce sont des exonymes, et certains sont plus connus que [le sien]. »
@@ -140,6 +153,31 @@ Le patronyme a deux cas »).
 Le **piège propre à la langue** est de confondre la langue et son peuple ; le
 piège propre au **lieu** est de croire que le nom officiel est le nom des
 habitants.
+
+## Patronyme : comparer des formes sans en couronner une
+
+Décidé par l'opérateur le 2026-09-30 (constat C12, option a). Le squelette de
+comparaison ci-dessus pose **une** forme d'origine et attribue les autres à l'état
+civil. C'est faux dès que l'origine n'est pas établie, ou que les formes viennent
+de plusieurs langues ou de plusieurs transmissions. Dans ce cas, toutes les formes
+portent la même étiquette, « une forme attestée », et le texte ne dit que ce que
+chaque source montre. Le contrôleur reconnaît cette variante à ses étiquettes ;
+le squelette d'origine reste valide, tel quel.
+
+- **Ouverture** (quatre phrases) : la question ; « Ce nom de famille prend plusieurs
+  formes. » (ou la phrase universelle) ; « Nous ne savons pas encore quelle forme est
+  la plus ancienne. » ; « Plusieurs formes circulent aujourd'hui. »
+- **Inventaire** : « Ce nom de famille porte [deux à quatre] formes : A, B et C. »
+- **Un bloc par forme** : « X est une forme attestée. » Puis où elle est attestée
+  (une date) **ou** « Nous ne savons pas… » : chaque bloc dit l'un des deux.
+  Toutes les formes portent la même étiquette, sans mélange avec « forme d'origine ».
+- **Classement** : « Les sources consultées ne permettent pas de dire quelle forme
+  est la plus ancienne. » puis une ou deux phrases qui nomment toutes les formes.
+- **Synthèse** (trois phrases au plus) et **clôture unique**, comme partout.
+
+Exemple canonique : `social/tools/narration/exemples/patronyme-attestees.fr.txt`.
+Choisir cette variante par défaut tant qu'aucune source n'établit la forme d'origine ;
+le squelette d'origine suppose cette preuve, il ne la remplace pas.
 
 ## Le patronyme a deux cas
 
@@ -255,3 +293,9 @@ Fictifs — noms, dates et sens inventés, à ne jamais publier :
 formes), `patronyme-transmission.fr.txt` (second cas patronyme, ci-dessus),
 `lieu.fr.txt`, `langue.fr.txt`. Ils servent aussi de cas de test au contrôleur :
 une phrase fixe modifiée ici fait échouer la suite.
+
+Les deux ouvertures permises y figurent : `peuple.fr.txt` garde la phrase de
+l'opérateur (« Un même peuple porte toujours plusieurs noms. »), et
+`peuple-dialectes.fr.txt` ouvre avec la phrase propre au sujet (« Ce peuple
+porte plusieurs noms. »), qui n'affirme rien des autres peuples. Un sujet qui
+n'a qu'un nom attesté ne doit pas reprendre la première.

@@ -5,6 +5,88 @@ description: Prepare EthniAfrica narration, visual storyboards, sourced assets a
 
 # structure — écrire le contenu
 
+## Editorial voice and reader needs (2026-09-30)
+
+Before writing or reviewing reader-facing copy, read
+`docs/editorial/reader-facing-register.md` and `docs/editorial/audience-personas.md`.
+EthniAfrica speaks as a popular educator using research methods, without claiming
+scientific, linguistic or historical qualifications for its operator. Explain the
+subject in ordinary language, keep uncertainty in the sentence, and put traceable
+sources after it. Oral and local accounts are sources in their own right; preserve
+their actual context and never invent interviews or community consensus.
+State the primary reader need in the existing working report; personas are
+provisional, and geography or platform demographics never establish diaspora identity.
+
+## Narrative family routing (2026-09-29)
+
+Every piece belongs to one of six narrative families — `name-investigation`,
+`historical-portrait`, `circulation-connections`, `guided-listening`, `comparison`,
+`material-biography` — chosen by the shape of its question. The briefs, claim maps
+and the carousel and video sequences of each are in
+`.claude/skills/ethniafrica-structure/references/narrative-families.md`; the
+meanings (family ≠ visual profile ≠ format) are in
+`docs/design/gabarits-social/EDITORIAL-CONTRACT.md`.
+
+1. **Read the subject report and its brief** (`idee` writes both). Before writing
+   any text, run
+   `node social/tools/narration/check-family-brief.mjs <brief.json>`. It refuses an
+   unknown family, a claim with no source, a misspelled claim kind, a brief with no
+   declared uncertainties, and a stale or missing strategy basis; on success it prints
+   which reviews are `required` (with the skill that answers each) and which are
+   `not-applicable` with the reason.
+2. **Run the reviews the plan lists, and only those** beyond the five universal ones
+   (provenance, uncertainty, attribution, intelligibility, non-essentialising —
+   owed by every family, never waived). `name` → `ethniafrica-onomastique`, `myth` →
+   `ethniafrica-mythe`, `geography` and `music` → the source and audio checks below.
+   A `not-applicable` line is written into the verdict with its reason; it does not
+   cancel a universal review.
+3. **The name-origin machinery is for `series: name-origin` alone**: the fixed title
+   « D'où vient le nom X ? », the category template, `check-gabarit.mjs`, the single
+   fixed closing, the myth-ending-in-`?` ledger record in `docs/productions/`, and the
+   rule that a subject with no sourced myth has no carousel. A production that
+   predates briefs and whose subject the ledger holds is that series: no brief is
+   demanded, nothing changes for it. A social-only piece is never filed in
+   `docs/productions/` and never gets an invented site path, typologie, episode or
+   myth.
+4. **A brief with a `narrativeDesign` section is the research-led route
+   (2026-09-30).** `idee` has already framed, researched, proposed, recorded the
+   operator's choice and shown the detailed plan; `check-family-brief.mjs` refuses the
+   brief until all of that is recorded and shown (a draft, an unshown plan or a
+   synthetic choice is not a handoff). **Consume the selected plan; do not choose a
+   fresh argument.** Write the narration from the outline's blocks, in their order,
+   keeping each block's evidence and limits, its transition and the viewer-success
+   statements it must earn; a block that cannot be written from its cited claims goes
+   back to `idee`, it is not filled with an invented source, date or creator. The
+   old gabarit (`--type`, fixed scenes, two-explanation ceiling) does not apply on
+   this route; the check is
+   `node social/tools/narration/check-gabarit.mjs narration.fr.txt --brief <brief.json>`
+   (the series' closing stays word for word). The reviews from step 2 still apply.
+   Narration approval, voice and rendering remain later steps. Briefs without the
+   section, and any narration already approved, follow their established path.
+5. **A `narrativeDesign` with `format: "carrousel"` is the same route for cards
+   (2026-09-30).** The design is a handoff only when `check-family-brief.mjs` accepts
+   it: `carouselSequence` is the outline's card ids, `carouselProfile` and
+   `edition.series` are the selected proposal's. **Write each card from its row of the
+   shown outline, in order**: the row's evidence and limits become the card's
+   qualification and its short `source`; its `headingKind` decides how flat the title
+   may be (a `claim` title over a qualified claim is a rewrite, and no uncertainty
+   hides only in the caption); its composition and intention are what you ask the
+   assets for. A card that cannot be written from its cited claims, or whose
+   composition the assets cannot fill (a timeline with fewer than two real dates, a
+   map with no documented route), goes back to `idee` and the plan is revised and
+   shown again; it is never padded with an invented source, date or image. Stay inside
+   the profile's card range and typography: never shrink type, split within the range
+   or narrow the question. `check-gabarit.mjs` does not apply to a carousel; the
+   renderer's own fit, crop and subject checks do, and the checks run at 320, 390 and
+   430 px first. Show the **complete card copy and the caption** for the existing text
+   approval: choosing a plan is not approving its copy. The reviews from step 2 follow
+   the claims and media actually present, and a social-only name investigation still
+   gets the name review. A reel's chosen pattern approves nothing here.
+6. **Carousel and video are independent editions.** Adapting a published carousel to
+   a video on the same angle needs no new angle; the sourced claims and approved
+   copy carry over, and only what a change touches is re-reviewed. Neither format is
+   a prerequisite of the other, and no date or weekday is required.
+
 ## Mémoires sonores carousel route (2026-09-25)
 
 Read `docs/design/gabarits-social/MEMOIRES-SONORES.md` first for this feature.
@@ -165,6 +247,11 @@ personne"}, {"terme": "Basotho", "glose": "le peuple"}, …]`. Le parallèle
 
 ## Le carnet de production
 
+**Name-origin series only.** This ledger (`docs/productions/`) is the name series'
+record. A piece of any other family, or a social-only piece, is registered in the
+private library alone and never written here: no fabricated `sitePath`, typologie,
+episode or myth. Skip this whole section for it.
+
 ### Approved project introduction
 
 For an explicitly approved project-intention introduction, use the dedicated
@@ -324,6 +411,18 @@ accroche : signale-la à l'opérateur, ne la tranche pas.
 
 ## Le carrousel : un seul gabarit
 
+**Every carousel card and every reel scene has a full-frame image background; there is
+no dark, plain or solid-colour background mode** (operator ruling, 2026-09-30). Plan the
+picture of every card and every scene before its words: a card or a scene with no image
+is refused by the engine, never drawn on a « fond sombre » or « fond de nuit ». Les
+thèmes `nuit` et `parchemin` ne sont pas des fonds : ils règlent l'encre et la teinte du
+voile posé sur la photographie.
+
+Cette section vaut pour le carrousel de la **série name-origin**. Un carrousel d'une
+autre famille suit la lecture de sa famille
+(`references/narrative-families.md`) : pas de mythe exigé, pas de clôture fixe, et
+le nombre de cartes vient de son profil visuel, pas de cette liste.
+
 Un carrousel « nom de X » suit `references/gabarit-carrousel-nom.md`, dans cet ordre et
 pour les cinq typologies : accroche (la question du mythe) → réponse au mythe →
 cadrage → inventaire → une fiche par appellation → classement → morale → clôture
@@ -379,8 +478,24 @@ reading comfort. Paragraph boundaries carry editorial structure, not cut points.
   (`plain-language-doctrine-2026-09-09.md`), rappelée le 2026-09-21 après une
   narration qui ne l'appliquait pas. **`node social/tools/narration/check-narration.mjs
 <narration.fr.txt>` la vérifie** (ouvertures refusées, verbes de parole inversés,
-  plus de vingt mots) ; il ne voit pas si une phrase est simple, cela reste à
-  l'auteur et à la validation de l'opérateur.
+  plus de vingt mots, **linguiste, auteur ou livre en tête de phrase**, ou
+  introduit par « selon » / « d'après ») ; il ne voit pas si une phrase est
+  simple, cela reste à l'auteur et à la validation de l'opérateur. Un livre qui
+  est le sujet réel d'une phrase (une recommandation de lecture) passe s'il n'a pas
+  de verbe de parole ; s'il en a un (« décrit »), le contrôle le refuse tant qu'une
+  revue écrite n'a pas dit pourquoi : `check-narration.mjs <narration.fr.txt>
+--revues <revues.json>`, avec pour chaque phrase `{phrase, regle, raison}`. Une
+  revue sans raison ne débloque rien, une revue qui ne correspond plus à aucune
+  phrase échoue.
+- **The subject comes first; its reference follows.** Narration, cards and captions
+  explain the subject without leading on a scholar or book as borrowed authority.
+  Keep contested explanations qualified. A publication year is not an event date,
+  and a past tense alone does not express uncertainty. A cited book does not imply
+  either the presence or absence of fieldwork; claim direct consultation only when
+  it happened. Oral provenance stays identifiable, with its actual carrier and
+  context. Follow `docs/editorial/reader-facing-register.md`, including its exception
+  for an author, book or quoted speaker that is the actual subject. The lexical
+  `attribution-en-tete` check cannot replace this semantic review.
 - Les trois champs publiés verbatim au lecteur ne portent **aucune mention
   interne** : ni « à nommer », ni « à confirmer », ni « à compléter ». Ce sont
   des messages à l'opérateur, et ils bloquent la publication au lieu de
@@ -424,8 +539,9 @@ quand on ne l'ouvre pas.
 - **Chaque titre de réseau porte son format entre parenthèses** — `## TikTok
 (carrousel)`, `## TikTok (reel)`, `## LinkedIn (texte, sans média)`. Depuis la
   révision du 2026-09-21 de §1 bis, un réseau reçoit les deux formats (X n'a pas
-  de carrousel) : un sujet sans mythe n'a pas de carrousel, donc pas de titre
-  `(carrousel)`. Le moteur range les rendus par dossier-réseau, nommé d'après
+  de carrousel) : dans la série name-origin, un sujet sans mythe n'a pas de
+  carrousel, donc pas de titre `(carrousel)` ; les autres familles n'ont pas cette
+  contrainte. Le moteur range les rendus par dossier-réseau, nommé d'après
   la colonne « Reçoit » de §1 bis, et c'est cette parenthèse qui dit à
   l'opérateur, sujet par sujet, quel dossier ouvrir sans redescendre à
   `GABARITS-SOCIAL.md` §1 bis pour le retrouver.
@@ -470,12 +586,16 @@ précède les cinq portes de `produire`, elle ne s'y ajoute pas.
 Avant de dire que `structure` est fini :
 
 0. **Check narration before presenting it.** For name-origin only, run
-   `node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <category>`.
+   `node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <category>`
+   (or `--brief <brief.json>` when the brief carries a `narrativeDesign`).
    For every profile, run `node social/tools/narration/check-narration.mjs narration.fr.txt`
    and review plain language. Correct failures before full-text approval.
-1. **Lance `ethniafrica-mythe` sur les cartes écrites**, et affiche son verdict
-   avec le texte : la correction que le rapport de sujet avait vérifiée a pu
-   glisser en devenant une carte.
+1. **Lance les revues que `check-family-brief.mjs` marque `required`** sur le texte
+   écrit, et affiche leurs verdicts avec le texte : ce que le rapport avait vérifié a
+   pu glisser en devenant une carte. `ethniafrica-mythe` seulement si `myth` est
+   `required` (une pièce qui défait une idée reçue attestée) ; `ethniafrica-onomastique`
+   seulement si `name` l'est. Écris pour chaque revue `not-applicable` sa raison.
+   Une pièce sans mythe n'en reçoit pas un pour passer : c'est un verdict valable.
 2. **Show the complete text in the conversation.** For videos, show full
    `narration.fr.txt` and a separate visual storyboard. For a requested carousel,
    show every title, body and source in deck order. A file link alone is not
@@ -508,6 +628,17 @@ do not invent brand values or alter the renderer to complete a subject.
 
 ## Pour finir
 
+Create or update the subject's single `production-record.md` decision record using
+`docs/social-workshop-cleanup.md`. Carry forward the accepted angle/family and cuts
+from `idee`, then record ordered steps, rationale, source tiers and exact recovery
+locators, actual review verdicts and unresolved points. Keep narration/card copy in
+their operational files rather than pasting them into this record. Preserve
+`cards.json`, `SOURCES.md`, plans and approval evidence: existing readers need them.
+Add `--workshop <Subject>` to registration, using the real top-level workshop folder,
+and list every associated edition in the record's `postIds`. Leave pending voice
+and production choices explicit; `produire` completes them before filing. An active
+adaptation sharing this folder must remain listed, so it blocks premature cleanup.
+
 Affiche le texte et obtiens la validation (voir ci-dessus). Une fois validé :
 
 1. **Pose la ligne Texte validé** dans le `post.md` de l'atelier.
@@ -522,6 +653,9 @@ Affiche le texte et obtiens la validation (voir ci-dessus). Une fois validé :
      --status a-produire --copy _legendes/<id>.md \
      --link-path /fr/atlas/<…> --content carrousel      # ou video
    ```
+
+   `--link-path` is optional: a social-only piece with no site page omits it and
+   never gets a fabricated route.
 
    Lis la simulation, puis relance avec `--write`. L'outil crée le dossier du
    post dans `Brouillon/` et imprime les commandes suivantes, chemins compris.
@@ -545,10 +679,13 @@ Affiche le texte et obtiens la validation (voir ci-dessus). Une fois validé :
      bibliothèque — dont `build-etat.mjs` lit le premier marqueur et où il
      cherche les mentions internes.
 
-3. **Écris le carnet de production** (voir « Le carnet de production »
-   ci-dessus), `campaign` égal au `--id` juste posé, puis valide :
-   `npm run check:production-ledger`. Une erreur bloque — corrige le fichier,
-   ne la reporte pas à `produire`.
+3. **Série name-origin seulement : écris le carnet de production** (voir « Le
+   carnet de production » ci-dessus), `campaign` égal au `--id` juste posé, puis
+   valide : `npm run check:production-ledger`. Une erreur bloque — corrige le
+   fichier, ne la reporte pas à `produire`. Une pièce d'une autre famille ne
+   s'écrit pas ici : son entrée de bibliothèque suffit. Passe-lui `--family`,
+   `--angle` et `--format` dès que `register-post.mjs` (S2) les accepte ; d'ici là
+   la famille et l'angle restent dans le brief, à côté du `cards.json`.
 4. **Régénère les vues** : `node <00-Index>/build-index.mjs`, au chemin que
    l'outil a imprimé. C'est lui qui écrit le `post.md` du nouveau dossier ;
    `migrate-library.mjs --write` ne régénère rien quand il n'a rien déplacé. Un

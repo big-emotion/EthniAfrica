@@ -34,6 +34,7 @@ from PIL import Image
 
 import ethni_compose as gab
 import ethni_tokens as tk
+import ethni_carousel_layouts as layouts
 import ethni_carousel_profiles as carousel_profiles
 from ethni_paths import resolve_project
 
@@ -90,6 +91,10 @@ def main():
         raise SystemExit(
             f"{racine.name} : cards.json est encore à l'ancien schéma. Lance "
             f"`node social/tools/migrate-cards/migrate-cards.mjs {racine.name}`")
+
+    missing_images = carousel_profiles.image_errors(deck)
+    if missing_images:
+        raise SystemExit("\n".join(missing_images))
 
     assets = racine / "assets"
     images = {}
@@ -163,6 +168,15 @@ def main():
             for nom in gab.blocs_non_peints(carte, deck, fmt_key, image=image):
                 blocages.append(f"carte {carte['rang']:02d} en {fmt_key} : "
                                 f"« {nom} » est au plan et n'est pas peint")
+            # A reading profile also owes what its compositions promise: a subject the
+            # crop kept and no text covered, and type the phone can still read. Plan
+            # faults are blocked just below, so they are not repeated here.
+            if "reading" in (carousel_profiles.profile(deck) or {}):
+                blocages.extend(
+                    f"carte {carte['rang']:02d} en {fmt_key} : {p}"
+                    for p in layouts.zone_problems(carte, plan, fmt_key, image)
+                    + [q for q in layouts.readability_problems(plan, fmt_key)
+                       if not q.startswith("faute de composition")])
             pourquoi = _pourquoi(plan, carte, image, fmt_key, deck)
             if plan.fautes:
                 # A composition fault is not a remark. A lot that could not be made

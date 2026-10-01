@@ -1,0 +1,185 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "patronyme",
+    "directives": "Dossier fondé sur une source institutionnelle malienne, le dictionnaire des noms claniques et un agrégateur ; ne pas étendre les affirmations sans source dédiée."
+  },
+  "id": "PAT_KASSAMBARA",
+  "nameMain": "Kassambara",
+  "nameSystem": "clan_name",
+  "spellings": [
+    {
+      "spelling": "Kassambara",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": [
+            "interpeace-autoportrait-mali-2015",
+            "forebears-kassambara"
+          ]
+        },
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["forebears-kassambara"]
+        },
+        {
+          "countryId": "BFA",
+          "sourceRefs": ["forebears-kassambara"]
+        }
+      ]
+    },
+    {
+      "spelling": "Kásanbàra",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
+    }
+  ],
+  "transmissionMode": "other",
+  "designatedSocialUnit": "clan",
+  "origin": {
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "linguisticReconstructions": [
+      {
+        "claim": "Le nom compte parmi les noms de famille dogon du Mali, avec Ouologuem, Ongoiba, Dieptilé et Togo.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["interpeace-autoportrait-mali-2015"]
+      },
+      {
+        "claim": "Le dictionnaire des jamuw a une entrée Kásanbàra, qu'il met en équivalence avec Kulibali (Coulibaly) et le localise à Bandiagara, où il porte le marqueur dogon, et à Mopti, où il porte un second marqueur de groupe que nous lisons comme bambara.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
+      },
+      {
+        "claim": "La même entrée rapporte une explication populaire du nom : kásaa ń bàra, « de moi sort une odeur de poisson ». Un récit y rattache le nom à une histoire de frères, le cadet, Kulibali, ayant mangé un poisson-chat. Cette lecture est une étymologie de tradition orale, non une reconstruction linguistique, et aucune autre source consultée ne la confirme ni ne la conteste.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
+      }
+    ]
+  },
+  "peoples": [
+    {
+      "peopleId": "PPL_DOGON",
+      "status": "attested",
+      "sourceRefs": ["interpeace-autoportrait-mali-2015"]
+    },
+    {
+      "peopleId": "PPL_BAMBARA",
+      "status": "supposed",
+      "sourceRefs": ["bamadaba-jamuw"]
+    }
+  ],
+  "countries": [
+    {
+      "countryId": "MLI",
+      "status": "attested",
+      "sourceRefs": [
+        "interpeace-autoportrait-mali-2015",
+        "forebears-kassambara",
+        "bamadaba-jamuw"
+      ]
+    },
+    {
+      "countryId": "CIV",
+      "status": "attested",
+      "sourceRefs": ["forebears-kassambara"]
+    },
+    {
+      "countryId": "BFA",
+      "status": "attested",
+      "sourceRefs": ["forebears-kassambara"]
+    }
+  ],
+  "alliances": [
+    {
+      "targetPatronymeId": "PAT_KEITA",
+      "allianceType": "sanankuya",
+      "sourceRefs": ["bamadaba-jamuw", "canut-2002-senankuya"]
+    },
+    {
+      "targetPatronymeId": "PAT_TOURE",
+      "allianceType": "sanankuya",
+      "sourceRefs": ["bamadaba-jamuw", "canut-2002-senankuya"]
+    },
+    {
+      "targetPatronymeId": "PAT_DIARRA",
+      "allianceType": "sanankuya",
+      "sourceRefs": ["bamadaba-jamuw", "canut-2002-senankuya"]
+    }
+  ],
+  "casteOrSocialFunction": null,
+  "bearers": [],
+  "homonyms": [],
+  "sources": [
+    {
+      "sourceKey": "interpeace-autoportrait-mali-2015",
+      "title": "Autoportrait du Mali — Les Obstacles à la Paix",
+      "url": "https://www.interpeace.org/wp-content/uploads/2015/03/2015_03_02_Mali_Autoportrait_FR.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Rapport de recherche-action de l'Institut malien de recherche action pour la paix avec Interpeace, en partenariat avec les Nations unies, mars 2015. Son chapitre sur les diversités socioculturelles donne, pour chaque grand groupe du Mali, quelques noms de famille suivis de « etc. » : la liste est illustrative, sans méthode d'établissement ni source indiquée. Elle atteste qu'un nom est porté dans un groupe, non d'où il vient."
+    },
+    {
+      "sourceKey": "forebears-kassambara",
+      "title": "Kassambara — origine, signification et incidence du nom de famille",
+      "url": "https://forebears.io/surnames/kassambara",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Agrégateur généalogique mondial, consulté le 29 septembre 2026. Incidence mondiale d'environ 17 117 porteurs ; Mali 16 908, Côte d'Ivoire 151, Burkina Faso 34, États-Unis 8, Togo 4. La page ne donne aucune signification du nom. Les effectifs hors d'Afrique ne sont pas repris dans les attestations de cette fiche."
+    },
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs. L'entrée Kásanbàra porte une équivalence (Kulibali), deux localisations explicites (Bandiagara pour les Dogon, Mopti pour les Bambara), une rubrique de partenaires de plaisanterie (Keyita, Ture, Mayiga, Samokɛ, Jara) et une note libre donnant l'explication populaire du nom, rédigée en russe et traduite ici par nous. Le marqueur de groupe de l'entrée pour les Bambara n'est pas légendé : le rattachement aux Bambara est donc tenu pour supposé. La rubrique de liens de plaisanterie n'est pas systématiquement réciproque d'une entrée à l'autre ; elle est citée d'après l'entrée qui la porte. Trois des cinq partenaires ont une fiche (Keïta, Touré, Diarra), pas Mayiga ni Samokɛ."
+    },
+    {
+      "sourceKey": "canut-2002-senankuya",
+      "title": "Pouvoir, places et filiation : les senankuya au Mali",
+      "url": "https://journals.openedition.org/praxematique/2307",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Canut, Cécile, Cahiers de praxématique, numéro 38, 2002, p. 175-197. Enquête de terrain au Mali. Elle énonce ce que le pacte oblige : la relation vaut à perpétuité pour toute la descendance des deux lignées, le mariage entre elles est prohibé — diversement appliqué aujourd'hui, précise-t-elle — et l'entraide y est due sans réserve. Citée pour l'obligation elle-même ; elle ne nomme pas la paire de cette fiche, que portent les entrées citées à côté d'elle."
+    }
+  ],
+  "gaps": [
+    {
+      "fieldPath": "origin.writtenChronicles",
+      "reason": "Nous n'avons trouvé aucune chronique écrite qui mentionne l'origine de ce nom."
+    },
+    {
+      "fieldPath": "origin.linguisticReconstructions",
+      "reason": "Aucune étymologie de ce nom n'est établie dans les sources consultées : nous ne proposons aucune signification."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "Nous ne nommons aucun porteur : aucune source consultée n'en cite qui soit décédé et dont l'appartenance à ce nom soit établie."
+    },
+    {
+      "fieldPath": "homonyms",
+      "reason": "Nous n'avons trouvé aucune source signalant un homonyme de ce nom à distinguer."
+    },
+    {
+      "fieldPath": "casteOrSocialFunction",
+      "reason": "Nous n'avons trouvé aucune source attribuant à ce nom une fonction sociale ou un statut."
+    },
+    {
+      "fieldPath": "transmissionMode",
+      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "Le dictionnaire des jamuw cite aussi Mayiga et Samokɛ comme partenaires de plaisanterie, mais ces deux noms n'ont pas encore de fiche : le lien n'est donc pas reporté."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Le rattachement aux Bambara ne repose que sur une localisation du dictionnaire des jamuw à Mopti, sans marqueur de groupe légendé : nous le donnons comme supposé."
+    }
+  ]
+}

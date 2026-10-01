@@ -368,7 +368,7 @@ describe("CompareEntityHeader", () => {
 
     await waitFor(() => {
       expect(
-        screen.getByText(/82 % · 5 sources · vérifié 2025-09-21/)
+        screen.getByText(/5 références · revu 2025-09-21/)
       ).toBeInTheDocument();
     });
 
@@ -387,10 +387,10 @@ describe("CompareEntityHeader", () => {
 
     await waitFor(() => {
       expect(
-        screen.getByText(/82 % · 5 sources · vérifié 2025-09-21/)
+        screen.getByText(/5 références · revu 2025-09-21/)
       ).toBeInTheDocument();
       expect(
-        screen.getByText(/41 % · 2 sources · vérifié 2025-06-01/)
+        screen.getByText(/2 références · revu 2025-06-01/)
       ).toBeInTheDocument();
     });
 
@@ -414,7 +414,7 @@ describe("CompareEntityHeader", () => {
     render(<CompareEntityHeader language="fr" column={highConfidenceColumn} />);
 
     const button = await screen.findByRole("button", {
-      name: /confiance 82 %/i,
+      name: /5 références/i,
     });
     await user.click(button);
 

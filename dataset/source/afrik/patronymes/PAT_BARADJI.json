@@ -1,0 +1,165 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "patronyme",
+    "directives": "Dossier fondé sur des sources externes, dont plusieurs communautaires ; ne pas étendre les affirmations sans source dédiée."
+  },
+  "id": "PAT_BARADJI",
+  "nameMain": "Baradji",
+  "nameSystem": "clan_name",
+  "spellings": [
+    {
+      "spelling": "Baradji",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["forebears-baradji"]
+        },
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["forebears-baradji"]
+        },
+        {
+          "countryId": "SEN",
+          "sourceRefs": ["forebears-baradji"]
+        }
+      ]
+    },
+    {
+      "spelling": "Baraji",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
+    }
+  ],
+  "transmissionMode": "patrilineal",
+  "designatedSocialUnit": "clan",
+  "origin": {
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "linguisticReconstructions": [
+      {
+        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
+        "claimStatus": "established",
+        "sourceRefs": ["jansen-sunjata-paradigm"]
+      },
+      {
+        "claim": "Le dictionnaire des jamuw a une entrée Baraji, qu'il rattache notamment aux Soninké. Il ne lui donne ni statut ni lien clanique.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
+      },
+      {
+        "claim": "Une liste communautaire soninké attache à Baradji un second nom (jammu kare), Saréga, et des contributeurs d'un forum communautaire soninké le rangent parmi les noms soninké ; d'autres contributeurs rappellent que beaucoup de noms portés aujourd'hui par des Soninké ne sont pas soninké à l'origine.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["soninkara-noms-soninke", "soninkara-forum-noms-soninke"]
+      }
+    ]
+  },
+  "peoples": [
+    {
+      "peopleId": "PPL_SONINKE",
+      "status": "attested",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "soninkara-noms-soninke",
+        "soninkara-forum-noms-soninke"
+      ]
+    }
+  ],
+  "countries": [
+    {
+      "countryId": "MLI",
+      "status": "attested",
+      "sourceRefs": ["forebears-baradji", "bamadaba-jamuw"]
+    },
+    {
+      "countryId": "CIV",
+      "status": "attested",
+      "sourceRefs": ["forebears-baradji"]
+    },
+    {
+      "countryId": "SEN",
+      "status": "attested",
+      "sourceRefs": ["forebears-baradji"]
+    }
+  ],
+  "alliances": [],
+  "casteOrSocialFunction": null,
+  "bearers": [],
+  "homonyms": [],
+  "sources": [
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs : la ligne des termes de statut porte les mots mandingues eux-mêmes ; le marqueur de groupe son est confirmé par la notice de l'entrée Wago, qui énumère des jamuw soninké, et le marqueur m est retenu comme indice malinké par comparaison avec l'entrée Kéyità, qu'une autre de nos fiches documente comme jamu malinké ; les autres marqueurs de groupe ne sont pas exploités ici. Les notes libres des entrées sont rédigées en russe et traduites ici par nous. L'entrée Baraji porte deux marqueurs de groupe, dont son, et ni statut ni lien clanique."
+    },
+    {
+      "sourceKey": "soninkara-noms-soninke",
+      "title": "Les noms de famille avec leur jammu kare",
+      "url": "http://www.soninkara.com/societe/organisation-sociale/les-noms-de-famille-avec-leur-jammu-kare.html",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Portail communautaire soninké, page d'organisation sociale sans auteur académique identifié : liste non exhaustive, constituée par les internautes du portail, des seconds noms (jammu kare) donnés aux noms de famille soninké. Le jammu kare est, dit la page, le second nom qui s'ajoute à un nom de famille et lui sert d'identifiant. Consultée dans une copie archivée du 12 décembre 2024. On n'en retire ici que la présence du nom dans la liste et ses seconds noms : la liste ne dit rien de leur origine."
+    },
+    {
+      "sourceKey": "soninkara-forum-noms-soninke",
+      "title": "Les noms de Famille d'Origine Soninké",
+      "url": "https://www.soninkara.com/forums/de-l-origine-des-soninke/les-noms-de-famille-d-origine-soninke-530.html",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Fil de discussion du forum du portail communautaire Soninkara.com, ouvert en décembre 2006 et poursuivi jusqu'en 2011 : des contributeurs, sous pseudonyme, y dressent des listes de noms qu'ils tiennent pour soninké. Les listes se recoupent en partie et se contredisent : plusieurs intervenants rappellent que beaucoup de noms portés aujourd'hui par des Soninké ne sont pas soninké à l'origine, et l'un d'eux demande de distinguer les noms soninké des noms d'origine soninké. Consulté dans une copie archivée de 2024."
+    },
+    {
+      "sourceKey": "jansen-sunjata-paradigm",
+      "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
+      "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
+    },
+    {
+      "sourceKey": "forebears-baradji",
+      "title": "Baradji — origine, signification et incidence du nom de famille",
+      "url": "https://forebears.io/surnames/baradji",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Agrégateur généalogique mondial, consulté le 29 septembre 2026. Incidence mondiale d'environ 11 540 porteurs ; Mali 10 519, Côte d'Ivoire 520, Sénégal 127, France 105, Liban 77, Mauritanie 63. La page ne donne aucune signification du nom. Les effectifs hors d'Afrique ne sont pas repris dans les attestations de cette fiche."
+    }
+  ],
+  "gaps": [
+    {
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Nous n'avons trouvé aucune tradition orale rapportant l'origine de ce nom."
+    },
+    {
+      "fieldPath": "origin.writtenChronicles",
+      "reason": "Nous n'avons trouvé aucune chronique écrite qui mentionne l'origine de ce nom."
+    },
+    {
+      "fieldPath": "origin.linguisticReconstructions",
+      "reason": "Aucune étymologie de ce nom n'est établie dans les sources consultées : nous ne proposons aucune signification."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "Nous ne nommons aucun porteur : aucune source consultée n'en cite qui soit décédé et dont l'appartenance à ce nom soit établie."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "Nous n'avons trouvé aucun lien de plaisanterie (sanankuya) attesté pour ce nom qui puisse être relié à une fiche existante."
+    },
+    {
+      "fieldPath": "homonyms",
+      "reason": "Nous n'avons trouvé aucune source signalant un homonyme de ce nom à distinguer."
+    },
+    {
+      "fieldPath": "casteOrSocialFunction",
+      "reason": "Nous n'avons trouvé aucune source attribuant à ce nom une fonction sociale ou un statut."
+    }
+  ]
+}

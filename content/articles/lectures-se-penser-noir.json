@@ -1,0 +1,76 @@
+{
+  "id": "lectures-se-penser-noir",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Lectures",
+  "fr": {
+    "slug": "lectures-se-penser-noir",
+    "title": "Se penser Noir",
+    "excerpt": "Se penser Noir",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "lectures-se-penser-noir"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "lectures-se-penser-noir/lectures-se-penser-noir/slide-01-20118681b698.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "les couvertures des 3 livres de la sélection, côte à côte",
+            "text": "Se penser Noir\n\n3 livres à lire"
+          },
+          {
+            "src": "lectures-se-penser-noir/lectures-se-penser-noir/slide-02-556950218c8d.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « Peau noire, masques blancs » (Frantz Fanon), détourée et redressée à partir d'une photographie",
+            "text": "Peau noire, masques blancs\n\nFrantz Fanon"
+          },
+          {
+            "src": "lectures-se-penser-noir/lectures-se-penser-noir/slide-03-31a2f5befd97.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « On ne naît pas Noir, on le devient » (Jean-Louis Sagot-Duvauroux), détourée et redressée à partir d'une photographie",
+            "text": "On ne naît pas Noir, on le devient\n\nJean-Louis Sagot-Duvauroux"
+          },
+          {
+            "src": "lectures-se-penser-noir/lectures-se-penser-noir/slide-04-54c3f4f4111d.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "la couverture du livre « Le Petit Manuel des coiffures crépues » (Nathalie Avomo Essono et Keiry Mounievou), détourée et redressée à partir d'une photographie",
+            "text": "Le Petit Manuel des coiffures crépues\n\nNathalie Avomo Essono et Keiry Mounievou"
+          },
+          {
+            "src": "lectures-se-penser-noir/lectures-se-penser-noir/slide-05-f864f1ea478f.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "les couvertures des 3 livres de la sélection, côte à côte",
+            "text": "Notre objectif : raconter l'origine des noms, avec des sources.\n\nVous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica."
+          }
+        ],
+        "credits": "Couvertures : éditeurs respectifs · photographie de l'opérateur · couverture © éditeur ; Couverture : Points · photographie de l'opérateur · couverture © éditeur ; Couverture du livre · photographie de l'opérateur · couverture © éditeur"
+      }
+    ],
+    "originals": [
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/DdxmhLciD4s/",
+        "publishedAt": "2026-09-27"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7690045208037313814",
+        "publishedAt": "2026-09-27"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

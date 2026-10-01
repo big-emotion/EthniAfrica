@@ -189,7 +189,7 @@ describe("search-feed plan", () => {
   it("does not add an owed closing for related-only results", () => {
     expect(
       buildSearchFeedPlan("widened", {}, { relatedOnly: true }).mobile
-    ).toEqual(["lenses", "verdict", "shorts"]);
+    ).toEqual(["verdict", "lenses", "shorts"]);
   });
 
   // @req REQ-180
@@ -202,6 +202,21 @@ describe("search-feed plan", () => {
     expect(classifySearchFeed(exact.production)).toBe("exact");
     expect(classifySearchFeed(widened.production)).toBe("widened");
     expect(classifySearchFeed(typo.production)).toBe("typo");
+    expect(classifySearchFeed(unknown.production)).toBe("unknown");
+  });
+
+  // A reviewed term a near spelling may have meant is as good a suggestion as a
+  // near-miss lead: without it « pigmée » confessed ignorance of a term we hold.
+  // @req REQ-125
+  it("treats a reviewed-term suggestion as a misspelling, not an unknown name", () => {
+    const unknown = FEED_CASES.find(({ id }) => id === "inconnu")!;
+
+    expect(
+      classifySearchFeed({
+        ...unknown.production,
+        termSuggestions: ["Pygmée"],
+      })
+    ).toBe("typo");
     expect(classifySearchFeed(unknown.production)).toBe("unknown");
   });
 

@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import {
   readAlliances,
+  isIndexableStanding,
   readDesignatedSocialUnit,
   readGaps,
   readHomonyms,
@@ -144,6 +145,35 @@ describe("patronyme content readers (REQ-133)", () => {
     ).toEqual({ tier: "unverified", sourceCount: 1, aiGeneratedCount: 1 });
   });
 
+  // The one rule the sitemap and the page's robots directive share: a name is
+  // offered to crawlers when a person wrote at least one readable source it
+  // cites. A dossier resting only on machine-written sources is published and
+  // labelled, but not offered (operator decision 2026-09-30).
+  // @req REQ-147
+  it("offers a name to crawlers only when at least one readable source is human-written", () => {
+    const standing = (
+      ...sources: { title: string; tier: string; source_kind?: string }[]
+    ) => readNameStanding({ sources });
+    const ai = {
+      title: "Relevé",
+      tier: "unverified",
+      source_kind: "ai_generated",
+    };
+
+    expect(isIndexableStanding(null)).toBe(false);
+    expect(isIndexableStanding(standing(ai))).toBe(false);
+    expect(isIndexableStanding(standing(ai, ai))).toBe(false);
+    expect(
+      isIndexableStanding(standing(ai, { title: "Blog", tier: "unverified" }))
+    ).toBe(true);
+    expect(
+      isIndexableStanding(standing({ title: "Blog", tier: "unverified" }))
+    ).toBe(true);
+    expect(
+      isIndexableStanding(standing(ai, { title: "GHA", tier: "official" }))
+    ).toBe(true);
+  });
+
   // @req REQ-147
   it("reports no standing when the dossier cites nothing readable", () => {
     expect(readNameStanding({})).toBeNull();
@@ -248,6 +278,10 @@ describe("patronyme content readers (REQ-133)", () => {
         claimStatus: "contested",
         griot: "Fadama Diarra",
         transcription: "Monteil 1962, p. 44",
+        carrier: null,
+        collection: null,
+        collector: null,
+        context: null,
       },
     ]);
     expect(origin.writtenChronicles).toEqual([
@@ -256,9 +290,55 @@ describe("patronyme content readers (REQ-133)", () => {
         claimStatus: null,
         griot: null,
         transcription: null,
+        carrier: null,
+        collection: null,
+        collector: null,
+        context: null,
       },
     ]);
     expect(origin.linguisticReconstructions).toEqual([]);
+  });
+
+  // An account with no griot and no transcript must come through exactly as
+  // recorded: nothing is invented to fill the shape (audit finding C10).
+  // @req REQ-133
+  it("reads an oral account by its carrier and collection without inventing a griot or a transcript", () => {
+    const origin = readOrigin({
+      origin: {
+        oralTraditions: [
+          {
+            claim: "Un récit transmis relie ce nom à une lignée.",
+            claimStatus: "claimed",
+            carrier: "Une aînée de la famille, nom tenu à sa demande",
+            collection: "mediated",
+            collector: "Un enseignant qui l'a recueillie",
+            context: "Récit transmis en dioula, à Bobo-Dioulasso",
+          },
+        ],
+      },
+    });
+
+    expect(origin.oralTraditions).toEqual([
+      {
+        claim: "Un récit transmis relie ce nom à une lignée.",
+        claimStatus: "claimed",
+        griot: null,
+        transcription: null,
+        carrier: "Une aînée de la famille, nom tenu à sa demande",
+        collection: "mediated",
+        collector: "Un enseignant qui l'a recueillie",
+        context: "Récit transmis en dioula, à Bobo-Dioulasso",
+      },
+    ]);
+  });
+
+  // @req REQ-133
+  it("ignores a collection mode outside the three the record can state", () => {
+    const [account] = readOrigin({
+      origin: { oralTraditions: [{ claim: "X.", collection: "on tape" }] },
+    }).oralTraditions;
+
+    expect(account.collection).toBeNull();
   });
 
   // @req REQ-133

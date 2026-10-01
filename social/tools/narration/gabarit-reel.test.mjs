@@ -25,7 +25,7 @@ test("every canonical example passes its own type", () => {
   const parType = {
     peuple: ["peuple", "peuple-dialectes"],
     pays: ["pays"],
-    patronyme: ["patronyme", "patronyme-transmission"],
+    patronyme: ["patronyme", "patronyme-transmission", "patronyme-attestees"],
     lieu: ["lieu"],
     langue: ["langue"],
   };
@@ -38,6 +38,148 @@ test("every canonical example passes its own type", () => {
       );
     }
   }
+});
+
+// @req REQ-032
+test("the opening may say « plusieurs noms » of this subject without a rule about every subject", () => {
+  const exemplesParType = [
+    [
+      "peuple",
+      "Un même peuple porte toujours plusieurs noms.",
+      "Ce peuple porte plusieurs noms.",
+    ],
+    [
+      "pays",
+      "Un même pays porte toujours plusieurs noms.",
+      "Ce pays porte plusieurs noms.",
+    ],
+    [
+      "langue",
+      "Une même langue porte toujours plusieurs noms.",
+      "Cette langue porte plusieurs noms.",
+    ],
+    [
+      "lieu",
+      "Une même ville porte toujours plusieurs noms.",
+      "Cette ville porte plusieurs noms.",
+    ],
+  ];
+  for (const [type, universelle, propre] of exemplesParType) {
+    const texte = exemple(type);
+    assert.deepEqual(
+      regles(remplacer(texte, universelle, propre), type),
+      [],
+      `${type} : la phrase propre au sujet doit passer`
+    );
+  }
+});
+
+// @req REQ-032
+test("the canonical examples show both openings, so the norm they teach is not « always several names »", () => {
+  const texte = exemple("peuple-dialectes");
+  assert.ok(
+    texte.includes("Ce peuple porte plusieurs noms."),
+    "peuple-dialectes opens with the sentence proper to its subject"
+  );
+  assert.ok(
+    !texte.includes("toujours plusieurs noms"),
+    "peuple-dialectes does not claim it of every people"
+  );
+  assert.deepEqual(regles(texte, "peuple"), []);
+  assert.ok(
+    exemple("peuple").includes("Un même peuple porte toujours plusieurs noms."),
+    "peuple keeps the operator's universal sentence"
+  );
+});
+
+// @req REQ-032
+test("the universal sentence stays valid, and a sentence claiming more or less than either is refused", () => {
+  for (const type of TYPES.filter((t) => t !== "patronyme")) {
+    assert.deepEqual(regles(exemple(type), type), [], type);
+  }
+  const texte = exemple("peuple");
+  const universelle = "Un même peuple porte toujours plusieurs noms.";
+  for (const autre of [
+    "Tout peuple porte plusieurs noms.",
+    "Ce peuple porte deux noms.",
+    "Ce peuple a plusieurs noms.",
+  ]) {
+    assert.ok(
+      regles(remplacer(texte, universelle, autre), "peuple").includes(
+        "gabarit-ouverture"
+      ),
+      autre
+    );
+  }
+});
+
+// The comparison skeleton crowns one original form and blames the civil
+// register. Where the origin is unsettled, the variant labels every form « une
+// forme attestée » and says only what each source shows (audit finding C12).
+// @req REQ-032
+test("a surname whose origin is unsettled can compare forms without crowning one", () => {
+  assert.deepEqual(
+    verifierGabarit(exemple("patronyme-attestees"), "patronyme"),
+    []
+  );
+  assert.notDeepEqual(
+    verifierGabarit(exemple("patronyme-attestees"), "peuple"),
+    []
+  );
+});
+
+// @req REQ-032
+test("the neutral surname skeleton refuses a mixed set of labels", () => {
+  const modifie = remplacer(
+    exemple("patronyme-attestees"),
+    "Candelou est une forme attestée.",
+    "Candelou est une forme transformée."
+  );
+  assert.ok(regles(modifie, "patronyme").includes("gabarit-bloc"));
+});
+
+// @req REQ-032
+test("the neutral surname skeleton refuses the original-form and civil-register claims", () => {
+  const texte = exemple("patronyme-attestees");
+  const civil = remplacer(
+    texte,
+    "Plusieurs formes circulent aujourd'hui.",
+    "L'état civil en a créé d'autres, et certaines sont devenues plus courantes."
+  );
+  assert.ok(regles(civil, "patronyme").includes("gabarit-ouverture"));
+
+  const couronne = remplacer(
+    texte,
+    "Les sources consultées ne permettent pas de dire quelle forme est la plus ancienne.",
+    "La forme d'origine est Kandélou."
+  );
+  assert.ok(regles(couronne, "patronyme").includes("gabarit-classement"));
+});
+
+// @req REQ-032
+test("a neutral surname block must say where its form is attested, or that we do not know", () => {
+  const sans = remplacer(
+    exemple("patronyme-attestees"),
+    "Une branche de la famille l'emploie en 1950. Nous ne savons pas pourquoi elle choisit cette forme.",
+    "Une branche de la famille l'emploie."
+  );
+  assert.ok(regles(sans, "patronyme").includes("gabarit-bloc"));
+});
+
+// @req REQ-032
+test("the neutral surname skeleton may compare only two forms", () => {
+  const texte = exemple("patronyme-attestees")
+    .replace(
+      "porte trois formes : Kandélou, Candelou et Kandel.",
+      "porte deux formes : Kandélou et Candelou."
+    )
+    .replace(/Kandel est une forme attestée\.[^\n]*\n\n/, "")
+    .replace(
+      "Kandélou, Candelou et Kandel se lisent",
+      "Kandélou et Candelou se lisent"
+    )
+    .replace("Trois formes désignent", "Deux formes désignent");
+  assert.deepEqual(regles(texte, "patronyme"), []);
 });
 
 // @req REQ-032

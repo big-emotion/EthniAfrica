@@ -48,7 +48,7 @@ contested; it does not say in which of three ways. The distinction is:
 actor: a European administrator, coloniser, missionary, explorer, navigator,
 colonial-era scholar, or a colonial administration's own classification.
 
-> FLG_BANTU is the reference case. Coined by Bleek in 1862, popularised by
+> FLG_BANTU is the reference case. Coined by Bleek (written in 1857 or 1858, spread by his 1862 Comparative Grammar), popularised by
 > Meinhof and by the colonial administrator Johnston "dans un contexte de
 > classification raciale", then made a legal race category by apartheid's Bantu
 > Education Act of 1953.

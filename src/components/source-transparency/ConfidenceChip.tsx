@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { useRouteLanguage } from "@/hooks/use-language";
+import { confidenceChipCopy } from "@/lib/i18n/copy/confidenceChip";
 import { formatDate } from "@/lib/languageTag";
 import { cn } from "@/lib/utils";
 import type { Language } from "@/types/shared";
@@ -10,7 +11,10 @@ import type { Language } from "@/types/shared";
  * ConfidenceChip — L3 component (ETNI-25)
  *
  * Renders a tappable typographic pill at the end of an assertion:
- *   `X % · N sources · vérifié YYYY-MM-DD`
+ *   `N références · revu YYYY-MM-DD`
+ *
+ * `confidenceScore` still decides whether the chip has enough data to render,
+ * but is never printed.
  *
  * - No emoji, no icon, no color alarm.
  * - 44×44 px tap target enforced directly on the button.
@@ -145,7 +149,7 @@ export function ConfidenceChip({
   }, [hasAllData, id]);
 
   if (!hasAllData) {
-    const sourceLink = language === "en" ? "view sources" : "voir les sources";
+    const sourceLink = confidenceChipCopy[language].viewSources;
     return (
       <span className="inline-flex items-center p-1">
         <a
@@ -168,15 +172,15 @@ export function ConfidenceChip({
 
   const shortDate = toIsoShortDate(lastHumanAuditAt!);
   const longDate = toLongDate(language, lastHumanAuditAt!);
-  const pillText =
-    language === "en"
-      ? `${confidenceScore} % · ${sourceCount} sources · verified ${shortDate}`
-      : `${confidenceScore} % · ${sourceCount} sources · vérifié ${shortDate}`;
-
-  const baseAriaLabel =
-    language === "en"
-      ? `open the source chain for this assertion (confidence ${confidenceScore}%, ${sourceCount} sources, verified on ${longDate})`
-      : `ouvrir la chaîne de sources pour cette assertion (confiance ${confidenceScore} %, ${sourceCount} sources, vérifiée le ${longDate})`;
+  // The stored score is not printed: a percentage next to a claim reads as the
+  // odds that it is true, and it only weighs who published the sources. « Revu »
+  // is what the date means — a person last read the references — not a promise
+  // that the claim was verified. The count is a count, and the sources sheet
+  // says it is not corroboration (audit findings T04, T02).
+  const copy = confidenceChipCopy[language];
+  const references = copy.references(sourceCount);
+  const pillText = copy.pill(references, shortDate);
+  const baseAriaLabel = copy.openSources(references, longDate);
   const ariaLabel = ariaSuffix
     ? `${baseAriaLabel} ${ariaSuffix}`
     : baseAriaLabel;

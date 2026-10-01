@@ -14,7 +14,7 @@
         "Shankaji (appellation de la branche sudiste de la Depression de l'Upemba)"
       ],
       "originOfExonyms": "Le terme Luba-Shaba vint de la denomination mobutiste de la province du Katanga en Shaba (1972-1997) ; il reste parfois utilise dans les sources academiques de cette periode. Luba-Katanga est aujourd'hui l'appellation standard pour distinguer ce groupe des Luba-Kasai. La langue est appelee Kiluba par ses locuteurs (ki- etant le prefixe de classe pour les langues en bantou).",
-      "contemporaryUsage": "Les Luba-Katanga s'identifient comme Baluba ou Baluba wa Katanga. Leur langue, le Kiluba (lub), est l'une des quatre langues nationales de la RDC. Ils se distinguent des Luba-Kasai (tshiluba) par leur langue, leur territoire et leur heritage direct de l'Empire luba. La province du Haut-Lomami et le Haut-Katanga restent leur principal foyer.",
+      "contemporaryUsage": "Les Luba-Katanga s'identifient comme Baluba ou Baluba wa Katanga. Leur langue est le kiluba (lub), classé menacé ; c'est le tshiluba des Luba-Kasai (lua), et non le kiluba, qui est l'une des quatre langues nationales de la RDC. Ils se distinguent des Luba-Kasai (tshiluba) par leur langue, leur territoire et leur heritage direct de l'Empire luba. La province du Haut-Lomami et le Haut-Katanga restent leur principal foyer.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou (Zone L, groupe luban — Kiluba L31 selon Guthrie)",
       "historicalRegion": "Depression de l'Upemba, Katanga (Haut-Katanga, Haut-Lomami, Tanganyika) — sud-est de la Republique democratique du Congo",
@@ -63,7 +63,7 @@
         "Lwalu — dialecte du nord-est Katanga",
         "Songe (Songye) — langue des Songye, voisins et allies/rivaux historiques des Luba"
       ],
-      "vehicularRole": "Le kiluba (lub) est l'une des quatre langues nationales de la RDC. Il est parle principalement dans le Haut-Katanga (autour de Kabongo, Kamina, Malemba Nkulu, Mulongo, Kabalo, Kaniama, Luena et Lubudi). Il n'est pas mutuellement intelligible avec le tshiluba (Luba-Kasai) malgre leur appartenance commune au groupe luban. Omniglot estime le nombre de locuteurs a environ 1,5 million. Il est classe dans la Zone L (L31) selon Guthrie. Il fut mis par ecrit au milieu du 20e siecle en alphabet latin."
+      "vehicularRole": "Le kiluba (lub) n'est pas l'une des quatre langues nationales de la RDC : ce statut est celui du tshiluba, la langue des Luba-Kasai. Il est parle principalement dans le Haut-Katanga (autour de Kabongo, Kamina, Malemba Nkulu, Mulongo, Kabalo, Kaniama, Luena et Lubudi). Il n'est pas mutuellement intelligible avec le tshiluba (Luba-Kasai) malgre leur appartenance commune au groupe luban. Omniglot estime le nombre de locuteurs a environ 1,5 million. Il est classe dans la Zone L (L31) selon Guthrie. Il fut mis par ecrit au milieu du 20e siecle en alphabet latin."
     },
     "culture": {
       "majorRites": "Ceremonies d'investiture royale (bulopwe) : rituel complexe lors de l'intronisation du Mulopwe. Transformation en kitenta (village sacre-sanctuaire) lors du deces d'un roi. Ceremonies de consultation du lukasa par les membres de la societe Bambudye. Rites de circoncision masculine et initiation feminine. Consultations de divination (Lubuko) par le Nganga. Celebrations agriculturales liees aux saisons de crue et de secheresse du Katanga.",
@@ -99,6 +99,12 @@
         "title": "SIL Ethnologue — Luba-Katanga (lub)",
         "url": "https://www.ethnologue.com/language/lub/",
         "tier": "official"
+      },
+      {
+        "title": "Glottolog 5.3 — Luba-Katanga (luba1250)",
+        "url": "https://glottolog.org/resource/languoid/id/luba1250",
+        "tier": "official",
+        "notes": "Donne Kiluba et Luba-Shaba comme noms de la langue de code lub, classée menacée ; le statut de langue d'identité nationale y est celui du tshiluba (Luba-Lulua), non du kiluba."
       },
       {
         "title": "Encyclopaedia Britannica — Luba",

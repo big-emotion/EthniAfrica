@@ -51,7 +51,7 @@ describe("SearchFeedEvidenceAction", () => {
       name: /ouvrir la chaîne de sources/i,
     });
     expect(trigger).toHaveClass("min-h-[44px]");
-    expect(trigger).toHaveTextContent("85 % · 1 sources");
+    expect(trigger).toHaveTextContent("1 référence");
 
     fireEvent.click(trigger);
 

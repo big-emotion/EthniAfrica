@@ -1,0 +1,44 @@
+{
+  "id": "bantou-mot-de-linguiste-allemand",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "bantou-mot-de-linguiste-allemand",
+    "title": "D'où vient le mot Bantou ?",
+    "excerpt": "Bantou n'est pas un nom",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "bantu"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "rUF0su2g918",
+        "poster": {
+          "src": "bantou-mot-de-linguiste-allemand/bantu/poster-27ef14677bf9.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7682868314187648278",
+        "publishedAt": "2026-09-07"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/rUF0su2g918",
+        "publishedAt": "2026-09-07"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

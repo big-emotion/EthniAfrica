@@ -20,6 +20,11 @@ import {
 import type { Language } from "@/types/shared";
 
 import {
+  mapNameAnswers,
+  mapNameSuggestions,
+  type NameAnswer,
+} from "@/lib/search/nameAnswer";
+import {
   buildSearchParams,
   EMPTY_SEARCH_LENS_COUNTS,
   mapSearchCounts,
@@ -151,6 +156,10 @@ export interface SearchWithLeads {
   leads: SearchLead[];
   /** Similar names qualified by the API for a non-empty search (REQ-180). */
   nearNames: SearchNearName[];
+  /** Reviewed answers for the searched term; empty when none was reviewed. */
+  nameAnswers?: NameAnswer[];
+  /** Reviewed terms a near spelling may have meant, offered to the reader as choices. */
+  nameSuggestions?: string[];
   /** Per-type match counts (REQ-124) for the named-lens chips. */
   counts: SearchLensCounts;
   /** Reviewed, serializable feed copy when the response provides one. */
@@ -193,6 +202,7 @@ export async function searchWithLeads(
         results: [],
         leads: [],
         nearNames: [],
+        nameAnswers: [],
         counts: { ...EMPTY_SEARCH_LENS_COUNTS },
         answered: false,
       };
@@ -211,6 +221,8 @@ export async function searchWithLeads(
         : results,
       leads,
       nearNames,
+      nameAnswers: mapNameAnswers(envelope),
+      nameSuggestions: mapNameSuggestions(envelope),
       counts,
       presentation,
       answered: true,
@@ -222,6 +234,7 @@ export async function searchWithLeads(
       results: [],
       leads: [],
       nearNames: [],
+      nameAnswers: [],
       counts: { ...EMPTY_SEARCH_LENS_COUNTS },
       answered: false,
     };

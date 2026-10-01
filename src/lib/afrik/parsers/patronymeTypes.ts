@@ -50,8 +50,15 @@ export interface PatronymeOriginClaim extends PatronymeSourceReference {
 }
 
 export interface PatronymeOralOriginClaim extends PatronymeOriginClaim {
-  griot: string;
-  transcription: string;
+  /** Shapes already in the corpus, still valid; neither is required. */
+  griot?: string;
+  transcription?: string;
+  /** A person, a role or an agreed public description of who carried it. */
+  carrier?: string;
+  collection?: "direct" | "mediated" | "not-stated";
+  collector?: string;
+  /** Language, place and date, in the words of the record. */
+  context?: string;
 }
 
 export interface PatronymeOrigin {

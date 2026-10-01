@@ -1,0 +1,44 @@
+{
+  "id": "krou-pas-lequipage",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "krou-pas-lequipage",
+    "title": "D'où vient le nom Krou ?",
+    "excerpt": "En Côte d'Ivoire, « Krou » ne vient pas de l'anglais crew.",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "krou-klao"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "AMorrZSdH18",
+        "poster": {
+          "src": "krou-pas-lequipage/krou-klao/poster-f34beb27b379.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7684676051934383382",
+        "publishedAt": "2026-09-12"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/AMorrZSdH18",
+        "publishedAt": "2026-09-12"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

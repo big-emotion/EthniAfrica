@@ -1,0 +1,44 @@
+{
+  "id": "afrique-province-romaine",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Ce que ce nom veut dire",
+  "fr": {
+    "slug": "afrique-province-romaine",
+    "title": "D'où vient le nom « Afrique » ?",
+    "excerpt": "Afrique — le nom du continent",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "afrique"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "NcXOFuGbFvQ",
+        "poster": {
+          "src": "afrique-province-romaine/afrique/poster-7a5961cbfcb9.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7681920927034100995",
+        "publishedAt": "2026-09-05"
+      },
+      {
+        "network": "youtube",
+        "url": "https://youtube.com/shorts/NcXOFuGbFvQ",
+        "publishedAt": "2026-09-05"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

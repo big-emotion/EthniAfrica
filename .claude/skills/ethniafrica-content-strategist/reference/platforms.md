@@ -9,6 +9,13 @@ The operator's ordered thematic sequence supersedes rigid pillar rotation and
 fixed new-subject quotas. Historical algorithm and audience generalisations here
 must not substitute for measured evidence.
 
+**Audience correction, 2026-09-30.** Use `docs/editorial/audience-personas.md`
+for current reader needs and `docs/audience/audit-2026-09-30.md` for dated
+observations. The historical material below is not a live audience profile or a
+platform rule. Do not infer age, loyalty, occupation or diaspora identity from a
+network. The measured Facebook follower geography is predominantly West African;
+Instagram has a larger France share. Neither identifies individual identities.
+
 Five channels, five different jobs. The mistake this file exists to prevent is
 treating them as one audience receiving one video in five aspect ratios.
 
@@ -47,8 +54,8 @@ channel by a reach metric, is how a working channel gets killed.
 
 ### YouTube Shorts — the reach engine
 
-- **Audience**: broad, algorithmic, francophone; discovery is feed-driven, and a
-  short keeps earning views for weeks, unlike every other platform here.
+- **Audience**: consult the current report. Viewers are not necessarily subscribers;
+  feed discovery and viewer ages must come from this account's dated analytics.
 - **Job**: notoriety and subscribers. This is where the corpus meets people who
   have never heard of it.
 - **Frequency**: 3 per week, fixed days. Consistency matters more than volume;
@@ -70,9 +77,8 @@ channel by a reach metric, is how a working channel gets killed.
 
 ### LinkedIn — traffic engine, now stalled on video
 
-- **Audience**: professional and institutional — researchers, NGOs, teachers,
-  the professional diaspora. The most likely to cite the atlas, link to it, and
-  bring an institutional contact.
+- **Audience**: occupations and institutional roles are unverified hypotheses.
+  Keep company-page and personal-profile populations separate.
 - **Job**: qualified traffic and credibility. Not reach.
 - **Frequency**: 1 to 2 per week, Tuesday to Thursday, morning — **the plan's
   Phase-3 cadence, opened early on 09-11**, and it is not doing the job Phase 3
@@ -100,11 +106,10 @@ channel by a reach metric, is how a working channel gets killed.
   session** before deciding whether LinkedIn's traffic role is gone or just
   moved off the company page entirely.
 
-### Facebook — the diaspora and community engine
+### Facebook — community and discussion
 
-- **Audience**: the oldest of the five (35–65), and the strongest francophone
-  African-diaspora community presence. Groups are where this subject actually
-  circulates.
+- **Audience**: use measured follower/viewer demographics with their denominators.
+  Neither diaspora membership nor group-sharing behaviour follows from using Facebook.
 - **Job**: traffic and community. **The only channel where a link inside the
   post is normal, clickable and unpunished.**
 - **Frequency**: 3 per week, mirroring the Shorts, plus deliberate sharing into
@@ -117,8 +122,8 @@ channel by a reach metric, is how a working channel gets killed.
 
 ### Instagram Reels — the brand engine, and now the only proven traffic
 
-- **Audience**: 25–40, visual-first. Saves and shares are the signals that
-  matter; likes are noise.
+- **Audience**: use the account's dated demographics. Saves and shares are actions;
+  they do not prove trust, agreement or comprehension.
 - **Job**: brand and aesthetic credibility — **plus traffic, as of 09-13**, the
   first measured evidence any channel here reliably converts to a site visit.
 - **Frequency**: 3 per week, the reel and the carousel (`GABARITS-SOCIAL.md` §1 bis), plus a story on every
@@ -141,12 +146,12 @@ channel by a reach metric, is how a working channel gets killed.
   point to (the profile itself, or a landing built for whichever pillar just
   shipped) is the open decision — see the plan below.
 
-### TikTok — the youngest reach, now proven for argument
+### TikTok — discovery and discussion
 
-- **Audience**: the youngest (16–30), highest velocity, lowest loyalty. A video
-  either travels in 48 hours or never.
-- **Job**: reach among a younger francophone audience the other channels do not
-  touch.
+- **Audience**: use the account's dated viewer data. Do not assume youth, low
+  loyalty or a 48-hour lifespan from the platform name.
+- **Job**: discovery and discussion. Whether it reaches readers absent from
+  other channels remains unmeasured; do not infer exclusive audiences.
 - **Frequency**: daily is ideal, 3 per week is the floor.
 - **Caption**: « tu », short sentences, the source line kept, one line asking
   for a comment rather than a tag, and a pinned comment carrying a question

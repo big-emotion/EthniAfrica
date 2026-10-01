@@ -15,6 +15,7 @@ import {
   Maximize2,
   MapPin,
   Network,
+  Newspaper,
   Quote,
   Route,
   Scale,
@@ -57,6 +58,7 @@ const MODULE_GLYPHS: Record<string, LucideIcon> = {
   // Nommer dossier now holds this map.
   langues: Languages,
   patronymes: BookUser,
+  articles: Newspaper,
   nommer: Signature,
   anecdotes: Sparkles,
   proverbes: Quote,

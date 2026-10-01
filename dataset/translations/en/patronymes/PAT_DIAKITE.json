@@ -1,0 +1,320 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "patronyme",
+    "directives": "Dossier approfondi : chaque affirmation positive renvoie à une source dédiée et les absences sont déclarées dans gaps."
+  },
+  "id": "PAT_DIAKITE",
+  "nameMain": "Diakité",
+  "nameSystem": "clan_name",
+  "spellings": [
+    {
+      "spelling": "Diakité",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": [
+            "interpeace-autoportrait-mali-2015",
+            "sy-2015-ethnies-langues-mali"
+          ]
+        },
+        { "countryId": "BFA", "sourceRefs": ["diallo-2006-plaisanterie-peuls"] }
+      ]
+    },
+    {
+      "spelling": "Diakite",
+      "attestations": [
+        { "countryId": "MLI", "sourceRefs": ["forebears-diakite"] },
+        {
+          "countryId": "GIN",
+          "sourceRefs": [
+            "rainer-trebbi-2012-political-power",
+            "forebears-diakite"
+          ]
+        },
+        { "countryId": "CIV", "sourceRefs": ["forebears-diakite"] },
+        { "countryId": "BFA", "sourceRefs": ["forebears-diakite"] },
+        { "countryId": "SEN", "sourceRefs": ["forebears-diakite"] },
+        { "countryId": "MRT", "sourceRefs": ["forebears-diakite"] }
+      ]
+    },
+    {
+      "spelling": "Jakite",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
+    }
+  ],
+  "transmissionMode": "other",
+  "designatedSocialUnit": "clan",
+  "origin": {
+    "oralTraditions": [
+      {
+        "claim": "Among the Fulani of western Burkina Faso, the Diallo and the Diakité form one of the two pairs that make up the mythical core of Fulani identity. One narrative says that, in a flight after a defeat, a Diallo revives a faltering Diakité by making him eat part of his own flesh, and that the two clans formed an alliance on that occasion.",
+        "claimStatus": "claimed",
+        "griot": "Informateurs peuls de l'ouest du Burkina Faso, non nommés dans l'article",
+        "transcription": "Narrative summarised by the author, not transcribed word for word: Diallo, Youssouf, « Identités et relations de plaisanterie chez les Peuls de l'ouest du Burkina Faso », Cahiers d'études africaines, no. 184, 2006, pp. 779-794.",
+        "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
+      }
+    ],
+    "writtenChronicles": [
+      {
+        "claim": "A study of Guinean government elites describes the bearers of Diakité as originating from Wassoulou: its consultant classes them as Fulani linguistically and culturally integrated into the Malinke, while the sources diverge between the two affiliations.",
+        "claimStatus": "contested",
+        "sourceRefs": ["rainer-trebbi-2012-political-power"]
+      },
+      {
+        "claim": "The Fulani group of western Burkina Faso is made up of four main clans, Diallo, Diakité, Sidibé and Sangaré. The name is also cited among Fulani family names in Mali, and it is found among the Mandinka.",
+        "claimStatus": "established",
+        "sourceRefs": [
+          "diallo-2006-plaisanterie-peuls",
+          "interpeace-autoportrait-mali-2015",
+          "sy-2015-ethnies-langues-mali",
+          "hanks-dafn2-diakite"
+        ]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "A dictionary of family names presents Diakité as the name of the Diakité clan of the Fulani and derives it from the name of the town of Dia, in Mali; it adds that the name is also found among the Mandinka. This derivation rests only on that entry, which gives no proof of it.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hanks-dafn2-diakite"]
+      },
+      {
+        "claim": "The dictionary of Bambara clan names has no entry for Jakite, but it cites the name as a joking partner of the Bagayogo, Dansoko, Janka, Kanté and Sidibé clans, and as an equivalent of Jagate, an entry it places in Bambouk, and of Kaba.",
+        "claimStatus": "established",
+        "sourceRefs": ["bamadaba-jamuw"]
+      }
+    ]
+  },
+  "peoples": [
+    {
+      "peopleId": "PPL_FULA",
+      "status": "attested",
+      "sourceRefs": [
+        "rainer-trebbi-2012-political-power",
+        "diallo-2006-plaisanterie-peuls",
+        "interpeace-autoportrait-mali-2015",
+        "sy-2015-ethnies-langues-mali"
+      ]
+    },
+    {
+      "peopleId": "PPL_MALINKE",
+      "status": "attested",
+      "sourceRefs": [
+        "hanks-dafn2-diakite",
+        "rainer-trebbi-2012-political-power"
+      ]
+    }
+  ],
+  "countries": [
+    {
+      "countryId": "MLI",
+      "status": "attested",
+      "sourceRefs": [
+        "interpeace-autoportrait-mali-2015",
+        "sy-2015-ethnies-langues-mali",
+        "forebears-diakite"
+      ]
+    },
+    {
+      "countryId": "GIN",
+      "status": "attested",
+      "sourceRefs": ["rainer-trebbi-2012-political-power", "forebears-diakite"]
+    },
+    {
+      "countryId": "CIV",
+      "status": "attested",
+      "sourceRefs": ["forebears-diakite"]
+    },
+    {
+      "countryId": "BFA",
+      "status": "attested",
+      "sourceRefs": ["diallo-2006-plaisanterie-peuls", "forebears-diakite"]
+    },
+    {
+      "countryId": "SEN",
+      "status": "attested",
+      "sourceRefs": ["forebears-diakite"]
+    },
+    {
+      "countryId": "MRT",
+      "status": "attested",
+      "sourceRefs": ["forebears-diakite"]
+    }
+  ],
+  "alliances": [
+    {
+      "targetPatronymeId": "PAT_DIALLO",
+      "allianceType": "équivalence",
+      "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
+    },
+    {
+      "targetPatronymeId": "PAT_BA",
+      "allianceType": "dendiraagu",
+      "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
+    },
+    {
+      "targetPatronymeId": "PAT_BAGAYOKO",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_KANTE",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_SIDIBE",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    }
+  ],
+  "casteOrSocialFunction": null,
+  "bearers": [],
+  "homonyms": [],
+  "sources": [
+    {
+      "sourceKey": "rainer-trebbi-2012-political-power",
+      "title": "New Tools for the Analysis of Political Power in Africa",
+      "url": "https://www.nber.org/papers/w18424.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Ilia Rainer and Francesco Trebbi, NBER Working Paper 18424, September 2012. The appendix on Guinea, p. 43, explains separately the classification of Diakite, Sidibe and Sangare: originating from Wassoulou and described as Fulani integrated into Malinke populations, they are coded by the authors as half Fulani and half Malinke. The document states that it has not been peer reviewed."
+    },
+    {
+      "sourceKey": "interpeace-autoportrait-mali-2015",
+      "title": "Autoportrait du Mali — Les Obstacles à la Paix",
+      "url": "https://www.interpeace.org/wp-content/uploads/2015/03/2015_03_02_Mali_Autoportrait_FR.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Action-research report of the Institut malien de recherche action pour la paix with Interpeace, in partnership with the United Nations, March 2015. Its chapter on sociocultural diversity gives, for each major group in Mali, a few family names followed by \"etc.\": the list is illustrative, with no method of compilation and no source indicated. It attests that a name is borne within a group, not where it comes from."
+    },
+    {
+      "sourceKey": "sy-2015-ethnies-langues-mali",
+      "title": "Études synchroniques des ethnies et des langues au Mali",
+      "url": "https://arlap.hypotheses.org/3726",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Salif Sy, ARLAP research blog (Hypotheses.org), 18 February 2015. Post by a doctoral student in African languages, not peer reviewed, which lists Diallo, Diakité, Sidibé and Sangaré among the names identified as Fulani in Mali. Cited to attest the name in this group and in this country, not for its origin."
+    },
+    {
+      "sourceKey": "diallo-2006-plaisanterie-peuls",
+      "title": "Identités et relations de plaisanterie chez les Peuls de l'ouest du Burkina Faso",
+      "url": "https://journals.openedition.org/etudesafricaines/15399",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Youssouf Diallo, Cahiers d'études africaines, vol. 46, no. 184, 2006, pp. 779-794 (DOI 10.4000/etudesafricaines.15399). Peer-reviewed journal; the author was then affiliated with the Max-Planck-Institut für ethnologische Forschung. The fieldwork concerns the Fulani of western Burkina Faso, which attests the names in that country. The article says that the Fulani group is made up of four main clans (Diallo, Diakité, Sidibé, Sangaré), that the Diallo/Diakité and Sidibé/Sangaré pairs, the mythical core of Fulani identity, stand in a relation of equivalence, and that Diallo/Diko, Diakité/Ba and Sidibé/Sangaré are counterparts and as such maintain joking relations (dendiraagu). It also reports a narrative of alliance between a Diallo and a Diakité."
+    },
+    {
+      "sourceKey": "canut-2002-senankuya",
+      "title": "Pouvoir, places et filiation : les senankuya au Mali",
+      "url": "https://journals.openedition.org/praxematique/2307",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Canut, Cécile, Cahiers de praxématique, number 38, 2002, pp. 175-197. Fieldwork in Mali. It sets out what the pact requires: the relation holds in perpetuity for all the descendants of the two lineages, marriage between them is prohibited (applied unevenly today, it specifies), and mutual aid is owed without reservation. Cited for the obligation itself; it does not name the pair of this fiche, which the entries cited alongside it carry."
+    },
+    {
+      "sourceKey": "canut-smith-2006-pactes",
+      "title": "Pactes, alliances et plaisanteries. Pratiques locales, discours global",
+      "url": "https://doi.org/10.4000/etudesafricaines.6198",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Canut, Cécile, and Smith, Étienne, Cahiers d'études africaines, number 184, 2006, p. 687 onwards. Cited for the caution it carries: the idea that joking kinship would soothe conflicts is treated there as a hypothesis inherited from Radcliffe-Brown and taken up by conflict resolution studies, and therefore as a discourse to be analysed and not as a measured effect. The first page is verified; the last page is not."
+    },
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Onomastic appendix of the Bamadaba, an electronic Bambara-French dictionary supplementing the Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA); the appendix of clan names is identified as such by Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, pp. 89-110. 375 entries in MDF format, consulted in the complete file. Jakite has no entry of its own there: the name is cited as a joking partner (marker \\sn, read senankun) by the entries Bagayogo, Dansoko, Janka, Kante and Sidibe, and as an equivalent (marker \\eq) under the entries Jagate, whose name the file places in Bambouk, and Kaba. The \\sn links are not systematically reciprocal from one entry to another: each pair is therefore cited from the entry that carries it."
+    },
+    {
+      "sourceKey": "hanks-dafn2-diakite",
+      "title": "Dictionary of American Family Names, 2e édition — entrée Diakite",
+      "url": "https://en.geneanet.org/surnames/DIAKITE",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Patrick Hanks (ed.), Dictionary of American Family Names, 2nd ed., Oxford University Press, 2022; consulted through the Geneanet page that reproduces the entry with its source statement. Reference work whose entry is brief: it gives the derivation from the town of Dia without citing what supports it."
+    },
+    {
+      "sourceKey": "forebears-diakite",
+      "title": "Diakite — origine, signification et répartition du nom",
+      "url": "https://forebears.io/fr/surnames/diakite",
+      "tier": "unverified",
+      "source_kind": "repository",
+      "notes": "Aggregator site of family name statistics, with no verifiable independent editorial review; data from 2014, consulted in an archived copy from 2024. It counts about 488,000 bearers worldwide: Mali 328,417, Guinea 91,156, Côte d'Ivoire 47,544, Burkina Faso 6,815, Senegal 5,119, Mauritania 863, and smaller numbers in Spain (1,353), Morocco, Ghana, Chad and France. The page gives no meaning for the name. Cited for the distribution only; the figures outside Africa are not taken up in the attestations."
+    }
+  ],
+  "gaps": [
+    {
+      "fieldPath": "casteOrSocialFunction",
+      "reason": "The sources consulted class Diakité among the Fulani clans without assigning it a caste or a hereditary function, and the dictionary of Bambara clan names has no entry for it."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "We name no bearer: no source consulted links a deceased person to this name through lineage."
+    },
+    {
+      "fieldPath": "homonyms",
+      "reason": "No source consulted distinguishes two homonymous origins for this name."
+    },
+    {
+      "fieldPath": "transmissionMode",
+      "reason": "The sources consulted class Diakité among the clans and describe alliances between clans, but none says how the name is transmitted; the rule of descent, whether patrilineal, matrilineal or elective, is therefore not established."
+    },
+    {
+      "fieldPath": "origin",
+      "reason": "The origin of the name is not established: the link to the Fulani, the derivation from the town of Dia and the presence among the Mandinka are reported by sources that cannot be reconciled."
+    },
+    {
+      "fieldPath": "spellings",
+      "reason": "We have found no source establishing the spellings Diakhité or Jaiteh as variants of this name; they therefore do not appear here."
+    }
+  ],
+  "_translation": {
+    "kind": "machine",
+    "translatedAt": "2026-09-29T16:10:45.887Z",
+    "model": "claude-sonnet-5-5",
+    "sourceHash": "391ce66415ee3d2733627642aac71b2c2785477323083100a7da47fea5128e49",
+    "fieldHashes": {
+      "origin.oralTraditions[0].claim": "b84b61c2b5d09fc2",
+      "origin.oralTraditions[0].transcription": "34d5b6383c45211d",
+      "origin.writtenChronicles[0].claim": "843717e501a0e89f",
+      "origin.writtenChronicles[1].claim": "98e3f8995a024966",
+      "origin.linguisticReconstructions[0].claim": "cc6200429625780b",
+      "origin.linguisticReconstructions[1].claim": "6695cc4d180b2496",
+      "sources[0].notes": "6301ebe96da7d36b",
+      "sources[1].notes": "a95c461966922844",
+      "sources[2].notes": "f747f9232d8af679",
+      "sources[3].notes": "52f5844029c372a0",
+      "sources[4].notes": "2c14e48c42d56e18",
+      "sources[5].notes": "79986afda62f44db",
+      "sources[6].notes": "0237e0518e2e09e9",
+      "sources[7].notes": "0372a3f6aac0145b",
+      "sources[8].notes": "20441ecf77f9e1ff",
+      "gaps[0].reason": "4f285a419de2f646",
+      "gaps[1].reason": "0143a21d5e960f4d",
+      "gaps[2].reason": "2153e10cce867ae3",
+      "gaps[3].reason": "73f139936bead0a1",
+      "gaps[4].reason": "9ad63e74f531d660",
+      "gaps[5].reason": "33bd6b7fa2f69e4c"
+    },
+    "reviewRequired": [
+      "origin.oralTraditions[0].transcription",
+      "origin.linguisticReconstructions[0].claim",
+      "origin.linguisticReconstructions[1].claim"
+    ]
+  }
+}

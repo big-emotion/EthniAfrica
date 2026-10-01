@@ -1,0 +1,238 @@
+{
+  "id": "swahili-le-nom-de-la-cote",
+  "status": "published",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Mythe déconstruit",
+  "fr": {
+    "slug": "swahili-le-nom-de-la-cote",
+    "title": "D'où vient le nom swahili ?",
+    "excerpt": "Le swahili n'est pas une langue arabe : c'est une langue bantoue. Son nom, lui, vient de l'arabe, et désigne la côte. Ses locuteurs disent kiswahili ; le français et l'anglais disent swahili.",
+    "sections": [
+      {
+        "heading": "Une langue bantoue, un nom arabe",
+        "paragraphs": [
+          "Le swahili est-il une langue arabe ? Non. C'est une langue bantoue, du groupe des langues de la côte nord-est de l'Afrique. Son nom, en revanche, vient bien de l'arabe.",
+          "Au fil des siècles, la langue a emprunté beaucoup de mots à l'arabe, mais aussi au persan et au gujarati. M. J. Robinson note que ces emprunts ont conduit certains observateurs du passé à ne pas la compter parmi les langues africaines. Les emprunts d'une langue ne changent pas sa famille."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "Kiswahili : le nom que lui donnent ses locuteurs",
+        "paragraphs": [
+          "Ceux qui parlent la langue disent kiswahili. Le même mot change de préfixe selon ce qu'il désigne : kiswahili, la langue ; mswahili, une personne ; waswahili, le peuple.",
+          "Le français et l'anglais disent simplement swahili, sans préfixe. C'est le nom donné par d'autres, devenu le plus connu."
+        ],
+        "sourceRefs": ["s2", "s1"]
+      },
+      {
+        "heading": "Sawāḥil, les côtes",
+        "paragraphs": [
+          "Le mot remonte à l'arabe sawāḥil, « les côtes » (singulier sāḥil). Les Swahili seraient ainsi, d'après ce nom, « ceux de la côte », par opposition à l'intérieur des terres.",
+          "Au XIVe siècle, le voyageur Ibn Battuta raconte qu'il embarque à Mogadiscio pour « le pays des Sawahil ». Dans la traduction anglaise de H. A. R. Gibb, publiée en 1962, le mot est un nom de lieu, glosé « les côtes ». Robinson, lui, y lit déjà le nom « Swahili ». Les deux lectures existent ; nous n'avons pas consulté le texte arabe."
+        ],
+        "sourceRefs": ["s5", "s1"]
+      },
+      {
+        "heading": "1850 : trois explications notées par Krapf",
+        "paragraphs": [
+          "En 1850, le missionnaire Johann Ludwig Krapf publie un livre sur la langue, dont le titre l'écrit « Kisuáheli ». C'est la plus ancienne mention de ce nom que notre projet ait trouvée, pas forcément la plus ancienne qui existe.",
+          "À la page 10, il rapporte trois explications du nom. Ses interlocuteurs le rattachent à saua hila, qu'il traduit par « ruse » ou « artifice », et ajoutent qu'ils s'en vantent : « ne sommes-nous pas Suaheli ? », disent-ils quand ils se tirent d'un mauvais pas. Krapf écrit qu'il a une forte objection contre cette explication.",
+          "La deuxième passe par Süḥel, qui désigne en kiswahili le sud-est et le sud-ouest, un mot qu'il rapproche de l'arabe suhail, le nom de l'étoile Canope. La troisième, qu'il juge « la plus correcte », part de l'arabe sahel, pluriel suahel : le rivage, la côte.",
+          "Ce passage montre aussi que les Swahili employaient déjà ce nom pour eux-mêmes au milieu du XIXe siècle, et qu'ils en donnaient leur propre explication, différente de celle que le missionnaire a retenue."
+        ],
+        "sourceRefs": ["s3", "s4"]
+      },
+      {
+        "heading": "Ce qui n'est pas établi",
+        "paragraphs": [
+          "Depuis quand ce mot désigne-t-il des personnes, puis une langue ? Entre la mention d'Ibn Battuta et le livre de Krapf, nous n'avons rien établi."
+        ],
+        "sourceRefs": ["s5", "s3"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "Le swahili est une langue bantoue dont le nom vient de l'arabe sawāḥil, « les côtes ». Ses locuteurs l'appellent kiswahili. En 1850, ils donnaient à Krapf une autre explication de leur nom, la ruse ; lui préférait la côte.",
+          "Vous parlez kiswahili, ou vous connaissez une autre explication de ce nom ? Dites-nous d'où vous la tenez."
+        ],
+        "sourceRefs": ["s1", "s4"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "M. J. Robinson, « History of the Standard Swahili Language », Oxford Research Encyclopedia of African History, 2024",
+      "tier": "needs_review",
+      "url": "https://doi.org/10.1093/acrefore/9780190277734.013.1012",
+      "kind": "article"
+    },
+    {
+      "id": "s2",
+      "title": "Fiche de la langue swahili, EthniAfrica",
+      "tier": "needs_review",
+      "notes": "Notre fiche sur la langue swahili : le nom kiswahili et les formes mswahili et waswahili."
+    },
+    {
+      "id": "s3",
+      "title": "J. L. Krapf, Outline of the Elements of the Kisuáheli Language, 1850",
+      "tier": "needs_review",
+      "url": "https://archive.org/details/krapf-outline-of-the-elements-of-the-kisuaheli-language",
+      "kind": "book",
+      "notes": "Publié à Tübingen ; exemplaire numérisé de l'Internet Archive."
+    },
+    {
+      "id": "s4",
+      "title": "J. L. Krapf, Outline of the Elements of the Kisuáheli Language, 1850, p. 10",
+      "tier": "needs_review",
+      "url": "https://archive.org/details/krapf-outline-of-the-elements-of-the-kisuaheli-language",
+      "kind": "book",
+      "notes": "Page 10 : les trois explications du nom Suaheli, lues sur l'image de la page."
+    },
+    {
+      "id": "s5",
+      "title": "Ibn Battuta, trad. H. A. R. Gibb, Hakluyt Society, 1962, vol. II, p. 378",
+      "tier": "needs_review",
+      "kind": "book",
+      "notes": "The Travels of Ibn Battuta, A.D. 1325-1354, traduction anglaise : « the country of the Sawahil [Coastlands] »."
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "swahili-le-nom-de-la-cote"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "_m_lmj2dgAI",
+        "poster": {
+          "src": "swahili-le-nom-de-la-cote/swahili-le-nom-de-la-cote/poster-44996e273d11.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      },
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "swahili-le-nom-de-la-cote/swahili-le-nom-de-la-cote-carrousel/slide-01-abd374e5320c.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Photographie ancienne imprimée dans un livre : une rade où une quinzaine de voiliers, mâts dressés, sont amarrés côte à côte, avec des hommes en tenue claire sur un ponton de bois et dans des barques au premier plan ; la légende imprimée dit « Dhows in Zanzibar Harbour ».",
+            "text": "Le swahili est-il une langue arabe ?"
+          },
+          {
+            "src": "swahili-le-nom-de-la-cote/swahili-le-nom-de-la-cote-carrousel/slide-02-c820c56c0449.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Carte de l'Afrique en gris dont une bande de pays d'Afrique de l'Est et centrale est teintée de bleu, plus foncé à l'est et plus clair vers le sud et l'ouest.",
+            "text": "Non : le swahili est une langue bantoue.\n\nSon nom vient de l'arabe. Elle a emprunté beaucoup de mots à l'arabe, au persan et au gujarati. Ces emprunts ont fait dire à certains observateurs qu'elle n'était pas africaine.\n\nM. J. Robinson, 2024 · Fiche de la langue swahili, EthniAfrica"
+          },
+          {
+            "src": "swahili-le-nom-de-la-cote/swahili-le-nom-de-la-cote-carrousel/slide-03-486566e98be7.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Photographie ancienne, prise en plongée, d'un marché bondé : une foule d'hommes et de femmes en vêtements clairs, des ombrelles ouvertes, des tas de fruits ronds à droite, des toits de chaume et un bâtiment blanc au fond.",
+            "text": "Une langue porte plusieurs noms.\n\nNous cherchons celui que ses locuteurs lui donnent. Des voyageurs et des missionnaires lui en ont donné d'autres, parfois plus connus."
+          },
+          {
+            "src": "swahili-le-nom-de-la-cote/swahili-le-nom-de-la-cote-carrousel/slide-04-0599d77ff049.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Ruine de pierre aux arcs ouverts, coiffée d'une rangée de petites coupoles sombres, avec un grand arbre feuillu à droite, un ciel bleu nuageux et de l'herbe sèche au premier plan.",
+            "text": "Deux noms : kiswahili et swahili.\n\nLe premier est celui de ses locuteurs. Quatre autres formes existent, elles sont sur notre site.\n\nFiche de la langue swahili, EthniAfrica"
+          },
+          {
+            "src": "swahili-le-nom-de-la-cote/swahili-le-nom-de-la-cote-carrousel/slide-05-7734f4cf6403.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Trois lignes d'un titre imprimé sur fond blanc : « Outline of the elements », « of the » en petit, puis « Kisuáheli language, » en gros caractères.",
+            "text": "Kiswahili : le nom qu'ils se donnent.\n\nLe préfixe ki- désigne la langue, m- une personne, wa- le peuple. Krapf note en 1850 que les Swahili emploient déjà ce nom d'eux-mêmes. La plus ancienne mention que notre projet a trouvée est le titre de son livre, écrit « Kisuaheli ». Le nom vient de l'arabe sawāḥil, « côtes ».\n\nJ. L. Krapf, Outline of the Elements of the Kisuáheli Language, 1850 · M. J. Robinson, 2024"
+          },
+          {
+            "src": "swahili-le-nom-de-la-cote/swahili-le-nom-de-la-cote-carrousel/slide-06-f7d56093f93f.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Cinq lignes de texte imprimé en anglais sur fond blanc, qui commencent par « A third derivation, which may be considered to be the most correct, refers to the Arabic »Sáhel« (pl. Suahel) strand, sea-beach, coast. »",
+            "text": "Une autre version : la ruse.\n\nLes interlocuteurs de Krapf tirent le nom de saua hila, « la ruse ». Krapf récuse cette version. Il en cite deux autres : l'étoile Canopus, puis la côte, qu'il juge la plus juste.\n\nJ. L. Krapf, Outline of the Elements of the Kisuáheli Language, 1850, p. 10"
+          },
+          {
+            "src": "swahili-le-nom-de-la-cote/swahili-le-nom-de-la-cote-carrousel/slide-07-b10a04cf46f6.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Longue façade de pierre claire percée d'arcs et de fenêtres sans vitre, en perspective, sous un ciel bleu nuageux, une herbe haute à droite et une silhouette debout dans l'arc de gauche.",
+            "text": "Swahili : le nom donné par d'autres.\n\nLe français et l'anglais disent swahili, sans le préfixe ki-. Ibn Battuta écrit « le pays des Sawahil » au XIVe siècle, selon la traduction de Gibb. Robinson y lit déjà le nom « Swahili ». Le projet n'a pas établi quand le mot désigne d'abord un peuple ou une langue.\n\nIbn Battuta, trad. H. A. R. Gibb, Hakluyt Society, 1962, vol. II, p. 378 · M. J. Robinson, 2024"
+          },
+          {
+            "src": "swahili-le-nom-de-la-cote/swahili-le-nom-de-la-cote-carrousel/slide-08-5ea3c70fecde.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Photographie ancienne d'une vaste esplanade couverte de nattes où sèche une récolte sombre, deux personnes assises à gauche, quelques autres debout devant un grand toit de chaume, des palmiers et un grand arbre au fond.",
+            "text": "Deux noms, deux statuts.\n\nKiswahili : le nom qu'ils se donnent. Swahili : le nom donné par d'autres, devenu le plus connu."
+          },
+          {
+            "src": "swahili-le-nom-de-la-cote/swahili-le-nom-de-la-cote-carrousel/slide-09-b33963debba8.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Murs bas en pierre grise percés de petites ouvertures et crénelés, dans une herbe sèche, sous un ciel bleu, avec un grand arbre feuillu à droite.",
+            "text": "Non : son nom vient de l'arabe, pas la langue.\n\nSes locuteurs disent kiswahili. Le français et l'anglais disent swahili. Chaque nom dit qui parle d'elle."
+          },
+          {
+            "src": "swahili-le-nom-de-la-cote/swahili-le-nom-de-la-cote-carrousel/slide-10-55ab1b715eae.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "Grande porte de bois sculpté à deux battants, surmontée d'une arche pointue, couverte de motifs de fleurs et de panneaux carrés, dans un mur ocre, sur un sol en damier noir et blanc.",
+            "text": "Notre objectif : raconter l'origine des noms, avec des sources.\n\nVous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica."
+          }
+        ],
+        "credits": "Voiliers dans le port de Zanzibar · A. E. M. Anderson-Morshead, The History of the Universities' Mission to Central Africa, 1909 · Internet Archive, via Wikimedia Commons · domaine public ; Afrique : régions où le swahili est parlé · carte de Canuckguy, Lokal Profil et al., dérivée par Soumya-8974, 2020 · Wikimedia Commons · domaine public ; Marché aux fruits de Zanzibar, entre 1890 et 1923 · Bibliothèque du Congrès, collection Frank et Frances Carpenter · Bibliothèque du Congrès, via Wikimedia Commons · domaine public ; Grande Mosquée de Kilwa Kisiwani, XIe-XVIIIe siècle, 2016 · Richard Mortel · Wikimedia Commons · CC BY 2.0 ; Page de titre de J. L. Krapf, Outline of the Elements of the Kisuáheli Language, Tübingen, 1850 (détail) · Internet Archive (numérisation Google) · domaine public ; Page 10 de J. L. Krapf, Outline of the Elements of the Kisuáheli Language, Tübingen, 1850 (détail) · Internet Archive (numérisation Google) · domaine public ; Séchage de clous de girofle à Zanzibar, entre 1890 et 1923 · Bibliothèque du Congrès, collection Frank et Frances Carpenter · Bibliothèque du Congrès, via Wikimedia Commons · domaine public ; Ruines du palais de Makutani (XVIIIe siècle), Kilwa Kisiwani, 2016 · Richard Mortel · Wikimedia Commons · CC BY 2.0 ; Porte sculptée, Stone Town, Zanzibar, 2008 · Nannarella · Wikimedia Commons · domaine public"
+      }
+    ],
+    "originals": [
+      {
+        "network": "facebook",
+        "url": "https://www.facebook.com/reel/1340499781495758",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "facebook",
+        "url": "https://www.facebook.com/reel/1427433532659252",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/Ddjig2QCNOf/",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/reel/DdiqtPTqFik/",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7688018683603471638",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7687892994271366422",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/_m_lmj2dgAI",
+        "publishedAt": "2026-09-21"
+      }
+    ]
+  },
+  "relatedArticleIds": [],
+  "publishedAt": "2026-09-30"
+}

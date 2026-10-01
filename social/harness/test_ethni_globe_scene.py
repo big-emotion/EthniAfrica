@@ -7,7 +7,11 @@ import unittest
 import numpy
 from PIL import Image
 
+import ethni_globe_layers as globe_layers
+import ethni_scene_fullbleed as fullbleed
+import ethni_tokens as tokens
 import test_ethni_scenes as fixtures
+from ethni_globe import GlobeCamera
 from ethni_scene_plan import validate_plan
 from ethni_scene_render import SceneRenderer
 
@@ -261,6 +265,190 @@ class GlobeRenderTests(GlobeSceneCase):
                             "until": 5, "evidence": copy.deepcopy(self.plan["scenes"][0]["evidence"])}]
         after = numpy.asarray(self.frame()).astype(int)
         self.assertGreater(int((after != before).any(axis=2).sum()), 50)
+
+
+def rgb(colour):
+    return tuple(int(colour[i:i+2], 16) for i in (1, 3, 5))
+
+
+class GlobeSpaceAndGlowTests(GlobeSceneCase):
+    """`map.space` and `map.glow` name palette tokens; without them the full-frame globe keeps its light ground."""
+
+    def rejects(self, message):
+        with self.assertRaisesRegex(ValueError, message):
+            validate_plan(self.plan, self.root, 10)
+
+    def wide(self, **keys):
+        cfg = self.globe()
+        cfg["borders"] = False
+        cfg["camera"] = [{"at": 0, "center": [5, 10], "span": 300}]
+        cfg.update(keys)
+        return cfg
+
+    def fullbleed_frame(self, renderer=None):
+        renderer = renderer or SceneRenderer(self.plan, self.root, [])
+        return fullbleed.background(renderer, self.plan["scenes"][0], 2.0)
+
+    def test_space_and_glow_name_a_palette_token_never_a_colour_value(self):
+        cfg = self.wide(space="ground", glow="perv")
+        validate_plan(self.plan, self.root, 10)
+        for key in ("space", "glow"):
+            for wrong in ("#000000", "black", "", 3):
+                cfg[key] = wrong
+                self.rejects(f"map.{key}")
+            cfg[key] = "teal"
+            validate_plan(self.plan, self.root, 10)
+
+    def test_space_and_glow_belong_to_the_globe(self):
+        cfg = self.wide(space="ground")
+        cfg["projection"] = "mercator"
+        del cfg["relief"], cfg["rivers"], cfg["lakes"]
+        cfg["camera"] = [{"at": 0, "bounds": [-20, -5, 20, 25]}]
+        self.rejects("globe")
+
+    def test_without_the_keys_the_fullbleed_globe_keeps_its_light_ground(self):
+        self.wide()
+        self.assertEqual(self.fullbleed_frame().getpixel((2, 2)), rgb(fullbleed.LIGHT["ground"]))
+
+    def test_the_space_around_the_globe_takes_the_named_token(self):
+        self.wide(space="ground")
+        self.assertEqual(self.fullbleed_frame().getpixel((2, 2)), rgb(tokens.palette()["ground"]))
+
+    def test_the_halo_takes_the_named_glow_token(self):
+        def halo(glow):
+            cfg = self.wide(space="ground")
+            if glow: cfg["glow"] = glow
+            frame = self.fullbleed_frame()
+            camera = GlobeCamera((5, 10), 300, (0, 0, *frame.size))
+            (ox, oy), radius = camera.disc()
+            return frame.getpixel((round(ox + radius*1.01), round(oy)))
+
+        space = rgb(tokens.palette()["ground"])
+        for glow in ("perv", "teal"):
+            pixel, target = halo(glow), rgb(tokens.palette()[glow])
+            self.assertNotEqual(pixel, space)
+            # The halo is the named token laid over the space: every channel moves towards the token.
+            for channel in range(3):
+                self.assertLessEqual(abs(pixel[channel] - target[channel]), abs(space[channel] - target[channel]))
+        self.assertNotEqual(halo("perv"), halo("teal"))
+
+    def test_changing_the_space_is_never_served_from_the_cached_base(self):
+        cfg = self.wide()
+        renderer = SceneRenderer(self.plan, self.root, [])
+        light = self.fullbleed_frame(renderer).tobytes()
+        cfg["space"] = "ground"
+        dark = self.fullbleed_frame(renderer).tobytes()
+        self.assertTrue(light != dark, "the second frame reused the base cached for the first")
+        self.assertTrue(dark == self.fullbleed_frame().tobytes())
+
+
+class GlobeContextCountryTests(GlobeSceneCase):
+    """A present-day country kept visible, as context, while a people's zone rises inside it."""
+
+    def rejects(self, message):
+        with self.assertRaisesRegex(ValueError, message):
+            validate_plan(self.plan, self.root, 10)
+
+    def people(self, tilt=0):
+        cfg = self.globe()
+        cfg["layer"], cfg["borders"] = "people", False
+        cfg["camera"] = [{"at": 0, "center": [0, 10], "span": 40, "tilt": tilt}]
+        return cfg
+
+    def zone(self):
+        return {"kind": "presence-zone", "points": [[-3, 8], [3, 8], [3, 12], [-3, 12], [-3, 8]], "label": "Zone",
+                "at": 0, "until": 5, "colour": "teal", "geometry_note": "Approximate", "unlabelled": True,
+                "extrude": 20, "evidence": {**copy.deepcopy(self.plan["scenes"][0]["evidence"]), "status": "estimate"}}
+
+    def country(self, **fields):
+        return self.feature(role="context", extrude=20, unlabelled=True, **fields)
+
+    def pixel(self, image, point):
+        x, y = GlobeCamera((0, 10), 40, (0, 0, image.shape[1], image.shape[0])).project(point)
+        return image[round(y), round(x)]
+
+    def test_a_context_country_and_a_zone_inside_it_share_the_people_layer(self):
+        self.people()["features"] = [self.country(), self.zone()]
+        validate_plan(self.plan, self.root, 10)
+
+    def test_a_subject_country_still_needs_the_national_layer(self):
+        cfg = self.people()
+        for role in ({}, {"role": "subject"}):
+            cfg["features"] = [self.feature(**role), self.zone()]
+            self.rejects("national layer")
+
+    def test_a_context_country_is_refused_off_the_people_layer(self):
+        cfg = self.people()
+        for layer in ("national", "political", "physical"):
+            cfg["layer"] = layer
+            cfg["features"] = [self.country()]
+            self.rejects("people layer")
+
+    def test_the_country_is_drawn_under_the_zone_whatever_the_array_order(self):
+        cfg = self.people()
+        cfg["features"] = [self.zone()]
+        zone_only = numpy.asarray(self.frame(4.0)).astype(int)
+        cfg["features"] = [self.country()]
+        country_only = numpy.asarray(self.frame(4.0)).astype(int)
+        cfg["features"] = [self.country(), self.zone()]
+        both = numpy.asarray(self.frame(4.0)).astype(int)
+        # Inside the country, away from the zone: the country is there.
+        self.assertTrue((self.pixel(both, (-8, 3)) != self.pixel(zone_only, (-8, 3))).any())
+        # At the zone's centre: the zone is laid over the country, not hidden under it.
+        self.assertTrue((self.pixel(both, (0, 10)) != self.pixel(country_only, (0, 10))).any())
+        cfg["features"] = [self.zone(), self.country()]
+        self.assertTrue((numpy.asarray(self.frame(4.0)).astype(int) == both).all())
+
+    def test_a_context_country_keeps_its_extrusion_under_a_tilt(self):
+        cfg = self.people(tilt=50)
+        empty = numpy.asarray(self.frame(4.0)).astype(int)
+
+        def top_row(extrude):
+            cfg["features"] = [self.feature(role="context", extrude=extrude, unlabelled=True)]
+            changed = (numpy.asarray(self.frame(4.0)).astype(int) != empty).any(axis=2)
+            return int(numpy.flatnonzero(changed.any(axis=1))[0])
+
+        self.assertLess(top_row(50), top_row(0) - 10)
+
+    def test_the_legend_does_not_call_a_containing_country_a_neighbour(self):
+        self.people()["features"] = [self.country(), self.zone()]
+        legend = "\n".join(SceneRenderer(self.plan, self.root, []).legend(self.plan["scenes"][0], 2))
+        self.assertIn("Land", legend)
+        self.assertNotIn("Voisinage : Land", legend)
+
+
+class ReliefResolutionTests(GlobeSceneCase):
+    """A close-up samples the relief at the frame's own resolution; a wide view keeps the cheaper half."""
+
+    size = (200, 200)
+
+    def edge_width(self, span):
+        """How many pixels a sharp west/east edge in the relief is smeared over, across the frame's middle row."""
+        relief = numpy.zeros((800, 800, 3), numpy.uint8)
+        relief[:, 400:] = 255
+        camera = GlobeCamera((0, 0), span, (0, 0, *self.size))
+        image = globe_layers.relief_base(relief, [-5, -5, 5, 5], camera, self.size,
+                                         tokens.palette()["ground"])
+        row = numpy.asarray(image.convert("L"), int)[self.size[1]//2, 60:140]
+        return int(((row > 25) & (row < 230)).sum())
+
+    def test_a_close_up_keeps_a_sharp_edge_sharp(self):
+        self.assertLessEqual(self.edge_width(globe_layers.CLOSE_UP_SPAN/4), 1)
+        self.assertLessEqual(self.edge_width(globe_layers.CLOSE_UP_SPAN*.95), 1)
+
+    def test_a_wide_view_keeps_the_half_resolution_base(self):
+        self.assertGreaterEqual(self.edge_width(globe_layers.CLOSE_UP_SPAN*1.5), 2)
+
+    def test_a_close_up_after_a_wide_view_is_not_served_the_wide_base(self):
+        cfg = self.globe()
+        cfg["borders"] = False
+        renderer = SceneRenderer(self.plan, self.root, [])
+        scene = self.plan["scenes"][0]
+        cfg["camera"] = [{"at": 0, "center": [5, 10], "span": globe_layers.CLOSE_UP_SPAN*2}]
+        renderer._map(scene, 2)
+        cfg["camera"] = [{"at": 0, "center": [5, 10], "span": globe_layers.CLOSE_UP_SPAN/2}]
+        reused = renderer._map(scene, 2).tobytes()
+        self.assertTrue(reused == SceneRenderer(self.plan, self.root, [])._map(scene, 2).tobytes())
 
 
 if __name__ == "__main__":
