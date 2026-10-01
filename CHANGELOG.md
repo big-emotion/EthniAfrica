@@ -10,6 +10,49 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [4.22.0] - 2026-10-01
+
+### Added
+
+- Articles: the dossiers address now lists published articles, served from a
+  host directory mounted read-only, with the first 22 articles published
+  (#1439, #1442, #1443).
+- Search: an answer-first result page with reviewed name answers, tolerant of
+  how readers type (articles, plurals, question frames, near forms), and the
+  committed query reported to Plausible (#1412, #1414, #1409).
+- Corpus: surname fiches readers searched for, deeper entries for the
+  most-searched names with reachable variants, and the Diawambé people
+  (`PPL_DIAWAMBE`) (#1415, #1416, #1417, #1408).
+- Sources: carrier and collection, references rather than probability, and
+  `sources.derived_from_source_id` (#1438, #1447).
+- Social production: research-led narrative design for reels and carousels,
+  six narrative families with claim-scoped reviews, a catalogue of editions
+  and occurrences, per-destination delivery, composition library and reading
+  profiles, a clip-reel skill, kinetic text and word-by-word captions,
+  full-frame overlays, a keyed camera and a higher-resolution globe relief
+  (#1397, #1404, #1405, #1406, #1407, #1410, #1411, #1419, #1421, #1423,
+  #1425).
+- Skills: stale local skill copies are reconciled safely (#1437).
+
+### Changed
+
+- Social carousels no longer offer dark, plain or solid-colour backgrounds:
+  a photograph fills every card (#1454).
+
+### Fixed
+
+- Corpus: claims now come before their sources, identifiers are removed from
+  reader text, missionary judgments are attributed and outside descriptions
+  bounded, and the Kassambara and Sakiliba wording is corrected (#1418,
+  #1440, #1444, #1445).
+- Editorial: the word Bantu's coining is no longer dated to 1862 alone
+  (#1450).
+- Social: the night scrim on light carousel images and the Pexels licence,
+  baseline alignment of kinetic lines, caption guillemets and question-cover
+  ceilings (#1427, #1452, #1459).
+- Skills: a mirror that the canonical skill links back to is never replaced
+  (#1441).
+
 ## [4.21.0] - 2026-09-27
 
 ### Added
@@ -1480,7 +1523,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.21.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.22.0...HEAD
+[4.22.0]: https://github.com/big-emotion/ethniafrica/compare/v4.21.0...v4.22.0
 [4.21.0]: https://github.com/big-emotion/ethniafrica/compare/v4.20.0...v4.21.0
 [4.20.0]: https://github.com/big-emotion/ethniafrica/compare/v4.19.0...v4.20.0
 [4.19.0]: https://github.com/big-emotion/ethniafrica/compare/v4.18.0...v4.19.0
