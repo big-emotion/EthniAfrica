@@ -1,0 +1,25 @@
+{
+  "campaign": "bantou-d-ou-vient-le-nom-2",
+  "typologie": "mot",
+  "episode": 17,
+  "question": {
+    "fr": "D'où vient le nom Bantou ?"
+  },
+  "myth": {
+    "fr": "« Bantou » est-il le nom d'un peuple ?"
+  },
+  "subjects": [
+    {
+      "kind": "family",
+      "id": "FLG_BANTU",
+      "label": { "fr": "Bantou", "en": "Bantu" }
+    },
+    {
+      "kind": "people",
+      "id": "PPL_BANTU",
+      "label": { "fr": "Bantou", "en": "Bantu" }
+    }
+  ],
+  "sitePath": "/fr/atlas/familles/FLG_BANTU",
+  "publications": []
+}
