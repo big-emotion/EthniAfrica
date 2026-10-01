@@ -266,75 +266,27 @@ def validate_globe_camera(frame):
                 tilt=number(frame.get("tilt", 0), "camera.tilt"), heading=number(frame.get("heading", 0), "camera.heading"))
 
 
-def validate_timeline(value, duration, sources, assets=None):
-    keys(value, "scale events context layout background overview_at context_layout", "timeline")
-    layout = value.get("layout", "overview")
-    require(layout in ("overview", "focus"), "Unknown timeline layout")
-    if layout == "focus":
-        validate_focused_timeline(value, duration, sources, assets or {})
-        return
-    require(not any(key in value for key in ("background", "overview_at", "context_layout")), "Focus options require the focus layout")
+def validate_timeline(value, duration, sources, assets):
+    """A chronology is a band over its map: two or three events cued in order, and the map behind them."""
+    keys(value, "scale events layout background", "timeline")
+    require(value.get("layout") == "focus", "timeline.layout must be focus: a chronology is drawn as a band over a map")
+    require("background" in value, "A chronology needs a map background behind it")
     require(value.get("scale") == "ordinal", "timeline.scale must be ordinal; spacing is explicitly not proportional")
-    events, context = value.get("events"), value.get("context", [])
+    events = value.get("events")
     require(isinstance(events, list) and 2 <= len(events) <= 3, "timeline needs two or three primary events")
-    require(isinstance(context, list) and len(context) <= 2, "timeline supports at most two context events")
-    years = []
-    for lane in (events, context):
-        for event in lane:
-            keys(event, "year label detail at evidence" if lane is context else "year label at evidence display", "timeline event")
-            require(type(event.get("year")) is int and event["year"] != 0, "event.year must be a nonzero integer")
-            # `display` replaces the printed year when sources give only a century: the year then
-            # only orders the events and is never shown.
-            if "display" in event: text(event["display"], "event.display")
-            text(event.get("label"), "event.label")
-            if lane is context: text(event.get("detail"), "event.detail")
-            number(event.get("at"), "event.at", 0, duration-.04)
-            evidence(event.get("evidence"), sources, "event.evidence")
-        if lane is events:
-            years = [event["year"] for event in events]
-            require(all(a < b for a, b in zip(years, years[1:])), "Primary events must be in chronological order")
-    require(all(event["year"] in years for event in context), "Context must share the same year as a primary event")
-    require(len({event["year"] for event in context}) == len(context), "Group same-year context into one event")
-
-
-def validate_focused_timeline(value, duration, sources, assets):
-    """Anchor context to a scene cue without pretending its period is that year."""
-    primary = {key: value[key] for key in ("scale", "events") if key in value}
-    validate_timeline(primary, duration, sources)
-    require(value.get("context_layout", "cards") in ("cards", "corner"), "Unknown context layout")
-    events = value["events"]
-    require(all(a["at"] < b["at"] for a, b in zip(events, events[1:])),
-            "Focus event cues must be chronological")
-    overview = value.get("overview_at", duration)
-    number(overview, "overview_at", events[-1]["at"], duration)
-    require(overview > events[-1]["at"], "Overview must follow the final event")
-    windows = {event["year"]: (event["at"], events[i+1]["at"] if i+1 < len(events) else overview)
-               for i, event in enumerate(events)}
-    context = value.get("context", [])
-    require(isinstance(context, list) and len(context) <= 2*len(events), "Focus supports two lanes per event")
-    used = set()
-    for item in context:
-        keys(item, "event_year lane label detail at evidence", "focus context")
-        anchor = item.get("event_year")
-        require(type(anchor) is int and anchor in windows, "Context event_year must reference a primary event")
-        require(item.get("lane") in ("regional", "world"), "Unknown context lane")
-        pair = (anchor, item["lane"])
-        require(pair not in used, "Only one context per lane and primary event")
-        used.add(pair)
-        for field in ("label", "detail"): text(item.get(field), "context."+field)
-        evidence(item.get("evidence"), sources, "context.evidence")
-        start, end = windows[anchor]
-        cue = number(item.get("at"), "context.at", start)
-        require(cue < end, "Context must appear within its event window")
-    if value.get("context_layout") == "corner":
-        require(len({item["at"] for item in context}) == len(context),
-                "Corner context cues must be distinct; one note is visible at a time")
-    if "background" in value:
-        background = value["background"]
-        validate_map(background, duration, assets, sources)
-        if background.get("features") or background.get("highlights"):
-            require(not context or value.get("context_layout") == "corner",
-                    "Composed timeline maps require corner context to keep geography visible")
+    for event in events:
+        keys(event, "year label at evidence display", "timeline event")
+        require(type(event.get("year")) is int and event["year"] != 0, "event.year must be a nonzero integer")
+        # `display` replaces the printed year when sources give only a century: the year then
+        # only orders the events and is never shown.
+        if "display" in event: text(event["display"], "event.display")
+        text(event.get("label"), "event.label")
+        number(event.get("at"), "event.at", 0, duration-.04)
+        evidence(event.get("evidence"), sources, "event.evidence")
+    years = [event["year"] for event in events]
+    require(all(a < b for a, b in zip(years, years[1:])), "Primary events must be in chronological order")
+    require(all(a["at"] < b["at"] for a, b in zip(events, events[1:])), "Event cues must be chronological")
+    validate_map(value["background"], duration, assets, sources)
 
 
 def validate_image(value, assets, layout, duration):
@@ -453,8 +405,12 @@ def validate_kinetic(value, duration):
 def validate_plan(plan, root, duration, timeline=None):
     """Validate shape, local assets, provenance and complete audio coverage."""
     keys(plan, "version profile coverage title source output_dir sources assets scenes progress cover outro layout insertions bed", "plan")
-    layout = plan.get("layout", "panel")
-    require(layout in ("panel", "fullbleed"), "Unknown layout")
+    # Every scene is drawn over a full-frame picture or map. The dark panel layout that once stood on
+    # a plain night ground is gone (operator ruling, 2026-09-30); `layout` survives only so a plan that
+    # names the one remaining layout keeps validating.
+    layout = plan.get("layout", "fullbleed")
+    require(layout != "panel", "The dark panel layout no longer exists: every scene is drawn over a full-frame picture or map")
+    require(layout == "fullbleed", "Unknown layout")
     for flag in ("progress", "cover", "outro"):
         if flag in plan:
             require(type(plan[flag]) is bool, f"{flag} must be boolean")
@@ -507,49 +463,35 @@ def validate_plan(plan, root, duration, timeline=None):
         evidence(scene.get("evidence"), sources, f"{where}.evidence")
         kind = scene.get("type")
         require(kind in ("map", "image", "text", "comparison", "kinetic", "timeline", "document", "clip"), "Unknown scene type")
+        require(kind in ("map", "image", "timeline", "comparison", "kinetic", "clip"),
+                f"{where}: a {kind} scene has no full-frame picture behind it; every scene is drawn over a picture, a map or a film excerpt")
         require(all(field == kind or field not in scene for field in ("map", "image", "text", "comparison", "kinetic", "timeline", "document", "clip")),
                 f"{where}: content for another scene type")
-        # The full-frame layout draws words only as an overlay (a comparison whose items arrive over a picture or a map)
-        # or as a kinetic card.
-        require(layout != "fullbleed" or kind in ("map", "image", "timeline", "comparison", "kinetic"),
-                f"{where}: the fullbleed layout cannot draw a {kind} scene")
-        if kind == "comparison" and layout == "fullbleed":
-            require("backdrop" in scene, f"{where}: a full-frame comparison needs a backdrop, or it is words on a black screen")
+        if kind in ("comparison", "kinetic"):
+            require("backdrop" in scene, f"{where}: a {kind} scene needs a backdrop picture or map behind its words")
             validate_backdrop(scene["backdrop"], end-start, root, assets, sources)
         else:
-            require("backdrop" not in scene, f"{where}: a backdrop belongs to a comparison in the full-frame layout")
+            require("backdrop" not in scene, f"{where}: a backdrop belongs to a comparison or a kinetic card")
         if kind == "map":
             validate_map_scene(scene.get("map"), end-start, root, assets, sources)
         elif kind == "image":
             validate_image(scene.get("image"), assets, layout, end-start)
         elif kind == "timeline":
             validate_timeline(scene.get("timeline"), end-start, sources, assets)
-            require(layout != "fullbleed" or (scene["timeline"].get("layout") == "focus" and not scene["timeline"].get("context")),
-                    f"{where}: the fullbleed layout draws a focused chronology without context cards")
-            background = scene["timeline"].get("background")
-            if background:
-                data = json.loads(asset_path(root, assets[background["asset"]]).read_text())
-                codes = {f["properties"]["ADM0_A3"] for f in data["features"]}
-                require(all(c in codes for c in background.get("highlights", [])), "Unknown highlighted country")
-                require(all(f["code"] in codes for f in background.get("features", []) if f["kind"] == "country"),
-                        "Unknown country in a country feature")
-        elif kind == "document":
-            value = scene.get("document")
-            keys(value, "asset label body", "document")
-            require(value.get("asset") in assets and assets[value["asset"]]["kind"] == "image", "document image asset required")
-            for field in ("label", "body"): text(value.get(field), f"document.{field}")
+            background = scene["timeline"]["background"]
+            data = json.loads(asset_path(root, assets[background["asset"]]).read_text())
+            codes = {f["properties"]["ADM0_A3"] for f in data["features"]}
+            require(all(c in codes for c in background.get("highlights", [])), "Unknown highlighted country")
+            require(all(f["code"] in codes for f in background.get("features", []) if f["kind"] == "country"),
+                    "Unknown country in a country feature")
         elif kind == "clip":
             validate_clip_scene(scene, timeline)
-        elif kind == "text":
-            text(scene.get("text"), "scene.text")
         elif kind == "kinetic":
             validate_kinetic(scene.get("kinetic"), end-start)
         else:
             items = scene.get("comparison")
-            full = layout == "fullbleed"
-            require(isinstance(items, list) and 2 <= len(items) <= (5 if full else 3),
-                    "comparison needs two to five items in the full-frame layout" if full
-                    else "comparison needs two or three items")
+            require(isinstance(items, list) and 2 <= len(items) <= 5,
+                    "comparison needs two to five items")
             for item in items:
                 keys(item, "label body at", "comparison item")
                 text(item.get("label"), "comparison.label")

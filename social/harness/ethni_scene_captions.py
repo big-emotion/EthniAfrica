@@ -25,8 +25,6 @@ W = 1080
 BOTTOM = 1520
 # Above this y the evidence line, the brand and the proof badge live.
 HEADER = 260
-# The panel layout fills everything above its legend, which ends at 1332.
-LEGEND_BOTTOM = 1332
 # Air kept between a caption and a subject, a protected region or a label; a country is not a tight shape on screen.
 PAD = 16
 SUBJECT_PAD = 40
@@ -52,8 +50,6 @@ def _inflate(box, by):
 
 def _reserved(renderer, scene):
     """What the scene's own text and picture chrome occupy: never available to a caption."""
-    if renderer.plan.get("layout") != "fullbleed":
-        return [(0, 0, W, LEGEND_BOTTOM)]
     import ethni_scene_fullbleed as fullbleed
     reserved = [(0, 0, W, HEADER)]
     if scene["type"] in ("kinetic", "comparison"):
@@ -82,8 +78,7 @@ def _subjects(renderer, scene):
     for local in _sample_instants(scene):
         boxes += renderer.subject_boxes(scene, local)
     import ethni_scene_fullbleed as fullbleed
-    if renderer.plan.get("layout") == "fullbleed":
-        boxes += fullbleed.insert_boxes(scene)
+    boxes += fullbleed.insert_boxes(scene)
     return [_inflate(box, SUBJECT_PAD) for box in boxes]
 
 

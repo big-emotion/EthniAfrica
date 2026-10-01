@@ -71,7 +71,7 @@ musical memories or sources and must not imply a nonexistent page on the site.
 Mémoires sonores draws **nothing of its own**. On 2026-09-27 the operator ruled
 that every carousel keeps the look the account already has — the format of the
 Lingala carousel: a full-frame photograph on every card, the series label and rank
-at the top, the title at the bottom, credits at the foot, on the night ground (or
+at the top, the title at the bottom, credits at the foot, in the night ink (or
 the parchment variant). The presentation approved on 2026-09-25
 (`memoires-sonores-v1`: a contained portrait cover, four text-only cards and a
 framed listening photograph) is **retired**; its reference images are kept as

@@ -92,6 +92,10 @@ def main():
             f"{racine.name} : cards.json est encore à l'ancien schéma. Lance "
             f"`node social/tools/migrate-cards/migrate-cards.mjs {racine.name}`")
 
+    missing_images = carousel_profiles.image_errors(deck)
+    if missing_images:
+        raise SystemExit("\n".join(missing_images))
+
     assets = racine / "assets"
     images = {}
     for carte in deck["cartes"]:

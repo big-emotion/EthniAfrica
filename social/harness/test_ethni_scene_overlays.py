@@ -53,12 +53,12 @@ class OverlayFixture(unittest.TestCase):
 
 
 class OverlayPlanTests(OverlayFixture):
-    def test_a_full_frame_comparison_needs_a_backdrop_and_the_panel_layout_refuses_one(self):
+    def test_a_comparison_needs_a_backdrop_and_the_dark_panel_layout_is_refused(self):
         validate_plan(self.overlay(), self.root, 10)
         validate_plan(self.overlay(backdrop="map"), self.root, 10)
         with self.assertRaisesRegex(ValueError, "backdrop"):
             validate_plan(self.overlay(backdrop=None), self.root, 10)
-        with self.assertRaisesRegex(ValueError, "backdrop"):
+        with self.assertRaisesRegex(ValueError, "panel"):
             validate_plan(self.overlay(layout="panel"), self.root, 10)
 
     def test_a_backdrop_is_exactly_one_picture_or_map_checked_like_a_scene(self):
@@ -72,16 +72,13 @@ class OverlayPlanTests(OverlayFixture):
             with self.assertRaises(ValueError, msg=str(backdrop)):
                 validate_plan(plan, self.root, 10)
 
-    def test_a_full_frame_comparison_holds_two_to_five_items_and_the_panel_two_or_three(self):
+    def test_a_comparison_holds_two_to_five_items(self):
         many = [{"label": f"L{i}", "body": "b", "at": i} for i in range(6)]
         validate_plan(self.overlay(items=many[:5]), self.root, 10)
         with self.assertRaisesRegex(ValueError, "two to five"):
             validate_plan(self.overlay(items=many), self.root, 10)
         with self.assertRaisesRegex(ValueError, "two to five"):
             validate_plan(self.overlay(items=many[:1]), self.root, 10)
-        plain = self.overlay(items=many[:4], backdrop=None, layout="panel")
-        with self.assertRaisesRegex(ValueError, "two or three"):
-            validate_plan(plain, self.root, 10)
 
     def test_an_item_cue_cannot_fall_after_the_scene_ends(self):
         late = [dict(ITEMS[0]), dict(ITEMS[1], at=5.0)]

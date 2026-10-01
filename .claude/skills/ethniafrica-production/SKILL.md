@@ -112,9 +112,9 @@ Use the established visual language where it serves the explanation:
 - Flags only when historically appropriate or explicitly present-day orientation.
 - Animated schematic routes with visible uncertainty; distinguish journeys,
   migrations, political territories and population presence.
-- Focused timelines with one dominant date, discreet corner context and readable motion.
+- Focused timelines with one dominant date over their map and readable motion.
 - Relevant photographs or documents that explain the spoken point.
-- Optional neighbouring territories or silent regional/world events when sourced,
+- Optional neighbouring territories, as context features on the map, when sourced,
   contemporary with the depicted period and meaningful to this audience; keep them secondary.
 
 Do not force every feature into every video. Never reuse another subject's

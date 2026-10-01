@@ -4,8 +4,14 @@ For preparation, reusable storyboards and execution by another session, see the
 [production guide](SCENE-PRODUCTION.md) and [feature catalogue](SCENE-CATALOGUE.md).
 This document remains the detailed field contract.
 
+**Every scene has a full-frame picture or map behind it.** There is no dark, plain or solid-colour
+background mode (operator ruling, 2026-09-30): the former `panel` layout, which stood scenes on a night
+ground, is gone, and the plan validator refuses a scene that has no picture, map or film excerpt to
+stand on (`text` and `document` scenes) and a plan that names `"layout": "panel"`. Text is drawn over the
+picture, on a legibility scrim that keeps the picture visible.
+
 The default workflow for new videos, also accessible through `ethni_montage.py`, for narrated videos assembled from
-maps, moving photographs, text and comparisons. Carousels and the default video
+maps, moving photographs and text drawn over them. Carousels and the default video
 path keep their existing behaviour. The original `--map-proof` POC also remains
 available. This engine uses Pillow, the existing typography/caption modules and
 FFmpeg; no Hugging Face, MCP, paid API or browser is required during rendering.
@@ -121,89 +127,43 @@ Evidence always has `sources` (IDs), `period` (visible) and `status`:
 Those are author assertions to review, not findings automatically verified by
 the renderer. Full citations remain in `REVIEW.md`; short labels fit the frame.
 
-| Scene type   | Content                                                                                                                                                                         |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `map`        | `asset`, `layer`, explicit `borders`, optional `highlights`, `graticule`, camera keyframes and authored features                                                                |
-| `image`      | `asset`, `fit` (`contain` or `cover`), optional `motion` with `from`/`to` values `[zoom,focusX,focusY]`                                                                         |
-| `text`       | One wrapped string in `text`; useful for an argument or quotation, with evidence and attribution                                                                                |
-| `comparison` | Two or three `{label,body,at?}` items, vertically stacked for mobile; `at` is local seconds. In the full-frame layout: two to five items over a required `backdrop` (see below) |
-| `kinetic`    | `{lines}` : one to four lines that arrive one after another, each on a narrated word ; see « Kinetic text » below                                                               |
-| `timeline`   | `{scale: "ordinal", events, context?}`; two or three chronological events and up to two same-year contextual events                                                             |
-| `document`   | `{asset,label,body}`; a complete archival image beside concise copy, with source and asset credits                                                                              |
+| Scene type   | Content                                                                                                                                       |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `map`        | `asset`, `layer`, explicit `borders`, optional `highlights`, `graticule`, camera keyframes and authored features                              |
+| `image`      | `asset`, `fit` (`contain` or `cover`), optional `motion` with `from`/`to` values `[zoom,focusX,focusY]`                                       |
+| `comparison` | Two to five `{label,body,at?}` items over a required `backdrop` (see below); `at` is local seconds                                            |
+| `kinetic`    | `{lines}` : one to four lines that arrive one after another, each on a narrated word, over a required `backdrop` ; see « Kinetic text » below |
+| `timeline`   | `{layout: "focus", scale: "ordinal", events, background}`; two or three chronological events drawn as a band over a required map `background` |
 
 Use `timeline` for multiple historical dates. Each primary event contains
-`year` (a nonzero integer), `label`, `at` (local seconds) and its own `evidence`.
-Events must be strictly chronological. Context events additionally require
-`detail` and share a primary event's exact year; they appear on a separate
-labelled lane, not as an implied cause. Combine multiple events in one year
-into one concise label, or use another scene. The visible spacing notice is
-mandatory: equal layout spacing does **not** represent equal elapsed time.
-All event sources enter the credit register even if the parent scene lists
-different sources. Long labels fail preflight rather than shrinking to fit.
-`templates/timeline.json` is a placeholder starter, not a historical example.
+`year` (a nonzero integer), `label`, `at` (local seconds) and its own `evidence`;
+an optional `display` replaces the printed year when the sources give only a century.
+Events must be strictly chronological, in year and in cue. Combine multiple events in
+one year into one concise label, or use another scene. All event sources enter the
+credit register even if the parent scene lists different sources. Long labels fail
+preflight rather than shrinking to fit. `templates/timeline.json` is a placeholder
+starter, not a historical example.
 
-### Focused chronology
+### Chronology
 
-Set `timeline.layout` to `"focus"` to travel along the axis with one active
-event at a time. The default `"overview"` layout above is unchanged. Primary
-event years and their speech cues must both increase strictly. An optional
-`overview_at` cue, after the final event, pulls back to all dated names while
-hiding the contextual cards. Without that cue, focus lasts to the scene's end.
+A chronology is a band laid over its map: the active year large, then the rail with every
+event, one event active at a time. `timeline.layout` must be `"focus"` and `timeline.background`
+is required: it accepts the full map contract below (points, routes, territories, country
+highlights and camera keys, each with its own evidence and local reveal/expiry cues), and it
+fills the whole frame. The retired overview layout, context cards, corner notes and `overview_at`
+were drawn on the dark panel and are refused with it.
 
-Each focused context item contains `event_year`, `lane`, `label`, `detail`,
-`at` and `evidence`. `lane` is `"regional"` or `"world"`, with at most one of
-each per primary event. `event_year` anchors the card to the main event;
-**it is not the context event's date**. Its own visible `evidence.period`
-can be a date, reign, century or explicitly uncertain interval. This allows
-contemporary context without claiming every event happened in the same year.
-The context cue must fall within its primary event's focused window. Cards
-disappear when the next main event or final overview starts. Their text is
-silent: the audio still comes exclusively from the approved narration file.
+Active features keep their period, status and schematic qualifiers in a visible legend. Their
+sources join the credits. The same geometry, licensing, overflow and overlap rules apply as in map
+scenes. A route remains an authored path, never an inferred historic journey. Features expire only
+at their explicit `until` cue. Preflight samples every event cue, feature reveal, fade, route
+completion and expiry; long copy fails instead of shrinking. Review the result at phone size for
+each date: the automatic scene midpoint alone cannot show every state of a single chronology.
 
-Set `context_layout: "corner"` for an optional upper-right marginal note,
-without colored cards. The default is `"cards"`. The latest context cue for
-the active event replaces the previous note; cues must be distinct. Its place
-label, detail and independent period remain visible together, in regular-weight
-secondary ink. A short fade introduces the note without moving it. The note's
-date sits immediately below its text; a short note does not leave a tall empty
-panel. The main title, evidence and focused date reserve the left column even
-when no note is shown, so their positions stay stable. Their narrower widths
-and the note itself are checked for overflow.
-
-Author note cues for reading time: simultaneous-card cues copied unchanged
-could replace the first note before it can be read. Changing this visual
-timing never edits or regenerates the approved narration. The note disappears
-when the next main event or final overview begins.
-
-An optional `background` accepts the full map contract below: points, routes,
-territories, country highlights and camera keys retain their own evidence and
-local reveal/expiry cues. Features or country highlights activate a dedicated
-map viewport below a compact chronological rail; the geography is not dimmed or painted underneath
-dates. Context must use `context_layout: "corner"` when geographic overlays are present,
-so cards cannot cover the map. Basemap-only plans retain the original layout.
-
-Active features keep their period, status and schematic qualifiers in a visible
-legend. Their sources join the credits. The same geometry, licensing, overflow
-and overlap rules apply as in map scenes. A route remains an authored path,
-never an inferred historic journey. Features expire only at their explicit
-`until` cue; date changes and the final overview do not silently hide them.
-A recap may deliberately show earlier dated features together. Preflight also
-samples feature reveal, fade, route completion and expiry. Label offsets are
-pixels within the shorter map viewport and may need adjustment when reusing a
-map scene. Review the result at phone size, including the overview.
-
-The focus layout keeps two or three main events, a non-proportional spacing
-notice, fixed mobile type sizes and optional video progress. Reduced-motion
-mode preserves the same cues but removes the rail, card and camera movement.
-Preflight samples reveal cues, transitions, the final overview and camera
-keys; long copy fails instead of shrinking. Review additional 360px frames
-for each date: the automatic scene midpoint alone cannot show every state
-of a single continuous chronology.
-
-The `document` layout keeps the complete source image (no crop), checks the
-same enlargement ceiling, and pairs it with a short label and explanation.
-A portrait illustrates its subject; it is not evidence that a depicted meeting
-or scene occurred. Identify the actual edition/date, not an assumed book cover.
+A portrait illustrates its subject; it is not evidence that a depicted meeting or scene occurred.
+Identify the actual edition/date of an archival image, not an assumed book cover. An archival
+document is an `image` scene with `fit: "contain"`, which keeps the whole source image (no crop)
+over a blurred, dimmed cover of itself.
 
 Image zoom is bounded from 1 to 1.25 and enlargement by the existing ×2 ceiling.
 `contain` preserves a whole document and does not zoom; `cover` explicitly
@@ -374,13 +334,15 @@ outside the camera. A crowded legend fails instead of hiding uncertainty.
 
 A `kinetic` scene is text that follows the narration : the scene's `title` is the card's header and
 `kinetic.lines` (one to four) arrive one after another from top to bottom, each on the word that
-says it. It is the sober alternative to a `text` scene (static) or a `comparison` scene (its items
-appear at once).
+says it. It is the sober alternative to a `comparison` scene (its items appear at once). Like a
+`comparison`, it carries a required **`backdrop`** (exactly one `{"image": …}` or `{"map": …}`, see
+« Overlays »): the lines are drawn over that picture, never on a plain ground.
 
 ```json
 {
   "type": "kinetic",
   "title": "Pour retenir",
+  "backdrop": { "image": { "asset": "photo", "fit": "cover" } },
   "kinetic": {
     "lines": [
       {
@@ -412,10 +374,10 @@ appear at once).
   its arrival, and settled.
 - The lines start at y = 540, 200 px apart, so four of them end above the caption band and the
   interface zone (nothing is drawn below y = 1300).
-- In the panel layout the title is drawn by the frame, as for every other scene. In the full-frame
-  layout the scene stands on the plain night ground : the title is the header at the top (white,
-  not the low-left title slot) and the lines are laid on **after** the shading, so the gradients never
-  dim them ; a dissolve into or out of a kinetic scene fades its lines apart from the ground.
+- The title is the header at the top (white, not the low-left title slot). The band the lines
+  occupy carries its own scrim over the backdrop (`KINETIC_SCRIM`), ramped in and out, and the lines
+  are laid on **after** the shading, so the gradients never dim them ; a dissolve into or out of a
+  kinetic scene fades its lines apart from the picture.
 - The renderer draws the card ; nothing here writes the words. Which lines, which cue and which word
   is the accent stay the planner's editorial choices, with their evidence like any scene.
 
@@ -428,15 +390,14 @@ Three optional root fields. A plan without them renders exactly as before.
 - `"outro": true` — the approved social-networks outro (`outro-reseaux-sociaux.mp4`, 5 s, hash
   checked) is appended where the narration ends, on the frame grid of the last caption (legacy
   §9 bis). The export, its checks and the replay fingerprint account for the longer video.
-- `"layout": "fullbleed"` — the legacy film's grammar instead of the dark panel: the picture or
-  the map fills the 1080×1920 frame; shading carries a top label, the title low on the left, the
-  narration in a translucent box, and the credits. Only `map`, `image`, `timeline`, `comparison` and
-  `kinetic` scenes are allowed (a `comparison` is an overlay, below); a timeline must be a `focus`
-  chronology with no context cards and is drawn as a band over its map. Maps use a light warm
-  palette. Images drift at most 5 % (the legacy film uses 3.5 %) unless they carry a camera of
-  `keys` (below); a photo that cannot fill the frame under the enlargement ceiling (`fit: "contain"`)
-  sits over a dimmed, blurred cover of itself. Legend lines that share period and status are
-  merged into one, so a dozen countries fit.
+- `"layout": "fullbleed"` — the only layout, and the default: the picture or the map fills the
+  1080×1920 frame; shading carries a top label, the title low on the left, the narration in a
+  translucent box, and the credits. Only `map`, `image`, `timeline`, `comparison`, `kinetic` and `clip`
+  scenes are allowed (a `comparison` is an overlay, below); a timeline is a chronology band over its map
+  (see « Chronology »). Maps use a light warm palette. Images drift at most 5 % (the legacy film uses
+  3.5 %) unless they carry a camera of `keys` (below); a photo that cannot fill the frame under the
+  enlargement ceiling (`fit: "contain"`) sits over a dimmed, blurred cover of itself. Legend lines that
+  share period and status are merged into one, so a dozen countries fit.
 
 Image motion is resampled from a fractional source window (Lanczos), so slow zooms and pans do
 not stair-step; a feature at the zoom centre stays within 0.2 px.
@@ -457,7 +418,7 @@ Map additions, all validated and all requiring evidence like every other feature
   labelled for what it counts (a people's estimated population is not a speaker count).
 - `flag_orientation: "horizontal"` (with `flag_stripes`, on a point or a country) draws three
   horizontal stripes instead of vertical ones. Flags are simplified stripes: no star, no emblem.
-- In the full-frame layout the caption is plain text with a drop shadow on the shading, not on a
+- The caption is plain text with a drop shadow on the shading, not on a
   plate, revealed word by word (see _Captions: word by word_). The shading starts at 900 px so the map
   stays clear above it; a caption that has risen out of the low band relies on its shadow alone.
 - A timeline event may carry `display` (for example « XIIe siècle ») when the sources give only a
@@ -467,10 +428,10 @@ Map additions, all validated and all requiring evidence like every other feature
 
 Words are drawn over the frame, never on a black screen, and they move with the narration.
 
-A `comparison` scene in the full-frame layout carries a **`backdrop`**: exactly one `{"image": …}` or
+A `comparison` or `kinetic` scene carries a **`backdrop`**: exactly one `{"image": …}` or
 `{"map": …}`, validated like an `image` or `map` scene (the map may be a relief globe, with its
-camera, features, legend and credits). The panel layout refuses a `backdrop`, and the full-frame layout
-refuses a `comparison` without one. The scene's `title` is the concept and heads the frame at the top
+camera, features, legend and credits). Any other scene refuses a `backdrop`, and a `comparison` or
+`kinetic` scene without one is refused. The scene's `title` is the concept and heads the frame at the top
 (every other full-frame scene keeps its title low on the left). Two to five `{label, body, at}` items
 sit below it, each on a translucent plate: `label` in the pair-term role, `body` in the body role.
 An item arrives at its `at` (local seconds) by rising a few pixels and fading in over the charter's
@@ -528,9 +489,8 @@ as « no emphasis ». A scene without `emphasis` accents nothing.
 decided **per scene, not per frame**: every group of a scene shares one baseline, so the caption does not jump while
 the camera moves. Where the low band is taken, the group rises to the lowest clear place. What is kept clear:
 
-- always: the header (y < 260) and, in the full-frame layout, the scene's own title (low left) — or, for `kinetic`,
-  `comparison` and `timeline` scenes, everything between the header and the overlay bottom (y 1330), which the scene
-  owns; in the panel layout, everything above the legend (y 1332);
+- always: the header (y < 260) and the scene's own title (low left) — or, for `kinetic`, `comparison` and
+  `timeline` scenes, everything between the header and the overlay bottom (y 1330), which the scene owns;
 - a full-frame map's subject: each highlighted country and each active feature (country, point, route, territory,
   presence zone) projected through the same camera as the map, with its label, sampled across the scene and padded
   by 40 px; and the picture inserts a map scene may show;
@@ -549,7 +509,7 @@ A change of runtime changes the handoff identity: a lock prepared before this en
 
 ## Editorial profiles and handoff
 
-Profiles concern the argument, not the rendering technology. Map/image/text
+Profiles concern the argument, not the rendering technology. Map/image/comparison/kinetic
 scenes can be combined in any profile. `coverage: complete` requires these beats
 to be present (it does not certify their quality or source accuracy):
 
@@ -557,8 +517,8 @@ Copy a starter from `templates/name-origin.json`, `templates/history-geography.j
 `templates/thematic-analysis.json` or `templates/free.json` into the private
 workshop. They intentionally **fail validation** until real timings, hashes,
 approved copy and sources replace their placeholders. No fictional durations or
-historical facts are supplied as defaults. Replace any starter text scene with
-one of the supported scene types using the content contract above; the private
+historical facts are supplied as defaults. Each starter scene is an `image` placeholder with a
+full-frame image asset to name; replace it with any supported scene type using the content contract above; the private
 mixed-scene demonstration is a filled working example.
 
 | Profile             | Required beats                                                   | Typical visual choices                                              |
@@ -623,8 +583,8 @@ exactly as before (the legacy audio path is untouched).
   block), retimed `words` and `captions`, and `timeline.windows[]` (`start`, `clip_start`, `clip_end`,
   `end`, `at`, `in`, `out`, `has_video`). Scenes are written against this master time and must
   cover it. Other callers of `validate_plan` pass `source.get("timeline")` as the fourth argument.
-- **`clip` scene** (panel layout only): shows the insertion's picture, decoded at 25 fps, first frame
-  held through `silence_before`, last frame through `silence_after`. The scene window must contain the
+- **`clip` scene**: shows the insertion's picture full frame (`fit: "contain"` holds it whole over a
+  blurred, dimmed cover of itself), decoded at 25 fps, first frame held through `silence_before`, last frame through `silence_after`. The scene window must contain the
   whole excerpt, and a transition into it must finish before the excerpt's sound starts. An
   audio-only insertion is covered by any other scene type; its credit is drawn on screen while it plays.
 - **`bed`** (optional): never looped or padded — it must last the film from its `in`. It is

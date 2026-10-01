@@ -106,10 +106,41 @@ COLONNE_ARRETS = ((0.00, 0.92), (0.40, 0.94), (1.00, 0.95))
 # rule asks 4,5:1: five points of contrast spent darkening something already
 # dark, and the photograph lost behind its own caption. The scrim is solved per
 # card and per format instead, between these bounds.
-VOILE_PLANCHER = 0.55     # a scrim lighter than this stops being a ground at all
+VOILE_PLANCHER = 0.0      # no floor: the scrim is the lightest that carries the ink, never a ground
 VOILE_PLAFOND = 0.95      # the old constant, kept as the ceiling
 VOILE_MARGE = 1.12        # aim past the threshold: JPEG noise and anti-aliasing
 VOILE_PERCENTILE = 92     # protect the bright tail of the region, never its mean
+
+# §4 — **the veil follows the picture** (operator ruling, 2026-10-01: « texte sombre sur
+# voile clair pour les images claires »). Light ink over a night veil is right for a dark
+# picture; over a pale scan it made the lower half of the card a near-black panel. So the
+# ink and the veil are chosen together, per card, from the picture under the text:
+#
+#   - the median relative luminance (WCAG Y, linear) of the pixels under the text blocks
+#     is at or above LUMINANCE_CLAIRE → parchment veil, dark ink;
+#   - below it → night veil, light ink (the former behaviour, solved per card).
+#
+# 0,35 sits in the measured gap. Bleek deck, region under the text: the three landscapes
+# and the portrait read 0,16 to 0,29; the five scanned pages 0,88 to 1,00. Dark ink on a bare
+# 0,35 already clears 4,5:1 (light ink would need a veil of about 0,6 there, a dark plate
+# again), so the switch is not a matter of taste above it.
+LUMINANCE_CLAIRE = 0.35
+
+# §4 — the light veil's ceiling. Dark ink over a dark printed line cannot be carried by a
+# thin veil, so the solve is allowed to climb — but 0,88 leaves an eighth of the picture
+# under every pixel of the column. Higher, and the veil is an opaque cream plate, the same
+# defect as the dark one turned over. There is no floor: a pale ground that already
+# carries the ink gets no veil at all.
+VOILE_CLAIR_PLAFOND = 0.88
+
+# §4 — the contrast against the darkest pixel is not enough on a printed page. Measured on
+# the Bleek proof, 2026-10-01: a veil that held 4,5:1 over the darkest line of a scan still
+# left the page's own type legible through it, and the card's body text ran across it. So the
+# light veil also has to flatten the picture under the text: its dark tail and its light tail
+# may differ by at most this ratio once veiled. 1,6:1 leaves the page a visible ghost and
+# takes the text out of competition.
+TEXTURE_CLAIR_MAX = 1.35
+VOILE_CLAIR_CENTILE = 3    # printed type is a few per cent of a page: the 8th centile missed it
 
 # §4 — the two thresholds, and which blocks answer to the looser one.
 SEUIL_AFFICHAGE = 3.0
@@ -222,6 +253,9 @@ class Plan:
     # banded layouts are defined by would otherwise stop being observable, and the
     # tests that hold them to 37 % and 49 % would pass against anything.
     ancre: float = 1.0
+    # The ink and veil family the picture asked for: "nuit" (light ink, dark veil) or
+    # "parchemin" (dark ink, light veil). Empty on a plan nobody has decided for.
+    theme: str = ""
 
     def bloc(self, nom):
         return next((b for b in self.blocs if b.nom == nom), None)
@@ -396,7 +430,11 @@ def _encre(deck, rang):
     if _theme(deck) == "nuit":
         return tk.color({1: "--afh-night-ink", 2: "--afh-night-ink-2",
                          3: "--afh-night-ink-3"}[rang])
-    return tk.color("--afh-color-text" if rang == 1 else "--afh-color-text-soft")
+    # Ink 2 is the same dark ink as ink 1: text-soft (#746557) measures 4,3:1 over a veil
+    # that lets a printed line through, under the 4,5:1 the body and the credit answer to.
+    # The hierarchy is carried by size, weight and the annexe's opacity. Ink 3 is the
+    # watermark's and is not text.
+    return tk.color("--afh-color-text-soft" if rang == 3 else "--afh-color-text")
 
 
 def _accent(deck):
@@ -548,12 +586,66 @@ def colonne_A_tient(carte, deck, fmt_key, *, image):
 # ------------------------------------------------------------------ the plan
 
 
+def _exiger_image(image):
+    """There is no dark, plain or solid-colour card: the photograph is the card's ground.
+
+    The canvas under the image is painted in the deck's ink colour only so that the scrims have a
+    colour to mix toward; it is never visible, because the image covers the frame in every layout.
+    A card without an image would show it, so the card is refused instead.
+    """
+    if image is None:
+        raise ValueError("a card needs a full-frame image: there is no dark, plain or "
+                         "solid-colour background to fall back on")
+
+
+def _luminance_sous_le_texte(p, carte, image):
+    """Median relative luminance of the drawn picture under the plan's text blocks.
+
+    None when no block carries text. The drawn picture is the cover-cropped one the
+    painter pastes, never the source file: a crop can move a pale page out of the column.
+    """
+    bande = p.bloc("bande-image")
+    boites = [b for b in p.blocs if b.texte and getattr(b, "couleur", None)]
+    if bande is None or not boites:
+        return None
+    dessine = _couvrir(image.convert("RGB"), bande.w, bande.h,
+                       carte.get("image", {}).get("cadrage", "50% 50%"))
+    pixels = np.asarray(dessine, dtype=float) / 255
+    lineaire = np.where(pixels <= 0.04045, pixels / 12.92, ((pixels + 0.055) / 1.055) ** 2.4)
+    y = lineaire @ np.array([0.2126, 0.7152, 0.0722])
+    zones = [y[max(0, b.y):b.y + max(b.h, 1), max(0, b.x):b.x + max(b.w, 1)].ravel()
+             for b in boites]
+    return float(np.median(np.concatenate(zones)))
+
+
 def plan(carte, deck, fmt_key, *, image, sous_titre=False, disposition=None):
+    """Geometry, and the ink and veil family the picture asks for.
+
+    The family is decided per card from the picture under the text (§4): a light
+    picture takes dark ink on a light veil, anything else light ink on a night veil.
+    Geometry does not depend on it, so a card that flips is planned a second time with
+    the layout the first pass chose, and only its colours differ.
+    """
+    p = _plan(carte, deck, fmt_key, image=image, sous_titre=sous_titre,
+              disposition=disposition)
+    y = _luminance_sous_le_texte(p, carte, image)
+    theme = "parchemin" if y is not None and y >= LUMINANCE_CLAIRE else "nuit"
+    if theme != _theme(deck):
+        ecart = p.ecart_regle
+        p = _plan(carte, dict(deck, fond=theme), fmt_key, image=image,
+                  sous_titre=sous_titre, disposition=p.disposition)
+        p.ecart_regle = ecart
+    p.theme = theme
+    return p
+
+
+def _plan(carte, deck, fmt_key, *, image, sous_titre=False, disposition=None):
     """Geometry only. Nothing is drawn, so everything can be asserted.
 
     `disposition` forces a layout without consulting §6 at all. The fit trial §6
     runs is itself a plan, so without this the rule would call itself.
     """
+    _exiger_image(image)
     cadre = tk.fmt(fmt_key)
     W, H, k = cadre["w"], cadre["h"], cadre["k"]
 
@@ -1140,8 +1232,12 @@ def _entete(carte, deck, fmt_key, largeur):
                           _encre(deck, 1), t["corps"], t["face"], t["graisse"],
                           (serie,), 1.3))
 
+    # The rank is small text held to 4,5:1. The parchment-family accent inks top out
+    # near 4,4:1 on the lightest ground, so on a light picture the rank takes ink 1 —
+    # the accent stays in the display type, where the threshold is 3:1.
+    encre_rang = _accent(deck) if _theme(deck) == "nuit" else _encre(deck, 1)
     blocs.append(Bloc("entete-rang", largeur - rang_w, 0, rang_w, haut, rang_txt,
-                      _accent(deck), tr["corps"], tr["face"], tr["graisse"],
+                      encre_rang, tr["corps"], tr["face"], tr["graisse"],
                       (rang_txt,), 1.3))
     return blocs
 
@@ -1409,6 +1505,7 @@ def plan_video(carte, deck, *, image, sous_titre=False):
     `sous_titre` only decides whether the narration slot is *filled*. The slot is
     reserved either way: an empty slot costs nothing and guarantees nothing moves.
     """
+    _exiger_image(image)
     W, H = 1080, 1920
     p = Plan(disposition="A")
     role = carte.get("role")
@@ -1889,7 +1986,7 @@ def composer(carte, deck, fmt_key, *, image, sous_titre=False, epreuve=None,
                     texte=True, epreuve=epreuve, instant=instant, duree=duree)
 
 
-def _alpha_pour_bloc(zone, couleur, seuil, base):
+def _alpha_pour_bloc(zone, couleur, seuil, base, clair=False):
     """§4 — the lightest alpha that carries `couleur` to `seuil` over these pixels.
 
     Solved by bisection rather than read from a table, because the answer depends
@@ -1905,7 +2002,11 @@ def _alpha_pour_bloc(zone, couleur, seuil, base):
     plats = zone.reshape(-1, 3)
     if not len(plats):
         return VOILE_PLANCHER
-    vif = np.percentile(plats, VOILE_PERCENTILE, axis=0)
+    # Dark ink on a light veil is the mirror case: what threatens it is the darkest
+    # tail of the region — a printed line — so that is the sample, and the ground has
+    # to stay lighter than the ink.
+    vif = np.percentile(plats, VOILE_CLAIR_CENTILE if clair else VOILE_PERCENTILE, axis=0)
+    pale = np.percentile(plats, VOILE_PERCENTILE, axis=0)
     lum_encre = _luminance(_rgb(couleur))
     vise = seuil * VOILE_MARGE
 
@@ -1913,19 +2014,24 @@ def _alpha_pour_bloc(zone, couleur, seuil, base):
     for _ in range(24):
         a = (bas + haut) / 2
         lum_fond = _luminance(tuple(vif[i] * (1 - a) + base[i] * a for i in range(3)))
-        tient = lum_fond <= lum_encre and (lum_encre + 0.05) / (lum_fond + 0.05) >= vise
+        bon_cote = lum_fond >= lum_encre if clair else lum_fond <= lum_encre
+        if clair:
+            lum_haut = _luminance(tuple(pale[i] * (1 - a) + base[i] * a for i in range(3)))
+            bon_cote = bon_cote and (lum_haut + 0.05) / (lum_fond + 0.05) <= TEXTURE_CLAIR_MAX
+        tient = bon_cote and (max(lum_fond, lum_encre) + 0.05) / (min(lum_fond, lum_encre) + 0.05) >= vise
         bas, haut = (bas, a) if tient else (a, haut)
     return haut
 
 
-def _besoin(im, blocs, base, seuil_de):
+def _besoin(im, blocs, base, seuil_de, clair=False):
     """The heaviest alpha any of these blocks asks for, over the drawn image."""
+    plafond = VOILE_CLAIR_PLAFOND if clair else VOILE_PLAFOND
     pixels = np.asarray(im.convert("RGB"), dtype=float)
     besoin = VOILE_PLANCHER
     for b in blocs:
         zone = pixels[max(0, b.y):b.y + max(b.h, 1), max(0, b.x):b.x + max(b.w, 1)]
-        besoin = max(besoin, _alpha_pour_bloc(zone, b.couleur, seuil_de(b), base))
-    return min(VOILE_PLAFOND, max(VOILE_PLANCHER, besoin))
+        besoin = max(besoin, _alpha_pour_bloc(zone, b.couleur, seuil_de(b), base, clair))
+    return min(plafond, max(VOILE_PLANCHER, besoin))
 
 
 def _seuil(bloc):
@@ -1939,10 +2045,12 @@ def _voile_resolu(im, p, deck, page=False):
     Returns the old constants untouched when there is no column, so a layout that
     never had one cannot be changed by accident.
 
-    `page` is a near-white ground, a scan or a cutout. The solve protects the
-    brightest pixels, which on a page is the paper: it met the contrast and let the
-    printed lines through, dark on dark, across the title. A page takes the
-    ceiling — the solve has nothing to say about what is drawn on it.
+    `page` is a near-white ground, a scan or a cutout, under light ink. The solve
+    protects the brightest pixels, which on a page is the paper: it met the contrast
+    and let the printed lines through, dark on dark, across the title. A page takes
+    the ceiling — the solve has nothing to say about what is drawn on it. That only
+    arises on the night family; a light picture takes dark ink and a light veil,
+    solved against its darkest tail, and never needs the ceiling.
 
     The ramp is scaled by the same factor rather than resolved on its own. §4
     requires it to end exactly where the flat begins; solved separately the two
@@ -1953,13 +2061,16 @@ def _voile_resolu(im, p, deck, page=False):
         return COLONNE_ARRETS, RAMPE_ARRETS
 
     base = _rgb(_fond(deck))
+    clair = _theme(deck) == "parchemin"
+    plafond = VOILE_CLAIR_PLAFOND if clair else VOILE_PLAFOND
     concernes = [b for b in p.blocs
                  if b.texte and getattr(b, "couleur", None)
                  and not b.nom.startswith("entete-")
                  and b.y + b.h > colonne.y]
-    plat = VOILE_PLAFOND if page else _besoin(im, concernes, base, _seuil)
+    plat = (VOILE_PLAFOND if page and not clair
+            else _besoin(im, concernes, base, _seuil, clair))
 
-    monte = lambda d: min(VOILE_PLAFOND, round(plat + d, 4))  # noqa: E731
+    monte = lambda d: min(plafond, round(plat + d, 4))  # noqa: E731
     colonne_arrets = ((0.00, plat), (0.40, monte(0.02)), (1.00, monte(0.03)))
     facteur = plat / COLONNE_ARRETS[0][1]
     rampe_arrets = tuple((pos, round(a * facteur, 4)) for pos, a in RAMPE_ARRETS)
@@ -1972,7 +2083,8 @@ def _alpha_bandeau(im, plaque, p, deck):
               if b.texte and getattr(b, "couleur", None) and b.nom.startswith("entete-")]
     if not entete:
         return COLONNE_ARRETS[0][1]
-    return _besoin(im, entete, _rgb(_fond(deck)), lambda _b: SEUIL_COURANT)
+    return _besoin(im, entete, _rgb(_fond(deck)), lambda _b: SEUIL_COURANT,
+                   _theme(deck) == "parchemin")
 
 
 def _peindre(carte, deck, fmt_key, *, image, sous_titre, texte, epreuve=None,
@@ -1981,6 +2093,10 @@ def _peindre(carte, deck, fmt_key, *, image, sous_titre, texte, epreuve=None,
         carte, deck, fmt_key, image=image, sous_titre=sous_titre)
     if duree:
         cadencer(p, duree)
+    # From here on the deck is the card's own: the plan recorded which family the picture
+    # asked for, and the scrim, the ink mixes and the proof box all follow it.
+    if p.theme:
+        deck = dict(deck, fond=p.theme)
     cadre = tk.fmt(fmt_key)
     W, H = cadre["w"], cadre["h"]
     base = _rgb(_fond(deck))
@@ -2119,7 +2235,7 @@ def _tamponner_epreuve(im, manquantes, deck, p):
     de = ImageDraw.Draw(encart)
     for i, ligne in enumerate(lignes):
         de.text((32, 16 + pas * i), ligne, font=fp,
-                fill=tk.color("--afh-night-ink" if i == 0 else "--afh-night-ink-2"))
+                fill=_encre(deck, 1 if i == 0 else 2))
     # Above the foot, never over it. The credit is what has to be read to clear
     # the gate that produced this proof in the first place.
     pied_haut = min((b.y for b in p.blocs if b.nom.startswith("credit")), default=H)

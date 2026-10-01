@@ -95,7 +95,7 @@ recording and paid-generation approval requirements continue to apply.
 
 For a new prepared package, run `ethni_scene_pipeline.py prepare` with its plan,
 new named lock and private proof output. Inspect the cue preview index at phone
-size, including route reveals, each timeline date and the final overview. The lock
+size, including route reveals and each timeline date. The lock
 records technical identity and sampled pixels; it is not editorial approval.
 If the brief authorizes production and the unchanged script/voice are approved,
 continue without another generic permission request.
@@ -232,6 +232,11 @@ le suffixe `-epreuve`.
 
 Tout vient de `docs/design/gabarits-social/GABARITS-SOCIAL.md` :
 
+- **§0.7, l'image plein cadre.** Every carousel card and every reel scene has a
+  full-frame image background; there is no dark, plain or solid-colour background mode.
+  Une carte ou une scène sans image échoue au rendu, avec un message clair : ne la
+  « répare » jamais avec un fond uni, sombre ou de couleur, rends-la à `structure`.
+
 - **§6, la règle de choix de disposition.** `auto` mesure et choisit. Le repli sur
   résolution est la règle la plus importante du lot : une image de 900 px en
   plein cadre 1080 × 1920 est agrandie ×3,6, le document devient une texture et
@@ -243,6 +248,12 @@ Tout vient de `docs/design/gabarits-social/GABARITS-SOCIAL.md` :
 
 Le contraste se **mesure sur les pixels réels sous le voile**, pas s'estime. Le
 halo de texte aide la perception et ne compte pas dans le calcul.
+
+**Sur une image claire, le voile est clair et l'encre sombre ; sur une image sombre,
+l'encre est claire. Il n'y a jamais de plaque sombre sur une image claire.** Le moteur
+choisit par carte (`GABARITS-SOCIAL.md` §4) ; un lot ne déclare rien. Une épreuve d'un
+carrousel dont une page de livre garde un bas de carte noir est un défaut du moteur, pas
+du lot.
 
 ## Où sont les valeurs
 

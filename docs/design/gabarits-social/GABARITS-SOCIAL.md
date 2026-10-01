@@ -30,6 +30,16 @@ only for this series; the general machine-readable format matrix is unchanged.
 5. **Le crédit et la licence sont dans le cadre visible**, jamais sous l'interface
    de la plateforme.
 6. **Aucune image agrandie plus de ×2.** Au-delà, on change de gabarit (§7).
+7. **Every carousel card and every reel scene has a full-frame image background; there is
+   no dark, plain or solid-colour background mode** (operator ruling, 2026-09-30). The
+   photograph *is* the card: the engine refuses a card or a scene that has no image
+   instead of painting a ground, and no session may rely on a « fond sombre », « fond de
+   nuit » or « aplat » to carry a card. What sits over the photograph is a legibility
+   scrim (§4), the lightest one that holds the ink — a veil, never a background.
+   **On a light image the veil is light and the ink dark; on a dark image the ink is
+   light. There is never a dark plate over a light image** (operator ruling,
+   2026-10-01). The engine chooses per card from the picture under the text (§4,
+   « Le voile suit l'image »).
 
 ---
 
@@ -214,6 +224,16 @@ mots et le refus de réduire le titre s'appliquent comme avant.
 ---
 
 ## 2. Couleurs — jetons de la charte, jamais de littéral
+
+> **Un thème n'est pas un fond.** « Nuit » et « parchemin » nomment l'encre du texte et la
+> teinte du voile posé sur la photographie (clé `fond` du `cards.json`, gardée telle
+> quelle pour que les lots existants se relisent). Aucun des deux ne se voit là où il n'y a
+> pas de texte : derrière eux il y a toujours l'image plein cadre (§0.7). Dans les tables
+> ci-dessous, la ligne « Fond » est la teinte vers laquelle le voile se mélange.
+> **Sur un carrousel, le thème n'est plus choisi par le lot mais par l'image** : chaque
+> carte prend « nuit » (encre claire, voile sombre) sur une image sombre ou moyenne,
+> « parchemin » (encre sombre, voile clair) sur une image claire (§4). La clé `fond` du
+> lot n'y change rien.
 
 ### Thème nuit (défaut)
 
@@ -498,7 +518,45 @@ son excursion rester sous 25 niveaux. **Ce contrôle ne porte que sur A.**
 > sujet. Le contrôle qui remplace la monotonie est donc celui de la vidéo — **aucun
 > bloc de texte ne tombe dans la trouée**.
 
+### Le voile suit l'image — encre claire sur image sombre, encre sombre sur image claire
+
+**Sur une image claire, le voile est clair et l'encre est sombre ; sur une image
+sombre, l'encre est claire. Il n'y a jamais de plaque sombre sur une image claire.**
+Décision de l'opérateur, 2026-10-01, devant l'épreuve du carrousel Bleek : cinq cartes
+posées sur des pages de livre numérisées avaient encore la moitié basse presque noire,
+parce que l'encre était toujours claire et que le voile l'était donc toujours sombre.
+
+Le moteur décide **par carte**, sur l'image réellement dessinée :
+
+| | |
+| --- | --- |
+| Mesure | la **luminance relative médiane** (WCAG, linéaire) des pixels sous les blocs de texte |
+| Seuil | **0,35** (`LUMINANCE_CLAIRE`). Mesuré sur le lot Bleek : paysages et portrait 0,16 à 0,29, pages numérisées 0,88 à 1,00 |
+| En dessous | encre claire, voile de nuit résolu comme ci-dessous (inchangé) |
+| Au seuil et au-dessus | **encre sombre** (`--afh-color-text`), voile **parchemin** (`--afh-color-bg`) |
+| Échantillon | le **3ᵉ centile** de la zone — la ligne imprimée la plus sombre, que l'encre sombre ne doit jamais croiser (le 8ᵉ la manquait : le texte imprimé d'une page n'en est que quelques pour cent) |
+| Aplatissement | une fois voilées, la queue sombre et la queue claire de la zone ne diffèrent pas de plus de **1,35:1** (`TEXTURE_CLAIR_MAX`). Mesuré sur l'épreuve Bleek : un voile qui tenait 4,5:1 sous la ligne la plus sombre laissait encore lire la page numérisée *à travers* le corps du texte |
+| Plancher | aucun : un fond pâle qui porte déjà l'encre ne reçoit aucun voile |
+| Plafond | **0,88** (`VOILE_CLAIR_PLAFOND`) : un huitième de l'image reste sous chaque pixel de la colonne (la page fantôme reste visible) ; au-delà, le voile est une plaque crème opaque, le même défaut retourné. Il était 0,80 dans un premier essai, qui laissait le corps traverser le texte de la page |
+
+Pourquoi 0,35 et pas plus haut : à cette luminance l'encre sombre passe déjà 4,5:1 sans
+voile, alors que l'encre claire en demanderait un d'environ 0,6 — une plaque sombre de
+nouveau. Entre 0,16 et 0,35 la carte garde l'encre claire et le voile de nuit résolu. L'encre 2 prend la même encre sombre que
+l'encre 1 sur le voile clair (`#746557` mesure 4,3:1 sous une ligne imprimée, en dessous
+des 4,5:1 du corps et du crédit) ; le rang de la carte passe aussi en encre 1, les
+encres d'accent du thème parchemin plafonnant vers 4,4:1. La hiérarchie tient à la
+taille, à la graisse et à l'opacité de l'annexe. Tout le texte de la carte suit —
+titre, précision, corps, source, crédit, compteur, marque. Les seuils ne bougent pas :
+3:1 pour l'affichage, 4,5:1 pour le reste, mesurés sur les pixels réels.
+
+La vignette d'épreuve (le bandeau rouge et l'encart « Portes non franchies ») suit la
+carte : l'encart prend la teinte et l'encre de la famille choisie, il n'est donc jamais
+le bloc sombre d'une image claire. Les **reels** ne suivent pas encore cette règle
+(`V_PLAQUE_ARRETS`, `V_VOILE_ARRETS` : plaque et voile nocturnes fixes, 0,93 à 0,95).
+
 ### Le voile se résout, il ne se règle pas
+
+*(Cette section décrit la famille de nuit : encre claire sur voile sombre.)*
 
 **L'alpha n'est plus une constante, et la table ci-dessous est devenu son plafond.**
 
@@ -514,13 +572,13 @@ petit alpha qui porte chaque texte à son seuil :
 | --- | --- |
 | Cible | le seuil du bloc × **1,12** — la marge absorbe le bruit JPEG et l'anticrénelage |
 | Échantillon | le **92ᵉ centile** de la zone, jamais sa moyenne |
-| Plancher | **0,55** |
+| Plancher | **aucun** — le voile le plus léger qui tient l'encre, jamais un fond (2026-09-30 ; il était 0,55) |
 | Plafond | **0,95**, la valeur de la table |
 
 **L'échantillon est un centile haut et c'est le cœur de la règle.** Une légende qui
 traverse une seule branche ensoleillée échoue sur cette branche, et une moyenne la
-cache. Sur une gravure pâle la résolution remonte d'elle-même vers le plafond, sans que
-personne ait à y penser.
+cache. Sur un ton moyen la résolution monte vers le plafond ; au-delà du seuil de 0,35,
+la carte change de famille et ce plafond n'est plus donné à aucune image.
 
 **Le prédicat est une conjonction, et il faut qu'il le reste :** « le fond est plus
 sombre que l'encre **et** le rapport franchit le seuil ». Sans sa première moitié le
@@ -634,7 +692,7 @@ dans le calcul de contraste : c'est le voile qui doit atteindre 4,5:1.
 > bande et le pied épinglé, pour chaque disposition × format × forme de paire. Une
 > assertion sur le pied ne suffit pas : le bloc peut être correctement épinglé à 1266
 > tandis que ses enfants débordent à 1436 sans que rien ne le signale.
-- Aplat de fond en dessous, texte dedans : titre Anton 110–124 → précision 34–38 →
+- Texte sur le voile, l'image dessous : titre Anton 110–124 → précision 34–38 →
   filet supérieur 2 px `rgba(232,185,106,.35)` → corps 42–46 / 800.
 - Crédit + logo épinglés en bas.
 - **C absorbe la différence de hauteur entre 4:5 et 9:16** : l'ancre garde sa

@@ -237,13 +237,6 @@ class PlacementTests(CaptionFixture):
             with self.assertRaises(ValueError, msg=repr(bad)):
                 validate_plan(plan, self.root, 10)
 
-    def test_a_map_in_the_panel_layout_is_not_covered(self):
-        renderer, bare = self.renderer(spoken=timed(start=1.0)), self.bare()
-        panel = (45, 480, 1035, 1170)
-        for group in captions.layout(renderer):
-            self.assertFalse(overlaps(group["box"], panel))
-        self.assertEqual(ink(renderer.render(2.5), bare.render(2.5), panel).sum(), 0)
-
     def test_a_scene_overlay_keeps_its_items_uncovered(self):
         plan = self.fullbleed()
         scene = plan["scenes"][1]
@@ -313,12 +306,6 @@ class HighlightedCountryTests(GlobeSceneCase):
         validate_plan(self.plan, self.root, 10)
         renderer, _ = self.renderers(timed("Onze villes du Congo portaient le nom d'un Belge, et personne ne le disait.", step=.3))
         self.assertEqual(len({round(g["box"][3]) for g in captions.layout(renderer)}), 1)
-
-    def test_the_caption_avoids_a_country_in_the_panel_layout_by_staying_below_the_map(self):
-        self.plan_with_country(layout="panel")
-        renderer, _ = self.renderers(timed(start=1.0))
-        for group in captions.layout(renderer):
-            self.assertGreaterEqual(group["box"][1], 1170)
 
 
 if __name__ == "__main__":

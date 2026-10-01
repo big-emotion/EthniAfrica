@@ -22,11 +22,14 @@
   "scenes": [
     {
       "id": "01-question",
-      "type": "text",
+      "type": "image",
       "start": null,
       "end": null,
       "title": "REPLACE: visible title",
-      "text": "REPLACE: approved visible copy",
+      "image": {
+        "asset": "REPLACE: full-frame image asset id",
+        "fit": "cover"
+      },
       "purpose": "Explain the role of the question beat in this particular argument.",
       "beat": "question",
       "evidence": {
@@ -41,11 +44,14 @@
     },
     {
       "id": "02-context",
-      "type": "text",
+      "type": "image",
       "start": null,
       "end": null,
       "title": "REPLACE: visible title",
-      "text": "REPLACE: approved visible copy",
+      "image": {
+        "asset": "REPLACE: full-frame image asset id",
+        "fit": "cover"
+      },
       "purpose": "Explain the role of the context beat in this particular argument.",
       "beat": "context",
       "evidence": {
@@ -60,11 +66,14 @@
     },
     {
       "id": "03-evidence",
-      "type": "text",
+      "type": "image",
       "start": null,
       "end": null,
       "title": "REPLACE: visible title",
-      "text": "REPLACE: approved visible copy",
+      "image": {
+        "asset": "REPLACE: full-frame image asset id",
+        "fit": "cover"
+      },
       "purpose": "Explain the role of the evidence beat in this particular argument.",
       "beat": "evidence",
       "evidence": {
@@ -79,11 +88,14 @@
     },
     {
       "id": "04-evolution",
-      "type": "text",
+      "type": "image",
       "start": null,
       "end": null,
       "title": "REPLACE: visible title",
-      "text": "REPLACE: approved visible copy",
+      "image": {
+        "asset": "REPLACE: full-frame image asset id",
+        "fit": "cover"
+      },
       "purpose": "Explain the role of the evolution beat in this particular argument.",
       "beat": "evolution",
       "evidence": {
@@ -98,11 +110,14 @@
     },
     {
       "id": "05-limits",
-      "type": "text",
+      "type": "image",
       "start": null,
       "end": null,
       "title": "REPLACE: visible title",
-      "text": "REPLACE: approved visible copy",
+      "image": {
+        "asset": "REPLACE: full-frame image asset id",
+        "fit": "cover"
+      },
       "purpose": "Explain the role of the limits beat in this particular argument.",
       "beat": "limits",
       "evidence": {
@@ -117,11 +132,14 @@
     },
     {
       "id": "06-closing",
-      "type": "text",
+      "type": "image",
       "start": null,
       "end": null,
       "title": "REPLACE: visible title",
-      "text": "REPLACE: approved visible copy",
+      "image": {
+        "asset": "REPLACE: full-frame image asset id",
+        "fit": "cover"
+      },
       "purpose": "Explain the role of the closing beat in this particular argument.",
       "beat": "closing",
       "evidence": {

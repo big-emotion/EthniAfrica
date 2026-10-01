@@ -411,6 +411,15 @@ accroche : signale-la à l'opérateur, ne la tranche pas.
 
 ## Le carrousel : un seul gabarit
 
+**Every carousel card and every reel scene has a full-frame image background; there is
+no dark, plain or solid-colour background mode** (operator ruling, 2026-09-30). Plan the
+picture of every card and every scene before its words: a card or a scene with no image
+is refused by the engine, never drawn on a « fond sombre » or « fond de nuit ». Les
+thèmes `nuit` et `parchemin` ne sont pas des fonds : ils règlent l'encre et la teinte du
+voile posé sur la photographie, et le moteur choisit l'un ou l'autre par carte selon
+l'image (image claire : voile clair, encre sombre ; image sombre : encre claire ; jamais
+de plaque sombre sur une image claire, `GABARITS-SOCIAL.md` §4).
+
 Cette section vaut pour le carrousel de la **série name-origin**. Un carrousel d'une
 autre famille suit la lecture de sa famille
 (`references/narrative-families.md`) : pas de mythe exigé, pas de clôture fixe, et
