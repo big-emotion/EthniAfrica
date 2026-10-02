@@ -330,6 +330,15 @@ def test_a_still_window_holds_the_frame_it_names_for_its_whole_length():
         assert abs(duration - 4.0) < 0.2
 
 
+def test_a_banner_line_never_starts_with_a_closing_mark_nor_ends_on_an_opening_one():
+    sentence = "Affirmation débattue : « Le racisme systémique sert d'excuse pour éviter la responsabilité personnelle. »"
+    for width in range(18, 60):
+        lines = reel.wrap_banner(sentence, lambda text: len(text), width)
+        for line in lines:
+            assert not line.startswith(("»", "?", "!", ":", ";")), f"width {width}: {lines}"
+            assert not line.endswith("«"), f"width {width}: {lines}"
+
+
 def _count_white_pixels(video, instant, rows):
     from PIL import Image
     with tempfile.TemporaryDirectory() as tmp:

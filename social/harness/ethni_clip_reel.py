@@ -284,20 +284,32 @@ def _contain(frame):
     return frame.resize((round(frame.width * scale), round(frame.height * scale)), Image.Resampling.LANCZOS)
 
 
-def _banner_band(sentence, font):
-    """The banner sentence wrapped to the reel's width, centred, on a transparent band."""
-    from PIL import Image, ImageDraw
-    band = Image.new("RGBA", (WIDTH, BANNER_HEIGHT), (0, 0, 0, 0))
-    pen = ImageDraw.Draw(band)
+def wrap_banner(sentence, measure, max_width):
+    """The banner sentence cut into lines no wider than `max_width`, French marks glued to their word.
+
+    Same trap as `chunk_words`: the space inside « » and before ? ! : ; is made
+    non-breaking first, or a line can open on a lone » .
+    """
+    text = re.sub(r"«[ \t]+", "«" + NBSP, sentence.strip())
+    text = re.sub(r"[ \t]+(»|[?!:;])", NBSP + r"\1", text)
     rows, row = [], ""
-    for word in sentence.split():
+    for word in re.split(r"[ \t]+", text):
         trial = f"{row} {word}".strip()
-        if row and pen.textlength(trial, font=font) > WIDTH - 120:
+        if row and measure(trial) > max_width:
             rows.append(row)
             row = word
         else:
             row = trial
     rows.append(row)
+    return rows
+
+
+def _banner_band(sentence, font):
+    """The banner sentence wrapped to the reel's width, centred, on a transparent band."""
+    from PIL import Image, ImageDraw
+    band = Image.new("RGBA", (WIDTH, BANNER_HEIGHT), (0, 0, 0, 0))
+    pen = ImageDraw.Draw(band)
+    rows = wrap_banner(sentence, lambda text: pen.textlength(text, font=font), WIDTH - 120)
     if len(rows) * BANNER_LINE_PX > BANNER_HEIGHT:
         raise ValueError(f"banner is {len(rows)} lines at {BANNER_FONT_PX}px — shorten the sentence, the type does not shrink")
     y = (BANNER_HEIGHT - len(rows) * BANNER_LINE_PX) // 2
