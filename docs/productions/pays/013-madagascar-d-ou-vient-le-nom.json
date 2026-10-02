@@ -1,0 +1,36 @@
+{
+  "campaign": "madagascar-d-ou-vient-le-nom-carrousel",
+  "typologie": "pays",
+  "episode": 13,
+  "question": {
+    "fr": "D'où vient le nom Madagascar ?"
+  },
+  "myth": {
+    "fr": "Madagascar vient-il d'une erreur de Marco Polo ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "MDG",
+      "label": { "fr": "Madagascar" }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/MDG",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7692028491126066454",
+      "publishedAt": "2026-10-02"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/Dd_XQ53CL7r/",
+      "publishedAt": "2026-10-02"
+    },
+    { "network": "facebook", "format": "carrousel" },
+    { "network": "youtube", "format": "carrousel" },
+    { "network": "linkedin", "format": "carrousel" }
+  ]
+}
