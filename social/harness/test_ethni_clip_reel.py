@@ -115,9 +115,59 @@ def test_overlapping_clips_are_refused():
     assert reel.validate_plan(plan(clips=[[10.0, 20.0], [15.0, 25.0]]))
 
 
-def test_a_third_speaker_is_refused_because_only_two_inks_exist():
-    p = plan(phrases=[{"start": 10.0, "end": 12.0, "speaker": 2, "fr": "Un deux"}])
-    assert any("speaker" in e for e in reel.validate_plan(p))
+def test_clips_may_be_played_out_of_source_order_when_they_do_not_overlap():
+    p = plan(clips=[[50.0, 60.0], [10.0, 20.0]],
+             phrases=[{"start": 50.0, "end": 60.0, "speaker": 1, "fr": "Un deux trois"},
+                      {"start": 10.0, "end": 14.0, "speaker": 0, "fr": "Quatre cinq six"}])
+    assert reel.validate_plan(p) == []
+
+
+def test_overlapping_clips_are_refused_even_out_of_order():
+    assert reel.validate_plan(plan(clips=[[15.0, 25.0], [10.0, 20.0]]))
+
+
+def test_phrases_follow_the_order_they_are_played_not_the_source():
+    p = plan(clips=[[50.0, 60.0], [10.0, 20.0]],
+             phrases=[{"start": 10.0, "end": 14.0, "speaker": 0, "fr": "Un deux"},
+                      {"start": 50.0, "end": 60.0, "speaker": 1, "fr": "Trois quatre"}])
+    assert any("out of order" in e for e in reel.validate_plan(p))
+
+
+def test_out_of_order_clips_render_in_the_order_the_plan_lists_them():
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = pathlib.Path(tmp)
+        src = tmp / "source.mp4"
+        _red_then_blue_source(src)
+        p = plan(source=str(src), clips=[[3.5, 5.5], [0.5, 2.5]],
+                 phrases=[{"start": 3.5, "end": 5.5, "speaker": 0, "fr": "Bonne question."}])
+        out = tmp / "reel.mp4"
+        reel.render_reel(p, out)
+        centre = (540, reel.FRAME_CENTRE_Y)
+        red, _, blue = _pixel_at(out, 1.0, centre)
+        assert blue > 150 and red < 100, "the later stretch of the source plays first"
+        red, _, blue = _pixel_at(out, 3.0, centre)
+        assert red > 150 and blue < 100, "then the earlier one"
+
+
+def test_a_host_may_speak_as_a_third_ink_but_a_fourth_voice_is_refused():
+    host = plan(phrases=[{"start": 10.0, "end": 12.0, "speaker": 2, "fr": "Un deux"}])
+    assert reel.validate_plan(host) == []
+    fourth = plan(phrases=[{"start": 10.0, "end": 12.0, "speaker": 3, "fr": "Un deux"}])
+    assert any("speaker" in e for e in reel.validate_plan(fourth))
+
+
+def test_the_host_ink_is_distinct_from_both_debaters():
+    inks = [reel.speaker_ink(n) for n in (0, 1, 2)]
+    assert len(set(inks)) == 3
+
+
+def test_a_banner_needs_its_sentence_and_a_positive_duration_within_the_reel():
+    ok = plan(banner={"text": "Affirmation débattue : le racisme systémique sert d'excuse.", "duration": 8})
+    assert reel.validate_plan(ok) == []
+    assert any("banner.text" in e for e in reel.validate_plan(plan(banner={"text": " ", "duration": 8})))
+    assert any("banner.duration" in e for e in reel.validate_plan(plan(banner={"text": "Un", "duration": 0})))
+    # the reel in this fixture runs 20 s: a banner outliving it is a typo, not a choice
+    assert any("banner.duration" in e for e in reel.validate_plan(plan(banner={"text": "Un", "duration": 21})))
 
 
 def test_a_thumbnail_title_longer_than_eight_words_is_refused():
@@ -312,6 +362,41 @@ def test_a_still_window_holds_the_frame_it_names_for_its_whole_length():
         assert red > 150 and blue < 100, "after the window the source plays again"
         duration = float(_probe(out, "format=duration")["format"]["duration"])
         assert abs(duration - 4.0) < 0.2
+
+
+def test_a_banner_line_never_starts_with_a_closing_mark_nor_ends_on_an_opening_one():
+    sentence = "Affirmation débattue : « Le racisme systémique sert d'excuse pour éviter la responsabilité personnelle. »"
+    for width in range(18, 60):
+        lines = reel.wrap_banner(sentence, lambda text: len(text), width)
+        for line in lines:
+            assert not line.startswith(("»", "?", "!", ":", ";")), f"width {width}: {lines}"
+            assert not line.endswith("«"), f"width {width}: {lines}"
+
+
+def _count_white_pixels(video, instant, rows):
+    from PIL import Image
+    with tempfile.TemporaryDirectory() as tmp:
+        still = pathlib.Path(tmp) / "f.png"
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", str(instant), "-i", str(video),
+                        "-frames:v", "1", str(still)], check=True)
+        band = Image.open(still).convert("RGB").crop((0, rows[0], reel.WIDTH, rows[1]))
+        return sum(1 for r, g, b in band.getdata() if min(r, g, b) > 235)
+
+
+def test_the_banner_stands_above_the_frame_for_its_duration_then_leaves():
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = pathlib.Path(tmp)
+        src = tmp / "source.mp4"
+        _split_source(src)
+        p = plan(source=str(src), clips=[[0.0, 5.0]],
+                 phrases=[{"start": 0.0, "end": 5.0, "speaker": 2, "fr": "Je dois faire une pause."}],
+                 banner={"text": "Affirmation débattue : le racisme systémique sert d'excuse pour éviter la responsabilité personnelle.",
+                         "duration": 3})
+        out = tmp / "reel.mp4"
+        reel.render_reel(p, out)
+        above_frame = (reel.BANNER_Y, reel.FRAME_CENTRE_Y - reel.FRAME_BOX_HEIGHT // 2)
+        assert _count_white_pixels(out, 1.0, above_frame) > 300, "the sentence is drawn above the picture"
+        assert _count_white_pixels(out, 4.0, above_frame) == 0, "after its duration the top is clear again"
 
 
 def test_the_thumbnail_is_a_vertical_1080_by_1920_png():

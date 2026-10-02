@@ -64,7 +64,7 @@ traps measured on the first use:
   **word** timestamps, listen for the overlap, and re-transcribe the _output_ to
   check the cut (step 5).
 
-**3. Write the plan** (`references/plan.example.json` is the shape):
+**3. Write the plan** (`references/plan.example.json` is the shape; `speaker` 0 and 1 are the two voices, `2` is a host or moderator in a neutral grey ink; an optional `banner` `{text, duration}` puts one complete sentence — the claim a debate is about — above the picture for its first seconds):
 `clips` are the kept source ranges in order; each `phrase` is one speaker turn or
 sentence inside a single clip, with its French translation; `thumbnail` names the
 frame, the title lines and the accent. When the source is a screen recording, an
