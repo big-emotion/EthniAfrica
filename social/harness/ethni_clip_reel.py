@@ -15,6 +15,11 @@ this format got it wrong once:
 - a source that is a screen recording shows a player's chrome for a while: a
   `reframes` window keeps only the rectangle that is the picture, for that stretch
   of source time, instead of dropping the words spoken under the chrome;
+- a plan may carry a `banner`: one complete sentence above the picture for its first
+  `duration` seconds — the claim a debate is about, never chunked like a caption;
+- speakers 0 and 1 are the two people exchanging; speaker 2 is a **host** (a moderator,
+  an announcer) in a neutral ink, so that their line is captioned without being
+  attributed to either side;
 - a cover title is **eight words at most and its last words carry the accent**
   (GABARITS-SOCIAL §1 ter): the punchline is the ending, and the copy yields when
   it does not fit, the type never shrinks.
@@ -43,10 +48,21 @@ FRAME_CENTRE_Y = 640
 CAPTION_BAND_Y = 1150
 CAPTION_BAND_HEIGHT = 300
 WATERMARK_Y = 1620
+BANNER_Y = 70             # the banner sits in the blurred ground above the frame box (which starts at y = 320)
+BANNER_HEIGHT = 240
+BANNER_FONT_PX = 50
+BANNER_LINE_PX = 60
 FPS = 30
+HOST = 2
 
 
 # ---------------------------------------------------------------- captions
+
+def speaker_ink(speaker):
+    """White for speaker 0, project gold for 1, neutral grey for the host (2)."""
+    import ethni_brand
+    return {0: (255, 255, 255), 1: ethni_brand.GOLD_INK, HOST: (176, 176, 176)}[speaker]
+
 
 def chunk_words(text, max_words=MAX_CAPTION_WORDS):
     """Split a translated phrase into balanced captions of at most `max_words`.
@@ -165,8 +181,8 @@ def validate_plan(plan):
     previous_start = -1.0
     for index, phrase in enumerate(plan.get("phrases") or []):
         label = f"phrases[{index}]"
-        if phrase.get("speaker") not in (0, 1):
-            errors.append(f"{label}: speaker must be 0 or 1 — only two inks exist")
+        if phrase.get("speaker") not in (0, 1, HOST):
+            errors.append(f"{label}: speaker must be 0 or 1 (the two voices) or 2 (the host) — only three inks exist")
         if not str(phrase.get("fr", "")).strip():
             errors.append(f"{label}: fr is empty")
         start, end = phrase.get("start"), phrase.get("end")
@@ -181,6 +197,14 @@ def validate_plan(plan):
             errors.append(f"{label}: {start}-{end}s is outside every clip")
         elif first != last:
             errors.append(f"{label}: straddles two clips — split it at the cut")
+
+    banner = plan.get("banner")
+    if banner is not None:
+        if not str(banner.get("text", "")).strip():
+            errors.append("banner.text: the sentence is missing")
+        duration = banner.get("duration", 0)
+        if not 0 < duration <= timeline.total:
+            errors.append(f"banner.duration: {duration}s must be above zero and within the {timeline.total:.1f}s reel")
 
     reframes = plan.get("reframes") or []
     for index, window in enumerate(reframes):
@@ -260,6 +284,30 @@ def _contain(frame):
     return frame.resize((round(frame.width * scale), round(frame.height * scale)), Image.Resampling.LANCZOS)
 
 
+def _banner_band(sentence, font):
+    """The banner sentence wrapped to the reel's width, centred, on a transparent band."""
+    from PIL import Image, ImageDraw
+    band = Image.new("RGBA", (WIDTH, BANNER_HEIGHT), (0, 0, 0, 0))
+    pen = ImageDraw.Draw(band)
+    rows, row = [], ""
+    for word in sentence.split():
+        trial = f"{row} {word}".strip()
+        if row and pen.textlength(trial, font=font) > WIDTH - 120:
+            rows.append(row)
+            row = word
+        else:
+            row = trial
+    rows.append(row)
+    if len(rows) * BANNER_LINE_PX > BANNER_HEIGHT:
+        raise ValueError(f"banner is {len(rows)} lines at {BANNER_FONT_PX}px — shorten the sentence, the type does not shrink")
+    y = (BANNER_HEIGHT - len(rows) * BANNER_LINE_PX) // 2
+    for row in rows:
+        x = (WIDTH - pen.textlength(row, font=font)) / 2
+        pen.text((x, y), row, font=font, fill=(255, 255, 255), stroke_width=6, stroke_fill="black")
+        y += BANNER_LINE_PX
+    return band
+
+
 def render_reel(plan, out_path):
     """Cut, frame, caption and sign the video. Writes only outside a git checkout."""
     _checked(plan)
@@ -308,7 +356,6 @@ def render_reel(plan, out_path):
               "-c:a", "aac", "-b:a", "192k", str(base)])
 
         font = ImageFont.truetype(str(HARNESS / "fonts" / "Montserrat-ExtraBold.ttf"), 70)
-        inks = {0: (255, 255, 255), 1: ethni_brand.GOLD_INK}
         entries, cursor, lines = [], 0.0, []
         blank = work / "blank.png"
         Image.new("RGBA", (WIDTH, CAPTION_BAND_HEIGHT), (0, 0, 0, 0)).save(blank)
@@ -323,7 +370,7 @@ def render_reel(plan, out_path):
             y = (CAPTION_BAND_HEIGHT - len(rows) * 88) // 2
             for row in rows:
                 x = (WIDTH - pen.textlength(row, font=font)) / 2
-                pen.text((x, y), row, font=font, fill=inks[caption["speaker"]], stroke_width=7, stroke_fill="black")
+                pen.text((x, y), row, font=font, fill=speaker_ink(caption["speaker"]), stroke_width=7, stroke_fill="black")
                 y += 88
             png = work / f"caption_{n}.png"
             band.save(png)
@@ -344,8 +391,18 @@ def render_reel(plan, out_path):
         mark_png = work / "mark.png"
         mark.save(mark_png)
         out.parent.mkdir(parents=True, exist_ok=True)
-        _run(["ffmpeg", "-y", "-v", "error", "-i", str(base), "-i", str(captions_video), "-i", str(mark_png),
-              "-filter_complex", f"[0:v][1:v]overlay=0:{CAPTION_BAND_Y}[s];[s][2:v]overlay=(W-w)/2:{WATERMARK_Y}[o]",
+        inputs = ["-i", str(base), "-i", str(captions_video), "-i", str(mark_png)]
+        stack = f"[0:v][1:v]overlay=0:{CAPTION_BAND_Y}[s];[s][2:v]overlay=(W-w)/2:{WATERMARK_Y}[w]"
+        banner = plan.get("banner")
+        if banner:
+            banner_png = work / "banner.png"
+            _banner_band(banner["text"], ImageFont.truetype(str(HARNESS / "fonts" / "Montserrat-ExtraBold.ttf"),
+                                                            BANNER_FONT_PX)).save(banner_png)
+            inputs += ["-i", str(banner_png)]
+            stack += f";[w][3:v]overlay=0:{BANNER_Y}:enable='lt(t,{banner['duration']})'[o]"
+        else:
+            stack = stack.replace("[w]", "[o]")
+        _run(["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", stack,
               "-map", "[o]", "-map", "0:a", "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p",
               "-c:a", "copy", "-shortest", str(out)])
     return out
