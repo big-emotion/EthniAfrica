@@ -1,0 +1,20 @@
+{
+  "campaign": "comores-d-ou-vient-le-nom-carrousel",
+  "typologie": "pays",
+  "episode": 12,
+  "question": {
+    "fr": "D'où vient le nom Comores ?"
+  },
+  "myth": {
+    "fr": "Comores veut-il dire îles de la Lune ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "COM",
+      "label": { "fr": "Comores" }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/COM",
+  "publications": []
+}
