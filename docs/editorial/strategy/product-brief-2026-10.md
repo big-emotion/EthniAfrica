@@ -231,4 +231,7 @@ authority, which is consistent with the rule that peoples speak first.
 _Landscape sources (2026-10-03):_ Global Voices on Nofi (2018); Joshua Project
 data policy; UNESCO General History of Africa; British Library EAP; Wikimedia
 Research: Oral Citations; Wikimedia Rapid Fund; All Things Linguistic on the
-Ethnologue paywall. Full list in the session's research notes.
+Ethnologue paywall.
+
+_Detail pack:_ [what did not fit this brief](product-brief-2026-10-distillate.md)
+— decisions, rejected ideas, requirements hints, leads and open questions.
