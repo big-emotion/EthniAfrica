@@ -102,16 +102,24 @@ person's evenings stops when those evenings stop.
   and is consulted, not a feed of posts.
 
 The honest moat is the corpus and its doctrine, not technology: 772 people
-records, 805 patronymes and 54 countries already filed, and editorial rules
-(tiers, register, contested claims) enforced by automated checks rather than
-stated in a document. An account can copy the tone in a week; it cannot copy
+records, 805 patronymes and 54 countries already filed, a newly catalogued
+shelf of 19 UNESCO volumes mapped chapter by chapter to the corpus, and
+editorial rules (tiers, register, contested claims) enforced by automated checks
+rather than stated in a document. An account can copy the tone in a week; it cannot copy
 that.
 
 ## Who This Serves
 
+Anyone who recognises themselves in Africa, closely or from afar, or is looking
+to.
+
 - **Primary: the francophone African diaspora.** In September, 54% of measured
   site visitors were in France. They are looking for the origin of a people's
   name or a family name, and want an answer they can trust and share.
+- **The Caribbean and Haitian diaspora**, French-speaking, whose family names
+  and memories of origin lead back to African peoples. The UNESCO volumes on the
+  diasporas (GHA X and XI, Brazil included) give this entry point solid sources
+  from the start.
 - **Readers on the continent**, as direct readers, never as informants. Côte
   d'Ivoire is the second country on the site and the first among Facebook
   followers.
@@ -126,17 +134,40 @@ interviewed yet (`docs/editorial/audience-personas.md`).
 ## Success Criteria
 
 The September figures are baselines from consented sessions only, so they are a
-floor. Targets are proposals for the operator to confirm.
+floor. Targets are for the end of December 2026, when the phase is reviewed
+against a fresh audience report.
 
-| Signal                                   | September baseline           | Direction for the phase                       |
-| ---------------------------------------- | ---------------------------- | --------------------------------------------- |
-| Visitors who run a search                | 106 visitors, 292 searches   | grows month on month                          |
-| Searches that reach a result             | 62 visitors clicked a result | share rises                                   |
-| Site visits arriving from social         | Instagram 40, Facebook 17    | each post links to its answer; tags reconcile |
-| Site visits arriving from search engines | Google 105, chatgpt.com 26   | grows as answer pages are indexed             |
-| Returning visitors                       | not measured                 | measured before any app decision              |
-| Reader proposals received and validated  | not measured                 | measured; a first validated batch             |
-| Research volunteers onboarded            | 0                            | at least 1, trained before end of November    |
+| Signal                                   | September baseline         | Target, end of December                         |
+| ---------------------------------------- | -------------------------- | ----------------------------------------------- |
+| Visitors who run a search, per month     | 106 visitors, 292 searches | 250                                             |
+| Searchers who click a result             | 62 of 106 (58%)            | at least 65%                                    |
+| Site visits arriving from social         | Instagram 40, Facebook 17  | each post links to its answer; tags reconcile   |
+| Site visits arriving from search engines | Google 105, chatgpt.com 26 | tracked; grows as answer pages are indexed      |
+| Returning visitors                       | not measured               | measured, before any app decision               |
+| Reader proposals validated               | not measured               | 20                                              |
+| Volunteers onboarded                     | 0                          | 2, the first trained before the end of November |
+| Weeks with at least one publication      | not tracked as such        | every week, after November included             |
+
+Publishing keeps no fixed schedule; the operator has published as often as ten
+times in one day and as rarely as none. The signal is continuity, not cadence.
+
+## Operating After November
+
+From the end of November the operator's time drops sharply. The project keeps
+running on this split:
+
+| Work                   | Continues?                  | Who does what                                                                                                                                     |
+| ---------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Social publishing      | yes, at a lower pace        | Volunteers prepare the idea stage: subject, angle, narrative outline and the images, the slowest part. The operator structures and renders.       |
+| New fiches             | yes, and the first to pause | Volunteers fill a fiche template; the operator integrates.                                                                                        |
+| Source checks          | yes                         | A trained volunteer may approve sources at the `referenced` tier and check fiches alone. `official` and contested rulings stay with the operator. |
+| Search engine and site | yes                         | Runs without daily attention.                                                                                                                     |
+
+Each mission works at two levels. With Claude and git, a volunteer runs the
+project's own skills (`ethniafrica-idee`, `afrik-curator`) and hands over an
+advanced draft; the operator trains people on the precise git task. Without
+them, a volunteer who simply brings sourced information through the template is
+already a contribution. Claude is welcome, never a barrier.
 
 ## Scope (October–December 2026)
 
@@ -147,15 +178,20 @@ floor. Targets are proposals for the operator to confirm.
   campaign tags that agree between the ledger and the captions.
 - Discoverability of answer pages by search engines and AI assistants, which
   already bring more visitors than the networks do.
-- One volunteer mission, **content research** (find and check sources, prepare a
-  name for review), described in an explicit mission sheet. Recruitment starts
-  with a presentation to the Ripat Africa community.
+- Two volunteer missions, each in an explicit mission sheet: **content research
+  for publications** (idea, outline, images) and **fiche preparation** (template,
+  sources, checks). Recruitment starts with a presentation to the Ripat Africa
+  community, then student work supervised remotely with universities in Dakar and
+  Abidjan.
+- A fiche template a volunteer can fill without reading the strict models.
 - A measured contribution path, "propose then validate". An oral account is
   accepted only with its carrier's consent; unreviewed proposals stay visible
   as pending, never silently published.
-- Social publishing at a cadence one person can hold, below the Q4 roadmap's 4–6
-  pieces a week.
-- Exploring one grant or partnership; donations are accepted.
+- Donations, grants and partnerships are welcome; running costs are manageable
+  today, so none is urgent.
+- Proposed, to confirm: interviews with 5–8 readers in October, as the personas
+  document already plans, to test that readers want a searchable answer and not
+  only stories.
 
 **Out, for now:**
 
