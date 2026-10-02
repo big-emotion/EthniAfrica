@@ -12,6 +12,7 @@ accounts may cover more than the website; the site's remit remains unchanged.
 
 | Document                                                                 | Role                                                                                                                                |
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| [Product brief, Oct–Dec 2026](product-brief-2026-10.md)                  | Project-wide vision and next-phase scope: reference first, the social-to-site bridge, a validating team before end of November      |
 | [Original report](report-2026-09-22.md)                                  | Preserve the report the operator endorsed, with its original limits                                                                 |
 | [Current evidence](evidence-2026-09-22.md)                               | Dated six-network collection, comparables, corrections and gaps                                                                     |
 | [Thirteen-week roadmap](roadmap-2026-q4.md)                              | Sequence, dated slots, research briefs, audience reviews and continental horizon                                                    |
