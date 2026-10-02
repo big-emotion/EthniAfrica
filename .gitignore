@@ -165,3 +165,6 @@ Claude outputs/
 skills-lock.json
 .env*
 !.env.example
+
+# UNESCO reference PDFs: not redistributable, ~400 MB — see docs/sources/unesco/README.md
+docs/sources/unesco/pdf/
