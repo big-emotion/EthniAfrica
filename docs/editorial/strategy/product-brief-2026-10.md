@@ -1,6 +1,6 @@
 ---
 title: "Product Brief: EthniAfrica"
-status: "draft"
+status: "complete"
 created: "2026-10-03"
 updated: "2026-10-03"
 inputs:
@@ -189,9 +189,9 @@ already a contribution. Claude is welcome, never a barrier.
   as pending, never silently published.
 - Donations, grants and partnerships are welcome; running costs are manageable
   today, so none is urgent.
-- Proposed, to confirm: interviews with 5–8 readers in October, as the personas
-  document already plans, to test that readers want a searchable answer and not
-  only stories.
+- Interviews with 5–8 readers in October, run by the operator as the personas
+  document plans, to test that readers want a searchable answer and not only
+  stories. Their findings go into the December review.
 
 **Out, for now:**
 
