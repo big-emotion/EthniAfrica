@@ -171,14 +171,17 @@ def validate_plan(plan):
         if len(clip) != 2 or not clip[0] < clip[1]:
             errors.append(f"clips[{index}]: needs [start, end] with start < end")
     if all(len(c) == 2 for c in clips):
-        for before, after in zip(clips, clips[1:]):
+        # Clips play in the order listed, which may differ from the source's; only an
+        # overlap is refused, because one source instant would then sit at two output times.
+        ordered = sorted(clips)
+        for before, after in zip(ordered, ordered[1:]):
             if after[0] < before[1]:
-                errors.append("clips: overlap or are out of order — list them in source order")
+                errors.append("clips: two of them overlap — one source instant has one place in the cut")
     if errors:
         return errors
 
     timeline = Timeline(clips)
-    previous_start = -1.0
+    previous_out = -1.0
     for index, phrase in enumerate(plan.get("phrases") or []):
         label = f"phrases[{index}]"
         if phrase.get("speaker") not in (0, 1, HOST):
@@ -189,13 +192,15 @@ def validate_plan(plan):
         if start is None or end is None or not start < end:
             errors.append(f"{label}: needs start < end")
             continue
-        if start < previous_start:
-            errors.append(f"{label}: out of order — phrases follow the source")
-        previous_start = start
         first, last = timeline.clip_of(start), timeline.clip_of(end)
         if first is None or last is None:
             errors.append(f"{label}: {start}-{end}s is outside every clip")
-        elif first != last:
+            continue
+        played_at = timeline.to_out(start)
+        if played_at < previous_out:
+            errors.append(f"{label}: out of order — phrases follow the order the clips are played")
+        previous_out = played_at
+        if first != last:
             errors.append(f"{label}: straddles two clips — split it at the cut")
 
     banner = plan.get("banner")

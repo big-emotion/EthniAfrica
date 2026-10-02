@@ -115,6 +115,40 @@ def test_overlapping_clips_are_refused():
     assert reel.validate_plan(plan(clips=[[10.0, 20.0], [15.0, 25.0]]))
 
 
+def test_clips_may_be_played_out_of_source_order_when_they_do_not_overlap():
+    p = plan(clips=[[50.0, 60.0], [10.0, 20.0]],
+             phrases=[{"start": 50.0, "end": 60.0, "speaker": 1, "fr": "Un deux trois"},
+                      {"start": 10.0, "end": 14.0, "speaker": 0, "fr": "Quatre cinq six"}])
+    assert reel.validate_plan(p) == []
+
+
+def test_overlapping_clips_are_refused_even_out_of_order():
+    assert reel.validate_plan(plan(clips=[[15.0, 25.0], [10.0, 20.0]]))
+
+
+def test_phrases_follow_the_order_they_are_played_not_the_source():
+    p = plan(clips=[[50.0, 60.0], [10.0, 20.0]],
+             phrases=[{"start": 10.0, "end": 14.0, "speaker": 0, "fr": "Un deux"},
+                      {"start": 50.0, "end": 60.0, "speaker": 1, "fr": "Trois quatre"}])
+    assert any("out of order" in e for e in reel.validate_plan(p))
+
+
+def test_out_of_order_clips_render_in_the_order_the_plan_lists_them():
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = pathlib.Path(tmp)
+        src = tmp / "source.mp4"
+        _red_then_blue_source(src)
+        p = plan(source=str(src), clips=[[3.5, 5.5], [0.5, 2.5]],
+                 phrases=[{"start": 3.5, "end": 5.5, "speaker": 0, "fr": "Bonne question."}])
+        out = tmp / "reel.mp4"
+        reel.render_reel(p, out)
+        centre = (540, reel.FRAME_CENTRE_Y)
+        red, _, blue = _pixel_at(out, 1.0, centre)
+        assert blue > 150 and red < 100, "the later stretch of the source plays first"
+        red, _, blue = _pixel_at(out, 3.0, centre)
+        assert red > 150 and blue < 100, "then the earlier one"
+
+
 def test_a_host_may_speak_as_a_third_ink_but_a_fourth_voice_is_refused():
     host = plan(phrases=[{"start": 10.0, "end": 12.0, "speaker": 2, "fr": "Un deux"}])
     assert reel.validate_plan(host) == []
