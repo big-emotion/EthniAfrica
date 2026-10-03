@@ -98,6 +98,20 @@ and `ffmpeg` on the runner. That is a cost, not an oversight — but it does mea
 the engine drifts silently until somebody runs `make social-engine`, so run it
 in any change that touches `social/harness`.
 
+```bash
+npm run check:skill-drift -- --packs <dir>   # advisory: generic packs whose source skill moved
+```
+
+`check:skill-drift` compares the sha256 of each file listed in a pack's `derived-from.json`
+(paths relative to this repository) with the file on disk. It exits 0 on drift unless
+`--strict`, and tolerates packs that carry no manifest, because the packs live in agent-atelier.
+
+The render engine reads its brand — name, tagline, logo, faces, exit address, footer, pillar
+and accent maps — from `social/harness/brand-kit.json`; `ETHNI_BRAND_KIT=<kit file>` renders
+another brand. `test_brand_kit.py` pins EthniAfrica's decks to the pre-kit pixels
+(`fixtures/brand-kit-baseline.json`; re-pin with `--write-baseline` only for a deliberate
+change of look).
+
 `npm run check:translation-parity` runs in CI and **cannot** fail the job
 (`continue-on-error`, and the script exits 0 on findings). It is a report; see
 the bilingual-content rule below.
