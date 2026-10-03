@@ -92,6 +92,10 @@ export function PatronymeOriginSection({
       accounts: origin.writtenChronicles,
     },
     {
+      label: t.originHistoricalSynthesesLabel,
+      accounts: origin.historicalSyntheses,
+    },
+    {
       label: t.originLinguisticReconstructionsLabel,
       accounts: origin.linguisticReconstructions,
     },

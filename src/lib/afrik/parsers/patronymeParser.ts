@@ -90,6 +90,10 @@ const patronymeOriginSchema = z
   .object({
     oralTraditions: z.array(patronymeOralOriginClaimSchema),
     writtenChronicles: z.array(patronymeOriginClaimSchema),
+    // A historian's account of the clan's history: not the people's own
+    // tradition, not a chronicle, not a claim about the word. Optional so the
+    // fiches written before it existed stay valid without a mass rewrite.
+    historicalSyntheses: z.array(patronymeOriginClaimSchema).default([]),
     linguisticReconstructions: z.array(patronymeOriginClaimSchema),
   })
   .strict();

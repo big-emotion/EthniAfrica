@@ -135,6 +135,7 @@ const COLLECTION_MODES = ["direct", "mediated", "not-stated"];
 export interface PatronymeOrigin {
   oralTraditions: OriginAccount[];
   writtenChronicles: OriginAccount[];
+  historicalSyntheses: OriginAccount[];
   linguisticReconstructions: OriginAccount[];
 }
 
@@ -392,6 +393,7 @@ export function readOrigin(content: ContentBag): PatronymeOrigin {
   return {
     oralTraditions: readOriginAccounts(value.oralTraditions),
     writtenChronicles: readOriginAccounts(value.writtenChronicles),
+    historicalSyntheses: readOriginAccounts(value.historicalSyntheses),
     linguisticReconstructions: readOriginAccounts(
       value.linguisticReconstructions
     ),

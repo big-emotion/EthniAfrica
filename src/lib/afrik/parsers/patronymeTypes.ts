@@ -64,6 +64,7 @@ export interface PatronymeOralOriginClaim extends PatronymeOriginClaim {
 export interface PatronymeOrigin {
   oralTraditions: PatronymeOralOriginClaim[];
   writtenChronicles: PatronymeOriginClaim[];
+  historicalSyntheses: PatronymeOriginClaim[];
   linguisticReconstructions: PatronymeOriginClaim[];
 }
 
