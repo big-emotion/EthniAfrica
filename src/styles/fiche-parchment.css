@@ -1859,19 +1859,22 @@
 }
 
 .afh-name-badge {
-  /* The full ink, not the soft one: on the badge's own tint, the soft ink
-     fell under 4.5:1 for caption-size text (axe, 2026-10-03). */
-  --badge-ink: var(--afh-text);
+  /* The word is always in the page's own ink, so its contrast never depends
+     on the status colour: a tinted ground took the teal ink to 4.35:1 and
+     the soft ink under 4.5:1 (axe, 2026-10-03). The status colour rides on
+     the outline and the icon, beside a word that says it anyway. */
+  --badge-ink: var(--afh-text-soft);
   display: inline-flex;
   align-items: center;
   gap: 0.3em;
   padding: 0.3em 0.65em 0.3em 0.5em;
   border-radius: 999px;
+  border: 1px solid var(--badge-ink);
   font-size: var(--afh-text-caption);
   font-weight: 700;
   line-height: 1;
-  color: var(--badge-ink);
-  background: color-mix(in srgb, var(--badge-ink) 14%, transparent);
+  color: var(--afh-text);
+  background: transparent;
   white-space: nowrap;
 }
 
@@ -1879,7 +1882,7 @@
   inline-size: 0.85em;
   block-size: 0.85em;
   fill: none;
-  stroke: currentColor;
+  stroke: var(--badge-ink);
   stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
