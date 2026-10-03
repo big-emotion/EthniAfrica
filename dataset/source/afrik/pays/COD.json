@@ -29,7 +29,7 @@
           "startYear": 1350,
           "endYear": 1800,
           "precision": "approximate",
-          "datingNote": "Les bornes résument la fondation estimée puis la fragmentation du royaume centralisé sans effacer les États successeurs."
+          "datingNote": "Les bornes résument la fondation estimée puis la fragmentation du royaume centralisé sans effacer les États successeurs. La date de formation du royaume est inconnue : un raisonnement par analogie en fait débuter le processus dès le IXe siècle, d'autres placent la fondation au plus tard vers 1400, au plus tôt un bon siècle auparavant."
         },
         "dominantPeoples": ["Kongo"],
         "politicalCenters": ["Mbanza Kongo (dans l'Angola actuel)"],
@@ -43,7 +43,7 @@
           "startYear": 1550,
           "endYear": 1890,
           "precision": "approximate",
-          "datingNote": "Les sources situent la formation entre la fin du XVIe et le XVIIe siècle et son terme entre le milieu et la fin du XIXe siècle."
+          "datingNote": "Les sources situent la formation entre la fin du XVIe et le XVIIe siècle et son terme entre le milieu et la fin du XIXe siècle. La chronologie fondée sur la tradition orale ne permet guère de remonter avec certitude au-delà de 1700, et le royaume reste d'assez petite taille jusqu'à la fin du XVIIe siècle."
         },
         "dominantPeoples": ["Luba et communautés intégrées à l'État luba"],
         "politicalCenters": [
@@ -59,7 +59,7 @@
           "startYear": 1600,
           "endYear": 1890,
           "precision": "approximate",
-          "datingNote": "Les bornes encadrent la formation et le déclin d'un réseau politique dont les contours ont varié."
+          "datingNote": "Les bornes encadrent la formation et le déclin d'un réseau politique dont les contours ont varié. La tradition orale ne permet pas de dater la constitution de l'État rund, à l'origine de l'empire lunda ; il est mentionné en 1680."
         },
         "dominantPeoples": ["Lunda"],
         "politicalCenters": ["Sud de la RDC actuelle"],
@@ -435,6 +435,18 @@
         "url": "https://achpr.au.int/sites/default/files/files/2022-08/staterep8910drc2007eng.pdf",
         "tier": "official",
         "notes": "Déclaration de l'État, version anglaise, paragraphe 13 : « more than 450 tribes ». Le décompte est celui de l'État, avec son propre critère ; il n'est pas une mesure indépendante."
+      },
+      {
+        "title": "UNESCO, Histoire générale de l'Afrique, vol. V : L'Afrique du XVIe au XVIIIe siècle (dir. B. A. Ogot), 1999 — chap. 19, « Le Royaume du Kongo et ses voisins » (J. Vansina, à partir d'une contribution de T. Obenga), p. 601-642",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "notes": "Formation du royaume dont la date est inconnue, deux datations proposées : p. 604."
+      },
+      {
+        "title": "UNESCO, Histoire générale de l'Afrique, vol. V : L'Afrique du XVIe au XVIIIe siècle (dir. B. A. Ogot), 1999 — chap. 20, « Le système politique luba et lunda : émergence et expansion » (Ndaywel è Nziem), p. 643-664",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "notes": "Limite de 1700 pour la chronologie orale luba : p. 644. État rund non daté par la tradition orale, mentionné en 1680 : p. 646. Royaume luba d'assez petite taille jusqu'à la fin du XVIIe siècle : p. 647."
       }
     ],
     "demographics": {
