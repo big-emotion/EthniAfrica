@@ -78,7 +78,10 @@ describe("PeopleDetailViewV2", () => {
     );
 
     expect(
-      screen.getByRole("heading", { name: "The name and its designations" })
+      screen.getByRole("heading", { name: "Where does the name come from?" })
+    ).toBeVisible();
+    expect(
+      screen.getByRole("heading", { name: "The other names" })
     ).toBeVisible();
     // REQ-155 merged the origins and the historical role into one chapter,
     // "History". Both former chapter titles survived inside it as
@@ -92,7 +95,7 @@ describe("PeopleDetailViewV2", () => {
     expect(
       screen.getByRole("heading", { name: "Where this people lives" })
     ).toBeVisible();
-    expect(screen.getAllByText("Self-designation").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Their own name").length).toBeGreaterThan(0);
     // The origins keep a station of their own on the merged spine, under a
     // name that is no longer a retired chapter title.
     expect(screen.getByText("Formation and origins")).toBeVisible();
@@ -139,18 +142,18 @@ describe("PeopleDetailViewV2", () => {
     expect(screen.getByText(/Migrations depuis Notsé/)).toBeInTheDocument();
   });
 
-  // @req REQ-155
-  it("places naming after the summary and distribution", () => {
+  // REQ-190: on a fiche no name record covers, the card answers from the
+  // fiche's own appellations, and the other names keep the fiche's
+  // explanation of where they come from.
+  // @req REQ-190
+  it("answers from the appellations when no name record covers the fiche", () => {
     render(<PeopleDetailViewV2 language="fr" people={ewe} />);
 
-    expect(screen.getByText("Le nom et ses appellations")).toBeInTheDocument();
-    // The hero carries the autonym too, so this asserts presence rather than
-    // uniqueness; PeopleNamingTiles' own test pins where it sits.
-    expect(screen.getAllByText("Eʋeawo").length).toBeGreaterThan(0);
-    // The name story above the figures lists the exonym as well.
     expect(
-      screen.getAllByText(/Ewhe \(graphie coloniale\)/).length
-    ).toBeGreaterThan(0);
+      screen.getByRole("heading", { name: "D'où vient le nom ?" })
+    ).toBeInTheDocument();
+    expect(screen.getAllByText("Eʋeawo").length).toBeGreaterThan(0);
+    expect(screen.getByText("Ewhe (graphie coloniale)")).toBeInTheDocument();
     expect(
       screen.getByText(/La graphie « Ewhe » vient des rapports coloniaux/)
     ).toBeInTheDocument();
@@ -169,7 +172,7 @@ describe("PeopleDetailViewV2", () => {
   // 316 of 789 fiches carry no whyProblematic, and 4 record no exonym. Each
   // absence has to cost its own block, never a heading standing over nothing.
   // @req REQ-115
-  it("drops the parts of the naming section the fiche cannot fill", () => {
+  it("draws no « other names » chapter for a fiche that records none", () => {
     render(
       <PeopleDetailViewV2
         language="fr"
@@ -180,8 +183,10 @@ describe("PeopleDetailViewV2", () => {
       />
     );
 
-    expect(screen.getByText("Le nom et ses appellations")).toBeInTheDocument();
-    expect(screen.queryByText("Exonymes")).not.toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "D'où vient le nom ?" })
+    ).toBeInTheDocument();
+    expect(screen.queryByText("Les autres noms")).not.toBeInTheDocument();
     expect(
       screen.queryByText(/La graphie « Ewhe » vient des rapports coloniaux/)
     ).not.toBeInTheDocument();
@@ -311,20 +316,20 @@ describe("PeopleDetailViewV2", () => {
   });
 
   // @req REQ-151
-  it("opens on the history of the names, the self-given name first, before the figures", () => {
+  it("opens on the self-given name, with no summary chapter repeating the counts", () => {
     const { container } = render(
       <PeopleDetailViewV2 language="fr" people={ewe} />
     );
 
-    const story = screen.getByTestId("fiche-name-story");
-    const figures = container.querySelector(".fiche-summary-brief__counted")!;
+    const first = container.querySelector("[data-fiche-section]");
+    expect(first?.getAttribute("data-fiche-section")).toBe(
+      "D'où vient le nom ?"
+    );
+    expect(first?.querySelector("[data-self-name]")?.textContent).toBe(
+      "Eʋeawo"
+    );
     expect(
-      story.compareDocumentPosition(figures) & Node.DOCUMENT_POSITION_FOLLOWING
-    ).toBeTruthy();
-    const forms = within(story).getAllByTestId("name-story-form");
-    expect(forms.map((form) => form.dataset.form)).toEqual([
-      "Eʋeawo",
-      "Ewhe (graphie coloniale)",
-    ]);
+      container.querySelector('[data-fiche-section="En bref"]')
+    ).toBeNull();
   });
 });

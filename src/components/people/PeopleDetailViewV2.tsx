@@ -18,7 +18,6 @@ import {
 } from "@/components/people";
 import { FicheSources } from "@/components/fiche/FicheSources";
 import { ConfidenceChip } from "@/components/source-transparency/ConfidenceChip";
-import { PeopleNamingTiles } from "@/components/people/PeopleNamingTiles";
 import { FicheChronologyChapter } from "@/components/fiche/FicheChronologyChapter";
 import { peopleChronology } from "@/lib/fiche/chronology";
 import { FicheTileChapter } from "@/components/fiche/FicheTileChapter";
@@ -29,10 +28,11 @@ import { FicheNamesChapter } from "@/components/fiche/FicheNamesChapter";
 import { PeopleFieldExplainer } from "@/components/people/PeopleFieldExplainer";
 import { FicheAmendBand } from "@/components/fiche/FicheAmendBand";
 import { FicheSection } from "@/components/fiche/FicheSection";
-import { FicheNameStory } from "@/components/fiche/FicheNameStory";
-import { NameAttestationTimeline } from "@/components/names/NameAttestationTimeline";
-import { FicheSummaryBrief } from "@/components/fiche/FicheSummaryBrief";
-import { peopleNamingOf } from "@/lib/fiche/nameStory";
+import {
+  NameAnswerCard,
+  OtherNamesList,
+} from "@/components/names/NameAnswerCard";
+import { peopleNameAnswer } from "@/lib/fiche/nameAnswer";
 import { FicheTile, FicheTiles } from "@/components/fiche/FicheTile";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
 import { FragmentationView } from "@/components/colonization/FragmentationView";
@@ -190,6 +190,12 @@ export function PeopleDetailViewV2({
     },
     language
   );
+  const nameAnswer = peopleNameAnswer(
+    people.appellations,
+    namesDossier,
+    language,
+    people.languages?.isoCodes?.[0]
+  );
   const RELATED_TILE_KEYS = ["relations", "groups"];
   const relatedTiles = cultureTiles.filter((tile) =>
     RELATED_TILE_KEYS.includes(tile.key)
@@ -199,119 +205,52 @@ export function PeopleDetailViewV2({
   );
 
   return (
-    <div className="afh-parchment" id="fiche">
-      <FicheSection title={copy.summary.title}>
-        {/* The head and the trail moved above the globe (PeopleFicheTitle).
-            The confidence chip did not go with them: it cites this document's
-            sources and links to their footer, so it belongs inside the
-            document that owns that anchor. It rides in the first chapter
-            rather than above it, so the parchment has no child off the
-            chapter ground. */}
-        <div className="afh-parchment-confidence">
-          <ConfidenceChip
+    <div className="afh-parchment afh-one-face" id="fiche">
+      {/* DEC-068: the document opens on the answer — the name the people
+          gives itself, how it is said, one sentence — then every other name
+          once. The head above the globe already carries the counts, so no
+          summary chapter repeats them (REQ-151). */}
+      <FicheSection title={copy.sections.answer}>
+        {nameAnswer.self ? (
+          <NameAnswerCard
+            self={nameAnswer.self}
             language={language}
-            confidenceScore={null}
-            sourceCount={data.sources.length || null}
-            lastHumanAuditAt={null}
-            variant="hero"
-            id={data.hero.peopleId}
-            ariaSuffix={copy.ficheHead.sourceAria(data.hero.nameMain)}
+            sourcesLink={
+              <div className="afh-parchment-confidence">
+                <ConfidenceChip
+                  language={language}
+                  confidenceScore={null}
+                  sourceCount={data.sources.length || null}
+                  lastHumanAuditAt={null}
+                  variant="hero"
+                  id={data.hero.peopleId}
+                  ariaSuffix={copy.ficheHead.sourceAria(data.hero.nameMain)}
+                />
+              </div>
+            }
           />
-        </div>
-        <FicheNameStory
-          naming={peopleNamingOf(people.appellations, namesDossier)}
-          language={language}
-        />
-        <FicheSummaryBrief
-          kind="people"
-          entityId={data.hero.peopleId}
-          name={data.hero.nameMain}
-          language={language}
-          embedded
-          figures={{
-            persons:
-              data.countries.totalPopulation > 0
-                ? {
-                    value: data.countries.totalPopulation,
-                    referenceYear: data.countries.referenceYear,
-                  }
-                : null,
-            countries: data.countries.distributions.length,
-            // The summary names the language; its gloss stays in the chapter.
-            mainLanguage: data.language.mainLanguage?.split(/\s+[—–]\s+/u)[0],
-            family: resolvedFamilyName ?? data.hero.languageFamilyName,
-            names: borneNames?.length ? borneNames.length : null,
-          }}
-        />
-        {data.countries.discrepancy?.value && (
-          <p className="mt-afh-sm text-afh-small" role="note">
-            {copy.summary.populationDisagreement(
-              new Intl.NumberFormat(language).format(
-                data.countries.discrepancy.value.declaredTotal
-              ),
-              new Intl.NumberFormat(language).format(
-                data.countries.discrepancy.value.summedTotal
-              )
-            )}
-          </p>
+        ) : (
+          <FieldProvenanceMarker state="missing" language={language} />
         )}
       </FicheSection>
 
-      {/* DEC-067: the story already opened the summary; the name chapter
-          follows it at once — the forms through time, then every form side
-          by side. Everything below is the context that explains them. */}
-      <FicheSection title={copy.sections.naming}>
-        <NameAttestationTimeline
-          names={namesDossier?.names ?? []}
-          heading={copy.sections.nameTimeline}
-          undatedLabel={copy.chapterDetails.historyUndated}
-        />
-        {/* `#noms` is the anchor the name nomenclature and the imposed-names
-            view link to. It left with the embedded names section and stays
-            with the records it points at. */}
-        <div id="noms">
-          <PeopleNamingTiles
-            nameMain={data.hero.nameMain}
-            selfAppellation={people.appellations?.selfAppellation}
-            exonyms={people.appellations?.exonyms}
-            originOfExonyms={data.hero.originOfExonyms}
-            whyProblematic={people.appellations?.whyProblematic}
-            contemporaryUsage={data.hero.contemporaryUsage}
-            isoCode={people.languages?.isoCodes?.[0]}
-            records={data.names}
+      {nameAnswer.others.length > 0 && (
+        <FicheSection title={copy.sections.otherNames}>
+          {/* `#noms` is the anchor the name nomenclature and the imposed-names
+              view link to; it stays with the forms it points at. */}
+          <div id="noms">
+            <OtherNamesList
+              names={nameAnswer.others}
+              note={nameAnswer.othersNote}
+              problem={nameAnswer.othersProblem}
+              language={language}
+            />
+          </div>
+          <DossierLinks
             language={language}
-          />
-        </div>
-        <DossierLinks
-          language={language}
-          kind="people"
-          id={people.id}
-          section="appellations"
-        />
-      </FicheSection>
-
-      {/* Who named whom, and with whom a name is shared: moved out of the
-          culture chapter, where a reader looking for the name never went. */}
-      {relatedTiles.length > 0 && (
-        <FicheSection title={copy.sections.relatedPeoples}>
-          <FicheTileChapter
-            tiles={relatedTiles}
-            extras={
-              relationsPreview.length > 0
-                ? {
-                    relations: (
-                      <PeopleRelatedPeoplesSection
-                        data={{ ethnicities: [] }}
-                        language={language}
-                        peopleId={data.hero.peopleId}
-                        relationsPreview={relationsPreview}
-                        associatedGroups={[]}
-                      />
-                    ),
-                  }
-                : undefined
-            }
-            language={language}
+            kind="people"
+            id={people.id}
+            section="appellations"
           />
         </FicheSection>
       )}
@@ -371,7 +310,45 @@ export function PeopleDetailViewV2({
         ) : (
           <FieldProvenanceMarker state="missing" language={language} />
         )}
+        {data.countries.discrepancy?.value && (
+          <p className="mt-afh-sm text-afh-small" role="note">
+            {copy.summary.populationDisagreement(
+              new Intl.NumberFormat(language).format(
+                data.countries.discrepancy.value.declaredTotal
+              ),
+              new Intl.NumberFormat(language).format(
+                data.countries.discrepancy.value.summedTotal
+              )
+            )}
+          </p>
+        )}
       </FicheSection>
+
+      {/* Who named whom, and with whom a name is shared: moved out of the
+          culture chapter, after where the people lives (REQ-155, DEC-068). */}
+      {relatedTiles.length > 0 && (
+        <FicheSection title={copy.sections.relatedPeoples}>
+          <FicheTileChapter
+            tiles={relatedTiles}
+            extras={
+              relationsPreview.length > 0
+                ? {
+                    relations: (
+                      <PeopleRelatedPeoplesSection
+                        data={{ ethnicities: [] }}
+                        language={language}
+                        peopleId={data.hero.peopleId}
+                        relationsPreview={relationsPreview}
+                        associatedGroups={[]}
+                      />
+                    ),
+                  }
+                : undefined
+            }
+            language={language}
+          />
+        </FicheSection>
+      )}
 
       <FicheSection title={copy.sections.language}>
         {languageRubricFilled ? null : (

@@ -1778,3 +1778,150 @@
   text-decoration: none;
   white-space: normal;
 }
+
+/* ---------------------------------------------------------------------------
+   The people fiche's answer card (REQ-190, DEC-068).
+
+   One face: the display and mono tokens point at the body face inside the
+   fiche, so chapter titles and uppercase labels stop carrying meaning through
+   a change of typeface. Hierarchy is size and weight only.
+   ------------------------------------------------------------------------ */
+.afh-one-face {
+  --afh-font-display: var(--afh-font-body);
+  --afh-font-mono: var(--afh-font-body);
+}
+
+.afh-name-answer,
+.afh-name-others li {
+  display: grid;
+  gap: var(--afh-space-sm);
+}
+
+.afh-name-answer__self {
+  font-size: var(--afh-text-h1);
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.afh-name-answer__say {
+  display: flex;
+  align-items: center;
+  gap: var(--afh-space-sm);
+  margin: 0;
+  color: var(--afh-text-soft);
+}
+
+.afh-name-answer__say button {
+  inline-size: 2.25rem;
+  block-size: 2.25rem;
+  border-radius: 50%;
+  border: 1px solid var(--accent-ink);
+  background: transparent;
+  color: var(--accent-ink);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.afh-name-answer__say svg {
+  inline-size: 0.875rem;
+  fill: currentColor;
+}
+
+.afh-name-others ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.afh-name-others li {
+  padding-block: var(--afh-space-md);
+  border-top: 1px solid var(--afh-border);
+}
+
+.afh-name-others li:first-child {
+  border-top: 0;
+}
+
+.afh-name-others__form {
+  font-size: var(--afh-text-h3);
+  font-weight: 800;
+  margin: 0;
+}
+
+/* A status is a badge: an icon and a word, coloured from a token. The word
+   carries the meaning on its own, so the colour is never the only signal. */
+.afh-name-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--afh-space-xs);
+}
+
+.afh-name-badge {
+  /* The word is always in the page's own ink, so its contrast never depends
+     on the status colour: a tinted ground took the teal ink to 4.35:1 and
+     the soft ink under 4.5:1 (axe, 2026-10-03). The status colour rides on
+     the outline and the icon, beside a word that says it anyway. */
+  --badge-ink: var(--afh-text-soft);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  padding: 0.3em 0.65em 0.3em 0.5em;
+  border-radius: 999px;
+  border: 1px solid var(--badge-ink);
+  font-size: var(--afh-text-caption);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--afh-text);
+  background: transparent;
+  white-space: nowrap;
+}
+
+.afh-name-badge svg {
+  inline-size: 0.85em;
+  block-size: 0.85em;
+  fill: none;
+  stroke: var(--badge-ink);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.afh-name-badge[data-badge="own"] {
+  --badge-ink: var(--afh-cat-teal-ink);
+}
+.afh-name-badge[data-badge="imposed"] {
+  --badge-ink: var(--afh-colonial-ink);
+}
+.afh-name-badge[data-badge="debated"] {
+  --badge-ink: var(--afh-cat-ocre-ink);
+}
+.afh-name-badge[data-badge="usage"] {
+  --badge-ink: var(--afh-cat-perv-ink);
+}
+.afh-on-night .afh-name-badge[data-badge="own"] {
+  --badge-ink: var(--afh-cat-teal-ink-night);
+}
+.afh-on-night .afh-name-badge[data-badge="debated"] {
+  --badge-ink: var(--afh-cat-ocre-ink-night);
+}
+.afh-on-night .afh-name-badge[data-badge="usage"] {
+  --badge-ink: var(--afh-cat-perv-ink-night);
+}
+
+.afh-name-more summary {
+  cursor: pointer;
+  color: var(--accent-ink);
+  font-weight: 700;
+  font-size: var(--afh-text-small);
+}
+
+.afh-name-more ul {
+  margin: var(--afh-space-sm) 0 0;
+  padding-left: 1.1em;
+  display: grid;
+  gap: var(--afh-space-xs);
+  font-size: var(--afh-text-small);
+  color: var(--afh-text-soft);
+}
