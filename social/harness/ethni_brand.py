@@ -21,12 +21,16 @@ ground is a darkened photograph, not parchment. The tagline keeps its gradient: 
 reads on dark, and it is the half that carries the warmth.
 """
 import pathlib
+
+import ethni_kit
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import numpy as np
 
 HARNESS = pathlib.Path(__file__).resolve().parent
 
-TAGLINE = "L’Afrique à travers ses noms"
+_KIT = ethni_kit.active()
+NAME = _KIT["name"]
+TAGLINE = _KIT["tagline"]
 WHITE = "#FFFFFF"
 FLAME = (218, 98, 47)      # #DA622F
 GOLD_INK = (242, 186, 54)  # #F2BA36
@@ -43,7 +47,7 @@ _fonts = {}
 def logo():
     global _LOGO
     if _LOGO is None:
-        im = Image.open(HARNESS / "ethniafrica-logo.png").convert("RGBA")
+        im = Image.open(_KIT["logo"]).convert("RGBA")
         _LOGO = im.crop(im.getbbox())
     return _LOGO
 
@@ -51,11 +55,17 @@ def logo():
 def _fraunces(size, weight):
     key = (size, weight)
     if key not in _fonts:
-        f = ImageFont.truetype(str(HARNESS / "fonts" / "Fraunces.ttf"), size)
+        f = ImageFont.truetype(_KIT["wordmark_face"], size)
         # Fraunces ships variable and its default instance is a wisp; pin the axis.
-        f.set_variation_by_axes(
-            [weight if a["name"] in ["Weight", b"Weight"] else a["default"]
-             for a in f.get_variation_axes()])
+        # A kit's wordmark face may be static, and then there is no axis to pin.
+        try:
+            axes = f.get_variation_axes()
+        except OSError:
+            axes = []
+        if axes:
+            f.set_variation_by_axes(
+                [weight if a["name"] in ["Weight", b"Weight"] else a["default"]
+                 for a in axes])
         _fonts[key] = f
     return _fonts[key]
 
@@ -65,7 +75,7 @@ def lockup_size(width, scale=1.0):
     k = scale * width / 1080
     name_f, tag_f = _fraunces(round(NAME_PX * k), 900), _fraunces(round(TAG_PX * k), 700)
     d = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
-    nb = d.textbbox((0, 0), "EthniAfrica", font=name_f)
+    nb = d.textbbox((0, 0), NAME, font=name_f)
     tb = d.textbbox((0, 0), TAGLINE, font=tag_f)
     icon = round(ICON_PX * k)
     h = (nb[3] - nb[1]) + round(9 * k) + (tb[3] - tb[1])
@@ -102,7 +112,7 @@ def filigrane(hauteur, encre, opacite=FILIGRANE_OPACITE):
 
     toile = Image.new("RGBA", (round(900 * k), round(160 * k)), (0, 0, 0, 0))
     d = ImageDraw.Draw(toile)
-    nb = d.textbbox((0, 0), "EthniAfrica", font=name_f)
+    nb = d.textbbox((0, 0), NAME, font=name_f)
     tb = d.textbbox((0, 0), TAGLINE, font=tag_f)
     stack_h = (nb[3] - nb[1]) + lead + (tb[3] - tb[1])
 
@@ -112,7 +122,7 @@ def filigrane(hauteur, encre, opacite=FILIGRANE_OPACITE):
     tx, ty = mark.width + gap, (bloc_h - stack_h) / 2
 
     toile.alpha_composite(mark, (0, round((bloc_h - mark.height) / 2)))
-    d.text((tx - nb[0], ty - nb[1]), "EthniAfrica", font=name_f, fill=WHITE)
+    d.text((tx - nb[0], ty - nb[1]), NAME, font=name_f, fill=WHITE)
     d.text((tx - tb[0], ty + (nb[3] - nb[1]) + lead - tb[1]), TAGLINE, font=tag_f, fill=WHITE)
 
     toile = toile.crop(toile.getbbox())
@@ -146,7 +156,7 @@ def draw_lockup(im, scale=1.0):
 
     name_f, tag_f = _fraunces(round(NAME_PX * k), 900), _fraunces(round(TAG_PX * k), 700)
     gap = round(GAP_PX * k)
-    nb = d.textbbox((0, 0), "EthniAfrica", font=name_f)
+    nb = d.textbbox((0, 0), NAME, font=name_f)
     tb = d.textbbox((0, 0), TAGLINE, font=tag_f)
     text_w = max(nb[2] - nb[0], tb[2] - tb[0])
     lead = round(9 * k)
@@ -171,7 +181,7 @@ def draw_lockup(im, scale=1.0):
     # mid-video. The halo keeps one mark and makes it legible on both.
     halo = Image.new("RGBA", im.size)
     hd = ImageDraw.Draw(halo)
-    hd.text((tx - nb[0], ty - nb[1]), "EthniAfrica", font=name_f, fill=(0, 0, 0, 255))
+    hd.text((tx - nb[0], ty - nb[1]), NAME, font=name_f, fill=(0, 0, 0, 255))
     hd.text((tx - tb[0], tly - tb[1]), TAGLINE, font=tag_f, fill=(0, 0, 0, 255))
     halo.alpha_composite(mark, (x, round(y + (block_h - mark.height) / 2)))
     halo = halo.filter(ImageFilter.GaussianBlur(round(max(2, 7 * k))))
@@ -179,7 +189,7 @@ def draw_lockup(im, scale=1.0):
     im.alpha_composite(halo)
 
     im.alpha_composite(mark, (x, round(y + (block_h - mark.height) / 2)))
-    d.text((tx - nb[0], ty - nb[1]), "EthniAfrica", font=name_f, fill=WHITE)
+    d.text((tx - nb[0], ty - nb[1]), NAME, font=name_f, fill=WHITE)
 
     # The tagline is a gradient, so it is drawn as a mask over a ramp rather than in
     # a flat colour — the same treatment the approved brand ending uses.

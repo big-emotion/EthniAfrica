@@ -29,11 +29,17 @@ absolute path is ever written down.
 import pathlib
 import re
 
+import ethni_kit
+
 HARNESS = pathlib.Path(__file__).resolve().parent
 REPO = HARNESS.parents[1]
 GABARITS = REPO / "docs" / "design" / "gabarits-social"
 SPEC = GABARITS / "GABARITS-SOCIAL.md"
 FONTS = HARNESS / "fonts"
+
+# The pillars and accents belong to the brand kit; the charter tokens they name are
+# still read from the design system below.
+_KIT = ethni_kit.active()
 
 # §6 — the enlargement ceiling, and the one line B allows under its word.
 #
@@ -54,23 +60,10 @@ QUOTA_B_MAX = 2
 SAFE_FLOOR_9_16 = 1620
 
 # §2 — one accent per surface, and the pillar decides which.
-PILIER_ACCENT = {
-    "EthniAfrica": "ocre",
-    "Les dossiers": "teal",
-    "Jouer": "perv",
-}
+PILIER_ACCENT = dict(_KIT["pillar_accent"])
 
 # §2 — the same accent is a different ink on each ground.
-ACCENT_TOKEN = {
-    ("ocre", "nuit"): "--afh-night-ocre-soft",
-    ("teal", "nuit"): "--afh-cat-teal",
-    ("terre", "nuit"): "--afh-cat-terre-ink-night",
-    ("perv", "nuit"): "--afh-cat-perv",
-    ("ocre", "parchemin"): "--afh-cat-ocre-ink",
-    ("teal", "parchemin"): "--afh-cat-teal-ink",
-    ("terre", "parchemin"): "--afh-cat-terre-ink",
-    ("perv", "parchemin"): "--afh-cat-perv-ink",
-}
+ACCENT_TOKEN = {tuple(key.split("|")): token for key, token in _KIT["accent_tokens"].items()}
 
 # §2 — decorative only. It fails AA at caption size, and a credit is a legal
 # obligation, so it is the one place the failure is not cosmetic.
@@ -128,7 +121,7 @@ def accent(name, fond):
 # 2026-09-22 — the project is never printed as « L'atlas ». Decks the workshop
 # filed before the rename still carry the old name, so it is read as the new one
 # rather than refused: a refusal would block every old deck's re-render.
-PILIER_RETIRE = {"L'atlas": "EthniAfrica"}
+PILIER_RETIRE = dict(_KIT["retired_pillars"])
 
 
 def pilier_courant(pilier):

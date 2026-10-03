@@ -1,0 +1,30 @@
+{
+  "name": "EthniAfrica",
+  "tagline": "L’Afrique à travers ses noms",
+  "logo": "ethniafrica-logo.png",
+  "wordmark_face": "fonts/Fraunces.ttf",
+  "call_to_action": "ethniafrica.com",
+  "footer_line": "ethniafrica.com · @ethniafrica",
+  "faces": {
+    "anton": "fonts/Anton-Regular.ttf",
+    "nunito": "fonts/NunitoSans.ttf"
+  },
+  "pillar_accent": {
+    "EthniAfrica": "ocre",
+    "Les dossiers": "teal",
+    "Jouer": "perv"
+  },
+  "retired_pillars": {
+    "L'atlas": "EthniAfrica"
+  },
+  "accent_tokens": {
+    "ocre|nuit": "--afh-night-ocre-soft",
+    "teal|nuit": "--afh-cat-teal",
+    "terre|nuit": "--afh-cat-terre-ink-night",
+    "perv|nuit": "--afh-cat-perv",
+    "ocre|parchemin": "--afh-cat-ocre-ink",
+    "teal|parchemin": "--afh-cat-teal-ink",
+    "terre|parchemin": "--afh-cat-terre-ink",
+    "perv|parchemin": "--afh-cat-perv-ink"
+  }
+}
