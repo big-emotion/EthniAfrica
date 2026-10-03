@@ -10,7 +10,7 @@
       "selfAppellation": "Nganguela (forme que les groupes de l'est de l'Angola utilisent pour se designer; signifie 'source du soleil' ou 'lieu du soleil levant' en Luchazi)",
       "exonyms": ["Ganguela", "Ngangela", "Nganguela"],
       "originOfExonyms": "Ganguela (prononce gang'ela) est le terme pejoratif applique par les Ovimbundu aux peuples vivant a l'est et au sud-est d'eux. Ce terme fut adopte par les Portugais comme categorie de recensement colonial regroupant des peuples distincts. Nganguela est la transcription plus fidele de la denomination endogene et fut utilisee par les missionnaires et commerçants Vimbundu des le XVIIIe siecle pour designer les tribus de l'est-central de l'Angola.",
-      "whyProblematic": "PPL_NGANGUELA est quasi-identique a PPL_GANGUELA (deja traite dans ce projet). Les deux fiches designent le meme ensemble de peuples de l'est de l'Angola, PPL_GANGUELA utilisant la forme coloniale portugaise et PPL_NGANGUELA la forme endogene. Il s'agit d'un probable doublon resultant d'une double indexation du meme groupe ethnographique sous deux orthographes. La fiche PPL_NGANGUELA est maintenue pour indexer specificite de la designation endogene Nganguela par opposition a la designation exonyme Ganguela.",
+      "whyProblematic": "Ganguela et Nganguela sont un seul nom, écrit de deux façons : il n'y a pas deux ensembles de peuples à tenir distincts. Les Ovimbundu l'ont appliqué, avec une nuance péjorative, aux peuples vivant à l'est et au sud-est d'eux, et les Portugais en ont fait une catégorie de recensement qui regroupait des groupes indépendants. Aucune identité commune ne réunissait ces groupes avant cette catégorie : les Luchazi, les Mbunda, les Lwena, les Nyemba et les autres emploient chacun leur propre nom.",
       "contemporaryUsage": "En Angola, Ganguela est la designation officielle administrative. Dans la litterature academique, Nganguela ou Ngangela sont preferes. Les groupes individuels (Luchazi, Mbunda, Lwena/Luena, Nyemba, Nkangala, etc.) preferent leurs propres appellations distinctes.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantu zone K (Ngangela-Nyemba, Chokwe-Luchazi), Niger-Congo",
@@ -75,7 +75,7 @@
     "demography": {
       "totalPopulation": 1200000,
       "referenceYear": 2025,
-      "source": "Estimation basee sur les donnees du recensement angolais et les estimations de la Banque mondiale. La categorie Ganguela representait environ 6% de la population angolaise selon les statistiques coloniales. Population de l'Angola 2025 environ 37 millions. Chiffre inferieur a celui des Ganguela (1 500 000) car cette fiche se concentre sur le territoire angolais sans inclure les Mbunda de Zambie deja comptabilises dans ce chiffre.",
+      "source": "Estimation basee sur les donnees du recensement angolais et les estimations de la Banque mondiale. La categorie Ganguela representait environ 6% de la population angolaise selon les statistiques coloniales. Population de l'Angola 2025 environ 37 millions. Cette estimation se limite au territoire angolais : les Mbunda de Zambie n'y sont pas comptés.",
       "distributionByCountry": [
         {
           "country": "AGO",
@@ -107,6 +107,11 @@
       {
         "title": "Angola – Ethnic Groups – Country Studies",
         "url": "https://countrystudies.us/angola/56.htm",
+        "tier": "referenced"
+      },
+      {
+        "title": "Angola — Nganguela — Country Studies (Library of Congress)",
+        "url": "https://countrystudies.us/angola/63.htm",
         "tier": "referenced"
       }
     ]

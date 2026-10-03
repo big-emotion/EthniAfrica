@@ -824,7 +824,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
     ],
     entities: [
       { kind: "people", id: "PPL_NANKANA", label: "Nankana (Frafra)" },
-      { kind: "people", id: "PPL_BUSANSI", label: "Bissa" },
+      { kind: "people", id: "PPL_BISSA", label: "Bissa" },
       { kind: "people", id: "PPL_MADI", label: "Ma'di" },
       { kind: "country", id: "GHA", label: "Ghana" },
       { kind: "country", id: "BFA", label: "Burkina Faso" },
