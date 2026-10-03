@@ -15,8 +15,18 @@
     "queries": ["fetiche", "fetiches", "fetichisme"]
   },
   "publications": [
-    { "network": "tiktok", "format": "carrousel" },
-    { "network": "instagram", "format": "carrousel" }
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7692379519587536150",
+      "publishedAt": "2026-10-03"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/DeBzHOnCOc1/",
+      "publishedAt": "2026-10-03"
+    }
   ],
   "sources": [
     {
