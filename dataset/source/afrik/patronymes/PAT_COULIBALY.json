@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Dossier court fondé sur le passage du corpus AFRIK référencé ; ne pas étendre les affirmations sans source dédiée."
+    "directives": "Fiche recentrée sur le nom (2026-10-03), passe de correction : chaque piste d'origine est attribuée à qui la porte et citée à la page dans les notes de sa source ; aucune n'est retenue comme la bonne. Ne pas étendre sans source dédiée."
   },
   "id": "PAT_COULIBALY",
   "nameMain": "Coulibaly",
@@ -56,7 +56,16 @@
       "attestations": [
         {
           "countryId": "MLI",
-          "sourceRefs": ["gha-v-16-18"]
+          "sourceRefs": ["hga-v-izard-kizerbo"]
+        }
+      ]
+    },
+    {
+      "spelling": "Koulibali",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["hga-v-izard-kizerbo"]
         }
       ]
     }
@@ -64,18 +73,62 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
+    "oralTraditions": [
+      {
+        "claim": "Le récit d'origine des dynasties bambara raconte que deux frères, Baramangolo et Niangolo, poursuivis par un ennemi et sans pirogue, ont traversé le fleuve grâce à un énorme silure, le m'polio, qui les a sauvés de justesse. Baramangolo demande ensuite asile aux Buare, des Soninké de Ségou, qui lui accordent un territoire à part, et Niangolo bâtit une place forte à Baïko.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Michel Izard et Joseph Ki-Zerbo",
+        "context": "Synthèse historique publiée par l'UNESCO, édition française de 1999",
+        "sourceRefs": ["hga-v-izard-kizerbo"]
+      },
+      {
+        "claim": "Les Coulibaly viendraient de Dyogo, un village proche de Ségou.",
+        "claimStatus": "claimed",
+        "carrier": "Des griots que Molinie ne nomme pas",
+        "collection": "mediated",
+        "collector": "Molinie, officier de la marine française, en 1959",
+        "context": "Récit tiré d'un dictionnaire rédigé pour les Européens en poste en Afrique-Occidentale française, cité de seconde main dans un mémoire de 2017 qui met en garde contre ses généralisations sans fondement",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "Le silure npolyo, le poisson du récit de la traversée, compte parmi les interdits des Coulibaly ; la branche aînée, celle de Niangolo, s'interdit aussi le lion et l'hippopotame. Une explication populaire du nom Kasanbara, porté par des Dogon de Bandiagara et des Bambara de Mopti et tenu pour équivalent de Coulibaly, le tire de kásaa ń bàra, « je sens le poisson », et met en scène un frère cadet Coulibaly qui a mangé un silure. Le même dictionnaire note une origine commune des Coulibaly et des Keïta, et donne la devise « Masa Kuru ni Masa Donde ! » comme celle de Biton Coulibaly.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "V. Vydrine et A. Davydov, dont les matériaux sont publiés dans le dictionnaire des noms de clan et dans un mémoire de 2017",
+        "context": "Notes de dictionnaire, sans indication de lieu ni d'informateur",
+        "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "D'autres récits font venir les Coulibaly de la rive sud du fleuve, et même de Kong, et leur font passer le fleuve, par exemple sur un silure.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "E. A. Bogacheva, qui les résume sans nommer de conteur",
+        "context": "Récits résumés en russe dans un mémoire universitaire de 2017",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ],
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
+        "claim": "Le dictionnaire des noms de clan mandingues écrit le nom Kùlibàli, avec la forme Kùlubàli, et le définit seulement comme un nom de clan, sans lui donner de sens.",
         "claimStatus": "established",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
+        "sourceRefs": ["bamadaba-jamuw"]
       },
       {
-        "claim": "Le récit d'origine des dynasties bambara fait traverser le fleuve sans pirogue aux deux frères Baramangolo et Niangolo ; de cette traversée est tiré le patronyme Kulibali (Kurubari), de kulu « pirogue » et du privatif bali. La source qui l'énonce ajoute aussitôt qu'il en existe d'autres.",
+        "claim": "Une explication tire le nom de la traversée du fleuve sans pirogue : Koulibali viendrait de kulu, « pirogue », et du privatif bali. La source qui la donne ajoute aussitôt qu'il en existe d'autres.",
         "claimStatus": "contested",
-        "sourceRefs": ["gha-v-16-18"]
+        "sourceRefs": ["hga-v-izard-kizerbo"]
+      },
+      {
+        "claim": "Une étude de 2017 propose de lire l'explication « sans pirogue » en sens inverse : elle pourrait désigner des ancêtres qui n'ont pas traversé et sont restés sur la rive nord du Niger, à laquelle l'étude rattache historiquement les Coulibaly, avec Koulikoro, Bamako et le Kaarta. L'étude y range aussi Ségou, que la synthèse de l'UNESCO place pourtant sur la rive droite, au sud.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "Une autre lecture part des formes Kudubali ou Kurubali, qui contiendraient kuluba, « la grande colline », comme la colline de Koulouba à Bamako. L'étude de 2017 qui la propose tient cette traduction pour très plausible et la range parmi les étymologies savantes probables, tout en notant que le nom ne se ramène avec certitude à aucun nom de lieu.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
       }
     ]
   },
@@ -118,7 +171,7 @@
       "targetPatronymeId": "PAT_KEITA",
       "allianceType": "sanankuya",
       "sourceRefs": [
-        "gha-v-16-18",
+        "hga-v-izard-kizerbo",
         "bamadaba-jamuw",
         "canut-2002-senankuya",
         "canut-smith-2006-pactes",
@@ -144,8 +197,8 @@
   "bearers": [
     {
       "status": "deceased",
-      "displayName": "Mamari Kulibali, dit Biton Coulibaly (1712-1755)",
-      "sourceRefs": ["gha-v-16-18"]
+      "displayName": "Mamari Koulibali, dit Biton Coulibaly (1712-1755)",
+      "sourceRefs": ["hga-v-izard-kizerbo"]
     }
   ],
   "homonyms": [],
@@ -159,28 +212,12 @@
       "notes": "Reprise du chapitre « Organisation clanique » de la fiche du peuple Bambara."
     },
     {
-      "sourceKey": "jansen-sunjata-paradigm",
-      "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
-      "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
-      "tier": "referenced",
-      "source_kind": "academic",
-      "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
-    },
-    {
-      "sourceKey": "gha-v-16-18",
-      "title": "General History of Africa, V: Africa from the Sixteenth to the Eighteenth Century",
-      "url": "https://archive.org/details/unesco_general_history_africa_v",
-      "tier": "official",
-      "source_kind": "intergovernmental",
-      "notes": "UNESCO, Histoire générale de l'Afrique, vol. V, dir. B. A. Ogot, 1992 ; consulté sur le texte intégral. Chapitre 12, « From the Niger to the Volta » (M. Izard et J. Ki-Zerbo) : le sanankunya entre les Kulibali (Kurubari) et les Keita ou les Ture, donné comme indice de relations anciennes entre Bambara et Malinké (p. 330) ; l'étymologie kulu « pirogue » + bali privatif, tirée de la traversée du fleuve sans pirogue, assortie par la source elle-même de la mention qu'il en existe d'autres (p. 330 n. 7) ; la généalogie de Mamari Kulibali dit Biton (1712-1755), arrière-petit-fils de Baramangolo par Kaladian, Danfassari et Soma (p. 330-333). Chapitre 13, « The states and cultures of the Upper Guinean coast » (C. Wondji) : la migration des Kongo-Vai depuis le haut Niger sous la conduite du clan Camara, vers Bopolou puis les rivières Mano et Moa, et le déplacement corrélé des Kono et des Vai vers les côtes du Liberia et de la Sierra Leone (p. 375-377)."
-    },
-    {
       "sourceKey": "bamadaba-jamuw",
       "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
       "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs, et la lecture retenue est celle que le fichier impose : \\ca porte les termes de statut mandingues eux-mêmes (nùmu, jèli, hɔ́rɔn, garanke, finɛ, tontigi, wage, gesere) ; \\sn se lit senankun parce que l'entrée Kúyate annote sa propre ligne « \\sn Keyita » d'une réserve disant que cette relation-là est une entente amicale et non un senankuya. Les liens \\sn ne sont pas systématiquement réciproques d'une entrée à l'autre : chaque paire est donc citée d'après l'entrée qui la porte, nommée dans le claim ou le gap."
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), signalée par Vydrin dans Mandenkan 63, 2020, p. 89-110. Fichier complet consulté. L'entrée Kùlibàli donne la forme Kùlubàli, les groupes bambara, malinké, minianka, peul, kagoro et soninké, les statuts hɔ́rɔn, puis tontigi chez les Bamana, les Maninka et les Minianka, et numu (forgeron) au Wassoulou, le silure npolyo parmi les interdits, le lion et l'hippopotame pour la branche aînée de Niangolo, et la devise de Biton Kulibali ; elle ne donne aucun sens au nom. Les paires de plaisanterie de cette fiche sont portées par les entrées Kéyità et Fófana, qui nomment Kulibali ; l'entrée Kéyità note aussi une origine commune avec Kulibali, et l'entrée Kásanbàra donne Kùlibàli pour équivalent. Les liens de plaisanterie ne sont pas toujours réciproques d'une entrée à l'autre : chaque paire est citée d'après l'entrée qui la porte, qui peut être celle de l'autre nom."
     },
     {
       "sourceKey": "canut-2002-senankuya",
@@ -221,6 +258,22 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Note que la célébration de ces chartes a suscité du scepticisme chez ceux qui s'interrogent sur leur origine, donc sur leur âge, et renvoie aux travaux de Jan Jansen qui les lit comme des interventions dans une politique culturelle disputée."
+    },
+    {
+      "sourceKey": "hga-v-izard-kizerbo",
+      "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 12, Du Niger à la Volta",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de M. Izard et J. Ki-Zerbo. Pages imprimées : la parenté à plaisanterie entre Koulibali (Kurubari) et Keita ou Touré, donnée comme indice de relations fort anciennes entre Bambara et Malinké, et le récit des deux frères Baramangolo et Niangolo passant le fleuve sans pirogue grâce à un énorme silure, puis l'asile de Baramangolo chez les Buare de Ségou, sur la rive droite du Niger (p. 372) ; l'explication du nom par kulu, « pirogue », et bali, privatif, assortie de la mention qu'il en existe d'autres (p. 372, note 7) ; Kaladian Koulibali et Mamari Koulibali (1712-1755), arrière-petit-fils de Baramangolo (p. 374) ; l'origine du surnom Biton (p. 375)."
+    },
+    {
+      "sourceKey": "bogacheva-2017-jamu",
+      "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+      "url": "https://hdl.handle.net/11701/10975",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bogacheva, E. A., mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Notice Kásanbàra : l'explication populaire par kásaa ń bàra et le frère cadet Coulibaly qui a mangé un silure, sans indication de provenance (p. 80). Notice Kùlibàli, p. 94-96 : le silure npolyo parmi les interdits du clan (p. 95) ; l'origine à Dyogo, près de Ségou, d'après Molinie 1959, les récits d'une traversée depuis la rive sud, la lecture inverse de l'explication « sans pirogue » et celle par kuluba, « la grande colline » (p. 96). Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par V. Vydrine et A. Davydov, sans lieu ni informateur. Molinie, officier de marine, rédigeait un dictionnaire destiné aux Européens en poste en Afrique-Occidentale française et s'appuyait sur des griots qu'il ne nomme pas ; le mémoire met en garde contre ses généralisations. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet."
     }
   ],
   "gaps": [

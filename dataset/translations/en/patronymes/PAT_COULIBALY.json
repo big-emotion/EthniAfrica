@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Dossier court fondé sur le passage du corpus AFRIK référencé ; ne pas étendre les affirmations sans source dédiée."
+    "directives": "Fiche recentrée sur le nom (2026-10-03), passe de correction : chaque piste d'origine est attribuée à qui la porte et citée à la page dans les notes de sa source ; aucune n'est retenue comme la bonne. Ne pas étendre sans source dédiée."
   },
   "id": "PAT_COULIBALY",
   "nameMain": "Coulibaly",
@@ -43,24 +43,76 @@
     },
     {
       "spelling": "Kurubari",
-      "attestations": [{ "countryId": "MLI", "sourceRefs": ["gha-v-16-18"] }]
+      "attestations": [
+        { "countryId": "MLI", "sourceRefs": ["hga-v-izard-kizerbo"] }
+      ]
+    },
+    {
+      "spelling": "Koulibali",
+      "attestations": [
+        { "countryId": "MLI", "sourceRefs": ["hga-v-izard-kizerbo"] }
+      ]
     }
   ],
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
+    "oralTraditions": [
+      {
+        "claim": "The origin narrative of the Bambara dynasties tells of two brothers, Baramangolo and Niangolo, pursued by an enemy and without a canoe, who crossed the river thanks to an enormous catfish, the m'polio, which saved them just in time. Baramangolo then asks the Buare, Soninke of Ségou, for refuge, and they grant him a separate territory, while Niangolo builds a fortified town at Baïko.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Michel Izard et Joseph Ki-Zerbo",
+        "context": "Historical synthesis published by UNESCO, French edition of 1999",
+        "sourceRefs": ["hga-v-izard-kizerbo"]
+      },
+      {
+        "claim": "The Coulibaly are said to come from Dyogo, a village near Ségou.",
+        "claimStatus": "claimed",
+        "carrier": "Des griots que Molinie ne nomme pas",
+        "collection": "mediated",
+        "collector": "Molinie, officier de la marine française, en 1959",
+        "context": "Account taken from a dictionary written for Europeans posted in French West Africa, cited second-hand in a 2017 thesis that warns against its unfounded generalisations",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "The npolyo catfish, the fish of the river-crossing narrative, is among the Coulibaly taboos; the senior branch, that of Niangolo, also forbids itself the lion and the hippopotamus. A folk etymology of the name Kasanbara, borne by Dogon of Bandiagara and Bambara of Mopti and held to be equivalent to Coulibaly, derives it from kásaa ń bàra, \"I smell of fish\", and features a younger Coulibaly brother who ate a catfish. The same dictionary notes a common origin of the Coulibaly and the Keïta, and gives the motto \"Masa Kuru ni Masa Donde!\" as that of Biton Coulibaly.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "V. Vydrine et A. Davydov, dont les matériaux sont publiés dans le dictionnaire des noms de clan et dans un mémoire de 2017",
+        "context": "Dictionary notes, with no indication of place or informant",
+        "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "Other narratives bring the Coulibaly from the south bank of the river, and even from Kong, and have them cross the river, for example on a catfish.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "E. A. Bogacheva, qui les résume sans nommer de conteur",
+        "context": "Narratives summarised in Russian in a 2017 university thesis",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ],
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "The jamu is a patrilineal clan name: it designates membership in a descent group, not an individual filiation to the father.",
+        "claim": "The dictionary of Mandinka clan names writes the name Kùlibàli, with the form Kùlubàli, and defines it only as a clan name, without giving it a meaning.",
         "claimStatus": "established",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
+        "sourceRefs": ["bamadaba-jamuw"]
       },
       {
-        "claim": "The origin narrative of the Bambara dynasties has the two brothers Baramangolo and Niangolo cross the river without a canoe; from this crossing the family name Kulibali (Kurubari) is drawn, from kulu \"canoe\" and the privative bali. The source that states it immediately adds that other versions exist.",
+        "claim": "One explanation derives the name from the crossing of the river without a canoe: Koulibali would come from kulu, \"canoe\", and the privative bali. The source that gives it adds at once that there are others.",
         "claimStatus": "contested",
-        "sourceRefs": ["gha-v-16-18"]
+        "sourceRefs": ["hga-v-izard-kizerbo"]
+      },
+      {
+        "claim": "A 2017 study proposes reading the \"without a canoe\" explanation in the opposite sense: it could refer to ancestors who did not cross and remained on the north bank of the Niger, to which the study historically links the Coulibaly, with Koulikoro, Bamako and Kaarta. The study also places Ségou there, which the UNESCO synthesis nevertheless locates on the right bank, to the south.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "Another reading starts from the forms Kudubali or Kurubali, which would contain kuluba, \"the great hill\", like the hill of Koulouba in Bamako. The 2017 study that proposes it considers this translation very plausible and ranks it among the probable learned etymologies, while noting that the name cannot be traced with certainty to any place name.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
       }
     ]
   },
@@ -103,7 +155,7 @@
       "targetPatronymeId": "PAT_KEITA",
       "allianceType": "sanankuya",
       "sourceRefs": [
-        "gha-v-16-18",
+        "hga-v-izard-kizerbo",
         "bamadaba-jamuw",
         "canut-2002-senankuya",
         "canut-smith-2006-pactes",
@@ -123,14 +175,14 @@
     }
   ],
   "casteOrSocialFunction": {
-    "value": "The dictionary of jamuw gives the entry Kùlibàli the status hɔ́rɔn, then tontigi among the Bamana, the Maninka and the Minianka, then numu (blacksmith) in Wassoulou. The jamu thus carries both a free condition and, depending on the area, a hereditary craft function.",
+    "value": "The dictionary of jamuw gives the entry Kùlibàli the status hɔ́rɔn, then tontigi among the Bamana, Maninka and Minianka, then numu (blacksmith) in Wassoulou. The jamu thus carries both a free condition and, depending on the area, a hereditary artisanal function.",
     "sourceRefs": ["bamadaba-jamuw"]
   },
   "bearers": [
     {
       "status": "deceased",
-      "displayName": "Mamari Kulibali, dit Biton Coulibaly (1712-1755)",
-      "sourceRefs": ["gha-v-16-18"]
+      "displayName": "Mamari Koulibali, dit Biton Coulibaly (1712-1755)",
+      "sourceRefs": ["hga-v-izard-kizerbo"]
     }
   ],
   "homonyms": [],
@@ -141,23 +193,7 @@
       "url": null,
       "tier": "unverified",
       "source_kind": "repository",
-      "notes": "Taken from the \"Clan organisation\" chapter of the Bambara people's fiche."
-    },
-    {
-      "sourceKey": "jansen-sunjata-paradigm",
-      "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
-      "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
-      "tier": "referenced",
-      "source_kind": "academic",
-      "notes": "Jansen, Jan, Universiteit Leiden. Critical work on the transmission of the epic and on the jamu as a social institution rather than as historical memory; used here for the nature of the jamu, not to date an ancestor."
-    },
-    {
-      "sourceKey": "gha-v-16-18",
-      "title": "General History of Africa, V: Africa from the Sixteenth to the Eighteenth Century",
-      "url": "https://archive.org/details/unesco_general_history_africa_v",
-      "tier": "official",
-      "source_kind": "intergovernmental",
-      "notes": "UNESCO, General History of Africa, vol. V, ed. B. A. Ogot, 1992; consulted in full text. Chapter 12, \"From the Niger to the Volta\" (M. Izard and J. Ki-Zerbo): the sanankunya between the Kulibali (Kurubari) and the Keita or the Ture, given as an indication of long-standing relations between Bambara and Malinke (p. 330); the etymology kulu \"canoe\" + privative bali, drawn from the crossing of the river without a canoe, accompanied by the source's own note that other versions exist (p. 330 n. 7); the genealogy of Mamari Kulibali, known as Biton (1712-1755), great-grandson of Baramangolo through Kaladian, Danfassari and Soma (p. 330-333). Chapter 13, \"The states and cultures of the Upper Guinean coast\" (C. Wondji): the migration of the Kongo-Vai from the upper Niger under the leadership of the Camara clan, towards Bopolou and then the Mano and Moa rivers, and the correlated displacement of the Kono and the Vai towards the coasts of Liberia and Sierra Leone (p. 375-377)."
+      "notes": "Taken from the \"Clan organisation\" chapter of the fiche of the Bambara people."
     },
     {
       "sourceKey": "bamadaba-jamuw",
@@ -165,7 +201,7 @@
       "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Onomastic annex of the Bamadaba, an electronic Bambara-French dictionary supplementing the Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA); the clan names annex is identified as such by Vydrin, \"Vers une lexicographie mandingue sur la base de grands corpus annotés\", Mandenkan 63, 2020, p. 89-110. 375 entries in MDF format, consulted in the complete file. The file provides no legend for its markers, and the reading adopted is the one the file imposes: \\ca carries the Mandingo status terms themselves (nùmu, jèli, hɔ́rɔn, garanke, finɛ, tontigi, wage, gesere); \\sn is read as senankun because the Kúyate entry annotates its own line \"\\sn Keyita\" with a caveat stating that this particular relation is a friendly agreement and not a senankuya. The \\sn links are not systematically reciprocal from one entry to another: each pair is therefore cited according to the entry that carries it, named in the claim or the gap."
+      "notes": "Appendix of clan names of the Bamadaba, the electronic Bambara-French dictionary of the Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), pointed out by Vydrin in Mandenkan 63, 2020, pp. 89-110. Complete file consulted. The entry Kùlibàli gives the form Kùlubàli, the Bambara, Malinke, Minianka, Fulani, Kagoro and Soninke groups, the statuses hɔ́rɔn, then tontigi among the Bamana, Maninka and Minianka, and numu (blacksmith) in Wassoulou, the npolyo catfish among the taboos, the lion and the hippopotamus for the senior branch of Niangolo, and the motto of Biton Kulibali; it gives no meaning to the name. The joking pairs of this fiche are carried by the entries Kéyità and Fófana, which name Kulibali; the entry Kéyità also notes a common origin with Kulibali, and the entry Kásanbàra gives Kùlibàli as its equivalent. Joking ties are not always reciprocal from one entry to another: each pair is cited from the entry that carries it, which may be that of the other name."
     },
     {
       "sourceKey": "canut-2002-senankuya",
@@ -173,7 +209,7 @@
       "url": "https://journals.openedition.org/praxematique/2307",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Canut, Cécile, Cahiers de praxématique, number 38, 2002, p. 175-197. Field survey in Mali. She states what the pact obliges: the relation holds in perpetuity for all descendants of the two lineages, marriage between them is prohibited — variably applied today, she specifies — and mutual assistance is owed without reservation. Cited for the obligation itself; it does not name the pair in this fiche, which is carried by the entries cited alongside it."
+      "notes": "Canut, Cécile, Cahiers de praxématique, number 38, 2002, pp. 175-197. Field survey in Mali. It states what the pact requires: the relationship holds in perpetuity for all descendants of the two lineages, marriage between them is prohibited — unevenly applied today, it specifies — and mutual aid is owed without reserve. Cited for the obligation itself; it does not name the pair of this fiche, which the entries cited alongside it carry."
     },
     {
       "sourceKey": "canut-smith-2006-pactes",
@@ -181,7 +217,7 @@
       "url": "https://doi.org/10.4000/etudesafricaines.6198",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Canut, Cécile, and Smith, Étienne, Cahiers d'études africaines, number 184, 2006, p. 687 and following. Cited for the caution it carries: the idea that joking kinship would ease conflicts is treated there as a hypothesis inherited from Radcliffe-Brown and taken up by conflict-resolution studies, thus as a discourse to be analysed rather than as a measured effect. The starting page is verified, the ending page is not."
+      "notes": "Canut, Cécile, and Smith, Étienne, Cahiers d'études africaines, number 184, 2006, pp. 687 ff. Cited for the caution it carries: the idea that joking kinship soothes conflicts is treated there as a hypothesis inherited from Radcliffe-Brown and taken up by conflict-resolution studies, hence as a discourse to be analysed and not as a measured effect. The first page is verified; the last page is not."
     },
     {
       "sourceKey": "unesco-manden-charter-2009",
@@ -189,7 +225,7 @@
       "url": "https://ich.unesco.org/en/RL/manden-charter-proclaimed-in-kurukan-fuga-00290",
       "tier": "official",
       "source_kind": "intergovernmental",
-      "notes": "Inscription of 2009. The entry describes a charter proclaimed at the beginning of the thirteenth century by the founder of the Mali Empire and an assembly of sages, whose words are transmitted orally from father to son within the Malinké clans. It does not mention the sanankuya."
+      "notes": "Inscription of 2009. The entry describes a charter proclaimed at the beginning of the thirteenth century by the founder of the Mali empire and an assembly of sages, whose words are transmitted orally from father to son within Malinke clans. It does not mention sanankuya."
     },
     {
       "sourceKey": "saibou-2023-kurukan-fuga",
@@ -197,7 +233,7 @@
       "url": "https://www.revues.scienceafrique.org/magana/texte/saibou2023/",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Cites article 7 of the charter: « il est institué entre les Mandenkas le Sanankunya (cousinage à plaisanterie) et le Tanamanyöya (forme de totémisme) ». Places the oral assembly around 1236 and states that the text was restored by griots during a seminar in Kankan, Guinea, in 1998, then translated into French and published in 2008."
+      "notes": "Cites article 7 of the charter: \"Sanankunya (joking cousinage) and Tanamanyöya (a form of totemism) are instituted among the Mandenkas.\" Places the oral assembly around 1236 and specifies that the text was reconstituted by griots during a seminar at Kankan, in Guinea, in 1998, then translated into French and published in 2008."
     },
     {
       "sourceKey": "mann-2022-hunters-oath",
@@ -206,37 +242,69 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Notes that the celebration of these charters has aroused scepticism among those who question their origin, and therefore their age, and refers to the work of Jan Jansen, who reads them as interventions in a disputed cultural politics."
+    },
+    {
+      "sourceKey": "hga-v-izard-kizerbo",
+      "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 12, Du Niger à la Volta",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, ed. B. A. Ogot, 1999; chapter by M. Izard and J. Ki-Zerbo. Printed pages: joking kinship between Koulibali (Kurubari) and Keita or Touré, given as an indication of very ancient relations between Bambara and Malinke, and the narrative of the two brothers Baramangolo and Niangolo crossing the river without a canoe thanks to an enormous catfish, then Baramangolo's refuge among the Buare of Ségou, on the right bank of the Niger (p. 372); the explanation of the name by kulu, \"canoe\", and bali, privative, with the mention that there are others (p. 372, note 7); Kaladian Koulibali and Mamari Koulibali (1712-1755), great-grandson of Baramangolo (p. 374); the origin of the nickname Biton (p. 375)."
+    },
+    {
+      "sourceKey": "bogacheva-2017-jamu",
+      "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+      "url": "https://hdl.handle.net/11701/10975",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bogacheva, E. A., bachelor's thesis, Saint Petersburg State University, 2017, in Russian; supervised by A. Davydov, reviewed by V. Vydrin. Entry Kásanbàra: the folk etymology through kásaa ń bàra and the younger Coulibaly brother who ate a catfish, with no indication of provenance (p. 80). Entry Kùlibàli, pp. 94-96: the npolyo catfish among the clan's taboos (p. 95); the origin at Dyogo, near Ségou, after Molinie 1959, the narratives of a crossing from the south bank, the inverse reading of the \"without a canoe\" explanation and that through kuluba, \"the great hill\" (p. 96). The data without indication of provenance come there, according to the author, from materials gathered by V. Vydrin and A. Davydov, with no place or informant. Molinie, a naval officer, was writing a dictionary intended for Europeans posted in French West Africa and relied on griots whom he does not name; the thesis warns against his generalisations. A bachelor's thesis is not a peer-reviewed publication: it is cited for the testimonies it relays."
     }
   ],
   "gaps": [
     {
       "fieldPath": "homonyms",
-      "reason": "Coulibaly transcribes the Manding Kulibali, which the dictionary of jamuw also writes as Kùlubàli and which the General History of Africa gives in the form Kurubari. None of these spellings corresponds to a distinct line of origin in the sources consulted."
+      "reason": "Coulibaly transcribes the Mandinka Kulibali, which the dictionary of jamuw also writes Kùlubàli and which the Histoire générale de l'Afrique gives in the form Kurubari. None of these spellings corresponds to a distinct lineage of origin in the sources consulted."
     }
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-09-29T16:20:37.767Z",
+    "translatedAt": "2026-10-03T10:01:04.881Z",
     "model": "claude-sonnet-5-5",
-    "sourceHash": "296fb0fbfb975d015f77a5c74dad519b8dd0af08f4cc8c99c1188b492feda63d",
+    "sourceHash": "03dc8c572695b642c26ceeb67508db29e437fa14b9521262e7a02ec5ce9987b5",
     "fieldHashes": {
-      "origin.linguisticReconstructions[0].claim": "14f92c91d5d99f18",
-      "origin.linguisticReconstructions[1].claim": "8c9ec6f6697947da",
+      "origin.oralTraditions[0].claim": "d4411d22a970b70d",
+      "origin.oralTraditions[0].context": "cbf4e5901b24f59d",
+      "origin.oralTraditions[1].claim": "aae845519483232b",
+      "origin.oralTraditions[1].context": "83b5b8282b41cc58",
+      "origin.oralTraditions[2].claim": "e70c0d9323f4899e",
+      "origin.oralTraditions[2].context": "c30e2badff10ce90",
+      "origin.oralTraditions[3].claim": "4e914a93a25854ed",
+      "origin.oralTraditions[3].context": "f73f0ef97dbf0d6e",
+      "origin.linguisticReconstructions[0].claim": "557fe0b61188c1f5",
+      "origin.linguisticReconstructions[1].claim": "61435f93e7f34b64",
+      "origin.linguisticReconstructions[2].claim": "df518dc9ca18a50e",
+      "origin.linguisticReconstructions[3].claim": "3a402ba80cecc3eb",
       "casteOrSocialFunction.value": "148bb553f3b25c6a",
       "sources[0].notes": "ae5f56f3682b91ff",
-      "sources[1].notes": "4e75f41a563c53c3",
-      "sources[2].notes": "3a5b80d26c30b0b6",
-      "sources[3].notes": "b80adb343411bfb9",
-      "sources[4].notes": "2c14e48c42d56e18",
-      "sources[5].notes": "79986afda62f44db",
-      "sources[6].notes": "53ac45265e444fe6",
-      "sources[7].notes": "a4e54a5f67982b0c",
-      "sources[8].notes": "2c7aa22ef02dfaab",
+      "sources[1].notes": "e0aa02918bc879d0",
+      "sources[2].notes": "2c14e48c42d56e18",
+      "sources[3].notes": "79986afda62f44db",
+      "sources[4].notes": "53ac45265e444fe6",
+      "sources[5].notes": "a4e54a5f67982b0c",
+      "sources[6].notes": "2c7aa22ef02dfaab",
+      "sources[7].notes": "f8f6b2666082c494",
+      "sources[8].notes": "6cc80c80905a9313",
       "gaps[0].reason": "e34bb27642ba5e03"
     },
     "reviewRequired": [
+      "origin.oralTraditions[0].context",
+      "origin.oralTraditions[1].context",
+      "origin.oralTraditions[2].context",
+      "origin.oralTraditions[3].context",
       "origin.linguisticReconstructions[0].claim",
-      "origin.linguisticReconstructions[1].claim"
+      "origin.linguisticReconstructions[1].claim",
+      "origin.linguisticReconstructions[2].claim",
+      "origin.linguisticReconstructions[3].claim"
     ]
   }
 }

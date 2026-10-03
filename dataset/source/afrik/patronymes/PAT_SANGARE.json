@@ -22,18 +22,7 @@
         },
         {
           "countryId": "GIN",
-          "sourceRefs": [
-            "rainer-trebbi-2012-political-power",
-            "iffono-wassoulou-tradition"
-          ]
-        },
-        {
-          "countryId": "CIV",
-          "sourceRefs": ["bensignor-1997-oumou-sangare", "forebears-sangare"]
-        },
-        {
-          "countryId": "BFA",
-          "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
+          "sourceRefs": ["iffono-wassoulou-tradition"]
         }
       ]
     },
@@ -45,8 +34,41 @@
           "sourceRefs": ["forebears-sangare"]
         },
         {
+          "countryId": "GIN",
+          "sourceRefs": [
+            "rainer-trebbi-2012-political-power",
+            "forebears-sangare"
+          ]
+        },
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["forebears-sangare"]
+        },
+        {
+          "countryId": "BFA",
+          "sourceRefs": ["diallo-2006-plaisanterie-peuls", "forebears-sangare"]
+        },
+        {
           "countryId": "SEN",
           "sourceRefs": ["forebears-sangare"]
+        }
+      ]
+    },
+    {
+      "spelling": "Sàngare",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
+    },
+    {
+      "spelling": "Sankare",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
         }
       ]
     }
@@ -54,30 +76,55 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
-    "writtenChronicles": [
+    "oralTraditions": [
       {
-        "claim": "Une étude des élites gouvernementales guinéennes décrit les porteurs de Sangaré comme originaires du Wassoulou : son consultant les classe comme Peuls intégrés linguistiquement et culturellement aux Malinkés, tandis que les sources divergent entre les deux appartenances.",
-        "claimStatus": "contested",
-        "sourceRefs": ["rainer-trebbi-2012-political-power"]
+        "claim": "Diallo, Diakité, Sidibé et Sangaré seraient les enfants d'une même mère peule. Dans ce récit, Diakité était le chef et Sangaré le savant.",
+        "claimStatus": "claimed",
+        "carrier": "Babou Condé, griot du village de Fadama, dans la préfecture de Kouroussa en Guinée",
+        "collection": "mediated",
+        "collector": "E. A. Bogacheva, lors d'entretiens menés en 2017",
+        "context": "Récit rapporté en russe dans un mémoire universitaire",
+        "sourceRefs": ["bogacheva-2017-jamu"]
       },
       {
-        "claim": "L'historien guinéen Aly Gilbert Iffono rapporte une tradition sur la fondation du Wassoulou, région à cheval sur le Mali, la Guinée et la Côte d'Ivoire : des migrants peuls venus du Fouta-Djalon, conduits par les frères Kali et Pathé Diallo, s'y seraient installés sous la protection d'un chef mandingue puis auraient perdu l'usage du peul, notamment après son interdiction par le conquérant Samori Touré. Selon ce même récit, Sangaré compte, avec Diallo, Sidibé et Diakité, parmi les quatre patronymes peuls emblématiques du Wassoulou, et des lignages mandingues auraient à leur tour adopté ces noms peuls au contact de leurs voisins ou de leurs anciens maîtres. La source elle-même présente cette dernière hypothèse comme l'une de plusieurs explications concurrentes à la disparition du peul dans la région, aux côtés d'un métissage par alliances matrimoniales.",
+        "claim": "Le Wassoulou aurait été fondé par des Peuls venus du Fouta-Djalon, conduits par Kali Diallo et secondés par son frère Pathé Diallo.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Aly Gilbert Iffono, historien guinéen, dans son Lexique historique de la Guinée-Conakry",
+        "context": "Tradition orale rapportée en français, connue ici par un article en ligne de 2024 qui la résume ; l'ouvrage d'Iffono n'a pas été lu directement",
+        "sourceRefs": ["iffono-wassoulou-tradition"]
+      }
+    ],
+    "writtenChronicles": [
+      {
+        "claim": "Un ouvrage écrit en n'ko par Souleymane Kanté fait descendre Diallo, Diakité, Sidibé et Sangaré d'un même groupe qu'il appelle jàtará, lui-même issu des Peuls. Le nom y est transcrit Sánkare dans la traduction.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "Aucun dictionnaire consulté ne donne de sens au mot. Le dictionnaire des noms de clan mandingues l'écrit Sàngare, avec la variante Sankare, le rattache aux Peuls, au Wassoulou et aux Malinké, et lui donne pour équivalents Bari, Si et Ba. Il relève aussi un surnom de plaisanterie, Kàngare.",
+        "claimStatus": "established",
+        "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "Une explication relie la présence du nom chez des lignages malinkés à un emprunt : des clans malinkés soumis par les Peuls auraient pris les noms de leurs maîtres, Sangaré, Diallo, Sidibé et Diakité. Cette explication n'est rapportée que par un article de presse en ligne.",
         "claimStatus": "contested",
         "sourceRefs": ["iffono-wassoulou-tradition"]
       },
       {
-        "claim": "Le Wassoulou peul a rejeté le système de castes propre aux sociétés mandingues : la société wassoulounkée traditionnelle ne compte pas de griots, à la différence de ses voisins malinké et bambara.",
-        "claimStatus": "established",
-        "sourceRefs": ["bensignor-1997-oumou-sangare"]
+        "claim": "Les Peuls du Wassoulou se reconnaissent traditionnellement par quatre noms : Diallo, Diakité, Sidibé et Sangaré. Ils ne parlent plus le peul aujourd'hui ; plusieurs raisons concurrentes en sont données, les mariages avec des femmes du pays, qui parlaient leur langue aux enfants, ou l'interdiction du peul par le conquérant Samori Touré.",
+        "claimStatus": "contested",
+        "sourceRefs": ["iffono-wassoulou-tradition"]
       },
       {
-        "claim": "Une étude sur les Peuls de l'ouest du Burkina Faso range Sangaré parmi les quatre clans peuls principaux, aux côtés de Diallo, Diakité et Sidibé, et décrit le couple Sidibé/Sangaré comme l'un des deux couples fondateurs de l'identité peule, unis par une relation à plaisanterie du fait de cette parenté mythique.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
+        "claim": "En Guinée, un consultant guinéen décrit les porteurs du nom comme originaires du Wassoulou, Peuls intégrés par la langue et les coutumes aux Malinké ; on les classe tantôt parmi les uns, tantôt parmi les autres.",
+        "claimStatus": "contested",
+        "sourceRefs": ["rainer-trebbi-2012-political-power"]
       },
       {
-        "claim": "Le nom compte parmi les noms de famille peuls du Mali, où les Foula du Wassoulou, dans les régions de Koulikoro, de Kita, de Bafoulabé et de Sikasso, se réclament de la grande famille peule bien qu'ils ne parlent plus la langue.",
+        "claim": "Au Mali, Sangaré compte parmi les noms de famille peuls, y compris chez les Foula du Wassoulou, dans les régions de Koulikoro, de Kita, de Bafoulabé et de Sikasso, qui se réclament de la grande famille peule bien qu'ils ne parlent plus la langue.",
         "claimStatus": "claimed",
         "sourceRefs": [
           "interpeace-autoportrait-mali-2015",
@@ -85,21 +132,14 @@
         ]
       },
       {
-        "claim": "Chez les Peuls de l'ouest du Burkina Faso, les Bingaabe sont classés au sein des Sangaré et entretiennent une relation de plaisanterie avec les Toroobe.",
+        "claim": "Chez les Peuls de l'ouest du Burkina Faso, Sangaré est donné comme l'un des quatre clans principaux des Peuls, avec Diallo, Diakité et Sidibé. Sidibé et Sangaré y forment l'un des deux couples du noyau mythique de l'identité peule, en relation d'équivalence, et les deux noms sont liés par une relation de plaisanterie.",
         "claimStatus": "claimed",
         "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
-        "claimStatus": "established",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
       },
       {
-        "claim": "Le dictionnaire électronique des noms claniques bambara ne recense pas Sangaré comme une entrée à part entière : le nom n'apparaît que cité comme partenaire à plaisanterie par cinq autres noms claniques (Bagayogo, Dansoko, Janka, Sidibé, So) et, une fois, comme variante peule équivalente sous l'entrée Bari.",
-        "claimStatus": "established",
-        "sourceRefs": ["bamadaba-jamuw"]
+        "claim": "Chez les Peuls de l'ouest du Burkina Faso, les Bingaabe sont habituellement classés dans le clan des Sangaré ; ils sont alliés à plaisanterie des Toroobe.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
       }
     ]
   },
@@ -148,7 +188,7 @@
     {
       "countryId": "CIV",
       "status": "attested",
-      "sourceRefs": ["bensignor-1997-oumou-sangare", "forebears-sangare"]
+      "sourceRefs": ["forebears-sangare"]
     },
     {
       "countryId": "BFA",
@@ -191,7 +231,10 @@
       ]
     }
   ],
-  "casteOrSocialFunction": null,
+  "casteOrSocialFunction": {
+    "value": "Aucune source consultée ne rattache le nom à un statut de caste ni à un métier héréditaire. La société du Wassoulou, à dominante peule, est décrite comme n'ayant jamais adopté le système de castes de ses voisins mandingues : on n'y trouve pas de griots.",
+    "sourceRefs": ["bensignor-1997-oumou-sangare"]
+  },
   "bearers": [],
   "homonyms": [
     {
@@ -209,7 +252,7 @@
       "url": "https://www.nber.org/papers/w18424.pdf",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Ilia Rainer et Francesco Trebbi, NBER Working Paper 18424, septembre 2012. L'annexe sur la Guinée, p. 43, explique séparément la classification de Diakite, Sidibe et Sangare : originaires du Wassoulou, décrits comme Peuls intégrés aux populations malinké, ils sont codés par les auteurs à parts égales peuls et malinké. Le document précise qu'il n'a pas été évalué par les pairs."
+      "notes": "Ilia Rainer et Francesco Trebbi, NBER Working Paper 18424, septembre 2012. L'annexe sur la Guinée, p. 42, explique séparément la classification de Diakite, Sidibe et Sangare : originaires du Wassoulou, décrits comme Peuls intégrés aux populations malinké, ils sont codés par les auteurs à parts égales peuls et malinké. Le document précise qu'il n'a pas été évalué par les pairs."
     },
     {
       "sourceKey": "iffono-wassoulou-tradition",
@@ -217,7 +260,7 @@
       "url": "https://guineeconakry.online/2024/05/07/histoire-du-wassoulou-ce-quil-faut-retenir/",
       "tier": "unverified",
       "source_kind": "community",
-      "notes": "Article d'actualité guinéen en ligne, non revu par les pairs, qui rapporte un récit attribué à l'historien Aly Gilbert Iffono (Lexique historique de la Guinée-Conakry, L'Harmattan, 1992) sur la fondation du Wassoulou et l'adoption de patronymes peuls par des lignages mandingues. L'ouvrage d'Iffono lui-même n'a pas été consulté directement ; la fiche s'appuie donc sur ce compte rendu de seconde main, non sur le texte original."
+      "notes": "Article de Justin Morel, publié en ligne le 7 mai 2024, non revu par les pairs. Il présente la fondation du Wassoulou par Kali et Pathé Diallo comme une tradition orale rapportée par l'historien guinéen Aly Gilbert Iffono (Lexique historique de la Guinée-Conakry, L'Harmattan, 1992). Les quatre noms des Peuls du Wassoulou, les raisons de la perte du peul et l'adoption de ces noms par des clans malinkés y sont donnés par l'article lui-même, sans qu'on puisse dire s'ils viennent d'Iffono. L'ouvrage d'Iffono n'a pas été lu directement."
     },
     {
       "sourceKey": "bensignor-1997-oumou-sangare",
@@ -225,7 +268,7 @@
       "url": "https://www.persee.fr/doc/homig_1142-852x_1997_num_1206_1_2939",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "François Bensignor, Hommes & Migrations, n°1206, mars-avril 1997, p. 137-139 (Persée). Décrit le Wassoulou comme un territoire à dominante peule au sud-est du Mali, aux confins de la Guinée, de la Côte d'Ivoire et du Burkina Faso, dont la société a rejeté le système de castes mandingue (absence de griots)."
+      "notes": "François Bensignor, Hommes & Migrations, n°1206, mars-avril 1997, p. 137-139 (Persée). Situe le Wassoulou, à dominante peule, au sud du Mali, près des frontières avec la Guinée, la Côte d'Ivoire et le Burkina Faso, et écrit que ses habitants n'ont jamais adopté le système de castes des peuples mandingues (absence de griots)."
     },
     {
       "sourceKey": "forebears-sangare",
@@ -249,15 +292,7 @@
       "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Sangaré n'y a pas d'entrée propre : le nom est seulement cité en tant que partenaire à plaisanterie (marqueur \\sn, lu senankun) par les entrées Bagayogo, Dansoko, Janka, Sidibe et So, et une fois comme variante équivalente (marqueur \\eq) sous l'entrée Bari, elle-même marquée d'une diffusion peule. Les liens \\sn ne sont pas systématiquement réciproques d'une entrée à l'autre : chaque paire est donc citée d'après l'entrée qui la porte."
-    },
-    {
-      "sourceKey": "jansen-sunjata-paradigm",
-      "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
-      "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
-      "tier": "referenced",
-      "source_kind": "academic",
-      "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée mandingue et sur le jamu comme institution sociale ; utilisé ici pour la nature patrilinéaire du jamu en tant que catégorie de descendance, une institution à laquelle les patronymes wassoulounkés d'origine peule se rattachent d'après les autres sources citées dans cette fiche."
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), signalée par Vydrin dans Mandenkan 63, 2020, p. 89-110. Fichier complet consulté. L'entrée Sàngare donne la variante Sankare, la rattache aux Peuls, au Wassoulou et aux Malinké, donne les équivalents Bari, Si et Ba, les partenaires de plaisanterie Sidibé et les forgerons (nùmu), et le surnom de plaisanterie Kàngare ; elle ne donne aucun sens au nom. Les entrées Bagayogo, Dansoko, Janka et So nomment aussi Sangaré parmi leurs partenaires de plaisanterie, et l'entrée Bari le donne pour équivalent. Les notes de l'entrée sont rédigées en russe et traduites ici par nous."
     },
     {
       "sourceKey": "canut-2002-senankuya",
@@ -290,13 +325,17 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Salif Sy, carnet de recherche ARLAP (Hypotheses.org), 18 février 2015. Billet d'un doctorant en langues africaines, sans relecture par des pairs, qui range Diallo, Diakité, Sidibé et Sangaré parmi les noms identifiés comme peuls au Mali. Cité pour attester le nom dans ce groupe et dans ce pays, non pour son origine."
+    },
+    {
+      "sourceKey": "bogacheva-2017-jamu",
+      "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+      "url": "https://hdl.handle.net/11701/10975",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bogacheva, E. A., mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Notice Jàlo, p. 53 : le récit du griot Babou Condé de Fadama, recueilli en 2017, qui fait des quatre noms les enfants d'une même mère peule (le mémoire attribue deux fois un rôle à Sidibé, gardien des richesses puis guerrier, et aucun à Diallo : nous ne reprenons que les rôles sans ambiguïté), et l'ascendance des quatre noms donnée par l'ouvrage en n'ko de Souleymane Kanté, dans son édition de 2004. Notice Sàngare, p. 120 : la variante Sankare, les équivalents Bari, Si et Ba, et le surnom de plaisanterie Kàngare, sans sens donné au nom. Le texte original en n'ko de Kanté n'a pas été lu ; seule sa traduction russe l'a été. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "casteOrSocialFunction",
-      "reason": "Le Wassoulou peul, dont Sangaré est l'un des patronymes emblématiques, est décrit comme une société sans caste héréditaire de type griot, à la différence de ses voisins mandingues. Aucune fonction sociale ou artisanale héréditaire propre à ce nom n'a par ailleurs été documentée."
-    },
     {
       "fieldPath": "bearers",
       "reason": "Une porteuse contemporaine largement connue de ce nom est bien documentée par la presse et la recherche, mais aucune déclaration de son cru sur son origine lignagère n'a été retrouvée ; en l'absence d'une telle parole propre, aucun porteur vivant n'est nommé ici."

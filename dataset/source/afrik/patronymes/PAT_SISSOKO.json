@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Dossier fondé sur l'entrée du dictionnaire des noms claniques bambara et sur un fil de discussion communautaire soninké ; le relevé de couverture n'étaie plus que les deux graphies d'origine et l'attestation au Mali. Aucune étymologie n'est retenue, faute de source linguistique ; ne pas étendre les affirmations sans source dédiée."
+    "directives": "Fiche recentrée sur le nom (2026-10-03). Chaque piste d'origine est attribuée à qui la porte et citée à la page dans les notes de sa source ; aucune n'est retenue comme la bonne. Sakiliba et Danba sont des noms de femmes, non des graphies de Sissoko : ne pas les verser dans les graphies. Ne pas étendre sans source dédiée."
   },
   "id": "PAT_SISSOKO",
   "nameMain": "Sissoko",
@@ -39,23 +39,59 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
-    "writtenChronicles": [],
-    "linguisticReconstructions": [
+    "oralTraditions": [
       {
-        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
-        "claimStatus": "established",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
+        "claim": "Dans le récit du partage des terres à Kouroukan Fougan, l'épopée de Soundiata dit de la tribu de Fakoli, les Koroma, que d'autres l'appellent Doumbouya ou Sissoko ; cette tribu reçoit le monopole de la forge et du travail du fer. Le nom y apparaît ainsi comme un autre nom de la lignée de Fakoli, sans que le récit dise d'où il vient.",
+        "claimStatus": "claimed",
+        "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane, qui l'a traduit en français",
+        "context": "Épopée publiée en 1960",
+        "sourceRefs": ["niane-1960"]
       },
       {
-        "claim": "Le dictionnaire des jamuw a une entrée Sisɔkɔ, avec la variante Sisoko. Il donne trois noms de clan comme équivalents de celui-ci : Dantɛ, Dunbiya (Doumbia) et Kuruma (Kouroma). Ce sont des noms que le dictionnaire tient pour un même jamu porté dans d'autres lignées ; il ne dit pas quelle forme est la plus ancienne.",
+        "claim": "Une synthèse historique fait des Sissoko, des Doumbia et des Koroma les descendants de Fakoli Koroma, que les traditions orales du Manden retiennent comme l'un des généraux de Soundiata. Elle ne dit pas d'où elle tient ce lien, ni comment ou quand les trois noms se seraient séparés.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane",
+        "context": "Note d'une synthèse historique publiée par l'UNESCO en 1985 ; la source du lien n'est pas indiquée",
+        "sourceRefs": ["hga-iv-niane"]
+      },
+      {
+        "claim": "Sissoko et Doumbia seraient issus d'une même famille, les deux noms se remplaçant l'un l'autre selon les régions. Le même relevé range Sissoko parmi les bula, un ensemble de familles qu'il dit venues pour la plupart du Siendougou, dans la région de Sibi, près de Bamako.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Molinie, officier de la marine française, en 1959",
+        "context": "Origines relevées dans la tradition orale pour un dictionnaire rédigé à l'usage des Européens en poste en Afrique-Occidentale française, cité de seconde main dans un mémoire de 2017 ; l'informateur n'est pas nommé",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ],
+    "writtenChronicles": [
+      {
+        "claim": "Dans son ouvrage en n'ko sur les noms et les jamu du Manden, Souleymane Kanté donne Doumbia comme jamu des hommes de la lignée et Danba comme jamu des femmes. À l'entrée Kourouma, il range parmi les équivalents une forme que la traduction transcrit Sìisɔ́ɔ̀, et que le mémoire qui la traduit rattache à Sissoko.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "Aucun dictionnaire ni travail de linguiste consulté ne donne de sens au mot : le dictionnaire des noms de clan mandingues le définit seulement comme un nom de clan, et le mémoire qui réunit les sources sur ces noms ne rapporte aucune explication de son origine.",
+        "claimStatus": "established",
+        "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "Le dictionnaire des jamuw a une entrée Sisɔkɔ, avec la variante Sisoko. Il y donne trois noms de clan comme équivalents : Dantɛ, Dunbiya (Doumbia) et Kuruma (Kouroma), et l'entrée Bàgayɔgɔ (Bagayoko) donne à son tour Sisoko comme équivalent. Le dictionnaire ne dit pas ce que recouvre cette équivalence, ni quelle forme est la plus ancienne.",
         "claimStatus": "claimed",
         "sourceRefs": ["bamadaba-jamuw"]
       },
       {
-        "claim": "Le nom a deux formes féminines. Le dictionnaire donne Danba pour les familles de griots (jèli) et Sakiliba pour les familles libres (hɔ́rɔn). L'entrée Sakiliba la glose comme le jamu féminin qui correspond à Dunbuya, l'un des équivalents que l'entrée Sisɔkɔ elle-même énumère. Un contributeur d'un forum communautaire soninké donne de son côté Sakiliba, Boula, Sora et Damba comme les formes féminines de Sissoko.",
+        "claim": "Les femmes de la lignée portent un autre nom de clan que les hommes. Le dictionnaire donne, à l'entrée Sisɔkɔ, Danba pour les femmes des familles de griots (jèli) et Sakiliba pour celles des familles libres (hɔ́rɔn). Il glose aussi Sakiliba comme le nom féminin qui correspond à Dunbuya (Doumbia), et donne Sakiliba comme équivalent de Danba. Sakiliba n'est donc pas une autre écriture de Sissoko : c'est le nom que portent les femmes Sissoko de familles libres. Un contributeur d'un forum communautaire soninké écrit de son côté, à la suite de Sissoko, les noms Sakiliba, Boula, Sora et Damba, en marquant Damba comme féminin.",
         "claimStatus": "claimed",
-        "sourceRefs": ["bamadaba-jamuw", "soninkara-forum-nom-de-famille"]
+        "sourceRefs": [
+          "bamadaba-jamuw",
+          "bogacheva-2017-jamu",
+          "soninkara-forum-nom-de-famille"
+        ]
       }
     ]
   },
@@ -63,12 +99,12 @@
     {
       "peopleId": "PPL_MALINKE",
       "status": "attested",
-      "sourceRefs": ["bamadaba-jamuw"]
+      "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
     },
     {
       "peopleId": "PPL_BAMBARA",
       "status": "attested",
-      "sourceRefs": ["bamadaba-jamuw"]
+      "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
     },
     {
       "peopleId": "PPL_SONINKE",
@@ -97,15 +133,31 @@
       "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. Le fichier ne livre aucune légende de ses marqueurs. L'entrée Sisɔkɔ (variante Sisoko) porte trois statuts (jèli, nùmu, tontigi) suivis de mentions d'aire explicites (chez les Maninka, chez les Bamana), trois équivalences (Dantɛ, Dunbiya, Kuruma) et deux formes féminines (Danba chez les griots, Sakiliba chez les familles libres). Trois marqueurs de groupe non légendés y figurent aussi ; seul celui qui désigne les Soninké est confirmé, par l'entrée du grand regroupement soninké dit Wago, et cette entrée n'énumère pas ce nom parmi les siens. Aucun marqueur d'alliance de senankuya ne figure à l'entrée."
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), signalée par Vydrin dans Mandenkan 63, 2020, p. 89-110. Fichier complet consulté. L'entrée Sisɔkɔ (variante Sisoko) porte trois statuts (jèli, nùmu chez les Maninka, tontigi chez les Bamana), trois équivalences (Dantɛ, Dunbiya, Kuruma), deux formes féminines (Danba chez les griots, Sakiliba chez les familles libres), un interdit, nkaana, que le fichier ne traduit pas, et trois marqueurs de peuple, que le mémoire de Bogacheva lit comme maninka, bambara et kagoro. L'entrée Sakiliba la glose comme le nom féminin correspondant à Dunbuya ; l'entrée Danba donne Sakiliba comme équivalent ; l'entrée Bàgayɔgɔ donne Sisoko comme équivalent. L'entrée Sisɔkɔ ne donne aucun sens au nom et aucun partenaire de plaisanterie."
     },
     {
-      "sourceKey": "jansen-sunjata-paradigm",
-      "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
-      "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
+      "sourceKey": "hga-iv-niane",
+      "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 6, Le Mali et la deuxième expansion manden",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. D. T. Niane, 1985 ; chapitre de D. T. Niane. Page imprimée 157 : Fakoli Koroma (ou Kuruma) parmi les généraux de Soundiata dont les traditions orales ont retenu le nom, et la note 42, selon laquelle ses descendants sont les clans sisoko, dumbuya et koroma. Le chapitre ne donne aucun sens au nom."
+    },
+    {
+      "sourceKey": "bogacheva-2017-jamu",
+      "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+      "url": "https://hdl.handle.net/11701/10975",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
+      "notes": "Bogacheva, E. A., mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Notice Sisɔkɔ, p. 124-125 : peuples maninka, bambara et kagoro, l'interdit nkaana, et, d'après l'ouvrage en n'ko de Souleymane Kanté, le jamu Doumbia des hommes et Danba des femmes (p. 125). Notice Danba, p. 29-30 : équivalent de Sakiliba (p. 29), et jamu féminin des Sissoko d'après Kanté (p. 30). Notice Dunbiya, p. 38 : Sissoko et Doumbia issus d'une même famille, et Sissoko parmi les bula venus pour la plupart du Siendougou, d'après le dictionnaire de Molinie, officier de la marine française, 1959, qui dit avoir relevé ces origines dans la tradition orale. Notice Kuruma, p. 97 : la forme Sìisɔ́ɔ̀ parmi les équivalents, d'après Kanté. Notice Sakiliba, p. 114. Le texte original en n'ko de Kanté n'a pas été lu ; seule sa traduction russe l'a été. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet."
+    },
+    {
+      "sourceKey": "niane-1960",
+      "title": "Soundjata ou l'épopée mandingue",
+      "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Niane, Djibril Tamsir, Présence Africaine, 1960. Transcription du récit du griot Djeli Mamadou Kouyaté de Djeliba Koro (Siguiri) ; c'est une mise par écrit d'une tradition orale. Page lue sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proche de l'édition imprimée sans s'y confondre : la tribu de Fakoli, les Koroma, que d'autres appellent Doumbouya ou Sissoko, et son monopole de la forge (p. 141)."
     },
     {
       "sourceKey": "soninkara-forum-nom-de-famille",
@@ -113,7 +165,7 @@
       "url": "https://www.soninkara.com/forums/de-l-origine-des-soninke/nom-de-famille-23.html",
       "tier": "unverified",
       "source_kind": "community",
-      "notes": "Fil de discussion du forum du portail communautaire Soninkara.com, tenu du 21 juin au 5 juillet 2006 par des contributeurs sous pseudonyme, consulté directement. L'un d'eux range Sakiliba, Boula, Sora et Damba comme formes féminines de Sissoko sans en donner le sens. Le fil ne dit pas d'où vient le nom ; plusieurs intervenants y rappellent qu'un même nom peut se rencontrer dans des groupes et des statuts différents selon les régions et les histoires familiales."
+      "notes": "Fil de discussion du forum du portail communautaire Soninkara.com, tenu du 21 juin au 5 juillet 2006 par des contributeurs sous pseudonyme, consulté directement. L'une d'eux écrit, le 5 juillet 2006, à la suite de Sissoko, les noms Sakiliba, Boula, Sora et Damba, en marquant Damba comme féminin, sans en donner le sens. Le fil ne dit pas d'où vient le nom ; plusieurs intervenants y rappellent qu'un même nom peut se rencontrer dans des groupes et des statuts différents selon les régions et les histoires familiales."
     },
     {
       "sourceKey": "afrik-candidate-queue",
@@ -127,27 +179,27 @@
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "L'origine et le sens de ce nom ne sont pas établis dans les sources consultées. Des contenus grand public en avancent, mais ils sont incompatibles entre eux (un animal, un peuple ou une région, un savoir) et aucun ne cite d'étude linguistique : nous n'en retenons aucun."
+      "reason": "Le sens du nom n'est pas établi dans les sources consultées. Des contenus grand public en avancent, mais ils sont incompatibles entre eux (un animal, un peuple ou une région, un savoir) et aucun ne cite d'étude linguistique : nous n'en retenons aucun."
     },
     {
       "fieldPath": "origin.oralTraditions",
-      "reason": "Nous n'avons trouvé aucune tradition orale rapportée par un informateur nommé sur l'origine de ce nom."
+      "reason": "Le seul récit trouvé qui nomme son conteur ne dit pas d'où vient le nom ; le griot dont un mémoire de 2017 transmet les entretiens n'en parle pas. Nous n'avons pas trouvé de récit publié sur l'origine du nom chez les familles de griots qui portent la forme Cissokho en Sénégambie."
     },
     {
       "fieldPath": "peoples",
-      "reason": "Le dictionnaire des jamuw nomme les Maninka et les Bamana à l'entrée, mais pas les Soninké, et le regroupement soninké dit Wago n'y compte pas ce nom. Le rattachement aux Soninké ne repose que sur un fil de discussion communautaire : il est donné comme supposé."
+      "reason": "Le dictionnaire des jamuw rattache le nom aux Maninka, aux Bamana et aux Kagoro, mais pas aux Soninké, et le regroupement soninké dit Wago n'y compte pas ce nom. Le rattachement aux Soninké ne repose que sur un fil de discussion communautaire : il est donné comme supposé. Nous n'avons pas encore de page consacrée aux Kagoro."
     },
     {
       "fieldPath": "countries",
-      "reason": "Seul le Mali est étayé. Le nom se rencontre aussi dans d'autres pays de la région, mais nous n'avons pas trouvé de source chiffrée ou documentée propre à ce nom pour les autres pays."
+      "reason": "Seul le Mali est étayé. Le nom se rencontre aussi dans d'autres pays de la région, notamment sous la forme Cissokho, mais nous n'avons pas trouvé de source chiffrée ou documentée propre à ce nom pour ces pays."
     },
     {
       "fieldPath": "alliances",
-      "reason": "Le dictionnaire des jamuw donne des équivalences (Dantɛ, Doumbia, Kouroma) mais aucune relation de plaisanterie (senankuya) pour ce nom : nous n'en attestons aucune."
+      "reason": "Le dictionnaire des jamuw ne donne aucun partenaire de plaisanterie (senankuya) pour ce nom. Un mémoire de 2017 range Sissoko parmi ceux des Berete sans dire d'où il tient ce lien, et le dictionnaire ne le reprend pas : nous n'attestons aucune alliance."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous ne nommons aucun porteur : aucune source consultée ne rattache une personne décédée à cette lignée par ses propres mots."
+      "reason": "Nous ne nommons aucun porteur. Fakoli, à la lignée duquel l'épopée et une synthèse rattachent le nom, y est appelé Fakoli Koroma, non Sissoko ; aucune source consultée ne rattache une personne décédée à ce nom par ses propres mots."
     },
     {
       "fieldPath": "homonyms",

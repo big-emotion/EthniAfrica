@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Fiche générée depuis la file d'attente des candidats (vague 1 du plan de couverture anthroponymique). Elle ne porte aucune recherche : ne pas étendre ses affirmations sans appliquer le protocole docs/runbooks/anthroponym-fiche-research.md."
+    "directives": "Fiche recentrée sur le nom (2026-10-03), sur le modèle de la fiche pilote Camara. Chaque piste est attribuée à qui la porte et citée à la page dans les notes de sa source ; aucune n'est retenue comme la bonne. Ne pas étendre sans source dédiée."
   },
   "id": "PAT_DEMBELE",
   "nameMain": "Dembélé",
@@ -11,75 +11,251 @@
     {
       "spelling": "Dembélé",
       "attestations": [
-        { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MLI",
+          "sourceRefs": [
+            "interpeace-autoportrait-mali-2015",
+            "bogacheva-2017-jamu"
+          ]
+        }
       ]
     },
     {
       "spelling": "Dembele",
       "attestations": [
-        { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bogacheva-2017-jamu"]
+        }
+      ]
+    },
+    {
+      "spelling": "Denbele",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
+        }
+      ]
+    },
+    {
+      "spelling": "Danbɛlɛ",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
+        }
+      ]
+    },
+    {
+      "spelling": "Dambélé",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bogacheva-2017-jamu"]
+        }
+      ]
+    },
+    {
+      "spelling": "Dambele",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bogacheva-2017-jamu"]
+        }
       ]
     }
   ],
-  "transmissionMode": "other",
+  "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
+    "oralTraditions": [
+      {
+        "claim": "Une tradition, mise par écrit par Doumbia en 2002, tient les Traoré, les Dembélé et les Diabaté pour des frères, et ces trois noms pour les partenaires de plaisanterie d'un autre groupe de frères : les Koné, les Diarra, les Kanté et les Condé. À Bamako, une partie des habitants interrogés en connaissaient l'existence et l'histoire ; d'autres ne les connaissaient pas.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "R. Jones, qui cite l'ouvrage de Doumbia et l'a confronté à ses entretiens à Bamako",
+        "context": "Étude en anglais publiée en 2007 sur la parenté à plaisanterie à Bamako, citée de seconde main dans un mémoire de 2017 ; les personnes interrogées n'y sont pas nommées",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Aucun dictionnaire consulté ne donne au mot un sens établi : le dictionnaire des noms de clan mandingues le définit seulement comme un nom de clan, et le mémoire de 2017 qui rapporte les deux explications ci-dessous n'en tient aucune pour acquise.",
+        "claimStatus": "established",
+        "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "Une explication populaire découpe le nom en den, « enfant », et bele, « serpent » : Dembélé voudrait dire « le fils du serpent ». Elle a été notée en 1959 par un officier de la marine française, dans un dictionnaire des noms rédigé pour les Européens en poste en Afrique-Occidentale française. Il disait tenir ses données de griots, sans nommer celui qui lui a donné celle-ci.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "Une hypothèse cherche l'origine du nom dans les langues voltaïques. En sénoufo, plusieurs noms de groupes sociaux se terminent en -mbele : fonombele, les forgerons ; kpembele, les sculpteurs sur bois ; kwombele, les jeunes gens initiés. Ces groupes ne sont pas des parentés, les clans sénoufo portant des noms d'animaux. Le rang élevé d'un nom proche, Tembele, chez les Dogon, est avancé à l'appui. L'hypothèse est présentée comme probable, non comme établie.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_BAMBARA",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
+    },
+    {
+      "peopleId": "PPL_MINYANKA",
+      "status": "attested",
+      "sourceRefs": [
+        "interpeace-autoportrait-mali-2015",
+        "bamadaba-jamuw",
+        "bogacheva-2017-jamu"
+      ]
+    },
+    {
+      "peopleId": "PPL_MALINKE",
+      "status": "attested",
+      "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
+    },
+    {
+      "peopleId": "PPL_SENUFO",
+      "status": "attested",
+      "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
     }
   ],
   "countries": [
     {
       "countryId": "MLI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "interpeace-autoportrait-mali-2015",
+        "bogacheva-2017-jamu",
+        "bamadaba-jamuw"
+      ]
     }
   ],
-  "alliances": [],
-  "casteOrSocialFunction": null,
-  "bearers": [],
+  "alliances": [
+    {
+      "targetPatronymeId": "PAT_DIARRA",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "bogacheva-2017-jamu",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_KONE",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bogacheva-2017-jamu",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_KANTE",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bogacheva-2017-jamu",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_CONDE",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bogacheva-2017-jamu",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    }
+  ],
+  "casteOrSocialFunction": {
+    "value": "Le nom ne désigne pas un seul statut. Il est porté par des hommes libres (hɔ́rɔn) et, dans la région de Bougouni, au sud du Mali, aussi par des forgerons (nùmu).",
+    "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
+  },
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Mamadi Dembélé, archéologue et historien malien",
+      "sourceRefs": ["gha-ix-biographies"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
-      "sourceKey": "afrik-candidate-queue",
-      "title": "Relevé de couverture anthroponymique EthniAfrica",
-      "url": null,
-      "tier": "unverified",
-      "source_kind": "ai_generated",
-      "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), signalée par Vydrin dans Mandenkan 63, 2020, p. 89-110. Fichier complet consulté. L'entrée Denbele donne la variante Danbɛlɛ ; six groupes, que le mémoire de 2017 tiré du même matériau nomme bambara, maninka, khassonké, somono, sénoufo et minyanka ; les équivalents Traoré, Diouf et Mukɔrɔ ; Donsira comme nom des femmes du clan, tandis qu'une entrée distincte, Dansira, nom porté par des femmes, est donnée pour équivalente de Denbele et de Traoré ; les statuts hɔ́rɔn et, à Bougouni, nùmu ; deux interdits, le vautour (tuga) et, à Bougouni, le python (miniɲan). Elle ne donne aucun sens au nom. Les liens de plaisanterie avec Dembélé sont portés par les entrées Jàra et Tògola, non par l'entrée Denbele."
+    },
+    {
+      "sourceKey": "bogacheva-2017-jamu",
+      "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+      "url": "https://hdl.handle.net/11701/10975",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bogacheva, E. A., mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Notice Denbele, p. 31-33 : les graphies françaises et les groupes qui portent le nom, bambara, maninka, khassonké, somono, sénoufo et minyanka (p. 31) ; les équivalents (p. 31-32) ; les partenaires de plaisanterie, avec une citation en anglais d'une étude de R. Jones de 2007 sur Bamako (p. 60 de cette étude), qui renvoie elle-même à Doumbia 2002, p. 33 ; Bamako comme lieu où le nom est porté et le rang du nom, vingtième jamu le plus répandu au Mali en 1996 ; le statut et les interdits (p. 32) ; l'explication « fils du serpent » (p. 32-33) ; l'hypothèse d'une origine voltaïque, tirée sans source précisée du matériau de base réuni par V. Vydrin et A. Davydov (p. 33). La notice Jàra range aussi Denbele parmi ses équivalents et parmi ses partenaires de plaisanterie (p. 55). Une partie des données de la notice vient d'un dictionnaire des noms rédigé en 1959 par Molinie, lieutenant de la marine française, pour les Européens en poste en Afrique-Occidentale française ; il disait se fier entièrement aux données orales recueillies auprès de griots (p. 5), et l'auteure met en garde contre ses généralisations sans fondement. Ni le récit du griot Babou Condé recueilli en 2017 ni l'ouvrage en n'ko de Souleymane Kanté, cités pour d'autres noms, ne le sont pour celui-ci. L'étude de Jones n'a pas été lue ; seule la citation qu'en donne le mémoire l'a été. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages et les hypothèses qu'il transmet."
+    },
+    {
+      "sourceKey": "interpeace-autoportrait-mali-2015",
+      "title": "Autoportrait du Mali — Les Obstacles à la Paix",
+      "url": "https://www.interpeace.org/wp-content/uploads/2015/03/2015_03_02_Mali_Autoportrait_FR.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Rapport de recherche-action de l'Institut malien de recherche action pour la paix avec Interpeace, en partenariat avec les Nations unies, mars 2015. Son chapitre sur les diversités socioculturelles donne, pour chaque grand groupe du Mali, quelques noms de famille suivis de « etc. » : la liste est illustrative, sans méthode d'établissement ni source indiquée. Elle atteste qu'un nom est porté dans un groupe, non d'où il vient. Pour ce nom : Dembélé figure, avec Goita, Dao et Sogoba, parmi les noms minyanka (p. 26)."
+    },
+    {
+      "sourceKey": "canut-2002-senankuya",
+      "title": "Pouvoir, places et filiation : les senankuya au Mali",
+      "url": "https://journals.openedition.org/praxematique/2307",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Canut, Cécile, Cahiers de praxématique, numéro 38, 2002, p. 175-197. Enquête de terrain au Mali. Elle énonce ce que le pacte oblige : la relation vaut à perpétuité pour toute la descendance des deux lignées, le mariage entre elles est prohibé — diversement appliqué aujourd'hui, précise-t-elle — et l'entraide y est due sans réserve. Citée pour l'obligation elle-même ; elle ne nomme pas la paire de cette fiche, que portent les entrées citées à côté d'elle."
+    },
+    {
+      "sourceKey": "canut-smith-2006-pactes",
+      "title": "Pactes, alliances et plaisanteries. Pratiques locales, discours global",
+      "url": "https://doi.org/10.4000/etudesafricaines.6198",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Canut, Cécile, et Smith, Étienne, Cahiers d'études africaines, numéro 184, 2006, p. 687 et suivantes. Citée pour la mise en garde qu'elle porte : l'idée que la parenté à plaisanterie apaiserait les conflits y est traitée comme une hypothèse héritée de Radcliffe-Brown et reprise par les études sur la résolution des conflits, donc comme un discours à analyser et non comme un effet mesuré. La page de début est vérifiée, la page de fin ne l'est pas."
+    },
+    {
+      "sourceKey": "gha-ix-biographies",
+      "title": "General History of Africa, IX: General History of Africa Revisited — biographies des auteurs",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000396045",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. Augustin F. C. Holl, 2025, en anglais. La notice biographique de Mamadi Dembélé, auteur du chapitre 1 de la section IV sur le peuplement du delta intérieur du Niger, le présente comme ancien directeur du département d'histoire et d'archéologie de l'Institut des sciences humaines de Bamako, et comme décédé (p. 1037). Citée pour un porteur du nom, non pour son origine."
     }
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "fieldPath": "origin.writtenChronicles",
+      "reason": "Nous n'avons trouvé ni récit de griot ni écrit ancien qui raconte d'où vient ce nom. Le mémoire de 2017 sur les noms de clan du Manden, qui rapporte pour d'autres noms la parole d'un griot de Guinée et un ouvrage écrit en n'ko, n'en cite aucun pour celui-ci, et les volumes de l'Histoire générale de l'Afrique que nous avons lus ne parlent pas de ce clan."
     },
     {
-      "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "fieldPath": "countries",
+      "reason": "Nous n'avons trouvé de source qu'au Mali. Le nom est aussi porté dans les pays voisins, mais aucune source lue ne le documente."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Dembélé, Dembele, Denbele, Dambélé et Danbɛlɛ sont des graphies d'un même nom. Le dictionnaire des noms de clan mandingues tient pour le même clan, sous d'autres noms, Traoré, Diouf chez les Wolof et Mukɔrɔ, et donne Donsira comme nom des femmes du clan, Dansira étant ailleurs un nom de femmes tenu pour équivalent ; le mémoire de 2017 y ajoute Diarra et Diabaté, puis, d'après le dictionnaire colonial de 1959, Diop chez les Wolof, Ouattara chez les Sénoufo, Guilavogui chez les Toma et Ouédraogo chez les Mossi. Ce sont des correspondances, pas des lignées distinctes. Les sources ne s'accordent pas sur Diarra : le mémoire le range à la fois parmi les équivalents et parmi les partenaires de plaisanterie de Dembélé, le dictionnaire seulement parmi les partenaires."
     },
     {
-      "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "fieldPath": "alliances",
+      "reason": "Le dictionnaire des noms de clan mandingues et le mémoire de 2017 donnent aussi Togola pour partenaire de plaisanterie de Dembélé, et le dictionnaire colonial de 1959 y ajoute Bamba, Diatta, Diarrasoba, Fomba et Kamissoko. Nous ne documentons pas encore ces liens."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Le nom est aussi donné chez les Khassonké et les Somono, que nous ne présentons pas encore comme peuples."
     }
   ]
 }

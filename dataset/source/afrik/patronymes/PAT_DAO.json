@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Dossier fondé sur une source institutionnelle malienne et un agrégateur ; ne pas étendre les affirmations sans source dédiée."
+    "directives": "Fiche recentrée sur le nom (2026-10-03). Chaque piste est attribuée à qui la porte et citée à la page dans les notes de sa source ; aucune n'est retenue comme la bonne. Ne pas étendre sans source dédiée."
   },
   "id": "PAT_DAO",
   "nameMain": "Dao",
@@ -24,18 +24,81 @@
           "sourceRefs": ["forebears-dao"]
         }
       ]
+    },
+    {
+      "spelling": "Daou",
+      "attestations": [
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["binger-1892-kong", "massing-2000-wangara"]
+        }
+      ]
+    },
+    {
+      "spelling": "Dawu",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
+    },
+    {
+      "spelling": "Dawo",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
     }
   ],
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
+    "oralTraditions": [
+      {
+        "claim": "À Kong, on racontait à la fin des années 1880 que les familles Daou, comme les Ouattara, les Barou, les Kérou et les Touré, seraient venues du nord, de la région de Ségou et de Djenné, par petits groupes et non en une seule migration. Un des sept quartiers de la ville portait leur nom : Daoura, « le quartier des Daou ».",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Louis-Gustave Binger, officier et explorateur français, arrivé à Kong en février 1888",
+        "context": "Informations recueillies à Kong, dans l'actuelle Côte d'Ivoire, auprès d'informateurs qu'il ne nomme pas, et publiées en français en 1892 dans son récit de voyage",
+        "sourceRefs": ["binger-1892-kong"]
+      },
+      {
+        "claim": "Le même récit fait des Daou une des familles mandé-dioula installées d'abord à Ténenguéra, près de Kong, avec les Ouattara et les Barou. Alliés des Ouattara conduits par Sékou, et de connivence avec les Kouroubari, les Daou et les Barou auraient pris Kong par surprise un jour de grand marché, massacré les chefs des Falafalla et remplacé le pouvoir des premiers habitants par le leur.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Louis-Gustave Binger, officier et explorateur français",
+        "context": "Récit recueilli à Kong en 1888 et 1889 et publié en français en 1892",
+        "sourceRefs": ["binger-1892-kong"]
+      }
+    ],
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "Le nom compte parmi les noms de famille minyanka du Mali, avec Goïta, Dembélé et Sogoba ; les Minyanka sont établis dans les régions de San, Koutiala et Sikasso.",
+        "claim": "Aucun dictionnaire ni travail consulté ne donne de sens au mot. Le dictionnaire des noms de clan mandingues définit Dawu seulement comme un nom de clan, et le récit de 1892 qui nomme les Daou de Kong n'en propose aucune explication.",
+        "claimStatus": "established",
+        "sourceRefs": ["bamadaba-jamuw", "binger-1892-kong"]
+      },
+      {
+        "claim": "Le nom s'écrit de plusieurs façons. Le dictionnaire des noms de clan mandingues donne Dawu, avec la variante Dawo, et le situe chez les Minyanka, autour de Sikasso et de Ségou ; un rapport malien de 2015 cite Dao parmi les noms de famille minyanka, avec Goïta, Dembélé et Sogoba ; le récit de voyage de 1892 écrit Daou pour les familles de Kong. Aucune de ces sources ne dit que ces formes désignent une seule et même lignée.",
         "claimStatus": "claimed",
-        "sourceRefs": ["interpeace-autoportrait-mali-2015"]
+        "sourceRefs": [
+          "bamadaba-jamuw",
+          "interpeace-autoportrait-mali-2015",
+          "binger-1892-kong"
+        ]
+      },
+      {
+        "claim": "Un historien qui relit en 2000 le récit de 1892 range Daou parmi les noms de clan bambara de Kong, venus semble-t-il de la région de Ségou et de San. C'est son interprétation : le récit de 1892 parle de familles mandé-dioula venues de la région de Ségou et de Djenné, et ne nomme pas San.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["massing-2000-wangara", "binger-1892-kong"]
+      },
+      {
+        "claim": "L'explorateur qui visite Kong en 1888 traduit le nom du quartier Daoura par « le quartier des Daou », en expliquant que -ra y signifie « des ». C'est le nom du quartier qu'il explique, non celui du clan.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["binger-1892-kong"]
       }
     ]
   },
@@ -43,14 +106,23 @@
     {
       "peopleId": "PPL_MINYANKA",
       "status": "attested",
-      "sourceRefs": ["interpeace-autoportrait-mali-2015"]
+      "sourceRefs": ["interpeace-autoportrait-mali-2015", "bamadaba-jamuw"]
+    },
+    {
+      "peopleId": "PPL_DIOULA",
+      "status": "supposed",
+      "sourceRefs": ["binger-1892-kong"]
     }
   ],
   "countries": [
     {
       "countryId": "MLI",
       "status": "attested",
-      "sourceRefs": ["interpeace-autoportrait-mali-2015", "forebears-dao"]
+      "sourceRefs": [
+        "interpeace-autoportrait-mali-2015",
+        "bamadaba-jamuw",
+        "forebears-dao"
+      ]
     },
     {
       "countryId": "BFA",
@@ -60,12 +132,21 @@
     {
       "countryId": "CIV",
       "status": "attested",
-      "sourceRefs": ["forebears-dao"]
+      "sourceRefs": ["binger-1892-kong", "forebears-dao"]
     }
   ],
   "alliances": [],
-  "casteOrSocialFunction": null,
-  "bearers": [],
+  "casteOrSocialFunction": {
+    "value": "Le dictionnaire des noms de clan mandingues rattache Dawu aux jeli, les griots, mais en marquant lui-même ce statut d'un point d'interrogation. Aucune autre source consultée ne le confirme ni ne le contredit.",
+    "sourceRefs": ["bamadaba-jamuw"]
+  },
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Bafotigué Daou, de Kong",
+      "sourceRefs": ["binger-1892-kong"]
+    }
+  ],
   "homonyms": [
     {
       "label": "Dao (nom vietnamien)",
@@ -73,6 +154,13 @@
       "entityId": null,
       "distinction": "Le même mot s'écrit Dao au Vietnam, où il est porté par bien plus de personnes qu'en Afrique de l'Ouest. Nous n'avons trouvé aucune source qui relie les deux noms, et rien n'indique qu'ils aient un rapport.",
       "sourceRefs": ["forebears-dao"]
+    },
+    {
+      "label": "Daw (Ndaw)",
+      "entityType": "other",
+      "entityId": null,
+      "distinction": "Le dictionnaire des noms de clan mandingues donne une entrée distincte, Daw, avec les variantes Ndaw et Dafe, portée notamment chez les Wolof, les Peuls, les Toucouleurs et les Marka. Il ne la rattache pas à Dawu, le nom porté chez les Minyanka, et nous n'avons trouvé aucune source qui relie les deux.",
+      "sourceRefs": ["bamadaba-jamuw"]
     }
   ],
   "sources": [
@@ -82,7 +170,7 @@
       "url": "https://www.interpeace.org/wp-content/uploads/2015/03/2015_03_02_Mali_Autoportrait_FR.pdf",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Rapport de recherche-action de l'Institut malien de recherche action pour la paix avec Interpeace, en partenariat avec les Nations unies, mars 2015. Son chapitre sur les diversités socioculturelles donne, pour chaque grand groupe du Mali, quelques noms de famille suivis de « etc. » : la liste est illustrative, sans méthode d'établissement ni source indiquée. Elle atteste qu'un nom est porté dans un groupe, non d'où il vient."
+      "notes": "Rapport de recherche-action de l'Institut malien de recherche action pour la paix avec Interpeace, en partenariat avec les Nations unies, mars 2015. Son chapitre sur les diversités socioculturelles (p. 26) donne, pour chaque grand groupe du Mali, quelques noms de famille, souvent suivis de « etc. » : Dao y figure parmi les noms minyanka, avec Goïta, Dembélé et Sogoba. La liste est illustrative, sans méthode d'établissement ni source indiquée. Elle atteste qu'un nom est porté dans un groupe, non d'où il vient."
     },
     {
       "sourceKey": "forebears-dao",
@@ -91,44 +179,51 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Agrégateur généalogique mondial, consulté le 29 septembre 2026. Incidence mondiale d'environ 835 374 porteurs ; Vietnam 593 679, Mali 97 834, Burkina Faso 74 123, Côte d'Ivoire 27 803, États-Unis 12 287. La page ne donne aucune signification du nom. Les effectifs hors d'Afrique ne sont pas repris dans les attestations de cette fiche."
+    },
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), signalée par Vydrin dans Mandenkan 63, 2020, p. 89-110. Fichier complet consulté. L'entrée Dawu donne la variante Dawo, le groupe minyanka, les régions de Sikasso et de Ségou, et le statut jeli suivi d'un point d'interrogation ; elle ne donne aucun sens au nom, ni équivalent, ni partenaire de plaisanterie. L'entrée Daw, distincte, donne les variantes Ndaw et Dafe, chez les Wolof, les Peuls, les Toucouleurs et les Marka notamment. Un mémoire de 2017 sur les noms de clan du Manden reprend l'entrée Dawu sans rien y ajouter."
+    },
+    {
+      "sourceKey": "binger-1892-kong",
+      "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+      "url": "https://www.gutenberg.org/ebooks/74720",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Binger, Louis-Gustave, Hachette, Paris, 1892, deux tomes ; réédition numérique du Projet Gutenberg (tome 2 : https://www.gutenberg.org/ebooks/74721), qui conserve la pagination imprimée. L'auteur est un officier français en mission d'exploration de 1887 à 1889, qui prépare l'expansion coloniale : il est cité pour ce qu'on lui a dit à Kong, non pour ses classements, et il écrit lui-même n'avoir trouvé à Kong aucun registre écrit de cette histoire (p. 323). Tome 1 : arrivée à Kong, notée au lundi 20 février dans son journal (p. 284), et Bafotigué Daou mis à son service (p. 291) ; la maison de Fotigué Daou, chez qui il loge, sur le plan de la ville, et le quartier Daoura parmi les sept quartiers (p. 294) ; Daoura, « quartier des Daou », et ses fosses à teinture d'indigo (p. 297) ; les Daou parmi les familles dites venues de la région de Ségou et de Djenné (p. 323) ; les Barou et les Daou alliés des Ouattara dans la prise de Kong (p. 324). Tome 2 : Bafotigué Daou accompagne l'auteur au départ de Kong, le 21 janvier 1889, et les familles Ouattara, Barou et Daou venues de Ténenguéra (p. 208)."
+    },
+    {
+      "sourceKey": "massing-2000-wangara",
+      "title": "The Wangara, an Old Soninke Diaspora in West Africa?",
+      "url": "https://journals.openedition.org/etudesafricaines/175",
+      "tier": "referenced",
+      "notes": "Massing, Andreas, Cahiers d'Études africaines, 158, XL-2, 2000, p. 281-308 ; texte intégral en accès libre, consulté le 3 octobre 2026. Le paragraphe 58 (p. 298 de l'édition imprimée) range les Daou, avec les Baro, Balo, Cissé et Touré, parmi les noms de clan bambara de Kong venus, apparemment, de la région de Ségou et de San. Sa note 38 cite le récit de voyage de Binger publié en 1892, mais en coupe la mention de Djenné ; le récit de 1892 range d'ailleurs les Sissé dans un autre groupe. L'article traite de la diaspora soninké et non du seul nom Dao : c'est un passage incident."
     }
   ],
   "gaps": [
     {
-      "fieldPath": "origin.oralTraditions",
-      "reason": "Nous n'avons trouvé aucune tradition orale rapportant l'origine de ce nom."
-    },
-    {
       "fieldPath": "origin.writtenChronicles",
-      "reason": "Nous n'avons trouvé aucune chronique écrite qui mentionne l'origine de ce nom."
-    },
-    {
-      "fieldPath": "origin.linguisticReconstructions",
-      "reason": "Aucune étymologie de ce nom n'est établie dans les sources consultées : nous ne proposons aucune signification."
-    },
-    {
-      "fieldPath": "bearers",
-      "reason": "Nous ne nommons aucun porteur : aucune source consultée n'en cite qui soit décédé et dont l'appartenance à ce nom soit établie."
-    },
-    {
-      "fieldPath": "alliances",
-      "reason": "Nous n'avons trouvé aucun lien de plaisanterie (sanankuya) attesté pour ce nom qui puisse être relié à une fiche existante."
-    },
-    {
-      "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous n'avons trouvé aucune source attribuant à ce nom une fonction sociale ou un statut."
+      "reason": "Nous n'avons trouvé aucune chronique ni aucun écrit d'auteur de ces sociétés qui parle de l'origine de ce nom."
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Nous ne savons pas si ce nom est, chez les Minyanka, un nom de clan d'origine locale ou un nom de clan mandingue adopté : la source consultée le range parmi les noms de famille sans le préciser."
+      "reason": "Nous ne savons pas si ce nom est, chez les Minyanka, un nom de clan d'origine locale ou un nom de clan mandingue adopté. Nous ne savons pas non plus si les Daou de Kong et les Dawu minyanka forment une seule lignée : les Daou de Kong sont dits venus de la région de Ségou, où le dictionnaire situe aussi des Dawu, mais aucune source consultée ne les relie."
     },
     {
       "fieldPath": "peoples",
-      "reason": "Au Burkina Faso, où le nom est porté par plus de soixante-dix mille personnes, nous n'avons trouvé aucune source qui le rattache à un peuple."
+      "reason": "Les sources ne s'accordent pas sur le peuple des Daou de Kong : le récit de 1892 les compte parmi les familles mandé-dioula, un historien en fait en 2000 un nom de clan bambara. Au Burkina Faso, où le nom est porté par plus de soixante-dix mille personnes, nous n'avons trouvé aucune source qui le rattache à un peuple."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "Le dictionnaire des noms de clan mandingues ne donne aucun partenaire de plaisanterie pour ce nom, et nous n'en avons trouvé aucun ailleurs."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Aucune source consultée ne dit comment ce nom se transmet chez ceux qui le portent."
     }
   ]
 }
