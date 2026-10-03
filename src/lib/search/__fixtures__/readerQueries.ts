@@ -65,8 +65,9 @@ export const READER_QUERIES: ReaderQuery[] = [
   },
   {
     typed: "pigmee",
-    problem: "variant spelling, unaccented",
-    outcome: "widened",
+    problem:
+      "unaccented: prose is matched with its accents, so only the y respelling reaches Pygmées",
+    outcome: "hit",
     answered: true,
   },
   {
@@ -91,7 +92,11 @@ export const READER_QUERIES: ReaderQuery[] = [
     problem: "surname the corpus does not hold",
     outcome: "neighbour",
   },
-  { typed: "diawanbe", problem: "typo of Diawambé", outcome: "neighbour" },
+  {
+    typed: "diawanbe",
+    problem: "n before b, which French writes m: Diawambe",
+    outcome: "hit",
+  },
   { typed: "adjoukoi", problem: "typo of Adioukrou", outcome: "neighbour" },
   { typed: "adjoukr", problem: "typo, partial", outcome: "widened" },
   { typed: "adjoukrou", problem: "spelling of Adioukrou", outcome: "widened" },
@@ -136,6 +141,36 @@ export const READER_QUERIES: ReaderQuery[] = [
   {
     typed: "ogiso",
     problem: "the whole word; prose mentions it",
+    outcome: "widened",
+  },
+
+  // Zero-result queries of the production log read on 2026-10-03
+  { typed: "pgmée", problem: "a vowel dropped: a typo", outcome: "neighbour" },
+  { typed: "bakayoko", problem: "spelling of Bagayoko", outcome: "hit" },
+  { typed: "namibiz", problem: "typo of Namibie", outcome: "neighbour" },
+  {
+    typed: "centrafriqy",
+    problem: "typo of Centrafrique",
+    outcome: "neighbour",
+  },
+  {
+    typed: "sakliba",
+    problem: "Sakiliba appears only inside a claim of PAT_SISSOKO",
+    outcome: "neighbour",
+  },
+  {
+    typed: "les sunningt.",
+    problem: "article, trailing point; no close name",
+    outcome: "neighbour",
+  },
+  {
+    typed: "n'daho cote d'ivoire",
+    problem: "a name the corpus does not hold, then a country",
+    outcome: "widened",
+  },
+  {
+    typed: "n'daho senegal",
+    problem: "a name the corpus does not hold, then a country",
     outcome: "widened",
   },
 
