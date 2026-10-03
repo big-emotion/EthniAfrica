@@ -416,27 +416,37 @@ contract test is what keeps them equal to it, row for row and model for model.
 
 ### modele-nom.json
 
-| Leaf                        | Class             | Note |
-| --------------------------- | ----------------- | ---- |
-| `_meta.*`                   | `invariant`       |      |
-| `id`                        | `invariant`       |      |
-| `entityType`                | `invariant`       |      |
-| `names[].nameText`          | `invariant`       |      |
-| `names[].nameType`          | `invariant`       |      |
-| `names[].languageOfOrigin`  | `invariant`       |      |
-| `names[].meaning`           | `review_required` |      |
-| `names[].periodLabel`       | `translatable`    |      |
-| `names[].imposedBy`         | `translatable`    |      |
-| `names[].impositionPeriod`  | `translatable`    |      |
-| `names[].whyProblematic`    | `review_required` |      |
-| `names[].contemporaryUsage` | `review_required` |      |
-| `names[].sortRank`          | `invariant`       |      |
-| `names[].sources[].author`  | `invariant`       |      |
-| `names[].sources[].year`    | `invariant`       |      |
-| `names[].sources[].title`   | `invariant`       |      |
-| `names[].sources[].url`     | `invariant`       |      |
-| `names[].sources[].tier`    | `invariant`       |      |
-| `names[].sources[].notes`   | `translatable`    |      |
+| Leaf                                   | Class             | Note                                         |
+| -------------------------------------- | ----------------- | -------------------------------------------- |
+| `_meta.*`                              | `invariant`       |                                              |
+| `id`                                   | `invariant`       |                                              |
+| `entityType`                           | `invariant`       |                                              |
+| `names[].nameText`                     | `invariant`       |                                              |
+| `names[].nameType`                     | `invariant`       |                                              |
+| `names[].languageOfOrigin`             | `invariant`       |                                              |
+| `names[].meaning`                      | `review_required` |                                              |
+| `names[].periodLabel`                  | `translatable`    |                                              |
+| `names[].imposedBy`                    | `translatable`    |                                              |
+| `names[].impositionPeriod`             | `translatable`    |                                              |
+| `names[].whyProblematic`               | `review_required` |                                              |
+| `names[].contemporaryUsage`            | `review_required` |                                              |
+| `names[].sortRank`                     | `invariant`       |                                              |
+| `names[].sources[].author`             | `invariant`       |                                              |
+| `names[].sources[].year`               | `invariant`       |                                              |
+| `names[].sources[].title`              | `invariant`       |                                              |
+| `names[].sources[].url`                | `invariant`       |                                              |
+| `names[].sources[].tier`               | `invariant`       |                                              |
+| `names[].sources[].notes`              | `translatable`    |                                              |
+| `names[].attestations[].formAsWritten` | `invariant`       | the form as the document wrote it — evidence |
+| `names[].attestations[].year`          | `invariant`       |                                              |
+| `names[].attestations[].periodLabel`   | `translatable`    | prose: « XIVe siècle »                       |
+| `names[].attestations[].attestedBy`    | `invariant`       |                                              |
+| `names[].attestations[].source.title`  | `invariant`       |                                              |
+| `names[].attestations[].source.author` | `invariant`       |                                              |
+| `names[].attestations[].source.year`   | `invariant`       |                                              |
+| `names[].attestations[].source.url`    | `invariant`       |                                              |
+| `names[].attestations[].source.tier`   | `invariant`       |                                              |
+| `names[].attestations[].source.page`   | `invariant`       | the locator a contradictor rereads           |
 
 ### modele-pays.json
 
