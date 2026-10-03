@@ -1859,7 +1859,9 @@
 }
 
 .afh-name-badge {
-  --badge-ink: var(--afh-text-soft);
+  /* The full ink, not the soft one: on the badge's own tint, the soft ink
+     fell under 4.5:1 for caption-size text (axe, 2026-10-03). */
+  --badge-ink: var(--afh-text);
   display: inline-flex;
   align-items: center;
   gap: 0.3em;
