@@ -4,6 +4,7 @@ import type {
 } from "@/api/v2/schemas/names";
 import type { Language } from "@/types/shared";
 import { peopleCopy } from "@/lib/i18n/copy/people";
+import { bcp47LanguageTag } from "@/lib/languageTag";
 
 /**
  * What the people fiche's answer card shows (REQ-190, DEC-068): the name the
@@ -66,7 +67,9 @@ function badgesOf(name: DossierName): NameBadge[] {
 function answered(name: DossierName, language: Language): AnsweredName {
   return {
     form: name.nameText,
-    lang: name.languageOfOrigin ?? undefined,
+    // A `lang` attribute takes the BCP 47 tag (`wo`), not the corpus's
+    // ISO 639-3 code (`wol`), which accessibility checkers refuse.
+    lang: bcp47LanguageTag(name.languageOfOrigin),
     line:
       name.shortLine ??
       (name.namedBy
@@ -119,7 +122,12 @@ export function peopleNameAnswer(
   const selfForm = appellations?.selfAppellation?.trim();
   return {
     self: selfForm
-      ? { form: selfForm, lang: selfLang, badges: ["own"], attestations: [] }
+      ? {
+          form: selfForm,
+          lang: bcp47LanguageTag(selfLang),
+          badges: ["own"],
+          attestations: [],
+        }
       : null,
     others: (appellations?.exonyms ?? [])
       .filter((exonym) => exonym && exonym.trim() !== selfForm)
