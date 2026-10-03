@@ -50,14 +50,6 @@
         "sourceRefs": ["niane-1960"]
       },
       {
-        "claim": "Une synthèse historique fait des Sissoko, des Doumbia et des Koroma les descendants de Fakoli Koroma, que les traditions orales du Manden retiennent comme l'un des généraux de Soundiata. Elle ne dit pas d'où elle tient ce lien, ni comment ou quand les trois noms se seraient séparés.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "Djibril Tamsir Niane",
-        "context": "Note d'une synthèse historique publiée par l'UNESCO en 1985 ; la source du lien n'est pas indiquée",
-        "sourceRefs": ["hga-iv-niane"]
-      },
-      {
         "claim": "Sissoko et Doumbia seraient issus d'une même famille, les deux noms se remplaçant l'un l'autre selon les régions. Le même relevé range Sissoko parmi les bula, un ensemble de familles qu'il dit venues pour la plupart du Siendougou, dans la région de Sibi, près de Bamako.",
         "claimStatus": "claimed",
         "collection": "mediated",
@@ -71,6 +63,13 @@
         "claim": "Dans son ouvrage en n'ko sur les noms et les jamu du Manden, Souleymane Kanté donne Doumbia comme jamu des hommes de la lignée et Danba comme jamu des femmes. À l'entrée Kourouma, il range parmi les équivalents une forme que la traduction transcrit Sìisɔ́ɔ̀, et que le mémoire qui la traduit rattache à Sissoko.",
         "claimStatus": "claimed",
         "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ],
+    "historicalSyntheses": [
+      {
+        "claim": "Une synthèse historique fait des Sissoko, des Doumbia et des Koroma les descendants de Fakoli Koroma, que les traditions orales du Manden retiennent comme l'un des généraux de Soundiata. Elle ne dit pas d'où elle tient ce lien, ni comment ou quand les trois noms se seraient séparés.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-iv-niane"]
       }
     ],
     "linguisticReconstructions": [

@@ -114,6 +114,18 @@
       }
     ],
     "writtenChronicles": [],
+    "historicalSyntheses": [
+      {
+        "claim": "The cradle of the clan is said to be the land of the Manden mountains, around the towns of Dakadiala, Naréna and Kiri, where the Keita were anciently settled. This is a historian's synthesis; the tradition reported above has them come from farther away.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-iv-niane"]
+      },
+      {
+        "claim": "The dictionary of jamuw links the entry Kéyità to the regions of Kita, Manding and Farana, without saying whether these are places of origin or of settlement.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
+      }
+    ],
     "linguisticReconstructions": [
       {
         "claim": "No dictionary consulted gives an established meaning for the word: the dictionary of Mandinka clan names writes it Kéyità, with the forms Kétà and Kɛ́yità, and defines it only as a clan name.",
@@ -129,16 +141,6 @@
         "claim": "One explanation, reported in 1912 by a colonial administrator on the basis of local traditions he does not name, links the name to the nickname of a king of Mali, Allakoï: he answered \"Alla koï\", \"God, indeed\", to any question about the cause of an event, and some add that his descendants were called \"those of Allakoï\", a name later shortened to Koïta or Keïta. No other source consulted repeats it, and it does not agree with the narrative that derives Keyita from ke, \"the inheritance\", and ta, \"to take\".",
         "claimStatus": "contested",
         "sourceRefs": ["bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "The cradle of the clan is said to be the country of the Manden mountains, around the towns of Dakadiala, Naréna and Kiri, where the Keita were anciently settled. This is a historian's synthesis; the tradition reported above has them come from farther away.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-iv-niane"]
-      },
-      {
-        "claim": "The dictionary of jamuw links the entry Kéyità to the regions of Kita, the Manding and Farana, without saying whether these are places of origin or of settlement.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bamadaba-jamuw"]
       }
     ]
   },
@@ -359,9 +361,9 @@
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-10-03T10:00:23.902Z",
+    "translatedAt": "2026-10-03T12:09:12.082Z",
     "model": "claude-sonnet-5-5",
-    "sourceHash": "88ae968a273dec76d99c3fae57f0a8ebea935d293bf1cb33f6ae94189b024331",
+    "sourceHash": "aaa4b5711386cd9beef13f5ce8f2615f8d09810dcfd12de605307fce22e49768",
     "fieldHashes": {
       "origin.oralTraditions[0].claim": "c7d75e18bf0f5537",
       "origin.oralTraditions[0].context": "1b334ff8a508cba9",
@@ -373,11 +375,11 @@
       "origin.oralTraditions[3].context": "11214264406d2bbc",
       "origin.oralTraditions[4].claim": "0161b8a6aed29e01",
       "origin.oralTraditions[4].context": "9812e41ed57debc9",
+      "origin.historicalSyntheses[0].claim": "4d871c2aa93c6dc2",
+      "origin.historicalSyntheses[1].claim": "e4017da6f0f24211",
       "origin.linguisticReconstructions[0].claim": "3b98d354a981479c",
       "origin.linguisticReconstructions[1].claim": "2751910e5f594ace",
       "origin.linguisticReconstructions[2].claim": "ad28b5eb6a464297",
-      "origin.linguisticReconstructions[3].claim": "4d871c2aa93c6dc2",
-      "origin.linguisticReconstructions[4].claim": "e4017da6f0f24211",
       "sources[0].notes": "29012643eb034ff2",
       "sources[1].notes": "c32472178f19b9ff",
       "sources[2].notes": "86a43be5a268f660",
@@ -400,9 +402,7 @@
       "origin.oralTraditions[4].context",
       "origin.linguisticReconstructions[0].claim",
       "origin.linguisticReconstructions[1].claim",
-      "origin.linguisticReconstructions[2].claim",
-      "origin.linguisticReconstructions[3].claim",
-      "origin.linguisticReconstructions[4].claim"
+      "origin.linguisticReconstructions[2].claim"
     ]
   }
 }

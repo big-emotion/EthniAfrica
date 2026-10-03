@@ -102,12 +102,7 @@
         "sourceRefs": ["bogacheva-2017-jamu"]
       }
     ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Aucun dictionnaire consulté ne donne de sens au mot. Le dictionnaire des noms de clan mandingues l'écrit Sàngare, avec la variante Sankare, le rattache aux Peuls, au Wassoulou et aux Malinké, et lui donne pour équivalents Bari, Si et Ba. Il relève aussi un surnom de plaisanterie, Kàngare.",
-        "claimStatus": "established",
-        "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
-      },
+    "historicalSyntheses": [
       {
         "claim": "Une explication relie la présence du nom chez des lignages malinkés à un emprunt : des clans malinkés soumis par les Peuls auraient pris les noms de leurs maîtres, Sangaré, Diallo, Sidibé et Diakité. Cette explication n'est rapportée que par un article de presse en ligne.",
         "claimStatus": "contested",
@@ -140,6 +135,13 @@
         "claim": "Chez les Peuls de l'ouest du Burkina Faso, les Bingaabe sont habituellement classés dans le clan des Sangaré ; ils sont alliés à plaisanterie des Toroobe.",
         "claimStatus": "claimed",
         "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "Aucun dictionnaire consulté ne donne de sens au mot. Le dictionnaire des noms de clan mandingues l'écrit Sàngare, avec la variante Sankare, le rattache aux Peuls, au Wassoulou et aux Malinké, et lui donne pour équivalents Bari, Si et Ba. Il relève aussi un surnom de plaisanterie, Kàngare.",
+        "claimStatus": "established",
+        "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
       }
     ]
   },

@@ -93,6 +93,13 @@
         "sourceRefs": ["bogacheva-2017-jamu"]
       }
     ],
+    "historicalSyntheses": [
+      {
+        "claim": "For a foreigner, the jamu is the way into the social fabric: in Bamako, a Mandinka jamu is assigned to a newcomer to give them a place in the group. Today, the historical references of the pacts between names are often forgotten, and people struggle to explain their origin.",
+        "claimStatus": "established",
+        "sourceRefs": ["canut-2002-senankuya"]
+      }
+    ],
     "linguisticReconstructions": [
       {
         "claim": "No dictionary consulted gives a meaning for the word: the dictionary of Mandinka clan names writes it Tàrawéle, with the variants Traore and Taraore, and defines it only as a clan name. Traoré is its French spelling.",
@@ -108,11 +115,6 @@
         "claim": "The name has equivalents among other peoples: in Wolof country, a Traoré is received as a brother by the Diop and may take their name, and a Diop may become Traoré among the Mandenka. Tradition traces these correspondences between clan names back to the assembly held after Soundiata's victory, to whom events well after his time are also attributed; the practice continued after him.",
         "claimStatus": "claimed",
         "sourceRefs": ["hga-iv-niane"]
-      },
-      {
-        "claim": "For a foreigner, the jamu is the gateway into the social fabric: in Bamako, a Mandinka jamu is assigned to a newcomer to give them a place in the group. Today, the historical references of the pacts between names are often forgotten and people struggle to explain their origin.",
-        "claimStatus": "established",
-        "sourceRefs": ["canut-2002-senankuya"]
       }
     ]
   },
@@ -305,9 +307,9 @@
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-10-03T09:59:59.689Z",
+    "translatedAt": "2026-10-03T12:09:16.999Z",
     "model": "claude-sonnet-5-5",
-    "sourceHash": "53884120d92f22e82715bcb6f6cd9bced708b803a9c3afb5d0cb495c7971aa1c",
+    "sourceHash": "b7e756b1c3ef87f3010b757dca9bee8b47785719674cd662beab75757922fda3",
     "fieldHashes": {
       "origin.oralTraditions[0].claim": "7aff20440d9be0b2",
       "origin.oralTraditions[0].context": "300acb1df05057c8",
@@ -318,10 +320,10 @@
       "origin.oralTraditions[3].claim": "33b2f0972f813da6",
       "origin.oralTraditions[3].context": "11214264406d2bbc",
       "origin.writtenChronicles[0].claim": "f4f75b02027bbda0",
+      "origin.historicalSyntheses[0].claim": "666eb80a1c9f289f",
       "origin.linguisticReconstructions[0].claim": "7f1b5241e10fcdb9",
       "origin.linguisticReconstructions[1].claim": "c0f88438a045f538",
       "origin.linguisticReconstructions[2].claim": "dfa81502a2684594",
-      "origin.linguisticReconstructions[3].claim": "666eb80a1c9f289f",
       "casteOrSocialFunction.value": "1bfec709e92c1ec4",
       "sources[0].notes": "ae5f56f3682b91ff",
       "sources[1].notes": "6a40c2a2f994cedc",
@@ -341,8 +343,7 @@
       "origin.oralTraditions[3].context",
       "origin.linguisticReconstructions[0].claim",
       "origin.linguisticReconstructions[1].claim",
-      "origin.linguisticReconstructions[2].claim",
-      "origin.linguisticReconstructions[3].claim"
+      "origin.linguisticReconstructions[2].claim"
     ]
   }
 }
