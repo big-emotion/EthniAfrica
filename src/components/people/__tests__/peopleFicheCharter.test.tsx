@@ -493,8 +493,15 @@ describe("people fiche — the answer card (DEC-068)", () => {
       '[data-fiche-section="D\'où vient le nom ?"]'
     )!;
     expect(card.querySelector("[data-self-name]")?.textContent).toBe("Fulɓe");
+    // A `lang` attribute takes the BCP 47 tag, not the corpus's ISO 639-3
+    // code: axe refuses `lang="wol"` (valid-lang), and accepts `wo`.
+    expect(
+      container
+        .querySelector('[data-name-row="Peul"] [data-name-form]')
+        ?.getAttribute("lang")
+    ).toBe("wo");
     expect(card.querySelector("[data-self-name]")?.getAttribute("lang")).toBe(
-      "ful"
+      "ff"
     );
     expect(card.textContent).toContain("foul-bé");
     expect(card.textContent).toContain(

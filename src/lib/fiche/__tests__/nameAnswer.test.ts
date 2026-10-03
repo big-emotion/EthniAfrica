@@ -72,7 +72,7 @@ describe("peopleNameAnswer", () => {
 
     expect(answer.self).toMatchObject({
       form: "Fulɓe",
-      lang: "ful",
+      lang: "ff",
       line: "Le nom qu'ils se donnent.",
       pronunciation: { respelling: "foul-bé", audioUrl: null },
       detail: "Deux pistes, aucune retenue.",
@@ -107,7 +107,7 @@ describe("peopleNameAnswer", () => {
       "ewe"
     );
 
-    expect(answer.self).toMatchObject({ form: "Eʋeawo", lang: "ewe" });
+    expect(answer.self).toMatchObject({ form: "Eʋeawo", lang: "ee" });
     expect(answer.self.badges).toEqual(["own"]);
     expect(answer.others).toEqual([
       expect.objectContaining({
