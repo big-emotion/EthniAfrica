@@ -497,7 +497,7 @@
     {
       "id": "COD-HISTORY",
       "priority": "P1",
-      "status": "source_json_first_wave_applied_unesco_dating_limits_applied_additional_research_pending",
+      "status": "source_json_first_wave_applied_additional_research_pending",
       "goal": "Extend the timeline before the best-known kingdoms and represent historical entities accurately.",
       "findings": [
         "The kingdoms array currently mixes precolonial polities, colonial administrations, and the modern republic.",
