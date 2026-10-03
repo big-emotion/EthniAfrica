@@ -363,6 +363,19 @@ export const TRANSLATION_CLASSES: Readonly<
     "names[].sources[].author": "invariant",
     "names[].sources[].year": "invariant",
     ...sourceEntry("names[].sources[]"),
+    // An attestation quotes a form as a document wrote it: the form, its
+    // author and its locator are evidence, never translated. Only the period
+    // label is prose ("XIVe siècle").
+    "names[].attestations[].formAsWritten": "invariant",
+    "names[].attestations[].year": "invariant",
+    "names[].attestations[].periodLabel": "translatable",
+    "names[].attestations[].attestedBy": "invariant",
+    "names[].attestations[].source.title": "invariant",
+    "names[].attestations[].source.author": "invariant",
+    "names[].attestations[].source.year": "invariant",
+    "names[].attestations[].source.url": "invariant",
+    "names[].attestations[].source.tier": "invariant",
+    "names[].attestations[].source.page": "invariant",
   },
 
   "modele-pays.json": {

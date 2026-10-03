@@ -40,6 +40,17 @@ export interface NameRecordEntry {
   contemporaryUsage: string | null;
   sortRank: number;
   sources: NameRecordSource[];
+  /** The form's history: each time it was written down, by whom, where (REQ-189). */
+  attestations?: NameAttestation[];
+}
+
+export interface NameAttestation {
+  formAsWritten: string;
+  /** Machine bound for ordering; null when only a period is known. */
+  year: number | null;
+  periodLabel: string | null;
+  attestedBy: string;
+  source: NameRecordSource & { page: string };
 }
 
 export interface NameRecordDossier {

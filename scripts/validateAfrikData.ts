@@ -4026,6 +4026,7 @@ function collectNameRecordFiles(
 function nameRecordIssueRuleId(issuePath: string): string {
   if (issuePath.includes("languageOfOrigin")) return "FR55-iso";
   if (issuePath.includes("whyProblematic")) return "FR56-imposed";
+  if (issuePath.includes("attestations")) return "FR58-attestation";
   return "NAME-MODEL";
 }
 

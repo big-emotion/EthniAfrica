@@ -27,6 +27,22 @@
           "tier": "official | referenced | unverified",
           "notes": "<Faits de provenance publiés tels quels au lecteur : éditeur, édition, institution, ce qui a été lu ou recoupé — jamais la raison pour laquelle le tier a été attribué. Si la source a été atteinte via Wikipédia : les versions linguistiques croisées, pour que la chaîne reste auditable.>"
         }
+      ],
+      "attestations": [
+        {
+          "formAsWritten": "<La forme telle qu'écrite dans le document cité>",
+          "year": 0,
+          "periodLabel": "<Date ou période telle que la source la donne — ex: XIVe siècle>",
+          "attestedBy": "<Qui a écrit cette forme : auteur, chroniqueur, administration>",
+          "source": {
+            "title": "<Titre de la source>",
+            "author": "<Auteur>",
+            "year": 0,
+            "url": "<URL résolvable>",
+            "tier": "official | referenced | unverified",
+            "page": "<Page imprimée — ex: p. 192. Obligatoire : c'est ce qui permet de relire la preuve.>"
+          }
+        }
       ]
     }
   ]
