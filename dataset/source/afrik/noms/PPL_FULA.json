@@ -8,7 +8,7 @@
   "entityType": "people",
   "names": [
     {
-      "nameText": "Fulɓe (pluriel) ; Pullo (singulier)",
+      "nameText": "Fulɓe",
       "nameType": "endonym",
       "languageOfOrigin": "ful",
       "meaning": "C'est le nom que les Peuls se donnent, au pluriel et au singulier. Son sens n'est pas établi. Amadou Hampâté Bâ, lui-même pullo, le tire du verbe fullude, « couvrir de poussière », et cite comme autre possibilité le nom Ful, connu de la Bible, supposé par Maurice Delafosse, sans trancher entre les deux. D'autres lectures viennent de l'extérieur : « les dispersés », proposée par le commandant Gaden et rapportée par Delafosse puis Tauxier ; « brun clair, rouge », de Barth résumé par Crozals et rapporté par Tauxier, une lecture raciale de la couleur de peau qui oppose ce sens au « noir » des Wolof ; la base fur- du mot Ba-fur, par lequel les Berbères auraient désigné les peuples du Tekrur, proposée par Oumar Niang. Le linguiste J. O. Breedveld juge le sens de Pullo et de Fulɓe à peine étudié et rapporte une racine ful- sans lui donner de sens. Nous ne retenons aucune de ces lectures. Un récit d'un barde pullo du Cameroun, recueilli par Eldridge Mohammadu, parle de l'origine du peuple et non du sens du mot : il fait venir de Malle, le Mali, tous les Fulɓe et rattache à ce point de départ les noms de leurs lignages.",
@@ -119,7 +119,23 @@
             "page": "p. 23"
           }
         }
-      ]
+      ],
+      "shortLine": "Le nom qu'ils se donnent dans leur langue ; un seul : un Pullo.",
+      "namedBy": null,
+      "originDebated": true,
+      "usedIn": ["ful"],
+      "pronunciation": {
+        "respelling": "foul-bè (le b se dit en avalant l'air) ; un seul : poul-lo",
+        "audio": null,
+        "source": {
+          "title": "Learner's Guide to Pular (Fuuta Jallon)",
+          "author": "Herbert Caudill et Ousmane Besseko Diallo",
+          "year": 2000,
+          "url": "https://ibamba.net/pular/manual.pdf",
+          "tier": "referenced",
+          "page": "p. i, p. 3 et p. 8"
+        }
+      }
     },
     {
       "nameText": "Haalpulaar'en",
@@ -187,7 +203,11 @@
             "page": "p. 180"
           }
         }
-      ]
+      ],
+      "shortLine": "Ceux qui parlent le pulaar : le nom que se donnent les gens de la vallée du Sénégal.",
+      "namedBy": null,
+      "originDebated": false,
+      "usedIn": ["fuc"]
     },
     {
       "nameText": "Futankooɓe",
@@ -209,7 +229,11 @@
           "tier": "referenced",
           "notes": "IFAN, Dakar, 1969, introduction, lue dans une transcription en ligne sans pagination. Donne Haal-pulaaren et Futankooɓe comme les noms que se donnent ceux que l'on appelle Toucouleur ; rapporte l'explication de Maurice Delafosse (Tokolor et Tokoror chez les Wolof) et celle de Bérenger-Féraud (l'anglais « two colours »), liée à la thèse d'un métissage que Faidherbe soutenait aussi. Les ouvrages de Delafosse, Faidherbe et Bérenger-Féraud n'ont pas été lus."
         }
-      ]
+      ],
+      "shortLine": "Les gens du Fouta : un autre nom qu'ils se donnent dans la vallée du Sénégal.",
+      "namedBy": null,
+      "originDebated": false,
+      "usedIn": ["fuc"]
     },
     {
       "nameText": "Peul",
@@ -271,13 +295,17 @@
             "page": "p. 23"
           }
         }
-      ]
+      ],
+      "shortLine": "Le nom en français ; les sources le font venir du wolof.",
+      "namedBy": "les Wolof",
+      "originDebated": false,
+      "usedIn": ["fra"]
     },
     {
       "nameText": "Fula",
       "nameType": "exonym",
       "languageOfOrigin": "man",
-      "meaning": "Nom donné aux Fulɓe par les peuples manden (mandingues). Des formes proches sont écrites par des auteurs extérieurs : Fulos chez André Álvares de Almada, natif de l'île de Santiago du Cap-Vert, dans son traité de 1594 ; Foulahs ou Pholeys chez l'Écossais Mungo Park, qui voyage en 1795-1797. Ce ne sont pas les premières mentions du peuple : François de Medeiros relève qu'il est nommé explicitement dans les sources arabes à partir d'al-Maqrīzī et de la Chronique de Kano.",
+      "meaning": "Nom donné aux Fulɓe par les peuples manden (mandingues). Des formes proches sont écrites par des auteurs extérieurs : Fulos chez André Álvares de Almada, natif de l'île de Santiago du Cap-Vert, dans son traité de 1594 ; Foulahs ou Pholeys chez l'Écossais Mungo Park, qui voyage en 1795-1797. Ce ne sont pas les premières mentions du peuple : François de Medeiros relève qu'il est nommé explicitement dans les sources arabes à partir d'al-Maqrīzī et de la Chronique de Kano. Un guide d'apprentissage du pular (Caudill et Diallo, 2000) le présente au contraire comme le mot haoussa ; aucune source lue ne tranche.",
       "periodLabel": "Usage contemporain",
       "imposedBy": null,
       "impositionPeriod": null,
@@ -324,6 +352,14 @@
           "url": "https://en.wikipedia.org/wiki/Fula_people",
           "tier": "unverified",
           "notes": "Consultée en octobre 2026 : Fula y est rattaché aux langues mandingues, Fulani au haoussa, Fallata à l'arabe ; les variantes Fulah, Fullah, Fallatah y sont listées."
+        },
+        {
+          "title": "Learner's Guide to Pular (Fuuta Jallon)",
+          "author": "Herbert Caudill et Ousmane Besseko Diallo",
+          "year": 2000,
+          "url": "https://ibamba.net/pular/manual.pdf",
+          "tier": "referenced",
+          "notes": "Guide d'apprentissage du pular, deuxième édition, Conakry. La note 1 de la page i présente Fula comme le mot haoussa pour les Peuls."
         }
       ],
       "attestations": [
@@ -369,7 +405,11 @@
             "page": "p. 152"
           }
         }
-      ]
+      ],
+      "shortLine": "Un nom que la plupart des sources rattachent aux langues mandingues ; repris en anglais.",
+      "namedBy": "les peuples manden (mandingues)",
+      "originDebated": true,
+      "usedIn": ["eng", "man", "por"]
     },
     {
       "nameText": "Fulani",
@@ -481,7 +521,11 @@
             "page": "p. 23"
           }
         }
-      ]
+      ],
+      "shortLine": "Donné par les Haoussa, repris en anglais.",
+      "namedBy": "les Haoussa",
+      "originDebated": false,
+      "usedIn": ["eng", "hau"]
     },
     {
       "nameText": "Fellata",
@@ -601,7 +645,11 @@
             "page": "p. 23"
           }
         }
-      ]
+      ],
+      "shortLine": "Le nom qu'on leur donne au Bornou et plus à l'est ; son origine n'est pas établie.",
+      "namedBy": "les Kanuri et les arabophones du Soudan",
+      "originDebated": true,
+      "usedIn": ["knc", "apd"]
     },
     {
       "nameText": "Toucouleur",
@@ -771,7 +819,11 @@
             "page": "p. 23"
           }
         }
-      ]
+      ],
+      "shortLine": "Donné par leurs voisins aux gens de la vallée du Sénégal ; son origine reste discutée.",
+      "namedBy": "les Wolof et les Seereer",
+      "originDebated": true,
+      "usedIn": ["fra"]
     }
   ]
 }
