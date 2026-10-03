@@ -513,6 +513,7 @@ const dinkaNamesDossier: PeopleNamesDossier = {
         },
       ],
       confidence: { score: 90, recomputedAt: "2025-01-01" },
+      attestations: [],
     },
     {
       id: "nr-2",
@@ -530,6 +531,7 @@ const dinkaNamesDossier: PeopleNamesDossier = {
       assertionId: "as-2",
       sources: [],
       confidence: null,
+      attestations: [],
     },
     {
       id: "nr-3",
@@ -542,6 +544,7 @@ const dinkaNamesDossier: PeopleNamesDossier = {
       assertionId: "as-3",
       sources: [],
       confidence: { score: 60, recomputedAt: "2025-02-01" },
+      attestations: [],
     },
   ],
 };

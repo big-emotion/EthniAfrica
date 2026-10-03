@@ -3950,9 +3950,9 @@ const options: swaggerJsdoc.Options = {
         NameAttestation: {
           type: "object",
           properties: {
-            formAsWritten: { type: "string", example: "Foulbé" },
+            formAsWritten: { type: "string", example: "Fulbe" },
             year: { type: ["integer", "null"], example: 1352 },
-            periodLabel: { type: ["string", "null"], example: "XIVe siècle" },
+            periodLabel: { type: ["string", "null"], example: "14th century" },
             attestedBy: { type: "string", example: "Ibn Battuta" },
             source: {
               type: "object",

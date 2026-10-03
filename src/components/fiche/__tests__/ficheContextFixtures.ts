@@ -92,6 +92,7 @@ export const YORUBA_NAMES_DOSSIER: PeopleNamesDossier = {
       assertionId: "assertion-1",
       sources: [],
       confidence: null,
+      attestations: [],
     },
   ],
 };

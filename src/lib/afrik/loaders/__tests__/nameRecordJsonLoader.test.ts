@@ -579,7 +579,8 @@ describe("nameRecordJsonLoader", () => {
           page: "p. 175",
         },
       };
-      file.names[1] = { ...file.names[1], attestations: [attestation] };
+      const names = file.names as Array<Record<string, unknown>>;
+      names[1] = { ...names[1], attestations: [attestation] };
 
       await loadNameRecords(database.client as never, [file] as never);
 

@@ -12,7 +12,7 @@ import type { NameAttestationView } from "@/api/v2/schemas/names";
 
 /** What the timeline reads of a form: its language and its history. */
 interface AttestedForm {
-  languageOfOrigin: string | null;
+  languageOfOrigin?: string | null;
   attestations?: NameAttestationView[];
 }
 
