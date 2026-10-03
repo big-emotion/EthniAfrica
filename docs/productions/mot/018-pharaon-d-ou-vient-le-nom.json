@@ -14,7 +14,10 @@
     "label": { "fr": "pharaon", "en": "pharaoh" },
     "queries": ["pharaon", "pharaons"]
   },
-  "publications": [],
+  "publications": [
+    { "network": "tiktok", "format": "carrousel" },
+    { "network": "instagram", "format": "carrousel" }
+  ],
   "sources": [
     {
       "title": "Trésor de la langue française informatisé (TLFi), « pharaon », étymologie et histoire",
