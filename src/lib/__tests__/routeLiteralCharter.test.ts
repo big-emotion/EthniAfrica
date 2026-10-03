@@ -9,7 +9,7 @@ import {
 import { join, resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 
-import { RELOCATED_SEGMENTS } from "@/middleware";
+import { RELOCATED_SEGMENTS } from "@/proxy";
 
 /**
  * No module URL is written out anywhere but the three places that own one.

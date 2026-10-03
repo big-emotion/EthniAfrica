@@ -8,7 +8,7 @@ import {
   type Mock,
 } from "vitest";
 import { NextRequest } from "next/server";
-import { middleware, config } from "../middleware";
+import { proxy as middleware, config } from "../proxy";
 import { createServerClient } from "@supabase/ssr";
 
 vi.mock("@supabase/ssr", () => ({

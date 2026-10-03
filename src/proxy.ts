@@ -606,7 +606,7 @@ export function resolveRelocatedPath(
 }
 
 // @req REQ-052
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const nonce = btoa(crypto.randomUUID());
 

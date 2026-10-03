@@ -1,5 +1,5 @@
 import type { NextConfig } from "next";
-import { withSentryConfig } from "@sentry/nextjs";
+import { withSentryConfig } from "@sentry/nextjs/config";
 
 const nextConfig: NextConfig = {
   // Production is self-hosted on a VPS in a Docker image that carries no
@@ -91,8 +91,9 @@ export default withSentryConfig(nextConfig, {
   // Requires SENTRY_AUTH_TOKEN environment variable
   widenClientFileUpload: true,
 
-  // Disable instrumenting webpack - use turbopack instead
-  disableLogger: true,
+  // Replaces the deprecated `disableLogger`. Webpack-only: the build runs on
+  // Turbopack, where Sentry reports the option as unsupported.
+  webpack: { treeshake: { removeDebugLogging: true } },
 
   // Tunnel route for bypassing ad-blockers
   tunnelRoute: "/monitoring",

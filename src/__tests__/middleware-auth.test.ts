@@ -70,7 +70,7 @@ vi.mock("@supabase/ssr", () => ({
 
 import { validateApiKey } from "@/lib/api/auth";
 import { applyIpRateLimit, evaluateRateLimit } from "@/lib/api/rate-limit";
-import { middleware } from "../middleware";
+import { proxy as middleware } from "../proxy";
 
 function createMockRequest(
   url: string,

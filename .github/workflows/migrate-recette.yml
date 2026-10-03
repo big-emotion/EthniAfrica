@@ -70,7 +70,7 @@ jobs:
       - uses: supabase/setup-cli@45a513f8c64c0bc8e0e3dfe572b5c95be85f6359 # v3.0.1
         if: steps.secrets.outputs.present == 'true'
         with:
-          version: latest
+          version: 2.116.0
 
       # recette's Postgres is self-hosted on the same VPS as production and,
       # deliberately, not on the internet — no host port is published for
