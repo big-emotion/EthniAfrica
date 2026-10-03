@@ -1,0 +1,39 @@
+{
+  "campaign": "amazigh-d-ou-vient-le-nom",
+  "typologie": "peuple",
+  "episode": 15,
+  "question": {
+    "fr": "D'où vient le nom Amazigh ?"
+  },
+  "myth": {
+    "fr": "« Amazigh » veut-il vraiment dire « les hommes libres » ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_AMAZIGH_MACRO",
+      "label": { "fr": "Amazigh" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_AMAZIGH_MACRO",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7691450331863059734",
+      "publishedAt": "2026-09-30"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/Dd7Wb5-iNSD/"
+    },
+    {
+      "network": "facebook",
+      "format": "carrousel",
+      "url": "https://www.facebook.com/photo/?fbid=122118802371465536&set=pcb.122118802587465536"
+    },
+    { "network": "youtube", "format": "carrousel" },
+    { "network": "linkedin", "format": "carrousel" }
+  ]
+}

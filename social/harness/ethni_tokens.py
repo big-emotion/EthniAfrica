@@ -301,13 +301,18 @@ _FORMAT_KEYS = {
 }
 
 
-def reseaux(fmt_key):
+def reseaux(fmt_key, deck=None):
     """Which networks receive a format, in §1 bis's own row order.
 
     Read straight from the "Reçoit" column rather than a second, hand-kept list:
     §1 bis is revised, not broken (« la table se révise, elle ne s'enfreint pas »),
     and a revised line must not need a matching edit here to take effect.
     """
+    if deck is not None:
+        from ethni_carousel_profiles import networks
+        selected = networks(deck, fmt_key)
+        if selected is not None:
+            return selected
     cibles = []
     for row in _tables()["1 bis. Un format par réseau"]:
         reseau, recoit = row[0], row[1]
@@ -449,9 +454,16 @@ def choisir(carte, w, h, fmt_key, image=None, tient=None):
 # §7 — share-alike is viral, and a later version absorbs an earlier one because
 # both 2.0 and 3.0 carry the « later version with the same licence elements »
 # clause. Ordered least to most constraining.
+#
+# The Pexels licence sits just above CC0: free use and modification, no
+# attribution, no share-alike, but some residual limits (no resale of unaltered
+# copies, no implied endorsement, no redistribution on other stock platforms) that
+# CC0 does not carry. It must stay below every attribution licence, so a lot
+# mixing it with a CC BY or CC BY-SA image keeps the stricter output licence.
 _LICENCE_RANK = [
     "domaine public",
     "CC0",
+    "licence Pexels",
     "licence ouverte",
     "CC BY 2.0", "CC BY 3.0", "CC BY 4.0",
     "CC BY-SA 2.0", "CC BY-SA 3.0", "CC BY-SA 4.0",

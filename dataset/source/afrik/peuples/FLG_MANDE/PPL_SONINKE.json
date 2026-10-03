@@ -35,6 +35,18 @@
         "Sarakolleh",
         "Azer"
       ],
+      "spellingAliases": [
+        "Soninké",
+        "Soninkés",
+        "Soninko",
+        "Sooninke",
+        "Sarakolé",
+        "Sarakollé",
+        "Sarakholé",
+        "Sarakolés",
+        "Sarakollés",
+        "Markas"
+      ],
       "originOfExonyms": "Sarakolle/Sarakole est le terme utilise par les Wolofs du Senegal. Serakhulle et Sarahuli sont les termes utilises en Gambie. Wangara est l'appellation donnee par les Mandinka aux marchands soninke disperses en Afrique de l'Ouest. Marakas est le terme bambara. Wakore est le terme songhai. Toubakai designe les Soninke islamises. Gadyaga est le nom historique de leur region d'origine. Marka (Mali) et Dafing (Burkina Faso) designent des sous-groupes soninke.",
       "whyProblematic": "Le terme Soninke peut avoir des connotations negatives dans le Fouta-Djalon et en Senegambie, ou il a ete utilise pour designer des non-musulmans ou des adeptes des religions traditionnelles, bien que les Soninke soient en grande majorite musulmans depuis le 10e siecle.",
       "contemporaryUsage": "Soninke est le terme ethnologique standard. Les membres de ce peuple se designent eux-memes comme Soninke (singulier: Soninko). Les denominatifs regionaux (Sarakolle au Senegal, Serakhulle en Gambie, Wangara dans l'espace manding) coexistent avec le terme general.",
@@ -235,6 +247,18 @@
         "title": "Soninkara.com – Association culturelle soninke",
         "url": "https://www.soninkara.com",
         "tier": "needs_review"
+      },
+      {
+        "title": "Encyclopædia Universalis — Soninké ou Sarakholé",
+        "url": "https://www.universalis.fr/encyclopedie/soninke-sarakhole/",
+        "tier": "referenced",
+        "notes": "Début de l'article lu directement : les Soninké, un Soninké et des Soninko, se nomment ainsi eux-mêmes ; les Wolof les appellent Sarakholé ou Sarakolé ; on leur rattache souvent les Marka ou Maraka."
+      },
+      {
+        "title": "Larousse — Soninkés ou Sarakolés ou Sarakollés ou Markas",
+        "url": "https://www.larousse.fr/encyclopedie/divers/Sonink%C3%A9s/144837",
+        "tier": "referenced",
+        "notes": "Texte lu directement : la langue s'y écrit soninké, ou soningokan."
       },
       {
         "title": "COCOON/HUMA-NUM – Fiche langue Soninke ISO snk",

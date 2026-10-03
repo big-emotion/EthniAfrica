@@ -26,12 +26,7 @@ import {
   SEARCH_RESULT_GROUPS,
 } from "@/lib/search/searchVocabulary";
 import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
-import {
-  getCountryRoute,
-  getFamilyRoute,
-  getLocalizedRoute,
-  getPeopleRoute,
-} from "@/lib/routing";
+import { getFamilyRoute, getLocalizedRoute } from "@/lib/routing";
 import type { SearchLead, SearchResult } from "@/types/afrik-frontend";
 import { search as searchCorpus, searchWithLeads } from "@/lib/afrikLoader";
 
@@ -203,7 +198,7 @@ describe("HomeHeroSearch", () => {
     const group = await screen.findByRole("group", { name: "Countries" });
     expect(within(group).getByRole("option", { name: /Chad/ })).toHaveAttribute(
       "href",
-      getCountryRoute("en", "TCD")
+      `${getLocalizedRoute("en", "search")}?q=Chad`
     );
   });
 
@@ -340,23 +335,40 @@ describe("HomeHeroSearch", () => {
   });
 
   // @req REQ-002
-  it("points every suggestion at its own fiche", async () => {
+  it("points every suggestion at the results page for its name", async () => {
     renderSearch();
 
     await type("yoruba");
     await screen.findByRole("listbox");
 
+    const resultsFor = (q: string) =>
+      `${getLocalizedRoute("fr", "search")}?${new URLSearchParams({ q })}`;
     expect(screen.getByRole("option", { name: /Yoruba/ })).toHaveAttribute(
       "href",
-      getPeopleRoute("fr", "PPL_YORUBA")
+      resultsFor("Yoruba")
     );
     expect(screen.getByRole("option", { name: /Nigeria/ })).toHaveAttribute(
       "href",
-      getCountryRoute("fr", "NGA")
+      resultsFor("Nigeria")
     );
     expect(screen.getByRole("option", { name: /Niger-Congo/ })).toHaveAttribute(
       "href",
-      getFamilyRoute("fr", "FLG_NIGER_CONGO")
+      resultsFor("Niger-Congo")
+    );
+  });
+
+  // @req REQ-178
+  it("searches the primary name only, without the alias suffix", async () => {
+    renderSearch(async () => [
+      { ...YORUBA, name: "Fula (Fulbe / Peul)", autonym: "Fulbe" },
+    ]);
+
+    await type("peul");
+    await screen.findByRole("listbox");
+
+    expect(screen.getByRole("option")).toHaveAttribute(
+      "href",
+      `${getLocalizedRoute("fr", "search")}?q=Fulbe`
     );
   });
 
@@ -413,7 +425,7 @@ describe("HomeHeroSearch", () => {
   });
 
   // @req REQ-002
-  it("opens the active suggestion on Enter", async () => {
+  it("searches the active suggestion's name on Enter", async () => {
     renderSearch();
 
     await type("yoruba");
@@ -422,7 +434,9 @@ describe("HomeHeroSearch", () => {
     fireEvent.keyDown(field(), { key: "ArrowDown" });
     fireEvent.keyDown(field(), { key: "Enter" });
 
-    expect(push).toHaveBeenCalledWith(getPeopleRoute("fr", "PPL_YORUBA"));
+    expect(push).toHaveBeenCalledWith(
+      `${getLocalizedRoute("fr", "search")}?q=Yoruba`
+    );
   });
 
   // @req REQ-002

@@ -5,6 +5,38 @@ description: Challenger une production EthniAfrica (idée, cards.json, narration
 
 # onomastique — cette pièce raconte-t-elle un nom, ou seulement un événement ?
 
+## Editorial voice and reader needs (2026-09-30)
+
+Before writing or reviewing reader-facing copy, read
+`docs/editorial/reader-facing-register.md` and `docs/editorial/audience-personas.md`.
+EthniAfrica speaks as a popular educator using research methods, without claiming
+scientific, linguistic or historical qualifications for its operator. Explain the
+subject in ordinary language, keep uncertainty in the sentence, and put traceable
+sources after it. Oral and local accounts are sources in their own right; preserve
+their actual context and never invent interviews or community consensus.
+State the primary reader need in the existing working report; personas are
+provisional, and geography or platform demographics never establish diaspora identity.
+
+## When this review applies (2026-09-29)
+
+The review follows the **claims**, not the family. It is `required` when the piece
+carries a claim of kind `name-origin` — it says where a name comes from, who gave it,
+or since when — whatever the family (a portrait, a route, a material biography and a
+name investigation all trigger it the same way). `check-family-brief.mjs` states
+whether it applies.
+
+- **Applies** (`name` = `required`): run the questions below on every name the piece
+  _explains_. Verdicts as written.
+- **Does not apply** (`name` = `not-applicable`, no `name-origin` claim): a piece that
+  merely uses a person's or a place's name without stating its origin owes no
+  onomastic interrogation, and is not judged « raconte sans nommer » — that verdict
+  belongs to the name series, whose subject _is_ the name. Record the `not-applicable`
+  with its reason; do not force a name question into a portrait or a comparison to
+  satisfy this review. The universal reviews (provenance, uncertainty, attribution,
+  intelligibility, non-essentialising) stay owed regardless.
+- **The fifth question below (whose account is it)** governs every name the piece
+  explains, in any family, including when a local account and an outside one disagree.
+
 Né le 2026-09-16, sur `cabinda-yombe-trois-lignes` : un premier jet racontait
 avec exactitude trois conventions frontalières et une carte de conflit, sans
 jamais poser la question qui fonde le projet — qui a nommé ce peuple, qui a
@@ -96,12 +128,14 @@ immédiatement.
 4. **Si le corpus n'offre que des sources extérieures sur ce nom**, la pièce peut
    le dire. Le silence sur le déséquilibre est lui aussi un choix.
 
-**La méthode scientifique reste le cadre de vérification, jamais l'arbitre de qui
-a droit à la parole.** Elle répond à « est-ce attesté, par qui, quand » — elle ne
-répond pas à « quelle explication d'un peuple sur son propre nom mérite d'être
-entendue ». La position linguistique occidentale est un outil du projet, pas sa
-voix ; l'employer comme voix revient à trancher un débat de légitimité avec un
-instrument conçu pour trancher un débat de preuve.
+**Les outils scientifiques et linguistiques restent utiles pour vérifier, sans être
+le seul cadre ni l'arbitre de qui a droit à la parole.** Ils répondent à « est-ce
+attesté, par qui, quand » — ils ne répondent pas à « quelle explication d'un peuple
+sur son propre nom mérite d'être entendue ». Une position savante, d'où qu'elle
+vienne, est un outil du projet, pas sa voix ; l'employer comme voix revient à
+trancher un débat de légitimité avec un instrument conçu pour trancher un débat de
+preuve. La méthode de travail est dans le guide
+(`docs/editorial/reader-facing-register.md`, « Working method »).
 
 Une pièce qui explique un nom contesté sans que le lecteur puisse deviner qu'il
 est contesté **ne passe pas cette question**, quelle que soit la qualité de la

@@ -1,0 +1,27 @@
+{
+  "campaign": "benin-royaume-jamais-au-benin",
+  "typologie": "pays",
+  "episode": 11,
+  "question": {
+    "fr": "D'où vient le nom Bénin ?"
+  },
+  "myth": {
+    "fr": "Le royaume du Bénin a-t-il un jour été situé au Bénin ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "BEN",
+      "label": { "fr": "Bénin" }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/BEN",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7684285907590991126",
+      "publishedAt": "2026-09-11"
+    }
+  ]
+}

@@ -23,4 +23,20 @@ describe("CompanionRelationLabel", () => {
       "exact"
     );
   });
+
+  // A production found by the word is the answer to it, exactly as an exact
+  // entity match is, so it is just as quiet.
+  // @req REQ-180
+  it("keeps a word match quiet, and names the word when asked", () => {
+    const word = { relation: "word" as const, word: "zombie" };
+    const { rerender } = render(<CompanionRelationLabel match={word} />);
+
+    expect(screen.queryByText("Sur ce mot")).not.toBeInTheDocument();
+
+    rerender(<CompanionRelationLabel match={word} showExact />);
+    expect(screen.getByText("Sur ce mot")).toHaveAttribute(
+      "data-companion-relation",
+      "word"
+    );
+  });
 });

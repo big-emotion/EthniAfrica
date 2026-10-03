@@ -1,0 +1,38 @@
+{
+  "campaign": "diallo-djallo-jallow",
+  "typologie": "patronyme",
+  "episode": 4,
+  "question": {
+    "fr": "D'où vient le nom Diallo ?"
+  },
+  "myth": {
+    "fr": "Diallo et Djallo sont-ils vraiment deux noms différents ?"
+  },
+  "subjects": [
+    {
+      "kind": "patronyme",
+      "id": "PAT_DIALLO",
+      "label": { "fr": "Diallo" }
+    },
+    {
+      "kind": "patronyme",
+      "id": "PAT_JALLOW",
+      "label": { "fr": "Jallow" }
+    }
+  ],
+  "sitePath": "/fr/atlas/noms/PAT_DIALLO",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7686049879138864406",
+      "publishedAt": "2026-09-16"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/DdV4LwUCGES/",
+      "publishedAt": "2026-09-17"
+    }
+  ]
+}

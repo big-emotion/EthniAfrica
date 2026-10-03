@@ -1,4 +1,5 @@
 import { normalizeString } from "@/lib/normalize";
+import { normaliseSearchQuery } from "@/lib/search/queryNormalisation";
 import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
 import type { SearchResult } from "@/types/afrik-frontend";
 import type { Language } from "@/types/shared";
@@ -30,12 +31,25 @@ export function selectNameSubject(
   query: string,
   language: Language = "fr"
 ): SearchResult[] {
-  const wanted = normalizeString(query.trim());
-  if (!wanted) return [];
+  // « les peuls » and « d'où vient le nom peul ? » are questions about the name
+  // « peul ». Candidates come in order of preference, and the first one an
+  // entry answers to is the name the reader meant.
+  const candidates =
+    normaliseSearchQuery(query).candidates.map(normalizeString);
 
-  const exact = results.filter((result) =>
-    namesOf(result, language).some((name) => normalizeString(name) === wanted)
-  );
+  let wanted = "";
+  let exact: SearchResult[] = [];
+  for (const candidate of candidates) {
+    exact = results.filter((result) =>
+      namesOf(result, language).some(
+        (name) => normalizeString(name) === candidate
+      )
+    );
+    if (exact.length > 0) {
+      wanted = candidate;
+      break;
+    }
+  }
   if (exact.length === 0) return [];
 
   // Bassa is three peoples filed « Bassa », « Bassa du Cameroun » and « Bassa

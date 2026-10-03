@@ -7,16 +7,50 @@
     "en": "Where does the name Mandé come from?"
   },
   "myth": {
-    "fr": "Manden, Mandé et mandingue désignent-ils la même chose ?",
-    "en": "Do Manden, Mandé and mandingue name the same thing?"
+    "fr": "Mandé désigne-t-il seulement une famille de langues ?",
+    "en": "Does Mande refer only to a language family?"
   },
   "subjects": [
     {
       "kind": "family",
       "id": "FLG_MANDE",
-      "label": { "fr": "Mandé", "en": "Mande" }
+      "label": {
+        "fr": "Mandé",
+        "en": "Mande"
+      }
     }
   ],
   "sitePath": "/fr/atlas/familles/FLG_MANDE",
-  "publications": []
+  "publications": [
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/vESK91smqxQ",
+      "publishedAt": "2026-09-16"
+    },
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7689493406640377110",
+      "publishedAt": "2026-09-25"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/bqpj5UiwGJ8",
+      "publishedAt": "2026-09-25"
+    },
+    {
+      "network": "facebook",
+      "format": "video",
+      "url": "https://www.facebook.com/reel/1380903870695826",
+      "publishedAt": "2026-09-25"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/p/DdtxN3eKEUR/",
+      "publishedAt": "2026-09-25"
+    }
+  ]
 }

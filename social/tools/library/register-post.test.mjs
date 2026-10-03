@@ -127,6 +127,52 @@ const MANDE = [
 ];
 
 // @req REQ-032
+test("musical registration records intended channels without inventing a site link or publication", () => {
+  const library = scratchLibrary();
+  const run = register(
+    [
+      "--id",
+      "kassav-fixture",
+      "--dir",
+      "Musique-Kassav/kassav-fixture",
+      "--title",
+      "A musical story",
+      "--subject",
+      "Musique · Kassav",
+      "--pillar",
+      "EthniAfrica",
+      "--status",
+      "a-produire",
+      "--profile",
+      "memoires-sonores",
+      "--write",
+    ],
+    library.posts
+  );
+  assert.equal(run.status, 0, run.stderr);
+  const post = JSON.parse(fs.readFileSync(library.ledger, "utf8")).posts.at(-1);
+  assert.equal(post.profile, "memoires-sonores");
+  assert.deepEqual(post.intendedChannels, ["tiktok", "instagram"]);
+  assert.deepEqual(post.channels, {});
+  assert.equal(post.date, "");
+  assert.equal(post.links, undefined);
+  assert.equal(post.status, "a-produire");
+});
+
+// @req REQ-032
+test("unknown carousel profiles cannot mutate the library", () => {
+  const library = scratchLibrary();
+  const before = fs.readFileSync(library.ledger, "utf8");
+  const run = register(
+    [...MANDE, "--profile", "memoires-sonore", "--write"],
+    library.posts
+  );
+  assert.notEqual(run.status, 0);
+  assert.match(run.stderr, /profil.*inconnu/i);
+  assert.equal(fs.readFileSync(library.ledger, "utf8"), before);
+});
+
+// @req REQ-032
 test("a registration is a dry run unless --write is given", () => {
   const library = scratchLibrary();
   const before = fs.readFileSync(library.ledger, "utf8");
@@ -358,4 +404,64 @@ test("an entry whose folder sits in another bucket gets no second folder", () =>
     fs.existsSync(path.join(library.posts, "Brouillon", IN_PROGRESS.dir)),
     false
   );
+});
+
+// @req REQ-187
+test("an angle, family, format, relation and planned date are stored beside the entry's own date", () => {
+  const library = scratchLibrary();
+
+  const run = register(
+    [
+      ...MANDE,
+      "--family",
+      "historical-portrait",
+      "--angle-id",
+      "portrait-mande",
+      "--angle-question",
+      "Qui étaient les Mandé avant le nom ?",
+      "--format",
+      "carrousel",
+      "--planned-date",
+      "2026-10-05",
+      "--relates",
+      "adapts:touareg-cinq-pays",
+      "--write",
+    ],
+    library.posts
+  );
+
+  assert.equal(run.status, 0, run.stderr);
+  const entry = JSON.parse(fs.readFileSync(library.ledger, "utf8")).posts.at(
+    -1
+  );
+  assert.equal(entry.family, "historical-portrait");
+  assert.deepEqual(entry.angle, {
+    id: "portrait-mande",
+    question: "Qui étaient les Mandé avant le nom ?",
+  });
+  assert.equal(entry.format, "carrousel");
+  assert.equal(entry.plannedDate, "2026-10-05");
+  assert.deepEqual(entry.relations, [
+    { type: "adapts", to: "touareg-cinq-pays" },
+  ]);
+  assert.equal(entry.date, "");
+});
+
+// @req REQ-187
+test("an unknown family, format, date or relation cannot reach the ledger", () => {
+  const library = scratchLibrary();
+  const before = fs.readFileSync(library.ledger, "utf8");
+  const refused = [
+    [["--family", "free"], /famille/i],
+    [["--format", "podcast"], /format/i],
+    [["--planned-date", "5 octobre"], /YYYY-MM-DD/],
+    [["--relates", "copies:touareg-cinq-pays"], /relation/i],
+    [["--relates", "adapts:nulle-part"], /nulle-part/],
+  ];
+  for (const [flags, message] of refused) {
+    const run = register([...MANDE, ...flags, "--write"], library.posts);
+    assert.notEqual(run.status, 0, flags.join(" "));
+    assert.match(run.stderr, message);
+    assert.equal(fs.readFileSync(library.ledger, "utf8"), before);
+  }
 });

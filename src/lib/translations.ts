@@ -2,6 +2,7 @@ import { adminCopy } from "@/lib/i18n/copy/admin";
 import { classificationCopy } from "@/lib/i18n/copy/classification";
 import { atlasCopy } from "@/lib/i18n/copy/atlas";
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
+import { articlesCopy } from "@/lib/i18n/copy/articles";
 import { colonizationCopy } from "@/lib/i18n/copy/colonization";
 import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import { chromeCopy } from "@/lib/i18n/copy/chrome";
@@ -28,6 +29,7 @@ import { gamesCopy } from "@/lib/i18n/copy/games";
 import { generatedImagesCopy } from "@/lib/i18n/copy/generatedImages";
 import { hubsCopy } from "@/lib/i18n/copy/hubs";
 import { languagesCopy } from "@/lib/i18n/copy/languages";
+import { ficheNameStoryCopy } from "@/lib/i18n/copy/ficheNameStory";
 import { languageFicheCopy } from "@/lib/i18n/copy/languageFiche";
 import { migrationsCopy } from "@/lib/i18n/copy/migrations";
 import { moderationConsoleCopy } from "@/lib/i18n/copy/moderationConsole";
@@ -63,6 +65,7 @@ const en = {
   admin: adminCopy.en,
   server: serverCopy.en,
   anecdotes: anecdotesCopy.en,
+  articles: articlesCopy.en,
   proverbs: proverbsCopy.en,
   gallery: galleryCopy.en,
   generatedImages: generatedImagesCopy.en,
@@ -101,6 +104,7 @@ const en = {
   fieldProvenance: fieldProvenanceCopy.en,
   family: familyCopy.en,
   fiche: ficheCopy.en,
+  ficheNameStory: ficheNameStoryCopy.en,
   languageFiche: languageFicheCopy.en,
   peopleFiche: peopleCopy.en,
   hubs: hubsCopy.en,
@@ -118,6 +122,7 @@ const fr: UiDictionary = {
   admin: adminCopy.fr,
   server: serverCopy.fr,
   anecdotes: anecdotesCopy.fr,
+  articles: articlesCopy.fr,
   proverbs: proverbsCopy.fr,
   gallery: galleryCopy.fr,
   generatedImages: generatedImagesCopy.fr,
@@ -156,6 +161,7 @@ const fr: UiDictionary = {
   fieldProvenance: fieldProvenanceCopy.fr,
   family: familyCopy.fr,
   fiche: ficheCopy.fr,
+  ficheNameStory: ficheNameStoryCopy.fr,
   languageFiche: languageFicheCopy.fr,
   peopleFiche: peopleCopy.fr,
   hubs: hubsCopy.fr,

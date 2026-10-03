@@ -603,7 +603,7 @@ Array<{ kind: "people"|"country"|"family"|"language"|"patronyme", id, label? }>`
 - `?autour=<id,id>` on `/fr/decouvertes` builds a deck restricted to publications
   whose subjects/entities intersect the ids — the target of every « Tout voir ».
 - **Content** (operator, not code): the 16 published videos
-  (`docs/tasks/discoveries-social-inventory.md`) get a manifest record each, with
+  (listed in the former social-library inventory, since deleted) get a manifest record each, with
   subjects. `cards.json` (GABARITS-SOCIAL §10) gains `sujets: ["PPL_…"]` so the
   production chain writes subjects from now on (`/ethniafrica-structure`).
 

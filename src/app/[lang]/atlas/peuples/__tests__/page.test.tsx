@@ -124,7 +124,8 @@ vi.mock("@/components/source-transparency/PinnedVersionBanner", () => ({
 // ---------------------------------------------------------------------------
 // Import page AFTER mocks
 // ---------------------------------------------------------------------------
-import { render } from "@testing-library/react";
+import { act, render } from "@testing-library/react";
+import { setFicheMapOpen } from "@/components/fiche/FicheMapBand";
 import { notFound, redirect } from "next/navigation";
 import PeoplesSlugPage, { generateMetadata } from "../[slug]/page";
 import { resolveAsyncServerComponents } from "@/test/resolveAsyncServerComponents";
@@ -459,6 +460,7 @@ describe("/[lang]/peuples/[slug] page", () => {
     // @req REQ-091
     it("live URL: opens on the parchment, unfolded and under the night band", async () => {
       const { container, getByTestId } = await renderPage("PPL_YORUBA");
+      act(() => setFicheMapOpen(true));
 
       // One anchor, and it is the dossier: the mockup gives the people fiche a
       // globe and a parchment, not a sequence of chapters above the parchment.

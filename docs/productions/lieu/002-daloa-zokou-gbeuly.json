@@ -1,0 +1,27 @@
+{
+  "campaign": "daloa-zokou-gbeuly",
+  "typologie": "lieu",
+  "episode": 2,
+  "question": {
+    "fr": "D'où vient le nom Daloa ?"
+  },
+  "myth": {
+    "fr": "Daloa porte-t-elle le nom de son fondateur, le chef de guerre bété Zokou Gbeuly ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "CIV",
+      "label": { "fr": "Daloa (Côte d'Ivoire)" }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/CIV",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7685440978597055766",
+      "publishedAt": "2026-09-14"
+    }
+  ]
+}

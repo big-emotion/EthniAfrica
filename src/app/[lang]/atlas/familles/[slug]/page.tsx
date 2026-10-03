@@ -267,6 +267,7 @@ export default async function FamillesSlugPage({
         <FicheHeroHead
           entityType="language-family"
           translation={family.translation}
+          mapToggleLanguage={lang as Language}
         >
           <FamilyFicheTitle family={family} language={lang as Language} />
         </FicheHeroHead>

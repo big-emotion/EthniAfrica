@@ -65,11 +65,24 @@ const originClaimShape = {
 
 const patronymeOriginClaimSchema = z.object(originClaimShape).strict();
 
+/**
+ * An oral account is recorded by who carried it and how it was collected.
+ * `griot` and `transcription` are two possible shapes of that, kept valid for
+ * the accounts already in the corpus, and no longer conditions of it: a family
+ * elder who asked not to be named, or an account known only through a summary,
+ * fits the record without anything invented to fill a field. An absent field is
+ * unknown and stays absent; `not-stated` is the value for « we know it was
+ * collected, not how ».
+ */
 const patronymeOralOriginClaimSchema = z
   .object({
     ...originClaimShape,
-    griot: z.string().min(1),
-    transcription: z.string().min(1),
+    griot: z.string().min(1).optional(),
+    transcription: z.string().min(1).optional(),
+    carrier: z.string().min(1).optional(),
+    collection: z.enum(["direct", "mediated", "not-stated"]).optional(),
+    collector: z.string().min(1).optional(),
+    context: z.string().min(1).optional(),
   })
   .strict();
 

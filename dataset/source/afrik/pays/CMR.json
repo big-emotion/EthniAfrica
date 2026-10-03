@@ -4,8 +4,8 @@
   "nameEn": "Cameroon",
   "nameOfficial": "République du Cameroun (Republic of Cameroon)",
   "summary": "Le Cameroun doit son nom aux crevettes du fleuve Wouri, que les Portugais nommèrent « Rio dos Camarões » au XVe siècle. Colonisé successivement par l'Allemagne, la France et la Grande-Bretagne, il en garde un bilinguisme officiel. Plus de 280 peuples s'y côtoient, du royaume Bamoun aux chefferies bamiléké, des Sawa côtiers aux peuples des forêts du Sud.",
-  "etymology": "Le nom \"Cameroun\" dérive du portugais \"Rio dos Camarões\" (Rivière des crevettes), donné par les navigateurs portugais au XVe siècle en référence au fleuve Wouri, riche en crevettes. Le terme \"Camarões\" a été adapté en \"Cameroun\" par les Français et \"Cameroons\" par les Britanniques.",
-  "nameOriginActor": "Le nom \"Cameroun\" provient des navigateurs portugais qui ont exploré la côte camerounaise au XVe siècle. Le terme \"Rio dos Camarões\" (Rivière des crevettes) a été donné au fleuve Wouri et a ensuite été généralisé pour désigner l'ensemble du territoire. Les colonisateurs allemands, français et britanniques ont adapté ce nom.",
+  "etymology": "Le nom \"Cameroun\" dérive du portugais \"Rio dos Camarões\" (Rivière des crevettes), donné par les navigateurs portugais au XVe siècle en référence au fleuve Wouri, riche en crevettes. Le terme \"Camarões\" a été adapté en \"Cameroun\" par les Français et \"Cameroons\" par les Britanniques. Le nom anglais est déjà écrit dans le traité de protection du 12 juillet 1884, où les rois douala Bell et Akwa parlent du pays appelé \"Cameroons\", avant que l'administration allemande n'en fasse \"Kamerun\".",
+  "nameOriginActor": "Le nom \"Cameroun\" provient des navigateurs portugais qui ont exploré la côte camerounaise au XVe siècle. Le terme \"Rio dos Camarões\" (Rivière des crevettes) a été donné au fleuve Wouri et a ensuite été généralisé pour désigner l'ensemble du territoire. Les colonisateurs allemands, français et britanniques ont adapté ce nom. Ni l'auteur précis du baptême ni la date exacte ne sont établis ici par une source d'époque : la tradition parle du XVe siècle.",
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -286,19 +286,19 @@
           "name": "langues bantoues"
         }
       ],
-      "culturalTraditions": "Diversité culturelle importante reflétant la mosaïque ethnique du Cameroun (plus de 280 ethnies). Traditions bantoues (Beti-Fang-Bulu, Bamiléké, Sawa). Traditions peules (pastoralisme, poésie). Traditions islamiques (Nord, sultanats). Traditions pygmées (chasse-cueillette, forêts). Art royal (royaume Bamoun, écriture bamoun). Masques et sculptures (Beti-Fang, Bamiléké). Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles.",
+      "culturalTraditions": "Diversité culturelle importante reflétant la mosaïque ethnique du Cameroun (plus de 280 ethnies). Traditions bantoues (Beti-Fang-Bulu, Bamiléké, Sawa). Traditions peules (pastoralisme, poésie). Traditions islamiques (Nord, sultanats). Traditions pygmées (chasse-cueillette, forêts). Art royal (royaume Bamoun, écriture bamoun). Masques et sculptures (Beti-Fang, Bamiléké). Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles. Le pays est souvent présenté comme une « Afrique en miniature » : une étude de 2012 relève que la formule, très répétée dans la promotion touristique, est illusoire prise à la lettre, même si de nombreux éléments physiques, sociolinguistiques et historiques semblent la soutenir. Sur les six grandes familles linguistiques définies par Greenberg, seules la khoïsan et l'austronésienne n'y sont pas représentées.",
       "dominantReligions": "Christianisme (catholicisme et protestantisme, surtout dans le sud), islam (surtout dans le nord), religions traditionnelles africaines (syncrétisme fréquent, culte des ancêtres, masques)",
       "lifestyles": "Agriculture (Bamiléké, Beti-Fang, cultures vivrières, cacao, café), élevage (Peuls, bovins), chasse-cueillette (Pygmées), commerce et activités urbaines (zones urbaines, Douala, Yaoundé). Urbanisation croissante. Économie basée sur l'agriculture (cacao, café, coton, bananes), l'exploitation pétrolière, et les services.",
       "socialOrganization": "Organisation en royaumes historiques (Bamoun, système monarchique), chefferies traditionnelles (Bamiléké, Grassfields), sultanats (Mandara, Kotoko), structures claniques patrilinéaires. Importance des lignages et des familles étendues. Rôle des conseils d'anciens. Organisation égalitaire chez les Pygmées (chasseurs-cueilleurs).",
-      "regionalRelations": "Relations historiques avec le Nigeria (commerce, peuples transfrontaliers), le Tchad (commerce, peuples transfrontaliers), la RCA (commerce, peuples transfrontaliers), la Guinée équatoriale (Fang, commerce). Intégration dans la CEMAC (Communauté économique et monétaire de l'Afrique centrale) et la CEDEAO (Communauté économique des États de l'Afrique de l'Ouest). Relations commerciales et culturelles transfrontalières. Bilingualisme français-anglais unique en Afrique."
+      "regionalRelations": "Relations historiques avec le Nigeria (commerce, peuples transfrontaliers), le Tchad (commerce, peuples transfrontaliers), la RCA (commerce, peuples transfrontaliers), la Guinée équatoriale (Fang, commerce). Intégration dans la CEMAC (Communauté économique et monétaire de l'Afrique centrale) et la CEDEAO (Communauté économique des États de l'Afrique de l'Ouest). Relations commerciales et culturelles transfrontalières. Bilinguisme officiel français-anglais."
     },
     "historicalFacts": {
       "ancientPeriods": "Peuplement initial par diverses sociétés sans nom unifié. Développement de chefferies et royaumes locaux. Arrivée et expansion des peuples bantous dans le sud et de l'est.",
       "middleAges": "Formation et développement du royaume Bamoun, chefferies Bamiléké (Grassfields), royaumes Beti-Fang-Bulu. Développement de réseaux commerciaux régionaux et transsahariens. Arrivée de l'islam dans le nord (sultanats Mandara et Kotoko).",
       "precolonial": "Consolidation du royaume Bamoun, chefferies Bamiléké puissantes, royaumes Beti-Fang-Bulu. Développement des sultanats islamiques dans le nord. Peuples Sawa (côtiers) actifs dans le commerce côtier. Contacts avec les Européens (Portugais, puis Allemands, Français, Britanniques).",
-      "colonization": "1884 : Établissement de la colonie allemande du Kamerun. Période coloniale allemande (1884-1916), développement de l'infrastructure, exploitation économique, résistance des peuples autochtones. 1916 : Défaite allemande, partition du territoire entre la France et le Royaume-Uni. 1916-1960/1961 : Mandats français et britannique (SDN puis ONU). Développement du mouvement indépendantiste au XXe siècle.",
+      "colonization": "1884 : Établissement de la colonie allemande du Kamerun, à la suite du traité de protection du 12 juillet 1884 signé à Douala par les rois Bell et Akwa avec des agents des maisons de commerce Woermann et Jantzen & Thormählen. Période coloniale allemande (1884-1916), développement de l'infrastructure, exploitation économique, résistance des peuples autochtones. 1916 : Défaite allemande, partition du territoire entre la France et le Royaume-Uni. 1916-1960/1961 : Mandats français et britannique (SDN puis ONU). Développement du mouvement indépendantiste au XXe siècle.",
       "independenceStruggle": "1960 : Indépendance du Cameroun français (1er janvier 1960), proclamation de la République du Cameroun. 1961 : Réunification avec le Cameroun britannique (1er octobre 1961), création de la République fédérale du Cameroun. 1972 : Abolition du fédéralisme, création de la République unie du Cameroun.",
-      "postIndependence": "1984 : Changement de nom pour \"République du Cameroun\" (nom actuel). Période de stabilité politique relative sous la présidence de Paul Biya (depuis 1982). Défis : pauvreté, inégalités sociales, tensions anglophones/francophones, corruption. Le Cameroun est un pays bilingue (français-anglais) unique en Afrique."
+      "postIndependence": "1984 : Changement de nom pour \"République du Cameroun\" (nom actuel). Période de stabilité politique relative sous la présidence de Paul Biya (depuis 1982). Défis : pauvreté, inégalités sociales, tensions anglophones/francophones, corruption. Le Cameroun est un pays officiellement bilingue (français-anglais)."
     },
     "sources": [
       {
@@ -345,6 +345,18 @@
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official"
+      },
+      {
+        "title": "Treaty of Protection with Chiefs of Cameroon Coast (12 juillet 1884)",
+        "url": "https://blackcentraleurope.com/sources/1850-1914/treaty-of-protection-with-chiefs-of-cameroon-coast-1884/",
+        "tier": "referenced",
+        "notes": "Texte du traité reproduit dans le recueil Black Central Europe : date, signataires (rois Bell et Akwa, agents Schmidt et Voss) et formule « the country called Cameroons »."
+      },
+      {
+        "title": "P. Tchawa, « Le Cameroun : une « Afrique en miniature » ? », Les Cahiers d'Outre-Mer, n° 259, 2012",
+        "url": "https://journals.openedition.org/com/6640",
+        "tier": "referenced",
+        "notes": "Article scientifique en accès ouvert sur OpenEdition ; lu pour la formule « Afrique en miniature » et la représentation des familles linguistiques."
       }
     ],
     "demographics": {

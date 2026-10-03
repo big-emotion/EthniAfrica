@@ -1,0 +1,182 @@
+{
+  "id": "dioula-un-metier-une-langue-une-identite",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "La carte cachée",
+  "fr": {
+    "slug": "dioula-un-metier-une-langue-une-identite",
+    "title": "D'où vient le nom Dioula ?",
+    "excerpt": "Dioula a d'abord voulu dire « commerçant ». Le nom désigne aussi une langue et, pour beaucoup, une appartenance. Notre carrousel du 12 septembre l'avait trop simplifié ; cet article corrige ce point et montre ce que l'on sait de l'histoire du nom.",
+    "sections": [
+      {
+        "heading": "Une correction d'abord",
+        "paragraphs": [
+          "Notre carrousel du 12 septembre, présenté avec cet article, affirmait : « Dioula n'est pas un nom de peuple. » Cette formulation était trop catégorique. Le sens « commerçant » de jula n'annule pas les appartenances exprimées par ce nom.",
+          "Nos légendes ajoutaient : « Eux se nomment Julakan, les gens du commerce. » C'était une erreur. Julakan associe jula et kan, « langue » : il désigne la langue jula, et non « les gens du commerce ».",
+          "Nous corrigeons donc ces deux points, et nous présentons nos excuses pour une formulation qui pouvait nier une appartenance vécue. Dioula peut désigner une activité, une langue ou une identité. Ces usages varient selon les lieux et les situations, et ils ne permettent pas d'attribuer automatiquement une même origine à toutes les personnes ainsi nommées."
+        ],
+        "sourceRefs": ["s3", "s4", "s6"]
+      },
+      {
+        "heading": "Un mot qui veut dire « commerçant »",
+        "paragraphs": [
+          "Le nom Dioula vient du mot manding jula, qui veut dire « marchand » ou « commerçant ». Le chercheur Yaya Konaté, dans une étude publiée en 2016 sur le dioula en Côte d'Ivoire, rapporte que ses interlocuteurs traduisaient jula par « commerçant ».",
+          "L'historien Djibril Tamsir Niane faisait déjà le lien en 1985 : dans la forêt ivoirienne, écrit-il, les Manden sont désignés par le terme maninka jula, « commerçant », qui s'applique plus spécialement aux Manden qui font du négoce. Il rapporte qu'au XIVe siècle, des marchands mandenka descendent vers le sud jusque dans la forêt, pour y acheter la noix de cola et de l'or."
+        ],
+        "sourceRefs": ["s4", "s5"]
+      },
+      {
+        "heading": "Depuis quand ? D'où vient le mot ?",
+        "paragraphs": [
+          "La première mention écrite connue du mot jula remonte à 1623, dans le récit de voyage de l'Anglais Richard Jobson en Gambie. C'est l'historien Abdoulaye Bathily qui l'a relevée ; l'historien Chikouna Cissé la reprend dans un article de 2025.",
+          "L'origine plus lointaine du mot n'est pas établie. Cissé avance, comme sa propre hypothèse, qu'il viendrait de l'arabe jawla, « tournée », par élision. Bathily note de son côté qu'en soninké, jula évoque une activité que l'on mène d'un lieu ou d'un pays à un autre. Ce sont deux pistes, attribuées à leurs auteurs ; aucune n'est démontrée."
+        ],
+        "sourceRefs": ["s3"]
+      },
+      {
+        "heading": "Julakan : le nom d'une langue",
+        "paragraphs": [
+          "Julakan se compose de jula et de kan, qui veut dire ici « langue ». C'est donc le nom de la langue jula, qu'on appelle aussi dioula en français. Ce n'est pas le nom que se donnent des personnes.",
+          "Nommer une langue ne dit rien du métier ni de l'ascendance de ceux qui la parlent. On peut parler dioula sans être commerçant, et sans se dire Dioula."
+        ],
+        "sourceRefs": ["s6"]
+      },
+      {
+        "heading": "Un métier, une langue, une identité",
+        "paragraphs": [
+          "Ce que le mot désigne varie selon les lieux. Cissé l'a observé sur le terrain en Côte d'Ivoire : à Kong, ancienne ville commerciale et religieuse, on l'entend comme le nom d'une ethnie ; à Odienné, comme le nom d'un commerçant.",
+          "On peut donc se reconnaître comme Dioula sans faire du commerce, ou parler la langue sans en revendiquer l'identité. Cette histoire ne fixe pas l'identité de chaque personne. Aujourd'hui, le nom se retrouve dans cinq pays : Côte d'Ivoire, Burkina Faso, Mali, Ghana et Guinée-Bissau."
+        ],
+        "sourceRefs": ["s3", "s4"]
+      },
+      {
+        "heading": "Une carte de 1889",
+        "paragraphs": [
+          "La carte que le capitaine français L.-G. Binger publie en 1889 dans le bulletin de la Société de géographie montre la région avant les frontières actuelles. Elle nomme le Pays de Kong, les États de Samori, le Mossi, le Gondja, et ne trace aucune frontière à l'intérieur des terres.",
+          "Cela ne veut pas dire qu'il n'existait aucune limite entre ces pouvoirs : cette carte n'en montre pas. Quant à l'histoire du pouvoir dioula à Kong, les dates que nous avons trouvées pour sa fondation ne s'accordent pas ; nous ne les donnons pas ici."
+        ],
+        "sourceRefs": ["s1"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "Jula a d'abord voulu dire « commerçant ». Le mot est écrit pour la première fois en 1623 ; son origine plus ancienne reste discutée. Julakan est le nom d'une langue. Et Dioula est aussi, pour beaucoup, une appartenance vécue, que le sens du mot ne suffit pas à nier.",
+          "Que veut dire Dioula là où vous vivez, ou dans votre famille ? Vous pouvez nous le dire, avec le lieu et la langue."
+        ],
+        "sourceRefs": ["s3", "s4", "s6"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Carte de L.-G. Binger, Itinéraire de Bammako au golfe de Guinée, Bulletin de la Société de géographie, 1889",
+      "tier": "needs_review",
+      "notes": "Carte reproduite dans le carrousel : les mentions Pays de Kong, États de Samori, Mossi et Gondja se lisent sur l'image."
+    },
+    {
+      "id": "s2",
+      "title": "Georges Niamkey Kodjo, Le Royaume de Kong, 2006",
+      "tier": "needs_review",
+      "notes": "Cité sur une carte du carrousel pour l'histoire de Kong. Nous ne l'avons pas encore consulté directement, et le texte ci-dessus ne reprend pas ces dates."
+    },
+    {
+      "id": "s3",
+      "title": "Chikouna Cissé, « Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe-XIXe siècles) », À propos 1, 2025",
+      "url": "https://ouvroir.fr/apropos/index.php?id=100",
+      "tier": "needs_review",
+      "notes": "Sections « L'histoire d'un nom » et « Ethnie ou métier ? À chacun son jula » : la mention de 1623, les hypothèses sur l'origine du mot, les usages à Kong et à Odienné."
+    },
+    {
+      "id": "s4",
+      "title": "Yaya Konaté, « Le dioula véhiculaire : situation sociolinguistique en Côte d'Ivoire », Corela 14-1, 2016",
+      "url": "https://doi.org/10.4000/corela.4586",
+      "tier": "needs_review",
+      "notes": "Le sens « commerçant » de jula, tel que le rapportent les personnes interrogées (§ 22-29)."
+    },
+    {
+      "id": "s5",
+      "title": "Djibril Tamsir Niane, « Le Mali et la deuxième expansion manden », Histoire générale de l'Afrique IV, UNESCO/NEA, 1985, p. 141-142",
+      "url": "https://bokundoli.org/wp-content/uploads/2021/12/T4-10.pdf",
+      "tier": "needs_review",
+      "notes": "Note 1, p. 141 : le terme jula, « commerçant », pour les Manden qui font du négoce ; p. 142 : les marchands mandenka vers la forêt, pour la cola et l'or, au XIVe siècle."
+    },
+    {
+      "id": "s6",
+      "title": "An ka taa, dictionnaire manding (bambara / jula), entrées jula, jago, julakan et kan",
+      "url": "https://dictionary.ankataa.com/lexicon.php?letter=11",
+      "tier": "needs_review",
+      "notes": "Dictionnaire en ligne : jula (commerçant ; groupe jula), julakan (la langue jula), kan (langue)."
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "dioula-cinq-pays"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "dioula-un-metier-une-langue-une-identite/dioula-cinq-pays/slide-01-1e7bf4ede717.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un marché de plein air adossé à un mur de terre, des denrées posées à même le sol dans des plateaux de vannerie, plusieurs adultes debout et assis, un homme drapé marchant au premier plan",
+            "text": "Les Dioula n'ont jamais eu de territoire\n\ncinq pays, et aucun ne porte leur nom\n\nLa raison est dans leur nom."
+          },
+          {
+            "src": "dioula-un-metier-une-langue-une-identite/dioula-cinq-pays/slide-02-899a4a6ceee7.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un passage étroit entre deux murs de terre, une femme s'éloigne un plateau chargé sur la tête, un homme en boubou blanc et turban se tient à droite, des vanneries et des denrées posées au sol",
+            "text": "Un nom de métier devenu un nom de peuple\n\njula — marchand, en mandingue\nDioula — le nom d'un peuple\n\nJula veut dire marchand ambulant, en mandingue. Le mot disait un métier, pas une origine. Eux se nomment Julakan : les gens du commerce.\n\nFiche Dioula · Ethnologue"
+          },
+          {
+            "src": "dioula-un-metier-une-langue-une-identite/dioula-cinq-pays/slide-03-586431194ee5.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une carte gravée de l'Afrique de l'Ouest, un itinéraire tracé en rouge du Niger au golfe de Guinée, les mentions Pays de Kong, États de Samori, Mossi et Gondja en capitales, un carton orographique en bas à gauche",
+            "text": "En 1889, la carte ne montrait que des routes\n\nElle nomme le Pays de Kong, les États de Samori, le Mossi, le Gondja. À l'intérieur des terres, elle ne trace aucune frontière.\n\nCarte de L.-G. Binger, Société de géographie, 1889"
+          },
+          {
+            "src": "dioula-un-metier-une-langue-une-identite/dioula-cinq-pays/slide-04-2ac8910e5201.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une mosquée de terre aux pinacles coniques hérissés de pieux de bois, un mur d'enceinte bas et une tour à contrefort au premier plan, aucune personne dans le cadre",
+            "text": "Une fois, ils ont bâti un royaume\n\nSékou Ouattara fonde Kong en 1710. Jamais les Dioula ne sont allés plus loin vers un État. Samory Touré détruit la ville en 1897.\n\nGeorges Niamkey Kodjo, Le Royaume de Kong, 2006"
+          },
+          {
+            "src": "dioula-un-metier-une-langue-une-identite/dioula-cinq-pays/slide-05-227c27a6091b.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une mosquée de terre aux contreforts coniques hérissés de pieux de bois, un minaret blanchi à la chaux derrière, une cour de terre balayée, aucune personne dans le cadre",
+            "text": "Le mot dioula est sur la carte, deux fois\n\nBobo-Dioulasso porte le nom du peuple bobo et le mot dioula, marchand. Et dans Burkina Faso, faso est le mot dioula pour le pays.\n\nFiches Bobo et Burkina Faso"
+          },
+          {
+            "src": "dioula-un-metier-une-langue-une-identite/dioula-cinq-pays/slide-06-bec3c93c5a60.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un grand arbre fourchu barrant une forêt dense, une silhouette lointaine et minuscule au pied du tronc donne l'échelle du sous-bois",
+            "text": "Une frontière ne contient pas un peuple. Elle le traverse.\n\nTracées à la conférence de Berlin, en 1884. Les noms sont mille ans plus vieux.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "Marché (Kong), mission Binger · Marcel Monnier · 1892 · Bibliothèque nationale de France, via Wikimedia Commons · domaine public ; Marché dans un carrefour, Bondoukou, mission Binger · Marcel Monnier · 1892 · Bibliothèque nationale de France, via Wikimedia Commons · domaine public ; Itinéraire de Bammako au golfe de Guinée · L.-G. Binger · 1889 · Bibliothèque nationale de France, via Wikimedia Commons · domaine public ; Une mosquée (Kong), mission Binger · Marcel Monnier · 1892 · Bibliothèque nationale de France, via Wikimedia Commons · domaine public ; La Grande Mosquée de Dioulasso-Bâ, Bobo-Dioulasso · KONATEYaya226 · 2023 · Wikimedia Commons · CC BY-SA 4.0 ; Sentier de forêt, mission Binger · Marcel Monnier · 1892 · Bibliothèque nationale de France, via Wikimedia Commons · domaine public"
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7684693876015418627",
+        "publishedAt": "2026-09-12"
+      }
+    ]
+  },
+  "relatedArticleIds": ["manden-mande-mandingue-trois-mots"]
+}

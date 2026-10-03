@@ -1,0 +1,155 @@
+/**
+ * The reviewed answer reaches the page through the ordinary v2 search
+ * response — no `feedPresentation` fixture is involved. The service is mocked
+ * because ranking is proven elsewhere; what is under test is that the handler
+ * resolves the searched term to its reviewed answer.
+ */
+import { beforeEach, describe, expect, it, vi } from "vitest";
+
+vi.mock("@/api/v2/services/searchService", () => ({
+  ftsSearch: vi.fn(),
+}));
+
+import { ftsSearch } from "@/api/v2/services/searchService";
+import { ftsSearchHandler } from "../search";
+import type { FtsSearchResponse } from "@/types/afrik";
+
+function emptyResponse(): FtsSearchResponse {
+  return {
+    peoples: [],
+    countries: [],
+    families: [],
+    persons: [],
+    patronymes: [],
+    quizzes: [],
+    languages: [],
+    results: [],
+    peoplesTotal: 0,
+    countriesTotal: 0,
+    familiesTotal: 0,
+    personsTotal: 0,
+    patronymesTotal: 0,
+    quizzesTotal: 0,
+    languagesTotal: 0,
+    total: 0,
+    leads: [],
+    nearNames: [],
+  } as unknown as FtsSearchResponse;
+}
+
+beforeEach(() => {
+  vi.mocked(ftsSearch).mockResolvedValue(emptyResponse());
+});
+
+describe("search response name answers", () => {
+  // @req REQ-178
+  it.each(["Lingala", "lingala", " LINGALA "])(
+    "attaches the reviewed answer for %s",
+    async (q) => {
+      const { data } = (await ftsSearchHandler({
+        q,
+        limit: 20,
+        offset: 0,
+      })) as unknown as { data: { nameAnswers?: unknown[] } };
+
+      expect(data.nameAnswers).toHaveLength(1);
+      expect(data.nameAnswers?.[0]).toMatchObject({
+        term: "Lingala",
+        subjects: expect.arrayContaining([
+          { type: "people", id: "PPL_LINGALA" },
+        ]),
+      });
+    }
+  );
+
+  // @req REQ-178
+  it("attaches nothing for a name nobody has reviewed", async () => {
+    const { data } = (await ftsSearchHandler({
+      q: "kossiwa",
+      limit: 20,
+      offset: 0,
+    })) as unknown as { data: { nameAnswers?: unknown[] } };
+
+    expect(data.nameAnswers ?? []).toEqual([]);
+  });
+});
+
+describe("search response name suggestions", () => {
+  type Suggested = { data: { nameSuggestions?: string[] } };
+
+  // @req REQ-125
+  it("suggests a reviewed term when a near spelling finds nothing", async () => {
+    const { data } = (await ftsSearchHandler({
+      q: "pygmeee",
+      limit: 20,
+      offset: 0,
+    })) as unknown as Suggested;
+
+    expect(data.nameSuggestions).toEqual(["Pygmée"]);
+  });
+
+  // @req REQ-125
+  it("suggests it in English for an English search", async () => {
+    const { data } = (await ftsSearchHandler({
+      q: "pigmy",
+      limit: 20,
+      offset: 0,
+      lang: "en",
+    })) as unknown as Suggested;
+
+    expect(data.nameSuggestions).toEqual(["Pygmy"]);
+  });
+
+  // @req REQ-125
+  it("suggests nothing once the search has found something", async () => {
+    vi.mocked(ftsSearch).mockResolvedValue({
+      ...emptyResponse(),
+      peoplesTotal: 1,
+      total: 1,
+    } as unknown as FtsSearchResponse);
+
+    const { data } = (await ftsSearchHandler({
+      q: "pigmée",
+      limit: 20,
+      offset: 0,
+    })) as unknown as Suggested;
+
+    expect(data.nameSuggestions).toEqual([]);
+  });
+});
+
+describe("search response interpretation (REQ-178)", () => {
+  type Interpreted = {
+    data: { matchedQuery?: string; widenedFrom?: string[] };
+  };
+
+  // @req REQ-178
+  it("reports the cleaned query that found the results, and the names a widening came from", async () => {
+    vi.mocked(ftsSearch).mockResolvedValue({
+      ...emptyResponse(),
+      matchedQuery: "hausa",
+      widenedFrom: ["hausa", "egypte"],
+    } as unknown as FtsSearchResponse);
+
+    const { data } = (await ftsSearchHandler({
+      q: "les hausas",
+      limit: 20,
+      offset: 0,
+    })) as unknown as Interpreted;
+
+    expect(data.matchedQuery).toBe("hausa");
+    expect(data.widenedFrom).toEqual(["hausa", "egypte"]);
+  });
+
+  // @req REQ-178
+  it("leaves both absent when the typed text answered", async () => {
+    const { data } = (await ftsSearchHandler({
+      q: "hausa",
+      limit: 20,
+      offset: 0,
+    })) as unknown as Interpreted;
+
+    expect(data).not.toHaveProperty("matchedQuery");
+    expect(data).not.toHaveProperty("widenedFrom");
+  });
+});

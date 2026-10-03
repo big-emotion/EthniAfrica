@@ -1,0 +1,49 @@
+{
+  "id": "mbappe-d-ou-vient-le-nom",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Ce que ce nom veut dire",
+  "fr": {
+    "slug": "mbappe-d-ou-vient-le-nom",
+    "title": "D'où vient le nom « Mbappé » ?",
+    "excerpt": "D'où vient le nom « Mbappé » ?",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "mbappe-d-ou-vient-le-nom"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "qezquq7jUqE",
+        "poster": {
+          "src": "mbappe-d-ou-vient-le-nom/mbappe-d-ou-vient-le-nom/poster-ecb6264d6f90.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/reel/Ddi43-6KvKU/",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7687924789834534166",
+        "publishedAt": "2026-09-21"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/qezquq7jUqE",
+        "publishedAt": "2026-09-21"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

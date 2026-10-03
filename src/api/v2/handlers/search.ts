@@ -4,6 +4,8 @@
  * ftsSearchHandler: ETNI-38 FTS handler returning the Module #0 envelope.
  */
 
+import type { NameAnswer } from "@/lib/search/nameAnswer";
+import { findNameAnswers, suggestNameTerms } from "@/lib/search/nameAnswers";
 import { ftsSearch } from "../services/searchService";
 import { createApiResponse } from "../utils/response";
 import type {
@@ -45,6 +47,21 @@ export interface FtsSearchData {
   leads: object[];
   /** Qualified similar names (REQ-180), populated only for a non-empty search. */
   nearNames: SearchNearName[];
+  /**
+   * Reviewed answers to « where does this name come from? » for the searched
+   * term. Resolved from the term alone, so a search with no hit can still be
+   * answered; empty for a name nobody has reviewed.
+   */
+  nameAnswers: NameAnswer[];
+  /**
+   * Reviewed terms a near spelling may have meant, offered only when the search
+   * found nothing. Never applied to the query: the reader chooses.
+   */
+  nameSuggestions: string[];
+  /** The cleaned query that found the results, when it differs from `q`. */
+  matchedQuery?: string;
+  /** The names a multi-name query was split into: the results are a widening. */
+  widenedFrom?: string[];
 }
 
 // @req REQ-002
@@ -52,13 +69,13 @@ export async function ftsSearchHandler(
   params: FtsSearchParams
 ): Promise<ApiEnvelope<FtsSearchData>> {
   const result = await ftsSearch(params);
-  return createApiResponse<FtsSearchData>(shapeSearchData(result, params.lens));
+  return createApiResponse<FtsSearchData>(shapeSearchData(result, params));
 }
 
 /** Keep the public main and quiz streams isolated even if an upstream layer regresses. */
 function shapeSearchData(
   result: FtsSearchResponse,
-  lens: FtsSearchParams["lens"]
+  { lens, q, lang }: Pick<FtsSearchParams, "lens" | "q" | "lang">
 ): FtsSearchData {
   const quizzesTotal = result.quizzesTotal ?? 0;
 
@@ -82,6 +99,8 @@ function shapeSearchData(
       total: quizzesTotal,
       leads: [],
       nearNames: [],
+      nameAnswers: [],
+      nameSuggestions: [],
     };
   }
 
@@ -91,6 +110,14 @@ function shapeSearchData(
   const personsTotal = result.personsTotal ?? 0;
   const patronymesTotal = result.patronymesTotal ?? 0;
   const languagesTotal = result.languagesTotal ?? 0;
+  const total =
+    peoplesTotal +
+    countriesTotal +
+    familiesTotal +
+    personsTotal +
+    patronymesTotal +
+    languagesTotal;
+  const language = lang === "en" ? "en" : "fr";
 
   return {
     peoples: (result.peoples ?? []) as object[],
@@ -109,14 +136,12 @@ function shapeSearchData(
     patronymesTotal,
     quizzesTotal: 0,
     languagesTotal,
-    total:
-      peoplesTotal +
-      countriesTotal +
-      familiesTotal +
-      personsTotal +
-      patronymesTotal +
-      languagesTotal,
+    total,
     leads: (result.leads ?? []) as object[],
     nearNames: result.nearNames ?? [],
+    nameAnswers: findNameAnswers(q, language),
+    nameSuggestions: total === 0 ? suggestNameTerms(q, language) : [],
+    ...(result.matchedQuery && { matchedQuery: result.matchedQuery }),
+    ...(result.widenedFrom && { widenedFrom: result.widenedFrom }),
   };
 }

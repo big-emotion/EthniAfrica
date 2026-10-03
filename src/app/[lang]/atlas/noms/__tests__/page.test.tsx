@@ -172,9 +172,10 @@ describe("the name facet page", () => {
   });
 
   /**
-   * DEC-050 withholds a name resting only on unverified sources from the
-   * sitemap. That threshold is a crawler policy and nothing more: applying it
-   * to the hub would hide every unverified-only dossier from readers. The count
+   * DEC-050 once withheld a name resting only on unverified sources from the
+   * sitemap (it now submits any name citing a readable source). Either way that
+   * is a crawler policy and nothing more: applying a standing rule to the hub
+   * would hide every unverified-only dossier from readers. The count
    * above the list comes from the service's own total, so rows dropped after the
    * read would leave the two disagreeing.
    */

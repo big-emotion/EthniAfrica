@@ -1,0 +1,27 @@
+{
+  "campaign": "kouyate-jeli",
+  "typologie": "patronyme",
+  "episode": 5,
+  "question": {
+    "fr": "D'où vient le nom Kouyaté ?"
+  },
+  "myth": {
+    "fr": "Les Kouyaté sont-ils vraiment les griots des rois du Mali depuis le XIIIe siècle ?"
+  },
+  "subjects": [
+    {
+      "kind": "patronyme",
+      "id": "PAT_KOUYATE",
+      "label": { "fr": "Kouyaté" }
+    }
+  ],
+  "sitePath": "/fr/atlas/noms/PAT_KOUYATE",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7684287670910012694",
+      "publishedAt": "2026-09-11"
+    }
+  ]
+}

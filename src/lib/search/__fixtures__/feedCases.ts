@@ -432,7 +432,12 @@ export interface FeedCaseFixture {
 
 type Subject = SearchCompanionsData["subjects"][number];
 type BoardShort = FeedCaseFixture["board"]["shorts"]["items"][number];
-type Match = SearchCompanionsData["shorts"]["items"][number]["match"];
+// The boards draw entity matches; a word match belongs to a production found
+// by the reader's word and has no board yet.
+type Match = Extract<
+  SearchCompanionsData["shorts"]["items"][number]["match"],
+  { entityType: string }
+>;
 
 const FIXTURE_SOURCE = {
   title: "Approved search-feed board fixture",
@@ -451,9 +456,9 @@ function block(id: FeedBlockId, zone: FeedZone) {
 }
 
 const opening = [
-  block("lenses", "first"),
   block("verdict", "first"),
   block("appellations", "first"),
+  block("lenses", "first"),
   block("shorts", "first"),
 ];
 
@@ -1308,15 +1313,15 @@ const FEED_CASE_VALUES: FeedCaseFixture[] = [
     board: {
       blocks: {
         mobile: [
-          block("lenses", "first"),
           block("verdict", "first"),
+          block("lenses", "first"),
           block("shorts", "first"),
           block("owed", "closing"),
           block("further", "closing"),
         ],
         desktop: [
-          block("lenses", "first"),
           block("verdict", "first"),
+          block("lenses", "first"),
           block("shorts", "first"),
           block("owed", "closing"),
           block("further", "closing"),

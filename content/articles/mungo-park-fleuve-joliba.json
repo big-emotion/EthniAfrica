@@ -1,0 +1,39 @@
+{
+  "id": "mungo-park-fleuve-joliba",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Mythe déconstruit",
+  "fr": {
+    "slug": "mungo-park-fleuve-joliba",
+    "title": "Qui a nommé le fleuve Niger ?",
+    "excerpt": "Mungo Park a-t-il découvert le fleuve Niger ?",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "mungo-park-a-t-il-decouvert-le-fleuve-niger"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "jsHu0bzx0DQ",
+        "poster": {
+          "src": "mungo-park-fleuve-joliba/mungo-park-a-t-il-decouvert-le-fleuve-niger/poster-f2f1a884f7c9.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/jsHu0bzx0DQ",
+        "publishedAt": "2026-09-16"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

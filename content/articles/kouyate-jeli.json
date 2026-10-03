@@ -1,0 +1,29 @@
+{
+  "id": "kouyate-jeli",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Ce que ce nom veut dire",
+  "fr": {
+    "slug": "kouyate-jeli",
+    "title": "D'où vient le nom Kouyaté ?",
+    "excerpt": "Kouyaté, Camara, Diabaté : au Mali, ton nom dit le métier de tes ancêtres.",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "noms-de-metier"
+    },
+    "formats": [],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7684287670910012694",
+        "publishedAt": "2026-09-11"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

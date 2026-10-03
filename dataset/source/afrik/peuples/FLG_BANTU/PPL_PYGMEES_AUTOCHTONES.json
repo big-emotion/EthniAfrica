@@ -9,15 +9,17 @@
       "mainName": "Peuples autochtones des forets / Chasseurs-cueilleurs forestiers",
       "selfAppellation": "Baka (se disent Baka ou Bayaka), Bagyeli (se disent Bagyeli ou Bakola), Bedzan (se disent Bedzan ou Medzan)",
       "exonyms": [
-        "Pygmees (terme anthropologique colonial)",
+        "Pygmée",
+        "Pygmées",
         "Autochtones",
         "Twa (terme generique parfois applique abusivement)",
         "Aka (variante pour les Baka du Congo)"
       ],
+      "spellingAliases": ["Pigmée", "Pigmées"],
       "originOfExonyms": "Le terme Pygmees vient du grec pyrgme, designant une mesure de longueur (de la phalange au coude), utilisee dans les textes antiques pour designer des peuples de petite taille. Herodote (~500 av. J.-C.) mentionne des Pygmees en Afrique de l'Ouest. Le terme a ete recupere par l'anthropologie coloniale au XIXe siecle pour designer l'ensemble des chasseurs-cueilleurs forestiers d'Afrique centrale.",
       "whyProblematic": "Le terme Pygmee est considere comme devalorisant et colonial. Il est percu comme un attribut physique reducteur et nie l'identite culturelle et ethnique propre a chaque groupe. Il a ete utilise historiquement pour justifier discrimination et exclusion sociale. Les organisations de droits des peuples autochtones (Forest Peoples Programme, IWGIA) recommandent d'utiliser les noms propres de chaque groupe : Baka, Bagyeli, Bedzan, Aka, Mbuti, etc.",
       "contemporaryUsage": "Le terme Pygmee est progressivement abandonne au profit des auto-appellations specifiques. Au Cameroun, les termes officiels et militants privilegient Peuples autochtones ou Chasseurs-cueilleurs forestiers. Les organisations internationales (ONU, UNESCO, Greenpeace Afrique) utilisent Peuples autochtones.",
-      "linguisticFamily": "FLG_BANTU (langues baka et bagyeli), avec influences de langues du bassin du Congo",
+      "linguisticFamily": "Bantou (langues baka et bagyeli), avec influences de langues du bassin du Congo",
       "ethnoLinguisticGroup": "Chasseurs-cueilleurs forestiers d'Afrique centrale ; trois groupes principaux au Cameroun : Baka, Bagyeli/Bakola, Bedzan/Medzan",
       "historicalRegion": "Forets tropicales du bassin du Congo : sud-est et est du Cameroun, nord du Gabon, nord de la Republique du Congo, sud-ouest de la Republique centrafricaine",
       "currentCountries": ["CMR", "GAB", "COG", "CAF"]
@@ -113,6 +115,12 @@
         "title": "Des leaders Baka et Bagyeli exposent les problemes – Forest Peoples Programme, 2010",
         "url": "https://www.forestpeoples.org/fr/publications-resources/news/article/des-leaders-baka-et-bagyeli-exposent-les-problemes-de-leur-forets-aupres-des-medias-et-du-public/",
         "tier": "referenced"
+      },
+      {
+        "title": "Dictionnaire de l'Académie française, 1re édition (1694), entrée « pigmée » renvoyant à « pygmée »",
+        "url": "https://www.dictionnaire-academie.fr/article/A1_0071",
+        "tier": "referenced",
+        "notes": "Atteste la graphie ancienne « pigmée »."
       }
     ]
   },

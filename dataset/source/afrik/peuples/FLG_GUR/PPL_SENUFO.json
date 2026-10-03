@@ -50,7 +50,7 @@
     },
     "organization": {
       "traditionalPoliticalSystem": "Chaque village Senufo est independant. La gouvernance est assuree par la societe secrete masculine Poro, qui garantit la relation entre le monde vivant et les ancetres, et assure les fonctions educatives et judiciaires. L'ancêtre du Poro est Nerejao. Le Sandogo (societe feminine) gouverne la divination. La hierarchie des castes place les agriculteurs (Fo no) au-dessus des artisans.",
-      "clanOrganization": "L'organisation est matrilineaire pour les questions de filiation et d'heritage. La societe est structuree en castes endogames (Katioula) : agriculteurs (Fo no), artisans forgerons (Kule), sculpteurs sur bois (Kpeene), fondeurs de laiton (Tyeli), potiers, travailleurs du cuir. Les artisans sont socialement inferieurs aux agriculteurs. Les Kulubele (sculpteurs), Fonombele (forgerons), Kpeembele (fondeurs), Djelebele (maroquiniers) sont des sous-groupes artisans specifiques.",
+      "clanOrganization": "L'organisation est matrilineaire pour les questions de filiation et d'heritage. La societe est structuree en castes endogames (Katioula) : agriculteurs (Fo no), artisans forgerons (Kule), sculpteurs sur bois (Kpeene), fondeurs de laiton (Tyeli), potiers, travailleurs du cuir. Les artisans sont socialement inferieurs aux agriculteurs. Cette lecture en termes de castes est discutée : à partir des Sénoufo de Côte d'Ivoire, Dolores Richter (1980) montre que les traits qu'on attribue aux castes (rang hiérarchique, spécialisation par métier, endogamie) sont souvent manoeuvrés à leur avantage par les artisans réputés inférieurs. Les Kulubele (sculpteurs), Fonombele (forgerons), Kpeembele (fondeurs), Djelebele (maroquiniers) sont des sous-groupes artisans specifiques.",
       "ageClassSystems": null,
       "roleOfLineages": "La filiation matrilineaire determine l'appartenance clanique et l'heritage. Les familles etendues sont dirigees par les patriarches. Le Poro regroupe les hommes en classes d'age qui passent ensemble par les initiations dans la foret sacree. Le mariage entre cousins est pratique. La polygynie est courante.",
       "religiousAuthority": "Le Poro est l'autorite religieuse masculine supreme, garantissant le lien entre vivants et ancetres. Nerejao est l'ancetre-chef du Poro. Le Sandogo (societe de divination feminine) est dirige par des femmes qui communiquent avec les ancetres ; des hommes y accedent par heritage matrilineaire. La divinite supremes est double : Ancient Mother Maleeo (Katieleo) et Createur male Kolotyolo (Koulotiolo). La deesse Maleeo est associee au Poro, son partenaire Kolocolo au Sandogo."
@@ -163,6 +163,12 @@
         "url": "https://doi.org/10.1017/hia.2021.5",
         "tier": "referenced",
         "notes": "Travail universitaire qui rouvre les questions et réexamine les sources sur l'ensemble d'objets et de populations désignés comme Sénoufo, et sur la façon dont cette désignation s'est construite."
+      },
+      {
+        "title": "Richter, Dolores — Further Considerations of Caste in West Africa: The Senufo. Africa, 50 (1), 1980, p. 37-54",
+        "url": "https://doi.org/10.2307/1158641",
+        "tier": "referenced",
+        "notes": "Article évalué par les pairs, lu par son résumé : à partir des Sénoufo de Côte d'Ivoire, l'autrice examine les traits attribués aux castes ouest-africaines et montre qu'ils sont souvent tournés à leur avantage par les castes dites inférieures."
       }
     ]
   },

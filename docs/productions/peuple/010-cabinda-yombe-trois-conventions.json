@@ -1,0 +1,27 @@
+{
+  "campaign": "cabinda-yombe-trois-conventions",
+  "typologie": "peuple",
+  "episode": 10,
+  "question": {
+    "fr": "D'où vient le nom Cabinda ?"
+  },
+  "myth": {
+    "fr": "La conférence de Berlin a-t-elle tracé la frontière qui sépare le Cabinda du reste de l'Angola ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_YOMBE",
+      "label": { "fr": "Yombe" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_YOMBE",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7685976377224498434",
+      "publishedAt": "2026-09-16"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "id": "pygmee-d-ou-vient-le-nom",
+  "status": "published",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "pygmee-d-ou-vient-le-nom",
+    "title": "D'où vient le nom « pygmée » ?",
+    "excerpt": "« Pygmée » n'est le nom d'origine d'aucun des peuples qu'on désigne ainsi. Le mot vient du grec ancien, où il renvoyait à une mesure et à des êtres de fable. Des Européens l'ont appliqué au XIXe siècle à des peuples d'Afrique centrale qui ont chacun leur nom : Baka, Bagyeli, Bedzan, Aka, Batwa…",
+    "sections": [
+      {
+        "heading": "Un mot que ces peuples ne se donnent pas",
+        "paragraphs": [
+          "« Pygmée » n'est le nom d'origine d'aucun des peuples qu'on appelle ainsi. Chacun a son propre nom. Avant de raconter l'histoire du mot, nous présentons ces peuples par le nom qu'ils se donnent."
+        ],
+        "sourceRefs": ["s6", "s7", "s8"]
+      },
+      {
+        "heading": "Des peuples, chacun avec son nom",
+        "paragraphs": [
+          "Les Baka vivent dans les forêts du sud-est du Cameroun, et aussi dans le nord du Gabon et de la République du Congo. Baka est le nom qu'ils se donnent. Ils échangent depuis longtemps les produits de la forêt avec leurs voisins agriculteurs, dans des relations que notre fiche décrit comme inégales.",
+          "Les Bagyeli, ou Bakola, vivent dans le sud-ouest du Cameroun, autour de Kribi. Les sources ne s'accordent pas sur celui de ces deux noms qu'ils préfèrent. Les Bedzan, ou Medzan, vivent dans le centre du pays, dans la région de la Haute-Sanaga.",
+          "Les Aka vivent dans le sud-ouest de la République centrafricaine et le nord de la République du Congo. Aka est le nom qu'ils se donnent, et BaAka en est le pluriel ; on les appelle aussi Bayaka. Au XIXe siècle, ils chassent l'éléphant pour le commerce de l'ivoire. Dans les années 1930, l'administration française veut les installer au bord des routes ; la majorité refuse.",
+          "Les Twa vivent dans la région des Grands Lacs : au Rwanda, au Burundi, dans l'est de la République démocratique du Congo et dans le sud-ouest de l'Ouganda. Batwa est le pluriel, Mutwa le singulier. À partir des années 1970, la création de parcs nationaux et de plantations les chasse de leurs forêts.",
+          "D'autres communautés vivent dans la forêt de l'Ituri, en République démocratique du Congo, souvent regroupées sous le nom de Mbuti, qui rassemble notamment les Efe et les Sua. Nous ne les documentons pas encore.",
+          "Ces peuples ne forment pas un seul groupe : ils n'ont pas de langue commune, et leurs histoires sont distinctes."
+        ],
+        "sourceRefs": ["s6", "s1", "s7", "s8"]
+      },
+      {
+        "heading": "Un mot grec : une mesure, et une fable",
+        "paragraphs": [
+          "Le mot vient du grec ancien pygmaios, formé sur pygmē, « le poing ». Pygmē désignait aussi une mesure de longueur, du coude aux jointures de la main.",
+          "Chez Homère, dans l'Iliade, les Pygmées sont des êtres de fable qui combattent les grues aux confins du monde. Nous n'avons trouvé aucun texte grec qui désigne l'un des peuples d'Afrique centrale d'aujourd'hui."
+        ],
+        "sourceRefs": ["s9", "s3"]
+      },
+      {
+        "heading": "Au XIXe siècle, des explorateurs européens appliquent le mot",
+        "paragraphs": [
+          "Au XIXe siècle, des Européens reprennent ce mot ancien pour désigner des peuples d'Afrique équatoriale qu'ils rencontrent.",
+          "L'explorateur Paul Du Chaillu en donne un exemple dans un livre de 1872, The Country of the Dwarfs. Il raconte avoir saisi une vieille femme, qui hurle de terreur, et s'exclame : « Je vois maintenant les nains de l'Afrique équatoriale, les nains d'Homère, d'Hérodote, les nains des anciens. » C'est son rapprochement, fait dans une scène de violence ; il ne démontre aucun lien entre la fable grecque et ces peuples."
+        ],
+        "sourceRefs": ["s9", "s4"]
+      },
+      {
+        "heading": "Aujourd'hui, un mot débattu",
+        "paragraphs": [
+          "Beaucoup d'organisations jugent ce mot péjoratif. En République du Congo, une loi du 25 février 2011 sur les populations autochtones en interdit l'usage : l'employer y constitue une injure. Cette loi concerne la République du Congo, pas ses voisins.",
+          "Les avis ne sont pas unanimes, y compris parmi les personnes concernées. Une note publiée en 2022 par le FIDA et l'IWGIA rapporte que des représentants autochtones de la République démocratique du Congo ont choisi l'expression « peuple autochtone pygmée » comme nom commun, tout en notant que d'autres jugent le mot dévalorisant."
+        ],
+        "sourceRefs": ["s5", "s2"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "« Pygmée » est un mot grec ancien, lié à une mesure et à une fable, que des Européens ont appliqué au XIXe siècle à des peuples d'Afrique centrale. Ces peuples ont chacun leur nom. L'usage du mot reste débattu, y compris parmi eux ; nous ne l'employons ici que pour en raconter l'histoire.",
+          "Vous connaissez l'un de ces peuples, ou un autre nom qu'ils se donnent ? Dites-nous d'où vient ce que vous savez."
+        ],
+        "sourceRefs": ["s9", "s6", "s7", "s8", "s5"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "GeoNames, Kribi (id 2229761), 2.93725 N, 9.90765 E, seat of a second-order administrative division, read 2026-09-27",
+      "url": "https://www.geonames.org/2229761/kribi.html",
+      "tier": "referenced"
+    },
+    {
+      "id": "s2",
+      "title": "IFAD / IWGIA, Democratic Republic of the Congo: Country Technical Note on Indigenous Peoples' Issues, 2022 (reported by the external research of 2026-09-26; not reopened: HTTP 403 on 2026-09-27)",
+      "url": "https://www.ifad.org/en/w/publications/democratic-republic-of-the-congo-country-technical-note-on-indigenous-peoples-issues",
+      "tier": "official",
+      "kind": "web",
+      "notes": "Note sur les peuples autochtones de la République démocratique du Congo : le choix, par des représentants autochtones, de l'expression « peuple autochtone pygmée »."
+    },
+    {
+      "id": "s3",
+      "title": "Homère, Iliade, chant III, vers 3-6, éd. Monro et Allen, Oxford, 1920, Perseus Digital Library",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0133%3Abook%3D3%3Acard%3D1",
+      "tier": "needs_review",
+      "kind": "book"
+    },
+    {
+      "id": "s4",
+      "title": "Paul B. Du Chaillu, The Country of the Dwarfs, New York, Harper & Brothers, 1872",
+      "url": "https://www.gutenberg.org/files/48643/48643-h/48643-h.htm",
+      "tier": "needs_review",
+      "kind": "book",
+      "locator": "chap. XXIV, p. 249",
+      "notes": "Texte anglais ; la traduction française citée est la nôtre."
+    },
+    {
+      "id": "s5",
+      "title": "République du Congo, Act No. 5-2011 of 25 February 2011 on the Promotion and Protection of Indigenous Populations, article 1",
+      "url": "https://iwgia.org/images/newsarchivefiles/0368_Congolese_Legislation_on_Indigenous_Peoples.pdf",
+      "tier": "needs_review",
+      "kind": "archive",
+      "notes": "Lue dans la traduction anglaise publiée par l'IWGIA ; la traduction française citée est la nôtre."
+    },
+    {
+      "id": "s6",
+      "title": "Fiche des peuples autochtones des forêts d'Afrique centrale (Baka, Bagyeli, Bedzan), EthniAfrica",
+      "tier": "needs_review",
+      "notes": "Notre fiche : les noms que se donnent les Baka, les Bagyeli et les Bedzan, leurs régions et leurs relations avec leurs voisins."
+    },
+    {
+      "id": "s7",
+      "title": "Fiche du peuple aka, EthniAfrica",
+      "tier": "needs_review",
+      "notes": "Notre fiche : le nom Aka ou BaAka, la chasse à l'éléphant au XIXe siècle, les années 1930."
+    },
+    {
+      "id": "s8",
+      "title": "Fiche du peuple twa, EthniAfrica",
+      "tier": "needs_review",
+      "notes": "Notre fiche : Batwa et Mutwa, les pays des Grands Lacs, les expulsions liées aux parcs nationaux."
+    },
+    {
+      "id": "s9",
+      "title": "Online Etymology Dictionary, « pygmy »",
+      "url": "https://www.etymonline.com/word/pygmy",
+      "tier": "needs_review",
+      "kind": "web"
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "pygmee-d-ou-vient-le-nom"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "dIgFvRJnxug",
+        "poster": {
+          "src": "pygmee-d-ou-vient-le-nom/pygmee-d-ou-vient-le-nom/poster-a29556122f72.webp",
+          "width": 1080,
+          "height": 1920
+        },
+        "credits": "Natural Earth : relief, fleuves et frontières (1:10m) — domaine public ; Natural Earth, HYP_HR_SR_OB_DR 2.0.0 (découpe Afrique centrale) — domaine public ; Natural Earth, rivers + lake centerlines 1:10m — domaine public ; JosepMGracia, Wikimedia Commons — CC BY-SA 4.0 (recadrée) ; BACHELOR45, Wikimedia Commons — CC BY-SA 4.0 (recadrée) ; Owobusingye, Wikimedia Commons — CC BY 4.0 (recadrée) ; Garry Walsh / Trócaire, Wikimedia Commons — CC BY 2.0 ; Texte grec : Homeri Opera, éd. Monro et Allen, Oxford, Oxford University Press, 1920, via Perseus Digital Library — texte numérique sous licence CC BY-SA 3.0 US · traduction EthniAfrica ; Homère, Iliade, ms. Vaticanus Palatinus graecus 246, fol. 1r (XVe siècle), Bibliothèque apostolique vaticane, via Wikimedia Commons — domaine public (recadrée) ; Marie-Lan Nguyen, Wikimedia Commons · British Museum — domaine public (recadrée) ; Wilhelm Zahn, dessin publié en 1833 (Zahn et Jahn), Wikimedia Commons — domaine public ; Paul B. Du Chaillu, The Country of the Dwarfs, New York, Harper & Brothers, 1872, chap. XXIV, p. 249 (Project Gutenberg, ebook 48643) — domaine public · traduction EthniAfrica ; Act No. 5-2011 of 25 February 2011 on the Promotion and Protection of Indigenous Populations, texte anglais publié par IWGIA — traducteur non nommé, aucune mention de réutilisation · traduction EthniAfrica"
+      }
+    ],
+    "originals": [
+      {
+        "network": "facebook",
+        "url": "https://www.facebook.com/reel/2303466483736794",
+        "publishedAt": "2026-09-28"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/p/Dd1z1vRKDaq/",
+        "publishedAt": "2026-09-28"
+      },
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7690652445919218966",
+        "publishedAt": "2026-09-28"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/watch?v=dIgFvRJnxug",
+        "publishedAt": "2026-09-28"
+      }
+    ]
+  },
+  "relatedArticleIds": [],
+  "publishedAt": "2026-09-30"
+}

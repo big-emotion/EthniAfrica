@@ -28,9 +28,26 @@ changes `SITE_LOCALE_MODE` and therefore never publishes unfinished English.
 
 Read `docs/design/brand-charter.md`, then `docs/design/typography-charter.md`. Its §8 tables the home's type element by element — the face, step and ink each element takes, and why that one and not another — and `homeTypographyCharter.test.ts` holds the table. `CLAUDE.md`'s `### Frontend` section carries the full doctrine.
 
+## Before writing narration, cards, captions or page copy
+
+EthniAfrica speaks as a popular educator drawing on research methods, without
+claiming scientific, linguistic or historical qualifications. Read `CLAUDE.md`
+(`### Reader-facing register`) and `docs/editorial/reader-facing-register.md`.
+Explain the subject first and place identifiable sources after it. Preserve
+uncertainty: a book's date is not an event date, and an author's interpretation
+must not become a community's belief. Oral and local knowledge are sources in
+their own right, with their context and limits. Choose reader needs from
+`docs/editorial/audience-personas.md`; distinguish intended audiences, observed
+behaviour and hypotheses. `npm run test:social-tools` holds the lexical check
+(`attribution-en-tete`); human semantic review remains necessary.
+
 ## Read `CLAUDE.md` for everything else
 
 Architecture, commands, every CI gate, the `@req` traceability rule, the Source Tier policy, the reader-facing register, the worktree and branch discipline. The section `### Bilingual content` is the doctrine this file summarises.
+
+## Skills and agents
+
+Skills live once, under `.claude/skills/<name>/`; Codex reads them through `.agents/skills/`, filled by `npm run skills:link` (run once per checkout). Sub-agents exist in both formats, `.claude/agents/<name>.md` and `.codex/agents/<name>.toml`, with the same instruction text. `CLAUDE.md` (`### Skills and agents`) is the rule.
 
 ## Local gate
 

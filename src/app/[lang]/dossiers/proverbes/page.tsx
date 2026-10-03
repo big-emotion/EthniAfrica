@@ -7,6 +7,7 @@ import {
 import { FacetPagination } from "@/components/hubs/facets/FacetPagination";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { ProverbCard } from "@/components/proverbs/ProverbCard";
+import { PROVERB_IMAGES } from "@/lib/proverbs/proverbImages";
 import type { DidYouKnowEntityKind } from "@/lib/home/didYouKnowFacts";
 import { definedFilter } from "@/lib/hubs/facets";
 import { proverbsCopy } from "@/lib/i18n/copy/proverbs";
@@ -285,6 +286,7 @@ export default async function ProverbsPage({
                   key={proverb.id}
                   language={language}
                   proverb={proverb}
+                  picture={PROVERB_IMAGES[proverb.id]}
                 />
               ))}
             </div>

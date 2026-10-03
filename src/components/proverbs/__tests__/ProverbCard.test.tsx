@@ -2,6 +2,7 @@ import { render, screen, within } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
 import { ProverbCard } from "@/components/proverbs/ProverbCard";
+import type { ProverbPicture } from "@/lib/proverbs/proverbImages";
 import type { Proverb } from "@/lib/proverbs/proverbs";
 import { getCountryRoute, getFamilyRoute, getPeopleRoute } from "@/lib/routing";
 
@@ -28,6 +29,16 @@ const attested: Proverb = {
       notes: "Recueil publié ; donne le texte original.",
     },
   ],
+};
+
+const picture: ProverbPicture = {
+  src: "/images/proverbs/test.jpg",
+  filePage: "https://commons.wikimedia.org/wiki/File:Test.jpg",
+  credit: "Auteur Test, CC BY-SA 4.0",
+  shortCredit: { fr: "Auteur Test, CC BY-SA", en: "Author Test, CC BY-SA" },
+  alt: { fr: "Un marché au crépuscule.", en: "A market at dusk." },
+  licence: "cc-by-sa",
+  licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
 };
 
 const unestablished: Proverb = {
@@ -115,6 +126,42 @@ describe("ProverbCard", () => {
     expect(
       screen.queryAllByRole("link", { name: /Peuple|Pays|Famille/ })
     ).toEqual([]);
+  });
+
+  // @req REQ-113
+  it("draws no picture layer for a proverb without a photograph", () => {
+    render(<ProverbCard language="fr" proverb={attested} />);
+
+    expect(screen.queryByRole("img")).not.toBeInTheDocument();
+    expect(screen.queryByText(/Photo/)).not.toBeInTheDocument();
+  });
+
+  // The licence is only satisfied by an attribution the reader can see, so
+  // the credit is a link to the original file, not a line filed elsewhere.
+  // @req REQ-113
+  it("shows a proverb's photograph and links its credit to the original file", () => {
+    render(<ProverbCard language="fr" proverb={attested} picture={picture} />);
+
+    expect(screen.getByRole("img")).toHaveAttribute(
+      "alt",
+      "Un marché au crépuscule."
+    );
+    expect(
+      screen.getByRole("link", { name: /Auteur Test, CC BY-SA/ })
+    ).toHaveAttribute("href", picture.filePage);
+    expect(screen.getByRole("heading", { level: 2 })).toHaveTextContent(
+      "La main qui donne"
+    );
+  });
+
+  // @req REQ-145
+  it("credits the photograph in English on /en", () => {
+    render(<ProverbCard language="en" proverb={attested} picture={picture} />);
+
+    expect(screen.getByRole("img")).toHaveAttribute("alt", "A market at dusk.");
+    expect(
+      screen.getByRole("link", { name: /Author Test, CC BY-SA/ })
+    ).toBeInTheDocument();
   });
 
   // @req REQ-145

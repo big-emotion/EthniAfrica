@@ -270,6 +270,7 @@ two databases the 2026-08-31 readings of `001` → `049` reached.
 | `091_oral_narratives_before_review.sql`       | applied — measured 2026-09-18               | applied — measured 2026-09-17                        |
 | `092_flag_remediation_state.sql`              | applied — measured 2026-09-18               | applied by the v4.12.0 Release — measured 2026-09-17 |
 | `093_patronyme_named_bearers.sql`             | applied — measured 2026-09-18               | applied by the v4.12.0 Release — measured 2026-09-17 |
+| `094_afrik_search_leads_recorded_forms.sql`   | pending — merge into `recette` applies it   | pending — the next Release applies it                |
 
 > **Superseded rollout notes.** The per-migration notes below were written when each file was
 > pending, and several still say "apply by hand" or "omitted from this table". They are kept for

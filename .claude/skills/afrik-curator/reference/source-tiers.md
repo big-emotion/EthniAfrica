@@ -21,8 +21,9 @@ user-facing label all say the same thing.
 | `referenced` | **Référencée**   | 0.7    | Published, identifiable, verifiable work — academic, press, books. Not necessarily official     |
 | `unverified` | **Non vérifiée** | 0.4    | Aggregators, tertiary encyclopedias, blogs, social media, community accounts, AI-generated text |
 
-A fiche resting only on `unverified` sources is **published**, and visibly marked
-low-confidence through `ConfidenceChip`. That is the intended outcome, not a defect to fix.
+A fiche resting only on `unverified` sources is **published**, and its sources are visibly
+labelled (the badge, and the reference count in `ConfidenceChip`, which prints no percentage).
+That is the intended outcome, not a defect to fix.
 
 ### The CIA World Factbook is retired — cite an edition, never the live site
 
@@ -99,16 +100,20 @@ content whose _origin_ happens to matter. So it is `tier: "unverified"` plus
 The interface keeps the distinction visible: the **Non vérifiée** badge plus a separate AI
 provenance marker driven by `source_kind`, never by the tier.
 
-## Wikipedia is not a source
+## Wikipedia is read first, and cited for what it is
 
-A primary source _discovered through_ Wikipedia is cited at its own tier, by its own URL,
-and the `notes` field records which Wikipedia language versions were crossed — so the chain
-stays auditable.
+Rule owned by `docs/editorial/reader-facing-register.md` ("Using sources"). In short: prefer
+the primary source _discovered through_ Wikipedia, cited at its own tier by its own URL, with
+the Wikipedia language versions crossed recorded in `notes` so the chain stays auditable. A
+Wikipedia article that was actually consulted may be cited directly as a tertiary encyclopedia
+at `unverified`; the gate reports it, it does not refuse it.
 
-## `notes` carries the reason for the tier
+## `notes` says what the source is
 
-Not a summary of the source. The reason it sits at that level. The language fiches are the
-model to copy: all 24 carry one.
+Publisher, edition, what was read or cross-checked — not why the source sits at its tier.
+That rationale is workshop reasoning: it goes in the internal ruling ledger, never in a
+field readers see verbatim. The language fiches are the model to copy: their notes describe
+the source, as in the example below.
 
 ```json
 {
@@ -153,5 +158,8 @@ UNESCO World Heritage.
 cited with a DOI or persistent URL; university presses including Karthala and Présence
 Africaine; national archives.
 
-**Oral tradition** — cited as the transcribed version and attributed to the griot it comes
-from, at the tier the transcription earns. Not excluded for being oral.
+**Oral tradition** — cited as the version that exists (a transcript, a summary or an audio
+locator, whichever was actually available) and attributed to the carrier as the source
+states it, with how it was collected. A griot is one possible carrier, never assumed. A
+detail the source does not give stays absent, never invented; permission and withdrawal
+are checked separately from any assessment of the claim. Not excluded for being oral.

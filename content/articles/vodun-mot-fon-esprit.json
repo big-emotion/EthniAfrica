@@ -1,0 +1,44 @@
+{
+  "id": "vodun-mot-fon-esprit",
+  "status": "draft",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "vodun-mot-fon-esprit",
+    "title": "D'où vient le mot « vodun » ?",
+    "excerpt": "Au Bénin, vodun veut dire esprit. Haïti a gardé le mot.",
+    "sections": []
+  },
+  "sources": [],
+  "media": {
+    "edition": {
+      "id": "vodun-esprit"
+    },
+    "formats": [
+      {
+        "kind": "video",
+        "youtubeId": "9tqCwDKE4fw",
+        "poster": {
+          "src": "vodun-mot-fon-esprit/vodun-esprit/poster-c39288e6c9dc.webp",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/video/7684706882673528086",
+        "publishedAt": "2026-09-12"
+      },
+      {
+        "network": "youtube",
+        "url": "https://www.youtube.com/shorts/9tqCwDKE4fw",
+        "publishedAt": "2026-09-12"
+      }
+    ]
+  },
+  "relatedArticleIds": []
+}

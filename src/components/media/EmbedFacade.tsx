@@ -28,6 +28,12 @@ interface EmbedFacadeProps {
    * ratio, which would letterbox a card that is already vertical.
    */
   fill?: boolean;
+  /**
+   * Called each time the player mounts or unmounts. The host owns whatever
+   * sits in front of the picture, so it is the one that has to step aside
+   * while the video plays.
+   */
+  onPlayingChange?: (playing: boolean) => void;
 }
 
 /**
@@ -49,6 +55,7 @@ export function EmbedFacade({
   watchUrl,
   active = true,
   fill = false,
+  onPlayingChange,
 }: EmbedFacadeProps) {
   const copy = embedFacadeCopy[language];
   const { consentState, setEmbedsConsent, setShowBanner } = useConsent();
@@ -71,6 +78,10 @@ export function EmbedFacade({
     setPlaying(false);
 
   useEffect(() => {
+    onPlayingChange?.(playing);
+  }, [playing, onPlayingChange]);
+
+  useEffect(() => {
     if (playing) frame.current?.focus();
     else if (returnFocus.current) {
       returnFocus.current = false;
@@ -85,6 +96,7 @@ export function EmbedFacade({
       target="_blank"
       rel="noreferrer"
       tabIndex={tabIndex}
+      inert={fill && playing}
     >
       {copy.watchOnPlatform}
     </a>

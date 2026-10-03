@@ -1,7 +1,58 @@
 # Production harness — EthniAfrica shorts
 
+## Musical carousels
+
+`ethni_carrousel2.py --brief memoires-sonores` reads the
+[approved guide](../../docs/design/gabarits-social/MEMOIRES-SONORES.md) and emits
+its instructions plus an empty six-card deck. Populate the deck in the workshop
+and keep `profil: memoires-sonores`. The normal rendering command validates its
+stages and audio notes, prints the series identity and delivers six 4:5 cards
+for TikTok/Instagram only. Music is selected natively when uploading, as recorded
+in `RENDU.md`. Register with `register-post.mjs --profile memoires-sonores` in
+the private library; this feature requires no site record.
+
+The shared profile in `carousel-profiles/` is read by preparation, rendering and
+registration. Decks without a profile retain the existing routes below.
+
+## Video production
+
+For scene-based video production, start with [the reusable workflow](SCENE-PRODUCTION.md),
+[feature catalogue](SCENE-CATALOGUE.md) and [three production storyboards](templates/scene-storyboards.md).
+The older deck-driven path below remains supported.
+
 The engine, the brand ending and every measured constraint live here. A project
 supplies only its narration, its scene sheet and its assets.
+
+The opt-in [scene video engine](SCENES.md) combines maps, photographs, text and
+comparisons from a validated storyboard. It includes the existing-system audit,
+the input contract, editorial profiles and the handoff between planning model,
+execution model, renderer and operator. Use `--scene-plan` through
+`ethni_montage.py`; `--validate-only` and `--previews-only` check a plan before
+encoding. V1 exports remain watermarked proofs; carousels are unchanged.
+
+## Experimental animated-map proofs
+
+`python3 ethni_montage.py <subject> --map-proof <storyboard.json>` renders a
+vertical, watermarked map proof from local GeoJSON and excerpts of existing
+approved audio. It makes no Hugging Face, MCP or paid API calls. The normal
+production renderer remains the default; this experimental composition is not
+a publication-ready gabarit.
+
+Keep the storyboard, geographic assets and output in the private workshop and
+library. The storyboard specifies `source_script_sha256`, `source_audio_sha256`,
+`cuts` (audio start/end seconds), `paragraphs` (zero-based narration paragraphs),
+`geometry` (relative GeoJSON path) and `output_dir` (under `_epreuves`). Camera
+keyframes use `at` and `bounds` in west/south/east/north order; point coordinates
+use longitude/latitude. `sections`, `markers`, `country_labels` and `events`
+supply the visible copy and timing. Country properties need `ADM0_A3` codes.
+Source and license every geographic asset and visual claim in the workshop.
+
+The renderer rejects stale approval, changed source hashes, stale alignment and
+cuts through words. Selected paragraphs must match the retained words exactly.
+It exports H.264/AAC at 1080 × 1920 and 25 fps, preview frames, retimed captions
+and a provenance report. `--controle` holds each section's camera for review.
+Modern borders provide orientation only; no historical territory or migration
+is inferred. Existing narration approval does not approve the new visuals.
 
 ```
 python3 ethni_audio.py      <Name>  # TTS take → paced narration → captions
@@ -236,19 +287,11 @@ ever run on posts that were already published.
   y 1233–1363 and a caption lands at y 1298–1421; solving the ending's _length_
   is not enough, its _start_ is what has to be solved.
 - A scene with a sourced visual and no `credit` line fails.
-- **A `plate` may not climb into the register's ink**, and the failure names the
-  `centreY` that clears it. A plate is not shaded the way a photograph is, so the
-  white register keeps whatever contrast the document's own paper gives it.
-  Measured 2026-09-10 across the ten plate scenes of five projects: the six that
-  clear the register read at 14.0 against the green ground, the four that did not
-  fell to 1.2–2.9, below the 3.0 floor for large text and invisible on two of
-  them. Krou shipped it on 2026-09-09 and no one saw it; Libreville and
-  Brazzaville met it independently the next day. Separation rather than shading
-  was the ruling: darkening the plate veils a document whose legibility is the
-  argument, and neither shading nor a dark register would undo the other half of
-  the defect, which is the register landing on the document's own typography.
-  Lowering cost nothing — all four scenes still fit the frame whole. A document
-  too tall to fit under the register fails naming the `width` that would.
+- **A scene without a full-frame `photo` background fails** (operator ruling,
+  2026-09-30). The sheet renderer had a `colour` background, which was also the default
+  for a scene that named none, and a `plate` mode that set a document on that colour;
+  both are gone, with the register-clearance check that only the plate needed. There is
+  no dark, plain or solid-colour scene.
 - A text line wider than its safe box fails rather than being shrunk silently —
   **after** the role's size has been solved. Each role gets one size for the whole
   video, the largest at which all its cards fit; a line that still does not fit at
@@ -276,8 +319,7 @@ ever run on posts that were already published.
   `forme` card below the rule, the five frames before the proper name arrives read
   « KROU → CRUA », a statement the corpus does not make.
 - The flat-colour-ground share is measured into `validation.json` at every render,
-  against the doctrine's 2 % cap. Ghana measures 0.0 %; Sénégal V2 measures 15.9 %.
-  Reported, not yet gated.
+  against a cap of zero: no frame stands on a flat colour. Reported, not gated.
 
 ## Fonts
 
@@ -285,3 +327,16 @@ ever run on posts that were already published.
 Nunito Sans (the brand card). Fraunces and Nunito Sans are **variable** fonts
 whose default instance is far too light; the engine pins the weight axis. A
 production that assumed otherwise fell back to Montserrat and shipped thin.
+
+## Musical carousel presentation
+
+`profil: "memoires-sonores"` adds rules, not a layout: six ordered stages,
+TikTok and Instagram only, and the per-platform sound review. Its cards are drawn
+by the standard carousel gabarit — a full-frame photograph on every card, the
+same look as the Lingala carousel (operator ruling, 2026-09-27) — so the profile
+has no renderer of its own and `test_memoires_layout.py` asserts that a card of the
+profile is composed identically to the same card of an ordinary deck. Overflow
+never shrinks text; the normal command files the entire deck as proofs if any
+card fails. The retired 2026-09-25 presentation is kept as history in
+`docs/design/gabarits-social/memoires-sonores-approved/`. Approval of the
+template does not approve any episode’s script or audio.

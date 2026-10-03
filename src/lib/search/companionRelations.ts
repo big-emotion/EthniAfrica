@@ -14,6 +14,15 @@ export interface CompanionMatch extends CompanionSubject {
   relation: CompanionRelation;
 }
 
+/**
+ * A production found by the word the reader typed rather than by an entity:
+ * there is no subject to point at, so the match carries the folded word.
+ */
+export interface WordMatch {
+  relation: "word";
+  word: string;
+}
+
 export type CompanionRelatedSubject = CompanionSubject & {
   relation: Exclude<CompanionRelation, "exact" | "recent">;
 };

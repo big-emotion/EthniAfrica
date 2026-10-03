@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Fiche approfondie selon le protocole de recherche anthroponymique ; chaque affirmation positive renvoie à une source dédiée et les absences sont déclarées dans gaps."
+    "directives": "Dossier approfondi : chaque affirmation positive renvoie à une source dédiée et les absences sont déclarées dans gaps."
   },
   "id": "PAT_DIAKITE",
   "nameMain": "Diakité",
@@ -13,7 +13,14 @@
       "attestations": [
         {
           "countryId": "MLI",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": [
+            "interpeace-autoportrait-mali-2015",
+            "sy-2015-ethnies-langues-mali"
+          ]
+        },
+        {
+          "countryId": "BFA",
+          "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
         }
       ]
     },
@@ -22,7 +29,39 @@
       "attestations": [
         {
           "countryId": "MLI",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["forebears-diakite"]
+        },
+        {
+          "countryId": "GIN",
+          "sourceRefs": [
+            "rainer-trebbi-2012-political-power",
+            "forebears-diakite"
+          ]
+        },
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["forebears-diakite"]
+        },
+        {
+          "countryId": "BFA",
+          "sourceRefs": ["forebears-diakite"]
+        },
+        {
+          "countryId": "SEN",
+          "sourceRefs": ["forebears-diakite"]
+        },
+        {
+          "countryId": "MRT",
+          "sourceRefs": ["forebears-diakite"]
+        }
+      ]
+    },
+    {
+      "spelling": "Jakite",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
         }
       ]
     }
@@ -30,22 +69,61 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
-    "writtenChronicles": [
+    "oralTraditions": [
       {
-        "claim": "Dans leur étude des élites gouvernementales guinéennes, Rainer et Trebbi décrivent les porteurs de Diakité comme originaires du Wassoulou : leur consultant les classe comme Peuls intégrés linguistiquement et culturellement aux Malinkés, tandis que les sources divergent entre les deux appartenances.",
-        "claimStatus": "contested",
-        "sourceRefs": ["rainer-trebbi-2012-political-power"]
+        "claim": "Chez les Peuls de l'ouest du Burkina Faso, les Diallo et les Diakité forment l'un des deux couples qui composent le noyau mythique de l'identité peule. Un récit dit que, dans une fuite après une défaite, un Diallo ranime un Diakité défaillant en lui faisant manger une partie de sa propre chair, et que les deux clans ont noué alliance à cette occasion.",
+        "claimStatus": "claimed",
+        "griot": "Informateurs peuls de l'ouest du Burkina Faso, non nommés dans l'article",
+        "transcription": "Récit résumé par l'auteur, non transcrit mot à mot : Diallo, Youssouf, « Identités et relations de plaisanterie chez les Peuls de l'ouest du Burkina Faso », Cahiers d'études africaines, n° 184, 2006, p. 779-794.",
+        "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
       }
     ],
-    "linguisticReconstructions": []
+    "writtenChronicles": [
+      {
+        "claim": "Une étude des élites gouvernementales guinéennes décrit les porteurs de Diakité comme originaires du Wassoulou : son consultant les classe comme Peuls intégrés linguistiquement et culturellement aux Malinkés, tandis que les sources divergent entre les deux appartenances.",
+        "claimStatus": "contested",
+        "sourceRefs": ["rainer-trebbi-2012-political-power"]
+      },
+      {
+        "claim": "L'ensemble peul de l'ouest du Burkina Faso se compose de quatre clans principaux, Diallo, Diakité, Sidibé et Sangaré. Le nom est aussi cité parmi les noms de famille peuls du Mali, et il se rencontre chez les Mandingues.",
+        "claimStatus": "established",
+        "sourceRefs": [
+          "diallo-2006-plaisanterie-peuls",
+          "interpeace-autoportrait-mali-2015",
+          "sy-2015-ethnies-langues-mali",
+          "hanks-dafn2-diakite"
+        ]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "Un dictionnaire de noms de famille présente Diakité comme le nom du clan Diakité des Peuls et le fait dériver du nom de la ville de Dia, au Mali ; il ajoute que le nom se trouve aussi chez les Mandingues. Cette dérivation ne repose que sur cette notice, qui n'en donne pas la preuve.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hanks-dafn2-diakite"]
+      },
+      {
+        "claim": "Le dictionnaire des noms claniques bambara n'a pas d'entrée pour Jakite, mais il cite ce nom comme partenaire de plaisanterie des clans Bagayogo, Dansoko, Janka, Kanté et Sidibé, et comme équivalent de Jagate, entrée qu'il situe au Bambouk, et de Kaba.",
+        "claimStatus": "established",
+        "sourceRefs": ["bamadaba-jamuw"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_FULA",
       "status": "attested",
       "sourceRefs": [
-        "afrik-candidate-queue",
+        "rainer-trebbi-2012-political-power",
+        "diallo-2006-plaisanterie-peuls",
+        "interpeace-autoportrait-mali-2015",
+        "sy-2015-ethnies-langues-mali"
+      ]
+    },
+    {
+      "peopleId": "PPL_MALINKE",
+      "status": "attested",
+      "sourceRefs": [
+        "hanks-dafn2-diakite",
         "rainer-trebbi-2012-political-power"
       ]
     }
@@ -54,22 +132,81 @@
     {
       "countryId": "MLI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "interpeace-autoportrait-mali-2015",
+        "sy-2015-ethnies-langues-mali",
+        "forebears-diakite"
+      ]
+    },
+    {
+      "countryId": "GIN",
+      "status": "attested",
+      "sourceRefs": ["rainer-trebbi-2012-political-power", "forebears-diakite"]
+    },
+    {
+      "countryId": "CIV",
+      "status": "attested",
+      "sourceRefs": ["forebears-diakite"]
+    },
+    {
+      "countryId": "BFA",
+      "status": "attested",
+      "sourceRefs": ["diallo-2006-plaisanterie-peuls", "forebears-diakite"]
+    },
+    {
+      "countryId": "SEN",
+      "status": "attested",
+      "sourceRefs": ["forebears-diakite"]
+    },
+    {
+      "countryId": "MRT",
+      "status": "attested",
+      "sourceRefs": ["forebears-diakite"]
     }
   ],
-  "alliances": [],
+  "alliances": [
+    {
+      "targetPatronymeId": "PAT_DIALLO",
+      "allianceType": "équivalence",
+      "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
+    },
+    {
+      "targetPatronymeId": "PAT_BA",
+      "allianceType": "dendiraagu",
+      "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
+    },
+    {
+      "targetPatronymeId": "PAT_BAGAYOKO",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_KANTE",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_SIDIBE",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    }
+  ],
   "casteOrSocialFunction": null,
   "bearers": [],
   "homonyms": [],
   "sources": [
-    {
-      "sourceKey": "afrik-candidate-queue",
-      "title": "Relevé de couverture anthroponymique EthniAfrica",
-      "url": null,
-      "tier": "unverified",
-      "source_kind": "ai_generated",
-      "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
-    },
     {
       "sourceKey": "rainer-trebbi-2012-political-power",
       "title": "New Tools for the Analysis of Political Power in Africa",
@@ -77,28 +214,96 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Ilia Rainer et Francesco Trebbi, NBER Working Paper 18424, septembre 2012. L’annexe sur la Guinée, p. 43, explique séparément la classification de Diakite, Sidibe et Sangare : originaires du Wassoulou, décrits comme Peuls intégrés aux populations malinké, ils sont codés par les auteurs à parts égales peuls et malinké. Le document précise qu’il n’a pas été évalué par les pairs."
+    },
+    {
+      "sourceKey": "interpeace-autoportrait-mali-2015",
+      "title": "Autoportrait du Mali — Les Obstacles à la Paix",
+      "url": "https://www.interpeace.org/wp-content/uploads/2015/03/2015_03_02_Mali_Autoportrait_FR.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Rapport de recherche-action de l'Institut malien de recherche action pour la paix avec Interpeace, en partenariat avec les Nations unies, mars 2015. Son chapitre sur les diversités socioculturelles donne, pour chaque grand groupe du Mali, quelques noms de famille suivis de « etc. » : la liste est illustrative, sans méthode d'établissement ni source indiquée. Elle atteste qu'un nom est porté dans un groupe, non d'où il vient."
+    },
+    {
+      "sourceKey": "sy-2015-ethnies-langues-mali",
+      "title": "Études synchroniques des ethnies et des langues au Mali",
+      "url": "https://arlap.hypotheses.org/3726",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Salif Sy, carnet de recherche ARLAP (Hypotheses.org), 18 février 2015. Billet d'un doctorant en langues africaines, sans relecture par des pairs, qui range Diallo, Diakité, Sidibé et Sangaré parmi les noms identifiés comme peuls au Mali. Cité pour attester le nom dans ce groupe et dans ce pays, non pour son origine."
+    },
+    {
+      "sourceKey": "diallo-2006-plaisanterie-peuls",
+      "title": "Identités et relations de plaisanterie chez les Peuls de l'ouest du Burkina Faso",
+      "url": "https://journals.openedition.org/etudesafricaines/15399",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Youssouf Diallo, Cahiers d'études africaines, vol. 46, n° 184, 2006, p. 779-794 (DOI 10.4000/etudesafricaines.15399). Revue à comité de lecture ; l'auteur était alors rattaché au Max-Planck-Institut für ethnologische Forschung. L'enquête de terrain porte sur les Peuls de l'ouest du Burkina Faso, ce qui atteste les noms dans ce pays. L'article dit que l'ensemble peul se compose de quatre clans principaux (Diallo, Diakité, Sidibé, Sangaré), que les couples Diallo/Diakité et Sidibé/Sangaré, noyau mythique de l'identité peule, sont en relation d'équivalence, et que Diallo/Diko, Diakité/Ba et Sidibé/Sangaré sont homologues et entretiennent à ce titre des relations de plaisanterie (dendiraagu). Il rapporte aussi un récit d'alliance entre un Diallo et un Diakité."
+    },
+    {
+      "sourceKey": "canut-2002-senankuya",
+      "title": "Pouvoir, places et filiation : les senankuya au Mali",
+      "url": "https://journals.openedition.org/praxematique/2307",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Canut, Cécile, Cahiers de praxématique, numéro 38, 2002, p. 175-197. Enquête de terrain au Mali. Elle énonce ce que le pacte oblige : la relation vaut à perpétuité pour toute la descendance des deux lignées, le mariage entre elles est prohibé — diversement appliqué aujourd'hui, précise-t-elle — et l'entraide y est due sans réserve. Citée pour l'obligation elle-même ; elle ne nomme pas la paire de cette fiche, que portent les entrées citées à côté d'elle."
+    },
+    {
+      "sourceKey": "canut-smith-2006-pactes",
+      "title": "Pactes, alliances et plaisanteries. Pratiques locales, discours global",
+      "url": "https://doi.org/10.4000/etudesafricaines.6198",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Canut, Cécile, et Smith, Étienne, Cahiers d'études africaines, numéro 184, 2006, p. 687 et suivantes. Citée pour la mise en garde qu'elle porte : l'idée que la parenté à plaisanterie apaiserait les conflits y est traitée comme une hypothèse héritée de Radcliffe-Brown et reprise par les études sur la résolution des conflits, donc comme un discours à analyser et non comme un effet mesuré. La page de début est vérifiée, la page de fin ne l'est pas."
+    },
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Jakite n'y a pas d'entrée propre : le nom est cité comme partenaire de plaisanterie (marqueur \\sn, lu senankun) par les entrées Bagayogo, Dansoko, Janka, Kante et Sidibe, et comme équivalent (marqueur \\eq) sous les entrées Jagate, dont le fichier situe le nom au Bambouk, et Kaba. Les liens \\sn ne sont pas systématiquement réciproques d'une entrée à l'autre : chaque paire est donc citée d'après l'entrée qui la porte."
+    },
+    {
+      "sourceKey": "hanks-dafn2-diakite",
+      "title": "Dictionary of American Family Names, 2e édition — entrée Diakite",
+      "url": "https://en.geneanet.org/surnames/DIAKITE",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Patrick Hanks (dir.), Dictionary of American Family Names, 2e éd., Oxford University Press, 2022 ; consulté par la page Geneanet qui reproduit l'entrée avec sa mention de source. Ouvrage de référence dont l'entrée est brève : elle donne la dérivation à partir de la ville de Dia sans citer ce qui la fonde."
+    },
+    {
+      "sourceKey": "forebears-diakite",
+      "title": "Diakite — origine, signification et répartition du nom",
+      "url": "https://forebears.io/fr/surnames/diakite",
+      "tier": "unverified",
+      "source_kind": "repository",
+      "notes": "Site agrégateur de statistiques patronymiques, sans revue éditoriale indépendante vérifiable ; données de 2014, consultées dans une copie archivée de 2024. Il compte environ 488 000 porteurs dans le monde : Mali 328 417, Guinée 91 156, Côte d'Ivoire 47 544, Burkina Faso 6 815, Sénégal 5 119, Mauritanie 863, et des effectifs plus petits en Espagne (1 353), au Maroc, au Ghana, au Tchad et en France. La page ne donne aucune signification du nom. Cité pour la répartition seulement ; les effectifs hors d'Afrique ne sont pas repris dans les attestations."
     }
   ],
   "gaps": [
     {
-      "fieldPath": "alliances",
-      "reason": "L’annexe guinéenne de Rainer et Trebbi a été recherchée pour une alliance à plaisanterie propre à Diakité ; elle ne documente aucune paire patronymique."
-    },
-    {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Rainer et Trebbi documentent une classification ethnique disputée pour Diakité, mais aucune caste ni fonction héréditaire ; les recherches ciblées n’ont pas fourni d’autre étude dédiée."
+      "reason": "Les sources consultées classent Diakité parmi les clans peuls sans lui attribuer de caste ni de fonction héréditaire, et le dictionnaire des noms claniques bambara n'y consacre aucune entrée."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Rainer et Trebbi citent des ministres pour établir leur codage ethnique, mais la recherche n’a pas vérifié un porteur décédé et son rattachement lignager ; aucun bearer n’est ajouté."
+      "reason": "Nous ne nommons aucun porteur : aucune source consultée ne rattache une personne décédée à ce nom par son lignage."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Les variantes accentuées et non accentuées de Diakité ont été recherchées dans l’annexe de Rainer et Trebbi ; la source ne distingue pas deux origines homonymes."
+      "reason": "Aucune source consultée ne distingue deux origines homonymes pour ce nom."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Rainer et Trebbi expliquent l’identification peule/malinké de Diakité sans décrire la règle de transmission du nom ; aucun travail onomastique dédié établissant une filiation patrilinéaire, matrilinéaire ou élective n’a été trouvé."
+      "reason": "Les sources consultées classent Diakité parmi les clans et décrivent des alliances entre clans, mais aucune ne dit comment le nom se transmet ; la règle de filiation, patrilinéaire, matrilinéaire ou élective, n'est donc pas établie."
+    },
+    {
+      "fieldPath": "origin",
+      "reason": "L'origine du nom n'est pas établie : le rattachement aux Peuls, la dérivation de la ville de Dia et la présence chez les Mandingues sont rapportés par des sources qui ne se départagent pas."
+    },
+    {
+      "fieldPath": "spellings",
+      "reason": "Nous n'avons trouvé aucune source établissant les graphies Diakhité ou Jaiteh comme variantes de ce nom ; elles ne figurent donc pas ici."
     }
   ]
 }

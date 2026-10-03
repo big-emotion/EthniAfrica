@@ -11,7 +11,7 @@ const meta: Meta<typeof ConfidenceChip> = {
       description: {
         component:
           "Tappable typographic pill placed at the end of any assertion on an AFRIK fiche. " +
-          "Renders `X % · N sources · vérifié YYYY-MM-DD`. No emoji, no icon, no color alarm. " +
+          "Renders `N références · revu YYYY-MM-DD`. No emoji, no icon, no color alarm. " +
           "Tap target ≥ 44×44 px via wrapper padding. One-shot pulse on first session render.",
       },
     },
@@ -31,6 +31,7 @@ const meta: Meta<typeof ConfidenceChip> = {
 export default meta;
 type Story = StoryObj<typeof ConfidenceChip>;
 
+// @req REQ-019
 export const Inline: Story = {
   args: {
     confidenceScore: 87,
@@ -47,6 +48,7 @@ export const Inline: Story = {
   ),
 };
 
+// @req REQ-019
 export const Hero: Story = {
   args: {
     confidenceScore: 92,
@@ -65,6 +67,7 @@ export const Hero: Story = {
   ),
 };
 
+// @req REQ-019
 export const Contested: Story = {
   args: {
     confidenceScore: 42,
@@ -81,6 +84,7 @@ export const Contested: Story = {
   ),
 };
 
+// @req REQ-019
 export const MissingData: Story = {
   name: "Fallback — missing data",
   args: {
@@ -97,6 +101,7 @@ export const MissingData: Story = {
   ),
 };
 
+// @req REQ-019
 export const NoOnOpen: Story = {
   name: "Without onOpen callback",
   args: {
@@ -114,6 +119,7 @@ export const NoOnOpen: Story = {
   ),
 };
 
+// @req REQ-019
 export const AllVariants: Story = {
   name: "All variants side-by-side",
   parameters: { layout: "padded" },

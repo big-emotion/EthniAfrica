@@ -1,0 +1,21 @@
+{
+  "campaign": "toponymie-villes-montagnes-fantomes",
+  "typologie": "mot",
+  "episode": 9,
+  "question": {
+    "fr": "Un nom de ville ou de montagne, sur une carte d'Afrique, dit-il toujours une vérité géographique ?"
+  },
+  "myth": {
+    "fr": "La chaîne de montagnes qu'on lisait sur les cartes d'Afrique de l'Ouest a-t-elle vraiment existé ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7684273739822796054",
+      "publishedAt": "2026-09-11"
+    }
+  ]
+}

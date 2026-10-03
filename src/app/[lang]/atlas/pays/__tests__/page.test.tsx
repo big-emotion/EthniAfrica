@@ -1,4 +1,12 @@
-import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import {
+  act,
+  fireEvent,
+  render,
+  screen,
+  waitFor,
+} from "@testing-library/react";
+import { setFicheMapOpen } from "@/components/fiche/FicheMapBand";
+
 import React from "react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
@@ -376,6 +384,7 @@ describe("/[lang]/pays/[slug] — panel sequence", () => {
   // @req REQ-116
   it("stands the globe on the full-width night band", async () => {
     const { container } = await renderPage("NGA");
+    act(() => setFicheMapOpen(true));
 
     const band = screen.getByTestId("fiche-hero-band");
     expect(band).toBeInTheDocument();
@@ -392,8 +401,19 @@ describe("/[lang]/pays/[slug] — panel sequence", () => {
   });
 
   // @req REQ-116
+  it("keeps the map closed until the reader asks for it", async () => {
+    const { container } = await renderPage("NGA");
+
+    expect(screen.queryByTestId("fiche-hero-band")).toBeNull();
+    expect(container.querySelector("[data-fiche-map-band]")).toHaveAttribute(
+      "hidden"
+    );
+  });
+
+  // @req REQ-116
   it("closes the band with the seam that opens the reading", async () => {
     await renderPage("NGA");
+    act(() => setFicheMapOpen(true));
 
     expect(screen.getByTestId("fiche-hero-seam")).toBeInTheDocument();
   });

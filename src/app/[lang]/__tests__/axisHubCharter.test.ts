@@ -59,13 +59,18 @@ describe("the axis hubs — three addresses, one spread", () => {
   });
 
   /**
-   * Every hub reads the one page module, so a change to the spread reaches all
-   * three. Three hand-written pages is what let the retired hubs become three
-   * different surfaces sharing a name.
+   * Every spread hub reads the one page module, so a change to the spread
+   * reaches all of them. Hand-written pages is what let the retired hubs
+   * become different surfaces sharing a name.
+   *
+   * The dossiers axis left the spread on 30 September 2026: the operator
+   * turned it into the Articles listing (docs/plans/articles-refonte-2026-09-30.md,
+   * option A), which supersedes brand charter §8.6 for that section only. It
+   * is held by the next test instead, so the exception is a named one.
    */
   // @req REQ-114
-  it("builds all three from the shared axis-hub page", () => {
-    for (const axis of ACCESS_MODES) {
+  it("builds every spread hub from the shared axis-hub page", () => {
+    for (const axis of ACCESS_MODES.filter((mode) => mode !== "dossiers")) {
       const source = readFileSync(
         fromRoot(`src/app/[lang]/${HUB_ROUTE_DIR[axis]}/page.tsx`),
         "utf8"
@@ -74,5 +79,15 @@ describe("the axis hubs — three addresses, one spread", () => {
       expect(source, axis).toContain("@/components/hubs/axisHubPage");
       expect(source, axis).toContain(`axis="${axis}"`);
     }
+  });
+
+  // @req REQ-114
+  it("serves the Articles listing, not the spread, at the dossiers hub", () => {
+    const source = readFileSync(
+      fromRoot(`src/app/[lang]/${HUB_ROUTE_DIR.dossiers}/page.tsx`),
+      "utf8"
+    );
+    expect(source).toContain("@/components/articles/ArticleListing");
+    expect(source).not.toContain("@/components/hubs/axisHubPage");
   });
 });

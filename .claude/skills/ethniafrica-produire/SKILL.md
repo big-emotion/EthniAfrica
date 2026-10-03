@@ -1,17 +1,165 @@
 ---
 name: ethniafrica-produire
-description: Rendre les carrousels et les reels EthniAfrica depuis un cards.json et un SOURCES.md validés, conformément à GABARITS-SOCIAL.md — dispositions A/B/C, résolution ≤ ×2, zone d'interface 9:16, licence de sortie calculée. Dernière étape de la chaîne idee → structure → produire ; rien ne vient après, la publication est un acte humain. Lance d'abord l'audit du message (ethniafrica-message). Utiliser pour « rends », « génère les images », « fais la vidéo », « sors le carrousel », ou /ethniafrica-produire. Rend toujours, en épreuve si les portes ne passent pas.
+description: Render EthniAfrica scene videos from an approved scene plan, or render independent carousel decks. Verify narration, assets, timing and reviews; deliver proofs or reviewed clean publication packages. Final stage of idee → structure → produire. Does not publish or schedule.
 ---
 
 # produire — rendre carrousels et reels
 
+## Family-scoped reviews (2026-09-29)
+
+Before any render, read the edition's plan:
+`node social/tools/narration/check-family-brief.mjs <brief.json>`. The five universal
+reviews (provenance, uncertainty, attribution, intelligibility, non-essentialising) are
+owed by every family and no scene profile — `free` included — waives one. `name`,
+`myth`, `geography`, `music` and `name-origin-gabarit` are owed only where the plan says
+`required`; each `not-applicable` is recorded with its reason in `message.md` (« Revues
+appliquées ») and cancels nothing else.
+
+- **`mythe.md` exists only when the `myth` review is `required`.** No myth, no
+  `mythe.md`, and gate 5 is not blocked by its absence; the engine's `porte_message`
+  already treats it as optional. A `mythe.md` that exists and says « ne passe pas » still
+  blocks.
+- **`check-gabarit.mjs` and the production ledger are for `series: name-origin`.** A
+  social-only piece is never stamped in `docs/productions/` (see « Pour finir »).
+- **Geography and music** reviews follow the claims and media present: a map or route
+  claim is checked against its sources; a music claim or audio excerpt needs the recorded
+  audio review and the excerpt's attribution.
+- **Each edition is independent.** A carousel does not wait for a video, and a video
+  adapted from an approved carousel reuses that text approval for unchanged copy. Only
+  the checks whose inputs changed (a claim, an asset, the audio, a layout, a destination)
+  are rerun. No weekday and no date is required to render or to mark an edition ready.
+
+## Mémoires sonores delivery scope (2026-09-25)
+
+Read `docs/design/gabarits-social/MEMOIRES-SONORES.md` first for this feature.
+Since 2026-09-27 the profile uses the standard carousel gabarit (the Lingala
+format): a full-frame photograph on every card and the generic A/B/C quota.
+Layout approval never approves episode copy or audio; compare the render with
+the Lingala reference before delivery.
+Its sequence and TikTok/Instagram-only delivery replace the generic
+name-carousel and all-network requirements for this series. Full-text approval,
+source/asset checks, message review and proof review still apply. The normal
+`ethni_carrousel2.py <Sujet>` command reads `profil: memoires-sonores` and exports
+only six 4:5 cards for TikTok/Instagram; it refuses incomplete profile data.
+Use the private-library registration with `--profile memoires-sonores` and its
+`--where` output, following the reference. No public name-origin ledger entry
+is required. Deliver `RENDU.md` with its sound-selection notes: the operator adds
+the documented music natively on each platform; PNGs contain no audio.
+Archive clips require their own platform-specific review.
+
+## Scene-video dispatch and execution
+
+For every new video, use `scene-plan.json`, this section and
+`social/harness/SCENE-PRODUCTION.md` before the deck-only workflow below.
+`social/harness/SCENE-CATALOGUE.md` lists working controls; the three recipes and
+execution prompt live under `social/harness/templates/`. This is not a carousel
+migration. Narration organizes ideas; visual cuts follow meaning and reading comfort.
+A map can span several paragraphs with evolving camera, dates, regions and routes.
+Use a new shot for a useful change of place, period, evidence or idea. Do not
+require a carousel deck or impose image timers on video production.
+For name-origin narration only, read
+`.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md` and run
+`node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <category>`.
+Other profiles do not run this category checker. A name-origin brief that carries a
+`narrativeDesign` is checked with `--brief <brief.json>` instead (its plan was chosen
+and shown upstream; the legacy scene list and two-explanation ceiling do not apply).
+
+Require the genuine text-approval record, approved recording, matching alignment,
+filled plan, relative asset bundle and source/licence register. Review the brief,
+message and myth judgments including the new visual meaning. An explanatory
+subject may have no myth. Do not fabricate passing verdicts, sources or registration.
+The scene renderer checks the text marker/hashes; it does not itself certify these
+editorial audits or infer licensing compatibility. Final delivery checks explicit,
+version-bound review records rather than fabricating those judgments.
+
+### Pending rights do not block a private render
+
+Publication clearance is not a prerequisite for `prepare`, `render` or private
+proof delivery. Once the text, recording and visual plan are approved and the
+technical inputs are ready, render the video even when voice publication rights
+or permission for an incorporated image, page or excerpt are still pending.
+Recording approval means approval of the performance; it does not assert rights
+clearance. Do not ask for clearance or a separate waiver before rendering.
+
+Record each unresolved permission in the source/licence register and leave the
+corresponding release-review checks pending. For example, pending publication
+rights for the Marie-Victoire voice or an unanswered request to Présence Africaine
+for page 46 must not stop the private proof. These examples do not establish the
+actual status of either request. Deliver the proof with its existing proof badge
+and a concise list of outstanding rights; never invent permission or mark it passed.
+
+Pending rights still prevent `finalize`, ready-to-publish status and publication.
+Ask any clearance question at the release-review stage, after delivering the proof,
+only when needed to proceed to the publication package. Existing text, visual-plan,
+recording and paid-generation approval requirements continue to apply.
+
+For a new prepared package, run `ethni_scene_pipeline.py prepare` with its plan,
+new named lock and private proof output. Inspect the cue preview index at phone
+size, including route reveals and each timeline date. The lock
+records technical identity and sampled pixels; it is not editorial approval.
+If the brief authorizes production and the unchanged script/voice are approved,
+continue without another generic permission request.
+
+For an existing handoff, execute the `render` command in
+`social/harness/templates/scene-execution-prompt.md`. It verifies inputs/runtime,
+compares sampled pixels, renders, checks streams and fully decodes the video.
+Do not regenerate voice, rewrite the plan or replace a mismatching lock to force
+success. Report the exact changed input or missing decision. Routine authorized
+technical fixes do not require reopening the whole narrative discussion.
+
+Return the proof and execution report. Complete its generated `release-review.json`
+from real evidence and existing operator decisions. Review the composition at
+320–430px, transitions, captions, credits, actual listening, historical meaning,
+message/myth, voice rights, each asset and output licensing compatibility. An
+excerpt must be explicitly approved as an excerpt, including its closing.
+Never mark a check passed simply because the file exists or a render succeeded.
+
+When the exact proof is accepted and the checks pass, run `finalize` with that
+review and a fresh private `video/<version>` destination. It verifies the sealed
+inputs and proof, removes only the proof badge, checks the full encode, and delivers
+`video.mp4`, `captions.srt`, `CREDITS.md`, a mobile preview and `delivery.json`.
+Use `social/harness/SCENE-RELEASE.md` for the command and library handoff. Reuse
+already granted approvals; do not ask again for unchanged speech or visuals.
+Then assemble the mandatory full-resolution cover and approved publication Markdown
+using `.claude/skills/ethniafrica-production/references/publication-delivery.md`.
+The mobile preview does not satisfy the cover requirement. Inspect the cover, record
+real approval evidence and deliver explicit links to both files. A registered post
+receives verified library copies of all three: video, cover and Markdown.
+Complete the filing event described in `docs/social-workshop-cleanup.md` after
+those copies are verified: register the top-level workshop with `--workshop`,
+complete its `production-record.md`, then run
+`node social/tools/library/register-post.mjs --id <id> --filed --write`.
+This automatically checks the ledger, delivery and record before removing proven
+scratch. A failure remains visible; do not report housekeeping complete or fall
+back to recursive deletion. Retain the sealed release, review evidence, approved
+voice/timing, source assets and operational plans. They are replay dependencies.
+Missing rights or editorial decisions are reported together; retain the proof
+while they are unresolved. Do not publish or schedule automatically.
+
+## Independent carousel route
+
+Everything below governs carousel production. Video production uses the scene
+workflow above, including its review and delivery gates. Do not run the legacy
+image-deck montage for a new video. Existing old exports remain reproducible with
+their archived renderer version; they do not define current production rules.
+
 Dernière étape de la chaîne. **Rien ne vient après.** La publication est un acte
 humain : l'opérateur poste, puis renseigne la date et les réseaux dans la section
-Diffusion du `post.md`, ce qui fait passer le sujet en ✅. Tu ne publies pas, tu
-ne programmes pas, tu ne proposes pas de le faire.
+Diffusion du `post.md`. Chaque publication est une **occurrence** de l'édition, pas
+un état final : elle ne ferme ni le sujet, ni l'angle, ni l'édition, et une nouvelle
+édition, une adaptation ou une republication restent légitimes. Tu ne publies pas,
+tu ne programmes pas, tu ne proposes pas de le faire.
 
 Si `cards.json` ou `SOURCES.md` manquent, dis-le et propose `structure`. Ne saute
 pas l'étape.
+
+**Un carrousel dont le brief porte une `narrativeDesign` (`format: "carrousel"`)** ne
+change rien au rendu : mêmes cinq portes, même moteur, même profil. Vérifie seulement
+que `check-family-brief.mjs` accepte le brief (un plan non montré, un choix synthétique
+ou un brouillon n'est pas un feu vert) et que le texte complet des cartes est validé ;
+un choix de plan n'est pas cette validation. Le plan ne dit rien du confort de lecture :
+regarde le rendu à 320, 390 et 430 px d'abord, et ne réduis jamais la typographie pour
+faire tenir une carte.
 
 ## La porte qui précède les cinq autres : le texte validé
 
@@ -25,17 +173,6 @@ validation avant de continuer. Cette porte est la seule exception à « tu rends
 toujours » ci-dessous : elle protège un coût réel (la voix se paie en crédits)
 et une lecture réelle (personne ne devrait découvrir un script en le voyant
 monté).
-
-## Le gabarit d'un reel, avant tout rendu de reel
-
-Décidé le 2026-09-21 : la narration d'un reel suit le gabarit de sa catégorie
-(`.claude/skills/ethniafrica-structure/references/gabarit-reel-nom.md`). Avant de
-rendre un reel, lance
-`node social/tools/narration/check-gabarit.mjs narration.fr.txt --type <typologie>`,
-la `typologie` étant celle du carnet de production. Un écart n'empêche pas l'épreuve
-— tu rends toujours — mais le reel ne passe pas en 🟢, et tu dis l'écart en clair.
-`structure` a déjà lancé ce contrôle : le relancer ici rattrape une narration
-réécrite après la validation.
 
 ## Tu rends toujours
 
@@ -68,8 +205,9 @@ Le dossier du post est celui de la bibliothèque, pas celui de l'atelier — voi
    porte est franchie si ce verdict dit **passe** et s'il est plus récent que
    `cards.json`, `narration.fr.txt` et `post.md` : un verdict rendu sur une
    version précédente du texte ne juge pas celle qu'on rend. Lance aussi
-   `ethniafrica-mythe` : un `mythe.md` qui dit **ne passe pas**, ou plus ancien
-   que ces fichiers, ferme cette porte de la même façon.
+   `ethniafrica-mythe` **quand la revue `myth` est `required`** : un `mythe.md` qui
+   dit **ne passe pas**, ou plus ancien que ces fichiers, ferme cette porte de la
+   même façon. Quand elle est `not-applicable`, il n'y a pas de `mythe.md` à écrire.
 
 La cinquième porte n'empêche pas de rendre, comme les quatre autres : un message
 qui ne passe pas fait sortir le lot **en épreuve**, et l'encart de l'épreuve
@@ -93,6 +231,11 @@ le suffixe `-epreuve`.
 ## Ce que tu appliques
 
 Tout vient de `docs/design/gabarits-social/GABARITS-SOCIAL.md` :
+
+- **§0.7, l'image plein cadre.** Every carousel card and every reel scene has a
+  full-frame image background; there is no dark, plain or solid-colour background mode.
+  Une carte ou une scène sans image échoue au rendu, avec un message clair : ne la
+  « répare » jamais avec un fond uni, sombre ou de couleur, rends-la à `structure`.
 
 - **§6, la règle de choix de disposition.** `auto` mesure et choisit. Le repli sur
   résolution est la règle la plus importante du lot : une image de 900 px en
@@ -123,7 +266,7 @@ illisible sur les fonds clairs.
 ## Où ça s'écrit
 
 `<Sujet>` est un nom nu, et il se résout sous `ETHNIAFRICA_SOCIAL_PROJECTS` —
-l'atelier, hors dépôt, où vivent le `cards.json`, les `assets/` vérifiés et le
+l'atelier, hors dépôt, où vivent le `cards.json`, les fichiers médias vérifiés et le
 `work/`. **Si la variable n'est pas posée, le sujet est cherché dans
 `output/social/` du dépôt**, qui est ignoré par git et disparaît avec la copie de
 travail. C'est un dépannage, pas une adresse : dis-le à l'opérateur plutôt que de
@@ -146,19 +289,6 @@ le moteur recrée en silence un dossier sans `post.md` — mesuré le 2026-09-12
 lancer le moteur. Si `--where` ne connaît pas le post, il n'a pas été inscrit :
 arrête-toi et renvoie à la fin de `structure`.
 
-**La vidéo** reste rendue dans l'atelier (`<Sujet>/video/`, par
-`ethni_montage.py`), puis se livre par le registre, jamais par une copie à la
-main. Pour un montage qui franchit les portes :
-
-```
-node social/tools/library/register-post.mjs --id <id> \
-  --video <fichier>.mp4=<Sujet>/video/<fichier>.mp4 --write
-node <00-Index>/sync-deliverables.mjs --write
-```
-
-`sync-deliverables.mjs` copie ce que `renderedFrom` nomme dans le `video/` du
-post, et le recopie à chaque nouveau rendu. Une épreuve ne s'inscrit pas.
-
 Le bac d'un post se déduit de son `status` dans le registre, jamais de son
 dossier. Ne déplace jamais un dossier à la main pour changer son bac.
 
@@ -178,117 +308,11 @@ cd social/harness
 ./venv/bin/python test_ethni_tokens.py          # la porte anti-littéral
 ./venv/bin/python test_ethni_compose.py         # le contrat de composition
 ./venv/bin/python test_corpus_compose.py        # les mêmes règles sur tout le corpus
-./venv/bin/python test_gabarit_video.py         # le contrat de §9 bis
 ```
 
 **`ethni_carrousel2.py` refuse d'écrire dans un dossier-réseau (nommé d'après
 la colonne « Reçoit » de §1 bis) qui porte déjà des rendus** et bascule le lot en épreuve. Deux jeux de rendus côte à côte sont
 indiscernables dans un sélecteur de fichiers. `--remplacer` lève le refus.
-
-**La vidéo se rend par `ethni_montage.py`**, pas par `ethni_render.py` :
-
-```
-node social/tools/migrate-scenes/migrate-scenes.mjs <Sujet>
-cd social/harness
-./venv/bin/python ethni_montage.py <Sujet>              # le montage
-./venv/bin/python ethni_montage.py <Sujet> --controle   # mouvement réduit
-```
-
-**La passe audio d'abord, et elle doit rendre la main.**
-
-```
-./venv/bin/python ethni_audio.py <Sujet>     # pauses, légendes, repères de scène
-./venv/bin/python ethni_montage.py <Sujet>   # seulement après
-```
-
-Tout ce qui suit est calé sur `work/aligned-words.json`. Lancé pendant que la
-passe écrit, le montage lit l'alignement de la version précédente et rend des
-durées de scène d'une version avec les légendes d'une autre — mesuré une fois :
-19 s de carte de clôture sur 8,6 s de voix, sans que rien ne se plaigne. **Le
-montage refuse désormais de partir** si les lettres de l'alignement ne
-reconstituent pas le script, et il nomme le signe où ça diverge. Ce refus est
-bloquant, pas une remarque : un alignement périmé ne dégrade pas le montage, il
-l'invente.
-
-Les deux variantes d'un même sujet se ressemblent trop pour qu'on les distingue à
-l'œil dans `work/` : seul le dernier bloc change, donc les débuts de scène sont
-presque identiques et c'est la **fin** de la narration qui diffère.
-
-**Une scène est un paragraphe de narration, et sa durée est mesurée.**
-`ethni_audio.py` écrit `work/scene-starts.json`, un point par bloc séparé d'une
-ligne vide ; `ethni_montage.py` le lit. Il ne répartit plus les légendes à parts
-égales — sur Libreville ce partage affichait la carte de clôture à 44,10 s quand
-sa première phrase se dit à 50,88 s. Si le nombre de paragraphes ne correspond
-pas au deck, le montage le **dit** et retombe sur l'ancien calcul, plutôt que de
-décaler toutes les scènes en silence. Relance la passe audio après toute édition
-du deck ou du script.
-
-Le contrôle en mouvement réduit est la version dont on juge une composition.
-
-### La fin d'un montage
-
-**La voix finit où l'image finit.** Le dernier paragraphe de narration dit ce que
-dit la clôture — jamais une adresse seule. Le montage le contrôle contre les mots de
-la carte de clôture elle-même et le remarque sans bloquer. Un reel sans carte de
-clôture (dont la dernière carte n'est pas une `bascule`) n'est contrôlé contre rien.
-
-**La clôture parlée est courte.** Pour un reel, c'est la clôture unique de §7 ter
-(« Le reel a un couple unique »), mot pour mot : le titre puis le corps de la carte,
-que la voix dit tous les deux. Elle n'a ni ligne de vision ni compte chiffré, et
-n'est plus un renversement du type du sujet. Mesuré sur l'ancienne clôture : 58 mots
-dictés donnaient 21,4 s de carte fixe, 23 mots en donnaient 7 ; la clôture unique
-(24 mots) est estimée à 7 s, à mesurer sur le premier reel rendu.
-
-**La carte de fin entre sur la phrase de sortie**, jamais avant, et joue une fois
-avant de tenir sa dernière image. Le montage l'annonce dans son journal avec la
-phrase sur laquelle elle entre : lis cette ligne, c'est elle qui dit si le repère
-est juste. Il n'y a plus de ligne de vision à retrouver dans la narration — ni sur la
-clôture unique, ni sur un reel sans clôture : la carte attend la fin de la dernière
-légende, et ne joue jamais par-dessus la dernière phrase parlée.
-
-### La voix
-
-La paire voix/réglages d'un sujet est dans son `SOURCES.md` et **se copie, ne
-s'invente pas**. Deux choses s'apprennent à la prise :
-
-- **Un bloc court isolé se lit environ 40 % plus lentement qu'un long bloc
-  continu.** Même voix, mêmes réglages : le corps de Libreville sort à 3,96 mots
-  par seconde et une clôture de 23 mots à 2,25. Une clôture regénérée seule
-  demande donc `speech_rate` autour de **35** pour rejoindre le rythme du corps.
-- **`pauses` dans `production.json` fixe les silences minimaux** que la passe audio
-  complète (virgule, phrase, paragraphe, question, accroche — §9 bis). Un sujet choisi à
-  l'écoute sur un rythme resserré les baisse ici, sinon la passe les rallonge.
-- **`tempo` dans `production.json` étire la prise** : plus il est bas, plus le
-  film est lent _et_ plus la voix souffre. **0,85 est le plancher** — en dessous,
-  un humain doit écouter avant publication. Libreville était à 0,79 et y est
-  remontée.
-
-**Refaire une prise ne se fait que sur le bloc qui change.** Le crochet est
-`work/tts-corrected.wav`, que la passe audio préfère à `tts-original.wav` : on y
-raccorde le corps approuvé, coupé au milieu du silence qui précède le bloc refait,
-et la nouvelle queue. Le texte et la voix changent **ensemble**, sinon les
-légendes se calent sur des mots que la voix ne dit pas.
-
-La transcription est mise en cache dans `work/raw-whisper.json` et **porte
-l'empreinte de la prise** qu'elle décrit. Sans clé, elle a déjà rendu les mots de
-l'ancienne prise à la nouvelle.
-
-**Un montage rendu par `ethni_montage.py` est conforme à §9 bis**, et se
-présente comme tel. `ethni_render.py` survit pour les montages de l'ancien
-gabarit, passe par `ethni_compose_v1.py` et lit `scenes.json`, un schéma distinct
-de §10 — une vidéo qu'il produit n'est **pas** conforme, et ne se présente pas
-comme telle. Ne le lance pas pour un deck migré.
-
-Ce qui reste au gabarit vidéo : **les animations**. Le mock ne fixe que les
-positions, et la cadence n'a aucun entrant, donc le montage et son contrôle
-sortent identiques. C'est cohérent et ce n'est pas un défaut à signaler comme
-tel. Détail : `docs/design/gabarits-social/notes/_gabarit-video-2026-09-11.md` et
-`docs/design/gabarits-social/notes/_video-fin-2026-09-11.md`.
-
-**Les sous-titres se coupent sur le souffle, jamais tous les N mots.**
-`ethni_soustitre.segmenter()` travaille sur le texte de narration **avant**
-l'alignement ; l'aligneur n'est interrogé que sur le _quand_. Couper les mots
-alignés produit « Congo portaient le ».
 
 **La porte 2 bloque sur l'absence de contrôle, pas sur le vocabulaire.** Elle
 refuse une carte sans `image.identite`, et une carte dont personne n'a consigné
@@ -306,17 +330,29 @@ en épreuve.
 
 ## Pour finir
 
-Si les cinq portes sont franchies, le post passe en 🟢 par le registre, pas par
-son en-tête :
+For a carousel, when all five gates pass, set its ready status through the
+registry rather than editing the generated header:
 
 ```
-node social/tools/library/register-post.mjs --id <id> --status pret --write
+node social/tools/library/register-post.mjs --id <id> --workshop <Subject> --status pret --write
 node <00-Index>/migrate-library.mjs --write     # Brouillon → Valide, dossier et rendus compris
 node <00-Index>/build-index.mjs
 node <00-Index>/sync-deliverables.mjs --write  # après le déplacement : il compare au bac du statut
+node social/tools/library/register-post.mjs --id <id> --filed --write
 ```
 
-**Stampe le carnet de production** — `docs/productions/<typologie>/<NNN>-
+Before this sequence, complete `production-record.md` using
+`docs/social-workshop-cleanup.md`: actual angle/family, decisions, cuts, sources,
+review evidence, selected take and all associated editions. The final command is
+the required filing completion event and automatically cleans disposable scratch.
+It never moves or deletes library products. A missing record, unfinished associated
+edition or incomplete filing blocks cleanup. Report that blocker and retain the
+workshop. Historical backlog cleanup still requires the operator's separate consent;
+use a dry run when inspecting previously filed productions.
+
+**Série name-origin seulement : stampe le carnet de production** — une pièce d'une
+autre famille, ou sociale seulement, n'y est jamais inscrite et n'y reçoit aucun
+chemin de site fabriqué. `docs/productions/<typologie>/<NNN>-
 <slug>.json` (`docs/plans/production-history-plan.md` §6, `campaign` égal au
 `--id` ci-dessus). Pour chaque réseau que le dossier-réseau tout juste peuplé
 dessert (le nom du dossier le dit, §1 bis), ajoute une ligne à `publications[]` :
@@ -334,5 +370,6 @@ vérifie le bac et le `post.md`, pas le code de sortie. Plusieurs montages sans
 Recalcule l'état : `node social/tools/etat-pipeline/build-etat.mjs`.
 
 Puis dis, en une ligne : ce qui a été rendu, dans quel dossier, et l'état atteint.
-Si le sujet est en 🟢, rappelle qu'il ne manque que l'acte de publier — et que
-c'est l'opérateur qui le fait.
+Si l'édition est en 🟢, rappelle qu'il ne manque que l'acte de publier — et que
+c'est l'opérateur qui le fait, quand et où il le décide : aucun jour ni aucun réseau
+n'est imposé.

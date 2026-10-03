@@ -32,6 +32,15 @@
           "sourceRefs": ["corpus-ppl-dioula-organisation"]
         }
       ]
+    },
+    {
+      "spelling": "Sakiliba",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
     }
   ],
   "transmissionMode": "patrilineal",
@@ -49,6 +58,11 @@
         "claim": "Les nyamakalaw — groupes endogames d'artisans et de musiciens — sont attestés chez les Malinké au plus tard vers 1300 et se retrouvent chez plus de quinze peuples ouest-africains. Le statut se transmet avec le jamu, ce qui fait du nom de clan le support de la position sociale autant que de la descendance.",
         "claimStatus": "established",
         "sourceRefs": ["tamari-1991-caste"]
+      },
+      {
+        "claim": "Le dictionnaire des jamuw a une entrée Sakiliba, qu'il glose comme le jamu féminin qui correspond à Dunbuya (Doumbia). La même forme y figure aussi, à l'entrée Sisoko, comme jamu féminin des familles libres (hɔ́rɔn), là où Danba est le jamu féminin des familles de griots (jèli) : c'est un nom porté par les femmes, distinct du nom des hommes de la lignée.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
       }
     ]
   },

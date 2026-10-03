@@ -20,6 +20,9 @@ import {
   illustrationFor as defaultIllustrationFor,
   type DidYouKnowIllustration,
 } from "@/lib/home/didYouKnowIllustrations";
+import { loadProductionLedger } from "@/lib/productions/ledger";
+import { searchShortsFrom } from "@/lib/productions/toSearchShort";
+import { normalizeString } from "@/lib/normalize";
 import { PROVERBS, type Proverb } from "@/lib/proverbs/proverbs";
 import type { Language } from "@/types/shared";
 import type { QuizTemplateId } from "@/types/quiz";
@@ -30,6 +33,7 @@ import {
   type CompanionMatch,
   type CompanionSubject,
   type ResolvedCompanionItem,
+  type WordMatch,
 } from "./companionRelations";
 
 export interface CompanionSelection<Item extends CompanionCatalogItem> {
@@ -65,7 +69,10 @@ export interface CompanionQuizCandidate extends CompanionCatalogItem {
 }
 
 // @req REQ-180
-export const SEARCH_SHORTS: readonly SearchShort[] = DISCOVERY_VIDEOS;
+export const SEARCH_SHORTS: readonly SearchShort[] = searchShortsFrom(
+  loadProductionLedger(),
+  DISCOVERY_VIDEOS
+);
 
 function hasText(value: string | undefined): boolean {
   return Boolean(value?.trim());
@@ -141,10 +148,15 @@ export function proverbsForTargets(
 ): CompanionSelection<CompanionProverb> {
   const items = (options.proverbs ?? PROVERBS).flatMap<CompanionProverb>(
     (proverb) => {
-      const hasAuthority = proverb.sources.some(
-        (source) => source.tier !== "unverified" && hasText(source.title)
+      // A readable citation, whatever its standing: the suggestion carries its
+      // own label, and standing alone no longer keeps an attested proverb out
+      // (DEC-055). An unreadable citation is still a missing one.
+      const hasReadableCitation = proverb.sources.some((source) =>
+        hasText(source.title)
       );
-      if (proverb.origin.status !== "attested" || !hasAuthority) return [];
+      if (proverb.origin.status !== "attested" || !hasReadableCitation) {
+        return [];
+      }
 
       const subjects = proverb.entities.map(subjectForEntity);
       if (proverb.original?.lang) {
@@ -215,6 +227,45 @@ export function shortsForTargets(
     count: matched.length,
     items: matched.slice(0, options.limit ?? 6),
   };
+}
+
+export interface WordShortSelection {
+  count: number;
+  items: Array<{ item: CompanionShort; match: WordMatch }>;
+}
+
+/**
+ * The reader's word in the form the ledger files its queries in: lowercase,
+ * accent-free, one space between words. « Mami-Wata » and « mami  wata »
+ * are the same word.
+ */
+function foldWordQuery(query: string): string {
+  return normalizeString(query)
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+/**
+ * Productions about a word that is not a corpus entity. The match is the whole
+ * word, never a prefix: « zomb » is not a query the ledger filed, and a page
+ * that answered it would be guessing.
+ */
+// @req REQ-180
+export function shortsForWord(
+  query: string,
+  shorts: readonly SearchShort[] = SEARCH_SHORTS,
+  options: { limit?: number } = {}
+): WordShortSelection {
+  const word = foldWordQuery(query);
+  if (!word) return { count: 0, items: [] };
+
+  const matched = eligibleSearchShorts(shorts)
+    .filter((short) => short.word?.queries.includes(word))
+    .map((short) => ({
+      item: companionShort(short),
+      match: { relation: "word", word } satisfies WordMatch,
+    }));
+  return { count: matched.length, items: matched.slice(0, options.limit ?? 6) };
 }
 
 // @req REQ-180

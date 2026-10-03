@@ -1,0 +1,39 @@
+{
+  "campaign": "pygmee-d-ou-vient-le-nom",
+  "typologie": "mot",
+  "episode": 15,
+  "question": {
+    "fr": "D'où vient le nom « pygmée » ?"
+  },
+  "myth": {
+    "fr": "« Pygmée » serait-il le nom d'un peuple d'Afrique ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7690652445919218966",
+      "publishedAt": "2026-09-28"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/p/Dd1z1vRKDaq/",
+      "publishedAt": "2026-09-28"
+    },
+    {
+      "network": "facebook",
+      "format": "video",
+      "url": "https://www.facebook.com/reel/2303466483736794",
+      "publishedAt": "2026-09-28"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/dIgFvRJnxug",
+      "publishedAt": "2026-09-28"
+    }
+  ]
+}

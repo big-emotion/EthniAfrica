@@ -1,0 +1,21 @@
+{
+  "campaign": "noms-de-metier-dioula-teke",
+  "typologie": "mot",
+  "episode": 11,
+  "question": {
+    "fr": "D'où viennent des noms comme Dioula ou Teke ?"
+  },
+  "myth": {
+    "fr": "Un nom de peuple dit-il toujours qui il est, plutôt que ce qu'il faisait ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7684283952235908374",
+      "publishedAt": "2026-09-11"
+    }
+  ]
+}

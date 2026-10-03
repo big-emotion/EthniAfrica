@@ -3,20 +3,45 @@
   "typologie": "pays",
   "episode": 2,
   "question": {
-    "fr": "D'où vient le nom Mali ?",
-    "en": "Where does the name Mali come from?"
+    "fr": "D'où vient le nom Mali ?"
   },
   "myth": {
-    "fr": "Un empire ne s'est-il jamais appelé Mali ?",
-    "en": "Was no empire ever called Mali?"
+    "fr": "Le nom « Mali » n'a-t-il jamais désigné l'empire médiéval, seulement l'empire mandingue (Manden) ?"
   },
   "subjects": [
     {
       "kind": "country",
       "id": "MLI",
-      "label": { "fr": "Mali", "en": "Mali" }
+      "label": { "fr": "Mali" }
     }
   ],
   "sitePath": "/fr/atlas/pays/MLI",
-  "publications": []
+  "publications": [
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=A99ETtxdxiU&feature=youtu.be",
+      "publishedAt": "2026-09-25"
+    },
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7689476088501767446",
+      "publishedAt": "2026-09-25"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/p/Ddtpv6yKDaf/",
+      "publishedAt": "2026-09-25"
+    },
+    {
+      "network": "facebook",
+      "format": "video",
+      "url": "https://www.facebook.com/reel/4460192550908000",
+      "publishedAt": "2026-09-25"
+    },
+    { "network": "linkedin", "format": "video" },
+    { "network": "x", "format": "video" }
+  ]
 }

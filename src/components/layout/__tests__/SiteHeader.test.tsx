@@ -552,26 +552,15 @@ describe("SiteHeader — reachable and mature are two questions (atlas charter �
   };
 
   /**
-   * A withdrawn dossier is *listed and inert*, not hidden.
-   *
-   * The panel used to drop draft modules and show a theme directory in their
-   * place, which told the reader nothing about what the axis holds — a
-   * withdrawn dossier and one that never existed looked the same, which is to
-   * say invisible. Listing it under the Bientôt chip is the promise the chip
-   * makes: there is a reading here, and it is not ready.
+   * The Articles axis lists four destinations and promises nothing else: the
+   * listing, then the three retained collections, every one of them a link.
+   * The old dossier surfaces are withdrawn from the menu, so no row reads
+   * Bientôt here.
    */
   // @req REQ-106
-  it("lists every module declared in preparation, inert, under Bientôt", () => {
+  it("lists the four Articles destinations as links, none of them inert", () => {
     renderHeader();
 
-    const drafts = getNavModules("dossiers").filter(
-      (navModule) => navModule.editorialReadiness === "draft"
-    );
-    expect(drafts.length).toBeGreaterThan(0);
-
-    // Read off the tray, not the panel. The panel lists one reading per
-    // rubric and prefers one the reader can open, so the surface that owes
-    // the axis in full is the fold below the burger.
     fireEvent.click(screen.getByTestId(BURGER));
     const tray = screen.getByRole("dialog");
     fireEvent.click(
@@ -580,13 +569,20 @@ describe("SiteHeader — reachable and mature are two questions (atlas charter �
       })
     );
 
-    for (const navModule of drafts) {
-      expectInert(within(tray).getByTestId(`site-nav-module-${navModule.id}`));
+    const entries = within(tray).getAllByTestId(/^site-nav-module-/);
+    expect(entries.map((entry) => entry.getAttribute("data-testid"))).toEqual([
+      "site-nav-module-articles",
+      "site-nav-module-anecdotes",
+      "site-nav-module-proverbes",
+      "site-nav-module-galerie",
+    ]);
+    for (const entry of entries) {
+      expect(entry.tagName).toBe("A");
+      expect(entry).not.toHaveTextContent(t.hubs.unavailableLabel);
     }
-    // The one reading still offered keeps its link, in the same fold.
-    const anecdotes = within(tray).getByTestId("site-nav-module-anecdotes");
-    expect(anecdotes.tagName).toBe("A");
-    expect(anecdotes).not.toHaveTextContent(t.hubs.unavailableLabel);
+    expect(
+      within(tray).getByTestId("site-nav-module-articles")
+    ).toHaveAttribute("href", getLocalizedRoute("fr", "dossiersHub"));
   });
 
   // The gallery is filed beside the anecdotes and the proverbs, and opens like
@@ -617,310 +613,36 @@ describe("SiteHeader — reachable and mature are two questions (atlas charter �
     fireEvent.click(trigger(ACCESS_MODE_LABELS.dossiers));
 
     expect(
-      within(panel()).getByRole("link", { name: "Les dossiers" })
+      within(panel()).getByRole("link", { name: "Articles" })
     ).toHaveAttribute("href", getLocalizedRoute("fr", "dossiersHub"));
   });
 
-  /**
-   * The dossiers panel is filed under domain rubrics; the other two axes are
-   * not (REQ-120).
-   *
-   * Eleven dossiers were drawn as one flat row, ten of them **Bientôt** and
-   * four of them about the Congo, so the axis read as a site about one
-   * country. The rubrics are the fiche's own domain vocabulary, and they are
-   * headings rather than links: the editorial behind a rubric page does not
-   * exist, and a heading promises nothing a click has to honour.
-   */
-  // @req REQ-120
-  it("files the dossiers panel under domain rubrics, in registry order", () => {
-    renderHeader();
-    fireEvent.click(trigger(ACCESS_MODE_LABELS.dossiers));
-
-    const rubrics = within(panel()).getAllByRole("heading", { level: 3 });
-
-    expect(rubrics.map((heading) => heading.textContent)).toEqual([
-      "Noms",
-      "Organisation",
-      "Religions",
-      "Territoires",
-      "Populations",
-      "Économie",
-    ]);
-  });
-
-  // A rubric heading is not a destination. Creating six routes the editorial
-  // has not written is the failure this avoids — the previous theme directory
-  // did exactly that, and the pages behind it are empty under the freeze.
-  // @req REQ-120
-  it("gives a rubric no link of its own", () => {
-    renderHeader();
-    fireEvent.click(trigger(ACCESS_MODE_LABELS.dossiers));
-
-    for (const heading of within(panel()).getAllByRole("heading", {
-      level: 3,
-    })) {
-      expect(within(heading).queryByRole("link")).toBeNull();
-    }
-  });
-
-  // Each dossier sits under its own rubric rather than merely somewhere in
-  // the menu: a card filed under the wrong domain still renders, and only
-  // the containment says which heading it answers to. Read off the tray,
-  // which is where every reading of the axis is listed.
-  // @req REQ-120
-  it("puts the four Congo dossiers under Organisation and Religions", () => {
-    renderHeader();
-    fireEvent.click(screen.getByTestId(BURGER));
-    const tray = screen.getByRole("dialog");
-    fireEvent.click(
-      within(tray).getByRole("button", {
-        name: new RegExp(ACCESS_MODE_LABELS.dossiers),
-      })
-    );
-
-    const rubricNamed = (name: string) =>
-      within(tray).getByRole("heading", { level: 4, name }).parentElement!;
-
-    for (const id of ["DOS_KONGO", "DOS_LUBA", "DOS_LUNDA"]) {
-      expect(rubricNamed("Organisation")).toContainElement(
-        within(tray).getByTestId(`site-nav-module-${id}`)
-      );
-    }
-    expect(rubricNamed("Religions")).toContainElement(
-      within(tray).getByTestId("site-nav-module-DOS_SPIRITUALITES_KONGO")
-    );
-  });
-
-  const renderWithDossiers = (
-    dossiers: ReturnType<typeof getDossierMenuEntries>
-  ) =>
-    render(
-      <ThemeProvider attribute="class">
-        <LocalePublicationProvider value="bilingual-en-default">
-          <ModuleAvailabilityProvider value={null}>
-            <DossierMenuProvider value={dossiers}>
-              <SiteHeader language="fr" />
-            </DossierMenuProvider>
-          </ModuleAvailabilityProvider>
-        </LocalePublicationProvider>
-      </ThemeProvider>
-    );
-
-  const panelRubric = (name: string) =>
-    within(panel()).getByRole("heading", { level: 3, name }).parentElement!;
-
-  /**
-   * The panel is a row of rubrics, and a rubric is one reading tall (REQ-120).
-   *
-   * It listed up to four, and the rubrics were laid out as flowed columns so
-   * that a rubric of four pushed the two after it down the page: the panel
-   * stood five card-heights tall and the reader had to scroll a menu. Height
-   * is the constraint the bar owes — a heading and one reading under it, six
-   * rubrics abreast.
-   */
-  // @req REQ-120
-  it("shows one reading per rubric in the panel", () => {
-    renderHeader();
-    fireEvent.click(trigger(ACCESS_MODE_LABELS.dossiers));
-
-    for (const heading of within(panel()).getAllByRole("heading", {
-      level: 3,
-    })) {
-      expect(
-        within(heading.parentElement!).getAllByTestId(/^site-nav-module-/)
-      ).toHaveLength(1);
-    }
-  });
-
-  /**
-   * And that one is a reading the click opens.
-   *
-   * Noms holds two: « Qui a donné ce nom ? », in preparation, and the
-   * anecdotes, published. Showing the first would spend the rubric's only
-   * card on a **Bientôt** chip while a reading sat behind it, unlisted.
-   */
-  // @req REQ-120
-  it("shows the open reading of a rubric rather than the first", () => {
-    renderHeader();
-    fireEvent.click(trigger(ACCESS_MODE_LABELS.dossiers));
-
-    const noms = panelRubric("Noms");
-    expect(within(noms).getByTestId("site-nav-module-anecdotes")).toBeTruthy();
-    expect(within(noms).queryByTestId("site-nav-module-nommer")).toBeNull();
-  });
-
-  /**
-   * A rubric whose readings are all in preparation still shows one.
-   *
-   * The alternative is a heading over nothing: five of the six rubrics have
-   * no open reading today, and dropping their card would leave the row a set
-   * of bare words. The chip is what the reader is owed there — there is a
-   * reading here, and it is not ready.
-   */
-  // @req REQ-106 @req REQ-120
-  it("shows a reading in preparation when a rubric has no open one", () => {
-    renderHeader();
-    fireEvent.click(trigger(ACCESS_MODE_LABELS.dossiers));
-
-    const economie = panelRubric("Économie");
-    const [entry] = within(economie).getAllByTestId(/^site-nav-module-/);
-    expectInert(entry);
-  });
-
-  /**
-   * Past one open reading the rubric stops listing and offers a way out.
-   *
-   * The count is of open readings, not of everything filed: a rubric holding
-   * one published dossier and four in preparation has nothing more to open,
-   * and a « Voir plus » there would send the reader to the hub for a list
-   * they have already seen.
-   */
-  // @req REQ-120
-  it("offers a way to the hub when a rubric holds more than one open reading", () => {
-    renderWithDossiers(
-      Array.from({ length: 3 }, (_, index) => ({
-        id: `DOS_TEST_${index}`,
-        href: `${getLocalizedRoute("fr", "dossiersHub")}/test-${index}`,
-        title: `Dossier ${index}`,
-        rubric: "religions" as const,
-        offered: true,
-        // Already newest-first, the order `getDossierMenuEntries` guarantees.
-        publishedOn: `2026-01-0${3 - index}`,
-      }))
-    );
-    fireEvent.click(trigger(ACCESS_MODE_LABELS.dossiers));
-
-    const religions = panelRubric("Religions");
-    // The most recent of the rubric, so which one survives the cut is a
-    // property of the corpus and not of a directory's read order.
-    expect(
-      within(religions).getByTestId("site-nav-module-DOS_TEST_0")
-    ).toBeTruthy();
-
-    const more = within(religions).getByTestId(
-      "site-nav-rubric-more-dossiers-religions"
-    );
-    expect(more).toHaveTextContent(t.hubs.seeMoreInRubric);
-    expect(more).toHaveAttribute(
-      "href",
-      getLocalizedRoute("fr", "dossiersHub")
-    );
-  });
-
-  // One open reading is the whole of what the rubric can open, so there is
-  // nothing to see more of. Built on a corpus of one: Noms, which used to be
-  // the example, holds two open banks since the proverbs joined the anecdotes.
-  // @req REQ-120
-  it("offers no way out of a rubric with a single open reading", () => {
-    renderWithDossiers([
-      {
-        id: "DOS_TEST_ONLY",
-        href: `${getLocalizedRoute("fr", "dossiersHub")}/test-only`,
-        title: "Dossier seul",
-        rubric: "religions" as const,
-        offered: true,
-        publishedOn: "2026-01-01",
-      },
-    ]);
-    fireEvent.click(trigger(ACCESS_MODE_LABELS.dossiers));
-
-    expect(
-      within(panelRubric("Religions")).queryByTestId(
-        "site-nav-rubric-more-dossiers-religions"
-      )
-    ).toBeNull();
-  });
-
-  // @req REQ-120
-  it("points Noms at the hub now that it holds two open banks", () => {
+  // The panel is flat like its neighbours: four cards, no rubric headings.
+  // @req REQ-114
+  it("draws the Articles panel flat, with the four destinations and no rubric headings", () => {
     renderHeader();
     fireEvent.click(trigger(ACCESS_MODE_LABELS.dossiers));
 
     expect(
-      within(panelRubric("Noms")).getByTestId(
-        "site-nav-rubric-more-dossiers-noms"
-      )
-    ).toHaveAttribute("href", getLocalizedRoute("fr", "dossiersHub"));
+      within(panel()).queryAllByRole("heading", { level: 3 })
+    ).toHaveLength(0);
+    expect(within(panel()).getAllByTestId(/^site-nav-module-/)).toHaveLength(4);
+    expect(panel()).not.toHaveTextContent(t.hubs.unavailableLabel);
   });
 
-  /**
-   * The tray is the surface that lists the axis, and it keeps the cap it had
-   * (REQ-120).
-   *
-   * A menu is not an index — the corpus is expected to reach the hundreds, and
-   * a tray that printed every record would put that list into the markup of
-   * every page on the site. Past the cap the rubric stops listing and starts
-   * counting. Exercised on a corpus this test builds, because the real one has
-   * no rubric over the cap yet.
-   */
-  // @req REQ-120
-  it("stops listing a rubric past the cap in the tray and counts the rest", () => {
-    renderWithDossiers(
-      Array.from({ length: 9 }, (_, index) => ({
-        id: `DOS_TEST_${index}`,
-        href: `${getLocalizedRoute("fr", "dossiersHub")}/test-${index}`,
-        title: `Dossier ${index}`,
-        rubric: "religions" as const,
-        offered: true,
-        publishedOn: `2026-01-0${9 - index}`,
-      }))
-    );
-    fireEvent.click(screen.getByTestId(BURGER));
-    const tray = screen.getByRole("dialog");
-    fireEvent.click(
-      within(tray).getByRole("button", {
-        name: new RegExp(ACCESS_MODE_LABELS.dossiers),
-      })
-    );
-
-    const religions = within(tray).getByRole("heading", {
-      level: 4,
-      name: "Religions",
-    }).parentElement!;
-
-    expect(within(religions).getAllByTestId(/^site-nav-module-/)).toHaveLength(
-      4
-    );
-    // The newest four, and a count of what is withheld rather than of the
-    // whole rubric: five unseen readings, not "9 dossiers" beside four cards.
-    for (const index of [0, 1, 2, 3]) {
-      expect(
-        within(religions).getByTestId(`site-nav-module-DOS_TEST_${index}`)
-      ).toBeTruthy();
-    }
-    const more = within(religions).getByTestId(
-      "site-nav-rubric-more-dossiers-religions"
-    );
-    expect(more).toHaveTextContent("+ 5 autres");
-    expect(more).toHaveAttribute(
-      "href",
-      getLocalizedRoute("fr", "dossiersHub")
-    );
-  });
-
-  /**
-   * The tray badge counts what the fold opens onto.
-   *
-   * It read `getNavModules(axis).length` and said 4 over eleven entries the
-   * moment the dossiers left the registry — a number that contradicted the
-   * list directly under it, and one no unit test was looking at because the
-   * count and the list came from the same call until they did not.
-   */
-  // @req REQ-114 @req REQ-120
-  it("counts the corpus in the tray badge, not just the registry", () => {
+  // The tray badge counts the four destinations the fold opens onto.
+  // @req REQ-114
+  it("counts the four destinations in the tray badge", () => {
     renderHeader();
     fireEvent.click(screen.getByTestId(BURGER));
     const tray = screen.getByRole("dialog");
-
     const fold = within(tray).getByRole("button", {
       name: new RegExp(ACCESS_MODE_LABELS.dossiers),
     });
     fireEvent.click(fold);
 
-    const listed = within(tray).getAllByTestId(/^site-nav-module-/);
-
-    expect(fold).toHaveTextContent(String(listed.length));
-    expect(listed.length).toBeGreaterThan(getNavModules("dossiers").length);
+    expect(fold).toHaveTextContent("4");
+    expect(within(tray).getAllByTestId(/^site-nav-module-/)).toHaveLength(4);
   });
 
   // Jouer and the atlas are untouched: both declare no rubric filing, so the
@@ -999,7 +721,7 @@ describe("SiteHeader — the controls that stay in the bar", () => {
       "Open menu"
     );
     expect(screen.getByText("Africa through its names")).toBeVisible();
-    for (const label of ["Browse", "The dossiers", "Play"]) {
+    for (const label of ["Browse", "Articles", "Play"]) {
       expect(screen.getByRole("button", { name: label })).toBeVisible();
     }
   });
@@ -1229,7 +951,9 @@ describe("SiteHeader — the mobile tray (atlas charter §3)", () => {
         ...getNavModules(axis).map(
           (navModule) => `site-nav-module-${navModule.id}`
         ),
-        ...(axis === "dossiers"
+        // The corpus dossiers ride only on an axis filed under rubrics; the
+        // Articles axis is flat since the old dossier surfaces were withdrawn.
+        ...(RUBRIC_FILED_AXES.includes(axis)
           ? dossierMenu.map((entry) => `site-nav-module-${entry.id}`)
           : []),
       ]);

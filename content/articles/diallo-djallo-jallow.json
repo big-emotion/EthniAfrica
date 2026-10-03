@@ -1,0 +1,151 @@
+{
+  "id": "diallo-djallo-jallow",
+  "status": "published",
+  "author": {
+    "name": "EthniAfrica"
+  },
+  "angle": "Le vrai nom",
+  "fr": {
+    "slug": "diallo-djallo-jallow",
+    "title": "D'où vient le nom Diallo ?",
+    "excerpt": "Diallo là où l'administration écrivait en français, Djaló en Guinée-Bissau, Jallow en Gambie, Jalloh en Sierra Leone : un même nom, écrit selon la langue de l'administration. Son sens reste inconnu, mais un texte de 1734 montre qu'il se transmettait déjà.",
+    "sections": [
+      {
+        "heading": "Un nom, plusieurs orthographes",
+        "paragraphs": [
+          "Diallo, Djaló, Jallow, Jalloh : ces quatre formes s'écrivent différemment, mais les sources consultées les traitent comme un même nom de famille.",
+          "En Guinée-Bissau, un travail universitaire de 2019 relève que Diallo, Djaló et Jaló sont des graphies employées par un même groupe fula. Jallow, en Gambie, et Jalloh, en Sierra Leone, sont présentés par un dictionnaire des noms de famille comme des formes du même nom."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      },
+      {
+        "heading": "Ce qui change d'un pays à l'autre",
+        "paragraphs": [
+          "La répartition suit une ligne simple : Diallo là où l'administration écrivait en français, Djaló là où elle écrivait en portugais, Jallow et Jalloh là où elle écrivait en anglais. Le nom ne change pas ; ce qui change, c'est la langue de l'administration qui l'a transcrit.",
+          "C'est un constat, pas une explication. Aucune des sources que nous avons consultées ne dit pourquoi chaque langue a choisi telle graphie plutôt qu'une autre."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      },
+      {
+        "heading": "1734 : un homme sépare sa lignée de son nom de famille",
+        "paragraphs": [
+          "Ayuba Suleiman Diallo est capturé et vendu comme esclave. Selon le titre même du livre qui raconte sa vie, il passe environ deux ans dans le Maryland avant d'être conduit en Angleterre. À Londres, un Anglais qui l'a connu, Thomas Bluett, publie en 1734 un récit de sa vie.",
+          "Ce texte distingue deux choses. D'un côté, sa filiation : Ayuba, fils de Suleiman, fils d'Ibrahim. De l'autre, le nom de sa famille : « The Surname of his Family is Jallo ». La graphie « Jallo » est celle de Bluett, qui écrit en anglais sur un homme dont il a contribué à obtenir la libération ; ce n'est pas un document neutre.",
+          "C'est la plus ancienne mention écrite du nom que nous ayons trouvée. Elle ne date pas la naissance du nom : le texte de 1734 décrit déjà un nom de famille transmis, donc plus ancien."
+        ],
+        "sourceRefs": ["s3"]
+      },
+      {
+        "heading": "Et le sens du nom ?",
+        "paragraphs": [
+          "L'origine et le sens du nom Diallo ne sont pas établis. Nous n'avons trouvé aucune source linguistique qui les explique, et nous préférons le dire plutôt que de reprendre une explication qui ne repose sur rien de vérifiable.",
+          "Si vous portez ce nom et qu'une explication vous a été transmise, dites-nous d'où elle vient : qui la raconte, où, et dans quelle langue."
+        ],
+        "sourceRefs": ["s1", "s2"]
+      },
+      {
+        "heading": "En résumé",
+        "paragraphs": [
+          "Diallo, Djaló, Jallow et Jalloh sont les formes d'un même nom, écrit selon la langue de l'administration de chaque pays. Il se transmettait déjà en 1734, avant les frontières actuelles. Son sens reste à établir."
+        ],
+        "sourceRefs": ["s1", "s2", "s3"]
+      }
+    ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
+    }
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Ibu Sadjo, Fulas e Mandingas na luta pelo poder e conquista do Império de Kaabu, mémoire, UNILAB, 2019, p. 19-20",
+      "tier": "needs_review",
+      "notes": "Travail universitaire : Diallo, Djaló et Jaló comme graphies d'un même groupe fula en Guinée-Bissau."
+    },
+    {
+      "id": "s2",
+      "title": "Dictionary of American Family Names, 2e édition, entrée Jallow / Jalloh",
+      "tier": "needs_review",
+      "notes": "Dictionnaire des noms de famille : Jallow et Jalloh comme formes du même nom."
+    },
+    {
+      "id": "s3",
+      "title": "Thomas Bluett, Some Memoirs of the Life of Job, the Son of Solomon, the High Priest of Boonda in Africa; Who was a Slave About Two Years in Maryland; and Afterwards Being Brought to England, was Set Free, and Sent to His Native Land in the Year 1734, Londres, 1734",
+      "tier": "needs_review",
+      "notes": "Récit publié du vivant d'Ayuba Suleiman Diallo, en anglais, par un homme qui a participé à sa libération : sa filiation et le nom de sa famille, écrit « Jallo »."
+    }
+  ],
+  "media": {
+    "edition": {
+      "id": "diallo-djallo"
+    },
+    "formats": [
+      {
+        "kind": "carousel",
+        "slides": [
+          {
+            "src": "diallo-djallo-jallow/diallo-djallo/slide-01-30fc35021ab0.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une concession familiale de cases rondes à toit de chaume, serrées autour d'une cour de terre battue, au pied d'un relief boisé",
+            "text": "Les frontières traversent les Diallo.\n\nNommer un peuple aussi facilement qu'un pays."
+          },
+          {
+            "src": "diallo-djallo-jallow/diallo-djallo/slide-02-44936e04bbff.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une femme debout devant une toile bleue, les deux mains levées paumes ouvertes devant son visage, en boubou brun sur un tissu teint à l'indigo, bracelets et bagues d'or, colliers de perles et pendentif ciselé",
+            "text": "Eux, ils se disent Fulbe.\n\nFulbe — le nom qu'ils se donnent\nPeul — le nom qu'on leur donne\n\nPullo au singulier. Peul vient du wolof Pel, repris par les colonisateurs français ; Fula est l'anglicisation d'un mot mandingue. Aucun de ces noms n'est le leur.\n\nFiche du peuple sur EthniAfrica — appellations"
+          },
+          {
+            "src": "diallo-djallo-jallow/diallo-djallo/slide-03-22d0e86a60b0.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un hameau de cases coniques à toit de chaume entouré de palissades de branchages, quelques silhouettes debout entre les enclos, sur un plateau dégagé",
+            "text": "Un seul nom, quatre orthographes.\n\nDiallo — là où l'administration écrivait en français\nDjaló — en Guinée-Bissau, où elle écrivait en portugais\n\nJallow en Gambie, Jalloh en Sierra Leone. Le nom ne change pas : ce qui change d'un territoire à l'autre, c'est la langue de l'administration qui l'a transcrit.\n\nIbu Sadjo, UNILAB, 2019 · Dictionary of American Family Names, 2e édition"
+          },
+          {
+            "src": "diallo-djallo-jallow/diallo-djallo/slide-04-8d9a91a39ad6.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "une jeune femme debout de dos, un enfant porté dans un pagne noué à hauteur des reins, devant un mur de terre et un auvent de chaume",
+            "text": "8\n\npays où l'atlas documente ce nom, toujours chez les Fulbe.\n\nSénégal, Guinée, Guinée-Bissau, Gambie, Sierra Leone, Côte d'Ivoire, Cameroun, Gabon. Aucune de ces frontières n'existait quand le nom se transmettait déjà.\n\nFiches du nom sur EthniAfrica · Dictionary of American Family Names, 2e édition"
+          },
+          {
+            "src": "diallo-djallo-jallow/diallo-djallo/slide-05-c1441671ca87.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "le portrait peint d'un homme de trois quarts, en tunique et coiffe blanches, un petit livre suspendu à un cordon sur la poitrine",
+            "text": "En 1734, il dicte son propre nom.\n\nCapturé et vendu comme esclave, Ayuba Suleiman Diallo dicte son récit à Londres. Il y sépare sa filiation — fils de Suleiman, fils d'Ibrahim — du nom de sa famille : « The Surname of his Family is Jallo ».\n\nThomas Bluett, Some Memoirs of the Life of Job, Londres, 1734"
+          },
+          {
+            "src": "diallo-djallo-jallow/diallo-djallo/slide-06-1deb4cff30e6.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "des bergers menant un troupeau de bovins à longues cornes dans une plaine sèche et rase, sous un ciel bas",
+            "text": "Ce que le mot veut dire reste ouvert.\n\nAucune racine pulaar établie ne porte ce nom, et les rapprochements qui circulent ne s'appuient sur aucune source linguistique primaire. L'atlas le dit plutôt que de l'inventer.\n\nFiche du nom sur EthniAfrica — lacunes déclarées"
+          },
+          {
+            "src": "diallo-djallo-jallow/diallo-djallo/slide-07-7813aa046b5b.webp",
+            "width": 1080,
+            "height": 1350,
+            "alt": "un village de maisons de terre à toit de chaume étagées sur un versant, des arbres entre les toits et une falaise en arrière-plan",
+            "text": "Ce peuple n'a pas été divisé.\n\nC'est la carte qui a été dessinée par-dessus.\n\nNommer un peuple aussi facilement qu'un pays."
+          }
+        ],
+        "credits": "La concession des Diallo à Ibel, sud-est du Sénégal · John Atherton, 1982 · Wikimedia Commons · CC BY-SA 2.0 ; Femme peule en tenue de cérémonie, Sénégal · Seydou221, 2025 · Wikimedia Commons · CC BY-SA 4.0 ; Village foulah du Fouta-Djallon, Guinée · photographe inconnu, v. 1900-1910 · Wikimedia Commons, collection particulière · domaine public ; Jeune femme fula (peule) et son enfant, Kamabai, Sierra Leone · John Atherton, 1968 · Wikimedia Commons · CC BY-SA 2.0 ; Portrait d'Ayuba Suleiman Diallo · William Hoare of Bath, XVIIIe siècle · National Portrait Gallery, Londres, via Wikimedia Commons · domaine public ; Bergers fula et leur troupeau, Sénégal · John Atherton, novembre 1967 · Wikimedia Commons · CC BY-SA 2.0 ; Maisons du village d'Ibel, sud-est du Sénégal · John Atherton, 1981 · Wikimedia Commons · CC BY-SA 2.0"
+      }
+    ],
+    "originals": [
+      {
+        "network": "tiktok",
+        "url": "https://www.tiktok.com/@ethniafrica/photo/7686049879138864406",
+        "publishedAt": "2026-09-16"
+      }
+    ]
+  },
+  "relatedArticleIds": ["fulbe-personne-appele-comme-ca"],
+  "publishedAt": "2026-09-30"
+}

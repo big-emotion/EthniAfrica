@@ -84,9 +84,11 @@ export function buildSearchFeedPlan(
   availability: SearchFeedAvailability,
   options: SearchFeedPlanOptions = {}
 ): SearchFeedPlan {
-  const first: FeedBlockId[] = ["lenses", "verdict"];
+  // The answer and the forms come before the filters: a filter refines the
+  // exploration stream below, never the answer to the searched name.
+  const first: FeedBlockId[] = ["verdict"];
   if (availability.appellations) first.push("appellations");
-  first.push("shorts");
+  first.push("lenses", "shorts");
 
   const movement = FEED_BLOCKS.filter(
     (id) =>
@@ -128,6 +130,8 @@ type SearchFeedClassificationInput = {
   companions: SearchCompanionsData;
   /** Exact name subjects, when the caller has already resolved them. */
   subjects?: readonly SearchResult[];
+  /** Reviewed terms a near spelling may have meant; they count as suggestions. */
+  termSuggestions?: readonly string[];
 };
 
 function companionRelations(data: SearchCompanionsData): string[] {
@@ -145,12 +149,17 @@ export function classifySearchFeed({
   search,
   companions,
   subjects,
+  termSuggestions = [],
 }: SearchFeedClassificationInput): SearchFeedAnswerState {
   if (subjects && subjects.length === 0 && search.results.length > 0) {
     return "widened";
   }
   if (search.results.length === 0) {
-    return search.leads.length > 0 ? "typo" : "unknown";
+    const foundByWord = companions.shorts.items.some(
+      ({ match }) => match.relation === "word"
+    );
+    const hasSuggestion = search.leads.length + termSuggestions.length > 0;
+    return hasSuggestion && !foundByWord ? "typo" : "unknown";
   }
 
   const relations = companionRelations(companions);

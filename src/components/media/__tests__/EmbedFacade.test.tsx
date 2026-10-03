@@ -118,6 +118,24 @@ describe("EmbedFacade", () => {
     ).toBeInTheDocument();
   });
 
+  // In the reader the link chip is drawn over the top of the frame, where the
+  // platform's own player already shows its title and its way to the platform.
+  // @req REQ-181
+  it("steps the link out aside while the player is mounted and gives it back on close", async () => {
+    const user = userEvent.setup();
+    renderFacade({ fill: true });
+    const linkOut = screen.getByRole("link", { name: /regarder sur youtube/i });
+    expect(linkOut).not.toHaveAttribute("inert");
+
+    await user.click(playButton());
+    expect(linkOut).toHaveAttribute("inert");
+
+    await user.click(
+      screen.getByRole("button", { name: /fermer le lecteur/i })
+    );
+    expect(linkOut).not.toHaveAttribute("inert");
+  });
+
   // @req REQ-181
   it("mounts the privacy-enhanced player on the click and moves focus into it", async () => {
     const user = userEvent.setup();

@@ -10,17 +10,55 @@ import { resolveChapter } from "@/lib/fieldProvenance";
 import { getTranslation } from "@/lib/translations";
 import type { Language } from "@/types/shared";
 
+type PatronymeCopy = ReturnType<typeof getTranslation>["patronymes"];
+
+/**
+ * What the record says about who carried an oral account and how it was
+ * collected, and nothing it does not say. A carrier the record does not state
+ * is said to be unstated rather than left out, so the silence is visible; a
+ * griot is named only where the record names one.
+ */
+function OralProvenance({
+  account,
+  t,
+}: {
+  account: OriginAccount;
+  t: PatronymeCopy;
+}) {
+  const carrier = account.carrier ?? account.griot;
+  let collected: string | null = null;
+  if (account.collection === "direct") {
+    collected = t.oralCollectedDirectly;
+  } else if (account.collection === "mediated") {
+    collected = account.collector
+      ? `${t.oralCollectedByPrefix} ${account.collector}.`
+      : t.oralCollectedByIntermediary;
+  }
+
+  return (
+    <>
+      {" "}
+      {carrier
+        ? `${t.oralAttributionPrefix} ${carrier}.`
+        : t.oralCarrierNotStated}
+      {collected ? ` ${collected}` : null}
+      {account.context ? ` ${account.context}.` : null}
+    </>
+  );
+}
+
 /**
  * Where a name is said to come from.
  *
  * Three parallel lists rather than one classified origin, because that is
- * what the corpus writes and what the subject needs: a griot's telling and a
- * colonial chronicle are two testimonies about the same name, and ranking one
- * as *the* origin would decide by format what the sources leave open.
+ * what the corpus writes and what the subject needs: a carried oral account
+ * and a colonial chronicle are two testimonies about the same name, and
+ * ranking one as *the* origin would decide by format what the sources leave
+ * open.
  *
- * An oral tradition is presented as a transcription with its griot named,
- * never as a bare fact — a fiche that dropped that attribution would make a
- * griot's account read as the corpus's own claim.
+ * An oral tradition is presented with its carrier and collection as the record
+ * states them, never as a bare fact — a fiche that dropped that attribution
+ * would make one carrier's account read as our own claim.
  *
  * The section is printed whether or not the corpus fills it (atlas charter
  * §4). It used to return null on a shape mismatch, which removed it from the
@@ -39,8 +77,16 @@ export function PatronymeOriginSection({
   const origin = readOrigin(patronyme.content);
   const gaps = readGaps(patronyme.content);
 
-  const strands: Array<{ label: string; accounts: OriginAccount[] }> = [
-    { label: t.originOralTraditionsLabel, accounts: origin.oralTraditions },
+  const strands: Array<{
+    label: string;
+    accounts: OriginAccount[];
+    oral?: boolean;
+  }> = [
+    {
+      label: t.originOralTraditionsLabel,
+      accounts: origin.oralTraditions,
+      oral: true,
+    },
     {
       label: t.originWrittenChroniclesLabel,
       accounts: origin.writtenChronicles,
@@ -71,11 +117,8 @@ export function PatronymeOriginSection({
                   {account.claimStatus ? (
                     <> — {t.originClaimStatusLabels[account.claimStatus]}</>
                   ) : null}
-                  {account.griot ? (
-                    <>
-                      {" "}
-                      {t.griotAttributionPrefix} {account.griot}.
-                    </>
+                  {strand.oral ? (
+                    <OralProvenance account={account} t={t} />
                   ) : null}
                 </li>
               ))}
@@ -90,7 +133,7 @@ export function PatronymeOriginSection({
         />
       )}
       {origin.oralTraditions.length > 0 ? (
-        <p className="afh-parchment-note">{t.griotOriginNote}</p>
+        <p className="afh-parchment-note">{t.oralOriginNote}</p>
       ) : null}
     </FicheSection>
   );

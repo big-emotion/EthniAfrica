@@ -38,43 +38,43 @@
     },
     "associatedPeoples": [
       {
-        "name": "Yoruba (PPL_YORUBA) - Nigeria, Bénin, Togo",
+        "name": "Yoruba - Nigeria, Bénin, Togo",
         "peopleId": null
       },
       {
-        "name": "Igbo (PPL_IGBO) - Nigeria",
+        "name": "Igbo - Nigeria",
         "peopleId": null
       },
       {
-        "name": "Edo / Bini (PPL_EDO) - Nigeria",
+        "name": "Edo / Bini - Nigeria",
         "peopleId": null
       },
       {
-        "name": "Tiv (PPL_TIV) - Nigeria, Cameroun",
+        "name": "Tiv - Nigeria, Cameroun",
         "peopleId": null
       },
       {
-        "name": "Efik/Ibibio (PPL_EFIK) - Nigeria",
+        "name": "Efik/Ibibio - Nigeria",
         "peopleId": null
       },
       {
-        "name": "Swahili (PPL_SWAHILI) - Tanzanie, Kenya, Ouganda, RDC",
+        "name": "Swahili - Tanzanie, Kenya, Ouganda, RDC",
         "peopleId": null
       },
       {
-        "name": "Lingala (PPL_LINGALA) - RDC, Congo-Brazzaville",
+        "name": "Lingala - RDC, Congo-Brazzaville",
         "peopleId": null
       },
       {
-        "name": "Kikongo (PPL_KIKONGO) - RDC, Angola, Congo-Brazzaville",
+        "name": "Kikongo - RDC, Angola, Congo-Brazzaville",
         "peopleId": null
       },
       {
-        "name": "Zoulou (PPL_ZULU) - Afrique du Sud",
+        "name": "Zoulou - Afrique du Sud",
         "peopleId": null
       },
       {
-        "name": "Xhosa (PPL_XHOSA) - Afrique du Sud",
+        "name": "Xhosa - Afrique du Sud",
         "peopleId": null
       }
     ],

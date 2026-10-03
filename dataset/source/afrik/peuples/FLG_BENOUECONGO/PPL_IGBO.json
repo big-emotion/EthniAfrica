@@ -12,7 +12,7 @@
         "Ibo (orthographe coloniale britannique, reductrice et phonetiquement inexacte)"
       ],
       "originOfExonyms": "Ibo provient d'une transcription coloniale britannique erronee du terme igbo, utilisee dans les documents administratifs coloniaux du XIXe et XXe siecle",
-      "whyProblematic": "Le terme Ibo est considere comme colonial et reducteur car il simplifie la prononciation tonale complexe du terme igbo et fut impose par l'administration coloniale britannique sans consultation des locuteurs natifs. Il perpetue une vision externe et deformee de l'identite igbo.",
+      "whyProblematic": "Le terme Ibo est considere comme colonial et reducteur car il simplifie la prononciation tonale complexe du terme igbo et s'est repandu dans les documents de l'administration coloniale britannique ; nous n'avons pas trouve de source qui decrive une consultation des locuteurs. Il perpetue une vision externe et deformee de l'identite igbo.",
       "contemporaryUsage": "Le terme Igbo est desormais universellement prefere dans les contextes academiques, officiels et communautaires. Ibo n'est plus utilise que dans des documents historiques ou par meconnaissance.",
       "linguisticFamily": "FLG_BENOUECONGO",
       "ethnoLinguisticGroup": "Igboide",
@@ -45,12 +45,12 @@
         "Etablissements riverains : Onitsha, Oguta, Aboh",
         "Zones orientales : Afikpo, Abakaliki (Ebonyi actuel)"
       ],
-      "unificationsOrDivisions": "Systeme politique decentralise : absence d'Etat centralise unifie, organisation en villages autonomes (obodo) et confederations. Royaume de Nri (Xe-XIXe siecles) : autorite spirituelle et politique, mais non imperiale, basee sur le prestige religieux de l'Eze Nri. Confederation Aro (XVIIe-XIXe siecles) : reseau commercial et religieux unifiant de nombreuses communautes via l'oracle d'Arochukwu (Ibini Ukpabi). Guerre civile du Biafra (1967-1970) : tentative de secession du sud-est du Nigeria, unification politique temporaire des Igbo.",
+      "unificationsOrDivisions": "Systeme politique decentralise : absence d'Etat centralise unifie, organisation en villages autonomes (obodo) et confederations. Royaume de Nri : autorite spirituelle et politique, mais non imperiale, basee sur le prestige religieux de l'Eze Nri ; la chronologie de sa fondation, reconstruite a partir de genealogies orales et situee traditionnellement vers la fin du Xe siecle, reste debattue. Confederation Aro (XVIIe-XIXe siecles) : reseau commercial et religieux unifiant de nombreuses communautes via l'oracle d'Arochukwu (Ibini Ukpabi). Guerre civile du Biafra (1967-1970) : tentative de secession du sud-est du Nigeria, unification politique temporaire des Igbo.",
       "externalInfluences": "Contacts avec les Ibibio, Ijaw, Efik (peuples cotiers). Commerce transsaharien (IXe-XVe siecles) : echanges de cuivre, perles, ivoire. Traite atlantique (XVIe-XIXe siecles) : participation via le reseau Aro, impact demographique et social majeur. Colonisation britannique (1900-1960) : imposition du systeme indirect rule, christianisation massive, introduction de l'education occidentale.",
       "majorHistoricalEvents": "Fondation du royaume de Nri (Xe siecle). Developpement du reseau Aro (XVIIe siecle). Expedition punitive britannique d'Arochukwu (1901-1902) : destruction de l'oracle, fin de l'independance politique igbo. Guerre civile du Biafra (1967-1970) : conflit meurtrier (1-3 millions de morts), traumatisme collectif, diaspora massive. Retour et reconstruction post-Biafra (annees 1970-present)."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Democratie villageoise : assemblees d'hommes libres (Oha na Eze, Umunna). Conseil des anciens (Ndi Ichie) : autorite decisionnelle basee sur l'age et la sagesse. Systeme de titres : Ozo, Nze na Ozo (titres honorifiques acquis par merite et richesse). Eze Nri : autorite spirituelle supreme du royaume de Nri, consideree comme descendant de la divinite Eri. Absence de monarchie hereditaire centralisee dans la plupart des communautes.",
+      "traditionalPoliticalSystem": "Democratie villageoise : assemblees d'hommes libres (Oha na Eze, Umunna). Conseil des anciens (Ndi Ichie) : autorite decisionnelle basee sur l'age et la sagesse. Systeme de titres : Ozo, Nze na Ozo (titres honorifiques acquis par merite et richesse). Eze Nri : autorite spirituelle supreme du royaume de Nri, consideree comme descendant de la divinite Eri. Absence de monarchie hereditaire centralisee dans la plupart des communautes. Là où aucune chefferie de ce type n'existait, l'administration coloniale britannique a institué des warrant chiefs, chefs désignés par elle ; ce système est aboli après la guerre des femmes de 1929 (Afigbo, 1972).",
       "clanOrganization": "Umunna : lignage patrilineaire, unite de base de l'organisation sociale. Umunne : lignage maternel, important pour les alliances et la protection. Systeme segmentaire : villages composes de plusieurs lignages (umunna) descendant d'un ancetre commun. Exogamie clanique : interdiction de mariage au sein du meme umunna.",
       "ageClassSystems": null,
       "roleOfLineages": "Propriete fonciere collective : la terre appartient au lignage, non aux individus. Solidarite economique et sociale : entraide mutuelle, resolution des conflits internes. Culte des ancetres : chaque lignage honore ses ancetres fondateurs.",
@@ -76,7 +76,7 @@
       "spiritualities": "Odinani (egalement Odinala, Omenala) : systeme religieux traditionnel polythéiste et pantéiste. Divinites principales : Chukwu (Dieu supreme), Ala (deesse de la terre, mere spirituelle), Amadioha (dieu du tonnerre et de la justice), Idemili (deesse de l'eau). Chi : esprit personnel de chaque individu. Le christianisme est massivement adopte depuis le XIXe siecle (catholicisme, anglicanisme, pentecotisme). Syncretisme frequent entre pratiques chretiennes et elements de l'Odinani."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Royaume de Nri (Xe-XIXe siecles) : plus ancienne monarchie igbo documentee, autorite spirituelle et culturelle dans tout l'Igboland, sans empire territorial. Confederation Aro (XVIIe-XIXe siecles) : reseau religieux, commercial et judiciaire pan-igbo fonde sur l'oracle d'Arochukwu. Royaume d'Onitsha : puissance commerciale majeure sur le Niger. Royaume d'Aboh : centre de commerce fluvial. Agbor et Asaba : chefferies importantes du delta occidental.",
+      "kingdomsOrChiefdoms": "Royaume de Nri : autorite spirituelle et culturelle dans une grande partie de l'Igboland, sans empire territorial ; la date de sa fondation reste debattue. Confederation Aro (XVIIe-XIXe siecles) : reseau religieux, commercial et judiciaire pan-igbo fonde sur l'oracle d'Arochukwu. Royaume d'Onitsha : puissance commerciale majeure sur le Niger. Royaume d'Aboh : centre de commerce fluvial. Agbor et Asaba : chefferies importantes du delta occidental.",
       "relationsWithNeighbors": "Relations commerciales intenses avec les Ijaw (delta du Niger), les Efik (Cross River) et les Ibibio. Tensions historiques et cooperations avec les Hausa-Fulani du Nord, les Yoruba de l'Ouest, les Tiv et les Idoma. Les Igbo ont joue un role majeur comme intermediaires commerciaux dans les reseaux atlantiques via le reseau Aro.",
       "conflictsOrAlliances": "Resistance a la colonisation britannique : guerre d'Aro (1901-1902), revolte des femmes Aba (1929). Guerre civile du Biafra (1967-1970) : tentative de secession du sud-est dirigee par Odumegwu Ojukwu ; 1 a 3 millions de morts ; traumatisme identitaire fondateur. Groupes activistes contemporains : MASSOB (1999) et IPOB pour l'independance du Biafra.",
       "diaspora": "Importante diaspora mondiale apres la guerre du Biafra et pour raisons economiques. Communautes significatives au Royaume-Uni, aux Etats-Unis, au Canada, au Cameroun, au Gabon, en Europe continentale. Les Igbo forment l'une des diasporas africaines les plus dynamiques, avec des personnalites influentes dans la litterature mondiale (Chinua Achebe, Chimamanda Ngozi Adichie), la politique et les affaires."
@@ -123,6 +123,12 @@
         "title": "Isichei, Elizabeth — A History of the Igbo People (1976)",
         "url": null,
         "tier": "referenced"
+      },
+      {
+        "title": "Afigbo, Adiele E. — The Warrant Chiefs: Indirect Rule in Southeastern Nigeria, 1891-1929. Longman, 1972",
+        "url": "https://www.persee.fr/doc/outre_0300-9513_1974_num_61_224_1789_t1_0486_0000_2",
+        "tier": "referenced",
+        "notes": "Ouvrage lu par le compte rendu de Persée : la politique des chefs désignés par l'administration là où l'Igboland n'avait pas de chefferie."
       },
       {
         "title": "Ethnologue (SIL International) — Igbo language (ibo)",

@@ -3,6 +3,7 @@ import { adminCopy } from "@/lib/i18n/copy/admin";
 import { classificationCopy } from "@/lib/i18n/copy/classification";
 import { atlasCopy } from "@/lib/i18n/copy/atlas";
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
+import { articlesCopy } from "@/lib/i18n/copy/articles";
 import { colonizationCopy } from "@/lib/i18n/copy/colonization";
 import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import { chromeCopy } from "@/lib/i18n/copy/chrome";
@@ -22,6 +23,7 @@ import { facetsCopy } from "@/lib/i18n/copy/facets";
 import { fieldProvenanceCopy } from "@/lib/i18n/copy/fieldProvenance";
 import { familyCopy } from "@/lib/i18n/copy/family";
 import { ficheCopy } from "@/lib/i18n/copy/fiche";
+import { ficheNameStoryCopy } from "@/lib/i18n/copy/ficheNameStory";
 import { footerCopy } from "@/lib/i18n/copy/footer";
 import { galleryCopy } from "@/lib/i18n/copy/gallery";
 import { gamesCopy } from "@/lib/i18n/copy/games";
@@ -60,6 +62,7 @@ export const COPY_MODULES = {
   admin: adminCopy,
   server: serverCopy,
   anecdotes: anecdotesCopy,
+  articles: articlesCopy,
   proverbs: proverbsCopy,
   gallery: galleryCopy,
   generatedImages: generatedImagesCopy,
@@ -98,6 +101,7 @@ export const COPY_MODULES = {
   fieldProvenance: fieldProvenanceCopy,
   family: familyCopy,
   fiche: ficheCopy,
+  ficheNameStory: ficheNameStoryCopy,
   languageFiche: languageFicheCopy,
   peopleFiche: peopleCopy,
   hubs: hubsCopy,

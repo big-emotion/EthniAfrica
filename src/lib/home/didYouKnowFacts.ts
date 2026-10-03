@@ -93,9 +93,9 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "bantou",
     headline:
-      "« Bantou » n'est pas un peuple : c'est une catégorie forgée par un philologue en 1862.",
+      "« Bantou » n'est pas un peuple : c'est une catégorie forgée par un philologue au milieu du XIXe siècle.",
     body: [
-      "Wilhelm Bleek construit le terme dans A Comparative Grammar of South African Languages, à partir d'une racine commune à des centaines de langues : ba-, le préfixe de pluriel humain, et -ntu, la personne. Ba-ntu : « les gens ».",
+      "Wilhelm Bleek construit le terme : il l'écrit en 1857 selon les historiens de la linguistique, le publie en 1858, et sa Comparative Grammar of South African Languages (1862) le répand, à partir d'une racine commune à des centaines de langues : ba-, le préfixe de pluriel humain, et -ntu, la personne. Ba-ntu : « les gens ».",
       "Ce que Bleek nomme est une parenté entre langues, pas une identité. L'anthropologie coloniale, puis l'apartheid avec le Bantu Education Act de 1953, en ont fait une catégorie de « races » et de « cultures » bantoues — un usage que sa classification ne portait pas.",
     ],
     entities: [
@@ -1307,7 +1307,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
     headline:
       "Les Manianga s'appellent peut-être d'après un marché, ou d'après un mot lâché par Stanley.",
     body: [
-      "Manianga n'était pas un ethnonyme. Selon Van Bulck, c'est le nom d'un marché fondé près de Kimbanza par l'ancêtre Volumina, seul marché de la région à subsister à l'époque coloniale. Selon Monnier et Wiliame, c'est un surnom lancé par Stanley et sa suite en 1881 près des chutes de Mpioka, appliqué à un peuple qui s'appelait Sundi.",
+      "Deux explications s'accordent : Manianga n'était pas un ethnonyme. Une explication en fait le nom d'un marché fondé près de Kimbanza par l'ancêtre Volumina, seul marché de la région à subsister à l'époque coloniale (Van Bulck). Une autre y voit un surnom lancé par Stanley et sa suite en 1881 près des chutes de Mpioka, appliqué à un peuple qui s'appelait Sundi (Monnier et Wiliame).",
       "Les deux versions racontent la même chose : un mot de circonstance, ramassé par l'écrit colonial, devenu le nom d'un groupe. Ba-sundi reste l'appellation ethnique propre — Ba- étant le préfixe bantou du pluriel des humains.",
     ],
     entities: [

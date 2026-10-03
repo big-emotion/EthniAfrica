@@ -860,6 +860,18 @@ const options: swaggerJsdoc.Options = {
               description:
                 "Qualified similar names (REQ-180) for a non-empty search: up to 3 distinct peoples, countries or language families, ranked by pg_trgm similarity and excluding entities already returned by the search. Always empty for zero-result and quiz-lens searches.",
             },
+            nameAnswers: {
+              type: "array",
+              items: { $ref: "#/components/schemas/NameAnswerV2" },
+              description:
+                "Reviewed, sourced answers to « where does this name come from? » for the searched term (REQ-178), matched on the whole term with accents and case ignored and localized by `lang`. Resolved from the term alone, so a search with no hit can still carry one. Empty for a name nobody has reviewed and for quiz-lens searches.",
+            },
+            nameSuggestions: {
+              type: "array",
+              items: { type: "string" },
+              description:
+                "Reviewed terms a near spelling may have meant (REQ-125), offered only when `total` is 0: within one edit of the searched term, two from eight letters, and never under four letters. The query is never rewritten; a client presents these as choices. Empty otherwise.",
+            },
           },
           required: [
             "peoples",
@@ -880,7 +892,57 @@ const options: swaggerJsdoc.Options = {
             "total",
             "leads",
             "nearNames",
+            "nameAnswers",
+            "nameSuggestions",
           ],
+        },
+        NameAnswerV2: {
+          type: "object",
+          description:
+            "A reviewed answer to where a name comes from. Written by an editor, never generated per request: rival accounts stay two accounts.",
+          properties: {
+            term: { type: "string", example: "Lingala" },
+            subjects: {
+              type: "array",
+              description:
+                "The fiches this answer is about. Several for a term shared by a collective and its parts; shared spelling does not assert that they are related.",
+              items: {
+                type: "object",
+                properties: {
+                  type: {
+                    type: "string",
+                    enum: [
+                      "people",
+                      "language",
+                      "country",
+                      "languageFamily",
+                      "person",
+                      "patronyme",
+                    ],
+                  },
+                  id: { type: "string" },
+                },
+                required: ["type", "id"],
+              },
+            },
+            paragraphs: {
+              type: "array",
+              minItems: 1,
+              maxItems: 2,
+              items: { type: "string" },
+            },
+            uncertainty: {
+              type: "string",
+              description: "What the sources leave unsettled, when anything.",
+            },
+            sources: {
+              type: "array",
+              description:
+                "One entry per key claim: the statement and the sources behind it, in the shape the source-chain sheet reads.",
+              items: { type: "object" },
+            },
+          },
+          required: ["term", "subjects", "paragraphs", "sources"],
         },
         SearchLeadV2: {
           type: "object",
@@ -1055,6 +1117,16 @@ const options: swaggerJsdoc.Options = {
           },
           required: ["entityType", "entityId"],
         },
+        SearchCompanionWordMatch: {
+          type: "object",
+          description:
+            "A short found by the word the reader typed, not by an entity: there is no subject to name, so the match carries the word itself, lowercased and without accents.",
+          properties: {
+            relation: { type: "string", enum: ["word"] },
+            word: { type: "string", minLength: 1, example: "zombie" },
+          },
+          required: ["relation", "word"],
+        },
         SearchCompanionMatch: {
           type: "object",
           description:
@@ -1139,7 +1211,12 @@ const options: swaggerJsdoc.Options = {
             watchUrl: { type: "string", format: "uri" },
             poster: { $ref: "#/components/schemas/SearchCompanionPoster" },
             source: { $ref: "#/components/schemas/SearchCompanionSource" },
-            match: { $ref: "#/components/schemas/SearchCompanionMatch" },
+            match: {
+              oneOf: [
+                { $ref: "#/components/schemas/SearchCompanionMatch" },
+                { $ref: "#/components/schemas/SearchCompanionWordMatch" },
+              ],
+            },
           },
           required: [
             "id",

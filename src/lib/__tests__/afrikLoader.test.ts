@@ -475,6 +475,26 @@ describe("afrikLoader", () => {
       expect(init).toEqual({ signal: controller.signal });
     });
 
+    // The word rides along so a production about it can answer even when no
+    // entity does; it is sent as typed, and only when there is one.
+    // @req REQ-180
+    it("sends the reader's word beside the subjects, and omits it when empty", async () => {
+      mockFetch.mockResolvedValue({
+        ok: true,
+        json: () => Promise.resolve({ data: emptyCompanions }),
+      });
+
+      await loadSearchCompanions([], "fr", undefined, "  Zombie ");
+      expect(searchParamsOf(mockFetch)).toEqual({
+        lang: "fr",
+        word: "Zombie",
+      });
+
+      mockFetch.mockClear();
+      await loadSearchCompanions([], "fr", undefined, "   ");
+      expect(searchParamsOf(mockFetch)).toEqual({ lang: "fr" });
+    });
+
     // @req REQ-180
     it("rejects a failed companions request instead of inventing shelves", async () => {
       mockFetch.mockResolvedValueOnce({

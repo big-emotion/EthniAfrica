@@ -7,7 +7,7 @@
       "selfAppellation": "Tamazight",
       "contemporaryUsage": "Terme \"Amazigh/Imazighen\" officialisé dans les constitutions marocaine (2011, article 5) et algérienne (2016, article 4).",
       "historicalAppellations": ["Libyque", "Numide", "Maure", "Barbar"],
-      "originOfHistoricalTerm": "Ce sont les noms que d'autres ont donnés. Libyque, Numide et Maure viennent des sources grecques et latines ; selon Yves Modéran (2003), Mauri domine dans les sources officielles du IVe au VIIe siècle. Barbar est le nom arabe, et c'est de lui que vient le français berbère. Pour Modéran, il dérive du latin barbarus, non par la forme savante barbari mais par le barbar du latin parlé des villes et des campagnes romanisées, que les Arabes entendent dès leur arrivée en Ifrîkiya ; sa première attestation sûre se trouve chez Ibn al-Kalbî, dans la seconde moitié du VIIIe siècle, et des traditions remontant aux environs de 730 le mentionnent déjà."
+      "originOfHistoricalTerm": "Ce sont les noms que d'autres ont donnés. Libyque, Numide et Maure viennent des sources grecques et latines ; selon Yves Modéran (2003), Mauri domine dans les sources officielles du IVe au VIIe siècle. Barbar est le nom arabe, et c'est de lui que vient le français berbère. Pour Modéran, il dérive du latin barbarus, non par la forme savante barbari mais par le barbar du latin parlé des villes et des campagnes romanisées, que les Arabes entendent dès leur arrivée en Ifrîkiya ; sa première attestation sûre se trouve chez Ibn al-Kalbî, dans la seconde moitié du VIIIe siècle, et des traditions remontant aux environs de 730 le mentionnent déjà.\n\nAmazigh est le nom que le peuple se donne, et son sens est moins établi qu'on ne le lit souvent. On y voit fréquemment « les hommes libres » ; Chaker (1986) rapporte que cette glose vient de Jean-Léon l'Africain puis de Stéphane Gsell, et juge qu'elle n'est « certainement pas fondée » et relève d'« une extrapolation indue ». Pour lui, Amazigh est « fondamentalement un ethnonyme et non une désignation référant à une classe ou un statut social », et il est « difficile d'établir une étymologie sûre pour cet ethnique ». Le nom est attesté dès l'Antiquité sous les formes Maxyes chez Hérodote et Mazyes chez Hécatée, puis Mazaces ou Mazices chez les auteurs latins. Chez les Touareg, amajeγ désigne bien l'aristocrate nomade : la glose vaut là, non partout. Chaker ajoute que le terme est inconnu de la culture traditionnelle de Kabylie, du Mzab et des Aurès, et que son emploi généralisé, parti de Kabylie, se diffuse vers 1945-1950 par la chanson berbéro-nationaliste.\n\nPour Berbère, Modéran (2010) écrit que les généalogistes médiévaux ont introduit un éponyme, Berr ou Berber, « fort opportunément inventé » pour expliquer le terme générique forgé par les Arabes à leur arrivée, probablement à partir du latin Barbari."
     },
     "generalInfo": {
       "branches": [
@@ -136,6 +136,18 @@
         "url": "https://books.openedition.org/efr/1431",
         "tier": "referenced",
         "notes": "Monographie d'historien. L'introduction de sa cinquième partie retrace l'origine du nom arabe des Berbères et sa première attestation."
+      },
+      {
+        "title": "Chaker, Salem (1986) – « Amaziɣ (le/un Berbère) », Encyclopédie berbère, 4, p. 562-568",
+        "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+        "tier": "referenced",
+        "notes": "Notice de l'Encyclopédie berbère (CNRS et INALCO), passages relus dans le texte en ligne. Porte la critique de la glose « hommes libres », les formes antiques du nom, le sens de noble chez les Touareg et la diffusion du terme depuis les années 1945-1950."
+      },
+      {
+        "title": "Modéran, Yves (2010) – « Mythes d'origine des Berbères (Antiquité et Moyen Âge) », Encyclopédie berbère, 32, p. 5157-5169",
+        "url": "https://journals.openedition.org/encyclopedieberbere/674",
+        "tier": "referenced",
+        "notes": "Notice de l'Encyclopédie berbère (CNRS et INALCO), passage relu dans le texte en ligne. Porte l'éponyme Berr ou Berber introduit par les généalogistes médiévaux pour expliquer le terme forgé par les Arabes."
       }
     ]
   },

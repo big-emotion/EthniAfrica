@@ -3,20 +3,20 @@
   "nameFr": "Comores",
   "nameEn": "Comoros",
   "nameOfficial": "Union des Comores (Udzima wa Komori en comorien)",
-  "summary": "Les Comores tiennent leur nom de l'arabe « Juzur al-Qamar », les îles de la lune. L'archipel, connu des navigateurs arabes et perses, s'organisa en sultanats indépendants avant le protectorat français de 1886. Sa culture croise l'Afrique de l'Est, le monde swahili et l'océan Indien.",
-  "etymology": "Le nom \"Comores\" vient de l'arabe \"جزر القمر\" (Juzur al-Qamar), signifiant \"îles de la lune\". En comorien, le pays est appelé \"Komori\" ou \"Udzima wa Komori\" (Union des Comores).",
-  "nameOriginActor": "Le nom a été donné par les navigateurs arabes et perses qui ont visité l'archipel dès le IXe siècle, en référence à la beauté des îles sous la lune.",
+  "summary": "Une explication publiée rattache le nom Comores à l'arabe komr, un mot qui désignait de grandes terres de l'océan Indien situées sous les Nuages de Magellan, le repère du sud dans le ciel austral. Plus tard, le mot a été lu comme qamar, « la lune », d'où le surnom « îles de la Lune ». L'archipel s'organisa en sultanats indépendants avant le protectorat français de 1886. Sa culture croise l'Afrique de l'Est, le monde swahili et l'océan Indien.",
+  "etymology": "Le français « Comores » reprend l'arabe komr, un mot générique que des géographes arabes appliquaient à de grandes terres situées sous les Nuages de Magellan, les deux taches lumineuses du ciel austral qui marquaient le sud. Une étude publiée en 2000 juge fausse la lecture « îles de la Lune » (qamar), apparue plus tard ; une autre rappelle que la racine arabe renvoie à la clarté lumineuse, ce qui laisse « lune » dans son champ de sens. En arabe, le pays s'appelle aujourd'hui Juzur al-Qamar (جزر القمر), « îles de la Lune » ; en comorien, « Komori » ou « Udzima wa Komori » (Union des Comores).",
+  "nameOriginActor": "L'auteur du nom n'est pas connu. Le mot komr apparaît chez des géographes arabes du Moyen Âge, dont al-Idrîsî au XIIe siècle, pour des terres de l'océan Indien occidental, Madagascar comprise. Il est resté au seul archipel avec le temps ; la date de ce resserrement n'est pas établie.",
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Juzur al-Qamar (arabe, « îles de la lune »)",
+        "Komr (arabe médiéval, nom générique de plusieurs terres de l'océan Indien occidental)",
         "Protectorat des Comores (1886)",
         "Territoire des Comores (1912)"
       ],
-      "antiquity": "L'archipel était connu des navigateurs arabes et perses sous le nom de \"Juzur al-Qamar\" (îles de la lune). Les Grecs anciens mentionnent des îles dans cette région sous le nom de \"Menuthias\".",
-      "middleAges": "L'archipel est mentionné dans les récits de voyageurs arabes et perses (Ibn Battuta, al-Idrisi) sous le nom de \"Juzur al-Qamar\". Les îles étaient des points d'escale importants sur les routes commerciales de l'océan Indien.",
+      "antiquity": "Aucun texte de l'Antiquité ne désigne l'archipel avec certitude : les identifications proposées, comme celle de l'île de Menuthias, restent discutées.",
+      "middleAges": "Au XIIe siècle, al-Idrîsî écrit le mot komr pour des îles de l'océan Indien occidental. Au XIIIe siècle, Ibn Said et d'autres auteurs arabes discutent déjà de la bonne prononciation, komr ou qamar. Les îles étaient des points d'escale importants sur les routes commerciales de l'océan Indien.",
       "precolonial": "Les îles étaient organisées en sultanats indépendants (sultanats de Grande Comore, Anjouan, Mohéli). Chaque île avait son propre sultanat avec des dynasties locales.",
-      "colonization": "Les îles sont devenues un protectorat français en 1886 sous le nom de \"Protectorat des Comores\". En 1912, elles sont intégrées à la colonie de Madagascar sous le nom de \"Territoire des Comores\". Le terme \"Comores\" est la francisation de \"Qamar\".",
+      "colonization": "Les îles sont devenues un protectorat français en 1886 sous le nom de \"Protectorat des Comores\". En 1912, elles sont intégrées à la colonie de Madagascar sous le nom de \"Territoire des Comores\". Le français « Comores » reprend l'arabe komr.",
       "contemporary": "Après l'indépendance en 1975, le pays prend le nom d'\"État comorien\" puis \"République fédérale islamique des Comores\" (1978), puis \"Union des Comores\" depuis 2001. Le nom officiel en français est \"Union des Comores\" et en comorien \"Udzima wa Komori\"."
     },
     "kingdoms": [
@@ -88,7 +88,7 @@
           "arabe"
         ],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Comorien\" est neutre et accepté. L'auto-appellation \"Shimasiwa\" (gens des îles) reflète l'identité insulaire du peuple. Le terme historique arabe \"Qamari\" fait référence à l'origine du nom \"Comores\" (îles de la lune)."
+        "appellationRemarks": "Le terme \"Comorien\" est neutre et accepté. L'auto-appellation \"Shimasiwa\" (gens des îles) reflète l'identité insulaire du peuple. Le nom du pays, Comores, a une origine discutée, détaillée dans la fiche du pays."
       }
     ],
     "culture": {
@@ -151,6 +151,18 @@
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official"
+      },
+      {
+        "title": "Claude Allibert, « Le mot Komr dans l'océan Indien », Topoi. Orient-Occident, 10-1, 2000, p. 319-334",
+        "url": "https://doi.org/10.3406/topoi.2000.1883",
+        "tier": "referenced",
+        "notes": "Article universitaire sur le mot arabe komr. Il établit que komr désignait les Nuages de Magellan et servait de nom générique à plusieurs grandes terres de l'océan Indien occidental, Madagascar comprise, et que la lecture « îles de la Lune » est fausse. Il cite les mises en garde d'auteurs arabes médiévaux sur la prononciation. Article lu en entier le 16 septembre 2026 ; les textes arabes qu'il cite l'ont été à travers lui."
+      },
+      {
+        "title": "A. Clockers, « Histoire des noms anciens de Madagascar : réévaluations et nouvelles hypothèses », Études océan Indien, 51-52, 2014",
+        "url": "https://doi.org/10.4000/oceanindien.1704",
+        "tier": "referenced",
+        "notes": "Confirme le lien entre komr et les Nuages de Magellan, mais rappelle que la racine arabe renvoie à la clarté lumineuse, et donc aussi à la lune. Article lu en septembre 2026."
       }
     ],
     "demographics": {

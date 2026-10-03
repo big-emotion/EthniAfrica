@@ -12,7 +12,7 @@
         "Hottentots (terme colonial, desormais offensant)",
         "Khoisan (terme groupant Khoikhoi et San, accepte academiquement)"
       ],
-      "originOfExonyms": "Hottentots est un terme neerlandais d'origine onomatopeique introduit par les premiers colons europeens au XVIIe siecle, faisant allusion aux clics de la langue khoikhoe. Il est aujourd'hui considere comme offensant et pejoratif. Khoisan est un terme scientifique compose (Khoi + San) pour designer l'ensemble des peuples autochtones pratiquant des langues a clics d'Afrique australe.",
+      "originOfExonyms": "Hottentots est un mot du neerlandais du Cap, employe par les colons europeens des le XVIIe siecle ; son origine exacte n'est pas etablie. L'explication la plus souvent citee y voit une imitation du begaiement (hotteren-totteren, « begayer »), que les colons entendaient dans les clics de la langue khoikhoe ; une autre lecture y voit l'imitation d'un chant de danse entendu au Cap. Le Dictionary of South African English releve les deux pistes sans en retenir une. Le mot est aujourd'hui considere comme offensant et pejoratif. Khoisan est un terme scientifique compose (Khoi + San) pour designer l'ensemble des peuples autochtones pratiquant des langues a clics d'Afrique australe.",
       "whyProblematic": "Hottentots est une insulte qui a ete utilisee pour dehumaniser les Khoikhoi pendant la periode coloniale et l'apartheid. Son emploi est deconseille dans tous les contextes contemporains. Khoikhoi signifie litteralement Hommes des hommes ou Vrais hommes en khoekhoegowab.",
       "contemporaryUsage": "Khoekhoe est la graphie namibienne officielle. Khoikhoi est la forme la plus courante dans les publications scientifiques francophones et anglophones. Les sous-groupes modernes (Nama, Damara, Griqua) utilisent generalement leurs propres noms specifiques.",
       "linguisticFamily": "FLG_KHOE",
@@ -122,6 +122,12 @@
         "title": "Richtersveld Cultural and Botanical Landscape – UNESCO World Heritage",
         "url": "https://whc.unesco.org/en/list/1265",
         "tier": "official"
+      },
+      {
+        "title": "« Hottentot », Dictionary of South African English on Historical Principles (DSAE)",
+        "url": "https://dsae.co.za/entry/hottentot/e03109",
+        "tier": "referenced",
+        "notes": "Dictionnaire historique publie. Donne une origine neerlandaise, peut-etre issue de l'allemand hotteren-totteren (begayer), puis mentionne l'autre lecture, celle d'un chant de danse, sans les departager. Consulte le 25 septembre 2026."
       }
     ]
   },

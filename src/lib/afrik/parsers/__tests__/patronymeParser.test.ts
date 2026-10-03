@@ -99,6 +99,83 @@ describe("parsePatronymeFile", () => {
     );
   });
 
+  // An oral account is recorded by who actually carried it and how it was
+  // collected. A griot and a full transcript are two possible shapes of that,
+  // not conditions of it (audit finding C10).
+  const oralAccount = {
+    claim: "Un récit transmis relie ce nom à une lignée.",
+    claimStatus: "claimed",
+    sourceRefs: [SOURCE_KEY],
+  };
+  const withOral = (account: Record<string, unknown>) =>
+    validPatronymeFiche({
+      origin: {
+        oralTraditions: [account],
+        writtenChronicles: [],
+        linguisticReconstructions: [],
+      },
+    });
+
+  // @req REQ-133
+  it("accepts an oral account with neither a griot nor a transcript", () => {
+    const result = parsePatronymeFile(withOral(oralAccount));
+
+    expect(result.success).toBe(true);
+  });
+
+  // @req REQ-133
+  it("accepts an oral account described by its carrier and how it was collected", () => {
+    const result = parsePatronymeFile(
+      withOral({
+        ...oralAccount,
+        carrier: "Une aînée de la famille, nom tenu à sa demande",
+        collection: "mediated",
+        collector: "Un enseignant qui l'a recueillie",
+        context: "Récit transmis en dioula, à Bobo-Dioulasso",
+      })
+    );
+
+    expect(result.success).toBe(true);
+  });
+
+  // @req REQ-133
+  it("keeps accepting the griot and transcription shape already in the corpus", () => {
+    const result = parsePatronymeFile(
+      withOral({
+        ...oralAccount,
+        griot: "Informateur cité dans la transcription",
+        transcription: "Transcription publiée, section 2",
+      })
+    );
+
+    expect(result.success).toBe(true);
+  });
+
+  // @req REQ-133
+  it("refuses a collection mode outside the three the record can state", () => {
+    const result = parsePatronymeFile(
+      withOral({ ...oralAccount, collection: "recorded on tape" })
+    );
+
+    expect(result.success).toBe(false);
+    expect(result.errors).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          path: "origin.oralTraditions.0.collection",
+        }),
+      ])
+    );
+  });
+
+  // @req REQ-133
+  it("refuses an empty carrier rather than reading it as a stated one", () => {
+    const result = parsePatronymeFile(
+      withOral({ ...oralAccount, carrier: "" })
+    );
+
+    expect(result.success).toBe(false);
+  });
+
   // @req REQ-133
   it("rejects unknown keys at the top level and in nested records", () => {
     const fiche = validPatronymeFiche({ inventedSection: "non" });

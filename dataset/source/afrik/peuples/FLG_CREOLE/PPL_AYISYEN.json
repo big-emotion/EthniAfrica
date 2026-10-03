@@ -36,7 +36,7 @@
       ],
       "unificationsOrDivisions": null,
       "externalInfluences": "Colonisation française (XVIIe siècle-1804) ; occupation américaine (1915-1934).",
-      "majorHistoricalEvents": "14 août 1791 : cérémonie du Bois Caïman, rituel vodou qui scelle un pacte de résistance parmi les insurgés. 22-23 août 1791 : début de l'insurrection générale des esclaves du Nord. 1791-1804 : guerre d'indépendance haïtienne. 1er janvier 1804 : proclamation de l'indépendance d'Haïti, premier État moderne né d'une révolte d'esclaves et première république noire indépendante."
+      "majorHistoricalEvents": "Août 1791, selon la tradition le 14 : cérémonie du Bois Caïman, rituel vodou qui scelle un pacte de résistance parmi les insurgés. 22-23 août 1791 : début de l'insurrection générale des esclaves du Nord. 1791-1804 : guerre d'indépendance haïtienne. 1er janvier 1804 : proclamation de l'indépendance d'Haïti, premier État moderne né d'une révolte d'esclaves et première république noire indépendante."
     },
     "organization": {
       "traditionalPoliticalSystem": null,
@@ -52,7 +52,7 @@
       "vehicularRole": "Le créole haïtien est parlé par la quasi-totalité de la population haïtienne et constitue, avec le français, l'une des deux langues officielles du pays ; il est aussi la principale langue de la diaspora haïtienne."
     },
     "historicalAffiliation": {
-      "description": "Le lien entre le peuple ayisyen et l'Afrique n'est pas d'ordre linguistique — le créole haïtien est une langue à lexique majoritairement français — mais démographique, culturel et spirituel, issu de la traite négrière transatlantique. Aux XVIIe et XVIIIe siècles, plusieurs centaines de milliers d'Africains réduits en esclavage sont déportés vers la colonie française de Saint-Domingue, en majorité originaires du golfe du Bénin (peuples fon et éwé du royaume du Dahomey, actuel Bénin) et du bassin du Congo (aire kongo), ainsi que d'autres régions ouest-africaines. Ces populations transposent en terre coloniale leurs traditions religieuses : le vodou haïtien, religion nationale reconnue, tire directement son nom et sa structure théologique (les lwa, le culte des ancêtres) du vodun fon-éwé du Dahomey, tout en intégrant des apports kongo et yoruba. Cet héritage religieux joue un rôle politique direct dans la formation de la nation : la cérémonie du Bois Caïman, tenue le 14 août 1791 et animée par la manbo Cécile Fatiman et l'oungan Dutty Boukman, scelle selon la tradition historique un pacte de résistance entre insurgés à la veille du soulèvement général qui ouvre la révolution haïtienne (1791-1804). Cette révolution, menée par une population très majoritairement d'origine africaine, aboutit le 1er janvier 1804 à la première indépendance d'une colonie d'esclaves et à la fondation de la première république noire du monde moderne, faisant du lien à l'Afrique un fondement explicite de l'identité nationale ayisyenne plutôt qu'un héritage linguistique.",
+      "description": "Le lien entre le peuple ayisyen et l'Afrique n'est pas d'ordre linguistique — le créole haïtien est une langue à lexique majoritairement français — mais démographique, culturel et spirituel, issu de la traite négrière transatlantique. Aux XVIIe et XVIIIe siècles, plusieurs centaines de milliers d'Africains réduits en esclavage sont déportés vers la colonie française de Saint-Domingue, en majorité originaires du golfe du Bénin (peuples fon et éwé du royaume du Dahomey, actuel Bénin) et du bassin du Congo (aire kongo), ainsi que d'autres régions ouest-africaines. Ces populations transposent en terre coloniale leurs traditions religieuses : le vodou haïtien, religion nationale reconnue, tire directement son nom et sa structure théologique (les lwa, le culte des ancêtres) du vodun fon-éwé du Dahomey, tout en intégrant des apports kongo et yoruba. Cet héritage religieux joue un rôle politique direct dans la formation de la nation : la cérémonie du Bois Caïman, que la tradition historique situe le 14 août 1791 sous la conduite de la manbo Cécile Fatiman et de l'oungan Dutty Boukman, scelle un pacte de résistance entre insurgés à la veille du soulèvement général qui ouvre la révolution haïtienne (1791-1804). Le plus ancien récit imprimé, celui du colon Antoine Dalmas en 1814, décrit un sacrifice nocturne d'un cochon noir au lieu dit le Caïman sans nommer ni Boukman ni Cécile Fatiman ; leur rôle repose sur des récits postérieurs, et les historiens discutent la date et les détails de la scène. Cette révolution, menée par une population très majoritairement d'origine africaine, aboutit le 1er janvier 1804 à la première indépendance d'une colonie d'esclaves et à la fondation de la première république noire du monde moderne, faisant du lien à l'Afrique un fondement explicite de l'identité nationale ayisyenne plutôt qu'un héritage linguistique.",
       "sources": [
         {
           "title": "Vodou | Definition, History, West African Vodun, & Facts",
@@ -140,6 +140,18 @@
         "url": "https://doi.org/10.4314/ijma.v2i17.2",
         "tier": "referenced",
         "notes": "Article de revue à comité de lecture, université de Dschang, Cameroun. Donne l'origine du mot comme controversée et énumère les racines bantoues proposées."
+      },
+      {
+        "title": "Antoine Dalmas, Histoire de la révolution de Saint-Domingue, Paris, Mame frères, 1814",
+        "url": "https://archive.org/details/histoiredelarv00dalm",
+        "tier": "referenced",
+        "notes": "Récit d'un colon, donc un regard extérieur et hostile à l'insurrection. Premier texte imprimé à décrire la cérémonie du Caïman (tome 1) : sacrifice d'un cochon noir, sang bu, poils gardés comme talismans. Boukman n'y paraît que plus loin, comme chef de bande, et Cécile Fatiman n'y figure pas. Lu le 25 septembre 2026."
+      },
+      {
+        "title": "David Patrick Geggus, Haitian Revolutionary Studies, Indiana University Press, 2002 (chapitre « The Bois Caïman Ceremony »)",
+        "url": "https://iupress.org/9780253341044/haitian-revolutionary-studies/",
+        "tier": "referenced",
+        "notes": "Recueil d'un historien universitaire ; un chapitre est consacré à la cérémonie du Bois Caïman. Indiqué comme étude de référence sur le débat historiographique ; le chapitre lui-même n'a pas été relu pour cette fiche."
       }
     ]
   },

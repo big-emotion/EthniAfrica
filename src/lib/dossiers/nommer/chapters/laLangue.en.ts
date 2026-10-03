@@ -19,18 +19,18 @@ export const CHAPITRE_LA_LANGUE_EN: DossierChapterTranslation = {
   standfirst:
     "A label born in a colonial office today classifies the largest language family on the continent. It is scientifically useful and politically toxic, and we go on using it.",
   measure: {
-    value: "‘Bantu’, 1862",
-    unit: "first attestation",
+    value: "‘Bantu’, 1857",
+    unit: "earliest known written trace, printed in 1858",
   },
   sections: {
     "un-mot-forge-dans-un-bureau": {
       stepLabel: "04 · The language",
-      heading: "A word coined in an office, in 1862",
+      heading: "A word coined in an office",
       blocks: {
         "un-nom-sans-locuteurs":
           "We file our 776 peoples under twenty-four language families. The largest bears a name that has no speakers: nobody ever called themselves ‘Bantu’ before a linguist wrote it down.",
         "bleek-et-abantu":
-          "The word is coined in 1862 by Wilhelm Bleek, in his Comparative Grammar of South African Languages. He takes the Zulu abantu, ‘the people’ — ba-, the human plural prefix, and -ntu, the person — and makes it a label of classification. The gesture is ordinary in nineteenth-century comparative philology; what is less so is the place.",
+          "The word is coined by Wilhelm Bleek: historians of linguistics find it in a 1857 manuscript, it appears in print in 1858, and it is his Comparative Grammar of South African Languages, in 1862, that spreads it. He takes the Zulu abantu, ‘the people’ — ba-, the human plural prefix, and -ntu, the person — and makes it a label of classification. The gesture is ordinary in nineteenth-century comparative philology; what is less so is the place.",
         "bleek-dans-ladministration":
           "Bleek was an interpreter, then librarian, of the Cape administration. He did not work beside colonial power: he worked inside it, and supplied it with categories. That does not make his grammar wrong — the genealogical unity of the languages he groups is still accepted today. It says only where the word comes from, and whom it first served.",
       },
@@ -48,7 +48,7 @@ export const CHAPITRE_LA_LANGUE_EN: DossierChapterTranslation = {
         rows: [
           [
             "A family of related languages",
-            "Comparative linguistics, since 1862",
+            "Comparative linguistics, since Bleek",
             "Accepted: the genealogical kinship is not disputed",
           ],
           [

@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Fiche générée depuis la file d'attente des candidats (vague 1 du plan de couverture anthroponymique). Elle ne porte aucune recherche : ne pas étendre ses affirmations sans appliquer le protocole docs/runbooks/anthroponym-fiche-research.md."
+    "directives": "Dossier enrichi depuis la file d'attente des candidats (vague 1 du plan de couverture anthroponymique) à partir du chapitre 6 de l'Histoire générale de l'Afrique, tome IV (Niane, 1985) ; ne pas étendre les affirmations restantes sans source dédiée."
   },
   "id": "PAT_KONATE",
   "nameMain": "Konaté",
@@ -11,40 +11,68 @@
     {
       "spelling": "Konaté",
       "attestations": [
-        { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["afrik-candidate-queue", "niane-1985-fr-mali-chapitre"]
+        }
       ]
     },
     {
       "spelling": "Konate",
       "attestations": [
-        { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["afrik-candidate-queue", "niane-1985-fr-mali-chapitre"]
+        }
       ]
     }
   ],
-  "transmissionMode": "other",
+  "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
+        "claimStatus": "established",
+        "sourceRefs": ["jansen-sunjata-paradigm"]
+      },
+      {
+        "claim": "Avant Soundiata, les Konaté occupent, avec les Keita, le pays de Kiri, aussi appelé Manden. Le royaume voisin du Do, ou Dodougou, est peuplé par le clan Konde, distinct des Konaté malgré la proximité des noms.",
+        "claimStatus": "established",
+        "sourceRefs": ["niane-1985-fr-mali-chapitre"]
+      },
+      {
+        "claim": "Parmi les noms multiples que lui donne la tradition, Soundiata Keïta est aussi appelé Nare Maghan Konate, « roi des Konate, fils de Nare Maghan ».",
+        "claimStatus": "claimed",
+        "sourceRefs": ["niane-1985-fr-mali-chapitre"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_MALINKE",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "niane-1985-fr-mali-chapitre"]
     }
   ],
   "countries": [
     {
       "countryId": "MLI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "niane-1985-fr-mali-chapitre"]
     }
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Siara Kuman Konaté",
+      "sourceRefs": ["niane-1985-fr-mali-chapitre"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -54,13 +82,25 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "jansen-sunjata-paradigm",
+      "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
+      "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
+    },
+    {
+      "sourceKey": "niane-1985-fr-mali-chapitre",
+      "title": "Le Mali et la deuxième expansion manden",
+      "url": "https://bokundoli.org/wp-content/uploads/2021/12/T4-10.pdf",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "Niane, Djibril Tamsir, Histoire générale de l'Afrique, tome IV, chapitre 6, UNESCO/NEA, 1985 ; reproduction consultée le 23 septembre 2026, qui ne couvre le texte qu'à partir de la p. 141. Place les Konaté, avec les Keita, dans le pays de Kiri (p. 151-152) ; nomme Siara Kuman Konaté parmi les chefs d'armée ralliés à Sunjata Keita avant la bataille de Kirina (p. 155) ; et rapporte que Sunjata Keita porte lui-même, parmi ses noms multiples, celui de Nare Maghan Konate (p. 157)."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -70,16 +110,8 @@
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
-      "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
   ]
 }

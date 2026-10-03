@@ -19,7 +19,7 @@
       "alternatives": "Generate a new starter application and migrate features into it.",
       "tradeoffs": "The team preserves proven behavior and technical debt together, and must reconcile old documentation continuously.",
       "requirementsSatisfied": ["REQ-060", "REQ-062", "REQ-085"],
-      "source": "_bmad-output/planning-artifacts/architecture.md",
+      "source": "retired planning artifact: architecture.md",
       "status": "Approved"
     },
     {
@@ -37,7 +37,7 @@
         "REQ-011",
         "REQ-020"
       ],
-      "source": "_bmad-output/planning-artifacts/architecture.md#data-architecture",
+      "source": "retired planning artifact: architecture.md#data-architecture",
       "status": "Approved"
     },
     {
@@ -48,7 +48,7 @@
       "alternatives": "Use query parameters, opaque revision UUIDs, timestamps, or only a mutable canonical URL.",
       "tradeoffs": "The readable scheme is durable and citable but becomes a permanent public compatibility contract.",
       "requirementsSatisfied": ["REQ-018", "REQ-019", "REQ-021", "REQ-035"],
-      "source": "_bmad-output/planning-artifacts/architecture.md#api--communication-patterns",
+      "source": "retired planning artifact: architecture.md#api--communication-patterns",
       "status": "Approved"
     },
     {
@@ -66,7 +66,7 @@
         "REQ-055",
         "REQ-082"
       ],
-      "source": "_bmad-output/planning-artifacts/architecture.md#authentication--security",
+      "source": "retired planning artifact: architecture.md#authentication--security",
       "status": "Approved"
     },
     {
@@ -84,7 +84,7 @@
         "REQ-075",
         "REQ-077"
       ],
-      "source": "_bmad-output/planning-artifacts/architecture.md#api--communication-patterns",
+      "source": "retired planning artifact: architecture.md#api--communication-patterns",
       "status": "Approved"
     },
     {
@@ -95,7 +95,7 @@
       "alternatives": "Use process-local memory, Vercel middleware-only limits, or a custom Supabase Edge Function.",
       "tradeoffs": "A managed dependency adds latency and operating configuration but provides shared state across instances.",
       "requirementsSatisfied": ["REQ-034", "REQ-049", "REQ-059", "REQ-061"],
-      "source": "_bmad-output/planning-artifacts/architecture.md#api--communication-patterns",
+      "source": "retired planning artifact: architecture.md#api--communication-patterns",
       "status": "Approved"
     },
     {
@@ -106,7 +106,7 @@
       "alternatives": "Use a non-share-alike data license, leave licensing implicit, or choose a non-permissive code license.",
       "tradeoffs": "Share-alike improves commons reciprocity but constrains downstream relicensing; the unresolved code choice remains visible.",
       "requirementsSatisfied": ["REQ-035", "REQ-087"],
-      "source": "_bmad-output/planning-artifacts/architecture.md#core-architectural-decisions",
+      "source": "retired planning artifact: architecture.md#core-architectural-decisions",
       "status": "Pending"
     },
     {
@@ -117,7 +117,7 @@
       "alternatives": "Use region-agnostic defaults, invasive analytics, or operate custom observability infrastructure.",
       "tradeoffs": "Regional and privacy constraints reduce vendor flexibility but simplify the stated compliance posture.",
       "requirementsSatisfied": ["REQ-080", "REQ-081", "REQ-088", "REQ-091"],
-      "source": "_bmad-output/planning-artifacts/architecture.md#infrastructure--deployment",
+      "source": "retired planning artifact: architecture.md#infrastructure--deployment",
       "status": "Approved"
     },
     {
@@ -204,7 +204,7 @@
         "REQ-085",
         "REQ-097–REQ-105"
       ],
-      "source": "_bmad-output/planning-artifacts/design-charter-v2.md §10 and module-specs/epic-16-parchment-route-families.md (the Figma maquette is stale until re-aligned with DEC-016)",
+      "source": "retired planning artifact: design-charter-v2.md §10 and module-specs/epic-16-parchment-route-families.md (the Figma maquette is stale until re-aligned with DEC-016)",
       "status": "Pending"
     },
     {
@@ -220,7 +220,7 @@
         "REQ-064–REQ-069",
         "REQ-097–REQ-104 (as amended)"
       ],
-      "source": "_bmad-output/planning-artifacts/design-charter-v2.md (commit 39884200 on recette) + the contract-locked artifacts under design-proposals/ (option-d-fusion.html, fiches-v2.html and their structural tests)",
+      "source": "retired planning artifact: design-charter-v2.md (commit 39884200 on recette) + the contract-locked artifacts under design-proposals/ (option-d-fusion.html, fiches-v2.html and their structural tests)",
       "status": "Approved"
     },
     {
@@ -613,7 +613,7 @@
         "src/api/v2/services/__tests__/revisionsService.test.ts",
         "src/components/source-transparency/__tests__/SourceChainSheet.test.tsx"
       ],
-      "source": "_bmad-output/planning-artifacts/architecture.md#data-architecture",
+      "source": "retired planning artifact: architecture.md#data-architecture",
       "status": "Approved"
     },
     {
@@ -633,7 +633,7 @@
         "src/app/api/admin/contributions/[id]/__tests__/route.test.ts",
         "src/lib/supabase/__tests__/moderator.test.ts"
       ],
-      "source": "_bmad-output/planning-artifacts/architecture.md#authentication--security",
+      "source": "retired planning artifact: architecture.md#authentication--security",
       "status": "Pending"
     },
     {
@@ -672,7 +672,7 @@
         "scripts/__tests__/validateAfrikData.test.ts",
         "scripts/__tests__/openapi-diff.test.ts"
       ],
-      "source": "_bmad-output/planning-artifacts/architecture.md#infrastructure--deployment",
+      "source": "retired planning artifact: architecture.md#infrastructure--deployment",
       "status": "Pending"
     },
     {
@@ -887,19 +887,19 @@
     {
       "title": "V1 regions, ethnicities, presences, and legacy loaders",
       "supersededBy": "ARCH-003 and ARCH-005",
-      "source": "_bmad-output/project-context.md#v1--v2-migration-is-complete",
+      "source": "retired planning artifact: project-context.md#v1--v2-migration-is-complete",
       "note": "The V1 entity and data-access surface is retired and must not be reintroduced."
     },
     {
       "title": "Active English, Spanish, and Portuguese product branches",
       "supersededBy": "ARCH-001",
-      "source": "_bmad-output/project-context.md#language--routing-french-only",
+      "source": "retired planning artifact: project-context.md#language--routing-french-only",
       "note": "The active product surface is French-only; multilingual shapes remain only to reduce future migration cost."
     },
     {
       "title": "Shared username/password admin cookie",
       "supersededBy": "DEC-005 and ARCH-007",
-      "source": "_bmad-output/planning-artifacts/architecture.md#authentication--security",
+      "source": "retired planning artifact: architecture.md#authentication--security",
       "note": "The shared admin credential model is retired in favor of Supabase Auth and explicit roles."
     }
   ]

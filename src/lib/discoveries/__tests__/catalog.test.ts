@@ -75,8 +75,8 @@ describe("Découvertes publication contracts", () => {
     ]);
   });
 
-  // A proverb is words, not a scene: a photo beside it would be decoration
-  // chosen by us. The photo requirement stays whole for every other kind.
+  // A proverb may stand while its photo is still being sourced, but a photo it
+  // does carry is held to the same clearance as every other kind's.
   // @req REQ-157
   it("lets a proverb stand without a photo and still refuses an anecdote without one", () => {
     const records = [
@@ -85,6 +85,24 @@ describe("Découvertes publication contracts", () => {
     ];
     expect(eligiblePublications(records).map((entry) => entry.id)).toEqual([
       "proverb",
+    ]);
+  });
+
+  // @req REQ-157
+  it("refuses a proverb whose photo has no cleared licence or no file page", () => {
+    const records = [
+      item("cleared", { kind: "proverb", image: photo }),
+      item("unknown-licence", {
+        kind: "proverb",
+        image: { ...photo, licence: "unknown" },
+      }),
+      item("no-file-page", {
+        kind: "proverb",
+        image: { ...photo, filePage: undefined },
+      }),
+    ];
+    expect(eligiblePublications(records).map((entry) => entry.id)).toEqual([
+      "cleared",
     ]);
   });
 

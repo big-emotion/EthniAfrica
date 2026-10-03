@@ -11,6 +11,7 @@
 
 import { createServerClient } from "../../server";
 import { logger } from "@/lib/api/logger";
+import { normaliseSearchQuery } from "@/lib/search/queryNormalisation";
 import { getAfrikPeoplesByIds } from "./peoples";
 import type {
   FtsSearchParams,
@@ -60,12 +61,17 @@ import type { TranslationLocale } from "@/lib/i18n/translationLocale";
  * not a search: peoples are listed for that scope, and no other kind is
  * queried, because nothing was asked of them.
  */
-// @req REQ-002
-export async function ftsSearchEntities(
-  params: FtsSearchParams
+/**
+ * Ranks one query text. Ranking only: near-miss suggestions are attached once,
+ * to the attempt that is finally returned, so a retry costs its RPCs and not a
+ * scan of every name each time.
+ */
+async function rankAttempt(
+  supabase: ReturnType<typeof createServerClient>,
+  params: FtsSearchParams,
+  text: string
 ): Promise<FtsSearchResponse> {
   const {
-    q,
     lens,
     limit,
     offset,
@@ -77,8 +83,6 @@ export async function ftsSearchEntities(
     lang,
   } = params;
 
-  const supabase = createServerClient();
-  const text = q?.trim() ?? "";
   const quizOnly = lens === "quiz";
   // Sent only when the request names a locale. The locale-aware ranking and
   // near-miss functions take `p_lang` since migration 084, with a default, so a call
@@ -223,41 +227,6 @@ export async function ftsSearchEntities(
     quizPayload.total +
     languagePayload.total;
 
-  const visibleNameKeys = new Set([
-    ...peoples.map((item) => nameEntityKey("people", item.id)),
-    ...countries.map((item) => nameEntityKey("country", item.id)),
-    ...families.map((item) => nameEntityKey("family", item.id)),
-  ]);
-  let nameSuggestions: SearchLead[] = [];
-  if (!quizOnly && text) {
-    try {
-      nameSuggestions = await fetchSearchNameSuggestions(
-        supabase,
-        text,
-        total === 0 ? 3 : visibleNameKeys.size + 3,
-        lang
-      );
-    } catch (error) {
-      // A near-name shelf enriches an answered search; it cannot invalidate
-      // the ranked results. Zero-result leads are the answer itself and retain
-      // their existing fail-closed behaviour.
-      if (total === 0) throw error;
-    }
-  }
-  // REQ-125 keeps zero-result recovery distinct from the similar-name
-  // editorial block on an answered search. The latter excludes entities
-  // already present in the grouped result arrays, then keeps the same public
-  // three-item bound.
-  const leads = total === 0 ? nameSuggestions.slice(0, 3) : [];
-  const nearNames: SearchNearName[] =
-    total > 0
-      ? nameSuggestions
-          .filter(
-            (item) => !visibleNameKeys.has(nameEntityKey(item.kind, item.id))
-          )
-          .slice(0, 3)
-      : [];
-
   return {
     peoples,
     countries,
@@ -285,9 +254,172 @@ export async function ftsSearchEntities(
     quizzesTotal: quizPayload.total,
     languagesTotal: languagePayload.total,
     total,
-    leads,
-    nearNames,
+    leads: [],
+    nearNames: [],
   };
+}
+
+// @req REQ-002
+export async function ftsSearchEntities(
+  params: FtsSearchParams
+): Promise<FtsSearchResponse> {
+  const supabase = createServerClient();
+  const text = params.q?.trim() ?? "";
+
+  // A blank text (a relation browse) and the quiz lens are not names: nothing
+  // to clean, nothing to widen.
+  if (!text || params.lens === "quiz") {
+    return attachSuggestions(
+      supabase,
+      params,
+      text,
+      await rankAttempt(supabase, params, text)
+    );
+  }
+
+  const { candidates, tokens } = normaliseSearchQuery(text);
+  // What the reader typed is sent as typed whenever cleaning changed nothing.
+  const attempts = candidates.map((candidate) =>
+    candidate === text.toLowerCase() ? text : candidate
+  );
+
+  let first: FtsSearchResponse | undefined;
+  for (const attempt of attempts) {
+    const found = await rankAttempt(supabase, params, attempt);
+    first ??= found;
+    if (found.total > 0) {
+      return attachSuggestions(supabase, params, attempt, {
+        ...found,
+        ...(attempt !== text && { matchedQuery: attempt }),
+      });
+    }
+  }
+
+  // Every candidate found nothing. Two names typed together — « mandja
+  // egypte » — are one AND that no entry satisfies, so each is asked on its
+  // own. The result is a widening, never an answer about either name alone.
+  if (tokens.length > 0) {
+    const perToken = await Promise.all(
+      tokens
+        .slice(0, MAX_WIDENED_TOKENS)
+        .map((token) => rankAttempt(supabase, params, token))
+    );
+    const widened = mergeAttempts(perToken, params.limit, params.lang);
+    if (widened.total > 0) {
+      return attachSuggestions(supabase, params, attempts[0], {
+        ...widened,
+        widenedFrom: tokens.slice(0, MAX_WIDENED_TOKENS),
+      });
+    }
+  }
+
+  return attachSuggestions(
+    supabase,
+    params,
+    attempts[0] ?? text,
+    first ?? (await rankAttempt(supabase, params, text))
+  );
+}
+
+/** Beyond this a « query » is a sentence, and each name costs seven RPCs. */
+const MAX_WIDENED_TOKENS = 3;
+
+function mergeAttempts(
+  attempts: FtsSearchResponse[],
+  limit: number | undefined,
+  lang: FtsSearchParams["lang"]
+): FtsSearchResponse {
+  const union = <T extends { id: string }>(
+    pick: (a: FtsSearchResponse) => T[]
+  ) => {
+    const seen = new Map<string, T>();
+    for (const row of attempts.flatMap(pick)) {
+      if (!seen.has(row.id)) seen.set(row.id, row);
+    }
+    return [...seen.values()].slice(0, limit);
+  };
+  const sum = (pick: (a: FtsSearchResponse) => number) =>
+    attempts.reduce((all, one) => all + pick(one), 0);
+
+  const peoples = union((a) => a.peoples);
+  const countries = union((a) => a.countries);
+  const families = union((a) => a.families);
+  const persons = union((a) => a.persons);
+  const patronymes = union((a) => a.patronymes);
+  const languages = union((a) => a.languages);
+  const totals = {
+    peoplesTotal: sum((a) => a.peoplesTotal),
+    countriesTotal: sum((a) => a.countriesTotal),
+    familiesTotal: sum((a) => a.familiesTotal),
+    personsTotal: sum((a) => a.personsTotal),
+    patronymesTotal: sum((a) => a.patronymesTotal),
+    languagesTotal: sum((a) => a.languagesTotal),
+  };
+
+  return {
+    peoples,
+    countries,
+    families,
+    persons,
+    patronymes,
+    quizzes: [],
+    languages,
+    results: mergeIntoOneRanking(
+      { peoples, countries, families, persons, patronymes, quizzes: [] },
+      lang ?? "fr"
+    ),
+    ...totals,
+    quizzesTotal: 0,
+    total: Object.values(totals).reduce((all, one) => all + one, 0),
+    leads: [],
+    nearNames: [],
+  };
+}
+
+async function attachSuggestions(
+  supabase: ReturnType<typeof createServerClient>,
+  params: FtsSearchParams,
+  text: string,
+  ranked: FtsSearchResponse
+): Promise<FtsSearchResponse> {
+  const { lens, lang } = params;
+  const { total } = ranked;
+  if (lens === "quiz" || !text) return ranked;
+
+  const visibleNameKeys = new Set([
+    ...ranked.peoples.map((item) => nameEntityKey("people", item.id)),
+    ...ranked.countries.map((item) => nameEntityKey("country", item.id)),
+    ...ranked.families.map((item) => nameEntityKey("family", item.id)),
+  ]);
+  let nameSuggestions: SearchLead[] = [];
+  try {
+    nameSuggestions = await fetchSearchNameSuggestions(
+      supabase,
+      text,
+      total === 0 ? 3 : visibleNameKeys.size + 3,
+      lang
+    );
+  } catch (error) {
+    // A near-name shelf enriches an answered search; it cannot invalidate
+    // the ranked results. Zero-result leads are the answer itself and retain
+    // their existing fail-closed behaviour.
+    if (total === 0) throw error;
+  }
+  // REQ-125 keeps zero-result recovery distinct from the similar-name
+  // editorial block on an answered search. The latter excludes entities
+  // already present in the grouped result arrays, then keeps the same public
+  // three-item bound.
+  const leads = total === 0 ? nameSuggestions.slice(0, 3) : [];
+  const nearNames: SearchNearName[] =
+    total > 0
+      ? nameSuggestions
+          .filter(
+            (item) => !visibleNameKeys.has(nameEntityKey(item.kind, item.id))
+          )
+          .slice(0, 3)
+      : [];
+
+  return { ...ranked, leads, nearNames };
 }
 
 function nameEntityKey(kind: SearchLead["kind"], id: string): string {

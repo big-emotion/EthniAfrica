@@ -28,7 +28,23 @@ runs:
     - name: Start the ephemeral Supabase and apply every migration
       shell: bash
       run: |
-        supabase start -x realtime,imgproxy,mailpit,postgres-meta,studio,edge-runtime,logflare,vector,supavisor
+        # setup-cli points the CLI at ghcr.io, which answers `toomanyrequests`
+        # to shared runners during a GitHub incident — measured 2026-09-23,
+        # when every re-run of three PR gates died in this step for over an
+        # hour. The CLI has no fallback of its own, so each registry is tried
+        # in turn; Supabase publishes the same images to public.ecr.aws.
+        # A failed attempt leaves half-created containers that would make
+        # the next `start` refuse, hence the `stop` between them.
+        for registry in ghcr.io public.ecr.aws ghcr.io; do
+          if SUPABASE_INTERNAL_IMAGE_REGISTRY="$registry" supabase start \
+            -x realtime,imgproxy,mailpit,postgres-meta,studio,edge-runtime,logflare,vector,supavisor; then
+            exit 0
+          fi
+          echo "::warning::supabase start failed against $registry, retrying"
+          supabase stop --no-backup || true
+          sleep 20
+        done
+        exit 1
 
     # Exported to $GITHUB_ENV, not just this step's own output: the calling
     # job's later steps (build, start the app, run the gate itself) read

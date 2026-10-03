@@ -1,0 +1,266 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "patronyme",
+    "directives": "Dossier fondé sur des sources externes, dont plusieurs communautaires ; ne pas étendre les affirmations sans source dédiée."
+  },
+  "id": "PAT_DIAWARA",
+  "nameMain": "Diawara",
+  "nameSystem": "clan_name",
+  "spellings": [
+    {
+      "spelling": "Diawara",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": [
+            "interpeace-autoportrait-mali-2015",
+            "forebears-diawara"
+          ]
+        },
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["forebears-diawara"]
+        },
+        {
+          "countryId": "SEN",
+          "sourceRefs": ["forebears-diawara"]
+        },
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["forebears-diawara"]
+        },
+        {
+          "countryId": "MRT",
+          "sourceRefs": ["forebears-diawara"]
+        }
+      ]
+    },
+    {
+      "spelling": "Jawara",
+      "attestations": [
+        {
+          "countryId": "GMB",
+          "sourceRefs": ["forebears-jawara"]
+        },
+        {
+          "countryId": "SLE",
+          "sourceRefs": ["forebears-jawara"]
+        },
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
+    }
+  ],
+  "transmissionMode": "patrilineal",
+  "designatedSocialUnit": "clan",
+  "origin": {
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "linguisticReconstructions": [
+      {
+        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
+        "claimStatus": "established",
+        "sourceRefs": ["jansen-sunjata-paradigm"]
+      },
+      {
+        "claim": "Le dictionnaire des jamuw note le nom Jáwara. Diawara en est la transcription française usuelle, et Jawara la graphie qui domine en Gambie et en Sierra Leone.",
+        "claimStatus": "claimed",
+        "sourceRefs": [
+          "bamadaba-jamuw",
+          "forebears-diawara",
+          "forebears-jawara"
+        ]
+      },
+      {
+        "claim": "Le nom compte parmi les noms de famille sarakollé (soninké) du Mali, et une liste communautaire soninké lui attache deux seconds noms (jammu kare), Dicko et Molodji.",
+        "claimStatus": "claimed",
+        "sourceRefs": [
+          "interpeace-autoportrait-mali-2015",
+          "soninkara-noms-soninke"
+        ]
+      },
+      {
+        "claim": "Le dictionnaire des jamuw rattache l'entrée à la fois aux Soninké et aux Malinké : le nom se retrouve dans les deux mondes, et aucune source consultée ne dit dans lequel il est né. L'origine du nom n'est pas établie.",
+        "claimStatus": "contested",
+        "sourceRefs": ["bamadaba-jamuw", "interpeace-autoportrait-mali-2015"]
+      }
+    ]
+  },
+  "peoples": [
+    {
+      "peopleId": "PPL_SONINKE",
+      "status": "attested",
+      "sourceRefs": [
+        "interpeace-autoportrait-mali-2015",
+        "bamadaba-jamuw",
+        "soninkara-noms-soninke"
+      ]
+    },
+    {
+      "peopleId": "PPL_MALINKE",
+      "status": "supposed",
+      "sourceRefs": ["bamadaba-jamuw"]
+    }
+  ],
+  "countries": [
+    {
+      "countryId": "MLI",
+      "status": "attested",
+      "sourceRefs": ["interpeace-autoportrait-mali-2015", "forebears-diawara"]
+    },
+    {
+      "countryId": "GIN",
+      "status": "attested",
+      "sourceRefs": ["forebears-diawara"]
+    },
+    {
+      "countryId": "SEN",
+      "status": "attested",
+      "sourceRefs": ["forebears-diawara"]
+    },
+    {
+      "countryId": "CIV",
+      "status": "attested",
+      "sourceRefs": ["forebears-diawara"]
+    },
+    {
+      "countryId": "MRT",
+      "status": "attested",
+      "sourceRefs": ["forebears-diawara"]
+    },
+    {
+      "countryId": "GMB",
+      "status": "attested",
+      "sourceRefs": ["forebears-jawara"]
+    },
+    {
+      "countryId": "SLE",
+      "status": "attested",
+      "sourceRefs": ["forebears-jawara"]
+    }
+  ],
+  "alliances": [
+    {
+      "targetPatronymeId": "PAT_TRAORE",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    }
+  ],
+  "casteOrSocialFunction": {
+    "value": "Le dictionnaire des jamuw attache à l'entrée trois statuts : hɔ̀rɔn (homme libre), jèli (griot) et garanke, terme de statut qu'il ne glose pas. Un même nom recouvre donc plusieurs conditions sociales, et une intervention sur un forum communautaire soninké range de son côté des Diawara parmi les garanke.",
+    "sourceRefs": ["bamadaba-jamuw", "soninkara-forum-noms-soninke"]
+  },
+  "bearers": [],
+  "homonyms": [
+    {
+      "label": "Diawara (groupe des cercles de Nioro et de Nara)",
+      "entityType": "people",
+      "entityId": null,
+      "distinction": "Dans les cercles de Nioro et de Nara, au Mali, des Diawara forment un groupe qui parle la langue des Sarakollé tout en se distinguant d'eux par certaines pratiques coutumières : le mot désigne alors ce groupe, et pas seulement un nom de clan porté ailleurs.",
+      "sourceRefs": ["interpeace-autoportrait-mali-2015"]
+    }
+  ],
+  "sources": [
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs : la ligne des termes de statut porte les mots mandingues eux-mêmes ; le marqueur de groupe son est confirmé par la notice de l'entrée Wago, qui énumère des jamuw soninké, et le marqueur m est retenu comme indice malinké par comparaison avec l'entrée Kéyità, qu'une autre de nos fiches documente comme jamu malinké ; les autres marqueurs de groupe ne sont pas exploités ici. Les notes libres des entrées sont rédigées en russe et traduites ici par nous. L'entrée Jáwara porte trois termes de statut (hɔ̀rɔn, jèli, garanke) et deux marqueurs de groupe exploitables (son et m). Sa rubrique de lien de plaisanterie ne nomme aucun clan, seulement le terme de statut garanke. C'est l'entrée Tàrawéle (Traoré) qui porte, elle, un lien de plaisanterie vers Jawara ; les liens de ce type ne sont pas systématiquement réciproques d'une entrée à l'autre, et celui-ci est cité d'après l'entrée qui le porte."
+    },
+    {
+      "sourceKey": "interpeace-autoportrait-mali-2015",
+      "title": "Autoportrait du Mali — Les Obstacles à la Paix",
+      "url": "https://www.interpeace.org/wp-content/uploads/2015/03/2015_03_02_Mali_Autoportrait_FR.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Rapport de recherche-action de l'Institut malien de recherche action pour la paix avec Interpeace, en partenariat avec les Nations unies, mars 2015. Son chapitre sur les diversités socioculturelles donne, pour chaque grand groupe du Mali, quelques noms de famille suivis de « etc. » : la liste est illustrative, sans méthode d'établissement ni source indiquée. Elle atteste qu'un nom est porté dans un groupe, non d'où il vient."
+    },
+    {
+      "sourceKey": "soninkara-noms-soninke",
+      "title": "Les noms de famille avec leur jammu kare",
+      "url": "http://www.soninkara.com/societe/organisation-sociale/les-noms-de-famille-avec-leur-jammu-kare.html",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Portail communautaire soninké, page d'organisation sociale sans auteur académique identifié : liste non exhaustive, constituée par les internautes du portail, des seconds noms (jammu kare) donnés aux noms de famille soninké. Le jammu kare est, dit la page, le second nom qui s'ajoute à un nom de famille et lui sert d'identifiant. Consultée dans une copie archivée du 12 décembre 2024. On n'en retire ici que la présence du nom dans la liste et ses seconds noms : la liste ne dit rien de leur origine."
+    },
+    {
+      "sourceKey": "soninkara-forum-noms-soninke",
+      "title": "Les noms de Famille d'Origine Soninké",
+      "url": "https://www.soninkara.com/forums/de-l-origine-des-soninke/les-noms-de-famille-d-origine-soninke-530.html",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Fil de discussion du forum du portail communautaire Soninkara.com, ouvert en décembre 2006 et poursuivi jusqu'en 2011 : des contributeurs, sous pseudonyme, y dressent des listes de noms qu'ils tiennent pour soninké. Les listes se recoupent en partie et se contredisent : plusieurs intervenants rappellent que beaucoup de noms portés aujourd'hui par des Soninké ne sont pas soninké à l'origine, et l'un d'eux demande de distinguer les noms soninké des noms d'origine soninké. Consulté dans une copie archivée de 2024."
+    },
+    {
+      "sourceKey": "jansen-sunjata-paradigm",
+      "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
+      "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
+    },
+    {
+      "sourceKey": "canut-2002-senankuya",
+      "title": "Pouvoir, places et filiation : les senankuya au Mali",
+      "url": "https://journals.openedition.org/praxematique/2307",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Canut, Cécile, Cahiers de praxématique, numéro 38, 2002, p. 175-197. Enquête de terrain au Mali. Elle énonce ce que le pacte oblige : la relation vaut à perpétuité pour toute la descendance des deux lignées, le mariage entre elles est prohibé — diversement appliqué aujourd'hui, précise-t-elle — et l'entraide y est due sans réserve. Citée pour l'obligation elle-même ; elle ne nomme pas la paire de cette fiche, que portent les entrées citées à côté d'elle."
+    },
+    {
+      "sourceKey": "canut-smith-2006-pactes",
+      "title": "Pactes, alliances et plaisanteries. Pratiques locales, discours global",
+      "url": "https://doi.org/10.4000/etudesafricaines.6198",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Canut, Cécile, et Smith, Étienne, Cahiers d'études africaines, numéro 184, 2006, p. 687 et suivantes. Citée pour la mise en garde qu'elle porte : l'idée que la parenté à plaisanterie apaiserait les conflits y est traitée comme une hypothèse héritée de Radcliffe-Brown et reprise par les études sur la résolution des conflits, donc comme un discours à analyser et non comme un effet mesuré. La page de début est vérifiée, la page de fin ne l'est pas."
+    },
+    {
+      "sourceKey": "forebears-diawara",
+      "title": "Diawara — origine, signification et incidence du nom de famille",
+      "url": "https://forebears.io/surnames/diawara",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Agrégateur généalogique mondial, consulté le 29 septembre 2026. Incidence mondiale d'environ 208 983 porteurs ; Mali 117 582, Guinée 54 617, Sénégal 16 168, Côte d'Ivoire 6 591, Mauritanie 4 008, France 2 925. La page ne donne aucune signification du nom. Les effectifs hors d'Afrique ne sont pas repris dans les attestations de cette fiche."
+    },
+    {
+      "sourceKey": "forebears-jawara",
+      "title": "Jawara — origine, signification et incidence du nom de famille",
+      "url": "https://forebears.io/surnames/jawara",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Agrégateur généalogique mondial, consulté le 29 septembre 2026. Incidence mondiale d'environ 23 279 porteurs ; Gambie 12 497, Sierra Leone 9 341, Espagne 481, États-Unis 275, Liberia 195. La page ne donne aucune signification du nom. Les effectifs hors d'Afrique ne sont pas repris dans les attestations de cette fiche."
+    }
+  ],
+  "gaps": [
+    {
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Nous n'avons trouvé aucune tradition orale rapportant l'origine de ce nom."
+    },
+    {
+      "fieldPath": "origin.writtenChronicles",
+      "reason": "Nous n'avons trouvé aucune chronique écrite qui mentionne l'origine de ce nom."
+    },
+    {
+      "fieldPath": "origin.linguisticReconstructions",
+      "reason": "Aucune étymologie de ce nom n'est établie dans les sources consultées : nous ne proposons aucune signification."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "Nous ne nommons aucun porteur : aucune source consultée n'en cite qui soit décédé et dont l'appartenance à ce nom soit établie."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "Le dictionnaire des jamuw porte un lien de plaisanterie de Traoré vers Diawara, mais aucun lien nommé sur l'entrée de Diawara elle-même : nous ne retenons que le lien porté par l'entrée qui le contient."
+    }
+  ]
+}

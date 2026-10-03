@@ -528,4 +528,54 @@ describe("FamilyParchment — provenance addressed to the reader", () => {
     expect(gap?.querySelector("h3")).toBeNull();
     expect(gap?.querySelector("code")).toBeNull();
   });
+
+  // @req REQ-151
+  it("opens on the history of the name, before the figures chapter", () => {
+    const { container } = renderParchment();
+
+    const chapters = [...container.querySelectorAll("[data-fiche-section]")];
+    expect(chapters[0]).toHaveAttribute(
+      "data-fiche-section",
+      "L’histoire des noms"
+    );
+    expect(chapters[0]).toHaveTextContent("Diedrich Westermann");
+    expect(chapters[1]).toHaveAttribute(
+      "data-fiche-section",
+      "La famille en chiffres"
+    );
+  });
+
+  // @req REQ-151
+  it("draws no name chapter when the fiche holds neither a form nor an origin", () => {
+    const data = undeclaredFamily();
+    data.decolonialHeader.originOfHistoricalTerm = null;
+    data.decolonialHeader.selfAppellation = null;
+    const { container } = renderParchment(data);
+
+    expect(screen.queryByTestId("fiche-name-story")).toBeNull();
+    expect(container.querySelector("[data-fiche-section]")).not.toHaveAttribute(
+      "data-fiche-section",
+      "L’histoire des noms"
+    );
+  });
+
+  // @req REQ-151
+  it("carries the family's caution into the name story only when the fiche fills it", () => {
+    const data = undeclaredFamily();
+    renderParchment(data);
+    expect(screen.queryByTestId("name-story-caution")).toBeNull();
+  });
+
+  // @req REQ-151
+  it("shows the family's caution inside the name story when filled", () => {
+    const data = undeclaredFamily();
+    data.decolonialHeader.whyProblematic =
+      "Sous l'apartheid, ce terme servait de catégorie raciale légale. Des intellectuels africains l'ont critiqué.";
+    renderParchment(data);
+
+    const story = screen.getByTestId("fiche-name-story");
+    expect(within(story).getByTestId("name-story-caution")).toHaveTextContent(
+      "catégorie raciale légale."
+    );
+  });
 });

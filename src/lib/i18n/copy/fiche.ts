@@ -9,6 +9,9 @@ const en = {
    * the same invitation would read as three different things to do.
    */
   contribute: "Contribute",
+  /** The map is opt-in on a fiche: the reader lands on the reading. */
+  showMap: "Show the map",
+  hideMap: "Hide the map",
   /** The tile a record's bibliography folds into. */
   sourcesList: "The list",
   /**
@@ -115,6 +118,8 @@ const fr: FicheCopy = {
   sourceTierNote:
     "Chaque source porte son palier — l'autorité qu'on peut lui accorder.",
   contribute: "Contribuer",
+  showMap: "Voir la carte",
+  hideMap: "Masquer la carte",
   sourcesList: "La liste",
   languages: {
     main: "Langue principale",

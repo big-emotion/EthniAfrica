@@ -5,8 +5,7 @@
  *
  * Background
  * ----------
- * The TEA test-design architecture (_bmad-output/test-artifacts/test-design/
- * test-design-architecture.md) names R-2 ("per-assertion data-model migration")
+ * The TEA test-design architecture names R-2 ("per-assertion data-model migration")
  * as one of the three score-9 Phase-1 risks and pins ASR-4 ("per-assertion
  * stable IDs in fiche content") as the mitigation. The mitigation playbook is:
  *

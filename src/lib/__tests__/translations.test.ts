@@ -44,7 +44,7 @@ describe("the UI dictionary in both locales (REQ-145)", () => {
   it("keeps the French hub titles on the canonical access-mode map", () => {
     expect(translations.fr.hubs.atlas.title).toBe(ACCESS_MODE_LABELS.atlas);
     expect(translations.en.hubs.atlas.title).toBe("Browse");
-    expect(translations.en.hubs.dossiers.title).toBe("The dossiers");
+    expect(translations.en.hubs.dossiers.title).toBe("Articles");
     expect(translations.en.hubs.jeux.title).toBe("Play");
   });
 

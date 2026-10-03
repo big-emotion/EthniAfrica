@@ -1,0 +1,404 @@
+{
+  "fixture": true,
+  "_note": "Synthetic. Placeholders, not historical evidence. One name, one documented origin: a single carousel proposal, no invented competitor. The selection is labelled synthetic and never counts as an operator decision.",
+  "carouselProfile": "reading-story",
+  "strategy": {
+    "basis": "exploratory",
+    "reason": "synthetic fixture"
+  },
+  "question": "D'où vient le nom Example ?",
+  "beats": [
+    {
+      "id": "b1",
+      "purpose": "the question",
+      "claims": ["c1"]
+    },
+    {
+      "id": "b2",
+      "purpose": "the proposed origin",
+      "claims": ["c1"]
+    }
+  ],
+  "uncertainties": ["the first attestation rests on one source"],
+  "carouselSequence": [
+    {
+      "step": "f1",
+      "purpose": "Say which name and ask its source."
+    },
+    {
+      "step": "f2",
+      "purpose": "Give the 'river' meaning and its language."
+    },
+    {
+      "step": "f3",
+      "purpose": "Date the attestation as an attestation; the writer is unknown."
+    },
+    {
+      "step": "f4",
+      "purpose": "Say what is documented of later use, then what is proposed and open."
+    },
+    {
+      "step": "f5",
+      "purpose": "Sources and the project invitation."
+    }
+  ],
+  "edition": {
+    "id": "fx-single-origin-carousel-001",
+    "subject": {
+      "key": "peuple:FXP",
+      "label": "Peuple · Example"
+    },
+    "angle": {
+      "id": "origin-explained",
+      "question": "D'où vient le nom Example ?"
+    },
+    "family": "name-investigation",
+    "format": "carrousel",
+    "readiness": "brouillon",
+    "claims": [
+      {
+        "id": "c1",
+        "kind": "name-origin",
+        "sources": [
+          {
+            "tier": "referenced",
+            "ref": "s1"
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "kind": "name-origin",
+        "sources": [
+          {
+            "tier": "unverified",
+            "ref": "s2"
+          }
+        ]
+      }
+    ],
+    "media": [],
+    "intendedNetworks": ["instagram"],
+    "occurrences": []
+  },
+  "narrativeDesign": {
+    "version": 1,
+    "format": "carrousel",
+    "subject": "Example (synthetic people)",
+    "scope": "One social-only name investigation as a carousel; the reading-story profile sets the card count.",
+    "research": {
+      "sources": [
+        {
+          "id": "s1",
+          "locator": "synthetic fixture, source 1",
+          "tier": "referenced",
+          "access": "read"
+        },
+        {
+          "id": "s2",
+          "locator": "synthetic fixture, source 2",
+          "tier": "unverified",
+          "access": "indirect",
+          "missing": "page number not supplied"
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "kind": "name-origin",
+          "text": "The name Example is said to come from a word meaning 'river' in the language of the people.",
+          "sources": ["s1"],
+          "status": "sourced",
+          "uncertainty": "The gloss is reported by one author."
+        },
+        {
+          "id": "c2",
+          "kind": "name-origin",
+          "text": "The form is first written down in a traveller's list in an unknown year.",
+          "sources": ["s2"],
+          "status": "qualified",
+          "uncertainty": "Cited second-hand; the year is not in the supplied material."
+        }
+      ],
+      "unknowns": [
+        {
+          "id": "u1",
+          "text": "Who first wrote the form down is not identified."
+        }
+      ]
+    },
+    "patternAssessment": [
+      {
+        "patternId": "origin-explained",
+        "disposition": "offered",
+        "proposals": ["p1"]
+      },
+      {
+        "patternId": "competing-explanations",
+        "disposition": "unsupported",
+        "reason": "Only one account exists in the supplied material; a rival would have to be invented."
+      },
+      {
+        "patternId": "chronological-trajectory",
+        "disposition": "unsupported",
+        "reason": "A single undated attestation gives no sequence to explain."
+      },
+      {
+        "patternId": "naming-perspectives",
+        "disposition": "inapplicable",
+        "reason": "No outside name is in play; the question is one name's source."
+      },
+      {
+        "patternId": "name-circulation",
+        "disposition": "unsupported",
+        "reason": "No carrier or route is documented."
+      },
+      {
+        "patternId": "turning-point",
+        "disposition": "inapplicable",
+        "reason": "No event is attached to this name."
+      },
+      {
+        "patternId": "historical-actor",
+        "disposition": "unsupported",
+        "reason": "The person who wrote the form down is unknown (u1)."
+      },
+      {
+        "patternId": "clarifying-comparison",
+        "disposition": "inapplicable",
+        "reason": "Only one case is documented."
+      },
+      {
+        "patternId": "anecdote-entry",
+        "disposition": "inapplicable",
+        "reason": "No concrete scene is documented."
+      },
+      {
+        "patternId": "received-claim-examined",
+        "disposition": "inapplicable",
+        "reason": "No held belief about this name is attested."
+      }
+    ],
+    "proposals": [
+      {
+        "id": "p1",
+        "patternId": "origin-explained",
+        "family": "name-investigation",
+        "series": null,
+        "profile": "reading-story",
+        "cardCount": 5,
+        "countReason": "One documented account needs a question, the gloss, its first trace, the answer and the credits.",
+        "question": "D'où vient le nom Example ?",
+        "intention": "Teach the one proposed origin and how firmly it is held.",
+        "application": "The 'river' gloss (c1), the traveller's list where the form first appears (c2), and the unknown writer (u1), stated as unknown.",
+        "claimRefs": ["c1", "c2", "u1"],
+        "takeaways": [
+          {
+            "id": "t1",
+            "text": "The proposed origin is a word meaning 'river', reported by one author."
+          },
+          {
+            "id": "t2",
+            "text": "A first written trace is not the creation of the name."
+          }
+        ],
+        "successCriteria": [
+          {
+            "id": "sc1",
+            "prompt": "Complete: 'The name is said to come from …, according to a single reported gloss.'",
+            "expected": "A word meaning 'river'; the limit is that one author reports it.",
+            "takeawayIds": ["t1"],
+            "claimRefs": ["c1"]
+          },
+          {
+            "id": "sc2",
+            "prompt": "Complete: 'The list shows the form was written by then; it does not show …'",
+            "expected": "It does not show who created the name or when; the writer is unknown.",
+            "takeawayIds": ["t2"],
+            "claimRefs": ["c2", "u1"]
+          }
+        ],
+        "referenceExample": {
+          "status": "hypothetical",
+          "text": "A river-side town name glossed by one author and first listed by an unnamed traveller."
+        },
+        "arrangement": {
+          "steps": [
+            {
+              "move": "the question",
+              "functions": ["B1"],
+              "purpose": "Say which name and ask its source.",
+              "claimRefs": ["c1"],
+              "composition": "cover"
+            },
+            {
+              "move": "the gloss",
+              "functions": ["B2"],
+              "purpose": "Give the 'river' meaning and its language.",
+              "claimRefs": ["c1"],
+              "composition": "document"
+            },
+            {
+              "move": "the first trace",
+              "functions": ["B3"],
+              "purpose": "Date the attestation as an attestation; the writer is unknown.",
+              "claimRefs": ["c2", "u1"],
+              "composition": "document"
+            },
+            {
+              "move": "the answer",
+              "functions": ["B4", "B5"],
+              "purpose": "Say what is documented of later use, then what is proposed and open.",
+              "claimRefs": ["c1", "c2", "u1"],
+              "composition": "portrait"
+            },
+            {
+              "move": "the credits",
+              "functions": ["B6"],
+              "purpose": "Sources and the project invitation.",
+              "claimRefs": [],
+              "composition": "credits"
+            }
+          ],
+          "omitted": [],
+          "adaptations": []
+        },
+        "particularity": "One account, so no rival is invented.",
+        "rationale": "Only one account is documented, so the plain origin story is the honest shape."
+      }
+    ],
+    "recommendation": {
+      "proposalId": "p1",
+      "reason": "The only proposal the evidence supports."
+    },
+    "selection": {
+      "proposalId": "p1",
+      "kind": "synthetic",
+      "statement": "SYNTHETIC test selection, not an operator decision.",
+      "locator": "test fixture",
+      "date": "2026-09-30"
+    },
+    "outline": {
+      "proposalId": "p1",
+      "countReason": "Five cards: one per idea, inside the profile's 4–9 range.",
+      "cards": [
+        {
+          "id": "f1",
+          "functions": ["B1"],
+          "heading": "D'où vient le nom Example ?",
+          "headingKind": "question",
+          "message": "Ask where the name Example comes from: the name, not the history around it.",
+          "evidence": {
+            "claimRefs": ["c1"],
+            "limits": "One question, no answer yet."
+          },
+          "qualification": "One question, no answer yet.",
+          "sourceLine": "",
+          "composition": "cover",
+          "visualIntention": "A recognisable subject, no invented portrait.",
+          "transition": "Next: Un mot pour « fleuve »",
+          "supports": {
+            "takeawayIds": ["t1"],
+            "criterionIds": []
+          }
+        },
+        {
+          "id": "f2",
+          "functions": ["B2"],
+          "heading": "Un mot pour « fleuve »",
+          "headingKind": "label",
+          "message": "Explain the gloss 'river' in the people's language and who reports it.",
+          "evidence": {
+            "claimRefs": ["c1"],
+            "limits": "Reported by one author; not confirmed elsewhere."
+          },
+          "qualification": "Reported by one author; not confirmed elsewhere.",
+          "sourceLine": "Synthetic source 1",
+          "composition": "document",
+          "visualIntention": "A real page if one exists; otherwise revisit the plan.",
+          "transition": "Next: Une première trace écrite",
+          "supports": {
+            "takeawayIds": ["t1"],
+            "criterionIds": ["sc1"]
+          }
+        },
+        {
+          "id": "f3",
+          "functions": ["B3"],
+          "heading": "Une première trace écrite",
+          "headingKind": "label",
+          "message": "Show the traveller's list as the first written trace; writer and year are unknown.",
+          "evidence": {
+            "claimRefs": ["c2", "u1"],
+            "limits": "Cited second-hand; no year is supplied."
+          },
+          "qualification": "Cited second-hand; no year is supplied.",
+          "sourceLine": "Synthetic source 2",
+          "composition": "document",
+          "visualIntention": "The list page, credited; nothing invented.",
+          "transition": "Next: Ce que l'on peut retenir",
+          "supports": {
+            "takeawayIds": ["t2"],
+            "criterionIds": ["sc2"]
+          }
+        },
+        {
+          "id": "f4",
+          "functions": ["B4", "B5"],
+          "heading": "Ce que l'on peut retenir",
+          "headingKind": "label",
+          "message": "Later use is barely documented; the proposed origin is 'river'; the first trace is undated; the writer is unknown.",
+          "evidence": {
+            "claimRefs": ["c1", "c2", "u1"],
+            "limits": "One reported gloss and an undated trace; nothing is settled."
+          },
+          "qualification": "One reported gloss and an undated trace; nothing is settled.",
+          "sourceLine": "Synthetic sources 1 and 2",
+          "composition": "portrait",
+          "visualIntention": "The subject, with a dated line.",
+          "transition": "Next: Une source à ajouter ?",
+          "supports": {
+            "takeawayIds": ["t1", "t2"],
+            "criterionIds": ["sc1", "sc2"]
+          }
+        },
+        {
+          "id": "f5",
+          "functions": ["B6"],
+          "heading": "Une source à ajouter ?",
+          "headingKind": "question",
+          "message": "Invite a source or a transmitted account, with the references in the open.",
+          "evidence": {
+            "claimRefs": [],
+            "limits": "An invitation, not a new claim."
+          },
+          "qualification": "An invitation, not a new claim.",
+          "sourceLine": "Full references in the caption",
+          "composition": "credits",
+          "visualIntention": "Readable credits and the project connection.",
+          "transition": "End.",
+          "supports": {
+            "takeawayIds": [],
+            "criterionIds": []
+          }
+        }
+      ],
+      "rationale": {
+        "patternFit": "One documented account: origin-explained does not invent a rival.",
+        "orderLogic": "The gloss comes first, then its first trace, then the answer, then the credits."
+      },
+      "successStatements": [
+        {
+          "criterionId": "sc1",
+          "statement": "Le nom viendrait d'un mot signifiant « fleuve », selon un seul auteur."
+        },
+        {
+          "criterionId": "sc2",
+          "statement": "La liste montre que la forme existait à l'écrit ; elle ne dit ni qui l'a créée ni quand."
+        }
+      ],
+      "unresolved": []
+    },
+    "presentation": null
+  }
+}

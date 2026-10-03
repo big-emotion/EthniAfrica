@@ -645,14 +645,6 @@ export function SiteHeader({
                 </h3>
                 {expanded ? (
                   <div id={`sh-fold-${axis}`} className="sh-fold-body">
-                    {axis === "dossiers" ? (
-                      <ActionLink
-                        href={getLocalizedRoute(language, "dossiersHub")}
-                        onClick={() => setTrayOpen(false)}
-                      >
-                        {t.chrome.allDossiers}
-                      </ActionLink>
-                    ) : null}
                     {axisModules(axis, "tray")}
                   </div>
                 ) : null}

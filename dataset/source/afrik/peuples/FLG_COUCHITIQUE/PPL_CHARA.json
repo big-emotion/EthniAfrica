@@ -19,7 +19,7 @@
     },
     "ethnicities": ["Chara", "Gimira"],
     "origins": {
-      "ancientOrigins": "Les Chara font partie des peuples Gimira d'Éthiopie. Leur langue appartient à la branche Omotic nord de la famille afro-asiatique, dans la sous-branche Gonga-Gimojan, groupe Ometo-Gimira. Bien que classés dans les dossiers du projet sous FLG_COUCHITIQUE, les Chara sont linguistiquement Omotic, un groupe autrefois appelé Couchitique occidental et désormais reconnu comme famille distincte.",
+      "ancientOrigins": "Les Chara font partie des peuples Gimira d'Éthiopie. Leur langue appartient à la branche Omotic nord de la famille afro-asiatique, dans la sous-branche Gonga-Gimojan, groupe Ometo-Gimira. Bien que classés dans les dossiers du projet sous la famille couchitique, les Chara sont linguistiquement Omotic, un groupe autrefois appelé Couchitique occidental et désormais reconnu comme famille distincte.",
       "formationPeriod": "Les Chara occupent depuis des temps anciens les hauts plateaux de Kaffa et la région du Debub Omo dans le sud-ouest de l'Éthiopie. Leur nombre a été considérablement réduit par l'esclavage et les guerres, notamment lors de l'incorporation forcée dans l'Empire éthiopien à la fin du XIXe siècle.",
       "migrationRoutes": [],
       "historicalSettlementZones": [
@@ -36,7 +36,7 @@
       "clanOrganization": null,
       "ageClassSystems": null,
       "roleOfLineages": null,
-      "religiousAuthority": "La vie religieuse Chara est syncrétique, mêlant le Christianisme orthodoxe oriental (Tewahedo) hérité des contacts avec l'Église éthiopienne et des pratiques religieuses tribales traditionnelles. Bien que classés sous FLG_COUCHITIQUE dans ce projet, les Chara partagent des pratiques avec leurs voisins Omotic."
+      "religiousAuthority": "La vie religieuse Chara est syncrétique, mêlant le Christianisme orthodoxe oriental (Tewahedo) hérité des contacts avec l'Église éthiopienne et des pratiques religieuses tribales traditionnelles. Bien que classés sous la famille couchitique dans ce projet, les Chara partagent des pratiques avec leurs voisins Omotic."
     },
     "languages": {
       "mainLanguage": "Chara (cra)",

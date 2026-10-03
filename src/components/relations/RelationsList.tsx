@@ -41,8 +41,8 @@ export interface RelationsListProps {
  * Mirrors the active filter types into the URL via `history.replaceState`
  * — deliberately not `next/navigation`'s `useRouter`/`useSearchParams`,
  * which require an App Router context that Storybook's
- * `@storybook/react-vite` framework does not provide (project-context.md's
- * Storybook constraint; see NamesAtlasView for the precedent).
+ * `@storybook/react-vite` framework does not provide (the Storybook
+ * constraint recorded in CLAUDE.md; see NamesAtlasView for the precedent).
  */
 function syncUrl(activeTypes: RelationBadgeType[]) {
   if (typeof window === "undefined") return;

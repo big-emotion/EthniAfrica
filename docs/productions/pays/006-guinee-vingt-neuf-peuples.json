@@ -1,0 +1,33 @@
+{
+  "campaign": "guinee-vingt-neuf-peuples",
+  "typologie": "pays",
+  "episode": 6,
+  "question": {
+    "fr": "D'où vient le nom Guinée ?"
+  },
+  "myth": {
+    "fr": "La Guinée, c'est vingt-neuf peuples : son nom en nomme-t-il un seul ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "GIN",
+      "label": { "fr": "Guinée" }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/GIN",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7686225332197657878",
+      "publishedAt": "2026-09-17"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/DdXGE_bCBNZ/",
+      "publishedAt": "2026-09-17"
+    }
+  ]
+}

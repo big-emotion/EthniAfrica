@@ -42,7 +42,32 @@ This is doctrine for the _data_ this directory versions. The actual on-screen
 card copy is authored in `cards.json` by `ethniafrica-structure`, and the same
 rule applies there once that skill is updated to write to this ledger.
 
+## Scope of this ledger — operator direction, 2026-09-27
+
+**This directory is the name series' ledger, not the whole workshop's.** The
+rules below (the `?`-ending question and myth, the five typologies, the
+network × format gate, the Monday/Wednesday/Friday appointments) describe the
+name-origin series. Social stories that are not about a name — a portrait, a
+circulation, a listening, a comparison, a material biography — are recorded in
+the private library, never here, and never with a fabricated site path or myth.
+Their shared vocabulary (subject, angle, edition, publication occurrence,
+narrative family, scoped reviews) is
+[EDITORIAL-CONTRACT.md](../design/gabarits-social/EDITORIAL-CONTRACT.md).
+A `publications[]` row below is exactly what that contract calls a publication
+occurrence: publishing one network's row never closes the subject, and a
+repeated angle or a same-angle adaptation is legitimate.
+
 ## The fixed format
+
+**Scope exception, 2026-09-25:**
+[Mémoires sonores](../design/gabarits-social/MEMOIRES-SONORES.md) is a separate
+recurring feature within EthniAfrica: three musical carousel subjects every other
+Sunday, each for TikTok and Instagram only. The Monday/Wednesday/Friday,
+name-origin and mandatory-myth rules below describe the existing name series,
+not this feature. Musical posts are registered in the private library with
+`register-post.mjs --profile memoires-sonores`, not in this site's name-origin
+ledger. Selected launch subjects are not publication records. Do not file them
+under a fabricated name category or invent a site route.
 
 - **Three publication days**: Monday, Wednesday, Friday.
 - **A connected subject sequence with flexible depth**, at the cadence stated
@@ -122,6 +147,15 @@ It introduces the connected series; it is not a name-origin episode or a
 vocabulary word. Its record is
 [introduction/comprendre-afrique-noms.json](introduction/comprendre-afrique-noms.json).
 
+A second unnumbered record,
+[introduction/pourquoi-la-meconnaissance-freine-l-afrique.json](introduction/pourquoi-la-meconnaissance-freine-l-afrique.json),
+files the operator's message video of 2026-09-23 (« Pourquoi ignorer nos noms
+freine l'Afrique ? »). It is an exceptional piece decided by the operator, outside
+the five typologies and the `mot` exception, with no episode and no myth. It uses
+this record type only because it is the one that holds a piece with neither. Its
+carousel, to be published later, cannot be registered here for the reason given
+below.
+
 - `typologie` is `introduction`; `episode` and `myth` must be explicitly `null`.
   No episode zero or invented audience belief is required.
 - `subjects` is empty and `sitePath` is `/fr/about`: the piece explains the
@@ -136,8 +170,11 @@ vocabulary word. Its record is
 
 ## Current cadence — operator revision, 2026-09-22
 
-**Monday, Wednesday and Friday remain the publication appointments. The ordered
-subject sequence governs their contents, not a fixed number of new subjects.**
+**Since 2026-09-27 this cadence is a planning aid for the name series, not an
+obligation: a ready edition may have no date, and no weekday is mandatory
+(see the scope section above).** When the name series is scheduled, Monday,
+Wednesday and Friday remain its appointments. The ordered
+subject sequence governs their contents, not a fixed number of new subjects.
 The operator explicitly left the choice of two or three weekly subjects open:
 a complex subject may occupy several appointments or return in a later chapter.
 

@@ -68,7 +68,7 @@
       "majorRites": "Le calendrier rituel Vodun structure la vie fon : cérémonies de possession (prêtres et médiums reçoivent les esprits lors des grands festivals), funérailles élaborées avec percussions et danses (peuvent durer plusieurs jours), anniversaires de décès. Chaque foyer possède un autel ancestral (Dexoxo). La fête nationale du Vodun (10 janvier) réunit des pèlerins du monde entier à Ouidah. Les Agojie (femmes soldats) avaient leurs propres rites d'initiation militaire et spirituelle.",
       "symbols": "Le trône d'Abomey et les bas-reliefs polychromes du palais royal (UNESCO). Les statuettes en bois pour le culte ancestral. Le symbole de la royauté : le sceptre et les habits de soie de l'aristocratie. Le serpent arc-en-ciel Aïdo Hwedo (Aido Wedo), associé à la cosmologie Vodun.",
       "artsAndMusic": "Sculpture sur bois (statuettes ancestrales, portes sculptées du palais d'Abomey, inscrites au patrimoine UNESCO). Tapisseries (appliqués d'Abomey) retraçant l'histoire des rois. Poterie, tissage, travail du métal (ustensiles, pas d'art décoratif métallique). Tambours sacrés pour induire la possession lors des cérémonies Vodun. Les rythmes fon ont influencé les traditions afro-diasporiques : Arará (Cuba), Yanvalou (Haïti). Danse rituelle de possession. La tradition orale fon comprend un vaste corpus de proverbes, étudié dès les années 1930 par l'ethnographie de Melville et Frances Herskovits.",
-      "spiritualities": "Religion Vodun (aussi Vodoun, Vodzu, Vodu) : système polythéiste structuré. Divinité suprême féminine : Nana Buluku (créatrice de l'univers, mère de Mawu-Lisa). Mawu-Lisa (Lune-Soleil, couple féminin-masculin) : divinités créatrices de l'humanité. Légba : dieu trickster, gardien des carrefours et médiateur. Aïdo Hwedo : serpent cosmique primordial. Offrandes et rituels pour apaiser les divinités secondaires et changer le destin. Le Vodun fon a profondément influencé le Vodou haïtien, le Candomblé brésilien et d'autres religions afro-diasporiques."
+      "spiritualities": "Religion Vodun (aussi Vodoun, Vodzu, Vodu) : système polythéiste structuré. Divinité suprême féminine : Nana Buluku (créatrice de l'univers, mère de Mawu-Lisa). Mawu-Lisa (Lune-Soleil, couple féminin-masculin) : divinités créatrices de l'humanité. Légba : dieu trickster, gardien des carrefours et médiateur. Aïdo Hwedo : serpent cosmique primordial. Offrandes et rituels pour apaiser les divinités secondaires et changer le destin. Le Vodun fon a profondément influencé le Vodou haïtien, le Candomblé brésilien et d'autres religions afro-diasporiques. Au Dahomey, le mot vodun désigne une force invisible capable de se manifester dans le corps de certaines personnes par la transe et la possession ; en Haïti le mot est resté, écrit vodou, et les esprits y sont appelés lwa."
     },
     "historicalRole": {
       "kingdomsOrChiefdoms": "Royaume de Dahomey (v. 1620-1894) : l'un des États les mieux organisés d'Afrique de l'Ouest. Fondé par Do-Aklin sur le plateau d'Abomey, étendu jusqu'à l'Atlantique sous Agaja (v. 1724). Apogée sous Ghezo (1818-1859) après la défaite de l'empire Oyo. Capital : Abomey (aujourd'hui site du patrimoine mondial de l'UNESCO). Grandes villes : Allada (premier établissement), Ouidah (port négrier), Bohicon, Porto-Novo.",
@@ -127,6 +127,12 @@
         "url": null,
         "tier": "referenced",
         "notes": "Étude ethnographique de la littérature orale fon (dahoméenne), dont les proverbes."
+      },
+      {
+        "title": "Laënnec Hurbon, « Haitian Vodou », The Open Encyclopedia of Anthropology, 2022",
+        "url": "https://www.anthroencyclopedia.com/entry/haitian-vodou",
+        "tier": "referenced",
+        "notes": "Notice signée d'un sociologue haïtien dans une encyclopédie universitaire ouverte. Décrit le vodun du Dahomey comme une force invisible qui se manifeste par la transe et la possession, et rapporte que les divinités africaines, en Haïti, sont appelées lwa (esprits). Consulté le 25 septembre 2026."
       }
     ]
   },

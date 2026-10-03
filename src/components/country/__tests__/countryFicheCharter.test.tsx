@@ -113,7 +113,8 @@ describe("country fiche charter", () => {
     expect(
       screen.getByRole("heading", { name: "Culture and society" })
     ).toBeVisible();
-    expect(screen.getByText(/Du fleuve Niger/)).toBeVisible();
+    // The name story repeats the etymology's lead above the figures.
+    expect(screen.getAllByText(/Du fleuve Niger/).length).toBeGreaterThan(0);
   });
 
   // A missing people breakdown does not erase the independently sourced
@@ -415,8 +416,8 @@ describe("country fiche charter", () => {
   it("prints the etymology as prose and names who imposed the name", () => {
     renderParchment(countryFixture());
 
-    expect(screen.getByText(/Du fleuve Niger/)).toBeInTheDocument();
-    expect(screen.getByText(/Flora Shaw/)).toBeInTheDocument();
+    expect(screen.getAllByText(/Du fleuve Niger/).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Flora Shaw/).length).toBeGreaterThan(0);
   });
 
   // Charter §4: an empty field is information about the state of the atlas,
@@ -783,5 +784,24 @@ describe("what the parchment never says out loud", () => {
 
     expect(container.textContent).toContain("Flora Shaw");
     expect(container.textContent).not.toMatch(/refuse de taire/i);
+  });
+
+  // @req REQ-151
+  it("meets the history of the names before the counted figures, and the portrait after them", () => {
+    const { container } = renderParchment(
+      countryFixture({
+        summary: "Le Nigéria est le pays le plus peuplé d'Afrique. Il compte.",
+        historicalNames: { formerNames: ["Protectorat du Niger (1900-1914)"] },
+      })
+    );
+
+    const story = screen.getByTestId("fiche-name-story");
+    const figures = container.querySelector(".fiche-summary-brief__counted")!;
+    const portrait = screen.getByText("Portrait");
+    const after = Node.DOCUMENT_POSITION_FOLLOWING;
+    expect(story.compareDocumentPosition(figures) & after).toBeTruthy();
+    expect(figures.compareDocumentPosition(portrait) & after).toBeTruthy();
+    expect(story).toHaveTextContent("Protectorat du Niger (1900-1914)");
+    expect(story).toHaveTextContent("Du fleuve Niger");
   });
 });

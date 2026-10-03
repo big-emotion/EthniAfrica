@@ -205,10 +205,21 @@ to the 900 px the rich boards use.
 The top-level block vocabulary, in canonical mobile order, is:
 
 ```text
-lenses · verdict · appellations · shorts · origins · peoples · shared-name ·
+verdict · appellations · lenses · shorts · origins · peoples · shared-name ·
 tiles · atlas-holds · plates · quiz · images · problem · near-name · fiches ·
 owed · further
 ```
+
+The filters (`lenses`) follow the answer and the forms (operator direction,
+2026-09-29). A filter refines the exploration stream below it; placed above the
+answer it made the first thing a reader met a control instead of the reply, and
+it suggested that a filter could change the answer. The `verdict` block carries
+the reviewed answer when one exists (`nameAnswers` in the search response):
+ordinary prose on the page ground, one entry per subject answering the name, a
+link to that subject's fiche and its source access after each entry, never
+clamped — the last sentence of an answer often carries its uncertainty. A shared
+name keeps the searched term as its single `h1`, never the first-ranked
+subject's name.
 
 `owed` is one top-level block because it is one visual and rhetorical closing.
 Its independently testable parts are, in order:
@@ -244,6 +255,41 @@ The checked-in generated manifest records the case, variant, query, result
 state, ordered block identities and zones, `owed` parts, board dimensions and
 the first-poster rectangle. The case source and generator author it; the JSON
 is generated output and is never edited by hand.
+
+### A word we hold a piece on, 2026-09-25
+
+A reader can type a word that no entity answers to — « zombie », « vodun »,
+« ethnie » — because we made a piece on it. That query has no fiche. Measured
+against the live search on 2026-09-25, it ends in the `widened` state far more
+often than in the `unknown` one: the search returns related fiches for almost
+any word (« mami wata » finds ten), and `unknown` is only a query that finds
+nothing. The state does not change in either case, and the closing it owes is
+unchanged. What changes is one sentence and one shelf, in both states.
+
+- **The verdict does not confess.** « Nous ne connaissons pas ce nom » is a
+  claim about what we hold, and the piece drawn directly under it would
+  contradict it — the failure §3 records for a confession drawn over results.
+  It reads instead « Nous n'avons pas de fiche pour ce nom, mais nous avons une
+  vidéo sur son origine. » What we lack is said; what we have is said.
+- **The piece takes the shelf, not the empty slot.** The slot that says « Pas
+  encore de short » exists for a name nobody has told yet; beside a piece on
+  that very word it would say the opposite of what the shelf shows. A `widened`
+  page with no entity blanks every shelf so nothing unrelated sits under it;
+  the piece found by the reader's word is kept, because it is the one shelf
+  item that is not unrelated. Found on the live page, where the unit tests had
+  passed: the piece was in the API response and absent from the page.
+- **It is not a widening.** A production found by the reader's word answers it,
+  as an exact match does, so it carries no « autour de ce nom » note and no
+  relation label.
+- **A word is matched whole, never by prefix.** « zomb » is not a word we
+  filed, and a page that answered it would be guessing.
+- **A misspelling is not a word.** A query that names a piece is `unknown`,
+  never `typo`, even when near names exist.
+
+What this section does not settle: no board draws this case yet. Its rendering
+awaits operator review and new baselines, per the rule at the top of this file;
+until then the behaviour is held by `SearchFeed.test.tsx` and the classification
+by `searchFeedPlan.test.ts`.
 
 ### What the first correction established, 2026-09-18
 

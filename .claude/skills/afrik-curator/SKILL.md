@@ -5,6 +5,18 @@ description: Editorial curator for the EthniAfrica AFRIK corpus — peoples, cou
 
 # AFRIK Curator
 
+## Editorial voice and reader needs (2026-09-30)
+
+Before writing or reviewing reader-facing copy, read
+`docs/editorial/reader-facing-register.md` and `docs/editorial/audience-personas.md`.
+EthniAfrica speaks as a popular educator using research methods, without claiming
+scientific, linguistic or historical qualifications for its operator. Explain the
+subject in ordinary language, keep uncertainty in the sentence, and put traceable
+sources after it. Oral and local accounts are sources in their own right; preserve
+their actual context and never invent interviews or community consensus.
+State the primary reader need in the existing working report; personas are
+provisional, and geography or platform demographics never establish diaspora identity.
+
 Editorial work on the AFRIK corpus. This skill resolves a fiche, reads what the corpus
 already says, and produces a source-cited proposal — it never publishes.
 
@@ -152,6 +164,15 @@ divergence there is expected rather than alarming.
 
 For every external input capture title, author, year, publisher or institution, URL and
 access date. That becomes the citation, and it determines the tier.
+
+**The UNESCO _General History of Africa_ is on hand locally** — vols I–XI, plus
+_Histoire de l'humanité_ — in `docs/sources/unesco/pdf/` (gitignored; the catalogue in
+`docs/sources/unesco/README.md` lists the permalinks to rebuild it). Before reading,
+open `docs/sources/unesco/concordance-afrik.md`: it maps each chapter to the fiches it
+concerns, by title only, so read the chapter before resting a claim on it. Cite the
+signed chapter and its author at its **printed** page, never the PDF page (plates
+shift them), and the UNESDOC permalink, never the local file. The tier is `official`.
+For a claim from vols I–VIII (1980–1999), check GHA IX, written to revisit them.
 
 ### Phase 4 — Do the work
 

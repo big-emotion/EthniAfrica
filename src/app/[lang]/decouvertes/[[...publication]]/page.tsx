@@ -1,7 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { notFound, redirect } from "next/navigation";
 
+import { articleHref } from "@/components/articles/articlePaths";
 import { DiscoveryReader } from "@/components/discoveries/DiscoveryReader";
+import { articleForCampaign, readArticleCorpus } from "@/lib/articles/corpus";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import {
   discoveryPath,
@@ -57,8 +59,8 @@ export async function generateMetadata({
     ["fr"],
     { title, description }
   );
-  // A proverb carries no photo. Leaving the images out lets the site's own
-  // share image stand, rather than pointing a crawler at nothing.
+  // A publication without a photo leaves the images out, which lets the
+  // site's own share image stand rather than pointing a crawler at nothing.
   const image = selected.image
     ? `https://${CANONICAL_DOMAIN}${selected.image.src}`
     : null;
@@ -98,11 +100,21 @@ export default async function DiscoveriesPage({
     return entry ? [entry] : [];
   });
 
+  // A video's slug is its production campaign, the join an article declares.
+  const articles = readArticleCorpus().articles;
+  const articleLinks = Object.fromEntries(
+    publications.flatMap((entry) => {
+      const article = articleForCampaign(articles, entry.slug.fr);
+      return article ? [[entry.id, articleHref("fr", article.fr.slug)]] : [];
+    })
+  );
+
   return (
     <DiscoveryReader
       language={language}
       publications={publications}
       initialId={selected.id}
+      articleLinks={articleLinks}
     />
   );
 }

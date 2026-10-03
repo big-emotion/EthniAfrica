@@ -9,7 +9,9 @@ import { getCountryRoute, getPeopleRoute } from "@/lib/routing";
 import { classifyFieldProvenance } from "@/lib/fieldProvenance";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
 import { FicheSection as Section } from "@/components/fiche/FicheSection";
+import { FicheNameStory } from "@/components/fiche/FicheNameStory";
 import { FicheStatCard } from "@/components/fiche/FicheStatCard";
+import { readNaming } from "@/lib/search/naming";
 import {
   MEMBER_PEOPLES_SHOWN,
   rankFootprint,
@@ -169,6 +171,9 @@ export function FamilyParchment({
 }: FamilyParchmentProps) {
   const copy = familyCopy[language].parchment;
   const { hero, decolonialHeader, generalInfo, distribution } = data;
+  const familyNaming = readNaming("languageFamily", {
+    decolonialHeader: data.decolonialHeader,
+  });
   const wording = footprintWording(footprintProvenance, language);
   // Two states, like the cards above. Normally the family declares no
   // distribution and this section shows the footprint reconstructed from its
@@ -226,6 +231,13 @@ export function FamilyParchment({
           </div>
         </div>
       )}
+
+      <FicheNameStory
+        chapter
+        naming={familyNaming}
+        caution={familyNaming.problem}
+        language={language}
+      />
 
       <Section title={copy.figures}>
         {/* Inside the first chapter, on the people record's precedent: the

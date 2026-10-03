@@ -1,27 +1,37 @@
 # Le gabarit de narration d'un reel « D'où vient le nom X ? »
 
-Décidé par l'opérateur le 2026-09-21. **Un reel suit ce gabarit et rien d'autre :
-pas une scène de plus, pas une de moins, pas une phrase fixe reformulée.** Le
-même parcours, le même niveau d'information, pour chaque sujet d'une des cinq
-catégories : **peuple, pays, patronyme, lieu, langue**.
+Operator-approved name-origin narration template (2026-09-21). **This template
+prescribes editorial blocks and fixed speech, not visual scene counts or cuts.**
+Use the same narrative progression for the five categories: **people, country,
+patronymic, place and language**.
 
 `node social/tools/narration/check-gabarit.mjs <narration.fr.txt> --type <catégorie>`
 le vérifie. Un écart se corrige dans le texte, pas dans le contrôleur. La
 catégorie est la `typologie` du carnet de production. Ce gabarit ne couvre pas la
 typologie `mot` (« ethnie ») : voir « Ce que le gabarit ne couvre pas ».
 
+**Portée (2026-09-30).** Ce gabarit est la structure spécialisée de l'inventaire
+endonyme/exonyme et de la transmission du patronyme ; il n'est **pas** l'obligation
+universelle d'un reel de la série. Un reel dont le brief porte une section
+`narrativeDesign` suit le plan détaillé choisi à l'étape 5 d'`idee`, et se vérifie par
+`check-gabarit.mjs <narration> --brief <brief.json>` : le plafond de deux explications,
+le nombre de noms et la liste de scènes ci-dessous ne s'y appliquent pas, la clôture
+unique si. On ne contourne pas ce gabarit en déclarant la série « libre » ni en retirant
+`series` : la route est une section explicite du brief, jamais une déduction.
+
 Le **carrousel n'est pas concerné** : il a son propre gabarit, traité à part.
 
 ## Le squelette : sept temps, un paragraphe chacun, dans cet ordre
 
-Un paragraphe de `narration.fr.txt` est une scène, donc une carte. Dix scènes au
-plus.
+Each paragraph is an editorial block. Keep at most ten blocks for this narrative
+template; `scene-plan.json` independently defines visual scenes. A map can continue
+across blocks, or a block can use several shots. No carousel deck is required.
 
 | #   | Temps                                             | Ce qu'il fait                                                                                                               | Pourquoi ici                                                                                                                                                                    |
 | --- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | **Ouverture**                                     | Une question, puis trois phrases fixes : plusieurs noms, celui de l'intérieur (l'endonyme), ceux d'ailleurs (les exonymes). | La question ouvre la boucle. Le mot « endonyme » est défini une fois, dans la phrase où il apparaît, parce que beaucoup d'auditeurs n'ont pas le français pour première langue. |
 | 2   | **Inventaire**                                    | Les noms retenus, dits une fois chacun, **le nom de l'intérieur en premier**. Deux à quatre.                                | Chaque nom d'ailleurs se mesure ensuite au nom de l'intérieur : l'auditeur doit le connaître avant de comparer.                                                                 |
-| 3   | **Variantes** (facultatif)                        | Seulement les écritures qui posent un vrai problème. Un paragraphe, quatre phrases au plus.                                 | Une variante d'orthographe n'est pas un nom de plus. Elle ne prend une scène que si elle crée une confusion ou une offense. Sans problème, la scène n'existe pas.               |
+| 3   | **Variantes** (facultatif)                        | Seulement les écritures qui posent un vrai problème. Un paragraphe, quatre phrases au plus.                                 | A spelling variant is not an additional name. Include this narrative block only when the variant creates confusion or offence.                                                  |
 | 4   | **Un bloc par nom**, dans l'ordre de l'inventaire | Le nom de l'intérieur d'abord, les noms d'ailleurs ensuite.                                                                 | Même parcours pour chaque nom : l'auditeur compare sans réapprendre la forme.                                                                                                   |
 | 5   | **Classement**                                    | Qui a donné quel nom, et lequel est évité.                                                                                  | La boucle de l'ouverture se referme ici.                                                                                                                                        |
 | 6   | **Synthèse**                                      | Trois phrases au plus : ce que les blocs ont montré, puis la morale.                                                        | Une suite de faits ne dit pas ce qu'il faut retenir. Elle se propose à l'opérateur avant d'être écrite (voir `SKILL.md`, « Le registre »).                                      |
@@ -35,7 +45,11 @@ changent.
 ### Ouverture (peuple, pays, lieu, langue)
 
 1. Une question : « Comment ce peuple s'appelle-t-il lui-même ? »
-2. « Un même [peuple] porte toujours plusieurs noms. »
+2. « Un même [peuple] porte toujours plusieurs noms. » — ou, quand la recherche ne
+   permet pas de le dire de tous les sujets de cette catégorie : « Ce [peuple]
+   porte plusieurs noms. » (« Cette » pour un nom féminin). Choisir la seconde
+   forme par défaut : choisir un sujet qui a plusieurs noms attestés n'établit pas
+   une règle sur tous les peuples, pays ou langues. Le contrôleur accepte les deux.
 3. Un seul endonyme : « Un seul vient de [lui et de sa langue] : c'est l'endonyme, le nom de l'intérieur. »
    Plusieurs endonymes : « Ici, il en emploie [deux], selon [son dialecte] : ce sont des endonymes, les noms de l'intérieur. »
 4. « Les autres viennent d'ailleurs : ce sont des exonymes, et certains sont plus connus que [le sien]. »
@@ -115,7 +129,7 @@ Un constat, jamais un jugement (« a longtemps remplacé le sien » est un jugem
 Le texte de `GABARITS-SOCIAL.md` §7 ter, « Le reel a un couple unique », mot pour
 mot : la voix dit les deux phrases, la carte porte la première en titre et la
 seconde en corps. « Partagez-la » est un impératif voulu par l'opérateur : le
-contrôle de lecture ne s'applique pas à cette scène.
+contrôle de lecture ne s'applique pas à ce bloc narratif.
 
 ## Ce qui change selon la catégorie
 
@@ -140,6 +154,31 @@ Le **piège propre à la langue** est de confondre la langue et son peuple ; le
 piège propre au **lieu** est de croire que le nom officiel est le nom des
 habitants.
 
+## Patronyme : comparer des formes sans en couronner une
+
+Décidé par l'opérateur le 2026-09-30 (constat C12, option a). Le squelette de
+comparaison ci-dessus pose **une** forme d'origine et attribue les autres à l'état
+civil. C'est faux dès que l'origine n'est pas établie, ou que les formes viennent
+de plusieurs langues ou de plusieurs transmissions. Dans ce cas, toutes les formes
+portent la même étiquette, « une forme attestée », et le texte ne dit que ce que
+chaque source montre. Le contrôleur reconnaît cette variante à ses étiquettes ;
+le squelette d'origine reste valide, tel quel.
+
+- **Ouverture** (quatre phrases) : la question ; « Ce nom de famille prend plusieurs
+  formes. » (ou la phrase universelle) ; « Nous ne savons pas encore quelle forme est
+  la plus ancienne. » ; « Plusieurs formes circulent aujourd'hui. »
+- **Inventaire** : « Ce nom de famille porte [deux à quatre] formes : A, B et C. »
+- **Un bloc par forme** : « X est une forme attestée. » Puis où elle est attestée
+  (une date) **ou** « Nous ne savons pas… » : chaque bloc dit l'un des deux.
+  Toutes les formes portent la même étiquette, sans mélange avec « forme d'origine ».
+- **Classement** : « Les sources consultées ne permettent pas de dire quelle forme
+  est la plus ancienne. » puis une ou deux phrases qui nomment toutes les formes.
+- **Synthèse** (trois phrases au plus) et **clôture unique**, comme partout.
+
+Exemple canonique : `social/tools/narration/exemples/patronyme-attestees.fr.txt`.
+Choisir cette variante par défaut tant qu'aucune source n'établit la forme d'origine ;
+le squelette d'origine suppose cette preuve, il ne la remplace pas.
+
 ## Le patronyme a deux cas
 
 Décidé par l'opérateur le 2026-09-23, sur le sujet Traoré (S4, `PAT_TRAORE`).
@@ -155,7 +194,7 @@ aurait exigé d'inventer une étymologie ou une forme que les sources ne
 donnaient pas — refusé par l'opérateur, qui a demandé un second cas plutôt
 qu'une réécriture de l'argument approuvé.
 
-**Le squelette de ce second cas, un paragraphe par scène, dans cet ordre :**
+**This second case uses the following editorial blocks, in order; visual cuts remain independent:**
 
 | #       | Temps                          | Ce qu'il fait                                                                                                                                                                                                                        |
 | ------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -235,7 +274,27 @@ variante :
 - la typologie **`mot`** (« ethnie ») ;
 - un sujet dont le groupe n'a **aucun** nom pour lui-même dans les sources ;
 - un sujet avec **plus de quatre** noms de l'intérieur ;
-- un sujet à **un seul nom** (rien à comparer).
+- un sujet à **un seul nom** (rien à comparer) — y compris quand ce nom
+  unique n'a que des variantes d'orthographe (une variante n'est pas un nom
+  de plus, voir « Variantes » ci-dessus) ;
+- **un sujet dont le nom est d'abord une catégorie — un métier, un statut,
+  une fonction — devenue une identité, sans auto-désignation univoque établie
+  par les sources.** Décidé par l'opérateur le 2026-09-23, sur Dioula : « jula »
+  désigne d'abord un commerçant, et la plupart des personnes appelées Dioula
+  appartiennent en réalité, d'abord, à un autre clan, une autre famille ou un
+  autre peuple — chercher « le » nom que « le » peuple se donne inventerait
+  une auto-désignation que les sources ne fournissent pas. Ce cas ne s'arrête
+  pas au constat : la pièce suit à la place une **ouverture explicative**, qui
+  pose la question du sens du mot plutôt que l'inventaire endonyme/exonyme —
+  `dioula-un-metier-une-langue-une-identite/narration.fr.txt` en est le
+  précédent écrit. `ethniafrica-message` note ce cas selon le degré de
+  certitude de l'endonyme (voir sa propre section du même nom), pas comme un
+  échec des critères 1 et 2.
+
+Le premier et le dernier cas se distinguent par la source du doute : un nom
+unique sans variante notable est un fait de langue (rien à comparer) ; une
+catégorie devenue identité est un fait social (rien à qui l'attribuer en
+premier). Les deux évitent d'inventer une paire, pour des raisons différentes.
 
 ## Corriger une narration existante, non publiée
 
@@ -248,7 +307,7 @@ l'opérateur, mot pour mot (`SKILL.md`, « La validation du texte »).
 
 Si un sens est juste, si une source tient, si une phrase est simple, si un
 « endonyme » en est bien un. Cela reste à l'auteur, au contrôle de lecture
-(`check-narration.mjs`, que le contrôleur rejoue sur chaque scène sauf la clôture)
+(`check-narration.mjs`, que le contrôleur rejoue sur chaque bloc narratif sauf la clôture)
 et à la validation de l'opérateur.
 
 ## Un exemple par catégorie
@@ -259,3 +318,9 @@ Fictifs — noms, dates et sens inventés, à ne jamais publier :
 formes), `patronyme-transmission.fr.txt` (second cas patronyme, ci-dessus),
 `lieu.fr.txt`, `langue.fr.txt`. Ils servent aussi de cas de test au contrôleur :
 une phrase fixe modifiée ici fait échouer la suite.
+
+Les deux ouvertures permises y figurent : `peuple.fr.txt` garde la phrase de
+l'opérateur (« Un même peuple porte toujours plusieurs noms. »), et
+`peuple-dialectes.fr.txt` ouvre avec la phrase propre au sujet (« Ce peuple
+porte plusieurs noms. »), qui n'affirme rien des autres peuples. Un sujet qui
+n'a qu'un nom attesté ne doit pas reprendre la première.

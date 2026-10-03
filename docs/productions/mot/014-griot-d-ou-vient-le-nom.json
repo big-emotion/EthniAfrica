@@ -1,0 +1,38 @@
+{
+  "campaign": "griot-d-ou-vient-le-nom",
+  "typologie": "mot",
+  "episode": 14,
+  "question": {
+    "fr": "D'où vient le nom « griot » ?"
+  },
+  "myth": {
+    "fr": "« Griot » est-il le nom que les intéressés se donnent eux-mêmes ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "word": {
+    "label": { "fr": "griot", "en": "griot" },
+    "queries": ["griot", "griots"]
+  },
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7689496831113399574",
+      "publishedAt": "2026-09-25"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/Ddty8BbiOyM/",
+      "publishedAt": "2026-09-25"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Thomas A. Hale, « A New Look at the Origins of a Controversial African Term for Bards: from the Griot of Roots to the Roots of Griot », Oral Tradition 12(2)",
+      "url": "https://journal.oraltradition.org/wp-content/uploads/files/articles/12ii/2_Hale.pdf",
+      "tier": "referenced"
+    }
+  ]
+}

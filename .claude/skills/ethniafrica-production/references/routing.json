@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "platforms": {
+    "codex": {
+      "planner": {
+        "agent": "ethniafrica-video-planner",
+        "model": "gpt-6-sol",
+        "reasoning_effort": "high"
+      },
+      "executor": {
+        "agent": "ethniafrica-video-executor",
+        "model": "gpt-6-luna",
+        "reasoning_effort": "medium"
+      }
+    },
+    "claude": {
+      "planner": { "agent": "ethniafrica-video-planner", "model": "opus" },
+      "executor": { "agent": "ethniafrica-video-executor", "model": "sonnet" }
+    }
+  },
+  "stages": [
+    {
+      "id": "context",
+      "label": "Sujet et sources",
+      "weight": 10,
+      "role": "planner",
+      "approval": false
+    },
+    {
+      "id": "narration",
+      "label": "Narratif validé",
+      "weight": 20,
+      "role": "planner",
+      "approval": true
+    },
+    {
+      "id": "storyboard",
+      "label": "Plan visuel validé",
+      "weight": 20,
+      "role": "planner",
+      "approval": true
+    },
+    {
+      "id": "package",
+      "label": "Voix, médias et plan minuté",
+      "weight": 20,
+      "role": "planner",
+      "approval": false
+    },
+    {
+      "id": "proof",
+      "label": "Épreuve rendue",
+      "weight": 15,
+      "role": "executor",
+      "approval": false
+    },
+    {
+      "id": "review",
+      "label": "Revue finale",
+      "weight": 10,
+      "role": "planner",
+      "approval": true
+    },
+    {
+      "id": "delivery",
+      "label": "Livraison complète",
+      "weight": 5,
+      "role": "executor",
+      "approval": false
+    }
+  ]
+}

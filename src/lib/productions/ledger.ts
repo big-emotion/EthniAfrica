@@ -22,6 +22,8 @@ export interface LedgerEntry {
     label: { fr: string; en?: string };
   }>;
   sitePath: string;
+  /** A piece about a word that is not a corpus entity; see the gate's own type. */
+  word?: { label: { fr: string; en?: string }; queries: string[] };
   publications: Array<{
     network: string;
     format: string;

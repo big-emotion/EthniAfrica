@@ -8,7 +8,17 @@
     "appellations": {
       "mainName": "Aka",
       "selfAppellation": "Aka (ou BaAka)",
-      "exonyms": ["Biaka", "Bayaka", "Babenzele", "Ba'Aka", "Baaka", "Mbenga"],
+      "exonyms": [
+        "Biaka",
+        "Bayaka",
+        "Babenzele",
+        "Ba'Aka",
+        "Baaka",
+        "Mbenga",
+        "Pygmée",
+        "Pygmées"
+      ],
+      "spellingAliases": ["Pigmée", "Pigmées"],
       "originOfExonyms": "Le terme 'Biaka' ou 'BaAka' est une variante du nom propre. 'Babenzele' designe un sous-groupe specifique. 'Mbenga' est un terme generique englobant les Aka et les Baka du Cameroun. 'Pygmees' est un terme colonial aujourd'hui considere pejoratif.",
       "whyProblematic": "Le terme 'Pygmee' est consideree offensant car il renvoie a une categorisation coloniale basee sur la taille et nie l'identite propre de ces peuples. Les Aka preferent etre designes par leur nom propre.",
       "contemporaryUsage": "Les termes 'Aka', 'BaAka' et 'Ba'Aka' sont utilises dans la litterature scientifique et par les organisations de defense des droits. Le terme 'Bayaka' est repandu au Congo-Brazzaville. L'UNESCO emploie 'Ba'Aka' dans ses documents officiels.",
@@ -104,6 +114,12 @@
         "title": "Discover Afrika – The BAaka peoples",
         "url": "https://discover-afrika.com/baaka-peoples/",
         "tier": "needs_review"
+      },
+      {
+        "title": "Dictionnaire de l'Académie française, 1re édition (1694), entrée « pigmée » renvoyant à « pygmée »",
+        "url": "https://www.dictionnaire-academie.fr/article/A1_0071",
+        "tier": "referenced",
+        "notes": "Atteste la graphie ancienne « pigmée »."
       }
     ]
   },

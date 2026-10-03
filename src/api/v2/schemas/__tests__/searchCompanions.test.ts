@@ -42,6 +42,31 @@ describe("search companions schema", () => {
     ).toBe(false);
   });
 
+  // The word is what the reader typed. It is kept as typed and trimmed: the
+  // catalog folds it, so the API does not decide what counts as the same word.
+  // @req REQ-180
+  it("accepts the reader's word, trimmed, next to or instead of subjects", () => {
+    expect(searchCompanionsQuerySchema.parse({ word: "  Zombie " }).word).toBe(
+      "Zombie"
+    );
+    expect(
+      searchCompanionsQuerySchema.parse({
+        subjects: "country:NGA",
+        word: "nigeria",
+      })
+    ).toMatchObject({
+      subjects: [{ type: "country", id: "NGA" }],
+      word: "nigeria",
+    });
+  });
+
+  // @req REQ-180
+  it("rejects a word too long to be a name", () => {
+    expect(
+      searchCompanionsQuerySchema.safeParse({ word: "a".repeat(81) }).success
+    ).toBe(false);
+  });
+
   // @req REQ-180
   it("accepts an absent subject list for the recent-content fallback", () => {
     expect(searchCompanionsQuerySchema.parse({})).toEqual({

@@ -114,14 +114,24 @@ Chaque entrée doit avoir un `peopleId` valide.
 
 ## 9. Sources
 
-Tableau de chaînes. Format recommandé : `"Titre – Auteur, Année (URL si disponible)"`
+Tableau d'objets, jamais de chaînes. Chaque objet porte `title`, `url`, `tier`
+(`official`, `referenced` ou `unverified`) et `notes` ; les fiches de noms ajoutent
+`author` et `year`, les patronymes `sourceKey` et `source_kind`. La forme exacte de
+chaque classe est fixée par le modèle strict `public/modele-*.json` et son
+analyseur : en cas de désaccord avec ce paragraphe, le modèle prévaut. La doctrine
+des paliers est dans le skill `afrik-curator` (`reference/source-tiers.md`).
 
 ```json
 ✅  "sources": [
-      "Ethnologue – SIL International, 2025 (https://www.ethnologue.com)",
-      "Glottolog – Hammarström et al., 2024 (https://glottolog.org)"
+      {
+        "title": "Glottolog 5.3",
+        "url": "https://glottolog.org/resource/languoid/id/nucl1347",
+        "tier": "official",
+        "notes": "Glottolog name: Wolof; classification includes North-Central Atlantic."
+      }
     ]
 ❌  "sources": "Ethnologue"
+❌  "sources": ["Ethnologue – SIL International, 2025 (https://www.ethnologue.com)"]
 ```
 
 ---

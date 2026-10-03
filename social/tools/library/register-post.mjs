@@ -6,7 +6,10 @@
  *       --title "…" --subject "Peuple · X" --pillar "…" --status a-produire \
  *       [--copy _legendes/<slug>.md] [--link-path /fr/atlas/… [--content carrousel]] \
  *       [--video <name>.mp4=<Sujet>/video/<name>.mp4] [--notes "…"] [--write]
+ *       [--profile memoires-sonores]
  *     node social/tools/library/register-post.mjs --where <slug>
+ *     node social/tools/library/register-post.mjs --id <slug> --workshop <Subject> --write
+ *     node social/tools/library/register-post.mjs --id <slug> --filed [--write]
  *
  * The library's `publications.json` is its single source of truth: every
  * `post.md`, the dashboard and the CSV are generated from it, and a post's shelf
@@ -15,8 +18,8 @@
  * workshop, where `build-etat.mjs` does not look — the pipeline state reported it
  * nowhere.
  *
- * This tool does the one thing that was missing and nothing the library's own
- * tools already do: it upserts the entry and creates the post's folder once.
+ * Registration upserts the entry and creates the post's folder once. The separate
+ * --filed completion event verifies delivery and automatically cleans scratch.
  * Moving folders, regenerating views and copying renders stay with the library.
  * The shelf rule is imported from the library's `library-paths.mjs` rather than
  * restated here, because a second copy of that rule is the one that would drift.
@@ -32,7 +35,9 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { parseArgs } from "node:util";
 
+import { FAMILIES, FORMATS } from "../contract/contract.mjs";
 import { publicationsRoot } from "../paths.mjs";
+import { cleanupWorkshop } from "./cleanup-workshop.mjs";
 
 /**
  * `publie` is absent on purpose: publishing is the operator's act, and the
@@ -61,13 +66,37 @@ try {
       "link-path": { type: "string" },
       campaign: { type: "string" },
       content: { type: "string" },
+      profile: { type: "string" },
+      family: { type: "string" },
+      series: { type: "string" },
+      "angle-id": { type: "string" },
+      "angle-question": { type: "string" },
+      format: { type: "string" },
+      "planned-date": { type: "string" },
+      relates: { type: "string", multiple: true },
       video: { type: "string", multiple: true },
       where: { type: "string" },
+      workshop: { type: "string" },
+      filed: { type: "boolean", default: false },
       write: { type: "boolean", default: false },
     },
   }));
 } catch (error) {
   fail(error.message);
+}
+
+let profile;
+// Intended distribution is distinct from the operator's publication record.
+// Read the renderer's profile rather than keeping another network list here.
+if (values.profile !== undefined) {
+  const profileFile = new URL(
+    `../../harness/carousel-profiles/${encodeURIComponent(values.profile)}.json`,
+    import.meta.url
+  );
+  if (!/^[a-z][a-z0-9-]*$/.test(values.profile) || !existsSync(profileFile)) {
+    fail(`profil de carrousel inconnu : ${values.profile}`);
+  }
+  profile = JSON.parse(readFileSync(profileFile, "utf8"));
 }
 
 const postsRoot = publicationsRoot();
@@ -137,6 +166,29 @@ if (values.status && !CHAIN_STATUSES.includes(values.status)) {
 }
 
 const existing = ledger.posts.find((p) => p.id === values.id);
+// Filing completes after migration and sync, not when status is first written.
+// This completion event reads the ledger again and automatically reclaims scratch.
+if (values.filed) {
+  if (!existing) fail("Filing completion requires an existing edition.");
+  if (
+    Object.keys(values).some((key) => !["id", "filed", "write"].includes(key))
+  )
+    fail(
+      "--filed accepts only --id and optional --write; register changes first."
+    );
+  if (!existing.workshopSubject)
+    fail("Register --workshop before completing filing.");
+  try {
+    const report = await cleanupWorkshop({
+      subject: existing.workshopSubject,
+      write: values.write,
+    });
+    console.log(JSON.stringify(report, null, 2));
+    process.exit(report.blockers.length ? 1 : 0);
+  } catch (error) {
+    fail(error.message);
+  }
+}
 if (!existing) {
   for (const field of ["dir", "title", "subject", "pillar", "status"]) {
     if (!values[field])
@@ -146,6 +198,42 @@ if (!existing) {
 if (values.dir && !/^[^/.][^/]*\/[^/.][^/]*$/.test(values.dir)) {
   fail(`--dir doit être <Prefixe-Sujet>/<slug>, reçu « ${values.dir} ».`);
 }
+// Stored only when declared: the catalogue derives family, angle and format
+// for legacy entries, so nothing here is a default. Vocabulary is the
+// contract's; a value it does not know is refused rather than kept.
+if (values.family && !FAMILIES.includes(values.family)) {
+  fail(
+    `famille inconnue « ${values.family} » ; attendu : ${FAMILIES.join(", ")}.`
+  );
+}
+if (values.format && !FORMATS.includes(values.format)) {
+  fail(
+    `format inconnu « ${values.format} » ; attendu : ${FORMATS.join(", ")}.`
+  );
+}
+if (
+  values["planned-date"] &&
+  !/^\d{4}-\d{2}-\d{2}$/.test(values["planned-date"])
+) {
+  fail(
+    `--planned-date doit être YYYY-MM-DD, reçu « ${values["planned-date"]} ».`
+  );
+}
+if (values["angle-question"] && !values["angle-id"]) {
+  fail("--angle-question demande --angle-id.");
+}
+const RELATIONS = ["adapts", "deepens", "republishes"];
+const relations = (values.relates ?? []).map((pair) => {
+  const [type, to] = pair.split(":");
+  if (!RELATIONS.includes(type)) {
+    fail(`relation inconnue « ${type} » ; attendu : ${RELATIONS.join(", ")}.`);
+  }
+  if (!ledger.posts.some((candidate) => candidate.id === to)) {
+    fail(`--relates : aucun post « ${to} » dans le registre.`);
+  }
+  return { type, to };
+});
+
 const holder =
   values.dir &&
   ledger.posts.find((p) => p.dir === values.dir && p.id !== values.id);
@@ -199,6 +287,28 @@ if (values["link-path"] || values.campaign || values.content) {
   };
 }
 if (values.copy !== undefined) post.copy = values.copy;
+if (values.workshop !== undefined) {
+  if (!/^[^_./\\][^/\\]*$/.test(values.workshop) || values.workshop === "..")
+    fail("--workshop must name one top-level subject folder.");
+  post.workshopSubject = values.workshop;
+}
+for (const field of ["family", "series", "format"]) {
+  if (values[field] !== undefined) post[field] = values[field];
+}
+if (values["angle-id"]) {
+  post.angle = {
+    id: values["angle-id"],
+    ...(values["angle-question"] ? { question: values["angle-question"] } : {}),
+  };
+}
+if (values["planned-date"]) post.plannedDate = values["planned-date"];
+if (relations.length) post.relations = relations;
+if (profile) {
+  post.profile = profile.id;
+  post.intendedChannels = profile.formats.carrousel.map((network) =>
+    network.toLowerCase()
+  );
+}
 if (renders.length) {
   // The delivered set replaces the previous one: `sync-deliverables.mjs` copies
   // exactly what `renderedFrom` names, and a stale name would be reported as a
@@ -236,4 +346,5 @@ Ensuite :
   node ${path.join(indexDir, "migrate-library.mjs")} --write     # si le statut a changé de bac
   node ${path.join(indexDir, "build-index.mjs")}                 # régénère post.md, README.md, PUBLICATIONS.csv
   node ${path.join(indexDir, "sync-deliverables.mjs")} --write   # si une vidéo est inscrite
+  node social/tools/library/register-post.mjs --id ${post.id} --filed --write # after verified filing; requires --workshop and production-record.md
   node social/tools/etat-pipeline/build-etat.mjs`);

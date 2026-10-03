@@ -728,9 +728,10 @@ describe("RecherchePageContent", () => {
     await waitFor(() => {
       expect(screen.getByTestId("feed-block-verdict")).toBeInTheDocument();
     });
-    expect(
-      screen.getByText("Vouliez-vous dire Mandinka ?")
-    ).toBeInTheDocument();
+    expect(screen.getByText("Cherchiez-vous… ?")).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "mandink"
+    );
     expect(screen.queryByTestId("feed-block-owed")).not.toBeInTheDocument();
   });
 
@@ -873,10 +874,10 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByRole("link", { name: /Bambara/ })).toHaveAttribute(
-        "href",
-        getPeopleRoute("fr", "PPL_BAMBARA")
-      );
+      const hrefs = screen
+        .getAllByRole("link", { name: /Bambara/ })
+        .map((link) => link.getAttribute("href"));
+      expect(hrefs).toContain(getPeopleRoute("fr", "PPL_BAMBARA"));
     });
   });
 
@@ -1423,6 +1424,7 @@ describe("RecherchePageContent feed orchestration", () => {
     expect(Object.fromEntries(requested.searchParams)).toEqual({
       subjects: "people:PPL_ZULU",
       lang: "fr",
+      word: "Zulu",
     });
     expect(document.querySelector("[data-feed-root]")).not.toBeNull();
   });
@@ -1436,7 +1438,10 @@ describe("RecherchePageContent feed orchestration", () => {
       String(mockCompanionFetch.mock.calls[0][0]),
       "http://localhost"
     );
-    expect(Object.fromEntries(requested.searchParams)).toEqual({ lang: "fr" });
+    expect(Object.fromEntries(requested.searchParams)).toEqual({
+      lang: "fr",
+      word: "xyzzy",
+    });
     expect(screen.getByTestId("feed-block-verdict")).toBeInTheDocument();
     expect(screen.getByTestId("feed-block-owed")).toBeInTheDocument();
     expect(screen.getByTestId("feed-block-further")).toBeInTheDocument();
@@ -1470,7 +1475,10 @@ describe("RecherchePageContent feed orchestration", () => {
       String(mockCompanionFetch.mock.calls[0][0]),
       "http://localhost"
     );
-    expect(Object.fromEntries(requested.searchParams)).toEqual({ lang: "fr" });
+    expect(Object.fromEntries(requested.searchParams)).toEqual({
+      lang: "fr",
+      word: "Maurice Delafosse",
+    });
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
       "Maurice Delafosse"
     );
@@ -1662,9 +1670,10 @@ describe("RecherchePageContent feed orchestration", () => {
  * ever carried how many results came back, so a query the corpus cannot
  * answer was indistinguishable from one it answers well.
  *
- * Nothing here carries the query text. These events are counts, ranks and
- * entity kinds; the words a visitor types stay out of the payload, which is
- * what keeps the measurement inside the wording the privacy page carries.
+ * The search event carries the committed query, once, through
+ * `searchQueryProp` (operator decision, 2026-09-29: the term is published on
+ * the public dashboard). Result clicks stay counts, ranks and entity kinds.
+ * A keystroke never reports; only a search the reader ran does.
  */
 describe("what the SERP reports about a search", () => {
   const plausible = vi.fn();
@@ -1711,6 +1720,28 @@ describe("what the SERP reports about a search", () => {
       surface: "serp",
       results: 1,
     });
+  });
+
+  // @req REQ-046
+  it("carries the committed query, normalised, on the search event", async () => {
+    mockFetch.mockResolvedValue(okJson(searchApiResponse));
+
+    await submit("  Zulu ");
+
+    await waitFor(() => expect(submissions()).toHaveLength(1));
+    expect(submissions()[0][1].props).toMatchObject({
+      surface: "serp",
+      query: "zulu",
+    });
+  });
+
+  // @req REQ-046
+  it("leaves the query out when it looks like personal data", async () => {
+    await submit("jean.dupont@example.com");
+
+    await waitFor(() => expect(submissions()).toHaveLength(1));
+    expect(submissions()[0][1].props).not.toHaveProperty("query");
+    expect(submissions()[0][1].props).toMatchObject({ results: 0 });
   });
 
   // A query the corpus cannot answer is the whole point of the count: it is

@@ -2,8 +2,8 @@ import type { Language } from "@/types/shared";
 
 // @req REQ-141
 export const sourcesBibliographyNote: Record<Language, string> = {
-  en: "Wikipedia is not a source. A primary source found through it is cited at its own standing and address, and cross-language versions are recorded. Entries marked ‘Awaiting review’ are those for which this source-tracing work is not complete.",
-  fr: "Wikipédia n'est pas une source. Une source primaire trouvée par son intermédiaire est citée à son propre palier, par sa propre adresse, et les versions linguistiques croisées sont notées. Les entrées marquées « En attente d'examen » sont celles dont ce travail de remontée n'est pas terminé.",
+  en: "Wikipedia is read first, for what it cites. We prefer the primary source it points to, cited at its own address, and we note the language versions we crossed. ‘Awaiting review’ marks a source whose weight we have not yet assessed: it says nothing about whether the source is right. A count of references is not proof: several works can repeat the same account. This page lists institutions and works; where an account passed on orally supports a point, it is cited on the entry concerned, with who carried it and how it was collected when known.",
+  fr: "Nous lisons Wikipédia d'abord, pour ce qu'elle cite. Nous préférons la source primaire à laquelle elle renvoie, citée par sa propre adresse, et nous notons les versions linguistiques croisées. « En attente d'examen » signale une source dont nous n'avons pas encore évalué le poids : cela ne dit rien de son exactitude. Un nombre de références n'est pas une preuve : plusieurs ouvrages peuvent reprendre le même récit. Cette page liste des institutions et des ouvrages ; lorsqu'un récit transmis oralement appuie un point, il est cité sur la fiche concernée, avec son transmetteur et la manière dont il a été recueilli quand ils sont connus.",
 };
 
 // @req REQ-141

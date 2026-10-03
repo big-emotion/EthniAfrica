@@ -179,10 +179,10 @@ the rule rather than one spelling of it.
 this chantier, on purpose: it is the file every agent reads first, and rewriting
 it while the shape of the work is still moving means rewriting it twice. It is
 the **last** thing that changes, once B, C and D are done and there is something
-stable to describe. The reset inventory
-(`docs/reset-inventory-2026-09-17.md` §7) already records what a reset costs and
-which of its lines are measured facts that must be rediscovered by failing again
-rather than re-derived from memory.
+stable to describe. A reset inventory was taken on 2026-09-17 and later deleted
+as stale (it is in git history under `docs/reset-inventory-2026-09-17.md`); its
+lesson stands: a rule whose cost was measured by failing must be rediscovered
+by failing again, not re-derived from memory.
 
 ### E — The gate on competing appellations
 
@@ -300,8 +300,8 @@ read, and a doc whose basename appears nowhere but in itself is an orphan.
 - **Ledger entries** — the dated `gabarits-social/notes/_*.md`, the audience
   audits. They are a record; they are linked from their directory's README or
   left alone, never deleted.
-- **Newly written and not yet linked** — `search-result-charter.md`,
-  `reset-inventory-2026-09-17.md`, and this file. That is a finding about the
+- **Newly written and not yet linked** — `search-result-charter.md`
+  and this file. That is a finding about the
   writing, not the file: a document nothing points at is a document nobody will
   read. Each gets its pointer.
 - **Genuinely superseded** — `runbooks/v1-removal-cutover-2026-05.md` describes

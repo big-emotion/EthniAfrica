@@ -59,8 +59,8 @@ describe("sitemap.xml", () => {
     vi.unstubAllEnvs();
   });
 
-  // A curator raising a source above the unverified tier must move the name
-  // into the sitemap after the corpus reload, without waiting for a release.
+  // A curator adding a first readable citation must move the name into the
+  // sitemap after the corpus reload, without waiting for a release.
   // @req REQ-147
   it("refreshes the tier-dependent name set between releases", () => {
     expect(revalidate).toBe(3600);

@@ -1,10 +1,16 @@
 """Render one deck to the new gabarit — two formats, with a render report.
 
     ./venv/bin/python ethni_carrousel2.py <Sujet> [--sortie <dossier>]
+    ./venv/bin/python ethni_carrousel2.py --brief memoires-sonores
 
 Reads `<projet>/cards.json` at §10 and the project's `assets/`. Replaces the
 retired-gabarit carousel script and its single-card sibling, both deleted once the
 video engine had moved to `ethni_montage.py` too.
+
+An opt-in editorial profile chooses its own formats and networks. The brief
+command reads its canonical preparation guide and returns an empty scaffold.
+Unknown or malformed profiles fail before asset loading; ordinary review and
+composition failures still produce proofs.
 
 **It always renders.** A lot that fails a gate goes to `_epreuves/` stamped and
 annotated; a lot that passes goes to one folder per format, named after the
@@ -28,6 +34,8 @@ from PIL import Image
 
 import ethni_compose as gab
 import ethni_tokens as tk
+import ethni_carousel_layouts as layouts
+import ethni_carousel_profiles as carousel_profiles
 from ethni_paths import resolve_project
 
 FORMATS = ("carrousel", "reel")
@@ -62,13 +70,31 @@ def _pourquoi(plan, carte, image, fmt_key, deck):
 
 
 def main():
+    if len(sys.argv) > 1 and sys.argv[1] == "--brief":
+        if len(sys.argv) != 3:
+            raise SystemExit("usage: ethni_carrousel2.py --brief <profil>")
+        try:
+            print(json.dumps(carousel_profiles.brief(sys.argv[2]), ensure_ascii=False, indent=2))
+        except ValueError as error:
+            raise SystemExit(str(error)) from error
+        return
+
     racine = resolve_project(sys.argv[1] if len(sys.argv) > 1 else None)
     deck = json.loads((racine / "cards.json").read_text(encoding="utf-8"))
+
+    profile_errors = carousel_profiles.errors(deck)
+    if profile_errors:
+        raise SystemExit("\n".join(profile_errors))
+    formats = carousel_profiles.formats(deck, FORMATS)
 
     if "cartes" not in deck:
         raise SystemExit(
             f"{racine.name} : cards.json est encore à l'ancien schéma. Lance "
             f"`node social/tools/migrate-cards/migrate-cards.mjs {racine.name}`")
+
+    missing_images = carousel_profiles.image_errors(deck)
+    if missing_images:
+        raise SystemExit("\n".join(missing_images))
 
     assets = racine / "assets"
     images = {}
@@ -77,7 +103,7 @@ def main():
         chemin = assets / fichier
         if not chemin.exists():
             raise SystemExit(f"carte {carte['rang']} : {chemin} est introuvable")
-        images[fichier] = Image.open(chemin).convert("RGB")
+        images[carte["rang"]] = Image.open(chemin).convert("RGB")
 
     verdict = gab.portes(deck["cartes"], deck)
     deck["licence_sortie"] = verdict.licence_sortie
@@ -102,12 +128,12 @@ def main():
     # Measured per format. A card can be A in `carrousel` and fall to C in `reel`,
     # where the same file is enlarged further, and each format ships on its own.
     quotas = []
-    for fmt_key in FORMATS:
+    for fmt_key in formats:
         dispositions = [
             (c["rang"], gab.plan(c, deck, fmt_key,
-                                 image=images[c["image"]["fichier"]]).disposition)
+                                 image=images[c["rang"]]).disposition)
             for c in deck["cartes"]]
-        quotas += gab.quota(dispositions, fmt_key)
+        quotas += gab.quota(dispositions, fmt_key, deck)
 
     if quotas:
         verdict = gab.Verdict(passe=False, manquantes=verdict.manquantes + quotas,
@@ -130,8 +156,8 @@ def main():
     blocages = []
     rangees = []
     for carte in deck["cartes"]:
-        image = images[carte["image"]["fichier"]]
-        for fmt_key in FORMATS:
+        image = images[carte["rang"]]
+        for fmt_key in formats:
             plan = gab.plan(carte, deck, fmt_key, image=image)
             cadre = tk.fmt(fmt_key)
             sur_ech = max(cadre["w"] / image.width, cadre["h"] / image.height)
@@ -142,6 +168,15 @@ def main():
             for nom in gab.blocs_non_peints(carte, deck, fmt_key, image=image):
                 blocages.append(f"carte {carte['rang']:02d} en {fmt_key} : "
                                 f"« {nom} » est au plan et n'est pas peint")
+            # A reading profile also owes what its compositions promise: a subject the
+            # crop kept and no text covered, and type the phone can still read. Plan
+            # faults are blocked just below, so they are not repeated here.
+            if "reading" in (carousel_profiles.profile(deck) or {}):
+                blocages.extend(
+                    f"carte {carte['rang']:02d} en {fmt_key} : {p}"
+                    for p in layouts.zone_problems(carte, plan, fmt_key, image)
+                    + [q for q in layouts.readability_problems(plan, fmt_key)
+                       if not q.startswith("faute de composition")])
             pourquoi = _pourquoi(plan, carte, image, fmt_key, deck)
             if plan.fautes:
                 # A composition fault is not a remark. A lot that could not be made
@@ -178,7 +213,7 @@ def main():
     # This is not hypothetical: a verification pass on 2026-09-10 put 189 files
     # next to the 199 already there, and they had to be moved back out one deck
     # at a time.
-    dossiers_reseaux = {fmt_key: "-".join(tk.reseaux(fmt_key)) for fmt_key in FORMATS}
+    dossiers_reseaux = {fmt_key: "-".join(tk.reseaux(fmt_key, deck)) for fmt_key in formats}
     deja = {nom: sortie / nom for nom in sorted(set(dossiers_reseaux.values()))}
     encombres = {nom: chemin for nom, chemin in deja.items()
                 if chemin.exists()
@@ -209,6 +244,7 @@ def main():
             licence_sortie=verdict.licence_sortie)
     lignes = [f"# Rendu — {deck.get('campagne')}", "",
               f"licence de sortie calculée : **{verdict.licence_sortie or 'aucune'}**", ""]
+    lignes += carousel_profiles.report(deck)
 
     if verdict.passe:
         cibles = ", ".join(f"{fmt_key} → `{nom}/`" for fmt_key, nom in dossiers_reseaux.items())
@@ -237,11 +273,11 @@ def main():
                f"§6 — au moins {tk.QUOTA_A_MIN:.0%} en A, au plus "
                f"{tk.QUOTA_C_MAX:.0%} en C, au plus {tk.QUOTA_B_MAX} en B.", "",
                "| Format | A | B | C | Quota |", "| --- | --- | --- | --- | --- |"]
-    for fmt_key in FORMATS:
+    for fmt_key in formats:
         ds = [gab.plan(c, deck, fmt_key,
-                       image=images[c["image"]["fichier"]]).disposition
+                       image=images[c["rang"]]).disposition
               for c in deck["cartes"]]
-        tenu = "tenu" if not gab.quota(list(enumerate(ds)), fmt_key) else "**hors quota**"
+        tenu = "tenu" if not gab.quota(list(enumerate(ds)), fmt_key, deck) else "**hors quota**"
         lignes.append(f"| {fmt_key} | {ds.count('A')} | {ds.count('B')} | "
                       f"{ds.count('C')} | {tenu} |")
     lignes += [""]
@@ -254,8 +290,8 @@ def main():
     # card is about to overturn.
     lignes += rangees
     for carte in deck["cartes"]:
-        image = images[carte["image"]["fichier"]]
-        for fmt_key in FORMATS:
+        image = images[carte["rang"]]
+        for fmt_key in formats:
             _, ecrit = gab.rendre(carte, deck, fmt_key, image=image, racine=sortie,
                                   verdict=verdict)
             ecrits.add(ecrit.name)
@@ -298,7 +334,7 @@ def main():
         for f in fautes:
             print("  • " + f)
 
-    total = len(deck["cartes"]) * len(FORMATS)
+    total = len(deck["cartes"]) * len(formats)
     if verdict.passe:
         cibles = ", ".join(f"{nom}/" for nom in sorted(set(dossiers_reseaux.values())))
         print(f"\n{total} images → {cibles}")

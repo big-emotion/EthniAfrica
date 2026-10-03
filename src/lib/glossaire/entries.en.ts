@@ -43,7 +43,7 @@ export const GLOSSARY_DEFINITIONS_EN: Readonly<
     definition:
       "Emic: describing with the categories of those concerned. Etic: describing with those of the observer. We carry the emic and flag the etic when we cannot do otherwise.",
     corpusExample:
-      "A people filed under a language family devised in 1862 is described etically, and the record says so.",
+      "A people filed under a language family devised in the nineteenth century is described etically, and the record says so.",
     provenance: "machine",
   },
   endonyme: {
@@ -118,7 +118,7 @@ export const GLOSSARY_DEFINITIONS_EN: Readonly<
     definition:
       "The name of a language. A glossonym is not the name of a people, and a language family describes no population.",
     corpusExample:
-      "The corpus files 800 peoples under 25 families; the largest bears a word coined in 1862.",
+      "The corpus files 800 peoples under 25 families; the largest bears a word coined in the nineteenth century.",
     provenance: "machine",
   },
   hydronyme: {

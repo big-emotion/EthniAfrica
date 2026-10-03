@@ -1,0 +1,27 @@
+{
+  "campaign": "krio-quatre-vagues-freetown",
+  "typologie": "peuple",
+  "episode": 13,
+  "question": {
+    "fr": "D'où vient le nom Krio ?"
+  },
+  "myth": {
+    "fr": "Le nom Krio est-il celui qu'un peuple s'est donné, ou celui qu'on lui a donné ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_KRIO",
+      "label": { "fr": "Krio" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_KRIO",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7685354452248890626",
+      "publishedAt": "2026-09-14"
+    }
+  ]
+}

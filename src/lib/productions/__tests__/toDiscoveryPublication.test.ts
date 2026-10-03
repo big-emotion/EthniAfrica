@@ -104,6 +104,112 @@ describe("toDiscoveryPublication", () => {
     expect(toDiscoveryPublication(entry({ subjects: [] }))).toEqual([]);
   });
 
+  // The only player the site may frame is YouTube's, so a production that is
+  // on both networks plays from YouTube even when TikTok is filed first.
+  // @req REQ-184
+  it("plays from the YouTube row when the production is on several networks", () => {
+    const [publication] = toDiscoveryPublication(
+      entry({
+        publications: [
+          {
+            network: "tiktok",
+            format: "video",
+            url: "https://www.tiktok.com/@ethniafrica/video/1",
+            publishedAt: "2026-09-15",
+          },
+          {
+            network: "youtube",
+            format: "video",
+            url: "https://www.youtube.com/shorts/abcdefghijk",
+            publishedAt: "2026-09-16",
+          },
+        ],
+      })
+    );
+
+    expect(publication.video?.watchUrl).toBe(
+      "https://www.youtube.com/shorts/abcdefghijk"
+    );
+    expect(publication.video?.publishedAt).toBe("2026-09-16");
+    expect(publication.video?.embed).toEqual({
+      provider: "youtube",
+      id: "abcdefghijk",
+    });
+  });
+
+  // @req REQ-184
+  it("offers no player for a production that is not on YouTube", () => {
+    const [publication] = toDiscoveryPublication(
+      entry({
+        publications: [
+          {
+            network: "tiktok",
+            format: "video",
+            url: "https://www.tiktok.com/@ethniafrica/video/1",
+          },
+        ],
+      })
+    );
+
+    expect(publication.video?.embed).toBeUndefined();
+  });
+
+  // The output licence is computed per production at render time; the ledger
+  // does not file it, so a licence line here would be a claim nobody made.
+  // @req REQ-184
+  it("claims no licence for a production", () => {
+    const [publication] = toDiscoveryPublication(entry());
+    expect(publication.video?.credit).toBeUndefined();
+  });
+
+  // A piece on a word that is not a corpus entity is titled by the word it
+  // answers to and is found by the queries the ledger files for it.
+  // @req REQ-184
+  it("projects a word piece with no subject, titled by its word", () => {
+    const word = {
+      label: { fr: "zombie", en: "zombie" },
+      queries: ["zombie", "zombi"],
+    };
+    const [publication] = toDiscoveryPublication(
+      entry({
+        typologie: "mot",
+        subjects: [],
+        word,
+        durationSeconds: 65,
+        poster: {
+          src: "/images/discoveries/videos/z.jpg",
+          width: 540,
+          height: 960,
+        },
+        publications: [
+          {
+            network: "youtube",
+            format: "video",
+            url: "https://www.youtube.com/shorts/abcdefghijk",
+            publishedAt: "2026-09-12",
+          },
+        ],
+        sources: [
+          { title: "Source", url: "https://example.org/s", tier: "referenced" },
+        ],
+      })
+    );
+
+    expect(publication.title.fr).toBe(
+      formatProductionNameQuestion("zombie", "fr")
+    );
+    expect(publication.detail?.entities).toEqual([]);
+    expect(publication.detail?.word?.queries).toEqual(["zombie", "zombi"]);
+    expect(eligiblePublications([publication])).toHaveLength(1);
+  });
+
+  // @req REQ-184
+  it("still projects nothing when there is neither a subject nor a word", () => {
+    expect(
+      toDiscoveryPublication(entry({ typologie: "mot", subjects: [] }))
+    ).toEqual([]);
+  });
+
   // @req REQ-184
   it("never invents a source: an entry with none carries none", () => {
     const [publication] = toDiscoveryPublication(entry({ sources: undefined }));

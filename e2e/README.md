@@ -1,8 +1,7 @@
 # e2e — Playwright suite
 
-End-to-end tests for Africa History (EthniAfrica), driven by the persona +
-emotional-matrix-driven test strategy under
-`_bmad-output/test-artifacts/test-design/`. Run with `npm run e2e`.
+End-to-end tests for Africa History (EthniAfrica), driven by a persona +
+emotional-matrix test strategy. Run with `npm run e2e`.
 
 ## Layout
 

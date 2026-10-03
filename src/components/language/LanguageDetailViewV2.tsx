@@ -5,7 +5,9 @@ import Link from "next/link";
 
 import type { LanguagePageData } from "@/lib/languageDataTransformer";
 import { getFamilyRoute, getPeopleRoute } from "@/lib/routing";
+import { FicheNameStory } from "@/components/fiche/FicheNameStory";
 import { FicheSection } from "@/components/fiche/FicheSection";
+import { formKey, readNaming } from "@/lib/search/naming";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
 import { FicheSources } from "@/components/fiche/FicheSources";
 import { ProvenanceBanner } from "@/components/source-transparency/ProvenanceBanner";
@@ -61,15 +63,33 @@ export function LanguageDetailViewV2({
   const copy = languageFicheCopy[language];
   // Defensive against a payload cached before these fields existed: the
   // segment revalidates hourly, so a stale ISR body outlives a deploy.
-  const attestedNames = [
+  const allAttestedNames = [
     ...(data.nameEn && data.nameEn !== data.name ? [data.nameEn] : []),
     ...(data.alternateNames ?? []),
     ...(data.spellingAliases ?? []),
   ];
+  const naming = readNaming("language", {
+    alternateNames: data.alternateNames,
+    spellingAliases: data.spellingAliases,
+  });
+  // The story already prints its forms; this chapter keeps only what it
+  // does not, compared on the projection's own key.
+  const shown = new Set(
+    naming.presentation.forms.map((form) => formKey(form.form))
+  );
+  const attestedNames = allAttestedNames.filter((form) => {
+    const key = formKey(form);
+    if (shown.has(key)) return false;
+    shown.add(key);
+    return true;
+  });
+  const storyShowsNames = naming.presentation.forms.length > 0;
   const dialects = data.dialects ?? [];
 
   return (
     <div className="afh-parchment" id="fiche">
+      <FicheNameStory chapter naming={naming} language={language} />
+
       <FicheSection title={copy.identifiers}>
         {/* Inside the first chapter, on the people record's precedent: the
             parchment keeps no child off the chapter ground, and the banner's
@@ -91,23 +111,25 @@ export function LanguageDetailViewV2({
         </dl>
       </FicheSection>
 
-      <FicheSection title={copy.otherAttestedNames}>
-        {attestedNames.length > 0 ? (
-          <ul className="afh-rank">
-            {attestedNames.map((form) => (
-              <li key={form}>{form}</li>
-            ))}
-          </ul>
-        ) : (
-          <FieldProvenanceMarker state="missing" language={language} />
-        )}
-        <DossierLinks
-          language={language}
-          kind="language"
-          id={data.id}
-          section="appellations"
-        />
-      </FicheSection>
+      {attestedNames.length > 0 || !storyShowsNames ? (
+        <FicheSection title={copy.otherAttestedNames}>
+          {attestedNames.length > 0 ? (
+            <ul className="afh-rank">
+              {attestedNames.map((form) => (
+                <li key={form}>{form}</li>
+              ))}
+            </ul>
+          ) : (
+            <FieldProvenanceMarker state="missing" language={language} />
+          )}
+          <DossierLinks
+            language={language}
+            kind="language"
+            id={data.id}
+            section="appellations"
+          />
+        </FicheSection>
+      ) : null}
 
       <FicheSection title={copy.languageFamily}>
         <Link

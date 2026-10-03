@@ -41,8 +41,8 @@ export default async function Home({ params }: HomePageProps) {
   return (
     <PageLayout language={language} hideHeader flushTop flushBottom>
       <HomeHero language={language} seedWords={seedWords} />
-      <HomeContribute language={language} />
       <HomeProject language={language} />
+      <HomeContribute language={language} />
     </PageLayout>
   );
 }

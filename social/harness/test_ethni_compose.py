@@ -568,6 +568,14 @@ def test_a_clean_lot_passes_and_computes_its_output_licence():
     assert verdict.licence_sortie == "CC BY-SA 4.0"
 
 
+def test_a_card_naming_the_pexels_licence_passes_the_licence_gate():
+    base = carte()["image"]
+    c = carte(image=dict(base, licence="licence Pexels"))
+    verdict = gab.portes([c], DECK)
+    assert not any("licence" in m for m in verdict.manquantes), verdict.manquantes
+    assert verdict.licence_sortie == "licence Pexels"
+
+
 # ---------------------------------------------------------------- §3 proof
 
 
@@ -1157,6 +1165,119 @@ def test_a_line_the_face_covers_is_drawn_exactly_as_before():
     plaque = Image.new("L", (500, 130), 0)
     ImageDraw.Draw(plaque).text((10, 10), "Bonabéri, un quartier", font=f, fill=255)
     assert _encre_de("Bonabéri, un quartier", f) == plaque.tobytes()
+
+
+# ------------------------------------------- §1 ter — the open-question cover
+
+QUESTION_OUVERTE = ("Quand on est né hors d’Afrique et qu’on visite pour la première "
+                    "fois le pays d’origine de ses parents, est-ce qu’on y retourne "
+                    "ou est-ce qu’on le découvre ?")
+
+
+def _ouverture(**kw):
+    champs = dict(role="ouverture", rang=1, titre=QUESTION_OUVERTE, precision="",
+                  punchline="", corps="", source="")
+    champs.update(kw)
+    return carte(**champs)
+
+
+def test_an_ordinary_opening_still_refuses_a_sentence_long_title():
+    """The eight-word ceiling stays the rule; the question form is an opt-in."""
+    plan = gab.plan(_ouverture(), DECK, "carrousel", image=image_test(3000, 4000))
+    assert any("huit mots" in f for f in plan.fautes), plan.fautes
+    verdict = gab.portes([_ouverture()], DECK)
+    assert any("mots" in r for r in verdict.remarques), verdict.remarques
+
+
+def test_an_open_question_cover_is_composed_whole_at_its_own_rank():
+    """A cover that is one long question is set at the question rank of §3.
+
+    Measured on the approved « retour ou découverte » cover: 29 words run to ten
+    lines and 1 296 px at the cover rank, against 345 px available. At the
+    question rank it takes five lines and keeps its full sentence.
+    """
+    carte_question = _ouverture(titre_forme="question")
+    plan = gab.plan(carte_question, DECK, "carrousel", image=image_test(3000, 4000))
+    titre = plan.bloc("titre")
+    assert plan.fautes == [], plan.fautes
+    assert plan.disposition == "A"
+    assert titre.corps == tk.type_size("Titre de couverture — question", "carrousel")
+    assert titre.corps < tk.type_size("Titre de couverture", "carrousel")
+    assert len(titre.lignes) <= 5, titre.lignes
+    assert " ".join(titre.lignes).replace(" ", " ") == QUESTION_OUVERTE.upper()
+
+
+def test_the_question_cover_holds_in_9_16_when_the_card_declares_layout_a():
+    """9:16 loses 180 px to the platform interface, so the same question wraps to six
+    lines. The cartouche cannot hold it (447 px for 369), layout A does; the card
+    says so, and the report records the departure from the rule."""
+    plan = gab.plan(_ouverture(titre_forme="question", disposition="A"), DECK, "reel",
+                    image=image_test(5184, 3456))
+    assert plan.disposition == "A"
+    assert plan.fautes == [], plan.fautes
+    assert len(plan.bloc("titre").lignes) <= gab.QUESTION_LIGNES_MAX["reel"]
+    assert plan.bloc("titre").corps == tk.type_size("Titre de couverture — question", "reel")
+
+
+def test_the_question_ceiling_is_measured_per_format():
+    assert gab.QUESTION_LIGNES_MAX["carrousel"] == 5
+    assert gab.QUESTION_LIGNES_MAX["reel"] == 6
+
+
+def test_an_opening_guillemet_never_ends_a_line_away_from_its_word():
+    """French sets « and » against the quoted word. The wrap already glued a
+    detached » to the word before it; the « has to travel with the word after it,
+    or a title breaks as « dire « / l'Afrique » ».
+    """
+    nbsp = " "
+    jetons = gab._jetons("Pourquoi dire « l’Afrique » quand on parle")
+    assert f"«{nbsp}l’Afrique{nbsp}»" in jetons, jetons
+    assert "«" not in jetons
+
+
+def test_a_lone_guillemet_at_the_end_of_the_text_is_kept():
+    assert gab._jetons("dire «") == ["dire", "«"]
+
+
+def test_an_open_question_cover_is_not_flagged_for_its_word_count():
+    verdict = gab.portes([_ouverture(titre_forme="question")], DECK)
+    assert not [r for r in verdict.remarques if "mots" in r], verdict.remarques
+
+
+def test_a_question_too_long_for_its_rank_is_still_refused():
+    """The question rank buys lines, not unlimited text: overflow names the fault."""
+    trop_long = QUESTION_OUVERTE + " " + QUESTION_OUVERTE
+    plan = gab.plan(_ouverture(titre_forme="question", titre=trop_long), DECK,
+                    "carrousel", image=image_test(3000, 4000))
+    assert any("miniature" in f for f in plan.fautes), plan.fautes
+
+
+def test_several_words_of_a_title_can_take_the_accent():
+    """« retourne » and « découvre » are the two poles of the question."""
+    runs = gab._decouper_mots("EST-CE QU’ON Y RETOURNE OU EST-CE QU’ON LE DÉCOUVRE ?",
+                              ["retourne", "découvre"])
+    accentues = [t for t, accent in runs if accent]
+    assert accentues == ["RETOURNE", "DÉCOUVRE ?"], runs
+    assert "".join(t for t, _ in runs) == (
+        "EST-CE QU’ON Y RETOURNE OU EST-CE QU’ON LE DÉCOUVRE ?")
+
+
+def test_a_word_absent_from_a_line_leaves_it_whole():
+    assert gab._decouper_mots("QUAND ON EST NÉ", ["retourne"]) == [("QUAND ON EST NÉ", False)]
+
+
+def test_the_question_cover_carries_both_accent_words_and_renders():
+    c = _ouverture(titre_forme="question", titre_accents=["retourne", "découvre"])
+    plan = gab.plan(c, DECK, "carrousel", image=image_test(3000, 4000))
+    assert plan.bloc("titre").mots_accent == ("retourne", "découvre")
+    im = gab.composer(c, DECK, "carrousel", image=image_test(3000, 4000))
+    assert im.size == (1080, 1350)
+
+
+def test_a_title_without_accent_words_carries_none():
+    plan = gab.plan(_ouverture(titre_forme="question"), DECK, "carrousel",
+                    image=image_test(3000, 4000))
+    assert plan.bloc("titre").mots_accent == ()
 
 
 def main():

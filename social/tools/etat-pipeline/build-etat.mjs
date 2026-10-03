@@ -31,7 +31,8 @@ import {
   lireTitre,
   normaliser,
 } from "./etat.mjs";
-import { productionsRoot, publicationsRoot } from "../paths.mjs";
+import { productionsRoot, publicationsRoot, registryFile } from "../paths.mjs";
+import { workshopCleanupState } from "../library/cleanup-workshop.mjs";
 
 // Two shelves, two variables, nothing derived from this file's own location.
 // The tool used to compute both from `../..`, which stopped being true the day
@@ -124,6 +125,12 @@ function collecter() {
   }
   const sujets = [];
   const illisibles = [];
+  let registered = [];
+  try {
+    registered = JSON.parse(fs.readFileSync(registryFile(), "utf8")).posts;
+  } catch {
+    // Older libraries still have usable post headers; housekeeping is unknown.
+  }
 
   for (const fichier of postsMd(LIBRAIRIE)) {
     const texte = fs.readFileSync(fichier, "utf8");
@@ -150,6 +157,12 @@ function collecter() {
         lireDate(texte) ??
         fs.statSync(fichier).mtime.toISOString().slice(0, 10),
       chemin: relatif,
+      cleanup:
+        cle === "publie" || cle === "valide"
+          ? workshopCleanupState(
+              registered.find((post) => relatif.endsWith(`/${post.dir}`))
+            )
+          : "—",
     });
   }
   return { sujets, illisibles };
@@ -200,11 +213,11 @@ function rendre({ sujets, illisibles }) {
     "Dans l'ordre où ils se traitent : ce qui est prêt à partir, ce qui bloque, ce qui",
     "n'est qu'une idée, puis ce qui est déjà en ligne.",
     "",
-    "| | Sujet | Pilier | Ce qui bloque | Prochaine action | Depuis |",
-    "| --- | --- | --- | --- | --- | --- |",
+    "| | Sujet | Pilier | Ce qui bloque | Prochaine action | Depuis | Workshop cleanup |",
+    "| --- | --- | --- | --- | --- | --- | --- |",
     ...sujets.map(
       (s) =>
-        `| ${etat(s.cle).marqueur} | ${s.titre} | ${s.pilier} | ${s.blocage} | ${s.action} | ${s.date} |`
+        `| ${etat(s.cle).marqueur} | ${s.titre} | ${s.pilier} | ${s.blocage} | ${s.action} | ${s.date} | ${s.cleanup} |`
     ),
     ""
   );

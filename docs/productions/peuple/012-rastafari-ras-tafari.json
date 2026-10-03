@@ -1,0 +1,27 @@
+{
+  "campaign": "rastafari-ras-tafari",
+  "typologie": "peuple",
+  "episode": 12,
+  "question": {
+    "fr": "D'où vient le mot Rastafari ?"
+  },
+  "myth": {
+    "fr": "« Rastafari » est-il un mot jamaïcain ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_AMHARA",
+      "label": { "fr": "Amhara" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_AMHARA",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7685966237544828182",
+      "publishedAt": "2026-09-16"
+    }
+  ]
+}

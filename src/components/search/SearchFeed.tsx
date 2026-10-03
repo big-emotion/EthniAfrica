@@ -42,6 +42,10 @@ import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { formatProductionNameQuestion } from "@/lib/editorial/productionNameQuestion";
 import { normalizeString } from "@/lib/normalize";
+import type { SearchEvidence } from "@/lib/search/evidence";
+import type { NameAnswer } from "@/lib/search/nameAnswer";
+import type { NamingPresentationForm } from "@/lib/search/naming";
+import { resolveNameOpening } from "@/lib/search/resolveNameOpening";
 import { getLocalizedRoute } from "@/lib/routing";
 import { groupPeopleResults } from "@/lib/search/groupPeopleResults";
 import { parseHighlightedSnippet } from "@/lib/search/highlight";
@@ -103,6 +107,10 @@ export interface SearchFeedProps {
   subjects: readonly SearchResult[];
   leads: readonly SearchLead[];
   nearNames?: readonly SearchNearName[];
+  /** Reviewed answers for the searched term, from the search response. */
+  nameAnswers?: readonly NameAnswer[];
+  /** Reviewed terms a near spelling may have meant; offered as choices, never applied. */
+  nameSuggestions?: readonly string[];
   companions: SearchCompanionsData;
   resultCount?: number;
   presentation?: SearchFeedPresentation;
@@ -126,17 +134,24 @@ function resultForms(
   query: string,
   subjects: readonly SearchResult[],
   leads: readonly SearchLead[],
+  nameSuggestions: readonly string[],
   language: Language
 ) {
   if (state === "typo") {
-    return leads.map((lead, index) => ({
-      form: lead.name,
-      subjectId: `${lead.type}:${lead.id}`,
-      qualifier: undefined,
-      selfGiven: null,
-      problematic: undefined,
-      searched: index === 0,
-    }));
+    // Each suggestion is a new search the reader chooses; none is marked as
+    // the searched form, because nothing the reader typed matched it. Reviewed
+    // terms come first: they are spellings we hold an answer for.
+    return [...nameSuggestions, ...leads.map((lead) => lead.name)].map(
+      (name) => ({
+        form: name,
+        subjectId: undefined,
+        qualifier: undefined,
+        selfGiven: null,
+        problematic: undefined,
+        searched: false,
+        href: `${getLocalizedRoute(language, "search")}?${new URLSearchParams({ q: name })}`,
+      })
+    );
   }
 
   const wanted = normalizeString(query.trim());
@@ -159,6 +174,7 @@ function resultForms(
         ...form,
         subjectId,
         searched: normalizeString(form.form) === wanted,
+        detail: formDetail(form),
       })),
     ]);
   });
@@ -169,6 +185,26 @@ function resultForms(
     ])
   );
   return [...unique.values()];
+}
+
+/**
+ * What the corpus records about one form, as a single line — only when it
+ * records something. A form with no origin stays a plain label, never a button
+ * that opens onto nothing.
+ */
+function formDetail(
+  form: NamingPresentationForm
+): { text: string; evidence?: SearchEvidence } | undefined {
+  if (!form.origin) return undefined;
+  const text = [
+    form.origin.meaning,
+    form.origin.languageCode,
+    form.origin.imposedBy,
+    form.origin.period,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+  return text ? { text, evidence: form.evidence[0] } : undefined;
 }
 
 /** A stable partition: self-given forms first, every other form in its order. */
@@ -237,6 +273,8 @@ export function SearchFeed({
   subjects,
   leads,
   nearNames = [],
+  nameAnswers = [],
+  nameSuggestions = [],
   companions: loadedCompanions,
   resultCount,
   presentation,
@@ -251,17 +289,30 @@ export function SearchFeed({
   const answerCopy = nameAnswerCopy[language];
   const relatedOnly =
     state === "widened" && subjects.length === 0 && results.length > 0;
+  // A related-only answer shows no shelf, so that nothing unrelated sits under
+  // it. A piece found by the reader's own word is the exception: it answers the
+  // very word that was typed.
+  const wordShorts = loadedCompanions.shorts.items.filter(
+    ({ match }) => match.relation === "word"
+  );
   const companions: SearchCompanionsData = relatedOnly
     ? {
         subjects: [],
-        shorts: { count: 0, items: [] },
+        shorts: { count: wordShorts.length, items: wordShorts },
         anecdotes: { count: 0, items: [] },
         proverbs: { count: 0, items: [] },
         images: { count: 0, items: [] },
         quiz: { count: 0, item: null },
       }
     : loadedCompanions;
-  const derivedForms = resultForms(state, query, subjects, leads, language);
+  const derivedForms = resultForms(
+    state,
+    query,
+    subjects,
+    leads,
+    nameSuggestions,
+    language
+  );
   const forms = presentation?.appellations?.forms ?? derivedForms;
   const presentations = subjects.flatMap((subject) =>
     subject.naming ? [subject.naming.presentation] : []
@@ -339,28 +390,10 @@ export function SearchFeed({
     subjectIdentities.size >= 2;
   const hasNameDisambiguation =
     hasPeopleDisambiguation || hasCrossTypeDisambiguation;
-  const derivedSubjectSilences = subjects.flatMap((subject) => {
-    const naming = subject.naming;
-    const isDated = Boolean(
-      naming &&
-      (naming.presentation.forms.some((form) => form.attestationPeriod) ||
-        naming.presentation.eras.length > 0)
-    );
-    if (isDated) return [];
-    const subjectName = getLocalizedSearchResultName(subject, language);
-    return [
-      {
-        id: `${subject.type}:${subject.id}`,
-        title:
-          subjects.length > 1
-            ? `${subjectName} — ${answerCopy.noDatedAttestation}`
-            : answerCopy.noDatedAttestation,
-        detail: answerCopy.noDatedAttestationBody,
-      },
-    ];
-  });
-  const subjectSilences =
-    presentation?.owed?.silences ?? derivedSubjectSilences;
+  // Only silences a reviewer declared are shown. A missing structured field
+  // describes what was projected onto this page, not what is known: the same
+  // rule that keeps a missing video from reading as a missing source.
+  const subjectSilences = presentation?.owed?.silences ?? [];
   const availability = feedAvailability(
     state,
     subjects,
@@ -433,44 +466,73 @@ export function SearchFeed({
       : isRelationBrowse && relation?.kind === "country"
         ? getCountryCommonName(language, relation.id, relation.id)
         : undefined;
+  const opening = resolveNameOpening({ query, subjects, nameAnswers });
   const displayName =
     presentation?.answer?.name ??
     relationLabel ??
-    (state === "typo" && leads[0]
-      ? leads[0].name
+    opening.title ??
+    (state === "typo"
+      ? query.trim()
       : subjects[0]
         ? getLocalizedSearchResultName(subjects[0], language)
         : query);
+  // A piece found by the reader's word answers it: the confession would deny
+  // what the shelf below is showing.
+  const hasWordPiece = companions.shorts.items.some(
+    ({ match }) => match.relation === "word"
+  );
+  // No entity answers to the word, whether the search found nothing or only
+  // related fiches: what we hold is the piece.
+  const answeredByWord =
+    hasWordPiece &&
+    subjects.length === 0 &&
+    (state === "unknown" || state === "widened");
+  // A reviewed answer matched on the term alone (no fiche answered to the
+  // spelling): the confession would deny the answer shown right below it.
+  const answeredByReview =
+    subjects.length === 0 &&
+    opening.entries.length > 0 &&
+    (state === "unknown" || state === "typo");
   const verdict =
     presentation?.answer?.verdict ??
-    (state === "unknown"
-      ? answerCopy.unknownName
-      : state === "typo"
-        ? copy.answer.typo(displayName)
-        : hasPeopleDisambiguation
-          ? copy.answer.shared(subjects.length)
-          : hasCrossTypeDisambiguation
-            ? copy.answer.sharedGeneric(subjects.length)
-            : state === "widened"
-              ? subjects.length > 0
-                ? copy.answer.widened
-                : relation?.kind === "family" && relationLabel
-                  ? copy.answer.relationFamilyVerdict(relationLabel)
-                  : relation?.kind === "country"
-                    ? copy.answer.relationCountryVerdict(
-                        inCountry(relation.id, displayName, language)
-                      )
-                    : copy.answer.relatedOnly
-              : copy.answer.exact);
+    (answeredByWord
+      ? answerCopy.wordName
+      : answeredByReview
+        ? copy.answer.exact
+        : state === "unknown"
+          ? answerCopy.unknownName
+          : state === "typo"
+            ? copy.answer.typo
+            : hasPeopleDisambiguation
+              ? copy.answer.shared(subjects.length)
+              : hasCrossTypeDisambiguation
+                ? copy.answer.sharedGeneric(subjects.length)
+                : state === "widened"
+                  ? subjects.length > 0
+                    ? copy.answer.widened
+                    : relation?.kind === "family" && relationLabel
+                      ? copy.answer.relationFamilyVerdict(relationLabel)
+                      : relation?.kind === "country"
+                        ? copy.answer.relationCountryVerdict(
+                            inCountry(relation.id, displayName, language)
+                          )
+                        : copy.answer.relatedOnly
+                  : copy.answer.exact);
   const summary =
     presentation?.answer?.summary ??
-    (state === "unknown"
-      ? answerCopy.unknownNameBody
-      : state === "widened"
-        ? isRelationBrowse
-          ? copy.answer.relationSummary
-          : copy.answer.widenedSummary
-        : copy.answer.exactSummary);
+    (answeredByReview
+      ? copy.answer.exactSummary
+      : state === "unknown"
+        ? hasWordPiece
+          ? answerCopy.wordNameBody
+          : answerCopy.unknownNameBody
+        : state === "typo"
+          ? copy.answer.typoSummary(displayName)
+          : state === "widened"
+            ? isRelationBrowse
+              ? copy.answer.relationSummary
+              : copy.answer.widenedSummary
+            : copy.answer.exactSummary);
   const relationEyebrow = isRelationBrowse
     ? copy.answer.relationEyebrow
     : undefined;
@@ -490,18 +552,21 @@ export function SearchFeed({
         fieldLabel: answerCopy.invitation,
       };
   const exactSubjectIds = new Set(
-    companions.shorts.items
-      .filter(({ match }) => match.relation === "exact")
-      .map(({ match }) => `${match.entityType}:${match.entityId}`)
+    companions.shorts.items.flatMap(({ match }) =>
+      match.relation === "exact"
+        ? [`${match.entityType}:${match.entityId}`]
+        : []
+    )
   );
   const needsEmptyShort =
-    state === "unknown" ||
-    state === "widened" ||
-    companions.shorts.items.length === 0 ||
-    companions.subjects.some(
-      ({ entityType, entityId }) =>
-        !exactSubjectIds.has(`${entityType}:${entityId}`)
-    );
+    !hasWordPiece &&
+    (state === "unknown" ||
+      state === "widened" ||
+      companions.shorts.items.length === 0 ||
+      companions.subjects.some(
+        ({ entityType, entityId }) =>
+          !exactSubjectIds.has(`${entityType}:${entityId}`)
+      ));
   const lenses = [
     { id: "all" as const, label: copy.filters.all },
     {
@@ -541,7 +606,9 @@ export function SearchFeed({
     : undefined;
   const reviewedWideningNote = presentation
     ? presentation.shorts?.wideningNote
-    : companions.shorts.items.some(({ match }) => match.relation !== "exact")
+    : companions.shorts.items.some(
+          ({ match }) => match.relation !== "exact" && match.relation !== "word"
+        )
       ? copy.wideningNote
       : undefined;
 
@@ -567,6 +634,8 @@ export function SearchFeed({
             name={displayName}
             verdict={verdict}
             summary={summary}
+            entries={presentation?.answer ? [] : opening.entries}
+            unanswered={presentation?.answer ? [] : opening.unanswered}
             kind={presentation?.answer?.kind}
             eyebrow={presentation?.answer?.eyebrow ?? relationEyebrow}
             language={language}
@@ -584,9 +653,18 @@ export function SearchFeed({
       case "appellations":
         return (
           <AppellationsBlock
+            key={query}
             forms={forms}
-            reviewed={Boolean(presentation)}
-            title={presentation?.appellations?.title}
+            groupLabels={Object.fromEntries(
+              subjects.map((subject) => [
+                `${subject.type}:${subject.id}`,
+                `${getLocalizedSearchResultName(subject, language)} · ${getSearchEntityLabel(subject.type, language)}`,
+              ])
+            )}
+            title={
+              presentation?.appellations?.title ??
+              (state === "typo" ? copy.answer.typoChoices : undefined)
+            }
             subtitle={appellationsSubtitle}
             language={language}
             className="min-[1200px]:col-span-5"
@@ -857,7 +935,6 @@ export function SearchFeed({
   const opensWithPaddedVerdict = state === "unknown" && Boolean(presentation);
   const first = (
     <>
-      {firstIds.includes("lenses") ? renderBlock("lenses") : null}
       <div
         data-feed-opening="answer"
         className={cn(
@@ -876,6 +953,7 @@ export function SearchFeed({
         ) : null}
         {hasAppellations ? renderBlock("appellations") : null}
       </div>
+      {firstIds.includes("lenses") ? renderBlock("lenses") : null}
       {firstIds.includes("shorts") ? (
         <div
           data-feed-opening="shorts"

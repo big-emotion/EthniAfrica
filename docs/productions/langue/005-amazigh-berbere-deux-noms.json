@@ -1,0 +1,27 @@
+{
+  "campaign": "amazigh-berbere-deux-noms",
+  "typologie": "langue",
+  "episode": 5,
+  "question": {
+    "fr": "D'où vient le nom Amazigh ?"
+  },
+  "myth": {
+    "fr": "« Amazigh » veut-il vraiment dire « les hommes libres » ?"
+  },
+  "subjects": [
+    {
+      "kind": "family",
+      "id": "FLG_BERBERE",
+      "label": { "fr": "Berbère" }
+    }
+  ],
+  "sitePath": "/fr/atlas/familles/FLG_BERBERE",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7684690245262101782",
+      "publishedAt": "2026-09-12"
+    }
+  ]
+}

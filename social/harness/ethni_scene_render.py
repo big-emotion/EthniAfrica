@@ -1,0 +1,688 @@
+"""Random-access scene compositor. No clock, randomness, network or mutable timeline."""
+import json
+import math
+
+import numpy as np
+from PIL import Image, ImageColor, ImageDraw, ImageOps, ImageFilter
+
+import ethni_globe_layers as globe_layers
+import ethni_tokens as tokens
+from ethni_globe import GlobeCamera, globe_camera_at
+from ethni_type import font
+from ethni_map import Camera, camera_at, mix, partial_path, smooth
+from ethni_scene_kinetic import cues as kinetic_cues
+from ethni_scene_plan import STATUS, asset_path, scene_at, transition_at, require
+import ethni_scene_captions as captions
+import ethni_scene_fullbleed as fullbleed
+
+
+SPEAKERS_RADIUS, SPEAKERS_REFERENCE = 80, 16_000_000
+RIVER_FLOW_SPEED = 70  # px per second, downstream
+LIFT_SECONDS = .8      # a solid country rises over this long, once its outline is drawn
+
+
+def river_path(points, amplitude=5.0, wavelength=110.0, spacing=8.0, fade=60.0):
+    """A bending course through the given points: a Catmull-Rom curve, then a gentle deterministic meander.
+
+    A river drawn as a polyline through towns has right-angled corners that no river has. The curve passes
+    through every point; the meander fades to nothing at both ends, so a tributary still meets its river
+    exactly where the author put the junction."""
+    pts = [(float(x), float(y)) for x, y in points]
+    if len(pts) < 2:
+        return pts
+    padded = [pts[0]]+pts+[pts[-1]]
+    curve = [pts[0]]
+    for i in range(1, len(padded)-2):
+        p0, p1, p2, p3 = padded[i-1:i+3]
+        steps = max(6, int(math.dist(p1, p2)/spacing))
+        for k in range(1, steps+1):
+            t = k/steps
+            curve.append(tuple(0.5*(2*b+(-a+c)*t+(2*a-5*b+4*c-d)*t*t+(-a+3*b-3*c+d)*t**3)
+                               for a, b, c, d in zip(p0, p1, p2, p3)))
+    lengths = [0.0]
+    for a, b in zip(curve, curve[1:]):
+        lengths.append(lengths[-1]+math.dist(a, b))
+    total = lengths[-1]
+    phase = (pts[0][0]*.37+pts[0][1]*.21) % (2*math.pi)  # a river's own, so neighbours do not wave in step
+    out = []
+    for j, (x, y) in enumerate(curve):
+        (px, py), (nx, ny) = curve[max(0, j-1)], curve[min(len(curve)-1, j+1)]
+        norm = math.hypot(nx-px, ny-py) or 1.0
+        ends = min(1.0, lengths[j]/fade, (total-lengths[j])/fade)
+        offset = amplitude*ends*math.sin(2*math.pi*lengths[j]/wavelength+phase)
+        out.append((x-(ny-py)/norm*offset, y+(nx-px)/norm*offset))
+    out[0], out[-1] = pts[0], pts[-1]
+    return out
+
+
+def flowing_line(draw, points, colour, width, phase, dash=26, gap=64):
+    """Short lighter strokes travelling along a course; a pure function of `phase`, so any frame renders alone."""
+    period = dash+gap
+    travelled = 0.0
+    for a, b in zip(points, points[1:]):
+        length = math.dist(a, b)
+        step = 0.0
+        while step < length:
+            end = min(length, step+4)
+            if ((travelled+step-phase) % period) < dash:
+                draw.line([tuple(v+(u-v)*step/length for v, u in zip(a, b)),
+                           tuple(v+(u-v)*end/length for v, u in zip(a, b))], fill=colour, width=width)
+            step = end
+        travelled += length
+
+
+def scene_map(scene):
+    if scene["type"] == "map":
+        return scene.get("map")
+    if scene["type"] in ("comparison", "kinetic"):
+        return scene.get("backdrop", {}).get("map")
+    return scene.get("timeline", {}).get("background")
+
+
+def image_view(motion, local, duration, reduced=False):
+    """(zoom, focusX, focusY) of a picture's camera at `local` seconds into its scene.
+
+    `from`/`to` drifts over the whole scene. `keys` is a deliberate move: the camera eases from one key's view
+    to the next, then holds the last one, so a page can be shown whole and then brought closer on a column.
+    """
+    if "keys" in motion:
+        steps = motion["keys"]
+        if reduced:
+            return tuple(steps[0]["view"])
+        for a, b in zip(steps, steps[1:]):
+            if local < b["at"]:
+                progress = smooth((local-a["at"])/(b["at"]-a["at"]))
+                return tuple(x+(y-x)*progress for x, y in zip(a["view"], b["view"]))
+        return tuple(steps[-1]["view"])
+    progress = 0 if reduced else smooth(local/duration)
+    return tuple(a+(b-a)*progress for a, b in zip(motion["from"], motion["to"]))
+
+
+def image_zooms(motion):
+    """Every zoom a camera passes through: the base picture is resized once at the largest."""
+    return [step["view"][0] for step in motion["keys"]] if "keys" in motion else [motion["from"][0], motion["to"][0]]
+
+
+def dashed_line(draw, points, colour, width=2):
+    """Keep dash phase across short geographic segments, including tiny rings."""
+    phase = 0.0
+    for a, b in zip(points, points[1:]):
+        length = math.dist(a, b)
+        position = 0.0
+        while position < length:
+            step = min(length-position, 10-phase if phase < 10 else 18-phase)
+            if phase < 10:
+                draw.line([tuple(v+(u-v)*t/length for v, u in zip(a, b))
+                           for t in (position, position+step)], fill=colour, width=width)
+            position += step
+            phase = (phase+step) % 18
+
+
+class SceneRenderer:
+    width, height = 1080, 1920
+    # Text remains outside the right-hand social controls and the bottom interface.
+    left, right = 91, 900
+    # The window a map is drawn in when a caller does not ask for the whole frame (map previews and
+    # the map tests); a scene's own map always fills the frame.
+    viewport = (45, 480, 1035, 1170)
+
+    def __init__(self, plan, root, captions, reduced_motion=False, proof=True, timeline=None):
+        self.plan, self.root, self.captions, self.timeline = plan, root, captions, timeline
+        self._clip_frames = None
+        self.reduced_motion = reduced_motion
+        self.proof = proof
+        self._base_cache = {}
+        self._globe_base_cache = None  # the last globe base only: a moving camera never revisits one
+        self.palette = tokens.palette()
+        self.duration = plan["scenes"][-1]["end"]
+        self.assets = {}
+        for key, asset in plan["assets"].items():
+            path = asset_path(root, asset)
+            if asset["kind"] in ("geojson", "vector"):
+                self.assets[key] = json.loads(path.read_text())
+            elif asset["kind"] == "clip":
+                continue  # decoded on demand by ClipFrames, never held in memory
+            elif asset["kind"] == "relief":
+                with Image.open(path) as image:
+                    self.assets[key] = np.asarray(image.convert("RGB"))
+            else:
+                with Image.open(path) as image:
+                    self.assets[key] = ImageOps.exif_transpose(image).convert("RGB")
+
+    def face(self, role, weight=700):
+        return font(tokens.type_size(role, "reel"),
+                    "anton" if role in ("Titre de série", "Paire — terme") else "nunito", weight)
+
+    def paragraph(self, draw, value, box, role="Corps", colour=None, weight=700):
+        """Wrap by measured glyph width; never silently truncate or shrink text."""
+        x, y, width, height = box
+        face = self.face(role, weight)
+        lines = []
+        for paragraph in value.split("\n"):
+            line = ""
+            for word in paragraph.split():
+                require(draw.textlength(word, font=face) <= width, f"Text overflow: {word}")
+                candidate = (line + " " + word).strip()
+                if draw.textlength(candidate, font=face) > width:
+                    lines.append(line)
+                    line = word
+                else:
+                    line = candidate
+            lines.append(line)
+        step = round(tokens.type_size(role, "reel") * 1.2)
+        require(len(lines)*step <= height, f"Text overflow in {role}: {value[:80]}")
+        for index, line in enumerate(lines):
+            draw.text((x, y+index*step), line, font=face, fill=colour or self.palette["white"], anchor="lt")
+        return len(lines)*step
+
+    def _backdrop(self, asset, w, h):
+        """A dimmed, blurred cover of the photo itself, so a photo that cannot fill the frame
+        without exceeding the enlargement ceiling never leaves empty bands around it."""
+        key = ("backdrop", asset, w, h)
+        if key not in self._base_cache:
+            source = self.assets[asset]
+            scale = max(w/source.width, h/source.height)
+            cover = source.resize((max(w, round(source.width*scale)), max(h, round(source.height*scale))),
+                                  Image.Resampling.BILINEAR)
+            left, top = (cover.width-w)//2, (cover.height-h)//2
+            blurred = cover.crop((left, top, left+w, top+h)).filter(ImageFilter.GaussianBlur(32))
+            dark = Image.new("RGB", (w, h), self.palette["ground"])
+            self._base_cache[key] = Image.blend(blurred, dark, .45)
+        return self._base_cache[key]
+
+    def _image(self, scene, local, size=None):
+        value = scene["image"]
+        source = self.assets[value["asset"]]
+        w, h = size or (self.width, self.height)
+        motion = value.get("motion", {"from": [1, .5, .5], "to": [1, .5, .5]})
+        zoom, fx, fy = image_view(motion, local, scene["end"]-scene["start"], self.reduced_motion)
+        fit_scale = (min if value["fit"] == "contain" else max)(w/source.width, h/source.height)
+        scale = fit_scale*zoom
+        require(scale <= tokens.SUR_ECH_MAX, "Image enlargement exceeds the charter ceiling")
+        if value["fit"] == "contain":
+            resized = source.resize((round(source.width*scale), round(source.height*scale)), Image.Resampling.LANCZOS)
+            out = self._backdrop(value["asset"], w, h).copy()
+            out.paste(resized, ((w-resized.width)//2, (h-resized.height)//2))
+            return out
+        # Rounding the resized size and the crop offset to whole pixels on every frame made a
+        # slow push-in stair-step by up to a pixel, and Image.transform's bicubic still advanced
+        # unevenly. Resize once per scene at its largest zoom, then resample the frame window
+        # from a fractional source box, which is what gives a true sub-pixel filter.
+        largest = fit_scale*max(image_zooms(motion))
+        base = self._base_resize(value["asset"], largest)
+        bx, by = base.width/(source.width*scale), base.height/(source.height*scale)
+        left, top = (source.width*scale-w)*fx, (source.height*scale-h)*fy
+        return base.resize((w, h), Image.Resampling.LANCZOS,
+                           box=(left*bx, top*by, (left+w)*bx, (top+h)*by))
+
+    def _base_resize(self, asset, scale):
+        key = (asset, round(scale, 6))
+        if key not in self._base_cache:
+            source = self.assets[asset]
+            self._base_cache[key] = source.resize(
+                (round(source.width*scale), round(source.height*scale)), Image.Resampling.LANCZOS)
+        return self._base_cache[key]
+
+    def _flag(self, draw, feature, x, y):
+        """Three equal stripes above the mark, vertical by default. Simplified: an emblem or a star is not drawn."""
+        stripes = feature.get("flag_stripes", [])
+        scale = 1.5
+        width, height, top = 36*scale, 22*scale, y-40*scale
+        for i, stripe in enumerate(stripes):
+            if feature.get("flag_orientation", "vertical") == "horizontal":
+                draw.rectangle((x-width/2, top+i*height/3, x+width/2, top+(i+1)*height/3), fill=stripe)
+            else:
+                draw.rectangle((x-width/2+i*width/3, top, x-width/2+(i+1)*width/3, top+height), fill=stripe)
+
+    def _flat_base(self, cfg, camera, draw, p):
+        if cfg.get("graticule", True):
+            colour = mix(p["ground"], p["night-ink-3"], .15)
+            for lon in range(-180, 181, 5):
+                draw.line([camera.project((lon, -85)), camera.project((lon, 85))], fill=colour)
+            for lat in range(-80, 81, 5):
+                draw.line([camera.project((-180, lat)), camera.project((180, lat))], fill=colour)
+        # Uniform country fills with no strokes form the physical land surface.
+        # Borders are an independent optional overlay, never the people layer.
+        boundaries = []
+        for feature in self.assets[cfg["asset"]]["features"]:
+            geometry = feature["geometry"]
+            polygons = [geometry["coordinates"]] if geometry["type"] == "Polygon" else geometry["coordinates"]
+            highlighted = feature["properties"]["ADM0_A3"] in cfg.get("highlights", [])
+            for rings in polygons:
+                points = [camera.project(point) for point in rings[0]]
+                if highlighted:
+                    land = p.get("land-highlight") or mix(p["ground"], p["gold"], .22)
+                else:
+                    land = p.get("land") or mix(p["ground"], p["night-ink-2"], .22)
+                draw.polygon(points, fill=land)
+                for hole in rings[1:]:
+                    draw.polygon([camera.project(point) for point in hole], fill=p["ground"])
+                boundaries.append(points)
+        # Draw all boundaries after all land fills so adjacent countries cannot erase them.
+        if cfg["borders"]:
+            boundary_ink = p.get("border") or mix(p["ground"], p["night-ink-2"], .6)
+            for points in boundaries:
+                if cfg.get("border_style", "solid") == "dashed":
+                    dashed_line(draw, points, boundary_ink)
+                else:
+                    draw.line(points, fill=boundary_ink, width=2)
+
+    def _globe_base(self, cfg, camera, size, p):
+        """Relief, hydrography, borders and atmosphere: everything that depends on the camera alone."""
+        key = (json.dumps({k: cfg.get(k) for k in ("asset", "relief", "rivers", "lakes", "borders", "border_style",
+                                                     "border_width", "atmosphere", "space", "glow")}, sort_keys=True),
+               size, camera.center, camera.span, camera.tilt, camera.heading, camera.disc())
+        if self._globe_base_cache and self._globe_base_cache[0] == key:
+            return self._globe_base_cache[1]
+        # Read from the charter palette, not from `p`: the full-frame palette is a light map palette
+        # whose names mean other colours, and a plan names the charter's tokens.
+        space = self.palette[cfg["space"]] if "space" in cfg else p["ground"]
+        glow = self.palette[cfg["glow"]] if "glow" in cfg else p["perv"]
+        relief = self.plan["assets"][cfg["relief"]]
+        canvas = globe_layers.relief_base(self.assets[cfg["relief"]], relief["bounds"], camera, size, p["ground"],
+                                          space=space)
+        water = mix(p["perv"], p["white"], .3)
+        if "lakes" in cfg:
+            globe_layers.draw_lakes(canvas, camera, self.assets[cfg["lakes"]], mix(p["perv"], p["ground"], .35), water)
+        if "rivers" in cfg:
+            globe_layers.draw_lines(canvas, camera, self.assets[cfg["rivers"]], water, 2)
+        if cfg["borders"]:
+            globe_layers.draw_borders(canvas, camera, self.assets[cfg["asset"]], cfg.get("border_style", "solid"),
+                                      cfg.get("border_width", 2), p, dashed_line)
+        if cfg.get("atmosphere", True):
+            canvas = globe_layers.atmosphere(canvas, camera, glow)
+        self._globe_base_cache = (key, canvas)
+        return canvas
+
+    @staticmethod
+    def _camera(cfg, when, w, h):
+        if cfg.get("projection") == "globe":
+            return GlobeCamera(viewport=(0, 0, w, h), **globe_camera_at(cfg["camera"], when))
+        return Camera(camera_at(cfg["camera"], when), (0, 0, w, h))
+
+    def subject_boxes(self, scene, local):
+        """Where a full-frame map's subject stands on screen at `local`: each highlighted or active country, mark and
+        line, with the room its label takes."""
+        cfg = scene_map(scene)
+        if not cfg:
+            return []
+        globe = cfg.get("projection") == "globe"
+        camera = self._camera(cfg, 0 if self.reduced_motion else local, self.width, self.height)
+
+        def pixels(points):
+            points = np.asarray(points, dtype=float)[:, :2]
+            if globe:
+                shown, visible = camera.project_many(points)
+                return shown[visible]
+            return np.array([camera.project(point) for point in points])
+
+        def country(code):
+            rings = [ring for shape in self.assets[cfg["asset"]]["features"] if shape["properties"]["ADM0_A3"] == code
+                     for ring in globe_layers.outer_rings(shape["geometry"])]
+            return [pixels(ring) for ring in rings]
+
+        found = []
+        for code in cfg.get("highlights", []):
+            found.append((country(code), None))
+        for feature in cfg.get("features", []):
+            if not feature["at"] <= local < feature["until"]:
+                continue
+            kind = feature["kind"]
+            if kind == "country":
+                found.append((country(feature["code"]), feature))
+            elif kind in ("label", "point", "presence", "speakers"):
+                if globe and not camera.visible(feature["point"]):
+                    continue
+                x, y = camera.project(feature["point"])
+                radius = 60 if kind != "speakers" else max(60, round(SPEAKERS_RADIUS*math.sqrt(feature["value"]/SPEAKERS_REFERENCE)))
+                found.append(([np.array([[x-radius, y-radius], [x+radius, y+radius]])], feature))
+            else:
+                found.append(([pixels(feature["points"])], feature))
+
+        boxes = []
+        for shapes, feature in found:
+            shapes = [s for s in shapes if len(s)]
+            if not shapes:
+                continue
+            every = np.concatenate(shapes)
+            box = [every[:, 0].min(), every[:, 1].min(), every[:, 0].max(), every[:, 1].max()]
+            boxes.append(box)
+            if feature and not feature.get("unlabelled"):
+                # The same anchor and offset _map draws the label with.
+                if "point" in feature:
+                    x, y = camera.project(feature["point"])
+                elif feature["kind"] == "country":
+                    x, y = (box[0]+box[2])/2, (box[1]+box[3])/2
+                else:
+                    x, y = shapes[0][0]
+                dx, dy = feature.get("offset", [0, 0] if feature["kind"] == "label" else [18, -30])
+                width = max(self.face("Bandeau").getlength(feature["label"]), 300 if "annotation" in feature else 0)
+                boxes.append([x+dx, y+dy, x+dx+width, y+dy+(146 if "annotation" in feature else 36)])
+        clipped = [(max(0, b[0]), max(0, b[1]), min(self.width, b[2]), min(self.height, b[3])) for b in boxes]
+        return [tuple(round(v) for v in b) for b in clipped if b[0] < b[2] and b[1] < b[3]]
+
+    def _map(self, scene, local, viewport=None, palette=None):
+        cfg = scene["map"]
+        x0, y0, x1, y1 = viewport or self.viewport
+        w, h = x1-x0, y1-y0
+        p = palette or self.palette
+        when = 0 if self.reduced_motion else local
+        globe = cfg.get("projection") == "globe"
+        camera = self._camera(cfg, when, w, h)
+        if globe:
+            canvas = self._globe_base(cfg, camera, (w, h), p).copy()
+            draw = ImageDraw.Draw(canvas)
+        else:
+            canvas = Image.new("RGB", (w, h), p["ground"])
+            draw = ImageDraw.Draw(canvas)
+            self._flat_base(cfg, camera, draw, p)
+        label_boxes = []
+        features = sorted(cfg.get("features", []), key=lambda f: f.get("role") != "context")
+        for feature in features:
+            if not feature["at"] <= local < feature["until"]:
+                continue
+            reveal = 1 if self.reduced_motion or "fade_seconds" not in feature else smooth((local-feature["at"])/feature["fade_seconds"])
+            below = canvas.copy() if reveal < 1 else None
+            default_colour = "white" if feature.get("style") == "sea" else "gold"
+            colour = p.get(feature.get("colour", default_colour)) or p["teal"]  # "sea" only exists on the light map palette
+            if feature.get("role") == "context":
+                colour = "#%02x%02x%02x" % mix(p["ground"], colour, .55)
+            kind = feature["kind"]
+            if globe and "point" in feature and not camera.visible(feature["point"]):
+                continue  # the far side of the Earth is not on screen, and a clamped mark would lie about where it is
+            if kind == "label":
+                x, y = camera.project(feature["point"])
+                if feature.get("style", "place") == "place":
+                    draw.ellipse((x-5, y-5, x+5, y+5), fill=colour)
+            elif kind in ("point", "presence", "speakers"):
+                x, y = camera.project(feature["point"])
+                if kind == "presence":
+                    # Equal-size locators deliberately encode no unmeasured density.
+                    for radius in range(38, 7, -3):
+                        draw.ellipse((x-radius, y-radius, x+radius, y+radius),
+                                     fill=mix(p["ground"], colour, .15 + .4*(1-radius/38)))
+                if kind == "speakers":
+                    # Area follows the figure (60 px at 16 million); the glow only makes it legible on a map.
+                    size = max(12, round(SPEAKERS_RADIUS*math.sqrt(feature["value"]/SPEAKERS_REFERENCE)))
+                    for radius in range(size, 7, -3):
+                        draw.ellipse((x-radius, y-radius, x+radius, y+radius),
+                                     fill=mix(p["ground"], colour, .3 + .6*(1-radius/size)))
+                    draw.ellipse((x-size, y-size, x+size, y+size), outline=colour, width=3)
+                draw.ellipse((x-7, y-7, x+7, y+7), fill=colour)
+                self._flag(draw, feature, x, y)
+            elif kind == "country" and globe:
+                rings = [ring for shape in self.assets[cfg["asset"]]["features"]
+                         if shape["properties"]["ADM0_A3"] == feature["code"]
+                         for ring in globe_layers.outer_rings(shape["geometry"])]
+                since, drawing = local-feature["at"], feature.get("draw_seconds", 0)
+                extrude = feature.get("extrude", 0)
+                progress = 1 if self.reduced_motion or not drawing else min(1, since/drawing)
+                if extrude:
+                    rise = 1 if self.reduced_motion else smooth(min(1, max(0, (since-drawing)/LIFT_SECONDS)))
+                else:
+                    rise = 1 if self.reduced_motion or since >= drawing else 0
+                globe_layers.solid_country(canvas, camera, rings, colour, p["ground"], progress, rise, extrude)
+                pixels = np.concatenate([camera.project_many(np.asarray(r, dtype=float)[:, :2])[0] for r in rings])
+                x, y = pixels.mean(axis=0).tolist()
+                self._flag(draw, feature, x, y)
+            elif kind == "country":
+                overlay = Image.new("RGBA", canvas.size)
+                od = ImageDraw.Draw(overlay)
+                outline = []
+                for shape in self.assets[cfg["asset"]]["features"]:
+                    if shape["properties"]["ADM0_A3"] != feature["code"]:
+                        continue
+                    geometry = shape["geometry"]
+                    for rings in [geometry["coordinates"]] if geometry["type"] == "Polygon" else geometry["coordinates"]:
+                        ring = [camera.project(point) for point in rings[0]]
+                        od.polygon(ring, fill=ImageColor.getrgb(colour)+(165,))
+                        outline.extend(ring)
+                canvas.paste(overlay, (0, 0), overlay)
+                x = sum(a for a, _ in outline)/len(outline)
+                y = sum(b for _, b in outline)/len(outline)
+                self._flag(draw, feature, x, y)
+            elif kind == "presence-zone":
+                points = [camera.project(point) for point in feature["points"]]
+                if globe and feature.get("extrude"):
+                    grow = 1 if self.reduced_motion else smooth(min(1, (local-feature["at"])/LIFT_SECONDS))
+                    globe_layers.raised_field(canvas, camera, feature["points"], colour, feature["extrude"]*grow)
+                else:
+                    mask = Image.new("L", canvas.size)
+                    ImageDraw.Draw(mask).polygon(points, fill=125)
+                    mask = mask.filter(ImageFilter.GaussianBlur(18))
+                    # The feathered edge represents uncertainty, not population density.
+                    canvas.paste(Image.new("RGB", canvas.size, colour), (0, 0), mask)
+                x, y = points[0]
+            elif kind == "territory":
+                points = [camera.project(point) for point in feature["points"]]
+                overlay = Image.new("RGBA", canvas.size)
+                od = ImageDraw.Draw(overlay)
+                od.polygon(points, fill=ImageColor.getrgb(colour)+(round(feature.get("fill_opacity", 65/255)*255),))
+                # Dashed outlines make estimated/hypothetical extents distinguishable without colour.
+                if feature["evidence"]["status"] in ("estimate", "hypothesis"):
+                    for a, b in zip(points, points[1:]):
+                        distance = math.dist(a, b)
+                        for offset in range(0, int(distance), 18):
+                            t0, t1 = offset/max(1, distance), min(1, (offset+9)/max(1, distance))
+                            od.line([tuple(v+(u-v)*t0 for v, u in zip(a, b)),
+                                     tuple(v+(u-v)*t1 for v, u in zip(a, b))], fill=colour, width=3)
+                else:
+                    od.line(points, fill=colour, width=3)
+                canvas.paste(overlay, (0, 0), overlay)
+                x, y = points[0]
+            else:
+                draw_seconds = feature.get("draw_seconds", feature["until"]-feature["at"])
+                progress = 1 if self.reduced_motion else min(1, (local-feature["at"])/draw_seconds)
+                if feature["meaning"] == "river":
+                    # Bent in longitude and latitude, not in pixels: the meander belongs to the map and cannot
+                    # slide along the river when the camera zooms.
+                    course = [camera.project(point) for point in
+                              river_path(feature["points"], amplitude=.05, wavelength=1.2, spacing=.08, fade=.6)]
+                else:
+                    course = [camera.project(point) for point in feature["points"]]
+                points = partial_path(course, progress)
+                if len(points) > 1:
+                    width = feature.get("line_width", 5)
+                    if feature["meaning"] == "river":
+                        # A watercourse, not a border: a continuous line with a lighter current moving downstream.
+                        draw.line(points, fill=colour, width=max(3, width-1), joint="curve")
+                        if feature.get("flow", True):
+                            phase = 0 if self.reduced_motion else local*RIVER_FLOW_SPEED
+                            flowing_line(draw, points, mix(colour, "#ffffff", .62), max(2, width-3), phase)
+                    elif feature.get("line_style", "solid") == "dashed":
+                        dashed_line(draw, points, colour, width)
+                    else:
+                        draw.line(points, fill=colour, width=width, joint="curve")
+                    a, b = points[-2:]
+                    angle = math.atan2(b[1]-a[1], b[0]-a[0])
+                    if feature["meaning"] != "river":  # a watercourse has no direction of travel
+                        draw.polygon([b, (b[0]-18*math.cos(angle-.45), b[1]-18*math.sin(angle-.45)),
+                                      (b[0]-18*math.cos(angle+.45), b[1]-18*math.sin(angle+.45))], fill=colour)
+                x, y = camera.project(feature["points"][0])
+            # Off-screen features remain available as legend entries, not false clamped locations.
+            dx, dy = feature.get("offset", [0, 0] if kind == "label" else [18, -30])
+            label_width = draw.textlength(feature["label"], font=self.face("Bandeau"))
+            annotated = "annotation" in feature
+            if annotated: label_width = max(label_width, 300)
+            label_height = 146 if annotated else 36
+            if not feature.get("unlabelled") and 0 <= x+dx and x+dx+label_width <= self.right-x0 and 0 <= y+dy <= h-label_height:
+                box = (x+dx, y+dy, x+dx+label_width, y+dy+label_height)
+                require(not any(box[0] < b[2]+8 and box[2]+8 > b[0] and box[1] < b[3]+8 and box[3]+8 > b[1]
+                                for b in label_boxes), f"Map label overlap: {feature['label']}")
+                label_boxes.append(box)
+                ink = p.get(feature.get("label_colour", feature.get("colour", default_colour))) or p["teal"]
+                if feature.get("role") == "context": ink = mix(p["ground"], ink, .65)
+                if annotated:
+                    edge = (max(box[0], min(x, box[2])), max(box[1], min(y, box[3])))
+                    draw.line(((x, y), edge), fill=ink, width=2)
+                self.paragraph(draw, feature["label"], (x+dx, y+dy, label_width+1, 40), "Bandeau", ink)
+                if annotated:
+                    self.paragraph(draw, feature["annotation"], (x+dx, y+dy+42, label_width, 104),
+                                   "Bandeau", ink, weight=400)
+            if below is not None:
+                canvas = Image.blend(below, canvas, reveal)
+                draw = ImageDraw.Draw(canvas)
+        return canvas
+
+    def _clip(self, scene, instant, size):
+        """The excerpt's picture filling the frame. `contain` never crops what an archive shows: the
+        picture is held whole over a dimmed, blurred cover of itself, like a contained photograph."""
+        from ethni_scene_clips import ClipFrames, window_for
+        if self._clip_frames is None:
+            self._clip_frames = ClipFrames(self.root, self.plan, self.timeline)
+        window = window_for(self.timeline, scene["clip"]["insertion"])
+        picture = self._clip_frames.frame(window, instant)
+        w, h = size
+        if scene["clip"]["fit"] == "cover":
+            scale = max(w/picture.width, h/picture.height)
+            cover = picture.resize((max(w, round(picture.width*scale)), max(h, round(picture.height*scale))),
+                                   Image.Resampling.LANCZOS)
+            left, top = (cover.width-w)//2, (cover.height-h)//2
+            return cover.crop((left, top, left+w, top+h))
+        scale = min(w/picture.width, h/picture.height)
+        held = picture.resize((round(picture.width*scale), round(picture.height*scale)), Image.Resampling.LANCZOS)
+        fill = max(w/picture.width, h/picture.height)
+        cover = picture.resize((max(w, round(picture.width*fill)), max(h, round(picture.height*fill))),
+                               Image.Resampling.BILINEAR)
+        left, top = (cover.width-w)//2, (cover.height-h)//2
+        out = Image.blend(cover.crop((left, top, left+w, top+h)).filter(ImageFilter.GaussianBlur(32)),
+                          Image.new("RGB", (w, h), self.palette["ground"]), .45)
+        out.paste(held, ((w-held.width)//2, (h-held.height)//2))
+        return out
+
+    def excerpt_credit(self, instant):
+        """While an excerpt sounds, its credit is on screen whatever scene happens to be drawn."""
+        for window in (self.timeline or {}).get("windows", []):
+            if window["clip_start"] <= instant < window["clip_end"]:
+                asset = self.plan["assets"][window["asset"]]
+                return [f"Extrait : {asset['credit']} · {asset['license']}"]
+        return []
+
+    def legend(self, scene, local):
+        """What the map shows and how sure the author is: period and status of every active feature."""
+        legend = []
+        geographic = scene_map(scene)
+        if geographic and (scene["type"] in ("map", "comparison") or geographic.get("features") or geographic.get("highlights")):
+            projection = "Globe" if geographic.get("projection") == "globe" else "Mercator"
+            legend.append((f"Frontières actuelles en pointillé · {projection}" if geographic.get("border_style") == "dashed"
+                           else f"Frontières actuelles · {projection}") if geographic["borders"] and geographic.get("border_style") != "none"
+                          else f"Sans frontières actuelles · {projection}")
+            entries = []
+            for feature in geographic.get("features", []):
+                if feature["at"] <= local < feature["until"]:
+                    e = feature["evidence"]
+                    meaning = {"journey": "Trajet", "migration": "Migration", "language-diffusion": "Diffusion linguistique",
+                               "name-circulation": "Circulation du nom",
+                               "river": "Cours d'eau (tracé schématique)"}.get(feature.get("meaning"))
+                    # A context country contains the subject rather than neighbouring it.
+                    role = "Voisinage : " if feature.get("role") == "context" and feature["kind"] != "country" else ""
+                    tail = f" · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else "")
+                    entries.append((role+feature["label"], tail, feature.get("geometry_note"), e["period"],
+                                    STATUS[e["status"]] + (f" · {meaning}" if meaning else "")))
+            noted = set()
+            # Features that share a status share one line, each keeping its own period when the periods differ,
+            # and a geometry note is printed once: a dozen features must fit the foot of the frame.
+            grouped = {}
+            for label, tail, note, period, status in entries:
+                grouped.setdefault(status, []).append((label, period, note))
+            entries = []
+            notes = []
+            for status, items in grouped.items():
+                periods = {period for _, period, _ in items}
+                if len(periods) == 1:
+                    text = ", ".join(dict.fromkeys(label for label, _, _ in items))+f" · {periods.pop()} · {status}"
+                else:
+                    by_period = {}
+                    for label, period, _ in items:
+                        by_period.setdefault(period, []).append(label)
+                    text = " ; ".join(f"{', '.join(dict.fromkeys(labels))} · {period}"
+                                      for period, labels in by_period.items())+f" · {status}"
+                entries.append((text, "", None))
+                notes += [note for _, _, note in items if note and note not in notes]
+            if notes:
+                entries.append((" · ".join(notes), "", None))
+            for label, tail, note in entries:
+                legend.append(label+tail)
+                if note and note not in noted:
+                    noted.add(note)
+                    legend.append(note)
+            if any(f["kind"] == "speakers" and f["at"] <= local < f["until"] for f in geographic.get("features", [])):
+                legend.append("Surface des cercles proportionnelle à l'effectif indiqué")
+        return legend
+
+    def credits(self, scene, local=None):
+        kind = scene["type"]
+        credits = []
+        asset_source = None
+        asset_id = scene[kind]["asset"] if kind in ("map", "image") else None
+        if kind == "timeline" and "background" in scene["timeline"]:
+            asset_id = scene["timeline"]["background"]["asset"]
+        if kind in ("comparison", "kinetic") and "backdrop" in scene:
+            asset_id = next(iter(scene["backdrop"].values()))["asset"]
+        if asset_id:
+            asset = self.plan["assets"][asset_id]
+            credits.append(f"{asset['credit']} · {asset['license']}")
+            asset_source = asset["source"]
+        for card in (scene_map(scene) or {}).get("inserts", []):
+            if local is None or card["at"] <= local < card["until"]:
+                asset = self.plan["assets"][card["asset"]]
+                credits.append(f"{asset['credit']} · {asset['license']}")
+        source_keys = list(scene["evidence"]["sources"])
+        if kind == "timeline":
+            for event in scene["timeline"]["events"]:
+                source_keys.extend(event["evidence"]["sources"])
+        geographic = scene_map(scene)
+        if geographic:
+            for feature in geographic.get("features", []):
+                source_keys.extend(feature["evidence"]["sources"])
+        refs = [self.plan["sources"][key] for key in dict.fromkeys(source_keys) if key != asset_source]
+        if refs:
+            credits.append(" · ".join(source.get("label", source["citation"]) for source in refs))
+        return credits
+
+    def render(self, instant):
+        return fullbleed.render(self, instant)
+
+    def preflight(self):
+        """Inspect all caption content and scene/event/camera boundaries before encoding."""
+        # Laying the captions out refuses a word wider than the column, an emphasis word nobody speaks and a scene
+        # with no clear place for its captions, before any frame is encoded.
+        instants = {min(self.duration-1e-6, group["fin"]) for group in captions.layout(self)}
+        for scene in self.plan["scenes"]:
+            start, end = scene["start"], scene["end"]
+            instants.update((start, (start+end)/2, end-1e-6))
+            length = scene.get("transition", {}).get("duration", 0)
+            if length: instants.add(start+length/2)
+            geographic = scene_map(scene)
+            if geographic:
+                instants.update(start+k["at"] for k in geographic["camera"] if start+k["at"] < end)
+                for card in geographic.get("inserts", []):
+                    instants.update((start+card["at"]+.17, start+card["at"]+.5, min(end-1e-6, start+card["until"]-.17)))
+                for f in geographic.get("features", []):
+                    instants.update((start+f["at"], start+f["until"]-1e-6, min(end-1e-6, start+f["until"])))
+                    if "draw_seconds" in f:
+                        instants.add(start+f["at"]+f["draw_seconds"]/2)
+                        instants.add(min(end-1e-6, start+f["at"]+f["draw_seconds"]))
+                    if "fade_seconds" in f:
+                        instants.update((start+f["at"]+f["fade_seconds"]/2,
+                                         min(end-1e-6, start+f["at"]+f["fade_seconds"])))
+            if scene["type"] == "clip":
+                window = next(w for w in self.timeline["windows"] if w["id"] == scene["clip"]["insertion"])
+                instants.update((window["clip_start"], (window["clip_start"]+window["clip_end"])/2, window["clip_end"]-1e-6))
+            if scene["type"] == "comparison":
+                instants.update(start+i.get("at", 0) for i in scene["comparison"] if start+i.get("at", 0) < end)
+                # An overlay's items rise and fade in: look at the moment each one has finished arriving.
+                instants.update(min(end-1e-6, start+i.get("at", 0)+fullbleed.REVEAL_S) for i in scene["comparison"])
+            picture = scene.get("image") or next(iter(scene.get("backdrop", {}).values()), {})
+            motion = picture.get("motion", {}) if "fit" in picture else {}
+            instants.update(start+k["at"] for k in motion.get("keys", []) if start+k["at"] < end)
+            if scene["type"] == "kinetic":
+                instants.update(min(end-1e-6, start+cue) for cue in kinetic_cues(scene))
+            if scene["type"] == "timeline":
+                timeline = scene["timeline"]
+                cues = [i["at"] for i in timeline["events"]]
+                instants.update(start+cue for cue in cues)
+                instants.update(min(end-1e-6, start+cue+delta) for cue in cues for delta in (.25, .85))
+        for instant in sorted(instants):
+            self.render(instant)
+        return sorted(instants)

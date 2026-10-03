@@ -1,0 +1,104 @@
+{
+  "term": { "fr": "Pygmée", "en": "Pygmy" },
+  "aliases": ["Pygmées", "Pigmée", "Pigmées", "Pigme", "Pygme"],
+  "subjects": [
+    { "type": "people", "id": "PPL_PYGMEES_AUTOCHTONES" },
+    { "type": "people", "id": "PPL_AKA" },
+    { "type": "people", "id": "PPL_TWA" }
+  ],
+  "paragraphs": {
+    "fr": [
+      "« Pygmée » n'est pas un nom que ces peuples se donnent : chacun se nomme lui-même, Baka, Bagyeli, Bedzan, Aka (ou BaAka), Batwa. Le mot vient d'un terme grec désignant la coudée, une mesure de longueur. On dit que l'époque coloniale l'a ensuite appliqué à des peuples de petite stature d'Afrique centrale.",
+      "Le mot est jugé dévalorisant : il réduit chacun à sa stature et nie son identité propre. Des organisations de défense des peuples autochtones recommandent d'employer le nom de chaque peuple. Le mot recouvre donc plusieurs peuples, et non un seul."
+    ],
+    "en": [
+      "\"Pygmy\" is not a name these peoples give themselves: each names itself, Baka, Bagyeli, Bedzan, Aka (or BaAka), Batwa. The word comes from a Greek term for the cubit, a unit of length. The colonial era is said to have then applied it to small-statured peoples of Central Africa.",
+      "The word is regarded as demeaning: it reduces each people to its stature and denies its own identity. Indigenous-rights organisations recommend using each people's own name. The word therefore covers several peoples, not one."
+    ]
+  },
+  "uncertainty": {
+    "fr": "La manière dont le mot a été appliqué à ces peuples n'est pas établie en détail.",
+    "en": "How the word came to be applied to these peoples is not settled in detail."
+  },
+  "evidence": [
+    {
+      "statement": {
+        "fr": "Le mot vient du grec pygmaios, dérivé de pygmē, la coudée, mesure de longueur du coude aux articulations de la main.",
+        "en": "The word comes from Greek pygmaios, derived from pygmē, the cubit, a measure of length from the elbow to the knuckles."
+      },
+      "sources": [
+        {
+          "title": "Online Etymology Dictionary, entrée « pygmy »",
+          "url": "https://www.etymonline.com/word/pygmy",
+          "tier": "referenced"
+        }
+      ]
+    },
+    {
+      "statement": {
+        "fr": "Les peuples de la forêt d'Afrique centrale se disent Baka, Bagyeli, Bedzan, chacun sous son propre nom.",
+        "en": "The forest peoples of Central Africa call themselves Baka, Bagyeli, Bedzan, each under its own name."
+      },
+      "sources": [
+        {
+          "title": "Des leaders Baka et Bagyeli exposent les problemes – Forest Peoples Programme, 2010",
+          "year": 2010,
+          "url": "https://www.forestpeoples.org/fr/publications-resources/news/article/des-leaders-baka-et-bagyeli-exposent-les-problemes-de-leur-forets-aupres-des-medias-et-du-public/",
+          "tier": "referenced"
+        }
+      ]
+    },
+    {
+      "statement": {
+        "fr": "Les Aka se désignent par leur nom propre et jugent Pygmée offensant.",
+        "en": "The Aka call themselves by their own name and find Pygmy offensive."
+      },
+      "sources": [
+        {
+          "title": "Aka in Central African Republic – Minority Rights Group International, 2018",
+          "year": 2018,
+          "url": "https://minorityrights.org/communities/aka/",
+          "tier": "referenced"
+        }
+      ]
+    },
+    {
+      "statement": {
+        "fr": "Les Batwa (Twa) préfèrent leur auto-dénomination au mot Pygmée.",
+        "en": "The Batwa (Twa) prefer their self-name to the word Pygmy."
+      },
+      "sources": [
+        {
+          "title": "Minority Rights Group International, Twa in Rwanda",
+          "url": "https://minorityrights.org/communities/twa-2/",
+          "tier": "referenced"
+        },
+        {
+          "title": "IWGIA (International Work Group for Indigenous Affairs), profil des Batwa des Grands Lacs",
+          "url": "https://www.iwgia.org",
+          "tier": "official"
+        }
+      ]
+    },
+    {
+      "statement": {
+        "fr": "Le mot Pygmée est jugé dévalorisant, réduit à un trait physique, et les organisations de défense des peuples autochtones recommandent le nom propre de chaque groupe.",
+        "en": "The word Pygmy is regarded as demeaning and reduces people to a physical trait; indigenous-rights organisations recommend each group's own name."
+      },
+      "sources": [
+        {
+          "title": "Les Baka : Territoires et Modes de Vie Traditionnels – IWGIA, Pyhala Aili",
+          "author": "Pyhala Aili",
+          "url": "https://iwgia.org/images/publications/0584_informe_13_fre_opt.pdf",
+          "tier": "official"
+        },
+        {
+          "title": "Des leaders Baka et Bagyeli exposent les problemes – Forest Peoples Programme, 2010",
+          "year": 2010,
+          "url": "https://www.forestpeoples.org/fr/publications-resources/news/article/des-leaders-baka-et-bagyeli-exposent-les-problemes-de-leur-forets-aupres-des-medias-et-du-public/",
+          "tier": "referenced"
+        }
+      ]
+    }
+  ]
+}

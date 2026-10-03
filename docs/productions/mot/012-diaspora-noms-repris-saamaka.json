@@ -1,0 +1,21 @@
+{
+  "campaign": "diaspora-noms-repris-saamaka",
+  "typologie": "mot",
+  "episode": 12,
+  "question": {
+    "fr": "Qui a choisi le nom que portent aujourd'hui des peuples afrodescendants comme les Saamaka ?"
+  },
+  "myth": {
+    "fr": "Un peuple né de la déportation reste-t-il désigné par le nom que ses colonisateurs lui ont donné ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7684282290012261654",
+      "publishedAt": "2026-09-11"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>En bref — l'histoire des noms (maquette)</title>
+<!--
+  Proposal, not yet a contract: the "En bref" brick of the country, people and
+  family fiches, reordered so the reader meets the history of the names first
+  and the counted figures second. Self-contained: open the file in a browser.
+  Text is drawn from dataset/source/afrik (pays/COG, peuples/FLG_ATLANTIQUE/PPL_FULA,
+  famille_linguistique/FLG_BANTU) and shortened to one plain sentence per form.
+  Palette approximates the --afh-* tokens; the implementation uses the tokens.
+-->
+<style>
+:root{--bg:#f4ede3;--card:#fffdf9;--sand:#f3ece2;--ink:#241a12;--soft:#6b5b4b;--line:#e3d8c8;--accent:#b7752b;--link:#7a5210;--tone:#8a3b1c}
+[data-night]{--bg:#14100c;--card:#1d1711;--sand:#241d15;--ink:#f1e8dc;--soft:#b9a993;--line:#3a2f22;--accent:#d9974a;--link:#e6b26e;--tone:#e8946f}
+*{box-sizing:border-box}
+body{margin:0;background:#e9e2d6;font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;color:#241a12;padding:16px}
+[data-night-page]{background:#0c0906;color:#f1e8dc}
+h1.doc{font:700 22px Georgia,serif;margin:0 0 4px}
+.doc-note{max-width:760px;color:inherit;opacity:.8;margin:0 0 16px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}
+.bar button{font:inherit;padding:8px 14px;border-radius:999px;border:1px solid #b9a993;background:transparent;color:inherit;cursor:pointer}
+.bar button[aria-pressed=true]{background:#b7752b;color:#fff;border-color:#b7752b}
+.case{margin:0 0 40px}
+.case h2.label{font:700 14px/1 system-ui;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px;opacity:.75}
+.frames{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start}
+.frame{background:var(--bg);color:var(--ink);border-radius:14px;padding:12px;overflow:hidden}
+.frame.mobile{width:390px;max-width:100%}
+.frame.desktop{width:800px;max-width:100%}
+.frame small.dim{display:block;font:12px system-ui;color:var(--soft);margin:0 0 8px}
+
+/* ---- the brick ---- */
+.brief{background:var(--sand);border-radius:16px;padding:20px 16px}
+.brief h2{font:800 28px/1.1 Georgia,"Times New Roman",serif;margin:0 0 14px}
+.story{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.story .eyebrow{font:600 12px system-ui;letter-spacing:.12em;text-transform:uppercase;color:var(--link);margin:0 0 6px}
+.story .why{font:700 22px/1.25 Georgia,serif;margin:0 0 6px}
+.story .why-plain{margin:0 0 14px;color:var(--soft);font-size:16px}
+.forms{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.forms li{display:grid;grid-template-columns:1fr;gap:2px;padding:12px 0;border-top:1px solid var(--line)}
+.forms .form{font:700 19px/1.2 Georgia,serif}
+.forms .tag{font:600 12px system-ui;letter-spacing:.06em;text-transform:uppercase;color:var(--soft)}
+.forms .sense{margin:0;font-size:16px}
+.forms li.mark .form::after{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-left:8px;vertical-align:middle}
+.more{margin:10px 0 0;font:600 15px system-ui;color:var(--link);background:none;border:0;padding:0;text-decoration:underline;text-underline-offset:3px}
+.caution{margin:12px 0 0;padding:10px 12px;border-left:3px solid var(--accent);background:var(--sand);font-size:15px}
+.figures{margin:14px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.figures .lead{grid-column:1/-1}
+.fig{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.fig b{display:block;font:800 26px/1 Georgia,serif}
+.fig.lead b{font-size:34px;color:var(--tone)}
+.fig span{display:block;font:600 12px system-ui;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);margin-top:4px}
+.fig i{display:block;font:normal 13px system-ui;color:var(--soft)}
+.prov{margin:12px 0 0;font-size:14px;color:var(--soft)}
+.prov a{color:var(--link)}
+
+@media (min-width:720px){
+  .brief{padding:28px 28px}
+  .story{padding:24px 24px}
+  .forms{grid-template-columns:1fr 1fr;column-gap:32px}
+  .forms li{border-top:1px solid var(--line)}
+  .figures{grid-template-columns:repeat(5,1fr)}
+  .figures .lead{grid-column:auto}
+  .fig.lead b{font-size:26px}
+}
+/* the frame is not the viewport: emulate breakpoints on the frame itself */
+.frame.mobile .forms{grid-template-columns:1fr}
+.frame.mobile .figures{grid-template-columns:1fr 1fr}
+.frame.mobile .figures .lead{grid-column:1/-1}
+.frame.mobile .fig.lead b{font-size:34px}
+.frame.mobile .brief{padding:20px 16px}
+.frame.desktop .forms{grid-template-columns:1fr 1fr}
+.frame.desktop .figures{grid-template-columns:repeat(5,1fr)}
+.frame.desktop .figures .lead{grid-column:auto}
+.frame.desktop .fig.lead b{font-size:26px}
+</style>
+</head>
+<body>
+<h1 class="doc">En bref — l'histoire des noms</h1>
+<p class="doc-note">
+  Proposition pour les fiches pays, peuples et familles. Ordre : (1) pourquoi cette entrée a plusieurs noms,
+  en une phrase simple ; (2) chaque forme, au même poids, avec d'où elle vient ; (3) les chiffres, ensuite ;
+  (4) la provenance. Le nom qu'un peuple se donne est listé en premier (point ●) : un ordre, pas une promotion.
+  Les chiffres du cas Fula et du cas Bantu sont des emplacements (—) : seuls ceux du Congo sont tirés de la page réelle. Un bloc n'est dessiné que si le corpus le remplit. Quand l'origine n'est pas établie, la phrase le dit.
+</p>
+<div class="bar">
+  <button id="night" aria-pressed="false">Mode nuit</button>
+</div>
+<div id="root"></div>
+
+<script>
+const CASES = [
+  { label: "Pays — République du Congo (COG)",
+    eyebrow: "L'histoire des noms",
+    why: "Pourquoi le Congo a plusieurs noms ?",
+    plain: "Le nom vient d'un ancien royaume, le Kongo. Les Portugais l'ont écrit « Congo ». Puis la colonie française, puis l'indépendance, ont ajouté d'autres noms.",
+    forms: [
+      { f: "République du Congo", t: "Nom officiel · depuis le 15 août 1960", s: "Le nom choisi à l'indépendance.", mark: true },
+      { f: "Congo", t: "Portugais · XVe siècle", s: "Vient du royaume Kongo (« Kongo » en kikongo). Le fleuve a pris le nom du royaume." },
+      { f: "Congo français", t: "Colonie · 1880–1960", s: "Le nom de la colonie française, capitale Brazzaville." },
+      { f: "Congo-Brazzaville", t: "Usage courant", s: "Sert à ne pas confondre avec la République démocratique du Congo (Congo-Kinshasa)." }
+    ],
+    figures: [["6 500 000","habitants","Année de référence : 2025",1],["2","peuples","documentés ici"],["7","langues","documentées ici"],["4","familles linguistiques","documentées ici"],["23","noms","référencés ici"]],
+    prov: "3 assertions recensées · aucune relecture humaine à ce jour"
+  },
+  { label: "Peuple — Fula (Fulbe / Peul)",
+    eyebrow: "L'histoire des noms",
+    why: "Pourquoi les Fula ont plusieurs noms ?",
+    plain: "Chaque peuple voisin les a appelés dans sa propre langue. Le sens du nom qu'ils se donnent, Fulbe, n'est pas établi : plusieurs lectures existent, nous n'en retenons aucune.",
+    forms: [
+      { f: "Fulbe · Pullo", t: "Nom qu'ils se donnent · pluriel, singulier", s: "Sens non établi. Les lectures connues se contredisent.", mark: true },
+      { f: "Peul", t: "Français", s: "Vient du wolof, où le peuple se dit « pal »." },
+      { f: "Fulani", t: "Anglais", s: "Emprunté au haoussa (« filaanii »)." },
+      { f: "Fula", t: "Mandinka, Susu de Gambie", s: "Forme proposée aussi comme nom de la langue." },
+      { f: "Fellata", t: "Bornou", s: "La langue d'origine du mot est discutée." }
+    ],
+    more: "+ autres formes",
+    figures: [["—","personnes recensées","Année de référence : 2025",1],["—","pays de présence","documentés ici"],["Fulfulde","langue principale","documentée ici"],["Atlantique","famille linguistique","documentée ici"],["—","noms","référencés ici"]],
+    prov: "Sources : niveau référencé · plusieurs lectures en désaccord"
+  },
+  { label: "Famille linguistique — Bantu",
+    eyebrow: "L'histoire du nom",
+    why: "D'où vient le mot « bantou » ?",
+    plain: "C'est un mot de linguiste, inventé au XIXe siècle. Il signifie « les gens » dans plusieurs de ces langues. Il désigne des langues, pas des peuples.",
+    forms: [
+      { f: "Bantou", t: "Wilhelm Bleek · 1857–1862", s: "Tiré de ba-ntu : « les gens ». Popularisé par Meinhof (1906) et Johnston." },
+      { f: "Langues bantoues", t: "Usage actuel", s: "Sens strictement linguistique, sans lien avec une « race »." }
+    ],
+    caution: "Sous l'apartheid, « Bantu » servait aussi de catégorie raciale légale. Des intellectuels africains ont critiqué ce vocabulaire.",
+    figures: [["≈ 350 M","locuteurs","Estimation"],["500+","langues","documentées ici"],["—","",""]].slice(0,2),
+    prov: "Sources : niveau référencé"
+  }
+];
+
+function brick(c){
+  return `
+  <section class="brief" aria-labelledby="t">
+    <h2 id="t">En bref</h2>
+    <div class="story">
+      <p class="eyebrow">${c.eyebrow}</p>
+      <p class="why">${c.why}</p>
+      <p class="why-plain">${c.plain}</p>
+      <ul class="forms">
+        ${c.forms.map(x=>`<li class="${x.mark?'mark':''}"><span class="form">${x.f}</span><span class="tag">${x.t}</span><p class="sense">${x.s}</p></li>`).join('')}
+      </ul>
+      ${c.more?`<button class="more">${c.more}</button>`:''}
+      ${c.caution?`<p class="caution">${c.caution}</p>`:''}
+    </div>
+    <div class="figures">
+      ${c.figures.map(([n,l,s,lead])=>`<div class="fig ${lead?'lead':''}"><b>${n}</b><span>${l}</span>${s?`<i>${s}</i>`:''}</div>`).join('')}
+    </div>
+    <p class="prov">${c.prov} · <a href="#">Voir les sources →</a></p>
+  </section>`;
+}
+document.getElementById('root').innerHTML = CASES.map(c=>`
+  <section class="case"><h2 class="label">${c.label}</h2>
+    <div class="frames">
+      <div class="frame mobile"><small class="dim">Mobile · 390 px (référence 430)</small>${brick(c)}</div>
+      <div class="frame desktop"><small class="dim">Desktop · 800 px</small>${brick(c)}</div>
+    </div></section>`).join('');
+document.getElementById('night').onclick=e=>{
+  const on=e.target.getAttribute('aria-pressed')!=='true';
+  e.target.setAttribute('aria-pressed',on);
+  document.body.toggleAttribute('data-night-page',on);
+  document.querySelectorAll('.frame').forEach(f=>f.toggleAttribute('data-night',on));
+};
+</script>
+</body>
+</html>

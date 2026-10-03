@@ -145,6 +145,51 @@
   background: color-mix(in srgb, var(--afh-night-ground) 60%, transparent);
 }
 
+.facade[data-layout="fill"] .linkOut {
+  transition: opacity var(--afh-duration-slow) var(--afh-ease-out);
+}
+
+/* Drawn over the top of the frame, where the platform's own player already
+   names the piece and offers its own way out: while it plays, the chip leaves. */
+.facade[data-layout="fill"] .linkOut[inert] {
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity var(--afh-duration-slow) var(--afh-ease-out),
+    visibility 0s linear var(--afh-duration-slow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .facade[data-layout="fill"] .linkOut,
+  .facade[data-layout="fill"] .linkOut[inert] {
+    transition-duration: var(--afh-duration-instant);
+    transition-delay: 0s;
+  }
+}
+
 .facade[data-layout="fill"] .notice {
   max-width: 16rem;
+}
+
+/* Inline mode sits on the parchment of a document (an article page), so the
+   chrome outside the stage takes the document's inks. The night inks above
+   are the fill mode's, drawn over a picture; on parchment they vanish. The
+   stage itself stays dark — it is the player's screen. */
+.facade[data-layout="inline"] .linkOut {
+  color: var(--accent-ink);
+}
+
+.facade[data-layout="inline"] .notice {
+  color: var(--afh-text-soft);
+}
+
+.facade[data-layout="inline"] .close {
+  border-color: var(--afh-border);
+  color: var(--afh-text);
+}
+
+.facade[data-layout="inline"] .linkOut:focus-visible,
+.facade[data-layout="inline"] .close:focus-visible,
+.facade[data-layout="inline"] .settingsLink:focus-visible {
+  outline-color: var(--accent-ink);
 }

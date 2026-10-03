@@ -52,7 +52,7 @@ export const TRAIL_PAGE_LABELS: Record<Language, Record<PageType, string>> = {
     // that take one shape from it; changing its shape would move all of
     // them for three words.
     atlasHub: "Browse",
-    dossiersHub: "The dossiers",
+    dossiersHub: "Articles",
     jeuxHub: "Play",
   },
   fr: {

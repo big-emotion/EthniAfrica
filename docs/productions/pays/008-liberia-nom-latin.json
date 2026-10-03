@@ -1,0 +1,27 @@
+{
+  "campaign": "liberia-nom-latin-libre",
+  "typologie": "pays",
+  "episode": 8,
+  "question": {
+    "fr": "D'où vient le nom Liberia ?"
+  },
+  "myth": {
+    "fr": "Le nom \"Liberia\" a-t-il été inventé lors de la réunion de février 1824 ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "LBR",
+      "label": { "fr": "Liberia" }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/LBR",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7686223381418544406",
+      "publishedAt": "2026-09-16"
+    }
+  ]
+}

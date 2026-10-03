@@ -16,6 +16,10 @@ const SUBJECT_ID_PATTERNS = {
 // @req REQ-180
 export const MAX_SEARCH_COMPANION_SUBJECTS = 20;
 
+/** Longer than any name the corpus holds; a longer word is not one a production answers to. */
+// @req REQ-180
+export const MAX_SEARCH_COMPANION_WORD_LENGTH = 80;
+
 // @req REQ-180
 export const searchCompanionSubjectTypeSchema = z.enum([
   "people",
@@ -90,10 +94,12 @@ export const searchCompanionsQuerySchema = z
   .object({
     subjects: z.string().optional().default(""),
     lang: z.enum(["en", "fr"]).default("fr"),
+    word: z.string().trim().max(MAX_SEARCH_COMPANION_WORD_LENGTH).optional(),
   })
-  .transform(({ subjects, lang }, context) => ({
+  .transform(({ subjects, lang, word }, context) => ({
     subjects: parseSubjects(subjects, context),
     lang,
+    ...(word ? { word } : {}),
   }));
 
 export type SearchCompanionsQuery = z.infer<typeof searchCompanionsQuerySchema>;
@@ -115,6 +121,12 @@ const companionMatchSchema = z.object({
   ]),
   entityType: searchCompanionSubjectTypeSchema,
   entityId: z.string().min(1),
+});
+// A production about a word, not an entity: there is no subject to name, so
+// the match carries the reader's word, folded as the search folds it.
+const wordMatchSchema = z.object({
+  relation: z.literal("word"),
+  word: z.string().min(1),
 });
 const posterSchema = z.object({
   src: z.string().min(1),
@@ -144,7 +156,7 @@ const shortSchema = z.object({
   watchUrl: z.string().url(),
   poster: posterSchema,
   source: sourceSchema,
-  match: companionMatchSchema,
+  match: z.union([companionMatchSchema, wordMatchSchema]),
 });
 const anecdoteSchema = z.object({
   id: z.string().min(1),

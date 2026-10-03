@@ -83,7 +83,7 @@ describe("MigrationDetailSheet", () => {
     expect(screen.getByText(/1000 av\. J\.-C\./)).toBeInTheDocument();
     expect(screen.getByText(/estimation/)).toBeInTheDocument();
     expect(screen.getByTestId("classification-icon")).toBeInTheDocument();
-    expect(screen.getByText(/88 %/)).toBeInTheDocument();
+    expect(screen.getByText(/références · revu/)).toBeInTheDocument();
 
     const peopleLink = screen.getByRole("link", { name: /Peuples bantous/ });
     expect(peopleLink).toHaveAttribute(
