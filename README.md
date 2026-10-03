@@ -133,7 +133,7 @@ The codebase supports **English and French**, while `SITE_LOCALE_MODE` controls 
 publishes. Its safe default, `fr-only`, keeps English URLs and controls silent;
 `bilingual-fr-default` publishes both without moving `/` away from French, and
 `bilingual-en-default` completes the planned English-default launch. English URLs carry English
-slugs that `src/middleware.ts` rewrites onto the French route folders, and `es` / `pt` stay
+slugs that `src/proxy.ts` rewrites onto the French route folders, and `es` / `pt` stay
 closed. Content added in either language must carry its counterpart in the other, or an explicit
 deferral — see `CLAUDE.md`, section "Bilingual content".
 

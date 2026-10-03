@@ -9,7 +9,7 @@ import {
   resolveCanonicalDeepLink,
   resolveRelocatedPath,
   resolveRenamedModulePath,
-} from "@/middleware";
+} from "@/proxy";
 import { LOCALES } from "@/lib/locale";
 import {
   NOMMER_CHAPTER_KEYS,

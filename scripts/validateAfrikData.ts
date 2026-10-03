@@ -5271,17 +5271,10 @@ export function checkTranslationSidecars(
  * bands and the source-standing rules are not listed here: since DEC-055 they
  * emit warnings themselves, next to findings in the same check that still fail.
  *
- * FR27-references is advisory for the same reason FR28 once was: measured on
- * 2026-09-05, the corpus already carried 43 references to ids that have no
- * fiche — placeholders such as PPL_AUTRES_GROUPES that the percentage sums
- * rely on, truncated ids such as PPL_MO, and family lists naming peoples never
- * written. Retired ids are not in that tail: FR27 Retired identifiers stays a
- * hard error, so a merge or rename cannot leave a link behind.
-
- *
- * FR28-declared was advisory for exactly one fiche — MDG, the only country of
- * the 54 that had never declared an ethnic split. It left this set with that
- * fiche, as announced, and is a hard error since.
+ * FR27-references is not listed: an id that names no fiche and has no retired
+ * successor is a hard error, so a merge or rename cannot leave a link behind.
+ * FR28-declared is not listed either — it emits a warning for a country that
+ * declares no ethnic split and has no failing branch to soften.
  */
 export const SOFT_CHECK_NAMES: ReadonlySet<string> = new Set([
   "FR52-coverage People-to-language coverage",

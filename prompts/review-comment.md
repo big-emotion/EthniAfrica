@@ -49,7 +49,7 @@ The agent loads it at runtime and must follow this structure exactly.
 - `src/styles/globals.css` — @font-face declarations, six :root brand token CSS variables, semantic aliases, and @theme block wiring tokens to Tailwind 4 utilities
 - `src/styles/tokens.ts` — TypeScript source-of-truth for brand hex values
 - `src/app/api/health/route.ts` — GET /api/health returning status/version/commit with Cache-Control: no-store
-- `src/i18n/routing.ts` + `src/middleware.ts` — next-intl routing scoped to ["fr"]
+- `src/i18n/routing.ts` + `src/proxy.ts` — next-intl routing scoped to ["fr"]
 - `scripts/lint-tokens.mjs` — hex-literal scanner enforcing use of CSS variables; wired as pnpm lint:tokens
 - `.husky/commit-msg` + `commitlint.config.mjs` — conventional-commit enforcement
 - `package.json` — Node 22 engine pin, pnpm packageManager, all required dev dependencies

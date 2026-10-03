@@ -25,6 +25,14 @@ export const CORPUS_AGGREGATE_REVALIDATE_SECONDS = 3600;
 // @req REQ-110
 export const PUBLIC_FLAGS_REVALIDATE_SECONDS = 60;
 
+/**
+ * How long the hub modules' "is there corpus behind this?" answer is held. Short
+ * on purpose: an optimistic answer costs a reader nothing, where the pessimistic
+ * one it replaced took a built page off the site.
+ */
+// @req REQ-106
+export const HUB_AVAILABILITY_REVALIDATE_SECONDS = 60;
+
 /** The source catalogue: a day, served stale for a further day while it refreshes. */
 // @req REQ-084
 export const SOURCES_CACHE_CONTROL =

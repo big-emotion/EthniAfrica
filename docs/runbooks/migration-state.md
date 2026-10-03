@@ -1,16 +1,17 @@
 # Runbook — Supabase migration state
 
-**Last verified:** 2026-09-18 — both ledgers read through `check:migration-state`, which
+**Last verified:** 2026-10-03 — both ledgers read through `check:migration-state`, which
 reconciles every file under `supabase/migrations/` by name, each inside the CI job that
 applies migrations to that database
 **Applies to:** every file under `supabase/migrations/`
 
-> **Measured 2026-09-17 and 2026-09-18: migrations `001` → `093` are applied on both databases.**
+> **Measured 2026-10-03: recette has `001` → `097` applied; production has `001` → `095`.
+> Migrations `096` and `097` are on recette and in no Release yet.**
 >
-> | Database               | How it was read                                                                                                          | Result                                                                                |
-> | ---------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
-> | Recette application    | `check:migration-state` inside `migrate-recette.yml` (Actions run `35331102644`, 2026-09-18 09:46 UTC)                   | applied 93 · pending 0 · orphaned 0 · drifted 0; `db push` found nothing to apply     |
-> | Production application | `check:migration-state:production` after the v4.12.0 Release applied its exact two-file plan (Actions run `35263800150`) | applied 93 · pending 0 · orphaned 0 · drifted 0 after applying migrations 092 and 093 |
+> | Database               | How it was read                                                                                           | Result                                                                                |
+> | ---------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+> | Recette application    | `check:migration-state` inside `migrate-recette.yml` (Actions run `37115838551`, 2026-10-03 10:15 UTC)    | applied 97 · pending 0 · orphaned 0 · drifted 0                                       |
+> | Production application | `check:migration-state:production` after the v4.22.0 Release applied its plan (Actions run `36827759480`) | applied 95 · pending 0 · orphaned 0 · drifted 0 after applying migrations 094 and 095 |
 >
 > Both figures are the deployment jobs' own ledger reads, not local inference. Anything merged
 > after those runs is **unmeasured** on the corresponding database until its migration job reads

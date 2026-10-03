@@ -2,7 +2,7 @@
   "$schema": "https://unpkg.com/knip@5/schema.json",
   "entry": [
     "src/app/**/{page,layout,loading,error,global-error,not-found,template,default,forbidden,unauthorized,route,sitemap,robots,manifest,icon,apple-icon,opengraph-image,twitter-image}.{ts,tsx}!",
-    "src/{middleware,instrumentation,instrumentation-client}.ts!",
+    "src/{proxy,instrumentation,instrumentation-client}.ts!",
     "{next,tailwind}.config.ts!",
     ".lighthouserc.js",
     ".storybook/{main,preview}.ts",
