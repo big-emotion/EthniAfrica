@@ -245,6 +245,32 @@ or whether an author is the subject. `ethniafrica-message` performs that review.
 - A quotation, a summary and the project's synthesis remain distinguishable.
 - Never imply interviews, visits or collaboration that did not take place.
 
+### Words of an outside gaze
+
+A word the project reports as pejorative is not used in a fiche's own voice
+to describe the people it names. The fiches record _Kirdi_ as a pejorative term
+meaning « païen »; they do not call a people's religion pagan, nor its early
+inhabitants « primitifs ». Where such a word is the subject, it stays, quoted
+and attributed.
+
+**« Fétiche » and « féticheur »** (operator ruling, 2026-10-03). Both come from
+missionary and colonial usage. They stay in one case only: as the gloss of a
+term of the people's own language that the same field names (« _Komian_
+(féticheurs) », « _nkisi_ (objets-fétiches) », or the sense a dictionary gives a
+word, as for _zumbi_). Where a fiche describes a people from outside and names
+no local term, it says what the source describes: « objet rituel »,
+« talisman », « officiant ».
+
+| Instead of                                                   | Write                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Les Lobi convertis brûlent ou vendent leurs fétiches rituels | Les Lobi convertis brûlent ou vendent leurs objets rituels   |
+| Les marabouts utilisent le Coran comme fétiches protecteurs  | Les marabouts utilisent le Coran comme talismans protecteurs |
+| _Komian_ (féticheurs), spécialistes du savoir occulte        | unchanged: the local title comes first, the word glosses it  |
+
+`scripts/__tests__/fetishVocabulary.test.ts` holds the list of fiches that keep
+the word and the local term each must name. A new use elsewhere fails it, and the
+choice is made then.
+
 ### Oral and written sources
 
 An oral account can be the most relevant source for a practice, pronunciation or
