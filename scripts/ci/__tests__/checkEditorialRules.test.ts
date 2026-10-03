@@ -725,6 +725,43 @@ describe("runEditorialRules — end-to-end", () => {
     expect(r.findings.filter((f) => f.severity !== "notice")).toHaveLength(0);
   });
 
+  // @req REQ-143
+  it("refuses a narrative field that holds a JSON object written as text", () => {
+    writeFiche("peuples/FLG_BANTU/PPL_BLOB.json", {
+      id: "PPL_BLOB",
+      content: {
+        appellations: { selfAppellation: "Test endonym", exonyms: [] },
+        sources: ["one", "two"],
+        culture: {
+          majorRites: '{"initiationRites": {"maleInitiation": "Une phrase."}}',
+        },
+      },
+    });
+    const r = runEditorialRules({ repoRoot: tmpRoot });
+    const finding = r.findings.find((f) => f.rule === "serialized-json-field");
+    expect(finding?.severity).toBe("error");
+    expect(finding?.message).toContain("content.culture.majorRites");
+    expect(r.exitCode).toBe(1);
+  });
+
+  // @req REQ-143
+  it("accepts prose that merely contains braces or starts with a bracket word", () => {
+    writeFiche("peuples/FLG_BANTU/PPL_PROSE.json", {
+      id: "PPL_PROSE",
+      content: {
+        appellations: { selfAppellation: "Test endonym", exonyms: [] },
+        sources: ["one", "two"],
+        culture: {
+          majorRites: "[Le rite] se célèbre à la saison sèche, {dit-on}.",
+        },
+      },
+    });
+    const r = runEditorialRules({ repoRoot: tmpRoot });
+    expect(r.findings.some((f) => f.rule === "serialized-json-field")).toBe(
+      false
+    );
+  });
+
   it("returns non-zero exitCode when a Rule 1 error is detected", () => {
     writeFiche("peuples/FLG_BANTU/PPL_BAD.json", {
       id: "PPL_BAD",

@@ -67,6 +67,7 @@ export type RuleName =
   | "reader-facing-register"
   | "chronology-symmetry"
   | "competing-appellations"
+  | "serialized-json-field"
   | "json-parse";
 
 export interface RuleResult {
@@ -798,6 +799,64 @@ export function checkUnguardedProseCeiling(
   };
 }
 
+// ───── Rule 5b: a JSON object written as text ─────────────────────────────
+
+const SERIALIZED_JSON_RULE: RuleName = "serialized-json-field";
+
+/**
+ * Ninety fields in thirty fiches held a JSON object serialised into a string
+ * (`majorRites`, `artsAndMusic`, `spiritualities`, `symbols`). The site prints a
+ * string as it finds it and nothing decodes this one, so the reader saw braces
+ * and English key names. Only a string that opens like JSON *and parses* counts:
+ * prose that happens to contain a brace or start with a bracketed word is not a
+ * finding.
+ */
+export function findSerializedJsonFields(
+  node: unknown,
+  pointer = "content"
+): string[] {
+  if (typeof node === "string") {
+    const text = node.trim();
+    if (
+      text.length > 1 &&
+      "{[".includes(text[0]) &&
+      "}]".includes(text.at(-1)!)
+    ) {
+      try {
+        JSON.parse(text);
+        return [pointer];
+      } catch {
+        return [];
+      }
+    }
+    return [];
+  }
+  if (Array.isArray(node)) {
+    return node.flatMap((item, i) =>
+      findSerializedJsonFields(item, `${pointer}[${i}]`)
+    );
+  }
+  if (node && typeof node === "object") {
+    return Object.entries(node).flatMap(([key, value]) =>
+      findSerializedJsonFields(value, `${pointer}.${key}`)
+    );
+  }
+  return [];
+}
+
+export function checkSerializedJsonFields(
+  fiche: Fiche,
+  file: string
+): RuleResult[] {
+  return findSerializedJsonFields(fiche.content).map((field) => ({
+    rule: SERIALIZED_JSON_RULE,
+    severity: "error" as const,
+    file,
+    slug: getSlug(fiche, path.basename(file, ".json")),
+    message: `${field} holds a JSON object written as text. The site prints it as it stands, so a reader sees braces and English key names. Write it as prose, with a plain label before each part.`,
+  }));
+}
+
 // ───── Rule 6: chronology symmetry ────────────────────────────────────────
 
 const CHRONOLOGY_RULE: RuleName = "chronology-symmetry";
@@ -1054,6 +1113,8 @@ export function runEditorialRules(opts: RunOptions): RunResult {
     findings.push(...checkChronologySymmetry(fiche, relPath));
 
     findings.push(...checkCompetingAppellations(fiche, relPath));
+
+    findings.push(...checkSerializedJsonFields(fiche, relPath));
   }
 
   if (opts.undatedPolityCeiling !== undefined) {

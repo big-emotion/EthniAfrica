@@ -289,7 +289,8 @@ Confluence annotations of C06 verified as already posted; two inventories writte
 - **C24** (an oral-provenance section on the sources page): it needs a design and a build, not a correction, and the
   page must not invent an oral section where no oral material is shown. Left as it was.
 - **The generator of C16**: see the C16 row. It cannot publish the old wording.
-- **The Urhobo field is not repaired on its own**, because it is one of many (next point).
+- **The Urhobo field is not repaired on its own**, because it is one of many. Since repaired with the rest, see
+  « Serialised JSON fields » below.
 
 **Found, for a person to decide.**
 
@@ -306,6 +307,38 @@ Confluence annotations of C06 verified as already posted; two inventories writte
 
 **Not checked:** the SQL of migration 095 was not run; no claim of the reordered sentences was verified; the scan lexicons
 are mine, not the operator's.
+
+### Serialised JSON fields — 2026-10-03
+
+**Operator decision, 2026-10-03:** write them as prose, with a French label in front of each part (not a structured
+rendering on the page).
+
+**What changed.** 90 fields in 30 people fiches (`culture.majorRites` 30, `artsAndMusic` 30, `spiritualities` 23,
+`symbols` 7) held a JSON object written as text, which the site printed as it stood: braces, quotation marks and English
+key names. Each is now a run of `Label : sentence.` entries, one per old key.
+
+- **Every sentence is kept word for word.** 480 sentences before, 480 found again afterwards; no other field of any
+  fiche changed. The only edit to a sentence is a final full stop added where one was missing (at most 48 of the 480;
+  the items of a list are joined by « ; » and the stop closes the whole enumeration).
+- **Names in the people's own language stay as written** (`Lobola`, `Umemulo`, `Mwari`), including as labels. Generic keys
+  were translated (`funeraryRites` → « Rites funéraires », `burial` → « inhumation »). A key with no label stops the
+  converter, so an English word cannot slip through.
+- **Nested keys read as « Group — part : sentence »**, for example « Être suprême — nom local : Mwari. », so a name is
+  still marked as the name of something.
+- **A new gate** (`serialized-json-field`, error): a string that opens like JSON and actually parses is refused. It found
+  exactly the 90 fields before the conversion and none after. Prose with a brace in it is not refused.
+- The converter is `scripts/afrik/flattenSerializedFields.ts` (dry-run by default; `--apply` rewrites only the string
+  literal of each field, so file layout and key order are untouched).
+
+**For a person to check — the labels are my wording.** About 240 distinct keys were labelled. Two kinds of doubt:
+
+- **Odd keys kept as written** because I could not tell what they are: `aikido` (Turkana birth rites), `ritualRites`,
+  `preferred` / `preferredType`, `formal`. The first looks like a term that may not belong to Turkana at all.
+- **Labels that read as a finding rather than a title**: « mariage formel », « union préférée », « compensation
+  matrimoniale » (for `bridewealth`). A specialist might prefer other words.
+
+**Not checked:** no rendered page was looked at; the labels were not read by anyone who speaks the peoples' languages;
+the sentences' own French (accents missing in many, « ceremonies ») was left as it was.
 
 ## Change log
 
