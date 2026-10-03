@@ -79,7 +79,11 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // grouping of peoples has no name for itself, so those fiches now declare
     // the absence with `null`, and the figure counts only what it says it does.
     // 761 -> 759 on 2026-10-03: the two retired Bissa fiches each declared one.
-    value: 759,
+    // 759 -> 758 on 2026-10-03: the Nganguela fiche declared a self-name for a
+    // grouping whose own source calls the term an outsiders' category over
+    // independent peoples; it now declares the absence with `null`, like the other
+    // macro-group fiches.
+    value: 758,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
     countedOn: COUNTED_ON,
@@ -144,7 +148,10 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 182 -> 183 on 2026-10-03: the Tutrugbu note now states its argument from the
     // fiche's own fields (Nyangbo is the official administrative name), where it
     // used to recommend a merge with a fiche that does not exist.
-    value: 183,
+    // 183 -> 182 on 2026-10-03: the Frafra explanation no longer says the "British
+    // administrators" heard the greeting; its source gives missionaries in one
+    // account and the British in a variant, so the sentence follows the source.
+    value: 182,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
