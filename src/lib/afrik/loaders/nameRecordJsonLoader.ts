@@ -165,6 +165,7 @@ async function upsertNameRecordEntry(
       imposition_period: entry.impositionPeriod,
       why_problematic: entry.whyProblematic,
       contemporary_usage: entry.contemporaryUsage,
+      attestations: entry.attestations ?? [],
       assertion_id: assertion.id,
       sort_rank: entry.sortRank,
       updated_at: new Date().toISOString(),

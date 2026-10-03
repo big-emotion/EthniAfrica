@@ -30,6 +30,7 @@ import { PeopleFieldExplainer } from "@/components/people/PeopleFieldExplainer";
 import { FicheAmendBand } from "@/components/fiche/FicheAmendBand";
 import { FicheSection } from "@/components/fiche/FicheSection";
 import { FicheNameStory } from "@/components/fiche/FicheNameStory";
+import { NameAttestationTimeline } from "@/components/names/NameAttestationTimeline";
 import { FicheSummaryBrief } from "@/components/fiche/FicheSummaryBrief";
 import { peopleNamingOf } from "@/lib/fiche/nameStory";
 import { FicheTile, FicheTiles } from "@/components/fiche/FicheTile";
@@ -189,6 +190,13 @@ export function PeopleDetailViewV2({
     },
     language
   );
+  const RELATED_TILE_KEYS = ["relations", "groups"];
+  const relatedTiles = cultureTiles.filter((tile) =>
+    RELATED_TILE_KEYS.includes(tile.key)
+  );
+  const contextTiles = cultureTiles.filter(
+    (tile) => !RELATED_TILE_KEYS.includes(tile.key)
+  );
 
   return (
     <div className="afh-parchment" id="fiche">
@@ -249,6 +257,65 @@ export function PeopleDetailViewV2({
         )}
       </FicheSection>
 
+      {/* DEC-067: the story already opened the summary; the name chapter
+          follows it at once — the forms through time, then every form side
+          by side. Everything below is the context that explains them. */}
+      <FicheSection title={copy.sections.naming}>
+        <NameAttestationTimeline
+          names={namesDossier?.names ?? []}
+          heading={copy.sections.nameTimeline}
+          undatedLabel={copy.chapterDetails.historyUndated}
+        />
+        {/* `#noms` is the anchor the name nomenclature and the imposed-names
+            view link to. It left with the embedded names section and stays
+            with the records it points at. */}
+        <div id="noms">
+          <PeopleNamingTiles
+            nameMain={data.hero.nameMain}
+            selfAppellation={people.appellations?.selfAppellation}
+            exonyms={people.appellations?.exonyms}
+            originOfExonyms={data.hero.originOfExonyms}
+            whyProblematic={people.appellations?.whyProblematic}
+            contemporaryUsage={data.hero.contemporaryUsage}
+            isoCode={people.languages?.isoCodes?.[0]}
+            records={data.names}
+            language={language}
+          />
+        </div>
+        <DossierLinks
+          language={language}
+          kind="people"
+          id={people.id}
+          section="appellations"
+        />
+      </FicheSection>
+
+      {/* Who named whom, and with whom a name is shared: moved out of the
+          culture chapter, where a reader looking for the name never went. */}
+      {relatedTiles.length > 0 && (
+        <FicheSection title={copy.sections.relatedPeoples}>
+          <FicheTileChapter
+            tiles={relatedTiles}
+            extras={
+              relationsPreview.length > 0
+                ? {
+                    relations: (
+                      <PeopleRelatedPeoplesSection
+                        data={{ ethnicities: [] }}
+                        language={language}
+                        peopleId={data.hero.peopleId}
+                        relationsPreview={relationsPreview}
+                        associatedGroups={[]}
+                      />
+                    ),
+                  }
+                : undefined
+            }
+            language={language}
+          />
+        </FicheSection>
+      )}
+
       <FicheSection
         title={copy.sections.distribution}
         note={
@@ -306,31 +373,6 @@ export function PeopleDetailViewV2({
         )}
       </FicheSection>
 
-      <FicheSection title={copy.sections.naming}>
-        {/* `#noms` is the anchor the name nomenclature and the imposed-names
-            view link to. It left with the embedded names section and stays
-            with the records it points at. */}
-        <div id="noms">
-          <PeopleNamingTiles
-            nameMain={data.hero.nameMain}
-            selfAppellation={people.appellations?.selfAppellation}
-            exonyms={people.appellations?.exonyms}
-            originOfExonyms={data.hero.originOfExonyms}
-            whyProblematic={people.appellations?.whyProblematic}
-            contemporaryUsage={data.hero.contemporaryUsage}
-            isoCode={people.languages?.isoCodes?.[0]}
-            records={data.names}
-            language={language}
-          />
-        </div>
-        <DossierLinks
-          language={language}
-          kind="people"
-          id={people.id}
-          section="appellations"
-        />
-      </FicheSection>
-
       <FicheSection title={copy.sections.language}>
         {languageRubricFilled ? null : (
           <FieldProvenanceMarker state="missing" language={language} />
@@ -376,23 +418,8 @@ export function PeopleDetailViewV2({
 
       <FicheSection title={copy.sections.culture}>
         <FicheTileChapter
-          tiles={cultureTiles}
+          tiles={contextTiles}
           notes={notes?.culture}
-          extras={
-            relationsPreview.length > 0
-              ? {
-                  relations: (
-                    <PeopleRelatedPeoplesSection
-                      data={{ ethnicities: [] }}
-                      language={language}
-                      peopleId={data.hero.peopleId}
-                      relationsPreview={relationsPreview}
-                      associatedGroups={[]}
-                    />
-                  ),
-                }
-              : undefined
-          }
           language={language}
         />
         <OralNarrativesSection
