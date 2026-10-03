@@ -4027,6 +4027,8 @@ function nameRecordIssueRuleId(issuePath: string): string {
   if (issuePath.includes("languageOfOrigin")) return "FR55-iso";
   if (issuePath.includes("whyProblematic")) return "FR56-imposed";
   if (issuePath.includes("attestations")) return "FR58-attestation";
+  if (/shortLine|namedBy|originDebated|usedIn|pronunciation/.test(issuePath))
+    return "FR59-answer";
   return "NAME-MODEL";
 }
 

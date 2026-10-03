@@ -3932,6 +3932,29 @@ const options: swaggerJsdoc.Options = {
                 "The form's history (REQ-189): every time it was written down, by whom, with the source at a printed page. Empty when no attestation is recorded.",
               items: { $ref: "#/components/schemas/NameAttestation" },
             },
+            shortLine: {
+              type: ["string", "null"],
+              description:
+                "One sentence a reader understands without context (REQ-191), at most 120 characters.",
+            },
+            namedBy: {
+              type: ["string", "null"],
+              description:
+                "Who gave the form: a people or an authority, never an author. Null for a self-name.",
+              example: "Hausa",
+            },
+            originDebated: { type: "boolean" },
+            usedIn: {
+              type: "array",
+              items: { type: "string" },
+              example: ["eng"],
+            },
+            pronunciation: {
+              oneOf: [
+                { $ref: "#/components/schemas/NamePronunciation" },
+                { type: "null" },
+              ],
+            },
           },
           required: [
             "id",
@@ -3945,7 +3968,46 @@ const options: swaggerJsdoc.Options = {
             "sources",
             "confidence",
             "attestations",
+            "shortLine",
+            "namedBy",
+            "originDebated",
+            "usedIn",
+            "pronunciation",
           ],
+        },
+        NamePronunciation: {
+          type: "object",
+          description:
+            "How the self-name is said (REQ-191): a respelling in the site's language, an optional recording with the speaker's consent, and its source.",
+          properties: {
+            respelling: { type: "string", example: "fool-beh" },
+            audio: {
+              oneOf: [
+                {
+                  type: "object",
+                  properties: {
+                    url: { type: "string" },
+                    consent: { type: "string" },
+                  },
+                  required: ["url", "consent"],
+                },
+                { type: "null" },
+              ],
+            },
+            source: {
+              type: "object",
+              properties: {
+                title: { type: "string" },
+                author: { type: "string" },
+                year: { type: "integer" },
+                url: { type: "string" },
+                tier: { type: "string" },
+                page: { type: "string" },
+              },
+              required: ["title", "author", "year", "url", "tier"],
+            },
+          },
+          required: ["respelling", "audio", "source"],
         },
         NameAttestation: {
           type: "object",

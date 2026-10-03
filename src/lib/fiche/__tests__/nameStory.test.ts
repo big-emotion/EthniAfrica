@@ -24,6 +24,11 @@ const dossier: PeopleNamesDossier = {
       sources: [],
       confidence: null,
       attestations: [],
+      shortLine: null,
+      namedBy: null,
+      originDebated: false,
+      usedIn: [],
+      pronunciation: null,
     },
   ],
 };

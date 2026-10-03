@@ -42,6 +42,18 @@ export interface NameRecordEntry {
   sources: NameRecordSource[];
   /** The form's history: each time it was written down, by whom, where (REQ-189). */
   attestations?: NameAttestation[];
+  /** What the answer card reads (REQ-191). */
+  shortLine?: string;
+  namedBy?: string | null;
+  originDebated?: boolean;
+  usedIn?: string[];
+  pronunciation?: NamePronunciation;
+}
+
+export interface NamePronunciation {
+  respelling: string;
+  audio: { url: string; consent: string } | null;
+  source: NameRecordSource & { page?: string };
 }
 
 export interface NameAttestation {

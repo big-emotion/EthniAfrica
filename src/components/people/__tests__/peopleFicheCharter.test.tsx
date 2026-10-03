@@ -407,6 +407,11 @@ describe("people fiche — the name first (DEC-067)", () => {
           { id: "s-1", title: "S", url: null, year: 1985, tier: "official" },
         ],
         confidence: null,
+        shortLine: null,
+        namedBy: null,
+        originDebated: false,
+        usedIn: [],
+        pronunciation: null,
         attestations: [
           {
             formAsWritten: "Peuls",

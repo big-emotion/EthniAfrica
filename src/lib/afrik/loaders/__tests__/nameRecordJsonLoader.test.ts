@@ -561,6 +561,51 @@ describe("nameRecordJsonLoader", () => {
       expect(exonymRecord?.sort_rank).toBe(1);
     });
 
+    // @req REQ-191
+    it("writes each form's answer-card fields to its row, and nulls when it has none", async () => {
+      const database = createSupabaseDouble();
+      const file = validNameFile();
+      const pronunciation = {
+        respelling: "yo-rou-ba",
+        audio: null,
+        source: {
+          title: "Dictionnaire",
+          author: "A",
+          year: 1990,
+          url: "https://example.org",
+          tier: "referenced",
+        },
+      };
+      const names = file.names as Array<Record<string, unknown>>;
+      names[0] = {
+        ...names[0],
+        shortLine: "Le nom qu'ils se donnent.",
+        originDebated: false,
+        usedIn: ["yor"],
+        pronunciation,
+      };
+      names[1] = { ...names[1], namedBy: "Les Fon" };
+
+      await loadNameRecords(database.client as never, [file] as never);
+
+      const byType = (type: string) =>
+        database.nameRecords.find((r) => r.name_type === type);
+      expect(byType("endonym")).toMatchObject({
+        short_line: "Le nom qu'ils se donnent.",
+        origin_debated: false,
+        used_in: ["yor"],
+        pronunciation,
+        named_by: null,
+      });
+      expect(byType("exonym")).toMatchObject({
+        named_by: "Les Fon",
+        short_line: null,
+        origin_debated: null,
+        used_in: [],
+        pronunciation: null,
+      });
+    });
+
     // @req REQ-189
     it("writes each form's attestations to its name_records row, and an empty list when it has none", async () => {
       const database = createSupabaseDouble();
