@@ -5,6 +5,7 @@ import { PeopleDetailViewV2 } from "@/components/people/PeopleDetailViewV2";
 import { PeopleFicheTitle } from "@/components/people/PeopleFicheTitle";
 import { FicheSection } from "@/components/fiche/FicheSection";
 import type { PeopleDetail } from "@/types/afrik-frontend";
+import type { PeopleNamesDossier } from "@/api/v2/schemas/names";
 
 /**
  * The people fiche's parity contract, held against the mockup at
@@ -118,10 +119,12 @@ describe("people fiche parity with the mockup", () => {
         ...container.querySelectorAll("[data-fiche-section]"),
       ].map((node) => node.getAttribute("data-fiche-section"));
 
+      // DEC-067: the name opens the document; where the people lives is
+      // context that follows it.
       expect(sections).toEqual([
         "En bref",
-        "Où vit ce peuple",
         "Le nom et ses appellations",
+        "Où vit ce peuple",
         "Langue",
         "Histoire",
         "Noms de personnes rattachés à ce peuple",
@@ -333,5 +336,137 @@ describe("people fiche — what the corpus does not fill", () => {
     expect(notes.length).toBeGreaterThan(0);
     for (const note of notes)
       expect(note).not.toMatch(/[a-z][A-Za-z0-9]*\.[a-zA-Z]/);
+  });
+});
+
+describe("people fiche — the name first (DEC-067)", () => {
+  afterEach(cleanup);
+
+  const people = peopleWith([{ country: "SEN", population: 1000000 }]);
+
+  function sectionsOf(container: HTMLElement) {
+    return [...container.querySelectorAll("[data-fiche-section]")].map((node) =>
+      node.getAttribute("data-fiche-section")
+    );
+  }
+
+  // @req REQ-155
+  it("puts the related peoples right after the name, before where the people lives", () => {
+    const { container } = render(
+      <PeopleDetailViewV2
+        language="fr"
+        people={{
+          ...people,
+          historicalRole: {
+            relationsWithNeighbors: "Les Wolof les nomment Pël.",
+          },
+        }}
+      />
+    );
+
+    expect(sectionsOf(container).slice(0, 4)).toEqual([
+      "En bref",
+      "Le nom et ses appellations",
+      "Peuples liés",
+      "Où vit ce peuple",
+    ]);
+    // Moved, not copied: culture no longer carries the relations tile.
+    const culture = container.querySelector(
+      '[data-fiche-section="Culture et société"]'
+    );
+    expect(culture?.textContent ?? "").not.toContain("Les Wolof les nomment");
+  });
+
+  const source = (
+    title: string,
+    tier: "official" | "referenced" | "unverified"
+  ) => ({
+    title,
+    author: "Auteur",
+    year: 1985,
+    url: "https://example.org",
+    tier,
+  });
+
+  // The fiche reads the API's dossier, not the corpus file: this is the shape
+  // GET /v2/peoples/{id}/names answers once migration 096 carries the history.
+  const attested: PeopleNamesDossier = {
+    peopleId: "PPL_SAMPLE",
+    autonym: "Fulɓe",
+    names: [
+      {
+        id: "nr-1",
+        nameText: "Fulɓe",
+        nameType: "endonym",
+        languageOfOrigin: "fuc",
+        meaning: null,
+        periodLabel: null,
+        imposition: null,
+        assertionId: "a-1",
+        sources: [
+          { id: "s-1", title: "S", url: null, year: 1985, tier: "official" },
+        ],
+        confidence: null,
+        attestations: [
+          {
+            formAsWritten: "Peuls",
+            year: 1853,
+            periodLabel: null,
+            attestedBy: "Faidherbe",
+            source: { ...source("S2", "referenced"), page: "p. 12" },
+          },
+          {
+            formAsWritten: "Fula",
+            year: null,
+            periodLabel: "tradition orale",
+            attestedBy: "Récit transmis",
+            source: { ...source("S3", "unverified"), page: "p. 3" },
+          },
+          {
+            formAsWritten: "Foulbé",
+            year: 1352,
+            periodLabel: "XIVe siècle",
+            attestedBy: "Ibn Battuta",
+            source: { ...source("HGA IV", "official"), page: "p. 192" },
+          },
+        ],
+      },
+    ],
+  };
+
+  // @req REQ-189
+  it("lists the forms through time by year, the undated ones last and marked", () => {
+    const { container } = render(
+      <PeopleDetailViewV2
+        language="fr"
+        people={people}
+        namesDossier={attested}
+      />
+    );
+
+    const timeline = container.querySelector(
+      '[data-fiche-section="Le nom et ses appellations"] [data-name-timeline]'
+    );
+    const rows = [...(timeline?.querySelectorAll("li") ?? [])].map(
+      (row) => row.textContent ?? ""
+    );
+    expect(rows.map((row) => row.match(/Foulbé|Peuls|Fula/)?.[0])).toEqual([
+      "Foulbé",
+      "Peuls",
+      "Fula",
+    ]);
+    expect(rows[0]).toContain("1352");
+    expect(rows[0]).toContain("p. 192");
+    expect(rows[2]).toContain("Non daté");
+    expect(rows[2]).not.toMatch(/\d{4}/);
+  });
+
+  // @req REQ-189
+  it("draws no timeline when no form carries an attestation", () => {
+    const { container } = render(
+      <PeopleDetailViewV2 language="fr" people={people} />
+    );
+
+    expect(container.querySelector("[data-name-timeline]")).toBeNull();
   });
 });

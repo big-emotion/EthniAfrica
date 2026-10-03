@@ -3926,6 +3926,12 @@ const options: swaggerJsdoc.Options = {
                 { type: "null" },
               ],
             },
+            attestations: {
+              type: "array",
+              description:
+                "The form's history (REQ-189): every time it was written down, by whom, with the source at a printed page. Empty when no attestation is recorded.",
+              items: { $ref: "#/components/schemas/NameAttestation" },
+            },
           },
           required: [
             "id",
@@ -3938,6 +3944,35 @@ const options: swaggerJsdoc.Options = {
             "assertionId",
             "sources",
             "confidence",
+            "attestations",
+          ],
+        },
+        NameAttestation: {
+          type: "object",
+          properties: {
+            formAsWritten: { type: "string", example: "Fulbe" },
+            year: { type: ["integer", "null"], example: 1352 },
+            periodLabel: { type: ["string", "null"], example: "14th century" },
+            attestedBy: { type: "string", example: "Ibn Battuta" },
+            source: {
+              type: "object",
+              properties: {
+                title: { type: "string" },
+                author: { type: "string" },
+                year: { type: "integer" },
+                url: { type: "string" },
+                tier: { type: "string" },
+                page: { type: "string", example: "p. 192" },
+              },
+              required: ["title", "author", "year", "url", "tier", "page"],
+            },
+          },
+          required: [
+            "formAsWritten",
+            "year",
+            "periodLabel",
+            "attestedBy",
+            "source",
           ],
         },
         PeopleNamesDossier: {

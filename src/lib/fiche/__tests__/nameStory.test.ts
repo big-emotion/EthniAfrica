@@ -23,6 +23,7 @@ const dossier: PeopleNamesDossier = {
       assertionId: "a1",
       sources: [],
       confidence: null,
+      attestations: [],
     },
   ],
 };

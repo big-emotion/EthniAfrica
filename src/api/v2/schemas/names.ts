@@ -51,6 +51,24 @@ export const nameRecordImpositionSchema = z.object({
 
 export type NameRecordImposition = z.infer<typeof nameRecordImpositionSchema>;
 
+// @req REQ-189
+export const nameAttestationViewSchema = z.object({
+  formAsWritten: z.string(),
+  year: z.number().int().nullable(),
+  periodLabel: z.string().nullable(),
+  attestedBy: z.string(),
+  source: z.object({
+    title: z.string(),
+    author: z.string(),
+    year: z.number().int(),
+    url: z.string(),
+    tier: z.string(),
+    page: z.string(),
+  }),
+});
+
+export type NameAttestationView = z.infer<typeof nameAttestationViewSchema>;
+
 // @req REQ-057
 export const nameRecordConfidenceSchema = z.object({
   score: z.number(),
@@ -80,6 +98,7 @@ export const peopleNameRecordSchema = z.object({
   assertionId: z.string(),
   sources: z.array(nameRecordSourceSchema),
   confidence: nameRecordConfidenceSchema.nullable(),
+  attestations: z.array(nameAttestationViewSchema),
 });
 
 export type PeopleNameRecord = z.infer<typeof peopleNameRecordSchema>;

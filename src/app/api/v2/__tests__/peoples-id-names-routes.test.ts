@@ -46,6 +46,7 @@ const validEnvelope = {
           },
         ],
         confidence: { score: 85, recomputedAt: "2026-07-31T10:00:00Z" },
+        attestations: [],
       },
     ],
   },

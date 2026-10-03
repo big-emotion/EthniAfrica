@@ -561,6 +561,35 @@ describe("nameRecordJsonLoader", () => {
       expect(exonymRecord?.sort_rank).toBe(1);
     });
 
+    // @req REQ-189
+    it("writes each form's attestations to its name_records row, and an empty list when it has none", async () => {
+      const database = createSupabaseDouble();
+      const file = validNameFile();
+      const attestation = {
+        formAsWritten: "Nagô",
+        year: 1835,
+        periodLabel: null,
+        attestedBy: "Police de Salvador",
+        source: {
+          title: "Rebelião escrava no Brasil",
+          author: "J. J. Reis",
+          year: 2003,
+          url: "https://example.org",
+          tier: "referenced",
+          page: "p. 175",
+        },
+      };
+      const names = file.names as Array<Record<string, unknown>>;
+      names[1] = { ...names[1], attestations: [attestation] };
+
+      await loadNameRecords(database.client as never, [file] as never);
+
+      const byType = (type: string) =>
+        database.nameRecords.find((r) => r.name_type === type);
+      expect(byType("exonym")?.attestations).toEqual([attestation]);
+      expect(byType("endonym")?.attestations).toEqual([]);
+    });
+
     // @req REQ-057
     it("dedups a source cited by more than one name entry via the title constraint", async () => {
       const database = createSupabaseDouble();
