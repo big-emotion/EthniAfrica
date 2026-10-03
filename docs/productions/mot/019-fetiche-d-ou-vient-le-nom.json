@@ -14,7 +14,10 @@
     "label": { "fr": "fétiche", "en": "fetish" },
     "queries": ["fetiche", "fetiches", "fetichisme"]
   },
-  "publications": [],
+  "publications": [
+    { "network": "tiktok", "format": "carrousel" },
+    { "network": "instagram", "format": "carrousel" }
+  ],
   "sources": [
     {
       "title": "Trésor de la langue française informatisé (TLFi), « fétiche », étymologie et histoire",
