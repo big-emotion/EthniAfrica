@@ -74,4 +74,14 @@ describe("Ganguela and Nganguela are one name written two ways", () => {
     );
     expect(entry.appellationRemarks).toContain("Ovimbundu");
   });
+
+  // @req REQ-095
+  it("declares no name of its own, because its source calls the term an outsiders' category and the groups independent", () => {
+    const appellations = read(NGANGUELA).content.appellations;
+    expect(appellations.selfAppellation).toBeNull();
+    // The meaning a blog gives the word in Luchazi is not lost: it stays in the origin text.
+    expect(JSON.stringify(read(NGANGUELA).content.origins)).toContain(
+      "lieu du soleil levant"
+    );
+  });
 });
