@@ -376,6 +376,21 @@ export const TRANSLATION_CLASSES: Readonly<
     "names[].attestations[].source.url": "invariant",
     "names[].attestations[].source.tier": "invariant",
     "names[].attestations[].source.page": "invariant",
+    // The answer card's line is prose for a reader; the namer is a people's
+    // name, kept as written; the respelling is French-specific and is
+    // re-derived, not translated, for another locale.
+    "names[].shortLine": "translatable",
+    "names[].namedBy": "invariant",
+    "names[].originDebated": "invariant",
+    "names[].usedIn[]": "invariant",
+    "names[].pronunciation.respelling": "review_required",
+    "names[].pronunciation.audio": "invariant",
+    "names[].pronunciation.source.title": "invariant",
+    "names[].pronunciation.source.author": "invariant",
+    "names[].pronunciation.source.year": "invariant",
+    "names[].pronunciation.source.url": "invariant",
+    "names[].pronunciation.source.tier": "invariant",
+    "names[].pronunciation.source.page": "invariant",
   },
 
   "modele-pays.json": {

@@ -270,6 +270,51 @@ describe("names service — getPeopleNamesDossier", () => {
     expect(result.names[1].attestations).toEqual([attestation]);
   });
 
+  // @req REQ-191
+  it("carries the answer-card fields to the dossier, and defaults when the row has none", async () => {
+    const pronunciation = {
+      respelling: "djièng",
+      audio: null,
+      source: {
+        title: "D",
+        author: "A",
+        year: 1990,
+        url: "u",
+        tier: "referenced",
+      },
+    };
+    mockTables({
+      names: [
+        {
+          ...endonymRow,
+          short_line: "Le nom qu'ils se donnent.",
+          named_by: null,
+          origin_debated: true,
+          used_in: ["din"],
+          pronunciation,
+        },
+        exonymRow,
+      ],
+    });
+
+    const result = await getPeopleNamesDossier("PPL_DINKA");
+
+    expect(result.names[0]).toMatchObject({
+      shortLine: "Le nom qu'ils se donnent.",
+      namedBy: null,
+      originDebated: true,
+      usedIn: ["din"],
+      pronunciation,
+    });
+    expect(result.names[1]).toMatchObject({
+      shortLine: null,
+      namedBy: null,
+      originDebated: false,
+      usedIn: [],
+      pronunciation: null,
+    });
+  });
+
   // @req REQ-189
   it("answers an empty history, never a missing one, for a form with no attestation", async () => {
     mockTables({ names: [{ ...endonymRow, attestations: null }] });

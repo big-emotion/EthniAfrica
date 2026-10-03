@@ -93,6 +93,11 @@ export const YORUBA_NAMES_DOSSIER: PeopleNamesDossier = {
       sources: [],
       confidence: null,
       attestations: [],
+      shortLine: null,
+      namedBy: null,
+      originDebated: false,
+      usedIn: [],
+      pronunciation: null,
     },
   ],
 };
