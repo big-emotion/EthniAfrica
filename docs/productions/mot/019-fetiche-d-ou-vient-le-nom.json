@@ -1,0 +1,68 @@
+{
+  "campaign": "fetiche-d-ou-vient-le-nom",
+  "typologie": "mot",
+  "episode": 19,
+  "question": {
+    "fr": "D'où vient le nom fétiche ?"
+  },
+  "myth": {
+    "fr": "Le fétichisme est-il la religion de l'Afrique ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "word": {
+    "label": { "fr": "fétiche", "en": "fetish" },
+    "queries": ["fetiche", "fetiches", "fetichisme"]
+  },
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7692379519587536150",
+      "publishedAt": "2026-10-03"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/DeBzHOnCOc1/",
+      "publishedAt": "2026-10-03"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Trésor de la langue française informatisé (TLFi), « fétiche », étymologie et histoire",
+      "url": "https://www.cnrtl.fr/etymologie/f%C3%A9tiche",
+      "tier": "referenced"
+    },
+    {
+      "title": "Trésor de la langue française informatisé (TLFi), « fétichisme », étymologie et histoire",
+      "url": "https://www.cnrtl.fr/definition/f%C3%A9tichisme",
+      "tier": "referenced"
+    },
+    {
+      "title": "William Pietz, « The Problem of the Fetish, I », RES: Anthropology and Aesthetics 9 (1985), p. 5-17",
+      "url": "https://english.hku.hk/staff/kjohnson/PDF/PietzWilliamRESfetishPART1spring1985a.pdf",
+      "tier": "referenced"
+    },
+    {
+      "title": "Charles de Brosses, Du culte des dieux fétiches, 1760",
+      "url": "https://archive.org/details/ducultedesdieux00brogoog",
+      "tier": "referenced"
+    },
+    {
+      "title": "Encyclopaedia Britannica, « nkisi » (Khonsura A. Wilson)",
+      "url": "https://www.britannica.com/art/nkisi",
+      "tier": "referenced"
+    },
+    {
+      "title": "Encyclopaedia Britannica, « suman » (Molefi Kete Asante)",
+      "url": "https://www.britannica.com/topic/suman",
+      "tier": "referenced"
+    },
+    {
+      "title": "Michael C. Carlos Museum, Emory University, « Power Figure, Bocio »",
+      "url": "https://digitalprojects.carlos.emory.edu/exhibits/show/power-figures-testing/item/7883",
+      "tier": "referenced"
+    }
+  ]
+}
