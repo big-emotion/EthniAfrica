@@ -233,5 +233,7 @@ data policy; UNESCO General History of Africa; British Library EAP; Wikimedia
 Research: Oral Citations; Wikimedia Rapid Fund; All Things Linguistic on the
 Ethnologue paywall.
 
+_Volunteer missions:_ [mission sheets and fiche template](../volunteers/README.md).
+
 _Detail pack:_ [what did not fit this brief](product-brief-2026-10-distillate.md)
 — decisions, rejected ideas, requirements hints, leads and open questions.
