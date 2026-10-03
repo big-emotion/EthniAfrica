@@ -129,6 +129,18 @@
       }
     ],
     "writtenChronicles": [],
+    "historicalSyntheses": [
+      {
+        "claim": "Le berceau du clan serait le pays des monts de Manden, autour des villes de Dakadiala, Naréna et Kiri, où les Keita étaient anciennement établis. C'est une synthèse d'historien ; la tradition rapportée plus haut les fait venir de plus loin.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-iv-niane"]
+      },
+      {
+        "claim": "Le dictionnaire des jamuw rattache l'entrée Kéyità aux régions de Kita, du Manding et de Farana, sans dire si ce sont des lieux d'origine ou d'implantation.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
+      }
+    ],
     "linguisticReconstructions": [
       {
         "claim": "Aucun dictionnaire consulté ne donne de sens établi au mot : le dictionnaire des noms de clan mandingues l'écrit Kéyità, avec les formes Kétà et Kɛ́yità, et le définit seulement comme un nom de clan.",
@@ -144,16 +156,6 @@
         "claim": "Une explication, rapportée en 1912 par un administrateur colonial d'après des traditions locales qu'il ne nomme pas, rattache le nom au surnom d'un roi du Mali, Allakoï : il répondait « Alla koï », « Dieu, certes », à toute question sur la cause d'un événement, et certains ajoutent que ses descendants furent appelés « ceux d'Allakoï », nom abrégé plus tard en Koïta ou Keïta. Aucune autre source consultée ne la reprend, et elle ne s'accorde pas avec le récit qui tire Keyita de ke, « l'héritage », et ta, « prendre ».",
         "claimStatus": "contested",
         "sourceRefs": ["bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "Le berceau du clan serait le pays des monts de Manden, autour des villes de Dakadiala, Naréna et Kiri, où les Keita étaient anciennement établis. C'est une synthèse d'historien ; la tradition rapportée plus haut les fait venir de plus loin.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-iv-niane"]
-      },
-      {
-        "claim": "Le dictionnaire des jamuw rattache l'entrée Kéyità aux régions de Kita, du Manding et de Farana, sans dire si ce sont des lieux d'origine ou d'implantation.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bamadaba-jamuw"]
       }
     ]
   },

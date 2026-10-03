@@ -141,6 +141,13 @@
         "sourceRefs": ["bogacheva-2017-jamu"]
       }
     ],
+    "historicalSyntheses": [
+      {
+        "claim": "Des synthèses historiques font conduire par le clan des Camara un mouvement de clans mandingues venus du haut Niger vers la côte, à l'origine des Kono et des Vai de la Sierra Leone et du Liberia, et établissent des Malinké du clan Camara au Liberia et dans l'ouest de la Côte d'Ivoire au XVIe siècle, les Diomandé étant dits frères des Camara. La date de ce mouvement est disputée : avant les années 1460 pour un auteur, entre 1500 et 1550 pour un autre, plusieurs siècles plus tôt pour un troisième, qui doute aussi qu'un seul clan ait conduit une seule migration.",
+        "claimStatus": "contested",
+        "sourceRefs": ["hga-iv-person", "hga-v-wondji", "hga-iii-andah"]
+      }
+    ],
     "linguisticReconstructions": [
       {
         "claim": "Aucun dictionnaire ni travail de linguiste consulté ne donne de sens au mot : le dictionnaire des noms de clan mandingues le définit seulement comme un nom de clan. Le griot qui raconte l'épopée publiée en 1960 affirme savoir pourquoi tel s'appelle Kamara, mais ne le dit pas.",

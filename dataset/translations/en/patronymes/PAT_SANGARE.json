@@ -80,29 +80,24 @@
         "sourceRefs": ["bogacheva-2017-jamu"]
       }
     ],
-    "linguisticReconstructions": [
+    "historicalSyntheses": [
       {
-        "claim": "No dictionary consulted gives a meaning for the word. The dictionary of Manding clan names writes it Sàngare, with the variant Sankare, links it to the Fula, to Wassoulou and to the Malinké, and gives Bari, Si and Ba as its equivalents. It also records a joking nickname, Kàngare.",
-        "claimStatus": "established",
-        "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "One explanation links the presence of the name among Malinké lineages to borrowing: Malinké clans subjugated by the Fula are said to have taken the names of their masters, Sangaré, Diallo, Sidibé and Diakité. This explanation is reported only by an online press article.",
+        "claim": "One explanation links the presence of the name among Malinke lineages to borrowing: Malinke clans subjugated by the Fulani are said to have taken the names of their masters, Sangaré, Diallo, Sidibé and Diakité. This explanation is reported only by an online press article.",
         "claimStatus": "contested",
         "sourceRefs": ["iffono-wassoulou-tradition"]
       },
       {
-        "claim": "The Fula of Wassoulou traditionally identify themselves by four names: Diallo, Diakité, Sidibé and Sangaré. They no longer speak Fula today; several competing reasons are given: marriages with local women, who spoke their own language to the children, or the ban on Fula by the conqueror Samori Touré.",
+        "claim": "The Fulani of Wassoulou traditionally identify themselves by four names: Diallo, Diakité, Sidibé and Sangaré. They no longer speak Fulani today; several competing reasons are given, either marriages with local women, who spoke their own language to the children, or the ban on Fulani imposed by the conqueror Samori Touré.",
         "claimStatus": "contested",
         "sourceRefs": ["iffono-wassoulou-tradition"]
       },
       {
-        "claim": "In Guinea, a Guinean consultant describes the bearers of the name as originating from Wassoulou, Fula integrated into the Malinké through language and customs; they are classed sometimes among the one, sometimes among the other.",
+        "claim": "In Guinea, a Guinean consultant describes the bearers of the name as originating from Wassoulou, Fulani integrated into the Malinke through language and customs; they are classed sometimes among one, sometimes among the other.",
         "claimStatus": "contested",
         "sourceRefs": ["rainer-trebbi-2012-political-power"]
       },
       {
-        "claim": "In Mali, Sangaré is counted among the Fula family names, including among the Foula of Wassoulou, in the regions of Koulikoro, Kita, Bafoulabé and Sikasso, who claim membership of the greater Fula family although they no longer speak the language.",
+        "claim": "In Mali, Sangaré is counted among the Fulani family names, including among the Foula of Wassoulou, in the regions of Koulikoro, Kita, Bafoulabé and Sikasso, who claim membership of the great Fulani family although they no longer speak the language.",
         "claimStatus": "claimed",
         "sourceRefs": [
           "interpeace-autoportrait-mali-2015",
@@ -110,14 +105,21 @@
         ]
       },
       {
-        "claim": "Among the Fula of western Burkina Faso, Sangaré is given as one of the four main clans of the Fula, with Diallo, Diakité and Sidibé. Sidibé and Sangaré form one of the two pairs at the mythical core of Fula identity, in a relation of equivalence, and the two names are linked by a joking relationship.",
+        "claim": "Among the Fulani of western Burkina Faso, Sangaré is given as one of the four main Fulani clans, with Diallo, Diakité and Sidibé. Sidibé and Sangaré form there one of the two pairs at the mythical core of Fulani identity, in a relation of equivalence, and the two names are linked by a joking relationship.",
         "claimStatus": "claimed",
         "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
       },
       {
-        "claim": "Among the Fula of western Burkina Faso, the Bingaabe are usually classed in the Sangaré clan; they are joking allies of the Toroobe.",
+        "claim": "Among the Fulani of western Burkina Faso, the Bingaabe are usually classed in the Sangaré clan; they are joking allies of the Toroobe.",
         "claimStatus": "claimed",
         "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "No dictionary consulted gives a meaning for the word. The dictionary of Manding clan names writes it Sàngare, with the variant Sankare, links it to the Fula, to Wassoulou and to the Malinké, and gives Bari, Si and Ba as its equivalents. It also records a joking nickname, Kàngare.",
+        "claimStatus": "established",
+        "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
       }
     ]
   },
@@ -321,22 +323,22 @@
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-10-03T09:49:00.704Z",
+    "translatedAt": "2026-10-03T12:09:07.068Z",
     "model": "claude-sonnet-5-5",
-    "sourceHash": "cb12a82cb2040c47eba74bf80e67a67b87ac9161749af3b5edcaba58f6df3e97",
+    "sourceHash": "9a6ae2839bc6f90df693434715fcadca02812b0dd133f60a55fc48c7875a4dad",
     "fieldHashes": {
       "origin.oralTraditions[0].claim": "3d346c6668339fef",
       "origin.oralTraditions[0].context": "300acb1df05057c8",
       "origin.oralTraditions[1].claim": "9ad7ed39a5f0d2b1",
       "origin.oralTraditions[1].context": "182a5eb7682980b7",
       "origin.writtenChronicles[0].claim": "c2d5e51f0e7e3401",
+      "origin.historicalSyntheses[0].claim": "9a1346f1994225d1",
+      "origin.historicalSyntheses[1].claim": "32a50f776f32f8b5",
+      "origin.historicalSyntheses[2].claim": "2fc25df72156070d",
+      "origin.historicalSyntheses[3].claim": "51cff664d8bad040",
+      "origin.historicalSyntheses[4].claim": "e0825162f99bc1c0",
+      "origin.historicalSyntheses[5].claim": "b3f69a12e8f7e79d",
       "origin.linguisticReconstructions[0].claim": "8dc9eb5910095de4",
-      "origin.linguisticReconstructions[1].claim": "9a1346f1994225d1",
-      "origin.linguisticReconstructions[2].claim": "32a50f776f32f8b5",
-      "origin.linguisticReconstructions[3].claim": "2fc25df72156070d",
-      "origin.linguisticReconstructions[4].claim": "51cff664d8bad040",
-      "origin.linguisticReconstructions[5].claim": "e0825162f99bc1c0",
-      "origin.linguisticReconstructions[6].claim": "b3f69a12e8f7e79d",
       "casteOrSocialFunction.value": "e672c4fbfa7e07fe",
       "homonyms[0].distinction": "7a6b8cc14a416b8d",
       "sources[0].notes": "5da5fc8247fe3167",
@@ -355,13 +357,7 @@
     "reviewRequired": [
       "origin.oralTraditions[0].context",
       "origin.oralTraditions[1].context",
-      "origin.linguisticReconstructions[0].claim",
-      "origin.linguisticReconstructions[1].claim",
-      "origin.linguisticReconstructions[2].claim",
-      "origin.linguisticReconstructions[3].claim",
-      "origin.linguisticReconstructions[4].claim",
-      "origin.linguisticReconstructions[5].claim",
-      "origin.linguisticReconstructions[6].claim"
+      "origin.linguisticReconstructions[0].claim"
     ]
   }
 }

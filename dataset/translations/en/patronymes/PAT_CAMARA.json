@@ -116,6 +116,13 @@
         "sourceRefs": ["bogacheva-2017-jamu"]
       }
     ],
+    "historicalSyntheses": [
+      {
+        "claim": "Historical syntheses have the Camara clan lead a movement of Mandinka clans from the upper Niger towards the coast, at the origin of the Kono and the Vai of Sierra Leone and Liberia, and place Malinké of the Camara clan in Liberia and in western Côte d'Ivoire in the sixteenth century, the Diomandé being said to be brothers of the Camara. The date of this movement is disputed: before the 1460s for one author, between 1500 and 1550 for another, several centuries earlier for a third, who also doubts that a single clan led a single migration.",
+        "claimStatus": "contested",
+        "sourceRefs": ["hga-iv-person", "hga-v-wondji", "hga-iii-andah"]
+      }
+    ],
     "linguisticReconstructions": [
       {
         "claim": "No dictionary or linguist's work consulted gives the word a meaning: the dictionary of Mandinka clan names defines it only as a clan name. The griot who tells the epic published in 1960 claims to know why a person is called Kamara, but does not say.",
@@ -396,9 +403,9 @@
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-10-03T08:51:29.518Z",
+    "translatedAt": "2026-10-03T12:09:27.421Z",
     "model": "claude-sonnet-5-5",
-    "sourceHash": "4bde1981771999580b6aec40923f4b32149a5c7c40b50112eabe32963b6f5286",
+    "sourceHash": "fe61f40760420998c63b52f2d4de98d22b1fde56787bf41c398be63bb846be57",
     "fieldHashes": {
       "origin.oralTraditions[0].claim": "97dbc416a7c399a5",
       "origin.oralTraditions[0].context": "300acb1df05057c8",
@@ -415,6 +422,7 @@
       "origin.oralTraditions[6].claim": "aee4a555cd3f98f4",
       "origin.oralTraditions[6].context": "e58f61ead32b698a",
       "origin.writtenChronicles[0].claim": "d72175f33234c4c4",
+      "origin.historicalSyntheses[0].claim": "b81511fb7eda02f3",
       "origin.linguisticReconstructions[0].claim": "bb3f90cbbce19b89",
       "origin.linguisticReconstructions[1].claim": "df3485eff071a34c",
       "origin.linguisticReconstructions[2].claim": "935946b4419104c6",

@@ -132,6 +132,18 @@
         "sourceRefs": ["bogacheva-2017-jamu", "hga-v-izard-ki-zerbo"]
       }
     ],
+    "historicalSyntheses": [
+      {
+        "claim": "Au milieu du XVIIe siècle, les Massassi arrivés au Kaarta y trouvent les Jawara déjà installés, puis les repoussent vers le sud ; chassés de Nioro, leur capitale, les Jawara se révoltent en 1843.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-vi-ly-tall"]
+      },
+      {
+        "claim": "Les deux branches du nom, les Saagonè et les Dabo, se sont combattues ; la victoire des Saagonè est datée des années 1753-1754 par des historiens qui s'appuient sur les traditions du Baakhunu, et la chronologie des Jawara reste discutée.",
+        "claimStatus": "contested",
+        "sourceRefs": ["ardouin-1988-baakhunu"]
+      }
+    ],
     "linguisticReconstructions": [
       {
         "claim": "Le dictionnaire des noms de clan mandingues note le nom Jáwara. Diawara en est la transcription française usuelle ; Jawara est la graphie qui domine en Gambie et en Sierra Leone, et celle qu'emploie une synthèse de l'UNESCO pour les Diawara du Kaarta.",
