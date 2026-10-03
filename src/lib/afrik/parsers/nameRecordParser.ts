@@ -29,6 +29,22 @@ const nameRecordSourceSchema = z
   })
   .strict();
 
+// The page is what lets a contradictor — or a reader — reopen the book and
+// reread the claim; a history without it cannot be checked (REQ-189).
+const nameAttestationSchema = z
+  .object({
+    formAsWritten: z.string().min(1),
+    year: z.number().int().nullable(),
+    periodLabel: z.string().nullable(),
+    attestedBy: z.string().min(1),
+    source: nameRecordSourceSchema.extend({
+      page: z.string().trim().min(1, {
+        message: "an attestation cites its source at a page",
+      }),
+    }),
+  })
+  .strict();
+
 const nameRecordTypeSchema = z.enum(
   ["endonym", "exonym", "historical_spelling", "surname"],
   {
@@ -57,6 +73,7 @@ const nameRecordEntrySchema = z
     sources: z.array(nameRecordSourceSchema).min(1, {
       message: "at least one tiered source is required",
     }),
+    attestations: z.array(nameAttestationSchema).optional(),
   })
   .strict()
   .superRefine((entry, ctx) => {

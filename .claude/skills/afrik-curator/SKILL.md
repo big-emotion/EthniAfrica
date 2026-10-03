@@ -174,6 +174,13 @@ signed chapter and its author at its **printed** page, never the PDF page (plate
 shift them), and the UNESDOC permalink, never the local file. The tier is `official`.
 For a claim from vols I–VIII (1980–1999), check GHA IX, written to revisit them.
 
+**A name record's history goes in `names[].attestations[]`** (REQ-189): the form as
+written, its year or period, who wrote it, and the source **with its printed page** —
+the validator refuses an attestation without one. Once a record is written, hand it to
+the `name-record-contradictor` sub-agent (DEC-067) before proposing it; it rereads the
+cited pages and the "peoples speak first" rule, and only what it flags goes to the
+operator.
+
 ### Phase 4 — Do the work
 
 - **enrich** — propose values the input supports. Diff against the current fiche. Every new
