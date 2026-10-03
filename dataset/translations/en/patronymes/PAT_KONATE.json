@@ -1,0 +1,354 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "patronyme",
+    "directives": "Fiche recentrée sur le nom (2026-10-03), sur le modèle de la fiche pilote Camara. Chaque piste d'origine est attribuée à qui la porte et citée à la page dans les notes de sa source ; aucune n'est retenue comme la bonne. Ne pas étendre sans source dédiée."
+  },
+  "id": "PAT_KONATE",
+  "nameMain": "Konaté",
+  "nameSystem": "clan_name",
+  "spellings": [
+    {
+      "spelling": "Konaté",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["delafosse-1912-haut-senegal-niger"]
+        }
+      ]
+    },
+    {
+      "spelling": "Konate",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["hga-iv-niane", "jansen-1995-lansine-diabate"]
+        },
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["hga-iv-person", "hga-vi-person"]
+        },
+        { "countryId": "CIV", "sourceRefs": ["hga-iv-person"] }
+      ]
+    },
+    {
+      "spelling": "Kónatɛ̀",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
+    },
+    {
+      "spelling": "Kɔnatɛ",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
+    },
+    {
+      "spelling": "Kònatɛ́",
+      "attestations": [
+        { "countryId": "GIN", "sourceRefs": ["bogacheva-2017-jamu"] }
+      ]
+    },
+    {
+      "spelling": "Kounaté",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["delafosse-1912-haut-senegal-niger"]
+        }
+      ]
+    }
+  ],
+  "transmissionMode": "patrilineal",
+  "designatedSocialUnit": "clan",
+  "origin": {
+    "oralTraditions": [
+      {
+        "claim": "The name is said to come from a woman who was called barren. The text relates that a respected woman could not have a child and the whole village called her \"kona mousso\", the barren woman; when she bore one, the child took the name Konatè, \"he is not barren\", in memory of what had come before his birth. Even today, when a woman has a child late in life, the elders greet her with an \"i konatè\", to silence malicious tongues and honour the mother.",
+        "claimStatus": "claimed",
+        "collection": "not-stated",
+        "context": "Text written in French, cited with no indication of provenance in a Russian university thesis of 2017; it is not known who told it, where or when",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "A legend makes the Konaté, the Coulibaly and the Keïta descendants of one couple, Mahamadu Kanu and Mariatu, and it exists in two versions. In the first, the eldest, Coulibaly, yields power to the youngest, Keïta, in exchange for food. In the second, three brothers live in a village and Lawali Simbo is chosen as chief in place of the eldest, Kanu, but has no children; his brother Kanunyoro Simbo then takes the name Konate, which the narrative explains by kona, one who cannot have children, followed by the negation te: one who has children. When Lawali in turn has children, he receives the name Keyita, \"the one who takes the inheritance\".",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "V. Vydrin et A. Davydov, dont les notes ne disent pas qui l'a raconté ; reproduit par E. A. Bogacheva en 2017",
+        "context": "Narrative reported in Russian in a university thesis, in the entry for the name Keïta",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "The Epic of Sundiata names Siara Kouman Konate, a cousin of Sundiata, among the chiefs who came to join him before the battle against the king of Sosso, and makes him the ancestor of the people of the Toron country. It relates that at the Kouroukan Fougan assembly the Konate of the Toron became the juniors of the Keita, so that a Konate who had reached maturity could have himself called Keita.",
+        "claimStatus": "claimed",
+        "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane, qui l'a traduit en français",
+        "context": "Epic published in 1960",
+        "sourceRefs": ["niane-1960"]
+      },
+      {
+        "claim": "In the epic recited at Kela, Konate recurs as a praise name of Sundiata: \"Jata Konate\" serves as a refrain in his praises, and he is greeted as \"Sirifiya Magan Konate\". The same narrative makes Soma Jobi, greeted as \"first priest of the Manden, and last priest of the Manden\", \"the ancestor of the Konate\", and it is with him that the young Sundiata finds refuge when he flees his elder brother.",
+        "claimStatus": "claimed",
+        "carrier": "Lansine Diabaté, chef de la parole (kumatigi) de Kela, au Mali",
+        "collection": "mediated",
+        "collector": "Jan Jansen, Esger Duintjer et Boubacar Tamboura",
+        "context": "Narrative in Maninka published with its French translation in 1995",
+        "sourceRefs": ["jansen-1995-lansine-diabate"]
+      },
+      {
+        "claim": "Before the Mali empire, the traditions of the Manding know two kingdoms: the Do, inhabited by the Condé clan, and the Kiri, also called Manden, which the Konaté occupied together with the Keïta. They count Siara Kuman Konate among the army chiefs who rallied to Sundiata before the battle of Kirina, and among Sundiata's many names they give that of Nare Maghan Konate, \"king of the Konate, son of Nare Maghan\".",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane, d'après les écoles de tradition orale du Manding",
+        "context": "Historical synthesis published by UNESCO in 1985",
+        "sourceRefs": ["hga-iv-niane"]
+      },
+      {
+        "claim": "One tradition has the founders of Mali come from the east, led by Kabala Simbo Keïta, and settle in the Do, whose capital was Tabu. At Tabu, the chief is said to have been a Konate; a note in the thesis that reports this account asks whether this was before the arrival of the Keïta. The same thesis observes that the account may have been fashioned at Kong, and well after the centuries it speaks of.",
+        "claimStatus": "contested",
+        "collection": "mediated",
+        "collector": "Charles Monteil, administrateur colonial, dans un ouvrage de 1924 cité de seconde main",
+        "context": "Narrative reported in Russian in a 2017 university thesis, in the entry for the name Keïta; the informant is not named",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ],
+    "writtenChronicles": [
+      {
+        "claim": "The name is said to come from a childless princess. Síyara Kétà, daughter of the ruler of the Mansarén, is married to a man of the Toron; because she has no child, a co-wife calls her \"kòna móso\", the barren woman. Her family then entrusts a boy, Kòmán, to her, and those who had called her barren begin to call her \"kòna tɛ̀ móso\", the woman who is not barren. Kòmán's many descendants are called the people of the woman Kònatɛ́, hence their name; Síyara becomes their name of honour, and a Konaté can still be greeted today by the name Kétà. The work, written in N'Ko by Souleymane Kanté, thus makes the Konaté a junior branch of the Mansarén.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "The dictionary of Manding clan names defines the word only as a clan name and gives it no meaning. It treats Konaté as an equivalent of Keïta, and perhaps of Konaré.",
+        "claimStatus": "established",
+        "sourceRefs": ["bamadaba-jamuw"]
+      },
+      {
+        "claim": "Several accounts link the name to kona, which denotes a person without children, and to a negation, but each in its own way: the text in French renders Konatè as \"he is not barren\"; the legend of the three brothers breaks it down into kona and te, \"one who has children\"; the work of Souleymane Kanté does not segment the name, but derives it from the expression \"kòna tɛ̀ móso\", the woman who is not barren, kòna denoting a woman who cannot have children or whose children die. These three readings reach us through a single thesis, and no linguist's work consulted confirms or discusses them.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "The editors of the epic recited at Kela describe Konate as an honorific clan name, linked to the Mansaren, the royal lineage of the Keïta, and give it as a title of honour of Sundiata.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["jansen-1995-lansine-diabate"]
+      },
+      {
+        "claim": "A colonial administrator wrote in 1912 that the Kounaté or Konaté clan originates from Kouna or Kona, east of Macina, near Lake Débo; he gives this place as the clan's point of departure, without deriving the name from it. In the lists of clans he drew up the same year, he also links the name to Kounaré, Kounari and Koyaté, without saying why.",
+        "claimStatus": "claimed",
+        "sourceRefs": [
+          "delafosse-1912-haut-senegal-niger",
+          "bogacheva-2017-jamu"
+        ]
+      }
+    ]
+  },
+  "peoples": [
+    {
+      "peopleId": "PPL_MALINKE",
+      "status": "attested",
+      "sourceRefs": ["hga-iv-niane", "bamadaba-jamuw"]
+    },
+    {
+      "peopleId": "PPL_BAMBARA",
+      "status": "attested",
+      "sourceRefs": ["bamadaba-jamuw", "delafosse-1912-haut-senegal-niger"]
+    },
+    {
+      "peopleId": "PPL_DIOULA",
+      "status": "attested",
+      "sourceRefs": ["delafosse-1912-haut-senegal-niger"]
+    },
+    {
+      "peopleId": "PPL_SONINKE",
+      "status": "attested",
+      "sourceRefs": ["delafosse-1912-haut-senegal-niger"]
+    }
+  ],
+  "countries": [
+    {
+      "countryId": "MLI",
+      "status": "attested",
+      "sourceRefs": [
+        "hga-iv-niane",
+        "jansen-1995-lansine-diabate",
+        "bamadaba-jamuw"
+      ]
+    },
+    {
+      "countryId": "GIN",
+      "status": "attested",
+      "sourceRefs": ["hga-iv-person", "hga-vi-person", "bogacheva-2017-jamu"]
+    },
+    {
+      "countryId": "CIV",
+      "status": "attested",
+      "sourceRefs": ["hga-iv-person"]
+    }
+  ],
+  "alliances": [
+    {
+      "targetPatronymeId": "PAT_KOUYATE",
+      "allianceType": "sanankuya",
+      "sourceRefs": ["bamadaba-jamuw"]
+    },
+    {
+      "targetPatronymeId": "PAT_COULIBALY",
+      "allianceType": "sanankuya",
+      "sourceRefs": ["bogacheva-2017-jamu"]
+    },
+    {
+      "targetPatronymeId": "PAT_CAMARA",
+      "allianceType": "sanankuya",
+      "sourceRefs": ["bogacheva-2017-jamu"]
+    },
+    {
+      "targetPatronymeId": "PAT_KOUROUMA",
+      "allianceType": "sanankuya",
+      "sourceRefs": ["bogacheva-2017-jamu"]
+    }
+  ],
+  "casteOrSocialFunction": {
+    "value": "The name is ranked among those of the nobles who are not artisans, the hɔrɔn, former warriors, kings and chiefs of Malinké society, alongside Keïta, Koné and Traoré; the ethnomusicologist who states this holds these names to be often reliable indicators of status, while calling for caution. The dictionary of Mandinka clan names gives no status for this entry. The editors of the epic recited at Kela link the name to the Mansaren, the royal lineage of the Keïta.",
+    "sourceRefs": [
+      "charry-1996-jembe",
+      "bamadaba-jamuw",
+      "jansen-1995-lansine-diabate"
+    ]
+  },
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Siara Kuman Konaté",
+      "sourceRefs": ["hga-iv-niane", "niane-1960"]
+    }
+  ],
+  "homonyms": [],
+  "sources": [
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Appendix of clan names of the Bamadaba, the Bambara-French electronic dictionary of the Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), pointed out by Vydrin in Mandenkan 63, 2020, pp. 89-110. Complete file consulted. The entry Kónatɛ̀ gives the variants Kɔnatɛ and Konate, the use of the name among the Malinké, the Bambara and the Kagoro, the equivalents Keïta and, with a doubt, Konaré, the dog as taboo, and Mariko as joking partner, in Bélédougou; it gives no meaning to the name and no status. The pairing with Kouyaté is carried by the entry Kúyate, not by the entry Kónatɛ̀; the entries Dàngo and Simalo also name Konate among their partners."
+    },
+    {
+      "sourceKey": "charry-1996-jembe",
+      "title": "A Guide to the Jembe",
+      "url": "https://echarry.web.wesleyan.edu/jembearticle/article.html",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Charry, Eric, Percussive Notes 34(2), April 1996, pp. 66-72; read in the expanded version that the author has put online, not in print. The author is the ethnomusicologist of Mande Music (University of Chicago Press, 2000). A specialist journal article, not a peer-reviewed one: it is cited here for the attribution of clan names to Mandinka social statuses, which it states by name — Keïta, Konaté, Koné and Traoré for the hɔrɔn — with the reservation the author attaches to it, and not for the history of the jembe."
+    },
+    {
+      "sourceKey": "niane-1960",
+      "title": "Soundjata ou l'épopée mandingue",
+      "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Niane, Djibril Tamsir, Présence Africaine, 1960. Transcription of the account of the griot Djeli Mamadou Kouyaté of Djeliba Koro (Siguiri); it is a written record of an oral tradition. Pages read on the digitised copy at archive.org (SoundjataOuLepopeeMandingue), close to the printed edition without being identical to it: Sundiata's father is named there Maghan Kon Fatta, without being called Konate (p. 15); Siara Kouman Konate, cousin of Sundiata and ancestor of the people of the Toron (p. 101); the Konate of the Toron who became the juniors of the Keita (p. 140)."
+    },
+    {
+      "sourceKey": "jansen-1995-lansine-diabate",
+      "title": "L'Épopée de Sunjara, d'après Lansine Diabate de Kela (Mali)",
+      "url": "https://hdl.handle.net/1887/2761",
+      "tier": "referenced",
+      "source_kind": "oral_tradition",
+      "notes": "Jansen, Jan, Duintjer, Esger, and Tamboura, Boubacar, CNWS, Leiden, 1995; account by the master of the word Lansine Diabaté of Kela, in Maninka with translation; read in the copy held by the Internet Archive. The refrain \"Jata Konate\" (p. 44, line 083, and further on); \"Sirifiya Magan Konate\" (p. 51, line 109); Soma Jobi, the ancestor of the Konate, who welcomes Sundiata in exile (p. 98, line 276), greeted as first and last priest of the Manden (p. 99, line 279); editors' note on Konate, an honorific clan name linked to the Mansaren, the royal lineage of the Keïta (p. 199, note 26); title of honour of Sundiata (p. 207, note 174)."
+    },
+    {
+      "sourceKey": "hga-iv-niane",
+      "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 6, Le Mali et la deuxième expansion manden",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, ed. D. T. Niane, 1985; chapter by D. T. Niane. Printed pages: according to oral sources, the Do settled by the Condé and the Kiri, or Manden, occupied by the Konate and the Keita (p. 153); Mamadi Kani calling on the hunters of the kamara, keita, konate and traore clans (p. 154); Siara Kuman Konate among the army chiefs who rallied to Sunjata Keita (p. 155); Nare Maghan Konate, \"king of the Konate, son of Nare Maghan\", among the names of Sunjata Keita (p. 158). The chapter gives no meaning to the name."
+    },
+    {
+      "sourceKey": "hga-iv-person",
+      "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 12, Les peuples côtiers, premiers contacts avec les Portugais, de la Casamance aux lagunes ivoiriennes",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, 1985; chapter by Yves Person. Printed page: in a passage where the author advances with caution (\"it seems\"), great noble lineages sharing power, including the Maninka clans of the Kuruma and the Konate of the Toron, from Kankan to Odienné, \"at the latest in the fifteenth century\" (p. 341)."
+    },
+    {
+      "sourceKey": "hga-vi-person",
+      "title": "Histoire générale de l'Afrique, VI : L'Afrique au XIXe siècle jusque vers les années 1880 — chapitre 24, États et peuples de Sénégambie et de haute Guinée",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, ed. J. F. Ade Ajayi, 1996; chapter by Yves Person. Printed pages: on the upper Milo valley, between the Toron and the Konyan, the Berete lineage organising a local hegemony \"in the name of the Konate traditionalists\" (p. 704); Samori, born around 1830, counting among his ancestors \"more Kamara or Konate, traditionalist peasants, than Muslim traders\" (p. 705)."
+    },
+    {
+      "sourceKey": "bogacheva-2017-jamu",
+      "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+      "url": "https://hdl.handle.net/11701/10975",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bogacheva, E. A., bachelor's thesis, Saint Petersburg State University, 2017, in Russian; title translated; supervised by A. Davydov, reviewed by V. Vydrin. Entry Kónatɛ̀, pp. 89-90: the account of the woman said to be barren, a text in French reproduced with no indication of provenance (p. 89); the clan's place of origin according to Delafosse 1912 (p. 89); the origin as told in Souleymane Kanté's work in N'ko on the names and jamu of the Manden, with the honorific names Síyara and Sùwɔ́ (pp. 89-90). Entry Kéyità: the legend of the three brothers and its two versions, drawn from the notes of V. Vydrin and A. Davydov, who do not name their informants (p. 83); the Tabu tradition reported by Monteil in 1924 (p. 84). Konate among the joking partners of the Kamara (p. 74) and of the Kuruma (p. 97), according to the griot Babou Condé of Fadama, in Guinea, interviewed in 2017, and of the Kulibali (p. 95), according to the same notes with no named informant. Kanté's original text in N'ko has not been read; only its Russian translation has. A bachelor's thesis is not a peer-reviewed publication: it is cited for the testimonies it transmits."
+    },
+    {
+      "sourceKey": "delafosse-1912-haut-senegal-niger",
+      "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+      "url": "https://www.gutenberg.org/ebooks/77844",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Delafosse, Maurice, Émile Larose, Paris, 1912; read on the Project Gutenberg edition, which marks the pages of the print. Author of the colonial period, administrator in French West Africa. The name in his clan lists: Kounaté or Kounaré among the Soninké (p. 137), Konaté or Kounaté among the Dioula (p. 138), Konaté among the Kâgoro and Konaté or Kounari among the Banmana (p. 139), Konaté or Koyaté among the Malinké (p. 140); the Kounaté or Konaté originating from Kouna or Kona, east of Macina, and the founding of the first Djenné, which he attributes to them around the year 800 (p. 263). The 2017 thesis cites this passage at p. 260; it is found at p. 263 of this edition. Cited for the forms it records and as an example of an explanation from outside, not for its classifications."
+    }
+  ],
+  "gaps": [
+    {
+      "fieldPath": "homonyms",
+      "reason": "Konaté is also written Konate, Kɔnatɛ or Kounaté; the dictionary of Manding clan names treats Keïta as an equivalent, and Konaré perhaps, and a 1912 list links the name with Kounari and Koyaté. These are spellings and correspondences, not distinct lineages. We have found no source that reports another, unrelated name written in the same way."
+    }
+  ],
+  "_translation": {
+    "kind": "machine",
+    "translatedAt": "2026-10-03T09:57:30.570Z",
+    "model": "claude-sonnet-5-5",
+    "sourceHash": "92a8807a016380ff9279f993e5f9867f2a1483d4196d5021fe8a98b90243a581",
+    "fieldHashes": {
+      "origin.oralTraditions[0].claim": "0f50a4072d159962",
+      "origin.oralTraditions[0].context": "6a0947897b7e06e1",
+      "origin.oralTraditions[1].claim": "0dca4361e4961891",
+      "origin.oralTraditions[1].context": "4b2307b349692bac",
+      "origin.oralTraditions[2].claim": "480eace2586ac96f",
+      "origin.oralTraditions[2].context": "d83cecc1e1f117ca",
+      "origin.oralTraditions[3].claim": "b56a7f7467c975e5",
+      "origin.oralTraditions[3].context": "11e0343133025804",
+      "origin.oralTraditions[4].claim": "a49e45dc961033fa",
+      "origin.oralTraditions[4].context": "11214264406d2bbc",
+      "origin.oralTraditions[5].claim": "431d808c0b135dba",
+      "origin.oralTraditions[5].context": "7fb8e1ced989a572",
+      "origin.writtenChronicles[0].claim": "d3bef9d64ec9aeaf",
+      "origin.linguisticReconstructions[0].claim": "6f63c237997b3d8a",
+      "origin.linguisticReconstructions[1].claim": "770930bf7dcf86d3",
+      "origin.linguisticReconstructions[2].claim": "98ec10b6bceb6021",
+      "origin.linguisticReconstructions[3].claim": "e92613dd3300b154",
+      "casteOrSocialFunction.value": "1640f43513bf0558",
+      "sources[0].notes": "fc3749ec6b1fdfe8",
+      "sources[1].notes": "3e6494fda1f78d59",
+      "sources[2].notes": "1d287ed3d1811212",
+      "sources[3].notes": "e85ace546cff6a7c",
+      "sources[4].notes": "86cecd2423e67758",
+      "sources[5].notes": "3cafff8f274c6b16",
+      "sources[6].notes": "602a609ea72c60b1",
+      "sources[7].notes": "8502134234380523",
+      "sources[8].notes": "48cf53a78f40ede0",
+      "gaps[0].reason": "b304880343698002"
+    },
+    "reviewRequired": [
+      "origin.oralTraditions[0].context",
+      "origin.oralTraditions[1].context",
+      "origin.oralTraditions[2].context",
+      "origin.oralTraditions[3].context",
+      "origin.oralTraditions[4].context",
+      "origin.oralTraditions[5].context",
+      "origin.linguisticReconstructions[0].claim",
+      "origin.linguisticReconstructions[1].claim",
+      "origin.linguisticReconstructions[2].claim",
+      "origin.linguisticReconstructions[3].claim"
+    ]
+  }
+}

@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Dossier court fondé sur le passage du corpus AFRIK référencé ; ne pas étendre les affirmations sans source dédiée."
+    "directives": "Fiche recentrée sur le nom (2026-10-03), passe de correction : chaque piste d'origine est attribuée à qui la porte et citée à la page dans les notes de sa source ; aucune n'est retenue comme la bonne. Ne pas étendre sans source dédiée."
   },
   "id": "PAT_KEITA",
   "nameMain": "Keïta",
@@ -62,7 +62,7 @@
       "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
     },
     {
-      "spelling": "Kéta",
+      "spelling": "Kétà",
       "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
     }
   ],
@@ -71,37 +71,72 @@
   "origin": {
     "oralTraditions": [
       {
-        "claim": "The Keïta clan is that of Soundiata and the imperial dynasty of Mali; the epic gives it the lion as ancestor-totem, hence the epithet \"son of the Lion\".",
+        "claim": "The Konaté, the Coulibaly and the Keïta are said to descend from the three children of Mahamadu Kanu and Mariatu, each the founder of a clan. The narrative circulates in two versions. In the first, the eldest, Coulibaly, yields power to the younger, Keïta, in exchange for food. In the second, three brothers live in the same village; during a famine, the third, Lauali Simbo, shares the game equally and the villagers choose him as chief. As he has no child, his brother Kanunyoro takes the name Konaté, \"the one who has children\"; then children are born to Lauali, who receives the name Keyita, from ke, \"the inheritance\", and ta, \"to take\". The dictionary of Mandinka clan names, for its part, records a common origin with the Kulibali.",
         "claimStatus": "claimed",
-        "griot": "Djeli Mamadou Kouyaté (Djeliba Koro, Siguiri)",
-        "transcription": "Niane, Djibril Tamsir, Soundjata ou l'épopée mandingue, 1960",
+        "collection": "mediated",
+        "collector": "V. Vydrine et A. Davydov, dont les matériaux sont publiés par E. A. Bogacheva",
+        "context": "Narrative reported in Russian in a university thesis of 2017, with no indication of place or informant",
+        "sourceRefs": ["bogacheva-2017-jamu", "bamadaba-jamuw"]
+      },
+      {
+        "claim": "The epic announces the story of the \"son of the Buffalo\" and the \"son of the Lion\"; an editor's note specifies that the lion is the totemic ancestor of the Keïta, so that Soundiata is the son of the Lion through his father and the son of the Buffalo through his mother. The dictionary of clan names also lists jàra, the Bambara word for the lion, among the clan's prohibitions.",
+        "claimStatus": "claimed",
+        "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane, qui l'a traduit en français",
+        "context": "Epic published in 1960 and its notes",
+        "sourceRefs": ["niane-1960", "bamadaba-jamuw", "bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "The griot relates that at the very beginning the Manding was a province of the Bambara kings, and that those now called Maninka are not autochthonous: they come from the East. Bilali Bounama, ancestor of the Keïta, is said to have been the faithful servant of the Prophet, and his eldest son Lawalo is said to have left the Holy City to settle in the Manding. There follow Latal Kalabi, Damal Kalabi, then Lahilatoul Kalabi, the first Black prince to make the pilgrimage to Mecca, and his grandson Mamadi Kani, the hunter king.",
+        "claimStatus": "claimed",
+        "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane, qui l'a traduit en français",
+        "context": "Epic published in 1960",
         "sourceRefs": ["niane-1960"]
+      },
+      {
+        "claim": "The Keïta trace their origin to Bilal ibn Rabah, the first muezzin of the Muslim community. The griot schools of the Manding count sixteen kings before Soundiata, with lists that differ from one school to another; those of Siguiri give Lahilatul Kalabi as the first pilgrim king. The historian who gathers these traditions notes that the adoption of Muslim ancestors from the East was common in the royal courts of the region, and that the ancestor claimed here is a Black man from Abyssinia, not a white ancestor; he himself places Mamadi Kani around the early twelfth century and Maghan Kön Fatta, father of Soundiata, in the early thirteenth century.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane, d'après les écoles de tradition orale du Manding",
+        "context": "Historical synthesis published by UNESCO in 1985",
+        "sourceRefs": ["hga-iv-niane"]
+      },
+      {
+        "claim": "One tradition brings the founders of Mali from the east, from Kong, led by Kabala Simbo Keïta, ancestor of Soundiata; they are said to have settled in the country of Do. In this version, Kita is not the cradle of the Keïta: Soundiata is said to have subdued it by defeating the Kamara, before making it his second capital after Kangaba. The thesis that reports it notes that the version of an origin at Kong may have arisen at Kong, as that of an origin at Kangaba at Kangaba, well after the events, and that the main shrines of the Keïta today lie well south of Kita.",
+        "claimStatus": "contested",
+        "collection": "mediated",
+        "collector": "Charles Monteil, auteur de l'époque coloniale, d'après des informateurs qu'il ne nomme pas",
+        "context": "Text dated 1924, cited at second hand in a university thesis of 2017",
+        "sourceRefs": ["bogacheva-2017-jamu"]
       }
     ],
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "The jamu is a patrilineal clan name: it designates membership in a descent group, not individual filiation to the father.",
+        "claim": "No dictionary consulted gives an established meaning for the word: the dictionary of Mandinka clan names writes it Kéyità, with the forms Kétà and Kɛ́yità, and defines it only as a clan name.",
         "claimStatus": "established",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
-      },
-      {
-        "claim": "The cradle of the Keita clan lies in the land of the Manden hills, around the villages of Dakadiala, Naréna and Kiri.",
-        "claimStatus": "established",
-        "sourceRefs": ["niane-1985-fr-mali-chapitre"]
-      },
-      {
-        "claim": "A genealogy of the kings of Manden prior to Soundiata traces the Keita clan back to Lawalo, son of the muezzin Bilal ben Rabah, then Latal Kalabi, Damal Kalabi and Lahilatul Kalabi, the first king of Manden to make the pilgrimage to Mecca. His great-grandson Mamadi Kani, a \"master hunter\" whose reign is placed around the beginning of the twelfth century, extends the kingdom; his great-great-grandson Maghan Kön Fatta, also called Frako Maghan Keñi or Naré Fa Maghan, father of Soundiata, reigns at the beginning of the thirteenth century. Tradition counts sixteen kings before Soundiata, with variants in the list from one school of griots to another.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["niane-1985-fr-mali-chapitre"]
-      },
-      {
-        "claim": "A note in the Kéyità entry of the dictionary of jamuw points to a common origin with the jamu Kulibali (Coulibaly). This indication is carried by that entry alone.",
-        "claimStatus": "claimed",
         "sourceRefs": ["bamadaba-jamuw"]
       },
       {
-        "claim": "The dictionary of jamuw links the Kéyità entry to the regions of Kita, Manding and Farana, without saying whether these are places of origin or of settlement.",
+        "claim": "One explanation links the name to that of the town of Kita. It is put forward without convincing evidence, and a tradition reported above makes Kita instead a conquest of Soundiata, not the cradle of the Keïta.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "One explanation, reported in 1912 by a colonial administrator on the basis of local traditions he does not name, links the name to the nickname of a king of Mali, Allakoï: he answered \"Alla koï\", \"God, indeed\", to any question about the cause of an event, and some add that his descendants were called \"those of Allakoï\", a name later shortened to Koïta or Keïta. No other source consulted repeats it, and it does not agree with the narrative that derives Keyita from ke, \"the inheritance\", and ta, \"to take\".",
+        "claimStatus": "contested",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "The cradle of the clan is said to be the country of the Manden mountains, around the towns of Dakadiala, Naréna and Kiri, where the Keita were anciently settled. This is a historian's synthesis; the tradition reported above has them come from farther away.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-iv-niane"]
+      },
+      {
+        "claim": "The dictionary of jamuw links the entry Kéyità to the regions of Kita, the Manding and Farana, without saying whether these are places of origin or of settlement.",
         "claimStatus": "claimed",
         "sourceRefs": ["bamadaba-jamuw"]
       }
@@ -171,7 +206,7 @@
       "targetPatronymeId": "PAT_COULIBALY",
       "allianceType": "sanankuya",
       "sourceRefs": [
-        "gha-v-16-18",
+        "hga-v-izard-kizerbo",
         "bamadaba-jamuw",
         "canut-2002-senankuya",
         "canut-smith-2006-pactes",
@@ -218,7 +253,7 @@
     {
       "status": "deceased",
       "displayName": "Naré Fa Maghan",
-      "sourceRefs": ["niane-1985-fr-mali-chapitre"]
+      "sourceRefs": ["hga-iv-niane"]
     }
   ],
   "homonyms": [],
@@ -229,7 +264,7 @@
       "url": null,
       "tier": "unverified",
       "source_kind": "repository",
-      "notes": "Taken from the \"Clan organisation\" chapter of the Malinké people's fiche."
+      "notes": "Taken from the \"Clan organisation\" chapter of the fiche of the Malinké people."
     },
     {
       "sourceKey": "niane-1960",
@@ -237,23 +272,7 @@
       "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Niane, Djibril Tamsir, Présence Africaine, 1960. Transcription of the account of the griot Djeli Mamadou Kouyaté of Djeliba Koro (Siguiri). Reference source for the epic of Soundiata and the lineages it founds; it is a written record of an oral tradition, not an archival document."
-    },
-    {
-      "sourceKey": "jansen-sunjata-paradigm",
-      "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
-      "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
-      "tier": "referenced",
-      "source_kind": "academic",
-      "notes": "Jansen, Jan, Universiteit Leiden. Critical work on the transmission of the epic and on the jamu as a social institution rather than as historical memory; used here for the nature of the jamu, not to date an ancestor."
-    },
-    {
-      "sourceKey": "gha-v-16-18",
-      "title": "General History of Africa, V: Africa from the Sixteenth to the Eighteenth Century",
-      "url": "https://archive.org/details/unesco_general_history_africa_v",
-      "tier": "official",
-      "source_kind": "intergovernmental",
-      "notes": "UNESCO, Histoire générale de l'Afrique, vol. V, dir. B. A. Ogot, 1992; consulted on the full text. Chapter 12, \"From the Niger to the Volta\" (M. Izard and J. Ki-Zerbo): the sanankunya between the Kulibali (Kurubari) and the Keita or the Ture, given as evidence of ancient relations between Bambara and Malinké (p. 330); the etymology kulu \"canoe\" + privative bali, drawn from crossing the river without a canoe, accompanied by the source's own mention that other etymologies exist (p. 330 n. 7); the genealogy of Mamari Kulibali known as Biton (1712-1755), great-grandson of Baramangolo through Kaladian, Danfassari and Soma (p. 330-333). Chapter 13, \"The states and cultures of the Upper Guinean coast\" (C. Wondji): the migration of the Kongo-Vai from the upper Niger under the leadership of the Camara clan, towards Bopolou then the Mano and Moa rivers, and the correlated displacement of the Kono and the Vai towards the coasts of Liberia and Sierra Leone (p. 375-377)."
+      "notes": "Niane, Djibril Tamsir, Présence Africaine, 1960. Transcription of the narrative of the griot Djeli Mamadou Kouyaté of Djeliba Koro (Siguiri); it is a written record of an oral tradition. Pages read on the digitised archive copy at archive.org (SoundjataOuLepopeeMandingue), close to the printed edition without being identical to it: the story of the son of the Buffalo and the son of the Lion (p. 10); the note making the lion the totemic ancestor of the Kéita (p. 11, note 3); Bilali Bounama, ancestor of the Kéita, Lawalo and the line of the Kalabi (p. 12); Mamadi Kani, the hunter king (p. 13)."
     },
     {
       "sourceKey": "bamadaba-jamuw",
@@ -261,15 +280,7 @@
       "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Onomastic annex of the Bamadaba, an electronic Bambara-French dictionary supplementing the Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA); the annex of clan names is identified as such by Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, pp. 89-110. 375 entries in MDF format, consulted in the complete file. The file provides no legend for its markers, and the reading adopted is the one the file imposes: \\ca carries the Manding status terms themselves (nùmu, jèli, hɔ́rɔn, garanke, finɛ, tontigi, wage, gesere); \\sn is read as senankun because the Kúyate entry annotates its own line \"\\sn Keyita\" with a reservation stating that this relation is a friendly understanding and not a sanankuya. The \\sn links are not systematically reciprocal from one entry to another: each pair is therefore cited from the entry that carries it, named in the claim or the gap. The Kéyità entry also carries indications of region (Kita, Manding, Farana) and a note of common origin with Kulibali, written in Russian in the file and translated here; its \\sn links name Turɛ, Kulibali, Sisɛ, Sidibɛ, Kaba, Wulare, Jane and Màriko."
-    },
-    {
-      "sourceKey": "niane-1985-fr-mali-chapitre",
-      "title": "Le Mali et la deuxième expansion manden",
-      "url": "https://bokundoli.org/wp-content/uploads/2021/12/T4-10.pdf",
-      "tier": "official",
-      "source_kind": "intergovernmental",
-      "notes": "Niane, Djibril Tamsir, Histoire générale de l'Afrique, volume IV, chapter 6, UNESCO/NEA, 1985; reproduction consulted on 23 September 2026, which covers the text only from p. 141. Gives the cradle of the Keita (Dakadiala, Naréna, Kiri, p. 152, note 28) and the genealogy of the kings prior to Soundiata (pp. 152-153), reported from several schools of griots whose lists vary on minor points. The work is a scholarly synthesis of collected oral traditions, not a written chronicle nor a single transcription of a griot's narrative."
+      "notes": "Appendix of clan names of the Bamadaba, the electronic Bambara-French dictionary of the Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), pointed out by Vydrin in Mandenkan 63, 2020, p. 89-110. Complete file consulted. The entry Kéyità gives the forms Kétà and Kɛ́yità, Malinké, Dia and Bobo groups, equivalents (including Souma, Koné and Beawɔgi), the regions of Kita, the Manding and Farana, jàra (the lion) among the prohibitions, as joking partners Turɛ, Kulibali, Sisɛ, Sidibɛ, Kaba, Wulare, Jane and Màriko, and a note, written in Russian and translated here, on a common origin with Kulibali; it carries no status and gives no meaning for the name. Joking relations are not always reciprocal from one entry to another: each pair is cited from the entry that carries it."
     },
     {
       "sourceKey": "canut-2002-senankuya",
@@ -277,7 +288,7 @@
       "url": "https://journals.openedition.org/praxematique/2307",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Canut, Cécile, Cahiers de praxématique, number 38, 2002, pp. 175-197. Fieldwork survey in Mali. She sets out what the pact obliges: the relationship holds in perpetuity for the entire descent of the two lineages, marriage between them is prohibited — variably applied today, she notes — and mutual aid is owed without reservation. Cited for the obligation itself; it does not name the pair in this record, which is carried by the entries cited alongside it."
+      "notes": "Canut, Cécile, Cahiers de praxématique, number 38, 2002, p. 175-197. Field survey in Mali. It states what the pact requires: the relation holds in perpetuity for all the descendants of the two lineages, marriage between them is prohibited — applied in varying ways today, it specifies — and mutual aid is owed without reservation. Cited for the obligation itself; it does not name the pair of this fiche, which the entries cited alongside it carry."
     },
     {
       "sourceKey": "canut-smith-2006-pactes",
@@ -285,7 +296,7 @@
       "url": "https://doi.org/10.4000/etudesafricaines.6198",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Canut, Cécile, and Smith, Étienne, Cahiers d'études africaines, number 184, 2006, p. 687 and following. Cited for the caution it raises: the idea that joking kinship eases conflict is treated here as a hypothesis inherited from Radcliffe-Brown and taken up by conflict-resolution studies, hence as a discourse to be analysed rather than as a measured effect. The start page is verified, the end page is not."
+      "notes": "Canut, Cécile, and Smith, Étienne, Cahiers d'études africaines, number 184, 2006, p. 687 ff. Cited for the caution it carries: the idea that joking kinship soothes conflict is treated there as a hypothesis inherited from Radcliffe-Brown and taken up by conflict-resolution studies, hence as a discourse to be analysed and not as a measured effect. The first page is verified, the last page is not."
     },
     {
       "sourceKey": "unesco-manden-charter-2009",
@@ -293,7 +304,7 @@
       "url": "https://ich.unesco.org/en/RL/manden-charter-proclaimed-in-kurukan-fuga-00290",
       "tier": "official",
       "source_kind": "intergovernmental",
-      "notes": "Inscription of 2009. The entry describes a charter proclaimed in the early thirteenth century by the founder of the Mali empire and an assembly of sages, whose words are transmitted orally from father to son within the Malinké clans. It does not mention the sanankuya."
+      "notes": "Inscription of 2009. The notice describes a charter proclaimed in the early thirteenth century by the founder of the Mali empire and an assembly of sages, whose words are transmitted orally from father to son within the Malinké clans. It does not mention sanankuya."
     },
     {
       "sourceKey": "saibou-2023-kurukan-fuga",
@@ -301,7 +312,7 @@
       "url": "https://www.revues.scienceafrique.org/magana/texte/saibou2023/",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Cites article 7 of the charter: \"the Sanankunya (joking cousinship) and the Tanamanyöya (a form of totemism) are instituted among the Mandenkas\". Places the oral assembly around 1236 and states that the text was restored by griots during a seminar in Kankan, Guinea, in 1998, then translated into French and published in 2008."
+      "notes": "Cites article 7 of the charter: \"there is instituted among the Mandenkas the Sanankunya (joking cousinage) and the Tanamanyöya (a form of totemism)\". Places the oral assembly around 1236 and specifies that the text was restored by griots during a seminar at Kankan, in Guinea, in 1998, then translated into French and published in 2008."
     },
     {
       "sourceKey": "mann-2022-hunters-oath",
@@ -309,48 +320,84 @@
       "url": "https://humanityjournal.org/issue13-2/the-world-wont-listen-the-mande-hunters-oath-and-human-rights-in-translation/",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Notes that the celebration of these charters has aroused scepticism among those who question their origin, and therefore their age, and refers to the work of Jan Jansen, who reads them as interventions in a disputed cultural politics."
+      "notes": "Notes that the celebration of these charters has aroused scepticism among those who question their origin, hence their age, and refers to the work of Jan Jansen, who reads them as interventions in a contested cultural politics."
+    },
+    {
+      "sourceKey": "hga-iv-niane",
+      "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 6, Le Mali et la deuxième expansion manden",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, ed. D. T. Niane, 1985; chapter by D. T. Niane. Printed pages: the Keita tracing their origin to Bilal ibn Rabah, Lawalo founder of Kiri, the cradle of the Keita around Dakadiala, Narena and Kiri (p. 153, note 28), and the adoption of Muslim ancestors from the East, a common practice in the courts of the region, Bilal being a Black man from Abyssinia (p. 153, note 31); the line from Lawalo to Mamadi Kani, placed around the early twelfth century, Maghan Kön Fatta in the early thirteenth, and the sixteen kings before Soundiata whose lists vary from one griot school to another (p. 154); Nare Fa Maghan, father of Soundiata (p. 158). The chapter gives no meaning for the name."
+    },
+    {
+      "sourceKey": "hga-v-izard-kizerbo",
+      "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 12, Du Niger à la Volta",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, ed. B. A. Ogot, 1999; chapter by M. Izard and J. Ki-Zerbo. Printed page: joking kinship between Koulibali (Kurubari) and Keita or Touré, given as an indication of very ancient relations between Bambara and Malinké (p. 372)."
+    },
+    {
+      "sourceKey": "bogacheva-2017-jamu",
+      "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+      "url": "https://hdl.handle.net/11701/10975",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bogacheva, E. A., bachelor's thesis, Saint Petersburg State University, 2017, in Russian; supervised by A. Davydov, reviewed by V. Vydrin. Entry Kéyità, p. 82-84: the lion among the clan's prohibitions (p. 82); the narrative of the three brothers, given with no indication of place or informant among the materials gathered by V. Vydrine and A. Davydov, and the link with the name of Kita, put forward without evidence (p. 83); the explanation through \"Alla koï\", cited from Maurice Delafosse, Haut-Sénégal-Niger, 1912, volume II, p. 175 (p. 83-84); the tradition of an origin at Kong reported by Charles Monteil, with the thesis's caution about local versions (p. 84). A bachelor's thesis is not a peer-reviewed publication: it is cited for the testimonies it transmits."
     }
   ],
   "gaps": [
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Keita is named explicitly among the jamuw horon, that is, the names of noble, non-artisan status. The dictionary of jamuw points the same way through its silence: the Kéyità entry is one of the few in the Mande block to carry no status marker, whereas Traoré, Coulibaly, Camara, Diabaté, Kouyaté, Bamba and Fofana each carry at least one. The absence of a hereditary function is therefore an established result and not an unsuccessful search: kingship is not a caste in the sense of this field."
+      "reason": "We have found no source that attributes a hereditary status or function to the name. The dictionary of Mandinka clan names carries no status for the entry Kéyità, although it gives one for other names; this silence does not establish the absence of a status, it says only that no source consulted indicates one."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "No homonymous lineage of distinct origin has been found. The jamu is carried well beyond the dynastic descent, through affiliation and adoption, but this is an extension of the same name, not a second origin. The dictionary of jamuw likewise groups Kéyità, Kétà and Kɛ́yità under a single entry and lists Souma, Koné and Beawɔgi among its equivalents."
+      "reason": "No namesake lineage of distinct origin has been found. The jamu is borne well beyond the dynastic descent, by affiliation and by adoption, but this is an extension of the same name and not a second origin. The dictionary of jamuw likewise brings Kéyità, Kétà and Kɛ́yità together under a single entry and lists Souma, Koné and Beawɔgi among its equivalents."
     }
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-09-29T16:20:52.917Z",
+    "translatedAt": "2026-10-03T10:00:23.902Z",
     "model": "claude-sonnet-5-5",
-    "sourceHash": "d4f0ac766f869b1a39a16a045a8b90c69c814848ecc53d829e6acf75042f2159",
+    "sourceHash": "88ae968a273dec76d99c3fae57f0a8ebea935d293bf1cb33f6ae94189b024331",
     "fieldHashes": {
-      "origin.oralTraditions[0].claim": "e96b0dc94c6a80c3",
-      "origin.oralTraditions[0].transcription": "d753a01648ff3240",
-      "origin.linguisticReconstructions[0].claim": "14f92c91d5d99f18",
-      "origin.linguisticReconstructions[1].claim": "6840b4f8aae5975f",
-      "origin.linguisticReconstructions[2].claim": "c490a575eaafcde2",
-      "origin.linguisticReconstructions[3].claim": "2da245aa3d6bc69f",
+      "origin.oralTraditions[0].claim": "c7d75e18bf0f5537",
+      "origin.oralTraditions[0].context": "1b334ff8a508cba9",
+      "origin.oralTraditions[1].claim": "c2c85d3b1758e3da",
+      "origin.oralTraditions[1].context": "bec6b3e4213b730a",
+      "origin.oralTraditions[2].claim": "865ac1aa37a458ed",
+      "origin.oralTraditions[2].context": "d83cecc1e1f117ca",
+      "origin.oralTraditions[3].claim": "6478577a0983fe33",
+      "origin.oralTraditions[3].context": "11214264406d2bbc",
+      "origin.oralTraditions[4].claim": "0161b8a6aed29e01",
+      "origin.oralTraditions[4].context": "9812e41ed57debc9",
+      "origin.linguisticReconstructions[0].claim": "3b98d354a981479c",
+      "origin.linguisticReconstructions[1].claim": "2751910e5f594ace",
+      "origin.linguisticReconstructions[2].claim": "ad28b5eb6a464297",
+      "origin.linguisticReconstructions[3].claim": "4d871c2aa93c6dc2",
       "origin.linguisticReconstructions[4].claim": "e4017da6f0f24211",
       "sources[0].notes": "29012643eb034ff2",
-      "sources[1].notes": "fc0dbc4dd8f99c38",
-      "sources[2].notes": "4e75f41a563c53c3",
-      "sources[3].notes": "3a5b80d26c30b0b6",
-      "sources[4].notes": "312686d77b152646",
-      "sources[5].notes": "9cabc8ca7d3b4fb6",
-      "sources[6].notes": "2c14e48c42d56e18",
-      "sources[7].notes": "79986afda62f44db",
-      "sources[8].notes": "53ac45265e444fe6",
-      "sources[9].notes": "a4e54a5f67982b0c",
-      "sources[10].notes": "2c7aa22ef02dfaab",
-      "gaps[0].reason": "13a68bd50c7a00af",
+      "sources[1].notes": "c32472178f19b9ff",
+      "sources[2].notes": "86a43be5a268f660",
+      "sources[3].notes": "2c14e48c42d56e18",
+      "sources[4].notes": "79986afda62f44db",
+      "sources[5].notes": "53ac45265e444fe6",
+      "sources[6].notes": "a4e54a5f67982b0c",
+      "sources[7].notes": "2c7aa22ef02dfaab",
+      "sources[8].notes": "cda6ef071011312d",
+      "sources[9].notes": "c4d975886cc4111b",
+      "sources[10].notes": "b8c77d136408ae6d",
+      "gaps[0].reason": "58fd351f5829b8b7",
       "gaps[1].reason": "d39d08d11a9f5b36"
     },
     "reviewRequired": [
-      "origin.oralTraditions[0].transcription",
+      "origin.oralTraditions[0].context",
+      "origin.oralTraditions[1].context",
+      "origin.oralTraditions[2].context",
+      "origin.oralTraditions[3].context",
+      "origin.oralTraditions[4].context",
       "origin.linguisticReconstructions[0].claim",
       "origin.linguisticReconstructions[1].claim",
       "origin.linguisticReconstructions[2].claim",

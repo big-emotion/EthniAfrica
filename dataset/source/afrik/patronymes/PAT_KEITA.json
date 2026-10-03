@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Dossier court fondé sur le passage du corpus AFRIK référencé ; ne pas étendre les affirmations sans source dédiée."
+    "directives": "Fiche recentrée sur le nom (2026-10-03), passe de correction : chaque piste d'origine est attribuée à qui la porte et citée à la page dans les notes de sa source ; aucune n'est retenue comme la bonne. Ne pas étendre sans source dédiée."
   },
   "id": "PAT_KEITA",
   "nameMain": "Keïta",
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "spelling": "Kéta",
+      "spelling": "Kétà",
       "attestations": [
         {
           "countryId": "MLI",
@@ -86,34 +86,69 @@
   "origin": {
     "oralTraditions": [
       {
-        "claim": "Le clan Keïta est celui de Soundiata et de la dynastie impériale du Mali ; la geste lui donne le lion pour ancêtre-totem, d'où l'épithète « fils du Lion ».",
+        "claim": "Les Konaté, les Coulibaly et les Keïta descendraient des trois enfants de Mahamadu Kanu et de Mariatu, chacun fondateur d'un clan. Le récit circule en deux versions. Dans la première, l'aîné, Coulibaly, cède le pouvoir au cadet, Keïta, en échange de nourriture. Dans la seconde, trois frères vivent au même village ; pendant une famine, le troisième, Lauali Simbo, partage le gibier à parts égales et les villageois le choisissent pour chef. Comme il n'a pas d'enfant, son frère Kanunyoro prend le nom de Konaté, « celui qui a des enfants » ; puis des enfants naissent à Lauali, qui reçoit le nom de Keyita, de ke, « l'héritage », et ta, « prendre ». Le dictionnaire des noms de clan mandingues note de son côté une origine commune avec les Kulibali.",
         "claimStatus": "claimed",
-        "griot": "Djeli Mamadou Kouyaté (Djeliba Koro, Siguiri)",
-        "transcription": "Niane, Djibril Tamsir, Soundjata ou l'épopée mandingue, 1960",
+        "collection": "mediated",
+        "collector": "V. Vydrine et A. Davydov, dont les matériaux sont publiés par E. A. Bogacheva",
+        "context": "Récit rapporté en russe dans un mémoire universitaire de 2017, sans indication de lieu ni d'informateur",
+        "sourceRefs": ["bogacheva-2017-jamu", "bamadaba-jamuw"]
+      },
+      {
+        "claim": "L'épopée annonce l'histoire du « fils du Buffle » et du « fils du Lion » ; une note de l'éditeur précise que le lion est l'ancêtre totémique des Keïta, si bien que Soundiata est fils du Lion par son père et fils du Buffle par sa mère. Le dictionnaire des noms de clan range aussi jàra, mot bambara qui désigne le lion, parmi les interdits du clan.",
+        "claimStatus": "claimed",
+        "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane, qui l'a traduit en français",
+        "context": "Épopée publiée en 1960 et ses notes",
+        "sourceRefs": ["niane-1960", "bamadaba-jamuw", "bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "Le griot raconte qu'au tout début le Manding était une province des rois bambara, et que ceux qu'on appelle aujourd'hui Maninka ne sont pas autochtones : ils viennent de l'Est. Bilali Bounama, ancêtre des Keïta, aurait été le fidèle serviteur du Prophète, et son fils aîné Lawalo aurait quitté la Ville sainte pour s'établir au Manding. Viennent ensuite Latal Kalabi, Damal Kalabi, puis Lahilatoul Kalabi, premier prince noir à faire le pèlerinage à La Mecque, et son petit-fils Mamadi Kani, roi chasseur.",
+        "claimStatus": "claimed",
+        "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane, qui l'a traduit en français",
+        "context": "Épopée publiée en 1960",
         "sourceRefs": ["niane-1960"]
+      },
+      {
+        "claim": "Les Keïta rattachent leur origine à Bilal ben Rabah, premier muezzin de la communauté musulmane. Les écoles de griots du Manding comptent seize rois avant Soundiata, avec des listes qui diffèrent d'une école à l'autre ; celles de Siguiri donnent Lahilatul Kalabi comme premier roi pèlerin. L'historien qui rassemble ces traditions note que l'adoption d'ancêtres musulmans venus d'Orient était courante dans les cours royales de la région, et que l'ancêtre revendiqué ici est un Noir d'Abyssinie, non un ancêtre blanc ; il situe lui-même Mamadi Kani vers le début du XIIe siècle et Maghan Kön Fatta, père de Soundiata, au début du XIIIe siècle.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane, d'après les écoles de tradition orale du Manding",
+        "context": "Synthèse historique publiée par l'UNESCO en 1985",
+        "sourceRefs": ["hga-iv-niane"]
+      },
+      {
+        "claim": "Une tradition fait venir de l'est, de Kong, les fondateurs du Mali, conduits par Kabala Simbo Keïta, ancêtre de Soundiata ; ils se seraient établis dans le pays de Do. Dans cette version, Kita n'est pas le berceau des Keïta : Soundiata l'aurait soumise en battant les Kamara, avant d'en faire sa deuxième capitale après Kangaba. Le mémoire qui la rapporte note que la version d'une origine à Kong a pu naître à Kong, comme celle d'une origine à Kangaba à Kangaba, bien après les faits, et que les principaux sanctuaires des Keïta se trouvent aujourd'hui bien au sud de Kita.",
+        "claimStatus": "contested",
+        "collection": "mediated",
+        "collector": "Charles Monteil, auteur de l'époque coloniale, d'après des informateurs qu'il ne nomme pas",
+        "context": "Texte daté de 1924, cité de seconde main dans un mémoire universitaire de 2017",
+        "sourceRefs": ["bogacheva-2017-jamu"]
       }
     ],
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
+        "claim": "Aucun dictionnaire consulté ne donne de sens établi au mot : le dictionnaire des noms de clan mandingues l'écrit Kéyità, avec les formes Kétà et Kɛ́yità, et le définit seulement comme un nom de clan.",
         "claimStatus": "established",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
-      },
-      {
-        "claim": "Le berceau du clan Keita se situe dans le pays des monts de Manden, autour des villages de Dakadiala, Naréna et Kiri.",
-        "claimStatus": "established",
-        "sourceRefs": ["niane-1985-fr-mali-chapitre"]
-      },
-      {
-        "claim": "Une généalogie des rois du Manden antérieurs à Soundiata fait remonter le clan Keita à Lawalo, fils du muezzin Bilal ben Rabah, puis Latal Kalabi, Damal Kalabi et Lahilatul Kalabi, premier roi du Manden à faire le pèlerinage à La Mecque. Son arrière-petit-fils Mamadi Kani, « maître chasseur » dont le règne est situé vers le début du XIIe siècle, étend le royaume ; son arrière-arrière-petit-fils Maghan Kön Fatta, dit aussi Frako Maghan Keñi ou Naré Fa Maghan, père de Soundiata, règne au début du XIIIe siècle. La tradition compte seize rois avant Soundiata, avec des variantes de liste d'une école de griots à l'autre.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["niane-1985-fr-mali-chapitre"]
-      },
-      {
-        "claim": "Une note de l'entrée Kéyità du dictionnaire des jamuw signale une origine commune avec le jamu Kulibali (Coulibaly). Cette indication n'est portée que par cette entrée.",
-        "claimStatus": "claimed",
         "sourceRefs": ["bamadaba-jamuw"]
+      },
+      {
+        "claim": "Une explication rapproche le nom de celui de la ville de Kita. Elle est avancée sans preuve convaincante, et une tradition rapportée plus haut fait au contraire de Kita une conquête de Soundiata, non le berceau des Keïta.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "Une explication, rapportée en 1912 par un administrateur colonial d'après des traditions locales qu'il ne nomme pas, rattache le nom au surnom d'un roi du Mali, Allakoï : il répondait « Alla koï », « Dieu, certes », à toute question sur la cause d'un événement, et certains ajoutent que ses descendants furent appelés « ceux d'Allakoï », nom abrégé plus tard en Koïta ou Keïta. Aucune autre source consultée ne la reprend, et elle ne s'accorde pas avec le récit qui tire Keyita de ke, « l'héritage », et ta, « prendre ».",
+        "claimStatus": "contested",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "Le berceau du clan serait le pays des monts de Manden, autour des villes de Dakadiala, Naréna et Kiri, où les Keita étaient anciennement établis. C'est une synthèse d'historien ; la tradition rapportée plus haut les fait venir de plus loin.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-iv-niane"]
       },
       {
         "claim": "Le dictionnaire des jamuw rattache l'entrée Kéyità aux régions de Kita, du Manding et de Farana, sans dire si ce sont des lieux d'origine ou d'implantation.",
@@ -186,7 +221,7 @@
       "targetPatronymeId": "PAT_COULIBALY",
       "allianceType": "sanankuya",
       "sourceRefs": [
-        "gha-v-16-18",
+        "hga-v-izard-kizerbo",
         "bamadaba-jamuw",
         "canut-2002-senankuya",
         "canut-smith-2006-pactes",
@@ -233,7 +268,7 @@
     {
       "status": "deceased",
       "displayName": "Naré Fa Maghan",
-      "sourceRefs": ["niane-1985-fr-mali-chapitre"]
+      "sourceRefs": ["hga-iv-niane"]
     }
   ],
   "homonyms": [],
@@ -252,23 +287,7 @@
       "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Niane, Djibril Tamsir, Présence Africaine, 1960. Transcription du récit du griot Djeli Mamadou Kouyaté de Djeliba Koro (Siguiri). Source de référence pour la geste de Soundiata et les lignages qu'elle fonde ; c'est une mise par écrit d'une tradition orale, pas un document d'archive."
-    },
-    {
-      "sourceKey": "jansen-sunjata-paradigm",
-      "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
-      "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
-      "tier": "referenced",
-      "source_kind": "academic",
-      "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
-    },
-    {
-      "sourceKey": "gha-v-16-18",
-      "title": "General History of Africa, V: Africa from the Sixteenth to the Eighteenth Century",
-      "url": "https://archive.org/details/unesco_general_history_africa_v",
-      "tier": "official",
-      "source_kind": "intergovernmental",
-      "notes": "UNESCO, Histoire générale de l'Afrique, vol. V, dir. B. A. Ogot, 1992 ; consulté sur le texte intégral. Chapitre 12, « From the Niger to the Volta » (M. Izard et J. Ki-Zerbo) : le sanankunya entre les Kulibali (Kurubari) et les Keita ou les Ture, donné comme indice de relations anciennes entre Bambara et Malinké (p. 330) ; l'étymologie kulu « pirogue » + bali privatif, tirée de la traversée du fleuve sans pirogue, assortie par la source elle-même de la mention qu'il en existe d'autres (p. 330 n. 7) ; la généalogie de Mamari Kulibali dit Biton (1712-1755), arrière-petit-fils de Baramangolo par Kaladian, Danfassari et Soma (p. 330-333). Chapitre 13, « The states and cultures of the Upper Guinean coast » (C. Wondji) : la migration des Kongo-Vai depuis le haut Niger sous la conduite du clan Camara, vers Bopolou puis les rivières Mano et Moa, et le déplacement corrélé des Kono et des Vai vers les côtes du Liberia et de la Sierra Leone (p. 375-377)."
+      "notes": "Niane, Djibril Tamsir, Présence Africaine, 1960. Transcription du récit du griot Djeli Mamadou Kouyaté de Djeliba Koro (Siguiri) ; c'est une mise par écrit d'une tradition orale. Pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proches de l'édition imprimée sans s'y confondre : l'histoire du fils du Buffle et du fils du Lion (p. 10) ; la note faisant du lion l'ancêtre totémique des Kéita (p. 11, note 3) ; Bilali Bounama, ancêtre des Kéita, Lawalo et la lignée des Kalabi (p. 12) ; Mamadi Kani, roi chasseur (p. 13)."
     },
     {
       "sourceKey": "bamadaba-jamuw",
@@ -276,15 +295,7 @@
       "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs, et la lecture retenue est celle que le fichier impose : \\ca porte les termes de statut mandingues eux-mêmes (nùmu, jèli, hɔ́rɔn, garanke, finɛ, tontigi, wage, gesere) ; \\sn se lit senankun parce que l'entrée Kúyate annote sa propre ligne « \\sn Keyita » d'une réserve disant que cette relation-là est une entente amicale et non un senankuya. Les liens \\sn ne sont pas systématiquement réciproques d'une entrée à l'autre : chaque paire est donc citée d'après l'entrée qui la porte, nommée dans le claim ou le gap. L'entrée Kéyità porte en outre des indications de région (Kita, Manding, Farana) et une note d'origine commune avec Kulibali, rédigées en russe dans le fichier et traduites ici ; ses liens \\sn nomment Turɛ, Kulibali, Sisɛ, Sidibɛ, Kaba, Wulare, Jane et Màriko."
-    },
-    {
-      "sourceKey": "niane-1985-fr-mali-chapitre",
-      "title": "Le Mali et la deuxième expansion manden",
-      "url": "https://bokundoli.org/wp-content/uploads/2021/12/T4-10.pdf",
-      "tier": "official",
-      "source_kind": "intergovernmental",
-      "notes": "Niane, Djibril Tamsir, Histoire générale de l'Afrique, tome IV, chapitre 6, UNESCO/NEA, 1985 ; reproduction consultée le 23 septembre 2026, qui ne couvre le texte qu'à partir de la p. 141. Donne le berceau des Keita (Dakadiala, Naréna, Kiri, p. 152, note 28) et la généalogie des rois antérieurs à Soundiata (p. 152-153), rapportée d'après plusieurs écoles de griots dont les listes varient sur des points secondaires. L'ouvrage est une synthèse savante des traditions orales collectées, non une chronique écrite ni une transcription unique d'un récit de griot."
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), signalée par Vydrin dans Mandenkan 63, 2020, p. 89-110. Fichier complet consulté. L'entrée Kéyità donne les formes Kétà et Kɛ́yità, des groupes malinké, dia et bobo, des équivalents (dont Souma, Koné et Beawɔgi), les régions de Kita, du Manding et de Farana, jàra (le lion) parmi les interdits, comme partenaires de plaisanterie Turɛ, Kulibali, Sisɛ, Sidibɛ, Kaba, Wulare, Jane et Màriko, et une note, rédigée en russe et traduite ici, sur une origine commune avec Kulibali ; elle ne porte aucun statut et ne donne aucun sens au nom. Les liens de plaisanterie ne sont pas toujours réciproques d'une entrée à l'autre : chaque paire est citée d'après l'entrée qui la porte."
     },
     {
       "sourceKey": "canut-2002-senankuya",
@@ -325,12 +336,36 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Note que la célébration de ces chartes a suscité du scepticisme chez ceux qui s'interrogent sur leur origine, donc sur leur âge, et renvoie aux travaux de Jan Jansen qui les lit comme des interventions dans une politique culturelle disputée."
+    },
+    {
+      "sourceKey": "hga-iv-niane",
+      "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 6, Le Mali et la deuxième expansion manden",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. D. T. Niane, 1985 ; chapitre de D. T. Niane. Pages imprimées : les Keita rattachant leur origine à Bilal ben Rabah, Lawalo fondateur de Kiri, le berceau des Keita autour de Dakadiala, Narena et Kiri (p. 153, note 28), et l'adoption d'ancêtres musulmans d'Orient, pratique courante dans les cours de la région, Bilal étant un Noir d'Abyssinie (p. 153, note 31) ; la lignée de Lawalo à Mamadi Kani, situé vers le début du XIIe siècle, Maghan Kön Fatta au début du XIIIe, et les seize rois d'avant Soundiata dont les listes varient d'une école de griots à l'autre (p. 154) ; Nare Fa Maghan, père de Soundiata (p. 158). Le chapitre ne donne aucun sens au nom."
+    },
+    {
+      "sourceKey": "hga-v-izard-kizerbo",
+      "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 12, Du Niger à la Volta",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de M. Izard et J. Ki-Zerbo. Page imprimée : la parenté à plaisanterie entre Koulibali (Kurubari) et Keita ou Touré, donnée comme indice de relations fort anciennes entre Bambara et Malinké (p. 372)."
+    },
+    {
+      "sourceKey": "bogacheva-2017-jamu",
+      "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+      "url": "https://hdl.handle.net/11701/10975",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bogacheva, E. A., mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Notice Kéyità, p. 82-84 : le lion parmi les interdits du clan (p. 82) ; le récit des trois frères, donné sans indication de lieu ni d'informateur parmi les matériaux réunis par V. Vydrine et A. Davydov, et le rapprochement avec le nom de Kita, avancé sans preuve (p. 83) ; l'explication par « Alla koï », citée de Maurice Delafosse, Haut-Sénégal-Niger, 1912, tome II, p. 175 (p. 83-84) ; la tradition d'une origine à Kong rapportée par Charles Monteil, avec la mise en garde du mémoire sur les versions locales (p. 84). Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet."
     }
   ],
   "gaps": [
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Keita compte nommément parmi les jamuw horon, c'est-à-dire les noms de statut noble et non artisan. Le dictionnaire des jamuw va dans le même sens par son silence : l'entrée Kéyità est l'une des rares du bloc mandé à ne porter aucun marqueur de statut, là où Traoré, Coulibaly, Camara, Diabaté, Kouyaté, Bamba et Fofana en portent tous au moins un. L'absence de fonction héréditaire est donc un résultat établi et non une recherche infructueuse : la royauté n'est pas une caste au sens de ce champ."
+      "reason": "Nous n'avons trouvé aucune source qui attribue au nom un statut ou une fonction héréditaire. Le dictionnaire des noms de clan mandingues ne porte aucun statut pour l'entrée Kéyità, alors qu'il en donne pour d'autres noms ; ce silence n'établit pas l'absence de statut, il dit seulement qu'aucune source consultée n'en indique."
     },
     {
       "fieldPath": "homonyms",
