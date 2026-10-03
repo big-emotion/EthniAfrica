@@ -1,0 +1,241 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "patronyme",
+    "directives": "Fiche recentrée sur le nom (2026-10-03). Chaque piste d'origine est attribuée à qui la porte et citée à la page dans les notes de sa source ; aucune n'est retenue comme la bonne. Sakiliba et Danba sont des noms de femmes, non des graphies de Sissoko : ne pas les verser dans les graphies. Ne pas étendre sans source dédiée."
+  },
+  "id": "PAT_SISSOKO",
+  "nameMain": "Sissoko",
+  "nameSystem": "clan_name",
+  "spellings": [
+    {
+      "spelling": "Sissoko",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["afrik-candidate-queue", "bamadaba-jamuw"]
+        }
+      ]
+    },
+    {
+      "spelling": "Cissoko",
+      "attestations": [
+        { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] }
+      ]
+    },
+    {
+      "spelling": "Sisoko",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
+    }
+  ],
+  "transmissionMode": "patrilineal",
+  "designatedSocialUnit": "clan",
+  "origin": {
+    "oralTraditions": [
+      {
+        "claim": "In the account of the division of lands at Kouroukan Fougan, the Sundiata epic says of the “tribe” of Fakoli, the Koroma, that others call it Doumbouya or Sissoko; this “tribe” receives the monopoly of the forge and of ironworking. The name thus appears there as another name for Fakoli's lineage, without the account saying where it comes from.",
+        "claimStatus": "claimed",
+        "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane, qui l'a traduit en français",
+        "context": "Epic published in 1960",
+        "sourceRefs": ["niane-1960"]
+      },
+      {
+        "claim": "A historical synthesis makes the Sissoko, the Doumbia and the Koroma descendants of Fakoli Koroma, whom the oral traditions of the Manden hold to be one of Sundiata's generals. It does not say where it takes this link from, nor how or when the three names would have separated.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane",
+        "context": "Note from a historical synthesis published by UNESCO in 1985; the source of the link is not given",
+        "sourceRefs": ["hga-iv-niane"]
+      },
+      {
+        "claim": "Sissoko and Doumbia are said to come from the same family, the two names replacing each other according to region. The same survey lists Sissoko among the bula, a group of families which it says came for the most part from the Siendougou, in the Sibi region, near Bamako.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Molinie, officier de la marine française, en 1959",
+        "context": "Origins recorded from oral tradition for a dictionary written for the use of Europeans posted in French West Africa, cited at second hand in a 2017 thesis; the informant is not named",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ],
+    "writtenChronicles": [
+      {
+        "claim": "In his work in N'Ko on the names and jamu of the Manden, Souleymane Kanté gives Doumbia as the jamu of the men of the lineage and Danba as the jamu of the women. At the entry Kourouma, he lists among the equivalents a form which the translation transcribes Sìisɔ́ɔ̀, and which the thesis that translates it links to Sissoko.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "No dictionary or linguist's work consulted gives a meaning for the word: the dictionary of Mandinka clan names defines it only as a clan name, and the thesis that brings together the sources on these names reports no explanation of its origin.",
+        "claimStatus": "established",
+        "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "The dictionary of jamuw has an entry Sisɔkɔ, with the variant Sisoko. It gives three clan names there as equivalents: Dantɛ, Dunbiya (Doumbia) and Kuruma (Kouroma), and the entry Bàgayɔgɔ (Bagayoko) in turn gives Sisoko as an equivalent. The dictionary does not say what this equivalence covers, nor which form is the oldest.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
+      },
+      {
+        "claim": "The women of the lineage bear a different clan name from the men. At the entry Sisɔkɔ, the dictionary gives Danba for the women of griot families (jèli) and Sakiliba for those of free families (hɔ́rɔn). It also glosses Sakiliba as the feminine name corresponding to Dunbuya (Doumbia), and gives Sakiliba as an equivalent of Danba. Sakiliba is therefore not another spelling of Sissoko: it is the name borne by Sissoko women of free families. A contributor to a Soninke community forum, for their part, writes the names Sakiliba, Boula, Sora and Damba after Sissoko, marking Damba as feminine.",
+        "claimStatus": "claimed",
+        "sourceRefs": [
+          "bamadaba-jamuw",
+          "bogacheva-2017-jamu",
+          "soninkara-forum-nom-de-famille"
+        ]
+      }
+    ]
+  },
+  "peoples": [
+    {
+      "peopleId": "PPL_MALINKE",
+      "status": "attested",
+      "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
+    },
+    {
+      "peopleId": "PPL_BAMBARA",
+      "status": "attested",
+      "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
+    },
+    {
+      "peopleId": "PPL_SONINKE",
+      "status": "supposed",
+      "sourceRefs": ["soninkara-forum-nom-de-famille"]
+    }
+  ],
+  "countries": [
+    {
+      "countryId": "MLI",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue", "bamadaba-jamuw"]
+    }
+  ],
+  "alliances": [],
+  "casteOrSocialFunction": {
+    "value": "At the entry, the dictionary of jamuw gives three statuses: jèli (griot), nùmu (blacksmith) and tontigi, a term that it glosses at the entry of another name as that of cultivators. Mentions of area follow the last two: among the Maninka after nùmu, among the Bamana after tontigi. The same name therefore covers different social conditions depending on the area and the lineage, and none of these statuses is attributed to all the families that bear it.",
+    "sourceRefs": ["bamadaba-jamuw"]
+  },
+  "bearers": [],
+  "homonyms": [],
+  "sources": [
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Appendix of clan names of the Bamadaba, the electronic Bambara-French dictionary of the Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), pointed out by Vydrin in Mandenkan 63, 2020, pp. 89-110. Complete file consulted. The entry Sisɔkɔ (variant Sisoko) carries three statuses (jèli, nùmu among the Maninka, tontigi among the Bamana), three equivalences (Dantɛ, Dunbiya, Kuruma), two feminine forms (Danba among griots, Sakiliba among free families), a prohibition, nkaana, which the file does not translate, and three markers of a people, which Bogacheva's thesis reads as Maninka, Bambara and Kagoro. The entry Sakiliba glosses it as the feminine name corresponding to Dunbuya; the entry Danba gives Sakiliba as an equivalent; the entry Bàgayɔgɔ gives Sisoko as an equivalent. The entry Sisɔkɔ gives no meaning for the name and no joking partner."
+    },
+    {
+      "sourceKey": "hga-iv-niane",
+      "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 6, Le Mali et la deuxième expansion manden",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, ed. D. T. Niane, 1985; chapter by D. T. Niane. Printed page 157: Fakoli Koroma (or Kuruma) among Sundiata's generals whose names the oral traditions have retained, and note 42, according to which his descendants are the Sisoko, Dumbuya and Koroma clans. The chapter gives no meaning for the name."
+    },
+    {
+      "sourceKey": "bogacheva-2017-jamu",
+      "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+      "url": "https://hdl.handle.net/11701/10975",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bogacheva, E. A., bachelor's thesis, Saint Petersburg State University, 2017, in Russian; supervised by A. Davydov, reviewed by V. Vydrin. Entry Sisɔkɔ, pp. 124-125: Maninka, Bambara and Kagoro peoples, the prohibition nkaana, and, after Souleymane Kanté's work in N'Ko, the jamu Doumbia for men and Danba for women (p. 125). Entry Danba, pp. 29-30: equivalent of Sakiliba (p. 29), and feminine jamu of the Sissoko according to Kanté (p. 30). Entry Dunbiya, p. 38: Sissoko and Doumbia issued from the same family, and Sissoko among the bula who came for the most part from the Siendougou, according to the dictionary of Molinie, an officer of the French navy, 1959, who says he recorded these origins from oral tradition. Entry Kuruma, p. 97: the form Sìisɔ́ɔ̀ among the equivalents, according to Kanté. Entry Sakiliba, p. 114. Kanté's original N'Ko text was not read; only its Russian translation was. A bachelor's thesis is not a peer-reviewed publication: it is cited for the testimonies it relays."
+    },
+    {
+      "sourceKey": "niane-1960",
+      "title": "Soundjata ou l'épopée mandingue",
+      "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Niane, Djibril Tamsir, Présence Africaine, 1960. Transcription of the account of the griot Djeli Mamadou Kouyaté of Djeliba Koro (Siguiri); it is a written record of an oral tradition. Page read in the digitised copy on archive.org (SoundjataOuLepopeeMandingue), close to the printed edition without being identical to it: the “tribe” of Fakoli, the Koroma, whom others call Doumbouya or Sissoko, and its monopoly of the forge (p. 141)."
+    },
+    {
+      "sourceKey": "soninkara-forum-nom-de-famille",
+      "title": "Nom de famille ?",
+      "url": "https://www.soninkara.com/forums/de-l-origine-des-soninke/nom-de-famille-23.html",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Discussion thread on the forum of the community portal Soninkara.com, held from 21 June to 5 July 2006 by contributors under pseudonyms, consulted directly. One of them writes, on 5 July 2006, after Sissoko, the names Sakiliba, Boula, Sora and Damba, marking Damba as feminine, without giving its meaning. The thread does not say where the name comes from; several participants point out that the same name can be found in different groups and statuses depending on region and family history."
+    },
+    {
+      "sourceKey": "afrik-candidate-queue",
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null,
+      "tier": "unverified",
+      "source_kind": "ai_generated",
+      "notes": "This name appears in our coverage survey: it was selected as a name to document, but no dedicated source has yet been consulted. The fiche therefore exists to point out the name, not for what it asserts about it. Forthcoming checks will draw on electoral registers, national statistical institutes and onomastic studies of the country concerned."
+    }
+  ],
+  "gaps": [
+    {
+      "fieldPath": "origin",
+      "reason": "The meaning of the name is not established in the sources consulted. General-audience content puts some forward, but they are incompatible with one another (an animal, a people or a region, a form of knowledge) and none cites a linguistic study: we retain none of them."
+    },
+    {
+      "fieldPath": "origin.oralTraditions",
+      "reason": "The only account found that names its teller does not say where the name comes from; the griot whose interviews a 2017 thesis relays does not speak of it. We have not found a published account of the origin of the name among the griot families who bear the form Cissokho in Senegambia."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "The dictionary of jamuw links the name to the Maninka, the Bamana and the Kagoro, but not to the Soninke, and the Soninke grouping known as Wago does not include this name. The link to the Soninke rests only on a community discussion thread: it is given as presumed. We do not yet have a page devoted to the Kagoro."
+    },
+    {
+      "fieldPath": "countries",
+      "reason": "Only Mali is supported. The name is also found in other countries of the region, notably in the form Cissokho, but we have not found a quantified or documented source specific to this name for those countries."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "The dictionary of jamuw gives no joking partner (senankuya) for this name. A 2017 thesis lists Sissoko among those of the Berete without saying where it takes this link from, and the dictionary does not repeat it: we attest no alliance."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "We name no bearer. Fakoli, to whose lineage the epic and a synthesis attach the name, is called Fakoli Koroma there, not Sissoko; no source consulted links a deceased person to this name in their own words."
+    },
+    {
+      "fieldPath": "homonyms",
+      "reason": "The spellings Sissako, Cissokho and Sissokho exist, but no source consulted says that they designate the same lineage: they are not merged here."
+    }
+  ],
+  "_translation": {
+    "kind": "machine",
+    "translatedAt": "2026-10-03T09:52:16.208Z",
+    "model": "claude-sonnet-5-5",
+    "sourceHash": "94a0d101a0a19136fc55a5c26864698c51720ea1edcf89163d91c3a9687b1e48",
+    "fieldHashes": {
+      "origin.oralTraditions[0].claim": "b8d474f7ee0c396d",
+      "origin.oralTraditions[0].context": "d83cecc1e1f117ca",
+      "origin.oralTraditions[1].claim": "93b032a5fea116e0",
+      "origin.oralTraditions[1].context": "3e0a8195dc51ff1d",
+      "origin.oralTraditions[2].claim": "ee8c6bb4fd78722c",
+      "origin.oralTraditions[2].context": "e82b4499cd912db6",
+      "origin.writtenChronicles[0].claim": "cef8c2d072c8733c",
+      "origin.linguisticReconstructions[0].claim": "5320854d91aff360",
+      "origin.linguisticReconstructions[1].claim": "7c5bcff0ad4bc927",
+      "origin.linguisticReconstructions[2].claim": "839936c4b39bc47a",
+      "casteOrSocialFunction.value": "f546eabd675d5ffc",
+      "sources[0].notes": "c2cd326a3322a806",
+      "sources[1].notes": "8f1de0f8e5454374",
+      "sources[2].notes": "da9e3af9303ae732",
+      "sources[3].notes": "2ebfc862ad04a31a",
+      "sources[4].notes": "368235951eed19ef",
+      "sources[5].notes": "22ca6f28c6df8af9",
+      "gaps[0].reason": "ab34a77645f3d106",
+      "gaps[1].reason": "c13eb9636ebefb27",
+      "gaps[2].reason": "aa9eb6612939b7aa",
+      "gaps[3].reason": "a303de46f16a7d2d",
+      "gaps[4].reason": "b13de918308b2969",
+      "gaps[5].reason": "c33bd990c9f0bb98",
+      "gaps[6].reason": "b85ab883b1744929"
+    },
+    "reviewRequired": [
+      "origin.oralTraditions[0].context",
+      "origin.oralTraditions[1].context",
+      "origin.oralTraditions[2].context",
+      "origin.linguisticReconstructions[0].claim",
+      "origin.linguisticReconstructions[1].claim",
+      "origin.linguisticReconstructions[2].claim"
+    ]
+  }
+}

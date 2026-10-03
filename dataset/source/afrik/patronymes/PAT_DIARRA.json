@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Dossier court fondé sur le passage du corpus AFRIK référencé ; ne pas étendre les affirmations sans source dédiée."
+    "directives": "Fiche recentrée sur le nom (2026-10-03), passe de correction : chaque piste d'origine est attribuée à qui la porte et citée à la page dans les notes de sa source ; aucune n'est retenue comme la bonne. Ne pas étendre sans source dédiée."
   },
   "id": "PAT_DIARRA",
   "nameMain": "Diarra",
@@ -46,21 +46,53 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
+    "oralTraditions": [
+      {
+        "claim": "Dans l'épopée de Soundiata, le nom est celui des rois du pays de Do, d'où vient Sogolon, la mère de Soundiata : Do Mansa Gnèmo Diarra règne quand le buffle ravage le pays, et le roi de Do qui vient combattre aux côtés de son neveu Soundiata est appelé à la fois Faony Kondé et Faony Diarra. Le récit porte ainsi sur un même roi les deux noms, Kondé et Diarra.",
+        "claimStatus": "claimed",
+        "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane, qui l'a traduit en français",
+        "context": "Épopée publiée en 1960",
+        "sourceRefs": ["niane-1960"]
+      },
+      {
+        "claim": "Une louange du pays de Do nomme ensemble Mansa Oumalé Kondé et Marfadou Diara, dans le refrain « Do ni Kri ». L'éditeur de l'épopée, qui la cite, situe le pays de Do dans l'actuelle région de Ségou, en le donnant comme une hypothèse.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane, dans les notes de l'épopée",
+        "context": "Louange citée en maninka avec sa traduction, dans une note de l'édition de 1960",
+        "sourceRefs": ["niane-1960"]
+      },
+      {
+        "claim": "Les Diarra viendraient du pays de Do, fait de douze villages dont l'emplacement exact n'est pas connu. Certains Diarra descendraient des rois de Ségou, et les Kamissoko, leurs partenaires de plaisanterie, seraient leurs frères cadets.",
+        "claimStatus": "claimed",
+        "carrier": "Des griots que Molinie ne nomme pas",
+        "collection": "mediated",
+        "collector": "Molinie, officier de la marine française, en 1959",
+        "context": "Récit tiré d'un dictionnaire rédigé pour les Européens en poste en Afrique-Occidentale française, cité de seconde main dans un mémoire de 2017 qui met en garde contre ses généralisations sans fondement",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ],
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
-        "claimStatus": "established",
+        "claim": "Le nom de clan Jàra, dont Diarra est la transcription française usuelle, est identique au mot bambara jàra, qui désigne le lion (wáraba en est le synonyme) et, dans un second sens que le dictionnaire donne à part, le fétiche. L'épopée appelle Soundiata « Manding-Diara, lion du Manding ». Le dictionnaire des noms de clan range le lion, sous ses deux noms, parmi les interdits du clan. Aucune source consultée ne dit si le clan tient son nom du fauve, du fétiche ou d'autre chose : l'origine du nom n'est pas établie.",
+        "claimStatus": "contested",
+        "sourceRefs": ["bamadaba-lexique", "bamadaba-jamuw", "niane-1960"]
+      },
+      {
+        "claim": "Le lion a longtemps été l'objet de cultes dans la savane ouest-africaine : l'écrivain guinéen Camara Laye raconte son initiation, enfant, dans le nord de la Guinée, par un masque de lion nommé Konden Diarra, signe que ces cultes vivaient encore au moins dans le deuxième quart du XXe siècle. Un historien juge plausible que le nom de Soundiata, où entre le mot jata ou jara, s'en inspire ; il n'en tire aucune explication du nom de clan.",
+        "claimStatus": "claimed",
         "sourceRefs": ["jansen-sunjata-paradigm"]
       },
       {
-        "claim": "Le nom de clan Jàra, dont Diarra est la transcription française usuelle, est identique au mot bambara jàra, qui désigne le lion (wáraba en est le synonyme) et, dans un second sens que le dictionnaire donne à part, le fétiche. Aucune source consultée ne dit si le clan tient son nom du fauve, du fétiche ou d'autre chose : l'origine du nom n'est pas établie.",
-        "claimStatus": "contested",
-        "sourceRefs": ["bamadaba-lexique", "bamadaba-jamuw"]
+        "claim": "Une autre explication fait venir le nom d'un nom de lieu, celui d'une ancienne entité politique, la région de Jara. Une étude de 2017 la juge probable et rattache à cette région deux témoignages anciens : un texte portugais écrit au plus tard vers 1510, qui dit que le roi des Mandingues vit dans une ville entourée d'un mur de terre appelée Jaga, et la chronique de Tombouctou attribuée à Mahmud Kati, qui consacre un chapitre à une région de Jara soumise aux Songhaï. L'explication n'est pas établie.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
       },
       {
-        "claim": "L'entrée Jàra du dictionnaire des jamuw rapporte un interdit propre au clan : un Jàra ne doit pas regarder un nourrisson pendant les huit premiers jours qui suivent sa naissance, faute de quoi l'enfant mourrait. Cette note n'est portée que par cette entrée et n'est recoupée par aucune autre source consultée.",
+        "claim": "Le dictionnaire des noms de clan rapporte un interdit propre au clan : un Jàra ne doit pas regarder un nourrisson pendant les huit premiers jours qui suivent sa naissance, faute de quoi l'enfant mourrait. Aucune source indépendante ne recoupe cette note.",
         "claimStatus": "claimed",
         "sourceRefs": ["bamadaba-jamuw"]
       }
@@ -170,8 +202,21 @@
       ]
     }
   ],
-  "casteOrSocialFunction": null,
-  "bearers": [],
+  "casteOrSocialFunction": {
+    "value": "Une étude de 2017 donne au nom le statut hɔ́rɔn, de condition libre, d'après des matériaux d'enquête sans nom d'informateur ; le dictionnaire des noms de clan ne porte aucun statut pour l'entrée Jàra. Certains Diarra sont dits descendre des rois de Ségou, et une synthèse de l'UNESCO rapporte que les Diarra de la famille du roi Ngolo Diarra ne parvenaient pas à effacer le souvenir du statut servile de leur ancêtre, dont se moquaient les rois du Kaarta.",
+    "sourceRefs": [
+      "bogacheva-2017-jamu",
+      "bamadaba-jamuw",
+      "hga-v-izard-kizerbo"
+    ]
+  },
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Ngolo Diarra, roi de Ségou (1766-1790)",
+      "sourceRefs": ["hga-v-izard-kizerbo"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -188,7 +233,7 @@
       "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
+      "notes": "Jansen, Jan, Universiteit Leiden ; article paru dans The International Journal of African Historical Studies, cité d'après la version d'auteur déposée à Leyde et sa pagination. L'auteur soutient que les héros de l'épopée de Soundiata renvoient à des pratiques rituelles plutôt qu'à des personnes historiques. Jata ou Jara signifie « lion », le lion objet de cultes dans la savane, et le masque de lion Konden Diarra du roman L'Enfant noir de Camara Laye, signe que ces cultes se pratiquaient encore dans le deuxième quart du XXe siècle (p. 14)."
     },
     {
       "sourceKey": "bamadaba-jamuw",
@@ -196,7 +241,7 @@
       "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs, et la lecture retenue est celle que le fichier impose : \\ca porte les termes de statut mandingues eux-mêmes (nùmu, jèli, hɔ́rɔn, garanke, finɛ, tontigi, wage, gesere) ; \\sn se lit senankun parce que l'entrée Kúyate annote sa propre ligne « \\sn Keyita » d'une réserve disant que cette relation-là est une entente amicale et non un senankuya. Les liens \\sn ne sont pas systématiquement réciproques d'une entrée à l'autre : chaque paire est donc citée d'après l'entrée qui la porte, nommée dans le claim ou le gap. L'entrée Jàra porte les marqueurs de groupe b (bambara) et m, lu comme indice malinké par recoupement avec l'entrée Kéyità, qu'une autre de nos fiches documente comme jamu malinké ; ses liens \\sn nomment Tarawele, Denbele, Sanogo, Kone, Kanute, Dunbuya et Bagayogo, et la note sur les nourrissons y est rédigée en russe, traduite ici."
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), signalée par Vydrin dans Mandenkan 63, 2020, p. 89-110. Fichier complet consulté. L'entrée Jàra donne les groupes bambara et malinké, des équivalents chez d'autres peuples (Condé, Ndiaye, Koné), parmi les interdits le lion sous ses deux noms, jàra et wáraba, comme partenaires de plaisanterie Tarawele, Denbele, Sanogo, Kone, Kanute, Dunbuya et Bagayogo, et une note rédigée en russe, traduite ici, sur l'interdit des nourrissons ; elle ne porte aucun statut et ne donne aucun sens au nom. Koné y figure à la fois comme équivalent et comme partenaire de plaisanterie. La paire avec Diabaté est portée par l'entrée Jɛbatɛ. Les liens de plaisanterie ne sont pas toujours réciproques d'une entrée à l'autre : chaque paire est citée d'après l'entrée qui la porte, qui peut être celle de l'autre nom."
     },
     {
       "sourceKey": "canut-2002-senankuya",
@@ -221,17 +266,33 @@
       "tier": "referenced",
       "source_kind": "linguistic_reference",
       "notes": "Version en ligne du dictionnaire électronique bambara-français dont l'annexe des noms claniques est citée à part. L'article jàra y est glosé « lion, Panthera leo », avec wáraba pour synonyme, puis « fétiche » ; un second article Jàra le range parmi les noms de clan. Consulté en ligne le 29 septembre 2026."
+    },
+    {
+      "sourceKey": "niane-1960",
+      "title": "Soundjata ou l'épopée mandingue",
+      "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Niane, Djibril Tamsir, Présence Africaine, 1960. Transcription du récit du griot Djeli Mamadou Kouyaté de Djeliba Koro (Siguiri) ; c'est une mise par écrit d'une tradition orale. Pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proches de l'édition imprimée sans s'y confondre : Soundiata appelé « Manding-Diara, lion du Manding » (p. 12) ; Do Mansa Gnèmo Diarra, roi du pays de Do (p. 21-25) ; la note de l'éditeur sur le pays de Do, qu'il situe dans l'actuelle région de Ségou, et la louange qui nomme Kondé et Diara (p. 31, note 4) ; le roi de Do, oncle de Soundiata, appelé Faony Kondé et Faony Diarra (p. 102)."
+    },
+    {
+      "sourceKey": "bogacheva-2017-jamu",
+      "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+      "url": "https://hdl.handle.net/11701/10975",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bogacheva, E. A., mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Notice Jàra, p. 54-56 : la graphie française Diara (p. 54) et la forme Jata des Mandinka de Gambie et du Sénégal (p. 56) ; le statut hɔ́rɔn, sans indication de provenance, des Diarra descendants des rois de Ségou et les Kamissoko partenaires de plaisanterie et frères cadets des Diarra, d'après Molinie 1959 (p. 55) ; l'explication par un nom de lieu, avec un témoignage portugais cité d'après l'édition de Fernandes et la chronique attribuée à Mahmud Kati, et l'origine dans le pays de Do, d'après Molinie 1959 (p. 56). Le récit de Molinie s'appuie, selon l'autrice, sur la tradition orale recueillie auprès de griots (p. 4). Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par V. Vydrine et A. Davydov, sans lieu ni informateur. Molinie, officier de marine, rédigeait un dictionnaire destiné aux Européens en poste en Afrique-Occidentale française et s'appuyait sur des griots qu'il ne nomme pas ; le mémoire met en garde contre ses généralisations. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet."
+    },
+    {
+      "sourceKey": "hga-v-izard-kizerbo",
+      "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 12, Du Niger à la Volta",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de M. Izard et J. Ki-Zerbo. Pages imprimées : le règne de Ngolo Diarra à Ségou (1766-1790) (p. 376) ; les Diarra de la famille du grand roi Ngolo Diarra, qui ne parvenaient pas à effacer le souvenir du statut servile de leur ancêtre (p. 405)."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "casteOrSocialFunction",
-      "reason": "Le jamu ne figure ni parmi les lignages numu ni parmi les lignages jeli que Charry énumère ; il ne figure pas non plus dans la courte liste de jamuw horon qu'il donne (Keita, Konaté, Koné, Traoré). Le dictionnaire des jamuw, qui donne un statut à sept des dix jamuw mandé du lot, n'en porte aucun sur l'entrée Jàra. Le statut horon que prêtent au nom les répertoires courants reste donc introuvable dans une source dédiée, et n'est pas affirmé ici."
-    },
-    {
-      "fieldPath": "bearers",
-      "reason": "L'Histoire générale de l'Afrique documente amplement Ngolo Diarra (1766-1790) et la dynastie des Ngolosi qui lui succède, mais le présente comme un ton-jon parvenu au pouvoir : elle ne rattache à aucun moment son jamu au clan bamana Jara. Le lien serait une homonymie de patronyme, que ce champ écarte, et non une descendance. Aucun autre porteur n'a été rattaché au clan."
-    },
     {
       "fieldPath": "homonyms",
       "reason": "Diarra et Jara sont deux graphies d'un même jamu. Le dictionnaire des jamuw range Condé, Ndiaye et Koné parmi les équivalences de l'entrée Jàra — des noms de clan d'autres peuples tenus pour le même, non des homonymes. Aucune lignée d'origine distincte n'a été trouvée, mais l'étymologie du nom restant elle-même ouverte, une homonymie ne pourrait pas être écartée sur cette base."

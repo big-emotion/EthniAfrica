@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Dossier court fondé sur le passage du corpus AFRIK référencé ; ne pas étendre les affirmations sans source dédiée."
+    "directives": "Fiche pilote recentrée sur le nom (2026-10-03). Chaque piste d'origine est attribuée à qui la porte et citée à la page dans les notes de sa source ; aucune n'est retenue comme la bonne. Ne pas étendre sans source dédiée."
   },
   "id": "PAT_CAMARA",
   "nameMain": "Camara",
@@ -13,11 +13,11 @@
       "attestations": [
         {
           "countryId": "LBR",
-          "sourceRefs": ["corpus-ppl-vai-organisation"]
+          "sourceRefs": ["hga-v-wondji"]
         },
         {
-          "countryId": "SLE",
-          "sourceRefs": ["corpus-ppl-vai-organisation"]
+          "countryId": "CIV",
+          "sourceRefs": ["hga-v-wondji"]
         }
       ]
     },
@@ -26,7 +26,28 @@
       "attestations": [
         {
           "countryId": "MLI",
-          "sourceRefs": ["gha-iv-mali"]
+          "sourceRefs": ["hga-iv-niane", "jansen-1995-lansine-diabate"]
+        },
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["hga-iv-person", "arcin-1907-guinee"]
+        },
+        {
+          "countryId": "LBR",
+          "sourceRefs": ["hga-iv-person"]
+        },
+        {
+          "countryId": "SLE",
+          "sourceRefs": ["hga-iv-person"]
+        }
+      ]
+    },
+    {
+      "spelling": "Kàmara",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
         }
       ]
     },
@@ -38,67 +59,176 @@
           "sourceRefs": ["bamadaba-jamuw"]
         }
       ]
+    },
+    {
+      "spelling": "Kamana",
+      "attestations": [
+        {
+          "countryId": "LBR",
+          "sourceRefs": ["delafosse-1899-vai"]
+        }
+      ]
     }
   ],
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
-    "writtenChronicles": [],
+    "oralTraditions": [
+      {
+        "claim": "Le nom viendrait d'un ancêtre. Le récit fait remonter la lignée à Kela Mansa Subri, un guerrier originaire de Djida, dont le fils Mansa Djida serait venu en Afrique ; les descendants de Kamanjan Boro, fils de Neni Mansa Kara, sont les premiers à avoir été appelés Kamara, et Kamanjan Boro s'installe ensuite à Tabon.",
+        "claimStatus": "claimed",
+        "carrier": "Babou Condé, griot du village de Fadama, dans la préfecture de Kouroussa en Guinée",
+        "collection": "mediated",
+        "collector": "E. A. Bogacheva, lors d'entretiens menés en 2017",
+        "context": "Récit rapporté en russe dans un mémoire universitaire",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "L'épopée de Soundiata distingue deux branches du nom : Kamandjan, roi des Kamara de Sibi, dits Dalikimbon, et son cousin Tabon Wana, roi des Kamara forgerons de Tabon, dits Sinikimbon. Elle fait sceller par Soundiata une alliance perpétuelle entre les Kamara de Sibi et les Keita du Manding.",
+        "claimStatus": "claimed",
+        "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane, qui l'a traduit en français",
+        "context": "Épopée publiée en 1960",
+        "sourceRefs": ["niane-1960"]
+      },
+      {
+        "claim": "La devise des Kamara récitée dans l'épopée nomme les Kamara de Sibi, de Tabon et de Nyengenba, et raconte que leur grand-père a fendu de son sabre le rocher de Sibi, devenu la porte d'entrée et de sortie de Kamajan. Les éditeurs du récit notent que les Traoré et les Kamara y sont les fondateurs légendaires de Kangaba.",
+        "claimStatus": "claimed",
+        "carrier": "Lansine Diabaté, chef de la parole (kumatigi) de Kela, au Mali",
+        "collection": "mediated",
+        "collector": "Jan Jansen, Esger Duintjer et Boubacar Tamboura",
+        "context": "Récit en maninka publié avec sa traduction française en 1995",
+        "sourceRefs": ["jansen-1995-lansine-diabate"]
+      },
+      {
+        "claim": "Avant l'empire du Mali, le clan des Kamara a pour villes principales Sibi et Tabon et conquiert peu à peu la rive droite du Niger. Le premier Niani, que des Kamara de Sibi auraient fondé, se trouverait dans les montagnes de la rive gauche entre Bamako et Kangaba.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane et Youssouf Tata Cissé, d'après les écoles de tradition orale du Manding",
+        "context": "Synthèse historique publiée par l'UNESCO en 1985",
+        "sourceRefs": ["hga-iv-niane"]
+      },
+      {
+        "claim": "Les Kamara sont présentés comme les premiers occupants de plusieurs terres du Manding : à Kita, ils deviennent les alliés de Soundiata et restent maîtres de la terre, et la tradition locale fait de Kangaba une fondation des Kamara de Sibi et des Traoré.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane",
+        "context": "Épopée publiée en 1960 et ses notes",
+        "sourceRefs": ["niane-1960"]
+      },
+      {
+        "claim": "Des Kamara se disent descendants de Fassuna et de Badjuba Nassari, Fassuna étant présentée comme une concubine du prophète Mahomet. Ce récit rattache le nom à la maison du Prophète ; aucune autre source consultée ne le reprend.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Molinie, officier de la marine française, en 1959",
+        "context": "Récit tiré d'un dictionnaire rédigé pour les Européens en poste en Afrique-Occidentale française, cité de seconde main dans un mémoire de 2017 qui met en garde contre ses généralisations sans fondement ; l'informateur n'est pas nommé",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "Des clans maninka partis du haut Niger auraient gagné la mer : une partie d'entre eux, conduite par Kamala le Jeune, Fangoloma et Kiatamba, aurait atteint la côte vers le lac Pisu, dans l'actuel Liberia. L'installation est datée d'avant les années 1460, peut-être du siècle précédent, et d'autres historiens la placent plusieurs siècles plus tôt.",
+        "claimStatus": "contested",
+        "collection": "mediated",
+        "collector": "Yves Person, qui rapporte la tradition des Vai",
+        "context": "Synthèses historiques publiées par l'UNESCO en 1985 et 1990",
+        "sourceRefs": ["hga-iv-person", "hga-iii-andah"]
+      }
+    ],
+    "writtenChronicles": [
+      {
+        "claim": "Le nom viendrait d'un ordre donné au premier souverain commun des pays du Sankaran : on lui aurait dit « qu'il règne ! », et la formule serait devenue le nom de ses descendants. Le même ouvrage, écrit en n'ko par Souleymane Kanté, compte six branches du nom : Tabon, Sibi, Gbakundo, Kidimaga, Somono et Fina Kamara.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ],
     "linguisticReconstructions": [
       {
-        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
+        "claim": "Aucun dictionnaire ni travail de linguiste consulté ne donne de sens au mot : le dictionnaire des noms de clan mandingues le définit seulement comme un nom de clan. Le griot qui raconte l'épopée publiée en 1960 affirme savoir pourquoi tel s'appelle Kamara, mais ne le dit pas.",
         "claimStatus": "established",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
+        "sourceRefs": ["bamadaba-jamuw", "niane-1960"]
       },
       {
-        "claim": "Les nyamakalaw — groupes endogames d'artisans et de musiciens — sont attestés chez les Malinké au plus tard vers 1300 et se retrouvent chez plus de quinze peuples ouest-africains. Le statut se transmet avec le jamu, ce qui fait du nom de clan le support de la position sociale autant que de la descendance.",
-        "claimStatus": "established",
-        "sourceRefs": ["tamari-1991-caste"]
-      },
-      {
-        "claim": "Dans la tradition qui accompagne la fondation de l'empire du Mali, les Kamara tiennent Sibi et Tabon et se partagent en deux branches, conduites l'une par Tabon-Wana, l'autre par Kamadian Camara de Sibi.",
+        "claim": "Chez les Vai, le nom se prononce Kamana là où les Malinké disent Kamara.",
         "claimStatus": "claimed",
-        "sourceRefs": ["gha-iv-mali"]
+        "sourceRefs": ["delafosse-1899-vai"]
+      },
+      {
+        "claim": "Une hypothèse fait apparaître le nom d'abord chez les ancêtres des Soninké, avant le monde malinké. Elle est avancée comme probable, non comme établie.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "Un administrateur colonial s'est demandé en 1907 si Kamara ne venait pas de Hamara, des « hommes rouges du Nord ». La question repose sur une ressemblance de sons, dans un raisonnement qui cherche aux peuples mandé une origine berbère en comparant leur langue au berbère.",
+        "claimStatus": "contested",
+        "sourceRefs": ["arcin-1907-guinee"]
+      },
+      {
+        "claim": "Un historien cité dans une synthèse de l'UNESCO propose d'étudier à part le rôle des Kamara dans le peuplement de la côte de la Sierra Leone et du Liberia, et, plus largement, de mesurer jusqu'où des groupes non mandingues portent des noms mandingues. C'est une question ouverte.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-iii-andah"]
       }
     ]
   },
   "peoples": [
     {
+      "peopleId": "PPL_MALINKE",
+      "status": "attested",
+      "sourceRefs": ["hga-iv-niane", "bamadaba-jamuw"]
+    },
+    {
       "peopleId": "PPL_VAI",
       "status": "attested",
-      "sourceRefs": ["corpus-ppl-vai-organisation", "gha-v-16-18"]
+      "sourceRefs": [
+        "corpus-ppl-vai-organisation",
+        "hga-v-wondji",
+        "delafosse-1899-vai"
+      ]
+    },
+    {
+      "peopleId": "PPL_KONO",
+      "status": "attested",
+      "sourceRefs": ["hga-iv-person"]
+    },
+    {
+      "peopleId": "PPL_KURANKO",
+      "status": "attested",
+      "sourceRefs": ["bamadaba-jamuw"]
     }
   ],
   "countries": [
     {
-      "countryId": "LBR",
-      "status": "attested",
-      "sourceRefs": ["corpus-ppl-vai-organisation", "gha-v-16-18"]
-    },
-    {
-      "countryId": "SLE",
-      "status": "attested",
-      "sourceRefs": ["corpus-ppl-vai-organisation", "gha-v-16-18"]
-    },
-    {
-      "countryId": "GMB",
-      "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
-    },
-    {
       "countryId": "MLI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue", "gha-iv-mali"]
+      "sourceRefs": ["hga-iv-niane", "jansen-1995-lansine-diabate"]
     },
     {
       "countryId": "GIN",
       "status": "attested",
+      "sourceRefs": ["hga-iv-person", "bogacheva-2017-jamu"]
+    },
+    {
+      "countryId": "LBR",
+      "status": "attested",
+      "sourceRefs": ["hga-v-wondji"]
+    },
+    {
+      "countryId": "SLE",
+      "status": "attested",
+      "sourceRefs": ["hga-v-wondji", "hga-iv-person"]
+    },
+    {
+      "countryId": "CIV",
+      "status": "attested",
+      "sourceRefs": ["hga-v-wondji"]
+    },
+    {
+      "countryId": "GMB",
+      "status": "supposed",
       "sourceRefs": ["afrik-candidate-queue"]
     },
     {
       "countryId": "GNB",
-      "status": "attested",
+      "status": "supposed",
       "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
@@ -120,17 +250,28 @@
         "canut-2002-senankuya",
         "canut-smith-2006-pactes"
       ]
+    },
+    {
+      "targetPatronymeId": "PAT_KANTE",
+      "allianceType": "sanankuya",
+      "sourceRefs": ["bamadaba-jamuw"]
     }
   ],
   "casteOrSocialFunction": {
-    "value": "Lignage de forgerons (numu) : Charry range nommément le jamu parmi les lignages numu, aux côtés de Kanté. Le dictionnaire des jamuw donne toutefois trois statuts pour la même entrée Kàmara — hɔ̀rɔn, finɛ et nùmu au Wassoulou —, si bien que la fonction de forgeron vaut pour une part du jamu et non pour tout ce qui le porte.",
-    "sourceRefs": ["charry-1996-jembe", "tamari-1991-caste", "bamadaba-jamuw"]
+    "value": "Le nom ne désigne pas un seul statut. Le dictionnaire des noms de clan mandingues donne pour Kàmara trois statuts : hɔ̀rɔn (homme libre), finɛ et nùmu (forgeron) au Wassoulou, et Charry range nommément le nom parmi les lignages de forgerons, aux côtés de Kanté. L'épopée de Soundiata sépare de même les Kamara de Sibi, lignée royale, des Kamara forgerons de Tabon. Une étude du jamu des griots relève aussi des Camara qui tiennent la fonction de griot sans en être de souche. Les groupes endogames d'artisans et de musiciens, dont le statut se transmet avec le nom, sont attestés chez les Malinké au plus tard vers 1300.",
+    "sourceRefs": [
+      "bamadaba-jamuw",
+      "charry-1996-jembe",
+      "niane-1960",
+      "konate-2015-jamu-griot",
+      "tamari-1991-caste"
+    ]
   },
   "bearers": [
     {
       "status": "deceased",
-      "displayName": "Kamadian Camara, de Sibi",
-      "sourceRefs": ["gha-iv-mali", "gha-v-16-18"]
+      "displayName": "Kamajan Kamara, de Sibi",
+      "sourceRefs": ["hga-iv-niane", "niane-1960"]
     }
   ],
   "homonyms": [],
@@ -142,14 +283,6 @@
       "tier": "unverified",
       "source_kind": "repository",
       "notes": "Reprise du chapitre « Organisation clanique » de la fiche du peuple Vai."
-    },
-    {
-      "sourceKey": "jansen-sunjata-paradigm",
-      "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
-      "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
-      "tier": "referenced",
-      "source_kind": "academic",
-      "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
     },
     {
       "sourceKey": "charry-1996-jembe",
@@ -173,23 +306,7 @@
       "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs, et la lecture retenue est celle que le fichier impose : \\ca porte les termes de statut mandingues eux-mêmes (nùmu, jèli, hɔ́rɔn, garanke, finɛ, tontigi, wage, gesere) ; \\sn se lit senankun parce que l'entrée Kúyate annote sa propre ligne « \\sn Keyita » d'une réserve disant que cette relation-là est une entente amicale et non un senankuya. Les liens \\sn ne sont pas systématiquement réciproques d'une entrée à l'autre : chaque paire est donc citée d'après l'entrée qui la porte, nommée dans le claim ou le gap."
-    },
-    {
-      "sourceKey": "gha-iv-mali",
-      "title": "General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century",
-      "url": "https://archive.org/details/unesco_general_history_africa_iv",
-      "tier": "official",
-      "source_kind": "intergovernmental",
-      "notes": "UNESCO, Histoire générale de l'Afrique, vol. IV, dir. D. T. Niane, 1984 ; consulté sur le texte intégral de l'exemplaire numérisé, non sur un index. Le chapitre 6, « Mali and the second Mandingo expansion » (D. T. Niane, p. 117-171), donne lignage par lignage l'implantation des clans malinké : les Kamara tenant Sibi et Tabon et les Traoré le Gangaran (p. 127), les deux branches Camara conduites par Tabon-Wana et Kamadian Camara de Sibi (p. 131), Tiramaghan Traoré fondateur du Gabu (p. 127 n. 28, p. 133), la correspondance des noms de clan d'un peuple à l'autre — un Traoré est reçu comme frère par les Diop en pays wolof et peut prendre leur nom (p. 134 n. 43) —, les griots Diabaté de Keyla et la réfection septennale du Kamablon de Kangaba (p. 127 n. 28), et le griot du mansa toujours choisi dans le clan Kouyaté (p. 160). L'ouvrage est une synthèse savante, non une chronique : les claims qu'il porte ici sont donc rangés hors writtenChronicles."
-    },
-    {
-      "sourceKey": "gha-v-16-18",
-      "title": "General History of Africa, V: Africa from the Sixteenth to the Eighteenth Century",
-      "url": "https://archive.org/details/unesco_general_history_africa_v",
-      "tier": "official",
-      "source_kind": "intergovernmental",
-      "notes": "UNESCO, Histoire générale de l'Afrique, vol. V, dir. B. A. Ogot, 1992 ; consulté sur le texte intégral. Chapitre 12, « From the Niger to the Volta » (M. Izard et J. Ki-Zerbo) : le sanankunya entre les Kulibali (Kurubari) et les Keita ou les Ture, donné comme indice de relations anciennes entre Bambara et Malinké (p. 330) ; l'étymologie kulu « pirogue » + bali privatif, tirée de la traversée du fleuve sans pirogue, assortie par la source elle-même de la mention qu'il en existe d'autres (p. 330 n. 7) ; la généalogie de Mamari Kulibali dit Biton (1712-1755), arrière-petit-fils de Baramangolo par Kaladian, Danfassari et Soma (p. 330-333). Chapitre 13, « The states and cultures of the Upper Guinean coast » (C. Wondji) : la migration des Kongo-Vai depuis le haut Niger sous la conduite du clan Camara, vers Bopolou puis les rivières Mano et Moa, et le déplacement corrélé des Kono et des Vai vers les côtes du Liberia et de la Sierra Leone (p. 375-377)."
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), signalée par Vydrin dans Mandenkan 63, 2020, p. 89-110. Fichier complet consulté. L'entrée Kàmara donne la variante Kámala, les statuts hɔ̀rɔn, finɛ et nùmu (ce dernier au Wassoulou), les équivalents Koiwogi chez les Loma, Dansogo, Fofana et Magasa, et comme partenaires de plaisanterie Kuruma, Fofana, Sila et Wulare ; elle ne donne aucun sens au nom. La paire avec Kanté est portée par l'entrée Kántɛ, non par l'entrée Kàmara."
     },
     {
       "sourceKey": "afrik-candidate-queue",
@@ -197,7 +314,7 @@
       "url": null,
       "tier": "unverified",
       "source_kind": "ai_generated",
-      "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+      "notes": "Liste de noms tenue par EthniAfrica. Elle signale le nom dans un pays sans qu'une source dédiée l'y documente : ce pays est donc indiqué comme supposé, non comme attesté."
     },
     {
       "sourceKey": "canut-2002-senankuya",
@@ -214,12 +331,92 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Canut, Cécile, et Smith, Étienne, Cahiers d'études africaines, numéro 184, 2006, p. 687 et suivantes. Citée pour la mise en garde qu'elle porte : l'idée que la parenté à plaisanterie apaiserait les conflits y est traitée comme une hypothèse héritée de Radcliffe-Brown et reprise par les études sur la résolution des conflits, donc comme un discours à analyser et non comme un effet mesuré. La page de début est vérifiée, la page de fin ne l'est pas."
+    },
+    {
+      "sourceKey": "hga-iv-niane",
+      "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 6, Le Mali et la deuxième expansion manden",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. D. T. Niane, 1985 ; chapitre de D. T. Niane. Pages imprimées : les Kamara tenant Sibi et Tabon et conquérant la rive droite du Niger (p. 153), appelés avec les Keita, Konaté et Traoré par Mamadi Kani (p. 154), Tabon Wana et son cousin Kamajan Kamara de Sibi (p. 155), Niani en pays kamara et le premier Niani fondé par les Kamara de Sibi, d'après une communication de Y. Cissé au colloque de la Fondation SCOA de 1975 (p. 160, note 47). Le chapitre ne donne aucun sens au nom et ne cite pas les Kamara parmi les clans de l'assemblée de Kurukanfuga."
+    },
+    {
+      "sourceKey": "hga-iv-person",
+      "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 12, Les peuples côtiers, premiers contacts avec les Portugais, de la Casamance aux lagunes ivoiriennes",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, 1985 ; chapitre d'Yves Person. Pages imprimées : les Kamara du Konyan à l'origine de l'invasion qui atteint la côte du Liberia et de la Sierra Leone en 1540-1550, avancé comme presque certain (p. 341) ; le Konyan sous l'hégémonie des clans kamara et dyomande, dont l'ancêtre légendaire est Feren-Kaman (p. 345) ; des clans maninka dirigés par les Kamara gagnant la mer depuis le haut Niger, et apparentés, « comme le confirme la tradition », aux clans du Konyan, établis avant les années 1460 et peut-être dès le siècle précédent ; les Vai conduits, « selon la tradition », par Kamala le Jeune, Fangoloma et Kiatamba (p. 346)."
+    },
+    {
+      "sourceKey": "hga-v-wondji",
+      "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 13, Les États et les cultures de la côte de haute Guinée",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de C. Wondji. Pages imprimées : les Kono-Vai venus du haut Niger au tournant des XVe et XVIe siècles sous la direction du clan des Camara, par Bopolou puis les rivières Mano et Moa, entre 1500 et 1550 d'après Holsoe et ses coauteurs (p. 419) ; les Malinké du clan Camara établis au XVIe siècle au Liberia et dans l'ouest de la Côte d'Ivoire, et les Diomandé dits frères des Camara (p. 421). Le même chapitre place au XVIIe siècle un mouvement des Malinké du Konyan sans nommer les Camara (p. 423)."
+    },
+    {
+      "sourceKey": "hga-iii-andah",
+      "title": "Histoire générale de l'Afrique, III : L'Afrique du VIIe au XIe siècle — chapitre 18, Les peuples de la Guinée supérieure",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. M. El Fasi et I. Hrbek, 1990 ; chapitre de B. W. Andah. Pages imprimées : une arrivée des Vai en Sierra Leone possible plusieurs siècles avant la date avancée par Person, et le modèle d'une incursion rapide conduite par un seul chef jugé peu convaincant (p. 590) ; d'après A. Jones, le rôle des Kamara mérite des recherches à part, et il faudrait mesurer l'usage de noms mandingues par des groupes non mandingues (p. 591)."
+    },
+    {
+      "sourceKey": "niane-1960",
+      "title": "Soundjata ou l'épopée mandingue",
+      "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Niane, Djibril Tamsir, Présence Africaine, 1960. Transcription du récit du griot Djeli Mamadou Kouyaté de Djeliba Koro (Siguiri) ; c'est une mise par écrit d'une tradition orale. Pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proches de l'édition imprimée sans s'y confondre : le griot dit savoir pourquoi tel s'appelle Kamara sans le dire (p. 9) ; Tabon habitée par les Kamara forgerons (p. 62) ; Kamandjan roi des Kamara dit Dalikimbon et Tabon Wana roi des forgerons Kamara dit Sinikimbon (p. 101) ; les Kamara de Kita alliés de Soundiata (p. 129) ; l'alliance des Kamara de Sibi et des Keita du Manding (p. 140) ; les Kamara restés maîtres de la terre (p. 142) ; Kangaba fondation des Kamara de Sibi et des Traoré selon la tradition locale (p. 143, note)."
+    },
+    {
+      "sourceKey": "jansen-1995-lansine-diabate",
+      "title": "L'Épopée de Sunjara, d'après Lansine Diabate de Kela (Mali)",
+      "url": "https://hdl.handle.net/1887/2761",
+      "tier": "referenced",
+      "source_kind": "oral_tradition",
+      "notes": "Jansen, Jan, Duintjer, Esger, et Tamboura, Boubacar, CNWS, Leyde, 1995 ; récit du chef de la parole Lansine Diabaté de Kela, en maninka avec traduction. La devise des Kamara de Sibi, Tabon et Nyengenba (p. 118, vers 344) ; le rocher de Sibi fendu, porte de Kamajan (p. 183, vers 606-607) ; note des éditeurs sur les Traoré et les Kamara fondateurs légendaires de Kangaba (p. 208, note 199)."
+    },
+    {
+      "sourceKey": "bogacheva-2017-jamu",
+      "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+      "url": "https://hdl.handle.net/11701/10975",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bogacheva, E. A., mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Notice Kàmara, p. 73-76 : l'hypothèse d'une première apparition du nom chez les ancêtres des Soninké, d'après N'Diaye 1970 (p. 74) ; le récit de descendance rapporté par Molinie en 1959 (p. 74) ; l'origine racontée dans l'ouvrage en n'ko de Souleymane Kanté sur les noms et les jamu du Manden, et les six branches du nom (p. 75) ; le récit du griot Babou Condé de Fadama, recueilli en 2017 (p. 76). Le texte original en n'ko de Kanté n'a pas été lu ; seule sa traduction russe l'a été. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet."
+    },
+    {
+      "sourceKey": "delafosse-1899-vai",
+      "title": "Les Vai : leur langue et leur système d'écriture",
+      "url": "https://archive.org/details/rosettaproject_vai_multiple-1",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Delafosse, Maurice, L'Anthropologie, tome X, 1899, p. 134 (page 6 du tiré à part) : « les Kamana (au lieu de Kamara chez les Malinke) ». Auteur de l'époque coloniale, cité ici pour une forme relevée, non pour ses classements."
+    },
+    {
+      "sourceKey": "arcin-1907-guinee",
+      "title": "La Guinée française",
+      "url": "https://archive.org/details/laguinefrana00arci",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Arcin, André, Challamel, 1907, annexe II, p. 635-636. Administrateur colonial. La question sur les « hommes rouges du Nord » (p. 635) précède une comparaison du mandé avec le berbère (p. 636) ; elle est citée comme un exemple d'explication venue de l'extérieur, non comme une étymologie."
+    },
+    {
+      "sourceKey": "konate-2015-jamu-griot",
+      "title": "Les valeurs identitaires du jamu de griot dans Kuyaté la force du serment",
+      "url": "https://rea.ucad.sn",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Konaté, Diola, Revue d'études africaines, Université Cheikh Anta Diop, numéro 2, 2015 : Kamara parmi les jamu de nobles ou horon (p. 53) ; des Camara qui font fonction de griot sans en être de souche (p. 61). Étude d'une œuvre littéraire de Drissa Diakité."
     }
   ],
   "gaps": [
     {
       "fieldPath": "homonyms",
-      "reason": "La graphie Camara est la transcription francophone de Kamara ; le dictionnaire des jamuw y ajoute Kámala, et range Koiwogi — chez les Loma — ainsi que Dansogo, Fofana et Magasa parmi ses équivalences, des noms de clan d'autres peuples tenus pour le même. Ce sont des orthographes et des correspondances, non deux lignées : elles ne sont donc pas traitées en homonymes."
+      "reason": "Camara est la transcription en français de Kamara ; le dictionnaire des noms de clan mandingues y ajoute Kámala et donne comme équivalents, tenus pour le même clan sous d'autres noms, Koiwogi chez les Loma, ainsi que Dansogo, Fofana et Magasa. Ce sont des graphies et des correspondances, pas des lignées distinctes. Nous n'avons trouvé aucune source qui distingue du nom mandingue le nom portugais ou espagnol Câmara, porté ailleurs pour d'autres raisons."
     }
   ]
 }
