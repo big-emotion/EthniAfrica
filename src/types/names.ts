@@ -4,8 +4,6 @@
  * Mirrors public/modele-nom.json exactly.
  */
 
-import type { ReactNode } from "react";
-
 import type { PeopleId } from "@/types/afrik";
 import type { SourceTier } from "@/types/sources";
 
@@ -72,16 +70,8 @@ export interface NameRecordDossier {
 }
 
 /**
- * View-model for `NameOriginCard` (Epic 8, Story 8.8) — the rendering-facing
- * shape of a single name record. Deliberately excludes `sortRank` and
- * `sources`: ordering and source evidence are the caller's / `ConfidenceChip`
- * slot's concern, not the card's.
+ * The rendering-facing shape of a single name record. Deliberately excludes
+ * `sortRank` and `sources`: ordering and source evidence are the caller's
+ * concern.
  */
 export type NameRecordView = Omit<NameRecordEntry, "sortRank" | "sources">;
-
-/** One entry of `NameSpellingHistory` — a historical spelling paired with its own source-attached chip. */
-export interface NameSpellingHistoryEntry {
-  nameText: string;
-  periodLabel: string | null;
-  confidenceChip: ReactNode;
-}
