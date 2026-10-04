@@ -19,6 +19,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Editorial contract — subject, angle, edition, occurrence, family, review](design/gabarits-social/EDITORIAL-CONTRACT.md)
 - [Gabarits sociaux EthniAfrica — spécification de reproduction](design/gabarits-social/GABARITS-SOCIAL.md)
 - [Integration acceptance of the social workshop (S7)](design/gabarits-social/INTEGRATION-ACCEPTANCE.md)
+- [Le Swipe — commentary-free montage of found clips](design/gabarits-social/LE-SWIPE.md)
 - [Lectures d'Afrique — reading-list carousel](design/gabarits-social/LECTURES-AFRIQUE.md)
 - [Mémoires sonores — editorial carousel reference](design/gabarits-social/MEMOIRES-SONORES.md)
 - [Propositions de lecture : Lingala](design/gabarits-social/NARRATIVE-DESIGN-CAROUSEL-LINGALA-DEMO.md)
