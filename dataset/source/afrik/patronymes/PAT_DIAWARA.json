@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Dossier fondé sur des sources externes, dont plusieurs communautaires ; ne pas étendre les affirmations sans source dédiée."
+    "directives": "Fiche recentrée sur le nom (2026-10-03), sur le modèle de la fiche pilote Camara. Chaque piste d'origine est attribuée à qui la porte et citée à la page dans les notes de sa source ; aucune n'est retenue comme la bonne. Ne pas étendre sans source dédiée."
   },
   "id": "PAT_DIAWARA",
   "nameMain": "Diawara",
@@ -15,6 +15,7 @@
           "countryId": "MLI",
           "sourceRefs": [
             "interpeace-autoportrait-mali-2015",
+            "hga-v-izard-ki-zerbo",
             "forebears-diawara"
           ]
         },
@@ -40,13 +41,31 @@
       "spelling": "Jawara",
       "attestations": [
         {
+          "countryId": "MLI",
+          "sourceRefs": ["hga-vi-ly-tall"]
+        },
+        {
           "countryId": "GMB",
           "sourceRefs": ["forebears-jawara"]
         },
         {
           "countryId": "SLE",
           "sourceRefs": ["forebears-jawara"]
-        },
+        }
+      ]
+    },
+    {
+      "spelling": "Jaawara",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["ardouin-1988-baakhunu"]
+        }
+      ]
+    },
+    {
+      "spelling": "Jáwara",
+      "attestations": [
         {
           "countryId": "MLI",
           "sourceRefs": ["bamadaba-jamuw"]
@@ -57,22 +76,113 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
-    "writtenChronicles": [],
-    "linguisticReconstructions": [
+    "oralTraditions": [
       {
-        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
-        "claimStatus": "established",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
+        "claim": "Tous les Diawara descendraient d'un même ancêtre, Damanguilé, un chasseur dont le récit fait parcourir une grande partie de la région aux XIIIe et XIVe siècles, réputé connaître les plantes et les hommes et tenu à l'écart des querelles de pouvoir. Sa tombe se trouve à Bamaguilé, dans le cercle de Nioro du Sahel ; en juin 2010, des porteurs du nom venus de tout le Mali et de l'étranger s'y sont rassemblés, au nom de sept clans diawara et des villages du Kingui.",
+        "claimStatus": "claimed",
+        "carrier": "Youssouf Diawara, vice-président de l'association des Diawara du Mali (Diawara Kafo)",
+        "collection": "mediated",
+        "collector": "Abdoulaye Diarra, dans un reportage publié en 2010 sur le portail communautaire Soninkara",
+        "context": "Propos rapportés en français lors d'un pèlerinage sur la tombe de l'ancêtre, à Bamaguilé (Mali), les 10 et 11 juin 2010",
+        "sourceRefs": ["soninkara-diawara-pelerinage-2010"]
       },
       {
-        "claim": "Le dictionnaire des jamuw note le nom Jáwara. Diawara en est la transcription française usuelle, et Jawara la graphie qui domine en Gambie et en Sierra Leone.",
+        "claim": "Une légende fait de Daman Guilé l'ancêtre des Diawara du Kingui. Il aurait d'abord vécu au Manden auprès de Soundiata, qui lui aurait remis un sabre de pouvoir, puis se serait installé à Sorotomo, où il aurait épousé Kouria Koita, la fille du roi de Kakolo. Chasseur de grand renom, il aurait fondé Touroungoumbé, « la mare aux éléphants » en soninké ; sa tombe, que ce récit place à Bambanguédé, est gardée par un Kamissoko, et ses descendants y sacrifient chaque année. Le même texte donne deux versions de l'arrivée des Diawara au pouvoir à Diara : le dernier roi niakhaté aurait remis de lui-même le commandement à Daman Guilé, ou ses fils auraient détrôné ceux des Niakhaté.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Un auteur qui signe Kagoro Doumbé et écrit en Fofana, cousin à plaisanterie des Niakhaté ; son article, paru sur un site de presse malien, est repris en 2007 par le portail communautaire Soninkara",
+        "context": "Récit en français ; il fait vivre Daman Guilé auprès de Soundiata mais date son règne du XIVe siècle, et le récit de 2010 place sa tombe à Bamaguilé",
+        "sourceRefs": ["soninkara-royaume-diarra-kingui"]
+      },
+      {
+        "claim": "Un récit familial kaagoro tient les Saagonè et les Daabo, deux groupes qui se combattirent, pour deux branches d'un même nom : « ils sont tous Jaawara ». Le même récit dit les Jaawara et les Kaagoro du Kingi parents par leurs mères, « du même lait », et raconte comment les Jaawara, ne pouvant leur faire la guerre, les poussèrent à partir avec un miel mêlé d'un philtre.",
+        "claimStatus": "claimed",
+        "carrier": "Tanba Dancogo, de la famille kaagoro des Kamara Dancogo, au Baakhunu (Mali)",
+        "collection": "mediated",
+        "collector": "Claude-Daniel Ardouin",
+        "context": "Tradition familiale recueillie au Baakhunu et publiée en traduction française en 1988",
+        "sourceRefs": ["ardouin-1988-baakhunu"]
+      },
+      {
+        "claim": "Un récit fait descendre les Diawara du chasseur Daman Guille. Il est rapporté dans une étude de 1970 consacrée aux groupes ethniques du Mali, que nous ne connaissons que par son résumé.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Bokar N'Diaye, en 1970",
+        "context": "Étude en français, citée de seconde main dans un mémoire universitaire de 2017 ; l'informateur n'est pas nommé",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "La tradition orale placerait le berceau des Diawara au village de Kinki, dans le cercle de Nioro.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Molinie, officier de la marine française, en 1959",
+        "context": "Indication tirée d'un dictionnaire rédigé pour les Européens en poste en Afrique-Occidentale française, citée de seconde main dans un mémoire de 2017 ; l'informateur n'est pas nommé",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ],
+    "writtenChronicles": [
+      {
+        "claim": "Le sens du nom n'est pas univoque. Les uns disent qu'en soninké « Ja wara » voudrait dire « Hé ! va-t'en ! », et qu'en maninka le nom sonne comme le cri dont on chasse les chiens. D'autres disent que la force des Jáwara devint si grande qu'elle paralysa toute la capitale, qu'on les surnomma alors « Jà wáda », et que ce surnom devint Jáwara. L'ouvrage qui rapporte ces deux explications a été écrit en maninka, dans l'écriture n'ko, par Souleymane Kanté.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "Le même ouvrage situe les Jáwara dans la province de Ɲɔ́rɔn, que nous lisons Nioro : conquis autrefois par les Soninké, ils auraient abandonné leur propre langue pour celle des Soninké. Il leur compte deux branches, les Sàgonɛ́, établis à Kínkin, et les Dábo, au Bakhounou. Une synthèse publiée par l'UNESCO nomme deux clans diawara, les Sagone et les Dabora, que nous rapprochons de ces deux branches, entre lesquels une querelle éclate au XVIIIe siècle et dont profite un roi bambara du Kaarta.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu", "hga-v-izard-ki-zerbo"]
+      }
+    ],
+    "historicalSyntheses": [
+      {
+        "claim": "Au milieu du XVIIe siècle, les Massassi arrivés au Kaarta y trouvent les Jawara déjà installés, puis les repoussent vers le sud ; chassés de Nioro, leur capitale, les Jawara se révoltent en 1843.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-vi-ly-tall"]
+      },
+      {
+        "claim": "Les deux branches du nom, les Saagonè et les Dabo, se sont combattues ; la victoire des Saagonè est datée des années 1753-1754 par des historiens qui s'appuient sur les traditions du Baakhunu, et la chronologie des Jawara reste discutée.",
+        "claimStatus": "contested",
+        "sourceRefs": ["ardouin-1988-baakhunu"]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "Le dictionnaire des noms de clan mandingues note le nom Jáwara. Diawara en est la transcription française usuelle ; Jawara est la graphie qui domine en Gambie et en Sierra Leone, et celle qu'emploie une synthèse de l'UNESCO pour les Diawara du Kaarta.",
         "claimStatus": "claimed",
         "sourceRefs": [
           "bamadaba-jamuw",
+          "hga-vi-ly-tall",
           "forebears-diawara",
           "forebears-jawara"
         ]
+      },
+      {
+        "claim": "Une explication lit dans le nom « fauve de Dia » : l'éditeur de l'épopée de Soundiata publiée en 1960 l'écrit dans une note, où il ajoute que les Diawara auraient régné à Dia, ville des grands marabouts d'après les traditions. En bambara, wára désigne le fauve, surtout les félins. Une page du portail communautaire soninké donne la même lecture, « les fauves de Dia », sans dire d'où elle la tient. Aucune de ces sources ne montre comment le mot s'est formé.",
+        "claimStatus": "claimed",
+        "sourceRefs": [
+          "niane-1960",
+          "bamadaba-lexique-w",
+          "soninkara-royaume-diarra-kingui"
+        ]
+      },
+      {
+        "claim": "Une étude de 1970 tient les Diawara pour un peuple distinct : leur peuple tirerait son nom de leur nom de clan, et ils répondent qu'ils sont Diawara, non Soninké, bien qu'ils parlent la langue soninké. Le nom de clan serait ainsi devenu le nom d'un peuple.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "Dans quel monde le nom est né n'est pas établi. Une synthèse de l'UNESCO range les Jawara parmi les plus anciens clans de la société songhay, tous d'origine soninké. D'autres sources disent l'inverse : les Diawara n'étaient pas soninké à l'origine, et ceux de Tounoufou et de Sambouya, d'après une thèse prêtée à l'historien Youssouf Tata Cissé, comptaient parmi les premiers occupants du Manden, partis du Wagadou après de grandes sécheresses. Le dictionnaire des noms de clan rattache l'entrée aux Soninké, aux Malinké et aux Peuls, entre autres groupes.",
+        "claimStatus": "contested",
+        "sourceRefs": [
+          "hga-iv-cissoko",
+          "soninkara-royaume-diarra-kingui",
+          "bogacheva-2017-jamu",
+          "bamadaba-jamuw"
+        ]
+      },
+      {
+        "claim": "Un mémoire universitaire de 2017 propose de rapprocher le nom de Ghayawara, une ville de l'or du Ghana décrite au XIe siècle par le géographe al-Bakri, et du pays de Ghiyara dont parle al-Idrisi au XIIe siècle, sous les formes que leur donne une traduction russe. Ce rapprochement repose sur une ressemblance de sons ; il est avancé comme possible, non démontré.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
       },
       {
         "claim": "Le nom compte parmi les noms de famille sarakollé (soninké) du Mali, et une liste communautaire soninké lui attache deux seconds noms (jammu kare), Dicko et Molodji.",
@@ -81,11 +191,6 @@
           "interpeace-autoportrait-mali-2015",
           "soninkara-noms-soninke"
         ]
-      },
-      {
-        "claim": "Le dictionnaire des jamuw rattache l'entrée à la fois aux Soninké et aux Malinké : le nom se retrouve dans les deux mondes, et aucune source consultée ne dit dans lequel il est né. L'origine du nom n'est pas établie.",
-        "claimStatus": "contested",
-        "sourceRefs": ["bamadaba-jamuw", "interpeace-autoportrait-mali-2015"]
       }
     ]
   },
@@ -96,20 +201,32 @@
       "sourceRefs": [
         "interpeace-autoportrait-mali-2015",
         "bamadaba-jamuw",
-        "soninkara-noms-soninke"
+        "soninkara-noms-soninke",
+        "hga-iv-cissoko"
       ]
     },
     {
       "peopleId": "PPL_MALINKE",
-      "status": "supposed",
-      "sourceRefs": ["bamadaba-jamuw"]
+      "status": "attested",
+      "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
+    },
+    {
+      "peopleId": "PPL_SONGHAI",
+      "status": "attested",
+      "sourceRefs": ["hga-iv-cissoko"]
     }
   ],
   "countries": [
     {
       "countryId": "MLI",
       "status": "attested",
-      "sourceRefs": ["interpeace-autoportrait-mali-2015", "forebears-diawara"]
+      "sourceRefs": [
+        "interpeace-autoportrait-mali-2015",
+        "ardouin-1988-baakhunu",
+        "hga-vi-ly-tall",
+        "hga-v-izard-ki-zerbo",
+        "forebears-diawara"
+      ]
     },
     {
       "countryId": "GIN",
@@ -165,6 +282,13 @@
       "entityId": null,
       "distinction": "Dans les cercles de Nioro et de Nara, au Mali, des Diawara forment un groupe qui parle la langue des Sarakollé tout en se distinguant d'eux par certaines pratiques coutumières : le mot désigne alors ce groupe, et pas seulement un nom de clan porté ailleurs.",
       "sourceRefs": ["interpeace-autoportrait-mali-2015"]
+    },
+    {
+      "label": "jawara (langue)",
+      "entityType": "other",
+      "entityId": null,
+      "distinction": "Une synthèse de l'UNESCO cite le jawara parmi des langues dites nigéro-camerounaises dont le bobangui, parlé sur le fleuve Congo, reste proche. C'est un nom de langue, sans lien établi avec le nom de clan d'Afrique de l'Ouest.",
+      "sourceRefs": ["hga-v-mbokolo"]
     }
   ],
   "sources": [
@@ -174,7 +298,87 @@
       "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs : la ligne des termes de statut porte les mots mandingues eux-mêmes ; le marqueur de groupe son est confirmé par la notice de l'entrée Wago, qui énumère des jamuw soninké, et le marqueur m est retenu comme indice malinké par comparaison avec l'entrée Kéyità, qu'une autre de nos fiches documente comme jamu malinké ; les autres marqueurs de groupe ne sont pas exploités ici. Les notes libres des entrées sont rédigées en russe et traduites ici par nous. L'entrée Jáwara porte trois termes de statut (hɔ̀rɔn, jèli, garanke) et deux marqueurs de groupe exploitables (son et m). Sa rubrique de lien de plaisanterie ne nomme aucun clan, seulement le terme de statut garanke. C'est l'entrée Tàrawéle (Traoré) qui porte, elle, un lien de plaisanterie vers Jawara ; les liens de ce type ne sont pas systématiquement réciproques d'une entrée à l'autre, et celui-ci est cité d'après l'entrée qui le porte."
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), signalée par Vydrin dans Mandenkan 63, 2020, p. 89-110. Fichier complet consulté. L'entrée Jáwara ne donne aucun sens au nom ; elle porte trois statuts (hɔ̀rɔn, jèli et garanke, ce dernier non glosé), rattache le nom aux Soninké, aux Malinké et aux Peuls, ainsi qu'à deux autres groupes que nous n'identifions pas, et lui associe une chèvre de trois couleurs (noire, blanche, rousse), sans dire à quel titre. Sa rubrique de lien de plaisanterie ne nomme aucun clan, seulement le terme garanke. Les entrées Tàrawéle (Traoré) et Jwàra portent, elles, un lien de plaisanterie vers Jawara ; ces liens ne sont pas toujours réciproques d'une entrée à l'autre, et celui-ci est cité d'après l'entrée qui le porte. Les notes libres du fichier sont rédigées en russe et traduites ici par nous."
+    },
+    {
+      "sourceKey": "bamadaba-lexique-w",
+      "title": "Bamadaba — dictionnaire bambara-français, lexique, lettre W",
+      "url": "https://bamadaba.coastsystems.net/lexicon/w/",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Version en ligne du dictionnaire électronique bambara-français dont l'annexe des noms de clan est citée à part. Le nom wára y est glosé « fauve », surtout les félins, puis « singe rouge », « fétiche » et « homme vigoureux ». Consulté en ligne le 3 octobre 2026. Cité pour le sens du mot bambara, non pour l'origine du nom de clan."
+    },
+    {
+      "sourceKey": "soninkara-diawara-pelerinage-2010",
+      "title": "Histoire : Les Diawara revisitent plus de 800 ans de leur histoire",
+      "url": "http://www.soninkara.com/histoire-geographie/histoire/histoire--les-diawara-revisitent-plus-de-800-ans-de-leur-histoire-.html",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Portail communautaire soninké, page publiée le 9 juillet 2010 ; reportage signé Abdoulaye Diarra sur le pèlerinage des 10 et 11 juin 2010 à Bamaguilé, cercle de Nioro du Sahel, avec les propos de Youssouf Diawara, vice-président de l'association des Diawara du Mali, et d'un chef de famille Diawara. Consulté dans une copie archivée de 2017. Il rapporte ce que disent des porteurs du nom de leur ancêtre ; il ne donne aucun sens au nom."
+    },
+    {
+      "sourceKey": "soninkara-royaume-diarra-kingui",
+      "title": "Traditions : Le Royaume de Diarra ou Kingui",
+      "url": "http://www.soninkara.com/histoire-geographie/histoire/traditions-le-royaume-de-diarra-ou-kingui.html",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Portail communautaire soninké, page publiée le 15 octobre 2007 par Fodyé Cissé ; le texte est signé Kagoro Doumbé et donné comme repris du site de presse malien maliweb.net. L'auteur écrit en Fofana, cousin à plaisanterie des Niakhaté, et le dit. Consulté dans une copie archivée de 2021. Il donne la lecture « les fauves de Dia », reprend un passage attribué à Youssouf Tata Cissé sur les Diawara de Tounoufou et de Sambouya, et raconte la légende de Daman Guilé ; les dates de règne qu'il propose ne sont pas sourcées."
+    },
+    {
+      "sourceKey": "bogacheva-2017-jamu",
+      "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+      "url": "https://hdl.handle.net/11701/10975",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bogacheva, E. A., mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Notice Jáwara, p. 56-59 : rattachement aux Malinké et aux Soninké d'après Molinie, officier de la marine française dont le dictionnaire de 1959 était destiné aux Européens en poste en Afrique-Occidentale française (p. 57) ; résumé de Bokar N'Diaye, Groupes ethniques au Mali, 1970, p. 347-376, qui tient les Diawara pour un peuple tirant son nom de leur nom de clan et rapporte le récit du chasseur Daman Guille aux p. 349-351 (p. 57-58) ; rapprochement, proposé par l'autrice, avec la ville de Ghayawara chez al-Bakri et le pays de Ghiyara chez al-Idrisi, d'après leurs traductions russes (p. 58) ; reprise du texte sur les Diawara de Tounoufou et de Sambouya prêté à Youssouf Tata Cissé (p. 58) ; berceau à Kinki d'après Molinie (p. 58) ; la province de Ɲɔ́rɔn, les deux branches et les deux explications du nom tirées de l'ouvrage en n'ko de Souleymane Kanté sur les noms et les jamu du Manden (p. 58-59). Le texte original en n'ko de Kanté et l'étude de N'Diaye n'ont pas été lus ; seuls leurs traductions ou résumés russes l'ont été. Un jugement de Molinie sur le caractère des Diawara, que rapporte la notice, n'est pas repris ici. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet."
+    },
+    {
+      "sourceKey": "ardouin-1988-baakhunu",
+      "title": "Une formation politique précoloniale du Sahel occidental malien : le Baakhunu à l'époque des Kaagoro",
+      "url": "https://doi.org/10.3406/cea.1988.1659",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Ardouin, Claude-Daniel, Cahiers d'études africaines, volume 28, numéro 111-112, 1988, p. 443-461. Étude fondée sur des traditions orales recueillies au Baakhunu, dans l'ouest du Sahel malien. Le récit de Tanba Dancogo : la parenté par les mères entre Jaawara et Kaagoro, « Les Saagonè et les Daabo, ils sont tous Jaawara, se battirent », et l'épisode du miel (p. 447-448) ; d'après un autre narrateur, Daaman Siimagha, cette parenté remonterait au mariage d'un Kaagoro avec la mère de Daamangille, et la chronologie des Jaawara est jugée discutée (p. 448, d'après Mamadou Diawara 1985) ; les Kaagoro prenant part aux luttes internes des Jaawara contre les Daabo (p. 448) ; la victoire des Saagonè sur les Daabo vers 1753-1754, d'après Boyer 1953 et Diawara 1985 (p. 449). Consulté dans une copie numérisée de l'article."
+    },
+    {
+      "sourceKey": "niane-1960",
+      "title": "Soundjata ou l'épopée mandingue",
+      "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Niane, Djibril Tamsir, Présence Africaine, 1960. Transcription du récit du griot Djeli Mamadou Kouyaté de Djeliba Koro (Siguiri) ; c'est une mise par écrit d'une tradition orale. Page lue sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proche de l'édition imprimée sans s'y confondre : dans la note 1 du chapitre « L'empire », qui commente la prise de Diaghan par Soundiata, l'éditeur écrit qu'il s'agit de la ville de Dia, que, d'après les traditions, Dia était la ville des grands marabouts, que les Diawara y régnèrent et que leur nom signifie « fauve de Dia » (p. 132). La note est de l'éditeur, non du griot."
+    },
+    {
+      "sourceKey": "hga-iv-cissoko",
+      "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 8, Les Songhay du XIIe au XVIe siècle",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. D. T. Niane, 1985 ; chapitre de S. M. Cissoko. Page imprimée 230 : les clans les plus anciens de la société songhay étaient d'origine soninké (Ture, Sylla, Tunkara, Sise, Jakite, Drame, Jawara), quelques-uns seulement songhay. Le chapitre ne donne aucun sens au nom."
+    },
+    {
+      "sourceKey": "hga-v-izard-ki-zerbo",
+      "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 12, Du Niger à la Volta",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de M. Izard et J. Ki-Zerbo. Page imprimée 376 : le roi du Kaarta Sira Bo Koulibali (1761-1780) profite d'une querelle entre deux clans diawara, les Sagone et les Dabora, chasse les Dabora, qui se réfugient au Boundou ou à Ségou, et dispense du tribut les Sagone, tenus pour libres. Le chapitre ne dit rien de l'origine du nom."
+    },
+    {
+      "sourceKey": "hga-v-mbokolo",
+      "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 18, Des savanes du Cameroun au haut Nil",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre d'E. M'Bokolo. Page imprimée 588, à propos des peuples de la cuvette du fleuve Congo et de la Sangha : le bobangui présente de fortes parentés avec le tunen et le jawara. Citée seulement pour distinguer ce nom de langue du nom de clan."
+    },
+    {
+      "sourceKey": "hga-vi-ly-tall",
+      "title": "Histoire générale de l'Afrique, VI : L'Afrique au XIXe siècle jusque vers les années 1880 — chapitre 23, Le Macina et l'Empire torodbe (tukuloor) jusqu'en 1878",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. J. F. Ade Ajayi, 1996 ; chapitre de M. Ly-Tall. Page imprimée 661 : les Massassi, arrivés au Kaarta vers le milieu du XVIIe siècle, y trouvent les Jawara (Diawara) déjà en place, puis les refoulent vers le sud ; chassés de Nioro, leur capitale, les Jawara se révoltent en 1843 ; d'après un jeli bambara cité par D. S. Diallo en 1977, le prétexte de la guerre fut l'assassinat d'un prince jawara (note 54). Le chapitre ne dit rien de l'origine du nom."
     },
     {
       "sourceKey": "interpeace-autoportrait-mali-2015",
@@ -199,14 +403,6 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Fil de discussion du forum du portail communautaire Soninkara.com, ouvert en décembre 2006 et poursuivi jusqu'en 2011 : des contributeurs, sous pseudonyme, y dressent des listes de noms qu'ils tiennent pour soninké. Les listes se recoupent en partie et se contredisent : plusieurs intervenants rappellent que beaucoup de noms portés aujourd'hui par des Soninké ne sont pas soninké à l'origine, et l'un d'eux demande de distinguer les noms soninké des noms d'origine soninké. Consulté dans une copie archivée de 2024."
-    },
-    {
-      "sourceKey": "jansen-sunjata-paradigm",
-      "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
-      "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
-      "tier": "referenced",
-      "source_kind": "academic",
-      "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
     },
     {
       "sourceKey": "canut-2002-senankuya",
@@ -244,23 +440,15 @@
   "gaps": [
     {
       "fieldPath": "origin.oralTraditions",
-      "reason": "Nous n'avons trouvé aucune tradition orale rapportant l'origine de ce nom."
-    },
-    {
-      "fieldPath": "origin.writtenChronicles",
-      "reason": "Nous n'avons trouvé aucune chronique écrite qui mentionne l'origine de ce nom."
-    },
-    {
-      "fieldPath": "origin.linguisticReconstructions",
-      "reason": "Aucune étymologie de ce nom n'est établie dans les sources consultées : nous ne proposons aucune signification."
+      "reason": "Deux travaux consacrés aux Diawara n'ont pas pu être lus : l'étude de G. Boyer, Un peuple de l'Ouest soudanais, les Diawara (1953), et ceux de l'historien Mamadou Diawara sur les traditions orales du royaume de Jaara (1985, puis La graine de la parole, 1990). Ce qu'ils disent de l'origine du nom manque donc ici."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous ne nommons aucun porteur : aucune source consultée n'en cite qui soit décédé et dont l'appartenance à ce nom soit établie."
+      "reason": "Nous ne nommons aucun porteur : les rois diawara du Kingui ne sont nommés que par une page communautaire, et nous n'avons pas recoupé leurs noms dans une autre source."
     },
     {
       "fieldPath": "alliances",
-      "reason": "Le dictionnaire des jamuw porte un lien de plaisanterie de Traoré vers Diawara, mais aucun lien nommé sur l'entrée de Diawara elle-même : nous ne retenons que le lien porté par l'entrée qui le contient."
+      "reason": "Le dictionnaire des noms de clan porte des liens de plaisanterie vers Diawara depuis les entrées Traoré et Jwàra, mais aucun clan nommé sur l'entrée de Diawara elle-même. Un mémoire de 2017 donne pour partenaires Kamara, Sagango et Samaké, tirés de matériaux d'enquête réunis par des linguistes sans indication d'informateur : nous ne retenons que le lien avec Traoré, porté par l'entrée qui le contient."
     }
   ]
 }

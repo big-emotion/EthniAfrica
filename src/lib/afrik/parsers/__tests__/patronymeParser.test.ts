@@ -116,6 +116,40 @@ describe("parsePatronymeFile", () => {
       },
     });
 
+  // A historian's account of a clan's history is neither the clan's own oral
+  // tradition, nor a chronicle, nor a claim about the word; it gets its own
+  // strand so it stops being filed as a linguistic reconstruction.
+  // @req REQ-133
+  it("accepts a historical synthesis alongside the three origin strands", () => {
+    const result = parsePatronymeFile(
+      validPatronymeFiche({
+        origin: {
+          oralTraditions: [],
+          writtenChronicles: [],
+          historicalSyntheses: [
+            {
+              claim: "Une synthèse situe une migration du clan au XVIe siècle.",
+              claimStatus: "contested",
+              sourceRefs: [SOURCE_KEY],
+            },
+          ],
+          linguisticReconstructions: [],
+        },
+      })
+    );
+
+    expect(result.success).toBe(true);
+    expect(result.data?.origin.historicalSyntheses).toHaveLength(1);
+  });
+
+  // @req REQ-133
+  it("reads a fiche written before the historical-synthesis strand existed as having none", () => {
+    const result = parsePatronymeFile(withOral(oralAccount));
+
+    expect(result.success).toBe(true);
+    expect(result.data?.origin.historicalSyntheses).toEqual([]);
+  });
+
   // @req REQ-133
   it("accepts an oral account with neither a griot nor a transcript", () => {
     const result = parsePatronymeFile(withOral(oralAccount));

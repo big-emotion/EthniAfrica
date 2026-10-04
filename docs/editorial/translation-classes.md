@@ -77,7 +77,8 @@ parenthesis, which is invariant, not a gloss.
 ## `PARSER_ONLY_LEAVES` — why the model alone is not the contract
 
 `public/modele-nom-patronyme.json` writes `casteOrSocialFunction: null` and
-`origin.writtenChronicles` / `origin.linguisticReconstructions` as `[]`. The
+`origin.writtenChronicles` / `origin.historicalSyntheses` /
+`origin.linguisticReconstructions` as `[]`. The
 parser, `src/lib/afrik/parsers/patronymeParser.ts`, defines their shape —
 `{ value, sourceRefs }` and `{ claim, claimStatus, sourceRefs }` — and
 `checkPatronymeFicheModel` validates fiches against the parser, not the
@@ -98,7 +99,10 @@ The other fifteen models are what their JSON says they are.
 
 ## The PAT origin-claim decision
 
-A patronyme fiche has three origin arrays. Declaring all three
+A patronyme fiche had three origin arrays when this was decided; a fourth,
+`origin.historicalSyntheses[]` (a historian's account of the clan's history),
+was added on 2026-10-03 and narrates like the first two — `translatable`.
+Declaring all three
 `review_required` would have put 793 fiches × up to three arrays behind a
 human review, which contradicts DEC-047's premise that class 3 is a small
 share of volume — and would have blocked the patronyme wave at machine

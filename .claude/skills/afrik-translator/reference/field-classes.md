@@ -348,6 +348,9 @@ contract test is what keeps them equal to it, row for row and model for model.
 | `origin.writtenChronicles[].claim`                | `translatable`    | parser-only |
 | `origin.writtenChronicles[].claimStatus`          | `invariant`       | parser-only |
 | `origin.writtenChronicles[].sourceRefs[]`         | `invariant`       | parser-only |
+| `origin.historicalSyntheses[].claim`              | `translatable`    | parser-only |
+| `origin.historicalSyntheses[].claimStatus`        | `invariant`       | parser-only |
+| `origin.historicalSyntheses[].sourceRefs[]`       | `invariant`       | parser-only |
 | `origin.linguisticReconstructions[].claim`        | `review_required` | parser-only |
 | `origin.linguisticReconstructions[].claimStatus`  | `invariant`       | parser-only |
 | `origin.linguisticReconstructions[].sourceRefs[]` | `invariant`       | parser-only |

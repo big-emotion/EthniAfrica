@@ -111,6 +111,59 @@ describe("PatronymeOriginSection (REQ-133)", () => {
     expect(screen.getByText(/Version chroniquée/)).toBeInTheDocument();
   });
 
+  // A historian's synthesis is labelled as one, never as a linguistic
+  // reconstruction, and the accounts carried by the people come first.
+  // @req REQ-133
+  it("labels a historical synthesis as such and lists it after the oral and written accounts", () => {
+    render(
+      <PatronymeOriginSection
+        language="fr"
+        patronyme={{
+          ...base,
+          content: {
+            origin: {
+              oralTraditions: [{ claim: "Récit du griot." }],
+              writtenChronicles: [{ claim: "Ouvrage en n'ko." }],
+              historicalSyntheses: [{ claim: "Migration vers la côte." }],
+              linguisticReconstructions: [{ claim: "Aucun sens connu." }],
+            },
+          },
+        }}
+      />
+    );
+
+    const labels = [
+      "Tradition orale",
+      "Chronique écrite",
+      "Synthèse historique",
+      "Reconstruction linguistique",
+    ].map((label) => screen.getByText(label));
+    for (let index = 1; index < labels.length; index += 1) {
+      expect(
+        labels[index - 1].compareDocumentPosition(labels[index]) &
+          Node.DOCUMENT_POSITION_FOLLOWING
+      ).toBeTruthy();
+    }
+    expect(screen.getByText(/Migration vers la côte/)).toBeInTheDocument();
+  });
+
+  // @req REQ-133
+  it("names the historical-synthesis strand in English", () => {
+    render(
+      <PatronymeOriginSection
+        language="en"
+        patronyme={{
+          ...base,
+          content: {
+            origin: { historicalSyntheses: [{ claim: "A migration." }] },
+          },
+        }}
+      />
+    );
+
+    expect(screen.getByText("Historical synthesis")).toBeInTheDocument();
+  });
+
   // An account is shown with the carrier and collection it was recorded with,
   // and no word the record did not use (audit finding C10).
   // @req REQ-133

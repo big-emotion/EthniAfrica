@@ -304,6 +304,7 @@ describe("parser-only leaves of the patronyme model", () => {
     origin: {
       oralTraditions: [{ ...claim, griot: "G", transcription: "T" }],
       writtenChronicles: [claim],
+      historicalSyntheses: [claim],
       linguisticReconstructions: [claim],
     },
     peoples: [],

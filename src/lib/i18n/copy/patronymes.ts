@@ -49,6 +49,7 @@ const en = {
   originTitle: "Origin",
   originOralTraditionsLabel: "Oral tradition",
   originWrittenChroniclesLabel: "Written chronicle",
+  originHistoricalSynthesesLabel: "Historical synthesis",
   originLinguisticReconstructionsLabel: "Linguistic reconstruction",
   originClaimStatusLabels: PATRONYME_VOCABULARY.en.originClaimStatus,
   oralOriginNote:
@@ -162,6 +163,7 @@ const fr: PatronymesCopy = {
   // griot is one possible carrier, named as the record states it.
   originOralTraditionsLabel: "Tradition orale",
   originWrittenChroniclesLabel: "Chronique écrite",
+  originHistoricalSynthesesLabel: "Synthèse historique",
   originLinguisticReconstructionsLabel: "Reconstruction linguistique",
   originClaimStatusLabels: PATRONYME_VOCABULARY.fr.originClaimStatus,
   // Attributed to its carrier rather than stated as a bare fact: an oral
