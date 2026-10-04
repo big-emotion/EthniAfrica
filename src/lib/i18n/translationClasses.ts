@@ -304,8 +304,8 @@ export const TRANSLATION_CLASSES: Readonly<
     "origin.oralTraditions[].context": "review_required",
     "origin.oralTraditions[].transcription": "review_required",
     "origin.oralTraditions[].sourceRefs[]": "invariant",
-    // origin.writtenChronicles[], origin.linguisticReconstructions[] and
-    // casteOrSocialFunction are `[]` / null in the model; their shape comes
+    // origin.writtenChronicles[], origin.historicalSyntheses[],
+    // origin.linguisticReconstructions[] and casteOrSocialFunction are `[]` / null in the model; their shape comes
     // from the parser and is declared in PARSER_ONLY_LEAVES.
     "peoples[].peopleId": "invariant",
     "peoples[].status": "invariant",
@@ -606,6 +606,9 @@ export const PARSER_ONLY_LEAVES: readonly ParserOnlyLeaf[] = [
   patronymeLeaf("origin.writtenChronicles[].claim", "translatable"),
   patronymeLeaf("origin.writtenChronicles[].claimStatus", "invariant"),
   patronymeLeaf("origin.writtenChronicles[].sourceRefs[]", "invariant"),
+  patronymeLeaf("origin.historicalSyntheses[].claim", "translatable"),
+  patronymeLeaf("origin.historicalSyntheses[].claimStatus", "invariant"),
+  patronymeLeaf("origin.historicalSyntheses[].sourceRefs[]", "invariant"),
   // A linguistic reconstruction is a claim about the word itself — the one
   // origin array whose claims are class 3.
   patronymeLeaf("origin.linguisticReconstructions[].claim", "review_required"),

@@ -116,6 +116,18 @@
         "sourceRefs": ["bogacheva-2017-jamu"]
       }
     ],
+    "historicalSyntheses": [
+      {
+        "claim": "One historical synthesis cautiously proposes that the Maninka clans of the Kuruma and of the Konaté of the Toron shared power from Kankan to Odienné by the fifteenth century at the latest.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-iv-person"]
+      },
+      {
+        "claim": "In the nineteenth century, between the Toron and the Konyan, the Berete lineage established a local domination \"in the name of the Konate traditionalists\", and Samori, born around 1830, counted among his ancestors \"more Kamara or Konate, traditionalist peasants, than Muslim traders\".",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-vi-person"]
+      }
+    ],
     "linguisticReconstructions": [
       {
         "claim": "The dictionary of Manding clan names defines the word only as a clan name and gives it no meaning. It treats Konaté as an equivalent of Keïta, and perhaps of Konaré.",
@@ -305,9 +317,9 @@
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-10-03T09:57:30.570Z",
+    "translatedAt": "2026-10-03T12:09:37.363Z",
     "model": "claude-sonnet-5-5",
-    "sourceHash": "92a8807a016380ff9279f993e5f9867f2a1483d4196d5021fe8a98b90243a581",
+    "sourceHash": "e1a4d17550bd95eddbeddd49e4faa70fc5569b1b90498946dce3d80e2ec121ed",
     "fieldHashes": {
       "origin.oralTraditions[0].claim": "0f50a4072d159962",
       "origin.oralTraditions[0].context": "6a0947897b7e06e1",
@@ -322,6 +334,8 @@
       "origin.oralTraditions[5].claim": "431d808c0b135dba",
       "origin.oralTraditions[5].context": "7fb8e1ced989a572",
       "origin.writtenChronicles[0].claim": "d3bef9d64ec9aeaf",
+      "origin.historicalSyntheses[0].claim": "1eeaddef4d385bd3",
+      "origin.historicalSyntheses[1].claim": "51a7c6d60065b4d6",
       "origin.linguisticReconstructions[0].claim": "6f63c237997b3d8a",
       "origin.linguisticReconstructions[1].claim": "770930bf7dcf86d3",
       "origin.linguisticReconstructions[2].claim": "98ec10b6bceb6021",

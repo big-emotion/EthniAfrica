@@ -132,6 +132,18 @@
         "sourceRefs": ["bogacheva-2017-jamu"]
       }
     ],
+    "historicalSyntheses": [
+      {
+        "claim": "Une synthèse historique avance, avec prudence, que les clans maninka des Kuruma et des Konaté du Toron se partageaient le pouvoir de Kankan à Odienné au plus tard au XVe siècle.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-iv-person"]
+      },
+      {
+        "claim": "Au XIXe siècle, entre le Toron et le Konyan, la lignée des Berete organise une domination locale « au nom des traditionalistes konate », et Samori, né vers 1830, compte parmi ses ancêtres « plus de Kamara ou Konate, paysans traditionalistes, que de commerçants musulmans ».",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-vi-person"]
+      }
+    ],
     "linguisticReconstructions": [
       {
         "claim": "Le dictionnaire des noms de clan mandingues définit le mot seulement comme un nom de clan et ne lui donne aucun sens. Il tient Konaté pour un équivalent de Keïta, et peut-être de Konaré.",

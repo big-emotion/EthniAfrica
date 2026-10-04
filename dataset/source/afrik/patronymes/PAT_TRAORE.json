@@ -108,6 +108,13 @@
         "sourceRefs": ["bogacheva-2017-jamu"]
       }
     ],
+    "historicalSyntheses": [
+      {
+        "claim": "Pour un étranger, le jamu est la porte d'entrée dans le tissu social : à Bamako, on lui attribue un jamu mandingue pour lui donner une place dans le groupe. Aujourd'hui, les références historiques des pactes entre noms sont souvent oubliées et les personnes peinent à en expliquer l'origine.",
+        "claimStatus": "established",
+        "sourceRefs": ["canut-2002-senankuya"]
+      }
+    ],
     "linguisticReconstructions": [
       {
         "claim": "Aucun dictionnaire consulté ne donne de sens au mot : le dictionnaire des noms de clan mandingues l'écrit Tàrawéle, avec les variantes Traore et Taraore, et le définit seulement comme un nom de clan. Traoré en est la graphie française.",
@@ -123,11 +130,6 @@
         "claim": "Le nom a des équivalents chez d'autres peuples : en pays wolof, un Traoré est reçu comme un frère par les Diop et peut prendre leur nom, et un Diop peut devenir Traoré chez les Mandenka. La tradition fait remonter ces correspondances entre noms de clan à l'assemblée tenue après la victoire de Soundiata, à qui l'on prête aussi des faits bien postérieurs ; la pratique s'est poursuivie après lui.",
         "claimStatus": "claimed",
         "sourceRefs": ["hga-iv-niane"]
-      },
-      {
-        "claim": "Pour un étranger, le jamu est la porte d'entrée dans le tissu social : à Bamako, on lui attribue un jamu mandingue pour lui donner une place dans le groupe. Aujourd'hui, les références historiques des pactes entre noms sont souvent oubliées et les personnes peinent à en expliquer l'origine.",
-        "claimStatus": "established",
-        "sourceRefs": ["canut-2002-senankuya"]
       }
     ]
   },

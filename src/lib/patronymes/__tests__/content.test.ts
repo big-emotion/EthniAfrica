@@ -357,10 +357,11 @@ describe("patronyme content readers (REQ-133)", () => {
   });
 
   // @req REQ-133
-  it("returns three empty strands rather than null when origin is absent", () => {
+  it("returns four empty strands rather than null when origin is absent", () => {
     expect(readOrigin({})).toEqual({
       oralTraditions: [],
       writtenChronicles: [],
+      historicalSyntheses: [],
       linguisticReconstructions: [],
     });
     // The shape the reader used to require, which no dossier has ever had.
@@ -369,8 +370,30 @@ describe("patronyme content readers (REQ-133)", () => {
     ).toEqual({
       oralTraditions: [],
       writtenChronicles: [],
+      historicalSyntheses: [],
       linguisticReconstructions: [],
     });
+  });
+
+  // @req REQ-133
+  it("reads a historical synthesis as its own strand", () => {
+    const origin = readOrigin({
+      origin: {
+        historicalSyntheses: [
+          {
+            claim: "Une synthèse situe la migration au XVIe siècle.",
+            claimStatus: "contested",
+          },
+        ],
+      },
+    });
+
+    expect(origin.historicalSyntheses).toHaveLength(1);
+    expect(origin.historicalSyntheses[0]).toMatchObject({
+      claim: "Une synthèse situe la migration au XVIe siècle.",
+      claimStatus: "contested",
+    });
+    expect(origin.linguisticReconstructions).toEqual([]);
   });
 
   // @req REQ-133

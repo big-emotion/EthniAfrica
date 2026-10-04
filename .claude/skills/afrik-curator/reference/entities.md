@@ -90,7 +90,12 @@ Nested shapes:
 
 ```
 spellings[]  = { spelling, attestations[] = { countryId, sourceRefs[] } }
-origin       = { oralTraditions[], writtenChronicles[], linguisticReconstructions[] }
+origin       = { oralTraditions[], writtenChronicles[], historicalSyntheses[], linguisticReconstructions[] }
+               oral = an account a source reports as the people's tradition (carrier, collector, context);
+               written = a chronicle or a work by an author of the society itself (Tarikh, N'ko book);
+               historicalSyntheses = a historian's account of the clan's history (migrations, settlement,
+               rulers) — optional, added 2026-10-03 so history stops being filed under the word;
+               linguisticReconstructions = claims about the word only (meaning, etymology, forms)
 peoples[]    = { peopleId, status, sourceRefs[] }     status: attested | supposed
 countries[]  = { countryId, status, sourceRefs[] }
 sources[]    = { sourceKey, title, url, tier, source_kind, notes }

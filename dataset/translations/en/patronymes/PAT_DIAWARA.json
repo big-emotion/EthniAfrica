@@ -103,6 +103,18 @@
         "sourceRefs": ["bogacheva-2017-jamu", "hga-v-izard-ki-zerbo"]
       }
     ],
+    "historicalSyntheses": [
+      {
+        "claim": "In the middle of the seventeenth century, the Massassi who arrived in Kaarta found the Jawara already settled there, then pushed them back towards the south; driven out of Nioro, their capital, the Jawara rose in revolt in 1843.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-vi-ly-tall"]
+      },
+      {
+        "claim": "The two branches of the name, the Saagonè and the Dabo, fought one another; the victory of the Saagonè is dated to the years 1753-1754 by historians who draw on the traditions of the Baakhunu, and the chronology of the Jawara remains disputed.",
+        "claimStatus": "contested",
+        "sourceRefs": ["ardouin-1988-baakhunu"]
+      }
+    ],
     "linguisticReconstructions": [
       {
         "claim": "The dictionary of Mandinka clan names records the name Jáwara. Diawara is its usual French transcription; Jawara is the spelling that dominates in the Gambia and Sierra Leone, and the one a UNESCO synthesis uses for the Diawara of the Kaarta.",
@@ -412,9 +424,9 @@
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-10-03T09:59:09.569Z",
+    "translatedAt": "2026-10-03T12:09:32.341Z",
     "model": "claude-sonnet-5-5",
-    "sourceHash": "37e3d3b4c2628639b4174c944b7b03acb7a84974aa20fc695405f659575aa475",
+    "sourceHash": "aba881e1ae5e50b15d07008be12bd780b2dc7dacfac8364e199fe0467674e69a",
     "fieldHashes": {
       "origin.oralTraditions[0].claim": "9dd4293c131721b0",
       "origin.oralTraditions[0].context": "6a43bf4f8d713fac",
@@ -428,6 +440,8 @@
       "origin.oralTraditions[4].context": "8f9d6411d697f1c6",
       "origin.writtenChronicles[0].claim": "017e9a173d12c2ec",
       "origin.writtenChronicles[1].claim": "1462f4d0652e88cb",
+      "origin.historicalSyntheses[0].claim": "cf1d8e9b8e43ca07",
+      "origin.historicalSyntheses[1].claim": "537801385c94bea9",
       "origin.linguisticReconstructions[0].claim": "467a4b14c182cd07",
       "origin.linguisticReconstructions[1].claim": "6e7a6624fec361c6",
       "origin.linguisticReconstructions[2].claim": "28d4171fc251010a",
