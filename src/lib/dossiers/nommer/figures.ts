@@ -52,7 +52,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "corpus-peoples",
     label: "fiches de peuple",
-    value: 772,
+    // 772 -> 770 on 2026-10-03: the two Bissa duplicates (PPL_BUSSA, PPL_BUSANSI)
+    // were merged into PPL_BISSA through the retired-identifiers ledger.
+    value: 770,
     method: `nombre de fichiers ${PEOPLE_GLOB}`,
     countedOn: COUNTED_ON,
   },
@@ -60,7 +62,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "corpus-exonyms",
     label: "exonymes recensés",
-    value: 3122,
+    // 3122 -> 3117 on 2026-10-03: the Bissa merge removed six exonyms with the two
+    // retired fiches and added one (Busanga, as the Kusasi use it).
+    value: 3117,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -74,7 +78,12 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // Maninka, Bambara, Dioula… » — which the count took for an autonym. A
     // grouping of peoples has no name for itself, so those fiches now declare
     // the absence with `null`, and the figure counts only what it says it does.
-    value: 761,
+    // 761 -> 759 on 2026-10-03: the two retired Bissa fiches each declared one.
+    // 759 -> 758 on 2026-10-03: the Nganguela fiche declared a self-name for a
+    // grouping whose own source calls the term an outsiders' category over
+    // independent peoples; it now declares the absence with `null`, like the other
+    // macro-group fiches.
+    value: 758,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
     countedOn: COUNTED_ON,
@@ -90,9 +99,11 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     figureKey: "status-contested-or-colonial",
     label:
       "fiches déclarant leur appellation contestée ou héritée de la colonisation",
-    value: 444,
+    // 444 -> 443 on 2026-10-03: PPL_BUSANSI, the one "contested" Bissa fiche, was
+    // merged into PPL_BISSA, which declares no status.
+    value: 443,
     method:
-      "fiches dont classificationStatus vaut contested (254) ou colonial-legacy (190)",
+      "fiches dont classificationStatus vaut contested (253) ou colonial-legacy (190)",
     countedOn: COUNTED_ON,
   },
   "status-other": {
@@ -108,7 +119,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "status-undeclared",
     label: "fiches ne déclarant aucun statut",
-    value: 309,
+    // 309 -> 308 on 2026-10-03: PPL_BUSSA, which declared no status, was merged.
+    value: 308,
     method: "fiches sans classificationStatus",
     countedOn: COUNTED_ON,
   },
@@ -133,6 +145,12 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 181 -> 182 on 2026-09-25. Dogon's origin-of-exonyms prose now cites the
     // colonial administrators who borrowed « Habe » from the Fula; a sourced
     // sentence, not a rewording made for the count.
+    // 182 -> 183 on 2026-10-03: the Tutrugbu note now states its argument from the
+    // fiche's own fields (Nyangbo is the official administrative name), where it
+    // used to recommend a merge with a fiche that does not exist.
+    // 183 -> 182 on 2026-10-03: the Frafra explanation no longer says the "British
+    // administrators" heard the greeting; its source gives missionaries in one
+    // account and the British in a variant, so the sentence follows the source.
     value: 182,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
@@ -142,7 +160,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     figureKey: "probe-european",
     label: "fiches employant le radical « europ- »",
     // 119 -> 120 on 2026-09-25: the same Dogon sentence (« Europeens »).
-    value: 121,
+    // 121 -> 120 on 2026-10-03: PPL_BUSANSI, which named the first Europeans, was
+    // merged into PPL_BISSA.
+    value: 120,
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },

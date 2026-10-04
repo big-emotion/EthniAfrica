@@ -12,7 +12,7 @@ import { describe, expect, it } from "vitest";
  * helper with no page argument and returned the entire table as one payload.
  *
  * Their comment said "not exposed publicly", but they lived under `/api/v2/*`,
- * where `src/middleware.ts` grants a same-origin bypass keyed on `Origin` /
+ * where `src/proxy.ts` grants a same-origin bypass keyed on `Origin` /
  * `Referer` — headers only a browser is obliged to tell the truth about. Any
  * non-browser client sets them freely, so the routes were an unauthenticated
  * dump of every people, country and language family. Nothing in the tree

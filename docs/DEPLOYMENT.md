@@ -288,7 +288,7 @@ reads. Run it after adding any `process.env` reference.
 
 ### Rate limiting `/api/v2/*`
 
-`src/middleware.ts` applies Upstash rate limiting. Without `UPSTASH_REDIS_REST_URL` and
+`src/proxy.ts` applies Upstash rate limiting. Without `UPSTASH_REDIS_REST_URL` and
 `UPSTASH_REDIS_REST_TOKEN`, the limiter is disabled — acceptable locally, not in production.
 
 | Variable                 | Meaning                                                        | Default |

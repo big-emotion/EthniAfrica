@@ -11,9 +11,10 @@
         "Busansi (terme utilise par les Mossi)",
         "Busanga (terme utilise par les Mossi, repris par le Joshua Project)",
         "Bisan ou Bissanno (pluriel en usage regional)",
-        "Bussawa (terme haoussa)"
+        "Bussawa (terme haoussa)",
+        "Busanga (aussi terme des Kusasi, au Ghana)"
       ],
-      "originOfExonyms": "Busansi et Busanga sont les termes employes par les Mossi voisins pour designer les Bissa. La forme Bissa est l'appellation europeenne et francophone officielle adoptee au Burkina Faso. Bussawa est le terme en langue haoussa.",
+      "originOfExonyms": "Busansi et Busanga sont les termes employes par les Mossi voisins pour designer les Bissa. La forme Bissa est l'appellation europeenne et francophone officielle adoptee au Burkina Faso. Bussawa est le terme en langue haoussa. Une explication, dont la source n'est pas établie dans nos références, fait de Busanga une déformation de « bisag gua » (« homme bissa » dans le parler lebir et lere), réponse donnée aux premiers Européens qui demandaient au peuple qui il était. À ne pas confondre avec les Bisa de Zambie, groupe distinct, ni avec les Busa du Nigeria et du Bénin, groupe apparenté mais différent.",
       "whyProblematic": null,
       "contemporaryUsage": "Bissa est l'appellation officielle au Burkina Faso. Busanga est employe dans la litterature anglophone et par les bases de donnees missionnaires (Joshua Project). Les deux termes sont acceptes et utilises sans connotation negative.",
       "linguisticFamily": "FLG_MANDE",
@@ -57,7 +58,8 @@
       "dialects": [
         "Barka (groupe nord)",
         "Lebir (groupe central)",
-        "Lere (groupe sud)"
+        "Lere (groupe sud)",
+        "Gormine ou Gourmyne (proche du Barka, région de Yargatala)"
       ],
       "vehicularRole": "La langue bissa n'est pas vehiculaire hors de la communaute. Le mooré (langue mossi) et le francais sont utilises comme langues de contact au Burkina Faso. La Bible complete a ete traduite en bissa."
     },
@@ -76,7 +78,7 @@
     "demography": {
       "totalPopulation": 1206000,
       "referenceYear": 2025,
-      "source": "Joshua Project 2025 (Busanga : Burkina Faso 721 000, Cote d'Ivoire 173 000) ; Wikipedia EN Bissa people (total estime 1,7 million)",
+      "source": "Joshua Project 2025 (Busanga : Burkina Faso 721 000, Cote d'Ivoire 173 000) ; Wikipedia EN Bissa people (total estime 1,7 million) Trois fiches décrivaient ce peuple avec des totaux différents (1 206 000, 1 100 000 et 600 000 personnes) sans pouvoir être conciliées sur les sources disponibles ; le total retenu reste 1 206 000, somme des pays ci-dessus. SIL Ethnologue place la langue bissa (bib) à « 1 million ou plus » de locuteurs.",
       "distributionByCountry": [
         {
           "country": "BFA",
@@ -120,6 +122,26 @@
         "title": "Ethnologue, Bissa [bib] – SIL International",
         "url": "https://www.ethnologue.com/language/bib/",
         "tier": "official"
+      },
+      {
+        "title": "101 Last Tribes — Bissa people",
+        "url": "http://www.101lasttribes.com/tribes/bissa.html",
+        "tier": "unverified"
+      },
+      {
+        "title": "Discover Burkina Faso — Culture des Bissa",
+        "url": "https://discover-burkinafaso.com/culture-languages-religions/",
+        "tier": "needs_review"
+      },
+      {
+        "title": "YouTube — Who Are the Bissa (Busanga) People?",
+        "url": "https://www.youtube.com/watch?v=bP0kGwHPQvk",
+        "tier": "unverified"
+      },
+      {
+        "title": "Facebook — A Rich Cultural Heritage: The Bissa People",
+        "url": "https://www.facebook.com/engrkogwuonyepatrick.patsallyonyeka/videos/949872800427144/",
+        "tier": "unverified"
       }
     ]
   },

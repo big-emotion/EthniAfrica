@@ -93,7 +93,7 @@ jobs:
         if: steps.before.outputs.pending != '0'
         uses: supabase/setup-cli@45a513f8c64c0bc8e0e3dfe572b5c95be85f6359 # v3.0.1
         with:
-          version: latest
+          version: 2.116.0
 
       # Production's Postgres is self-hosted on its own host and deliberately not
       # on the internet. Publishing 5432 to let a runner in would put the

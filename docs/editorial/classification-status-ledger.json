@@ -470,11 +470,6 @@
     "rationale": "Le litige est interne et savant : Bura et Pabir « souvent traites comme un meme groupe », la distinction portant sur le statut politique ; Babur est donne comme exonyme haoussa, non colonial."
   },
   {
-    "id": "PPL_BUSANSI",
-    "status": "contested",
-    "rationale": "La fiche dit Busansi exonyme mossi alors que le terme propre est Bissa, prefere par la communaute elle-meme au Burkina Faso et au Ghana, sans invention coloniale."
-  },
-  {
     "id": "PPL_BWABA",
     "status": "colonial-legacy",
     "rationale": "« Les premiers Europeens ont confondu les Bwa avec les Bobo, erreur perpetuee dans les documents coloniaux » ; les Bwa rejettent le terme Bobo."
@@ -2172,7 +2167,7 @@
   {
     "id": "PPL_TOMA_LOMA",
     "status": "contested",
-    "rationale": "Toma est le nom donne par les voisins Mandinka, Koniaka et Kissi, et la fiche argue surtout du decoupage conteste entre deux codes Ethnologue pour un seul peuple."
+    "rationale": "Toma est le nom donne par les voisins Mandinka, Koniaka et Kissi, repris par l'administration coloniale francaise ; Loma est l'usage du Liberia, et le meme peuple porte ainsi deux noms selon le pays."
   },
   {
     "id": "PPL_TONGAS",

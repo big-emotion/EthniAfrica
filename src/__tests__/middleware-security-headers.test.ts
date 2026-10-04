@@ -12,7 +12,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { validateApiKey } from "@/lib/api/auth";
 import { evaluateRateLimit } from "@/lib/api/rate-limit";
 import { createServerClient } from "@supabase/ssr";
-import { middleware } from "../middleware";
+import { proxy as middleware } from "../proxy";
 
 vi.mock("@supabase/ssr", () => ({
   createServerClient: vi.fn(),
