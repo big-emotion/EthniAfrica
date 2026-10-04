@@ -425,6 +425,12 @@ reseaux-help — à tout moment : où j'en suis, doublons, prochain geste
   description per network out, drawn by `social/harness/ethni_clip_reel.py` from a
   plan file. It publishes nothing, registers nothing and never clears the source's
   rights — it reminds.
+- **Found clips set against each other — `/ethniafrica-koulechov`.** Off the
+  chain and experimental: the « Le Swipe » format
+  (`docs/design/gabarits-social/LE-SWIPE.md`), a commentary-free montage under
+  3:00 where the order of clips sets competing versions side by side. It files
+  clips into a per-theme stash until the material is ready, then proposes a
+  running order the operator approves before any render.
 - **Anecdotes and proverbs are coming** as content types. Neither is on the site
   nor has a template yet; the chain notes such a subject as an idea until one
   exists.

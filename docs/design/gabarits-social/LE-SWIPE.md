@@ -167,7 +167,10 @@ versions against each other or merely react.
 ## Not decided here
 
 - The production profile and the library registration of a Swipe.
-- The Koulechov skill itself. It comes after the pilot: a set of videos and a
-  theme in, a proposed running order out, the rendered Swipe after approval.
+- The rendering half of the
+  [`ethniafrica-koulechov`](../../../.claude/skills/ethniafrica-koulechov/SKILL.md)
+  skill. The skill exists (collecting clips per theme, a proposed running order),
+  but the engine does not yet chain several sources or draw the push transition.
+  The pilot adds both, test first.
 - Whether a Swipe ever goes through the chain's gates once it stops being
   experimental.
