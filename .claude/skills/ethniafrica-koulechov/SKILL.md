@@ -89,15 +89,20 @@ clip first and build backwards from it.
 **Stop here.** Show the running order and wait for an explicit approval. The
 operator reorders, removes, adds, and supplies the translations.
 
-**4. Render a proof.** Write the Swipe plan, one segment per source, in the shape of
-`.claude/skills/ethniafrica-koulechov/references/swipe-plan.example.json`:
+**4. Render a proof.** Write the Swipe plan, one segment per passage, in the shape of
+`.claude/skills/ethniafrica-koulechov/references/swipe-plan.example.json`. The same
+source may come back in several segments when a second passage adds to the thread.
 
 - `source`, `clips`, `phrases` and `reframes` work exactly as in a clip-reel plan,
   in that segment's own source time;
 - `credit` holds whatever is known (`title`, `author`, `channel`, `year`). A
   network handle alone (`"channel": "@chaine"`) is enough;
 - `marker` is the optional context marker (`text`, `duration` in seconds);
-- `thumbnail.segment` names the segment the cover frame is taken from.
+- `thumbnail.segment` names the segment the cover frame is taken from;
+- `layout` defaults to `auto`: a wide source fills the width, a vertical one gets
+  a box the height of the screen, and nothing is cropped. Leave it alone unless
+  the operator asks: `fill` crops the wide archives badly, as the first Swipe
+  showed.
 
 Then:
 
@@ -109,9 +114,13 @@ python3 social/harness/ethni_swipe.py thumbnail plan.json <out>/cover.png
 
 The renderer is `social/harness/ethni_swipe.py`, tested by
 `social/harness/test_ethni_swipe.py`. It draws each segment with the clip-reel
-engine, then chains the segments with the feed scroll: a 0.25 s push, eased
-out, measured on an Instagram screen recording. **Change behaviour there, test
-first — never in a one-off script.**
+engine, then chains the segments with the feed scroll: a 0.6 s push, eased in
+and out, so that the eye sees it move. The incoming sound starts at full level.
+**Change behaviour there, test first — never in a one-off script.**
+
+A screen recording of a vertical video sits inside a page. Crop it to its own
+picture before planning: a `reframes` rect is rescaled to the source's own shape
+and would squash it.
 
 Validation separates two kinds of finding:
 

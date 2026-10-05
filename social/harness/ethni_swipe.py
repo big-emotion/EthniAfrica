@@ -16,9 +16,14 @@ Findings come in two kinds, by operator ruling (2026-10-05):
 - a **warning** is an editorial limit the operator may knowingly exceed: a credit
   with nothing in it, a context marker past eight words, a total past 3:00.
 
-The scroll is measured on an Instagram screen recording of the operator's own feed
-(2026-10-05): about 0.25 s for a full screen height, fast at first and slowing to a
-stop. A cubic ease-out reproduces that curve; a linear slide reads as a slideshow.
+The scroll first copied a finger's flick on an Instagram feed (0.25 s, cubic
+ease-out). On the first real Swipe (2026-10-05) the operator found it unreadable:
+the next clip seemed to appear from nowhere. In a feed the viewer makes the gesture
+and expects the change; in a montage nothing warns the eye, so the push now lasts
+0.6 s and eases in and out — a soft start, a soft landing.
+
+The incoming clip's sound starts at full level while the outgoing one fades: a fade-in
+swallowed the first word of every clip.
 """
 import json
 import pathlib
@@ -28,16 +33,18 @@ import tempfile
 
 import ethni_clip_reel as reel
 
-DEFAULT_TRANSITION = 0.25
+DEFAULT_TRANSITION = 0.6
+DEFAULT_LAYOUT = "auto"   # each source framed by its own shape, never cropped
 MIN_REST = 0.5            # seconds a clip must be on screen, still, between two scrolls
 MAX_MARKER_WORDS = 8
 MAX_TOTAL = 180.0         # past 3:00 a Reel is probably no longer placed in Instagram's Reels tab
 CREDIT_ORDER = ("title", "author", "channel", "year")
 
-# Push upward, eased out: ld(2) is how far the incoming clip has risen, in rows of
-# the plane being drawn. P runs from 1 to 0, so 1 - P^3 is a cubic ease-out.
+# Push upward, eased in and out: P runs from 1 to 0, so ld(1) = 1 - P is the elapsed
+# share; ld(2) is how far the incoming clip has risen, in rows of the plane being drawn.
 _PUSH_UP = (
-    "st(2,H*(1-pow(P,3)));"
+    "st(1,1-P);"
+    "st(2,H*if(lt(ld(1),0.5),4*pow(ld(1),3),1-pow(2-2*ld(1),3)/2));"
     "if(lt(Y,H-ld(2)),"
     "if(eq(PLANE,0),a0(X,Y+ld(2)),if(eq(PLANE,1),a1(X,Y+ld(2)),a2(X,Y+ld(2)))),"
     "if(eq(PLANE,0),b0(X,Y-H+ld(2)),if(eq(PLANE,1),b1(X,Y-H+ld(2)),b2(X,Y-H+ld(2)))))"
@@ -81,6 +88,7 @@ def segment_plan(segment, plan=None):
         value = segment.get(key, (plan or {}).get(key))
         if value is not None:
             sub[key] = value
+    sub.setdefault("layout", DEFAULT_LAYOUT)
     if segment.get("marker"):
         sub["banner"] = segment["marker"]
     line = credit_line(segment.get("credit"))
@@ -182,7 +190,7 @@ def render_swipe(plan, out_path):
         for n, offset in enumerate(transition_offsets(durations, transition), start=1):
             graph.append(f"{video}[p{n}]xfade=transition=custom:duration={transition}:offset={offset}:"
                          f"expr='{_PUSH_UP}'[v{n}]")
-            graph.append(f"{audio}[{n}:a]acrossfade=d={transition}[a{n}]")
+            graph.append(f"{audio}[{n}:a]acrossfade=d={transition}:c1=tri:c2=nofade[a{n}]")
             video, audio = f"[v{n}]", f"[a{n}]"
         mark_png = work / "mark.png"
         ethni_brand.filigrane(ethni_brand.FILIGRANE_PX, (255, 255, 255)).save(mark_png)
