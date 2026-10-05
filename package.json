@@ -138,7 +138,7 @@
     "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.3",
     "@testing-library/user-event": "^14.6.7",
-    "@types/node": "^26.6.2",
+    "@types/node": "^26.6.4",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitest/coverage-v8": "4.1.11",
@@ -154,7 +154,7 @@
     "happy-dom": "^20.14.5",
     "husky": "^9.1.7",
     "knip": "^5.88.1",
-    "lint-staged": "^17.5.1",
+    "lint-staged": "^17.6.0",
     "postcss": "^8.5.28",
     "prettier": "3.9.9",
     "puppeteer": "^25.12.0",
@@ -163,8 +163,8 @@
     "tinyglobby": "^0.2.17",
     "tsx": "^4.23.15",
     "typescript": "^6.0.3",
-    "vite": "^8.3.1",
+    "vite": "^8.3.2",
     "vitest": "^4.1.11",
-    "wait-on": "^9.1.0"
+    "wait-on": "^9.5.1"
   }
 }
