@@ -1,6 +1,6 @@
 ---
 name: ethniafrica-koulechov
-description: Build an EthniAfrica « Swipe » — a vertical montage under three minutes of found clips (archive first) on one theme, with no narration, chained by a vertical scroll, where the choice and order of the clips set competing versions of a subject side by side (the Kuleshov effect, as in Canal+'s Le Zapping). Two modes. Collect files a clip the operator found into the theme's stash and says whether the stash is ready. Produce checks where the sources lean, proposes a running order (conducteur) for the operator to approve, then renders a proof and the final package (reel, cover, one description per network). Use for « range ce clip pour un swipe », « où en est mon swipe X », « fais un swipe sur X », « le swipe », « koulechov », or /ethniafrica-koulechov. Social-only and experimental, outside the idee → structure → produire chain; it publishes nothing, schedules nothing and clears no rights.
+description: Build an EthniAfrica « Swipe » — a vertical montage of about three minutes (the first ran 4:36) of found clips (archive first) on one theme, with no narration, chained by a vertical scroll, where the choice and order of the clips set competing versions of a subject side by side (the Kuleshov effect, as in Canal+'s Le Zapping). Two modes. Collect files a clip the operator found into the theme's stash and says whether the stash is ready. Produce checks where the sources lean, proposes a running order (conducteur) for the operator to approve, then renders a proof and the final package (reel, cover, one description per network). Use for « range ce clip pour un swipe », « où en est mon swipe X », « fais un swipe sur X », « le swipe », « koulechov », or /ethniafrica-koulechov. Social-only and experimental, outside the idee → structure → produire chain; it publishes nothing, schedules nothing and clears no rights.
 ---
 
 # Koulechov — found clips in, a Swipe out
@@ -37,7 +37,12 @@ directory. The entry shape is in
 For each clip:
 
 1. **Record** the file or link, title · channel · year, its language, and the
-   moments if the operator gave them (in and out points, as « 1:12–1:34 »).
+   moments if the operator gave them (in and out points, as « 1:12–1:34 »). For a
+   YouTube link, read its title and channel from
+   `https://www.youtube.com/oembed?url=<link>&format=json` rather than asking: a
+   credit is never invented. A film extract may name an author further up (the
+   Chinese engineer's clip is a piece of _Empire of Dust_, by Bram Van Paesschen):
+   credit the work, then say who posted the extract.
 2. **Name the version it carries**, in one line, in the speaker's terms
    (« le lingala a été inventé par les Belges »). Never in the project's terms.
 3. **Flag what is missing:** a year nobody knows, a passage in Lingala, Wolof,
@@ -51,8 +56,11 @@ make no promise beyond them:
 - **a clip that can lean**: is there a clip carrying the version the sources
   support, or the one saying it is not settled? Without one, the Swipe has no
   ending;
-- **usable duration**, estimated on 15–25 s per kept moment, against the
-  target of 7 to 10 clips under 3:00;
+- **usable duration**, estimated on 15–25 s per kept moment, against a target of
+  about three minutes. 3:00 is a target, not a lock: the first Swipe ran 4:36
+  and the operator accepted it. Past 3:00 it only loses Instagram (see step 5);
+- **the registers**: at least one funny clip and one serious one. A Swipe of
+  versions alone, with nothing to laugh at, was judged flat on the first try;
 - **open blockers**: translations still to come, and moments not yet chosen. A
   missing title, author or year is not a blocker: the credit shows whatever is
   known, and a handle alone is enough.
@@ -79,12 +87,47 @@ from the clip-reel skill:
 `.claude/skills/ethniafrica-clip-reel/SKILL.md`, step 1). Its two measured traps
 apply here too: a source that repeats itself, and crosstalk at a cut.
 
+Four more, measured on the first Swipe (2026-10-05):
+
+- **One model per language.** Transcribe each source in its own language
+  (`--lang en --model small.en` for English). A short in English read as French
+  gave nonsense. A passage in a language the model does not know gives text that
+  looks fluent and is invented: the engineer's Mandarin came back as English
+  filler. For those, read the film's own burned-in subtitles instead.
+- **Cut in the silence, never on a guess.** Measure the level of the audio around
+  each planned end (a 50 ms window is enough) and put the cut in the quiet stretch
+  that follows the last word. Two passages were cut too early because their end was
+  read from a sentence that had not finished. The word times give the start of the
+  quiet, the level gives its end.
+- **Read the end of the sentence twice.** When the last words are hard to make
+  out, transcribe the tail again with the `medium` model and tell the operator what
+  is uncertain, instead of writing the most plausible words as if they were heard.
+- **A source may already carry subtitles.** INA shorts and the film extracts burn
+  theirs into the picture, so ours double them. Say so to the operator, and do not
+  pick a cover frame with one cut off at the edge.
+
 **3. Propose the running order.** Use the shape in
 `.claude/skills/ethniafrica-koulechov/references/conducteur.md`: three lines on
 the arc, then one row per clip with its role (opens, contradicts, raises the
 stakes, makes laugh, leans, closes). Cut each clip on one complete thought: a gag
 on its punchline, a serious passage at the end of a sentence. Choose the last
 clip first and build backwards from it.
+
+Three checks before the order is shown, each one a defect of the first Swipe:
+
+- **Every register is allowed, and the order must show them** (humour, absurd,
+  dismay, sadness, gravity). Count them. If nothing makes the viewer laugh, say so
+  and look in the stash for a clip that does, before presenting.
+- **A neighbour can confirm a prejudice.** Two clips side by side say more than
+  each alone (the whole point), so before placing one, ask what the clip just
+  before it asserts about a people, and whether this one would seem to prove it.
+  A sapeurs' clip right behind « les Congolais dépensent sans stress » would have
+  confirmed the stereotype by itself; far from it, after the schoolchildren on
+  make-up, it reads as a different question. Name the risk to the operator
+  instead of deciding alone.
+- **Give a passage the time its joke needs.** A gag cut on a line that is not the
+  punchline reads as an error. If the operator says a passage « coupe trop tôt »,
+  look for the line the speaker is building toward, then re-measure the silence.
 
 **Stop here.** Show the running order and wait for an explicit approval. The
 operator reorders, removes, adds, and supplies the translations.
@@ -141,16 +184,67 @@ Then check it the way a reader would:
 - pull a frame at every cut and look: the credit line belongs to the clip
   under it, the scroll goes upward, the source's own logos are still there.
 
-**5. Deliver.** The final reel and the cover, with the theme word on the cover
-and never in the video. Then one description per network, from
+**5. Deliver.** The final reel and the cover. The cover carries **the question the
+Swipe answers** (« Sous-développée, l'Afrique ? »), over a frame of the montage,
+and it never appears in the video (operator ruling, 2026-10-05; the theme word
+alone was tried and dropped). Choose the frame by what it says before anything
+else: **two people facing each other**, since that is what the Swipe does. A lone
+face reads as the answer to the question. A smiling speaker beside the question
+reads as his reply. Take a frame with no player buttons and, where possible, no
+burned-in subtitle. Render two or three candidates and show them with a
+recommendation.
+
+Then one description per network, from
 `.claude/skills/ethniafrica-clip-reel/references/network-captions.md`: the theme,
 the credited sources, and a question that sends the debate back to the comments
-(« Et toi, quelle version on t'a racontée ? »). Close with a report that lists:
+(« Et toi, quelle version on t'a racontée ? »). Attribute each position to who
+holds it; never state a claim a clip makes that the sources do not settle, such as
+« il n'y a aucune étoile Michelin en Afrique ». Say only what the speaker says.
+
+**Where it can go, by length.** Check the networks' limits at the time (they
+move):
+
+| Network   | A Swipe over 3:00                                              |
+| --------- | -------------------------------------------------------------- |
+| TikTok    | yes                                                            |
+| Facebook  | yes, no length limit since June 2025                           |
+| YouTube   | yes, as a regular video (a Short stops at 3 min), with a title |
+| LinkedIn  | possible (10 min)                                              |
+| Instagram | risky: past 3 min a Reel probably loses the Reels tab          |
+| X         | no, except with a subscription (about 2 min 20 otherwise)      |
+
+Close with a report that lists:
 
 - the files and where they are;
 - what was cut and why;
 - every claim a clip makes that the sources do not support;
+- what is uncertain (the end of a sentence heard badly, a name taken from a
+  narrator, an English subtitle on the cover);
 - the rights reminder: a credit line is not a licence.
+
+**5 bis. File it in the library** once the operator says it is validated. The
+Swipe is outside the chain, so nothing files it for you, and
+`ethniafrica-reseaux-help` cannot see a Swipe that is not in the ledger. With
+`ETHNIAFRICA_SOCIAL_POSTS` set:
+
+```
+node social/tools/library/register-post.mjs --id <slug> --dir <Themes-Sujet>/<slug> \
+  --title "…" --subject "Thème · …" --pillar EthniAfrica --status pret \
+  --family comparison --format video --copy <subject>/out/descriptions.md \
+  --video <slug>.video-9x16.mp4=<subject>/out/<final>.mp4 --notes "…"     # dry run
+# the same line with --write once the shelf shown is Valide
+node <library>/00-Index/sync-deliverables.mjs          # report first
+node <library>/00-Index/sync-deliverables.mjs --write
+node <library>/00-Index/build-index.mjs                # writes post.md
+```
+
+Register **the video alone**: the ledger sends a post with several files and no
+`selected` to Brouillon, and the dry run prints the shelf it would use. Copy the
+cover by hand to the folder's root. Record the three facts the library cannot
+guess in `--notes`: that rights were not obtained, that no site page exists, and
+which networks the length excludes. No `--link-path`: a Swipe has no fiche, so its
+visits arrive as « Direct / None »; say so, and ask whether a page is worth
+linking if the operator wants the post measured.
 
 **6. After publication.** Remind the operator to record the figures for the
 one-month review: views, share from non-followers, average watch time, saves,
@@ -164,4 +258,6 @@ against each other.
 - leaning where the sources do not lean;
 - narration, added music, or a card that explains the thread;
 - a machine translation of a passage in an African language;
+- a transcript of a language the model does not know, presented as heard;
+- a cover frame that makes the question look answered by a lone speaker;
 - writing into the repository, publishing, scheduling, or clearing rights.
