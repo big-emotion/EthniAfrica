@@ -35,6 +35,7 @@
     "check:production-ledger": "tsx scripts/ci/checkProductionLedger.ts --selftest && tsx scripts/ci/checkProductionLedger.ts",
     "check:rls-coverage": "tsx scripts/ci/checkRlsCoverage.ts",
     "check:skill-parity": "tsx scripts/ci/checkSkillParity.ts",
+    "check:skill-drift": "tsx scripts/ci/checkSkillDrift.ts",
     "check:translation-parity": "tsx scripts/ci/checkTranslationParity.ts",
     "check:workflow-shell": "tsx scripts/checkWorkflowShellSyntax.ts",
     "confluence:bootstrap:build": "tsx scripts/buildConfluenceBootstrap.ts",
