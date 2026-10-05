@@ -188,6 +188,7 @@ def _two_colour_plan(tmp):
             {"source": str(blue), "clips": [[0.0, 2.0]], "phrases": [], "credit": {"channel": "@bleu"}},
         ],
         "transition": 0.25,
+        "outro": False,
     }
 
 
@@ -256,6 +257,37 @@ def _loudness(video, start, length):
                          check=True, capture_output=True).stdout
     samples = np.frombuffer(raw, dtype=np.float32)
     return float(np.sqrt(np.mean(samples ** 2)))
+
+
+def test_a_swipe_ends_with_a_last_scroll_onto_the_approved_outro():
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = pathlib.Path(tmp)
+        p = _two_colour_plan(tmp)
+        del p["outro"]
+        out = tmp / "swipe.mp4"
+        swipe.render_swipe(p, out)
+        # two 2 s clips and the 5 s outro, minus one 0.25 s scroll per join
+        assert abs(float(_probe(out, "format=duration")["format"]["duration"]) - 8.5) < 0.25
+        last = _frame(out, 8.2)
+        ivory = last.getpixel((540, 40))
+        assert min(ivory) > 225, "the outro's light ground fills the screen at the end"
+        assert _bluer(_frame(out, 3.0).getpixel((20, 1860))), "the clips still play before it"
+
+
+def test_the_outro_can_be_left_off():
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = pathlib.Path(tmp)
+        out = tmp / "swipe.mp4"
+        swipe.render_swipe(_two_colour_plan(tmp), out)
+        assert abs(float(_probe(out, "format=duration")["format"]["duration"]) - 3.75) < 0.2
+
+
+def test_the_three_minute_warning_counts_the_outro():
+    clip = segment(clips=[[0.0, 88.0]], phrases=[])
+    _, warnings = swipe.check_plan(plan(segments=[clip, dict(clip, source="b.mp4")]))
+    assert any("3:00" in w for w in warnings), "176 s of clips plus the outro is past 3:00"
+    _, warnings = swipe.check_plan(plan(segments=[clip, dict(clip, source="b.mp4")], outro=False))
+    assert not any("3:00" in w for w in warnings)
 
 
 def test_the_next_clip_is_heard_from_its_first_word_not_faded_in():

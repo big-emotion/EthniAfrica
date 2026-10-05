@@ -116,6 +116,8 @@ The renderer is `social/harness/ethni_swipe.py`, tested by
 `social/harness/test_ethni_swipe.py`. It draws each segment with the clip-reel
 engine, then chains the segments with the feed scroll: a 0.6 s push, eased in
 and out, so that the eye sees it move. The incoming sound starts at full level.
+A last scroll lands on the reels' approved outro (5 s, counted in the 3:00);
+`"outro": false` leaves it off.
 **Change behaviour there, test first — never in a one-off script.**
 
 A screen recording of a vertical video sits inside a page. Crop it to its own

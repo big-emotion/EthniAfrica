@@ -88,6 +88,12 @@ Swipe (2026-10-05) because it cut the wide archives badly.
 moments of the Swipe when a second passage adds to the thread (operator ruling,
 2026-10-05). Each segment is cut and credited on its own.
 
+**Every Swipe ends on the reels' outro.** One last scroll lands on the approved
+social-networks outro (`social/harness/outro-reseaux-sociaux.mp4`, 5 s), used as it
+is (operator request, 2026-10-05). The watermark leaves once that scroll has landed,
+since the outro carries the logo. The outro counts toward the 3:00 target.
+`"outro": false` leaves it off.
+
 **The scroll lasts 0.6 s and eases in and out.** It first copied a finger's flick,
 measured on an Instagram screen recording (200–250 ms, fastest at the start). On the
 first real Swipe that read as a cut: the next clip seemed to appear from nowhere. In

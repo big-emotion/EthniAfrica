@@ -35,6 +35,7 @@ import ethni_clip_reel as reel
 
 DEFAULT_TRANSITION = 0.6
 DEFAULT_LAYOUT = "auto"   # each source framed by its own shape, never cropped
+OUTRO_SECONDS = 5.0       # the approved social-networks outro (ethni_montage.FIN), signs every Swipe
 MIN_REST = 0.5            # seconds a clip must be on screen, still, between two scrolls
 MAX_MARKER_WORDS = 8
 MAX_TOTAL = 180.0         # past 3:00 a Reel is probably no longer placed in Instagram's Reels tab
@@ -131,7 +132,7 @@ def check_plan(plan):
             if duration - joins * transition < MIN_REST:
                 errors.append(f"segments[{index}]: {duration:.2f}s leaves under {MIN_REST}s at rest between "
                               f"its transitions — lengthen the clip or shorten the transition")
-        total = total_duration(durations, transition)
+        total = total_duration(durations + ([OUTRO_SECONDS] if plan.get("outro", True) else []), transition)
         if total > MAX_TOTAL:
             minutes, seconds = divmod(round(total), 60)
             warnings.append(f"total: {minutes}:{seconds:02d}, over 3:00 — probably out of Instagram's Reels tab")
@@ -161,6 +162,24 @@ def _audio_duration(path):
     return float(out.strip())
 
 
+def _outro_piece(path):
+    """The approved outro, as a piece the chain can join: 1080 x 1920, 30 fps, a silent track.
+
+    It is the reels' own sign-off, used as it is — a Swipe ends on the same card as every
+    other video, reached by one last scroll. Its checksum is held like the montage holds it.
+    """
+    import hashlib
+    from ethni_montage import FIN, FIN_SHA256
+    if not hashlib.sha256(FIN.read_bytes()).hexdigest().startswith(FIN_SHA256):
+        raise ValueError("the social-networks outro is not the approved asset")
+    reel._run(["ffmpeg", "-y", "-v", "error", "-i", str(FIN),
+               "-f", "lavfi", "-t", str(OUTRO_SECONDS), "-i", "anullsrc=r=44100:cl=stereo",
+               "-vf", f"scale={reel.WIDTH}:{reel.HEIGHT},setsar=1,fps={reel.FPS}", "-t", str(OUTRO_SECONDS),
+               "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-crf", "16", "-pix_fmt", "yuv420p",
+               "-c:a", "aac", str(path)])
+    return path
+
+
 def render_swipe(plan, out_path):
     """Draw every segment, chain them with the push, lay the mark once. Writes only outside a git checkout."""
     warnings = _checked(plan)
@@ -178,6 +197,9 @@ def render_swipe(plan, out_path):
             piece = work / f"segment_{index}.mp4"
             reel.render_reel(segment_plan(segment, plan), piece, watermark=False)
             pieces.append(piece)
+        with_outro = plan.get("outro", True)
+        if with_outro:
+            pieces.append(_outro_piece(work / "outro.mp4"))
 
         # A rendered piece's picture can end a few frames before its sound (measured:
         # 1.9 s of video under 2.0 s of audio). xfade stops where its first input stops,
@@ -187,14 +209,17 @@ def render_swipe(plan, out_path):
         graph = [f"[{i}:v]tpad=stop_mode=clone:stop_duration=1,trim=duration={d},setpts=PTS-STARTPTS[p{i}]"
                  for i, d in enumerate(durations)]
         video, audio = "[p0]", "[0:a]"
-        for n, offset in enumerate(transition_offsets(durations, transition), start=1):
+        offsets = transition_offsets(durations, transition)
+        for n, offset in enumerate(offsets, start=1):
             graph.append(f"{video}[p{n}]xfade=transition=custom:duration={transition}:offset={offset}:"
                          f"expr='{_PUSH_UP}'[v{n}]")
             graph.append(f"{audio}[{n}:a]acrossfade=d={transition}:c1=tri:c2=nofade[a{n}]")
             video, audio = f"[v{n}]", f"[a{n}]"
         mark_png = work / "mark.png"
         ethni_brand.filigrane(ethni_brand.FILIGRANE_PX, (255, 255, 255)).save(mark_png)
-        graph.append(f"{video}[{len(pieces)}:v]overlay=(W-w)/2:{reel.WATERMARK_Y},format=yuv420p[out]")
+        # The outro carries the logo itself: the mark leaves once the last scroll has landed.
+        until = f":enable='lt(t,{offsets[-1] + transition})'" if with_outro else ""
+        graph.append(f"{video}[{len(pieces)}:v]overlay=(W-w)/2:{reel.WATERMARK_Y}{until},format=yuv420p[out]")
         inputs = [arg for piece in pieces for arg in ("-i", str(piece))] + ["-i", str(mark_png)]
         out.parent.mkdir(parents=True, exist_ok=True)
         reel._run(["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", ";".join(graph),
