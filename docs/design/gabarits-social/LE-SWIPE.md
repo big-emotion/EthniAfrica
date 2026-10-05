@@ -59,11 +59,11 @@ continuation of the format, not a side effect.
 
 | Layer | Content | When |
 | --- | --- | --- |
-| Credit line (synthé) | title · author or channel · year | throughout each clip |
+| Credit line (synthé) | whatever is known, in this order: title · author · channel · year. A network handle alone (« @chaine ») is enough. | throughout each clip, just under the frame |
 | Context marker | place, date, broadcaster, in a few words, never a sentence | 2–3 s at the start of a clip, only when the image does not already say it |
 | Subtitles | French transcription; French translation when the audio is in another language | continuous |
 | Watermark | EthniAfrica | throughout |
-| Transition | the next clip pushes the previous one upward (vertical push), as a feed scroll does | between clips |
+| Transition | the next clip pushes the previous one upward (vertical push), as a feed scroll does: 0.25 s for a full screen, fast at first and slowing to a stop | between clips |
 
 The scroll imitates the gesture, not any network's interface: no copied buttons,
 icons or layout, which would imitate a brand.
@@ -72,13 +72,27 @@ No narration, no added music, no explanatory card. The context marker situates.
 It never interprets.
 
 The framing follows the [`clip-reel`](../../../.claude/skills/ethniafrica-clip-reel/SKILL.md)
-reel: 9:16, the clip framed over its own blur, subtitles in French. That skill's
-engine is the starting point for the pilot. Chaining several clips and the push
-transition are the additions.
+reel: 9:16, the clip framed over its own blur, subtitles in French. The Swipe
+renderer, `social/harness/ethni_swipe.py`, draws each segment with that engine,
+then chains the segments and lays the watermark once, so that it stays still
+through every scroll.
+
+The scroll timing was measured on 2026-10-05, on an Instagram screen recording
+the operator supplied. Four transitions each moved a full screen in 200–250 ms,
+with the fastest motion in the first frames, then a slowdown. The engine
+reproduces that with a cubic ease-out over 0.25 s. A linear slide reads as a
+slideshow, not as a feed.
+
+**Never blocking.** The credit, the marker's length and the total duration are
+editorial limits the operator may knowingly exceed (operator ruling,
+2026-10-05). The engine reports them as warnings and still renders. It refuses
+only what it cannot draw correctly: fewer than two segments, a phrase straddling
+a cut, or a clip too short to rest between two scrolls.
 
 ## Rhythm and length
 
-- **Under 3:00 in total.** One file for every network. Past 3:00, a Reel probably
+- **Under 3:00 in total, as a target, not a lock.** One file for every network. A
+  longer Swipe renders, with a warning. Past 3:00, a Reel probably
   stops being placed in Instagram's Reels tab: Socialinsider found a median of
   4,428 views above 180 s against about 9,000 at 120–180 s, across 6 M brand Reels
   in January–June 2026. That study covers brands, not creators.
@@ -167,10 +181,9 @@ versions against each other or merely react.
 ## Not decided here
 
 - The production profile and the library registration of a Swipe.
-- The rendering half of the
+- Whether the measured scroll still feels right on a real Swipe. The
   [`ethniafrica-koulechov`](../../../.claude/skills/ethniafrica-koulechov/SKILL.md)
-  skill. The skill exists (collecting clips per theme, a proposed running order),
-  but the engine does not yet chain several sources or draw the push transition.
-  The pilot adds both, test first.
+  skill and its renderer exist, but they have only been tested on synthetic
+  footage. The Lingala pilot is their first real test.
 - Whether a Swipe ever goes through the chain's gates once it stops being
   experimental.

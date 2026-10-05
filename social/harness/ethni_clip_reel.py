@@ -17,6 +17,8 @@ this format got it wrong once:
   of source time, instead of dropping the words spoken under the chrome;
 - a plan may carry a `banner`: one complete sentence above the picture for its first
   `duration` seconds — the claim a debate is about, never chunked like a caption;
+- a plan may carry a `credit_line`, drawn under the frame for the whole piece. A
+  credit is information the operator may only partly have, so it never refuses;
 - speakers 0 and 1 are the two people exchanging; speaker 2 is a **host** (a moderator,
   an announcer) in a neutral ink, so that their line is captioned without being
   attributed to either side;
@@ -52,6 +54,10 @@ BANNER_Y = 70             # the banner sits in the blurred ground above the fram
 BANNER_HEIGHT = 240
 BANNER_FONT_PX = 50
 BANNER_LINE_PX = 60
+CREDIT_Y = 975            # the credit sits just under the frame box (which ends at y = 960), like a TV synthé
+CREDIT_HEIGHT = 110
+CREDIT_FONT_PX = 36
+CREDIT_LINE_PX = 46
 FPS = 30
 HOST = 2
 
@@ -325,8 +331,37 @@ def _banner_band(sentence, font):
     return band
 
 
-def render_reel(plan, out_path):
-    """Cut, frame, caption and sign the video. Writes only outside a git checkout."""
+def _credit_band(credit, font):
+    """The credit line, left-aligned under the frame, on a transparent band.
+
+    A credit is information the operator may only partly have, so it never refuses:
+    past two lines the end is elided rather than the plan rejected.
+    """
+    from PIL import Image, ImageDraw
+    band = Image.new("RGBA", (WIDTH, CREDIT_HEIGHT), (0, 0, 0, 0))
+    pen = ImageDraw.Draw(band)
+    max_width = WIDTH - 120
+    rows = wrap_banner(credit, lambda text: pen.textlength(text, font=font), max_width)
+    if len(rows) > 2:
+        rows = rows[:2]
+        while pen.textlength(rows[1] + " …", font=font) > max_width and " " in rows[1]:
+            rows[1] = rows[1].rsplit(" ", 1)[0]
+        rows[1] += " …"
+    y = (CREDIT_HEIGHT - len(rows) * CREDIT_LINE_PX) // 2
+    for row in rows:
+        pen.text((60, y), row, font=font, fill=(255, 255, 255), stroke_width=4, stroke_fill="black")
+        y += CREDIT_LINE_PX
+    return band
+
+
+def render_reel(plan, out_path, watermark=True):
+    """Cut, frame, caption and sign the video. Writes only outside a git checkout.
+
+    `watermark=False` leaves the mark off, for a piece that is chained into a longer
+    video which carries one mark of its own — a mark drawn per piece would scroll
+    away with every transition. A plan's optional `credit_line` is drawn under the
+    frame for the whole piece.
+    """
     _checked(plan)
     if not _has_audio(plan["source"]):
         raise ValueError(f"{plan['source']} has no audio track — a reel made of a talking exchange needs one")
@@ -404,23 +439,35 @@ def render_reel(plan, out_path):
         _run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(work / "captions.txt"),
               "-vf", f"fps={FPS},format=argb", "-c:v", "qtrle", str(captions_video)])
 
-        mark = ethni_brand.filigrane(ethni_brand.FILIGRANE_PX, (255, 255, 255))
-        mark_png = work / "mark.png"
-        mark.save(mark_png)
         out.parent.mkdir(parents=True, exist_ok=True)
-        inputs = ["-i", str(base), "-i", str(captions_video), "-i", str(mark_png)]
-        stack = f"[0:v][1:v]overlay=0:{CAPTION_BAND_Y}[s];[s][2:v]overlay=(W-w)/2:{WATERMARK_Y}[w]"
+        inputs = ["-i", str(base), "-i", str(captions_video)]
+        steps = [f"[0:v][1:v]overlay=0:{CAPTION_BAND_Y}"]
+
+        def lay(png, position):
+            inputs.extend(["-i", str(png)])
+            steps.append(f"[{len(inputs) // 2 - 1}:v]overlay={position}")
+
+        if watermark:
+            mark_png = work / "mark.png"
+            ethni_brand.filigrane(ethni_brand.FILIGRANE_PX, (255, 255, 255)).save(mark_png)
+            lay(mark_png, f"(W-w)/2:{WATERMARK_Y}")
+        if plan.get("credit_line"):
+            credit_png = work / "credit.png"
+            _credit_band(plan["credit_line"], ImageFont.truetype(str(HARNESS / "fonts" / "NotoSans-Bold.ttf"),
+                                                                 CREDIT_FONT_PX)).save(credit_png)
+            lay(credit_png, f"0:{CREDIT_Y}")
         banner = plan.get("banner")
         if banner:
             banner_png = work / "banner.png"
             _banner_band(banner["text"], ImageFont.truetype(str(HARNESS / "fonts" / "Montserrat-ExtraBold.ttf"),
                                                             BANNER_FONT_PX)).save(banner_png)
-            inputs += ["-i", str(banner_png)]
-            stack += f";[w][3:v]overlay=0:{BANNER_Y}:enable='lt(t,{banner['duration']})'[o]"
-        else:
-            stack = stack.replace("[w]", "[o]")
+            lay(banner_png, f"0:{BANNER_Y}:enable='lt(t,{banner['duration']})'")
+        # Each overlay reads the previous step's output; the first reads the two inputs.
+        stack = steps[0] + "[s0]"
+        for n, step in enumerate(steps[1:], start=1):
+            stack += f";[s{n - 1}]{step}[s{n}]"
         _run(["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", stack,
-              "-map", "[o]", "-map", "0:a", "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p",
+              "-map", f"[s{len(steps) - 1}]", "-map", "0:a", "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p",
               "-c:a", "copy", "-shortest", str(out)])
     return out
 

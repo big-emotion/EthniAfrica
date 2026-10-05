@@ -53,7 +53,9 @@ make no promise beyond them:
   ending;
 - **usable duration**, estimated on 15–25 s per kept moment, against the
   target of 7 to 10 clips under 3:00;
-- **open blockers**: translations, unknown years, identified moments.
+- **open blockers**: translations still to come, and moments not yet chosen. A
+  missing title, author or year is not a blocker: the credit shows whatever is
+  known, and a handle alone is enough.
 
 **Ready** means at least three distinct versions, one clip that can lean, and
 enough material for about two minutes. Say « ready » or « not yet, missing:… »,
@@ -87,24 +89,46 @@ clip first and build backwards from it.
 **Stop here.** Show the running order and wait for an explicit approval. The
 operator reorders, removes, adds, and supplies the translations.
 
-**4. Render a proof.** For the frame, captions, cover and descriptions, use the
-clip-reel engine (`social/harness/ethni_clip_reel.py`, tests in
-`social/harness/test_ethni_clip_reel.py`).
+**4. Render a proof.** Write the Swipe plan, one segment per source, in the shape of
+`.claude/skills/ethniafrica-koulechov/references/swipe-plan.example.json`:
 
-**Known gap, measured on 2026-10-05:** that engine cuts several ranges from
-**one** source, but does not take several sources, a credit line per clip, a
-context marker, or a push transition. The first real Swipe adds them **in that
-engine, test first**. Never in a one-off script. Propose the plan extension to
-the operator before writing it. Until it exists, say so instead of assembling by
-hand.
+- `source`, `clips`, `phrases` and `reframes` work exactly as in a clip-reel plan,
+  in that segment's own source time;
+- `credit` holds whatever is known (`title`, `author`, `channel`, `year`). A
+  network handle alone (`"channel": "@chaine"`) is enough;
+- `marker` is the optional context marker (`text`, `duration` in seconds);
+- `thumbnail.segment` names the segment the cover frame is taken from.
+
+Then:
+
+```
+python3 social/harness/ethni_swipe.py validate plan.json
+python3 social/harness/ethni_swipe.py swipe plan.json <out>/swipe.mp4
+python3 social/harness/ethni_swipe.py thumbnail plan.json <out>/cover.png
+```
+
+The renderer is `social/harness/ethni_swipe.py`, tested by
+`social/harness/test_ethni_swipe.py`. It draws each segment with the clip-reel
+engine, then chains the segments with the feed scroll: a 0.25 s push, eased
+out, measured on an Instagram screen recording. **Change behaviour there, test
+first — never in a one-off script.**
+
+Validation separates two kinds of finding:
+
+- **Refused (errors):** a plan that cannot be drawn correctly. That means fewer
+  than two segments, a phrase straddling a cut, or a clip too short to rest
+  between its two scrolls.
+- **Accepted with a warning:** the editorial limits the operator may knowingly
+  exceed. That means a segment with no credit at all, a marker over eight
+  words, or a total over 3:00. **Pass each warning on to the operator**, never
+  silently.
 
 Then check it the way a reader would:
 
 - re-transcribe the rendered audio: no clipped first words, no bleed from the
   next clip;
 - pull a frame at every cut and look: the credit line belongs to the clip
-  under it, the scroll goes upward, the source's own logos are still there;
-- check the total is under 3:00.
+  under it, the scroll goes upward, the source's own logos are still there.
 
 **5. Deliver.** The final reel and the cover, with the theme word on the cover
 and never in the video. Then one description per network, from
@@ -129,5 +153,4 @@ against each other.
 - leaning where the sources do not lean;
 - narration, added music, or a card that explains the thread;
 - a machine translation of a passage in an African language;
-- a total over 3:00;
 - writing into the repository, publishing, scheduling, or clearing rights.
