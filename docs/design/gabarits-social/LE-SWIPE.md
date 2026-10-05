@@ -32,14 +32,21 @@ continuation of the format, not a side effect.
 ## Editorial rules
 
 1. **A theme, then a thread.** The theme is a single word or name (racisme,
-   sous-développement, Côte d'Ivoire, Cameroun, lingala). It appears on the
-   cover and in the caption, never in the video. One theme can carry several
-   Swipes. Each Swipe has a **thread**, written down before cutting and never
-   shown: what the order of the clips is meant to make the viewer see.
+   sous-développement, Côte d'Ivoire, Cameroun, lingala). **The cover carries the
+   question the Swipe answers**, not the bare word (« Sous-développée, l'Afrique ? »;
+   operator ruling, 2026-10-05, after the word alone was tried): the question makes
+   a viewer hold an answer, and the montage then shows the others. The theme word
+   itself stays in the caption. Neither appears in the video. One theme can carry
+   several Swipes. Each Swipe has a **thread**, written down before cutting and
+   never shown: what the order of the clips is meant to make the viewer see.
 2. **Every emotion is allowed.** Humour, the absurd, the dismaying, the sad, the
    serious. A Swipe mixes registers, and the message often lands better through
    laughter (operator ruling, 2026-10-04). A clip may take on a meaning from what
-   surrounds it. That is the format, and it is deliberate.
+   surrounds it. That is the format, and it is deliberate. The registers must
+   actually be there: the first Swipe was judged short of humour until clips from
+   two sources were added and a passage was allowed to reach its punchline. A
+   neighbour can also confirm a prejudice: before placing a clip, ask what the one
+   before it asserts about a people and whether this one would seem to prove it.
 3. **A clip is never turned against its speaker.** It may say more because of
    its neighbour. It is never cut so that its speaker appears to say the
    opposite of what they said.
@@ -114,7 +121,10 @@ a cut, or a clip too short to rest between two scrolls.
   longer Swipe renders, with a warning. Past 3:00, a Reel probably
   stops being placed in Instagram's Reels tab: Socialinsider found a median of
   4,428 views above 180 s against about 9,000 at 120–180 s, across 6 M brand Reels
-  in January–June 2026. That study covers brands, not creators.
+  in January–June 2026. That study covers brands, not creators. The first Swipe
+  ran 4:36 and the operator kept it. Such a Swipe goes to TikTok, Facebook and
+  YouTube (as a regular video), not to Instagram, and not to X without a
+  subscription. The skill carries the table.
 - **A clip lasts one complete thought.** A gag is short and cut on its
   punchline. A serious passage runs longer and is cut at the end of a sentence,
   once its subtitle has been read.
