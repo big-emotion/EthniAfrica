@@ -19,4 +19,5 @@ order they were found. Leave a field blank rather than guess it.
 ```
 
 The stash report (mode 1) reads these fields and nothing else. A clip with no
-credit is still filed, flagged as a blocker.
+credit is still filed. The Swipe will show it uncredited, with a warning,
+unless a title, author, channel or handle turns up.
