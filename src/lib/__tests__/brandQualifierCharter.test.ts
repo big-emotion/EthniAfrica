@@ -126,19 +126,22 @@ describe("the product's qualifier, spelled in one place", () => {
     expect(chromeCopy.en.headerTagline.length).toBeLessThanOrEqual(28);
   });
 
-  // Python cannot import brand.ts, so the render engine's lockup keeps a copy of
-  // the qualifier. A card and the page it points to must not introduce the
-  // product in two wordings.
+  // Python cannot import brand.ts, so the render engine keeps a copy of the
+  // qualifier — now in brand-kit.json, the one file ethni_brand.py reads it from.
+  // A card and the page it points to must not introduce the product in two
+  // wordings.
   // @req REQ-019
   it("is the qualifier the render engine draws under the wordmark", () => {
-    const engine = fs.readFileSync(
-      path.join(process.cwd(), "social/harness/ethni_brand.py"),
-      "utf8"
-    );
-    const drawn = engine.match(/^TAGLINE = "(.+)"$/m);
+    const kit = JSON.parse(
+      fs.readFileSync(
+        path.join(process.cwd(), "social/harness/brand-kit.json"),
+        "utf8"
+      )
+    ) as { tagline?: string };
 
-    expect(drawn, "ethni_brand.py no longer declares TAGLINE").not.toBeNull();
-    expect(drawn?.[1]).toBe(PRODUCT_TAGLINE);
+    expect(kit.tagline, "brand-kit.json no longer declares a tagline").toBe(
+      PRODUCT_TAGLINE
+    );
   });
 
   // @req REQ-019
