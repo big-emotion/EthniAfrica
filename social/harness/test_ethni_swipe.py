@@ -123,6 +123,14 @@ def test_the_example_plan_shipped_with_the_skill_has_no_error():
     assert errors == []
 
 
+def test_a_plan_wide_layout_reaches_every_segment_and_a_segment_may_override_it():
+    p = plan(layout="fill", segments=[segment(), segment(source="b.mp4", layout="frame", focus_x=0.2)])
+    assert swipe.check_plan(p) == ([], [])
+    first, second = (swipe.segment_plan(s, p) for s in p["segments"])
+    assert first["layout"] == "fill"
+    assert (second["layout"], second["focus_x"]) == ("frame", 0.2)
+
+
 # ---------------------------------------------------------------- the timeline
 
 def test_the_total_is_the_segments_minus_one_transition_per_join():

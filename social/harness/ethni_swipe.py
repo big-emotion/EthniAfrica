@@ -69,10 +69,18 @@ def transition_offsets(durations, transition):
     return offsets
 
 
-def _segment_plan(segment):
-    """The clip-reel plan one segment is drawn from."""
+def segment_plan(segment, plan=None):
+    """The clip-reel plan one segment is drawn from.
+
+    `layout` and `focus_x` set on the plan apply to every segment; a segment's own
+    value wins, because one wide two-shot may need a different focus from the rest.
+    """
     sub = {key: segment[key] for key in ("source", "clips", "phrases", "reframes") if key in segment}
     sub.setdefault("phrases", [])
+    for key in ("layout", "focus_x"):
+        value = segment.get(key, (plan or {}).get(key))
+        if value is not None:
+            sub[key] = value
     if segment.get("marker"):
         sub["banner"] = segment["marker"]
     line = credit_line(segment.get("credit"))
@@ -94,7 +102,7 @@ def check_plan(plan):
     durations = []
     for index, segment in enumerate(segments):
         label = f"segments[{index}]"
-        sub = _segment_plan(segment)
+        sub = segment_plan(segment, plan)
         marker = segment.get("marker")
         if marker is not None:
             text = str(marker.get("text", "")).strip()
@@ -127,7 +135,7 @@ def check_plan(plan):
             errors.append(f"thumbnail.segment: {index!r} names no segment")
         else:
             title = {k: v for k, v in cover.items() if k != "segment"}
-            errors += [problem for problem in reel.validate_plan(dict(_segment_plan(segments[index]), thumbnail=title))
+            errors += [problem for problem in reel.validate_plan(dict(segment_plan(segments[index], plan), thumbnail=title))
                        if problem.startswith("thumbnail")]
     return errors, warnings
 
@@ -160,7 +168,7 @@ def render_swipe(plan, out_path):
         pieces = []
         for index, segment in enumerate(segments):
             piece = work / f"segment_{index}.mp4"
-            reel.render_reel(_segment_plan(segment), piece, watermark=False)
+            reel.render_reel(segment_plan(segment, plan), piece, watermark=False)
             pieces.append(piece)
 
         # A rendered piece's picture can end a few frames before its sound (measured:
@@ -193,7 +201,7 @@ def render_thumbnail(plan, out_path):
     cover = plan.get("thumbnail")
     if not cover:
         raise ValueError("plan has no thumbnail block")
-    sub = _segment_plan(plan["segments"][cover["segment"]])
+    sub = segment_plan(plan["segments"][cover["segment"]], plan)
     sub["thumbnail"] = {k: v for k, v in cover.items() if k != "segment"}
     return reel.render_thumbnail(sub, out_path)
 

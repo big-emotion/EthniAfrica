@@ -60,6 +60,7 @@ CREDIT_FONT_PX = 36
 CREDIT_LINE_PX = 46
 FPS = 30
 HOST = 2
+LAYOUTS = ("frame", "fill")
 
 
 # ---------------------------------------------------------------- captions
@@ -232,6 +233,13 @@ def validate_plan(plan):
         if after.get("start", 0) < before.get("end", 0):
             errors.append("reframes: two windows overlap — one instant has one frame")
 
+    if plan.get("layout", "frame") not in LAYOUTS:
+        errors.append(f"layout: {plan.get('layout')!r} is neither 'frame' (the picture over its own blur) "
+                      f"nor 'fill' (the picture covers the screen)")
+    focus = plan.get("focus_x")
+    if focus is not None and not (isinstance(focus, (int, float)) and 0 <= focus <= 1):
+        errors.append(f"focus_x: {focus!r} must run from 0 (keep the left) to 1 (keep the right)")
+
     cover = plan.get("thumbnail")
     if cover is not None:
         lines = [str(line).upper() for line in cover.get("title_lines", [])]
@@ -397,11 +405,19 @@ def render_reel(plan, out_path, watermark=True):
                          f"afade=t=in:d={fade},afade=t=out:st={end - start - fade}:d={fade}[a{i}]")
         joined = "".join(f"[v{i}][a{i}]" for i in range(len(clips)))
         graph.append(f"{joined}concat=n={len(clips)}:v=1:a=1[cv][ca]")
-        graph.append(
-            f"[cv]split[bg][fg];[bg]scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=increase,"
-            f"crop={WIDTH}:{HEIGHT},boxblur=30:5,eq=brightness=-0.15[b];"
-            f"[fg]scale={WIDTH}:{FRAME_BOX_HEIGHT}:force_original_aspect_ratio=decrease[f];"
-            f"[b][f]overlay=(W-w)/2:{FRAME_CENTRE_Y}-h/2,format=yuv420p[out]")
+        if plan.get("layout") == "fill":
+            # The picture covers the whole screen: a wide source loses its sides, and
+            # `focus_x` says which part stays (0 the left edge, 1 the right edge).
+            focus = float(plan.get("focus_x", 0.5))
+            graph.append(
+                f"[cv]scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=increase,"
+                f"crop={WIDTH}:{HEIGHT}:(iw-{WIDTH})*{focus}:(ih-{HEIGHT})/2,setsar=1,format=yuv420p[out]")
+        else:
+            graph.append(
+                f"[cv]split[bg][fg];[bg]scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=increase,"
+                f"crop={WIDTH}:{HEIGHT},boxblur=30:5,eq=brightness=-0.15[b];"
+                f"[fg]scale={WIDTH}:{FRAME_BOX_HEIGHT}:force_original_aspect_ratio=decrease[f];"
+                f"[b][f]overlay=(W-w)/2:{FRAME_CENTRE_Y}-h/2,format=yuv420p[out]")
         base = work / "base.mp4"
         _run(["ffmpeg", "-y", "-v", "error", "-i", str(plan["source"]), "-filter_complex", ";".join(graph),
               "-map", "[out]", "-map", "[ca]", "-c:v", "libx264", "-crf", "18", "-preset", "medium",

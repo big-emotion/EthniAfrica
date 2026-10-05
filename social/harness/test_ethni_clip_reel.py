@@ -399,6 +399,45 @@ def test_the_banner_stands_above_the_frame_for_its_duration_then_leaves():
         assert _count_white_pixels(out, 4.0, above_frame) == 0, "after its duration the top is clear again"
 
 
+def test_a_layout_is_either_framed_or_filled():
+    assert reel.validate_plan(plan(layout="fill")) == []
+    assert reel.validate_plan(plan(layout="frame")) == []
+    assert any("layout" in e for e in reel.validate_plan(plan(layout="stretch")))
+
+
+def test_the_focus_of_a_filled_picture_runs_from_left_to_right():
+    assert reel.validate_plan(plan(layout="fill", focus_x=0.0)) == []
+    assert reel.validate_plan(plan(layout="fill", focus_x=1.0)) == []
+    assert any("focus_x" in e for e in reel.validate_plan(plan(layout="fill", focus_x=1.4)))
+
+
+def _filled_pixel(focus_x, xy):
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = pathlib.Path(tmp)
+        src = tmp / "source.mp4"
+        _split_source(src)
+        p = plan(source=str(src), clips=[[0.0, 3.0]], phrases=[], layout="fill")
+        if focus_x is not None:
+            p["focus_x"] = focus_x
+        out = tmp / "reel.mp4"
+        reel.render_reel(p, out)
+        return _pixel_at(out, 1.5, xy)
+
+
+def test_a_filled_picture_reaches_the_top_of_the_screen_unblurred():
+    # The framed layout leaves the top to a dark blur; filled, the source itself is there.
+    red, _, blue = _filled_pixel(None, (300, 40))
+    # The framed ground is darkened (≈ 215 on this red); only the source itself reaches 240.
+    assert red > 240 and blue < 40, "the left (red) half fills the top-left corner at full strength"
+
+
+def test_the_focus_chooses_which_side_of_a_wide_picture_is_kept():
+    left = _filled_pixel(0.0, (540, 40))
+    right = _filled_pixel(1.0, (540, 40))
+    assert left[0] > 200 and left[2] < 60, "focus 0 keeps the left (red) side"
+    assert right[2] > 200 and right[0] < 60, "focus 1 keeps the right (blue) side"
+
+
 def test_the_thumbnail_is_a_vertical_1080_by_1920_png():
     with tempfile.TemporaryDirectory() as tmp:
         tmp = pathlib.Path(tmp)
