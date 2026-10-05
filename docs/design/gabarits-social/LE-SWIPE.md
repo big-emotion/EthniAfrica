@@ -63,7 +63,7 @@ continuation of the format, not a side effect.
 | Context marker | place, date, broadcaster, in a few words, never a sentence | 2–3 s at the start of a clip, only when the image does not already say it |
 | Subtitles | French transcription; French translation when the audio is in another language | continuous |
 | Watermark | EthniAfrica | throughout |
-| Transition | the next clip pushes the previous one upward (vertical push), as a feed scroll does: 0.25 s for a full screen, fast at first and slowing to a stop | between clips |
+| Transition | the next clip pushes the previous one upward (vertical push), as a feed scroll does: 0.6 s for a full screen, a soft start and a soft landing (ease-in-out) | between clips |
 
 The scroll imitates the gesture, not any network's interface: no copied buttons,
 icons or layout, which would imitate a brand.
@@ -72,16 +72,35 @@ No narration, no added music, no explanatory card. The context marker situates.
 It never interprets.
 
 The framing follows the [`clip-reel`](../../../.claude/skills/ethniafrica-clip-reel/SKILL.md)
-reel: 9:16, the clip framed over its own blur, subtitles in French. The Swipe
-renderer, `social/harness/ethni_swipe.py`, draws each segment with that engine,
-then chains the segments and lays the watermark once, so that it stays still
-through every scroll.
+reel: 9:16, the clip over its own blur, subtitles in French. The Swipe renderer,
+`social/harness/ethni_swipe.py`, draws each segment with that engine, then chains
+the segments and lays the watermark once, so that it stays still through every
+scroll.
 
-The scroll timing was measured on 2026-10-05, on an Instagram screen recording
-the operator supplied. Four transitions each moved a full screen in 200–250 ms,
-with the fastest motion in the first frames, then a slowdown. The engine
-reproduces that with a cubic ease-out over 0.25 s. A linear slide reads as a
-slideshow, not as a feed.
+**Each source is framed by its own shape, and never cropped (`layout: auto`).** A
+wide source fills the width of the screen, as in a clip-reel. A vertical one, a
+Reel or a Short, is contained in a box the height of the screen. The fixed clip-reel
+box had shrunk those to 360 px wide. A full-screen crop (`layout: fill`, with
+`focus_x` choosing the side kept) exists too. The operator rejected it on the first
+Swipe (2026-10-05) because it cut the wide archives badly.
+
+**A source may come back.** The same video may give several segments at different
+moments of the Swipe when a second passage adds to the thread (operator ruling,
+2026-10-05). Each segment is cut and credited on its own.
+
+**Every Swipe ends on the reels' outro.** One last scroll lands on the approved
+social-networks outro (`social/harness/outro-reseaux-sociaux.mp4`, 5 s), used as it
+is (operator request, 2026-10-05). The watermark leaves once that scroll has landed,
+since the outro carries the logo. The outro counts toward the 3:00 target.
+`"outro": false` leaves it off.
+
+**The scroll lasts 0.6 s and eases in and out.** It first copied a finger's flick,
+measured on an Instagram screen recording (200–250 ms, fastest at the start). On the
+first real Swipe that read as a cut: the next clip seemed to appear from nowhere. In
+a feed the viewer makes the gesture and expects the change. In a montage nothing
+warns the eye, so the push needs a soft start and a soft landing. The incoming
+clip's sound starts at full level while the outgoing one fades, so no first word
+is swallowed.
 
 **Never blocking.** The credit, the marker's length and the total duration are
 editorial limits the operator may knowingly exceed (operator ruling,

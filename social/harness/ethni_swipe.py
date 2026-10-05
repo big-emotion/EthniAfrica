@@ -16,9 +16,14 @@ Findings come in two kinds, by operator ruling (2026-10-05):
 - a **warning** is an editorial limit the operator may knowingly exceed: a credit
   with nothing in it, a context marker past eight words, a total past 3:00.
 
-The scroll is measured on an Instagram screen recording of the operator's own feed
-(2026-10-05): about 0.25 s for a full screen height, fast at first and slowing to a
-stop. A cubic ease-out reproduces that curve; a linear slide reads as a slideshow.
+The scroll first copied a finger's flick on an Instagram feed (0.25 s, cubic
+ease-out). On the first real Swipe (2026-10-05) the operator found it unreadable:
+the next clip seemed to appear from nowhere. In a feed the viewer makes the gesture
+and expects the change; in a montage nothing warns the eye, so the push now lasts
+0.6 s and eases in and out — a soft start, a soft landing.
+
+The incoming clip's sound starts at full level while the outgoing one fades: a fade-in
+swallowed the first word of every clip.
 """
 import json
 import pathlib
@@ -28,16 +33,19 @@ import tempfile
 
 import ethni_clip_reel as reel
 
-DEFAULT_TRANSITION = 0.25
+DEFAULT_TRANSITION = 0.6
+DEFAULT_LAYOUT = "auto"   # each source framed by its own shape, never cropped
+OUTRO_SECONDS = 5.0       # the approved social-networks outro (ethni_montage.FIN), signs every Swipe
 MIN_REST = 0.5            # seconds a clip must be on screen, still, between two scrolls
 MAX_MARKER_WORDS = 8
 MAX_TOTAL = 180.0         # past 3:00 a Reel is probably no longer placed in Instagram's Reels tab
 CREDIT_ORDER = ("title", "author", "channel", "year")
 
-# Push upward, eased out: ld(2) is how far the incoming clip has risen, in rows of
-# the plane being drawn. P runs from 1 to 0, so 1 - P^3 is a cubic ease-out.
+# Push upward, eased in and out: P runs from 1 to 0, so ld(1) = 1 - P is the elapsed
+# share; ld(2) is how far the incoming clip has risen, in rows of the plane being drawn.
 _PUSH_UP = (
-    "st(2,H*(1-pow(P,3)));"
+    "st(1,1-P);"
+    "st(2,H*if(lt(ld(1),0.5),4*pow(ld(1),3),1-pow(2-2*ld(1),3)/2));"
     "if(lt(Y,H-ld(2)),"
     "if(eq(PLANE,0),a0(X,Y+ld(2)),if(eq(PLANE,1),a1(X,Y+ld(2)),a2(X,Y+ld(2)))),"
     "if(eq(PLANE,0),b0(X,Y-H+ld(2)),if(eq(PLANE,1),b1(X,Y-H+ld(2)),b2(X,Y-H+ld(2)))))"
@@ -69,10 +77,19 @@ def transition_offsets(durations, transition):
     return offsets
 
 
-def _segment_plan(segment):
-    """The clip-reel plan one segment is drawn from."""
+def segment_plan(segment, plan=None):
+    """The clip-reel plan one segment is drawn from.
+
+    `layout` and `focus_x` set on the plan apply to every segment; a segment's own
+    value wins, because one wide two-shot may need a different focus from the rest.
+    """
     sub = {key: segment[key] for key in ("source", "clips", "phrases", "reframes") if key in segment}
     sub.setdefault("phrases", [])
+    for key in ("layout", "focus_x"):
+        value = segment.get(key, (plan or {}).get(key))
+        if value is not None:
+            sub[key] = value
+    sub.setdefault("layout", DEFAULT_LAYOUT)
     if segment.get("marker"):
         sub["banner"] = segment["marker"]
     line = credit_line(segment.get("credit"))
@@ -94,7 +111,7 @@ def check_plan(plan):
     durations = []
     for index, segment in enumerate(segments):
         label = f"segments[{index}]"
-        sub = _segment_plan(segment)
+        sub = segment_plan(segment, plan)
         marker = segment.get("marker")
         if marker is not None:
             text = str(marker.get("text", "")).strip()
@@ -115,7 +132,7 @@ def check_plan(plan):
             if duration - joins * transition < MIN_REST:
                 errors.append(f"segments[{index}]: {duration:.2f}s leaves under {MIN_REST}s at rest between "
                               f"its transitions — lengthen the clip or shorten the transition")
-        total = total_duration(durations, transition)
+        total = total_duration(durations + ([OUTRO_SECONDS] if plan.get("outro", True) else []), transition)
         if total > MAX_TOTAL:
             minutes, seconds = divmod(round(total), 60)
             warnings.append(f"total: {minutes}:{seconds:02d}, over 3:00 — probably out of Instagram's Reels tab")
@@ -127,7 +144,7 @@ def check_plan(plan):
             errors.append(f"thumbnail.segment: {index!r} names no segment")
         else:
             title = {k: v for k, v in cover.items() if k != "segment"}
-            errors += [problem for problem in reel.validate_plan(dict(_segment_plan(segments[index]), thumbnail=title))
+            errors += [problem for problem in reel.validate_plan(dict(segment_plan(segments[index], plan), thumbnail=title))
                        if problem.startswith("thumbnail")]
     return errors, warnings
 
@@ -145,6 +162,24 @@ def _audio_duration(path):
     return float(out.strip())
 
 
+def _outro_piece(path):
+    """The approved outro, as a piece the chain can join: 1080 x 1920, 30 fps, a silent track.
+
+    It is the reels' own sign-off, used as it is — a Swipe ends on the same card as every
+    other video, reached by one last scroll. Its checksum is held like the montage holds it.
+    """
+    import hashlib
+    from ethni_montage import FIN, FIN_SHA256
+    if not hashlib.sha256(FIN.read_bytes()).hexdigest().startswith(FIN_SHA256):
+        raise ValueError("the social-networks outro is not the approved asset")
+    reel._run(["ffmpeg", "-y", "-v", "error", "-i", str(FIN),
+               "-f", "lavfi", "-t", str(OUTRO_SECONDS), "-i", "anullsrc=r=44100:cl=stereo",
+               "-vf", f"scale={reel.WIDTH}:{reel.HEIGHT},setsar=1,fps={reel.FPS}", "-t", str(OUTRO_SECONDS),
+               "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-crf", "16", "-pix_fmt", "yuv420p",
+               "-c:a", "aac", str(path)])
+    return path
+
+
 def render_swipe(plan, out_path):
     """Draw every segment, chain them with the push, lay the mark once. Writes only outside a git checkout."""
     warnings = _checked(plan)
@@ -160,8 +195,11 @@ def render_swipe(plan, out_path):
         pieces = []
         for index, segment in enumerate(segments):
             piece = work / f"segment_{index}.mp4"
-            reel.render_reel(_segment_plan(segment), piece, watermark=False)
+            reel.render_reel(segment_plan(segment, plan), piece, watermark=False)
             pieces.append(piece)
+        with_outro = plan.get("outro", True)
+        if with_outro:
+            pieces.append(_outro_piece(work / "outro.mp4"))
 
         # A rendered piece's picture can end a few frames before its sound (measured:
         # 1.9 s of video under 2.0 s of audio). xfade stops where its first input stops,
@@ -171,14 +209,17 @@ def render_swipe(plan, out_path):
         graph = [f"[{i}:v]tpad=stop_mode=clone:stop_duration=1,trim=duration={d},setpts=PTS-STARTPTS[p{i}]"
                  for i, d in enumerate(durations)]
         video, audio = "[p0]", "[0:a]"
-        for n, offset in enumerate(transition_offsets(durations, transition), start=1):
+        offsets = transition_offsets(durations, transition)
+        for n, offset in enumerate(offsets, start=1):
             graph.append(f"{video}[p{n}]xfade=transition=custom:duration={transition}:offset={offset}:"
                          f"expr='{_PUSH_UP}'[v{n}]")
-            graph.append(f"{audio}[{n}:a]acrossfade=d={transition}[a{n}]")
+            graph.append(f"{audio}[{n}:a]acrossfade=d={transition}:c1=tri:c2=nofade[a{n}]")
             video, audio = f"[v{n}]", f"[a{n}]"
         mark_png = work / "mark.png"
         ethni_brand.filigrane(ethni_brand.FILIGRANE_PX, (255, 255, 255)).save(mark_png)
-        graph.append(f"{video}[{len(pieces)}:v]overlay=(W-w)/2:{reel.WATERMARK_Y},format=yuv420p[out]")
+        # The outro carries the logo itself: the mark leaves once the last scroll has landed.
+        until = f":enable='lt(t,{offsets[-1] + transition})'" if with_outro else ""
+        graph.append(f"{video}[{len(pieces)}:v]overlay=(W-w)/2:{reel.WATERMARK_Y}{until},format=yuv420p[out]")
         inputs = [arg for piece in pieces for arg in ("-i", str(piece))] + ["-i", str(mark_png)]
         out.parent.mkdir(parents=True, exist_ok=True)
         reel._run(["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", ";".join(graph),
@@ -193,7 +234,7 @@ def render_thumbnail(plan, out_path):
     cover = plan.get("thumbnail")
     if not cover:
         raise ValueError("plan has no thumbnail block")
-    sub = _segment_plan(plan["segments"][cover["segment"]])
+    sub = segment_plan(plan["segments"][cover["segment"]], plan)
     sub["thumbnail"] = {k: v for k, v in cover.items() if k != "segment"}
     return reel.render_thumbnail(sub, out_path)
 

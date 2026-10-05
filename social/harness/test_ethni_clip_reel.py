@@ -399,6 +399,89 @@ def test_the_banner_stands_above_the_frame_for_its_duration_then_leaves():
         assert _count_white_pixels(out, 4.0, above_frame) == 0, "after its duration the top is clear again"
 
 
+def test_a_layout_is_either_framed_or_filled():
+    assert reel.validate_plan(plan(layout="fill")) == []
+    assert reel.validate_plan(plan(layout="frame")) == []
+    assert reel.validate_plan(plan(layout="auto")) == []
+    assert any("layout" in e for e in reel.validate_plan(plan(layout="stretch")))
+
+
+def test_the_focus_of_a_filled_picture_runs_from_left_to_right():
+    assert reel.validate_plan(plan(layout="fill", focus_x=0.0)) == []
+    assert reel.validate_plan(plan(layout="fill", focus_x=1.0)) == []
+    assert any("focus_x" in e for e in reel.validate_plan(plan(layout="fill", focus_x=1.4)))
+
+
+def _filled_pixel(focus_x, xy):
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = pathlib.Path(tmp)
+        src = tmp / "source.mp4"
+        _split_source(src)
+        p = plan(source=str(src), clips=[[0.0, 3.0]], phrases=[], layout="fill")
+        if focus_x is not None:
+            p["focus_x"] = focus_x
+        out = tmp / "reel.mp4"
+        reel.render_reel(p, out)
+        return _pixel_at(out, 1.5, xy)
+
+
+def test_a_filled_picture_reaches_the_top_of_the_screen_unblurred():
+    # The framed layout leaves the top to a dark blur; filled, the source itself is there.
+    red, _, blue = _filled_pixel(None, (300, 40))
+    # The framed ground is darkened (≈ 215 on this red); only the source itself reaches 240.
+    assert red > 240 and blue < 40, "the left (red) half fills the top-left corner at full strength"
+
+
+def test_the_focus_chooses_which_side_of_a_wide_picture_is_kept():
+    left = _filled_pixel(0.0, (540, 40))
+    right = _filled_pixel(1.0, (540, 40))
+    assert left[0] > 200 and left[2] < 60, "focus 0 keeps the left (red) side"
+    assert right[2] > 200 and right[0] < 60, "focus 1 keeps the right (blue) side"
+
+
+def _portrait_source(path):
+    """A vertical red source, the shape of a Reel or a Short."""
+    subprocess.run(
+        ["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", "color=red:size=360x640:rate=25:duration=4",
+         "-f", "lavfi", "-i", "sine=frequency=440:duration=4", "-shortest",
+         "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", str(path)],
+        check=True)
+
+
+def _auto_frame(make_source):
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = pathlib.Path(tmp)
+        src = tmp / "source.mp4"
+        make_source(src)
+        out = tmp / "reel.mp4"
+        reel.render_reel(plan(source=str(src), clips=[[0.0, 3.0]], phrases=[], layout="auto"), out)
+        from PIL import Image
+        with tempfile.TemporaryDirectory() as still_dir:
+            still = pathlib.Path(still_dir) / "f.png"
+            subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", "1.5", "-i", str(out),
+                            "-frames:v", "1", str(still)], check=True)
+            return Image.open(still).convert("RGB")
+
+
+def test_auto_shows_a_vertical_source_whole_and_large_instead_of_shrinking_it():
+    frame = _auto_frame(_portrait_source)
+    # The fixed 640 px box drew a 9:16 source 360 px wide; auto gives it the height of the screen.
+    red_columns = [x for x in range(0, 1080, 4) if min(frame.getpixel((x, 800))[0], 255) > 240
+                   and frame.getpixel((x, 800))[2] < 40]
+    assert len(red_columns) * 4 > 700, "the picture is far wider than the old 360 px"
+    top, bottom = frame.getpixel((540, 120)), frame.getpixel((540, 1500))
+    assert top[0] > 240 and bottom[0] > 240, "it runs from near the top to well below the old box"
+
+
+def test_auto_frames_a_wide_source_as_before_without_cutting_it():
+    frame = _auto_frame(_split_source)
+    # Full width, both halves kept: red on the left, blue on the right, at the old box height.
+    left, right = frame.getpixel((100, reel.FRAME_CENTRE_Y)), frame.getpixel((980, reel.FRAME_CENTRE_Y))
+    assert left[0] > 240 and right[2] > 240
+    above = frame.getpixel((540, 150))
+    assert max(above) < 235, "above the box is the darkened blur, not the picture"
+
+
 def test_the_thumbnail_is_a_vertical_1080_by_1920_png():
     with tempfile.TemporaryDirectory() as tmp:
         tmp = pathlib.Path(tmp)

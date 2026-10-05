@@ -123,6 +123,18 @@ def test_the_example_plan_shipped_with_the_skill_has_no_error():
     assert errors == []
 
 
+def test_a_plan_wide_layout_reaches_every_segment_and_a_segment_may_override_it():
+    p = plan(layout="fill", segments=[segment(), segment(source="b.mp4", layout="frame", focus_x=0.2)])
+    assert swipe.check_plan(p) == ([], [])
+    first, second = (swipe.segment_plan(s, p) for s in p["segments"])
+    assert first["layout"] == "fill"
+    assert (second["layout"], second["focus_x"]) == ("frame", 0.2)
+
+
+def test_a_segment_is_framed_by_its_own_shape_unless_the_plan_says_otherwise():
+    assert swipe.segment_plan(segment(), plan())["layout"] == "auto"
+
+
 # ---------------------------------------------------------------- the timeline
 
 def test_the_total_is_the_segments_minus_one_transition_per_join():
@@ -176,6 +188,7 @@ def _two_colour_plan(tmp):
             {"source": str(blue), "clips": [[0.0, 2.0]], "phrases": [], "credit": {"channel": "@bleu"}},
         ],
         "transition": 0.25,
+        "outro": False,
     }
 
 
@@ -204,6 +217,96 @@ def test_the_next_clip_pushes_the_previous_one_upward():
         before, after = _frame(out, 1.0), _frame(out, 3.0)
         assert _redder(before.getpixel((20, 1860)))
         assert _bluer(after.getpixel((20, 60)))
+
+
+def _incoming_share(frame):
+    """How much of the screen height the incoming (blue) clip covers, read down the left edge."""
+    rows = [y for y in range(0, 1920, 8) if _bluer(frame.getpixel((20, y)))]
+    return len(rows) / (1920 / 8)
+
+
+def test_without_a_transition_set_the_scroll_lasts_long_enough_to_be_seen_and_eases_in_and_out():
+    # Measured on the first real Swipe (2026-10-05): at 0.25 s eased out, the next clip
+    # seemed to appear from nowhere. 0.6 s, eased in and out, reads as a movement.
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = pathlib.Path(tmp)
+        p = _two_colour_plan(tmp)
+        del p["transition"]
+        out = tmp / "swipe.mp4"
+        swipe.render_swipe(p, out)
+        assert abs(float(_probe(out, "format=duration")["format"]["duration"]) - 3.4) < 0.2
+        start = 2.0 - 0.6
+        assert _incoming_share(_frame(out, start + 0.07)) < 0.05, "a soft start, not a jump"
+        assert 0.35 < _incoming_share(_frame(out, start + 0.3)) < 0.65, "halfway through, about half the screen"
+        assert _incoming_share(_frame(out, start + 0.54)) > 0.93, "a soft landing, almost there"
+
+
+def _tone_source(path, audible, seconds=3):
+    audio = "sine=frequency=440:duration=3" if audible else "anullsrc=r=44100:cl=mono"
+    subprocess.run(
+        ["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", f"color=gray:size=640x360:rate=25:duration={seconds}",
+         "-f", "lavfi", "-t", str(seconds), "-i", audio, "-shortest",
+         "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", str(path)],
+        check=True)
+
+
+def _loudness(video, start, length):
+    import numpy as np
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", str(start), "-t", str(length), "-i", str(video),
+                          "-vn", "-ac", "1", "-ar", "16000", "-f", "f32le", "-"],
+                         check=True, capture_output=True).stdout
+    samples = np.frombuffer(raw, dtype=np.float32)
+    return float(np.sqrt(np.mean(samples ** 2)))
+
+
+def test_a_swipe_ends_with_a_last_scroll_onto_the_approved_outro():
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = pathlib.Path(tmp)
+        p = _two_colour_plan(tmp)
+        del p["outro"]
+        out = tmp / "swipe.mp4"
+        swipe.render_swipe(p, out)
+        # two 2 s clips and the 5 s outro, minus one 0.25 s scroll per join
+        assert abs(float(_probe(out, "format=duration")["format"]["duration"]) - 8.5) < 0.25
+        last = _frame(out, 8.2)
+        ivory = last.getpixel((540, 40))
+        assert min(ivory) > 225, "the outro's light ground fills the screen at the end"
+        assert _bluer(_frame(out, 3.0).getpixel((20, 1860))), "the clips still play before it"
+
+
+def test_the_outro_can_be_left_off():
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = pathlib.Path(tmp)
+        out = tmp / "swipe.mp4"
+        swipe.render_swipe(_two_colour_plan(tmp), out)
+        assert abs(float(_probe(out, "format=duration")["format"]["duration"]) - 3.75) < 0.2
+
+
+def test_the_three_minute_warning_counts_the_outro():
+    clip = segment(clips=[[0.0, 88.0]], phrases=[])
+    _, warnings = swipe.check_plan(plan(segments=[clip, dict(clip, source="b.mp4")]))
+    assert any("3:00" in w for w in warnings), "176 s of clips plus the outro is past 3:00"
+    _, warnings = swipe.check_plan(plan(segments=[clip, dict(clip, source="b.mp4")], outro=False))
+    assert not any("3:00" in w for w in warnings)
+
+
+def test_the_next_clip_is_heard_from_its_first_word_not_faded_in():
+    # A fade-in on the incoming sound swallowed the first word of every clip
+    # (« La … chose » for « La seule bonne chose »).
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = pathlib.Path(tmp)
+        silent, tone = tmp / "silent.mp4", tmp / "tone.mp4"
+        _tone_source(silent, audible=False)
+        _tone_source(tone, audible=True)
+        p = {"segments": [{"source": str(silent), "clips": [[0.0, 2.0]], "phrases": []},
+                          {"source": str(tone), "clips": [[0.0, 2.0]], "phrases": []}],
+             "transition": 0.6}
+        out = tmp / "swipe.mp4"
+        swipe.render_swipe(p, out)
+        settled = _loudness(out, 2.5, 0.3)
+        right_at_the_join = _loudness(out, 1.42, 0.1)
+        assert settled > 0.05
+        assert right_at_the_join > 0.8 * settled, "the incoming sound starts at full level"
 
 
 def test_a_credit_line_is_drawn_under_the_frame_and_absent_without_one():
