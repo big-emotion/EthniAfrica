@@ -260,65 +260,76 @@
         "title": "UNFPA – World Population Dashboard — Ouganda",
         "url": "https://www.unfpa.org/data/world-population/UG",
         "tier": "official"
+      },
+      {
+        "title": "CIA World Factbook – Uganda (ethnic groups)",
+        "url": "https://web.archive.org/web/20260115/https://www.cia.gov/the-world-factbook/countries/uganda/",
+        "tier": "official",
+        "notes": "Répartition des groupes ethniques d'après l'estimation de 2014, lue dans une copie archivée de janvier 2026 ; la publication a cessé d'être mise à jour début 2026. Les Banyoro et les Batooro n'y sont pas nommés. Wikipédia reprend cette liste avec 9,8 % pour les Banyankole ; la copie archivée donne 9,6 %."
       }
     ],
     "demographics": {
       "totalPopulation": 51400000,
       "referenceYear": 2025,
-      "source": "UNFPA – World Population Dashboard",
+      "source": "CIA World Factbook – Uganda (ethnic groups, 2014 estimate), copie archivée de janvier 2026",
       "peoples": [
         {
           "name": "Baganda",
-          "percentageInCountry": 17,
           "peopleId": "PPL_BAGANDA",
+          "percentageInCountry": 16.5,
           "region": "Centre de l'Ouganda",
           "languageFamily": "FLG_BANTU"
         },
         {
           "name": "Banyankole",
-          "percentageInCountry": 7,
           "peopleId": "PPL_BANYANKOLE",
+          "percentageInCountry": 9.6,
           "region": "Sud-ouest de l'Ouganda",
           "languageFamily": "FLG_BANTU"
         },
         {
           "name": "Basoga",
-          "percentageInCountry": 6,
           "peopleId": "PPL_BASOGA",
+          "percentageInCountry": 8.8,
           "region": "Est de l'Ouganda",
           "languageFamily": "FLG_BANTU"
         },
         {
-          "name": "Acholi",
-          "percentageInCountry": 4,
-          "peopleId": "PPL_ACHOLI",
-          "region": "Nord de l'Ouganda",
-          "languageFamily": "FLG_NILOTIQUE"
+          "name": "Bakiga",
+          "peopleId": "PPL_BAKIGA",
+          "percentageInCountry": 7.1
         },
         {
-          "name": "Banyoro",
-          "percentageInCountry": 3,
-          "peopleId": "PPL_BANYORO",
-          "region": "Ouest de l'Ouganda",
-          "languageFamily": "FLG_BANTU"
+          "name": "Iteso",
+          "peopleId": "PPL_ITESO",
+          "percentageInCountry": 7
         },
         {
           "name": "Langi",
-          "percentageInCountry": 3,
           "peopleId": "PPL_LANGI",
+          "percentageInCountry": 6.3,
           "region": "Nord de l'Ouganda",
           "languageFamily": "FLG_NILOTIQUE"
         },
         {
-          "name": "Batooro",
-          "percentageInCountry": 2,
-          "peopleId": "PPL_BATOORO",
-          "region": "Ouest de l'Ouganda",
-          "languageFamily": "FLG_BANTU"
+          "name": "Bagisu",
+          "percentageInCountry": 4.9
+        },
+        {
+          "name": "Acholi",
+          "peopleId": "PPL_ACHOLI",
+          "percentageInCountry": 4.4,
+          "region": "Nord de l'Ouganda",
+          "languageFamily": "FLG_NILOTIQUE"
+        },
+        {
+          "name": "Lugbara",
+          "peopleId": "PPL_LUGBARA",
+          "percentageInCountry": 3.3
         },
         {
           "name": "Autres peuples",
-          "percentageInCountry": 58,
+          "percentageInCountry": 32.1,
           "region": "Diverses régions de l'Ouganda"
         }
       ]

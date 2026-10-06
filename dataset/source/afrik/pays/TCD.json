@@ -252,48 +252,111 @@
         "url": "https://languagehat.com/lake-chad/",
         "tier": "unverified",
         "notes": "Discussion de linguistes. Elle est l'origine des entrées citées ici du dictionnaire de Cyffer et de l'attribution au boudouma chez Nachtigal, et signale aussi la forme cádù relevée par Roger Blench en kanouri manga. Elle conclut que personne ne sait avec certitude ce que le mot désignait. Page lue le 9 septembre 2026."
+      },
+      {
+        "title": "CIA World Factbook – Chad (ethnic groups)",
+        "url": "https://web.archive.org/web/20260115/https://www.cia.gov/the-world-factbook/countries/chad/",
+        "tier": "official",
+        "notes": "Répartition des groupes ethniques d'après l'estimation de 2014-2015, lue dans une copie archivée de janvier 2026 ; la publication a cessé d'être mise à jour début 2026. Elle compte par regroupements de plusieurs peuples : un pourcentage n'est rattaché à une fiche que lorsque le regroupement ne désigne qu'un seul peuple."
       }
     ],
     "demographics": {
       "totalPopulation": 21000000,
       "referenceYear": 2025,
-      "source": "UNFPA – World Population Dashboard",
+      "source": "CIA World Factbook – Chad (ethnic groups, 2014-15 estimate), copie archivée de janvier 2026",
       "peoples": [
         {
-          "name": "Sara",
-          "percentageInCountry": 18,
+          "name": "Sara (Ngambaye, Sara, Madjingaye, Mbaye)",
           "peopleId": "PPL_SARA",
+          "percentageInCountry": 30.5,
           "region": "Sud du Tchad",
           "languageFamily": "FLG_SOUDANIQUECENTRAL"
         },
         {
-          "name": "Arabes tchadiens",
-          "percentageInCountry": 15,
+          "name": "Kanembu, Bornu et Boudouma",
+          "percentageInCountry": 9.8
+        },
+        {
+          "name": "Arabes",
           "peopleId": "PPL_ARABES_AFRIQUE",
+          "percentageInCountry": 9.7,
           "region": "Centre et est du Tchad, zones désertiques",
           "languageFamily": "FLG_SEMITIQUE"
         },
         {
-          "name": "Kanembu",
-          "population": 650000,
-          "percentageInCountry": 3.9,
-          "peopleId": "PPL_KANEMBU",
-          "region": "Nord du Tchad (région du lac Tchad)",
-          "languageFamily": "FLG_SAHARIEN"
+          "name": "Ouaddaï, Maba, Masalit et Mimi",
+          "percentageInCountry": 7
         },
         {
-          "name": "Toubou",
-          "population": 400000,
-          "percentageInCountry": 2.4,
-          "peopleId": "PPL_TOUBOU",
-          "region": "Nord du Tchad (Sahara), zones désertiques",
-          "languageFamily": "FLG_SAHARIEN"
+          "name": "Gorane",
+          "percentageInCountry": 5.8
+        },
+        {
+          "name": "Masa, Musseye et Musgum",
+          "percentageInCountry": 4.9
+        },
+        {
+          "name": "Bulala, Medogo et Kuka",
+          "percentageInCountry": 3.7
+        },
+        {
+          "name": "Marba, Lele et Mesme",
+          "percentageInCountry": 3.5
+        },
+        {
+          "name": "Mundang",
+          "percentageInCountry": 2.7
+        },
+        {
+          "name": "Bidiyo, Migaama, Kenga et Dangleat",
+          "percentageInCountry": 2.5
+        },
+        {
+          "name": "Dadjo, Kibet et Muro",
+          "percentageInCountry": 2.4
+        },
+        {
+          "name": "Toupouri et Kera",
+          "percentageInCountry": 2
+        },
+        {
+          "name": "Gabri, Kabalaye, Nanchere et Somrai",
+          "percentageInCountry": 2
+        },
+        {
+          "name": "Fulani, Fulbe et Bodore",
+          "peopleId": "PPL_FULA",
+          "percentageInCountry": 1.8
+        },
+        {
+          "name": "Karo, Zime et Peve",
+          "percentageInCountry": 1.3
+        },
+        {
+          "name": "Baguirmi et Barma",
+          "peopleId": "PPL_BARMA",
+          "percentageInCountry": 1.2
+        },
+        {
+          "name": "Zaghawa, Bideyat et Kobe",
+          "percentageInCountry": 1.1
+        },
+        {
+          "name": "Tama, Assongori et Mararit",
+          "percentageInCountry": 1.1
+        },
+        {
+          "name": "Mesmedje, Massalat et Kadjakse",
+          "percentageInCountry": 0.8
         },
         {
           "name": "Autres groupes",
-          "percentageInCountry": 60.7,
-          "peopleId": null,
+          "percentageInCountry": 4.6,
           "region": "Toutes les régions du Tchad"
+        },
+        {
+          "name": "Non précisé",
+          "percentageInCountry": 1.7
         }
       ]
     }
