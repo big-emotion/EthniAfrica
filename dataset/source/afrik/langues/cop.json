@@ -10,7 +10,7 @@
   "nameFr": "Copte",
   "nameEn": "Coptic",
   "alternateNames": ["Égyptien copte"],
-  "whyProblematic": null,
+  "whyProblematic": "En copte, la langue se dit ϯⲙⲉⲧⲣⲉⲙⲛ̀ⲭⲏⲙⲓ, « l'égyptien ». Le mot « copte » vient de l'arabe qubṭ ou qibṭ, lui-même tiré du grec Aiguptios, « égyptien » : il veut donc dire « égyptien » et non « chrétien ». Une autre piste le rattache à Coptos, ville de Haute-Égypte (aujourd'hui Qifṭ) ; elle est présentée comme ayant pu renforcer la forme « copte », non comme son origine.",
   "spellingAliases": [],
   "familyId": "FLG_AFROASIATIQUE",
   "peoples": [
@@ -29,7 +29,24 @@
         "url": "https://glottolog.org/resource/languoid/id/copt1239",
         "tier": "official",
         "notes": "Glottolog direct official languoid record ; source du nom et du glottocode. Le copte est le dernier état de l'égyptien ancien (egy, glottocode egyp1246), écrit dans un alphabet dérivé du grec."
+      },
+      {
+        "title": "Wikipédia anglophone, Coptic language",
+        "url": "https://en.wikipedia.org/wiki/Coptic_language",
+        "tier": "unverified",
+        "notes": "Article lu pour le nom de la langue en copte et le chemin grec, arabe puis langues d'Europe du mot « copte »."
+      },
+      {
+        "title": "Wikipédia anglophone, Copts",
+        "url": "https://en.wikipedia.org/wiki/Copts",
+        "tier": "unverified",
+        "notes": "Article lu pour l'origine du mot « copte » (arabe qubṭ ou qibṭ, tiré du grec Aiguptios) et pour le rapprochement avec la ville de Coptos, que l'article dit avoir pu contribuer à fixer la forme « copte »."
       }
     ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred: the English sidecar for this language record has not been produced yet."
+    }
   }
 }

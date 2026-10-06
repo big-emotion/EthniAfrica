@@ -23,7 +23,7 @@
     "Tar Bagrimma",
     "Tar Barma"
   ],
-  "whyProblematic": null,
+  "whyProblematic": "L'origine du nom « Bagirmi » n'est pas établie. Bagirmi est le nom du royaume et de la société qu'il rassemblait, où les Barma formaient le groupe qui a fondé et dominé l'État. Une tradition le fait venir de l'arabe bagar, « bétail », et mia, « cent », et y voit le tribut que les Arabes et les Peuls devaient à leur premier souverain (Reyna). Nous n'avons trouvé aucune autre explication, et celle-ci reste une tradition.",
   "spellingAliases": [],
   "familyId": "FLG_SOUDANIQUECENTRAL",
   "peoples": [],
@@ -37,7 +37,18 @@
         "url": "https://glottolog.org/resource/languoid/id/bagi1246",
         "tier": "official",
         "notes": "Glottolog name: Bagirmi; classification includes Central Sudanic. Les dialectes listés sont les sous-languoids que Glottolog rattache à bagi1246, hors languoids portant leur propre code ISO 639-3."
+      },
+      {
+        "title": "S. P. Reyna, Bagirmi, Encyclopedia of World Cultures, Gale",
+        "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/bagirmi",
+        "tier": "referenced",
+        "notes": "Notice consultée sur encyclopedia.com : « Bagirmi » vient de l'arabe bagar (bétail) et mia (cent) selon une tradition ; les Barma ont formé et dominé l'État, les Arabes en étaient les habitants les plus nombreux et les Peuls y comptaient dans la vie religieuse. La notice ne date pas cette tradition."
       }
     ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred: the English sidecar for this language record has not been produced yet."
+    }
   }
 }
