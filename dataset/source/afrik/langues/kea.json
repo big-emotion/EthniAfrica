@@ -10,7 +10,7 @@
   "nameFr": "Créole cap-verdien",
   "nameEn": "Kabuverdianu",
   "alternateNames": ["Caboverdiano", "Crioulo"],
-  "whyProblematic": null,
+  "whyProblematic": "Kabuverdianu veut dire « du Cap-Vert » : le nom de la langue reprend celui du pays, Kabu Verdi en kabuverdianu, Cabo Verde en portugais, « cap vert ». Ce nom vient du cap voisin de Dakar, sur la côte du Sénégal, que des navigateurs portugais ont ainsi appelé en 1444, avant d'avoir trouvé les îles, qui se trouvent à 600 à 850 kilomètres de ce cap. Dans la vie de tous les jours, les locuteurs disent simplement kriolu (crioulo en portugais). Kabuverdianu est le nom proposé pour le jour où la langue sera standardisée.",
   "spellingAliases": [],
   "familyId": "FLG_CREOLE",
   "peoples": [],
@@ -24,7 +24,24 @@
         "url": "https://glottolog.org/resource/languoid/id/kabu1256",
         "tier": "official",
         "notes": "Glottolog direct official languoid record; source of the name and glottocode. Les dialectes listés sont les sous-languoids que Glottolog rattache à kabu1256, hors languoids portant leur propre code ISO 639-3."
+      },
+      {
+        "title": "Wikipedia — Kabuverdianu",
+        "url": "https://en.wikipedia.org/wiki/Kabuverdianu",
+        "tier": "unverified",
+        "notes": "Page lue en ligne : les noms formels et d'usage courant de la langue et le nom proposé pour sa standardisation."
+      },
+      {
+        "title": "Wikipedia — Cape Verde",
+        "url": "https://en.wikipedia.org/wiki/Cape_Verde",
+        "tier": "unverified",
+        "notes": "Section sur le nom du pays, lue en ligne : le cap de la côte sénégalaise nommé en 1444 par des navigateurs portugais."
       }
     ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the language fiches carrying a name-origin text are translated together."
+    }
   }
 }

@@ -10,7 +10,7 @@
   "nameFr": "Kituba de la République démocratique du Congo",
   "nameEn": "Kituba (Democratic Republic of Congo)",
   "alternateNames": ["Kikongo Ya Leta", "Kikongo Simplifié", "Kileta"],
-  "whyProblematic": null,
+  "whyProblematic": "Ce parler a plusieurs noms selon la rive. En République démocratique du Congo, on dit Kikongo ya leta, « le kikongo de l'État », abrégé en Kileta : l'administration coloniale belge a adopté cette langue de contact là où on la parle. En République du Congo, on dit Kituba, « manière de parler », ou Munukutuba, qui veut dire à peu près « je dis ». D'anciens noms ont presque disparu : Kibula-matadi, « la parole des casseurs de pierres », et Kizabave, « ne sais pas », ainsi qu'un « kikongo bâtard » méprisant.",
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
   "peoples": [],
@@ -28,6 +28,18 @@
         "url": "https://glottolog.org/resource/languoid/id/kitu1246",
         "tier": "official",
         "notes": "Notice directe pour le code ISO 639-3 ktu et le glottocode kitu1246. Elle documente le statut EGIDS 3 en 2025, l'usage comme moyen de communication entre plusieurs groupes linguistiques et le statut légal de langue d'identité nationale en RDC. Les variantes de nom publiées ici sont limitées aux formes contrôlées par cette notice."
+      },
+      {
+        "title": "Mufwene, Salikoko S., « Kikongo-Kituba », Atlas of Pidgin and Creole Language Structures Online",
+        "url": "https://apics-online.info/surveys/58",
+        "tier": "referenced",
+        "notes": "Étude lue en ligne, début : les noms Kikongo ya leta, Mono kutuba et Kituba, et l'adoption du parler par l'administration coloniale belge."
+      },
+      {
+        "title": "Wikipedia — Kituba language",
+        "url": "https://en.wikipedia.org/wiki/Kituba_language",
+        "tier": "unverified",
+        "notes": "Page lue en ligne : le sens de Kituba, Munukutuba, Kibula-matadi et Kizabave, avec renvois à Mufwene (2009), à Samarin et à la Constitution congolaise."
       }
     ]
   },

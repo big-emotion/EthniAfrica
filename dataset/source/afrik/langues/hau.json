@@ -19,7 +19,7 @@
     "Kado",
     "Mgbakpa"
   ],
-  "whyProblematic": null,
+  "whyProblematic": "L'origine du nom « hausa » n'est pas établie. Neil Skinner propose en 1968 que ce soit le mot songhay pour « est », devenu le nom des gens qui vivent à l'est des Songhay : « on peut presque l'appliquer à l'appellation du peuple qui, pour les Songhay, vit à l'est ». Il présente cela comme une piste, non comme une preuve. Le plus ancien écrit relevé est la forme Ḥauṣiyin chez Ibn Saʿīd, au XIIIe siècle ; le nom revient quatre siècles plus tard dans le Tarikh es-Soudan.",
   "spellingAliases": [],
   "familyId": "FLG_TCHADIQUE",
   "peoples": [],
@@ -53,7 +53,18 @@
         "url": "https://glottolog.org/resource/languoid/id/haus1257",
         "tier": "official",
         "notes": "Glottolog name: Hausa; classification includes Chadic. Les dialectes listés sont les sous-languoids que Glottolog rattache à haus1257, hors languoids portant leur propre code ISO 639-3."
+      },
+      {
+        "title": "Skinner, Neil, « The origin of the name Hausa », Africa, 38(3), 1968, p. 253-257",
+        "url": "https://doi.org/10.2307/1157217",
+        "tier": "referenced",
+        "notes": "Résumé de l'article lu en ligne : la piste du mot songhay pour « est » et les premières mentions écrites du nom."
       }
     ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the language fiches carrying a name-origin text are translated together."
+    }
   }
 }

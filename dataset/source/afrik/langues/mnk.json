@@ -19,7 +19,7 @@
     "Mande",
     "Socé"
   ],
-  "whyProblematic": null,
+  "whyProblematic": "Mandinka est le nom des gens du Manden, la région d'origine de l'empire du Mali. Malinké, Maninka, Manding et Mandingue renvoient au même nom Manden ; les formes en g, comme Mandingo, sont des graphies anciennes. Pour le sens du mot Manden, le griot Babou Condé, recueilli par Camara Laye, y entend « enfant de l'hippopotame » : man, « hippopotame » ou « lamantin », et den, « enfant ». C'est le récit d'un griot ; nous n'avons pas trouvé d'autre explication à y comparer.",
   "spellingAliases": [],
   "familyId": "FLG_MANDE",
   "peoples": [
@@ -48,7 +48,24 @@
         "url": "https://iso639-3.sil.org/code_tables/download_tables",
         "tier": "official",
         "notes": "Tables du 2026-07-15, consultées le 2026-09-16. La table des macrolangues rattache le code mnk à la macrolangue man, Mandingo, aux côtés notamment du maninkakan de l'Est. Les codes du bambara et du dioula, eux, n'appartiennent à aucune macrolangue. Un même continuum mandingue est donc coupé de deux façons selon le code, ce qui montre que le partage entre langue et dialecte est ici une décision de codification, prise code par code par un organisme, et non une frontière relevée sur le terrain."
+      },
+      {
+        "title": "Wikipedia — Manding region",
+        "url": "https://en.wikipedia.org/wiki/Manding_region",
+        "tier": "unverified",
+        "notes": "Section sur le nom, lue en ligne : elle reprend le passage de Camara Laye, Le Maître de la parole. Kouma Lafôlô Kouma (Paris, Plon, 1978), que nous n'avons pas lu directement."
+      },
+      {
+        "title": "Wikipedia — Mandinka people",
+        "url": "https://en.wikipedia.org/wiki/Mandinka_people",
+        "tier": "unverified",
+        "notes": "Note sur les graphies lue en ligne : Maninka, Manding, Mandingo ; les formes en g sont jugées anciennes."
       }
     ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the language fiches carrying a name-origin text are translated together."
+    }
   }
 }
