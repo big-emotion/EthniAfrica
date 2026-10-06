@@ -331,7 +331,7 @@
     "demographics": {
       "totalPopulation": 39000000,
       "referenceYear": 2025,
-      "source": "UNFPA – World Population Dashboard (population totale) ; CIA World Factbook (parts des peuples)",
+      "source": "UNFPA – World Population Dashboard",
       "peoples": [
         {
           "name": "Ovimbundu",
