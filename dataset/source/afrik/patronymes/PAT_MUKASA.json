@@ -21,7 +21,24 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
+    "oralTraditions": [
+      {
+        "claim": "Le nom viendrait d'une île. Des passants ont vu un enfant assis sous un grand arbre près du lac, sur l'île de Bubembe, et l'ont dit aux anciens du village. Ceux-ci ont conclu qu'il venait de Bukasa et l'ont appelé « un Mukasa », c'est-à-dire un homme de l'île de Bukasa ; le nom lui est resté. Ce récit est celui du dieu Mukasa, fils de Wanema et de Nambubi, né sous le nom de Selwanga.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "John Roscoe, missionnaire anglais qui a recueilli les croyances des Ganda",
+        "context": "Récit sur le dieu Mukasa publié en 1911 ; la personne qui l'a raconté n'est pas nommée. Il explique le nom du dieu, non celui des familles qui le portent aujourd'hui",
+        "sourceRefs": ["roscoe-1911-baganda"]
+      },
+      {
+        "claim": "Chez les Ganda, les jumeaux garçons recevaient le nom de Mukasa, d'après le dieu, et les filles celui de Namukasa ; les jumeaux étaient placés sous sa protection.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "John Roscoe, missionnaire anglais qui a recueilli les coutumes des Ganda",
+        "context": "Coutume décrite dans un ouvrage publié en 1911 ; la personne qui l'a rapportée n'est pas nommée",
+        "sourceRefs": ["roscoe-1911-baganda"]
+      }
+    ],
     "writtenChronicles": [],
     "linguisticReconstructions": []
   },
@@ -59,6 +76,14 @@
       "notes": "Base de répartition patronymique consultée directement pour attester l'emploi moderne de Mukasa comme nom de famille et sa présence dans les pays indiqués. La géographie ne prouve ni une appartenance ethnique exclusive ni une étymologie ; les définitions contributives éventuelles ne sont pas élevées au rang de faits."
     },
     {
+      "sourceKey": "roscoe-1911-baganda",
+      "title": "The Baganda: an account of their native customs and beliefs",
+      "url": "https://archive.org/details/cu31924028599433",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Roscoe, John, Macmillan, Londres, 1911 ; l'auteur est missionnaire de la Church Missionary Society. Pages lues sur l'exemplaire numérisé d'archive.org (bibliothèque de Cornell), dont les numéros imprimés figurent en tête de page : les jumeaux garçons nommés Mukasa et les filles Namukasa, d'après le dieu (p. 70) ; l'enfant trouvé sur l'île de Bubembe, que les anciens disent venu de Bukasa et appellent « un Mukasa » (p. 291). Ouvrage d'un auteur de l'époque coloniale, cité pour ce que les Ganda lui ont raconté du nom, non pour ses classements. Il parle du nom du dieu et d'un usage pour les jumeaux : il n'explique pas comment Mukasa est devenu un nom de famille."
+    },
+    {
       "sourceKey": "dacb-joseph-mukasa",
       "title": "Mukasa Balikuddembe, Joseph",
       "url": "https://dacb.org/stories/uganda/mukasa-joseph/",
@@ -70,7 +95,7 @@
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Mukasa », « BAGANDA », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée et les travaux ou notices propres au nom cités dans la fiche n'ont livré aucune tradition attribuée, chronique datée ou étude linguistique établissant l'origine de Mukasa. Les explications anonymes, les simples rapprochements lexicaux et la seule géographie ont été écartés."
+      "reason": "Nous n'avons trouvé aucune source qui explique comment Mukasa est devenu un nom de famille, ni qui dise si les familles qui le portent se rattachent au dieu. Les deux récits ci-dessus parlent du nom du dieu et d'une coutume pour les jumeaux ; aucun n'est un récit des familles elles-mêmes. Les rapprochements lexicaux et la seule géographie ont été écartés."
     },
     {
       "fieldPath": "nameSystem",
