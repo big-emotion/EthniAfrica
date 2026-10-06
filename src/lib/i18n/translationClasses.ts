@@ -179,6 +179,14 @@ export const TRANSLATION_CLASSES: Readonly<
   "modele-langue.json": {
     "_meta.*": "invariant",
     id: "invariant",
+    // Two optional sentences written for the result page, shown as written.
+    "content.searchAnswer.lead": "translatable",
+    "content.searchAnswer.followUp": "translatable",
+    // A declared estimate, never computed: the figures and their citation are
+    // carried over, only the source note is prose.
+    "content.speakers.byCountry[].country": "invariant",
+    "content.speakers.byCountry[].speakers": "invariant",
+    ...sourceEntry("content.speakers.byCountry[].source"),
     isoCode639_3: "invariant",
     glottocode: "invariant",
     nameFr: "invariant",
@@ -202,6 +210,14 @@ export const TRANSLATION_CLASSES: Readonly<
   "modele-linguistique.json": {
     "_meta.*": "invariant",
     id: "invariant",
+    // Two optional sentences written for the result page, shown as written.
+    "content.searchAnswer.lead": "translatable",
+    "content.searchAnswer.followUp": "translatable",
+    // A declared estimate, never computed: the figures and their citation are
+    // carried over, only the source note is prose.
+    "content.speakers.byCountry[].country": "invariant",
+    "content.speakers.byCountry[].speakers": "invariant",
+    ...sourceEntry("content.speakers.byCountry[].source"),
     nameFr: "invariant",
     nameEn: "invariant",
     classificationStatus: "invariant",
@@ -282,6 +298,9 @@ export const TRANSLATION_CLASSES: Readonly<
   "modele-nom-patronyme.json": {
     "_meta.*": "invariant",
     id: "invariant",
+    // Patronymes carry no `content` block: the same two sentences, at the root.
+    "searchAnswer.lead": "translatable",
+    "searchAnswer.followUp": "translatable",
     nameMain: "invariant",
     nameSystem: "invariant",
     "spellings[].spelling": "invariant",
@@ -396,6 +415,9 @@ export const TRANSLATION_CLASSES: Readonly<
   "modele-pays.json": {
     "_meta.*": "invariant",
     id: "invariant",
+    // Two optional sentences written for the result page, shown as written.
+    "content.searchAnswer.lead": "translatable",
+    "content.searchAnswer.followUp": "translatable",
     // Both locale-bound by their key. nameEn is corpus data, not a
     // display-time lookup: the search ladder reads it in SQL (migration 084),
     // and it follows the state's own English usage, which Admin0Country.name
@@ -470,6 +492,9 @@ export const TRANSLATION_CLASSES: Readonly<
   "modele-peuple.json": {
     "_meta.*": "invariant",
     id: "invariant",
+    // Two optional sentences written for the result page, shown as written.
+    "content.searchAnswer.lead": "translatable",
+    "content.searchAnswer.followUp": "translatable",
     nameMain: "invariant",
     languageFamilyId: "invariant",
     "currentCountries[]": "invariant",

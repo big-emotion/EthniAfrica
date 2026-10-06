@@ -42,6 +42,13 @@ import {
   translationBlockSchema,
 } from "../src/lib/afrik/translations/types";
 import { listTranslationSidecars } from "../src/lib/afrik/translations/sidecarPaths";
+import {
+  SEARCH_ANSWER_FOLLOW_UP_MAX_LENGTH,
+  SEARCH_ANSWER_LEAD_MAX_LENGTH,
+  searchAnswerSentenceProblems,
+  type SearchAnswerSentenceProblem,
+} from "../src/lib/search/answer";
+import { violatesReaderRegister } from "../src/lib/editorial/readerRegister";
 
 // ─── Exported ValidationResult (FR26-FR31) ───────────────────────────────────
 
@@ -4742,7 +4749,7 @@ export function checkLanguageStrictSchema(
         Object.keys(data.content as Record<string, unknown>)
       );
       const missingContent = [...modelContentKeys].filter(
-        (k) => !ficheContentKeys.has(k)
+        (k) => !ficheContentKeys.has(k) && !OPTIONAL_CONTENT_KEYS.has(k)
       );
       const extraContent = [...ficheContentKeys].filter(
         (k) => !modelContentKeys.has(k)
@@ -4827,6 +4834,14 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
 // `_translation` is the parity gate's deferral, exactly as the language check.
 const AUTHORING_KEYS = new Set(["_meta", "_translation"]);
 
+// Keys a model documents under `content` that a fiche may leave out without
+// drifting: the page has a fallback for each, so absence is not a defect and
+// must not be counted against the strict-model ceilings.
+const OPTIONAL_CONTENT_KEYS: ReadonlySet<string> = new Set([
+  "searchAnswer",
+  "speakers",
+]);
+
 function declaredKeys(value: unknown): Set<string> {
   if (typeof value !== "object" || value === null || Array.isArray(value)) {
     return new Set();
@@ -4892,7 +4907,11 @@ export function checkStrictModelKeys(
     const ficheKeys = declaredKeys(fichePart);
     const findings = [
       ...[...modelKeys]
-        .filter((key) => !ficheKeys.has(key))
+        .filter(
+          (key) =>
+            !ficheKeys.has(key) &&
+            !(section === "content" && OPTIONAL_CONTENT_KEYS.has(key))
+        )
         .map((key) => `${section}: missing key "${key}"`),
       ...[...ficheKeys]
         .filter((key) => !modelKeys.has(key))
@@ -4956,6 +4975,218 @@ export function checkStrictModelKeys(
   };
 }
 
+// ─── Search answer fields ────────────────────────────────────────────────────
+
+const SEARCH_ANSWER_KEYS: ReadonlySet<string> = new Set(["lead", "followUp"]);
+
+function searchAnswerSentenceErrors(
+  where: string,
+  field: "lead" | "followUp",
+  value: unknown
+): string[] {
+  const label = `${where}.searchAnswer.${field}`;
+  if (typeof value !== "string" || value.trim() === "") {
+    return [`REQ-178: ${label} must be a non-empty string (empty)`];
+  }
+  const maxLength =
+    field === "lead"
+      ? SEARCH_ANSWER_LEAD_MAX_LENGTH
+      : SEARCH_ANSWER_FOLLOW_UP_MAX_LENGTH;
+  const messages: Record<SearchAnswerSentenceProblem, string> = {
+    "too-long": `is over ${maxLength} characters`,
+    "not-a-question": `must be a question ending with "?"`,
+    register:
+      "breaks the reader-facing register (internal identifier, path or curation vocabulary)",
+    "scholarly-word": "uses a scholarly word the result page never shows",
+  };
+  return searchAnswerSentenceProblems(field, value).map(
+    (problem) => `REQ-178: ${label} ${messages[problem]}`
+  );
+}
+
+function speakerEstimateErrors(where: string, block: unknown): string[] {
+  const rows = (block as { byCountry?: unknown } | null)?.byCountry;
+  if (!Array.isArray(rows) || rows.length === 0) {
+    return [`REQ-178: ${where}.speakers.byCountry must be a non-empty array`];
+  }
+  const errors: string[] = [];
+  const seen = new Set<string>();
+  rows.forEach((raw, index) => {
+    const row = (raw ?? {}) as Record<string, unknown>;
+    const at = `${where}.speakers.byCountry[${index}]`;
+    const country = row.country;
+    if (
+      typeof country !== "string" ||
+      !(
+        AFRICAN_REFERENCE_COUNTRY_CODES.has(country) ||
+        OFF_MAP_COUNTRIES.has(country)
+      )
+    ) {
+      errors.push(
+        `REQ-178: ${at}.country "${String(country)}" is not a known ISO 3166-1 alpha-3 code`
+      );
+    } else if (seen.has(country)) {
+      errors.push(`REQ-178: ${at}.country "${country}" is declared twice`);
+    } else {
+      seen.add(country);
+    }
+    if (
+      typeof row.speakers !== "number" ||
+      !Number.isFinite(row.speakers) ||
+      row.speakers <= 0
+    ) {
+      errors.push(
+        `REQ-178: ${at}.speakers must be a positive number of people`
+      );
+    }
+    const source = (row.source ?? {}) as Record<string, unknown>;
+    if (typeof source.title !== "string" || source.title.trim() === "") {
+      errors.push(`REQ-178: ${at}.source.title is required`);
+    }
+    if (!SOURCE_STANDINGS.has(String(source.tier))) {
+      errors.push(
+        `REQ-178: ${at}.source.tier must be official, referenced, unverified or needs_review`
+      );
+    }
+    // Title and notes reach the reader verbatim, like any other source.
+    for (const field of ["title", "notes"] as const) {
+      const text = source[field];
+      if (typeof text === "string" && violatesReaderRegister(text)) {
+        errors.push(
+          `REQ-178: ${at}.source.${field} breaks the reader-facing register`
+        );
+      }
+    }
+  });
+  return errors;
+}
+
+function listJsonFiles(
+  datasetRoot: string,
+  directory: string
+): Array<{ file: string; fullPath: string }> {
+  const dir = path.join(datasetRoot, directory);
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((name) => name.endsWith(".json") && !name.startsWith("_"))
+    .sort()
+    .map((name) => ({
+      file: `${directory}/${name}`,
+      fullPath: path.join(dir, name),
+    }));
+}
+
+/**
+ * REQ-178 – The two optional sentences a fiche may write for the result page
+ * (`searchAnswer.lead`, `searchAnswer.followUp`) and the declared speaker
+ * estimates of languages and families (`speakers.byCountry`).
+ *
+ * Both are published to the reader as written, so they obey the register that
+ * `gaps[].reason` and `sources[].notes` obey. Absent fields pass: the page
+ * falls back to a sentence template, and a fiche is never required to write
+ * one. Patronymes carry no `content` block, so theirs sits at the top level.
+ */
+export function checkSearchAnswerFields(datasetRoot: string): ValidationResult {
+  const errors: string[] = [];
+
+  const sections: Array<{
+    files: Array<{ file: string; fullPath: string }>;
+    carriesSpeakers: boolean;
+    inContent: boolean;
+  }> = [
+    {
+      files: collectPplFiles(datasetRoot).map(
+        ({ flgFolder, file, fullPath }) => ({
+          file: `peuples/${flgFolder}/${file}`,
+          fullPath,
+        })
+      ),
+      carriesSpeakers: false,
+      inContent: true,
+    },
+    {
+      files: listJsonFiles(datasetRoot, "pays"),
+      carriesSpeakers: false,
+      inContent: true,
+    },
+    {
+      files: collectLanguageFiles(datasetRoot).map(({ file, fullPath }) => ({
+        file: `langues/${file}`,
+        fullPath,
+      })),
+      carriesSpeakers: true,
+      inContent: true,
+    },
+    {
+      files: collectFlgFiles(datasetRoot).map(({ file, fullPath }) => ({
+        file: `famille_linguistique/${file}`,
+        fullPath,
+      })),
+      carriesSpeakers: true,
+      inContent: true,
+    },
+    {
+      files: listJsonFiles(datasetRoot, "patronymes"),
+      carriesSpeakers: false,
+      inContent: false,
+    },
+  ];
+
+  for (const { files, carriesSpeakers, inContent } of sections) {
+    for (const { file, fullPath } of files) {
+      const fiche = readFiche(fullPath);
+      if (!fiche) continue;
+      const holder = (inContent ? (fiche.content ?? {}) : fiche) as Record<
+        string,
+        unknown
+      >;
+      const where = `${file}: ${inContent ? "content" : "root"}`;
+
+      const block = holder.searchAnswer;
+      if (block !== undefined) {
+        if (
+          typeof block !== "object" ||
+          block === null ||
+          Array.isArray(block)
+        ) {
+          errors.push(`REQ-178: ${where}.searchAnswer must be an object`);
+        } else {
+          for (const key of Object.keys(block)) {
+            if (!SEARCH_ANSWER_KEYS.has(key)) {
+              errors.push(
+                `REQ-178: ${where}.searchAnswer has unexpected key "${key}"`
+              );
+            }
+          }
+          for (const field of ["lead", "followUp"] as const) {
+            if (field in block) {
+              errors.push(
+                ...searchAnswerSentenceErrors(
+                  where,
+                  field,
+                  (block as Record<string, unknown>)[field]
+                )
+              );
+            }
+          }
+        }
+      }
+
+      if (holder.speakers !== undefined) {
+        errors.push(
+          ...(carriesSpeakers
+            ? speakerEstimateErrors(where, holder.speakers)
+            : [
+                `REQ-178: ${where}.speakers is not allowed: only languages and language families carry speaker estimates`,
+              ])
+        );
+      }
+    }
+  }
+
+  return { ok: errors.length === 0, errors, warnings: [] };
+}
 // Both lists a country fiche uses to name its peoples carry the same
 // `peopleId` and `languageFamily` pair.
 const COUNTRY_PEOPLE_LISTS: ReadonlyArray<{
@@ -5466,6 +5697,12 @@ async function main() {
   newChecks.push({
     name: "FR27-references People references resolve",
     result: checkPeopleReferencesResolve(datasetRoot),
+  });
+
+  console.log("REQ-178 – Search answer fields...");
+  newChecks.push({
+    name: "REQ-178 Search answer fields",
+    result: checkSearchAnswerFields(datasetRoot),
   });
 
   console.log("REQ-148 – Kingdom time ranges...");

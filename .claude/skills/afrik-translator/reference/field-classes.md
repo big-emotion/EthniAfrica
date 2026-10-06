@@ -142,29 +142,37 @@ contract test is what keeps them equal to it, row for row and model for model.
 
 ### modele-langue.json
 
-| Leaf                            | Class             | Note              |
-| ------------------------------- | ----------------- | ----------------- |
-| `_meta.*`                       | `invariant`       |                   |
-| `id`                            | `invariant`       |                   |
-| `isoCode639_3`                  | `invariant`       |                   |
-| `glottocode`                    | `invariant`       |                   |
-| `nameFr`                        | `invariant`       |                   |
-| `nameEn`                        | `invariant`       |                   |
-| `alternateNames[]`              | `invariant`       | glossed invariant |
-| `whyProblematic`                | `review_required` |                   |
-| `spellingAliases[]`             | `invariant`       | glossed invariant |
-| `familyId`                      | `invariant`       |                   |
-| `peoples[].name`                | `invariant`       |                   |
-| `peoples[].peopleId`            | `invariant`       |                   |
-| `content.vehicularRole`         | `invariant`       |                   |
-| `content.dialects[]`            | `invariant`       | glossed invariant |
-| `content.vitalityStatus.status` | `invariant`       |                   |
-| `content.vitalityStatus.scale`  | `invariant`       |                   |
-| `content.vitalityStatus.asOf`   | `invariant`       |                   |
-| `content.sources[].title`       | `invariant`       |                   |
-| `content.sources[].url`         | `invariant`       |                   |
-| `content.sources[].tier`        | `invariant`       |                   |
-| `content.sources[].notes`       | `translatable`    |                   |
+| Leaf                                        | Class             | Note              |
+| ------------------------------------------- | ----------------- | ----------------- |
+| `_meta.*`                                   | `invariant`       |                   |
+| `id`                                        | `invariant`       |                   |
+| `isoCode639_3`                              | `invariant`       |                   |
+| `glottocode`                                | `invariant`       |                   |
+| `nameFr`                                    | `invariant`       |                   |
+| `nameEn`                                    | `invariant`       |                   |
+| `alternateNames[]`                          | `invariant`       | glossed invariant |
+| `whyProblematic`                            | `review_required` |                   |
+| `spellingAliases[]`                         | `invariant`       | glossed invariant |
+| `familyId`                                  | `invariant`       |                   |
+| `peoples[].name`                            | `invariant`       |                   |
+| `peoples[].peopleId`                        | `invariant`       |                   |
+| `content.vehicularRole`                     | `invariant`       |                   |
+| `content.dialects[]`                        | `invariant`       | glossed invariant |
+| `content.vitalityStatus.status`             | `invariant`       |                   |
+| `content.vitalityStatus.scale`              | `invariant`       |                   |
+| `content.vitalityStatus.asOf`               | `invariant`       |                   |
+| `content.sources[].title`                   | `invariant`       |                   |
+| `content.sources[].url`                     | `invariant`       |                   |
+| `content.sources[].tier`                    | `invariant`       |                   |
+| `content.sources[].notes`                   | `translatable`    |                   |
+| `content.searchAnswer.lead`                 | `translatable`    |                   |
+| `content.searchAnswer.followUp`             | `translatable`    |                   |
+| `content.speakers.byCountry[].country`      | `invariant`       |                   |
+| `content.speakers.byCountry[].speakers`     | `invariant`       |                   |
+| `content.speakers.byCountry[].source.title` | `invariant`       |                   |
+| `content.speakers.byCountry[].source.url`   | `invariant`       |                   |
+| `content.speakers.byCountry[].source.tier`  | `invariant`       |                   |
+| `content.speakers.byCountry[].source.notes` | `translatable`    |                   |
 
 ### modele-linguistique.json
 
@@ -206,6 +214,14 @@ contract test is what keeps them equal to it, row for row and model for model.
 | `content.sources[].url`                                    | `invariant`       |                   |
 | `content.sources[].tier`                                   | `invariant`       |                   |
 | `content.sources[].notes`                                  | `translatable`    |                   |
+| `content.searchAnswer.lead`                                | `translatable`    |                   |
+| `content.searchAnswer.followUp`                            | `translatable`    |                   |
+| `content.speakers.byCountry[].country`                     | `invariant`       |                   |
+| `content.speakers.byCountry[].speakers`                    | `invariant`       |                   |
+| `content.speakers.byCountry[].source.title`                | `invariant`       |                   |
+| `content.speakers.byCountry[].source.url`                  | `invariant`       |                   |
+| `content.speakers.byCountry[].source.tier`                 | `invariant`       |                   |
+| `content.speakers.byCountry[].source.notes`                | `translatable`    |                   |
 
 ### modele-media.json
 
@@ -366,6 +382,8 @@ contract test is what keeps them equal to it, row for row and model for model.
 | `totemicFoodProhibition.sourceRefs[]`             | `invariant`       | parser-only |
 | `permittedGivenNames[].name`                      | `invariant`       | parser-only |
 | `permittedGivenNames[].sourceRefs[]`              | `invariant`       | parser-only |
+| `searchAnswer.lead`                               | `translatable`    |             |
+| `searchAnswer.followUp`                           | `translatable`    |             |
 
 ### modele-nom-patronymique.json
 
@@ -530,6 +548,8 @@ contract test is what keeps them equal to it, row for row and model for model.
 | `content.demographics.peoples[].region`              | `translatable`    |                   |
 | `content.demographics.peoples[].languageFamily`      | `invariant`       |                   |
 | `content.demographics.peoples[].mainLanguageCode`    | `invariant`       |                   |
+| `content.searchAnswer.lead`                          | `translatable`    |                   |
+| `content.searchAnswer.followUp`                      | `translatable`    |                   |
 
 ### modele-peuple.json
 
@@ -594,6 +614,8 @@ contract test is what keeps them equal to it, row for row and model for model.
 | `content.sources[].url`                                 | `invariant`       |                   |
 | `content.sources[].tier`                                | `invariant`       |                   |
 | `content.sources[].notes`                               | `translatable`    |                   |
+| `content.searchAnswer.lead`                             | `translatable`    |                   |
+| `content.searchAnswer.followUp`                         | `translatable`    |                   |
 
 ### modele-recit-oral.json
 
