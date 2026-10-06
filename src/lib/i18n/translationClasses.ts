@@ -204,6 +204,8 @@ export const TRANSLATION_CLASSES: Readonly<
     "content.vitalityStatus.status": "invariant",
     "content.vitalityStatus.scale": "invariant",
     "content.vitalityStatus.asOf": "invariant",
+    // A flag, never prose: true when the origin of the name is debated.
+    "content.originDebated": "invariant",
     ...sourceEntry("content.sources[]"),
   },
 

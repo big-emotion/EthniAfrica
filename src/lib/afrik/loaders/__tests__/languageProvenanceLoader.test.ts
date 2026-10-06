@@ -184,6 +184,21 @@ describe("loadLanguages", () => {
     });
   });
 
+  // The answer page reads this flag from `content`; a loader that drops it
+  // leaves a debated language name presented as settled.
+  // @req REQ-178
+  it("persists the declared originDebated flag, false included", async () => {
+    const double = createSupabaseDouble();
+
+    await loadLanguages(asClient(double), [
+      sourced({ id: "lin", originDebated: true }),
+      sourced({ id: "yor", originDebated: false }),
+    ]);
+
+    expect(double.languages[0].content).toMatchObject({ originDebated: true });
+    expect(double.languages[1].content).toMatchObject({ originDebated: false });
+  });
+
   // AC: an enriched fiche persists all public content and every explicit source.
   // @req REQ-136
   it("persists enriched fiche content, aliases, and all source tiers", async () => {
