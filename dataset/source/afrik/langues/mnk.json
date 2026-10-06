@@ -19,7 +19,7 @@
     "Mande",
     "Socé"
   ],
-  "whyProblematic": "Mandinka est le nom des gens du Manden, la région d'origine de l'empire du Mali. Malinké, Maninka, Manding et Mandingue renvoient au même nom Manden ; les formes en g, comme Mandingo, sont des graphies anciennes. Pour le sens du mot Manden, le griot Babou Condé, recueilli par Camara Laye, y entend « enfant de l'hippopotame » : man, « hippopotame » ou « lamantin », et den, « enfant ». C'est le récit d'un griot ; nous n'avons pas trouvé d'autre explication à y comparer.",
+  "whyProblematic": "Mandinka est le nom des gens du Manden, la région d'origine de l'empire du Mali. D'après l'article de Wikipédia « Malinkés », mandingue déforme mandenka, « habitant du Manden », et Malinké serait d'origine peule (Bugiel, 1922 ; Delafosse, 1929). Les graphies en g, comme Mandingo, sont jugées vieillies dans les écrits récents, mais restent en usage. Pour le sens du mot Manden, une phrase de l'article de Wikipédia sur le Manding rapporte que le griot Babou Condé, recueilli par Camara Laye, y entend « enfant de l'hippopotame » : man, « hippopotame » ou « lamantin », et den, « enfant ». Cette phrase renvoie à une notice sur le livre de Laye dans le Kindlers Literatur Lexikon, que nous n'avons pas lue. C'est le récit d'un griot, et nous n'avons pas trouvé d'autre explication à lui comparer.",
   "spellingAliases": [],
   "familyId": "FLG_MANDE",
   "peoples": [
@@ -50,16 +50,22 @@
         "notes": "Tables du 2026-07-15, consultées le 2026-09-16. La table des macrolangues rattache le code mnk à la macrolangue man, Mandingo, aux côtés notamment du maninkakan de l'Est. Les codes du bambara et du dioula, eux, n'appartiennent à aucune macrolangue. Un même continuum mandingue est donc coupé de deux façons selon le code, ce qui montre que le partage entre langue et dialecte est ici une décision de codification, prise code par code par un organisme, et non une frontière relevée sur le terrain."
       },
       {
-        "title": "Wikipedia — Manding region",
-        "url": "https://en.wikipedia.org/wiki/Manding_region",
+        "title": "Wikipédia — Malinkés",
+        "url": "https://fr.wikipedia.org/wiki/Malink%C3%A9s",
         "tier": "unverified",
-        "notes": "Section sur le nom, lue en ligne : elle reprend le passage de Camara Laye, Le Maître de la parole. Kouma Lafôlô Kouma (Paris, Plon, 1978), que nous n'avons pas lu directement."
+        "notes": "Section sur le nom, lue en ligne : mandingue, mandenka, Malinké d'origine peule ; elle renvoie à Bugiel (1922) et à Delafosse (1929), que nous n'avons pas lus."
       },
       {
-        "title": "Wikipedia — Mandinka people",
+        "title": "Wikipédia (anglais) — Manding region",
+        "url": "https://en.wikipedia.org/wiki/Manding_region",
+        "tier": "unverified",
+        "notes": "Section sur le nom, lue en ligne : elle reprend, par une notice du Kindlers Literatur Lexikon, le passage de Camara Laye, Le Maître de la parole. Kouma Lafôlô Kouma (Paris, Plon, 1978)."
+      },
+      {
+        "title": "Wikipédia (anglais) — Mandinka people",
         "url": "https://en.wikipedia.org/wiki/Mandinka_people",
         "tier": "unverified",
-        "notes": "Note sur les graphies lue en ligne : Maninka, Manding, Mandingo ; les formes en g sont jugées anciennes."
+        "notes": "Note sur les graphies lue en ligne : Maninka, Manding, Mandingo ; les formes en g y sont jugées anciennes."
       }
     ]
   },

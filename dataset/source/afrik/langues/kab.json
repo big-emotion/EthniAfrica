@@ -10,7 +10,7 @@
   "nameFr": "Kabyle",
   "nameEn": "Kabyle",
   "alternateNames": ["Kabyl", "Kabylia", "Kabylisch", "Taqbaylit"],
-  "whyProblematic": "Le nom « kabyle » vient de l'arabe qabāʾil, pluriel de qabīla, « tribu » : des citadins arabophones appelaient ainsi les gens de la montagne, et le mot a fini par nommer la région, la Kabylie, puis la langue. Les Kabyles l'ont repris : taqbaylit, le nom de leur langue, et leqbayel, aqbayli sont attestés dans leur poésie du XIXe siècle. Une seconde explication, par le verbe qbel, « accepter », en référence à l'acceptation de l'islam, est rapportée comme possible sans être établie ; le dictionnaire de l'Académie française ne retient que la tribu. Zwawa est un autre nom arabe, employé depuis le Moyen Âge pour les tribus du Djurdjura ; il a vieilli.",
+  "whyProblematic": "Il y a deux explications possibles du mot « kabyle ». L'une le tire de l'arabe qabāʾil, pluriel de qabīla, « tribu » : des citadins arabophones appelaient ainsi des ruraux organisés en tribus (Bellil). L'autre le tire du verbe arabe qbel, « accepter », parce que les Kabyles auraient accepté l'islam (Assam). Le dictionnaire de l'Académie française ne retient que « tribu, famille ». « Kabylie », le nom de la région, a été fixé par les Français (Assam). Les Kabyles se nomment eux-mêmes Leqbayel au pluriel et aqbayli au singulier, des mots venus de l'arabe, qu'on trouve dans des poèmes kabyles transcrits depuis le XIXe siècle (Assam). Un autre nom est plus ancien : Zwawa, un nom arabe donné depuis le Moyen Âge aux tribus du Djurdjura, notamment par Ibn Khaldoun (Bellil). Selon le linguiste Salem Chaker, Izwawen serait l'ancien nom que les Kabyles se donnaient, aujourd'hui oublié (d'après l'article de Wikipédia « Kabyles », qui s'appuie sur Lanfry, 1978). En kabyle, azwaw est un prénom et Izwawen un nom de clan fréquent. Le lien entre ces mots n'est pas établi.",
   "spellingAliases": [],
   "familyId": "FLG_BERBERE",
   "peoples": [],
@@ -34,25 +34,31 @@
         "title": "Bellil, R. « Kabylie : La région dans les écrits arabes ». Encyclopédie berbère, 26, 2004, p. 4016-4022",
         "url": "https://journals.openedition.org/encyclopedieberbere/1405",
         "tier": "referenced",
-        "notes": "Peeters. Lu : l'origine du terme Kabyle dans l'arabe qabâ'il, son usage citadin et sa fixation au milieu du 19e siècle ; les Zwawa chez Ibn Khaldoun."
-      },
-      {
-        "title": "Chaker, Salem. « Note à propos du précédent article ». Revue de l'Occident musulman et de la Méditerranée, 26, 1978, p. 103",
-        "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1826",
-        "tier": "referenced",
-        "notes": "Commentaire de l'étude de Jacques Lanfry sur les Zwawa. Lu : zwawi et zwawa comme dénomination arabe un peu vieillie des Kabyles ; azwaw comme prénom, izwawen comme nom de clan et ses traces poétiques au sens de Kabyles."
+        "notes": "Lu : le mot arabe qabâ'il, « tribu », et les Zawawa, tribus du Djurdjura chez Ibn Khaldoun."
       },
       {
         "title": "Assam, Malika. Des tribus en Kabylie ? Les At Zemmenzer, de la tribu précoloniale à la reconstruction identitaire berbère. Paris, Presses de l'Inalco, 2022, chapitre « Tribu » et affirmation identitaire berbère en Kabylie",
         "url": "https://books.openedition.org/pressesinalco/45934",
         "tier": "referenced",
-        "notes": "Lu : les deux étymologies possibles de Kabyle, par qabâ'il ou par qbel ; le nom collectif Leqbayel relevé dans le dictionnaire kabyle-français de Jean-Marie Dallet ; aqbayli, Leqbayel et taqbaylit attestés dans la poésie du 19e siècle."
+        "notes": "Lu : les deux explications possibles de Kabyle, par qabâ'il ou par qbel ; Kabylie comme nom fixé par les Français ; aqbayli et Leqbayel attestés dans des poèmes transcrits depuis le XIXe siècle."
+      },
+      {
+        "title": "Chaker, Salem. « Note à propos du précédent article ». Revue de l'Occident musulman et de la Méditerranée, 26, 1978, p. 103",
+        "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1826",
+        "tier": "referenced",
+        "notes": "Commentaire de l'étude de Jacques Lanfry sur les Zwawa. Lu : zwawi et zwawa comme nom arabe un peu vieilli des Kabyles, employé par les arabophones ; azwaw comme prénom et izwawen comme nom de clan."
       },
       {
         "title": "Académie française. Dictionnaire de l'Académie française, 9e édition, article kabyle",
         "url": "https://www.dictionnaire-academie.fr/article/A9K0006",
         "tier": "referenced",
-        "notes": "Lu : emprunt à l'arabe qabila, tribu, famille, dont le pluriel qabâ'il désigne les Kabyles ; aucune étymologie par l'acceptation de l'islam."
+        "notes": "Lu : emprunt à l'arabe qabila, « tribu, famille », dont le pluriel qabâ'il désigne les Kabyles."
+      },
+      {
+        "title": "Wikipédia — Kabyles",
+        "url": "https://fr.wikipedia.org/wiki/Kabyles",
+        "tier": "unverified",
+        "notes": "Passage sur les noms Izwawen, Igawawen et Zwawa, lu en ligne ; il renvoie à Lanfry (1978) et à Chaker, que nous n'avons pas lus directement."
       }
     ]
   },

@@ -10,7 +10,7 @@
   "nameFr": "Grebo",
   "nameEn": "Liberian Grebo",
   "alternateNames": [],
-  "whyProblematic": "Grebo est le nom du premier groupe que les colons américano-libériens ont rencontré au cap Palmas, les Glebo de la côte ; les colons ont ensuite appelé grebo leur langue. Le mot désigne aujourd'hui l'ensemble plus large auquel les Glebo appartiennent. En Côte d'Ivoire, c'est Krumen qui est d'usage. Pour le nom Glebo, leur récit d'origine dit qu'ils sont venus de l'est en pirogue, en grimpant sur les vagues comme le singe gle grimpe aux arbres (Moran). Comment le mot Grebo est sorti de Glebo n'est pas expliqué dans les sources que nous avons lues.",
+  "whyProblematic": "Glebo est le nom du premier groupe que les explorateurs et colons américano-libériens ont rencontré au cap Palmas, les Glebo de la côte ; les colons ont ensuite appelé grebo leur langue (article de Wikipédia). Pour Moran, Glebo est le groupe et Grebo l'ensemble linguistique plus large auquel il appartient. Le mot a ensuite servi pour des groupes de l'intérieur, souvent d'autres langues et d'autres peuples, si bien que son emploi savant reste très imprécis. Pour le nom Glebo, chez les Glebo de la côte, un récit d'origine, tel que rapporté par Moran, dit qu'ils sont venus de l'est en pirogue, en grimpant sur les vagues comme le singe gle grimpe aux arbres. Comment Grebo est sorti de Glebo n'est pas expliqué dans les sources lues.",
   "spellingAliases": [],
   "familyId": "FLG_KROU",
   "peoples": [],
@@ -62,13 +62,19 @@
         "title": "Moran, Mary H., « Glebo », Encyclopedia of World Cultures Supplement",
         "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/glebo",
         "tier": "referenced",
-        "notes": "Notice lue en ligne : le nom Glebo et le récit d'origine du singe gle ; Grebo comme ensemble plus large."
+        "notes": "Notice lue en ligne : le nom Glebo, son récit d'origine, et Grebo comme ensemble plus large."
       },
       {
-        "title": "Wikipedia — Grebo languages",
+        "title": "Wikipédia (anglais) — Grebo people",
+        "url": "https://en.wikipedia.org/wiki/Grebo_people",
+        "tier": "unverified",
+        "notes": "Page lue en ligne : le nom étendu depuis le premier groupe rencontré par les colons, et son emploi imprécis."
+      },
+      {
+        "title": "Wikipédia (anglais) — Grebo languages",
         "url": "https://en.wikipedia.org/wiki/Grebo_languages",
         "tier": "unverified",
-        "notes": "Page lue : les Glebo de la côte, premier groupe rencontré au cap Palmas, et l'usage de Krumen en Côte d'Ivoire. Le passage ne cite pas de publication."
+        "notes": "Page lue en ligne : les Glebo de la côte, premier groupe rencontré au cap Palmas."
       }
     ]
   },

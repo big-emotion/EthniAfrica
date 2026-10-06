@@ -10,7 +10,7 @@
   "nameFr": "Créole cap-verdien",
   "nameEn": "Kabuverdianu",
   "alternateNames": ["Caboverdiano", "Crioulo"],
-  "whyProblematic": "Kabuverdianu veut dire « du Cap-Vert » : le nom de la langue reprend celui du pays, Kabu Verdi en kabuverdianu, Cabo Verde en portugais, « cap vert ». Ce nom vient du cap voisin de Dakar, sur la côte du Sénégal, que des navigateurs portugais ont ainsi appelé en 1444, avant d'avoir trouvé les îles, qui se trouvent à 600 à 850 kilomètres de ce cap. Dans la vie de tous les jours, les locuteurs disent simplement kriolu (crioulo en portugais). Kabuverdianu est le nom proposé pour le jour où la langue sera standardisée.",
+  "whyProblematic": "Kabuverdianu fait partie du nom complet de la langue : Cape Verdean Creole en anglais, kriolu kauberdianu ou kabuverdianu en créole, « du Cap-Vert ». D'après l'article de Wikipédia, ce nom est aussi proposé comme nom de la langue le jour où elle sera standardisée ; la page ne cite pas de source pour cela. Le nom du pays vient du Cap-Vert (Cabo Verde, « cap vert »), sur la côte du Sénégal, que des navigateurs portugais auraient ainsi nommé en 1444 d'après l'article ; les îles sont à 600 à 850 kilomètres de ce cap. Au quotidien, les locuteurs disent simplement kriolu (crioulo en portugais).",
   "spellingAliases": [],
   "familyId": "FLG_CREOLE",
   "peoples": [],
@@ -26,16 +26,16 @@
         "notes": "Glottolog direct official languoid record; source of the name and glottocode. Les dialectes listés sont les sous-languoids que Glottolog rattache à kabu1256, hors languoids portant leur propre code ISO 639-3."
       },
       {
-        "title": "Wikipedia — Kabuverdianu",
+        "title": "Wikipédia (anglais) — Kabuverdianu",
         "url": "https://en.wikipedia.org/wiki/Kabuverdianu",
         "tier": "unverified",
-        "notes": "Page lue en ligne : les noms formels et d'usage courant de la langue et le nom proposé pour sa standardisation."
+        "notes": "Page lue en ligne : les noms formels et d'usage courant de la langue, et le nom proposé pour sa standardisation, donné sans source."
       },
       {
-        "title": "Wikipedia — Cape Verde",
+        "title": "Wikipédia (anglais) — Cape Verde",
         "url": "https://en.wikipedia.org/wiki/Cape_Verde",
         "tier": "unverified",
-        "notes": "Section sur le nom du pays, lue en ligne : le cap de la côte sénégalaise nommé en 1444 par des navigateurs portugais."
+        "notes": "Section sur le nom du pays, lue en ligne : le cap de la côte sénégalaise et la date de 1444."
       }
     ]
   },

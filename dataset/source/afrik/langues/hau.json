@@ -19,7 +19,7 @@
     "Kado",
     "Mgbakpa"
   ],
-  "whyProblematic": "L'origine du nom « hausa » n'est pas établie. Neil Skinner propose en 1968 que ce soit le mot songhay pour « est », devenu le nom des gens qui vivent à l'est des Songhay : « on peut presque l'appliquer à l'appellation du peuple qui, pour les Songhay, vit à l'est ». Il présente cela comme une piste, non comme une preuve. Le plus ancien écrit relevé est la forme Ḥauṣiyin chez Ibn Saʿīd, au XIIIe siècle ; le nom revient quatre siècles plus tard dans le Tarikh es-Soudan.",
+  "whyProblematic": "Une explication relie ce nom au mot songhay pour « est » : il semble que l'on puisse presque l'appliquer au nom du peuple qui, pour les Songhay, vit dans l'est du pays (Skinner, 1968). L'origine du nom n'est pas établie. L'article reprend le relevé de Westermann : le nom apparaît sous la forme Ḥauṣiyin chez Ibn Saʿīd, au XIIIe siècle, puis quatre siècles plus tard dans le Tarikh es-Soudan. Entre les deux, le seul nom général relevé est Afnū, noté par l'Égyptien Al-Maqrizi, qui l'a peut-être tiré d'une source du Bornou ; les Kanouri et leurs voisins du Tchad l'emploient encore pour les Hausa.",
   "spellingAliases": [],
   "familyId": "FLG_TCHADIQUE",
   "peoples": [],
@@ -58,7 +58,7 @@
         "title": "Skinner, Neil, « The origin of the name Hausa », Africa, 38(3), 1968, p. 253-257",
         "url": "https://doi.org/10.2307/1157217",
         "tier": "referenced",
-        "notes": "Résumé de l'article lu en ligne : la piste du mot songhay pour « est » et les premières mentions écrites du nom."
+        "notes": "Seuls l'extrait de début d'article et le résumé en ligne ont été lus, pas l'article entier."
       }
     ]
   },

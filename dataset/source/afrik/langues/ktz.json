@@ -28,7 +28,7 @@
     "Zhu'oasi",
     "Žhu|hõasi"
   ],
-  "whyProblematic": "Ju|'hoan est le nom que se donne la langue : il repose sur le mot ju, « gens », et Ju|'hoansi, avec la marque du pluriel -si, se traduit « vrais gens » (Lee). !Kung, ou Kung, est le nom le plus répandu dans les écrits pour l'ensemble des parlers voisins, que d'autres appellent Ju quand ils les voient comme une petite famille de langues ; Xun et Zhu sont des variantes. L'origine du mot !Kung n'est pas établie dans les sources que nous avons lues.",
+  "whyProblematic": "Ju|'hoan repose sur le mot ju, « gens » (article de Wikipédia). La traduction « vrais gens » est rapportée pour Ju|'hoansi (Lee). Ju|'hoansi est le nom que le peuple se donne, et la langue le suit. D'après l'article de Wikipédia sur les langues ǃKung, les locuteurs de presque tous les parlers voisins se disent ǃKung ; on emploie ǃKung quand on les voit comme une seule langue et Ju quand on y voit une petite famille de langues. Xun et Zhu sont d'autres façons d'écrire ces noms. D'où vient le mot ǃKung n'est pas établi dans les sources lues.",
   "spellingAliases": [],
   "familyId": "FLG_KXA",
   "peoples": [],
@@ -45,18 +45,18 @@
       },
       {
         "title": "Lee, Richard B., The Dobe Ju/'Hoansi, 4e éd., Cengage Learning, 2012",
-        "url": null,
+        "url": "https://cclib.ucsd.edu/library/details.aspx?ID=3255",
         "tier": "referenced",
-        "notes": "Présentation de l'ouvrage lue en ligne : le nom Ju/'hoansi traduit « vrais gens ». Le livre lui-même n'a pas été lu."
+        "notes": "Seule la page de présentation de l'ouvrage a été lue : elle traduit Ju/'hoansi par « real people ». Le livre n'a pas été lu."
       },
       {
-        "title": "Wikipedia — Juǀʼhoan language",
+        "title": "Wikipédia (anglais) — Juǀʼhoan language",
         "url": "https://en.wikipedia.org/wiki/Ju%C7%80%CA%BChoan_language",
         "tier": "unverified",
         "notes": "Section sur le nom, lue en ligne : ju, « gens ». Le passage ne cite pas de publication."
       },
       {
-        "title": "Wikipedia — ǃKung languages",
+        "title": "Wikipédia (anglais) — ǃKung languages",
         "url": "https://en.wikipedia.org/wiki/%C7%83Kung_languages",
         "tier": "unverified",
         "notes": "Section sur le nom, lue en ligne : emploi de ǃKung et de Ju, et variantes d'écriture. Le passage ne cite pas de publication."
