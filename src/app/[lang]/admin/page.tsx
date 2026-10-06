@@ -155,6 +155,15 @@ export default async function ModerationQueuePage({
           </Link>
         </p>
 
+        <p className="text-afh-small">
+          <Link
+            className="underline underline-offset-2"
+            href={`${queueRoute}/recherches`}
+          >
+            {copy.searchReportLink}
+          </Link>
+        </p>
+
         <FacetFilterBar
           action={queueRoute}
           primaryField={{
