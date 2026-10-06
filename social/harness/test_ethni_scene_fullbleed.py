@@ -172,6 +172,21 @@ class FullbleedExtensionTests(unittest.TestCase):
         renderer = SceneRenderer(plan, self.root, [], proof=False)
         self.assertTrue(any("Cours d'eau" in line for line in renderer.legend(plan["scenes"][0], 1)))
 
+    def test_a_parallel_is_a_line_of_latitude_without_an_arrowhead_and_says_so(self):
+        # A latitude limit (the 22nd parallel of the 1899 Anglo-Egyptian agreement) is neither a
+        # journey nor a migration: no arrowhead, and a legend that names it for what it is.
+        points = [[lon, 10] for lon in range(-15, 16, 3)]
+        parallel = {"kind": "route", "meaning": "latitude", "label": "10e parallèle", "points": points,
+                    "line_style": "dashed", "draw_seconds": .04}
+        plan = self.plan_with(parallel)
+        validate_plan(plan, self.root, 10)
+        renderer = SceneRenderer(plan, self.root, [], proof=False)
+        self.assertTrue(any("Parallèle" in line for line in renderer.legend(plan["scenes"][0], 1)))
+        journey = self.plan_with(dict(parallel, meaning="journey"))
+        with_arrow = SceneRenderer(journey, self.root, [], proof=False).render(1)
+        without = renderer.render(1)
+        self.assertNotEqual(with_arrow.tobytes(), without.tobytes(), "only the journey carries an arrowhead")
+
     def river_plan(self, **extra):
         river = {"kind": "route", "meaning": "river", "label": "Niger", "colour": "sea", "unlabelled": True,
                  "points": [[-10, 5], [0, 12], [5, 15]], "draw_seconds": .04}
