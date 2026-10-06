@@ -78,6 +78,15 @@ describe("ModerationQueuePage", () => {
     ).toHaveAttribute("href", "/fr/admin/sources");
   });
 
+  // @req REQ-002
+  it("links to the report of what readers search", async () => {
+    await renderQueue();
+
+    expect(
+      screen.getByRole("link", { name: "Ce que les lecteurs cherchent" })
+    ).toHaveAttribute("href", "/fr/admin/recherches");
+  });
+
   /**
    * The queue served `open` and `under_review` only. A moderator who had just
    * accepted a report could no longer find it.
