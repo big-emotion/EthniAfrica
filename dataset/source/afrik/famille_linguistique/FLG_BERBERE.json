@@ -3,6 +3,104 @@
   "nameFr": "Berbère / Amazighe",
   "nameEn": "Berber / Amazigh",
   "content": {
+    "searchAnswer": {
+      "lead": "Les langues des Imazighen, de l'Afrique du Nord au Sahel. Amazigh est le nom que se donnent aujourd'hui ces peuples ; Berbère vient du nom arabe Barbar, d'où le mot français.",
+      "followUp": "Amazigh veut-il vraiment dire « homme libre » ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "MAR",
+          "speakers": 13800000,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Maroc (2022)",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation d'Ethnologue pour 2022, fondée sur des chiffres de 2016-2017, rapportée par Wikipédia et non vérifiée dans le volume imprimé. Les recensements marocains donnent moins : 24,8 % de la population en 2024 (9,1 millions selon Wikipédia)."
+          }
+        },
+        {
+          "country": "DZA",
+          "speakers": 4500000,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Brenzinger, Language Diversity Endangered",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation de Brenzinger (2015 dans le tableau de Wikipédia) : environ 2,5 à 3 millions pour le kabyle et 1,4 million pour le chaoui. L'estimation d'ensemble reste incertaine."
+          }
+        },
+        {
+          "country": "MLI",
+          "speakers": 798000,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Mali (2022)",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation d'Ethnologue pour 2014-2018, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé."
+          }
+        },
+        {
+          "country": "NER",
+          "speakers": 720000,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Niger (2022)",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation d'Ethnologue pour 1998, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé."
+          }
+        },
+        {
+          "country": "LBY",
+          "speakers": 285890,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Libye (2022)",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation d'Ethnologue pour 2020, rapportée par Wikipédia et non vérifiée dans le volume imprimé. Le tableau récapitulatif de Wikipédia donne 247 000 pour le seul nafusi."
+          }
+        },
+        {
+          "country": "BFA",
+          "speakers": 122000,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Burkina Faso (2022)",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation d'Ethnologue pour 2009, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé."
+          }
+        },
+        {
+          "country": "MRT",
+          "speakers": 117200,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Mauritanie (2022)",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation d'Ethnologue pour 2017-2018, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé."
+          }
+        },
+        {
+          "country": "TUN",
+          "speakers": 53100,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Tunisie (2022)",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation d'Ethnologue pour 2004, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé."
+          }
+        },
+        {
+          "country": "EGY",
+          "speakers": 20000,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Égypte (2022)",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation d'Ethnologue pour 2013, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé."
+          }
+        }
+      ]
+    },
     "decolonialHeader": {
       "selfAppellation": "Tamazight",
       "contemporaryUsage": "Terme \"Amazigh/Imazighen\" officialisé dans les constitutions marocaine (2011, article 5) et algérienne (2016, article 4).",
