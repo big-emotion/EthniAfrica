@@ -10,6 +10,50 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [4.23.0] - 2026-10-06
+
+### Added
+
+- People fiches open on the name: « D'où vient le nom ? » with the self-name,
+  its sourced pronunciation and status badges, then each other form once with
+  one short line; written traces and explanations in closed disclosures
+  (#1476, #1486, REQ-155, REQ-189, REQ-190, DEC-068).
+- Names: per-form attestations cited at a printed page, answer-card fields
+  (`shortLine`, `namedBy`, `originDebated`, `usedIn`) and a sourced
+  pronunciation that requires consent for any recording; migrations `096` and
+  `097` add them to `name_records` (#1474, #1485, REQ-191).
+- Corpus: the Fula name record (`PPL_FULA`) with eight forms, 24 attestations
+  and a sourced pronunciation, reread by a contradictor agent (#1479, #1488).
+- Corpus: name-centred surname fiches — `PAT_CAMARA` and the 14 most-searched
+  clan names (Dembele, Dao, Dabo, Keita, Konaté, Traoré, Diawara…), every
+  account of the name's origin attributed and cited at a page, none crowned
+  (#1484).
+- Admin: a moderators' search report at `/fr/admin/recherches` — searches with
+  no result first, the most frequent next, by period and language (#1507).
+- Social production: the « Le Swipe » format and its skill, a brand kit and a
+  headless render CLI, clip-reel framing and banner improvements (#1461, #1464,
+  #1468, #1496–#1500, #1506).
+
+### Changed
+
+- Corpus: 90 fiche fields written as serialised JSON are now prose, and a gate
+  refuses the shape (#1475); the three Bissa fiches are merged into
+  `PPL_BISSA` (#1481); « fétiche » is kept only as the gloss of a local term
+  (#1487); specialist terms are explained at first use and Nganguela and
+  Frafra names corrected (#1483); UNESCO dating limits carried on the Kongo,
+  Luba and Lunda records (`COD`) (#1477); the Comoros name origin follows
+  Allibert 2000 (`COM`) (#1463, #1465).
+
+### Fixed
+
+- Search: `n`/`m` and `i`/`y` respellings reach their subject (« diawanbe »,
+  « pigmee »), and multi-word country names stay whole when a query is
+  widened (#1482).
+- Corpus: a published edition of an oral epic is cited as an academic source,
+  and the validator now refuses an oral-tradition source tiered above
+  unverified, which the database already refused (`PAT_CAMARA`,
+  `PAT_KONATE`) (#1510).
+
 ## [4.22.0] - 2026-10-01
 
 ### Added
@@ -1523,7 +1567,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.22.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.23.0...HEAD
+[4.23.0]: https://github.com/big-emotion/ethniafrica/compare/v4.22.0...v4.23.0
 [4.22.0]: https://github.com/big-emotion/ethniafrica/compare/v4.21.0...v4.22.0
 [4.21.0]: https://github.com/big-emotion/ethniafrica/compare/v4.20.0...v4.21.0
 [4.20.0]: https://github.com/big-emotion/ethniafrica/compare/v4.19.0...v4.20.0
