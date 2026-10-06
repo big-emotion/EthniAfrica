@@ -124,7 +124,6 @@
         "sna",
         "nya",
         "lug",
-        "lin",
         "kon",
         "kik",
         "bem",
@@ -274,6 +273,9 @@
           "note": "Environ 99% (Comoriens, culture bantou-arabe)"
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Le mot « bantou » désigne des langues apparentées, pas un peuple : chaque groupe qui les parle se dit par son propre nom."
     },
     "sources": [
       {

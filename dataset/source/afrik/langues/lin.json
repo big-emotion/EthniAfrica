@@ -34,6 +34,54 @@
       "Lingala du nord-ouest du Congo"
     ],
     "vitalityStatus": null,
+    "searchAnswer": {
+      "lead": "Une langue du bassin du Congo, l'une des quatre langues nationales de la RD Congo, parlée à Kinshasa et à Brazzaville.",
+      "followUp": "Qui a répandu le lingala, et d'où vient son nom ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "COD",
+          "speakers": 34000000,
+          "source": {
+            "title": "Estimations d'ensemble : Wikipedia (Lingala, 2024), APiCS Online (Lingala), SIL Ethnologue (lin)",
+            "url": null,
+            "tier": "unverified",
+            "notes": "Locuteurs natifs et de seconde langue confondus ; c'est la grande majorité des locuteurs. APiCS Online donne pour l'ensemble de la langue un total plus bas : environ quinze millions de locuteurs natifs et dix millions de seconde langue, sans année. Ordre de grandeur, ni recensement ni comptage de locuteurs."
+          }
+        },
+        {
+          "country": "COG",
+          "speakers": 4500000,
+          "source": {
+            "title": "Estimations d'ensemble : Wikipedia (Lingala, 2024), APiCS Online (Lingala), SIL Ethnologue (lin)",
+            "url": null,
+            "tier": "unverified",
+            "notes": "Locuteurs natifs et de seconde langue confondus ; langue véhiculaire dans le centre et le nord, notamment à Brazzaville. Ordre de grandeur, ni recensement ni comptage de locuteurs."
+          }
+        },
+        {
+          "country": "CAF",
+          "speakers": 800000,
+          "source": {
+            "title": "Estimations d'ensemble : Wikipedia (Lingala, 2024), APiCS Online (Lingala), SIL Ethnologue (lin)",
+            "url": null,
+            "tier": "unverified",
+            "notes": "Locuteurs natifs et de seconde langue confondus ; surtout comme langue de commerce dans les régions proches du Congo. Ordre de grandeur, ni recensement ni comptage de locuteurs."
+          }
+        },
+        {
+          "country": "AGO",
+          "speakers": 300000,
+          "source": {
+            "title": "Estimations d'ensemble : Wikipedia (Lingala, 2024), APiCS Online (Lingala), SIL Ethnologue (lin)",
+            "url": null,
+            "tier": "unverified",
+            "notes": "Locuteurs natifs et de seconde langue confondus ; communautés lingalaphones dans la région de Cabinda et diaspora congolaise. Ordre de grandeur, ni recensement ni comptage de locuteurs."
+          }
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Glottolog 5.3 — Lingala (ling1263)",
