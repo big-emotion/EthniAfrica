@@ -37,6 +37,7 @@
     "check:skill-parity": "tsx scripts/ci/checkSkillParity.ts",
     "check:skill-drift": "tsx scripts/ci/checkSkillDrift.ts",
     "check:translation-parity": "tsx scripts/ci/checkTranslationParity.ts",
+    "report:search-answer-coverage": "tsx scripts/ci/reportSearchAnswerCoverage.ts",
     "check:workflow-shell": "tsx scripts/checkWorkflowShellSyntax.ts",
     "confluence:bootstrap:build": "tsx scripts/buildConfluenceBootstrap.ts",
     "dev": "next dev",
