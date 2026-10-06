@@ -1,0 +1,163 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "patronyme",
+    "directives": "Dossier fondé sur des sources externes, dont plusieurs communautaires ; ne pas étendre les affirmations sans source dédiée."
+  },
+  "id": "PAT_BARADJI",
+  "nameMain": "Baradji",
+  "nameSystem": "clan_name",
+  "spellings": [
+    {
+      "spelling": "Baradji",
+      "attestations": [
+        { "countryId": "MLI", "sourceRefs": ["forebears-baradji"] },
+        { "countryId": "CIV", "sourceRefs": ["forebears-baradji"] },
+        { "countryId": "SEN", "sourceRefs": ["forebears-baradji"] }
+      ]
+    },
+    {
+      "spelling": "Baraji",
+      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
+    }
+  ],
+  "transmissionMode": "patrilineal",
+  "designatedSocialUnit": "clan",
+  "origin": {
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "linguisticReconstructions": [
+      {
+        "claim": "The dictionary of jamuw has an entry Baraji, which it links in particular to the Soninke. It gives it neither a status nor a clan link.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
+      },
+      {
+        "claim": "A Soninke community list attaches to Baradji a second name (jammu kare), Saréga, and contributors to a Soninke community forum place it among Soninke names; other contributors point out that many names borne today by Soninke are not Soninke in origin.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["soninkara-noms-soninke", "soninkara-forum-noms-soninke"]
+      }
+    ]
+  },
+  "peoples": [
+    {
+      "peopleId": "PPL_SONINKE",
+      "status": "attested",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "soninkara-noms-soninke",
+        "soninkara-forum-noms-soninke"
+      ]
+    }
+  ],
+  "countries": [
+    {
+      "countryId": "MLI",
+      "status": "attested",
+      "sourceRefs": ["forebears-baradji", "bamadaba-jamuw"]
+    },
+    {
+      "countryId": "CIV",
+      "status": "attested",
+      "sourceRefs": ["forebears-baradji"]
+    },
+    {
+      "countryId": "SEN",
+      "status": "attested",
+      "sourceRefs": ["forebears-baradji"]
+    }
+  ],
+  "alliances": [],
+  "casteOrSocialFunction": null,
+  "bearers": [],
+  "homonyms": [],
+  "sources": [
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Onomastic appendix of the Bamadaba, an electronic Bambara-French dictionary supplementing the Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA); the appendix of clan names is identified as such by Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, pp. 89-110. 375 entries in MDF format, consulted in the complete file. The file provides no legend for its markers: the line of status terms carries the Mandinka words themselves; the group marker son is confirmed by the note of the entry Wago, which lists Soninke jamuw, and the marker m is taken as a Malinke indicator by comparison with the entry Kéyità, which another of our fiches documents as a Malinke jamu; the other group markers are not used here. The free notes of the entries are written in Russian and translated here by us. The entry Baraji carries two group markers, including son, and neither a status nor a clan link."
+    },
+    {
+      "sourceKey": "soninkara-noms-soninke",
+      "title": "Les noms de famille avec leur jammu kare",
+      "url": "http://www.soninkara.com/societe/organisation-sociale/les-noms-de-famille-avec-leur-jammu-kare.html",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Soninke community portal, a social organisation page with no identified academic author: a non-exhaustive list, compiled by the portal's users, of the second names (jammu kare) given to Soninke family names. The jammu kare is, the page says, the second name that is added to a family name and serves as its identifier. Consulted in an archived copy of 12 December 2024. From it we take only the presence of the name in the list and its second names: the list says nothing about their origin."
+    },
+    {
+      "sourceKey": "soninkara-forum-noms-soninke",
+      "title": "Les noms de Famille d'Origine Soninké",
+      "url": "https://www.soninkara.com/forums/de-l-origine-des-soninke/les-noms-de-famille-d-origine-soninke-530.html",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Discussion thread on the forum of the Soninkara.com community portal, opened in December 2006 and continued until 2011: contributors, under pseudonyms, compile lists of names they hold to be Soninke. The lists partly overlap and contradict one another: several participants point out that many names borne today by Soninke are not Soninke in origin, and one of them asks that Soninke names be distinguished from names of Soninke origin. Consulted in an archived copy from 2024."
+    },
+    {
+      "sourceKey": "forebears-baradji",
+      "title": "Baradji — origine, signification et incidence du nom de famille",
+      "url": "https://forebears.io/surnames/baradji",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Global genealogy aggregator, consulted on 29 September 2026. Worldwide incidence of about 11,540 bearers; Mali 10,519, Côte d'Ivoire 520, Senegal 127, France 105, Lebanon 77, Mauritania 63. The page gives no meaning for the name. The figures outside Africa are not included in the attestations of this fiche."
+    }
+  ],
+  "gaps": [
+    {
+      "fieldPath": "origin.oralTraditions",
+      "reason": "We have found no oral tradition reporting the origin of this name."
+    },
+    {
+      "fieldPath": "origin.writtenChronicles",
+      "reason": "We have found no written chronicle that mentions the origin of this name."
+    },
+    {
+      "fieldPath": "origin.linguisticReconstructions",
+      "reason": "No etymology of this name is established in the sources consulted: we propose no meaning."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "We name no bearer: no source consulted cites one who is deceased and whose belonging to this name is established."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "We have found no attested joking relationship (sanankuya) for this name that can be linked to an existing fiche."
+    },
+    {
+      "fieldPath": "homonyms",
+      "reason": "We have found no source pointing to a namesake of this name that needs to be distinguished."
+    },
+    {
+      "fieldPath": "casteOrSocialFunction",
+      "reason": "We have found no source attributing a social function or a status to this name."
+    }
+  ],
+  "_translation": {
+    "kind": "machine",
+    "translatedAt": "2026-10-03T09:44:53.316Z",
+    "model": "claude-sonnet-5-5",
+    "sourceHash": "cfd23f74d2ecd830d0b514793c5fb1454233469e81025025197ef5b733a87289",
+    "fieldHashes": {
+      "origin.linguisticReconstructions[0].claim": "707d5610dfe3fed3",
+      "origin.linguisticReconstructions[1].claim": "2c814168739c3a72",
+      "sources[0].notes": "72591b0c7e211657",
+      "sources[1].notes": "958f7d21e77a3ca2",
+      "sources[2].notes": "f2394191303b371f",
+      "sources[3].notes": "682a2e666c3c84dc",
+      "gaps[0].reason": "7133f98b69c900cc",
+      "gaps[1].reason": "35749ac1683bb9b8",
+      "gaps[2].reason": "7231e69cf2d1f953",
+      "gaps[3].reason": "2745eeb3f680b795",
+      "gaps[4].reason": "5f214821b3473717",
+      "gaps[5].reason": "bcaf366739dd57aa",
+      "gaps[6].reason": "c5c4fbe1c2837072"
+    },
+    "reviewRequired": [
+      "origin.linguisticReconstructions[0].claim",
+      "origin.linguisticReconstructions[1].claim"
+    ]
+  }
+}

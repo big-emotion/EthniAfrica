@@ -1,0 +1,829 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "nom",
+    "directives": "Voir DIRECTIVES-AFRIK.md pour les règles de rédaction complètes."
+  },
+  "id": "PPL_FULA",
+  "entityType": "people",
+  "names": [
+    {
+      "nameText": "Fulɓe",
+      "nameType": "endonym",
+      "languageOfOrigin": "ful",
+      "meaning": "C'est le nom que les Peuls se donnent, au pluriel et au singulier. Son sens n'est pas établi. Amadou Hampâté Bâ, lui-même pullo, le tire du verbe fullude, « couvrir de poussière », et cite comme autre possibilité le nom Ful, connu de la Bible, supposé par Maurice Delafosse, sans trancher entre les deux. D'autres lectures viennent de l'extérieur : « les dispersés », proposée par le commandant Gaden et rapportée par Delafosse puis Tauxier ; « brun clair, rouge », de Barth résumé par Crozals et rapporté par Tauxier, une lecture raciale de la couleur de peau qui oppose ce sens au « noir » des Wolof ; la base fur- du mot Ba-fur, par lequel les Berbères auraient désigné les peuples du Tekrur, proposée par Oumar Niang. Le linguiste J. O. Breedveld juge le sens de Pullo et de Fulɓe à peine étudié et rapporte une racine ful- sans lui donner de sens. Nous ne retenons aucune de ces lectures. Un récit d'un barde pullo du Cameroun, recueilli par Eldridge Mohammadu, parle de l'origine du peuple et non du sens du mot : il fait venir de Malle, le Mali, tous les Fulɓe et rattache à ce point de départ les noms de leurs lignages.",
+      "periodLabel": "Usage contemporain",
+      "imposedBy": null,
+      "impositionPeriod": null,
+      "whyProblematic": null,
+      "contemporaryUsage": "Nom employé par les intéressés eux-mêmes, quelle que soit la langue dans laquelle les autres les désignent.",
+      "sortRank": 0,
+      "sources": [
+        {
+          "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+          "author": "François de Medeiros",
+          "year": 1990,
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+          "tier": "official",
+          "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek. Page 152 et sa note 25 : les noms que les Fulɓe se donnent, ceux que leur donnent leurs voisins, et leur première mention explicite dans les sources arabes."
+        },
+        {
+          "title": "Des Foulbé du Mali et de leur culture, Abbia, n° 14-15",
+          "author": "Amadou Hampâté Bâ",
+          "year": 1966,
+          "url": "https://www.vestiges-journal.info/Abbia/Abbia_14-15_1966/Abbiav14-15n3.pdf",
+          "tier": "referenced",
+          "notes": "Revue Abbia, Yaoundé. Page 23 : le nom que les Peuls se donnent, deux explications de son origine données sans trancher, et la liste des noms que leur donnent les autres."
+        },
+        {
+          "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+          "author": "Heinrich Barth",
+          "year": 1857,
+          "url": "https://www.gutenberg.org/ebooks/76317",
+          "tier": "referenced",
+          "notes": "Londres, Longman, 1857 ; récit du voyage de 1849-1855. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg. Page 80 : « the Fúlbe, called Féllani by the Háusa, and Felláta by the Bórnu people » ; page 121, à Kano : « the Fúlbe (sing. Púllo), called Féllani (sing. Baféllanchi), by the conquered race »."
+        },
+        {
+          "title": "Form and meaning in Fulfulde: a morphophonological study of Maasinankoore (thèse, Université de Leyde)",
+          "author": "J. O. Breedveld",
+          "year": 1995,
+          "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2938820/view",
+          "tier": "referenced",
+          "notes": "Chapitre 1, sections 1.1.1 et 1.1.2 : le sens de Pullo et de Fulɓe, jugé à peine étudié, une racine ful- rapportée d'après Klingenheben, et l'origine des noms peul, Fulani, fellata et fula, rapportée d'après Nussbaum (1970), Newman (1990), Abu-Manga (1986) et Arnott (1970), travaux qui n'ont pas été lus."
+        },
+        {
+          "title": "Mœurs et histoire des Peuls",
+          "author": "Louis Tauxier",
+          "year": 1937,
+          "url": "https://webpulaaku.site/defte/tauxier/livre1ch1.html",
+          "tier": "referenced",
+          "notes": "Paris, Payot, 1937, chapitre 1, lu dans une transcription en ligne. Rapporte l'explication du commandant Gaden et la prononciation wolof Peul d'après Maurice Delafosse (Haut-Sénégal-Niger, t. I, p. 118-119), et celle de Barth résumée par Crozals ; ces ouvrages n'ont pas été lus directement."
+        },
+        {
+          "title": "Réflexion sur l'origine des termes Fulɓe, pullo (et aussi Wolof, Bambara, Soninke)",
+          "author": "Oumar Niang",
+          "year": 2018,
+          "url": "https://www.ndarinfo.com/Reflexion-sur-l-origine-des-termes-%C2%A0Ful%C9%93e%C2%A0--%C2%A0pullo%C2%A0-et-aussi-%C2%A0Wolof%C2%A0--%C2%A0Bambara%C2%A0-%C2%A0-%C2%A0Soninke%C2%A0-Par-Niang_a22308.html",
+          "tier": "unverified",
+          "notes": "Article publié sur le site d'actualité ndarinfo.com le 18 juillet 2018. La lecture Ba-fur n'est reprise dans aucun autre texte consulté."
+        },
+        {
+          "title": "Pullo — Wikipeediya (en pulaar-fulfulde)",
+          "author": "Contributeurs de Wikipédia",
+          "year": 2026,
+          "url": "https://ff.wikipedia.org/wiki/Pullo",
+          "tier": "unverified",
+          "notes": "Section Iwdi Fulɓe, consultée en octobre 2026 : récit d'un barde pullo du Cameroun, cité d'après Eldridge Mohammadu, L'Histoire des Peuls Férobé du Diamaré, Maroua et Petté (1976), recueilli auprès d'anciens fulɓe. L'ouvrage de Mohammadu n'a pas été lu."
+        }
+      ],
+      "attestations": [
+        {
+          "formAsWritten": "Pullo (au singulier) et Fulbe (au pluriel)",
+          "year": null,
+          "periodLabel": "Usage décrit au présent par l'auteur",
+          "attestedBy": "François de Medeiros",
+          "source": {
+            "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+            "author": "François de Medeiros",
+            "year": 1990,
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+            "tier": "official",
+            "page": "p. 152"
+          }
+        },
+        {
+          "formAsWritten": "Fúlbe (sing. Púllo)",
+          "year": null,
+          "periodLabel": "Voyage de 1849-1855 (récit publié en 1857), à Kano",
+          "attestedBy": "Heinrich Barth",
+          "source": {
+            "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+            "author": "Heinrich Barth",
+            "year": 1857,
+            "url": "https://www.gutenberg.org/ebooks/76317",
+            "tier": "referenced",
+            "page": "p. 121"
+          }
+        },
+        {
+          "formAsWritten": "Fulbe, qui fait au singulier Pullo",
+          "year": null,
+          "periodLabel": "Rapporté dans un article de 1966",
+          "attestedBy": "Amadou Hampâté Bâ",
+          "source": {
+            "title": "Des Foulbé du Mali et de leur culture, Abbia, n° 14-15",
+            "author": "Amadou Hampâté Bâ",
+            "year": 1966,
+            "url": "https://www.vestiges-journal.info/Abbia/Abbia_14-15_1966/Abbiav14-15n3.pdf",
+            "tier": "referenced",
+            "page": "p. 23"
+          }
+        }
+      ],
+      "shortLine": "Le nom qu'ils se donnent dans leur langue ; un seul : un Pullo.",
+      "namedBy": null,
+      "originDebated": true,
+      "usedIn": ["ful"],
+      "pronunciation": {
+        "respelling": "foul-bè (le b se dit en avalant l'air) ; un seul : poul-lo",
+        "audio": null,
+        "source": {
+          "title": "Learner's Guide to Pular (Fuuta Jallon)",
+          "author": "Herbert Caudill et Ousmane Besseko Diallo",
+          "year": 2000,
+          "url": "https://ibamba.net/pular/manual.pdf",
+          "tier": "referenced",
+          "page": "p. i, p. 3 et p. 8"
+        }
+      }
+    },
+    {
+      "nameText": "Haalpulaar'en",
+      "nameType": "endonym",
+      "languageOfOrigin": "fuc",
+      "meaning": "« Ceux qui parlent le pulaar ». Le nom désigne tous ceux qui parlent la langue ; c'est aussi celui que se donnent les habitants du Fouta Toro, que d'autres appellent Toucouleur.",
+      "periodLabel": "Usage contemporain",
+      "imposedBy": null,
+      "impositionPeriod": null,
+      "whyProblematic": null,
+      "contemporaryUsage": "Nom que se donnent les Fulɓe de la vallée du fleuve Sénégal, là où l'extérieur dit Toucouleur. Nous n'avons pas trouvé depuis quand il est employé.",
+      "sortRank": 1,
+      "sources": [
+        {
+          "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+          "author": "François de Medeiros",
+          "year": 1990,
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+          "tier": "official",
+          "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek. Page 152 et sa note 25 : les noms que les Fulɓe se donnent, ceux que leur donnent leurs voisins, et leur première mention explicite dans les sources arabes."
+        },
+        {
+          "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+          "author": "Djibril Tamsir Niane",
+          "year": 1985,
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+          "tier": "official",
+          "notes": "UNESCO. Page 180, note 73 : Tukulóór, déformation de Takrūr, et le nom que se donnent les intéressés."
+        },
+        {
+          "title": "La littératie pulaar : nationalisme culturel, mouvement social ou instrument du développement ?, Cahiers de la recherche sur l'éducation et les savoirs, n° 12",
+          "author": "Marie-Ève Humery",
+          "year": 2013,
+          "url": "https://journals.openedition.org/cres/2348?lang=fr",
+          "tier": "referenced",
+          "notes": "Note 1 : Toucouleur est un terme venu de l'extérieur, la dénomination propre étant Haalpulaar'en, « ceux qui parlent le pulaar ». L'article ne date pas l'apparition de ce nom."
+        }
+      ],
+      "attestations": [
+        {
+          "formAsWritten": "Halpularen",
+          "year": null,
+          "periodLabel": "Usage décrit au présent par l'auteur",
+          "attestedBy": "François de Medeiros",
+          "source": {
+            "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+            "author": "François de Medeiros",
+            "year": 1990,
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+            "tier": "official",
+            "page": "p. 152"
+          }
+        },
+        {
+          "formAsWritten": "Hal pulaaren (ceux qui parlent pular — ou « peul »)",
+          "year": null,
+          "periodLabel": "Usage décrit au présent par l'auteur",
+          "attestedBy": "Djibril Tamsir Niane",
+          "source": {
+            "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+            "author": "Djibril Tamsir Niane",
+            "year": 1985,
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+            "tier": "official",
+            "page": "p. 180"
+          }
+        }
+      ],
+      "shortLine": "Ceux qui parlent le pulaar : le nom que se donnent les gens de la vallée du Sénégal.",
+      "namedBy": null,
+      "originDebated": false,
+      "usedIn": ["fuc"]
+    },
+    {
+      "nameText": "Futankooɓe",
+      "nameType": "endonym",
+      "languageOfOrigin": "fuc",
+      "meaning": "« Les gens du Fouta ». L'un des deux noms que se donnent, d'après Yaya Wane, ceux que l'extérieur appelle Toucouleur, à côté de Haalpulaar'en.",
+      "periodLabel": "Usage contemporain",
+      "imposedBy": null,
+      "impositionPeriod": null,
+      "whyProblematic": null,
+      "contemporaryUsage": null,
+      "sortRank": 2,
+      "sources": [
+        {
+          "title": "Les Toucouleur du Fouta Tooro : stratification sociale et structure familiale",
+          "author": "Yaya Wane",
+          "year": 1969,
+          "url": "https://webpulaaku.site/defte/yWane/intro.html",
+          "tier": "referenced",
+          "notes": "IFAN, Dakar, 1969, introduction, lue dans une transcription en ligne sans pagination. Donne Haal-pulaaren et Futankooɓe comme les noms que se donnent ceux que l'on appelle Toucouleur ; rapporte l'explication de Maurice Delafosse (Tokolor et Tokoror chez les Wolof) et celle de Bérenger-Féraud (l'anglais « two colours »), liée à la thèse d'un métissage que Faidherbe soutenait aussi. Les ouvrages de Delafosse, Faidherbe et Bérenger-Féraud n'ont pas été lus."
+        }
+      ],
+      "shortLine": "Les gens du Fouta : un autre nom qu'ils se donnent dans la vallée du Sénégal.",
+      "namedBy": null,
+      "originDebated": false,
+      "usedIn": ["fuc"]
+    },
+    {
+      "nameText": "Peul",
+      "nameType": "exonym",
+      "languageOfOrigin": "wol",
+      "meaning": "Forme française du nom. Les sources consultées la font venir du wolof, où le peuple est nommé d'une forme proche : pal chez Nussbaum, cité par Breedveld ; Pë'l dans l'article de Wikipédia ; Maurice Delafosse, rapporté par Tauxier, écrit que les Wolof prononcent Peul le radical de Foulbé.",
+      "periodLabel": "Usage contemporain",
+      "imposedBy": null,
+      "impositionPeriod": null,
+      "whyProblematic": null,
+      "contemporaryUsage": "Forme courante en français, aussi écrite Peulh ou Peuhl. Un article d'Amadou Hampâté Bâ paru en 1966 rapporte que les Français disent « Peuls » ou « Peulhs ».",
+      "sortRank": 3,
+      "sources": [
+        {
+          "title": "Form and meaning in Fulfulde: a morphophonological study of Maasinankoore (thèse, Université de Leyde)",
+          "author": "J. O. Breedveld",
+          "year": 1995,
+          "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2938820/view",
+          "tier": "referenced",
+          "notes": "Chapitre 1, sections 1.1.1 et 1.1.2 : le sens de Pullo et de Fulɓe, jugé à peine étudié, une racine ful- rapportée d'après Klingenheben, et l'origine des noms peul, Fulani, fellata et fula, rapportée d'après Nussbaum (1970), Newman (1990), Abu-Manga (1986) et Arnott (1970), travaux qui n'ont pas été lus."
+        },
+        {
+          "title": "Mœurs et histoire des Peuls",
+          "author": "Louis Tauxier",
+          "year": 1937,
+          "url": "https://webpulaaku.site/defte/tauxier/livre1ch1.html",
+          "tier": "referenced",
+          "notes": "Paris, Payot, 1937, chapitre 1, lu dans une transcription en ligne. Rapporte l'explication du commandant Gaden et la prononciation wolof Peul d'après Maurice Delafosse (Haut-Sénégal-Niger, t. I, p. 118-119), et celle de Barth résumée par Crozals ; ces ouvrages n'ont pas été lus directement."
+        },
+        {
+          "title": "Des Foulbé du Mali et de leur culture, Abbia, n° 14-15",
+          "author": "Amadou Hampâté Bâ",
+          "year": 1966,
+          "url": "https://www.vestiges-journal.info/Abbia/Abbia_14-15_1966/Abbiav14-15n3.pdf",
+          "tier": "referenced",
+          "notes": "Revue Abbia, Yaoundé. Page 23 : le nom que les Peuls se donnent, deux explications de son origine données sans trancher, et la liste des noms que leur donnent les autres."
+        },
+        {
+          "title": "Peuls — Wikipédia",
+          "author": "Contributeurs de Wikipédia",
+          "year": 2026,
+          "url": "https://fr.wikipedia.org/wiki/Peuls",
+          "tier": "unverified",
+          "notes": "Section consacrée aux noms, consultée en octobre 2026 : Peul y est donné comme la transcription française du wolof Pë'l. La section ne cite pas de source pour cette affirmation."
+        }
+      ],
+      "attestations": [
+        {
+          "formAsWritten": "Peuls ou Peulhs",
+          "year": null,
+          "periodLabel": "Rapporté dans un article de 1966",
+          "attestedBy": "Amadou Hampâté Bâ, à propos de l'usage français",
+          "source": {
+            "title": "Des Foulbé du Mali et de leur culture, Abbia, n° 14-15",
+            "author": "Amadou Hampâté Bâ",
+            "year": 1966,
+            "url": "https://www.vestiges-journal.info/Abbia/Abbia_14-15_1966/Abbiav14-15n3.pdf",
+            "tier": "referenced",
+            "page": "p. 23"
+          }
+        }
+      ],
+      "shortLine": "Le nom en français ; les sources le font venir du wolof.",
+      "namedBy": "les Wolof",
+      "originDebated": false,
+      "usedIn": ["fra"]
+    },
+    {
+      "nameText": "Fula",
+      "nameType": "exonym",
+      "languageOfOrigin": "man",
+      "meaning": "Nom donné aux Fulɓe par les peuples manden (mandingues). Des formes proches sont écrites par des auteurs extérieurs : Fulos chez André Álvares de Almada, natif de l'île de Santiago du Cap-Vert, dans son traité de 1594 ; Foulahs ou Pholeys chez l'Écossais Mungo Park, qui voyage en 1795-1797. Ce ne sont pas les premières mentions du peuple : François de Medeiros relève qu'il est nommé explicitement dans les sources arabes à partir d'al-Maqrīzī et de la Chronique de Kano. Un guide d'apprentissage du pular (Caudill et Diallo, 2000) le présente au contraire comme le mot haoussa ; aucune source lue ne tranche.",
+      "periodLabel": "Usage contemporain",
+      "imposedBy": null,
+      "impositionPeriod": null,
+      "whyProblematic": null,
+      "contemporaryUsage": "Forme employée en anglais, aussi écrite Fulah ou Fullah.",
+      "sortRank": 4,
+      "sources": [
+        {
+          "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+          "author": "François de Medeiros",
+          "year": 1990,
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+          "tier": "official",
+          "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek. Page 152 et sa note 25 : les noms que les Fulɓe se donnent, ceux que leur donnent leurs voisins, et leur première mention explicite dans les sources arabes."
+        },
+        {
+          "title": "Form and meaning in Fulfulde: a morphophonological study of Maasinankoore (thèse, Université de Leyde)",
+          "author": "J. O. Breedveld",
+          "year": 1995,
+          "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2938820/view",
+          "tier": "referenced",
+          "notes": "Chapitre 1, sections 1.1.1 et 1.1.2 : le sens de Pullo et de Fulɓe, jugé à peine étudié, une racine ful- rapportée d'après Klingenheben, et l'origine des noms peul, Fulani, fellata et fula, rapportée d'après Nussbaum (1970), Newman (1990), Abu-Manga (1986) et Arnott (1970), travaux qui n'ont pas été lus."
+        },
+        {
+          "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, 29 (51)",
+          "author": "José da Silva Horta",
+          "year": 2013,
+          "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+          "tier": "referenced",
+          "notes": "Page 651, notes 9 et 10 : les manuscrits du traité d'André Álvares de Almada, « natural da Ilha de Santiago de Cabo Verde », datés de 1592-1593 à 1596. Page 658 : Almada écrit les Fula Fulos. Page 659 et note 41 : Tucurois chez Duarte Pacheco Pereira (1505-1508) et chez Almada, Tucuroes chez Valentim Fernandes, que l'auteur rattache au wolof Tukulër. Les textes anciens eux-mêmes n'ont pas été lus."
+        },
+        {
+          "title": "Travels in the Interior Districts of Africa",
+          "author": "Mungo Park",
+          "year": 1799,
+          "url": "https://www.gutenberg.org/ebooks/74976",
+          "tier": "referenced",
+          "notes": "Londres, W. Bulmer pour G. Nicol, 1799 ; voyage de 1795-1797. Page repérée par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg (chapitre II). Page 17 : « The Foulahs (or Pholeys) »."
+        },
+        {
+          "title": "Fula people — Wikipedia",
+          "author": "Contributeurs de Wikipédia",
+          "year": 2026,
+          "url": "https://en.wikipedia.org/wiki/Fula_people",
+          "tier": "unverified",
+          "notes": "Consultée en octobre 2026 : Fula y est rattaché aux langues mandingues, Fulani au haoussa, Fallata à l'arabe ; les variantes Fulah, Fullah, Fallatah y sont listées."
+        },
+        {
+          "title": "Learner's Guide to Pular (Fuuta Jallon)",
+          "author": "Herbert Caudill et Ousmane Besseko Diallo",
+          "year": 2000,
+          "url": "https://ibamba.net/pular/manual.pdf",
+          "tier": "referenced",
+          "notes": "Guide d'apprentissage du pular, deuxième édition, Conakry. La note 1 de la page i présente Fula comme le mot haoussa pour les Peuls."
+        }
+      ],
+      "attestations": [
+        {
+          "formAsWritten": "Fulos",
+          "year": null,
+          "periodLabel": "Manuscrit daté de 1594",
+          "attestedBy": "André Álvares de Almada, Tratado breve dos Rios de Guiné do Cabo Verde",
+          "source": {
+            "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, 29 (51)",
+            "author": "José da Silva Horta",
+            "year": 2013,
+            "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+            "tier": "referenced",
+            "page": "p. 658"
+          }
+        },
+        {
+          "formAsWritten": "Foulahs (or Pholeys)",
+          "year": null,
+          "periodLabel": "Voyage de 1795-1797 (récit publié en 1799)",
+          "attestedBy": "Mungo Park",
+          "source": {
+            "title": "Travels in the Interior Districts of Africa",
+            "author": "Mungo Park",
+            "year": 1799,
+            "url": "https://www.gutenberg.org/ebooks/74976",
+            "tier": "referenced",
+            "page": "p. 17"
+          }
+        },
+        {
+          "formAsWritten": "Fula",
+          "year": null,
+          "periodLabel": "Usage décrit au présent par l'auteur",
+          "attestedBy": "François de Medeiros, à propos de l'usage des Manden",
+          "source": {
+            "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+            "author": "François de Medeiros",
+            "year": 1990,
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+            "tier": "official",
+            "page": "p. 152"
+          }
+        }
+      ],
+      "shortLine": "Un nom que la plupart des sources rattachent aux langues mandingues ; repris en anglais.",
+      "namedBy": "les peuples manden (mandingues)",
+      "originDebated": true,
+      "usedIn": ["eng", "man", "por"]
+    },
+    {
+      "nameText": "Fulani",
+      "nameType": "exonym",
+      "languageOfOrigin": "hau",
+      "meaning": "Nom donné aux Fulɓe en haoussa, d'où l'anglais l'a repris. Heinrich Barth l'écrit Féllani, au singulier Baféllanchi ; François de Medeiros écrit Fulani, au singulier Ba-Filanci, et note qu'une forme Fulāni est aussi employée par les Arabes.",
+      "periodLabel": "Usage contemporain",
+      "imposedBy": null,
+      "impositionPeriod": null,
+      "whyProblematic": null,
+      "contemporaryUsage": "Forme courante en anglais. Un article d'Amadou Hampâté Bâ paru en 1966 l'attribue aux Haoussa et aux Anglais.",
+      "sortRank": 5,
+      "sources": [
+        {
+          "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+          "author": "François de Medeiros",
+          "year": 1990,
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+          "tier": "official",
+          "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek. Page 152 et sa note 25 : les noms que les Fulɓe se donnent, ceux que leur donnent leurs voisins, et leur première mention explicite dans les sources arabes."
+        },
+        {
+          "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+          "author": "Heinrich Barth",
+          "year": 1857,
+          "url": "https://www.gutenberg.org/ebooks/76317",
+          "tier": "referenced",
+          "notes": "Londres, Longman, 1857 ; récit du voyage de 1849-1855. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg. Page 80 : « the Fúlbe, called Féllani by the Háusa, and Felláta by the Bórnu people » ; page 121, à Kano : « the Fúlbe (sing. Púllo), called Féllani (sing. Baféllanchi), by the conquered race »."
+        },
+        {
+          "title": "Des Foulbé du Mali et de leur culture, Abbia, n° 14-15",
+          "author": "Amadou Hampâté Bâ",
+          "year": 1966,
+          "url": "https://www.vestiges-journal.info/Abbia/Abbia_14-15_1966/Abbiav14-15n3.pdf",
+          "tier": "referenced",
+          "notes": "Revue Abbia, Yaoundé. Page 23 : le nom que les Peuls se donnent, deux explications de son origine données sans trancher, et la liste des noms que leur donnent les autres."
+        },
+        {
+          "title": "Form and meaning in Fulfulde: a morphophonological study of Maasinankoore (thèse, Université de Leyde)",
+          "author": "J. O. Breedveld",
+          "year": 1995,
+          "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2938820/view",
+          "tier": "referenced",
+          "notes": "Chapitre 1, sections 1.1.1 et 1.1.2 : le sens de Pullo et de Fulɓe, jugé à peine étudié, une racine ful- rapportée d'après Klingenheben, et l'origine des noms peul, Fulani, fellata et fula, rapportée d'après Nussbaum (1970), Newman (1990), Abu-Manga (1986) et Arnott (1970), travaux qui n'ont pas été lus."
+        },
+        {
+          "title": "Fula people — Wikipedia",
+          "author": "Contributeurs de Wikipédia",
+          "year": 2026,
+          "url": "https://en.wikipedia.org/wiki/Fula_people",
+          "tier": "unverified",
+          "notes": "Consultée en octobre 2026 : Fula y est rattaché aux langues mandingues, Fulani au haoussa, Fallata à l'arabe ; les variantes Fulah, Fullah, Fallatah y sont listées."
+        }
+      ],
+      "attestations": [
+        {
+          "formAsWritten": "Féllani",
+          "year": null,
+          "periodLabel": "Voyage de 1849-1855 (récit publié en 1857)",
+          "attestedBy": "Heinrich Barth, à propos de l'usage haoussa",
+          "source": {
+            "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+            "author": "Heinrich Barth",
+            "year": 1857,
+            "url": "https://www.gutenberg.org/ebooks/76317",
+            "tier": "referenced",
+            "page": "p. 80"
+          }
+        },
+        {
+          "formAsWritten": "Féllani (sing. Baféllanchi)",
+          "year": null,
+          "periodLabel": "Voyage de 1849-1855 (récit publié en 1857), à Kano",
+          "attestedBy": "Heinrich Barth, à propos de l'usage haoussa",
+          "source": {
+            "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+            "author": "Heinrich Barth",
+            "year": 1857,
+            "url": "https://www.gutenberg.org/ebooks/76317",
+            "tier": "referenced",
+            "page": "p. 121"
+          }
+        },
+        {
+          "formAsWritten": "Fulani (au singulier Ba-Filanci)",
+          "year": null,
+          "periodLabel": "Usage décrit au présent par l'auteur",
+          "attestedBy": "François de Medeiros, à propos de l'usage haoussa",
+          "source": {
+            "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+            "author": "François de Medeiros",
+            "year": 1990,
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+            "tier": "official",
+            "page": "p. 152"
+          }
+        },
+        {
+          "formAsWritten": "Fulani",
+          "year": null,
+          "periodLabel": "Rapporté dans un article de 1966",
+          "attestedBy": "Amadou Hampâté Bâ",
+          "source": {
+            "title": "Des Foulbé du Mali et de leur culture, Abbia, n° 14-15",
+            "author": "Amadou Hampâté Bâ",
+            "year": 1966,
+            "url": "https://www.vestiges-journal.info/Abbia/Abbia_14-15_1966/Abbiav14-15n3.pdf",
+            "tier": "referenced",
+            "page": "p. 23"
+          }
+        }
+      ],
+      "shortLine": "Donné par les Haoussa, repris en anglais.",
+      "namedBy": "les Haoussa",
+      "originDebated": false,
+      "usedIn": ["eng", "hau"]
+    },
+    {
+      "nameText": "Fellata",
+      "nameType": "exonym",
+      "languageOfOrigin": null,
+      "meaning": "Nom donné aux Fulɓe au Bornou et plus à l'est. Heinrich Barth l'entend chez les gens du Bornou ; François de Medeiros l'attribue aux Kanuri et aux Arabes du Soudan ; Amadou Hampâté Bâ le range parmi les noms que donnent les Arabes. Ces auteurs disent qui emploie le nom, non d'où il vient. Seul Abu-Manga, cité par Breedveld, lui donne une origine : un mot kanouri qui désignait d'abord les Fulɓe du Bornou. L'article anglais de Wikipédia lui prête une origine arabe, sans source.",
+      "periodLabel": "Usage contemporain",
+      "imposedBy": null,
+      "impositionPeriod": null,
+      "whyProblematic": null,
+      "contemporaryUsage": "Aussi écrit Fallata ou Fallatah.",
+      "sortRank": 6,
+      "sources": [
+        {
+          "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+          "author": "François de Medeiros",
+          "year": 1990,
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+          "tier": "official",
+          "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek. Page 152 et sa note 25 : les noms que les Fulɓe se donnent, ceux que leur donnent leurs voisins, et leur première mention explicite dans les sources arabes."
+        },
+        {
+          "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+          "author": "Heinrich Barth",
+          "year": 1857,
+          "url": "https://www.gutenberg.org/ebooks/76317",
+          "tier": "referenced",
+          "notes": "Londres, Longman, 1857 ; récit du voyage de 1849-1855. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg. Page 80 : « the Fúlbe, called Féllani by the Háusa, and Felláta by the Bórnu people » ; page 121, à Kano : « the Fúlbe (sing. Púllo), called Féllani (sing. Baféllanchi), by the conquered race »."
+        },
+        {
+          "title": "Histoire générale de l'Afrique, VI, ch. 22 : Le califat de Sokoto et le Borno",
+          "author": "Murray Last",
+          "year": 1996,
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+          "tier": "official",
+          "notes": "UNESCO. Page 635 : l'auteur désigne les réformateurs du califat de Sokoto comme les réformistes « fellata » (fulbe), face au Borno."
+        },
+        {
+          "title": "Des Foulbé du Mali et de leur culture, Abbia, n° 14-15",
+          "author": "Amadou Hampâté Bâ",
+          "year": 1966,
+          "url": "https://www.vestiges-journal.info/Abbia/Abbia_14-15_1966/Abbiav14-15n3.pdf",
+          "tier": "referenced",
+          "notes": "Revue Abbia, Yaoundé. Page 23 : le nom que les Peuls se donnent, deux explications de son origine données sans trancher, et la liste des noms que leur donnent les autres."
+        },
+        {
+          "title": "Form and meaning in Fulfulde: a morphophonological study of Maasinankoore (thèse, Université de Leyde)",
+          "author": "J. O. Breedveld",
+          "year": 1995,
+          "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2938820/view",
+          "tier": "referenced",
+          "notes": "Chapitre 1, sections 1.1.1 et 1.1.2 : le sens de Pullo et de Fulɓe, jugé à peine étudié, une racine ful- rapportée d'après Klingenheben, et l'origine des noms peul, Fulani, fellata et fula, rapportée d'après Nussbaum (1970), Newman (1990), Abu-Manga (1986) et Arnott (1970), travaux qui n'ont pas été lus."
+        },
+        {
+          "title": "Fula people — Wikipedia",
+          "author": "Contributeurs de Wikipédia",
+          "year": 2026,
+          "url": "https://en.wikipedia.org/wiki/Fula_people",
+          "tier": "unverified",
+          "notes": "Consultée en octobre 2026 : Fula y est rattaché aux langues mandingues, Fulani au haoussa, Fallata à l'arabe ; les variantes Fulah, Fullah, Fallatah y sont listées."
+        }
+      ],
+      "attestations": [
+        {
+          "formAsWritten": "Felláta",
+          "year": null,
+          "periodLabel": "Voyage de 1849-1855 (récit publié en 1857)",
+          "attestedBy": "Heinrich Barth, à propos de l'usage du Bornou",
+          "source": {
+            "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+            "author": "Heinrich Barth",
+            "year": 1857,
+            "url": "https://www.gutenberg.org/ebooks/76317",
+            "tier": "referenced",
+            "page": "p. 80"
+          }
+        },
+        {
+          "formAsWritten": "Felata",
+          "year": null,
+          "periodLabel": "Usage décrit au présent par l'auteur",
+          "attestedBy": "François de Medeiros, à propos de l'usage des Kanuri et des Arabes du Soudan",
+          "source": {
+            "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+            "author": "François de Medeiros",
+            "year": 1990,
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+            "tier": "official",
+            "page": "p. 152"
+          }
+        },
+        {
+          "formAsWritten": "réformistes « fellata » (fulbe)",
+          "year": null,
+          "periodLabel": "À propos du début du XIXe siècle, face au Borno",
+          "attestedBy": "Murray Last",
+          "source": {
+            "title": "Histoire générale de l'Afrique, VI, ch. 22 : Le califat de Sokoto et le Borno",
+            "author": "Murray Last",
+            "year": 1996,
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+            "tier": "official",
+            "page": "p. 635"
+          }
+        },
+        {
+          "formAsWritten": "Fulata ou Fellata",
+          "year": null,
+          "periodLabel": "Rapporté dans un article de 1966",
+          "attestedBy": "Amadou Hampâté Bâ, à propos de l'usage arabe",
+          "source": {
+            "title": "Des Foulbé du Mali et de leur culture, Abbia, n° 14-15",
+            "author": "Amadou Hampâté Bâ",
+            "year": 1966,
+            "url": "https://www.vestiges-journal.info/Abbia/Abbia_14-15_1966/Abbiav14-15n3.pdf",
+            "tier": "referenced",
+            "page": "p. 23"
+          }
+        }
+      ],
+      "shortLine": "Le nom qu'on leur donne au Bornou et plus à l'est ; son origine n'est pas établie.",
+      "namedBy": "les Kanuri et les arabophones du Soudan",
+      "originDebated": true,
+      "usedIn": ["knc", "apd"]
+    },
+    {
+      "nameText": "Toucouleur",
+      "nameType": "exonym",
+      "languageOfOrigin": null,
+      "meaning": "Le nom s'applique aux Fulɓe sédentaires du Fouta Toro, qui ne l'emploient pas eux-mêmes et se disent Haalpulaar'en ou Futankooɓe. Son origine est expliquée de deux manières, que les sources lues ne départagent pas. Une explication le relie à Takrūr, nom ancien du pays de la basse vallée du fleuve Sénégal : les auteurs de l'Histoire générale de l'Afrique y voient une déformation de ce nom, que les voisins wolof et seereer disent Tukulóór, et José da Silva Horta le rattache au wolof Tukulër, écrit Tucurois ou Tucuroes dès le début du XVIe siècle. Une autre, avancée à l'époque coloniale par Bérenger-Féraud, le tire de l'anglais « two colours » et l'associe à la thèse d'un métissage entre Peuls et populations noires, que Faidherbe soutenait aussi ; Yaya Wane, qui la rapporte, admet provisoirement l'idée d'un métissage tout en la jugeant trop simple.",
+      "periodLabel": "Écrit au début du XVIe siècle et employé aujourd'hui",
+      "imposedBy": "Ethnographes et savants de l'époque coloniale au Sénégal, qui ont fait de ce nom celui d'une ethnie distincte des Fulɓe",
+      "impositionPeriod": "Époque coloniale (classification comme ethnie distincte)",
+      "whyProblematic": "Le nom est plus ancien que la colonisation ; ce que l'époque coloniale a imposé, c'est la classification. Ses ethnographes l'ont réservé à la population sédentaire du Fouta Toro, traitée comme une ethnie distincte des Fulɓe pasteurs, alors que les différences entre ces deux groupes sont d'ordre socio-économique, non ethnique, linguistique ou culturel. Les intéressés n'emploient pas ce nom : là même d'où les Fulɓe ont essaimé vers l'est, ils sont désignés par un nom qui leur est étranger.",
+      "contemporaryUsage": "Reste employé en français, à côté de Haalpulaar'en.",
+      "sortRank": 7,
+      "sources": [
+        {
+          "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+          "author": "François de Medeiros",
+          "year": 1990,
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+          "tier": "official",
+          "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek. Page 152 et sa note 25 : les noms que les Fulɓe se donnent, ceux que leur donnent leurs voisins, et leur première mention explicite dans les sources arabes."
+        },
+        {
+          "title": "Histoire générale de l'Afrique, III, ch. 3 : Étapes du développement de l'Islam et de sa diffusion en Afrique",
+          "author": "Mohammed El Fasi et Ivan Hrbek",
+          "year": 1990,
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+          "tier": "official",
+          "notes": "UNESCO. Page 98 : Toucouleur, déformation de Takrūr, nom que les intéressés n'utilisent pas."
+        },
+        {
+          "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+          "author": "Djibril Tamsir Niane",
+          "year": 1985,
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+          "tier": "official",
+          "notes": "UNESCO. Page 180, note 73 : Tukulóór, déformation de Takrūr, et le nom que se donnent les intéressés."
+        },
+        {
+          "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, 29 (51)",
+          "author": "José da Silva Horta",
+          "year": 2013,
+          "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+          "tier": "referenced",
+          "notes": "Page 651, notes 9 et 10 : les manuscrits du traité d'André Álvares de Almada, « natural da Ilha de Santiago de Cabo Verde », datés de 1592-1593 à 1596. Page 658 : Almada écrit les Fula Fulos. Page 659 et note 41 : Tucurois chez Duarte Pacheco Pereira (1505-1508) et chez Almada, Tucuroes chez Valentim Fernandes, que l'auteur rattache au wolof Tukulër. Les textes anciens eux-mêmes n'ont pas été lus."
+        },
+        {
+          "title": "La littératie pulaar : nationalisme culturel, mouvement social ou instrument du développement ?, Cahiers de la recherche sur l'éducation et les savoirs, n° 12",
+          "author": "Marie-Ève Humery",
+          "year": 2013,
+          "url": "https://journals.openedition.org/cres/2348?lang=fr",
+          "tier": "referenced",
+          "notes": "Note 1 : Toucouleur est un terme venu de l'extérieur, la dénomination propre étant Haalpulaar'en, « ceux qui parlent le pulaar ». L'article ne date pas l'apparition de ce nom."
+        },
+        {
+          "title": "Les Toucouleur du Fouta Tooro : stratification sociale et structure familiale",
+          "author": "Yaya Wane",
+          "year": 1969,
+          "url": "https://webpulaaku.site/defte/yWane/intro.html",
+          "tier": "referenced",
+          "notes": "IFAN, Dakar, 1969, introduction, lue dans une transcription en ligne sans pagination. Donne Haal-pulaaren et Futankooɓe comme les noms que se donnent ceux que l'on appelle Toucouleur ; rapporte l'explication de Maurice Delafosse (Tokolor et Tokoror chez les Wolof) et celle de Bérenger-Féraud (l'anglais « two colours »), liée à la thèse d'un métissage que Faidherbe soutenait aussi. Les ouvrages de Delafosse, Faidherbe et Bérenger-Féraud n'ont pas été lus."
+        },
+        {
+          "title": "Des Foulbé du Mali et de leur culture, Abbia, n° 14-15",
+          "author": "Amadou Hampâté Bâ",
+          "year": 1966,
+          "url": "https://www.vestiges-journal.info/Abbia/Abbia_14-15_1966/Abbiav14-15n3.pdf",
+          "tier": "referenced",
+          "notes": "Revue Abbia, Yaoundé. Page 23 : le nom que les Peuls se donnent, deux explications de son origine données sans trancher, et la liste des noms que leur donnent les autres."
+        }
+      ],
+      "attestations": [
+        {
+          "formAsWritten": "Tucurois",
+          "year": null,
+          "periodLabel": "1505-1508",
+          "attestedBy": "Duarte Pacheco Pereira, Esmeraldo de Situ Orbis",
+          "source": {
+            "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, 29 (51)",
+            "author": "José da Silva Horta",
+            "year": 2013,
+            "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+            "tier": "referenced",
+            "page": "p. 659"
+          }
+        },
+        {
+          "formAsWritten": "Tucuroes",
+          "year": null,
+          "periodLabel": "Début du XVIe siècle",
+          "attestedBy": "Valentim Fernandes, Descripçam",
+          "source": {
+            "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, 29 (51)",
+            "author": "José da Silva Horta",
+            "year": 2013,
+            "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+            "tier": "referenced",
+            "page": "p. 659"
+          }
+        },
+        {
+          "formAsWritten": "Tucurois",
+          "year": null,
+          "periodLabel": "Manuscrit daté de 1594",
+          "attestedBy": "André Álvares de Almada, à propos des « Fulas pretos » venus du Fouta Toro",
+          "source": {
+            "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, 29 (51)",
+            "author": "José da Silva Horta",
+            "year": 2013,
+            "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+            "tier": "referenced",
+            "page": "p. 659"
+          }
+        },
+        {
+          "formAsWritten": "Toucouleur",
+          "year": null,
+          "periodLabel": "Usage décrit au présent par les auteurs",
+          "attestedBy": "Mohammed El Fasi et Ivan Hrbek",
+          "source": {
+            "title": "Histoire générale de l'Afrique, III, ch. 3 : Étapes du développement de l'Islam et de sa diffusion en Afrique",
+            "author": "Mohammed El Fasi et Ivan Hrbek",
+            "year": 1990,
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+            "tier": "official",
+            "page": "p. 98"
+          }
+        },
+        {
+          "formAsWritten": "Tukuler (Toucouleur) ; Tukuleur/Toucouleur",
+          "year": null,
+          "periodLabel": "Époque coloniale, dans les sources européennes",
+          "attestedBy": "François de Medeiros",
+          "source": {
+            "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+            "author": "François de Medeiros",
+            "year": 1990,
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+            "tier": "official",
+            "page": "p. 152"
+          }
+        },
+        {
+          "formAsWritten": "Tukulóór (Toucouleur)",
+          "year": null,
+          "periodLabel": "Usage des voisins wolof et seereer, décrit au présent",
+          "attestedBy": "Djibril Tamsir Niane",
+          "source": {
+            "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+            "author": "Djibril Tamsir Niane",
+            "year": 1985,
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+            "tier": "official",
+            "page": "p. 180"
+          }
+        },
+        {
+          "formAsWritten": "Tukulor ou Toucouleur",
+          "year": null,
+          "periodLabel": "Rapporté dans un article de 1966",
+          "attestedBy": "Amadou Hampâté Bâ, à propos de l'usage des Djolof et des Sérères",
+          "source": {
+            "title": "Des Foulbé du Mali et de leur culture, Abbia, n° 14-15",
+            "author": "Amadou Hampâté Bâ",
+            "year": 1966,
+            "url": "https://www.vestiges-journal.info/Abbia/Abbia_14-15_1966/Abbiav14-15n3.pdf",
+            "tier": "referenced",
+            "page": "p. 23"
+          }
+        }
+      ],
+      "shortLine": "Donné par leurs voisins aux gens de la vallée du Sénégal ; son origine reste discutée.",
+      "namedBy": "les Wolof et les Seereer",
+      "originDebated": true,
+      "usedIn": ["fra"]
+    }
+  ]
+}

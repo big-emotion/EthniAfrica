@@ -33,10 +33,14 @@ from dataclasses import dataclass, field
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
+import ethni_kit
 import ethni_tokens as tk
 import ethni_carousel_profiles as carousel_profiles
 
 HARNESS = pathlib.Path(__file__).resolve().parent
+
+# The brand (name, faces, exit address, footer) is the kit's, not this module's.
+_KIT = ethni_kit.active()
 
 # §5 — the banner scrim's height, per aspect. Anchored on the card, never on an
 # image band: a scrim laid inside the band computes its stops as a percentage of
@@ -61,7 +65,7 @@ BANDE_C_SOUS_TITRE = 0.30
 # §8 — what the exit gesture says when a card does not name its own. One address,
 # in one place: the pastille. Repeating it in the body turns a gesture into a
 # refrain.
-APPEL_DEFAUT = "ethniafrica.com"
+APPEL_DEFAUT = _KIT["call_to_action"]
 
 # §8 — the scroll cue on a carousel's cover. It says *continue* where the pastille
 # says *leave*, so the two never share a card and share the same slot.
@@ -159,7 +163,7 @@ SOUS_TITRE_PLAQUE_MARGE = 32
 # §9 — the subtitle band, when a reel carries burned captions.
 BANDE_SOUS_TITRE = 190
 
-FACES = {"anton": "Anton-Regular.ttf", "nunito": "NunitoSans.ttf"}
+FACES = dict(_KIT["faces"])
 
 
 # ------------------------------------------------------------------ geometry
@@ -230,12 +234,21 @@ class Plan:
 _fontes = {}
 
 
+def _est_variable(f):
+    try:
+        f.get_variation_axes()
+    except OSError:
+        return False
+    return True
+
+
 def fonte(face, taille, graisse=400):
     cle = (face, taille, graisse)
     if cle not in _fontes:
         f = ImageFont.truetype(str(tk.font_file(FACES[face])), taille)
-        if face == "nunito":
-            # Nunito ships variable and its default instance is a wisp.
+        if face == "nunito" and _est_variable(f):
+            # Nunito ships variable and its default instance is a wisp. A kit may
+            # bring a static body face instead, which has no axis to pin.
             f.set_variation_by_axes(
                 [graisse if a["name"] in ("Weight", b"Weight") else a["default"]
                  for a in f.get_variation_axes()])
@@ -1294,7 +1307,7 @@ def _lignes_credit(carte, deck):
     else:
         deuxieme = licence
 
-    return [l for l in (premiere, deuxieme, "ethniafrica.com · @ethniafrica") if l]
+    return [l for l in (premiere, deuxieme, _KIT["footer_line"]) if l]
 
 
 def _pied(carte, deck, fmt_key, largeur, aligne):
@@ -1452,7 +1465,7 @@ def plan_video(carte, deck, *, image, sous_titre=False):
         # series on the image all of them end on. It carries the brand line instead, read off `ethni_brand` rather
         # than typed here, because two spellings of one name are two that drift.
         from ethni_brand import TAGLINE
-        libelle = (f"EthniAfrica · {TAGLINE}" if cloture
+        libelle = (f"{_KIT['name']} · {TAGLINE}" if cloture
                    else (deck.get("serie") or tk.pilier_courant(deck.get("pilier") or ""))).upper()
         t = _role_type("Bandeau", "reel")
         bloc = _v_poser(p.blocs, "v-serie", libelle, t["corps"], t["face"],

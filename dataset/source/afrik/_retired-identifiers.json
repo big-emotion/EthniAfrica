@@ -243,5 +243,19 @@
     "successorId": null,
     "reason": "Not a duplicate of PPL_TONGA_ZAMBIA. Toka and Leya are named sub-groups with their own territory around Mosi-oa-Tunya and their own ethnonym; the corpus keeps sub-group fiches beside the whole, as it does for the Ndebele houses.",
     "decidedOn": "2026-09-05"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_BUSSA",
+    "successorId": "PPL_BISSA",
+    "reason": "Same people (Bissa, ISO bib; Burkina Faso, Ghana, Togo): same autonym, same exonyms (Busansi, Busanga, Bussawa), same McFarland citation, same founder Barso, same three dialect groups. The fiche filed it under the Gur family while its own text called the language eastern Mande, which is the family the keeper declares. The keeper is the fiche the Burkina Faso country fiche already points at. The retiree's Gormine dialect, its 101 Last Tribes and Discover Burkina Faso sources and its warning against confusing the Bissa with the Zambian Bisa and the Busa are folded in. Its population estimate (1,100,000) could not be reconciled with the keeper's and is recorded in the keeper's demography.source.",
+    "decidedOn": "2026-10-03"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_BUSANSI",
+    "successorId": "PPL_BISSA",
+    "reason": "Same people (Bissa, ISO bib), filed under the Niger-Congo family and named by the Mossi exonym Busansi. The keeper already lists Busansi and Busanga as exonyms. Folded in: the Kusasi use of Busanga, the Gormine dialect, an explanation of Busanga as a corruption of « bisag gua » (kept as an explanation whose source is not established, because it rested on a video and a social-media post), and its YouTube and Facebook sources at the unverified tier. Not carried: its « contested » classification, which rested on the duplicate itself; the claim that Busa is a Nilo-Saharan language, which contradicts the fiche's own Mande classification; an origin account from the ancient empire of Ghana that rested only on those two unverified sources; and a 600,000 population estimate, recorded in the keeper's demography.source. The text stays readable in the git history.",
+    "decidedOn": "2026-10-03"
   }
 ]

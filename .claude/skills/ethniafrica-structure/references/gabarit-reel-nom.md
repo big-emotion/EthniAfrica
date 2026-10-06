@@ -196,40 +196,65 @@ qu'une réécriture de l'argument approuvé.
 
 **This second case uses the following editorial blocks, in order; visual cuts remain independent:**
 
-| #       | Temps                             | Ce qu'il fait                                                                                                                                                          |
-| ------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1       | **Ouverture**                     | Une transition et une question ; rien de plus n'est fixé, parce que le pont vers le chapitre précédent varie d'un sujet à l'autre.                                     |
-| 2       | **Cadrage**                       | Nomme l'institution (jamu, nisba…), son mode de transmission et ce qu'elle peut porter (récits, relations).                                                            |
-| 3…n     | **Cas documentés**                | At least two sourced cases. At least one must state what the evidence cannot establish. An optional methodological narrative block has no fixed wording.               |
-| n+1     | **Synthèse des quatre questions** | **Fixe, mot pour mot** — voir ci-dessous. C'est le garde-fou que ce cas existe pour tenir : il vaut pour tout sujet qui l'emploie, pas seulement celui qui l'a motivé. |
-| n+2     | **Synthèse**                      | Libre, trois phrases au plus — la même règle que pour tout reel (voir « Le registre » dans `SKILL.md`).                                                                |
-| n+3     | _(optionnelle)_ **Transition**    | Vers le chapitre suivant de la série, si le sujet en ouvre un.                                                                                                         |
-| dernier | **Clôture**                       | Le texte unique décidé, mot pour mot — inchangé, commun à tout reel.                                                                                                   |
+| #       | Temps                          | Ce qu'il fait                                                                                                                                                                                                                        |
+| ------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1       | **Ouverture**                  | Une transition et une question ; rien de plus n'est fixé, parce que le pont vers le chapitre précédent varie d'un sujet à l'autre.                                                                                                   |
+| 2       | **Cadrage**                    | Nomme l'institution (jamu, nisba…), son mode de transmission et ce qu'elle peut porter (récits, relations).                                                                                                                          |
+| 3…n     | **Cas documentés**             | Deux au moins. Chacun nomme sa source ; **au moins un**, dans le lot, porte une réserve épistémique explicite (ce que la source ne permet pas d'établir). Une scène de discussion méthodologique peut s'y glisser, sans phrase fixe. |
+| n+1     | **Synthèse**                   | Une recette de rédaction fixe, un contenu libre — voir plus bas.                                                                                                                                                                     |
+| n+2     | _(optionnelle)_ **Transition** | Vers le chapitre suivant de la série, si le sujet en ouvre un.                                                                                                                                                                       |
+| dernier | **Clôture**                    | Le texte unique décidé, mot pour mot — inchangé, commun à tout reel.                                                                                                                                                                 |
 
-**Douze blocs narratifs au plus** (contre dix pour la comparaison de formes) : le nombre
-de cas documentés varie plus que le nombre de formes d'un nom, et le sujet qui
-a motivé ce cas en emploie douze.
+**Douze scènes au plus** (contre dix pour la comparaison de formes) : le nombre
+de cas documentés varie plus que le nombre de formes d'un nom. Le sujet qui a
+motivé ce cas en a d'abord employé douze, puis onze, puis neuf, à mesure des
+retouches ci-dessous.
 
-**La phrase fixe, à recopier mot pour mot :**
+**La synthèse a une recette fixe, décidée par l'opérateur le 2026-09-23, en
+sa troisième forme sur le même sujet :**
 
-> « Nous devons donc distinguer quatre questions. L'étymologie cherche l'origine
-> du mot. Le récit fondateur raconte une origine et des liens reconnus par ceux
-> qui le transmettent. La transmission du nom concerne la manière de le
-> recevoir, de le porter et de le transmettre. La généalogie cherche à établir
-> les filiations entre des personnes précises. Un patronyme seul ne démontre ni
-> leur ascendance ni leur appartenance à un peuple. »
+1. **Le nom seul**, comme unique phrase d'ouverture — « Traoré. », rien
+   d'autre dans la même phrase. C'est la seule règle que le contrôleur
+   vérifie mécaniquement (`gabarit-synthese` ; un mot capitalisé, un point,
+   rien de plus).
+2. **L'origine** — ce qu'on en sait, ou l'aveu que ce n'est pas établi.
+3. **Le nom** — quel type de nom c'est (ici, un jamu).
+4. **D'où il vient** — un lieu, un peuple, un mouvement.
+5. **Les différentes appellations** — les formes déjà données dans la scène 3.
+6. **Une date** — au moins une, parmi celles déjà données dans la pièce.
 
-Elle est fixe parce qu'elle porte exactement la mise en garde qui justifie ce
-second cas — aucune date, aucun surnom, aucun mot du sujet précis ne s'y glisse,
-donc rien n'empêche de la reprendre telle quelle sur un futur sujet de la même
-famille (le prochain est Keïta/Coulibaly, S5).
+**Très courte, en langage courant, accessible à un public qui lit pour le
+plaisir, pas en professionnel** — l'exigence de l'opérateur, répétée à
+chaque retouche. Exemple, sur le sujet qui a motivé ce cas :
 
-**Le contrôleur choisit ce cas automatiquement**, à la présence de cette phrase
-(son ancre, la première phrase seule, suffit à déclencher la lecture — le reste
-du paragraphe est ensuite vérifié mot pour mot séparément, pour qu'une coquille
-tombe sur son propre écart plutôt que sur les erreurs, sans rapport, de l'autre
-gabarit). Rien ne se déclare en ligne de commande : `--type patronyme` reste le
-même argument pour les deux cas, et c'est le texte qui dit lequel il suit.
+> « Traoré. Son origine exacte reste inconnue. C'est un jamu, un nom de clan
+> mandingue. Il vient du pays de Kri, et aurait voyagé vers l'ouest dès 1235.
+> Il s'écrit aussi Tarawele, ou Taraore. »
+
+**Ce que ce point ne vérifie pas, volontairement** : que l'origine, le type de
+nom, la provenance, les appellations et la date soient réellement au rendez-
+vous, dans cet ordre, et exacts. Un contrôleur ne sait pas reconnaître un
+« type de nom » dans une phrase — le savoir reste à l'auteur et à la
+validation de l'opérateur, comme le reste du gabarit. La deuxième rédaction de
+cette scène (« Un nom de famille peut donc venir de plusieurs choses… »),
+gardait un garde-fou générique — un nom ne prouve pas un seul ancêtre — au
+prix d'un vocabulaire encore trop soutenu (étymologie, généalogie, filiations)
+pour le même public. La recette actuelle l'abandonne : ce garde-fou reste
+porté par chaque scène de cas documenté (leur réserve épistémique, déjà
+vérifiée plus haut), pas par une phrase de synthèse en plus.
+
+**Le contrôleur ne choisit plus ce cas automatiquement.** Les deux rédactions
+précédentes de la synthèse fournissaient une phrase fixe à détecter ; celle-ci
+n'en a plus, puisque son contenu est justement libre. La ligne de commande
+porte donc le choix explicitement : `check-gabarit.mjs narration.fr.txt --type
+patronyme --cas transmission`. Sans `--cas`, un `patronyme` reste lu contre la
+comparaison de formes, comme avant ce second cas.
+
+**Le pont vers le chapitre suivant reste optionnel, et son absence est un choix
+éditorial, pas un défaut.** Le sujet qui a motivé ce cas le portait dans sa
+première rédaction (douze scènes) et l'a retiré dans la seconde, sur
+instruction de l'opérateur : resserrer la pièce sur ce qu'elle montre, plutôt
+que sur ce que la série montrera ensuite.
 
 **Ce que ce cas ne vérifie pas**, volontairement : si un cas documenté est bien
 attribué, si sa réserve épistémique est la bonne pour ce qu'il affirme. Le

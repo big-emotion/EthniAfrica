@@ -22,7 +22,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  FERRY_REF: v1.2.0 # pin to the same release you use for the agent stubs
+  FERRY_REF: 39a42f9f5607d22c38f453bb33212c0c94750486 # v1.2.0, the SHA the router pins its actions to
 
 jobs:
   reconcile:

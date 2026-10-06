@@ -147,6 +147,172 @@ describe("name-record validator (FR53-FR57, Story 8.3)", () => {
     });
   });
 
+  describe("FR58-attestation — a form's history is cited at a page", () => {
+    function attestation(page: unknown) {
+      return {
+        formAsWritten: "Foulbé",
+        year: 1352,
+        periodLabel: "XIVe siècle",
+        attestedBy: "Ibn Battuta",
+        source: {
+          title: "Histoire générale de l'Afrique, IV, ch. 7",
+          author: "J. Devisse",
+          year: 1985,
+          url: "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+          tier: "official",
+          page,
+        },
+      };
+    }
+
+    // @req REQ-189
+    it("passes an attestation that cites its source at a page", () => {
+      writeNameFile(
+        tmpDir,
+        "PPL_A.json",
+        validNameFile({
+          names: [validNameEntry({ attestations: [attestation("p. 192")] })],
+        })
+      );
+
+      expect(checkNameRecordModel(tmpDir).ok).toBe(true);
+    });
+
+    // @req REQ-189
+    it("fails an attestation with no page and names the record and the form", () => {
+      writeNameFile(
+        tmpDir,
+        "PPL_A.json",
+        validNameFile({
+          names: [validNameEntry({ attestations: [attestation("")] })],
+        })
+      );
+
+      const result = checkNameRecordModel(tmpDir);
+      expect(result.ok).toBe(false);
+      const error = result.errors.find((e) => e.includes("FR58-attestation"));
+      expect(error).toContain("PPL_A.json");
+      expect(error).toContain("names.0.attestations.0");
+    });
+
+    // @req REQ-189
+    it("still passes a form that carries no attestation", () => {
+      writeNameFile(tmpDir, "PPL_A.json", validNameFile());
+
+      expect(checkNameRecordModel(tmpDir).ok).toBe(true);
+    });
+  });
+
+  describe("FR59-answer — the one-line answer, its namer, its status, the pronunciation", () => {
+    const sourced = {
+      title: "Dictionnaire",
+      author: "Auteur",
+      year: 1993,
+      url: "https://example.org",
+      tier: "referenced",
+      page: "p. 412",
+    };
+
+    // @req REQ-191
+    it("passes a form carrying a short line, a namer, a status and a sourced pronunciation", () => {
+      writeNameFile(
+        tmpDir,
+        "PPL_A.json",
+        validNameFile({
+          names: [
+            validNameEntry({
+              shortLine: "Le nom qu'ils se donnent, dans leur langue.",
+              namedBy: null,
+              originDebated: true,
+              usedIn: ["ful"],
+              pronunciation: {
+                respelling: "foul-bé",
+                audio: null,
+                source: sourced,
+              },
+            }),
+          ],
+        })
+      );
+
+      expect(checkNameRecordModel(tmpDir).ok).toBe(true);
+    });
+
+    // @req REQ-191
+    it("fails a short line over 120 characters, naming the record and the form", () => {
+      writeNameFile(
+        tmpDir,
+        "PPL_A.json",
+        validNameFile({
+          names: [validNameEntry({ shortLine: "x".repeat(121) })],
+        })
+      );
+
+      const error = checkNameRecordModel(tmpDir).errors.find((e) =>
+        e.includes("FR59-answer")
+      );
+      expect(error).toContain("PPL_A.json");
+      expect(error).toContain("names.0.shortLine");
+    });
+
+    // @req REQ-191
+    it("fails a short line that carries an identifier", () => {
+      writeNameFile(
+        tmpDir,
+        "PPL_A.json",
+        validNameFile({
+          names: [validNameEntry({ shortLine: "Voir PPL_WOLOF pour ce nom." })],
+        })
+      );
+
+      expect(checkNameRecordModel(tmpDir).ok).toBe(false);
+    });
+
+    // @req REQ-191
+    it("fails a pronunciation without a source", () => {
+      writeNameFile(
+        tmpDir,
+        "PPL_A.json",
+        validNameFile({
+          names: [
+            validNameEntry({
+              pronunciation: {
+                respelling: "foul-bé",
+                audio: null,
+                source: null,
+              },
+            }),
+          ],
+        })
+      );
+
+      const result = checkNameRecordModel(tmpDir);
+      expect(result.ok).toBe(false);
+      expect(result.errors.some((e) => e.includes("FR59-answer"))).toBe(true);
+    });
+
+    // @req REQ-191
+    it("fails a recording that states no consent", () => {
+      writeNameFile(
+        tmpDir,
+        "PPL_A.json",
+        validNameFile({
+          names: [
+            validNameEntry({
+              pronunciation: {
+                respelling: "foul-bé",
+                audio: { url: "https://example.org/a.ogg", consent: "" },
+                source: sourced,
+              },
+            }),
+          ],
+        })
+      );
+
+      expect(checkNameRecordModel(tmpDir).ok).toBe(false);
+    });
+  });
+
   describe("FR56-imposed — imposedBy set ⇒ whyProblematic non-empty", () => {
     // @req REQ-032
     it("checkNameRecordModel fails when imposedBy is set and whyProblematic is empty", () => {

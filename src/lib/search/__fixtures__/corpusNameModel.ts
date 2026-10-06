@@ -165,12 +165,14 @@ const FRENCH_STOPWORDS = new Set([
 const stem = (word: string) =>
   word.length > 3 && word.endsWith("s") ? word.slice(0, -1) : word;
 
-const wordsOf = (text: string) =>
+const accentedWordsOf = (text: string) =>
   text
     .toLowerCase()
     .split(/[^\p{L}\p{N}]+/u)
     .filter((word) => word && !FRENCH_STOPWORDS.has(word))
-    .map((word) => stem(normalizeString(word)));
+    .map(stem);
+
+const wordsOf = (text: string) => accentedWordsOf(text).map(normalizeString);
 
 /** Words as pg_trgm sees them: no stemming, no stopwords. */
 const rawWordsOf = (text: string) =>
@@ -213,13 +215,16 @@ const wordCache = new WeakMap<
   ModelEntity,
   { names: Set<string>; text: Set<string> }
 >();
+// Names are matched accent-folded (migration 052); prose is not, so « pigmee »
+// does not find a fiche whose text writes « pigmée ». Measured on production
+// on 2026-10-03, where the folded model had predicted a widening.
 function wordsOfEntity(item: ModelEntity) {
   let cached = wordCache.get(item);
   if (!cached) {
     const names = new Set(item.forms.flatMap(wordsOf));
     cached = {
       names,
-      text: new Set([...names, ...item.prose.flatMap(wordsOf)]),
+      text: new Set(item.prose.flatMap(accentedWordsOf)),
     };
     wordCache.set(item, cached);
   }
@@ -240,9 +245,12 @@ export function nameHits(query: string): ModelEntity[] {
 // @req REQ-178
 export function proseHits(query: string): ModelEntity[] {
   const typed = wordsOf(query);
+  const accented = accentedWordsOf(query);
   if (typed.length === 0) return [];
-  return corpusEntities().filter((item) =>
-    everyWordFound(typed, wordsOfEntity(item).text)
+  return corpusEntities().filter(
+    (item) =>
+      everyWordFound(typed, wordsOfEntity(item).names) ||
+      everyWordFound(accented, wordsOfEntity(item).text)
   );
 }
 

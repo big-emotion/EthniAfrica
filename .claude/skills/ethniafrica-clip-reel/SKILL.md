@@ -64,10 +64,15 @@ traps measured on the first use:
   **word** timestamps, listen for the overlap, and re-transcribe the _output_ to
   check the cut (step 5).
 
-**3. Write the plan** (`references/plan.example.json` is the shape):
+**3. Write the plan** (`references/plan.example.json` is the shape; `speaker` 0 and 1 are the two voices, `2` is a host or moderator in a neutral grey ink; an optional `banner` `{text, duration}` puts one complete sentence — the claim a debate is about — above the picture for its first seconds):
 `clips` are the kept source ranges in order; each `phrase` is one speaker turn or
 sentence inside a single clip, with its French translation; `thumbnail` names the
-frame, the title lines and the accent. Then:
+frame, the title lines and the accent. When the source is a screen recording, an
+optional `reframes` list (`{start, end, rect: [x, y, w, h]}`, source time and pixels)
+keeps only the picture inside the player's chrome for that stretch; measure the
+rectangle on a full-resolution frame and keep it at the source's aspect. Where the
+chrome sits inside the picture (a chapter title, a seek preview), `still_at` holds one
+clean frame of the same shot for the window instead — the voice runs on under it. Then:
 
 ```
 python3 social/harness/ethni_clip_reel.py validate plan.json

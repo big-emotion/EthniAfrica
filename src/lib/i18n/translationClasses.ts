@@ -304,8 +304,8 @@ export const TRANSLATION_CLASSES: Readonly<
     "origin.oralTraditions[].context": "review_required",
     "origin.oralTraditions[].transcription": "review_required",
     "origin.oralTraditions[].sourceRefs[]": "invariant",
-    // origin.writtenChronicles[], origin.linguisticReconstructions[] and
-    // casteOrSocialFunction are `[]` / null in the model; their shape comes
+    // origin.writtenChronicles[], origin.historicalSyntheses[],
+    // origin.linguisticReconstructions[] and casteOrSocialFunction are `[]` / null in the model; their shape comes
     // from the parser and is declared in PARSER_ONLY_LEAVES.
     "peoples[].peopleId": "invariant",
     "peoples[].status": "invariant",
@@ -363,6 +363,34 @@ export const TRANSLATION_CLASSES: Readonly<
     "names[].sources[].author": "invariant",
     "names[].sources[].year": "invariant",
     ...sourceEntry("names[].sources[]"),
+    // An attestation quotes a form as a document wrote it: the form, its
+    // author and its locator are evidence, never translated. Only the period
+    // label is prose ("XIVe siècle").
+    "names[].attestations[].formAsWritten": "invariant",
+    "names[].attestations[].year": "invariant",
+    "names[].attestations[].periodLabel": "translatable",
+    "names[].attestations[].attestedBy": "invariant",
+    "names[].attestations[].source.title": "invariant",
+    "names[].attestations[].source.author": "invariant",
+    "names[].attestations[].source.year": "invariant",
+    "names[].attestations[].source.url": "invariant",
+    "names[].attestations[].source.tier": "invariant",
+    "names[].attestations[].source.page": "invariant",
+    // The answer card's line is prose for a reader; the namer is a people's
+    // name, kept as written; the respelling is French-specific and is
+    // re-derived, not translated, for another locale.
+    "names[].shortLine": "translatable",
+    "names[].namedBy": "invariant",
+    "names[].originDebated": "invariant",
+    "names[].usedIn[]": "invariant",
+    "names[].pronunciation.respelling": "review_required",
+    "names[].pronunciation.audio": "invariant",
+    "names[].pronunciation.source.title": "invariant",
+    "names[].pronunciation.source.author": "invariant",
+    "names[].pronunciation.source.year": "invariant",
+    "names[].pronunciation.source.url": "invariant",
+    "names[].pronunciation.source.tier": "invariant",
+    "names[].pronunciation.source.page": "invariant",
   },
 
   "modele-pays.json": {
@@ -593,6 +621,9 @@ export const PARSER_ONLY_LEAVES: readonly ParserOnlyLeaf[] = [
   patronymeLeaf("origin.writtenChronicles[].claim", "translatable"),
   patronymeLeaf("origin.writtenChronicles[].claimStatus", "invariant"),
   patronymeLeaf("origin.writtenChronicles[].sourceRefs[]", "invariant"),
+  patronymeLeaf("origin.historicalSyntheses[].claim", "translatable"),
+  patronymeLeaf("origin.historicalSyntheses[].claimStatus", "invariant"),
+  patronymeLeaf("origin.historicalSyntheses[].sourceRefs[]", "invariant"),
   // A linguistic reconstruction is a claim about the word itself — the one
   // origin array whose claims are class 3.
   patronymeLeaf("origin.linguisticReconstructions[].claim", "review_required"),

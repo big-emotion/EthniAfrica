@@ -1,6 +1,7 @@
 import { unstable_cache } from "next/cache";
 import { createServerClient } from "@/lib/supabase/server";
 import { logger } from "@/lib/api/logger";
+import { HUB_AVAILABILITY_REVALIDATE_SECONDS } from "@/api/v2/services/corpusCache";
 import {
   getNavModules,
   MODULE_DEFINITIONS,
@@ -131,7 +132,7 @@ async function readCorpusPresence(): Promise<CorpusPresence> {
 const corpusPresence = unstable_cache(
   readCorpusPresence,
   ["hub-module-corpus-presence"],
-  { revalidate: 60 }
+  { revalidate: HUB_AVAILABILITY_REVALIDATE_SECONDS }
 );
 
 export interface HubModule extends HubModuleDefinition {
@@ -216,5 +217,5 @@ export const getModuleAvailabilityMap = unstable_cache(
     );
   },
   ["hub-module-availability-map"],
-  { revalidate: 60 }
+  { revalidate: HUB_AVAILABILITY_REVALIDATE_SECONDS }
 );

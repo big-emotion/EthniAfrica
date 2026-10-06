@@ -15,7 +15,7 @@ Four consequences, before anything below makes sense:
 - **Five classes answer this question in five storage shapes**, and exactly one module reads all five. See below.
 - **Listing what the corpus contains is the retired register.** Sentences that enumerate the six classes read as an encyclopaedia without using the word, which is what the reorientation moved away from. The copy modules were passed for this on 18 September 2026; `docs/editorial/refonte-plan-2026-09-18.md` records what was found and what was deliberately left.
 
-The codebase is **bilingual — English and French — while publication fails closed to French-only** (ARCH-021, REQ-140). `Language = "en" | "fr"` is derived from `LOCALES` in `src/lib/locale.ts`, and `[lang]` resolves to either only when `SITE_LOCALE_MODE` publishes both. Missing or invalid configuration means `fr-only`; `bilingual-fr-default` publishes both while keeping `/` on French, and `bilingual-en-default` is the later explicit English-default launch. A reader's explicit choice is remembered in the `ethni-locale` cookie; only the language switcher writes that cookie. `/fr/*` resolves unchanged. English URLs carry **English slugs** (`/en/atlas/peoples/...`) that `src/middleware.ts` rewrites onto the French route folders under `src/app/[lang]/` (DEC-049), so a route rename is two slug entries in `src/lib/routing.ts`, never a second folder tree. There is no third locale: `es`/`pt` and any other two-letter segment 308 to the configured default. An `en` branch is expected wherever a locale is switched on; a `["fr"].includes(lang)` guard is the retired shape.
+The codebase is **bilingual — English and French — while publication fails closed to French-only** (ARCH-021, REQ-140). `Language = "en" | "fr"` is derived from `LOCALES` in `src/lib/locale.ts`, and `[lang]` resolves to either only when `SITE_LOCALE_MODE` publishes both. Missing or invalid configuration means `fr-only`; `bilingual-fr-default` publishes both while keeping `/` on French, and `bilingual-en-default` is the later explicit English-default launch. A reader's explicit choice is remembered in the `ethni-locale` cookie; only the language switcher writes that cookie. `/fr/*` resolves unchanged. English URLs carry **English slugs** (`/en/atlas/peoples/...`) that `src/proxy.ts` rewrites onto the French route folders under `src/app/[lang]/` (DEC-049), so a route rename is two slug entries in `src/lib/routing.ts`, never a second folder tree. There is no third locale: `es`/`pt` and any other two-letter segment 308 to the configured default. An `en` branch is expected wherever a locale is switched on; a `["fr"].includes(lang)` guard is the retired shape.
 
 The public REST API is **v2 only** (`/api/v2/*`). V1 (regions/ethnicities) was removed; anything referring to `regions` or `ethnicities` as entities is stale.
 
@@ -97,6 +97,20 @@ It stays out of CI because it needs `python3`, the three exactly-pinned wheels
 and `ffmpeg` on the runner. That is a cost, not an oversight — but it does mean
 the engine drifts silently until somebody runs `make social-engine`, so run it
 in any change that touches `social/harness`.
+
+```bash
+npm run check:skill-drift -- --packs <dir>   # advisory: generic packs whose source skill moved
+```
+
+`check:skill-drift` compares the sha256 of each file listed in a pack's `derived-from.json`
+(paths relative to this repository) with the file on disk. It exits 0 on drift unless
+`--strict`, and tolerates packs that carry no manifest, because the packs live in agent-atelier.
+
+The render engine reads its brand — name, tagline, logo, faces, exit address, footer, pillar
+and accent maps — from `social/harness/brand-kit.json`; `ETHNI_BRAND_KIT=<kit file>` renders
+another brand. `test_brand_kit.py` pins EthniAfrica's decks to the pre-kit pixels
+(`fixtures/brand-kit-baseline.json`; re-pin with `--write-baseline` only for a deliberate
+change of look).
 
 `npm run check:translation-parity` runs in CI and **cannot** fail the job
 (`continue-on-error`, and the script exits 0 on findings). It is a report; see
@@ -198,7 +212,7 @@ src/lib/api/openapiV2.ts             # OpenAPI spec (openapi:diff gates breaking
 
 Shared: `src/api/v2/utils/{validation,response}.ts`, `src/api/v2/schemas/` (zod), `src/api/v2/serializers/`, `src/lib/api/cors.ts`.
 
-`src/middleware.ts` is load-bearing and does four unrelated jobs: CSP/security headers with a per-request nonce, locale resolution (`SITE_LOCALE_MODE` failing closed to `fr-only`, the `ethni-locale` cookie for an explicit choice, English slugs rewritten onto the French route folders, the resolved locale passed down as the `x-locale` request header so the root layout can declare `<html lang>`), API-key metering for `/api/v2/*` (a keyless request is served on the anonymous tier, 60 requests a minute per IP — the address always comes from `clientIp()` in `src/lib/api/clientIp.ts`, which counts `X-Forwarded-For` from the right (`TRUSTED_PROXY_HOPS`, default 1), never the client-writable left-most entry; a valid Bearer key, PBKDF2-hashed in `api_keys`, selects its tier's quota; a present but invalid key is refused with 401 rather than downgraded; `Origin` and `Referer` authorise nothing, because any client can forge them — so the frontend embeds no key and is metered like any anonymous reader), and Upstash rate limiting.
+`src/proxy.ts` is load-bearing and does four unrelated jobs: CSP/security headers with a per-request nonce, locale resolution (`SITE_LOCALE_MODE` failing closed to `fr-only`, the `ethni-locale` cookie for an explicit choice, English slugs rewritten onto the French route folders, the resolved locale passed down as the `x-locale` request header so the root layout can declare `<html lang>`), API-key metering for `/api/v2/*` (a keyless request is served on the anonymous tier, 60 requests a minute per IP — the address always comes from `clientIp()` in `src/lib/api/clientIp.ts`, which counts `X-Forwarded-For` from the right (`TRUSTED_PROXY_HOPS`, default 1), never the client-writable left-most entry; a valid Bearer key, PBKDF2-hashed in `api_keys`, selects its tier's quota; a present but invalid key is refused with 401 rather than downgraded; `Origin` and `Referer` authorise nothing, because any client can forge them — so the frontend embeds no key and is metered like any anonymous reader), and Upstash rate limiting.
 
 ### AFRIK data pipeline
 
@@ -425,6 +439,13 @@ reseaux-help — à tout moment : où j'en suis, doublons, prochain geste
   description per network out, drawn by `social/harness/ethni_clip_reel.py` from a
   plan file. It publishes nothing, registers nothing and never clears the source's
   rights — it reminds.
+- **Found clips set against each other — `/ethniafrica-koulechov`.** Off the
+  chain and experimental: the « Le Swipe » format
+  (`docs/design/gabarits-social/LE-SWIPE.md`), a commentary-free montage of about
+  three minutes (the first ran 4:36) where the order of clips sets competing
+  versions side by side. It files clips into a per-theme stash until the material
+  is ready, then proposes a running order the operator approves before any render,
+  and files the validated Swipe in the library.
 - **Anecdotes and proverbs are coming** as content types. Neither is on the site
   nor has a template yet; the chain notes such a subject as an idea until one
   exists.

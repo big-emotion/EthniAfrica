@@ -36,7 +36,7 @@ vi.mock("@upstash/ratelimit", () => ({
   ),
 }));
 
-import { middleware } from "@/middleware";
+import { proxy as middleware } from "@/proxy";
 import { _resetLimitersForTest } from "@/lib/api/rate-limit";
 
 describe("contract: 429 rate-limit path (middleware + Upstash)", () => {

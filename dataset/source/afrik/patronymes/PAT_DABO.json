@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Dossier fondé sur des sources externes, dont plusieurs communautaires ; ne pas étendre les affirmations sans source dédiée."
+    "directives": "Fiche recentrée sur le nom (2026-10-03). Chaque piste d'origine est attribuée à qui la porte et citée à la page dans les notes de sa source ; aucune n'est retenue comme la bonne. Ne pas étendre sans source dédiée."
   },
   "id": "PAT_DABO",
   "nameMain": "Dabo",
@@ -25,7 +25,7 @@
         },
         {
           "countryId": "GIN",
-          "sourceRefs": ["forebears-dabo"]
+          "sourceRefs": ["forebears-dabo", "bogacheva-2017-jamu"]
         },
         {
           "countryId": "BFA",
@@ -34,6 +34,10 @@
         {
           "countryId": "NGA",
           "sourceRefs": ["forebears-dabo"]
+        },
+        {
+          "countryId": "GMB",
+          "sourceRefs": ["ncac-daabo-busumbala"]
         }
       ]
     },
@@ -42,7 +46,11 @@
       "attestations": [
         {
           "countryId": "MLI",
-          "sourceRefs": ["bamadaba-jamuw"]
+          "sourceRefs": ["ardouin-1988-baakhunu"]
+        },
+        {
+          "countryId": "GMB",
+          "sourceRefs": ["ncac-daabo-busumbala"]
         }
       ]
     }
@@ -50,48 +58,86 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
-    "writtenChronicles": [],
+    "oralTraditions": [
+      {
+        "claim": "Un récit de famille kaagoro raconte que les Saagonè et les Daabo, « tous Jaawara », c'est-à-dire tous Diawara, se sont combattus dans le Kingui, et que le Kaagoro Ganyi Maamadu, né de la même mère que le Jaawara Jugudu Maamudu, aida son frère. Le récit ne dit pas d'où vient le nom. L'historien qui le publie en conclut, avec d'autres travaux, que les Kaagoro ont combattu contre les Daabo et que les Saagonè l'ont emporté vers 1753-1754.",
+        "claimStatus": "claimed",
+        "carrier": "Tanba Dancogo, qui transmet une tradition familiale kaagoro du Baakhunu, au Mali",
+        "collection": "mediated",
+        "collector": "Claude-Daniel Ardouin",
+        "context": "Récit recueilli au Baakhunu, traduit en français et publié en 1988",
+        "sourceRefs": ["ardouin-1988-baakhunu"]
+      }
+    ],
+    "writtenChronicles": [
+      {
+        "claim": "Souleymane Kanté, auteur guinéen de langue maninka et inventeur de l'écriture n'ko, fait des Dabo la seconde branche des Diawara, la première étant les Sagonè. Dans son ouvrage sur les noms de clan du Manden, une guerre entre les deux branches, datée des années 300 de son calendrier compté depuis l'assemblée de Kurukan Fuga, chasse une partie des Dabo de leur pays du Baakhunu vers le pays de Sanan, entre Kayes et Kinkin, sans doute le Kingui. C'est là, dit-il, que leur nom devint Dabo, et que leur nom de louange devint Sangan ou Sanganjan. Le même ouvrage dit des Diawara qu'ils ont pris la langue soninké après avoir été soumis par des Soninké. Il fait ensuite passer des Dabo au Fouta-Djalon, où ils prennent part à la bataille de Talansa, vers 1727, puis à la guerre sainte aux côtés des Peuls, et leur attribue la fondation de Dabola, d'où ils auraient été chassés vers Kurukodo.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ],
     "linguisticReconstructions": [
       {
-        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
+        "claim": "Aucun dictionnaire ni travail consulté ne donne de sens au mot : le dictionnaire des noms de clan mandingues définit Daabo seulement comme un nom de clan, et l'ouvrage écrit en n'ko qui raconte comment des Diawara sont devenus Dabo ne dit pas ce que le mot signifie.",
         "claimStatus": "established",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
+        "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
       },
       {
-        "claim": "Le dictionnaire des jamuw a une entrée Daabo, variante Dabo, qu'il rattache notamment aux Malinké. Il l'assortit du statut hɔ́rɔn (homme libre) pour l'un des groupes qu'elle cite, et du nom de louange Sonka.",
+        "claim": "Le nom s'écrit Daabo, avec une voyelle longue, dans le dictionnaire des noms de clan mandingues et dans les récits du Baakhunu. En Gambie, une notice des archives nationales associe au nom Daabo les graphies Darboe, Daboe, Darbo et Dabo.",
+        "claimStatus": "established",
+        "sourceRefs": [
+          "bamadaba-jamuw",
+          "ardouin-1988-baakhunu",
+          "ncac-daabo-busumbala"
+        ]
+      },
+      {
+        "claim": "Le dictionnaire des noms de clan mandingues rattache Daabo à trois groupes : les Malinké, les Kagoro, pour qui il donne le statut hɔ́rɔn (homme libre), et les Mandinka, pour qui il donne le nom de louange Sonka.",
         "claimStatus": "claimed",
-        "sourceRefs": ["bamadaba-jamuw"]
+        "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
       },
       {
-        "claim": "Des contributeurs d'un forum communautaire soninké rangent Dabo parmi les noms d'origine soninké, et une liste communautaire soninké cite Daabo comme second nom (jammu kare) de Mangasuba.",
+        "claim": "Des contributeurs d'un forum communautaire soninké rangent Dabo parmi les noms d'origine soninké, et une liste communautaire soninké cite Daabo comme second nom (jammu kare) de Mangasuba. Ces listes ne disent rien de l'origine du mot.",
         "claimStatus": "claimed",
         "sourceRefs": ["soninkara-forum-noms-soninke", "soninkara-noms-soninke"]
       },
       {
-        "claim": "Le nom est ainsi rattaché aux Malinké d'un côté et aux Soninké de l'autre, sans étymologie dans aucune des deux lectures. L'origine du nom n'est pas établie.",
+        "claim": "Un pays appelé le Dabo borde le Baakhunu au sud. Aucune source consultée ne dit si ce nom de lieu et le nom de clan sont liés.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["ardouin-1988-baakhunu"]
+      },
+      {
+        "claim": "Le nom est ainsi rattaché aux Malinké, aux Kagoro et aux Mandinka d'un côté, et par les Diawara au monde soninké de l'autre. Ces rattachements disent qui porte le nom, pas d'où vient le mot : l'origine du nom n'est pas établie.",
         "claimStatus": "contested",
-        "sourceRefs": ["bamadaba-jamuw", "soninkara-forum-noms-soninke"]
+        "sourceRefs": [
+          "bamadaba-jamuw",
+          "bogacheva-2017-jamu",
+          "soninkara-forum-noms-soninke"
+        ]
       }
     ]
   },
   "peoples": [
     {
       "peopleId": "PPL_MALINKE",
-      "status": "supposed",
-      "sourceRefs": ["bamadaba-jamuw"]
+      "status": "attested",
+      "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
     },
     {
       "peopleId": "PPL_SONINKE",
       "status": "supposed",
-      "sourceRefs": ["soninkara-forum-noms-soninke", "soninkara-noms-soninke"]
+      "sourceRefs": [
+        "soninkara-forum-noms-soninke",
+        "soninkara-noms-soninke",
+        "bogacheva-2017-jamu"
+      ]
     }
   ],
   "countries": [
     {
       "countryId": "MLI",
       "status": "attested",
-      "sourceRefs": ["forebears-dabo", "bamadaba-jamuw"]
+      "sourceRefs": ["forebears-dabo", "ardouin-1988-baakhunu"]
     },
     {
       "countryId": "SEN",
@@ -106,7 +152,12 @@
     {
       "countryId": "GIN",
       "status": "attested",
-      "sourceRefs": ["forebears-dabo"]
+      "sourceRefs": ["forebears-dabo", "bogacheva-2017-jamu"]
+    },
+    {
+      "countryId": "GMB",
+      "status": "attested",
+      "sourceRefs": ["ncac-daabo-busumbala"]
     },
     {
       "countryId": "BFA",
@@ -115,14 +166,22 @@
     },
     {
       "countryId": "NGA",
-      "status": "attested",
+      "status": "supposed",
       "sourceRefs": ["forebears-dabo"]
     }
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
   "bearers": [],
-  "homonyms": [],
+  "homonyms": [
+    {
+      "label": "Dabo, au Kano",
+      "entityType": "person",
+      "entityId": null,
+      "distinction": "Au Kano, dans le nord de l'actuel Nigeria, Dabo est le nom d'Ibrahim Dabo, deuxième émir peul du Kano, de 1819 à 1846, dont un fils, Abdullah, fut le quatrième émir. La chronique de Kano le célèbre comme « Dabo, celui qui saccage les villes » sans expliquer le nom. Aucune source consultée ne le relie au nom de clan mandingue, ni ne dit lequel des deux portent les Dabo du Nigeria : c'est pourquoi le Nigeria n'est indiqué ici que comme supposé.",
+      "sourceRefs": ["hga-vi-last", "palmer-1908-kano-chronicle"]
+    }
+  ],
   "sources": [
     {
       "sourceKey": "bamadaba-jamuw",
@@ -130,7 +189,7 @@
       "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs : la ligne des termes de statut porte les mots mandingues eux-mêmes ; le marqueur de groupe son est confirmé par la notice de l'entrée Wago, qui énumère des jamuw soninké, et le marqueur m est retenu comme indice malinké par comparaison avec l'entrée Kéyità, qu'une autre de nos fiches documente comme jamu malinké ; les autres marqueurs de groupe ne sont pas exploités ici. Les notes libres des entrées sont rédigées en russe et traduites ici par nous. L'entrée Daabo (variante Dabo) porte trois marqueurs de groupe, dont m, un statut hɔ́rɔn rattaché à l'un d'eux, et un nom de louange (Sonka) rattaché à un autre. La rubrique des noms de louange se lit ainsi par comparaison avec l'entrée Sùwanun, que le dictionnaire glose comme nom de louange de Berete."
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), signalée par Vydrin dans Mandenkan 63, 2020, p. 89-110. Fichier complet consulté. L'entrée Daabo donne la variante Dabo, trois groupes porteurs (Malinké, Kagoro, Mandinka), le statut hɔ́rɔn chez les Kagoro et le nom de louange Sonka chez les Mandinka ; elle ne donne aucun sens au nom. Les groupes se lisent d'après la notice correspondante du mémoire de Bogacheva, qui les nomme en clair. L'entrée Gèyita cite Daabɔ parmi ses partenaires de plaisanterie. L'entrée ne nomme aucun pays."
     },
     {
       "sourceKey": "soninkara-noms-soninke",
@@ -149,50 +208,65 @@
       "notes": "Fil de discussion du forum du portail communautaire Soninkara.com, ouvert en décembre 2006 et poursuivi jusqu'en 2011 : des contributeurs, sous pseudonyme, y dressent des listes de noms qu'ils tiennent pour soninké. Les listes se recoupent en partie et se contredisent : plusieurs intervenants rappellent que beaucoup de noms portés aujourd'hui par des Soninké ne sont pas soninké à l'origine, et l'un d'eux demande de distinguer les noms soninké des noms d'origine soninké. Consulté dans une copie archivée de 2024."
     },
     {
-      "sourceKey": "jansen-sunjata-paradigm",
-      "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
-      "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
-      "tier": "referenced",
-      "source_kind": "academic",
-      "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
-    },
-    {
       "sourceKey": "forebears-dabo",
       "title": "Dabo — origine, signification et incidence du nom de famille",
       "url": "https://forebears.io/surnames/dabo",
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Agrégateur généalogique mondial, consulté le 29 septembre 2026. Incidence mondiale d'environ 148 045 porteurs ; Mali 28 782, Sénégal 26 247, Guinée-Bissau 20 598, Nigeria 16 545, Guinée 13 504, Burkina Faso 7 974. La page ne donne aucune signification du nom. Les effectifs hors d'Afrique ne sont pas repris dans les attestations de cette fiche."
+    },
+    {
+      "sourceKey": "bogacheva-2017-jamu",
+      "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+      "url": "https://hdl.handle.net/11701/10975",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bogacheva, E. A., mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Notice Daabo, p. 24-25 : la variante Dabo, les Malinké, Kagoro et Mandinka comme porteurs, le statut hɔ́rɔn chez les Kagoro, le nom de louange sonka chez les Mandinka, puis le récit tiré de l'ouvrage en n'ko de Souleymane Kanté sur les sortes de si et de jamu du Manden : la scission entre Sagonè et Dabo, le pays de Sanan où le nom devient Dabo et le nom de louange Sangan ou Sanganjan, le Fouta-Djalon, Talansan et Dabola. Notice Jáwara, p. 58 : selon le même ouvrage, les Diawara ont deux branches, les Sagonè à Kinkin et les Dabo au Baakhunu, et ont pris la langue soninké. Le texte original en n'ko de Kanté n'a pas été lu ; seule sa traduction russe l'a été, et ses dates en années comptées depuis l'assemblée de Kurukan Fuga ne concordent pas toutes. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Souleymane Kanté y est présenté comme l'inventeur de l'écriture n'ko (p. 9)."
+    },
+    {
+      "sourceKey": "ardouin-1988-baakhunu",
+      "title": "Une formation politique précoloniale du Sahel occidental malien : le Baakhunu à l'époque des Kaagoro",
+      "url": "https://doi.org/10.3406/cea.1988.1659",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Ardouin, Claude-Daniel, Cahiers d'études africaines, volume 28, numéro 111-112, 1988, p. 443-461. Étude fondée sur des traditions orales recueillies au Baakhunu, dans l'ouest du Sahel malien. Le Baakhunu borné au sud par le Dabo (p. 443) ; le récit de Tanba Dancogo : « Les Saagonè et les Daabo, ils sont tous Jaawara, se battirent » (p. 447) ; les Kaagoro présents à Foose prenant part à la lutte interne des Jaawara contre les Daabo (p. 448) ; la victoire des Saagonè sur les Daabo vers 1753-1754, d'après Boyer 1953 et Diawara 1985 (p. 449)."
+    },
+    {
+      "sourceKey": "ncac-daabo-busumbala",
+      "title": "An Interview About The History of The Daabo Clan in Busumbala (NCAC_RDD_TAPE_2010A)",
+      "url": "https://doi.org/10.25592/uhhfdm.13555",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Notice d'un enregistrement des archives nationales numériques de la Gambie (NCAC), publiée en 2023 par l'Université de Hambourg. L'enregistrement est en accès restreint : nous n'avons lu que la notice, qui nomme l'informateur, Keemo Daabo de Busumbala, annonce son origine, sa migration et sa généalogie, et donne parmi ses mots de recherche les graphies Darboe, Daboe, Darbo et Dabo. D'autres notices du même fonds portent sur les Daabo de Gunjur et de Basori ; nous n'avons entendu aucun de ces entretiens, qui pourraient porter un récit local sur le nom."
+    },
+    {
+      "sourceKey": "hga-vi-last",
+      "title": "Histoire générale de l'Afrique, VI, ch. 22 : Le califat de Sokoto et le Borno",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+      "tier": "official",
+      "notes": "UNESCO, 1996 ; chapitre de Murray Last. Page imprimée 620 : la longue guerre civile qui suit l'avènement du deuxième émir du Kano, Ibrahim Dabo, et son règne de 27 ans, de 1819 à 1846 ; le quatrième émir, Abdullah, fils de Dabo. Le chapitre ne dit rien du nom lui-même."
+    },
+    {
+      "sourceKey": "palmer-1908-kano-chronicle",
+      "title": "The Kano Chronicle",
+      "url": "https://archive.org/details/v38a39journalofro38royauoft",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Palmer, H. R., Journal of the Royal Anthropological Institute, volume 38, 1908, p. 58-98. Traduction anglaise, par un administrateur colonial britannique, d'une chronique des souverains du Kano. Notice d'Ibrahim Dabo, fils de Mohammadu, quarante-cinquième souverain, et le chant qui le nomme « sacker of towns » (p. 95-96) ; notice de son fils Osumanu (p. 96). La chronique n'explique pas le nom."
     }
   ],
   "gaps": [
     {
-      "fieldPath": "origin.oralTraditions",
-      "reason": "Nous n'avons trouvé aucune tradition orale rapportant l'origine de ce nom."
-    },
-    {
-      "fieldPath": "origin.writtenChronicles",
-      "reason": "Nous n'avons trouvé aucune chronique écrite qui mentionne l'origine de ce nom."
-    },
-    {
       "fieldPath": "bearers",
-      "reason": "Nous ne nommons aucun porteur : aucune source consultée n'en cite qui soit décédé et dont l'appartenance à ce nom soit établie."
+      "reason": "Nous ne nommons aucun porteur : aucune source consultée n'en cite qui soit décédé et dont l'appartenance à ce nom de clan soit établie."
     },
     {
       "fieldPath": "alliances",
-      "reason": "Nous n'avons trouvé aucun lien de plaisanterie (sanankuya) attesté pour ce nom qui puisse être relié à une fiche existante."
-    },
-    {
-      "fieldPath": "homonyms",
-      "reason": "Nous n'avons trouvé aucune source signalant un homonyme de ce nom à distinguer."
-    },
-    {
-      "fieldPath": "origin.linguisticReconstructions",
-      "reason": "Aucune étymologie de ce nom n'est établie dans les sources consultées : nous ne proposons aucune signification. Au Nigeria, où le nom est aussi très porté, nous n'avons pas de source sur son origine ni sur le groupe auquel il se rattache."
+      "reason": "Le dictionnaire des noms de clan mandingues cite Daabɔ parmi les partenaires de plaisanterie du clan Gèyita ; nous n'avons pas de dossier pour ce nom, et nous n'avons trouvé aucun autre lien de plaisanterie attesté pour Dabo."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Le dictionnaire des jamuw donne un statut d'homme libre (hɔ́rɔn) pour l'un des groupes qui portent ce nom, mais aucune fonction sociale propre au nom : nous n'en déduisons pas de fonction."
+      "reason": "Le dictionnaire des noms de clan mandingues donne le statut d'homme libre (hɔ́rɔn) aux Dabo kagoro, mais aucune fonction sociale propre au nom : nous n'en déduisons pas de fonction."
     }
   ]
 }

@@ -16,7 +16,7 @@ import {
 } from "@/lib/routing";
 import { getDefaultLocale } from "@/lib/locale";
 import { isModulePublished } from "@/lib/hubs/moduleOffer";
-import { resolveRelocatedPath, resolveRenamedModulePath } from "@/middleware";
+import { resolveRelocatedPath, resolveRenamedModulePath } from "@/proxy";
 import { LIVE_ROUTES } from "../a11yRoutes";
 
 const require = createRequire(import.meta.url);

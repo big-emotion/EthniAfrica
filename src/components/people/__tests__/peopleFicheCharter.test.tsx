@@ -5,6 +5,7 @@ import { PeopleDetailViewV2 } from "@/components/people/PeopleDetailViewV2";
 import { PeopleFicheTitle } from "@/components/people/PeopleFicheTitle";
 import { FicheSection } from "@/components/fiche/FicheSection";
 import type { PeopleDetail } from "@/types/afrik-frontend";
+import type { PeopleNamesDossier } from "@/api/v2/schemas/names";
 
 /**
  * The people fiche's parity contract, held against the mockup at
@@ -118,10 +119,13 @@ describe("people fiche parity with the mockup", () => {
         ...container.querySelectorAll("[data-fiche-section]"),
       ].map((node) => node.getAttribute("data-fiche-section"));
 
+      // DEC-068: the document opens on the answer card, then every other
+      // name; where the people lives is context that follows. No summary
+      // chapter repeats the head's counts (REQ-151).
       expect(sections).toEqual([
-        "En bref",
+        "D'où vient le nom ?",
+        "Les autres noms",
         "Où vit ce peuple",
-        "Le nom et ses appellations",
         "Langue",
         "Histoire",
         "Noms de personnes rattachés à ce peuple",
@@ -187,14 +191,18 @@ describe("people fiche parity with the mockup", () => {
     const { container } = render(
       <PeopleDetailViewV2 language="fr" people={people} />
     );
-    const summary = container.querySelector('[data-fiche-section="En bref"]');
+    // REQ-155 (DEC-068): with no summary chapter, the disagreement is stated
+    // where the shares are drawn.
+    const summary = container.querySelector(
+      '[data-fiche-section="Où vit ce peuple"]'
+    );
     expect(summary?.textContent).toContain("10 500 000");
     expect(summary?.textContent).toContain("18 065 000");
     expect(summary?.textContent).not.toContain("116 %");
   });
 
   // @req REQ-151
-  it("uses the resolved family name in the counted summary", () => {
+  it("uses the resolved family name in the language chapter", () => {
     const people = peopleWith([{ country: "BDI", population: 1000 }]);
     people.languageFamilyName = undefined;
     const { container } = render(
@@ -205,7 +213,7 @@ describe("people fiche parity with the mockup", () => {
       />
     );
     expect(
-      container.querySelector('[data-fiche-section="En bref"]')?.textContent
+      container.querySelector('[data-fiche-section="Langue"]')?.textContent
     ).toContain("Bantou");
   });
 
@@ -333,5 +341,243 @@ describe("people fiche — what the corpus does not fill", () => {
     expect(notes.length).toBeGreaterThan(0);
     for (const note of notes)
       expect(note).not.toMatch(/[a-z][A-Za-z0-9]*\.[a-zA-Z]/);
+  });
+});
+
+describe("people fiche — the answer card (DEC-068)", () => {
+  afterEach(cleanup);
+
+  const people = peopleWith([{ country: "SEN", population: 1000000 }]);
+
+  function sectionsOf(container: HTMLElement) {
+    return [...container.querySelectorAll("[data-fiche-section]")].map((node) =>
+      node.getAttribute("data-fiche-section")
+    );
+  }
+
+  // @req REQ-155
+  it("puts the related peoples after where the people lives, and moves them out of culture", () => {
+    const { container } = render(
+      <PeopleDetailViewV2
+        language="fr"
+        people={{
+          ...people,
+          historicalRole: {
+            relationsWithNeighbors: "Les Wolof les nomment Pël.",
+          },
+        }}
+      />
+    );
+
+    expect(sectionsOf(container).slice(0, 4)).toEqual([
+      "D'où vient le nom ?",
+      "Les autres noms",
+      "Où vit ce peuple",
+      "Peuples liés",
+    ]);
+    const culture = container.querySelector(
+      '[data-fiche-section="Culture et société"]'
+    );
+    expect(culture?.textContent ?? "").not.toContain("Les Wolof les nomment");
+  });
+
+  const source = (
+    title: string,
+    tier: "official" | "referenced" | "unverified"
+  ) => ({
+    title,
+    author: "Auteur",
+    year: 1985,
+    url: "https://example.org",
+    tier,
+  });
+
+  const blank = {
+    meaning: null,
+    periodLabel: null,
+    imposition: null,
+    sources: [
+      { id: "s-1", title: "S", url: null, year: 1985, tier: "official" },
+    ],
+    confidence: null,
+    attestations: [],
+    shortLine: null,
+    namedBy: null,
+    originDebated: false,
+    usedIn: [],
+    pronunciation: null,
+  };
+
+  // The fiche reads the API's dossier (GET /v2/peoples/{id}/names), not the
+  // corpus file.
+  const dossier: PeopleNamesDossier = {
+    peopleId: "PPL_SAMPLE",
+    autonym: "Fulɓe",
+    names: [
+      {
+        ...blank,
+        id: "nr-1",
+        nameText: "Fulɓe",
+        nameType: "endonym",
+        languageOfOrigin: "ful",
+        assertionId: "a-1",
+        shortLine: "Le nom qu'ils se donnent, dans leur langue.",
+        originDebated: true,
+        meaning: "Deux pistes sur le sens, aucune retenue.",
+        pronunciation: {
+          respelling: "foul-bé",
+          audio: null,
+          source: source("Guide", "referenced"),
+        },
+      },
+      {
+        ...blank,
+        id: "nr-2",
+        nameText: "Peul",
+        nameType: "exonym",
+        languageOfOrigin: "wol",
+        assertionId: "a-2",
+        namedBy: "les Wolof",
+        usedIn: ["fra"],
+        attestations: [
+          {
+            formAsWritten: "Peuls ou Peulhs",
+            year: null,
+            periodLabel: "rapporté dans un article de 1966",
+            attestedBy: "Amadou Hampâté Bâ",
+            source: { ...source("Abbia", "referenced"), page: "p. 23" },
+          },
+        ],
+      },
+      {
+        ...blank,
+        id: "nr-3",
+        nameText: "Fulɓe",
+        nameType: "historical_spelling",
+        languageOfOrigin: null,
+        assertionId: "a-3",
+      },
+      {
+        ...blank,
+        id: "nr-4",
+        nameText: "Toucouleur",
+        nameType: "exonym",
+        languageOfOrigin: null,
+        assertionId: "a-4",
+        originDebated: true,
+        imposition: {
+          imposedBy: "Ethnographes coloniaux",
+          impositionPeriod: null,
+          whyProblematic: "Une ethnie séparée par classement.",
+          contemporaryUsage: null,
+        },
+      },
+    ],
+  };
+
+  function renderWithDossier() {
+    return render(
+      <PeopleDetailViewV2
+        language="fr"
+        people={people}
+        namesDossier={dossier}
+      />
+    );
+  }
+
+  // @req REQ-190
+  it("opens on the self-name, its pronunciation and one sentence", () => {
+    const { container } = renderWithDossier();
+
+    const card = container.querySelector(
+      '[data-fiche-section="D\'où vient le nom ?"]'
+    )!;
+    expect(card.querySelector("[data-self-name]")?.textContent).toBe("Fulɓe");
+    // A `lang` attribute takes the BCP 47 tag, not the corpus's ISO 639-3
+    // code: axe refuses `lang="wol"` (valid-lang), and accepts `wo`.
+    expect(
+      container
+        .querySelector('[data-name-row="Peul"] [data-name-form]')
+        ?.getAttribute("lang")
+    ).toBe("wo");
+    expect(card.querySelector("[data-self-name]")?.getAttribute("lang")).toBe(
+      "ff"
+    );
+    expect(card.textContent).toContain("foul-bé");
+    expect(card.textContent).toContain(
+      "Le nom qu'ils se donnent, dans leur langue."
+    );
+    // No recording, no play button.
+    expect(card.querySelector("button[data-listen]")).toBeNull();
+  });
+
+  // @req REQ-190
+  it("shows every form once", () => {
+    const { container } = renderWithDossier();
+
+    const forms = [...container.querySelectorAll("[data-name-form]")].map(
+      (node) => node.textContent
+    );
+    expect(forms).toEqual(["Fulɓe", "Peul", "Toucouleur"]);
+  });
+
+  // @req REQ-190
+  it("carries each status as a badge with an icon and a word", () => {
+    const { container } = renderWithDossier();
+
+    const badgesOf = (form: string) =>
+      [
+        ...(container
+          .querySelector(`[data-name-row="${form}"]`)
+          ?.querySelectorAll("[data-badge]") ?? []),
+      ].map((badge) => ({
+        word: badge.textContent,
+        icon: Boolean(badge.querySelector("svg")),
+      }));
+
+    expect(badgesOf("Peul")).toEqual([
+      { word: "Donné de l'extérieur", icon: true },
+      { word: "En français", icon: true },
+    ]);
+    expect(badgesOf("Toucouleur").map((badge) => badge.word)).toEqual([
+      "Imposé",
+      "Origine débattue",
+    ]);
+  });
+
+  // @req REQ-190
+  it("justifies nothing above the sources: no tier label, no « non daté »", () => {
+    const { container } = renderWithDossier();
+
+    const flow = [...container.querySelectorAll("[data-fiche-section]")]
+      .filter((node) => node.getAttribute("data-fiche-section") !== "Sources")
+      .map((node) => node.textContent ?? "")
+      .join(" ");
+    expect(flow).not.toMatch(/Niveau de source|Source officielle|Référencée/);
+    expect(flow.toLowerCase()).not.toContain("non daté");
+    expect(
+      container.querySelector('[data-testid="fiche-summary-fact"]')
+    ).toBeNull();
+  });
+
+  // The stylesheet holds what the one face means (peopleOneFaceCharter); this
+  // holds that the fiche opts into it.
+  // @req REQ-190
+  it("opts the fiche's text into the one-face rule", () => {
+    const { container } = renderWithDossier();
+
+    expect(container.querySelector("#fiche")?.classList).toContain(
+      "afh-one-face"
+    );
+  });
+
+  // @req REQ-189
+  it("keeps a form's written traces one tap away, with their page", () => {
+    const { container } = renderWithDossier();
+
+    const traces = container.querySelector('[data-name-row="Peul"] details');
+    expect(traces?.textContent).toContain("Peuls ou Peulhs");
+    expect(traces?.textContent).toContain("p. 23");
+    expect(traces?.hasAttribute("open")).toBe(false);
   });
 });

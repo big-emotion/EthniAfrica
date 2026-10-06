@@ -132,7 +132,7 @@ export interface PeopleCountriesData {
   source?: string;
 }
 
-/** One name record shaped for `NameOriginCard`, plus the raw fields its `confidenceChip` slot needs. */
+/** One name record shaped for the names chapter, plus the raw fields a confidence chip needs. */
 export interface PeopleNameRecordViewData {
   record: NameRecordView;
   confidenceScore: number | null;
@@ -140,7 +140,7 @@ export interface PeopleNameRecordViewData {
   lastHumanAuditAt: string | null;
 }
 
-/** One historical spelling shaped for `NameSpellingHistory`, plus its own confidence-chip fields. */
+/** One historical spelling, plus its own confidence-chip fields. */
 export interface PeopleNameSpellingData {
   nameText: string;
   periodLabel: string | null;
@@ -353,9 +353,9 @@ export function transformPeopleCountries(
 }
 
 /**
- * Shape one `PeopleNameRecord` (API view) into a `NameOriginCard`-compatible
+ * Shape one `PeopleNameRecord` (API view) into a name-card-compatible
  * `NameRecordView` plus the raw confidence fields its chip slot needs. The
- * card and the chip are composed by the caller (`PeopleNamingTiles`) —
+ * card and the chip are composed by the caller (the names chapter) —
  * this transformer stays free of JSX.
  */
 // @req REQ-054
@@ -382,7 +382,7 @@ export function transformPeopleNameRecord(
 
 /**
  * Shape a `PeopleNamesDossier` (GET /v2/peoples/{id}/names) into the
- * endonyms-first `names` payload for `PeopleNamingTiles`. Returns `null`
+ * endonyms-first `names` payload for the names chapter. Returns `null`
  * when there is nothing to show (UX-DR31) — the section omits itself
  * entirely rather than rendering an empty shell.
  */

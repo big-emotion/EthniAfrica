@@ -495,7 +495,8 @@ class SceneRenderer:
                         draw.line(points, fill=colour, width=width, joint="curve")
                     a, b = points[-2:]
                     angle = math.atan2(b[1]-a[1], b[0]-a[0])
-                    if feature["meaning"] != "river":  # a watercourse has no direction of travel
+                    # A watercourse and a line of latitude have no direction of travel.
+                    if feature["meaning"] not in ("river", "latitude"):
                         draw.polygon([b, (b[0]-18*math.cos(angle-.45), b[1]-18*math.sin(angle-.45)),
                                       (b[0]-18*math.cos(angle+.45), b[1]-18*math.sin(angle+.45))], fill=colour)
                 x, y = camera.project(feature["points"][0])
@@ -573,7 +574,8 @@ class SceneRenderer:
                     e = feature["evidence"]
                     meaning = {"journey": "Trajet", "migration": "Migration", "language-diffusion": "Diffusion linguistique",
                                "name-circulation": "Circulation du nom",
-                               "river": "Cours d'eau (tracé schématique)"}.get(feature.get("meaning"))
+                               "river": "Cours d'eau (tracé schématique)",
+                               "latitude": "Parallèle (ligne de latitude)"}.get(feature.get("meaning"))
                     # A context country contains the subject rather than neighbouring it.
                     role = "Voisinage : " if feature.get("role") == "context" and feature["kind"] != "country" else ""
                     tail = f" · {e['period']} · {STATUS[e['status']]}" + (f" · {meaning}" if meaning else "")

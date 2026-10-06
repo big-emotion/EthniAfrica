@@ -49,6 +49,7 @@ const en = {
     explainDecision: "Explain your decision before closing this report.",
     transitionFailed: "The transition failed.",
     sourceReviewLink: "Sources awaiting review",
+    searchReportLink: "What readers search",
     moves: {
       review: "Review",
       accept: "Accept",
@@ -96,6 +97,32 @@ const en = {
     submit: "Record the decision",
     recording: "Recording…",
     recordFailed: "The decision could not be recorded.",
+  },
+  searchReport: {
+    metadataTitle: "What readers search",
+    title: "What readers search",
+    guidance:
+      "Searches typed on the site, read from the search log. The autocomplete logs each pause while typing, so a query is folded into the longer query that follows it within 30 seconds: « pe », « peu », « peul » count as one search for « peul ». Queries are lower-cased and trimmed.",
+    periodLabel: "Period",
+    periodOption: (days: number) => `${days} days`,
+    langLabel: "Language",
+    allLangs: "All",
+    langs: { fr: "French", en: "English" },
+    totalSearches: "Searches",
+    distinctQueries: "Distinct queries",
+    zeroResultShare: "Without result",
+    rowsRead: (rows: number) => `${rows} log rows read before folding.`,
+    truncated: (rows: number) =>
+      `Only the ${rows} most recent log rows were read: older searches in this period are missing.`,
+    zeroResultsTitle: "Searches without result",
+    zeroResultsHint:
+      "The most actionable list: each one is a name a reader looked for and did not find.",
+    frequentTitle: "Most frequent searches",
+    query: "Query",
+    count: "Count",
+    zeroShare: "Without result",
+    lastSeen: "Last seen",
+    empty: "No search in this period.",
   },
   signIn: {
     metadataTitle: "Moderation access",
@@ -199,6 +226,7 @@ const fr: AdminCopy = {
     explainDecision: "Expliquez votre décision avant de clore ce signalement.",
     transitionFailed: "La transition a échoué.",
     sourceReviewLink: "Sources en attente d'examen",
+    searchReportLink: "Ce que les lecteurs cherchent",
     moves: {
       review: "Examiner",
       accept: "Accepter",
@@ -247,6 +275,33 @@ const fr: AdminCopy = {
     submit: "Enregistrer la décision",
     recording: "Enregistrement…",
     recordFailed: "La décision n'a pas pu être enregistrée.",
+  },
+  searchReport: {
+    metadataTitle: "Ce que les lecteurs cherchent",
+    title: "Ce que les lecteurs cherchent",
+    guidance:
+      "Les recherches tapées sur le site, lues dans le journal des recherches. L'autocomplétion enregistre chaque pause pendant la frappe : une requête est donc fondue dans la requête plus longue qui la suit dans les 30 secondes — « pe », « peu », « peul » comptent pour une seule recherche de « peul ». Les requêtes sont mises en minuscules, sans espaces en bord.",
+    periodLabel: "Période",
+    periodOption: (days: number) => `${days} jours`,
+    langLabel: "Langue",
+    allLangs: "Toutes",
+    langs: { fr: "Français", en: "Anglais" },
+    totalSearches: "Recherches",
+    distinctQueries: "Requêtes distinctes",
+    zeroResultShare: "Sans résultat",
+    rowsRead: (rows: number) =>
+      `${rows} lignes du journal lues avant regroupement.`,
+    truncated: (rows: number) =>
+      `Seules les ${rows} lignes les plus récentes du journal ont été lues : les recherches plus anciennes de la période manquent.`,
+    zeroResultsTitle: "Recherches sans résultat",
+    zeroResultsHint:
+      "La liste la plus utile : chacune est un nom qu'un lecteur a cherché sans le trouver.",
+    frequentTitle: "Recherches les plus fréquentes",
+    query: "Requête",
+    count: "Nombre",
+    zeroShare: "Sans résultat",
+    lastSeen: "Dernière fois",
+    empty: "Aucune recherche sur cette période.",
   },
   signIn: {
     metadataTitle: "Accès à la modération",

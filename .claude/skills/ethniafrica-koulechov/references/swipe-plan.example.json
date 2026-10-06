@@ -1,0 +1,38 @@
+{
+  "transition": 0.6,
+  "segments": [
+    {
+      "source": "path/to/clip-belges.mp4",
+      "clips": [[12.0, 31.5]],
+      "phrases": [
+        {
+          "start": 12.2,
+          "end": 16.0,
+          "speaker": 0,
+          "fr": "Le lingala, ce sont les Belges qui l'ont inventé."
+        }
+      ],
+      "credit": { "channel": "@archives.kin" }
+    },
+    {
+      "source": "path/to/journal-1974.mp4",
+      "clips": [[95.0, 121.0]],
+      "phrases": [
+        {
+          "start": 95.4,
+          "end": 101.0,
+          "speaker": 0,
+          "fr": "Sur le fleuve, on parlait déjà le bobangi pour commercer."
+        }
+      ],
+      "marker": { "text": "Kinshasa, 1974", "duration": 3 },
+      "credit": { "title": "Journal télévisé", "channel": "OZRT", "year": 1974 }
+    }
+  ],
+  "thumbnail": {
+    "segment": 1,
+    "frame_at": 100.0,
+    "title_lines": ["QUI A INVENTÉ", "LE LINGALA ?"],
+    "accent": "LE LINGALA ?"
+  }
+}

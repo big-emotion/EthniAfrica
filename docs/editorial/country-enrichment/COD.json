@@ -3,7 +3,7 @@
   "countryId": "COD",
   "countryName": "Democratic Republic of the Congo",
   "status": "in_progress",
-  "updatedAt": "2026-09-07",
+  "updatedAt": "2026-10-03",
   "scorePolicy": "vector_only_no_global_score",
   "databaseSync": {
     "status": "not_verified",
@@ -124,13 +124,13 @@
       "filledSectionsPercent": 100
     },
     "peoples": {
-      "linkedFiches": 69,
+      "linkedFiches": 68,
       "macroLikeLinkedFiches": 4,
       "featuredEntries": 12,
       "demographicNamedEntries": 12,
-      "featuredVsLinkedPercent": 17.4,
+      "featuredVsLinkedPercent": 17.6,
       "referenceCount": 250,
-      "rawReferenceUpperBoundPercent": 27.6,
+      "rawReferenceUpperBoundPercent": 27.2,
       "namedDemographicSharePercent": 66,
       "catchAllDemographicSharePercent": 34,
       "demographicPercentageSum": 100,
@@ -166,8 +166,8 @@
       "declaredMainLanguages": 0,
       "featuredLanguageLabels": 13,
       "candidateIsoCodes": 75,
-      "candidateIsoCodesWithDossiers": 9,
-      "dossierCoverageOfCandidateCodesPercent": 12,
+      "candidateIsoCodesWithDossiers": 10,
+      "dossierCoverageOfCandidateCodesPercent": 13.3,
       "referenceCount": 252,
       "rawReferenceUpperBoundPercent": 29.8
     },
@@ -193,20 +193,20 @@
     },
     "sources": {
       "countryFiche": {
-        "total": 27,
-        "accepted": 27,
+        "total": 30,
+        "accepted": 30,
         "acceptedPercent": 100,
-        "withUrl": 27,
+        "withUrl": 30,
         "withUrlPercent": 100,
         "needsReview": 0
       },
       "linkedPeopleFiches": {
-        "total": 426,
-        "accepted": 218,
-        "acceptedPercent": 51.2,
-        "withUrl": 386,
-        "withUrlPercent": 90.6,
-        "needsReview": 49
+        "total": 456,
+        "accepted": 250,
+        "acceptedPercent": 54.8,
+        "withUrl": 416,
+        "withUrlPercent": 91.2,
+        "needsReview": 47
       }
     },
     "population": {
@@ -311,15 +311,18 @@
         "The Twa review retains PPL_TWA for the eastern Great Lakes Twa/Batwa identity but explicitly prevents using it as an umbrella for all DRC forest peoples.",
         "An older policy framework names Mbuti, Twa, Cwa, and Aka and distinguishes Mbuti subgroups such as Asua, Efe, and Basua. The corpus has PPL_AKA, but that fiche currently links only CAF and COG, so a COD link is a review candidate rather than an automatic correction.",
         "The historical nomenclature contains unmatched Aka, Baka, and Mbuti labels. Contemporary evidence confirms Mbuti as a high-confidence missing DRC umbrella record, but Baka/Bacwa and Aka/Cwa require geographic and naming disambiguation before any country link or fiche is proposed.",
-        "A dedicated Mbuti proposal is now ready for editorial review. It deliberately leaves population, ISO codes, and a single language family unset and keeps Efe, Asua, and Sua or Basua as separate child-community review items."
+        "A dedicated Mbuti proposal is now ready for editorial review. It deliberately leaves population, ISO codes, and a single language family unset and keeps Efe, Asua, and Sua or Basua as separate child-community review items.",
+        "Count correction, 2026-10-03: the stored ledger holds 69 entries and the regenerated one 68, because PPL_KONGO_MAYOMBE no longer exists as a fiche (merged into PPL_YOMBE by PR #1107 after the 2026-09-07 ledger). The earlier findings that cite 72 linked fiches and 46 candidate records describe an older baseline and are not current figures; none of the review entries is approved.",
+        "The ledger still lists PPL_KONGO_MAYOMBE with its in-review proposal to merge it into PPL_YOMBE, which has therefore been carried out in the source JSON without the review entry being closed. The ledger was not regenerated, so that review decision is preserved.",
+        "Luba and Lunda are described by HGA V ch. 20 as political-cultural networks that cover several named groups (the Songye, Kanyok, Kete, Sala Mpasu, Bindji and Lulua for the Luba; Lozi, Ndembu, Luena and Imbangala in the wider Lunda sense), which supports treating them as umbrella identities that must not be summed with their children. The Luba and Lunda name notes now say so."
       ],
       "remaining": [
-        "Approve, amend, or reject the 72 completed relation-review proposals before modifying production data; review completion is not editorial approval or national inventory completeness.",
+        "Approve, amend, or reject the 69 recorded relation-review proposals (68 in the regenerated ledger; none approved yet) before modifying production data; review completion is not editorial approval or national inventory completeness.",
         "Create an alias table for endonyms, exonyms, alternate spellings, and parent-child group relations.",
         "Prioritize the 600 unmatched historical occurrences by contemporary corroboration; do not process them as a flat creation queue.",
-        "Define whether country metrics expose leaf-level peoples, umbrella identities, or both as separate non-additive measures before turning the 46 candidate-record figure into a people count.",
+        "Define whether country metrics expose leaf-level peoples, umbrella identities, or both as separate non-additive measures before turning the provisional candidate-record figure into a people count; that figure must be recomputed first, since it dates from the 72-entry baseline.",
         "Define and test an immutable-ID redirect or retirement mechanism before implementing the proposed PPL_TSHOKWE to PPL_CHOKWE, PPL_TEKKE to PPL_TEKE, PPL_AZANDE_SUD to PPL_ZANDE, and PPL_SANGO_SCT to PPL_SANGO consolidations.",
-        "Extend the redirect plan to PPL_KIKONGO to PPL_KONGO and PPL_KONGO_MAYOMBE to PPL_YOMBE, then implement the reviewed Luba and Kongo parent relations after schema validation.",
+        "Extend the redirect plan to PPL_KIKONGO to PPL_KONGO, close the review entry for PPL_KONGO_MAYOMBE (already merged into PPL_YOMBE by PR #1107), then implement the reviewed Luba and Kongo parent relations after schema validation.",
         "Choose neutral canonical identifiers for the four-record Hutu and three-record Tutsi clusters before implementing redirects from their current country-, language-, and misspelling-qualified IDs.",
         "Define an immutable-ID redirect from PPL_KINYARWANDA to a neutral Banyarwanda umbrella identifier without collapsing its Hutu, Tutsi, and Batwa constituents.",
         "Define an immutable-ID redirect from PPL_LALA_LAMBA to a neutral Bantu Lamba identifier without colliding with the unrelated Gur-family PPL_LAMBA record.",
@@ -508,13 +511,26 @@
         "The modern chronology separates independence, the Congo Crisis, Mobutu's regime and state-renaming programme, the two Congo wars, the 2002–2003 negotiated transition, the 2006 constitutional-electoral transition, and the 2019 transfer of power.",
         "Conflict ceasefires and political agreements are not treated as clean endpoints, and the 2019 peaceful-transfer label carries an explicit electoral-process caveat.",
         "The proposal defines five distinct presentation sections and deliberately does not compute a global history-completeness percentage.",
-        "The reviewed first-wave history was applied to the country source JSON on 2026-09-07 without claiming exhaustive national coverage or database synchronization."
+        "The reviewed first-wave history was applied to the country source JSON on 2026-09-07 without claiming exhaustive national coverage or database synchronization.",
+        "Four UNESCO chapters were read in full for the DRC on 2026-10-03: HGA V ch. 19 (Kongo, J. Vansina) and ch. 20 (Luba and Lunda, Ndaywel è Nziem), HGA VII ch. 8 (Central Africa 1880–1914) and GHA XI III.3 (Kinshasa, Tshimanga). The key passages of the first two were re-read on the PDF; page numbers in that volume are footers, confirmed against the table of contents.",
+        "HGA V ch. 19 declares the date of the Kongo kingdom's formation unknown (p. 604) and gives two readings: a process starting in the ninth century by analogy, or a foundation at the latest around 1400 and at the earliest a good century earlier. The Kongo people fiche no longer states a fourteenth-century foundation as fact, and places Vungu north of the river as the chapter does, instead of on the south bank.",
+        "HGA V ch. 20 states that the oral-tradition chronology cannot safely go back before 1700 (p. 644), that the Luba kingdom stayed fairly small until the late seventeenth century (p. 647), and that the Rund state is mentioned in 1680 but cannot be dated by tradition (p. 646). The Luba and Lunda people fiches and the three country polity notes now carry these limits.",
+        "The country startYear values for the Luba (1550) and Lunda (1600) polities were left unchanged, but they sit in tension with the chapter, which places no certain date before 1700. Whether to revise them is an open decision, not a settled correction.",
+        "HGA V ch. 20 describes Luba and Lunda as two political-cultural networks rather than precise ethnic facts (p. 643), and says the tradition that the Lunda court was organised on the Luba model can only be partly right because Rund and Luba influenced each other (p. 648). The Luba and Lunda fiches no longer state a one-way adoption.",
+        "The chapter documents regional variation inside the Luba-Lunda area (the Songye and the east governed by closed associations, village-level or purchased power in the Kasai, Shila and Kanyok as a variant of the Luba system, an age system without aristocracy among the Sala Mpasu). That description comes from the reading report; its page numbers were not re-checked. It says nothing about the Mongo, so the Mongo gap stays open.",
+        "HGA VII ch. 8 and GHA XI III.3 were read but changed no fiche. HGA VII ch. 8 gives no explanation of colonial names and writes « Congo belge (actuel Zaïre) » (p. 191). GHA XI III.3 attributes the name Kinshasa to the village of Chief Teke Ntsuvila (p. 778) without any linguistic etymology, and gives no account of the city's renamings or its languages.",
+        "Reading caveats: HGA VII ch. 8 prints « Mushidi, le roi des Lunda » (p. 211) beside « Msiri » for the Yeke leader, an inconsistency the text does not resolve, and several ethnonyms are garbled in the text layer, so a name must be read on the page image before it is cited. Both points come from the reading report."
       ],
       "remaining": [
         "Design and test a mobile-first country-history presentation that separates archaeology, political formations, colonial administrations, and independent-state periods.",
         "Obtain a dedicated scholarly source for the broader Mangbetu chronology and a source for regional variation in Mongo political organization.",
         "Review additional regional formations in evidence-prioritized waves; the ten-row audit is a controlled first scope, not an exhaustive national inventory.",
-        "Review post-2019 developments as a separately versioned contemporary-history pass with an explicit cutoff date."
+        "Review post-2019 developments as a separately versioned contemporary-history pass with an explicit cutoff date.",
+        "Decide whether the country-level startYear values for the Luba (1550) and Lunda (1600) polities should be revised or kept, given that HGA V ch. 20 places no certain date before 1700 and first mentions the Rund state in 1680.",
+        "Locate a source for the Lunda area estimates (150,000 km² and 300,000 km²) and the 175,000-strong force in the Lunda fiche, and for the seven absorbed kingdoms of Kongo dia Nlaza in the Kongo fiche; HGA V ch. 19 describes alliance with the kabunga and the Mbata king plus conquest, and ch. 20 gives no figure of that kind.",
+        "Check the Jaga and Imbangala identification and the 1568 date in the Kongo fiche against HGA V ch. 19, which reportedly says the invaders' identity was never established; the page was not re-verified.",
+        "Read the DRC chapters of HGA I, III, IV, VI and VIII and of GHA IX before resting any further contested claim on UNESCO; only the four chapters named above have been read.",
+        "Open the UNESDOC permalink for HGA V in a browser: automated access answers HTTP 403, and the identifier comes from the local catalogue rather than from a successful fetch."
       ],
       "researchLeads": [
         {
@@ -601,7 +617,8 @@
         "Official census-status documentation identifies 1984 as the latest completed national census, while the 2013–2014 DHS is a sample survey; neither validates a current exhaustive people denominator.",
         "The country-name origin can be stated conservatively: the country is named after the Congo River, whose Congo/Kongo name is historically connected to the Kongo kingdom; the deeper lexical derivation remains uncertain.",
         "Detailed people percentages remain unsupported and must not be marked validated; the five former broad culture fields were either replaced by scoped claims or cleared on 2026-09-07.",
-        "All 27 country source JSON URLs returned an HTTP response below 500 on 2026-09-07; 403 and 429 responses establish endpoint reachability under the repository rule but do not replace a content review."
+        "All 27 country source JSON URLs returned an HTTP response below 500 on 2026-09-07; 403 and 429 responses establish endpoint reachability under the repository rule but do not replace a content review.",
+        "Two UNESCO chapters (HGA V ch. 19 and ch. 20) were added at the official tier to the Kongo, Luba and Lunda people fiches and to the country fiche, with chapter, author and printed pages. They are the first UNESDOC citations in the corpus and are attached to the claims they bear on, not listed as general background."
       ],
       "remaining": [
         "Select an enumerated scholarly people inventory as the canonical record-linkage baseline, or expose multiple non-additive scopes.",

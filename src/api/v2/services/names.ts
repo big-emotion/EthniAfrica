@@ -24,6 +24,8 @@ import type {
   NameForm,
   NameRecord,
   NameRecordConfidenceView,
+  NameAttestationView,
+  NamePronunciationView,
   NameRecordImposition,
   NameRecordSourceView,
   NameRecordType,
@@ -59,6 +61,12 @@ interface NameRecordRow {
   imposition_period: string | null;
   why_problematic: string | null;
   contemporary_usage: string | null;
+  attestations: NameAttestationView[] | null;
+  short_line: string | null;
+  named_by: string | null;
+  origin_debated: boolean | null;
+  used_in: string[] | null;
+  pronunciation: NamePronunciationView | null;
   assertion_id: string;
   sort_rank: number;
 }
@@ -175,7 +183,7 @@ export async function getPeopleNamesDossier(
   const { data: nameRows, error: namesError } = await supabase
     .from("name_records")
     .select(
-      "id, name_text, name_type, language_of_origin, meaning, period_label, imposed_by, imposition_period, why_problematic, contemporary_usage, assertion_id, sort_rank"
+      "id, name_text, name_type, language_of_origin, meaning, period_label, imposed_by, imposition_period, why_problematic, contemporary_usage, attestations, short_line, named_by, origin_debated, used_in, pronunciation, assertion_id, sort_rank"
     )
     .eq("entity_type", "people")
     .eq("entity_id", peopleId)
@@ -219,6 +227,14 @@ export async function getPeopleNamesDossier(
     assertionId: row.assertion_id,
     sources: sourcesByAssertion.get(row.assertion_id) ?? [],
     confidence,
+    // A row loaded before migration 096 has no history yet: an empty list,
+    // never null, so the fiche draws no timeline rather than a broken one.
+    attestations: row.attestations ?? [],
+    shortLine: row.short_line ?? null,
+    namedBy: row.named_by ?? null,
+    originDebated: row.origin_debated ?? false,
+    usedIn: row.used_in ?? [],
+    pronunciation: row.pronunciation ?? null,
   }));
 
   return {

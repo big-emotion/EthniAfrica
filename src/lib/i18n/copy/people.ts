@@ -24,6 +24,9 @@ const en = {
     historicalRole: "History",
     culture: "Culture and society",
     neighbours: "Neighbouring peoples and organisation",
+    relatedPeoples: "Related peoples",
+    answer: "Where does the name come from?",
+    otherNames: "The other names",
     distribution: "Where this people lives",
     referenceYear: "Reference year: 2025",
     fragmentation: "Colonial fragmentation",
@@ -164,6 +167,21 @@ const en = {
     noBoundary: "No boundary here.",
     presenceAndDensity: "A presence, and its density.",
   },
+  nameAnswer: {
+    pronounced: "Said",
+    listen: (name: string) => `Listen to how ${name} is said`,
+    meaningLeads: "The leads on its meaning",
+    writtenTraces: "Where it was written",
+    whatTheyRaise: "What these names raise",
+    givenBy: (namer: string) => `Given by ${namer}.`,
+    badges: {
+      own: "Their own name",
+      outside: "Given from outside",
+      imposed: "Imposed",
+      debated: "Origin debated",
+      usage: (language: string) => `In ${language}`,
+    },
+  },
 };
 
 type PeopleCopy = typeof en;
@@ -192,6 +210,9 @@ const fr: PeopleCopy = {
     historicalRole: "Histoire",
     culture: "Culture et société",
     neighbours: "Peuples voisins & organisation",
+    relatedPeoples: "Peuples liés",
+    answer: "D'où vient le nom ?",
+    otherNames: "Les autres noms",
     distribution: "Où vit ce peuple",
     referenceYear: "Année de référence : 2025",
     fragmentation: "Fragmentation coloniale",
@@ -324,6 +345,21 @@ const fr: PeopleCopy = {
     areaNoun: "présence",
     noBoundary: "Aucune frontière ici.",
     presenceAndDensity: "Une présence, et sa densité.",
+  },
+  nameAnswer: {
+    pronounced: "Se dit",
+    listen: (name) => `Écouter la prononciation de ${name}`,
+    meaningLeads: "Les pistes sur le sens",
+    writtenTraces: "Où il a été écrit",
+    whatTheyRaise: "Ce que ces noms soulèvent",
+    givenBy: (namer) => `Donné par ${namer}.`,
+    badges: {
+      own: "Leur nom",
+      outside: "Donné de l'extérieur",
+      imposed: "Imposé",
+      debated: "Origine débattue",
+      usage: (language) => `En ${language}`,
+    },
   },
 };
 

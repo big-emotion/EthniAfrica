@@ -348,6 +348,9 @@ contract test is what keeps them equal to it, row for row and model for model.
 | `origin.writtenChronicles[].claim`                | `translatable`    | parser-only |
 | `origin.writtenChronicles[].claimStatus`          | `invariant`       | parser-only |
 | `origin.writtenChronicles[].sourceRefs[]`         | `invariant`       | parser-only |
+| `origin.historicalSyntheses[].claim`              | `translatable`    | parser-only |
+| `origin.historicalSyntheses[].claimStatus`        | `invariant`       | parser-only |
+| `origin.historicalSyntheses[].sourceRefs[]`       | `invariant`       | parser-only |
 | `origin.linguisticReconstructions[].claim`        | `review_required` | parser-only |
 | `origin.linguisticReconstructions[].claimStatus`  | `invariant`       | parser-only |
 | `origin.linguisticReconstructions[].sourceRefs[]` | `invariant`       | parser-only |
@@ -416,27 +419,49 @@ contract test is what keeps them equal to it, row for row and model for model.
 
 ### modele-nom.json
 
-| Leaf                        | Class             | Note |
-| --------------------------- | ----------------- | ---- |
-| `_meta.*`                   | `invariant`       |      |
-| `id`                        | `invariant`       |      |
-| `entityType`                | `invariant`       |      |
-| `names[].nameText`          | `invariant`       |      |
-| `names[].nameType`          | `invariant`       |      |
-| `names[].languageOfOrigin`  | `invariant`       |      |
-| `names[].meaning`           | `review_required` |      |
-| `names[].periodLabel`       | `translatable`    |      |
-| `names[].imposedBy`         | `translatable`    |      |
-| `names[].impositionPeriod`  | `translatable`    |      |
-| `names[].whyProblematic`    | `review_required` |      |
-| `names[].contemporaryUsage` | `review_required` |      |
-| `names[].sortRank`          | `invariant`       |      |
-| `names[].sources[].author`  | `invariant`       |      |
-| `names[].sources[].year`    | `invariant`       |      |
-| `names[].sources[].title`   | `invariant`       |      |
-| `names[].sources[].url`     | `invariant`       |      |
-| `names[].sources[].tier`    | `invariant`       |      |
-| `names[].sources[].notes`   | `translatable`    |      |
+| Leaf                                   | Class             | Note                                                             |
+| -------------------------------------- | ----------------- | ---------------------------------------------------------------- |
+| `_meta.*`                              | `invariant`       |                                                                  |
+| `id`                                   | `invariant`       |                                                                  |
+| `entityType`                           | `invariant`       |                                                                  |
+| `names[].nameText`                     | `invariant`       |                                                                  |
+| `names[].nameType`                     | `invariant`       |                                                                  |
+| `names[].languageOfOrigin`             | `invariant`       |                                                                  |
+| `names[].meaning`                      | `review_required` |                                                                  |
+| `names[].periodLabel`                  | `translatable`    |                                                                  |
+| `names[].imposedBy`                    | `translatable`    |                                                                  |
+| `names[].impositionPeriod`             | `translatable`    |                                                                  |
+| `names[].whyProblematic`               | `review_required` |                                                                  |
+| `names[].contemporaryUsage`            | `review_required` |                                                                  |
+| `names[].sortRank`                     | `invariant`       |                                                                  |
+| `names[].sources[].author`             | `invariant`       |                                                                  |
+| `names[].sources[].year`               | `invariant`       |                                                                  |
+| `names[].sources[].title`              | `invariant`       |                                                                  |
+| `names[].sources[].url`                | `invariant`       |                                                                  |
+| `names[].sources[].tier`               | `invariant`       |                                                                  |
+| `names[].sources[].notes`              | `translatable`    |                                                                  |
+| `names[].attestations[].formAsWritten` | `invariant`       | the form as the document wrote it — evidence                     |
+| `names[].attestations[].year`          | `invariant`       |                                                                  |
+| `names[].attestations[].periodLabel`   | `translatable`    | prose: « XIVe siècle »                                           |
+| `names[].attestations[].attestedBy`    | `invariant`       |                                                                  |
+| `names[].attestations[].source.title`  | `invariant`       |                                                                  |
+| `names[].attestations[].source.author` | `invariant`       |                                                                  |
+| `names[].attestations[].source.year`   | `invariant`       |                                                                  |
+| `names[].attestations[].source.url`    | `invariant`       |                                                                  |
+| `names[].attestations[].source.tier`   | `invariant`       |                                                                  |
+| `names[].attestations[].source.page`   | `invariant`       | the locator a contradictor rereads                               |
+| `names[].shortLine`                    | `translatable`    | the answer card's one line                                       |
+| `names[].namedBy`                      | `invariant`       | a people's name, as written                                      |
+| `names[].originDebated`                | `invariant`       |                                                                  |
+| `names[].usedIn[]`                     | `invariant`       |                                                                  |
+| `names[].pronunciation.respelling`     | `review_required` | French-specific; re-derived for another locale, never translated |
+| `names[].pronunciation.audio`          | `invariant`       |                                                                  |
+| `names[].pronunciation.source.title`   | `invariant`       |                                                                  |
+| `names[].pronunciation.source.author`  | `invariant`       |                                                                  |
+| `names[].pronunciation.source.year`    | `invariant`       |                                                                  |
+| `names[].pronunciation.source.url`     | `invariant`       |                                                                  |
+| `names[].pronunciation.source.tier`    | `invariant`       |                                                                  |
+| `names[].pronunciation.source.page`    | `invariant`       |                                                                  |
 
 ### modele-pays.json
 

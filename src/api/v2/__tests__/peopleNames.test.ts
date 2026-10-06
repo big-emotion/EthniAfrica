@@ -245,6 +245,85 @@ describe("names service — getPeopleNamesDossier", () => {
     expect(result.names[0].imposition).toBeNull();
   });
 
+  // @req REQ-189
+  it("carries each form's attestations, with their page, to the dossier", async () => {
+    const attestation = {
+      formAsWritten: "Dinka",
+      year: 1841,
+      periodLabel: null,
+      attestedBy: "Expedition journal",
+      source: {
+        title: "Journal",
+        author: "A",
+        year: 1841,
+        url: "https://example.org",
+        tier: "referenced",
+        page: "p. 12",
+      },
+    };
+    mockTables({
+      names: [endonymRow, { ...exonymRow, attestations: [attestation] }],
+    });
+
+    const result = await getPeopleNamesDossier("PPL_DINKA");
+
+    expect(result.names[1].attestations).toEqual([attestation]);
+  });
+
+  // @req REQ-191
+  it("carries the answer-card fields to the dossier, and defaults when the row has none", async () => {
+    const pronunciation = {
+      respelling: "djièng",
+      audio: null,
+      source: {
+        title: "D",
+        author: "A",
+        year: 1990,
+        url: "u",
+        tier: "referenced",
+      },
+    };
+    mockTables({
+      names: [
+        {
+          ...endonymRow,
+          short_line: "Le nom qu'ils se donnent.",
+          named_by: null,
+          origin_debated: true,
+          used_in: ["din"],
+          pronunciation,
+        },
+        exonymRow,
+      ],
+    });
+
+    const result = await getPeopleNamesDossier("PPL_DINKA");
+
+    expect(result.names[0]).toMatchObject({
+      shortLine: "Le nom qu'ils se donnent.",
+      namedBy: null,
+      originDebated: true,
+      usedIn: ["din"],
+      pronunciation,
+    });
+    expect(result.names[1]).toMatchObject({
+      shortLine: null,
+      namedBy: null,
+      originDebated: false,
+      usedIn: [],
+      pronunciation: null,
+    });
+  });
+
+  // @req REQ-189
+  it("answers an empty history, never a missing one, for a form with no attestation", async () => {
+    mockTables({ names: [{ ...endonymRow, attestations: null }] });
+
+    const result = await getPeopleNamesDossier("PPL_DINKA");
+
+    expect(result.names[0].attestations).toEqual([]);
+  });
+
   // @req REQ-092
   it("returns an empty names array when the people has no name records", async () => {
     mockTables({ names: [], assertions: [] });

@@ -308,7 +308,8 @@ is visible in the legend and must be nonempty when supplied.
   based on qualitative place references must explicitly state that its extent
   is not measured; it must never be represented as a surveyed settlement area.
 - `route`: ordered `points`, revealed progressively with an arrow. `meaning`
-  must be `journey`, `migration`, `language-diffusion` or `name-circulation`.
+  must be `journey`, `migration`, `language-diffusion`, `name-circulation`, `river` or `latitude`
+  (the last two carry no arrowhead).
   Use `journey` for an individual's travel, not collective population migration.
   Optional `draw_seconds` (0.04 to `until-at`) finishes the reveal early and holds
   the completed arrow until `until`; omission preserves the original reveal
@@ -409,6 +410,10 @@ Map additions, all validated and all requiring evidence like every other feature
   stripes) and `"unlabelled": true` (no on-map text; the legend line with period and status stays).
 - `"meaning": "river"` on a `route` draws a dashed watercourse without an arrowhead; legend
   « Cours d'eau (tracé schématique) ».
+- `"meaning": "latitude"` on a `route` draws a line of latitude (a treaty's parallel, for example)
+  without an arrowhead; legend « Parallèle (ligne de latitude) ». Give enough points along the
+  parallel for the line to follow the globe's curvature; it is a limit written in a text, not a
+  border, a journey or a movement.
 - `map.inserts`: up to three `{asset, at, until, side: "left"|"right", label}` framed picture
   cards laid on the map while the narration cites them; their credits join the foot of the frame
   only while shown. The map keeps moving underneath.

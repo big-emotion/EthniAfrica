@@ -192,7 +192,7 @@ thing. **L'atlas** carries the identifier `atlas` and routes under
 **Les jeux** carries `jeux` and `/fr/jeux/*`. The verb-shaped predecessors —
 `explorer`, `comprendre`, `jouer` — are retired identifiers now, permanently
 redirected rather than reachable: every address published under them reaches
-its successor in one hop (`src/middleware.ts`, `RELOCATED_SEGMENTS`).
+its successor in one hop (`src/proxy.ts`, `RELOCATED_SEGMENTS`).
 
 The access-mode labels remain disclosures in the header. Atlas and games offer
 individual modules directly. Dossiers instead offers published themes from

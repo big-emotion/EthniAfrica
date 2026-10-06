@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Dossier court fondé sur le passage du corpus AFRIK référencé ; ne pas étendre les affirmations sans source dédiée."
+    "directives": "Fiche recentrée sur le nom (2026-10-03), passe de correction : chaque piste d'origine est attribuée à qui la porte et citée à la page dans les notes de sa source ; aucune n'est retenue comme la bonne. Ne pas étendre sans source dédiée."
   },
   "id": "PAT_TRAORE",
   "nameMain": "Traore",
@@ -66,51 +66,70 @@
   "origin": {
     "oralTraditions": [
       {
-        "claim": "Tiramaghan Traoré, général de Soundiata et conquérant du Kaabu, est donné comme ancêtre éponyme du clan Tarawele dans la geste.",
+        "claim": "Les Mara appartiennent à la même branche paternelle que les Traoré : les deux noms ont un ancêtre commun, Mansa Yurukara Nayni, et sont de la même famille que les Sako et les Kouyaté.",
         "claimStatus": "claimed",
-        "griot": "Djeli Mamadou Kouyaté (Djeliba Koro, Siguiri)",
-        "transcription": "Niane, Djibril Tamsir, Soundjata ou l'épopée mandingue, 1960",
+        "carrier": "Babou Condé, griot du village de Fadama, dans la préfecture de Kouroussa en Guinée",
+        "collection": "mediated",
+        "collector": "E. A. Bogacheva, lors d'entretiens menés en 2017",
+        "context": "Récit rapporté en russe dans un mémoire universitaire",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      },
+      {
+        "claim": "Dans l'épopée, deux frères tous deux Traoré, Oulamba l'aîné et Oulani le cadet, rapportent du pays de Do la jeune fille promise au vainqueur du buffle, et la donnent au roi du Manding, Naré Maghan Kon Fatta, avant la naissance de Soundiata. Une note de l'éditeur rapporte la tradition qui s'y rattache : quand le cadet a tué le buffle, l'aîné compose sur-le-champ un chant à sa gloire, et le cadet s'écrie : « Frère, si tu étais griot, personne ne te résisterait. » De cette phrase viendraient la séparation entre Traoré et Diabaté (Dioubaté) et le nom Diabaté lui-même, et les griots Diabaté restent frères des Traoré. Une autre note fait naître du même épisode la parenté à plaisanterie entre Kondé et Traoré : les gens de Do se moquèrent des chasseurs qui avaient préféré la laide Sogolon aux belles filles.",
+        "claimStatus": "claimed",
+        "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane, qui l'a traduit en français",
+        "context": "Épopée publiée en 1960 ; la séparation des deux noms est rapportée dans les notes de l'éditeur",
         "sourceRefs": ["niane-1960"]
       },
       {
-        "claim": "Dans l'épopée, deux frères tous deux Traoré, Oulamba l'aîné et Oulani le cadet, rapportent au roi Naré Maghan Kon Fatta la femme-buffle du pays de Do, avant la naissance de Soundiata. Quand le cadet a tué le buffle, l'aîné compose un chant à sa gloire et le cadet s'écrie : « Frère, si tu étais griot, personne ne te résisterait. » Selon la tradition, c'est de là que Traoré et Diabaté (Dioubaté) se différencient : la même famille se divise entre chasseurs et griots.",
+        "claim": "Tiramaghan Traoré, général de Soundiata, aurait vaincu le roi du Jolof puis conquis la Casamance et le Kaabu. Les Mandenka de l'Ouest le tiennent pour le fondateur de nombreux royaumes, dont le Kaabu, et les griots du Kaabu chantent sa geste à la kora ; il est donné comme l'ancêtre des Traoré. Les traditions ne s'accordent pas sur sa fin : plusieurs villages du Kaabu disent garder ses restes, tandis que des traditions du Gangaran le font revenir au Mali.",
+        "claimStatus": "contested",
+        "carrier": "Les griots du Kaabu et les traditions du Gangaran",
+        "collection": "mediated",
+        "collector": "Le colloque sur les traditions orales du Kaabu de la Fondation Léopold-Sédar-Senghor, notamment M. Cissoko et Madina Ly-Tall, dont Djibril Tamsir Niane reprend les résultats",
+        "context": "Synthèse historique publiée par l'UNESCO en 1985 ; le lien avec les Traoré est donné par un historien de l'épopée",
+        "sourceRefs": ["hga-iv-niane", "jansen-sunjata-paradigm"]
+      },
+      {
+        "claim": "Avant l'empire du Mali, une partie des Traoré vit dans le pays de Kiri, mais la plupart habitent la province appelée plus tard Gangaran, au nord-ouest du Bouré. Ce sont des chasseurs du clan Traoré qui auraient donné en mariage au roi Maghan Kön Fatta la mère de Soundiata.",
         "claimStatus": "claimed",
-        "griot": "Djeli Mamadou Kouyaté (Djeliba Koro, Siguiri)",
-        "transcription": "Niane, Djibril Tamsir, Soundjata ou l'épopée mandingue, 1960",
-        "sourceRefs": ["niane-1960"]
+        "collection": "mediated",
+        "collector": "Djibril Tamsir Niane et Youssouf Tata Cissé, d'après les écoles de tradition orale du Manding",
+        "context": "Synthèse historique publiée par l'UNESCO en 1985",
+        "sourceRefs": ["hga-iv-niane"]
       }
     ],
-    "writtenChronicles": [],
-    "linguisticReconstructions": [
+    "writtenChronicles": [
       {
-        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
-        "claimStatus": "established",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
-      },
-      {
-        "claim": "La forme mandingue du nom est Tarawele ; Traoré en est la transcription coloniale francophone. Aucune étymologie ne fait consensus.",
-        "claimStatus": "contested",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
-      },
-      {
-        "claim": "Le nom entre dans un système de correspondances entre patronymes de peuples différents, établi après Soundiata : en pays wolof, un Traoré est reçu comme frère par les Diop et peut prendre leur nom, et réciproquement. Le jamu n'est donc pas seulement héréditaire, il est convertible d'une aire à l'autre.",
-        "claimStatus": "established",
-        "sourceRefs": ["gha-iv-mali", "niane-1985-fr-mali-chapitre"]
-      },
-      {
-        "claim": "Avant Soundiata, les Traoré occupent une partie du pays de Kiri, mais la majorité d'entre eux s'installe dans la province qui prendra plus tard le nom de Gangaran, au nord-ouest du Bouré. Ce territoire est distinct du berceau des Keita, situé autour de Dakadiala, Naréna et Kiri.",
-        "claimStatus": "established",
-        "sourceRefs": ["gha-iv-mali", "niane-1985-fr-mali-chapitre"]
-      },
-      {
-        "claim": "On doute que l'ancêtre Tiramagan, célébré comme général de Soundiata et fondateur du Kaabu, renvoie à une personne historique : au Kaabu, où le récit ignore presque son lien avec Soundiata, son nom Tiramagan ou Siramagan pourrait désigner le « chef des ordalies », un objet de culte, la lance de l'épreuve, devenu personnage. Cette lecture est une hypothèse et ne fait pas consensus ; une autre lecture y voit un général envoyé par Soundiata.",
-        "claimStatus": "contested",
-        "sourceRefs": ["jansen-sunjata-paradigm", "gha-iv-mali"]
-      },
+        "claim": "Le nom viendrait d'une formule, « À taá dá wéele », que l'ouvrage ne traduit pas et qu'il rattache à l'appel lancé à l'ancêtre. Túraman, général du temps de Soundiata, avait quitté la guerre devenu vieux ; quand une guerre faillit perdre le Manden, on l'envoya chercher, il partit, vainquit les ennemis et ramena la paix. Les conteurs chantèrent ensuite ses descendants en rappelant que leur aïeul avait été appelé à cette guerre, et ceux-ci répondaient que, sans cet appel, le Manden était perdu. Ainsi la lignée prit le nom de Tárawele, et le nom de l'ancêtre, Túraman, devint son jamu. Le même ouvrage, écrit en n'ko par Souleymane Kanté, divise les Tárawele en quatre branches, Dàamasí, Nàyité, Sídimɛ et Jàbaatɛ́, et rapporte aussi qu'on les dit descendants de Lònsanín ; son auteur ajoute qu'il ne croit pas à une origine arabe.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bogacheva-2017-jamu"]
+      }
+    ],
+    "historicalSyntheses": [
       {
         "claim": "Pour un étranger, le jamu est la porte d'entrée dans le tissu social : à Bamako, on lui attribue un jamu mandingue pour lui donner une place dans le groupe. Aujourd'hui, les références historiques des pactes entre noms sont souvent oubliées et les personnes peinent à en expliquer l'origine.",
         "claimStatus": "established",
         "sourceRefs": ["canut-2002-senankuya"]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "Aucun dictionnaire consulté ne donne de sens au mot : le dictionnaire des noms de clan mandingues l'écrit Tàrawéle, avec les variantes Traore et Taraore, et le définit seulement comme un nom de clan. Traoré en est la graphie française.",
+        "claimStatus": "established",
+        "sourceRefs": ["bamadaba-jamuw"]
+      },
+      {
+        "claim": "Une explication porte sur le nom de l'ancêtre, non sur le mot Traoré : au Kaabu, où il est appelé Tiramagan ou Siramagan, ce nom serait un titre. Magan est un mot ancien pour « roi », et sira la lance dont on se servait au Kaabu, lors d'une ordalie, pour désigner la personne à éprouver ; Tiramagan voudrait dire « chef des ordalies », et un objet de culte serait devenu un personnage. C'est une hypothèse. Dans l'épopée de Soundiata, Tiramagan est son général ; au Kaabu, le récit de fondation ignore presque ce lien.",
+        "claimStatus": "contested",
+        "sourceRefs": ["jansen-sunjata-paradigm", "hga-iv-niane"]
+      },
+      {
+        "claim": "Le nom a des équivalents chez d'autres peuples : en pays wolof, un Traoré est reçu comme un frère par les Diop et peut prendre leur nom, et un Diop peut devenir Traoré chez les Mandenka. La tradition fait remonter ces correspondances entre noms de clan à l'assemblée tenue après la victoire de Soundiata, à qui l'on prête aussi des faits bien postérieurs ; la pratique s'est poursuivie après lui.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-iv-niane"]
       }
     ]
   },
@@ -122,8 +141,8 @@
     },
     {
       "peopleId": "PPL_MALINKE",
-      "status": "supposed",
-      "sourceRefs": ["bamadaba-jamuw"]
+      "status": "attested",
+      "sourceRefs": ["hga-iv-niane", "bamadaba-jamuw", "bogacheva-2017-jamu"]
     }
   ],
   "countries": [
@@ -167,8 +186,7 @@
       "targetPatronymeId": "PAT_DIOP",
       "allianceType": "sanankuya",
       "sourceRefs": [
-        "gha-iv-mali",
-        "niane-1985-fr-mali-chapitre",
+        "hga-iv-niane",
         "canut-2002-senankuya",
         "canut-smith-2006-pactes"
       ]
@@ -190,6 +208,24 @@
         "canut-2002-senankuya",
         "canut-smith-2006-pactes"
       ]
+    },
+    {
+      "targetPatronymeId": "PAT_CONDE",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "niane-1960",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
+    },
+    {
+      "targetPatronymeId": "PAT_DIAWARA",
+      "allianceType": "sanankuya",
+      "sourceRefs": [
+        "bamadaba-jamuw",
+        "canut-2002-senankuya",
+        "canut-smith-2006-pactes"
+      ]
     }
   ],
   "casteOrSocialFunction": {
@@ -200,7 +236,7 @@
     {
       "status": "deceased",
       "displayName": "Tiramaghan Traoré",
-      "sourceRefs": ["niane-1960", "gha-iv-mali"]
+      "sourceRefs": ["hga-iv-niane", "jansen-sunjata-paradigm"]
     }
   ],
   "homonyms": [],
@@ -219,7 +255,7 @@
       "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Niane, Djibril Tamsir, Présence Africaine, 1960. Transcription du récit du griot Djeli Mamadou Kouyaté de Djeliba Koro (Siguiri). Source de référence pour la geste de Soundiata et les lignages qu'elle fonde ; c'est une mise par écrit d'une tradition orale, pas un document d'archive."
+      "notes": "Niane, Djibril Tamsir, Présence Africaine, 1960. Transcription du récit du griot Djeli Mamadou Kouyaté de Djeliba Koro (Siguiri) ; c'est une mise par écrit d'une tradition orale. Pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proches de l'édition imprimée sans s'y confondre : les deux frères chasseurs Oulamba et Oulani, venus du pays de Do (p. 21-28) ; la note sur la séparation des Traoré et des Diabaté et l'origine du nom Diabaté, puis celle sur la parenté à plaisanterie entre Kondé et Traoré et son origine (p. 32). Le récit ne nomme pas Tiramaghan."
     },
     {
       "sourceKey": "jansen-sunjata-paradigm",
@@ -227,7 +263,7 @@
       "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
+      "notes": "Jansen, Jan, Universiteit Leiden ; article paru dans The International Journal of African Historical Studies, cité d'après la version d'auteur déposée à Leyde et sa pagination. L'auteur soutient que les héros de l'épopée de Soundiata renvoient à des pratiques rituelles plutôt qu'à des personnes historiques. Tiramagan donné comme ancêtre des Traoré, fondateur du Kaabu dans un récit qui ignore presque son lien avec Soundiata, et la lecture de son nom comme « chef des ordalies », que l'auteur dit lui avoir été suggérée par l'historienne Cornelia Giesing (p. 15)."
     },
     {
       "sourceKey": "bamadaba-jamuw",
@@ -235,7 +271,7 @@
       "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs, et la lecture retenue est celle que le fichier impose : \\ca porte les termes de statut mandingues eux-mêmes (nùmu, jèli, hɔ́rɔn, garanke, finɛ, tontigi, wage, gesere) ; \\sn se lit senankun parce que l'entrée Kúyate annote sa propre ligne « \\sn Keyita » d'une réserve disant que cette relation-là est une entente amicale et non un senankuya. Les liens \\sn ne sont pas systématiquement réciproques d'une entrée à l'autre : chaque paire est donc citée d'après l'entrée qui la porte, nommée dans le claim ou le gap. L'entrée Tàrawéle porte les marqueurs de groupe b (bambara) et m, lu comme indice malinké par recoupement avec l'entrée Kéyità, qu'une autre de nos fiches documente comme jamu malinké ; ses liens \\sn nomment Jàra, Kɔ́nɛ, Jawara et Turɛ, et ses variantes Traore et Taraore."
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), signalée par Vydrin dans Mandenkan 63, 2020, p. 89-110. Fichier complet consulté. L'entrée Tàrawéle donne les variantes Traore et Taraore, les groupes bambara et malinké, les statuts hɔ́rɔn, puis tontigi chez les Bamana et les Maninka, et nùmu (forgeron) chez les Kagoro et au Wassoulou, des équivalents chez d'autres peuples (dont Sane, Mane, Ouédraogo, Dembélé, Diouf, et Touré à Ségou), et comme partenaires de plaisanterie Jàra, Kɔ́nɛ, Jawara et Turɛ ; elle ne donne aucun sens au nom. Les liens de plaisanterie ne sont pas toujours réciproques d'une entrée à l'autre : chaque paire est citée d'après l'entrée qui la porte."
     },
     {
       "sourceKey": "charry-1996-jembe",
@@ -246,14 +282,6 @@
       "notes": "Charry, Eric, Percussive Notes 34(2), avril 1996, p. 66-72 ; l'auteur est l'ethnomusicologue de Mande Music (University of Chicago Press, 2000). Article de revue spécialisée, non de revue à comité de lecture : il est cité ici pour l'attribution des jamuw aux statuts sociaux mandingues (numu, jeli, horon), qu'il énonce nommément clan par clan, et non pour l'histoire du jembe."
     },
     {
-      "sourceKey": "gha-iv-mali",
-      "title": "General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century",
-      "url": "https://archive.org/details/unesco_general_history_africa_iv",
-      "tier": "official",
-      "source_kind": "intergovernmental",
-      "notes": "UNESCO, Histoire générale de l'Afrique, vol. IV, dir. D. T. Niane, 1984 ; consulté sur le texte intégral de l'exemplaire numérisé, non sur un index. Le chapitre 6, « Mali and the second Mandingo expansion » (D. T. Niane, p. 117-171), donne lignage par lignage l'implantation des clans malinké : les Kamara tenant Sibi et Tabon et les Traoré le Gangaran (p. 127), les deux branches Camara conduites par Tabon-Wana et Kamadian Camara de Sibi (p. 131), Tiramaghan Traoré fondateur du Gabu (p. 127 n. 28, p. 133), la correspondance des noms de clan d'un peuple à l'autre — un Traoré est reçu comme frère par les Diop en pays wolof et peut prendre leur nom (p. 134 n. 43) —, les griots Diabaté de Keyla et la réfection septennale du Kamablon de Kangaba (p. 127 n. 28), et le griot du mansa toujours choisi dans le clan Kouyaté (p. 160). L'ouvrage est une synthèse savante, non une chronique : les claims qu'il porte ici sont donc rangés hors writtenChronicles."
-    },
-    {
       "sourceKey": "canut-2002-senankuya",
       "title": "Pouvoir, places et filiation : les senankuya au Mali",
       "url": "https://journals.openedition.org/praxematique/2307",
@@ -262,26 +290,34 @@
       "notes": "Canut, Cécile, Cahiers de praxématique, numéro 38, 2002, p. 175-197. Enquête de terrain au Mali. Elle énonce ce que le pacte oblige : la relation vaut à perpétuité pour toute la descendance des deux lignées, le mariage entre elles est prohibé — diversement appliqué aujourd'hui, précise-t-elle — et l'entraide y est due sans réserve. Citée pour l'obligation elle-même ; elle ne nomme pas la paire de cette fiche, que portent les entrées citées à côté d'elle."
     },
     {
-      "sourceKey": "niane-1985-fr-mali-chapitre",
-      "title": "Le Mali et la deuxième expansion manden",
-      "url": "https://bokundoli.org/wp-content/uploads/2021/12/T4-10.pdf",
-      "tier": "official",
-      "source_kind": "intergovernmental",
-      "notes": "Niane, Djibril Tamsir, Histoire générale de l'Afrique, tome IV, chapitre 6, UNESCO/NEA, 1985 ; reproduction consultée le 23 septembre 2026, qui ne couvre le texte qu'à partir de la p. 141. Confirme, dans l'édition française, ce que l'édition anglaise de ce même chapitre (gha-iv-mali) donne déjà : les Traoré au Gangaran (p. 151-152), Tiramaghan Traoré fondateur du Gabu (p. 151, note 27), et la correspondance de clan entre Traoré et Diop établie après la victoire de Kirina (p. 157-158, note 44). Le berceau des Keita — Dakadiala, Naréna et Kiri (p. 152, note 28) — est celui du clan Keita, distinct du Gangaran des Traoré."
-    },
-    {
       "sourceKey": "canut-smith-2006-pactes",
       "title": "Pactes, alliances et plaisanteries. Pratiques locales, discours global",
       "url": "https://doi.org/10.4000/etudesafricaines.6198",
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Canut, Cécile, et Smith, Étienne, Cahiers d'études africaines, numéro 184, 2006, p. 687 et suivantes. Citée pour la mise en garde qu'elle porte : l'idée que la parenté à plaisanterie apaiserait les conflits y est traitée comme une hypothèse héritée de Radcliffe-Brown et reprise par les études sur la résolution des conflits, donc comme un discours à analyser et non comme un effet mesuré. La page de début est vérifiée, la page de fin ne l'est pas."
+    },
+    {
+      "sourceKey": "hga-iv-niane",
+      "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 6, Le Mali et la deuxième expansion manden",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. D. T. Niane, 1985 ; chapitre de D. T. Niane. Pages imprimées : d'après les écoles de tradition orale du Manding, une partie des Traoré dans le pays de Kiri et la plupart dans la province appelée plus tard Gangaran (p. 153) ; Mamadi Kani faisant appel aux chasseurs des clans kamara, keita, konate et traore, et la mère de Soundiata donnée en mariage par des chasseurs du clan Traore, d'après Y. Cissé (p. 154) ; Tiramaghan Traore, général de Soundiata, fondateur du Kaabu selon les Mandenka de l'Ouest, sa geste chantée par les griots du Kaabu et les traditions divergentes sur sa fin (p. 157, note 41) ; un Traore reçu comme frère par les Diop en pays wolof et pouvant prendre leur nom (p. 158, note 44). Le chapitre ne donne aucun sens au nom."
+    },
+    {
+      "sourceKey": "bogacheva-2017-jamu",
+      "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+      "url": "https://hdl.handle.net/11701/10975",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bogacheva, E. A., mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Notice Tàrawéle, p. 136-137 : les formes Traore et Taraore et les statuts (p. 136) ; les partenaires de plaisanterie et l'origine racontée dans l'ouvrage en n'ko de Souleymane Kanté sur les noms et les jamu du Manden, avec la formule « À taá dá wéele », l'ancêtre Túraman et les branches du nom (p. 137). Notice Mara : le récit du griot Babou Condé de Fadama, recueilli en 2017, sur l'ancêtre commun des Mara et des Traoré (p. 104). L'ouvrage de Kanté, qui porte surtout sur la Guinée, est lu dans la traduction russe qu'en donne l'autrice du mémoire ; le texte original en n'ko n'a pas été lu. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet."
     }
   ],
   "gaps": [
     {
       "fieldPath": "homonyms",
-      "reason": "Traoré et Tarawele sont deux graphies d'un même jamu, la première issue de la transcription coloniale ; le dictionnaire des jamuw en ajoute une troisième, Taraore, sous la même entrée. Il range en outre Sane, Mane, Ouédraogo, Dembélé, Diouf et — à Ségou — Touré parmi ses équivalences, des noms de clan d'autres peuples tenus pour le même, institution que l'Histoire générale de l'Afrique décrit de son côté en notant qu'un Traoré installé en pays wolof peut prendre le nom Diop. Ni les graphies ni les équivalences ne font des lignées distinctes : aucune n'est traitée en homonyme."
+      "reason": "Traoré et Tarawele sont deux graphies d'un même jamu, la première étant la graphie française ; le dictionnaire des jamuw en ajoute une troisième, Taraore, sous la même entrée. Il range en outre Sane, Mane, Ouédraogo, Dembélé, Diouf et — à Ségou — Touré parmi ses équivalences, des noms de clan d'autres peuples tenus pour le même, institution que l'Histoire générale de l'Afrique décrit de son côté en notant qu'un Traoré installé en pays wolof peut prendre le nom Diop. Ni les graphies ni les équivalences ne font des lignées distinctes : aucune n'est traitée en homonyme."
     }
   ]
 }

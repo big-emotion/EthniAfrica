@@ -2405,6 +2405,11 @@ export const SOURCE_STANDINGS: ReadonlySet<string> = new Set([
  * single row whose URL was whichever country loaded last, so a reader
  * following the citation landed on another country's page.
  */
+const UNVERIFIED_ONLY_SOURCE_KINDS: ReadonlySet<string> = new Set([
+  "oral_tradition",
+  "ethniafrica_synthesis",
+]);
+
 export function checkSourceIdentity(datasetRoot: string): ValidationResult {
   const errors: string[] = [];
   const locatorsByTitle = new Map<string, Map<string, string[]>>();
@@ -2432,6 +2437,22 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
             errors.push(
               `${fiche}: source "${title}" declares standing "${String(tier)}", ` +
                 `which is not one of ${[...SOURCE_STANDINGS].join(", ")}`
+            );
+          }
+
+          // Mirrors sources_new_kind_tier_check (migration 089). Unchecked
+          // here, a "referenced" oral_tradition source passed every PR gate
+          // and was then refused by both database syncs (PAT_CAMARA,
+          // PAT_KONATE, 2026-10-06). A published edition of an oral account
+          // is "academic"; the oral kinds are for accounts held as such.
+          if (
+            UNVERIFIED_ONLY_SOURCE_KINDS.has(String(kind)) &&
+            tier !== "unverified"
+          ) {
+            errors.push(
+              `${fiche}: source "${title}" of kind "${String(kind)}" must be unverified, ` +
+                `not "${String(tier)}" — the database refuses any other standing ` +
+                `(sources_new_kind_tier_check); a published edition is kind "academic"`
             );
           }
 
@@ -4026,6 +4047,9 @@ function collectNameRecordFiles(
 function nameRecordIssueRuleId(issuePath: string): string {
   if (issuePath.includes("languageOfOrigin")) return "FR55-iso";
   if (issuePath.includes("whyProblematic")) return "FR56-imposed";
+  if (issuePath.includes("attestations")) return "FR58-attestation";
+  if (/shortLine|namedBy|originDebated|usedIn|pronunciation/.test(issuePath))
+    return "FR59-answer";
   return "NAME-MODEL";
 }
 
@@ -4788,7 +4812,7 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // every fiche that omits them.
   // 7041 -> 7025 on 2026-09-29: spelling aliases and missing appellation keys
   // filled on the most-searched peoples, each one a key the model declares.
-  peuple: 7025,
+  peuple: 7006,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
@@ -5268,17 +5292,10 @@ export function checkTranslationSidecars(
  * bands and the source-standing rules are not listed here: since DEC-055 they
  * emit warnings themselves, next to findings in the same check that still fail.
  *
- * FR27-references is advisory for the same reason FR28 once was: measured on
- * 2026-09-05, the corpus already carried 43 references to ids that have no
- * fiche — placeholders such as PPL_AUTRES_GROUPES that the percentage sums
- * rely on, truncated ids such as PPL_MO, and family lists naming peoples never
- * written. Retired ids are not in that tail: FR27 Retired identifiers stays a
- * hard error, so a merge or rename cannot leave a link behind.
-
- *
- * FR28-declared was advisory for exactly one fiche — MDG, the only country of
- * the 54 that had never declared an ethnic split. It left this set with that
- * fiche, as announced, and is a hard error since.
+ * FR27-references is not listed: an id that names no fiche and has no retired
+ * successor is a hard error, so a merge or rename cannot leave a link behind.
+ * FR28-declared is not listed either — it emits a warning for a country that
+ * declares no ethnic split and has no failing branch to soften.
  */
 export const SOFT_CHECK_NAMES: ReadonlySet<string> = new Set([
   "FR52-coverage People-to-language coverage",

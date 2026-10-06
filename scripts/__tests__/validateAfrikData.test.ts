@@ -1859,6 +1859,56 @@ describe("validateAfrikData – new integrity checks", () => {
         errors: [],
       });
     });
+
+    // @req REQ-092
+    it("refuses an oral-tradition source tiered above unverified, as sources_new_kind_tier_check does", () => {
+      writePPL(
+        tmpDir,
+        "FLG_BANTU",
+        "PPL_ZULU",
+        cite({
+          title: "Praise poem of the Zulu kings, as recited in Ulundi",
+          tier: "referenced",
+          source_kind: "oral_tradition",
+        })
+      );
+
+      const result = checkSourceIdentity(tmpDir);
+
+      expect(result.ok).toBe(false);
+      expect(result.errors).toContainEqual(
+        expect.stringContaining('kind "oral_tradition" must be unverified')
+      );
+    });
+
+    // @req REQ-092
+    it("accepts an oral-tradition or synthesis source tiered unverified", () => {
+      writePPL(
+        tmpDir,
+        "FLG_BANTU",
+        "PPL_ZULU",
+        cite({
+          title: "Praise poem of the Zulu kings, as recited in Ulundi",
+          tier: "unverified",
+          source_kind: "oral_tradition",
+        })
+      );
+      writePPL(
+        tmpDir,
+        "FLG_BANTU",
+        "PPL_SOTHO",
+        cite({
+          title: "EthniAfrica synthesis of the Sotho names",
+          tier: "unverified",
+          source_kind: "ethniafrica_synthesis",
+        })
+      );
+
+      expect(checkSourceIdentity(tmpDir)).toMatchObject({
+        ok: true,
+        errors: [],
+      });
+    });
   });
 
   describe("checkAuthorizedSourceTiers", () => {

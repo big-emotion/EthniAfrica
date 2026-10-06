@@ -12,6 +12,16 @@ this format got it wrong once:
 - a caption is **two to four words**, coloured by who speaks. A paragraph under a
   reel is unreadable at phone size, and a one-word orphan flashes by like a glitch;
 - a phrase never straddles a cut — its output time would be a lie;
+- a source that is a screen recording shows a player's chrome for a while: a
+  `reframes` window keeps only the rectangle that is the picture, for that stretch
+  of source time, instead of dropping the words spoken under the chrome;
+- a plan may carry a `banner`: one complete sentence above the picture for its first
+  `duration` seconds — the claim a debate is about, never chunked like a caption;
+- a plan may carry a `credit_line`, drawn under the frame for the whole piece. A
+  credit is information the operator may only partly have, so it never refuses;
+- speakers 0 and 1 are the two people exchanging; speaker 2 is a **host** (a moderator,
+  an announcer) in a neutral ink, so that their line is captioned without being
+  attributed to either side;
 - a cover title is **eight words at most and its last words carry the accent**
   (GABARITS-SOCIAL §1 ter): the punchline is the ending, and the copy yields when
   it does not fit, the type never shrinks.
@@ -40,10 +50,28 @@ FRAME_CENTRE_Y = 640
 CAPTION_BAND_Y = 1150
 CAPTION_BAND_HEIGHT = 300
 WATERMARK_Y = 1620
+BANNER_Y = 70             # the banner sits in the blurred ground above the frame box (which starts at y = 320)
+BANNER_HEIGHT = 240
+BANNER_FONT_PX = 50
+BANNER_LINE_PX = 60
+CREDIT_Y = 975            # the credit sits just under the frame box (which ends at y = 960), like a TV synthé
+CREDIT_HEIGHT = 110
+CREDIT_FONT_PX = 36
+CREDIT_LINE_PX = 46
 FPS = 30
+HOST = 2
+LAYOUTS = ("frame", "fill", "auto")
+PORTRAIT_BOX_TOP = 60        # under `auto`, a vertical source is contained in 1080 x 1500 from here
+PORTRAIT_BOX_HEIGHT = 1500
 
 
 # ---------------------------------------------------------------- captions
+
+def speaker_ink(speaker):
+    """White for speaker 0, project gold for 1, neutral grey for the host (2)."""
+    import ethni_brand
+    return {0: (255, 255, 255), 1: ethni_brand.GOLD_INK, HOST: (176, 176, 176)}[speaker]
+
 
 def chunk_words(text, max_words=MAX_CAPTION_WORDS):
     """Split a translated phrase into balanced captions of at most `max_words`.
@@ -112,6 +140,27 @@ class Timeline:
         return None
 
 
+def video_pieces(clip, reframes):
+    """A clip's video as (start, end, window or None) pieces, split at each reframe window.
+
+    Only the picture is split: the audio of a clip stays one stretch, so a reframe
+    landing mid-word never puts a fade inside the word.
+    """
+    start, end = float(clip[0]), float(clip[1])
+    pieces, cursor = [], start
+    for window in sorted(reframes, key=lambda w: w["start"]):
+        a, b = max(float(window["start"]), start), min(float(window["end"]), end)
+        if a >= b:
+            continue
+        if a > cursor:
+            pieces.append((cursor, a, None))
+        pieces.append((a, b, window))
+        cursor = b
+    if cursor < end:
+        pieces.append((cursor, end, None))
+    return pieces
+
+
 # -------------------------------------------------------------- validation
 
 def _word_count(text):
@@ -131,32 +180,67 @@ def validate_plan(plan):
         if len(clip) != 2 or not clip[0] < clip[1]:
             errors.append(f"clips[{index}]: needs [start, end] with start < end")
     if all(len(c) == 2 for c in clips):
-        for before, after in zip(clips, clips[1:]):
+        # Clips play in the order listed, which may differ from the source's; only an
+        # overlap is refused, because one source instant would then sit at two output times.
+        ordered = sorted(clips)
+        for before, after in zip(ordered, ordered[1:]):
             if after[0] < before[1]:
-                errors.append("clips: overlap or are out of order — list them in source order")
+                errors.append("clips: two of them overlap — one source instant has one place in the cut")
     if errors:
         return errors
 
     timeline = Timeline(clips)
-    previous_start = -1.0
+    previous_out = -1.0
     for index, phrase in enumerate(plan.get("phrases") or []):
         label = f"phrases[{index}]"
-        if phrase.get("speaker") not in (0, 1):
-            errors.append(f"{label}: speaker must be 0 or 1 — only two inks exist")
+        if phrase.get("speaker") not in (0, 1, HOST):
+            errors.append(f"{label}: speaker must be 0 or 1 (the two voices) or 2 (the host) — only three inks exist")
         if not str(phrase.get("fr", "")).strip():
             errors.append(f"{label}: fr is empty")
         start, end = phrase.get("start"), phrase.get("end")
         if start is None or end is None or not start < end:
             errors.append(f"{label}: needs start < end")
             continue
-        if start < previous_start:
-            errors.append(f"{label}: out of order — phrases follow the source")
-        previous_start = start
         first, last = timeline.clip_of(start), timeline.clip_of(end)
         if first is None or last is None:
             errors.append(f"{label}: {start}-{end}s is outside every clip")
-        elif first != last:
+            continue
+        played_at = timeline.to_out(start)
+        if played_at < previous_out:
+            errors.append(f"{label}: out of order — phrases follow the order the clips are played")
+        previous_out = played_at
+        if first != last:
             errors.append(f"{label}: straddles two clips — split it at the cut")
+
+    banner = plan.get("banner")
+    if banner is not None:
+        if not str(banner.get("text", "")).strip():
+            errors.append("banner.text: the sentence is missing")
+        duration = banner.get("duration", 0)
+        if not 0 < duration <= timeline.total:
+            errors.append(f"banner.duration: {duration}s must be above zero and within the {timeline.total:.1f}s reel")
+
+    reframes = plan.get("reframes") or []
+    for index, window in enumerate(reframes):
+        rect = window.get("rect")
+        if rect is None and window.get("still_at") is None:
+            errors.append(f"reframes[{index}]: needs a rect, a still_at, or both")
+        elif rect is not None and not (isinstance(rect, list) and len(rect) == 4 and rect[0] >= 0
+                                       and rect[1] >= 0 and rect[2] > 0 and rect[3] > 0):
+            errors.append(f"reframes[{index}]: rect needs [x, y, width, height], sizes above zero")
+        if not window.get("start", 0) < window.get("end", 0):
+            errors.append(f"reframes[{index}]: needs start < end")
+    ordered = sorted(reframes, key=lambda w: w.get("start", 0))
+    for before, after in zip(ordered, ordered[1:]):
+        if after.get("start", 0) < before.get("end", 0):
+            errors.append("reframes: two windows overlap — one instant has one frame")
+
+    if plan.get("layout", "frame") not in LAYOUTS:
+        errors.append(f"layout: {plan.get('layout')!r} is neither 'frame' (the picture over its own blur) "
+                      f"nor 'fill' (the picture covers the screen)")
+    focus = plan.get("focus_x")
+    if focus is not None and not (isinstance(focus, (int, float)) and 0 <= focus <= 1):
+        errors.append(f"focus_x: {focus!r} must run from 0 (keep the left) to 1 (keep the right)")
 
     cover = plan.get("thumbnail")
     if cover is not None:
@@ -198,6 +282,14 @@ def _has_audio(source):
     return bool(probe.stdout.strip())
 
 
+def _frame_size(source):
+    out = subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
+         "-of", "csv=p=0", str(source)], check=True, capture_output=True, text=True).stdout
+    width, height = out.strip().split(",")[:2]
+    return int(width), int(height)
+
+
 def _blurred_ground(frame):
     """The source frame, blown up to fill 1080 x 1920, blurred and darkened."""
     from PIL import Image, ImageEnhance, ImageFilter
@@ -213,8 +305,73 @@ def _contain(frame):
     return frame.resize((round(frame.width * scale), round(frame.height * scale)), Image.Resampling.LANCZOS)
 
 
-def render_reel(plan, out_path):
-    """Cut, frame, caption and sign the video. Writes only outside a git checkout."""
+def wrap_banner(sentence, measure, max_width):
+    """The banner sentence cut into lines no wider than `max_width`, French marks glued to their word.
+
+    Same trap as `chunk_words`: the space inside « » and before ? ! : ; is made
+    non-breaking first, or a line can open on a lone » .
+    """
+    text = re.sub(r"«[ \t]+", "«" + NBSP, sentence.strip())
+    text = re.sub(r"[ \t]+(»|[?!:;])", NBSP + r"\1", text)
+    rows, row = [], ""
+    for word in re.split(r"[ \t]+", text):
+        trial = f"{row} {word}".strip()
+        if row and measure(trial) > max_width:
+            rows.append(row)
+            row = word
+        else:
+            row = trial
+    rows.append(row)
+    return rows
+
+
+def _banner_band(sentence, font):
+    """The banner sentence wrapped to the reel's width, centred, on a transparent band."""
+    from PIL import Image, ImageDraw
+    band = Image.new("RGBA", (WIDTH, BANNER_HEIGHT), (0, 0, 0, 0))
+    pen = ImageDraw.Draw(band)
+    rows = wrap_banner(sentence, lambda text: pen.textlength(text, font=font), WIDTH - 120)
+    if len(rows) * BANNER_LINE_PX > BANNER_HEIGHT:
+        raise ValueError(f"banner is {len(rows)} lines at {BANNER_FONT_PX}px — shorten the sentence, the type does not shrink")
+    y = (BANNER_HEIGHT - len(rows) * BANNER_LINE_PX) // 2
+    for row in rows:
+        x = (WIDTH - pen.textlength(row, font=font)) / 2
+        pen.text((x, y), row, font=font, fill=(255, 255, 255), stroke_width=6, stroke_fill="black")
+        y += BANNER_LINE_PX
+    return band
+
+
+def _credit_band(credit, font):
+    """The credit line, left-aligned under the frame, on a transparent band.
+
+    A credit is information the operator may only partly have, so it never refuses:
+    past two lines the end is elided rather than the plan rejected.
+    """
+    from PIL import Image, ImageDraw
+    band = Image.new("RGBA", (WIDTH, CREDIT_HEIGHT), (0, 0, 0, 0))
+    pen = ImageDraw.Draw(band)
+    max_width = WIDTH - 120
+    rows = wrap_banner(credit, lambda text: pen.textlength(text, font=font), max_width)
+    if len(rows) > 2:
+        rows = rows[:2]
+        while pen.textlength(rows[1] + " …", font=font) > max_width and " " in rows[1]:
+            rows[1] = rows[1].rsplit(" ", 1)[0]
+        rows[1] += " …"
+    y = (CREDIT_HEIGHT - len(rows) * CREDIT_LINE_PX) // 2
+    for row in rows:
+        pen.text((60, y), row, font=font, fill=(255, 255, 255), stroke_width=4, stroke_fill="black")
+        y += CREDIT_LINE_PX
+    return band
+
+
+def render_reel(plan, out_path, watermark=True):
+    """Cut, frame, caption and sign the video. Writes only outside a git checkout.
+
+    `watermark=False` leaves the mark off, for a piece that is chained into a longer
+    video which carries one mark of its own — a mark drawn per piece would scroll
+    away with every transition. A plan's optional `credit_line` is drawn under the
+    frame for the whole piece.
+    """
     _checked(plan)
     if not _has_audio(plan["source"]):
         raise ValueError(f"{plan['source']} has no audio track — a reel made of a talking exchange needs one")
@@ -225,25 +382,59 @@ def render_reel(plan, out_path):
     with tempfile.TemporaryDirectory() as work:
         work = pathlib.Path(work)
         fade, clips = 0.02, plan["clips"]
+        reframes = plan.get("reframes") or []
+        width, height = _frame_size(plan["source"]) if reframes else (None, None)
         graph = []
         for i, (start, end) in enumerate(clips):
-            graph.append(f"[0:v]trim={start}:{end},setpts=PTS-STARTPTS,fps={FPS}[v{i}]")
+            pieces = video_pieces([start, end], reframes)
+            for j, (a, b, window) in enumerate(pieces):
+                window = window or {}
+                if window.get("still_at") is not None:
+                    # One clean frame held for the window's length; the audio keeps running under it.
+                    held = float(window["still_at"])
+                    head = (f"[0:v]trim={held}:{held + 0.1},setpts=PTS-STARTPTS,fps={FPS},"
+                            f"tpad=stop_mode=clone:stop_duration={b - a},trim=duration={b - a}")
+                else:
+                    head = f"[0:v]trim={a}:{b},setpts=PTS-STARTPTS,fps={FPS}"
+                rect = window.get("rect")
+                crop = f",crop={rect[2]}:{rect[3]}:{rect[0]}:{rect[1]}" if rect else ""
+                # Every piece is brought back to the source size, or concat refuses the join.
+                size = f",scale={width}:{height},setsar=1" if reframes else ""
+                graph.append(f"{head}{crop}{size}[v{i}p{j}]")
+            parts = "".join(f"[v{i}p{j}]" for j in range(len(pieces)))
+            graph.append(f"{parts}concat=n={len(pieces)}:v=1:a=0[v{i}]")
             graph.append(f"[0:a]atrim={start}:{end},asetpts=PTS-STARTPTS,"
                          f"afade=t=in:d={fade},afade=t=out:st={end - start - fade}:d={fade}[a{i}]")
         joined = "".join(f"[v{i}][a{i}]" for i in range(len(clips)))
         graph.append(f"{joined}concat=n={len(clips)}:v=1:a=1[cv][ca]")
-        graph.append(
-            f"[cv]split[bg][fg];[bg]scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=increase,"
-            f"crop={WIDTH}:{HEIGHT},boxblur=30:5,eq=brightness=-0.15[b];"
-            f"[fg]scale={WIDTH}:{FRAME_BOX_HEIGHT}:force_original_aspect_ratio=decrease[f];"
-            f"[b][f]overlay=(W-w)/2:{FRAME_CENTRE_Y}-h/2,format=yuv420p[out]")
+        layout = plan.get("layout", "frame")
+        # `auto` never crops: a wide source keeps the full-width box it already fills,
+        # a vertical one (a Reel, a Short) gets a box the height of the screen instead of
+        # being shrunk to 360 px wide inside the 640 px box.
+        box_height, box_centre = FRAME_BOX_HEIGHT, FRAME_CENTRE_Y
+        if layout == "auto":
+            source_width, source_height = (width, height) if reframes else _frame_size(plan["source"])
+            if source_width < source_height:
+                box_height, box_centre = PORTRAIT_BOX_HEIGHT, PORTRAIT_BOX_TOP + PORTRAIT_BOX_HEIGHT // 2
+        if layout == "fill":
+            # The picture covers the whole screen: a wide source loses its sides, and
+            # `focus_x` says which part stays (0 the left edge, 1 the right edge).
+            focus = float(plan.get("focus_x", 0.5))
+            graph.append(
+                f"[cv]scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=increase,"
+                f"crop={WIDTH}:{HEIGHT}:(iw-{WIDTH})*{focus}:(ih-{HEIGHT})/2,setsar=1,format=yuv420p[out]")
+        else:
+            graph.append(
+                f"[cv]split[bg][fg];[bg]scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=increase,"
+                f"crop={WIDTH}:{HEIGHT},boxblur=30:5,eq=brightness=-0.15[b];"
+                f"[fg]scale={WIDTH}:{box_height}:force_original_aspect_ratio=decrease[f];"
+                f"[b][f]overlay=(W-w)/2:{box_centre}-h/2,format=yuv420p[out]")
         base = work / "base.mp4"
         _run(["ffmpeg", "-y", "-v", "error", "-i", str(plan["source"]), "-filter_complex", ";".join(graph),
               "-map", "[out]", "-map", "[ca]", "-c:v", "libx264", "-crf", "18", "-preset", "medium",
               "-c:a", "aac", "-b:a", "192k", str(base)])
 
         font = ImageFont.truetype(str(HARNESS / "fonts" / "Montserrat-ExtraBold.ttf"), 70)
-        inks = {0: (255, 255, 255), 1: ethni_brand.GOLD_INK}
         entries, cursor, lines = [], 0.0, []
         blank = work / "blank.png"
         Image.new("RGBA", (WIDTH, CAPTION_BAND_HEIGHT), (0, 0, 0, 0)).save(blank)
@@ -258,7 +449,7 @@ def render_reel(plan, out_path):
             y = (CAPTION_BAND_HEIGHT - len(rows) * 88) // 2
             for row in rows:
                 x = (WIDTH - pen.textlength(row, font=font)) / 2
-                pen.text((x, y), row, font=font, fill=inks[caption["speaker"]], stroke_width=7, stroke_fill="black")
+                pen.text((x, y), row, font=font, fill=speaker_ink(caption["speaker"]), stroke_width=7, stroke_fill="black")
                 y += 88
             png = work / f"caption_{n}.png"
             band.save(png)
@@ -275,13 +466,35 @@ def render_reel(plan, out_path):
         _run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(work / "captions.txt"),
               "-vf", f"fps={FPS},format=argb", "-c:v", "qtrle", str(captions_video)])
 
-        mark = ethni_brand.filigrane(ethni_brand.FILIGRANE_PX, (255, 255, 255))
-        mark_png = work / "mark.png"
-        mark.save(mark_png)
         out.parent.mkdir(parents=True, exist_ok=True)
-        _run(["ffmpeg", "-y", "-v", "error", "-i", str(base), "-i", str(captions_video), "-i", str(mark_png),
-              "-filter_complex", f"[0:v][1:v]overlay=0:{CAPTION_BAND_Y}[s];[s][2:v]overlay=(W-w)/2:{WATERMARK_Y}[o]",
-              "-map", "[o]", "-map", "0:a", "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p",
+        inputs = ["-i", str(base), "-i", str(captions_video)]
+        steps = [f"[0:v][1:v]overlay=0:{CAPTION_BAND_Y}"]
+
+        def lay(png, position):
+            inputs.extend(["-i", str(png)])
+            steps.append(f"[{len(inputs) // 2 - 1}:v]overlay={position}")
+
+        if watermark:
+            mark_png = work / "mark.png"
+            ethni_brand.filigrane(ethni_brand.FILIGRANE_PX, (255, 255, 255)).save(mark_png)
+            lay(mark_png, f"(W-w)/2:{WATERMARK_Y}")
+        if plan.get("credit_line"):
+            credit_png = work / "credit.png"
+            _credit_band(plan["credit_line"], ImageFont.truetype(str(HARNESS / "fonts" / "NotoSans-Bold.ttf"),
+                                                                 CREDIT_FONT_PX)).save(credit_png)
+            lay(credit_png, f"0:{CREDIT_Y}")
+        banner = plan.get("banner")
+        if banner:
+            banner_png = work / "banner.png"
+            _banner_band(banner["text"], ImageFont.truetype(str(HARNESS / "fonts" / "Montserrat-ExtraBold.ttf"),
+                                                            BANNER_FONT_PX)).save(banner_png)
+            lay(banner_png, f"0:{BANNER_Y}:enable='lt(t,{banner['duration']})'")
+        # Each overlay reads the previous step's output; the first reads the two inputs.
+        stack = steps[0] + "[s0]"
+        for n, step in enumerate(steps[1:], start=1):
+            stack += f";[s{n - 1}]{step}[s{n}]"
+        _run(["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", stack,
+              "-map", f"[s{len(steps) - 1}]", "-map", "0:a", "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p",
               "-c:a", "copy", "-shortest", str(out)])
     return out
 

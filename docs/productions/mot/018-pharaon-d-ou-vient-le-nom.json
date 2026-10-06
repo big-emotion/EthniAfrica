@@ -1,0 +1,43 @@
+{
+  "campaign": "pharaon-d-ou-vient-le-nom",
+  "typologie": "mot",
+  "episode": 18,
+  "question": {
+    "fr": "D'où vient le nom pharaon ?"
+  },
+  "myth": {
+    "fr": "Pharaon était-il un nom adopté en devenant roi ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "word": {
+    "label": { "fr": "pharaon", "en": "pharaoh" },
+    "queries": ["pharaon", "pharaons"]
+  },
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7692366804777274646",
+      "publishedAt": "2026-10-03"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/DeBtgAUiOYp/",
+      "publishedAt": "2026-10-03"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Trésor de la langue française informatisé (TLFi), « pharaon », étymologie et histoire",
+      "url": "https://www.cnrtl.fr/etymologie/pharaon",
+      "tier": "referenced"
+    },
+    {
+      "title": "Flavius Josèphe, Antiquités juives VIII, 156 (traduction de William Whiston)",
+      "url": "https://lexundria.com/j_aj/8.156/wst",
+      "tier": "referenced"
+    }
+  ]
+}

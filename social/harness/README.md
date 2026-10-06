@@ -30,6 +30,9 @@ execution model, renderer and operator. Use `--scene-plan` through
 `ethni_montage.py`; `--validate-only` and `--previews-only` check a plan before
 encoding. V1 exports remain watermarked proofs; carousels are unchanged.
 
+A caller with no workshop access renders any brand kit through the headless
+[render CLI](RENDER-CLI.md): `render_cli.py --kind carousel|image|reel`.
+
 ## Experimental animated-map proofs
 
 `python3 ethni_montage.py <subject> --map-proof <storyboard.json>` renders a

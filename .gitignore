@@ -87,6 +87,7 @@ build
 !.claude/agents/ethniafrica-production.md
 !.claude/agents/ethniafrica-video-planner.md
 !.claude/agents/ethniafrica-video-executor.md
+!.claude/agents/name-record-contradictor.md
 !.claude/skills/ethniafrica-reseaux-help/
 !.claude/skills/ethniafrica-structure/
 !.claude/skills/ethniafrica-experience-optimizer/
@@ -95,6 +96,7 @@ build
 !.claude/skills/ethniafrica-ticket/
 !.claude/skills/ethniafrica-featured-campaigns/
 !.claude/skills/ethniafrica-clip-reel/
+!.claude/skills/ethniafrica-koulechov/
 .entire/
 
 # Editor directories and files
@@ -151,6 +153,7 @@ dataset/source/afrik/logs/
 !.codex/agents/ethniafrica-production.toml
 !.codex/agents/ethniafrica-video-planner.toml
 !.codex/agents/ethniafrica-video-executor.toml
+!.codex/agents/name-record-contradictor.toml
 # Media renders and agent scratch produced in the checkout, never project
 # source. The approved media library lives outside the repository.
 output/
@@ -165,3 +168,6 @@ Claude outputs/
 skills-lock.json
 .env*
 !.env.example
+
+# UNESCO reference PDFs: not redistributable, ~400 MB — see docs/sources/unesco/README.md
+docs/sources/unesco/pdf/
