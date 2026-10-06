@@ -28,13 +28,13 @@ const FORBIDDEN_TEXT =
 
 const MATRIX = Object.keys(baseline.heights);
 
-// These two live-corpus routes exceed the historic v4.8.0 document-height
-// budget while still passing every structural parity assertion. Keep their
-// original 75% threshold as explicit expected debt: an unexpected pass turns
-// the suite red and tells us to remove the quarantine.
+// This live-corpus route exceeds the historic v4.8.0 document-height budget
+// while still passing every structural parity assertion. Keep its original 75%
+// threshold as explicit expected debt: an unexpected pass turns the suite red
+// and tells us to remove the quarantine. PPL_OVAMBO left it on 2026-10-06, once
+// the answer-card fiche (#1486) brought it under budget.
 const HEIGHT_DEBT: readonly string[] = [
   getCountryRoute(LOCALE, "EGY"),
-  getPeopleRoute(LOCALE, "PPL_OVAMBO"),
 ] as const;
 
 function corpusIds(directory: string, pattern: RegExp): string[] {
