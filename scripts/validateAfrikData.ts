@@ -2405,6 +2405,11 @@ export const SOURCE_STANDINGS: ReadonlySet<string> = new Set([
  * single row whose URL was whichever country loaded last, so a reader
  * following the citation landed on another country's page.
  */
+const UNVERIFIED_ONLY_SOURCE_KINDS: ReadonlySet<string> = new Set([
+  "oral_tradition",
+  "ethniafrica_synthesis",
+]);
+
 export function checkSourceIdentity(datasetRoot: string): ValidationResult {
   const errors: string[] = [];
   const locatorsByTitle = new Map<string, Map<string, string[]>>();
@@ -2432,6 +2437,22 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
             errors.push(
               `${fiche}: source "${title}" declares standing "${String(tier)}", ` +
                 `which is not one of ${[...SOURCE_STANDINGS].join(", ")}`
+            );
+          }
+
+          // Mirrors sources_new_kind_tier_check (migration 089). Unchecked
+          // here, a "referenced" oral_tradition source passed every PR gate
+          // and was then refused by both database syncs (PAT_CAMARA,
+          // PAT_KONATE, 2026-10-06). A published edition of an oral account
+          // is "academic"; the oral kinds are for accounts held as such.
+          if (
+            UNVERIFIED_ONLY_SOURCE_KINDS.has(String(kind)) &&
+            tier !== "unverified"
+          ) {
+            errors.push(
+              `${fiche}: source "${title}" of kind "${String(kind)}" must be unverified, ` +
+                `not "${String(tier)}" — the database refuses any other standing ` +
+                `(sources_new_kind_tier_check); a published edition is kind "academic"`
             );
           }
 
