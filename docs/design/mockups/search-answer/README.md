@@ -18,10 +18,10 @@ of these mockups, so a rendering test and a mockup say the same words.
 | `Main.dc.html`        | home                | The home with the search field, the entry to the answer page.                               |
 | `Peul.dc.html`        | `peul`              | A people with several names: the full answer, "Tout" tab, six blocks.                       |
 | `Peul-Shorts.dc.html` | `peul`, Shorts tab  | The same query with a media filter active, showing that tabs filter under the field.        |
-| `Lingala.dc.html`     | `lingala`           | A language: geography as a declared speaker estimate in millions, not a sum of peoples.     |
+| `Lingala.dc.html` | `lingala` | A language with a debated origin (two readings side by side) and geography as a declared speaker estimate in millions, not a sum of peoples. |
 | `Bantou.dc.html`      | `bantou`            | A family treated as a myth to undo, in a light tone.                                        |
-| `Congo.dc.html`       | `congo`             | A country, and a debated origin: each account shown side by side before "Read more".        |
-| `Camara.dc.html`      | `camara`            | A patronyme: country pills with no figures, and a sentence saying the figures are missing.  |
+| `Congo.dc.html` | `congo` | Two countries sharing a name: former names in time, each country's peoples by share, the unsplit percentage declared. |
+| `Camara.dc.html` | `camara` | A patronyme: three accounts of the origin side by side, spellings, country pills with no figures and a sentence saying the figures are missing. |
 | `Pharaon.dc.html`     | `pharaon`           | A word whose origin is the subject, the answer reading the same six blocks.                 |
 
 `canvas.json` is the layout of the design canvas the screens were drawn on.
