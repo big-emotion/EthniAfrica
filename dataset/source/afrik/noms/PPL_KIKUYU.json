@@ -34,8 +34,17 @@
           "url": "https://mukuyu.wordpress.com/2008/11/13/origins/",
           "tier": "unverified",
           "notes": "Seule source trouvée pour la dérivation mũkũyũ (figuier) → Gĩkũyũ ; site communautaire, non une publication académique arbitrée. Aucune source officielle ou référencée n'a pu être vérifiée pour cette étymologie précise — à réviser si une meilleure source est trouvée."
+        },
+        {
+          "title": "Kikuyu (Gĩkũyũ) — Omniglot",
+          "author": "Omniglot",
+          "year": 2024,
+          "url": "https://www.omniglot.com/writing/kikuyu.htm",
+          "tier": "referenced",
+          "notes": "Page consultée en ligne : le peuple Kikuyu (Agĩkũyũ) ; la langue est aussi appelée Gikuyu, et son nom dans la langue est Gĩkũyũ."
         }
-      ]
+      ],
+      "shortLine": "Le nom du peuple dans sa propre langue ; « Kikuyu » en est une autre forme."
     },
     {
       "nameText": "Kikuyu",
@@ -56,8 +65,17 @@
           "url": "https://www.ethnologue.com/language/kik/",
           "tier": "official",
           "notes": "Ethnologue référence \"Kikuyu\" comme nom courant international de la langue, à côté de l'autonyme."
+        },
+        {
+          "title": "Kikuyu (Gĩkũyũ) — Omniglot",
+          "author": "Omniglot",
+          "year": 2024,
+          "url": "https://www.omniglot.com/writing/kikuyu.htm",
+          "tier": "referenced",
+          "notes": "Page consultée en ligne : « Kikuyu is also known as Gikuyu or Gekoyo, and the native name for the language is Gĩkũyũ »."
         }
-      ]
+      ],
+      "shortLine": "Forme sous laquelle on connaît le peuple et sa langue ; dans leur langue : Gĩkũyũ."
     }
   ]
 }
