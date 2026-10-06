@@ -648,6 +648,15 @@ The home is a compact entry into a question, not a tour of the corpus
 to contribute, then the project's purpose and source policy. Featured answers,
 stories, maps and counters no longer occupy this page.
 
+The sentence under the question promises what the answer page delivers, in
+three clauses and nothing more: « Votre nom de famille, celui d’un peuple,
+d’une langue ou d’un pays : d’où il vient, comment on l’appelle ailleurs, et où
+il vit aujourd’hui. » (2026-10-06). It names the four things a reader arrives
+with, then the three movements of the answer — origin, other names, where it
+lives — so it never lists what the corpus holds and never says « sources » or
+« histoires », which the answer shows rather than promises. It lives in
+`src/lib/i18n/copy/homeHero.ts`, French and English together.
+
 Four examples introduce surnames, languages, peoples and countries. They are
 drawn per visit and renewed on request. People examples use attested self-given
 forms, never a filed exonym as an implicit recommendation. The selection stays

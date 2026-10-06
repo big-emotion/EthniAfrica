@@ -49,7 +49,7 @@ export const homeHeroCopy: Record<Language, HomeHeroCopy> = {
     question: "Where does this name come from?",
     searchPlaceholder: "E.g. Keïta, Lingala, Fulbe, Benin",
     description:
-      "A family name, a people, a language or a place: discover the stories and the sources around it.",
+      "Your family name, or that of a people, a language or a country: where it comes from, what it is called elsewhere, and where it lives today.",
     searchLabel: "Which name are you looking for?",
     seedsIntro: "Try",
     seeds: ["Keïta", "Lingala", "Fulbe", "Benin"],
@@ -60,7 +60,7 @@ export const homeHeroCopy: Record<Language, HomeHeroCopy> = {
   fr: {
     searchPlaceholder: "Ex. : Keïta, Lingala, Fulbe, Bénin",
     description:
-      "Un nom de famille, de peuple, de langue ou de lieu : découvrez les histoires et les sources qui l’entourent.",
+      "Votre nom de famille, celui d’un peuple, d’une langue ou d’un pays : d’où il vient, comment on l’appelle ailleurs, et où il vit aujourd’hui.",
     question: "D’où vient ce nom ?",
     searchLabel: "Quel nom cherchez-vous ?",
     seedsIntro: "Essayez avec",
