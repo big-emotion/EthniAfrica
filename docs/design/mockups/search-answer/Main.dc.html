@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Accueil EthniAfrica</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&amp;family=Nunito+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#835514}a:hover{color:#2c2018}
+</style>
+</helmet>
+<div style="width: 430px; height: 932px; box-sizing: border-box; background: #fbf7f2; color: #2c2018; font-family: 'Nunito Sans', sans-serif; display: flex; flex-direction: column">
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; border-bottom: 1px solid #e8dfd3">
+    <div style="display: flex; flex-direction: column">
+      <span style="font-family: Fraunces, serif; font-weight: 900; font-size: 20px">EthniAfrica</span>
+      <span style="font-family: Fraunces, serif; font-weight: 700; font-size: 12px; color: #835514">L'Afrique à travers ses noms</span>
+    </div>
+    <button aria-label="Menu" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #e8dfd3; background: #ffffff; display: flex; align-items: center; justify-content: center">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2c2018" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line></svg>
+    </button>
+  </header>
+  <main style="padding: 40px 16px 0; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+    <h1 style="margin: 0; font-family: Fraunces, serif; font-weight: 900; font-size: 38px; line-height: 1.1">D'où vient ce nom ?</h1>
+    <p style="margin: 0; font-size: 17px; line-height: 1.55; color: #2c2018; max-width: 380px">Votre nom de famille, celui d'un peuple, d'une langue ou d'un pays : d'où il vient, comment on l'appelle ailleurs, et où il vit aujourd'hui.</p>
+    <form style="width: 100%; display: flex; flex-direction: column; gap: 10px; margin-top: 16px">
+      <label for="q" style="font-weight: 700; font-size: 15px">Quel nom cherchez-vous ?</label>
+      <div style="display: flex; align-items: center; gap: 10px; height: 52px; border: 1px solid #e8dfd3; border-radius: 14px; background: #ffffff; padding: 0 14px">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#746557" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><line x1="16.5" y1="16.5" x2="21" y2="21"></line></svg>
+        <input id="q" type="search" placeholder="Ex. : Keïta, Lingala, Fulbe, Bénin" style="flex: 1; border: 0; outline: 0; font: inherit; font-size: 16px; background: transparent; color: #2c2018">
+      </div>
+      <button type="submit" style="height: 52px; border-radius: 14px; border: 0; background: #c9821f; color: #2c2018; font: inherit; font-weight: 700; font-size: 16px">Rechercher</button>
+    </form>
+    <div style="display: flex; flex-direction: column; gap: 10px; align-items: center; margin-top: 8px">
+      <span style="font-size: 14px; color: #746557">Essayez avec</span>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center">
+        <a href="Peul.dc.html" style="padding: 10px 16px; border-radius: 999px; border: 1px solid #f1d9ae; text-decoration: none; font-size: 15px">Fulbe</a>
+        <a href="Congo.dc.html" style="padding: 10px 16px; border-radius: 999px; border: 1px solid #f1d9ae; text-decoration: none; font-size: 15px">Congo</a>
+        <a href="Lingala.dc.html" style="padding: 10px 16px; border-radius: 999px; border: 1px solid #f1d9ae; text-decoration: none; font-size: 15px">Lingala</a>
+        <a href="Bantou.dc.html" style="padding: 10px 16px; border-radius: 999px; border: 1px solid #f1d9ae; text-decoration: none; font-size: 15px">Bantou</a>
+      </div>
+    </div>
+  </main>
+  <section style="margin-top: auto; background: #f5ede0; padding: 28px 16px; display: flex; flex-direction: column; gap: 10px; text-align: center">
+    <h2 style="margin: 0; font-family: Fraunces, serif; font-weight: 700; font-size: 24px">Pourquoi EthniAfrica ?</h2>
+    <p style="margin: 0; font-size: 16px; line-height: 1.55">Beaucoup de noms africains ont été écrits par d'autres. Nous rassemblons leurs origines, leurs autres formes et leurs sources — y compris ce que nous ne savons pas encore.</p>
+    <a href="#" style="font-weight: 700; font-size: 15px">Découvrir le projet</a>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":430,"height":932}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

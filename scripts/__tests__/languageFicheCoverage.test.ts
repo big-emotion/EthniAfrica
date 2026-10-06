@@ -110,7 +110,11 @@ describe("language fiche coverage (ETNI-1508)", () => {
     const topKeys = Object.keys(model)
       .filter((key) => key !== "_meta")
       .sort();
-    const contentKeys = Object.keys(model.content).sort();
+    // Optional in the model: a fiche may omit them (page falls back to a template).
+    const optionalContentKeys = new Set(["searchAnswer", "speakers"]);
+    const requiredContent = (keys: string[]) =>
+      keys.filter((key) => !optionalContentKeys.has(key)).sort();
+    const contentKeys = requiredContent(Object.keys(model.content));
     const firstBatchCodes = new Set<string>(
       Object.values(EXPECTED_LANGUAGE_BY_FAMILY)
     );
@@ -125,9 +129,10 @@ describe("language fiche coverage (ETNI-1508)", () => {
           .sort(),
         `${file} top-level keys`
       ).toEqual(topKeys);
-      expect(Object.keys(fiche.content).sort(), `${file} content keys`).toEqual(
-        contentKeys
-      );
+      expect(
+        requiredContent(Object.keys(fiche.content)),
+        `${file} content keys`
+      ).toEqual(contentKeys);
       expect(fiche.content.sources.length, `${file} sources`).toBeGreaterThan(
         0
       );

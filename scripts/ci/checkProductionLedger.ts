@@ -33,6 +33,14 @@ import {
   getPeopleRoute,
 } from "@/lib/routing";
 
+import { violatesReaderRegister } from "@/lib/editorial/readerRegister";
+import {
+  SEARCH_ANSWER_FOLLOW_UP_MAX_LENGTH,
+  SEARCH_ANSWER_LEAD_MAX_LENGTH,
+  searchAnswerSentenceProblems,
+  type SearchAnswerSentenceProblem,
+} from "@/lib/search/answer";
+
 import { corpusIdExists, type CorpusKind } from "../lib/afrikCorpusIds";
 import {
   networkAcceptsFormat,
@@ -96,6 +104,18 @@ const ROUTE_FN_BY_KIND: Record<
   patronyme: (id) => getPatronymeRoute("fr", id),
 };
 
+type LocalizedText = { fr: string; en?: string };
+
+export interface WordAnswerRecord {
+  lead?: LocalizedText;
+  origin: Array<{
+    text: LocalizedText;
+    attribution?: "oral" | "written" | "linguistic" | "synthesis";
+  }>;
+  path?: Array<{ form: string; language: string; period?: string }>;
+  followUp?: LocalizedText;
+}
+
 export interface LedgerEntry {
   campaign: string;
   typologie: string;
@@ -115,6 +135,12 @@ export interface LedgerEntry {
    * already folded the way the search folds them.
    */
   word?: { label: { fr: string; en?: string }; queries: string[] };
+  /**
+   * What the answer page says about a published word: a lead, the accounts of
+   * its origin, the path from language to language, a follow-up question.
+   * Sources and publications are read from the rest of the record.
+   */
+  answer?: WordAnswerRecord;
   publications: Array<{
     network: string;
     format: string;
@@ -143,6 +169,7 @@ const ALLOWED_TOP_LEVEL_KEYS = new Set([
   "subjects",
   "sitePath",
   "word",
+  "answer",
   "publications",
   "poster",
   "durationSeconds",
@@ -267,6 +294,13 @@ export function validateEntry(
 
   if (record.word !== undefined) errors.push(...validateWord(record.word));
 
+  if (record.answer !== undefined) {
+    if (record.word === undefined) {
+      errors.push("answer belongs to a word piece: it needs a word");
+    }
+    errors.push(...validateAnswer(record.answer));
+  }
+
   const publications = record.publications;
   if (!Array.isArray(publications)) {
     errors.push(
@@ -349,6 +383,108 @@ function validateWord(word: unknown): string[] {
       errors.push(`word query "${query}" is listed twice`);
     }
     seen.add(query as string);
+  }
+  return errors;
+}
+
+const ANSWER_KEYS = new Set(["lead", "origin", "path", "followUp"]);
+const ANSWER_ATTRIBUTIONS = ["oral", "written", "linguistic", "synthesis"];
+
+const SENTENCE_PROBLEM_MESSAGES: Record<SearchAnswerSentenceProblem, string> = {
+  "too-long": "is over the length the answer page allows",
+  "not-a-question": 'must be a question ending with "?"',
+  register: "breaks the reader-facing register",
+  "scholarly-word": "uses a scholarly word the result page never shows",
+};
+
+function validateAnswerText(
+  label: string,
+  value: unknown,
+  sentenceField?: "lead" | "followUp"
+): string[] {
+  const text = value as LocalizedText | undefined;
+  if (!text || typeof text.fr !== "string" || !text.fr.trim()) {
+    return [`${label}.fr must be a non-empty string`];
+  }
+  const errors: string[] = [];
+  const languages: Array<["fr" | "en", unknown]> = [
+    ["fr", text.fr],
+    ["en", text.en],
+  ];
+  for (const [language, sentence] of languages) {
+    if (sentence === undefined) continue;
+    if (typeof sentence !== "string") {
+      errors.push(`${label}.${language} must be a string when present`);
+      continue;
+    }
+    const problems = sentenceField
+      ? searchAnswerSentenceProblems(sentenceField, sentence)
+      : violatesReaderRegister(sentence)
+        ? (["register"] as const)
+        : [];
+    for (const problem of problems) {
+      const limit =
+        problem === "too-long" && sentenceField === "lead"
+          ? ` (${SEARCH_ANSWER_LEAD_MAX_LENGTH} characters)`
+          : problem === "too-long"
+            ? ` (${SEARCH_ANSWER_FOLLOW_UP_MAX_LENGTH} characters)`
+            : "";
+      errors.push(
+        `${label}.${language} ${SENTENCE_PROBLEM_MESSAGES[problem]}${limit}`
+      );
+    }
+  }
+  return errors;
+}
+
+function validateAnswer(answer: unknown): string[] {
+  if (typeof answer !== "object" || answer === null || Array.isArray(answer)) {
+    return ["answer must be an object"];
+  }
+  const record = answer as Record<string, unknown>;
+  const errors: string[] = [];
+  for (const key of Object.keys(record)) {
+    if (!ANSWER_KEYS.has(key)) errors.push(`unknown field "${key}" in answer`);
+  }
+  if (record.lead !== undefined) {
+    errors.push(...validateAnswerText("answer.lead", record.lead, "lead"));
+  }
+  if (record.followUp !== undefined) {
+    errors.push(
+      ...validateAnswerText("answer.followUp", record.followUp, "followUp")
+    );
+  }
+  if (!Array.isArray(record.origin) || record.origin.length === 0) {
+    errors.push("answer.origin must list at least one account");
+  } else {
+    record.origin.forEach((account, index) => {
+      const at = `answer.origin[${index}]`;
+      errors.push(...validateAnswerText(`${at}.text`, account?.text));
+      const attribution = account?.attribution;
+      if (
+        attribution !== undefined &&
+        !ANSWER_ATTRIBUTIONS.includes(attribution)
+      ) {
+        errors.push(
+          `${at}.attribution must be one of ${ANSWER_ATTRIBUTIONS.join(", ")}`
+        );
+      }
+    });
+  }
+  if (record.path !== undefined) {
+    if (!Array.isArray(record.path)) {
+      errors.push("answer.path must be an array");
+    } else {
+      record.path.forEach((step, index) => {
+        for (const field of ["form", "language"] as const) {
+          if (typeof step?.[field] !== "string" || !step[field].trim()) {
+            errors.push(
+              `answer.path[${index}].${field} must be a non-empty string`
+            );
+          }
+        }
+      });
+    }
   }
   return errors;
 }

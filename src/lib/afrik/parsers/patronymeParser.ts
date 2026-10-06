@@ -228,6 +228,12 @@ const commonShape = {
     "other",
   ]),
   origin: patronymeOriginSchema,
+  // Length, question mark and register are held by checkSearchAnswerFields; the
+  // parser only fixes which keys may exist.
+  searchAnswer: z
+    .object({ lead: z.string().optional(), followUp: z.string().optional() })
+    .strict()
+    .optional(),
   peoples: z.array(patronymePeopleAssociationSchema),
   countries: z.array(patronymeCountryAssociationSchema),
   alliances: z.array(patronymeAllianceSchema),

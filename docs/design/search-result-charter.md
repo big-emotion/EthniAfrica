@@ -11,6 +11,11 @@ live in `docs/design/mockups/search-feed/`: ten cases, mobile and desktop, day
 and night. The external canvas is provenance for the review, not an
 implementation dependency.
 
+**The answer-first recomposition (2026-10-06) is planned in
+`docs/design/search-answer-plan.md`**, with its reference rendering frozen in
+`docs/design/mockups/search-answer/` (version 11). Until its integration lot
+lands, the forty boards and §3 ter below remain the contract that tests hold.
+
 Three authorities govern different concerns and never substitute for one
 another:
 

@@ -91,5 +91,9 @@
       "fieldPath": "<Chemin du champ non documenté>",
       "reason": "<Ce qui n'a pas été trouvé et pourquoi>"
     }
-  ]
+  ],
+  "searchAnswer": {
+    "lead": "<Facultatif. Une phrase écrite pour la page de réponse, 220 caractères au plus : ce qu'est l'entrée, dite simplement. Absente, la page utilise un modèle de phrase.>",
+    "followUp": "<Facultatif. Une question de rebond, 120 caractères au plus, qui se termine par « ? ». Absente, la page utilise un modèle de question.>"
+  }
 }

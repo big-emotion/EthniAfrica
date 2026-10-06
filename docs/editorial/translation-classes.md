@@ -124,6 +124,26 @@ classes in different places, recorded with its reason in `CLASS_EXCEPTIONS`
 consistency test refuses any other divergence, so a new one has to be argued
 there rather than slipped into a table.
 
+## The result page's own sentences and speaker estimates (2026-10-06)
+
+`content.searchAnswer.lead` and `content.searchAnswer.followUp` (top level on
+patronymes, which have no `content` block) are the two optional sentences a
+fiche writes for the answer page. Both are **translatable**: they are prose
+shown as written, and an English reader gets the English sentence or the
+copy module's template, never the French one. They are deliberately not
+`review_required`: a lead says what an entry is, and a claim about the meaning
+of a word belongs in the origin fields, which keep that class.
+
+`content.speakers.byCountry[]` (languages and families) is a declared
+estimate. `country` and `speakers` are **invariant**, the source follows the
+ordinary source entry (title, url, tier invariant; notes translatable). A
+translation never recomputes or rounds a figure.
+
+Both are optional keys: the strict-model drift ceilings and the language
+schema gate do not count their absence (`OPTIONAL_CONTENT_KEYS` in
+`scripts/validateAfrikData.ts`), because the page has a fallback for each.
+Their shape and register are held by `checkSearchAnswerFields` (REQ-178).
+
 ## The country's English name is corpus data, not a lookup
 
 `modele-pays.json` carries `nameEn` beside `nameFr`, both class 1. The first

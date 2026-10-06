@@ -30,6 +30,7 @@ const COMMON_KEYS = [
   "nameSystem",
   "origin",
   "peoples",
+  "searchAnswer",
   "sources",
   "spellings",
   "transmissionMode",
