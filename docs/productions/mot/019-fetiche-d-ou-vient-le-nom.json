@@ -12,7 +12,65 @@
   "sitePath": "/fr/about",
   "word": {
     "label": { "fr": "fétiche", "en": "fetish" },
-    "queries": ["fetiche", "fetiches", "fetichisme"]
+    "queries": [
+      "fetiche",
+      "fetiches",
+      "fetichisme",
+      "fetish",
+      "fetishes",
+      "fetishism"
+    ]
+  },
+  "answer": {
+    "lead": {
+      "fr": "« Fétiche » vient du portugais feitiço, « pratique magique », lui-même tiré du latin facticius, « fabriqué ». Il est devenu un mot de pidgin sur la côte d'Afrique de l'Ouest.",
+      "en": "« Fetish » comes from Portuguese feitiço, « magical practice », itself taken from Latin facticius, « manufactured ». It became a pidgin word on the West African coast."
+    },
+    "origin": [
+      {
+        "text": {
+          "fr": "À la fin du Moyen Âge, en portugais, feitiço désigne une pratique magique ou de sorcellerie. Le mot vient du latin facticius, « fabriqué ».",
+          "en": "In the late Middle Ages, in Portuguese, feitiço named a magical or witchcraft practice. The word comes from Latin facticius, « manufactured »."
+        },
+        "attribution": "written"
+      },
+      {
+        "text": {
+          "fr": "Une analyse de William Pietz fait naître l'idée de « fétiche » sur la côte de l'Afrique de l'Ouest, aux XVIe et XVIIe siècles : le mot y devient un mot de pidgin, fetisso, dans les échanges entre Européens et Africains.",
+          "en": "An analysis by William Pietz places the birth of the idea of the « fetish » on the West African coast, in the sixteenth and seventeenth centuries: the word became a pidgin word, fetisso, in exchanges between Europeans and Africans."
+        },
+        "attribution": "written"
+      },
+      {
+        "text": {
+          "fr": "Au XVIIIe siècle, des philosophes en font une théorie de la religion. Charles de Brosses publie Du culte des dieux fétiches en 1760.",
+          "en": "In the eighteenth century, philosophers made it a theory of religion. Charles de Brosses published Du culte des dieux fétiches in 1760."
+        },
+        "attribution": "written"
+      }
+    ],
+    "path": [
+      {
+        "form": "facticius",
+        "language": "latin"
+      },
+      {
+        "form": "feitiço",
+        "language": "portugais"
+      },
+      {
+        "form": "fetisso",
+        "language": "pidgin de la côte ouest-africaine"
+      },
+      {
+        "form": "fétiche",
+        "language": "français"
+      }
+    ],
+    "followUp": {
+      "fr": "Comment des peuples d'Afrique appellent-ils eux-mêmes ces objets ?",
+      "en": "What do African peoples themselves call these objects?"
+    }
   },
   "publications": [
     {
