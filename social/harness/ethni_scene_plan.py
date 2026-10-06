@@ -225,8 +225,9 @@ def validate_map(value, duration, assets, sources):
                     require(feature["evidence"]["status"] in ("estimate", "hypothesis"), "presence-zone must be an estimate or hypothesis")
                     text(feature.get("geometry_note"), "presence-zone.geometry_note")
             else:
-                require(feature.get("meaning") in ("journey", "migration", "language-diffusion", "name-circulation", "river"),
-                        "route.meaning must distinguish a journey, migration, language diffusion, name circulation or river")
+                require(feature.get("meaning") in ("journey", "migration", "language-diffusion", "name-circulation", "river",
+                                                   "latitude"),
+                        "route.meaning must distinguish a journey, migration, language diffusion, name circulation, river or latitude")
         if "flag_orientation" in feature:
             require("flag_stripes" in feature and feature["flag_orientation"] in ("vertical", "horizontal"),
                     "flag_orientation must be vertical or horizontal and needs flag_stripes")
