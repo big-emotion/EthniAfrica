@@ -111,7 +111,11 @@ describe("language fiche coverage (ETNI-1508)", () => {
       .filter((key) => key !== "_meta")
       .sort();
     // Optional in the model: a fiche may omit them (page falls back to a template).
-    const optionalContentKeys = new Set(["searchAnswer", "speakers"]);
+    const optionalContentKeys = new Set([
+      "searchAnswer",
+      "speakers",
+      "originDebated",
+    ]);
     const requiredContent = (keys: string[]) =>
       keys.filter((key) => !optionalContentKeys.has(key)).sort();
     const contentKeys = requiredContent(Object.keys(model.content));

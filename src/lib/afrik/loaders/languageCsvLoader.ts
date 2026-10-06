@@ -61,6 +61,8 @@ export interface LanguageRecord {
   whyProblematic?: string | null;
   peoples?: Array<{ name: string; peopleId?: string }>;
   vehicularRole?: string | null;
+  /** The fiche declares that the origin of this name is debated (`content.originDebated`). */
+  originDebated?: boolean;
   dialects?: string[];
   vitalityStatus?: {
     status: string;
