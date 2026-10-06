@@ -10,7 +10,7 @@
   "nameFr": "Bambara",
   "nameEn": "Bambara",
   "alternateNames": ["Bamana", "Bamanakan", "Bamanankan"],
-  "whyProblematic": "Les locuteurs disent bamanankan, « la langue des Bamana ». Le sens du mot « Bambara » est débattu. Une lecture y voit « incroyant » ou « infidèle », nom donné à ceux qui auraient refusé de se convertir à l'islam (Appiah et Gates, 2010, qui le datent d'après 1854). L'anthropologue Jean Bazin (1985) montre de son côté que le mot a toujours désigné des réalités floues et changeantes, tantôt flatteuses, tantôt méprisantes, surtout à l'époque coloniale. Ces lectures ne sont pas départagées ici.",
+  "whyProblematic": "Les locuteurs disent bamanankan, « la langue des Bamana ». Le sens du mot « Bambara » est débattu, et nous gardons plusieurs lectures sans en choisir une. Selon l'article de Wikipédia sur les Bambara, qui renvoie à l'Encyclopedia of Africa (Appiah et Gates, 2010), il voudrait dire « incroyant » ou « infidèle », nom reçu pour avoir refusé la conversion forcée à l'islam. L'article francophone rapporte un sens voisin, « ceux qui ont refusé de se soumettre », et un récit : les frères Niangolo et Baramangolo, fondateurs des royaumes du Kaarta et de Ségou, auraient pris le nom bamba de kulun bali, « sans pirogue », après avoir franchi le fleuve sans pirogue ; il ne cite aucune source pour ces deux points. Selon ce même article, qui résume Jean Bazin (1985), le mot a désigné des réalités floues et changeantes, tantôt flatteuses, tantôt méprisantes, surtout à l'époque coloniale.",
   "spellingAliases": [],
   "familyId": "FLG_MANDE",
   "peoples": [
@@ -55,6 +55,12 @@
         "url": "https://glottolog.org/resource/reference/id/135688",
         "tier": "referenced",
         "notes": "Conclusion rapportée par l'article « Bambaras » de Wikipédia francophone et par la notice bibliographique de Glottolog : le mot a désigné des réalités floues et changeantes, tantôt flatteuses, tantôt méprisantes. L'article lui-même n'a pas été lu."
+      },
+      {
+        "title": "Wikipédia francophone, Bambaras",
+        "url": "https://fr.wikipedia.org/wiki/Bambaras",
+        "tier": "unverified",
+        "notes": "Article lu pour le sens « ceux qui ont refusé de se soumettre » et pour le récit de Niangolo et Baramangolo (bamba, kulun bali, « sans pirogue »). L'article ne cite aucune source pour ces deux points."
       }
     ]
   },

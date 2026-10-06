@@ -10,7 +10,7 @@
   "nameFr": "Dioula",
   "nameEn": "Dyula",
   "alternateNames": ["Diula", "Djula", "Dyoula", "Jula"],
-  "whyProblematic": "Ses locuteurs disent julakan, « la langue des jula » : jula est un mot mandingue qui veut dire « commerçant » (Konaté, 2016), et kan désigne la langue. Le nom parle donc d'un métier avant de parler d'un peuple. Le lien avec Wangara, autre nom des marchands d'Afrique de l'Ouest, est débattu. Pour Fauvelle et Bazin, cités par Cissé (2025), Wangara a d'abord nommé un groupe avant de désigner une classe de négociants, et jula hérite de ce glissement. Pour Lovejoy (1978), les Wangara du Soudan central forment une diaspora marchande distincte, liée à l'empire songhay, et non à jula. Ces lectures ne sont pas départagées ici.",
+  "whyProblematic": "Julakan est le nom de la langue, et jula le mot que des locuteurs interrogés par Konaté (2016) traduisent par « commerçant ». L'origine du mot jula est débattue, et nous n'en retenons aucune. Cissé (2025) rapporte plusieurs pistes : l'arabe jawla, « tournée », ou sa forme jûl, aussi avancée par Konaté ; le malinké dyo, « régularité », proposé par Yves Person et que Cissé juge peu convaincant ; « du fond de la souche », proposé par Delafosse, que les informateurs de Tauxier démentent en disant que leur nom signifie « marchand ». Cissé cite aussi un mot malinké, jagokêla. Le lien avec Wangara est lui aussi débattu : pour Fauvelle, cité par Cissé, les Wangara ont d'abord été un groupe, puis des intermédiaires marchands connus sous d'autres noms jusqu'à celui de Dioula ; selon le résumé de Lovejoy (1978), Wangara désigne aussi, pour le Soudan central, une diaspora marchande distincte, liée à l'empire songhay. Ces lectures ne sont pas départagées ici.",
   "spellingAliases": [],
   "familyId": "FLG_MANDE",
   "peoples": [
@@ -44,7 +44,7 @@
         "title": "Chikouna Cissé, Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe–XIXe siècles), À propos 1, 2025",
         "url": "https://www.ouvroir.fr/apropos/index.php?id=100",
         "tier": "referenced",
-        "notes": "Cite François-Xavier Fauvelle et Jean Bazin sur le glissement de sens de Wangara, du nom d'un groupe vers celui d'une spécialisation professionnelle. Note aussi que kan désigne la langue en mandingue."
+        "notes": "Cite François-Xavier Fauvelle (p. 172) sur les Wangara, intermédiaires marchands connus ensuite sous d'autres noms jusqu'à Dioula. Rapporte les pistes proposées pour le mot jula : arabe jawla ou jûl (Cissé, Konaté), malinké dyo (Person), « du fond de la souche » (Delafosse, démenti par les informateurs de Tauxier). Cite le mot malinké jagokêla."
       },
       {
         "title": "Yaya Konaté, Le dioula véhiculaire : situation sociolinguistique en Côte d'Ivoire, Corela 14-1, 2016",
@@ -56,7 +56,13 @@
         "title": "Paul E. Lovejoy, The Role of the Wangara in the Economic Transformation of the Central Sudan in the Fifteenth and Sixteenth Centuries, The Journal of African History 19(2), 1978, pp. 173-193",
         "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/role-of-the-wangara-in-the-economic-transformation-of-the-central-sudan-in-the-fifteenth-and-sixteenth-centuries/1DB11290A76E4158CE5E60EB0CB0E4B9",
         "tier": "referenced",
-        "notes": "Conteste, pour le Soudan central et le pays haoussa, l'équivalence courante entre Wangara et Jula : y décrit les Wangara comme une diaspora commerciale distincte, liée à l'empire Songhaï. Résumé consulté, texte intégral non lu."
+        "notes": "Pour le Soudan central et le pays haoussa, décrit les Wangara comme une diaspora commerciale distincte, liée à l'empire Songhaï. Résumé consulté, texte intégral non lu."
+      },
+      {
+        "title": "Dictionnaire bambara et dioula An ka taa",
+        "url": "https://dictionary.ankataa.com/lexicon.php?letter=11",
+        "tier": "unverified",
+        "notes": "Compilation en ligne dérivée des dictionnaires de Bailleul, Dumestre et Vydrin. Donne jula pour le commerçant et julakan pour la langue."
       }
     ]
   },

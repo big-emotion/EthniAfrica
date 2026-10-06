@@ -10,7 +10,7 @@
   "nameFr": "Copte",
   "nameEn": "Coptic",
   "alternateNames": ["Égyptien copte"],
-  "whyProblematic": "En copte, la langue se dit ϯⲙⲉⲧⲣⲉⲙⲛ̀ⲭⲏⲙⲓ, « l'égyptien ». Le mot « copte » vient de l'arabe qubṭ ou qibṭ, lui-même tiré du grec Aiguptios, « égyptien » : il veut donc dire « égyptien » et non « chrétien ». Une autre piste le rattache à Coptos, ville de Haute-Égypte (aujourd'hui Qifṭ) ; elle est présentée comme ayant pu renforcer la forme « copte », non comme son origine.",
+  "whyProblematic": "En copte, la langue se dit timetremǹkhēmi, « l'égyptien ». Le mot « copte » vient de l'arabe qubṭ ou qibṭ, formé d'après le mot copte aiguption (bohaïrique, « égyptien ») ou kuptaion (sahidique), lui-même venu du grec Aigúptios, « égyptien ». Selon l'article de Wikipédia, il a d'abord désigné tous les Égyptiens, puis les chrétiens d'Égypte seulement, après la conquête musulmane (639-646). L'article rapporte aussi un rapprochement avec Coptos, ville de Haute-Égypte, sans dire qui l'a proposé.",
   "spellingAliases": [],
   "familyId": "FLG_AFROASIATIQUE",
   "peoples": [
@@ -40,7 +40,7 @@
         "title": "Wikipédia anglophone, Copts",
         "url": "https://en.wikipedia.org/wiki/Copts",
         "tier": "unverified",
-        "notes": "Article lu pour l'origine du mot « copte » (arabe qubṭ ou qibṭ, tiré du grec Aiguptios) et pour le rapprochement avec la ville de Coptos, que l'article dit avoir pu contribuer à fixer la forme « copte »."
+        "notes": "Article lu pour l'origine du mot « copte » (arabe qubṭ ou qibṭ, d'après le copte aiguption ou kuptaion, du grec Aiguptios), pour le changement de sens après la conquête musulmane de 639-646 et pour le rapprochement avec la ville de Coptos, que l'article rapporte sans dire qui l'a proposé."
       }
     ]
   },
