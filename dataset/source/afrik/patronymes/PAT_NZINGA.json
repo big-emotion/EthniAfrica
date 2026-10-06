@@ -11,7 +11,10 @@
     {
       "spelling": "Nzinga",
       "attestations": [
-        { "countryId": "AGO", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "AGO",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -20,7 +23,19 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [],
+    "historicalSyntheses": [
+      {
+        "claim": "Une légende explique le nom de la reine Njinga, qui régna sur le Ndongo puis sur le Matamba, par sa naissance difficile : le cordon ombilical était enroulé autour de son cou, et le verbe kimbundu kujinga veut dire « tordre, tourner ». Les enfants nés ainsi passaient pour avoir des dons spirituels. Cette explication concerne le nom personnel d'une reine ; aucune source consultée ne dit que Nzinga est un nom de clan.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["wikipedia-en-njinga"]
+      },
+      {
+        "claim": "Le même nom se trouve chez des rois du Kongo : Nzinga Nkuwu, puis son fils Nzinga Mbemba, connu aussi sous le nom d'Afonso Ier, qui lui succède en 1506. Aucune source consultée ne dit si ce nom a le même sens que celui de la reine du Ndongo.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-v-vansina"]
+      }
+    ]
   },
   "peoples": [
     {
@@ -48,13 +63,25 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "wikipedia-en-njinga",
+      "title": "Nzinga of Ndongo and Matamba — Wikipédia (version anglaise)",
+      "url": "https://en.wikipedia.org/wiki/Nzinga_of_Ndongo_and_Matamba",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Article consulté en octobre 2026 dans sa version anglaise. Il rapporte l'explication du nom comme une légende, en renvoyant pour cette phrase à un article de Anne Thériault, « Queens of Infamy: Njinga » (Longreads, 2019). Il rattache les dons spirituels des enfants nés ainsi à Linda Heywood, Njinga of Angola: Africa's Warrior Queen (Harvard University Press, 2017), p. 14. Nous n'avons consulté aucun de ces deux textes dans l'original."
+    },
+    {
+      "sourceKey": "hga-v-vansina",
+      "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 19, Le Royaume du Kongo et ses voisins",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de J. Vansina. Page imprimée : Nzinga Mbemba, connu aussi sous le nom d'Afonso Ier, succède à son père Nzinga Nkuwu en 1506 (p. 605). Le même chapitre nomme Nzinga Mbande, sœur du roi du Ndongo, baptisée Anna à Luanda, puis reine en 1626 (p. 614). Il ne donne aucun sens au nom."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -74,6 +101,15 @@
     {
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Aucune source consultée ne dit que Nzinga est un nom de clan ou de famille ; l'explication trouvée concerne le nom d'une personne, la reine Njinga."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English publication is off (French-only mode); the sidecar will be produced in the translation wave for the patronymes batch."
+    }
+  }
 }

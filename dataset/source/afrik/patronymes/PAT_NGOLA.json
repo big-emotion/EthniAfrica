@@ -11,7 +11,10 @@
     {
       "spelling": "Ngola",
       "attestations": [
-        { "countryId": "AGO", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "AGO",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -20,7 +23,19 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [],
+    "historicalSyntheses": [
+      {
+        "claim": "Le roi du Ndongo portait le titre de ngola, qui donna ensuite le mot Angola ; la colonie serait appelée Angola, du titre du roi du Ndongo. La même synthèse parle de la cour du ngola, puis du ngola représenté en 1622 et 1623, lors du traité de paix avec les Portugais, par sa sœur Nzinga Mbande. Elle ne dit pas si ngola est aussi un nom de famille.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-v-vansina"]
+      },
+      {
+        "claim": "Le titre complet était « Ngola a Kiluanje », souvent raccourci en « Ngola », d'où le nom du pays actuel, l'Angola. Cette phrase est donnée sans renvoi à une source.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["wikipedia-en-ngola-title"]
+      }
+    ]
   },
   "peoples": [
     {
@@ -48,13 +63,25 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "hga-v-vansina",
+      "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 19, Le Royaume du Kongo et ses voisins",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de J. Vansina. Pages imprimées : l'État de Ndongo, dont le roi portait le titre de ngola, qui donna ensuite le mot Angola (p. 605) ; la colonie qui serait appelée Angola, du titre du roi du Ndongo (p. 613) ; des Afro-Portugais à la cour du ngola, le massacre des Portugais de sa cour en 1579, et le ngola représenté par sa sœur Nzinga Mbande au traité de 1622-1623 (p. 614)."
+    },
+    {
+      "sourceKey": "wikipedia-en-ngola-title",
+      "title": "Ngola (title) — Wikipédia (version anglaise)",
+      "url": "https://en.wikipedia.org/wiki/Ngola_(title)",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Article consulté en octobre 2026 dans sa version anglaise. La phrase sur le titre complet et sur l'Angola n'y porte aucune note. L'article renvoie, pour la phrase qui présente le titre du roi du Ndongo, à Mark R. Lipschutz et R. Kent Rasmussen, Dictionary of African Historical Biography (University of California Press, 1989), p. 150, et à un article de Longreads de 2019 pour la reine Njinga ; nous n'avons consulté aucun de ces textes dans l'original. Il ne donne pas le sens du mot ngola."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -75,5 +102,10 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English publication is off (French-only mode); the sidecar will be produced in the translation wave for the patronymes batch."
+    }
+  }
 }
