@@ -4,6 +4,8 @@
  * ftsSearchHandler: ETNI-38 FTS handler returning the Module #0 envelope.
  */
 
+import { findWordAnswer } from "@/lib/productions/wordAnswer";
+import type { WordAnswer } from "@/lib/search/answer";
 import type { NameAnswer } from "@/lib/search/nameAnswer";
 import { findNameAnswers, suggestNameTerms } from "@/lib/search/nameAnswers";
 import { ftsSearch } from "../services/searchService";
@@ -54,6 +56,12 @@ export interface FtsSearchData {
    */
   nameAnswers: NameAnswer[];
   /**
+   * The answer to a published word (REQ-184), read from the production
+   * registry. It rides on the envelope and not on a row because the word
+   * matches no fiche: « pharaon » can come back with no result at all.
+   */
+  wordAnswers: WordAnswer[];
+  /**
    * Reviewed terms a near spelling may have meant, offered only when the search
    * found nothing. Never applied to the query: the reader chooses.
    */
@@ -100,6 +108,7 @@ function shapeSearchData(
       leads: [],
       nearNames: [],
       nameAnswers: [],
+      wordAnswers: [],
       nameSuggestions: [],
     };
   }
@@ -140,6 +149,7 @@ function shapeSearchData(
     leads: (result.leads ?? []) as object[],
     nearNames: result.nearNames ?? [],
     nameAnswers: findNameAnswers(q, language),
+    wordAnswers: findWordAnswer(q, language),
     nameSuggestions: total === 0 ? suggestNameTerms(q, language) : [],
     ...(result.matchedQuery && { matchedQuery: result.matchedQuery }),
     ...(result.widenedFrom && { widenedFrom: result.widenedFrom }),

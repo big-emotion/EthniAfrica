@@ -12,6 +12,7 @@ import { homePurposeCopy } from "@/lib/i18n/copy/homePurpose";
 import { homeStoriesCopy } from "@/lib/i18n/copy/homeStories";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
+import { wordAnswerCopy } from "@/lib/i18n/copy/wordAnswer";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { commonCopy } from "@/lib/i18n/copy/common";
 import { consentCopy } from "@/lib/i18n/copy/consent";
@@ -79,6 +80,7 @@ const en = {
   homeCorpusCounts: homeCorpusCountsCopy.en,
   nameAnswer: nameAnswerCopy.en,
   searchAnswer: searchAnswerCopy.en,
+  wordAnswer: wordAnswerCopy.en,
   searchFeed: searchFeedCopy.en,
   consent: consentCopy.en,
   compare: compareCopy.en,
@@ -137,6 +139,7 @@ const fr: UiDictionary = {
   homeCorpusCounts: homeCorpusCountsCopy.fr,
   nameAnswer: nameAnswerCopy.fr,
   searchAnswer: searchAnswerCopy.fr,
+  wordAnswer: wordAnswerCopy.fr,
   searchFeed: searchFeedCopy.fr,
   consent: consentCopy.fr,
   compare: compareCopy.fr,

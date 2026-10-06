@@ -1012,6 +1012,12 @@ const options: swaggerJsdoc.Options = {
               description:
                 "Reviewed, sourced answers to « where does this name come from? » for the searched term (REQ-178), matched on the whole term with accents and case ignored and localized by `lang`. Resolved from the term alone, so a search with no hit can still carry one. Empty for a name nobody has reviewed and for quiz-lens searches.",
             },
+            wordAnswers: {
+              type: "array",
+              items: { $ref: "#/components/schemas/WordAnswerV2" },
+              description:
+                "The answer to a published word (REQ-184), read from the production registry and matched on the whole term with accents and case ignored. Carried by the envelope and not by a row, because a word answers to no fiche and may come back with no result at all. Empty for a word nobody published and for quiz-lens searches.",
+            },
             nameSuggestions: {
               type: "array",
               items: { type: "string" },
@@ -1039,6 +1045,7 @@ const options: swaggerJsdoc.Options = {
             "leads",
             "nearNames",
             "nameAnswers",
+            "wordAnswers",
             "nameSuggestions",
           ],
         },
@@ -1089,6 +1096,103 @@ const options: swaggerJsdoc.Options = {
             },
           },
           required: ["term", "subjects", "paragraphs", "sources"],
+        },
+        WordAnswerV2: {
+          type: "object",
+          description:
+            "The answer to a published word (REQ-184), built from its record in the production registry. It follows the answer contract of the result page (`kind` is always `word`) and lists the queries that find it. A block with no data is an absent key.",
+          properties: {
+            kind: { type: "string", enum: ["word"] },
+            title: { type: "string", example: "pharaon" },
+            queries: {
+              type: "array",
+              description:
+                "The accent-free, lowercase queries the registry files for this word.",
+              items: { type: "string" },
+            },
+            what: {
+              type: "object",
+              properties: {
+                lead: {
+                  type: "string",
+                  description:
+                    "Written in the registry's `answer.lead`; absent when none was written.",
+                },
+                facts: { type: "object" },
+              },
+              required: ["facts"],
+            },
+            origin: {
+              type: "object",
+              properties: {
+                accounts: {
+                  type: "array",
+                  items: {
+                    type: "object",
+                    properties: {
+                      text: { type: "string" },
+                      attribution: {
+                        type: "string",
+                        enum: ["oral", "written", "linguistic", "synthesis"],
+                      },
+                      evidence: { type: "array", items: { type: "object" } },
+                    },
+                    required: ["text", "evidence"],
+                  },
+                },
+                debated: { type: "boolean" },
+              },
+              required: ["accounts", "debated"],
+            },
+            names: {
+              type: "array",
+              description:
+                "The word's forms, none marked as the one a people gives itself.",
+              items: {
+                type: "object",
+                properties: {
+                  form: { type: "string" },
+                  selfGiven: { type: "boolean", nullable: true },
+                },
+                required: ["form", "selfGiven"],
+              },
+            },
+            next: {
+              type: "object",
+              properties: { question: { type: "string" } },
+            },
+            path: {
+              type: "array",
+              description:
+                "The form of the word in each language it passed through.",
+              items: {
+                type: "object",
+                properties: {
+                  form: { type: "string" },
+                  language: { type: "string" },
+                  period: { type: "string" },
+                },
+                required: ["form", "language"],
+              },
+            },
+            publications: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  network: { type: "string" },
+                  url: { type: "string" },
+                },
+                required: ["network", "url"],
+              },
+            },
+            sources: {
+              type: "object",
+              properties: { count: { type: "integer" } },
+              required: ["count"],
+            },
+          },
+          required: ["kind", "title", "queries", "what", "names", "sources"],
         },
         SearchLeadV2: {
           type: "object",
