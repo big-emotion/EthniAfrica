@@ -1152,7 +1152,7 @@ const options: swaggerJsdoc.Options = {
                 type: "object",
                 properties: {
                   form: { type: "string" },
-                  selfGiven: { type: "boolean", nullable: true },
+                  selfGiven: { type: ["boolean", "null"] },
                 },
                 required: ["form", "selfGiven"],
               },
