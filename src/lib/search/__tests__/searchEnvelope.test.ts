@@ -1005,3 +1005,39 @@ describe("mapSearchCounts", () => {
     expect(mapSearchCounts(null)).toEqual(zero);
   });
 });
+
+describe("mapSearchEnvelope — answer", () => {
+  const answer = {
+    kind: "people",
+    title: "Fula",
+    what: { facts: {} },
+    names: [],
+    sources: { count: 0 },
+  };
+
+  // @req REQ-178
+  it("carries a row's answer onto its result", () => {
+    const [result] = mapSearchEnvelope({
+      data: { peoples: [{ id: "PPL_FULA", nameMain: "Fula", answer }] },
+    });
+
+    expect(result.answer).toEqual(answer);
+  });
+
+  // @req REQ-178
+  it("reads a row from an older server, or a malformed answer, as having none", () => {
+    const results = mapSearchEnvelope({
+      data: {
+        peoples: [
+          { id: "PPL_A", nameMain: "A" },
+          { id: "PPL_B", nameMain: "B", answer: { kind: "people" } },
+        ],
+      },
+    });
+
+    expect(results.map(({ answer: found }) => found)).toEqual([
+      undefined,
+      undefined,
+    ]);
+  });
+});

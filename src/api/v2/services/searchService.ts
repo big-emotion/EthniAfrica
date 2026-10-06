@@ -17,6 +17,12 @@ import {
   type SearchNamingSubjectRef,
   type SearchNamingSubjectType,
 } from "@/lib/supabase/queries/afrik/searchNaming";
+import {
+  loadSearchAnswerExtras,
+  searchAnswerKey,
+  type SearchAnswerExtrasRow,
+} from "@/lib/supabase/queries/afrik/searchAnswer";
+import { readAnswer } from "@/lib/search/answer";
 import { readNaming } from "@/lib/search/naming";
 import type { FtsSearchParams, FtsSearchResponse } from "@/types/afrik";
 
@@ -34,19 +40,26 @@ function namingRoot(type: SearchNamingSubjectType, row: NamingRow): unknown {
 function projectRows<T extends NamingRow>(
   type: SearchNamingSubjectType,
   rows: T[],
-  namingData: Awaited<ReturnType<typeof loadSearchNamingData>>
+  namingData: Awaited<ReturnType<typeof loadSearchNamingData>>,
+  answerExtras: Map<string, SearchAnswerExtrasRow>
 ): T[] {
   return rows.map((row) => {
     const data = namingData.get(searchNamingKey(type, row.id));
+    const root = namingRoot(type, row);
     return {
       ...row,
       naming: readNaming(
         type,
         row.content,
-        namingRoot(type, row),
+        root,
         data?.records ?? [],
         data?.evidence ?? []
       ),
+      answer: readAnswer(type, row.content, root, {
+        nameRecords: data?.records,
+        evidence: data?.evidence,
+        ...answerExtras.get(searchAnswerKey(type, row.id)),
+      }),
     };
   });
 }
@@ -66,14 +79,37 @@ export async function ftsSearch(
     ...result.patronymes.map(({ id }) => ({ type: "patronyme" as const, id })),
     ...result.languages.map(({ id }) => ({ type: "language" as const, id })),
   ];
-  const namingData = await loadSearchNamingData(subjects);
+  const [namingData, answerExtras] = await Promise.all([
+    loadSearchNamingData(subjects),
+    loadSearchAnswerExtras(subjects),
+  ]);
 
   return {
     ...result,
-    peoples: projectRows("people", result.peoples, namingData),
-    countries: projectRows("country", result.countries, namingData),
-    families: projectRows("languageFamily", result.families, namingData),
-    patronymes: projectRows("patronyme", result.patronymes, namingData),
-    languages: projectRows("language", result.languages, namingData),
+    peoples: projectRows("people", result.peoples, namingData, answerExtras),
+    countries: projectRows(
+      "country",
+      result.countries,
+      namingData,
+      answerExtras
+    ),
+    families: projectRows(
+      "languageFamily",
+      result.families,
+      namingData,
+      answerExtras
+    ),
+    patronymes: projectRows(
+      "patronyme",
+      result.patronymes,
+      namingData,
+      answerExtras
+    ),
+    languages: projectRows(
+      "language",
+      result.languages,
+      namingData,
+      answerExtras
+    ),
   };
 }
