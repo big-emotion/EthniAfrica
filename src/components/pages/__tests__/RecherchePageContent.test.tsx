@@ -1754,6 +1754,62 @@ describe("what the SERP reports about a search", () => {
     expect(submissions()[0][1].props).toMatchObject({ results: 0 });
   });
 
+  // The class searched tells the dashboard which kind of name readers come
+  // for; one entry answering is that entry's class.
+  // @req REQ-046
+  it("types the search by the one entry that answered", async () => {
+    mockFetch.mockResolvedValue(okJson(searchApiResponse));
+
+    await submit("Zulu");
+
+    await waitFor(() => expect(submissions()).toHaveLength(1));
+    expect(submissions()[0][1].props).toMatchObject({ type: "people" });
+  });
+
+  // @req REQ-046
+  it("types a search no entry answers to as none", async () => {
+    await submit("qqqqqq");
+
+    await waitFor(() => expect(submissions()).toHaveLength(1));
+    expect(submissions()[0][1].props).toMatchObject({ type: "none" });
+  });
+
+  // Several entities answering is a disambiguation, not a class: filing it
+  // under the first would crown one of them in the dashboard.
+  // @req REQ-046
+  it("types a search several entries answer to as multiple", async () => {
+    mockFetch.mockResolvedValue(
+      okJson({
+        data: {
+          peoples: [
+            {
+              id: "PPL_BASSA_A",
+              nameMain: "Bassa",
+              languageFamilyId: "FLG_NIGER_CONGO",
+              currentCountries: ["CMR"],
+              content: {},
+            },
+            {
+              id: "PPL_BASSA_B",
+              nameMain: "Bassa",
+              languageFamilyId: "FLG_NIGER_CONGO",
+              currentCountries: ["LBR"],
+              content: {},
+            },
+          ],
+          countries: [],
+          families: [],
+          total: 2,
+        },
+      })
+    );
+
+    await submit("Bassa");
+
+    await waitFor(() => expect(submissions()).toHaveLength(1));
+    expect(submissions()[0][1].props).toMatchObject({ type: "multiple" });
+  });
+
   // A fetch that threw is not a search that found nothing. Folding the two
   // would file network failures under the corpus's own gaps.
   // @req REQ-046

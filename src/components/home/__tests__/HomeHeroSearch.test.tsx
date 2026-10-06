@@ -216,7 +216,7 @@ describe("HomeHeroSearch", () => {
 
   // The contract the shared label held on the home now rests on the home's
   // description: it may name a kind only if the panel below can group it.
-  // It speaks in the reader's words — « nom de famille », « lieu » — so each
+  // It speaks in the reader's words — « nom de famille », « pays » — so each
   // is mapped to the group it promises. It names four of the five groups;
   // language families are left to the panel, which is allowed (naming fewer
   // promises less). Naming a sixth would promise an empty answer.
@@ -227,13 +227,13 @@ describe("HomeHeroSearch", () => {
         "nom de famille": "patronyme",
         peuple: "people",
         langue: "language",
-        lieu: "country",
+        pays: "country",
       },
       en: {
         "family name": "patronyme",
         people: "people",
         language: "language",
-        place: "country",
+        country: "country",
       },
     } as const;
     const grouped = SEARCH_RESULT_GROUPS.map((group) => group.type) as string[];

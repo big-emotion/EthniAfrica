@@ -103,6 +103,13 @@ type SearchHit = SearchResult;
  */
 type SearchStatus = "idle" | "loading" | "loaded" | "failed";
 
+// Several subjects is a disambiguation, so it is its own value rather than
+// the first subject's class: filing it under one would crown it.
+function searchedType(subjects: Array<{ type: string }>): string {
+  if (subjects.length === 0) return "none";
+  return subjects.length > 1 ? "multiple" : subjects[0].type;
+}
+
 function isAbortError(error: unknown): boolean {
   return (
     typeof error === "object" &&
@@ -231,27 +238,6 @@ export function RecherchePageContent() {
         setNameSuggestions(reviewedSuggestions);
         setCounts(lensCounts);
         setFeedPresentation(presentation);
-        // Reported here rather than from the submit handler, so a query that
-        // arrives by URL — a shared link, a bookmark — counts as the search it
-        // is. Only the modal used to report, which left every such arrival out.
-        //
-        // The count is the point: a query returning nothing is what the corpus
-        // was asked for and does not hold. The query travels with it — once,
-        // here, for a search the reader committed, never per keystroke — so the
-        // public dashboard can list what was asked. The modal stays without it:
-        // it precedes this event on the same search and would count it twice.
-        //
-        // `answered` gates it because the loader degrades every failure to an
-        // empty envelope, so a zero here is otherwise indistinguishable from
-        // an outage.
-        if (answered) {
-          const query = searchQueryProp(q);
-          trackEvent("search:submit", {
-            surface: "serp",
-            results: hits.length,
-            ...(query ? { query } : {}),
-          });
-        }
         if (!answered) {
           setStatus("failed");
           return;
@@ -271,6 +257,27 @@ export function RecherchePageContent() {
           isSearchFeedSubject
         );
         const resolvedSubjects = selected;
+        // Reported here rather than from the submit handler, so a query that
+        // arrives by URL — a shared link, a bookmark — counts as the search it
+        // is. Only the modal used to report, which left every such arrival out.
+        //
+        // The count is the point: a query returning nothing is what the corpus
+        // was asked for and does not hold. The query travels with it — once,
+        // here, for a search the reader committed, never per keystroke — so the
+        // public dashboard can list what was asked. The modal stays without it:
+        // it precedes this event on the same search and would count it twice.
+        //
+        // Only an answered search reaches this point: the loader degrades every
+        // failure to an empty envelope, so a zero is otherwise
+        // indistinguishable from an outage. It follows the subject choice
+        // because `type` is the class the reader's name resolved to.
+        const query = searchQueryProp(q);
+        trackEvent("search:submit", {
+          surface: "serp",
+          results: hits.length,
+          type: searchedType(resolvedSubjects),
+          ...(query ? { query } : {}),
+        });
         const companionSubjects = companionSubjectsForSearch(
           resolvedSubjects,
           nearMisses
