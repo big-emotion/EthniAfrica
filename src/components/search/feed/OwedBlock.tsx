@@ -39,7 +39,11 @@ export function OwedBlock({
   const copy = nameAnswerCopy[language];
 
   return (
-    <SearchFeedBlock id="owed" zone="closing">
+    <SearchFeedBlock
+      id="owed"
+      zone="closing"
+      className="max-w-[var(--afh-measure-prose)]"
+    >
       <div
         className={
           usesTwoColumns
