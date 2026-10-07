@@ -7,103 +7,9 @@
       "lead": "Les langues des Imazighen, de l'Afrique du Nord au Sahel. Amazigh est le nom que se donnent aujourd'hui ces peuples ; Berbère vient du nom arabe Barbar, d'où le mot français.",
       "followUp": "Amazigh veut-il vraiment dire « homme libre » ?"
     },
-    "speakers": {
-      "byCountry": [
-        {
-          "country": "MAR",
-          "speakers": 13800000,
-          "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Maroc (2022)",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation d'Ethnologue pour 2022, fondée sur des chiffres de 2016-2017, rapportée par Wikipédia et non vérifiée dans le volume imprimé. Les recensements marocains donnent moins : 24,8 % de la population en 2024 (9,1 millions selon Wikipédia)."
-          }
-        },
-        {
-          "country": "DZA",
-          "speakers": 4500000,
-          "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Brenzinger, Language Diversity Endangered",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation de Brenzinger (2015 dans le tableau de Wikipédia) : environ 2,5 à 3 millions pour le kabyle et 1,4 million pour le chaoui. L'estimation d'ensemble reste incertaine."
-          }
-        },
-        {
-          "country": "MLI",
-          "speakers": 798000,
-          "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Mali (2022)",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation d'Ethnologue pour 2014-2018, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé."
-          }
-        },
-        {
-          "country": "NER",
-          "speakers": 720000,
-          "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Niger (2022)",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation d'Ethnologue pour 1998, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé."
-          }
-        },
-        {
-          "country": "LBY",
-          "speakers": 285890,
-          "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Libye (2022)",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation d'Ethnologue pour 2020, rapportée par Wikipédia et non vérifiée dans le volume imprimé. Le tableau récapitulatif de Wikipédia donne 247 000 pour le seul nafusi."
-          }
-        },
-        {
-          "country": "BFA",
-          "speakers": 122000,
-          "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Burkina Faso (2022)",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation d'Ethnologue pour 2009, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé."
-          }
-        },
-        {
-          "country": "MRT",
-          "speakers": 117200,
-          "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Mauritanie (2022)",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation d'Ethnologue pour 2017-2018, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé."
-          }
-        },
-        {
-          "country": "TUN",
-          "speakers": 53100,
-          "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Tunisie (2022)",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation d'Ethnologue pour 2004, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé."
-          }
-        },
-        {
-          "country": "EGY",
-          "speakers": 20000,
-          "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Égypte (2022)",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation d'Ethnologue pour 2013, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé."
-          }
-        }
-      ]
-    },
     "decolonialHeader": {
       "selfAppellation": "Tamazight",
-      "contemporaryUsage": "Terme \"Amazigh/Imazighen\" officialisé dans les constitutions marocaine (2011, article 5) et algérienne (2016, article 4).",
+      "contemporaryUsage": "Terme \"Amazigh/Imazighen\" officialisé dans les constitutions marocaine (2011, article 5) et algérienne (2016, article 4). Au Maroc, le recensement de 2024 compte environ une personne sur quatre (24,8 % de la population) qui utilise l'une des formes de l'amazigh (tachelhit, tamazight, tarifit et autres), plus souvent à la campagne (33,3 %) qu'en ville (19,9 %). C'est une part de la population, pas un nombre de locuteurs.",
       "historicalAppellations": ["Libyque", "Numide", "Maure", "Barbar"],
       "originOfHistoricalTerm": "Ce sont les noms que d'autres ont donnés. Libyque, Numide et Maure viennent des sources grecques et latines ; selon Yves Modéran (2003), Mauri domine dans les sources officielles du IVe au VIIe siècle. Barbar est le nom arabe, et c'est de lui que vient le français berbère. Pour Modéran, il dérive du latin barbarus, non par la forme savante barbari mais par le barbar du latin parlé des villes et des campagnes romanisées, que les Arabes entendent dès leur arrivée en Ifrîkiya ; sa première attestation sûre se trouve chez Ibn al-Kalbî, dans la seconde moitié du VIIIe siècle, et des traditions remontant aux environs de 730 le mentionnent déjà.\n\nAmazigh est le nom que le peuple se donne, et son sens est moins établi qu'on ne le lit souvent. On y voit fréquemment « les hommes libres » ; Chaker (1986) rapporte que cette glose vient de Jean-Léon l'Africain puis de Stéphane Gsell, et juge qu'elle n'est « certainement pas fondée » et relève d'« une extrapolation indue ». Pour lui, Amazigh est « fondamentalement un ethnonyme et non une désignation référant à une classe ou un statut social », et il est « difficile d'établir une étymologie sûre pour cet ethnique ». Le nom est attesté dès l'Antiquité sous les formes Maxyes chez Hérodote et Mazyes chez Hécatée, puis Mazaces ou Mazices chez les auteurs latins. Chez les Touareg, amajeγ désigne bien l'aristocrate nomade : la glose vaut là, non partout. Chaker ajoute que le terme est inconnu de la culture traditionnelle de Kabylie, du Mzab et des Aurès, et que son emploi généralisé, parti de Kabylie, se diffuse vers 1945-1950 par la chanson berbéro-nationaliste.\n\nPour Berbère, Modéran (2010) écrit que les généalogistes médiévaux ont introduit un éponyme, Berr ou Berber, « fort opportunément inventé » pour expliquer le terme générique forgé par les Arabes à leur arrivée, probablement à partir du latin Barbari."
     },
@@ -188,10 +94,10 @@
         "tier": "official"
       },
       {
-        "title": "Haut-Commissariat au Plan du Maroc – Recensement Général de la Population et de l'Habitat (RGPH) 2024, note \"Les expressions linguistiques de la langue Amazighe utilisées par la population\" (23 décembre 2024) : 24,8 % de la population utilise l'amazigh au quotidien (33,3 % en milieu rural, 19,9 % en milieu urbain). ; taux appliqué à la population totale du Maroc (38 081 173 en 2024, World Bank – SP.POP.TOTL) pour estimer ~9,44 millions de locuteurs",
-        "url": "https://www.hcp.ma/file/244434/",
+        "title": "Haut-Commissariat au Plan du Maroc (2024) – Recensement Général de la Population et de l'Habitat 2024, Principaux résultats, Rabat, 17 décembre 2024, p. 19",
+        "url": "https://www.hcp.ma/file/242665/",
         "tier": "official",
-        "notes": "Haut-Commissariat au Plan du Maroc – Recensement Général de la Population et de l'Habitat (RGPH) 2024, note \"Les expressions linguistiques de la langue Amazighe utilisées par la population\" (23 décembre 2024) : 24,8 % de la population utilise l'amazigh au quotidien (33,3 % en milieu rural, 19,9 % en milieu urbain). https://www.hcp.ma/file/244434/ ; taux appliqué à la population totale du Maroc (38 081 173 en 2024, World Bank – SP.POP.TOTL) pour estimer ~9,44 millions de locuteurs. https://data.worldbank.org/indicator/SP.POP.TOTL?locations=MA"
+        "notes": "Page « Expressions linguistiques utilisées par la population (%) » : « Le quart utilise les différentes expressions linguistiques de l'Amazigh (24,8%) avec une proportion plus élevée en milieu rural (33,3%) qu'en milieu urbain (19,9%) ». La légende précise « Amazigh (Tachelhit, Tamazight, Tarifit et autres) ». C'est une part de la population, pas un nombre de locuteurs ; la page ne précise ni la tranche d'âge ni le sens exact de « utilisées »."
       },
       {
         "title": "Cohen, Marcel (1947) — Essai comparatif sur le vocabulaire et la phonétique du chamito-sémitique. Paris : Champion",
