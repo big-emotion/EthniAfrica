@@ -3,297 +3,151 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 
 import {
+  ANSWER_BLOCKS,
   FEED_BLOCKS,
-  FEED_ZONES,
-  OWED_PARTS,
   type FeedBlockId,
-  type FeedZone,
-  type OwedPartId,
-  type SearchResultState,
 } from "@/lib/search/resultGrammar";
 
-const MOCKUP_DIR = "docs/design/mockups/search-feed";
+/**
+ * The charter of the answer page, read from the frozen mockup (v11) and its
+ * generated manifest. `docs/design/mockups/search-feed/` — the ten boards of
+ * the page that stacked a dozen blocks — is replaced by this directory and no
+ * longer governs structure.
+ */
+const MOCKUP_DIR = "docs/design/mockups/search-answer";
 const MANIFEST_PATH = path.join(MOCKUP_DIR, "manifest.json");
 
-const CASES = [
-  { id: "mande", stem: "Mande" },
-  { id: "peul", stem: "Peul" },
-  { id: "fang", stem: "Fang" },
-  { id: "bassa", stem: "Bassa" },
-  { id: "ekpeye", stem: "Ekpeye" },
-  { id: "nigeria", stem: "Nigeria" },
-  { id: "lingala", stem: "Lingala" },
-  { id: "traore", stem: "Traore" },
-  { id: "introuvable", stem: "Introuvable" },
-  { id: "inconnu", stem: "Inconnu" },
+const SCREENS = [
+  "peul",
+  "peul-shorts",
+  "lingala",
+  "bantou",
+  "congo",
+  "camara",
+  "pharaon",
 ] as const;
-
-const VARIANTS = [
-  { id: "mobile-day", suffix: "", width: 430, theme: "day" },
-  { id: "mobile-night", suffix: "Nuit", width: 430, theme: "night" },
-  { id: "desktop-day", suffix: "Desktop", width: 1280, theme: "day" },
-  {
-    id: "desktop-night",
-    suffix: "DesktopNuit",
-    width: 1280,
-    theme: "night",
-  },
-] as const;
-
-interface ManifestBlock {
-  id: FeedBlockId;
-  zone: FeedZone;
-}
 
 interface ManifestEntry {
-  case: (typeof CASES)[number]["id"];
-  variant: (typeof VARIANTS)[number]["id"];
+  case: (typeof SCREENS)[number];
   file: string;
   query: string;
-  resultState: SearchResultState;
-  width: number;
-  theme: "day" | "night";
-  height: number;
-  blocks: ManifestBlock[];
-  owedParts: OwedPartId[];
+  lens: "all" | "shorts";
+  blocks: FeedBlockId[];
 }
 
-interface FeedManifest {
-  schemaVersion: number;
-  entries: ManifestEntry[];
-}
-
-function loadManifest(): FeedManifest {
+function loadManifest(): { schemaVersion: number; entries: ManifestEntry[] } {
   return JSON.parse(
     fs.readFileSync(path.join(process.cwd(), MANIFEST_PATH), "utf8")
-  ) as FeedManifest;
-}
-
-function boardNames(): string[] {
-  return fs
-    .readdirSync(path.join(process.cwd(), MOCKUP_DIR))
-    .filter((name) => name.endsWith(".dc.html"))
-    .sort();
-}
-
-function attributeValues(html: string, attribute: string): string[] {
-  return Array.from(
-    html.matchAll(new RegExp(`${attribute}="([^"]+)"`, "g")),
-    (match) => match[1]
   );
 }
 
-function boardMarkup(source: string): string {
+function boardMarkup(file: string): string {
+  const source = fs.readFileSync(
+    path.join(process.cwd(), MOCKUP_DIR, file),
+    "utf8"
+  );
   return source.split("</helmet>")[1]?.split("</x-dc>")[0] ?? source;
 }
 
-function structuralShape(board: ManifestEntry) {
-  return {
-    query: board.query,
-    resultState: board.resultState,
-    blocks: board.blocks,
-    owedParts: board.owedParts,
-  };
-}
-
-function entry(
-  manifest: FeedManifest,
-  caseName: ManifestEntry["case"],
-  variant: ManifestEntry["variant"]
-): ManifestEntry {
-  const found = manifest.entries.find(
-    (board) => board.case === caseName && board.variant === variant
-  );
-  expect(
-    found,
-    `${caseName}/${variant} is missing from the manifest`
-  ).toBeDefined();
+function entry(case_: ManifestEntry["case"]): ManifestEntry {
+  const found = loadManifest().entries.find((board) => board.case === case_);
+  expect(found, `${case_} is missing from the manifest`).toBeDefined();
   return found!;
 }
 
-describe("the generated search-result feed charter", () => {
-  // The manifest is the structural authority, so its matrix must be exact: a
-  // new or missing board is a contract change rather than an incidental file.
-  // @req REQ-180
-  it("contains exactly ten cases and four variants per case", () => {
+describe("the generated answer-page charter", () => {
+  // The manifest is the structural authority, so its matrix is exact: a new or
+  // missing screen is a contract change rather than an incidental file.
+  // @req REQ-178
+  it("holds exactly the seven validated screens, each backed by a file", () => {
     const manifest = loadManifest();
-    const expectedFiles = CASES.flatMap(({ stem }) =>
-      VARIANTS.map(({ suffix }) => `${stem}${suffix}.dc.html`)
-    ).sort();
 
-    expect(manifest.schemaVersion).toBe(1);
-    expect(manifest.entries).toHaveLength(40);
-    expect(boardNames()).toEqual(expectedFiles);
-    expect(manifest.entries.map((board) => board.file).sort()).toEqual(
-      expectedFiles
-    );
-
-    for (const { id: caseName, stem } of CASES) {
-      for (const variant of VARIANTS) {
-        const board = entry(manifest, caseName, variant.id);
-        expect(board.file).toBe(`${stem}${variant.suffix}.dc.html`);
-        expect(board.width).toBe(variant.width);
-        expect(board.theme).toBe(variant.theme);
-      }
+    expect(manifest.schemaVersion).toBe(2);
+    expect(manifest.entries.map((board) => board.case)).toEqual([...SCREENS]);
+    for (const board of manifest.entries) {
+      expect(
+        fs.existsSync(path.join(process.cwd(), MOCKUP_DIR, board.file)),
+        board.file
+      ).toBe(true);
     }
   });
 
-  // Desktop may split the mobile sequence across two columns. Order therefore
-  // belongs to each real zone, not to one flattened desktop list.
-  // @req REQ-180
-  it("uses only canonical blocks and keeps their order inside each zone", () => {
-    const manifest = loadManifest();
+  // @req REQ-178
+  it("uses only canonical blocks, once each, in the canonical order", () => {
     const canonicalIndex = new Map(
       FEED_BLOCKS.map((block, index) => [block, index])
     );
 
-    for (const board of manifest.entries) {
-      expect(new Set(board.blocks.map(({ id }) => id)).size, board.file).toBe(
-        board.blocks.length
-      );
-
-      for (const zone of FEED_ZONES) {
-        const blocks = board.blocks
-          .filter((block) => block.zone === zone)
-          .map(({ id }) => id);
-        const sorted = [...blocks].sort(
-          (left, right) =>
-            canonicalIndex.get(left)! - canonicalIndex.get(right)!
-        );
-        expect(blocks, `${board.file}/${zone} is out of order`).toEqual(sorted);
-      }
-
+    for (const board of loadManifest().entries) {
+      expect(new Set(board.blocks).size, board.file).toBe(board.blocks.length);
       for (const block of board.blocks) {
-        expect(FEED_BLOCKS, `${board.file} declares ${block.id}`).toContain(
-          block.id
-        );
-        expect(FEED_ZONES, `${board.file} declares ${block.zone}`).toContain(
-          block.zone
-        );
-
-        if (
-          ["lenses", "verdict", "appellations", "shorts"].includes(block.id)
-        ) {
-          expect(block.zone, `${board.file}/${block.id}`).toBe("first");
-        } else if (["owed", "further"].includes(block.id)) {
-          expect(block.zone, `${board.file}/${block.id}`).toBe("closing");
-        } else {
-          expect(
-            ["primary", "secondary"],
-            `${board.file}/${block.id}`
-          ).toContain(block.zone);
-        }
+        expect(FEED_BLOCKS, `${board.file} declares ${block}`).toContain(block);
       }
+      const sorted = [...board.blocks].sort(
+        (left, right) => canonicalIndex.get(left)! - canonicalIndex.get(right)!
+      );
+      expect(board.blocks, `${board.file} is out of order`).toEqual(sorted);
+      expect(board.blocks[0], board.file).toBe("lenses");
     }
   });
 
-  // Night is a token substitution over the same page, never a second
-  // composition. Comparing structure catches a hand-edited night board.
-  // @req REQ-180
-  it("keeps day and night structurally identical at each width", () => {
-    const manifest = loadManifest();
+  // The screens are an executable view of the manifest: the semantic markers
+  // may never drift from it.
+  // @req REQ-178
+  it("keeps every screen's markup aligned with the manifest", () => {
+    for (const board of loadManifest().entries) {
+      const markers = Array.from(
+        boardMarkup(board.file).matchAll(/data-feed-block="([^"]+)"/g),
+        (match) => match[1]
+      );
+      expect(markers, board.file).toEqual(board.blocks);
+    }
+  });
 
-    for (const { id: caseName } of CASES) {
+  // « Tout » is the six blocks in the validated order, then the fiche button,
+  // then the invitation; a block with no data is absent, never empty.
+  // @req REQ-178
+  it("draws each answer as its blocks in the validated order, then the fiche and the invitation", () => {
+    for (const board of loadManifest().entries.filter(
+      ({ lens }) => lens === "all"
+    )) {
+      const answer = board.blocks.filter((id) => id.startsWith("answer-"));
+      expect(answer, board.file).toEqual(
+        ANSWER_BLOCKS.filter((id) => answer.includes(id))
+      );
+      // The three that every answer owes, whatever its fiche holds.
+      for (const always of [
+        "answer-what",
+        "answer-origin",
+        "answer-sources",
+      ] as const) {
+        expect(answer, `${board.file} lacks ${always}`).toContain(always);
+      }
+      expect(board.blocks.at(-1), board.file).toBe("owed");
+      const afterSources = board.blocks.slice(
+        board.blocks.indexOf("answer-sources") + 1
+      );
       expect(
-        structuralShape(entry(manifest, caseName, "mobile-night"))
-      ).toEqual(structuralShape(entry(manifest, caseName, "mobile-day")));
-      expect(
-        structuralShape(entry(manifest, caseName, "desktop-night"))
-      ).toEqual(structuralShape(entry(manifest, caseName, "desktop-day")));
+        afterSources.filter((id) => id !== "fiche-link" && id !== "owed"),
+        board.file
+      ).toEqual([]);
     }
   });
 
-  // `owed` is one top-level closing with independently testable children. Its
-  // children must not leak back into the top-level feed vocabulary.
-  // @req REQ-180
-  it("keeps owed composite and its parts in their canonical order", () => {
-    const manifest = loadManifest();
-    const owedIndex = new Map(OWED_PARTS.map((part, index) => [part, index]));
+  // A word has no fiche and no geography; a language and a country do.
+  // @req REQ-184
+  it("gives a published word no fiche button and no geography", () => {
+    const word = entry("pharaon").blocks;
 
-    for (const board of manifest.entries) {
-      const ids = board.blocks.map(({ id }) => id);
-      expect(ids).not.toContain("silences");
-      expect(ids).not.toContain("conviction");
-      expect(ids).not.toContain("invitation");
-
-      if (["exact", "widened"].includes(board.resultState)) {
-        expect(ids, `${board.file} must close with owed`).toContain("owed");
-      }
-      if (board.resultState === "typo") {
-        expect(
-          ids,
-          `${board.file} must not invent an owed subject`
-        ).not.toContain("owed");
-      }
-      if (board.resultState === "unknown") {
-        expect(ids, `${board.file} must carry the unknown closing`).toContain(
-          "owed"
-        );
-      }
-
-      if (!ids.includes("owed")) {
-        expect(board.owedParts, board.file).toEqual([]);
-        continue;
-      }
-
-      expect(board.owedParts, `${board.file} omits conviction`).toContain(
-        "conviction"
-      );
-      expect(board.owedParts, `${board.file} omits invitation`).toContain(
-        "invitation"
-      );
-      expect(board.owedParts).toEqual(
-        [...board.owedParts].sort(
-          (left, right) => owedIndex.get(left)! - owedIndex.get(right)!
-        )
-      );
-    }
+    expect(word).not.toContain("fiche-link");
+    expect(word).not.toContain("answer-where");
   });
 
-  // These three cases distinguish a shared name, a useful typo and a genuinely
-  // unknown query. Conflating them was the grammar defect this contract fixes.
-  // @req REQ-180
-  it("preserves the Bassa, typo, and unknown exceptional contracts", () => {
-    const manifest = loadManifest();
+  // The filters replace the answer rather than add to it.
+  // @req REQ-178
+  it("shows a filter as the filters and its shelf, with no answer block", () => {
+    const shorts = entry("peul-shorts").blocks;
 
-    for (const variant of VARIANTS) {
-      const bassa = entry(manifest, "bassa", variant.id).blocks.map(
-        ({ id }) => id
-      );
-      expect(bassa).toContain("shared-name");
-      expect(bassa).not.toContain("problem");
-
-      const typo = entry(manifest, "introuvable", variant.id).blocks.map(
-        ({ id }) => id
-      );
-      expect(typo).not.toContain("owed");
-      expect(typo.at(-1)).toBe("further");
-
-      const unknown = entry(manifest, "inconnu", variant.id);
-      const unknownIds = unknown.blocks.map(({ id }) => id);
-      expect(unknownIds.slice(-2)).toEqual(["owed", "further"]);
-      expect(unknown.owedParts).toEqual(["conviction", "invitation"]);
-    }
-  });
-
-  // The generated markup is an executable view of the manifest. Visible copy
-  // remains illustrative, but semantic markers may never drift from it.
-  // @req REQ-180
-  it("keeps every board's semantic markup aligned with the manifest", () => {
-    const manifest = loadManifest();
-
-    for (const board of manifest.entries) {
-      const html = fs.readFileSync(
-        path.join(process.cwd(), MOCKUP_DIR, board.file),
-        "utf8"
-      );
-      const markup = boardMarkup(html);
-      expect(attributeValues(markup, "data-feed-block"), board.file).toEqual(
-        board.blocks.map(({ id }) => id)
-      );
-      expect(attributeValues(markup, "data-feed-part"), board.file).toEqual(
-        board.owedParts
-      );
-    }
+    expect(shorts).toEqual(["lenses", "shorts"]);
   });
 });

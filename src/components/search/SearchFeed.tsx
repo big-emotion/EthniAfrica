@@ -443,7 +443,8 @@ export function SearchFeed({
     <>
       {answered.length > 1 ? (
         <h1 className="font-afh-display text-afh-hero font-black leading-[var(--afh-leading-hero)] text-afh-text [overflow-wrap:anywhere]">
-          {displayName}
+          {displayName.charAt(0).toLocaleUpperCase(language) +
+            displayName.slice(1)}
         </h1>
       ) : null}
       {answered.map((subject) => (

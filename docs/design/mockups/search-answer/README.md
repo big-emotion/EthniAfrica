@@ -27,7 +27,11 @@ of these mockups, so a rendering test and a mockup say the same words.
 `canvas.json` is the layout of the design canvas the screens were drawn on.
 The `.dc.html` files reference `./support.js`, which is not kept here; the
 pages are static markup inside an `<x-dc>` element and render without it.
-They are frozen byte for byte, do not edit them (the folder is prettier-ignored).
+They are frozen: the only edit since v11 is a `data-feed-block` attribute on
+each top-level block, added by `generate_manifest.py`, which also writes
+`manifest.json` from those attributes (`python3
+docs/design/mockups/search-answer/generate_manifest.py`). Do not edit the
+screens otherwise (the folder is prettier-ignored).
 
 ## Decisions
 

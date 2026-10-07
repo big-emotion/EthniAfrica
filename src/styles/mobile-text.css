@@ -92,6 +92,17 @@
     text-align: left;
   }
 
+  /* ─── The answer page is one left edge ────────────────────────
+     Operator ruling, 2026-10-07. The validated mockup of the answer
+     page is left-aligned, and its blocks already carry `text-left`;
+     the centred headings the body default would give them put two
+     edges on every block. The page is exempt whole, here and
+     nowhere else, like the parchment above — one class on the page
+     root, never per component. Nothing else is recentred. */
+  .afh-answer-page {
+    text-align: left;
+  }
+
   /* Only the body-level default is overridden. A block that asked
      for centring in its own right — the 404's plate, a medallion
      state, anything carrying `text-center` — keeps it, because that

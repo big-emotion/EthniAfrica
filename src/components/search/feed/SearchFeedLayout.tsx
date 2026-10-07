@@ -66,7 +66,7 @@ export function SearchFeedLayout({
       data-testid="feed-layout"
       data-feed-layout="column"
       className={cn(
-        "min-w-0 text-left min-[1200px]:mx-auto min-[1200px]:w-[880px] min-[1200px]:max-w-full",
+        "afh-answer-page min-w-0 text-left min-[1200px]:mx-auto min-[1200px]:w-[880px] min-[1200px]:max-w-full",
         reviewed && "search-feed-reviewed",
         className
       )}
