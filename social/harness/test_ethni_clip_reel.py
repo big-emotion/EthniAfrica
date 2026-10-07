@@ -203,6 +203,22 @@ def test_a_chunk_carries_the_speaker_of_its_phrase():
     assert speakers[0] == 0 and speakers[-1] == 1
 
 
+def test_a_plan_may_widen_its_captions_to_five_words():
+    five = "Pour libérer les mentalités, il"
+    default = [c["text"] for c in reel.caption_schedule(plan(phrases=[
+        {"start": 10.0, "end": 12.0, "speaker": 0, "fr": five}]))]
+    widened = [c["text"] for c in reel.caption_schedule(plan(caption_words=5, phrases=[
+        {"start": 10.0, "end": 12.0, "speaker": 0, "fr": five}]))]
+    assert len(default) == 2
+    assert widened == [five]
+
+
+def test_a_caption_width_beyond_five_words_or_below_two_is_refused():
+    assert reel.validate_plan(plan(caption_words=5)) == []
+    for width in (1, 6, "cinq"):
+        assert any("caption_words" in e for e in reel.validate_plan(plan(caption_words=width))), width
+
+
 def test_a_longer_chunk_stays_on_screen_longer():
     schedule = reel.caption_schedule(plan(phrases=[
         {"start": 10.0, "end": 20.0, "speaker": 0, "fr": "Un deux trois quatre. Cinq six sept huit neuf dix onze douze."}]))

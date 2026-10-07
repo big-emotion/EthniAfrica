@@ -1,6 +1,6 @@
 ---
 name: ethniafrica-clip-reel
-description: Turn a third-party video plus a prompt into a publishable vertical reel package for EthniAfrica — the passage cut out of the video, framed 9:16 over its own blur, captioned in French in 2–4 word blocks coloured by speaker, signed with the project watermark — plus its cover image and one description per network (TikTok, Instagram, YouTube Shorts, Facebook, X, LinkedIn). Use for « fais un montage de cette vidéo », « découpe cet extrait », « sous-titre cette vidéo en reel », « miniature + descriptif », « clip reel », or /ethniafrica-clip-reel. A social-only piece, outside the idee → structure → produire chain; it publishes nothing, schedules nothing and clears no rights.
+description: Turn a third-party video plus a prompt into a publishable vertical reel package for EthniAfrica — the passage cut out of the video, framed 9:16 over its own blur, captioned in French in 2–4 word blocks (5 on request) coloured by speaker, signed with the project watermark — plus its cover image and one description per network (TikTok, Instagram, YouTube Shorts, Facebook, X, LinkedIn). Use for « fais un montage de cette vidéo », « découpe cet extrait », « sous-titre cette vidéo en reel », « miniature + descriptif », « clip reel », or /ethniafrica-clip-reel. A social-only piece, outside the idee → structure → produire chain; it publishes nothing, schedules nothing and clears no rights.
 ---
 
 # clip-reel — one video and one prompt in, a reel package out
@@ -22,7 +22,7 @@ test first — never in a one-off script.**
 ## The five products
 
 1. **The reel** — 1080 × 1920, source frame centred over its blurred self, French
-   captions of two to four words, one ink per speaker (white, project gold), the
+   captions of two to four words (five when the plan sets `caption_words: 5`), one ink per speaker (white, project gold), the
    watermark under them. A fixed engine: the same plan always draws the same file.
 2. **The cover** — the source frame, a title in Anton, capitals, the last words in
    the project accent, the watermark. Eight words at most; the copy yields, the type
@@ -141,4 +141,4 @@ answers its own cover question).
 - clear the rights to a third-party video — it **reminds**, every time, and says the
   credit line is not a licence;
 - write into the repository: outputs go elsewhere, and the plan file with them;
-- add a speaker beyond two, a caption over four words, or a title over eight.
+- add a speaker beyond two, a caption over four words (five when the operator asks, through `caption_words`), or a title over eight.

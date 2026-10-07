@@ -10,7 +10,9 @@ it, and decides nothing editorial. Every rule below exists because the first cut
 this format got it wrong once:
 
 - a caption is **two to four words**, coloured by who speaks. A paragraph under a
-  reel is unreadable at phone size, and a one-word orphan flashes by like a glitch;
+  reel is unreadable at phone size, and a one-word orphan flashes by like a glitch.
+  A plan may widen that to five with `caption_words` — a single slow speaker reads
+  better in longer groups — but never further: six words wrap into a paragraph;
 - a phrase never straddles a cut — its output time would be a lie;
 - a source that is a screen recording shows a player's chrome for a while: a
   `reframes` window keeps only the rectangle that is the picture, for that stretch
@@ -43,6 +45,7 @@ HARNESS = pathlib.Path(__file__).resolve().parent
 NBSP = " "
 TOLERANCE = 0.01          # seconds — a phrase ending on a clip's last frame still belongs to it
 MAX_CAPTION_WORDS = 4
+CAPTION_WORDS_CEILING = 5
 MAX_TITLE_WORDS = 8
 WIDTH, HEIGHT = 1080, 1920
 FRAME_BOX_HEIGHT = 640    # the source frame is contained in 1080 x 640, centred at y = 640
@@ -105,7 +108,7 @@ def caption_schedule(plan):
     schedule = []
     for phrase in plan["phrases"]:
         start, end = timeline.to_out(phrase["start"]), timeline.to_out(phrase["end"])
-        chunks = chunk_words(phrase["fr"])
+        chunks = chunk_words(phrase["fr"], plan.get("caption_words", MAX_CAPTION_WORDS))
         weight = sum(len(c) for c in chunks)
         cursor = start
         for index, chunk in enumerate(chunks):
@@ -211,6 +214,10 @@ def validate_plan(plan):
         previous_out = played_at
         if first != last:
             errors.append(f"{label}: straddles two clips — split it at the cut")
+
+    width = plan.get("caption_words", MAX_CAPTION_WORDS)
+    if not (isinstance(width, int) and 2 <= width <= CAPTION_WORDS_CEILING):
+        errors.append(f"caption_words: {width!r} must be a whole number from 2 to {CAPTION_WORDS_CEILING}")
 
     banner = plan.get("banner")
     if banner is not None:
