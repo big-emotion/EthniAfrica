@@ -4821,7 +4821,9 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // filled on the most-searched peoples, each one a key the model declares.
   // 7006 -> 7005 on 2026-10-07: PPL_TIV gained `spellingAliases` when the
   // spelling note was moved out of its self-appellation.
-  peuple: 7005,
+  // 7005 -> 7004 on 2026-10-07: PPL_BAOULE gained `spellingAliases` for the
+  // 19th-century spellings its sources attest.
+  peuple: 7004,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
