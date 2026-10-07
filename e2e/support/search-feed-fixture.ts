@@ -17,6 +17,7 @@ import {
   type AnswerFixture,
 } from "../../src/lib/search/__fixtures__/answerFixtures";
 import type { SearchAnswer } from "../../src/lib/search/answer";
+import { ANSWER_LABELS } from "../../src/lib/search/__fixtures__/answerLabels";
 import { routeCommittedSearchFeedAssets } from "./search-feed-browser";
 
 const API_SEARCH_PATH = "/api/v2/search";
@@ -236,10 +237,28 @@ const EMPTY_COMPANIONS = {
   quiz: { count: 0, item: null },
 };
 
-function answerRow(answer: SearchAnswer, index: number) {
+/**
+ * The naming the API sends with a row. The page decides which entities answer
+ * to a typed name from the forms a row records, so a row that only carried
+ * `answer` would never be a subject: « peul » reaches « Fulɓe » through its
+ * forms. The typed query is among them because the case is defined by it.
+ */
+function namingFor(answer: SearchAnswer, query: string) {
+  const forms = [query, ...answer.names.map(({ form }) => form)].map(
+    (form) => ({ form })
+  );
+  return {
+    forms,
+    eras: [],
+    presentation: { forms: [], eras: [], disagreements: [], evidence: [] },
+  };
+}
+
+function answerRow(answer: SearchAnswer, index: number, query: string) {
   const common = {
     id: `fixture-answer-${answer.kind}-${index}`,
     answer,
+    naming: namingFor(answer, query),
     relevance: 1,
     exactMatch: true,
     snippet: null,
@@ -248,7 +267,25 @@ function answerRow(answer: SearchAnswer, index: number) {
     case "country":
       return {
         bucket: "countries",
-        row: { ...common, nameFr: answer.title, nameEn: answer.title },
+        row: {
+          ...common,
+          nameFr: answer.title,
+          nameEn: answer.title,
+          // The fiche's own list of peoples, by name: the page names a
+          // country's shares from it and never prints an identifier.
+          content: {
+            majorPeoples: (answer.where?.rows ?? []).flatMap((row) =>
+              "peopleId" in row && ANSWER_LABELS[row.peopleId]
+                ? [
+                    {
+                      peopleId: row.peopleId,
+                      name: ANSWER_LABELS[row.peopleId],
+                    },
+                  ]
+                : []
+            ),
+          },
+        },
       };
     case "language":
       return {
@@ -292,7 +329,7 @@ export function searchEnvelopeForAnswerFixture(fixture: AnswerFixture) {
     languages: [],
   };
   fixture.answers.forEach((answer, index) => {
-    const { bucket, row } = answerRow(answer, index);
+    const { bucket, row } = answerRow(answer, index, fixture.query);
     grouped[bucket].push(row);
   });
   return {
