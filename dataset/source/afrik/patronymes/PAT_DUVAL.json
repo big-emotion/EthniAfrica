@@ -23,13 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une explication relie le nom Duval à un lieu-dit : il désignerait celui qui est originaire du « Val », c'est-à-dire de la vallée ou du vallon. Cette explication décrit le nom en France, où il est l'un des plus répandus, notamment en Normandie. Aucune source consultée ne dit comment les porteurs de Duval à Maurice ont reçu ce nom.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["wikipedia-fr-duval"]
-      }
-    ]
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -73,41 +67,28 @@
       "tier": "unverified",
       "source_kind": "discovery",
       "notes": "Agrégateur de distribution consulté jusqu'au tableau par pays. Utilisé comme attestation faible de Duval à Maurice, non pour attribuer une origine à la branche mauricienne."
-    },
-    {
-      "sourceKey": "wikipedia-fr-duval",
-      "title": "Duval — Wikipédia (version française)",
-      "url": "https://fr.wikipedia.org/wiki/Duval",
-      "tier": "unverified",
-      "source_kind": "community",
-      "notes": "Page d'homonymie consultée en octobre 2026, section « Étymologie ». Elle donne le sens du nom en France sans citer de source et ne parle pas de Maurice. Nous n'avons pas trouvé l'ouvrage de référence sur lequel elle s'appuie."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous n'avons trouvé aucune source qui dise comment le nom est arrivé à Maurice ni de quelle famille française viennent ses porteurs mauriciens. L'explication du sens du nom ne repose que sur une encyclopédie collaborative, qui ne cite pas de source pour elle."
+      "reason": "les résultats exacts « Duval », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice ont été consultés. Ils attestent le nom ou décrivent le fonds disponible, mais n'ont livré ni étymologie publiée ni chronique attribuable à une lignée précise ; l'origine reste donc vide."
     },
     {
       "fieldPath": "alliances",
-      "reason": "Nous n'avons trouvé aucune paire nommée et sourcée qui relie Duval à un autre nom."
+      "reason": "les résultats exacts « Duval », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice, complétés par les termes « alliance », « cousinage » et « joking relationship », n'ont fait apparaître aucune paire nommée et sourcée reliant Duval à un autre nom documenté ici."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous n'avons trouvé aucune source qui donne une fonction sociale héréditaire aux porteurs de Duval."
+      "reason": "les résultats exacts « Duval », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice, complétés par « caste », « statut héréditaire », « métier » et « social function », n'ont établi aucune fonction sociale héréditaire propre aux porteurs de Duval. Une étymologie professionnelle éventuelle n'est pas assimilée à un statut contemporain."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous n'avons pas retenu de porteur décédé rattaché à ce nom par une source distincte de la simple homonymie ; les personnes vivantes ne sont pas ajoutées."
+      "reason": "Les résultats exacts « Duval », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice n'ont pas fourni de porteur à la fois décédé, clairement rattaché au patronyme étudié et documenté par une source distincte de la simple homonymie. Les personnes vivantes rencontrées dans les sources officielles ne sont pas ajoutées."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Nous n'avons trouvé aucune source qui distingue deux lignées de Duval d'origines différentes."
+      "reason": "les résultats exacts « Duval », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English publication is off (French-only mode); the sidecar will be produced in the translation wave for the patronymes batch."
-    }
-  }
+  ]
 }
