@@ -15,8 +15,10 @@ describe("Sentry runtime configurations", () => {
     vi.mocked(Sentry.init).mockClear();
   });
 
-  // The SDK's default has flipped between majors. Stated explicitly so an
-  // upgrade cannot start attaching IPs, cookies and request bodies to every
+  // The SDK's default has changed between majors, and v11 replaced the
+  // `sendDefaultPii` switch with per-category `dataCollection`, whose defaults
+  // collect everything. Stated explicitly so an upgrade cannot start attaching
+  // IPs, cookies, headers and request bodies to every
   // event behind the scrubber's back.
   // @req REQ-057
   it.each([
@@ -30,7 +32,15 @@ describe("Sentry runtime configurations", () => {
 
       expect(Sentry.init).toHaveBeenCalledTimes(1);
       const options = vi.mocked(Sentry.init).mock.calls[0][0];
-      expect(options?.sendDefaultPii).toBe(false);
+      expect(options?.dataCollection).toEqual({
+        userInfo: false,
+        cookies: false,
+        httpHeaders: false,
+        httpBodies: [],
+        urlQueryParams: false,
+        databaseQueryData: false,
+        stackFrameVariables: false,
+      });
       expect(options?.beforeSend).toBeTypeOf("function");
     }
   );
@@ -64,7 +74,11 @@ describe("Sentry runtime configurations", () => {
     await import("../../../../sentry.client.config");
     const options = vi.mocked(Sentry.init).mock.calls[0][0];
     const sample = () =>
-      options?.tracesSampler?.({ name: "/fr", inheritOrSampleWith: () => 0 });
+      options?.tracesSampler?.({
+        name: "/fr",
+        attributes: {},
+        inheritOrSampleWith: () => 0,
+      });
 
     expect(options?.tracesSampleRate).toBeUndefined();
     expect(options?.beforeSendTransaction).toBeTypeOf("function");

@@ -1,6 +1,23 @@
 import type { Breadcrumb, Event } from "@sentry/nextjs";
 
 /**
+ * Sentry 11 dropped the `sendDefaultPii` switch for per-category
+ * `dataCollection`, whose defaults collect everything. Each category that
+ * could carry a reader's data is turned off here rather than inherited, so a
+ * future default change cannot attach it behind `beforeSend`'s back.
+ */
+// @req REQ-057
+export const NO_DEFAULT_PII_COLLECTION = {
+  userInfo: false,
+  cookies: false,
+  httpHeaders: false,
+  httpBodies: [],
+  urlQueryParams: false,
+  databaseQueryData: false,
+  stackFrameVariables: false,
+};
+
+/**
  * Asserts that the provided Sentry DSN uses the EU data-region ingestion
  * hostname (`ingest.de.sentry.io`), enforcing GDPR data-residency at
  * startup rather than relying solely on documentation.
