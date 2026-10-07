@@ -21,15 +21,7 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Une explication relie le nom Ndongo ou Ndong aux enfants nés lors de la traversée des cours d'eau, à leur source : le nom, très fréquent chez tous les groupes beti du Cameroun, du Gabon et de Guinée équatoriale, aurait d'abord été donné à ces enfants. Elle le fait venir de la même réalité que le nom du clan Ndôñ, ou Bekôé.",
-        "claimStatus": "claimed",
-        "collection": "not-stated",
-        "context": "Récit sans informateur nommé, publié sur le site ngun.org",
-        "sourceRefs": ["ngun-attribution-noms"]
-      }
-    ],
+    "oralTraditions": [],
     "writtenChronicles": [],
     "linguisticReconstructions": []
   },
@@ -37,7 +29,7 @@
     {
       "peopleId": "PPL_BETI",
       "status": "supposed",
-      "sourceRefs": ["forebears-ndongo", "ngun-attribution-noms"]
+      "sourceRefs": ["forebears-ndongo"]
     }
   ],
   "countries": [
@@ -59,20 +51,12 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Base de répartition patronymique consultée directement. Elle atteste l’orthographe Ndongo et sa présence dans le Cameroun, mais la distribution ne démontre ni l’appartenance Beti, ni une origine unique, ni un mode de transmission."
-    },
-    {
-      "sourceKey": "ngun-attribution-noms",
-      "title": "De l'Attribution et de la Signification des Noms Chez les Beti–Bulu–Fang",
-      "url": "https://www.ngun.org/BetiFang/Attribution.htm",
-      "tier": "unverified",
-      "source_kind": "community",
-      "notes": "Page du site ngun.org ; elle ne nomme ni auteur ni date et ne cite aucune source ni aucun informateur. Page consultée en octobre 2026 ; pas de pagination. Les paragraphes sur le nom Ndongo ou Ndong et sur le nom Ngema, Nguema ou Njemba y sont des récits d'origine racontés sans informateur nommé."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce nom au-delà de ce récit : la seule explication trouvée vient d'une page de site sans auteur ni source citée, et aucun travail publié sur le nom Ndongo n'a été lu."
+      "reason": "la recherche web et bibliographique combinant « Ndongo », « Beti », « le Cameroun », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a livré aucune tradition attribuée, chronique ou étude linguistique établissant l’origine de Ndongo. Les homonymes d’autres langues et les déductions tirées de la seule distribution ont été écartés."
     },
     {
       "fieldPath": "nameSystem",
@@ -98,10 +82,5 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Ndongo », « Beti », « le Cameroun », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a établi aucune règle propre à Ndongo permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }
