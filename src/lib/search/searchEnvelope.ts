@@ -12,7 +12,10 @@
  * impossible rather than merely fixed.
  */
 
-import type { SearchAnswer } from "@/lib/search/answer";
+import { z } from "zod";
+
+import type { SearchAnswer, WordAnswer } from "@/lib/search/answer";
+import type { SearchEvidence } from "@/lib/search/evidence";
 import type { NamingProjection } from "@/lib/search/naming";
 import type {
   SearchEntityType,
@@ -562,4 +565,70 @@ export function mapSearchCounts(envelope: unknown): SearchLensCounts {
 export function compareByRelevance(a: SearchResult, b: SearchResult): number {
   if (a.exactMatch !== b.exactMatch) return a.exactMatch ? -1 : 1;
   return (b.relevance ?? 0) - (a.relevance ?? 0);
+}
+
+const evidenceShape = z.custom<SearchEvidence>(
+  (value) =>
+    Boolean(value) &&
+    typeof value === "object" &&
+    Array.isArray((value as SearchEvidence).sources) &&
+    typeof (value as SearchEvidence).assertion?.statement === "string"
+);
+
+const wordAnswerSchema = z.object({
+  kind: z.literal("word"),
+  title: z.string().min(1),
+  queries: z.array(z.string()),
+  what: z.object({
+    lead: z.string().optional(),
+    facts: z.object({}).passthrough(),
+  }),
+  origin: z
+    .object({
+      accounts: z.array(
+        z.object({
+          text: z.string().min(1),
+          attribution: z
+            .enum(["oral", "written", "linguistic", "synthesis"])
+            .optional(),
+          evidence: z.array(evidenceShape),
+        })
+      ),
+      debated: z.boolean(),
+    })
+    .optional(),
+  names: z.array(
+    z.object({ form: z.string().min(1), selfGiven: z.boolean().nullable() })
+  ),
+  next: z.object({ question: z.string().min(1) }).optional(),
+  sources: z.object({ count: z.number() }),
+  publications: z
+    .array(z.object({ network: z.string(), url: z.string() }))
+    .optional(),
+  path: z
+    .array(
+      z.object({
+        form: z.string(),
+        language: z.string(),
+        period: z.string().optional(),
+      })
+    )
+    .optional(),
+});
+
+/**
+ * Reads `data.wordAnswers` off a search envelope (REQ-184). A malformed answer
+ * is dropped rather than drawn half-shaped: the page then falls back to what
+ * it would have said without it, which is honest, instead of a partial claim.
+ * @req REQ-184
+ */
+export function mapWordAnswers(envelope: unknown): WordAnswer[] {
+  const data = (envelope as { data?: unknown } | null)?.data;
+  if (!data || typeof data !== "object" || Array.isArray(data)) return [];
+  const { wordAnswers } = data as Record<string, unknown>;
+  if (!Array.isArray(wordAnswers)) return [];
+  return wordAnswers.flatMap((entry) => {
+    const parsed = wordAnswerSchema.safeParse(entry);
+    return parsed.success ? [parsed.data as WordAnswer] : [];
+  });
 }

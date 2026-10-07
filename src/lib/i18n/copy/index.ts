@@ -13,6 +13,7 @@ import { homePurposeCopy } from "@/lib/i18n/copy/homePurpose";
 import { homeStoriesCopy } from "@/lib/i18n/copy/homeStories";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
+import { wordAnswerCopy } from "@/lib/i18n/copy/wordAnswer";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { commonCopy } from "@/lib/i18n/copy/common";
 import { consentCopy } from "@/lib/i18n/copy/consent";
@@ -76,6 +77,7 @@ export const COPY_MODULES = {
   homeCorpusCounts: homeCorpusCountsCopy,
   nameAnswer: nameAnswerCopy,
   searchAnswer: searchAnswerCopy,
+  wordAnswer: wordAnswerCopy,
   searchFeed: searchFeedCopy,
   consent: consentCopy,
   compare: compareCopy,
