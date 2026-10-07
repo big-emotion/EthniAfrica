@@ -12,6 +12,11 @@ import type {
   SearchResult,
 } from "../../src/types/afrik-frontend";
 
+import {
+  ANSWER_FIXTURES,
+  type AnswerFixture,
+} from "../../src/lib/search/__fixtures__/answerFixtures";
+import type { SearchAnswer } from "../../src/lib/search/answer";
 import { routeCommittedSearchFeedAssets } from "./search-feed-browser";
 
 const API_SEARCH_PATH = "/api/v2/search";
@@ -218,5 +223,125 @@ export async function routeSearchFeedFixtures(page: Page): Promise<void> {
 }
 
 export function searchFeedUrl(fixture: FeedCaseFixture): string {
+  return `${getLocalizedRoute(LOCALE, "search")}?q=${encodeURIComponent(fixture.query)}`;
+}
+
+/** Every lens empty: the answer fixtures exercise the answer, not the shelves. */
+const EMPTY_COMPANIONS = {
+  subjects: [],
+  shorts: { count: 0, items: [] },
+  anecdotes: { count: 0, items: [] },
+  proverbs: { count: 0, items: [] },
+  images: { count: 0, items: [] },
+  quiz: { count: 0, item: null },
+};
+
+function answerRow(answer: SearchAnswer, index: number) {
+  const common = {
+    id: `fixture-answer-${answer.kind}-${index}`,
+    answer,
+    relevance: 1,
+    exactMatch: true,
+    snippet: null,
+  };
+  switch (answer.kind) {
+    case "country":
+      return {
+        bucket: "countries",
+        row: { ...common, nameFr: answer.title, nameEn: answer.title },
+      };
+    case "language":
+      return {
+        bucket: "languages",
+        row: { ...common, name: answer.title, content: { peoples: [] } },
+      };
+    case "languageFamily":
+      return {
+        bucket: "families",
+        row: { ...common, nameFr: answer.title, nameEn: answer.title },
+      };
+    case "patronyme":
+      return {
+        bucket: "patronymes",
+        row: { ...common, nameMain: answer.title, content: {} },
+      };
+    default:
+      return {
+        bucket: "peoples",
+        row: {
+          ...common,
+          nameMain: answer.title,
+          content: { appellations: { selfAppellation: answer.title } },
+        },
+      };
+  }
+}
+
+/**
+ * The envelope the answer page is specified against: each answer rides on its
+ * row as `answer`, a published word rides on the envelope as `wordAnswers`
+ * (a word may match no row at all).
+ */
+export function searchEnvelopeForAnswerFixture(fixture: AnswerFixture) {
+  const grouped: Record<string, Record<string, unknown>[]> = {
+    peoples: [],
+    countries: [],
+    families: [],
+    persons: [],
+    patronymes: [],
+    languages: [],
+  };
+  fixture.answers.forEach((answer, index) => {
+    const { bucket, row } = answerRow(answer, index);
+    grouped[bucket].push(row);
+  });
+  return {
+    data: {
+      ...grouped,
+      ...(fixture.wordAnswers ? { wordAnswers: fixture.wordAnswers } : {}),
+      quizzes: [],
+      results: [],
+      peoplesTotal: grouped.peoples.length,
+      countriesTotal: grouped.countries.length,
+      familiesTotal: grouped.families.length,
+      personsTotal: 0,
+      patronymesTotal: grouped.patronymes.length,
+      quizzesTotal: 0,
+      languagesTotal: grouped.languages.length,
+      total: fixture.answers.length,
+      leads: [],
+      nearNames: [],
+    },
+  };
+}
+
+// @req REQ-178
+export async function routeSearchAnswerFixtures(page: Page): Promise<void> {
+  await page.route("**/api/v2/search**", async (route) => {
+    const url = new URL(route.request().url());
+    if (url.pathname === `${API_SEARCH_PATH}/companions`) {
+      await route.fulfill({ status: 200, json: { data: EMPTY_COMPANIONS } });
+      return;
+    }
+    if (url.pathname !== API_SEARCH_PATH) {
+      await route.fallback();
+      return;
+    }
+    const query = (url.searchParams.get("q") ?? "").toLocaleLowerCase();
+    const fixture = Object.values(ANSWER_FIXTURES).find(
+      (candidate) => candidate.query.toLocaleLowerCase() === query
+    );
+    if (!fixture) {
+      await route.fulfill({ status: 404, json: { error: "Unknown fixture" } });
+      return;
+    }
+    await route.fulfill({
+      status: 200,
+      json: searchEnvelopeForAnswerFixture(fixture),
+    });
+  });
+}
+
+export function searchAnswerUrl(fixture: AnswerFixture): string {
   return `${getLocalizedRoute(LOCALE, "search")}?q=${encodeURIComponent(fixture.query)}`;
 }
