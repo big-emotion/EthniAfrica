@@ -27,6 +27,7 @@ import { config } from "dotenv";
 import { loadAllCountries } from "@/lib/afrik/loaders/countryLoader";
 import type { LanguageRecord } from "@/lib/afrik/loaders/languageCsvLoader";
 import { loadAllLanguages } from "@/lib/afrik/loaders/languageCsvLoader";
+import { persistedContent } from "@/lib/afrik/loaders/languageProvenanceLoader";
 import { loadAllLanguageFamilies } from "@/lib/afrik/loaders/languageFamilyLoader";
 import {
   loadAllPatronymeDossiers,
@@ -180,18 +181,7 @@ export function buildCorpusExpectations(
         id: language.id,
         name: language.name,
         family_id: language.familyId ?? null,
-        // Mirrors languageProvenanceLoader's persistedContent(); undefined
-        // members vanish in canonicalJson exactly as the loader omits them.
-        content: {
-          nameProvenance: language.nameProvenance,
-          glottocode: language.glottocode,
-          nameEn: language.nameEn,
-          alternateNames: language.alternateNames,
-          peoples: language.peoples,
-          vehicularRole: language.vehicularRole,
-          dialects: language.dialects,
-          vitalityStatus: language.vitalityStatus,
-        },
+        content: persistedContent(language),
         spelling_aliases: language.spellingAliases ?? [],
       })),
     },
