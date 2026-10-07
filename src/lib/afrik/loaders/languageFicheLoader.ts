@@ -29,6 +29,8 @@ interface LanguageFiche {
   content?: {
     vehicularRole?: string | null;
     originDebated?: boolean;
+    searchAnswer?: { lead?: string; followUp?: string };
+    speakers?: { byCountry: unknown[] };
     dialects?: string[];
     vitalityStatus?: {
       status: string;
@@ -58,6 +60,10 @@ function toLanguageRecord(fiche: LanguageFiche): LanguageRecord {
     ...(typeof fiche.content?.originDebated === "boolean"
       ? { originDebated: fiche.content.originDebated }
       : {}),
+    ...(fiche.content?.searchAnswer
+      ? { searchAnswer: fiche.content.searchAnswer }
+      : {}),
+    ...(fiche.content?.speakers ? { speakers: fiche.content.speakers } : {}),
     dialects: fiche.content?.dialects ?? [],
     vitalityStatus: fiche.content?.vitalityStatus,
     sources: fiche.content?.sources ?? [],

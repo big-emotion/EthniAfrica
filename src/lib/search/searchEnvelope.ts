@@ -12,6 +12,7 @@
  * impossible rather than merely fixed.
  */
 
+import type { SearchAnswer } from "@/lib/search/answer";
 import type { NamingProjection } from "@/lib/search/naming";
 import type {
   SearchEntityType,
@@ -95,6 +96,26 @@ function isNamingProjection(value: unknown): value is NamingProjection {
 
 function namingOf(row: Record<string, unknown>): NamingProjection | undefined {
   return isNamingProjection(row.naming) ? row.naming : undefined;
+}
+
+/**
+ * A row from an older server carries no `answer`, and a malformed one must
+ * not reach the page: the minimum the blocks rely on is checked here.
+ */
+function isSearchAnswer(value: unknown): value is SearchAnswer {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const answer = value as Partial<SearchAnswer>;
+  return (
+    typeof answer.kind === "string" &&
+    typeof answer.title === "string" &&
+    Array.isArray(answer.names) &&
+    Boolean(answer.what) &&
+    typeof answer.sources?.count === "number"
+  );
+}
+
+function answerOf(row: Record<string, unknown>): SearchAnswer | undefined {
+  return isSearchAnswer(row.answer) ? row.answer : undefined;
 }
 
 /**
@@ -319,6 +340,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     ...asRows(peoples).map((row): SearchResult => ({
       type: "people",
       naming: namingOf(row),
+      answer: answerOf(row),
       id: String(row.id),
       name: String(row.nameMain ?? ""),
       languageFamilyId:
@@ -339,6 +361,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     ...asRows(countries).map((row): SearchResult => ({
       type: "country",
       naming: namingOf(row),
+      answer: answerOf(row),
       id: String(row.id),
       name: String(row.nameFr ?? ""),
       nameEn: englishNameOf(row.nameEn),
@@ -353,6 +376,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     ...asRows(families).map((row): SearchResult => ({
       type: "languageFamily",
       naming: namingOf(row),
+      answer: answerOf(row),
       id: String(row.id),
       name: String(row.nameFr ?? ""),
       nameEn: englishNameOf(row.nameEn),
@@ -380,6 +404,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     ...asRows(patronymes).map((row): SearchResult => ({
       type: "patronyme",
       naming: namingOf(row),
+      answer: answerOf(row),
       id: String(row.id),
       name: String(row.nameMain ?? ""),
       nameSystem: row.nameSystem as SearchResult["nameSystem"],
@@ -397,6 +422,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     ...asRows(languages).map((row): SearchResult => ({
       type: "language",
       naming: namingOf(row),
+      answer: answerOf(row),
       id: String(row.id),
       name: String(row.name ?? ""),
       nameEn: englishNameOf(row.nameEn),

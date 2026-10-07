@@ -171,7 +171,7 @@ export async function loadSearchNamingData(
       ? client
           .from("name_records")
           .select(
-            "id, entity_type, entity_id, name_text, name_type, language_of_origin, meaning, period_label, imposed_by, imposition_period, why_problematic, contemporary_usage, assertion_id, sort_rank"
+            "id, entity_type, entity_id, name_text, name_type, language_of_origin, meaning, period_label, short_line, imposed_by, imposition_period, why_problematic, contemporary_usage, assertion_id, sort_rank"
           )
           .in("entity_type", ["people", "patronyme"])
           .in("entity_id", unique(nameSubjects.map(({ id }) => id)))
@@ -324,6 +324,9 @@ export async function loadSearchNamingData(
       ...(nullableText(row.meaning) ? { meaning: String(row.meaning) } : {}),
       ...(nullableText(row.period_label)
         ? { periodLabel: String(row.period_label) }
+        : {}),
+      ...(nullableText(row.short_line)
+        ? { shortLine: String(row.short_line) }
         : {}),
       ...(nullableText(row.imposed_by)
         ? { imposedBy: String(row.imposed_by) }
