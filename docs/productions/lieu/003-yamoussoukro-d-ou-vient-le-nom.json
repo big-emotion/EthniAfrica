@@ -12,9 +12,32 @@
     {
       "kind": "country",
       "id": "CIV",
-      "label": { "fr": "Yamoussoukro (Côte d'Ivoire)" }
+      "label": {
+        "fr": "Yamoussoukro (Côte d'Ivoire)"
+      }
     }
   ],
   "sitePath": "/fr/atlas/pays/CIV",
-  "publications": []
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel"
+    },
+    {
+      "network": "facebook",
+      "format": "carrousel"
+    },
+    {
+      "network": "youtube",
+      "format": "carrousel"
+    },
+    {
+      "network": "linkedin",
+      "format": "carrousel"
+    }
+  ]
 }
