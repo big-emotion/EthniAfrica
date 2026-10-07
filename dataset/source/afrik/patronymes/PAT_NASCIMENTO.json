@@ -23,7 +23,13 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Une explication relie Nascimento à la naissance de Jésus-Christ : le mot veut dire « naissance » en portugais.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["wikipedia-en-nascimento"]
+      }
+    ]
   },
   "peoples": [],
   "countries": [
@@ -45,13 +51,17 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "wikipedia-en-nascimento",
+      "title": "Nascimento (surname) — Wikipédia (version anglaise)",
+      "url": "https://en.wikipedia.org/wiki/Nascimento_(surname)",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Article consulté en octobre 2026 dans sa version anglaise. Il s'appuie sur une thèse de Fabiana Aparecida Prenhaca Giacometti, O Nome do Homem Casado (Universidade Estadual Paulista, 2019), que nous n'avons pas consultée dans l'original. Il ne dit rien de l'Angola, et la présence du nom dans ce pays reste donc non expliquée ici."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -76,5 +86,10 @@
       "fieldPath": "peoples",
       "reason": "« Nascimento » a été cherchée dans nos fiches peuple — appellations, ethnicités, organisation clanique, prose historique et sources — sans y trouver aucune occurrence. Aucun des 51 peuples du corpus présents dans le pays de la fiche (Angola) ne rattache ce nom à un groupe, et aucune source dédiée n'a encore été consultée pour ce nom. Les seules attestations de patronymes portugais du corpus concernent les populations créoles de Guinée-Bissau ; aucun peuple documenté en Angola ne porte d'attestation de nom de famille portugais."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English publication is off (French-only mode); the sidecar will be produced in the translation wave for the patronymes batch."
+    }
+  }
 }

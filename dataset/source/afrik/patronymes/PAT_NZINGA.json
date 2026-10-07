@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Fiche générée depuis la file d'attente des candidats (vague 1 du plan de couverture anthroponymique). Elle ne porte aucune recherche : ne pas étendre ses affirmations sans appliquer le protocole docs/runbooks/anthroponym-fiche-research.md."
+    "directives": "Fiche partielle : elle repose sur les sources citées, dont aucune n'est consacrée à ce nom ; ne pas étendre ses affirmations sans appliquer le protocole docs/runbooks/anthroponym-fiche-research.md."
   },
   "id": "PAT_NZINGA",
   "nameMain": "Nzinga",
@@ -11,7 +11,10 @@
     {
       "spelling": "Nzinga",
       "attestations": [
-        { "countryId": "AGO", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "AGO",
+          "sourceRefs": ["hga-v-vansina", "unesco-nzinga-mbandi-unit"]
+        }
       ]
     }
   ],
@@ -20,12 +23,29 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [],
+    "historicalSyntheses": [
+      {
+        "claim": "Une légende explique le nom de la reine Njinga, qui régna sur le Ndongo puis sur le Matamba, par sa naissance difficile : le cordon ombilical était enroulé autour de son cou, et le verbe kimbundu kujinga voudrait dire « tordre, tourner » (sens donné par le même article). Les enfants de la maison royale qui survivaient à une naissance difficile ou inhabituelle passaient pour avoir des dons spirituels. Cette explication concerne le nom personnel d'une reine ; aucune source consultée ne dit que Nzinga est un nom de clan.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["wikipedia-en-njinga"]
+      },
+      {
+        "claim": "Le même nom se trouve chez des rois du Kongo : Nzinga Nkuwu, puis son fils Nzinga Mbemba, connu aussi sous le nom d'Afonso Ier, qui lui succède en 1506. Aucune source consultée ne dit si ce nom a le même sens que celui de la reine du Ndongo.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-v-vansina"]
+      },
+      {
+        "claim": "Le nom de la reine s'écrit de nombreuses façons (Njinga Mbande, Nzinga Mbandi, Jinga, Ginga, Zinga, Ngola Nzinga, entre autres), en partie à cause de la transcription du kimbundu, et parce qu'elle signait elle-même sous des noms différents. Elle signait sa correspondance du titre Nzinga Mbandi Ngola, c'est-à-dire reine du Ndongo et du Matamba.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["unesco-nzinga-mbandi-unit"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_AMBUNDU",
-      "status": "attested",
+      "status": "supposed",
       "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
@@ -33,7 +53,7 @@
     {
       "countryId": "AGO",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["hga-v-vansina", "unesco-nzinga-mbandi-unit"]
     }
   ],
   "alliances": [],
@@ -47,33 +67,70 @@
       "url": null,
       "tier": "unverified",
       "source_kind": "ai_generated",
-      "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+      "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source consacrée à ce nom n'a été consultée. Cette ligne du relevé n'atteste rien : ce que la fiche affirme repose sur les autres sources citées. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "wikipedia-en-njinga",
+      "title": "Nzinga of Ndongo and Matamba — Wikipédia (version anglaise)",
+      "url": "https://en.wikipedia.org/wiki/Nzinga_of_Ndongo_and_Matamba",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Article consulté en octobre 2026 dans sa version anglaise. Il rapporte l'explication du nom comme une légende, en renvoyant pour cette phrase à un article de Anne Thériault, « Queens of Infamy: Njinga » (Longreads, 2019). Il rattache les dons spirituels des enfants nés ainsi à Linda Heywood, Njinga of Angola: Africa's Warrior Queen (Harvard University Press, 2017), p. 14. Nous n'avons consulté aucun de ces deux textes dans l'original."
+    },
+    {
+      "sourceKey": "hga-v-vansina",
+      "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 19, Le Royaume du Kongo et ses voisins",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de J. Vansina. Page imprimée : Nzinga Mbemba, connu aussi sous le nom d'Afonso Ier, succède à son père Nzinga Nkuwu en 1506 (p. 606). Le même chapitre nomme Nzinga Mbande, sœur du roi du Ndongo, baptisée Anna à Luanda, puis reine en 1626 (p. 615). Il ne donne aucun sens au nom."
+    },
+    {
+      "sourceKey": "unesco-nzinga-mbandi-unit",
+      "title": "Nzinga Mbandi: Queen of Ndongo and Matamba — General History of Africa, Pedagogical Unit (UNESCO, 2014)",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Nzinga_Mbandi_Queen_of_Ndongo_and_Matamba_English.pdf",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, texte de Serbin et Joubeaud, 2014 ; l'adresse indiquée est une copie hébergée sur Wikimedia Commons. Pages du PDF : la reine, même après avoir fui au Matamba qu'elle avait pris, signait sa correspondance du titre Nzinga Mbandi Ngola, soit reine du Ndongo et du Matamba (p. 45, § 1.5) ; son nom s'écrit de nombreuses façons, en partie à cause de la transcription du kimbundu, et parce qu'elle signait elle-même sous des noms différents (p. 48, § 3.1). Le roi du Ndongo de la fin du XVIe siècle y est nommé Ngola Kiluanje kia Ndambi, arrière-grand-père de Nzinga (PDF p. 14 et 15), et les Portugais y rebaptisent « Angola » la bande côtière du Ndongo (PDF p. 18, numérotée 17 sur la page). Le document ne parle pas de clan."
     }
   ],
   "gaps": [
     {
+      "fieldPath": "nameSystem",
+      "reason": "Les sources consultées décrivent Nzinga comme le nom d'une personne, la reine du Ndongo et du Matamba, et comme un nom porté par des rois du Kongo ; aucune ne parle d'un clan. La classe et l'unité sociale indiquées sur cette fiche sont provisoires, en attendant une classe pour le nom personnel d'une reine."
+    },
+    {
       "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Nous n'avons trouvé aucun récit kimbundu ou angolais sur l'origine de ce nom ; les sources consultées sont des textes d'histoire et des pages de Wikipédia en anglais."
     },
     {
       "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source consultée n'est consacrée à ce nom."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source consultée n'est consacrée à ce nom."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source consultée n'est consacrée à ce nom."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source consultée n'est consacrée à ce nom."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Aucune source consultée ne dit comment ce nom se transmet."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Aucune source consultée ne dit que Nzinga est un nom de clan ou de famille ; l'explication trouvée concerne le nom d'une personne, la reine Njinga. Aucune page consultée ne rattache ce nom au peuple Ambundu : ce lien vient de notre relevé et reste supposé."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English publication is off (French-only mode); the sidecar will be produced in the translation wave for the patronymes batch."
+    }
+  }
 }
