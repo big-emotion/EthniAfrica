@@ -35,15 +35,41 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
+    "oralTraditions": [
+      {
+        "claim": "Une tradition peule, de forme islamisée, fait descendre le clan Sô, ou Férobé, de Noussou, l'une des trois filles de l'Arabe Okba et de Tadiouma, fille du roi de Tôr, c'est-à-dire du Sinaï. Ses sœurs et son frère auraient donné les trois autres grands clans peuls, Diallo, Bari et Ba. Nous rapprochons Sô du nom Sow, que le chapitre de l'Histoire générale de l'Afrique range parmi les noms peuls : la source du récit n'écrit que Sô.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Maurice Delafosse, administrateur colonial",
+        "context": "Traditions peules du Soudan, rapportées sans date ni lieu précis et publiées en 1912",
+        "sourceRefs": ["delafosse-1912-haut-senegal-niger"]
+      }
+    ],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [],
+    "historicalSyntheses": [
+      {
+        "claim": "Les quatre grands clans peuls auraient pris forme au Fouta Toro, chez des descendants de Judéo-Syriens de Cyrénaïque, sur le modèle des clans toucouleurs alors dominants : Sal, Ba, Sô et Bari, côté toucouleur, auraient répondu à Diallo, Boli (ou Bourouro), Pérédio et Daédio, côté peul. L'auteur de cette lecture, un administrateur colonial en 1912, précise que ces mots ne se traduisent pas l'un l'autre : ce sont des mots d'origines distinctes d'une même langue, employés les uns surtout par les Toucouleurs, les autres par les Peuls. C'est son hypothèse, pas un point établi, et elle repose sur sa thèse d'une ascendance judéo-syrienne des Peuls, que nous ne reprenons pas.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["delafosse-1912-haut-senegal-niger"]
+      },
+      {
+        "claim": "Sow compte parmi les noms que portent les Peul, avec Jallo, Ba et Ka, comme Juuf, Jonn et Seen sont des noms seereer. Le chapitre ne dit pas d'où vient le nom, seulement à quel groupe on le rattache.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-i-diagne"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_WOLOF",
       "status": "attested",
       "sourceRefs": ["corpus-ppl-wolof-organisation"]
+    },
+    {
+      "peopleId": "PPL_FULA",
+      "status": "attested",
+      "sourceRefs": ["hga-i-diagne"]
     }
   ],
   "countries": [
@@ -117,12 +143,28 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Canut, Cécile, et Smith, Étienne, Cahiers d'études africaines, numéro 184, 2006, p. 687 et suivantes. Citée pour la mise en garde qu'elle porte : l'idée que la parenté à plaisanterie apaiserait les conflits y est traitée comme une hypothèse héritée de Radcliffe-Brown et reprise par les études sur la résolution des conflits, donc comme un discours à analyser et non comme un effet mesuré. La page de début est vérifiée, la page de fin ne l'est pas."
+    },
+    {
+      "sourceKey": "delafosse-1912-haut-senegal-niger",
+      "title": "Haut-Sénégal-Niger (Soudan français), tome I : Le pays, les peuples, les langues",
+      "url": "https://www.gutenberg.org/ebooks/77844",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Delafosse, Maurice, Paris, Émile Larose, 1912 ; ouvrage d'un administrateur colonial, lu dans l'édition numérique du Projet Gutenberg (2026). Passages relus jusqu'à l'affirmation : le récit des quatre enfants d'Okba et de Tadiouma, dont Noussou, ancêtre « des Sô ou Férobé » ; le passage où les quatre clans peuls sont dits calqués sur les clans toucouleurs, « Sal devint Diallo, Ba devint Boli ou Bourouro (ou Bourourdo), Sô devint Pérédio, Bari devint Daédio », avec sa note sur les mots d'origines distinctes, employés les uns surtout par les Toucouleurs et les autres par les Peuls. L'auteur écrit Sô ; que ce clan soit celui que l'on écrit Sow aujourd'hui est un rapprochement de notre part, appuyé sur le chapitre de l'Histoire générale de l'Afrique cité ici, qui range Sow parmi les noms peuls. Les numéros de page n'ont pas pu être confirmés sur cette édition numérique : le passage se trouve dans la partie consacrée à l'origine des Peuls. L'auteur introduit le récit comme celui des Peuls profondément islamisés, sans porteur identifié, sans date et sans lieu. Il est cité pour ce qu'il dit des noms de clan, non pour sa thèse sur l'ascendance judéo-syrienne des Peuls, que nous ne reprenons pas."
+    },
+    {
+      "sourceKey": "hga-i-diagne",
+      "title": "Histoire générale de l'Afrique, I : Méthodologie et préhistoire africaine — chapitre 10 (I), Histoire et linguistique",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. J. Ki-Zerbo, 1980 ; chapitre de P. Diagne, paragraphe de clôture de la section « La science onomastique », juste avant « L'anthroponymie ». Page imprimée 273 : la phrase « Les Seereer sont, en général, des Jonn, Juuf, Seen, etc., les Peul (Sow, Jallo, Ba, Ka, etc.), les Mandingue (Keita, Touré, Jara, etc.) », donnée comme exemple de ce que les noms de personnes révèlent sur les groupes qui les portent. Le chapitre écrit Juuf ; le rapprochement avec la graphie Diouf est celui de notre relevé de graphies. Il ne dit ni le sens ni l'origine de ces noms, seulement à quel groupe on les rattache."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "La notice FamilySearch/Dictionary of American Family Names et la référence bibliographique de M'Bodj, Becker et Martin, « Notes sur les patronymes wolof » (1980), ont été recherchées pour une origine wolof de Sow. La première rattache plutôt le nom aux Fulani et Toucouleurs, tandis que le texte intégral de la seconde n'a pas été retrouvé ; aucune origine propre à l'association wolof de cette fiche n'est donc affirmée."
+      "reason": "Aucun sens du mot Sow n'est établi dans les sources que nous avons consultées : elles disent à quel groupe le nom se rattache et comment un récit peul explique le clan Sô. Nous n'avons trouvé que des sources extérieures aux porteurs du nom, dont une de 1912 écrite par un administrateur colonial ; aucune explication transmise par les familles Sow elles-mêmes n'a été trouvée. La fiche rattache aussi le nom aux Wolof, d'après notre relevé : les sources lues le disent peul, et nous n'avons rien lu qui établisse l'usage wolof. Les lectures ci-dessus sont des pistes attribuées, aucune n'est retenue comme la bonne."
     },
     {
       "fieldPath": "casteOrSocialFunction",
