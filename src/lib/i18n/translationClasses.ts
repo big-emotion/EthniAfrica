@@ -1,5 +1,5 @@
 /**
- * The four translation classes, declared leaf by leaf for the seventeen strict
+ * The four translation classes, declared leaf by leaf for the eighteen strict
  * models in public/modele-*.json (REQ-143, DEC-047).
  *
  * The corpus is 1.9M words whose subject is partly language itself, so one
@@ -34,6 +34,7 @@ export const STRICT_MODEL_FILES = [
   "modele-dossier.json",
   "modele-frontiere-coloniale.json",
   "modele-langue.json",
+  "modele-lieu.json",
   "modele-linguistique.json",
   "modele-media.json",
   "modele-migration.json",
@@ -412,6 +413,52 @@ export const TRANSLATION_CLASSES: Readonly<
     "names[].pronunciation.source.url": "invariant",
     "names[].pronunciation.source.tier": "invariant",
     "names[].pronunciation.source.page": "invariant",
+  },
+
+  // A place's forms follow the name record's classes (REQ-193, DEC-069): the
+  // form and its namer are evidence; an account of where it came from is
+  // prose about a word, so it is never published at machine provenance.
+  "modele-lieu.json": {
+    "_meta.*": "invariant",
+    id: "invariant",
+    placeType: "invariant",
+    nameMain: "invariant",
+    countryId: "invariant",
+    "associatedPeoples[].peopleId": "invariant",
+    "associatedPeoples[].relation": "translatable",
+    summary: "translatable",
+    "names[].nameText": "invariant",
+    "names[].nameStatus": "invariant",
+    "names[].languageOfOrigin": "invariant",
+    "names[].meaning": "review_required",
+    "names[].shortLine": "translatable",
+    "names[].namedBy": "invariant",
+    "names[].originDebated": "invariant",
+    "names[].periodLabel": "translatable",
+    "names[].contemporaryUsage": "review_required",
+    "names[].accounts[].statement": "review_required",
+    "names[].accounts[].periodLabel": "translatable",
+    "names[].accounts[].sources[].author": "invariant",
+    "names[].accounts[].sources[].year": "invariant",
+    ...sourceEntry("names[].accounts[].sources[]"),
+    "names[].attestations[].formAsWritten": "invariant",
+    "names[].attestations[].year": "invariant",
+    "names[].attestations[].periodLabel": "translatable",
+    "names[].attestations[].attestedBy": "invariant",
+    "names[].attestations[].source.title": "invariant",
+    "names[].attestations[].source.author": "invariant",
+    "names[].attestations[].source.year": "invariant",
+    "names[].attestations[].source.url": "invariant",
+    "names[].attestations[].source.tier": "invariant",
+    "names[].attestations[].source.page": "invariant",
+    "names[].sources[].author": "invariant",
+    "names[].sources[].year": "invariant",
+    ...sourceEntry("names[].sources[]"),
+    "gaps[].field": "invariant",
+    "gaps[].reason": "translatable",
+    "sources[].author": "invariant",
+    "sources[].year": "invariant",
+    ...sourceEntry("sources[]"),
   },
 
   "modele-pays.json": {

@@ -152,6 +152,22 @@ Model `public/modele-migration.json`. `content` rubrics: `summary`, `narrative`,
 `debate` exists because a migration account is usually contested. Use it rather than
 flattening competing scholarship into `narrative`.
 
+## Place — `LOC_*` → `lieux/LOC_*.json` — 1 fiche
+
+A town, region or historic site whose name raises a question of origin (REQ-193,
+DEC-069). Former polities stay in a country's `content.kingdoms[]`.
+
+- `countryId` is required and must name an existing `pays/<ISO3>.json`;
+  `associatedPeoples[].peopleId` must name existing `PPL_*` fiches. Links point outward
+  only: never add a back-link to the country or people fiche.
+- `names[]` holds one record per form — current, former or concurrent — each with its
+  own `shortLine`, `namedBy`, `originDebated` and tiered `sources`.
+- When several accounts explain a form or its change, each goes in
+  `names[].accounts[]` with its own sources. None is crowned, and a date belongs to the
+  account that gives it.
+- Phase A only: no table, API route or page reads a place fiche yet, so productions
+  still attach a place subject as `kind: "country"`.
+
 ## Other models on disk
 
 `modele-source.json`, `modele-media.json`, `modele-recit-oral.json`,

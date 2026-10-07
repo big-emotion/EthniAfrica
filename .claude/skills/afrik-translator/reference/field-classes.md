@@ -47,6 +47,7 @@ non-obvious ruling is in `docs/editorial/translation-classes.md`.
 | `pays/`                  | ISO 3166-1 alpha-3 | `modele-pays.json`                                                                                     |
 | `famille_linguistique/`  | `FLG_*`            | `modele-linguistique.json`                                                                             |
 | `langues/`               | ISO 639-3          | `modele-langue.json`                                                                                   |
+| `lieux/`                 | `LOC_*`            | `modele-lieu.json` — a place and the forms of its name (REQ-193, DEC-069)                              |
 | `patronymes/`            | `PAT_*`            | `modele-nom-patronyme.json`, plus `-jamu`, `-nisba`, `-patronymique`, `-totemique`                     |
 | `noms/`                  | `PPL_*`            | `modele-nom.json` — the ethnonym dossier, not the patronym model                                       |
 | `relations/`             | `REL_*`            | `modele-relation.json`                                                                                 |
@@ -174,6 +175,60 @@ contract test is what keeps them equal to it, row for row and model for model.
 | `content.speakers.byCountry[].source.url`   | `invariant`       |                   |
 | `content.speakers.byCountry[].source.tier`  | `invariant`       |                   |
 | `content.speakers.byCountry[].source.notes` | `translatable`    |                   |
+
+### modele-lieu.json
+
+| Leaf                                   | Class             | Note |
+| -------------------------------------- | ----------------- | ---- |
+| `_meta.*`                              | `invariant`       |      |
+| `id`                                   | `invariant`       |      |
+| `placeType`                            | `invariant`       |      |
+| `nameMain`                             | `invariant`       |      |
+| `countryId`                            | `invariant`       |      |
+| `associatedPeoples[].peopleId`         | `invariant`       |      |
+| `associatedPeoples[].relation`         | `translatable`    |      |
+| `summary`                              | `translatable`    |      |
+| `names[].nameText`                     | `invariant`       |      |
+| `names[].nameStatus`                   | `invariant`       |      |
+| `names[].languageOfOrigin`             | `invariant`       |      |
+| `names[].meaning`                      | `review_required` |      |
+| `names[].shortLine`                    | `translatable`    |      |
+| `names[].namedBy`                      | `invariant`       |      |
+| `names[].originDebated`                | `invariant`       |      |
+| `names[].periodLabel`                  | `translatable`    |      |
+| `names[].contemporaryUsage`            | `review_required` |      |
+| `names[].accounts[].statement`         | `review_required` |      |
+| `names[].accounts[].periodLabel`       | `translatable`    |      |
+| `names[].accounts[].sources[].author`  | `invariant`       |      |
+| `names[].accounts[].sources[].year`    | `invariant`       |      |
+| `names[].accounts[].sources[].title`   | `invariant`       |      |
+| `names[].accounts[].sources[].url`     | `invariant`       |      |
+| `names[].accounts[].sources[].tier`    | `invariant`       |      |
+| `names[].accounts[].sources[].notes`   | `translatable`    |      |
+| `names[].attestations[].formAsWritten` | `invariant`       |      |
+| `names[].attestations[].year`          | `invariant`       |      |
+| `names[].attestations[].periodLabel`   | `translatable`    |      |
+| `names[].attestations[].attestedBy`    | `invariant`       |      |
+| `names[].attestations[].source.title`  | `invariant`       |      |
+| `names[].attestations[].source.author` | `invariant`       |      |
+| `names[].attestations[].source.year`   | `invariant`       |      |
+| `names[].attestations[].source.url`    | `invariant`       |      |
+| `names[].attestations[].source.tier`   | `invariant`       |      |
+| `names[].attestations[].source.page`   | `invariant`       |      |
+| `names[].sources[].author`             | `invariant`       |      |
+| `names[].sources[].year`               | `invariant`       |      |
+| `names[].sources[].title`              | `invariant`       |      |
+| `names[].sources[].url`                | `invariant`       |      |
+| `names[].sources[].tier`               | `invariant`       |      |
+| `names[].sources[].notes`              | `translatable`    |      |
+| `gaps[].field`                         | `invariant`       |      |
+| `gaps[].reason`                        | `translatable`    |      |
+| `sources[].author`                     | `invariant`       |      |
+| `sources[].year`                       | `invariant`       |      |
+| `sources[].title`                      | `invariant`       |      |
+| `sources[].url`                        | `invariant`       |      |
+| `sources[].tier`                       | `invariant`       |      |
+| `sources[].notes`                      | `translatable`    |      |
 
 ### modele-linguistique.json
 

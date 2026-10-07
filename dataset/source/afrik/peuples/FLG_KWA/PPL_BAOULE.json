@@ -8,22 +8,23 @@
       "mainName": "Baoulé",
       "selfAppellation": "Baule",
       "exonyms": ["Baoulé", "Bawule", "Baule"],
-      "originOfExonyms": "Le nom Baoulé proviendrait d'une expression associee au sacrifice de la reine Abla Pokou: selon la tradition orale, elle aurait sacrifie son fils unique pour permettre a son peuple de traverser le fleuve Bandama lors de la migration depuis l'Ashanti. La phrase prononcee serait Baouli (l'enfant est mort). Baoulé est la forme francisee du nom.",
+      "spellingAliases": ["Baouré", "Bahooree"],
+      "originOfExonyms": "Baule est le nom que ce peuple emploie pour lui-même, et Baoulé en est la graphie française ; Delafosse l'enregistre en 1900 pour le pays, les gens et la langue. Un récit de fondation explique le nom par « mort d'enfant » : après une guerre contre les Asante, la reine Pokou (aussi appelée Abla Pokou ou Aura Poku) arrive sur la Comoé, jette dans le fleuve son fils unique couvert d'or pour que son peuple passe, puis dit : « On appellera ce pays Baoulé. » Ce récit existe en plusieurs versions : dans l'une, recueillie en 1896, l'offrande est une tunique et un pagne tissé de fils d'or, et non un enfant ; dans une autre, publiée en 1982, la victime est la fille d'Akwa Boni (la nièce et héritière de Pokou) ; des récits oraux recueillis entre 1986 et 2000 chez les Nzikpri et les Nanafoué disent que ces groupes auraient traversé seuls, sans sacrifice. La version la plus répétée est celle que Maurice Delafosse a publiée en 1900, d'après des récits dictés par des Baoulé warèbo, atoutou et nzipouri ; il y explique Baule par « mort d'enfant » et écrit que Pokou nomme le pays, non le peuple. Nous n'avons trouvé aucune étude linguistique qui démontre cette explication ou la réfute. Le nom figure aussi dans des écrits antérieurs à 1900, ce qui ne dit rien de l'âge du récit : Bahooree dans un récit anglais de 1819, une carte de la Marine de 1866-1867 le mentionne, et Fleuriot de Langle écrit Baouré en 1873 pour une ville que l'historien Chauveau identifie au Baoulé. Une lecture historique veut que le nom ait d'abord désigné un lieu, sous les formes Bacorees ou Bahoree, attestées dès le début du XVIIe siècle ; elle reste à vérifier. On ne sait pas qui a donné ces formes anciennes aux Européens, ni dans quelle langue.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Baoulé est utilise dans les contextes officiels en Cote d'Ivoire. Baule est la forme autochtone. Le groupe est reconnu comme l'une des plus grandes ethnies de Cote d'Ivoire et joue un role politique majeur, notamment via le premier president ivoirien Felix Houphouet-Boigny (Baoulé).",
-      "linguisticFamily": "FLG_BENOUECONGO",
+      "linguisticFamily": "FLG_KWA",
       "ethnoLinguisticGroup": "Akan",
       "historicalRegion": "Centre de la Cote d'Ivoire, entre les fleuves Bandama et N'Zi",
       "currentCountries": ["CIV"]
     },
     "ethnicities": ["Baoulé", "Baule"],
     "origins": {
-      "ancientOrigins": "Peuple akan issu d'une migration depuis le royaume Ashanti du Ghana actuel. La reine Abla Pokou (aussi connue sous le nom d'Aura Poku) mena une partie des Ashanti vers l'ouest apres une succession disputee au sein de l'empire Ashanti au debut du XVIIIe siecle. Le groupe s'installa dans la zone centrale de la Cote d'Ivoire entre les rivieres Bandama et N'Zi.",
-      "formationPeriod": "Royaume Baoulé fonde vers 1730 par la reine Abla Pokou (regne c.1730-c.1760). Le groupe s'est progressivement constitue en entite distincte tout au long du XVIIIe siecle, assimilant des populations locales et developpant ses propres institutions.",
+      "ancientOrigins": "Les Baoulé sont un peuple akan. Un récit de fondation raconte leur départ du royaume asante (ashanti), dans le Ghana actuel, sous la conduite de la reine Pokou : une guerre contre les Asante dans la version publiée en 1900, une crise de succession dans les travaux d'histoire. Ceux-ci proposent deux crises du XVIIIe siècle pour ce départ : 1718, après la mort d'Osei Tutu, et vers 1750, à la mort d'Opoku Ware ; aucune date unique n'est établie. Le peuple ne se réduit pas à ce convoi : sa langue mêle l'asante, l'agni et d'autres langues, et des populations déjà installées ont été refoulées ou absorbées. Il occupe aujourd'hui le centre de la Côte d'Ivoire, entre le Bandama et le N'Zi.",
+      "formationPeriod": "La date de formation n'est pas établie : le départ raconté est placé en 1718 ou vers 1750 selon les travaux, et la version publiée par Delafosse en 1900 date « la conquête du Baoulé » vers 1730. Le groupe s'est progressivement constitué en entité distincte tout au long du XVIIIe siècle, assimilant des populations locales et développant ses propres institutions.",
       "migrationRoutes": [
-        "Depart du royaume Ashanti (Ghana actuel) vers l'ouest, probablement a la suite de la succession apres Opoku Ware I vers 1720-1730",
-        "Traversee du fleuve Bandama (selon la legende, au prix du sacrifice du fils de la reine Pokou)",
-        "Installation dans la region centrale de la Cote d'Ivoire entre le Bandama et le N'Zi"
+        "Départ du royaume asante (Ghana actuel) vers l'ouest, après une guerre ou une crise de succession au XVIIIe siècle (1718 ou vers 1750 selon les travaux)",
+        "Traversée de la Comoé, dans la version la plus répandue du récit, au prix du sacrifice du fils de la reine Pokou",
+        "Installation dans la région centrale de la Côte d'Ivoire entre le Bandama et le N'Zi"
       ],
       "historicalSettlementZones": [
         "Region centrale de la Cote d'Ivoire: le V Baoulé, zone en forme de tresse francaise entre le Bandama et le N'Zi",
@@ -32,7 +33,7 @@
       ],
       "unificationsOrDivisions": "Le peuple Baoulé est constitue de plusieurs groupes integres sous l'autorite de la reine Pokou: Aitu, Fari, Nzikpli, Saafwe, Sahu, Sahwe, Nanafwe, Agba et Ngban. Chaque village maintient son chef local, les cantons etant regroupes sous des rois ou reines.",
       "externalInfluences": "Heritage culturel akan (matrilinearite, gouvernance par tabourets, systeme de nommage par jour de naissance). Contact avec les peuples Guro, Bete et Dioula lors de l'installation en Cote d'Ivoire. Colonisation francaise (XIXe-XXe siecles). Essor economique lie au boom du cacao, du cafe et du caoutchouc depuis l'independance.",
-      "majorHistoricalEvents": "c.1730: Migration depuis l'Ashanti et fondation du royaume sous la reine Abla Pokou. 1760-1895: Succession de monarques baoulé (voir liste des souverains). 1895-1911: Resistance prolongee contre la conquete coloniale francaise. 1902-1925: Regne de Kouadio N'Dri sous occupation coloniale. 1960: Felix Houphouet-Boigny (Baoulé) devient le premier president de la Cote d'Ivoire independante."
+      "majorHistoricalEvents": "XVIIIe siècle: départ du royaume asante, raconté sous la conduite de la reine Pokou (1718 ou vers 1750 selon les travaux). Jusqu'en 1895: succession de monarques baoulé, dont la liste n'a pas de source établie. 1895-1911: Resistance prolongee contre la conquete coloniale francaise. 1902-1925: Regne de Kouadio N'Dri sous occupation coloniale. 1960: Felix Houphouet-Boigny (Baoulé) devient le premier president de la Cote d'Ivoire independante."
     },
     "organization": {
       "traditionalPoliticalSystem": "Systeme politique simple et decentralise: plusieurs chefs de village anciens discutent des affaires communautaires. Les petits villages sont diriges par un chef de village; les grands villages et les cantons par un roi ou une reine assiste(e) de notables et de conseillers. Les souverains s'expriment rarement en public directement, passant par un porte-parole. Chaque canton est independant, reuni en confederation informelle. Le peuple Baoulé est une monarchie subetatique qui existe encore de nos jours.",
@@ -54,7 +55,7 @@
       "spiritualities": "Cosmologie en trois domaines: Nyamien (divinite supreme), monde terrestre et blolo (au-dela des ancetres). Les sculptures et masques servent de liens entre le monde physique et le monde spirituel. Les zulu (esprits protecteurs) habitent les waka sran. Les blolo bla et blolo bian (partenaires spirituels de l'autre monde) font l'objet d'offrandes pour ameliorer les relations terrestres. Coexistence avec le christianisme (catholique et protestant)."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Royaume Baoulé (fonde c.1730 par la reine Abla Pokou). Sequence monarchique documentee: Abla Pokou (c.1730-c.1760), Akoua Bony (c.1760-c.1790), Kouakou Djie I (c.1790-c.1820), Nanan Kouame Toto (c.1820-c.1840), Kouakou Anougble I (c.1840-c.1870), Nanan Toto Diby (c.1870-c.1880), Anougble Dieke (c.1880-c.1890), Kouame Tchecke I (c.1890-1902), Kouadio N'Dri (1902-1925), Nanan Kouakou Anougble II (1925-1958), Nanan Kouakou Djie II (1959-1978), Nanan Kouakou Anougble III (1995-2016), Nanan N'Ga Tanou Monique (2016-present).",
+      "kingdomsOrChiefdoms": "Le récit de fondation rattache la royauté baoulé à la reine Pokou ; les historiens discutent la manière dont un royaume s'est constitué. Une liste de souverains circule, sans que sa source soit établie, et un article de 2003 traite de la confusion entre les deux premières reines. Elle donne: Abla Pokou, Akoua Bony, Kouakou Djie I (c.1790-c.1820), Nanan Kouame Toto (c.1820-c.1840), Kouakou Anougble I (c.1840-c.1870), Nanan Toto Diby (c.1870-c.1880), Anougble Dieke (c.1880-c.1890), Kouame Tchecke I (c.1890-1902), Kouadio N'Dri (1902-1925), Nanan Kouakou Anougble II (1925-1958), Nanan Kouakou Djie II (1959-1978), Nanan Kouakou Anougble III (1995-2016), Nanan N'Ga Tanou Monique (2016-present).",
       "relationsWithNeighbors": "Relations avec les peuples Guro, Bete, Dioula et Senufo lors de l'installation en Cote d'Ivoire. Separation symbolique et culturelle vis-a-vis de l'Ashanti (calendrier propre pour marquer l'independance). Le Baoulé V est un carrefour entre les zones forestieres du sud et les savanes du nord.",
       "conflictsOrAlliances": "Resistance prolongee contre la penetration coloniale francaise (1895-1911). Guerres intervillageoises locales lors de la periode de formation. Role politique dominant apres l'independance de 1960 grace a la presidence Houphouet-Boigny.",
       "diaspora": "Forte presence dans les grandes villes ivoiriennes (Abidjan, Bouake, Yamoussoukro). Expansion vers les zones forestieres du sud (Low Coast) comme planteurs de cacao, de caoutchouc et de cafe, parfois en situation de minorite numerique dans leurs zones d'installation. Presence dans la diaspora africaine en France et en Europe."
@@ -85,6 +86,42 @@
         "title": "Vogel, Susan M. – Baule: African Art, Western Eyes, Yale University Press, 1997",
         "url": null,
         "tier": "referenced"
+      },
+      {
+        "title": "Delafosse, Maurice – Essai de manuel de la langue agni parlée dans la moitié orientale de la Côte d'Ivoire, Paris, J. André, 1900, p. 159-164 et vocabulaire",
+        "url": "https://archive.org/details/essaidemanuelde00delagoog",
+        "tier": "referenced",
+        "notes": "Récit « La conquête du Baoulé », p. 159-163, et notes ; texte d'un manuel de langue, avec traduction littérale et traduction libre. Delafosse écrit que les textes lui ont été « dictés par des indigènes du Baoulé (Warèbo, Atoutou et Nzipouri) ». Dans le récit, Pokou dit : « On appellera ce pays Baoulé (c.-à-d. mort d'enfant) ». Note 28 : « Baule (pour ba au-le ou ba-au-re) signifie « mort d'enfant » ». Note 1 : la conquête du Baoulé est datée « vers 1730 ». Vocabulaire : « Baule-fwe, les gens du Baoulé » ; Baule désigne le pays, les gens et la langue."
+      },
+      {
+        "title": "Viti, Fabio – Les ruses de l'oral, la force de l'écrit. Le mythe baule d'Aura Poku, Cahiers d'études africaines, n° 196, 2009, p. 869-892",
+        "url": "https://journals.openedition.org/etudesafricaines/15689",
+        "tier": "referenced",
+        "notes": "Étude de dix versions complètes et sept fragments, recueillis entre 1986 et 2000 chez des Nanafoué, Nzikpri, Aitu et Warèbo. Il rapporte aussi les versions de Lasnet (1896, offrande d'une tunique et d'un pagne tissé de fils d'or) et de Perrot (1982, la victime est la fille d'Akwa Boni (la nièce et héritière de Pokou)), et le récit nzikpri (traversée de la Comoé sans sacrifice). Il écrit que la version de Delafosse est devenue le modèle des versions écrites suivantes et de la plupart des versions orales, et la date la crise de succession « autour de 1750 »."
+      },
+      {
+        "title": "Viti, Fabio – La Guerre au Baoulé : une ethnographie historique du fait guerrier, Éditions de la MSH, 2023, chap. 1, § 1",
+        "url": "https://books.openedition.org/editionsmsh/61681",
+        "tier": "referenced",
+        "notes": "« Le terme Baoulé a désigné d'abord un toponyme, sous les formes Bacorees ou Bahoree, dont les premières occurrences datent du début du XVIIe siècle (Weiskel 1978) ». Cette datation est celle de Weiskel (Cahiers d'études africaines, 72, 1978), citée par Viti. Il écrit aussi que des groupes déjà installés ont été refoulés ou absorbés."
+      },
+      {
+        "title": "Chauveau, Jean-Pierre – Note sur la place du Baoulé dans l'ensemble économique ouest-africain précolonial, ORSTOM, 1972, p. 4 et 10",
+        "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers11-05/05910.pdf",
+        "tier": "referenced",
+        "notes": "Document de travail de 1972. Il cite Bowdich (Mission from Cape Coast Castle to Ashantee, 1819, p. 169) : « A powerfull kingdom called Bahooree […] was described to be westward », récit du voyage de 1817 ; il y voit la première mention des Baoulé. Il cite aussi la carte de la Côte de l'Or du Service hydrographique de la Marine (1866-1867), qui mentionne le Baouré, et Fleuriot de Langle (1873), qui décrit Baouré comme une ville sur la lagune Guindé, d'après un informateur ébrié ; Chauveau identifie ce lieu au Baoulé."
+      },
+      {
+        "title": "Kakou, Foba Antoine – De l'asante/twi au baoulé…, Ziglôbitha, 2021, p. 119-132",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Il date le départ de 1718, après la mort d'Osei Tutu, et décrit une langue forgée sur l'asante, l'agni et d'autres langues."
+      },
+      {
+        "title": "Allou, Koumé René – Confusion dans l'histoire des Baoulé, à propos de deux reines : Abraha Pokou et Akoua Boni, Journal des africanistes, 73-1, 2003, p. 137-143",
+        "url": "https://www.persee.fr/doc/jafr_0399-0346_2003_num_73_1_1332",
+        "tier": "referenced",
+        "notes": "Cité pour son sujet : la confusion entre les deux reines Pokou et Akoua Boni."
       }
     ]
   },

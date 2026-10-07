@@ -103,7 +103,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
             figureRefs: ["probe-administration"],
           },
           {
-            cells: ["europ-", "121", "Navigateurs, explorateurs, cartographes"],
+            cells: ["europ-", "122", "Navigateurs, explorateurs, cartographes"],
             sourceRefs: [],
             figureRefs: ["probe-european"],
           },

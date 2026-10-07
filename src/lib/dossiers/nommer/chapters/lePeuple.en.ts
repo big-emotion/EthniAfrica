@@ -59,7 +59,7 @@ export const CHAPITRE_LE_PEUPLE_EN: DossierChapterTranslation = {
             "180",
             "The name is an act of census-taking before it is a fact of language",
           ],
-          ["europ-", "121", "Navigators, explorers, cartographers"],
+          ["europ-", "122", "Navigators, explorers, cartographers"],
           [
             "voisin (‘neighbour’)",
             "113",

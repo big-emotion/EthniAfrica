@@ -19,6 +19,7 @@ import { evaluateSourceUrl } from "@/lib/sources/authorized-source-catalog";
 import { parseKingdomPeriod } from "./afrik/parseKingdomPeriod";
 import { parseRelationFile } from "../src/lib/afrik/parsers/relationParser";
 import { parseDossierFile } from "../src/lib/afrik/parsers/dossierParser";
+import { parsePlaceFile } from "../src/lib/afrik/parsers/placeParser";
 import { applyDossierTranslation } from "../src/lib/dossiers/translation";
 import { parseNameRecordFile } from "../src/lib/afrik/parsers/nameRecordParser";
 import { parsePatronymeFile } from "../src/lib/afrik/parsers/patronymeParser";
@@ -4148,6 +4149,77 @@ export function checkDossierFicheModel(datasetRoot: string): ValidationResult {
 }
 
 /**
+ * LOC_* place fiches (REQ-193, DEC-069) — strict shape, identifier equal to
+ * the filename, and links that resolve. A place points outward to its country
+ * and peoples; nothing points back, so an unresolved link here is the only
+ * place the corpus can notice it. A form resting on no `official` or
+ * `referenced` source is reported, never refused (DEC-055).
+ */
+export function checkPlaceFicheModel(datasetRoot: string): ValidationResult {
+  const errors: string[] = [];
+  const warnings: string[] = [];
+  const placeDir = path.join(datasetRoot, "lieux");
+
+  if (!fs.existsSync(placeDir)) return { ok: true, errors, warnings };
+
+  const pplIds = loadPplIds(datasetRoot);
+
+  for (const file of fs
+    .readdirSync(placeDir)
+    .filter((f) => f.endsWith(".json"))) {
+    let raw: unknown;
+    try {
+      raw = JSON.parse(fs.readFileSync(path.join(placeDir, file), "utf-8"));
+    } catch {
+      errors.push(`REQ-193: ${file}: could not parse JSON`);
+      continue;
+    }
+
+    const parsed = parsePlaceFile(raw);
+    if (!parsed.success || !parsed.data) {
+      for (const message of parsed.errors) {
+        errors.push(`REQ-193: ${file}: ${message}`);
+      }
+      continue;
+    }
+
+    const place = parsed.data;
+
+    if (file !== `${place.id}.json`) {
+      errors.push(`REQ-193: ${file}: file should be named ${place.id}.json`);
+    }
+
+    if (
+      !fs.existsSync(path.join(datasetRoot, "pays", `${place.countryId}.json`))
+    ) {
+      errors.push(
+        `REQ-193: ${file}: countryId "${place.countryId}" does not resolve to an existing country fiche`
+      );
+    }
+
+    for (const { peopleId } of place.associatedPeoples) {
+      if (!pplIds.has(peopleId)) {
+        errors.push(
+          `REQ-193: ${file}: peopleId "${peopleId}" does not resolve to an existing PPL fiche`
+        );
+      }
+    }
+
+    for (const name of place.names) {
+      const standing = unauthoritativeStanding([
+        ...name.sources,
+        ...name.accounts.flatMap((account) => account.sources),
+      ]);
+      if (standing) {
+        warnings.push(`REQ-193: ${file}: form "${name.nameText}" ${standing}`);
+      }
+    }
+  }
+
+  return { ok: errors.length === 0, errors, warnings };
+}
+
+/**
  * True when a source is `official` or `referenced`. `unverified` and the
  * unadjudicated `needs_review` are legal standings that publish; they only
  * decide whether a record is reported as resting on neither.
@@ -4821,7 +4893,9 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // filled on the most-searched peoples, each one a key the model declares.
   // 7006 -> 7005 on 2026-10-07: PPL_TIV gained `spellingAliases` when the
   // spelling note was moved out of its self-appellation.
-  peuple: 7005,
+  // 7005 -> 7004 on 2026-10-07: PPL_BAOULE gained `spellingAliases` for the
+  // 19th-century spellings its sources attest.
+  peuple: 7004,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
@@ -5955,6 +6029,12 @@ async function main() {
   newChecks.push({
     name: "REQ-114 Dossier fiche model",
     result: checkDossierFicheModel(datasetRoot),
+  });
+
+  console.log("REQ-193 - Place fiche model (strict shape + links resolve)...");
+  newChecks.push({
+    name: "REQ-193 Place fiche model",
+    result: checkPlaceFicheModel(datasetRoot),
   });
 
   console.log(
