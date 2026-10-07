@@ -15,6 +15,11 @@ vi.mock("@/lib/supabase/queries/afrik/searchNaming", () => ({
   searchNamingKey: (type: string, id: string) => `${type}:${id}`,
 }));
 
+vi.mock("@/lib/supabase/queries/afrik/searchAnswer", () => ({
+  loadSearchAnswerExtras: vi.fn(async () => new Map()),
+  searchAnswerKey: (type: string, id: string) => `${type}:${id}`,
+}));
+
 import { ftsSearchEntities } from "@/lib/supabase/queries/afrik/search";
 import { ftsSearch } from "@/api/v2/services/searchService";
 import { ftsSearchHandler } from "@/api/v2/handlers/search";

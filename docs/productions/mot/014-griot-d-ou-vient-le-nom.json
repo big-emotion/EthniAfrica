@@ -12,7 +12,77 @@
   "sitePath": "/fr/about",
   "word": {
     "label": { "fr": "griot", "en": "griot" },
-    "queries": ["griot", "griots"]
+    "queries": ["griot", "griots", "griottes", "jeli", "djeli", "gewel"]
+  },
+  "answer": {
+    "lead": {
+      "fr": "« Griot » est le mot français ; les intéressés disent jeli, gewel ou gawlo selon leur langue. Le mot français est écrit dès 1637 et son origine reste débattue.",
+      "en": "« Griot » is the French word; the people concerned say jeli, gewel or gawlo depending on their language. The French word is written from 1637 and its origin is still debated."
+    },
+    "origin": [
+      {
+        "text": {
+          "fr": "La plus ancienne forme écrite est « guiriot », chez le missionnaire capucin Alexis de Saint-Lô, qui a voyagé sur la côte de la Sénégambie en 1634-1635 et publié en 1637.",
+          "en": "The oldest written form is « guiriot », in the Capuchin missionary Alexis de Saint-Lô, who travelled the Senegambian coast in 1634-1635 and published in 1637."
+        },
+        "attribution": "written"
+      },
+      {
+        "text": {
+          "fr": "Une explication y voit le portugais criado, « celui qui a été élevé dans la maison du maître », publiée par Henri Labouret en 1951.",
+          "en": "One explanation sees Portuguese criado, « one raised in the master's house », published by Henri Labouret in 1951."
+        },
+        "attribution": "linguistic"
+      },
+      {
+        "text": {
+          "fr": "Une autre y voit un mot de la région : le wolof gueroual, publié en 1882, ou le peul gawlo, publié en 1985. Pour ces deux mots, les preuves linguistiques manquent encore.",
+          "en": "Another sees a word of the region: Wolof gueroual, published in 1882, or Fulbe gawlo, published in 1985. For both words, the linguistic evidence is still missing."
+        },
+        "attribution": "linguistic"
+      },
+      {
+        "text": {
+          "fr": "Charles Bird a proposé une forme ancienne du mot mandé, que les Français auraient entendue « gerio ». L'historien David Conrad le conteste : les Français avaient peu de contacts avec l'intérieur, où l'on dit jeli.",
+          "en": "Charles Bird proposed an early form of the Mande word, which the French may have heard as « gerio ». The historian David Conrad disputes it: the French had little contact with the interior, where people say jeli."
+        },
+        "attribution": "linguistic"
+      },
+      {
+        "text": {
+          "fr": "Une autre, développée par Thomas Hale en 1997, y voit un long chemin : ghana, gnawa, agenaou (mot berbère pour les Africains noirs), guineo en espagnol, puis guiriot en français. Il la présente comme une hypothèse, pas comme une certitude.",
+          "en": "Another, developed by Thomas Hale in 1997, sees a long route: ghana, gnawa, agenaou (a Berber word for Black Africans), Spanish guineo, then French guiriot. He presents it as a hypothesis, not a certainty."
+        },
+        "attribution": "linguistic"
+      }
+    ],
+    "path": [
+      {
+        "form": "jeli · jali",
+        "language": "maninka · bambara · mandinka"
+      },
+      {
+        "form": "gewel",
+        "language": "wolof"
+      },
+      {
+        "form": "gawlo",
+        "language": "peul"
+      },
+      {
+        "form": "iggio",
+        "language": "maure"
+      },
+      {
+        "form": "guiriot",
+        "language": "français",
+        "period": "1637"
+      }
+    ],
+    "followUp": {
+      "fr": "Pourquoi tant de peuples ont-ils chacun leur propre mot pour dire griot ?",
+      "en": "Why does each of so many peoples have its own word for griot?"
+    }
   },
   "publications": [
     {

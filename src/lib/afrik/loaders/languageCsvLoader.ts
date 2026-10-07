@@ -63,6 +63,10 @@ export interface LanguageRecord {
   vehicularRole?: string | null;
   /** The fiche declares that the origin of this name is debated (`content.originDebated`). */
   originDebated?: boolean;
+  /** Sentences a fiche writes for the answer page (`content.searchAnswer`). */
+  searchAnswer?: { lead?: string; followUp?: string };
+  /** Declared speaker estimates by country (`content.speakers`). */
+  speakers?: { byCountry: unknown[] };
   dialects?: string[];
   vitalityStatus?: {
     status: string;

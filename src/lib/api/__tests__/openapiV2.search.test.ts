@@ -251,6 +251,33 @@ describe("OpenAPI v2 unified search contract", () => {
     }
   });
 
+  // @req REQ-178
+  it("attaches the answer optionally, so the change never breaks a client", () => {
+    for (const name of [
+      "PeopleV2",
+      "CountryV2",
+      "LanguageFamilyV2",
+      "PatronymeSearchResultV2",
+      "LanguageSearchResultV2",
+    ]) {
+      expect(schemas[name]?.properties?.answer, name).toEqual({
+        $ref: "#/components/schemas/SearchAnswerV2",
+      });
+      expect(schemas[name]?.required ?? [], name).not.toContain("answer");
+    }
+  });
+
+  // @req REQ-178
+  it("documents speaker estimates as a declared figure, never a sum of peoples", () => {
+    const where = schemas.SearchAnswerV2?.properties?.where;
+
+    expect(where?.properties?.unit?.enum).toContain("speakers");
+    expect(where?.description).toMatch(/never a sum/);
+    expect(schemas.SearchAnswerV2?.required).toEqual(
+      expect.arrayContaining(["kind", "title", "what", "names", "sources"])
+    );
+  });
+
   // @req REQ-121
   it("projects the quiz stem and never the answer", () => {
     const quiz = schemas.QuizSearchResultV2;

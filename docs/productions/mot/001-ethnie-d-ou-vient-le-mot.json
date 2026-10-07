@@ -12,7 +12,44 @@
   "sitePath": "/fr/about",
   "word": {
     "label": { "fr": "ethnie", "en": "ethnie" },
-    "queries": ["ethnie", "ethnies"]
+    "queries": ["ethnie", "ethnies", "ethnic group", "ethnic groups"]
+  },
+  "answer": {
+    "lead": {
+      "fr": "« Ethnie » est un mot français récent, tiré du grec ancien ethnos. Georges Vacher de Lapouge, théoricien de la race, l'écrit dans un livre publié en 1896.",
+      "en": "« Ethnie » is a recent French word, taken from ancient Greek ethnos. Georges Vacher de Lapouge, a race theorist, writes it in a book published in 1896."
+    },
+    "origin": [
+      {
+        "text": {
+          "fr": "Dans Les Sélections sociales, publié en 1896, Georges Vacher de Lapouge écrit : « J'ai proposé ethne ou ethnie », parce que « race », « peuple » et « nation » lui semblent des termes impropres.",
+          "en": "In Les Sélections sociales, published in 1896, Georges Vacher de Lapouge writes: « I proposed ethne or ethnie », because « race », « people » and « nation » seem improper terms to him."
+        },
+        "attribution": "written"
+      },
+      {
+        "text": {
+          "fr": "Le mot grec ethnos désignait chez les Grecs des peuples qui n'étaient pas organisés en cités-États.",
+          "en": "The Greek word ethnos named, among the Greeks, peoples that were not organised into city-states."
+        },
+        "attribution": "written"
+      }
+    ],
+    "path": [
+      {
+        "form": "ethnos",
+        "language": "grec ancien"
+      },
+      {
+        "form": "ethne · ethnie",
+        "language": "français",
+        "period": "attesté en 1896"
+      }
+    ],
+    "followUp": {
+      "fr": "Comment des peuples d'Afrique se nomment-ils eux-mêmes ?",
+      "en": "What do African peoples call themselves?"
+    }
   },
   "publications": [
     {

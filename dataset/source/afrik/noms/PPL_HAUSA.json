@@ -26,8 +26,17 @@
           "url": "https://www.ethnologue.com/language/hau/",
           "tier": "official",
           "notes": ""
+        },
+        {
+          "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
+          "author": "Mahdi Adamu",
+          "year": 1985,
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+          "tier": "official",
+          "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. Page 295 : le mot Hawsa désignait d'abord la langue ; les gens du pays hawsa s'appelaient eux-mêmes Hausawa, « ceux qui parlent hawsa »."
         }
-      ]
+      ],
+      "shortLine": "Le nom que les Haoussa se donnent au pluriel : ceux qui parlent haoussa."
     }
   ]
 }

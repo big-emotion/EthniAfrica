@@ -14,6 +14,39 @@
     "label": { "fr": "Afrique", "en": "Africa" },
     "queries": ["afrique", "africa"]
   },
+  "answer": {
+    "lead": {
+      "fr": "Pour les Romains, « Afrique » ne nommait qu'une région d'Afrique du Nord. L'origine du mot n'est pas établie.",
+      "en": "For the Romans, « Africa » named only a region of North Africa. The origin of the word is not settled."
+    },
+    "origin": [
+      {
+        "text": {
+          "fr": "Une explication y voit le nom d'un peuple du nord de la Tunisie actuelle, que les Romains appelaient Afri, Afer ou Ifir : Africa serait « la terre des Afri ». Aucun texte ancien ne le confirme directement.",
+          "en": "One explanation sees the name of a people of what is now northern Tunisia, whom the Romans called Afri, Afer or Ifir: Africa would be « the land of the Afri ». No ancient text confirms it directly."
+        },
+        "attribution": "written"
+      },
+      {
+        "text": {
+          "fr": "Une autre le tire du latin aprica, « ensoleillé, chaud ».",
+          "en": "Another takes it from Latin aprica, « sunny, hot »."
+        },
+        "attribution": "written"
+      },
+      {
+        "text": {
+          "fr": "Léon l'Africain le tirait du grec a-phrike, « sans froid » ou « sans horreur ».",
+          "en": "Leo Africanus took it from Greek a-phrike, « without cold » or « without horror »."
+        },
+        "attribution": "written"
+      }
+    ],
+    "followUp": {
+      "fr": "Quels noms portait le continent avant « Afrique » ?",
+      "en": "What names did the continent carry before « Africa »?"
+    }
+  },
   "publications": [
     {
       "network": "tiktok",

@@ -64,6 +64,10 @@ function persistedContent(language: LanguageRecord): Record<string, unknown> {
     ...(language.originDebated === undefined
       ? {}
       : { originDebated: language.originDebated }),
+    ...(language.searchAnswer === undefined
+      ? {}
+      : { searchAnswer: language.searchAnswer }),
+    ...(language.speakers === undefined ? {} : { speakers: language.speakers }),
     ...(language.dialects === undefined ? {} : { dialects: language.dialects }),
     ...(language.vitalityStatus === undefined
       ? {}

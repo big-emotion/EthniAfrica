@@ -39,6 +39,50 @@
       "lead": "Une langue du bassin du Congo, l'une des quatre langues nationales de la RD Congo, parlée à Kinshasa et à Brazzaville.",
       "followUp": "Comment le lingala s'est-il répandu, et d'où vient son nom ?"
     },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "COD",
+          "speakers": 34000000,
+          "source": {
+            "title": "Estimations d'ensemble : Wikipedia (Lingala, 2024), APiCS Online (Lingala), SIL Ethnologue (lin)",
+            "url": null,
+            "tier": "unverified",
+            "notes": "Langue maternelle et langue commune d'échange confondues ; c'est la grande majorité des personnes qui parlent le lingala. Ce chiffre par pays vient de notre propre compilation antérieure (fiche du peuple lingala), que nous n'avons pas pu relier à une source lue. APiCS Online (environ 15 millions de personnes dont le lingala est la langue maternelle, 10 millions qui l'utilisent comme langue commune d'échange) et Meeuwis 2025 (environ 45 millions, les deux groupes réunis) ne donnent que des totaux pour l'ensemble de la langue et ne le recoupent pas. Ordre de grandeur, ni recensement ni comptage."
+          }
+        },
+        {
+          "country": "COG",
+          "speakers": 4500000,
+          "source": {
+            "title": "Estimations d'ensemble : Wikipedia (Lingala, 2024), APiCS Online (Lingala), SIL Ethnologue (lin)",
+            "url": null,
+            "tier": "unverified",
+            "notes": "Langue maternelle et langue commune d'échange confondues ; langue commune d'échange dans le centre et le nord, notamment à Brazzaville. Ce chiffre par pays vient de notre propre compilation antérieure (fiche du peuple lingala), que nous n'avons pas pu relier à une source lue. APiCS Online (environ 15 millions de personnes dont le lingala est la langue maternelle, 10 millions qui l'utilisent comme langue commune d'échange) et Meeuwis 2025 (environ 45 millions, les deux groupes réunis) ne donnent que des totaux pour l'ensemble de la langue et ne le recoupent pas. Ordre de grandeur, ni recensement ni comptage."
+          }
+        },
+        {
+          "country": "CAF",
+          "speakers": 800000,
+          "source": {
+            "title": "Estimations d'ensemble : Wikipedia (Lingala, 2024), APiCS Online (Lingala), SIL Ethnologue (lin)",
+            "url": null,
+            "tier": "unverified",
+            "notes": "Langue maternelle et langue commune d'échange confondues ; surtout comme langue de commerce dans les régions proches du Congo. Ce chiffre par pays vient de notre propre compilation antérieure (fiche du peuple lingala), que nous n'avons pas pu relier à une source lue. APiCS Online (environ 15 millions de personnes dont le lingala est la langue maternelle, 10 millions qui l'utilisent comme langue commune d'échange) et Meeuwis 2025 (environ 45 millions, les deux groupes réunis) ne donnent que des totaux pour l'ensemble de la langue et ne le recoupent pas. Ordre de grandeur, ni recensement ni comptage."
+          }
+        },
+        {
+          "country": "AGO",
+          "speakers": 300000,
+          "source": {
+            "title": "Estimations d'ensemble : Wikipedia (Lingala, 2024), APiCS Online (Lingala), SIL Ethnologue (lin)",
+            "url": null,
+            "tier": "unverified",
+            "notes": "Langue maternelle et langue commune d'échange confondues ; communautés lingalaphones dans la région de Cabinda et diaspora congolaise. Ce chiffre par pays vient de notre propre compilation antérieure (fiche du peuple lingala), que nous n'avons pas pu relier à une source lue. APiCS Online (environ 15 millions de personnes dont le lingala est la langue maternelle, 10 millions qui l'utilisent comme langue commune d'échange) et Meeuwis 2025 (environ 45 millions, les deux groupes réunis) ne donnent que des totaux pour l'ensemble de la langue et ne le recoupent pas. Ordre de grandeur, ni recensement ni comptage."
+          }
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Glottolog 5.3 — Lingala (ling1263)",

@@ -213,8 +213,9 @@
       },
       {
         "title": "CIA World Factbook – Zambia (ethnic groups, 2010 census)",
-        "url": null,
-        "tier": "needs_review"
+        "url": "https://web.archive.org/web/20260115/https://www.cia.gov/the-world-factbook/countries/zambia/",
+        "tier": "official",
+        "notes": "Répartition des groupes ethniques d'après le recensement de 2010, lue dans une copie archivée de janvier 2026 ; la publication a cessé d'être mise à jour début 2026. Les Lunda y sont comptés pour le nord-ouest seulement ; aucune fiche de notre projet ne correspond sans ambiguïté aux Lunda du nord-ouest ; la fiche Lala-Lamba décrit une désignation commune et non un peuple, d'où l'absence de lien pour les Lamba."
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
@@ -234,9 +235,8 @@
       "peoples": [
         {
           "name": "Bemba",
-          "percentageInCountry": 21,
-          "percentageInAfrica": 2.5,
           "peopleId": "PPL_BEMBA",
+          "percentageInCountry": 21,
           "region": "Nord (Northern Province, Luapula, Copperbelt)",
           "languageFamily": "FLG_BANTU"
         },
@@ -246,11 +246,91 @@
           "percentageInCountry": 13.6
         },
         {
+          "name": "Chewa",
+          "peopleId": "PPL_CHEWA",
+          "percentageInCountry": 7.4
+        },
+        {
+          "name": "Lozi",
+          "peopleId": "PPL_LOZI",
+          "percentageInCountry": 5.7
+        },
+        {
+          "name": "Nsenga",
+          "peopleId": "PPL_NSENGA",
+          "percentageInCountry": 5.3
+        },
+        {
+          "name": "Tumbuka",
+          "peopleId": "PPL_TUMBUKA",
+          "percentageInCountry": 4.4
+        },
+        {
+          "name": "Ngoni",
+          "peopleId": "PPL_NGONI",
+          "percentageInCountry": 4
+        },
+        {
+          "name": "Lala",
+          "peopleId": "PPL_LALA",
+          "percentageInCountry": 3.1
+        },
+        {
+          "name": "Kaonde",
+          "peopleId": "PPL_KAONDE",
+          "percentageInCountry": 2.9
+        },
+        {
+          "name": "Namwanga",
+          "peopleId": "PPL_NAMWANGA",
+          "percentageInCountry": 2.8
+        },
+        {
+          "name": "Lunda (nord-ouest)",
+          "percentageInCountry": 2.6
+        },
+        {
+          "name": "Mambwe",
+          "peopleId": "PPL_MAMBWE",
+          "percentageInCountry": 2.5
+        },
+        {
+          "name": "Luvale",
+          "peopleId": "PPL_LUVALE",
+          "percentageInCountry": 2.2
+        },
+        {
+          "name": "Lamba",
+          "percentageInCountry": 2.1
+        },
+        {
+          "name": "Ushi",
+          "peopleId": "PPL_USHI",
+          "percentageInCountry": 1.9
+        },
+        {
+          "name": "Lenje",
+          "peopleId": "PPL_LENJE",
+          "percentageInCountry": 1.6
+        },
+        {
+          "name": "Bisa",
+          "peopleId": "PPL_BISA",
+          "percentageInCountry": 1.6
+        },
+        {
+          "name": "Mbunda",
+          "peopleId": "PPL_MBUNDA",
+          "percentageInCountry": 1.2
+        },
+        {
           "name": "Autres groupes ethniques",
-          "peopleId": null,
-          "region": "Divers",
-          "languageFamily": null,
-          "percentageInCountry": 65
+          "percentageInCountry": 13.8,
+          "region": "Divers"
+        },
+        {
+          "name": "Non précisé",
+          "percentageInCountry": 0.4
         }
       ]
     }

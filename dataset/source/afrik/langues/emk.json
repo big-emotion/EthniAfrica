@@ -20,7 +20,7 @@
     "Maninkakan",
     "Southern Maninka"
   ],
-  "whyProblematic": null,
+  "whyProblematic": "Maninkakan est le nom de cette langue. Selon Johnston et Cana (1911), « Mandingo » serait une déformation de Mande-nka, « gens du Mandé », et l'origine du mot Mandé est débattue. Pour Binger, Delafosse et Desplagnes, qu'ils citent, il se rattache à mali, « hippopotame » ou « lamantin », Johnston et Cana penchant pour le lamantin ; Desplagnes y voyait ma, « poisson », et nde, « père », ce que Johnston et Cana écartent faute d'avoir trouvé ce sens de ma dans les parlers mandingues qu'ils connaissaient. Nous n'avons trouvé que des auteurs européens de 1911 sur ce point, et aucun récit maninka de l'origine de ce nom ; ces lectures ne sont pas départagées ici.",
   "spellingAliases": [],
   "familyId": "FLG_MANDE",
   "peoples": [
@@ -55,7 +55,18 @@
         "url": "https://iso639-3.sil.org/code_tables/download_tables",
         "tier": "official",
         "notes": "Tables du 2026-07-15, consultées le 2026-09-16. La table des macrolangues rattache le code emk à la macrolangue man, Mandingo, aux côtés notamment du mandinka. Les codes du bambara et du dioula, eux, n'appartiennent à aucune macrolangue. Un même continuum mandingue est donc coupé de deux façons selon le code, ce qui montre que le partage entre langue et dialecte est ici une décision de codification, prise code par code par un organisme, et non une frontière relevée sur le terrain."
+      },
+      {
+        "title": "Henry H. Johnston et Frank R. Cana, Mandingo, Encyclopædia Britannica, 11e édition, 1911",
+        "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Mandingo",
+        "tier": "referenced",
+        "notes": "Notice lue sur Wikisource : « Mandingo » serait une déformation de Mande-nka, « gens du Mandé » ; Mandé est rattaché à mali, « hippopotame » ou « lamantin », selon Binger, Delafosse et Desplagnes ; l'explication de Desplagnes par ma et nde est écartée par les auteurs. Texte de 1911, non confronté à des travaux récents."
       }
     ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred: the English sidecar for this language record has not been produced yet."
+    }
   }
 }

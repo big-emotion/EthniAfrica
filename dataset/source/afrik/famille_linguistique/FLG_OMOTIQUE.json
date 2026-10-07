@@ -3,6 +3,10 @@
   "nameFr": "Omotique",
   "nameEn": "Omotic",
   "content": {
+    "searchAnswer": {
+      "lead": "Des langues du sud-ouest de l'Éthiopie, autour de la vallée de l'Omo. Le nom a été créé par le linguiste Harold Fleming en 1969 ; l'unité du groupe est discutée.",
+      "followUp": "Pourquoi l'unité de ces langues est-elle discutée ?"
+    },
     "decolonialHeader": {
       "selfAppellation": null,
       "contemporaryUsage": " Ensemble de langues situées principalement au sud-ouest de l'Éthiopie, parlées par plusieurs dizaines de groupes agricoles dans la vallée de l'Omo et les régions environnantes. Reconnue comme une branche indépendante de la famille afro-asiatique depuis les travaux de Fleming (1969) et Bender (1975), bien que certains linguistes (notamment concernant les sous-groupes Mao et Aroid) remettent en question l'appartenance complète à l'afro-asiatique ou suggèrent des influences nilo-sahariennes.",
