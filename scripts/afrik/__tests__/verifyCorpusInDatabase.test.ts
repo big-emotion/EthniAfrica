@@ -150,7 +150,7 @@ describe("buildCorpusExpectations", () => {
     });
   });
 
-  // @req REQ-032
+  // @req REQ-136
   it("expects a language's content exactly as the loader persists it, fields the fiche declares included", () => {
     const grebo = {
       id: "grb",

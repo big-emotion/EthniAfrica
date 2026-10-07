@@ -47,6 +47,8 @@ function errorMessage(error: unknown): string {
 /**
  * Exported so the post-sync verifier compares against this very projection:
  * a hand-kept copy drifted when a fiche field was added (grb, 2026-10-07).
+ *
+ * @req REQ-136
  */
 export function persistedContent(
   language: LanguageRecord
