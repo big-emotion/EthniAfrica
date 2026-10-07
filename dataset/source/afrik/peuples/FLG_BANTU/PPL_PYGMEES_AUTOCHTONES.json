@@ -1,12 +1,12 @@
 {
   "id": "PPL_PYGMEES_AUTOCHTONES",
-  "nameMain": "Peuples autochtones des forets d'Afrique centrale (Baka, Bagyeli, Bedzan)",
+  "nameMain": "Peuples autochtones des forêts d'Afrique centrale (Baka, Bagyeli, Bedzan)",
   "languageFamilyId": "FLG_BANTU",
   "currentCountries": ["CMR", "GAB", "COG", "CAF"],
   "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {
-      "mainName": "Peuples autochtones des forets / Chasseurs-cueilleurs forestiers",
+      "mainName": "Peuples autochtones des forêts / Chasseurs-cueilleurs forestiers",
       "selfAppellation": "Baka (se disent Baka ou Bayaka), Bagyeli (se disent Bagyeli ou Bakola), Bedzan (se disent Bedzan ou Medzan)",
       "exonyms": [
         "Pygmée",

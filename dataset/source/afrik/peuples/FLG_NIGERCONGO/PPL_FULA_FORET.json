@@ -1,11 +1,11 @@
 {
   "id": "PPL_FULA_FORET",
-  "nameMain": "Fula (Foret)",
+  "nameMain": "Fula (Forêt)",
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["GIN", "CIV", "CMR", "GAB"],
   "content": {
     "appellations": {
-      "mainName": "Fula (Foret)",
+      "mainName": "Fula (Forêt)",
       "selfAppellation": "Fulbe (pluriel), Pullo (singulier)",
       "exonyms": [
         "Peul forestier (francais)",
