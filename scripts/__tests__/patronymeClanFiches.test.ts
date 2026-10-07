@@ -143,19 +143,15 @@ describe("ETNI-1684 first clan-name dossiers", () => {
       );
 
       // A gap is declared for an empty field and for nothing else.
-      // A filled origin may keep its gap: the accounts found say where the
-      // clan comes from, and the gap says that the meaning of the word is
-      // still unsettled — a silence the lists cannot carry themselves.
-      const originFilled =
-        raw.origin.oralTraditions.length > 0 ||
-        raw.origin.writtenChronicles.length > 0 ||
-        raw.origin.linguisticReconstructions.length > 0 ||
-        (raw.origin.historicalSyntheses ?? []).length > 0;
-      const gapPaths = (raw.gaps as Array<{ fieldPath: string }>)
-        .map(({ fieldPath }) => fieldPath)
-        .filter((fieldPath) => !(originFilled && fieldPath === "origin"));
+      const gapPaths = (raw.gaps as Array<{ fieldPath: string }>).map(
+        ({ fieldPath }) => fieldPath
+      );
       const emptyFields = [
-        originFilled ? null : "origin",
+        raw.origin.oralTraditions.length === 0 &&
+        raw.origin.writtenChronicles.length === 0 &&
+        raw.origin.linguisticReconstructions.length === 0
+          ? "origin"
+          : null,
         raw.alliances.length === 0 ? "alliances" : null,
         raw.casteOrSocialFunction === null ? "casteOrSocialFunction" : null,
         raw.bearers.length === 0 ? "bearers" : null,
