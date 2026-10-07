@@ -34,6 +34,11 @@
         "claim": "Le titre complet était « Ngola a Kiluanje », souvent raccourci en « Ngola », d'où le nom du pays actuel, l'Angola. Cette phrase est donnée sans renvoi à une source.",
         "claimStatus": "claimed",
         "sourceRefs": ["wikipedia-en-ngola-title"]
+      },
+      {
+        "claim": "La reine Nzinga, réfugiée au Matamba, signait sa correspondance du titre Nzinga Mbandi Ngola, c'est-à-dire reine du Ndongo et du Matamba. Ici ngola figure donc dans un titre de reine, non dans un nom de famille.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["unesco-nzinga-mbandi-unit"]
       }
     ]
   },
@@ -70,7 +75,7 @@
       "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
       "tier": "official",
       "source_kind": "intergovernmental",
-      "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de J. Vansina. Pages imprimées : l'État de Ndongo, dont le roi portait le titre de ngola, qui donna ensuite le mot Angola (p. 605) ; la colonie qui serait appelée Angola, du titre du roi du Ndongo (p. 613) ; des Afro-Portugais à la cour du ngola, le massacre des Portugais de sa cour en 1579, et le ngola représenté par sa sœur Nzinga Mbande au traité de 1622-1623 (p. 614)."
+      "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de J. Vansina. Pages imprimées : l'État de Ndongo, dont le roi portait le titre de ngola, qui donna ensuite le mot Angola (p. 604) ; la colonie qui serait appelée Angola, du titre du roi du Ndongo (p. 613) ; des Afro-Portugais à la cour du ngola, le massacre des Portugais de sa cour en 1579, et le ngola représenté par sa sœur Nzinga Mbande au traité de 1622-1623 (p. 615)."
     },
     {
       "sourceKey": "wikipedia-en-ngola-title",
@@ -79,9 +84,21 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Article consulté en octobre 2026 dans sa version anglaise. La phrase sur le titre complet et sur l'Angola n'y porte aucune note. L'article renvoie, pour la phrase qui présente le titre du roi du Ndongo, à Mark R. Lipschutz et R. Kent Rasmussen, Dictionary of African Historical Biography (University of California Press, 1989), p. 150, et à un article de Longreads de 2019 pour la reine Njinga ; nous n'avons consulté aucun de ces textes dans l'original. Il ne donne pas le sens du mot ngola."
+    },
+    {
+      "sourceKey": "unesco-nzinga-mbandi-unit",
+      "title": "Nzinga Mbandi: Queen of Ndongo and Matamba — General History of Africa, Pedagogical Unit (UNESCO, 2014)",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Nzinga_Mbandi_Queen_of_Ndongo_and_Matamba_English.pdf",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, texte de Serbin et Joubeaud, 2014. Pages du PDF : la reine, même après avoir fui au Matamba qu'elle avait pris, signait sa correspondance du titre Nzinga Mbandi Ngola, soit reine du Ndongo et du Matamba (p. 45, § 1.5) ; son nom s'écrit de nombreuses façons, en partie à cause de la transcription du kimbundu, et parce qu'elle signait elle-même sous des noms différents (p. 48, § 3.1). Le document ne parle pas de clan."
     }
   ],
   "gaps": [
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Les sources consultées décrivent ngola comme le titre du roi du Ndongo, puis comme un élément du titre de la reine Nzinga ; aucune ne parle d'un clan. La classe « nom de clan » reste celle de notre relevé, faute d'une classe prévue pour un titre."
+    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."

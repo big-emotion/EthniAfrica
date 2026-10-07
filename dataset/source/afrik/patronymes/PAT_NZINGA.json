@@ -34,6 +34,11 @@
         "claim": "Le même nom se trouve chez des rois du Kongo : Nzinga Nkuwu, puis son fils Nzinga Mbemba, connu aussi sous le nom d'Afonso Ier, qui lui succède en 1506. Aucune source consultée ne dit si ce nom a le même sens que celui de la reine du Ndongo.",
         "claimStatus": "claimed",
         "sourceRefs": ["hga-v-vansina"]
+      },
+      {
+        "claim": "Le nom de la reine s'écrit de nombreuses façons (Njinga Mbande, Nzinga Mbandi, Jinga, Ginga, Zinga, Ngola Nzinga, entre autres), en partie à cause de la transcription du kimbundu, et parce qu'elle signait elle-même sous des noms différents. Elle signait sa correspondance du titre Nzinga Mbandi Ngola, c'est-à-dire reine du Ndongo et du Matamba.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["unesco-nzinga-mbandi-unit"]
       }
     ]
   },
@@ -78,10 +83,22 @@
       "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
       "tier": "official",
       "source_kind": "intergovernmental",
-      "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de J. Vansina. Page imprimée : Nzinga Mbemba, connu aussi sous le nom d'Afonso Ier, succède à son père Nzinga Nkuwu en 1506 (p. 605). Le même chapitre nomme Nzinga Mbande, sœur du roi du Ndongo, baptisée Anna à Luanda, puis reine en 1626 (p. 614). Il ne donne aucun sens au nom."
+      "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de J. Vansina. Page imprimée : Nzinga Mbemba, connu aussi sous le nom d'Afonso Ier, succède à son père Nzinga Nkuwu en 1506 (p. 606). Le même chapitre nomme Nzinga Mbande, sœur du roi du Ndongo, baptisée Anna à Luanda, puis reine en 1626 (p. 615). Il ne donne aucun sens au nom."
+    },
+    {
+      "sourceKey": "unesco-nzinga-mbandi-unit",
+      "title": "Nzinga Mbandi: Queen of Ndongo and Matamba — General History of Africa, Pedagogical Unit (UNESCO, 2014)",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Nzinga_Mbandi_Queen_of_Ndongo_and_Matamba_English.pdf",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, texte de Serbin et Joubeaud, 2014. Pages du PDF : la reine, même après avoir fui au Matamba qu'elle avait pris, signait sa correspondance du titre Nzinga Mbandi Ngola, soit reine du Ndongo et du Matamba (p. 45, § 1.5) ; son nom s'écrit de nombreuses façons, en partie à cause de la transcription du kimbundu, et parce qu'elle signait elle-même sous des noms différents (p. 48, § 3.1). Le document ne parle pas de clan."
     }
   ],
   "gaps": [
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Les sources consultées décrivent Nzinga comme le nom d'une personne, la reine du Ndongo et du Matamba, et comme un nom porté par des rois du Kongo ; aucune ne parle d'un clan. La classe « nom de clan » reste celle de notre relevé, faute d'une classe prévue pour un nom de personne historique."
+    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
