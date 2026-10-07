@@ -23,7 +23,14 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [],
+    "historicalSyntheses": [
+      {
+        "claim": "Un récit tiré d'une biographie de Julius Nyerere rapporte que son père, le chef zanaki Burito, né en 1860, a reçu le nom Nyerere, qui veut dire « chenille » en zanaki, à cause d'une invasion de chenilles dans la région à sa naissance. Ce récit explique le nom d'une personne ; il ne dit pas si Nyerere est aussi un nom de clan.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["wikipedia-en-julius-nyerere"]
+      }
+    ]
   },
   "peoples": [
     {
@@ -51,13 +58,17 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Base de répartition patronymique consultée directement. Elle atteste Nyerere principalement en Tanzanie, mais n'en donne pas la signification et précise que la géographie ne suffit pas à attribuer une appartenance ethnique."
+    },
+    {
+      "sourceKey": "wikipedia-en-julius-nyerere",
+      "title": "Julius Nyerere — Wikipédia (version anglaise)",
+      "url": "https://en.wikipedia.org/wiki/Julius_Nyerere",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Article consulté en octobre 2026 dans sa version anglaise. Il donne ce récit en renvoyant à Thomas Molony, Nyerere: The Early Years (James Currey, 2014), p. 32, que nous n'avons pas consulté dans l'original."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Nyerere », « Nyamwezi », « Tanzania », « surname », « personal names », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », le répertoire tanzanien de noms de personnes et les études nyamwezi repérées, ainsi que la page Forebears dédiée n'ont livré aucune tradition attribuée, chronique ou étude linguistique propre à ce nom qui en établirait l'origine ; les rapprochements fondés sur la seule ressemblance ou la seule géographie ont été écartés."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "la recherche web et bibliographique combinant « Nyerere », « Nyamwezi », « Tanzania », « surname », « personal names », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », le répertoire tanzanien de noms de personnes et les études nyamwezi repérées, ainsi que la page Forebears dédiée n'ont pas établi que la catégorie de système nominal portée par la fiche provisoire décrive ce nom lui-même ; elle reste une hypothèse de classement et n'est pas transformée en fait."
@@ -81,6 +92,15 @@
     {
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Nyerere », « Nyamwezi », « Tanzania », « surname », « personal names », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », le répertoire tanzanien de noms de personnes et les études nyamwezi repérées, ainsi que la page Forebears dédiée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Le récit consulté situe le nom chez les Zanaki, dans le nord de la Tanzanie. Aucune source consultée ne le relie aux Nyamwezi, auxquels la fiche le rattache pour l'instant."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English publication is off (French-only mode); the sidecar will be produced in the translation wave for the patronymes batch."
+    }
+  }
 }

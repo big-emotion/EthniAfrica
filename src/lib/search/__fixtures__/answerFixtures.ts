@@ -212,7 +212,7 @@ const bassa: SearchAnswer = (() => {
 const lingala: SearchAnswer = (() => {
   const accounts: AnswerAccount[] = [
     {
-      text: "Des Européens auraient d'abord appelé « Bangala » le parler du poste de Bangala Station (1884-1885), puis des missionnaires l'auraient rebaptisé « Lingala » en 1901-1902.",
+      text: "Des Européens auraient d'abord appelé « Bangala » le parler du poste de Bangala Station (1884-1885), puis des missionnaires l'auraient rebaptisé « Lingala » en 1901-1902. Aucune source antérieure à 1902 ne mentionne le nom « Lingala ».",
       attribution: "written",
       claimStatus: "claimed",
       evidence: [
@@ -227,7 +227,7 @@ const lingala: SearchAnswer = (() => {
       ],
     },
     {
-      text: "Une autre lecture y voit un nom bobangi : Lingála et Mangála signifieraient « la langue des marchés ».",
+      text: "Une autre lecture y voit un nom bobangi : Lingála et Mangála signifieraient « la langue des marchés ». Selon cette lecture, le nom n'est pas une création missionnaire.",
       attribution: "linguistic",
       claimStatus: "claimed",
       evidence: [
@@ -452,7 +452,7 @@ const congoDemocratic: SearchAnswer = (() => {
 const camara: SearchAnswer = (() => {
   const accounts: AnswerAccount[] = [
     {
-      text: "Le nom viendrait d'un ancêtre : la lignée remonterait à Kela Mansa Subri, un guerrier venu de Djida.",
+      text: "Le nom viendrait d'un ancêtre : la lignée remonterait à Kela Mansa Subri, un guerrier venu de Djida. Les descendants de Kamanjan Boro, fils de Neni Mansa Kara, sont les premiers à avoir été appelés Kamara.",
       attribution: "oral",
       claimStatus: "claimed",
       evidence: [
@@ -463,7 +463,7 @@ const camara: SearchAnswer = (() => {
       ],
     },
     {
-      text: "L'épopée de Soundiata distingue deux branches : les Kamara de Sibi et les Kamara forgerons de Tabon, unis à Soundiata par une alliance.",
+      text: "L'épopée de Soundiata distingue deux branches : les Kamara de Sibi et les Kamara forgerons de Tabon, unis à Soundiata par une alliance. Elle fait sceller par Soundiata une alliance perpétuelle entre les Kamara de Sibi et les Keita du Manding.",
       attribution: "oral",
       claimStatus: "claimed",
       evidence: [
@@ -474,7 +474,7 @@ const camara: SearchAnswer = (() => {
       ],
     },
     {
-      text: "Souleymane Kanté rapporte un récit écrit en n'ko qui lit le nom comme « qu'il règne ».",
+      text: "Souleymane Kanté rapporte un récit écrit en n'ko qui lit le nom comme « qu'il règne ». Le même ouvrage compte six branches du nom : Tabon, Sibi, Gbakundo, Kidimaga, Somono et Fina Kamara.",
       attribution: "written",
       claimStatus: "claimed",
       evidence: [
@@ -563,10 +563,14 @@ const pharaon: WordAnswer = (() => {
       {
         network: "tiktok",
         url: "https://www.tiktok.com/@ethniafrica/photo/7692366804777274646",
+        format: "carrousel",
+        publishedAt: "2026-10-03",
       },
       {
         network: "instagram",
         url: "https://www.instagram.com/p/DeBtgAUiOYp/",
+        format: "carrousel",
+        publishedAt: "2026-10-03",
       },
     ],
     sources: { count: distinctSourceCount(accounts) },

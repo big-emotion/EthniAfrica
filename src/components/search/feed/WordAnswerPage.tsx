@@ -1,19 +1,22 @@
-import type { FlagFormTarget } from "@/components/flags/FlagForm";
 import { NamesBlock } from "@/components/search/answer/NamesBlock";
 import { NextQuestion } from "@/components/search/answer/NextQuestion";
 import { OriginBlock } from "@/components/search/answer/OriginBlock";
 import { SourcesLine } from "@/components/search/answer/SourcesLine";
 import { WhatBlock } from "@/components/search/answer/WhatBlock";
-import { OwedBlock } from "@/components/search/feed/OwedBlock";
-import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
+import {
+  ANSWER_BLOCK,
+  ANSWER_HEADING,
+} from "@/components/search/answer/answerStyle";
+import { formatProductionNameQuestion } from "@/lib/editorial/productionNameQuestion";
+import { articlesCopy } from "@/lib/i18n/copy/articles";
 import { wordAnswerCopy } from "@/lib/i18n/copy/wordAnswer";
+import { cn } from "@/lib/utils";
 import type { WordAnswer } from "@/lib/search/answer";
 import type { Language } from "@/types/shared";
 
 export interface WordAnswerPageProps {
   answer: WordAnswer;
   language?: Language;
-  contributionTarget: FlagFormTarget;
 }
 
 /**
@@ -32,17 +35,12 @@ export interface WordAnswerPageProps {
 export function WordAnswerPage({
   answer,
   language = "fr",
-  contributionTarget,
 }: WordAnswerPageProps) {
   const copy = wordAnswerCopy[language];
-  const owed = nameAnswerCopy[language];
-  const hasForms = answer.names.length > 1 || Boolean(answer.path?.length);
+  const hasForms = answer.names.length > 0 || Boolean(answer.path?.length);
 
   return (
-    <div
-      data-word-answer=""
-      className="grid min-w-0 gap-afh-5xl pt-afh-2xl text-afh-text min-[1200px]:pt-afh-5xl"
-    >
+    <div data-word-answer="" className="contents">
       <div className="grid gap-afh-lg">
         <WhatBlock answer={answer} language={language} />
         <p className="max-w-[var(--afh-measure-prose)] text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
@@ -61,42 +59,50 @@ export function WordAnswerPage({
       {answer.next ? (
         <NextQuestion next={answer.next} kind="word" language={language} />
       ) : null}
+      {answer.publications?.length ? (
+        <section
+          className={cn(ANSWER_BLOCK, "flex flex-col gap-afh-lg")}
+          data-word-part="publications"
+        >
+          <h2 className={ANSWER_HEADING}>{copy.publicationsTitle}</h2>
+          <div className="flex flex-col gap-afh-md rounded-afh-xl bg-afh-bg-warm p-afh-2xl">
+            <span className="text-afh-eyebrow font-bold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[0.08em] text-[color:var(--accent-ink)]">
+              {copy.publicationMeta(
+                answer.publications[0].format,
+                answer.publications[0].publishedAt
+              )}
+            </span>
+            <strong className="font-afh-display text-afh-h3 font-bold leading-[var(--afh-leading-h3)] text-afh-text">
+              {formatProductionNameQuestion(answer.title, language)}
+            </strong>
+            <div className="flex flex-wrap gap-afh-md">
+              {answer.publications.map((publication) => (
+                <a
+                  key={publication.url}
+                  href={publication.url}
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-11 items-center rounded-afh-lg border border-[color:var(--accent)] bg-afh-surface px-afh-2xl py-afh-md text-afh-small font-bold text-afh-text no-underline focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
+                >
+                  {copy.publicationLink(
+                    (
+                      articlesCopy[language].article.networks as Record<
+                        string,
+                        string
+                      >
+                    )[publication.network] ?? publication.network
+                  )}
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
       <SourcesLine
         count={answer.sources.count}
         accounts={answer.origin?.accounts}
         kind="word"
         title={answer.title}
         language={language}
-      />
-      {answer.publications?.length ? (
-        <section className="min-w-0" data-word-part="publications">
-          <h2 className="font-afh-display text-afh-h3 font-bold leading-[var(--afh-leading-h3)] text-afh-text">
-            {copy.publicationsTitle}
-          </h2>
-          <ul className="mt-afh-md grid gap-afh-sm">
-            {answer.publications.map((publication) => (
-              <li key={publication.url}>
-                <a
-                  href={publication.url}
-                  rel="noopener noreferrer"
-                  className="inline-flex min-h-11 items-center underline underline-offset-4"
-                >
-                  {copy.publicationLink(publication.network)}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
-      <OwedBlock
-        language={language}
-        conviction={{ title: owed.conviction, body: owed.convictionBody }}
-        invitation={{
-          title: owed.invitation,
-          body: owed.invitationBody,
-          action: owed.invitationAction,
-        }}
-        contributionTarget={contributionTarget}
       />
     </div>
   );

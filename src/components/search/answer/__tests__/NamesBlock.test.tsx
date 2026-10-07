@@ -18,6 +18,17 @@ describe("NamesBlock", () => {
     expect(screen.getAllByText("votre recherche")).toHaveLength(1);
   });
 
+  // A button centres its own text by default: wrapped on two lines at 430 px
+  // the control read centred while the same one at 1280 px read left.
+  // @req REQ-178
+  it("keeps the « more names » control on the block's left edge", () => {
+    render(<NamesBlock answer={answerOf("peul")} searchedForm="peul" />);
+
+    expect(
+      screen.getByRole("button", { name: /\+ 4 autres noms/ })
+    ).toHaveClass("text-left");
+  });
+
   // @req REQ-178
   it("matches the searched form without regard to case or accents", () => {
     render(<NamesBlock answer={answerOf("peul")} searchedForm="PULLO" />);

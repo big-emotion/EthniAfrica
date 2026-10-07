@@ -1,0 +1,161 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "patronyme",
+    "directives": "Fiche revue selon le protocole de recherche anthroponymique. Chaque affirmation est limitée à ce que dit sa source ; les champs non établis restent des lacunes explicites."
+  },
+  "id": "PAT_MANDELA",
+  "nameMain": "Mandela",
+  "nameSystem": "clan_name",
+  "spellings": [
+    {
+      "spelling": "Mandela",
+      "attestations": [
+        {
+          "countryId": "ZAF",
+          "sourceRefs": ["south-africa-government-mandela-biography"]
+        }
+      ]
+    }
+  ],
+  "transmissionMode": "other",
+  "designatedSocialUnit": "clan",
+  "origin": {
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "linguisticReconstructions": [],
+    "historicalSyntheses": [
+      {
+        "claim": "The name would come from a grandfather. Nelson Mandela recounts that his grandfather was called Mandela: he was the younger brother of Simakade, eldest son of the Ixhiba house, a branch of the family of Ngubengcuka, king of the Thembu. A Wikipedia article says of this grandfather that he is the source of the family name; Mandela's own account does not say so.",
+        "claimStatus": "claimed",
+        "sourceRefs": [
+          "mandela-autobiography-madiba",
+          "wikipedia-nelson-mandela",
+          "sahistory-nelson-mandela"
+        ]
+      },
+      {
+        "claim": "Madiba, the name by which Nelson Mandela is also called, is the name of the clan to which he belonged, that of a Thembu chief who ruled in the Transkei in the eighteenth century. It is not an explanation of the name Mandela: it explains the clan name that accompanies it.",
+        "claimStatus": "claimed",
+        "sourceRefs": [
+          "nelson-mandela-foundation-names",
+          "mandela-autobiography-madiba"
+        ]
+      }
+    ]
+  },
+  "peoples": [
+    {
+      "peopleId": "PPL_XHOSA",
+      "status": "attested",
+      "sourceRefs": ["south-africa-government-mandela-biography"]
+    }
+  ],
+  "countries": [
+    {
+      "countryId": "ZAF",
+      "status": "attested",
+      "sourceRefs": ["south-africa-government-mandela-biography"]
+    }
+  ],
+  "alliances": [],
+  "casteOrSocialFunction": null,
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Nelson Rolihlahla Mandela, président sud-africain (1918–2013)",
+      "sourceRefs": ["south-africa-government-mandela-biography"]
+    }
+  ],
+  "homonyms": [],
+  "sources": [
+    {
+      "sourceKey": "nelson-mandela-foundation-names",
+      "title": "Names",
+      "url": "https://www.nelsonmandela.org/names",
+      "tier": "referenced",
+      "source_kind": "repository",
+      "notes": "Nelson Mandela Foundation, page \"Names\", consulted directly; it carries neither a page number nor a publication date. It says that Madiba is the name of the clan of which Nelson Mandela was a member and of a Thembu chief of the eighteenth century in the Transkei, that Rolihlahla is his birth name and that Nelson was given to him at school. It says nothing about the name Mandela itself."
+    },
+    {
+      "sourceKey": "mandela-autobiography-madiba",
+      "title": "Long Walk to Freedom: The Autobiography of Nelson Mandela",
+      "url": "https://repository.act.ac.rw/server/api/core/bitstreams/1781d4c1-64c6-4fa2-87e7-b693e01b24d4/content",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Mandela, Nelson, Long Walk to Freedom, 1994, part one, \"A Country Childhood\"; passage read in the archived PDF, which carries no printed page numbers: we therefore cite the chapter, not a page. Mandela states there that he is a member of the Madiba clan, named after a Thembu chief who ruled in the Transkei in the eighteenth century, and that he is called Madiba, his clan name, out of respect; he also states there that the younger brother of Simakade, eldest son of the Ixhiba house, was Mandela, his grandfather. He does not explain the origin of the name Mandela there."
+    },
+    {
+      "sourceKey": "sahistory-nelson-mandela",
+      "title": "Nelson Rolihlahla Mandela",
+      "url": "https://www.sahistory.org.za/people/nelson-mandela",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "South African History Online, biographical entry consulted directly, without a page number, updated in 2026 according to the page. It says that his father Henry Mgadla Mandela, a member of the Madiba clan, was one of the grandsons of Ngubengcuka, king of the Thembu. It does not name the grandfather and does not explain the name Mandela; it is cited only for this descent."
+    },
+    {
+      "sourceKey": "wikipedia-nelson-mandela",
+      "title": "Nelson Mandela — Wikipédia (anglais), section Early life",
+      "url": "https://en.wikipedia.org/wiki/Nelson_Mandela",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Article consulted directly. It writes that a son of Ngubengcuka named Mandela was Nelson's grandfather and the source of his family name, and for this sentence refers to Guiloineau and Rowe (2002, p. 26). We have not opened that work: the page is the one the article indicates, not a page verified by us. The claim therefore remains reported at second hand."
+    },
+    {
+      "sourceKey": "south-africa-government-mandela-biography",
+      "title": "Life and Times of Mandela",
+      "url": "https://www.gov.za/mandela100/biography",
+      "tier": "official",
+      "source_kind": "archive",
+      "notes": "Biography from the South African government, consulted directly. It attests Nelson Mandela, his dates, his father Gadla Henry Mandela, the Thembu royal house and his Xhosa name; it does not provide the etymology of the family name Mandela."
+    }
+  ],
+  "gaps": [
+    {
+      "fieldPath": "origin",
+      "reason": "We have found no account from the Mandela families themselves, nor any linguist's study that gives a meaning to the word Mandela. The statement that the grandfather is the source of the name repeats a Wikipedia article, which relies on a work we were unable to open. Comparisons based on a homonym in another language or on geography alone have been set aside."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Web and bibliographic searches combining \"Mandela\", \"Xhosa\", \"Thembu\", \"surname origin\", \"clan\", \"genealogy\", \"transmission\" and \"obituary\", together with the official biography from the South African government, have not established that the provisional category \"clan_name\" describes Mandela itself; it remains a classification hypothesis, not turned into a claim."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "Web and bibliographic searches combining \"Mandela\", \"Xhosa\", \"Thembu\", \"surname origin\", \"clan\", \"genealogy\", \"transmission\" and \"obituary\", together with the official biography from the South African government, have identified no documented alliance or joking kinship linking Mandela to another name documented here."
+    },
+    {
+      "fieldPath": "casteOrSocialFunction",
+      "reason": "Web and bibliographic searches combining \"Mandela\", \"Xhosa\", \"Thembu\", \"surname origin\", \"clan\", \"genealogy\", \"transmission\" and \"obituary\", together with the official biography from the South African government, have established no hereditary social or occupational function specific to Mandela."
+    },
+    {
+      "fieldPath": "homonyms",
+      "reason": "Web and bibliographic searches combining \"Mandela\", \"Xhosa\", \"Thembu\", \"surname origin\", \"clan\", \"genealogy\", \"transmission\" and \"obituary\", together with the official biography from the South African government, have not established a homonymous lineage of distinct, documentable origin; spread across several countries is not enough to create a homonym."
+    },
+    {
+      "fieldPath": "transmissionMode",
+      "reason": "Web and bibliographic searches combining \"Mandela\", \"Xhosa\", \"Thembu\", \"surname origin\", \"clan\", \"genealogy\", \"transmission\" and \"obituary\", together with the official biography from the South African government, have established no rule specific to Mandela that would allow a choice between patrilineal, matrilineal, bilateral, elective or non-hereditary transmission; the mode therefore remains \"other\"."
+    }
+  ],
+  "_translation": {
+    "kind": "machine",
+    "translatedAt": "2026-10-06T18:12:28.027Z",
+    "model": "claude-sonnet-5-5",
+    "sourceHash": "67c62ceb7e2ee2ecce2b1bf5c2a7ab5b6bac916669678b99fa96239a614540e2",
+    "fieldHashes": {
+      "origin.historicalSyntheses[0].claim": "fdd1dfffa955ebc2",
+      "origin.historicalSyntheses[1].claim": "a14a8ed607b6c87f",
+      "sources[0].notes": "17d2f0716361adb2",
+      "sources[1].notes": "a7ddb6a9975a486c",
+      "sources[2].notes": "1131c6e84dc3e0ac",
+      "sources[3].notes": "dc9cecf023bad5ba",
+      "sources[4].notes": "e1ef57341e09eb10",
+      "gaps[0].reason": "6ecf2ee2da56dd94",
+      "gaps[1].reason": "db5f031573e4b01a",
+      "gaps[2].reason": "162f8ee7e068b329",
+      "gaps[3].reason": "3839c495c57264f1",
+      "gaps[4].reason": "9016aa45ac867912",
+      "gaps[5].reason": "d5711a1a4812a4f1"
+    },
+    "reviewRequired": []
+  }
+}

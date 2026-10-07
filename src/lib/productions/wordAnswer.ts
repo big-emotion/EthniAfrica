@@ -69,8 +69,11 @@ function formsOf(entry: LedgerEntry, language: Language): AnswerName[] {
 
 function project(entry: LedgerEntry, language: Language): WordAnswer {
   const answer = entry.answer!;
-  const publications = entry.publications.flatMap(({ network, url }) =>
-    url ? [{ network, url }] : []
+  const publications = entry.publications.flatMap(
+    ({ network, url, format, publishedAt }) =>
+      url
+        ? [{ network, url, format, ...(publishedAt ? { publishedAt } : {}) }]
+        : []
   );
   return {
     kind: "word",

@@ -18,8 +18,7 @@
     "src/test/resolveAsyncServerComponents.tsx",
     "src/lib/search/resultGrammar.ts!",
     "src/lib/search/__fixtures__/*.ts!",
-    "src/lib/search/answerFormat.ts!",
-    "src/components/search/answer/**/*.{ts,tsx}!",
+    "src/components/search/answer/__fixtures__/*.tsx!",
     "src/lib/atlas/assets/generate-*.mjs!",
     "supabase/functions/**/index.ts!",
     "docs/design/mockups/**/*.{js,css}"

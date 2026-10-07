@@ -11,15 +11,27 @@
     {
       "spelling": "Ouattara",
       "attestations": [
-        { "countryId": "BFA", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "CIV", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "BFA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Watara",
       "attestations": [
-        { "countryId": "BFA", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "CIV", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "BFA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -28,7 +40,14 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [],
+    "historicalSyntheses": [
+      {
+        "claim": "Au début du XVIIIe siècle, des Mandé djoula ajoutent Kong à leurs établissements. Des Mandé keita et koulibali y sont devenus par la suite des Wattara, et l'un d'eux, Sékou Wattara, règne à Nafana et à Kong. La synthèse qui rapporte cette suite ne dit ni pourquoi ni comment leur nom a changé, et ne dit pas que le nom de famille Ouattara en vient.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-v-izard-ki-zerbo"]
+      }
+    ]
   },
   "peoples": [
     {
@@ -61,13 +80,17 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "hga-v-izard-ki-zerbo",
+      "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 12, Du Niger à la Volta",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de M. Izard et J. Ki-Zerbo. Page imprimée : à Kong, des Mandé keita et koulibali, devenus par la suite des Wattara, s'imposent aux habitants du pays, et Sékou Wattara règne à Nafana et à Kong (p. 399). Le chapitre écrit Wattara là où la fiche écrit Ouattara et Watara ; il ne donne aucun sens au nom."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -87,6 +110,15 @@
     {
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+    },
+    {
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Le seul récit réuni ici est une synthèse venue de l'extérieur. Un récit sur les familles de Kong, rapporté par un officier français en 1888-1889, figure dans la fiche Daou ; nous ne l'avons pas relu pour celle-ci."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English publication is off (French-only mode); the sidecar will be produced in the translation wave for the patronymes batch."
+    }
+  }
 }

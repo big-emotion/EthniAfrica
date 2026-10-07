@@ -37,6 +37,8 @@ describe("LensesBlock", () => {
       "[&::-webkit-scrollbar]:hidden"
     );
     expect(navigation).not.toHaveClass("overflow-hidden", "flex-wrap");
+    // The row starts on the content column's edge, not on a centred box.
+    expect(navigation.className).not.toMatch(/min-\[1200px\]:mx-auto/);
 
     const active = screen.getByRole("button", { name: "Images 1" });
     expect(active).toHaveAttribute("aria-pressed", "true");

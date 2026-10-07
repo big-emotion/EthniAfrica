@@ -77,21 +77,21 @@ test.describe("SERP title and answer rule (REQ-178, DEC-057)", () => {
     await expect(headings).toHaveCount(1);
     await expect(headings.first()).toContainText(DISAMBIGUATED_QUERY);
 
-    // `feed-block-peoples` is the reviewed feed's disambiguation shelf,
-    // available whenever two or more subjects answer to the same name
-    // (SearchFeed.tsx's `hasNameDisambiguation`) — same-type or, as here,
-    // cross-type. Each subject gets its own card and its own type label
-    // (`getSearchEntityLabel`); none is the page's single "answer".
-    const disambiguation = page.getByTestId("feed-block-peoples");
-    await expect(disambiguation).toBeVisible();
-    const cards = disambiguation.locator("a");
-    expect(await cards.count()).toBeGreaterThanOrEqual(2);
-    for (const card of await cards.all()) {
-      await expect(card).toContainText(DISAMBIGUATED_QUERY);
+    // Two or more subjects answer to the same name: each gets its own answer
+    // (its own « what it is » block, with its type label) and its own button
+    // to its fiche; none is the page's single answer.
+    const answers = page.locator('[data-feed-block="answer-what"]');
+    await expect(answers.first()).toBeVisible();
+    expect(await answers.count()).toBeGreaterThanOrEqual(2);
+    for (const answer of await answers.all()) {
+      await expect(answer).toContainText(DISAMBIGUATED_QUERY);
     }
+    expect(
+      await page.locator('[data-feed-block="fiche-link"] a').count()
+    ).toBeGreaterThanOrEqual(2);
     // `search-pivot` was the retired dominant-answer side rail (DEC-057);
     // this asserts its absence rather than the shape that replaced it, since
-    // the replacement is `feed-block-peoples` itself, already asserted above.
+    // the replacement is the per-subject answers, already asserted above.
     await expect(page.getByTestId("search-pivot")).toHaveCount(0);
   });
 
@@ -130,23 +130,15 @@ test.describe("SERP one-column answer rule (REQ-178, DEC-057)", () => {
         `${SERP_URL}?q=${encodeURIComponent(DISAMBIGUATED_QUERY)}`
       );
 
-      // `feed-layout` is SearchFeedLayout's own root (data-testid="feed-layout"
-      // in SearchFeedLayout.tsx) — the reviewed feed's movement-zone grid that
-      // replaced the retired page's `search-results-layout` + side rail. The
-      // retired spec asserted the answer's left edge matched the layout's own
-      // — a claim about a single-column list this grid does not make (its
-      // desktop "first" movement can place the verdict beside another block,
-      // e.g. appellations, both real columns rather than a rail). What DEC-057
-      // actually rules out — the answer pinned or floated out of the normal
-      // flow — is what stays asserted: never sticky, and the search-feed
-      // responsive harness (e2e/search-feed-responsive.spec.ts) already covers
-      // this grid's own geometry across ten widths in both themes.
+      // `feed-layout` is SearchFeedLayout's own root: one reading column, the
+      // answer's blocks in its flow. What DEC-057 rules out — the answer
+      // pinned or floated out of the normal flow — is what stays asserted.
       const layout = page.getByTestId("feed-layout");
-      const verdict = page.getByTestId("feed-block-verdict");
+      const answer = page.locator('[data-feed-block="answer-what"]').first();
       await expect(layout).toBeVisible();
-      await expect(verdict).toBeVisible();
+      await expect(answer).toBeVisible();
 
-      const position = await verdict.evaluate(
+      const position = await answer.evaluate(
         (element) => getComputedStyle(element).position
       );
       expect(position).not.toBe("sticky");

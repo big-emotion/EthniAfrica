@@ -28,4 +28,4 @@ export const ANSWER_HEADING =
 /** A text-height link grown to a 44 px target without changing its look. */
 // @req REQ-178
 export const ANSWER_TEXT_BUTTON =
-  "inline-flex min-h-11 items-center font-bold text-[color:var(--accent-ink)] underline underline-offset-4 focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]";
+  "inline-flex min-h-11 items-center text-left font-bold text-[color:var(--accent-ink)] underline underline-offset-4 focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]";

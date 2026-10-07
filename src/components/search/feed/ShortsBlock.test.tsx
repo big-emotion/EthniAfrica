@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
 import { ShortsBlock } from "@/components/search/feed/ShortsBlock";
@@ -296,4 +296,73 @@ describe("ShortsBlock", () => {
       expect(heading.textContent).not.toMatch(/minute|second/i);
     }
   );
+
+  // « Sur ce nom » are the pieces made on the searched name or word;
+  // « Autour de ce nom » is context that shares a family, a people or a
+  // country. Mixing them under one heading let a related piece pass for an
+  // answer, which is what the old widening note existed to prevent.
+  // @req REQ-178
+  it("separates the pieces on the name from the ones around it", () => {
+    const [template] = FEED_CASES[0]!.production.companions.shorts.items;
+    const piece = (
+      id: string,
+      match: (typeof template)["match"]
+    ): typeof template => ({
+      ...template,
+      id,
+      href: `/fr/decouvertes/${id}`,
+      match,
+    });
+    render(
+      <ShortsBlock
+        grouped
+        items={[
+          piece("sur-nom", {
+            relation: "exact",
+            entityType: "people",
+            entityId: "PPL_FULA",
+          }),
+          piece("sur-mot", { relation: "word", word: "peul" }),
+          piece("autour", {
+            relation: "linked-country",
+            entityType: "country",
+            entityId: "SEN",
+          }),
+        ]}
+      />
+    );
+
+    const onName = screen.getByRole("heading", { name: "Sur ce nom · 2" });
+    const around = screen.getByRole("heading", {
+      name: "Autour de ce nom · 1",
+    });
+    expect(
+      onName.compareDocumentPosition(around) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    expect(
+      within(onName.closest("section")!).getAllByRole("link")
+    ).toHaveLength(2);
+    expect(screen.getByText("Un contexte lié, pas le même nom.")).toBeVisible();
+  });
+
+  // @req REQ-178
+  it("draws no heading for a group with nothing in it", () => {
+    const [template] = FEED_CASES[0]!.production.companions.shorts.items;
+    render(
+      <ShortsBlock
+        grouped
+        items={[
+          {
+            ...template!,
+            match: { relation: "word", word: "peul" },
+          },
+        ]}
+      />
+    );
+
+    expect(
+      screen.getByRole("heading", { name: "Sur ce nom · 1" })
+    ).toBeVisible();
+    expect(screen.queryByText(/Autour de ce nom/)).toBeNull();
+  });
 });

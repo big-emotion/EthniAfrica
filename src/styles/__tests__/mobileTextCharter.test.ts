@@ -66,6 +66,13 @@ describe("mobile text charter (§8.1)", () => {
     expect(phoneBlock()).toMatch(/\.afh-parchment\s*\{\s*text-align:\s*left/);
   });
 
+  // Operator ruling, 2026-10-07: the validated answer page is left-aligned as
+  // a block, declared here and carried by the page root alone.
+  // @req REQ-178
+  it("keeps the answer page on one left edge", () => {
+    expect(phoneBlock()).toMatch(/\.afh-answer-page\s*\{\s*text-align:\s*left/);
+  });
+
   // @req REQ-115
   it("offers one named way back to centred prose", () => {
     expect(phoneBlock()).toMatch(
