@@ -28,6 +28,8 @@ interface LanguageFiche {
   peoples?: Array<{ name: string; peopleId?: string }>;
   content?: {
     vehicularRole?: string | null;
+    searchAnswer?: { lead?: string; followUp?: string };
+    speakers?: { byCountry: unknown[] };
     dialects?: string[];
     vitalityStatus?: {
       status: string;
@@ -52,6 +54,10 @@ function toLanguageRecord(fiche: LanguageFiche): LanguageRecord {
     whyProblematic: fiche.whyProblematic,
     peoples: fiche.peoples ?? [],
     vehicularRole: fiche.content?.vehicularRole,
+    ...(fiche.content?.searchAnswer
+      ? { searchAnswer: fiche.content.searchAnswer }
+      : {}),
+    ...(fiche.content?.speakers ? { speakers: fiche.content.speakers } : {}),
     dialects: fiche.content?.dialects ?? [],
     vitalityStatus: fiche.content?.vitalityStatus,
     sources: fiche.content?.sources ?? [],
