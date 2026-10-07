@@ -21,15 +21,44 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
+    "oralTraditions": [
+      {
+        "claim": "Plusieurs Shiwe disent que leur nom est Toungou (Ntoungou), et que Ndong ne figure chez eux que parce que l'administration l'a écrit à la place de Toungou, qui serait d'origine makina.",
+        "claimStatus": "claimed",
+        "carrier": "Plusieurs informateurs shiwe (makina), sans autre précision dans l'article",
+        "collection": "direct",
+        "collector": "Fabrice Agyune Ndone",
+        "context": "Enquêtes du chercheur auprès des Makina du Gabon ; le lieu et la date des entretiens ne sont pas donnés. L'article ne dit ni quel agent de l'administration ni quand le nom a été écrit.",
+        "sourceRefs": ["agyune-ndone-anthroponymie-makina-fang"]
+      }
+    ],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Le sens du nom en fang n'est pas établi : dans la liste des noms partagés par les Makina et les Fang, le chercheur place un point d'interrogation à la place du sens de Ndong.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["agyune-ndone-anthroponymie-makina-fang"]
+      },
+      {
+        "claim": "Pour les Makina, le chercheur juge « probable » que le nom shiwe Ntoungou, qui veut dire « citron », ait été rendu par le nom fang Ndong. Il précise que Ndong n'a rien à voir avec le citron en fang, où le fruit porte un tout autre mot.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["agyune-ndone-anthroponymie-makina-fang"]
+      },
+      {
+        "claim": "Le chercheur n'écarte pas d'autres explications de la présence de Ndong chez les Makina : une origine commune avec les Fang, ou un emprunt favorisé par les contacts et les mariages entre groupes. Il note aussi que des informateurs saké portent Ndong, qu'il rapproche plutôt de Ndongo.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["agyune-ndone-anthroponymie-makina-fang"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_FANG",
-      "status": "supposed",
-      "sourceRefs": ["forebears-ndong"]
+      "status": "attested",
+      "sourceRefs": [
+        "forebears-ndong",
+        "agyune-ndone-anthroponymie-makina-fang"
+      ]
     }
   ],
   "countries": [
@@ -51,12 +80,20 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Base de répartition patronymique consultée directement. Elle atteste l’orthographe Ndong et sa présence dans le Gabon, mais la distribution ne démontre ni l’appartenance Fang, ni une origine unique, ni un mode de transmission."
+    },
+    {
+      "sourceKey": "agyune-ndone-anthroponymie-makina-fang",
+      "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+      "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Fabrice Agyune Ndone, alors doctorant en anthropologie (Université Omar Bongo et Lyon 2), article diffusé en texte intégral par le laboratoire Dynamique du langage ; la date de publication n'est pas indiquée dans le fichier. Il compare les noms de personnes relevés auprès d'une centaine d'informateurs fang, de soixante makina et de soixante saké. Pages du fichier PDF : la liste des noms fang (p. 5), le récit des informateurs shiwe sur Ndong (p. 7), le tableau des sens et la discussion qui suit (p. 11 et suivantes). La numérotation imprimée n'apparaît pas dans le fichier. L'article traite des noms propres makina et fang dans leur ensemble ; il ne consacre pas de section à chaque nom, et c'est son tableau qui donne le sens."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Ndong », « Fang », « le Gabon », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a livré aucune tradition attribuée, chronique ou étude linguistique établissant l’origine de Ndong. Les homonymes d’autres langues et les déductions tirées de la seule distribution ont été écartés."
+      "reason": "Nous n'avons trouvé qu'une seule étude qui parle de ce nom, et elle ne donne aucun sens à Ndong en fang. Le récit des informateurs shiwe et le rapprochement avec le nom shiwe Ntoungou (« citron ») ne valent que pour les porteurs makina, pas pour les Fang. Nous n'avons pas pu consulter le dictionnaire des noms propres gabonais de Raponda Walker (1993), que l'article cite."
     },
     {
       "fieldPath": "nameSystem",
@@ -82,5 +119,10 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Ndong », « Fang », « le Gabon », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a établi aucune règle propre à Ndong permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
+    }
+  }
 }
