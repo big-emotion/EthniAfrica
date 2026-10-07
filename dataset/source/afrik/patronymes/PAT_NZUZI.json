@@ -23,13 +23,19 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Une explication relie ce nom à la naissance de jumeaux : chez les Kongo, Nsimba et Nzuzi sont les noms donnés aux jumeaux, filles ou garçons. Celui qui naît le premier, Nsimba, « tient » l'autre (verbe simba, tenir) ; l'autre est ensuite « tiré » (zuta, zutua, tirer), mots que l'article donne comme sens du nom Nzuzi. Si une femme met des jumeaux au monde plusieurs fois, d'autres noms peuvent s'ajouter à ceux-là. Cette description porte sur le sud des Kongo et vaut, à quelques nuances près, pour l'ensemble.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["ndoma-1977-kongo-names"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_KONGO",
       "status": "supposed",
-      "sourceRefs": ["forebears-nzuzi"]
+      "sourceRefs": ["forebears-nzuzi", "ndoma-1977-kongo-names"]
     }
   ],
   "countries": [
@@ -51,12 +57,20 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Base de répartition patronymique consultée directement. Elle atteste Nzuzi principalement en République démocratique du Congo, mais n'en donne pas la signification et précise que la géographie ne suffit pas à attribuer une appartenance ethnique."
+    },
+    {
+      "sourceKey": "ndoma-1977-kongo-names",
+      "title": "Kongo Personal Names Today: a Sketch",
+      "url": "https://ans-names.pitt.edu/ans/article/download/845/844/1692",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Ndoma, Ungina, Names: A Journal of Onomastics, volume 25, numéro 2, 1977, p. 88-98 ; texte intégral lu. Nsimba et Nzuzi, noms de jumeaux et sens des deux mots : p. 89. La liste des noms de naissance renvoie à F. Ngoma, « L'initiation bakongo et sa signification », Bulletin du CEPSI, Élisabethville, n° 66, 1964, p. 46, que nous n'avons pas lu ; le sens des deux mots est celui que l'auteur de l'article donne. L'article décrit les noms de personnes des Kongo du Bas-Congo, sans parler du nom de famille Nzuzi tel qu'il est porté aujourd'hui."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Nzuzi », « Kongo », « Congo », « twin name », « surname », « personal names », « onomastics », « etymology », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que la page Forebears dédiée ; l'étude déjà utilisée pour Nsimba a été écartée afin de ne pas partager une source entre fiches n'ont livré aucune tradition attribuée, chronique ou étude linguistique propre à ce nom qui en établirait l'origine ; les rapprochements fondés sur la seule ressemblance ou la seule géographie ont été écartés."
+      "reason": "Une seule étude décrit Nzuzi comme nom de jumeau chez les Kongo ; elle ne dit pas comment il est devenu un nom de famille ni si tous ses porteurs actuels descendent de naissances gémellaires."
     },
     {
       "fieldPath": "nameSystem",
@@ -82,5 +96,10 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Nzuzi », « Kongo », « Congo », « twin name », « surname », « personal names », « onomastics », « etymology », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que la page Forebears dédiée ; l'étude déjà utilisée pour Nsimba a été écartée afin de ne pas partager une source entre fiches n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "Publication is French-only; the English sidecar is produced in the English launch pass for all patronymic records."
+    }
+  }
 }
