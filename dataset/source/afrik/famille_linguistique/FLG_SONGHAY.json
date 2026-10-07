@@ -3,6 +3,10 @@
   "nameFr": "Songhay / Sonrai",
   "nameEn": "Songhay",
   "content": {
+    "searchAnswer": {
+      "lead": "Des langues du fleuve Niger, au Mali et au Niger. Soŋay est le nom que se donnent les Songhay et les Zarma ; une explication le relie à l'ancien empire songhay, centré sur Gao aux XVe et XVIe siècles.",
+      "followUp": "Comment les Songhay et les Zarma se nomment-ils ?"
+    },
     "decolonialHeader": {
       "selfAppellation": "Soŋay",
       "contemporaryUsage": "Le terme est maintenant largement accepté en linguistique (SIL Ethnologue, Glottolog, UNESCO) pour désigner cette famille linguistique, bien que son affiliation génétique (Nilo-saharien vs famille indépendante) reste débattue.",

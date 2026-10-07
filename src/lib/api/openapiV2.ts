@@ -752,6 +752,152 @@ const options: swaggerJsdoc.Options = {
           },
           required: ["forms", "eras", "presentation"],
         },
+        SearchAnswerV2: {
+          type: "object",
+          description:
+            "The six-block answer for one search row. An optional block whose source the fiche leaves empty is omitted, never returned empty. Text comes from the fiche (`lead`, `question`, accounts); where the fiche writes none, the client composes the sentence from `next.template` and its params. Absent on rows from servers that predate it.",
+          properties: {
+            kind: {
+              type: "string",
+              enum: [
+                "people",
+                "country",
+                "language",
+                "languageFamily",
+                "patronyme",
+                "word",
+              ],
+            },
+            title: { type: "string" },
+            what: {
+              type: "object",
+              properties: {
+                lead: {
+                  type: "string",
+                  description:
+                    "Written by the fiche (`content.searchAnswer.lead`, 220 characters at most). Absent: the client uses its sentence template.",
+                },
+                facts: {
+                  type: "object",
+                  properties: {
+                    population: { type: "integer" },
+                    countryCount: { type: "integer" },
+                    familyId: { type: "string" },
+                    peopleCount: { type: "integer" },
+                  },
+                },
+              },
+              required: ["facts"],
+            },
+            origin: {
+              type: "object",
+              description:
+                "Where the name comes from, one account per claim with its own evidence. `debated` is true when accounts are contested or the fiche declares the origin debated; the page then shows every account's first sentence side by side.",
+              properties: {
+                accounts: {
+                  type: "array",
+                  items: {
+                    type: "object",
+                    properties: {
+                      text: { type: "string" },
+                      attribution: {
+                        type: "string",
+                        enum: ["oral", "written", "linguistic", "synthesis"],
+                      },
+                      claimStatus: {
+                        type: "string",
+                        enum: ["established", "claimed", "contested"],
+                      },
+                      evidence: {
+                        type: "array",
+                        items: {
+                          $ref: "#/components/schemas/SearchNamingEvidenceV2",
+                        },
+                      },
+                    },
+                    required: ["text", "evidence"],
+                  },
+                },
+                debated: { type: "boolean" },
+              },
+              required: ["accounts", "debated"],
+            },
+            names: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  form: { type: "string" },
+                  selfGiven: {
+                    type: ["boolean", "null"],
+                    description:
+                      "Null when the fiche does not classify the form.",
+                  },
+                  shortLine: { type: "string" },
+                  period: { type: "string" },
+                  attestedIn: { type: "array", items: { type: "string" } },
+                },
+                required: ["form", "selfGiven"],
+              },
+            },
+            where: {
+              type: "object",
+              description:
+                "`percent` rows are keyed by people (`peopleId`); every other unit by country (`countryId`). `speakers` is an estimate the fiche declares, in persons, never a sum of peoples' populations. `presence` (patronymes) has a null value.",
+              properties: {
+                unit: {
+                  type: "string",
+                  enum: ["population", "speakers", "percent", "presence"],
+                },
+                estimate: { type: "boolean" },
+                rows: {
+                  type: "array",
+                  items: {
+                    type: "object",
+                    properties: {
+                      countryId: { type: "string" },
+                      peopleId: { type: "string" },
+                      value: { type: ["number", "null"] },
+                    },
+                  },
+                },
+                unsplitPercent: { type: "number" },
+                documentedPeopleCount: { type: "integer" },
+              },
+              required: ["unit", "estimate", "rows"],
+            },
+            next: {
+              type: "object",
+              description:
+                "Either the fiche's own question, or the name of a template and its parameters.",
+              properties: {
+                question: { type: "string" },
+                template: {
+                  type: "string",
+                  enum: ["migration", "formerName", "distributionGap"],
+                },
+                params: {
+                  type: "object",
+                  additionalProperties: {
+                    oneOf: [{ type: "string" }, { type: "number" }],
+                  },
+                },
+              },
+            },
+            sources: {
+              type: "object",
+              properties: {
+                count: {
+                  type: "integer",
+                  description:
+                    "Distinct sources across every account's evidence.",
+                },
+              },
+              required: ["count"],
+            },
+          },
+          required: ["kind", "title", "what", "names", "sources"],
+        },
         SearchResponseData: {
           type: "object",
           description:
@@ -866,6 +1012,12 @@ const options: swaggerJsdoc.Options = {
               description:
                 "Reviewed, sourced answers to « where does this name come from? » for the searched term (REQ-178), matched on the whole term with accents and case ignored and localized by `lang`. Resolved from the term alone, so a search with no hit can still carry one. Empty for a name nobody has reviewed and for quiz-lens searches.",
             },
+            wordAnswers: {
+              type: "array",
+              items: { $ref: "#/components/schemas/WordAnswerV2" },
+              description:
+                "The answer to a published word (REQ-184), read from the production registry and matched on the whole term with accents and case ignored. Carried by the envelope and not by a row, because a word answers to no fiche and may come back with no result at all. Empty for a word nobody published and for quiz-lens searches.",
+            },
             nameSuggestions: {
               type: "array",
               items: { type: "string" },
@@ -893,6 +1045,7 @@ const options: swaggerJsdoc.Options = {
             "leads",
             "nearNames",
             "nameAnswers",
+            "wordAnswers",
             "nameSuggestions",
           ],
         },
@@ -943,6 +1096,103 @@ const options: swaggerJsdoc.Options = {
             },
           },
           required: ["term", "subjects", "paragraphs", "sources"],
+        },
+        WordAnswerV2: {
+          type: "object",
+          description:
+            "The answer to a published word (REQ-184), built from its record in the production registry. It follows the answer contract of the result page (`kind` is always `word`) and lists the queries that find it. A block with no data is an absent key.",
+          properties: {
+            kind: { type: "string", enum: ["word"] },
+            title: { type: "string", example: "pharaon" },
+            queries: {
+              type: "array",
+              description:
+                "The accent-free, lowercase queries the registry files for this word.",
+              items: { type: "string" },
+            },
+            what: {
+              type: "object",
+              properties: {
+                lead: {
+                  type: "string",
+                  description:
+                    "Written in the registry's `answer.lead`; absent when none was written.",
+                },
+                facts: { type: "object" },
+              },
+              required: ["facts"],
+            },
+            origin: {
+              type: "object",
+              properties: {
+                accounts: {
+                  type: "array",
+                  items: {
+                    type: "object",
+                    properties: {
+                      text: { type: "string" },
+                      attribution: {
+                        type: "string",
+                        enum: ["oral", "written", "linguistic", "synthesis"],
+                      },
+                      evidence: { type: "array", items: { type: "object" } },
+                    },
+                    required: ["text", "evidence"],
+                  },
+                },
+                debated: { type: "boolean" },
+              },
+              required: ["accounts", "debated"],
+            },
+            names: {
+              type: "array",
+              description:
+                "The word's forms, none marked as the one a people gives itself.",
+              items: {
+                type: "object",
+                properties: {
+                  form: { type: "string" },
+                  selfGiven: { type: ["boolean", "null"] },
+                },
+                required: ["form", "selfGiven"],
+              },
+            },
+            next: {
+              type: "object",
+              properties: { question: { type: "string" } },
+            },
+            path: {
+              type: "array",
+              description:
+                "The form of the word in each language it passed through.",
+              items: {
+                type: "object",
+                properties: {
+                  form: { type: "string" },
+                  language: { type: "string" },
+                  period: { type: "string" },
+                },
+                required: ["form", "language"],
+              },
+            },
+            publications: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  network: { type: "string" },
+                  url: { type: "string" },
+                },
+                required: ["network", "url"],
+              },
+            },
+            sources: {
+              type: "object",
+              properties: { count: { type: "integer" } },
+              required: ["count"],
+            },
+          },
+          required: ["kind", "title", "queries", "what", "names", "sources"],
         },
         SearchLeadV2: {
           type: "object",
@@ -1752,6 +2002,9 @@ const options: swaggerJsdoc.Options = {
             naming: {
               $ref: "#/components/schemas/SearchNamingProjectionV2",
             },
+            answer: {
+              $ref: "#/components/schemas/SearchAnswerV2",
+            },
           },
         },
         PeopleV2: {
@@ -1784,6 +2037,9 @@ const options: swaggerJsdoc.Options = {
             },
             naming: {
               $ref: "#/components/schemas/SearchNamingProjectionV2",
+            },
+            answer: {
+              $ref: "#/components/schemas/SearchAnswerV2",
             },
           },
         },
@@ -1891,6 +2147,9 @@ const options: swaggerJsdoc.Options = {
             naming: {
               $ref: "#/components/schemas/SearchNamingProjectionV2",
             },
+            answer: {
+              $ref: "#/components/schemas/SearchAnswerV2",
+            },
             associatedPeoples: {
               type: "array",
               description:
@@ -1978,6 +2237,9 @@ const options: swaggerJsdoc.Options = {
             naming: {
               $ref: "#/components/schemas/SearchNamingProjectionV2",
             },
+            answer: {
+              $ref: "#/components/schemas/SearchAnswerV2",
+            },
             relevance: {
               type: "number",
               example: 0.82,
@@ -2055,6 +2317,9 @@ const options: swaggerJsdoc.Options = {
             },
             naming: {
               $ref: "#/components/schemas/SearchNamingProjectionV2",
+            },
+            answer: {
+              $ref: "#/components/schemas/SearchAnswerV2",
             },
           },
         },

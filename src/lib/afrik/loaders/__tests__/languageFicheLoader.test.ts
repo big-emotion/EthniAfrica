@@ -20,6 +20,32 @@ afterEach(() => {
 });
 
 describe("loadLanguageFiches", () => {
+  // @req REQ-178
+  it("carries content.originDebated onto the record, false included", () => {
+    const directory = createFixtureDirectory();
+    for (const [id, originDebated] of [
+      ["lin", true],
+      ["yor", false],
+    ] as const) {
+      writeFileSync(
+        join(directory, `${id}.json`),
+        JSON.stringify({
+          id,
+          isoCode639_3: id,
+          nameFr: id,
+          nameEn: id,
+          familyId: "FLG_BENOUECONGO",
+          content: { originDebated },
+        })
+      );
+    }
+
+    const records = loadLanguageFiches(directory);
+
+    expect(records.find((r) => r.id === "lin")?.originDebated).toBe(true);
+    expect(records.find((r) => r.id === "yor")?.originDebated).toBe(false);
+  });
+
   // @req REQ-136
   it("preserves a fiche's identity, enriched content, aliases, and every source tier", () => {
     const directory = createFixtureDirectory();

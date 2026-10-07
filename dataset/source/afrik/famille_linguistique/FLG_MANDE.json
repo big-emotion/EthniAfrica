@@ -3,6 +3,10 @@
   "nameFr": "Mandé",
   "nameEn": "Mande",
   "content": {
+    "searchAnswer": {
+      "lead": "Les langues mandé, du Mali au Liberia, comme le bambara, le maninka et le soninké. Manden est le nom d'un pays, que des Européens citent dès 1594 sous la forme Mandingues.",
+      "followUp": "Que veut dire le nom Manden ?"
+    },
     "decolonialHeader": {
       "selfAppellation": null,
       "contemporaryUsage": "Le mandé est une famille linguistique de l'Afrique de l'Ouest. Glottolog en recense soixante-quinze langues dans son édition 5.3, réparties en deux branches, orientale et occidentale. Joseph Greenberg la classe en 1963 comme branche du Niger-Congo ; Gerrit Dimmendaal et Tom Güldemann contestent cette inclusion, au motif que l'absence de classes nominales et le vocabulaire fondamental divergent. La famille inclut le bambara, le maninka, le mandinka, le dioula, le soninké, le soso, le kpelle, le mende et le dan.\n\nDans la classification de Vydrin (2009, p. 107), le mandingue est un groupe de la famille mandé. Il comprend notamment le bambara, le maninka, le mandinka et plusieurs variétés de dioula ; le soninké, le soso et le kpelle relèvent d'autres groupes de cette famille. Cette classification des langues ne constitue pas une liste d'identités imposées à leurs locuteurs.\n\nLes noms ont aussi des usages historiques et identitaires. Donaldson (2019), à partir d'enquêtes menées entre 2012 et 2017, décrit des enseignants et des élèves du mouvement n'ko qui construisent des liens entre parlers mandingues, notamment à Bamako et à Bobo-Dioulasso. Leur démarche ne représente pas tous les locuteurs mandingues, ni l'ensemble des locuteurs de la famille mandé. Une parenté linguistique ne suffit ni à attribuer une identité commune, ni à invalider une appartenance revendiquée.",
