@@ -264,6 +264,12 @@
         "url": "https://doi.org/10.1017/S0021853700020508",
         "tier": "referenced",
         "notes": "Reference article on the formation of the Maravi chiefdoms. It is cited here for what it does not do: it does not address the origin or meaning of the name Maravi. Entry and abstract read on 9 September 2026; full text is paywalled."
+      },
+      {
+        "title": "Bureau national de la statistique du Malawi, 2018 Malawi Population and Housing Census, Main Report, mai 2019, tableau 3.5 « Population distribution by tribe », p. 20",
+        "url": "https://malawi.unfpa.org/sites/default/files/resource-pdf/2018%20Malawi%20Population%20and%20Housing%20Census%20Main%20Report%20%281%29.pdf",
+        "tier": "official",
+        "notes": "The census asked each person for their group (\"tribe\"). Shares are calculated on 17,506,022 people and rounded to one decimal: Chewa 34.4%, Lomwe 18.9%, Yao 13.3%, Ngoni 10.4%, Tumbuka 9.2%, Sena 3.8%, Nyanja 1.9% (the census's own \"Nyanja\" line, separate from the Mang'anja line), Tonga 1.8%. \"Others\" (6.3%) is the complement of the rounded shares; the exact census remainder is 6.4%. The Mang'anja (3.2%), the Nkhonde (1.0%), the Lambya, the Sukwa and the other groups stay in \"Others\". Copy of the report hosted by the UNFPA office in Malawi, read on 6 October 2026."
       }
     ],
     "demographics": {
@@ -273,16 +279,58 @@
       "peoples": [
         {
           "name": "Chewa",
-          "percentageInCountry": 34.3,
+          "percentageInCountry": 34.4,
           "peopleId": "PPL_CHEWA",
           "region": "Central Malawi"
+        },
+        {
+          "name": "Lomwe",
+          "percentageInCountry": 18.9,
+          "peopleId": "PPL_LOMWE",
+          "region": "Southern Malawi"
+        },
+        {
+          "name": "Yao",
+          "percentageInCountry": 13.3,
+          "peopleId": "PPL_YAO_MALAWI",
+          "region": "Southern Malawi"
+        },
+        {
+          "name": "Ngoni",
+          "percentageInCountry": 10.4,
+          "peopleId": "PPL_NGONI",
+          "region": "Central Malawi"
+        },
+        {
+          "name": "Tumbuka",
+          "percentageInCountry": 9.2,
+          "peopleId": "PPL_TUMBUKA",
+          "region": "Northern Malawi"
+        },
+        {
+          "name": "Sena",
+          "percentageInCountry": 3.8,
+          "peopleId": "PPL_SENA",
+          "region": "Southern Malawi"
+        },
+        {
+          "name": "Nyanja",
+          "percentageInCountry": 1.9,
+          "peopleId": "PPL_NYANJA",
+          "region": "Southern Malawi"
+        },
+        {
+          "name": "Tonga",
+          "percentageInCountry": 1.8,
+          "peopleId": "PPL_TONGA_MALA",
+          "region": "Northern Malawi"
         },
         {
           "name": "Autres groupes ethniques",
           "peopleId": null,
           "region": "Various",
           "languageFamily": null,
-          "percentageInCountry": 65
+          "percentageInCountry": 6.3
         }
       ]
     }

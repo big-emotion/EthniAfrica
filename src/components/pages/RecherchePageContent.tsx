@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { SearchFeedFrame } from "@/components/search/SearchFeedFrame";
 import { SearchFeed } from "@/components/search/SearchFeed";
+import type { WordAnswer } from "@/lib/search/answer";
 import type { NameAnswer } from "@/lib/search/nameAnswer";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import { searchQueryProp } from "@/lib/analytics/searchQueryProp";
@@ -140,6 +141,7 @@ export function RecherchePageContent() {
   const [leads, setLeads] = useState<SearchLead[]>([]);
   const [nearNames, setNearNames] = useState<SearchNearName[]>([]);
   const [nameAnswers, setNameAnswers] = useState<NameAnswer[]>([]);
+  const [wordAnswers, setWordAnswers] = useState<WordAnswer[]>([]);
   const [nameSuggestions, setNameSuggestions] = useState<string[]>([]);
   const [counts, setCounts] = useState<SearchLensCounts>(
     EMPTY_SEARCH_LENS_COUNTS
@@ -200,6 +202,7 @@ export function RecherchePageContent() {
         setLeads([]);
         setNearNames([]);
         setNameAnswers([]);
+        setWordAnswers([]);
         setNameSuggestions([]);
         setCounts(EMPTY_SEARCH_LENS_COUNTS);
         setCompanions(null);
@@ -220,6 +223,7 @@ export function RecherchePageContent() {
           leads: nearMisses,
           nearNames: qualifiedNearNames = [],
           nameAnswers: reviewedAnswers = [],
+          wordAnswers: publishedWordAnswers = [],
           nameSuggestions: reviewedSuggestions = [],
           counts: lensCounts,
           presentation,
@@ -235,6 +239,7 @@ export function RecherchePageContent() {
         setLeads(nearMisses);
         setNearNames(qualifiedNearNames);
         setNameAnswers(reviewedAnswers);
+        setWordAnswers(publishedWordAnswers);
         setNameSuggestions(reviewedSuggestions);
         setCounts(lensCounts);
         setFeedPresentation(presentation);
@@ -309,6 +314,7 @@ export function RecherchePageContent() {
         setLeads([]);
         setNearNames([]);
         setNameAnswers([]);
+        setWordAnswers([]);
         setNameSuggestions([]);
         setCounts(EMPTY_SEARCH_LENS_COUNTS);
         setCompanions(null);
@@ -409,6 +415,7 @@ export function RecherchePageContent() {
     setLeads([]);
     setNearNames([]);
     setNameAnswers([]);
+    setWordAnswers([]);
     setNameSuggestions([]);
     setCounts(EMPTY_SEARCH_LENS_COUNTS);
     setCompanions(null);
@@ -741,6 +748,7 @@ export function RecherchePageContent() {
               leads={leads}
               nearNames={nearNames}
               nameAnswers={nameAnswers}
+              wordAnswers={wordAnswers}
               nameSuggestions={nameSuggestions}
               companions={companions}
               resultCount={counts.all}

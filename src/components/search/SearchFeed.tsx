@@ -37,11 +37,13 @@ import { SearchFeedLayout } from "@/components/search/feed/SearchFeedLayout";
 import { ShortsBlock } from "@/components/search/feed/ShortsBlock";
 import { TilesBlock } from "@/components/search/feed/TilesBlock";
 import { VerdictBlock } from "@/components/search/feed/VerdictBlock";
+import { WordAnswerPage } from "@/components/search/feed/WordAnswerPage";
 import type { FeedMovementZone } from "@/components/search/feed/feedBlockTypes";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { formatProductionNameQuestion } from "@/lib/editorial/productionNameQuestion";
 import { normalizeString } from "@/lib/normalize";
+import type { WordAnswer } from "@/lib/search/answer";
 import type { SearchEvidence } from "@/lib/search/evidence";
 import type { NameAnswer } from "@/lib/search/nameAnswer";
 import type { NamingPresentationForm } from "@/lib/search/naming";
@@ -109,6 +111,11 @@ export interface SearchFeedProps {
   nearNames?: readonly SearchNearName[];
   /** Reviewed answers for the searched term, from the search response. */
   nameAnswers?: readonly NameAnswer[];
+  /**
+   * The answer to a published word, carried by the envelope because the word
+   * may match no fiche. It takes the page when no fiche answers to the query.
+   */
+  wordAnswers?: readonly WordAnswer[];
   /** Reviewed terms a near spelling may have meant; offered as choices, never applied. */
   nameSuggestions?: readonly string[];
   companions: SearchCompanionsData;
@@ -274,6 +281,7 @@ export function SearchFeed({
   leads,
   nearNames = [],
   nameAnswers = [],
+  wordAnswers = [],
   nameSuggestions = [],
   companions: loadedCompanions,
   resultCount,
@@ -551,6 +559,24 @@ export function SearchFeed({
         fieldPath: "search-feed",
         fieldLabel: answerCopy.invitation,
       };
+  // A published word is answered by its record. This precedes the confession
+  // on purpose: « pharaon » reaches no fiche, and « Nous ne connaissons pas ce
+  // nom » would deny the piece we made on it. A fiche that does answer keeps
+  // the page: the word is then only one more thing the name can mean.
+  if (wordAnswers.length > 0 && subjects.length === 0 && !relation) {
+    return (
+      <div className="text-afh-text">
+        {wordAnswers.map((wordAnswer) => (
+          <WordAnswerPage
+            key={wordAnswer.title}
+            answer={wordAnswer}
+            language={language}
+            contributionTarget={contributionTarget}
+          />
+        ))}
+      </div>
+    );
+  }
   const exactSubjectIds = new Set(
     companions.shorts.items.flatMap(({ match }) =>
       match.relation === "exact"

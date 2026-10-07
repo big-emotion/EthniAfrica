@@ -66,6 +66,8 @@ export interface SearchNameRecord {
   languageOfOrigin?: string;
   meaning?: string;
   periodLabel?: string;
+  /** One sentence a reader understands without context (migration 097). */
+  shortLine?: string;
   imposedBy?: string;
   impositionPeriod?: string;
   problematic: boolean;
@@ -88,6 +90,7 @@ export interface NamingPresentationForm {
   qualifier?: string;
   origin?: NamingOriginFact;
   attestationPeriod?: string;
+  shortLine?: string;
   attestations: string[];
   problematic?: "recorded";
   currentUsage?: "recorded";
@@ -233,12 +236,9 @@ function fromSpellings(root: Record<string, unknown>): LegacyNamingProjection {
   // The origin is one or more sourced claims; the page shows the prose, and the
   // claims keep their own sources on the fiche.
   const origin = record(root.origin);
-  const claims = [
-    ...(Array.isArray(origin.writtenChronicles)
-      ? origin.writtenChronicles
-      : []),
-    ...(Array.isArray(origin.oralTraditions) ? origin.oralTraditions : []),
-  ]
+  const claims = PATRONYME_ORIGIN_COLLECTIONS.flatMap((collection) =>
+    Array.isArray(origin[collection]) ? (origin[collection] as unknown[]) : []
+  )
     .map((entry) => text(record(entry).claim))
     .filter((claim): claim is string => Boolean(claim));
 
@@ -251,6 +251,20 @@ function fromSpellings(root: Record<string, unknown>): LegacyNamingProjection {
     eras: [],
   };
 }
+
+/**
+ * The four collections of claims a patronyme's origin is written in, in the
+ * order the model lists them. Reading only two of them dropped the origin of
+ * 242 patronymes that rest on historical syntheses or reconstructions
+ * (155 read against 397 with an origin).
+ */
+// @req REQ-178
+export const PATRONYME_ORIGIN_COLLECTIONS = [
+  "oralTraditions",
+  "writtenChronicles",
+  "historicalSyntheses",
+  "linguisticReconstructions",
+] as const;
 
 const SCHOLARLY_PAGE_WORDS =
   /(?:^|[^\p{L}])(?:exonyme|endonyme|autonyme|étymologie|etymologie|exonym|endonym|autonym|etymology|corpus)(?=$|[^\p{L}])/iu;
@@ -345,6 +359,9 @@ function enrichPresentationForms(
       ...(searchPresentationText(record.periodLabel)
         ? { attestationPeriod: searchPresentationText(record.periodLabel) }
         : {}),
+      ...(searchPresentationText(record.shortLine)
+        ? { shortLine: searchPresentationText(record.shortLine) }
+        : {}),
       attestations: existing?.attestations ?? [],
       ...(record.problematic ? { problematic: "recorded" as const } : {}),
       ...(record.usedToday ? { currentUsage: "recorded" as const } : {}),
@@ -363,18 +380,12 @@ function enrichPresentationForms(
   return base;
 }
 
-const ORIGIN_COLLECTIONS = [
-  "oralTraditions",
-  "writtenChronicles",
-  "linguisticReconstructions",
-] as const;
-
 function disagreementsOf(
   root: Record<string, unknown>,
   evidence: readonly SearchEvidence[]
 ): NamingDisagreement[] {
   const origin = record(root.origin);
-  const positions = ORIGIN_COLLECTIONS.flatMap((collection) =>
+  const positions = PATRONYME_ORIGIN_COLLECTIONS.flatMap((collection) =>
     (Array.isArray(origin[collection]) ? origin[collection] : []).flatMap(
       (value, index): NamingPosition[] => {
         const item = record(value);

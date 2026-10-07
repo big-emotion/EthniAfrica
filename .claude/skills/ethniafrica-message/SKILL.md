@@ -230,11 +230,36 @@ Trois formes à refuser, toutes rencontrées dans la même production :
 | --------------------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | « les Baoulé, les Bété, les Ébrié sont entiers, chez eux »      | les autres sont des morceaux, ou des invités    | « Les uns comme les autres sont chez eux. »                                                                                       |
 | « certains sont là depuis très longtemps » suivi de trois noms  | les non-nommés sont arrivés après               | « À l'ouest, l'atlas date plus loin qu'ailleurs. Ailleurs, on date moins bien : ça ne veut pas dire qu'on est arrivé plus tard. » |
-| « 31 sur 70 ne vivent qu'en Côte d'Ivoire » en chiffre d'accent | le chiffre qui compte est celui des vrais d'ici | « 70 peuples vivent en Côte d'Ivoire » — le compte du pays, pas celui d'un sous-groupe                                            |
+| « 31 sur 70 ne vivent qu'en Côte d'Ivoire » en chiffre d'accent | le chiffre qui compte est celui des vrais d'ici | « Les peuples de Côte d'Ivoire sont tous chez eux. » — aucun chiffre : le compte d'un pays n'est pas établi (voir ci-dessous)     |
 
 **Une absence de date n'est jamais une preuve d'arrivée tardive.** Le corpus
 date inégalement, et le dire fait partie du critère : sans cette phrase, le
 silence de l'atlas se lit comme un jugement.
+
+### Un chiffre qui compte des peuples n'est pas un chiffre du corpus
+
+Ajouté le 2026-10-07, après « La Guinée, c'est vingt-neuf peuples » : le reel le
+plus vu du compte annonçait un nombre que rien n'établit. Il comptait les fiches
+dont les données citent la Guinée — dont trois regroupements de familles et deux
+entrées Fula —, pas des peuples. Les estimations publiées parlent d'« environ
+vingt-quatre groupes » et aucune ne donne vingt-neuf ; la fiche pays du site, elle,
+documente sept peuples. **Une fiche n'est pas un peuple, et aucun recensement
+récent ne fixe leur nombre.**
+
+La règle, qui vaut pour une accroche autant que pour une carte :
+
+- **Un nombre de peuples ne s'écrit jamais en affirmation.** Ni dans l'accroche,
+  ni en titre, ni en carte d'accent. Il s'écrit comme une estimation attribuée
+  (« les estimations parlent d'une vingtaine de groupes ») avec sa source, ou il
+  ne s'écrit pas.
+- **Un décompte de fiches, de pays ou de lignes de la base n'est pas une donnée
+  de terrain.** Le dire tel quel (« nos fiches en recensent… ») est permis ; le
+  convertir en « peuples » ne l'est pas.
+- **Le chiffre d'une accroche reçoit sa définition dans la pièce** : ce qu'on
+  compte, d'où vient le compte, ce qu'il laisse de côté. Un lecteur qui demande
+  « cela signifie quoi concrètement ? » en commentaire est un critère 1 raté.
+
+Un chiffre d'accroche sans définition ni source est un **0 au critère 1**.
 
 ### Le critère 1, lu par le gabarit
 

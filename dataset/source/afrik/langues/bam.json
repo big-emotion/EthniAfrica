@@ -10,7 +10,7 @@
   "nameFr": "Bambara",
   "nameEn": "Bambara",
   "alternateNames": ["Bamana", "Bamanakan", "Bamanankan"],
-  "whyProblematic": null,
+  "whyProblematic": "Les locuteurs disent bamanankan, « la langue des Bamana ». Le sens du mot « Bambara » est débattu, et nous gardons plusieurs lectures sans en choisir une. Selon l'article de Wikipédia sur les Bambara, qui renvoie à l'Encyclopedia of Africa (Appiah et Gates, 2010), il voudrait dire « incroyant » ou « infidèle », nom reçu pour avoir refusé la conversion forcée à l'islam. L'article francophone rapporte un sens voisin, « ceux qui ont refusé de se soumettre », et un récit : les frères Niangolo et Baramangolo, fondateurs des royaumes du Kaarta et de Ségou, auraient pris le nom bamba de kulun bali, « sans pirogue », après avoir franchi le fleuve sans pirogue ; il ne cite aucune source pour ces deux points. Selon ce même article, qui résume Jean Bazin (1985), le mot a désigné des réalités floues et changeantes, tantôt flatteuses, tantôt méprisantes, surtout à l'époque coloniale.",
   "spellingAliases": [],
   "familyId": "FLG_MANDE",
   "peoples": [
@@ -43,7 +43,30 @@
         "url": "https://www.ethnologue.com/language/bam/",
         "tier": "official",
         "notes": "Résumé public de la notice, consulté le 2026-09-29 : langue de communication élargie, née au Mali et en Côte d'Ivoire, employée comme première langue par toute sa communauté ethnique et comme langue d'enseignement. Les chiffres et le niveau détaillé de vitalité sont réservés aux abonnés : la vitalité reste donc non renseignée ici."
+      },
+      {
+        "title": "Anthony Appiah et Henry Louis Gates Jr., Encyclopedia of Africa, Oxford University Press, 2010, p. 150",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Passage rapporté par l'article « Bambara people » de Wikipédia anglophone : « Bambara » signifierait « incroyant » ou « infidèle », nom reçu pour avoir refusé la conversion forcée à l'islam. L'ouvrage lui-même n'a pas été consulté."
+      },
+      {
+        "title": "Jean Bazin, À chacun son Bambara, dans Au cœur de l'ethnie : ethnies, tribalisme et État en Afrique, La Découverte, Paris, 1985",
+        "url": "https://glottolog.org/resource/reference/id/135688",
+        "tier": "referenced",
+        "notes": "Conclusion rapportée par l'article « Bambaras » de Wikipédia francophone et par la notice bibliographique de Glottolog : le mot a désigné des réalités floues et changeantes, tantôt flatteuses, tantôt méprisantes. L'article lui-même n'a pas été lu."
+      },
+      {
+        "title": "Wikipédia francophone, Bambaras",
+        "url": "https://fr.wikipedia.org/wiki/Bambaras",
+        "tier": "unverified",
+        "notes": "Article lu pour le sens « ceux qui ont refusé de se soumettre » et pour le récit de Niangolo et Baramangolo (bamba, kulun bali, « sans pirogue »). L'article ne cite aucune source pour ces deux points."
       }
     ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred: the English sidecar for this language record has not been produced yet."
+    }
   }
 }

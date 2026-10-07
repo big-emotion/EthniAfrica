@@ -12,7 +12,44 @@
   "sitePath": "/fr/about",
   "word": {
     "label": { "fr": "vodun", "en": "vodun" },
-    "queries": ["vodun", "vodou", "vaudou"]
+    "queries": ["vodun", "vodou", "vaudou", "voodoo", "vodoun"]
+  },
+  "answer": {
+    "lead": {
+      "fr": "En fon, la langue du Dahomey, « vodoun » désigne une force invisible, qui peut se manifester dans le corps de certaines personnes par la transe.",
+      "en": "In Fon, the language of Dahomey, « vodoun » names an invisible force that can appear in the body of certain people through trance."
+    },
+    "origin": [
+      {
+        "text": {
+          "fr": "En fon, la langue du Dahomey, vodoun désigne une force invisible, capable de se manifester dans le corps de certaines personnes par la transe et la possession.",
+          "en": "In Fon, the language of Dahomey, vodoun names an invisible force, able to appear in the body of certain people through trance and possession."
+        },
+        "attribution": "written"
+      },
+      {
+        "text": {
+          "fr": "Le vodou haïtien n'est pas resté identique : des Africains venus de nombreux peuples, déportés, ont emporté leurs divinités. À Saint-Domingue, elles se sont mêlées à des éléments imposés par l'esclavage et à d'autres venus des Amérindiens, dans un système religieux nouveau.",
+          "en": "Haitian Vodou did not stay the same: Africans from many peoples, deported, took their divinities with them. In Saint-Domingue, these mixed with elements imposed by slavery and others from the Amerindians, in a new religious system."
+        },
+        "attribution": "written"
+      }
+    ],
+    "path": [
+      {
+        "form": "vodoun",
+        "language": "fon",
+        "period": "Dahomey"
+      },
+      {
+        "form": "vodou",
+        "language": "créole haïtien"
+      }
+    ],
+    "followUp": {
+      "fr": "Que reste-t-il des mots fon dans le vodou haïtien d'aujourd'hui ?",
+      "en": "What is left of Fon words in Haitian Vodou today?"
+    }
   },
   "publications": [
     {

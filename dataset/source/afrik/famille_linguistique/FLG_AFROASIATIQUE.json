@@ -4,6 +4,10 @@
   "nameEn": "Afroasiatic",
   "classificationStatus": "colonial-legacy",
   "content": {
+    "searchAnswer": {
+      "lead": "Un grand ensemble de langues parlées du Maroc à la Corne de l'Afrique. Son ancien nom, « chamito-sémitique », vient d'une lecture biblique du XIXe siècle, aujourd'hui délaissée par beaucoup de linguistes.",
+      "followUp": "Pourquoi a-t-on rattaché ces langues aux fils de Noé, Cham et Sem ?"
+    },
     "decolonialHeader": {
       "whyProblematic": " Le concept est une construction artificielle sans validité scientifique démontrée (aucune loi phonétique commune, aucune proto-langue reconstruite entre les 5 groupes). Il mélange critères raciaux, bibliques et linguistiques pour nier l'africanité de l'Égypte. Le terme « chamitique » est colonial et obsolète.",
       "selfAppellation": null,

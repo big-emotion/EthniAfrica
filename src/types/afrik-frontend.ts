@@ -23,6 +23,7 @@ import type {
   DemographicsSection,
 } from "./afrik";
 import type { PersonPeopleLink } from "./persons";
+import type { SearchAnswer } from "@/lib/search/answer";
 import type { NamingProjection } from "@/lib/search/naming";
 
 // ==========================================
@@ -188,6 +189,12 @@ export interface SearchResult {
    * they stay for the callers that already key on them.
    */
   naming?: NamingProjection;
+  /**
+   * The six-block answer for this row, built server-side by `readAnswer`.
+   * Optional so a row from an older server, or one the page does not answer
+   * (persons, quizzes), reads as before.
+   */
+  answer?: SearchAnswer;
   /** Autonyme (selfAppellation) du peuple, quand le corpus le porte. */
   autonym?: string;
   /** Exonymes connus, dans l'ordre de la fiche. */

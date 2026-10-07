@@ -4840,6 +4840,7 @@ const AUTHORING_KEYS = new Set(["_meta", "_translation"]);
 const OPTIONAL_CONTENT_KEYS: ReadonlySet<string> = new Set([
   "searchAnswer",
   "speakers",
+  "originDebated",
 ]);
 
 function declaredKeys(value: unknown): Set<string> {
@@ -5080,7 +5081,8 @@ function listJsonFiles(
 /**
  * REQ-178 – The two optional sentences a fiche may write for the result page
  * (`searchAnswer.lead`, `searchAnswer.followUp`) and the declared speaker
- * estimates of languages and families (`speakers.byCountry`).
+ * estimates of languages and families (`speakers.byCountry`), plus the
+ * boolean a language sets when the origin of its name is debated.
  *
  * Both are published to the reader as written, so they obey the register that
  * `gaps[].reason` and `sources[].notes` obey. Absent fields pass: the page
@@ -5093,6 +5095,7 @@ export function checkSearchAnswerFields(datasetRoot: string): ValidationResult {
   const sections: Array<{
     files: Array<{ file: string; fullPath: string }>;
     carriesSpeakers: boolean;
+    carriesOriginDebated: boolean;
     inContent: boolean;
   }> = [
     {
@@ -5103,11 +5106,13 @@ export function checkSearchAnswerFields(datasetRoot: string): ValidationResult {
         })
       ),
       carriesSpeakers: false,
+      carriesOriginDebated: false,
       inContent: true,
     },
     {
       files: listJsonFiles(datasetRoot, "pays"),
       carriesSpeakers: false,
+      carriesOriginDebated: false,
       inContent: true,
     },
     {
@@ -5116,6 +5121,7 @@ export function checkSearchAnswerFields(datasetRoot: string): ValidationResult {
         fullPath,
       })),
       carriesSpeakers: true,
+      carriesOriginDebated: true,
       inContent: true,
     },
     {
@@ -5124,16 +5130,23 @@ export function checkSearchAnswerFields(datasetRoot: string): ValidationResult {
         fullPath,
       })),
       carriesSpeakers: true,
+      carriesOriginDebated: false,
       inContent: true,
     },
     {
       files: listJsonFiles(datasetRoot, "patronymes"),
       carriesSpeakers: false,
+      carriesOriginDebated: false,
       inContent: false,
     },
   ];
 
-  for (const { files, carriesSpeakers, inContent } of sections) {
+  for (const {
+    files,
+    carriesSpeakers,
+    carriesOriginDebated,
+    inContent,
+  } of sections) {
     for (const { file, fullPath } of files) {
       const fiche = readFiche(fullPath);
       if (!fiche) continue;
@@ -5170,6 +5183,16 @@ export function checkSearchAnswerFields(datasetRoot: string): ValidationResult {
               );
             }
           }
+        }
+      }
+
+      if (holder.originDebated !== undefined) {
+        if (!carriesOriginDebated) {
+          errors.push(
+            `REQ-178: ${where}.originDebated is not allowed: only languages declare it here (name records carry their own)`
+          );
+        } else if (typeof holder.originDebated !== "boolean") {
+          errors.push(`REQ-178: ${where}.originDebated must be a boolean`);
         }
       }
 
