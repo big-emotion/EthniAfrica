@@ -240,6 +240,12 @@
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official"
+      },
+      {
+        "title": "CIA World Factbook, Gabon, rubrique Ethnic groups (estimation de 2021), copie datée du 25 octobre 2025",
+        "url": "https://web.archive.org/web/20251025152124/https://www.cia.gov/the-world-factbook/page-data/countries/gabon/page-data.json",
+        "tier": "official",
+        "notes": "Estimation : « Fang 23,5 %, Shira-Punu/Vili 20,6 %, Nzabi-Duma 11,2 %, Mbede-Teke 5,6 %, Myene 4,4 %, Kota-Kele 4,3 %, Okande-Tsogho 1,6 %, autres 12,6 %, étrangers 16,2 % ». Seules les parts des Fang et des Myene correspondent à un peuple de notre base. Les lignes qui regroupent plusieurs peuples (Shira-Punu/Vili, Nzabi-Duma, Mbede-Teke, Kota-Kele, Okande-Tsogho), les autres et les étrangers restent dans « Autres groupes ethniques ». Les parts des Punu (11,5 %) et des Nzebi (9 %) ne viennent pas de cette source, qui les compte dans des regroupements ; « Autres » (51,6 %) est le complément des parts listées. Le Factbook a cessé de paraître le 4 février 2026 ; copie lue le 6 octobre 2026."
       }
     ],
     "demographics": {
@@ -249,7 +255,7 @@
       "peoples": [
         {
           "name": "Fang",
-          "percentageInCountry": 32,
+          "percentageInCountry": 23.5,
           "peopleId": "PPL_FANG",
           "region": "Nord du Gabon (forêts équatoriales)",
           "languageFamily": "FLG_BANTU"
@@ -267,11 +273,16 @@
           "percentageInCountry": 9
         },
         {
+          "name": "Myene",
+          "percentageInCountry": 4.4,
+          "peopleId": "PPL_MYENE"
+        },
+        {
           "name": "Autres groupes ethniques",
           "peopleId": null,
           "region": "Divers",
           "languageFamily": null,
-          "percentageInCountry": 47
+          "percentageInCountry": 51.6
         }
       ]
     }
