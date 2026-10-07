@@ -20,8 +20,25 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "writtenChronicles": [
+      {
+        "claim": "Une explication relie le nom au chef qui fonda le clan des amaZulu, uZulu (dates inconnues, mort probablement vers 1709) ; les chefferies réunies sous ce clan ont ensuite pris son nom. Un journal de 1829 note à l'inverse que le grand-père de Chaka s'appelait Zulu, ce qui signifie « haut, ou les cieux », et que la nation en tire le nom d'amaZulu, « peuple du ciel » ; le dictionnaire cite cette phrase comme exemple d'une lecture qu'il juge fondée sur une méprise.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["dsae-zulu"]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "Le nom du fondateur viendrait du mot zoulou izulu, « ciel », devenu plus tard aussi « paradis ». Selon le dictionnaire, amaZulu a souvent été compris comme « peuple du ciel » ou « peuple du paradis » par méprise : la lecture exacte serait « les gens de uZulu », le fondateur du clan. Le dictionnaire retient la seconde lecture ; la première reste courante. Nous les rapportons toutes deux. Toutes les sources consultées sont extérieures : aucun récit en zoulou sur ce nom n'a été trouvé.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["dsae-zulu"]
+      },
+      {
+        "claim": "Un auteur de 1978 préfère comprendre Zulu comme « le ciel » et amaZulu comme « les gens du ciel », au motif que, écrit-il, les « païens » n'ont pas d'équivalent du paradis ni de l'enfer. C'est une préférence personnelle de l'auteur, non une croyance attribuée aux Zoulous.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["dsae-zulu"]
+      }
+    ]
   },
   "peoples": [
     {
@@ -48,6 +65,14 @@
   "homonyms": [],
   "sources": [
     {
+      "sourceKey": "dsae-zulu",
+      "title": "Zulu, noun and adjective — Dictionary of South African English on Historical Principles",
+      "url": "https://dsae.co.za/entry/zulu/e08042",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Dictionary of South African English on Historical Principles (Dictionary Unit for South African English, Rhodes University), entrée « Zulu », note d'origine et deux citations datées : W. Shaw, journal, entrée du 16 mai 1829, cité par le dictionnaire, et A. Elliott, Sons of Zulu, 1978, p. 14. Entrée en ligne, sans pagination : la citation de Shaw est donnée de seconde main, par le dictionnaire. Elle porte sur le nom des amaZulu en Afrique du Sud ; l'entrée ne dit rien du nom porté comme patronyme en Zambie ou au Malawi."
+    },
+    {
       "sourceKey": "afrik-candidate-queue",
       "title": "Relevé de couverture anthroponymique EthniAfrica",
       "url": null,
@@ -59,7 +84,7 @@
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les sources consultées expliquent le nom des amaZulu d'Afrique du Sud. Aucune ne dit comment le nom est devenu un patronyme chez les Ngoni de Zambie et du Malawi : ce lien n'est pas établi ici."
     },
     {
       "fieldPath": "alliances",
@@ -81,5 +106,10 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "Publication is French-only; the English sidecar is produced in the English launch pass for all patronymic records."
+    }
+  }
 }
