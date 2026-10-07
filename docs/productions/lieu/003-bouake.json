@@ -19,8 +19,16 @@
   ],
   "sitePath": "/fr/atlas/pays/CIV",
   "publications": [
-    { "network": "tiktok", "format": "carrousel" },
-    { "network": "instagram", "format": "carrousel" },
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7693882831314898198"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/DeMOr1DCF3j/"
+    },
     { "network": "facebook", "format": "carrousel" },
     { "network": "youtube", "format": "carrousel" },
     { "network": "linkedin", "format": "carrousel" }
