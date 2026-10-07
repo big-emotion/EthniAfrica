@@ -44,3 +44,22 @@ describe("the appellations → noms redirect, per locale (DEC-049)", () => {
     }
   });
 });
+
+describe("the folded PAT_KAMARA address, per locale", () => {
+  // PAT_KAMARA was an empty duplicate folded into PAT_CAMARA; its published
+  // address would otherwise answer 404 to anyone who held it.
+  // @req REQ-141
+  it("sends the retired PAT_KAMARA fiche to PAT_CAMARA in each locale", async () => {
+    const redirects = await loadRedirects();
+
+    for (const locale of LOCALES) {
+      const entry = redirects.find(
+        (redirect) =>
+          redirect.source === getPatronymeRoute(locale, "PAT_KAMARA")
+      );
+      expect(entry, locale).toBeDefined();
+      expect(entry.destination).toBe(getPatronymeRoute(locale, "PAT_CAMARA"));
+      expect(entry.permanent).toBe(true);
+    }
+  });
+});

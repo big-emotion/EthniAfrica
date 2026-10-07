@@ -79,6 +79,17 @@ const nextConfig: NextConfig = {
         destination: "/en/atlas/names/:slug",
         permanent: true,
       },
+      // PAT_KAMARA was an empty duplicate folded into PAT_CAMARA.
+      {
+        source: "/fr/atlas/noms/PAT_KAMARA",
+        destination: "/fr/atlas/noms/PAT_CAMARA",
+        permanent: true,
+      },
+      {
+        source: "/en/atlas/names/PAT_KAMARA",
+        destination: "/en/atlas/names/PAT_CAMARA",
+        permanent: true,
+      },
     ];
   },
 };
