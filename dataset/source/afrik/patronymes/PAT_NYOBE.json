@@ -32,20 +32,26 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Une étude des noms bassa'a range Nyobe parmi les noms de personnes tirés des animaux et le glose « mauvais serpent », à côté de Nyoo, « le serpent ». L'étude ne dit ni pourquoi ce nom est donné, ni s'il désigne une famille.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["minyem-2021-bassaa"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_BASSA_CAM",
       "status": "attested",
-      "sourceRefs": ["sharp-2013-nyobe"]
+      "sourceRefs": ["sharp-2013-nyobe", "minyem-2021-bassaa"]
     }
   ],
   "countries": [
     {
       "countryId": "CMR",
       "status": "attested",
-      "sourceRefs": ["sharp-2013-nyobe"]
+      "sourceRefs": ["sharp-2013-nyobe", "minyem-2021-bassaa"]
     }
   ],
   "alliances": [],
@@ -66,12 +72,20 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Thèse de Thomas Sharp, Université de Manchester, 2013, consultée dans son PDF intégral. Elle atteste la graphie Nyobé, présente Ruben Um Nyobé comme originaire de la population bassa de Sanaga-Maritime et traite explicitement de sa mort en 1958 ; elle ne fournit aucune étymologie du nom."
+    },
+    {
+      "sourceKey": "minyem-2021-bassaa",
+      "title": "Toponymes et anthroponymes chez les Bassa'a : étude anthropologique",
+      "url": "https://dicames.online/jspui/bitstream/20.500.12177/12142/1/FALSH_MEM_BC_24_%200020.PDF",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Joël Landry Minyem Mpeck, mémoire de master en anthropologie culturelle, Université de Yaoundé I, année 2020-2021, sous la direction de Paul Abouna ; travail universitaire non publié, lu dans la version numérisée du dépôt de l'université. Pages imprimées : NYOBE glosé « Mauvais serpent », à côté de NYOO « Le serpent », dans le tableau des noms tirés de la faune (p. 141) et dans la liste des noms de personnes tirés de la faune (p. 172). Le mémoire donne le sens du mot sans commenter chaque nom : il ne dit pas pourquoi on le donne ni s'il désigne une famille."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Nyobe », « Nyobé », « Bassa », « Cameroun », « patronyme », « anthroponymie », « étymologie », « clan », « transmission », « alliance », « caste » et « homonyme », ainsi que la thèse de Sharp consacrée à l'UPC et à Ruben Um Nyobé n'ont livré aucune tradition attribuée, chronique ou étude linguistique propre à ce nom qui en établirait l'origine ; les rapprochements fondés sur la seule ressemblance ou la seule géographie ont été écartés."
+      "reason": "Nous ne documentons pas encore l'histoire du nom de famille Nyobe ou Nyobé : le seul travail lu donne le sens du mot, pas l'origine du nom chez ses porteurs. Aucune explication venue des familles qui le portent n'a été trouvée."
     },
     {
       "fieldPath": "nameSystem",
@@ -93,5 +107,10 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Nyobe », « Nyobé », « Bassa », « Cameroun », « patronyme », « anthroponymie », « étymologie », « clan », « transmission », « alliance », « caste » et « homonyme », ainsi que la thèse de Sharp consacrée à l'UPC et à Ruben Um Nyobé n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
+    }
+  }
 }
