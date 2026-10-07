@@ -4,6 +4,10 @@
   "nameEn": "Chadic",
   "classificationStatus": "colonial-legacy",
   "content": {
+    "searchAnswer": {
+      "lead": "Des langues du bassin du lac Tchad, au Nigeria, au Niger, au Tchad et au Cameroun. Le nom vient du lac ; l'ancien nom « hamitique » rattachait à tort ces peuples à une origine non africaine.",
+      "followUp": "Pourquoi l'ancien nom « hamitique » est-il rejeté ?"
+    },
     "decolonialHeader": {
       "whyProblematic": " L'étiquette « hamite » associait à tort des peuples africains à une origine non-africaine prétendument « civilisatrice ». Le regroupement « hamitique » servait une hiérarchie raciale artificielle. **PREUVES** :",
       "selfAppellation": null,

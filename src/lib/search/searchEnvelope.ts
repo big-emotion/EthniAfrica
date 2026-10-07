@@ -12,6 +12,10 @@
  * impossible rather than merely fixed.
  */
 
+import { z } from "zod";
+
+import type { SearchAnswer, WordAnswer } from "@/lib/search/answer";
+import type { SearchEvidence } from "@/lib/search/evidence";
 import type { NamingProjection } from "@/lib/search/naming";
 import type {
   SearchEntityType,
@@ -95,6 +99,26 @@ function isNamingProjection(value: unknown): value is NamingProjection {
 
 function namingOf(row: Record<string, unknown>): NamingProjection | undefined {
   return isNamingProjection(row.naming) ? row.naming : undefined;
+}
+
+/**
+ * A row from an older server carries no `answer`, and a malformed one must
+ * not reach the page: the minimum the blocks rely on is checked here.
+ */
+function isSearchAnswer(value: unknown): value is SearchAnswer {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const answer = value as Partial<SearchAnswer>;
+  return (
+    typeof answer.kind === "string" &&
+    typeof answer.title === "string" &&
+    Array.isArray(answer.names) &&
+    Boolean(answer.what) &&
+    typeof answer.sources?.count === "number"
+  );
+}
+
+function answerOf(row: Record<string, unknown>): SearchAnswer | undefined {
+  return isSearchAnswer(row.answer) ? row.answer : undefined;
 }
 
 /**
@@ -319,6 +343,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     ...asRows(peoples).map((row): SearchResult => ({
       type: "people",
       naming: namingOf(row),
+      answer: answerOf(row),
       id: String(row.id),
       name: String(row.nameMain ?? ""),
       languageFamilyId:
@@ -339,6 +364,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     ...asRows(countries).map((row): SearchResult => ({
       type: "country",
       naming: namingOf(row),
+      answer: answerOf(row),
       id: String(row.id),
       name: String(row.nameFr ?? ""),
       nameEn: englishNameOf(row.nameEn),
@@ -353,6 +379,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     ...asRows(families).map((row): SearchResult => ({
       type: "languageFamily",
       naming: namingOf(row),
+      answer: answerOf(row),
       id: String(row.id),
       name: String(row.nameFr ?? ""),
       nameEn: englishNameOf(row.nameEn),
@@ -380,6 +407,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     ...asRows(patronymes).map((row): SearchResult => ({
       type: "patronyme",
       naming: namingOf(row),
+      answer: answerOf(row),
       id: String(row.id),
       name: String(row.nameMain ?? ""),
       nameSystem: row.nameSystem as SearchResult["nameSystem"],
@@ -397,6 +425,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     ...asRows(languages).map((row): SearchResult => ({
       type: "language",
       naming: namingOf(row),
+      answer: answerOf(row),
       id: String(row.id),
       name: String(row.name ?? ""),
       nameEn: englishNameOf(row.nameEn),
@@ -536,4 +565,70 @@ export function mapSearchCounts(envelope: unknown): SearchLensCounts {
 export function compareByRelevance(a: SearchResult, b: SearchResult): number {
   if (a.exactMatch !== b.exactMatch) return a.exactMatch ? -1 : 1;
   return (b.relevance ?? 0) - (a.relevance ?? 0);
+}
+
+const evidenceShape = z.custom<SearchEvidence>(
+  (value) =>
+    Boolean(value) &&
+    typeof value === "object" &&
+    Array.isArray((value as SearchEvidence).sources) &&
+    typeof (value as SearchEvidence).assertion?.statement === "string"
+);
+
+const wordAnswerSchema = z.object({
+  kind: z.literal("word"),
+  title: z.string().min(1),
+  queries: z.array(z.string()),
+  what: z.object({
+    lead: z.string().optional(),
+    facts: z.object({}).passthrough(),
+  }),
+  origin: z
+    .object({
+      accounts: z.array(
+        z.object({
+          text: z.string().min(1),
+          attribution: z
+            .enum(["oral", "written", "linguistic", "synthesis"])
+            .optional(),
+          evidence: z.array(evidenceShape),
+        })
+      ),
+      debated: z.boolean(),
+    })
+    .optional(),
+  names: z.array(
+    z.object({ form: z.string().min(1), selfGiven: z.boolean().nullable() })
+  ),
+  next: z.object({ question: z.string().min(1) }).optional(),
+  sources: z.object({ count: z.number() }),
+  publications: z
+    .array(z.object({ network: z.string(), url: z.string() }))
+    .optional(),
+  path: z
+    .array(
+      z.object({
+        form: z.string(),
+        language: z.string(),
+        period: z.string().optional(),
+      })
+    )
+    .optional(),
+});
+
+/**
+ * Reads `data.wordAnswers` off a search envelope (REQ-184). A malformed answer
+ * is dropped rather than drawn half-shaped: the page then falls back to what
+ * it would have said without it, which is honest, instead of a partial claim.
+ * @req REQ-184
+ */
+export function mapWordAnswers(envelope: unknown): WordAnswer[] {
+  const data = (envelope as { data?: unknown } | null)?.data;
+  if (!data || typeof data !== "object" || Array.isArray(data)) return [];
+  const { wordAnswers } = data as Record<string, unknown>;
+  if (!Array.isArray(wordAnswers)) return [];
+  return wordAnswers.flatMap((entry) => {
+    const parsed = wordAnswerSchema.safeParse(entry);
+    return parsed.success ? [parsed.data as WordAnswer] : [];
+  });
 }

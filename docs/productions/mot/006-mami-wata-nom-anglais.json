@@ -12,7 +12,43 @@
   "sitePath": "/fr/about",
   "word": {
     "label": { "fr": "Mami Wata", "en": "Mami Wata" },
-    "queries": ["mami wata", "mamiwata"]
+    "queries": ["mami wata", "mamiwata", "mammy wata", "mami wota"]
+  },
+  "answer": {
+    "lead": {
+      "fr": "Une explication tire « Mami Wata » de deux mots anglais : mother, « mère », et water, « eau ». Le nom se dit pourtant dans toute une partie de l'Afrique.",
+      "en": "One explanation takes « Mami Wata » from two English words: mother and water. The name is nonetheless said across a good part of Africa."
+    },
+    "origin": [
+      {
+        "text": {
+          "fr": "Une explication tire le nom de l'anglais, dans les langues créoles à base d'anglais comme le krio ou le pidgin du Nigeria : mother et water.",
+          "en": "One explanation takes the name from English, in English-based creole languages such as Krio or Nigerian Pidgin: mother and water."
+        },
+        "attribution": "linguistic"
+      },
+      {
+        "text": {
+          "fr": "En Afrique centrale, le même esprit de l'eau porte d'autres noms : Mamba Muntu, Mami Muntu ou Dona Fish, en Angola et dans les deux Congo.",
+          "en": "In Central Africa the same water spirit carries other names: Mamba Muntu, Mami Muntu or Dona Fish, in Angola and in both Congos."
+        },
+        "attribution": "written"
+      }
+    ],
+    "path": [
+      {
+        "form": "mother · water",
+        "language": "anglais"
+      },
+      {
+        "form": "Mami Wata",
+        "language": "krio · pidgin du Nigeria"
+      }
+    ],
+    "followUp": {
+      "fr": "Quels noms portaient les esprits de l'eau avant l'arrivée de ce nom ?",
+      "en": "What names did water spirits carry before this name arrived?"
+    }
   },
   "publications": [
     {
@@ -39,6 +75,11 @@
       "title": "Alex van Stipriaan, « Watramama/Mami Wata: Three Centuries of Creolization of a Water Spirit in West Africa, Suriname and Europe », Matatu 27–28, 2003",
       "url": "https://brill.com/abstract/journals/mata/27/1/article-p321_321.xml",
       "tier": "referenced"
+    },
+    {
+      "title": "Wikipedia (English), « Mami Wata », section on the name",
+      "url": "https://en.wikipedia.org/wiki/Mami_Wata",
+      "tier": "unverified"
     }
   ]
 }

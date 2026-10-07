@@ -10,12 +10,88 @@
   },
   "subjects": [],
   "sitePath": "/fr/about",
+  "word": {
+    "label": {
+      "fr": "hottentot",
+      "en": "hottentot"
+    },
+    "queries": ["hottentot", "hottentots", "hottentote", "hottentotes"]
+  },
+  "answer": {
+    "lead": {
+      "fr": "Les Khoekhoe ont leur propre nom. « Hottentot » est un mot que des colons néerlandais du Cap leur ont appliqué après 1652 ; son origine n'est pas établie.",
+      "en": "The Khoekhoe have their own name. « Hottentot » is a word that Dutch settlers at the Cape applied to them after 1652; its origin is not established."
+    },
+    "origin": [
+      {
+        "text": {
+          "fr": "Les Khoekhoe se nomment Khoekhoe, un nom noté de bien des façons depuis le XVIIe siècle : Quena, T-hoekoe, Khoikhoi. Son sens est discuté : « personnes des personnes » pour certains, « les meilleures gens » ou « notre peuple » pour d'autres, « peuple de la montagne » pour une lecture récente.",
+          "en": "The Khoekhoe call themselves Khoekhoe, a name written in many ways since the seventeenth century: Quena, T-hoekoe, Khoikhoi. Its meaning is discussed: « people of people » for some, « the best people » or « our people » for others, « mountain people » for a recent reading."
+        },
+        "attribution": "linguistic"
+      },
+      {
+        "text": {
+          "fr": "Dans son ouvrage de 1714, Valentyn écrit des Hottentots : « Où ce nom prend sa source, je ne sais, en tout cas pas d'eux, car ils se disent T-hoekoe ».",
+          "en": "In his work of 1714, Valentyn writes of the Hottentots: « Where the name comes from, I do not know, in any case not from them, since they call themselves T-hoekoe »."
+        },
+        "attribution": "written"
+      },
+      {
+        "text": {
+          "fr": "Une explication y voit un mot pour « bègue », donné aux Khoekhoe à cause des sons à clic de leur langue. Un dictionnaire d'anglais sud-africain la reprend d'un auteur de 1930. Selon Wikipédia, qui cite l'Oxford English Dictionary, aucun emploi plus ancien d'un mot hottentot ne la soutient.",
+          "en": "One explanation sees a word for « stammerer », given to the Khoekhoe because of the click sounds of their language. A dictionary of South African English repeats it from an author of 1930. According to Wikipedia, citing the Oxford English Dictionary, no earlier use of a word hottentot supports it."
+        },
+        "attribution": "linguistic"
+      },
+      {
+        "text": {
+          "fr": "Une autre y voit des mots entendus dans des chants qui accompagnaient les danses khoekhoe ou san. Selon Wikipédia, les chants notés au XVIIe siècle ne suffisent pas à le prouver.",
+          "en": "Another sees words heard in chants that accompanied Khoekhoe or San dances. According to Wikipedia, the chants noted in the seventeenth century are not enough to prove it."
+        },
+        "attribution": "linguistic"
+      }
+    ],
+    "path": [
+      {
+        "form": "hottentot",
+        "language": "néerlandais du Cap",
+        "period": "après 1652"
+      },
+      {
+        "form": "hottentot",
+        "language": "anglais",
+        "period": "XVIIe siècle"
+      }
+    ],
+    "followUp": {
+      "fr": "Quels noms les Khoekhoe et les San se donnent-ils à eux-mêmes ?",
+      "en": "What names do the Khoekhoe and the San give themselves?"
+    }
+  },
   "publications": [
     {
       "network": "tiktok",
       "format": "carrousel",
       "url": "https://www.tiktok.com/@ethniafrica/photo/7684276118811086102",
       "publishedAt": "2026-09-11"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Peter E. Raper, « Another look at 'Khoikhoi' and related ethnonyms », Acta Academica 43(1), 2011",
+      "url": "https://journals.ufs.ac.za/index.php/aa/article/view/1300",
+      "tier": "referenced"
+    },
+    {
+      "title": "« Hottentot », Dictionary of South African English on Historical Principles",
+      "url": "https://dsae.co.za/entry/hottentot/e03109",
+      "tier": "referenced"
+    },
+    {
+      "title": "Wikipedia, « Hottentot (racial term) » (cite l'Oxford English Dictionary)",
+      "url": "https://en.wikipedia.org/wiki/Hottentot_(racial_term)",
+      "tier": "unverified"
     }
   ]
 }

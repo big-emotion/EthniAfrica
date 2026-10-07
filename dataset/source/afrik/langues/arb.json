@@ -16,7 +16,7 @@
     "Al-FusHa",
     "al-Fusḥa"
   ],
-  "whyProblematic": null,
+  "whyProblematic": "Ses locuteurs disent al-ʿarabiyya al-fuṣḥā, « la langue arabe la plus éloquente », qui couvre l'arabe classique et l'arabe moderne écrit. « Arabe standard moderne » n'est pas leur nom : selon l'article de Wikipédia, qui renvoie à Holes et Allen (2004), c'est une étiquette commode des chercheurs occidentaux pour l'écrit depuis le milieu du XIXe siècle.",
   "spellingAliases": [],
   "familyId": "FLG_SEMITIQUE",
   "peoples": [],
@@ -30,7 +30,18 @@
         "url": "https://glottolog.org/resource/languoid/id/stan1318",
         "tier": "official",
         "notes": "Glottolog name: Standard Arabic; classification includes Semitic. Les dialectes listés sont les sous-languoids que Glottolog rattache à stan1318, hors languoids portant leur propre code ISO 639-3."
+      },
+      {
+        "title": "Wikipédia anglophone, Modern Standard Arabic",
+        "url": "https://en.wikipedia.org/wiki/Modern_Standard_Arabic",
+        "tier": "unverified",
+        "notes": "Article lu pour les noms de la langue ; il renvoie à Alaa Elgibali et El-Said M. Badawi, Understanding Arabic (1996), p. 105, pour les noms arabes, et à Clive Holes et Roger Allen, Modern Arabic: Structures, Functions, and Varieties (Georgetown University Press, 2004), p. 5, pour l'étiquette « Modern Standard Arabic ». Les deux ouvrages n'ont pas été consultés directement."
       }
     ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred: the English sidecar for this language record has not been produced yet."
+    }
   }
 }

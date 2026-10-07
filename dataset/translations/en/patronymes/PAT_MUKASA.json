@@ -1,0 +1,143 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "patronyme",
+    "directives": "Fiche revue selon le protocole de recherche anthroponymique. Chaque affirmation est limitée à ce que dit sa source ; les champs non établis restent des lacunes explicites."
+  },
+  "id": "PAT_MUKASA",
+  "nameMain": "Mukasa",
+  "nameSystem": "totemic_clan",
+  "spellings": [
+    {
+      "spelling": "Mukasa",
+      "attestations": [
+        { "countryId": "UGA", "sourceRefs": ["forebears-mukasa"] }
+      ]
+    }
+  ],
+  "transmissionMode": "other",
+  "designatedSocialUnit": "clan",
+  "origin": {
+    "oralTraditions": [
+      {
+        "claim": "The name is said to come from an island. Passers-by saw a child sitting under a large tree near the lake, on the island of Bubembe, and told the elders of the village. The elders concluded that he came from Bukasa and called him \"a Mukasa\", that is, a man from the island of Bukasa; the name stayed with him. This is the account of the god Mukasa, son of Wanema and Nambubi, born under the name Selwanga.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "John Roscoe, missionnaire anglais qui a recueilli les croyances des Ganda",
+        "context": "Account of the god Mukasa published in 1911; the person who told it is not named. It explains the name of the god, not that of the families who bear it today",
+        "sourceRefs": ["roscoe-1911-baganda"]
+      },
+      {
+        "claim": "Among the Ganda, twin boys were given the name Mukasa, after the god, and girls the name Namukasa; twins were placed under his protection.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "John Roscoe, missionnaire anglais qui a recueilli les coutumes des Ganda",
+        "context": "Custom described in a work published in 1911; the person who reported it is not named",
+        "sourceRefs": ["roscoe-1911-baganda"]
+      }
+    ],
+    "writtenChronicles": [],
+    "linguisticReconstructions": []
+  },
+  "peoples": [
+    {
+      "peopleId": "PPL_BAGANDA",
+      "status": "supposed",
+      "sourceRefs": ["forebears-mukasa"]
+    }
+  ],
+  "countries": [
+    {
+      "countryId": "UGA",
+      "status": "attested",
+      "sourceRefs": ["forebears-mukasa"]
+    }
+  ],
+  "alliances": [],
+  "casteOrSocialFunction": null,
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Joseph Mukasa Balikuddembe (1860-1885)",
+      "sourceRefs": ["dacb-joseph-mukasa"]
+    }
+  ],
+  "homonyms": [],
+  "sources": [
+    {
+      "sourceKey": "forebears-mukasa",
+      "title": "Mukasa Surname Origin, Meaning & Last Name History",
+      "url": "https://forebears.io/surnames/mukasa",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Surname distribution database consulted directly to attest the modern use of Mukasa as a family name and its presence in the countries indicated. Geography proves neither an exclusive ethnic affiliation nor an etymology; any contributed definitions are not raised to the status of facts."
+    },
+    {
+      "sourceKey": "roscoe-1911-baganda",
+      "title": "The Baganda: an account of their native customs and beliefs",
+      "url": "https://archive.org/details/cu31924028599433",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Roscoe, John, Macmillan, London, 1911; the author is a missionary of the Church Missionary Society. Pages read in the digitised copy on archive.org (Cornell library), whose printed page numbers appear at the head of the page: twin boys named Mukasa and girls Namukasa, after the god (p. 70); the child found on the island of Bubembe, whom the elders say came from Bukasa and call \"a Mukasa\" (p. 291). Work by an author of the colonial period, cited for what the Ganda told him about the name, not for his classifications. It speaks of the name of the god and of a practice concerning twins: it does not explain how Mukasa became a family name."
+    },
+    {
+      "sourceKey": "dacb-joseph-mukasa",
+      "title": "Mukasa Balikuddembe, Joseph",
+      "url": "https://dacb.org/stories/uganda/mukasa-joseph/",
+      "tier": "referenced",
+      "source_kind": "repository",
+      "notes": "Entry of the Dictionary of African Christian Biography consulted directly. It documents Joseph Mukasa Balikuddembe (1860-1885), born in the kingdom of Buganda, and his father's clan; it is not used for an etymology of the name."
+    }
+  ],
+  "gaps": [
+    {
+      "fieldPath": "origin",
+      "reason": "We have found no source that explains how Mukasa became a family name, or that says whether the families who bear it are connected to the god. The two accounts above speak of the name of the god and of a custom for twins; neither is an account of the families themselves. Lexical similarities and geography alone have been set aside."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "The web and bibliographic search combining \"Mukasa\", \"BAGANDA\", \"surname\", \"clan\", \"etymology\", \"transmission\", \"alliance\" and \"obituary\", together with the dedicated Forebears page and the works or entries specific to the name cited in the fiche, did not establish that the provisional category \"totemic_clan\" describes the name itself; it remains a working classification and not a demonstrated origin."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "The web and bibliographic search combining \"Mukasa\", \"BAGANDA\", \"surname\", \"clan\", \"etymology\", \"transmission\", \"alliance\" and \"obituary\", together with the dedicated Forebears page and the works or entries specific to the name cited in the fiche, identified no documented alliance or joking kinship linking Mukasa to another name documented here."
+    },
+    {
+      "fieldPath": "casteOrSocialFunction",
+      "reason": "The web and bibliographic search combining \"Mukasa\", \"BAGANDA\", \"surname\", \"clan\", \"etymology\", \"transmission\", \"alliance\" and \"obituary\", together with the dedicated Forebears page and the works or entries specific to the name cited in the fiche, established no hereditary social or occupational function specific to Mukasa."
+    },
+    {
+      "fieldPath": "homonyms",
+      "reason": "The web and bibliographic search combining \"Mukasa\", \"BAGANDA\", \"surname\", \"clan\", \"etymology\", \"transmission\", \"alliance\" and \"obituary\", together with the dedicated Forebears page and the works or entries specific to the name cited in the fiche, did not establish a documentable homonymous lineage of distinct origin; spread across several countries and graphic resemblances are not enough to create a homonym."
+    },
+    {
+      "fieldPath": "transmissionMode",
+      "reason": "The web and bibliographic search combining \"Mukasa\", \"BAGANDA\", \"surname\", \"clan\", \"etymology\", \"transmission\", \"alliance\" and \"obituary\", together with the dedicated Forebears page and the works or entries specific to the name cited in the fiche, established no rule common to all uses of Mukasa that would allow a choice between patrilineal, matrilineal, bilateral, elective or non-hereditary transmission; the mode therefore remains \"other\"."
+    }
+  ],
+  "_translation": {
+    "kind": "machine",
+    "translatedAt": "2026-10-06T18:12:14.271Z",
+    "model": "claude-sonnet-5-5",
+    "sourceHash": "4fea2729be408fc1a02801b4f1be91a7b4c27288cdbea3dfadf9d93a1bb6927c",
+    "fieldHashes": {
+      "origin.oralTraditions[0].claim": "df067ce043782a9f",
+      "origin.oralTraditions[0].context": "49571633759bf9c2",
+      "origin.oralTraditions[1].claim": "9afa2d1d8b667062",
+      "origin.oralTraditions[1].context": "8d99aee44851fe46",
+      "sources[0].notes": "d7094d611ebcfd37",
+      "sources[1].notes": "d541ab9171dc00cc",
+      "sources[2].notes": "81b181434ac1c49f",
+      "gaps[0].reason": "1413d74b8581c81e",
+      "gaps[1].reason": "0a5c9ff307cb02ec",
+      "gaps[2].reason": "82c7603d41de8f31",
+      "gaps[3].reason": "3e6f3e3d392413ec",
+      "gaps[4].reason": "8701169fc5ca9b90",
+      "gaps[5].reason": "7e52f79d16312c33"
+    },
+    "reviewRequired": [
+      "origin.oralTraditions[0].context",
+      "origin.oralTraditions[1].context"
+    ]
+  }
+}

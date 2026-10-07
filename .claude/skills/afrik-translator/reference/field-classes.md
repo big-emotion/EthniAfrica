@@ -161,6 +161,7 @@ contract test is what keeps them equal to it, row for row and model for model.
 | `content.vitalityStatus.status`             | `invariant`       |                   |
 | `content.vitalityStatus.scale`              | `invariant`       |                   |
 | `content.vitalityStatus.asOf`               | `invariant`       |                   |
+| `content.originDebated`                     | `invariant`       |                   |
 | `content.sources[].title`                   | `invariant`       |                   |
 | `content.sources[].url`                     | `invariant`       |                   |
 | `content.sources[].tier`                    | `invariant`       |                   |

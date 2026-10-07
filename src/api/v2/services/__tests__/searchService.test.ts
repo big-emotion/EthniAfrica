@@ -12,7 +12,19 @@ vi.mock("@/lib/supabase/queries/afrik/searchNaming", async (importOriginal) => {
   return { ...actual, loadSearchNamingData: vi.fn() };
 });
 
+vi.mock("@/lib/supabase/queries/afrik/searchAnswer", async (importOriginal) => {
+  const actual =
+    await importOriginal<
+      typeof import("@/lib/supabase/queries/afrik/searchAnswer")
+    >();
+  return { ...actual, loadSearchAnswerExtras: vi.fn() };
+});
+
 import { ftsSearch } from "@/api/v2/services/searchService";
+import {
+  loadSearchAnswerExtras,
+  searchAnswerKey,
+} from "@/lib/supabase/queries/afrik/searchAnswer";
 import { ftsSearchEntities } from "@/lib/supabase/queries/afrik/search";
 import {
   loadSearchNamingData,
@@ -141,7 +153,10 @@ function response(): FtsSearchResponse {
 }
 
 describe("search naming projection", () => {
-  beforeEach(() => vi.clearAllMocks());
+  beforeEach(() => {
+    vi.clearAllMocks();
+    vi.mocked(loadSearchAnswerExtras).mockResolvedValue(new Map());
+  });
 
   // @req REQ-180
   it("enriches the five naming classes once and leaves ranking untouched", async () => {
@@ -212,5 +227,52 @@ describe("search naming projection", () => {
     await expect(
       ftsSearch({ q: "fang", limit: 10, offset: 0 })
     ).rejects.toThrow("naming evidence unavailable");
+  });
+});
+
+describe("search answer projection", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+    vi.mocked(loadSearchNamingData).mockResolvedValue(new Map());
+    vi.mocked(loadSearchAnswerExtras).mockResolvedValue(new Map());
+  });
+
+  // @req REQ-178
+  it("adds an answer to each of the five classes and none to the others", async () => {
+    vi.mocked(ftsSearchEntities).mockResolvedValue(response());
+    vi.mocked(loadSearchAnswerExtras).mockResolvedValue(
+      new Map([
+        [searchAnswerKey("country", "NGA"), { documentedPeopleCount: 12 }],
+      ])
+    );
+
+    const result = await ftsSearch({ q: "fang", limit: 10, offset: 0 });
+
+    expect(result.peoples[0].answer).toMatchObject({
+      kind: "people",
+      title: "Fang",
+    });
+    expect(result.countries[0].answer).toMatchObject({
+      kind: "country",
+      title: "Nigeria",
+      what: { facts: { peopleCount: 12 } },
+    });
+    expect(result.families[0].answer?.kind).toBe("languageFamily");
+    expect(result.patronymes[0].answer?.kind).toBe("patronyme");
+    expect(result.languages[0].answer?.kind).toBe("language");
+    expect(result.persons[0]).not.toHaveProperty("answer");
+    expect(result.quizzes[0]).not.toHaveProperty("answer");
+  });
+
+  // @req REQ-178
+  it("fails the request when the aggregates cannot be loaded", async () => {
+    vi.mocked(ftsSearchEntities).mockResolvedValue(response());
+    vi.mocked(loadSearchAnswerExtras).mockRejectedValue(
+      new Error("aggregates unavailable")
+    );
+
+    await expect(
+      ftsSearch({ q: "fang", limit: 10, offset: 0 })
+    ).rejects.toThrow("aggregates unavailable");
   });
 });

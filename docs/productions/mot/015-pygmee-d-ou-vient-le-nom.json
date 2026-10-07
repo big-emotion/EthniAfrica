@@ -10,6 +10,67 @@
   },
   "subjects": [],
   "sitePath": "/fr/about",
+  "word": {
+    "label": {
+      "fr": "pygmée",
+      "en": "pygmy"
+    },
+    "queries": ["pygmee", "pygmees", "pygmy", "pygmies"]
+  },
+  "answer": {
+    "lead": {
+      "fr": "Mbuti, Efe, Aka, Asua : des peuples de la forêt d'Afrique centrale refusent « pygmée », un mot grec qui désignait de petits hommes de légende.",
+      "en": "Mbuti, Efe, Aka, Asua: peoples of the Central African forest reject « pygmy », a Greek word that named little men of legend."
+    },
+    "origin": [
+      {
+        "text": {
+          "fr": "Les peuples que ce mot désigne en Afrique centrale se nomment Mbuti, Efe, Aka, Asua, entre autres. Un article de la FAO note qu'ils refusent tous le mot « pygmée » et préfèrent leur propre nom.",
+          "en": "The peoples this word designates in Central Africa call themselves Mbuti, Efe, Aka, Asua, among others. An FAO article notes that they all reject the word « pygmy » and prefer their own name."
+        },
+        "attribution": "written"
+      },
+      {
+        "text": {
+          "fr": "Le mot vient du grec pygmaîos, tiré de pygmê, une mesure de longueur, du coude aux jointures du poing. Dans l'Iliade, Homère parle des « Pygmées » en guerre avec les grues, près de l'Océan.",
+          "en": "The word comes from Greek pygmaîos, taken from pygmê, a measure of length, from the elbow to the knuckles. In the Iliad, Homer speaks of the « Pygmies » at war with the cranes, near the Ocean."
+        },
+        "attribution": "written"
+      },
+      {
+        "text": {
+          "fr": "Aristote y voit une vraie race d'hommes de petite taille, vivant dans des grottes, près des sources du Nil.",
+          "en": "Aristotle sees a real race of small men, living in caves, near the sources of the Nile."
+        },
+        "attribution": "written"
+      },
+      {
+        "text": {
+          "fr": "En 1873, dans l'édition anglaise de son voyage, l'explorateur Georg Schweinfurth propose d'employer « pygmée » pour les peuples de petite taille d'Afrique équatoriale, « au sens d'Aristote ».",
+          "en": "In 1873, in the English edition of his journey, the explorer Georg Schweinfurth proposes to use « pygmy » for the small-statured peoples of equatorial Africa, « in the sense of Aristotle »."
+        },
+        "attribution": "written"
+      }
+    ],
+    "path": [
+      {
+        "form": "pygmê",
+        "language": "grec ancien"
+      },
+      {
+        "form": "pygmaîos",
+        "language": "grec ancien"
+      },
+      {
+        "form": "pygmy",
+        "language": "anglais"
+      }
+    ],
+    "followUp": {
+      "fr": "Comment les peuples de la forêt se nomment-ils eux-mêmes ?",
+      "en": "How do the forest peoples name themselves?"
+    }
+  },
   "publications": [
     {
       "network": "tiktok",
@@ -34,6 +95,33 @@
       "format": "video",
       "url": "https://www.youtube.com/shorts/dIgFvRJnxug",
       "publishedAt": "2026-09-28"
+    }
+  ],
+  "sources": [
+    {
+      "title": "FAO, Unasylva 186, « Forest peoples in the central African rain forest: focus on the pygmies » (adapté par S. A. Dembner)",
+      "url": "https://www.fao.org/4/w1033e/w1033e03.htm",
+      "tier": "official"
+    },
+    {
+      "title": "Homère, Iliade, chant 3, vers 1-7 (traduction A. T. Murray, 1924)",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0134:book=3:card=1",
+      "tier": "referenced"
+    },
+    {
+      "title": "Aristote, Histoire des animaux, livre VIII, 12 (traduction D'Arcy Thompson)",
+      "url": "https://classics.mit.edu/Aristotle/history_anim.8.viii.html",
+      "tier": "referenced"
+    },
+    {
+      "title": "Encyclopaedia Britannica, 11e édition (1911), « Pygmy », mot grec et mesure de longueur",
+      "url": "https://en.wikisource.org/wiki/Page:EB1911_-_Volume_22.djvu/693",
+      "tier": "referenced"
+    },
+    {
+      "title": "Georg Schweinfurth, The Heart of Africa, vol. 2 (1873), chapitre XVI, « The Pygmies »",
+      "url": "https://www.gutenberg.org/ebooks/71622",
+      "tier": "referenced"
     }
   ]
 }
