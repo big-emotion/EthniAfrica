@@ -1,12 +1,12 @@
 {
   "id": "PPL_FANG_EQGUINEE",
-  "nameMain": "Fang (Guinee equatoriale)",
+  "nameMain": "Fang (Guinée équatoriale)",
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["GNQ"],
   "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {
-      "mainName": "Fang (Guinee equatoriale)",
+      "mainName": "Fang (Guinée équatoriale)",
       "selfAppellation": "Fan / Fang (en langue fang) ; se definissent comme appartenant a l'ensemble be-ti ('les seigneurs')",
       "exonyms": [
         "Pamue (appellation espagnole coloniale et contemporaine en Guinee equatoriale)",

@@ -1,6 +1,6 @@
 {
   "id": "PPL_AMAZIGH_MACRO",
-  "nameMain": "Amazigh (Berberes)",
+  "nameMain": "Amazigh (Berbères)",
   "languageFamilyId": "FLG_BERBERE",
   "currentCountries": [
     "MAR",
@@ -16,7 +16,7 @@
   "classificationStatus": "contested",
   "content": {
     "appellations": {
-      "mainName": "Amazigh (Berberes)",
+      "mainName": "Amazigh (Berbères)",
       "selfAppellation": "Imazighen (pluriel)",
       "exonyms": [
         "Berbers",

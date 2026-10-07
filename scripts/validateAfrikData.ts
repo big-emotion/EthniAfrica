@@ -4819,7 +4819,9 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // every fiche that omits them.
   // 7041 -> 7025 on 2026-09-29: spelling aliases and missing appellation keys
   // filled on the most-searched peoples, each one a key the model declares.
-  peuple: 7006,
+  // 7006 -> 7005 on 2026-10-07: PPL_TIV gained `spellingAliases` when the
+  // spelling note was moved out of its self-appellation.
+  peuple: 7005,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
