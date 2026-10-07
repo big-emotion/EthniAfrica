@@ -257,6 +257,10 @@
     }
   ],
   "homonyms": [],
+  "searchAnswer": {
+    "lead": "A Mandinka clan name, attested notably in Mali, Guinea, Sierra Leone, Liberia and Côte d'Ivoire.",
+    "followUp": "What do the sources say about the presence of the name Camara on the coast, in Liberia and Sierra Leone?"
+  },
   "sources": [
     {
       "sourceKey": "corpus-ppl-vai-organisation",
@@ -403,9 +407,9 @@
   ],
   "_translation": {
     "kind": "machine",
-    "translatedAt": "2026-10-03T12:09:27.421Z",
+    "translatedAt": "2026-10-06T18:15:03.813Z",
     "model": "claude-sonnet-5-5",
-    "sourceHash": "fe61f40760420998c63b52f2d4de98d22b1fde56787bf41c398be63bb846be57",
+    "sourceHash": "1ad85fd22bf85741e83fade5879442c9867296a940449bb86ed95293240071c0",
     "fieldHashes": {
       "origin.oralTraditions[0].claim": "97dbc416a7c399a5",
       "origin.oralTraditions[0].context": "300acb1df05057c8",
@@ -429,6 +433,8 @@
       "origin.linguisticReconstructions[3].claim": "0e9523724e2e51b9",
       "origin.linguisticReconstructions[4].claim": "5cb9cefb1f0f3892",
       "casteOrSocialFunction.value": "06dfa6fad36fcee2",
+      "searchAnswer.lead": "13ab6d7f0aefd087",
+      "searchAnswer.followUp": "856ee6123a2422e2",
       "sources[0].notes": "ab51999e890feb22",
       "sources[1].notes": "3cb50137a59120fd",
       "sources[2].notes": "6c2eae881a0321de",

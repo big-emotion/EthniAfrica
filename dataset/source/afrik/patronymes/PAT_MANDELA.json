@@ -23,7 +23,26 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [],
+    "historicalSyntheses": [
+      {
+        "claim": "Le nom viendrait d'un grand-père. Nelson Mandela raconte que son grand-père s'appelait Mandela : il était le frère cadet de Simakade, fils aîné de la maison Ixhiba, une branche de la famille de Ngubengcuka, roi des Thembu. Un article de Wikipédia dit de ce grand-père qu'il est la source du nom de famille ; le récit de Mandela ne le dit pas.",
+        "claimStatus": "claimed",
+        "sourceRefs": [
+          "mandela-autobiography-madiba",
+          "wikipedia-nelson-mandela",
+          "sahistory-nelson-mandela"
+        ]
+      },
+      {
+        "claim": "Madiba, le nom sous lequel on appelle aussi Nelson Mandela, est le nom du clan dont il faisait partie, celui d'un chef thembu qui régna dans le Transkei au XVIIIe siècle. Ce n'est pas l'explication du nom Mandela : c'est celle du nom de clan qui l'accompagne.",
+        "claimStatus": "claimed",
+        "sourceRefs": [
+          "nelson-mandela-foundation-names",
+          "mandela-autobiography-madiba"
+        ]
+      }
+    ]
   },
   "peoples": [
     {
@@ -51,6 +70,38 @@
   "homonyms": [],
   "sources": [
     {
+      "sourceKey": "nelson-mandela-foundation-names",
+      "title": "Names",
+      "url": "https://www.nelsonmandela.org/names",
+      "tier": "referenced",
+      "source_kind": "repository",
+      "notes": "Nelson Mandela Foundation, page « Names », consultée directement ; elle ne porte ni numéro de page ni date de publication. Elle dit que Madiba est le nom du clan dont Nelson Mandela était membre et celui d'un chef thembu du XVIIIe siècle dans le Transkei, que Rolihlahla est son nom de naissance et que Nelson lui a été donné à l'école. Elle ne dit rien du nom Mandela lui-même."
+    },
+    {
+      "sourceKey": "mandela-autobiography-madiba",
+      "title": "Long Walk to Freedom: The Autobiography of Nelson Mandela",
+      "url": "https://repository.act.ac.rw/server/api/core/bitstreams/1781d4c1-64c6-4fa2-87e7-b693e01b24d4/content",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Mandela, Nelson, Long Walk to Freedom, 1994, première partie, « A Country Childhood » ; passage lu dans le PDF archivé, qui ne porte pas de numéros de page imprimés : nous citons donc le chapitre, non une page. Mandela y dit être membre du clan Madiba, nommé d'après un chef thembu qui régna dans le Transkei au XVIIIe siècle, et qu'on l'appelle Madiba, son nom de clan, par respect ; il y dit aussi que le frère cadet de Simakade, fils aîné de la maison Ixhiba, était Mandela, son grand-père. Il n'y explique pas l'origine du nom Mandela."
+    },
+    {
+      "sourceKey": "sahistory-nelson-mandela",
+      "title": "Nelson Rolihlahla Mandela",
+      "url": "https://www.sahistory.org.za/people/nelson-mandela",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "South African History Online, notice biographique consultée directement, sans numéro de page, mise à jour en 2026 selon la page. Elle dit que son père Henry Mgadla Mandela, membre du clan Madiba, était l'un des petits-fils de Ngubengcuka, roi des Thembu. Elle ne nomme pas le grand-père et n'explique pas le nom Mandela ; elle n'est citée que pour cette descendance."
+    },
+    {
+      "sourceKey": "wikipedia-nelson-mandela",
+      "title": "Nelson Mandela — Wikipédia (anglais), section Early life",
+      "url": "https://en.wikipedia.org/wiki/Nelson_Mandela",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Article consulté directement. Il écrit qu'un fils de Ngubengcuka nommé Mandela était le grand-père de Nelson et la source de son nom de famille, et renvoie pour cette phrase à Guiloineau et Rowe (2002, p. 26). Nous n'avons pas ouvert cet ouvrage : la page est celle que l'article indique, non une page vérifiée par nous. L'affirmation reste donc rapportée de seconde main."
+    },
+    {
       "sourceKey": "south-africa-government-mandela-biography",
       "title": "Life and Times of Mandela",
       "url": "https://www.gov.za/mandela100/biography",
@@ -62,7 +113,7 @@
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Mandela », « Xhosa », « Thembu », « surname origin », « clan », « genealogy », « transmission » et « obituary », ainsi que la biographie officielle du gouvernement sud-africain n'ont livré aucune tradition attribuée, chronique ou étude linguistique établissant l'origine de Mandela. Les rapprochements portant sur un homonyme d'une autre langue ou sur la seule géographie ont été écartés."
+      "reason": "Nous n'avons trouvé aucun récit des familles Mandela elles-mêmes, ni aucune étude de linguiste qui donne un sens au mot Mandela. Le fait que le grand-père soit la source du nom reprend un article de Wikipédia, d'après un ouvrage que nous n'avons pas pu ouvrir. Les rapprochements portant sur un homonyme d'une autre langue ou sur la seule géographie ont été écartés."
     },
     {
       "fieldPath": "nameSystem",

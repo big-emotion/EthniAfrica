@@ -12,7 +12,33 @@
   "sitePath": "/fr/about",
   "word": {
     "label": { "fr": "pharaon", "en": "pharaoh" },
-    "queries": ["pharaon", "pharaons"]
+    "queries": ["pharaon", "pharaons", "pharaoh"]
+  },
+  "answer": {
+    "lead": {
+      "fr": "Au départ, « pharaon » ne désignait pas le roi d'Égypte, mais sa maison : le palais et la cour. Ce n'était pas un nom pris à l'avènement.",
+      "en": "At first, « pharaoh » did not mean the king of Egypt but his house: the palace and the court. It was not a name taken on accession."
+    },
+    "origin": [
+      {
+        "text": {
+          "fr": "Le mot vient de l'égyptien per-aa, « la grande maison », qui nommait le palais, puis, par extension, celui qui l'habite. Le plus ancien emploi confirmé pour s'adresser au roi lui-même est une lettre adressée à Akhenaton (Amenhotep IV), au XIVe siècle avant notre ère ; une inscription du temps de Thoutmosis III pourrait être plus ancienne. Pour dire « roi », les Égyptiens employaient d'autres mots, comme nesout (« roi ») ou hem (« Sa Majesté »).",
+          "en": "The word comes from the Egyptian per-aa, « the great house », which named the palace and then, by extension, the person who lives in it. The earliest confirmed use to address the king himself is a letter to Akhenaten (Amenhotep IV), in the 14th century BCE; an inscription from the time of Thutmose III may be older. To say « king », the Egyptians used other words, such as nesut (« king ») or hem (« His Majesty »)."
+        },
+        "attribution": "linguistic"
+      }
+    ],
+    "path": [
+      { "form": "per-aa", "language": "égyptien" },
+      { "form": "par'ōh", "language": "hébreu" },
+      { "form": "pharaō", "language": "grec" },
+      { "form": "pharao", "language": "latin" },
+      { "form": "pharaon · pharaoh", "language": "français · anglais" }
+    ],
+    "followUp": {
+      "fr": "Quand « pharaon » a-t-il commencé à désigner le roi lui-même ?",
+      "en": "When did « pharaoh » start to name the king himself?"
+    }
   },
   "publications": [
     {
@@ -38,6 +64,16 @@
       "title": "Flavius Josèphe, Antiquités juives VIII, 156 (traduction de William Whiston)",
       "url": "https://lexundria.com/j_aj/8.156/wst",
       "tier": "referenced"
+    },
+    {
+      "title": "Wikipedia, « Pharaoh » (lu avec ses notes : Gardiner, Griffith, Mond et Meyers)",
+      "url": "https://en.wikipedia.org/wiki/Pharaoh",
+      "tier": "unverified"
+    },
+    {
+      "title": "Wikipédia, « Pharaon » (section Étymologie)",
+      "url": "https://fr.wikipedia.org/wiki/Pharaon",
+      "tier": "unverified"
     }
   ]
 }

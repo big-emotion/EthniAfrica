@@ -282,6 +282,10 @@
     }
   ],
   "homonyms": [],
+  "searchAnswer": {
+    "lead": "Un nom de clan mandingue, attesté notamment au Mali, en Guinée, en Sierra Leone, au Liberia et en Côte d'Ivoire.",
+    "followUp": "Que disent les sources de la présence du nom Camara sur la côte, au Liberia et en Sierra Leone ?"
+  },
   "sources": [
     {
       "sourceKey": "corpus-ppl-vai-organisation",
